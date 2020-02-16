@@ -1,0 +1,65 @@
+---
+title: 출력 서비스
+seo-title: 출력 서비스
+description: AEM Document Services의 일부인 출력 서비스에 대해 설명합니다.
+seo-description: AEM Document Services의 일부인 출력 서비스에 대해 설명합니다.
+uuid: edddef59-b43c-486f-8734-3f97961ecf4d
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: document_services
+discoiquuid: 51ab91ff-c0c0-4165-ae02-f306e45eea03
+docset: aem65
+translation-type: tm+mt
+source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+
+---
+
+
+# 출력 서비스{#output-service}
+
+## 개요 {#overview}
+
+출력 서비스는 AEM Document Services의 일부인 OSGi 서비스입니다. 출력 서비스는 AEM Forms Designer의 다양한 출력 형식 및 출력 디자인 기능을 지원합니다. 출력 서비스는 XFA 템플릿과 XML 데이터를 변환하여 다양한 형식으로 인쇄 문서를 생성할 수 있습니다.
+
+출력 서비스를 사용하면 다음과 같은 기능을 제공하는 애플리케이션을 만들 수 있습니다.
+
+* 템플릿 파일을 XML 데이터로 채워 최종 양식 문서를 생성합니다.
+* 비대화형 PDF, PostScript, PCL 및 ZPL 인쇄 스트림을 포함하여 다양한 형식으로 출력 양식을 생성합니다.
+* XFA 양식 PDF에서 인쇄 PDF를 생성할 수 있습니다.
+* 제공된 템플릿과 여러 데이터 세트를 병합하여 PDF, PostScript, PCL 및 ZPL 문서를 대량으로 생성할 수 있습니다.
+
+>[!NOTE]
+>
+>출력 서비스는 32비트 애플리케이션입니다. Microsoft Windows에서는 32비트 응용 프로그램이 최대 2GB의 메모리를 사용할 수 있습니다. 출력 서비스에도 제한이 적용됩니다.
+
+## 비대화형 양식 문서 만들기 {#creating-non-interactive-form-documents}
+
+![usingoutput_modified](assets/usingoutput_modified.png)
+
+일반적으로 AEM Forms 디자이너를 사용하여 템플릿을 만듭니다. 출력 서비스의 `generatePDFOutput` 및 `generatePrintedOutput` API를 사용하면 이러한 템플릿을 PDF, PostScript, ZPL 및 PCL을 비롯한 다양한 형식으로 직접 변환할 수 있습니다.
+
+이 `generatePDFOutput` 작업은 PDF를 생성하는 반면, `generatePrintedOutput` 작업은 PostScript, ZPL 및 PCL 형식을 생성합니다. 두 작업의 첫 번째 매개 변수는 템플릿 파일 이름(예: `ExpenseClaim.xdp`) 또는 템플릿이 들어 있는 Document 개체를 수락합니다. 템플릿 파일의 이름을 지정할 때는 컨텐츠 루트를 템플릿이 들어 있는 폴더의 경로로 지정합니다. 또는 매개 변수를 사용하여 컨텐츠 루트를 지정할 `PDFOutputOptions` 수 `PrintedOutputOptions` 있습니다. 이러한 매개 변수를 사용하여 지정할 수 있는 다른 옵션에 대한 자세한 내용은 Javadoc를 참조하십시오.
+
+두 번째 매개 변수는 출력 문서를 생성하는 동안 템플릿과 병합된 XML 문서를 수락합니다.
+
+또한 XFA 기반 PDF 양식을 입력으로 수락하고 비대화형 버전의 PDF 양식을 출력물로 반환할 수 `generatePDFOutput` 있습니다.
+
+## 비대화형 양식 문서 생성 {#generating-non-interactive-form-documents}
+
+각 템플릿에 대해 하나 이상의 템플릿과 여러 개의 XML 데이터 레코드가 있는 시나리오를 고려해 보십시오.
+
+출력 서비스의 `generatePDFOutputBatch` 및 `generatePrintedOutputBatch` 작업을 사용하여 각 레코드에 대한 인쇄 문서를 생성합니다.
+
+또한 레코드를 하나의 문서로 결합할 수 있습니다. 두 작업 모두 네 개의 매개 변수를 사용합니다.
+
+첫 번째 매개 변수는 임의의 문자열을 키로 포함하는 맵이고 템플릿 파일의 이름을 값으로 포함합니다.
+
+두 번째 매개 변수는 값이 XML 데이터가 들어 있는 Document 개체인 다른 Map입니다. 키는 첫 번째 매개 변수에 대해 지정한 키와 동일합니다.
+
+에 대한 세 번째 매개 변수 `generatePDFOutputBatch` 또는 `generatePrintedOutputBatch` 은 `PDFOutputOptions` 각각 유형 `PrintedOutputOptions` 또는입니다.
+
+매개 변수 유형은 `generatePDFOutput` 및 `generatePrintedOutput` 작업에 대한 매개 변수의 유형과 동일하며 동일한 효과를 갖습니다.
+
+네 번째 매개 변수는 각 레코드에 대해 별도의 파일을 생성할 수 `BatchOptions`있는지 여부를 지정하는 데 사용하는 유형입니다. 이 매개 변수의 기본값은 false입니다.
+
+유형 `generatePrintedOutputBatch` 값을 모두 반환하고 `generatePDFOutputBatch` 반환합니다 `BatchResult`. 이 값에는 생성된 문서 목록이 포함되어 있습니다. 또한 생성된 각 문서와 관련된 정보를 포함하는 XML 형식의 메타데이터 문서가 포함되어 있습니다.
