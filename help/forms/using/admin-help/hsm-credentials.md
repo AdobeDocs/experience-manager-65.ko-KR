@@ -1,0 +1,106 @@
+---
+title: HSM 자격 증명 관리
+seo-title: HSM 자격 증명 관리
+description: HSM 자격 증명을 관리하는 방법을 알아봅니다.
+seo-description: HSM 자격 증명을 관리하는 방법을 알아봅니다.
+uuid: 30ddcd4a-f771-44d5-bdef-4826adcd0c44
+contentOwner: admin
+content-type: reference
+geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
+translation-type: tm+mt
+source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+
+---
+
+
+# HSM 자격 증명 관리 {#managing-hsm-credentials}
+
+Trust Store 관리 페이지에서 HSM(Hardware Security Module) 자격 증명을 관리할 수 있습니다. HSM은 개인 키를 안전하게 생성하고 저장하는 데 사용할 수 있는 타사 PKCS#11 디바이스입니다. HSM은 개인 키에 대한 액세스 및 사용을 물리적으로 보호합니다.
+
+HSM과 통신하려면 클라이언트 소프트웨어가 필요합니다. HSM 클라이언트 소프트웨어는 AEM 양식과 동일한 컴퓨터에 설치 및 구성되어야 합니다.
+
+AEM Forms Digital Signatures는 HSM에 저장된 자격 증명을 사용하여 서버측 디지털 서명을 적용할 수 있습니다. 이 섹션의 지침에 따라 디지털 서명에 사용할 각 HSM 자격 증명에 대한 별칭을 만듭니다. 별칭에는 HSM에 필요한 모든 매개 변수가 포함되어 있습니다.
+
+>[!NOTE]
+>
+>HSM 구성을 변경한 후 AEM Forms 서버를 다시 시작합니다.
+
+## HSM 디바이스가 온라인 상태일 때 HSM 자격 증명의 별칭 생성 {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
+
+1. 관리 콘솔에서 설정 > Trust Store Management > HSM 자격 증명을 클릭한 다음 추가를 클릭합니다.
+1. 프로필 이름 상자에 별칭을 식별하는 데 사용되는 문자열을 입력합니다. 이 값은 서명 필드 작업과 같은 일부 디지털 서명 작업의 속성으로 사용됩니다.
+1. PKCS11 라이브러리 상자에 서버에 있는 HSM 클라이언트 라이브러리의 정규화된 경로를 입력합니다. 예, `c:\Program Files\LunaSA\cryptoki.dll`. 클러스터된 환경에서 이 경로는 클러스터의 모든 서버에 대해 동일해야 합니다.
+1. HSM 접속 테스트를 클릭합니다. AEM 양식이 HSM 장치에 연결할 수 있는 경우 HSM을 사용할 수 있다는 메시지가 표시됩니다. 다음을 클릭합니다.
+1. 토큰 이름, 슬롯 ID 또는 슬롯 목록 인덱스를 사용하여 자격 증명이 HSM에 저장된 위치를 식별합니다.
+
+   * **** 토큰 이름:사용할 HSM 파티션 이름(예: HSMPART1)에 해당합니다.
+   * **** 슬롯 ID:슬롯 ID는 데이터 유형 long 유형의 슬롯 식별자입니다.
+   * **** 슬롯 목록 색인:[슬롯 목록 색인]을 선택하는 경우 슬롯 정보를 슬롯에 해당하는 정수로 설정합니다. 이 인덱스는 0 기반 인덱스입니다. 즉, 클라이언트가 HSMPART1 파티션에 먼저 등록되어 있으면 HSMPART1이 SlotListIndex 값 0을 사용한다고 합니다.
+
+1. 토큰 핀 상자에 HSM 키에 액세스하는 데 필요한 암호를 입력하고 다음을 클릭합니다.
+1. 자격 증명 상자에서 자격 증명을 선택합니다. [저장]을 클릭합니다.
+
+## HSM 디바이스가 오프라인 상태일 때 HSM 자격 증명의 별칭 생성 {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
+
+1. 관리 콘솔에서 설정 > Trust Store Management > HSM 자격 증명을 클릭한 다음 추가를 클릭합니다.
+1. 프로필 이름 상자에 별칭을 식별하는 데 사용되는 문자열을 입력합니다. 이 값은 서명 필드 작업과 같은 일부 디지털 서명 작업의 속성으로 사용됩니다.
+1. PKCS11 라이브러리 상자에 서버에 있는 HSM 클라이언트 라이브러리의 정규화된 경로를 입력합니다. 예, `c:\Program Files\LunaSA\cryptoki.dll`. 클러스터된 환경에서 이 경로는 클러스터의 모든 서버에 대해 동일해야 합니다.
+1. 오프라인 프로필 만들기 확인란을 선택합니다. 다음을 클릭합니다.
+1. HSM 디바이스 목록에서 자격 증명이 저장된 HSM 디바이스의 제조업체를 선택합니다.
+1. [슬롯 유형] 목록에서 [슬롯 ID], [슬롯 인덱스] 또는 [토큰 이름]을 선택하고 [슬롯 정보] 상자에 값을 지정합니다. AEM Forms에서는 이러한 설정을 사용하여 자격 증명이 HSM에 저장되는 위치를 결정합니다.
+
+   * **** 토큰 이름:파티션 이름(예: HSMPART1)에 해당합니다.
+   * **** 슬롯 ID:슬롯 ID는 슬롯에 해당하는 정수입니다. 이 정수는 결국 파티션에 해당합니다. 예를 들어 HSMPART1 파티션에 먼저 등록된 클라이언트(양식 서버)가 있습니다. 이 클라이언트는 슬롯 1을 HSMPART1 파티션에 매핑합니다. HSMPART1은 등록된 첫 번째 파티션이므로 슬롯 ID는 1이며 슬롯 정보는 1로 설정됩니다.
+
+      슬롯 ID는 클라이언트별로 설정됩니다. 다른 파티션(예: 동일한 HSM 장치의 HSMPART2)에 두 번째 시스템을 등록한 경우, 슬롯 1은 해당 클라이언트에 대한 HSMPART2 파티션과 연결됩니다.
+
+   * **** 슬롯 인덱스:[슬롯 색인]을 선택하는 경우 슬롯 정보를 슬롯에 해당하는 정수로 설정합니다. 이 인덱스는 0 기반 인덱스로, 즉 클라이언트가 먼저 HSMPART1 파티션에 등록되어 있으면 슬롯 1이 이 클라이언트에 대한 HSMPART1에 매핑됩니다. HSMPART1이 등록된 첫 번째 파티션이므로 슬롯 인덱스는 0입니다.
+
+1. 다음 옵션 중 하나를 선택하고 경로를 제공합니다.
+
+   * **인증서**:(SHA1 사용 시 필요 없음) [탐색]을 클릭하고 사용 중인 자격 증명에 대한 공개 키 경로를 찾습니다.
+   * **** 인증서 SHA1:(실제 인증서를 사용하는 경우 필요 없음) 사용 중인 자격 증명에 대한 공개 키(.cer) 파일의 SHA1 값(지문)을 입력합니다. SHA1 값에 사용된 공백이 없는지 확인합니다.
+
+1. 암호 상자에 지정된 슬롯 정보에 대한 HSM 키에 액세스하는 데 필요한 암호를 입력한 다음 저장을 클릭합니다.
+
+## HSM 자격 증명 별칭 속성 보기 {#view-hsm-credential-alias-properties}
+
+1. 관리 콘솔에서 설정 > Trust Store Management > HSM 자격 증명을 클릭합니다.
+1. 자격 증명 별칭의 별칭 이름을 클릭하여 속성을 확인한 다음 [확인]을 클릭합니다.
+
+## HSM 자격 증명의 상태 확인 {#check-the-status-of-an-hsm-credential}
+
+1. 관리 콘솔에서 설정 > Trust Store Management > HSM 자격 증명을 클릭합니다.
+1. 확인할 자격 증명 옆의 확인란을 클릭하고 상태 확인을 클릭합니다.
+
+상태 열은 자격 증명의 현재 상태를 반영합니다. 오류가 발생하면 상태 열에 빨간색 X가 표시됩니다. 마우스를 X 위로 가져가면 실패 원인이 포함된 도구 설명이 표시됩니다.
+
+## HSM 자격 증명 별칭 속성 업데이트 {#update-hsm-credential-alias-properties}
+
+1. 관리 콘솔에서 설정 > Trust Store Management > HSM 자격 증명을 클릭합니다.
+1. 자격 증명 별칭의 별칭 이름을 클릭합니다.
+1. 자격 증명 업데이트를 클릭하고 필요에 따라 설정을 업데이트합니다.
+
+## 모든 HSM 연결 재설정 {#reset-all-hsm-connections}
+
+양식 서버와 HSM 디바이스 간의 네트워크 세션이 중단된 후 HSM 디바이스에 대한 열린 연결을 재설정합니다. 예를 들어, 네트워크 중단이나 소프트웨어 업데이트를 위해 HSM 디바이스가 오프라인으로 전환되어 장애가 발생할 수 있습니다. 중단 후 기존 연결은 오래되고 이러한 연결에 대한 모든 서명 요청이 실패합니다. 모든 HSM 연결 재설정 옵션을 사용하여 이전 연결을 지웁니다.
+
+1. 관리 콘솔에서 설정 > Trust Store Management > HSM 자격 증명을 클릭합니다.
+1. 모든 HSM 연결 재설정을 클릭합니다.
+
+## HSM 자격 증명 별칭 삭제 {#delete-an-hsm-credential-alias}
+
+1. 관리 콘솔에서 설정 > Trust Store Management > HSM 자격 증명을 클릭합니다.
+1. 삭제할 HSM 자격 증명의 확인란을 선택하고 삭제를 클릭한 다음 확인을 클릭합니다.
+
+## 원격 HSM 지원 구성 {#configure-remote-hsm-support}
+
+AEM Forms는 웹 서비스 기반 IPC/RPC 메커니즘을 사용합니다. 이 메커니즘을 통해 AEM 양식에서 원격 컴퓨터에 설치된 HSM을 사용할 수 있습니다. 이 기능을 사용하려면 HSM이 설치된 원격 컴퓨터에 웹 서비스를 설치합니다. 자세한 [내용은 Windows 64비트 플랫폼에서 Sun JDK를 사용하여 AEM Forms ES에 대한 HSM 지원 구성을](https://kb2.adobe.com/cps/808/cpsid_80835.html)참조하십시오.
+
+이 메커니즘은 HSM 프로파일의 온라인 생성 또는 상태 확인을 지원하지 않습니다. 그러나 HSM 프로필을 생성하고 상태 확인을 수행하는 방법에는 두 가지가 있습니다.
+
+* 서명자의 인증서를 전달하여 AEM 양식 클라이언트 자격 증명을 만듭니다. Windows 64비트 [플랫폼에서](https://kb2.adobe.com/cps/808/cpsid_80835.html)Sun JDK를 사용하여 AEM Forms ES에 대한 HSM 지원 구성의 단계를 수행합니다. 웹 서비스 위치는 자격 증명 속성으로 전달됩니다. 인증서 또는 인증서 SHA-1 1 16진수를 사용하여 만드는 오프라인 HSM 프로필도 지원됩니다. 그러나 이전 버전의 AEM 양식에서 AEM 양식으로 업그레이드한 경우 자격 증명에 인증서 및 웹 서비스 정보가 포함되어 있으므로 클라이언트를 변경합니다.
+* 웹 서비스 위치는 서명 서비스의 관리 콘솔에서 지정됩니다. (서명 [서비스 설정을](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)참조하십시오.) 여기에서 클라이언트는 HSM 프로필의 별칭만 신뢰 저장소에 보관했습니다. 이전 버전의 AEM 양식에서 AEM 양식으로 업그레이드한 경우에도 클라이언트 변경 없이 이 옵션을 매끄럽게 사용할 수 있습니다. 이 옵션은 인증서 SHA-1을 사용하는 HSM 프로필을 지원하지 않습니다.
+
