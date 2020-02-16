@@ -1,0 +1,943 @@
+---
+title: 액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성)
+seo-title: 액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성)
+description: WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사용할 수 있도록 하는 데 도움이 되는 기술 독립적 지침 및 성능 기준으로 구성되어 있습니다.
+seo-description: WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사용할 수 있도록 하는 데 도움이 되는 기술 독립적 지침 및 성능 기준으로 구성되어 있습니다.
+page-status-flag: de-activated
+uuid: c2c0cac0-2a9f-478d-8261-e8cc894aae34
+contentOwner: Chris Bohnert
+products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: page-authoring
+content-type: reference
+discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
+translation-type: tm+mt
+source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+
+---
+
+
+# 액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성){#creating-accessible-content-wcag-conformance}
+
+WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사용할 수 있도록 하는 데 도움이 되는 기술 독립적 지침 및 성능 기준으로 구성되어 있습니다.
+
+>[!NOTE]
+>
+>참고 항목:
+>
+>* 자세한 내용은 [WCAG 2.0에 대한 빠른 안내](/help/managing/qg-wcag.md) 참조
+>* [액세스 가능한 컨텐츠를 만들려면 리치 텍스트 편집기 구성 ](/help/sites-administering/rte-accessible-content.md)참조
+>
+
+
+
+이러한 적합성 수준에 따라 레벨 A(가장 낮음), 레벨 AA 및 레벨 AAA(가장 높음)로 등급이 지정됩니다. 이러한 등급을 간단히 정의하면 다음과 같습니다.
+
+* **레벨 A:** 사이트가 기본적인 최소 액세서빌러티 수준에 도달합니다. 이 수준을 충족하려면, 모든 레벨 A 성공 기준을 만족시켜야 합니다.
+* **** 레벨 AA:이는 대부분의 기술을 사용하여 대부분의 상황에서 액세스할 수 있도록 사이트의 액세서빌러티 수준이 향상되어 대부분의 사용자가 사이트에 액세스할 수 있도록 하기 위해 노력하는 이상적인 액세서빌러티 수준입니다.이 수준을 충족하려면 모든 레벨 A 및 레벨 AA 성공 기준을 만족시켜야 합니다.
+* **레벨 AAA:** 사이트가 매우 높은 액세서빌러티 수준에 도달합니다. 이 수준을 충족하려면, 모든 레벨 A, 레벨 AA 및 레벨 AAA 성공 기준을 만족시켜야 합니다.
+
+사이트를 만들 때에는 사이트가 따라야 할 전반적인 수준을 결정해야 합니다.
+
+다음 섹션에서는 레벨 A 및 레벨 AA [적합성 수준](https://www.w3.org/TR/WCAG20/#guidelines)에 대한 관련 성공 기준이 있는 [WCAG 2.0 지침](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)에 대해 설명합니다. 
+
+>[!NOTE]
+>
+>특정 유형의 컨텐츠에 대한 레벨 AAA 성공 기준을 모두 만족시킬 수는 없으므로 이 수준의 적합성을 일반적인 정책으로 요구하지 않는 것이 좋습니다.
+
+>[!NOTE]
+>
+>이 문서에서는
+>
+>* [WCAG 2.0 지침](https://www.w3.org/TR/WCAG20/#guidelines)에 대해 간단한 이름을 사용합니다.
+>* WCAG 웹 사이트 상호 참조에 도움이 되도록 [WCAG 2.0 지침](https://www.w3.org/TR/WCAG20/#guidelines)에 사용되는 번호 지정 방법을 사용합니다.
+>
+
+
+
+## 원칙 1: 인지 가능 {#principle-perceivable}
+
+[원칙 1: 인지 가능 - 정보 및 사용자 인터페이스 구성 요소는 사용자가 인지할 수 있는 방식으로 사용자에게 표시될 수 있어야 합니다.](https://www.w3.org/TR/WCAG20/#perceivable)
+
+### 텍스트 대체 요소(1.1) {#text-alternatives}
+
+[지침 1.1 텍스트 대체 요소: 대형 인쇄물, 점자, 음성, 기호 또는 더 간결한 언어와 같이, 사람들이 필요로 하는 다른 형식으로 변경시킬 수 있도록 텍스트가 아닌 컨텐츠에 대해 텍스트 대체 요소를 제공하십시오.](https://www.w3.org/TR/WCAG20/#text-equiv)
+
+### 텍스트가 아닌 컨텐츠 (1.1.1) {#non-text-content}
+
+* 성공 기준 1.1.1
+* 레벨 A
+* 텍스트가 아닌 컨텐츠: 아래 나열된 상황을 제외하고, 사용자에게 제시되는 모든 텍스트가 아닌 컨텐츠에는 동등한 목적을 제공하는 텍스트 대체 요소가 있습니다.
+
+#### 목적 - 텍스트가 아닌 컨텐츠(1.1.1) {#purpose-non-text-content}
+
+웹 페이지 상의 정보는 사진, 비디오, 애니메이션, 차트 및 그래프 등 많은 다양한 텍스트가 아닌 형식으로 제공될 수 있습니다. 앞이 안 보이거나 심각한 시각적 장애가 있는 사람은 텍스트가 아닌 컨텐츠를 볼 수 없지만, 스크린 리더로 읽거나 점자 표시 장치로 촉각 형식으로 표시하여 텍스트 컨텐츠에 액세스할 수 있습니다. 따라서 그래픽 형식의 컨텐츠에 텍스트 대체 요소를 제공하면 그래픽 컨텐츠을 볼 수 없는 사람도 컨텐츠가 제공하는 정보에 해당하는 버전에 액세스할 수 있습니다.
+
+유용한 추가 이점은 텍스트 대체 요소를 통해 텍스트가 아닌 컨텐츠를 검색 엔진 기술로 색인화할 수 있다는 것입니다.
+
+#### 충족 방법 - 텍스트가 아닌 컨텐츠(1.1.1) {#how-to-meet-non-text-content}
+
+정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 작업은 **대체 텍스트** 필드에서 수행할 수 있습니다.
+
+>[!NOTE]
+>
+>**회전판**&#x200B;이나 **Slideshow**&#x200B;처럼 기본적으로 제공되는 몇 가지 구성 요소에서는 이미지에 대체 텍스트 설명을 추가하는 수단을 제공하지 않습니다. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+
+**이미지** 구성 요소 대화 상자의 **고급**&#x200B;이미지 속성 탭에서 **대체 텍스트**&#x200B;필드를 사용할 수 있습니다.
+
+![클래식 UI에 있는 [이미지] 구성 요소의 편집 대화 상자 - [대체 텍스트] 필드를 보여줍니다.](assets/chlimage_1-17a.png)
+
+AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가합니다. 클래식 UI의 경우, 기본 속성이 만들어지는 방식에 대해 두 가지 다른 시나리오가 있습니다(하지만 기본값이 대체 요소로서 충분하지 않을 수 있으므로 **고급** 이미지 속성 탭에서 편집해야 함).
+
+* 파일:
+
+   사용자의 하드 드라이브에서 이미지가 업로드됩니다. If you add an image component to a page and then choose an image from your hard drive, or another source, the default value for **Alt Text** is `file`. **고급** 이미지 속성 탭에서 이 값을 변경해야 합니다. 즉, 이 값이 **대체 텍스트** 필드에 표시되지는 않지만, 값이 변경되면 필드에 새 값이 표시됩니다.
+
+* 자산:
+
+   디지털 자산 저장소에서 이미지가 추가됩니다. 이미지를 디지털 자산 저장소에서 웹 페이지로 끌면 해당 이미지에 대한 메타데이터에서 해당 이미지에 대한 **제목** 및 **대체 텍스트** 값을 가져오게 됩니다.
+
+>[!NOTE]
+>
+>In both of the above scenarios, the default **Alt Text** value is not visible in the **Advanced Image Properties** tab. To change the default value, simply enter a new value in the **Alt Text** field.
+
+>[!NOTE]
+>
+>이미지가 순전히 장식용이라면([좋은 텍스트 대체 요소 만들기](#creating-good-text-alternatives) 참조), 스페이스바를 사용하여 **대체 텍스트**&#x200B;필드에 공백을 추가할 수 있습니다.  이렇게 하면 빈 `alt` 속성이 만들어지고 스크린 리더에게 이미지를 무시하라는 메시지가 표시됩니다.
+
+#### 좋은 텍스트 대체 요소 만들기 {#creating-good-text-alternatives}
+
+텍스트가 아닌 컨텐츠의 양식은 다양하므로, 텍스트 대체 요소의 값은 웹 페이지에서 그래픽이 수행하는 역할에 따라 달라집니다. 따라야 할 일반적인 경험상의 규칙 몇 가지는 다음과 같습니다.
+
+* 텍스트 대체 요소는 간결해야 하지만 동시에 텍스트가 아닌 컨텐츠에서 제공하는 본질적인 정보를 명료하게 담고 있어야 합니다.
+* 너부 길게(100자 이상) 설명하지 않아야 합니다. 텍스트 대체 요소에 세부 정보가 더 필요한 경우,
+
+   * 대체 텍스트로 짧은 설명을 제공합니다.
+   * 동일한 페이지의 다른 위치나 별도의 웹 페이지에서 텍스트로 더 길게 설명해 놓은 후 이미지를 링크로 만들거나 이미지에 인접한 곳에 텍스트 링크를 배치하여 이 별도의 설명에 연결합니다.
+
+* 대체 텍스트는 동일한 페이지의 근처에서 텍스트 양식으로 제공되는 컨텐츠를 복제하지 말아야 합니다. 많은 이미지는 이미 페이지의 텍스트로 설명한 핵심 사항의 삽화이므로 이미지에 해당하는 상세한 텍스트 대체 요소가 이미 존재할 수 있습니다.
+* 텍스트가 아닌 컨텐츠가 다른 페이지나 문서의 링크이고 동일한 링크의 일부를 형성하는 다른 텍스트가 없다면, 이미지에 대한 대체 텍스트는 이미지를 설명하는 것이 아니라 링크 대상을 가리켜야 합니다.
+* 텍스트가 아닌 컨텐츠가 단추 요소에 들어 있고 동일한 단추의 일부를 형성하는 텍스트가 없다면, 이미지의 대체 텍스트는 이미지를 설명하는 것이 아니라 단추의 기능을 가리켜야 합니다.
+* 이미지에 빈(null) 대체 텍스트를 지정할 수는 있지만 이미지에 대체 텍스트가 없거나(예: 순전히 장식용인 그래픽), 또는 해당 텍스트가 페이지 텍스트에 이미 존재하는 경우에만 사용할 수 있습니다.
+
+[W3C 초안: 유용한 텍스트 대체 요소를 제공하기 위한 HTML5 기술](https://dev.w3.org/html5/alt-techniques/)에는 더 많은 세부 정보와 다양한 유형의 이미지에 적합한 대체 텍스트 제공의 예가 있습니다.
+
+텍스트 대체 요소를 필요로 하는 특정 유형의 텍스트가 아닌 컨텐츠에는 다음 내용이 포함될 수 있습니다.
+
+* 일러스트레이션 사진:
+
+   사람, 물건 또는 장소의 이미지입니다. Think about the role of the photo in the page; an appropriate text equivalent is likely to be *Photo of[object ]*, but may be dependent on the surrounding text.
+
+* 아이콘:
+
+   특정 정보를 전달하는 작은 그림(그래픽)입니다. 페이지와 사이트에서 일관되게 사용되어야 합니다. 인접한 텍스트의 불필요한 복제가 초래되는 경우가 아니라면 이 아이콘은 페이지나 사이트에서 표시될 때마다 동일한 짧고 간결한 대체 텍스트를 포함해야 합니다.
+
+* 차트 및 그래프:
+
+   일반적으로 숫자 데이터를 나타냅니다. 따라서 텍스트 대체 요소를 제공하기 위한 한 가지 옵션은 차트나 그래픽에 표시된 주요 경향에 대한 간단한 요약을 포함하는 것일 수 있습니다. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. 또한 소스 데이터를 페이지나 사이트의 다른 위치에서 표 형식으로 제공할 수 있습니다.
+
+   ![그래프의 예. 대체 요소를 제공하는 가장 좋은 접근 방식이 아래에 나와있습니다.](assets/chlimage_1-2a.jpeg)
+
+   To provide an alternative for this example chart, add a concise `alt` text to the image itself and then follow the image with a full text alternative.
+
+   ```xml
+   <p><img src="figure1.gif" alt="Figure 1" ></p>
+   <p> Figure 1. Distribution of Articles by Journal Category.
+   Pie chart: Language=68%, Education=14% and Science=18%.</p>
+   ```
+
+   >[!NOTE]
+   >
+   >위의 코드 조각은 순서를 보여주는 데에만 사용됩니다. **이미지** 구성 요소를 사용하는 것이 좋습니다(위에 사용된 `img src` 참조보다).
+
+   AEM에서 이 작업은 이미지의 구성 대화 상자에 있는 **대체 텍스트** 및 **설명** 필드 조합을 사용하여 수행할 수 있습니다([충족하는 방법 - 텍스트가 아닌 컨텐츠(1.1.1)](#how-to-meet-non-text-content) 참조).
+
+* 지도, 다이어그램, 순서도:
+
+   공간 데이터를 제공하는 그래픽의 경우(예: 개체나 프로세스 간 관계를 설명하는 데 도움이 되도록), 핵심 메시지가 텍스트 형식으로 제공되는지 확인하십시오. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
+
+* CAPTCHAs:
+
+   A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. 이 테스트는 인간을 악성 소프트웨어로부터 구별하기 위해 웹 페이지에서 사용되는 보안 검사지만, 액세서빌러티 장벽을 생성할 수 있습니다. 보안 테스트를 통과하기 위해 보이는 내용을 설명할 것을 사용자에게 요구하는 이미지가 여기에 해당합니다. 이 이미지에 대한 대체 텍스트를 제공하는 것은 당연히 불가능하므로 대신 대체하는 비그래픽 해결 방법을 고려해야 합니다.
+
+   W3C에서는 다음과 같이 많은 방법을 제안합니다. 이러한 접근 방법 각각에는 나름의 장점과 단점이 있습니다.
+
+   * 논리 퍼즐
+   * 이미지 대신 사운드 출력 사용
+   * 계정 및 스팸 필터의 제한된 사용
+
+* 배경 이미지:
+
+   이러한 기능은 HTML이 아니라 CSS(Cascading Style Sheet)를 사용하여 얻을 수 있습니다. 이는 대체 텍스트 값을 지정할 수 없음을 의미합니다. 따라서 배경 이미지는 중요한 텍스트 정보를 제공하지 않아야 합니다. 그럴 경우 이 정보는 페이지의 텍스트에서도 제공되어야 합니다.
+
+   하지만 이미지를 표시할 수 없을 때에는 대체 배경을 표시하는 것이 중요합니다.
+
+   >[!NOTE]
+   >
+   >배경과 전경 텍스트 간에는 적절한 수준의 대비가 있어야 합니다. 이에 대해서는 [대비(최소)(1.4.3)](#contrast-minimum)에서 더 자세히 설명합니다.
+
+#### 추가 정보 - 텍스트가 아닌 컨텐츠(1.1.1) {#more-information-non-text-content}
+
+* [성공 기준 이해 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
+* [성공 기준을 충족하는 방법 1.1.1](https://www.w3.org/WAI/WCAG20/quickref/#text-equiv)
+* [W3C: 유용한 텍스트 대체 요소를 제공하기 위한 HTML5 기술(초안)](https://dev.w3.org/html5/alt-techniques/)
+* [CAPTCHA에 대한 W3C 설명 및 대체 요소](https://www.w3.org/TR/turingtest/)
+
+### 시간 기반 미디어(1.2) {#time-based-media}
+
+[지침 1.2 시간 기반 미디어: 시간 기반 미디어에 대한 대체 요소를 제공합니다.](https://www.w3.org/TR/WCAG20/#text-equiv)
+
+여기서는 *시간 기반*&#x200B;의 웹 컨텐츠를 다룹니다. 사용자가 재생할 수 있고(예: 비디오, 오디오 및 애니메이션 컨텐츠) 사전 녹화된 스트림이나 라이브 스트림일 수 있는 컨텐츠가 여기에 포함됩니다.
+
+### 오디오 전용 및 비디오 전용(사전 녹화된)(1.2.1) {#audio-only-and-video-only-pre-recorded}
+
+* 성공 기준 1.2.1
+* 레벨 A
+* 오디오 전용 및 비디오 전용(사전 녹화된): 사전 녹음된 오디오 전용 및 사전 녹화된 비디오 전용 미디어의 경우 오디오나 비디오가 텍스트에 대한 대체 미디어이고 다음와 같이 레이블로 명시되어 있는 경우를 제외하면 다음 사항이 적용됩니다.
+
+   * 사전 녹음된 오디오 전용: 사전 녹음된 오디오 전용 컨텐츠에 대해 이에 상당하는 정보를 나타내는 시간 기반 미디어의 대체 요소가 제공됩니다.
+   * 사전 녹화된 비디오: 사전 녹화된 비디오 전용 컨텐츠에 대해 이에 상당하는 정보를 나타내는 시간 기반 미디어나 오디오 트랙의 대체 요소가 제공됩니다.
+
+#### 목적 - 오디오 전용 및 비디오 전용(사전 녹화된)(1.2.1) {#purpose-audio-only-and-video-only-pre-recorded}
+
+다음 사용자의 경우 비디오 및 오디오에 대한 액세서빌러티 문제를 경험할 수 있습니다.
+
+* 사운드트랙이 없거나 사운드트랙이 비디오나 애니메이션에서 일어나고 있는 일을 알려주기에 충분하지 않은데 시각 장애가 있는 사람
+* 청각 장애가 있거나 소리를 아예 들을 수 없거나 사운드트랙을 들을 수 없는 사람
+* 사운드트랙을 들을 수 있지만, 말하는 내용을 이해하지 못하는 사람(예를 들어, 이해할 수 없는 언어로 되어 있는 경우).
+
+Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하지 않는 브라우저나 장치를 사용하는 사람도 비디오나 오디오를 사용하지 못할 수 있습니다.
+
+텍스트(또는 오디오가 없는 비디오를 위한 오디오) 등의 다른 형식으로 이러한 정보를 제공하면 원래 컨텐츠에 액세스할 수 없는 사람이 액세스할 수 있게 됩니다.
+
+#### 충족하는 방법 - 오디오 전용 및 비디오 전용(사전 녹화된)(1.2.1) {#how-to-meet-audio-only-and-video-only-pre-recorded}
+
+* 컨텐츠가 비디오가 없는 사전 녹음된 오디오인 경우(예: 팟캐스트)
+
+   * 컨텐츠의 바로 앞 또는 뒤의 링크를 오디오 컨텐츠의 텍스트 스크립트에 연결합니다.
+
+      텍스트 스크립트는 모든 음성 컨텐츠 및 중요한 비음성 컨텐츠에 상당하는 텍스트가 있고 말하고 있는 사람, 설정 설명, 음성 표현 및 다른 중요한 오디오의 설명에 대한 명시가 있는 HTML 페이지여야 합니다.
+
+* 컨텐츠가 오디오가 없는 애니메이션 또는 사전 녹화된 비디오인 경우
+
+   * 컨텐츠의 바로 앞 또는 뒤의 링크를 비디오가 제공하는 정보에 상응하는 텍스트 설명에 연결합니다.
+   * 또는 MP3와 같이 일반적으로 사용되는 오디오 형식의 상응하는 오디오 설명에 연결합니다.
+
+>[!NOTE]
+>
+>오디오나 비디오 컨텐츠가 웹 페이지에서 이미 다른 형식으로 존재하는 컨텐츠에 대한 대체 요소로 제공되는 경우 위의 요구 사항을 따를 필요가 없습니다. 예를 들어, 비디오가 텍스트 지침 목록을 보여준다면 텍스트 지침이 이미 비디오에 대한 대체 요소 역할을 하므로 이 비디오에는 대체 요소가 필요하지 않습니다.
+
+특히 Flash 컨텐츠와 같은 멀티미디어를 AEM 웹 페이지에 삽입하는 방법은 이미지를 삽입하는 방법과 유사합니다. 하지만 멀티미디어 컨텐츠는 정지 이미지보다 훨씬 크므로 멀티미디어가 재생되는 방식을 제어하기 위한 다양한 설정 및 옵션이 있습니다.
+
+>[!NOTE]
+>
+>정보 제공용 컨텐츠가 있는 멀티미디어를 사용하는 경우 대체 요소에 대한 링크도 만들어야 합니다.예를 들어 텍스트 스크립트를 포함하려면 HTML 페이지를 만들어 텍스트 스크립트를 표시한 다음 오디오 콘텐트 옆이나 아래에 링크를 추가합니다.
+
+#### 추가 정보 - 오디오 전용 및 비디오 전용(사전 녹화된)(1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
+
+* [성공 기준 이해 1.2.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
+* [성공 기준을 충족하는 방법 1.2.1](https://www.w3.org/WAI/WCAG20/quickref/#media-equiv)
+
+### 캡션(사전 기록된)(1.2.2) {#captions-pre-recorded}
+
+* 성공 기준 1.2.2
+* 레벨 A
+* 캡션(사전 기록된): 미디어가 텍스트의 미디어 대체 요소이고 이것이 레이블로 명시되어 있는 경우를 제외하면 동기화된 미디어에 있는 사전 녹음된 모든 오디오 컨텐츠에 대해 캡션이 제공됩니다.
+
+#### 목적 - 캡션(사전 기록된)(1.2.2) {#purpose-captions-pre-recorded}
+
+귀가 들리지 않거나 난청인 사람은 오디오 컨텐츠에 액세스할 수 없거나 액세스하는 데 어려움이 클 것입니다. 캡션은 음성 오디오 및 비음성 오디오에 상응하는 텍스트로서, 비디오가 재생되는 동안 적절한 시점에 화면에 표시됩니다. 캡션을 사용하면 오디오를 들을 수 없는 사람이 비디오의 내용을 이해할 수 있습니다.
+
+>[!NOTE]
+>
+>비디오나 애니메이션과 동일한 페이지에서 적절한 텍스트나 텍스트가 아닌 상당 요소(상당하는 정보를 직접 제공)를 사용할 수 있을 경우 캡션이 필요하지 않습니다.
+
+#### 충족하는 방법 - 캡션(사전 기록된)(1.2.2) {#how-to-meet-captions-pre-recorded}
+
+다음 중 한 방법으로 캡션을 사용할 수 있습니다.
+
+* 열림: 비디오가 재생될 때 항상 표시
+* 닫힘: 사용자가 캡션을 켜거나 끌 수 있음
+
+캡션을 볼지 여부를 사용자가 선택할 수 있도록, 가능할 때마다 닫힘 캡션 기능을 사용하십시오.
+
+닫힘 캡션의 경우, 비디오 파일과 함께 동기화된 캡션 파일을 적절한 형식(예: [SMIL](https://www.w3.org/AudioVideo/))으로 만들어 제공해야 할 것입니다(이렇게 하는 방법에 대한 자세한 설명은 이 안내서의 범위를 벗어나지만, [추가 정보 - 캡션(사전 기록된)(1.2.2)](#more-information-captions-pre-recorded)에 일부 자습서 링크를 제공). 비디오에 캡션을 사용할 수 있다는 것을 사용자에게 알려주는 공지를 반드시 제공하십시오.
+
+열림 캡션을 사용해야 하는 경우 텍스트를 비디오 트랙에 포함하십시오. 비디오에 제목을 오버레이할 수 있도록 해주는 비디오 편집 애플리케이션을 사용하면 됩니다.
+
+#### 추가 정보 - 캡션(사전 기록된)(1.2.2) {#more-information-captions-pre-recorded}
+
+* [성공 기준 이해 1.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html):
+* [성공 기준을 충족하는 방법 1.2.2](https://www.w3.org/WAI/WCAG20/quickref/#media-equiv)
+* [W3C: 동기화된 멀티미디어](https://www.w3.org/AudioVideo/)
+* [캡션, 텍스트 스크립트 및 오디오 설명 - WebAIM 사용](https://webaim.org/techniques/captions/)
+
+### 오디오 설명 또는 미디어 대체 요소(사전 녹음된)(1.2.3) {#audio-description-or-media-alternative-pre-recorded}
+
+* 성공 기준 1.2.3
+* 레벨 A
+* 오디오 설명 또는 미디어 대체 요소(사전 녹음된): 미디어가 텍스트의 미디어 대체 요소이고 이것이 레이블로 명시되어 있는 경우를 제외하면 동기화된 미디어에 대해 사전 녹화된 비디오 컨텐츠의 시간 기반 미디어나 오디오 설명에 대한 대체 요소가 제공됩니다.
+
+#### 목적 - 오디오 설명 또는 미디어 대체 요소(사전 녹음된) (1.2.3) {#purpose-audio-description-or-media-alternative-pre-recorded}
+
+앞이 안 보이거나 시각 장애가 있는 사람은 비디오나 애니메이션에 있는 정보가 시각적으로만 제공되거나, 사운드트랙이 시각적으로 일어나고 있는 상황에 대해 이해할 수 있도록 충분한 정보를 제공하지 않는 경우 액세서빌러티 장벽을 경험하게 됩니다.
+
+#### 충족하는 방법 - 오디오 설명 또는 미디어 대체 요소(사전 녹음된)(1.2.3) {#how-to-meet-audio-description-or-media-alternative-pre-recorded}
+
+이러한 성공 기준을 충족하기 위해 채택할 수 있는 접근 방법은 두 가지가 있습니다. 다음 중 한 방법을 사용하면 됩니다.
+
+1. 비디오 컨텐츠에 대한 추가 오디오 설명을 포함합니다. 이 방법은 다음 세 가지 방법 중 하나를 사용하여 수행할 수 있습니다.
+
+   * 기존 대화에서 잠시 중단한 동안, 기존 오디오 트랙의 일부로서 표현되지 않은 장면의 변화에 대한 정보를 제공합니다.
+   * 원래의 사운드트랙뿐만 아니라 장면 변화에 대한 추가 오디오 정보도 포함하는 새로운 선택적 추가 오디오 트랙을 제공합니다.
+
+      * 이렇게 하면 사용자가 기존의 오디오 트랙(오디오 설명이 *들어 있지 않음*)과 새 오디오 트랙(오디오 설명이 *들어 있음*) 간을 전환할 수 있습니다.
+      * 이 방법은 추가 설명이 필요하지 않는 사용자에게 불편을 주지 않습니다.
+   * 확장된 오디오 설명을 허용하는 비디오 컨텐츠의 두 번째 버전을 만듭니다. 이렇게 하면 적절한 지점에서 오디오와 비디오를 일시적으로 중단하여, 기존 대화 간 공백 내에 상세한 오디오 설명을 제공하는 것과 관련된 어려움이 줄어듭니다. 따라서 작업이 다시 시작되기 전에 훨씬 더 긴 오디오 설명이 가능합니다. 앞의 예에서처럼, 이 방법은 추가 설명이 필요하지 않은 사용자에게 지장을 주지 않도록 선택 가능한 추가 오디오 트랙으로 제공되면 가장 좋습니다.
+
+
+1. 비디오나 애니메이션의 오디오 요소와 시각적 요소에 상응하는 적절한 텍스트인 텍스트 스크립트를 제공합니다. 여기에는 가능할 경우 말하고 있는 사람, 설정 설명, 음성 표현에 대한 명시를 포함해야 합니다. 길이에 따라 텍스트 스크립트를 비디오나 애니메이션과 동일한 페이지에 배치하거나, 별도의 페이지에 배치할 수 있습니다. 후자를 선택하는 경우 비디오나 애니메이션에 인접한 텍스트 스크립트에 링크를 제공하십시오.
+
+오디오 설명이 있는 비디오를 만드는 방법에 대한 정확한 설명은 이 안내서의 범위를 벗어납니다. 비디오와 오디오 설명을 만드는 것은 시간이 많이 소요될 수 있지만, 다른 Adobe 제품을 사용하면 이런 작업을 수행하는 데 도움이 될 수 있습니다. If you create content in Adobe Flash Professional, you should also create a script to prompt the user to download the appropriate plug-in, and provide a text alternative through the `<noscript>` element.
+
+#### 추가 정보 - 오디오 설명 또는 미디어 대체 요소(사전 녹음된)(1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
+
+* [성공 기준 이해 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
+* [성공 기준을 충족하는 방법 1.2.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc)
+* [Adobe Encore CS5](https://www.adobe.com/products/premiere/encore/)
+
+### 캡션(라이브) (1.2.4)  {#captions-live}
+
+* 성공 기준 1.2.4
+* 레벨 AA
+* 캡션(라이브): 동기화된 미디어에 있는 모든 라이브 오디오 컨텐츠에 대해 캡션이 제공됩니다.
+
+#### 목적 - 캡션(라이브)(1.2.4) {#purpose-captions-live}
+
+This success criterion is identical to [Captions (Pre-Recorded)](#captions-pre-recorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
+
+#### 충족하는 방법 - 캡션(라이브)(1.2.4) {#how-to-meet-captions-live}
+
+Follow the guidance provided for [Captions (Pre-Recorded)](#captions-pre-recorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real time captioning or speech-to-text tools.
+
+상세한 지침은 이 문서의 범위를 벗어나지만 다음 리소스는 유용한 정보를 제공합니다.
+
+* [WebAIM: 실시간 캡션 기능](https://www.webaim.org/techniques/captions/realtime.php)
+* [AccessIT(워싱턴 대학교): 음성 인식 기능을 사용하여 캡션을 자동으로 생성할 수 있습니까?](https://www.washington.edu/accessit/articles?1209)
+
+#### 추가 정보 - 캡션(라이브)(1.2.4) {#more-information-captions-live}
+
+* [성공 기준 이해 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
+* [성공 기준을 충족하는 방법 1.2.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-real-time-captions)
+
+### 오디오 설명(사전 녹음된)(1.2.5)  {#audio-description-pre-recorded}
+
+* 성공 기준 1.2.5
+* 레벨 AA
+* 오디오 설명(사전 녹음된): 동기화된 미디어에 있는 모든 사전 녹화된 비디오 컨텐츠에 대해 오디오 설명이 제공됩니다.
+
+#### 목적 - 오디오 설명(사전 녹음된)(1.2.5) {#purpose-audio-description-pre-recorded}
+
+이 성공 기준은 작성자가 레벨 AA에 부합하는 훨씬더 상세한 오디오 설명을 제공해야 한다는 점을 제외하면 [오디오 설명 또는 미디어 대체 요소(사전 녹음된)](#audio-description-or-media-alternative-pre-recorded)와 동일합니다.
+
+#### 충족하는 방법 - 오디오 설명(사전 녹음된)(1.2.5) {#how-to-meet-audio-description-pre-recorded}
+
+[오디오 설명 또는 미디어 대체 요소(사전 녹음된)](#audio-description-or-media-alternative-pre-recorded)에 제공된 지침을 따르십시오.
+
+#### 추가 정보 - 오디오 설명(사전 녹음된)(1.2.5) {#more-information-audio-description-pre-recorded}
+
+* [성공 기준 이해 1.2.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
+* [성공 기준을 충족하는 방법 1.2.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only)
+
+### 적응성(1.3) {#adaptable}
+
+[지침 1.3 적응성: 정보나 구조의 손상 없이 다양한 방식으로 보여줄 수 있는 컨텐츠(예: 간단한 레이아웃)를 만드십시오.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+
+이 지침에는 다음과 같은 사람을 지원하는 데 필요한 요구 사항이 포함됩니다.
+
+* *표준 *2차원, 다중 열, 컬러 웹 페이지 레이아웃에서 작성자가 제공한 정보에 액세스할 수 없을 수 있습니다.
+
+* 오디오만 사용할 수 있거나, 큰 텍스트나 높은 대비와 같은 대체 시각적 표시만 사용할 수 있는 사람
+
+### 정보 및 관계(1.3.1)  {#info-and-relationships}
+
+* 성공 기준 1.3.1
+* 레벨 A
+* 정보 및 관계: 프레젠테이션을 통해 전달된 정보, 구조 및 관계는 프로그래밍 방식으로 결정되거나 텍스트에서 사용할 수 있습니다.
+
+#### 목적 - 정보 및 관계(1.3.1) {#purpose-info-and-relationships}
+
+장애를 가진 사람이 사용하는 많은 보조 기술은 컨텐츠를 효과적으로 표시하거나 출력하기 위해 구조적 정보에 의존합니다. 이러한 구조적 정보는 페이지 머리글, 표 행 및 열 머리글과 목록 유형의 형식을 취할 수 있습니다. 예를 들어, 스크린 리더를 사용하는 사용자는 머리글에서 머리글까지 페이지를 탐색할 수 있습니다. 하지만 페이지 컨텐츠가 기본 HTML이 아니라 시각적 스타일링을 통해서만 구조를 갖는 것으로 나타나면, 보조 기술에 사용할 수 있는 구조적 정보가 없어서 더 쉬운 탐색을 지원하는 것으로 기능이 제한됩니다.
+
+이 성공 기준은 그와 같은 구조적 정보가 HTML을 통해 제공됨으로써 브라우저와 보조 기술이 정보에 액세스하여 이용할 수 있도록 하기 위한 것입니다.
+
+#### 충족하는 방법 - 정보 및 관계(1.3.1) {#how-to-meet-info-and-relationships}
+
+AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만들기가 쉬워집니다. 페이지 컨텐츠를 RTE(텍스트 구성 요소)로 열고 **형식** 메뉴를 사용하여 적절한 구조적 요소(예: 단락, 머리글 등)를 지정하십시오.
+
+다음 이미지에는 단락 텍스트로 스타일링한 텍스트가 있습니다. 사용되는 소스 코드 보기에서는 코드에 올바르게 열고 닫는 &lt;p> 및 &lt;/p> 태그가 있음을 보여줍니다.
+
+![소스 편집 모드에 표시된 단락 요소의 예(클래식 UI).](assets/chlimage_1-18a.png)
+
+다음 방법을 사용하여 웹 페이지의 구조가 적절하도록 만들 수 있습니다.
+
+* **머리글 사용:**
+
+   As long as you have the accessibility features of the RTE enabled (see [AEM and Accessibility](/help/sites-administering/rte-accessible-content.md)), AEM offers 3 levels of page heading. You can use these to identify sections and subsections of content. Heading 1 is the highest level of heading, Heading 3 the lowest. The system administrator can configure the system to allow the use of more heading levels.
+
+   다음 이미지는 여러 가지 머리글 유형의 예를 보여줍니다.
+
+   ![머리글 H1에서 H3까지 드롭다운 선택기에 표시됩니다(클래식 UI).](assets/chlimage_1-19a.png)
+
+* **강조된 텍스트**:
+
+   강조를 나타내려면 &lt;strong> 또는 &lt;em> 요소를 사용합니다. 머리글을 사용하여 단락 내 텍스트를 강조 표시하지 마십시오.
+
+   * 강조할 텍스트를 강조 표시합니다.
+   * Click on the **B** icon (for &lt;strong>) or the **I** icon (for &lt;em>) shown within the **Properties** panel (make sure that HTML is selected).
+   >[!NOTE]
+   >
+   >표준 AEM 설치의 RTE는 다음을 사용하도록 설정되어 있습니다.
+   >
+   >* &lt;strong>에 대해 &lt;b>
+   * &lt;em>에 대해 &lt;i>
+   이러한 요소는 효과가 동일하지만 &lt;strong>과 &lt;em>이 의미상 올바른 html이므로 더 많이 사용합니다. 개발팀은 프로젝트 인스턴스를 개발할 때 &lt;strong>과 &lt;em>(&lt;b>와 &lt;i>대신)을 사용하도록 RTE를 구성할 수 있습니다.
+
+* **목록 사용**: HTML을 사용하여 세 가지 서로 다른 유형의 목록을 지정할 수 있습니다.
+
+   * The `<ul>` element is used for *unordered* lists (bulleted) lists. Individual list items are identified using the `<li>` element.
+
+      in the RTE, use the **Bulleted List** icon.
+
+   * The `<ol>` element is used for *numbered* lists. Individual list items are identified using the `<li>` element.
+
+      RTE에서는 **번호 매기기 목록** 아이콘을 사용하십시오.
+   기존 컨텐츠를 특정 목록 유형으로 변경하려면, 적절한 텍스트를 강조 표시하고 적절한 목록 유형을 선택하십시오. 단락 텍스트가 어떻게 입력되는지를 보여주는 앞의 예에서처럼, 적절한 목록 요소가 HTML에 자동으로 추가되지만 소스 편집 보기에서 이를 볼 수도 있습니다.
+
+   >[!NOTE]
+   `<dl>` 은 RTE에서 지원되지 않습니다.
+
+* **표 사용**:
+
+   데이터 표는 HTML 표 요소를 사용하여 식별해야 합니다.
+
+   * one `<table>` element
+   * a `<tr>` element for each row of the table
+   * a `<th>` element for each row and column heading
+   * a `<td>` element for every data cell
+   >[!NOTE]
+   표는 **표** 구성 요소로 구현해야 합니다. [텍스트] 구성 요소에서 표를 만들 수 있지만 권장되는 방법은 아닙니다.
+
+   또한 액세스 가능한 표에서는 다음 요소와 속성을 사용합니다.
+
+   * The `<caption>` element is used to provide a visible caption for the table. 캡션은 기본적으로 표의 위쪽 중앙에 나타나지만 CSS를 사용하여 위치를 적절하게 지정할 수 있습니다. 캡션은 표와 프로그래밍 방식으로 연결되어 있으므로 컨텐츠에 소개를 제공하는 데 유용한 방법입니다.
+   * The `<h3 class="summary">` element assists non-sighted users to more easily understand the information presented within a table, by providing a synopsis of what a sighted user can see. 이 요소는 복잡하거나 색다른 표 레이아웃을 사용할 때 유용합니다(이 속성은 브라우저에 표시되지 않고 보조 기술에만 인식됨).
+   * The `scope` attribute of the `<th>` element is used to indicate whether a cell represents a header for a particular row, or for a particular column. 유사한 접근 방법은 복잡한 표에서 헤더와 id 속성을 사용하는 것입니다. 이 경우 데이터 셀이 하나 이상의 헤더와 연결되어 있을 수 있습니다.
+   >[!NOTE]
+   By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+
+   **표**&#x200B;를 추가할 때 이 대화 상자를 사용하여 **표 속성**&#x200B;을 구성할 수 있습니다.
+
+   * 적절한 **캡션**
+   * **폭**, **높이**, **테두리**, **셀 패딩**, **셀 간격** 속성은 전역 스타일 시트에서 설정할 수 있으므로 이러한 속성의 기본값 중 어느 것이든 얼마든지 제거하십시오.
+   ![표 속성 대화 상자](assets/chlimage_1-20a.png)
+
+   You can then use the **Cell properties** to choose whether the cell is a data or header cell and, if a header cell, whether it relates to a row or column or both:
+
+   ![셀 속성 대화 상자. 행(보통 첫 번째 행)을 헤더 행으로 설정](assets/chlimage_1-21a.png)
+
+* **복잡한 데이터 표:**
+
+   In some cases, where there are complex tables with two or more levels of headers, then the basic Table Properties may not be enough to provide all the structural information necessary. For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header** and **id** attributes. For example, in the table below headers and ids are matched to make a programmatic association for assistive technology users.
+
+   >[!NOTE]
+   기본적으로 제공되는 설치에서는 id 속성을 사용할 수 없습니다. RTE에서 HTML 규칙과 직렬 변환기를 구성하여 사용하도록 만들 수 있습니다.
+
+   >[!NOTE]
+   표는 **표** 구성 요소로 구현해야 합니다. [텍스트] 구성 요소에서 표를 만들 수 있지만 권장되는 방법은 아닙니다.
+
+   ```xml
+   <table>
+      <tr>
+        <th rowspan="2" id="h">Homework</th>
+        <th colspan="3" id="e">Exams</th>
+        <th colspan="3" id="p">Projects</th>
+      </tr>
+      <tr>
+        <th id="e1" headers="e">1</th>
+        <th id="e2" headers="e">2</th>
+        <th id="ef" headers="e">Final</th>
+        <th id="p1" headers="p">1</th>
+        <th id="p2" headers="p">2</th>
+        <th id="pf" headers="p">Final</th>
+      </tr>
+      <tr>
+       <td headers="h">15%</td>
+       <td headers="e e1">15%</td>
+       <td headers="e e2">15%</td>
+       <td headers="e ef">20%</td>
+       <td headers="p p1">10%</td>
+       <td headers="p p2">10%</td>
+       <td headers="p pf">15%</td>
+      </tr>
+     </table>
+   ```
+
+   AEM에서 이를 수행하려면 소스 편집 모드를 사용하여 마크업을 직접 추가해야 합니다.
+
+   >[!NOTE]
+   이 기능은 표준 설치에서 바로 사용할 수는 없으므로 RTE에서 HTML 규칙과 직렬 변환기를 구성해야 합니다.
+
+#### 추가 정보 - 정보 및 관계(1.3.1) {#more-information-info-and-relationships}
+
+* [성공 기준 이해 1.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
+* [성공 기준을 충족하는 방법 1.3.1](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic)
+
+### 감각 특성(1.3.3)  {#sensory-characteristics}
+
+* 성공 기준 1.3.3
+* 레벨 A
+* 감각 특성: 컨텐츠를 이해하고 작동시키기 위해 제공된 지침은 모양, 크기, 시각적 위치, 방향 또는 소리와 같은 구성 요소의 감각 특성에만 전적으로 의지하지는 않습니다.
+
+#### 목적 - 감각 특성(1.3.3) {#purpose-sensory-characteristics}
+
+디자이너는 정보를 표현할 때 색상, 모양, 텍스트 스타일 또는 컨텐츠의 절대적 또는 상대적 위치와 같은 시각적 디자인 기능에 초점을 맞추는 경우가 많습니다. 이러한 기능은 정보를 전달하는 데 있어 매우 강력한 디자인 기술일 수 있지만, 앞이 안 보이거나 시각 장애가 있는 사람은 위치나 색상 또는 모양과 같은 속성에 대해 시각적 식별이 필요한 정보에 액세스하지 못할 수 있습니다.
+
+마찬가지로, 서로 다른 소리를 구별해야 하는 정보(예: 여성 또는 남성 음성 컨텐츠)가 오디오 컨텐츠의 텍스트 대체 요소에 반영되지 않으면 청각 장애가 있는 사람에게 액세서빌러티 장벽을 제공하게 됩니다.
+
+>[!NOTE]
+색상에 대한 대체 요소와 관련된 요구 사항을 알려면 [색상 사용](#use-of-color)을 참조하십시오.
+
+#### 충족하는 방법 - 감각 특성(1.3.3) {#how-to-meet-sensory-characteristics}
+
+페이지 컨텐츠의 시각적 특성에 의존하는 모든 정보가 대체 형식으로도 제공되도록 하십시오.
+
+* 시각적 위치에 의존하여 정보를 제공하지 마십시오. 예를 들어, 추가 정보에 액세스하기 위해 페이지의 오른쪽에 있는 메뉴를 사용자가 참조하도록 하려는 경우, *오른쪽에 있는 메뉴*&#x200B;를 참조하도록 하지 말고, 대신 메뉴에 이름을 지정(예를 들어 머리글을 통해)하고 텍스트에 있는 해당 이름을 참조하도록 하십시오.
+* 정보를 전달하는 유일한 방법으로 텍스트 스타일에 의존하지 마십시오(예: 굵은 글꼴 또는 기울임꼴 텍스트).
+
+>[!NOTE]
+수사적 용어의 사용이 비시각적 컨텍스트에서 의미를 갖는다는 것을 알고 있다면 이러한 용어를 사용할 수 있습니다. 예를 들어, *위*&#x200B;와 *아래*&#x200B;는 각각 특정 컨텐츠 항목의 앞 컨텐츠와 뒤 컨텐츠를 의미하므로 일반적으로 사용할 수 있으며, 이는 컨텐츠을 큰 소리로 말할 때에도 여전히 적용됩니다.
+
+#### 추가 정보 - 감각 특성(1.3.3) {#more-information-sensory-characteristics}
+
+* [성공 기준 이해 1.3.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
+* [성공 기준을 충족하는 방법 1.3.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding)
+
+### 구별 가능성(1.4) {#distinguishable}
+
+[지침 1.4 구별 가능성: 배경에서 전경을 구별하는 것을 포함하여 사용자가 컨텐츠를 더 쉽게 보고 들을 수 있도록 하십시오.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
+
+### 색상 사용(1.4.1)  {#use-of-color}
+
+* 성공 기준 1.4.1
+* 레벨 A
+* 색상 사용: 색상은 정보를 전달하거나, 작업을 나타내거나, 응답을 요구하거나, 시각적 요소를 구별하기 위한 유일한 시각적 수단으로 사용되지는 않습니다.
+
+>[!NOTE]
+이 성공 기준에서는 색상 지각에 대해 자세히 설명합니다. 색상 및 다른 시각 표현 코딩에 대한 프로그래밍 방식 액세스를 포함하여 지각의 다른 형식은 [적응성(1.3)](#adaptable)에서 다룹니다.
+
+#### 목적 - 색상 사용(1.4.1) {#purpose-use-of-color}
+
+색상은 분명히 웹 페이지의 미적 호소력을 향상시키는 효과적 방법이며 정보를 전달하는 데에도 유용합니다. 하지만 실명에서부터 특정 색상을 구별하지 못하는 색약에 이르기까지 다양한 시각 장애가 있습니다. 따라서 색상 코딩은 정보를 제공하는 데 있어 믿을 수 있는 방법이 아닙니다.
+
+예를 들어, 적색-녹색 색맹인 사람은 녹색 색조와 빨간색 색조를 구별하지 못할 것입니다. 이들은 두 색상을 모두 제 3의 색상(예: 갈색)으로 인식하므로 빨간색, 녹색 및 갈색을 구분할 수 없을 것입니다.
+
+또한 텍스트 전용 브라우저나 모노크롬 디스플레이 장치를 사용하거나 페이지의 흑백 인쇄물을 보는 사용자의 경우 색상을 인식할 수 없습니다.
+
+#### 충족하는 방법 - 색상 사용(1.4.1) {#how-to-meet-use-of-color}
+
+색상을 사용하여 정보를 전달할 때마다, 색상을 보지 않고도 정보를 사용할 수 있도록 하십시오.
+
+예를 들어, 색상으로 제공된 정보가 텍스트에서도 명시적으로 제공되도록 하십시오. 아래 그림에서는 색상과 텍스트가 모두 공연 관람을 위한 빈 좌석이 있는지를 가리킵니다.
+
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>공연</strong></p> </td>
+   <td><p><strong>사용 가능</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>3월 16일 화요일<sup></sup></p> </td>
+   <td><p>좌석 있음</p> </td>
+  </tr>
+  <tr>
+   <td><p>3월 17일 수요일</p> </td>
+   <td><p>좌석 있음</p> </td>
+  </tr>
+  <tr>
+   <td><p>3월 18일 목요일<sup></sup></p> </td>
+   <td><p>매진</p> </td>
+  </tr>
+ </tbody>
+</table>
+
+색상이 정보를 제공하는 단서로 사용되는 경우 스타일(예: 굵게, 기울임꼴)이나 글꼴을 변경하는 등, 추가적인 시각적 단서를 제공해야 합니다. 이렇게 하면 시력이 약하거나 색약인 사람이 정보를 식별하는 데 도움이 됩니다. 하지만 이 방법은 페이지를 전혀 볼 수 없는 사람은 도울 수 없으므로 여기에 전적으로 의존할 수는 없습니다.
+
+#### 추가 정보 - 색상 사용(1.4.1) {#more-information-use-of-color}
+
+* [성공 기준 이해 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [성공 기준을 충족하는 방법 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [3:1 대비율 충족 및 &quot;웹에 사용 가능한&quot; 색상 목록 포함에 대한 지침](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+
+### 대비(최소)(1.4.3) {#contrast-minimum}
+
+* 성공 기준 1.4.3
+* 레벨 AA
+* 대비(최소): 텍스트 및 텍스트 이미지의 시각적 표현에는 다음을 제외하고 최소 4.5:1의 대비율이 있습니다.
+
+   * 큰 텍스트: 대규모 텍스트와 대규모 텍스트 이미지에는 최소 3:1의 대비율이 있습니다.
+   * 부수적: 비활성 사용자 인터페이스 구성 요소에 속하거나, 순수 장식이거나, 아무도 볼 수 없거나, 상당한 다른 시각적 컨텐츠를 포함하는 사진에 속하는 텍스트나 텍스트 이미지에는 대비 요구 사항이 없습니다.
+   * 로고: 로고나 브랜드 이름에 속하는 텍스트에는 최소 대비 요구 사항이 없습니다.
+
+#### 목적 - 대비(최소)(1.4.3) {#purpose-contrast-minimum}
+
+특정 시각 장애가 있는 사람은 특정의 낮은 대비 색상 쌍 간을 구별하지 못할 수 있습니다. 다음 중 하나의 경우 이러한 사람에 대해 액세서빌러티 문제가 발생할 수 있습니다.
+
+* 텍스트가 배경색과 대비가 잘 되지 않는 경우
+* 텍스트의 색상 코딩(링크 텍스트와 비링크 텍스트 등)은 정보를 구별하는 데 중요합니다.
+
+>[!NOTE]
+순전히 장식 목적으로 사용된 텍스트는 이 성공 기준에서 제외되었습니다.
+
+#### 충족하는 방법 - 대비(최소)(1.4.3) {#how-to-meet-contrast-minimum}
+
+텍스트가 배경과 충분히 대비되는지 확인하십시오. 대비율은 해당 텍스트의 크기와 스타일에 따라 달라집니다.
+
+* 크기가 18포인트(또는 14포인트 굵은 글꼴) 미만인 포인트의 경우, 텍스트/텍스트 이미지와 배경 간의 대비율은 최소 4.5:1이어야 합니다.
+* 크기가 18포인트(또는 14포인트 굵은 글꼴) 이상인 텍스트의 경우 대비율은 최소 3:1이어야 합니다.
+* 배경에 패턴이 있다면 모든 텍스트 주변의 배경은 4.5:1이나 3:1 비율이 유지되도록 음영을 처리해야 합니다.
+
+대비율을 확인하려면 [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html)나 [WebAIM 색상 대비 검사기와 같은 색상 대비 도구](https://www.webaim.org/resources/contrastchecker/)를 사용하십시오. 이러한 도구를 사용하면 색상 쌍을 검사하고 대비 문제에 대해 보고할 수 있습니다.
+
+또는 페이지의 모양을 지정하는 것에 대해 관심이 별로 없다면 배경과 전경 텍스트 색상을 지정하지 않도록 선택할 수 있습니다. 사용자의 브라우저가 텍스트와 배경의 색상을 결정하게 되면 대비 검사가 필요하지 않습니다.
+
+권장 대비 수준을 충족시킬 수 없는 경우 해당 페이지의 대체, 상응 버전(색상 대비 문제가 없는 페이지)에 대한 링크를 제공하거나, 사용자가 자신의 요구 사항에 맞춰 페이지 색상 구성표의 대비를 조정할 수 있도록 해야 합니다.
+
+#### 추가 정보 - 대비(최소)(1.4.3) {#more-information-contrast-minimum}
+
+* [성공 기준 이해 1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+* [성공 기준을 충족하는 방법 1.4.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast)
+
+### 텍스트 이미지(1.4.5) {#images-of-text}
+
+* 성공 기준 1.4.5
+* 레벨 AA
+* 텍스트 이미지: 사용되는 기술에서 시각적 프레젠테이션을 구현할 수 있는 경우 다음의 경우를 제외하고 정보를 전달하는 데 텍스트 이미지보다는 텍스트가 사용됩니다:
+
+   * 사용자 지정 가능: 텍스트 이미지를 사용자의 요구 사항에 맞게 시각적으로 사용자 지정할 수 있습니다.
+   * 필수: 전달되고 있는 정보에 텍스트의 특별한 프레젠테이션이 필요합니다.
+
+>[!NOTE]
+로고(로고나 브랜드 이름에 속하는 텍스트)는 필수로 간주됩니다.
+
+#### 목적 - 텍스트 이미지(1.4.5) {#purpose-images-of-text}
+
+텍스트 이미지는 특별한 스타일의 텍스트를 선호하는 경우 많이 사용됩니다. 예를 들어, 로고나 다른 소스(예: 종이 문서의 스캔)에서 생성된 텍스트가 여기에 해당합니다. 하지만 HTML로 표시되거나 CSS를 사용하여 스타일링된 텍스트와 비교하면, 텍스트 이미지는 시각 장애나 읽기에 어려움이 있는 사람에게 필요할 수 있는 크기나 모양 변경 면에서 유연성이 부족합니다.
+
+#### 충족하는 방법 - 텍스트 이미지(1.4.5) {#how-to-meet-images-of-text}
+
+텍스트 이미지를 사용해야 하는 경우 텍스트를 사용자 지정이 가능한 방식으로 사용할 수 있도록 CSS를 사용하여 텍스트 이미지를 HTML에서 상응하는 텍스트로 바꾸십시오. 이러한 방법에 대한 예를 보려면 [C30: CSS를 사용하여 텍스트를 텍스트 이미지로 바꾸기 및 전환할 사용자 인터페이스 컨트롤 제공](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30)을 참조하십시오.
+
+#### 추가 정보 - 텍스트 이미지(1.4.5) {#more-information-images-of-text}
+
+* [성공 기준 이해 1.4.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
+* [성공 기준을 충족하는 방법 1.4.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation)
+
+## 원칙 2: 작동 가능 {#principle-operable}
+
+[원칙 2: 작동 가능 - 사용자 인터페이스 구성 요소와 탐색 기능은 작동 가능해야 합니다.](https://www.w3.org/TR/WCAG20/#operable)
+
+### 일시 중지, 중지, 숨기기(2.2.2)  {#pause-stop-hide}
+
+* 성공 기준 2.2.2
+* 레벨 A
+* 일시 중지, 중지, 숨기기: 이동, 깜박임, 스크롤 또는 자동 업데이트 정보에 대해서는 다음 내용이 적용됩니다. 
+
+   * 이동, 깜박임, 스크롤: (a) 자동으로 시작되고, (b) 5초 이상 지속되고, (c) 다른 컨텐츠와 병렬로 표시되는 이동, 깜박임 또는 스크롤 정보의 경우, 이동, 깜박임 또는 스크롤이 중요한 활동의 일부가 아니면 사용자가 일시 중지하거나, 중지하거나, 숨길 수 있는 메커니즘이 있습니다.
+   * 자동 업데이트: (a) 자동으로 시작되고, (b) 다른 컨텐츠와 병렬로 표시되는 자동 업데이트 정보의 경우, 자동 업데이트가 중요한 활동의 일부가 아니면 사용자가 일시 중지하거나, 중지하거나, 숨길 수 있는 메커니즘이 있습니다.
+
+주목할 점은 다음과 같습니다.
+
+1. 깜박이거나 발광하는 컨텐츠와 관련한 요구 사항에 대해서는 [발작을 초래하는 것으로 알려진 방법으로 컨텐츠 디자인 안하기(2.3)](#seizures)를 참조하십시오.
+1. 이 성공 기준을 충족하지 않는 컨텐츠는 전체 페이지를 사용하는 사용자의 능력을 방해할 수 있으므로 웹 페이지의 모든 컨텐츠(다른 성공 기준을 충족하는 데 사용되는지 여부에 상관없이)는 이 성공 기준을 충족해야 합니다. [적합성 요구 사항 5: 비간섭](https://www.w3.org/TR/WCAG20/#cc5)을 참조하십시오.
+1. 주기적으로 소프트웨어에 의해 업데이트되거나, 사용자 에이전트에게 스트리밍되는 컨텐츠는 일시 중지의 시작과 프레젠테이션 재개 간에 생성되었거나 받은 정보를 보존하거나 제공할 필요가 없습니다. 왜냐하면 기술적으로 가능하지 않을 수도 있고 많은 경우 그래야 한다고 오해할 수도 있습니다.
+1. 미리 로드된 단계나 유사한 상황의 일부로서 발생하는 애니메이션은 모든 사용자에 대해 해당 단계 중에 상호 작용이 발생할 수 없는 경우와 진행 상태를 나타내지 않음으로써 사용자를 혼동시키거나 컨텐츠가 동결되었거나 손상되었다고 생각하게 하는 경우 극히 중요하다고 간주할 수 있습니다.
+
+#### 목적 - 일시 중지, 중지, 숨기기(2.2.2) {#purpose-pause-stop-hide}
+
+특정 사용자에게는 움직이는 컨텐츠가 주의를 분산시키거나 페이지의 다른 부분에 집중하기 어렵게 할 수 있고, 움직이는 텍스트를 따라잡는 데 힘든 사람들에게는 읽기 어려운 것으로 나타날 수도 있습니다.
+
+#### 충족하는 방법 - 일시 중지, 중지, 숨기기(2.2.2) {#how-to-meet-pause-stop-hide}
+
+컨텐츠의 특성에 따라 이동하거나, 발광하거나, 깜박이는 컨텐츠가 들어 있는 웹 페이지를 만들 때 다음의 제안을 하나 이상 적용할 수 있습니다.
+
+* 사용자에게 읽을 시간을 충분기 주기 위해 컨텐츠 스크롤을 일시 중지하는 수단을 제공하십시오. 예를 들어, 자막 뉴스나 자동 업데이트된 텍스트가 여기에 해당합니다.
+* 깜박이는 컨텐츠가 5초 후 깜박임을 중지하는지 확인하십시오.
+* 적절한 기술을 사용하여 브라우저로 비활성화할 수 있는 깜박이는 컨텐츠를 표시하십시오. 예를 들어, GIF(Graphics Interchange Format) 또는 APNG(Animated Portable Network Graphics) 파일이 여기에 해당합니다.
+* 웹 페이지에서 양식 컨트롤을 제공하여 페이지에서 깜박이는 모든 컨텐츠를 사용자가 비활성화할 수 있도록 하십시오.
+* 위의 방법 모두가 불가능할 경우 깜박이는 기능을 제외한 모든 컨텐츠가 들어 있는 페이지에 대한 링크를 제공하십시오.
+
+#### 추가 정보 - 일시 중지, 중지, 숨기기(2.2.2) {#more-information-pause-stop-hide}
+
+* [성공 기준 이해 2.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
+* [충족하는 방법 - 성공 기준 2.2.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause)
+
+### 발작(2.3) {#seizures}
+
+[지침 2.3 발작: 발작을 초래하는 것으로 알려진 방법으로 컨텐츠 디자인 안하기](https://www.w3.org/TR/WCAG20/#seizure)
+
+### 세 번 발광 또는 임계값 미만(2.3.1) {#three-flashes-or-below-threshold}
+
+* 성공 기준 2.3.1
+* 레벨 A
+* 세 번 발광 또는 임계값 미만: 웹 페이지는 1초 범위 내에 세 번 넘게 발광하는 컨텐츠를 포함하지 않아야 합니다. 또는 발광이 일반적인 발광 및 빨간색 발광 임계값 미만이어야 합니다.
+
+>[!NOTE]
+이 성공 기준을 충족하지 않는 컨텐츠는 전체 페이지를 사용하는 사용자의 능력을 방해할 수 있으므로 웹 페이지의 모든 컨텐츠(다른 성공 기준을 충족하는 데 사용되는지 여부에 상관없이)는 이 성공 기준을 충족해야 합니다. [적합성 요구 사항 5: 비간섭](https://www.w3.org/TR/WCAG20/#cc5)을 참조하십시오.
+
+#### 목적 - 세 번 발광 또는 임계값 미만(2.3.1) {#purpose-three-flashes-or-below-threshold}
+
+경우에 따라 발광하는 컨텐츠가 감광성 발작을 초래할 수 있습니다. 이 성공 기준은 이와 같은 사용자가 발광하는 컨텐츠에 대한 걱정 없이 모든 컨텐츠에 액세스하여 경험할 수 있도록 해줍니다.
+
+#### 충족하는 방법 - 세 번 발광 또는 임계값 미만(2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
+
+다음 기술이 적용되었는지 확인하는 조치를 취해야 합니다.
+
+* 구성 요소가 1초 동안 세 번 넘게 발광하지 않도록 하십시오.
+* If the above condition cannot be met, then display flashing content within a *small safe area* in pixels on the screen. This area is calculated using a complex formula, covered in [G176: Keeping the flashing area small enough](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), so this technique should only be followed if flashing content is *absolutely* necessary.
+
+#### 추가 정보 - 세 번 발광 또는 임계값 미만(2.3.1) {#more-information-three-flashes-or-below-threshold}
+
+* [성공 기준 이해 2.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
+* [충족하는 방법 - 성공 기준 2.3.1](https://www.w3.org/WAI/WCAG20/quickref/#seizure)
+
+### 제목이 있는 페이지(2.4.2)  {#page-titled}
+
+* 성공 기준 2.4.2
+* 레벨 A
+* 제목이 있는 페이지: 웹 페이지에는 주제나 목적을 설명하는 제목이 있습니다.
+
+#### 목적 - 제목이 있는 페이지(2.4.2) {#purpose-page-titled}
+
+이 성공 기준은 특정 장애에 상관없이, 페이지를 완전히 읽지 않아도 모든 사람이 웹 페이지의 컨텐츠를 빨리 파악하는 데 도움이 됩니다. 페이지 제목은 탭에 표시되어 빨리 찾을 수 있으므로 특히 여러 개의 웹 페이지가 브라우저 탭으로 열려 있을 때 유용합니다.
+
+#### 충족하는 방법 - 제목이 있는 페이지(2.4.2) {#how-to-meet-page-titled}
+
+새 HTML 페이지를 AEM에서 만들 때 페이지 제목을 지정할 수 있습니다. 컨텐츠가 실제로 방문자의 필요와 관련이 있는지 여부를 방문자가 신속히 파악할 수 있게 제목이 페이지의 컨텐츠를 적절히 설명하도록 하십시오.
+
+You can also edit the page title when editing a page, which is accessible by **Sidekick** - **Page** tab - **Page Properties...**
+
+#### 추가 정보 - 제목이 있는 페이지(2.4.2) {#more-information-page-titled}
+
+* [성공 기준 이해 2.4.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
+* [충족하는 방법 - 성공 기준 2.4.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-title)
+
+### 링크 목적(컨텍스트 내)(2.4.4)  {#link-purpose-in-context}
+
+* 성공 기준 2.4.4
+* 레벨 A
+* 링크 목적(컨텍스트 내): 링크의 목적이 일반적으로 사용자에게 모호한 경우를 제외하고, 각 링크의 목적은 링크 텍스트 자체에서 또는 프로그래밍 방식으로 결정된 링크 컨텍스트와 함께 링크 텍스트에서 결정할 수 있습니다.
+
+#### 목적 - 링크 목적(컨텍스트 내)(2.4.4) {#purpose-link-purpose-in-context}
+
+장애에 상관없이 모든 사용자에 대해, 적절한 링크 텍스트를 통해 링크의 방향을 명확히 나타내는 것이 매우 중요합니다. 이것은 사용자가 실제로 링크를 따라갈 것인지 여부를 결정하는 데 도움이 됩니다. 의미 있는 링크 텍스트는 대상 페이지의 기능을 더 명확하게 표시하므로 보이는 사용자의 경우, 한 페이지에 여러 개의 링크가 있으면 의미 있는 링크 텍스트가 매우 유용합니다(특히 페이지에 텍스트가 많을 경우). 반면에 단일 페이지에 있는 모든 링크의 목록을 생성할 수 있는 보조 기술에 대한 사용자는 컨텍스트에서 벗어난 링크 텍스트를 더 쉽게 이해할 수 있습니다.
+
+#### 충족하는 방법 - 링크 목적(컨텍스트 내)(2.4.4) {#how-to-meet-link-purpose-in-context}
+
+특히 링크의 목적이 링크의 텍스트 내에 명확하게 설명되도록 하십시오.
+
+* 나쁜 예:
+
+   * 텍스트: 2010년 가을 학기 저녁 강의에 대한 자세한 내용은 여기를 클릭하십시오.
+   * 이유: 대상을 명료하고 분명하게 나타내지 않습니다.
+
+* 좋은 예:
+
+   * 텍스트:2010년 가을 학기 저녁 수업 - 세부 사항.
+   * 이유: 링크 요소의 텍스트와 위치를 약간 조정하여 링크 텍스트를 개선할 수 있습니다.
+
+Links should be phrased consistently across pages, especially for navigation bars. For example, if a link to a specific page is named **Publications** on one page, use that text on other pages to ensure consistency.
+
+하지만 작성 시 제목의 사용을 둘러싸고 몇 가지 문제가 있습니다.
+
+* 제목 속성 내에 들어 있는 텍스트는 일반적으로 마우스 사용자만 도구 설명 팝업으로 사용할 수 있으며 키보드를 사용해서는 액세스할 수 없습니다.
+* 스크린 리더는 제목 속성을 소리내어 읽을 수 있지만 이 기능은 기본적으로 활성화되어 있지 않을 수 있으므로 사용자가 제목 속성이 존재하는지 알지 못할 수 있습니다.
+* 제목 텍스트의 모양을 변경하기가 어렵습니다. 이는 어떤 사람들은 읽기 어렵거나 읽을 수 없을 수 있음을 의미합니다.
+
+따라서 title 속성을 사용하여 링크에 추가 컨텍스트를 제공할 때에는 그 한계를 알고 적절한 링크 텍스트에 대한 대체 요소로 사용하지 마십시오.
+
+Where the link is made up of an image, make sure that the alternative text for the image describes the destination of the link. For example, if an image of a bookshelf is set as a link to a person’s publications, the alternative text should read **John Smith’s publications** and not **Bookshelf**.
+
+또는 링크 앵커에 이미지 요소 이외에 링크의 목적을 설명하는 텍스트가 들어 있으면(그래서 해당 텍스트가 이미지와 함께 표시된다면), 이미지에 빈 alt 속성을 사용하십시오.
+
+```xml
+<a href="publications.html">
+<img src = "bookshelf.jpg" alt = "" />
+John Smith’s publications
+</a>
+```
+
+>[!NOTE]
+위의 코드 조각은 실례입니다. **이미지** 구성 요소를 사용하는 것이 좋습니다.
+
+추가 컨텍스트를 필요로 하지 않고 링크의 목적을 알려주는 링크 텍스트를 제공하는 것이 좋지만, 이것이 항상 가능하지는 않습니다. Context free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs).
+
+* 링크 텍스트가 밀접히 관련된 링크의 일부이고 이 링크를 둘러싼 목록 항목에서 컨텍스트를 충분히 제공하는 경우
+* Where the purpose of a link can be clearly identified from the *preceding* (not the following) paragraph text.
+* 링크가 데이터 표 내에 들어 있어서 연결된 머리글에서 해당 목적을 명확히 식별할 수 있는 경우
+* 링크 목록이 일련의 머리글 내에 있고 머리글 자체에서 적절한 컨텍스트를 제공하는 경우
+* 링크 목록이 중첩된 링크 내에 있고 중첩된 목록의 위에 있는 상위 목록 항목이 적절한 컨텍스트를 제공하는 경우
+
+경우에 따라 한 페이지에 링크가 여러 개 있으면(각각이 복잡하지만 필요한 세부 정보로 링크의 방향을 제공), 정확히 동일한 컨텐츠를 표시하지만 링크 텍스트가 세부적이지 않은 웹 페이지의 대체 버전을 제공하는 것이 적절할 수 있습니다.
+
+Alternatively, scripts can be used so that a minimal amount of text is provided within the link itself, but on activating an appropriate control positioned towards the top of the page, the link text is *expanded* into further detail. A similar approach is to use CSS to *hide* the full link from sighted users, but still output it in full to screen reader users. This falls outside the scope of this document, but more information on how this can be achieved can be found in the [More Information - Link Purpose (In Context) (2.4.4)](#more-information-link-purpose-in-context) section.
+
+#### 추가 정보 - 링크 목적(컨텍스트 내)(2.4.4) {#more-information-link-purpose-in-context}
+
+* [성공 기준 이해 2.4.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
+* [충족하는 방법 - 성공 기준 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs)
+* [C7: CSS를 사용하여 링크 텍스트 일부 숨기기](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
+
+## 원칙 3: 이해 가능 {#principle-understandable}
+
+[원칙 3: 이해 가능 - 사용자 인터페이스의 정보 및 작업은 이해가 가능해야 합니다.](https://www.w3.org/TR/WCAG20/#understandable)
+
+### 텍스트 컨텐츠를 읽기 가능하고 이해 가능하도록 만들기(3.1) {#make-text-content-readable-and-understandable}
+
+[지침 3.1 읽기 가능: 텍스트 컨텐츠를 읽기 가능하고 이해 가능하도록 만들기](https://www.w3.org/TR/WCAG20/#meaning)
+
+### 페이지 언어 (3.1.1) {#language-of-page}
+
+* 성공 기준 3.1.1
+* 레벨 A
+* 페이지 언어: 각 웹 페이지의 기본 인간 언어는 프로그래밍 방식으로 결정될 수 있습니다.
+
+#### 목적 - 페이지 언어(3.1.1) {#purpose-language-of-page}
+
+이 성공 기준의 목적은 텍스트 및 기타 언어적 컨텐츠를 올바로 렌더링하도록 하는 것입니다. 스크린 리더 사용자의 경우, 이렇게 하면 컨텐츠를 올바로 발음하면서도 시각적 브라우저에는 특정 문자 집합이 올바로 표시될 가능성이 커집니다.
+
+#### 충족하는 방법 - 페이지 언어(3.1.1) {#how-to-meet-language-of-page}
+
+To meet this success criterion, the default language of a web page can be identified using the `lang` attribute within the `<html>` element at the top of the page. 예:
+
+* If a page is written in British English, the `<html>` element should read:
+
+   `<html lang = “en-gb”>`
+
+* 반면에 미국 영어로 렌더링할 페이지는 다음 표준을 채택해야 합니다.
+
+   `<html lang = “en-us”>`
+
+**AEM에서 페이지의 기본 언어는 페이지를 만들 때 설정되지만, 페이지를 편집할 때 사이드 킥에서 페이지 탭 - 페이지**&#x200B;속성에&#x200B;**액세스할**&#x200B;수&#x200B;****&#x200B;있는경우페이지속성...- **고급** 탭.
+
+#### 추가 정보 - 페이지 언어(3.1.1) {#more-information-language-of-page}
+
+* [성공 기준 이해 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
+* [충족하는 방법 - 성공 기준 3.1.1](https://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id)
+* 코드는 ISO 639-1을 기반으로 합니다. 각 언어에 대한 더 확장된 코드 목록은 [W3 Schools 사이트](https://www.w3schools.com/tags/ref_language_codes.asp)에서 찾을 수 있습니다.
+
+### 부분 언어 (3.1.2)  {#language-of-parts}
+
+* 성공 기준 3.1.2
+* 레벨 AA
+* 부분 언어: 컨텐츠에 있는 각 구절 또는 구의 인간 언어는 적절한 이름, 기술적 용어, 정확히 가늠할 수 없는 언어의 단어 및 바로 둘러싼 텍스트의 토착어 부분이 된 단어나 구를 제외하고, 프로그래밍 방식으로 결정될 수 있습니다.
+
+#### 목적 - 부분 언어(3.1.2) {#purpose-language-of-parts}
+
+이 성공 기준의 목적은 한 페이지에 여러 언어로 된 컨텐츠가 들어 있는(예를 들어, 인용구나 흔하지 않은 외래어로 인해) 웹 페이지에 적용된다는 점을 제외하면 [페이지 언어](#language-of-page)성공 기준과 유사합니다.
+
+이 성공 기준을 적용하는 페이지에서는 다음을 허용합니다.
+
+* 억양 있는 문자를 삽입하는 점자 전환 소프트웨어
+* 기본 언어가 아닌 단어를 올바르게 발음할 수 있는 스크린 리더
+* 컨텐츠를 한 언어에서 다른 언어로 올바르게 번역할 수 있는 Google 번역과 같은 번역 도구
+
+#### 충족하는 방법 - 부분 언어(3.1.2) {#how-to-meet-language-of-parts}
+
+`lang` 속성을 사용하여 변경 사항을 컨텐츠의 언어로 식별할 수 있습니다. 예를 들어, 독일어(ISO 639-1 코드 &quot;de&quot;) 인용구를 다음과 같이 표시할 수 있습니다.
+
+```xml
+<blockquote cite = "John F. Kennedy" lang = "de">
+     <p>Ich bin ein Berliner</p>
+ </blockquote>
+```
+
+>[!NOTE]
+기본 인스턴스에서는 긴 인용구(Blockquote)를 지원하지 않습니다. 사용자 지정 구성 요소를 개발하여 이 기능을 지원할 수는 있습니다.
+
+마찬가지로 `span` 요소를 다음과 같이 사용하면 브라우저가 흔하지 않은 외래어나 구를 올바르게 렌더링할 수 있습니다.
+
+```xml
+<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</span>.</p>
+```
+
+>[!NOTE]
+이름이나 도시를 서로 다른 언어로 포함할 때, 또는 기본 언어에서 흔하게 사용하게 된 외래나 구(예: 영어의 *schadenfreude*)를 사용할 때에는 이 성공 기준을 따를 필요가 없습니다.
+
+적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+
+#### 추가 정보 - 부분 언어(3.1.2) {#more-information-language-of-parts}
+
+* [성공 기준 이해 3.1.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html)
+* [충족하는 방법 - 성공 기준 3.1.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-other-lang-id)
+
+### 사용자가 실수를 하지 않고 실수를 수정하도록 돕기(3.3) {#help-users-avoid-and-correct-mistakes}
+
+[지침 3.3 입력 지원: 사용자가 실수를 하지 않고 실수를 수정하도록 돕기](https://www.w3.org/TR/WCAG20/#minimize-error)
+
+### 레이블 또는 지침(3.3.2) {#labels-or-instructions}
+
+* 성공 기준 3.3.2
+* 레벨 A
+* 레이블 또는 지침: 컨텐츠에 사용자 입력이 필요할 때에는 레이블이나 지침이 제공됩니다.
+
+#### 목적 - 레이블 또는 지침(3.3.2) {#purpose-labels-or-instructions}
+
+양식을 완료하는 데 도움이 되도록 지침을 제공하는 것은 인터페이스 유용성 면에서 좋은 관행의 기본적인 부분입니다. 이렇게 하면 특히 양식의 레이아웃과 특정 양식 필드에 제공할 데이터의 종류를 이해하는 데 어려움이 있을 수 있는, 시각 또는 인지 장애가 있는 사용자에게 도움이 됩니다.
+
+AEM에서 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페이지에 추가할 때 기본 레이블이 추가됩니다. 이 기본 제목은 구성 요소 유형에 따라 다르며, 해당 필드에 대한 편집 대화 상자의 **제목 및 텍스트** 탭에서 원하는 제목을 추가할 수 있습니다. 레이블은 사용자가 각 양식 구성 요소와 연결된 데이터를 이해하는 데 도움이 되도록 해야 합니다.
+
+![제목 및 텍스트 탭(편집 대화 상자); &#39;Description&#39;이라는 제목이 추가되었습니다.](assets/chlimage_1-22a.png)
+
+이 **제목** 필드는 보조 기술에 사용할 수 있는 레이블을 제공할 때 필드 요소에 사용해야 합니다. 필드의 옆에 텍스트로 레이블을 쓰는 것만으로는 충분하지 않습니다.
+
+For some form components it is also possible to visually hide labels using the **Hide Title** checkbox. Labels hidden in this way are still available to assistive technology, but not displayed on the screen. While this can be a good approach in some situations it is usually best to include a visual label wherever possible, as some users may be looking at a very small section of the screen (one field at a time) and need the labels to identify the field correctly.
+
+#### 이미지 단추 {#image-buttons}
+
+이미지 단추를 사용하면(예: **이미지 단추** 구성 요소) 편집 대화 상자의 **제목 및 텍스트** 탭에 있는 **제목** 필드에서 실제로 레이블이 아니라 이미지에 대한 대체 텍스트를 제공합니다. 따라서 아래 예에는 `Submit`이라는 텍스트가 있는 이미지에 편집 대화 상자의 `Submit`제목 필드를 사용하여 추가된 ****&#x200B;이라는 대체 텍스트가 있습니다.
+
+![제목 필드(편집 대화 상자)에 대체 텍스트가 설정된 이미지 단추.](assets/chlimage_1-23a.png)
+
+#### 양식 필드 그룹 {#groups-of-form-fields}
+
+**라디오 그룹**&#x200B;과 같은 관련 컨트롤 그룹이 있으면 개별 컨트롤 뿐만 아니라 그룹에도 제목이 필요할 수 있습니다. 라디오 단추(**항목**)가 생성될 때 개별 제목이 지정되는 반면, AEM에서 라디오 단추 집합을 추가하면 **제목** 필드가 이 그룹 제목을 제공합니다.
+
+![라디오 그룹에 항목 추가. 그룹 제목은 제목 필드에 정의된 &#39;Contact me by&#39;입니다.](assets/chlimage_1-24a.png)
+
+하지만 그룹 제목과 라디오 단추 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔를 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성** 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다([추가 HTML 요소 및 속성에 대한 지원 추가](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes) 참조).
+
+#### 양식에 대한 추가 고려 사항 {#additional-considerations-for-forms}
+
+데이터를 특정 형식으로 입력해야 하는 경우 레이블 텍스트에서 이를 분명히 하십시오. 예를 들어, 날짜를 `DD-MM-YYYY` 형식으로 입력해야 하는 경우, 특히 레이블의 일부로 이 형식을 표현하십시오. 이는 스크린 리더 사용자가 해당 필드를 만나면 형식에 대한 추가 정보와 함께 레이블을 자동으로 알림을 의미합니다.
+
+양식 필드에 대한 입력이 필수일 경우, 필요한 단어를 레이블의 일부로 사용하여 이를 명확히 하십시오. AEM에서는 필드가 필수이면 별표를 추가하지만, 레이블 자체에 `required` 라는 단어를 포함하는 것이 좋을 것입니다(편집 대화 상자의 **제목** 필드).
+
+![&#39;제목&#39; 필드에서 스크린 리더 사용자에 대한 추가 정보(단어 required) 추가.](assets/chlimage_1-25a.png)
+
+레이블의 위치 지정은 적절한 필드를 찾는 데 도움이 되므로 역시 중요하며 복잡한 양식이 있을 때 특히 중요합니다. 다음 규칙을 따르십시오.
+
+* 확인란 또는 라디오 단추:
+
+   필드의 오른쪽에 레이블이 바로 배치됩니다.
+
+* 기타 모든 양식 구성 요소(예: 텍스트 상자, 콤보 상자):
+
+   레이블은 필드의 바로 위 또는 왼쪽에 배치됩니다.
+
+In simple forms with very limited functionality, appropriately labelling a `Submit` button can act as a label for the adjacent field (for example `Search`). 이는 레이블 텍스트를 배치할 공간을 찾는 것이 어려운 상황에서 유용합니다.
+
+#### 추가 정보 - 레이블 또는 지침(3.3.2) {#more-information-labels-or-instructions}
+
+* [성공 기준 이해 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
+* [충족하는 방법 - 성공 기준 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
+
