@@ -1,0 +1,87 @@
+---
+title: Tag Essentials
+seo-title: Tag Essentials
+description: 태그 개요
+seo-description: 태그 개요
+uuid: a5d52319-f821-4608-b0ab-abc8a1374343
+contentOwner: Guillaume Carlino
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+topic-tags: developing
+content-type: reference
+discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
+translation-type: tm+mt
+source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+
+---
+
+
+# Tag Essentials {#tag-essentials}
+
+AEM Communities 구성 요소가 태깅이 활성화되도록 구성되면 커뮤니티 구성원은 게시 환경에서 게시하는 컨텐츠에 태그를 지정할 수 있습니다.
+
+게시 환경에 적용된 태그의 기본 인프라는 페이지 및 자산과 같은 작성 환경의 컨텐츠에 적용되는 태그와 동일합니다.
+
+* 태그 [생성 및 관리에 대한](../../help/sites-administering/tags.md) 자세한 내용은 태그 [관리 및](tag-ugc.md) UGC(사용자 생성 컨텐츠)를 참조하십시오.
+
+* See [Tagging for Developers](../../help/sites-developing/tags.md) for information about the [tagging framework](../../help/sites-developing/framework.md) as well as including and extending tags in [custom applications](../../help/sites-developing/building.md).
+
+* 페이지에 [구성 요소를](tagcloud.md) `social tag cloud` 추가하여 게시 환경에서 UGC에 적용된 태그를 강조 표시하는 방법에 대한 작성자의 자세한 내용은 소셜 태그 클라우드 사용을 참조하십시오.
+
+* 카탈로그의 [태그 지정](tag-resources.md) 리소스에 대한 자세한 내용은 태깅 지원 리소스를 참조하십시오.
+
+UGC 태깅은 [커뮤니티 사이트](sites-console.md#tagging) 또는 다음 기능 중 하나를 구성할 때 사용할 수 있습니다.
+
+* [블로그](blog-feature.md)
+* [달력](calendar.md)
+* [파일 라이브러리](file-library.md)
+* [포럼](forum.md)
+* [QnA](working-with-qna.md)
+
+## Essentials for Client-Side {#essentials-for-client-side}
+
+### 소셜 태그 클라우드 {#social-tag-cloud}
+
+<table>
+ <tbody>
+  <tr>
+   <td> <strong>resourceType</strong></td>
+   <td>social/commons/components/hbs/tagcloud</td>
+  </tr>
+  <tr>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>아니오</td>
+  </tr>
+  <tr>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
+   <td>cq.social.hbs.tagcloud</td>
+  </tr>
+  <tr>
+   <td> <strong>템플릿</strong></td>
+   <td> /libs/social/commons/components/hbs/tagcloud/tagcloud.hbs<br /> </td>
+  </tr>
+  <tr>
+   <td> <strong>css</strong></td>
+   <td> /libs/social/commons/components/hbs/tagcloud/clientlibs/tagcloud.css</td>
+  </tr>
+  <tr>
+   <td><strong>속성</strong></td>
+   <td>소셜 <a href="tagcloud.md">태그 클라우드 사용 참조</a></td>
+  </tr>
+ </tbody>
+</table>
+
+* [클라이언트측 사용자 정의](client-customize.md)
+
+## Essentials for Server-Side {#essentials-for-server-side}
+
+* [소셜 태그 클라우드 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+
+* [소셜 태그 관리자](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+
+* [서버측 사용자 정의](server-customize.md)
+
+## 태그 검색 {#tag-searching}
+
+기능 [팩 1](deploy-communities.md#latestfeaturepack) (FP1)부터 [태그 제목을](../../help/sites-developing/framework.md#tag-characteristics)사용하여 태그 검색이 수행됩니다.
+
+FP1 이전에는 [태그 ID를](../../help/sites-developing/framework.md#tagid)사용하여 검색이 수행되었습니다.
