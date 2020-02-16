@@ -1,0 +1,28 @@
+---
+cloud: experience-cloud
+product: adobe experience manager
+audience: end-user
+user-guide-title: AEM 6.5 Managing User Guide
+translation-type: tm+mt
+source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+
+---
+
+
+# AEM 6.5 Managing User Guide {#managing}
+
++ [사용자 안내서 관리](home.md)
++ 관리 - 우수 사례 검사 목록 {#managing-best-practices-checklist}
+   + [프로젝트 관리 - 우수 사례 검사 목록](best-practices.md)
+   + [검사 목록](best-practices-checklist.md)
+   + [용어 설명](best-practices-glossary.md)
+   + [검사 목록 - 추가 참조](best-practices-further-reference.md)
++ 관리 - 추가 참조 {#managing-further-reference}
+   + [하드웨어 크기 조정 지침](hardware-sizing-guidelines.md)
+   + [기업 개발 운영](enterprise-devops.md)
+   + [SEO 및 URL 관리 우수 사례](seo-and-url-management.md)
++ 액세스 가능성 {#accessibility}
+   + [AEM 및 웹 접근성 지침](web-accessibility.md)
+   + [WCAG 2.0에 대한 빠른 안내서](qg-wcag.md)
++ 데이터 보호 {#data-protection}
+   + [데이터 보호 및 데이터 개인 정보 보호 규정에 대한 AEM 준비](data-protection-and-privacy.md)
