@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
 
 ---
 
@@ -170,23 +170,29 @@ AEM과 함께 설치되는 기본 단계 구성 요소에 대한 자세한 내�
    자세한 [내용은 워크플로우](#sync-your-workflow-generate-a-runtime-model) 동기화를 참조하십시오.
 
 >[!NOTE]
-임시 [모드에서 워크플로우를 실행할 때 AEM은 워크플로우](/help/sites-developing/workflows.md#transient-workflows) 내역을 저장하지 않습니다. 따라서 [타임라인에는](/help/sites-authoring/basic-handling.md#timeline) 해당 워크플로우와 관련된 정보가 표시되지 않습니다. [](/help/sites-authoring/basic-handling.md#timeline)
+일시적인 [모드에서 워크플로우를 실행할 때 AEM은 워크플로우](/help/sites-developing/workflows.md#transient-workflows) 내역을 저장하지 않습니다. 따라서 [타임라인에는](/help/sites-authoring/basic-handling.md#timeline) 해당 워크플로우와 관련된 정보가 표시되지 않습니다. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ## Touch UI에서 워크플로우 모델 사용 가능 {#classic2touchui}
 
-클래식 UI에 있지만 터치 UI의 타임라인 레일의 선택 팝업 메뉴에 없는 워크플로우 모델이 있는 경우 구성에 따라 사용 가능하게 만듭니다. 다음 단계에서는 활성화 요청 및 비활성화 요청이라는 AEM **[!UICONTROL 자산]** 워크플로우 모델을 **[!UICONTROL 사용하는 방법을 보여 줍니다]**.
+워크플로우 모델이 클래식 UI에 있지만 터치 UI의 타임라인 **[!UICONTROL 레일의 선택]** 팝업 메뉴에 없는 경우 구성에 따라 사용 가능하게 만듭니다. 다음 단계는 활성화 요청이라는 워크플로우 모델을 사용하는 **[!UICONTROL 것을 보여줍니다]**.
 
-1. 모델이 터치 지원 UI에서 사용할 수 없는지 확인합니다. 경로를 사용하여 자산에 `/assets.html/content/dam` 액세스합니다. 자산을 선택합니다. 왼쪽 **[!UICONTROL 레일에서]** 타임라인을 엽니다. 워크플로우 **[!UICONTROL 시작을]** 클릭하면 **[!UICONTROL 활성화 요청]** 및 비활성화 **[!UICONTROL 모델이]** 팝업 목록에없습니다.
-1. 도구 **[!UICONTROL > 일반 > 태깅을 클릭합니다]**. 워크플로우를 **[!UICONTROL 선택합니다]**.
-1. 만들기 **[!UICONTROL > 태그 만들기를 클릭합니다]**. 제목으로 **[!UICONTROL 및]** 이름을 `DAM`**[!UICONTROL 로]** 설정합니다 `dam`. 제출을 **[!UICONTROL 클릭합니다]**.
+1. 모델이 터치 지원 UI에서 사용할 수 없는지 확인합니다. 경로를 사용하여 자산에 `/assets.html/content/dam` 액세스합니다. 자산을 선택합니다. 왼쪽 **[!UICONTROL 레일에서]** 타임라인을 엽니다. 워크플로우 **[!UICONTROL 시작을]** 클릭하고 **[!UICONTROL 활성화]** 모델이 팝업 목록에 없는지 확인합니다.
 
+1. 도구 > **[!UICONTROL 일반 > 태깅을 탐색합니다]**. 워크플로우를 **[!UICONTROL 선택합니다]**.
+
+1. 만들기 **[!UICONTROL > 태그 만들기를 선택합니다]**. 제목으로 **[!UICONTROL 및]** 이름을 `DAM`**[!UICONTROL 로]** 설정합니다 `dam`. **[!UICONTROL 제출]**을 선택합니다.
    ![워크플로우 모델에서 태그 만들기](assets/workflow_create_tag.png)
 
-1. 도구 **[!UICONTROL > 워크플로우 > 모델을 클릭합니다]**. [ **[!UICONTROL 활성화 요청]** ](또는 **[!UICONTROL [비활성화 요청]]**)을 선택합니다. **[!UICONTROL 편집]**&#x200B;을 클릭합니다. 
-1. 사이드 킥에서 페이지 **[!UICONTROL 탭으로]** 이동합니다. Open **[!UICONTROL Page Properties]**.
-1. 태그/ `Workflow : DAM` 키워드 **[!UICONTROL 필드에]** 추가합니다. **[!UICONTROL 확인]**&#x200B;을 클릭합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. 도구 > **[!UICONTROL 워크플로우 > 모델로 이동합니다]**. 활성화 **[!UICONTROL 요청을]**&#x200B;선택한 다음 편집을 **[!UICONTROL 선택합니다]**.
 
+1. 편집을 **[!UICONTROL 선택하고]**[페이지 정보 **]** 메뉴를 연 다음 **[ICONTROL Open]** Properties를 **[!UICONTROL 선택한 다음 BasicUpdates]** 탭으로 이동합니다(아직 열지 않은 경우).
+
+1. 태그에 `Workflow : DAM` 추가 **** 필드 확인(확인 표시)으로 선택을 확인합니다.
+
+1. 저장 및 닫기로 태그 추가를 **[!UICONTROL 확인합니다]**.
    ![모델의 페이지 속성 편집](assets/workflow_model_edit_activation1.png)
+
+1. 동기화를 사용하여 프로세스를 **[!UICONTROL 완료합니다]**. 이제 터치 지원 UI에서 워크플로우를 사용할 수 있습니다.
 
 ### 다중 리소스 지원을 위한 워크플로우 구성 {#configuring-a-workflow-for-multi-resource-support}
 
