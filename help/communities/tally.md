@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
-source-git-commit: 9532c1fb8af37b29285007bc72e86d42d5eb9c4d
+source-git-commit: 01f14c203e45b85c9d7733d88437bd56e3c27c8e
 
 ---
 
@@ -27,7 +27,7 @@ Tally는 특정 제품 및 서비스에 대한 멤버의 피드백을 수집하�
 
 [등급은](rating-basics.md) 긍정에서 부정으로 다양한 의견을 표현하는 별표를 사용하는 득표의 이행이다.
 
-AEM 6.1부터 [투표](poll-basics.md) 구성 요소를 더 이상 사용할 수 없습니다.
+AEM 6.1부터는 투표 구성 요소를 더 이상 사용할 수 없습니다.
 
 [검토는](reviews-basics.md) 주석과 [등급을](essentials-comments.md) 혼합하는 SCF 구성 요소입니다 [](rating-basics.md).
 
