@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93f3696242c681a019c2252364fe7cee510cb933
+source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ---
 
@@ -312,11 +312,15 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 
 **참조:**
 
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics-connect.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics-connect.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/pa-using.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/pa-using.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/forms/using/view-understand-aem-forms-analytics-reports.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/view-understand-aem-forms-analytics-reports.html)
+* [Adobe Analytics와 통합](../../sites-administering/adobeanalytics.md)
+
+* [Adobe Analytics에 연결 및 프레임워크 만들기](../../sites-administering/adobeanalytics-connect.md)
+
+* [페이지 분석 데이터 보기](../../sites-authoring/pa-using.md)
+
+* [분석 및 보고서 구성](configure-analytics-forms-documents.md)
+
+* [AEM Forms 분석 보고서 보기 및 이해](view-understand-aem-forms-analytics-reports.md)
 
 ### Adobe Analytics 클라우드 서비스 구성 {#adobe-analytics-cloud-service-configuration}
 
@@ -432,7 +436,7 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 
 이 패키지에 포함된 템플릿은 스타일 시스템도 지원합니다.
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html)
+[스타일 시스템](../../sites-authoring/style-system.md)
 
 #### 템플릿 로고 {#template-logos}
 
@@ -446,7 +450,7 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함되어 있습니다
 
 자세한 내용은 페이지 컨텐츠 편집을 참조하십시오.
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/editing-content.html#main-pars_title_32](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/editing-content.html#main-pars_title_32)
+[페이지 컨텐츠 편집](../../sites-authoring/editing-content.md)
 
 ### 사이트 페이지 맞춤화 {#sites-pages-customization}
 
@@ -458,7 +462,7 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함되어 있습니다
 
 이 패키지에 포함된 페이지는 스타일 시스템도 지원합니다.
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html)
+[스타일 시스템](../../sites-authoring/style-system.md)
 
 지원되는 스타일에 대한 설명서는 [템플릿 사용자 정의 스타일 시스템을](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) 참조할 수도 있습니다.
 
@@ -480,8 +484,8 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함되어 있습니다
 
 스타일 편집기 또는 테마 편집기를 사용하여 적응형 양식의 스타일을 지정할 수도 있습니다.
 
-* [https://helpx.adobe.com/experience-manager/6-5/forms/using/inline-style-adaptive-forms.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/inline-style-adaptive-forms.html)
-* [https://helpx.adobe.com/ca/experience-manager/6-5/forms/using/themes.html](https://helpx.adobe.com/ca/experience-manager/6-5/forms/using/themes.html)
+* [적응형 양식 구성 요소의 인라인 스타일](inline-style-adaptive-forms.md)
+* [테마 만들기 및 사용](themes.md)
 
 ### 워크플로우 맞춤화 {#workflow-customization}
 
