@@ -9,12 +9,12 @@ topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ---
 
 
-# 적응형 양식 구성 요소의 인라인 스타일{#inline-styling-of-adaptive-form-components}
+# 적응형 양식 구성 요소의 인라인 스타일 {#inline-styling-of-adaptive-form-components}
 
 테마 편집기를 [](../../forms/using/themes.md)사용하여 스타일을 지정하여 응용 양식의 전체 모양과 스타일을 정의할 수 있습니다. 또한 개별 적응형 양식 구성 요소에 인라인 CSS 스타일을 적용할 수 있으며 변경 사항을 즉시 미리 볼 수 있습니다. 인라인 스타일은 테마에 제공된 스타일링을 무시합니다.
 
