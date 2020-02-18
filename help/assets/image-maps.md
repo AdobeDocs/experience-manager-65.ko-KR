@@ -3,7 +3,7 @@ title: 디지털 이미지에 하이퍼링크가 포함된 이미지 맵 추가
 description: 이미지에 하이퍼링크가 포함된 이미지 맵을 추가하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: e547dde53011003a2db4814916c3e923da947cce
 
 ---
 
