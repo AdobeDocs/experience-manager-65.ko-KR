@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd0b8e1605f6d8f6cc04a4173731351df002a67d
+source-git-commit: 37d0225f69800225e82f253ad9dbab8b2b30ac5e
 
 ---
 
@@ -163,6 +163,8 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 
 * 자산에 대한 작업 세부 사항을 폴링하는 동안 AEM에 예외가 표시됩니다(CQ-4283569).
 
+* DAM 파섹
+
 #### 사이트 {#sites}
 
 * LiveCopy 상속이 끊어지면 LiveCopy 페이지에 LiveCopy 링크(NPR-30980) 대신 언어 복사 링크가 표시됩니다.
@@ -170,11 +172,14 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 * 사용자가 메뉴의 description 속성에 일본어 또는 한국어 문자를 추가하면 메뉴에 일본어 및 한국어 텍스트의 왜곡된 문자가 표시됩니다. (NPR-31331).
 * RTE(Rich Text Editor)에서는 포함된 테이블을 목록 항목으로 삽입할 수 없습니다(NPR-30879).
 * RTE(Rich Text Editor)를 스캐폴딩하는 즉시 사용 가능합니다. 예기치 않게 요소에 인라인 글꼴 크기를 적용합니다(NPR-31284).
-* 사용자가 왼쪽 레일 필드에 초점을 맞추고 키보드 단축키를 사용하여 컨텐츠를 붙여 넣으면 왼쪽 레일 필드에서 복사한 내용 대신 페이지 편집기 클립보드의 내용을 붙여넣습니다(NPR-31172).
+* 사용자가 왼쪽 레일 필드에 초점을 맞추고 키보드 단축키를 사용하여 컨텐츠를 붙여넣으면 왼쪽 레일 필드에서 복사한 컨텐츠 대신 페이지 편집기 클립보드의 컨텐츠를 붙여넣습니다(NPR-31172).
 * 사용자가 다중 필드에 파일 업로드 필드를 추가하면 이미지 경로가 다중 필드 노드(NPR-30882) 대신 구성 요소 노드에 저장됩니다.
 * ResponsiveGridExporter API는 com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter 인터페이스를 반환하지 않습니다. com.day.cq.wcm.foundation.model.impl 패키지는 개인 패키지로 선언됩니다(NPR-31398).
 * 일부 ExperienceFragments가 포함된 페이지가 비편집기 모드에서 열리면( `editor.html` 접두사와 접두사가 없는 작성자 `wcmmode=disabled`또는 게시자에서) HTTP 상태 오류 코드 500(NPR-30743)으로 요청이 끝납니다.
 * 사용자는 암호를 변경하고 프로필 페이지에 액세스할 수 없습니다(NPR-31161).
+* 사용자 데이터가 있는 JavaScript 파일은 서버측에서 생성됩니다(NPR-30822).
+* AEM 제작 UI를 사용하면 외부 콘텐츠를 사용하여 피싱을 할 수 있습니다(NPR-29745).
+* AEM 6.5 메타데이터 편집기의 표현식 언어 삽입 취약성(NPR-31017)
 
 #### 검색 및 사용자 인터페이스 {#search-ui-interface}
 
@@ -237,9 +242,9 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 * &quot;언급&quot; 기능에 사용되는 JCR 쿼리는 대/소문자를 구분하며 결과를 반환하는데 너무 오래 걸립니다(NPR-31475).
 * AEM 6.5 UberJar 파일에서 예외가 발생하고, AEM 6.5 UberJar 파일에서 `cq-social-translation` 번들이 누락되었습니다(NPR-31186).
 * Jackson Databind 라이브러리가 새로운 취약점(NPR-30967)을 해결하기 위해 버전 2.9.9.3으로 업데이트되었습니다.
-* 활동 및 알림 제목이 일관되지 않습니다(NPR-30941).
-* Communities 블로그(NPR-30914)에서 페이지 매김이 제대로 작동하지 않습니다.
-* 분석 보고서가 AEM 작성자 환경에서 채워지지 않고 빈 페이지가 나타납니다(NPR-30913).
+* 활동 및 알림 제목이 일치하지 않습니다(NPR-30941).
+* 페이지 매김이 커뮤니티 블로그에서 제대로 작동하지 않습니다(NPR-30914).
+* Analytics 보고서가 AEM 작성자 환경에서 채워지지 않으며 빈 페이지가 표시됩니다(NPR-30913).
 
 #### Oak {#oak}
 
@@ -253,7 +258,7 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 
 ##### Forms 추가 기능 패키지 {#forms-add-on-package-6530}
 
-**응용 양식**
+**적응형 양식**
 
 * 적응형 양식을 현지화하는 동안 문자열에 사전 키가 포함됩니다(NPR-31110).
 
@@ -275,7 +280,7 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 
 **HTML5 양식**
 
-* XDP 양식의 HTML5 미리 보기를 생성하면 하위 폼의 인스턴스를 추가하는 동안 깜박임이 표시됩니다(NPR-30909).
+* XDP 양식의 HTML5 미리 보기를 생성하면 하위 양식의 인스턴스를 추가하는 동안 깜박임이 표시됩니다(NPR-30909).
 
 ##### JEE 설치 관리자의 양식 {#forms-jee-installer-6530}
 
@@ -416,7 +421,7 @@ AEM 6.5.3.0에 포함된 OSGi 번들 목록
 
 [파일 가져오기](assets/6530_bundles.txt)
 
-AEM 6.5.3.0에 포함된 콘텐츠 패키지 목록
+AEM 6.5.3.0에 포함된 컨텐츠 패키지 목록
 
 [파일 가져오기](assets/sp_6530_packages.txt)
 
