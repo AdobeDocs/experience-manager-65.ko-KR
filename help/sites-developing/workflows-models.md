@@ -170,7 +170,7 @@ AEM과 함께 설치되는 기본 단계 구성 요소에 대한 자세한 내�
    자세한 [내용은 워크플로우](#sync-your-workflow-generate-a-runtime-model) 동기화를 참조하십시오.
 
 >[!NOTE]
-일시적인 [모드에서 워크플로우를 실행할 때 AEM은 워크플로우](/help/sites-developing/workflows.md#transient-workflows) 내역을 저장하지 않습니다. 따라서 [타임라인에는](/help/sites-authoring/basic-handling.md#timeline) 해당 워크플로우와 관련된 정보가 표시되지 않습니다. [](/help/sites-authoring/basic-handling.md#timeline)
+임시 [모드에서 워크플로우를 실행할 때 AEM은 워크플로우](/help/sites-developing/workflows.md#transient-workflows) 내역을 저장하지 않습니다. 따라서 [타임라인에는](/help/sites-authoring/basic-handling.md#timeline) 해당 워크플로우와 관련된 정보가 표시되지 않습니다. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ## Touch UI에서 워크플로우 모델 사용 가능 {#classic2touchui}
 
