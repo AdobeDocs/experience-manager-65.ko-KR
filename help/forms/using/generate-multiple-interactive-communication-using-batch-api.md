@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 3ba9308f7a6252f7ea6ae0de6455ab3e97e3b8dd
+source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
 
 ---
 
@@ -174,6 +174,22 @@ Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파�
 
 1. AEM 인스턴스에 로그인하고 대화형 통신을 만듭니다. 아래 제공된 샘플 코드에 언급된 대화형 통신을 사용하려면 여기를 [클릭하십시오](assets/SimpleMediumIC.zip).
 1. [AEM 인스턴스에서 Apache Maven을 사용하여 AEM](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) 프로젝트를 빌드하고 배포합니다.
+1. AEM [Forms 클라이언트 SDK 버전 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) 이상 및 최신 [AEM Uber Jar를](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) AEM 프로젝트의 POm 파일 종속성 목록에 추가합니다. 예,
+
+   ```XML
+       <dependency>
+           <groupId>com.adobe.aemfd</groupId>
+           <artifactId>aemfd-client-sdk</artifactId>
+           <version>6.0.122</version>
+       </dependency>
+       <dependency>
+          <groupId>com.adobe.aem</groupId>
+          <artifactId>uber-jar</artifactId>
+          <version>6.5.0</version>
+          <classifier>apis</classifier>
+          <scope>provided</scope>
+       </dependency>
+   ```
 1. Java 프로젝트를 열고 .java 파일을 만듭니다(예: CCMBatchServlet.java). 파일에 다음 코드를 추가합니다.
 
    ```java
@@ -271,7 +287,7 @@ Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파�
                            throw new Exception("Invalid JSON Data. File name : " + filePath, ex);
                        }
                    }
-                   BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/testsample/mediumic").build();
+                   BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/[path of the interactive communcation]").build();
                    BatchConfig batchConfig = batchBuilderFactory.getBatchConfigBuilder().setBatchType(BatchType.WEB_AND_PRINT).build();
                    BatchResult batchResult = batchGeneratorService.generateBatch(batchInput, batchConfig);
                    List<RecordResult> recordList = batchResult.getRecordResults();
@@ -338,9 +354,7 @@ Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파�
    * PRINT 및 WEB 옵션을 모두 지정하면 PDF 문서와 레코드당 JSON 파일이 모두 생성됩니다.
 
 1. [AEM 인스턴스에](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)업데이트된 코드를 배포하려면 maven을 사용하십시오.
-1. 배치 API를 호출하여 대화형 통신을 생성합니다. 일괄 처리 API는 레코드 수에 따라 PDF 및 .json 파일의 스트림을 반환합니다. JSON 파일을 사용하여 웹 템플릿을 [](#web-template)미리 채울 수 있습니다.
-
-   위 코드를 사용하는 경우 API는 에 배포됩니다 `http://localhost:4502/bin/batchServlet`. 1단계에서 제공하는 대화형 통신 예제를 사용하는 경우 [records.json](assets/records.json) 을 사용하여 대화형 통신을 생성할 수 있습니다. 예를 들어 `http://localhost:4502/bin/batchServlet?filePath=C:/aem/records.json>.` PDF 및 JSON 파일의 스트림을 인쇄하여 반환합니다.
+1. 배치 API를 호출하여 대화형 통신을 생성합니다. 일괄 처리 API는 레코드 수에 따라 PDF 및 .json 파일의 스트림을 반환합니다. JSON 파일을 사용하여 웹 템플릿을 [](#web-template)미리 채울 수 있습니다. 위 코드를 사용하는 경우 API는 에 배포됩니다 `http://localhost:4502/bin/batchServlet`. 이 코드는 PDF 및 JSON 파일의 스트림을 인쇄하여 반환합니다.
 
 ### 웹 템플릿 미리 채우기 {#web-template}
 
