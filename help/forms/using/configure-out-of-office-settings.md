@@ -4,7 +4,7 @@ seo-title: 부재 중 설정 구성
 description: 부재 중 설정
 seo-description: 부재 중 설정 구성
 translation-type: tm+mt
-source-git-commit: 52e4564ecab61cedaf3aca3d10339f6bcee2f71e
+source-git-commit: 7ed5c2d0121029811d8ddeca3b1121912bc761f4
 
 ---
 
@@ -57,7 +57,6 @@ source-git-commit: 52e4564ecab61cedaf3aca3d10339f6bcee2f71e
 ![부재 중](assets/out-of-office.png)
 
 >[!NOTE]
->
 >(양식 중심의 워크플로우 항목의 경우) **워크플로우에서 할당 작업** 단계의 &#39;부재 중&#39; 설정 **옵션을 사용하여 할당자가 위임하도록 허용** 옵션을 활성화합니다. 앞서 언급한 옵션이 활성화된 항목만 다른 사용자에게 위임됩니다.
 
 ## 제한 사항 {#limitations}
