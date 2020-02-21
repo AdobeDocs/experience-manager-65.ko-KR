@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: d522c5ec6c72a9fd391d021f2fac37f88c686bd9
 
 ---
 
@@ -153,16 +153,16 @@ JSRP에 대한 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니�
 
 * 점수 및 배지 속성 추가
 
-       &quot;
-    규칙 = [/
- community/scoring/rules/comments-scoring,     /etc/etc/communities/
- /rules/rules/forums/forums-badging&quot;     badging Rules
- ods     
-     
-     
-     
-     , beging comments/community/badging/community/badging-rules, etc/governing/communities/govertising/goals.
-   
+   ```
+   scoringRules = [/etc/community/scoring/rules/comments-scoring,
+   /etc/community/scoring/rules/forums-scoring]
+   ```
+
+   ```
+   badgingRules =[/etc/community/badging/rules/comments-scoring,
+   /etc/community/badging/rules/forums-scoring]
+   ```
+
 * 포럼 구성 요소 노드 찾기
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -183,15 +183,15 @@ JSRP에 대한 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니�
 
 * 점수 및 배지 속성 추가
 
-  ```
-  scoringRules = [/etc/community/scoring/rules/comments-scoring,
-  /etc/community/scoring/rules/forums-scoring]
-  ```
+   ```
+   scoringRules = [/etc/community/scoring/rules/comments-scoring,
+   /etc/community/scoring/rules/forums-scoring]
+   ```
 
-  ```
-  badgingRules =[/etc/community/badging/rules/comments-scoring,
-  /etc/community/badging/rules/forums-scoring]
-  ```
+   ```
+   badgingRules =[/etc/community/badging/rules/comments-scoring,
+   /etc/community/badging/rules/forums-scoring]
+   ```
 
 * 포럼 구성 요소 노드 찾기
 
