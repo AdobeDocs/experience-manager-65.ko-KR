@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 90d69ef0ed0fb38bec75a3d36982f80b85dd43af
+source-git-commit: 9d42526ff4c7b7d8a31690ebfb8b45d0e951ebac
 
 ---
 
@@ -576,16 +576,16 @@ JSP에서 컴파일된 클래스를 삭제하기 위해 아래에 표시된 대�
 >
 >예를 들어, 를 포함하는 `/libs/foundation/global.jsp`경우 위의 구성 `maven-resources-plugin` 대신 에 대해 다음 구성을 사용할 수 있습니다. 이 구성은 완전히 건너뜁니다 `/libs`.
 >
->```
-> <resource>  
->      <directory>src/main/content/jcr_root</directory>  
->      <includes>  
->          <include>apps/**</include>  
->          <include>libs/foundation/global.jsp</include>
->    </includes>  
->  </resource>  
->```
 >
+```
+> <resource>  
+>           <directory>src/main/content/jcr_root</directory>  
+>           <includes>  
+>                   <include>apps/**</include>  
+>                   <include>libs/foundation/global.jsp</include>
+>       </includes>  
+>   </resource>  
+>```
 
 ### SCM 시스템 사용 방법 {#how-to-work-with-scm-systems}
 
