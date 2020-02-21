@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: 2b8d64082e3ba837c057ab5ee8c45ea0735ef6d0
 
 ---
 
@@ -423,8 +423,15 @@ XSD를 내보내려면 다음 표에 설명된 특정 데이터 매핑이 필요
 1. 경고에서 **확인을** 누릅니다. 통신 관리에서는 DataDictionary-&lt;DDname>.zip이라는 이름으로 컴퓨터에 zip 파일을 다운로드합니다.
 1. Zip 파일에는 .properties 파일이 포함되어 있습니다. 이 파일은 다운로드한 데이터 사전을 정의합니다. 속성 파일의 내용은 다음과 유사합니다.
 
-   &#x200B;# 5월 20일 16:06:23 BST 2015
-   DataDictionary.EmployeeDD.description=DataDictionary.EmployeeDD.displayName=EmployeeDataDictionaryDataDictionaryElement.name=displayName=nameDataDictionaryElement.person.description=DataDictionary.person.displayName name=person
+   ```
+   #Wed May 20 16:06:23 BST 2015
+   DataDictionary.EmployeeDD.description=
+   DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
+   DataDictionaryElement.name.description=
+   DataDictionaryElement.name.displayName=name
+   DataDictionaryElement.person.description=
+   DataDictionaryElement.person.displayName=person
+   ```
 
    속성 파일의 구조는 설명 및 데이터 사전의 표시 이름과 데이터 사전의 각 데이터 사전 요소에 대해 각각 한 줄을 정의합니다. 또한 속성 파일은 각 데이터 사전 요소에 대해 설정된 열거형 값에 대해 한 줄을 정의합니다. 데이터 사전과 마찬가지로 해당 속성 파일에는 여러 데이터 사전 요소 정의가 있을 수 있습니다. 또한 하나 이상의 열거형 값 집합에 대한 정의를 파일에 포함할 수 있습니다.
 
