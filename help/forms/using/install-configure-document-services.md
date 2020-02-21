@@ -415,6 +415,7 @@ AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 패�
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. 파일을 저장하고 닫습니다.
 
 ### 글꼴 관리자 서비스 구성 {#configuring-the-font-manager-service}

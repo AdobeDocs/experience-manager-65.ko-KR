@@ -423,15 +423,16 @@ CRXDE Lite를 사용하여 테스트 번들을 만들려면:
 1. 편집 창에서 파일이 `HelloWorld.java` 열립니다.
 1. 다음 줄을 `HelloWorld.java`추가합니다.
 
-   ```
-     package com.mycompany.test;
-   
-     public class HelloWorld {
-     public String getString(){
-     return "Hello World!";
-     }
-     }
-   ```
+    ```
+      package com.mycompany.test;
+
+      public class HelloWorld {
+      public String getString(){
+      return "Hello World!";
+      }
+      }
+    ```
+
 1. 모두 **저장을** 클릭하여 변경 내용을 서버에 저장합니다.
 
 ### 번들 만들기 {#building-a-bundle}

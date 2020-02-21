@@ -52,7 +52,7 @@ Process Reporting Services는 AEM Forms 데이터베이스의 데이터를 예�
 >클러스터에서 AEM Forms 구현을 실행하는 경우 클러스터의 각 노드에서 다음 단계를 수행하십시오.
 
 1. AEM Forms 서버 인스턴스를 중지합니다.
-1. 
+1. &#x200B;
 
    * (Windows의 경우) 편집기에서 `[JBoss root]/bin/run.conf.bat` 파일을 엽니다.
    * (Linux, AIX 및 Solaris의 경우) `[JBoss root]/bin/run.conf.sh` 파일을 편집기에 저장합니다.

@@ -272,7 +272,7 @@ JavaScript [코드에서 문자열 국제화를 참조하십시오](../../help/s
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-+ /comments에 새 주석 구성 요소가 포함됩니다. `this.id`
+&#x200B;+ /comments에 새 주석 구성 요소가 포함됩니다. `this.id`
 
 ## IncludeClientLib {#includeclientlib}
 

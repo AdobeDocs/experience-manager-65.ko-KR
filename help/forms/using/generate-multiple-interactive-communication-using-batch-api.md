@@ -190,6 +190,7 @@ Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파�
           <scope>provided</scope>
        </dependency>
    ```
+
 1. Java 프로젝트를 열고 .java 파일을 만듭니다(예: CCMBatchServlet.java). 파일에 다음 코드를 추가합니다.
 
    ```java

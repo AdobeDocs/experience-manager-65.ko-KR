@@ -204,7 +204,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
 ### 확대/축소 {#zoom}
 
-+ 단추를 누르면 HTML5 확대/축소 구성 요소가 더 큰 이미지를 표시합니다.
+&#x200B;+ 단추를 누르면 HTML5 확대/축소 구성 요소가 더 큰 이미지를 표시합니다.
 
 자산의 맨 아래에는 확대/축소 도구가 있습니다. 확대하려면 **+**&#x200B;을 클릭하십시오. 축소하려면 **-**&#x200B;를 클릭하십시오. Clicking the **x** or the reset zoom arrow brings the image back to the original size it was imported as. 전체 화면으로 만들려면 대각선 화살표를 클릭합니다. **편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. With this component, you can configure [settings common to all Scene7 components](#settings-common-to-all-scene-components).
 

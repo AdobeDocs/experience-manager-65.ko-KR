@@ -1318,11 +1318,11 @@ N:apps
    >
    >이는 정의와 동일합니다.
    >
-   >
-   ```
+   >```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
+   >
    >이 함수는 단순히 받은 값을 반환합니다.
 
 1. 보고서 디자인을 정의합니다. 예를 들어 `osgireport[cq:Page]` 아래에서 `/etc/designs/reports`볼 수 있습니다.
@@ -1389,13 +1389,13 @@ N:apps
    >
    >이 예제에 그룹화할 수 있는 열이 없으므로 차트를 사용할 수 없습니다. 차트를 보려면 다음을 `groupable` 설정합니다 `true`.
    >
-   >
-   ```
+   >```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
+   >
 
 ## 보고서 프레임워크 서비스 구성 {#configuring-the-report-framework-services}
 

@@ -282,19 +282,18 @@ Microsoft Word(`paste-wordhtml`) 등의 다른 프로그램에서 AEM에 붙여�
 >
 >리치 텍스트 편집기는 ID가 있는 컨테이너 DOM 요소를 사용하여 보고 편집하기 위해 다른 스타일을 제공하는 데 사용할 `CQrte` 수 있습니다.
 >
->
-```>
+>```
 >#CQ td {
 > // defines the style for viewing
 > }
->```>
->```>
+>```
+>
+>```
 >#CQrte td {
 > // defines the style for editing
 > }
->```>
-
-
+>```
+>
 
 ### 팝업 목록에서 사용 가능한 스타일 지정 {#stylesindropdown}
 

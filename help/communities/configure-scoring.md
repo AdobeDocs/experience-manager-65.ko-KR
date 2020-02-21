@@ -183,16 +183,16 @@ JSRP에 대한 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니�
 
 * 점수 및 배지 속성 추가
 
-   ```
-       scoringRules = [/etc/community/scoring/rules/comments-scoring,
-        /etc/community/scoring/rules/forums-scoring]
-       ```
-   
-       ```
-       badgingRules =[/etc/community/badging/rules/comments-scoring,
-        /etc/community/badging/rules/forums-scoring]
-       ```
-   
+  ```
+  scoringRules = [/etc/community/scoring/rules/comments-scoring,
+  /etc/community/scoring/rules/forums-scoring]
+  ```
+
+  ```
+  badgingRules =[/etc/community/badging/rules/comments-scoring,
+  /etc/community/badging/rules/forums-scoring]
+  ```
+
 * 포럼 구성 요소 노드 찾기
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
