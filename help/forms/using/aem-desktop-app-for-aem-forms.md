@@ -10,7 +10,7 @@ topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 translation-type: tm+mt
-source-git-commit: 6fa293028332596bb93013119b4339c7721eb536
+source-git-commit: 3460909eb77cc078b728d1af4becd47cc4377b73
 
 ---
 
@@ -34,7 +34,7 @@ AEM 인스턴스에서 앱을 다운로드할 수 있습니다. 앱 다운로드
 AEM 데스크톱 앱은 Microsoft Windows의 WebDAV 프로토콜과 Mac OS X의 SMB1을 사용하여 AEM Forms 서버에 연결합니다. 기본적으로 AEM Forms 서버는 이진 파일 및 기타 에셋을 WebDAV 또는 SMB 클라이언트와 동기화할 수 없습니다. AEM 데스크톱 앱용 AEM Forms를 활성화하려면 다음 단계를 수행하십시오.
 
 1. AEM Forms에 관리자로 로그인합니다.
-1. 작성 인스턴스에서 Adobe Experience Manager > ![도구](assets/adobeexperiencemanager.png) **[!UICONTROL **를![클릭합니다](assets/hammer.png).**]**> 배포 >작업> 웹 콘솔작업을 클릭합니다. 웹 콘솔이 새 창에서 열립니다.
+1. 작성 인스턴스에서 Adobe Experience Manager > ![도구](assets/adobeexperiencemanager.png) **** 를 ![클릭합니다](assets/hammer.png) . ****> 배포 >작업> 웹 콘솔작업을 클릭합니다. 웹 콘솔이 새 창에서 열립니다.
 1. 웹 콘솔 창에서 FormsManager AddOn 구성 **[!UICONTROL 옵션을 찾아 엽니다]** .
 1. FormsManager AddOn 구성 대화 상자에서 [ **[!UICONTROL 비동기 리소스 동기화]** ] 확인란을 선택 취소하고 [저장]을 **[!UICONTROL 클릭합니다]**.
 1. AEM Forms 서버를 다시 시작합니다. 다시 시작 후 AEM Forms 서버가 AEM 데스크톱 앱을 사용하여 콘텐츠를 승인하고 공유할 수 있습니다.
