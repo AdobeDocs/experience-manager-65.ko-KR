@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 868936e0fd20d3867e31f0351d7b388149472fd2
 
 ---
 
@@ -100,7 +100,7 @@ map.pdf 파일과 directions.pdf 파일을 모두 컬렉션 개체에 배치해�
 
 >[!NOTE]
 >
->컬렉션 개체를 포함하는 `AssemblerResult` 개체는 `invokeDDX` 작업을 호출하는 경우 반환됩니다. 이 작업은 두 개 이상의 입력 PDF 문서를 어셈블러 서비스로 전달할 때 사용됩니다. 그러나 입력 PDF를 어셈블러 서비스로 한 개만 전달하면 반환 문서가 한 개만 예상되면 `invokeOneDocument` 작업을 불러옵니다. 이 작업을 호출하면 단일 문서가 반환됩니다. 이 작업 사용에 대한 자세한 내용은 [암호화된 PDF 문서]취합(/help/forms/developing/encrypted-pdf-documents-assising-enching-encrypted-pdf-documents-assicking.md#assising-enched-pdf-documents)을 참조하십시오.
+>컬렉션 개체를 포함하는 `AssemblerResult` 개체는 `invokeDDX` 작업을 호출하는 경우 반환됩니다. 이 작업은 두 개 이상의 입력 PDF 문서를 어셈블러 서비스로 전달할 때 사용됩니다. 그러나 입력 PDF를 어셈블러 서비스로 한 개만 전달하면 반환 문서가 한 개만 예상되면 `invokeOneDocument` 작업을 불러옵니다. 이 작업을 호출하면 단일 문서가 반환됩니다. 이 작업 사용에 대한 자세한 내용은 암호화된 PDF [문서 합성을 참조하십시오](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
 
 **런타임 옵션 설정**
 
