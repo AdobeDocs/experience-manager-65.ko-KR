@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e9f5d8f63bc342723f2002f677c1673b4af6f891
 
 ---
 
@@ -265,9 +265,10 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 AEM에서 바로 Dy
 >* 보안 [미리 보기가 활성화되면](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)Dynamic Media Classic의 게시된 자산과 게시 취소된 자산이 모두 Dynamic Media Classic 컨텐츠 브라우저에 표시됩니다.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* 비디오의 경우 Dynamic Media Classic 컨텐츠 브라우저는 다음을 지원합니다.
->   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
->   * 단일 MP4 비디오
->   * 단일 F4V 비디오
+   >   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
+   >   * 단일 MP4 비디오
+   >   * 단일 F4V 비디오
+
 
 ### Browsing content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
 
