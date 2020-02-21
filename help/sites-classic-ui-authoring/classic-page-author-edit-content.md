@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 ---
 
@@ -154,15 +154,15 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 >[전역 편집 도구 모음을 보여주는 사용자 속성](/help/sites-classic-ui-authoring/author-env-user-props.md)을 설정한 경우 **복사**, **잘라내기**, **붙여넣기**, **삭제** 단추를 사용하여 단락에 대해 특정 작업을 수행할 수도 있습니다.
 >
 >다양한 [키보드 단축키](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)도 사용할 수 있습니다.
->
 
 ## 구성 요소 잘라내기/복사/붙여넣기 {#cut-copy-paste-a-component}
 
 [구성 요소를 삭제](#deleting-a-component)하면 컨텍스트 메뉴를 사용하여 구성 요소의 복사, 잘라내기 및/또는 붙여넣기를 수행할 수 있습니다.
 
 >[!NOTE]
-[전역 편집 도구 모음을 보여주는 사용자 속성](/help/sites-classic-ui-authoring/author-env-user-props.md)을 설정한 경우 **복사**, **잘라내기**, **붙여넣기**, **삭제** 단추를 사용하여 단락에 대해 특정 작업을 수행할 수도 있습니다.
-
+>
+>[전역 편집 도구 모음을 보여주는 사용자 속성](/help/sites-classic-ui-authoring/author-env-user-props.md)을 설정한 경우 **복사**, **잘라내기**, **붙여넣기**, **삭제** 단추를 사용하여 단락에 대해 특정 작업을 수행할 수도 있습니다.
+>
 >다양한 [키보드 단축키](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)도 사용할 수 있습니다.
 
 >[!NOTE]
