@@ -490,7 +490,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-그런 다음 섹션 [2를 확인합니다. 인증된 사용자 만들기](/content/docs/en/aem/6-1/administer/security/security/sync.md#2). 승인된 사용자 만들기)가 제대로 수행되었습니다.
+그런 다음 섹션 [2를 확인합니다. 인증된 사용자 만들기](/help/sites-administering/sync.md#createauthuser). 승인된 사용자 만들기)가 제대로 수행되었습니다.
 
 이 섹션에서는 모든 게시 인스턴스에 존재하는 인증된 사용자를 만들고 작성자의 &#39;비밀 공급자&#39; OSGi 구성에서 이들을 식별하는 방법에 대해 설명합니다. 기본적으로 사용자는 `admin`입니다.
 
