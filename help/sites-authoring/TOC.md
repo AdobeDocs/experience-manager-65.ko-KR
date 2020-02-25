@@ -66,8 +66,8 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [론치 홍보](launches-promoting.md)
 + 워크플로우 {#workflows}
    + [워크플로우 작업](workflows.md)
-   + ](workflows-applying.md)페이지에 워크플로우 적용[
-   + ](workflows-participating.md)워크플로우에 참여[
+   + [페이지에 워크플로우 적용](workflows-applying.md)
+   + [워크플로우에 참여](workflows-participating.md)
    + [프로젝트 워크플로우 작업](projects-with-workflows.md)
 + 페이지 성능 {#page-performance}
    + [컨텐츠 인사이트](content-insights.md)
