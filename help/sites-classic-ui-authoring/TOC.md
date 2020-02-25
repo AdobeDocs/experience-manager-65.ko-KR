@@ -46,9 +46,9 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Search&amp;Promote 기능을 페이지에 추가](classic-feature-search-promote.md)
    + [구성 요소](classic-page-author-default-components.md)
 + 워크플로우 {#workflows}
-   + ](classic-workflows-participating.md)워크플로우에 참여[
+   + [워크플로우에 참여](classic-workflows-participating.md)
    + [워크플로우 작업](classic-workflows.md)
-   + ](classic-workflows-applying.md)페이지에 워크플로우 적용[
+   + [페이지에 워크플로우 적용](classic-workflows-applying.md)
 + 론치 {#launches}
    + [Launches](classic-launches.md)
    + [론치 만들기](classic-launches-creating.md)
