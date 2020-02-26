@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -788,13 +788,13 @@ We.Finance 자산 관리 시나리오에는 다음과 같은 경우가 포함됩
 
 #### 작동 방식 {#how-it-works-17}
 
-블루칩 성장 기금 안내서는 상호 작용 방식의 의사소통이다. 텍스트, 이미지, 차트 및 표 구성 요소(문서 조각)를 사용하여 제품 요약, 스톡 스타일, 펀드 실적, 자금 세부 정보 및 기타 관련 정보를 표시합니다. [ https://의 편집 모드에서 대화형 통신을 검토할 수 있습니다.]주최자[:authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
+블루칩 성장 기금 안내서는 상호 작용 방식의 의사소통이다. 텍스트, 이미지, 차트 및 표 구성 요소(문서 조각)를 사용하여 제품 요약, 스톡 스타일, 펀드 실적, 자금 세부 정보 및 기타 관련 정보를 표시합니다. 편집 모드에서 대화형 통신을 검토할 수 있습니다. `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`
 
-차트 및 테이블은 양식 데이터 모델에서 데이터를 검색합니다. 양식 데이터 모델은 이 연습의 데이터베이스인 구성된 데이터 소스에 연결하여 펀드와 관련된 정보를 검색합니다. https:// authorHost:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/resources-management에서 양식 데이터 모델을 검토할 수 있습니다[].
+차트 및 테이블은 양식 데이터 모델에서 데이터를 검색합니다. 양식 데이터 모델은 이 연습의 데이터베이스인 구성된 데이터 소스에 연결하여 펀드와 관련된 정보를 검색합니다. 양식 데이터 모델은 `https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management`
 
 #### 직접 보기 {#see-it-yourself-15}
 
-We.Finance 포털의 https://[publishHost]:[publishPort]/wefinance로 이동하고, 자산 관리를 탭하고, 자산 클래스별로 자금을 확장한 다음 We.Finance Blue Chip Growth Fund를 누릅니다. We.Finance 블루칩 성장 기금 설명서 시작.
+의 We.Finance 포털에서 자산 관리를 `https://[publishHost]:[publishPort]/wefinance`탭하고, 자산 등급별로 기금을 확장한 다음 We.Finance 블루칩 성장 펀드를 탭합니다. We.Finance 블루칩 성장 기금 설명서 시작.
 
 ### 새라는 그 펀드에 대해 배우기 위해 블루 칩 성장 기금 설명서를 살펴본다 {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
@@ -806,11 +806,11 @@ Sarah는 현재 및 내역 가격, 내역 가격, 내역 증가, S&amp;P 500 지
 
 Blue Chip Growth Fund의 인터랙티브한 커뮤니케이션은 상위 및 하위 패널을 사용하여 관련 정보를 서로 다른 섹션으로 구분합니다. 상위 패널은 모든 하위 패널을 탭으로 구성합니다.
 
-상위 탭의 레이아웃은 모든 하위 패널을 탭으로 변환하도록 맨 위의 탭으로 설정됩니다. [ https://의 편집 모드에서 대화형 통신 패널을 검토할 수]있습니다[.authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+상위 탭의 레이아웃은 모든 하위 패널을 탭으로 변환하도록 맨 위의 탭으로 설정됩니다. 의 편집 모드에서 대화형 통신 패널을 검토할 수 `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`있습니다.
 
 #### 직접 보기 {#see-it-yourself-16}
 
-[ Blue Chip Growth Fund 대화형 커뮤니케이션(https://]publishHost)으로 이동합니다[.publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. 모든 탭을 살펴보십시오.
+Blue Chip Growth Fund에서 인터랙티브한 커뮤니케이션을 이용할 수 `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled`있습니다. 모든 탭을 살펴보십시오.
 
 ### Sarah가 PDF 버전의 Blue Chip Growth Fund 페이지를 보고 이메일로 보내기 {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
 
@@ -820,15 +820,15 @@ Blue Chip Growth Fund의 인터랙티브한 커뮤니케이션은 상위 및 하
 
 #### 작동 방식 {#how-it-works-19}
 
-블루칩 성장 기금 안내서는 상호 작용 방식의 의사소통이다. 웹 및 PDF 채널을 통해 인터랙티브한 커뮤니케이션은 AEM 워크플로우와 통합되어 이메일을 통해 PDF 버전을 전송합니다. [ https://에서 워크플로우 모델을 검토할 수]있습니다[.authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+블루칩 성장 기금 안내서는 상호 작용 방식의 의사소통이다. 웹 및 PDF 채널을 통해 인터랙티브한 커뮤니케이션은 AEM 워크플로우와 통합되어 이메일을 통해 PDF 버전을 전송합니다. 에서 워크플로우 모델을 검토할 수 `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html`있습니다.
 
 ![자산 관리](assets/wealth-management.png)
 
 #### 직접 보기 {#see-it-yourself-17}
 
-[ PDF 버전을 다운로드하려면 Blue Chip Growth Fund 대화형 통신 https://]게시 호스트로 이동합니다[.publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html에서 PDF 다운로드를 누릅니다.
+PDF 버전을 다운로드하려면 Blue Chip Growth Fund의 인터랙티브한 커뮤니케이션으로 이동하여 PDF 다운로드를 `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`누릅니다.
 
-[ PDF를 이메일로 전송하려면 Blue Chip Growth Fund의 인터랙티브한 커뮤니케이션 https://게시]주최자로 이동합니다[.publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html를 클릭하고 EMAIL PDF를 누릅니다. 전체 **이름** 및 이메일 주소를 **지정합니다**. [이메일 **보내기]를 클릭합니다**.
+PDF를 이메일로 전송하려면 Blue Chip Growth Fund의 인터랙티브한 커뮤니케이션으로 이동하여 EMAIL PDF를 `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`누릅니다. 전체 **이름** 및 이메일 주소를 **지정합니다**. [이메일 **보내기]를 클릭합니다**.
 
 ## 자동 보험 신청 연습 {#auto-insurance-application-walkthrough}
 
@@ -849,13 +849,13 @@ Conrad는 AEM 인스턴스에 로그인하고, 자동 보험 대시보드를 열
 
 #### 작동 방식 {#how-it-works-20}
 
-보험 증권 갱신 커뮤니케이션은 인터랙티브한 커뮤니케이션입니다. Conrad Simms는 Agent UI를 사용하여 보험 갱신 정책 커뮤니케이션을 Sarah에게 보냅니다. 이러한 커뮤니케이션에는 인쇄(PDF) 및 인터랙티브한 커뮤니케이션의 웹 채널에 대한 링크가 포함되어 있습니다. 대화형 통신은 AEM Workflow를 사용하여 이메일을 보냅니다. [ https://에서 작업 흐름을 볼 수 있습니다][.authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+보험 증권 갱신 커뮤니케이션은 인터랙티브한 커뮤니케이션입니다. Conrad Simms는 Agent UI를 사용하여 보험 갱신 정책 커뮤니케이션을 Sarah에게 보냅니다. 이러한 커뮤니케이션에는 인쇄(PDF) 및 인터랙티브한 커뮤니케이션의 웹 채널에 대한 링크가 포함되어 있습니다. 대화형 통신은 AEM Workflow를 사용하여 이메일을 보냅니다. 워크플로우는 `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html`
 
 ![자동 보험 워크플로우](assets/auto-insurance-workflow.png)
 
 #### 직접 보기 {#see-it-yourself-18}
 
-We.Finance **Auto Insurance Dashboard에 Conrad** Simms(csimms/password)로 로그인합니다. URL은 https://[게시 호스트]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html입니다. 고객 ID **를 지정합니다**. Sarah Rose의 고객 ID는 900001입니다. 정책 **갱신을 클릭합니다**. 대화형 통신이 에이전트 UI에서 열립니다. 에이전트 UI에서 유효한 이메일 주소를 입력하여 정책 문서가 첨부된 이메일을 전송한 다음 [제출]을 **클릭합니다**. 화면에 [제출 시작]이라는 메시지가 표시된 후 몇 초 내에 [제출됨]이라는 메시지가 표시됩니다. 자동 보험 갱신이라는 제목이 **있는** 이메일을 보내 지정된 이메일 주소로 보냅니다. 사라 로즈가 제공하는 정책은 프리미엄 정책이다.
+We.Finance **Auto Insurance Dashboard에 Conrad** Simms(csimms/password)로 로그인합니다. URL은 `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`입니다. 고객 ID **를 지정합니다**. Sarah Rose의 고객 ID는 900001입니다. 정책 **갱신을 클릭합니다**. 대화형 통신이 에이전트 UI에서 열립니다. 에이전트 UI에서 유효한 이메일 주소를 입력하여 정책 문서가 첨부된 이메일을 전송한 다음 [제출]을 **클릭합니다**. 화면에 [제출 시작]이라는 메시지가 표시된 후 몇 초 내에 [제출됨]이라는 메시지가 표시됩니다. 자동 보험 갱신이라는 제목이 **있는** 이메일을 보내 지정된 이메일 주소로 보냅니다. 사라 로즈가 제공하는 정책은 프리미엄 정책이다.
 
 자동 보험 연습에는 다른 고객인 Alison Jones도 포함되어 있습니다. Alison Jones의 고객 ID는 900002입니다. Alison Jones에게 대화형 통신을 전송하면 표준 정책이 전송됩니다. 표준 정책과 프리미엄 정책의 차이는 다음과 같습니다.
 
@@ -863,18 +863,18 @@ We.Finance **Auto Insurance Dashboard에 Conrad** Simms(csimms/password)로 로�
 * 표준 정책은 프리미엄 정책에 비해 비용이 적게 든다.
 * 이 프리미엄 정책은 도난 방지 보상과 표준 정책은 현명한 자동차 보상 혜택을 제공한다
 
-두 정책 모두 동일한 대화형 통신을 사용합니다. 정책의 섹션은 정책 유형 조건에 따라 변경되거나 숨겨집니다. https://작성자 주최자로부터 직접 자동 보험 갱신 인터랙티브한 커뮤니케이션을 액세스하고 검토할 수[있습니다].authorPort]/aem/formdetails.html
+두 정책 모두 동일한 대화형 통신을 사용합니다. 정책의 섹션은 정책 유형 조건에 따라 변경되거나 숨겨집니다. 귀하는 `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **Microsoft Dynamics를 데이터 소스로 사용**
 
 참조 사이트는 또한 Microsoft Dynamics를 양식 데이터 모델의 데이터 소스로 사용하는 대화형 통신을 제공합니다. 자동 보험 연습을 위한 대화형 통신을 구성하려면 다음 단계를 수행하십시오.
 
-1. https://[author]:[port]/crx/de에 관리자로 로그인합니다.
+1. 에 `https://[author]:[port]/crx/de as an administrator`로그인합니다.
 1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
 1. Set the value of `FormFieldRequestParameter`to `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. 모두 **저장을 누릅니다**. 참조 사이트는 MS Dynamics를 데이터 소스로 사용하는 대화형 통신을 사용하도록 구성되어 있습니다.
 
-이제 We.Finance Auto Insurance **Dashboard에 Conrad** Simms(csimms/password)로 로그인합니다. URL은 https://[게시 호스트]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html입니다. 고객 ID **를 지정합니다**. Sarah Rose의 고객 ID는 900001입니다. 정책 **갱신을 클릭합니다**. 대화형 통신이 에이전트 UI에서 열립니다. 에이전트 UI에서 유효한 이메일 주소를 입력하여 정책 문서가 첨부된 이메일을 전송한 다음 [제출]을 **클릭합니다**. 화면에 [제출 시작]이라는 메시지가 표시된 후 몇 초 내에 [제출됨]이라는 메시지가 표시됩니다. 자동 보험 갱신이라는 제목이 **있는 이메일이** 지정된 이메일 주소로 전송됩니다.
+이제 We.Finance Auto Insurance **Dashboard에 Conrad** Simms(csimms/password)로 로그인합니다. URL은 `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`입니다. 고객 ID **를 지정합니다**. Sarah Rose의 고객 ID는 900001입니다. 정책 **갱신을 클릭합니다**. 대화형 통신이 에이전트 UI에서 열립니다. 에이전트 UI에서 유효한 이메일 주소를 입력하여 정책 문서가 첨부된 이메일을 전송한 다음 [제출]을 **클릭합니다**. 화면에 [제출 시작]이라는 메시지가 표시된 후 몇 초 내에 [제출됨]이라는 메시지가 표시됩니다. 자동 보험 갱신이라는 제목이 **있는 이메일이** 지정된 이메일 주소로 전송됩니다.
 
 >[!NOTE]
 >
@@ -902,7 +902,7 @@ PDF가 첨부된 이메일을 수신해야 합니다. PDF는 자동 보험 증�
 
 이메일의 **지금** 갱신 단추는 Sarah에게 정책의 웹 버전으로 안내한다. 다음 URL을 방문할 수 있습니다.
 
-https://[publishServer]:[publishPort]/content/document.html?schema=fdm&amp;documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&amp;customerId=900001
+`https://[publishServer]:[publishPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=900001`
 
 자동 보험 갱신에 대한 자세한 요약을 확인하고 페이지 **하단에서 지금** 갱신을 클릭합니다.
 
@@ -920,6 +920,6 @@ Sarah가 **대화형 커뮤니케이션의 웹** 버전에서 지금 갱신을 �
 
 지금 **갱신을** 클릭하여 지불 페이지로 이동합니다. 신용 카드 정보를 입력하고 결제 **만들기를 클릭합니다**. 작성 인스턴스에서 결제 페이지에 도달할 수 있는 위치는 다음과 같습니다.
 
-https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&amp;schema=fdm&amp;customerId=900001
+`https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=900001`
 
 [지불 만들기] 단추를 클릭하면 감사 메시지가 나타납니다.
