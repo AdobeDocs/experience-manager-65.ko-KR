@@ -4,7 +4,7 @@ description: 필터 패널을 사용하여 AEM에서 필요한 자산을 찾는 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
+source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
 
 ---
 
@@ -435,7 +435,7 @@ AEM 자산의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 
 여러 자산의 공통 메타데이터 필드를 일괄 업데이트할 수 있습니다. 검색 결과에서 하나 이상의 자산을 선택합니다. 도구 **[!UICONTROL 모음에서]** 속성을 클릭하고 필요에 따라 메타데이터를 업데이트합니다. 완료되면 **[!UICONTROL 저장 및]** 닫기를 클릭합니다. 업데이트된 필드의 기존 메타데이터를 덮어씁니다.
 
-단일 폴더 또는 컬렉션에서 사용할 수 있는 에셋의 경우 메타데이터를 일괄 [업데이트하는 것이 더 쉽습니다](/help/assets/managing-multiple-assets.md). 여러 폴더에서 사용할 수 있거나 일반적인 기준과 일치하는 자산의 경우 검색을 통해 메타데이터를 일괄 업데이트하는 것이 더 빠릅니다.
+단일 폴더 또는 컬렉션에서 사용할 수 있는 자산의 경우 검색 기능을 사용하지 않고도 메타데이터를 일괄 [](/help/assets/managing-multiple-assets.md) 업데이트하는 것이 더 쉽습니다. 여러 폴더에서 사용할 수 있거나 일반적인 기준과 일치하는 자산의 경우 검색을 통해 메타데이터를 일괄 업데이트하는 것이 더 빠릅니다.
 
 ### 스마트 컬렉션 {#collections-1}
 
