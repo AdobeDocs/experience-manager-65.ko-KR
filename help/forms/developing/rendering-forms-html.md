@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 9f3129aff8a3e389231b0fe0973794e5d34480a0
 
 ---
 
@@ -335,7 +335,7 @@ Forms API(웹 서비스)를 사용하여 HTML 양식을 렌더링합니다.
 
    * 파일 이름 확장자를 포함하여 양식 디자인 이름을 지정하는 문자열 값입니다. Forms 응용 프로그램에 포함된 양식 디자인을 참조하는 경우 전체 경로(예: `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`예:
    * HTML 기본 설정 유형을 지정하는 `TransformTo` 열거형 값. 예를 들어 Internet Explorer 5.0 이상 버전용 동적 HTML과 호환되는 HTML 양식을 렌더링하려면 `TransformTo.MSDHTML`을 지정합니다.
-   * 양식과 병합할 데이터가 들어 있는 `BLOB` 개체입니다. 데이터를 병합하지 않으려면 전달하십시오 `null`. ( [양식 작성 가능한 레이아웃으로 양식]사전 채우기(/help/forms/developing/rendering-forms-rendering-forms-prefluding-forms-flowable-layouts-prefying.md#prefying-foilling-forms-with-flowable-layouts)를 참조하십시오.)
+   * 양식과 병합할 데이터가 들어 있는 `BLOB` 개체입니다. 데이터를 병합하지 않으려면 전달하십시오 `null`. 자세한 내용은 [플로우 가능한 레이아웃으로 양식 미리 채우기를 참조하십시오](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).
    * HTML 런타임 옵션을 저장하는 `HTMLRenderSpec` 개체입니다.
    * 헤더 값을 지정하는 `HTTP_USER_AGENT` 문자열 값;예를 들면 다음과 같습니다 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. 이 값을 설정하지 않으려면 빈 문자열을 전달할 수 있습니다.
    * HTML 양식을 렌더링하는 데 필요한 URI 값을 저장하는 `URLSpec` 개체입니다. 자세한 내용은 [URI 값](/help/forms/developing/rendering-interactive-pdf-forms.md)지정을 참조하십시오.
