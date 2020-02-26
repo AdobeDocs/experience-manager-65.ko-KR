@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -220,8 +220,8 @@ AEM Forms 참조 사이트의 경우 AEM DS 설정 서비스에서 처리 서버
 
 패키지를 설치하고 작성자 및 게시 인스턴스를 시작한 후 브라우저에서 다음 URL을 참조하십시오.
 
-* https://[서버]:[port]/webgov
-* https://[서버]:[port]/wefinance
+* `https://[server]:[port]/wegov`
+* `https://[server]:[port]/wefinance`
 
 설치가 성공하면 및 We.Finance 참조 사이트 랜딩 페이지에 액세스할 수 있습니다.
 
@@ -231,12 +231,12 @@ Microsoft Dynamics의 기록을 사용하도록 가정용 대출 신청서 및 �
 
 자동 보험 적용을 위한 사용자 지정 엔티티를 가져오려면 다음을 수행하십시오.
 
-1. AEM 작성자 **인스턴스의 https://서버** :[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip에서 WeFinanceAutoInsurance_1_0.zip[]솔루션 패키지를 다운로드합니다.
+1. AEM **작성자 인스턴스의 WeFinanceAutoInsurance_1_0.zip** 솔루션 패키지를 `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` 다운로드합니다.
 1. Microsoft Dynamics 인스턴스에서 설정 > **솔루션으로 이동하여** 가져오기를 **클릭합니다**. 패키지를 선택하고 가져옵니다.
 
 자동 보험 적용을 위한 사용자 지정 엔티티를 가져오려면 다음을 수행하십시오.
 
-1. https:// **author** :[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip에서 AEMFormsFSIRefsite_1_0.zip[패키지를 다운로드합니다]. 패키지를 선택하고 가져옵니다.
+1. AEMFormsFSIResite_ **1_0.zip** 패키지를 `https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`다운로드합니다. 패키지를 선택하고 가져옵니다.
 
 1. Microsoft Dynamics 인스턴스에서 설정 > **솔루션으로 이동하여** 가져오기를 **클릭합니다**. 패키지를 선택하고 가져옵니다.
 
@@ -244,9 +244,9 @@ Microsoft Dynamics의 기록을 사용하도록 가정용 대출 신청서 및 �
 
 1. AEM **작성자 인스턴스의 다음 위치에서 We.Finance Customers.csv, We.Finance Auto Insurance Reneals.csv**&#x200B;및 **home 모기지** 데이터 파일을 다운로드합니다.
 
-   * https://[서버]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv
-   * https://[서버]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance 자동 보험 갱신.csv
-   * https://[server]:[port]/content/aemforms-refsite-colleters/we-finance/home-morgage/ms-dynamics/Sarah%20Rose%20Contact.csv
+   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
+   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
+   * `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
 1. Microsoft Dynamics 인스턴스에서 다음을 수행합니다.
 
@@ -273,7 +273,7 @@ AEM Forms와 Microsoft Dynamics 간의 통신을 활성화하도록 AEM Forms에
 
 작성자 및 게시 인스턴스 모두에서 다음을 수행합니다.
 
-1. https://의 AEM 웹 구성 콘솔로 이동합니다.[][server]:host/system/console/configMgr.
+1. 의 AEM 웹 구성 콘솔로 `https://[server]:[host]/system/console/configMgr`이동합니다.
 1. Adobe Sign 구성 **[!UICONTROL 서비스를 찾아 탭하여]** 열어서 구성합니다.
 1. 상태 **[!UICONTROL 업데이트 스케줄러 표현식을]** 0/ **2 * * * ?**&#x200B;로 구성합니다.
 
