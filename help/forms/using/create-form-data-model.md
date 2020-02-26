@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -70,7 +70,7 @@ MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
       * **** 데이터 소스 이름:원하는 이름을 지정할 수 있습니다. 예를 들어 WeRetailMySQL **을 지정합니다**.
       * **DataSource 서비스 속성 이름**:DataSource 이름을 포함하는 서비스 속성의 이름을 지정합니다. 데이터 소스 인스턴스를 OSGi 서비스로 등록하는 동안 지정됩니다. 예: **datasource.name**.
       * **JDBC 드라이버 클래스**:JDBC 드라이버의 Java 클래스 이름을 지정합니다. MySQL 데이터베이스의 경우 **com.mysql.jdbc.Driver를 지정합니다**.
-      * **JDBC 연결 URI**:데이터베이스의 연결 URL을 지정합니다. 포트 3306 및 스키마 웹 소매에서 실행되는 MySQL 데이터베이스의 경우 URL은 다음과 같습니다.jdbc:mysql://[server]:3306/weretail?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8
+      * **JDBC 연결 URI**:데이터베이스의 연결 URL을 지정합니다. 포트 3306 및 스키마 웹 소매에서 실행되는 MySQL 데이터베이스의 경우 URL은 다음과 같습니다. `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **** 사용자 이름:데이터베이스의 사용자 이름입니다. JDBC 드라이버를 사용하여 데이터베이스와 연결을 설정해야 합니다.
       * **** 암호:데이터베이스의 암호입니다. JDBC 드라이버를 사용하여 데이터베이스와 연결을 설정해야 합니다.
       * **** 차입 시 테스트:[차입시 **테스트] 옵션을** 활성화합니다.
