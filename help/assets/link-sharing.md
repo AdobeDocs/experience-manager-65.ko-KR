@@ -3,7 +3,7 @@ title: 공유 에셋에 대한 URL 생성
 description: 이 문서에서는 AEM 자산 내에서 자산, 폴더 및 컬렉션을 외부 당사자에게 URL로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -16,7 +16,7 @@ AEM(Adobe Experience Manager) 자산을 사용하면 자산, 폴더 및 컬렉�
 >
 >링크로 공유할 폴더 또는 자산에 대해 ACL 편집 권한이 필요합니다.
 
-## 에셋 공유 {#sharelink}
+## 자산 공유 {#sharelink}
 
 사용자와 공유할 에셋의 URL을 생성하려면 링크 공유 대화 상자를 사용합니다. 관리자 권한이 있거나 읽기 권한이 있는 사용자는 `/var/dam/share` 해당 사용자와 공유된 링크를 볼 수 있습니다.
 
@@ -51,7 +51,7 @@ AEM(Adobe Experience Manager) 자산을 사용하면 자산, 폴더 및 컬렉�
 
    * 로컬
    * 작성자
-   * 게시
+   * 페이지를
    로컬 및 작성자 속성의 경우 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 단일 AEM 작성자 인스턴스를 실행하는 경우 로컬 및 작성자 속성은 모두 동일한 값을 갖습니다. 게시의 경우 게시 인스턴스의 URL을 제공합니다.
 
 1. [링크 공유] **[!UICONTROL 대화 상자의]** 이메일 주소 상자에 링크를 공유할 사용자의 이메일 ID를 입력합니다. 여러 사용자와 링크를 공유할 수도 있습니다.
