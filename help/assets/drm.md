@@ -3,12 +3,12 @@ title: 디지털 자산 권한 관리
 description: AEM 파섹
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
 
-# 디지털 자산을 위한 디지털 권한 관리 {#digital-rights-management-in-assets}
+# Digital Rights Management for digital assets {#digital-rights-management-in-assets}
 
 디지털 자산은 종종 사용약관과 사용 기간을 지정하는 라이선스와 연결됩니다. AEM(Adobe Experience Manager) 자산은 AEM 플랫폼과 완전히 통합되므로 자산 만료 정보 및 자산 상태를 효율적으로 관리할 수 있습니다. 라이선스 정보를 에셋과 연결할 수도 있습니다.
 
@@ -18,11 +18,15 @@ source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
 
 자산 콘솔의 카드 보기 및 목록 보기 모두에서 자산의 만료 상태를 볼 수 있습니다.
 
-![expired_flag_card](assets/expired_flag_card.png)<br> *그림:카드 보기에서 카드의 플래그는 만료된 자산을 나타냅니다.*
+![expired_flag_card](assets/expired_flag_card.png)
+
+*그림:카드 보기에서 카드의 플래그는 만료된 자산을 나타냅니다.*
 
 **목록 보기**
 
-![expired_flag_list](assets/expired_flag_list.png)*그림:목록 보기에서는 상태&#x200B;**[!UICONTROL 열에]**만료된&#x200B;**[!UICONTROL 배너가]**표시됩니다.*
+![expired_flag_list](assets/expired_flag_list.png)
+
+*그림:목록 보기에서는 상태[!UICONTROL 열에]만료된[!UICONTROL 배너가]표시됩니다.*
 
 타임라인에서 자산의 만료 상태를 볼 수 있습니다. 자산을 선택하고 전역 탐색 메뉴에서 타임라인을 선택합니다.
 
@@ -150,7 +154,7 @@ AEM(Adobe Experience Manager) 자산의 자산 콘솔은 자산에 대한 다양
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-## 디지털 자산 권한 관리 {#digital-rights-management-in-assets-1}
+## Digital Rights Management in Assets {#digital-rights-management-in-assets-1}
 
 이 기능은 AEM(Adobe Experience Manager) 자산에서 라이선스가 부여된 자산을 다운로드하려면 라이선스 계약에 동의해야 합니다.
 
