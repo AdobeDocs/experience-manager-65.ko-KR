@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37d0225f69800225e82f253ad9dbab8b2b30ac5e
+source-git-commit: fdcd9173b02347a7a9527b292635d63e8aa9ce19
 
 ---
 
@@ -291,6 +291,12 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 **Foundation JEE**
 
 * 작업 구성은 양식 호출 워크플로우 제출 작업(NPR-31478)에 대한 프로세스 이름을 로드하지 않습니다.
+* JEE의 AEM Forms 사용자는 .lca 파일을 가져오거나 관리 콘솔에서 LDAP를 설정하는 동안 다음과 같은 오류가 발생합니다.
+
+   `com.ibm.ws.webcontainer.filter.FilterInstanceWrapper doFilter SRVE8109W: Uncaught exception thrown by filter um: java.lang.NoClassDefFoundError: org/apache/commons/io/IOUtils at org.apache.commons.fileupload.util.Streams.copy`
+
+   `Error 500: javax.servlet.ServletException: java.lang.NoClassDefFoundError: org.apache.commons.io.IOUtils` (NPR-30931)
+
 
 ### 기능 팩이 포함됨 {#feature-packs-included-6530}
 
