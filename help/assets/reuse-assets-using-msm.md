@@ -4,7 +4,7 @@ description: 상위 자산에서 파생되고 상위 자산에 연결된 여러 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -68,6 +68,7 @@ MSM 파섹
 1. 소스 자산 또는 폴더를 선택합니다. 도구 모음에서 만들기 > **[!UICONTROL Live Copy를 클릭합니다]**.
 
    ![AEM 인터페이스에서 Live Copy 만들기](assets/create_lc1.png)
+
    *그림:AEM 인터페이스에서 Live Copy 만들기*
 
 1. 대상 폴더를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
@@ -79,6 +80,7 @@ MSM 파섹
 1. AEM 인터페이스의 오른쪽 위 모서리에서 만들기 > **[!UICONTROL Live Copy를 클릭합니다]**.
 
    ![AEM 인터페이스에서 Live Copy 만들기](assets/create_lc2.png)
+
    *그림:AEM 인터페이스에서 Live Copy 만들기*
 
 1. 소스 자산 또는 폴더를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
@@ -111,6 +113,7 @@ Live Copy 자산 또는 폴더의 정보 및 상태를 확인하려면 다음 �
 1. Live **[!UICONTROL Copy를 클릭합니다]**. 소스 경로, 일시 중단 상태, 동기화 상태, 마지막 롤아웃 날짜 및 마지막 롤아웃을 수행한 사용자를 확인할 수 있습니다.
 
    ![Live Copy 정보 및 상태는 속성의 콘솔에 표시됩니다.](assets/lcfolder_info_properties.png)
+
    *그림:Live Copy 정보 및 상태*
 
 1. 하위 자산이 Live Copy 구성을 대여하는 경우 활성화하거나 비활성화할 수 있습니다.
@@ -125,6 +128,7 @@ AEM에서는 소스 폴더의 모든 Live Copy의 동체를 확인할 수 있는
 1. Live **[!UICONTROL Copy 소스를 클릭합니다]**. 콘솔을 열려면 Live Copy **[!UICONTROL 개요를 클릭합니다]**. 이 대시보드는 모든 하위 자산의 최상위 상태를 제공합니다.
 
    ![소스의 Live Copy 콘솔에서 Live Copy 상태 보기](assets/livecopy-statuses.png)
+
    *그림:소스의 Live Copy 콘솔에서 Live Copy 상태 보기*
 
 1. Live Copy 폴더의 각 자산에 대한 세부 정보를 보려면 자산을 선택하고 도구 모음에서 **[!UICONTROL 관계]** 상태를 클릭합니다.
@@ -149,11 +153,15 @@ AEM에서는 소스 폴더의 모든 Live Copy의 동체를 확인할 수 있는
 
 소스 에셋 또는 폴더를 선택하고 왼쪽 레일을 열고 참조를 **[!UICONTROL 클릭합니다]**. 또는 자산 또는 폴더를 선택하고 키보드 단축키를 `Alt + 4`사용합니다.
 
-![선택한 소스에](assets/referencerail_source.png)대한 참조 레일에서 사용할 수 있는 작업 및 정보&#x200B;*그림:선택한 소스에 대한 참조 레일에서 사용할 수 있는 작업 및 정보*
+![선택한 소스에 대한 참조 레일에서 사용할 수 있는 작업 및 정보](assets/referencerail_source.png)
+
+*그림:선택한 소스에 대한 참조 레일에서 사용할 수 있는 작업 및 정보*
 
 특정 Live Copy의 경우 Live Copy **[!UICONTROL 편집을 클릭하여]** 관계를 일시 중단하거나 롤아웃 구성을 변경합니다.
 
-![특정 Live Copy의 경우 소스 에셋을 선택하면](assets/referencerail_editlc_options.png)참조 레일에서 관계를 일시 중단하거나 롤아웃 구성을 변경할 수&#x200B;*있습니다. 그림:관계 일시 중단 또는 특정 Live Copy 롤아웃 구성 변경*
+![특정 Live Copy의 경우 소스 에셋을 선택하면 참조 레일에서 관계를 일시 중단하거나 롤아웃 구성을 변경할 수 있습니다](assets/referencerail_editlc_options.png)
+
+*그림:관계 일시 중단 또는 특정 Live Copy 롤아웃 구성 변경*
 
 ### Live Copy에 대한 참조 레일의 빠른 작업 {#refraillc}
 
@@ -165,7 +173,9 @@ Live Copy 자산 또는 폴더의 경우 다음 정보를 확인하고 참조 �
 
 Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 열고 참조를 **[!UICONTROL 클릭합니다]**. 또는 자산 또는 폴더를 선택하고 키보드 단축키를 `Alt + 4`사용합니다.
 
-![선택한 Live Copy에](assets/referencerail_livecopy.png)대한 참조 레일에서 사용할 수 있는&#x200B;*작업 그림:선택한 Live Copy에 대한 참조 레일에서 사용할 수 있는 작업*
+![선택한 Live Copy에 대한 참조 레일에서 사용할 수 있는 작업](assets/referencerail_livecopy.png)
+
+*그림:선택한 Live Copy에 대한 참조 레일에서 사용할 수 있는 작업*
 
 ## 소스에서 Live Copy로 수정 내용 전달 {#rolloutsync}
 
@@ -180,6 +190,7 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 열고 참조를
 1. 업데이트할 Live Copy를 선택합니다. 롤아웃을 **[!UICONTROL 클릭합니다]**. 하위 자산에 대한 업데이트를 롤아웃하려면 롤아웃 소스 **[!UICONTROL 및 모든 하위 항목을 선택합니다]**.
 
    ![소스 수정 내용을 일부 또는 전체 Live Copy로 롤아웃합니다.](assets/livecopy_rollout_page.png)
+
    *그림:소스 수정 내용을 일부 또는 전체 Live Copy로 롤아웃합니다.*
 
 >[!NOTE]
@@ -188,7 +199,9 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 열고 참조를
 
 또는 특정 Live Copy를 선택한 후 참조 레일에서 롤아웃 작업을 시작할 수 있습니다. 자세한 내용은 Live Copy [에](#refraillc)대한 참조 레일의 빠른 작업을 참조하십시오. 이 롤아웃 방식에서는 선택한 Live Copy 및 선택적으로 해당 하위 Live Copy만 업데이트됩니다.
 
-![소스 수정 내용을 선택한 Live Copy에](assets/livecopy_rollout_dialog.png)롤아웃합니다&#x200B;*그림:소스 수정 내용을 선택한 Live Copy에 롤아웃합니다.*
+![소스 수정 내용을 선택한 Live Copy에 롤아웃합니다.](assets/livecopy_rollout_dialog.png)
+
+*그림:소스 수정 내용을 선택한 Live Copy에 롤아웃합니다.*
 
 ### 동기화 작업 정보 {#aboutsync}
 
@@ -206,7 +219,9 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 열고 참조를
 
 동기화 작업과 관련된 상태 및 정보를 보려면 Live Copy [의 정보](#statuslcasset) 및 상태와 폴더의 [모든 Live Copy](#statuslcfolder)의 정보 및 상태를 참조하십시오.
 
-![동기화 작업은 변경 내용을 소스에](assets/livecopy_sync.png)가져옵니다&#x200B;*그림:동기화 작업은 변경 내용을 소스에 가져옵니다.*
+![동기화 작업은 변경 내용을 소스에 가져옵니다.](assets/livecopy_sync.png)
+
+*그림:동기화 작업은 변경 내용을 소스에 가져옵니다.*
 
 >[!NOTE]
 >
@@ -229,7 +244,8 @@ Live Copy는 원본 소스를 만들 때 원본 소스의 복제본입니다. Li
 모든 로컬 수정 사항을 실행 취소하고 에셋을 소스 상태로 되돌릴 수 있습니다. 동작을 완전히 재설정하고 모든 로컬 수정 사항을 즉시 재정의하고 모든 메타데이터 필드에 상속을 재설정합니다. 되돌리려면 Live Copy **[!UICONTROL 자산의]** 속성 페이지에서 도구 **[!UICONTROL 모음에서 재설정을]** 클릭합니다.
 
 ![재설정 작업은 로컬 편집을 덮어쓰고 Live Copy를 소스와 함께 가져옵니다.](assets/livecopy_reset.png)
-그림*:재설정 작업은 로컬 편집을 덮어쓰고 Live Copy를 소스와 함께 가져옵니다.*
+
+*그림:재설정 작업은 로컬 편집을 덮어쓰고 Live Copy를 소스와 함께 가져옵니다.*
 
 ## 라이브 관계 제거 {#detach}
 
@@ -240,6 +256,7 @@ Live Copy는 원본 소스를 만들 때 원본 소스의 복제본입니다. Li
 1. Live **[!UICONTROL Copy를 클릭합니다]**. 도구 **[!UICONTROL 모음에서]** 분리를 클릭합니다. 표시된 **[!UICONTROL 대화]** 상자에서 분리를 클릭합니다.
 
    ![작업을 분리하면 원본과 Live Copy 간의 관계가 완전히 제거됩니다.](assets/livecopy_detach.png)
+
    *그림:작업을 분리하면 원본과 Live Copy 간의 관계가 완전히 제거됩니다.*
 
    >[!CAUTION]
@@ -257,6 +274,7 @@ Live Copy는 원본 소스를 만들 때 원본 소스의 복제본입니다. Li
 1. 이 대시보드의 Live Copy 폴더에서 Live Copy 자산을 선택합니다. 도구 모음에서 원하는 작업을 클릭합니다. 사용 가능한 작업은 **[!UICONTROL 동기화]**, **[!UICONTROL 재설정]**, **[!UICONTROL 일시 중단]**&#x200B;및 **[!UICONTROL Detach]**&#x200B;입니다. 선택한 소스 폴더와 라이브 관계에 있는 Live Copy 폴더의 모든 자산에서 이러한 작업을 신속하게 시작할 수 있습니다.
 
    ![Live Copy 개요 콘솔에서 Live Copy 폴더의 많은 에셋을 손쉽게 업데이트](assets/livecopyconsole_update_many_assets.png)
+
    *그림:Live Copy 개요 콘솔에서 Live Copy 폴더의 많은 에셋을 손쉽게 업데이트*
 
 ## 자산에 대한 MSM 확장 {#extendapi}
