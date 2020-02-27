@@ -3,12 +3,12 @@ title: 계단식 메타데이터
 description: 이 문서에서는 자산의 CSS 메타데이터를 정의하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
 
-# CSS 메타데이터 {#cascading-metadata}
+# 계단식 메타데이터 {#cascading-metadata}
 
 자산의 메타데이터 정보를 캡처할 때 사용자는 사용 가능한 다양한 필드에 정보를 제공합니다. 다른 필드에서 선택한 옵션에 따라 특정 메타데이터 필드 또는 필드 값을 표시할 수 있습니다. 이러한 메타데이터 조건부 표시를 CSS 메타데이터라고 합니다. 즉, 특정 메타데이터 필드/값과 하나 이상의 필드 및/또는 해당 값 간에 종속성을 만들 수 있습니다.
 
@@ -104,7 +104,9 @@ source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
 1. 메타데이터 스키마를 적용한 폴더로 이동하여 자산의 속성 페이지를 엽니다. 자산 유형 필드에서 선택한 내용에 따라 관련 CSS 메타데이터 필드가 표시됩니다.
 
    ![비디오 자산에 대한 CSS 메타데이터](assets/video_asset.png)
+
    *그림:비디오용 CSS 메타데이터*
 
    ![문서 자산에 대한 CSS 메타데이터](assets/doc_type_fields.png)
+
    *그림:문서에 대한 CSS 메타데이터*
