@@ -3,7 +3,7 @@ title: Camera Raw 지원
 description: Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0b8472dbfbfe326b4b5fe0d43b0f361318b37d16
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -53,11 +53,9 @@ Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하려면 �
 
 ![chlimage_1-135](assets/chlimage_1-337.png)
 
-
 *그림:사이드 창의 옵션.*
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
-
 
 *그림:옵션을 사용하여 이미지를 간단하게 편집할 수 있습니다.*
 
