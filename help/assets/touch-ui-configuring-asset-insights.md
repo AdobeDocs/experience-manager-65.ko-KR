@@ -3,7 +3,7 @@ title: 자산 인사이트 구성
 description: AEM 자산에서 자산 통찰력을 구성합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -24,7 +24,6 @@ AEM(Adobe Experience Manager) 자산은 Adobe Analytics에서 타사 웹 사이�
 1. 마법사에서 데이터 센터를 선택하고 조직의 이름, 사용자 이름 및 공유 암호를 비롯한 자격 증명을 제공합니다.
 
    ![AEM에서 자산 통찰력에 대한 Adobe Analytics 구성](assets/insights_config2.png)
-
 
    *그림:AEM에서 자산 통찰력에 대한 Adobe Analytics 구성*
 
