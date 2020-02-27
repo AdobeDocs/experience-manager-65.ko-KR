@@ -57,3 +57,8 @@ DOS와 같은 상황을 방지하기 위해 AEM은 Sling 요청에서 지원되�
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
 제한을 변경하려면 웹 콘솔([도구] > [ **[!UICONTROL 작업]** ] > [콘솔 **]****[!UICONTROL )에]**&#x200B;액세스하고 Apache Apache Apache Sling Request Handling **** **** [요청 처리] OSGi의 POST Maximum 매개 변수의 값을 변경합니다.
+
+>[!MORELIKETHIS]
+>
+>* [여러 컬렉션의 메타데이터 속성 편집](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+
