@@ -3,7 +3,7 @@ title: 자산 메타데이터 일괄 가져오기 및 내보내기
 description: 자산 메타데이터 일괄 가져오기 및 내보내기
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -59,6 +59,7 @@ AEM Assets를 사용하면 CSV 파일을 사용하여 자산 메타데이터를 
 1. 내보내기 작업에 대한 받은 편지함 알림을 엽니다. 작업을 선택하고 도구 **[!UICONTROL 모음에서]** 열기를 클릭합니다. 메타데이터가 포함된 CSV 파일을 다운로드하려면 도구 모음에서 CSV **[!UICONTROL 다운로드를]** 탭/클릭합니다. 닫기를 **[!UICONTROL 클릭합니다]**.
 
    ![대량으로 내보낸 메타데이터가 포함된 CSV 파일을 다운로드하는 대화 상자](assets/csv_download.png)
+
    *그림:대량으로 내보낸 메타데이터가 포함된 CSV 파일을 다운로드하는 대화 상자*
 
 >[!MORELIKETHIS]
