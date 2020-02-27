@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
 
 ---
 
@@ -362,8 +362,10 @@ Offloading과 같은 서비스에 대해 별도로 식별할 수 있도록 기�
 
 ## 콜드 대기 저장소 유지 관리 {#cold-standby-repository-maintenance}
 
+### 개정 정리 {#revision-clean}
+
 >[!NOTE]
-기본 인스턴스에서 [온라인 개정 정리를](/help/sites-deploying/revision-cleanup.md) 실행하는 경우 아래 표시된 수동 절차는 필요하지 않습니다. 또한 온라인 개정 정리를 사용하는 경우 대기 `cleanup ()` 인스턴스에서 작업이 자동으로 수행됩니다.
+기본 인스턴스에서 [온라인 개정 정리를](/help/sites-deploying/revision-cleanup.md) 실행하는 경우 아래 표시된 수동 절차는 필요하지 않습니다. 또한 온라인 개정 정리를 사용하는 경우 대기 인스턴스에 대한 `cleanup ()` 작업이 자동으로 수행됩니다.
 
 >[!NOTE]
 대기 상태에서 오프라인 개정 정리를 실행하지 마십시오. 필요하지 않으며 세그먼트스토어 크기를 줄이지 않습니다.
