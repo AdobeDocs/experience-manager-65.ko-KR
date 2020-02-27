@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 56006a1f49e4d357cd7ee44a4a1dd1af7189e70a
 
 ---
 
@@ -41,7 +41,7 @@ MongoDB는 일반적으로 다음 기준 중 하나가 충족되는 AEM 작성�
 
 ### AEM에 대한 최소 MongoDB 배포 {#minimal-mongodb-deployment-for-aem}
 
-다음은 MongoDB의 AEM에 대한 최소 배포입니다. 간단히 말하자면, SSL 종료 및 HTTP 프록시 구성 요소가 일반화되었습니다. 1개의 기본 복제본과 2개의 보조 복제본을 포함한 단일 MongoBD 복제본 세트로 구성됩니다.
+다음은 MongoDB의 AEM에 대한 최소 배포입니다. 간단히 말하자면, SSL 종료 및 HTTP 프록시 구성 요소가 일반화되었습니다. MongoDB 복제본 세트 하나에 주 1개와 보조 2개로 구성됩니다.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
