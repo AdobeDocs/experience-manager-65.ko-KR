@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: 9d7dd160cd4a9a1bfac9628498efae2e1f98023f
+source-git-commit: 86257dd8a54a0f25ed4365990a678bb794f18744
 
 ---
 
@@ -4272,7 +4272,7 @@ String outputFolder="C:/Output";
   }
 ```
 
-## 양식 서비스 {#forms-service}
+## Forms 서비스 {#forms-service}
 
 Forms 서비스는 인터랙티브한 PDF 양식을 통해 데이터를 가져오거나 내보낼 수 있는 API를 제공합니다. 인터랙티브한 PDF 양식은 사용자의 정보를 표시하고 수집하는 데 사용되는 필드를 하나 이상 포함하는 PDF 문서입니다. 서비스는 다음 API를 지원합니다.
 
@@ -4471,11 +4471,10 @@ GeneratePDFService는 .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, (
    <td><strong>✓</strong></td>
   </tr>
   <tr>
-   <td>exportPDF</td>
+   <td>htmlToPDF</td>
    <td><strong>✓</strong></td>
    <td><strong>✓</strong></td>
   </tr>
-  <tr>
    <td>optimizePDF</td>
    <td><strong>✓</strong></td>
    <td>✖</td>
