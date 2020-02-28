@@ -3,7 +3,7 @@ title: 연결된 에셋을 사용하여 Adobe Experience Manager Sites 제작 �
 description: 다른 Experience Manager 사이트 배포에서 웹 페이지를 만들 때 원격 Adobe Experience Manager 자산 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
+source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
 
 ---
 
@@ -35,16 +35,7 @@ AEM Sites는 웹 페이지를 구축하는 기능을 제공하며, AEM Assets은
 
 ### 지원되는 파일 형식 {#mimetypes}
 
-작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용할 수 있습니다. 문서를 구성 요소에 추가할 수 `Download` 있으며 이미지를 `Image` 구성 요소에 추가할 수 있습니다. 작성자는 기본 `Download` 또는 `Image` 구성 요소를 확장하는 모든 사용자 지정 AEM 구성 요소에 원격 자산을 추가할 수도 있습니다.
-
-* Microsoft Word(DOC 및 DOCX)
-* Microsoft Excel(XLS 및 XLSX)
-* Microsoft PowerPoint(PPT 및 PPTX)
-* Adobe PDF(PDF)
-* ODT(OpenDocument Text)
-* 서식 있는 텍스트 형식(RTF)
-* 일반 텍스트(TXT)
-* 웹 페이지(HTML)
+작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용할 수 있습니다. 문서를 구성 요소에 추가할 수 `Download` 있으며 이미지를 `Image` 구성 요소에 추가할 수 있습니다. 작성자는 기본 `Download` 또는 `Image` 구성 요소를 확장하는 모든 사용자 지정 AEM 구성 요소에 원격 자산을 추가할 수도 있습니다. 지원되는 형식 목록은 연결된 [자산 지원 형식을](assets-formats.md#supported-document-formats)참조하십시오.
 
 ### Users and groups involved {#users-and-groups-involved}
 
