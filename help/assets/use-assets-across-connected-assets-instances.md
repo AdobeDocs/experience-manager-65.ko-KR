@@ -3,7 +3,7 @@ title: 연결된 에셋을 사용하여 Adobe Experience Manager Sites 제작 �
 description: 다른 Experience Manager 사이트 배포에서 웹 페이지를 만들 때 원격 Adobe Experience Manager 자산 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
 
 ---
 
@@ -35,7 +35,10 @@ AEM Sites는 웹 페이지를 구축하는 기능을 제공하며, AEM Assets은
 
 ### 지원되는 파일 형식 {#mimetypes}
 
-작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용할 수 있습니다. 문서를 구성 요소에 추가할 수 `Download` 있으며 이미지를 `Image` 구성 요소에 추가할 수 있습니다. 작성자는 기본 `Download` 또는 `Image` 구성 요소를 확장하는 모든 사용자 지정 AEM 구성 요소에 원격 자산을 추가할 수도 있습니다. 지원되는 형식 목록은 연결된 [자산 지원 형식을](assets-formats.md#supported-document-formats)참조하십시오.
+작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용할 수 있습니다. 문서를 구성 요소에 추가할 수 `Download` 있으며 이미지를 `Image` 구성 요소에 추가할 수 있습니다. 작성자는 기본 `Download` 또는 `Image` 구성 요소를 확장하는 모든 사용자 지정 AEM 구성 요소에 원격 자산을 추가할 수도 있습니다. 지원되는 형식 목록은 다음과 같습니다.
+
+* **이미지 형식**:이미지 구성 요소에서 지원하는 이미지 [형식은 연결된](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) 자산에서 지원됩니다. 다이내믹 미디어 구성 요소는 지원되지 않습니다.
+* **문서 포맷**:연결된 [자산 지원 문서 형식을](assets-formats.md#supported-document-formats)참조하십시오.
 
 ### Users and groups involved {#users-and-groups-involved}
 
