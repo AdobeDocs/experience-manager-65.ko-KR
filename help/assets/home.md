@@ -4,7 +4,7 @@ seo-title: AEM 6.5 자산 사용 안내서
 description: 이 안내서에서는 디지털 자산을 만들고, 관리하고, 제공하고, 최적화하는 방법과 같은 모든 AEM 자산 작업을 다룹니다.
 seo-description: 디지털 자산을 만들고, 관리하고, 제공하고, 최적화하는 방법과 같은 모든 AEM 자산 작업을 다룹니다.
 translation-type: tm+mt
-source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+source-git-commit: b90343874d5afd9858d8a6d82828eabdfa1d3ccd
 
 ---
 
@@ -39,11 +39,11 @@ source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
 
 ## 주요 AEM 리소스
 
-* [AEM 자습서](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM 비디오 자습서](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
+* [AEM Assets 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [발송자 사용 안내서](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [핵심 구성 요소 사용 안내서](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR 준비](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
-* [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
