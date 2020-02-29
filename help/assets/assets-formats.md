@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산에서 지원되는 파일 형식 및 각 형식에 대해 지원되는 기능 목록입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
 
 ---
 
@@ -87,13 +87,13 @@ Adobe Imaging Transcoding 라이브러리는 인코딩, 트랜스코딩, 리샘�
 
 ## 지원되는 Camera Raw {#supported-camera-raw}
 
-AEM Assets는 Adobe Camera Raw 라이브러리를 사용하여 Raw 이미지를 인제스트할 수 있습니다. See [Camera Raw Support](camera-raw.md).
+AEM Assets는 Adobe Camera Raw 라이브러리를 사용하여 Raw 이미지를 인제스트할 수 있습니다. See [Camera Raw support](camera-raw.md).
 
 ## 지원되는 문서 포맷 {#supported-document-formats}
 
 자산 관리 기능에 지원되는 문서 형식은 다음과 같습니다.
 
-| 형식 | 저장 용량 | 메타데이터<br> 관리 | 메타데이터<br> 추출 | 축소판<br> 생성 | 인터랙티브한<br> 편집 | 메타데이터<br> 원본에 쓰기 | 인사이트 | 연결된 자산 |
+| 형식 | 저장 용량 | 메타데이터<br> 관리 | 메타데이터<br> 추출 | 축소판<br> 생성 | 인터랙티브한<br> 편집 | 메타데이터<br> 원본에 쓰기 | [인사이트](touch-ui-asset-insights.md) | [연결된 자산](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
