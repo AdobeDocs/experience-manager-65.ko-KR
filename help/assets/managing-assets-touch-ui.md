@@ -4,7 +4,7 @@ description: 디지털 에셋 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0f086ed9d1674149888d2921820eacce1aed9e24
+source-git-commit: 68692e7b82aecd81a21f3a970f3707f2ff39792a
 
 ---
 
@@ -627,7 +627,7 @@ CUG 파섹 폴더에 대한 로그인 페이지를 구성할 수도 있습니다
 
 ![select_quick_action](assets/select_quick_action.png)
 
-브라우저의 자산 사용자 인터페이스에서 폴더 또는 컬렉션을 검색할 때 오른쪽 위 모서리에서 모두 [!UICONTROL 선택] 옵션을 사용하여 모든 자산을 선택할 수 있습니다.
+브라우저의 자산 사용자 인터페이스에서 폴더 또는 컬렉션을 검색할 때 오른쪽 위 모서리에서 모두 선택 [!UICONTROL 옵션을 사용하여] 표시되거나 로드된 모든 자산을 선택할 수 있습니다. 아래로 스크롤하지 않으면 100개의 자산만 카드 보기에 로드되고 200개의 자산만 목록 보기로 로드됩니다. 모두 선택 옵션을 선택하면 이러한 많은 자산만 선택됩니다.
 
 자세한 내용은 리소스 [보기 및 선택을 참조하십시오](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
