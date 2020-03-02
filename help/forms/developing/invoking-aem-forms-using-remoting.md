@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -963,7 +963,7 @@ AEM Forms 복합 유형의 정규화된 데이터 유형이 별칭 태그에 할
 ActionScript 클래스의 필드는 AEM Forms 복합 유형에 속하는 필드와 일치합니다. 고객 ActionScript 클래스에 있는 6개의 필드는 `com.adobe.livecycle.sample.customer.Customer`속한 필드와 일치합니다.
 
 >[!NOTE]
-양식 복합 형식에 속한 필드 이름을 확인하는 좋은 방법은 웹 브라우저에서 서비스의 WSDL을 보는 것입니다. WSDL은 서비스의 복잡한 유형과 해당 데이터 멤버를 지정합니다. 다음 WSDL은 고객 서비스에 사용됩니다.https:// *사용자[]서버:[yourPort]/soap/services/CustomerService?wsdl*
+양식 복합 형식에 속한 필드 이름을 확인하는 좋은 방법은 웹 브라우저에서 서비스의 WSDL을 보는 것입니다. WSDL은 서비스의 복잡한 유형과 해당 데이터 멤버를 지정합니다. 다음 WSDL은 고객 서비스에 사용됩니다. `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 Customer ActionScript 클래스는 customer라는 패키지에 속합니다. 복잡한 AEM Forms 데이터 유형에 매핑되는 모든 ActionScript 클래스를 자체 패키지에 배치하는 것이 좋습니다. 다음 그림과 같이 Flex 프로젝트의 src 폴더에 폴더를 만들고 폴더에 ActionScript 파일을 배치합니다.
 
