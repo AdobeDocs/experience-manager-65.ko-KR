@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -66,7 +66,7 @@ Correspondence Management Solution은 안전하고 개인화된 인터랙티브�
 
 간단한 통신 관리 솔루션 설정에는 작성자 인스턴스와 게시 인스턴스가 동일한 컴퓨터 또는 다른 컴퓨터에 포함되어 있습니다
 
-### 양식 관리자 {#forms-manager}
+### forms manager {#forms-manager}
 
 양식 관리자는 양식 업데이트, 관리 및 폐기 프로세스를 간소화합니다.
 
@@ -154,7 +154,7 @@ log-bin=logname
 
 컨텐츠 서비스(더 이상 사용되지 않음)가 설치되면 컨텐츠 저장소 루트 디렉토리가 생성됩니다. 컨텐츠 저장소 루트 디렉토리의 위치는 AEM 양식 설치 프로세스 중에 결정됩니다.
 
-컨텐츠 저장소 루트 디렉토리의 기본 위치는 *[aem-forms root]*/lccs_data입니다.
+컨텐츠 저장소 루트 디렉토리의 기본 위치는 `[aem-forms root]/lccs_data`입니다.
 
 콘텐트 저장소 루트 디렉토리에 있는 다음 디렉토리를 백업합니다.
 
@@ -176,7 +176,7 @@ log-bin=logname
 
 **** 인덱스 루트 디렉토리:클러스터의 각 노드에 항상 동일한 경로와 디렉토리 이름을 갖는 디렉토리
 
-컨텐츠 저장소 루트 디렉토리의 기본 위치는 *[GDS 루트]*/lccs_data이며, 여기서 *[GDS 루트는]* GDS [위치에](files-back-recover.md#gds-location)설명된위치입니다. 콘텐트 저장소 루트 디렉토리에 있는 다음 디렉토리를 백업합니다.
+컨텐츠 저장소 루트 디렉토리의 기본 위치는 `[GDS root]/lccs_data`GDS 위치에 `[GDS root]` 설명된 [위치입니다](files-back-recover.md#gds-location). 콘텐트 저장소 루트 디렉토리에 있는 다음 디렉토리를 백업합니다.
 
 /audit.contentstore
 
@@ -188,7 +188,7 @@ log-bin=logname
 
 /backup-lucene-indexes 디렉토리가 없는 경우 /lucene-indexes 디렉토리를 백업합니다. 이 디렉토리는 컨텐츠 저장소 루트 디렉토리에도 있습니다. /backup-lucene-indexes 디렉토리가 있는 경우 오류를 발생시킬 수 있으므로 /lucene-indexes 디렉토리를 백업하지 마십시오.
 
-인덱스 루트 디렉토리의 기본 위치는 *[각 노드의 aem-forms 루트]*/lucene-indexes입니다.
+인덱스 루트 디렉토리의 기본 위치는 `[aem-forms root]/lucene-indexes` 각 노드에 있습니다.
 
 ## 고객이 설치한 글꼴 {#customer-installed-fonts}
 
@@ -196,6 +196,6 @@ AEM 양식 환경에 추가 글꼴을 설치한 경우 별도로 글꼴을 백�
 
 >[!NOTE]
 >
->기본적으로 AEM 양식과 함께 설치되는 Adobe 글꼴은 [aem-forms 루트]/글꼴 디렉토리에 있습니다.
+>기본적으로 AEM 양식과 함께 설치되는 Adobe 글꼴은 `[aem-forms root]/fonts` 디렉토리에 있습니다.
 
 호스트 컴퓨터에서 운영 체제를 다시 초기화하여 이전 운영 체제의 글꼴을 사용하려면 시스템 글꼴 디렉토리의 컨텐츠도 백업해야 합니다. (특정 지침은 운영 체제에 대한 설명서를 참조하십시오).
