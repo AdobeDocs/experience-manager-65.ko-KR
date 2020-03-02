@@ -4,7 +4,7 @@ description: 디지털 에셋 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: 0f086ed9d1674149888d2921820eacce1aed9e24
 
 ---
 
@@ -384,7 +384,7 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
 자산의 특정 사본에 고유한 몇 가지 특성은 전달되지 않습니다. 몇 가지 예는 다음과 같습니다.
 
-* 상대 경로, 자산 ID, 작성 날짜 및 시간, 버전 및 버전 내역. 이러한 속성 중 일부는 속성, `dam:relativePath``jcr:uuid`, `jcr:created`및 `cq:name`로 표시됩니다.
+* 자산 ID, 작성 날짜 및 시간, 버전 및 버전 내역. 이러한 속성 중 일부는 속성 `jcr:uuid``jcr:created`및 `cq:name`로 표시됩니다.
 
 * 작성 시간 및 참조된 경로는 각 자산과 각 변환에 대해 고유합니다.
 
