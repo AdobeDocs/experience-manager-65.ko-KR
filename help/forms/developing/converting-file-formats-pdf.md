@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -702,7 +702,7 @@ PDF 생성 서비스에 이전에 나열된 파일에 설명된 대화 상자가
 
 다음 문제에 유의하십시오.
 
-* Microsoft Spy\+\+는 앰퍼샌드(&amp;)를 사용하여 캡션의 핫키를 식별하여 캡션을 표시합니다. 예를 들어 Spy\+\+는 하나의 [인쇄] 대화 상자에 대한 캡션을 `Pri&nt`보여 줍니다. 이는 핫키가 *n임을 나타냅니다*. 스크립트 및 대화 상자 XML 파일의 캡션 제목에는 앰퍼샌드를 생략해야 합니다.
+* Microsoft Spy++는 앰퍼샌드(&amp;)를 사용하여 캡션의 핫키를 식별하여 캡션을 표시합니다. 예를 들어 Spy++는 하나의 [인쇄] 대화 상자에 대한 캡션을 `Pri&nt`보여 줍니다. 이는 핫키가 *n임을 나타냅니다*. 스크립트 및 대화 상자 XML 파일의 캡션 제목에는 앰퍼샌드를 생략해야 합니다.
 * 일부 캡션에는 줄바꿈이 포함되어 있습니다. pdf 생성 서비스는 줄바꿈을 식별할 수 없습니다. 캡션에 줄 바꿈이 포함되어 있는 경우 캡션을 충분히 포함하여 다른 메뉴 항목과 구분한 다음 누락된 부분에 정규 표현식을 사용합니다. 예제는 ( `^Long caption title$`)입니다.]. 캡션 [속성에서](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)정규 표현식 사용을 참조하십시오.
 * 예약된 XML 문자에는 문자 엔티티(이스케이프 시퀀스라고도 함)를 사용합니다. 예를 들어 앰퍼샌드에 `&` 대해, `<` 보다 `>` 작거나 큰 기호, 아포스트로피, 인용 부호 `&apos;` 등에 사용할 `&quot;` 수 있습니다.
 
@@ -713,7 +713,7 @@ PDF 생성 서비스에 이전에 나열된 파일에 설명된 대화 상자가
 대화 상자 및 스크립트 파일은 appmondata.jar 파일에 있습니다. 이러한 파일을 수정하거나 새 스크립트 또는 대화 상자를 추가하려면 먼저 이 JAR 파일의 패키지를 해제해야 합니다. 예를 들어 EditPlus 응용 프로그램에 대한 지원을 추가한다고 가정합니다. appmon.editplus.script.en_US.xml 및 appmon.editplus.script.addition.en_US.xml이라는 두 개의 XML 파일을 만듭니다. 다음 XML 스크립트를 아래 지정된 두 위치의 adobe-appmondata.jar 파일에 추가해야 합니다.
 
 * adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon adobe-livecycle-native-jboss-x86_win32.ear 파일은 의 내보내기 폴더에 `[AEM forms install directory]\configurationManager`있습니다. (AEM Forms가 다른 J2EE 응용 프로그램 서버에 배포된 경우 adobe-livecycle-native-jboss-x86_win32.ear 파일을 J2EE 응용 프로그램 서버에 해당하는 EAR 파일로 바꿉니다.)
-* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (adobe-appmondata.jar 파일은 adobe-generatepdf-dsc.jar 파일 내에 있음) adobe-generatepdf-dsc.jar 파일은 AEM *[양식 설치 디렉토리]*\deploy 폴더에 있습니다.
+* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (adobe-appmondata.jar 파일은 adobe-generatepdf-dsc.jar 파일 내에 있음) adobe-generatepdf-dsc.jar 파일은 `[AEM forms install directory]\deploy` 폴더에 있습니다.
 
 이러한 XML 파일을 adobe-appmondata.jar 파일에 추가한 후 GeneratePDF 구성 요소를 다시 배포해야 합니다. 대화 상자 및 스크립트 XML 파일을 adobe-appmondata.jar 파일에 추가하려면 다음 작업을 수행하십시오.
 
@@ -741,7 +741,7 @@ PDF 생성 서비스에 이전에 나열된 파일에 설명된 대화 상자가
 
 파일을 새 기본 애플리케이션으로 안내하려면 해당 애플리케이션에 대한 스크립트 XML 파일을 생성해야 합니다. PDF 생성 서비스가 이미 지원되는 기본 애플리케이션과 상호 작용하는 방식을 수정하려면 해당 애플리케이션에 대한 스크립트를 수정해야 합니다.
 
-스크립트에는 기본 애플리케이션의 창 요소를 탐색하고 해당 요소에 대한 특정 응답을 제공하는 지침이 포함되어 있습니다. 이 정보가 들어 있는 파일이 적용됩니다.*[appname]*.script.*[locale]*.xml. 예: appmon.notepad.script.en_US.xml
+스크립트에는 기본 애플리케이션의 창 요소를 탐색하고 해당 요소에 대한 특정 응답을 제공하는 지침이 포함되어 있습니다. 이 정보가 들어 있는 파일은 `appmon.[appname]` 입니다 `.script.[locale].xml`. 예: appmon.notepad.script.en_US.xml
 
 #### 스크립트가 실행해야 하는 단계 식별 {#identifying-steps-the-script-must-execute}
 
@@ -836,16 +836,16 @@ Microsoft Spy++를 사용하여 기본 응용 프로그램에서 창 요소 속�
 
 >[!NOTE]
 >
->이러한 컨텍스트에서 추가 용어는 응용 프로그램의 컨텐츠를 의미합니다.[applicationname].addition.[locale].xml 파일. 이러한 파일은 대화 상자 XML 파일에 대한 재정의 및 추가 사항을 지정합니다.
+>이 컨텍스트에서 추가 용어는 `appmon.[applicationname].addition.[locale].xml` 파일의 컨텐츠를 의미합니다. 이러한 파일은 대화 상자 XML 파일에 대한 재정의 및 추가 사항을 지정합니다.
 
 다음과 같은 용도로 기본 애플리케이션에 대한 추가 대화 상자 XML 파일을 수정할 수도 있습니다.
 
 * 다른 응답으로 응용 프로그램의 대화 상자 XML 파일을 재정의하려면
 * 대화 상자 XML 파일에서 해당 응용 프로그램에 대해 해결되지 않은 대화 상자에 응답을 추가하려면
 
-추가 dialogXML 파일을 식별하는 파일 이름이 적용됩니다.*[appname]*.addition.*[locale]*.xml. 예: appmon.excel.addition.en_US.xml
+추가 dialogXML 파일을 식별하는 파일 이름입니다 `appmon.[appname].addition.[locale].xml`. 예: appmon.excel.addition.en_US.xml
 
-추가 대화 상자 XML 파일의 이름은 appmon 형식을 사용해야 합니다.*[applicationname]*.addition.*[locale]*.xml에서 *응용 프로그램 이름은* XML 구성 파일 및 스크립트에서 사용되는 응용 프로그램 이름과 정확히 일치해야 합니다.
+추가 대화 상자 XML 파일의 이름은 형식을 사용해야 합니다. `appmon.[applicationname].addition.[locale].xml`여기서 *응용 프로그램 이름은* XML 구성 파일 및 스크립트에서 사용되는 응용 프로그램 이름과 정확히 일치해야 합니다.
 
 >[!NOTE]
 >
@@ -898,7 +898,7 @@ Microsoft Spy++를 사용하여 기본 응용 프로그램에서 창 요소 속�
 
 #### 기본 애플리케이션을 찾기 위한 환경 변수 만들기 {#creating-an-environment-variable-to-locate-the-native-application}
 
-기본 응용 프로그램 실행 파일의 위치를 지정하는 환경 변수를 만듭니다. 이 변수에는 application *[name]*_PATH 형식을 사용해야 합니다. 여기서 *application* 이름은 XML 구성 파일 및 스크립트에서 사용되는 응용 프로그램 이름과 정확히 일치해야 하며, 경로에는 두 따옴표로 실행 파일에 대한 경로가 포함되어 있습니다. 이러한 환경 변수의 예는 다음과 `Photoshop_PATH`같습니다.
+기본 응용 프로그램 실행 파일의 위치를 지정하는 환경 변수를 만듭니다. 이 변수에는 형식을 사용해야 `[applicationname]_PATH`합니다. 여기서 *application 이름은* XML 구성 파일과 스크립트에서 사용되는 응용 프로그램 이름과 정확히 일치해야 하며, 경로에는 실행 파일의 경로가 큰따옴표로 되어 있습니다. 이러한 환경 변수의 예는 다음과 `Photoshop_PATH`같습니다.
 
 새 환경 변수를 만든 후 PDF 생성 서비스가 배포된 서버를 다시 시작해야 합니다.
 
@@ -907,7 +907,7 @@ Microsoft Spy++를 사용하여 기본 응용 프로그램에서 창 요소 속�
 1. [제어판] **> [시스템]을 선택합니다**.
 1. 시스템 속성 대화 상자에서 고급 **탭을 클릭한** 다음 환경 변수를 **클릭합니다**.
 1. 환경 변수 대화 상자의 시스템 변수 아래에서 새로 만들기를 **클릭합니다**.
-1. 새 시스템 변수 대화 상자의 변수 **이름** 상자에 *[application_PATH 형식을 사용하는 이름을]*&#x200B;입력합니다.
+1. 새 시스템 변수 대화 상자의 변수 **이름** 상자에 형식을 사용하는 이름을 `[applicationname]_PATH`입력합니다.
 1. 변수 **값** 상자에 응용 프로그램 실행 파일의 전체 경로와 파일 이름을 입력한 다음 확인을 **클릭합니다**. 예: `c:\windows\Notepad.exe`
 1. 환경 변수 대화 상자에서 확인을 **클릭합니다**.
 
