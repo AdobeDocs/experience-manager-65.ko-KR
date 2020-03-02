@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -144,7 +144,7 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API 파섹 {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-다음 Java 코드 예제에서는 Loan.pdf *라는* PDF 문서를 일련의 JPEG 파일로 변환하여 C:\Adobe directory폴더에 저장합니다. 각 파일의 이름은 *[tempFileindex].jpg*&#x200B;로 지정됩니다. 여기서 첫 번째 이미지 파일의 이름은 *tempFile0.jpg*&#x200B;입니다. (PDF [문서를 이미지 포맷으로 변환을 참조하십시오](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
+다음 Java 코드 예제에서는 Loan.pdf *라는* PDF 문서를 일련의 JPEG 파일로 변환하여 C:\Adobe directory폴더에 저장합니다. 각 파일의 이름은 `tempFile[index].jpg`지정됩니다. 여기서 첫 번째 이미지 파일의 이름은 *tempFile0.jpg*. (PDF [문서를 이미지 포맷으로 변환을 참조하십시오](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```as3
  /*
