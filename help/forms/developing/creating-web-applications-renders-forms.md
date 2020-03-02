@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -383,7 +383,7 @@ WAR 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 배포�
 
 **WAR 파일을 J2EE 응용 프로그램 서버에 배포하려면**
 
-* 내보내기 경로에서 WAR 파일을 Forms 설치 \Adobe\Adobe Experience Manager Forms\jboss\server\all\deploy *[으로 복사합니다]*.
+* 내보내기 경로에서 로 WAR 파일을 `[Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\all\deploy`복사합니다.
 
 ### 웹 애플리케이션 테스트 {#testing-your-web-application}
 
