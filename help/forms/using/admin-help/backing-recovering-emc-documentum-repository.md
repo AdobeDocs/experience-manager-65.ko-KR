@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -189,22 +189,22 @@ EMC Documentum Content Server에서 필요한 백업 작업을 수행하려면 E
 
 1. 다음과 같이 구성 파일 암호를 설정합니다.
 
-   * 명령 프롬프트를 열고 NetWorker_root *[\Legato\nsr\bin디렉토리로]*&#x200B;변경합니다.
+   * 명령 프롬프트를 열고 을 `[NetWorker_root]\Legato\nsr\bin`변경합니다.
    * 다음 명령을 실행합니다. `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
 1. 데이터베이스를 백업하는 데 사용되는 실행 가능한 일괄 처리(.bat) 파일을 만듭니다. (NetWorker 설명서를 참조하십시오.) 설치에 따라 일괄 처리 파일의 세부 사항을 설정합니다.
 
    * 전체 데이터베이스 백업(nsrnmdbf.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*`-U`*[사용자 이름&#x200B;]*암호`-P`*[]*`-l full`*&lt;데이터베이스_이름>*
+      `NetWorker_database_module_root` &lt; `-s`*NetWorker_Server_Name>*`-U``[username]``-P`*[]*암호`-l full`*&lt;데이터베이스_이름>*
 
    * 증분 데이터베이스 백업(nsrnmdbi.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*`-U`*[사용자 이름&#x200B;]*암호`-P`*[]*`-l 1 -R`*&lt;데이터베이스_이름>*
+      `[NetWorker_database_module_root]` &lt; `-s`*NetWorker_Server_Name>*`-U``[username]``-P``[password]``-l 1 -R`*&lt;데이터베이스_이름>*
 
    * 데이터베이스 로그 백업(nsrnmddbbl.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*`-U`*[사용자 이름&#x200B;]*암호`-P`*[]*`-l incr -R`*&lt;데이터베이스_이름>*
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
       위치:
 
@@ -240,7 +240,7 @@ AEM 양식 데이터의 전체 백업을 완료한 후 다음 작업을 수행�
 >
 >명령 스크립트를 사용하려면 백업 및 복구를 [](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery)위해 EMC Document Content Server 준비에서 생성한 nsrnmd_win.cfg 파일의 전체 경로가 필요합니다.
 
-1. 명령 프롬프트를 열고 NetWorker_root *[\Legato\nsr\bin디렉토리로]*&#x200B;변경합니다.
+1. 명령 프롬프트를 열고 을 `[NetWorker_root]\Legato\nsr\bin`변경합니다.
 1. 다음 명령을 실행합니다.
 
    ```as3
@@ -266,4 +266,3 @@ AEM 양식 데이터를 복원하기 전에 다음 작업을 수행하십시오.
    ```as3
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
-
