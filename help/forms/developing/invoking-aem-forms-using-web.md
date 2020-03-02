@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -368,7 +368,7 @@ JAX-WS를 사용하여 Forms 서비스 WSDL을 Java 프록시 클래스로 변�
 1. JDK 1.6 이상을 설치합니다.
 
    * 클래스 경로에 JDK 저장소 디렉토리를 추가합니다.
-   * 클래스 경로에 JRE 저장소 디렉토리를 추가합니다. 이 저장소는 JDK_INSTALL_ [*LOCATION*]/jre 디렉토리에 있습니다.
+   * 클래스 경로에 JRE 저장소 디렉토리를 추가합니다. 이 저장소는 `[JDK_INSTALL_LOCATION]/jre` 디렉토리에 있습니다.
    * 환경 `JAVA_HOME` 변수를 JDK를 설치한 디렉토리로 설정합니다.
    JDK 1.6에는 build.xml 파일에 사용되는 wsimport 프로그램이 포함되어 있습니다. JDK 1.5는 해당 프로그램을 포함하지 않습니다.
 
@@ -558,7 +558,7 @@ Apache Axis WSDL2Java 도구를 사용하여 Forms 서비스를 Java 프록시 �
    * xalan.jar
    * xbean.jar
    * xercesImpl.jar
-   이러한 JAR 파일은 *[설치 디렉토리]*/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty 디렉토리에 있습니다.
+   이러한 JAR 파일은 `[install directory]/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty` 디렉토리에 있습니다.
 
 **참고 항목**
 
@@ -1487,7 +1487,7 @@ PDF 생성 `htmlToPDF` 작업과 같은 AEM Forms 서비스 작업을 비동기�
 
 JAX-WS를 사용하여 Java 프록시 파일을 만들 때 이 XML 파일을 사용합니다. (JAX- [WS를 사용하여 Java 프록시 클래스 만들기를 참조하십시오](#creating-java-proxy-classes-using-jax-ws).)
 
-&#x200B;- `b` 명령줄 옵션을 사용하여 JAX-WS 도구(wsimport.exe)를 실행할 때 이 XML 파일을 참조합니다. 바인딩 XML 파일의 `wsdlLocation` 요소를 업데이트하여 AEM Forms의 URL을 지정합니다.
+- `b` 명령줄 옵션을 사용하여 JAX-WS 도구(wsimport.exe)를 실행할 때 이 XML 파일을 참조합니다. 바인딩 XML 파일의 `wsdlLocation` 요소를 업데이트하여 AEM Forms의 URL을 지정합니다.
 
 비동기 호출이 작동하는지 확인하려면 끝점 URL 값을 수정하고 `async=true`지정합니다. 예를 들어 JAX-WS로 만든 Java 프록시 파일의 경우 에 대해 다음을 `BindingProvider.ENDPOINT_ADDRESS_PROPERTY`지정합니다.
 
