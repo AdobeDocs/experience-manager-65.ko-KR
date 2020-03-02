@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -191,7 +191,7 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 분리 {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 AssemblerResultPDF.pdf라는 PDF 문서를 *분해합니다*. DCX 문서의 이름은 *shell_disassemble.xml*&#x200B;입니다. 분해된 각 PDF 문서의 이름은 *[ResultPDFNumber].pdf*&#x200B;입니다. 즉, 첫 번째로 분해된 PDF 문서의 이름은 *ResultPDF1.pdf입니다.* 이 코드 예제에서 사용되는 *shell_disassemble.xml* DDX 문서에 대한 자세한 내용은 PDF [문서 프로그래밍 방식으로 디스어셈블링을 참조하십시오](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
+다음 Java 코드 예제에서는 AssemblerResultPDF.pdf라는 PDF 문서를 *분해합니다*. DCX 문서의 이름은 *shell_disassemble.xml*&#x200B;입니다. 분해된 각 PDF 문서의 이름은 `ResultPDF[Number].pdf`지정됩니다. 즉, 첫 번째로 분해된 PDF 문서의 이름은 *ResultPDF1.pdf입니다.* 이 코드 예제에서 사용되는 *shell_disassemble.xml* DDX 문서에 대한 자세한 내용은 PDF [문서 프로그래밍 방식으로 디스어셈블링을 참조하십시오](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 ```as3
  /*
