@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -32,7 +32,7 @@ QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API 파섹
 
 CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 CRX [QueryBuilder REST 인터페이스를](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)사용하는 방법을 알아봅니다.
 
-1. URL https://서버[]:[port]/lc/bin/querybuilder.json로 이동합니다.
+1. URL 찾아보기 `https://[server]:[port]/lc/bin/querybuilder.json`
 1. 프로세스 보고 스토리지 노드 구조 및 노드 속성을 기반으로 쿼리를 만듭니다.
 
    선택적 매개 변수를 지정하여 오프셋, 제한, 히트 및 속성을 지정할 수 있습니다. 정적 보고서의 인수를 하드코딩하고 동적 보고서의 경우 UI에서 매개 변수를 가져올 수 있습니다.
