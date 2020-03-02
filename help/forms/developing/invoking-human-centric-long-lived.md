@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -431,7 +431,7 @@ Java 서블릿은 다음 Java 코드를 사용하여 HTML 페이지에서 게시
 
 ### WAR 파일을 AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버에 배포 {#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms}
 
-WAR 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 배포합니다. WAR 파일을 J2EE 응용 프로그램 서버에 배포하려면 내보내기 경로에서 WAR 파일을 AEM Forms 설치 *[\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy으로 복사합니다]*.
+WAR 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 배포합니다. WAR 파일을 J2EE 응용 프로그램 서버에 배포하려면 내보내기 경로에서 WAR 파일을 `[AEM Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy`로 복사합니다.
 
 >[!NOTE]
 >
