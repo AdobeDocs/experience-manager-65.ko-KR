@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 44c0b6c5a8e7688b597e4b9de857d7f54ff23d49
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager를 개발 환경, 스테이징용 및 라이브 프로�
 
 새 아키텍처로 AEM은 마스터 자산을 담당하고 자산 처리 및 게시를 위해 Dynamic Media와 동기화합니다.
 
-1. 마스터 자산이 AEM에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media는 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 자산 처리 및 변환 생성을 처리합니다. (다이내믹 미디어 - Scene7 모드에서는 파일 크기가 2GB 이하인 자산만 업로드할 수 있습니다.)
+1. 마스터 자산이 AEM에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media는 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 자산 처리 및 변환 생성을 처리합니다. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
 1. 변환이 생성되면 AEM은 안전하게 원격 다이내믹 미디어 표현물에 액세스하고 미리 볼 수 있습니다(바이너리가 AEM 인스턴스로 다시 전송되지 않음).
 1. 컨텐츠를 게시 및 승인할 준비가 되면 Dynamic Media 서비스가 컨텐츠를 전달 서버로 푸시하고 CDN에서 컨텐츠를 캐시하도록 트리거합니다.
 
