@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fdcd9173b02347a7a9527b292635d63e8aa9ce19
+source-git-commit: 9f4a460c7f64d86e35e950e512ed5b6cda1cbf2a
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: fdcd9173b02347a7a9527b292635d63e8aa9ce19
 | 버전 | 6.5.3.0 |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2019년 12월 12일 |
-| 다운로드 URL | [패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0), [소프트웨어 배포](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aem.html#package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.3.zip) |
+| 다운로드 URL | [패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0) |
 
 ## Adobe Experience Manager 6.5.3.0에 포함된 제품 {#what-s-included-in-aem}
 
@@ -434,10 +434,9 @@ AEM 6.5.3.0에 포함된 컨텐츠 패키지 목록
 ## Helpful Resources {#helpful-resources}
 
 * [AEM 6.5 릴리스 노트](/help/release-notes/release-notes.md)
-* [AEM 제품 페이지](https://www.adobe.com/solutions/web-experience-management.html)
-* [AEM 개발자 지원](https://docs.adobe.com/content/ddc/en.html)
+* [AEM 제품 페이지](https://www.adobe.com/marketing/experience-manager.html)
 * [AEM 6.5 설명서](https://helpx.adobe.com/support/experience-manager/6-5.html)
-* Subscribe to [Adobe Priority Product Updates](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 ## 제한된 사이트 {#restricted-sites}
 
