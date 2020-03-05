@@ -3,7 +3,7 @@ title: 연결된 에셋을 사용하여 Adobe Experience Manager Sites 제작 �
 description: 다른 Experience Manager 사이트 배포에서 웹 페이지를 만들 때 원격 Adobe Experience Manager 자산 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
+source-git-commit: c4e6e74e091fe64b0a936b3f1bf95db7b6185956
 
 ---
 
@@ -30,7 +30,7 @@ AEM Sites는 웹 페이지를 구축하는 기능을 제공하며, AEM Assets은
    |  | 클라우드 서비스로서의 AEM 사이트 | AMS의 AEM 6.5 사이트 | AEM 6.5 사이트 온프레미스 |
    |---|---|---|---|
    | **클라우드 서비스로서의 AEM Assets** | 지원됨 | 지원됨 | 지원됨 |
-   | **AMS의 AEM 6.5 자산** | 지원되지 않음 | 지원됨 | 지원됨 |
+   | **AMS의 AEM 6.5 자산** | 지원됨 | 지원됨 | 지원됨 |
    | **AEM 6.5 온프레미스 자산** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
 ### 지원되는 파일 형식 {#mimetypes}
@@ -178,7 +178,7 @@ AEM 관리자는 이 통합을 만들 수 있습니다. 일단 만들어진 사�
 
 * 지원되는 기능만 원격 자산을 검색하고 로컬 페이지의 원격 자산을 드래그하여 컨텐츠를 작성하는 것입니다.
 * 5초 후 가져오기 작업 시간이 초과되었습니다. 작성자는 네트워크 문제가 있는 경우 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자는 Content Finder에서 Page Editor로 원격 자산을 드래그하여 다시 [!UICONTROL 시도할] 수 [!UICONTROL 있습니다].
-* AEM 구성 요소를 통해 지원되는 편집과 원본을 훼손하지 않는 간단한 편집은 가져온 자산에서 `Image` 수행할 수 있습니다. 자산은 읽기 전용입니다.
+* AEM 구성 요소를 통해 지원되는 편집과 원본을 훼손하지 않는 간단한 편집은 `Image` 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
 
 ## 문제 해결 {#troubleshoot}
 
