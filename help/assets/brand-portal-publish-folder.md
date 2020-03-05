@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9c73abc3291f2847c705cb649d2993fb186b0993
+source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
 
 ---
 
 
 # Publish folders to Brand Portal{#publish-folders-to-brand-portal}
 
-AEM(Adobe Experience Manager) 자산 관리자는 자산 및 폴더를 조직의 AEM Assets 브랜드 포털 인스턴스에 게시(또는 게시 워크플로우를 최신 날짜/시간으로 예약)할 수 있습니다. 그러나 먼저 AEM 자산을 브랜드 포털과 통합해야 합니다. 자세한 내용은 브랜드 포털과 [AEM 자산 통합 구성을 참조하십시오](/help/assets/brand-portal-configuring-integration.md).
+AEM(Adobe Experience Manager) 자산 관리자는 자산 및 폴더를 AEM Assets 브랜드 포털 인스턴스에 게시하거나 게시 워크플로우를 나중 날짜/시간으로 예약할 수 있습니다. 그러나 먼저 AEM 자산을 브랜드 포털과 통합해야 합니다. 자세한 내용은 브랜드 포털에서 [AEM 자산 구성을 참조하십시오](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 자산 또는 폴더를 게시한 후 브랜드 포털에서 사용자가 사용할 수 있습니다.
 
