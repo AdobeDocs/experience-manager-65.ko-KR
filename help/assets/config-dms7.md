@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44c0b6c5a8e7688b597e4b9de857d7f54ff23d49
+source-git-commit: 7029d6e7047680880ef89365826dd47af478c0b6
 
 ---
 
@@ -94,6 +94,16 @@ Dynamic Media Cloud 서비스를 구성하려면:
 
    * **[!UICONTROL 보안 미리 보기]** 서버 - 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM에서 안전하게 원격 다이내믹 미디어 표현물에 액세스하고 미리 볼 수 있습니다(바이너리가 AEM 인스턴스로 다시 전송되지 않음).
 회사 서버 또는 특수 서버를 사용할 특별한 계획이 없는 경우 이 설정을 지정된 대로 유지하는 것이 좋습니다.
+
+   * **[!UICONTROL 모든 컨텐츠]** 동기화 - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->기본적으로 선택됩니다. 다이내믹 미디어와 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.
+
+   * **[!UICONTROL Dynamic Media 동기화 모드]**
+      * **[!UICONTROL 기본적으로]** 활성화 - 제외되도록 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL 기본적으로]** 비활성화 - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시해야만 구성이 어떤 폴더에도 적용되지 않습니다.
+선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 속성을 **[!UICONTROL 클릭합니다]**. 세부 **[!UICONTROL 사항]** 탭의 Dynamic Media **[!UICONTROL 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택합니다. 완료되면 저장을 **[!UICONTROL 누릅니다]**. *기억하십시오.이 세 가지 옵션은 앞서 모든 컨텐츠&#x200B;**동기화를 선택한 경우 사용할**수 없습니다.*
+         * **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 도구 설명을 통해 상속된 표시에 대한 세부 상태.
+         * **[!UICONTROL 하위 폴더]** 활성화 - Dynamic Media에 동기화할 수 있도록 이 하위 트리에 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
+         * **[!UICONTROL 하위 폴더에]** 대해 사용 안 함 - 이 하위 트리의 모든 항목을 Dynamic Media로 동기화에서 제외합니다.
    >[!NOTE]
    >
    >DMS7에서는 버전 관리가 지원되지 않습니다. 또한, 지연된 활성화는 [ **[!UICONTROL 다이내믹 미디어 구성 편집]** ] 페이지의 [자산 게시]가 [활성화 시] **[!UICONTROL 로]**&#x200B;설정된 경우에만 적용되며, 처음 자산이 활성화될 때까지만 적용됩니다.
@@ -172,14 +182,14 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 >
 >AEM과의 일관성을 유지하려면 항상 이 설정을 선택하십시오.현재 **폴더에 동일한 기본 이미지 이름/확장명을 덮어씁니다.**
 
-* **[!UICONTROL 동일한 기본 자산 이름/확장자를]** 모든 폴더에 덮어쓰기 - 대체 이미지의 파일 이름 확장자가 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg를 대체해야 함). 그러나 교체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.원본 위치에서 더 이상 파일을 찾을 수 없습니다.
+* **[!UICONTROL 동일한 기본 에셋 이름/확장자를]** 모든 폴더에 덮어쓰기 - 대체 이미지의 파일 이름 확장자가 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg를 대체해야 함). 그러나 교체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다.원본 위치에서 더 이상 파일을 찾을 수 없습니다.
 * **[!UICONTROL 확장명에]** 관계없이 동일한 기본 자산 이름으로 모든 폴더에 덮어쓰기 - 이 옵션은 가장 포괄적인 대체 규칙입니다. 교체 이미지를 원본과 다른 폴더에 업로드하고 다른 파일 이름 확장자로 파일을 업로드한 다음 원본 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
 
 **[!UICONTROL 기본 색상 프로파일]** - [자세한 내용은 색상 관리](#configuring-color-management) 구성을 참조하십시오.
 
 >[!NOTE]
 >
->기본적으로, 자산의 세부 정보 보기에서 뷰어를 선택하면 변환 **[!UICONTROL 및]** 15개의 뷰어 사전 **[!UICONTROL 설정을 선택하면]** 15개의변환이 표시됩니다. 이 제한을 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가 또는](/help/assets/managing-image-presets.md#increasingthenumberofimagepresetsthatdisplay) 표시되는 [](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가를 참조하십시오.
+>기본적으로, 자산의 세부 정보 보기에서 뷰어를 선택하면 변환 **[!UICONTROL 및]** 15개의 뷰어 **[!UICONTROL 사전 설정을 선택하면]** 15개의변환이 표시됩니다. 이 제한을 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가 또는](/help/assets/managing-image-presets.md#increasingthenumberofimagepresetsthatdisplay) 표시되는 [](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가를 참조하십시오.
 
 
 #### 색상 관리 구성 {#configuring-color-management}
@@ -290,7 +300,7 @@ AEM 자산에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유�
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. 여전히 MIME 유형을 `image_vnd.dwg` 선택한 상태로 속성 **[!UICONTROL 탭의]** 활성화된 **** 행의 값 **[!UICONTROL 열에서 값을 두 번 클릭하여 값을 Value]** **** drop-down 목록을 엽니다.
+1. 여전히 mime 유형을 `image_vnd.dwg` 선택한 상태에서 속성 **[!UICONTROL 탭의]** **[!UICONTROL 활성화된]** 행의 값 **[!UICONTROL 열에서 값을 두 번 클릭하여 값을 Value]** **** drop-down 목록을 엽니다.
 1. 필드에 `false` 입력하거나 드롭다운 목록에서 **[!UICONTROL false]** 를 선택합니다.
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
@@ -303,7 +313,7 @@ AEM 자산에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유�
 
 먼저 자산을 집합으로 그룹화하는 방법에 대한 이름 지정 규칙을 정의합니다. 그런 다음 사전 설정 레서피에서 정의된 이름 지정 규칙과 일치하는 이미지를 사용하여 세트를 구성하는 방법을 정의하는 고유한 이름 및 자체 포함 지침 세트인 배치 집합 사전 설정을 만들 수 있습니다.
 
-파일을 업로드하면 Dynamic Media는 활성 사전 설정에서 정의된 이름 지정 규칙과 일치하는 모든 파일이 포함된 세트를 자동으로 만듭니다.
+파일을 업로드할 때 Dynamic Media는 활성 사전 설정에서 정의된 이름 지정 규칙과 일치하는 모든 파일이 포함된 세트를 자동으로 만듭니다.
 
 **기본 이름 지정 구성**
 
@@ -569,7 +579,7 @@ Scene7 업로드 연결 설정은 AEM 자산을 Dynamic Media Classic 서버에 
    <td><strong>비디오로 시작/</strong></td>
    <td>바로 사용 가능한 "필터 비디오"는 다음과 같습니다.
     <ul>
-     <li><br /> 원본 비디오 및 정적 축소판 표현물 복제에서 제외합니다. <br /> </li>
+     <li>원본 비디오 및 정적 축소판 표현물 복제에서 제외합니다.<br /> <br /> </li>
     </ul> </td>
   </tr>
  </tbody>
