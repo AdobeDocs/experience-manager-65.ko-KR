@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9c73abc3291f2847c705cb649d2993fb186b0993
+source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
 
 ---
 
 
 # Publish collections to Brand Portal {#publish-collections-to-brand-portal}
 
-AEM(Adobe Experience Manager) 자산 관리자는 컬렉션을 조직의 AEM Assets 브랜드 포털 인스턴스에 게시할 수 있습니다. 그러나 먼저 AEM 자산을 브랜드 포털과 통합해야 합니다. 자세한 내용은 브랜드 포털과 [AEM 자산 통합 구성을 참조하십시오](/help/assets/brand-portal-configuring-integration.md).
+AEM(Adobe Experience Manager) 자산 관리자는 컬렉션을 조직의 AEM Assets 브랜드 포털 인스턴스에 게시할 수 있습니다. 그러나 먼저 AEM 자산을 브랜드 포털과 통합해야 합니다. 자세한 내용은 브랜드 포털에서 [AEM 자산 구성을 참조하십시오](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 AEM Assets에서 원본 컬렉션을 이후에 수정하는 경우, 컬렉션을 다시 게시하기 전까지 변경 내용이 브랜드 포털에 반영되지 않습니다. 이러한 특성을 통해 브랜드 포털에서 진행 중인 변경 사항을 사용할 수 없습니다. 관리자가 게시한 승인된 변경 사항만 브랜드 포털에서 사용할 수 있습니다.
 
