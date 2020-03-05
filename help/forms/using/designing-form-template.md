@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -38,5 +38,9 @@ HTML5 양식은 PDF 양식의 비헤이비어와 상당히 비슷하지만 두 �
 HTML5 양식의 주요 목표는 터치 디바이스입니다. 따라서 AEM Forms Designer에 새로운 낙서 서명 컨트롤이 추가됩니다. 양식 서식 파일에서 자유 서명 컨트롤을 클릭하거나 드래그하여 놓고 구성할 수 있습니다. HTML5 변환에서 자유 필드로 렌더링되며 터치 장치에서 서명을 자유롭게 쓰는 데 사용할 수 있습니다. 데스크톱 컴퓨터에서는 마우스 컨트롤을 사용하여 자유 필드로 사용할 수 있습니다. 이 기능을 사용하는 방법에 대한 자세한 내용은 XFA 스크리블 [필드를 참조하십시오](../../forms/using/scribble-signature.md).
 
 ![4](assets/4.png)
+
+#### Rich text format {#rich-text-format}
+
+렌더링된 HTML5 양식의 텍스트 필드에 서식 옵션 목록을 추가하려면 Forms Designer에서 텍스트 필드에 대한 필드 형식을 정의할 수 있습니다. 디자인 뷰에서 텍스트 필드를 **[!UICONTROL 누릅니다]**. 필드 **[!UICONTROL 탭의]** 필드 **[!UICONTROL 형식]** 드롭다운 목록에서 **[!UICONTROL 서식]** 텍스트를 선택하여설정을 적용합니다. 텍스트 필드는 HTML5 양식으로 렌더링될 때 서식 옵션을 표시합니다.
 
 [지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
