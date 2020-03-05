@@ -133,7 +133,7 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 
 * Dynamic Media - scene7 런타임 모드에서 실행되는 AEM에서 한 폴더에서 다른 폴더로 여러 자산을 이동할 때 이동 단추를 사용할 수 없습니다(CQ-4280384).
 
-* MIME 유형이 MP4(CQ-4279704)가 아닌 경우 자산 세부 사항에서 왜곡된 비디오가 표시됩니다.
+* MIME 유형이 MP4 이외의 경우 자산 세부 사항에 왜곡된 비디오가 표시됩니다(CQ-4279704).
 
 * 비디오 프로필이 있는 폴더에서 새로 인제스트된 비디오는 인코딩 비율이 100%로 완료된 후에도 처리 상태로 유지됩니다(CQ-4279389).
 
@@ -147,7 +147,7 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 
 * PDF 파일은 색인이 되어 있지 않고 내용 내부는 검색 가능하지 않습니다(CQ-4278916).
 
-* &quot;사용자 선택기로 목록에 없는 그룹:[false]가 0과 같아야 함&quot;이 `principalName` 표시되고 `authorizableId` (CQ-4278177)가 닫힌 사용자 그룹을 추가할 때 관찰됩니다.
+* &quot;사용자 선택기로 목록에 없는 그룹:[false]가 0과 같음]이 다른 폐쇄된 사용자 그룹을 추가할 때 `principalName` 관찰됩니다. `authorizableId` (CQ-4278177)
 
 * 자산 UI 열 보기는 특정 테넌트의 dam 루트 경로에 관계없이 모든 경로를 표시합니다(CQ-4278175).
 
@@ -163,7 +163,7 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 
 * 자산에 대한 작업 세부 사항을 폴링하는 동안 AEM에 예외가 표시됩니다(CQ-4283569).
 
-* DAM 파섹
+* DAM의 XSS 파섹
 
 #### 사이트 {#sites}
 
@@ -175,7 +175,7 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 * 사용자가 왼쪽 레일 필드에 초점을 맞추고 키보드 단축키를 사용하여 컨텐츠를 붙여넣으면 왼쪽 레일 필드에서 복사한 컨텐츠 대신 페이지 편집기 클립보드의 컨텐츠를 붙여넣습니다(NPR-31172).
 * 사용자가 다중 필드에 파일 업로드 필드를 추가하면 이미지 경로가 다중 필드 노드(NPR-30882) 대신 구성 요소 노드에 저장됩니다.
 * ResponsiveGridExporter API는 com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter 인터페이스를 반환하지 않습니다. com.day.cq.wcm.foundation.model.impl 패키지는 개인 패키지로 선언됩니다(NPR-31398).
-* 일부 ExperienceFragments가 포함된 페이지가 비편집기 모드에서 열리면( `editor.html` 접두사와 접두사가 없는 작성자 `wcmmode=disabled`또는 게시자에서) HTTP 상태 오류 코드 500(NPR-30743)으로 요청이 끝납니다.
+* 일부 ExperienceFragments가 포함된 페이지를 편집기가 아닌 모드( `editor.html` 접두사와 접두사가 없는 작성자 `wcmmode=disabled`또는 게시자에서)로 열면 HTTP 상태 오류 코드 500(NPR-30743)으로 요청이 끝납니다.
 * 사용자는 암호를 변경하고 프로필 페이지에 액세스할 수 없습니다(NPR-31161).
 * 사용자 데이터가 있는 JavaScript 파일은 서버측에서 생성됩니다(NPR-30822).
 * AEM 제작 UI를 사용하면 외부 콘텐츠를 사용하여 피싱을 할 수 있습니다(NPR-29745).
@@ -230,7 +230,7 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 * 자산 소싱 기능에서 새 기여도 폴더를 만들 때 잘못된 아이콘이 표시됩니다(CQ-4282825).
 * 새 기여도 폴더를 만들 때 기여도 폴더(NEW 및 SHARED 파섹)에 하위 폴더 하나 또는 둘 다 나타나지 않습니다(CQ-4282424).
 * 사용자가 브랜드 포털 끝의 기여도 폴더에서 새 자산을 받은 후 AEM에서 브랜드 포털로 기여도 폴더를 다시 게시하려고 하면 시스템에서 예외가 발생합니다(CQ-4279740).
-* 기여도 폴더(중첩된 폴더) 내에 기여도 폴더를 만들면 복잡하지 않습니다(CQ-4278391).
+* 기여도 폴더(중첩된 폴더) 내에 기여도 폴더를 만들 수 없으므로 복잡성을 방지할 수 있습니다(CQ-4278391).
 * AEM 관리 콘솔에서 가져온 브랜드 포털 사용자 목록(.csv 파일)을 업로드할 때 예외가 발생합니다. .csv 파일의 이메일, FirstName 및 LastName 필드만 필수 필드입니다(CQ-4278390).
 
 #### 커뮤니티 {#communities}
