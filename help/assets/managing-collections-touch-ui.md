@@ -4,7 +4,7 @@ description: 컬렉션 만들기, 보기, 삭제, 편집 및 다운로드와 같
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
+source-git-commit: 27fdeaf50255379fd6e5bb45eaf593cec895cd04
 
 ---
 
@@ -62,7 +62,7 @@ source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
-1. 컬렉션에 **[!UICONTROL 추가]** 페이지의 도구 모음에서 컬렉션 **[!UICONTROL 만들기]** 아이콘을 탭/클릭합니다.
+1. 컬렉션에 **[!UICONTROL 추가 페이지에서]** 도구 모음에서 컬렉션 **[!UICONTROL 만들기]** 아이콘을 탭/클릭합니다.
 
    기존 컬렉션에 자산을 추가하려면 페이지에서 자산을 선택하고 추가를 탭/ **[!UICONTROL 클릭합니다]**. 기본적으로 가장 최근에 업데이트된 컬렉션이 선택됩니다.
 
@@ -119,7 +119,7 @@ Smart Collection은 검색 기준을 사용하여 자산을 동적으로 채웁�
 
 ## 스마트 컬렉션 편집 {#editing-a-smart-collection}
 
-스마트 컬렉션은 검색을 저장하여 작성되므로 [저장된 검색의](#editing-saved-searches)검색 매개 변수를 수정하여 콘텐츠를 변경할 수 있습니다.
+스마트 컬렉션은 검색을 저장하여 작성되므로 [저장된 검색의](#saved-searches)검색 매개 변수를 수정하여 콘텐츠를 변경할 수 있습니다.
 
 1. 자산 사용자 인터페이스의 도구 모음에서 검색 아이콘을 탭/클릭합니다.
 
@@ -209,7 +209,7 @@ Smart Collection은 검색 기준을 사용하여 자산을 동적으로 채웁�
 
    >[!NOTE]
    >
-   >저장된 검색을 [삭제하여 스마트 컬렉션을 삭제할](#deleting-saved-searches)수도 있습니다.
+   >저장된 검색을 [삭제하여 스마트 컬렉션을 삭제할](#saved-searches)수도 있습니다.
 
 ## 컬렉션 다운로드 {#downloading-a-collection}
 
