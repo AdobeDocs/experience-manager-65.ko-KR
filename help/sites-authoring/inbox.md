@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -80,7 +80,7 @@ AEM 알림 받은 편지함 열기
 
    두 보기 모두에 대해 [보기 설정](#inbox-view-settings)을 정의할 수 있습니다. 사용 가능한 옵션은 현재 보기에 따라 다릅니다.
 
-   ![wf-79](assets/wf-79.png)
+   ![wf-79](assets/inbox-list-view.png)
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ AEM 알림 받은 편지함 열기
 
 ![wf-91](assets/wf-91.png)
 
-### 받은 편지함 - 설정 보기 {#inbox-view-settings}
+### Inbox - Settings {#inbox-view-settings}
 
 두 가지 보기(목록 및 달력)에 대해 다음과 같이 설정을 정의할 수 있습니다.
 
@@ -126,9 +126,29 @@ AEM 알림 받은 편지함 열기
 
    **목록 보기**&#x200B;의 경우 정렬 메커니즘을 구성할 수 있습니다.
 
-   * **정렬 기준**
+   * **정렬 필드**
    * **정렬 순서**
-   ![wf-83](assets/wf-83.png)
+   ![wf-83](assets/inbox-settings.png)
+
+### 받은 편지함 - 관리 제어 {#inbox-admin-control}
+
+워크플로우 관리자 **** 그룹의 일부인 사용자는 목록에서 관리 제어 옵션을 볼 수 있습니다. 이 옵션을 사용하여 관리자는 다음을 수행할 수 있습니다.
+
+* 헤더에서 사용할 수 있는 텍스트 및 로고에 대한 사용자 지정을 정의합니다.
+
+* 헤더에서 사용할 수 있는 탐색 옵션의 표시를 제어하고 사용자가 워크플로우 작성 모드로 전환하도록 제한하거나 도움말 또는 기타 솔루션 링크로 이동할 수 있도록 제한합니다.
+
+![admin-control](assets/admin-control.png)
+
+* **브랜딩 사용자 지정**
+
+   * **머리글 텍스트 사용자 정의:** 헤더에 표시된 기존 Adobe Experience **Manager** 텍스트를 바꾸려면 이 필드의 텍스트를 지정합니다.
+
+   * **로고 사용자 정의:** DAM(Digital Asset Management)에서 이미지를 업로드하고 이 필드를 사용하여 헤더에 표시된 Adobe Experience Manager 로고를 교체하려면 해당 이미지를 참조하십시오.
+
+* **사용자 탐색**
+   * **탐색 옵션 숨기기:** 헤더에서 사용할 수 있는 탐색 옵션을 숨기려면 이 옵션을 선택합니다. 예를 들어 다른 솔루션으로 이동하는 옵션, 도움말 링크 및 Adobe Experience Manager 로고 또는 텍스트를 누를 때 표시되는 옵션이 표시됩니다.
+* **저장:** 이 옵션을 탭/클릭하여 설정을 저장합니다.
 
 ## 항목에 대한 작업 수행 {#taking-action-on-an-item}
 
