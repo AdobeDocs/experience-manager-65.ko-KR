@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7029d6e7047680880ef89365826dd47af478c0b6
+source-git-commit: a986eb3154fba51de20e31b87e9082631f057d27
 
 ---
 
@@ -68,11 +68,13 @@ AEM Dynamic Media를 6.3에서 6.4 또는 6.5(다운타임을 제로 배포하�
 
 자세한 [내용은 기능 팩 18912 설치를](/help/assets/bulk-ingest-migrate.md) 참조하십시오.
 
-## Configuring Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
+## 다이내믹 미디어 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
-**Dynamic Media Cloud 서비스를 구성하기 전에**&#x200B;다음을 수행하십시오.Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 Dynamic Media Classic에 [로그인하여](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 암호를 변경해야 합니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud 서비스가 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
+**Dynamic Media 구성 전**:Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 Dynamic Media Classic에 [로그인하여](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 암호를 변경해야 합니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud 서비스가 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
 
-Dynamic Media Cloud 서비스를 구성하려면:
+![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+
+**다이내믹 미디어 구성을 만들려면**
 
 1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭한 다음 클라우드 서비스 **[!UICONTROL > 다이내믹 미디어 구성을 탭합니다]**.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL 글로벌]** ( **[!UICONTROL 글로벌]**&#x200B;왼쪽에 있는 폴더 아이콘을 탭하거나 선택하지 않음)을 누른 다음 만들기를 **[!UICONTROL 탭합니다]**.
@@ -110,8 +112,6 @@ Dynamic Media Cloud 서비스를 구성하려면:
    >
    >
    >자산이 활성화되면 모든 업데이트가 즉시 S7 전달에 실시간으로 게시됩니다.
-
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 1. Dynamic Media 콘텐츠를 게시하기 전에 안전하게 미리 보려면 AEM 작성자 인스턴스를 &quot;화이트리스트&quot;하여 Dynamic Media에 연결해야 합니다.
