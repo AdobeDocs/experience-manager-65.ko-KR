@@ -12,7 +12,7 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 * [업그레이드 후 확인 및 문제 해결](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
 * [지속적인 업그레이드](/help/sites-deploying/sustainable-upgrades.md)
 * [레이지 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md)
-* [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring-in-aem65.md)
+* [AEM 6.5의 저장소 재구성](/help/sites-deploying/repository-restructuring.md)
 
 이러한 절차와 관련된 AEM 인스턴스를 쉽게 참조하기 위해 다음 용어가 이 문서 전체에서 사용됩니다.
 
