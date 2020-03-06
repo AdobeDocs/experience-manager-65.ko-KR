@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -88,7 +88,7 @@ AEM 6.0 이전의 코드 베이스에서 관리 세션 사용이 `SlingRepositor
 
 업그레이드 중에 쉽게 업그레이드하고 구성을 덮어쓰지 않도록 저장소를 6.4에서 재구성하여 구성에서 컨텐츠를 분리합니다.
 
-따라서 이전에 있었던 `/etc` 것처럼 더 이상 존재하지 않도록 많은 설정을 이동해야 합니다. AEM 6.4로 업데이트한 내용을 검토하고 수용해야 하는 전체 저장소 구조 조정 문제를 검토하려면 AEM [6.4의 리포지토리 재구성을 참조하십시오](/help/sites-deploying/repository-restructuring-in-aem65.md).
+따라서 이전에 있었던 `/etc` 것처럼 더 이상 존재하지 않도록 많은 설정을 이동해야 합니다. AEM 6.4로 업데이트한 내용을 검토하고 수용해야 하는 전체 저장소 구조 조정 문제를 검토하려면 AEM [6.4의 리포지토리 재구성을 참조하십시오](/help/sites-deploying/repository-restructuring.md).
 
 ## AEM 사용자 지정 {#aem-customizations}
 
@@ -150,7 +150,7 @@ ContextHub 구성은 업그레이드에 의해 영향을 받습니다. 기존 Co
 
 ### 워크플로우 사용자 정의 {#workflow-customizations}
 
-즉시 수정 작업을 업데이트하여 불필요한 기능을 추가하거나 제거하는 일반적인 방법입니다. 사용자 지정된 일반적인 워크플로우는 DAM 자산 업데이트 워크플로우입니다. 사용자 정의 구현에 필요한 모든 워크플로우는 업그레이드 중에 덮어쓰여질 수 있으므로 백업되고 버전 제어에 저장해야 합니다.
+즉시 수정 워크플로우를 업데이트하여 불필요한 기능을 추가하거나 제거하는 일반적인 방법입니다. 사용자 지정된 일반적인 워크플로우는 DAM 자산 업데이트 워크플로우입니다. 사용자 정의 구현에 필요한 모든 워크플로우는 업그레이드 중에 덮어쓰여질 수 있으므로 백업되고 버전 제어에 저장해야 합니다.
 
 ### 편집 가능한 템플릿 {#editable-templates}
 
