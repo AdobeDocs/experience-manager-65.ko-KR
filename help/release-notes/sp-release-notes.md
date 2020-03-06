@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
 | 버전 | 6.5.4.0 |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2020년 3월 05일 |
-| 다운로드 URL | [패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0) |
+| 다운로드 URL | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), [Software Distribution(Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
 
 ## Adobe Experience Manager 6.5.4.0에 포함된 제품 {#what-s-included-in-aem}
 
@@ -128,8 +128,6 @@ AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과
 
 * 동일한 폴더 내에서 컨텐츠를 이동할 때 페이지 이동 옵션이 비활성화됩니다(NPR-31840).
 
-* /_jcr_content/.html 또는 /jcr:content/.html로 끝나는 URL에 액세스하면 CPU 스파이크 및 AEM이 응답하지 않습니다(NPR-31837).
-
 * 편집 가능한 템플릿 구조 모드에서 레이아웃 컨테이너의 허용된 구성 요소 목록에 잘못된 결과가 표시됩니다. 디자인 대화 상자가 있는 구성 요소만 레이아웃 컨테이너에 표시됩니다(NPR-31816).
 
 * 페이지에 사용자에 대한 읽기 전용 권한이 있으면 속성 열기 옵션이 sites.html에서는 볼 수 있지만 editor.html에서는 볼 수 없습니다(NPR-31770).
@@ -179,8 +177,6 @@ AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과
 ### WCM 템플릿 편집기 {#wcm-template-editor-6540}
 
 * 편집 가능한 템플릿 구조 모드에서 레이아웃 컨테이너의 허용된 구성 요소 목록에 링크 단추 구성 요소가 표시되지 않습니다(CQ-4282099).
-
-* URL이 다음으로 `/_jcr_content/.html` 끝나거나 액세스될 때 CPU 스파이크 및 Experience Manager `/jcr:content/.html` 가 응답하지 않습니다(CQ-4280770).
 
 ### WCM Page Editor {#wcm-page-editor-6540}
 
