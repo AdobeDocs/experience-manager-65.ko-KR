@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -136,7 +136,7 @@ AEM 6.5의 기술 요구 사항을 검토하고 현재 하드웨어와 소프트
 
 #### 컨텐츠 재구성 고려 사항 {#content-restructuring-considerations}
 
-AEM에서는 보다 매끄러운 업그레이드를 수행하는 데 도움이 되는 저장소 구조에 대한 변경 사항을 도입했습니다. 변경 사항에는 Adobe 또는 고객이 컨텐츠를 소유하는지 여부에 따라 /etc 폴더의 컨텐츠를 /libs, /apps 및 /content를 비롯한 폴더로 이동하여 릴리스 동안 컨텐츠를 덮어쓸 가능성을 제한합니다. 리포지토리 재구성은 업그레이드를 계획하는 동안 AEM의 저장소 재구성에서 세부 사항을 검토하는 것이 좋지만, 6.5 업그레이드 시 코드 변경이 필요하지 [않도록](/help/sites-deploying/repository-restructuring-in-aem65.md) 하는 방식으로 수행되었습니다.
+AEM에서는 보다 매끄러운 업그레이드를 수행하는 데 도움이 되는 저장소 구조에 대한 변경 사항을 도입했습니다. 변경 사항에는 Adobe 또는 고객이 컨텐츠를 소유하는지 여부에 따라 /etc 폴더의 컨텐츠를 /libs, /apps 및 /content를 비롯한 폴더로 이동하여 릴리스 동안 컨텐츠를 덮어쓸 가능성을 제한합니다. 리포지토리 재구성은 업그레이드를 계획하는 동안 AEM의 저장소 재구성에서 세부 사항을 검토하는 것이 좋지만, 6.5 업그레이드 시 코드 변경이 필요하지 [않도록](/help/sites-deploying/repository-restructuring.md) 하는 방식으로 수행되었습니다.
 
 ### 업그레이드 복잡성 평가 {#assessing-upgrade-complexity}
 
@@ -148,7 +148,7 @@ AEM에서는 보다 매끄러운 업그레이드를 수행하는 데 도움이 �
 
 ![trei_crop](assets/trei_cropped.png)
 
-최근에 소개된 패턴 탐지기는 대부분의 경우 업그레이드 시 예상되는 사항에 대한 정확한 예측을 제공합니다. 그러나 호환되지 않는 변경 사항이 있는 복잡한 사용자 지정 및 배포의 경우 적소에 업그레이드 수행의 지침에 따라 개발 인스턴스를 AEM 6.5로 [업그레이드할 수 있습니다](/help/sites-deploying/in-place-upgrade.md). 완료되면 이 환경에서 고급 연기 테스트를 수행합니다. 이 연습의 목적은 테스트 케이스 재고를 철저히 완료하여 공식 결함 재고를 제공하는 것이 아니라 6.5 호환성을 위해 코드를 업그레이드하는 데 필요한 작업 양을 대략적으로 추정하기 위한 것입니다. 패턴 [감지 및 이전](/help/sites-deploying/pattern-detector.md) 섹션에서 결정한 아키텍처 변경 사항과 결합하면 업그레이드를 계획하기 위해 프로젝트 관리 팀에 가산 견적을 제공할 수 있습니다.
+최근에 소개된 패턴 탐지기는 대부분의 경우 업그레이드 시 예상되는 사항에 대한 정확한 예측을 제공합니다. 그러나 호환되지 않는 변경 사항이 있는 복잡한 사용자 지정 및 배포의 경우 적소에 업그레이드 수행의 지침에 따라 개발 인스턴스를 AEM 6.5로 [업그레이드할 수 있습니다](/help/sites-deploying/in-place-upgrade.md). 완료되면 이 환경에서 고급 연기 테스트를 수행합니다. 이 연습의 목적은 테스트 케이스 재고를 철저히 완료하여 공식 결함 재고를 제공하는 것이 아니라 6.5 호환성을 위해 코드를 업그레이드하는 데 필요한 작업 양을 대략적으로 추정하기 위한 것입니다. 패턴 [감지 및 이전](/help/sites-deploying/pattern-detector.md) 섹션에서 결정한 아키텍처 변경 사항과 결합하면 업그레이드를 계획하기 위해 프로젝트 관리 팀에 대략적인 견적을 제공할 수 있습니다.
 
 ### 업그레이드 및 롤백 Runbook 작성 {#building-the-upgrade-and-rollback-runbook}
 
