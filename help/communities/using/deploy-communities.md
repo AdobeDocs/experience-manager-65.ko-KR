@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -130,7 +130,7 @@ MySQL 커넥터를 별도로 구하고 설치해야 합니다.
 
 1. 모든 작성자 및 게시 인스턴스에 대해 3단계와 4단계를 반복합니다.
 
-번들 설치에 대한 자세한 내용은 웹 콘솔 [페이지에서 확인할 수](/help/sites-deploying/configuring-web-console.md#bundles) 있습니다.
+번들 설치에 대한 자세한 내용은 웹 콘솔 [페이지에서 확인할 수](/help/sites-deploying/web-console.md#bundles) 있습니다.
 
 #### 예:설치된 MySQL Connector 번들 {#example-installed-mysql-connector-bundle}
 
@@ -179,7 +179,7 @@ SRP 컬렉션(MSRP 또는 DSRP)에서 고급 다국어 검색(MLS)을 지원하�
 
 **로컬 AEM 인스턴스에 설치하는 방법**
 
-로컬 AEM `adobeaemcloud.com` 인스턴스에 표시되는 패키지를 설치하려면 먼저 패키지를 로컬 디스크에 다운로드해야 합니다.
+로컬 AEM `adobeaemcloud.com` 인스턴스에 표시되는 패키지를 설치하려면 먼저 로컬 디스크에 패키지를 다운로드해야 합니다.
 
 * select the **Assets** tab
 * 디스크에 **다운로드 선택**
