@@ -5,7 +5,7 @@ sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
 translation-type: tm+mt
-source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
+source-git-commit: 42a08dca17df382b875c5326a64b5584028741d8
 
 ---
 
@@ -62,7 +62,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
       + [자동화된 양식 변환 서비스 설치 및 구성](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Install AEM Forms on JEE {#jee-installation}
       + [JEE에서 지원되는 AEM 양식 플랫폼](using/aem-forms-jee-supported-platforms.md)
-      + [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
+      + [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
       + [AEM Forms Document Security 서버 설치 및 구성](using/installing-and-configuring-the-document-security-server.md)
       + [AEM Forms 단일 서버 설치 준비](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
       + [JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
@@ -111,7 +111,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
       + [Forms 포털](using/forms-portal-handling-user-data.md)
       + [서신 관리](using/correspondence-management-handling-user-data.md)
       + [Adobe Sign과 통합](/help/forms/using/integration-adobe-sign-handling-user-data.md)
-      + [Document Security](/help/forms/using/document-security-handling-user-data.md)
+      + [문서 보안](/help/forms/using/document-security-handling-user-data.md)
    + AEM Forms 환경 강화 {#hardening-aem-forms-environment}
       + [OSGi 환경에서 AEM 양식 강화 및 보안](using/hardening-securing-aem-forms-environment.md)
       + [JEE에서 AEM Forms에 대한 일반 보안 고려 사항](using/general-security-considerations.md)
@@ -244,7 +244,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [AEM 양식 작업 영역을 Microsoft Office SharePoint Server와 통합](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [할 일 목록 작업](using/todo-lists.md)
    + [AEM Forms 작업 영역에 대한 문제 해결 지침](using/troubleshooting-guidelines-html-workspace.md)
-+ AEM Forms 앱 {#aem-forms-app}
++ AEM Forms app {#aem-forms-app}
    + [AEM Forms 앱 소개](using/aem-forms-app.md)
    + [AEM Forms 앱용 환경 설정](using/setup-environment-mobile-workspace.md)
    + [Xcode 프로젝트 설정 및 iOS 앱 빌드](using/setup-xcode-project-build-installer.md)
@@ -302,6 +302,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [통신 관리 개요](using/cm-overview.md)
    + [레이아웃 디자인](using/layout-design-details.md)
    + [데이터 사전](using/data-dictionary.md)
+   + [문서 단편](using/document-fragments.md)
    + [편지 만들기](using/create-letter.md)
    + [통신 만들기](using/create-correspondence.md)
    + [표현식 빌더의 원격 함수](using/expression-builder.md)
@@ -350,7 +351,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [초안 및 제출 구성 요소에 대한 사용자 정의 저장소](using/adding-custom-storage-provider-forms.md)
 + 문서 서비스 {#use-document-services}
    + [AEM Document Services 개요](using/overview-aem-document-services.md)
-   + [양식 서비스](using/forms-service.md)
+   + [Forms 서비스](using/forms-service.md)
    + [출력 서비스](using/output-service.md)
    + [ConvertPDF Service](using/using-convertpdf-service.md)
    + [Barcoded Forms Service](using/using-barcoded-forms-service.md)
@@ -358,13 +359,13 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [HSM을 사용하여 문서에 디지털 서명 또는 인증](using/hsm-certify-esign-docs.md)
    + [프로그래밍 방식으로 AEM Document Services 사용](using/aem-document-services-programmatically.md)
    + [sendToPrinter API 사용](using/using-sendtoprinter-api.md)
-+ Document Security {#use-document-security}
++ 문서 보안 {#use-document-security}
    + [문서 보안 솔루션](using/document-security-offerings.md)
    + [AEM에서 문서 보안 보호된 PDF 문서를 검색할 수 있도록 설정](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
    + [Reader PDF(Portable Protection Library)를 사용하여 정책으로 보호된 PDF 문서 확장](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [AEM에서 문서 보안 보호 PDF 및 Microsoft Office 문서를 검색할 수 있도록 설정](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [다른 사용자를 대신하여 문서 보호](using/protect-document-on-behalf-of-another-user.md)
-+ Forms Designer {#use-forms-designer}
++ Forms 디자이너 {#use-forms-designer}
    + [디자이너 사용](http://www.adobe.com/go/learn_aemforms_designer_65)
    + [디자이너 빠른 시작 자습서](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
    + [디자이너 샘플](http://www.adobe.com/go/learn_aemforms_designer_samples_65)
