@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Deploying Guide
 translation-type: tm+mt
-source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
+source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
    + [명령줄 시작 및 중지](command-line-start-and-stop.md)
    + [AEM 6에서 노드 저장소 및 데이터 저장소 구성](data-store-config.md)
    + [개정 정리](revision-cleanup.md)
-   + [Oak 쿼리 및 색인](queries-and-indexing.md)
+   + [Oak 쿼리 및 인덱싱](queries-and-indexing.md)
    + [TarMK Cold Standby를 사용하여 AEM을 실행하는 방법](tarmk-cold-standby.md)
    + [AEM 6.5의 RDBMS 지원](rdbms-support-in-aem.md)
    + [Oak-run Jar를 통한 인덱싱](indexing-via-the-oak-run-jar.md)
@@ -56,6 +56,7 @@ source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
    + [성능 최적화](configuring-performance.md)
    + [자산 성과 가이드](assets-performance-sizing.md)
    + [구성 방법 문서](ht-deploy.md)
+   + [웹 콘솔 구성](configuring-web-console.md)
 + AEM 6.5로 업그레이드 {#upgrading}
    + [AEM 6.5로 업그레이드](upgrade.md)
    + [업그레이드 계획](upgrade-planning.md)
