@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
 
 ---
 
@@ -42,7 +42,7 @@ source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
 
 ## 지원되지 않는 로케일에 대한 현지화 지원 추가 {#add-localization-support-for-non-supported-locales}
 
-AEM Forms는 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질)(pt-br), 중국어(zh-tn), 중국어(zh-대만) 및 한국어(ko-kr)로 적응형 양식 컨텐츠의 현지화를 지원합니다.
+AEM Forms는 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질)(pt-BR), 중국어(zh-CN), 중국어(zh-대만) 및 한국어(ko-KR) 로케일 현지화를 지원합니다.
 
 적응형 양식 런타임 시 새 로케일에 대한 지원을 추가하려면:
 
@@ -93,12 +93,12 @@ LogMessages.js
 
 ### 사전에 대한 로케일 지원 추가 {#add-locale-support-for-the-dictionary-br}
 
-추가하고 `<locale>` 있는 항목이 `en``de`아닌 경우, 이 단계를 수행 `es`, `fr``it``pt-br`, 남은 단계, `zh-tn`남은 단계, `zh-tw``ja``ko-kr`남은 단계만 수행합니다.
+추가하고 `<locale>` 있는 항목이 `en``de`아닌 경우, 이 단계를 수행 `es`, `fr``it``pt-br`, 남은 단계, `zh-cn`남은 단계, `zh-tw``ja``ko-kr`남은 단계만 수행합니다.
 
 1. 아직 없는 경우 `nt:unstructured` `languages` `etc`아래에 노드를 만듭니다.
 
 1. 다중 값 문자열 속성을 노드에 추가합니다(아직 없는 경우). `languages`
-1. 기본 값, `<locale>` 로케일, `de`이미 있는 로케일, 사용 중인 로케일, 사용 중인 로케일, 사용 중인 로케일, 사용 중인 로케일, `es`사용 중인 로케일, `fr`사용 중인 로케일, 사용 중인 로케일, 사용 중인 로케일, 또는 사용 중인 로케일, 사용 중인 로케일, 사용, 사용 중인 로케일, 또는 `it``pt-br``zh-tn``zh-tw``ja``ko-kr`이미 없는 경우 이 항목을 추가합니다.
+1. 기본 값, `<locale>` 로케일, `de`이미 있는 로케일, 사용 중인 로케일, 사용 중인 로케일, 사용 중인 로케일, 사용 중인 로케일, `es`사용 중인 로케일, `fr`사용 중인 로케일, 사용 중인 로케일, 사용 중인 로케일, 또는 사용 중인 로케일, 사용 중인 로케일, 사용, 사용 중인 로케일, 또는 `it``pt-br``zh-cn``zh-tw``ja``ko-kr`이미 없는 경우 이 항목을 추가합니다.
 
 1. 의 `<locale>` 속성 값에 를 `languages` 추가합니다 `/etc/languages`.
 
