@@ -10,7 +10,7 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -81,11 +81,11 @@ source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 다음 단계를 수행하여 패널의 열 수를 정의합니다.
 
-1. 편집 **[!UICONTROL 모드에서]** 패널을 누르고 구성을 ![선택한 다음](assets/configure_icon.png), 탐색 **[!UICONTROL 옵션 없이]** 페이지에서 모든 것을 반응형으로 선택합니다.
+1. 편집 **[!UICONTROL 모드에서]** 패널을 ![누르고 구성을](assets/configure_icon.png)선택한 다음 **[!UICONTROL 패널 레이아웃]** 드롭다운 목록에서 탐색 **[!UICONTROL 옵션 없이 페이지의 모든 것을]** 선택합니다.
 
 1. 저장을 ![눌러](assets/save_icon.svg) 속성을 저장합니다.
 
-1. 레이아웃 **[!UICONTROL 모드에서]** 크기를 조정할 패널의 구성 요소 중 하나를 누르고 [상위 선택] ![을](assets/select_parent_icon.svg)선택한 다음 드롭다운 목록에서 첫 번째 옵션을 선택합니다(패널이 구성 요소의 바로 상위).
+1. 레이아웃 **[!UICONTROL 모드에서]** 패널의 구성 요소를 누르고 [상위 선택] ![을](assets/select_parent_icon.svg)선택한 다음 패널을 선택합니다.
 
 1. 여러 ![열을](assets/multi-column.svg) 누르고 드롭다운 목록에서 열 수를 선택합니다. 열 수는 1부터 12까지입니다. 패널은 여러 열 레이아웃으로 분할됩니다.
 
