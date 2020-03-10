@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c9e8e1f2ebb72efc2f54c13c3ddae525ec55349f
+source-git-commit: d0038181326037ab71f4df9b509d2f0827191c86
 
 ---
 
@@ -109,7 +109,7 @@ AEM 헤더에서 사용할 수 있는 옵션을 사용자 정의해야 한다고
 
 AEM 6.5 서비스 팩 4의 새로운 기능 외에도 다음과 같은 주요 내용이 포함되어 있습니다.
 
-* 이제 에서 사용할 수 있는 모든 항목 대신 선택적 컨텐츠 하위 트리를 Scene7에 동기화할 수 `content/dam`있습니다.
+* 이제 선택적 컨텐츠 하위 트리를 Dynamic Media *- Scene7 모드로* 동기화할 수 있습니다(사용 가능한 모든 항목 `content/dam`).
 
 * 이제 SOAP 웹 서비스와 양식 데이터 모델 통합을 통해 요소의 선택 그룹 또는 특성을 지원합니다.
 
