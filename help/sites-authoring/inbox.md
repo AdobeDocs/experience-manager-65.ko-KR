@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -75,7 +75,7 @@ AEM 알림 받은 편지함 열기
 
 1. 도구 모음에서 표시기를 클릭/탭합니다.
 
-1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로우, 프로젝트 및 작업의 항목을 보여줍니다.
+1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로우, 프로젝트 및 작업의 항목을 표시합니다.
 1. 기본 보기는 [목록 보기](#inbox-list-view)이지만 [달력 보기](#inbox-calendar-view)로 전환할 수도 있습니다. 이는 [보기 선택기](도구 모음, 오른쪽 상단)로 수행할 수 있습니다.
 
    두 보기 모두에 대해 [보기 설정](#inbox-view-settings)을 정의할 수 있습니다. 사용 가능한 옵션은 현재 보기에 따라 다릅니다.
@@ -84,7 +84,7 @@ AEM 알림 받은 편지함 열기
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) or [Search](/help/sites-authoring/search.md) to navigate to another location when you are finished.
+>받은 편지함은 콘솔로 작동하므로 완료되면 [전역 탐색](/help/sites-authoring/basic-handling.md#global-navigation) 또는 [검색](/help/sites-authoring/search.md)을 사용하여 다른 위치를 탐색합니다.
 
 ### 받은 편지함 - 목록 보기 {#inbox-list-view}
 
@@ -138,15 +138,15 @@ AEM 알림 받은 편지함 열기
 
 * 헤더에서 사용할 수 있는 탐색 링크의 표시 제어
 
-관리 제어 옵션은 관리자 또는 워크플로우 관리자 그룹의 구성원인 경우에만 보기 선택기 드롭다운 목록에 표시됩니다.
+관리 제어 옵션은 관리자 또는 워크플로 관리자 그룹의 구성원만 볼 수 있습니다.
 
 ![admin-control](assets/admin-control.png)
 
 * **브랜딩 사용자 지정**
 
-   * **머리글 텍스트 사용자 정의:** 헤더에 표시할 텍스트를 지정합니다.
+   * **머리글 텍스트 사용자 정의:** 헤더에 표시할 텍스트를 지정하여 기본 Adobe Experience Manager **텍스트를** 바꿉니다.
 
-   * **로고 사용자 정의:** DAM(디지털 자산 관리)에서 이미지를 업로드하고 해당 이미지를 참조하여 헤더에 표시합니다.
+   * **로고 사용자 정의:** 헤더에 표시할 이미지를 로고로 지정합니다. DAM(Digital Asset Management)에서 이미지를 업로드하고 필드에서 해당 이미지를 참조하십시오.
 
 * **사용자 탐색**
    * **탐색 옵션 숨기기:** 헤더에서 사용할 수 있는 탐색 옵션을 숨기려면 이 옵션을 선택합니다. 탐색 옵션에는 다른 솔루션에 대한 링크, 도움말 링크 및 Adobe Experience Manager 로고 또는 텍스트를 누를 때 사용할 수 있는 제작 옵션이 있습니다.
@@ -160,14 +160,14 @@ AEM 알림 받은 편지함 열기
 
    항목에 해당하는 작업은 다음과 같습니다.
 
-   * **완전한 작업. 예를 들면 작업 또는 워크플로우 항목.**
+   * **완료** 작업;예: 작업 또는 워크플로우 항목.
    * 항목을 **재지정**/**위임**&#x200B;합니다.
    * 항목을 **엽니다**. 항목 유형에 따라 다음 작업을 수행할 수 있습니다.
 
       * 항목 특성 표시
       * 추가 작업을 위해 적절한 대시보드 또는 마법사 열기
       * 관련 문서 열기
-   * 이전 단계로 **돌아갑니다**.
+   * 이전 단계로 **돌아갑니다.**
    * 워크플로우에 대한 페이로드를 확인합니다.
    * 항목에서 프로젝트를 생성합니다.
    >[!NOTE]
@@ -227,7 +227,7 @@ AEM 알림 받은 편지함 열기
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >**받은 편지함**&#x200B;의 **만들기** 옵션을 사용하여 생성된 작업만 프로젝트를 만드는 데 사용할 수 있습니다.
    >
    >워크플로우의 작업 항목은 프로젝트를 만드는 데 사용할 수 없습니다.
 
