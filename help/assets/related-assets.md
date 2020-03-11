@@ -3,7 +3,7 @@ title: 관련 자산
 description: 특정 공통 속성을 공유하는 자산을 연결하는 방법을 알아봅니다. 이 기능을 사용하여 자산 간의 소스/파생 관계를 만들 수도 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: fb0688afbadd1b27f1a3b3326f18c15d1c7811aa
+source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
 
 ---
 
@@ -14,7 +14,7 @@ AEM(Adobe Experience Manager) 자산을 사용하면 관련 자산 기능을 사
 
 이 기능을 사용하면 벤더 또는 에이전시와 저해상도 PDF 파일 또는 JPG 파일을 공유하고 요청 시 고해상도 INDD 파일을 사용할 수 있습니다.
 
->[!NOTE] 편집 권한이 있는 사용자는 자산을 관련시키거나 관련시키지 않을 수 있습니다.
+>[!NOTE] 편집 권한이 있는 사용자만 자산을 관련시키거나 관계를 해제할 수 있습니다.
 >
 
 ## Relate assets {#relating-assets}
