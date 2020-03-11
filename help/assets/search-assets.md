@@ -4,7 +4,7 @@ description: 필터 패널을 사용하여 AEM에서 필요한 자산을 찾는 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c491b77dac1bf25b9e348ed12d16ed7894e5493e
+source-git-commit: 1d09e02c451c01955b93bc3149fc663754435fdf
 
 ---
 
@@ -31,6 +31,8 @@ AEM은 다음 사용 사례를 지원하며 이 문서에서는 이러한 사용
 AEM 웹 인터페이스 상단의 Omnisearch 필드를 사용하여 자산을 검색합니다. AEM의 **[!UICONTROL 자산]** > **[!UICONTROL 파일로]** 이동하고 상단 막대에서 검색 아이콘을 클릭하고 검색 키워드를 입력한 다음 Return 키를 누릅니다. 또는 키워드 단축키 /(슬래시)를 사용하여 Omnisearch 필드를 엽니다. 위치: 자산을 미리 선택하여 검색을 DAM 자산으로 제한합니다. AEM에서는 검색 키워드를 입력하기 시작할 때 제안을 제공합니다.
 
 필터 **[!UICONTROL 패널을 사용하면]** 파일 유형, 파일 크기, 마지막 수정 날짜, 자산 상태, 인사이트 데이터 및 Adobe Stock 라이선스와 같은 다양한 옵션(예측)을 기반으로 검색 결과를 필터링하여 검색 범위를 좁힐 수 있습니다. 관리자는 필터 패널을 사용자 정의하고 검색 패싯을 사용하여 검색 조건자를 추가하거나 제거할 수 있습니다.
+
+필터 [!UICONTROL 패널의] 파일 유형 [!UICONTROL 필터에는] 혼합 상태 확인란이 있습니다. 즉, 중첩된 조건자(또는 형식)를 모두 선택하지 않으면 첫 번째 수준 확인란이 선택되지 않고 대신 실행됩니다.
 
 AEM 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 컬렉션 [검색을](/help/assets/managing-collections-touch-ui.md)참조하십시오.
 
