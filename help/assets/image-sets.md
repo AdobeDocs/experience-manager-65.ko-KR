@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 4f5f6cc88bc0408af117ad5760d4313c9f7d54b9
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 
 이미지 세트는 사용자가 축소판 이미지를 클릭하여 항목의 다른 보기를 볼 수 있는 통합된 보기 환경을 제공합니다. 이미지 집합을 사용하면 항목의 대체 보기를 표시할 수 있고 뷰어는 이미지를 자세히 검사하는 확대/축소 도구를 제공합니다.
 
-이미지 세트는 단어가 포함된 배너로 `IMAGESET`지정됩니다. 또한 이미지 세트가 게시되면 마지막 수정 **[!UICONTROL 날짜와 함께 배너에 World]** 아이콘으로 표시된 게시 날짜가 **[!UICONTROL 연필]** 아이콘으로표시됩니다.
+이미지 세트는 단어가 포함된 배너에 의해 `IMAGESET`지정됩니다. 또한 이미지 세트가 게시되면 마지막 수정 **[!UICONTROL 날짜와 함께 배너에 World]** 아이콘으로 표시된 게시 날짜가 **[!UICONTROL 연필]** 아이콘으로표시됩니다.
 
 ![chlimage_1-133](assets/chlimage_1-339.png)
 
@@ -38,7 +38,9 @@ source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 
 1. [마스터 이미지를 업로드하여 여러 뷰를 볼 수 있습니다.](#uploading-assets-in-image-sets)
 
-   먼저 이미지 세트에 대한 이미지를 업로드합니다. 사용자는 이미지 세트 뷰어에서 이미지를 확대할 수 있으므로 이미지를 선택할 때 확대/축소를 고려합니다. 이미지의 크기가 가장 큰 경우 2000픽셀 이상이어야 합니다. AEM Assets는 많은 이미지 파일 형식을 지원하지만 손실 없는 TIFF, PNG 및 EPS 이미지가 권장됩니다.
+   먼저 이미지 세트에 대한 이미지를 업로드합니다. 사용자는 이미지 세트 뷰어에서 이미지를 확대할 수 있으므로 이미지를 선택할 때 확대/축소를 고려합니다. 최적의 확대/축소 세부 사항을 위해 이미지가 가장 큰 차원에서 2000픽셀 이상인지 확인합니다. Dynamic Media는 각 이미지를 최대 25메가픽셀의 이미지로 렌더링할 수 있습니다. 예를 들어 5000 x 5000메가픽셀 이미지 또는 최대 25메가픽셀 크기의 기타 모든 크기 조합을 사용할 수 있습니다.
+
+   AEM Assets는 많은 이미지 파일 형식을 지원하지만 손실 없는 TIFF, PNG 및 EPS 이미지가 권장됩니다.
 
 1. [이미지 세트 만들기를 참조하십시오.](#creating-image-sets)
 
@@ -70,13 +72,13 @@ source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 
    이미지 세트 게시를 사용하면 URL 및 포함 문자열이 활성화됩니다. 또한 만든 사용자 정의 뷰어 사전 설정을 [게시해야](/help/assets/managing-viewer-presets.md) 합니다. 즉시 사용 가능한 뷰어 사전 설정이 이미 게시되었습니다.
 
-1. [웹 응용 프로그램에 URL을 연결하거나 비디오 또는 이미지](/help/assets/linking-urls-to-yourwebapplication.md) 뷰어를 [포함합니다](/help/assets/embed-code.md).
+1. [웹 응용 프로그램에 URL을 연결하거나 비디오](/help/assets/linking-urls-to-yourwebapplication.md) 또는 [이미지 뷰어를 포함합니다](/help/assets/embed-code.md).
 
    AEM Assets는 이미지 세트에 대한 URL 호출을 만들고 이미지 세트를 게시한 후 활성화합니다. 자산을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
 
    이미지 세트를 선택한 다음 왼쪽 레일 드롭다운 메뉴에서 뷰어를 **[!UICONTROL 선택합니다]**.
 
-   이미지 [집합을 웹 페이지에](/help/assets/linking-urls-to-yourwebapplication.md) 연결 및 비디오 또는 이미지 [뷰어 포함을 참조하십시오](/help/assets/embed-code.md).
+   이미지 [세트를 웹 페이지에](/help/assets/linking-urls-to-yourwebapplication.md) 연결 및 비디오 또는 이미지 [뷰어 포함을 참조하십시오](/help/assets/embed-code.md).
 
 이미지 세트를 편집하려면 이미지 세트 [편집을 참조하십시오.](#editing-image-sets) 또한 이미지 세트 속성을 보고 편집할 [수](/help/assets/managing-assets-touch-ui.md#editing-properties)있습니다.
 
@@ -113,7 +115,7 @@ source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 >[!NOTE]
 >
 >또한 [일괄 처리 집합 사전 설정을](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets)통해 자동으로 이미지 집합을 만들 수 있습니다.
->****중요:배치 세트는 IPS(이미지 프로덕션 시스템)에서 자산 수집의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
+>**중요:**배치 세트는 IPS(이미지 프로덕션 시스템)에서 자산 수집의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
 
 세트에 자산을 추가하면 자동으로 영숫자 순서로 추가됩니다. 자산을 추가한 후 수동으로 다시 정렬하거나 정렬할 수 있습니다.
 
@@ -123,7 +125,7 @@ source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 
 **이미지 세트를 만들려면**
 
-1. AEM 파섹   **** 이미지 세트를 만들 위치로 이동한 다음 만들기 > 이미지 **[!UICONTROL 세트를 눌러]** 이미지 세트 편집기 페이지를 엽니다.
+1. AEM 파섹 **** 이미지 세트를 만들 위치로 이동한 다음 만들기 > 이미지 **[!UICONTROL 세트를 눌러]** 이미지 세트 편집기 페이지를 엽니다.
 
    에셋이 포함된 폴더 내에서 세트를 만들 수도 있습니다.
 
