@@ -10,7 +10,7 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -81,7 +81,7 @@ source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 다음 단계를 수행하여 패널의 열 수를 정의합니다.
 
-1. 편집 **[!UICONTROL 모드에서]** 패널을 ![누르고 구성을](assets/configure_icon.png)선택한 다음 **[!UICONTROL 패널 레이아웃]** 드롭다운 목록에서 탐색 **[!UICONTROL 옵션 없이 페이지의 모든 것을]** 선택합니다.
+1. 편집 **[!UICONTROL 모드에서]** 패널을 ![누르고 구성을](assets/configure_icon.png)선택한 다음 **[!UICONTROL 패널 레이아웃 드롭다운 목록에서 탐색]** 옵션 없이 페이지의 모든 것을 **** 반응형 - 선택합니다.
 
 1. 저장을 ![눌러](assets/save_icon.svg) 속성을 저장합니다.
 
