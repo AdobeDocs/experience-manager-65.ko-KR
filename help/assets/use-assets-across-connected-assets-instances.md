@@ -3,7 +3,7 @@ title: 연결된 에셋을 사용하여 Adobe Experience Manager Sites 제작 �
 description: 다른 Experience Manager 사이트 배포에서 웹 페이지를 만들 때 원격 Adobe Experience Manager 자산 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04789dc662bc935277f392aefde4146f1a79f747
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -27,7 +27,7 @@ AEM Sites는 웹 페이지를 구축하는 기능을 제공하며, AEM Assets은
 * 사용자는 각 배포에서 적절한 사용자 그룹의 일부입니다.
 * Adobe Experience Manager 배포 유형의 경우 지원되는 기준 중 하나가 충족됩니다. AEM 6.5 자산은 AEM에서 클라우드 서비스로 작동합니다. 자세한 내용은 AEM에서 [클라우드 서비스로 연결된 자산 기능을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
-   |  | 클라우드 서비스로서의 AEM 사이트 | AMS의 AEM 6.5 사이트 | AEM 6.5 사이트 온프레미스 |
+   |  | 클라우드 서비스로서의 AEM Sites  | AMS의 AEM 6.5 사이트 | AEM 6.5 사이트 온프레미스 |
    |---|---|---|---|
    | **클라우드 서비스로서의 AEM Assets** | 지원됨 | 지원됨 | 지원됨 |
    | **AMS의 AEM 6.5 자산** | 지원됨 | 지원됨 | 지원됨 |
@@ -139,7 +139,7 @@ AEM 관리자는 이 통합을 만들 수 있습니다. 일단 만들어진 사�
 
    ![백그라운드에서 발생하는 자산의 비동기 반입에 대한 알림](assets/assets_async_transfer_fails.png)
 
-   *그림:백그라운드에서 발생하는 자산의 비동기 반입에 대한 알림*
+   *그림:백그라운드에서 발생하는 자산의 비동기 페치에 대한 알림*
 
 1. 페이지를 게시할 때 AEM은 페이지에 사용된 자산의 전체 목록을 표시합니다. 게시 시 원격 에셋을 성공적으로 가져오는지 확인합니다. 가져온 각 자산의 상태를 확인하려면 [비동기 작업](/help/assets/asynchronous-jobs.md) 사용자 인터페이스를 참조하십시오.
 
@@ -178,7 +178,7 @@ AEM 관리자는 이 통합을 만들 수 있습니다. 일단 만들어진 사�
 
 * 지원되는 기능만 원격 자산을 검색하고 로컬 페이지의 원격 자산을 드래그하여 컨텐츠를 작성하는 것입니다.
 * 5초 후 가져오기 작업 시간이 초과되었습니다. 작성자는 네트워크 문제가 있는 경우 자산을 가져오는 데 문제가 있을 수 있습니다. 작성자는 Content Finder에서 Page Editor로 원격 자산을 드래그하여 다시 [!UICONTROL 시도할] 수 [!UICONTROL 있습니다].
-* AEM 구성 요소를 통해 지원되는 편집과 원본을 훼손하지 않는 간단한 편집은 `Image` 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
+* AEM 구성 요소를 통해 지원되는 편집과 원본을 훼손하지 않는 간단한 편집은 가져온 자산에서 `Image` 수행할 수 있습니다. 자산은 읽기 전용입니다.
 
 ## 문제 해결 {#troubleshoot}
 
