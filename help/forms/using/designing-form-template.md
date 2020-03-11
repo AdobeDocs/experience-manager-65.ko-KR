@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -41,6 +41,6 @@ HTML5 양식의 주요 목표는 터치 디바이스입니다. 따라서 AEM For
 
 #### Rich text format {#rich-text-format}
 
-Forms Designer에서 텍스트 필드에 대한 서식 지정 텍스트 필드 형식을 정의하여 렌더링된 HTML5 양식의 필드에 서식 지정 옵션 목록을 추가합니다. 설정을 적용하려면 디자인 뷰에서 텍스트 필드를 **[!UICONTROL 누릅니다]**. 필드 **[!UICONTROL 탭의]** 필드 **[!UICONTROL 형식]** 드롭다운 목록에서 **[!UICONTROL 리치]** 텍스트를선택합니다. 텍스트 필드는 HTML5 양식으로 렌더링될 때 서식 옵션을 표시합니다.
+텍스트 필드를 리치 텍스트 필드로 변환할 수 있습니다. 텍스트 필드에 서식 옵션 목록이 추가됩니다. 변환하려면 양식 디자이너를 열고 디자인 뷰에서 텍스트 필드를 **[!UICONTROL 누릅니다]**. 필드 **[!UICONTROL 탭의]** 필드 **[!UICONTROL 형식]** 드롭다운 목록에서 **[!UICONTROL 리치]** 텍스트를선택합니다. 이제 XFA 양식이 HTML5 양식으로 렌더링되면 필드가 리치 텍스트 필드로 렌더링됩니다.
 
 [지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
