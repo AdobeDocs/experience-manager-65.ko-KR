@@ -3,7 +3,7 @@ title: AEM에서 자산 다운로드
 description: AEM에서 자산을 다운로드하고 다운로드 기능을 활성화하거나 비활성화하는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -20,7 +20,9 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 
 자산 유형 이미지 세트, 스핀 세트, 혼합 미디어 세트 및 캐러셀 세트는 다운로드할 수 없습니다.
 
-![AEM 자산에서 자산을 다운로드할 때 사용할 수 있는](assets/asset_download_dialog.png)옵션&#x200B;*그림:AEM 자산에서 자산을 다운로드할 때 사용할 수 있는 옵션*
+![AEM 자산에서 자산을 다운로드할 때 사용할 수 있는 옵션](assets/asset_download_dialog.png)
+
+*그림:AEM 자산에서 자산을 다운로드할 때 사용할 수 있는 옵션*
 
 내보내기/다운로드 옵션은 다음과 같습니다. 다이내믹 표현물은 다이내믹 미디어에 고유하며 선택한 자산 외에 즉각적으로 표현물을 생성할 수 있습니다. 이 옵션은 다이내믹 미디어가 활성화된 경우에만 사용할 수 있습니다.
 
