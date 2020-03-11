@@ -3,7 +3,7 @@ title: Camera Raw 지원
 description: Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -51,13 +51,13 @@ Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하려면 �
 
 이제 Camera Raw 파일을 AEM Assets로 가져올 수 있습니다. Camera RAW 패키지를 설치하고 필요한 작업 과정을 구성하면 **[!UICONTROL [이미지 조정]** ] 옵션이 사이드 창 목록에 나타납니다.
 
-![chlimage_1-135](assets/chlimage_1-337.png)
+![chlimage_1-131](assets/chlimage_1-337.png)
 
-*그림:사이드 창의 옵션.*
+*그림:사이드 창의 옵션*
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
 
-*그림:옵션을 사용하여 이미지를 간단하게 편집할 수 있습니다.*
+*그림:옵션을 사용하여 이미지를 간단하게 편집*
 
 편집 내용을 Camera Raw 이미지에 저장하면 이미지에 대한 새 변환이 `AdjustedPreview.jpg` 생성됩니다. Camera Raw를 제외한 다른 이미지 유형의 경우 변경 사항이 모든 변환에 반영됩니다.
 
