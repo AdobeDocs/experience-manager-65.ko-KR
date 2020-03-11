@@ -3,7 +3,7 @@ title: 디지털 자산 권한 관리
 description: AEM 파섹
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -89,7 +89,7 @@ source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
    >[!NOTE]
    >
-   >자산 생성자(특정 자산을 AEM 자산에 업로드하는 사람)만 자산이 만료되면 이메일을 받습니다. 전체 [AEM](/help/sites-administering/notification.md) 수준에서 이메일 알림 구성에 대한 자세한 내용은 이메일 알림 구성을 참조하십시오.
+   >자산 생성자(AEM 자산에 특정 자산을 업로드하는 사람)만 자산이 만료되면 이메일을 받습니다. 전체 [AEM](/help/sites-administering/notification.md) 수준에서 이메일 알림 구성에 대한 자세한 내용은 이메일 알림 구성을 참조하십시오.
 
 1. 이전 **[!UICONTROL 알림(초]** 단위) 필드에서 만료 관련 알림을 받을 때 자산이 만료되기 전 시간(초)을 지정합니다. 관리자 또는 자산 작성자는 자산이 만료되기 전에 지정된 시간 후에 만료될 것임을 알려주는 메시지를 받게 됩니다.
 
