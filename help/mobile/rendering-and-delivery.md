@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
@@ -157,7 +157,7 @@ JSON 렌더링을 사용자 정의하기 위해 내보내기 구성을 만들 �
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>다음 리소스 유형의 경우 기본 CaaS json 내보내기를 반환하지 마십시오.<br /><br /> 리소스를 다음으로 렌더링하여 고객 JSON 내보내기를 반환합니다.&lt;리소스&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>다음 리소스 유형의 경우 기본 CaaS json 내보내기를 반환하지 마십시오.<br /> 리소스를 다음으로 렌더링하여 고객 JSON 내보내기를 반환합니다.<br /> &lt;리소스&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -226,7 +226,7 @@ Content Services에는 두 가지 내보내기 구성이 포함되어 있습니�
 
 콘텐츠 서비스의 추가 항목에 대한 자세한 내용은 아래 리소스를 참조하십시오.
 
-* [모델 개발](/help/mobile/models-in-repository.md)
+* [모델 개발](/help/mobile/administer-mobile-apps.md)
 * [컨텐츠 서비스 작성](/help/mobile/develop-content-as-a-service.md)
 * [컨텐츠 서비스 관리](/help/mobile/developing-content-services.md)
 
