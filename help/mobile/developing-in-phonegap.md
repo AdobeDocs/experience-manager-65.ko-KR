@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
@@ -35,7 +35,7 @@ AEM은 PhoneGap과 통합되므로 AEM 페이지를 사용하여 앱을 쉽게 �
 * [AEM Mobile 콘텐츠 서비스:개요](/help/mobile/develop-content-as-a-service.md)
 
    * 컨텐츠 서비스 및 데이터 모델을 활성화하려면 컨텐츠 [서비스 관리를 참조하십시오](/help/mobile/developing-content-services.md)
-   * 모델 만들기에 대한 자세한 내용은 모델 [개발을 참조하십시오](/help/mobile/models-in-repository.md)
+   * 모델 만들기에 대한 자세한 내용은 모델 [개발을 참조하십시오](/help/mobile/administer-mobile-apps.md)
    * 렌더링 및 전달에 대한 자세한 내용은 컨텐츠 [서비스 렌더링 및 전달을 참조하십시오.](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
