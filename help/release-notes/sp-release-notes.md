@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ff006375b9ac958c7a5f9adf122990bf23808834
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -244,6 +244,8 @@ AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과
 
 * 디자이너:표에 병합된 셀이 있는 경우 출력 서비스를 사용하여 XDP 양식에서 변환된 출력 PDF 파일에 대해 액세서빌러티 테스트가 실패합니다(CQ-4285372).
 
+* Foundation JEE:클러스터에서 연결이 끊긴 서버가 캐시 문제로 인해 다시 연결되지 않습니다(NPR-32412).
+
 ## Install 6.5.4.0 {#install}
 
 **설치 요구 사항**
@@ -335,7 +337,7 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
 </dependency>
 ```
 
-## Deprecated features {#removed-deprecated-features}
+## 이제 사용되지 않는 기능 {#removed-deprecated-features}
 
 이 섹션에는 AEM 6.5.4.0에서 더 이상 사용되지 않는 것으로 표시된 기능 및 기능이 나열됩니다.향후 릴리스에서 제거될 예정인 기능은 사용할 대체 옵션과 함께 먼저 더 이상 사용되지 않도록 설정됩니다.
 
