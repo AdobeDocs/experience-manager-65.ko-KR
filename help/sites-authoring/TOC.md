@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
 
 ---
 
@@ -14,6 +14,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 + [작성 사용 안내서 개요](home.md)
 + AEM 작성을 위한 필수 작업, 도구 및 개념 {#essentials}
    + [작성자를 위한 첫 번째 단계](first-steps.md)
+   + [페이지 작성](page-authoring.md)
    + [페이지 작성에 대한 빠른 안내](qg-page-authoring.md)
    + [작성 개념](author.md)
    + [기본 처리](basic-handling.md)
@@ -27,7 +28,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [페이지 편집 시 주석](annotations.md)
    + [페이지 생성 및 구성](managing-pages.md)
    + [페이지 컨텐츠 편집](editing-content.md)
-   + [리치 텍스트 편집기를 사용하여 컨텐츠 작성](rich-text-editor.md)
+   + [리치 텍스트 편집기를 사용한 컨텐츠 작성](rich-text-editor.md)
    + [페이지 속성 편집](editing-page-properties.md)
    + [페이지 게시](publishing-pages.md)
    + [컨텐츠 조각으로 페이지 작성](content-fragments.md)
@@ -60,7 +61,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [크리에이티브 프로젝트 및 PIM 통합](managing-product-information.md)
    + [프로젝트 워크플로우 작업](projects-with-workflows.md)
 + 론치 {#launches}
-   + [Launches](launches.md)
+   + [론치](launches.md)
    + [론치 만들기](launches-creating.md)
    + [론치 편집](launches-editing.md)
    + [론치 홍보](launches-promoting.md)
