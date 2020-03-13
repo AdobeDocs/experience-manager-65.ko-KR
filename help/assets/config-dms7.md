@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a986eb3154fba51de20e31b87e9082631f057d27
+source-git-commit: 9871cbf48a01298ab2b6fb1b79bb290714b84ab1
 
 ---
 
@@ -100,7 +100,7 @@ AEM Dynamic Media를 6.3에서 6.4 또는 6.5(다운타임을 제로 배포하�
    * **[!UICONTROL 모든 컨텐츠]** 동기화 - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->기본적으로 선택됩니다. 다이내믹 미디어와 동기화에서 자산을 선택적으로 포함하거나 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.
 
    * **[!UICONTROL Dynamic Media 동기화 모드]**
-      * **[!UICONTROL 기본적으로]** 활성화 - 제외되도록 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL 기본적으로]** 사용 - 제외용으로 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 기본적으로]** 비활성화 - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시해야만 구성이 어떤 폴더에도 적용되지 않습니다.
 선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 속성을 **[!UICONTROL 클릭합니다]**. 세부 **[!UICONTROL 사항]** 탭의 Dynamic Media **[!UICONTROL 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택합니다. 완료되면 저장을 **[!UICONTROL 누릅니다]**. *기억하십시오.이 세 가지 옵션은 앞서 모든 컨텐츠&#x200B;**동기화를 선택한 경우 사용할**수 없습니다.*
          * **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 도구 설명을 통해 상속된 표시에 대한 세부 상태.
@@ -189,7 +189,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 
 >[!NOTE]
 >
->기본적으로, 자산의 세부 정보 보기에서 뷰어를 선택하면 변환 **[!UICONTROL 및]** 15개의 뷰어 **[!UICONTROL 사전 설정을 선택하면]** 15개의변환이 표시됩니다. 이 제한을 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가 또는](/help/assets/managing-image-presets.md#increasingthenumberofimagepresetsthatdisplay) 표시되는 [](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가를 참조하십시오.
+>기본적으로, 자산의 세부 정보 보기에서 뷰어를 선택하면 변환 **[!UICONTROL 및]** 15개의 뷰어 **[!UICONTROL 사전]** 설정을 선택하면 15개의 변환이 표시됩니다. 이 제한을 늘릴 수 있습니다. 표시되는 [이미지 사전 설정 수 증가 또는](/help/assets/managing-image-presets.md#increasingthenumberofimagepresetsthatdisplay) 표시되는 [](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가를 참조하십시오.
 
 
 #### 색상 관리 구성 {#configuring-color-management}
