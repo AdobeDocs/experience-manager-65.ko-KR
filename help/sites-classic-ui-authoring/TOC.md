@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Classic UI Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
 
 ---
 
@@ -50,7 +50,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [워크플로우 작업](classic-workflows.md)
    + [페이지에 워크플로우 적용](classic-workflows-applying.md)
 + 론치 {#launches}
-   + [Launches](classic-launches.md)
+   + [론치](classic-launches.md)
    + [론치 만들기](classic-launches-creating.md)
    + [론치 편집](classic-launches-editing.md)
    + [론치 홍보](classic-launches-promoting.md)
@@ -74,6 +74,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Adobe Campaign을 사용한 작업](classic-personalization-ac.md)
    + [Adobe Campaign 구성 요소](classic-personalization-ac-components.md)
    + [Adobe Campaign 타깃팅](classic-personalization-ac-target.md)
+   + [AEM에서 Adobe Campaign 양식 작성](classic-personalization-ac-forms.md)
 + 클래식 UI에서 자산 작성 {#assets}
    + [자산 사용](classicui-assets.md)
    + [Dynamic Media 자산 제공](dynamic-media-assets-delivering.md)
