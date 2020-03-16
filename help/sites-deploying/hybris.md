@@ -12,7 +12,7 @@ discoiquuid: c5dcc90a-05d2-4701-a625-2b655ad0b458
 docset: aem65
 pagetitle: Deploying eCommerce with hybris
 translation-type: tm+mt
-source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
+source-git-commit: 9e39868768d2fc70f587b18d36042e742d5fae45
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
 >
 >`Geometrixx Outdoors Site English (US)`
 
-e커머스 패키지를 [](#packages-needed-for-ecommerce-with-hybris) 배포하면 e커머스 프레임워크의 모든 기능과 하이브리스 구현(데모 카탈로그 포함)에 제공된 e커머스 기능의 참조 구현 기능을 제공합니다
+필요한 전자 상거래 패키지를 [](#packages-needed-for-ecommerce-with-hybris) 배포하면 eCommerce 프레임워크의 모든 기능과 하이브리스 구현(데모 카탈로그 포함)에 제공된 eCommerce 기능의 참조 구현 기능을 제공합니다
 
 Geometrixx Outdoors 사이트의 영어(미국) 분기( `/content/geometrixx-outdoors/en_US`)에서 사용할 수 있습니다.
 
@@ -48,7 +48,7 @@ Geometrixx Outdoors 사이트의 영어(미국) 분기( `/content/geometrixx-out
 
 ### 기술 요구 사항 - hybris Server {#technical-requirements-hybris-server}
 
-eCommerce Integration Framework의 hybris 확장이 Hybris 5(기본값)를 지원하도록 업데이트되었으며 Hybris 4와 이전 버전과의 호환성을 유지하고 [있습니다](/help/sites-developing/hybris.md#developing-for-hybris).
+eCommerce Integration Framework의 hybris 확장은 Hybris 5를 기본적으로 지원하면서 Hybris 4와의 역방향 호환성을 유지하도록 업데이트되었습니다 <!--[Hybris 4](/help/sites-developing/hybris.md#developing-for-hybris). -->
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ eCommerce 기능을 설치하려면 다음 작업이 필요합니다.
 
 >[!CAUTION]
 >
->5.5.1 이전의 Hybris 버전은 지원되지 않습니다.
+>5.5.1 이전 Hybris 버전은 지원되지 않습니다.
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ eCommerce 기능을 설치하려면 다음 작업이 필요합니다.
    >`ant clean all`
    >
    >
-   >필요할 `Return` 때 키를 누릅니다.
+   >필요한 경우 `Return` 키를 누릅니다.
 
 1. 다음 파일을 추출된 hybris 배포의 루트 폴더로 다운로드합니다.
 
