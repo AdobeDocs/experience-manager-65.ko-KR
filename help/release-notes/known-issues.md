@@ -7,12 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 0ae42d9f81df89a7e1c08fac5cce5240f14e8c60
 
 ---
 
 
-# 알려진 문제{#known-issues}
+# 알려진 문제 {#known-issues}
 
 이 페이지는 4월 4일에 출시된 Adobe Experience Manager 6.5의 알려진 문제 목록을 보관합니다.
 
@@ -32,7 +32,7 @@ CRX-Quickstart 및 해당 컨텐츠가 삭제되는 문제가 보고됩니다.
 
 ## 자산 {#assets}
 
-* **** 검색:검색 문자열에 선행 공백이 포함된 경우 검색에 결과가 반환되지 않습니다([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)).
+* **검색:** 검색 문자열에 선행 공백이 포함된 경우 검색에 결과가 반환되지 않습니다([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)).
 * **폴더 메타데이터 스키마**: 선택 버튼을 추가한 후에 ID 및 값 필드가 예상대로 렌더링되지 않고 삭제 기능이 작동하지 않습니다. (CQ-4261144)
 * 자산의 이름을 변경할 때 자산 이름에서 공백을 사용할 수 없습니다. (CQ-4266403)
 
