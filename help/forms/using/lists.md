@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
@@ -60,7 +60,7 @@ Correspondence Management Solution은 다이내믹 데이터 항목(변수 데�
 
    [ ![도구 모음](assets/advancedediting.png)
 
-   * **링크**:텍스트에 하이퍼텍스트 링크를 삽입합니다. 링크를 **[!UICONTROL 탭하고]** URL **[!UICONTROL 필드에]** 링크를 **[!UICONTROL 지정하고 대체 텍스트]** 필드에서 기본 개체 이름을 ![제거하고](assets/save_icon.svg)저장을탭합니다.
+   * **링크**:텍스트에 [하이퍼텍스트](#insert-hyperlink) 링크를 삽입합니다.
    * **반복**:데이터 사전에서 구분 기호를 사용하여 수집 요소를 반복하면 인쇄됩니다.
    * **조건**:을 눌러 조건을 삽입합니다. 조건을 기반으로 텍스트를 삽입합니다. 조건이 true이면 텍스트가 문자로 표시되지만 그렇지 않으면 표시되지 않습니다.
    * **설명 추가**:텍스트 조각에 주석 추가 이것은 작성자가 볼 수 있는 메타데이터이지만 작성된 문자의 일부분은 볼 수 없습니다.
@@ -131,6 +131,18 @@ Correspondence Management Solution은 다이내믹 데이터 항목(변수 데�
 
 1. 인라인 조건을 사용하고 반복하여 문자를 문맥에 맞게 잘 구성할 수 있습니다. 인라인 조건 및 반복에 대한 자세한 내용은 인라인 [조건 및 반복을 참조하십시오](/help/forms/using/cm-inline-condition.md).
 1. 저장을 **누릅니다**.
+
+#### 텍스트에 하이퍼링크 삽입 {#insert-hyperlink}
+
+텍스트 자산에 하이퍼링크를 만들려면 다음 단계를 수행하십시오.
+
+1. 텍스트 편집기에서 텍스트 또는 데이터 모델 개체를 선택합니다.
+
+2. 링크를 **[!UICONTROL 누릅니다]**. 대체 **[!UICONTROL 텍스트]** 필드를 눌러 기존 데이터 모델 개체 이름 또는 텍스트를 제거합니다.
+
+3. URL을 지정하고 저장을 ![누릅니다](assets/save_icon.svg).
+
+![텍스트 자산에 하이퍼링크 만들기](assets/text-create-hyperlink.png)
 
 #### 텍스트 검색 및 바꾸기 {#searching-and-replacing-text}
 
