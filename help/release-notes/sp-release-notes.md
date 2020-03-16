@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82ded190d4fee4e4ef9849dc34372774c529844f
+source-git-commit: cc72581f0de6f47cd1d7e207f228e64ba7c9e842
 
 ---
 
@@ -38,7 +38,7 @@ AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과
 
 * HTML5 [양식의 리치](../forms/using/designing-form-template.md) 텍스트 지원.
 
-* 자산의 액세서빌러티 개선.
+* [Adobe Experience Manager Assets의 접근성 향상](new-features-latest-service-pack.md#accessibility-enhancements) .
 
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.10.8로 업데이트되었습니다.
 
