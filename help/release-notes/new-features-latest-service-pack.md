@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: edbe99460bb880ae118f7e826592bc7ad11d54c5
+source-git-commit: ed756d785864131c2e031aec4331388bc057576b
 
 ---
 
@@ -39,15 +39,17 @@ AEM(Adobe Experience Manager) 6.5는 올해 분기별 서비스 팩을 통해 �
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
-* 이제 혼합 상태 확인란에 &quot;혼합&quot; 값과 함께 아리아 체크 속성이 추가되어 화면 판독기에 표시됩니다.
+Experience Manager Assets에는 다음과 같은 액세서빌러티 개선 사항이 포함되어 있습니다.
 
-* 이제 확대/축소된 이미지 주위로 이동하기 위한 패스 기반의 제스처와는 별도로 키보드 기반의 컨트롤이 지원됩니다.
+* 키보드의 화살표 키를 사용하여 확대된 이미지 내에서 영역을 이동하고 이동할 수 있습니다. 자세한 내용은 키보드 키만 [사용하여 에셋](../assets/managing-assets-touch-ui.md#previewing-assets)미리 보기를 참조하십시오.
 
-* 날짜 형식 제한이 키보드 전용 사용자가 날짜를 수동으로 입력할 수 있도록 필드 레이블에 제공되었습니다.
+* [필터] 패널의 혼합 상태 확인란(중첩된 모든 항목을 선택하지 않으면 첫 번째 수준의 확인란이 선택되지 않고 하나씩 제공)은 화면 판독기에서 읽을 수 있습니다.
 
-* Alt 속성이 장식 아이콘에 추가되고 role=img 속성이 제거되었으므로 이러한 아이콘과 이미지가 화면 판독기 사용자에게 노출되지 않습니다.
+* 날짜 및 시간 형식 제약 조건은 사용자가 키보드를 사용하여 날짜를 올바른 형식으로 입력할 수 있도록 날짜 필드의 필드 레이블에 제공됩니다.
 
-* Alt 속성은 화면 판독기 사용자가 탭 위에 있을 때 표시할 아이콘을 닫기 위해 추가되었습니다.
+   예, `On Time (MM-DD-YYYY HH:mm)`. 여기서 MM은 두 자리 형식의 월이고, YYYY는 연도이고, DD는 두 자리 형식의 날, HH는 24시간 군 형식으로 시간, mm은 분입니다.
+
+* 이제 선택한 태그 수와 함께 현재 선택한 태그를 제거하는 단추의 `X` 기호가 화면 판독기에 표시됩니다.
 
 ## AEM 양식 {#aem-forms}
 
@@ -73,7 +75,7 @@ AEM(Adobe Experience Manager) 6.5는 올해 분기별 서비스 팩을 통해 �
 
 ### AEM 받은 편지함 사용자 정의 {#aem-inbox}
 
-AEM 헤더에서 사용할 수 있는 옵션을 사용자 정의해야 한다고 생각하십니까? 이제 새로운 서비스 팩 릴리스에 관리 제어 옵션이 도입되어 **[!UICONTROL 가능합니다]** .
+AEM 헤더에서 사용할 수 있는 옵션을 사용자 정의해야 한다고 생각하십니까? 이제 새로운 서비스 팩 릴리스에서 관리 제어 옵션이 도입되어 **[!UICONTROL 가능합니다]** .
 
 **머리글 텍스트 사용자 지정**
 
