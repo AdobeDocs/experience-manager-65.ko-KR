@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3d607217e3d66998a8463db3f527a626beaca769
+source-git-commit: 86dbd52d44a78401aa50cce299850469c51b691c
 
 ---
 
@@ -20,15 +20,33 @@ source-git-commit: 3d607217e3d66998a8463db3f527a626beaca769
 
 ## 플랫폼 {#platform}
 
-CRX-Quickstart 및 해당 컨텐츠가 삭제되는 문제가 보고됩니다.
+* CRX-Quickstart 및 해당 컨텐츠가 삭제되는 문제가 보고됩니다.
 
-이러한 각 작업에서 &quot;htmllibmanager.fileSystemOutputCacheLocation&quot; 속성이&#x200B;*빈 문자열이*&#x200B;아닌지 확인하십시오.
+   이러한 각 작업에서 &quot;htmllibmanager.fileSystemOutputCacheLocation&quot; 속성이&#x200B;*빈 문자열이*&#x200B;아닌지 확인하십시오.
 
-1. &quot;*/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true*&quot;를 호출합니다.
-2. AEM 6.5로 업그레이드합니다.
-3. AEM 6.5에서 &quot;레이지 컨텐츠 마이그레이션&quot;을 실행합니다.
+   1. &quot;*/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true*&quot;를 호출합니다.
+   2. AEM 6.5로 업그레이드합니다.
+   3. AEM 6.5에서 &quot;레이지 컨텐츠 마이그레이션&quot;을 실행합니다.
+   기술 [자료](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) 아티클은 자세한 내용과 이 문제에 대한 해결 방법으로 사용할 수 있습니다.
 
-기술 [자료](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) 아티클은 자세한 내용과 이 문제에 대한 해결 방법으로 사용할 수 있습니다.
+* AEM 6.5 인스턴스에서 JDK 11을 사용하는 경우 일부 패키지를 배포한 후 일부 페이지가 공백으로 표시될 수 있습니다. 로그 파일에 다음 오류 메시지가 표시됩니다.
+
+   ```
+   *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
+   java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+   ```
+
+이 오류를 해결하려면 다음을 수행하십시오.
+
+1. AEM 인스턴스를 중지합니다. 이동 `<aem_server_path_on_server>crx-quickstart\conf` 후 `sling.properties` 파일을 엽니다. 이 파일의 백업을 수행하는 것이 좋습니다.
+
+2. Search for `org.osgi.framework.bootdelegation=`. 결과를 표시할 `jdk.internal.reflect,jdk.internal.reflect.*` 속성을 추가합니다.
+
+   ```
+   org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.internal.reflect.*
+   ```
+
+3. 파일을 저장하고 AEM 인스턴스를 다시 시작합니다.
 
 ## 자산 {#assets}
 
@@ -39,7 +57,7 @@ CRX-Quickstart 및 해당 컨텐츠가 삭제되는 문제가 보고됩니다.
 ## 양식 {#forms}
 
 * Linux 운영 시스템에 AEM Forms가 설치된 경우 하드웨어 보안 모듈에 있는 디지털 서명이 작동하지 않습니다. (CQ-4266721)
-* (AEM Forms on WebSphere only) The **Forms Workflow **> **Task Search** option does not return any result if you search for an **Administrator** with **Username** as the search criteria. (CQ-4266457)
+* (WebSphere의 AEM Forms만 해당) **Forms Workflow** > **태스크 검색** 옵션이 검색 기준으로 **사용자 이름**&#x200B;을 **관리자**&#x200B;로 검색할 경우 결과를 반환하지 않습니다. (CQ-4266457)
 
 * AEM Forms가 JPEG 압축으로 .tif 및 .tiff 파일을 PDF 문서로 변환하지 못합니다. (CQ-4265972)
 * **AEM Forms 자산 스캐너** 및 **인터랙티브 커뮤니케이션 마이그레이션 서신** 옵션이 **AEM Forms Migration** 페이지에서 작동하지 않습니다. (CQ-4266572)
