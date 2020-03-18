@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산에서 지원되는 파일 형식 및 각 형식에 대해 지원되는 기능 목록입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
+source-git-commit: 08ea08fc2f8c36d509509f761a76a428d6df7e6a
 
 ---
 
@@ -162,13 +162,13 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF(벡터 애니메이션 파일) |
 | WMV | Windows Media 9 | WMV3(v9), WMV2(v8), WMV1(v7), GoToMeeting(G2M2, G2M3, G2M4) | Microsoft Screen(MSS2), Microsoft Photo Story(WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
-| M4V | Apple iTunes | H264/AVC 파섹 |  |
+| M4V | Apple iTunes | H264/AVC |  |
 | AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV(DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3(IV30), MJPEG, Microsoft Video 1(MS-CRAM) |
 | WebM | WebM | Google VP8 |  |
 | OGV, OGG | Ogg | Theora, VP3, Dirac |  |
 | MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro |  |
-| MTS | AVCHD | H264/AVC 파섹 |  |
-| MKV | 마트로스카 | H264/AVC 파섹 |  |
+| MTS | AVCHD | H264/AVC |  |
+| MKV | 마트로스카 | H264/AVC |  |
 | R3D, RM | Red Raw 비디오 | MJPEG 2000 |  |
 | RAM, RM | RealVideo | 지원되지 않음 | Real G2(RV20), Real 8(RV30), Real 10(RV40) |
 | FLAC | 기본 Flac | 무손실 오디오 코덱입니다. |  |
@@ -188,18 +188,17 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 
 ## 기타 지원되는 형식 {#other-supported-formats}
 
-다른 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 가능성에 대해서는 아래 표에 설명되어 있습니다.
+다른 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 가능성에 대해서는 아래 표에 설명되어 있습니다. Dynamic Media Delivery를 제외한 일반적인 DAM 기능이 모든 파일에 대해 지원됩니다.
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript(자체 배달 도메인으로 구성된 경우) |  |  |  |  |  | ✓ |
 
-**** &amp;ast;다른 포맷은 DAM에서 스토리지, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리를 지원합니다.
+**&amp;ast;** 다른 포맷은 DAM에서 스토리지, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리를 지원합니다.
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -247,7 +246,7 @@ MIME [유형 기반 자산/Scene7 업로드 작업 매개 변수 지원을](/hel
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
