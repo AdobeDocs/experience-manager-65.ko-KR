@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed756d785864131c2e031aec4331388bc057576b
+source-git-commit: 1fde7fc5dd32b5a2a83fe6c01cfa2b24be32a899
 
 ---
 
@@ -31,11 +31,12 @@ AEM(Adobe Experience Manager) 6.5는 올해 분기별 서비스 팩을 통해 �
 
 ## AEM Assets {#aem-assets}
 
-### Adobe I/O 콘솔을 통해 브랜드 포털과 통합 {#assets-integration-bp}
+### 브랜드 포털에서 AEM 자산 구성 {#configure-assets-bp}
 
-이제 Adobe I/O 콘솔을 통해 브랜드 포털에서 AEM 자산을 구성할 수 있습니다. Adobe I/O 콘솔은 브랜드 포털 임차인의 승인을 위해 IMS 토큰을 조달합니다. 이전에는 AEM 자산이 기존 OAuth 게이트웨이를 통해 클래식 UI의 브랜드 포털로 구성되었습니다. 기존 OAuth 게이트웨이를 사용하는 구성은 2020년 4월 6일까지 지원됩니다. 통합을 수정하지 않으면 기존 구성이 계속 작동합니다.
+AEM 자산과 브랜드 포털 간의 인증 채널이 변경되었습니다. 이전에는 브랜드 포털이 레거시 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 JWT 토큰 교환을 사용하여 인증에 대한 IMS 액세스 토큰을 획득했습니다. 이제 AEM Assets는 Adobe I/O를 통해 브랜드 포털로 구성되며, 브랜드 포털 임차인의 승인을 위해 IMS 토큰을 조달합니다.
 
-새 통합을 만들거나 통합 설정을 Adobe I/O 콘솔로 업그레이드할 수 있습니다.
+브랜드 포털과 함께 AEM 자산을 구성하는 단계는 AEM 버전, 최초 구성 여부 또는 기존 구성을 업그레이드하는지에 따라 다릅니다. 자세한 [내용은 브랜드 포털과 함께 AEM 자산](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) 구성을 참조하십시오.
+
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
@@ -75,7 +76,7 @@ Experience Manager Assets에는 다음과 같은 액세서빌러티 개선 사�
 
 ### AEM 받은 편지함 사용자 정의 {#aem-inbox}
 
-AEM 헤더에서 사용할 수 있는 옵션을 사용자 정의해야 한다고 생각하십니까? 이제 새로운 서비스 팩 릴리스에서 관리 제어 옵션이 도입되어 **[!UICONTROL 가능합니다]** .
+AEM 헤더에서 사용할 수 있는 옵션을 사용자 정의해야 한다고 생각하십니까? 이제 새로운 서비스 팩 릴리스에 관리 제어 옵션이 도입되어 **[!UICONTROL 가능합니다]** .
 
 **머리글 텍스트 사용자 지정**
 
