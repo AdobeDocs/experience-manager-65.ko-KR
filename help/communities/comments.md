@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# 주석 사용{#using-comments}
+# 주석 사용 {#using-comments}
 
 ## 소개 {#introduction}
 
@@ -24,8 +24,8 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 이 문서에서는 다음 사항에 대해 설명합니다.
 
-* 페이지에 `Comments`추가를 참조하십시오.
-* 구성 `Comments`요소에 대한 구성 설정.
+* 페이지에 `Comments`추가.
+* 구성 `Comments`요소에 대한 구성 설정입니다.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 * **허용되는 파일 유형**
 
-   파일 업로드 허용이 선택된 경우에만 관련성이 있습니다. &quot;점&quot; 구분 기호가 있는 파일 이름 확장자의 쉼표로 구분된 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 지정된 파일 유형이 있으면 지정되지 않은 파일 유형이 허용되지 않습니다. 기본값은 아무 것도 지정되지 않습니다.** **모든 파일 유형이 허용됩니다.
+   파일 업로드 허용이 선택된 경우에만 관련성이 있습니다. &quot;점&quot; 구분 기호가 있는 파일 이름 확장자의 쉼표로 구분된 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 지정된 파일 유형이 있으면 지정되지 않은 파일 유형이 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **리치 텍스트 편집기**
 
@@ -101,9 +101,11 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
-**사용자 중재 **탭 아래에서 게시된 댓글이 관리되는 방식을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+사용자 중재 **탭에서** 게시된 댓글이 관리되는 방식을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
 
-* **사전 중재**&#x200B;이 확인란을 선택하면 댓글이 게시 사이트에 표시되기 전에 승인되어야 합니다. 기본값은 선택 취소입니다.
+* **사전 관리**
+
+   이 확인란을 선택하면 댓글이 게시 사이트에 표시되기 전에 승인되어야 합니다. 기본값은 선택 취소입니다.
 
 * **댓글 삭제**
 
@@ -139,7 +141,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 #### 정렬 설정 탭 {#sort-settings-tab}
 
-**정렬 설정 **탭 아래에서 게시 주석이 표시될 때 정렬되는 방식을 지정합니다.
+[ **정렬 설정** ] 탭 아래에서 게시 주석이 표시될 때 정렬되는 방식을 지정합니다.
 
 * **정렬 필드**
 
@@ -155,7 +157,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 사용자 지정 리소스 유형이 알려지면 디자인 [모드로](/help/sites-authoring/default-components-designmode.md) 전환한 다음 가져온 `Comments` 구성 요소를 두 번 클릭하여 추가 탭이 있는 대화 상자를 엽니다.
 
-**리소스 유형 **탭 아래에서 `Comments or Voting`구성 요소의 새 인스턴스에 대한 사용자 지정 resourceType을 지정합니다.
+리소스 **유형** 탭에서 `Comments or Voting`구성 요소의 새 인스턴스에 대한 사용자 지정 resourceType을 지정합니다.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -185,10 +187,10 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 사이트 방문자가 로그인하면 구성에 따라 로그인할 수 있습니다.
 
-* 새 댓글 게시
+* 새 주석 게시
 * 자신의 주석 편집
 * 자신의 주석 삭제
-* 다른 사람의 주석에 플래그 지정
+* 다른 사람의 주석 플래그 지정
 
 #### 익명 {#anonymous}
 
