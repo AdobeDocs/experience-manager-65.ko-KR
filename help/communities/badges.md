@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Badges 콘솔{#badges-console}
+# Badges 콘솔 {#badges-console}
 
 ## 배지 정보 {#about-badges}
 
@@ -26,15 +26,15 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 현재, 커뮤니티 회원이 수여 또는 할당되는 배지는 다음 위치에 해당 이름과 아바타와 함께 표시됩니다.
 
-* 프로필
+* 프로파일
 * [포럼](/help/communities/forum.md)
 * [QnA](/help/communities/working-with-qna.md)
-* [선두 보드](/help/communities/enabling-leaderboard.md)
+* [리더보드](/help/communities/enabling-leaderboard.md)
 * [관념화](/help/communities/ideation-feature.md)
 
 작성 환경에서 Badges 콘솔에 액세스하려면
 
-* 전역 탐색:도구, **커뮤니티, 배지**
+* 글로벌 탐색에서 UIControl 도구 > **[커뮤니티 > 배지로 이동합니다.]**
 
 이 콘솔에는 현재 사용 가능한 배지와 새 배지를 추가할 수 있는 배지가 표시됩니다.
 
@@ -48,13 +48,21 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-* **이미지 업로드**(*필수*) JPEG 또는 PNG 형식의 권장 크기 32 x 32픽셀, 72dpi의 배지 이미지입니다.
+* **이미지 업로드**
 
-* **이름**(*필수*) 배지 이름입니다. 저장소 노드 이름뿐만 `Display Name` 아니라 기본값입니다. If the `Name` is not a valid repository node name, it will be modified.
+   (*필수*) JPEG 또는 PNG 형식의 32x32픽셀 권장 크기의 배지 이미지입니다.
 
-* **표시 이름**(*선택*) UI에서 배지에 대해 표시할 이름입니다. 기본값은 에 대해 입력한 변경되지 않은 `Name`텍스트입니다.
+* **이름**
 
-* **설명**(*선택*) 배지에 대한 설명입니다.
+   (*필수*) 배지 이름입니다. 저장소 노드 이름뿐만 `Display Name` 아니라 기본값입니다. If the `Name` is not a valid repository node name, it will be modified.
+
+* **표시 이름**
+
+   (*선택*&#x200B;사항) UI에서 배지에 대해 표시할 이름입니다. 기본값은 에 대해 입력한 변경되지 않은 `Name`텍스트입니다.
+
+* **설명**
+
+   (*선택*&#x200B;사항) 배지에 대한 설명입니다.
 
 ## 추가 정보 {#additional-information}
 
