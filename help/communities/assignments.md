@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 2de88b55-dda9-4ccf-ad4d-dd67943ef610
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# 할당 기능{#assignments-feature}
+# 할당 기능 {#assignments-feature}
 
 구성 요소 브라우저의 [커뮤니티](/help/communities/catalog.md) 그룹에 있는 활성 할당 및 활성 카탈로그 구성 요소는 [활성 커뮤니티의](/help/communities/overview.md#enablement-community)구성 요소입니다.
 
