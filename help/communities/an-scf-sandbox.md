@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
@@ -50,10 +50,10 @@ AEM 6.1 Communities의 경우, 샌드박스를 신속하게 만드는 가장 쉬
 
 다음은 AEM 플랫폼을 처음 사용하는 개발자에게 유용한 링크입니다.
 
-* [시작하기](../../help/sites-deploying/deploy.md#getting-started) - AEM 인스턴스 배포
+* [시작하기](../../help/sites-deploying/deploy.md#getting-started):for deploying AEM instances
 
-   * [기본](../../help/sites-developing/the-basics.md) 사항 - 웹 사이트 및 기능 개발자
-   * [작성자를 위한 첫 번째](../../help/sites-authoring/first-steps.md) 단계 - 페이지 컨텐츠 작성
+   * [기본 사항](../../help/sites-developing/the-basics.md):웹 사이트 및 기능 개발자
+   * [작성자를 위한 첫 번째](../../help/sites-authoring/first-steps.md)단계:페이지 컨텐츠 작성
 
 ## CRXDE Lite 개발 환경 사용 {#using-crxde-lite-development-environment}
 
@@ -71,7 +71,7 @@ AEM 개발자는 제작 인스턴스에서 CRXDE [Lite](../../help/sites-develop
 
 3. 바로 `CRXDE Lite`탐색: `<server>:<port>/crx/de`
 
-   예를 들어 로컬 작성자 인스턴스에서 다음을 수행합니다. ` [http://localhost:4502/crx/de](http://localhost:4502/crx/de)`
+   예를 들어 로컬 작성자 인스턴스에서 다음을 수행합니다. [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 CRXDE Lite를 사용하려면 개발자 또는 관리자 권한으로 로그인해야 합니다. 기본 localhost 인스턴스의 경우
 
