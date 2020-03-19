@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # 샌드박스 애플리케이션 개발 {#develop-sandbox-application}
 
-이 섹션에서는 템플릿이 [초기 애플리케이션](initial-app.md) 섹션에 설정되었으며 [초기 컨텐츠](initial-content.md) 섹션에 설정된 초기 페이지를 제공하므로, Communities 구성 요소를 사용하여 작성할 수 있는 기능을 포함하는 기초 스크립트를 사용하여 애플리케이션을 개발할 수 있습니다. 이 섹션의 끝에서 웹 사이트가 작동합니다.
+이 섹션에서는 템플릿이 [초기 애플리케이션](initial-app.md) 섹션에 설정되었으며 [초기 컨텐츠](initial-content.md) 섹션에 설정된 초기 페이지를 제공하므로, Communities 구성 요소를 사용하여 작성을 가능하게 하는 기능을 포함하는 기초 스크립트를 사용하여 애플리케이션을 개발할 수 있습니다. 이 섹션의 끝에서 웹 사이트가 작동합니다.
 
 ## 기본 페이지 스크립트 사용 {#using-foundation-page-scripts}
 
@@ -30,9 +30,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 CRXDE Lite 사용:
 
 <!--Resolve steps below-->
-    * 이름:&#39;sling:resourceSuperType&#39;
-    * 유형:&#39;String&#39;
-    * 값:&#39;foundation/components/page&#39;
+    이름:&#39;sling:resourceSuperType&#39;
+    유형:&#39;String&#39;
+    값:&#39;foundation/components/page&#39;
 
 1. 녹색 **[!UICONTROL [+]추가를 클릭합니다]**
 1. 모두 **[!UICONTROL 저장을 클릭합니다.]**
@@ -86,9 +86,9 @@ CRXDE Lite 사용:
 
    작성을 위해 설정하려면 로컬 스크립트와 오버레이하고 본문에 단락 시스템(parsys)을 `body.jsp` 포함하십시오.
 
-   1. navigate to `/apps/an-scf-sandbox/components`
-   1. `playpage`노드 선택
-   1. 마우스 오른쪽 버튼을 클릭하고 선택 `Create > Create File...`
+   1. 다음으로 이동 `/apps/an-scf-sandbox/components`
+   1. Select the `playpage`node
+   1. 마우스 오른쪽 버튼을 클릭하고 `Create > Create File...`
 
       * 이름: **body.jsp**
    1. 모두 **[!UICONTROL 저장을 클릭합니다.]**
@@ -174,4 +174,4 @@ CRXDE Lite 사용:
 
 사이트가 게시되면 게시 인스턴스에서 루트 페이지로 이동하면 영어 페이지로 리디렉션됩니다.
 
-커뮤니티 SCF 구성 요소를 사용하기 전의 마지막 단계는 클라이언트 라이브러리 폴더(clientlibs)를 추가하는 것입니다.... **[⇒](add-clientlibs.md)**
+커뮤니티 SCF 구성 요소를 사용하기 전의 마지막 단계는 클라이언트 라이브러리 폴더(clientlibs)를 추가하는 것입니다.... [클라이언트 추가](add-clientlibs.md)
