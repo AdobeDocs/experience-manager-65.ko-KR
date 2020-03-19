@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
@@ -102,9 +102,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!CAUTION]
 >
->*** scf-js-&amp;ast;**로 접두사가 붙은 모든 CSS 클래스 이름은 javascript 코드에서 특정 용도로 사용됩니다. 이러한 클래스는 구성 요소 상태(예: 숨김에서 표시로 전환)에 영향을 미치며, 덮어쓸거나 제거할 수 없습니다.
+>접두사로 추가된 CSS 클래스 이름은 javascript 코드에서 `scf-js` 특정 용도로 사용됩니다. 이러한 클래스는 구성 요소 상태(예: 숨김에서 표시로 전환)에 영향을 미치며, 덮어쓸거나 제거할 수 없습니다.
 >
->While the scf-js-&amp;ast;클래스는 스타일에 영향을 주지 않으며, 클래스 이름은 요소의 상태를 제어하기 때문에 부작용이 있을 수 있다는 경고가 있는 스타일시트에서 사용할 수 있습니다.
+>클래스는 스타일에 영향을 주지 `scf-js` 않지만, 요소의 상태를 제어하기 때문에 부작용이 있을 수 있다는 경고가 있는 스타일시트에서 클래스 이름을 사용할 수 있습니다.
 
 ## Javascript 확장 {#extending-javascript}
 
@@ -145,7 +145,7 @@ Javascript 구현을 확장하려면
 
 스크립트 태그는 클라이언트측 프레임워크의 기본적인 부분입니다. 서버 측에서 생성된 마크업을 클라이언트 측의 모델 및 뷰와 바인딩하는 데 도움이 되는 접착제입니다.
 
-SCF 스크립트의 스크립트 태그는 구성 요소를 오버레이하거나 무시할 때 제거되지 않아야 합니다. HTML에서 JSON을 삽입하기 위해 자동으로 생성된 SCF 스크립트 태그는 `data-scf-json=`true 속성으로 식별됩니다.
+SCF 스크립트의 스크립트 태그는 구성 요소를 오버레이하거나 무시할 때 제거되지 않아야 합니다. HTML에서 JSON을 삽입하기 위해 자동으로 생성된 SCF 스크립트 태그는 속성과 `data-scf-json=true`함께 식별됩니다.
 
 ## SCF용 Clientlibs {#clientlibs-for-scf}
 
@@ -164,12 +164,12 @@ SCF용 Clientlibs는 카테고리 이름에 &#39;author&#39;가 있는 경우에
 
 이러한 버전은
 
-* /etc/clientlibs/social/hbs/&lt;component name>
+* `/etc/clientlibs/social/hbs/&lt;component name&gt;`
 
 예:
 
-* 클라이언트 폴더 노드:/etc/clientlibs/social/hbs/forum
-* 카테고리 속성:cq.social.hbs.forum
+* 클라이언트 폴더 노드: `/etc/clientlibs/social/hbs/forum`
+* 카테고리 속성: `cq.social.hbs.forum`
 
 커뮤니티 구성 [요소 안내서에는](components-guide.md) 각 SCF 구성 요소에 필요한 전체 clientlibs가 나열됩니다.
 
@@ -183,12 +183,12 @@ SCF용 Clientlibs는 카테고리 이름에 &#39;author&#39;가 있는 경우에
 
 이러한 버전은 SCF libs 폴더에 있습니다.
 
-* /libs/social/&lt;feature>/components/hbs/&lt;component name>/clientlibs
+* `/libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs`
 
 예:
 
-* 클라이언트 폴더 노드:/libs/social/forum/hbs/forum/clientlibs
-* 카테고리 속성:cq.social.author.hbs.forum
+* 클라이언트 폴더 노드: `/libs/social/forum/hbs/forum/clientlibs`
+* 카테고리 속성: `cq.social.author.hbs.forum`
 
 참고:author clientlibs never embed other libraries, they do list their dependencies. 다른 라이브러리에 임베드할 때 종속성은 자동으로 가져오지 않으며 포함되어 있어야 합니다.
 
