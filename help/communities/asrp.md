@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# ASRP - Adobe Storage Resource Provider{#asrp-adobe-storage-resource-provider}
+# ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
 
 ## ASRP 정보 {#about-asrp}
 
@@ -28,7 +28,7 @@ SRP [옵션 및 권장 토폴로지의](/help/communities/working-with-srp.md#ch
 
 ASRP를 사용하려면 추가 라이선스가 필요합니다.
 
-AEM Communities 사이트에서 UGC를 사용하도록 구성하려면 계정 담당자에게 다음 사항을 문의하십시오.
+AEM Communities 사이트에서 UGC용 ASRP를 사용하도록 구성하려면 계정 담당자에게 문의하십시오.
 
 * 데이터 센터 URL(ASRP 끝점의 주소)
 * 소비자 키
@@ -45,17 +45,17 @@ AEM Communities 사이트에서 UGC를 사용하도록 구성하려면 계정 �
 
 **AEM 작성자 인스턴스의 경우:**
 
-* 전역 탐색(도구, 커뮤니티, 스토리지 구성)에서** ASRP(Adobe Storage Resource Provider)를 선택합니다.**
+* 글로벌 탐색에서 UIControl 도구 > **[커뮤니티 > 스토리지 구성으로]** 이동한 다음 ASRP( **[Adobe Storage Resource Provider)]**&#x200B;제어를 선택합니다.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
 다음은 제공 프로세스에서 얻은 정보입니다.
 
-* **데이터 센터 URL. **풀다운하여 계정 담당자가 식별한 프로덕션 데이터 센터를 선택합니다.
-* **기본 보고서 세트. **기본 보고서 세트의 이름을 입력합니다.
-* **소비자 키**. 소비자 키를 입력합니다.
-* **암호. **암호를 입력합니다.
-* Select **Submit.**
+* **데이터 센터 URL**:풀다운하여 계정 담당자가 식별한 프로덕션 데이터 센터를 선택합니다.
+* **기본 보고서 세트**:기본 보고서 세트의 이름을 입력합니다.
+* **소비자 키**:소비자 키를 입력합니다.
+* **비밀**:암호를 입력합니다.
+* **제출**&#x200B;을 선택합니다.
 
 게시 인스턴스 준비:
 
@@ -64,7 +64,9 @@ AEM Communities 사이트에서 UGC를 사용하도록 구성하려면 계정 �
 
 구성을 제출한 후 연결을 테스트합니다.
 
-* 테스트 **구성을 선택합니다**. 각 작성자 및 게시 인스턴스에 대해 스토리지 구성 콘솔에서 데이터 센터에 대한 연결을 테스트합니다.
+* 테스트 **구성을 선택합니다**.
+
+   각 작성자 및 게시 인스턴스에 대해 스토리지 구성 콘솔에서 데이터 센터에 대한 연결을 테스트합니다.
 
 * 링크를 [외부화하여 프로필 데이터에 대한 사이트 URL을 데이터 센터에서 라우팅할 수 있는지 확인합니다](#externalize-links).
 
@@ -92,19 +94,19 @@ ASRP는 모든 작성자 및 게시 인스턴스에서 공용 스토어로 식�
 
 AEM 작성자 인스턴스의 경우:
 
-* 주 메뉴에서 `Tools > Operations > Replication.`
-* 트리 **활성화를 선택합니다.**
-* **시작 경로:**/etc/socialconfig/srpc/
-* [수정만] **을 선택 취소합니다.**
-* 활성화를 **선택합니다.**
+* 주 메뉴에서 UIConcontrol 도구 > **[작업 > 복제를 탐색합니다]**.
+* 트리 **활성화 선택**
+* **시작 경로**:찾아보기 `/etc/socialconfig/srpc/`
+* 수정된 **항목만 선택 취소**
+* 활성화 **선택**
 
 ## AEM 6.0에서 업그레이드 {#upgrading-from-aem}
 
 >[!CAUTION]
 >
->게시된 커뮤니티 사이트에서 ASRP를 활성화하면 온-프레미스 스토리지와 클라우드 스토리지 [](/help/communities/jsrp.md)간에 데이터가 동기화되지 않으므로 JCR에 이미 저장된 UGC가 더 이상 표시되지 않습니다.
+>게시된 커뮤니티 사이트에서 ASRP를 활성화하면 온-프레미스 스토리지와 클라우드 스토리지 [간에 데이터가](/help/communities/jsrp.md) 동기화되지 않으므로 JCR에 이미 저장된 UGC가 더 이상 표시되지 않습니다.
 
-**`AEM Communities Extension`**이전에는 AEM 6.0 소셜 커뮤니티에서 클라우드 서비스로 도입되었습니다. AEM 6.1 Communities의 경우 클라우드 구성이 필요하지 않으므로 [스토리지 구성 콘솔에서](/help/communities/srp-config.md)ASRP를 선택하면 됩니다.
+**`AEM Communities Extension`** 는 이전에 AEM 6.0 소셜 커뮤니티에서 클라우드 서비스로 소개되었습니다. AEM 6.1 Communities의 경우 클라우드 구성이 필요하지 않으므로 [스토리지 구성 콘솔에서](/help/communities/srp-config.md)ASRP를 선택하면 됩니다.
 
 새로운 스토리지 구조로 인해 소셜 커뮤니티에서 Communities로 업그레이드할 때 [업그레이드](/help/communities/upgrade.md#adobe-cloud-storage) 지침을 따라야 합니다.
 
@@ -141,6 +143,6 @@ Adobe 클라우드 스토리지 인프라는 *궁극적인 일관성을* 사용�
 
 JCR에서, if [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* 은(는) [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) 노드를 포함하지 않습니다. 즉, 스토리지 공급자가 JSRP임을 의미합니다.
+* srpc [노드를 포함하지](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) 않음 즉, 스토리지 공급자가 JSRP입니다.
 * srpc 노드가 존재하고 노드 [기본 구성을](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)포함하는 경우 기본 구성의 속성은 ASRP를 기본 공급자로 정의합니다.
 
