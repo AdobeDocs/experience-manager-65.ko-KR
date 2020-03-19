@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# 커뮤니티 구성 요소용 Clientlibs{#clientlibs-for-communities-components}
+# 커뮤니티 구성 요소용 Clientlibs {#clientlibs-for-communities-components}
 
 ## 소개 {#introduction}
 
@@ -65,22 +65,22 @@ CRXDE [|Lite를](#using-crxde-lite) 사용하여 커뮤니티 사이트 페이�
 
 CRXDE Lite를 사용하여 커뮤니티 사이트에 대한 clientlib [를 추가하려면](/help/sites-developing/developing-with-crxde-lite.md) :
 
-* https://&lt; [server>:&lt;port>/crx/de 찾아보기](https://localhost:4502/crx/de)
+* https://&lt; [server>:&lt;port>/crx/de로 이동합니다.](https://localhost:4502/crx/de)
 * 구성 요소를 추가할 페이지의 `clientlibslist` 노드를 찾습니다.
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* with `clientlibslist` node selected
+* With `clientlibslist` node selected
 
-   * string 속성[] 찾기 `scg:requiredClientLibs`
-   * 문자열 배열 대화 상자에 `Value` 액세스하려면 이 확인란을 선택합니다.
+   * String 속성을[] 찾습니다. `scg:requiredClientLibs`
+   * 문자열 배열 대화 상자에 `Value` 액세스하려면 문자열 배열 선택
 
-      * 필요하면 아래로 스크롤하다
-      * select + to enter new client library
+      * 필요한 경우 아래로 스크롤하기
+      * +를 선택하여 새 클라이언트 라이브러리 입력
 
-         * 클라이언트 라이브러리 추가 반복
-      * select*** OK**
-   * 모두 **저장 선택**
+         * 클라이언트 라이브러리를 더 추가하려면 이 단계를 반복합니다.
+      * 확인 **선택**
+   * 모두 **저장을 선택합니다.**
 
 
 
