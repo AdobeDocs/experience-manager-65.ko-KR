@@ -10,12 +10,12 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# 커뮤니티 구성 요소 안내서 {#community-components-guide}
+# 커뮤니티 구성 요소 안내서  {#community-components-guide}
 
 커뮤니티 구성 요소 안내서는 [소셜 구성 요소 프레임워크(SCF)](scf.md)용 대화형 개발 도구입니다. 사용 가능한 AEM Communities 구성 요소 또는 여러 구성 요소로 구성된 더 복잡한 기능 목록을 제공합니다.
 
@@ -118,7 +118,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->SRP의 기본값이 JSRP로 [설정된](jsrp.md)경우 게시 인스턴스에 입력된 UGC는 게시에만 표시되며 작성자 인스턴스의 [중재](moderate-ugc.md) 콘솔에서는 *표시되지 않습니다.
+>SRP의 기본값이 JSRP로 [설정된](jsrp.md)경우 게시 인스턴스에 입력된 UGC는 *게시에만 표시되며 작성 인스턴스의* 중재 [콘솔에서 볼 수](moderate-ugc.md) 없습니다.
 
 ## 클라이언트측 라이브러리 {#client-side-libraries}
 
