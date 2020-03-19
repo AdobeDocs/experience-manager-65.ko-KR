@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -23,8 +23,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 기본 AEM 시작 [지침을](../../help/sites-deploying/deploy.md#getting-started) 따라
 
-* localhost의 작성 환경: [4502](http://localhost:4502/)
-* localhost:4503에 환경 [게시](http://localhost:4503/)
+* 로컬 호스트의 작성 [환경:4502](http://localhost:4502/)
+* localhost: [4503에 환경 게시](http://localhost:4503/)
 
 AEM Communities,
 
@@ -107,7 +107,7 @@ AEM Communities 시작하기 자습서에 대해 만든 태그의 샘플 패키�
 
 대신 [터널 서비스가](#enable-the-tunnel-service) 활성화되면 멤버 콘솔을 [](members.md) 사용하여 게시 환경에서 새 멤버를 등록합니다.
 
-이 자습서에서는 게시 환경에서 세 명의 멤버가 만들어집니다. 두 구성원은 학습 경로에 할당된 사용자 그룹의 구성원이 되고 세 번째 멤버는 역량 강화 리소스 연락처가 됩니다.
+이 자습서에서는 게시 환경에서 세 명의 멤버가 만들어집니다. 두 구성원은 학습 경로에 할당된 사용자 그룹의 구성원이 되고 세 번째 멤버는 지원 리소스 연락처가 됩니다.
 
 네 번째 사용자는 작성 환경에서 생성되며 커뮤니티 관리자 및 커뮤니티 활성화 관리자의 역할을 할당합니다.
 
