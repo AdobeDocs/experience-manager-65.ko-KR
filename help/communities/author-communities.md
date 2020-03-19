@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: aaa067e0718d15cedde46296c1be69d422359097
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# 커뮤니티 구성 요소{#communities-components}
+# 커뮤니티 구성 요소 {#communities-components}
 
 ## 소개 {#introduction}
 
@@ -30,7 +30,7 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 >[!NOTE]
 >
->작성 환경에 익숙하지 않은 경우 [기본 처리에](/help/sites-authoring/basic-handling.md) 대한 설명서와 페이지 [작성에 대한](/help/sites-authoring/qg-page-authoring.md)빠른 안내서를 봅니다.
+>작성 환경에 익숙하지 않은 경우 [기본 처리에](/help/sites-authoring/basic-handling.md) 대한 설명서와 페이지 [작성에 대한](/help/sites-authoring/qg-page-authoring.md)빠른 안내서를 참조하십시오.
 
 ## 사용 가능한 커뮤니티 구성 요소 {#available-communities-components}
 
