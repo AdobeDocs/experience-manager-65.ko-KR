@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 36e9743b8b41d53e735dce4ba13c986ea22e612b
+source-git-commit: f63e776d1f7a9433e80633cdcfdf5ffed37b29da
 
 ---
 
@@ -190,9 +190,6 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 
    ![IMS 계정 구성](assets/create-new-integration6.png)
 
-   >[!CAUTION]
-   >
-   >IMS 구성을 하나만 만듭니다. 여러 IMS 구성을 만들지 마십시오.
 
 1. IMS 구성을 선택하고 상태 확인을 **[!UICONTROL 클릭합니다]**. 대화 상자가 나타납니다.
 
@@ -200,7 +197,13 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 
    ![](assets/create-new-integration5.png)
 
-   <br/> <br/>
+>[!CAUTION]
+>
+>하나의 유효한 IMS 구성만 만듭니다. 여러 IMS 구성을 만들지 마십시오.
+>
+> 구성이 정상인지 확인합니다. 구성이 비정상인 경우 삭제하고 새 정상 구성을 만듭니다.
+
+<br/> <br/>
 
 ### 클라우드 서비스 구성 {#configure-the-cloud-service}
 
@@ -223,7 +226,7 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 
    ![](assets/create-cloud-service.png)
 
-1. 저장 **[!UICONTROL 및 닫기를 클릭합니다]**. 클라우드 구성이 생성됩니다. 이제 AEM Assets 작성자 인스턴스가 브랜드 포털 임차인과 통합됩니다.
+1. Click **[!UICONTROL Save and Close]**. 클라우드 구성이 생성됩니다. 이제 AEM Assets 작성자 인스턴스가 브랜드 포털 임차인과 통합됩니다.
 
 ### Test configuration {#test-integration}
 
