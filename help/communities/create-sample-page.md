@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
@@ -42,7 +42,7 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 
    * `Name`:단일 페이지 템플릿
    * `Description`:단일 페이지 함수로 구성된 템플릿입니다.
-   * select `Enabled`
+   * 선택 `Enabled`
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
@@ -101,7 +101,7 @@ AEM 6.1 Communities에서 샘플 페이지를 만드는 가장 쉬운 방법은 
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 
-커뮤니티 [사이트 콘솔에서](sites-console.md)게시 아이콘을 선택하여 사이트를 기본적으로 http://localhost:4503로 게시합니다.
+커뮤니티 [사이트 콘솔에서](sites-console.md)게시 아이콘을 선택하여 사이트를 기본적으로 http://localhost:4503으로 게시합니다.
 
 ## 편집 모드에서 작성자의 사이트 열기 {#open-the-site-on-author-in-edit-mode}
 
