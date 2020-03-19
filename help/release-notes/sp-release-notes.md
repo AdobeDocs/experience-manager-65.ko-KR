@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc72581f0de6f47cd1d7e207f228e64ba7c9e842
+source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
 
 ---
 
@@ -41,6 +41,12 @@ AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과
 * [Adobe Experience Manager Assets의 접근성 향상](new-features-latest-service-pack.md#accessibility-enhancements) .
 
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.10.8로 업데이트되었습니다.
+
+* 이제 선택적 컨텐츠 하위 트리를 Dynamic Media *- Scene7 모드로* 동기화할 수 있습니다(사용 가능한 모든 항목 `content/dam`).
+
+* 이제 SOAP 웹 서비스와 양식 데이터 모델 통합을 통해 요소의 선택 그룹 또는 특성을 지원합니다.
+
+* 이제 SOAP 입력 또는 출력 및 복잡한 데이터 구조가 동적 그룹 대체를 지원합니다.
 
 이전 AEM 6.5 서비스 팩에 도입된 전체 기능, 주요 특징 및 주요 기능은 [Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능을 참조하십시오](new-features-latest-service-pack.md).
 
