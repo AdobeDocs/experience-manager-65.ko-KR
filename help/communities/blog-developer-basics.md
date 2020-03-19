@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Blog Essentials{#blog-essentials}
+# Blog Essentials {#blog-essentials}
 
 AEM 6.1 Communities의 블로그는 커뮤니티 활동입니다. 블로그 아티클은 이제 게시 환경에서 게시되며, 이전에는 블로그 아티클을 작성 환경에서만 만들고 게시할 수 있었습니다.
 
