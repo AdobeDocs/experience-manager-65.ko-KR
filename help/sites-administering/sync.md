@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
 
 ---
 
@@ -52,7 +52,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 >
 >따라서 배포가 게시 팜인 경우 사용자가 ***관리자** 그룹에 추가되거나 제거되면 각 게시 인스턴스에서 수동으로 수정해야 합니다.
 
-## 사용자 동기화 사용 {#enable-user-sync}
+## 사용자 동기화 활성화 {#enable-user-sync}
 
 >[!NOTE]
 >
@@ -328,7 +328,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 
 각 게시 인스턴스에서 모든 Sling ID 값이 다른지 확인하려면:
 
-1. https:// [*호스트:port*/system/console/status-slingsettings로 이동합니다.](https://localhost:4503/system/console/status-slingsettings)
+1. 찾아보기 `http://<host>:<port>/system/console/status-slingsettings`
 1. sling ID 값을 **확인합니다.**
 
 ![](assets/chlimage_1-27.png)
@@ -466,7 +466,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 
 ![](assets/chlimage_1-30.png)
 
-#### (작성자) Apache Sling 배포 전송 자격 증명 1개 - DistributionTransportSecretProvider 기반 사용자 자격 증명 {#author-one-apache-sling-distribution-transport-credentials-user-credentials-based-distributiontransportsecretprovider}
+#### (author) 1개의 Apache Sling 배포 전송 자격 증명 - DistributionTransportSecretProvider 기반 사용자 자격 증명 {#author-one-apache-sling-distribution-transport-credentials-user-credentials-based-distributiontransportsecretprovider}
 
 ![](assets/chlimage_1-31.png)
 
@@ -490,7 +490,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-그런 다음 섹션 [2를 확인합니다. 인증된 사용자 만들기](/help/sites-administering/sync.md#createauthuser). 승인된 사용자 만들기)가 제대로 수행되었습니다.
+그런 다음 섹션 [2를 확인합니다. 인증된 사용자 만들기](/content/docs/en/aem/6-1/administer/security/security/sync.md#2). 승인된 사용자 만들기)가 제대로 수행되었습니다.
 
 이 섹션에서는 모든 게시 인스턴스에 존재하는 인증된 사용자를 만들고 작성자의 &#39;비밀 공급자&#39; OSGi 구성에서 이들을 식별하는 방법에 대해 설명합니다. 기본적으로 사용자는 `admin`입니다.
 
