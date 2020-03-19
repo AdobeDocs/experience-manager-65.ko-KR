@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 1. 관리자 권한으로 로그인합니다.
 1. 글로벌 탐색에서 탐색, **커뮤니티, 사이트로 이동합니다.**
 
-커뮤니티 사이트 콘솔은 커뮤니티 사이트를 만드는 단계를 안내하는 마법사를 제공합니다. 마지막 단계에서 사이트를 커밋하기 전에 `Next`단계 또는 이전 `Back`단계로 이동할 수 있습니다.
+커뮤니티 사이트 콘솔은 커뮤니티 사이트를 만드는 단계를 안내하는 마법사를 제공합니다. 마지막 단계에서 사이트를 커밋하기 전에 `Next` 단계나 이전 단계로 이동할 `Back` 수 있습니다.
 
 새 커뮤니티 사이트를 만들려면:
 
@@ -48,7 +48,7 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 * **커뮤니티 사이트 이름**:참여
 
    * 사이트를 만든 후 쉽게 변경되지 않으므로 이름을 다시 확인하십시오
-   * 커뮤니티 사이트 이름 아래에 초기 URL이 표시됩니다.
+   * 초기 URL이 커뮤니티 사이트 이름 아래에 표시됩니다.
    * 유효한 URL의 경우 기본 언어 코드 + &quot;.html&quot;을 추가합니다.
    * *예*: https://localhost:4502/content/sites/ `engage/en.html`
 
@@ -82,11 +82,11 @@ AEM Communities [for Enablement](/help/communities/getting-started-enablement.md
 
 사용자 관리의 모든 [확인란을 선택합니다.](/help/communities/sites-console.md#user-management)
 
-* 사이트 방문자가 직접 등록할 수 있도록 허용
+* 사이트 방문자가 직접 등록하도록 허용하려면
 * 사이트 방문자가 로그인하지 않고 사이트를 보도록 허용
-* 구성원이 다른 커뮤니티 구성원에게 메시지를 주고 받을 수 있도록 허용
-* 프로필 등록 및 만들기 대신 Facebook에 로그인 허용
-* 프로필 등록 및 만들기 대신 Twitter에 로그인 허용
+* 구성원이 다른 커뮤니티 구성원에게 메시지를 보내고 받을 수 있도록 허용하려면
+* 프로필을 등록하고 만들지 않고 Facebook에 로그인을 허용하려면
+* 프로필을 등록하고 만들지 않고 Twitter에 로그인을 허용하려면
 
 >[!NOTE]
 >
@@ -100,8 +100,8 @@ AEM Communities [for Enablement](/help/communities/getting-started-enablement.md
 
 사전 입력 검색을 사용하면 네임스페이스를 손쉽게 찾을 수 있습니다. 예,
 
-* type &#39;tut&#39;
-* select `Tutorial`
+* 유형 `tut`
+* 선택 `Tutorial`
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -113,7 +113,7 @@ AEM Communities [for Enablement](/help/communities/getting-started-enablement.md
 
 예,
 
-* type &quot;q&quot;
+* 유형 `q`
 * 퀸 [하퍼 선택](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
@@ -141,7 +141,7 @@ Adobe Analytics에 라이선스가 부여되고 Analytics 클라우드 서비스
 번역 [설정은](/help/communities/sites-console.md#translation) 사이트의 기본 언어 및 UGC를 변환할 수 있는지 여부와 변환할 수 있는 언어(있는 경우)를 지정합니다.
 
 * 기계 **번역 허용 확인**
-* 기본 기계 번역 서비스에서 번역을 위해 선택된 기본 언어를 그대로 둡니다.
+* 기본 기계 번역 서비스별로 번역을 위해 기본 언어를 선택된 상태로 유지
 * 기본 번역 공급자 및 구성 유지
 * 언어 사본이 없기 때문에 글로벌 스토어가 필요하지 않습니다
 * 전체 **페이지 번역 선택**
@@ -181,16 +181,26 @@ Adobe Analytics에 라이선스가 부여되고 Analytics 클라우드 서비스
 
 왼쪽에서 오른쪽으로 다음을 수행합니다.
 
-* **사이트**&#x200B;열기를 선택하여 연필 아이콘을 선택하여 작성 편집 모드에서 커뮤니티 사이트를 열고 페이지 구성 요소를 추가 및/또는 구성합니다.
+* **사이트 열기**
 
-* **사이트**&#x200B;편집 아이콘을 선택하여 커뮤니티 사이트를 열어 제목과 같은 속성을 수정하거나 테마를 변경합니다
+   연필 아이콘을 선택하여 작성 편집 모드에서 커뮤니티 사이트를 열고 페이지 구성 요소를 추가 및/또는 구성합니다.
 
-* **사이트**&#x200B;게시 아이콘을 선택하여 커뮤니티 사이트를 게시합니다(예: 게시 서버가 로컬 컴퓨터에서 실행 중인 경우 기본적으로 localhost:4503).
+* **사이트 편집**
 
-* **사이트 내보내기**&#x200B;아이콘을 선택하여 [패키지 관리자에](/help/sites-administering/package-manager.md) 저장되고 다운로드된 커뮤니티 사이트 패키지를 만듭니다.
+   속성 아이콘을 선택하여 커뮤니티 사이트를 열어 제목과 같은 속성을 수정하거나 테마를 변경합니다
+
+* **게시 사이트**
+
+   커뮤니티 사이트를 게시할 세계 아이콘을 선택합니다(예: 로컬 컴퓨터에서 게시 서버가 실행 중인 경우 기본적으로 localhost:4503으로).
+
+* **사이트 내보내기**
+
+   내보내기 아이콘을 선택하여 [패키지 관리자에](/help/sites-administering/package-manager.md) 저장되고 다운로드된 커뮤니티 사이트 패키지를 만듭니다.
 UGC는 사이트 패키지에 포함되지 않습니다.
 
-* **사이트 삭제**커뮤니티 > 사이트 콘솔 내에서 커뮤니티 사이트를 삭제하려면 삭제 아이콘을 선택합니다. 이 작업은 UGC, 사용자 그룹, 자산 및 데이터베이스 레코드 등 사이트와 연관된 모든 항목을 제거합니다.
+* **사이트 삭제**
+
+   삭제 아이콘을 선택하여 Control Communities > Sites 콘솔 **[]**&#x200B;내에서 커뮤니티 사이트를 삭제합니다. 이 작업은 UGC, 사용자 그룹, 자산 및 데이터베이스 레코드 등 사이트와 연관된 모든 항목을 제거합니다.
 
 ![사이트 작업](assets/siteactions.png)
 
@@ -200,15 +210,17 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 >
 >작성자 인스턴스의 기본 메뉴에서:
 >
->1. 도구 > 작업 > 복제 메뉴로 이동합니다.
-1. &quot;작성자의 에이전트&quot;를 선택합니다.
-1. &quot;기본 에이전트(게시)&quot;를 선택합니다.
-1. &quot;설정&quot; 옆의 &quot;편집&quot;을 선택합니다.
-1. [에이전트 설정]의 팝업 대화 상자에서 [전송] 탭을 선택합니다.
-1. URI에서 포트 번호 4503을 원하는 포트 번호로 변경합니다. >
-   * 예를 들어 포트 6103을 사용하려면https://localhost:6103/bin/receive?sling:authRequestLogin=1
-1. &quot;확인&quot;을 선택합니다.
-1. (선택 사항) &quot;지우기&quot; 또는 &quot;강제 재시도&quot;를 선택하여 복제 큐를 재설정합니다.
+>1. UIConcontrol 도구 **[> 작업 > 복제 메뉴로]** 이동합니다.
+>1. 작성자의 **[UIControl 에이전트를 선택합니다]**.
+>1. UIConcontrol **[기본 에이전트(게시)를]**&#x200B;선택합니다.
+>1. UIConcontrol **[설정]**&#x200B;옆에서 [UIConcontrol **[편집]을 선택합니다]**.
+>1. [에이전트 설정]의 팝업 대화 상자에서 [UIConcontrol **[전송] 탭을]** 선택합니다.
+>1. URI에서 포트 번호 4503을 원하는 포트 번호로 변경합니다. >
+   >    * 예를 들어 포트 6103을 사용하려면
+      >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
+>
+1. UIControl **[확인을 선택합니다]**.
+1. (선택 사항) **[UIControl Clear]** 또는 UIConcontrol Force **[Retry]** 를 선택하여 복제 큐를 재설정합니다.
 
 
 
@@ -219,7 +231,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-커뮤니티 사이트가 성공적으로 게시되면 다음과 같은 메시지가 잠깐 표시됩니다.
+커뮤니티 사이트가 성공적으로 게시되면 다음과 같은 메시지가 잠깐 나타납니다.
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -254,7 +266,7 @@ Aaron [McDonald는](/help/communities/tutorials.md#demo-users)
 
 다른 `Login Page Mapping` 이름으로 추가
 
-* /content/sites/engage/en/sign:/content/sites/engage/en
+* `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 ## 선택 단계 {#optional-steps}
 
@@ -292,13 +304,14 @@ Aaron [McDonald는](/help/communities/tutorials.md#demo-users)
 
 
 1. 모두 **저장을 선택합니다.**
-1. (선택 사항) 탐색 내역을 삭제합니다.
+1. (선택 사항) 검색 내역을 삭제합니다.
 1. https://localhost:4503/으로 이동합니다.
 
-   * https://localhost:4503/content/sites/engage/en.html
+   * https://localhost:4503/content/sites/engage/en.html에 도착
 
 >[!NOTE]
-비활성화하려면 `sling:match` 속성 값에 &#39;x&#39; - `xlocalhost.4503/$` 및 [모두 **저장]을 간단히 접두사로 붙이면 됩니다**.
+>
+>비활성화하려면 `sling:match` 속성 값에 &#39;x&#39; - `xlocalhost.4503/$` 및 [모두 **저장]을 간단히 접두사로 붙이면 됩니다**.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -321,5 +334,6 @@ Aaron [McDonald는](/help/communities/tutorials.md#demo-users)
 수정 후에는 사이트를 **저장하고** 다시&#x200B;**게시해야** 합니다.
 
 >[!NOTE]
-AEM에 익숙하지 않은 경우 [기본 처리에](/help/sites-authoring/basic-handling.md) 대한 설명서와 페이지 [작성에 대한](/help/sites-authoring/qg-page-authoring.md)빠른 안내서를 봅니다.
+>
+>AEM에 익숙하지 않은 경우 [기본 처리에](/help/sites-authoring/basic-handling.md) 대한 설명서와 페이지 [작성에 대한](/help/sites-authoring/qg-page-authoring.md)빠른 안내서를 봅니다.
 
