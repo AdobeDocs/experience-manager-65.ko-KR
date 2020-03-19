@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f63e776d1f7a9433e80633cdcfdf5ffed37b29da
+source-git-commit: 4f3928558641af89d138bfbf85ba099a4286b2f3
 
 ---
 
@@ -201,9 +201,8 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 >
 >하나의 유효한 IMS 구성만 만듭니다. 여러 IMS 구성을 만들지 마십시오.
 >
-> 구성이 정상인지 확인합니다. 구성이 비정상인 경우 삭제하고 새 정상 구성을 만듭니다.
+> 구성이 올바른지 확인하십시오. 구성이 비정상인 경우 삭제하고 새 정상 구성을 만듭니다.
 
-<br/> <br/>
 
 ### 클라우드 서비스 구성 {#configure-the-cloud-service}
 
