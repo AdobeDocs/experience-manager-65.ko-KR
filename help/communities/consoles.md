@@ -10,14 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # 커뮤니티 콘솔 {#communities-consoles}
 
-전역 탐색 패널의 작성 환경에서 사용할 수 있는 AEM Communities 콘솔에서는
+전역 탐색 패널의 작성 환경에서 사용할 수 있는 AEM Communities 콘솔에서는 다음과 같은 관리 작업에 액세스할 수 있습니다.
 
 * [커뮤니티 사이트 만들기](sites-console.md)
 * 사이트 내에 중첩된 [그룹](groups.md) 추가
@@ -33,7 +33,7 @@ UGC [스토리지를](working-with-srp.md) 작성자 및 게시 환경에서 공
 
 >[!NOTE]
 >
->게시 환경에서 [커뮤니티 사이트는](sites-console.md) 로그인한 구성원이 적절한 권한을 가질 때 `Administration`메뉴 항목을 표시합니다.
+>게시 환경에서, [커뮤니티 사이트는](sites-console.md) 로그인한 구성원이 적절한 권한을 가질 때 `Administration` 메뉴 항목을 표시합니다.
 
 ## 전역 탐색 패널 {#global-navigation-panel}
 
