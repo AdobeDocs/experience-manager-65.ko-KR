@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# 커뮤니티 기능에 대한 분석 구성{#analytics-configuration-for-communities-features}
+# 커뮤니티 기능에 대한 분석 구성 {#analytics-configuration-for-communities-features}
 
 ## 개요 {#overview}
 
@@ -31,8 +31,8 @@ AEM Communities에 대해 Adobe Analytics를 구성할 수 있으므로 구성�
 * 게시 환경에서:
 
    * 커뮤니티 [트렌드 보고](/help/communities/trends.md)
-   * 사이트 방문자가 &quot;가장 많이 본&quot;, &quot;가장 활성&quot;, &quot;가장 좋아함&quot;별로 정렬하도록 허용
-   * UGC 목록의 뷰 카운트
+   * 사이트 방문자가 &quot;가장 많이 본&quot;, &quot;가장 활성&quot;, &quot;가장 좋아요&quot; 순으로 정렬하도록 허용
+   * UGC 목록의 카운트 보기
 
 * 작성 환경에서:
 
@@ -64,12 +64,25 @@ AEM Communities에 대해 Adobe Analytics를 구성할 수 있으므로 구성�
 
 Analytics for Communities 기능을 구성하려면 계정 담당자와 협력하여 Adobe Analytics 계정 및 [보고서 세트를](#adobe-analytics-report-suite-for-video-reporting)설정해야 합니다. 설정된 후에는 다음 정보를 사용할 수 있습니다.
 
-* 회사 이름Adobe Analytics 계정과 연결된 회사
-* 사용자 이름 Analytics 계정을 관리할 수 있는 사용자의 로그인 사용자 이름(웹 서비스 액세스 권한 포함)
+* **회사 이름**
 
-* 암호 인증된 사용자의 로그인 암호
-* Analytics 데이터 센터 계정의 Analytics 데이터 센터의 URL
-* 보고서 세트 사용할 Analytics 보고서 세트의 이름
+   Adobe Analytics 계정과 연결된 회사입니다.
+
+* **사용자 이름**
+
+   Analytics 계정을 관리할 수 있는 사용자의 로그인 사용자 이름(웹 서비스 액세스 권한 포함).
+
+* **암호**
+
+   권한이 있는 사용자의 로그인 암호입니다.
+
+* **Analytics 데이터 센터**
+
+   계정에 대한 Analytics 데이터 센터의 URL입니다.
+
+* **보고서 세트**
+
+   사용할 Analytics 보고서 세트의 이름입니다.
 
 ## 비디오 보고를 위한 Adobe Analytics 보고서 세트 {#adobe-analytics-report-suite-for-video-reporting}
 
@@ -97,12 +110,12 @@ Adobe Marketing Cloud의 보고서 [세트 관리자를](https://marketing.adobe
 
    * 비디오 보고 콘솔
 
-      * 활성화 `Video Core`
-      * 저장 선택
+      * 사용 `Video Core`
+      * 저장을 선택합니다
    * 비디오 코어 측정 콘솔
 
-      * select `Use Solution Variables`
-      * 저장 선택
+      * 선택 `Use Solution Variables`
+      * 저장을 선택합니다
 
 
 새 보고서 세트를 ****&#x200B;사용하는 경우 새 보고서 세트에는 4개의 evar 및 6개의 이벤트 변수만 있고, Communities에는 11개의 evar 및 7개의 이벤트 변수가 필요합니다.
@@ -113,10 +126,10 @@ Adobe Marketing Cloud의 보고서 [세트 관리자를](https://marketing.adobe
 >
 >**If using a existing report suite that already uses variables within**
 >
->* **`evar1`** through **`evar11`**
+>* **`evar1`** ~ **`evar11`**
    >
    >
-* **`event1`** through **`event7`**
+* **`event1`** ~ **`event7`**
 >
 >
 **그런 다음 커뮤니티 사이트를 게시하기 전에** Analytics가 커뮤니티 사이트에 대해 활성화되었을 때 Analytics 변수에 자동으로 매핑되는 AEM 변수를 이동하여 기존 매핑을 복원하는 것이 중요합니다.
@@ -131,7 +144,7 @@ Adobe Marketing Cloud의 보고서 [세트 관리자를](https://marketing.adobe
 
 비디오 보고를 [위해 Analytics 보고서 세트를](#adobe-analytics-report-suite-for-video-reporting)구성한 후 비디오 하트비트 보고를 활성화하려면:
 
-* analytics 클라우드 [서비스 만들기](#aem-analytics-cloud-service-configuration)
+* Analytics [클라우드 서비스 만들기](#aem-analytics-cloud-service-configuration)
 * 커뮤니티 [사이트에 대한 분석 활성화](#enable-analytics-for-a-community-site)
 * 커뮤니티 사이트에 `Marketing Cloud Org Id` 연결
 
@@ -147,27 +160,33 @@ Adobe Marketing Cloud의 보고서 [세트 관리자를](https://marketing.adobe
 
 작성자 인스턴스의 표준 UI를 사용하여 Adobe Analytics를 AEM 커뮤니티 사이트와 통합하는 새 Analytics 통합을 만들려면:
 
-* 전역 탐색에서 다음을 수행합니다.도구, **배포, 클라우드 서비스**
-* 아래로 스크롤하여 **Adobe Analytics**
-* 지금 **구성 또는 구성** **표시를 선택합니다.**
+* 전역 탐색에서:UIControl **[도구 > 배포 > 클라우드 서비스]**
+* Adobe Analytics로 **[스크롤 다운하기]**
+* UIConcontrol **[지금 구성]** 또는 UIConcontrol 구성 **[표시 선택]**
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 ### 구성 만들기 대화 상자 {#create-configuration-dialog}
 
-* 사용 가능한 구성 옆에 **[있는]** + **아이콘을 선택하여** 새 구성 만들기
+* 사용 가능한 구성 `[+]` 제어 옆에 있는 **[]** 아이콘을 선택하여 새 구성을 만듭니다.
 
 구성 만들기 대화 상자에서 입력할 값은 구성을 식별합니다.
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
-* **제목**(필수) 구성에 대한 표시 제목입니다.
+* **제목**
+
+   (필수) 구성에 대한 표시 제목입니다.
 예를 들어 역량 강화 *커뮤니티 분석을 입력합니다.*
 
-* **이름**(선택 사항) 지정하지 않으면 이름이 기본적으로 제목에서 파생된 유효한 노드 이름으로 지정됩니다.
+* **이름**
+
+   (선택 사항) 지정하지 않으면 이름이 기본적으로 제목에서 파생된 유효한 노드 이름으로 지정됩니다.
 예를 들어 *커뮤니티에 입장합니다.*
 
-* *템플릿*&#x200B;선택 `Adobe Analytics Configuration`
+* **템플릿**
+
+   선택 `Adobe Analytics Configuration`
 
 * **만들기**&#x200B;를 선택합니다
 
@@ -179,29 +198,43 @@ Adobe Marketing Cloud의 보고서 [세트 관리자를](https://marketing.adobe
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-* **Adobe** Analytics 계정과 연결된 회사
+* **회사**
 
-* **사용자 이름** Analytics 계정을 관리할 수 있는 사용자의 로그인 사용자 이름
+   Adobe Analytics 계정과 연결된 회사
 
-* **인증된**&#x200B;사용자의 로그인 암호
+* **사용자 이름**
 
-* **데이터 센터는**&#x200B;보고서 세트를 호스팅하는 Analytics 데이터 센터를 선택합니다
+   Analytics 계정을 관리하도록 권한이 부여된 사용자의 로그인 사용자 이름
 
-* **페이지에**&#x200B;추적 태그를 추가하지 않음(선택 취소됨)
+* **암호**
 
-* **AppMeasurement를**&#x200B;기본값으로 사용(선택 취소)
+   권한이 있는 사용자의 로그인 암호
 
-* **매일 밤 페이지 노출 횟수를 가져오지 않음(작성자)**&#x200B;은 기본값으로 남음(선택 취소됨)
+* **데이터 센터**
+
+   보고서 세트를 호스팅하는 Analytics 데이터 센터를 선택합니다.
+
+* **페이지에 추적 태그를 추가하지 않음**
+
+   기본값으로 유지(선택 취소)
+
+* **AppMeasurement 사용**
+
+   기본값으로 유지(선택 취소)
+
+* **페이지 노출을 매일 밤 가져오지 않음(작성자)**
+
+   기본값으로 유지(선택 취소)
 
 * **페이지 노출 횟수를 매일 밤 가져오지 않음(게시)**&#x200B;은 기본값으로 남음(선택 취소됨)
 
 설정을 저장하려면
 
-* analytics **에 연결 선택**
+* Analytics **에 연결 선택**
 
    * 성공하지 못하면
 
-      * 항목에 선행 공백이 포함되어 있지 않은지 확인
+      * 항목에 선행 공백이 없는지 확인
       * 다른 데이터 센터 사용
       * 계정 담당자에게 문의
 
@@ -213,16 +246,22 @@ Adobe Marketing Cloud의 보고서 [세트 관리자를](https://marketing.adobe
 
 Adobe Analytics에 대한 기본 연결을 성공적으로 구성한 후에는 커뮤니티 사이트에 대한 프레임워크를 만들거나 편집해야 합니다. 이 프레임워크의 목적은 AEM(Communities Feature) 변수를 Analytics(보고서 세트) 변수에 매핑하는 것입니다.
 
-* 사용 가능한 프레임워크 옆에 `[+]` 있는 **** 아이콘을 선택하여 새 프레임워크를 만듭니다.
+* 사용 가능한 프레임워크 `[+]` 제어 옆에 있는 **[]** 아이콘을 선택하여 새 프레임워크를 만듭니다.
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-* **Title**(필수) 프레임워크의 표시 제목예를 들어, Enablement *Community Framework를 입력합니다*
+* **제목**
 
-* **이름**(선택 사항) 지정하지 않으면 이름이 기본적으로 제목에서 파생된 유효한 노드 이름으로 지정됩니다.
+   (필수) 프레임워크의 표시 제목예를 들어, *지원 커뮤니티 프레임워크를 입력합니다*
+
+* **이름**
+
+   (선택 사항) 지정하지 않으면 이름이 기본적으로 제목에서 파생된 유효한 노드 이름으로 지정됩니다.
 예를 들어 *커뮤니티에 입장합니다.*
 
-* *템플릿*&#x200B;선택 `Adobe Analytics Framework`
+* *템플릿*
+
+   선택 `Adobe Analytics Framework`
 
 * **만들기**&#x200B;를 선택합니다
 
@@ -246,12 +285,15 @@ Analytics 프레임워크를 만들면 구성에 대한 프레임워크가 열�
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. 항목 **+ 추가를 선택합니다.**
-두 개의 드롭다운 상자가 나타납니다.
+1. 항목 **추가 + 선택**
 
-1. 회사 `Report suite.`계정과 연결된 보고서 세트를 선택할 수 있습니다.
+   두 개의 드롭다운 상자가 나타납니다.
 
-1. 대화 상자가 열리면 **Yes **를 선택합니다.
+1. 선택 `Report suite.`
+
+   회사 계정과 연결된 보고서 세트를 선택할 수 있습니다.
+
+1. 대화 **상자에서** 예를 선택합니다.
 
    ```
    Load default server settings?
@@ -259,7 +301,8 @@ Analytics 프레임워크를 만들면 구성에 대한 프레임워크가 열�
    ```
 
 1. 선택 `Run Mode`
-1. Select **publish**
+
+1. **게시**&#x200B;를 선택합니다
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
@@ -272,7 +315,7 @@ Analytics 클라우드 서비스 및 프레임워크가 이제 완료되었습�
 새 커뮤니티 사이트를 [만드는 동안 Analytics 클라우드 서비스를 추가하려면](/help/communities/sites-console.md):
 
 * 3단계의 ANALYTICS 탭에서 [다음을 수행합니다](/help/communities/sites-console.md#analytics).
-   * 분석 **활성화** 확인란을 선택합니다.
+   * Analytics **활성화** 확인란을 선택합니다.
    * 드롭다운 상자에서 프레임워크를 선택합니다.
 
 * 원할 경우, Analytics 프레임워크 구성으로 돌아가 변수 매핑을 조정합니다.
@@ -281,7 +324,7 @@ Analytics 클라우드 서비스 및 프레임워크가 이제 완료되었습�
 
 Analytics 클라우드 서비스를 [기존 커뮤니티 사이트에](/help/communities/sites-console.md#modifying-site-properties)추가하려면:
 
-* 커뮤니티, **사이트 콘솔로** 이동합니다.
+* 커뮤니티 > **사이트 콘솔로** 이동합니다.
 * 커뮤니티 사이트의 사이트 편집 아이콘을 선택합니다.
 * 설정을 선택합니다.
 * 분석 섹션에서 다음을 수행합니다.
@@ -377,7 +420,7 @@ evar1 - evar11 및 event1에서 event7까지의 변수 중 하나를 매핑한 �
   </tr>
   <tr>
    <td><strong>event1<br /> 리소스 재생</strong></td>
-   <td><em>가.</em></td>
+   <td><em>(관리)</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
@@ -390,7 +433,7 @@ evar1 - evar11 및 event1에서 event7까지의 변수 중 하나를 매핑한 �
   </tr>
   <tr>
    <td><strong>event2<br /> SCFView</strong></td>
-   <td><em>가.</em></td>
+   <td><em>(관리)</em></td>
    <td><em>나.</em></td>
    <td><em>다.</em></td>
    <td><em>(d)</em></td>
@@ -471,17 +514,17 @@ evar1 - evar11 및 event1에서 event7까지의 변수 중 하나를 매핑한 �
 
 **eVar 값에 대한 예:**
 
-* *(a)[MIME 유형](https://www.iana.org/assignments/media-types)*:video/mp4
-* *(b)[커뮤니티 사이트 제목](/help/communities/sites-console.md#step13asitetemplate)*:Geometrixx Communities
-* *(c)[커뮤니티 기능 이름](/help/communities/functions.md)*:포럼
-* *(d)[커뮤니티 그룹 이름](/help/communities/creating-groups.md#creating-a-new-group)*:하이킹
-* *(e) 커뮤니티 그룹 콘텐츠의*&#x200B;경로:/content/sites/communities/en/groups/hiking
-* *(f)[UGC 구성 요소 리소스유형](/help/communities/essentials.md)*:social/forum/components/hbs/topic
-* *(g) UGC 구성 요소 제목*:하이킹 주제
-* *(h) 로그인(authorizableId)*:aaron.mcdonald@mailinator.com
-* *(i) UGC에 대한 SRP 경로*:/content/usergenerated/asi/.../forum/jmtz-topic3또는 *팔로우할*&#x200B;구성 요소의 경로:/content/sites/communities/en/jcr:content/content/primary/forum
+* *[MIME 유형](https://www.iana.org/assignments/media-types)*:video/mp4
+* *[커뮤니티 사이트 제목](/help/communities/sites-console.md#step13asitetemplate)*:Geometrixx Communities
+* *[커뮤니티 함수 이름](/help/communities/functions.md)*:포럼
+* *[커뮤니티 그룹 이름](/help/communities/creating-groups.md#creating-a-new-group)*:하이킹
+* *커뮤니티 그룹 컨텐츠에*&#x200B;대한 경로: `/content/sites/communities/en/groups/hiking`
+* *[UGC 구성 요소 리소스유형](/help/communities/essentials.md)*:`social/forum/components/hbs/topic`
+* *UGC 구성 요소 제목*:하이킹 주제
+* *로그인(authorizableId)*: `aaron.mcdonald@mailinator.com`
+* *UGC에 대한 SRP 경로*: `/content/usergenerated/asi/.../forum/jmtz-topic3`또는 다음 *팔로우할 구성 요소의 경로*: `/content/sites/communities/en/jcr:content/content/primary/forum`
 
-* *(j) 커뮤니티 사이트 컨텐츠의*&#x200B;경로:/content/sites/community/en
+* *커뮤니티 사이트 컨텐츠에*&#x200B;대한 경로: `/content/sites/community/en`
 
 ### Analytics 변수 매핑 수정 {#modifying-analytics-variable-mapping}
 
@@ -524,10 +567,10 @@ Analytics 클라우드 서비스 및 프레임워크를 게시하는 커뮤니�
 >
 >**If using a existing report suite that already uses variables within**
 >
->* **`evar1`** through **`evar11`**
+>* **`evar1`** ~ **`evar11`**
    >
    >
-* **`event1`** through **`event7`**
+* **`event1`** ~ **`event7`**
 >
 >
 **그런 다음 커뮤니티 사이트를 게시하기 전에** 기존 매핑을 복원하고 자동으로 매핑되는(커뮤니티 사이트에 대해 Analytics가 활성화된 경우) 커뮤니티 AEM 변수를 다른 Analytics 변수로 이동하는 것이 중요합니다. 이 다시 매핑은 모든 커뮤니티 구성 요소에서 일관되어야 합니다.
@@ -574,7 +617,7 @@ Analytics 클라우드 서비스가 커뮤니티 사이트에 대해 활성화�
 
 Analytics가 활성화된 커뮤니티 사이트가 게시되면 기본 게시자의 [OSGi 구성이](/help/sites-deploying/configuring-osgi.md)CRXDE에 개별적으로 구성되지 않은 구성에 대한 기본 폴링 간격을 `AEM Communities Analytics Report Importer`설정하도록 구성할 수 있습니다.
 
-폴링 간격은 Adobe Analytics에 대한 SRP로 가져오고 저장할 데이터의 요청 빈도를 [제어합니다](/help/communities/working-with-srp.md).
+폴링 간격은 Adobe Analytics에 대한 데이터 가져오기 및 저장 요청 빈도를 [제어합니다](/help/communities/working-with-srp.md).
 
 데이터가 &quot;빅데이터&quot;로 분류될 수 있는 경우 설문 조사가 빈번하면 커뮤니티 사이트에 큰 부하가 발생할 수 있습니다.
 
@@ -602,7 +645,7 @@ Analytics가 활성화된 커뮤니티 사이트가 게시되면 기본 게시�
 
 * Notice the `total`node.
 
-   * **`interval`**속성을 수정하면 보고서 가져오기 간격이 무시됩니다.
+   * 속성을 수정하면 **`interval`** 보고서 가져오기 간격이 무시됩니다.
    * 값은 초 단위이며 4시간(14400초)으로 설정됩니다.
 
 ![chlimage_1-192](assets/chlimage_1-192.png)
@@ -614,6 +657,6 @@ Adobe Analytics는 사용자 데이터에 액세스, 내보내기 및 삭제할 
 ## 리소스 {#resources}
 
 * Adobe Marketing Cloud:Analytics [도움말 및 참조](https://marketing.adobe.com/resources/help/en_US/reference/)
-* AEM:Adobe [Analytics와 통합](/help/sites-administering/adobeanalytics.md)
+* AEM: [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM:외부 [제공업체를 통한 분석](/help/sites-administering/external-providers.md)
 
