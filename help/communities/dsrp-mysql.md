@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -125,7 +125,7 @@ SQL 스크립트는 AEM 저장소에서 가져옵니다.
 
 스키마를 다운로드하는 방법 중 하나는
 
-* SQL 파일의 `jcr:content`노드를 선택합니다.
+* SQL 파일의 `jcr:content` 노드를 선택합니다.
 * 속성 값은 보기 링크입니다. `jcr:data`
 
 * 보기 링크를 선택하여 데이터를 로컬 파일에 저장
@@ -155,7 +155,7 @@ MySQL Workbench
 
 #### 새로 고침 {#refresh}
 
-스크립트가 실행되면 새 데이터베이스를 보기 위해 `SCHEMAS`섹션의 `Navigator` 섹션을 새로 고쳐야 합니다. &#39;SCHEMAS&#39; 오른쪽에 새로 고침 아이콘을 사용합니다.
+스크립트가 실행되면 새 데이터베이스를 보기 위해 `SCHEMAS` 섹션의 `Navigator` 섹션을 새로 고쳐야 합니다. &#39;SCHEMAS&#39; 오른쪽에 새로 고침 아이콘을 사용합니다.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
