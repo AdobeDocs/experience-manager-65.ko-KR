@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -34,11 +34,11 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 **AEM[플랫폼용](/help/sites-deploying/deploy.md#what-is-aem)**
 
-* 최신 [AEM 6.5 업데이트 설치](#aem64updates)
+* 최신 AEM [6.5 업데이트 설치](#aem64updates)
 
 * 기본 포트(4502, 4503)를 사용하지 않는 경우 복제 에이전트를 [구성합니다.](#replication-agents-on-author)
 * [암호화 키 복제](#replicate-the-crypto-key)
-* 세계화를 지원하는 경우 자동 번역 [](/help/sites-administering/translation.md)설정(개발을 위해 샘플 설정이 제공됨)
+* 세계화를 지원하는 경우 자동 번역 [설정](/help/sites-administering/translation.md)(개발을 위해 샘플 설정이 제공됨)
 
 **커뮤니티[기능](/help/communities/overview.md)**
 
@@ -46,26 +46,26 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 * [터널 서비스 활성화](#tunnel-service-on-author)
 * [소셜 로그인 활성화](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
-* [adobe Analytics 구성](/help/communities/analytics.md)
-* [기본 이메일 서비스 설정](/help/communities/email.md)
-* 공유 UGC 스토리지 [(SRP](/help/communities/working-with-srp.md) )에 대한 선택 확인&#x200B;****
+* [Adobe Analytics 구성](/help/communities/analytics.md)
+* 기본 이메일 서비스 [설정](/help/communities/email.md)
+* 공유 UGC 스토리지 [(SRP)에 대한 선택](/help/communities/working-with-srp.md) 사항&#x200B;****&#x200B;확인
 
-   * if MongoDB SRP [(MSRP)](/help/communities/msrp.md)
+   * MongoDB SRP [(MSRP)인 경우](/help/communities/msrp.md)
 
-      * [mongoDB 설치 및 구성](/help/communities/msrp.md#mongodb-configuration)
+      * [MongoDB 설치 및 구성](/help/communities/msrp.md#mongodb-configuration)
       * [솔루션 구성](/help/communities/solr.md)
-      * [msrp 선택](/help/communities/srp-config.md)
-   * if relational database SRP [(DSRP)](/help/communities/dsrp.md)
+      * [MSRP 선택](/help/communities/srp-config.md)
+   * 관계형 데이터베이스 SRP [(DSRP)의 경우](/help/communities/dsrp.md)
 
-      * [mySQL용 JDBC 드라이버 설치](#jdbc-driver-for-mysql)
-      * [dsrp용 MySQL 설치 및 구성](/help/communities/dsrp-mysql.md)
+      * [MySQL용 JDBC 드라이버 설치](#jdbc-driver-for-mysql)
+      * [DSRP용 MySQL 설치 및 구성](/help/communities/dsrp-mysql.md)
       * [솔루션 구성](/help/communities/solr.md)
-      * [dsrp 선택](/help/communities/srp-config.md)
-   * if Adobe SRP [(ASRP)](/help/communities/asrp.md)
+      * [DSRP 선택](/help/communities/srp-config.md)
+   * Adobe SRP [(ASRP)의 경우](/help/communities/asrp.md)
 
-      * 계정 담당자와 프로비저닝 작업
-      * [asrp 선택](/help/communities/srp-config.md)
-   * if JCR SRP [(JSRP)](/help/communities/jsrp.md)
+      * 프로비전을 위해 계정 담당자에게 문의
+      * [ASRP 선택](/help/communities/srp-config.md)
+   * JCR SRP [(JSRP)의 경우](/help/communities/jsrp.md)
 
       * 공유 UGC 저장소가 아님:
 
@@ -74,10 +74,10 @@ source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
       * 기본값은 JSRP입니다.
    지원 **[기능](/help/communities/overview.md#enablement-community)**
 
-   * [ffMPEG 설치 및 구성](/help/communities/ffmpeg.md)
-   * [mySQL용 JDBC 드라이버 설치](#jdbc-driver-for-mysql)
-   * [aem Communities SCORM-Engine 설치](#scorm-package)
-   * [활성화를 위해 MySQL 설치 및 구성](/help/communities/mysql.md)
+   * [FFmpeg 설치 및 구성](/help/communities/ffmpeg.md)
+   * [MySQL용 JDBC 드라이버 설치](#jdbc-driver-for-mysql)
+   * [AEM Communities SCORM-Engine 설치](#scorm-package)
+   * [MySQL 지원 설치 및 구성](/help/communities/mysql.md)
 
 
 
@@ -102,8 +102,8 @@ AEM 6.4 이상 버전과 마찬가지로 AEM Communities 기능 및 핫픽스는
 
 MySQL 데이터베이스를 사용하는 두 개의 커뮤니티 기능:
 
-* for [enablement](/help/communities/enablement.md) :scorm 활동 및 수강생 기록
-* for [DSRP](/help/communities/dsrp.md) :사용자 생성 컨텐츠 저장(UGC)
+* [ [활성화](/help/communities/enablement.md) ]:scorm 활동 및 수강생 기록
+* DSRP [의](/help/communities/dsrp.md) 경우:사용자 생성 컨텐츠 저장(UGC)
 
 MySQL 커넥터를 별도로 구하고 설치해야 합니다.
 
@@ -113,20 +113,20 @@ MySQL 커넥터를 별도로 구하고 설치해야 합니다.
 
    * 버전은 5.1.38보다 커야 합니다.
 
-1. 아카이브에서 extract mysql-connector-java-&lt;version>-bin.jar (bundle)
-1. 웹 콘솔을 사용하여 번들 설치 및 시작:
+1. 보관에서 mysql-connector-java-&lt;버전>-bin.jar(번들)를 추출합니다.
+1. 웹 콘솔을 사용하여 번들을 설치하고 시작합니다.
 
-   * 예를 들어 https://localhost:4502/system/console/bundles
-   * select **`Install/Update`**
+   * 예: https://localhost:4502/system/console/bundles
+   * 선택 **`Install/Update`**
    * 찾아보기...다운로드한 ZIP 보관에서 추출한 번들을 선택하려면
-   * mySQLcom.mysql.jdbc*용 Oracle Corporation의 JDBC 드라이버가 활성 상태인지 확인하고 활성 상태가 아니면 시작(또는 로그 확인)
+   * Oracle *Corporation의 MySQLcom.mysql.jdbc용 JDBC 드라이버가* 활성 상태인지 확인하고 활성 상태가 아니면 시작(또는 로그 확인)
 
 1. JDBC가 구성된 후 기존 배포에 설치하는 경우 웹 콘솔에서 JDBC 구성을 다시 저장하여 JDBC를 새 커넥터에 다시 바인딩합니다.
 
-   * 예를 들어 https://localhost:4502/system/console/configMgr
-   * 구성 찾기 `Day Commons JDBC Connections Pool`
+   * 예: https://localhost:4502/system/console/configMgr
+   * 구성 `Day Commons JDBC Connections Pool` 찾기
    * 열려면 선택
-   * select `Save`
+   * 선택 `Save`
 
 1. 모든 작성자 및 게시 인스턴스에 대해 3단계와 4단계를 반복합니다.
 
@@ -168,7 +168,7 @@ SRP 컬렉션(MSRP 또는 DSRP)에서 고급 다국어 검색(MLS)을 지원하�
 * [AEM-SOLR-MLS-PHASETOO](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
    * 버전 1.2.40, 2016년 4월 6일
-   * aem-SOLR-MLS-phasetoo-1.2.40.zip 다운로드
+   * AEM-SOLR-MLS-phasetoo-1.2.40.zip 다운로드
 
 자세한 내용 및 설치 정보는 SRP [용](/help/communities/solr.md) 솔루션 구성을 참조하십시오.
 
@@ -176,18 +176,18 @@ SRP 컬렉션(MSRP 또는 DSRP)에서 고급 다국어 검색(MLS)을 지원하�
 
 **Adobe AEM Cloud에 표시되는 패키지**
 
-이 페이지에서 패키지에 대한 링크는 패키지 공유를 위해 AEM의 실행 인스턴스가 필요하지 않습니다 `adobeaemcloud.com`. 패키지를 볼 수 있지만 이 `Install`단추는 Adobe 호스팅 사이트에 패키지를 설치하는 것입니다. 로컬 AEM 인스턴스에 설치하려는 경우 `Install`오류가 발생합니다.
+이 페이지에서 패키지에 대한 링크는 패키지 공유를 위해 AEM의 실행 인스턴스가 필요하지 않습니다 `adobeaemcloud.com`. 패키지를 볼 수 있지만 이 `Install` 단추는 Adobe 호스팅 사이트에 패키지를 설치하는 것입니다. 로컬 AEM 인스턴스에 설치하려면 이 옵션을 선택하면 오류가 `Install` 발생합니다.
 
 **로컬 AEM 인스턴스에 설치하는 방법**
 
 로컬 AEM `adobeaemcloud.com` 인스턴스에 표시되는 패키지를 설치하려면 먼저 로컬 디스크에 패키지를 다운로드해야 합니다.
 
-* select the **Assets** tab
+* Select the **Assets** tab
 * 디스크에 **다운로드 선택**
 
 로컬 AEM 인스턴스에서 패키지 관리자(예: [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/))를 사용하여 로컬 AEM의 패키지 리포지토리에 업로드합니다.
 
-또는 로컬 AEM 인스턴스에서 패키지 공유를 사용하여 패키지에 액세스하면(예: [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)) `Download`버튼이 로컬 AEM 인스턴스의 패키지 저장소로 다운로드됩니다.
+또는 로컬 AEM 인스턴스에서 패키지 공유를 사용하여 패키지에 액세스하면(예: [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)) `Download` 버튼이 로컬 AEM 인스턴스의 패키지 저장소로 다운로드됩니다.
 
 로컬 AEM 인스턴스의 패키지 저장소에 있는 경우 패키지 관리자를 사용하여 패키지를 설치합니다.
 
@@ -213,7 +213,7 @@ AEM Communities에서 공용 스토어는 사용자 생성 콘텐츠(UGC)를 저
 
 ### 기본 게시자 {#primary-publisher}
 
-선택한 배포가 [게시 팜인](/help/communities/topologies.md#tarmk-publish-farm)경우 **notifications **또는 Adobe Analytics를 사용하는 기능과 같이 모든 인스턴스에서 발생해서는 안 되는 활동의 **`primary publisher`** 대상으로 하나의 AEM 게시 인스턴스를 식별해야 **합니다**.
+선택한 배포가 [게시 팜인](/help/communities/topologies.md#tarmk-publish-farm)경우, 하나의 AEM 게시 인스턴스가 **`primary publisher`** 알림 **또는 Adobe Analytics를 사용하는 기능과 같이 모든 인스턴스에서 발생해서는 안 되는** 활동의 대상으로 식별되어야 **합니다**.
 
 기본적으로 OSGi `AEM Communities Publisher Configuration` 구성은 확인란을 선택하여 **`Primary Publisher`** 구성되며, 이렇게 하면 게시 팜의 모든 게시 인스턴스가 기본으로 자체적으로 식별됩니다.
 
@@ -228,10 +228,10 @@ AEM Communities에서 공용 스토어는 사용자 생성 콘텐츠(UGC)를 저
 
    * 예: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-* locate `AEM Communities Publisher Configuration`
+* Locate the `AEM Communities Publisher Configuration`
 * 편집 아이콘 선택
 * 기본 게시자 **상자의 선택을** 취소합니다
-* select **Save**
+* **저장**&#x200B;을 선택합니다
 
 ### 작성자의 복제 에이전트 {#replication-agents-on-author}
 
@@ -245,7 +245,7 @@ AEM Communities에서 공용 스토어는 사용자 생성 콘텐츠(UGC)를 저
 
 * 작성자의 복제 콘솔 액세스
 
-   * 전역 탐색:작성자의 **도구, 배포, 복제, 에이전트**
+   * 글로벌 탐색에서 UIControl 도구 > **[배포 > 복제 > 작성자의 에이전트로 이동합니다.]**
 
 * 두 에이전트 모두에 대해 동일한 절차를 따르십시오.
 
@@ -253,11 +253,11 @@ AEM Communities에서 공용 스토어는 사용자 생성 콘텐츠(UGC)를 저
    * **역방향 복제 에이전트(역 게시)**
 
       1. 에이전트 선택
-      1. select **edit**
-      1. select the **Transport** tab
-      1. 포트를 지원하지 `4503`않는 경우 URI **를** 편집하여 올바른 포트를 지정하십시오.
+      1. Select **edit**
+      1. Select the **Transport** tab
+      1. 포트가 없는 `4503`경우 URI **를** 편집하여 올바른 포트를 지정하십시오.
 
-      1. 사용자가 아닌 `admin`경우 사용자 **및** 암호를 **편집하여** 사용자 `administrators` 그룹의 구성원을 지정합니다.
+      1. 사용자가 아닌 `admin`경우 사용자 **및** 암호를 편집하여 **** `administrators` 사용자 그룹의 구성원을 지정합니다.
 
 다음 이미지는 포트 변경 결과를 4503에서 6103으로 보여 줍니다.
 
@@ -277,18 +277,18 @@ AEM Communities에서 공용 스토어는 사용자 생성 콘텐츠(UGC)를 저
 
 터널 서비스를 활성화하려면:
 
-* 작성자 ****
+* On **author**
 * 관리자 권한으로 로그인
-* publisher가 localhost:4503이 아니거나 전송 사용자가 아닌 `admin`경우 복제 에이전트를 [구성합니다.](#replication-agents-on-author)
+* 게시자가 localhost:4503이 아니거나 전송 사용자가 아닌 `admin`경우 복제 에이전트를 [구성합니다.](#replication-agents-on-author)
 
 * 웹 [콘솔 액세스](/help/sites-deploying/configuring-osgi.md)
 
    * 예: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-* locate `AEM Communities Publish Tunnel Service`
+* Locate the `AEM Communities Publish Tunnel Service`
 * 편집 아이콘 선택
-* **enable **box 확인
-* select **Save**
+* 활성화 **상자를 선택합니다** .
+* **저장**&#x200B;을 선택합니다
 
 ![](/help/communities/assets/chlimage_1-129.png)
 
@@ -300,22 +300,22 @@ AEM 6.3부터는 주요 자료가 파일 시스템에 저장되고 더 이상 �
 
 작성자에서 다른 모든 인스턴스로 주요 자료를 복사하려면 다음을 수행해야 합니다.
 
-* 복사할 주요 자료가 들어 있는 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스합니다.
+* 복사할 주요 자료가 포함된 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스합니다.
 
-   * 로컬 파일 시스템에서 `com.adobe.granite.crypto.file` 번들을 찾습니다. 예를 들면 다음과 같습니다.
+   * 로컬 파일 시스템에서 번들을 `com.adobe.granite.crypto.file` 찾습니다. 예를 들면 다음과 같습니다.
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * 이 `bundle.info` 파일은 번들을 식별합니다
-   * 예를 들어 데이터 폴더로 이동합니다.
+   * 예를 들어 데이터 폴더를 탐색합니다.
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * mac 및 마스터 파일 복사
 
 
 
-* for each target AEM instance
+* 각 대상 AEM 인스턴스에 대해
 
-   * 예를 들어 데이터 폴더로 이동합니다.
+   * 예를 들어 데이터 폴더를 탐색합니다.
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * 이전에 복사한 2개 파일 붙여넣기
@@ -340,27 +340,27 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로 저장소에 주요 자�
 
 CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md) :
 
-* https://&lt; [server>:&lt;port>/crx/de 찾아보기](https://localhost:4502/crx/de)
-* select `/etc/key`
+* https://&lt; [server>:&lt;port>/crx/de로 이동합니다.](https://localhost:4502/crx/de)
+* 선택 `/etc/key`
 * 열기 `Replication` 탭
-* select `Replicate`
+* 선택 `Replicate`
 
-* [granite Crypto 번들 새로 고침](#refresh-the-granite-crypto-bundle)
+* [Granite Crypto 번들 새로 고침](#refresh-the-granite-crypto-bundle)
 
 ![](/help/communities/assets/chlimage_1-130.png)
 
 #### Granite Crypto 번들 새로 고침 {#refresh-the-granite-crypto-bundle}
 
-* 각 게시 인스턴스에서 웹 [콘솔에 액세스합니다.](/help/sites-deploying/configuring-osgi.md)
+* 각 게시 인스턴스에서 웹 [콘솔에 액세스합니다](/help/sites-deploying/configuring-osgi.md)
 
    * 예: [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
 
-* locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
+* 번들 `Adobe Granite Crypto Support` 찾기(com.adobe.granite.crypto)
 * 새로 고침 **선택**
 
 ![](/help/communities/assets/chlimage_1-131.png)
 
-* 잠시 후 **성공 **대화 상자가 나타나야 합니다.
+* 잠시 후 성공 **대화 상자가** 표시됩니다.
    `Operation completed successfully.`
 
 ### Apache HTTP Server {#apache-http-server}
