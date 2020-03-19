@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d522c5ec6c72a9fd391d021f2fac37f88c686bd9
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
-# 점수 및 배지 필수{#scoring-and-badges-essentials}
+# 점수 및 배지 필수 {#scoring-and-badges-essentials}
 
 AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하고 보상하는 기능을 제공합니다.
 
@@ -26,9 +26,9 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
 이 페이지에는 추가 기술 세부 사항이 포함되어 있습니다.
 
-* 이미지 또는 텍스트로 배지를 [](#displaying-badges) 표시하는 방법
-* 광범위한 [디버그 로깅 설정 방법](#debug-log-for-scoring-and-badging)
-* 점수 지정 및 배지 [](#ugc-for-scoring-and-badging) 처리와 관련된 UGC에 액세스하는 방법
+* 이미지 또는 텍스트로 배지를 [표시하는](#displaying-badges) 방법
+* 광범위한 [디버그 로깅을 설정하는 방법](#debug-log-for-scoring-and-badging)
+* 점수 지정 및 배지 [처리와](#ugc-for-scoring-and-badging) 관련된 UGC에 액세스하는 방법
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
 HBS 템플릿의 클라이언트 쪽에서 배지가 텍스트 또는 이미지로 표시되는지 여부를 제어합니다.
 
-예를 들어 `this.isAssigned` in, `/libs/social/forum/components/hbs/topic/list-item.hbs`:
+예를 들어 `this.isAssigned` 다음 위치에서 `/libs/social/forum/components/hbs/topic/list-item.hbs`검색합니다.
 
 ```
 {{#each author.badges}}
@@ -80,40 +80,40 @@ false인 경우 [할당]은 획득 점수에 대해 배지가 부여되었음을
 
 슬링로그 파일을 신속하게 설정하려면
 
-1. adobe Experience **Manager 웹 콘솔 로그**&#x200B;지원
+1. Adobe Experience **Manager 웹 콘솔 로그 지원에**&#x200B;액세스(예:
 
    * https://localhost:4502/system/console/slinglog
 
 1. 새 **로거 추가 선택**
 
-   1. 로그 `DEBUG`수준에 **대해 선택**
+   1. 로그 `DEBUG` 수준 **선택**
 
    1. 로그 파일의 이름을 **입력합니다**. 예를 들면 다음과 같습니다.
 
       * logs/scoring-debug.log
-   1. 두 개의 **Logger **(클래스) 항목 입력( `+` 아이콘 사용)
+   1. 로거 **항목** 두 개(클래스) 입력( `+` 아이콘 사용)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
-   1. select **Save**
+   1. **저장**&#x200B;을 선택합니다
 
 
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
-로그 항목을 보려면
+로그 항목을 보려면 다음을 수행하십시오.
 
 * 웹 콘솔에서
 
-   * **상태 **메뉴 아래
+   * 상태 **메뉴** 아래
    * 로그 **파일 선택**
    * 로그 파일 이름(예: `scoring-debug`
 
-* 서버의 로컬 디스크에
+* 서버의 로컬 디스크에 있음
 
    * 로그 파일은 &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log에 있습니다.
 
-   * for example, `.../crx-quickstart/logs/scoring-debug.log`
+   * 예, `.../crx-quickstart/logs/scoring-debug.log`
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
@@ -125,7 +125,7 @@ CRXDE Lite를 사용하여 UGC에 쉽게 액세스할 수 있으므로 점수 �
 
 **작성자의** JSRP:작성 환경에서 테스트하면 작성 환경에서만 표시되는 UGC가 만들어집니다.
 
-**게시** 시 JSRP:마찬가지로 게시 환경에서 테스트하는 경우 게시 인스턴스에 대한 관리 권한이 있는 CRXDE Lite에 액세스해야 합니다. 게시 인스턴스가 [프로덕션 모드](/help/sites-administering/production-ready.md) (nosamplecontent runmode)에서 실행 중인 경우 CRXDE Lite를 [활성화해야 합니다](/help/sites-administering/enabling-crxde-lite.md).
+**게시**&#x200B;시 JSRP:마찬가지로 게시 환경에서 테스트하는 경우 게시 인스턴스에 대한 관리 권한이 있는 CRXDE Lite에 액세스해야 합니다. 게시 인스턴스가 [프로덕션 모드](/help/sites-administering/production-ready.md) (nosamplecontent runmode)에서 실행 중인 경우 CRXDE Lite를 [활성화해야 합니다](/help/sites-administering/enabling-crxde-lite.md).
 
 JSRP에 대한 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니다.
 
@@ -146,12 +146,12 @@ JSRP에 대한 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니�
 
 1. 고유 ID가 *있는* AEM 사이트(마법사를 사용하여 만든 커뮤니티 사이트):
 
-* 시작하기 자습서(참여) 사이트에서 [시작하기 자습서 사용](/help/communities/getting-started.md)
-* 포럼 페이지 노드 찾기
+   * 시작하기 자습서(참여) 사이트 [사용](/help/communities/getting-started.md)
+   * 포럼 페이지 노드 찾기
 
-   * `/content/sites/engage/en/forum/jcr:content`
+      `/content/sites/engage/en/forum/jcr:content`
 
-* 점수 및 배지 속성 추가
+   * 점수 및 배지 속성 추가
 
    ```
    scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -163,25 +163,26 @@ JSRP에 대한 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니�
    /etc/community/badging/rules/forums-scoring]
    ```
 
-* 포럼 구성 요소 노드 찾기
+   * 포럼 구성 요소 노드 찾기
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-* 표시 배지에 속성 추가
+   * 디스플레이 배지에 속성 추가
 
-   * `allowBadges = true`
+      `allowBadges = true`
 
-* 사용자가 로그인하고 포럼 주제를 생성하고 청동 배지를 수여합니다.
+   * 사용자가 로그인하고 포럼 주제를 생성하고 청동 배지를 수여합니다.
+
 
 1. 고유 ID가 *없는* AEM 사이트:
 
-* 커뮤니티 구성 [요소 안내서 사용](/help/communities/components-guide.md)
-* 포럼 페이지 노드 찾기
+   * 커뮤니티 구성 [요소 안내서 사용](/help/communities/components-guide.md)
+   * 포럼 페이지 노드 찾기
 
-   * `/content/community-components/en/forum/jcr:content`
+      `/content/community-components/en/forum/jcr:content`
 
-* 점수 및 배지 속성 추가
+   * 점수 및 배지 속성 추가
 
    ```
    scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -193,24 +194,25 @@ JSRP에 대한 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니�
    /etc/community/badging/rules/forums-scoring]
    ```
 
-* 포럼 구성 요소 노드 찾기
+   * 포럼 구성 요소 노드 찾기
 
-   * `/content/community-components/en/forum/jcr:content/content/forum`
+      `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-* 표시 배지에 속성 추가
+   * 디스플레이 배지에 속성 추가
 
-   * `allowBadges = true`
+      `allowBadges = true`
 
-* 사용자가 로그인하고 포럼 주제를 생성하고 청동 배지를 수여합니다.
+   * 사용자가 로그인하고 포럼 주제를 생성하고 청동 배지를 수여합니다.
+
 
 1. 사용자는 cURL을 사용하여 중재자 배지가 할당됩니다.
 
-```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
-```
+   ```shell
+   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+   ```
 
-사용자가 두 개의 청동 배지를 획득하고 중재자 배지를 받았으며 포럼 참가자가 표시되는 방식은 다음과 같습니다.
+   사용자가 두 개의 청동 배지를 받았고 사회자 배지를 받았으므로 포럼 참가자가 표시되는 방식은 다음과 같습니다.
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
@@ -218,13 +220,13 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 >
 >이 예는 다음과 같은 우수 사례를 따르지 않습니다.
 >
->* 점수 지정 규칙 이름은 전체적으로 고유해야 합니다.동일한 이름으로 끝나지 않아야 합니다.
-   >  *to do의 예:
+>* 점수 규칙 이름은 전체적으로 고유해야 합니다.동일한 이름으로 끝나지 않아야 합니다.
+   >  해야 *할* 일의 예:
    >  /etc/community/scoring/rules/site1/forums-scoring
    >  /etc/community/scoring/rules/site2/forums-scoring
    >
    >
-* 다양한 AEM 사이트에 대한 고유 배지 이미지 만들기
+* 다양한 AEM 사이트에 대한 고유한 배지 이미지 만들기
 >
 
 
@@ -237,7 +239,7 @@ API를 [사용하는](#scoring-and-badging-apis) 것이 좋습니다.
 
 * `/content/usergenerated/asi/jcr/scoring`
 
-의 하위 노드는 점수 지정 규칙 `scoring`이름입니다. 따라서 서버의 점수 지정 규칙 이름은 전체적으로 고유해야 하는 것이 좋습니다.
+의 하위 노드는 점수 지정 규칙 `scoring` 이름입니다. 따라서 서버의 점수 지정 규칙 이름은 전체적으로 고유해야 하는 것이 좋습니다.
 
 Geometrixx Engage 사이트의 경우 사용자 및 점수는 점수 규칙 이름, 커뮤니티 사이트의 사이트 ID( `engage-ba81p`), 고유 ID 및 사용자 ID로 구성된 경로에 있습니다.
 
@@ -257,17 +259,17 @@ API를 [사용하는](#scoring-and-badging-apis) 것이 좋습니다.
 
 이 예제에 JSRP를 사용하면 할당되거나 수여된 배지에 대한 정보가 포함된 기본 폴더가 조사 목적으로 사용됩니다.
 
-* /content/usergenerated/asi/jcr
+* `/content/usergenerated/asi/jcr`
 
 다음에 배지 폴더(예:
 
-* /home/users/community/w271Up2Z4DjnOQrviv/profile/badges
+* `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
 #### 수상 배지 {#awarded-badge}
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-#### 할당된 배지 {#assigned-badge}
+#### 지정된 배지 {#assigned-badge}
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
