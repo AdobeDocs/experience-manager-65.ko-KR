@@ -10,15 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: b97abfc9-62e6-470c-bb86-086e662c8091
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # 샌드박스 컨텐츠 개발 {#develop-sandbox-content}
 
-**[Clientlibs ⇐ 추가](add-clientlibs.md)**
+**[Clientlibs 추가](add-clientlibs.md)**
 
 이 시점에서 We-Retail 커뮤니티, 커뮤니티 구성 요소 안내서 [및](../../help/sites-developing/we-retail.md)필수 [](components-guide.md)[](essentials.md) 기능for reference를사용하여 샌드박스의 커뮤니티 기능을 살펴볼 수 있습니다.
 
-**[Clientlibs ⇐ 추가](add-clientlibs.md)**
+
