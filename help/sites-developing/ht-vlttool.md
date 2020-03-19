@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: a7c3848704ee2b4b984fafcd82e29a75ea8d3443
+source-git-commit: 2da3da1a36f074593e276ddd15ed8331239ab70f
 
 ---
 
@@ -39,7 +39,7 @@ VLT를 사용하려면 다음을 수행해야 합니다.
 
 VLT 도구를 사용하려면 먼저 설치해야 합니다. 추가 도구이므로 기본적으로 설치되지 않습니다. 또한 시스템의 환경 변수를 설정해야 합니다.
 
-1. Apache Jackrabbit 웹 사이트에서 [FileVault 아카이브 파일을 다운로드합니다.](https://jackrabbit.apache.org/jcr/downloads.html#vlt)
+1. Maven 객체 저장소에서 FileVault 아카이브 파일을 [다운로드합니다.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
    >VLT 도구의 소스는 GitHub에서 [사용할 수 있습니다.](https://github.com/apache/jackrabbit-filevault)
@@ -616,7 +616,7 @@ proplist -q|-R <file1> [<file2> ...]
 >
 >`vlt:mime-type`
 >
->파일의 MIME 유형입니다. 파일을 병합할지 여부를 결정하는 데 사용됩니다. &#39;text/&#39;로 시작하는 MIMETYPE이나 누락된 MIMETYPE은 텍스트로 처리됩니다. 그 밖의 모든 것은 이진법으로 처리됩니다.
+>파일의 MIME 유형입니다. 파일을 병합할지 여부를 결정하는 데 사용됩니다. &#39;text/&#39;로 시작하는 MIMETYPE이나 누락된 MIMETYPE은 텍스트로 처리됩니다. 그 밖의 모든 것은 바이너리로 처리됩니다.
 
 #### 구문 {#syntax-12}
 
