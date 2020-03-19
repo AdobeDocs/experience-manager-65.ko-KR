@@ -11,25 +11,25 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
-# 활성화를 위한 새 커뮤니티 사이트 작성{#author-a-new-community-site-for-enablement}
+# 활성화를 위한 새 커뮤니티 사이트 작성 {#author-a-new-community-site-for-enablement}
 
 ## 커뮤니티 사이트 만들기 {#create-community-site}
 
-[커뮤니티 사이트 만들기는](/help/communities/sites-console.md) 커뮤니티 사이트를 만드는 단계를 안내하는 마법사를 사용합니다. 마지막 단계에서 사이트를 커밋하기 전에 `Next`단계 또는 이전 `Back`단계로 이동할 수 있습니다.
+[커뮤니티 사이트 만들기는](/help/communities/sites-console.md) 커뮤니티 사이트를 만드는 단계를 안내하는 마법사를 사용합니다. 마지막 단계에서 사이트를 커밋하기 전에 `Next` 단계나 이전 단계로 이동할 `Back` 수 있습니다.
 
 새 커뮤니티 사이트 만들기를 시작하려면 다음을 수행하십시오.
 
 [작성자 인스턴스 사용](https://localhost:4502/)
 
 * 관리자 권한으로 로그인
-* 커뮤니티, **사이트로** **이동**
+* UIControl **[커뮤니티 > 사이트로 이동]**
 
-* select **Create**
+* **만들기**&#x200B;를 선택합니다
 
 ### 1단계:사이트 템플릿 {#step-site-template}
 
@@ -48,7 +48,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 * **커뮤니티 사이트 이름**: `enable`
 
-   * 커뮤니티 사이트 이름 아래에 초기 URL이 표시됩니다.
+   * 초기 URL이 커뮤니티 사이트 이름 아래에 표시됩니다.
    * 유효한 URL의 경우 기본 언어 코드 + &quot;.html&quot;을 추가합니다.
       *예*: https://localhost:4502/content/sites/ `enable/en.html`
 
@@ -84,11 +84,11 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 사용자 관리에 대해 대부분의 확인란이 선택 [해제되어 있는지 확인합니다](/help/communities/sites-console.md#user-management) .
 
-* 사이트 방문자가 직접 등록할 수 없도록 허용
+* 사이트 방문자가 직접 등록할 수 없도록 허용 안 함
 * 익명 사이트 방문자가 사이트를 보도록 허용 안 함
-* 커뮤니티 구성원 간의 메시지 허용 여부를 선택
-* do not allow login with Facebook
-* do not allow login with Twitter
+* 커뮤니티 구성원 간의 메시지 허용 여부(선택 사항)
+* Facebook 로그인 허용 안 함
+* Twitter에 로그인 허용 안 함
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
@@ -100,8 +100,8 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 사전 입력 검색을 사용하면 네임스페이스를 손쉽게 찾을 수 있습니다. 예,
 
-* type &#39;tut&#39;
-* select `Tutorial`
+* 유형 `tut`
+* 선택 `Tutorial`
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
@@ -113,7 +113,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 예,
 
-* type &quot;q&quot;
+* 유형 `q`
 * 퀸 [하퍼 선택](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
@@ -151,8 +151,8 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 * **활성 관리자**(필수) `Community Enablement Managers` 그룹의 구성원을 선택하여 이 커뮤니티 사이트를 관리할 수 있습니다.
 
-   * 유형 &quot;s&quot;
-   * select `Sirius Nilson`
+   * 유형 `s`
+   * 선택 `Sirius Nilson`
 
 * **Marketing Cloud 조직** ID(선택 사항) 지원 보고에서 비디오 하트비트 [분석을 포함하는 데 필요한 Adobe Analytics 계정의](/help/communities/analytics.md#video-heartbeat-analytics) ID입니다.
 
@@ -166,7 +166,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-프로세스가 완료되면 새 사이트의 폴더가 커뮤니티 - 사이트 콘솔에 표시됩니다.
+프로세스가 완료되면 커뮤니티 > 사이트 콘솔에 새 사이트의 폴더가 표시됩니다.
 
 ![활성 상태](assets/enablementsitecreated.png)
 
@@ -184,16 +184,26 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 왼쪽에서 오른쪽으로 :
 
-* **사이트**&#x200B;열기를 선택하여 연필 아이콘을 선택하여 작성 편집 모드에서 커뮤니티 사이트를 열고 페이지 구성 요소를 추가 및/또는 구성합니다.
+* **사이트 열기**
 
-* **사이트**&#x200B;편집 아이콘을 선택하여 커뮤니티 사이트를 열어 제목과 같은 속성을 수정하거나 테마를 변경합니다
+   연필 아이콘을 선택하여 작성 편집 모드에서 커뮤니티 사이트를 열고 페이지 구성 요소를 추가 및/또는 구성합니다.
 
-* **사이트**&#x200B;게시 아이콘을 선택하여 커뮤니티 사이트를 게시합니다(기본적으로 localhost:4503).
+* **사이트 편집**
 
-* **사이트 내보내기**&#x200B;아이콘을 선택하여 [패키지 관리자에](/help/sites-administering/package-manager.md) 저장되고 다운로드된 커뮤니티 사이트 패키지를 만듭니다.
+   속성 아이콘을 선택하여 커뮤니티 사이트를 열어 제목과 같은 속성을 수정하거나 테마를 변경합니다
+
+* **게시 사이트**
+
+   커뮤니티 사이트를 게시할 세계 아이콘을 선택합니다(기본적으로 localhost:4503으로).
+
+* **사이트 내보내기**
+
+   내보내기 아이콘을 선택하여 [패키지 관리자에](/help/sites-administering/package-manager.md) 저장되고 다운로드된 커뮤니티 사이트 패키지를 만듭니다.
 UGC는 사이트 패키지에 포함되지 않습니다.
 
-* **사이트**&#x200B;삭제커뮤니티 사이트를 삭제하려면 커뮤니티 사이트 콘솔의 사이트 위로 마우스를 가져가면 나타나는 사이트 삭제 아이콘을 선택합니다. 이 작업은 UGC, 사용자 그룹, 자산 및 데이터베이스 레코드 등 사이트와 연관된 모든 항목을 제거합니다.
+* **사이트 삭제**
+
+   커뮤니티 사이트를 삭제하려면 커뮤니티 사이트 콘솔의 사이트 위로 마우스를 가져가면 나타나는 사이트 삭제 아이콘을 선택합니다. 이 작업은 UGC, 사용자 그룹, 자산 및 데이터베이스 레코드 등 사이트와 연관된 모든 항목을 제거합니다.
 
 ![활성화](assets/enablesiteactions.png)
 
@@ -226,13 +236,13 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 이 예에서 그룹은 `Community Ski Class` 구성원과 `Community Enable Members` 함께 그룹의 구성원으로 추가됩니다 `Quinn Harper`.
 
 * 커뮤니티, **그룹 콘솔로** 이동
-* 커뮤니티 구성원 *그룹 활성화* 선택
+* 커뮤니티 *활성화 구성원* 그룹 선택
 * 그룹에 구성원 추가 **검색 상자에 &#39;ski&#39;를** 입력합니다.
 * 커뮤니티 *스키* 클래스 선택(수강생 그룹)
-* 검색 상자에 &#39;quinn&#39;을 입력합니다.
+* 검색 상자에 &#39;퀸&#39;을 입력합니다.
 * 퀸 *하퍼 선택* (지원 리소스 연락처)
 
-* select **Save**
+* **저장**&#x200B;을 선택합니다
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -258,9 +268,9 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 시작하려면
 
-1. 게시 시, CRXDE에 액세스하고 관리자 권한으로 로그인
+1. 게시 시 CRXDE에 액세스하고 관리자 권한으로 로그인
 
-   * 예를 들어 https://localhost:4503/crx/de [으로](https://localhost:4503/crx/de) 이동하여 `admin/admin`
+   * 예를 들어, https://localhost:4503/crx/de [으로](https://localhost:4503/crx/de) 이동하여 `admin/admin`
 
 1. 프로젝트 브라우저에서 `/etc/map`
 1. 노드 `http` 선택
@@ -273,27 +283,27 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
       * **문자** 슬링: [매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
-1. 새로 생성된 `localhost.4503` 노드 선택
+1. 새로 만든 `localhost.4503` 노드를 선택한 경우
 
-* 속성 추가
+   * 속성 추가
 
-   * **이름** 슬링:일치
-   * **문자열** 유형
-   * **값** localhost.4503/$
+      * **이름** 슬링:일치
+      * **문자열** 유형
+      * **값** localhost.4503/$
+   (&#39;$&#39; 문자로 끝나야 함)
 
-      (&#39;$&#39; 문자로 끝나야 함)
+   * 속성 추가
 
-* 속성 추가
+      * **이름** 슬링:internalRedirect
+      * **문자열** 유형
+      * **값** /content/sites/enable/en.html
 
-   * **이름** 슬링:internalRedirect
-   * **문자열** 유형
-   * **값** /content/sites/enable/en.html
 
-1. 모두 **저장 선택**
-1. (선택 사항) 탐색 내역 삭제
-1. https://localhost:4503/
+1. 모두 **저장을 선택합니다.**
+1. (선택 사항) 탐색 내역을 삭제합니다.
+1. https://localhost:4503/으로 이동
 
-* https://localhost:4503/content/sites/enable/en.html
+   * https://localhost:4503/content/sites/enable/en.html에 도착
 
 >[!NOTE]
 >
@@ -303,7 +313,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 #### 문제 해결:맵 저장 중 오류 발생 {#troubleshooting-error-saving-map}
 
-변경 내용을 저장할 수 없는 경우 노드 이름이 &#39;dot&#39; `localhost.4503`구분 기호로 &#39;colon&#39; 구분 기호가 `localhost:4503` 아닌 &#39;dot&#39; 구분 기호로 되어 `localhost`있는지 확인하십시오.
+변경 내용을 저장할 수 없는 경우 노드 이름이 &#39;dot&#39; `localhost.4503`구분 문자로 &#39;colon&#39; 구분 기호가 아닌 `localhost:4503` 것으로 올바른 네임스페이스 접두사가 `localhost` 아닌지 확인하십시오.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -331,7 +341,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 사이트 구조에 이미 카탈로그 기능이 포함되어 있는 경우 해당 제목을 변경할 수 있습니다.
 
-사이트의 구조를 수정하려면 커뮤니티, 사이트 **콘솔로** 이동하여 `enable` 폴더를 연 다음 **사이트 편집 ** `Enablement Tutorial`아이콘을 선택하여 의 속성에 액세스합니다.
+사이트의 구조를 수정하려면 커뮤니티, 사이트 **콘솔로** 이동하여 `enable` 폴더를 연 다음 사이트 **편집** 아이콘을 선택하여 `Enablement Tutorial`사이트의속성에 액세스합니다.
 
 [구조] 패널을 선택하여 카탈로그를 추가하거나 기존 카탈로그를 수정합니다.
 
