@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -69,7 +69,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->*AEM 이후 MongoDB가 시작하는 경우 **AEM 이후 **다시 시작 **모두 **AEM **인스턴스가 MongoDB에 제대로 연결되도록 합니다.
+>AEM *이후에* MongoDB가 시작된 경우 모든 AEM **인스턴스를 다시** **** 시작하여MongoDB에올바르게 연결합니다.
 
 ### 데모 제작 옵션:MongoDB 복제본 세트 설정 {#demo-production-option-setup-mongodb-replica-set}
 
@@ -142,7 +142,7 @@ Solr 실행 방법은 설치 버전 및 방법에 따라 다를 수 있습니다
 
 MongoDB를 시작하기 전에 AEM이 실행 중이면 AEM 인스턴스를 다시 시작해야 합니다.
 
-기본 설명서 페이지의 지침을 따르십시오.MSRP [- MongoDB Common Store](msrp.md)
+기본 설명서 페이지의 지침을 따르십시오.MSRP [- MongoDB 공용 스토어](msrp.md)
 
 ## 테스트 {#test}
 
