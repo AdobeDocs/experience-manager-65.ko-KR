@@ -3,7 +3,7 @@ title: 번역 프로젝트 만들기
 description: AEM에서 번역 프로젝트를 만드는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -114,7 +114,10 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 
 1. 자산 UI로 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
-   ![chlimage_1-74](assets/chlimage_1-74.png)
+   ![자산 속성 페이지에서 번역된 메타데이터 보기](assets/translated-metadata-asset-properties.png)
+
+   *그림:자산 속성 페이지에서 번역된 메타데이터*
+
 
    >[!NOTE]
    >
