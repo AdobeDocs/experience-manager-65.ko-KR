@@ -3,7 +3,7 @@ title: 메타데이터 스키마
 description: 메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 메타데이터 스키마를 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4efe021c2f3f6f38594182d27a76ff69b7466c92
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,10 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 
 1. 다양한 탭에서 다양한 메타데이터 속성을 편집합니다. 하지만 속성 페이지에서 자산 유형을 수정할 수는 없습니다.
 
-   ![chlimage_1-36](assets/chlimage_1-172.png)
+   ![자산 속성의 기본 탭에서 자산 유형을 변경할 수 없습니다.](assets/asset-properties-basic-tab.png)
+
+   *그림:자산 속성의 기본 탭*
+
 
    자산에 대한 MIME 유형을 수정하려면 사용자 지정 메타데이터 스키마 양식을 사용하거나 기존 양식을 수정합니다. 자세한 [내용은 메타데이터 스키마 양식](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) 편집을 참조하십시오. 특정 MIME 유형의 메타데이터 스키마를 수정하는 경우 현재 MIME 형식과 모든 자산 하위 형식의 자산에 대한 속성 페이지 레이아웃이 수정됩니다. 예를 들어, jpeg 스키마를 `default/image` 수정하면 MIME 유형의 자산에 대한 메타데이터 레이아웃(자산 속성)만 수정됩니다 `image/jpeg`. 그러나 기본 스키마를 편집하는 경우 변경 사항은 모든 유형의 자산에 대한 메타데이터 레이아웃을 수정합니다.
 
@@ -46,7 +49,7 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
          * **pdf**:하위 유형이 있는 자산에 대한 스키마 양식입니다 `pdf`.
       1. **비디오**:MIME 형식이 `video`있는 자산( `video/avi`예: `video/mp4`등)에 대한 스키마 양식입니다.
    * **컬렉션**:컬렉션에 대한 스키마 양식입니다.
-   * **** contentfragment:컨텐츠 조각에 대한 스키마 양식입니다.
+   * **contentfragment:** 컨텐츠 조각에 대한 스키마 양식입니다.
    * **양식**:이 스키마 양식은 Adobe Experience [Manager Forms와 관련이 있습니다](/help/forms/home.md).
 
 >[!NOTE]
@@ -70,7 +73,7 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 새로 추가되거나 기존 메타데이터 스키마 양식을 편집할 수 있습니다. 메타데이터 스키마 양식에는 다음이 포함됩니다.
 
 * 탭
-* 탭 내의 양식 항목.
+* 탭 내의 양식 항목
 
 이러한 양식 항목을 CRX 저장소의 메타데이터 노드 내의 필드에 매핑/구성할 수 있습니다.
 
@@ -82,7 +85,10 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 
 1. [ **[!UICONTROL 메타데이터 스키마 편집기]** ] 페이지에서 [양식 작성] 탭의 구성 요소 유형 목록에서 하나 이상의 구성 요소를 **[!UICONTROL 기본]** 탭으로 드래그하여 **[!UICONTROL 자산의]** 속성 페이지를사용자정의합니다.
 
-   ![chlimage_1-40](assets/chlimage_1-176.png)
+   ![빌드 양식의 구성 요소를 메타데이터 스키마 편집기에 추가하여 자산 속성 사용자 정의](assets/metadata-schema-editor.png)
+
+
+   *그림:메타데이터 스키마 편집기의 기본 탭*
 
 1. 구성 요소를 구성하려면 구성 요소를 선택하고 설정 탭에서 해당 속성을 **수정합니다** .
 
@@ -147,9 +153,11 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 
 ![chlimage_1-43](assets/chlimage_1-179.png)
 
-컨텍스트 메타데이터 구성 요소가 적용된 탭 외에 속성 페이지에 탭을 포함하려면 목록에서 탭을 선택합니다. 탭이 속성 페이지에 추가됩니다.
+컨텍스트 메타데이터 구성 요소가 적용된 탭 외에 속성 페이지에 탭을 표시하려면 목록에서 탭을 선택합니다. 탭이 속성 페이지에 추가됩니다.
 
-![chlimage_1-44](assets/chlimage_1-180.png)
+![컨텍스트 메타데이터 목록에서 탭을 선택하여 속성 페이지에 표시](assets/contextual-metadata-asset-properties.png)
+
+*그림:자산 속성 페이지의 컨텍스트 메타데이터*
 
 ### JSON 파일에서 속성 지정 {#specify-properties-in-json-file}
 
@@ -246,7 +254,9 @@ AEM Assets에서는 메타데이터 스키마의 변형을 정의하여 특정 �
 
 1. [메타데이터 **[!UICONTROL 스키마 편집기]** ] 페이지에서 스키마 양식에 텍스트 필드를 추가합니다. 예를 들어 레이블이 카테고리로 필드를 **[!UICONTROL 추가합니다]**.
 
-   ![chlimage_1-50](assets/chlimage_1-186.png)
+   ![메타데이터 스키마 양식 편집기에 텍스트 필드 추가](assets/text-field-metadata-schema-editor.png)
+
+   *그림:메타데이터 스키마 양식 편집기에 추가된 텍스트 필드*
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [메타데이터 스키마 양식] **[!UICONTROL 페이지에]** 나열됩니다.
 1. 도구 모음에서 **[!UICONTROL 폴더에]** 적용을 클릭/탭하여 사용자 지정 메타데이터를 폴더에 적용합니다.
@@ -276,7 +286,9 @@ AEM Assets에서는 메타데이터 스키마의 변형을 정의하여 특정 �
 
 1. 사용자 지정 양식을 편집합니다. 필수 필드를 추가합니다. 예를 들어 카테고리 **[!UICONTROL 필드를]** 추가하고 필드를 필수로 만듭니다.
 
-   ![chlimage_1-54](assets/chlimage_1-190.png)
+   ![메타데이터 양식에 필드 추가 및 규칙 탭에서 필수를 선택하여 필수로 지정](assets/mandatory-field-metadata-schema-editor.png)
+
+   *그림:메타데이터 스키마 양식 편집기의 필수 필드*
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [메타데이터 스키마 양식] **[!UICONTROL 페이지에]** 나열됩니다. 양식을 선택한 다음 도구 **[!UICONTROL 모음에서 폴더에]** 적용을 클릭하거나 탭하여 사용자 지정 메타데이터를 폴더에 적용합니다.
 
