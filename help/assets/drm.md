@@ -3,7 +3,7 @@ title: 디지털 자산 권한 관리
 description: AEM 파섹
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -118,9 +118,12 @@ AEM(Adobe Experience Manager) 자산의 자산 콘솔은 자산에 대한 다양
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. 고급 탭에서 다음 아래의 만료 **[!UICONTROL 필드에서 자산의 만료 날짜를]** 설정합니다.
+1. 고급 탭의 만료 필드에서 자산의 만료 날짜를 **[!UICONTROL 설정합니다]** .
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+   ![만료일 필드에서 자산 만료 날짜 및 시간 설정](assets/asset-properties-advanced-tab.png)
+
+
+   *그림:자산 속성의 고급 탭을 사용하여 에셋 만료 설정*
 
 1. 저장을 **[!UICONTROL 클릭한]** 다음 **[!UICONTROL 닫기를 클릭하여]** 자산 콘솔을 표시합니다.
 1. 자산에 대한 게시 상태는 카드 보기에서 자산 축소판의 아래쪽에 있는 만료된 상태를 나타냅니다. 목록 보기에서는 자산의 상태가 만료됨으로 **[!UICONTROL 표시됩니다]**.
