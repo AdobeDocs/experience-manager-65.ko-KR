@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 7d2ba937710e5931356512b812a8b8fbe3a52072
 
 ---
 
@@ -37,30 +37,12 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 다음 표에서는 프로그래밍 방식으로 워크플로우와 상호 작용할 때 사용할 여러 주요 Java 객체의 참조 설명서에 대한 링크를 제공합니다. 다음 예제에서는 코드에서 클래스 개체를 가져오고 사용하는 방법을 보여 줍니다.
 
-<table>
- <tbody>
-  <tr>
-   <th>기능<a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"></a></th>
-   <th>개체<br /> </th>
-  </tr>
-  <tr>
-   <td>워크플로우 액세스<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html"><code>WorkflowSession</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>워크플로우 인스턴스 실행 및 쿼리<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html"><code>Workflow</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html"><code>WorkItem</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html"><code>WorkflowData</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>워크플로우 모델 관리<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html"><code>WorkflowModel</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html"><code>WorkflowNode</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html"><code>WorkflowTransition</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>워크플로우에 있는 노드에 대한 정보(또는 없는) </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"><code>WorkflowStatus</code></a></td>
-  </tr>
- </tbody>
-</table>
+| 기능 | 개체 |
+|---|---|
+| 워크플로우 액세스 | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
+| 워크플로우 인스턴스 실행 및 쿼리 | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
+| 워크플로우 모델 관리 | [`WorkflowModel`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
+| 워크플로우에 있는 노드에 대한 정보(또는 없는) | [`WorkflowStatus`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
 ## ECMA 스크립트에서 워크플로우 객체 얻기 {#obtaining-workflow-objects-in-ecma-scripts}
 
@@ -115,7 +97,7 @@ REST API에서는 다음 작업이 지원됩니다.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>새 워크플로우 인스턴스를 만듭니다. <br /> 매개 변수는 다음과 같습니다.- <code>model</code>:해당 워크플로우 모델의<br /> ID(URI) - <code>payloadType</code>:페이로드 유형(예: <code>JCR_PATH</code> 또는 URL)을 포함합니다.<br /> 페이로드가 매개 변수로 전송됩니다 <code>payload</code>. 새 워크플로 인스턴스 리소스의 URL이 들어 있는 위치 머리글과 함께 <code>201</code> (<code>CREATED</code>) 응답이 다시 전송됩니다.</p> </td>
+   <td><p>새 워크플로우 인스턴스를 만듭니다. 매개 변수는 다음과 같습니다.<br /> - <code>model</code>:해당 워크플로우 모델의<br /> ID(URI) - <code>payloadType</code>:페이로드 유형(예: <code>JCR_PATH</code> 또는 URL)을 포함합니다.<br /> 페이로드가 매개 변수로 전송됩니다 <code>payload</code>. 새 워크플로 인스턴스 리소스의 URL이 들어 있는 위치 머리글과 함께 <code>201</code> (<code>CREATED</code>) 응답이 다시 전송됩니다.</p> </td>
   </tr>
  </tbody>
 </table>
