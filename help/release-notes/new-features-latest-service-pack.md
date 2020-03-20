@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f50369f269040bf7f1a30b018acbc1b441abdb15
+source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
 
 ---
 
@@ -17,6 +17,8 @@ AEM(Adobe Experience Manager) 6.5는 분기별 서비스 팩을 통해 기능과
 
 ## AEM Sites {#aem-sites}
 
+AEM 6.5.4.0에는 스타일 시스템 개선 사항이 포함되어 있습니다. 이제 구성 요소 대화 상자 내에서 스타일을 선택할 수 있습니다.
+
 ### 다양한 영역의 성능 개선 {#performance-improvements}
 
 * 사이트(`contexthub.kernel.js`) 내에서 ContextHub를 로드하고 초기화하는 데 걸리는 시간이 줄었습니다. 사이트 방문 중에 페이지 로드가 빨라집니다.
@@ -26,8 +28,6 @@ AEM(Adobe Experience Manager) 6.5는 분기별 서비스 팩을 통해 기능과
 * Live Copy 개요에서 200개 이상의 Live Copy를 사용하여 사이트 페이지의 항목에 대한 로드 **[!UICONTROL 시간을 단축했습니다]**.
 
 * 불완전하거나 잘못된 URL의 처리가 개선되었습니다. 이러한 URL을 사용하면 템플릿 편집기의 속도가 느려질 수 있습니다.
-
-또한 AEM 6.5.4.0에는 스타일 시스템 개선 사항이 포함되어 있습니다. 이제 구성 요소 대화 상자 내에서 스타일을 선택할 수 있습니다.
 
 ## AEM Assets {#aem-assets}
 
@@ -116,16 +116,19 @@ Assets 사용자는 시각적으로 유사한 이미지를 검색할 수 있습�
 
 배치 API를 사용하여 템플릿에서 여러 대화형 통신을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 통신입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 통신을 생성합니다. API는 인터랙티브한 커뮤니케이션의 대량 제작 시 유용합니다. 예를 들어, 전화 요금, 여러 고객을 위한 신용 카드 명세서 등이 있습니다. 배치 [API를 사용하여 여러 대화형 통신 생성을 참조하십시오](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-
-
 ## AEM 6.5 SP3 이후의 주요 릴리스
 
 2019년 12월 12일부터 2020년 3월 5일까지 Adobe는 핵심 AEM 제공 서비스 외부에 있는 다음 기능을 발표했습니다.
 
-* AEM Cloud Manager 2020.1.0 및 2020.2.0릴리스 업데이트는 파이프라인 상태와 다양한 단계에 대한 로그 다운로드 기능을 향상시켜 줍니다. 자세한 내용은 다음을 참조하십시오.
+* AEM Cloud Manager 2020.1.0 및 2020.2.0
+
+   릴리스 업데이트는 파이프라인 상태와 다양한 단계에 대한 로그 다운로드 기능을 향상시킵니다. 자세한 내용은 다음을 참조하십시오.
+
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
+
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+
 
 * AEM Cloud Manager CLI 업데이트
 
