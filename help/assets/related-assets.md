@@ -3,7 +3,7 @@ title: 관련 자산
 description: 특정 공통 속성을 공유하는 자산을 연결하는 방법을 알아봅니다. 이 기능을 사용하여 자산 간의 소스/파생 관계를 만들 수도 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -14,14 +14,16 @@ AEM(Adobe Experience Manager) 자산을 사용하면 관련 자산 기능을 사
 
 이 기능을 사용하면 벤더 또는 에이전시와 저해상도 PDF 파일 또는 JPG 파일을 공유하고 요청 시 고해상도 INDD 파일을 사용할 수 있습니다.
 
->[!NOTE] 편집 권한이 있는 사용자만 자산을 관련시키거나 관계를 해제할 수 있습니다.
+>[!NOTE] 자산에 대한 편집 권한이 있는 사용자만 자산을 관련시키고 관계를 취소할 수 있습니다.
 >
 
 ## Relate assets {#relating-assets}
 
-1. AEM 인터페이스에서 [!UICONTROL 관련지을] 자산의 속성 페이지를 엽니다.
+1. AEM 인터페이스에서 **[!UICONTROL 관련지을]** 자산의 속성 페이지를 엽니다.
 
-   ![chlimage_1-272](assets/chlimage_1-272.png)
+   ![자산의 속성 페이지를 열어 자산 연결](assets/asset-properties-relate-assets.png)
+
+   *그림:자산 속성 페이지를 사용하여 자산 연결*
 
    또는 목록 보기에서 자산을 선택합니다.
 
@@ -67,11 +69,14 @@ AEM(Adobe Experience Manager) 자산을 사용하면 관련 자산 기능을 사
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-소스 파일이 다른 자산과 관련된 경우 AEM Assets는 참조된 자산을 가져와서 번역용으로 포함합니다.
+소스 파일이 다른 자산과 관련된 경우 Experience Manager Assets는 참조된 자산을 가져와서 번역용으로 포함합니다.
 
-![chlimage_1-282](assets/chlimage_1-282.png)
+![자산 속성 페이지에는 번역에 포함할 관련 자산의 소스 파일이 표시됩니다](assets/asset-properties-source-asset.png)
+
+*그림:번역용으로 포함할 관련 자산의 소스 자산*
 
 1. 새 번역 프로젝트 [](translation-projects.md#create-a-new-translation-project)만들기의 단계에 따라 소스 폴더의 에셋을 대상 언어로 번역할 수 있습니다. 예를 들어 이 경우 자산을 프랑스어로 변환합니다.
+
 1. 프로젝트 [!UICONTROL 페이지에서] 번역 폴더를 엽니다.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
