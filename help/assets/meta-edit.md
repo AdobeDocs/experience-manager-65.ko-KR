@@ -3,7 +3,7 @@ title: 메타데이터를 편집하거나 추가하는 방법
 description: 자산 메타데이터를 편집할 수 있는 다양한 방법으로 AEM 자산의 자산 메타데이터에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91818198032de0580fe04d09fdd567dc470c021d
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,8 @@ source-git-commit: 91818198032de0580fe04d09fdd567dc470c021d
    * 자산 축소판에서 속성 보기 **[!UICONTROL 빠른 작업을]** 선택합니다.
    * 자산 페이지에서 도구 모음에서 속성 **[!UICONTROL 보기]** 아이콘을 클릭/탭합니다.
       ![chlimage_1-168](assets/chlimage_1-168.png)
-      *그림:속성 아이콘*
+   *그림:속성 아이콘*
+
    자산 페이지에는 자산의 모든 메타데이터가 표시됩니다. 이 메타데이터는 AEM 자산에 업로드(인제스트)되었을 때 자동으로 추출되었습니다.
 
    ![자산 속성을 선택하여 메타데이터 보기](assets/asset-metadata.png)
