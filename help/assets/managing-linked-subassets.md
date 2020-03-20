@@ -3,7 +3,7 @@ title: Experience Manager에서 참조 및 다중 페이지 에셋을 사용하�
 description: InDesign, Illustrator 및 Photoshop 내에서 AEM 자산에 대한 참조를 만드는 방법을 알아봅니다. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 여러 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b13fe70c4b67b27e0f18bdb557c52e25d21e7f75
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,9 @@ Adobe Illustrator 파일 내에서 기존 AEM 자산을 참조할 수 있습니�
 
 1. AEM [데스크탑 앱을](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)사용하여 AEM 자산 저장소를 로컬 시스템의 드라이브로 마운트합니다. 마운트된 드라이브 내에서 참조할 자산의 위치로 이동합니다.
 1. 마운트된 드라이브에서 Illustrator 파일로 에셋을 드래그합니다.
+
 1. Illustrator 파일을 마운트된 드라이브에 저장하거나 AEM 저장소에 [업로드합니다](/help/assets/managing-assets-touch-ui.md#uploading-assets) .
+
 1. 워크플로우가 완료되면 자산의 자산 세부 사항 페이지로 이동합니다. 기존 AEM 자산에 대한 참조는 참조 **[!UICONTROL 열의 종속성]** 아래에 **[!UICONTROL 나열됩니다]** .
 
    ![chlimage_1-84](assets/chlimage_1-258.png)
@@ -35,7 +37,9 @@ Adobe Illustrator 파일 내에서 기존 AEM 자산을 참조할 수 있습니�
 
 1. 도구 **[!UICONTROL 모음에서 속성]** 보기를 클릭합니다. 속성 [!UICONTROL 페이지에서] 현재 자산을 참조하는 파일 목록이 기본 **[!UICONTROL 탭의 참조]** 열 아래에 **[!UICONTROL 표시됩니다]** .
 
-   ![chlimage_1-86](assets/chlimage_1-260.png)
+   ![자산 세부 정보에서 참조 열의 Experience Manager 자산 참조](assets/asset-references.png)
+
+   *그림:자산 세부 정보의 자산 참조*
 
 ## Adobe InDesign에서 AEM 자산을 참조로 추가 {#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -114,7 +118,7 @@ InDesign의 경우 InDesign 서버를 사용하여 페이지를 추출할 수 �
 
 도구 모음, 왼쪽 레일 및 페이지 뷰어 컨트롤에서 다음 옵션을 사용할 수 있습니다.
 
-* **[!UICONTROL 데스크톱 작업을]** 클릭하여 AEM 데스크톱 앱을 사용하여 특정 하위 자산을 열거나 표시합니다. AEM 데스크톱 앱을 사용하는 경우 [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) 데스크톱 작업을 구성하는 방법을 참조하십시오.
+* **[!UICONTROL 데스크톱 작업을]** 클릭하여 AEM 데스크톱 앱을 사용하여 특정 하위 자산을 열거나 표시합니다. AEM 데스크톱 앱을 사용하는 경우 [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) 데스크톱 동작을 구성하는 방법을 참조하십시오.
 
 * **[!UICONTROL 속성]** 옵션을 선택하면 [!UICONTROL 특정 하위] 자산의 속성 페이지가 열립니다.
 
@@ -122,4 +126,4 @@ InDesign의 경우 InDesign 서버를 사용하여 페이지를 추출할 수 �
 
 * **[!UICONTROL 페이지 개요]** 옵션은 모든 하위 자산을 동시에 표시합니다.
 
-* **[!UICONTROL 왼쪽 레일 아이콘을]** 클릭한 후 왼쪽 레일의 타임라인 ![옵션이](assets/do-not-localize/aem_leftrail_contentonly.png) 해당 파일의 활동 스트림을 표시합니다.
+* **[!UICONTROL 왼쪽 레일 아이콘을]** 클릭한 후 왼쪽 레일의 타임라인 ![옵션이](assets/do-not-localize/aem_leftrail_contentonly.png) 파일에 대한 활동 스트림을 표시합니다.
