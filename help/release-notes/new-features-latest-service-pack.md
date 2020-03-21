@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
+source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
 
 ---
 
@@ -16,6 +16,8 @@ AEM(Adobe Experience Manager) 6.5는 분기별 서비스 팩을 통해 기능과
 최신 AEM 서비스 팩 4(6.5.4.0)는 2020년 **3월 5일에 릴리스됩니다**. 이 문서에서는 AEM 여정을 더욱 풍성하게 만들기 위한 최신 서비스 팩 기능을 소개합니다.
 
 ## AEM Sites {#aem-sites}
+
+### 향상된 스타일 시스템
 
 AEM 6.5.4.0에는 스타일 시스템 개선 사항이 포함되어 있습니다. 이제 구성 요소 대화 상자 내에서 스타일을 선택할 수 있습니다.
 
@@ -122,7 +124,7 @@ Assets 사용자는 시각적으로 유사한 이미지를 검색할 수 있습�
 
 * AEM Cloud Manager 2020.1.0 및 2020.2.0
 
-   릴리스 업데이트는 파이프라인 상태와 다양한 단계에 대한 로그 다운로드 기능을 향상시킵니다. 자세한 내용은 다음을 참조하십시오.
+   파이프라인 상태와 다양한 단계에 대한 로그 다운로드 기능을 개선합니다. 다음을 참조하십시오.
 
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
@@ -132,7 +134,7 @@ Assets 사용자는 시각적으로 유사한 이미지를 검색할 수 있습�
 
 * AEM Cloud Manager CLI 업데이트
 
-   릴리스 업데이트에는 명령줄 툴을 사용하여 Cloud Manager 작업을 자동화하는 기능이 포함되어 있습니다. GitHub [를 참조하십시오](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+   명령줄 툴을 사용하여 Cloud Manager 작업을 자동화할 수 있습니다. GitHub [를 참조하십시오](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
 * AEM Sites:프로젝트 원형 23
 
@@ -148,7 +150,7 @@ Assets 사용자는 시각적으로 유사한 이미지를 검색할 수 있습�
 
 * AEM 자산:데스크탑 앱 2.0.1.1
 
-   자세한 내용은 [자산에](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)대한 데스크톱 액세스 권한 얻기를 참조하십시오.
+   데스크탑에서 [자산에](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)액세스 권한을 참조하십시오.
 
 * AEM Screens:Feature Pack 202001
 
