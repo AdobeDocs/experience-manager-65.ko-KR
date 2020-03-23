@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산에서 지원되는 파일 형식 및 각 형식에 대해 지원되는 기능 목록입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 08ea08fc2f8c36d509509f761a76a428d6df7e6a
+source-git-commit: 8431275c0e4de408e1ebafafafa94dcfae3c1127
 
 ---
 
@@ -34,13 +34,15 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PGM | ✓ | ✓ |  |  |  |  | ✓ |
+| PFM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD* | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **원** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+
+**1병합된** 이미지가 PSD 파일에서 추출됩니다. Adobe Photoshop에서 생성된 이미지입니다. PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
 다이내믹 미디어 기능에 지원되는 래스터 이미지 형식은 다음과 같습니다.
 
@@ -51,11 +53,11 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
-| PSD* | ✓ |  |  |  |  |
+| PSD **원** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-&amp;ast;병합된 이미지는 PSD 파일에서 추출됩니다. Adobe Photoshop에서 생성된 이미지입니다. PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
+**1병합된** 이미지가 PSD 파일에서 추출됩니다. Adobe Photoshop에서 생성된 이미지입니다. PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
 위의 정보 외에 다음 사항을 고려하십시오.
 
@@ -192,13 +194,14 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **²** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript(자체 배달 도메인으로 구성된 경우) |  |  |  |  |  | ✓ |
 
-**&amp;ast;** 다른 포맷은 DAM에서 스토리지, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리를 지원합니다.
+**²** 저장, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리를 위해 DAM에서 다른 포맷이 지원됩니다.
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -246,7 +249,7 @@ MIME [유형 기반 자산/Scene7 업로드 작업 매개 변수 지원을](/hel
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PFM | application/x-font-type1 |  |  |
+| PGM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
