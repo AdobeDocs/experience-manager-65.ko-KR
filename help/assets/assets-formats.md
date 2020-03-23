@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산에서 지원되는 파일 형식 및 각 형식에 대해 지원되는 기능 목록입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8431275c0e4de408e1ebafafafa94dcfae3c1127
+source-git-commit: d7d25c75c1023383e07c36252ece2e85425a95be
 
 ---
 
@@ -190,18 +190,15 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 
 ## 기타 지원되는 형식 {#other-supported-formats}
 
-다른 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 가능성에 대해서는 아래 표에 설명되어 있습니다. Dynamic Media Delivery를 제외한 일반적인 DAM 기능이 모든 파일에 대해 지원됩니다.
+다른 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 가능성에 대해서는 아래 표에 설명되어 있습니다. Dynamic Media Delivery를 제외한 스토리지, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리와 같은 일반적인 DAM 기능이 모든 파일에 지원됩니다.
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **²** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript(자체 배달 도메인으로 구성된 경우) |  |  |  |  |  | ✓ |
-
-**²** 저장, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리를 위해 DAM에서 다른 포맷이 지원됩니다.
 
 ## Supported MIME types {#supported-mime-types}
 
