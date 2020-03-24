@@ -5,7 +5,7 @@ keywords: dynamic media;newsletter;product updates;tips and tricks;events;custom
 contentOwner: Rick Brough
 solution: Dynamic Media
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: dc625b31b5f4d0db0941de2da0e869b3af177551
 
 ---
 
@@ -18,16 +18,33 @@ Adobe Experience League의 월별 Dynamic Media 뉴스레터는 Dynamic Media �
 
 ## 영감을 얻으십시오. 최신 정보
 
-[Dynamic](https://www.adobe.com/subscription/dynamic-media-newsletter.html) Media 뉴스레터를 받은 편지함에서 매월 받으려면 등록하십시오.
+[Dynamic](https://www.adobe.com/subscription/dynamic-media-newsletter.html) Media 뉴스레터를 받은 편지함에서 매월 수신하도록 등록합니다.
 
 ## Dynamic Media 뉴스레터 문제가 누락되었습니까?
+
+* **[2020년 2월,](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@5lYjerUalNCDQd6ABlMufSyP3GqbFDn747uBiom3-3_efxsaEjuw8LNhJxrs89ft1vcsQzjvxTGMo55w-4k0YyBVGiL6m5AWSe9I7H7wIXKT0Efz.html)**문제 2:
+
+   * 새로운 스킬 빌더 웨비나에 참석하여 Dynamic Media Classic 전문가로 탈바꿈시킬 수 있습니다.
+   * Adobe Summit 2020에서 Dynamic Media를 만나보십시오.
+   * Dynamic Media의 자르기 기능을 사용하는 방법을 살펴볼 수 있습니다.
+   * 무료 감사를 활용하면 Dynamic Media Classic에서 더 많은 가치를 창출할 수 있습니다.
+   * Dynamic Media Classic의 새로운 사용자 인터페이스에 대해 알아봅니다.
+   * Adobe Experience Cloud 고객 성공 관리자 Georgia Myers를 만나보십시오.
+
+* **[2020년 1월,](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@NpvOA7LHuVbd-W1B5pENdSLNFZ4L4ZeEkA_bVd4reX31KUOs3uaPFEuEx2mWz-3oNkVBcY5fdimoW3RM-SzTt6QXI4l1Rd2mEwrYsWp7C1LnUMVp.html)**문제 1:
+
+   * Dynamic Media Classic 기술을 연마할 수 있는 5개의 새로운 스킬 빌더 웨비나
+   * Dynamic Media Classic에서 더 많은 가치를 얻을 수 있는 무료 감사
+   * 리치 미디어 고객을 위한 최고의 휴일 쇼핑 시즌입니다.
+   * 현재 요구 사항에 맞게 DAM(Digital Asset Manager)을 선택하고 향후 리치 미디어의 새로운 기능에 대해 준비하려면 가이드가 필요합니다.
+   * 디지털 미디어 전문가인 Mark Dean을 만나보십시오.
 
 * **[2019년 11월,](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**문제 11:
 
    * Dynamic Media Classic 사용자 인터페이스의 새로 고침입니다.
    * 강력하고 새로운 보안 기능
    * 휴가 시즌이 성공하도록 준비 중입니다.
-   * Newsletter를 동료와 공유하여 팀의 전문성을 향상시킬 수 있습니다.
+   * 뉴스레터를 동료와 공유하여 팀의 전문성을 향상시킬 수 있습니다.
    * 다이내믹 미디어 수석 제품 관리자인 Apoorva Gupta를 만나보십시오.
 
 * **[2019년 10월, 문제](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**10이 발행물의 경우:
