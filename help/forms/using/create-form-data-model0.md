@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
 
 ---
 
@@ -38,7 +38,7 @@ AEM Forms 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTf
 
 ![양식 데이터 모델](assets/form_data_model_callouts_new.png)
 
-**********A.구성된 데이터 소스** B.데이터 소스 스키마 **C.** 사용 가능한 서비스 **D.데이터 모델 개체** E.구성된 서비스
+**A.** 구성된 데이터 소스 **B.** 데이터 소스 스키마 **C.** 사용 가능한 서비스 **D.** 데이터 모델 개체 **E.** 구성된 서비스
 
 ## 전제 조건 {#prerequisites}
 
@@ -54,13 +54,65 @@ AEM Forms 데이터 통합 모듈을 사용하면 AEM 사용자 프로필, RESTf
 
 ![sample_data_cust](assets/sample_data_cust.png)
 
-호출 테이블에는 호출 날짜, 호출 시간, 호출 번호, 통화 기간 및 통화 비용과 같은 통화 세부 사항이 포함됩니다. 고객 테이블은 모바일 번호(mobilenum) 필드를 사용하여 호출 테이블에 연결됩니다. 고객 테이블에 나열된 각 모바일 번호에 대해 호출 표에 여러 개의 레코드가 있습니다. 예를 들어 호출 테이블을 참조하여 1457892541 **모바일** 번호에 대한 호출 세부 정보를 검색할 수 있습니다.
+다음 DDL 문을 사용하여 **고객** 테이블을 데이터베이스에 생성합니다.
 
-청구서 테이블에는 청구 일자, 청구 기간, 월별 요금 및 콜과 같은 청구 상세내역이 포함됩니다. 고객 테이블은 청구 계획 필드를 사용하여 BOM 테이블에 연결됩니다. 고객 테이블에 각 고객과 관련된 플랜이 있습니다. 청구서 테이블에는 모든 기존 플랜에 대한 가격 세부 정보가 포함되어 있습니다. 예를 들어 고객 테이블에서 Sarah에 대한 **계획** 상세내역을 검색하고 이러한 상세내역을 사용하여 BOM 테이블에서 가격책정 상세내역을 검색할 수 있습니다.
+```sql
+CREATE TABLE `customer` (
+   `mobilenum` int(11) NOT NULL,
+   `name` varchar(45) NOT NULL,
+   `address` varchar(45) NOT NULL,
+   `alternatemobilenumber` int(11) DEFAULT NULL,
+   `relationshipnumber` int(11) DEFAULT NULL,
+   `customerplan` varchar(45) DEFAULT NULL,
+   PRIMARY KEY (`mobilenum`),
+   UNIQUE KEY `mobilenum_UNIQUE` (`mobilenum`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+다음 DDL 문을 사용하여 데이터베이스에 **BOM** 테이블을 생성합니다.
+
+```sql
+CREATE TABLE `bills` (
+   `billplan` varchar(45) NOT NULL,
+   `latepayment` decimal(4,2) NOT NULL,
+   `monthlycharges` decimal(4,2) NOT NULL,
+   `billdate` date NOT NULL,
+   `billperiod` varchar(45) NOT NULL,
+   `prevbal` decimal(4,2) NOT NULL,
+   `callcharges` decimal(4,2) NOT NULL,
+   `confcallcharges` decimal(4,2) NOT NULL,
+   `smscharges` decimal(4,2) NOT NULL,
+   `internetcharges` decimal(4,2) NOT NULL,
+   `roamingnational` decimal(4,2) NOT NULL,
+   `roamingintnl` decimal(4,2) NOT NULL,
+   `vas` decimal(4,2) NOT NULL,
+   `discounts` decimal(4,2) NOT NULL,
+   `tax` decimal(4,2) NOT NULL,
+   PRIMARY KEY (`billplan`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+다음 DDL 문을 사용하여 데이터베이스에 **호출** 테이블을 만듭니다.
+
+```sql
+CREATE TABLE `calls` (
+   `mobilenum` int(11) DEFAULT NULL,
+   `calldate` date DEFAULT NULL,
+   `calltime` varchar(45) DEFAULT NULL,
+   `callnumber` int(11) DEFAULT NULL,
+   `callduration` varchar(45) DEFAULT NULL,
+   `callcharges` decimal(4,2) DEFAULT NULL,
+   `calltype` varchar(45) DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+호출 **** 표에는 호출 날짜, 호출 시간, 호출 번호, 통화 기간, 통화 요금 등의 통화 세부 사항이 포함되어 있습니다. 모바일 번호(mobilenum) 필드를 사용하여 **고객** 테이블이 호출 테이블에 연결됩니다. 고객 **테이블에 나열된 각 모바일 번호에 대해** 호출 **** 테이블에 여러 개의 레코드가 있습니다. 예를 들어 **호출** 테이블을 참조하여 1457892541 **** 모바일 번호에 대한 호출 세부 사항을 검색할 수 있습니다.
+
+청구서 **표에는** 청구서 날짜, 청구 기간, 월별 요금 및 콜과 같은 세부 정보가 포함되어 있습니다. BOM 계획 필드를 사용하여 **고객** 테이블이 **BOM** 테이블에 연결됩니다. 고객 **** 테이블에 각 고객과 연관된 플랜이 있습니다. 청구서 **테이블에는** 모든 기존 플랜에 대한 가격 세부 정보가 포함되어 있습니다. 예를 들어 **고객** 테이블에서 Sarah에 대한 계획 상세내역을 **검색하고 이러한 세부 정보를 사용하여** 청구 **** 테이블에서 가격 세부 정보를 검색할 수 있습니다.
 
 ## 2단계:MySQL 데이터베이스를 데이터 소스로 구성 {#step-configure-mysql-database-as-data-source}
 
-양식 데이터 모델을 만들도록 여러 유형의 데이터 소스를 구성할 수 있습니다. 이 자습서의 경우 샘플 데이터로 구성되고 채워진 MySQL 데이터베이스를 구성합니다. 지원되는 다른 데이터 소스와 이를 구성하는 방법에 대한 자세한 내용은 AEM Forms [데이터 통합을 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
+양식 데이터 모델을 만들도록 여러 유형의 데이터 소스를 구성할 수 있습니다. 이 자습서의 경우 샘플 데이터로 구성되고 채워진 MySQL 데이터베이스를 구성합니다. 지원되는 다른 데이터 소스에 대한 자세한 내용 및 구성 방법은 AEM Forms [데이터 통합을 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
 MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
@@ -77,20 +129,20 @@ MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
    1. Apache **Sling 연결 풀링된 DataSource 구성을** 찾습니다. 을 눌러 편집 모드에서 구성을 엽니다.
    1. 구성 대화 상자에서 다음 세부 정보를 지정합니다.
 
-      * **** 데이터 소스 이름:원하는 이름을 지정할 수 있습니다. 예를 들어 MySQL을 **지정합니다**.
+      * **데이터 소스 이름:** 원하는 이름을 지정할 수 있습니다. 예를 들어 MySQL을 **지정합니다**.
 
       * **DataSource 서비스 속성 이름**:DataSource 이름을 포함하는 서비스 속성의 이름을 지정합니다. 데이터 소스 인스턴스를 OSGi 서비스로 등록하는 동안 지정됩니다. 예: **datasource.name**.
 
       * **JDBC 드라이버 클래스**:JDBC 드라이버의 Java 클래스 이름을 지정합니다. MySQL 데이터베이스의 경우 **com.mysql.jdbc.Driver를 지정합니다**.
 
       * **JDBC 연결 URI**:데이터베이스의 연결 URL을 지정합니다. 포트 3306 및 스키마 텔레카에서 실행되는 MySQL 데이터베이스의 경우 URL은 다음과 같습니다. `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
-      * **** 사용자 이름:데이터베이스의 사용자 이름입니다. JDBC 드라이버를 사용하여 데이터베이스와 연결을 설정해야 합니다.
-      * **** 암호:데이터베이스의 암호입니다. JDBC 드라이버를 사용하여 데이터베이스와 연결을 설정해야 합니다.
-      * **** 차입 시 테스트:[차입시 **테스트] 옵션을** 활성화합니다.
+      * **사용자 이름:** 데이터베이스의 사용자 이름입니다. JDBC 드라이버를 사용하여 데이터베이스와 연결을 설정해야 합니다.
+      * **암호:** 데이터베이스의 암호입니다. JDBC 드라이버를 사용하여 데이터베이스와 연결을 설정해야 합니다.
+      * **차입 시 테스트:** [차입시 **테스트] 옵션을** 활성화합니다.
 
-      * **** 반환 테스트:반환 **시 테스트** 옵션을 활성화합니다.
+      * **반환 테스트:** 반환 **시 테스트** 옵션을 활성화합니다.
 
-      * **** 유효성 검사 쿼리:SQL SELECT 쿼리를 지정하여 풀의 연결을 확인합니다. 쿼리는 하나 이상의 행을 반환해야 합니다. 예를 들어 고객에서 *를 **선택합니다**.
+      * **유효성 검사 쿼리:** SQL SELECT 쿼리를 지정하여 풀의 연결을 확인합니다. 쿼리는 하나 이상의 행을 반환해야 합니다. 예를 들어 고객에서 *를 **선택합니다**.
 
       * **트랜잭션 격리**:값을 READ_COMMITTED로 **설정합니다**.
    다른 속성을 기본값으로 [](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) 두고 저장을 **탭합니다**.
