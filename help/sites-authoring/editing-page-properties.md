@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
+source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
 
 * **태그**
 
-   선택 상자의 목록을 업데이트하여 페이지에서 태그를 추가하거나 제거할 수 있습니다.
+   선택 상자의 목록을 업데이트하여 페이지에서 태그를 추가하거나 제거할 수 있습니다:
 
    * 태그를 선택하면 선택 상자 아래에 나열됩니다. 이 목록에서 x를 사용하여 태그를 제거할 수 있습니다.
    * 빈 선택 상자에 이름을 입력하여 완전히 새로운 태그를 입력할 수 있습니다.
@@ -122,11 +122,11 @@ source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
 
    >[!NOTE]
    >
-   >별칭은 `sling:alias` 속성을 설정하여 리소스의 별칭 이름을 정의합니다. 이 이름은 경로가 아니라 리소스에만 영향을 줍니다.
+   >별칭은 리소스의 별칭 이름을 정의하기 위해 `sling:alias` 속성을 설정합니다. 이 이름은 경로에는 영향을 주지 않고 리소스에만 영향을 줍니다.
    >
-   >예:노드 노드에 `latin-lang` 대한 별칭을 정의하는 경우, 이 `/content/we-retail/spanish` 페이지는 `/content/we-retail/latin-language`
+   >예를 들어 `/content/we-retail/spanish` 노드에 대해 `latin-lang`이라는 별칭을 정의하면, 이 페이지는 `/content/we-retail/latin-language`를 통해 액세스할 수 있습니다.
    >
-   >자세한 내용은 SEO [및 URL 관리 우수 사례 아래의 현지화된 페이지 이름을 참조하십시오](/help/managing/seo-and-url-management.md#localized-page-names).
+   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **&lt;*경로*>에서 상속됨**
 
@@ -163,7 +163,7 @@ source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
 
    내보내기 구성을 지정합니다.
 
-### 축소판 {#thumbnail}
+### 썸네일 {#thumbnail}
 
 페이지 썸네일 이미지를 보여 줍니다. 다음을 작업을 수행할 수 있습니다.
 
@@ -191,7 +191,8 @@ source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
 
    * **Facebook에 대한 사용자 공유 활성화**
    * **Pinterest에 대한 사용자 공유 활성화**
-   * **선호하는 XF 변형** 페이지에 대한 메타데이터를 생성하는 데 사용되는 경험 조각 변형을 정의
+   * **선호하는 XF 변형**
+페이지에 대한 메타데이터를 생성하는 데 사용되는 경험 조각 변형을 정의합니다.
 
 ### 클라우드 서비스 {#cloud-services}
 
@@ -208,6 +209,9 @@ source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
 * **타깃팅 구성**
 
    [타깃팅할 범위를 지정하려면 [브랜드]](/help/sites-authoring/target-adobe-campaign.md)를 선택합니다.
+
+   >[!NOTE]
+   >이 옵션을 사용하려면 사용자 계정이 `Target Adminstrators`그룹에 있어야 합니다.
 
 ### 권한 {#permissions}
 
@@ -254,14 +258,14 @@ source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
 
    * [새 페이지 만들기](/help/sites-authoring/managing-pages.md#creating-a-new-page)(속성 하위 집합)
 
-   * Clicking or tapping **Properties**
+   * **속성** 클릭 또는 탭
 
       * 단일 페이지의 경우
       * 여러 페이지의 경우(속성의 하위 집합만 편집 가능)
 
 * 페이지 편집기에서:
 
-   * Using **Page Information** (then **Open Properties**)
+   * **페이지 정보**&#x200B;를 사용하여 **속성 열기**
 
 ### 사이트 콘솔에서 - 단일 페이지 {#from-the-sites-console-single-page}
 
@@ -269,7 +273,7 @@ source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
 
 1. **사이트** 콘솔에서 속성을 보고 편집할 페이지의 위치로 이동합니다.
 
-1. Select the **Properties** option for the required page using either:
+1. 다음 중 하나를 사용하여 필요한 페이지에 대한 **속성** 옵션을 선택합니다.
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#selectionmode)
@@ -313,7 +317,7 @@ source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
 
 ![epp-01](assets/epp-01.png)
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+페이지를 선택한 다음 **속성 옵션**&#x200B;을 클릭하거나 탭하면 벌크 속성이 표시됩니다.
 
 ![epp-02](assets/epp-02.png)
 
@@ -354,7 +358,7 @@ After selecting the pages and then clicking or tapping the **Properties option**
 
       * **완료**&#x200B;를 선택하면 선택한 모든 페이지에 새 값이 적용됩니다.
       * 필드가 다중 값(예: 태그)이면 새 값을 추가하거나 공통 값을 제거할 수 있습니다.
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. 이러한 필드를 편집할 때는 데이터가 손실되지 않도록 주의해야 합니다.
+   * 공통되지만 여러 페이지에서 값이 다른 필드는 텍스트 `<Mixed Entries>`와 같은 특수한 값으로 표시됩니다. 이러한 필드를 편집할 때는 데이터가 손실되지 않도록 주의해야 합니다.
 
 
 >[!NOTE]
