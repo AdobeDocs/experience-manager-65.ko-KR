@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
+source-git-commit: 3c2974911b9e9b45d4c4641f9c3683677a88db2f
 
 ---
 
@@ -88,7 +88,7 @@ Adobe는 또는 에 추가할 필요가 없는 영구 수정 작업을 수행하
 
 ## URL, 이미지 사전 설정을 변경하거나 Smart Imaging을 위해 내 사이트에 새로운 코드를 배포해야 합니까? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-스마트 이미징은 기존 이미지 URL 및 이미지 사전 설정과 완벽하게 호환됩니다. 또한 Smart Imaging에서는 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 이 모든 것이 자동으로 처리됩니다.
+아니오. 스마트 이미징은 기존 이미지 URL 및 이미지 사전 설정과 완벽하게 호환됩니다. 또한 Smart Imaging에서는 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 이 모든 것이 자동으로 처리됩니다.
 
 앞서 언급했듯이 스마트 이미징은 JPEG 및 PNG 이미지 포맷만 지원합니다. 다른 형식의 경우 앞서 설명한 대로 `bfc=off` 수정자를 URL에 추가해야 합니다.
 
@@ -115,11 +115,11 @@ Dynamic Media 라이선스를 사용하면 첫 번째 사용자 정의 도메인
 
 스마트 이미징 사용을 요청해야 합니다.자동으로 활성화되지 않습니다.
 
-1. 기술 지원 요청 시작(이메일:s7support@adobe.com).
+1. 기술 지원 요청 시작(이메일: `s7support@adobe.com`).
 1. 지원 요청에서 다음 정보를 제공합니다.
 
    1. 기본 연락처 이름, 이메일, 전화.
-   1. 스마트 이미징에 사용할 수 있는 모든 도메인(즉, images.company.com 또는 mycompany.scene7.com)입니다.
+   1. 스마트 이미징을 사용하도록 설정할 모든 도메인( `images.company.com` 또는 `mycompany.scene7.com`).
 
       도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
 
