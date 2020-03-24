@@ -148,7 +148,7 @@ Adobe Marketing Cloud의 보고서 [세트 관리자를](https://marketing.adobe
 * 커뮤니티 [사이트에 대한 분석 활성화](#enable-analytics-for-a-community-site)
 * 커뮤니티 사이트에 `Marketing Cloud Org Id` 연결
 
-커뮤니티 사이트 속성을 `Marketing Cloud Org Id`[수정하여](/help/communities/sites-console.md#enablement) [커뮤니티 사이트 생성](/help/communities/sites-console.md#modifying-site-properties) 시 또는 나중에 입력할수 있습니다. [](#aem-analytics-cloud-service-configuration)
+커뮤니티 사이트 속성을 `Marketing Cloud Org Id` 수정하여 [](/help/communities/sites-console.md#enablement) 커뮤니티 사이트 생성 [시 또는 나중에 입력할](/help/communities/sites-console.md#modifying-site-properties) 수 있습니다. [](#aem-analytics-cloud-service-configuration)
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
