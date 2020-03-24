@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 9807bd4366315ad470128911cb67a31e7e9fd288
+source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
 
 ---
 
@@ -44,7 +44,7 @@ Smart Imaging 기술은 Adobe Sensei AI 기능을 활용하고 기존 &quot;이�
 * &quot;bfc&quot; URL 매개 변수를 사용하여 스마트 이미징을 끌 수 있습니다.
 * TTL(Time To Live) 독립적입니다. 이전에는, 스마트 이미징이 작동하기 위해서는 최소 TTL이 12시간이었다.
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 Smart Imaging에서는 파생물만 캐시되어 단일 단계 캐시 무효화 프로세스를 허용합니다.
-* 규칙 세트에서 사용자 지정 헤더를 사용하는 고객(예: &quot;타이밍 [출처 허용&quot;, &quot;X-Robot&quot;, 이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/in/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html))은 이전 버전의 Smart Imaging과 달리 헤더가 차단되지 않으므로 최신 스마트 이미징 기능을 활용할 수 있습니다.
+* 규칙 세트에서 사용자 지정 헤더를 사용하는 고객(예: &quot;타이밍 [출처 허용&quot;, &quot;X-Robot&quot;, 이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html))은 이전 버전의 Smart Imaging과 달리 헤더가 차단되지 않으므로 최신 스마트 이미징 기능을 활용할 수 있습니다.
 
 ## 스마트 이미징과 관련된 라이선스 비용이 있습니까? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
