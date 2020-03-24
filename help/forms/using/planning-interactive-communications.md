@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
 
 ---
 
@@ -40,8 +40,6 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 ## 인터랙티브 커뮤니케이션의 구조 {#anatomy-of-the-interactive-communication}
 
 인터랙티브한 커뮤니케이션을 제작하는 데 사용되는 컨텐츠와 요소를 완성하면 인터랙티브한 커뮤니케이션의 구조를 만들 수 있습니다. 해부학은 계획 고려 사항 섹션에 [세부 사항을 기재해야](/help/forms/using/planning-interactive-communications.md#planning-considerations) 한다. 우리의 사용 사례를 토대로, 다음은 통신 사업자가 고객에게 보내는 월별 청구서의 해부의 예입니다.
-
-해부학적 비디오에 대한 자리 표시자
 
 해부학은 다음의 입력 모드를 가진 데이터를 포함합니다.
 
