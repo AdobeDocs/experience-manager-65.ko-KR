@@ -4,22 +4,22 @@ description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
+source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
 
 ---
 
 
 # Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능 {#aem-whats-new-service-pack-4}
 
-AEM(Adobe Experience Manager) 6.5는 분기별 서비스 팩을 통해 기능과 지속적인 개선 사항을 제공합니다. 새로운 접근 방식을 통해 혁신적인 기능을 보다 신속하게 채택할 수 있게 됨으로써 고객에게 많은 이점을 제공합니다.
+AEM(Adobe Experience Manager) 6.5는 분기별 서비스 팩을 통해 기능과 지속적인 개선 사항을 제공합니다. 혁신적인 기술을 통해 손쉽게 활용할 수 있습니다.
 
-최신 AEM 서비스 팩 4(6.5.4.0)는 2020년 **3월 5일에 릴리스됩니다**. 이 문서에서는 AEM 여정을 더욱 풍성하게 만들기 위한 최신 서비스 팩 기능을 소개합니다.
+AEM 서비스 팩 4(6.5.4.0)는 2020년 **3월 5일에 릴리스됩니다**. 이 문서에서는 6.5 서비스 팩이 AEM 여정을 더욱 풍성하게 만들기 위해 제공하는 주요 기능을 집중적으로 살펴봅니다.
 
 ## AEM Sites {#aem-sites}
 
 ### 향상된 스타일 시스템
 
-AEM 6.5.4.0에는 스타일 시스템 개선 사항이 포함되어 있습니다. 이제 구성 요소 대화 상자 내에서 스타일을 선택할 수 있습니다.
+이제 향상된 스타일 시스템을 사용하여 구성 요소 대화 상자에서 스타일을 선택할 수 있습니다.
 
 ### 다양한 영역의 성능 개선 {#performance-improvements}
 
@@ -58,7 +58,7 @@ Experience Manager Assets에는 다음과 같은 액세서빌러티 개선 사�
 
 ### AEM Forms 워크플로우에서 인쇄 가능한 출력 생성 {#generate-printable-output}
 
-새로운 인쇄 가능한 출력 생성 워크플로우 단계에서는 소스 템플릿 파일을 데이터 파일과 통합할 수 있습니다. 이 통합을 통해 템플릿 파일의 다른 복사본을 인쇄하거나 저장할 수 있습니다. 예를 들어 인쇄할 때마다 다른 이름으로 소스 양식을 인쇄할 수 있습니다. 데이터 파일에 이름을 저장하고 데이터 파일을 표준 템플릿 파일과 통합합니다. 이 기능에 대한 자세한 내용은 OSGi - [Step Reference에서 양식 중심의 워크플로우를 참조하십시오](../forms/using/aem-forms-workflow-step-reference.md).
+인쇄 가능한 출력 생성 워크플로우 단계에서는 소스 템플릿 파일을 데이터 파일과 통합할 수 있습니다. 이 통합을 통해 템플릿 파일의 다른 복사본을 인쇄하거나 저장할 수 있습니다. 이 단계에서는 PCL, PostScript, ZPL, IPL, TPCL 또는 DPL 출력을 생성합니다. 이 기능에 대한 자세한 내용은 OSGi - [Step Reference에서 양식 중심의 워크플로우를 참조하십시오](../forms/using/aem-forms-workflow-step-reference.md).
 
 ![인쇄 가능한 출력 생성](assets/generate-print-output-demo.gif)
 
@@ -66,10 +66,7 @@ Experience Manager Assets에는 다음과 같은 액세서빌러티 개선 사�
 
 이제 적응형 양식 및 인터랙티브한 커뮤니케이션에서 패널의 열 수를 정의할 수 있습니다. 레이아웃 모드로 전환하여 새로운 다중 열 옵션을 사용합니다. 자세한 내용은 레이아웃 모드를 사용하여 구성 [요소의](../forms/using/resize-using-layout-mode.md)크기를 조정하십시오.
 
-
 ![다중 열 레이아웃](assets/multi-column-layout.gif)
-
-
 
 ### AEM 받은 편지함 사용자 정의 {#aem-inbox}
 
@@ -83,7 +80,7 @@ Experience Manager Assets에는 다음과 같은 액세서빌러티 개선 사�
 
 ### HTML5 양식의 다양한 텍스트 지원 {#rich-text-support}
 
-이제 HTML5 양식으로 렌더링될 때 XFA 양식의 텍스트 필드를 리치 텍스트 필드로 변환할 수 있습니다. 따라서 텍스트 필드에는 HTML5 양식에 다른 서식 옵션 목록이 표시됩니다. 자세한 내용은 HTML5 [양식의](../forms/using/designing-form-template.md)양식 템플릿 디자인을 참조하십시오.
+XFA 양식의 텍스트 필드를 HTML5 양식의 리치 텍스트 필드로 변환합니다. 자세한 내용은 HTML5 [양식의](../forms/using/designing-form-template.md)양식 템플릿 디자인을 참조하십시오.
 
 ### Accessibility enhancements {#forms-accessibility-enhancements-6540}
 
@@ -105,16 +102,16 @@ Adobe Experience Manager Forms에는 다음과 같은 액세서빌러티 개선 
 
 Assets 사용자는 시각적으로 유사한 이미지를 검색할 수 있습니다. AEM은 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다. See [Visual search](../assets/search-assets.md).
 
-### 사용자의 받은 편지함 항목 공유 및 액세스 요청(6.5.3.0) {#share-request-access}
+### AEM Forms 사용자의 받은 편지함 항목 공유 및 액세스 요청(6.5.3.0) {#share-request-access}
 
 받은 편지함 항목을 다른 사용자와 공유할 수 있습니다. 다른 사용자가 받은 편지함 항목에 액세스할 수 있게 되면, 사용자는 공유 항목에 대해 해당 작업을 요청하고 수행할 수 있습니다. 마찬가지로 다른 사용자로부터 받은 편지함 항목에 대한 액세스를 요청할 수 있습니다. 사용자의 [받은 편지함 항목 공유 및 액세스 요청을](../forms/using/configure-shared-queues-osgi.md)참조하십시오.
 
-### 받은 편지함 항목에 대한 부재 중 설정 구성(6.5.3.0) {#configure-out-of-office}
+### AEM Forms 사용자의 받은 편지함 항목에 대한 부재 중 설정 구성(6.5.3.0) {#configure-out-of-office}
 
 사무실 밖에 있을 계획인 경우 해당 기간 동안 사용자에게 할당된 항목에 대해 어떤 일이 일어나는지 지정할 수 있습니다.
 시작 날짜, 시간, 종료 날짜 및 시간을 지정할 수 있습니다. 모든 항목을 보낼 기본 사람을 설정할 수 있습니다. Office [외 설정](../forms/using/configure-out-of-office-settings.md)구성을 참조하십시오.
 
-### Batch API(6.5.3.0)를 사용하여 인터랙티브한 여러 커뮤니케이션 생성 {#generate-multiple-ic}
+### AEM Forms용 일괄 처리 API(6.5.3.0)를 사용하여 여러 대화형 통신 생성 {#generate-multiple-ic}
 
 배치 API를 사용하여 템플릿에서 여러 대화형 통신을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 통신입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 통신을 생성합니다. API는 인터랙티브한 커뮤니케이션의 대량 제작 시 유용합니다. 예를 들어, 전화 요금, 여러 고객을 위한 신용 카드 명세서 등이 있습니다. 배치 [API를 사용하여 여러 대화형 통신 생성을 참조하십시오](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
