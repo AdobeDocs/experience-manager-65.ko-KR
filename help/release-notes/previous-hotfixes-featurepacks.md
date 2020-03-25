@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7ae0055e09c3ae2ff2898ac4f6c537a825dc0cf0
+source-git-commit: 7345d629aa628c2e2e094a8194d9306d7c3d2d60
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.10.6로 업데이트되었습니다.
 
-* Experience Manager Assets는 이제 Deflate 64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다.
+* Adobe Experience Manager Assets는 이제 Deflate64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다.
 
 * 정렬 가능한 작성된 날짜에 대한 새 열이 DAM 목록 보기 및 자산 검색 결과에 목록 보기에 추가되었습니다.
 
@@ -136,7 +136,7 @@ Adobe Experience Manager 6.5.3.0 is an important release that includes performan
 
 * PDF 파일은 색인이 되어 있지 않고 내용 내부는 검색 가능하지 않습니다(CQ-4278916).
 
-* &quot;사용자 선택기로 목록에 없는 그룹:[false]가 0과 같음]이 다른 폐쇄된 사용자 그룹을 추가할 때 `principalName` 관찰됩니다. `authorizableId` (CQ-4278177)
+* &quot;사용자 선택기로 목록에 없는 그룹:[false]가 0과 같아야 함&quot;이 `principalName` 표시되고 `authorizableId` (CQ-4278177)가 닫힌 사용자 그룹을 추가할 때 관찰됩니다.
 
 * 자산 UI 열 보기는 특정 테넌트의 dam 루트 경로에 관계없이 모든 경로를 표시합니다(CQ-4278175).
 
@@ -437,7 +437,7 @@ AEM 6.5.2.0 Forms의 주요 기능은 다음과 같습니다.
 
 **서신 관리**
 
-* &quot;콘솔에서 다음 오류가 발생하여 간헐적으로 메일 UI(CCR UI) 변환 만들기가 실패합니다.
+* &quot;콘솔에서 다음 오류가 발생하여 간헐적으로 CCR UI(통신 UI) 변환 만들기가 실패합니다.
    `- Uncaught Error: variable [object Object]is already known the letter`- NPR-30127
 
 **대화형 통신**
