@@ -3,7 +3,7 @@ title: AEM 자산 정보
 description: 디지털 자산 관리란 무엇이고, 사용 사례는 물론, Adobe의 AEM Asset 솔루션인
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 01475dc8cf4f1e4cb0575c60523c27105ebd1150
 
 ---
 
@@ -72,7 +72,7 @@ AEM에서 디지털 자산으로 작업할 경우 다음 용어를 이해해야 
 
 * **표현물** 변환은 자산의 이진 표현입니다. 자산에는 항상 업로드한 파일의 표현인 기본 표현이 있습니다. 자산에는 사용자 지정된 작업 흐름 단계에 의해서나 자산이 업로드될 때 만들어지는 추가적인 표현들이 있습니다. 표현물들은 크기가 다르거나 해상도가 다르거나, 워터마크가 추가로 있거나 기타 특성이 변경되었을 수 있습니다.
 
-* **버전** 버전 관리 기능을 사용하면 특정 시점에 디지털 자산의 스냅샷을 만들 수 있습니다. 자산을 이전 버전으로 복원할 수 있습니다. AEM Assets의 버전 매기기를 참조하십시오.
+* **버전** 버전 관리 기능을 사용하면 특정 시점에 디지털 자산의 스냅샷을 만들 수 있습니다. 자산을 이전 버전으로 복원할 수 있습니다. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
 * **하위 자산** 하위 자산은 예를 들어, Adobe Photoshop 파일의 레이어 또는 PDF 파일의 페이지에 있는 자산을 구성하는 자산입니다. AEM Assets에서는 하위 자산도 자산처럼 관리할 수 있습니다.
 
