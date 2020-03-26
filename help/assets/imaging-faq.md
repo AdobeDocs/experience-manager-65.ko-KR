@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 3c2974911b9e9b45d4c4641f9c3683677a88db2f
+source-git-commit: 582b7e9f36d3b9599058b4cfbe83897822b26d05
 
 ---
 
@@ -24,7 +24,7 @@ Smart Imaging 기술은 Adobe Sensei AI 기능을 활용하고 기존 &quot;이�
 다음 이미지 자산 예는 추가된 스마트 이미징 최적화를 보여줍니다.
 
 | Image<br>(URL) | 썸네일 | 크기<br> (JPEG) | 크기(WebP)<br> (스마트 ***이미징***&#x200B;포함) | % 감소 |
-|---|:---:|:---:|:---:|:---:|:---:|
+|---|---|---|---|---|
 | [이미지 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75KB | 45.92KB | 38% |
 | [이미지 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191KB | 70.66KB | 63% |
 | [이미지 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64KB | 39.44KB | 59% |
