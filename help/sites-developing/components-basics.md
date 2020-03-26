@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 00c98c4c1178f88844f6bec8a214d096205c58cd
 
 ---
 
@@ -54,7 +54,7 @@ source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 
 구성 요소는 터치 지원 UI, 클래식 UI 또는 둘 다를 지원하도록 구현할 수 있습니다. 표준 인스턴스를 볼 때 클래식 UI용으로 원래 디자인된 기본 구성 요소나 터치 지원 UI 또는 두 가지 모두를 볼 수 있습니다.
 
-이러한 이유로 이 페이지에서 두 가지 모두에 대한 기본 사항 및 이를 인식하는 방법을 다룹니다.
+따라서 이 페이지에서 두 가지 모두에 대한 기본 사항과 이를 인식하는 방법을 다룹니다.
 
 >[!NOTE]
 > Adobe는 최신 기술을 활용하려면 터치 지원 UI를 활용하는 것이 좋습니다. [AEM Modernification Tools&amp;(moderniatzion-tools.md)를 사용하면 마이그레이션을 더 쉽게 할 수 있습니다.
@@ -157,7 +157,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며, 주요 고려 사항�
 
    * jcr 속성:
 
-      jcr 속성 목록;이러한 변수는 변수이며, 구성 요소 노드의 기본 구조, 속성 및 하위 노드는 `cq:Component` 정의에 의해 정의되므로 선택 사항일 수 있습니다
+      jcr 속성 목록;이러한 변수들 중 일부는 구성 요소 노드의 기본 구조, 속성 및 하위 노드가 `cq:Component` 정의에 의해 정의되므로 선택 사항일 수 있습니다
 
    * 리소스:
 
@@ -540,7 +540,7 @@ AEM 내의 구성 요소는 3개의 서로 다른 계층을 따릅니다.
 
    이 값은 런타임 시 포함 시퀀스에 의해 적용됩니다.
 
-   이 계층 구조는 디자이너가 사용하며, 이 계층은 렌더링의 다양한 디자인 측면에 대한 기본 역할을 합니다.레이아웃 정보, css 정보, parsys에 있는 사용 가능한 구성 요소 등을 포함합니다.
+   디자이너는 이 계층 구조를 사용하여 렌더링의 다양한 디자인 측면에 대한 기본 역할을 합니다.레이아웃 정보, css 정보, parsys에 있는 사용 가능한 구성 요소 등을 포함합니다.
 
 ## 편집 동작 {#edit-behavior}
 
@@ -604,7 +604,7 @@ AEM 내의 구성 요소는 3개의 서로 다른 계층을 따릅니다.
 
 ### cq:액션 {#cq-actions}
 
-속성( `cq:actions` `String array`)은 구성 요소에서 수행할 수 있는 하나 이상의 작업을 정의합니다. 다음 값을 구성에 사용할 수 있습니다.
+속성( `cq:actions` `String array`)은 구성 요소에서 수행할 수 있는 하나 이상의 작업을 정의합니다. 구성에 대해 다음 값을 사용할 수 있습니다.
 
 <table>
  <tbody>
@@ -624,6 +624,10 @@ AEM 내의 구성 요소는 3개의 서로 다른 계층을 따릅니다.
    <td><code>edit</code></td>
    <td>구성 요소를 편집할 단추를 추가합니다.</td>
   </tr>
+      <tr>
+    <td><code>editannotate</code></td>
+    <td>구성 요소를 편집하고 <a href="/help/sites-authoring/annotations.md">주석을</a>허용하는 단추를 추가합니다.</td>
+   </tr>
   <tr>
    <td><code>delete</code></td>
    <td>구성 요소를 삭제할 단추를 추가합니다.</td>
