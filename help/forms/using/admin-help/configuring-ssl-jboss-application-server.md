@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: a7ce63433f7e46feae8b0d23778e36d10c33972a
 
 ---
 
@@ -23,18 +23,18 @@ JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자�
 
 다음 절차에서:
 
-* *[appserver 루트는]* AEM 양식을 실행하는 응용 프로그램 서버의 홈 디렉토리입니다.
-* *[type]* is a folder name that different, deployed the type of install you performed.
+* `[appserver root]` 는 AEM 양식을 실행하는 응용 프로그램 서버의 홈 디렉토리입니다.
+* `[type]` 은 수행한 설치 유형에 따라 달라지는 폴더 이름입니다.
 
 ## SSL 자격 증명 만들기 {#create-an-ssl-credential}
 
 1. 명령 프롬프트에서 JAVA HOME/ *[bin으로]*&#x200B;이동하고 다음 명령을 입력하여 자격 증명 및 키 저장소를 만듭니다.
 
-   `keytool -genkey -dname "CN=`*호스트 그룹&#x200B;*`, OU=`** 회사 이름 `, O=`**회사 이름`,L=`*Name* State Name `, S=`*State Name *`, C=`** `" -alias` `"` `*LC Cert*`**`-keyalg RSA -keypass`** `-keystore`**State NameCityCode Country Code Country Code Country&quot;Key_passwordKeyPasswordKeystoreNameHostName`.keystore`
+   `keytool -genkey -dname "CN=`*호스트 그룹&#x200B;*그룹 이름`, OU=`**`, O=`*회사 이름&#x200B;*이름`,L=`*주 이름* `, S=`*국가 이름&#x200B;*국가 코드`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`**국가 코드&quot;_key_passwordStorekeynameSightroom`.keystore`
 
    >[!NOTE]
    >
-   >JAVA [_HOME을] JDK가 설치된 디렉토리로 바꾸고 기울임꼴로 된 텍스트를 환경에 해당하는 값으로 바꿉니다. 호스트 이름은 응용 프로그램 서버의 정규화된 도메인 이름입니다.
+   >JDK가 설치된 디렉토리로 `[JAVA_HOME]` 대체하고 기울임꼴로 표시된 텍스트를 환경에 해당하는 값으로 바꿉니다. 호스트 이름은 응용 프로그램 서버의 정규화된 도메인 이름입니다.
 
 1. 암호를 입력하라는 메시지가 `keystore_password` 표시되면 을 입력합니다. 키 저장소 및 키의 암호가 동일해야 합니다.
 
@@ -42,60 +42,51 @@ JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자�
    >
    >이 `keystore_password` 단계에서 *입력한 암호가 1단계에서 입력한 암호(key_password)와 동일하거나 다를 수 있습니다.*
 
-1. 다음 명령 중 하나를 입력하여 *appserver root*/server/ *[type]*/conf 디렉토리에 keystorname *[]*.keystore를 복사합니다.
+1. 다음 명령 중 하나를 입력하여 *keystorename*.keystore를 `[appserver root]/server/[type]/conf` 디렉토리로 복사합니다.
 
-   * (Windows Single Server) `copy`*keystorename *`.keystore`*[appserver 루트&#x200B;]*`\standalone\configuration`
-   * (Windows Server 클러스터) copy *keystorename*.keystore *[appserver root]*\domain\configuration
-   * (Linux Single Server) `cp`*keystorename *`.keystore`*[appserver 루트&#x200B;]*`/standalone/configuration`
-   * (Linux 서버 클러스터)
+   * (Windows Single Server) `copy``keystorename.keystore[appserver root]\standalone\configuration`
+   * (Windows Server 클러스터) 복사본 `keystorename.keystore[appserver root]\domain\configuration`
+   * (Linux 단일 서버) `cp keystorename.keystore [appserver root]/standalone/configuration`
+   * (Linux 서버 클러스터) `cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration`
 
-      ```
-      cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration
-      ```
 
 1. 다음 명령을 입력하여 인증서 파일을 내보냅니다.
 
-   * &quot;(단일 서버) keytool -export -alias &quot;LC Cert&quot; -file LC_cert.cer -keystore [appserver root]/standalone/configuration/keystorename.keystore
-   * (Server Cluster) keystore -export -export - *&quot;LC Cert&quot;* -file *LC_cert*.cer -store *[appserver]*/domain/configuration *keystorename* keystore.keystore
+   * (단일 서버) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/standalone/configuration/keystorename.keystore`
+   * (서버 클러스터) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/domain/configuration/keystorename.keystore`
 
 1. 암호를 *입력하라는 메시지가 표시되면 keystore_password* 를 입력합니다.
-1. 다음 명령을 입력하여 LC_cert.cer 파일을 *[appserver 루트]\conf *디렉토리에 복사합니다.
+1. 다음 명령을 입력하여 AEMForms_cert.cer 파일을 *[appserver 루트]\conf *디렉토리에 복사합니다.
 
-   * (Windows Single Server) LC_cert.cer [appserver 루트]\standalone\configuration복사
-   * (Windows Server 클러스터) LC_cert.cer [appserver 루트]\domain\configuration복사
-   * (Linux Single Server) cp LC _cert.cer [appserver 루트]\standalone\configuration
-   * (Linux Server 클러스터) cp LC _cert.cer [appserver 루트]\domain\configuration
+   * (Windows Single Server) `copy AEMForms_cert.cer [appserver root]\standalone\configuration`
+   * (Windows Server 클러스터) `copy AEMForms_cert.cer [appserver root]\domain\configuration`
+   * (Linux 단일 서버) `cp AEMForms _cert.cer [appserver root]\standalone\configuration`
+   * (Linux 서버 클러스터) `cp AEMForms _cert.cer [appserver root]\domain\configuration`
 
 1. 다음 명령을 입력하여 인증서 내용을 봅니다.
 
-   * `keytool -printcert -v -file [appserver root]\standalone\configuration\LC_cert.cer`
-   * 
+   * `keytool -printcert -v -file [appserver root]\standalone\configuration\AEMForms_cert.cer`
+   * `keytool -printcert -v -file [appserver root]\domain\configuration\AEMForms_cert.cer`
 
-   ```
-   keytool -printcert -v -file [appserver root]\domain\configuration\LC_cert.cer
-   ```
-
-   ``
-
-1. JAVA_HOME \jre\lib\security폴더에 있는 *[캐시 파일에]*&#x200B;대한 쓰기 액세스 권한을 제공하려면 다음 작업을 수행하십시오.
+1. 필요한 `[JAVA_HOME]\jre\lib\security`경우 액세스 파일에 대한 쓰기 액세스를 제공하려면 다음 작업을 수행하십시오.
 
    * (Windows) 캐시 파일을 마우스 오른쪽 단추로 클릭하고 [속성]을 선택한 다음 [읽기 전용] 속성을 선택 취소합니다.
    * (Linux) 유형 `chmod 777 cacerts`
 
 1. 다음 명령을 입력하여 인증서를 가져옵니다.
 
-   `keytool -import -alias “LC Cert” -file`*LC_cert *JAVA`.cer -keystore`*_HOME*`\jre\lib\security\cacerts`
+   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *JAVA`.cer -keystore`*_HOME*`\jre\lib\security\cacerts`
 
 1. 암호를 `changeit` 입력합니다. 이 암호는 Java 설치의 기본 암호이며 시스템 관리자가 변경했을 수 있습니다.
 1. 다음을 묻는 메시지가 표시되면 `Trust this certificate? [no]`을 입력합니다 `yes`. &quot;인증서가 키 저장소에 추가되었습니다&quot;라는 확인 메시지가 표시됩니다.
 1. Workbench에서 SSL을 통해 연결하는 경우 Workbench 컴퓨터에 인증서를 설치합니다.
 1. 텍스트 편집기에서 편집할 다음 파일을 엽니다.
 
-   * 단일 서버 - [appserver root]/standalone/configuration/lc_&lt;dbname/turnkey>.xml
+   * 단일 서버 - `[appserver root]`/standalone/configuration/lc_&lt;dbname/turnkey>.xml
 
-   * 서버 클러스터 - [appserver 루트]/domain/configuration/host.xml
+   * 서버 클러스터 - `[appserver root]`/domain/configuration/host.xml
 
-   * 서버 클러스터 - [appserver root]/domain/configuration/domain_&lt;dbname>.xml
+   * 서버 클러스터 - `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
 1. 
    * **단일 서버의 경우** lc_&lt;dbaname/tunkey>.xml 파일에서 &lt;security-reales> 섹션 뒤에 다음을 추가합니다.
@@ -104,7 +95,7 @@ JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자�
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
-   <keystore path="C:/Adobe/Adobe_Experience_Manager_Forms/jboss/standalone/configuration/aemformses.keystore" keystore-password="adobe" alias="AEMformsCert" key-password="adobe"/>
+   <keystore path="C:/Adobe/Adobe_Experience_Manager_Forms/jboss/standalone/configuration/aemformses.keystore" keystore-password="changeit" alias="AEMformsCert" key-password="changeit"/>
    </ssl>
    </server-identities>
    </security-realm>
@@ -126,7 +117,7 @@ JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자�
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
-   <keystore path="C:/Adobe/Adobe_Experience_Manager_Forms/jboss/standalone/configuration/aemformses.keystore" keystore-password="adobe" alias="AEMformsCert" key-password="adobe"/>
+   <keystore path="C:/Adobe/Adobe_Experience_Manager_Forms/jboss/standalone/configuration/aemformses.keystore" keystore-password="changeit" alias="AEMForms Cert" key-password="changeit"/>
    </ssl>
    </server-identities>
    </security-realm>
@@ -175,15 +166,15 @@ JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자�
 
 1. 명령 프롬프트에서 JAVA *[HOME]*/bin으로 이동하고 다음 명령을 입력하여 키 저장소 및 키를 만듭니다.
 
-   `keytool -genkey -dname "CN=`*호스트 그룹&#x200B;*그룹`, OU=`*이름* 회사 이름 `, O=`*Name *State Name`, L=`*State Name* `, S=`**`, C=`** `" -alias` `"` `*LC Cert*`**`-keyalg RSA -keypass`**`-keystore`** State NameCountry CodeCountry Code Country&quot;Key-Key_passwordKeyPublicationStorenameStoretypublication `.keystore`
+   `keytool -genkey -dname "CN=`*호스트 그룹&#x200B;*그룹 이름`, OU=`**`, O=`*회사 이름&#x200B;*City 이름`, L=`*City 이름* StateState `, S=`*이름&#x200B;*`, C=`**`-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`**StateNameCnameCountry CodeCountry CodeCountry-Key_passwordKeystoreName`.keystore`
 
    >[!NOTE]
    >
-   >JDK가 설치된 디렉토리로 *`[JAVA_HOME]`대체하고 기울임꼴로 표시된 텍스트를 환경에 해당하는 값으로 바꿉니다.*
+   >JDK가 설치된 디렉토리로 *`[JAVA_HOME]`* 대체하고 기울임꼴로 표시된 텍스트를 환경에 해당하는 값으로 바꿉니다.
 
 1. 다음 명령을 입력하여 인증 기관에 전송할 인증서 요청을 생성합니다.
 
-   `keytool -certreq -alias`*&quot;LC Cert&quot;*`-keystore`*keystore 이름* `.keystore -file`*LCcertRequest.csr *
+   `keytool -certreq -alias` &quot;AEMForms Cert&quot; `-keystore`*키 스토어이름&#x200B;*AEMFormscertRequest.`.keystore -file`*csr*
 
 1. 인증서 파일 요청이 완료되면 다음 절차를 완료하십시오.
 
@@ -191,7 +182,7 @@ JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자�
 
 1. 명령 프롬프트에서 *`[JAVA HOME]`*/bin으로 이동하고 다음 명령을 입력하여 CSR이 서명된 CA의 루트 인증서를 가져옵니다.
 
-   `keytool -import -trustcacerts -file`*rootcert *`.pem -keystore`*keystorename*`.keystore -alias root`
+   `keytool -import -trustcacerts -file` rootcert.pem -keystore` keystorename.keystore -alias root`
 
    루트 인증서가 브라우저에 없는 경우 해당 인증서를 브라우저에서 가져옵니다.
 
