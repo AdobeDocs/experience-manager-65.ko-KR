@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7c937b425d909a1f3a9af0a1c3357c44220af0f2
+source-git-commit: 61d1531c020b5a25207b5e3f1c2b0c14e2974e02
 
 ---
 
@@ -60,7 +60,7 @@ Experience Manager Assets에는 다음과 같은 액세서빌러티 개선 사�
 
 인쇄 가능한 출력 생성 워크플로우 단계에서는 소스 템플릿 파일을 데이터 파일과 통합할 수 있습니다. 이 통합을 통해 템플릿 파일의 다른 복사본을 인쇄하거나 저장할 수 있습니다. 이 단계에서는 PCL, PostScript, ZPL, IPL, TPCL 또는 DPL 출력을 생성합니다. 이 기능에 대한 자세한 내용은 OSGi - [Step Reference에서 양식 중심의 워크플로우를 참조하십시오](../forms/using/aem-forms-workflow-step-reference.md).
 
-![인쇄 가능한 출력 생성](assets/generate-print-output-demo.gif)
+![인쇄 가능한 출력 생성](assets/generate-print-output-step.gif)
 
 ### 레이아웃 모드에서 적응형 양식 및 인터랙티브한 커뮤니케이션에 대한 다중 열 지원 {#multi-column-adaptive-forms}
 
@@ -124,7 +124,7 @@ Assets 사용자는 시각적으로 유사한 이미지를 검색할 수 있습�
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
 
-   * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+   * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-2-0.html)
 
 
 * AEM Cloud Manager CLI 업데이트
