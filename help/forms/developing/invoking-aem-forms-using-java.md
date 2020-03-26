@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 3fe5f243c3e39029c1605a1a1977a48dba595d64
 
 ---
 
@@ -63,6 +63,9 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
 
 * 호출할 AEM Forms 서비스. 클라이언트 응용 프로그램은 하나 이상의 서비스를 호출할 수 있습니다.
 * AEM Forms 서비스를 호출할 모드. EJB 또는 SOAP 모드를 사용할 수 있습니다. 연결 [속성](invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
+
+>[!NOTE] (턴키만 해당) EJB용 서버 IP를 지정하는 명령으로 AEM Forms 서버를 `standalone.bat -b <Server IP> -c lc_turnkey.xml` 시작합니다.
+
 * AEM Forms가 배포된 J2EE 응용 프로그램 서버.
 
 ### 서비스별 JAR 파일 {#service-specific-jar-files}
@@ -422,7 +425,7 @@ Java API를 사용할 때 AEM Forms를 호출하도록 연결 속성을 설정�
 
 AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 설정합니다.
 
-* **** DSC_DEFAULT_EJB_ENDPOINT:EJB 연결 모드를 사용하는 경우 이 값은 AEM Forms가 배포된 J2EE 응용 프로그램 서버의 URL을 나타냅니다. AEM Forms를 원격으로 호출하려면 AEM Forms가 배포된 J2EE 응용 프로그램 서버 이름을 지정합니다. 클라이언트 응용 프로그램이 동일한 J2EE 응용 프로그램 서버에 있는 경우 지정할 수 `localhost`있습니다. 배포된 J2EE 응용 프로그램 서버 AEM Forms에 따라 다음 값 중 하나를 지정합니다.
+* **DSC_DEFAULT_EJB_ENDPOINT:** EJB 연결 모드를 사용하는 경우 이 값은 AEM Forms가 배포된 J2EE 응용 프로그램 서버의 URL을 나타냅니다. AEM Forms를 원격으로 호출하려면 AEM Forms가 배포된 J2EE 응용 프로그램 서버 이름을 지정합니다. 클라이언트 응용 프로그램이 동일한 J2EE 응용 프로그램 서버에 있는 경우 지정할 수 `localhost`있습니다. 배포된 J2EE 응용 프로그램 서버 AEM Forms에 따라 다음 값 중 하나를 지정합니다.
 
    * JBoss: `https://<ServerName>:8080 (default port)`
    * WebSphere: `iiop://<ServerName>:2809 (default port)`
@@ -441,9 +444,9 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
    * 기본값을 사용하지 않으려는 경우 `java.naming.factory.initial` 속성을 요구 사항을 충족하는 값으로 설정할 수 있습니다.
    ***참고**:문자열을 사용하여 `DSC_SERVER_TYPE` 연결 속성을 설정하는 대신 `ServiceClientFactoryProperties` 클래스의 정적 멤버를 사용할 수 있습니다. 다음 값을 사용할 수 있습니다. `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`또는 `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`를 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`선택합니다.
 
-* **** DSC_CREDENTIAL_USERNAME:AEM 양식 사용자 이름을 지정합니다. 사용자가 AEM Forms 서비스를 성공적으로 호출하려면 서비스 사용자 역할이 필요합니다. 사용자는 서비스 호출 권한을 포함하는 다른 역할을 가질 수도 있습니다. 그렇지 않으면 서비스를 호출하려고 할 때 예외가 발생합니다. 서비스 보안이 비활성화된 경우 이 연결 속성을 지정할 필요가 없습니다.
-* **** DSC_CREDENTIAL_PASSWORD:해당 암호 값을 지정합니다. 서비스 보안이 비활성화된 경우 이 연결 속성을 지정할 필요가 없습니다.
-* **** DSC_REQUEST_TIMEOUT:SOAP 요청에 대한 기본 요청 제한 시간 제한은 12,0000밀리초(20분)입니다. 요청을 완료하는 데 시간이 더 오래 걸릴 수 있습니다. 예를 들어, 큰 레코드 집합을 검색하는 SOAP 요청에는 더 긴 시간 제한 제한이 필요할 수 있습니다. SOAP 요청에 `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` 대한 요청 호출 시간 제한 제한을 늘리는 데 를 사용할 수 있습니다.
+* **DSC_CREDENTIAL_USERNAME:** AEM 양식 사용자 이름을 지정합니다. 사용자가 AEM Forms 서비스를 성공적으로 호출하려면 서비스 사용자 역할이 필요합니다. 사용자는 서비스 호출 권한을 포함하는 다른 역할을 가질 수도 있습니다. 그렇지 않으면 서비스를 호출하려고 할 때 예외가 발생합니다. 서비스 보안이 비활성화된 경우 이 연결 속성을 지정할 필요가 없습니다.
+* **DSC_CREDENTIAL_PASSWORD:** 해당 암호 값을 지정합니다. 서비스 보안이 비활성화된 경우 이 연결 속성을 지정할 필요가 없습니다.
+* **DSC_REQUEST_TIMEOUT:** SOAP 요청에 대한 기본 요청 제한 시간 제한은 12,0000밀리초(20분)입니다. 요청을 완료하는 데 시간이 더 오래 걸릴 수 있습니다. 예를 들어, 큰 레코드 집합을 검색하는 SOAP 요청에는 더 긴 시간 제한 제한이 필요할 수 있습니다. SOAP 요청에 `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` 대한 요청 호출 시간 제한 제한을 늘리는 데 를 사용할 수 있습니다.
 
    **참고**:SOAP 기반 호출만 DSC_REQUEST_TIMEOUT 속성을 지원합니다.
 
@@ -576,7 +579,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
  myCtx.initPrincipal(authResult);
 ```
 
-또는 속성을 설정하는 대신 `DSC_CREDENTIAL_USERNAME` 개체의 `DSC_CREDENTIAL_PASSWORD` 메서드를 호출하여 `ServiceClientFactory` `setContext` `com.adobe.idp.Context` 개체를 전달할 수 있습니다. AEM 양식 사용자를 사용하여 서비스를 호출할 때는 AEM Forms 서비스를 호출하는 데 필요한 `Services User` 역할을 해당 사용자에게 부여해야 합니다.
+또는 속성을 설정하는 대신 `DSC_CREDENTIAL_USERNAME` 개체의 `DSC_CREDENTIAL_PASSWORD` 메서드를 호출하여 `ServiceClientFactory` `setContext` `com.adobe.idp.Context` 개체를 전달할 수 있습니다. AEM 양식 사용자를 사용하여 서비스를 호출할 때 AEM Forms 서비스를 호출하는 데 필요한 `Services User` 이름의 역할이 있는지 확인합니다.
 
 다음 코드 예제에서는 `com.adobe.idp.Context` `EncryptionServiceClient` 개체를 만드는 데 사용되는 연결 설정 내에서 개체를 사용하는 방법을 보여 줍니다.
 
@@ -696,7 +699,7 @@ AEM Forms 서비스에서는 PDF 문서를 `java.io.InputStream` 개체나 바�
 
 동일한 파일 시스템에 부수적 파일이 있는 경우 `com.adobe.idp.Document` 객체를 더 빠르게 만들 수 있습니다. 부수적 파일이 원격 파일 시스템에 있는 경우 복사 작업을 수행해야 하므로 성능이 저하됩니다.
 
-애플리케이션에는 `com.adobe.idp.Document` 및 `org.w3c.dom.Document` 데이터 유형이 모두 포함될 수 있습니다. 그러나 `org.w3c.dom.Document` 데이터 유형을 완전히 검증해야 합니다. 객체를 `org.w3c.dom.Document` 객체로 변환하는 방법에 대한 자세한 내용은 빠른 `com.adobe.idp.Document` [시작(EJB 모드)을 참조하십시오.Java API 파섹 ](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+애플리케이션에는 `com.adobe.idp.Document` 및 `org.w3c.dom.Document` 데이터 유형이 모두 포함될 수 있습니다. 그러나 `org.w3c.dom.Document` 데이터 유형을 완전히 검증해야 합니다. 객체를 `org.w3c.dom.Document` 객체로 변환하는 방법에 대한 자세한 내용은 빠른 `com.adobe.idp.Document` [시작(EJB 모드)을 참조하십시오.Java API 파섹](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 >[!NOTE]
 >
@@ -953,7 +956,7 @@ PDF 문서(또는 XML 데이터와 같은 기타 데이터 유형)를 출력 값
 
 ## Java 클라이언트 라이브러리를 사용하여 서비스 호출 {#invoking-a-service-using-a-java-client-library}
 
-AEM Forms 서비스 작업은 Java 클라이언트 라이브러리라고 하는 서비스의 강력한 입력 API를 사용하여 호출할 수 있습니다. Java *클라이언트 라이브러리는* 서비스 컨테이너에 배포된 서비스에 대한 액세스를 제공하는 구체적인 클래스 세트입니다. 호출 API 파섹  `InvocationRequest` Invocation API는 Workbench에서 생성된 긴 프로세스 등 프로세스를 호출하는 데 사용됩니다. 인간 [중심의 장기 프로세스](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)호출을 참조하십시오.
+AEM Forms 서비스 작업은 Java 클라이언트 라이브러리라고 하는 서비스의 강력한 입력 API를 사용하여 호출할 수 있습니다. Java *클라이언트 라이브러리는* 서비스 컨테이너에 배포된 서비스에 대한 액세스를 제공하는 구체적인 클래스 세트입니다. 호출 API 파섹 `InvocationRequest` Invocation API는 Workbench에서 생성된 긴 프로세스 등 프로세스를 호출하는 데 사용됩니다. 인간 [중심의 장기 프로세스](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)호출을 참조하십시오.
 
 서비스 작업을 수행하려면 Java 개체에 속하는 메서드를 호출합니다. Java 클라이언트 라이브러리에는 일반적으로 서비스 작업과 일대일 매핑을 수행하는 메서드가 포함되어 있습니다. Java 클라이언트 라이브러리를 사용할 때는 필수 연결 속성을 설정합니다. 연결 [속성](invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
 
@@ -1027,7 +1030,7 @@ Java 호출 API 파섹 `MyApplication/EncryptDocument`
 1. 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. 연결 [속성](invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
 1. 생성자를 사용하여 객체를 전달하여 `ServiceClient` 객체를 만듭니다 `ServiceClientFactory` . 객체를 `ServiceClient` 사용하면 서비스 작업을 호출할 수 있습니다. 호출 요청 찾기, 전달 및 라우팅과 같은 작업을 처리합니다.
 1. 생성자를 사용하여 `java.util.HashMap` 객체를 만듭니다.
-1. 각 입력 매개 변수에 대한 `java.util.HashMap` 개체의 `put` 메서드를 호출하여 긴 기간 프로세스를 전달합니다. 단기 프로세스에 유형 입력 매개 변수가 하나만 필요하므로 다음 예와 같이 `MyApplication/EncryptDocument` `Document``put` 메서드를 한 번만 호출하면 됩니다.
+1. 각 입력 매개 변수에 대해 `java.util.HashMap` 개체의 `put` 메서드를 호출하여 긴 기간 프로세스를 전달합니다. 단기 프로세스에 유형 입력 매개 변수가 하나만 필요하므로 다음 예와 같이 `MyApplication/EncryptDocument` `Document``put` 메서드를 한 번만 호출하면 됩니다.
 
    ```as3
     //Create a Map object to store the parameter value for inDoc
