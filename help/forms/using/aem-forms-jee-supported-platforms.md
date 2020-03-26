@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29a94f3ece1b96b24e1b77f4abe6f6f28924ae7b
+source-git-commit: 6cf69dc86ce70a43e77b00d6b3986fa40ae0a4ec
 
 ---
 
@@ -122,8 +122,6 @@ Adobe Experience Manager Forms를 사용하려면 Java Virtual Machine이 실행
 
 ### 데이터베이스 및 CRX 지속성 {#databases-and-crx-persistence}
 
-#### AEM 지속성 지원 {#aem-persistence-support}
-
 <table>
  <tbody>
   <tr>
@@ -137,7 +135,7 @@ Adobe Experience Manager Forms를 사용하려면 Java Virtual Machine이 실행
    <td><p>지원됨</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.0</p> </td>
+   <td><p>MongoDB Enterprise 4.0 </p> </td>
    <td><p>저장소 마이크로커널</p> </td>
    <td><p>지원됨</p> </td>
   </tr>
@@ -154,7 +152,7 @@ Adobe Experience Manager Forms를 사용하려면 Java Virtual Machine이 실행
 
 <tr>
    <td>Oracle 데이터베이스 19c </td>
-   <td>저장소 마이크로커널</td>
+   <td>보관소</td>
    <td>지원됨</td>
   </tr>
   <tr>
@@ -165,6 +163,11 @@ Adobe Experience Manager Forms를 사용하려면 Java Virtual Machine이 실행
   <tr>
    <td>IBM DB2 11.1</td>
    <td>저장소 마이크로커널</td>
+   <td>R:제한된 지원</td>
+  </tr>
+    <tr>
+   <td>MySQL 5.7.19 </td>
+   <td>-</td>
    <td>R:제한된 지원</td>
   </tr>
  </tbody>
@@ -172,7 +175,6 @@ Adobe Experience Manager Forms를 사용하려면 Java Virtual Machine이 실행
 
 * IBM DB2는 새로 설치할 수 없습니다. AEM 6.5 Forms로 업그레이드하는 기존 고객에게만 지원됩니다.
 * MongoDB 파섹 자세한 내용은 MongoDB [라이선스 정책](https://www.mongodb.org/about/licensing/) 페이지를 참조하십시오.
-
 * AEM 배포를 최대한 활용하려면 Adobe에서 전문 지원을 받으려면 MongoDB Enterprise 버전의 라이선스를 부여하는 것이 좋습니다.
 * Adobe 고객 지원 센터는 AEM에서 MongoDB 사용과 관련된 자격 조건을 갖춘 문제를 지원합니다. 자세한 내용은 Adobe Experience Manager [용 MongoDB 페이지를](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)참조하십시오.
 * &#39;File System&#39;에는 POSIX 호환 블록 스토리지가 포함됩니다. 여기에는 네트워크 스토리지 기술이 포함됩니다. 파일 시스템 성능이 다를 수 있으며 전체 성능에 영향을 줄 수 있습니다. 네트워크/원격 파일 시스템과 함께 테스트 AEM을 로드하는 것이 좋습니다.
@@ -180,50 +182,8 @@ Adobe Experience Manager Forms를 사용하려면 Java Virtual Machine이 실행
 * MongoDB 공유는 AEM에서 지원되지 않습니다.
 * JEE의 AEM Forms는 RDBMK 지속성에 대한 MySQL을 지원하지 않습니다.
 * Document Security 모듈은 Content Repository를 사용하지 않습니다. 이는 Document Security만 사용하고 HTML Workspace, HTML5 양식 또는 적응형 양식을 사용하지 않을 계획인 경우 컨텐츠 저장소를 설치하지 않음을 의미합니다.
+* JEE의 AEM Forms는 AEM Repository(CRX-Repository)를 지속하기 위한 MySQL 사용을 지원하지 않습니다.
 
-#### 데이터베이스 지원 {#database-support}
-
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>플랫폼</strong></p> </td>
-   <td><p><strong> 설명</strong></p> </td>
-   <td><p><strong>지원 수준</strong></p> </td>
-  </tr>
-  <tr>
-   <td>IBM DB2 11.1</td>
-   <td>저장소 마이크로커널</td>
-   <td>R:제한된 지원</td>
-  </tr>
-  <tr>
-   <td><p>Oracle Database 12c 릴리스 1</p> </td>
-   <td><p>저장소 마이크로커널</p> </td>
-   <td><p>지원됨</p> </td>
-  </tr>
-  <tr>
-   <td>Oracle 데이터베이스 18c</td>
-   <td>저장소 마이크로커널</td>
-   <td>지원됨</td>
-  </tr>
-    <tr>
-   <td>Oracle 데이터베이스 19c</td>
-   <td>저장소 마이크로커널</td>
-   <td>지원됨</td>
-  </tr>
-  <tr>
-   <td><p>MySQL 5.7.19<br /> </p> </td>
-   <td><p>저장소 마이크로커널</p> </td>
-   <td><p>지원됨</p> </td>
-  </tr>
-  <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
-   <td><p>저장소 마이크로커널</p> </td>
-   <td><p>지원됨</p> </td>
-  </tr>
- </tbody>
-</table>
-
-* IBM DB2는 새로 설치할 수 없습니다. AEM 6.5 Forms로 업그레이드하는 기존 고객에게만 지원됩니다.
 
 ### 데이터베이스 드라이버 {#database-drivers}
 
@@ -540,7 +500,7 @@ AEM Forms의 다음 하위 시스템은 508 [을 준수하지 않습니다](http
 
 ## JEE에서 AEM Forms에 지원되는 클라이언트 {#supported-clients-for-aem-forms-on-jee}
 
-### 워크벤치 {#workbench}
+### Workbench {#workbench}
 
 <table>
  <tbody>
@@ -569,7 +529,7 @@ AEM Forms의 다음 하위 시스템은 508 [을 준수하지 않습니다](http
 
 ### 디자이너 {#designer}
 
-**** 참고:Windows에 Designer를 설치하려면 관리자 권한으로 설치 프로그램을 실행합니다.
+**참고:** Windows에 Designer를 설치하려면 관리자 권한으로 설치 프로그램을 실행합니다.
 
 * Microsoft® Windows® 2016 Server, Microsoft Windows 10
 
@@ -701,7 +661,7 @@ AEM Forms의 다음 하위 시스템은 508 [을 준수하지 않습니다](http
 
 
 
-### AEM Forms 앱 {#aem-forms-workspace-app}
+### AEM Forms app {#aem-forms-workspace-app}
 
 #### 모바일 디바이스 지원 {#mobile-device-support}
 
