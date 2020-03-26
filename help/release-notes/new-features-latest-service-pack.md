@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
+source-git-commit: 7c937b425d909a1f3a9af0a1c3357c44220af0f2
 
 ---
 
@@ -85,8 +85,6 @@ XFA 양식의 텍스트 필드를 HTML5 양식의 리치 텍스트 필드로 변
 ### Accessibility enhancements {#forms-accessibility-enhancements-6540}
 
 Adobe Experience Manager Forms에는 다음과 같은 액세서빌러티 개선 사항이 포함되어 있습니다.
-
-* 사용자는 적응형 양식의 Ultramarine-Accessible 참조 테마에 대한 문제 없이 탭 포커스를 이동할 수 있습니다.
 
 * 화면 판독기는 확인란, 링크, 날짜 선택기 및 날짜 입력 필드를 적응형 양식으로 올바로 알려줍니다.
 
