@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
    <td>예 - <i>디자인 </i>모드에서 속성을 편집할 수 있습니다.</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs를</strong></a></td>
    <td> cq.social.hbs.vocting</td>
   </tr>
   <tr>
@@ -49,7 +49,7 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
   </tr>
   <tr>
    <td><strong>속성</strong></td>
-   <td><p>투표 <a href="voting.md">사용 참조</a></p> </td>
+   <td><p>참조, <a href="voting.md">투표 사용</a></p> </td>
   </tr>
  </tbody>
 </table>
