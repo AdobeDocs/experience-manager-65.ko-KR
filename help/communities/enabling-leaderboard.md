@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# 리더보드 기능{#leaderboard-feature}
+# 리더보드 기능 {#leaderboard-feature}
 
 ## 소개 {#introduction}
 
@@ -26,8 +26,8 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 설명서의 이 섹션에서는
 
-* `Leaderboard` 커뮤니티 사이트에 [구성 요소 추가](/help/communities/overview.md#community-sites)
-* 구성 요소의 구성 `Leaderboard` 설정
+* `Leaderboard` 커뮤니티 사이트에 구성 [요소 추가](/help/communities/overview.md#community-sites)
+* 구성 요소에 대한 구성 `Leaderboard` 설정
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -51,7 +51,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 #### 설정 탭 {#settings-tab}
 
-**설정 **탭 아래에서 회원과 관련된 정보를 지정합니다.
+설정 **탭에서** 구성원과 관련된 정보를 지정합니다.
 
 * **표시 이름**
 
@@ -70,7 +70,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 * **아바타 사용**
 
-   이 확인란을 선택하면 멤버의 아바타 이미지가 구성원 프로필로 연결되는 이름 옆에 있는 리드 보드에 포함됩니다.
+   이 확인란을 선택하면 구성원의 아바타 이미지가 구성원 프로필로 연결되는 이름 옆에 있는 리드 보드에 포함됩니다.
 기본값은 선택 취소입니다.
 
 #### 규칙 탭 {#rules-tab}
@@ -83,7 +83,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 * **점수 지정 규칙**
 
-   (필수) 표시할 점수를 생성하는 특정 규칙.
+   (필수) 표시할 점수를 생성하는 특정 규칙입니다.
 
 * **배지 규칙**
 
@@ -91,9 +91,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 * **표시 제한**
 
-   페이지당 표시할 구성원 수입니다.
-
-   기본값은 10입니다.
+   페이지당 표시할 구성원 수입니다.기본값은 10입니다.
 
 ### 예:참가자 경영진 {#example-participants-leaderboard}
 
