@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a3ccb1ffe2b2e24c453afac8cf3efc098f393030
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# 메시징 필수{#messaging-essentials}
+# 메시징 필수 {#messaging-essentials}
 
 이 페이지에서는 메시징 구성 요소를 사용하여 웹 사이트에 메시징 기능을 포함하는 작업에 대한 세부 사항을 문서화합니다.
 
@@ -98,18 +98,20 @@ source-git-commit: a3ccb1ffe2b2e24c453afac8cf3efc098f393030
 
 >[!CAUTION]
 >
->String 매개 변수는 다음 MessageBuilder 메서드에 대해 후행 슬래시 &quot;/&quot;를 포함하지 않아야 합니다.
+>String 매개 변수는 다음 MessageBuilder 메서드에 대해 후행 슬래시 &quot;/&quot;를 포함할 수 *없습니다* .
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
 >
->예:
 >
->```
+예:
+>
+>
+```>
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```
->
+>```>
+
 
 
 ### 커뮤니티 사이트 {#community-site}
@@ -124,22 +126,22 @@ source-git-commit: a3ccb1ffe2b2e24c453afac8cf3efc098f393030
 
 서버측 샘플 스크립트를 사용하려면 개발 환경과 OSGi 번들을 빌드하는 기능이 필요합니다.
 
-1. 관리자로 로그인하여 ` [CRXDE|Lite](https://localhost:4502/crx/de).`
+1. 관리자로 로그인합니다 ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
 1. 다음과 `bundle node`같은 임의 이름으로 `/apps/engage/install` In을 만듭니다.
 
-   * 기호 이름:com.engage.media.social.messaging.MessagingNotification
+   * 기호 이름: `com.engage.media.social.messaging.MessagingNotification`
    * 이름:시작하기 자습서 메시지 알림
-   * 설명:사용자에게 메시지를 받을 때 이메일 알림을 전송하는 샘플 서비스
-   * 패키지:com.engage.media.social.messaging.notification
+   * 설명:사용자에게 메시지를 수신할 때 이메일 알림을 전송하는 샘플 서비스
+   * 패키지: `com.engage.media.social.messaging.notification`
 
-1. /apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification으로 이동한 다음:
+1. 다음 위치로 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`이동한 후 다음을 수행합니다.
 
-   1. 자동으로 생성된 Activator.java 클래스를 삭제합니다.
-   1. MessageEventHandler.java 클래스를 만듭니다.
-   1. 아래 코드를 복사하여 MessageEventHandler.java에 붙여 넣습니다.
+   1. 자동으로 생성된 `Activator.java` 클래스를 삭제합니다.
+   1. 클래스를 `MessageEventHandler.java`만듭니다.
+   1. 아래 코드를 복사하여 에 붙여넣습니다 `MessageEventHandler.java`.
 
-1. 모두 **저장을 클릭합니다.**
-1. /apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd로 이동하고 MessageEventHandler.java 코드에 기록된 대로 모든 가져오기 문을 추가합니다.
+1. 모두 **저장을 클릭합니다**.
+1. 코드에 기록된 대로 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`이동하여 모든 가져오기 문을 추가합니다 `MessageEventHandler.java` .
 1. 번들을 빌드합니다.
 1. OSGi `Day CQ Mail Service`서비스가 구성되어 있는지 확인합니다.
 1. 데모 사용자로 로그인하고 다른 사용자에게 이메일을 보냅니다.
