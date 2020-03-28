@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Assignments Essentials{#assignments-essentials}
+# Assignments Essentials {#assignments-essentials}
 
 역량 강화 커뮤니티 [](/help/communities/overview.md#enablement-community) 사이트의 할당 기능 작업에 필요한 필수 정보에 대해 자세히 알아보십시오.
 
@@ -48,7 +48,7 @@ source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>할당 <a href="/help/communities/assignments.md">기능 보기</a></td>
+   <td>참조, <a href="/help/communities/assignments.md">할당 기능</a></td>
   </tr>
  </tbody>
 </table>
