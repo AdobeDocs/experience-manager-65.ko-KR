@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4f3928558641af89d138bfbf85ba099a4286b2f3
+source-git-commit: bdb26ba817e0599f811d7f4e131ec6ab356a4785
 
 ---
 
@@ -26,10 +26,15 @@ AEM(Adobe Experience Manager) 자산은 Adobe I/O를 통해 브랜드 포털로 
 >이전에는 브랜드 포털이 레거시 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 JWT 토큰 교환을 사용하여 인증에 대한 IMS 액세스 토큰을 획득했습니다.
 >
 >기존 OAuth를 통한 구성은 2020년 4월 6일부터 더 이상 지원되지 않으며, Adobe I/O를 통해 구성으로 변경되었습니다.
+
+
+>[!TIP]
 >
->기존 OAuth 게이트웨이에 구성이 있는 기존 브랜드 포털 사용자는 기존 구성을 삭제하고 Adobe I/O에 새 구성을 만드는 것이 좋습니다.
+>***기존 고객만 해당***
 >
->그러나 구성을 수정하지 않으면 기존 구성이 계속 작동합니다.
+>기존 레거시 OAuth 게이트웨이 구성을 계속 사용하는 것이 좋습니다. 기존 OAuth 게이트웨이 구성 문제가 발생하면 기존 구성을 삭제하고 Adobe I/O를 통해 새 구성을 만드십시오.
+
+
 
 이 도움말은 다음 두 가지 사용 사례에 대해 설명합니다.
 * [새 구성](#configure-new-integration-65):새 브랜드 포털 사용자이고 브랜드 포털에서 AEM 자산 작성자 인스턴스를 구성하려면 Adobe I/O에서 새 구성을 만들 수 있습니다.
@@ -103,7 +108,7 @@ IMS 구성에는 다음 두 단계가 포함됩니다.
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   그러면 Adobe IMS 기술 **[!UICONTROL 계정 구성 페이지로 이동합니다]** .
+   Adobe IMS 기술 계정 **[!UICONTROL 구성 페이지로 이동합니다]** .
 
 1. 기본적으로 인증서 **탭이** 열립니다.
 
