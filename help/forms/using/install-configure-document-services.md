@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 0598f1e61218c540b6441182a3080e5217761ed4
+source-git-commit: a7ef7682df1dc627565f1cc30047ed775d2dbd13
 
 ---
 
@@ -258,7 +258,7 @@ Acrobat을 설치한 후 Microsoft Word를 엽니다. Acrobat ****&#x200B;탭에
 
 * IBM SSL 소켓 공급자를 구성하려면 다음 단계를 수행하십시오.
 
-1. java.security 파일의 복사본을 만듭니다. 파일의 기본 위치는 WebSphere_installation_directory [\Appserver\java_][버전]\jre\lib\security입니다.
+1. java.security 파일의 복사본을 만듭니다. 파일의 기본 위치는 입니다 `[WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security`.
 1. 편집용으로 복사한 java.security 파일을 엽니다.
 1. 기본 SSL 소켓 팩터리를 변경하여 기본 IBM WebSphere 공장 대신 JSSE2 팩터리를 사용합니다.
 
@@ -309,7 +309,7 @@ PDF Generator 서비스가 이전 버전의 Microsoft Office로 만든 파일을
 
 응용 프로그램 서버를 시작하는 데 사용되는 사용자 계정에는 프로세스 수준 토큰 **바꾸기 권한이** 필요합니다. 로컬 시스템 계정에는 기본적으로 **프로세스 수준 토큰** 바꾸기 권한이 있습니다. 로컬 관리자 그룹 사용자와 함께 실행되는 서버의 경우 권한이 명시적으로 부여되어야 합니다. 다음 단계를 수행하여 권한을 부여합니다.
 
-1. Microsoft Windows용 그룹 정책 편집기를 엽니다. 그룹 정책 편집기를 열려면 시작을 클릭하고 **[!UICONTROL 검색]**&#x200B;시작 **상자에** gpedit.msc **[!UICONTROL 를 입력한 다음 그룹 정책]**&#x200B;편집기를 클릭합니다.
+1. Microsoft Windows용 그룹 정책 편집기를 엽니다. 그룹 정책 편집기를 열려면 시작을 클릭하고 **[!UICONTROL 검색]**&#x200B;시작 **상자에 gpedit.msc** 를 **[!UICONTROL 입력한 다음 그룹 정책]**&#x200B;편집기를 클릭합니다.
 1. 로컬 컴퓨터 **[!UICONTROL 정책]** > **[!UICONTROL 컴퓨터 구성]** > **[!UICONTROL 컴퓨터 구성]** > 설정 **[!UICONTROL >]** 보안 > 로컬 보안 > Rights SecurityLocal Rights Policy_Security **** **** **** 사용자 할당 및 편집 프로세스 수준 토큰을 대체정책 포함으로 이동하고 관리자를 포함합니다.
 1. 프로세스 수준 토큰 바꾸기 항목에 사용자를 추가합니다.
 
@@ -318,7 +318,6 @@ PDF Generator 서비스가 이전 버전의 Microsoft Office로 만든 파일을
 관리자가 아닌 사용자가 PDF Generator 서비스를 사용하도록 설정할 수 있습니다. 일반적으로 관리 권한이 있는 사용자만 서비스를 사용할 수 있습니다.
 
 1. 환경 변수 PDFG_NON_ADMIN_ENABLED를 만듭니다.
-
 1. 환경 변수의 값을 TRUE로 설정합니다.
 1. AEM Forms 인스턴스를 다시 시작합니다.
 
@@ -331,7 +330,7 @@ PDF Generator 서비스가 이전 버전의 Microsoft Office로 만든 파일을
 
    1. Microsoft에서는 수정 전에 레지스트리를 백업하는 것이 좋습니다. 자세한 내용은 Windows [에서 레지스트리를 백업 및 복원하는 방법을 참조하십시오](https://support.microsoft.com/en-us/help/322756).
    1. Microsoft Windows 레지스트리 편집기를 엽니다. 레지스트리 편집기를 열려면 시작 > 실행으로 이동하여 regedit을 입력하고 확인을 클릭합니다.
-   1. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\으로 이동합니다. EnableLUA 값이 0(영)으로 설정되어 있는지 확인합니다.
+   1. 다음으로 이동 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. EnableLUA 값이 0(영)으로 설정되어 있는지 확인합니다.
    1. EnableLUA 값이 **0** (영)으로 설정되어 있는지 확인합니다. 값이 0이 아닌 경우 값을 0으로 변경합니다. 레지스트리 편집기를 닫습니다.
 
 1. 컴퓨터를 다시 시작합니다.
@@ -381,7 +380,7 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경�
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
-AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
+AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
 
 1. AEM 서버에 [](http://localhost:4502) 관리자로 로그인하고 [패키지 공유를](http://localhost:4502/crx/packageshare)엽니다. 패키지 공유에 로그인하려면 Adobe ID가 필요합니다.
 
@@ -393,7 +392,7 @@ AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 패�
 
    AEM Forms 릴리스 [문서에 나열된 직접 링크를 통해 패키지를 수동으로 다운로드하는 경우 패키지](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 관리자에 **[!UICONTROL 로그인하고 패키지 업로드를]**&#x200B;클릭한 다음다운로드한 패키지를 선택하고 업로드를 클릭합니다. 패키지가 업로드된 후 패키지 이름을 클릭하고 설치를 **[!UICONTROL 클릭합니다]**.
 
-1. 패키지가 설치되면 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 AEM-Installation-Directory /crx-quickstart/logs/error.log 파일에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED [메시지가]나타나지 않고 로그가 안정적일 때까지 기다립니다.
+1. 패키지가 설치되면 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log 파일에 나타나지 않고 로그가 안정될 때까지 기다립니다.
 
 ## 설치 후 구성 {#post-installation-configurations}
 
@@ -401,7 +400,7 @@ AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 패�
 
 1. AEM 인스턴스를 중지합니다. AEM 설치 디렉토리 [\crx-quickstart\conf\ folder디렉토리로]이동합니다. 편집할 sling.properties 파일을 엽니다.
 
-   AEM [설치 디렉토리]\crx-quickstart\bin\start.bat을 사용하여 AEM 인스턴스를 시작하는 경우 AEM_root\crx-quickstart\폴더에 있는 sling. [properties]를 편집합니다.
+   AEM 인스턴스를 시작하는 `[AEM installation directory]\crx-quickstart\bin\start.bat` 데 사용하는 경우 에 있는 sling.properties를 편집합니다 `[AEM_root]\crx-quickstart\`.
 
 1. sling.properties 파일에 다음 속성을 추가합니다.
 
@@ -415,7 +414,6 @@ AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 패�
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
-
 1. 파일을 저장하고 닫습니다.
 
 ### 글꼴 관리자 서비스 구성 {#configuring-the-font-manager-service}
@@ -438,7 +436,7 @@ PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합�
 
 ### 시간 초과 설정 구성 {#configure-the-time-out-settings}
 
-1. AEM [구성 관리자에서](http://localhost:4502/system/console/configMgr)Jacorb ORB **[!UICONTROL 공급자 서비스를 찾아 엽니다]** .
+1. AEM [구성](http://localhost:4502/system/console/configMgr)관리자에서 Jacorb ORB **[!UICONTROL 공급자 서비스를 찾아 엽니다]** .
 
    사용자 지정 속성. **[!UICONTROL name]** 필드에 다음을 추가하고 저장을 **[!UICONTROL 클릭합니다]**. 보류 중인 응답 시간 초과(CORBA 클라이언트 시간 초과라고도 함)를 600초로 설정합니다.
 
@@ -481,9 +479,9 @@ Microsoft Windows의 경우 PDF Generator 서비스는 Adobe Acrobat을 사용�
 1. 시스템에서 PDF 문서를 두 번 클릭합니다. Acrobat이 처음 시작되면 로그인, 시작 화면 및 EULA에 대한 대화 상자가 나타납니다. PDF Generator를 사용하도록 구성된 모든 사용자에 대해 이러한 대화 상자를 닫습니다.
 1. PDF Generator 유틸리티 일괄 처리 파일을 실행하여 PDF Generator 서비스용 Acrobat 구성:
 
-   1. AEM [패키지 관리자를](http://localhost:4502/crx/packmgr/index.jsp) 열고 패키지 관리자에서 adobe-aemfd-pdfg-common-pkg-[version].zip 파일을 다운로드합니다.
+   1. AEM [Package](http://localhost:4502/crx/packmgr/index.jsp) Manager를 열고 패키지 관리자에서 `adobe-aemfd-pdfg-common-pkg-[version].zip` 파일을 다운로드합니다.
    1. 다운로드한 .zip 파일의 압축을 해제합니다. 관리 권한으로 명령 프롬프트를 엽니다.
-   1. 압축을 푼 [압축 파일]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts 디렉토리로 이동합니다. 다음 배치 파일을 실행합니다.
+   1. 디렉토리로 `[extracted-zip-file]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts` 이동합니다. 다음 배치 파일을 실행합니다.
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -491,15 +489,15 @@ Microsoft Windows의 경우 PDF Generator 서비스는 Adobe Acrobat을 사용�
 
 1. SRT(System Readiness Tool)를 실행하여 Acrobat 설치의 유효성을 확인합니다. 이 도구는 시스템이 PDF Generator 변환을 실행하도록 제대로 구성되어 있는지 확인하고 지정된 경로에서 보고서를 생성합니다.
 
-   1. 명령 프롬프트를 엽니다. 압축을 푼-adobe- [aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt 폴더로 이동합니다. 명령 프롬프트에서 다음 명령을 실행합니다.
+   1. 명령 프롬프트를 엽니다. 폴더로 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt` 이동합니다. 명령 프롬프트에서 다음 명령을 실행합니다.
 
       `cscript SystemReadinessTool.vbs [Path_of_reports_folder] en`
 
       >[!NOTE]
       >
-      >System Readiness Tool에서 pdfgen.api 파일을 acrobat 플러그인 폴더에서 사용할 수 없다고 보고하면 [압축을 푼-adobe-aemfd-pdfg-common-pkg]\plugins\x86_win32 directory to the [Acrobat_root]\Acrobat\plug_ins directory폴더에서 pdfgen.api 파일을 복사합니다.
+      >System Readiness Tool에서 pdfgen.api 파일을 acrobat 플러그인 폴더에서 사용할 수 없다고 보고하면 `[extracted-adobe-aemfd-pdfg-common-pkg]\plugins\x86_win32` 디렉토리에서 `[Acrobat_root]\Acrobat\plug_ins` 디렉토리로 pdfgen.api 파일을 복사합니다.
 
-   1. Path_ [of_reports_folder로]이동합니다. SystemReadinessTool.html 파일을 엽니다. 보고서를 확인하고 언급된 문제를 수정합니다.
+   1. 다음으로 이동 `[Path_of_reports_folder]`. SystemReadinessTool.html 파일을 엽니다. 보고서를 확인하고 언급된 문제를 수정합니다.
 
 ### HTML을 PDF로 변환하는 기본 경로 구성(Windows만 해당) {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
@@ -529,7 +527,8 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 
 * 인증서와 함께 제공된 개인 키 암호입니다.
 
-* 개인 키 별칭. Java 키 도구 명령을 실행하여 개인 키 별칭을 볼 수 있습니다.keytool -list -v -keystore [keystore-file] -storetype pkcs12
+* 개인 키 별칭. Java 키 도구 명령을 실행하여 개인 키 별칭을 볼 수 있습니다.
+   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * Keystore 파일 암호. Adobe의 Reader Extensions 인증서를 사용하는 경우 Keystore 파일 암호는 항상 개인 키 암호와 동일합니다.
 
@@ -551,11 +550,11 @@ DocAssurance 서비스는 PDF 문서에 사용 권한을 적용할 수 있습니
 
 ### AES-256 활성화 {#enable-aes}
 
-PDF 파일에 대해 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extension) 제한 없는 강도 관할 구역 정책 파일을 입수하고 설치합니다. jre/lib/security 폴더에서 local_policy.jar 및 US_export_policy.jar 파일을 교체합니다. 예를 들어 Sun JDK를 사용하는 경우 다운로드한 파일을 JAVA_HOME/jre/ [lib/]security 폴더에 복사합니다.
+PDF 파일에 대해 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extension) 제한 없는 강도 관할 구역 정책 파일을 입수하고 설치합니다. jre/lib/security 폴더에서 local_policy.jar 및 US_export_policy.jar 파일을 교체합니다. 예를 들어 Sun JDK를 사용하는 경우 다운로드한 파일을 `[JAVA_HOME]/jre/lib/security` 폴더에 복사합니다.
 
 어셈블러 서비스는 Reader 확장 서비스, 서명 서비스, 양식 서비스 및 출력 서비스에 따라 달라집니다. 다음 단계를 수행하여 필요한 서비스가 실행 중인지 확인합니다.
 
-1. URL에 관리자로 `https://[server]:[port]/system/console/bundles` 로그인합니다.
+1. 관리자로 URL에 `https://[server]:[port]/system/console/bundles` 로그인합니다.
 1. 다음 서비스를 검색하여 서비스가 실행되고 있는지 확인합니다.
 
 <table> 
@@ -573,7 +572,7 @@ PDF 파일에 대해 AES 256 암호화를 사용하려면 JCE(Java Cryptography 
    <td>com.adobe.aemfd.adobe-aemfd-readerextensions<br /> </td> 
   </tr> 
   <tr> 
-   <td>양식 서비스</td> 
+   <td>Forms 서비스</td> 
    <td>com.adobe.livecycle.adobe-lc-forms-based-connector<br /> </td> 
   </tr> 
   <tr> 
@@ -589,7 +588,7 @@ PDF 파일에 대해 AES 256 암호화를 사용하려면 JCE(Java Cryptography 
 
 * UNIX 기반 운영 체제에서 누락된 라이브러리를 찾으려면 다음을 수행합니다.
 
-1. crx- [repository]/bedrock/svc/HtmlToPdfSvc/bin/으로 이동합니다.
+1. 다음으로 이동 `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
 
 1. 다음 명령을 실행하여 PhantomJS에서 HTML에서 PDF로 변환하는 데 필요한 모든 라이브러리를 나열합니다.
 
