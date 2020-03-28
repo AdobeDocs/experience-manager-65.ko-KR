@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
    <td>예 - <i>디자인 </i>모드에서 속성을 편집할 수 있습니다.</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs를</strong></a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.voting</td>
   </tr>
   <tr>
@@ -71,7 +71,7 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 플래그를 지정하는 이유 목록은 flagreasonlist.hbs를 앱에 추가하여
 
-* /libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs
+* `/libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs`
 
 이것은 주석 시스템을 확장하는 모든 구성 요소에 적용됩니다.
 
