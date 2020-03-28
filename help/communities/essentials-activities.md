@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# 활동 스트림 필수{#activity-stream-essentials}
+# 활동 스트림 필수 {#activity-stream-essentials}
 
 포럼 또는 블로그에 게시하고 같이 로그인한 커뮤니티 구성원의 활동은 활동 스트림 구성 요소의 구성을 통해 필터링되어 다양한 방법으로 표시될 수 있는 스트림으로 수집됩니다.
 
@@ -24,7 +24,7 @@ source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
 
 모든 [커뮤니티 사이트에는](/help/communities/overview.md#communitiessites) 동일한 방식으로 구성원 활동을 표시하는 로그인한 구성원의 사용자 프로필 페이지가 포함됩니다.
 
-##  개념 {#concepts}
+## 개념 {#concepts}
 
 활동 *스트림은* 회원이 수행한 최근 활동 목록이나 포럼 주제 또는 블로그와 같은 컨텐츠 단일 스레드에서 최근 활동 목록입니다.
 
@@ -32,7 +32,7 @@ source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
 
 뉴스 피드는 ** 다음에 구성원이 나오는 활동 스트림을 단일 스트림으로 병합하는 것입니다.
 
-* [소셜 그래프](/help/communities/essentials-socialgraph.md)*는 한 구성원과 다른 구성원의 다음 관계를 캡처합니다.
+소셜 *[그래프는](/help/communities/essentials-socialgraph.md)*한 구성원과 다른 구성원의 다음 관계를 캡처합니다.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
