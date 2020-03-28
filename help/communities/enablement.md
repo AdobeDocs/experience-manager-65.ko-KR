@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -27,19 +27,29 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 설치:
 
-* **SCORM**&#x200B;의 SCORM(Sharable Content Object Reference Model)은 eLearning에 대한 표준 및 사양 컬렉션입니다. 또한 SCORM은 컨텐츠를 양도 가능한 ZIP 파일로 패키지하는 방법을 정의합니다.
+* **SCORM**
 
-* **MySQL** MySQL은 주로 SCORM 추적 및 지원 보고 데이터 및 비디오 진행 상태를 추적하는 데 사용되는 관계형 데이터베이스입니다. SCORM for enablement 기능 팩을 사용하려면 MySQL JDBC 드라이버가 필요합니다.
+   SCORM(Sharable Content Object Reference Model)은 e러닝의 표준 및 사양 컬렉션입니다. 또한 SCORM은 컨텐츠를 양도 가능한 ZIP 파일로 패키지하는 방법을 정의합니다.
 
-* **FFmpeg** FFmpeg는 오디오 및 비디오를 변환하고 스트리밍하는 솔루션이며, 설치할 때 비디오 에셋을 적절하게 트랜스코딩하는 데 [사용됩니다](../../help/sites-authoring/default-components-foundation.md#video). 역량 강화 커뮤니티의 경우 작성 환경에서 업로드된 리소스에 대한 메타데이터를 가져오는 데 사용되며 리소스를 나열할 때 표시할 축소판을 생성하는 데 사용됩니다.
+* **MySQL**
+
+   MySQL은 주로 SCORM 추적 및 지원 보고 데이터 및 비디오 진행 상태를 추적하는 테이블에 사용되는 관계형 데이터베이스입니다. SCORM for enablement 기능 팩을 사용하려면 MySQL JDBC 드라이버가 필요합니다.
+
+* **FFmpeg**
+
+   FFmpeg는 오디오 및 비디오를 변환 및 스트리밍하는 솔루션으로, 설치되면 비디오 에셋을 적절하게 트랜스코딩하는 데 [사용됩니다](../../help/sites-authoring/default-components-foundation.md#video). 역량 강화 커뮤니티의 경우 작성 환경에서 업로드된 리소스에 대한 메타데이터를 가져오는 데 사용되며 리소스를 나열할 때 표시할 축소판을 생성하는 데 사용됩니다.
 
 설정:
 
-* **커뮤니티 관리자**&#x200B;역량 강화 커뮤니티의 경우 `Community Enablement Managers` 사용자 그룹의 구성원만 역할을 할당할 수 `Community Site Enablement Manager`있으며, 그 권한은 게시 환경의 컨텐츠 작성, 할당 및 구성원 관리를 포함할 수 있습니다.
+* **커뮤니티 관리자**
+
+   활성 커뮤니티의 경우, `Community Enablement Managers` 사용자 그룹의 구성원만 의 역할을 할당할 수 `Community Site Enablement Manager`있으며, 해당 권한은 게시 환경의 컨텐츠 작성, 할당 및 구성원 관리를 포함할 수 있습니다.
 
 옵션 구성:
 
-* **Adobe Analytics**&#x200B;와 Adobe Analytics 통합은 포괄적인 보고 기능을 추가하고 Analytics에 비디오 하트비트 추가를 지원합니다.
+* **Adobe Analytics**
+
+   Adobe Analytics와 통합하면 포괄적인 보고 기능이 추가되고 Analytics에 비디오 하트비트 추가가 지원됩니다.
 
 * **Dispatcher**
 
@@ -51,7 +61,9 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 **모든 작성자/게시 인스턴스:**
 
-1. **[MySQL용 JDBC 드라이버 설치](deploy-communities.md#jdbc-driver-for-mysql)**웹 콘솔 사용(번들):http://localhost:4502/system/console/bundles **SCORM *패키지를 설치하기*전에설치
+1. **[MySQL용 JDBC 드라이버 설치](deploy-communities.md#jdbc-driver-for-mysql)**
+
+   웹 콘솔 사용(번들):http://localhost:4502/system/console/bundles ** SCORM *패키지를 설치하기* 전에설치
 
 1. **[SCORM 패키지 설치](deploy-communities.md#scorm-package)**패키지 관리자 사용:*http://localhost:4502/crx/packmgr/*
 
@@ -59,7 +71,9 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 1. **[MySQL, MySQL Workbench 설치](mysql.md)**
 
-1. **[MySQL 데이터베이스](mysql.md#database-setup)**설치 작성자 인스턴스에서 다운로드한 SQL 스크립트 실행MySQL Workbench 사용
+1. **[MySQL 데이터베이스 설치](mysql.md#database-setup)**
+
+   작성자 인스턴스에서 다운로드한 SQL 스크립트 실행MySQL Workbench 사용
 
 **동일한 서버 호스팅 작성자 인스턴스:**
 
@@ -67,21 +81,35 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 **모든 작성자/게시 인스턴스:**
 
-1. **[JDBC 연결 풀 구성](mysql.md#configure-jdbc-connections)**웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[JDBC 접속 풀 구성](mysql.md#configure-jdbc-connections)**
 
-1. **[SCORM 엔진 서비스](mysql.md#aem-communities-scormengine-service)**구성 웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
+   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
 
-1. **[CSRF 필터 구성](mysql.md#adobe-granite-csrf-filter)**웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[SCORM 엔진 서비스 구성](mysql.md#aem-communities-scormengine-service)**
+
+   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
+
+1. **[CSRF 필터 구성](mysql.md#adobe-granite-csrf-filter)**
+
+   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
 
 **작성자 인스턴스에서:**
 
-1. (*옵션*) **[Analytics 서비스](analytics.md)**사용 도구, 배포, 클라우드 서비스 콘솔:*http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+1. (*선택*&#x200B;사항) **[Analytics 서비스 구성](analytics.md)**
 
-1. **[Configure FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**워크플로우/모델 사용 콘솔
+   도구, 배포, 클라우드 서비스 콘솔 사용: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
-1. **[터널 서비스 사용](deploy-communities.md#tunnel-service-on-author)**웹 콘솔(configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[FFmpeg 구성](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
-1. **[커뮤니티 관리자](users.md#creating-community-members)**만들기 작성 환경에서는 클래식 UI 보안 콘솔을 사용합니다.http://localhost:4502/useradmin *경로 = /home/users/community를 사용하여 사용자*만들기
+   워크플로우/모델 콘솔 사용
+
+1. **[터널 서비스 활성화](deploy-communities.md#tunnel-service-on-author)**
+
+   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
+
+1. **[커뮤니티 관리자 만들기](users.md#creating-community-members)**
+
+   작성 환경의 경우 클래식 UI 보안 콘솔을 사용합니다.http://localhost:4502/useradmin *경로 = /home/users/community를 사용하여 사용자*&#x200B;만들기
 
    * 다음 그룹에 구성원을 추가합니다.
 
