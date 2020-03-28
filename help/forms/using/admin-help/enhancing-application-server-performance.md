@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a26bc4e4ea10370dd2fc3403500004b9e378c418
 
 ---
 
@@ -105,11 +105,11 @@ AEM 양식에 의해 처리되도록 전송된 문서가 기본 문서 최대 �
 
    >[!NOTE]
    >
-   >문서 최대 인라인 크기 속성 값은 JEE 환경의 AEM Forms와 OSGi 번들의 AEM Forms에 JEE 파섹 환경에 포함된 AEM Forms에 대해 동일해야 합니다. 이 단계는 JEE 환경의 AEM Forms에만 업데이트되었으며 OSGi 번들의 AEM Forms에는 JEE 파섹 환경에 포함된 AEM Forms에 대해서는 업데이트되지 않았습니다.
+   >문서 최대 인라인 크기 속성 값은 JEE 환경의 AEM Forms와 OSGi 번들에 포함된 AEM Forms의 AEM Forms에 대해 동일해야 합니다. 이 단계는 JEE 환경의 AEM Forms에만 업데이트되었으며 OSGi 번들의 AEM Forms에는 JEE 파섹 환경에 포함된 AEM Forms에 대해서는 업데이트되지 않았습니다.
 
 1. 다음 시스템 속성을 사용하여 응용 프로그램 서버를 다시 시작합니다.
 
-   com.adobe.idp.defaultDocumentMaxInlineSize=2단계에서 지정된&#x200B;[*값*]
+   com.adobe.idp.defaultDocumentMaxInlineSize=`[value specified in Step 2]`
 
    >[!NOTE]
    >
