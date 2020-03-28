@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
