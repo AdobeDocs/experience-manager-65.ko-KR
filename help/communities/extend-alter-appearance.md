@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# 모양 변경(HBS){#alter-the-appearance-hbs}
+# 모양 변경(HBS) {#alter-the-appearance-hbs}
 
 이제 응용 프로그램 디렉토리(/apps)의 사용자 정의 주석 시스템에 대한 구성 요소가 배치되고 resourceSuperType이 기본 주석 시스템을 참조하며 사용자 정의 모델/보기가 등록되면 구현을 수정할 수 있습니다.
 
@@ -30,7 +30,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md):
 
-* open [/apps/custom/components/comments/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Open/apps/custom/components/comments/comment/ [**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * 댓글 게시물에 대한 아바타가 포함된 태그에 주석 추가(~ 줄 21):
 
@@ -40,7 +40,7 @@ CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* open [/apps/custom/components/comments/**comments.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Open/apps/custom/components/comments/ [**comments.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * 다음 주석 항목에 대한 아바타가 포함된 태그에 주석 추가(~ 줄 44):
 
@@ -50,7 +50,7 @@ CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* 모두 **저장 선택**
+* 모두 **저장을 선택합니다.**
 
 ### 사용자 정의 앱 복제 {#replicate-custom-app}
 
@@ -58,7 +58,7 @@ CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md):
 
 한 가지 방법은
 
-* 기본 메뉴에서
+* 주 메뉴에서
 
    * 도구 **> 작업 > 복제를 선택합니다.**
    * select `Activate Tree`
