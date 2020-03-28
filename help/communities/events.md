@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -21,9 +21,9 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 구성원이 커뮤니티 기능과 상호 작용할 때 알림 또는 게임(점수 및 배지)과 같은 비동기 수신기를 트리거할 수 있는 OSGi 이벤트가 전송됩니다.
 
-구성 요소의 SocialEvent [인스턴스는](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) 이벤트에 `actions`대해 발생하는 대로 이벤트를 `topic`기록합니다. SocialEvent에는 동작과 `verb`연관된 항목을 반환하는 메서드가 포함되어 있습니다. *와* 사이에는 `actions`n-1 `verbs`관계가 있다.
+구성 요소의 SocialEvent [인스턴스는](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) 이벤트에 `actions` 대해 발생하는 대로 이벤트를 `topic`기록합니다. SocialEvent에는 동작과 `verb` 연관된 항목을 반환하는 메서드가 포함되어 있습니다. 와 는 *1* 대 1 `actions` 관계가 `verbs`있다.
 
-릴리스에 제공된 커뮤니티 구성 요소의 경우 다음 표에서는 사용 `verbs`가능한 각 구성 요소에 대해 `topic`정의된 내용을 설명합니다.
+릴리스에서 제공되는 커뮤니티 구성 요소의 경우 다음 표에서는 사용 가능한 각 구성 요소에 대해 `verbs` 정의된 내용을 `topic` 설명합니다.
 
 ## 주제 및 동사 {#topics-and-verbs}
 
