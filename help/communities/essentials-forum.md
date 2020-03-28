@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -75,7 +75,7 @@ AEM 6.1 Communities의 경우, UGC용 [공용 스토어를](working-with-srp.md)
 
 다음을 참조하십시오.
 
-* [스토리지 자원 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
+* [스토리지 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
 * [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 방법 및 예제
 * [SRP를 사용하여 UGC](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
 * [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑
