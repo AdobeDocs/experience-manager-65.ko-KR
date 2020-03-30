@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
 
 ## 필드 레이아웃 사용자 정의 {#customize-layout-of-fields}
 
-단일 필드 또는 모든 필드의 레이아웃을 사용자 지정하여 캡션 및 오류 메시지의 위치를 변경할 수 있습니다. 사용자 정의 레이아웃을 필드에 적용하려면 다음 단계를 수행하십시오.
+단일 필드 또는 모든 필드의 레이아웃을 사용자 지정하여 캡션 및 오류 메시지의 위치를 변경할 수 있습니다. 사용자 지정 레이아웃을 필드에 적용하려면 다음 단계를 수행하십시오.
 
 ### 단일 필드의 레이아웃 사용자 정의 {#customize-layout-of-a-single-field}
 
@@ -50,9 +50,9 @@ source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
 
 ## 사용자 정의 필드 레이아웃 만들기 {#create-a-custom-field-layout}
 
-1. CRXDE lite를 엽니다. 기본 URL은 https://[서버]:[포트]/crx/de입니다.
+1. CRXDE lite를 엽니다. 기본 URL은 https://&#39;[server]:[port]&#39;/crx/de입니다.
 1. /libs/fd/af/layouts/field 노드(예: defaultFieldLayout)에서 /apps 노드(예: /apps/af-field-layout)로 필드 레이아웃을 복사합니다.
-1. 복사한 노드 및 defaultFieldLayout.jsp 파일의 이름을 변경합니다. 예: errorOnRight.jsp.
+1. 복사된 노드 및 defaultFieldLayout.jsp 파일의 이름을 변경합니다. 예: errorOnRight.jsp.
 
 1. 복사한 노드의 qtip 및 jcr:description 속성의 값을 변경합니다. 예를 들어 속성 값을 [오른쪽 오류]로 변경합니다.
 
