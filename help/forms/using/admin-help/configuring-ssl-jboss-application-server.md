@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: a7ce63433f7e46feae8b0d23778e36d10c33972a
+source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
 
 ---
 
@@ -158,7 +158,7 @@ JBoss Application Server에서 SSL을 구성하려면 인증을 위한 SSL 자�
 
 
 
-1. SSL을 사용하여 관리 콘솔에 액세스하려면 웹 `https://[host name]:[port]/adminui` 브라우저에서 다음을 입력합니다.
+1. SSL을 사용하여 관리 콘솔에 액세스하려면 웹 `https://[host name]:'port'/adminui` 브라우저에서 다음을 입력합니다.
 
    JBoss의 기본 SSL 포트는 8443입니다. 여기서 AEM 양식에 액세스할 때 이 포트를 지정합니다.
 
