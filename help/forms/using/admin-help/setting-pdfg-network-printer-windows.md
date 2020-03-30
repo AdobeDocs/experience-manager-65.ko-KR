@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,7 +37,7 @@ PDFG 네트워크 프린터를 설정하려면 다음 단계가 필요합니다.
 ## PDFG 네트워크 프린터 설정 구성 {#configure-the-pdfg-network-printer-settings}
 
 1. 관리 콘솔에서 서비스 > PDF Generator > PDF 네트워크 프린터를 클릭합니다
-1. Adobe PDF 설정 및 보안 설정 목록에서 생성된 PDF에 적용할 옵션을 선택합니다. 이러한 설정에 대한 자세한 내용은 [Adobe PDF 설정](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) 구성 및 [보안 설정](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings)구성을 참조하십시오.
+1. Adobe PDF 설정 및 보안 설정 목록에서 생성된 PDF에 적용할 옵션을 선택합니다. 이러한 설정에 대한 자세한 내용은 Adobe [PDF 설정](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) 구성 및 [보안 설정](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings)구성을 참조하십시오.
 1. 변환된 PDF를 사용자에게 다시 보내려면 [변환된 PDF 파일을 사용자에게 다시 이메일로 보내기] 옵션을 선택하고 다음 정보를 지정합니다.
 
    * 사용자에게 PDF를 보내는 데 사용할 이메일 주소
@@ -60,7 +60,7 @@ PDFG 관리자 또는 PDFG 사용자 역할을 가진 사용자는 PDF 네트워
 
 1. (PDFG 관리자) 관리 콘솔에서 서비스 > PDF Generator > PDFG 네트워크 프린터를 클릭합니다.
 
-   (PDFG 사용자) PDFG 네트워크 프린터 설치(PDFG Network Printer Installation) 로 이동하여 링크를 클릭합니다. `http(s)://[host]:[port]/pdfgui`
+   (PDFG 사용자) PDFG 네트워크 프린터 설치(PDFG Network Printer Installation) 로 이동하여 링크를 클릭합니다. `http(s)://[host]:'port'/pdfgui`
 
 1. PDFG 네트워크 프린터 설치에서 링크를 클릭합니다. 사용자 계정 정보를 입력하라는 메시지가 표시되면, 로그인하기 위해 1단계에서 사용한 사용자 이름과 암호를 지정합니다. 프린터가 성공적으로 설치되었다는 메시지가 나타납니다.
 
