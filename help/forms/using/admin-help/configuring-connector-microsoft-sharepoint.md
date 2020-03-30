@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,13 +22,13 @@ Microsoft SharePoint용 Connector를 사용하면 AEM 양식과 Microsoft ShareP
 1. 관리 콘솔에서 서비스 > Microsoft SharePoint용 커넥터를 클릭합니다.
 1. SharePoint Server에 대해 다음 설정을 지정하십시오.
 
-   **** SharePoint Server 호스트 이름:SharePoint 서버에 있는 웹 응용 프로그램의 호스트 이름 포트 번호(형식) `[hostname]:[port]`.
+   **SharePoint Server 호스트 이름:** SharePoint 서버에 있는 웹 응용 프로그램의 호스트 이름 포트 번호(형식) `[hostname]:'port'`.
 
-   **** 사용자 이름:SharePoint 서버에 연결하는 데 사용되는 사용자 계정.
+   **사용자 이름:** SharePoint 서버에 연결하는 데 사용되는 사용자 계정.
 
-   **** 암호:SharePoint 서버에 연결하는 데 사용되는 사용자 계정의 암호
+   **암호:** SharePoint 서버에 연결하는 데 사용되는 사용자 계정의 암호
 
-   **** 도메인 이름:SharePoint 서버가 있는 도메인입니다.
+   **도메인 이름:** SharePoint 서버가 있는 도메인입니다.
 
 1. [저장]을 클릭합니다.
 
