@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,7 +33,7 @@ agentFolder DDE의 값은 통신 관리 구성 속성에 대한 CMUserRoot 구�
 1. 에이전트 서명 이미지의 이름이 사용자의 AEM 사용자 이름과 같은지 확인합니다. 이미지 파일 이름에는 확장자가 필요하지 않습니다.
 1. CRX 파섹 `cmUserRoot`
 
-   1. 이동 `https://[server]:[port]/crx/de`. 필요한 경우 관리자로 로그인합니다.
+   1. 이동 `https://'[server]:[port]'/crx/de`. 필요한 경우 관리자로 로그인합니다.
 
    1. 콘텐트 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기** > **폴더** 만들기를 **선택합니다**.
 
@@ -47,7 +47,7 @@ agentFolder DDE의 값은 통신 관리 구성 속성에 대한 CMUserRoot 구�
 
 1. 컨텐츠 탐색기에서 cmUserRoot 폴더로 이동하여 에이전트 서명 이미지를 추가합니다.
 
-   1. 이동 `https://[server]:[port]/crx/explorer/index.jsp`. 필요한 경우 관리자로 로그인합니다.
+   1. 이동 `https://'[server]:[port]'/crx/explorer/index.jsp`. 필요한 경우 관리자로 로그인합니다.
    1. 컨텐츠 **탐색기를 클릭합니다**. 새 창에서 콘텐트 탐색기가 열립니다.
    1. 컨텐츠 탐색기에서 cmUserRoot 폴더로 이동하여 선택합니다. cmUserRoot **폴더를 마우스 오른쪽 버튼으로** 클릭하고 새 노드를 **선택합니다**.
 
@@ -55,9 +55,9 @@ agentFolder DDE의 값은 통신 관리 구성 속성에 대한 CMUserRoot 구�
 
       새 노드에 대해 행에서 다음 항목을 만든 다음 녹색 확인 표시를 클릭합니다.
 
-      **** 이름:JohnDoe(또는 에이전트 서명 파일의 이름)
+      **이름:** JohnDoe(또는 에이전트 서명 파일의 이름)
 
-      **** 유형:nt:파일
+      **유형:** nt:파일
 
       폴더 아래에 `cmUserRoot` 새 폴더 `JohnDoe` (또는 이전 단계에서 지정한 이름)가 만들어집니다.
 
