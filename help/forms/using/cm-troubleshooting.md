@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,13 +40,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ### 문제 {#issue-1}
 
-문자를 미리 보는 동안 &quot;Error in loading letter:XML 입력에서 에셋을 가져올 수 없음&quot;은 이전에 게시되지 않은 텍스트 에셋이 해당 서신의 게시되더라도 나타납니다.
+문자를 미리 보는 동안 &quot;Error in loading letter:XML 입력에서 에셋을 가져올 수 없음&quot;은 문자의 이전에 게시 취소된 텍스트 에셋이 게시된 경우에도 표시됩니다.
 
 ### 해결 방법 {#workaround-1}
 
 다음 단계를 사용하여 게시 인스턴스의 편지 캐시를 재설정한 다음 편지 보기를 다시 시도하십시오.
 
-1. 관리자로 **`https://[server]:[port]/[contextPath]/system/console/configMgr`** 이동하여 로그인합니다.
+1. 관리자로 **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** 이동하여 로그인합니다.
 1. 통신 **관리 구성을 선택합니다**.
 1. 통신 **관리 구성에서**&#x200B;편지 **캐시 사용을 비활성화한**&#x200B;다음 저장을 클릭합니다&#x200B;**.**
 1. 편지 **캐시 활성화를** 활성화한 다음 저장을 **클릭합니다**.
