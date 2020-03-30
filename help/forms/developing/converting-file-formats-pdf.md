@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -156,7 +156,7 @@ PDF API 생성(Java)을 사용하여 Microsoft Word 문서를 PDF 문서로 변�
    * 변환할 파일을 나타내는 `com.adobe.idp.Document` 개체입니다.
    * 파일 확장자를 포함하는 `java.lang.String` 개체입니다.
    * 변환에 사용할 파일 형식 설정이 들어 있는 `java.lang.String` 개체입니다. 파일 유형 설정은 .doc 또는 .xls와 같은 다양한 파일 유형에 대한 변환 설정을 제공합니다.
-   * 사용할 PDF 설정의 이름을 포함하는 `java.lang.String` 개체입니다. 예를 들어 지정할 수 `Standard`있습니다.
+   * 사용할 PDF 설정의 이름을 포함하는 `java.lang.String` 개체입니다. For example, you can specify `Standard`.
    * 사용할 보안 설정의 이름이 들어 있는 `java.lang.String` 개체입니다.
    * PDF 문서를 생성하는 동안 적용할 설정이 포함된 선택적 `com.adobe.idp.Document` 개체입니다.
    * PDF 문서에 적용할 메타데이터 정보가 포함된 선택적 `com.adobe.idp.Document` 개체입니다.
@@ -579,7 +579,7 @@ PDF 생성 서비스는 파일 형식과 관련된 응용 프로그램을 호출
 1. 파일 > 인쇄를 선택하여 인쇄 대화 상자 열기
 1. 인쇄 대화 상자가 나타나는지 확인
 
-AppMon은 표준 Win32 API를 사용하여 타사 애플리케이션과 상호 작용하여 키 획 및 마우스 클릭과 같은 UI 이벤트를 전송하며, 이러한 애플리케이션을 제어하여 PDF 파일을 생성하도록 하는 데 유용합니다.
+AppMon은 표준 Win32 API를 사용하여 타사 애플리케이션과 상호 작용하여 키 획 및 마우스 클릭과 같은 UI 이벤트를 전송합니다. 이러한 애플리케이션은 이러한 애플리케이션을 제어하여 PDF 파일을 생성하므로 유용합니다.
 
 이러한 Win32 API의 제한으로 인해 AppMon은 부동 메뉴 막대(TextPad와 같은 일부 응용 프로그램에서 찾음)와 Win32 API를 사용하여 컨텐츠를 검색할 수 없는 특정 유형의 대화 상자와 같은 특정 유형의 창으로 이러한 UI 이벤트를 전달할 수 없습니다.
 
@@ -615,12 +615,12 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 내용을 
   </tr>
   <tr>
    <td><p>애플리케이션별 대화 상자 지침</p></td>
-   <td><p>애플리케이션별 대화 상자에 응답하는 방법을 지정합니다. </p><p>이 정보가 들어 있는 파일이 적용됩니다.<i>[appname]</i>.dialog.<i>[locale]</i>.xml(예: appmon.word.en_US.xml).</p></td>
+   <td><p>애플리케이션별 대화 상자에 응답하는 방법을 지정합니다. </p><p>이 정보가 들어 있는 파일이 적용됩니다.<i>'[appname]'</i>.dialog.<i>'[locale]'</i>.xml(예: appmon.word.en_US.xml).</p></td>
    <td><p>이 파일을 수정하지 마십시오. </p><p>새 기본 응용 프로그램에 대한 대화 상자 지침을 추가하려면 <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">기본 응용 프로그램에</a>대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오.</p></td>
   </tr>
   <tr>
    <td><p>추가 애플리케이션별 대화 상자 지침 </p></td>
-   <td><p>애플리케이션별 대화 상자 지침에 대한 무시 및 추가 사항을 지정합니다. 이 섹션에서는 이러한 정보의 예를 제공합니다. </p><p>이 정보가 들어 있는 파일이 적용됩니다.<i>[appname]</i>.addition.<i>[locale]</i>.xml. 예는 appmon.addition.en_US.xml입니다.</p></td>
+   <td><p>애플리케이션별 대화 상자 지침에 대한 무시 및 추가 사항을 지정합니다. 이 섹션에서는 이러한 정보의 예를 제공합니다. </p><p>이 정보가 들어 있는 파일이 적용됩니다.<i>'[appname]'</i>.addition.<i>'[locale]'</i>.xml. 예는 appmon.addition.en_US.xml입니다.</p></td>
    <td><p>이 유형의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. 기본 <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">응용 프로그램에</a>대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오. </p><p><strong>중요</strong>:서버가 지원할 각 기본 응용 프로그램에 대한 추가 응용 프로그램별 대화 상자 지침을 만들어야 합니다. </p></td>
   </tr>
  </tbody>
@@ -658,7 +658,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 내용을 
 
 스크립트 XML 파일에 대한 PDF 생성 서비스의 지원 목적은 기본 애플리케이션이 기본 파일을 인쇄하도록 하는 것입니다. 그러나 스크립트 XML 파일은 사용자가 기본 응용 프로그램의 대화 상자와 상호 작용할 때 수행할 수 있는 모든 작업을 수행하는 데 사용할 수 있습니다.
 
-스크립트 XML 파일의 단계는 분기 작업 없이 순서대로 실행됩니다. 지원되는 유일한 조건부 테스트는 시간 초과/재시도입니다. 이 경우 특정 시간 내에 특정 재시도 횟수 후에 단계가 성공적으로 완료되지 않으면 스크립트가 종료됩니다.
+스크립트 XML 파일의 단계는 분기 작업 없이 순서대로 실행됩니다. 지원되는 유일한 조건부 테스트는 시간 초과/재시도입니다. 이 경우 특정 시간 내에 특정 재시도 횟수 이후에 단계가 성공적으로 완료되지 않으면 스크립트가 종료됩니다.
 
 순차적 단계뿐만 아니라 단계 내의 명령도 순서대로 실행됩니다. 사용자가 동일한 단계를 수행하는 순서와 단계가 반영되도록 해야 합니다.
 
@@ -672,9 +672,9 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 내용을 
 
 시스템 또는 기본 응용 프로그램이 현재 실행 중인 스크립트 XML 파일에서 처리되지 않은 대화 상자를 표시하는 경우 PDF 생성 서비스는 일치 항목을 찾을 때 정지하여 대화 상자 XML 파일을 순서대로 검색합니다.
 
-* appmon.*[appname]*.additional.*[locale]*.xml
-* appmon.*[appname].[locale]*.xml(이 파일을 수정하지 마십시오.)
-* appmon.global *[locale]*.xml(이 파일을 수정하지 마십시오.)
+* appmon.`[appname]`.additional.`[locale]`.xml
+* appmon.`[appname]`.`[locale]`.xml(이 파일을 수정하지 마십시오.)
+* appmon.global`[locale]`.xml(이 파일을 수정하지 마십시오.)
 
 [PDF 생성] 서비스가 대화 상자에 대한 일치 항목을 찾으면 대화 상자에 지정된 키 입력이나 기타 작업을 전송하여 제거됩니다. 대화 상자에 대한 지침에 중단 메시지가 지정된 경우 PDF 생성 서비스는 현재 실행 중인 작업을 종료하고 오류 메시지를 생성합니다. 이러한 중단 메시지는 스크립트 XML 문법의 `abortMessage` 요소에 지정됩니다.
 
@@ -702,7 +702,7 @@ PDF 생성 서비스에 이전에 나열된 파일에 설명된 대화 상자가
 
 다음 문제에 유의하십시오.
 
-* Microsoft Spy+&#x200B;+는 앰퍼샌드(&amp;)를 사용하여 캡션의 핫키를 식별하여 캡션을 표시합니다. 예를 들어 Spy+&#x200B;+는 하나의 [인쇄] 대화 상자에 대한 캡션을 `Pri&nt`보여 줍니다. 이는 핫키가 *n임을 나타냅니다*. 스크립트 및 대화 상자 XML 파일의 캡션 제목에는 앰퍼샌드를 생략해야 합니다.
+* Microsoft Spy++는 앰퍼샌드(&amp;)를 사용하여 캡션의 핫키를 식별하여 캡션을 표시합니다. 예를 들어 Spy++는 하나의 [인쇄] 대화 상자에 대한 캡션을 `Pri&nt`보여 줍니다. 이는 핫키가 *n임을 나타냅니다*. 스크립트 및 대화 상자 XML 파일의 캡션 제목에는 앰퍼샌드를 생략해야 합니다.
 * 일부 캡션에는 줄바꿈이 포함되어 있습니다. pdf 생성 서비스는 줄바꿈을 식별할 수 없습니다. 캡션에 줄 바꿈이 포함되어 있는 경우 캡션을 충분히 포함하여 다른 메뉴 항목과 구분한 다음 누락된 부분에 정규 표현식을 사용합니다. 예제는 ( `^Long caption title$`)입니다.]. 캡션 [속성에서](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes)정규 표현식 사용을 참조하십시오.
 * 예약된 XML 문자에는 문자 엔티티(이스케이프 시퀀스라고도 함)를 사용합니다. 예를 들어 앰퍼샌드에 `&` 대해, `<` 보다 `>` 작거나 큰 기호, 아포스트로피, 인용 부호 `&apos;` 등에 사용할 `&quot;` 수 있습니다.
 
@@ -741,7 +741,7 @@ PDF 생성 서비스에 이전에 나열된 파일에 설명된 대화 상자가
 
 파일을 새 기본 애플리케이션으로 안내하려면 해당 애플리케이션에 대한 스크립트 XML 파일을 생성해야 합니다. PDF 생성 서비스가 이미 지원되는 기본 애플리케이션과 상호 작용하는 방식을 수정하려면 해당 애플리케이션에 대한 스크립트를 수정해야 합니다.
 
-스크립트에는 기본 애플리케이션의 창 요소를 탐색하고 해당 요소에 대한 특정 응답을 제공하는 지침이 포함되어 있습니다. 이 정보가 들어 있는 파일은 `appmon.[appname]` 입니다 `.script.[locale].xml`. 예: appmon.notepad.script.en_US.xml
+스크립트에는 기본 애플리케이션의 창 요소를 탐색하고 해당 요소에 대한 특정 응답을 제공하는 지침이 포함되어 있습니다. 이 정보를 포함하는 파일은 `appmon.`[appname]&quot; `.script.`[로케일입니다]`.xml`. 예: appmon.notepad.script.en_US.xml
 
 #### 스크립트가 실행해야 하는 단계 식별 {#identifying-steps-the-script-must-execute}
 
@@ -836,7 +836,7 @@ Microsoft Spy++를 사용하여 기본 응용 프로그램에서 창 요소 속�
 
 >[!NOTE]
 >
->이 컨텍스트에서 추가 용어는 `appmon.[applicationname].addition.[locale].xml` 파일의 컨텐츠를 의미합니다. 이러한 파일은 대화 상자 XML 파일에 대한 재정의 및 추가 사항을 지정합니다.
+>이 컨텍스트에서 추가 용어는 `appmon.[applicationname].addition.[locale]`.xml&#39; 파일의 내용을 의미합니다. 이러한 파일은 대화 상자 XML 파일에 대한 재정의 및 추가 사항을 지정합니다.
 
 다음과 같은 용도로 기본 애플리케이션에 대한 추가 대화 상자 XML 파일을 수정할 수도 있습니다.
 
@@ -898,7 +898,7 @@ Microsoft Spy++를 사용하여 기본 응용 프로그램에서 창 요소 속�
 
 #### 기본 애플리케이션을 찾기 위한 환경 변수 만들기 {#creating-an-environment-variable-to-locate-the-native-application}
 
-기본 응용 프로그램 실행 파일의 위치를 지정하는 환경 변수를 만듭니다. 이 변수에는 형식을 사용해야 `[applicationname]_PATH`합니다. 여기서 *application 이름은* XML 구성 파일과 스크립트에서 사용되는 응용 프로그램 이름과 정확히 일치해야 하며, 경로에는 실행 파일의 경로가 큰따옴표로 되어 있습니다. 이러한 환경 변수의 예는 다음과 `Photoshop_PATH`같습니다.
+기본 응용 프로그램 실행 파일의 위치를 지정하는 환경 변수를 만듭니다. 이 변수에는 형식을 사용해야 `[applicationname]_PATH`합니다. 여기서 *application 이름은* XML 구성 파일과 스크립트에서 사용되는 응용 프로그램 이름과 정확히 일치해야 하며, 경로에는 실행 파일의 경로를 큰따옴표로 묶어야 합니다. 이러한 환경 변수의 예는 다음과 `Photoshop_PATH`같습니다.
 
 새 환경 변수를 만든 후 PDF 생성 서비스가 배포된 서버를 다시 시작해야 합니다.
 
