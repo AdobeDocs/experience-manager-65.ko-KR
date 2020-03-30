@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,9 +37,9 @@ GDS의 위치는 AEM 양식 설치 프로세스 동안 또는 관리 콘솔을 �
 
 설치 중에 위치 설정을 비워 두면 응용 프로그램 서버 설치 아래에 있는 디렉토리가 기본 위치에 설정됩니다. 응용 프로그램 서버에 대해 다음 디렉토리를 백업해야 합니다.
 
-* (JBoss) `[appserver root]/server/[server]/svcnative/DocumentStorage`
-* (WebLogic) `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage`
-* (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
+* (JBoss) `[appserver root]/server/'server'/svcnative/DocumentStorage`
+* (WebLogic) `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage`
+* (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage`
 
 GDS 위치를 기본값이 아닌 위치로 변경한 경우 다음과 같이 결정할 수 있습니다.
 
@@ -50,7 +50,7 @@ GDS 위치를 기본값이 아닌 위치로 변경한 경우 다음과 같이 �
 
 원래 위치를 더 이상 사용할 수 없는 경우 복구 중에 GDS 위치가 변경될 수 있습니다. ( [복구](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)중 GDS 위치 변경을 참조하십시오.)
 
-### 데이터베이스를 문서 저장소에 사용할 때 백업 옵션 {#backup-options-when-database-is-used-for-document-storage}
+### 데이터베이스 사용 시 문서 저장소 백업 옵션 {#backup-options-when-database-is-used-for-document-storage}
 
 관리 콘솔을 사용하여 AEM 양식 데이터베이스에서 AEM 양식 문서 저장소를 활성화할 수 있습니다. 이 옵션은 모든 영구 문서를 데이터베이스에 보관하지만 AEM 양식은 세션 및 AEM 양식의 호출과 관련된 영구 파일 및 임시 파일 및 리소스를 저장하는 데 사용되므로 파일 시스템 기반 GDS 디렉토리가 필요합니다.
 
@@ -113,11 +113,11 @@ DB2 데이터베이스 백업 및 복구에 대한 자세한 내용은 DB2 [용 
 
 스냅샷 백업을 사용하거나 Oracle 데이터베이스를 구성하여 아카이브 로그 모드로 실행합니다. (Oracle [Backup 참조:소개](https://www.databasedesign-resource.com/oracle-backup.md)) Oracle 데이터베이스 백업 및 복구에 대한 자세한 내용은 다음 사이트를 참조하십시오.
 
-[](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Oracle 백업 및 복구:백업 및 복구의 개념과 백업, 복구 및 보고를 위해 RMAN(Recovery Manager)을 사용하는 가장 일반적인 기법과 백업 및 복구 전략을 계획하는 방법에 대한 자세한 정보를 제공합니다.
+[Oracle 백업 및 복구:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) 백업 및 복구의 개념과 백업, 복구 및 보고를 위해 RMAN(Recovery Manager)을 사용하는 가장 일반적인 기법과 백업 및 복구 전략을 계획하는 방법에 대한 자세한 정보를 제공합니다.
 
-[](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Oracle Database Backup and Recovery User&#39;s Guide:RMAN 아키텍처, 백업 및 복구 개념 및 메커니즘, 시점 복구 및 데이터베이스 플래시백 기능과 같은 고급 복구 기법, 백업 및 복구 성능 조정에 대한 자세한 정보를 제공합니다. 또한 RMAN 대신 호스트 운영 체제를 사용하는 사용자 관리 백업 및 복구 작업도 다룹니다. 이 볼륨은 보다 정교한 데이터베이스 배포와 고급 복구 시나리오의 백업 및 복구에 필요합니다.
+[Oracle Database Backup and Recovery User&#39;s Guide:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) RMAN 아키텍처, 백업 및 복구 개념 및 메커니즘, 시점 복구 및 데이터베이스 플래시백 기능과 같은 고급 복구 기법, 백업 및 복구 성능 조정에 대한 자세한 정보를 제공합니다. 또한 RMAN 대신 호스트 운영 체제를 사용하는 사용자 관리 백업 및 복구 작업도 다룹니다. 이 볼륨은 보다 정교한 데이터베이스 배포와 고급 복구 시나리오의 백업 및 복구에 필요합니다.
 
-[](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Oracle 데이터베이스 백업 및 복구 참조:모든 RMAN 명령에 대한 구문 및 의미 체계에 대한 전체 정보를 제공하며, 백업 및 복구 작업에 대해 보고하는 데 사용할 수 있는 데이터베이스 보기에 대해 설명합니다.
+[Oracle 데이터베이스 백업 및 복구 참조:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) 모든 RMAN 명령에 대한 구문 및 의미 체계에 대한 전체 정보를 제공하며, 백업 및 복구 작업에 대해 보고하는 데 사용할 수 있는 데이터베이스 보기에 대해 설명합니다.
 
 ### SQL Server {#sql-server}
 
@@ -134,7 +134,7 @@ SQL Server는 두 가지 백업 및 복구 도구를 제공합니다.
 
 MySQLdmin을 사용하거나 Windows에서 INI 파일을 수정하여 이진 로그 모드에서 실행되도록 MySQL 데이터베이스를 구성합니다. (MySQL [이진 로깅을](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)참조하십시오.) MySQL용 핫 백업 도구는 InnoBase 소프트웨어에서도 사용할 수 있습니다. (기본 [핫 백업 참조](https://www.innodb.com/hot-backup/features.md))
 
-**참고**:MySQL *의 기본 바이너리 로깅 모드는 &quot;문&quot;이며, 이는 컨텐츠 서비스에서 사용하는 테이블과 호환되지 않습니다(더 이상 사용되지 않음). 이 기본 모드에서 이진 로깅을 사용하면 컨텐츠 서비스(더 이상 사용되지 않음)가 실패합니다. 시스템에 컨텐츠 서비스(더 이상 사용되지 않음)가 포함되어 있는 경우 &quot;혼합&quot; 로깅 모드를 사용하십시오.*&quot;혼합&quot; 로깅을 사용하려면 my.ini 파일에 다음 인수를 추가하십시오.
+**참고**:MySQL *의 기본 바이너리 로깅 모드는 &quot;문&quot;이며, 이는 컨텐츠 서비스에서 사용하는 테이블과 호환되지 않습니다(더 이상 사용되지 않음). 이 기본 모드에서 이진 로깅을 사용하면 컨텐츠 서비스(더 이상 사용되지 않음)가 실패합니다. 시스템에 컨텐츠 서비스(더 이상 사용되지 않음)가 포함되어 있는 경우 &quot;혼합&quot; 로깅 모드를 사용하십시오. &quot;혼합&quot; 로깅을 사용하려면 my.ini 파일에 다음 인수를 추가하십시오.*
 `binlog_format=mixed log-bin=logname`
 
 myqldump 유틸리티를 사용하여 전체 데이터베이스 백업을 얻을 수 있습니다. 전체 백업이 필요하지만 항상 편리하지는 않습니다. 대용량 백업 파일을 생성하고 생성하는 데 시간이 걸립니다. 증분 백업을 수행하려면 이전 섹션에 설명된 대로 - `log-bin` 옵션으로 서버를 시작해야 합니다. MySQL Server가 다시 시작될 때마다 현재 이진 로그에 대한 쓰기가 멈추고 새 이진 로그를 만든 후 새 서버가 현재 로그가 됩니다. 명령을 사용하여 수동으로 스위치를 강제 적용할 수 `FLUSH LOGS SQL` 있습니다. 첫 번째 전체 백업 후, 다음 증분 백업은 myqladmin 유틸리티와 다음 로그 파일을 생성하는 `flush-logs` 명령을 사용하여 수행됩니다.
@@ -172,9 +172,9 @@ log-bin=logname
 
 클러스터된 환경에서 Content Services(더 이상 사용되지 않음)를 설치하면, Content Storage Root 디렉토리는 두 개의 개별 디렉토리로 분할됩니다.
 
-**** 콘텐트 저장소 루트 디렉터리:일반적으로 클러스터의 모든 노드에 대해 읽기/쓰기 액세스 가능한 공유 네트워크 디렉토리
+**콘텐트 저장소 루트 디렉터리:** 일반적으로 클러스터의 모든 노드에 대해 읽기/쓰기 액세스 가능한 공유 네트워크 디렉토리
 
-**** 인덱스 루트 디렉토리:클러스터의 각 노드에 항상 동일한 경로와 디렉토리 이름을 갖는 디렉토리
+**인덱스 루트 디렉토리:** 클러스터의 각 노드에 항상 동일한 경로와 디렉토리 이름을 갖는 디렉토리
 
 컨텐츠 저장소 루트 디렉토리의 기본 위치는 `[GDS root]/lccs_data`GDS 위치에 `[GDS root]` 설명된 [위치입니다](files-back-recover.md#gds-location). 콘텐트 저장소 루트 디렉토리에 있는 다음 디렉토리를 백업합니다.
 
