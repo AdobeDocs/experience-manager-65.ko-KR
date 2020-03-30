@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
 
 조직에서 이 데이터의 무단 사용을 방지하기 위해 미리 보기 PDF에 워터마크를 적용할 수 있습니다. 기본 워터마크는 PDF 전체에 표시되는 &quot;PREVIEW&quot;입니다.
 
-미리 보기 PDF에서 워터마크를 활성화하려면 https:// **[!UICONTROL 서버의]** 통신 관리 구성 **[!UICONTROL :]**[portSystem/]console/configMgr에서 [미리 보기[중 워터마크 적용] 옵션을 선택합니다].
+미리 보기 PDF에서 워터마크를 활성화하려면 https://&#39; **[!UICONTROL 서버의]** 통신 관리 구성 **[!UICONTROL :]**[port]necessary/[system/console/configMgr에서 [미리 보기 중 워터마크 적용]] 옵션을 선택합니다.
 
 ![default-watermark](assets/default-watermark.png)
 
@@ -31,7 +31,7 @@ source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
 
 ## 통신 UI 작성에서 PDF 미리 보기에서 워터마크 사용자 정의 {#customizewatermark-}
 
-1. 관리자로 `https://[server]:[port]/[ContextPath]/crx/de` 이동하여 로그인합니다.
+1. 관리자로 `https://'[server]:[port]'/[ContextPath]/crx/de` 이동하여 로그인합니다.
 1. apps 폴더에서 libs 폴더의 **[!UICONTROL previewwatermark 폴더와 유사한 경로/구조를 가진 미리 보기 워터마크라는]** 폴더를 만듭니다.
 
    1. 다음 경로에서 **미리 보기 워터마크** 폴더를 마우스 오른쪽 단추로 클릭하고 [오버레이 노드] **를 선택합니다**.
@@ -40,11 +40,11 @@ source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
 
    1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **** 경로:/libs/fd/cm/configFiles/previewwatermark
+      **경로:** /libs/fd/cm/configFiles/previewwatermark
 
-      **** 오버레이 위치:/apps/
+      **오버레이 위치:** /apps/
 
-      **** 일치 노드 유형:선택됨
+      **일치 노드 유형:** 선택됨
 
       >[!NOTE]
       >
