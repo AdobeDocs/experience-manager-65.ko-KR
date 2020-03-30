@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -50,8 +50,8 @@ source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
 GDS 루트 디렉토리를 지정하지 않으면 디렉토리 기본값은 응용 프로그램 서버 디렉토리입니다.
 
 * `[JBOSS_HOME]/server/<server>/svcnative/DocumentStorage`
-* `[WEBSPHERE_HOME]/installedApps/adobe/[server]/DocumentStorage`
-* `[WEBLOGIC_HOME]/user_projects/<domain>/[server]/adobe/AEMformsserver/DocumentStorage`
+* `[WEBSPHERE_HOME]/installedApps/adobe/'server'/DocumentStorage`
+* `[WEBLOGIC_HOME]/user_projects/<domain>/'server'/adobe/AEMformsserver/DocumentStorage`
 
 ***참고&#x200B;**:GDS 루트 디렉토리 설정의 값을 변경하는 작업은 특별한 주의를 기울여야 합니다. GDS 디렉토리는 프로세스 내에서 사용되는 긴 파일 및 중요한 AEM 양식 제품 구성 요소를 저장하는 데 사용됩니다. GDS 디렉토리의 위치를 변경하는 것은 시스템 변경 사항입니다. GDS 디렉토리의 위치를 잘못 구성하면 AEM 양식이 작동하지 않게 되고 AEM 양식의 전체 재설치가 필요할 수 있습니다. GDS 디렉토리에 대한 새 위치를 지정하는 경우 응용 프로그램 서버를 종료하고 마이그레이션된 데이터를 마이그레이션해야 서버를 다시 시작할 수 있습니다. 시스템 관리자는 모든 파일을 이전 위치에서 새 위치로 이동해야 하지만 내부 디렉토리 구조는 유지해야 합니다.*
 
@@ -105,6 +105,6 @@ FIPS 모드는 7.0 이전 Adobe Acrobat® 버전에서 사용되는 암호화 �
 
 **비보안 RDS 요청** 허용 이 옵션을 선택하면 RDS 요청이 https를 사용할 필요가 없습니다. 기본적으로 이 옵션은 선택되어 있지 않으며 데이터 서비스에 대한 모든 통신은 https 요청이어야 합니다.
 
-**** Flex 애플리케이션에서 비보안 문서 업로드 허용:Adobe Flex® 애플리케이션에서 AEM 양식으로 문서를 업로드하는 데 사용되는 파일 업로드 서블릿은 사용자가 문서를 업로드하기 전에 인증 및 인증을 받아야 합니다. 사용자에게 문서 업로드 응용 프로그램 사용자 역할이나 문서 업로드 권한이 포함된 다른 역할이 할당되어야 합니다. 이렇게 하면 권한이 없는 사용자가 AEM Forms 서버에 문서를 업로드하지 못하도록 할 수 있습니다. 개발 환경에서 이 보안 기능을 비활성화하거나 이전 버전의 AEM 양식과의 호환성을 위해 이 옵션을 선택합니다. 기본적으로 이 선택 사항은 선택되어 있지 않습니다. 자세한 내용은 AEM 양식과 함께 프로그래밍의 &quot;AEM Forms Remoting을 사용하여 AEM 양식 호출&quot;을 참조하십시오.
+**Flex 애플리케이션에서 비보안 문서 업로드 허용:** Adobe Flex® 애플리케이션에서 AEM 양식으로 문서를 업로드하는 데 사용되는 파일 업로드 서블릿은 사용자가 문서를 업로드하기 전에 인증 및 인증을 받아야 합니다. 사용자에게 문서 업로드 응용 프로그램 사용자 역할이나 문서 업로드 권한이 포함된 다른 역할이 할당되어야 합니다. 이렇게 하면 권한이 없는 사용자가 AEM Forms 서버에 문서를 업로드하지 못하도록 할 수 있습니다. 개발 환경에서 이 보안 기능을 비활성화하거나 이전 버전의 AEM 양식과의 호환성을 위해 이 옵션을 선택합니다. 기본적으로 이 선택 사항은 선택되어 있지 않습니다. 자세한 내용은 AEM 양식과 함께 프로그래밍의 &quot;AEM Forms Remoting을 사용하여 AEM 양식 호출&quot;을 참조하십시오.
 
-**** Java SDK 애플리케이션에서 비보안 문서 업로드 허용:HTTP DocumentManager 업로드는 보안을 유지해야 합니다. 기본적으로 HTTP 업로드는 사용자가 문서를 업로드하기 전에 인증되고 승인되어야 합니다. 서비스 사용자 역할이나 서비스 호출 권한이 포함된 다른 역할을 사용자에게 할당해야 합니다. 따라서 권한이 없는 사용자가 양식 서버에 문서를 업로드하지 못하도록 할 수 있습니다. 개발 환경에서 이 보안 기능을 비활성화하거나 이전 버전의 AEM 양식과의 호환성을 위해 또는 방화벽 설정을 기반으로 하려면 이 옵션을 선택합니다. 기본적으로 이 선택 사항은 선택되어 있지 않습니다. 자세한 내용은 AEM 양식과 함께 프로그래밍의 &quot;Java API를 사용하여 AEM 양식 호출&quot;을 참조하십시오.
+**Java SDK 애플리케이션에서 비보안 문서 업로드 허용:** HTTP DocumentManager 업로드는 보안을 유지해야 합니다. 기본적으로 HTTP 업로드는 사용자가 문서를 업로드하기 전에 인증되고 승인되어야 합니다. 서비스 사용자 역할이나 서비스 호출 권한이 포함된 다른 역할을 사용자에게 할당해야 합니다. 따라서 권한이 없는 사용자가 양식 서버에 문서를 업로드하지 못하도록 할 수 있습니다. 개발 환경에서 이 보안 기능을 비활성화하거나 이전 버전의 AEM 양식과의 호환성을 위해 또는 방화벽 설정을 기반으로 하려면 이 옵션을 선택합니다. 기본적으로 이 선택 사항은 선택되어 있지 않습니다. 자세한 내용은 AEM 양식과 함께 프로그래밍의 &quot;Java API를 사용하여 AEM 양식 호출&quot;을 참조하십시오.
