@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 translation-type: tm+mt
-source-git-commit: 215ba1cb3e98954418b844849c812c9ba6cf572b
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -72,8 +72,8 @@ AEM 양식 애플리케이션 데이터는 GDS 디렉토리 및 AEM 양식 데�
 AEM 양식 설치 프로세스 동안 GDS 디렉토리의 위치를 수동으로 구성할 수 있습니다. 설치 중에 위치 설정이 비어 있는 상태로 유지되는 경우 위치는 다음과 같이 응용 프로그램 서버 설치 아래에 있는 디렉토리로 기본 설정됩니다.
 
 * (JBoss) `[appserver root]/server/[type]/svcnative/DocumentStorage`
-* (WebLogic) `[appserverdomain]/[server]/adobe/DocumentServer/DocumentStorage`
-* (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
+* (WebLogic) `[appserverdomain]/'server'/adobe/DocumentServer/DocumentStorage`
+* (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage`
 
 ## 기본 GDS 위치 변경 {#change-the-default-gds-location}
 
