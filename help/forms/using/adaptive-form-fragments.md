@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -163,7 +163,7 @@ XFA 양식 템플릿 또는 XSD 복합 형식을 사용하여 적응형 양식 �
 
 AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 가지 작업을 수행할 수 있습니다.
 
-1. 이동 `https://[hostname]:[port]/aem/forms.html`.
+1. 이동 `https://[hostname]:'port'/aem/forms.html`.
 
 1. AEM **Forms** UI 도구 모음에서 선택을 클릭하고 적응형 양식 조각을 선택합니다. 도구 모음에는 선택한 적응형 양식 조각에서 수행할 수 있는 다음 작업이 표시됩니다.
 
@@ -175,39 +175,39 @@ AEM Forms UI를 사용하여 적응형 양식 조각에 대해 여러 가지 작
   </tr>
   <tr>
    <td><p>열기</p> </td>
-   <td><p><br /> 선택한 적응형 양식 조각을 편집 모드로 엽니다. <br /> </p> </td>
+   <td><p>선택한 적응형 양식 조각을 편집 모드로 엽니다.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>속성 보기</p> </td>
-   <td><p>속성 패널을 엽니다. 속성 패널에서 속성을 보고 편집하고 미리 보기를 생성하고 선택한 조각에 대한 축소판 이미지를 업로드할 수 있습니다. <a href="../../forms/using/manage-form-metadata.md" target="_blank"> 자세한 내용은 메타데이터 </a>관리를<br />참조하십시오. <br /> </p> </td>
+   <td><p>속성 패널을 엽니다. 속성 패널에서 속성을 보고 편집하고 미리 보기를 생성하고 선택한 조각에 대한 축소판 이미지를 업로드할 수 있습니다. For more information, see <a href="../../forms/using/manage-form-metadata.md" target="_blank">Managing metadata</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>복사</p> </td>
-   <td><p>선택한 조각을 복사합니다. <br /> 도구 모음에 붙여넣기 단추가 나타납니다. <br /> </p> </td>
+   <td><p>선택한 조각을 복사합니다. 도구 모음에 붙여넣기 단추가 나타납니다.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>다운로드</p> </td>
-   <td><p><br /> 선택한 조각을 다운로드합니다. <br /> </p> </td>
+   <td><p>선택한 조각을 다운로드합니다.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>미리 보기</p> </td>
-   <td><p>XML 파일의 데이터를 조각과 병합하여 조각을 HTML 또는 사용자 정의 미리 보기로 미리 보는 옵션을 제공합니다. <a href="/help/forms/using/previewing-forms.md" target="_blank"> 자세한 내용은 양식 </a>미리 보기를<br />참조하십시오. <br /> </p> </td>
+   <td><p>XML 파일의 데이터를 조각과 병합하여 조각을 HTML 또는 사용자 정의 미리 보기로 미리 보는 옵션을 제공합니다. 자세한 내용은 양식 <a href="/help/forms/using/previewing-forms.md" target="_blank">미리 보기를</a>참조하십시오.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>검토 시작/관리</p> </td>
-   <td><p>선택한 조각에 대한 검토를 시작 및 관리할 수 있습니다. <a href="../../forms/using/create-reviews-forms.md" target="_blank"> 자세한 내용은 검토 </a>만들기 및 관리를<br />참조하십시오. <br /> </p> </td>
+   <td><p>선택한 조각에 대한 검토를 시작 및 관리할 수 있습니다. 자세한 내용은 검토 <a href="../../forms/using/create-reviews-forms.md" target="_blank">만들기 및 관리를</a>참조하십시오.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>사전 만들기</p> </td>
-   <td><p>선택한 조각을 현지화하기 위한 사전을 생성합니다. <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank"> 자세한 내용은 적응형 </a>양식<br />현지화를 참조하십시오. <br /> </p> </td>
+   <td><p>선택한 조각을 현지화하기 위한 사전을 생성합니다. 자세한 내용은 적응형 <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">양식</a>현지화를 참조하십시오.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>게시/게시 취소</p> </td>
-   <td><p><br /> 선택한 조각을 게시/게시 취소합니다. <br /> </p> </td>
+   <td><p>선택한 조각을 게시/게시 취소합니다.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>삭제</p> </td>
-   <td><p><br /> 선택한 조각을 삭제합니다. <br /> </p> </td>
+   <td><p>선택한 조각을 삭제합니다.<br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>
