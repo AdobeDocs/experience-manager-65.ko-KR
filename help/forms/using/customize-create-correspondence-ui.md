@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -51,7 +51,7 @@ source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
 
 다음 단계에 따라 /apps 분기에서 필요한 폴더 구조를 만드십시오.
 
-1. 관리자로 `https://[server]:[port]/[ContextPath]/crx/de` 이동하여 로그인합니다.
+1. 관리자로 `https://'[server]:[port]'/[ContextPath]/crx/de` 이동하여 로그인합니다.
 1. apps 폴더에서 css 폴더(ccrui 폴더에 있음)와 유사한 경로/구조를 `css` 가진 폴더를 만듭니다.
 
    css 폴더를 만드는 단계:
@@ -62,11 +62,11 @@ source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
 
    1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **** 경로:/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **경로:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** 오버레이 위치:/apps/
+      **오버레이 위치:** /apps/
 
-      **** 일치 노드 유형:선택됨
+      **일치 노드 유형:** 선택됨
 
       ![오버레이 노드 경로](assets/0_1_5ioverlaynodedialog.png)
 
@@ -90,11 +90,11 @@ source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
    1. 다음 경로에서 **imgs** 폴더를 마우스 오른쪽 버튼으로 클릭하고 Overlay Node를 **선택합니다**. `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **** 경로:/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **경로:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** 오버레이 위치:/apps/
+      **오버레이 위치:** /apps/
 
-      **** 일치 노드 유형:선택됨
+      **일치 노드 유형:** 선택됨
 
    1. **확인**&#x200B;을 클릭합니다.
 
@@ -114,7 +114,7 @@ source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
 
 다음 단계에 따라 사용자 정의 로고 파일을 CRX에 업로드합니다.
 
-1. 이동 `https://[server]:[port]/[contextpath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
+1. 이동 `https://'[server]:[port]'/[contextpath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
 1. CRXDE에서 다음 경로의 **imgs** 폴더를 마우스 오른쪽 버튼으로 클릭하고 만들기 > 파일 **만들기를 선택합니다**.
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -157,7 +157,7 @@ source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
 
 다음 단계에 따라 로고를 렌더링할 스타일 시트를 설정합니다.
 
-1. 이동 `https://[server]:[port]/[contextpath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
+1. 이동 `https://'[server]:[port]'/[contextpath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
 1. 다음 위치에 custom.css라는 파일을 만듭니다(다른 파일 이름을 사용할 수 없음).
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
