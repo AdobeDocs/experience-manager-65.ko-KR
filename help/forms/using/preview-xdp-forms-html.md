@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,11 +28,11 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
 
 ### Apache Sling 인증 서비스 구성 {#configure-apache-sling-authentication-service}
 
-1. OSGi `https://[server]:[port]/system/console/configMgr` 에서 실행 중인 AEM Forms로 이동 또는
-   `https://[server]:[port]/lc/system/console/configMgr` JEE에서 실행되는 AEM Forms
+1. OSGi `https://'[server]:[port]'/system/console/configMgr` 에서 실행 중인 AEM Forms로 이동 또는
+   `https://'[server]:[port]'/lc/system/console/configMgr` JEE에서 실행되는 AEM Forms
 1. Apache Sling **Authentication Service 구성을 찾아 클릭하여** 편집 모드에서 엽니다.
 
-1. OSGi 또는 JEE에서 AEM Forms를 실행 중인지 여부에 따라 인증 요구 사항 **필드에 다음을 추가합니다** .
+1. OSGi 또는 JEE에서 AEM Forms를 실행하는지 여부에 따라 인증 요구 사항 **필드에 다음을 추가합니다** .
 
    * JEE의 AEM Forms
 
@@ -55,8 +55,8 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
 
 1. AEM 웹 콘솔에 관리자로 로그인합니다.
 
-   * OSG 파섹 `https://[server]:[port]/system/console/configMgr`
-   * JEE에서 AEM Forms에 대한 URL은 `https://[server]:[port]/lc/system/console/configMgr`
+   * OSG 파섹 `https://'[server]:[port]'/system/console/configMgr`
+   * JEE에서 AEM Forms에 대한 URL은 `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. 모바일 **[!UICONTROL 양식 구성을]** 열어 편집할 수 있습니다.
 1. 보호 모드 **[!UICONTROL 옵션을 선택]** 해제하고 저장을 **[!UICONTROL 클릭합니다]**.
@@ -69,16 +69,16 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
    * **서버 URL**:AEM Forms 서버 URL.
 
    * **HTTP 포트 번호**:AEM 서버 포트. 기본값은 4502입니다.
-   * **** HTML 미리 보기 컨텍스트:XFA 양식을 렌더링하기 위한 프로필의 경로입니다. 다음 기본 프로필은 Designer에서 양식을 미리 보는 데 사용됩니다. 하지만 사용자 지정 프로필의 경로를 지정할 수도 있습니다.
+   * **HTML 미리 보기 컨텍스트:** XFA 양식을 렌더링하기 위한 프로필의 경로입니다. 다음 기본 프로필은 Designer에서 양식을 미리 보는 데 사용됩니다. 하지만 사용자 지정 프로필의 경로를 지정할 수도 있습니다.
 
       * `/content/xfaforms/profiles/default.html` (OSGi의 AEM Forms)
 
       * `/lc/content/xfaforms/profiles/default.html` (JEE의 AEM Forms)
-   * **** Forms Manager 컨텍스트:Forms Manager UI가 배포된 컨텍스트 경로입니다. 기본값은 다음과 같습니다.
+   * **Forms Manager 컨텍스트:** Forms Manager UI가 배포된 컨텍스트 경로입니다. 기본값은 다음과 같습니다.
 
       * `/aem/forms` (OSGi의 AEM Forms)
       * `/lc/forms` (JEE의 AEM Forms)
-   **** 참고:AEM Forms 서버가 실행 중인지 확인합니다. HTML 미리 보기는 CRX 서버에 연결하여 미리 보기를 *생성합니다* .
+   **참고:** AEM Forms 서버가 실행 중인지 확인합니다. HTML 미리 보기는 CRX 서버에 연결하여 미리 보기를 *생성합니다* .
 
    ![AEM Forms 디자이너 옵션 ](assets/server_options.png)
 
