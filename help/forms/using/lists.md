@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
+source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
 
 ---
 
@@ -107,9 +107,9 @@ Correspondence Management Solution은 다이내믹 데이터 항목(변수 데�
 
    ![textbackgroundcolorapped](assets/textbackgroundcolorapplied.png)
 
-   기본 색상 팔레트에 있는 기본 색상 A **[를]** 직접 누르거나 **슬라이더 B** 를 **[사용하여 적절한]** 색상 음영을 선택할 수 있습니다.
+   [기본 색상] 팔레트에 `**[A]**` 있는 기본 색상을 직접 누르거나 슬라이더를 **사용한** 후 [선택]을 탭하여 해당 색상의 적절한 음영을 선택할 `**[B]**` 수 있습니다.
 
-   원하는 경우 고급 탭으로 이동하여 적절한 색조, 밝기 및 채도 **[C를]** 선택하여 정확한 색상을 만든 다음 선택 **[D를]** 눌러 색상을 적용하여 텍스트를 강조 표시할 수도 있습니다.
+   원하는 경우 고급 탭으로 이동하여 적절한 색조, 밝기 및 채도를 선택하여 정확한 색상을 `**[C]**` 만든 다음 선택을 눌러 색상을 적용하여 텍스트를 강조 표시할 `**[D]**` 수 있습니다.
 
    ![textbackgroundcolor-1](assets/textbackgroundcolor-1.png)
 
