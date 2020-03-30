@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -69,7 +69,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## WebLogic에 Java 옵션 추가 {#add-java-options-to-weblogic}
 
-1. 웹 브라우저의 URL 줄에 https://[호스트 이름]:[port]/console을 입력하여 WebLogic 관리 콘솔을 시작합니다.
+1. 웹 브라우저의 URL 줄에 https://[호스트 이름]:&#39;port&#39;/console을 입력하여 WebLogic 관리 콘솔을 시작합니다.
 1. WebLogic Server 도메인에 대해 만든 사용자 이름과 암호를 입력하고 변경 센터에서 로그를 클릭하고 잠금 및 편집을 클릭합니다.
 1. 도메인 구조에서 환경 > 서버를 클릭하고 오른쪽 창에서 관리 서버 이름을 클릭합니다.
 1. 다음 화면에서 구성 탭 > 서버 시작 탭을 클릭합니다.
