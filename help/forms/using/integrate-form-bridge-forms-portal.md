@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -27,7 +27,7 @@ FormBridge API 파섹 예를 들어 API를 사용하여 마법사와 같은 경�
 
 1. **프로필 선택 또는 프로필 만들기**
 
-   1. CRX DE 인터페이스에서 다음 항목으로 이동합니다. `https://[server]:[port]/crx/de`Adobe
+   1. CRX DE 인터페이스에서 다음 항목으로 이동합니다. `https://'[server]:[port]'/crx/de`Adobe
    1. 관리자 자격 증명으로 로그인합니다.
    1. 프로파일을 만들거나 기존 프로파일을 선택합니다.
 
