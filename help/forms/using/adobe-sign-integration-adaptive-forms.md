@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -81,7 +81,7 @@ Adobe Sign을 AEM Forms와 통합하려면 다음이 필요합니다.
 
    만들기를 **[!UICONTROL 눌러]** Adobe Sign 구성을 만듭니다.
 
-1. AEM 웹 콘솔을 엽니다. URL은 `https://[server]:[port]/system/console/configMgr`
+1. AEM 웹 콘솔을 엽니다. URL은 `https://'[server]:[port]'/system/console/configMgr`
 1. Forms **Common Configuration Service를 엽니다.**
 1. 허용 **필드에서** 모든 사용자 - 익명 사용자 또는 로그인한 모든 사용자가 첨부 파일을 미리 보고 양식을 확인 및 서명하고 저장을 **클릭합니다** **.** 작성자 인스턴스가 Adobe Sign을 사용하도록 구성되어 있습니다.
 1. 게시 [인스턴스에서](/help/sites-deploying/deploy.md) 로그인하고 다음 URL을 엽니다.
@@ -99,7 +99,7 @@ Adobe Sign이 활성화된 적응형 양식은 모든 서명자가 서명 프로
 1. 관리 자격 증명으로 AEM Forms 서버에 로그인하고 도구 > 작업 **>** 웹 **콘솔로** 이동합니다 ****.
 
    브라우저 창에서 다음 URL을 열 수도 있습니다.
-   `https://[localhost]:[port]/system/console/configMgr`
+   `https://[localhost]:'port'/system/console/configMgr`
 
 1. Adobe Sign 구성 서비스 **옵션을 찾아 엽니다** . 상태 [업데이트 스케줄러 표현식](https://en.wikipedia.org/wiki/Cron#CRON_expression) 필드에 **cron 표현식을** 지정하고 저장을 **클릭합니다**. 예를 들어 오전 00:00에 구성 서비스를 매일 실행하려면 상태 업데이트 스케줄러 `0 0 0 1/1 * ? *` 표현식 **** 필드에 지정합니다.
 
