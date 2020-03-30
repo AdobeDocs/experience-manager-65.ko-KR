@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
 
 AEM Forms는 최종 사용자로부터 데이터를 얻기 위한 양식 세트를 제공합니다.적응형 양식, HTML5 양식 및 PDF 양식 또한 웹 페이지에 사용 가능한 모든 양식을 나열하고, 양식 사용을 분석하고, 프로필을 기반으로 사용자를 타깃팅하는 도구를 제공합니다. 이러한 기능은 AEM Forms 추가 기능 패키지에 포함되어 있습니다. Add-on 패키지는 AEM의 작성자 또는 게시 인스턴스에 배포됩니다.
 
-**** 적응형 양식:이러한 양식은 장치의 화면 크기에 따라 모양이 변경되며, 매력적이고 인터랙티브한 요소가 됩니다. 적응형 양식은 Adobe Analytics, Adobe Sign 및 Adobe Target과 통합할 수 있습니다. 이를 통해 사용자의 인구 통계와 기타 기능을 기반으로 개인화된 양식과 프로세스 중심의 경험을 제공할 수 있습니다. 또한 적응형 양식을 Adobe Sign과 통합할 수 있습니다.
+**적응형 양식:** 이러한 양식은 장치의 화면 크기에 따라 모양이 변경되며, 매력적이고 인터랙티브한 요소가 됩니다. 적응형 양식은 Adobe Analytics, Adobe Sign 및 Adobe Target과 통합할 수 있습니다. 이를 통해 사용자의 인구 통계와 기타 기능을 기반으로 개인화된 양식과 프로세스 중심의 경험을 제공할 수 있습니다. 또한 적응형 양식을 Adobe Sign과 통합할 수 있습니다.
 
 **PDF** 양식은 픽셀 하나까지 완벽한 인쇄 및 디지털 정보 캡처에 적합합니다. 디지털 아바타에서는 Adobe Acrobat 또는 Acrobat Reader를 사용하여 이러한 양식을 채울 수 있습니다. 웹 사이트에서 이러한 양식을 호스팅하거나 양식 포털을 사용하여 AEM 사이트에 이러한 양식을 나열할 수 있습니다. 이러한 양식을 다른 사람에게 첨부 파일로 이메일로 보낼 수도 있습니다. 이러한 양식은 데스크탑 환경에 가장 적합합니다.
 
@@ -51,7 +51,7 @@ AEM Forms의 데이터 캡처 기능을 설치하고 구성하기 전에 다음�
    * Microsoft Windows 기반 설치를 위한 15GB의 임시 공간.
    * UNIX 기반 설치를 위한 6GB의 임시 공간.
 
-* 작성자 및 게시 인스턴스에 대한 복제 및 역 복제가 설정됩니다. 자세한 내용은 복제를 [참조하십시오](/help/sites-deploying/replication.md).
+* 작성자 및 게시 인스턴스에 대한 복제 및 역 복제가 설정됩니다. For details, see [Replication](/help/sites-deploying/replication.md).
 * UNIX 기반 시스템의 경우:
 
    * 설치 미디어에서 다음 32비트 패키지를 설치합니다.
@@ -130,9 +130,9 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 사항이 있습니다. 필�
 모든 작성자 및 게시 인스턴스에 대해 다음 단계를 수행하여 라이브러리를 부트합니다.
 
 1. 기본 AEM 인스턴스를 중지합니다.
-1. AEM [설치 디렉토리]\crx-quickstart\conf\sling.properties 파일을 열어 편집합니다.
+1. Open the `[AEM installation directory]\crx-quickstart\conf\sling.properties` file for editing.
 
-   AEM [설치 디렉토리]\crx-quickstart\bin\start.bat을 사용하여 AEM을 시작한 경우 AEM_root [\crx-quickstart\폴더에 있는 sling.]properties를 편집합니다.
+   AEM을 `[AEM installation directory]\crx-quickstart\bin\start.bat` 시작하는 데 사용한 경우 에 있는 sling.properties를 편집합니다 `[AEM_root]\crx-quickstart\`.
 
 1. sling.properties 파일에 다음 속성을 추가합니다.
 
@@ -148,7 +148,7 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 사항이 있습니다. 필�
 
 모든 작성자 및 게시 인스턴스에 대해 다음 단계를 수행하여 패키지를 화이트리스트합니다.
 
-1. 브라우저 창에서 AEM 구성 관리자를 엽니다. 기본 URL은 `https://[server]:[port]/system/console/configMgr`입니다.
+1. 브라우저 창에서 AEM 구성 관리자를 엽니다. 기본 URL은 `https://'[server]:[port]'/system/console/configMgr`입니다.
 1. com.adobe.cq.deserfw.impl. **DeserializationFirewallImpl.name** 을 검색하고 구성을 엽니다.
 1. sun.util.calendar **패키지를** 화이트리스트 **** 필드에 추가합니다. **저장**&#x200B;을 클릭합니다.
 1. 모든 작성자 및 게시 인스턴스에 대해 1-3단계를 반복합니다.
@@ -169,7 +169,7 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 사항이 있습니다. 필�
 
 1. 레퍼러 필터 서비스를 구성합니다.
 
-   Apache Felix 구성 관리자에 관리자로 로그인합니다. 구성 관리자의 기본 URL은 https://[server]:[port_number]/system/console/configMgr입니다. **구성 **메뉴에서 Apache Sling 레퍼러 **필터** 옵션을 선택합니다. 호스트 허용 필드에 디스패처의 호스트 이름을 입력하여 레퍼러로 허용하고 저장을 **클릭합니다**. 항목의 형식은 https://[server]:[port]입니다.
+   Apache Felix 구성 관리자에 관리자로 로그인합니다. 구성 관리자의 기본 URL은 `https://[server]:[port_number]/system/console/configMgr`입니다. [ **구성** ] 메뉴에서 [Apache Sling Referrer **필터] 옵션을** 선택합니다. 호스트 허용 필드에 디스패처의 호스트 이름을 입력하여 레퍼러로 허용하고 저장을 **클릭합니다**. 항목의 형식은 &#39;https://[서버]:[port]&#39;입니다.
 
 #### 캐시 구성 {#configure-cache}
 
@@ -180,12 +180,12 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 사항이 있습니다. 필�
 
 적응형 양식 캐시를 구성하려면 다음 단계를 수행하십시오.
 
-1. https://의 AEM 웹 콘솔 구성[관리자로 이동합니다].[port]/system/console/configMgr.
+1. https://&#39;의 AEM 웹 콘솔 구성[관리자로]이동합니다.[server]:port&#39;/system/console/configMgr.
 1. 적응형 **양식 및 대화형 통신 웹 채널 구성을** 클릭하여 구성 값을 편집합니다. 구성 값 편집 대화 상자에서 적응형 양식 수 필드에 AEM Forms 서버의 인스턴스가 캐싱할 수 있는 최대 양식 또는 문서 **수를 지정합니다** . 기본값은 100입니다. **저장**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >
-   >캐시를 비활성화하려면 [적응형 양식 수] 필드의 값을 **0으로 설정합니다**. 캐시는 재설정되고 캐시 구성을 비활성화하거나 변경하면 모든 양식과 문서가 캐시에서 제거됩니다.
+   >캐시를 비활성화하려면 [적응형 양식 수] 필드의 값을 **0으로 설정합니다**. 캐시는 재설정되며 캐시 구성을 비활성화하거나 변경하면 모든 양식과 문서가 캐시에서 제거됩니다.
 
 #### 양식 데이터 모델에 대한 SSL 통신 구성 {#configure-ssl-communcation-for-form-data-model}
 
