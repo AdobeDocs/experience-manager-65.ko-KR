@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -48,11 +48,11 @@ JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은
 * **[표현식 액세스](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**:을 클릭하여 필드를 활성화/비활성화합니다.
 * **[표현식](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**계산:to auto compute value of a field.
 * **[표현식을](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)**클릭합니다.를 클릭하여 단추의 클릭 이벤트에 대한 작업을 처리합니다.
-* **[](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p)초기화 스크립트&#x200B;**:필드의 초기화에 대한 작업을 수행합니다.
+* **[초기화 스크립트](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p):**필드의 초기화에 대한 작업을 수행합니다.
 * **[옵션 표현식](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**:을 사용하여 드롭다운 목록을 동적으로 채웁니다.
 * **[요약 표현식](#summary)**:를 사용하여 아코디언 제목을 동적으로 계산합니다.
 * **[표현식](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)**유효성 검사:to validate a field.
-* **[](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)값 커밋 스크립트&#x200B;**:필드의 값이 변경된 후 양식의 구성 요소를 변경합니다.
+* **[값 커밋 스크립트](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p):**필드의 값이 변경된 후 양식의 구성 요소를 변경합니다.
 * **[가시성 표현식](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**:to control visibility of a field and panel.
 * **[단계 완료 표현식](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**:사용자가 마법사의 다음 단계로 이동하지 못하도록 합니다.
 
@@ -95,11 +95,11 @@ JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은
 * 응용 양식이 데이터 미리 채우기를 사용하여 렌더링되면 스크립트는 채우기 전 작업이 완료된 후에 실행됩니다.
 * 응용 양식의 서버측 재유효성 검사가 트리거되면 초기화 스크립트가 실행됩니다.
 
-**** 적용 대상:필드 및 패널
+**적용 대상:** 필드 및 패널
 
-**** 반환 유형:Initialization 스크립트 표현식은 값을 반환하지 않습니다. 표현식이 값을 반환하면 값이 무시됩니다.
+**반환 유형:** Initialization 스크립트 표현식은 값을 반환하지 않습니다. 표현식이 값을 반환하면 값이 무시됩니다.
 
-**** 예:데이터 사전 채우기 시나리오에서 값이 null로 저장될 `'Adaptive Forms'` 때 기본값으로 필드를 채우려면 초기화 스크립트 표현식은 다음과 같습니다.
+**예:** 데이터 사전 채우기 시나리오에서 값이 null로 저장될 `'Adaptive Forms'` 때 기본값으로 필드를 채우려면 초기화 스크립트 표현식은 다음과 같습니다.
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### 옵션 표현식 {#options-expression}
@@ -118,15 +118,15 @@ mobilly_status **필드의 값이** 변경될 때마다 표현식이 다시 트�
 
 ### 요약 표현식 {#summary}
 
-요약 표현식은 아코디언 레이아웃 패널의 하위 패널 제목을 동적으로 계산합니다. 양식 필드 또는 사용자 지정 논리를 사용하여 제목을 평가하는 규칙에 요약 표현식을 지정할 수 있습니다. 표현식은 양식이 초기화될 때 실행됩니다. 양식을 프리플라이트하는 경우, 데이터는 프리플라이트 후 또는 표현식에 사용된 종속 필드의 값이 변경될 때 표현식이 실행됩니다.
+요약 표현식은 아코디언 레이아웃 패널의 하위 패널 제목을 동적으로 계산합니다. 양식 필드 또는 사용자 지정 논리를 사용하여 제목을 평가하는 규칙에 요약 표현식을 지정할 수 있습니다. 표현식은 양식이 초기화될 때 실행됩니다. 양식을 프리플라이트하는 경우 데이터가 프리플라이트 되거나 표현식에 사용된 종속 필드의 값이 변경될 때 표현식이 실행됩니다.
 
 요약 표현식은 일반적으로 각 하위 패널에 의미 있는 제목을 제공하기 위해 아코디언 레이아웃 패널의 하위 항목을 반복되는 데 사용됩니다.
 
-**** 적용 대상:레이아웃이 아코디언(Accordion)으로 구성된 패널의 직접 하위 패널입니다.
+**적용 대상:** 레이아웃이 아코디언(Accordion)으로 구성된 패널의 직접 하위 패널입니다.
 
-**** 반환 유형:표현식은 아코디언 제목이 되는 문자열을 반환합니다.
+**반환 유형:** 표현식은 아코디언 제목이 되는 문자열을 반환합니다.
 
-**** 예:&quot;계정 번호:&quot;+ textbox1.value
+**예:** &quot;계정 번호:&quot;+ textbox1.value
 
 ### 표현식 유효성 검사 {#validate-expression}
 
@@ -152,16 +152,16 @@ validate 표현식은 지정된 표현식을 사용하여 필드의 유효성을
 * 사용자는 UI에서 필드 값을 변경합니다.
 * 다른 필드의 변경으로 인해 필드 값이 프로그래밍 방식으로 변경됩니다.
 
-**** 적용 대상:fields
+**적용 대상:** fields
 
-**** 반환 유형:값 커밋 스크립트 표현식은 값을 반환하지 않습니다. 표현식이 값을 반환하면 값이 무시됩니다.
+**반환 유형:** 값 커밋 스크립트 표현식은 값을 반환하지 않습니다. 표현식이 값을 반환하면 값이 무시됩니다.
 
-**** 예:필드에 입력한 알파벳의 대/소문자를 커밋 시 대문자로 변환하려면 값 커밋 표현식은 다음과 같습니다.
+**예:** 필드에 입력한 알파벳의 대/소문자를 커밋 시 대문자로 변환하려면 값 커밋 표현식은 다음과 같습니다.
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
 >
->필드의 값이 프로그래밍 방식으로 변경될 때 값 커밋 스크립트 실행을 비활성화할 수 있습니다. 이렇게 하려면 https://[server]:[port]/system/console/configMgr로 이동하고 **호환성을 위해 적응형 양식** 버전을 AEM Forms **6.1**&#x200B;로 변경합니다. 이후, 값 커밋 스크립트는 사용자가 UI에서 필드 값을 변경할 때에만 실행됩니다.
+>필드의 값이 프로그래밍 방식으로 변경될 때 값 커밋 스크립트 실행을 비활성화할 수 있습니다. 이렇게 하려면 https://&#39;[server]:[port]&#39;/system/console/configMgr로 이동하여 **호환성을 위해 적응형 양식** 버전을 AEM Forms **** 6.1로 변경합니다. 이후, 값 커밋 스크립트는 사용자가 UI에서 필드 값을 변경할 때에만 실행됩니다.
 
 ### 가시성 표현식 {#visibility-expression}
 
