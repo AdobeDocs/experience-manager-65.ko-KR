@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -56,7 +56,7 @@ footer.jsp 모듈은 비어 있습니다. 사용자 상호 작용에만 사용�
 
 ### 프로필 노드 만들기 {#create-profile-node}
 
-1. URL에서 CRX DE 인터페이스로 이동합니다.관리자 자격 증명을 사용하여 인터페이스에 `https://[server]:[port]/crx/de` 로그인합니다.
+1. URL에서 CRX DE 인터페이스로 이동합니다.관리자 자격 증명을 사용하여 인터페이스에 `https://'[server]:[port]'/crx/de` 로그인합니다.
 
 1. 왼쪽 창에서 위치/content/ *xfaforms/profiles*&#x200B;로 이동합니다.
 
@@ -78,7 +78,7 @@ footer.jsp 모듈은 비어 있습니다. 사용자 상호 작용에만 사용�
 1. html.jsp **** 노드를 위에 만든 동일한 이름의 `/apps/hrform/demo` html.jsp 폴더에 붙여넣고 **저장을** 클릭합니다 ****.
 1. 프로필 스크립트의 다른 구성 요소가 있는 경우 1-6단계에 따라 /apps/hrform/demo 폴더에 있는 구성 요소를 복사합니다.
 
-1. 프로필이 만들어졌는지 확인하려면 URL을 엽니다 `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
+1. 프로필이 만들어졌는지 확인하려면 URL을 엽니다 `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
 양식을 확인하려면 [로컬 파일 시스템에서 AEM Forms로 양식을](/help/forms/using/get-xdp-pdf-documents-aem.md) 가져오고 AEM 서버 작성 인스턴스에서 양식을 [](/help/forms/using/previewing-forms.md) 미리 봅니다.
 
