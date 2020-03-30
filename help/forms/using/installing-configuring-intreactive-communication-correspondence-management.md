@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -43,7 +43,7 @@ AEM Forms의 대화형 통신 및 통신 관리 기능을 설치하고 구성하
 * AEM 인스턴스가 실행 중입니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드에서 서버에서 실행되는 AEM의 복사본입니다. AEM Forms 대화형 통신 및 통신 관리 기능을 실행하려면 하나 이상의 AEM 인스턴스(작성자 또는 처리)가 필요합니다.
 
    * **작성자**:컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠를 라이브할 준비가 되면 게시 인스턴스에 복제됩니다.
-   * **** 처리 중:처리 인스턴스는 [견고한 AEM 작성자](/help/forms/using/hardening-securing-aem-forms-environment.md) 인스턴스입니다. 작성 인스턴스를 설정하고 설치를 수행한 후에 이를 취소할 수 있습니다.
+   * **처리 중:** 처리 인스턴스는 [견고한 AEM 작성자](/help/forms/using/hardening-securing-aem-forms-environment.md) 인스턴스입니다. 작성 인스턴스를 설정하고 설치를 수행한 후에 이를 취소할 수 있습니다.
 
    * **게시**:인터넷 또는 내부 네트워크를 통해 대중에게 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
 
@@ -128,7 +128,7 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 사항이 있습니다. 필�
 
 모든 작성자 및 게시 인스턴스에 대해 다음 단계를 수행하여 패키지를 화이트리스트합니다.
 
-1. 브라우저 창에서 AEM 구성 관리자를 엽니다. 기본 URL은 https://[server]:[port]/system/console/configMgr입니다.
+1. 브라우저 창에서 AEM 구성 관리자를 엽니다. 기본 URL은 https://&#39;[server]:[port]&#39;/system/console/configMgr입니다.
 1. Deserialization 방화벽 **구성을 검색하고 엽니다**.
 1. sun.util.calendar **패키지를** 화이트리스트 **** 필드에 추가합니다. [저장]을 클릭합니다.
 1. 모든 작성자 및 게시 인스턴스에 대해 1-3단계를 반복합니다.
@@ -160,7 +160,7 @@ AEM 6.5 양식에서 AEM 6.4 양식, AEM 6.3 양식 및 AEM 6.2 양식의 다음
 
 1. 레퍼러 필터 서비스를 구성합니다.
 
-   Apache Felix 구성 관리자에 관리자로 로그인합니다. 구성 관리자의 기본 URL은 https://[server]:[port_number]/system/console/configMgr입니다. [ **구성** ] 메뉴에서 [Apache Sling Referrer **필터] 옵션을** 선택합니다. 호스트 허용 필드에 디스패처의 호스트 이름을 입력하여 레퍼러로 허용하고 저장을 **클릭합니다**. 항목의 형식은 https://[server]:[port]입니다.
+   Apache Felix 구성 관리자에 관리자로 로그인합니다. 구성 관리자의 기본 URL은 https://&#39;server&#39;:[port_number]/system/console/configMgr입니다. [ **구성** ] 메뉴에서 [Apache Sling Referrer **필터] 옵션을** 선택합니다. 호스트 허용 필드에 디스패처의 호스트 이름을 입력하여 레퍼러로 허용하고 저장을 **클릭합니다**. 항목의 형식은 https://&#39;[server]:[port]&#39;입니다.
 
 #### Adobe Target 통합 {#integrate-adobe-target}
 
