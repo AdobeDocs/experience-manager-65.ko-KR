@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 자체 웹 애플리케이션에서 AEM Forms 작업 영역 [구성 요소를](/help/forms/using/description-reusable-components.md) 사용할 수 있습니다. 다음 샘플 구현은 CRX™ 인스턴스에 설치된 AEM Forms 작업 영역 개발 패키지의 구성 요소를 사용하여 웹 애플리케이션을 만듭니다. 특정 요구 사항에 맞게 아래 솔루션을 사용자 정의합니다. 샘플 구현은 웹 포털 내에서 `UserInfo`구성 요소 `FilterList`및 `TaskList`구성 요소를 재사용합니다.
 
-1. 에서 CRXDE Lite 환경에 로그인합니다 `https://[server]:[port]/lc/crx/de/`. AEM Forms 작업 공간 개발 패키지가 설치되어 있는지 확인합니다.
+1. 에서 CRXDE Lite 환경에 로그인합니다 `https://'[server]:[port]'/lc/crx/de/`. AEM Forms 작업 공간 개발 패키지가 설치되어 있는지 확인합니다.
 1. 패스를 `/apps/sampleApplication/wscomponents`만듭니다.
 1. css, images, js/libs, js/runtime 및 js/registry.js 복사
 
