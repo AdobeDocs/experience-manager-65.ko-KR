@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -80,7 +80,7 @@ We.Gov 데모 패키지는 다음과 같은 내장 가상 사용자와 함께 �
    *https://&lt;aemserver>:&lt;port>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
 1. **Adobe We.Gov 사이트**: *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. **Adobe 받은 편지함**:AEM 백엔드의 상단 메뉴 [막대 Bell 아이콘] 위치에 있습니다.
+1. **Adobe 받은 편지함**:AEM 백엔드의 상단 메뉴 [막대 Bell 아이콘](assets/bell.svg) 위치에 있습니다.
 
    *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
@@ -172,13 +172,13 @@ Aya는 서비스 요청 애플리케이션을 완료하기 전에 집에서 일�
 
 ## 데스크탑 데모 {#desktop-demo}
 
-**** 이 섹션:집에 돌아온 Aya는 필요한 정보를 발견했고 그녀의 데스크톱에서 응용 프로그램을 다시 열었습니다. 아야는 온라인 양식 포털로 이동하여 응용 프로그램을 다시 시작합니다. 일부 간단한 사용자 정의 기능을 사용하면 기관은 자동으로 링크를 생성하여 이메일로 전송하여 애플리케이션을 다시 시작할 수 있습니다.
+**이 섹션:** 집에 돌아온 Aya는 필요한 정보를 발견했고 그녀의 데스크톱에서 응용 프로그램을 다시 열었습니다. 아야는 온라인 양식 포털로 이동하여 응용 프로그램을 다시 시작합니다. 일부 간단한 사용자 정의 기능을 사용하면 기관은 자동으로 링크를 생성하여 이메일로 전송하여 애플리케이션을 다시 시작할 수 있습니다.
 
 ### Aya 사용자 스토리(지속적인 적응형 양식) {#aya-user-story-continued-adaptive-form}
 
 **사용자 지침:**
 
-1. https://&lt; *aemserver>:&lt;port>/content/we-gov/home.html로 이동합니다.*
+1. https://&lt; *aemserver>:&lt;port>/content/we-gov/home.html으로 이동합니다.*
 1. 탐색 막대에서 &quot;온라인 서비스&quot;를&#x200B;**클릭합니다**.
 1. &quot;양식 초안&quot; 패널에서 기존 &quot;건강 혜택을 위한 등록 신청&quot;을 선택합니다.
 
@@ -219,19 +219,19 @@ Aya는 서비스 요청 애플리케이션을 완료하기 전에 집에서 일�
 
 ![정부 요원 조지](/help/forms/using/assets/george_lang-1.png)
 
-**** 이 섹션:조지는 정부 기관 Aya의 사업 분석가로 서비스를 요청하고 있습니다. George는 검토용으로 자신에게 지정된 모든 서비스 요청 응용 프로그램을 볼 수 있는 단일 대시보드를 가지고 있습니다.
+**이 섹션:** 조지는 정부 기관 Aya의 사업 분석가로 서비스를 요청하고 있습니다. George는 검토용으로 자신에게 지정된 모든 서비스 요청 응용 프로그램을 볼 수 있는 단일 대시보드를 가지고 있습니다.
 
 ### George 사용자 스토리(AEM 받은 편지함) {#george-user-story-aem-inbox}
 
 **사용자 지침:**
 
-1. https://&lt; *aemserver>:&lt;port>/aem/start.html로 이동합니다.*
+1. https://&lt; *aemserver>:&lt;port>/aem/start.html으로 이동합니다.*
 1. 사용자 아이콘(오른쪽 상단)을 클릭하고 현재 관리&#x200B;**사용자와**&#x200B;로그인한 경우 &quot;로그아웃&quot;**이나 &quot;가장**&#x200B;대상&quot; 메뉴 옵션을 사용합니다.
 
    1. 다음으로 로그인:
 
-      1. **** 사용자:george.lang
-      1. **** 암호:암호
+      1. **사용자:** george.lang
+      1. **암호:** 암호
    1. 또는 가장:
 
       1. &quot;가장&#x200B;**대상**&quot; 필드에 &quot;**조지**&quot;를입력합니다.
@@ -278,13 +278,13 @@ George는 Aya의 응용 프로그램을 승인하며, 기존의 자동 워크플
 
 ![Camila(CX 리드)](/help/forms/using/assets/camila_santos-1.png)
 
-**** 이 섹션:CX Lead 는 Aya 와 환영 전화 통화를 설정하여 승인 받은 공공 서비스 사용 방법을 설명합니다.
+**이 섹션:** CX Lead 는 Aya 와 환영 전화 통화를 설정하여 승인 받은 공공 서비스 사용 방법을 설명합니다.
 
 ### Camila 사용자 스토리(AEM 받은 편지함 및 MS Dynamics) {#camila-user-story-aem-inbox-ms-dynamics}
 
 **사용자 지침:**
 
-1. https://&lt; *aemserver>:&lt;port>/aem/start.html로 이동합니다.*
+1. https://&lt; *aemserver>:&lt;port>/aem/start.html으로 이동합니다.*
 1. 사용자 아이콘(오른쪽 상단)을 클릭하고 현재 관리&#x200B;**사용자와**&#x200B;로그인한 경우 &quot;로그아웃&quot;**이나 &quot;가장**&#x200B;대상&quot; 메뉴 옵션을 사용합니다.
 
    1. 다음으로 로그인:
@@ -324,7 +324,7 @@ George는 Aya의 응용 프로그램을 승인하며, 기존의 자동 워크플
 
 ## 환영 키트 시민(Aya) {#welcome-kit-citizen-aya}
 
-**** 이 섹션:Aya는 자신의 이점에 대해 요약하고 채울 양식 필드를 포함하는 인터랙티브한 커뮤니케이션에 대한 링크가 포함된 이메일을 수신합니다. PDF 혜택 확인서를 첨부하고 인터랙티브한 커뮤니케이션과 동일한 테마/브랜딩을 사용하여 이메일에 연결할 수 있습니다.
+**이 섹션:** Aya는 자신의 이점에 대해 요약하고 채울 양식 필드를 포함하는 인터랙티브한 커뮤니케이션에 대한 링크가 포함된 이메일을 수신합니다. PDF 혜택 확인서를 첨부하고 인터랙티브한 커뮤니케이션과 동일한 테마/브랜딩을 사용하여 이메일에 연결할 수 있습니다.
 
 ### Aya 사용자 스토리(이메일 클라이언트) {#aya-user-story-email-client}
 
@@ -349,7 +349,7 @@ George는 Aya의 응용 프로그램을 승인하며, 기존의 자동 워크플
 
 ## 갱신 알림 사용자(Aya) {#renewal-reminder-citizen-aya}
 
-**** 이 섹션:Camila는 또한 1년 후에 통신 미리 알림을 예약합니다. (자동화/실행 및 이메일을 위한 워크플로우 단계).
+**이 섹션:** Camila는 또한 1년 후에 통신 미리 알림을 예약합니다. (자동화/실행 및 이메일을 위한 워크플로우 단계).
 
 ### Aya 사용자 스토리(이메일 클라이언트) {#aya-user-story-email-client-1}
 
@@ -364,7 +364,7 @@ George는 Aya의 응용 프로그램을 승인하며, 기존의 자동 워크플
 
 ## Analytics CX 리드(Camila) {#analytics-cx-lead-camila}
 
-**** 이 섹션:Camila는 대시보드로 이동하여 서비스 요청 양식을 작성하고 포기하는 국민 %, 요청 제출에서 승인/거부 응답, 시민에게 보낸 혜택에 대한 관여 통계 등 공공 기관의 KPI를 확인할 수 있습니다.
+**이 섹션:** Camila는 대시보드로 이동하여 서비스 요청 양식을 작성하고 포기하는 국민 %, 요청 제출에서 승인/거부 응답, 시민에게 보낸 혜택에 대한 관여 통계 등 공공 기관의 KPI를 확인할 수 있습니다.
 
 ### 카메라 리뷰 사이트 보고(Adobe.Gov Adobe Analytics) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
