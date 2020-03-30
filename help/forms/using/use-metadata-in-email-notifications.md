@@ -8,7 +8,7 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -110,7 +110,7 @@ AEM Forms 응용 프로그램은 몇 가지 메타데이터 변수(키-값 쌍)�
   </tr> 
   <tr> 
    <td>workitem_url</td> 
-   <td>연결된 양식 애플리케이션에 액세스할 수 있는 URL입니다.</td> 
+   <td>연결된 양식 응용 프로그램에 액세스할 수 있는 URL입니다.</td> 
   </tr> 
   <tr> 
    <td>workitem_description</td> 
@@ -155,7 +155,7 @@ AEM Forms 응용 프로그램은 몇 가지 메타데이터 변수(키-값 쌍)�
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) 는 스크립팅 언어입니다. 클라이언트 측 스크립팅 및 서버 애플리케이션에 사용됩니다. ECMAScript를 사용하여 이메일 템플릿에 대한 사용자 정의 메타데이터를 추가하려면 다음 단계를 수행하십시오.
 
-1. 관리 계정으로 CRX DE에 로그인합니다. URL은 https://[서버]:[port]/crx/de/index.jsp입니다.
+1. 관리 계정으로 CRX DE에 로그인합니다. URL은 https://&#39;[server]:[port]&#39;/crx/de/index.jsp입니다.
 
 1. /apps/fd/dashboard/scripts/metadataScripts로 이동합니다. 확장명이 .ecma인 파일을 만듭니다. 예: usermetadata.ecma
 
@@ -202,7 +202,7 @@ Java 인터페이스를 사용하여 OSGi 번들을 만들려면 AEM [Forms Clie
 
 1. 마법사 선택 화면에서 Maven 프로젝트를 선택하고 다음을 클릭합니다.
 
-1. 새 마비안 프로젝트에서 기본값을 유지하고 다음을 클릭합니다. 원형을 선택하고 다음을 클릭합니다. 예: maven-tranype-quickstart. 프로젝트에 대한 그룹 ID, 객체 ID, 버전 및 패키지를 지정하고 완료를 클릭합니다. 프로젝트가 만들어집니다.
+1. 새 마비안 프로젝트에서 기본값을 유지하고 다음을 클릭합니다. 원형을 선택하고 다음을 클릭합니다. 예: maven-tranype-quickstart. 프로젝트에 대한 그룹 ID, 객체 ID, 버전 및 패키지를 지정하고 마침을 클릭합니다. 프로젝트가 만들어집니다.
 
 1. 편집할 pom.xml 파일을 열고 파일의 모든 내용을 다음과 같이 바꿉니다.
 
