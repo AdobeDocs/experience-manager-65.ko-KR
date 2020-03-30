@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -27,7 +27,7 @@ PDF 변환 서비스를 사용하여 다음을 수행할 수 있습니다.
 
 ## 서비스의 속성 구성 {#properties}
 
-AEM 콘솔의 **AEMFD ConvertPDF 서비스를** 사용하여 이 서비스에 대한 속성을 구성할 수 있습니다. AEM 콘솔의 기본 URL은 `https://[host]:[port]/system/console/configMgr`입니다.
+AEM 콘솔의 **AEMFD ConvertPDF 서비스를** 사용하여 이 서비스에 대한 속성을 구성할 수 있습니다. AEM 콘솔의 기본 URL은 `https://[host]:'port'/system/console/configMgr`입니다.
 
 ## 서비스 사용 {#using-the-service}
 
