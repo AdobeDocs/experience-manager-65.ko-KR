@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 92a64c8a1ba38f592d18355b8233cb79a2575301
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -162,7 +162,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 ## AEM Forms에서 크로스 도메인 사이트에 적응형 양식을 제공할 수 있도록 설정 {#cross-site}
 
-1. AEM 작성자 인스턴스에서 AEM 웹 콘솔 구성 관리자로 이동합니다. `https://[server]:[port]/system/console/configMgr`
+1. AEM 작성자 인스턴스에서 AEM 웹 콘솔 구성 관리자로 이동합니다. `https://'[server]:[port]'/system/console/configMgr`
 1. Apache Sling 레퍼러 **필터 구성을 찾아 엽니다** .
 1. 허용된 호스트 필드에서 웹 페이지가 있는 도메인을 지정합니다. 이를 통해 주최자가 AEM 서버에 POST 요청을 수행할 수 있습니다. 정규 표현식을 사용하여 일련의 외부 응용 프로그램 도메인을 지정할 수도 있습니다.
 
