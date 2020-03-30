@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -107,7 +107,7 @@ Barcoded Forms 서비스는 종이에 존재하는 데이터를 전자 형식으
 
 ### 사용자 지정 문자 집합 {#user-specified-character-sets}
 
-양식 작성자가 Designer를 사용하여 양식에 바코드 개체를 추가하면 문자 인코딩을 지정할 수 있습니다. 인식된 인코딩은 UTF-8, ISO-8859-1, ISO-8859-2, ISO-8859-7, Shift-JIS, KSC-5601, Big-Five, GB-2312, UTF-16입니다. 기본적으로 모든 데이터는 바코드로 UTF-8로 인코딩됩니다.
+양식 작성자가 Designer를 사용하여 양식에 바코드 개체를 추가하면 문자 인코딩을 지정할 수 있습니다. 인식되는 인코딩은 UTF-8, ISO-8859-1, ISO-8859-2, ISO-8859-7, Shift-JIS, KSC-5601, Big-Five, GB-2312, UTF-16입니다. 기본적으로 모든 데이터는 바코드로 UTF-8로 인코딩됩니다.
 
 바코드를 디코딩할 때 사용할 문자 집합 인코딩을 지정할 수 있습니다. 모든 데이터가 올바르게 디코딩되도록 하려면 양식을 디자인할 때 양식 작성자가 지정한 것과 동일한 문자 집합을 지정하십시오.
 
@@ -130,7 +130,7 @@ BCF API를 사용하는 경우 다음 제한 사항을 고려하십시오.
 
 ## 서비스의 속성 구성 {#configureproperties}
 
-AEM 콘솔의 **AEMFD Barcoded Forms** Service를 사용하여 이 서비스에 대한 속성을 구성할 수 있습니다. AEM 콘솔의 기본 URL은 `https://[host]:[port]/system/console/configMgr`입니다.
+AEM 콘솔의 **AEMFD Barcoded Forms** Service를 사용하여 이 서비스에 대한 속성을 구성할 수 있습니다. AEM 콘솔의 기본 URL은 `https://[host]:'port'/system/console/configMgr`입니다.
 
 ## 서비스 사용 {#using}
 
