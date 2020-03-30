@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,7 +28,7 @@ AEM 워크플로우를 사용하여 적응형 양식 기반 워크플로우를 �
 
 OSGi의 양식 중심 워크플로우를 사용하면 JEE 스택에 완벽한 프로세스 관리 기능을 설치하지 않고도 OSGi 스택에서 다양한 작업을 위한 워크플로우를 신속하게 구축 및 배포할 수 있습니다. 워크플로우의 개발 및 관리에서는 익숙한 AEM Workflow 및 AEM 받은 편지함 기능을 사용합니다. 워크플로우는 다양한 소프트웨어 시스템, 네트워크, 부서 및 조직에 걸쳐 실제 업무 처리 과정을 자동화하는 기반이 됩니다.
 
-설정되면 이러한 워크플로우를 수동으로 트리거하여 정의된 프로세스를 완료하거나 사용자가 양식 또는 [통신 관리](/help/forms/using/cm-overview.md) 편지를 제출할 때 프로그래밍 방식으로 실행할 수 있습니다. 향상된 AEM 워크플로우 기능을 통해 AEM Forms는 두 가지 서로 다르지만 유사한 기능을 제공합니다. 배포 전략의 일부로 적합한 솔루션을 결정해야 합니다. OSGi 및 JEE의 프로세스 관리에 대한 양식 중심 AEM 워크플로우의 [비교를](../../forms/using/capabilities-osgi-jee-workflows.md) 참조하십시오. 또한 배포 토폴로지의 경우 AEM Forms [용 아키텍처 및 배포 토폴로지를 참조하십시오](/help/forms/using/aem-forms-architecture-deployment.md).
+설정되면 이러한 워크플로우를 수동으로 트리거하여 정의된 프로세스를 완료하거나 사용자가 양식 또는 [통신 관리](/help/forms/using/cm-overview.md) 편지를 제출할 때 프로그래밍 방식으로 실행할 수 있습니다. 향상된 AEM 워크플로우 기능을 통해 AEM Forms는 두 가지 서로 다르지만 유사한 기능을 제공합니다. 배포 전략의 일부로 적합한 솔루션을 결정해야 합니다. OSGi 및 JEE의 프로세스 관리에 대한 양식 중심 AEM 워크플로우의 [비교를](../../forms/using/capabilities-osgi-jee-workflows.md) 참조하십시오. 또한 배포 토폴로지의 경우 AEM [Forms용 아키텍처 및 배포 토폴로지를 참조하십시오](/help/forms/using/aem-forms-architecture-deployment.md).
 
 OSGi의 양식 중심 워크플로우는 AEM [받은 편지함을 확장하고](/help/sites-authoring/inbox.md) AEM Workflow 편집기에 추가 구성 요소(단계)를 제공하여 AEM 양식 중심의 워크플로우에 대한 지원을 추가합니다. 확장된 AEM 받은 편지함은 AEM Forms 작업 [영역과 유사한 기능을 가지고 있습니다](../../forms/using/introduction-html-workspace.md). 인간 중심 워크플로우(승인, 검토 등)를 관리할 수 있을 뿐만 아니라 AEM 워크플로우를 사용하여 [문서 서비스](/help/sites-developing/workflows-step-ref.md)관련 작업(예: PDF 생성)을 자동화하고 전자 서명(Adobe Sign) 문서를 작성할 수 있습니다.
 
@@ -57,7 +57,7 @@ AEM 파섹 워크플로우 모델을 만드는 단계별 지침은 워크플로�
 
 ### 승인 및 검토 워크플로우에 대한 모델 만들기 {#create-a-model-for-an-approval-and-review-workflow}
 
-승인 및 검토 워크플로우는 의사 결정을 내리기 위해 사람이 개입해야 하는 작업을 위한 것입니다. 다음 예에서는 프런트 오피스 은행 에이전트가 작성할 대출 신청 워크플로우 모델을 만듭니다. 신청서를 작성하면 승인을 위해 전송됩니다. 나중에 승인된 신청서는 Adobe Sign을 사용하여 전자 서명을 받기 위해 신청자에게 전송됩니다.
+승인 및 검토 워크플로우는 의사 결정을 내리기 위해 사람이 개입해야 하는 작업을 위한 것입니다. 다음 예에서는 프런트 오피스 은행 에이전트가 작성할 대출 신청 워크플로우 모델을 생성합니다. 신청서를 작성하면 승인을 위해 전송됩니다. 나중에 승인된 신청서는 Adobe Sign을 사용하여 전자 서명을 받기 위해 신청자에게 전송됩니다.
 
 이 예는 아래에 첨부된 패키지로 사용할 수 있습니다. 패키지 관리자를 사용하여 예제를 가져와 설치합니다. 다음 단계를 수행하여 애플리케이션에 대한 워크플로우 모델을 수동으로 만들 수도 있습니다.
 
@@ -65,7 +65,7 @@ AEM 파섹 워크플로우 모델을 만드는 단계별 지침은 워크플로�
 
 [파일 가져오기](assets/example-mortgage-loan-application.zip)
 
-1. 워크플로우 모델 콘솔을 엽니다. 기본 URL은 https://[서버]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models입니다.
+1. 워크플로우 모델 콘솔을 엽니다. 기본 URL은 https://&#39;[server]:[port]&#39;/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models입니다.
 1. Select **Create**, then **Create Model**. 워크플로우 모델 추가 대화 상자가 나타납니다.
 1. 제목 및 **이름** ( **선택** 사항)을 입력합니다. 예를 들어 대출 신청서. **Done**&#x200B;을 누릅니다.
 1. 새로 만든 워크플로우 모델을 선택하고 편집을 **누릅니다**. 이제 워크플로우 단계를 추가하여 비즈니스 로직을 구축할 수 있습니다. 워크플로우 모델을 처음 만들면 다음과 같은 내용이 포함됩니다.
@@ -75,7 +75,7 @@ AEM 파섹 워크플로우 모델을 만드는 단계별 지침은 워크플로�
 
 1. 이메일 알림을 활성화합니다. OSGi에서 양식 중심의 워크플로우를 구성하여 사용자 또는 할당자에게 이메일 알림을 전송할 수 있습니다. 이메일 알림을 활성화하려면 다음 구성을 수행하십시오.
 
-   1. https://의 AEM 구성[관리자로]이동합니다.[port]/system/console/configMgr.
+   1. https://&#39;의 AEM 구성 관리자로[]이동합니다.[port]&#39;/system/console/configMgr.
    1. 일 **[!UICONTROL CQ 메일 서비스 구성을]** 엽니다. SMTP 서버 호스트 이름 **[!UICONTROL ,]** SMTP 서버 포트 **[!UICONTROL 및]** &quot;보낸 사람&quot; 주소 **[!UICONTROL 필드의 값을 지정합니다]** . **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
    1. Day CQ **[!UICONTROL Link Externalizer 구성을]** 엽니다. 도메인 **[!UICONTROL 필드에서]** 로컬, 작성자 및 게시 인스턴스에 대한 실제 호스트 이름/IP 주소 및 포트 번호를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -107,7 +107,7 @@ AEM 파섹 워크플로우 모델을 만드는 단계별 지침은 워크플로�
 
    ![OR 분할 예](assets/orsplit_branch1_active_new.png)
 
-   **분기 1에 대한 라우팅 표현식**
+   **분기 2에 대한 라우팅 표현식**
 
    사용자가 AEM 받은 **편지함에서** 거부를 누르면 분기 2가 활성화됩니다.
 
@@ -265,7 +265,7 @@ OSGi에서 인터랙티브한 커뮤니케이션이나 편지 제출 시 양식 
 
 AEM 워크플로우의 작업 할당 및 이메일 보내기 단계를 사용하여 이메일을 보낼 수 있습니다. 이메일 서버 및 이메일을 보내는 데 필요한 기타 구성을 지정하려면 다음 단계를 수행하십시오.
 
-1. https://의 AEM 구성[관리자로]이동합니다.[port]/system/console/configMgr.
+1. https://&#39;의 AEM 구성 관리자로[]이동합니다.[port]&#39;/system/console/configMgr.
 1. 일 **[!UICONTROL CQ 메일 서비스 구성을]** 엽니다. SMTP 서버 호스트 이름 **[!UICONTROL ,]** SMTP 서버 포트 **[!UICONTROL 및]** &quot;보낸 사람&quot; 주소 **[!UICONTROL 필드의 값을 지정합니다]** . **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. Day CQ **[!UICONTROL Link Externalizer 구성을]** 엽니다. 도메인 **[!UICONTROL 필드에서]** 로컬, 작성자 및 게시 인스턴스에 대한 실제 호스트 이름/IP 주소 및 포트 번호를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
