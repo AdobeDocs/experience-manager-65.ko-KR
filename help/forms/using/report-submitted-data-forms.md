@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -76,11 +76,11 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>offset</code> (옵션)</td>
-   <td>결과 집합의 인덱스에서 시작점을 지정합니다. 기본값은 <strong>0입니다</strong>.</td>
+   <td>결과 집합의 인덱스에서 시작점을 지정합니다. The default value is <strong>0</strong>.</td>
   </tr>
   <tr>
    <td><code>limit</code> (옵션)</td>
-   <td>결과 수를 제한합니다. 기본값은 30 <strong>입니다</strong>.</td>
+   <td>결과 수를 제한합니다. The default value is <strong>30</strong>.</td>
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (옵션)</td>
@@ -92,11 +92,11 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (옵션)</td>
-   <td>결과에 포함할 양식 속성의 쉼표로 구분된 목록을 지정합니다. <br /> 기본 속성은 다음과 같습니다. <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>결과에 포함할 양식 속성의 쉼표로 구분된 목록을 지정합니다. 기본 속성은 다음과 같습니다.<br /><code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (옵션)</td>
-   <td>양식 속성에서 지정된 값을 검색하고 일치하는 값이 있는 양식을 반환합니다. 기본값은 <strong>"</strong>"입니다.</td>
+   <td>양식 속성에서 지정된 값을 검색하고 일치하는 값이 있는 양식을 반환합니다. The default value is <strong>""</strong>.</td>
   </tr>
  </tbody>
 </table>
@@ -148,7 +148,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 **요청 URL**
 
 ```
-https://[host:[port]/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
+https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
 ```
 
 **응답**
@@ -186,7 +186,7 @@ https://[host:[port]/content/forms/portal/submission.review.json?func=addComment
 **요청 URL**
 
 ```
-https://[host]:[port]/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
+https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
 ```
 
 **응답**
@@ -218,7 +218,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getCommen
 **요청 URL**
 
 ```
-https://[host]:[port]/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
+https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
 ```
 
 **응답**
