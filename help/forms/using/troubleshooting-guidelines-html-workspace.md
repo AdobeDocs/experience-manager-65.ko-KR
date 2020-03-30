@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,12 +25,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 패키지를 설치하는 동안 오류가 발생하면 `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`다음 단계를 수행하십시오.
 
-1. CRX DE Lite에 로그인합니다. 기본 URL은 `https://[localhost]:[port]/lc/crx/de/index.jsp`
+1. CRX DE Lite에 로그인합니다. 기본 URL은 `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. 다음 노드를 삭제합니다.
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. 패키지 관리자로 이동합니다. 기본 URL은 `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
+1. 패키지 관리자로 이동합니다. 기본 URL은 `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. 패키지를 검색하고 `adobe-lc-workspace-pkg-[version].zip` 설치합니다.
 1. 응용 프로그램 서버를 다시 시작합니다.
 
