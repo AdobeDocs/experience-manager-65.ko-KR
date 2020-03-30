@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: a7ef7682df1dc627565f1cc30047ed775d2dbd13
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -554,7 +554,7 @@ PDF 파일에 대해 AES 256 암호화를 사용하려면 JCE(Java Cryptography 
 
 어셈블러 서비스는 Reader 확장 서비스, 서명 서비스, 양식 서비스 및 출력 서비스에 따라 달라집니다. 다음 단계를 수행하여 필요한 서비스가 실행 중인지 확인합니다.
 
-1. 관리자로 URL에 `https://[server]:[port]/system/console/bundles` 로그인합니다.
+1. 관리자로 URL에 `https://'[server]:[port]'/system/console/bundles` 로그인합니다.
 1. 다음 서비스를 검색하여 서비스가 실행되고 있는지 확인합니다.
 
 <table> 
