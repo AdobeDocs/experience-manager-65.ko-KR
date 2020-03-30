@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
-source-git-commit: db69c393fc44ca2fcb30f9fcb0c5ca456ba35ed5
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: db69c393fc44ca2fcb30f9fcb0c5ca456ba35ed5
 
 AEM Forms는 웹 개발자가 검색 조건을 충족하는 양식 세트를 쿼리하고 검색하는 데 사용할 수 있는 REST 기반 검색 API를 제공합니다. API를 사용하여 다양한 필터를 기반으로 양식을 검색할 수 있습니다. 응답 개체에는 양식 특성, 속성 및 양식의 끝점이 포함됩니다.
 
-REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매개 변수와 함께 GET 요청을 서버에 `https://[server]:[port]/libs/fd/fm/content/manage.json` 보내십시오.
+REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매개 변수와 함께 GET 요청을 서버에 `https://'[server]:[port]'/libs/fd/fm/content/manage.json` 보내십시오.
 
 ## Query parameters {#query-parameters}
 
@@ -32,7 +32,7 @@ REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매�
    <td>func<br /> </td>
    <td><p>호출할 함수를 지정합니다. 양식을 검색하려면 <code>func </code>속성 값을 로 설정합니다 <code>searchForms</code>.</p> <p>예, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong></strong> 참고:이 <em>매개 변수는 필수입니다.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>참고:</strong> 이 <em>매개 변수는 필수입니다.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -91,7 +91,7 @@ REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매�
        <li>ENDSWITH - B가 A의 끝 부분인 경우 A는 B로 끝납니다.</li>
        <li>LIKE - LIKE 연산자를 구현합니다.</li>
        <li>AND - 여러 문 결합</li>
-      </ul> <p><strong></strong> 참고:GT, <em>LT, GTEQ 및 LTEQ 연산자는 LONG, DOUBLE 및 DATE와 같은 선형 유형의 속성에 적용됩니다.</em></p> </li>
+      </ul> <p><strong>참고:</strong> GT, <em>LT, GTEQ 및 LTEQ 연산자는 LONG, DOUBLE 및 DATE와 같은 선형 유형의 속성에 적용됩니다.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
