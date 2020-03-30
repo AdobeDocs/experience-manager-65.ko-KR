@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
 * cmDataUrl 매개 변수를 사용하여 원하는 데이터 소스에서 가져온 XML 데이터의 URL입니다.
 
 예를 들어 사용자 지정 포털에서 URL을\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`를 참조하십시오.
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`를 참조하십시오.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
 
 ## 인라인 데이터 기반 호출 {#inline-data-based-invocation}
 
-통신 만들기 응용 프로그램을 호출하는 또 다른(및 보다 안전한) 방법은 https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html의 URL을 단순히히트하면서 매개 변수와 데이터를 전송하여 POST 요청(최종 사용자에게서 숨기기)으로 통신 응용 프로그램을 호출하는 것입니다. 또한 이제 이전 접근 방식에서는 불가능했거나 이상이었던, 동일한 요청의 일부로, cmData 매개 변수를 사용하여 통신 응용 프로그램 인라인에 대한 XML 데이터를 전달할 수 있습니다.
+통신 만들기 응용 프로그램을 호출하는 또 다른(및 보다 안전한) 방법은 https://&#39;[server]:[port]&#39;/[contextPath/aem/forms/createcorrespondence.html의]URL을 단순히POST 요청으로 호출하도록 매개 변수와 데이터를 전송하여 최종 사용자에게서 숨기도록 하는 것입니다. 또한 이제 이전 접근 방식에서는 불가능했거나 이상이었던, 동일한 요청의 일부로, cmData 매개 변수를 사용하여 통신 응용 프로그램 인라인에 대한 XML 데이터를 전달할 수 있습니다.
 
 ### 문자 지정을 위한 매개 변수 {#parameters-for-specifying-letter}
 
