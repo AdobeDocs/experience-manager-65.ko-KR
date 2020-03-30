@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -150,7 +150,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. 배포 **방법으로 기업 또는 애드혹** 배포용으로 저장을 선택하고 다음을 **클릭합니다**.
 1. 적절한 코드 **서명 ID를** 선택하고 다음을 **클릭합니다**. 승인을 **클릭하여** 서명을 적용합니다.
 1. 앱의 이름을 입력하고 Enterprise Distribution **용으로 저장을 선택합니다**.
-1. 앱용 **애플리케이션** URL을 제공합니다. 예를 들어 CRX 서버에서 앱을 호스팅하려면 URL을 제공합니다 `https://[LC_host]:[port]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
+1. 앱용 **애플리케이션** URL을 제공합니다. 예를 들어 CRX 서버에서 앱을 호스팅하려면 URL을 제공합니다 `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
 1. 제목 **필드에서** AEM Forms를 지정합니다.
 1. 저장을 **클릭하고** Xcode를 닫습니다.
 
