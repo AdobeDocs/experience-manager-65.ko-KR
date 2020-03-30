@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27695ee7880cfa23d504d723297c9a06729a424b
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 27695ee7880cfa23d504d723297c9a06729a424b
 
 다음 단계를 수행하여 동기화 스케줄러의 간격을 변경합니다.
 
-1. AEM Configuration Manager에 로그인합니다. 구성 관리자의 URL은 `https://[Server]:[Port]/lc/system/console/configMgr`
+1. AEM Configuration Manager에 로그인합니다. 구성 관리자의 URL은 `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. FormsManagerConfiguration 번들을 찾아 **엽니다** .
 
@@ -35,17 +35,17 @@ source-git-commit: 27695ee7880cfa23d504d723297c9a06729a424b
 
 저장소에서 자산 **동기화 옵션을 사용하여** 자산을 수동으로 동기화할 수 있습니다. 자산을 수동으로 동기화하려면 다음 단계를 수행하십시오.
 
-1. AEM Forms에 로그인합니다. 기본 URL은 `https://[Server]:[Port]/lc/aem/forms/`입니다.
+1. AEM Forms에 로그인합니다. 기본 URL은 `https://'[server]:[port]'/lc/aem/forms/`입니다.
 
    ![AEM Forms 사용자 인터페이스](assets/aem_forms_ui.png)
 
-   **** 그림:AEM *Forms 사용자 인터페이스*
+   **그림:** AEM *Forms 사용자 인터페이스*
 
 1. 도구 모음에서 ![aem6forms_sync](assets/aem6forms_sync.png) 아이콘을 클릭합니다. 마지막으로 구성된 경로에 에셋이 없는 경우 아래와 같이 대화 상자가 표시됩니다. 시작을 **클릭하여** 동기화를 시작합니다.
 
    ![동기화 대화 상자](assets/migrate-and-syncronize.png)
 
-   **** 그림:동기화 *대화 상자*
+   **그림:** 동기화 *대화 상자*
 
 ## 동기화 오류 문제 해결 {#troubleshooting-synchronization-error}
 
@@ -57,4 +57,4 @@ source-git-commit: 27695ee7880cfa23d504d723297c9a06729a424b
 
 ![자산 동기화 대화 상자의 충돌](assets/sync-conflict.png)
 
-**** 그림:자산 *동기화 대화 상자의 충돌*
+**그림:** 자산 *동기화 대화 상자의 충돌*
