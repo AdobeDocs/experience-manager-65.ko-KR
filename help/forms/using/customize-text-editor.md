@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,7 +37,7 @@ source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
 
 tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 다음을 수행합니다.
 
-1. 관리자로 `https://[server]:[port]/[ContextPath]/crx/de` 이동하여 로그인합니다.
+1. 관리자로 `https://'[server]:[port]'/[ContextPath]/crx/de` 이동하여 로그인합니다.
 1. apps 폴더에서 다음 단계를 사용하여 구성 폴더와 유사한 경로/구조로 config라는 폴더를 만듭니다. 이 폴더는 libs/fd/cm/config에 있습니다.
 
    1. 다음 경로에서 항목 폴더를 마우스 오른쪽 버튼으로 클릭하고 Overlay **Node를 선택합니다**.
@@ -48,11 +48,11 @@ tbxeditor-config.xml 파일을 편집하여 글꼴을 사용자 정의하려면 
 
    1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **** 경로:/libs/fd/cm/config
+      **경로:** /libs/fd/cm/config
 
-      **** 위치:/apps/
+      **위치:** /apps/
 
-      **** 일치 노드 유형:선택됨
+      **일치 노드 유형:** 선택됨
 
       ![오버레이 노드](assets/2.png)
 
