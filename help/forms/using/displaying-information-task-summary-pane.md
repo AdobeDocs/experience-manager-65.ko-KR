@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ AEM Forms 작업 영역을 사용하면 작업 요약 창에서 원하는 웹 �
 1. 작업 요약 URL 필드를 구성합니다. 리터럴 값, 템플릿, 변수 또는 XPath 표현식을 지정할 수 있습니다.
 1. 작업 요약 페이지에 대한 정보를 표시하는 예는 아래와 같습니다.
 
-   * 에서 CRXDE Lite 환경에 로그인합니다 `https://[server]:[port]/lc/crx/de`.
+   * 에서 CRXDE Lite 환경에 로그인합니다 `https://'[server]:[port]'/lc/crx/de`.
    * `Create a node`**SampleSummary **/` under `content:` with type `unstructuredsling:`. In the properties of this node, add `resourceTypeSampleSummaryPERM_WORKSPACE_` of type String and value ``. In the Access Control List of this node, add an entry for `` allowing `USERjcr:read` privileges.`
    * `Create a folder`**SampleSummary **under`/apps`. 의 액세스 제어 목록에서`/apps/SampleSummary`허용할 항목을`PERM_WORKSPACE_USER`추가합니다`jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
