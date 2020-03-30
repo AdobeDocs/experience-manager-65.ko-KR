@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -243,7 +243,7 @@ AEM에서는 적응형 양식을 현지화하는 데 사용할 수 있는 번역
 * 새 구성 요소 추가 또는 현지화된 양식의 스크립트 적용 등과 같은 수정 사항은 자동으로 현지화되지 않습니다. 따라서 여러 로컬라이제이션 주기를 피하려면 양식을 현지화하기 전에 양식을 완료해야 합니다.
 * 요청 매개 변수를 사용하여 브라우저 로케일을 재정의하고 지정된 로케일에서 양식을 렌더링합니다. `afAcceptLang` 예를 들어, 다음 URL은 브라우저 설정에 지정된 로케일에 관계없이 일본어 로케일에서 양식을 강제로 렌더링합니다.
 
-   `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * AEM Forms는 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질)(pt-BR), 중국어(zh-CN), 중국어(zh-대만) 및 한국어(ko-KR) 로케일 현지화를 지원합니다. 그러나 런타임 시 적응형 양식에 대한 새로운 로케일 지원을 추가할 수 있습니다. 자세한 내용은 적응형 [양식 현지화를](/help/forms/using/supporting-new-language-localization.md)위한 새로운 로케일 지원을 참조하십시오.
 
