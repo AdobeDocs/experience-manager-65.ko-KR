@@ -8,7 +8,7 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,7 +25,7 @@ OSGi에서 작업 할당 및 [양식 중심 워크플로우의](/help/forms/usin
 
 ECMAScript는 스크립팅 언어입니다. 클라이언트 측 스크립팅 및 서버 애플리케이션에 사용됩니다. ECMAScript를 사용하여 사용자나 그룹을 동적으로 선택하려면 다음 단계를 수행하십시오.
 
-1. CRXDE Lite를 엽니다. URL은 `https://[server]:[port]/crx/de/index.jsp`
+1. CRXDE Lite를 엽니다. URL은 `https://'[server]:[port]'/crx/de/index.jsp`
 1. 다음 경로에서 확장명이 .ecma인 파일을 만듭니다. 경로(노드 구조)가 없는 경우 다음을 만듭니다.
 
    * (작업 할당 단계 경로) `/apps/fd/dashboard/scripts/participantChooser`
