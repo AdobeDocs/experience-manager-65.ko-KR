@@ -9,7 +9,7 @@ topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -26,7 +26,7 @@ AEM Forms 작업 공간에서는 양식 및 문서에 대한 작업 지정 및 �
 
 먼저 AEM Forms 작업 영역에서 렌더링되는 샘플 통신 관리 템플릿을 만듭니다. 자세한 내용은 문자 [템플릿](../../forms/using/create-letter.md)만들기를 참조하십시오.
 
-통신 관리 템플릿을 성공적으로 렌더링할 수 있는지 확인하려면 URL의 통신 관리 템플릿에 액세스하십시오. URL은 `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+통신 관리 템플릿을 성공적으로 렌더링할 수 있는지 확인하려면 URL의 통신 관리 템플릿에 액세스하십시오. URL은 `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 여기서 `encodedLetterId` 은 URL 인코딩된 문자 ID입니다. Workbench에서 작업 영역 작업의 렌더링 프로세스를 정의할 때 동일한 문자 ID를 지정합니다.
 
@@ -104,7 +104,7 @@ AEM 작업 공간에서 편지를 렌더링하고 제출하는 작업을 만들�
    활동 정의 대화 상자에서 getLetterInstanceInfo와 같은 적절한 활동을 선택하고 확인을 **클릭합니다**.
 
 1. 애플리케이션을 배포합니다. 메시지가 표시되면 자산을 체크 인하고 저장합니다.
-1. https://의 AEM 양식 작업 영역에 로그인합니다[.]:[port]/lc/content/ws.
+1. https://&#39;의 AEM 양식 작업 영역에 로그인합니다[.]:[port]&#39;/lc/content/ws.
 1. 추가한 작업을 엽니다, CMRenderer. 통신 관리 편지가 나타납니다.
 
    ![cminworkspace](assets/cminworkspace.png)
