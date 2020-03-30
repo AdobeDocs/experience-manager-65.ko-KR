@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -84,7 +84,7 @@ AEM 양식 관리자는 상태 모니터를 사용하여 대기열에 있는 작
 
 **WebLogic에 Java 옵션 추가**
 
-1. 웹 브라우저에서 `https://`*[호스트 이름을&#x200B;]*입력하여 WebLogic 관리 콘솔을`:`*[시작합니다]* `/console` .
+1. 웹 브라우저에 을 입력하여 WebLogic 관리 콘솔을 `https://[host name]:[port]/console` 시작합니다.
 1. WebLogic Server 도메인에 대해 만든 사용자 이름과 암호를 입력하고 변경 센터에서 로그를 클릭하고 잠금 및 편집을 클릭합니다.
 1. 도메인 구조에서 환경 > 서버를 클릭하고 오른쪽 창에서 관리 서버 이름을 클릭합니다.
 1. 다음 화면에서 구성 탭 > 서버 시작 탭을 클릭합니다.
