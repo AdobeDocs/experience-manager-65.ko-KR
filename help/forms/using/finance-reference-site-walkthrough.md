@@ -1,8 +1,8 @@
 ---
 title: We.Finance 참조 사이트 연습
 seo-title: We.Finance 참조 사이트 연습
-description: We.Finance 참조 사이트를 살펴보고 구현된 방법을 이해합니다. We.Finance는 AEM Forms의 주요 기능과 기능을 소개하는 샘플 구현입니다.
-seo-description: We.Finance 참조 사이트를 살펴보고 구현된 방법을 이해합니다. We.Finance는 AEM Forms의 주요 기능과 기능을 소개하는 샘플 구현입니다.
+description: We.Finance 참조 사이트를 살펴보고 구현 방법을 이해합니다. We.Finance는 AEM Forms의 주요 기능과 기능을 소개하는 샘플 구현입니다.
+seo-description: We.Finance 참조 사이트를 살펴보고 구현 방법을 이해합니다. We.Finance는 AEM Forms의 주요 기능과 기능을 소개하는 샘플 구현입니다.
 uuid: 3cc0dd85-63f6-4772-8c00-373bb85b1713
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -91,17 +91,17 @@ Sarah가 모바일 장치에서 신용카드 응용 프로그램에 액세스하
 
 **작동 방식**
 
-지금 **신청** 버튼을 누르면 사라가 신용 카드 신청서를 제출한다. 응용 프로그램은 응용 양식이며 작성 인스턴스에서 검토할 수 `https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html`있습니다.
+지금 **신청** 버튼을 누르면 사라가 신용 카드 신청서를 제출한다. 응용 프로그램은 응용 양식이며 작성 인스턴스에서 검토할 수 `https://[host]:'port'/editor.html/content/forms/af/we-finance/cc-app.html`있습니다.
 
 적응형 양식에서 검토할 수 있는 주요 기능 중 일부는 다음과 같습니다.
 
 * XSD 스키마를 기반으로 합니다.
-* We Finance 테마 A를 사용하여 스타일링 및 레이아웃용 We.Finance 템플릿을 사용하여 만들어집니다. 또한 모바일 탐색을 위해 양식 헤더 레이아웃에서 패널 제목 없이 레이아웃을 사용합니다. 모바일 장치에서 열면 점진적 모바일 레이아웃이 표시됩니다. 의 템플릿과 의 테마를 검토할 `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` 수 `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`있습니다.
-* 여기에는 양식 데이터 모델 서비스를 호출하여 로그인한 사용자의 세부 정보를 미리 채우기 위한 적응형 양식 규칙이 포함되어 있습니다. 또한 양식을 통해 제공되는 소셜 보안 번호나 이메일 주소로 정보를 미리 채우기 위한 서비스도 호출합니다. 양식 데이터 모델 및 해당 서비스를 에서 검토할 수 `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`있습니다.
+* We Finance 테마 A를 사용하여 스타일링 및 레이아웃용 We.Finance 템플릿을 사용하여 만들어집니다. 또한 모바일 탐색을 위해 양식 헤더 레이아웃에서 패널 제목 없이 레이아웃을 사용합니다. 모바일 장치에서 열면 점진적 모바일 레이아웃이 표시됩니다. 의 템플릿과 의 테마를 검토할 `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance` 수 `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`있습니다.
+* 여기에는 양식 데이터 모델 서비스를 호출하여 로그인한 사용자의 세부 정보를 미리 채우기 위한 적응형 양식 규칙이 포함되어 있습니다. 또한 양식을 통해 제공되는 소셜 보안 번호나 이메일 주소로 정보를 미리 채우기 위한 서비스도 호출합니다. 양식 데이터 모델 및 해당 서비스를 에서 검토할 수 `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`있습니다.
 * 다양한 적응형 양식 구성 요소를 사용하여 사용자 응답을 캡처하고, 또한 HTML5 입력 유형을 지원하는 이메일과 같은 구성 요소를 사용합니다.
 * 서명 단계 구성 요소를 사용하여 완성된 양식을 표시하고 양식에서 전자 서명을 허용합니다.
 * [진행 상태 저장] 단추는 사용자에 대한 고유 ID를 생성하고 부분적으로 채워진 응용 프로그램을 AEM 저장소의 노드에 초안으로 저장합니다. 또한 초안 응용 프로그램이 포함된 노드에 대한 링크가 포함된 이메일을 보낼 수 있는 권한을 찾는 대화 상자가 표시됩니다. 확인 대화 상자의 [메일 보내기] 단추를 클릭하면 초안이 들어 있는 노드에 대한 링크가 포함된 이메일이 트리거됩니다.
-* AEM 워크플로우 호출 제출 작업을 사용하여 신용 카드 승인 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
+* AEM 워크플로우 호출 제출 작업을 사용하여 신용 카드 승인 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
 
 스키마, 구성 요소, 규칙, 양식 데이터 모델, 양식 워크플로우 및 양식 작성에 사용되는 제출 작업을 이해하려면 양식을 검토하는 것이 좋습니다.
 
@@ -288,7 +288,7 @@ AEM Forms 서버에서 Target을 구성하려면 AEM [Forms에서 Target 설정 
 1. 도구 **모음에서 [자세히** ]를 클릭하고 **[A/B 테스트 구성]을 선택합니다**. A/B 테스트 구성 페이지가 열립니다.
 
 1. 활동 **이름을 지정합니다**.
-1. 대상 드롭다운 목록에서 양식의 다른 경험을 제공할 대상을 선택합니다. 예를 들어, Chrome **을 사용하는 방문자**.
+1. 대상 드롭다운 목록에서 양식의 여러 경험을 제공할 대상을 선택합니다. 예를 들어, Chrome **을 사용하는 방문자**.
 1. 경험 **A와** B에 대한 경험 배포 필드에서 전체 대상자 간 경험 배포를 결정하기 위해 백분율로 배포를 지정합니다. 예를 들어 경험 A와 B에 각각 40, 60을 지정하면 경험 A는 대상의 40%에게 제공되며 나머지 60%는 경험 B를 보게 됩니다.
 1. 구성을 **클릭합니다**. A/B 테스트 생성을 확인하는 대화 상자가 나타납니다.
 1. 완료를 **클릭합니다**.
@@ -374,20 +374,20 @@ Sarah가 모기지 계산기에 수집한 정보를 바탕으로, 그녀는 몇 
 
 #### 작동 방식 {#how-it-works-7}
 
-&quot; **지금** 신청&quot; 버튼을 누르면 사라가 주택 담보 대출 신청으로 안내된다. 응용 프로그램은 응용 양식이며 작성 인스턴스에서 검토할 수 `https://[host]:[Port]/editor.html/content/forms/af/we-finance/hm-app.html`있습니다.
+&quot; **지금** 신청&quot; 버튼을 누르면 사라가 주택 담보 대출 신청으로 안내된다. 응용 프로그램은 응용 양식이며 작성 인스턴스에서 검토할 수 `https://[host]:'port'/editor.html/content/forms/af/we-finance/hm-app.html`있습니다.
 
 적응형 양식에서 검토할 수 있는 주요 기능 중 일부는 다음과 같습니다.
 
 * XSD 스키마를 기반으로 합니다 `homeMortgageApplication.xsd`.
 * 스타일링을 위해 We Finance 테마 B를 사용하고 레이아웃용 We.Finance 템플릿을 사용하여 만들어집니다. 또한 모바일 탐색을 위해 양식 헤더 레이아웃에서 패널 제목 없이 레이아웃을 사용합니다. 모바일 장치에서 열면 점진적 모바일 레이아웃이 표시됩니다. AEM 작성자 인스턴스의 다음 위치에서 적응형 양식에 사용된 템플릿 및 테마를 검토할 수 있습니다.
 
-   * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
-   * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
+   * `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance`
+   * `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
 
-* 응용 프로그램의 첫 번째 탭인 시작점은 사용자 선택에 따라 옵션을 표시하는 다이내믹 모기지 계산기입니다. 예를 들어, 필드와 값은 구매 및 재재무 옵션에 따라 다릅니다. 이 기능은 표시 숨기기 규칙을 사용하여 수행됩니다. 또한 계속을 클릭하고 계획 탭이 초기화되면 양식 데이터 모델에 구성된 웹 서비스를 호출하여 담보 대출 계획을 가져오고 표시합니다. 양식 데이터 모델 및 구성된 서비스를 에서 검토할 수 `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`있습니다.
+* 응용 프로그램의 첫 번째 탭인 시작점은 사용자 선택에 따라 옵션을 표시하는 다이내믹 모기지 계산기입니다. 예를 들어, 필드와 값은 구매 및 재재무 옵션에 따라 다릅니다. 이 기능은 표시 숨기기 규칙을 사용하여 수행됩니다. 또한 계속을 클릭하고 계획 탭이 초기화되면 양식 데이터 모델에 구성된 웹 서비스를 호출하여 담보 대출 계획을 가져오고 표시합니다. 양식 데이터 모델 및 구성된 서비스를 에서 검토할 수 `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`있습니다.
 * 다양한 적응형 양식 구성 요소를 사용하여 사용자 응답을 캡처하고, 또한 HTML5 입력 유형을 지원하는 이메일과 같은 구성 요소를 사용합니다.
 * 서명 단계 구성 요소를 사용하여 완성된 양식을 표시하고 양식에서 전자 서명을 허용합니다.
-* AEM Workflow 호출 제출 작업을 사용하여 We Finance Home Mortgage AEM 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
+* AEM Workflow 호출 제출 작업을 사용하여 We Finance Home Mortgage AEM 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
 
 스키마, 구성 요소, 규칙, 양식 데이터 모델, 양식 워크플로우 및 양식 작성에 사용되는 제출 작업을 이해하려면 양식을 검토하는 것이 좋습니다.
 
@@ -403,7 +403,7 @@ Sarah가 모기지 계산기에 수집한 정보를 바탕으로, 그녀는 몇 
 
 #### 직접 보기 {#see-it-yourself-6}
 
-Home Mortgage `https://[server]:[port]/content/we-finance/global/en/all-forms.html` Application **에서 지금** 적용 버튼을 클릭합니다. 시작하기 탭에서 세부 사항을 채우고 다른 옵션을 시도해 본 다음 애플리케이션을 제출합니다.
+Home Mortgage `https://'[server]:[port]'/content/we-finance/global/en/all-forms.html` Application **에서 지금** 적용 버튼을 클릭합니다. 시작하기 탭에서 세부 사항을 채우고 다른 옵션을 시도해 본 다음 애플리케이션을 제출합니다.
 
 응용 프로그램에서 유효한 이메일 ID를 지정하여 받은 편지함에서 확인 메일을 수신하도록 하십시오.
 
@@ -459,7 +459,7 @@ Sarah의 담보 대출 신청이 승인되면, 그녀는 시작 키트에 대한
 
 다음 URL의 AEM 게시 인스턴스에서 볼 수 있습니다.
 
-`https://[host]:[port]/content/forms/af/we-finance/mortgage-loan-welcome-kit.html`
+`https://[host]:'port'/content/forms/af/we-finance/mortgage-loan-welcome-kit.html`
 
 ### 사라는 계좌 신고서를 받았다 {#sarah-receives-an-account-statement}
 
@@ -521,13 +521,13 @@ We.Finance, 때때로 We.Finance는 고객이 직면할 수 있는 모든 문제
 1. 시드 데이터 파일의 모든 컨텐츠를 복사합니다.
 1. CRXDE 파섹 `/content/dam/formsanddocuments/we-finance/hm-app/jcr:content/analyticsdatanode/lastsevendays`
 1. 속성 아래의 분석 데이터 필드에서 시드 데이터 파일의 복사한 내용을 붙여 넣습니다.
-1. 이제 홈 모기지 애플리케이션 양식에 대한 분석 보고서를 다시 생성합니다. 시드 데이터가 있는 보고서가 표시됩니다.
+1. 이제 주택 담보 대출 신청 양식에 대한 분석 보고서를 다시 생성합니다. 시드 데이터가 있는 보고서가 표시됩니다.
 
 **대출 신청 A/B 테스트**
 
 We.Finance는 모기지 애플리케이션의 성능을 분석하고 지속적으로 개선하며 AEM Forms와 Target의 통합을 활용하여 A/B 테스트를 만듭니다. 또한 애플리케이션 양식의 다양한 경험을 제공하고 양식 작성 및 제출 시 전환율을 향상시킬 수 있는 경험을 식별할 수 있습니다.
 
-AEM Forms 서버에서 Target을 구성하려면 AEM [Forms에서 Target 설정 및 통합을 참조하십시오](../../forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
+AEM Forms 서버에서 Target을 구성하려면 [AEM Forms에서 Target 설정 및 통합을 참조하십시오](../../forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
 작성 인스턴스에서 다음 단계를 수행하여 We.Finance 모기지 신청 양식에 대한 A/B 테스트 생성을 경험하십시오.
 
@@ -538,7 +538,7 @@ AEM Forms 서버에서 Target을 구성하려면 AEM [Forms에서 Target 설정 
 1. 도구 **모음에서 [자세히** ]를 클릭하고 **[A/B 테스트 구성]을 선택합니다**. A/B 테스트 구성 페이지가 열립니다.
 
 1. 활동 **이름을 지정합니다**.
-1. 대상 드롭다운 목록에서 양식의 다른 경험을 제공할 대상을 선택합니다. 예를 들어, Chrome **을 사용하는 방문자**.
+1. 대상 드롭다운 목록에서 양식의 여러 경험을 제공할 대상을 선택합니다. 예를 들어, Chrome **을 사용하는 방문자**.
 1. 경험 **A와** B에 대한 경험 배포 필드에서 전체 대상자 간 경험 배포를 결정하기 위해 백분율로 배포를 지정합니다. 예를 들어 경험 A와 B에 각각 40, 60을 지정하면 경험 A는 대상의 40%에게 제공되며 나머지 60%는 경험 B를 보게 됩니다.
 1. 구성을 **클릭합니다**. A/B 테스트 생성을 확인하는 대화 상자가 나타납니다.
 1. 완료를 **클릭합니다**.
@@ -618,17 +618,17 @@ Sarah가 모기지 계산기에 수집한 정보를 바탕으로, 그녀는 몇 
 
 #### 작동 방식 {#how-it-works-13}
 
-&quot; **지금** 신청&quot; 버튼을 누르면 사라가 주택 담보 대출 신청으로 안내된다. 응용 프로그램은 응용 양식이며 작성 인스턴스에서 검토할 수 `https://[host]:[Port]/editor.html/content/forms/af/we-finance/ms-dynamics/application-for-home-mortgage.html`있습니다.
+&quot; **지금** 신청&quot; 버튼을 누르면 사라가 주택 담보 대출 신청으로 안내된다. 응용 프로그램은 응용 양식이며 작성 인스턴스에서 검토할 수 `https://[host]:'port'/editor.html/content/forms/af/we-finance/ms-dynamics/application-for-home-mortgage.html`있습니다.
 
 적응형 양식에서 검토할 수 있는 주요 기능 중 일부는 다음과 같습니다.
 
 * XSD 스키마를 기반으로 합니다 `homeMortgageApplication.xsd`.
 * 스타일링을 위해 We Finance 테마 B를 사용하고 레이아웃용 We.Finance 템플릿을 사용하여 만들어집니다. 또한 모바일 탐색을 위해 양식 헤더 레이아웃에서 패널 제목 없이 레이아웃을 사용합니다. 모바일 장치에서 열면 점진적 모바일 레이아웃이 표시됩니다. AEM 작성자 인스턴스의 다음 위치에서 적응형 양식에 사용된 템플릿 및 테마를 검토할 수 있습니다.
 
-   * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
-   * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
+   * `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance`
+   * `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
 
-* 응용 프로그램의 첫 번째 탭인 시작점은 사용자 선택에 따라 옵션을 표시하는 다이내믹 모기지 계산기입니다. 예를 들어, 필드와 값은 구매 및 재재무 옵션에 따라 다릅니다. 이 기능은 표시 숨기기 규칙을 사용하여 수행됩니다. 또한 계속을 클릭하고 계획 탭이 초기화되면 양식 데이터 모델에 구성된 웹 서비스를 호출하여 담보 대출 계획을 가져오고 표시합니다. 양식 데이터 모델 및 구성된 서비스를 에서 검토할 수 `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`있습니다.
+* 응용 프로그램의 첫 번째 탭인 시작점은 사용자 선택에 따라 옵션을 표시하는 다이내믹 모기지 계산기입니다. 예를 들어, 필드와 값은 구매 및 재재무 옵션에 따라 다릅니다. 이 기능은 표시 숨기기 규칙을 사용하여 수행됩니다. 또한 계속을 클릭하고 계획 탭이 초기화되면 양식 데이터 모델에 구성된 웹 서비스를 호출하여 담보 대출 계획을 가져오고 표시합니다. 양식 데이터 모델 및 구성된 서비스를 에서 검토할 수 `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`있습니다.
 * 다양한 적응형 양식 구성 요소를 사용하여 사용자 응답을 캡처하고, 또한 HTML5 입력 유형을 지원하는 이메일과 같은 구성 요소를 사용합니다.
 * 서명 단계 구성 요소를 사용하여 완성된 양식을 표시하고 양식에서 전자 서명을 허용합니다.
 
@@ -648,7 +648,7 @@ We.Finance 홈 보험 시나리오는 다음과 같은 사람을 포함합니다
 * Gloria Rios, We.Finance 신용 카드 및 모기지 책임자
 * Frank De Costa, We.Finance 보험 담당자
 
-다음 인포그래픽은 가정 보험 신청 시나리오의 단계별 작업 과정을 설명합니다.
+다음 인포그래픽은 가정 보험 신청 시나리오의 단계별 워크플로우를 설명합니다.
 
 ![workflow_insurance](assets/workflow_insurance.png)
 
@@ -686,17 +686,17 @@ Sarah로 보낸 뉴스레터는 지정된 이메일 ID로 이메일을 트리거
 
 #### 작동 방식 {#how-it-works-15}
 
-뉴스레터의 **지금** 적용 단추는 Sarah를 We.Finance 포털의 홈 보험 신청으로 안내한다. 응용 프로그램은 응용 양식이며 작성 인스턴스에서 검토할 수 `https://[host]:[Port]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`있습니다.
+뉴스레터의 **지금** 적용 단추는 Sarah를 We.Finance 포털의 홈 보험 신청으로 안내한다. 응용 프로그램은 응용 양식이며 작성 인스턴스에서 검토할 수 `https://[host]:'port'/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`있습니다.
 
 적응형 양식에서 검토할 수 있는 주요 기능 중 일부는 다음과 같습니다.
 
 * XSD 스키마를 기반으로 합니다 `insurance.xsd`.
-* 스타일링을 위해 보험 테마를 사용하여 구축되었으며 모바일 탐색을 위한 양식 헤더 레이아웃에서 패널 제목 없이 레이아웃을 사용합니다. 모바일 장치에서 열면 점진적 모바일 레이아웃이 표시됩니다. 의 템플릿과 의 테마를 검토할 `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` 수 `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`있습니다.
+* 스타일링을 위해 보험 테마를 사용하여 구축되었으며 모바일 탐색을 위한 양식 헤더 레이아웃에서 패널 제목 없이 레이아웃을 사용합니다. 모바일 장치에서 열면 점진적 모바일 레이아웃이 표시됩니다. 의 템플릿과 의 테마를 검토할 `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance` 수 `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`있습니다.
 
-* 여기에는 양식 데이터 모델 서비스를 호출하여 로그인한 사용자의 세부 정보를 미리 채우기 위한 적응형 양식 규칙이 포함되어 있습니다. 또한 양식을 통해 제공되는 소셜 보안 번호나 이메일 주소로 정보를 미리 채우기 위한 서비스도 호출합니다. 양식 데이터 모델 및 해당 서비스를 에서 검토할 수 `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`있습니다.
+* 여기에는 양식 데이터 모델 서비스를 호출하여 로그인한 사용자의 세부 정보를 미리 채우기 위한 적응형 양식 규칙이 포함되어 있습니다. 또한 양식을 통해 제공되는 소셜 보안 번호나 이메일 주소로 정보를 미리 채우기 위한 서비스도 호출합니다. 양식 데이터 모델 및 해당 서비스를 에서 검토할 수 `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`있습니다.
 * 다양한 적응형 양식 구성 요소를 사용하여 사용자 응답을 캡처하고, 또한 HTML5 입력 유형을 지원하는 이메일과 같은 구성 요소를 사용합니다.
 * [진행 상태 저장] 단추는 사용자에 대한 고유 ID를 생성하고 부분적으로 채워진 응용 프로그램을 AEM 저장소의 노드에 초안으로 저장합니다. 또한 초안 응용 프로그램이 포함된 노드에 대한 링크가 포함된 이메일을 보낼 수 있는 권한을 찾는 대화 상자가 표시됩니다. 확인 대화 상자의 [메일 보내기] 단추를 클릭하면 초안이 들어 있는 노드에 대한 링크가 포함된 이메일이 트리거됩니다.
-* AEM Workflow 호출 제출 작업을 사용하여 홈 보험 승인 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
+* AEM Workflow 호출 제출 작업을 사용하여 홈 보험 승인 워크플로우를 트리거합니다. 이 양식에서 사용된 워크플로우를 `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
 
 스키마, 구성 요소, 규칙, 양식 데이터 모델, 양식 워크플로우 및 양식 작성에 사용되는 제출 작업을 이해하려면 양식을 검토하는 것이 좋습니다.
 
@@ -738,7 +738,7 @@ Sarah가 홈 보험 신청서를 제출하면 양식 워크플로우가 트리�
 
 ![we-finance-insurance-workflow-model](assets/we-finance-insurance-workflow-model.png)
 
-Frank는 가정보험 계약을 준비하기 위해 통신 관리를 이용한다. 계약 PDF를 다운로드하여 Sarah의 애플리케이션에 첨부한 다음 계약 보내기를 클릭합니다. 이 워크플로우에서는 서명을 위해 집 보험 계약을 체결한 사라에게 메일을 발송합니다.
+Frank는 가정보험 계약을 준비하기 위해 통신 관리를 이용한다. 계약 PDF를 다운로드하여 Sarah의 애플리케이션에 첨부한 다음 계약 보내기를 클릭합니다. 이 워크플로우에서는 서명을 위한 가정보험 계약 때문에 사라에게 메일을 발송한다.
 
 #### 직접 보기 {#see-it-yourself-13}
 
@@ -774,7 +774,7 @@ We.Finance 자산 관리 시나리오에는 다음과 같은 경우가 포함됩
 
 * We.Finance 고객인 Sarah Rose
 
-자산 관리 연습에서는 We.Finance 고객이 사이트를 사용하여 뮤추얼 펀드 블루 칩 성장 펀드에 대해 배울 수 있는 방법을 설명합니다. 참조 사이트는 대화형 통신을 사용하여 기금에 대한 정보를 표시합니다. 이 정보는 웹과 PDF 형식 모두에서 사용할 수 있습니다. 이 연습은 고객이 PDF 버전의 정보를 동생에게 이메일로 전송함으로써 종료됩니다.
+자산 관리 연습에서는 We.Finance 고객이 사이트를 사용하여 뮤추얼 펀드인 Blue Chip Growth Fund에 대해 배울 수 있는 방법을 설명합니다. 참조 사이트는 대화형 통신을 사용하여 기금에 대한 정보를 표시합니다. 이 정보는 웹과 PDF 형식 모두에서 사용할 수 있습니다. 이 연습은 고객이 PDF 버전의 정보를 동생에게 이메일로 전송함으로써 종료됩니다.
 
 다음 이미지는 자산 관리 연습의 워크플로를 표시합니다.
 
@@ -869,7 +869,7 @@ We.Finance **Auto Insurance Dashboard에 Conrad** Simms(csimms/password)로 로�
 
 참조 사이트는 또한 Microsoft Dynamics를 양식 데이터 모델의 데이터 소스로 사용하는 대화형 통신을 제공합니다. 자동 보험 연습을 위한 대화형 통신을 구성하려면 다음 단계를 수행하십시오.
 
-1. 에 `https://[author]:[port]/crx/de as an administrator`로그인합니다.
+1. 에 `https://[author]:'port'/crx/de as an administrator`로그인합니다.
 1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
 1. Set the value of `FormFieldRequestParameter`to `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. 모두 **저장을 누릅니다**. 참조 사이트는 MS Dynamics를 데이터 소스로 사용하는 대화형 통신을 사용하도록 구성되어 있습니다.
