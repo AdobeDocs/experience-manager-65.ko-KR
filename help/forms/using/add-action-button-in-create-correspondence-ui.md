@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,7 +40,7 @@ Correspondence Management 솔루션을 사용하면 사용자 지정 동작을 �
 
 ### 응답 만들기 사용자 인터페이스에 단추 추가 {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. 관리자로 `https://[server]:[port]/[ContextPath]/crx/de` 이동하여 로그인합니다.
+1. 관리자로 `https://'[server]:[port]'/[ContextPath]/crx/de` 이동하여 로그인합니다.
 1. apps 폴더에서 defaultApp 폴더(구성 폴더에 있음)와 유사한 경로/ `defaultApp` 구조로 명명된 폴더를 만듭니다. 다음 단계에 따라 폴더를 만듭니다.
 
    1. 다음 경로에서 **defaultApp** 폴더를 마우스 오른쪽 버튼으로 클릭하고 Overlay **Node를 선택합니다**.
@@ -51,11 +51,11 @@ Correspondence Management 솔루션을 사용하면 사용자 지정 동작을 �
 
    1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **** 경로:/libs/fd/cm/config/defaultApp/
+      **경로:** /libs/fd/cm/config/defaultApp/
 
-      **** 오버레이 위치:/apps/
+      **오버레이 위치:** /apps/
 
-      **** 일치 노드 유형:선택됨
+      **일치 노드 유형:** 선택됨
 
       ![오버레이 노드](assets/2_defaultappoverlaynode.png)
 
@@ -64,7 +64,7 @@ Correspondence Management 솔루션을 사용하면 사용자 지정 동작을 �
 
 1. /apps 분기 아래의 acmExtensionsConfig.xml 파일(/libs 분기 아래에 있음)을 복사합니다.
 
-   1. &quot;/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml&quot;로 이동
+   1. &quot;/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml&quot;으로 이동
 
    1. acmExtensionsConfig.xml 파일을 마우스 오른쪽 버튼으로 클릭하고 복사를 **선택합니다**.
 
@@ -131,11 +131,11 @@ ACMExtensionsMessages.properties 파일에는 통신 사용자 인터페이스 �
 
 1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-   **** 경로:/libs/fd/cm/config/defaultApp/locale
+   **경로:** /libs/fd/cm/config/defaultApp/locale
 
-   **** 오버레이 위치:/apps/
+   **오버레이 위치:** /apps/
 
-   **** 일치 노드 유형:선택됨
+   **일치 노드 유형:** 선택됨
 
 1. **확인**&#x200B;을 클릭합니다.
 1. 모두 **저장을 클릭합니다**.
@@ -167,7 +167,7 @@ ACMExtensionsMessages.properties 파일에는 통신 사용자 인터페이스 �
 >
 >브라우저 캐시를 지워야 할 수 있습니다.
 
-1. 이동 `https://[host]:[port]/system/console/bundles`. 필요한 경우 관리자로 로그인합니다.
+1. 이동 `https://[host]:'port'/system/console/bundles`. 필요한 경우 관리자로 로그인합니다.
 
 1. Adobe Asset Composer 빌딩 블록 번들을 찾습니다. 번들을 다시 시작합니다.중지를 클릭한 다음 시작을 클릭합니다.
 
@@ -189,7 +189,7 @@ Adobe Asset Composer 빌딩 블록 번들을 다시 시작하면, 사용자 지�
 * 새로 추가된 작업 활성화/비활성화:done by overriding the actionEnabled() function.
 * 사용자가 단추를 클릭할 때의 실제 작업 처리:done by override the implementation of the handleAction() function.
 
-1. 이동 `https://[server]:[port]/[ContextPath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
+1. 이동 `https://'[server]:[port]'/[ContextPath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
 
 1. apps 폴더에서 다음 폴더와 유사한 구조를 가진 CRX의 /apps `js` 분기에 이름을 지정하는 폴더를 만듭니다.
 
@@ -203,11 +203,11 @@ Adobe Asset Composer 빌딩 블록 번들을 다시 시작하면, 사용자 지�
 
    1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **** 경로:/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+      **경로:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
-      **** 오버레이 위치:/apps/
+      **오버레이 위치:** /apps/
 
-      **** 일치 노드 유형:선택됨
+      **일치 노드 유형:** 선택됨
 
    1. **확인**&#x200B;을 클릭합니다.
    1. 모두 **저장을 클릭합니다**.
@@ -325,7 +325,7 @@ Adobe Asset Composer 빌딩 블록 번들을 다시 시작하면, 사용자 지�
 이 시나리오에서 첨부된 components.zip 파일의 일부인 다음 구성 요소를 활성화합니다.
 
 * DSC 구성 요소 jar(DSCSample.jar)
-* 검토 프로세스 LCA에 대한 편지 보내기(SendLetterForReview.lca)
+* 리뷰 프로세스 LCA에 편지 보내기(SendLetterForReview.lca)
 
 components.zip 파일을 다운로드하고 압축 해제하여 DSCSample.jar 및 SendLetterForReview.lca 파일을 가져옵니다. 다음 절차에 명시된 대로 이 파일을 사용하십시오.
 components.zip
@@ -338,7 +338,7 @@ components.zip
 
 LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그인 자격 증명이 필요합니다.
 
-1. 관리자로 `https://[server]:[port]/system/console/configMgr` 이동하여 로그인합니다.
+1. 관리자로 `https://'[server]:[port]'/system/console/configMgr` 이동하여 로그인합니다.
 1. Adobe LiveCycle Client SDK 구성을 찾고 **편집** (편집 아이콘)을 클릭합니다. 구성 패널이 열립니다.
 
 1. 다음 세부 정보를 입력하고 저장을 **클릭합니다**.
@@ -356,7 +356,7 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 >
 >이 프로세스가 수행하는 작업을 보거나 유사한 프로세스를 만들려면 워크벤치가 필요합니다.
 
-1. 관리자로 Livecycle Server 관리자에 로그인합니다 `https:/[lc server]/:[lc port]/adminui`.
+1. 관리자로 Livecycle Server 관리자(으)로 로그인합니다 `https:/[lc server]/:[lc port]/adminui`.
 
 1. 홈 > **서비스 > 애플리케이션 및 서비스 > 애플리케이션 관리로 이동합니다**.
 
@@ -380,7 +380,7 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 
 AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 언급합니다.
 
-1. 관리자로 로그인하여 `https:/[host]/:[port]/system/console/configMgr`로그인합니다.
+1. 관리자로 로그인하여 `https:/[host]:'port'/system/console/configMgr`로그인합니다.
 
 1. Adobe LiveCycle Client SDK **구성을 찾아 클릭합니다**. Adobe LiveCycle Client SDK 구성 패널이 나타납니다.
 1. 서비스 이름 목록에서 + 아이콘을 클릭하고 serviceName SendLetterForReview/SendLetterForReviewProcess **를 추가합니다**.
@@ -413,7 +413,7 @@ AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 언급합니�
 
 1. 구성 파일에 다음 매개 변수를 제공합니다.
 
-   * **crx.serverUrl**=https:/[호스트]/:[port]/[context path][/AEM URL]
+   * **crx.serverUrl**=https:/host:port/[컨텍스트 경로]/[AEM URL]
    * **crx.username**= AEM 사용자 이름
    * **crx.password**= AEM 암호
    * **crx.appRoot**=/content/apps/cm
@@ -421,7 +421,7 @@ AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 언급합니�
    >
    >서버 사이드에서 변경할 때마다 LiveCycle Server를 다시 시작합니다. 고유한 LiveCycle 구성 요소를 만드는 방법에 대한 자세한 내용은 [사용자 정의 DSC 개발을](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)통해 LiveCycle ES 소프트웨어 확장을 참조하십시오.
 
-   DSCSample.jar 파일은 renderLetter API를 사용합니다. renderLetter API에 대한 자세한 내용은 Interface LetterRenderService [를 참조하십시오](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   DSCSample.jar 파일은 renderLetter API를 사용합니다. renderLetter API에 대한 자세한 내용은 Interface [LetterRenderService를 참조하십시오](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### DSC를 LiveCyle로 가져오기 {#import-dsc-to-livecyle}
 
