@@ -10,7 +10,7 @@ topic-tags: integrations
 discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -49,20 +49,20 @@ AEM Forms 추가 기능 패키지 및 Adobe Analytics 계정이 있으면 Adobe 
 
 분석 보고서를 보려면 다음 단계를 수행하십시오.
 
-1. AEM 포털에 로그인합니다. `https://[hostname]:[port]`
+1. AEM 포털에 로그인합니다. `https://[hostname]:'port'`
 1. 양식 **> 양식 및 문서를 클릭합니다**.
 1. 분석 보고서를 볼 양식을 선택합니다.
 1. 자세히 **> 분석 보고서를 선택합니다**.
 
 ![분석 보고서](assets/analyticsreport.png)
 
-**** A.분석 보고서 명령
+**A.** 분석 보고서 명령
 
 AEM Forms에는 양식과 각 패널에 대한 분석 보고서가 아래에 표시된 대로 표시됩니다.
 
 ![적응형 양식의 요약 보고서](assets/analyticsdashboard_callout.png)
 
-************ A.전환 **B.양식 수준 요약** C.**패널 수준 요약** D.방문자 브라우저 - 필터 **E.방문자의 OS - 필터** F.방문자 언어 - 필터
+**A.** 전환 **B.** 양식 수준 요약 **C.** 패널 수준 요약 **D.** 방문자 브라우저 - 필터 **E.** 방문자의 OS - 필터 **F.** 방문자 언어 - 필터
 
 기본적으로 지난 7일 동안의 분석 보고서가 표시됩니다. 지난 15일, 지난 1개월 등에 대한 보고서를 보거나 날짜 범위를 지정할 수 있습니다.
 
