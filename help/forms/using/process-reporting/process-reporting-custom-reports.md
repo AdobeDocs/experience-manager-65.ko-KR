@@ -10,14 +10,14 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # 프로세스 내 사용자 지정 보고서{#custom-reports-in-process-reporting}
 
-QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API 파섹
+QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API를 사용하여 OSGi 서비스를 만들어 사용자 지정 보고서를 만들 수 있습니다.
 
 ## 사용자 지정 보고서를 작성하는 일반 단계 {#generic-steps-to-build-a-custom-report}
 
@@ -32,14 +32,14 @@ QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API 파섹
 
 CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 CRX [QueryBuilder REST 인터페이스를](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)사용하는 방법을 알아봅니다.
 
-1. URL 찾아보기 `https://[server]:[port]/lc/bin/querybuilder.json`
+1. URL 찾아보기 `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. 프로세스 보고 스토리지 노드 구조 및 노드 속성을 기반으로 쿼리를 만듭니다.
 
    선택적 매개 변수를 지정하여 오프셋, 제한, 히트 및 속성을 지정할 수 있습니다. 정적 보고서의 인수를 하드코딩하고 동적 보고서의 경우 UI에서 매개 변수를 가져올 수 있습니다.
 
    모든 프로세스 이름을 가져오려면 쿼리는 다음과 같습니다.
 
-   `https://[Server]:[Port]/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
+   `https://'[server]:[port]'/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ QueryBuilder API를 사용하여 서비스를 만들기 위한 사전 요구 사
     predicateGroup.setAllRequired(true);
    ```
 
-1. 새로 만든 술어 그룹에 조건자를 추가합니다. 유용한 구문 몇 가지는 [JcrBoolPropertyPredicateJcr](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), JcrPropertyPredicateRange [Property](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html)PropertyPropertyPropertyPropertyDate [](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html), DateRangeEapper Decher, Dec Type PredictorEerApper입니다.
+1. 새로 만든 술어 그룹에 조건자를 추가합니다. 유용한 구문 몇 가지는 [JcrBoolPropertyPredicateJcr](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), JcrPropertyPredicateRange [Property](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html)PropertyPropertyPropertyPropertyDate [, DateRangeEapper Decher, Dec Type PredictorEerApper입니다](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
 
    정적 보고서의 경우 조건자를 하드코딩하고, 동적 보고서의 경우 요청에서 예측자를 가져옵니다.
 
