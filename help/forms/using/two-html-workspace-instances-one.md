@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,12 +18,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 AEM Forms의 기본 설치 및 설정을 통해 서버에서 하나의 AEM Forms 작업 영역만 사용할 수 있습니다. 그러나 단일 AEM Forms 서버에 두 개의 서로 다른 AEM Forms 작업 영역 인스턴스를 호스팅해야 할 수 있습니다. 두 인스턴스는 다른 URL로 액세스할 수 있습니다.
 
-AEM Forms 관리자는 작업 영역을 사용자 지정하여 두 개의 다른 URL을 만들고 동일한 서버에서 두 개의 작업 영역을 사용할 수 있도록 합니다. 이 사용자 지정 아티클에서는 두 작업 영역에 `https://[server]:[port]/lc/ws` 및 에서 액세스할 수 `https://[server]:[port]:/lc/ws2`있다고 가정합니다.
+AEM Forms 관리자는 작업 영역을 사용자 지정하여 두 개의 다른 URL을 만들고 동일한 서버에서 두 개의 작업 영역을 사용할 수 있도록 합니다. 이 사용자 지정 아티클에서는 두 작업 영역에 `https://'[server]:[port]'/lc/ws` 및 에서 액세스할 수 `https://'[server]:[port]':/lc/ws2`있다고 가정합니다.
 
 다음 단계에 따라 AEM Forms 작업 영역을 구성합니다.
 
 1. 서버에 AEM Forms 작업 영역의 개발 패키지를 설치합니다. 개발 [패키지를](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)만드는 방법은 개발 패키지를 참조하십시오.
-1. CRXDE Lite에 액세스하여 관리자로 로그인합니다 `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. CRXDE Lite에 액세스하여 관리자로 로그인합니다 `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. /content에 노드를 복사하고 /content에 붙여 넣습니다. 노드 이름을 ws2로 변경합니다. 모두 **[!UICONTROL 저장을 클릭합니다]**. 이 노드의 속성에서 값을 ws2 `sling:resourceType` 로 변경합니다. 모두 **[!UICONTROL 저장을 클릭합니다]**.
 
 1. /libs에서 폴더를 복사하고 /apps에 붙여 넣습니다. 폴더 이름을 ws2로 변경합니다. 모두 **[!UICONTROL 저장을 클릭합니다]**.
