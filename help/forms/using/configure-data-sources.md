@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43780682ba27d9c7d578393df04267ed8be4f1de
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms 데이터 통합을 사용하여 서로 다른 데이터 소스를 구
 
 AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 수 있습니다. 다음을 수행합니다.
 
-1. https://의 AEM 웹 콘솔로 이동합니다[(]:[host]/system/console/configMgr).
+1. https://server:host/system/console/configMgr의 AEM 웹 콘솔로 이동합니다.
 1. Apache Sling **[!UICONTROL 연결 풀링된 DataSource 구성을]** 찾습니다. 을 눌러 편집 모드에서 구성을 엽니다.
 1. 구성 대화 상자에서 다음과 같이 구성할 데이터베이스의 세부 정보를 지정합니다.
 
@@ -47,7 +47,7 @@ AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 
    >
    >    
    >    
-   >    1. https://[server]:[port]/system/console/crypto로 이동합니다.
+   >    1. https://&#39;[server]:[port]&#39;/system/console/crypto로 이동합니다.
    >    1. 일반 **[!UICONTROL 텍스트]** 필드에서 암호화할 암호 또는 문자열을 지정하고 보호를 **[!UICONTROL 클릭합니다]**.
    >    
    >    
@@ -66,7 +66,7 @@ AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 
 
 AEM 웹 콘솔의 사용자 프로필 커넥터 구성을 사용하여 AEM 사용자 프로필을 구성할 수 있습니다. 다음을 수행합니다.
 
-1. https://의 AEM 웹 콘솔로 이동합니다[(]:[host]/system/console/configMgr).
+1. https://&#39;의 AEM 웹 콘솔로[]이동합니다.[port]&#39;system/console/configMgr.
 1. AEM Forms **[!UICONTROL 데이터 통합 - 사용자 프로필 커넥터 구성을]** 찾고 탭하여 편집 모드에서 구성을 엽니다.
 1. 사용자 프로필 커넥터 구성 대화 상자에서 사용자 프로필 속성을 추가, 제거 또는 업데이트할 수 있습니다. 양식 데이터 모델에서 지정된 속성을 사용할 수 있습니다. 다음 형식을 사용하여 사용자 프로필 속성을 지정합니다.
 
