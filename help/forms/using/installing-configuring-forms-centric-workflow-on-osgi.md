@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -55,7 +55,7 @@ OSGi에서 양식 중심의 워크플로우를 설치 및 구성하기 전에 �
 * AEM 인스턴스가 실행 중입니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드에서 서버에서 실행되는 AEM의 복사본입니다. OSGi에서 양식 중심의 워크플로우를 실행하려면 하나 이상의 AEM 인스턴스(작성자 또는 처리)가 필요합니다.
 
    * **작성자**:컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠를 라이브할 준비가 되면 게시 인스턴스에 복제됩니다.
-   * **** 처리 중:처리 인스턴스는 [견고한 AEM 작성자](/help/forms/using/hardening-securing-aem-forms-environment.md) 인스턴스입니다. 작성 인스턴스를 설정하고 설치를 수행한 후에 이를 취소할 수 있습니다.
+   * **처리 중:** 처리 인스턴스는 [견고한 AEM 작성자](/help/forms/using/hardening-securing-aem-forms-environment.md) 인스턴스입니다. 작성 인스턴스를 설정하고 설치를 수행한 후에 이를 취소할 수 있습니다.
 
    * **게시**:인터넷 또는 내부 네트워크를 통해 대중에게 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
 
@@ -140,7 +140,7 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 사항이 있습니다. 필�
 
 모든 작성자 및 게시 인스턴스에 대해 다음 단계를 수행하여 패키지를 화이트리스트합니다.
 
-1. 브라우저 창에서 AEM 구성 관리자를 엽니다. 기본 URL은 https://[server]:[port]/system/console/configMgr입니다.
+1. 브라우저 창에서 AEM 구성 관리자를 엽니다. 기본 URL은 https://&#39;[server]:[port]&#39;/system/console/configMgr입니다.
 1. Deserialization 방화벽 **구성을 검색하고 엽니다**.
 1. sun.util.calendar **패키지를** 화이트리스트 **** 필드에 추가합니다. [저장]을 클릭합니다.
 1. 모든 작성자 및 게시 인스턴스에 대해 1-3단계를 반복합니다.
@@ -161,7 +161,7 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 사항이 있습니다. 필�
 
 1. 레퍼러 필터 서비스를 구성합니다.
 
-   Apache Felix 구성 관리자에 관리자로 로그인합니다. 구성 관리자의 기본 URL은 https://[server]:[port_number]/system/console/configMgr입니다. [ **구성** ] 메뉴에서 [Apache Sling Referrer **필터] 옵션을** 선택합니다. 호스트 허용 필드에 디스패처의 호스트 이름을 입력하여 레퍼러로 허용하고 저장을 **클릭합니다**. 항목의 형식은 `https://[server]:[port]`입니다.
+   Apache Felix 구성 관리자에 관리자로 로그인합니다. 구성 관리자의 기본 URL은 https://&#39;server&#39;:[port_number]/system/console/configMgr입니다. [ **구성** ] 메뉴에서 [Apache Sling Referrer **필터] 옵션을** 선택합니다. 호스트 허용 필드에 디스패처의 호스트 이름을 입력하여 레퍼러로 허용하고 저장을 **클릭합니다**. 항목의 형식은 `https://'[server]:[port]'`입니다.
 
 #### 캐시 구성 {#configure-cache}
 
@@ -172,12 +172,12 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 사항이 있습니다. 필�
 
 적응형 양식 캐시를 구성하려면 다음 단계를 수행하십시오.
 
-1. 의 AEM 웹 콘솔 구성 관리자로 이동합니다 `https://[server]:[port]/system/console/configMgr`.
+1. 의 AEM 웹 콘솔 구성 관리자로 이동합니다 `https://'[server]:[port]'/system/console/configMgr`.
 1. 적응형 **양식 구성** 서비스를 클릭하여 구성 값을 편집합니다. 구성 값 편집 대화 상자에서 적응형 양식 수 필드에 AEM Forms 서버의 인스턴스가 캐싱할 수 있는 최대 양식 또는 문서 **수를 지정합니다** . 기본값은 100입니다. **저장**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >
-   >캐시를 비활성화하려면 [적응형 양식 수] 필드의 값을 **0으로 설정합니다**. 캐시는 재설정되고 캐시 구성을 비활성화하거나 변경하면 모든 양식과 문서가 캐시에서 제거됩니다.
+   >캐시를 비활성화하려면 [적응형 양식 수] 필드의 값을 **0으로 설정합니다**. 캐시는 재설정되며 캐시 구성을 비활성화하거나 변경하면 모든 양식과 문서가 캐시에서 제거됩니다.
 
 #### Adobe Sign 구성 {#configure-adobe-sign}
 
