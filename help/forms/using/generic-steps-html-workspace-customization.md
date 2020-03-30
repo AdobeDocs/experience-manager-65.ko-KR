@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
 
 사용자 지정을 수행하는 일반적인 단계는 다음과 같습니다.
 
-1. CRXDE Lite에 액세스하여 로그인합니다 `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. CRXDE Lite에 액세스하여 로그인합니다 `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. 이름이 `ws`없는 경우 `/apps`에 있는 폴더를 만듭니다. 모두 **[!UICONTROL 저장을 클릭합니다]**.
 1. 액세스 제어 `/apps/ws`탭으로 이동하여 **[!UICONTROL 해당 탭으로 이동합니다]** .
 1. 액세스 **[!UICONTROL 제어]** 목록에서 **[!UICONTROL +]** 을 클릭하여 새 항목을 추가합니다. 다시 **[!UICONTROL +]** 클릭합니다.
@@ -97,6 +97,6 @@ source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
 
 1. 모두 **[!UICONTROL 저장]**, 캐시 지우기 및 AEM Forms 작업 영역 새로 고침을 클릭합니다.
 
-   URL에 액세스하고 관리자/암호 자격 증명으로 `https://[server]:[port]/lc/ws` 로그인합니다. 브라우저가 로 리디렉션됩니다 `https://[server]:[port]/lc/apps/ws/index.html`.
+   URL에 액세스하고 관리자/암호 자격 증명으로 `https://'[server]:[port]'/lc/ws` 로그인합니다. 브라우저가 로 리디렉션됩니다 `https://'[server]:[port]'/lc/apps/ws/index.html`.
 
 [지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
