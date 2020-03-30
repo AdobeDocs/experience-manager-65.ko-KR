@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,7 +28,7 @@ AEM [Forms 작업 영역 사용자 지정을](../../forms/using/generic-steps-ht
 
 예를 들어 위쪽 내비게이션 막대 앵커 텍스트의 글꼴을 Courier New로 변경하려면 다음 단계를 따르십시오.
 
-1. CRXDE Lite에 액세스하여 로그인합니다 `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. CRXDE Lite에 액세스하여 로그인합니다 `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. 다음 중 하나를 수행하십시오.
 
    1. 기존 스타일에서 글꼴 모음을 변경하려면 /apps/ws/css의 newStyle.css 파일에 다음을 추가합니다.
