@@ -10,7 +10,7 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -164,7 +164,7 @@ Adobe Analytics 프레임워크는 Adobe Analytics 변수와 AEM 변수 간의 �
 
    * **Analytics 보고서 동기화 cron**:Adobe Analytics에서 보고서를 가져올 cron 표현식을 지정합니다. 기본값은 0 0 2 ?* *.
 
-   * **** 가져오기 보고서 시간 초과:서버가 분석 보고서에 응답할 때까지 대기할 기간(초)을 지정합니다. 기본 시간은 120초입니다.
+   * **가져오기 보고서 시간 초과:** 서버가 분석 보고서에 응답할 때까지 대기할 기간(초)을 지정합니다. 기본 시간은 120초입니다.
    >[!NOTE]
    >
    >보고서 가져오기 작업을 시간 초과하고 지정된 시간(초)을 경과하는 데 최대 10초가 더 소요될 수 있습니다.
@@ -175,14 +175,14 @@ Adobe Analytics 프레임워크는 Adobe Analytics 변수와 AEM 변수 간의 �
 
 ## 양식 또는 문서에 대한 분석 활성화 {#enabling-analytics-for-a-form-or-document}
 
-1. 에서 AEM 포털에 로그인합니다 `https://[hostname]:[port]`.
+1. 에서 AEM 포털에 로그인합니다 `https://[hostname]:'port'`.
 1. 양식 **> 양식 및 문서를**&#x200B;클릭하고 양식이나 문서를 선택한 다음 분석 **활성화를 클릭합니다**. 분석이 활성화되어 있습니다.
 
    ![양식 또는 문서에 대한 분석 활성화](assets/enable-analytics-1.png)
 
    양식에 대한 분석 활성화
 
-   ******A.Analytics 단추** B를 활성화합니다.선택한 양식
+   **A.** Analytics 단추 **B를 활성화합니다.** 선택한 양식
 
    양식 분석 보고서 보기에 대한 자세한 내용은 AEM Forms [분석 보고서 보기 및 이해를 참조하십시오.](../../forms/using/view-understand-aem-forms-analytics-reports.md)
 
