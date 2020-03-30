@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,9 +33,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 브라우저를 사용하여 웹 페이지에 로그인하려면 문서 보안 URL과 계정이 필요합니다. 사용자의 URL은 관리자의 URL과 다릅니다. 관리자는 사용자 페이지에 로그인하여 정책을 만들 수도 있습니다.
 
-두 개 이상의 문서 보안 설치에 액세스할 수 있는 경우 액세스하려는 문서 보안 인스턴스에 대한 URL이 필요합니다. 이 정보가 없는 경우 관리자에게 문의하십시오. 사용자 페이지의 기본 URL은 https://*[host]*:*[port]*/edc입니다. 경우에 따라 포트 번호가 필요하지 않을 수 있습니다. 자세한 내용은 관리자에게 문의하십시오.
+두 개 이상의 문서 보안 설치에 액세스할 수 있는 경우 액세스하려는 문서 보안 인스턴스에 대한 URL이 필요합니다. 이 정보가 없는 경우 관리자에게 문의하십시오. 사용자 페이지의 기본 URL은 `https://[host]:[port]/edc`입니다. 경우에 따라 포트 번호가 필요하지 않을 수 있습니다. 자세한 내용은 관리자에게 문의하십시오.
 
-관리자의 기본 URL은 https://*[host]*:*[port]*/adminui입니다.
+관리자의 기본 URL은 `https://[host]:[port]/adminui`입니다.
 
 관리자의 경우 설치 중에 기본 수퍼 관리자 계정이 만들어집니다. 문서 보안이 처음 설치되면 이 계정을 사용하여 로그인할 수 있습니다.
 
@@ -45,16 +45,16 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. 브라우저에 URL을 입력합니다.
 
-   문서 보안 URL: `https://`*[호스트&#x200B;]*`:`*[포트]*`/edc`
+   문서 보안 URL: `https://[host]:[port]/edc`
 
-   또는 관리 콘솔 URL: `https://`*[호스트&#x200B;]*`:`*[포트]*`/adminui`
+   또는 관리 콘솔 URL: `https://[host]:[port]/adminui`
 
 1. 로그인 창에서 사용자 이름과 암호를 입력하고 확인을 클릭합니다.
 1. 관리 콘솔에서 서비스 > 문서 보안을 클릭합니다.
 
 >[!NOTE]
 >
->웹 페이지 작업 시 [뒤로] 단추, [새로 고침] 단추, [뒤로] 및 [앞으로] 화살표와 같은 브라우저 단추를 사용하지 마십시오. 이 작업으로 인해 원치 않는 데이터 캡처 및 데이터 표시 문제가 발생할 수 있습니다.
+>웹 페이지 작업 시 [뒤로] 단추, [새로 고침] 단추, [뒤로] 및 [앞으로] 화살표와 같은 브라우저 단추를 사용하지 마십시오. 이 작업으로 인해 원하지 않는 데이터 캡처 및 데이터 표시 문제가 발생할 수 있습니다.
 
 ## 웹 페이지 탐색 {#navigating-the-web-pages}
 
