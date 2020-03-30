@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -156,14 +156,14 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서의 일부인 k
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-&quot;ads-ca.jks&quot;라는 사용자 정의 트러스트 키 저장소 파일은 [appserverdomain]/adobe/[server] 디렉터리에 만들어집니다.
+&quot;ads-ca.jks&quot;라는 사용자 정의 트러스트 키 저장소 파일은 [appserverdomain]/adobe/&#39;server&#39;s 디렉터리에 만들어집니다.
 
 사용자가 만든 사용자 지정 ID 키 저장소 및 사용자 지정 트러스트 키 저장소를 사용하도록 WebLogic을 구성합니다. 또한 키 저장소 파일을 만드는 데 사용되는 고유 이름에 WebLogic Server를 호스팅하는 컴퓨터의 이름이 포함되어 있지 않으므로 WebLogic 호스트 이름 확인 기능을 비활성화합니다.
 
 ## SSL을 사용하도록 WebLogic 구성 {#configure-weblogic-to-use-ssl}
 
 1. 웹 브라우저의 URL 행에 `https://`*[호스트 이름을&#x200B;]*입력하여 WebLogic Server 관리 콘솔을 시작합니다`:7001/console`.
-1. 환경의 도메인 구성에서 서버 > 서버 **>[서버]> 구성 > 일반을 선택합니다**.
+1. 환경의 도메인 구성에서 서버 > **&#39;서버&#39; > 구성 > 일반을 선택합니다**.
 1. [일반]의 [구성]에서 [수신 포트 **활성화** ] 및 [SSL **수신 포트 사용]이** 선택되어 있는지 확인합니다. 활성화되지 않은 경우 다음을 수행합니다.
 
    1. 변경 센터에서 잠금 및 편집을 클릭하여 **선택** 사항과 값을 수정합니다.
@@ -185,7 +185,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서의 일부인 k
 
 1. [신뢰]에서 다음 값을 지정합니다.
 
-   **사용자 지정 Trust Keystore 파일 이름**: `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`여기서 `*[appserverdomain]*` 실제 경로는
+   **사용자 지정 Trust Keystore 파일 이름**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`여기서 `*[appserverdomain]*` 실제 경로는
 
    **사용자 지정 Trust Keystore 유형**:JKS
 
