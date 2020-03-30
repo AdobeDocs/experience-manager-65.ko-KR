@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
 
 ![데이터 통합](assets/data-integeration.png)
 
-Microsoft Dynamics는 CRM(Customer Relationship Management) 및 ERP(Enterprise Resource Planning) 소프트웨어로 고객 계정, 연락처, 리드, 기회 및 사례를 만들고 관리하기 위한 엔터프라이즈 솔루션을 제공합니다. [AEM Forms 데이터](../../forms/using/data-integration.md) 통합은 온라인 및 온-프레미스 Microsoft Dynamics 서버와 양식을 통합하기 위한 OData 클라우드 서비스 구성을 제공합니다. Microsoft Dynamics 서비스에 정의된 개체, 특성 및 서비스를 기반으로 양식 데이터 모델을 만들 수 있습니다. 양식 데이터 모델을 사용하여 Microsoft Dynamics 서버와 상호 작용하는 적응형 양식을 만들어 비즈니스 워크플로우를 수행할 수 있습니다. 예:
+Microsoft Dynamics는 고객 계정, 연락처, 리드, 기회 및 사례를 만들고 관리하기 위한 엔터프라이즈 솔루션을 제공하는 CRM(Customer Relationship Management) 및 ERP(Enterprise Resource Planning) 소프트웨어입니다. [AEM Forms 데이터](../../forms/using/data-integration.md) 통합은 온라인 및 온-프레미스 Microsoft Dynamics 서버와 양식을 통합하기 위한 OData 클라우드 서비스 구성을 제공합니다. Microsoft Dynamics 서비스에 정의된 개체, 특성 및 서비스를 기반으로 양식 데이터 모델을 만들 수 있습니다. 양식 데이터 모델을 사용하여 Microsoft Dynamics 서버와 상호 작용하는 적응형 양식을 만들어 비즈니스 워크플로우를 수행할 수 있습니다. 예:
 
 * Microsoft Dynamics 서버에 데이터를 쿼리하고 적응형 양식 미리 채우기
 * 적응형 양식 제출 시 Microsoft Dynamics에 데이터 쓰기
@@ -55,7 +55,7 @@ Microsoft Dynamics 설정 및 구성을 시작하기 전에 다음을 확인하�
 
 1. Microsoft Azure Active Directory 계정으로 이동하고 등록된 응용 프로그램에 대한 회신 URL **설정에서 다음 클라우드 서비스** 구성 URL을 추가합니다.
 
-   `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+   `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
    ![Azure 디렉토리](assets/azure_directory_new.png)
 
@@ -97,7 +97,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 
    * `Client-ID` 는 모든 GUID 생성기를 사용하여 생성할 수 있는 클라이언트 ID입니다.
    * `redirect-uri` 는 AEM Forms에서 Microsoft Dynamics OData 클라우드 서비스에 대한 URL입니다. AEM Forms 패키지와 함께 설치되는 기본 클라우드 서비스는 다음 URL에 배포됩니다.
-      `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 다음 명령을 실행하여 AD FS 시스템에 액세스 권한을 부여합니다.
 
@@ -140,7 +140,7 @@ AEM Forms 패키지를 설치하면 양식 데이터 모델인 Microsoft **Dynam
 
 양식 데이터 모델을 검토하려면 양식 > 데이터 **[!UICONTROL 통합으로 이동합니다]**. Microsoft **Dynamics FDM을** 선택하고 **편집을 클릭하여** 양식 데이터 모델을 편집 모드로 엽니다. 또는 다음 URL에서 바로 양식 데이터 모델을 열 수 있습니다.
 
-`https://[server]:[port]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+`https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 ![default-fdm-1](assets/default-fdm-1.png)
 
