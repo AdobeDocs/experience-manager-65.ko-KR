@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,8 +24,8 @@ AEM에서 문서 보안 보호 PDF 및 Microsoft Office 문서를 검색할 수 
 ## Before you start {#before-you-start}
 
 * AEM Forms 문서 보안 설치 및 구성
-* deserialization 방화벽 구성의 허용 목록에 sun.util.calendar 패키지를 **추가합니다.** 구성은 에 나와 `https://[server]:[port]/system/console/configMgr`있습니다.
-* 모든 AEM 번들이 실행 중인지 확인합니다. 번들은 에 나와 `https://[server]:[port]/system/console/bundles`있습니다. 모든 번들이 활성화되지 않은 경우 잠시 기다렸다가 번들의 상태를 몇 분 동안 확인합니다.
+* deserialization 방화벽 구성의 허용 목록에 sun.util.calendar 패키지를 **추가합니다.** 구성은 에 나와 `https://'[server]:[port]'/system/console/configMgr`있습니다.
+* 모든 AEM 번들이 실행 중인지 확인합니다. 번들은 에 나와 `https://'[server]:[port]'/system/console/bundles`있습니다. 모든 번들이 활성화되지 않은 경우 잠시 기다렸다가 번들의 상태를 몇 분 동안 확인합니다.
 
 ## AEM Forms 워크플로우(JEE의 AEM Forms) 내에서 보안 연결 설정 {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
@@ -39,9 +39,9 @@ AEM에서 문서 보안 보호 PDF 및 Microsoft Office 문서를 검색할 수 
 1. AEM 구성 관리자를 열고 관리자로 로그인합니다. 기본 URL 파섹
 1. AEM Forms 클라이언트 SDK 번들을 검색하고 엽니다. 다음 속성의 값을 지정합니다.
 
-   * **** 서버 URL:JEE 서버에서 AEM Forms의 HTTP URL을 지정합니다. https를 통한 통신을 활성화하려면 -Djavax.net.ssl.trustStore=&lt;JEE 키 저장소 파일의 AEM Forms 경로> 매개 변수를 사용하여 JEE 서버에서 AEM Forms를 다시 시작합니다.
+   * **서버 URL:** JEE 서버에서 AEM Forms의 HTTP URL을 지정합니다. https를 통한 통신을 활성화하려면 -Djavax.net.ssl.trustStore=&lt;JEE 키 저장소 파일의 AEM Forms 경로> 매개 변수를 사용하여 JEE 서버에서 AEM Forms를 다시 시작합니다.
    * **서비스 이름**:지정된 서비스 목록에 RightsManagementService를 추가합니다.
-   * **** 사용자 이름:JEE 서버의 AEM Forms에서 호출을 시작하는 데 사용할 JEE 계정의 AEM Forms 사용자 이름을 지정합니다. 지정된 계정에는 JEE 서버의 AEM Forms에서 Document Services를 호출하는 권한이 있어야 합니다.
+   * **사용자 이름:** JEE 서버의 AEM Forms에서 호출을 시작하는 데 사용할 JEE 계정의 AEM Forms 사용자 이름을 지정합니다. 지정된 계정에는 JEE 서버의 AEM Forms에서 Document Services를 호출하는 권한이 있어야 합니다.
    * **암호**:사용자 이름 필드에 언급된 JEE 계정의 AEM Forms 암호를 지정합니다.
    **저장**&#x200B;을 클릭합니다. AEM 파섹
 
@@ -51,7 +51,7 @@ AEM에서 문서 보안 보호 PDF 및 Microsoft Office 문서를 검색할 수 
 1. AEM 구성 관리자를 열고 관리자로 로그인합니다. 기본 URL 파섹
 1. AEM Forms 클라이언트 SDK 번들을 검색하고 엽니다. 다음 속성의 값을 지정합니다.
 
-   * **** 서버 URL:JEE 서버에서 AEM Forms의 HTTPS URL을 지정합니다. https를 통한 통신을 활성화하려면 -Djavax.net.ssl.trustStore=&lt;JEE 키 저장소 파일의 AEM Forms 경로> 매개 변수를 사용하여 JEE 서버에서 AEM Forms를 다시 시작합니다.
+   * **서버 URL:** JEE 서버에서 AEM Forms의 HTTPS URL을 지정합니다. https를 통한 통신을 활성화하려면 -Djavax.net.ssl.trustStore=&lt;JEE 키 저장소 파일의 AEM Forms 경로> 매개 변수를 사용하여 JEE 서버에서 AEM Forms를 다시 시작합니다.
    * **양방향 SSL 활성화**:양방향 SSL 활성화 옵션을 활성화합니다.
    * **KeyStore 파일 URL**:키 저장소 파일의 URL을 지정합니다.
    * **TrustStore URL**:truststore 파일의 URL을 지정합니다.
