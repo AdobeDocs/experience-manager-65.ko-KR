@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -34,12 +34,12 @@ AEM 검색은 AEM 자산을 검색 및 찾고 일반 텍스트 파일, Microsoft
 * JEE 서버에서 AEM Forms만 사용하는 경우 인덱서 패키지가 이미 설치되어 있습니다.
 * 모든 번들이 작동 및 실행되고 있는지 확인합니다. 모든 번들이 활성화되지 않은 경우 모든 번들이 실행되고 있을 때까지 기다립니다.
 
-   * OSGi의 AEM Forms의 경우 번들은 https://[server]:[port]/system/console/bundles에 나열됩니다.
-   * JEE의 AEM Forms의 경우 번들은 https://[server]:[port]/[context-path]/system/console/bundles에 나열됩니다. 예: https://localhost:8080/lc/system/console/bundles.
+   * OSGi의 AEM Forms의 경우 번들은 https://&#39;[server]:[port]&#39;/system/console/bundles에 나열됩니다.
+   * JEE의 AEM Forms의 경우 번들은 https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles에 나열됩니다. 예: https://localhost:8080/lc/system/console/bundles.
 
 * sun.util.calendar ** 패키지를 화이트리스트합니다. 패키지를 화이트리스트하려면 다음 단계를 수행하십시오.
 
-   1. AEM 웹 콘솔을 엽니다. URL은 https://[server]:[port]/system/console/configMgr입니다.
+   1. AEM 웹 콘솔을 엽니다. URL은 https://&#39;[server]:[port]&#39;/system/console/configMgr입니다.
    1. Deserialization Firewall **구성을 찾아 엽니다**.
 
    1. sun.util.calendar 패키지를 화이트리스트 클래스 또는 패키지 접두어 필드에 추가하고 저장을 **클릭합니다**.
@@ -53,19 +53,19 @@ AEM 검색은 AEM 자산을 검색 및 찾고 일반 텍스트 파일, Microsoft
 
 #### JEE 관리자 자격 증명에 AEM Forms를 사용하여 Adobe LiveCycle Client SDK 번들 구성 {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
-1. AEM 웹 콘솔을 엽니다. URL은 https://[server]:[port]/system/console/configMgr입니다.
+1. AEM 웹 콘솔을 엽니다. URL은 https://&#39;[server]:[port]&#39;/system/console/configMgr입니다.
 1. Adobe LiveCycle Client SDK **번들을 찾아 엽니다**. 다음 필드에 값을 지정합니다.
 
-   * **** 서버 URL:JEE 서버에서 AEM Forms의 HTTPS URL을 지정합니다. https를 통한 통신을 활성화하려면 -Djavax.net.ssl.trustStore=&lt;JEE 키 저장소 파일의 AEM Forms 경로> 매개 변수를 사용하여 서버를 다시 시작합니다.
+   * **서버 URL:** JEE 서버에서 AEM Forms의 HTTPS URL을 지정합니다. https를 통한 통신을 활성화하려면 -Djavax.net.ssl.trustStore=&lt;JEE 키 저장소 파일의 AEM Forms 경로> 매개 변수를 사용하여 서버를 다시 시작합니다.
    * **서비스 이름**:지정된 서비스 목록에 RightsManagementService를 추가합니다.
-   * **** 사용자 이름:AEM 서버로부터의 호출을 시작하는 데 사용할 JEE 계정의 AEM Forms 사용자 이름을 지정합니다. 지정된 계정에는 JEE 서버의 AEM Forms에서 문서 서비스를 시작할 수 있는 권한이 있어야 합니다.
+   * **사용자 이름:** AEM 서버로부터의 호출을 시작하는 데 사용할 JEE 계정의 AEM Forms 사용자 이름을 지정합니다. 지정된 계정에는 JEE 서버의 AEM Forms에서 문서 서비스를 시작할 수 있는 권한이 있어야 합니다.
    * **암호**:사용자 이름 필드에 언급된 JEE 계정의 AEM Forms 암호를 지정합니다.
    **저장**&#x200B;을 클릭합니다. AEM 파섹
 
 #### 상호 인증을 사용하여 Adobe LiveCycle Client SDK 번들 구성 {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
 1. JEE 파섹 자세한 내용은 CAC 및 [상호 인증을 참조하십시오](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
-1. AEM 웹 콘솔을 엽니다. URL은 https://[server]:[port]/system/console/configMgr입니다.
+1. AEM 웹 콘솔을 엽니다. URL은 https://&#39;[server]:[port]&#39;/system/console/configMgr입니다.
 1. Adobe LiveCycle Client SDK **번들을 찾아 엽니다** . 다음 속성의 값을 지정합니다.
 
    * **서버 URL**:JEE 서버에서 AEM Forms의 HTTPS URL을 지정합니다. https를 통한 통신을 활성화하려면 -Djavax.net.ssl.trustStore=&lt;JEE 키 저장소 파일의 AEM Forms 경로> 매개 변수를 사용하여 AEM 서버를 다시 시작합니다.
