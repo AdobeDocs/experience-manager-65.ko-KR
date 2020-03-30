@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ae69f5bb67d51d759f143a076fef4f5f0375809
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -85,7 +85,7 @@ Process Reporting Services는 AEM Forms 데이터베이스의 데이터를 예�
 1. AEM Forms 서버 인스턴스를 중지합니다.
 1. WebLogic 관리 콘솔에 로그인합니다. WebLogic 관리 콘솔의 기본 주소는 `https://[hostname]:[port]/console`입니다.
 1. 변경 센터에서 잠금 및 **편집을 클릭합니다**.
-1. 도메인 구조에서 **환경** > **서버를** 클릭하고오른쪽 창에서 관리 서버 이름을 클릭합니다.
+1. [도메인 구조]에서 **환경** > **서버를** 클릭하고오른쪽 창에서 관리 서버 이름을 클릭합니다.
 1. 다음 화면에서 구성 탭 > **서버** 시작 **탭을** 클릭합니다.
 1. [인수] 상자에서 JVM 인수를 추가합니다 `-Dreporting.publisher.cron = <expression>`.
 
@@ -108,7 +108,7 @@ ProcessDataStorageProvider 서비스는 ProcessDataPublisher 서비스에서 프
 
 #### 프로세스 보고 저장소 위치를 구성하려면 {#to-configure-the-process-reporting-repository-locations}
 
-1. 관리자 자격 **증명을 사용하여** 관리 콘솔에 로그인합니다. 관리 콘솔의 기본 URL은 `https://[server]:[port]/adminui`
+1. 관리자 자격 **증명을 사용하여** 관리 콘솔에 로그인합니다. 관리 콘솔의 기본 URL은 `https://'[server]:[port]'/adminui`
 1. 홈 > **서비스** **** > **애플리케이션 및 서비스** >**** 서비스 **관리** 프로세스를 열고 서비스DataStorageProvider Service로 이동합니다.
 
    ![process-data-storage-service](assets/process-data-storage-service.png)
@@ -133,7 +133,7 @@ ReportConfiguration 서비스는 프로세스 보고 쿼리 서비스를 구성�
 
 #### To configure the ReportingConfiguration service {#to-configure-the-reportingconfiguration-service}
 
-1. CRX 관리자 **자격 증명을 사용하여** Configuration Manager에 로그인합니다. Configuration Manager의 기본 URL은 `https://[server]:[port]/lc/system/console/configMgr`
+1. CRX 관리자 **자격 증명을 사용하여** Configuration Manager에 로그인합니다. Configuration Manager의 기본 URL은 `https://'[server]:[port]'/lc/system/console/configMgr`
 1. ReportingConfiguration **서비스를** 엽니다.
 1. **레코드 수**
 
@@ -166,7 +166,7 @@ ProcessDataPublisher 서비스는 AEM Forms 데이터베이스에서 프로세�
 
 1. 관리자 자격 **증명을 사용하여** 관리 콘솔에 로그인합니다.
 
-   기본 URL은 `https://[server]:port]/adminui/`입니다.
+   기본 URL은 `https://'server':port]/adminui/`입니다.
 
 1. [홈] > [ **서비스** ] **및** [서비스 **] > [** 서비스&#x200B;**]** Service **Management** 및 Open TheProcessDataPublisherService로 이동합니다.
 
@@ -244,37 +244,37 @@ AEM Forms 환경에는 환경이 설정된 시간의 데이터가 포함됩니�
 
 ![process-reporting-home-screen](assets/process-reporting-home-screen.png)
 
-**** 프로세스 보고 트리 보기:[홈] 화면의 왼쪽에 있는 트리 보기에는 프로세스 보고 모듈에 대한 항목이 포함되어 있습니다.
+**프로세스 보고 트리 보기:** [홈] 화면의 왼쪽에 있는 트리 보기에는 프로세스 보고 모듈에 대한 항목이 포함되어 있습니다.
 
 트리 보기는 다음과 같은 최상위 항목으로 구성됩니다.
 
-**** 보고서:이 항목에는 프로세스 보고와 함께 제공되는 기본 보고서가 포함되어 있습니다.
+**보고서:** 이 항목에는 프로세스 보고와 함께 제공되는 기본 보고서가 포함되어 있습니다.
 
 사전 정의된 보고서에 대한 자세한 내용은 프로세스 [보고에서 사전 정의된 보고서를 참조하십시오](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md).
 
-**** 애드혹 쿼리:이 항목에는 프로세스 및 작업에 대한 필터 기반 검색을 수행하는 옵션이 포함되어 있습니다.
+**애드혹 쿼리:** 이 항목에는 프로세스 및 작업에 대한 필터 기반 검색을 수행하는 옵션이 포함되어 있습니다.
 
 임시 쿼리에 대한 자세한 내용은 프로세스 보고에서 [임시 쿼리를 참조하십시오](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md).
 
-**** 사용자 지정:사용자 지정 노드는 사용자가 만드는 사용자 지정 보고서를 표시합니다.
+**사용자 지정:** 사용자 지정 노드는 사용자가 만드는 사용자 지정 보고서를 표시합니다.
 
 사용자 지정 보고서를 만들고 표시하는 절차는 처리 중인 사용자 [지정 보고서를 참조하십시오](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 
-**** 프로세스 보고 제목 표시줄:프로세스 보고 제목 표시줄에는 사용자 인터페이스에서 작업할 때 사용할 수 있는 몇 가지 일반 옵션이 포함되어 있습니다.
+**프로세스 보고 제목 표시줄:** 프로세스 보고 제목 표시줄에는 사용자 인터페이스에서 작업할 때 사용할 수 있는 몇 가지 일반 옵션이 포함되어 있습니다.
 
-**** 프로세스 보고 제목:프로세스 보고 제목은 제목 표시줄의 왼쪽 모서리에 표시됩니다.
+**프로세스 보고 제목:** 프로세스 보고 제목은 제목 표시줄의 왼쪽 모서리에 표시됩니다.
 
 언제든지 제목을 클릭하여 홈 화면으로 돌아갑니다.
 
-**** 마지막 업데이트 시간:프로세스 데이터는 AEM Forms 데이터베이스에서 예약 기반으로 프로세스 보고 저장소로 게시됩니다.
+**마지막 업데이트 시간:** 프로세스 데이터는 AEM Forms 데이터베이스에서 예약 기반으로 프로세스 보고 저장소로 게시됩니다.
 
 마지막 업데이트 시간은 데이터 업데이트가 프로세스 보고 저장소로 푸시된 마지막 날짜 및 시간을 표시합니다.
 
 데이터 게시 서비스 및 이 서비스를 예약하는 방법에 대한 자세한 내용은 프로세스 [보고 시작](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) 문서의 프로세스 데이터 게시 예약을 참조하십시오.
 
-**** 프로세스 보고 사용자:로그인한 사용자 이름이 마지막 업데이트 시간 오른쪽에 표시됩니다.
+**프로세스 보고 사용자:** 로그인한 사용자 이름이 마지막 업데이트 시간 오른쪽에 표시됩니다.
 
-**** 프로세스 보고 제목 표시줄 드롭다운 목록:프로세스 보고 제목 표시줄의 오른쪽 모서리에 있는 드롭다운 목록에는 다음 옵션이 포함되어 있습니다.
+**프로세스 보고 제목 표시줄 드롭다운 목록:** 프로세스 보고 제목 표시줄의 오른쪽 모서리에 있는 드롭다운 목록에는 다음 옵션이 포함되어 있습니다.
 
 * **[!UICONTROL 동기화]**:포함된 프로세스 보고 저장소를 AEM Forms 데이터베이스와 동기화합니다.
 * **[!UICONTROL 도움말]**:프로세스 보고에 대한 도움말 설명서를 봅니다.
