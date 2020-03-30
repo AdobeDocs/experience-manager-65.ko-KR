@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -215,15 +215,15 @@ Interactive Communication의 텍스트 문서 조각은 다음과 같은 유형�
 
 ![textbackgroundcolorapped-1](assets/textbackgroundcolorapplied-1.png)
 
-기본 색상 팔레트에 있는 기본 색상 A **[를]** 직접 누르거나 **슬라이더 B** 를 **[사용하여 적절한]** 색상 음영을 선택할 수 있습니다.
+[기본 색상] 팔레트에 `**[A]**` 있는 기본 색상을 직접 누르거나 슬라이더를 **사용한** 후 [선택]을 탭하여 해당 색상의 적절한 음영을 선택할 `**[B]**` 수 있습니다.
 
-원하는 경우 고급 탭으로 이동하여 적절한 색조, 밝기 및 채도 **[C를]** 선택하여 정확한 색상을 만든 다음 선택 **[D를]** 눌러 색상을 적용하여 텍스트를 강조 표시할 수도 있습니다.
+원하는 경우 고급 탭으로 이동하여 적절한 색조, 밝기 및 채도를 선택하여 정확한 색상을 `**[C]**` 만든 다음 선택을 눌러 색상을 적용하여 텍스트를 강조 표시할 `**[D]**` 수 있습니다.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
 ### 서식이 지정된 텍스트 붙여넣기 {#paste}
 
-Microsoft® Word 또는 HTML 페이지와 같이 다른 애플리케이션에 있는 텍스트 단락 중 하나를 다시 사용하려면 텍스트를 복사하여 텍스트 편집기에 붙여 넣습니다. 복사한 텍스트의 서식은 텍스트 편집기에 그대로 유지됩니다.
+Microsoft® Word 또는 HTML 페이지와 같은 다른 응용 프로그램에 있는 텍스트 단락 중 하나를 다시 사용하려면 텍스트를 복사하여 텍스트 편집기에 붙여 넣습니다. 복사한 텍스트의 서식은 텍스트 편집기에 그대로 유지됩니다.
 
 하나 이상의 텍스트 단락을 편집 가능한 텍스트 문서 조각에 복사하여 붙여넣을 수 있습니다. 예를 들어 다음과 같은 형식의 사용 가능한 문서 게시판 목록이 포함된 Microsoft® Word 문서가 있을 수 있습니다.
 
@@ -243,7 +243,7 @@ Microsoft® Word 문서의 텍스트를 복사하여 편집 가능한 텍스트 
 
 * 화폐 기호, ¥, 동복음.
 * ∑, √, 및 ^과 같은 수학 기호
-* 및‟&quot;와 같은 구두점 기호
+* 및‟&quot;과 같은 구두점 기호
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 
