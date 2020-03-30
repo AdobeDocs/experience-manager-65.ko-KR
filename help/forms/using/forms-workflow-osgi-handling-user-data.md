@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
 
 ## 사용자 데이터 및 데이터 저장소 {#user-data-and-data-stores}
 
-워크플로우가 트리거되면 워크플로우 인스턴스에 대해 페이로드가 자동으로 생성됩니다. 각 워크플로우 인스턴스에는 고유한 인스턴스 ID와 연결된 페이로드 ID가 할당됩니다. 페이로드에는 워크플로우 인스턴스와 연관된 사용자 및 양식 데이터의 저장소 위치가 포함됩니다. 또한 워크플로우 인스턴스에 대한 초안 및 내역 데이터도 AEM 저장소에 저장됩니다.
+워크플로우가 트리거되면 워크플로우 인스턴스에 대해 페이로드가 자동으로 생성됩니다. 각 워크플로우 인스턴스에는 고유 인스턴스 ID와 연결된 페이로드 ID가 할당됩니다. 페이로드에는 워크플로우 인스턴스와 연관된 사용자 및 양식 데이터의 저장소 위치가 포함됩니다. 또한 워크플로우 인스턴스에 대한 초안 및 내역 데이터도 AEM 저장소에 저장됩니다.
 
 워크플로우 인스턴스의 페이로드, 초안 및 내역이 있는 기본 저장소 위치는 다음과 같습니다.
 
@@ -80,7 +80,7 @@ source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
 
 워크플로우 인스턴스에 대해 저장된 사용자 데이터를 식별하고 액세스하려면 다음 단계를 수행하십시오.
 
-1. AEM 작성자 인스턴스에서 도구 > `https://[server]:[port]/crx/de` 쿼리로 **[!UICONTROL 이동하여]**.
+1. AEM 작성자 인스턴스에서 도구 > `https://'[server]:[port]'/crx/de` 쿼리로 **[!UICONTROL 이동하여]**.
 
    유형 **[!UICONTROL 드롭다운에서]** SQL **[!UICONTROL 2를]** 선택합니다.
 
@@ -133,7 +133,7 @@ source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
 
 1. 실행 중, 일시 중단됨 또는 **부실****상태의 워크플로우 인스턴스에 대해 이**&#x200B;단계를 **수행합니다** .
 
-   1. 관리자 자격 증명으로 이동하여 `https://[server]:[port]/aem/start.html` 로그인합니다.
+   1. 관리자 자격 증명으로 이동하여 `https://'[server]:[port]'/aem/start.html` 로그인합니다.
    1. 도구 > **[!UICONTROL 워크플로우 > 인스턴스로 이동합니다]**.
    1. 사용자에 대한 관련 워크플로우 인스턴스를 선택하고 종료를 눌러 **[!UICONTROL 실행]** 중인 인스턴스를 종료합니다.
    워크플로우 인스턴스 작업에 대한 자세한 내용은 워크플로우 인스턴스 [관리를 참조하십시오](/help/sites-administering/workflows-administering.md).
