@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
 
 ## 사용자 데이터 및 데이터 저장소 {#user-data-and-data-stores}
 
-사용자 관리는 사용자 데이터를 내 SQL, Oracle, MS SQL Server 및 IBM DB2와 같은 데이터베이스에 저장합니다. 또한 AEM 작성자의 Forms 응용 프로그램에서 한 번 이상 로그인한 사용자는 AEM `https://[server]:[host]/lc`리포지토리에 생성됩니다. 따라서 사용자 관리는 다음 데이터 저장소에 저장됩니다.
+사용자 관리는 사용자 데이터를 내 SQL, Oracle, MS SQL Server 및 IBM DB2와 같은 데이터베이스에 저장합니다. 또한 AEM 작성자의 Forms 응용 프로그램에서 한 번 이상 로그인한 사용자는 AEM `https://'[server]:[port]'lc`리포지토리에 생성됩니다. 따라서 사용자 관리는 다음 데이터 저장소에 저장됩니다.
 
 * 데이터베이스
 * AEM 리포지토리
@@ -86,7 +86,7 @@ source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
 
 ### AEM 리포지토리 {#aem-repository}
 
-Forms 응용 프로그램에 한 번 이상 액세스한 사용자에 대한 사용자 관리 데이터는 AEM `https://[server]:[host]/lc` 저장소에도 저장됩니다.
+Forms 응용 프로그램에 한 번 이상 액세스한 사용자에 대한 사용자 관리 데이터는 AEM `https://'[server]:[port]'lc` 저장소에도 저장됩니다.
 
 ## 사용자 데이터 액세스 및 삭제 {#access-and-delete-user-data}
 
@@ -178,14 +178,14 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 #### 사용자 데이터 액세스 {#access-user-data}
 
-AEM 저장소에서 만든 사용자를 보려면 AEM 관리자 자격 증명으로 `https://[server]:[port]/lc/useradmin` 로그인합니다. URL `server` `port` 에는 AEM 작성자 인스턴스의 URL이 있습니다. 여기에서 사용자 이름으로 사용자를 검색할 수 있습니다. 사용자를 두 번 클릭하여 사용자의 속성, 권한 및 그룹과 같은 정보를 봅니다. 사용자의 `Path` 속성은 AEM 저장소에서 만든 사용자 노드의 경로를 지정합니다.
+AEM 저장소에서 만든 사용자를 보려면 AEM 관리자 자격 증명으로 `https://'[server]:[port]'/lc/useradmin` 로그인합니다. URL `server` `port` 에는 AEM 작성자 인스턴스의 URL이 있습니다. 여기에서 사용자 이름으로 사용자를 검색할 수 있습니다. 사용자를 두 번 클릭하여 사용자의 속성, 권한 및 그룹과 같은 정보를 봅니다. 사용자의 `Path` 속성은 AEM 저장소에서 만든 사용자 노드의 경로를 지정합니다.
 
 #### 사용자 데이터 삭제 {#delete-aem}
 
 사용자를 삭제하려면
 
-1. AEM 관리자 자격 증명으로 `https://[server]:[port]/lc/useradmin` 이동합니다.
+1. AEM 관리자 자격 증명으로 `https://'[server]:[port]'/lc/useradmin` 이동합니다.
 1. 사용자를 검색하고 사용자 이름을 두 번 클릭하여 사용자 속성을 엽니다. 속성을 `Path` 복사합니다.
-1. 에서 AEM CRX DELite로 `https://[server]:[port]/lc/crx/de/index.jsp` 이동하여 사용자 경로를 탐색하거나 검색합니다.
+1. 에서 AEM CRX DELite로 `https://'[server]:[port]'/lc/crx/de/index.jsp` 이동하여 사용자 경로를 탐색하거나 검색합니다.
 1. 경로를 삭제하고 [모두 저장] **[!UICONTROL 을]** 클릭하여 AEM 저장소에서 사용자를 영구적으로 삭제합니다.
 
