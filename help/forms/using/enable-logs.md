@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
 
 서버측 로그를 구성하려면 다음 단계를 수행하십시오.
 
-1. 이동 `https://[server]:[port]/system/console/configMgr`. Apace Sling 로깅 *로거 구성* 옵션을 찾아 엽니다. 대화 상자가 나타납니다.
+1. 이동 `https://'[server]:[port]'/system/console/configMgr`. Apace Sling 로깅 *로거 구성* 옵션을 찾아 엽니다. 대화 상자가 나타납니다.
 
    ![ Apace Sling 로깅 로거 구성 옵션 대화 상자](assets/logconfig.png)
 
@@ -130,7 +130,7 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
    <th>설명</th>
   </tr>
   <tr>
-   <td>a</td>
+   <td>관리</td>
    <td>xfa(스크립팅 엔진 관련 로그)</td>
   </tr>
   <tr>
@@ -176,7 +176,7 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
 
 Configuration Manager를 사용하여 로깅을 활성화하면 로깅이 다시 비활성화될 때까지 모든 렌더링 요청에 대해 로그가 생성됩니다.
 
-1. 에서 CQ Configuration Manager에 로그인하고 관리자 자격 증명으로 `https://[server]:[port]/system/console/configMgr` 로그인합니다.
+1. 에서 CQ Configuration Manager에 로그인하고 관리자 자격 증명으로 `https://'[server]:[port]'/system/console/configMgr` 로그인합니다.
 1. 모바일 양식 구성을 검색하고 **클릭합니다**.
 1. 디버그 옵션 텍스트 상자에 이전 섹션에 설명된 대로 로그 구성을 입력합니다(예: **2-a4-b5-c6).**
 
@@ -192,7 +192,7 @@ Configuration Manager를 사용하여 로깅을 활성화하면 로깅이 다시
 
 로그 파일의 위치와 이름을 변경하려면 다음을 수행합니다.
 
-1. Configuration Manager에 관리자로 로그인합니다. Configuration Manager의 기본 URL은 `https://[Server]:[Port]/system/console/configMgr`입니다.
+1. Configuration Manager에 관리자로 로그인합니다. Configuration Manager의 기본 URL은 `https://'[server]:[port]'/system/console/configMgr`입니다.
 1. Apache **Sling 로깅 로거 구성을 클릭합니다**. 대화 상자가 나타납니다.
 
    ![logconfig-1](assets/logconfig-1.png)
