@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,7 +37,7 @@ AEM Forms 작업 영역 사용자 인터페이스를 원하는 언어로 현지�
 다음 단계를 수행하여 언어 새로 만들기 및 브라우저 *로케일* 코드에 대한 지원을 *지금*&#x200B;추가합니다.
 
 1. CRXDE Lite에 로그인합니다.
-CRXDE Lite의 기본 URL은 `https://[server]:[port]/lc/crx/de/index.jsp`입니다.
+CRXDE Lite의 기본 URL은 `https://'[server]:[port]'/lc/crx/de/index.jsp`입니다.
 1. 위치로 이동하여 새 폴더를 `apps/ws/locales` 만듭니다. `nw.`
 1. 파일을 `translation.json`위치에서 `/apps/ws/locales/en-US` 위치로 복사합니다 `/apps/ws/locales/nw` .
 1. 편집을 위해 탐색하고 `/apps/ws/locales/nw` 엽니다 `translation.json` . translation.json 파일을 로케일별로 변경합니다.
@@ -54,7 +54,7 @@ AEM Forms 작업 영역에서는 이미지를 사용하여 카테고리, 큐 및
 
 >[!NOTE]
 >
->브라우저의 브라우저 언어 로케일 코드를 찾으려면 열기 `https://[server]:[port]/lc/libs/ws/Locale.html`.
+>브라우저의 브라우저 언어 로케일 코드를 찾으려면 열기 `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![collections_panels_image](assets/collapsing_panels_image.png)
 
@@ -109,7 +109,7 @@ AEM Forms 작업 영역에서는 이미지를 사용하여 카테고리, 큐 및
 
 Datepicker API를 현지화하려면 개발 패키지가 *필요합니다* . 개발 패키지 만들기에 대한 자세한 내용은 AEM [Forms 작업 영역 코드](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)작성을 참조하십시오.
 
-1. jQuery UI [패키지를](https://jqueryui.com/download/all/)다운로드하고 추출하면 *&lt;extraced jquery UI package>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n로 이동합니다.
+1. jQuery UI [패키지를](https://jqueryui.com/download/all/)다운로드하고 추출하면 *&lt;extraced jquery UI package>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n으로 이동합니다.
 1. 이제 로케일 코드의 jquery.ui.datepicker-nw.js 파일을 apps/ws/js/libs/jqueryi에 복사하고 로케일별 파일 변경을 수행합니다.
 1. 편집할 파일을 `apps/ws/js` 찾아 엽니다 `jquery.ui.datepicker-nw.js` .
 1. main.js 파일에서 파일에 대한 별칭을 `jquery.ui.datepicker-nw.js.` 만드는 코드는 `jquery.ui.datepicker-nw.js` 다음과 같습니다.
