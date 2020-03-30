@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 0a7c243589b410a671674b85d27fad158fe96b2a
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 0a7c243589b410a671674b85d27fad158fe96b2a
 
 AEM 6.3 양식 또는 AEM 6.4 양식에서 AEM 6.5 양식으로 직접 업그레이드할 수 있습니다.
 
-AEM 6.0 양식, **AEM 6.1 양식**&#x200B;및 AEM 6.2 양식에서 **AEM** 6.5 양식으로의 직접 업그레이드 경로는 사용할 수 없습니다. AEM 6.2 [Forms로](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html)중간 [업그레이드하거나](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html)AEM 6.3 Forms [로 업그레이드하거나](/help/forms/using/upgrade.md) AEM 6.4 Forms로업그레이드한 다음 AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms로 업그레이드하십시오.
+AEM 6.0 양식, **AEM 6.1 양식**&#x200B;및 AEM 6.2 양식에서 **AEM** 6.5 양식으로의 직접 업그레이드 경로는 사용할 수 없습니다. AEM 6.2 Forms로 중간 [업그레이드하거나](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html)AEM 6.3 Forms [로](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html)[업그레이드하거나 AEM 6.4 Forms로](/help/forms/using/upgrade.md) 업그레이드한 다음 AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms로 업그레이드하십시오.
 
 AEM 6.3 양식 또는 AEM 6.4 양식에서 AEM 6.5 양식으로 업그레이드하려면 다음을 수행합니다.
 
@@ -38,11 +38,11 @@ AEM 6.3 양식 또는 AEM 6.4 양식에서 AEM 6.5 양식으로 업그레이드�
 
       >[!NOTE]
       >
-      >서버가 실행되고 나면 몇 개의 AEM Forms 번들이 설치 상태로 유지됩니다. 번들 수는 설치 시 다를 수 있습니다. 이러한 번들의 상태를 무시해도 됩니다. 번들은 https://[server]:[port]/system/console/에 나열되어 있습니다.
+      >서버가 실행되고 나면 몇 개의 AEM Forms 번들이 설치 상태로 유지됩니다. 번들 수는 설치 시 다를 수 있습니다. 이러한 번들의 상태를 무시해도 됩니다. 번들은 https://&#39;[server]:[port]&#39;/system/console/에 나열되어 있습니다.
 
 1. AEM Forms 추가 기능 패키지를 설치합니다. 다음 단계는 다음과 같습니다.
 
-   1. AEM 서버에 관리자로 로그인하고 패키지 공유를 엽니다. 패키지 공유의 기본 URL은 입니다 `https://[server]:[port]/crx/packageshare`.
+   1. AEM 서버에 관리자로 로그인하고 패키지 공유를 엽니다. 패키지 공유의 기본 URL은 입니다 `https://'[server]:[port]'/crx/packageshare`.
    1. 패키지 공유에서 **AEM 6.5 양식 추가 기능 패키지를**&#x200B;검색하고 운영 체제에 해당하는 패키지를 클릭한 다음 다운로드를 **클릭합니다**. 라이센스 계약을 읽고 동의한 다음 확인을 **클릭합니다**. 다운로드가 시작됩니다. 다운로드하면 패키지 **옆에** 다운로드된 단어가 나타납니다.
 
       또는 AEM Forms 릴리스에 나열된 하이퍼링크를 [사용하여](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 패키지를 수동으로 다운로드할 수도 있습니다.
@@ -94,13 +94,13 @@ AEM 6.3 양식 또는 AEM 6.4 양식에서 AEM 6.5 양식으로 업그레이드�
 
 1. 서버가 성공적으로 업그레이드되고 모든 데이터도 성공적으로 마이그레이션되며 정상적으로 작동하는지 확인합니다.
 
-   * **** 번들의 상태를 확인합니다.모든 번들이 활성 상태인지 확인합니다.
-   * **** 복제 및 역 복제 확인:마이그레이션된 몇 가지 양식을 게시, 채우기 및 제출합니다. 제출된 데이터도 확인합니다.
-   * **** 관리자 및 개발자 사용자 인터페이스에 대한 액세스 확인:관리 계정에서 AEM 인스턴스에 로그인하고 다음 URL에 대한 액세스 권한이 있는지 확인합니다.
+   * **번들의 상태를 확인합니다.** 모든 번들이 활성 상태인지 확인합니다.
+   * **복제 및 역 복제 확인:** 마이그레이션된 몇 가지 양식을 게시, 채우기 및 제출합니다. 제출된 데이터도 확인합니다.
+   * **관리자 및 개발자 사용자 인터페이스에 대한 액세스 확인:** 관리 계정에서 AEM 인스턴스에 로그인하고 다음 URL에 대한 액세스 권한이 있는지 확인합니다.
 
-      * `https://[server]:[port]/crx/packmgr`
-      * `https://[server]:[port]/crx/de`
-      * `https://[server]:[port]/aem/forms.html/content/dam/formsanddocuments`
+      * `https://'[server]:[port]'/crx/packmgr`
+      * `https://'[server]:[port]'/crx/de`
+      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
    >[!NOTE]
    AEM 6.4 양식에서 crx-repository의 구조가 변경되었습니다. 6.3 양식에서 AEM 6.5 양식으로 업그레이드하는 경우 새로 만드는 사용자 지정을 위해 변경된 경로를 사용하십시오. 변경된 경로의 전체 목록은 AEM의 [양식 리포지토리 재구성을 참조하십시오](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
 
