@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,8 +23,8 @@ source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
 
 AEM Web Configuration Console에서 모바일 양식 구성 **구성 요소를 사용하여 AEM Forms** 캐싱 전략을 구성하고 제어할 수 있습니다.
 
-* (OSGi의 AEM Forms) `https://[server]:[port]/system/console/configMgr`
-* (AEM Forms on JEE) `https://[server]:[port]/lc/system/console/configMgr`
+* (OSGi의 AEM Forms) `https://'[server]:[port]'/system/console/configMgr`
+* (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 캐싱에 사용할 수 있는 옵션은 다음과 같습니다.
 
@@ -131,7 +131,7 @@ HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. 구성은 H
    </Location>
    ```
 
-   crx 서버에 액세스하려면 를 `https://[server]:80`사용합니다. 여기서 는 Apache 서버가 실행 중인 서버의 `server` 이름입니다.
+   crx 서버에 액세스하려면 를 `https://'server':80`사용합니다. 여기서 는 Apache 서버가 실행 중인 서버의 `server` 이름입니다.
 
 ## AEM Forms를 실행하는 서버에서 바이러스 백신 사용 {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -153,9 +153,9 @@ HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. 구성은 H
 
 * **(JEE의 AEM Forms 전용)** 전역 문서 저장소(GDS) 디렉토리. 기본 위치는 다음과 같습니다.
 
-   * (JBoss) [appserver 루트]/서버/[서버]/저장/DocumentStorage
-   * (WebLogic) [appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [appserver root]/installedApps/adobe/[server]/DocumentStorage
+   * (JBoss) [appserver root]/server/&#39;server&#39;/svconcreative/DocumentStorage
+   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+   * (WebSphere) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(JEE의 AEM Forms 전용)** AEM Forms 서버 로그 및 임시 디렉토리 기본 위치는 다음과 같습니다.
 
@@ -164,7 +164,7 @@ HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. 구성은 H
 
 >[!NOTE]
 >
->* GDS 및 임시 디렉토리에 대해 다른 위치를 사용하는 경우 에서 AdminUI를 열고 홈 > 설정 > 핵심 시스템 `https://[server]:[port]/adminui`설정 > 핵심 구성으로 **** 이동하여 사용 중인 위치를 확인합니다.
+>* GDS 및 임시 디렉토리에 대해 다른 위치를 사용하는 경우 에서 AdminUI를 열고 홈 > 설정 > 핵심 시스템 `https://'[server]:[port]'/adminui`설정 > 핵심 구성으로 **** 이동하여 사용 중인 위치를 확인합니다.
 
 * AEM Forms 서버가 제안된 디렉터리를 제외하고도 느리게 수행되는 경우 Java 실행 파일(java.exe)도 제외합니다.
 
