@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 91e85e86-2361-4d1d-aa73-c3cce46ab1f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: e45e335d433f17a48ba1bf27a93c5b1003369512
 
 ---
 
@@ -46,19 +46,19 @@ AEM Forms Document Security는 보안 정책을 적용하는 다양한 도구를
 
 Document Security SDK, Adobe Acrobat, Document Security Extension for Microsoft Office 또는 Portable Protection Library를 사용하여 보안 정책을 적용하고 추적할 수 있습니다.
 
-* **** Document Security SDK:SDK는 기능이 풍부한 클라이언트입니다. Document Security SDK를 사용하여 문서 서버 기능에 액세스하고, 정책으로 보호된 문서를 열고, 사용자 정의 확장, 플러그인 또는 응용 프로그램을 개발할 수 있습니다. 예를 들어 사용자 정의 파일 형식을 보호하기 위한 익스텐션을 개발하거나 SDK를 DLP(Data Loss Prevention) 솔루션과 통합할 수 있습니다. Document Security SDK를 사용하여 개발한 확장 프로그램, 응용 프로그램 및 플러그인은 지정된 AEM Forms 서버로 문서를 전송하고 정책이 서버에 적용됩니다. 또한 AEM Forms CSDK(Document Security Client SDK)는 PPL(Portable Protection Library)을 사용하여 보호된 문서의 보호를 해제할 수 없습니다.
+* **Document Security SDK:** SDK는 기능이 풍부한 클라이언트입니다. Document Security SDK를 사용하여 문서 서버 기능에 액세스하고, 정책으로 보호된 문서를 열고, 사용자 정의 확장, 플러그인 또는 응용 프로그램을 개발할 수 있습니다. 예를 들어 사용자 정의 파일 형식을 보호하기 위한 익스텐션을 개발하거나 SDK를 DLP(Data Loss Prevention) 솔루션과 통합할 수 있습니다. Document Security SDK를 사용하여 개발한 확장 프로그램, 응용 프로그램 및 플러그인은 지정된 AEM Forms 서버로 문서를 전송하고 정책이 서버에 적용됩니다. 또한 AEM Forms CSDK(Document Security Client SDK)는 PPL(Portable Protection Library)을 사용하여 보호된 문서의 보호를 해제할 수 없습니다.
 
    Document Security SDK 파섹 Java SDK 파섹 AEM 지원 [팀에](https://helpx.adobe.com/marketing-cloud/contact-support.html) 문의하여 C++ SDK를 구할 수 있습니다. C++ SDK 파섹 Document Security API [설명서](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) 사이트를 방문하여 SDK 기능을 배우고 사용할 수 있습니다.
 
-* **** Adobe Acrobat:Adobe Acrobat을 사용하면 Microsoft Office, 웹 브라우저 또는 PDF 포맷으로 인쇄할 수 있는 모든 애플리케이션과 같이 널리 사용되는 데스크탑 애플리케이션을 사용하여 만든 PDF 문서에 보안 정책을 적용할 수 있습니다.
+* **Adobe Acrobat:** Adobe Acrobat을 사용하면 Microsoft Office, 웹 브라우저 또는 PDF 포맷으로 인쇄할 수 있는 모든 애플리케이션과 같이 널리 사용되는 데스크탑 애플리케이션을 사용하여 만든 PDF 문서에 보안 정책을 적용할 수 있습니다.
 
    Adobe 웹 사이트에서 Adobe Acrobat을 구입하고 다운로드할 [수 있습니다](https://acrobat.adobe.com/us/en/free-trial-download.html). PDF에 대한 보안 정책 [설정](https://helpx.adobe.com/acrobat/using/setting-security-policies-pdfs.html) 문서는 Adobe Acrobat에서 정책 작성 및 적용에 대한 자세한 정보를 제공합니다.
 
 * **Document Security Extension for Microsoft Office**:Document Security Extension for Microsoft Office를 사용하여 Microsoft Office 프로그램 내에서 미리 정의된 정책을 Microsoft Office 파일에 적용할 수 있습니다. 이 확장 기능을 통해 권한이 있는 사용자만 정책으로 보호된 Microsoft Word, Excel 및 PowerPoint 파일을 사용할 수 있습니다. 플러그인을 설치한 인증된 사용자만 정책으로 보호된 파일을 사용할 수 있습니다.
 
-   Document Security 익스텐션은 Microsoft Office 플러그인으로 사용할 수 있습니다. AEM [지원 팀에](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html) 문의하여 익스텐션을 받을 수 있습니다. 나중에 Document Security Extension for [Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/aem-document-security-extension-help.html) 도움말에서 익스텐션의 설치, 구성 및 사용에 대해 알아볼 수 있습니다.
+   Document Security 익스텐션은 Microsoft Office 플러그인으로 사용할 수 있습니다. AEM [지원 팀에](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html) 문의하여 익스텐션을 받을 수 있습니다. 나중에 Document Security Extension for [Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/download-installer.html) 도움말에서 익스텐션의 설치, 구성 및 사용에 대해 알아볼 수 있습니다.
 
-* **** Portable Protection Library:PPL(Portable Protection Library)은 문서를 AEM Forms 서버로 보내지 않고 로컬에서 문서를 보호합니다. 보안 자격 증명과 정책 세부 사항만 네트워크를 통해 이동합니다. 또한 PPL을 사용하면 로그인한 사용자만 정책 검색 액세스를 제한할 수 있습니다. AEM 사용자에 로그인한 사용자의 컨텍스트에서 정책을 가져올 수 있습니다.
+* **Portable Protection Library:** PPL(Portable Protection Library)은 문서를 AEM Forms 서버로 보내지 않고 로컬에서 문서를 보호합니다. 보안 자격 증명과 정책 세부 사항만 네트워크를 통해 이동합니다. 또한 PPL을 사용하면 로그인한 사용자만 정책 검색 액세스를 제한할 수 있습니다. AEM 사용자에 로그인한 사용자의 컨텍스트에서 정책을 가져올 수 있습니다.
 
    상기와 함께 ReportTable Protection Library에는 Document Security SDK의 모든 기능이 포함되어 있습니다. Document Security SDK를 사용하여 문서 서버 기능에 액세스하고, 정책으로 보호된 문서를 열고, 사용자 정의 확장, 플러그인 또는 응용 프로그램을 개발할 수 있습니다. 또한 PPL(Portable Protection Library)은 AEM Forms CSDK(Document Security Client SDK)를 사용하여 보호된 문서의 보호를 해제할 수 없습니다.
 
@@ -74,7 +74,7 @@ Document Security SDK, Adobe Acrobat, Document Security Extension for Microsoft 
 
 Microsoft Windows 전체 텍스트 검색 엔진(SharePoint Index 서버) 및 Adobe Experience Manager(AEM)는 일반 텍스트 파일, Microsoft Office 문서 및 PDF 문서와 같이 일반적으로 사용되는 문서 형식에서 전체 텍스트 검색을 수행할 수 있습니다. Document Security 인덱서를 사용하여 전체 텍스트 검색 엔진을 사용하여 보호된 PDF 문서를 검색할 수 있습니다.
 
-* **** iFilter 인덱서:iFilter 인덱서를 사용하여 보호된 PDF 문서를 색인화하고 Microsoft Windows 전체 텍스트 검색 엔진(데스크탑 인덱싱 서비스 및 SharePoint Indexserver)을 활성화하여 보호된 PDF 문서를 검색할 수 있습니다. 자세한 내용은 보호된 [문서용 AEM SharePoint IFilter를 참조하십시오](assets/sharepoint-ifilter-doc-security.pdf).
+* **iFilter 인덱서:** iFilter 인덱서를 사용하여 보호된 PDF 문서를 색인화하고 Microsoft Windows 전체 텍스트 검색 엔진(데스크탑 인덱싱 서비스 및 SharePoint Indexserver)을 활성화하여 보호된 PDF 문서를 검색할 수 있습니다. 자세한 내용은 보호된 [문서용 AEM SharePoint IFilter를 참조하십시오](assets/sharepoint-ifilter-doc-security.pdf).
 
-* **** AEM Forms Document Security Indexer:AEM Forms Document Security 인덱서를 사용하여 보호된 PDF 문서를 색인화하고 Adobe Experience Manager를 사용하여 보호된 PDF 문서를 검색할 수 있습니다. 인덱서는 AEM Forms Document Security 서비스의 일부입니다. JEE 설치 관리자의 AEM Forms에 포함되어 있습니다.
+* **AEM Forms Document Security Indexer:** AEM Forms Document Security 인덱서를 사용하여 보호된 PDF 문서를 색인화하고 Adobe Experience Manager를 사용하여 보호된 PDF 문서를 검색할 수 있습니다. 인덱서는 AEM Forms Document Security 서비스의 일부입니다. JEE 설치 관리자의 AEM Forms에 포함되어 있습니다.
 
