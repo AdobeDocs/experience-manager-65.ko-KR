@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -42,7 +42,7 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
 사용자가 편지지 PDF를 다운로드할 수 있도록 통신 관리를 사용자 정의하려면 다음 단계를 완료하십시오.
 
-1. 관리자로 `https://[server]:[port]/[ContextPath]/crx/de` 이동하여 로그인합니다.
+1. 관리자로 `https://'[server]:[port]'/[ContextPath]/crx/de` 이동하여 로그인합니다.
 
 1. 앱 폴더에서 다음 단계를 사용하여 선택 폴더에 있는 항목 폴더와 유사한 경로/구조가 있는 항목이라는 폴더를 만듭니다.
 
@@ -61,11 +61,11 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
    1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **** 경로:/libs/fd/cm/ma/gui/content/cmasets/jcr:content/body/content/header/items/selection/items
+      **경로:** /libs/fd/cm/ma/gui/content/cmasets/jcr:content/body/content/header/items/selection/items
 
-      **** 위치:/apps/
+      **위치:** /apps/
 
-      **** 일치 노드 유형:선택됨
+      **일치 노드 유형:** 선택됨
 
       ![오버레이 노드](assets/2_createnodedownloadflatpdf.png)
 
@@ -79,9 +79,9 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
    1. 노드 만들기 대화 상자에 다음 값이 있는지 확인하고 **확인을 클릭합니다**.
 
-      **** 이름:downloadFlatPDF(또는 이 속성에 지정할 이름)
+      **이름:** downloadFlatPDF(또는 이 속성에 지정할 이름)
 
-      **** 유형:nt:unstructured
+      **유형:** nt:unstructured
 
    1. 새로 만든 노드를 클릭합니다(여기에서 downloadFlatPDF). CRX에 노드의 속성이 표시됩니다.
 
@@ -145,11 +145,11 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
    1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **** 경로:/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **경로:** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **** 위치:/apps/
+      **위치:** /apps/
 
-      **** 일치 노드 유형:선택됨
+      **일치 노드 유형:** 선택됨
 
    1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다. 모두 **저장을 클릭합니다**.
 
@@ -235,11 +235,11 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
    1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **** 경로:/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **경로:** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **** 위치:/apps/
+      **위치:** /apps/
 
-      **** 일치 노드 유형:선택됨
+      **일치 노드 유형:** 선택됨
 
    1. **확인**&#x200B;을 클릭합니다. 폴더 구조는 앱 폴더에 생성됩니다.
 
@@ -251,9 +251,9 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
    1. 노드 만들기 대화 상자에 다음 값이 있는지 확인하고 **확인을 클릭합니다**.
 
-      **** 이름:letterpdfdownloader(또는 이 속성에 지정할 이름)는 고유해야 합니다. 여기에서 다른 이름을 사용하는 경우 formaction.js 파일의 ACTION_URL 변수에서 동일한 이름을 지정하십시오.)
+      **이름:** letterpdfdownloader(또는 이 속성에 지정할 이름)는 고유해야 합니다. 여기에서 다른 이름을 사용하는 경우 formaction.js 파일의 ACTION_URL 변수에서 동일한 이름을 지정하십시오.)
 
-      **** 유형:nt:unstructured
+      **유형:** nt:unstructured
 
    1. 새로 만든 노드를 클릭합니다(여기에서 downloadFlatPDF). CRX에 노드의 속성이 표시됩니다.
 
@@ -349,7 +349,7 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
 일반 PDF를 다운로드할 수 있는 사용자 정의 기능을 추가한 후 다음 단계에 따라 선택한 편지의 일반 PDF 버전을 다운로드할 수 있습니다.
 
-1. 로 `https://[server]:[port]/[ContextPath]/projects.html` 이동하여 로그인합니다.
+1. 로 `https://'[server]:[port]'/[ContextPath]/projects.html` 이동하여 로그인합니다.
 
 1. 양식 **> 문자를 선택합니다**. 통신 관리에서는 시스템에서 사용 가능한 문자를 나열합니다.
 1. 선택을 **클릭한** 다음 문자를 클릭하여 선택합니다.
