@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -302,12 +302,12 @@ AEM Forms 포털 초안 및 제출 구성 요소를 사용하면 양식을 초�
 
 모든 작성자 및 게시 인스턴스에 대해 다음 단계를 수행하여 mysql-connector-java-5.1.39-bin.jar 파일을 설치합니다.
 
-1. com.mysql.jdbc 패키지로 이동하여 `https://[server]:[port]/system/console/depfinder` 검색합니다.
+1. com.mysql.jdbc 패키지로 이동하여 `https://'[server]:[port]'/system/console/depfinder` 검색합니다.
 1. 내보내기 기준 열에서 패키지가 번들에 의해 내보내졌는지 확인합니다.
 
    패키지를 번들에 의해 내보내지 않은 경우 계속 진행합니다.
 
-1. [설치/업데이트]로 `https://[server]:[port]/system/console/bundles` 이동하여 **[!UICONTROL 을 클릭합니다]**.
+1. [설치/업데이트]로 `https://'[server]:[port]'/system/console/bundles` 이동하여 **[!UICONTROL 클릭합니다]**.
 1. 파일 **[!UICONTROL 선택을]** 클릭하고 mysql-connector-java-5.1.39-bin.jar 파일을 찾아 선택합니다. 또한 번들 시작 **[!UICONTROL 및 패키지]** 새로 **[!UICONTROL 고침 확인란을]** 선택합니다.
 1. 설치 **[!UICONTROL 또는 업데이트를 클릭합니다]**. 완료되면 서버를 다시 시작합니다.
 1. (*Windows만*&#x200B;해당) 운영 체제의 시스템 방화벽을 해제합니다.
@@ -399,13 +399,13 @@ Forms 포털의 데이터베이스 구현에서는 추가 메타데이터 테이
 
 1. 2단계에서 만든 폴더에 다음 속성을 추가하고 모두 **[!UICONTROL 저장을 클릭합니다]**.
 
-   * **** 이름:카테고리
+   * **[!UICONTROL 이름:]** 카테고리
 
-   * **** 유형:문자열
+   * **[!UICONTROL 유형:]** 문자열
 
-   * **** 값:fp.validation
+   * **[!UICONTROL 값:]** fp.validation
 
-   * **** 다중 옵션:활성화됨
+   * **[!UICONTROL 다중 옵션:]** 활성화됨
 
 1. 포함 `/libs/fd/af/runtime/clientlibs/guideRuntime`속성으로 이동하여 `fp.validation` 값을 추가합니다.
 
