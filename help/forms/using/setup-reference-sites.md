@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -147,7 +147,7 @@ Adobe Sign 서버와 통신하려면 SSL 구성이 필요합니다. 자세한 �
 
 ## 요일 CQ 링크 외부라이저 구성 구성 {#externalizer}
 
-AEM에서 **Externalizer** 는 리소스 경로(예:/path/to/my/page)를 외부 및 절대 URL(예: https://www.mycompany.com/path/to/my/page)로 미리 구성된 DNS로 경로를 접두사로 설정합니다. URL [외부화를 참조하십시오](/help/sites-developing/externalizer.md).
+AEM에서 **Externalizer** 는 리소스 경로(예:/path/to/my/page)를 외부 및 절대 URL(예: https://www.mycompany.com/path/to/my/page)으로 미리 구성된 DNS로 경로를 접두사로 설정합니다. URL [외부화를 참조하십시오](/help/sites-developing/externalizer.md).
 
 >[!CAUTION]
 >
@@ -220,23 +220,23 @@ AEM Forms 참조 사이트의 경우 AEM DS 설정 서비스에서 처리 서버
 
 패키지를 설치하고 작성자 및 게시 인스턴스를 시작한 후 브라우저에서 다음 URL을 참조하십시오.
 
-* `https://[server]:[port]/wegov`
-* `https://[server]:[port]/wefinance`
+* `https://'[server]:[port]'/wegov`
+* `https://'[server]:[port]'/wefinance`
 
 설치가 성공하면 및 We.Finance 참조 사이트 랜딩 페이지에 액세스할 수 있습니다.
 
 ## (선택 사항) 샘플 데이터를 Microsoft Dynamics로 가져오기 {#optional-import-sample-data-into-microsoft-dynamics}
 
-Microsoft Dynamics의 기록을 사용하도록 가정용 대출 신청서 및 자동 보험 신청 참조 사이트가 구성되어 있습니다. 참조 사이트 패키지는 참조 사이트를 실행하기 위해 Microsoft Dynamics로 가져올 수 있는 사용자 지정 엔터티 및 샘플 레코드를 설치합니다. 샘플 데이터를 마이그레이션하고 설정하려면 다음 단계를 수행하십시오.
+Microsoft Dynamics의 기록을 사용하도록 가정용 대출 신청서 및 자동 보험 신청 참조 사이트가 구성됩니다. 참조 사이트 패키지는 참조 사이트를 실행하기 위해 Microsoft Dynamics로 가져올 수 있는 사용자 지정 엔터티 및 샘플 레코드를 설치합니다. 샘플 데이터를 마이그레이션하고 설정하려면 다음 단계를 수행하십시오.
 
 자동 보험 적용을 위한 사용자 지정 엔티티를 가져오려면 다음을 수행하십시오.
 
-1. AEM **작성자 인스턴스의 WeFinanceAutoInsurance_1_0.zip** 솔루션 패키지를 `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` 다운로드합니다.
+1. AEM **작성자 인스턴스의 WeFinanceAutoInsurance_1_0.zip** 솔루션 패키지를 `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` 다운로드합니다.
 1. Microsoft Dynamics 인스턴스에서 설정 > **솔루션으로 이동하여** 가져오기를 **클릭합니다**. 패키지를 선택하고 가져옵니다.
 
 자동 보험 적용을 위한 사용자 지정 엔티티를 가져오려면 다음을 수행하십시오.
 
-1. AEMFormsFSIResite_ **1_0.zip** 패키지를 `https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`다운로드합니다. 패키지를 선택하고 가져옵니다.
+1. AEMFormsFSIResite_ **1_0.zip** 패키지를 `https://[author]:'port'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`다운로드합니다. 패키지를 선택하고 가져옵니다.
 
 1. Microsoft Dynamics 인스턴스에서 설정 > **솔루션으로 이동하여** 가져오기를 **클릭합니다**. 패키지를 선택하고 가져옵니다.
 
@@ -244,9 +244,9 @@ Microsoft Dynamics의 기록을 사용하도록 가정용 대출 신청서 및 �
 
 1. AEM **작성자 인스턴스의 다음 위치에서 We.Finance Customers.csv, We.Finance Auto Insurance Reneals.csv**&#x200B;및 **home 모기지** 데이터 파일을 다운로드합니다.
 
-   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
-   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
-   * `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
+   * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
+   * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
+   * `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
 1. Microsoft Dynamics 인스턴스에서 다음을 수행합니다.
 
@@ -273,7 +273,7 @@ AEM Forms와 Microsoft Dynamics 간의 통신을 활성화하도록 AEM Forms에
 
 작성자 및 게시 인스턴스 모두에서 다음을 수행합니다.
 
-1. 의 AEM 웹 구성 콘솔로 `https://[server]:[host]/system/console/configMgr`이동합니다.
+1. 의 AEM 웹 구성 콘솔로 `https://'[server]:[port]'system/console/configMgr`이동합니다.
 1. Adobe Sign 구성 **[!UICONTROL 서비스를 찾아 탭하여]** 열어서 구성합니다.
 1. 상태 **[!UICONTROL 업데이트 스케줄러 표현식을]** 0/ **2 * * * ?**&#x200B;로 구성합니다.
 
@@ -301,7 +301,7 @@ AEM Forms와 Microsoft Dynamics 간의 통신을 활성화하도록 AEM Forms에
 
 게시 인스턴스에서 다음을 수행하여 익명 사용자에 대한 액세스를 허용합니다.
 
-1. 의 AEM 웹 구성 콘솔로 `https://[server]:[port]/system/console/configMgr`이동합니다.
+1. 의 AEM 웹 구성 콘솔로 `https://'[server]:[port]'/system/console/configMgr`이동합니다.
 1. Forms Common Configuration **[!UICONTROL Service를]** 찾아 탭하여 열어서 구성합니다.
 1. 모든 사용자에 **[!UICONTROL 대해]** 허용 **[!UICONTROL 필드를 구성합니다]**.
 1. 저장을 **[!UICONTROL 누릅니다]**.
@@ -310,7 +310,7 @@ AEM Forms와 Microsoft Dynamics 간의 통신을 활성화하도록 AEM Forms에
 
 작성자 및 게시 인스턴스 모두에서 다음을 수행합니다.
 
-1. CRXDE로 `https://[server]:[port]/crx/de/index.jsp`이동합니다.
+1. CRXDE로 `https://'[server]:[port]'/crx/de/index.jsp`이동합니다.
 1. /conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile로 **이동하여** Swagger 파일을 엽니다.
 1. 환경에 따라 호스트 및 포트 설정을 업데이트합니다.
 1. 설정을 저장합니다.
@@ -332,7 +332,7 @@ AEM Forms와 Adobe Analytics를 통합하여 고객이 양식 및 문서와 상�
 
 1. AEM Cloud 서비스에서 We.Finance 분석 구성을 사용할 수 있는지 확인합니다. 다음 방법 중 하나로 클라우드 서비스를 찾을 수 있습니다.
 
-   * Tools> **[!UICONTROL Cloud Services>Legacy Cloud Services로]** 이동하거나 https://&lt;host>:&lt;port>/libs/cq/core/content/tools/cloudservices.html로 이동합니다.
+   * Tools> **[!UICONTROL Cloud Services>Legacy Cloud Services로]** 이동하거나 https://&lt;host>:&lt;port>/libs/cq/core/content/tools/cloudservices.html으로 이동합니다.
    * 클라우드 서비스 **[!UICONTROL 페이지의]** Adobe **[!UICONTROL Analytics]** 섹션에서 을 `Show Configurations`클릭합니다. We.Finance 구성을 사용할 수 있습니다. 을 클릭하여 구성을 엽니다. 구성 페이지에서 편집을 **[!UICONTROL 클릭합니다]**. 유효한 회사, 사용자 이름, 공유 암호(암호) 및 데이터 센터를 제공하고 Analytics에 **[!UICONTROL 연결을 클릭합니다]**. 연결 성공 대화 상자가 표시되면 구성 **[!UICONTROL 대화 상자에서]** 확인을 클릭합니다. 분석 및 보고서 구성에 설명된 대로 분석 구성 아래에 [프레임워크를 구성합니다](../../forms/using/configure-analytics-forms-documents.md).
 
 1. https://&lt;*host*>:&lt;*port*>/system/console/configMgr로 이동하여 다음을 수행합니다.
