@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -125,7 +125,7 @@ source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
 
    * 화폐 기호, ¥, 동복음.
    * ∑, √, 및 ^과 같은 수학 기호
-   * 및‟&quot;와 같은 구두점 기호
+   * 및‟&quot;과 같은 구두점 기호
    ![특수 문자](assets/specialcharacters.png)
 
    통신 관리는 210개의 특수 문자를 지원합니다. 관리자는 맞춤화를 통해 추가/사용자 지정 특수 문자 지원을 [추가할 수 있습니다](../../forms/using/custom-special-characters.md).
@@ -134,9 +134,9 @@ source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
 
    ![레터배경 색상](assets/letterbackgroundcolor.png)
 
-   기본 색상 팔레트에 있는 기본 색상 A **[를]** 직접 누르거나 **슬라이더 B** 를 **[사용하여 적절한]** 색상 음영을 선택할 수 있습니다.
+   [기본 색상] 팔레트에 `**[A]**` 있는 기본 색상을 직접 누르거나 슬라이더를 **사용한** 후 [선택]을 탭하여 해당 색상의 적절한 음영을 선택할 `**[B]**` 수 있습니다.
 
-   원하는 경우 고급 탭으로 이동하여 적절한 색조, 밝기 및 채도 **[C를]** 선택하여 정확한 색상을 만든 다음 선택 **[D를]** 눌러 색상을 적용하여 텍스트를 강조 표시할 수도 있습니다.
+   원하는 경우 고급 탭으로 이동하여 적절한 색조, 밝기 및 채도를 선택하여 정확한 색상을 `**[C]**` 만든 다음 선택을 눌러 색상을 적용하여 텍스트를 강조 표시할 `**[D]**` 수 있습니다.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
@@ -315,7 +315,7 @@ Letter 인스턴스는 게시 인스턴스에 저장되고 작성자 인스턴�
 #### 첨부 파일 전달 {#attachmentdelivery}
 
 * 편지 첨부 파일은 PDF에서 게시 프로세스를 사용할 수 있으며 편지 제출 후에 만들어집니다.
-* 서신이 서버측 API를 대화형 또는 비대화형 PDF로 렌더링되면 렌더링된 PDF에 첨부 파일이 PDF 첨부 파일로 포함됩니다.
+* 서신이 서버측 API를 사용하여 인터랙티브한 PDF나 비대화형 PDF로 렌더링되면 렌더링된 PDF에 첨부 파일이 PDF 첨부 파일로 포함됩니다.
 * 서신 템플릿과 연결된 게시 프로세스가 서신 작성 사용자 인터페이스를 사용하여 전송 또는 전체 서신 작업의 일부로 로드되면 첨부 파일은 AttachmentDocs 매개 변수의 List&lt;com.adobe.idp.Document>로 전달됩니다.
 * 이메일 및 인쇄와 같은 기본 제공 메커니즘은 생성된 통신의 PDF와 함께 첨부 파일을 제공합니다.
 
@@ -349,7 +349,7 @@ HTML5 양식의 스크립팅 지원에 대한 자세한 내용은 HTML5 [양식�
 
 문자의 미리 보기 모드를 변경하려면 다음 단계를 완료하십시오.
 
-1. 로 `https://[system]:[port]/system/console/configMgr` 이동하여 필요한 경우 관리자로 로그인합니다.
+1. 로 `https://[system]:'port'/system/console/configMgr` 이동하여 필요한 경우 관리자로 로그인합니다.
 1. [통신 **[!UICONTROL 관리 구성]** ] > [변환 유형 **]** 으로 **이동하여** HTML 변환 **(기본값) 또는 PDF 변환**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
