@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
 적응형 양식이 렌더링되면, 지정된 순서로 다음 매개 변수를 확인하여 요청된 로케일을 식별합니다.
 
 * 요청 매개 `afAcceptLang`변수 사용자의 브라우저 로케일을 무시하려면 `afAcceptLang` 요청 매개 변수를 전달하여 로케일을 강제 적용할 수 있습니다. 예를 들어 다음 URL은 일본어 로케일에서 양식을 강제로 렌더링합니다.
-   `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * 사용자에 대한 브라우저 로케일 집합으로서, `Accept-Language` 헤더를 사용하여 요청에 지정됩니다.
 
@@ -56,7 +56,7 @@ AEM Forms는 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 ### 가이드 현지화 서비스에 로케일 추가 {#add-a-locale-to-the-guide-localization-service-br}
 
-1. 이동 `https://[server]:[port]/system/console/configMgr`.
+1. 이동 `https://'[server]:[port]'/system/console/configMgr`.
 1. 가이드 현지화 서비스 **구성 요소를 편집하려면** 클릭하십시오.
 1. 지원되는 로케일 목록에 추가할 로케일을 추가합니다.
 
@@ -102,7 +102,7 @@ LogMessages.js
 
 1. 의 `<locale>` 속성 값에 를 `languages` 추가합니다 `/etc/languages`.
 
-에 `<locale>` 표시됩니다 `https://[server]:[port]/libs/cq/i18n/translator.html`.
+에 `<locale>` 표시됩니다 `https://'[server]:[port]'/libs/cq/i18n/translator.html`.
 
 ### 서버 다시 시작 {#restart-the-server}
 
