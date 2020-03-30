@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 translation-type: tm+mt
-source-git-commit: 3e83611f6b30cee774b72194bee1d03e323a6a57
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,13 +25,13 @@ source-git-commit: 3e83611f6b30cee774b72194bee1d03e323a6a57
 
 AEM 양식은 다음 오류로부터 안전하게 복구되어야 합니다.
 
-**** 디스크 오류:데이터베이스 컨텐츠를 복구하려면 최신 백업 미디어가 필요합니다.
+**디스크 오류:** 데이터베이스 컨텐츠를 복구하려면 최신 백업 미디어가 필요합니다.
 
-**** 데이터 손상:파일 시스템은 이전 트랜잭션을 기록하지 않으며 시스템은 실수로 필요한 프로세스 데이터를 덮어쓸 수 있습니다.
+**데이터 손상:** 파일 시스템은 이전 트랜잭션을 기록하지 않으며 시스템은 실수로 필요한 프로세스 데이터를 덮어쓸 수 있습니다.
 
-**** 사용자 오류:복구는 데이터베이스에서 사용 가능한 데이터로 제한됩니다. 데이터가 저장되고 사용 가능한 경우 복구가 간소화됩니다.
+**사용자 오류:** 복구는 데이터베이스에서 사용 가능한 데이터로 제한됩니다. 데이터가 저장되고 사용 가능한 경우 복구가 간소화됩니다.
 
-**** 정전, 시스템 충돌:파일 시스템 API 파섹 정전 또는 시스템 충돌이 발생하면 데이터베이스에 저장된 문서 컨텐츠가 파일 시스템에 저장된 컨텐츠보다 최신 상태가 될 수 있습니다.
+**정전, 시스템 충돌:** 파일 시스템 API 파섹 정전 또는 시스템 충돌이 발생하면 데이터베이스에 저장된 문서 컨텐츠가 파일 시스템에 저장된 컨텐츠보다 최신 상태가 될 수 있습니다.
 
 롤링 백업 모드를 사용하는 경우 복구 후에도 여전히 백업 모드에 있습니다. 스냅샷 백업 모드를 사용하는 경우 복구 후 백업 모드가 아닙니다.
 
@@ -67,17 +67,17 @@ AEM 양식은 다음 오류로부터 안전하게 복구되어야 합니다.
    >
    >/restore 디렉토리가 이미 있는 경우 최신 데이터가 들어 있는 /backup 디렉토리의 이름을 바꾸기 전에 해당 디렉토리를 백업한 후 삭제합니다.
 
-   * (JBoss) 이름 `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` 바꾸기:
+   * (JBoss) 이름 `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` 바꾸기:
 
-      `[appserver root]/server/[server]/svcnative/DocumentStorage/restore`.
+      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
-   * (WebLogic) 이름 `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` 바꾸기:
+   * (WebLogic) 이름 `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` 바꾸기:
 
-      `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/restore`.
+      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * (WebSphere) 이름 `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` 바꾸기:
+   * (WebSphere) 이름 `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` 바꾸기:
 
-      `[appserver root]/installedApps/adobe/[server]/DocumentStorage/restore`.
+      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
 1. AEM 양식의 기존 설치에서 컨텐츠 스토리지 루트 디렉토리의 컨텐츠를 먼저 삭제한 다음 독립형 환경 또는 클러스터된 환경에 대한 작업을 수행하여 컨텐츠를 복구하여 컨텐츠 저장소 루트 디렉토리를 복구합니다.
 
@@ -85,9 +85,9 @@ AEM 양식은 다음 오류로부터 안전하게 복구되어야 합니다.
    >
    >컨텐츠 저장소 루트 디렉토리 백업은 컨텐츠 서비스(더 이상 사용되지 않음) 구성 중에 설정된 대로 컨텐츠 저장소 루트 디렉토리 위치로 복원되어야 합니다.
 
-   **** 독립 실행형:복구 프로세스 중에 백업된 모든 디렉토리를 복원합니다. 이러한 디렉토리가 복원되면 /backup-lucene-indexes 디렉토리가 있는 경우 이름을 /lucene-indexes로 변경합니다. 그렇지 않으면 lucene-indexes 디렉토리가 이미 존재해야 하며 작업이 필요하지 않습니다.
+   **독립 실행형:** 복구 프로세스 중에 백업된 모든 디렉토리를 복원합니다. 이러한 디렉토리가 복원되면 /backup-lucene-indexes 디렉토리가 있는 경우 이름을 /lucene-indexes로 변경합니다. 그렇지 않으면 lucene-indexes 디렉토리가 이미 존재해야 하며 작업이 필요하지 않습니다.
 
-   **** 클러스터됨:복구 프로세스 중에 백업된 모든 디렉토리를 복원합니다. 인덱스 루트 디렉토리를 복원하려면 클러스터의 각 노드에서 다음 단계를 수행하십시오.
+   **클러스터됨:** 복구 프로세스 중에 백업된 모든 디렉토리를 복원합니다. 인덱스 루트 디렉토리를 복원하려면 클러스터의 각 노드에서 다음 단계를 수행하십시오.
 
    * 색인 루트 디렉터리의 모든 콘텐츠를 삭제합니다.
    * /backup-lucene-indexes 디렉토리가 있는 경우 Content Storage *Root 디렉토리*/backup-lucene-indexes 디렉토리의 컨텐츠를 Index Root *디렉토리에 복사하고 Content Storage Root 디렉토리*/backup-lucene-indexes디렉토리를 삭제합니다.
