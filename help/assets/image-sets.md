@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4f5f6cc88bc0408af117ad5760d4313c9f7d54b9
+source-git-commit: 45de0f9d9570d64cacf7009d64072858012869a0
 
 ---
 
@@ -179,7 +179,7 @@ source-git-commit: 4f5f6cc88bc0408af117ad5760d4313c9f7d54b9
 
 * 개별 자산의 속성을 엽니다. 속성은 선택한 자산이 참조되는 세트 또는 의 구성원을 나타냅니다. 세트 이름을 클릭하여 전체 세트를 봅니다.
 
-   ![6_5_imageset-assets 속성](assets/6_5_imageset-assetproperties.png)
+   ![6_5_imageset-assets 속성](assets/6_5_imageset-assetproperties2.png)
 
 * 세트의 멤버 이미지에서 자산이 속하는 세트를 표시하려면 **[!UICONTROL** 세트] 메뉴를 선택합니다.
 
