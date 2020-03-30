@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -55,7 +55,7 @@ HTML5 양식은 조각과 이미지에 대한 참조가 누락된 템플릿을 �
 
 양식에 포함된 업데이트나 양식 내에 사용된 자산이 있는 경우 양식 캐시 구성 요소는 이를 감지하고 해당 특정 양식에 대한 캐시가 무효화됩니다. Forms OSGi 서비스가 처리를 완료하면 Profile Renderer jsp가 이 양식에 JavaScript 라이브러리 참조 및 스타일링을 추가하고 클라이언트에 대한 응답을 반환합니다. Apache와 같은 일반적인 웹 [서버를](https://httpd.apache.org/) HTML 압축을 사용하는 데 사용할 수 있습니다. 웹 서버는 응답 크기, 네트워크 트래픽 및 서버와 클라이언트 시스템 간의 데이터를 스트리밍하는 데 필요한 시간을 크게 줄입니다.
 
-사용자가 양식을 제출하면 브라우저는 JSON 형식의 양식 상태를 [전송 서비스 프록시로](../../forms/using/service-proxy.md)전송합니다.그런 다음 전송 서비스 프록시는 JSON 데이터를 사용하여 데이터 XML을 생성하고 해당 데이터 XML을 전송하여 종단점을 제출합니다.
+사용자가 양식을 제출하면 브라우저는 JSON 형식의 양식 상태를 [전송 서비스 프록시로](../../forms/using/service-proxy.md)전송합니다.전송 서비스 프록시는 JSON 데이터를 사용하여 데이터 XML을 생성하고 해당 데이터 XML을 전송하여 종단점을 제출합니다.
 
 ## 구성 요소 {#components}
 
@@ -110,7 +110,7 @@ HTML5 양식은 LRU 전략을 사용하여 메모리 내 캐싱을 수행합니�
 
 구성 서비스를 사용하면 HTML5 양식에 대한 구성 매개 변수와 캐시 설정을 조정할 수 있습니다.
 
-이러한 설정을 업데이트하려면 CQ Felix Admin Console(https://&lt;[server]:[port]/system/console/configMgr에서 사용 가능)으로 이동하여 모바일 양식 구성을 검색하고 선택합니다.
+이러한 설정을 업데이트하려면 CQ Felix Admin Console(https://&lt;&#39;[server]:[port]&#39;/system/console/configMgr에서 사용 가능)으로 이동하여 모바일 양식 구성을 검색하고 선택합니다.
 
 구성 서비스를 사용하여 캐시 크기를 구성하거나 캐시를 비활성화할 수 있습니다. 디버그 옵션 매개 변수를 사용하여 디버깅을 활성화할 수도 있습니다. 양식 디버깅에 대한 자세한 내용은 HTML5 [양식](/help/forms/using/debug.md)디버깅을 참조하십시오.
 
@@ -173,7 +173,7 @@ Sling 패키지에는 프로필 및 프로필 렌더러와 관련된 컨텐츠�
 
 #### 프로필 렌더러 {#profile-renderers}
 
-프로필 노드에는 값 xfaforms/ **profile** 의 sling:resourceSuperType 속성이 **있습니다**. 이 속성은 내부적으로 /libs/xfaforms/profile **** 폴더에 있는 프로필 노드의 sling 스크립트에 요청을 전송합니다. 이러한 스크립트는 HTML 양식과 필수 JS/CSS 객체를 모두 취합하기 위한 컨테이너인 JSP 페이지입니다. 페이지에는 다음에 대한 참조가 포함되어 있습니다.
+프로필 노드에는 값 xfaforms/profile **의** sling:resourceSuperType 속성이 **있습니다**. 이 속성은 내부적으로 /libs/xfaforms/profile **** 폴더에 있는 프로필 노드의 sling 스크립트에 요청을 전송합니다. 이러한 스크립트는 HTML 양식과 필수 JS/CSS 객체를 모두 취합하기 위한 컨테이너인 JSP 페이지입니다. 페이지에는 다음에 대한 참조가 포함되어 있습니다.
 
 * **xfaforms.I18N.&lt;locale>**:이 라이브러리에는 지역화된 데이터가 포함되어 있습니다.
 * **xfaforms.profile**:이 라이브러리에는 XFA 스크립팅 및 레이아웃 엔진에 대한 구현이 포함되어 있습니다.
