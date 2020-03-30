@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,13 +31,13 @@ source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
 
 적응형 양식 캐시를 구성하려면 다음 단계를 수행하십시오.
 
-1. https://의 AEM 웹 콘솔 구성[관리자로 이동합니다].[port]/system/console/configMgr.
+1. https://&#39;의 AEM 웹 콘솔 구성[관리자로]이동합니다.[server]:port&#39;/system/console/configMgr.
 1. 적응형 **양식 및 대화형 통신 웹 채널 구성을** 클릭하여 구성 값을 편집합니다.
 1. 구성 값 편집 대화 상자에서 적응형 양식 수 필드에 AEM Forms 서버의 인스턴스가 캐싱할 수 있는 최대 양식 또는 문서 **수를 지정합니다** . 기본값은 100입니다.
 
    >[!NOTE]
    >
-   >캐시를 비활성화하려면 [적응형 양식 수] 필드의 값을 **0으로 설정합니다**. 캐시는 재설정되고 캐시 구성을 비활성화하거나 변경하면 모든 양식과 문서가 캐시에서 제거됩니다.
+   >캐시를 비활성화하려면 [적응형 양식 수] 필드의 값을 **0으로 설정합니다**. 캐시는 재설정되며 캐시 구성을 비활성화하거나 변경하면 모든 양식과 문서가 캐시에서 제거됩니다.
 
    ![적응형 양식 HTML 캐시를 위한 구성 대화 상자](assets/cache-configuration-edit.png)
 
