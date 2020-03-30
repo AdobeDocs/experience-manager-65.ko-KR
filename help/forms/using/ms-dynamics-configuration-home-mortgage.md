@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -38,7 +38,7 @@ Dynamics 365를 설정하고 구성하기 전에 다음을 보유하십시오.
 
 1. 작성 인스턴스에서 다음 페이지로 이동합니다.
 
-   https://[드라이버]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html
+   `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Home Mortgage 계산기로 스크롤합니다.
 1. 오른쪽 열(계산기) 패널을 강조 표시한 다음 을 눌러 팝업 메뉴를 표시합니다. 팝업 메뉴에서 구성을 누릅니다. AEM 양식 컨테이너 편집 대화 상자가 나타납니다.
@@ -62,7 +62,7 @@ Dynamics 365를 설정하고 구성하기 전에 다음을 보유하십시오.
 
    1. 다음 위치에서 패키지를 다운로드합니다.
 
-      `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
+      `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
    1. 솔루션 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다. Microsoft® Dynamics 인스턴스에서 설정 > **솔루션으로** 이동한 **다음** 가져오기를 **누릅니다**.
 
@@ -70,7 +70,7 @@ Dynamics 365를 설정하고 구성하기 전에 다음을 보유하십시오.
 
    1. 다음 위치에서 패키지를 다운로드합니다.
 
-      `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
+      `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
    1. 패키지를 Microsoft® Dynamics 인스턴스로 가져옵니다. Microsoft® Dynamics 인스턴스에서 판매 > **연락처로** 이동한 **다음** 데이터 **가져오기를**&#x200B;누릅니다.
 
