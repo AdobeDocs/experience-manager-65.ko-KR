@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. 웹 브라우저에서 다음을 입력합니다.
 
-   `https://`*[hostname ]*`:`*[포트]* 관리자 사용자 이름 `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[]*`&password=`*[암호]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
    브라우저 창에 &quot;이제 일시 중지됨&quot; 메시지가 표시됩니다.
 
@@ -40,7 +40,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. 웹 브라우저에서 다음을 입력합니다.
 
-   `https://`*[hostname]:[port ]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[administrator 사용자 이름]* `&password=`*[암호&#x200B;]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=[administrator username]&password=[password]`
 
    브라우저 창에 상태가 표시됩니다. 상태가 &quot;true&quot;이면 서버가 유지 관리 모드에서 실행 중임을 나타내고, &quot;false&quot;는 서버가 유지 관리 모드에 있지 않음을 나타냅니다.
 
@@ -48,7 +48,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. 웹 브라우저에서 다음을 입력합니다.
 
-   `https://`*[hostname]:[port ]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[administrator 사용자 이름]* `&password=`*[암호&#x200B;]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=[administrator username]&password=[password]`
 
    브라우저 창에 &quot;지금 실행 중&quot; 메시지가 표시됩니다.
 
