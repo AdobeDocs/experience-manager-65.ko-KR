@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,8 +31,8 @@ source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
 1. [응용 **[!UICONTROL 양식 이벤트]** ] 상자에서 1이나 TRUE를 지정하여 양식을 브라우저에 로드할 때 자동으로 양식 저장을 시작합니다. 이벤트에 대한 조건부 표현식을 지정할 수도 있습니다. 이 표현식은 트리거되고 true가 반환되면 양식의 내용 저장을 시작합니다.
 1. 트리거를 지정합니다. 자동 저장은 구성에 따라 트리거됩니다. 옵션은 다음과 같습니다.
 
-   * **** 시간 기반:특정 시간 간격에 따라 컨텐츠 저장을 시작하는 옵션을 선택합니다.
-   * **** 이벤트 기반:이벤트가 트리거될 때 컨텐츠 저장을 시작하는 옵션을 선택합니다.
+   * **[!UICONTROL 시간 기반:]** 특정 시간 간격에 따라 컨텐츠 저장을 시작하는 옵션을 선택합니다.
+   * **[!UICONTROL 이벤트 기반:]** 이벤트가 트리거될 때 컨텐츠 저장을 시작하는 옵션을 선택합니다.
    트리거를 선택하면 전략 구성 상자가 활성화됩니다. 전략 구성 상자를 사용하여 다음을 수행할 수 있습니다.
 
    * 시간 기반 **** 트리거를 선택하는 경우 시간 간격을 지정합니다.
@@ -53,7 +53,7 @@ source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
    >
    >자동 저장 옵션이 익명의 사용자에게 작동하려면 모든 사용자가 양식을 미리 보고, 확인하고, 서명할 수 있도록 Forms Common Configuration Service를 구성해야 합니다.
    >
-   >서비스를 구성하려면 에서 AEM Web Console 구성으로 이동한 `https://[server]:[host]/system/console/configMgr` 후 **[!UICONTROL Forms Common Configuration Service를]** 편집하여 허용 **[!UICONTROL 필드에서]** 모든 사용자 **[!UICONTROL 옵션을]** 선택하고구성을 저장합니다.
+   >서비스를 구성하려면 에서 AEM Web Console 구성으로 이동한 `https://server:port/system/console/configMgr` 후 **[!UICONTROL Forms Common Configuration Service를]** 편집하여 허용 **[!UICONTROL 필드에서]** 모든 사용자 **[!UICONTROL 옵션을]** 선택하고구성을 저장합니다.
 
 ## 사용자 지정 전략을 구현하여 적응형 양식에 대한 자동 저장 활성화 {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 
