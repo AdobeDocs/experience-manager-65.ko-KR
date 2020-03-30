@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ## 애플리케이션 만들기 {#create-application}
 
-1. https://[서버]:[port]/aem/inbox의 AEM 받은 편지함으로 이동합니다.
+1. https://&#39;[server]:[port]&#39;/aem/inbox의 AEM 받은 편지함으로 이동합니다.
 1. 받은 편지함 UI에서 만들기 > **[!UICONTROL 응용 프로그램을 누릅니다]**. 애플리케이션 선택 페이지가 나타납니다.
 1. 애플리케이션을 선택하고 만들기를 **[!UICONTROL 클릭합니다]**. 응용 프로그램과 연결된 응용 양식이 열립니다. 적응형 양식의 정보를 채우고 제출을 **[!UICONTROL 누릅니다]**. 연결된 워크플로우를 실행하고 할당자의 받은 편지함에 작업을 만듭니다.
 
