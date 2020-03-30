@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 08e53eec26e29c2403cdfc3239da3ea23da3f321
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,7 +40,7 @@ Correspondence Management는 210개의 특수 문자를 쉽게 삽입할 수 있
 
 사용자 지정 특수 문자 지원을 추가하려면 다음 단계를 따르십시오.
 
-1. 관리자로 `https://[server]:[port]/[ContextPath]/crx/de` 이동하여 로그인합니다.
+1. 관리자로 `https://'[server]:[port]'/[ContextPath]/crx/de` 이동하여 로그인합니다.
 1. apps 폴더에서 specialcharacters 폴더(libs 아래의 textEditorConfig 폴더에 위치)와 유사한 경로/구조를 가진 **[!UICONTROL specialcharacters]** 폴더를 만듭니다.
 
    1. 다음 경로에서 **specialcharacters** 폴더를 마우스 오른쪽 단추로 클릭하고 [오버레이 노드] **를 선택합니다**.
@@ -49,11 +49,11 @@ Correspondence Management는 210개의 특수 문자를 쉽게 삽입할 수 있
 
    1. [오버레이 노드] 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **** 경로:/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
+      **경로:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
-      **** 오버레이 위치:/apps/
+      **오버레이 위치:** /apps/
 
-      **** 일치 노드 유형:선택됨
+      **일치 노드 유형:** 선택됨
 
       >[!NOTE]
       >
