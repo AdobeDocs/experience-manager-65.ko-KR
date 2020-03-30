@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
 
 패키지를 설치한 후 레이아웃 템플릿(XDP)은 다음 위치의 templates-folder에 나열됩니다.
 
-`https://[server]:[port]/[context-root]/aem/forms.html/content/dam/formsanddocuments/templates-folder`
+`https://'[server]:[port]'/[context-root]/aem/forms.html/content/dam/formsanddocuments/templates-folder`
 
 다음은 이 패키지의 모든 템플릿에 있는 일반적인 필드입니다.
 
