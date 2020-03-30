@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
+source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
 
 ---
 
@@ -135,7 +135,7 @@ MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
       * **JDBC 드라이버 클래스**:JDBC 드라이버의 Java 클래스 이름을 지정합니다. MySQL 데이터베이스의 경우 **com.mysql.jdbc.Driver를 지정합니다**.
 
-      * **JDBC 연결 URI**:데이터베이스의 연결 URL을 지정합니다. 포트 3306 및 스키마 텔레카에서 실행되는 MySQL 데이터베이스의 경우 URL은 다음과 같습니다. `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **JDBC 연결 URI**:데이터베이스의 연결 URL을 지정합니다. 포트 3306 및 스키마 텔레카에서 실행되는 MySQL 데이터베이스의 경우 URL은 다음과 같습니다. `jdbc:mysql://'server':3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **사용자 이름:** 데이터베이스의 사용자 이름입니다. JDBC 드라이버를 사용하여 데이터베이스와 연결을 설정해야 합니다.
       * **암호:** 데이터베이스의 암호입니다. JDBC 드라이버를 사용하여 데이터베이스와 연결을 설정해야 합니다.
       * **차입 시 테스트:** [차입시 **테스트] 옵션을** 활성화합니다.
