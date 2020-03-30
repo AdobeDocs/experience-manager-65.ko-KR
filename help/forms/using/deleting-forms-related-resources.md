@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## 양식을 삭제하는 방법 {#how-to-delete-a-form}
 
-1. AEM Forms 사용자 인터페이스에 액세스하려면 `https://[hostname]:[portport]/aem/forms.html.`
+1. AEM Forms 사용자 인터페이스에 액세스하려면 `https://[hostname]:'port'/aem/forms.html.`
 1. 삭제할 양식으로 이동하여 선택합니다. 도구 모음에서 ![aem6forms_delete2](assets/aem6forms_delete2.png) 삭제를 클릭하고 삭제 작업을 확인합니다.
 
    >[!NOTE]
