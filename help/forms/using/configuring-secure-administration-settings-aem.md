@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -35,7 +35,7 @@ JEE 서비스의 AEM Forms에는 항상 적어도 SOAP 액세스가 필요합니
 1. 웹 브라우저에 다음 URL을 입력하여 관리 콘솔에 로그인합니다.
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. 서비스 **> 애플리케이션 및 서비스 > 기본 설정을 클릭합니다**.
@@ -70,7 +70,7 @@ JEE 서비스의 AEM Forms에는 항상 적어도 SOAP 액세스가 필요합니
 1. 웹 브라우저에 다음 URL을 입력하여 관리 콘솔에 로그인합니다.
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. 서비스 **> 애플리케이션 및 서비스 > 서비스 관리를 클릭합니다**.
@@ -112,7 +112,7 @@ JEE 서비스의 AEM Forms에는 항상 적어도 SOAP 액세스가 필요합니
 1. 웹 브라우저에 다음 URL을 입력하여 관리 콘솔에 로그인합니다.
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. 설정 **> 사용자 관리 > 구성 > 구성 파일**&#x200B;가져오기 및 내보내기를 클릭합니다.
