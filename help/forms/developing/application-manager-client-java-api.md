@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -92,7 +92,7 @@ public class CreateApplicationVersion_SOAP {
         // Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
         connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT",
-                "https://[server]:[port]");
+                "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL",
                 ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE",
@@ -191,7 +191,7 @@ public class ExportLCA_SOAP {
         // Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
         connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT",
-                "https://[server]:[port]");
+                "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL",
                 ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE",
@@ -295,7 +295,7 @@ public class ImportLCA_SOAP {
         // Set connection properties required to invoke AEM FOrms
         Properties connectionProps = new Properties();
         connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT",
-                "https://[server]:[port]");
+                "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL",
                 ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE",
@@ -384,7 +384,7 @@ public class GetApplication_SOAP {
     public static void main(String[] args) {
         //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL", ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
         connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
@@ -492,7 +492,7 @@ public class GetApplications_SOAP {
     public static void main(String[] args) {
         //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL", ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
         connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
@@ -588,7 +588,7 @@ public class GetApplicationStatus_SOAP {
     public static void main(String[] args) {
         //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL", ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
         connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
@@ -686,7 +686,7 @@ public class PreviewLCA_SOAP {
     public static void main(String[] args) {
         //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL", ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
         connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
@@ -771,7 +771,7 @@ public class DeleteApplication_SOAP {
     public static void main(String[] args) {
         //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://[server]:[port]");
+        connectionProps.setProperty("DSC_DEFAULT_SOAP_ENDPOINT", "https://'[server]:[port]'");
         connectionProps.setProperty("DSC_TRANSPORT_PROTOCOL", ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty("DSC_SERVER_TYPE", "JBoss");
         connectionProps.setProperty("DSC_CREDENTIAL_USERNAME", "administrator");
