@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산 및 Dynamic Media에서 지원하는 파일 포맷 및 각 형식에 지원되는 기능 목록.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 84c6cc47d84656be587cc6a268b8ddc2e1e39635
+source-git-commit: 593c1e1954a1c8e0355ede9889caed05ff72f3f9
 
 ---
 
@@ -20,7 +20,7 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 |:---:|---|
 | ✓ | 지원됨 |
 | * | 추가 기능 지원 |
-| - | 해당 사항 없음 |
+| − | 해당 사항 없음 |
 
 ## AEM 자산에서 지원되는 래스터 이미지 포맷 {#supported-raster-image-formats}
 
@@ -35,12 +35,12 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **원** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD‡ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**1병합된** 이미지가 PSD 파일에서 추출됩니다. Adobe Photoshop에서 생성된 이미지입니다. PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
+병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. Adobe Photoshop에서 생성된 이미지입니다. PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
 ## 다이내믹 미디어에서 지원되는 래스터 이미지 포맷(#supported-raster-image-formats-dynamic-media)
 
@@ -51,11 +51,11 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
-| PSD **원** | ✓ |  |  |  |  |
+| PSD **속성** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-**1병합된** 이미지가 PSD 파일에서 추출됩니다. Adobe Photoshop에서 생성된 이미지입니다. PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
+**병합된 ‡ 이미지는 PSD 파일에서 추출됩니다.** Adobe Photoshop에서 생성된 이미지입니다. PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
 위의 정보 외에 다음 사항을 고려하십시오.
 
@@ -130,7 +130,7 @@ AEM Assets는 Adobe Camera Raw 라이브러리를 사용하여 Raw 이미지를 
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-## Dynamic Media에서 지원되는 문서 포맷(##supported-document-formats-dynamic-media)
+## Dynamic Media에서 지원되는 문서 포맷(#supported-document-formats-dynamic-media)
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 변환<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -150,16 +150,16 @@ AEM Assets는 Adobe Camera Raw 라이브러리를 사용하여 Raw 이미지를 
 
 |  | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | FFMPEG 트랜스코딩 |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | * |
-| MIDI | ✓ | ✓ |  | - | * |
-| 3GP | ✓ | ✓ |  | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ |  | - | * |
-| OGA | ✓ | ✓ |  | - | * |
-| OGG | ✓ | ✓ |  | - | * |
-| RA | ✓ | ✓ |  | - | * |
-| WAV | ✓ | ✓ |  | - | * |
-| WMA | ✓ | ✓ |  | - | * |
+| AAC | ✓ | ✓ |  | − | * |
+| MIDI | ✓ | ✓ |  | − | * |
+| 3GP | ✓ | ✓ |  | − | * |
+| MP3 | ✓ | ✓ | ✓ | − | * |
+| MPG | ✓ | ✓ |  | − | * |
+| OGA | ✓ | ✓ |  | − | * |
+| OGG | ✓ | ✓ |  | − | * |
+| RA | ✓ | ✓ |  | − | * |
+| WAV | ✓ | ✓ |  | − | * |
+| WMA | ✓ | ✓ |  | − | * |
 | DVI | ✓ | ✓ |  | * | * |
 | FLV | ✓ | ✓ |  | * | * |
 | M4V | ✓ | ✓ |  | * | * |
