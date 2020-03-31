@@ -1,14 +1,14 @@
 ---
 title: 자산 지원 형식
-description: AEM 자산에서 지원되는 파일 형식 및 각 형식에 대해 지원되는 기능 목록입니다.
+description: AEM 자산 및 Dynamic Media에서 지원하는 파일 포맷 및 각 형식에 지원되는 기능 목록.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d7d25c75c1023383e07c36252ece2e85425a95be
+source-git-commit: 84c6cc47d84656be587cc6a268b8ddc2e1e39635
 
 ---
 
 
-# Assets supported formats {#assets-supported-formats}
+# 지원되는 에셋 포맷 {#assets-supported-formats}
 
 AEM Assets는 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형을 지원합니다.
 
@@ -22,9 +22,7 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 | * | 추가 기능 지원 |
 | - | 해당 사항 없음 |
 
-## 지원되는 래스터 이미지 포맷 {#supported-raster-image-formats}
-
-자산 관리 기능에 지원되는 래스터 이미지 형식은 다음과 같습니다.
+## AEM 자산에서 지원되는 래스터 이미지 포맷 {#supported-raster-image-formats}
 
 | 형식 | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | 인터랙티브한 편집 | 메타데이터 원본에 쓰기 | 인사이트 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -44,7 +42,7 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 
 **1병합된** 이미지가 PSD 파일에서 추출됩니다. Adobe Photoshop에서 생성된 이미지입니다. PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
-다이내믹 미디어 기능에 지원되는 래스터 이미지 형식은 다음과 같습니다.
+## 다이내믹 미디어에서 지원되는 래스터 이미지 포맷(#supported-raster-image-formats-dynamic-media)
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 변환<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -69,6 +67,22 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 
 * EPS 파일의 경우 PS-Adobe(PostScript Document Structuring Convention) 버전 3.0 이상에서 메타데이터 원본에 대한 쓰기가 지원됩니다.
 
+## Dynamic Media에서 지원되지 않는 래스터 이미지 형식(#unsupported-image-formats-dynamic-media)
+
+다음 표에서는 Dynamic Media에서 *지원되지 않는* 래스터 이미지 포맷의 하위 유형에 대해 설명합니다. 이 표에서는 이러한 파일을 검색하는 데 사용할 수 있는 제안된 방법에 대해서도 설명합니다.
+
+| 형식 | 지원되지 않는 것은 무엇입니까? | 추천 감지 방법 |
+|---|---|---|
+| JPEG | 처음 3바이트가 잘못된 파일입니다. | JPEF 파일을 식별하려면 초기 3바이트가 `ff d8 ff`되어야 합니다. 다른 경우에는 JPEG로 분류되지 않습니다.<br>・ 이 문제를 해결하는 데 도움이 되는 소프트웨어 도구가 없습니다.<br>・ 파일의 초기 3바이트를 읽는 작은 C++/java 프로그램은 이러한 유형의 파일을 감지할 수 있어야 합니다.<br>・ 이러한 파일의 소스를 추적하여 파일을 생성하는 툴을 살펴보는 것이 좋습니다. |
+| PNG | IDAT 청크 크기가 100MB보다 큰 파일입니다. | C++에서 libpng [를](http://www.libpng.org/pub/png/libpng.html) 사용하여 이 문제를 감지할 수 있습니다. |
+| PSB |  | 파일 유형이 PSB인 경우 exiftool을 사용합니다.<br>ExifTool 로그의 예:<br>1. File type: `PSB` |
+| PSD | CMYK, RGB, 회색 음영 또는 비트맵 이외의 색상 공간이 있는 파일은 지원되지 않습니다.<br>DuoTone, Lab 및 인덱스 색상 공간은 지원되지 않습니다. | 색상 모드가 이중톤인 경우 ExifTool을 사용합니다.<br>ExifTool 로그의 예:<br>1. 색상 모드: `Duotone` |
+|  | 갑자기 끝나는 파일 | Adobe에서 이 조건을 감지할 수 없습니다. 또한 이러한 파일은 Adobe PhotoShop에서 열 수 없습니다. Adobe에서는 이러한 파일을 만들고 소스에서 문제를 해결하는 데 사용한 도구를 조사하는 것이 좋습니다. |
+|  | 비트 심도가 16보다 큰 파일입니다. | 비트 심도가 16보다 큰 경우 ExifTool을 사용합니다.<br>ExifTool 로그의 예:<br>1. 비트 심도: `32` |
+|  | Lab 색상 공간이 있는 파일입니다. | 색상 모드가 Lab인 경우 exiftool을 사용합니다.<br>ExifTool 로그의 예:<br>1. 색상 모드: `Lab` |
+| TIFF | 부동 소수점 데이터가 있는 파일 즉, 32비트 심도의 TIFF 파일은 지원되지 않습니다. | MIME 유형이 이고 SampleFormat의 값이 `image/tiff` ExifTool `Float` 을 사용합니다. ExifTool 로그의 예:<br>1. MIME 유형:샘플 `image/tiff`<br>형식: `Float #`<br>2. MIME 유형:샘플 `image/tiff`<br>형식: `Float; Float; Float; Float` |
+|  | Lab 색상 공간이 있는 파일입니다. | 색상 모드가 Lab인 경우 ExifTool을 사용합니다.<br>ExifTool 로그의 예:<br>1. 색상 모드: `Lab` |
+
 ## 지원되는 PDF 래스터라이저 라이브러리 {#supported-pdf-rasterizer-library}
 
 Adobe PDF 래스터라이저 라이브러리는 컨텐츠 집약적인 대형 Adobe Illustrator 및 PDF 파일에 대한 고품질 축소판과 미리 보기를 생성합니다. PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
@@ -91,7 +105,7 @@ Adobe Imaging Transcoding 라이브러리는 인코딩, 트랜스코딩, 리샘�
 
 AEM Assets는 Adobe Camera Raw 라이브러리를 사용하여 Raw 이미지를 인제스트할 수 있습니다. See [Camera Raw support](camera-raw.md).
 
-## 지원되는 문서 포맷 {#supported-document-formats}
+## 지원되는 에셋 문서 포맷 {#supported-document-formats}
 
 자산 관리 기능에 지원되는 문서 형식은 다음과 같습니다.
 
@@ -116,7 +130,7 @@ AEM Assets는 Adobe Camera Raw 라이브러리를 사용하여 Raw 이미지를 
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
+## Dynamic Media에서 지원되는 문서 포맷(##supported-document-formats-dynamic-media)
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 변환<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -155,7 +169,7 @@ Dynamic Media 기능에 지원되는 문서 형식은 다음과 같습니다.
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## 다이내믹 미디어 트랜스코딩에 지원되는 입력 비디오 포맷 {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Dynamic Media에서 트랜스코딩에 지원되는 입력 비디오 포맷 {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | 비디오 파일 확장명 | 컨테이너 | 권장 비디오 코덱입니다. | 지원되지 않는 비디오 코덱입니다. |
 |---|---|---|---|
