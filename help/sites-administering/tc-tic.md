@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 98dd2d3e7445ceda6d96f0dd11b39d8361f1f402
 
 ---
 
@@ -30,6 +30,7 @@ AEM의 컨텐츠 번역 기능에 대한 개요는 다국어 [사이트에 대�
 AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭니다. AEM에는 기본적으로 Microsoft Translator에 연결하는 기능이 포함되어 있습니다. 다른 번역 공급자의 경우 패키지 공유에서 커넥터 패키지를 [다운로드하십시오](/help/sites-administering/package-manager.md#package-share).
 다음 번역 공급업체는 번역 프로젝트에 대한 새로운 API를 구현합니다. 통합 및 패키지 공유에서 다운로드하는 방법에 대한 자세한 내용을 살펴보려면 링크를 클릭하십시오.
 
+* [Translation.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologies](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/clay-tablet-translation-connector-for-aem.html) (PackageShare에서 제외, 공급업체에 직접 문의)
 * [Lionbridge](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lionbridge-for-adobe-experience-manager.html)
 * [Cloudwords](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/cloudwords-for-adobe-translations-connector.html)
@@ -37,7 +38,6 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 * [린고택](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lingotek-for-adobe-experience-manager.html)
 * Microsoft(Microsoft Translator는 AEM에 사전 설치되어 있음)
 * [스마트링](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/smartling-connector-for-adobe-experience-manager.html)
-* [Translations.com](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/globallink-connect-for-adobe-experience-manager.html)
 * [SDL WorldServer](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdlworldserver-connector.html)
 * [SDL TMS](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdl-tms-translation-connector-for-adobe-experience-manager.html)
 * [Systran](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/systran-for-adobe-experience-manager.html)
@@ -74,7 +74,7 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 
 번역 통합 프레임워크를 구성한 후 이를 사용하는 페이지에 [](/help/sites-administering/tc-prep.md) 연결할 수 있습니다.
 
-**** 참고:AEM의 컨텐츠 번역 기능에 대한 개요는 다국어 [사이트에 대한 컨텐츠 번역을 참조하십시오](/help/sites-administering/translation.md).
+**참고:** AEM의 컨텐츠 번역 기능에 대한 개요는 다국어 [사이트에 대한 컨텐츠 번역을 참조하십시오](/help/sites-administering/translation.md).
 
 프레임워크의 단일 구성은 페이지 컨텐츠, 커뮤니티 컨텐츠 및 자산을 변환하는 방법을 제어합니다.
 ![chlimage_1-386](assets/chlimage_1-386.png)
