@@ -1,5 +1,5 @@
 ---
-source-git-commit: 6cd417e3607eee30fb250b5f5af99acbc2e644e3
+source-git-commit: 352924b29ba145177482c1ceb0ce3b685c10d363
 translation-type: tm+mt
 
 ---
@@ -45,4 +45,4 @@ translation-type: tm+mt
 
 ## 기여도 분석
 
-본 수칙(Code of Contributor Agreement) [은 버전](https://contributor-covenant.org)1.4(https://contributor-covenant.org/version/1/4)에서 [채택되었습니다.](https://contributor-covenant.org/version/1/4/)
+본 수칙(Code of Contributor Agreement) [버전](https://contributor-covenant.org)1.4에서 채택되었으며, https://contributor-covenant.org/version/1/4에서 [확인할 수 있습니다.](https://contributor-covenant.org/version/1/4/)
