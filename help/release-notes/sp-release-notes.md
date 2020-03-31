@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
+source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
 
 ---
 
@@ -193,6 +193,13 @@ AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과
 * Target 클라우드 구성이 실패하여 mbox 가져오기 요청이 실패했습니다(CQ-4279880).
 
 ### 브랜드 포털 {#assets-brand-portal}
+
+* 브랜드 포털 사용자는 AEM 6.5.4에서 Adobe I/O로 업그레이드할 때 기여도 폴더 자산을 AEM 자산에 게시할 수 없습니다(CQDOC-15655).
+
+   이 문제는 다음 서비스 팩 AEM 6.5.5에서 해결됩니다.
+
+   AEM 6.5.4에 대한 즉각적인 수정 사항은 핫픽스를 [다운로드하고](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) 작성자 인스턴스에 설치하는 것이 좋습니다.
+
 
 * 메타데이터 스키마 드롭다운 값은 자산 속성에 표시되지 않습니다(CQ 파섹-4283287).
 
