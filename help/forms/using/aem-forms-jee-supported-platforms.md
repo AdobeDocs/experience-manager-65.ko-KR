@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6cf69dc86ce70a43e77b00d6b3986fa40ae0a4ec
+source-git-commit: b41060207a1fb522905259a0d33df690d606929d
 
 ---
 
@@ -148,9 +148,8 @@ Adobe Experience Manager Forms를 사용하려면 Java Virtual Machine이 실행
    <td>Oracle 데이터베이스 18c </td>
    <td>저장소 마이크로커널</td>
    <td>지원됨</td>
-  </tr>
-
-<tr>
+  </tr> 
+   <tr>
    <td>Oracle 데이터베이스 19c </td>
    <td>보관소</td>
    <td>지원됨</td>
