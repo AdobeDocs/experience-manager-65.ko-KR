@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 4b9e2ceafc301db9337868b78bcae87c0f07e14b
+source-git-commit: 2e4b8ee13257758cba6b76012fed4958f7eabbd7
 
 ---
 
@@ -73,7 +73,7 @@ source-git-commit: 4b9e2ceafc301db9337868b78bcae87c0f07e14b
 
 ![cf_caldata](assets/cf_cf_caldata.png)
 
-******A.NumericField1 B라는**&#x200B;필드입니다.NumericField2 **C.** A 필드명 NumericField3
+**A.** NumericField1 B라는 **필드입니다.** NumericField2 **C.** A 필드명 NumericField3
 
 이 양식 디자인에 있는 스크립트의 구문은 다음과 같습니다.
 
@@ -110,7 +110,7 @@ Forms 서비스 클라이언트 API 작업을 프로그래밍 방식으로 수�
 
 **계산 스크립트가 포함된 양식 검색**
 
-Forms 서비스 클라이언트 API 파섹 이 프로세스는 제출된 양식을 처리하는 것과 유사합니다. ( [제출된 양식]처리(/help/forms/developing/rendering-forms-rendering-submitted-forms-handling-submitted.md#handling-submitted-forms) 참조)
+Forms 서비스 클라이언트 API 파섹 이 프로세스는 제출된 양식을 처리하는 것과 유사합니다. (제출된 [양식 처리를 참조하십시오](/help/forms/developing/handling-submitted-forms.md).)
 
 양식 서비스가 양식 데이터에 대한 계산 작업을 수행하고 있고 결과를 사용자에게 다시 작성해야 하는 것을 의미하는, 제출된 양식과 연결된 처리 상태가 `1` 맞는지 `(Calculate)`확인합니다. 이 경우 서버에서 실행되도록 구성된 스크립트가 자동으로 실행됩니다.
 
