@@ -1,9 +1,9 @@
 ---
-source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+source-git-commit: e3f12a9bbcb111e9a174e6bc3a0ec634df73c60f
 translation-type: tm+mt
 
 ---
-# AEM 6.5 설명서
+# Adobe Experience Manager 6.5 설명서
 
 Adobe Experience Manager 6.5 설명서의 보관소입니다. 이 설명서는 설치, 관리, 작성 사용 및 AEM을 사용자 지정하는 방법에 대해 설명합니다.
 
