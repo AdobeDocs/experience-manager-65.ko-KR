@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
+source-git-commit: 6a29cf13c89b71f851c67f85b01e8e648c0896b9
 
 ---
 
@@ -375,7 +375,7 @@ batchType을 웹 채널을 렌더링하도록 설정하면 API가 모든 데이�
 * **파일 프로토콜**
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
-* **프리필 서비스 프로토콜**
+* **Prefill Service 프로토콜**
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
    SERVICE_NAME은 OSGI 미리 채우기 서비스의 이름을 나타냅니다. 미리 채우기 서비스 만들기 및 실행을 참조하십시오.
