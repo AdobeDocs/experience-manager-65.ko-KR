@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 66bfd6870b4c09dc2ca1b66058e0b9e040a71507
 
 ---
 
@@ -138,7 +138,7 @@ Forms 서비스가 양식을 값별로 렌더링하면 클라이언트 웹 브�
 
 **참고 항목**
 
-[Rendering Forms By]Value(/help/forms/developing/rendering-forms-rendering-forms-value-rendering-forms.md#rendering-forms-by-value)
+[값별 양식 렌더링](/help/forms/developing/rendering-forms.md)
 
 [빠른 시작(SOAP 모드):Java API를 사용한 값별 렌더링](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
