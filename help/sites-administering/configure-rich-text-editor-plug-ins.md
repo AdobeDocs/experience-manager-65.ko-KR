@@ -8,7 +8,7 @@ discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
 mini-toc-levels: 1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 42c268396940144a217ff09f49fe3f6d6791a533
+source-git-commit: ac4c5ec920ed768002da1b4598590bfd9ca301f6
 
 ---
 
@@ -282,18 +282,19 @@ Microsoft Word(`paste-wordhtml`) 등의 다른 프로그램에서 AEM에 붙여�
 >
 >리치 텍스트 편집기는 ID가 있는 컨테이너 DOM 요소를 사용하여 보고 편집하기 위해 다른 스타일을 제공하는 데 사용할 `CQrte` 수 있습니다.
 >
->```
+>
+```
 >#CQ td {
 > // defines the style for viewing
 > }
 >```
 >
->```
+>
+```
 >#CQrte td {
 > // defines the style for editing
 > }
 >```
->
 
 ### 팝업 목록에서 사용 가능한 스타일 지정 {#stylesindropdown}
 
@@ -436,7 +437,7 @@ RTE의 단락 형식을 구성할 때 단락 태그 &lt;p>를 서식 옵션으�
    각 필수 형식에 대해 단계를 반복합니다.
 
 >[!CAUTION]
-사용자 정의 형식을 정의하면 기본 형식(`<p>`, `<h1>``<h2>`및 `<h3>`형식)이 제거됩니다. 기본 포맷으로 포맷을 다시 만들 수 `<p>` 있습니다.
+사용자 정의 형식을 정의하면 기본 형식(`<p>`, `<h1>``<h2>`및 `<h3>`HTML)이 제거됩니다. 기본 포맷으로 포맷을 다시 만들 수 `<p>` 있습니다.
 
 ## 특수 문자 구성 {#spchar}
 
@@ -755,7 +756,7 @@ AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
 
          * **이름** `targetInternal`
          * **유형** `String`
-         * **내부 링크에 대한 타겟의 값** (&quot;모드가 &quot;인 경우에만 사용 `auto`)
+         * **내부 링크에 대한 타겟의 값** (&quot;모드가 `auto`&quot;인 경우에만 사용)
       * 외부 링크의 대상:
 
          * **이름** `targetExternal`
