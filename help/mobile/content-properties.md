@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 50c0bdfc3203410d392e53536bc7cd00245406e5
 
 ---
 
@@ -88,7 +88,7 @@ Adobe Experience Manager(AEM) Mobile On-Demand Services 메타데이터 및 통�
 ### 공통 노드 {#common-nodes}
 
 | 노드 이름 | 유형 | 기본값 또는 예상 값 | 설명 |
---- |--- |--- |--- |
+|--- |--- |--- |--- |
 | 이미지 | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
 
 ### 엔티티 {#entities}
