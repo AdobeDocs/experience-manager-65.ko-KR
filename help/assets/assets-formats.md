@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산 및 Dynamic Media에서 지원하는 파일 포맷 및 각 형식에 지원되는 기능 목록.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 593c1e1954a1c8e0355ede9889caed05ff72f3f9
+source-git-commit: 15691a164913cf06bfbb77392ec563d8c364a1b8
 
 ---
 
@@ -67,21 +67,23 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 
 * EPS 파일의 경우 PS-Adobe(PostScript Document Structuring Convention) 버전 3.0 이상에서 메타데이터 원본에 대한 쓰기가 지원됩니다.
 
-## Dynamic Media에서 지원되지 않는 래스터 이미지 형식(#unsupported-image-formats-dynamic-media)
+<!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
+## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
 
-다음 표에서는 Dynamic Media에서 *지원되지 않는* 래스터 이미지 포맷의 하위 유형에 대해 설명합니다. 이 표에서는 이러한 파일을 검색하는 데 사용할 수 있는 제안된 방법에 대해서도 설명합니다.
+The following table describes the sub-types of raster image formats that are *not* supported in Dynamic Media. The table also describes suggested methods you can use to detect such files.
 
-| 형식 | 지원되지 않는 것은 무엇입니까? | 추천 감지 방법 |
+| Format | What is unsupported? | Suggested detection method |
 |---|---|---|
-| JPEG | 처음 3바이트가 잘못된 파일입니다. | JPEF 파일을 식별하려면 초기 3바이트가 `ff d8 ff`되어야 합니다. 다른 경우에는 JPEG로 분류되지 않습니다.<br>・ 이 문제를 해결하는 데 도움이 되는 소프트웨어 도구가 없습니다.<br>・ 파일의 초기 3바이트를 읽는 작은 C++/java 프로그램은 이러한 유형의 파일을 감지할 수 있어야 합니다.<br>・ 이러한 파일의 소스를 추적하여 파일을 생성하는 툴을 살펴보는 것이 좋습니다. |
-| PNG | IDAT 청크 크기가 100MB보다 큰 파일입니다. | C++에서 libpng [를](http://www.libpng.org/pub/png/libpng.html) 사용하여 이 문제를 감지할 수 있습니다. |
-| PSB |  | 파일 유형이 PSB인 경우 exiftool을 사용합니다.<br>ExifTool 로그의 예:<br>1. File type: `PSB` |
-| PSD | CMYK, RGB, 회색 음영 또는 비트맵 이외의 색상 공간이 있는 파일은 지원되지 않습니다.<br>DuoTone, Lab 및 인덱스 색상 공간은 지원되지 않습니다. | 색상 모드가 이중톤인 경우 ExifTool을 사용합니다.<br>ExifTool 로그의 예:<br>1. 색상 모드: `Duotone` |
-|  | 갑자기 끝나는 파일 | Adobe에서 이 조건을 감지할 수 없습니다. 또한 이러한 파일은 Adobe PhotoShop에서 열 수 없습니다. Adobe에서는 이러한 파일을 만들고 소스에서 문제를 해결하는 데 사용한 도구를 조사하는 것이 좋습니다. |
-|  | 비트 심도가 16보다 큰 파일입니다. | 비트 심도가 16보다 큰 경우 ExifTool을 사용합니다.<br>ExifTool 로그의 예:<br>1. 비트 심도: `32` |
-|  | Lab 색상 공간이 있는 파일입니다. | 색상 모드가 Lab인 경우 exiftool을 사용합니다.<br>ExifTool 로그의 예:<br>1. 색상 모드: `Lab` |
-| TIFF | 부동 소수점 데이터가 있는 파일 즉, 32비트 심도의 TIFF 파일은 지원되지 않습니다. | MIME 유형이 이고 SampleFormat의 값이 `image/tiff` ExifTool `Float` 을 사용합니다. ExifTool 로그의 예:<br>1. MIME 유형:샘플 `image/tiff`<br>형식: `Float #`<br>2. MIME 유형:샘플 `image/tiff`<br>형식: `Float; Float; Float; Float` |
-|  | Lab 색상 공간이 있는 파일입니다. | 색상 모드가 Lab인 경우 ExifTool을 사용합니다.<br>ExifTool 로그의 예:<br>1. 색상 모드: `Lab` |
+| JPEG  | Files where the initial three bytes is incorrect. | To identify a JPEF file, its initial three bytes must be `ff d8 ff`. If they are anything else, then it is not classified as a JPEG.<br>&bull; There is no software tool that can help with this issue.<br>&bull; A small C++/java program which reads the initial three bytes of a file should be able to detect these types of files.<br>&bull; It may be better to track the source of such files and look at the tool generating the file. |
+| PNG |  Files that have an IDAT chunk size greater than 100 MB. | You can detect this issue using [libpng](http://www.libpng.org/pub/png/libpng.html) in C++. |
+| PSB |  | Use exiftool if the file type is PSB.<br>Example in an ExifTool log:<br>1. File type: `PSB` |
+| PSD | Files with a color space other than CMYK, RGB, Grayscale, or Bitmap are not supported.<br>DuoTone, Lab, and Indexed color spaces are not supported. | Use ExifTool if Color mode is Duotone.<br>Example in an ExifTool log:<br>1. Color mode: `Duotone` |
+|  | Files with abrupt endings. | Adobe is unable to detect this condition. Also, such files cannot be opened with Adobe PhotoShop. Adobe suggests you examine the tool that was used to create such a file and troubleshoot at the source. |
+|  | Files that have a bit depth greater than 16. | Use ExifTool if the bit depth is greater than 16.<br>Example in an ExifTool log:<br>1. Bit depth: `32` |
+|  | File that have Lab color space. | Use exiftool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
+| TIFF | Files that have floating point data. That is, a TIFF file with 32-bit depth is not supported. | Use ExifTool if the MIME type is `image/tiff` and the SampleFormat has `Float` in its value. Example in an ExifTool log:<br>1. MIME type: `image/tiff`<br>Sample format: `Float #`<br>2. MIME type: `image/tiff`<br>Sample format: `Float; Float; Float; Float` |
+|  | Files that have Lab color space. | Use ExifTool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
+-->
 
 ## 지원되는 PDF 래스터라이저 라이브러리 {#supported-pdf-rasterizer-library}
 
