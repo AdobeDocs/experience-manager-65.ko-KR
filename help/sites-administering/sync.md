@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
+source-git-commit: c9edac158bc6a00637f8be5aac70a2a249e11d59
 
 ---
 
@@ -167,7 +167,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
    * locate `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
    * 편집할 기존 구성을 선택합니다(연필 아이콘)확인 `property name`: **`socialpubsync-publishUser`**
 
-   * 2단계에서 게시 시 생성된 [인증된 사용자에게](#createauthorizeduser) 사용자 이름과 암호를 설정합니다.
+   * 2단계에서 게시 시 생성된 [인증된 사용자에게](#createauthuser) 사용자 이름과 암호를 설정합니다.
 
       * for example, `usersync-admin`
 
@@ -450,7 +450,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 
 작성자 환경에서 진단 프로그램이 실행되면 통과/실패 결과에 확인을 위해 구성된 게시 [인스턴스] 목록을 표시하는 정보 섹션이 포함됩니다.
 
-목록에 포함된 URL은 해당 인스턴스에 대한 진단을 실행하는 각 게시 인스턴스의 URL입니다. URL 매개 변수는 진단 URL에 `syncUser` 추가되며 이 값은 2단계에서 만든 *인증된 동기화 사용자에게* 설정됩니다 [](/help/sites-administering/sync.md#2createauthorizeduser).
+목록에 포함된 URL은 해당 인스턴스에 대한 진단을 실행하는 각 게시 인스턴스의 URL입니다. URL 매개 변수는 진단 URL에 `syncUser` 추가되며 이 값은 2단계에서 만든 *인증된 동기화 사용자에게* 설정됩니다 [](#createauthuser).
 
 **참고**:url을 실행하기 전에 *인증된 동기화 사용자가* 이미 해당 게시 인스턴스에 로그인해야 합니다.
 
@@ -490,7 +490,7 @@ AEM 6.1부터 사용자 동기화가 활성화되면 사용자 데이터는 팜�
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-그런 다음 섹션 [2를 확인합니다. 인증된 사용자 만들기](/content/docs/en/aem/6-1/administer/security/security/sync.md#2). 승인된 사용자 만들기)가 제대로 수행되었습니다.
+그런 다음 섹션 [2를 확인합니다. 승인된 사용자](#createauthuser) 만들기가 제대로 수행되었습니다.
 
 이 섹션에서는 모든 게시 인스턴스에 존재하는 인증된 사용자를 만들고 작성자의 &#39;비밀 공급자&#39; OSGi 구성에서 이들을 식별하는 방법에 대해 설명합니다. 기본적으로 사용자는 `admin`입니다.
 
