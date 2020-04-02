@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea6da2b75cce4052211fb8f0793f1f380eb85a20
 
 ---
 
@@ -140,7 +140,7 @@ AEM과 함께 제공된 표준 보고서의 경우:
 
    * [하나 이상의 기준을](#query-definition)참조하십시오.
 
-      이러한 항목은 (초기) 결과 세트를 만들기 위해 적용됩니다.여기에는 노드 유형에 대한 제한이나 속성 제약 조건이 포함됩니다.
+      이러한 항목은 (초기) 결과 집합을 만들기 위해 적용됩니다.여기에는 노드 유형에 대한 제한이나 속성 제약 조건이 포함됩니다.
 
 **여기에서 중요한 점은 쿼리의 결과 세트에서 반환되는 각 단일 노드가 보고서에서 단일 행을 생성하는 데 사용된다는 것입니다(따라서 1:1 관계).**
 
@@ -177,7 +177,7 @@ AEM과 함께 제공된 표준 보고서의 경우:
 
 1. 값 추출기를 사용하여 [초기 쿼리(reportbase)](#query-definition) 에서 반환된 결과를 기본 결과 세트로 변환합니다.
 
-   값 추출기는 [열 유형에](#column-specific-definitions)따라 자동으로 선택됩니다. 기본 JCR 쿼리에서 값을 읽고 이러한 JCR에서 결과 집합을 만드는 데 사용됩니다.이후 추가 처리가 적용될 수 있습니다. 예를 들어, `diff` 유형의 경우 값 extractor는 두 개의 속성을 읽고 결과 세트에 추가되는 단일 값을 계산합니다. 값 추출기를 구성할 수 없습니다.
+   값 추출기는 [열 유형에](#column-specific-definitions)따라 자동으로 선택됩니다. 기본 JCR 쿼리에서 값을 읽고 이 JCR에서 결과 집합을 만드는 데 사용됩니다.이후 추가 처리가 적용될 수 있습니다. 예를 들어, `diff` 유형의 경우 값 extractor는 두 개의 속성을 읽고 결과 세트에 추가되는 단일 값을 계산합니다. 값 추출기를 구성할 수 없습니다.
 
 1. 원시 데이터를 포함하는 초기 결과 세트에 대해 [초기 필터링](#column-specific-definitions) (*원시* 단계)이 적용됩니다.
 
@@ -645,7 +645,7 @@ N:definitions
 
       속성을 사용하여 확인할 상수를 지정합니다. 속성 이름은 확인할 상수를 정의합니다.속성의 값은 해결된 값을 정의합니다.
 
-      예를 들어 Name= 및 **Value**&#x200B;의 `1` 속성은 **1에서**`=One` One으로확인됩니다.
+      예를 들어 Name= **및 Value**&#x200B;의 `1` 속성은 **1에서**`=One` One으로확인됩니다.
 
    * `default`
 
@@ -816,7 +816,7 @@ N:definitions
    * `$3` - `(/|$)` - `/`
    * `$4` - `(.*)` - `par/text`
 
-* 다음으로 표시되는 문자열로 대체되었습니다. `$1`:
+* 다음으로 표시되는 문자열로 `$1`대체되었습니다.
 
    * `/content/geometrixx/en/services`
 
@@ -844,7 +844,7 @@ N:definitions
 
       숫자 값(일 단위 시간 차이로 해석됨)을 상대 날짜 문자열로 변환합니다. 예를 들어 1의 형식은 1일 전입니다.
 
-다음 예제에서는 `datedelta` 및 `min` `max` 집계에 대한 서식을 정의합니다.
+다음 예제에서는 `datedelta` 및 `min` `max` 집계의 서식을 정의합니다.
 
 ```xml
 N:definitions
@@ -1318,7 +1318,8 @@ N:apps
    >
    >이는 정의와 동일합니다.
    >
-   >```
+   >
+   ```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
@@ -1381,7 +1382,7 @@ N:apps
 1. Open the **Tools** console.
 
 1. 왼쪽 **창에서** 보고서를 선택합니다.
-1. **그런 다음**&#x200B;새로 만들기...를 클릭합니다. 제목 **및** 이름을 **정의하고**&#x200B;템플릿 목록에서 새 보고서 유형( **OSGi 보고서 템플릿**)을 선택한 다음 생성 **을**&#x200B;클릭합니다.
+1. 그런 다음 **새로 만들기...** 를 클릭합니다. 제목 **및** 이름을 **정의하고**&#x200B;템플릿 목록에서 새 보고서 유형( **OSGi 보고서 템플릿**)을 선택한 다음 생성 **을**&#x200B;클릭합니다.
 1. 새 보고서 인스턴스가 목록에 나타납니다. 이 아이콘을 두 번 클릭하여 엽니다.
 1. 사이드킥에서 구성 요소(예: **OSGi** 보고서 **그룹의 번들** )를 [드래그하여 첫 번째 열을 만들고 보고서 정의를](/help/sites-administering/reporting.md#the-basics-of-report-customization)시작합니다.
 
@@ -1389,13 +1390,13 @@ N:apps
    >
    >이 예제에 그룹화할 수 있는 열이 없으므로 차트를 사용할 수 없습니다. 차트를 보려면 다음을 `groupable` 설정합니다 `true`.
    >
-   >```
+   >
+   ```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
-   >
 
 ## 보고서 프레임워크 서비스 구성 {#configuring-the-report-framework-services}
 
