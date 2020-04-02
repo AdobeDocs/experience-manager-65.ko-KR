@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: ba4e4908c0564af6e7f0759c5119a5c02f274dbd
 
 ---
 
@@ -178,14 +178,14 @@ UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 
    * libfontconfig.so.1
    * libfreetype.so.6
    * libdl.so.2
-   * library.so.1
+   * librt.so.1
    * libpthread.so.0
    * libstdc++.so.6
    * libm.so.6
    * libgcc_s.so.1
    * libc.so.6
    * ld-linux.so.2
-   * libexat.so.1
+   * libexpat.so.1
 
 ### Adobe Acrobat 및 타사 애플리케이션 설치 {#install-adobe-acrobat-and-third-party-applications}
 
@@ -380,7 +380,7 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경�
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
-AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
+AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
 
 1. AEM 서버에 [](http://localhost:4502) 관리자로 로그인하고 [패키지 공유를](http://localhost:4502/crx/packageshare)엽니다. 패키지 공유에 로그인하려면 Adobe ID가 필요합니다.
 
@@ -414,6 +414,7 @@ AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 이 
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. 파일을 저장하고 닫습니다.
 
 ### 글꼴 관리자 서비스 구성 {#configuring-the-font-manager-service}
@@ -573,11 +574,11 @@ PDF 파일에 대해 AES 256 암호화를 사용하려면 JCE(Java Cryptography 
   </tr> 
   <tr> 
    <td>Forms 서비스</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-based-connector<br /> </td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td> 
   </tr> 
   <tr> 
    <td>출력 서비스</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-based-connector</td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td> 
   </tr> 
  </tbody> 
 </table>
