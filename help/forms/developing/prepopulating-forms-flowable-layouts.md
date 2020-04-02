@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ebb60e79aa7fb45e059e2d2451f6d549cd24b8b0
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 이미 데이터가 들어 있는 양식을 채울 때는 XML 데이터 소스 내에 이미 표시된 데이터를 지정해야 합니다. 10개의 필드를 포함하는 양식에 4개의 필드가 있다고 가정합니다. 그런 다음 나머지 6개의 필드를 미리 채우도록 가정합니다. 이 경우 양식을 미리 채우는 데 사용되는 XML 데이터 소스에 10개의 XML 요소를 지정해야 합니다. 6개의 요소만 지정하면 원래 4개의 필드가 비어 있습니다.
 
-예를 들어 샘플 확인 양식과 같은 양식을 미리 채울 수 있습니다. (인터랙티브한 PDF 양식 [렌더링의]&quot;확인 양식&quot;을 참조하십시오(/help/forms/developing/rendering-forms-rendering-interactive-pdf-forms-rendering.md#rendering-interactive-pdf-forms-rendering).)
+예를 들어 샘플 확인 양식과 같은 양식을 미리 채울 수 있습니다. (대화형 PDF 양식 렌더링의 &quot; [확인 양식&quot;을 참조하십시오](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 샘플 확인 양식을 미리 채우려면 양식의 세 필드와 일치하는 세 개의 XML 요소가 포함된 XML 데이터 소스를 만들어야 합니다. 이 양식에는 다음 세 개의 필드가 포함되어 있습니다. `FirstName`및 `LastName`를 `Amount`참조하십시오. 첫 번째 단계는 양식 디자인에 있는 필드와 일치하는 XML 요소를 포함하는 XML 데이터 소스를 만드는 것입니다. 다음 단계는 다음 XML 코드와 같이 XML 요소에 데이터 값을 할당하는 것입니다.
 
@@ -209,7 +209,7 @@ XML 데이터 소스는 고정 레이아웃과 플로우 가능한 레이아웃�
 
 **메모리 내 XML 데이터 소스 만들기**
 
-클래스를 사용하여 메모리 내 XML 데이터 소스를 만들어 순서별 레이아웃으로 양식을 미리 채울 수 있습니다. `org.w3c.dom` 양식을 준수하는 XML 데이터 소스에 데이터를 배치해야 합니다. 양식의 플로우 가능 레이아웃과 XML 데이터 소스 간의 관계에 대한 자세한 내용은 데이터 하위 그룹 []이해(/help/forms/developing/rendering-forms-rendering-forms-prepoiling-forms-flowable-layouts-prepoiling-forms-flowable-layouts-prepoillufying-forms-flowable-layouts-prepoillufying.md#understanding-data-subgroups)를 참조하십시오.
+클래스를 사용하여 메모리 내 XML 데이터 소스를 만들어 순서별 레이아웃으로 양식을 미리 채울 수 있습니다. `org.w3c.dom` 양식을 준수하는 XML 데이터 소스에 데이터를 배치해야 합니다. 순서별 레이아웃과 XML 데이터 소스를 사용한 양식 간의 관계에 대한 자세한 내용은 데이터 [하위 그룹](#understanding-data-subgroups)이해를 참조하십시오.
 
 **XML 데이터 소스 변환**
 
@@ -252,21 +252,21 @@ XML 데이터 소스는 고정 레이아웃과 플로우 가능한 레이아웃�
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * 개체의 `Document` `createElement` 메서드를 호출하여 XML 데이터 소스의 헤더 요소를 만듭니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 로 `Element`캐스팅합니다. 그런 다음 `root` `appendChild` 개체의 메서드를 호출하여 루트 요소에 머리글 요소를 추가하고 머리글 요소 개체를 인수로 전달합니다. 헤더 요소에 추가되는 XML 요소는 양식의 정적 부분에 해당합니다. 다음 코드 줄은 이 응용 프로그램 논리를 보여 줍니다.
+   * 개체의 `Document` `createElement` 메서드를 호출하여 XML 데이터 소스의 헤더 요소를 만듭니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 로 `Element`캐스팅합니다. 그런 다음 `root` `appendChild` 개체의 메서드를 호출하여 루트 요소에 머리글 요소를 추가하고 머리글 요소 개체를 인수로 전달합니다. 헤더 요소에 추가되는 XML 요소는 양식의 정적 부분에 해당합니다. 다음 코드 줄은 이 응용 프로그램 논리를 보여줍니다.
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * 객체의 메서드를 호출하여 헤더 요소에 속하는 하위 요소를 만들고 요소의 이름을 나타내는 문자열 값을 전달합니다. `Document` `createElement` 반환 값을 로 `Element`캐스팅합니다. 그런 다음 자식 요소의 `appendChild` 메서드를 호출하여 값을 설정하고 `Document` 개체의 `createTextNode` 메서드를 인수로 전달합니다. 하위 요소의 값으로 표시되는 문자열 값을 지정합니다. 마지막으로, 헤더 요소의 메서드를 호출하여 하위 요소를 헤더 요소에 추가하고 자식 요소 개체를 인수로 전달합니다. `appendChild` 다음 코드 줄은 이 응용 프로그램 논리를 보여 줍니다.
+   * 객체의 메서드를 호출하여 헤더 요소에 속하는 하위 요소를 만들고 요소의 이름을 나타내는 문자열 값을 전달합니다. `Document` `createElement` 반환 값을 로 `Element`캐스팅합니다. 그런 다음 자식 요소의 `appendChild` 메서드를 호출하여 값을 설정하고 `Document` 개체의 `createTextNode` 메서드를 인수로 전달합니다. 하위 요소의 값으로 표시되는 문자열 값을 지정합니다. 마지막으로, 헤더 요소의 메서드를 호출하여 하위 요소를 헤더 요소에 추가하고 자식 요소 개체를 인수로 전달합니다. `appendChild` 다음 코드 줄은 이 응용 프로그램 논리를 보여줍니다.
 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
    * 양식의 정적 부분에 표시되는 각 필드에 대한 마지막 하위 단계를 반복하여 나머지 모든 요소를 헤더 요소에 추가합니다(XML 데이터 소스 다이어그램에서 이러한 필드는 A 섹션에 표시됩니다.).(데이터 [하위 그룹](#understanding-data-subgroups)이해를 참조하십시오.)
-   * 개체의 `Document` `createElement` 메서드를 호출하여 XML 데이터 소스의 세부 사항 요소를 만듭니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 로 `Element`캐스팅합니다. 그런 다음 `root` `appendChild` 개체의 메서드를 호출하여 세부 사항 요소를 루트 요소에 추가하고 세부 요소 개체를 인수로 전달합니다. 세부 사항 요소에 추가되는 XML 요소는 양식의 동적 부분에 해당합니다. 다음 코드 줄은 이 응용 프로그램 논리를 보여 줍니다.
+   * 개체의 `Document` `createElement` 메서드를 호출하여 XML 데이터 소스의 세부 사항 요소를 만듭니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 로 `Element`캐스팅합니다. 그런 다음 `root` `appendChild` 개체의 메서드를 호출하여 세부 사항 요소를 루트 요소에 추가하고 세부 요소 개체를 인수로 전달합니다. 세부 사항 요소에 추가되는 XML 요소는 양식의 동적 부분에 해당합니다. 다음 코드 줄은 이 응용 프로그램 논리를 보여줍니다.
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * 객체의 메서드를 호출하여 세부 사항 요소에 속하는 하위 요소를 만들고 요소의 이름을 나타내는 문자열 값을 전달합니다. `Document` `createElement` 반환 값을 로 `Element`캐스팅합니다. 그런 다음 자식 요소의 `appendChild` 메서드를 호출하여 값을 설정하고 `Document` 개체의 `createTextNode` 메서드를 인수로 전달합니다. 하위 요소의 값으로 표시되는 문자열 값을 지정합니다. 마지막으로 세부 요소의 메서드를 호출하여 하위 요소를 세부 사항 요소에 추가하고 자식 요소 `appendChild` 개체를 인수로 전달합니다. 다음 코드 줄은 이 응용 프로그램 논리를 보여 줍니다.
+   * 객체의 메서드를 호출하여 세부 사항 요소에 속하는 하위 요소를 만들고 요소의 이름을 나타내는 문자열 값을 전달합니다. `Document` `createElement` 반환 값을 로 `Element`캐스팅합니다. 그런 다음 자식 요소의 `appendChild` 메서드를 호출하여 값을 설정하고 `Document` 개체의 `createTextNode` 메서드를 인수로 전달합니다. 하위 요소의 값으로 표시되는 문자열 값을 지정합니다. 마지막으로 세부 요소의 메서드를 호출하여 하위 요소를 세부 사항 요소에 추가하고 자식 요소 `appendChild` 개체를 인수로 전달합니다. 다음 코드 줄은 이 응용 프로그램 논리를 보여줍니다.
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -325,11 +325,11 @@ XML 데이터 소스는 고정 레이아웃과 플로우 가능한 레이아웃�
    * 클래스의 `DocumentBuilderFactory` `DocumentBuilderFactory` `newInstance` 메서드를 호출하여 Java 개체를 만듭니다.
    * 개체의 `DocumentBuilder` `DocumentBuilderFactory` `newDocumentBuilder` 메서드를 호출하여 Java 개체를 만듭니다.
    * 객체의 메서드를 호출하여 `DocumentBuilder` `newDocument` `org.w3c.dom.Document` 객체를 인스턴스화합니다.
-   * 개체의 `org.w3c.dom.Document` `createElement` 메서드를 호출하여 XML 데이터 소스의 루트 요소를 만듭니다. 이렇게 하면 루트 요소를 나타내는 `Element` 개체가 만들어집니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 로 `Element`캐스팅합니다. 그런 다음 `Document` 개체의 `appendChild` 메서드를 호출하여 문서에 루트 요소를 추가하고 루트 요소 개체를 인수로 전달합니다. 다음 코드 줄은 이 응용 프로그램 논리를 보여 줍니다.
+   * 개체의 `org.w3c.dom.Document` `createElement` 메서드를 호출하여 XML 데이터 소스의 루트 요소를 만듭니다. 이렇게 하면 루트 요소를 나타내는 `Element` 개체가 만들어집니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 로 `Element`캐스팅합니다. 그런 다음 `Document` 개체의 `appendChild` 메서드를 호출하여 문서에 루트 요소를 추가하고 루트 요소 개체를 인수로 전달합니다. 다음 코드 줄은 이 응용 프로그램 논리를 보여줍니다.
 
       ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * 개체의 `Document` `createElement` 메서드를 호출하여 XML 데이터 소스의 헤더 요소를 만듭니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 로 `Element`캐스팅합니다. 그런 다음 `root` `appendChild` 개체의 메서드를 호출하여 루트 요소에 머리글 요소를 추가하고 머리글 요소 개체를 인수로 전달합니다. 헤더 요소에 추가되는 XML 요소는 양식의 정적 부분에 해당합니다. 다음 코드 줄은 이 응용 프로그램 논리를 보여 줍니다.
+   * 개체의 `Document` `createElement` 메서드를 호출하여 XML 데이터 소스의 헤더 요소를 만듭니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 로 `Element`캐스팅합니다. 그런 다음 `root` `appendChild` 개체의 메서드를 호출하여 루트 요소에 머리글 요소를 추가하고 머리글 요소 개체를 인수로 전달합니다. 헤더 요소에 추가되는 XML 요소는 양식의 정적 부분에 해당합니다. 다음 코드 줄은 이 응용 프로그램 논리를 보여줍니다.
 
       ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
@@ -367,7 +367,7 @@ XML 데이터 소스는 고정 레이아웃과 플로우 가능한 레이아웃�
 
    * 파일 이름 확장자를 포함하여 양식 디자인 이름을 지정하는 문자열 값입니다.
    * 양식과 병합할 데이터가 들어 있는 `BLOB` 개체입니다. 1단계와 2단계에서 생성된 `BLOB` 객체를 사용해야 합니다.
-   * 런타임 옵션을 저장하는 `PDFFormRenderSpecc` 개체입니다. 자세한 내용은 AEM Forms [API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * 런타임 옵션을 저장하는 `PDFFormRenderSpecc` 개체입니다. 자세한 내용은 AEM Forms API [참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Forms 서비스에 필요한 URI 값이 들어 있는 `URLSpec` 개체입니다.
    * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 이 매개 변수는 선택 사항이며 양식에 파일을 첨부하지 않으려는 `null` 경우 지정할 수 있습니다.
    * 메서드에 의해 채워지는 빈 `com.adobe.idp.services.holders.BLOBHolder` 개체입니다. 렌더링된 PDF 양식을 저장하는 데 사용됩니다.
