@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
+source-git-commit: a83def358e026b516add577f968dcc709357e458
 
 ---
 
@@ -40,7 +40,7 @@ AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과
 
 * [Adobe Experience Manager Assets의 접근성 향상](new-features-latest-service-pack.md#accessibility-enhancements) .
 
-* 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.10.8로 업데이트되었습니다.
+* 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.10.8으로 업데이트되었습니다.
 
 * 이제 선택적 컨텐츠 하위 트리를 Dynamic Media *- Scene7 모드로* 동기화할 수 있습니다(사용 가능한 모든 항목 `content/dam`).
 
@@ -128,11 +128,9 @@ AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과
 
 * Safari 브라우저의 자산 속성 페이지에서 뒤로 명령을 사용하면 오류가 발생합니다(NPR-31753).
 
-* 터치 UI 검색(Omnisearch를 통해 수행) 결과 페이지가 자동으로 스크롤되어 사용자의 스크롤 위치가 손실됩니다(NPR-31307).
+* Omnisearch를 통해 수행한 터치 UI 검색 결과 페이지가 자동으로 스크롤되어 사용자의 스크롤 위치가 손실됩니다(NPR-31307).
 
 * PDF 자산의 자산 세부 사항 페이지에는 Dynamic Media Scene7 실행 모드에서 실행되는 Experience Manager의 [컬렉션으로] 및 [변환 추가] 단추를 제외한 작업 단추가 표시되지 않습니다(CQ-4286705).
-
-* 이제 2GB보다 큰 자산을 Dynamic Media-Scene7에서 업로드할 수 있습니다(CQ-4286561).
 
 * Scene7의 일괄 업로드 프로세스를 통해 자산을 처리하는 데 시간이 너무 오래 걸립니다(CQ-4286445).
 
@@ -229,7 +227,7 @@ AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과
 
 >[!NOTE]
 >
->AEM 서비스 팩에는 AEM Forms에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+>AEM 서비스 팩에는 AEM Forms에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치](#install-aem-forms-jee-installer)를 참조하십시오.
 
 * 통신 관리:게시물 프로세스 워크플로우에 제출하면 서신에 추가 문자가 표시됩니다(NPR-32626).
 
@@ -378,7 +376,7 @@ AEM 6.5.4.0에 포함된 OSGi 번들 목록
 
 [파일 가져오기](assets/6540_bundles.txt)
 
-AEM 6.5.4.0에 포함된 컨텐츠 패키지 목록
+AEM 6.5.4.0에 포함된 콘텐츠 패키지 목록
 
 [파일 가져오기](assets/6540_packages.txt)
 
