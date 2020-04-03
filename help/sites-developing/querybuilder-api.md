@@ -12,7 +12,7 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: a491d4e9bd9ffc68c4ba7cac3149f48cf7576ee8
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
 
 서버측 쿼리 빌더( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html))는 쿼리 설명을 수락하고, XPath 쿼리를 만들어 실행하며, 원하는 경우 결과 세트를 필터링하고, 원하는 경우 패싯을 추출합니다.
 
-쿼리 설명은 단순히 예측([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)) 세트입니다. 예에는 XPath의 `jcr:contains()` 함수에 해당하는 전체 텍스트 조건자와 DAM 자산 하위 트리에서 너비와 높이 속성을 찾는 이미지 크기 조건자가 포함됩니다.
+쿼리 설명은 단순히 예측([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)) 세트입니다. 예에는 XPath의 함수에 해당하는 전체 텍스트 `jcr:contains()` 조건자가 포함됩니다.
 
 각 조건자 유형에 대해 XPath, 필터링 및 패싯 추출을 위한 특정 조건자를 처리하는 방법을 알고 있는 평가기 구성 요소가 있습니다([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)). OSGi 구성 요소 런타임을 통해 연결되는 사용자 정의 평가기를 만드는 것은 매우 쉽습니다.
 
@@ -61,7 +61,7 @@ JSON `QueryBuilder` 서블릿의 경우, 각 예제는 로컬 CQ 설치(기본 �
 
 ### 모든 결과 반환 {#returning-all-results}
 
-**다음 쿼리는 10개의 결과를****반환하지만(또는 최대 10개의 정확한) 히트 수를**&#x200B;알려줍니다.실제로 사용할 수 있습니다.
+다음 쿼리는 10개의 결과를 **** 반환하지만(또는 최대 10개의 정확한) 히트 수를 **알려줍니다.** 실제로 사용할 수 있습니다.
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&orderby=path`
 
@@ -571,6 +571,6 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 | [com.day.cq.search.facets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/package-summary.html) | 패싯 |
 | [com.day.cq.search.facets.bucks](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | 버킷(패싯 내에 포함) |
 | [com.day.cq.search.eval](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html) | 설명 평가자 |
-| [com.day.cq.search.facets.extractor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | 패싯 추출(평가자용) |
+| [com.day.cq.search.facults.extractor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | 패싯 추출(평가자용) |
 | [com.day.cq.search.writer](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) | Querybuilder 서블릿용 JSON 결과 히트 작성기(/bin/querybuilder.json) |
 
