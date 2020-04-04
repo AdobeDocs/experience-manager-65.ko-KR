@@ -4,16 +4,18 @@ description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fc75e3dcb0ca107605c456d0f41be861dabc0eb
+source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
 
 ---
 
 
 # Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능 {#aem-whats-new-service-pack-4}
 
-AEM(Adobe Experience Manager) 6.5는 분기별 서비스 팩을 통해 기능과 지속적인 개선 사항을 제공합니다. 혁신적인 기술을 통해 손쉽게 활용할 수 있습니다.
+Adobe Experience Manager (6.5)를 사용하면 분기별 서비스 팩 릴리스를 통해 새로운 기능과 지속적으로 향상된 기능을 이용할 수 있습니다. 이 방법을 사용하면 혁신적인 기능을 손쉽게 채택할 수 있습니다.
 
-AEM 서비스 팩 4(6.5.4.0)는 2020년 **3월 5일에 릴리스됩니다**. 이 문서에서는 6.5 서비스 팩이 AEM 여정을 더욱 풍성하게 만들기 위해 제공하는 주요 기능을 집중적으로 살펴봅니다.
+Adobe Experience Manager Service Pack 4(6.5.4.0)는 2020년 3월 5일에 릴리스되었습니다. 이 업데이트는 2019년 4월 6.5 릴리스의 공식 출시 이후 릴리스된 새로운 기능, 고객이 요청한 주요 개선 사항, 성능, 안정성, 보안 개선 사항이 포함된 중요한 업데이트입니다. Adobe Experience Manager 6.5.4.0은 Adobe Experience Manager 6.5 위에 설치할 수 있습니다.
+
+이 문서에서는 최신 6.5 서비스 팩에 포함된 기능, 이전 6.5 서비스 팩에 포함된 [주요 기능](#key-features-previous-service-packs)및 Experience Manager 6.5.3.0 이후 [주요 릴리스 중 일부를](#key-features-sice-sp3)소개합니다.
 
 ## AEM Sites {#aem-sites}
 
@@ -94,7 +96,7 @@ Adobe Experience Manager Forms에는 다음과 같은 액세서빌러티 개선 
 
 * 적응형 양식의 각 페이지에는 이제 하나의 제목과 하나의 기본 랜드마크 레이블이 포함됩니다.
 
-## 이전 AEM 6.5 서비스 팩의 주요 기능
+## 이전 AEM 6.5 서비스 팩의 주요 기능 {#key-features-previous-service-packs}
 
 ### 다이내믹 미디어용 스마트 이미징(6.5.3.0) {#smart-imaging}
 
@@ -117,7 +119,7 @@ Assets 사용자는 시각적으로 유사한 이미지를 검색할 수 있습�
 
 배치 API를 사용하여 템플릿에서 여러 대화형 통신을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 통신입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 통신을 생성합니다. API는 인터랙티브한 커뮤니케이션의 대량 제작 시 유용합니다. 예를 들어, 전화 요금, 여러 고객을 위한 신용 카드 명세서 등이 있습니다. 배치 [API를 사용하여 여러 대화형 통신 생성을 참조하십시오](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## AEM 6.5 SP3 이후의 주요 릴리스
+## AEM 6.5 SP3 이후의 주요 릴리스 {#key-features-sice-sp3}
 
 2019년 12월 12일부터 2020년 3월 5일까지 Adobe는 핵심 AEM 제공 서비스 외부에 있는 다음 기능을 발표했습니다.
 
