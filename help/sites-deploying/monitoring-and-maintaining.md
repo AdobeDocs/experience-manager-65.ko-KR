@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -116,8 +116,7 @@ CRX [설명서의](/help/sites-administering/backup-and-restore.md) 백업 및 �
 웹 사이트의 버전을 제거하려면 다음과 같이 하십시오.
 
 1. 도구 **[콘솔로](/help/sites-administering/tools-consoles.md)**이동하고&#x200B;**버전**지정을&#x200B;**선택한**후&#x200B;**버전삭제를 두 번클릭합니다.**
-1. 제거할 컨텐츠의 시작 경로(예:
-     `/content/geometrixx-outdoors`).
+1. 제거할 컨텐츠의 시작 경로(예: `/content/geometrixx-outdoors`).
 
    * 경로에 정의된 노드만 제거하려면 재귀적 선택을 **취소합니다**.
    * 경로에 정의된 노드를 제거하고 해당 하위 노드를 제거하려면 재귀성을 **선택합니다**.
@@ -195,12 +194,12 @@ AEM WCM 및 저장소에 대한 모든 액세스 요청은 여기에 등록되�
    * `error.log`
 여기에는 다양한 수준의 오류 메시지가 등록되어 있습니다.
 
-   * [ 이 `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)로그는 다이내믹 미디어가 활성화된 경우에만 사용됩니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
+   * [ 이 `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)로그는 [!DNL Dynamic Media] 활성화된 경우에만 사용됩니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
 
    * `request.log`
 각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
-   * [ 이 `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)로그는 다이내믹 미디어가 활성화된 경우에만 사용됩니다. s7access 로그는 및 을 통해 Dynamic Media에 수행된 각 요청을 `/is/image` 기록합니다 `/is/content`.
+   * [ 이 `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)로그는 [!DNL Dynamic Media] 활성화된 경우에만 사용됩니다. s7access 로그는 [!DNL Dynamic Media] 및 을 통해 수행한 각 요청을 `/is/image` 기록합니다 `/is/content`.
 
    * `stderr.log`
 시작하는 동안 생성된 다양한 수준의 심각도로 오류 메시지를 다시 표시합니다. 기본적으로 로그 수준은 `Warning` ( `WARN`)로 설정됩니다.
@@ -217,7 +216,7 @@ AEM WCM 및 저장소에 대한 모든 액세스 요청은 여기에 등록되�
 저널링 정보 개정
 
 >[!NOTE]
-ImageServer 및 s7access 로그는 **system/console/status-Bundelist **페이지에서 생성된 **Download Full **패키지에 포함되지 않습니다. 지원 목적으로 다이내믹 미디어 문제가 있는 경우 고객 지원에 문의할 때 ImageServer 및 s7access 로그를 추가하십시오.
+ImageServer 및 s7access 로그는 **system/console/status-Bundelist **페이지에서 생성된 **Download Full **패키지에 포함되지 않습니다. 지원 목적으로 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원에 문의할 때 ImageServer 및 s7access 로그를 추가하십시오.
 
 ### 디버그 로그 수준 활성화 {#activating-the-debug-log-level}
 
@@ -359,33 +358,27 @@ When working with Adobe Experience Manager there are several methods of managing
 
          값:파일 회전을 크기/날짜별로 제어하기 위해 필요에 따라 지정합니다.예를 들면 `'.'yyyy-MM-dd`
    >[!NOTE]
-   >
-   >`org.apache.sling.commons.log.file.size` 다음 중 하나를 설정하여 로그 파일의 회전을 제어합니다.
-   >
-   >* 최대 파일 크기
-   >* 시간/날짜 일정
-   >
-   >를 클릭하여 새 파일을 만들 시기를 지정합니다(및 이름 패턴에 따라 이름이 변경된 기존 파일).
-   >
-   >* 크기 제한은 숫자로 지정할 수 있습니다. 크기 표시기를 지정하지 않으면 바이트 수로 표시되거나 크기 표시기( `KB`, `MB`또는 `GB` 대/소문자 무시) 중 하나를 추가할 수 있습니다.
-   >* 시간/날짜 일정을 `java.util.SimpleDateFormat` 패턴으로 지정할 수 있습니다. 이 설정은 파일을 회전할 기간을 정의합니다.또한 회전된 파일(식별을 위해)에 접미사를 추가합니다.
-   >
-   >기본값은 &#39;.&#39;입니다.yyyy-MM-dd(일별 로그 회전의 경우).
-   >
-   >예를 들어, 2010년 1월 20일 자정(또는 이 시간 이후 첫 번째 로그 메시지가 정확히 표시되었을 때), ../logs/error.log의 이름이 ../logs/error.log.2010-01-20으로 변경됩니다. 1월 21일에 대한 로깅은 다음 날 변경 시 롤오버될 때까지 ../logs/error.log에 출력됩니다(새 및 비어 있음).
-   >
-   >| `&#39;.&#39;yyyy-MM&#39;|매월 초에 회전|
-   >|---|---|
-   >| &quot;.&#39;yyyy-ww&#39;|각 주의 첫째 날에 회전(로케일에 따라 다름) |
-   >| `&#39;.&#39;yyyy-MM-dd&#39;|매일 자정에 회전 |
-   >| `&#39;.&#39;yyyy-MM-dd-a&#39;|매일 자정과 정오에 회전 |
-   >| `&#39;.&#39;yyyy-MM-dd-HH&#39;|매 시간 맨 위에 있는 회전. |
-   >| `&#39;.&#39;yyyy-MM-dd-HH-mm&#39;|매 분 시작 시 회전. |
-   >
-   >참고사항:시간/날짜를 지정할 때:
-   >1. 단일 따옴표(&#39; &#39;); 쌍 내에서 &quot;escape&quot;
-   >   리터럴 텍스트를 사용해야 합니다.  이는 특정 문자가 패턴 문자로 해석되지 않도록 하기위한 것입니다.
-   >1. 옵션의 아무 위치에서나 유효한 파일 이름에 허용되는 문자만 사용하십시오.
+   `org.apache.sling.commons.log.file.size` 다음 중 하나를 설정하여 로그 파일의 회전을 제어합니다.
+   * 최대 파일 크기
+   * 시간/날짜 일정
+   를 클릭하여 새 파일을 만들 시기를 지정합니다(및 이름 패턴에 따라 이름이 변경된 기존 파일).
+   * 크기 제한은 숫자로 지정할 수 있습니다. 크기 표시기를 지정하지 않으면 바이트 수로 표시되거나 크기 표시기( `KB`, `MB`또는 `GB` 대/소문자 무시) 중 하나를 추가할 수 있습니다.
+   * 시간/날짜 일정을 `java.util.SimpleDateFormat` 패턴으로 지정할 수 있습니다. 이 설정은 파일을 회전할 기간을 정의합니다.또한 회전된 파일(식별을 위해)에 접미사를 추가합니다.
+   기본값은 &#39;.&#39;입니다.yyyy-MM-dd(일별 로그 회전의 경우).
+   예를 들어, 2010년 1월 20일 자정(또는 이 시간 이후 첫 번째 로그 메시지가 정확히 표시되었을 때), ../logs/error.log의 이름이 ../logs/error.log.2010-01-20으로 변경됩니다. 1월 21일에 대한 로깅은 다음 날 변경 시 롤오버될 때까지 ../logs/error.log에 출력됩니다(새 및 비어 있음).
+       | `&#39;.&#39;yyyy-MM&#39;|매월 초에 회전|
+    |—|—|
+    | &quot;.&#39;yyyy-ww&#39;|각 주의 첫째 날에 회전(로케일에 따라 다름) |
+       | `&#39;.&#39;yyyy-MM-dd&#39;|매일 자정에 회전 |
+       | `&#39;.&#39;yyyy-MM-dd-a&#39;|매일 자정과 정오에 회전 |
+       | `&#39;.&#39;yyyy-MM-dd-HH&#39;|매 시간 맨 위에 있는 회전. |
+       | `&#39;.&#39;yyyy-MM-dd-HH-mm&#39;|매 분 시작 시 회전. |
+ 참고     
+     사항:시간/날짜를 지정할 때:
+      1. 단일 따옴표(&#39; &#39;); 쌍 내에서 &quot;escape&quot; 리터럴 텍스트를 사용해야 합니다.
+  이는 특정 문자가 패턴 문자로 해석되지 않도록 하기     위한 것입니다.
+       1. 옵션의 아무 위치에서나 유효한 파일 이름에 허용되는 문자만 사용하십시오.
+   
 
 1. 선택한 도구로 새 로그 파일을 읽습니다.
 
@@ -535,17 +528,17 @@ When working with Adobe Experience Manager there are several methods of managing
   <tr>
    <td>스레드 덤프</td>
    <td>JVM 스레드를 관찰합니다. 연락처, 잠금 및 긴 달리기 자를 식별합니다.</td>
-   <td><p><br /> 운영 체제에 따라 다름:- Unix/Linux:- <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> Windows(콘솔 모드):Ctrl-Break<br /> </p> <p>분석 도구는 TDA와 같이 사용할 수도 <a href="https://java.net/projects/tda/">있습니다</a>.<br /> </p> </td>
+   <td><p>운영 체제에 따라 다름:<br /> - Unix/Linux:- <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> Windows(콘솔 모드):Ctrl-Break<br /> </p> <p>분석 도구는 TDA와 같이 사용할 수도 <a href="https://java.net/projects/tda/">있습니다</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>더미 덤프</td>
    <td>메모리 부족 문제로 인해 성능이 저하됩니다.</td>
-   <td><p><br /> 다음을 추가합니다.AEM에 대한 java 호출에 대한 <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> 옵션.</p> <p>HotSpot <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">VM이 있는 Java SE 6에 대한 문제 해결 가이드를 참조하십시오</a>.</p> </td>
+   <td><p>다음을 추가합니다.<br /> AEM에 대한 java 호출에 대한 <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> 옵션.</p> <p>HotSpot <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">VM이 있는 Java SE 6에 대한 문제 해결 가이드를 참조하십시오</a>.</p> </td>
   </tr>
   <tr>
    <td>시스템 호출</td>
    <td>타이밍 문제를 확인합니다.</td>
-   <td><p>또는 <code>System.currentTimeMillis()</code> .Timing에 대한 <code>com.day.util</code>호출은 코드에서 또는 HTML 주석을 <a href="#html-comments"></a>통해 타임스탬프를 생성하는 데 사용됩니다.</p> <p><strong></strong> 참고:필요에 따라 활성화/비활성화할 수 있도록 구현해야 합니다.시스템이 원활하게 작동하면 통계 수집 오버헤드가 필요하지 않습니다.</p> </td>
+   <td><p>또는 <code>System.currentTimeMillis()</code> .Timing에 대한 <code>com.day.util</code>호출은 코드에서 또는 HTML 주석을 <a href="#html-comments"></a>통해 타임스탬프를 생성하는 데 사용됩니다.</p> <p><strong>참고:</strong> 필요에 따라 활성화/비활성화할 수 있도록 구현해야 합니다.시스템이 원활하게 작동하면 통계 수집 오버헤드가 필요하지 않습니다.</p> </td>
   </tr>
   <tr>
    <td>Apache Bench</td>
@@ -570,12 +563,12 @@ When working with Adobe Experience Manager there are several methods of managing
   <tr>
    <td>JConsole</td>
    <td>JVM 측정 지표 및 스레드를 관찰합니다.</td>
-   <td><p>사용:jconsole</p> <p>jconsole <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">및 JConsole</a> 을 사용한 <a href="#monitoring-performance-using-jconsole">성능 모니터링을 참조하십시오</a>.</p> <p><strong></strong> 참고:JDK 1.6을 통해 JConsole은 플러그인을 통해 확장 가능합니다.예: Top 또는 TDA(스레드 덤프 분석기)</p> </td>
+   <td><p>사용:jconsole</p> <p>jconsole <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">및 JConsole</a> 을 사용한 <a href="#monitoring-performance-using-jconsole">성능 모니터링을 참조하십시오</a>.</p> <p><strong>참고:</strong> JDK 1.6을 통해 JConsole은 플러그인을 통해 확장 가능합니다.예: Top 또는 TDA(스레드 덤프 분석기)</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
    <td>JVM 지표, 스레드, 메모리 및 프로파일링을 관찰합니다.</td>
-   <td><p>사용:jvisualvm 또는 visualvm<br /> </p> <p>( <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">J)VisualVM을</a>사용하여 <a href="https://visualvm.dev.java.net/">jvisualvm</a> , <a href="#monitoring-performance-using-j-visualvm">시각화</a>및모니터링 성능을 참조하십시오.</p> <p><strong></strong> 참고:JDK 1.6을 사용하면 VisualVM은 플러그인으로 확장할 수 있습니다.</p> </td>
+   <td><p>사용:jvisualvm 또는 visualvm<br /> </p> <p>( <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">J)VisualVM을</a>사용하여 <a href="https://visualvm.dev.java.net/">jvisualvm</a> , <a href="#monitoring-performance-using-j-visualvm">시각화</a>및모니터링 성능을 참조하십시오.</p> <p><strong>참고:</strong> JDK 1.6을 사용하면 VisualVM은 플러그인으로 확장할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td>trus/strace, lsof</td>
@@ -606,7 +599,7 @@ When working with Adobe Experience Manager there are several methods of managing
 
 이 `request.log` 오퍼는 요청 시간을 확인할 수 있는 기본 방법입니다. 개발 목적으로 `tail -f` 응답 시간이 느릴 `request.log` 때 주의하십시오. 더 큰 규모의 분석을 `request.log` 위해 응답 시간을 [위해 정렬 및 필터링할 수 있는 `rlog.jar`](#using-rlog-jar-to-find-requests-with-long-duration-times)사용을 권장합니다.
 
-&quot;느린&quot; 페이지를 화면에서 분리한 `request.log`다음 개별적으로 조정하여 성능을 높이는 것이 좋습니다. 일반적으로 구성 요소당 성능 지표를 포함하거나 다음과 같은 성능 프로파일링 도구를 사용하여 수행됩니다. ` [yourkit](https://www.yourkit.com/)`
+&quot;느린&quot; 페이지를 화면에서 분리한 `request.log`다음 개별적으로 조정하여 성능을 높이는 것이 좋습니다. 이 작업은 일반적으로 구성 요소당 성능 지표를 포함하거나 다음과 같은 성능 프로파일링 도구를 사용하여 수행됩니다 ` [yourkit](https://www.yourkit.com/)`.
 
 #### 웹 사이트의 트래픽 모니터링 {#monitoring-traffic-on-your-website}
 
@@ -1077,7 +1070,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 ### JVM 튜닝 {#jvm-tuning}
 
-JVM(Java Virtual Machine)은 특히 Java 7 이후 튜닝과 관련하여 크게 향상되었습니다. 이러한 이유로, 적절한 고정 JVM 크기를 지정하고 기본값을 사용하는 것이 적절할 것입니다.
+JVM(Java Virtual Machine)은 특히 Java 7 이후 튜닝과 관련하여 크게 향상되었습니다. 이러한 이유로 적절한 고정 JVM 크기를 지정하고 기본값을 사용하는 것이 적절할 것입니다.
 
 기본 설정이 적합하지 않으면 JVM을 조정하기 전에 GC 성능을 모니터링하고 평가하는 방법을 설정해야 합니다.이는 더미 크기, 알고리즘 및 기타 측면을 비롯한 모니터링 요인에 포함될 수 있습니다.
 
