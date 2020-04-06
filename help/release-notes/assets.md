@@ -2,7 +2,7 @@
 title: Adobe Experience Manager Assets 릴리스 노트
 description: Adobe Experience Manager 6.5 자산에 대한 새로운 기능과 개선 사항입니다.
 translation-type: tm+mt
-source-git-commit: 92619acaa2eb820eda304355f8eaf79ec4a400e1
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -21,7 +21,7 @@ Read on to know the specific capabilities and integrations of [!DNL Experience M
 
 [!DNL Adobe Asset Link] 컨텐츠 제작 과정에서 크리에이티브 담당자와 마케터 간의 공동 작업을 강화할 수 있습니다. Creatives can access content stored in [!DNL Experience Manager Assets], without leaving the apps that they are most familiar with. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] apps.
 
-[!DNL Adobe Asset Link] 는 Creative Cloud [for enterprise](https://www.adobe.com/creativecloud/business/enterprise.html) 솔루션에 포함되어 있습니다. For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] 는 Creative Cloud [for enterprise](https://www.adobe.com/kr/creativecloud/business/enterprise.html) 솔루션에 포함되어 있습니다. For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html).
 
 ![Adobe Photoshop에서 에셋 검색](assets/asset_search_photoshop.png)
 
@@ -65,7 +65,7 @@ For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](
 
 [!DNL Dynamic Media] 매력적이고 개인화된 첨단 경험을 제공하기 [!DNL Experience Manager Assets] 위해 향상된 리치 미디어 저작 및 전달 기능을 제공합니다. 하나의 고품질 마스터 에셋을 업로드하고 고급 클라우드 렌더링 및 뷰어를 사용하여 조직의 미디어 전략을 지원하기 위해 모든 변환을 즉석에서 제공할 수 있습니다.
 
-For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://marketing.adobe.com/resources/help/en_US/s7/release_notes/).
+For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### Video 360 지원 {#video-support}
 
@@ -77,7 +77,7 @@ Manage your 360-video files directly in [!DNL Experience Manager] using the cutt
 
 ### 액세스 가능성 개선 {#accessibility-enhancements}
 
-[!DNL Dynamic Media] 이제 뷰어는 Aria 지원, 화면 판독기 및 Alt-text와 같은 향상된 액세스 가능성 기능을 지원합니다. 자세한 내용은 [Dynamic Media 뷰어 릴리스 노트](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html)를 참조하십시오.
+[!DNL Dynamic Media] 이제 뷰어는 Aria 지원, 화면 판독기 및 Alt-text와 같은 향상된 액세스 가능성 기능을 지원합니다. 자세한 내용은 [Dynamic Media 뷰어 릴리스 노트](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
 
 ## 검색 환경 개선 {#search-experience-enhancement}
 
