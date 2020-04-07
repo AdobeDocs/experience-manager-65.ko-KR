@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a83def358e026b516add577f968dcc709357e458
+source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
 
 ---
 
@@ -317,7 +317,7 @@ In order to see what platforms are certified to run with this release, please re
 >AEM 6.5.4.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). 이전 버전의 AEM Forms 호환성 패키지를 사용하고 AEM 6.5.4.0으로 업데이트하는 경우 최신 버전의 AEM Forms 호환성 패키지 설치 후 양식 추가 기능 패키지를 설치합니다.
 
 1. AEM 서비스 팩을 설치했는지 확인합니다.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 ### Install AEM Forms on JEE {#install-aem-forms-jee-installer}
@@ -326,7 +326,7 @@ In order to see what platforms are certified to run with this release, please re
 >
 >JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. JEE의 AEM Forms에 있는 수정 사항은 별도의 설치 관리자를 통해 제공됩니다.
 
-For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0011](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0011.html).
+For information about installing the cumulative installer for AEM Forms on JEE and post-deployment configuration, see the [release notes for patch 0011](https://helpx.adobe.com/kr/aem-forms/quick-fixes/6-5/jee-patch-0011.html).
 
 #### Workbench 설치 프로그램
 
@@ -335,6 +335,8 @@ For information about installing the cumulative installer for AEM Forms on JEE a
 ### UberJar {#uber-jar}
 
 The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
+
+UberJar for 6.5.4.0에 대해 **com.fasterxml.jackson.core.async** 패키지가 포함된 업데이트된 버전은 Adobe Public Maven [저장소에서](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)사용할 수 있습니다.
 
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -391,6 +393,6 @@ AEM 6.5.4.0에 포함된 콘텐츠 패키지 목록
 >
 >* [AEM 6.5 릴리스 노트](/help/release-notes/release-notes.md)
 >* [AEM 제품 페이지](https://www.adobe.com/solutions/web-experience-management.html)
->* [AEM 6.5 설명서](https://helpx.adobe.com/support/experience-manager/6-5.html)
+>* [AEM 6.5 설명서](https://helpx.adobe.com/kr/support/experience-manager/6-5.html)
 >* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
