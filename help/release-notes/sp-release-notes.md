@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
+source-git-commit: 4bda1be676ab357c68b541dbd41f108f274dd2d7
 
 ---
 
@@ -336,7 +336,7 @@ For information about installing the cumulative installer for AEM Forms on JEE a
 
 The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
 
-UberJar for 6.5.4.0에 대해 **com.fasterxml.jackson.core.async** 패키지가 포함된 업데이트된 버전은 Adobe Public Maven [저장소에서](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)사용할 수 있습니다.
+Adobe Public Maven 보관소에서 **com.fasterxml.jackson.core.async** 패키지를 포함하는 6.5.4.0용 UberJar [버전을 사용할 수 있습니다](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/).
 
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
