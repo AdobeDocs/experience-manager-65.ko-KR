@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -23,8 +23,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 다음 방법 중 하나를 사용하여 파일 시스템에서 감시 폴더를 만들 수 있습니다.
 
-* 감시 폴더 구성 노드의 속성을 구성하는 동안 folderPath 속성에 상위 디렉토리의 전체 경로를 입력하고 다음 예제와 같이 생성할 감시 폴더의 이름을 추가합니다. `C:/MyPDFs/MyWatchedFolder`\
-   폴더가 `MyWatchedFolder`없으므로 AEM Forms에서 지정된 경로에 폴더를 만듭니다.
+* 감시 폴더 구성 노드의 속성을 구성하는 동안 folderPath 속성에 상위 디렉토리의 전체 경로를 입력하고 다음 예제와 같이 생성할 감시 폴더의 이름을 추가합니다.폴더가 `C:/MyPDFs/MyWatchedFolder`존재하지 `MyWatchedFolder`않으므로 AEM Forms에서 지정된 경로에 폴더를 만듭니다.
 
 * 감시 폴더 끝점을 구성하기 전에 파일 시스템에 폴더를 만든 다음 folderPath 속성에 전체 경로를 제공합니다. folderPath 속성에 대한 자세한 내용은 감시 폴더 [속성을](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)참조하십시오.
 
@@ -90,8 +89,8 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 * **deleteExpiredStageFileOnlyWhenThrottled(Boolean, default true):** 감시 폴더의 재생 시간이 제한될 때만 만료 메커니즘이 활성화되는지 여부. 작업이 간헐적으로 진행 중이거나 워크플로우가 잘못되어 처리되지 않은 상태로 남아 있는 작은 수의 파일이 스로틀링된 감시 폴더에 대해 스로틀링이 활성화되면 전체 일괄 처리에 대한 경계 처리 속도가 느려질 수 있으므로 이 메커니즘은 보다 관련이 있습니다. 이 속성을 true(기본값)로 유지하면 재생 중인 폴더에 대해 재생 제한 메커니즘이 활성화되지 않습니다. 속성이 false로 유지되면 stageFileExpirationDuration 속성이 양수이면 메커니즘이 항상 활성화됩니다.
 
 * **pollInterval(Long)**:감시 폴더의 입력을 검색하는 간격(초)입니다. [스로틀] 설정이 활성화되어 있지 않은 경우, 투표 간격은 평균 작업을 처리하는 시간보다 길어야 합니다.그렇지 않으면 시스템에 과부하가 발생할 수 있습니다. 기본값은 5입니다. 자세한 내용은 배치 크기에 대한 설명을 참조하십시오. 폴링 간격 값은 1보다 크거나 같아야 합니다.
-* **excludeFilePattern(문자열)**:감시 폴더에서 스캔하여 선택할 파일과 폴더를 결정하는 데 사용하는 세미콜론(;)으로 구분된 패턴 목록. 이 패턴이 있는 모든 파일 또는 폴더는 처리를 위해 스캔되지 않습니다. 이 설정은 입력이 여러 파일이 있는 폴더일 때 유용합니다. 폴더 내용을 감시 폴더에서 선택한 이름의 폴더로 복사할 수 있습니다. 이렇게 하면 감시 폴더가 입력 폴더로 완전히 복사되기 전에 처리할 폴더를 선택할 수 없습니다. 기본값은 null입니다.\
-   다음 [파일 패턴을](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) 사용하여 제외할 수 있습니다.
+* **excludeFilePattern(문자열)**:감시 폴더에서 스캔하여 선택할 파일과 폴더를 결정하는 데 사용하는 세미콜론(;)으로 구분된 패턴 목록. 이 패턴이 있는 모든 파일 또는 폴더는 처리를 위해 스캔되지 않습니다. 이 설정은 입력이 여러 파일이 있는 폴더일 때 유용합니다. 폴더 내용을 감시 폴더에서 선택한 이름의 폴더로 복사할 수 있습니다. 이렇게 하면 감시 폴더가 입력 폴더로 완전히 복사되기 전에 처리할 폴더를 선택할 수 없습니다. 기본값은 null입니다.
+다음 [파일 패턴을](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) 사용하여 제외할 수 있습니다.
 
    * 특정 파일 이름 확장자가 있는 파일;예: *.dat, *.xml, .pdf, *.*
    * 특정 이름의 파일;예를 들어 data*는 data1, data2 등의 파일 및 폴더를 제외합니다.
@@ -216,16 +215,13 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 #### ContentProcessor 인터페이스의 사용자 정의 구현 {#custom-implementation-of-the-contentprocessor-interface}
 
-사용자 지정 구현은 처리 컨텍스트(com.adobe.aemfd.watchfolder.service.api.ProcessorContext의 객체)를 수락하고, 컨텍스트에서 입력 문서 및 구성 매개 변수를 읽고, 입력을 처리하고, 출력을\
-컨텍스트 파악 ProcessorContext에는 다음과 같은 API가 있습니다.
+사용자 지정 구현은 처리 컨텍스트(com.adobe.aemfd.watchfolder.service.api.ProcessorContext 유형의 객체)를 수락하고, 컨텍스트에서 입력 문서 및 구성 매개 변수를 읽고, 입력을 처리하며, 출력을 다시 ontext에 추가합니다. ProcessorContext에는 다음과 같은 API가 있습니다.
 
 * **getWatchFolderId**:감시 폴더의 ID를 반환합니다.
 * **getInputMap**:맵 유형의 맵을 반환합니다. 맵의 키는 입력 파일의 파일 이름과 파일의 내용이 들어 있는 문서 오브젝트입니다. getinputMap API를 사용하여 입력 파일을 읽습니다.
-* **getConfigParameters**:변경 불가능한 맵 유형의 맵을 반환합니다. 맵에\
-   감시 폴더의 구성 매개 변수.
+* **getConfigParameters**:변경 불가능한 맵 유형의 맵을 반환합니다. 맵에는 감시 폴더의 구성 매개 변수가 포함되어 있습니다.
 
-* **setResult**:ContentProcessor 구현\
-   는 API를 사용하여 결과 폴더에 출력 문서를 작성합니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시하도록 선택할 수 있습니다. 폴더 패턴이 지정된 경우 출력 파일의 이름은 워크플로우에 설명된 대로 지정됩니다. 파일 패턴이 지정된 경우 출력 파일의 이름은 파일 패턴에 설명된 대로 지정됩니다.
+* **setResult**:ContentProcessor 구현에서는 API를 사용하여 출력 문서를 결과 폴더에 기록합니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시하도록 선택할 수 있습니다. 폴더 패턴이 지정된 경우 출력 파일의 이름은 워크플로우에 설명된 대로 지정됩니다. 파일 패턴이 지정된 경우 출력 파일의 이름은 파일 패턴에 설명된 대로 지정됩니다.
 
 예를 들어 다음 코드는 사용자 지정 foo=bar 속성을 갖는 ContentProcessor 인터페이스의 사용자 정의 구현입니다.
 
@@ -276,7 +272,7 @@ var inputMap = processorContext.getInputMap();
 var params = processorContext.getConfigParameters();
 var entry = inputMap.entrySet().iterator().next();
 var tempFile = new Packages.java.io.File(params.get("tempDir"), params.get("outPrefix") + entry.getKey());
-entry.getValue().copyToFile(tempFile);    
+entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
@@ -298,8 +294,8 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 워크플로우를 통해 Experience Manager 활동을 자동화할 수 있습니다. 워크플로우는 특정 순서로 실행되는 일련의 단계로 구성됩니다. 각 단계에서는 페이지 활성화 또는 이메일 메시지 전송과 같은 별개의 활동을 수행합니다. 워크플로우는 저장소, 사용자 계정 및 Experience Manager 서비스의 자산과 상호 작용할 수 있습니다. 따라서 워크플로우가 복잡해질 수 있습니다.
 
 * 워크플로우를 만들기 전에 다음 사항을 고려하십시오.
-* 단계 출력을 모든 후속 단계에서 사용할 수 있어야 합니다.\
-   이전 단계에서 생성된 기존 출력을 업데이트(또는 삭제)할 수 있어야 합니다.
+* 단계 출력을 모든 후속 단계에서 사용할 수 있어야 합니다.
+이전 단계에서 생성된 기존 출력을 업데이트(또는 삭제)할 수 있어야 합니다.
 * 변경 가능한 변수는 단계 간에 사용자 지정 동적 데이터를 플로우하는 데 사용됩니다.
 
 워크플로우를 사용하여 파일을 처리하려면 다음 단계를 수행하십시오.
@@ -347,7 +343,7 @@ processWorkflowContext()에 대한 인수는 com.adobe.aemfd.watchfolder.workflo
 >
 >다른 시나리오에서 내용이 null인 setResult API를 호출하면 오류가 발생합니다.
 
-다음 예는 워크플로우 단계로 구현됩니다. 이 예에서 ECMAscript는 변수 stepCount를 사용하여 현재 워크플로우 인스턴스에서 단계가 호출된 횟수를 추적합니다.\
+다음 예는 워크플로우 단계로 구현됩니다. 이 예에서 ECMAscript는 변수 stepCount를 사용하여 현재 워크플로우 인스턴스에서 단계가 호출된 횟수를 추적합니다.
 출력 폴더의 이름은 현재 단계 번호, 원본 파일 이름 및 outPrefix 매개 변수에 지정된 접두사의 조합입니다.
 
 ECMAScript는 워크플로 컨텍스트 서비스에 대한 참조를 가져와서 WorkflowContextProcessor 인터페이스의 구현을 만듭니다. WorkflowContextProcessor 구현은 입력 파일을 받아 파일을 임시 위치에 복사하고 복사한 파일을 나타내는 문서를 반환합니다. 부울 변수 purgePrevious의 값을 기준으로 현재 단계에서는 현재 워크플로우 인스턴스에서 단계가 시작될 때 동일한 단계에 따라 마지막으로 생성된 출력을 삭제합니다. 결국 wfSvc.execute 메서드는 WorkflowContextProcessor 구현을 실행하기 위해 호출됩니다. 출력 문서의 컨텐츠는 감시 폴더 구성 노드에 언급된 실제 경로의 결과 폴더에 저장됩니다.
@@ -366,8 +362,8 @@ var impl = { processWorkflowContext: function (wfContext) {
     log.info("Inputs: " + inputMap); // Input map of type Map<String, Document>
     log.info("Params: " + paramMap); // Config params of type Map<String, Object>
     log.info("Old results: " + preResults);
-    log.info("Old variables: " + preVars);            
-    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);    
+    log.info("Old variables: " + preVars);
+    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);
     log.info("Current step number: " + currStepNumber);
     wfContext.setVariable("stepCount", currStepNumber);
     var entry = inputMap.entrySet().iterator().next();
@@ -378,7 +374,7 @@ var impl = { processWorkflowContext: function (wfContext) {
     wfContext.setResult(tempFile.getName(), outDoc);
     var prevStepOutName = paramMap.get("outPrefix") + "STEP-" + (currStepNumber - 1) + "-" + entry.getKey();
     if (preResults.containsKey(prevStepOutName) && paramMap.get("purgePrevious").booleanValue()) {
-        log.info("Purging previous step output " + prevStepOutName);        
+        log.info("Purging previous step output " + prevStepOutName);
         wfContext.setResult(prevStepOutName, null);
     }
 } }
@@ -631,8 +627,8 @@ ECMAScript는 PDF Generator의 createPDF API를 사용하여 Microsoft Word(.doc
 
 ### 워크플로우 만들기 {#create-a-workflow}
 
-1. 브라우저 창에서 AEM Workflow UI를 엽니다.\
-   https://[servername]:&#39;port&#39;/worklow
+1. 브라우저 창에서 AEM Workflow UI를 엽니다.
+https://[servername]:&#39;port&#39;/worklow
 
 1. 모델 보기에서 새로 만들기를 **클릭합니다**. 새 워크플로우 대화 상자에서 제목을 지정하고 **확인을****클릭합니다**.
 
@@ -642,7 +638,7 @@ ECMAScript는 PDF Generator의 createPDF API를 사용하여 Microsoft Word(.doc
 
 1. 기본 워크플로우 단계를 삭제합니다. 사이드 킥에서 프로세스 단계를 워크플로우로 드래그하여 놓습니다.
 
-   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
+   ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
 1. 프로세스 단계를 마우스 오른쪽 단추로 클릭하고 편집을 **선택합니다**. 단계 속성 창이 나타납니다.
 
@@ -660,8 +656,8 @@ ECMAScript는 PDF Generator의 createPDF API를 사용하여 Microsoft Word(.doc
 
 1. 노드에 다음 속성을 추가합니다.
 
-   * folderPath(문자열):정의된 시간 간격으로 검색할 폴더의 경로입니다. 폴더는 서버에 대한 전체 액세스 권한이 있는 모든 서버와 공유된 위치에 있어야 합니다.\
-      inputProcessorType(문자열):시작할 프로세스의 유형입니다. 이 자습서에서는 워크플로우를 지정합니다.
+   * folderPath(문자열):정의된 시간 간격으로 검색할 폴더의 경로입니다. 폴더는 서버에 대한 전체 액세스 권한이 있는 모든 서버와 공유된 위치에 있어야 합니다.
+inputProcessorType(문자열):시작할 프로세스의 유형입니다. 이 자습서에서는 워크플로우를 지정합니다.
 
    * inputProcessorId(문자열):inputProcessorId 속성의 동작은 inputProcessorType 속성에 지정된 값을 기반으로 합니다. 이 예에서 inputProcessorType 속성 값은 workflow입니다. 따라서 inputProcessorId 속성에 대해 PDFG 워크플로우의 다음 경로를 지정합니다./etc/workflow/models/pdfg/jcr:content/model
 
