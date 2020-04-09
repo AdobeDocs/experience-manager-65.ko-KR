@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -72,7 +72,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. 디렉토리에서 아카이브를 `[User_Home]/Projects/[your-project]`추출합니다.
 1. 프로젝트 ` [User_Home]/Projects/ `[디렉터리로 이동합니다]`/adobe-lc-mobileworkspace-src-[version]/ios` .
 1. Xcode에서 `AEM Forms.xcodeproj` 프로젝트를 엽니다.
-1. AEM **Forms를**&#x200B;클릭하고 **TARGETS**&#x200B;아래에서 **AEM Forms를**&#x200B;선택합니다. **빌드 설정 **탭을 선택하고 코드 **서명 권한** 섹션을 찾은 다음 디버그 및 릴리스 필드에서 다음 중 하나를 수행합니다.
+1. AEM **Forms를**&#x200B;클릭하고 **TARGETS**&#x200B;아래에서 **AEM Forms를**&#x200B;선택합니다. 빌드 **설정** 탭을 선택하고 코드 서명 **권한** 섹션을 찾은 다음 디버그 및 릴리스 필드에서 다음 중 하나를 수행합니다.
 
    * 표준 모바일 작업 공간 앱을 빌드하려면 필드를 지정하지 않은 상태로 두십시오
    * 보안 AEM Forms 앱을 [빌드하기 위해 iOS용 보안 AEM Forms 앱 빌드에 설명된 대로](/help/forms/using/building-secure-mobile-workspace-app.md) 필드를 지정합니다.
