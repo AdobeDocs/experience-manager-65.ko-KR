@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e46f0d6b842ff1a295d411c770f36dd82001bcb2
+source-git-commit: 4244ebbe8ceb3bef8d47e1e32817edbd11db4d9a
 
 ---
 
@@ -151,8 +151,8 @@ CRX [설명서의](/help/sites-administering/backup-and-restore.md) 백업 및 �
 
 다음 예에서:
 
-* Shirts **버전은** 버전 사용 기간이 2일 이상이므로 삭제됩니다.
-* 통가 **패션!** 버전 수가 5개 이상이므로 버전이 삭제됩니다.
+* 버전 **[!DNL Shirts]** 기간이 2일 이상이므로 버전이 삭제됩니다.
+* 버전 수가 5보다 많으므로 **[!DNL Tonga Fashions!]** 버전은 삭제됩니다.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -1033,7 +1033,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 이러한 경우 다음을 확인하십시오.
 
-* aem을 [시작하는 데 사용되는 JVM 설정](/help/sites-deploying/deploy.md#getting-started)
+* AEM을 [시작하는 데 사용되는 JVM 설정](/help/sites-deploying/deploy.md#getting-started)
 * 기술 자료:
 
    * [메모리 문제 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
