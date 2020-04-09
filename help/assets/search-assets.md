@@ -4,7 +4,7 @@ description: 필터 패널을 사용하여 AEM에서 필요한 자산을 찾는 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d29c86108fc4d856eefd9530f699d400445f2843
+source-git-commit: 25acffc6a0101be4ea6811b92c40bc76f554f5f0
 
 ---
 
@@ -24,7 +24,7 @@ AEM은 다음 사용 사례를 지원하며 이 문서에서는 이러한 사용
 | [검색 등급 및 향상](#searchrank) | [텍스트 추출](#extracttextupload) | [스마트 컬렉션](#collections) |
 | [고급 검색:검색 필터링 및 범위](#scope) | [사용자 정의 설명](#custompredicates) | [예기치 않은 결과 이해 및 문제 해결](#troubleshoot-unexpected-search-results-and-issues) |
 | [다른 솔루션 및 앱에서](#beyondomnisearch)검색:<ul><li>[Adobe Asset Link](#aal)</li><li>[브랜드 포털](#brandportal)</li><li>[AEM Desktop App](#desktopapp)</li><li>[Adobe Stock 이미지](#adobestock)</li><li>[다이내믹 미디어 자산](#dynamicmedia)</li></ul> |  |  |
-| [자산 선택기/선택](#assetselector) |  |  |
+| [자산 선택기](#assetselector) |  |  |
 | [제한](#limitations) 및 [팁](#tips) |  |  |
 | [예시](#samples) |  |  |
 
@@ -223,22 +223,22 @@ AEM 사용자 인터페이스 내에서 사용자는 Adobe Stock 자산을 검�
 
 AEM 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 컬렉션 [검색을](/help/assets/managing-collections-touch-ui.md)참조하십시오.
 
-## Asset selector {#assetselector}
+## 자산 선택기 {#assetselector}
 
-자산 선택기를 사용하면 DAM 자산을 특별한 방식으로 검색, 필터링 및 검색할 수 있습니다. 자산 선택기는 에서 사용할 수 `https://[aem-server]:[port]/aem/assetpicker.html`있습니다. 자산 선택기를 사용하여 선택한 자산의 메타데이터를 가져올 수 있습니다. 자산 유형(이미지, 비디오, 텍스트) 및 선택 모드(단일 또는 다중 선택)와 같은 지원되는 요청 매개 변수를 사용하여 시작할 수 있습니다. 이러한 매개 변수는 특정 검색 인스턴스에 대한 자산 선택기의 컨텍스트를 설정하며 선택 영역 전체에서 그대로 유지됩니다.
+자산 선택기를 사용하면 DAM 자산을 특별한 방식으로 검색, 필터링 및 검색할 수 있습니다. 자산 선택기는 에서 사용할 수 `https://[aem-server]:[port]/aem/assetpicker.html`있습니다. 이 기능을 사용하여 선택한 자산의 메타데이터를 가져올 수 있습니다. 자산 유형(이미지, 비디오, 텍스트) 및 선택 모드(단일 또는 다중 선택)와 같은 지원되는 요청 매개 변수를 사용하여 시작할 수 있습니다. 이러한 매개 변수는 특정 검색 인스턴스에 대한 자산 선택기의 컨텍스트를 설정하며 선택 항목 전체에서 그대로 유지됩니다.
 
-자산 선택기는 HTML5 Window.postMessage 메시지를 사용하여 선택한 자산에 대한 데이터를 수신자에게 보냅니다. 자산 선택기는 Granite의 기본 피커 어휘를 기반으로 합니다. 기본적으로 자산 선택기는 찾아보기 모드에서 작동합니다.
+자산 선택기는 HTML5 `Window.postMessage` 메시지를 사용하여 선택한 자산에 대한 데이터를 수신자에게 보냅니다. 자산 선택기는 검색 모드에서만 작동하며 Omnisearch 결과 페이지에서만 작동합니다.
 
 URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자산 선택기를 시작할 수 있습니다.
 
 | 이름 | 값 | 예 | 목적 |
 |---|---|---|---|
-| 리소스 접미사(B) | URL에 리소스 접미어로 폴더 경로:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 특정 폴더를 선택한 상태로 자산 선택기를 실행하려면(예: 폴더를 `/content/dam/we-retail/en/activities` 선택한 경우) URL은 다음과 같은 형식이어야 합니다. [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미어로 전달합니다. |
+| 리소스 접미사(B) | URL에 리소스 접미어로 폴더 경로:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 특정 폴더를 선택한 상태로 자산 선택기를 실행하려면(예: 폴더를 `/content/dam/we-retail/en/activities` 선택한 경우) URL이 다음과 같아야 합니다. [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미어로 전달합니다. |
 | mode | 단일, 다중 | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | 여러 모드에서 자산 선택기를 사용하여 여러 자산을 동시에 선택할 수 있습니다. |
-| mimetype | 자산의 MIMETYPE(`/jcr:content/metadata/dc:format`와일드카드도 지원됨) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | MIME 유형을 기반으로 자산을 필터링하는 데 사용합니다. |
+| mimetype | 자산의 MIMETYPE(`/jcr:content/metadata/dc:format`와일드카드도 지원됨) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png)</li></ul> | MIME 유형을 기반으로 자산을 필터링하는 데 사용합니다. |
 | 문제가 발생합니다 | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 [화강암 대화 상자]로 엽니다. 이 옵션은 [granite Path Field]를 통해 자산 선택기를 실행하고 이를 pickerSrc URL로 구성할 때만 적용됩니다. |
 | assettype(S) | 이미지, 문서, 멀티미디어, 보관 | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | 전달된 값을 기준으로 자산 유형을 필터링하려면 이 옵션을 사용합니다. |
-| 루트 | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | 자산 선택기의 루트 폴더를 지정하려면 이 옵션을 사용합니다. 이 경우 자산 선택기를 사용하면 루트 폴더 아래에서 하위 자산(직접/간접)만 선택할 수 있습니다. |
+| 루트 | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | 자산 선택기의 루트 폴더를 지정하려면 이 옵션을 사용합니다. 이 경우 자산 선택기를 사용하면 루트 폴더 아래에서 하위 자산(직접/간접)만 선택할 수 있습니다. |
 
 자산 선택기 인터페이스에 액세스하려면 로 `https://[aem_server]:[port]/aem/assetpicker`이동합니다. 원하는 폴더로 이동하고 하나 이상의 자산을 선택합니다. 또는 Omnisearch 상자에서 원하는 자산을 검색하고 필요에 따라 필터를 적용한 다음 선택합니다.
 
@@ -253,7 +253,7 @@ AEM 자산의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 * 검색 쿼리에 선행 공백을 입력하지 마십시오. 그렇지 않으면 검색이 작동하지 않습니다.
 * 검색된 결과에서 자산의 속성을 선택한 다음 검색을 취소한 후에도 AEM은 검색어를 계속 표시할 수 있습니다. <!-- (CQ-4273540) -->
 * 폴더 또는 파일 및 폴더를 검색할 때 어떤 매개 변수에서 검색 결과를 정렬할 수 없습니다.
-* Omnisearch 막대에 아무 것도 입력하지 않고 Return 키를 누르면 AEM이 폴더가 아닌 파일 전용 목록을 반환합니다. 키워드를 사용하지 않고 특별히 폴더를 검색하는 경우 AEM에서 아무 결과도 반환하지 않습니다.
+* Omnisearch 막대에 아무 것도 입력하지 않고 Return 키를 누르면 AEM이 폴더가 아닌 파일 전용 목록을 반환합니다. 키워드를 사용하지 않고 폴더를 특히 검색하는 경우 AEM에서 아무 결과도 반환하지 않습니다.
 * 모두 [!UICONTROL 선택] 확인란을 사용하여 카드 보기에서 검색된 처음 100개의 자산과 목록 보기에서 검색된 처음 200개의 자산만 선택할 수 있습니다. 사용자 인터페이스에서 더 많은 자산을 스크롤하고 로드하는 경우 모두 선택 [!UICONTROL 옵션을 사용하여 더 많은 자산을 선택할 수] 있습니다.
 
 시각적 검색 또는 유사성 검색에는 다음과 같은 제한이 있습니다.
