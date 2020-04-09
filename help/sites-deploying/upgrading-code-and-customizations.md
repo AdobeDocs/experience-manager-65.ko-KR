@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -66,7 +66,7 @@ AEM Uber jar에는 모든 AEM API가 Maven 프로젝트의 단일 종속성에 �
 
 ### 관리 리소스 확인자 위상 사용 {#phase-out-use-of-administrative-resource-resolver}
 
-AEM 6.0 이전의 코드 베이스에서 관리 세션 사용이 `SlingRepository.loginAdministrative()` 매우 `ResourceResolverFactory.getAdministrativeResourceResolver()` 일반적이었습니다.이러한 메서드는 너무 광범위한 액세스 수준을 제공하므로 보안상의 이유로 더 이상 사용되지 않습니다. [Sling의 향후 버전에서는 이러한 방법이 제거됩니다](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). 서비스 사용자를 대신 사용하기 위해 모든 코드를 리팩터링하는 것이 좋습니다. 서비스 사용자 및 관리 세션을 단계적으로 종료하는 [방법에 대한 자세한 내용은 /help/sites-administering/security-service-users.md#how to phase out admin sessions])에서 참조할 수 있습니다.
+AEM 6.0 이전의 코드 베이스에서 관리 세션 사용이 `SlingRepository.loginAdministrative()` 매우 `ResourceResolverFactory.getAdministrativeResourceResolver()` 일반적이었습니다.이러한 메서드는 너무 광범위한 액세스 수준을 제공하므로 보안상의 이유로 더 이상 사용되지 않습니다. [Sling의 향후 버전에서는 이러한 방법이 제거됩니다](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). 서비스 사용자를 대신 사용하기 위해 모든 코드를 리팩터링하는 것이 좋습니다. 서비스 사용자 및 관리 세션을 단계적으로 종료하는 [방법에 대한 자세한 내용은 여기에서](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions)확인할 수 있습니다.
 
 ### 쿼리 및 Oak 색인 {#queries-and-oak-indexes}
 
@@ -146,7 +146,7 @@ AEM 6.0 이전의 코드 베이스에서 관리 세션 사용이 `SlingRepositor
 
 ### ContextHub 구성 복구 {#recovering-contexthub-configurations}
 
-ContextHub 구성은 업그레이드에 의해 영향을 받습니다. 기존 ContextHub 구성을 복구하는 방법에 대한 지침은 [여기에서]확인할 수 있습니다(/help/sites-administering/contexthub-config.md#recovering contexthub configurations after upgrading).
+ContextHub 구성은 업그레이드의 영향을 받습니다. 기존 ContextHub 구성을 복구하는 방법에 대한 지침은 [여기에서](/help/sites-administering/contexthub-config.md#recovering-contexthub-configurations-after-upgrading)확인할 수 있습니다.
 
 ### 워크플로우 사용자 정의 {#workflow-customizations}
 
