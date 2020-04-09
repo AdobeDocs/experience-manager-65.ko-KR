@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 3fe5f243c3e39029c1605a1a1977a48dba595d64
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -64,7 +64,9 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
 * 호출할 AEM Forms 서비스. 클라이언트 응용 프로그램은 하나 이상의 서비스를 호출할 수 있습니다.
 * AEM Forms 서비스를 호출할 모드. EJB 또는 SOAP 모드를 사용할 수 있습니다. 연결 [속성](invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
 
->[!NOTE] (턴키만 해당) EJB용 서버 IP를 지정하는 명령으로 AEM Forms 서버를 `standalone.bat -b <Server IP> -c lc_turnkey.xml` 시작합니다.
+>[!NOTE]
+>
+>(턴키만 해당) EJB용 서버 IP를 지정하는 명령으로 AEM Forms 서버를 `standalone.bat -b <Server IP> -c lc_turnkey.xml` 시작합니다.
 
 * AEM Forms가 배포된 J2EE 응용 프로그램 서버.
 
@@ -172,7 +174,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
    <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
-   <td><p>adobe-pdfuility-client.jar</p></td>
+   <td><p>adobe-pdfutility-client.jar</p></td>
    <td><p>PDF 유틸리티 또는 XMP 유틸리티 서비스를 호출하는 데 필요합니다.</p></td>
    <td><p>&lt;<i>설치 디렉토리</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -189,7 +191,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
   <tr>
    <td>
     <ul>
-     <li><p>adobe-rights-management-client.jar</p></li>
+     <li><p>adobe-rightsmanagement-client.jar</p></li>
      <li><p>namespace.jar</p></li>
      <li><p>jaxb-api.jar</p></li>
      <li><p>jaxb-impl.jar</p></li>
@@ -246,7 +248,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
      <li><p>jaxrpc.jar</p> </li>
      <li><p>log4j.jar</p> </li>
      <li><p>mail.jar</p> </li>
-     <li><p>saj.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
      <li><p>wsdl4j.jar</p> </li>
      <li><p>xalan.jar</p> </li>
      <li><p>xbean.jar</p> </li>
@@ -355,7 +357,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
      <li><p>jaxrpc.jar</p> </li>
      <li><p>log4j.jar</p> </li>
      <li><p>mail.jar</p> </li>
-     <li><p>saj.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
      <li><p>wsdl4j.jar</p> </li>
      <li><p>xalan.jar</p> </li>
      <li><p>xbean.jar</p> </li>
@@ -384,7 +386,7 @@ Java API를 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호
      <li><p>jaxrpc.jar</p> </li>
      <li><p>log4j.jar</p> </li>
      <li><p>mail.jar</p> </li>
-     <li><p>saj.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
      <li><p>wsdl4j.jar</p> </li>
      <li><p>xalan.jar</p> </li>
      <li><p>xbean.jar</p> </li>
@@ -403,7 +405,7 @@ LiveCycle에서 AEM Forms로 업그레이드하는 경우 Java 프로젝트의 �
 
 AEM Forms로 업그레이드하는 경우 Rights Management 서비스를 호출하는 Java 응용 프로그램을 사용하려면 다음 JAR 파일의 AEM Forms 버전을 포함합니다.
 
-* adobe-rights-management-client.jar
+* adobe-rightsmanagement-client.jar
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 
@@ -988,7 +990,7 @@ Java 클라이언트 라이브러리를 사용하고 다음 단계를 수행하�
 1. 저장소에 추가할 XDP 파일을 저장하는 `com.adobe.idp.Document` `java.io.FileInputStream` 객체를 전달하여 객체를 만듭니다. 자세한 내용은 [InputStream 객체를](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object)기반으로 문서 만들기를 참조하십시오.
 1. 객체의 `com.adobe.idp.Document` 메서드를 호출하여 객체의 컨텐츠를 `ResourceContent` `ResourceContent` `setDataDocument` 객체에 추가합니다. 객체를 `com.adobe.idp.Document` 전달합니다.
 1. 객체의 `ResourceContent` 메서드를 호출하고 전달하여 리포지토리에 추가할 XDP 파일의 MIME 유형을 `setMimeType` `application/vnd.adobe.xdp+xml`설정합니다.
-1. 개체 &#39;s 메서드를 호출하고 `ResourceContent` 개체를 전달하여 개체의 내용을 `Resource` 개체에 `Resource` 추가합니다 `setContent` `ResourceContent` .
+1. 개체 &#39;s `ResourceContent` 메서드를 호출하고 `Resource` 개체를 전달하여 개체의 내용을 개체에 `Resource` 추가합니다 `setContent` `ResourceContent` .
 1. 객체의 &#39;s `Resource` `setDescription` 메서드를 호출하고 리소스의 설명을 나타내는 문자열 값을 전달하여 리소스에 대한 설명을 추가합니다.
 1. 객체의 `ResourceRepositoryClient` `writeResource` 메서드를 호출하고 다음 값을 전달하여 양식 디자인을 저장소에 추가합니다.
 
