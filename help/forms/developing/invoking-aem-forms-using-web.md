@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -253,7 +253,7 @@ AEM Forms 서비스 작업에 입력 값으로 `BLOB` 유형이 필요한 경우
 
 >[!NOTE]
 >
->MTOM 전송 프로토콜을 사용하는 JAX WS 기반 애플리케이션은 전송 및 수신 데이터의 25MB로 제한됩니다. 이 제한은 JAX-WS의 버그로 인한 것입니다. 전송 및 수신한 파일의 크기가 25MB를 초과하는 경우 MTOM 대신 SwaRef 전송 프로토콜을 사용하십시오. 그렇지 않으면 `OutOfMemory`* 예외가 발생할 수 있습니다.*
+>MTOM 전송 프로토콜을 사용하는 JAX WS 기반 애플리케이션은 전송 및 수신 데이터의 25MB로 제한됩니다. 이 제한은 JAX-WS의 버그로 인한 것입니다. 전송 및 수신한 파일의 크기가 25MB를 초과하는 경우 MTOM 대신 SwaRef 전송 프로토콜을 사용하십시오. 그렇지 않으면 `OutOfMemory` 예외가 발생할 가능성이 있습니다.
 
 **base64로 인코딩된 바이트 배열의 MTOM 전송**
 
@@ -553,7 +553,7 @@ Apache Axis WSDL2Java 도구를 사용하여 Forms 서비스를 Java 프록시 �
    * jaxrpc.jar
    * log4j.jar
    * mail.jar
-   * saj.jar
+   * saaj.jar
    * wsdl4j.jar
    * xalan.jar
    * xbean.jar
@@ -674,7 +674,7 @@ Java 프록시 클래스 및 Base64를 사용하여 AEM Forms 서비스를 호�
 
    >[!NOTE]
    >
-   >AEM `hiro-xp`Forms를 호스팅하는 J2EE 애플리케이션 서버의 IP 주소로 대체합니다.
+   >AEM Forms `hiro-xp` *를 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 대체합니다.*
 
 1. JAX-WS를 사용하여 만든 Java 프록시 클래스를 JAR 파일로 패키지화합니다.
 1. 다음 경로에 있는 Java 프록시 JAR 파일과 JAR 파일을 포함합니다.
@@ -768,7 +768,7 @@ AEM `localhost` Forms를 호스팅하는 J2EE 응용 프로그램 서버의 IP �
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
    ```
 
-1. 이동을 **클릭한**&#x200B;다음 확인을 클릭합니다&#x200B;****.
+1. 이동을 **클릭한** 다음 확인을 **클릭합니다**.
 
 ### .NET 프로젝트에서 MTOM을 사용하여 서비스 호출 {#invoking-a-service-using-mtom-in-a-net-project}
 
@@ -786,7 +786,7 @@ AEM `localhost` Forms를 호스팅하는 J2EE 응용 프로그램 서버의 IP �
 
    >[!NOTE]
    >
-   >AEM `hiro-xp`Forms를 호스팅하는 J2EE 애플리케이션 서버의 IP 주소로 대체합니다.
+   >AEM Forms `hiro-xp` *를 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 대체합니다.*
 
 1. 데이터 `System.ServiceModel.BasicHttpBinding` 멤버의 값을 가져와 개체를 `EncryptDocumentClient.Endpoint.Binding` 만듭니다. 반환 값을 로 `BasicHttpBinding`캐스팅합니다.
 1. 객체의 `System.ServiceModel.BasicHttpBinding` 데이터 `MessageEncoding` 멤버를 로 `WSMessageEncoding.Mtom`설정합니다. 이 값을 사용하면 MTOM이 사용됩니다.
@@ -867,7 +867,7 @@ JAX-WS 및 SwaRef를 사용하여 만든 Java 프록시 파일을 사용하여 `
 
    >[!NOTE]
    >
-   >AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 `hiro-xp`*를 바꿉니다.*
+   >AEM Forms `hiro-xp` *를 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 대체합니다.*
 
 1. JAX-WS를 사용하여 만든 Java 프록시 클래스를 JAR 파일로 패키지화합니다.
 1. 다음 경로에 있는 Java 프록시 JAR 파일과 JAR 파일을 포함합니다.
@@ -989,7 +989,7 @@ HTTP를 통해 Java 프록시 클래스 및 BLOB 데이터를 사용하여 AEM F
 
    >[!NOTE]
    >
-   >AEM Forms를 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 `hiro-xp`*를 바꿉니다.*
+   >AEM Forms `hiro-xp` *를 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 대체합니다.*
 
 1. JAX-WS를 사용하여 만든 Java 프록시 클래스를 JAR 파일로 패키지화합니다.
 1. 다음 경로에 있는 Java 프록시 JAR 파일과 JAR 파일을 포함합니다.
@@ -1037,7 +1037,7 @@ SOAP와 첨부 파일을 사용하여 AEM Forms 서비스를 호출할 수 있�
 1. 프로세스로 전달된 안전하지 않은 PDF 문서를 가져옵니다. 이 작업은 `SetValue` 작업을 기반으로 합니다. 이 프로세스의 입력 매개 변수는 `document` 프로세스 변수 `inDoc`입니다.
 1. 암호로 PDF 문서를 암호화합니다. 이 작업은 `PasswordEncryptPDF` 작업을 기반으로 합니다. 암호로 암호화된 PDF 문서는 이름이 `outDoc`지정된 프로세스 변수로 반환됩니다.
 
-이 프로세스는 기존 AEM Forms 프로세스를 기반으로 하지 않습니다. 코드 예제를 따라 하려면 워크벤치를 사용하여 `MyApplication/EncryptDocument`**라는 프로세스를 만듭니다. (워크벤치 [사용을 참조하십시오](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+이 프로세스는 기존 AEM Forms 프로세스를 기반으로 하지 않습니다. 코드 예제를 따라 하려면 Workbench를 `MyApplication/EncryptDocument` 사용하여 명명된 프로세스를 만듭니다. (워크벤치 [사용을 참조하십시오](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 >[!NOTE]
 >
@@ -1487,7 +1487,7 @@ PDF 생성 `htmlToPDF` 작업과 같은 AEM Forms 서비스 작업을 비동기�
 
 JAX-WS를 사용하여 Java 프록시 파일을 만들 때 이 XML 파일을 사용합니다. (JAX- [WS를 사용하여 Java 프록시 클래스 만들기를 참조하십시오](#creating-java-proxy-classes-using-jax-ws).)
 
-&#x200B;- `b` 명령줄 옵션을 사용하여 JAX-WS 도구(wsimport.exe)를 실행할 때 이 XML 파일을 참조합니다. 바인딩 XML 파일의 `wsdlLocation` 요소를 업데이트하여 AEM Forms의 URL을 지정합니다.
+- `b` 명령줄 옵션을 사용하여 JAX-WS 도구(wsimport.exe)를 실행할 때 이 XML 파일을 참조합니다. 바인딩 XML 파일의 `wsdlLocation` 요소를 업데이트하여 AEM Forms의 URL을 지정합니다.
 
 비동기 호출이 작동하는지 확인하려면 끝점 URL 값을 수정하고 `async=true`지정합니다. 예를 들어 JAX-WS로 만든 Java 프록시 파일의 경우 에 대해 다음을 `BindingProvider.ENDPOINT_ADDRESS_PROPERTY`지정합니다.
 
