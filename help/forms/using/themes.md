@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -560,7 +560,7 @@ TypeKit 구성을 사용하도록 테마를 구성하려면 다음 단계를 수
 
    세로 막대에서 양식의 속성을 편집할 수 있습니다.
 
-1. 세로 막대의** 기본**에서 테마 **드롭다운에서 테마를** 선택하고 **완료** ![확인 단추를 클릭합니다](assets/check-button.png)
+1. 세로 막대의 기본 **아래에서**&#x200B;테마 **드롭다운에서** 테마를 선택하고 **** 완료 ![확인 단추를 클릭합니다](assets/check-button.png)
 
 ### 런타임 시 양식의 테마 변경 {#change-theme-of-a-form-at-runtime}
 
