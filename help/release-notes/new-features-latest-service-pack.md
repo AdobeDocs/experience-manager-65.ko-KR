@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -98,9 +98,13 @@ Adobe Experience Manager Forms에는 다음과 같은 액세서빌러티 개선 
 
 ## 이전 AEM 6.5 서비스 팩의 주요 기능 {#key-features-previous-service-packs}
 
-### 다이내믹 미디어용 스마트 이미징(6.5.3.0) {#smart-imaging}
+### 다이내믹 미디어를 위한 스마트 이미징 {#smart-imaging}
 
 스마트 이미징은 각 사용자의 고유한 보기 특성을 사용하여 경험에 맞게 최적화된 이미지를 자동으로 제공하여 향상된 성능과 참여를 유도합니다. 스마트 이미징은 기존 이미지 사전 설정과 연동되며 전달 마지막 순간에 지능적인 기능을 사용하여 브라우저 또는 네트워크 연결 속도에 따라 이미지 파일 크기를 더욱 줄일 수 있습니다. 스마트 [이미징을 참조하십시오](../assets/imaging-faq.md).
+
+### 다이내믹 미디어용 비디오 프로파일의 스마트 자르기(6.5.3.0) {#smart-crop-video}
+
+비디오 프로파일에서 사용할 수 있는 고급 비디오 자르기(선택 사항) - Adobe Sensei의 인공 지능 기능을 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자를 수 있는 도구입니다. 비디오 [프로파일에서](../assets/video-profiles.md)스마트 자르기 사용을 참조하십시오.
 
 ### AEM Assets 시각적 검색(6.5.2.0) {#visual-search}
 
