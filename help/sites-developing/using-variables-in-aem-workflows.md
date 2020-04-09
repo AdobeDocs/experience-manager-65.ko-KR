@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc042696506bf1691c2eeffc6ab941be85fa274c
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -76,12 +76,12 @@ AEM Forms 워크플로우에서 사용할 수 있는 추가적인 복잡한 데�
 
 변수의 데이터 유형에 따라 다음 옵션을 사용하여 변수의 값을 설정할 수 있습니다.
 
-* **** 리터럴:지정할 정확한 값을 알고 있는 경우 옵션을 사용합니다.
-* **** 표현식:사용할 값이 표현식을 기반으로 계산될 때 이 옵션을 사용합니다. 표현식은 제공된 표현식 편집기에서 만들어집니다.
-* **** JSON 점 표기법:JSON 또는 FDM 유형 변수에서 값을 검색하려면 이 옵션을 사용합니다.
-* **** XPATH:XML 유형 변수에서 값을 검색하려면 이 옵션을 사용합니다.
-* **** 페이로드 관련:페이로드 관련 경로에서 변수에 저장할 값을 사용할 수 있는 경우 이 옵션을 사용합니다.
-* **** 절대 경로:변수에 저장할 값을 절대 경로에서 사용할 수 있는 경우 이 옵션을 사용합니다.
+* **리터럴:** 지정할 정확한 값을 알고 있는 경우 옵션을 사용합니다.
+* **표현식:** 사용할 값이 표현식을 기반으로 계산될 때 이 옵션을 사용합니다. 표현식은 제공된 표현식 편집기에서 만들어집니다.
+* **JSON 점 표기법:** JSON 또는 FDM 유형 변수에서 값을 검색하려면 이 옵션을 사용합니다.
+* **XPATH:** XML 유형 변수에서 값을 검색하려면 이 옵션을 사용합니다.
+* **페이로드 관련:** 페이로드 관련 경로에서 변수에 저장할 값을 사용할 수 있는 경우 이 옵션을 사용합니다.
+* **절대 경로:** 변수에 저장할 값을 절대 경로에서 사용할 수 있는 경우 이 옵션을 사용합니다.
 
 JSON DOT 표기법 또는 XPATH 표기법을 사용하여 JSON 또는 XML 유형 변수의 특정 요소를 업데이트할 수도 있습니다.
 
@@ -190,7 +190,7 @@ ECMA 스크립트의 다음 API를 사용하여 데이터 유형에 따라 기�
 
 | 변수 데이터 유형 | API |
 |---|---|
-| 기본(Long, Double, Boolean, Date 및 String) | workItem.getWorkflowData().getMetaDataMap().get(variableName, type) |
+| 기본(Long, Double, Boolean, Date 및 String) | workItem.getWorkflow 파섹 |
 | XML | Packages.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
@@ -226,7 +226,7 @@ API를 사용하여 변수를 설정하고 이를 전달하여 워크플로우 �
 
 [workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) 는 모델, wfData 및 metaData를 인수로 사용합니다. MetaDataMap을 사용하여 변수 값을 설정합니다.
 
-이 API에서 **variableName** 변수는 **value **using metaData.put(variableName, value);
+이 API에서 **variableName** 변수는 metaData.put(variableName, value);을 사용하여 **값으로** 설정됩니다.
 
 ```java
 import com.adobe.granite.workflow.model.WorkflowModel;
