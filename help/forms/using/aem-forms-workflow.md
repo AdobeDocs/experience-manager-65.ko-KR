@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -107,7 +107,7 @@ AEM 파섹 워크플로우 모델을 만드는 단계별 지침은 워크플로�
 
    ![OR 분할 예](assets/orsplit_branch1_active_new.png)
 
-   **분기 2에 대한 라우팅 표현식**
+   **분기 1에 대한 라우팅 표현식**
 
    사용자가 AEM 받은 **편지함에서** 거부를 누르면 분기 2가 활성화됩니다.
 
@@ -271,4 +271,4 @@ AEM 워크플로우의 작업 할당 및 이메일 보내기 단계를 사용하
 
 ### 워크플로우 인스턴스 제거 {#purge-workflow-instances}
 
-워크플로우 인스턴스 수를 최소화하면 워크플로우 엔진의 성능이 향상되므로 저장소에서 완료되었거나 실행 중인 워크플로우 인스턴스를 정기적으로 제거할 수 있습니다. 자세한 내용은 워크플로우 [인스턴스의 정기적인 제거](/help/sites-administering/workflows-administering.md#regular of workflow instances)를 참조하십시오.
+워크플로우 인스턴스 수를 최소화하면 워크플로우 엔진의 성능이 향상되므로 저장소에서 완료되었거나 실행 중인 워크플로우 인스턴스를 정기적으로 제거할 수 있습니다. 자세한 내용은 워크플로우 인스턴스 [정기적인 제거를 참조하십시오](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
