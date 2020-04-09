@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -58,9 +58,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    1. PTO 요약을 **생성하는 프로세스를 생성하고 이** 요약을 **하위 프로세스로** 사용하여운영 체제에서 태스크지정 작업을수행합니다.
    1. 사원 **이름**, **employee** ID **,**&#x200B;유급휴가 **사유**, **총 일수,** 총 일수, Person 및 nodeName새 프로세스에서 입력 변수로 정의합니다. 이러한 변수는 제출된 양식 데이터로 전달됩니다.
 
-      또한 요약 URL을 설정하는 동안 사용될 출력 변수 **ptoNodePath **를 정의합니다.
+      또한 요약 URL **을** 설정하는 동안 사용할 출력 변수를 정의합니다.
 
-   1. PTO 요약 **생성** 프로세스에서 값 **** 설정 구성 요소를 사용하여 **nodeProperty **(**nodeProp) 맵에서 입력 상세내역을**&#x200B;설정합니다.
+   1. PTO 요약 ******생성 프로세스에서** 세트 값 **구성 요소를 사용하여 nodeProperty**(nodePropsProp **) 맵의 입력 상세내역을**&#x200B;설정합니다.
 
       이 맵의 키는 이전 단계에서 HTML 렌더러에 정의된 키와 같아야 합니다.
 
