@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -298,9 +298,9 @@ AEM Forms 서버에서 Target을 구성하려면 AEM [Forms에서 Target 설정 
 1. 양식 및 문서 UI로 이동하여 양식을 선택하고 자세히 **를**&#x200B;클릭한 다음 **A/B 테스트 시작을 선택합니다**.
 1. 이제 다음 URL을 사용하여 크롬 브라우저에서 양식을 여러 번 엽니다.
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
 
-   >[!NOTE] 참고:다음에 양식을 열기 전에 브라우저의 **쿠키 지속성에서** mbox라는 이름의 쿠키를 제거합니다. 양식의 경험 A와 B가 무작위로 표시됩니다.
+   >[!NOTE] 다음에 양식을 열기 전에 브라우저의 **쿠키 지속성에서** mbox라는 이름의 쿠키를 제거합니다. 양식의 경험 A와 B가 무작위로 표시됩니다.
 
 1. 양식을 선택하고 자세히 **를**&#x200B;클릭한 다음 A/ **B 테스트 보고서를 클릭합니다**. 테스트를 시작했기 때문에 보고서에서 많은 데이터를 찾을 수 없습니다. 이제 몇 가지 시드 데이터를 제공하여 A/B 테스트 보고서가 어떻게 표시되는지 살펴보겠습니다.
 1. CRXDE Lite를 열고 다음 파일을 백업합니다./libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
@@ -527,7 +527,7 @@ We.Finance, 때때로 We.Finance는 고객이 직면할 수 있는 모든 문제
 
 We.Finance는 모기지 애플리케이션의 성능을 분석하고 지속적으로 개선하며 AEM Forms와 Target의 통합을 활용하여 A/B 테스트를 만듭니다. 또한 애플리케이션 양식의 다양한 경험을 제공하고 양식 작성 및 제출 시 전환율을 향상시킬 수 있는 경험을 식별할 수 있습니다.
 
-AEM Forms 서버에서 Target을 구성하려면 [AEM Forms에서 Target 설정 및 통합을 참조하십시오](../../forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
+AEM Forms 서버에서 Target을 구성하려면 AEM [Forms에서 Target 설정 및 통합을 참조하십시오](../../forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
 작성 인스턴스에서 다음 단계를 수행하여 We.Finance 모기지 신청 양식에 대한 A/B 테스트 생성을 경험하십시오.
 
@@ -546,7 +546,7 @@ AEM Forms 서버에서 Target을 구성하려면 [AEM Forms에서 Target 설정 
 1. 기본 경험 A와 다른 경험을 만들려면 원하는 대로 양식을 수정합니다.
 1. 양식 및 문서 UI로 이동하여 양식을 선택하고 자세히 **를**&#x200B;클릭한 다음 **A/B 테스트 시작을 선택합니다**.
 1. 이제 다음 URL을 사용하여 크롬 브라우저에서 양식을 여러 번 엽니다.
-   `https://&lt;hostname&gt;:&lt;port&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
 
    >[!NOTE]
    > 다음에 양식을 열기 전에 브라우저의 **쿠키 지속성에서** mbox라는 이름의 쿠키를 제거합니다. 양식의 경험 A와 B가 무작위로 표시됩니다.
