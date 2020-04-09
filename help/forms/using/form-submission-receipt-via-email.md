@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
 
 >[!NOTE]
 >
->이메일 작업을 사용하려면 메일 서비스 []구성(/help/sites-administering/notification.md#configuring the mail service)에 설명된 대로 AEM 메일 서비스를 구성해야 합니다.
+>이메일 작업을 사용하려면 메일 서비스 [](/help/sites-administering/notification.md#configuring-the-mail-service)구성에 설명된 대로 AEM 메일 서비스를 구성해야 합니다.
 
 ### 적응형 양식에서 이메일 작업 활성화 {#enabling-email-action-on-an-adaptive-form}
 
