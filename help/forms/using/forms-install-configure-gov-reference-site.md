@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -40,18 +40,18 @@ source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ### 이 패키지에 포함된 제품 {#what-does-this-package-include}
 
-AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는 다른 여러 하위 패키지 및 서비스를 포함하는 패키지로 제공됩니다. 패키지에는 다음 모듈이 포함되어 있습니다.
+AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;버전>.zip**)는 다른 여러 하위 패키지 및 서비스를 포함하는 패키지로 제공됩니다. 패키지에는 다음 모듈이 포함되어 있습니다.
 
-* **we-gov-forms.pkg.all-&lt;버전>.zip** -* 전체 데모 패키지*
+* **we-gov-forms.pkg.all-&lt;버전>.zip** - *전체 데모 패키지*
 
    * **we-gov-forms.ui.apps-&lt;버전>.zip** *- 모든 구성 요소, 클라이언트 라이브러리, 샘플 사용자, 워크플로우 모델 등을 포함합니다.*
 
-      * **we-gov-forms.core-&lt;version>.jar*** - 모든 OSGI 서비스, 사용자 정의 워크플로우 단계 구현 등이 포함되어 있습니다.*
+      * **we-gov-forms.core-&lt;version>.jar** - *모든 OSGI 서비스, 사용자 정의 워크플로우 단계 구현 등이 포함되어 있습니다.*
 
       * **core.wcm.components.all-2.0.4.zip** - *샘플 WCM 구성 요소 컬렉션*
 
       * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *사이트용 AEM 사이트 격자 레이아웃 패키지 페이지 열 컨트롤*
-   * **we-gov-forms.ui.content-&lt;버전>.zip*** - 모든 컨텐츠, 페이지, 이미지, *양식, 대화형 통신 에셋 등을 포함합니다.
+   * **we-gov-forms.ui.content-&lt;버전>.zip** - *모든 컨텐츠, 페이지, 이미지, 양식, 대화형 통신 자산 등이 포함되어 있습니다.*
 
    * **we-gov-forms.config.public-&lt;version>.zip** - *양식 데이터 모델 및 서비스 바인딩 문제를 방지하기 위해 자리 표시자 클라우드 구성을 비롯한 모든 기본 구성 노드를 포함합니다.*
 
@@ -115,7 +115,7 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 
 새 패키지 버전을 설치하려면 4.1 및 4.2에 정의된 단계를 따르십시오.다른 이전 패키지가 이미 설치되어 있는 동안 새 패키지 버전을 설치할 수 있지만, 먼저 이전 패키지 버전을 제거하는 것이 좋습니다. 이렇게 하려면 아래 절차를 따르십시오.
 
-1. https://&lt; *aemserver>:&lt;port>/crx/packmgr/index.jsp로 이동합니다.*
+1. https://&lt; *aemserver>:&lt;port>/crx/packmgr/index.jsp으로 이동합니다.*
 1. 이전 **we-gov-forms.pkg.all-&lt;version>.zip** 파일을 찾습니다.
 1. &quot;자세히&quot; 옵션을 선택합니다.
 1. 드롭다운에서 &quot;제거&quot; 옵션을 선택합니다.
@@ -130,7 +130,7 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 
 ### 가상 사용자 구성 {#fictional-user-configuration}
 
-1. https://&lt; *aemserver>:&lt;port>/libs/granite/security/content/groupadmin.html로 이동합니다.*
+1. https://&lt; *aemserver>:&lt;port>/libs/granite/security/content/groupadmin.html으로 이동합니다.*
 1. &quot;**워크플로우**&quot;를 검색합니다.
 1. &quot;**workflow-users**&quot; 그룹을 선택하고 &quot;속성&quot;을 클릭합니다.
 1. &quot;구성원&quot; 탭으로 이동합니다.
@@ -142,14 +142,14 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 1. 메뉴 모음에서 &quot;저장 및 닫기&quot;를 클릭합니다.
 1. &quot;**analytics**&quot;를 검색하고, &quot;Analytics Administrators&quot;**그룹을**&#x200B;선택하고, &quot;We.Gov Form **Users**&quot; 그룹을 구성원으로 추가하여 2-7단계를 반복합니다.
 1. &quot;**양식 사용자**&quot;를 검색하고 &quot;**양식 파워 사용자**&quot; 그룹을 선택한 다음 &quot;We.Gov 양식 사용자&#x200B;**&quot; 그룹을 멤버로 추가하여 2-7단계를**&#x200B;반복합니다.
-1. &quot;**양식 사용자**&quot;를 검색하고, &quot;**양식 사용자**&quot; 그룹을 선택한 다음, 이번에는 &quot;** We.Gov 사용자**&quot; 그룹을 구성원으로 추가하여 2-7단계를 반복합니다.
+1. &quot;**양식 사용자**&quot;를 검색하고, &quot;**양식 사용자**&quot; 그룹을 선택한 다음, 이번에는 &quot;We.Gov 사용자&#x200B;**&quot; 그룹을**&#x200B;구성원으로 추가하여 2-7단계를 반복합니다.
 
 ### 이메일 서버 구성 {#email-server-configuration}
 
 1. 설치 설명서 검토 [이메일 알림 구성](/help/sites-administering/notification.md)
 
 1. https://&lt; *aemserver>:&lt;port>/system/console/configMgr로 이동합니다.*
-1. 구성할 **Day CQ Mail Service **서비스를 찾아 클릭합니다.
+1. 구성할 Day CQ **Mail Service를** 찾아 클릭합니다.
 
    ![일 CQ 메일 서비스 구성](assets/day_cq_mail_service.jpg)
 
@@ -157,7 +157,7 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 
    1. **SMTP 서버 호스트 이름**:e.g(smtp.gmail.com)
    1. **서버 포트**:예: SSL을 사용하는 이메일의 경우 465)
-   1. **** SMTP 사용자:demo@ &lt;companyname> .com
+   1. **SMTP 사용자:** demo@ &lt;companyname> .com
    1. **&quot;보낸 사람&quot; 주소**:aemformsdemo@adobe.com
    ![SMTP 구성](assets/configure_smtp.jpg)
 
@@ -234,8 +234,8 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 1. &quot;인증 설정&quot; 탭으로 이동합니다.
 1. 다음 세부 정보를 입력합니다.
 
-   1. **** 서비스 루트:예: https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/
-   1. **** 인증 유형:OAuth 2.0
+   1. **서비스 루트:** 예: https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/
+   1. **인증 유형:** OAuth 2.0
    1. **인증 설정** ( [이 정보를 수집하려면 MS Dynamics 클라우드 구성 설정](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) 참조):
 
       1. 클라이언트 ID - 애플리케이션 ID라고도 함
@@ -273,11 +273,11 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 1. 오른쪽 하단에 있는 &quot;사용자 정의&quot; 및 &quot;개발자 리소스&quot;를 클릭합니다.
 1. 서비스 루트 URL은 여기에서 찾을 수 있습니다.e-g
 
-* [https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
+   *[https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
 
 1. 새로 고침 및 액세스 토큰 URL에 대한 자세한 내용은 다음 링크를 참조하십시오.
 
-* [https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
+   *[https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
 
 #### 양식 데이터 모델 테스트 {#testing-the-form-data-model}
 
@@ -326,7 +326,7 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 
 이 패키지는 Adobe Analytics에 연결하도록 미리 구성되어 있습니다. 이 구성을 업데이트할 수 있도록 아래 단계가 제공됩니다.
 
-1. https://&lt; *aemserver>:&lt;port>/libs/cq/core/content/tools/cloudservices.html로 이동합니다.*
+1. https://&lt; *aemserver>:&lt;port>/libs/cq/core/content/tools/cloudservices.html으로 이동합니다.*
 1. Adobe Analytics 섹션을 찾아 &quot;구성 표시&quot; 링크를 선택합니다.
 1. &quot;Adobe.Gov Adobe Analytics(Analytics 구성)&quot; 구성을 선택합니다.
 
@@ -384,11 +384,11 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 선택적으로 Adobe Analytics로 직접 이동하여 분석 데이터를 볼 수 있습니다.
 
 1. https://my.omniture.com/login/으로 [이동](https://my.omniture.com/login/)
-1. 자격 증명을 사용하여 로그인합니다.
+1. 자격 증명을 사용하여 로그인:
 
-   1. **** 회사:AEM Forms 데모
-   1. **** 사용자:&lt;요청 시 사용 가능>
-   1. **** 암호:&lt;요청 시 사용 가능>
+   1. **회사:** AEM Forms 데모
+   1. **사용자:** &lt;요청 시 사용 가능>
+   1. **암호:** &lt;요청 시 사용 가능>
 
 1. 보고서 세트에서 &quot;We.Gov 참조 사이트&quot;를 선택합니다.
 
@@ -407,7 +407,7 @@ AEM Forms We.Gov 데모 패키지( **we-gov-forms.pkg.all-&lt;버전>.zip **)는
 이 데모 패키지에는 대상 작성자 서버에서 WCM 필터 서비스의 동작을 제어하는 OSGI 서비스 구성 파일이 포함되어 있습니다. 이 구성을 통해 서버는 데모를 허용하기 위해 비활성화된 작성자 모드(?wcmmode=disabled)에서 작동합니다. 이 구성을 업데이트하고 작성을 활성화하려면 다음 단계를 수행하십시오.
 
 1. https://&lt; *aemserver>:&lt;port>/system/console/configMgr로 이동합니다.*
-1. 구성할 **Day CQ WCM 필터 **서비스 서비스를 찾아 클릭합니다.
+1. 구성할 Day CQ WCM **Filter** Service 서비스를 찾아 클릭합니다.
 
    ![일 CQ WCM 필터](assets/day_cq_wcm_filter.jpg)
 
@@ -489,7 +489,7 @@ Project DAM Assets에는 We.Gov 로고와 이미지도 포함되어 있습니다
 
 ### 워크플로우 맞춤화 {#workflow-customization}
 
-등록 적응형 양식은 처리를 위해 OSGI 워크플로우에 제출됩니다. 이 워크플로우는 https://&lt;aemserver>:&lt;port>/conf/we-gov/settings/models/we-gov-process.html*에서 찾을 수 있습니다.
+등록 적응형 양식은 처리를 위해 OSGI 워크플로우에 제출됩니다. 이 워크플로우는 https://&lt;aemserver>:&lt; *port>/conf/we-gov/settings/models/we-gov-process.html에서 찾을 수 있습니다*.
 
 특정 제한 사항으로 인해 이 워크플로우에는 몇 가지 스크립트와 사용자 정의 OSGI 워크플로우 프로세스 단계가 포함되어 있습니다. 이러한 워크플로우 단계는 일반 단계로 생성되었으며 구성 대화 상자로 만들어지지 않았습니다. 현재 워크플로우 단계의 구성은 프로세스 인수에 따라 달라집니다.
 
