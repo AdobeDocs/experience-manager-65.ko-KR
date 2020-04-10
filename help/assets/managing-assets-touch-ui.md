@@ -4,7 +4,7 @@ description: 디지털 에셋 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
 
 ---
 
@@ -138,7 +138,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 
 >[!NOTE]
 >
->Dynamic Media - Scene7 모드에서 FTP를 통해 자산을 업로드하려면 AEM 작성자 인스턴스에 Feature Pack 18912를 설치합니다. FP- [18912에](https://helpx.adobe.com/contact/enterprise-support.ec.html) 액세스하고 FTP 계정 설정을 완료하려면 Adobe 고객 지원 센터에 문의하십시오. 자세한 내용은 벌크 에셋 [마이그레이션을](/help/assets/bulk-ingest-migrate.md)위한 기능 팩 18912 설치를 참조하십시오.
+>Dynamic Media - Scene7 모드에서 FTP를 통해 자산을 업로드하려면 AEM 작성자 인스턴스에 Feature Pack 18912를 설치합니다. FP- [18912에](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 액세스하고 FTP 계정 설정을 완료하려면 Adobe 고객 지원 센터에 문의하십시오. 자세한 내용은 벌크 에셋 [마이그레이션을](/help/assets/bulk-ingest-migrate.md)위한 기능 팩 18912 설치를 참조하십시오.
 >
 >자산을 업로드하기 위해 FTP를 사용하는 경우 AEM에 지정된 업로드 설정이 무시됩니다. 대신 Dynamic Media Classic에 정의된 파일 처리 규칙이 사용됩니다.
 
@@ -160,7 +160,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 1. [업로드 작업 옵션] 대화 상자의 오른쪽 아래에 있는 [저장]을 **[!UICONTROL 탭합니다]**.
 1. [업로드] 페이지의 오른쪽 아래에 있는 [업로드 제출]을 **[!UICONTROL 누릅니다]**.
 
-   업로드의 진행 상황을 보려면 글로벌 탐색 막대에서 작업을 **[!UICONTROL 누릅니다]**. [작업] 페이지에는 업로드 진행률이 표시됩니다. AEM에서 계속 작업하고 언제든지 Dynamic Media Classic의 작업 페이지로 돌아가 진행 중인 작업을 검토할 수 있습니다.
+   업로드의 진행 상태를 보려면 글로벌 탐색 막대에서 작업을 **[!UICONTROL 누릅니다]**. [작업] 페이지에는 업로드 진행률이 표시됩니다. AEM에서 계속 작업하고 언제든지 Dynamic Media Classic의 작업 페이지로 돌아가 진행 중인 작업을 검토할 수 있습니다.
 진행 중인 업로드 작업을 취소하려면 기간 **[!UICONTROL 옆에 있는]** 취소를 누릅니다.
 
 #### 업로드 작업 옵션 {#upload-job-options}
@@ -280,7 +280,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 |---|---|---|
 | 응용 비디오 |  | 모바일, 태블릿 및 데스크탑에 전달할 비디오를 제작하는 데 필요한 모든 종횡비와 연동되는 단일 인코딩 사전 설정 이 사전 설정으로 인코딩된 업로드된 소스 비디오는 고정된 높이로 설정됩니다. 그러나 너비는 비디오의 종횡비를 유지하도록 자동으로 조절됩니다. <br>응용 비디오 인코딩을 사용하는 것이 좋습니다. |
 | 단일 인코딩 사전 설정 | 인코딩 사전 설정 정렬 | 이름 또는 크기를 선택하여 이름 또는 해상도 크기로 데스크탑, 모바일 및 태블릿 아래에 나열된 인코딩 사전 설정을 정렬합니다. |
-|  | 데스크톱 | 데스크탑 컴퓨터에 스트리밍 또는 점진적 비디오 경험을 제공할 수 있는 MP4 파일을 만듭니다.해상도 크기와 원하는 대상 데이터 속도로 종횡비를 하나 이상 선택하십시오. |
+|  | 데스크톱 | 데스크탑 컴퓨터에 스트리밍 또는 점진적 비디오 경험을 전달하기 위한 MP4 파일을 만듭니다.해상도 크기와 원하는 대상 데이터 속도로 종횡비를 하나 이상 선택하십시오. |
 |  | 모바일 | iPhone 또는 Android 모바일 장치에 전달할 MP4 파일을 만듭니다.해상도 크기와 원하는 대상 데이터 속도로 종횡비를 하나 이상 선택하십시오. |
 |  | 태블릿 | iPad 또는 Android 태블릿 장치에 전달할 MP4 파일을 만듭니다.해상도 크기와 원하는 대상 데이터 속도로 종횡비를 하나 이상 선택하십시오. |
 
@@ -942,30 +942,7 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
 ### 자산에서 워크플로우 시작 {#starting-a-workflow-on-an-asset}
 
-1. 워크플로우를 시작할 자산의 위치로 이동하고 자산을 탭/클릭하여 자산 페이지를 엽니다.
-1. 전역 탐색 아이콘을 누른 다음 **[!UICONTROL 메뉴에서]** 타임라인을 선택하여 타임라인을 표시합니다.
-
-   ![타임라인-1](assets/timeline.png)
-
-1. 하단에 **[!UICONTROL 있는 작업]** (화살표) 아이콘을 눌러 자산에 사용할 수 있는 작업 목록을 엽니다.
-
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
-1. 목록에서 **[!UICONTROL 워크플로우]** 시작을 누릅니다.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
-
-1. 워크플로우 **[!UICONTROL 시작]** 대화 상자의 목록에서 워크플로우 모델을 선택합니다.
-
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
-1. (선택 사항) 워크플로우 인스턴스를 참조하는 데 사용할 수 있는 워크플로우의 제목을 지정합니다.
-
-   ![chlimage_1-255](assets/chlimage_1-51.png)
-
-1. 시작을 **[!UICONTROL 누른]**&#x200B;다음 **[!UICONTROL 대화]** 상자에서 진행을눌러 확인합니다. 각 워크플로우 단계는 타임라인에 이벤트로 표시됩니다.
-
-   ![chlimage_1-256](assets/chlimage_1-52.png)
+자산을 처리하는 워크플로우를 적용하려면 자산에서 [워크플로우](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset)시작을 참조하십시오.
 
 ## 컬렉션 {#collections}
 
