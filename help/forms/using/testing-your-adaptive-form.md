@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -210,8 +210,8 @@ AEM Forms는 적응형 양식의 테스트를 자동화하는 테스트 프레�
 
 테스트 세트에는 여러 테스트 케이스를 사용할 수 있습니다. 테스트 세트의 모든 테스트 케이스를 한 번에 실행하거나 개별적으로 실행할 수 있습니다. 테스트를 실행할 때 아이콘에 결과가 표시됩니다.
 
-* 확인 표시 아이콘은 전달된 테스트를 나타냅니다. ![](https://helpx.adobe.com/content/dam/help/icons/Checkmark.png)
-* &quot;X&quot; 아이콘은 실패한 테스트를 나타냅니다. ![](https://helpx.adobe.com/content/dam/help/icons/Cross.png)
+* 확인 표시 아이콘은 전달된 테스트를 나타냅니다. ![](assets/save_icon.svg)
+* &quot;X&quot; 아이콘은 실패한 테스트를 나타냅니다. ![](assets/close-icon.svg)
 
 1. AEM 아이콘 > 도구 **[!UICONTROL > 작업]****[!UICONTROL >]**&#x200B;테스트로 **[!UICONTROL 이동합니다.]**
 1. 테스트 세트의 모든 테스트를 실행하려면
