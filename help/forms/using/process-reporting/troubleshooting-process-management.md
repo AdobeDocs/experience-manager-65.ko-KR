@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0a818d19-8804-4c69-b721-31c347c593c0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -31,5 +31,3 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. 브라우저 캐시를 지웁니다.
 1. 브라우저 화면을 새로 고칩니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
