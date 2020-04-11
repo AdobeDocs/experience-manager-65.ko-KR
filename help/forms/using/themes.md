@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -294,7 +294,7 @@ AEM Forms의 테마는 양식의 패널 레이아웃에서 요소 스타일링 �
 
 스타일에 대한 사용자 정의 이름을 제공하면 스타일이 테마에 연결되어 있으므로 더 이상 다른 테마에 사용할 수 없습니다. 저장된 스타일을 삭제하려면
 
-1. CANVAS 도구 모음에서 테마 옵션 **> 스타일** 관리를 ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png) 클릭합니다 ****.
+1. CANVAS 도구 모음에서 테마 옵션 **> 스타일** 관리를 ![](assets/theme-options.png) 클릭합니다 ****.
 1. 스타일 관리 대화 상자에서 저장된 스타일을 선택하고 삭제를 **클릭합니다**.
 
    ![저장된 스타일 삭제](assets/manage-styles.png)
