@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8465471-0458-42d6-8209-8ba90f41154a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -21,5 +21,3 @@ HTML5 양식은 히브리어와 같은 오른쪽에서 왼쪽으로 쓰는 언�
 **제한**
 
 Mobile Forms는 Internet Explorer를 제외한 모든 브라우저에서 오른쪽에서 왼쪽으로 표기하는 언어를 지원합니다.
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
