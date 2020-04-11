@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -185,4 +185,3 @@ CQ Client Libs에 대한 자세한 내용은 CQ Clientlib [설명서를 참조�
 
 개발자는 HTML5 양식을 사용하여 프로필 및 프로필 렌더러를 만들어 양식의 모양을 사용자 정의할 수 있습니다. 예를 들어 HTML 양식을 사용하면 개발자는 기존 HTML 포털의 패널 또는 &lt;div> 섹션에 양식을 통합할 수 있습니다.
 사용자 정의 프로필 만들기에 대한 자세한 내용은 사용자 정의 프로필 [만들기를 참조하십시오](/help/forms/using/custom-profile.md).
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
