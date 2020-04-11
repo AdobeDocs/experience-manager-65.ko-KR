@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -359,5 +359,3 @@ AEM Forms 작업 영역을 사용하여 작업 작업을 사용자 정의할 수
 * 편집할 /apps/ws/js/registry.js 파일을 엽니다.
 * 다음 텍스트를 찾습니다. `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * 찾은 텍스트를 다음 텍스트로 바꿉니다. `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
