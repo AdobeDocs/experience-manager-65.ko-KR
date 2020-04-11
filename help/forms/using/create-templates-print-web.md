@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3afe5bf8e49202608e4c9369b2ff3d26afa03dc4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -84,7 +84,7 @@ source-git-commit: 3afe5bf8e49202608e4c9369b2ff3d26afa03dc4
    * BillDetails
    * 고객 세부 사항
    * BillSummary
-   * 요약 - 하위 **폼** 탭을 선택하고 **이 하위** 폼의 **콘텐츠** 드롭다운 목록에서위치를 선택합니다. 요약 하위 양식에 다음 하위 **양식을** 삽입합니다.
+   * 요약 - 하위 **폼** 탭을 선택하고 **이** 하위 **폼의** 콘텐츠 드롭다운 목록에서위치를 선택합니다. 요약 하위 양식에 다음 하위 **양식을** 삽입합니다.
 
       * 요금
       * 차트
@@ -173,7 +173,7 @@ Interactive Communication의 인쇄 채널에 대한 레이아웃 조각을 만�
 
 다음 단계를 수행하여 편집 가능한 템플릿의 폴더를 만듭니다.
 
-1. 도구 **> 구성** 브라우저를 ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) 누릅니다 ****.
+1. 도구 **> 구성** 브라우저를 ![](assets/hammer-icon.svg) 누릅니다 ****.
 1. 구성 브라우저 페이지에서 만들기를 **탭합니다**.
 1. 구성 **만들기 대화 상자에서** Create_First_IC_templates **를** 폴더의 제목으로 지정하고 편집 가능한 템플릿을 **확인하고 만들기를******&#x200B;누릅니다.
 
@@ -201,7 +201,7 @@ Interactive Communication의 인쇄 채널에 대한 레이아웃 조각을 만�
 
 1. 도구 > 템플릿 > **Create** _First_IC_ **templates** 폴더를 선택하여 해당 템플릿 **폴더로 이동합니다** .
 1. 만들기를 **누릅니다**.
-1. 템플릿 **유형 선택** 구성 마법사에서 대화형 통신 - 웹 **채널을** 선택하고 다음을 **탭합니다**.
+1. 템플릿 **유형 선택** 구성 마법사에서 대화형 통신 - 웹 **채널을 선택하고** 다음을 **탭합니다**.
 1. 템플릿 세부 **사항** 구성 마법사에서 **Create_First_IC_Web_Template** 을 템플릿 제목으로 지정합니다. 선택적 설명을 지정하고 만들기를 **누릅니다**.
 
    Create_First_IC_ **Web_Template이** 표시된다는 확인 메시지가 표시됩니다.
@@ -248,7 +248,7 @@ Interactive Communication의 인쇄 채널에 대한 레이아웃 조각을 만�
 
 웹 템플릿을 활성화하려면 다음 단계를 수행하십시오.
 
-1. 도구 **> 템플릿을**![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) 누릅니다 ****.
+1. 도구 **> 템플릿을**![](assets/hammer-icon.svg) 누릅니다 ****.
 1. Create_First_ **IC_Web_Template** 템플릿으로 이동하여 선택한 다음 활성화를 **누릅니다**.
 1. Tab **다시** 활성화하여 확인합니다.
 
