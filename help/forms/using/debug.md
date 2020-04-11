@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -178,5 +178,3 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 1. 데스크탑 브라우저에서 개발자 도구 -> 리소스로 이동합니다.
 
    이미지가 표시되는 경우 [프레임]의 왼쪽에서 선택합니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
