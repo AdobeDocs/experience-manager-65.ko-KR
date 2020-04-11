@@ -9,7 +9,7 @@ topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -56,10 +56,10 @@ AEM Forms는 AEM Sites 페이지에 적응형 양식을 포함할 구성 요소�
    We.Retail 사이트는 AEM과 함께 제공됩니다. We.Retail 사이트가 설치되어 있지 않은 경우 We.Retail [Reference Implementation을](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) 참조하십시오.
 
 1. 속성 ![페이지 정보를 누르고 새로 만든 We.Retail](assets/properties.png) 사이트 페이지에서 **** 템플릿 편집 옵션을 선택합니다. 페이지의 템플릿이 브라우저의 새 탭에서 열립니다.
-1. 레이아웃 **컨테이너** 상자 내부를 누르고 ![피드백 관리를](assets/feedmanagement.png)누릅니다. 허용된 구성 **요소** 탭에서 일반 **아코디언을** 확장하고 **AEM** 양식 ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG)옵션을 선택한 다음을누릅니다. AEM Forms 컨테이너 구성 요소는 페이지에 대해 활성화됩니다.
+1. 레이아웃 **컨테이너** 상자 내부를 누르고 ![피드백 관리를](assets/feedmanagement.png)누릅니다. 허용된 구성 **요소** 탭에서 일반 **아코디언을** 확장하고 **AEM 양식** 옵션을 선택한 ![](assets/save_icon.svg)다음을누릅니다. AEM Forms 컨테이너 구성 요소는 페이지에 대해 활성화됩니다.
 
 1. 1단계에서 열린 AEM Sites 페이지가 포함된 브라우저 탭을 엽니다. 구성 요소를 여기로 **드래그하십시오** 상자를 누르고 **+를 누릅니다.** 새 구성 **요소 삽입** 상자에서 AEM **양식을 탭합니다.** AEM **Forms** 컨테이너 구성 요소가 페이지에 추가됩니다.
-1. AEM **Forms 컨테이너** 구성 요소를 탭하고 탭합니다 ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/cmppr.png). AEM Forms 컨테이너의 속성이 있는 대화 상자가 나타납니다. 자산 **경로** 필드에서 shipping-address-add-update-form 적응형 양식을 찾아 선택합니다. 탭하기 ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). 응용 양식이 페이지에 포함됩니다.
+1. AEM **Forms 컨테이너** 구성 요소를 탭하고 탭합니다 ![](assets/configure-icon.svg). AEM Forms 컨테이너의 속성이 있는 대화 상자가 나타납니다. 자산 **경로** 필드에서 shipping-address-add-update-form 적응형 양식을 찾아 선택합니다. 탭하기 ![](assets/save_icon.svg). 응용 양식이 페이지에 포함됩니다.
 1. 적응형 양식과 사이트 페이지를 모두 게시합니다. 다음은 고려해야 할 몇 가지 사항입니다.
 
    * AEM 사이트 페이지를 처음으로 게시하고 포함된 양식을 포함하는 경우 사이트 페이지와 포함된 양식을 게시합니다.
