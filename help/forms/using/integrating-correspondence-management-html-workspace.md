@@ -9,7 +9,7 @@ topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -114,5 +114,3 @@ AEM 작업 공간에서 편지를 렌더링하고 제출하는 작업을 만들�
    >[!NOTE]
    >
    >서신의 모든 필수 변수가 채워질 때까지 제출 단추가 활성화되지 않습니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
