@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -72,7 +72,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 1. AEM [Forms 작업 영역 사용자 지정에](/help/forms/using/generic-steps-html-workspace-customization.md)대한 일반 단계를 수행합니다.
 1. 다음을 수행합니다.
 
-   1. /libs/ws/js/runtime/templates/processinstance.html가 없는 경우을 복사하여 Flash Player에 붙여넣을 수 있습니다. 모두 **저장을 클릭합니다**.
+   1. /libs/ws/js/runtime/templates/processinstance.html이 없는 경우을 복사하여 Flash Player에 붙여넣을 수 있습니다. 모두 **저장을 클릭합니다**.
    1. 클래스 = &#39;processDescription&#39;인 프로세스 설명 div를 inprocessinstance.html에 추가합니다.
 
    ```
@@ -94,5 +94,3 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
        padding : 2px;
    }
    ```
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
