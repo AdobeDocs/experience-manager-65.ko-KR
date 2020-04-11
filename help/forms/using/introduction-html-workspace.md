@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 4c89d017-0d4b-4fa2-b648-342f3c755350
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -30,5 +30,3 @@ AEM Forms 작업 영역은 더 많은 장치 및 폼 팩터와 호환됩니다. 
 * 작업 영역 구성 요소를 웹 애플리케이션과 손쉽게 통합할 수 있습니다. AEM Forms 작업 영역은 구성 요소 기반 소프트웨어이므로 쉽게 사용자 지정하고 다시 사용할 수 있습니다.
 * AEM Forms 작업 영역 앱을 사용하여 온라인 및 오프라인 모바일 작업자로 비즈니스 프로세스를 확장할 수 있습니다.
 * 백로그, 작업 대기열 및 주요 성능 지표(KPI)를 모니터링할 보고서를 볼 수 있습니다. API를 사용하여 타사 보고 도구를 사용하여 추가 분석을 위해 데이터를 추출할 수 있습니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
