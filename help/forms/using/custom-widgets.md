@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -100,5 +100,3 @@ window.formBridge.registerConfig("widgetConfig",
 | 이름 fieldname이 있는 특정 필드 | 식별자:&quot;div.fieldname&quot; | 이름이 &#39;fieldname&#39;인 모든 필드는 위젯을 사용하여 렌더링됩니다. |
 | &#39;type&#39; 유형의 모든 필드(여기서 type은 NumericField, DateField 등)입니다.: | 식별자:&quot;div.type&quot; | Timefield 및 DateTimeField의 경우 이러한 필드는 지원되지 않으므로 type은 textfield입니다. |
 | 모든 필드 | 식별자:&quot;div.field&quot; |  |
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
