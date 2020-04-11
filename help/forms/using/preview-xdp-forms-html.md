@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -116,5 +116,3 @@ Designer를 사용하면 샘플 XML 데이터를 사용하여 양식을 미리 �
 ## 저장소에 있는 양식 미리 보기 {#html-preview-of-forms-in-forms-manager}
 
 AEM Forms에서 저장소에서 양식과 문서를 미리 볼 수 있습니다. 미리 보기를 사용하면 최종 사용자가 양식을 어떻게 사용하고 있는지 정확하게 파악할 수 있습니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
