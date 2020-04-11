@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -50,5 +50,3 @@ Uber 보기에서 구성 요소에 대한 탭 이름을 사용자 지정할 수 
    >[!NOTE]
    >
    >지원되는 모든 언어에 해당하는 키-값 쌍을 추가합니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
