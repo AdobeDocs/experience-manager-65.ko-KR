@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -296,5 +296,3 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
    
    <div class="newLginContainerBkg">
    ```
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
