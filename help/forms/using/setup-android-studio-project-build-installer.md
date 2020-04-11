@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -82,9 +82,9 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. Android™ Studio에서 프로젝트 **[!UICONTROL 가져오기(Eclipse ADT, Gradle 등)]**&#x200B;를 선택합니다.
 1. 프로젝트 탐색기에서 루트 디렉토리 텍스트 상자에서 빌드할 프로젝트의 루트 **디렉토리를** 선택합니다.
 
-   **** Mac 사용자의 경우:User_ [Home]/Projects/MobileWorkspace/src/android
+   **Mac 사용자의 경우:** User_ [Home]/Projects/MobileWorkspace/src/android
 
-   **** Windows® 사용자의 경우:%HOMEPATH%\Projects\MobileWorkspace\src\android
+   **Windows® 사용자의 경우:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
 1. 프로젝트를 가져오면 Android™ 플러그인 그레이드를 업데이트하는 옵션이 있는 팝업이 표시됩니다. 요구 사항에 따라 적절한 단추를 클릭합니다.
 
@@ -107,5 +107,3 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 **MAC 사용자의**&#x200B;경우: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
 **Windows® 사용자의**&#x200B;경우: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
