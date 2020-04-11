@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -36,5 +36,3 @@ AEM Forms 작업 영역 구성 요소는 백본을 사용하는 MVC 아키텍처
 **서비스** REST 끝점에서 Adobe Experience Manager 서버 API를 호출하는 서비스 인터페이스가 포함되어 있습니다.
 
 **util** 여러 구성 요소에서 사용할 수 있는 일반 유틸리티를 포함합니다.
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
