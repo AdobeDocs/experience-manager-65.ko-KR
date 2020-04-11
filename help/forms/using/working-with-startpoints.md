@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 1ea60fb2-cf9f-4a87-bd8e-98150e668456
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -47,5 +47,3 @@ AEM Forms 앱에서 프로세스를 시작하려면 프로세스에 작업 영�
 앱이 온라인 상태인 경우 작업은 AEM Forms 서버와 동기화되고 프로세스에 지정된 사용자에게 할당됩니다.
 
 작업 목록에서 작업을 사용하려면 작업 [열기를 참조하십시오](/help/forms/using/open-task.md).
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
