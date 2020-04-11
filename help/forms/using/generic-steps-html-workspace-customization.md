@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -98,5 +98,3 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 1. 모두 **[!UICONTROL 저장]**, 캐시 지우기 및 AEM Forms 작업 영역 새로 고침을 클릭합니다.
 
    URL에 액세스하고 관리자/암호 자격 증명으로 `https://'[server]:[port]'/lc/ws` 로그인합니다. 브라우저가 로 리디렉션됩니다 `https://'[server]:[port]'/lc/apps/ws/index.html`.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
