@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -92,5 +92,3 @@ AEM Forms 관리자는 작업 영역을 사용자 지정하여 두 개의 다른
 1. 의 `ws2`속성에서 값을 `sling:redirect` 로 `content/ws2`변경합니다.
 
 1. 의 값을 `sling:match` 다음으로 `^[^/\||]/[^/\||]/ws2$`변경합니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
