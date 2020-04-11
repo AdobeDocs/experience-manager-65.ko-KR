@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -57,5 +57,3 @@ source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
 1. 작업 모델은 렌더링 호출이 완료되었다는 알림으로서 백본 이벤트를 발생시킵니다.
 1. 다른 보기에서는 작업 세부 사항 보기가 작업 모델에서 이 이벤트를 수신합니다.
 1. 그런 다음 작업 세부 사항 보기를 통해 작업 세부 사항 템플릿을 변경하여 렌더링된 작업(양식, 세부 사항, 첨부 파일, 노트 등)을 사용자에게 표시합니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
