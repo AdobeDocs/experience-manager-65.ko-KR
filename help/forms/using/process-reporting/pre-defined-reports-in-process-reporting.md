@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -123,5 +123,3 @@ AEM Forms 프로세스 보고는 다음과 같은 *특별* 보고서와 함께 �
    * **새로 고침**:최신 데이터가 저장소에 있는 보고서를 새로 고칩니다.
    * **범례 색상**&#x200B;변경:보고서 범례 색상 선택 및 변경
    * **CSV로 내보내기**:보고서의 데이터를 쉼표로 구분된 파일로 내보내기 및 다운로드
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
