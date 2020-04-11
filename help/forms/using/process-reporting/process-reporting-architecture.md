@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: a6ff50df-273d-48f7-b0c6-0e69e900b97f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -76,5 +76,3 @@ QueryDataServlet 서비스는 프로세스 보고 사용자 인터페이스에�
 사용자 지정 보고서를 만들고 이러한 보고서를 프로세스 보고 사용자 인터페이스의 사용자 지정 보고서 탭에 표시할 수 있습니다.
 
 사용자 지정 보고서를 만드는 단계는 처리 중인 사용자 지정 보고서에서 사용자 지정 보고서 [만들기를 참조하십시오](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
