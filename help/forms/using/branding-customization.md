@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. Xcode에서 `Capture.xcodeproj` 프로젝트를 엽니다.
 1. (***사용자 정의 아이콘***)캡처의 네비게이터 보기에서 캡처 > 캡처 > **[!UICONTROL 지원 파일 > Capture-info.plist로 이동합니다]**. 아이콘 파일 옆에 있는 드롭다운을 클릭합니다. 아이콘 파일(.png)의 이름을 지정하고 캡처 > 캡처 > **[!UICONTROL 리소스 > 아이콘에서]**&#x200B;파일을 업로드합니다. 현재 지원되는 차원은 다음과 같습니다.29x29, 50x50, 58x58, 72x72, 100x100 및 144x144
-1. (***시작 이미지를***&#x200B;사용자 정의하는 경우) 이미지의 파일 이름이 다음과 같은지 확인합니다.
+1. (***론치 이미지를***&#x200B;사용자 정의하는 경우) 이미지의 파일 이름이 다음과 같은지 확인합니다.
 
    * 세로: `Default-Portrait~ipad.png` 및 `Default-Portrait@2x~ipad.png`
    * 가로: `Default-Landscape~ipad.png` 및 `Default-Landscape@2x~ipad.png`
@@ -221,5 +221,3 @@ AEM Forms 앱에 로그인하고 메뉴 단추를 누르면 메뉴 위에 로고
 1. 해당 `MWSWindows\www\wsmobile\images`폴더로 이동합니다.
 1. 로고를 변경하려면 기본 `aem_icon.png` 파일을 사용자 정의 `aem_icon.png` 파일로 바꿉니다.
 1. Windows 장치에서 AEM Forms 앱을 빌드하고 실행합니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
