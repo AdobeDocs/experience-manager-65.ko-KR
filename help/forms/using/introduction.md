@@ -9,7 +9,7 @@ topic-tags: hTML5_forms
 discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -45,5 +45,3 @@ AEM에서는 AEM Forms UI를 사용하여 모든 양식 템플릿을 나열하�
 ### 양식 맞춤화 {#forms-customization}
 
 HTML5 양식은 표준 HTML5 구문을 사용하여 양식 템플릿을 렌더링합니다. 따라서 웹 기술, 주로 CSS 및 JavaScript를 사용하여 HTML5 형식으로 양식을 간단하게 사용자 정의하고 확장할 수 있습니다. 기존 위젯의 모양을 손쉽게 사용자 정의하거나 사용자 정의 위젯을 만들거나 양식에 사용자 정의 스타일을 사용할 수 있습니다. 사용자 정의 위젯 만들기 및 기존 위젯 사용자 정의에 대한 자세한 내용은 HTML5 [양식을](../../forms/using/custom-widgets.md)사용하여 사용자 정의 위젯 플러그인을 참조하십시오.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
