@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -43,5 +43,3 @@ HTML5 양식은 모든 기본 키 입력과 보이스 오버 제스처를 지원
 * **(내부 탐색기 9에만 해당)** HTML5 양식의 날짜 선택기 컨트롤은 키보드로 완전하게 액세스할 수 없습니다. 날짜 선택기 컨트롤에서 위쪽/아래쪽 키를 여러 번 누를 경우 날짜 선택기 컨트롤이 닫히고 포커스가 다음/마지막 필드로 이동합니다.
 
 * VoiceOver가 iPad Safari의 날짜 위젯에서 화살표 키를 감지할 수 없습니다.
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
