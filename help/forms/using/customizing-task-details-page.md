@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -85,5 +85,3 @@ source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
 >AEM Forms 작업 영역의 **프로세스 시작** 탭에서 만든 작업을 작업 세부 정보 페이지에 사용자 정의하려면 새 정보를 에 추가합니다 `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >세부 사항 페이지에 추가된 정보에 대한 새 스타일을 추가하려면 작업 영역 사용자 정의 *의 사용자 인터페이스 변경* 섹션을 사용하여 CSS 파일을 [수정합니다](/help/forms/using/changing-locale-user-interface.md#main-pars-header-3).
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
