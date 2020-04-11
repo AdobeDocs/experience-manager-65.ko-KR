@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: ba79479b-4159-4a39-95eb-2285e7ece9d4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -45,5 +45,3 @@ AEM Forms 앱에 로그인하면 홈 화면으로 리디렉션됩니다.
 앱에서 홈 화면 설정을 변경하면 현재 로그인한 사용자 또는 현재 모바일 장치의 사용자에 대한 홈 화면이 나타납니다.
 
 그러나 HTML 작업 영역에서 변경한 내용은 AEM Forms 앱 사용자가 AEM Forms 서버에 로그온한 모든 AEM Forms 앱에 적용됩니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
