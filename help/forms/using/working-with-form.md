@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -42,5 +42,3 @@ AEM Forms OSGi 서버와 동기화된 AEM Forms 앱에서 가져온 적응형 �
 
 1. 양식을 열려면 홈 화면에서 양식을 누릅니다.
 1. 양식 필드를 업데이트하고 첨부 파일을 추가하고 초안으로 저장하고 제출할 수 있습니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
