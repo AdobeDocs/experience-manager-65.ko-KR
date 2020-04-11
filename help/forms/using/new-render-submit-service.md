@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -57,7 +57,7 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 ## 새로운 HTML 양식 렌더링 및 제출 프로세스 {#new-html-form-render-amp-submit-processes}
 
-모든 &#39;AssignTask&#39; 작업에 대해 양식과 함께 Render 및 Submit 프로세스를 지정합니다. 이러한 프로세스는 TaskManager `renderForm`및 API에서 `submitForm`사용자 정의 처리를 위해 호출됩니다. 새 HTML 양식에 대한 다음 프로세스의 의미 체계:
+모든 &#39;AssignTask&#39; 작업에 대해 양식과 함께 Render 및 Submit 프로세스를 지정합니다. 이러한 프로세스는 TaskManager `renderForm`및 API에서 `submitForm`사용자 정의 처리를 허용하도록 호출합니다. 새 HTML 양식에 대한 다음 프로세스의 의미 체계:
 
 ### 새 HTML 양식 렌더링 {#render-a-new-html-form}
 
@@ -160,4 +160,4 @@ XDP 양식의 경우:
 기존 렌더링 또는 제출 PDF 양식 서비스를 수정하거나 사용자 정의 서비스(예: custom1)를 만든 경우 이제 HTML 변환에 동일한 기능을 사용하려는 경우 새로운 렌더링 또는 전송 서비스(예: custom2)를 복제하고 유사한 사용자 지정을 적용해야 합니다. 이제 XDP에 대한 작업 프로필을 수정하여 렌더링이나 제출을 위한 custom1 대신 custom2 서비스를 시작합니다.
 
 양식을 장치의 HTML과 데스크탑의 PDF로 렌더링하려면 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?
-양식을 장치의 HTML과 데스크탑의 PDF로 렌더링하려면 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?  [지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
+양식을 장치의 HTML과 데스크탑의 PDF로 렌더링하려면 프로세스 디자이너가 수행해야 하는 작업은 무엇입니까?
