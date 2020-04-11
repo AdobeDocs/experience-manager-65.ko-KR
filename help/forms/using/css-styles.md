@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -248,5 +248,3 @@ HTML 양식의 UI 구성 요소 모양 외에도 인라인 오류, 인라인 경
 `Styling Fields with Validation Errors`
 
 필드에 대한 유효성 검사가 실패하면 위젯 스타일이 변경됩니다. 이 스타일 변경은 위젯 구성 요소에 CSS 클래스 widgetError **를** 적용하여 수행됩니다. 기본 스타일을 수정하려면 widgetError **클래스를** 무시합니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
