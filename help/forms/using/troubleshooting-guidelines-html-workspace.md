@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -192,5 +192,3 @@ AEM Forms 작업 영역에서 다음을 수행합니다.
 1. 디자인에서 프로세스 속성을 사용하는 HTML 양식이 AEM Forms 작업 영역에서 렌더링되면 양식 내에 제출 단추를 표시합니다.
 
    양식을 디자인할 때 처리 속성을 사용할 때 양식 내에 제출 단추가 추가됩니다. AEM Forms 작업 영역에서 PDF로 렌더링하면 최종 사용자에게 제출 단추가 보이지 않습니다. 그러나 AEM Forms 작업 영역에서 HTML 양식으로 렌더링할 때 최종 사용자에게 제출 단추가 표시됩니다. 양식 내에서 이 제출 단추를 클릭해도 작업이 시작되지 않습니다. 양식 외부의 AEM Forms 작업 영역 하단의 제출 단추를 클릭하면 작업이 완료됩니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
