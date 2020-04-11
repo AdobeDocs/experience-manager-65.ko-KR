@@ -8,7 +8,7 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -57,11 +57,11 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
 ![기본 테마가 있는 적응형 양식](assets/default-adaptive-form.png)
 
-**** 그림:기본 *테마가 있는 적응형 양식*
+**그림:** 기본 *테마가 있는 적응형 양식*
 
 ![설문 조사 테마를 사용한 적응형 양식](assets/adaptive-form-with-survey-theme.png)
 
-**** 그림:설문 *조사 테마를 사용한 적응형 양식*
+**그림:** 설문 *조사 테마를 사용한 적응형 양식*
 
 ## 2단계:적응형 양식 업데이트 {#step-update-your-adaptive-form}
 
@@ -99,8 +99,8 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 1. AEM 작성자 인스턴스에 로그인하고 Adobe Experience Manager > **양식** > 테마를 **탐색합니다******. 기본 URL은 http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes [입니다](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. 만들기를 **[!UICONTROL 누르고]** 테마를 **[!UICONTROL 선택합니다]**. 테마를 만드는 데 필요한 필드가 있는 테마 만들기 페이지가 나타납니다. 제목 및 이름 필드는 필수입니다.
 
-   * **** 제목:테마의 제목을 지정합니다. 예: 전역 **테마.** 제목은 테마 목록에서 테마를 식별하는 데 도움이 됩니다.
-   * **** 이름:테마 이름을 지정합니다. 예: **전역 테마.** 지정된 이름의 노드가 저장소에 생성됩니다. 제목을 입력하기 시작하면 이름 필드의 값이 자동으로 생성됩니다. 제안된 값을 변경할 수 있습니다. 이름 필드에는 영숫자, 하이픈 및 밑줄만 사용할 수 있습니다. 잘못된 입력은 모두 하이픈으로 대체됩니다.
+   * **제목:** 테마의 제목을 지정합니다. 예: 전역 **테마.** 제목은 테마 목록에서 테마를 식별하는 데 도움이 됩니다.
+   * **이름:** 테마 이름을 지정합니다. 예: **전역 테마.** 지정된 이름의 노드가 저장소에 생성됩니다. 제목을 입력하기 시작하면 이름 필드의 값이 자동으로 생성됩니다. 제안된 값을 변경할 수 있습니다. 이름 필드에는 영숫자, 하이픈 및 밑줄만 사용할 수 있습니다. 잘못된 입력은 모두 하이픈으로 대체됩니다.
 
 1. 만들기를 **누릅니다**. 테마가 생성되고 편집할 양식을 여는 대화 상자가 나타납니다. 열기를 **눌러** 새로 만든 테마를 새 탭에서 엽니다. 테마가 테마 편집기에서 열립니다. 스타일링을 위해 테마 편집기는 AEM Forms와 함께 제공된 즉시 사용 가능한 양식을 사용합니다.
 
@@ -110,17 +110,17 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
    ![맞춤형 테마](assets/custom-theme.png)
 
-   **** 그림:shipping-address-add-update-form 적응형 양식이 *포함된 테마 편집기*
+   **그림:** shipping-address-add-update-form 적응형 양식이 *포함된 테마 편집기*
 
    ![테마 만들기](assets/create-a-theme.png)
 
-   **** 그림:기본 *양식이 있는 적응형 양식*
+   **그림:** 기본 *양식이 있는 적응형 양식*
 
 ### 스타일 머리글 및 바닥글 {#style-header-and-footer}
 
 머리글과 바닥글은 적응형 양식의 모양과 모양을 일관되게 제공합니다. 일반적으로 머리글에는 조직의 로고와 이름이 포함되어 있고, 바닥글에는 저작권 정보가 포함되어 있으며, 이러한 정보는 조직의 여러 양식에 걸쳐 동일하게 유지됩니다. shipping-address-add-update-form 적응형 양식의 머리글과 바닥글의 스타일을 지정하려면:
 
-1. 선택기 패널에서 **머리글** > **텍스트** 옵션을 탐색합니다. 선택기 패널은 테마 편집기 왼쪽에 있습니다. 패널이 보이지 않으면 사이드 패널 전환을 ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/toggle-side-panel.png) 누릅니다.
+1. 선택기 패널에서 **머리글** > **텍스트** 옵션을 탐색합니다. 선택기 패널은 테마 편집기 왼쪽에 있습니다. 패널이 보이지 않으면 사이드 패널 전환을 ![](assets/toggle-side-panel.png) 누릅니다.
 
 1. 텍스트 아코디언에서 다음 **속성을** 설정하고 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)를 누릅니다.
 
@@ -156,7 +156,7 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
      <li>위쪽:1.5렘</li> 
      <li>아래:-35px</li> 
      <li>왼쪽:1렘<strong><br /></strong></li> 
-    </ul> <p><strong></strong> 팁:각 필드에 다른 값을 제공하려면 <img src="assets/link.png"> 링크 아이콘을 누릅니다.<br /> </p> </td> 
+    </ul> <p><strong>팁:</strong> 각 필드에 다른 값을 제공하려면 <img src="assets/link.png"> 링크 아이콘을 누릅니다.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>높이</td> 
@@ -165,7 +165,7 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
  </tbody> 
 </table>
 
-1. 바닥글 위젯을 누르고 바닥글을 **누릅니다**. 배경 **아코디언을 확장하고** 배경색을 **다음으로** 설정한 `F6921E`다음 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)를 누릅니다.
+1. 바닥글 위젯을 누르고 바닥글을 **누릅니다**. 배경 **아코디언을** 확장하고 **배경색을** 다음으로 설정한 `F6921E`다음 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)를 누릅니다.
 
 ### 데이터 캡처 구성 요소의 스타일을 지정하고 적응형 양식에 배경 적용 {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
