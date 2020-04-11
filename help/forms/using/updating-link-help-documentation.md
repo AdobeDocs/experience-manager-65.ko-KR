@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -49,5 +49,3 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
    1. /apps/ws/js/registry.js편집을 위해 엽니다.
    1. 검색 및 `text!/lc/libs/ws/js/runtime/templates/userinfo.html` 바꾸기 `text!/lc/apps/ws/js/runtime/templates/userinfo.html`기능
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
