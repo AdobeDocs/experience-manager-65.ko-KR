@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12d35bf8355d3069071523427a7794b88c09b13
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -49,7 +49,7 @@ Interactive Communications는 개인화되고 인터랙티브한 컨텐츠 제�
    * **[!UICONTROL 게시 프로세스]**:트리거할 워크플로우의 이름을 선택합니다. AEM 워크플로우를 선택하면 첨부 파일 경로, 레이아웃 경로, PDF 경로, 인쇄 데이터 경로 및 웹 데이터 경로를 제공합니다.
    * **[!UICONTROL 태그]**:대화형 통신에 적용할 태그를 선택합니다. 새/사용자 지정 태그 이름을 입력하고 Enter 키를 눌러 만들 수도 있습니다.
    * **[!UICONTROL 작성자]**: 작성자 이름은 로그인한 사용자의 사용자 이름에서 자동으로 가져옵니다.
-   * **** 게시 날짜:대화형 통신을 게시할 날짜를 입력합니다.
+   * **[!UICONTROL 게시 날짜:]** 대화형 통신을 게시할 날짜를 입력합니다.
    * **[!UICONTROL 게시 취소 날짜]**:대화형 통신을 게시 취소할 날짜를 입력합니다.
 
 1. 다음을 **[!UICONTROL 누릅니다]**. 인쇄 및 웹 채널 세부 사항을 지정하는 화면이 나타납니다.
@@ -62,11 +62,11 @@ Interactive Communications는 개인화되고 인터랙티브한 컨텐츠 제�
    * **[!UICONTROL 테마]** 및 **[!UICONTROL 테마 선택]**:인터랙티브 커뮤니케이션의 웹 채널에 스타일을 지정할 테마를 찾아 선택합니다. 자세한 내용은 AEM Forms [의 테마를 참조하십시오](/help/forms/using/themes.md).
 
    * **[!UICONTROL 웹 채널에 대한 마스터로 인쇄 사용]**:인쇄 채널과 동기화하여 웹 채널을 만들려면 이 옵션을 선택합니다. 인쇄 채널을 웹 채널에 대한 마스터로 사용하면 웹 채널의 컨텐츠 및 데이터 바인딩이 인쇄 채널에서 파생되고 동기화를 탭하면 인쇄 채널에서 수행된 변경 사항이 웹 채널에 반영됩니다. 그러나 작성자는 필요에 따라 웹 채널의 특정 구성 요소에 대한 상속을 중단할 수 있습니다. 자세한 내용은 웹 채널을 [인쇄 채널과](../../forms/using/create-interactive-communication.md#synchronize)동기화를 참조하십시오.
-[웹 채널에 **[!UICONTROL 마스터로 인쇄 사용] 옵션을 선택한]** 경우 다음 모드를 선택하여 웹 채널을 생성할 수 있습니다.
+[웹 채널용으로 **[!UICONTROL 마스터로 인쇄] 옵션을 선택한]** 경우 다음 모드 중 하나를 선택하여 웹 채널을 생성할 수 있습니다.
 
       * **[!UICONTROL 자동 레이아웃]**:인쇄 채널에서 웹 채널에 대한 자리 표시자, 컨텐츠 및 데이터 바인딩을 자동으로 생성하려면 이 모드를 선택합니다.
       * **[!UICONTROL 수동으로 구성**:데이터 소스 탭에서 사용할 수 있는 마스터 컨텐츠를 사용하여 수동으로 채널 요소 인쇄를 선택하고 웹 채널에 추가하려면 이 **[!UICONTROL 모드를]** 선택합니다. 자세한 내용은 채널 요소를 [선택하여 웹 채널 컨텐츠를](#selectprintchannelelements)만들기를 참조하십시오.
-   인쇄 채널 및 웹 채널에 대한 자세한 내용은 [채널 및 웹 채널](/help/forms/using/web-channel-print-channel.md)인쇄를 참조하십시오.
+   인쇄 채널 및 웹 채널에 대한 자세한 내용은 채널 [및 웹 채널](/help/forms/using/web-channel-print-channel.md)인쇄를 참조하십시오.
 
 1. 만들기를 **[!UICONTROL 누릅니다]**. 대화형 통신이 생성되고 경고 상자가 나타납니다. Interactive **[!UICONTROL Communication]** 작성 사용자 인터페이스를 [사용하여 컨텐츠 추가에 설명된 대로 Interactive](#step2)Communication의 컨텐츠를 작성하기 시작하려면 편집을 누릅니다. 또는 완료를 누르고 **[!UICONTROL 나중에 대화형]** 통신을 편집하도록 선택할 수 있습니다.
 
@@ -141,15 +141,15 @@ Interactive Communications는 개인화되고 인터랙티브한 컨텐츠 제�
 
 ![바인딩되지 않은 변수](assets/df_unbound_variable_new.png)
 
-문서 조각을 탭하고 ![configure_icon](assets/configure_icon.png) (구성)을 탭한 다음 대화형 **[!UICONTROL 커뮤니케이션의 사이드킥에서]** 속성을 누릅니다. 변수 **[!UICONTROL 및 데이터 모델]** 객체 섹션에는 숨겨진 변수 및 문서 조각에 사용된 데이터 모델 객체를 비롯한 변수가 나열됩니다. 각 데이터 모델 개체 또는 변수 옆에 있는 ![편집](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (편집) 아이콘을 사용하여 속성을 편집합니다.
+문서 조각을 탭하고 ![configure_icon](assets/configure_icon.png) (구성)을 탭한 다음 대화형 **[!UICONTROL 커뮤니케이션의 사이드킥에서]** 속성을 누릅니다. 변수 **[!UICONTROL 및 데이터 모델]** 객체 섹션에는 숨겨진 변수 및 문서 조각에 사용된 데이터 모델 객체를 비롯한 변수가 나열됩니다. 각 데이터 모델 개체 또는 변수 옆에 있는 ![편집](assets/edit.svg) (편집) 아이콘을 사용하여 속성을 편집합니다.
 
 1. 변수의 바인딩을 설정하려면 변수를 누르고 ![configure_icon](assets/configure_icon.png) (구성)을 선택한 다음 세로 막대의 속성 패널에서 바인딩 속성을 설정합니다.
 
    * **없음**:에이전트가 변수의 값을 채웁니다.
    * **텍스트 조각**:이 옵션을 선택한 경우 해당 컨텐츠가 필드에 렌더링되는 텍스트 문서 조각을 찾아 선택할 수 있습니다. 이러한 텍스트 문서 조각만 안에 변수가 없는 변수에 바인딩할 수 있습니다.
    * **데이터 모델 개체**:필드에 값이 채워지는 양식 데이터 모델 속성을 선택합니다.
-   * **** 기본값:이 필드를 사용하여 변수의 기본값을 정의할 수 있습니다. 이 값은 대화형 통신을 미리 보거나 에이전트 UI에서 표시됩니다.
-   * **** 표시 패턴:변수의 표시 형식을 정의할 수도 있습니다. 유형 드롭다운 목록에서 사전 정의된 옵션을 **선택하여** 표시 형식을 변수에 적용합니다. 목록에서 **사용할** 수 없는 표시 패턴을 정의하려면 사용자 지정을 선택합니다. 자세한 내용은 데이터 [표시 패턴을](../../forms/using/create-interactive-communication.md#datadisplaypatterns)참조하십시오.
+   * **기본값:** 이 필드를 사용하여 변수의 기본값을 정의할 수 있습니다. 이 값은 대화형 통신을 미리 보거나 에이전트 UI에서 표시됩니다.
+   * **표시 패턴:** 변수의 표시 형식을 정의할 수도 있습니다. 유형 드롭다운 목록에서 사전 정의된 옵션을 **선택하여** 표시 형식을 변수에 적용합니다. 목록에서 **사용할** 수 없는 표시 패턴을 정의하려면 사용자 지정을 선택합니다. 자세한 내용은 데이터 [표시 패턴을](../../forms/using/create-interactive-communication.md#datadisplaypatterns)참조하십시오.
    변수 [및 데이터 모델](../../forms/using/create-interactive-communication.md#hiddenvariables) 객체로 이동하여 문서 조각에서 숨겨진 변수의 바인딩을 설정합니다.
 
    데이터 소스 요소 또는 텍스트 문서 조각을 드래그하여 놓아 변수 바인딩을 설정할 수도 있습니다.  데이터 소스 요소 중 하나로 바인딩을 만들려면 데이터 소스 **탭을** 선택하고 요소를 변수 이름으로 드래그하여 놓습니다. 데이터 소스 요소 및 변수는 바인딩을 성공적으로 설정하려면 동일한 유형이어야 합니다. 데이터 소스 요소를 이미 바인딩된 변수에 드래그하여 놓는 경우 새 요소는 이전 요소를 대체하여 새 바인딩을 변수로 만듭니다. 마찬가지로 **자산** 탭을 선택하고 텍스트 문서 조각을 변수 이름으로 드래그하여 놓아 둘 사이의 바인딩을 설정합니다. 텍스트 문서 조각에는 변수가 없어야 합니다.
@@ -182,7 +182,7 @@ Interactive Communications는 개인화되고 인터랙티브한 컨텐츠 제�
 
    ![웹 채널 자산](assets/webchannelassets.png)
 
-   문서 조각을 탭하고 ![configure_icon](assets/configure_icon.png) (구성)을 탭한 다음 대화형 **[!UICONTROL 커뮤니케이션의 사이드킥에서]** 속성을 누릅니다. 변수 **[!UICONTROL 및 데이터 모델]** 객체 섹션에는 숨겨진 변수 및 문서 조각에 사용된 데이터 모델 객체를 비롯한 변수가 나열됩니다. 각 데이터 모델 개체 또는 변수 옆에 있는 ![편집](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (편집) 아이콘을 사용하여 속성을 편집합니다. 또한 인쇄 채널을 사용하여 웹 채널에서 [자동으로](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) 생성된 ![](assets/cancelinheritance.png) 문서 단편의 경우 각 데이터 모델 개체 및 변수 옆에 있는 [(상속 취소) 아이콘을 사용하여 상속을](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) 취소하고편집할 수 있습니다.
+   문서 조각을 탭하고 ![configure_icon](assets/configure_icon.png) (구성)을 탭한 다음 대화형 **[!UICONTROL 커뮤니케이션의 사이드킥에서]** 속성을 누릅니다. 변수 **[!UICONTROL 및 데이터 모델]** 객체 섹션에는 숨겨진 변수 및 문서 조각에 사용된 데이터 모델 객체를 비롯한 변수가 나열됩니다. 각 데이터 모델 개체 또는 변수 옆에 있는 ![편집](assets/edit.svg) (편집) 아이콘을 사용하여 속성을 편집합니다. 또한 인쇄 채널을 사용하여 웹 채널에서 [자동으로](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) 생성된 ![](assets/cancelinheritance.png) 문서 단편의 경우 각 데이터 모델 개체 및 변수 옆에 있는 [(상속 취소) 아이콘을 사용하여 상속을](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) 취소하고편집할 수 있습니다.
 
 1. 웹 채널에 구성 요소를 추가하려면 웹 채널을 선택하고 구성 요소를 **[!UICONTROL 누릅니다]**. 필요에 따라 대화형 커뮤니케이션의 웹 채널에 구성 요소를 드래그하여 놓고 구성합니다.
 
@@ -240,7 +240,7 @@ Interactive Communications는 개인화되고 인터랙티브한 컨텐츠 제�
    * **[!UICONTROL 첨부할]**&#x200B;파일:추가를 **[!UICONTROL 누르고]** 찾아보기를 눌러 첨부할 파일을 선택하고 다음을 지정합니다.
 
       * **[!UICONTROL 이 파일을 기본적으로]**&#x200B;문서에 첨부:첨부 파일만 필수가 아닌 경우 이 옵션을 변경할 수 있습니다.
-      * **** 필수:에이전트가 에이전트 UI에서 첨부 파일을 제거할 수 없습니다.
+      * **[!UICONTROL 필수:]** 에이전트가 에이전트 UI에서 첨부 파일을 제거할 수 없습니다.
    ![첨부 파일](assets/attachfiles.png)
 
 1. **[!UICONTROL Done]**&#x200B;을 누릅니다.
@@ -376,7 +376,7 @@ Interactive Communications는 개인화되고 인터랙티브한 컨텐츠 제�
 
 ![구성 요소 도구 모음](assets/component_toolbar_table_row_new.png)
 
-******** A.행 B **를 추가합니다.행**&#x200B;삭제 C.**위로**&#x200B;이동아래로 이동
+**A.** 행 B **를 추가합니다.** 행 **삭제 C.** 위로 **이동** 아래로 이동
 
 #### 표 셀에서 텍스트 추가 또는 편집 {#addedittexttable}
 
@@ -393,7 +393,7 @@ Interactive Communications는 개인화되고 인터랙티브한 컨텐츠 제�
 
 #### 표 셀의 텍스트에 대한 하이퍼링크 만들기 {#createhyperlinktable}
 
-1. 표 셀에서 기본 텍스트 상자를 선택하고 ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (편집)을 누릅니다.
+1. 표 셀에서 기본 텍스트 상자를 선택하고 ![](assets/edit.svg) (편집)을 누릅니다.
 1. 표 셀의 텍스트를 선택하고 하이퍼링크 아이콘을 누릅니다.
 1. 경로 필드에 URL을 **지정합니다** .
 1. 탭하여 하이퍼링크 속성을 ![](assets/done_icon.png) 저장합니다.
@@ -513,7 +513,7 @@ Interactive Communication에서 테이블의 열을 기반으로 데이터를 �
 
 ### 자동 동기화 {#autosync}
 
-[웹 채널에 **[!UICONTROL 마스터로 인쇄 사용] 옵션을 선택한]** 경우 다음 모드를 선택하여 웹 채널을 생성할 수 있습니다.
+[웹 채널용으로 **[!UICONTROL 마스터로 인쇄] 옵션을 선택한]** 경우 다음 모드 중 하나를 선택하여 웹 채널을 생성할 수 있습니다.
 
 * **[!UICONTROL 자동 레이아웃]**:인쇄 채널에서 웹 채널에 대한 자리 표시자, 컨텐츠 및 데이터 바인딩을 자동으로 생성하려면 이 모드를 선택합니다.
 * **[!UICONTROL 수동 구성]**:데이터 소스 탭에서 사용할 수 있는 마스터 컨텐츠를 사용하여 수동으로 채널 요소 인쇄를 선택하고 웹 채널에 추가하려면 이 모드를 선택합니다. 자세한 내용은 채널 요소를 [선택하여 웹 채널 컨텐츠를](#selectprintchannelelements)만들기를 참조하십시오.
@@ -573,17 +573,17 @@ Data Sources **>** 마스터 **컨텐트로 이동하여** 인쇄 채널 요소�
 
 다음 옵션을 보려면 구성 요소를 누릅니다.
 
-* **** 복사:구성 요소를 복사하여 인터랙티브 커뮤니케이션의 다른 위치에 붙여 넣습니다.
-* **** 잘라내기:대화형 통신에서 구성 요소를 한 위치에서 다른 위치로 이동합니다.
-* **** 구성 요소 삽입:선택한 구성 요소 위에 구성 요소를 삽입합니다.
-* **** 붙여넣기:위에서 설명한 옵션을 사용하여 잘라내거나 복사한 구성 요소를 붙여 넣습니다.
-* **** 그룹:두 개 이상의 구성 요소를 함께 잘라내거나 복사하거나 붙여 넣으려면 여러 구성 요소를 선택합니다.
-* **** 상위:구성 요소의 상위 항목을 선택합니다.
-* **** SOM 표현식 보기:구성 [요소의 SOM 표현식을](../../forms/using/using-som-expressions-adaptive-forms.md) 봅니다.
+* **복사:** 구성 요소를 복사하여 인터랙티브 커뮤니케이션의 다른 위치에 붙여 넣습니다.
+* **잘라내기:** 대화형 통신에서 구성 요소를 한 위치에서 다른 위치로 이동합니다.
+* **구성 요소 삽입:** 선택한 구성 요소 위에 구성 요소를 삽입합니다.
+* **붙여넣기:** 위에서 설명한 옵션을 사용하여 잘라내거나 복사한 구성 요소를 붙여 넣습니다.
+* **그룹:** 두 개 이상의 구성 요소를 함께 잘라내거나 복사하거나 붙여 넣으려면 여러 구성 요소를 선택합니다.
+* **상위:** 구성 요소의 상위 항목을 선택합니다.
+* **SOM 표현식 보기:** 구성 [요소의 SOM 표현식을](../../forms/using/using-som-expressions-adaptive-forms.md) 봅니다.
 
-* **** 패널에서 개체 그룹화:패널에서 구성 요소를 그룹화하여 해당 구성 요소에 대해 동시에 작업을 수행할 수 있습니다. 자세한 내용은 패널에서 **[개체 그룹을 참조하십시오](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
+* **패널에서 개체 그룹화:** 패널에서 구성 요소를 그룹화하여 해당 구성 요소에 대해 동시에 작업을 수행할 수 있습니다. 자세한 내용은 패널에서 **[개체 그룹을 참조하십시오](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
 
-* **** 상속 취소:대상 [영역 내에서 구성 요소의 상속을](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) 취소하여 편집합니다.
+* **상속 취소:** 대상 [영역 내에서 구성 요소의 상속을](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) 취소하여 편집합니다.
 
 ### Group objects in Panel {#groupobjectspanel}
 
