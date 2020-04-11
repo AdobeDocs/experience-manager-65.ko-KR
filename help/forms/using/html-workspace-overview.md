@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -33,9 +33,9 @@ AEM Forms 작업 영역은 AEM Forms의 일부입니다. 작업 공간에서는 
 
 AEM Forms 작업 영역을 사용하여 다음 작업을 수행할 수 있습니다.
 
-**** 비즈니스 프로세스 시작:AEM Forms 작업 영역은 조직에서 디자인하고 설정한 프로세스에 따라 분류합니다. 자주 사용하는 카테고리를 즐겨찾기에 추가하여 카테고리에 빠르게 액세스할 수 있습니다. 프로세스를 시작하면 일반적으로 양식을 작성하여 양식 워크플로우가 제어하는 비즈니스 프로세스를 시작합니다. 자세한 내용은 프로세스 [시작을 참조하십시오](/help/forms/using/starting-processes.md).
+**비즈니스 프로세스 시작:** AEM Forms 작업 영역은 조직에서 디자인하고 설정한 프로세스에 따라 분류합니다. 자주 사용하는 카테고리를 즐겨찾기에 추가하여 카테고리에 빠르게 액세스할 수 있습니다. 프로세스를 시작하면 일반적으로 양식을 작성하여 양식 워크플로우가 제어하는 비즈니스 프로세스를 시작합니다. 자세한 내용은 프로세스 [시작을 참조하십시오](/help/forms/using/starting-processes.md).
 
-**** 작업 보기 및 실행:할 일 목록을 볼 때 자신에게 할당된 업무 프로세스, 또는 사용자가 속한 그룹 또는 다른 사용자의 공유 작업에서 작업이 표시됩니다. 필요에 따라 작업을 열고 계속 작업하고 완료할 수 있습니다. 일반적으로 작업을 완료하는 데는 정보 제공, 양식 승인 또는 양식 거부가 포함됩니다. 자세한 내용은 할 일 [목록](/help/forms/using/todo-lists.md)작업을 참조하십시오.
+**작업 보기 및 실행:** 할 일 목록을 볼 때 자신에게 할당된 업무 프로세스, 또는 사용자가 속한 그룹 또는 다른 사용자의 공유 작업에서 작업이 표시됩니다. 필요에 따라 작업을 열고 계속 작업하고 완료할 수 있습니다. 일반적으로 작업을 완료하는 데는 정보 제공, 양식 승인 또는 양식 거부가 포함됩니다. 자세한 내용은 할 일 [목록](/help/forms/using/todo-lists.md)작업을 참조하십시오.
 
 **작업**&#x200B;추적:작업을 추적하려면 AEM Forms 작업 영역의 추적 탭을 사용합니다. 시작하거나 참여한 활성 또는 완료된 프로세스를 검색할 수 있습니다. 프로세스의 일부인 작업, 할당 및 양식을 볼 수 있습니다. 이전에 시작한 프로세스의 양식 데이터를 사용하여 새 프로세스를 시작할 수도 있습니다. 자세한 내용은 추적 [프로세스를](/help/forms/using/tracking-processes.md)참조하십시오.
 
@@ -122,7 +122,7 @@ AEM Forms 작업 영역은 사용자 인터페이스의 레이아웃, 모양, �
 
 사용자 [지정](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) 아티클에서는 이러한 사용자 정의 유형에 대해 설명합니다.
 
-### 개발자 환경 설정 {#set-up-the-developer-environment}
+### Set up the developer environment {#set-up-the-developer-environment}
 
 AEM Forms 작업 영역 결과물에는 CRX에 배포된 CRX 패키지, 전체 소스 코드, 타사 JavaScript 라이브러리가 포함된 SDK 아카이브, AEM Forms 작업 영역의 스크립트 빌드가 포함됩니다. 개발자 환경을 설정하여 위에 언급된 사용자 지정을 수행합니다. 자세한 내용은 AEM Forms [작업 영역 코드](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)작성을 참조하십시오.
 
@@ -137,5 +137,3 @@ AEM Forms 작업 영역 결과물에는 CRX에 배포된 CRX 패키지, 전체 �
 ## AEM Forms 작업 영역 앱 {#aem-forms-workspace-app}
 
 모바일 장치에서 비즈니스 프로세스를 작업하려면 AEM Forms의 AEM Forms 작업 영역 앱 솔루션을 사용할 수 있습니다. 자세한 내용은 AEM Forms 작업 [영역 앱 개요를](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html)참조하십시오.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
