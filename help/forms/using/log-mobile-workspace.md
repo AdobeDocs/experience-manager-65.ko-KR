@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: fb2b7ff6-6b29-425b-a86e-d1f80faab9e0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -37,5 +37,3 @@ AEM Forms 앱을 시작할 때 먼저 로그인 자격 증명과 AEM Forms 서�
 >[!NOTE]
 >
 >오프라인 모드에서는 마지막으로 로그인한 사용자만 앱에 로그인할 수 있습니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
