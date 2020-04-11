@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -58,5 +58,3 @@ AEM Forms 작업 영역의 맨 위에 있는 내비게이션 막대를 업데이
 ## 작업 구성 요소 {#task-component}
 
 작업은 TaskList 구성 요소라는 가운데 패널에 표시됩니다. 색상을 변경하려면 스타일 시트에서 .task 선택기와 연관된 스타일을 수정합니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
