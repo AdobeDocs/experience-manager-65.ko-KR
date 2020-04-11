@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -87,6 +87,3 @@ AEM Forms OSGi 서버와 동기화된 모바일 양식의 첨부 파일은 AEM F
 AEM Forms OSGi 서버에서 앱에 로드된 적응형 양식에는 양식 수준 첨부가 지원되지 않습니다. 이미지 또는 텍스트 노트를 첨부하려면 작성 시 양식의 필드 수준 첨부 파일을 활성화합니다. 필드의 구성 요소 브라우저에서 첨부 파일 구성 요소를 드래그하여 놓습니다.
 
 적응형 양식의 경우 첨부 파일을 기록 문서(DoR)로 볼 수 있습니다. XFA가 [아닌 적응형 양식에](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)대해서는 기록 문서 생성을 참조하십시오.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
-
