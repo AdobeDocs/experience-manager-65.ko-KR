@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -40,5 +40,3 @@ AEM Forms 작업 영역은 Flex 기반의 작업 영역을 넘어 혁신적인 �
 ## 최종 사용자의 장치에 따라 사용자 정의 작업 렌더링 지원 {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
 AEM Forms 작업 공간에서는 XDP 양식의 HTML 변환을 지원합니다. 이 지원을 통해 장치 또는 사용자 에이전트를 기반으로 XDP의 다른 표현물로 라우팅하는 렌더링 프로세스에서 사용할 경우 사용자는 XDP 양식을 모바일 장치의 HTML로 보고 데스크탑의 PDF로 볼 수 있습니다. 따라서 다양한 디바이스에서 다양한 환경에서 작업하는 사용자에게 프로세스 관리를 원활하게 제공할 수 있습니다.
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
