@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -279,5 +279,3 @@ AEM Forms 환경에는 환경이 설정된 시간의 데이터가 포함됩니�
 * **[!UICONTROL 동기화]**:포함된 프로세스 보고 저장소를 AEM Forms 데이터베이스와 동기화합니다.
 * **[!UICONTROL 도움말]**:프로세스 보고에 대한 도움말 설명서를 봅니다.
 * **[!UICONTROL 로그아웃]**:프로세스 종료 보고
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
