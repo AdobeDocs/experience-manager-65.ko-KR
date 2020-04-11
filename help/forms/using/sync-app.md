@@ -11,7 +11,7 @@ topic-tags: forms-app
 discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -46,5 +46,3 @@ AEM Forms 서버를 사용하여 온라인 상태에서는 기본적으로 앱�
 * .js에서 processOfflineSubmittedSavedTasks(...) 함수에 대한 호출은 저장된/제출된 작업을 서버에 전송합니다. 또한 동기화 프로세스의 오류 또는 충돌을 처리합니다. 작업 제출이 실패하면 앱의 작업이 실패로 표시됩니다. 또한 작업은 보낼 편지함에 남아 있습니다.
 * syncSubmittedTask() 및 syncSavedTask() 함수는 개별 작업에 대해 작업을 수행합니다.
 * 사용자가 오프라인 상태를 서버에 동기화하도록 선택하거나 백그라운드 스레드로 자동 동기화를 선택하면 processOfflineSubmittedSavedTasks() 함수에 대한 호출이 작업 목록 구성 요소에서 시작됩니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
