@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b41060207a1fb522905259a0d33df690d606929d
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -705,7 +705,7 @@ JEE에서 AEM Forms에 대한 타사 소프트웨어 요구 사항은 해당 제
 
 JEE의 타사 참조 플랫폼의 AEM Forms에는 JEE에서 AEM Forms를 개발 및 배포하는 동안, 그리고 JEE에서 해당 버전의 AEM Forms에서 지원하는 인프라의 최소 패치/서비스 팩 수준에서 최신 상태에 있었던 타사 인프라의 특정 패치 수준이 표시됩니다.
 
-Adobe는 JEE에서 지원하는 AEM Forms 버전과의 역방향 호환성을 보장한다는 가정 하에 타사 공급업체의 릴리스 시 발행되는 긴급 패치 또는 권장 패치를 지원합니다. Adobe는 JEE 설명서의 AEM Forms에 명시된 최소 패치 수준 이후에 릴리스된 패치만 지원합니다.
+Adobe는 타사 공급업체가 JEE에서 지원하는 버전과 역호환성이 보장된다고 가정할 때, 출시와 동시에 서드 파티 공급업체가 발행한 긴급 또는 권장 패치를 지원합니다. Adobe는 JEE 설명서의 AEM Forms에 명시된 최소 패치 수준 이후에 릴리스된 패치만 지원합니다.
 
 경우에 따라 Adobe는 주요 기능을 변경하는 타사 업데이트를 지원하지 않으므로 이전 버전과의 완벽한 호환성을 지원하지 않습니다. 지원되는 업데이트에 대한 자세한 내용은 특정 공급업체 [제품에 대한 지원 패치 정의](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) 및 Adobe에서 지원하는 패치 유형을 참조하십시오.
 
@@ -714,5 +714,3 @@ Adobe의 통제 밖에 있는 상황에서 이전 버전과의 호환성을 주�
 Adobe는 JEE 릴리스에서 AEM Forms가 지원하는 타사 참조 플랫폼과 지원되는 패치 정의를 특정 시점에 변경할 수 있는 권한을 가집니다.
 
 타사 패치에 대한 추가 정보는 Adobe 엔터프라이즈 지원 사이트에서 제품과 관련된 기술 자료 문서를 검색하여 찾을 수 있습니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
