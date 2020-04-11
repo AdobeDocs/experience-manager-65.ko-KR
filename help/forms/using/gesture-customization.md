@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -70,5 +70,3 @@ AEM Forms 앱에서 왼쪽 스와이프는 새 작업 또는 시작점을 열고
 1. AEM Forms 앱을 빌드하고 실행합니다. 이제 마우스 왼쪽 버튼을 누르고 마우스 오른쪽 버튼으로 스와이프하면 Adobe Sign을 열 수 있습니다.
 
 마찬가지로 제스처, HTML 요소 및 함수의 다양한 조합에 대해 다른 보기를 변경할 수 있습니다.
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
