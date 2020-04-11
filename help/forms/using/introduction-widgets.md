@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    <td>스크립트 표현식에서 이 개체나 이벤트를 지정하는 데 사용되는 식별자입니다. 예를 들어 이 속성은 호스트 응용 프로그램의 이름을 지정합니다.</td>
   </tr>
   <tr>
-   <td>값</td>
+   <td>정렬 단추</td>
    <td>필드의 실제 값입니다. </td>
   </tr>
   <tr>
@@ -181,12 +181,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    <th>설명</th>
   </tr>
   <tr>
-   <td>값<br /> </td>
+   <td>정렬 단추<br /> </td>
    <td>선택한 값의 배열.<br /> </td>
   </tr>
   <tr>
    <td>항목<br /> </td>
-   <td>옵션으로 표시할 개체의 배열입니다. <br /> 각 객체에는 다음과 같은 두 가지 속성이 포함되어 있습니다<br /> .저장할 값, 표시 값:값을 표시합니다. <br /> </td>
+   <td>옵션으로 표시할 개체의 배열입니다. 각 객체에는 다음과 같은 두 가지 속성이 포함되어 있습니다<br /> .저장할 값, 표시 값:값을 표시합니다.<br /> <br /> </td>
   </tr>
   <tr>
    <td><p>편집</p> <p><strong>참고</strong>:HTML5 양식에만 해당됩니다.<br /> </p> </td>
@@ -212,7 +212,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    <th>설명</th>
   </tr>
   <tr>
-   <td><p><em> addItem:function(itemValues)<br /> itemValues:표시 및 저장 값 <br /> {sDisplayVal을 포함하는 개체:&lt;displayValue&gt;, sSaveVal:&lt;저장 값&gt;}</em></p> </td>
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues:표시 및 저장 값 <br /> {sDisplayVal을 포함하는 개체:&lt;displayValue&gt;, sSaveVal:&lt;저장 값&gt;}</em></p> </td>
    <td>목록에 항목을 추가합니다.</td>
   </tr>
   <tr>
@@ -267,5 +267,3 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 | 개월 | 해당 필드의 월 이름입니다. |
 | zero | 숫자 0에 대한 현지화된 텍스트입니다. |
 | clearText | 지우기 단추에 사용할 현지화된 텍스트입니다. |
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
