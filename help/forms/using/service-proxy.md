@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: 081f7c17-4e5d-4c7e-a5c3-5541a29b9d55
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -133,5 +133,3 @@ HTML5 양식은 AEM 서버에 연결하여 서버측 스크립트, 웹 서비스
 * 프록시가 데이터를 게시하면 프록시 서비스는 submitUrl을 제외한 모든 매개 변수를 */bin/xfaforms/submitaction* 종료 지점에 전달하여 응답 스트림의 xml 바이트를 수신합니다. 그런 다음 프록시 서비스는 처리를 위해 데이터 xml 바이트를 submitUrl에 게시합니다.
 
 * 데이터(POST 요청)를 서버로 보내기 전에 HTML5 양식이 서버의 연결성 및 가용성을 확인합니다. 연결 및 가용성을 확인하기 위해 HTML 양식은 빈 헤드 요청을 서버에 보냅니다. 서버를 사용할 수 있는 경우 HTML5 양식이 데이터(POST 요청)를 서버로 전송합니다. 서버를 사용할 수 없는 경우 서버에 연결할 *수 없다는 오류 메시지가* 표시됩니다. 고급 탐지는 사용자가 양식을 리플로우하는 번거로움을 방지합니다. 프록시 서블릿은 헤드 요청을 처리하며 예외를 발생시키지 않습니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
