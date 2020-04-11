@@ -11,7 +11,7 @@ topic-tags: designer
 discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -59,11 +59,11 @@ source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
 
 ### 서명 {#signing}
 
-양식에 서명 스크리블 필드를 추가하고 렌더링하면 해당 필드를 클릭하거나 탭하면 대화 상자가 열립니다. 사용자는 마우스, 손가락 또는 스타일러스를 사용하여 점선 사각형으로 지정된 그리기 영역에서 서명을 자유롭게 그릴 수 있습니다.
+양식에 서명 스크리블 필드를 추가하고 렌더링하면 해당 필드를 클릭하거나 탭하면 대화 상자가 열립니다. 사용자는 점선 사각형으로 지정된 그리기 영역에서 마우스, 손가락 또는 스타일러스를 사용하여 서명을 자유롭게 그릴 수 있습니다.
 
 ![지리적 위치](assets/geolocation.png)
 
-******** A.브러시 **B.지우개** C.**위치** D.지리적 위치 정보
+**A.** 브러시 **B.** 지우개 **C.** 위치 **D.** 지리적 위치 정보
 
 ### 지리적 태그 지정 {#geo-tagging}
 
@@ -101,5 +101,3 @@ iPad의 경우 필드의 init 매개 변수에서 `geoLocManadatoryOnIpad` 매�
 
 * (모바일 장치) 서명 필드를 길게 누르고 확인 대화 상자에서 예를 **누릅니다**.
 * (데스크톱) 서명 필드 위에 마우스를 놓고 **취소** 아이콘을 클릭한 다음 확인 대화 상자에서 예를 **클릭합니다**.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
