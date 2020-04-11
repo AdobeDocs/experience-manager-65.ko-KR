@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -547,7 +547,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 다
 |---|---|---|
 | instanceManager | instanceManager 개체는 양식 모델 개체의 인스턴스 생성, 제거 및 이동을 관리합니다. | 없음 |
 
-## 컨텐츠 {#content}
+## content {#content}
 
 | **속성** | **설명** | **예외** |
 |---|---|---|
@@ -732,7 +732,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 다
    <td>런타임 시 값 설정이 지원되지 않습니다.</td>
   </tr>
   <tr>
-   <td>값</td>
+   <td>정렬 단추</td>
    <td>값 객체에는 데이터 컨텐츠의 단일 단위가 포함됩니다.<br /> </td>
    <td> </td>
   </tr>
@@ -771,7 +771,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 다
   </tr>
   <tr>
    <td>테두리</td>
-   <td>border 개체는 주위의 checkButton 개체에 대해 테두리를 설명합니다. </td>
+   <td>border 개체는 checkButton 개체를 둘러싼 테두리에 대해 설명합니다. </td>
    <td>변경 사항은 모델에 반영되며 스크립팅에는 사용할 수 있지만 HTML 요소와 동기화되지 않습니다. 따라서 변경 사항이 UI에 반영되지 않습니다.<br /> </td>
   </tr>
  </tbody>
@@ -1284,7 +1284,7 @@ FormCalc는 전자 양식 중심 로직 및 계산 루트를 만들기 위한 XF
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>JavaScript 스크립트와 기간을 지정합니다. 이 스크립트는 기간이 지난 후 한 번만 실행됩니다.이 메서드의 반환 값은 JavaScript 변수에서 보유해야 합니다. 그렇지 않으면 시간 초과 개체는 가비지 수집의 대상이 되므로 시계가 중지됩니다. 시간 초과 이벤트를 취소하려면 반환된 시간 초과 객체를 clearTimeOut으로 전달합니다.</td>
+   <td>JavaScript 스크립트와 기간을 지정합니다. 이 스크립트는 기간이 지난 후 한 번만 실행됩니다.이 메서드의 반환 값은 JavaScript 변수에서 보유해야 합니다. 그렇지 않으면 시간 초과 개체는 가비지 수집이 수행되므로 시계가 중지됩니다. 시간 초과 이벤트를 취소하려면 반환된 시간 초과 객체를 clearTimeOut으로 전달합니다.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1351,5 +1351,3 @@ FormCalc는 전자 양식 중심 로직 및 계산 루트를 만들기 위한 XF
 >[!NOTE]
 >
 >HTML5 양식은 클라이언트측(브라우저)에서 렌더링됩니다. 서버측 스크립트 대신 클라이언트측 **유효성 검사** 및 **스크립트 계산을** 사용하는 것이 좋습니다.
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
