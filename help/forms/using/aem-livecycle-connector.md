@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -345,7 +345,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 
 다음 서비스를 사용할 수 있습니다.
 
-* com.adobe.livecycle.formatdataintegration.client.FormDataIntegrationClient
+* com.adobe.livecycle.formdataintegration.client.FormDataIntegrationClient
 
 #### Maven 종속성 {#maven-dependencies-7}
 
@@ -478,5 +478,3 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
   <version>11.0.0</version>
 </dependency>
 ```
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
