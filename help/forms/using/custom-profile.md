@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -81,5 +81,3 @@ footer.jsp 모듈은 비어 있습니다. 사용자 상호 작용에만 사용�
 1. 프로필이 만들어졌는지 확인하려면 URL을 엽니다 `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
 양식을 확인하려면 [로컬 파일 시스템에서 AEM Forms로 양식을](/help/forms/using/get-xdp-pdf-documents-aem.md) 가져오고 AEM 서버 작성 인스턴스에서 양식을 [](/help/forms/using/previewing-forms.md) 미리 봅니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
