@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -55,5 +55,3 @@ HTML5 양식은 HTML5 기능을 사용하여 렌더링되며 렌더링된 양식
       &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/>
 
    1. 파일을 저장합니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
