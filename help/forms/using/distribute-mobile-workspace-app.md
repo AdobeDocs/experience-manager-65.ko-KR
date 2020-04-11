@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -44,5 +44,3 @@ MDM 관리자는 ipa 및 apk 파일을 모두 MDM 서버에 업로드하고 ipa 
 * **암호 정책 섹션의 장치에** 암호 필요
 
 응용 프로그램 데이터의 ****&#x200B;암호화를 활성화하려면 장치에서 **패스코드를** 활성화하는 것이 좋습니다. 장치에 패스코드가 설정되어 있지 않으면 장치에 저장된 응용 프로그램 데이터가 암호화되지 않습니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
