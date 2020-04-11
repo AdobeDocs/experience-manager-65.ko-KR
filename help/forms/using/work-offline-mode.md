@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -48,5 +48,3 @@ AEM Forms 앱의 서버측 오프라인 구성 요소를 구성하려면:
    * **리소스 관찰 경로**:오프라인 서비스가 리소스 변경을 모니터링하는 경로를 지정합니다. 지정된 경로에 변경 사항이 발생하면 모든 종속 양식의 오프라인 캐시가 업데이트됩니다. 예, `/etc/clientlibs/fd,/content/dam/images`.
 
 1. 수동 리소스 **캐시** 탭에서 오프라인 서비스가 식별할 수 없는 양식 종속성을 지정합니다. JavaScript 내에서 로드된 이미지와 같은 리소스를 지정할 수 있습니다. AEM Forms 앱은 이러한 리소스와 오프라인 모드를 다운로드합니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
