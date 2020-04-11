@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -64,5 +64,3 @@ AEM Forms 앱의 일반 설정을 사용하면 첨부 파일 가져오기, 오�
 >캐시를 지우면 앱에서 즉시 로그아웃됩니다.
 >
 >그러나 캐시 지우기 작업을 확인하는 메시지가 표시됩니다.
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
