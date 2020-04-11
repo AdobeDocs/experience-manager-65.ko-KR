@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -52,7 +52,7 @@ http://localhost:4502/content/xfaforms/profiles/default.html?
   </tr>
   <tr>
    <td>contentRoot<br /> </td>
-   <td>이 매개 변수는 템플릿 및 관련 리소스가 있는 경로를 지정합니다. 이 경로는 서버 파일 시스템 경로나 저장소 경로, http 또는 ftp 경로일 수 있습니다.<br /> </td>
+   <td>이 매개 변수는 템플릿 및 관련 리소스가 있는 경로를 지정합니다. 이 경로는 서버 파일 시스템 경로, 저장소 경로, http 또는 ftp 경로일 수 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>submitUrl<br /> </td>
@@ -76,10 +76,8 @@ HTML5 양식은 렌더링 매개 변수를 전달하는 세 가지 방법을 지
 
 * **SetAttribute 요청 매개 변수**:렌더링 매개 변수를 키-값 쌍으로 지정할 수 있습니다. SetAttribute 요청 매개 변수에서 매개 변수는 최종 사용자에게 표시되지 않습니다. 다른 JSP의 요청을 HTML5 양식 프로필 렌더러 JSP로 전달하고 *요청* 개체에서 setAttribute를 사용하여 모든 렌더링 매개 변수를 전달할 수 있습니다. 이 메서드의 우선 순위가 가장 높습니다.
 
-* **** 프로필 노드 요청 매개 변수:렌더링 매개 변수를 프로필 노드의 노드 속성으로 지정할 수 있습니다. 프로필 노드 요청 매개 변수에서 매개 변수가 최종 사용자에게 표시되지 않습니다. 프로필 노드는 요청을 보내는 노드입니다. 매개 변수를 노드 속성으로 지정하려면 CRXDE lite를 사용합니다.
+* **프로필 노드 요청 매개 변수:** 렌더링 매개 변수를 프로필 노드의 노드 속성으로 지정할 수 있습니다. 프로필 노드 요청 매개 변수에서 매개 변수가 최종 사용자에게 표시되지 않습니다. 프로필 노드는 요청을 보내는 노드입니다. 매개 변수를 노드 속성으로 지정하려면 CRXDE lite를 사용합니다.
 
 ### 매개 변수 제출 {#submit-parameters}
 
 HTML5 양식 제출 데이터;aem 서버에서 서버측 스크립트 및 웹 서비스를 실행합니다. AEM 서버에서 서버측 스크립트 및 웹 서비스를 실행하는 데 사용되는 매개 변수에 대한 자세한 내용은 HTML5 [양식 서비스 프록시를 참조하십시오](/help/forms/using/service-proxy.md).
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
