@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -82,5 +82,3 @@ AEM [Forms 작업 영역 사용자 지정을](../../forms/using/generic-steps-ht
 ![change_font_after](assets/change_font_after.png)
 
 첫 번째 탭의 글꼴 사용자 정의 후 위쪽 내비게이션 막대
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
