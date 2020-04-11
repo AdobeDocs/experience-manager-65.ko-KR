@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -222,7 +222,7 @@ AEM Forms 작업 영역에서 사용되는 JSON 개체는 아래에 설명되어
   <tr>
    <td>serializedImageTicket<br /> </td>
    <td>F</td>
-   <td>작업에 해당하는 이미지 티켓이 포함되어 있습니다. <br /> 이 이미지 티켓은 서버의 작업에 대한 이미지를 가져오기 위해 작업의 imageUrl 필드에 사용됩니다. <br /> </td>
+   <td>작업에 해당하는 이미지 티켓이 포함되어 있습니다. 이 이미지 티켓은 서버의 작업에 대한 이미지를 가져오기 위해 작업의 imageUrl 필드에 사용됩니다.<br /> <br /> </td>
   </tr>
   <tr>
    <td>serviceName<br /> </td>
@@ -851,5 +851,3 @@ AEM Forms 작업 영역에서 사용되는 JSON 개체는 아래에 설명되어
   </tr>
  </tbody>
 </table>
-
-**[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)**
