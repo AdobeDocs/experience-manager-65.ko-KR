@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -49,7 +49,7 @@ source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
   </tr>
   <tr>
    <td>페이지 매김<br /> </td>
-   <td><p>HTML5 양식은 패널과 상자로 나누어져 PDF 양식과 유사한 모양을 제공합니다. 페이지의 크기는 동적으로 계산됩니다. HTML5 양식에 있는 페이지의 모든 컨텐츠를 삭제하거나 숨김으로 표시한 경우 빈 페이지가 숨겨지고 빈 공간(공백)이 빈 페이지의 위쪽과 아래에 표시되지 않습니다.</p> <p>데이터 병합 또는 스크립트가 페이지에 컨텐츠를 추가하는 경우 페이지 길이가 확장되어 새로 추가된 컨텐츠를 수용할 수 있습니다. 새로 추가한 컨텐츠를 수용하기 위해 양식에 새 페이지가 추가되지 않습니다. </p> <p><strong></strong> 참고:HTML5 양식에 있는 페이지의 모든 컨텐츠를 삭제하거나 숨김으로 표시한 경우 빈 페이지(공백)는 첫 번째 페이지와 두 번째 페이지 사이에 표시되지만 다른 페이지 간에는 표시되지 않습니다.</p> </td>
+   <td><p>HTML5 양식은 패널과 상자로 나누어져 PDF 양식과 유사한 모양을 제공합니다. 페이지의 크기는 동적으로 계산됩니다. HTML5 양식에 있는 페이지의 모든 컨텐츠를 삭제하거나 숨김으로 표시한 경우 빈 페이지가 숨겨지고 빈 공간(공백)이 빈 페이지의 위쪽과 아래에 표시되지 않습니다.</p> <p>데이터 병합 또는 스크립트가 페이지에 컨텐츠를 추가하는 경우 페이지 길이가 확장되어 새로 추가된 컨텐츠를 수용할 수 있습니다. 새로 추가된 컨텐츠를 수용하기 위해 양식에 새 페이지가 추가되지 않습니다. </p> <p><strong>참고:</strong> HTML5 양식에 있는 페이지의 모든 컨텐츠를 삭제하거나 숨김으로 표시한 경우 빈 페이지(공백)는 첫 번째 페이지와 두 번째 페이지 사이에 표시되지만 다른 페이지 간에는 표시되지 않습니다.</p> </td>
    <td>PDF의 페이지 매김은 병합된 데이터 컨텐츠 또는 사용자 컨텐츠에 따라 달라지며 페이지 수는 그에 따라 증가/줄어듭니다.</td>
   </tr>
   <tr>
@@ -81,5 +81,3 @@ source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
 </table>
 
 <!--Follow the best practices to enable a form template for HTML5 renditions and ensure that the behavior and appearance of HTML5 forms and XFA-based PDF is consistent. For detailed list of best practices, see [Best practices to design an HTML5 form.](/help/forms/using/best-practices-design-html5-forms.md)-->
-
-[지원 문의](https://www.adobe.com/account/sign-in.supportportal.html)
