@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -658,4 +658,4 @@ response.setCharacterEncoding("utf-8");
 
 패키지를 `sample-report-pkg-1.zip` 가져와 아티클에서 설명한 사용자 정의 보고서와 UI를 프로세스 관리 UI로 통합할 수 있습니다.
 
-[파일](assets/sample-report-pkg-1.zip)지원[문의](https://www.adobe.com/account/sign-in.supportportal.html)
+[파일 가져오기](assets/sample-report-pkg-1.zip)
