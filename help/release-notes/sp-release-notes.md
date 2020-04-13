@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be4a8a78b8555149809b8026bfd059f4cc9e9401
+source-git-commit: 9daad219d885c1c6972ace0b247f3537dcdc38a9
 
 ---
 
@@ -177,6 +177,8 @@ AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과
 * 시작 라이브러리 URL 생성은 Launch API의 `path` 및 `library_name` 값만 기반으로 하며 `library_path` 값을 기반으로 하지 않습니다(NPR-31550).
 
 * LiveFyre 관련 항목을 처리하는 동안 오류 메시지가 표시됩니다(FYR-12420).
+
+* ReportSuitesServlet은 SSRF에 취약합니다(NPR-32156).
 
 ### WCM 템플릿 편집기 {#wcm-template-editor-6540}
 
