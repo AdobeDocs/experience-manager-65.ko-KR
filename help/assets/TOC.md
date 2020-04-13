@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Assets User Guide
+user-guide-title: AEM 6.5 자산 사용 안내서
 translation-type: tm+mt
-source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
+source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
    + [3D 자산 미리 보기](previewing-3d-assets.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [타임라인의 활동 스트림](activity-stream.md)
-   + [자산에 워크플로우 적용](assets-workflow.md)
+   + [자산 처리](assets-workflow.md)
    + [이미지 맵 추가](image-maps.md)
    + [MSM을 사용하여 에셋 재사용](reuse-assets-using-msm.md)
    + [AEM Sites와 연결된 에셋](use-assets-across-connected-assets-instances.md)
