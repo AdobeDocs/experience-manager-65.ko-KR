@@ -3,7 +3,7 @@ title: PDF 래스터라이저를 사용하여 변환 생성
 description: 이 문서에서는 Adobe PDF 래스터라이저 라이브러리를 사용하여 고품질 축소판과 변환을 생성하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -26,9 +26,7 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 
    >
    >PDF 래스터라이저 라이브러리는 Windows 및 Linux에서만 사용할 수 있습니다.
 
-1. 에서 AEM 자산 워크플로우 콘솔에 액세스합니다 `https://[server]:[port]/workflow`.
-
-   DAM 자산 업데이트 워크플로우 페이지를 엽니다.
+1. 에서 AEM 자산 워크플로우 콘솔에 액세스합니다 `https://[server]:[port]/workflow`. DAM 자산 [!UICONTROL 업데이트 워크플로우] 페이지를 엽니다.
 
 1. 기본 방법을 사용하여 PDF 및 AI 파일에 대한 축소판 및 웹 변환 생성을 방지하려면 다음 단계를 수행합니다.
 
