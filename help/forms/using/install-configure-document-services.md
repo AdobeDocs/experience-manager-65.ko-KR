@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: ba4e4908c0564af6e7f0759c5119a5c02f274dbd
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -32,7 +32,7 @@ Forms Designer에서 일반적으로 작성된 양식을 확인, 처리, 변환 
 
 PDF, 레이저 프린터 포맷, 레이블 프린터 포맷 등 다양한 포맷으로 문서를 만들 수 있습니다. 레이저 프린터 형식은 PostScript 및 프린터 제어 언어(PCL)입니다. 자세한 내용은 출력 [서비스를 참조하십시오](/help/forms/using/output-service.md).
 
-PDF Generator 서비스는 API를 제공하여 기본 파일 형식을 PDF로 변환합니다. 또한 PDF를 다른 파일 포맷으로 변환하고 PDF 문서의 크기를 최적화합니다. 자세한 내용은 PDF Generator [서비스를 참조하십시오](/help/forms/using/aem-document-services-programmatically.md#main-pars-header-27).
+PDF Generator 서비스는 API를 제공하여 기본 파일 형식을 PDF로 변환합니다. 또한 PDF를 다른 파일 포맷으로 변환하고 PDF 문서의 크기를 최적화합니다. 자세한 내용은 PDF Generator [서비스를 참조하십시오](aem-document-services-programmatically.md#pdfgeneratorservice).
 
 조직에서 Adobe Reader의 기능을 추가 사용 권한으로 확장하여 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 Adobe Reader를 사용하여 PDF 문서를 열 때 사용할 수 없는 기능(예: 문서에 주석 추가, 양식 채우기, 문서 저장)을 활성화합니다. 자세한 내용은 Reader 확장 [서비스를 참조하십시오](/help/forms/using/overview-aem-document-services.md#p-reader-extension-service-p).
 
@@ -380,17 +380,17 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경�
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
-AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
+AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
 
 1. AEM 서버에 [](http://localhost:4502) 관리자로 로그인하고 [패키지 공유를](http://localhost:4502/crx/packageshare)엽니다. 패키지 공유에 로그인하려면 Adobe ID가 필요합니다.
 
 1. AEM [패키지 공유에서](http://localhost:4502/crx/packageshare/login.html)AEM **[!UICONTROL 6.4 Forms Add-on 패키지를]**&#x200B;검색하고 운영 체제에 적용 가능한 패키지를 클릭한 다음 다운로드를 **[!UICONTROL 클릭합니다]**. 라이센스 계약을 읽고 동의한 다음 확인을 **[!UICONTROL 클릭합니다]**. 다운로드가 시작됩니다. 다운로드하면 패키지 **[!UICONTROL 옆에]** 다운로드된 단어가 나타납니다.
 
-   버전 번호를 사용하여 추가 기능 패키지를 검색할 수도 있습니다. 최신 패키지의 버전 번호는 AEM Forms 릴리스 [문서를](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 참조하십시오.
+   버전 번호를 사용하여 추가 기능 패키지를 검색할 수도 있습니다. 최신 패키지의 버전 번호는 AEM Forms 릴리스 [문서를](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 참조하십시오.
 
 1. 다운로드가 완료되면 [다운로드됨]을 **[!UICONTROL 클릭합니다]**. 패키지 관리자로 리디렉션됩니다. 패키지 관리자에서 다운로드한 패키지를 검색하고 설치를 **[!UICONTROL 클릭합니다]**.
 
-   AEM Forms 릴리스 [문서에 나열된 직접 링크를 통해 패키지를 수동으로 다운로드하는 경우 패키지](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 관리자에 **[!UICONTROL 로그인하고 패키지 업로드를]**&#x200B;클릭한 다음다운로드한 패키지를 선택하고 업로드를 클릭합니다. 패키지가 업로드된 후 패키지 이름을 클릭하고 설치를 **[!UICONTROL 클릭합니다]**.
+   AEM Forms 릴리스 [문서에 나열된 직접 링크를 통해 패키지를 수동으로 다운로드하는 경우 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 관리자에 **[!UICONTROL 로그인하고 패키지 업로드를]**&#x200B;클릭한 다음다운로드한 패키지를 선택하고 업로드를 클릭합니다. 패키지가 업로드된 후 패키지 이름을 클릭하고 설치를 **[!UICONTROL 클릭합니다]**.
 
 1. 패키지가 설치되면 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log 파일에 나타나지 않고 로그가 안정될 때까지 기다립니다.
 
