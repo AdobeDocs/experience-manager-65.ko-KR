@@ -10,14 +10,14 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
 
 # AEM Forms 감시 폴더{#watched-folder-in-aem-forms}
 
-관리자는 사용자가 감시 폴더에 파일(예: PDF 파일)을 배치할 때 미리 구성된 워크플로우, 서비스 또는 스크립트 작업을 시작하여 추가된 파일을 처리하도록 감시됨 폴더라는 네트워크 폴더를 구성할 수 있습니다. 서비스가 지정된 작업을 수행하면 결과 파일이 지정된 출력 폴더에 저장됩니다. 워크플로, 서비스 및 스크립트에 대한 자세한 내용은 파일 [처리](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-4)방법에 대한 다양한 방법을 참조하십시오.
+관리자는 사용자가 감시 폴더에 파일(예: PDF 파일)을 배치할 때 미리 구성된 워크플로우, 서비스 또는 스크립트 작업을 시작하여 추가된 파일을 처리하도록 감시됨 폴더라는 네트워크 폴더를 구성할 수 있습니다. 서비스가 지정된 작업을 수행하면 결과 파일이 지정된 출력 폴더에 저장됩니다. 워크플로, 서비스 및 스크립트에 대한 자세한 내용은 파일 [처리](#variousmethodsforprocessingfiles)방법에 대한 다양한 방법을 참조하십시오.
 
 ## 감시 폴더 만들기 {#create-a-watched-folder}
 
@@ -25,7 +25,7 @@ source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 * 감시 폴더 구성 노드의 속성을 구성하는 동안 folderPath 속성에 상위 디렉토리의 전체 경로를 입력하고 다음 예제와 같이 생성할 감시 폴더의 이름을 추가합니다.폴더가 `C:/MyPDFs/MyWatchedFolder`존재하지 `MyWatchedFolder`않으므로 AEM Forms에서 지정된 경로에 폴더를 만듭니다.
 
-* 감시 폴더 끝점을 구성하기 전에 파일 시스템에 폴더를 만든 다음 folderPath 속성에 전체 경로를 제공합니다. folderPath 속성에 대한 자세한 내용은 감시 폴더 [속성을](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)참조하십시오.
+* 감시 폴더 끝점을 구성하기 전에 파일 시스템에 폴더를 만든 다음 folderPath 속성에 전체 경로를 제공합니다. folderPath 속성에 대한 자세한 내용은 감시 폴더 [속성을](#watchedfolderproperties)참조하십시오.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   지원되는 속성의 전체 목록은 감시 폴더 [속성을](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)참조하십시오.
+   지원되는 속성의 전체 목록은 감시 폴더 [속성을](#watchedfolderproperties)참조하십시오.
 
 1. 모두 **저장을 클릭합니다**. 노드가 만들어지면 속성이 저장됩니다. 속성에 지정된 경로에 `input`, `result``failure`, `preserve`및 `stage``folderPath` 폴더가 생성됩니다.
 
@@ -662,5 +662,5 @@ inputProcessorType(문자열):시작할 프로세스의 유형입니다. 이 자
    * inputProcessorId(문자열):inputProcessorId 속성의 동작은 inputProcessorType 속성에 지정된 값을 기반으로 합니다. 이 예에서 inputProcessorType 속성 값은 workflow입니다. 따라서 inputProcessorId 속성에 대해 PDFG 워크플로우의 다음 경로를 지정합니다./etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern(문자열):출력 파일의 패턴입니다. 폴더 또는 파일 패턴을 지정할 수 있습니다. 폴더 패턴이 지정된 경우 출력 파일의 이름은 워크플로우에 설명된 대로 지정됩니다. 파일 패턴이 지정된 경우 출력 파일의 이름은 파일 패턴에 설명된 대로 지정됩니다.
-   위에 언급된 필수 속성 외에도 감시 폴더에서는 몇 가지 선택 사항도 지원합니다. 선택적 속성에 대한 전체 목록 및 설명은 감시 폴더 [속성을](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)참조하십시오.
+   위에 언급된 필수 속성 외에도 감시 폴더에서는 몇 가지 선택 사항도 지원합니다. 선택적 속성에 대한 전체 목록 및 설명은 감시 폴더 [속성을](#watchedfolderproperties)참조하십시오.
 
