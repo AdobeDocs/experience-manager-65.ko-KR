@@ -8,7 +8,7 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -97,7 +97,7 @@ Scene7에서 사전 설정이 업데이트되었기 때문에 AEM에서 비디�
 ## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
 
 1. Scene7 인코딩 프로필을 사용하여 클라우드 구성을 설정한 CQ DAM 대상 폴더로 이동합니다.
-1. **[!UICONTROL 업로드]**&#x200B;를 클릭하여 마스터 비디오를 업로드합니다. Video uploading and encoding is complete after the DAM Update Asset workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. **[!UICONTROL 업로드]**&#x200B;를 클릭하여 마스터 비디오를 업로드합니다. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ S7 클라우드 구성에서 선택한 S7 인코딩 사전 설정에 따라 다�
 
 1. AEM에서 **[!UICONTROL 도구 > 구성 콘솔을 누릅니다**.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. 새 S7 비디오 프로필을 만듭니다. **[!UICONTROL 새로]**&#x200B;만들기...메뉴에서 페이지 **[!UICONTROL 만들기를]** 선택한 다음 Scene7 비디오 프로필 템플릿을 선택합니다. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 새 S7 비디오 프로필을 만듭니다. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
