@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
 | 선택한 적응형 양식 구성 요소의 속성 브라우저에 변경 사항 저장 | Ctrl+S | Command+S |
 | 선택한 적응형 양식 구성 요소에 대한 규칙 편집 | Ctrl+Alt+Enter | Command+Alt+Return |
 | 미리 보기와 현재 선택한 모드(예: 편집, Scaffolding 등) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;Amp;ast; |
-| 마지막 변경 내용을 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Amp;ast; |
+| 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Amp;ast; |
 | 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;Amp;ast; |
 | 여러 구성 요소 선택 | Shift+클릭 | Shift+클릭 |
 | 선택한 구성 요소 복사 | Ctrl+C | Ctrl-C&amp;ast; |
@@ -59,7 +59,7 @@ source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
 |---|---|---|
 | 테마에서 선택한 구성 요소에 대한 속성 브라우저 열기 | Alt+Enter | Alt+Return |
 | 테마에서 선택한 구성 요소의 속성 브라우저 닫기 | Ctrl+Alt+W | Command+Alt+W |
-| 마지막 변경 내용을 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Amp;ast; |
+| 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Amp;ast; |
 | 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;Amp;ast; |
 | 테마에서 선택한 구성 요소의 속성 브라우저에 변경 사항 저장 | Ctrl+S | Ctrl+S&amp;Amp;ast; |
 
@@ -67,11 +67,11 @@ source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
 >
 >Mac OS에서 Ctrl 및 Command 키를 모두 사용하여 &#39;&amp;ast;&#39;로 표시된 단축키를 사용할 수 있습니다.
 
-## Content Browser  {#contentbrowser}
+## 컨텐츠 브라우저 {#contentbrowser}
 
 | **작업** | **Windows에서 바로 가기** | **Mac OS에서 바로 가기** |
 |---|---|---|
-| 포커스가 있을 때 컨텐츠 브라우저의 양식 객체 트리에서 모든 아코디언 확장 | 모든 아코디언을 선택하려면 Ctrl+A를 누르고 확장하려면 오른쪽 화살표 | Command+A를 눌러 모든 아코디언을 선택하고 오른쪽 화살표를 클릭하여 확장 |
+| 포커스가 있을 때 컨텐츠 브라우저의 양식 객체 트리에서 모든 아코디언 확장 | Ctrl+A를 눌러 모든 아코디언을 선택하고 오른쪽 화살표를 클릭하여 확장 | Command+A를 눌러 모든 아코디언을 선택하고 오른쪽 화살표를 클릭하여 확장 |
 | 포커스가 있을 때 컨텐츠 브라우저의 양식 객체 트리에서 모든 아코디언 축소 | Ctrl+A를 눌러 모든 아코디언을 선택하고 왼쪽 화살표를 클릭하여 축소합니다. | Command+A를 눌러 모든 아코디언을 선택하고 왼쪽 화살표를 클릭하여 축소합니다. |
 | 양식 개체 트리에서 선택한 아코디언 확장 | 오른쪽 화살표 | 오른쪽 화살표 |
 | 양식 개체 트리에서 선택한 아코디언 축소 | 왼쪽 화살표 | 왼쪽 화살표 |
@@ -85,7 +85,7 @@ source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
 
 이 섹션에는 통신 관리 텍스트 편집기에서 사용할 수 있는 다양한 키보드 및 액세서빌러티 단축키가 나열됩니다. 다음과 같은 경우 바로 가기를 사용할 수 있습니다.
 
-* 텍스트 자산 만들기 또는 [편집](/help/forms/using/document-fragments.md#main-pars-header-0)
+* 텍스트 자산 만들기 또는 [편집](texts-interactive-communications.md)
 * 통신 ![내용을](assets/edittextmodule.png)만들 때 관련 편집 아이콘( [edittextmodule](/help/forms/using/create-correspondence.md))을 탭한 후 텍스트 모듈을 편집합니다.
 
 ### 텍스트 선택 및 커서 이동 {#text-selection-and-moving-the-cursor-around}
