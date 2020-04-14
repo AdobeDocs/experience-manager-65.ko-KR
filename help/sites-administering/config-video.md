@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## 비디오 프로필 구성 {#configure-video-profiles}
 
-HTML5 요소에 사용할 비디오 프로필을 정의할 수 있습니다. 여기서 선택한 것은 순서대로 사용됩니다. 액세스하려면 디자인 모드( [클래식 UI만](/help/sites-authoring/default-components-designmode.md) 해당)를 **** 사용하고 프로필탭을 선택합니다.
+HTML5 요소에 사용할 비디오 프로필을 정의할 수 있습니다. 여기서 선택한 것은 순서대로 사용됩니다. 액세스하려면 디자인 모드( [클래식 UI만](/help/sites-authoring/default-components-designmode.md) 해당)를 **[!UICONTROL 사용하고]** 프로필탭을선택합니다.
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
@@ -88,5 +88,5 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 >[!NOTE]
 >
->AEM 인스턴스를 업그레이드할 때 OOTB 워크플로우 모델은 보존되지 않습니다. OOTB 워크플로우 모델을 편집하기 전에 복사하는 것이 좋습니다. 예를 들어 DAM 자산 업데이트 모델에서 FFmpeg 트랜스코딩 단계를 편집하기 전에 OTB DAM 자산 업데이트 모델을 복사하여 업그레이드 전에 존재했던 비디오 프로필 이름을 선택합니다. 그런 다음 AEM이 OOTB 모델에 대한 사용자 지정 변경 사항을 검색할 수 있도록 `/apps` 노드를 오버레이할 수 있습니다.
+>AEM 인스턴스를 업그레이드할 때 OOTB 워크플로우 모델은 보존되지 않습니다. OOTB 워크플로우 모델을 편집하기 전에 복사하는 것이 좋습니다. 예를 들어 DAM 자산 업데이트 [!UICONTROL 모델의 FFmpeg] 트랜스코딩 단계를 편집하기 전에 OTB DAM 자산 [!UICONTROL 업데이트] 모델을 복사하여 업그레이드 전에 있었던 비디오 프로필 이름을 선택합니다. 그런 다음 AEM이 OOTB 모델에 대한 사용자 지정 변경 사항을 검색할 수 있도록 `/apps` 노드를 오버레이할 수 있습니다.
 
