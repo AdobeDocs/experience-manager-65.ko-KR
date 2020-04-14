@@ -3,7 +3,7 @@ title: 이미징 트랜스코딩 라이브러리
 description: 인코딩, 트랜스코딩, 이미지 리샘플링, 이미지 크기 조정 등 핵심 이미지 처리 기능을 수행할 수 있는 이미지 처리 솔루션인 Adobe의 Imaging Transcoding Library를 구성 및 사용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -25,8 +25,8 @@ Imaging Transcoding Library는 다양한 파일 포맷과 프로파일을 지원
 
 * **파일 크기 또는 해상도를**&#x200B;증가시켜 크기 조정:Scaling은 파일 디코딩 시 크기를 다시 조정할 수 있는 Imaging Transcoding Library의 특허 기능을 통해 주로 가능합니다. 이러한 기능을 통해 런타임 메모리 사용이 항상 최적의 상태로 유지되며 파일 크기나 해상도의 메가픽셀을 증가시키는 이차 기능이 아닙니다. Imaging Transcoding Library는 대용량의 고해상도(대용량의 메가픽셀 포함) 파일을 처리할 수 있습니다. ImageMagick과 같은 타사 도구는 이러한 파일을 처리하는 동안 큰 파일 및 충돌을 처리할 수 없습니다.
 * **Photoshop 품질 압축 및 크기 조정 알고리즘**:다운샘플링 품질(매끄러움, 선명하게, 자동 쌍입방) 및 압축 품질 측면에서 업계 표준과 일관성을 유지할 수 있습니다. Imaging Transcoding Library는 입력 이미지의 품질 요소를 추가로 평가하고 출력 이미지에 적합한 표와 품질 설정을 지능적으로 사용합니다. 이 기능을 사용하면 시각적 품질을 저해하지 않고도 최적의 크기의 파일을 제작할 수 있습니다.
-* **** 높은 처리량:응답 시간은 낮고 처리량은 ImageMagick보다 일관되게 높습니다. 따라서 Imaging Transcoding Library를 사용하면 사용자의 대기 시간과 호스팅 비용을 줄일 수 있습니다.
-* **** 동시 로드로 더 높은 비율 조정:Imaging Transcoding Library는 동시 로드 조건에서 최적으로 수행됩니다. 최적의 CPU 성능, 메모리 사용량 및 낮은 응답 시간을 통해 높은 처리량을 제공하므로 호스팅 비용을 절감할 수 있습니다.
+* **높은 처리량:** 응답 시간은 낮고 처리량은 ImageMagick보다 일관되게 높습니다. 따라서 Imaging Transcoding Library를 사용하면 사용자의 대기 시간과 호스팅 비용을 줄일 수 있습니다.
+* **동시 로드로 더 높은 비율 조정:** Imaging Transcoding Library는 동시 로드 조건에서 최적으로 수행됩니다. 최적의 CPU 성능, 메모리 사용량 및 낮은 응답 시간을 통해 높은 처리량을 제공하므로 호스팅 비용을 절감할 수 있습니다.
 
 ## Supported platforms {#supported-platforms}
 
@@ -98,7 +98,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로우를 업�
 
 1. 경로 값이 로 설정되어 있는지 확인하려면 `.``echo $LD_LIBRARY_PATH` 명령을 사용합니다. 출력물은 반드시 `.`필요합니다. 값이 로 설정되지 않은 `.`경우 세션을 다시 시작합니다.
 
-### DAM 자산 업데이트 워크플로우 구성 {#configure-dam-asset-update-workflow}
+### DAM [!UICONTROL 자산 업데이트 워크플로우] 구성 {#configure-dam-asset-update-workflow}
 
 이미지를 [!UICONTROL 처리하기 위해 라이브러리를] 사용하도록 DAM 자산 업데이트 워크플로우를 업데이트합니다.
 
