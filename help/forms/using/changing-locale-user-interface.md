@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -48,7 +48,7 @@ CRXDE Lite의 기본 URL은 `https://'[server]:[port]'/lc/crx/de/index.jsp`입�
 
 ## 축소된 카테고리, 대기열 및 프로세스 현지화 {#localizing-collapsed-categories-queues-and-processes}
 
-AEM Forms 작업 영역에서는 이미지를 사용하여 카테고리, 큐 및 프로세스의 헤더를 표시합니다. 이러한 헤더를 현지화하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 AEM Forms 작업 [영역 코드 작성을 참조하십시오.](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+AEM Forms 작업 영역에서는 이미지를 사용하여 카테고리, 큐 및 프로세스의 헤더를 표시합니다. 이러한 헤더를 현지화하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 AEM Forms 작업 [영역 코드 작성을 참조하십시오.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 다음 단계에서는 새로운 현지화된 이미지 파일이 Categories_nw.png, Queue_ *nw.png*&#x200B;및 *Processes_nw.png**라고 가정합니다*. 권장 이미지 너비는 19px입니다.
 
@@ -107,7 +107,7 @@ AEM Forms 작업 영역에서는 이미지를 사용하여 카테고리, 큐 및
 
 ## 날짜 선택기 현지화 {#localizing-date-picker}
 
-Datepicker API를 현지화하려면 개발 패키지가 *필요합니다* . 개발 패키지 만들기에 대한 자세한 내용은 AEM [Forms 작업 영역 코드](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)작성을 참조하십시오.
+Datepicker API를 현지화하려면 개발 패키지가 *필요합니다* . 개발 패키지 만들기에 대한 자세한 내용은 AEM [Forms 작업 영역 코드](introduction-customizing-html-workspace.md#building-html-workspace-code)작성을 참조하십시오.
 
 1. jQuery UI [패키지를](https://jqueryui.com/download/all/)다운로드하고 추출하면 *&lt;extraced jquery UI package>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n으로 이동합니다.
 1. 이제 로케일 코드의 jquery.ui.datepicker-nw.js 파일을 apps/ws/js/libs/jqueryi에 복사하고 로케일별 파일 변경을 수행합니다.
