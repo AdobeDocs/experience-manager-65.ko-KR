@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -26,14 +26,14 @@ Dynamic Media Classic 비디오 통합은 최적화된 비디오의 범위를 �
 
 ## FFMPEG 및 Dynamic Media Classic 정보 {#about-ffmpeg-and-scene}
 
-기본 비디오 인코딩 프로세스는 FFMPEG 기반의 비디오 프로필 통합 사용을 기준으로 합니다. 따라서, 바로 사용이 가능한 DAM 자산 업데이트 워크플로우에는 다음과 같은 2가지 ffmpeg 기반 워크플로우 단계가 포함됩니다.
+기본 비디오 인코딩 프로세스는 FFMPEG 기반의 비디오 프로필 통합 사용을 기준으로 합니다. Therefore, the out-of-the-box [!UICONTROL DAM Update Asset] workflow contains the following two ffmpeg-based workflow steps:
 
 * FFMPEG 썸네일
 * FFMPEG 인코딩
 
-Dynamic Media Classic 통합을 활성화하고 구성해도 기본 DAM 자산 업데이트 통합 워크플로우에서 이러한 두 워크플로우 단계가 자동으로 제거되거나 비활성화되지는 않습니다. AEM에서 이미 FFMPEG 기반 비디오 인코딩을 사용하고 있다면 작성 환경에 FFMPEG가 설치되어 있을 수 있습니다. 이 경우 자산을 사용하여 인제스트된 새 비디오는 다음 두 번 인코딩됩니다.한 번 FFMPEG 인코더에서 한 번, Dynamic Media Classic 통합에서 한 번,
+Be aware that enabling and configuring the Dynamic Media Classic integration does not automatically remove or deactivate these two workflow steps from the out-of-the-box [!UICONTROL DAM Update Asset] ingestion workflow. AEM에서 이미 FFMPEG 기반 비디오 인코딩을 사용하고 있다면 작성 환경에 FFMPEG가 설치되어 있을 수 있습니다. 이 경우 자산을 사용하여 인제스트된 새 비디오는 다음 두 번 인코딩됩니다.한 번 FFMPEG 인코더에서 한 번, Dynamic Media Classic 통합에서 한 번,
 
-AEM의 FFMPEG 기반 비디오 인코딩이 구성되고 설치된 경우 DAM 자산 업데이트 워크플로우에서 두 개의 FFMPEG 워크플로우를 제거하는 것이 좋습니다.
+If you have the FFMPEG-based video encoding in AEM configured and FFMPEG installed, Adobe recommends that you remove the two FFMPEG workflows from your [!UICONTROL DAM Update Asset] workflows.
 
 ### 지원되는 형식 {#supported-formats}
 
@@ -92,7 +92,7 @@ Dynamic Media Classic 비디오 구성 요소에 대해 다음 형식이 지원�
 
 If you need to update the viewer and encoding presets for video in AEM because the presets have been updated in Dynamic Media Classic, navigate to the Dynamic Media Classic configuration in the cloud configuration and click **Update the viewer and encoding presets**.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
 ### 마스터 비디오 업로드 {#uploading-your-master-video}
 
@@ -149,7 +149,7 @@ Dynamic Media Classic 클라우드 구성에서 선택한 Dynamic Media Classic 
 >새 비디오 프로필 및 해당 변경 사항을 게시하려면 활성화해야 합니다.
 
 1. AEM에서 **[!UICONTROL 도구]**&#x200B;로 이동한 후 **[!UICONTROL 구성 콘솔]**&#x200B;을 선택합니다. In the Configuration Console navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in the navigation tree.
-1. 새 Dynamic Media Classic 비디오 프로필을 만듭니다. **[!UICONTROL 새로]**&#x200B;만들기...메뉴에서 페이지 **[!UICONTROL 만들기를]** 선택한 다음 Dynamic Media Classic 비디오 프로필 템플릿을 선택합니다. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 새 Dynamic Media Classic 비디오 프로필을 만듭니다. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
