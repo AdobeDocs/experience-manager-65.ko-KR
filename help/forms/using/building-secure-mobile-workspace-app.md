@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -38,4 +38,4 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 1. 설정 **[!UICONTROL 목록에서 코드]** 서명을 **[!UICONTROL 확장합니다]**.
 1. 코드 **[!UICONTROL 서명 ID의]**&#x200B;경우 해당 서명을 선택합니다. 디버그, 릴리스 및 모든 iOS SDK에 대해 동일한 **[!UICONTROL 서명이]******&#x200B;선택되어 **[!UICONTROL 있는지 확인합니다]**.
 1. 프로젝트 **[!UICONTROL 아래에서]** AEM Forms **[!UICONTROL 를]** 선택하고 **[!UICONTROL 적절한 서명이 코드 코드 Identity]** Debug **[!UICONTROL , SigningRelease 및 Signing Signing]** For Identity **[!UICONTROL , SigningRelease 및 Any iOS SDK]** ****&#x200B;중 하나를 선택했는지 확인합니다.
-1. AEM Forms 앱 빌드 및 배포. AEM Forms 앱을 빌드하고 배포하는 방법에 대한 자세한 지침은 AEM Forms 앱용 [설치 프로그램](/help/forms/using/setup-xcode-project-build-installer.md#main-pars-text-12)빌드를 참조하십시오.
+1. AEM Forms 앱 빌드 및 배포. AEM Forms 앱을 빌드하고 배포하는 방법에 대한 자세한 지침은 AEM Forms 앱용 [설치 프로그램](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)빌드를 참조하십시오.
