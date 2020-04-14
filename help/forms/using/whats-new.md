@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb6ecc224c4fdd8c1af6f7800dc30de419f5ef68
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: eb6ecc224c4fdd8c1af6f7800dc30de419f5ef68
 
 **데이터 표시 패턴 정의**
 
-대화형 통신 작성자는 이제 필드, 변수 및 양식 데이터 모델 요소에 대한 [데이터 표시 패턴을](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146) 정의할 수 있습니다. 예를 들어 날짜, 통화 또는 전화 형식을 사용할 수 있습니다.
+대화형 통신 작성자는 이제 필드, 변수 및 양식 데이터 모델 요소에 대한 [데이터 표시 패턴을](create-interactive-communication.md#datadisplaypatterns) 정의할 수 있습니다. 예를 들어 날짜, 통화 또는 전화 형식을 사용할 수 있습니다.
 
 **새로운 유형의 차트 사용**
 
@@ -68,7 +68,7 @@ source-git-commit: eb6ecc224c4fdd8c1af6f7800dc30de419f5ef68
 
 ![Interactive Communications Charts](assets/interactive-communication-charts.png)
 
-## 응용 양식 {#adaptive-forms}
+## 적응형 양식 {#adaptive-forms}
 
 ### 적응형 양식에서 Adobe Sign의 클라우드 기반의 디지털 서명 사용 {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
@@ -108,7 +108,7 @@ AEM Forms를 사용하면 AEM Sites 단일 페이지 애플리케이션(SPA)에 
 
 #### 다양한 적응형 양식의 워크플로우 사용 {#use-a-workflow-with-different-adaptive-forms}
 
-런타임 시 양식 중심 워크플로우의 기록 단계 및 지정 작업에 [](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) 대한 적응형 양식을 지정할 수 있습니다. 워크플로우에서 다양한 적응형 양식을 사용할 수 있습니다. 워크플로우를 디자인하는 동안 적응형 양식을 선택하는 방법을 결정할 수 있습니다. 적응형 양식은 절대 경로에 위치하거나, 워크플로우에 페이로드로 제출하거나, 변수를 사용하여 계산된 경로에서 사용할 수 있습니다.
+런타임 시 할당 작업 [및 양식 중심 워크플로우의 기록 단계 문서를 위한 적응형 양식을](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) 지정할 수 있습니다. 워크플로우에서 다양한 적응형 양식을 사용할 수 있습니다. 워크플로우를 디자인하는 동안 적응형 양식을 선택하는 방법을 결정할 수 있습니다. 적응형 양식은 절대 경로에 위치하거나, 워크플로우에 페이로드로 제출하거나, 변수를 사용하여 계산된 경로에서 사용할 수 있습니다.
 
 #### 양식 중심의 워크플로우 단계의 향상된 로깅 기능 사용 {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
 
@@ -184,7 +184,7 @@ AEM Forms는 지원되는 운영 체제, 응용 프로그램 서버, 데이터�
     </ul> </td>
   </tr>
   <tr>
-   <td>AEM Forms 앱<br /> </td>
+   <td>AEM Forms app<br /> </td>
    <td>
     <ul>
      <li>Windows 8.1 지원</li>
