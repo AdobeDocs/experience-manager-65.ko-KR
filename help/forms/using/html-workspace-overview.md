@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
 
 ---
 
@@ -49,7 +49,7 @@ AEM Forms 작업 영역을 사용하여 다음 작업을 수행할 수 있습니
 
 AEM Forms 고객은 Flex 작업 영역을 지원하지 않습니다. Flex 작업 영역을 사용하는 모든 고객은 AEM Forms 작업 영역으로 이동해야 합니다.
 
-AEM Forms 작업 영역에서 기본 렌더링 및 제출 서비스는 XDP 양식과 연결된 기본 작업 프로필에서 변경되었으며 새 서비스가 도입되었습니다. 자세한 내용은 새로운 [렌더링 및 제출 서비스를](/help/forms/using/new-render-submit-service.md)참조하십시오. XDP 양식과 연동되는 기존 프로세스를 마이그레이션하여 이러한 서비스를 이용하려면 [다음 단계를](/help/forms/using/new-render-submit-service.md#main-pars-faq)따르십시오.
+AEM Forms 작업 영역에서 기본 렌더링 및 제출 서비스는 XDP 양식과 연결된 기본 작업 프로필에서 변경되었으며 새 서비스가 도입되었습니다. 자세한 내용은 새로운 [렌더링 및 제출 서비스를](/help/forms/using/new-render-submit-service.md)참조하십시오. XDP 양식과 연동되는 기존 프로세스를 마이그레이션하여 이러한 서비스를 이용하려면 [다음 단계를](new-render-submit-service.md)따르십시오.
 
 **AEM Forms 작업 영역을 사용하여 Flex 작업 영역 사용자 정의 매핑**
 
@@ -120,11 +120,11 @@ AEM Forms 작업 영역은 사용자 인터페이스의 레이아웃, 모양, �
 * 의미 체계 사용자 지정을 사용한 기능
 * 다른 웹 애플리케이션에서 HTML 구성 요소 재사용
 
-사용자 [지정](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) 아티클에서는 이러한 사용자 정의 유형에 대해 설명합니다.
+사용자 [지정](introduction-customizing-html-workspace.md#types-of-customizations) 아티클에서는 이러한 사용자 정의 유형에 대해 설명합니다.
 
 ### Set up the developer environment {#set-up-the-developer-environment}
 
-AEM Forms 작업 영역 결과물에는 CRX에 배포된 CRX 패키지, 전체 소스 코드, 타사 JavaScript 라이브러리가 포함된 SDK 아카이브, AEM Forms 작업 영역의 스크립트 빌드가 포함됩니다. 개발자 환경을 설정하여 위에 언급된 사용자 지정을 수행합니다. 자세한 내용은 AEM Forms [작업 영역 코드](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)작성을 참조하십시오.
+AEM Forms 작업 영역 결과물에는 CRX에 배포된 CRX 패키지, 전체 소스 코드, 타사 JavaScript 라이브러리가 포함된 SDK 아카이브, AEM Forms 작업 영역의 스크립트 빌드가 포함됩니다. 개발자 환경을 설정하여 위에 언급된 사용자 지정을 수행합니다. 자세한 내용은 AEM Forms [작업 영역 코드](introduction-customizing-html-workspace.md#building-html-workspace-code)작성을 참조하십시오.
 
 인터페이스 및 핵심 기능(예: 글꼴, 색상 구성표, 로고, 로그인 화면, 오류 대화 상자, 타사 애플리케이션과의 통합, 타사 애플리케이션에서 구성 요소 재사용)의 주요 부분을 사용자 정의할 수 있습니다. 작업 요약 페이지에 표시되는 컨텐츠를 향상시키고 작업 경로 작업에 대한 이미지를 보여주며 AEM Forms 작업 영역 응용 프로그램을 만드는 하위 수준 백본 모델 및 보기를 수정할 수도 있습니다.
 
