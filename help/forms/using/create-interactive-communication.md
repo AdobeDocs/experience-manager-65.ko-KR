@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -127,7 +127,7 @@ Interactive Communications는 개인화되고 인터랙티브한 컨텐츠 제�
  </tbody>
 </table>
 
-자산 탭을 사용하여 대상 영역에 새 조각을 드롭하여 대상 영역과 문서 조각 간 바인딩을 바꿀 **수도** 있습니다. 조각을 드래그하는 동안 대상 영역의 파란색 색상 음영은 문서 조각을 대상 영역에 놓을 수 있음을 나타냅니다.
+자산 탭을 사용하여 대상 영역에 새 조각을 드롭하여 대상 영역과 문서 조각 간 바인딩을 바꿀 **[!UICONTROL 수도]** 있습니다. 조각을 드래그하는 동안 대상 영역의 파란색 색상 음영은 문서 조각을 대상 영역에 놓을 수 있음을 나타냅니다.
 
 문서 조각에 대한 자세한 내용은 문서 조각을 [참조하십시오](/help/forms/using/document-fragments.md).
 
@@ -178,11 +178,11 @@ Interactive Communications는 개인화되고 인터랙티브한 컨텐츠 제�
 
 1. 웹 **[!UICONTROL 채널로 전환합니다]**. 웹 채널이 대화형 통신 편집기에 나타납니다. 인쇄 채널에서 웹 채널로 처음 전환하면 자동 동기화가 발생합니다. 자세한 내용은 [인쇄 채널에서](../../forms/using/create-interactive-communication.md#synchronize)웹 채널 동기화를 참조하십시오.
 
-   이 예에서는 인쇄를 웹용 마스터로 사용하므로 인쇄 채널 자리 표시자, 컨텐츠 및 데이터 바인딩이 웹 채널에 동기화됩니다. 그러나 웹 채널의 특정 컨텐츠를 변경하고 사용자 지정할 수 있습니다. [컨텐츠를 사용자 지정할 수 있도록 인쇄 채널을 사용하여 생성된 대상 영역 및 변수에 대한 상속을](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) 취소합니다.
+   이 예에서는 인쇄를 웹용 마스터로 사용하므로 인쇄 채널 자리 표시자, 컨텐츠 및 데이터 바인딩이 웹 채널에 동기화됩니다. 그러나 웹 채널의 특정 컨텐츠를 변경하고 사용자 지정할 수 있습니다. [컨텐츠를 사용자 지정할 수 있도록 인쇄 채널을 사용하여 생성된 대상 영역 및 변수에 대한 상속을](#cancelinheritance) 취소합니다.
 
    ![웹 채널 자산](assets/webchannelassets.png)
 
-   문서 조각을 탭하고 ![configure_icon](assets/configure_icon.png) (구성)을 탭한 다음 대화형 **[!UICONTROL 커뮤니케이션의 사이드킥에서]** 속성을 누릅니다. 변수 **[!UICONTROL 및 데이터 모델]** 객체 섹션에는 숨겨진 변수 및 문서 조각에 사용된 데이터 모델 객체를 비롯한 변수가 나열됩니다. 각 데이터 모델 개체 또는 변수 옆에 있는 ![편집](assets/edit.svg) (편집) 아이콘을 사용하여 속성을 편집합니다. 또한 인쇄 채널을 사용하여 웹 채널에서 [자동으로](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) 생성된 ![](assets/cancelinheritance.png) 문서 단편의 경우 각 데이터 모델 개체 및 변수 옆에 있는 [(상속 취소) 아이콘을 사용하여 상속을](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) 취소하고편집할 수 있습니다.
+   문서 조각을 탭하고 ![configure_icon](assets/configure_icon.png) (구성)을 탭한 다음 대화형 **[!UICONTROL 커뮤니케이션의 사이드킥에서]** 속성을 누릅니다. 변수 **[!UICONTROL 및 데이터 모델]** 객체 섹션에는 숨겨진 변수 및 문서 조각에 사용된 데이터 모델 객체를 비롯한 변수가 나열됩니다. 각 데이터 모델 개체 또는 변수 옆에 있는 ![편집](assets/edit.svg) (편집) 아이콘을 사용하여 속성을 편집합니다. 또한 인쇄 채널을 사용하여 웹 채널에서 [자동으로](#synchronize) 생성된 ![](assets/cancelinheritance.png) 문서 단편의 경우 각 데이터 모델 개체 및 변수 옆에 있는 [(상속 취소) 아이콘을 사용하여 상속을](#cancelinheritance) 취소하고편집할 수 있습니다.
 
 1. 웹 채널에 구성 요소를 추가하려면 웹 채널을 선택하고 구성 요소를 **[!UICONTROL 누릅니다]**. 필요에 따라 대화형 커뮤니케이션의 웹 채널에 구성 요소를 드래그하여 놓고 구성합니다.
 
@@ -396,7 +396,7 @@ Interactive Communications는 개인화되고 인터랙티브한 컨텐츠 제�
 1. 표 셀에서 기본 텍스트 상자를 선택하고 ![](assets/edit.svg) (편집)을 누릅니다.
 1. 표 셀의 텍스트를 선택하고 하이퍼링크 아이콘을 누릅니다.
 1. 경로 필드에 URL을 **지정합니다** .
-1. 탭하여 하이퍼링크 속성을 ![](assets/done_icon.png) 저장합니다.
+1. 을 ![](assets/done_icon.png) 눌러 하이퍼링크 속성을 저장합니다.
 
 ![하이퍼링크 만들기](assets/create_hyperlink_table_new.png)
 
@@ -581,9 +581,9 @@ Data Sources **>** 마스터 **컨텐트로 이동하여** 인쇄 채널 요소�
 * **상위:** 구성 요소의 상위 항목을 선택합니다.
 * **SOM 표현식 보기:** 구성 [요소의 SOM 표현식을](../../forms/using/using-som-expressions-adaptive-forms.md) 봅니다.
 
-* **패널에서 개체 그룹화:** 패널에서 구성 요소를 그룹화하여 해당 구성 요소에 대해 동시에 작업을 수행할 수 있습니다. 자세한 내용은 패널에서 **[개체 그룹을 참조하십시오](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
+* **패널에서 개체 그룹화:** 패널에서 구성 요소를 그룹화하여 해당 구성 요소에 대해 동시에 작업을 수행할 수 있습니다. 자세한 내용은 패널에서 [개체 그룹을 참조하십시오](#groupobjectspanel).
 
-* **상속 취소:** 대상 [영역 내에서 구성 요소의 상속을](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) 취소하여 편집합니다.
+* **상속 취소:** 대상 [영역 내에서 구성 요소의 상속을](#cancelinheritance) 취소하여 편집합니다.
 
 ### Group objects in Panel {#groupobjectspanel}
 
