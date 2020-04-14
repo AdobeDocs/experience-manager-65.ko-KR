@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -21,7 +21,7 @@ PDF Generator에서 지원되는 파일 유형에 대한 애플리케이션 설�
 
 파일 유형 설정 페이지에서 다음 작업을 수행할 수 있습니다.
 
-* [파일 유형 설정 만들기 또는 편집](/help/forms/using/admin-help/configuring-file-type-settings1.md#main-pars-heading-0)
+* [파일 유형 설정 만들기 또는 편집](#create-or-edit-file-type-settings)
 * 기본적으로 사용할 파일 유형 설정을 지정합니다(PDF Generator 구성 파일 [가져오기 및 내보내기 참조](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html))
 * [기본 설정 변경](/help/forms/using/admin-help/configuring-file-type-settings1.md#change-the-default-settings)
 * [PDF/A 지원 활성화](https://helpx.adobe.com/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
@@ -50,15 +50,15 @@ PDF Generator에서 지원되는 파일 유형에 대한 애플리케이션 설�
 
    [PDF Generator 구성 파일 가져오기 및 내보내기](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html)
 
-   [Adobe PDF 내보내기 설정(Windows 전용)](/help/forms/using/admin-help/configuring-file-type-settings1.md#main-pars-heading-2)
+   [Adobe PDF 내보내기 설정(Windows 전용)](#adobe-pdf-export-settings-windows-only)
 
    [HTML에서 PDF로 설정](#html-to-pdf-settings)
 
-   [PDF로 Flash 비디오 설정](/help/forms/using/admin-help/configuring-file-type-settings1.md#main-pars-heading-9)
+   [PDF로 Flash 비디오 설정](#flash-videos-to-pdf-settings)
 
-   [XPS를 PDF로 설정](/help/forms/using/admin-help/configuring-file-type-settings1.md#main-pars-heading-10)
+   [XPS를 PDF로 설정](#xps-to-pdf-settings)
 
-   [PDF 최적기 설정](/help/forms/using/admin-help/configuring-file-type-settings1.md#main-pars-heading-11)
+   [PDF 최적기 설정](#pdf-optimizer-settings)
 
    [Microsoft Excel 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings1.md#microsoft-excel-settings-windows-only)
 
@@ -399,7 +399,7 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 
 ## Microsoft Excel 설정(Windows만 해당) {#microsoft-excel-settings-windows-only}
 
-이러한 옵션은 Microsoft Excel 파일을 변환하는 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 파일 [유형 설정](/help/forms/using/admin-help/configuring-file-type-settings1.md#main-pars-heading-0)만들기 또는 편집을 참조하십시오.
+이러한 옵션은 Microsoft Excel 파일을 변환하는 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 파일 [유형 설정](#create-or-edit-file-type-settings)만들기 또는 편집을 참조하십시오.
 
 **OpenOffice를 폴백 변환기로 사용해**&#x200B;보십시오.이 옵션을 선택하고 Microsoft Excel을 사용한 변환이 실패하거나 지정된 시간 제한 제한에 도달하면 PDF Generator는 OpenOffice를 사용하여 변환을 시도합니다. OpenOffice를 사용한 변환이 실패하거나 지정된 시간 제한 제한에 도달하면 로그 파일에 예외가 기록됩니다.
 
@@ -463,7 +463,7 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 
 ## Microsoft Project 설정(Windows만 해당) {#microsoft-project-settings-windows-only}
 
-이러한 옵션은 Microsoft Project 파일을 변환하는 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 파일 [유형 설정](/help/forms/using/admin-help/configuring-file-type-settings1.md#main-pars-heading-0)만들기 또는 편집을 참조하십시오.
+이러한 옵션은 Microsoft Project 파일을 변환하는 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 파일 [유형 설정](#create-or-edit-file-type-settings)만들기 또는 편집을 참조하십시오.
 
 1. **[!UICONTROL 파일 이름 확장자:]** 이 응용 프로그램에 허용되는 파일 형식의 파일 이름 확장자를 쉼표로 구분하여 지정합니다. The default is `mpp`. 확장 전의 마침표 또는 확장 사이의 공백을 포함하지 마십시오.
 
@@ -474,7 +474,7 @@ PDF **문서를** 최적화하는 동안 투명도 설정을 구성하려면 투
 
 ## Microsoft Word 설정(Windows 전용) {#microsoft-word-settings-windows-only}
 
-이러한 옵션은 Microsoft Word 파일을 변환하는 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 파일 [유형 설정](/help/forms/using/admin-help/configuring-file-type-settings1.md#main-pars-heading-0)만들기 또는 편집을 참조하십시오.
+이러한 옵션은 Microsoft Word 파일을 변환하는 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 파일 [유형 설정](#create-or-edit-file-type-settings)만들기 또는 편집을 참조하십시오.
 
 **[!UICONTROL OpenOffice를 폴백 변환기로 사용해]**&#x200B;보십시오.이 옵션을 선택하고 Microsoft Word를 사용한 변환이 실패하거나 지정된 시간 제한 제한에 도달하면 PDF Generator는 OpenOffice를 사용하여 변환을 시도합니다. OpenOffice를 사용한 변환이 실패하거나 지정된 시간 제한 제한에 도달하면 로그 파일에 예외가 기록됩니다.
 
@@ -534,7 +534,7 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 포함되어 �
 
 ## Microsoft Publisher 설정(Windows 전용) {#microsoft-publisher-settings-windows-only}
 
-이러한 옵션은 Microsoft Publisher 파일을 변환하는 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 파일 [유형 설정](/help/forms/using/admin-help/configuring-file-type-settings1.md#main-pars-heading-0)만들기 또는 편집을 참조하십시오.
+이러한 옵션은 Microsoft Publisher 파일을 변환하는 방법을 결정합니다. 이러한 옵션에 액세스하는 방법에 대한 지침은 파일 [유형 설정](#create-or-edit-file-type-settings)만들기 또는 편집을 참조하십시오.
 
 **[!UICONTROL 파일 이름 확장자]**:이 응용 프로그램에 허용되는 파일 형식의 파일 이름 확장자를 쉼표로 구분하여 지정합니다. The default is `pub`. 확장 전의 마침표 또는 확장 사이의 공백을 포함하지 마십시오.
 
