@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bdb26ba817e0599f811d7f4e131ec6ab356a4785
+source-git-commit: 28354bd9785fa83939f9e3b051aac195d7706633
 
 ---
 
@@ -73,7 +73,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스 설정에 대한 지침은
 
 자세한 지침은
 
-* [AEM 6.5 서비스 팩 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html)
+* [AEM 6.5 서비스 팩 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes/sp-release-notes.html)
 
 **최신** AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 지원 센터에 문의하십시오.
 
@@ -108,7 +108,7 @@ IMS 구성에는 다음 두 단계가 포함됩니다.
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   Adobe IMS 기술 계정 **[!UICONTROL 구성 페이지로 이동합니다]** .
+   그러면 Adobe IMS 기술 **[!UICONTROL 계정 구성 페이지로 이동합니다]** .
 
 1. 기본적으로 인증서 **탭이** 열립니다.
 
@@ -204,7 +204,7 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 
 >[!CAUTION]
 >
->하나의 유효한 IMS 구성만 만듭니다. 여러 IMS 구성을 만들지 마십시오.
+>하나의 유효한 IMS 구성만 만듭니다.
 >
 > 구성이 올바른지 확인하십시오. 구성이 비정상인 경우 삭제하고 새 정상 구성을 만듭니다.
 
@@ -290,7 +290,7 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 * [AEM 자산에서 브랜드 포털에 자산 게시](../assets/brand-portal-publish-assets.md)
 * [AEM 자산의 폴더를 브랜드 포털에 게시](../assets/brand-portal-publish-folder.md)
 * [AEM 자산에서 브랜드 포털에 컬렉션 게시](../assets/brand-portal-publish-collection.md)
-* [브랜드 포털](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) 사용자가 AEM 자산에 자산을 기여하고 게시할 수 있도록 자산 소싱을 구성합니다.
+* [브랜드 포털](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) 사용자가 AEM 자산에 자산을 기여하고 게시할 수 있도록 자산 소싱을 구성합니다.
 
 ## 업그레이드 구성 {#upgrade-integration-65}
 
