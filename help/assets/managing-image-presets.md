@@ -10,12 +10,12 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 1d38c2bf5f4a00bfa5a12ddaefcab1898f81a6aa
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
 
-# Dynamic Media 이미지 사전 설정 관리{#managing-image-presets}
+# Managing Dynamic Media image presets{#managing-image-presets}
 
 이미지 사전 설정을 사용하면 AEM 자산에서 서로 다른 크기, 서로 다른 형식 또는 동적으로 생성된 다른 이미지 속성을 사용하여 이미지를 동적으로 제공할 수 있습니다. 각 이미지 사전 설정은 이미지 표시를 위한 크기 및 형식 지정 명령의 사전 정의된 컬렉션을 나타냅니다. 이미지 사전 설정을 만들 때 이미지 배달을 위한 크기를 선택합니다. 또한 이미지를 볼 수 있도록 전달할 때 이미지 모양이 최적화되도록 서식 명령을 선택합니다.
 
@@ -29,7 +29,7 @@ source-git-commit: 1d38c2bf5f4a00bfa5a12ddaefcab1898f81a6aa
 >
 >스마트 이미징은 기존 이미지 사전 설정과 연동되며 전달 마지막 순간에 지능적인 기능을 사용하여 브라우저 또는 네트워크 연결 속도에 따라 이미지 파일 크기를 더욱 줄일 수 있습니다. 자세한 [내용은 스마트](/help/assets/imaging-faq.md) 이미징을 참조하십시오.
 
-## Dynamic Media 이미지 사전 설정 이해 {#understanding-image-presets}
+## Understanding Dynamic Media image presets {#understanding-image-presets}
 
 매크로와 마찬가지로 이미지 사전 설정은 이름 아래에 저장된 크기 및 서식 지정 명령의 사전 정의된 모음입니다. 이미지 사전 설정의 작동 방식을 이해하려면 웹 사이트에서 각 제품 이미지가 서로 다른 크기, 서로 다른 형식 및 데스크탑 및 모바일 전달의 압축 비율로 나타나야 한다고 가정합니다.
 
@@ -39,7 +39,7 @@ source-git-commit: 1d38c2bf5f4a00bfa5a12ddaefcab1898f81a6aa
 
 관리자는 이미지 사전 설정을 만들 수 있습니다. 이미지 사전 설정을 새로 만들거나 기존 사전 설정에서 시작하여 새 이름으로 저장할 수 있습니다.
 
-## Dynamic Media 이미지 사전 설정 관리 {#managing-image-presets-1}
+## Managing Dynamic Media image presets {#managing-image-presets-1}
 
 AEM 로고를 탭하거나 클릭하여 글로벌 탐색 콘솔에 액세스한 다음 도구 아이콘을 탭하거나 클릭하고 자산 > 이미지 사전 설정으로 이동하여 AEM에서 이미지 사전 **[!UICONTROL 설정을 관리합니다]**.
 
@@ -82,7 +82,7 @@ Dynamic Media를 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환�
 
 >[!NOTE]
 >
->DAM 자산 업데이트 워크플로우에서 EPS **[!UICONTROL 축소판]** 단계는 EPS 파일의 축소판을 생성합니다.
+>DAM 자산 [!UICONTROL 업데이트] 워크플로우에서 EPS **[!UICONTROL 축소판]** 단계는 EPS 파일에 대한 축소판을 생성합니다.
 
 #### PDF/AI/EPS 에셋 메타데이터 속성 {#pdf-ai-eps-asset-metadata-properties}
 
@@ -93,7 +93,7 @@ Dynamic Media를 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 변환�
 
 워크플로우의 방법으로 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소 옵션에 액세스합니다 `DAM Update Asset` .
 
-왼쪽 상단에 있는 Adobe Experience Manager를 누르고 도구 > 워크플로우 **[!UICONTROL > 모델로 이동합니다]**. 워크플로우 모델 페이지에서 DAM 자산 **[!UICONTROL 업데이트를]**&#x200B;선택한 다음 도구 모음에서 편집을 **[!UICONTROL 누릅니다]**. DAM 자산 업데이트 워크플로우 페이지에서 프로세스 구성 요소를 두 번 눌러 단계 속성 대화 상자를 엽니다. `Rasterize PDF/AI Image Preview Rendition`
+왼쪽 상단에 있는 Adobe Experience Manager를 누르고 도구 > 워크플로우 **[!UICONTROL > 모델로 이동합니다]**. 워크플로우 모델 페이지에서 DAM 자산 **[!UICONTROL 업데이트를]**&#x200B;선택한 다음 도구 모음에서 편집을 **[!UICONTROL 누릅니다]**. DAM 자산 [!UICONTROL 업데이트] 워크플로우 페이지에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 두 번 눌러 단계 속성 대화 상자를 엽니다.
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -149,7 +149,7 @@ See [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md).
 
 ![미디어 추출 프로세스의 인수에서 ExtendScript 경로](assets/6_5_mediaextractionprocess.png)
 
-DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구성 요소의 인수에서 ExtendScript 경로
+DAM 자산 업데이트 워크플로우에서 미디어 추출 프로세스 구성 요소의 인수에서 [!UICONTROL ExtendScript] 경로
 
 다음 스크립트는 Dynamic Media 통합에서 사용됩니다.
 
@@ -217,7 +217,7 @@ Dynamic **[!UICONTROL Media Process Image Assets]** 단계에서는 이미지 �
 
 **표시된** Dynamic Media 이미지 사전 설정 수를 늘리거나 줄이려면 다음을 수행합니다.
 
-1. CRXDE Lite(https://localhost:4502/crx/de)로[이동합니다](https://localhost:4502/crx/de).
+1. CRXDE Lite(https://localhost:4502/crx/de)으로[이동합니다](https://localhost:4502/crx/de).
 1. Navigate to the image preset listing node at `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
    ![increasethenumberofimagepresets표시](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -482,7 +482,7 @@ INDD( [InDesign) 파일 형식을](#indesign-indd-file-format)참조하십시오
 1. 사전 설정을 선택한 다음 편집을 **[!UICONTROL 클릭합니다]**. 이미지 **[!UICONTROL 사전 설정 편집]** 창이 열립니다.
 1. 변경한 후 **[!UICONTROL 저장을]** 클릭하여 변경 내용을 저장하거나 취소를 **[!UICONTROL 클릭하여]** 변경 사항을 취소합니다.
 
-## Dynamic Media 이미지 사전 설정 게시 {#publishing-image-presets}
+## Publishing Dynamic Media image presets {#publishing-image-presets}
 
 Dynamic Media - 하이브리드 모드를 실행하는 경우 이미지 사전 설정을 수동으로 게시해야 합니다.
 
@@ -496,7 +496,7 @@ Dynamic Media - 하이브리드 모드를 실행하는 경우 이미지 사전 �
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
-## Dynamic Media 이미지 사전 설정 삭제 {#deleting-image-presets}
+## Deleting Dynamic Media image presets {#deleting-image-presets}
 
 1. AEM에서 AEM 로고를 탭하거나 클릭하여 글로벌 탐색 콘솔에 액세스합니다.
 1. 도구 **[!UICONTROL 아이콘을 누른]** 다음 자산 > 이미지 **[!UICONTROL 사전 설정으로 이동합니다]**.
