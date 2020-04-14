@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: 4ccaf401d561087f864c95e2be4c594cf34a7cb7
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -197,7 +197,7 @@ Offloading Browser를 사용하여 토폴로지의 Experience Manager 인스턴�
    * 활성화:이 인스턴스는 이 항목의 작업을 사용합니다.
    * 사용 안 함:이 인스턴스는 이 항목의 작업을 소비하지 않습니다.
    * 전용:이 인스턴스는 이 항목의 작업만 사용합니다.
-   **** 참고:주제에 대해 [배타적]을 선택하면 다른 모든 항목이 자동으로 [비활성화]로 설정됩니다.
+   **참고:** 주제에 대해 [배타적]을 선택하면 다른 모든 항목이 자동으로 [비활성화]로 설정됩니다.
 
 ### 설치된 Job Consumers {#installed-job-consumers}
 
@@ -207,13 +207,13 @@ Adobe Experience Manager와 함께 여러 JobConsumer 구현이 설치됩니다.
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Apache Sling과 함께 설치되었습니다. 이전 버전과의 호환성을 위해 OSGi 이벤트 관리자가 생성하는 작업을 처리합니다. |
 | com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | 작업 페이로드를 복제하는 복제 에이전트입니다. |
-| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | DAM 자산 업데이트 오프로더 워크플로우가 생성하는 작업을 처리합니다. |
+| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | DAM 자산 [!UICONTROL 업데이트 오프로더 워크플로우가 생성하는 작업을] 처리합니다. |
 
 ### 인스턴스에 대한 항목 비활성화 및 활성화 {#disabling-and-enabling-topics-for-an-instance}
 
 Apache Sling Job Consumer Manager 서비스는 주제 화이트 리스트 및 블랙 리스트 속성을 제공합니다. Experience Manager 인스턴스에서 특정 항목의 처리를 활성화하거나 비활성화하도록 이러한 속성을 구성합니다.
 
-**** 참고:인스턴스가 토폴로지에 속한 경우 토폴로지의 모든 컴퓨터에서 브라우저 오프로드 기능을 사용하여 항목을 활성화하거나 비활성화할 수도 있습니다.
+**참고:** 인스턴스가 토폴로지에 속한 경우 토폴로지의 모든 컴퓨터에서 브라우저 오프로드 기능을 사용하여 항목을 활성화하거나 비활성화할 수도 있습니다.
 
 활성화된 항목 목록을 만드는 논리는 우선 화이트리스트에 있는 모든 항목을 허용한 다음 블랙리스트에 있는 항목을 제거합니다. 기본적으로 모든 항목이 활성화되어 있고(허용 목록 값이 `*`사용) 항목이 비활성화되어 있지 않습니다(블랙 리스트에는 값이 없음).
 
@@ -317,11 +317,11 @@ Apache Sling Job Consumer Manager 서비스는 주제 화이트 리스트 및 �
 
 특정 인스턴스가 DAM에서 추가 또는 업데이트된 자산의 백그라운드 처리를 수행하도록 토폴로지 인스턴스를 구성합니다.
 
-기본적으로 DAM 자산이 변경되거나 DAM에 자산이 추가되면 Experience Manager는 DAM 자산 업데이트 워크플로우를 실행합니다. Experience Manager가 DAM 자산 오프로더 업데이트 워크플로우를 대신 실행하도록 기본 동작을 변경합니다. 이 워크플로우는 주제가 있는 JobManager 작업을 생성합니다 `com/adobe/granite/workflow/offloading`. 그런 다음 전용 작업자에게 작업이 오프로드되도록 토폴로지를 구성합니다.
+기본적으로 Adobe Experience Manager는 DAM [!UICONTROL 자산이 변경되거나] DAM에 자산이 추가되면 DAM 자산 업데이트 워크플로우를 실행합니다. Experience Manager가 대신 DAM 자산 [!UICONTROL 오프로더 업데이트 워크플로우를 실행하도록 기본 동작을] 변경합니다. 이 워크플로우는 주제가 있는 JobManager 작업을 생성합니다 `com/adobe/granite/workflow/offloading`. 그런 다음 전용 작업자에게 작업이 오프로드되도록 토폴로지를 구성합니다.
 
 >[!CAUTION]
 >
->워크플로우 오프로딩과 함께 사용하면 워크플로우가 일시적으로 중단되어서는 안 됩니다. 예를 들어 자산 오프로딩에 DAM 자산 업데이트 워크플로우가 일시적이지 않아야 합니다. 워크플로우에서 임시 플래그를 설정/해제하려면 임시 [워크플로우를 참조하십시오](/help/assets/performance-tuning-guidelines.md#workflows).
+>워크플로우 오프로딩과 함께 사용하면 워크플로우가 일시적으로 중단되어서는 안 됩니다. 예를 들어 자산 [!UICONTROL 오프로딩에 DAM 자산] 업데이트 워크플로우가 일시적으로 사용되어서는 안 됩니다. 워크플로우에서 임시 플래그를 설정/해제하려면 임시 [워크플로우를 참조하십시오](/help/assets/performance-tuning-guidelines.md#workflows).
 
 다음 절차에서는 오프로딩 토폴로지에 대해 다음 특성을 가정합니다.
 
@@ -334,14 +334,14 @@ Apache Sling Job Consumer Manager 서비스는 주제 화이트 리스트 및 �
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
-1. 사용자가 DAM 자산을 업로드하거나 변경하기 위해 상호 작용하는 각 인스턴스에서 DAM 자산 오프로드 워크플로우를 사용하도록 워크플로우 런처를 구성합니다.
+1. 사용자가 DAM 자산을 업로드하거나 변경하기 위해 상호 작용하는 각 인스턴스에서 DAM 자산 [!UICONTROL 오프로딩 워크플로우를 사용하도록 워크플로우 런처를 구성합니다] .
 
    1. 워크플로우 콘솔을 엽니다.
    1. 실행 프로그램 탭을 클릭합니다.
-   1. DAM 자산 업데이트 워크플로우를 실행하는 두 개의 실행 프로그램 구성을 찾습니다. 실행 관리자 구성 이벤트 유형 중 하나는 Node Created이고 다른 유형은 Node Modified입니다.
-   1. 두 이벤트 유형을 모두 변경하여 DAM 자산 오프로드 작업 과정을 실행합니다. 실행 프로그램 구성에 대한 자세한 내용은 노드 변경 [시 워크플로우 시작을 참조하십시오](/help/sites-administering/workflows-starting.md).
+   1. DAM 자산 업데이트 [!UICONTROL 워크플로우를 실행하는 두 개의 실행] 시작 구성을 찾습니다. 실행 관리자 구성 이벤트 유형 중 하나는 Node Created이고 다른 유형은 Node Modified입니다.
+   1. 두 이벤트 유형을 모두 변경하여 DAM 자산 [!UICONTROL 오프로딩 워크플로우를 실행합니다] . 실행 프로그램 구성에 대한 자세한 내용은 노드 변경 [시 워크플로우 시작을 참조하십시오](/help/sites-administering/workflows-starting.md).
 
-1. DAM 자산의 백그라운드 처리를 수행하는 인스턴스에서 DAM 자산 업데이트 워크플로우를 실행하는 워크플로우 런처를 비활성화합니다.
+1. DAM 자산의 백그라운드 처리를 수행하는 인스턴스에서 DAM 자산 업데이트 [!UICONTROL 워크플로우를 실행하는 워크플로우 런처를] 비활성화합니다.
 
 ## 추가 읽기 {#further-reading}
 
