@@ -3,7 +3,7 @@ title: 연결된 자산을 사용하여 Adobe Experience Manager Sites 작성 �
 description: 다른 Experience Manager Site 배포에서 웹 페이지를 만들 때 원격 Adobe Experience Manager Assets 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
+source-git-commit: 04fef21d6027dcfcb6a67a1121e0d1570926db41
 
 ---
 
@@ -95,7 +95,7 @@ AEM 관리자가 이 통합을 만들 수 있습니다. 통합을 만들면 이 
 
    >[!NOTE]
    >
-   >작성자가 자산을 가져올 때 원격 AEM 배포에서 사용할 수 있는 모든 렌디션을 가져옵니다. 가져온 자산의 렌디션을 더 만들려면 이 구성 단계를 건너뜁니다. DAM 자산 업데이트 워크플로우가 트리거되어 더 많은 렌디션을 만듭니다. 이러한 렌디션은 로컬 사이트 배포에서만 사용할 수 있으며 원격 DAM 배포에서는 사용할 수 없습니다.
+   >작성자가 자산을 가져올 때 원격 AEM 배포에서 사용할 수 있는 모든 렌디션을 가져옵니다. 가져온 자산의 렌디션을 더 만들려면 이 구성 단계를 건너뜁니다. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
 1. AEM Sites 인스턴스를 원격 AEM Assets의 CORS 구성에서 **[!UICONTROL 허용된 원본]** 중 하나로 추가합니다.
 
@@ -111,7 +111,7 @@ AEM 관리자가 이 통합을 만들 수 있습니다. 통합을 만들면 이 
 
 작성자는 로컬 DAM 인스턴스와 원격 DAM 인스턴스에서 모두 사용할 수 있는 자산을 단일 웹 페이지에서 사용할 수 있습니다. 콘텐츠 파인더를 사용하여 로컬 DAM을 검색하거나 원격 DAM을 검색합니다.
 
-로컬 사이트 인스턴스에서 사용할 수 있는 동일한 분류 계층 구조를 가진 정확한 해당 태그가 있는 원격 자산 태그만 가져옵니다. 다른 태그는 모두 무시됩니다. AEM에서 전체 텍스트 검색을 제공하므로 작성자는 원격 AEM 배포에 있는 모든 태그를 사용하여 원격 자산을 검색할 수 있습니다.
+로컬 사이트 인스턴스에서 사용할 수 있는 동일한 분류 계층과 함께 정확한 해당 태그가 있는 원격 자산의 태그만 가져옵니다. 다른 태그는 모두 무시됩니다. AEM에서 전체 텍스트 검색을 제공하므로 작성자는 원격 AEM 배포에 있는 모든 태그를 사용하여 원격 자산을 검색할 수 있습니다.
 
 ### 사용 연습 {#walk-through-of-usage}
 
