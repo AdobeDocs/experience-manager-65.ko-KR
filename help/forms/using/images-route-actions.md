@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -44,7 +44,7 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ## 작업 목록 작업 팝업 {#task-list-task-action-popup}
 
-1. 작업 목록 작업 팝업을 만듭니다. AEM [Forms 작업 영역 코드](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)작성을 참조하십시오. 개발 패키지를 사용해야 합니다.
+1. 작업 목록 작업 팝업을 만듭니다. AEM [Forms 작업 영역 코드](introduction-customizing-html-workspace.md#building-html-workspace-code)작성을 참조하십시오. 개발 패키지를 사용해야 합니다.
 
 1. 복사 `/libs/ws/js/runtime/templates/task.html` 대상 `/apps/ws/js/runtime/templates/task.html`.
 
