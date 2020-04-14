@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -84,7 +84,7 @@ MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
 ## Step 2: Create form data model {#create-fdm}
 
-AEM Forms는 구성된 데이터 소스로부터 양식 데이터 [모델을](../../forms/using/data-integration.md#main-pars-header-1524967585)만들 수 있는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 사용 사례를 위해 구성된 MySQL 데이터 소스를 사용합니다.
+AEM Forms는 구성된 데이터 소스에서 양식 데이터 모델을 [](data-integration.md) 만드는 직관적인 사용자 인터페이스를 제공합니다. 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 사용 사례를 위해 구성된 MySQL 데이터 소스를 사용합니다.
 
 양식 데이터 모델을 만들려면 다음을 수행합니다.
 
