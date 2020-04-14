@@ -3,7 +3,7 @@ title: AEM에서 자산 다운로드
 description: AEM에서 자산을 다운로드하고 다운로드 기능을 활성화하거나 비활성화하는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
 
 ---
 
@@ -73,3 +73,4 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 Asset Share Commons�
 >* [DRM 보호 에셋 다운로드](drm.md)
 >* [Win 또는 Mac 데스크탑에서 AEM 데스크탑 앱을 사용하여 에셋 다운로드](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
 >* [지원되는 Adobe Creative Cloud 앱에서 Adobe Assets Link를 사용하여 에셋 다운로드](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+
