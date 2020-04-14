@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
 
 ---
 
@@ -52,9 +52,9 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
  </tbody>
 </table>
 
-## 문제:양식을 렌더링할 수 없습니다(오류 메시지가 표시됨). {#problem-unable-to-render-a-form-an-error-message-is-displayed}
+## 문제:양식을 렌더링할 수 없습니다(오류 메시지가 표시됨). {#problem-unable-to-render-form}
 
-1. 지정된 매개 변수가 올바른지 확인합니다. 매개 변수에 대한 자세한 내용은 매개 변수 [렌더링을 참조하십시오](/help/forms/using/debug.md#main-pars-table).
+1. 지정된 매개 변수가 올바른지 확인합니다. 매개 변수에 대한 자세한 내용은 매개 변수 [렌더링을 참조하십시오](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
 1. CRX 패키지 관리자(https://&lt;server>:&lt;port>/crx/packmgr/index.jsp)에 로그인하고 다음 패키지가 올바르게 설치되었는지 확인합니다.
 
    * adobe-lc-forms-content-pkg-&lt;버전>.zip
