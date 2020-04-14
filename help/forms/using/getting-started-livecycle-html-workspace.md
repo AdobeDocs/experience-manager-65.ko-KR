@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -61,11 +61,11 @@ AEM Forms 작업 영역은 웹 기반 HTML 애플리케이션이며 화면 판�
 
 다음 카테고리에서 다양한 AEM Forms 작업 영역 환경 설정을 설정할 수 있습니다.
 
-**부재 중:** 사무실 밖에서도 다른 사람에게 작업이 할당되는 방식을 제어하려면 환경 설정을 지정합니다. 사무실 [밖 환경 설정](/help/forms/using/todo-lists.md#main-pars-heading-22)설정을 참조하십시오.
+**부재 중:** 사무실 밖에서도 다른 사람에게 작업이 할당되는 방식을 제어하려면 환경 설정을 지정합니다. 사무실 [밖 환경 설정](todo-lists.md#setting-out-of-office-preferences)설정을 참조하십시오.
 
-**큐:** 다른 사용자와 할 일 목록을 공유하거나 다른 사용자의 목록에 대한 액세스를 요청하기 위한 기본 설정을 지정합니다. 그룹 [및 공유 큐의](/help/forms/using/todo-lists.md#main-pars-heading-19)작업 사용을 참조하십시오.
+**큐:** 다른 사용자와 할 일 목록을 공유하거나 다른 사용자의 목록에 대한 액세스를 요청하기 위한 기본 설정을 지정합니다. 그룹 [및 공유 큐의](todo-lists.md#working-with-tasks-from-group-and-shared-queues)작업 사용을 참조하십시오.
 
-**UI 설정:** AEM Forms 작업 영역과 상호 작용하는 방법에 대한 환경 설정을 지정합니다. 사용자 [인터페이스 환경 설정](/help/forms/using/getting-started-livecycle-html-workspace.md#main-pars-heading-5)지정을 참조하십시오.
+**UI 설정:** AEM Forms 작업 영역과 상호 작용하는 방법에 대한 환경 설정을 지정합니다. 사용자 [인터페이스 환경 설정](#set-user-interface-preferences)지정을 참조하십시오.
 
 ### 사용자 인터페이스 환경 설정 지정 {#set-user-interface-preferences}
 
