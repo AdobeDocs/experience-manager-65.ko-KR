@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -84,7 +84,7 @@ AEM Forms를 사용하면 AEM Sites 단일 페이지 애플리케이션(SPA)에 
 
 #### 적응형 양식 템플릿의 가용성을 특정 경로로 제한 {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
-적응형 양식에서 cq:allowedPaths 속성에 대한 지원이 추가되었습니다. 이 속성은 적응형 양식 템플릿의 가용성을 특정 경로로 [제한합니다](../../forms/using/creating-adaptive-form.md#main-pars-text).
+적응형 양식에서 cq:allowedPaths 속성에 대한 지원이 추가되었습니다. 이 속성은 적응형 양식 템플릿의 가용성을 특정 경로로 [제한합니다](creating-adaptive-form.md#adaptive-form-templates).
 
 #### 적응형 양식에 확인란을 동적으로 추가 {#add-check-boxes-to-the-adaptive-form-dynamically}
 
