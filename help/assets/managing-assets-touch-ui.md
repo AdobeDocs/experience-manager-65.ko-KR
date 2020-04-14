@@ -4,7 +4,7 @@ description: 디지털 에셋 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
+source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
 
 >[!NOTE]
 >
->* Marketing Cloud에 공유할 때 해당 유형의 자산 폴더 `sling:OrderedFolder`공유가 지원되지 않습니다. 폴더를 공유하려면 폴더를 만들 때 [!UICONTROL 순서가] 지정되지 않습니다.
+>* Marketing Cloud에 공유할 때는 해당 유형의 자산 폴더 공유가 지원되지 `sling:OrderedFolder` 않습니다. 폴더를 공유하려면 폴더를 만들 때 [!UICONTROL 순서가] 지정되지 않습니다.
 >* Experience Manager에서는 폴더 이름으로 `subassets` 단어를 사용할 수 없습니다. 복합 자산에 대한 하위 자산을 포함하는 노드에 예약된 키워드입니다.
 
 
@@ -56,13 +56,13 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    * 도구 모음에서 만들기 **[!UICONTROL 아이콘을 누릅니다]** . 메뉴에서 파일을 **[!UICONTROL 누릅니다]**. 필요한 경우 표시된 대화 상자에서 파일의 이름을 변경할 수 있습니다.
    * HTML5를 지원하는 브라우저에서 자산을 자산 사용자 인터페이스에서 직접 드래그합니다. 파일 이름 바꾸기 대화 상자가 표시되지 않습니다.
-   ![aem에서 옵션 만들기](assets/create-options.png)
+   ![자산 업로드 옵션 만들기](assets/create-options.png)
 
    여러 파일을 선택하려면 Ctrl 또는 Command 키를 누르고 파일 선택기 대화 상자에서 자산을 선택합니다. iPad를 사용하는 경우 한 번에 하나의 파일만 선택할 수 있습니다.
 
    500MB보다 큰 자산의 업로드를 일시 중지하고 동일한 페이지에서 나중에 다시 시작할 수 있습니다. 업로드가 **[!UICONTROL 시작될 때]** 표시되는 진행률 표시줄 옆에 있는 일시 중지 아이콘을 누릅니다.
 
-   ![chlimage_1-211](assets/chlimage_1-5.png)
+   ![자산 업로드 진행률 표시줄](assets/chlimage_1-5.png)
 
    자산이 큰 자산으로 간주되는 크기를 구성할 수 있습니다. 예를 들어 1000MB 이상의 자산(500MB 대신)을 큰 자산으로 간주하도록 시스템을 구성할 수 있습니다. 이 경우 1000 **[!UICONTROL MB보다]** 큰 에셋이 업로드되면 일시 중지가 진행률 표시줄에 나타납니다.
 
@@ -72,7 +72,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    일시 중지 아이콘을 클릭하면 **[!UICONTROL 재생]** 아이콘으로 **[!UICONTROL 전환됩니다]** . 업로드를 다시 시작하려면 [재생] **[!UICONTROL 아이콘을 클릭합니다]** .
 
-   ![chlimage_1-212](assets/chlimage_1-6.png)
+   ![재생 아이콘을 사용하여 일시 중지된 자산 업로드 다시 시작](assets/chlimage_1-6.png)
 
    진행 중인 업로드를 취소하려면 진행률 표시줄 옆에 있는 닫기(`X`)를 클릭합니다. 업로드 작업을 취소하면 AEM 자산에서 부분적으로 업로드된 에셋이 삭제됩니다.
 
@@ -86,7 +86,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    기존 자산을 교체하거나, 다른 버전을 만들거나, 업로드된 새 자산의 이름을 변경하여 두 가지 모두를 유지하도록 선택할 수 있습니다. 기존 자산을 대체할 경우, 자산에 대한 메타데이터와 기존 자산에 대해 수행한 이전 수정(예: 주석 또는 자르기)은 삭제됩니다. 두 자산을 모두 유지하려면 새 자산의 이름이 이름에 숫자가 `1` 추가되어 변경됩니다.
 
-   ![chlimage_1-213](assets/chlimage_1-7.png)
+   ![자산 이름 충돌을 해결하기 위한 이름 충돌 대화 상자](assets/chlimage_1-7.png)
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
    >
    >중복 [!UICONTROL 검색] 기능이 활성화된 경우에만 검색된 복제 대화 상자가 나타납니다. 중복 감지 기능을 활성화하려면 복제 감지 [활성화를 참조하십시오](/help/assets/duplicate-detection.md).
 
-   ![chlimage_1-214](assets/chlimage_1-8.png)
+   ![중복된 자산 검색 대화 상자](assets/chlimage_1-8.png)
 
    AEM 자산에 중복 자산을 유지하려면 유지를 탭/ **[!UICONTROL 클릭합니다]**. 업로드한 중복 자산을 삭제하려면 삭제를 탭/ **[!UICONTROL 클릭합니다]**.
 
@@ -112,7 +112,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    * 자산 파일 이름에 `* / : [ \\ ] | # % { } ? &`
    * 에셋 폴더 이름은 포함하지 않아야 합니다. `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
-   ![chlimage_1-215](assets/chlimage_1-10.png)
+   ![업로드 진행 대화 상자에 업로드된 파일과 업로드하지 못한 파일의 상태가 표시됩니다.](assets/chlimage_1-10.png)
 
    또한 자산 사용자 인터페이스에는 업로드한 최신 자산 또는 처음 만든 폴더가 표시됩니다.
 
@@ -160,7 +160,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 1. [업로드 작업 옵션] 대화 상자의 오른쪽 아래에 있는 [저장]을 **[!UICONTROL 탭합니다]**.
 1. [업로드] 페이지의 오른쪽 아래에 있는 [업로드 제출]을 **[!UICONTROL 누릅니다]**.
 
-   업로드의 진행 상태를 보려면 글로벌 탐색 막대에서 작업을 **[!UICONTROL 누릅니다]**. [작업] 페이지에는 업로드 진행률이 표시됩니다. AEM에서 계속 작업하고 언제든지 Dynamic Media Classic의 작업 페이지로 돌아가 진행 중인 작업을 검토할 수 있습니다.
+   업로드의 진행 상황을 보려면 글로벌 탐색 막대에서 작업을 **[!UICONTROL 누릅니다]**. [작업] 페이지에는 업로드 진행률이 표시됩니다. AEM에서 계속 작업하고 언제든지 Dynamic Media Classic의 작업 페이지로 돌아가 진행 중인 작업을 검토할 수 있습니다.
 진행 중인 업로드 작업을 취소하려면 기간 **[!UICONTROL 옆에 있는]** 취소를 누릅니다.
 
 #### 업로드 작업 옵션 {#upload-job-options}
@@ -280,7 +280,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 |---|---|---|
 | 응용 비디오 |  | 모바일, 태블릿 및 데스크탑에 전달할 비디오를 제작하는 데 필요한 모든 종횡비와 연동되는 단일 인코딩 사전 설정 이 사전 설정으로 인코딩된 업로드된 소스 비디오는 고정된 높이로 설정됩니다. 그러나 너비는 비디오의 종횡비를 유지하도록 자동으로 조절됩니다. <br>응용 비디오 인코딩을 사용하는 것이 좋습니다. |
 | 단일 인코딩 사전 설정 | 인코딩 사전 설정 정렬 | 이름 또는 크기를 선택하여 이름 또는 해상도 크기로 데스크탑, 모바일 및 태블릿 아래에 나열된 인코딩 사전 설정을 정렬합니다. |
-|  | 데스크톱 | 데스크탑 컴퓨터에 스트리밍 또는 점진적 비디오 경험을 제공할 수 있는 MP4 파일을 만듭니다.해상도 크기와 원하는 대상 데이터 속도로 종횡비를 하나 이상 선택하십시오. |
+|  | 데스크톱 | 데스크탑 컴퓨터에 스트리밍 또는 점진적 비디오 경험을 전달하기 위한 MP4 파일을 만듭니다.해상도 크기와 원하는 대상 데이터 속도로 종횡비를 하나 이상 선택하십시오. |
 |  | 모바일 | iPhone 또는 Android 모바일 장치에 전달할 MP4 파일을 만듭니다.해상도 크기와 원하는 대상 데이터 속도로 종횡비를 하나 이상 선택하십시오. |
 |  | 태블릿 | iPad 또는 Android 태블릿 장치에 전달할 MP4 파일을 만듭니다.해상도 크기와 원하는 대상 데이터 속도로 종횡비를 하나 이상 선택하십시오. |
 
