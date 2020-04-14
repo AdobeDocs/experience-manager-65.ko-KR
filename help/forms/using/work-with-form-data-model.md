@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -56,7 +56,7 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하지 �
 
    >[!NOTE] {graybox=&quot;true&quot;}
    >
-   >데이터 모델 개체 상자를 길게 끌거나 드래그하여 컨텐츠 영역에서 구성할 수 있습니다. 양식 데이터 모델에 추가된 모든 데이터 모델 개체는 데이터 소스 창에서 회색으로 표시됩니다.
+   >데이터 모델 개체 상자를 길게 끌면 콘텐츠 영역에서 구성할 수 있습니다. 양식 데이터 모델에 추가된 모든 데이터 모델 개체는 데이터 소스 창에서 회색으로 표시됩니다.
 
    서비스 탭에는 추가된 서비스가 나열됩니다.
 
@@ -155,7 +155,7 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하지 �
 
    직원 데이터 소스에 대해 구성된 읽기 및 쓰기 서비스
 
-1. 읽기 ![서비스 인수에 대해 aem_6_3_edit](assets/aem_6_3_edit.png) 을 탭하여 인수를 사용자 프로필 속성, 요청 속성 또는 리터럴 값에 [](../../forms/using/work-with-form-data-model.md#main-pars-header-2140694395) 바인딩하고 바인딩 값을 지정합니다.
+1. 읽기 ![서비스 인수에 대해 aem_6_3_edit](assets/aem_6_3_edit.png) 을 탭하여 인수를 사용자 프로필 속성, 요청 속성 또는 리터럴 값에 [](#bindargument) 바인딩하고 바인딩 값을 지정합니다.
 1. 완료를 **[!UICONTROL 눌러]** 인수를 저장하고 **[!UICONTROL 완료를]** 눌러 **[!UICONTROL 속성을 저장한 다음]** 저장을눌러 양식 데이터 모델을 저장합니다.
 
 ### 읽기 서비스 인수 바인딩 {#bindargument}
