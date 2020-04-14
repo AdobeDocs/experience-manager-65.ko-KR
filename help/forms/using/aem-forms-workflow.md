@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -28,7 +28,7 @@ AEM 워크플로우를 사용하여 적응형 양식 기반 워크플로우를 �
 
 OSGi의 양식 중심 워크플로우를 사용하면 JEE 스택에 완벽한 프로세스 관리 기능을 설치하지 않고도 OSGi 스택에서 다양한 작업을 위한 워크플로우를 신속하게 구축 및 배포할 수 있습니다. 워크플로우의 개발 및 관리에서는 익숙한 AEM Workflow 및 AEM 받은 편지함 기능을 사용합니다. 워크플로우는 다양한 소프트웨어 시스템, 네트워크, 부서 및 조직에 걸쳐 실제 업무 처리 과정을 자동화하는 기반이 됩니다.
 
-설정되면 이러한 워크플로우를 수동으로 트리거하여 정의된 프로세스를 완료하거나 사용자가 양식 또는 [통신 관리](/help/forms/using/cm-overview.md) 편지를 제출할 때 프로그래밍 방식으로 실행할 수 있습니다. 향상된 AEM 워크플로우 기능을 통해 AEM Forms는 두 가지 서로 다르지만 유사한 기능을 제공합니다. 배포 전략의 일부로 적합한 솔루션을 결정해야 합니다. OSGi 및 JEE의 프로세스 관리에 대한 양식 중심 AEM 워크플로우의 [비교를](../../forms/using/capabilities-osgi-jee-workflows.md) 참조하십시오. 또한 배포 토폴로지의 경우 AEM [Forms용 아키텍처 및 배포 토폴로지를 참조하십시오](/help/forms/using/aem-forms-architecture-deployment.md).
+설정되면 이러한 워크플로우를 수동으로 트리거하여 정의된 프로세스를 완료하거나 사용자가 양식 또는 [통신 관리](/help/forms/using/cm-overview.md) 편지를 제출할 때 프로그래밍 방식으로 실행할 수 있습니다. 향상된 AEM 워크플로우 기능을 통해 AEM Forms는 두 가지 서로 다르지만 유사한 기능을 제공합니다. 배포 전략의 일부로 적합한 솔루션을 결정해야 합니다. OSGi 및 JEE의 프로세스 관리에 대한 양식 중심 AEM 워크플로우의 [비교를](../../forms/using/capabilities-osgi-jee-workflows.md) 참조하십시오. 또한 배포 토폴로지의 경우 AEM Forms [용 아키텍처 및 배포 토폴로지를 참조하십시오](/help/forms/using/aem-forms-architecture-deployment.md).
 
 OSGi의 양식 중심 워크플로우는 AEM [받은 편지함을 확장하고](/help/sites-authoring/inbox.md) AEM Workflow 편집기에 추가 구성 요소(단계)를 제공하여 AEM 양식 중심의 워크플로우에 대한 지원을 추가합니다. 확장된 AEM 받은 편지함은 AEM Forms 작업 [영역과 유사한 기능을 가지고 있습니다](../../forms/using/introduction-html-workspace.md). 인간 중심 워크플로우(승인, 검토 등)를 관리할 수 있을 뿐만 아니라 AEM 워크플로우를 사용하여 [문서 서비스](/help/sites-developing/workflows-step-ref.md)관련 작업(예: PDF 생성)을 자동화하고 전자 서명(Adobe Sign) 문서를 작성할 수 있습니다.
 
@@ -101,13 +101,13 @@ AEM 파섹 워크플로우 모델을 만드는 단계별 지침은 워크플로�
 
    표현식 편집기를 사용하여 분기 1과 분기 2에 대한 라우팅 표현식을 만듭니다. 이러한 라우팅 표현식은 AEM 받은 편지함의 사용자 작업을 기반으로 분기를 선택하는 데 도움이 됩니다.
 
-   **분기 1에 대한 라우팅 표현식**
+   **분기 2에 대한 라우팅 표현식**
 
    사용자가 AEM 받은 **편지함에서** 승인을 누르면 분기 1이 활성화됩니다.
 
    ![OR 분할 예](assets/orsplit_branch1_active_new.png)
 
-   **분기 1에 대한 라우팅 표현식**
+   **분기 2에 대한 라우팅 표현식**
 
    사용자가 AEM 받은 **편지함에서** 거부를 누르면 분기 2가 활성화됩니다.
 
@@ -121,7 +121,7 @@ AEM 파섹 워크플로우 모델을 만드는 단계별 지침은 워크플로�
 
    할당 작업 단계의 모든 필드, 기록 단계 문서 및 저당 응용 프로그램과 같이 구성된 문서 단계에 대한 전체 값 세트의 경우 이 섹션의 시작 부분에서 다운로드할 수 있는 예제 패키지를 가져옵니다.
 
-   워크플로우 모델이 준비되었습니다. 다양한 방법을 통해 워크플로우를 실행할 수 있습니다. 자세한 내용은 OSGi [에서 양식 중심의 워크플로우 시작을 참조하십시오](../../forms/using/aem-forms-workflow.md#main-pars-header).
+   워크플로우 모델이 준비되었습니다. 다양한 방법을 통해 워크플로우를 실행할 수 있습니다. 자세한 내용은 OSGi [에서 양식 중심의 워크플로우 시작을 참조하십시오](#launch).
 
    ![workflow-editor-저당권](assets/workflow-editor-mortgage.png)
 
