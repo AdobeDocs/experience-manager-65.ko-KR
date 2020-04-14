@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -63,7 +63,7 @@ CQ 프로젝트에 대한 성능 최적화 방법론은 처음부터 성능 문�
 
 프로젝트 노력의 약 10%는 성능 최적화 단계에 맞게 계획되어야 합니다. 물론 실제 성능 최적화 요구 사항은 프로젝트의 복잡도 수준과 개발 팀의 경험에 따라 다릅니다. 프로젝트가 할당된 시간 전체를 필요로 하지는 않지만, 제안된 영역에서 항상 성능 최적화를 계획하는 것이 좋습니다.
 
-가능할 때마다, 전체 발표 이후 추가적인 부담 없이 실제 경험을 수집하고 추가적인 최적화를 수행하기 위해 제한된 대상에 프로젝트를 먼저 소프트 런칭해야 합니다.
+가능할 때마다, 전체 발표 이후 추가적인 부담 없이 실제 경험을 수집하고 추가적인 최적화를 수행하기 위해 제한된 대상에 프로젝트를 먼저 부드럽게 실행해야 합니다.
 
 &quot;실시간&quot;을 선택하면 성능 최적화가 완료되지 않습니다. 이 시점은 시스템에서 &quot;실제&quot; 로드를 경험할 때 발생합니다. 출시 후 추가 조정을 계획하는 것이 중요합니다.
 
@@ -230,7 +230,7 @@ AEM 6.0부터 Adobe Experience Manager는 Oak 기반 저장소 아키텍처를 �
 
 동시에 실행되는 최대 워크플로 프로세스 수를 제한하도록 이러한 서비스를 구성합니다.
 
-**** 참고:특정 워크플로우 모델에 대한 작업 큐를 만들지 않으면 이러한 작업 대기열을 구성하면 모든 워크플로우에 영향을 줍니다( [아래 특정 워크플로우 모델에 대한 대기열 구성 참조](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) ).
+**참고:** 특정 워크플로우 모델에 대한 작업 큐를 만들지 않으면 이러한 작업 대기열을 구성하면 모든 워크플로우에 영향을 줍니다( [아래 특정 워크플로우 모델에 대한 대기열 구성 참조](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) ).
 
 **저장소의 구성**
 
@@ -253,15 +253,15 @@ queue.maxparallel이라는 속성을 구성해야 합니다.
 * com/adobe/granite/workflow/job&amp;ast;
 * com/adobe/granite/workflow/external/job&amp;ast;
 
-워크플로우 모델이 생성하는 실제 작업 주제에는 모델별 접미사가 포함됩니다. 예를 들어 DAM 자산 업데이트 워크플로우 모델은 다음 항목으로 작업을 생성합니다.
+워크플로우 모델이 생성하는 실제 작업 주제에는 모델별 접미사가 포함됩니다. 예를 들어 DAM 자산 [!UICONTROL 업데이트] 워크플로우 모델은 다음 항목으로 작업을 생성합니다.
 
 com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
 
 따라서 워크플로우 모델의 작업 항목과 일치하는 항목에 대한 작업 큐를 만들 수 있습니다. 대기열의 성능 관련 속성을 구성하는 것은 대기열 항목과 일치하는 작업을 생성하는 워크플로우 모델에만 영향을 줍니다.
 
-다음 절차에서는 DAM 자산 업데이트 워크플로우를 예로 사용하여 워크플로우에 대한 작업 큐를 만듭니다.
+다음 절차에서는 DAM 자산 업데이트 [!UICONTROL 워크플로우를 예로 사용하여 워크플로우의 작업] 큐를 만듭니다.
 
-1. 주제 통계가 생성되도록 작업 대기열을 만들 워크플로우 모델을 실행합니다. 예를 들어, 이미지를 자산에 추가하여 DAM 자산 업데이트 워크플로우를 실행합니다.
+1. 주제 통계가 생성되도록 작업 대기열을 만들 워크플로우 모델을 실행합니다. 예를 들어, 이미지를 자산에 추가하여 DAM 자산 업데이트 [!UICONTROL 워크플로우를 실행합니다] .
 1. Sling 작업 콘솔을 엽니다. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
 1. 콘솔에서 워크플로우 관련 항목을 알아봅니다. DAM Update Asset의 경우 다음 항목을 찾을 수 있습니다.
 
@@ -470,7 +470,7 @@ Dispatcher 및 Load Balancer와 함께 계획된 프로덕션 게시 환경을 �
 
 ### 보고 {#reporting}
 
-진행 중인 보고는 모든 사람이 상황을 알 수 있도록 하는 것이 필요합니다.앞서 언급했듯이 색상 코딩은 아키텍처 맵을 사용할 수 있습니다.
+진행 중인 보고는 모든 사람이 상태를 계속 알 수 있도록 해야 합니다.앞서 언급했듯이 색상 코딩은 아키텍처 맵을 사용할 수 있습니다.
 
 모든 테스트가 완료되면 다음을 보고할 수 있습니다.
 
@@ -485,7 +485,7 @@ Dispatcher [는](https://helpx.adobe.com/experience-manager/dispatcher/using/dis
 
 >[!NOTE]
 >
->발송자 버전은 AEM과 독립적이지만, 발송자 설명서는 AEM 문서에 포함되어 있습니다. 항상 최신 버전의 AEM에 대한 설명서에 포함된 Dispatcher 설명서를 사용하십시오.
+>발송자 버전은 AEM과 독립적이지만, 발송자 설명서는 AEM 설명서에 포함되어 있습니다. 항상 최신 버전의 AEM에 대한 설명서에 포함된 Dispatcher 설명서를 사용하십시오.
 >
 >이전 버전의 AEM에 대한 설명서에 포함된 Dispatcher 설명서에 대한 링크를 따라간 경우 이 페이지로 리디렉션되었을 수 있습니다.
 
@@ -632,7 +632,7 @@ Dispatcher는 개인화된 데이터를 캐시할 수 없으므로 개인화를 
 1. 확장자(예:.html, .gif, .jpg 등)
 1. 서버가 파일과 함께 보내는 MIME-유형입니다.
 
-대부분의 파일에서 MIME 유형은 파일 확장명에 암묵적입니다. 예:
+대부분의 파일에서 MIME 유형은 파일 확장명에 암묵적입니다. i.e.:
 
 1. 확장자(예:.html, .gif, .jpg 등)
 1. 서버가 파일과 함께 보내는 MIME-유형입니다.
