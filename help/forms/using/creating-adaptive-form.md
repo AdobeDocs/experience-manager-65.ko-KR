@@ -9,7 +9,7 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -145,7 +145,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 
 >[!NOTE]
 >
->편집을 위해 고급 템플릿을 사용하여 만든 응용 양식을 열면 오류 메시지가 나타납니다. 고급 템플릿에는 서명 단계 구성 요소가 있으며 기본적으로 Adobe Sign이 활성화되어 있습니다. Adobe Sign [클라우드 구성을](/help/forms/using/adobe-sign-integration-adaptive-forms.md) 만들고 선택하고 서명자를 [](/help/forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) 구성하여 오류를 해결합니다.
+>편집을 위해 고급 템플릿을 사용하여 만든 응용 양식을 열면 오류 메시지가 나타납니다. 고급 템플릿에는 서명 단계 구성 요소가 있으며 기본적으로 Adobe Sign이 활성화되어 있습니다. Adobe Sign [클라우드 구성을](/help/forms/using/adobe-sign-integration-adaptive-forms.md) 만들고 선택하고 서명자를 [](working-with-adobe-sign.md#addsignerstoanadaptiveform) 구성하여 오류를 해결합니다.
 
 ## 적응형 양식의 양식 모델 속성 편집 {#edit-form-model}
 
