@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -42,11 +42,11 @@ FFmpeg는 AEM *작성자* 인스턴스를 호스팅하는 서버에 설치해야
 
 ## FFmpeg 트랜스코딩 서비스 구성 {#configure-ffmpeg-transcoding-service}
 
-기본적으로 FFmpeg가 설치되면 DAM 자산 업데이트 워크플로우 정의에 따라 여러 변환이 구성(변환)됩니다.
+기본적으로 FFmpeg가 설치되면 DAM 자산 업데이트 [!UICONTROL 워크플로우 정의에 따라 여러 변환이] 구성(변환)됩니다.
 
 변환은 CPU를 많이 사용하므로 대상 변환 목록을 수정하는 것이 좋습니다. 대부분의 경우 트랜스코딩은 필요하지 않습니다.
 
-DAM 자산 업데이트 워크플로우를 수정하려면, 이 예에서는 코드 변환을 끕니다.
+DAM 자산 [!UICONTROL 업데이트] 워크플로우를 수정하고 이 예에서는 코드 변환을 끕니다.
 
 * 관리자 권한으로 작성 인스턴스에 로그인
 * 전역 탐색에서:도구 **[!UICONTROL > 워크플로우 > 모델]**
