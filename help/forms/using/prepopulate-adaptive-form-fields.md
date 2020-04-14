@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -339,7 +339,7 @@ prefill-page component.zip
 프리플라이트 서비스는 OSGi 서비스이며 OSGi 번들을 통해 패키징됩니다. OSGi 번들을 만들고, 업로드하고, AEM Forms 번들에 설치합니다. 번들 제작을 시작하기 전에
 
 * [AEM Forms 클라이언트 SDK 다운로드](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)
-* [상용구 패키지 다운로드](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)
+* 상용구 패키지 다운로드
 
 * crx-repository에 데이터(프리필 데이터) 파일을 배치합니다. crx-repository의 \contents 폴더에 있는 위치에 파일을 배치할 수 있습니다.
 
