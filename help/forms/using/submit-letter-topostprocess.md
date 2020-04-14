@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -25,9 +25,9 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
 게시물 프로세스를 편지 또는 대화형 통신과 연결하려면 먼저 게시물 프로세스를 설정해야 합니다. 제출된 편지에서는 두 가지 유형의 워크플로우를 실행할 수 있습니다.
 
-1. **** 양식 워크플로우:다음은 JEE 프로세스 관리 워크플로우의 AEM 양식입니다. 양식 워크플로우 설정 [지침](../../forms/using/submit-letter-topostprocess.md#main-pars-header-3).
+1. **양식 워크플로우:** 다음은 JEE 프로세스 관리 워크플로우의 AEM 양식입니다. 양식 워크플로우 설정 [지침](#formsworkflow).
 
-1. **** AEM 워크플로우:AEM 워크플로우는 제출된 서신의 게시 프로세스로 사용할 수도 있습니다. AEM Workflow 설정 [지침](../../forms/using/aem-forms-workflow.md).
+1. **AEM 워크플로우:** AEM 워크플로우는 제출된 서신의 게시 프로세스로 사용할 수도 있습니다. AEM Workflow 설정 [지침](../../forms/using/aem-forms-workflow.md).
 
 ## 양식 워크플로우 {#formsworkflow}
 
@@ -57,11 +57,11 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
    Adobe Experience Manager 웹 콘솔 구성 페이지 > 통신 **[!UICONTROL 관리 구성으로]** 이동하여 다음 매개 변수를 설정합니다.
 
-   1. **** inPDFoc(PDF 문서 매개 변수):입력으로 PDF 문서 이 입력에는 렌더링된 문자가 입력으로 포함됩니다. 표시된 매개 변수 이름은 구성할 수 있습니다. 통신 관리 구성을 구성에서 구성할 수 있습니다.
-   1. **** inXMLDoc(XML 데이터 매개 변수):입력으로 XML 문서 이 입력에는 사용자가 XML 형식으로 입력한 데이터가 포함됩니다.
-   1. **** inXDPDoc(XDP 문서 매개 변수):입력으로 XML 문서 이 입력에는 기본 레이아웃(XDP)이 포함되어 있습니다.
-   1. **** inAttachmentDocs(첨부 문서 매개 변수):목록 입력 매개 변수입니다. 이 입력에는 모든 첨부 파일이 입력으로 포함됩니다.
-   1. **** redirectURL(리디렉션 URL 출력):리디렉션할 URL을 나타내는 출력 유형입니다.
+   1. **inPDFoc(PDF 문서 매개 변수):** 입력으로 PDF 문서 이 입력에는 렌더링된 문자가 입력으로 포함됩니다. 표시된 매개 변수 이름은 구성할 수 있습니다. 통신 관리 구성을 구성에서 구성할 수 있습니다.
+   1. **inXMLDoc(XML 데이터 매개 변수):** 입력으로 XML 문서 이 입력에는 사용자가 XML 형식으로 입력한 데이터가 포함됩니다.
+   1. **inXDPDoc(XDP 문서 매개 변수):** 입력으로 XML 문서 이 입력에는 기본 레이아웃(XDP)이 포함되어 있습니다.
+   1. **inAttachmentDocs(첨부 문서 매개 변수):** 목록 입력 매개 변수입니다. 이 입력에는 모든 첨부 파일이 입력으로 포함됩니다.
+   1. **redirectURL(리디렉션 URL 출력):** 리디렉션할 URL을 나타내는 출력 유형입니다.
    양식 워크플로우에는 PDF 문서 매개 변수 또는 XML 데이터 매개 변수가 입력 관리 구성에 지정된 것과 동일한 이름의 **[!UICONTROL 입력이어야 합니다]**. 게시 프로세스 드롭다운에 나열되는 프로세스에 필요합니다.
 
 ## 게시 인스턴스의 설정 {#settings-on-the-publish-instance}
