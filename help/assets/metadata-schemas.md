@@ -3,7 +3,7 @@ title: 메타데이터 스키마
 description: 메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 메타데이터 스키마를 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cbaefd5a377db5aa9f8ba35371fe2a9cb638fa1
+source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
 
 ---
 
@@ -16,24 +16,23 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 
 1. 자산에 대한 속성 페이지를 보려면 카드 보기의 자산 타일의 **[!UICONTROL 빠른]** 작업에서 속성 보기 아이콘을 클릭하거나 탭합니다.
 
-   ![chlimage_1-34](assets/chlimage_1-170.png)
+   ![자산 타일에 대한 빠른 작업](assets/chlimage_1-170.png)
 
    또는 UI에서 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 속성]** 아이콘을 클릭하거나 탭합니다.
 
-   ![chlimage_1-35](assets/chlimage_1-171.png)
+   ![상단 도구 모음의 속성 아이콘](assets/chlimage_1-171.png)
 
 1. 다양한 탭에서 다양한 메타데이터 속성을 편집합니다. 하지만 속성 페이지에서 자산 유형을 수정할 수는 없습니다.
 
-   ![자산 속성의 기본 탭에서 자산 유형을 변경할 수 없습니다.](assets/asset-properties-basic-tab.png)
+   ![자산 속성의 기본 탭. 여기서 자산 유형은 변경할 수 없습니다.](assets/asset-properties-basic-tab.png)
 
    *그림:자산 속성의 기본 탭*
-
 
    자산에 대한 MIME 유형을 수정하려면 사용자 지정 메타데이터 스키마 양식을 사용하거나 기존 양식을 수정합니다. 자세한 [내용은 메타데이터 스키마 양식](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) 편집을 참조하십시오. 특정 MIME 유형의 메타데이터 스키마를 수정하는 경우 현재 MIME 형식과 모든 자산 하위 형식의 자산에 대한 속성 페이지 레이아웃이 수정됩니다. 예를 들어, jpeg 스키마를 `default/image` 수정하면 MIME 유형의 자산에 대한 메타데이터 레이아웃(자산 속성)만 수정됩니다 `image/jpeg`. 그러나 기본 스키마를 편집하는 경우 변경 사항은 모든 유형의 자산에 대한 메타데이터 레이아웃을 수정합니다.
 
 1. 양식/템플릿 목록을 보려면 AEM 로고를 클릭한 다음 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터]** 스키마로 **[!UICONTROL 이동합니다]**.
 
-   ![chlimage_1-37](assets/chlimage_1-173.png)
+   ![메타데이터 스키마 양식 목록 표시 페이지](assets/chlimage_1-173.png)
 
    AEM에서는 즉시 다음과 같은 템플릿을 제공합니다.
    * **기본값**:자산에 대한 기본 메타데이터 스키마 양식입니다.
@@ -66,7 +65,7 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 
 1. 대화 상자에서 스키마 양식의 제목을 입력한 다음 만들기를 클릭하여 **[!UICONTROL 양식]** 작성 프로세스를 완료합니다.
 
-   ![chlimage_1-38](assets/chlimage_1-174.png)
+   ![제목 지정 및 메타데이터 스키마 양식 만들기](assets/chlimage_1-174.png)
 
 ## 메타데이터 스키마 양식 편집 {#edit-metadata-schema-forms}
 
@@ -81,12 +80,11 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 
 1. 스키마 양식 페이지에서 양식 앞에 있는 확인란을 선택한 다음 도구 모음에서 편집 아이콘을 클릭합니다.
 
-   ![chlimage_1-39](assets/chlimage_1-175.png)
+   ![메타데이터 스키마 양식의 도구 모음에서 편집 아이콘](assets/chlimage_1-175.png)
 
 1. [ **[!UICONTROL 메타데이터 스키마 편집기]** ] 페이지에서 [양식 작성] 탭의 구성 요소 유형 목록에서 하나 이상의 구성 요소를 **[!UICONTROL 기본]** 탭으로 드래그하여 **[!UICONTROL 자산의]** 속성 페이지를사용자정의합니다.
 
-   ![빌드 양식의 구성 요소를 메타데이터 스키마 편집기에 추가하여 자산 속성 사용자 정의](assets/metadata-schema-editor.png)
-
+   ![자산 속성 사용자 지정을 위한 메타데이터 스키마 편집기 페이지](assets/metadata-schema-editor.png)
 
    *그림:메타데이터 스키마 편집기의 기본 탭*
 
@@ -147,7 +145,7 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 
 **삭제**:스키마 양식에서 구성 요소를 삭제하려면 이 아이콘을 클릭합니다.
 
-![chlimage_1-41](assets/chlimage_1-177.png)
+![메타데이터 스키마 양식의 삭제 아이콘](assets/chlimage_1-177.png)
 
 >[!NOTE]
 >
@@ -155,15 +153,15 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 
 필수 옵션을 **[!UICONTROL 선택하면]** 필수 메타데이터가 누락된 자산을 검색할 수 있습니다. 필터 **[!UICONTROL 패널에서]** 메타데이터 유효성 검사 **[!UICONTROL 조건자를]** 확장하고 **[!UICONTROL 잘못된]** 옵션을선택합니다. 검색 결과에 스키마 양식을 통해 구성한 필수 메타데이터가 누락된 자산이 표시됩니다.
 
-![chlimage_1-42](assets/chlimage_1-178.png)
+![필터 패널의 메타데이터 유효성 검사 조건자에서 잘못된 옵션을 선택했습니다. ](assets/chlimage_1-178.png)
 
 컨텍스트 메타데이터 구성 요소를 스키마 양식의 임의 탭에 추가하면 구성 요소가 특정 스키마가 적용되는 자산의 속성 페이지에 목록으로 나타납니다. 목록에는 컨텍스트 메타데이터 구성 요소를 적용한 탭을 제외한 다른 모든 탭이 포함되어 있습니다. 현재 이 기능은 컨텍스트에 따라 메타데이터 표시를 제어하는 기본 기능을 제공합니다.
 
-![chlimage_1-43](assets/chlimage_1-179.png)
+![자산 속성의 탭을 나열하는 컨텍스트 메타데이터 구성 요소](assets/chlimage_1-179.png)
 
 컨텍스트 메타데이터 구성 요소가 적용된 탭 외에 속성 페이지에 탭을 표시하려면 목록에서 탭을 선택합니다. 탭이 속성 페이지에 추가됩니다.
 
-![컨텍스트 메타데이터 목록에서 탭을 선택하여 속성 페이지에 표시](assets/contextual-metadata-asset-properties.png)
+![컨텍스트 메타데이터 목록에서 선택한 탭이 자산 속성 페이지에 표시됩니다.](assets/contextual-metadata-asset-properties.png)
 
 *그림:자산 속성 페이지의 컨텍스트 메타데이터*
 
@@ -173,15 +171,15 @@ Adobe Experience Manager(AEM) 자산에서 메타데이터 스키마는 속성 �
 
 #### 스키마 양식의 탭 추가 또는 삭제 {#adding-deleting-a-tab-in-the-schema-form}
 
-스키마 편집기를 사용하여 탭을 추가하거나 삭제할 수 있습니다. 기본 스키마 양식에는 **[!UICONTROL 기본]**, **[!UICONTROL 고급]** , **[!UICONTROL IPTC]**&#x200B;및 **[!UICONTROL IPTC 확장]** 탭이 기본적으로 포함되어 있습니다.
+스키마 편집기를 사용하여 탭을 추가하거나 삭제할 수 있습니다. 기본 스키마 양식에는 **[!UICONTROL 기본]**, **[!UICONTROL 고급]** , **[!UICONTROL IPTC]**&#x200B;및 **[!UICONTROL IPTC]** 확장탭이 포함되어 있습니다.
 
-![chlimage_1-45](assets/chlimage_1-181.png)
+![메타데이터 스키마 양식의 기본 탭](assets/chlimage_1-181.png)
 
 아이콘을 `+` 클릭하여 스키마 양식에 새 탭을 추가합니다. 기본적으로 새 탭에는 이름이 `Unnamed-1`있습니다. 설정 탭에서 이름을 수정할 **[!UICONTROL 수]** 있습니다.
 
 탭을 `X` 삭제하려면 클릭합니다.
 
-![chlimage_1-46](assets/chlimage_1-182.png)
+![메타데이터 스키마 편집기를 사용하여 탭 추가 또는 삭제](assets/chlimage_1-182.png)
 
 ## 메타데이터 스키마 양식 삭제 {#delete-metadata-schema-forms}
 
@@ -189,7 +187,8 @@ AEM에서는 사용자 정의 스키마 양식만 삭제할 수 있습니다. �
 
 양식을 삭제하려면 양식을 선택하고 삭제 아이콘을 클릭합니다.
 
-![chlimage_1-47](assets/chlimage_1-183.png)
+![삭제 아이콘을 사용하여 사용자 정의 메타데이터 스키마 양식 삭제](assets/chlimage_1-183.png)
+
 <!--![chlimage_1-47](assets/chlimage_1-177.png) -->
 >[!NOTE]
 >
@@ -254,26 +253,26 @@ AEM Assets에서는 메타데이터 스키마의 변형을 정의하여 특정 �
 
 1. AEM 로고를 클릭한 다음 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터]** 스키마로 **[!UICONTROL 이동합니다]**. [ **[!UICONTROL 메타데이터 스키마 양식]** ] 페이지가 표시됩니다.
 1. 양식 앞에 있는 확인란(예: 기본 메타데이터 양식)을 선택하고 복사 아이콘을 클릭하거나 탭하고 사용자 정의 양식으로 저장합니다. 예를 들어 양식의 사용자 지정 이름을 지정합니다 `my_default`. 또는 사용자 지정 양식을 만들 수 있습니다.
-   ![chlimage_1-184](assets/chlimage_1-184.png)
+   ![복제 아이콘을 사용하여 기본 양식을 복사하고 메타데이터 스키마 양식 페이지에서 사용자 정의 양식으로 저장합니다](assets/chlimage_1-184.png)
 
 1. [ **[!UICONTROL 메타데이터 스키마 양식]** ] 페이지에서 `my_default` 양식을 선택한 다음 편집 **[!UICONTROL 아이콘을]** 클릭합니다.
 
-   ![chlimage_1-49](assets/chlimage_1-185.png)
+   ![편집 아이콘을 사용하여 메타데이터 스키마 편집기를 열고 스키마 양식 편집](assets/chlimage_1-185.png)
 
 1. [메타데이터 **[!UICONTROL 스키마 편집기]** ] 페이지에서 스키마 양식에 텍스트 필드를 추가합니다. 예를 들어 레이블이 카테고리로 필드를 **[!UICONTROL 추가합니다]**.
 
-   ![메타데이터 스키마 양식 편집기에 텍스트 필드 추가](assets/text-field-metadata-schema-editor.png)
+   ![메타데이터 스키마 양식 편집기에 추가된 텍스트 필드](assets/text-field-metadata-schema-editor.png)
 
    *그림:메타데이터 스키마 양식 편집기에 추가된 텍스트 필드*
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [메타데이터 스키마 양식] **[!UICONTROL 페이지에]** 나열됩니다.
 1. 도구 모음에서 **[!UICONTROL 폴더에]** 적용을 클릭/탭하여 사용자 지정 메타데이터를 폴더에 적용합니다.
 
-   ![chlimage_1-51](assets/chlimage_1-187.png)
+   ![폴더에 사용자 지정 메타데이터를 적용하려면 폴더에 적용 아이콘](assets/chlimage_1-187.png)
 
 1. 수정된 스키마를 적용할 폴더를 선택한 다음 적용을 클릭/ **[!UICONTROL 탭합니다]**.
 
-   ![chlimage_1-52](assets/chlimage_1-188.png)
+   ![메타데이터 스키마를 적용할 폴더 선택](assets/chlimage_1-188.png)
 
 1. 폴더에 다른 메타데이터 스키마가 적용된 경우 기존 메타데이터 스키마를 덮어쓸 것이라는 메시지가 표시됩니다. 덮어쓰기를 **클릭합니다**.
 1. 확인을 **클릭하여** 성공 메시지를 닫습니다.
@@ -290,21 +289,21 @@ AEM Assets에서는 메타데이터 스키마의 변형을 정의하여 특정 �
 1. AEM 로고를 클릭한 다음 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터]** 스키마로 **[!UICONTROL 이동합니다]**. [ **[!UICONTROL 메타데이터 스키마 양식]** ] 페이지가 표시됩니다.
 1. 기본 메타데이터 양식을 사용자 지정 양식으로 저장합니다. 예를 들어 다른 이름으로 저장합니다 `my_default`.
 
-   ![chlimage_1-53](assets/chlimage_1-189.png)
+   ![사용자 지정 양식으로 저장된 기본 메타데이터 양식](assets/chlimage_1-189.png)
 
 1. 사용자 지정 양식을 편집합니다. 필수 필드를 추가합니다. 예를 들어 카테고리 **[!UICONTROL 필드를]** 추가하고 필드를 필수로 만듭니다.
 
-   ![메타데이터 양식에 필드 추가 및 규칙 탭에서 필수를 선택하여 필수로 지정](assets/mandatory-field-metadata-schema-editor.png)
+   ![메타데이터 스키마 양식 편집기의 규칙 탭에서 필수를 선택하여 메타데이터 양식에 필수 필드를 추가합니다.](assets/mandatory-field-metadata-schema-editor.png)
 
    *그림:메타데이터 스키마 양식 편집기의 필수 필드*
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [메타데이터 스키마 양식] **[!UICONTROL 페이지에]** 나열됩니다. 양식을 선택한 다음 도구 **[!UICONTROL 모음에서 폴더에]** 적용을 클릭하거나 탭하여 사용자 지정 메타데이터를 폴더에 적용합니다.
 
-   ![chlimage_1-55](assets/chlimage_1-191.png)
+   ![폴더에 적용 아이콘을 사용하여 사용자 정의 메타데이터 양식을 폴더에 적용](assets/chlimage_1-191.png)
 
 1. 사용자 지정 양식에 추가한 필수 필드에 대한 메타데이터가 없는 일부 자산을 폴더로 이동하여 업로드합니다. 필수 필드에 대한 누락된 메타데이터에 대한 메시지가 자산의 카드 보기에 표시됩니다.
 
-   ![chlimage_1-56](assets/chlimage_1-192.png)
+   ![폴더의 자산 업로드 시 자산 카드 보기에서 필수 메타데이터가 누락되는 메시지](assets/chlimage_1-192.png)
 
 1. (선택 사항) `https://[server]:[port]/system/console/components/`액세스. 기본적으로 비활성화된 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 구성 요소를 구성하고 활성화합니다. AEM에서 자산의 메타데이터의 유효성을 확인하는 빈도를 설정합니다.
 
