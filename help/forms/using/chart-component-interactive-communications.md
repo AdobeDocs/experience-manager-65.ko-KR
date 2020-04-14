@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -150,7 +150,7 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
   </tr>
   <tr>
    <td>툴팁</td>
-   <td><p>웹 채널의 차트에 있는 데이터 포인트 위에 도구 설명이 표시되는 형식입니다. 기본값은 ${x}(${y})입니다. 차트 유형에 따라 차트의 점, 막대 또는 슬라이스에 마우스를 가리키면 ${x}및 ${y} 변수가 X축 및 Y축에 해당하는 값으로 동적으로 대체되고 도구 설명에 표시됩니다.</p> <p>도구 설명을 비활성화하려면 도구 설명 <span class="uicontrol">필드를</code> 비워 둡니다. 이 옵션은 라인 및 영역 차트에 적용되지 않습니다. 예를 들어 예제 <a href="../../forms/using/chart-component-interactive-communications.md#main-pars-header-e1f6">1을 참조하십시오.인쇄 및 웹에서</a>차트 출력</code></p> </td>
+   <td><p>웹 채널의 차트에 있는 데이터 포인트 위에 도구 설명이 표시되는 형식입니다. 기본값은 ${x}(${y})입니다. 차트 유형에 따라 차트의 점, 막대 또는 슬라이스에 마우스를 가리키면 ${x}및 ${y} 변수가 X축 및 Y축에 해당하는 값으로 동적으로 대체되고 도구 설명에 표시됩니다.</p> <p>도구 설명을 비활성화하려면 도구 설명 <span class="uicontrol">필드를</code> 비워 둡니다. 이 옵션은 라인 및 영역 차트에 적용되지 않습니다. 예를 들어 예제 <a href="#chartoutputprintweb">1을 참조하십시오.인쇄 및 웹에서</a>차트 출력</code></p> </td>
    <td>웹</td>
   </tr>
   <tr>
@@ -169,8 +169,8 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
      <li><strong>참조 점 &gt; 계열에 대한 데이터 모델 개체:바인딩 </strong>유형 드롭다운 목록에서 데이터 모델 <span class="uicontrol">객체를</code> 선택한 경우 여러 시리즈 Quadrant 차트에 사용할 수 있습니다. 참조 점에 대한 시리즈를 식별하는 양식 데이터 모델 개체 속성을 정의합니다. </code></li>
      <li><strong>참조 점 &gt; 계열에 대한 데이터 모델 개체 값:바인딩 </strong>유형 드롭다운 목록에서 데이터 모델 <span class="uicontrol">객체를</code> 선택한 경우 여러 시리즈 Quadrant 차트에 사용할 수 있습니다. 계열에 대한 양식 데이터 모델 개체 속성과 이 필드에 정의된 값을 사용하여 참조점에 대한 계열을 식별합니다.</code></li>
      <li><strong>참조점(Reference Point) &gt; 참조점에 대한 데이터 모델 개체(Data Model Object):바인딩 </strong>유형 드롭다운 목록에서 <span class="uicontrol">데이터 모델</code> 개체를 선택하는 경우 Quadrant 차트에 사용할 수 있습니다. X축 및 Y축에 표시된 속성의 동위 요소인 양식 데이터 모델 개체 속성을 정의합니다. 또한 여러 계열에 대해 해당 계열에 대해 정의된 데이터 모델 개체 속성의 자식 엔티티인 데이터 모델 개체 속성을 정의합니다.</code></li>
-     <li><strong>참조점(Reference Point) &gt; 참조점의 데이터 모델 개체 값(Data Model Object Value):바인딩 </strong>유형 드롭다운 목록에서 <span class="uicontrol">데이터 모델</code> 개체를 선택하는 경우 Quadrant 차트에 사용할 수 있습니다. 참조점에 대한 양식 데이터 모델 객체 속성과 이 필드에 정의된 값을 사용하여 차트의 참조점을 식별합니다.<br /><strong> Quadrant </strong>레이블 &gt; 왼쪽 위:Quadrant 차트에서 왼쪽 상단 쿼드런트의 이름을 지정할 수 있습니다.</code></li>
-     <li><strong></strong> Quadrant 레이블 &gt; 오른쪽 위:Quadrant 차트에서 Top Right Quadrant의 이름을 지정할 수 있습니다.</li>
+     <li><strong>참조점(Reference Point) &gt; 참조점의 데이터 모델 개체 값(Data Model Object Value):바인딩 </strong>유형 드롭다운 목록에서 <span class="uicontrol">데이터 모델</code> 개체를 선택하는 경우 Quadrant 차트에 사용할 수 있습니다. 참조점에 대한 양식 데이터 모델 객체 속성과 이 필드에 정의된 값을 사용하여 차트의 참조점을 식별합니다.<br /> Quadrant <strong>레이블 &gt; 왼쪽 위:</strong> Quadrant 차트에서 왼쪽 상단 쿼드런트의 이름을 지정할 수 있습니다.</code></li>
+     <li><strong>Quadrant 레이블 &gt; 오른쪽 위:</strong> Quadrant 차트에서 Top Right Quadrant의 이름을 지정할 수 있습니다.</li>
      <li><strong>Quadrant 레이블 &gt; 오른쪽 아래:Quadrant </strong>차트에서 오른쪽 하단의 이름을 지정할 수 있습니다.</li>
      <li><strong>Quadrant 레이블 &gt; 왼쪽 아래:Quadrant </strong>차트에서 왼쪽 하단 사분면의 이름을 지정할 수 있습니다.</li>
     </ul> </td>
@@ -185,7 +185,7 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
 ![차트의 기능](assets/functions_charts_new.png)
 
-차트 구성 요소에는 일부 내장 함수가 포함되어 있지만, [사용자 지정 함수를](../../forms/using/chart-component-interactive-communications.md#main-pars-header-473010287) 작성하여 웹 채널의 차트 구성에서 사용할 수 있도록 만들 수 있습니다.
+차트 구성 요소에는 일부 내장 함수가 포함되어 있지만, [사용자 지정 함수를](#customfunctionsweb) 작성하여 웹 채널의 차트 구성에서 사용할 수 있도록 만들 수 있습니다.
 
 차트 구성 요소에서는 기본적으로 다음 기능을 사용할 수 있습니다.
 
@@ -205,7 +205,7 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
 **모드** X축이나 Y축에 나타나는 값이 다른 축에 있는 지정된 값으로 반환됩니다.
 
-자세한 내용은 예제 [2:라인 차트에](../../forms/using/chart-component-interactive-communications.md#main-pars-header-ae38)합계 및 빈도 함수 적용
+자세한 내용은 예제 [2:라인 차트에](#applicationsumfrequency)합계 및 빈도 함수 적용
 
 ### 웹 채널의 사용자 정의 함수 {#customfunctionsweb}
 
@@ -301,12 +301,12 @@ Sum 함수는 동일한 데이터 속성의 여러 인스턴스에 대해 합계
 
 이를 수행하려면 다음 속성을 지정합니다.
 
-* **** 이름:차트의 이름을 지정합니다.
-* **** 차트 유형:드롭다운 **목록에서 Quadrant** 를 선택합니다.
+* **이름:** 차트의 이름을 지정합니다.
+* **차트 유형:** 드롭다운 **목록에서 Quadrant** 를 선택합니다.
 
 * 복수 시리즈 **확인란을** 선택합니다.
 * **데이터 모델 개체**:계열에 대한 데이터 모델 개체 속성을 지정합니다. 은행 이름에 대한 데이터 모델 개체 속성은 X축 및 Y축에 표시되는 데이터 모델 개체 속성의 상위 속성입니다.
-* **** 데이터 모델 개체:데이터 모델 객체 속성을 선택하여 X축(트랜잭션 날짜) 및 Y축(트랜잭션 금액)에 대한 데이터 바인딩을 생성합니다.
+* **데이터 모델 개체:** 데이터 모델 객체 속성을 선택하여 X축(트랜잭션 날짜) 및 Y축(트랜잭션 금액)에 대한 데이터 바인딩을 생성합니다.
 * 참조점 **섹션에서** 바인딩 **유형으로** 정적을 선택합니다.
 
 * X축 및 Y축 참조점의 값을 지정합니다.
