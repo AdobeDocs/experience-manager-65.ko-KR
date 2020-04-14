@@ -10,7 +10,7 @@ topic-tags: interactive-communications
 discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -31,13 +31,13 @@ source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
 
 ![인터랙티브한 커뮤니케이션 제작 유저 인터페이스](assets/form-editor.png)
 
-******A.사이드바** B.페이지 도구 **모음 C.** 컨텐츠 영역
+**A.** 사이드바 **B.** 페이지 도구 **모음 C.** 컨텐츠 영역
 
 ## 사이드바 {#sidebar}
 
 ![사이드바](assets/sidebar-comps-2.png)
 
-**************A.채널 브라우저** B.컨텐츠 브라우저 **C.** 속성 브라우저 **D.자산 브라우저** E.구성 요소 브라우저 **F.데이터 소스 브라우저 - 데이터 모델** G.데이터 소스 브라우저 - 마스터 컨텐츠
+**A.** 채널 브라우저 **B.** 컨텐츠 브라우저 **C.** 속성 브라우저 **D.** 자산 브라우저 **E.** 구성 요소 브라우저 **F.** 데이터 소스 브라우저 - 데이터 모델 **G.** 데이터 소스 브라우저 - 마스터 컨텐츠
 
 <!-- Click to enlarge
 
@@ -112,9 +112,9 @@ H.그룹 ****:두 개 이상의 구성 요소를 함께 잘라내거나 복사�
 
 I.상위 ****:구성 요소의 상위 항목을 선택할 수 있습니다.
 
-**J.SOM**&#x200B;표현식 보기:구성 요소의 [SOM 표현식을](../../forms/using/using-som-expressions-adaptive-forms.md) 볼 수 있습니다.
+J.SOM **표현식 보기:** 구성 요소의 [SOM 표현식을](../../forms/using/using-som-expressions-adaptive-forms.md) 볼 수 있습니다.
 
-**K:패널에서**&#x200B;개체 그룹화:패널에서 구성 요소를 그룹화하여 해당 구성 요소에 대해 동시에 작업을 수행할 수 있도록 합니다. 자세한 내용은 패널에서 [개체 그룹을 참조하십시오](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576).
+K:패널에서 **개체 그룹화:** 패널에서 구성 요소를 그룹화하여 해당 구성 요소에 대해 동시에 작업을 수행할 수 있도록 합니다. 자세한 내용은 패널에서 [개체 그룹을 참조하십시오](create-interactive-communication.md#groupobjectspanel).
 
 L.하위 **패널** 추가(패널에만 해당):패널에 하위 패널을 추가할 수 있습니다.
 
@@ -122,7 +122,7 @@ M:패널 도구 **모음** 추가(패널에만 해당):패널 구성 요소용 �
 
 또한 도구 **모음의** 바꾸기 옵션을 사용하면 기존 구성 요소를 대체 구성 요소로 바꿀 수 있습니다. 패널 구성 요소에는 이 옵션을 사용할 수 없습니다.
 
-## Page toolbar {#page-toolbar}
+## 페이지 도구 모음 {#page-toolbar}
 
 상단에 있는 페이지 도구 모음에서는 대화형 통신을 미리 보고 속성을 변경할 수 있는 옵션을 제공합니다. 작성 시 대화형 통신을 미리 보고 그에 따라 변경할 수 있습니다. 페이지 도구 모음에서 다음을 볼 수 있습니다.
 
