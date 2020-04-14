@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -305,7 +305,7 @@ When 규칙을 작성하는 동안 Clear Value Of 작업을 트리거할 수 있
 
 ![사용자 지정 함수](assets/custom_functions_set_options_new.png)
 
-사용자 지정 함수를 만들려면 규칙 편집기에서 [사용자 지정 함수를 참조하십시오](../../forms/using/rule-editor.md#main-pars-header-296220653).
+사용자 지정 함수를 만들려면 규칙 편집기에서 [사용자 지정 함수를 참조하십시오](#custom-functions).
 
 양식 데이터 모델을 기반으로 규칙을 정의하려면
 
@@ -348,7 +348,7 @@ When 규칙을 작성하는 동안 Clear Value Of 작업을 트리거할 수 있
 
 하나 이상의 유효한 규칙이 적용된 양식 개체는 녹색 점으로 표시됩니다. 양식 개체에 적용된 규칙 중 하나라도 잘못된 경우 양식 개체가 노란색 점으로 표시됩니다.
 
-[함수] 탭에는 합계, 최소값, 최대값, 평균값, 개수 및 유효성 검사와 같은 내장 함수 세트가 포함되어 있습니다. 이러한 함수를 사용하여 반복 가능한 패널과 테이블 행에서 값을 계산하고 규칙을 작성할 때 작업 및 조건 문에서 사용할 수 있습니다. 그러나 [사용자 정의 함수를](../../forms/using/rule-editor.md#custom-functions) 만들 수도 있습니다.
+[함수] 탭에는 합계, 최소값, 최대값, 평균값, 개수 및 유효성 검사와 같은 내장 함수 세트가 포함되어 있습니다. 이러한 함수를 사용하여 반복 가능한 패널과 테이블 행에서 값을 계산하고 규칙을 작성할 때 작업 및 조건 문에서 사용할 수 있습니다. 그러나 [사용자 정의 함수를](#custom-functions) 만들 수도 있습니다.
 
 ![함수 탭](assets/functions.png)
 
@@ -553,7 +553,7 @@ Forms-Power-users 그룹에 추가된 사용자는 코드 편집기를 사용할
 
 * **멤버**&#x200B;구문:함수에 네임스페이스를 `@memberof namespace`첨부합니다.
 
-* **매개 변수**&#x200B;구문:또는 `@param {type} name <Parameter Description>`다음을 사용할 수 있습니다. `@argument` 또는 `{type} name <Parameter Description>`****`@arg``{type}``name <Parameter Description>`...YouTube를 통해
+* **매개 변수**&#x200B;구문:또는 `@param {type} name <Parameter Description>`다음을 사용할 수 있습니다. `@argument` 또는 `{type} name <Parameter Description>`****`@arg``{type}``name <Parameter Description>`...YouTube를 참조하십시오.
 함수에 사용되는 매개 변수를 표시합니다. 함수에는 여러 매개 변수 태그와 각 매개 변수에 대한 태그가 있을 수 있습니다.
    `{type}` 매개 변수 유형을 나타냅니다. 허용되는 매개 변수 유형은 다음과 같습니다.
 
