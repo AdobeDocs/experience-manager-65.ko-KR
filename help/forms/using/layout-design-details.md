@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -53,7 +53,7 @@ XDP 파섹 이 문서에서는 양식 필드 또는 대상 영역을 사용하�
 
 >[!NOTE]
 >
->XDP 템플릿의 하위 양식 구성 요소에 콘텐츠를 추가하는 대신 대화형 통신의 인쇄 채널에 콘텐츠를 추가합니다. 인쇄 채널에서 [문서 조각, 차트, 이미지](../../forms/using/create-interactive-communication.md#main-pars-header-741471925)및 레이아웃 조각을 사용하여 컨텐츠를 대상 영역에 추가합니다.
+>XDP 템플릿의 하위 양식 구성 요소에 콘텐츠를 추가하는 대신 대화형 통신의 인쇄 채널에 콘텐츠를 추가합니다. 인쇄 채널에서 [문서 조각, 차트, 이미지](create-interactive-communication.md#step2)및 레이아웃 조각을 사용하여 컨텐츠를 대상 영역에 추가합니다.
 
 XDP 템플릿에서 하위 양식을 사용하려면 다음 단계를 수행하십시오.
 
@@ -83,7 +83,7 @@ XDP 템플릿에서 하위 양식을 사용하려면 다음 단계를 수행하�
 
    1. 이름 필드에서 하위 폼의 이름을 **지정합니다** .
    1. 데이터 **바인딩** 드롭다운 목록에서 데이터 **바인딩** 없음을 선택합니다.
-   2~5단계를 반복하여 XDP 템플릿에 하위 양식을 더 추가합니다. 대화형 통신을 작성하는 동안에만 [텍스트, 문서 조각, 이미지 및 차트를](../../forms/using/create-interactive-communication.md#main-pars-header-741471925) 대상 영역에 추가합니다.
+   2~5단계를 반복하여 XDP 템플릿에 하위 양식을 더 추가합니다. 대화형 통신을 작성하는 동안에만 [텍스트, 문서 조각, 이미지 및 차트를](create-interactive-communication.md#step2) 대상 영역에 추가합니다.
 
 1. 파일 **** > **다른** 이름으로 저장을 선택하여 로컬 파일 시스템에 파일을 저장합니다.
 
@@ -115,7 +115,7 @@ Forms Designer의 표 구성 요소를 사용하여 레이아웃 조각을 만�
 
 >[!NOTE]
 >
->표 셀에 텍스트를 입력하거나 대화형 통신을 작성하는 동안에만 양식 데이터 모델 개체를 [사용하여 바인딩을](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) 만듭니다.
+>표 셀에 텍스트를 입력하거나 대화형 통신을 작성하는 동안에만 양식 데이터 모델 개체를 [사용하여 바인딩을](create-interactive-communication.md#step2) 만듭니다.
 
 양식 디자이너를 사용하여 XDP 템플릿에서 표 구성 요소를 사용하려면 다음 단계를 수행하십시오.
 
@@ -134,7 +134,7 @@ Forms Designer의 표 구성 요소를 사용하여 레이아웃 조각을 만�
 
 1. 왼쪽 창에서 행 이름을 선택하고 [개체] > [바인딩] **> [각** 데이터 **항목에 대해** **행**&#x200B;반복]을 선택합니다. 이 단계를 수행하여 이 행의 테이블 셀 사이에 컬렉션 유형의 양식 데이터 모델 개체가 있는 바인딩이 만들어지면 데이터베이스에서 사용할 수 있는 각 데이터 항목에 대해 테이블 행이 자동으로 반복됩니다.
 
-   표 셀에 텍스트를 입력하거나 대화형 통신을 작성하는 동안에만 양식 데이터 모델 개체를 [사용하여 바인딩을](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) 만듭니다.
+   표 셀에 텍스트를 입력하거나 대화형 통신을 작성하는 동안에만 양식 데이터 모델 개체를 [사용하여 바인딩을](create-interactive-communication.md#step2) 만듭니다.
 
 1. 파일 **** > **다른** 이름으로 저장을 선택하여 로컬 파일 시스템에 파일을 저장합니다.
 
