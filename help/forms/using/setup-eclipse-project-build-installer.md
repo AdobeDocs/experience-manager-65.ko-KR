@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -18,9 +18,9 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 권장 시퀀스에서 다음 단계를 수행하여 AEM Forms용 Android 앱을 빌드합니다.
 
-1. [AEM Forms 앱 소스 코드 패키지 다운로드](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-277929160)
-1. [환경 변수 설정](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-111803610)
-1. [표준 AEM Forms 앱 빌드](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-heading-0)
+1. [AEM Forms 앱 소스 코드 패키지 다운로드](#download-android-zip)
+1. [환경 변수 설정](#set-environment-variable-android)
+1. [표준 AEM Forms 앱 빌드](#set-up-the-xcode-project)
 
 ## AEM Forms 앱 소스 코드 패키지 다운로드 {#download-android-zip}
 
@@ -50,8 +50,8 @@ AEM Forms 앱에 대한 빌드 프로세스를 시작하기 전에 다음 환경
 
 로컬 파일 시스템에 adobe-lc-mobileworkspace-src-&lt;버전>.zip 파일을 저장하고 환경 변수를 설정했으면 다음 옵션 중 하나를 사용하여 표준 AEM Forms Android 앱을 빌드합니다.
 
-* [Android Studio를 사용하여 AEM Forms 앱 빌드](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-1347434739)
-* [Android Studio를 사용하여 .apk 파일 생성](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-0)
+* [Android Studio를 사용하여 AEM Forms 앱 빌드](#using-android-studio)
+* [Android Studio를 사용하여 .apk 파일 생성](#generate-apk-android-studio)
 
 ### Android Studio를 사용하여 AEM Forms 앱 빌드 {#using-android-studio}
 
