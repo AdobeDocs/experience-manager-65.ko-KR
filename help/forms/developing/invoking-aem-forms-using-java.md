@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -43,7 +43,7 @@ Adobe 개발자 웹 사이트에는 Java API를 사용하여 AEM Forms 서비스
 
 [AEM Forms Java 라이브러리 파일 포함](#including-aem-forms-java-library-files)
 
-[인간 중심의 오랜 프로세스 호출](/help/forms/developing/invoking-human-centric-long-lived.md#main-pars-text-0)
+[인간 중심의 오랜 프로세스 호출](invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 
 [웹 서비스를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md)
 
