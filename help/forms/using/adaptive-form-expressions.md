@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -45,16 +45,16 @@ JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 적응형 양식에서는 표현식을 작성하여 동적 표시/숨기기 필드 및 패널과 같은 동작을 추가할 수 있습니다. 표현식을 작성하여 계산된 필드를 추가하고, 필드를 읽기 전용으로 만들고, 유효성 검사 로직을 만드는 등 다양한 작업을 수행할 수도 있습니다. 적응형 양식은 다음 표현식을 지원합니다.
 
-* **[표현식 액세스](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**:을 클릭하여 필드를 활성화/비활성화합니다.
-* **[표현식](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**계산:to auto compute value of a field.
-* **[표현식을](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)**클릭합니다.를 클릭하여 단추의 클릭 이벤트에 대한 작업을 처리합니다.
-* **[초기화 스크립트](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p):**필드의 초기화에 대한 작업을 수행합니다.
-* **[옵션 표현식](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**:을 사용하여 드롭다운 목록을 동적으로 채웁니다.
+* **[표현식 액세스](#access-expression-enablement-expression)**:을 클릭하여 필드를 활성화/비활성화합니다.
+* **[표현식](#calculate-expression)**계산:to auto compute value of a field.
+* **[표현식을](#click-expression)**클릭합니다.를 클릭하여 단추의 클릭 이벤트에 대한 작업을 처리합니다.
+* **[초기화 스크립트](#initialization-script):**필드의 초기화에 대한 작업을 수행합니다.
+* **[옵션 표현식](#options-expression)**:을 사용하여 드롭다운 목록을 동적으로 채웁니다.
 * **[요약 표현식](#summary)**:를 사용하여 아코디언 제목을 동적으로 계산합니다.
-* **[표현식](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)**유효성 검사:to validate a field.
-* **[값 커밋 스크립트](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p):**필드의 값이 변경된 후 양식의 구성 요소를 변경합니다.
-* **[가시성 표현식](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**:to control visibility of a field and panel.
-* **[단계 완료 표현식](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**:사용자가 마법사의 다음 단계로 이동하지 못하도록 합니다.
+* **[표현식](#validate-expression)**유효성 검사:to validate a field.
+* **[값 커밋 스크립트](#value-commit-script):**필드의 값이 변경된 후 양식의 구성 요소를 변경합니다.
+* **[가시성 표현식](#visibility-expression)**:to control visibility of a field and panel.
+* **[단계 완료 표현식](#step-completion-expression)**:사용자가 마법사의 다음 단계로 이동하지 못하도록 합니다.
 
 ### 액세스 표현식(활성 표현식) {#access-expression-enablement-expression}
 
