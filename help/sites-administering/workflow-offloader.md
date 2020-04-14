@@ -10,7 +10,7 @@ topic-tags: content
 content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -54,7 +54,7 @@ Configuration Manager를 사용하여 지시선 인스턴스의 URL과 지시선
 
 ## 선도적인 인스턴스에서 워크플로우 런터 구성 {#configure-workflow-launchers-on-the-leader-instance}
 
-Dam 자산 업데이트 워크플로우 대신 선도적인 **인스턴스에서 DAM 자산** 오프로딩 워크플로우를 사용하도록 **워크플로우 런처를 구성합니다** .
+Dam 자산 업데이트 워크플로우 대신 선도적인 [!UICONTROL 인스턴스에서 DAM 자산] 오프로딩 워크플로우를 사용하도록 **워크플로우 런처를 구성합니다** .
 
 1. AEM 로고를 탭/클릭하고 도구 > **워크플로** > **** **** Launcher를 **선택하여** Workflow Launcher콘솔을엽니다.
 
@@ -65,12 +65,12 @@ Dam 자산 업데이트 워크플로우 대신 선도적인 **인스턴스에서
 
    ![chlimage_1-51](assets/chlimage_1-51a.png)
 
-1. 워크플로우 **목록에서 DAM 자산** 오프로드를 선택하고 **저장을 탭/** 클릭합니다 ****.
+1. 워크플로우 **목록에서 DAM 자산** 오프로드를 선택하고 [!UICONTROL 저장을 탭/] 클릭합니다 ****.
 
    ![chlimage_1-52](assets/chlimage_1-52a.png)
 
 1. AEM 로고를 탭/클릭하고 도구 > **워크플로우** > **모델을** 선택하여 **워크플로우** 모델 **페이지를** 엽니다.
-1. DAM 자산 **오프로드** 작업 과정을 선택하고 도구 모음에서 편집을 탭/클릭하여 **해당** 세부 사항을 표시합니다.
+1. DAM 자산 [!UICONTROL 오프로드] 작업 과정을 선택하고 도구 모음에서 편집을 탭/클릭하여 **해당** 세부 사항을 표시합니다.
 
    ![chlimage_1-53](assets/chlimage_1-53a.png)
 
