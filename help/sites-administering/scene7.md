@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: e9c64d214456eed8e0adb29edd60c2350b852a67
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -27,7 +27,7 @@ Dynamic Media Classic을 사용하려면 Dynamic Media Classic 및 AEM 자산이
 >
 >* Dynamic Media Classic의 DHTML 뷰어 플랫폼이 공식적으로 2014년 1월 31일에 종료되었습니다. 자세한 내용은 DHTML [뷰어 사용 종료 FAQ를 참조하십시오](../sites-administering/dhtml-viewer-endoflifefaqs.md).
 >* AEM에서 작동하도록 Dynamic Media Classic을 구성하기 전에 Dynamic [Media](#best-practices-for-integrating-scene-with-aem) Classic과 AEM 통합에 대한 우수 사례를 참조하십시오.
->* 사용자 지정 프록시 구성과 함께 Dynamic Media Classic을 사용하는 경우 AEM의 일부 기능이 3.x API를 사용하고 있고 일부 다른 API는 4.x API를 사용하고 있으므로 HTTP 클라이언트 프록시 구성을 모두 구성해야 합니다. 3.x는 http://localhost:4502/system/console/configMgr/com.day.commons.httpclient로 구성되며 [4.x는](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator로 [구성됩니다](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
+>* 사용자 지정 프록시 구성과 함께 Dynamic Media Classic을 사용하는 경우 AEM의 일부 기능이 3.x API를 사용하고 있고 일부 다른 API는 4.x API를 사용하고 있으므로 HTTP 클라이언트 프록시 구성을 모두 구성해야 합니다. 3.x는 http://localhost:4502/system/console/configMgr/com.day.commons.httpclient으로 구성되며 [4.x는](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator으로 [구성됩니다](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
 >
 
 
@@ -147,7 +147,7 @@ Dynamic Media와 Dynamic Media Classic을 동시에 사용하려면:
     </tr>
     <tr>
     <td>기존 Dynamic Media Classic 고객 및 자산의 새로운 기능</td>
-    <td><p>자산을 AEM에 업로드하고 Dynamic Media를 사용하여 다운로드/공유를 위한 변환을 생성합니다. 배달할 AEM 자산을 Dynamic Media Classic에 자동으로 게시합니다.</p> <p><strong></strong> 중요:AEM에서 생성된 중복 처리 및 표현물은 Dynamic Media Classic과 동기화되지 않습니다.</p> </td>
+    <td><p>자산을 AEM에 업로드하고 Dynamic Media를 사용하여 다운로드/공유를 위한 변환을 생성합니다. 배달할 AEM 자산을 Dynamic Media Classic에 자동으로 게시합니다.</p> <p><strong>중요:</strong> AEM에서 생성된 중복 처리 및 표현물은 Dynamic Media Classic과 동기화되지 않습니다.</p> </td>
     <td><p>사용</p> <p>(3단계 참조)</p> </td>
     <td>끔</td>
     <td>끔</td>
@@ -160,7 +160,7 @@ Dynamic Media와 Dynamic Media Classic을 동시에 사용하려면:
 1. (선택 사항;사용 사례 표 참조) - 자산에서 Dynamic Media Classic으로 자동 업로드를 활성화하도록 선택한 경우 다음을 추가해야 합니다.
 
    1. Dynamic Media Classic에 자동 업로드를 설정합니다.
-   1. Dam **자산 업데이트** 워크플로우 *종료의* 모든 Dynamic Media 워크플로우 단계 뒤에 Dynamic Media **Classic 업로드** 단계를추가합니다( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
+   1. Dam **자산 업데이트** 워크플로가 종료될 때 모든 Dynamic Media 워크플로우 단계 뒤에 Dynamic Media *Classic* 업로드 **단계를** 추가합니다( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
    1. (선택 사항) https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.scene7.impl. [Scene7AssetMimeTypeServiceImpl에서 MIME 유형별로 Dynamic Media Classic 자산 업로드를 제한합니다](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl). 이 목록에 없는 자산 MIME 형식은 Dynamic Media Classic 서버에 업로드되지 않습니다.
    1. (선택 사항) Dynamic Media Classic 구성에서 비디오를 설정합니다. Dynamic Media 및 Dynamic Media Classic 중 하나 또는 둘 다에 대해 비디오 인코딩을 동시에 활성화할 수 있습니다. 동적 변환은 AEM 인스턴스에서 로컬로 미리 보고 재생하는 데 사용되는 반면 Dynamic Media Classic 비디오 변환은 Dynamic Media Classic 서버에 생성되고 저장됩니다. Dynamic Media 및 Dynamic Media Classic 모두에 대한 비디오 인코딩 서비스를 설정할 때 [비디오 처리 프로필을](/help/assets/video-profiles.md) Dynamic Media Classic 자산 폴더에 적용합니다.
    1. (선택 사항) [Dynamic Media Classic에서 보안 미리 보기를 구성합니다](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
@@ -214,7 +214,7 @@ AEM과 통합되도록 Dynamic Media Classic을 구성하려면 다음 단계를
 
 1. [클라우드 구성](#creating-a-cloud-configuration-for-scene) 정의 - Dynamic Media Classic 폴더와 자산 폴더 간의 매핑을 정의합니다. 단방향(AEM Assets to Dynamic Media Classic)만 동기화하려는 경우에도 이 단계를 완료해야 합니다.
 1. [Adobe CQ **s7dam Dam Listener **](#enabling-the-adobe-cq-scene-dam-listener)활성화 - OSGi[!UICONTROL 콘솔에서]완료
-1. AEM 자산이 Dynamic Media Classic에 자동으로 업로드되도록 하려면 이 옵션을 활성화하고 DAM 자산 업데이트 워크플로우에 Dynamic Media Classic을 추가해야 합니다. 자산을 수동으로 업로드할 수도 있습니다.
+1. AEM 자산이 Dynamic Media Classic에 자동으로 업로드되도록 하려면 이 옵션을 활성화하고 DAM 자산 업데이트 [!UICONTROL 워크플로우에 Dynamic Media Classic을 추가해야 합니다] . 자산을 수동으로 업로드할 수도 있습니다.
 1. Dynamic Media Classic 구성 요소를 사이드킥에 추가합니다. 이렇게 하면 사용자가 AEM 페이지에서 Dynamic Media Classic 구성 요소를 사용할 수 있습니다.
 1. [AEM의 페이지에 구성 매핑](#enabling-scene-for-wcm) - Dynamic Media Classic에서 만든 모든 비디오 사전 설정을 보려면 이 단계가 필요합니다. CQ 대상 폴더 외부에서 Dynamic Media Classic으로 자산을 게시해야 하는 경우에도 필요합니다.
 
@@ -354,7 +354,7 @@ AEM Assets와 Dynamic Media Classic 간의 동기화를 통해 현재 다음과 
 
    ![chlimage_1-299](assets/chlimage_1-299.png)
 
-1.  저장을 **[!UICONTROL 누릅니다]**.
+1. 저장을 **[!UICONTROL 누릅니다]**.
 
 ### Dynamic Media Classic 업로드 워크플로우에 구성 가능한 시간 초과 추가 {#adding-configurable-timeout-to-scene-upload-workflow}
 
@@ -384,7 +384,7 @@ AEM 인스턴스가 Dynamic Media Classic(Scene7)을 통해 비디오 인코딩�
 
 AEM 자산에서 자동 로드를 구성하려면:
 
-1. AEM 아이콘을 누르고 배포 > 클라우드 **[!UICONTROL 서비스로]** 이동한 다음 Dynamic Media 머리글 아래의 사용 가능한 구성에서 **[!UICONTROL dms7(Dynamic Media)을 탭합니다]**
+1. AEM 아이콘을 탭하고 배포 > 클라우드 **[!UICONTROL 서비스로]** 이동한 다음 Dynamic Media 머리글 아래의 사용 가능한 구성 아래에서 **[!UICONTROL dms7(Dynamic Media)을 탭합니다]**
 1. 고급 **[!UICONTROL 탭을 누르고]** 자동 업로드 **[!UICONTROL 활성화]** 확인란을 선택한 다음 확인을 **[!UICONTROL 누릅니다]**. 이제 Dynamic Media Classic에 대한 업로드를 포함하도록 DAM 자산 워크플로우를 구성해야 합니다.
 
    >[!NOTE]
