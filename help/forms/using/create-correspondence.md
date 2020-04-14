@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -83,7 +83,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
    컨텐츠 또는 데이터 탭에서 HTML 문자 미리 보기의 왼쪽 상단에 있는 선택한 모듈 ![하이라이트( highlightselectedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png))를 탭하여 편지 미리 보기에서 관련 텍스트, 단락 또는 데이터 필드를 선택한 경우 컨텐츠/데이터 모듈로 이동하는 기능을 비활성화하거나 활성화할 수 있습니다.
 
-   통신 사용자 인터페이스의 다양한 모듈에 사용할 수 있는 작업에 대한 자세한 내용은 통신 사용자 [만들기 인터페이스에서](../../forms/using/create-letter.md#main-pars-header-9)사용할 수 있는 작업 및 정보를 참조하십시오.
+   통신 사용자 인터페이스의 다양한 모듈에 사용할 수 있는 작업에 대한 자세한 내용은 통신 사용자 [만들기 인터페이스에서](#actions-and-info-available-in-the-create-correspondence-content-tab)사용할 수 있는 작업 및 정보를 참조하십시오.
 
 1. 컨텐츠 모듈을 찾으려면 찾기 필드를 사용합니다. 콘텐트 모듈의 전체 또는 부분 이름 또는 제목을 입력하여 통신에서 검색합니다.
 1. 목록, 텍스트, 조건 또는 대상 영역 앞에 있는 표시 아이콘( ![표시](assets/display.png))을 눌러 문자에서 표시하거나 숨깁니다.
@@ -230,7 +230,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
    컨텐츠( ![highlightselectedmodulesincontentcr)에서 선택한 모듈 하이라이트를 누르면](assets/highlightselectedmodulesincontentccr.png)관련 텍스트, 단락 또는 데이터 필드를 문자 미리 보기에서 누를 때 컨텐츠 탭에서 컨텐츠 모듈을 강조 표시하는 기능을 비활성화하거나 활성화할 수 있습니다.
 
-   통신 사용자 인터페이스의 다양한 모듈에 사용할 수 있는 작업에 대한 자세한 내용은 통신 사용자 [만들기 인터페이스에서](../../forms/using/create-letter.md#main-pars-header-9)사용할 수 있는 작업 및 정보를 참조하십시오.
+   통신 사용자 인터페이스의 다양한 모듈에 사용할 수 있는 작업에 대한 자세한 내용은 통신 사용자 [만들기 인터페이스에서](#actions-and-info-available-in-the-create-correspondence-content-tab)사용할 수 있는 작업 및 정보를 참조하십시오.
 
 1. To add a page break to the letter, tap where you want to insert a page break before or Page Break After (pagebreakebreakeze before ![](assets/pagebreakbeforeafter.png)).
 
@@ -246,7 +246,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
    ![작업 영역 초안](assets/saveasdraft.png)
 
-   문자 인스턴스 ID가 있는 초안 문자 이름 대화 상자가 나타납니다. 선택적으로 이 ID를 편집할 수 있습니다. 문자 ID를 기록한 다음 완료를 **누릅니다**. 나중에 이 ID를 사용하여 [초고를](../../forms/using/submit-letter-topostprocess.md#main-pars-header-1)다시 로드할 수 있습니다.
+   문자 인스턴스 ID가 있는 초안 문자 이름 대화 상자가 나타납니다. 선택적으로 이 ID를 편집할 수 있습니다. 문자 ID를 기록한 다음 완료를 **누릅니다**. 나중에 이 ID를 사용하여 [초고를](submit-letter-topostprocess.md#reloaddraft)다시 로드할 수 있습니다.
 
 1. 정확한 레이아웃과 페이지 나누기가 포함된 분리된 PDF로 문서를 미리 보려면 ( ![미리 보기](assets/preview.png)) 미리 보기를 누릅니다.
 
@@ -315,7 +315,7 @@ Letter 인스턴스는 게시 인스턴스에 저장되고 작성자 인스턴�
 #### 첨부 파일 전달 {#attachmentdelivery}
 
 * 편지 첨부 파일은 PDF에서 게시 프로세스를 사용할 수 있으며 편지 제출 후에 만들어집니다.
-* 서신이 서버측 API를 사용하여 인터랙티브한 PDF나 비대화형 PDF로 렌더링되면 렌더링된 PDF에 첨부 파일이 PDF 첨부 파일로 포함됩니다.
+* 서신이 서버측 API를 대화형 또는 비대화형 PDF로 렌더링되면 렌더링된 PDF에 첨부 파일이 PDF 첨부 파일로 포함됩니다.
 * 서신 템플릿과 연결된 게시 프로세스가 서신 작성 사용자 인터페이스를 사용하여 전송 또는 전체 서신 작업의 일부로 로드되면 첨부 파일은 AttachmentDocs 매개 변수의 List&lt;com.adobe.idp.Document>로 전달됩니다.
 * 이메일 및 인쇄와 같은 기본 제공 메커니즘은 생성된 통신의 PDF와 함께 첨부 파일을 제공합니다.
 
