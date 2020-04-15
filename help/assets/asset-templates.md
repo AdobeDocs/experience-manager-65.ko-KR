@@ -3,12 +3,12 @@ title: 자산 템플릿
 description: AEM Assets의 자산 템플릿 및 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-# Asset templates {#asset-templates}
+# 자산 템플릿 {#asset-templates}
 
 에셋 템플릿은 디지털 및 인쇄 미디어를 위한 시각적으로 풍부한 컨텐츠를 신속하게 재활용할 수 있는 특별한 에셋입니다. 자산 템플릿에는 고정 메시징 섹션과 편집 가능한 섹션의 두 부분으로 구성되어 있습니다.
 
@@ -44,17 +44,17 @@ source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
 
 향후 캠페인을 위해 브로셔, 전단지 및 광고와 같은 디지털 인쇄 가능한 자료를 만들고 전세계에 아웃렛 스토어와 공유할 시나리오를 생각해 보십시오. 템플릿을 기반으로 한 마케팅 자료를 제작하면 모든 채널에서 일관된 고객 경험을 제공할 수 있습니다. 디자이너는 InDesign과 같은 크리에이티브 솔루션을 사용하여 캠페인 템플릿(단일 페이지 또는 다중 페이지)을 만들고 템플릿을 AEM 자산에 업로드할 수 있습니다. 자료를 만들기 전에 Adobe Experience Manager에 업로드하고 미리 사용할 수 있는 INDD 템플릿을 하나 이상 준비하십시오.
 
-1. AEM 로고를 클릭하거나 탭한 다음 자산을 클릭/탭합니다.
+1. Experience Manager 인터페이스에서 자산을 [!UICONTROL 클릭합니다].
 
 1. 옵션에서 템플릿을 **[!UICONTROL 선택합니다]**.
 
    ![chlimage_1-101](assets/chlimage_1-306.png)
 
-1. 만들기를 클릭/ **[!UICONTROL 탭한]**&#x200B;다음 메뉴에서 만들 자료를 선택합니다. 예를 들어 브로셔를 **[!UICONTROL 선택합니다]**.
+1. 만들기를 **[!UICONTROL 클릭한]**&#x200B;다음 메뉴에서 만들 자료를 선택합니다. 예를 들어 브로셔를 **[!UICONTROL 선택합니다]**.
 
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
-1. 하나 이상의 INDD 템플릿을 Experience Manager에 업로드하여 미리 사용할 수 있도록 하십시오. 브로셔에 사용할 템플릿을 선택하고 다음을 클릭/ **[!UICONTROL 탭합니다]**.
+1. 하나 이상의 INDD 템플릿을 Experience Manager에 업로드하여 미리 사용할 수 있도록 하십시오. 브로셔에 사용할 템플릿을 선택하고 [다음]을 **[!UICONTROL 클릭합니다]**.
 
    ![chlimage_1-103](assets/chlimage_1-308.png)
 
@@ -62,11 +62,11 @@ source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
-1. (선택 사항) **[!UICONTROL 태그를]** 누르고 브로셔에 대해 하나 이상의 태그를 선택합니다. 확인을 **[!UICONTROL 눌러]** 선택을 확인합니다.
+1. (선택 사항) **[!UICONTROL 태그를]** 클릭하고 브로셔에 대해 하나 이상의 태그를 선택합니다. 확인을 **[!UICONTROL 클릭하여]** 선택을 확인합니다.
 
    ![chlimage_1-105](assets/chlimage_1-310.png)
 
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 새 브로셔가 만들어졌는지 확인하는 대화 상자가 표시됩니다. 열기를 클릭/탭하여 **[!UICONTROL 브로셔를]** 편집 모드로 엽니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 새 브로셔가 만들어졌는지 확인하는 대화 상자가 표시됩니다. 열기를 **[!UICONTROL 클릭하여]** 브로셔를 편집 모드로 엽니다.
 
    <!--![chlimage_1-106](assets/.png) -->
 
@@ -81,9 +81,9 @@ source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
 1. 편집할 자료를 열려면 다음 중 하나를 수행합니다.
 
    * 자료 만들기의 7단계에서 만든 자료(이 경우 브로셔) [를](/help/assets/asset-templates.md#creating-a-collateral)엽니다.
-   * 템플릿 페이지에서 자료를 만든 폴더로 이동한 다음 자료 축소판에서 빠른 편집 작업을 클릭/탭합니다.
-   * 자료의 자산 페이지에서 도구 **[!UICONTROL 모음에서 편집을]** 누릅니다.
-   * 자료를 선택하고 도구 **[!UICONTROL 모음에서 편집을]** 누릅니다.
+   * 템플릿 페이지에서 자료를 만든 폴더로 이동한 다음 [!UICONTROL 담보의] 축소판에서 빠른 편집 작업을 클릭합니다.
+   * 자료의 자산 페이지에서 도구 모음에서 **[!UICONTROL 편집을]** 클릭합니다.
+   * 자료를 선택하고 도구 **[!UICONTROL 모음에서 편집을]** 클릭합니다.
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
    자산 파인더와 텍스트 편집기가 페이지 왼쪽에 표시됩니다. 텍스트 편집기는 기본적으로 열립니다.
@@ -102,17 +102,17 @@ source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
    >
    >AEM 인스턴스가 InDesign 서버와 통합되어 AEM Assets가 InDesign 템플릿에서 데이터를 추출하고 이를 편집할 수 있도록 하려면 필요합니다. 자세한 내용은 AEM [자산과 InDesign Server 통합을 참조하십시오](/help/assets/indesign.md).
 
-1. 편집 가능한 필드의 텍스트를 수정하려면 편집 가능한 필드 목록에서 텍스트 필드를 클릭/탭하고 필드의 텍스트를 편집합니다.
+1. 편집 가능한 필드의 텍스트를 수정하려면 편집 가능한 필드 목록에서 텍스트 필드를 클릭하고 필드의 텍스트를 편집합니다.
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
    제공된 옵션을 사용하여 글꼴 스타일, 색상, 크기 등 텍스트 속성을 편집할 수 있습니다.
 
-1. 미리 **[!UICONTROL 보기를]** 눌러 텍스트 변경 사항을 미리 봅니다.
+1. 미리 **[!UICONTROL 보기를]** 클릭하여 텍스트 변경 내용을 미리 봅니다.
 
    ![chlimage_1-112](assets/chlimage_1-317.png)
 
-1. 이미지를 교체하려면 자산 **[!UICONTROL 파인더를 누릅니다]**.
+1. 이미지를 교체하려면 자산 파인더를 **[!UICONTROL 클릭합니다]**.
 
    ![chlimage_1-113](assets/chlimage_1-318.png)
 
@@ -124,7 +124,7 @@ source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
-1. 미리 **[!UICONTROL 보기를]** 눌러 이미지를 미리 봅니다.
+1. 미리 **[!UICONTROL 보기를]** 클릭하여 이미지를 미리 봅니다.
 
    ![chlimage_1-116](assets/chlimage_1-321.png)
 
@@ -132,7 +132,7 @@ source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
 
    ![chlimage_1-117](assets/chlimage_1-322.png)
 
-1. 도구 **[!UICONTROL 모음에서]** 미리 보기를 눌러 모든 변경 사항을 미리 봅니다. 완료를 클릭/ **[!UICONTROL 탭하여]** 편집 변경 내용을 자료에 저장합니다.
+1. 도구 **[!UICONTROL 모음에서]** 미리 보기를 클릭하여 모든 변경 내용을 미리 봅니다. 완료를 **[!UICONTROL 클릭하여]** 마케팅 자료의 편집 변경 내용을 저장합니다.
 
    >[!NOTE]
    >
@@ -146,30 +146,32 @@ source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
    >    * InDesign 템플릿을 만들 때 이미지 포함(링크 및 [포함된 그래픽](https://helpx.adobe.com/indesign/using/graphics-links.html)참조)
    >    * AEM을 로컬 파일 시스템에 마운트한 다음 누락된 아이콘을 기존 AEM 자산에 매핑합니다.
    >
-   >InDesign 문서 작업에 대한 자세한 내용은 AEM에서 [InDesign 문서 작업 우수 사례를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >InDesign 문서 작업에 대한 자세한 내용은 AEM에서 InDesign [문서 작업에 대한 우수 사례를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. 브로셔에 대한 PDF 변환을 생성하려면 대화 상자에서 Acrobat 옵션을 선택한 다음 계속을 **[!UICONTROL 클릭합니다]**.
 1. 시작한 폴더에 자료가 만들어집니다. 변환을 보려면, 자료를 열고 GlobalNav **[!UICONTROL 목록에서]** 표현물을 선택합니다.
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
-1. 변환 목록에서 PDF 변환을 클릭/탭하여 PDF 파일을 다운로드합니다. PDF 파일을 열어 자료를 검토합니다.
+1. 변환 목록에서 PDF 변환을 클릭하여 PDF 파일을 다운로드합니다. PDF 파일을 열어 자료를 검토합니다.
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
 ## 자료 병합 {#merge-collateral}
 
-1. AEM 로고를 클릭하거나 탭한 다음 탐색 페이지에서 자산을 클릭/탭합니다.
+1. Experience Manager 인터페이스에서 탐색 [!UICONTROL 페이지에서] 자산을 클릭합니다.
+
 1. 옵션에서 템플릿을 **[!UICONTROL 선택합니다]**.
-1. 만들기를 클릭/ **[!UICONTROL 탭하고]** 메뉴에서 **[!UICONTROL 병합을]** 선택합니다.
+
+1. 만들기를 **[!UICONTROL 클릭하고]** 메뉴에서 **[!UICONTROL 병합을]** 선택합니다.
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. 템플릿 병합 [!UICONTROL 페이지에서] 병합을 **[!UICONTROL 누릅니다]**.
+1. 템플릿 병합 [!UICONTROL 페이지에서] 병합을 **[!UICONTROL 클릭합니다]**.
 
    ![chlimage_1-121](assets/chlimage_1-326.png)
 
-1. 병합할 담보의 위치로 이동하고 병합할 담보의 축소판을 클릭/탭하여 선택합니다.
+1. 병합할 담보의 위치로 이동하고 병합할 담보의 축소판을 클릭하여 선택합니다.
 
    ![chlimage_1-122](assets/chlimage_1-327.png)
 
@@ -185,16 +187,16 @@ source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
-1. 도구 모음에서 **[!UICONTROL 다음을]** 클릭/탭합니다.
-1. 미리 **[!UICONTROL 보기 및 순서]** 변경 화면에서 필요한 경우 템플릿을 다시 정렬하고 병합할 템플릿 선택을 미리 봅니다. 그런 다음 도구 모음에서 **[!UICONTROL 다음을]** 클릭/탭합니다.
+1. 도구 **[!UICONTROL 모음에서]** 다음을 클릭합니다.
+1. 미리 **[!UICONTROL 보기 및 순서]** 변경 화면에서 필요한 경우 템플릿을 다시 정렬하고 병합할 템플릿 선택을 미리 봅니다. 그런 다음 도구 **[!UICONTROL 모음에서]** 다음을 클릭합니다.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. 템플릿 구성 화면에서 담보의 이름을 지정합니다. 원하는 경우, 적절하다고 생각하는 태그를 지정합니다. PDF 형식으로 출력을 내보내려면 Acrobat **(.PDF)** 옵션을 선택합니다. 기본적으로 자료는 JPG 및 InDesign 형식으로 내보내집니다. 다중 페이지 자료에 대한 표시 축소판을 변경하려면 축소판 변경을 클릭/ **[!UICONTROL 탭합니다]**.
+1. 템플릿 [!UICONTROL 구성] 화면에서 담보의 이름을 지정합니다. 원하는 경우, 적절하다고 생각하는 태그를 지정합니다. PDF 형식으로 출력을 내보내려면 Acrobat **[!UICONTROL (.PDF)]**&#x200B;을 선택합니다. 기본적으로 자료는 JPG 및 InDesign 형식으로 내보내집니다. 다중 페이지 자료에 대한 표시 축소판을 변경하려면 [축소판 변경] **[!UICONTROL 을 클릭합니다]**.
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 
-1. 저장을 클릭/탭한 **[!UICONTROL 다음]** 대화 **[!UICONTROL 상자에서]** 확인을 클릭/탭하여 대화 상자를 닫습니다. 여러 페이지로 구성된 자료는 처음 시작한 폴더에 만들어집니다.
+1. 저장을 **[!UICONTROL 클릭한]** 다음 **[!UICONTROL 대화]** 상자에서확인을 클릭하여 대화 상자를 닫습니다. 여러 페이지로 구성된 자료는 처음 시작한 폴더에 만들어집니다.
 
    >[!NOTE]
    >
