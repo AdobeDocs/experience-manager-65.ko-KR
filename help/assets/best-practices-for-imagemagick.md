@@ -1,14 +1,14 @@
 ---
-title: AEM 자산에서 작동하도록 ImageMagick 설치 및 구성
+title: AEM Assets에서 작동하도록 ImageMagick 설치 및 구성
 description: ImageMagick 소프트웨어에 대한 자세한 내용, 설치 방법, 명령줄 프로세스 단계 설정, 이미지 축소판 편집, 작성 및 생성 방법 등을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-# AEM 자산에서 작동하도록 ImageMagick 설치 및 구성{#install-and-configure-imagemagick-to-work-with-aem-assets}
+# AEM Assets에서 작동하도록 ImageMagick 설치 및 구성{#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick은 비트맵 이미지를 생성, 편집, 구성 또는 변환할 수 있는 소프트웨어 플러그인입니다. PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF 및 SVG를 비롯한 다양한 형식(200개 이상)으로 이미지를 읽고 쓸 수 있습니다. ImageMagick을 사용하여 이미지 크기 조정, 대칭 이동, 회전, 왜곡, 기울이기 및 변형 또한 ImageMagick을 사용하여 이미지 색상을 조정하거나 다양한 특수 효과를 적용하거나 텍스트, 선, 다각형, 타원 및 곡선을 그릴 수 있습니다.
 
@@ -34,7 +34,7 @@ ImageMagick을 사용하여 대용량 파일을 처리하려면 일반적인 메
 
 특정 사용 사례에 대해 명령줄 프로세스 단계를 설정할 수 있습니다. AEM 서버에 JPEG 이미지 파일을 추가할 때마다 뒤집힌 이미지 및 축소판(140x100, 48x48, 319x319 및 1280x1280)을 생성하려면 다음 단계를 수행하십시오 `/content/dam` .
 
-1. AEM 서버에서 워크플로우 콘솔()로 이동하여 DAM 자산 `https://[*AEM server*]:[*Port*]/workflow`업데이트 워크플로우 모델을 **** 엽니다.
+1. AEM 서버에서 워크플로우 콘솔(`https://[aem_server]:[port]/workflow`)로 이동하여 DAM 자산 **[!UICONTROL 업데이트 워크플로우 모델을]** 엽니다.
 1. DAM 자산 **[!UICONTROL 업데이트]** 워크플로우 모델에서 EPS **[!UICONTROL 축소판(ImageMagick 제공)]** 단계를 엽니다.
 1. 인수 **[!UICONTROL 탭에서]** MIME 유형 `image/jpeg` 목록에 **[!UICONTROL 추가합니다]** .
 
@@ -48,11 +48,11 @@ ImageMagick을 사용하여 대용량 파일을 처리하려면 일반적인 메
 
    ![select_flags](assets/select_flags.png)
 
-1. [웹 **[!UICONTROL 사용 이미지]** ] 탭에서 1280x1280픽셀의 변환 세부 사항을 지정합니다. 또한&#x200B;*이미지/jpeg* 상자를 **[!UICONTROL 지정합니다]** .
+1. [웹 **[!UICONTROL 사용 이미지]** ] 탭에서 1280x1280픽셀의 변환 세부 사항을 지정합니다. 또한 Mimetype `image/jpeg` 상자에 **[!UICONTROL 지정합니다]** .
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Tap/click **[!UICONTROL OK]** to save the changes.
+1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 변경 사항을 저장합니다.
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ ImageMagick을 사용하여 대용량 파일을 처리하려면 일반적인 메
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. 웹 **[!UICONTROL 사용 이미지]** 탭에서 목록 `image/jpeg` 건너뛰기 아래에 MIME 유형을 **[!UICONTROL 추가합니다]**. Tap/click **[!UICONTROL OK]** to save the changes.
+1. 웹 **[!UICONTROL 사용 이미지]** 탭에서 목록 `image/jpeg` 건너뛰기 아래에 MIME 유형을 **[!UICONTROL 추가합니다]**. **[!UICONTROL 확인]**&#x200B;을 클릭하여 변경 사항을 저장합니다.
 
    ![web_enabled](assets/web_enabled.png)
 
