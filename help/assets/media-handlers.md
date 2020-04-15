@@ -1,18 +1,18 @@
 ---
-title: 미디어 핸들러 및 워크플로우를 사용하여 에셋 처리
+title: 미디어 핸들러 및 워크플로우를 사용하여 자산 처리
 description: 미디어 핸들러와 워크플로우를 사용하여 디지털 자산에 대한 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: b600e5eaf7c61568f2559b3fb4915d433f5e13bf
 
 ---
 
 
-# 미디어 핸들러 및 워크플로우를 사용하여 에셋 처리 {#processing-assets-using-media-handlers-and-workflows}
+# 미디어 핸들러 및 워크플로우를 사용하여 자산 처리 {#processing-assets-using-media-handlers-and-workflows}
 
-AEM(Adobe Experience Manager) 자산은 자산을 처리하기 위한 기본 워크플로우 및 미디어 핸들러 세트와 함께 제공됩니다. 워크플로우는 자산에서 실행할 일반 작업을 정의한 다음 축소판 생성 또는 메타데이터 추출 등의 미디어 핸들러에 특정 작업을 위임합니다.
+AEM(Adobe Experience Manager) 자산은 자산을 처리하기 위한 기본 워크플로우 및 미디어 핸들러 세트와 함께 제공됩니다. 워크플로우는 자산에서 실행할 작업을 정의한 다음 축소판 생성 또는 메타데이터 추출 등의 미디어 핸들러에 특정 작업을 위임합니다.
 
-특정 유형의 자산이 서버에 업로드될 때 자동으로 실행되도록 워크플로우를 정의할 수 있습니다. 처리 단계는 일련의 AEM Assets 미디어 핸들러에 대해 정의됩니다. AEM에서는 일부 [내장 핸들러를 제공하며,](#default-media-handlers) 추가 핸들러는 [명령줄 도구로](#creating-a-new-media-handler) 프로세스를 위임하여 [사용자 정의 개발](#command-line-based-media-handler)또는 정의될 수 있습니다.
+특정 MIME 유형의 자산이 업로드될 때 워크플로우를 자동으로 실행하도록 구성할 수 있습니다. 처리 단계는 일련의 AEM Assets 미디어 핸들러에 대해 정의됩니다. AEM에서는 일부 [내장 핸들러를 제공하며,](#default-media-handlers) 추가 핸들러는 [명령줄 도구로](#creating-a-new-media-handler) 프로세스를 위임하여 [사용자 정의 개발](#command-line-based-media-handler)또는 정의될 수 있습니다.
 
 미디어 처리기는 자산에 대한 특정 작업을 수행하는 AEM 자산 내의 서비스입니다. 예를 들어 MP3 오디오 파일이 AEM에 업로드되면 워크플로우는 메타데이터를 추출하고 축소판을 생성하는 MP3 핸들러를 트리거합니다. 미디어 핸들러는 일반적으로 워크플로우와 함께 사용됩니다. 대부분의 일반적인 MIME 유형은 AEM 내에서 지원됩니다. 워크플로우 확장/생성, 미디어 핸들러 확장/생성 또는 미디어 핸들러를 비활성화/활성화하여 자산에서 특정 작업을 수행할 수 있습니다.
 
@@ -29,33 +29,33 @@ AEM(Adobe Experience Manager) 자산은 자산을 처리하기 위한 기본 워
 
 | 처리기 이름 | 서비스 이름(시스템 콘솔 내) | 지원되는 MIME 유형 |
 |---|---|---|
-| [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
-| [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>응용 프로그램/illustrator</li></ul> |
-| [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg |
-| [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
-| [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | 이미지/그림 |
-| [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>애플리케이션/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
-| [!UICONTROL MSOfficeHandler] | com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler | application/msword |
-| [!UICONTROL MSP 파섹] | com.day.cq.dam.handler.standard.msoffice.MSPopowerPointHandler | application/vnd.ms-powerpoint |
-| [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
-| [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
-| [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | 에셋에서 데이터를 추출할 다른 처리기가 없는 경우 폴백 |
+| [!UICONTROL TextHandler] | `com.day.cq.dam.core.impl.handler.TextHandler` | text/plain |
+| [!UICONTROL PdfHandler] | `com.day.cq.dam.handler.standard.pdf.PdfHandler` | <ul><li>application/pdf</li><li>응용 프로그램/illustrator</li></ul> |
+| [!UICONTROL JpegHandler] | `com.day.cq.dam.core.impl.handler.JpegHandler` | image/jpeg |
+| [!UICONTROL Mp3Handler] | `com.day.cq.dam.handler.standard.mp3.Mp3Handler` | audio/mpeg |
+| [!UICONTROL ZipHandler] | `com.day.cq.dam.handler.standard.zip.ZipHandler` | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
+| [!UICONTROL PictHandler] | `com.day.cq.dam.handler.standard.pict.PictHandler` | 이미지/그림 |
+| [!UICONTROL StandardImageHandler] | `com.day.cq.dam.core.impl.handler.StandardImageHandler` | <ul><li>image/gif </li><li> image/png </li> <li>애플리케이션/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
+| [!UICONTROL MSOfficeHandler] | `com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler` | application/msword |
+| [!UICONTROL MSP 파섹] | `com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler` | application/vnd.ms-powerpoint |
+| [!UICONTROL OpenOfficeHandler] | `com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler` | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
+| [!UICONTROL EPubHandler] | `com.day.cq.dam.handler.standard.epub.EPubHandler` | application/epub+zip |
+| [!UICONTROL GenericAssetHandler] | `com.day.cq.dam.core.impl.handler.GenericAssetHandler` | 에셋에서 데이터를 추출할 다른 처리기가 없는 경우 폴백 |
 
 모든 핸들러는 다음 작업을 수행합니다.
 
 * 자산에서 사용 가능한 모든 메타데이터를 추출합니다.
-* 자산에서 축소판 이미지 만들기
+* 자산의 축소판 이미지 만들기
 
-활성 미디어 핸들러를 볼 수 있습니다.
+활성 미디어 핸들러를 보려면:
 
 1. In your browser, navigate to `http://localhost:4502/system/console/components`.
-1. 링크를 `com.day.cq.dam.core.impl.store.AssetStoreImpl`클릭합니다.
+1. 클릭 `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. 모든 활성 미디어 핸들러가 있는 목록이 표시됩니다. 예:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## 워크플로우의 미디어 핸들러를 사용하여 자산 작업 수행 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## 워크플로우의 미디어 핸들러를 사용하여 에셋에 대한 작업 수행 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 미디어 처리기는 일반적으로 워크플로우와 함께 사용되는 서비스입니다.
 
@@ -76,7 +76,7 @@ Apache Felix Web Management Console을 통해 미디어 핸들러를 비활성�
 1. 페이지를 새로 고칩니다.비활성화되었음을 나타내는 아이콘이 미디어 처리기 옆에 표시됩니다.
 1. 미디어 핸들러를 활성화하려면 미디어 **[!UICONTROL 핸들러의]** 이름 옆에 있는 활성화를 클릭합니다.
 
-### 새 미디어 처리기 만들기 {#creating-a-new-media-handler}
+### 새 미디어 핸들러 만들기 {#creating-a-new-media-handler}
 
 새 미디어 유형을 지원하거나 자산에서 특정 작업을 실행하려면 새 미디어 핸들러를 만들어야 합니다. 이 섹션에서는 진행 방법에 대해 설명합니다.
 
@@ -94,7 +94,9 @@ Apache Felix Web Management Console을 통해 미디어 핸들러를 비활성�
 
 다음은 예제 템플릿입니다.
 
-`package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts } `
+```Java
+package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts }
+```
 
 인터페이스와 클래스에는 다음이 포함됩니다.
 
@@ -153,10 +155,10 @@ Maven [플러그인으로 Eclipse를](../sites-developing/dev-tools.md) 설치 �
       * 컴파일러 규격 수준
       * 생성된 .class 파일 호환성
       * 소스 호환성
-   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 대화 상자 창에서 예를 클릭합니다.
+   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 대화 상자 창에서 예를 **[!UICONTROL 클릭합니다]**.
 
 
-1. pom.xml 파일의 코드를 다음 코드로 바꿉니다.
+1. 파일의 코드를 `pom.xml` 다음 코드로 바꿉니다.
 
    ```xml
    <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
@@ -426,12 +428,12 @@ Maven [플러그인으로 Eclipse를](../sites-developing/dev-tools.md) 설치 �
 
 1. Java 클래스를 컴파일하고 번들을 만듭니다.
 
-   1. myBundle 프로젝트를 마우스 오른쪽 단추로 클릭하고 실행 **[!UICONTROL 형식]**, Maven **[!UICONTROL 설치 순으로 선택합니다]**.
+   1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 다른 이름으로 실행 `myBundle` , **[!UICONTROL Maven 설치를]**&#x200B;선택합니다 ****.
    1. 번들 `myBundle-0.0.1-SNAPSHOT.jar` (컴파일된 클래스 포함)은 에서 `myBundle/target`만들어집니다.
 
 1. CRX 탐색기에서 아래에 새 노드를 만듭니다 `/apps/myApp`. 이름 = `install`, 유형 = `nt:folder`입니다.
 1. 번들을 `myBundle-0.0.1-SNAPSHOT.jar` 복사하여 WebDAV와 `/apps/myApp/install` 같이 아래에 저장합니다. 이제 AEM에서 새 텍스트 처리기가 활성화됩니다.
-1. 브라우저에서 Apache Felix 웹 관리 콘솔을 엽니다. 구성 요소 탭을 선택하고 기본 텍스트 핸들러를 비활성화합니다 `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. 브라우저에서 Apache Felix Web [!UICONTROL Management Console을 엽니다]. 구성 요소 [!UICONTROL 탭을] 선택하고 기본 텍스트 핸들러를 `com.day.cq.dam.core.impl.handler.TextHandler`비활성화합니다.
 
 ## 명령줄 기반 미디어 처리기 {#command-line-based-media-handler}
 
@@ -439,10 +441,10 @@ AEM을 사용하면 워크플로우 내에서 명령줄 도구를 실행하여 �
 
 다음 변환은 AEM Assets 내에서 자동으로 실행 및 저장할 수 있습니다.
 
-* ImageMagick 및 Ghostscript를 사용한 [EPS](https://www.imagemagick.org/script/index.php) 및 [AI 변환](https://www.ghostscript.com/)
-* FFmpeg를 사용한 FLV 비디오 [트랜스코딩](https://ffmpeg.org/)
-* LAME를 사용한 MP3 [인코딩](http://lame.sourceforge.net/)
-* SOX를 사용한 오디오 [처리](http://sox.sourceforge.net/)
+* ImageMagick과 Ghostscript를 사용하여 EPS 및 [AI](https://www.imagemagick.org/script/index.php) 변형을 [수행할 수 있습니다](https://www.ghostscript.com/).
+* FFmpeg를 사용하여 FLV 비디오 [트랜스코딩](https://ffmpeg.org/).
+* LAME를 사용한 MP3 [인코딩](http://lame.sourceforge.net/).
+* SOX를 사용한 오디오 [처리](http://sox.sourceforge.net/).
 
 >[!NOTE]
 >
@@ -500,9 +502,9 @@ AEM을 사용하면 워크플로우 내에서 명령줄 도구를 실행하여 �
 
 #### CommandLineProcess 프로세스 단계 구성 {#configuring-the-commandlineprocess-process-step}
 
-이 섹션에서는 CommandLineProcess의 **프로세스 인수를** 설정하는 방법에 대해 **설명합니다**.
+이 섹션에서는 CommandLineProcess의 [!UICONTROL 프로세스 인수를] 설정하는 방법에 대해 [!UICONTROL 설명합니다].
 
-프로세스 인수의 **값은** 쉼표로 구분해야 하며 공백으로 시작할 수 없습니다.
+쉼표를 사용하여 프로세스 [!UICONTROL 인수의] 값을 구분하고 공백으로 시작하지 마십시오.
 
 | 인수 형식 | 설명 |
 |---|---|
@@ -510,20 +512,25 @@ AEM을 사용하면 워크플로우 내에서 명령줄 도구를 실행하여 �
 | tn:&lt;width>:&lt;height> | 선택적 인수입니다. 그러면 인수에 정의된 치수로 축소판이 만들어집니다. <br>여러 축소판을 정의할 수 있습니다. |
 | cmd:&lt;command> | 실행할 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 하나의 명령만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다<br>`${filename}`.입력 파일의 이름(예: original.jpg) <br> `${file}`:입력 파일의 전체 경로 이름(예: /tmp/cqdam0816.tmp/original.jpg) <br> `${directory}`:입력 파일의 디렉토리(예: /tmp/cqdam0816.tmp <br>`${basename}`:입력 파일의 확장자가 없는 이름(예: 원본 <br>`${extension}`:입력 파일의 확장자(예: jpg) |
 
-예를 들어 ImageMagick이 AEM 서버를 호스팅하는 디스크에 설치되어 있고 CommandLineProcess를 구현으로 사용하여 프로세스 단계를 만드는 경우 **다음** 값을 프로세스 인수로 **지정합니다**.
+예를 들어 ImageMagick이 AEM 서버를 호스팅하는 디스크에 설치되어 있고 CommandLineProcess를 구현으로 사용하여 프로세스 단계를 만드는 경우 [!UICONTROL 다음] 값을 프로세스 인수로 [!UICONTROL 지정합니다].
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
 그런 다음 워크플로우가 실행되면 이 단계는 이미지/gif 또는 mime:image/tiff가 있는 에셋에만 적용되며, 전환된 원본 이미지를 만들어 .jpg로 변환하고 크기가 작은 세 개의 축소판을 만듭니다.140x100, 48x48 및 10x250.
 
-ImageMagick을 **사용하여 다음** 프로세스 인수를 사용하여 세 개의 표준 축소판을 만듭니다.
+ImageMagick을 [!UICONTROL 사용하여 다음] 프로세스 인수를 사용하여 세 개의 표준 축소판을 만듭니다.
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-ImageMagick을 **사용하여 웹** 지원 변환을 만들려면 다음 프로세스 인수를 사용합니다.
+ImageMagick을 [!UICONTROL 사용하여 웹] 지원 변환을 만들려면 다음 프로세스 인수를 사용합니다.
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
 >[!NOTE]
 >
->CommandLineProcess **단계는** 자산의 자산(유형 노드 `dam:Asset`) 또는 하위 요소에만 적용됩니다.
+>CommandLineProcess [!UICONTROL 단계는] 자산의 자산(유형 노드 `dam:Asset`) 또는 하위 요소에만 적용됩니다.
+
+>[!MORELIKETHIS]
+>
+>* [자산 처리](assets-workflow.md)
+
