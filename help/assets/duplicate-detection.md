@@ -3,7 +3,7 @@ title: 중복 에셋 감지 활성화
 description: AEM 파섹
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -14,7 +14,7 @@ AEM(Adobe Experience Manager) 자산에 있는 자산을 업로드하려고 하�
 
 1. 액세스하여 AEM 웹 콘솔 구성 페이지를 엽니다 `https://[aem_server]:[port]/system/console/configMgr`.
 1. servlet Day CQ DAM 자산 **[!UICONTROL 생성 구성]**&#x200B;편집
-1. 복제 **[!UICONTROL 검색]** 옵션을 선택하고 저장을 클릭/ **[!UICONTROL 탭합니다]**.
+1. 복제 **[!UICONTROL 검색]** 옵션을 선택하고 저장을 **[!UICONTROL 클릭합니다]**.
 
    ![서블릿에서 중복 검색 옵션을 선택합니다.](assets/chlimage_1-377.png)
 
