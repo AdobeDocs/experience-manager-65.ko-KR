@@ -3,12 +3,12 @@ title: 메타데이터 프로필을 사용하여 자산의 메타데이터 요�
 description: 자산에 대한 메타데이터 프로파일에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9658fbf8c918b9051a35e7477afa01af7722a662
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-# Metadata profiles {#metadata-profiles}
+# 메타데이터 프로필 {#metadata-profiles}
 
 메타데이터 프로필을 사용하면 폴더 내의 자산에 기본 메타데이터를 적용할 수 있습니다. 메타데이터 프로필을 만들어 폴더에 적용합니다. 이후에 폴더에 업로드한 모든 자산은 메타데이터 프로필에 구성된 기본 메타데이터를 상속받습니다.
 
@@ -25,14 +25,14 @@ source-git-commit: 9658fbf8c918b9051a35e7477afa01af7722a662
 
    설명 구성 요소에 대해 다음 속성을 **[!UICONTROL 편집합니다]** .
 
-   * **[!UICONTROL 필드]** 레이블 - 메타데이터 속성의 표시 이름입니다. 사용자 참조용입니다.
+   * **[!UICONTROL 필드 레이블]**:메타데이터 속성의 표시 이름입니다. 사용자 참조용입니다.
 
-   * **[!UICONTROL 속성에 매핑]** - 이 속성의 값은 저장소에 저장된 자산 노드의 상대 경로/이름을 제공합니다. 이 값은 경로가 자산의 노드 아래에 `./` 있음을 나타내므로 항상 다음으로 시작해야 합니다.
+   * **[!UICONTROL 속성에 매핑]**:이 속성의 값은 저장소에 저장된 자산 노드의 상대 경로/이름을 제공합니다. 이 값은 경로가 자산의 노드 아래에 `./` 있음을 나타내므로 항상 다음으로 시작해야 합니다.
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
    속성에 **[!UICONTROL 매핑에 지정하는]** 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 를 지정하는 경우 `/jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, AEM Assets stores the value `dc:desc` at the asset&#39;s metadata node.
 
-   * **[!UICONTROL 기본값]** - 이 속성을 사용하여 메타데이터 구성 요소의 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 `dc:desc` 노드의 속성에 할당됩니다.
+   * **[!UICONTROL 기본값]**:이 속성을 사용하여 메타데이터 구성 요소의 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 `dc:desc` 노드의 속성에 할당됩니다.
    ![chlimage_1-200](assets/chlimage_1-483.png)
 
    >[!NOTE]
@@ -86,7 +86,7 @@ source-git-commit: 9658fbf8c918b9051a35e7477afa01af7722a662
 
 프로필이 할당된 폴더는 카드 이름에 나타나는 프로필의 이름으로 사용자 인터페이스에 표시됩니다.
 
-![chlimage_1-205](assets/chlimage_1-489.png)
+![chlimage_1-206](assets/chlimage_1-489.png)
 
 메타데이터 프로필을 특정 폴더에 적용하거나 모든 자산에 전체적으로 적용할 수 있습니다.
 
