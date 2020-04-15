@@ -1,24 +1,24 @@
 ---
-title: AEM 자산의 검색 기능 확장
-description: AEM 자산의 검색 기능을 기본값 이상으로 확장합니다.
+title: Adobe Experience Manager Assets의 검색 기능 확장
+description: Adobe Experience Manager Assets의 검색 기능을 기본값 이상으로 확장할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
 # 자산 검색 확장 {#extending-assets-search}
 
-AEM(Adobe Experience Manager) 자산 검색 기능을 확장할 수 있습니다. 기본적으로 AEM Assets는 문자열별로 자산을 검색합니다.
+검색 기능을 확장할 수 [!DNL Adobe Experience Manager Assets] 있습니다. 기본적으로 [!DNL Experience Manager Assets] 문자열별로 자산을 검색합니다.
 
 검색은 QueryBuilder 인터페이스를 통해 수행되므로 여러 조건자로 검색을 사용자 정의할 수 있습니다. 다음 디렉토리에 기본 예측 세트를 오버레이할 수 있습니다. `/apps/dam/content/search/searchpanel/facets`Adobe
 
-AEM 자산 관리 패널에 탭을 추가할 수도 있습니다.
+또한 [!DNL Assets] 관리 패널에 탭을 추가할 수도 있습니다.
 
 >[!CAUTION]
 >
->AEM 6.4부터 클래식 UI는 더 이상 사용되지 않습니다. 자세한 내용은 더 이상 사용되지 [않음 및 제거된 기능을](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)참조하십시오. 터치 지원 UI를 사용하는 것이 좋습니다. 사용자 정의에 대해서는 검색 패싯 [을 참조하십시오](/help/assets/search-facets.md).
+>6.4 [!DNL Experience Manager] 부터 클래식 UI는 더 이상 사용되지 않습니다. 자세한 내용은 더 이상 사용되지 [않음 및 제거된 기능을](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)참조하십시오. Adobe에서는 터치 지원 UI를 사용하는 것이 좋습니다. 사용자 정의에 대해서는 검색 패싯 [을 참조하십시오](/help/assets/search-facets.md).
 
 ## 오버레이 {#overlaying}
 
@@ -29,7 +29,6 @@ AEM 자산 관리 패널에 탭을 추가할 수도 있습니다.
 >[!NOTE]
 >
 >기본적으로 /의 디렉토리 구조가 존재하지 `apps` 않으므로 만들어야 합니다. 노드 유형이 / 아래의 유형과 일치하는지 `libs`확인합니다.
-
 
 ## 탭 추가 {#adding-tabs}
 
@@ -44,7 +43,7 @@ AEM 자산 관리에서 검색 탭을 구성하여 추가 검색 탭을 추가�
 
 ## 사용자 정의 설명 만들기 {#creating-custom-predicates}
 
-AEM Assets에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 예측 세트가 포함되어 있습니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [만들기 및 구성에서 다룹니다](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Assets] 에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 예측 세트가 포함되어 있습니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [만들기 및 구성에서](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)다룹니다.
 
 AEM 개발자는 기존 조건자를 사용하는 것 외에도 쿼리 빌더 API를 사용하여 고유한 조건자를 만들 [수 있습니다](/help/sites-developing/querybuilder-api.md).
 
