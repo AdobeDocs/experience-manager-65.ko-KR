@@ -3,7 +3,7 @@ title: 디지털 자산 권한 관리
 description: AEM 파섹
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -63,7 +63,7 @@ source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. 만료 상태 **[!UICONTROL 옵션을 클릭/탭하여]** 확장합니다.
+1. 만료 **[!UICONTROL 상태]** 옵션을 클릭하여 확장합니다.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -105,7 +105,7 @@ AEM(Adobe Experience Manager) 자산의 자산 콘솔은 자산에 대한 다양
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. 도구 **[!UICONTROL 모음에서]** 게시를 누릅니다. 도구 모음에 [게시] **가** 표시되지 않는 경우 도구 모음에서 **[!UICONTROL [자세히]** ] **[!UICONTROL 를]** 탭하고 [게시]옵션을 찾습니다.
+1. 도구 **[!UICONTROL 모음에서]** 게시를 클릭합니다. 도구 모음에 [게시] **가** 표시되지 않으면 도구 모음에서 [자세히 **]** 를 **[!UICONTROL 클릭하고 [게시]** ]옵션을 찾습니다.
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -114,7 +114,7 @@ AEM(Adobe Experience Manager) 자산의 자산 콘솔은 자산에 대한 다양
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. 자산 UI에서 자산을 선택하고 속성을 눌러 **[!UICONTROL 자산]** 세부 사항 페이지를 표시합니다.
+1. 자산 인터페이스에서 자산을 선택하고 속성을 클릭하여 **[!UICONTROL 자산]** 세부 사항 페이지를 표시합니다.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -136,16 +136,16 @@ AEM(Adobe Experience Manager) 자산의 자산 콘솔은 자산에 대한 다양
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. 상태에 따라 자산을 검색하려면 검색을 눌러 **[!UICONTROL Omniture]** 막대를 표시합니다.
+1. 상태를 기반으로 자산을 검색하려면 검색을 클릭하여 **[!UICONTROL Omniture]** 막대를 표시합니다.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Return 키를 누른 다음 **[!UICONTROL GlobalNav를]** 눌러 검색 패널을 표시합니다.
-1. 검색 패널에서 게시 상태를 탭/클릭하고 **[!UICONTROL 게시됨을]** 선택하여 **[!UICONTROL AEM]** 자산에서 게시된 자산을 검색합니다.
+1. Return 키를 누른 다음 **[!UICONTROL GlobalNav를]** 클릭하여 검색 패널을 표시합니다.
+1. 검색 패널에서 게시 **[!UICONTROL 상태를 클릭하고]** 게시됨을 선택하여 **[!UICONTROL AEM]** 자산에서 게시된 자산을 검색합니다.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. 승인 상태를 탭/ **[!UICONTROL 클릭하고]** 해당 옵션을 클릭하여 승인되거나 거부된 자산을 검색합니다.
+1. 승인 **[!UICONTROL 상태를]** 클릭하고 적절한 옵션을 클릭하여 승인되거나 거부된 자산을 검색합니다.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -159,15 +159,15 @@ AEM(Adobe Experience Manager) 자산의 자산 콘솔은 자산에 대한 다양
 
 ## Digital Rights Management in Assets {#digital-rights-management-in-assets-1}
 
-이 기능은 AEM(Adobe Experience Manager) 자산에서 라이선스가 부여된 자산을 다운로드하려면 라이선스 계약에 동의해야 합니다.
+이 기능은 Adobe Experience Manager Assets에서 라이선스가 부여된 자산을 다운로드하기 전에 사용권 계약에 동의함을 적용합니다.
 
-보호된 자산을 선택하고 다운로드를 **[!UICONTROL 누르면]**&#x200B;사용권 계약에 동의하는 라이센스 페이지로 리디렉션됩니다. 사용권 계약에 동의하지 않으면 다운로드 **[!UICONTROL 단추가]** 비활성화됩니다.
+보호된 자산을 선택하고 다운로드를 **[!UICONTROL 클릭하면]**&#x200B;사용권 계약에 동의하는 라이센스 페이지로 리디렉션됩니다. 사용권 계약에 동의하지 않으면 다운로드 **[!UICONTROL 단추가]** 비활성화됩니다.
 
 선택한 자산에 여러 개의 보호된 자산이 포함되어 있는 경우 한 번에 하나의 자산을 선택하고 사용권 계약에 동의한 다음 에셋 다운로드를 계속합니다.
 
 다음 조건 중 하나가 충족되면 자산이 보호되는 것으로 간주됩니다.
 
-* 자산 메타데이터 속성은 자산에 대한 사용권 계약을 포함하는 CQ 페이지의 경로를 `xmpRights:WebStatement` 가리킵니다.
+* 자산 메타데이터 속성은 자산에 대한 사용권 계약을 포함하는 페이지의 경로를 `xmpRights:WebStatement` 가리킵니다.
 * 자산 메타데이터 속성의 값은 사용권 계약을 지정하는 원시 HTML입니다. `adobe_dam:restrictions`
 
 >[!NOTE]
@@ -180,7 +180,7 @@ AEM(Adobe Experience Manager) 자산의 자산 콘솔은 자산에 대한 다양
 
 1. 카드 보기에서 다운로드할 자산을 선택하고 다운로드를 **[!UICONTROL 클릭합니다]**.
 1. 저작권 **[!UICONTROL 관리]** 페이지의 목록에서 다운로드할 자산을 선택합니다.
-1. 라이센스 창에서 동의를 **[!UICONTROL 선택합니다]**. 사용권 계약에 동의하는 자산 옆에 확인 표시가 나타납니다. 다운로드 단추를 탭/ **[!UICONTROL 클릭합니다]** .
+1. 라이센스 창에서 동의를 **[!UICONTROL 선택합니다]**. 사용권 계약에 동의하는 자산 옆에 확인 표시가 나타납니다. [다운로드] **[!UICONTROL 단추를]** 클릭합니다.
 
    >[!NOTE]
    >
@@ -188,4 +188,4 @@ AEM(Adobe Experience Manager) 자산의 자산 콘솔은 자산에 대한 다양
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. 대화 상자에서 다운로드를 탭/클릭하여 **[!UICONTROL 자산]** 또는 해당 변환을 다운로드합니다.
+1. 대화 상자에서 다운로드를 클릭하여 **[!UICONTROL 자산]** 또는 표현물을 다운로드합니다.
