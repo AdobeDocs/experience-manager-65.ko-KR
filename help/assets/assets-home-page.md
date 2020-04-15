@@ -3,12 +3,12 @@ title: AEM 자산 홈 페이지 경험
 description: AEM 자산 홈 페이지를 개인화하여 자산에 대한 최근 활동 스냅숏을 비롯한 다양한 시작 화면 환경을 제공합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-# AEM 자산 홈 페이지 경험 {#aem-assets-home-page-experience}
+# AEM Assets Home Page Experience {#aem-assets-home-page-experience}
 
 AEM(Adobe Experience Manager) 자산 홈 페이지를 개인화하여 최근 자산 활동 스냅숏을 비롯한 다양한 시작 화면 환경을 만들어 보십시오.
 
@@ -41,7 +41,7 @@ AEM Assets 홈 페이지는 최근 조회되거나 업로드된 자산과 같은
 
 ![자산 사용자 인터페이스에 대한 경험 링크 구성](assets/config-experience-link.png)
 
-사용자 이름, **[!UICONTROL 배경 이미지 및 프로필 이미지를 추가하도록 경험 링크를]** 구성하려면 여기를 클릭/탭하십시오.
+사용자 **[!UICONTROL 이름, 배경 이미지 및 프로필 이미지를 추가하도록 경험 링크를]** 구성하려면 여기를 클릭하십시오.
 
 자산 홈 페이지에는 다음 섹션이 포함됩니다.
 
