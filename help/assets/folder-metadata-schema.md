@@ -1,49 +1,46 @@
 ---
 title: 폴더 메타데이터 스키마
-description: AEM 자산에서 자산 폴더에 대한 메타데이터 스키마를 만드는 방법 알아보기
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-uuid: bf8d066c-0f23-4d18-9ce9-860fa505dea2
-discoiquuid: 23009e50-a026-4823-8e4c-7a313a11b38c
-docset: aem65
+description: Adobe Experience Manager Assets에서 자산 폴더에 대한 메타데이터 스키마를 만드는 방법 살펴보기
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 62cc3282f8d8bc77f072de1d027484bd93efa38a
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-# Folder metadata schema {#folder-metadata-schema}
+# 폴더 메타데이터 스키마 {#folder-metadata-schema}
 
-AEM(Adobe Experience Manager) 자산을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더의 메타데이터 스키마를 만들 수 있습니다.
+Adobe Experience Manager Assets를 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더의 메타데이터 스키마를 만들 수 있습니다.
 
 ## 폴더 메타데이터 스키마 양식 추가 {#add-a-folder-metadata-schema-form}
 
 폴더 메타데이터 스키마 양식 편집기를 사용하여 폴더의 메타데이터 스키마를 만들고 편집합니다.
 
-1. AEM 로고를 탭/클릭하고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 폴더]** 메타데이터 **[!UICONTROL 스키마로 이동합니다]**.
-1. 폴더 메타데이터 스키마 양식 페이지에서 만들기를 탭/ **[!UICONTROL 클릭합니다]**.
-1. 양식의 이름을 지정하고 만들기를 탭/ **[!UICONTROL 클릭합니다]**. 새 스키마 양식은 스키마 양식 페이지에 나열됩니다.
+1. Experience Manager 인터페이스에서 도구 > 자산 **[!UICONTROL >]** 폴더 **[!UICONTROL 메타데이터]** 스키마로 이동합니다 ****.
+1. 폴더 메타데이터 [!UICONTROL 스키마 양식] 페이지에서 만들기를 **[!UICONTROL 클릭합니다]**.
+1. Specify a name for the form, and click **[!UICONTROL Create]**. 새 스키마 양식은 스키마 양식 [!UICONTROL 페이지에] 나열됩니다.
 
 ## Edit folder metadata schema forms {#edit-folder-metadata-schema-forms}
 
 다음을 포함하는 새로 추가되거나 기존 메타데이터 스키마 양식을 편집할 수 있습니다.
 
 * 탭
-* 탭 내의 양식 항목.
+* 탭 내의 양식 항목
 
 이러한 양식 항목을 CRX 저장소의 메타데이터 노드 내의 필드에 매핑/구성할 수 있습니다. 새 탭 또는 양식 항목을 메타데이터 스키마 양식에 추가할 수 있습니다.
 
-1. 스키마 양식 페이지에서 작성한 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 탭/클릭합니다.
-1. 폴더 메타데이터 스키마 편집기 페이지에서 탭을 눌러 양식에 `+` 추가합니다. 탭의 이름을 변경하려면 기본 이름을 탭/클릭하고 설정 아래에 새 이름을 **[!UICONTROL 지정합니다]**.
+1. 스키마 양식 페이지에서 작성한 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 클릭합니다.
+1. 폴더 메타데이터 스키마 편집기 페이지에서 을 클릭하여 양식에 탭을 `+` 추가합니다. 탭의 이름을 변경하려면 기본 이름을 클릭하고 설정 아래에 새 이름을 **[!UICONTROL 지정합니다]**.
 
    ![custom_tab](assets/custom_tab.png)
 
-   탭을 더 추가하려면 을 누릅니다 `+`. 탭을 `X` 눌러 삭제합니다.
+   탭을 더 추가하려면 을 클릭합니다 `+`. 탭을 `X` 클릭하여 삭제합니다.
 
 1. 활성 탭의 양식 작성 탭에서 하나 이상의 구성 요소를 **[!UICONTROL 추가합니다]** .
 
    ![adding_components](assets/adding_components.png)
 
-   여러 탭을 만드는 경우 특정 탭을 탭/클릭하여 구성 요소를 추가합니다.
+   여러 탭을 만드는 경우 특정 탭을 클릭하여 구성 요소를 추가합니다.
 
 1. 구성 요소를 구성하려면 구성 요소를 선택하고 설정 탭에서 해당 속성을 **[!UICONTROL 수정합니다]** .
 
@@ -51,7 +48,7 @@ AEM(Adobe Experience Manager) 자산을 사용하면 폴더 속성 페이지에 
 
    ![configure_properties](assets/configure_properties.png)
 
-1. 도구 모음에서 **[!UICONTROL 저장을]** 탭/클릭하여 변경 사항을 저장합니다.
+1. 도구 **[!UICONTROL 모음에서]** 저장을 클릭하여 변경 사항을 저장합니다.
 
 ### 양식 작성을 위한 구성 요소 {#components-to-build-forms}
 
@@ -70,7 +67,7 @@ AEM(Adobe Experience Manager) 자산을 사용하면 폴더 속성 페이지에 
 
 ### 양식 항목 편집 {#editing-form-items}
 
-양식 항목의 속성을 편집하려면 구성 요소를 탭/클릭하고 설정 탭에서 다음 속성의 전체 또는 하위 **[!UICONTROL 집합을]** 편집합니다.
+양식 항목의 속성을 편집하려면 구성 요소를 클릭하고 설정 탭에서 다음 속성의 전체 또는 하위 **[!UICONTROL 집합을]** 편집합니다.
 
 **[!UICONTROL 필드 레이블]**:폴더의 속성 페이지에 표시되는 메타데이터 속성의 이름입니다.
 
@@ -96,7 +93,7 @@ AEM(Adobe Experience Manager) 자산을 사용하면 폴더 속성 페이지에 
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-폴더 메타데이터 스키마 양식 페이지에서 폴더 메타데이터 스키마 양식을 삭제할 수 있습니다. 양식을 삭제하려면 해당 양식을 선택하고 도구 모음에서 삭제 아이콘을 탭/클릭합니다.
+폴더 메타데이터 스키마 양식 페이지에서 폴더 메타데이터 스키마 양식을 삭제할 수 있습니다. 양식을 삭제하려면 해당 양식을 선택하고 도구 모음에서 삭제 아이콘을 클릭합니다.
 
 ![delete_form](assets/delete_form.png)
 
@@ -108,16 +105,16 @@ AEM(Adobe Experience Manager) 자산을 사용하면 폴더 속성 페이지에 
 
 ### 폴더 메타데이터 스키마 페이지에서 스키마에 지정 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. AEM 로고를 탭/클릭하고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 폴더]**&#x200B;메타데이터 **[!UICONTROL 스키마로 이동합니다]**.
+1. Experience Manager 인터페이스에서 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 폴더]**&#x200B;메타데이터 **[!UICONTROL 스키마로 이동합니다]**.
 1. [폴더 메타데이터 스키마 양식] 페이지에서 폴더에 적용할 스키마 양식을 선택합니다.
-1. 도구 모음에서 폴더에 **[!UICONTROL 적용을 탭/클릭합니다]**.
+1. 도구 모음에서 폴더에 **[!UICONTROL 적용을 클릭합니다]**.
 
-1. 스키마를 적용할 폴더를 선택한 다음 적용을 클릭/ **[!UICONTROL 탭합니다]**. 메타데이터 스키마가 이미 폴더에 적용된 경우 기존 메타데이터 스키마를 덮어쓸지 여부를 알리는 경고 메시지가 표시됩니다. 덮어쓰기를 탭/ **[!UICONTROL 클릭합니다]**.
+1. 스키마를 적용할 폴더를 선택한 다음 적용을 **[!UICONTROL 클릭합니다]**. 메타데이터 스키마가 이미 폴더에 적용된 경우 기존 메타데이터 스키마를 덮어쓸지 여부를 알리는 경고 메시지가 표시됩니다. 덮어쓰기를 **[!UICONTROL 클릭합니다]**.
 1. 메타데이터 스키마를 적용한 폴더의 메타데이터 속성을 엽니다.
 
    ![folder_properties](assets/folder_properties.png)
 
-   폴더 메타데이터 필드를 보려면 폴더 메타데이터 **[!UICONTROL 탭을 탭/클릭합니다]** .
+   폴더 메타데이터 필드를 보려면 폴더 메타데이터 **[!UICONTROL 탭을]** 클릭합니다.
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
@@ -125,20 +122,19 @@ AEM(Adobe Experience Manager) 자산을 사용하면 폴더 속성 페이지에 
 
 폴더를 만들 때 폴더 메타데이터 스키마를 지정할 수 있습니다. 시스템에 폴더 메타데이터 스키마가 하나 이상 있으면 폴더 만들기 **[!UICONTROL 대화 상자에 추가 목록이 표시됩니다]** . 원하는 스키마를 선택할 수 있습니다. 기본적으로 스키마가 선택되지 않습니다.
 
-1. AEM 자산 사용자 인터페이스에서 도구 모음에서 **[!UICONTROL 만들기를]** 탭/클릭합니다.
+1. 사용자 인터페이스에서 도구 [!DNL Experience Manager Assets] 모음에서 만들기를 **** 클릭합니다.
 1. 폴더의 제목과 이름을 지정합니다.
-1. 폴더 메타데이터 스키마 목록에서 원하는 스키마를 선택합니다. Then, tap/click **[!UICONTROL Create]**.
+1. 폴더 메타데이터 스키마 목록에서 원하는 스키마를 선택합니다. 그런 다음 만들기를 **[!UICONTROL 클릭합니다]**.
 
    ![select_schema](assets/select_schema.png)
 
 1. 메타데이터 스키마를 적용한 폴더의 메타데이터 속성을 엽니다.
-1. 폴더 메타데이터 필드를 보려면 폴더 메타데이터 **[!UICONTROL 탭을 탭/클릭합니다]** .
+1. 폴더 메타데이터 필드를 보려면 폴더 메타데이터 **[!UICONTROL 탭을]** 클릭합니다.
 
 ## 폴더 메타데이터 스키마 사용 {#use-the-folder-metadata-schema}
 
-폴더 메타데이터 스키마로 구성된 폴더의 속성을 엽니다. 폴더 **[!UICONTROL 속성]** 페이지에 폴더 메타데이터 탭이 표시됩니다. 폴더 메타데이터 스키마 양식을 보려면 이 탭을 선택합니다.
+폴더 메타데이터 스키마로 구성된 폴더의 속성을 엽니다. 폴더 **[!UICONTROL 메타데이터]** 탭이 폴더 속성 [!UICONTROL 페이지에 표시됩니다] . 폴더 메타데이터 스키마 양식을 보려면 이 탭을 선택합니다.
 
-다양한 필드에 메타데이터 값을 입력하고 저장을 탭/클릭하여 **[!UICONTROL 값을]** 저장합니다. 지정하는 값은 CRX 저장소의 폴더 노드에 저장됩니다.
+다양한 필드에 메타데이터 값을 입력하고 저장을 **[!UICONTROL 클릭하여]** 값을 저장합니다. 지정하는 값은 CRX 저장소의 폴더 노드에 저장됩니다.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
-
