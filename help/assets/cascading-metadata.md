@@ -3,7 +3,7 @@ title: 계단식 메타데이터
 description: 이 문서에서는 자산의 CSS 메타데이터를 정의하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -28,18 +28,18 @@ source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 선택한 자산 유형에 따라 CSS 메타데이터를 표시하려는 시나리오를 고려해 보십시오. 몇 가지 예
 
 * 비디오의 경우 형식, 코덱이나 지속 시간 등과 같은 해당 필드를 표시합니다.
-* Word 또는 PDF 문서의 경우 페이지 수, 작성자 등의 필드를 표시할 수 있습니다.
+* Word 또는 PDF 문서의 경우 페이지 수, 작성자 등의 필드를 표시합니다.
 
 선택한 자산 유형에 관계없이 저작권 정보를 필수 필드로 표시합니다.
 
-1. AEM 로고를 탭/클릭하고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터]** 스키마로 **[!UICONTROL 이동합니다]**.
-1. 스키마 **[!UICONTROL 양식]** 페이지에서 스키마 양식을 선택한 다음 도구 모음에서 편집을 탭/클릭하여 **[!UICONTROL 스키마를]** 편집합니다.
+1. Experience Manager 인터페이스에서 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터]** 스키마로 **[!UICONTROL 이동합니다]**.
+1. 스키마 **[!UICONTROL 양식]** 페이지에서 스키마 양식을 선택한 다음 **[!UICONTROL 도구 모음에서 편집을 클릭하여]** 스키마를 편집합니다.
 
    ![select_form](assets/select_form.png)
 
 1. (선택 사항) 메타데이터 스키마 편집기에서 조건화할 새 필드를 만듭니다. 설정 탭에서 이름 및 속성 경로를 **[!UICONTROL 지정합니다]** .
 
-   새 탭을 만들려면 탭/클릭하여 탭을 `+` 추가한 다음 메타데이터 필드를 추가합니다.
+   새 탭을 만들려면 탭을 클릭하여 `+` 추가한 다음 메타데이터 필드를 추가합니다.
 
    ![add_tab](assets/add_tab.png)
 
@@ -49,7 +49,7 @@ source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 1. 키 값 쌍은 양식 사용자에게 제공되는 옵션입니다. 키-값 쌍을 수동으로 또는 JSON 파일에서 제공할 수 있습니다.
 
-   * 값을 수동으로 지정하려면 [수동으로 추가] **[!UICONTROL 를]**&#x200B;선택하고 [선택 추가]를 탭/ **[!UICONTROL 클릭하고]** 옵션 텍스트와 값을 지정합니다. 예를 들어 비디오, PDF, Word 및 이미지 자산 유형을 지정합니다.
+   * 값을 수동으로 지정하려면 [수동으로 추가] **[!UICONTROL 를]**&#x200B;선택하고 [선택 **[!UICONTROL 추가]를]** 클릭하고 옵션 텍스트 및 값을 지정합니다. 예를 들어 비디오, PDF, Word 및 이미지 자산 유형을 지정합니다.
 
    * JSON 파일에서 값을 동적으로 가져오려면 [JSON 경로를 **[!UICONTROL 통해 추가]** ]를 선택하고 JSON 파일의 경로를 제공합니다. AEM은 양식이 사용자에게 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
    두 옵션은 모두 함께 사용할 수 없습니다. JSON 파일에서 옵션을 가져와 수동으로 편집할 수는 없습니다.
@@ -75,7 +75,7 @@ source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. 요구 **[!UICONTROL 사항에서]**&#x200B;새 **[!UICONTROL 규칙에]** 따라 필수 옵션을 선택합니다.
-1. 규칙 추가를 탭/ **[!UICONTROL 클릭하고]** 자산 **[!UICONTROL 유형]** 필드를 선택하여 종속성을 만듭니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 비디오를 **[!UICONTROL 선택합니다]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. 규칙 **[!UICONTROL 추가를]** 클릭하고 자산 **[!UICONTROL 유형]** 필드를 선택하여 종속성을 만듭니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 비디오를 **[!UICONTROL 선택합니다]**. Click **[!UICONTROL Done]** to save the changes.
 
    ![define_rule](assets/define_rule.png)
 
@@ -85,13 +85,13 @@ source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 1. 가시성에서 ****&#x200B;새 **[!UICONTROL 규칙에]** 따라 표시 옵션을 선택합니다.
 
-1. 규칙 추가를 탭/ **[!UICONTROL 클릭하고]** 자산 **[!UICONTROL 유형]** 필드를 선택하여 종속성을 만듭니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 비디오를 **[!UICONTROL 선택합니다]**. Tap/click **[!UICONTROL Done]** to save the changes.
+1. 규칙 **[!UICONTROL 추가를]** 클릭하고 자산 **[!UICONTROL 유형]** 필드를 선택하여 종속성을 만듭니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 비디오를 **[!UICONTROL 선택합니다]**. Click **[!UICONTROL Done]** to save the changes.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!NOTE]
    >
-   >공백(또는 값이 아닌 임의의 위치)을 탭/클릭하면 값이 재설정됩니다. 이러한 경우 값을 다시 선택합니다.
+   >공백을 클릭하거나 값이 아닌 임의의 위치를 클릭하면 값이 재설정됩니다. 이러한 경우 값을 다시 선택합니다.
 
    >[!NOTE]
    >
