@@ -4,12 +4,12 @@ description: 병목 현상을 제거하고 AEM 자산의 성능을 최적화하�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-<!-- TBD: Formatting using backticks. Add UICONTROL tag. Redundant info as reviewed by engineering. -->
+<!-- TBD: Get reviewed by engineering. -->
 
 # 자산 성능 조정 가이드 {#assets-performance-tuning-guide}
 
@@ -29,11 +29,11 @@ AEM은 여러 플랫폼에서 지원되지만 Adobe는 Linux 및 Windows에서 �
 
 ### 임시 폴더 {#temp-folder}
 
-자산 업로드 시간을 개선하려면 Java 임시 디렉토리에 고성능 저장소를 사용합니다. Linux 및 Windows에서 RAM 드라이브 또는 SSD를 사용할 수 있습니다. 클라우드 기반 환경에서는 동일한 고속 스토리지 유형을 사용할 수 있습니다. 예를 들어 Amazon EC2에서는 임시 폴더에 [임시 드라이브](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) 드라이브를 사용할 수 있습니다.
+자산 업로드 시간을 개선하려면 Java 임시 디렉토리에 고성능 저장소를 사용합니다. Linux 및 Windows에서 RAM 드라이브 또는 SSD를 사용할 수 있습니다. 클라우드 기반 환경에서는 동일한 고속 스토리지 유형을 사용할 수 있습니다. 예를 들어 Amazon EC2에서는 임시 [폴더에 임시 드라이브](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) 드라이브를 사용할 수 있습니다.
 
 서버에 충분한 메모리가 있다고 가정할 경우 RAM 드라이브를 구성합니다. Linux에서 다음 명령을 실행하여 8GB RAM 드라이브를 만듭니다.
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -58,7 +58,7 @@ Windows OS의 경우 타사 드라이버를 사용하여 RAM 드라이브를 만
 
 ### JVM 매개 변수 {#jvm-parameters}
 
-다음 JVM 매개변수를 설정해야 합니다.
+다음 JVM 매개변수를 설정합니다.
 
 * `-XX:+UseConcMarkSweepGC`
 * `-Doak.queryLimitInMemory`=500000
@@ -88,7 +88,7 @@ S3 또는 공유 파일 데이터 저장소를 구현하면 대규모 구현에�
 
 Adobe는 다음 S3 Data Store 구성( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`)을 통해 기존 파일 데이터 저장소에서 12.8TB의 바이너리 대용량 개체(BLOB)를 고객 사이트의 S3 데이터 스토어로 추출할 수 있었습니다.
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -126,18 +126,17 @@ HTTP 트래픽을 탐지하는 방화벽이 있는 많은 회사에는 업로드
 
 가능한 경우 DAM 자산 [!UICONTROL 업데이트] 워크플로우를 일시적으로 설정합니다. 이 설정을 사용하면 워크플로우가 일반적인 추적 및 보관 프로세스를 통과하지 않아도 되므로 워크플로우를 처리하는 데 필요한 오버헤드가 크게 줄어듭니다.
 
->[!NOTE]
->
->기본적으로 AEM 6. [!UICONTROL 3에서] DAM 자산 업데이트 워크플로우는 일시적으로 설정됩니다.이 경우 다음 절차를 건너뛸 수 있습니다.
-
 1. 의 AEM `/miscadmin` 인스턴스에서 탐색합니다 `https://[aem_server]:[port]/miscadmin`.
+
 1. 도구 **[!UICONTROL > 워크플로우]** **[!UICONTROL >]** 모델 **[!UICONTROL >]****[!UICONTROL 댐을]**&#x200B;확장합니다.
+
 1. DAM **[!UICONTROL 자산 업데이트를 엽니다]**. 부동 도구 패널에서 페이지 **[!UICONTROL 탭으로]** 전환한 다음 페이지 속성을 **[!UICONTROL 클릭합니다]**.
+
 1. 임시 **[!UICONTROL 워크플로우를]** 선택하고 확인을 **[!UICONTROL 클릭합니다]**.
 
    >[!NOTE]
    >
-   >일부 기능은 일시적인 워크플로우를 지원하지 않습니다. AEM 자산 배포에서 이러한 기능이 필요한 경우 일시적인 워크플로우를 구성하지 마십시오.
+   >일부 기능은 일시적인 워크플로우를 지원하지 않습니다. 배포에서 이러한 기능을 필요로 하는 경우 일시적인 워크플로우를 구성하지 마십시오. [!DNL Assets]
 
 일시적인 워크플로우를 사용할 수 없는 경우 워크플로우 제거를 정기적으로 실행하여 보관된 DAM 자산 업데이트 [!UICONTROL 워크플로우를] 삭제하여 시스템 성능이 저하되지 않도록 하십시오.
 
@@ -153,8 +152,10 @@ HTTP 트래픽을 탐지하는 방화벽이 있는 많은 회사에는 업로드
 
 기본적으로 AEM은 서버의 프로세서 수와 같은 최대 병렬 작업 수를 실행합니다. 이 설정의 문제는 부하가 많은 기간 동안 모든 프로세서가 DAM 자산 업데이트 워크플로우에 [!UICONTROL 사용되고] UI 응답성이 저하되고 서버 성능과 안정성을 보호하는 다른 프로세스가 실행되지 않는다는 것입니다. 다음 단계를 수행하여 이 값을 서버에서 사용할 수 있는 프로세서의 절반으로 설정하는 것이 좋습니다.
 
-1. AEM 작성자의 경우 로 `https://[aem_server]:[port]/system/console/slingevent`이동합니다.
+1. Adobe Experience Manager Author에서 로 `https://[aem_server]:[port]/system/console/slingevent`이동합니다.
+
 1. [ **[!UICONTROL MOCK]** ] Click Edit on each workflow queue that is related to your implementation, for example **[!UICONTROL Granite Workflow Queue]**.
+
 1. 최대 병렬 작업 값을 **[!UICONTROL 업데이트하고]** 저장을 **[!UICONTROL 클릭합니다]**.
 
 대기열을 사용 가능한 프로세서의 절반 수준으로 설정하는 것은 시작할 수 있는 솔루션입니다. 하지만, You may have to increase or decrease this number to achieve maximum throughput and tune it by environment. 임시 워크플로우와 비일시적 워크플로우에 대한 대기열은 물론 외부 워크플로우와 같은 다른 프로세스에 대해서도 별도의 대기열이 있습니다. 프로세서가 50%로 설정된 여러 개의 대기열이 동시에 활성 상태인 경우 시스템이 빠르게 오버로드될 수 있습니다. 많이 사용되는 대기열은 사용자 구현마다 매우 다양합니다. 따라서 서버 안정성을 훼손하지 않고 효율성을 최대화하기 위해 신중하게 구성해야 할 수 있습니다.
@@ -256,11 +257,15 @@ XMP 원본에 의해 메타데이터가 AEM에서 수정될 때마다 원본 에
 1. 로 `/oak:index/damAssetLucene`이동합니다. 값이 `String[]` 있는 `includedPaths` 속성을 `/content/dam`추가합니다.
 1. 저장.
 
-(AEM6.1 및 6.2만 해당) ntBaseLucene 인덱스를 업데이트하여 자산 삭제 및 이동 성능을 개선합니다.
+<!-- TBD: Review by engineering if required in 6.5 docs or not.
 
-1. 탐색 `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-1. 구조화되지 않은 노드 `slingResource` 및 `damResolvedPath` 아래의 두 개 추가 `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-1. 노드에서 아래 속성을 설정합니다(여기서 `ordered` 및 `propertyIndex` 속성은 `Boolean`다음과 같습니다.
+(AEM6.1 and 6.2 only) Update the `ntBaseLucene` index to improve asset delete and move performance:
+
+1. Browse to `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
+1. Add two nt:unstructured nodes `slingResource` and `damResolvedPath` under `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
+1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
    ```
    slingResource
@@ -275,24 +280,24 @@ XMP 원본에 의해 메타데이터가 AEM에서 수정될 때마다 원본 에
    type="String"
    ```
 
-1. 노드에서 속성을 `/oak:index/ntBaseLucene` 설정합니다 `reindex=true`. 모두 **[!UICONTROL 저장을 클릭합니다]**.
-1. error.log를 모니터링하여 색인이 완료된 시점을 확인합니다.색인에 대한 색인 재설정이 완료되었습니다. [/oak:index/ntBaseLucene]
-1. 다시 인덱스 속성이 false로 돌아가므로 CRXDe의 /oak:index/ntBaseLucene 노드를 새로 고침하여 인덱싱을 완료할 수도 있습니다
-1. 색인화가 완료되면 CRXDe로 돌아가서 이 두 인덱스에서 &quot;type&quot; 속성을 disabled로 설정합니다
+1. On the `/oak:index/ntBaseLucene` node, set the property `reindex=true`. Click **[!UICONTROL Save All]**.
+1. Monitor the error.log to see when indexing is completed:
+   Reindexing completed for indexes: [/oak:index/ntBaseLucene]
+1. You can also see that indexing is completed by refreshing the /oak:index/ntBaseLucene node in CRXDe as the reindex property would go back to false
+1. Once indexing is completed then go back to CRXDe and set the "type" property to disabled on these two indexes
 
-   * */oak:index/slingResource*
-   * */oak:index/damResolvedPath*
+    * */oak:index/slingResource*
+    * */oak:index/damResolvedPath*
 
-1. &quot;모두 저장&quot;을 클릭합니다.
+1. Click "Save All"
+-->
 
 Lucene 텍스트 추출 비활성화:
 
-사용자가 PDF 문서에 포함된 텍스트를 검색하는 등 자산의 내용을 검색할 필요가 없는 경우 이 기능을 비활성화하여 색인 성능을 향상시킬 수 있습니다.
+예를 들어, PDF 문서에서 텍스트를 검색하는 것과 같이 사용자가 에셋을 전체 텍스트로 검색할 필요가 없을 경우 해당 에셋을 비활성화합니다. 전체 텍스트 인덱싱을 비활성화하여 색인 성능을 향상시킬 수 있습니다.
 
-1. AEM 패키지 관리자 /crx/packmgr/index.jsp으로 이동합니다.
-1. 아래 패키지 업로드 및 설치
-
-[파일 가져오기](assets/disable_indexingbinarytextextraction-10.zip)
+1. AEM 패키지 관리자로 `/crx/packmgr/index.jsp`이동합니다.
+1. disable_indexingbinarytextextraction-10.zip에서 사용할 수 있는 패키지를 [업로드하고 설치합니다](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Guess Total {#guess-total}
 
