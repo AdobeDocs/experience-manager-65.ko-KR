@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -30,7 +30,9 @@ source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
 * 다른 서비스 작업을 수행할 수 있도록 PDF 문서의 잠금을 해제합니다. 예를 들어 암호로 암호화된 PDF 문서의 잠금을 해제하면 디지털 서명을 적용할 수 있습니다. (암호화된 [PDF 문서 잠금 해제를 참조하십시오](encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 * 보안 PDF 문서의 암호화 유형을 결정합니다. 암호화 [유형 확인을 참조하십시오](encrypting-decrypting-pdf-documents.md#determining-encryption-type).
 
-   ***참고&#x200B;**:암호화 서비스에 대한 자세한 내용은 AEM Forms[에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).*
+>[!NOTE]
+>
+>암호화 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## 암호로 PDF 문서 암호화 {#encrypting-pdf-documents-with-a-password}
 
@@ -136,7 +138,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
    * 개체의 `PasswordEncryptionOptionSpec` 메서드를 호출하고 암호화할 문서 리소스를 지정하는 `setEncryptOption` `PasswordEncryptionOption` 열거형 값을 전달하여 암호화할 PDF 문서 리소스를 지정합니다. 예를 들어 메타데이터와 첨부 파일을 포함하여 전체 PDF 문서를 암호화하려면 을 `PasswordEncryptionOption.ALL`지정합니다.
    * 생성자를 사용하여 암호화 권한을 저장하는 `java.util.List` 객체를 `ArrayList` 만듭니다.
    * 개체 &#39;s `java.util.List` `add` 메서드를 호출하고 설정할 권한에 해당하는 열거형 값을 전달하여 권한을 지정합니다. 예를 들어 사용자가 PDF 문서에 있는 데이터를 복사할 수 있는 권한을 설정하려면 을 `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`지정합니다. 설정할 각 권한에 대해 이 단계를 반복합니다.
-   * 개체의 `PasswordEncryptionOptionSpec` `setCompatability` 메서드를 호출하고 Acrobat 호환성 수준을 지정하는 열거형 값을 전달하여 Acrobat 호환성 옵션을 지정합니다. 예를 들어 지정할 수 `PasswordEncryptionCompatability.ACRO_7`있습니다.
+   * 개체의 `PasswordEncryptionOptionSpec` `setCompatability` 메서드를 호출하고 Acrobat 호환성 수준을 지정하는 열거형 값을 전달하여 Acrobat 호환성 옵션을 지정합니다. For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
    * 사용자가 `PasswordEncryptionOptionSpec` 개체의 `setDocumentOpenPassword` 메서드를 호출하고 열린 암호를 나타내는 문자열 값을 전달하여 암호화된 PDF 문서를 열 수 있도록 하는 암호 값을 지정합니다.
    * 사용자가 `PasswordEncryptionOptionSpec` 개체의 `setPermissionPassword` 메서드를 호출하고 마스터 암호를 나타내는 문자열 값을 전달하여 PDF 문서에서 암호화를 제거할 수 있도록 하는 마스터 암호 값을 지정합니다.
 
@@ -294,7 +296,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
 
 **인증서로 암호화된 PDF 문서 만들기**
 
-안전하지 않은 PDF 문서를 검색하고, 인증서를 참조하고, 런타임 옵션을 설정한 후 인증서로 암호화된 PDF 문서를 만들 수 있습니다. PDF 문서가 암호화되면 암호를 해독하려면 해당 공개 키가 필요합니다.
+보안되지 않은 PDF 문서를 검색하고, 인증서를 참조하고, 런타임 옵션을 설정한 후 인증서로 암호화된 PDF 문서를 만들 수 있습니다. PDF 문서가 암호화되면 암호를 해독하려면 해당 공개 키가 필요합니다.
 
 **암호화된 PDF 문서를 PDF 파일로 저장**
 
@@ -350,7 +352,7 @@ PDF 문서를 암호화할 때 보안 문서와 연관된 권한을 지정할 �
 
    * 생성자를 호출하여 `CertificateEncryptionOptionSpec` 객체를 만듭니다.
    * 개체의 `CertificateEncryptionOptionSpec` 메서드를 호출하고 암호화할 문서 리소스를 지정하는 `setOption` `CertificateEncryptionOption` 열거형 값을 전달하여 암호화할 PDF 문서 리소스를 지정합니다. 예를 들어 메타데이터와 첨부 파일을 포함하여 전체 PDF 문서를 암호화하려면 을 `CertificateEncryptionOption.ALL`지정합니다.
-   * 개체의 `CertificateEncryptionOptionSpec` 메서드를 호출하고 Acrobat 호환성 수준을 지정하는 `setCompat` `CertificateEncryptionCompatibility` 열거형 값을 전달하여 Acrobat 호환성 옵션을 지정합니다. 예를 들어 지정할 수 `CertificateEncryptionCompatibility.ACRO_7`있습니다.
+   * 개체의 `CertificateEncryptionOptionSpec` 메서드를 호출하고 Acrobat 호환성 수준을 지정하는 `setCompat` `CertificateEncryptionCompatibility` 열거형 값을 전달하여 Acrobat 호환성 옵션을 지정합니다. For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. 인증서로 암호화된 PDF 문서를 만듭니다.
 
@@ -682,7 +684,7 @@ PDF 문서에서 암호 기반 암호화를 제거하려면 다음 단계를 수
 
 1. 암호화된 PDF 문서를 가져올 수 있습니다.
 
-   * 생성자를 사용하여 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 암호화된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
+   * 생성자를 사용하여 암호화된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만들고 PDF 문서의 위치를 지정하는 문자열 값을 전달합니다.
    * 생성자를 사용하여 객체를 전달하여 `com.adobe.idp.Document` 객체를 만듭니다 `java.io.FileInputStream` .
 
 1. 암호를 제거합니다.
