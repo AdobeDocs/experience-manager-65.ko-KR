@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Authoring User Guide
+user-guide-title: AEM 6.5 작성 사용 안내서
 translation-type: tm+mt
-source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
+source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
 
 ---
 
@@ -85,7 +85,7 @@ source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
    + [대상자 관리](managing-audiences.md)
    + [오퍼 생성 및 관리](offerlib.md)
    + [세그멘테이션 이해](segmentation-overview.md)
-+ AEM 및 Adobe Campaign {aem-adobe-campaign}
++ AEM 및 Adobe Campaign {#aem-adobe-campaign}
    + [Adobe Campaign을 사용한 작업](adobe-campaign.md)
    + [Adobe Campaign Classic 및 Adobe Campaign Standard 작업](campaign.md)
    + [Adobe Campaign 타깃팅](target-adobe-campaign.md)
