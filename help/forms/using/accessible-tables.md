@@ -9,21 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
 
 # HTML5 양식에 액세스 가능한 복잡한 표 만들기 {#create-accessible-complex-tables-in-html-forms}
 
-HTML5 Forms의 기본 구현에서는 HTML DIV 요소를 사용하여 표를 렌더링합니다. 렌더링에는 액세서빌러티 요구 사항을 충족하기 위해 ARIA 역할을 사용하는 것이 포함됩니다.
+The default implementation of tables in HTML5 Forms uses HTML DIV elements to render a table. Rendering involves using ARIA roles to satisfy the accessibility requirements.
 
-HTML5 Forms는 데이터 테이블과 함께 사용되는 ARIA 역할을 완벽하게 지원하지 않는 화면 판독기의 액세스 가능성 문제를 방지하기 위해 테이블에 대한 대체 변환을 제공합니다. 이러한 표는 Designer에서 도입된 새 표 형식을 기반으로 하며 다음과 같은 기능도 지원합니다.
+To avoid accessibility issues with screen-readers which do not fully support the ARIA-roles used with data-tables, HTML5 Forms provides an alternate rendition for the tables. These tables are based on the new table format introduced in Designer which also supports:
 
-* 행 머리글
-* 행 범위
+* Row Headers
+* Row-span
 
-HTML5 Forms에서 새 형식을 사용하려면 표를 복잡하게 표시합니다. 표를 복합 폼으로 표시하려면 다음과 같이 테이블 하위 폼의 XML 소스에 `extras` 태그를 추가하십시오.
+To use the new format in HTML5 Forms, mark the table as complex. 표를 복합 폼으로 표시하려면 다음과 같이 테이블 하위 폼의 XML 소스에 `extras` 태그를 추가하십시오.
 
 ```
 </extras>
@@ -33,7 +33,9 @@ HTML5 Forms에서 새 형식을 사용하려면 표를 복잡하게 표시합니
 
 complexTable로 표시된 *표는* 기본 HTML 변환을 따르며 특정 화면 판독기에 대한 향상된 액세스 가능성 지원을 제공합니다.  행 범위를 만들려면 같은 열에서 표의 연속 셀을 선택하고 선택 항목을 마우스 오른쪽 단추로 클릭한 다음 셀 **[!UICONTROL 병합을 클릭합니다]**.
 
-*****참고:행 범위 만들기는 맨 왼쪽 셀에만 작동합니다.*
+>[!NOTE]
+>
+>행 범위 만들기는 맨 왼쪽 셀에만 작동합니다.
 
 행을 행 머리글로 표시하려면 행의 모든 셀을 선택하고 선택 항목을 마우스 오른쪽 단추로 클릭한 다음 머리글 표시를 **[!UICONTROL 클릭합니다]**.
 
