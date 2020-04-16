@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
 
 출력 서비스를 사용하면 XML 양식 데이터를 양식 디자인과 병합하고 문서를 네트워크 프린터 또는 파일로 출력할 수 있습니다.
 
-양식 디자인(XDP 파일)을 출력 서비스로 전달하는 방법에는 두 가지가 있습니다. 양식 디자인이 포함된 `com.adobe.idp.Document` 인스턴스를 출력 서비스로 전달할 수 있습니다. 또는 양식 디자인의 위치를 지정하는 URI 값을 전달할 수 있습니다. 두 가지 방법 모두 AEM 양식을 *사용한 프로그래밍에*&#x200B;대해 설명합니다.
+양식 디자인(XDP 파일)을 출력 서비스로 전달하는 방법에는 두 가지가 있습니다. 양식 디자인이 포함된 `com.adobe.idp.Document` 인스턴스를 출력 서비스로 전달할 수 있습니다. 또는 양식 디자인의 위치를 지정하는 URI 값을 전달할 수 있습니다. 이러한 두 가지 방법 모두 AEM *양식을*&#x200B;사용한 프로그래밍에 설명되어 있습니다.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
 
 다른 AEM Forms 서비스에서 양식 디자인을 받은 다음 `com.adobe.idp.Document` 인스턴스 내에서 전달하면 사용할 기술을 결정할 때 고려해야 할 사항이 있습니다. 출력 *서비스에 문서 전달* 및 *조각을 사용하여 PDF 문서* 만들기 섹션은 다른 AEM Forms 서비스에서 양식 디자인을 가져오는 방법을 보여줍니다. 첫 번째 섹션은 Content Services에서 양식 디자인을 검색합니다(더 이상 사용되지 않음). 두 번째 섹션은 어셈블러 서비스에서 양식 디자인을 검색합니다.
 
-파일 시스템과 같은 고정된 위치에서 양식 디자인을 가져오는 경우 두 가지 방법 중 하나를 사용할 수 있습니다. 즉, XDP 파일에 URI 값을 지정하거나 `com.adobe.idp.Document` 인스턴스를 사용할 수 있습니다.
+파일 시스템과 같은 고정된 위치에서 양식 디자인을 가져오는 경우 두 방법 중 하나를 사용할 수 있습니다. 즉, XDP 파일에 URI 값을 지정하거나 `com.adobe.idp.Document` 인스턴스를 사용할 수 있습니다.
 
 PDF 문서를 만들 때 양식 디자인의 위치를 지정하는 URI 값을 전달하려면 이 `generatePDFOutput` 방법을 사용합니다. 마찬가지로 PDF 문서를 만들 때 `com.adobe.idp.Document` 인스턴스를 출력 서비스로 전달하려면 이 `generatePDFOutput2` 방법을 사용합니다.
 
@@ -64,7 +64,9 @@ PDF 문서를 만들 때 양식 디자인의 위치를 지정하는 URI 값을 �
 * [검색 규칙 만들기](creating-document-output-streams.md#creating-search-rules)
 * [PDF 문서 병합](creating-document-output-streams.md#flattening-pdf-documents)
 
-   ***참고&#x200B;**:출력 서비스에 대한 자세한 내용은 AEM Forms[에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).*
+>[!NOTE]
+>
+>출력 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PDF 문서 작성 {#creating-pdf-documents}
 
@@ -112,7 +114,7 @@ aem Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 
 양식 디자인과 데이터를 병합하려면 데이터가 포함된 XML 데이터 소스를 참조해야 합니다. 데이터로 채울 모든 양식 필드에 대해 XML 요소가 있어야 합니다. XML 요소 이름은 필드 이름과 일치해야 합니다. XML 요소는 양식 필드에 해당되지 않거나 XML 요소 이름이 필드 이름과 일치하지 않는 경우 무시됩니다. 모든 XML 요소가 지정된 경우 XML 요소가 표시되는 순서와 일치할 필요는 없습니다.
 
-다음 대출 신청 양식을 고려하십시오.
+Consider the following example loan application form.
 
 ![cp_cp_loanformdata](assets/cp_cp_loanformdata.png)
 
@@ -151,11 +153,11 @@ aem Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 
 **PDF 런타임 옵션 설정**
 
-PDF 문서를 만들 때 파일 URI 옵션을 설정합니다. 이 옵션은 출력 서비스가 생성하는 PDF 파일의 이름과 위치를 지정합니다.
+PDF 문서를 만들 때 파일 URI 옵션을 설정합니다. This option specifies the name and location of the PDF file that the Output service generates.
 
 >[!NOTE]
 >
->파일 URI 런타임 옵션을 설정하는 대신 출력 서비스에서 반환되는 복잡한 데이터 유형에서 PDF 문서를 프로그래밍 방식으로 검색할 수 있습니다. 그러나 파일 URI 런타임 옵션을 설정하면 프로그래밍 방식으로 PDF 문서를 검색하는 응용 프로그램 논리를 만들 필요가 없습니다.
+>Instead of setting the file URI run-time option, you can programmatically retrieve the PDF document from the complex data type that is returned by the Output service. However, by setting the file URI run-time option, you do not need to create application logic that programmatically retrieves the PDF document.
 
 **렌더링 런타임 옵션 설정**
 
@@ -171,13 +173,13 @@ PDF 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니�
 
 양식 데이터가 포함된 유효한 XML 데이터 소스를 참조하고 런타임 옵션을 설정한 후 출력 서비스를 호출하여 PDF 문서를 생성할 수 있습니다.
 
-PDF 문서를 생성할 때 출력 서비스에서 PDF 문서를 만드는 데 필요한 URI 값을 지정합니다. 양식 디자인은 서버 파일 시스템과 같은 위치 또는 AEM Forms 애플리케이션의 일부로 저장할 수 있습니다. 양식 애플리케이션의 일부로 존재하는 양식 디자인(또는 이미지 파일과 같은 기타 리소스)은 컨텐츠 루트 URI 값을 사용하여 참조할 수 `repository:///`있습니다. 예를 들어 Applications/FormsApplication이라는 Forms *애플리케이션* 내에 있는 Loan.xdp라는 양식 디자인을 *생각해 보십시오*.
+PDF 문서를 생성할 때 출력 서비스에서 PDF 문서를 만드는 데 필요한 URI 값을 지정합니다. 양식 디자인은 서버 파일 시스템과 같은 위치 또는 AEM Forms 애플리케이션의 일부로 저장할 수 있습니다. 양식 애플리케이션의 일부로 존재하는 양식 디자인(또는 이미지 파일과 같은 기타 리소스)은 컨텐츠 루트 URI 값을 사용하여 참조할 수 `repository:///`있습니다. For example, consider the following form design named *Loan.xdp* located within a Forms application named *Applications/FormsApplication*:
 
 ![cp_cp_formrepository](assets/cp_cp_formrepository.png)
 
-이전 그림에 표시된 Loan.xdp 파일에 액세스하려면 `repository:///Applications/FormsApplication/1.0/FormsFolder/` 객체의 `OutputClient` `generatePDFOutput` 메서드에 전달된 세 번째 매개 변수로 지정합니다. 양식 이름(*Loan.xdp*)을 `OutputClient` 객체의 `generatePDFOutput` 메서드에 전달된 두 번째 매개 변수로 지정합니다.
+To access the Loan.xdp file shown in the previous illustration, specify `repository:///Applications/FormsApplication/1.0/FormsFolder/` as the third parameter passed to the `OutputClient` object’s `generatePDFOutput` method. Specify the form name (*Loan.xdp*) as the second parameter passed to the `OutputClient` object’s `generatePDFOutput` method.
 
-XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함되어 있는 경우 리소스를 XDP 파일과 동일한 애플리케이션 폴더에 배치합니다. AEM Forms에서는 컨텐츠 루트 URI를 기본 경로로 사용하여 이미지에 대한 참조를 확인합니다. 예를 들어 Loan.xdp 파일에 이미지가 포함되어 있는 경우 이미지를 에 배치해야 `Applications/FormsApplication/1.0/FormsFolder/`합니다.
+If the XDP file contains images (or other resources such as fragments), place the resources in the same application folder as the XDP file. AEM Forms uses the content root URI as the base path to resolve references to images. For example, if the Loan.xdp file contains an image, ensure that you place the image in `Applications/FormsApplication/1.0/FormsFolder/`.
 
 >[!NOTE]
 >
@@ -185,11 +187,11 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함되�
 
 >[!NOTE]
 >
->Forms 응용 프로그램에 있는 XDP를 참조하여 PDF 문서를 만드는 전체 빠른 시작을 보려면 빠른 시작(EJB [모드)을 참조하십시오.Java API 파섹 ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
+>Forms 응용 프로그램에 있는 XDP를 참조하여 PDF 문서를 만드는 전체 빠른 시작을 보려면 빠른 시작(EJB [모드)을 참조하십시오.Java API 파섹](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)
 
 **작업 결과 검색**
 
-출력 서비스가 작업을 수행한 후 작업 성공 여부를 지정하는 상태 XML 데이터와 같은 다양한 데이터 항목을 반환합니다.
+After the Output service performs an operation, it returns various data items such as status XML data that specifies whether the operation was successful.
 
 **참고 항목**
 
@@ -201,9 +203,9 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함되�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[출력 서비스 API 빠른 시작](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
+[Output Service API Quick Starts](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Java API 파섹 {#create-a-pdf-document-using-the-java-api}
+### Create a PDF document using the Java API {#create-a-pdf-document-using-the-java-api}
 
 출력 API(Java)를 사용하여 PDF 문서를 만듭니다.
 
@@ -430,7 +432,7 @@ aem Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 
 **PDF/A 런타임 옵션 설정**
 
-PDF/A 문서를 만들 때 파일 URI 옵션을 설정할 수 있습니다. URI 파섹 즉, C:\Adobe를 설정하면 파일이 클라이언트 컴퓨터가 아닌 서버의 폴더에 기록됩니다. URI는 출력 서비스가 생성하는 PDF/A 파일의 이름과 위치를 지정합니다.
+PDF/A 문서를 만들 때 파일 URI 옵션을 설정할 수 있습니다. URI 파섹 즉, C:\Adobe을 설정하면 파일이 클라이언트 컴퓨터가 아닌 서버의 폴더에 기록됩니다. URI는 출력 서비스가 생성하는 PDF/A 파일의 이름과 위치를 지정합니다.
 
 **렌더링 런타임 옵션 설정**
 
@@ -498,12 +500,12 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 
    개체의 `OutputClient` `generatePDFOutput` 방법을 호출하고 다음 값을 전달하여 PDF/A 문서를 만듭니다.
 
-   * 열거형 `TransformationFormat` 값입니다. PDF/A 문서를 생성하려면 을 `TransformationFormat.PDFA`지정합니다.
+   * 열거형 `TransformationFormat` 값입니다. To generate a PDF/A document, specify `TransformationFormat.PDFA`.
    * 양식 디자인의 이름을 지정하는 문자열 값입니다.
    * 양식 디자인이 있는 컨텐츠 루트를 지정하는 문자열 값입니다.
    * PDF 런타임 옵션이 포함된 `PDFOutputOptionsSpec` 개체입니다.
    * 렌더링 런타임 옵션이 포함된 `RenderOptionsSpec` 개체입니다.
-   * 양식 디자인과 병합할 데이터가 들어 있는 XML 데이터 소스가 들어 있는 `com.adobe.idp.Document` 개체입니다.
+   * The `com.adobe.idp.Document` object that contain the XML data source that contains data to merge with the form design.
    이 `generatePDFOutput` `OutputResult` 메서드는 작업 결과를 포함하는 개체를 반환합니다.
 
    >[!NOTE]
@@ -512,16 +514,16 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 
    >[!NOTE]
    >
-   >또한 `OutputClient` 개체의 `generatePDFOutput`2 메서드를 호출하여 PDF/A 문서를 만들 수 있습니다. (Content [Services(더 이상 사용되지 않음)에 있는 문서를 출력 서비스로 전달을 참조하십시오](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >You can also create a PDF /A document by invoking the `OutputClient` object’s `generatePDFOutput`2 method. (Content [Services(더 이상 사용되지 않음)에 있는 문서를 출력 서비스로 전달을 참조하십시오](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. 작업 결과를 검색합니다.
 
-   * 객체의 `com.adobe.idp.Document` 메서드를 호출하여 메서드의 상태를 나타내는 `generatePDFOutput` `OutputResult` `getStatusDoc` 객체를 만듭니다.
+   * Create a `com.adobe.idp.Document` object that represents the status of the `generatePDFOutput` method by invoking the `OutputResult` object’s `getStatusDoc` method.
    * 작업 결과를 포함할 `java.io.File` 객체를 만듭니다. 파일 이름 확장자가 .xml인지 확인합니다.
    * 객체의 메서드를 호출하여 `com.adobe.idp.Document` 객체의 내용을 파일에 복사합니다( `copyToFile` 메서드에서 반환된 `com.adobe.idp.Document` `com.adobe.idp.Document` `getStatusDoc` 객체를 사용하는지 확인).
    >[!NOTE]
    >
-   >출력 서비스는 PDF/A 문서를 `PDFOutputOptionsSpec` 개체의 `setFileURI` 메서드에 전달된 인수로 지정된 위치에 쓰지만 `OutputResult` 개체의 `getGeneratedDoc` 메서드를 호출하여 프로그래밍 방식으로 PDF/A 문서를 검색할 수 있습니다.
+   >Although the Output service writes the PDF/A document to the location specified by the argument that is passed to the `PDFOutputOptionsSpec` object’s `setFileURI` method, you can programmatically retrieve the PDF/A document by invoking the `OutputResult` object’s `getGeneratedDoc` method.
 
 **참고 항목**
 
@@ -535,7 +537,7 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 
 ### 웹 서비스 API를 사용하여 PDF/A 문서 만들기 {#create-a-pdf-a-document-using-the-web-service-api}
 
-출력 API(웹 서비스)를 사용하여 PDF/A 문서를 만듭니다.
+Create a PDF/A document by using the Output API (web service):
 
 1. 프로젝트 파일 포함
 
@@ -575,10 +577,10 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 
    * 생성자를 사용하여 `RenderOptionsSpec` 객체를 만듭니다.
    * 개체의 `PDFAConformance` 데이터 멤버에 열거형 값을 할당하여 `PDFAConformance` `RenderOptionsSpec` `PDFAConformance` 값을 설정합니다. 예를 들어 적합성 수준 A를 지정하려면 이 데이터 `PDFAConformance.A` 멤버에 할당합니다.
-   * 개체의 `PDFARevisionNumber` 데이터 멤버에 열거형 값을 할당하여 `PDFARevisionNumber` `RenderOptionsSpec` `PDFARevisionNumber` 값을 설정합니다. 이 데이터 `PDFARevisionNumber.Revision_1` 멤버에 할당합니다.
+   * 개체의 `PDFARevisionNumber` 데이터 멤버에 열거형 값을 할당하여 `PDFARevisionNumber` `RenderOptionsSpec` `PDFARevisionNumber` 값을 설정합니다. Assign `PDFARevisionNumber.Revision_1` to this data member.
    >[!NOTE]
    >
-   >PDF/A 문서의 PDF 버전은 1.4이며 지정한 값에 관계없이 사용할 수 있습니다.
+   >The PDF version of a PDF/A document is 1.4 regardless of which value you specify.
 
 1. PDF/A 문서를 생성합니다.
 
@@ -616,13 +618,13 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 
 출력 서비스는 일반적으로 XDP 파일로 저장되고 Designer에서 작성된 양식 디자인을 기반으로 비대화형 PDF 양식을 렌더링합니다. 양식 디자인이 포함된 `com.adobe.idp.Document` 개체를 출력 서비스로 전달할 수 있습니다. 그런 다음 출력 서비스는 `com.adobe.idp.Document` 개체에 있는 양식 디자인을 렌더링합니다.
 
-다른 AEM Forms 서비스 작업에서 인스턴스를 반환하면 `com.adobe.idp.Document` 객체를 출력 서비스에 전달할 수 있는 이점이 `com.adobe.idp.Document` 있습니다. 즉, 다른 서비스 작업에서 `com.adobe.idp.Document` 인스턴스를 가져와 렌더링할 수 있습니다. 예를 들어 다음 그림과 같이 XDP 파일이 이름이 지정된 컨텐츠 서비스(더 이상 사용되지 않음) 노드에 저장되어 `/Company Home/Form Designs`있다고 가정합니다.
+다른 AEM Forms 서비스 작업에서 인스턴스를 반환하면 `com.adobe.idp.Document` 객체를 출력 서비스에 전달할 수 있는 이점이 `com.adobe.idp.Document` 있습니다. That is, you can get a `com.adobe.idp.Document` instance from another service operation and render it. 예를 들어 다음 그림과 같이 XDP 파일이 이름이 지정된 컨텐츠 서비스(더 이상 사용되지 않음) 노드에 저장되어 `/Company Home/Form Designs`있다고 가정합니다.
 
-콘텐츠 서비스에서 Loan.xdp를 프로그래밍 방식으로 검색하고(더 이상 사용되지 않음) XDP 파일을 `com.adobe.idp.Document` 개체 내의 출력 서비스로 전달할 수 있습니다.
+You can programmatically retrieve Loan.xdp from Content Services (deprecated) and pass the XDP file to the Output service within a `com.adobe.idp.Document` object.
 
 >[!NOTE]
 >
->양식 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>For more information about the Forms service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-2}
 
@@ -646,21 +648,21 @@ Content Services(더 이상 사용되지 않음)에서 얻은 문서를 출력 �
 
 Java 또는 웹 서비스 API 파섹 XDP 파일은 `com.adobe.idp.Document` 인스턴스(또는 웹 서비스를 사용하는 경우 `BLOB` 인스턴스) 내에서 반환됩니다. 그런 다음 `com.adobe.idp.Document` 인스턴스를 출력 서비스로 전달할 수 있습니다.
 
-**비대화형 PDF 양식 렌더링**
+**Render the non-interactive PDF form**
 
 비대화형 양식을 렌더링하려면 Content Services(더 이상 사용되지 않음)에서 반환된 `com.adobe.idp.Document` 인스턴스를 출력 서비스로 전달합니다.
 
 >[!NOTE]
 >
->g와 `generatePDFOutput2`g라는 두 가지 새로운 메서드는 양식 디자인이 포함된 `eneratePrintedOutput2`개체를 `com.adobe.idp.Document` 수락합니다. 또한 인쇄 스트림을 네트워크 프린터로 전송할 때 양식 디자인이 `com.adobe.idp.Document`들어 있는 파일을 출력 서비스로 전달할 수 있습니다.
+>Two new methods named `generatePDFOutput2`and g `eneratePrintedOutput2`accept a `com.adobe.idp.Document` object that contains a form design. 또한 인쇄 스트림을 네트워크 프린터로 전송할 때 양식 디자인이 `com.adobe.idp.Document`들어 있는 파일을 출력 서비스로 전달할 수 있습니다.
 
 **양식 데이터 스트림으로 작업 수행**
 
-비대화형 양식을 PDF 파일로 저장할 수 있습니다. 이 양식은 Adobe Reader 또는 Acrobat에서 볼 수 있습니다.
+You can save the non-interactive form as a PDF file. The form can be viewed in Adobe Reader or Acrobat.
 
 **참고 항목**
 
-[Java API를 사용하여 문서를 출력 서비스로 전달](creating-document-output-streams.md#pass-documents-to-the-output-service-using-the-java-api)
+[Pass documents to the Output Service using the Java API](creating-document-output-streams.md#pass-documents-to-the-output-service-using-the-java-api)
 
 [웹 서비스 API 파섹](creating-document-output-streams.md#pass-documents-to-the-output-service-using-the-web-service-api)
 
@@ -690,17 +692,17 @@ Java 또는 웹 서비스 API 파섹 XDP 파일은 `com.adobe.idp.Document` 인�
 
    객체의 `DocumentManagementServiceClientImpl` `retrieveContent` 메서드를 호출하고 다음 값을 전달합니다.
 
-   * 컨텐츠가 추가되는 스토어를 지정하는 문자열 값. 기본 스토어는 `SpacesStore`입니다. 이 값은 필수 매개 변수입니다.
+   * 컨텐츠가 추가되는 스토어를 지정하는 문자열 값. 기본 스토어는 `SpacesStore`입니다. This value is a mandatory parameter.
    * 검색할 컨텐츠의 정규화된 경로(예: `/Company Home/Form Designs/Loan.xdp`)를 지정하는 문자열 값. 이 값은 필수 매개 변수입니다.
    * 버전을 지정하는 문자열 값입니다. 이 값은 선택적 매개 변수이며 빈 문자열을 전달할 수 있습니다. 이러한 경우 최신 버전이 검색됩니다.
-   이 `retrieveContent` 메서드는 XDP 파일이 포함된 `CRCResult` 객체를 반환합니다. 객체의 `com.adobe.idp.Document` `CRCResult` `getDocument` 메서드를 호출하여 인스턴스를 검색합니다.
+   The `retrieveContent` method returns a `CRCResult` object that contains the XDP file. Retrieve a `com.adobe.idp.Document` instance by invoking the `CRCResult` object’s `getDocument` method.
 
 1. 비대화형 PDF 양식을 렌더링합니다.
 
    객체의 `OutputClient` `generatePDFOutput2` 메서드를 호출하고 다음 값을 전달합니다.
 
    * 열거형 `TransformationFormat` 값입니다. PDF 문서를 생성하려면 을 `TransformationFormat.PDF`지정합니다.
-   * 이미지와 같은 추가 리소스가 있는 컨텐츠 루트를 지정하는 문자열 값입니다.
+   * A string value that specifies the content root where the additional resources such as images are located.
    * 양식 디자인을 나타내는 `com.adobe.idp.Document` 개체( `CRCResult` 개체의 `getDocument` 메서드에서 반환되는 인스턴스 사용)
    * PDF 런타임 옵션이 포함된 `PDFOutputOptionsSpec` 개체입니다.
    * 렌더링 런타임 옵션이 포함된 `RenderOptionsSpec` 개체입니다.
@@ -710,7 +712,7 @@ Java 또는 웹 서비스 API 파섹 XDP 파일은 `com.adobe.idp.Document` 인�
 1. 양식 데이터 스트림으로 작업을 수행합니다.
 
    * 객체의 `com.adobe.idp.Document` `OutputResult` `getGeneratedDoc` 메서드를 호출하여 비대화형 양식을 나타내는 개체를 검색합니다.
-   * 작업 결과를 포함하는 `java.io.File` 개체를 만듭니다. 파일 이름 확장자가 .pdf인지 확인합니다.
+   * Create a `java.io.File` object that contains the results of the operation. 파일 이름 확장자가 .pdf인지 확인합니다.
    * 객체의 메서드를 호출하여 `com.adobe.idp.Document` 객체의 내용을 파일에 복사합니다( `copyToFile` 메서드에서 반환된 `com.adobe.idp.Document` `com.adobe.idp.Document` `getGeneratedDoc` 객체를 사용하는지 확인).
 
 **참고 항목**
@@ -731,11 +733,11 @@ Java 또는 웹 서비스 API 파섹 XDP 파일은 `com.adobe.idp.Document` 인�
 
 1. 프로젝트 파일 포함
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 이 클라이언트 응용 프로그램은 두 개의 AEM Forms 서비스를 호출하므로 두 개의 서비스 참조를 만듭니다. 출력 서비스와 관련된 서비스 참조에 대해 다음 WSDL 정의를 사용합니다. `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`Adobe
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. Because this client application invokes two AEM Forms services, create two service references. Use the following WSDL definition for the service reference associated with the Output service: `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`.
 
-   문서 관리 서비스와 관련된 서비스 참조에 대해 다음 WSDL 정의를 사용합니다. `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`Adobe
+   Use the following WSDL definition for the service reference associated with the Document Management service: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   데이터 `BLOB` 유형은 두 서비스 참조 모두에서 일반적이므로 데이터 유형을 사용할 때 해당 `BLOB` 데이터 유형을 완전히 분류합니다. 해당 웹 서비스 빠른 시작에서는 모든 `BLOB` 인스턴스가 정규화된 인스턴스입니다.
+   Because the `BLOB` data type is common to both service references, fully qualify the `BLOB` data type when using it. 해당 웹 서비스 빠른 시작에서는 모든 `BLOB` 인스턴스가 정규화된 인스턴스입니다.
 
    >[!NOTE]
    >
@@ -759,27 +761,27 @@ Java 또는 웹 서비스 API 파섹 XDP 파일은 `com.adobe.idp.Document` 인�
 
 1. Content Services에서 양식 디자인을 검색합니다(더 이상 사용되지 않음).
 
-   객체의 `DocumentManagementServiceClient` `retrieveContent` 메서드를 호출하고 다음 값을 전달하여 컨텐츠를 검색합니다.
+   Retrieve content by invoking the `DocumentManagementServiceClient` object’s `retrieveContent` method and passing the following values:
 
-   * 컨텐츠가 추가되는 스토어를 지정하는 문자열 값. 기본 스토어는 `SpacesStore`입니다. 이 값은 필수 매개 변수입니다.
+   * A string value that specifies the store where the content is added. 기본 스토어는 `SpacesStore`입니다. This value is a mandatory parameter.
    * 검색할 컨텐츠의 정규화된 경로(예: `/Company Home/Form Designs/Loan.xdp`)를 지정하는 문자열 값. 이 값은 필수 매개 변수입니다.
-   * 버전을 지정하는 문자열 값입니다. 이 값은 선택적 매개 변수이며 빈 문자열을 전달할 수 있습니다. 이러한 경우 최신 버전이 검색됩니다.
-   * 검색 링크 값을 저장하는 문자열 출력 매개 변수입니다.
-   * 컨텐츠를 저장하는 `BLOB` 출력 매개 변수입니다. 이 출력 매개 변수를 사용하여 컨텐츠를 검색할 수 있습니다.
-   * 컨텐츠 속성을 저장하는 `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` 출력 매개 변수입니다.
-   * 출력 `CRCResult` 매개 변수입니다. 이 객체를 사용하는 대신 `BLOB` 출력 매개 변수를 사용하여 컨텐츠를 검색할 수 있습니다.
+   * A string value that specifies the version. This value is an optional parameter, and you can pass an empty string. 이러한 경우 최신 버전이 검색됩니다.
+   * A string output parameter that stores the browse link value.
+   * A `BLOB` output parameter that stores the content. You can use this output parameter to retrieve the content.
+   * A `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` output parameter that stores content attributes.
+   * A `CRCResult` output parameter. Instead of using this object, you can use the `BLOB` output parameter to retrieve the content.
 
 1. 비대화형 PDF 양식을 렌더링합니다.
 
    객체의 `OutputServiceClient` `generatePDFOutput2` 메서드를 호출하고 다음 값을 전달합니다.
 
    * 열거형 `TransformationFormat` 값입니다. PDF 문서를 생성하려면 을 `TransformationFormat.PDF`지정합니다.
-   * 이미지와 같은 추가 리소스가 있는 컨텐츠 루트를 지정하는 문자열 값입니다.
+   * A string value that specifies the content root where the additional resources such as images are located.
    * 양식 디자인을 나타내는 `BLOB` 개체(Content Services에서 반환되는 `BLOB` 인스턴스 사용(더 이상 사용되지 않음)
    * PDF 런타임 옵션이 포함된 `PDFOutputOptionsSpec` 개체입니다.
    * 렌더링 런타임 옵션이 포함된 `RenderOptionsSpec` 개체입니다.
    * 양식 디자인과 병합할 데이터가 들어 있는 XML 데이터 소스가 들어 있는 `BLOB` 개체입니다.
-   * 메서드에 의해 채워지는 출력 `BLOB` 개체입니다 `generatePDFOutput2` . 이 `generatePDFOutput2` 메서드는 문서를 설명하는 생성된 메타데이터로 이 객체를 채웁니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
+   * An output `BLOB` object that is populated by the `generatePDFOutput2` method. 이 `generatePDFOutput2` 메서드는 문서를 설명하는 생성된 메타데이터로 이 객체를 채웁니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
    * 작업 결과를 포함하는 출력 `OutputResult` 개체입니다. (이 매개 변수 값은 웹 서비스 호출에만 필요합니다.)
    이 `generatePDFOutput2` 메서드는 비대화형 PDF 양식이 포함된 `BLOB` 개체를 반환합니다.
 
@@ -798,27 +800,27 @@ Java 또는 웹 서비스 API 파섹 XDP 파일은 `com.adobe.idp.Document` 인�
 
 ## 저장소에 있는 문서를 출력 서비스로 전달 {#passing-documents-located-in-the-repository-to-the-output-service}
 
-출력 서비스는 일반적으로 XDP 파일로 저장되고 Designer에서 작성된 양식 디자인을 기반으로 비대화형 PDF 양식을 렌더링합니다. 양식 디자인이 포함된 `com.adobe.idp.Document` 개체를 출력 서비스로 전달할 수 있습니다. 그런 다음 출력 서비스는 `com.adobe.idp.Document` 개체에 있는 양식 디자인을 렌더링합니다.
+The Output service renders a non-interactive PDF form that is based on a form design that is typically saved as an XDP file and created in Designer. You can pass a `com.adobe.idp.Document` object that contains the form design to the Output service. The Output service then renders the form design located in the `com.adobe.idp.Document` object.
 
-다른 AEM Forms 서비스 작업에서 인스턴스를 반환하면 `com.adobe.idp.Document` 객체를 출력 서비스에 전달할 수 있는 이점이 `com.adobe.idp.Document` 있습니다. 즉, 다른 서비스 작업에서 `com.adobe.idp.Document` 인스턴스를 가져와 렌더링할 수 있습니다. 예를 들어 다음 그림과 같이 XDP 파일이 AEM Forms 저장소에 저장되었다고 가정합니다.
+An advantage of passing a `com.adobe.idp.Document` object to the Output service is that other AEM Forms service operations return a `com.adobe.idp.Document` instance. That is, you can get a `com.adobe.idp.Document` instance from another service operation and render it. For example, assume that an XDP file is stored in the AEM Forms repository, as shown in the following illustration.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
-FormsFolder ** 폴더는 AEM Forms 저장소의 사용자 정의 위치입니다(이 위치는 예이며 기본적으로 존재하지 않음). 이 예제에서는 Loan.xdp라는 양식 디자인이 이 폴더에 있습니다. 양식 디자인 외에도 이미지와 같은 기타 양식 자료를 이 위치에 저장할 수 있습니다. AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
+The *FormsFolder* folder is a user-defined location in the AEM Forms repository (this location is an example and does not exist by default). In this example, a form design named Loan.xdp is located in this folder. In addition to the form design, other form collateral such as images can be stored in this location. The path to a resource located in the AEM Forms repository is:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
-AEM Forms 저장소에서 프로그래밍 방식으로 Loan.xdp를 검색하고 `com.adobe.idp.Document` 객체 내의 출력 서비스로 전달할 수 있습니다.
+You can programmatically retrieve Loan.xdp from the AEM Forms repository and pass it to the Output service within a `com.adobe.idp.Document` object.
 
-두 가지 방법 중 하나를 사용하여 저장소에 있는 XDP 파일을 기반으로 PDF를 만들 수 있습니다. XDP 위치를 참조로 전달하거나 저장소에서 XDP를 프로그래밍 방식으로 검색하여 XDP 파일 내의 출력 서비스로 전달할 수 있습니다.
+You can create a PDF based on an XDP file located in the repository using one of two ways. You can pass the XDP loction by reference or you can programmatically retrieve the XDP from the repository and pass it to the Output service within an XDP file.
 
-[빠른 시작(EJB 모드):Java API를 사용하여 응용 프로그램 XDP 파일을 기반으로](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) PDF 문서 만들기(XDP 파일의 위치를 참조로 전달하는 방법 표시).
+[Quick Start (EJB mode): Creating a PDF document based on an application XDP file using the Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) (shows how to pass the location of the XDP file by reference).
 
-[빠른 시작(EJB 모드):AEM Forms 저장소에 있는 문서를 Java API를 사용하여](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) 출력 서비스로 전달(AEM Forms 저장소에서 XDP 파일을 프로그래밍 방식으로 검색하고 `com.adobe.idp.Document` 인스턴스 내에서 출력 서비스로 전달하는 방법 표시)합니다. (이 섹션에서는 이 작업을 수행하는 방법에 대해 설명합니다.)
+[Quick Start (EJB mode): Passing a document located in the AEM Forms Repository to the Output service using the Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (shows how to programmatically retrieve the XDP file from the AEM Forms Repository and pass it to the Output service within a `com.adobe.idp.Document` instance). (This section discusses how to perform this task)
 
 >[!NOTE]
 >
->양식 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>For more information about the Forms service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-3}
 
@@ -842,33 +844,33 @@ AEM Forms 저장소에서 가져온 문서를 출력 서비스로 전달하려�
 
 리포지토리 API를 사용하여 AEM Forms 저장소에서 XDP 파일을 검색합니다. 자세한 내용은 [리소스 읽기를 참조하십시오](/help/forms/developing/aem-forms-repository.md#reading-resources).
 
-XDP 파일은 `com.adobe.idp.Document` 인스턴스(또는 웹 서비스를 사용하는 경우 `BLOB` 인스턴스) 내에서 반환됩니다. 그런 다음 출력 서비스의 `com.adobe.idp.Document` 인스턴스를 전달할 수 있습니다.
+The XDP file is returned within a `com.adobe.idp.Document` instance (or a `BLOB` instance if you are using web services). You can then pass the `com.adobe.idp.Document` instance o the Output service.
 
-**비대화형 PDF 양식 렌더링**
+**Render the non-interactive PDF form**
 
 비대화형 양식을 렌더링하려면 AEM Forms 리포지토리 API를 사용하여 반환된 `com.adobe.idp.Document` 인스턴스를 전달합니다.
 
 >[!NOTE]
 >
->양식 디자인이 포함된 `generatePDFOutput2`개체에 대해 두 개의 새 메서드를 `generatePrintedOutput2`적용하고 `com.adobe.idp.Document`허용합니다. 또한 인쇄 스트림을 네트워크 프린터로 전송할 때 양식 디자인이 `com.adobe.idp.Document` 들어 있는 파일을 출력 서비스로 전달할 수 있습니다.
+>양식 디자인이 포함된 `generatePDFOutput2`개체에 대해 두 개의 새 메서드를 `generatePrintedOutput2`적용하고 `com.adobe.idp.Document`허용합니다. You can also pass a `com.adobe.idp.Document` that contains the form design to the Output service when sending a print stream to a network printer.
 
 **양식 데이터 스트림으로 작업 수행**
 
-비대화형 양식을 PDF 파일로 저장할 수 있습니다. 이 양식은 Adobe Reader 또는 Acrobat에서 볼 수 있습니다.
+You can save the non-interactive form as a PDF file. 이 양식은 Adobe Reader 또는 Acrobat에서 볼 수 있습니다.
 
 **참고 항목**
 
-[Java API를 사용하여 저장소에 있는 문서를 출력 서비스로 전달](creating-document-output-streams.md#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Pass documents located in the Repository to the Output Service using the Java API](creating-document-output-streams.md#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[출력 서비스 API 빠른 시작](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
+[Output Service API Quick Starts](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
 ResourceRepositoryClient
 
-### Java API를 사용하여 저장소에 있는 문서를 출력 서비스로 전달 {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
+### Pass documents located in the Repository to the Output Service using the Java API {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
 
 출력 서비스 및 저장소 API(Java)를 사용하여 저장소에서 검색한 문서를 전달합니다.
 
@@ -884,7 +886,7 @@ ResourceRepositoryClient
 
 1. AEM Forms 저장소에서 양식 디자인을 검색합니다.
 
-   객체의 메서드를 호출하고 URI 위치를 지정하는 문자열 값을 XDP 파일에 전달합니다. `ResourceRepositoryClient` `readResourceContent` 예, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. 이 값은 필수입니다. 이 메서드는 XDP 파일을 나타내는 `com.adobe.idp.Document` 인스턴스를 반환합니다.
+   객체의 메서드를 호출하고 URI 위치를 지정하는 문자열 값을 XDP 파일에 전달합니다. `ResourceRepositoryClient` `readResourceContent` 예, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. This value is a mandatory. This method returns a `com.adobe.idp.Document` instance that represents the XDP file.
 
 1. 비대화형 PDF 양식을 렌더링합니다.
 
@@ -1408,15 +1410,15 @@ PDF 문서를 프린터로 전송할 때의 또 다른 제한 사항은 인쇄�
    <td><p>기본 또는 사용자 정의 xdc 출력 스트림으로 dpl203.xdc를 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>DPL300DPI </p></td>
+   <td><p>DPL 300 DPI </p></td>
    <td><p>DPL 300DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>DPL406DPI </p></td>
+   <td><p>DPL 406 DPI </p></td>
    <td><p>DPL 400 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>DPL600DPI </p></td>
+   <td><p>DPL 600 DPI </p></td>
    <td><p>DPL 600DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
@@ -1432,11 +1434,11 @@ PDF 문서를 프린터로 전송할 때의 또 다른 제한 사항은 인쇄�
    <td><p>사용자 정의 IPL 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>IPL300DPI </p></td>
+   <td><p>IPL 300 DPI </p></td>
    <td><p>IPL 300DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>IPL400DPI </p></td>
+   <td><p>IPL 400 DPI </p></td>
    <td><p>IPL 400DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
@@ -1452,11 +1454,11 @@ PDF 문서를 프린터로 전송할 때의 또 다른 제한 사항은 인쇄�
    <td><p>사용자 지정 TPCL 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL305DPI </p></td>
+   <td><p>TPCL 305 DPI </p></td>
    <td><p>TPCL 305 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL600DPI </p></td>
+   <td><p>TPCL 600 DPI </p></td>
    <td><p>TPCL 600DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
@@ -1464,7 +1466,7 @@ PDF 문서를 프린터로 전송할 때의 또 다른 제한 사항은 인쇄�
    <td><p>ZPL 203 DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
   <tr>
-   <td><p>ZPL300DPI </p></td>
+   <td><p>ZPL 300 DPI </p></td>
    <td><p>ZPL 300DPI 출력 스트림을 만듭니다.</p></td>
   </tr>
  </tbody>
