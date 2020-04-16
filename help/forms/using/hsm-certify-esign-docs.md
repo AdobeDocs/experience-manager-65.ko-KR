@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Experience Manager Forms는 HSM에 저장된 자격 증명을 사용하거
 
 ## AEM Forms를 사용하여 HSM 또는 토큰 장치를 구성하기 전에 {#configurehsmetoken}
 
-* Install [AEM Forms add-on](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) package.
+* Install [AEM Forms add-on](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) package.
 * AEM 서버와 동일한 컴퓨터에 HSM 또는 토큰 클라이언트 소프트웨어를 설치하고 구성합니다. 클라이언트 소프트웨어는 HSM 및 토큰 디바이스와 통신하기 위해 필요합니다.
 * (Microsoft Windows 전용) JAVA_HOME_32 환경 변수를 설정하여 32비트 버전의 Java 8 Development Kit(JDK 8)가 설치된 디렉토리를 가리킵니다. 디렉토리의 기본 경로는 C:\Program Files(x86)\Java\jdk&lt;version>입니다.
 * (OSGi의 AEM Forms 전용) 트러스트 저장소에 루트 인증서를 설치합니다. 서명된 PDF를 확인해야 합니다.
@@ -74,7 +74,7 @@ Adobe Experience Manager Forms는 HSM에 저장된 자격 증명을 사용하거
 1. [사용자 **설정 편집** ] 페이지에서 KeyStore **관리를 클릭합니다**.
 
 1. KeyStore 관리 대화 상자에서 **키 저장소 파일에서** 개인 키 추가 옵션을 확장하고 별칭을 제공합니다. 별칭은 Reader 확장 작업을 수행하는 데 사용됩니다.
-1. 인증서 파일을 업로드하려면 키 **저장소 파일 선택을** 클릭하고 `.pfx` 파일을 업로드합니다.
+1. 인증서 파일을 업로드하려면 키 저장소 **파일 선택을** 클릭하고 `.pfx` 파일을 업로드합니다.
 1. 인증서에 **연결된 키 저장소 암호**,**개인 키**&#x200B;암호 **및** 개인 키 별칭을 각 필드에 추가합니다. 제출을 **클릭합니다**.
 
    >[!NOTE]
@@ -98,13 +98,15 @@ Adobe Experience Manager Forms는 HSM에 저장된 자격 증명을 사용하거
 별칭에는 HSM 또는 프로토콜에 필요한 모든 매개 변수가 포함되어 있습니다. 아래 지침에 따라 eSign 또는 디지털 서명에 사용되는 각 HSM 또는 전자 서명 인증의 별칭을 만듭니다.
 
 1. AEM 콘솔을 엽니다. AEM 콘솔의 기본 URL은 https://&lt;host>:&lt;port>/system/console/configMgr입니다.
-1. HSM 자격 **증명 구성** 서비스를 열고 다음 필드에 값을 지정합니다.
+1. HSM Credentials **Configuration Service를** 열고 다음 필드에 값을 지정합니다.
 
    * **자격 증명 별칭**:별칭을 식별하는 데 사용되는 문자열을 지정합니다. 이 값은 서명 필드 작업과 같은 일부 디지털 서명 작업의 속성으로 사용됩니다.
    * **DLL 경로**:서버에서 HSM 또는 전자 필기장 클라이언트 라이브러리의 정규화된 경로를 지정합니다. 예: C:\Program Files\LunaSA\cryptoki.dll. 클러스터된 환경에서 이 경로는 클러스터의 모든 서버에 대해 동일해야 합니다.
    * **HSM Pin**:장치 키에 액세스하는 데 필요한 암호를 지정합니다.
    * **HSM 슬롯 ID**:정수 유형의 슬롯 식별자를 지정합니다. 슬롯 ID는 클라이언트별로 설정됩니다. 두 번째 시스템을 다른 파티션(예: 동일한 HSM 장치의 HSMPART2)에 등록하는 경우 슬롯 1은 클라이언트에 대한 HSMPART2 파티션과 연결됩니다.
-   **** 참고:Etoken *을 구성하는 동안 HSM 슬롯 ID 필드에 숫자 값을 지정합니다. 서명 작업을 수행하려면 숫자 값이 필요합니다.*
+   >[!NOTE]
+   >
+   >Etoken을 구성하는 동안 HSM 슬롯 ID 필드에 숫자 값을 지정합니다. 서명 작업을 수행하려면 숫자 값이 필요합니다.
 
    * **인증서 SHA1**:사용 중인 자격 증명에 대한 공개 키(.cer) 파일의 SHA1 값(지문)을 지정합니다. SHA1 값에 사용된 공백이 없는지 확인합니다. 실제 인증서를 사용하는 경우에는 필수가 아닙니다.
    * **HSM 디바이스 유형**:HSM(Luna 또는 기타) 또는 eToken 디바이스의 제조업체를 선택합니다.
