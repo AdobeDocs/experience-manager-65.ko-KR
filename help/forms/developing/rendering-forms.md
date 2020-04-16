@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: 687cdacc2868de16a4df968dddedd330ce3317bb
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -30,8 +30,9 @@ Forms 서비스를 사용하면 Designer에서 만든 양식의 유효성 검사
 * 웹 서비스(Java Base64) 예는 Java 서블릿입니다.
 * 웹 서비스(MTOM 파섹) 예제는 콘솔 응용 프로그램입니다(일부 빠른 시작 시 MTOM 예가 있는 것은 아님).
 
-***참고&#x200B;**:Forms 서비스를 호출하는 데 java 서블릿을 사용하는 웹 응용 프로그램을 만드는 방법에 대한 자세한 내용은 양식을 렌더링하는 웹[응용 프로그램 만들기를 참조하십시오](/help/forms/developing/creating-web-applications-renders-forms.md).*
-
+>[!NOTE]
+>
+> Forms 서비스를 호출하는 데 java 서블릿을 사용하는 웹 응용 프로그램을 만드는 방법에 대한 자세한 내용은 양식을 렌더링하는 웹 [응용 프로그램 만들기를 참조하십시오](/help/forms/developing/creating-web-applications-renders-forms.md).
 
 다음 두 가지 방법 중 하나를 사용하여 양식 디자인(XDP 파일) 또는 PDF 문서를 Forms 서비스에 전달할 수 있습니다.
 
