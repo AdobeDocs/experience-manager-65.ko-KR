@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -71,7 +71,9 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 1. 조각 생성 대화 상자에서 다음 정보를 지정합니다.
 
    * **이름**:조각 이름입니다. 기본값은 패널의 요소 이름입니다. 필수 필드입니다.
-      ***참고&#x200B;**:조각에 대한 고유한 이름을 지정해야 합니다. 이름이 같은 다른 조각이 이미 있는 경우 조각을 생성하지 못합니다.*
+      >[!NOTE]
+      >
+      >조각에 대한 고유한 이름을 지정해야 합니다. 이름이 같은 다른 조각이 이미 있는 경우 조각을 생성하지 못합니다.
 
    * **제목**:조각의 제목입니다. 기본값은 패널의 제목입니다.
 
