@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -44,7 +44,9 @@ PDF 문서 내에 여러 서명 필드가 있는 경우 서명 필드의 전체 
 * PDF 문서에 있는 모든 디지털 서명을 확인할 수 있습니다. (여러 [디지털 서명 확인을 참조하십시오](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * 서명 필드에서 디지털 서명을 제거합니다. (디지털 [서명 제거를 참조하십시오](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
-   ***참고&#x200B;**:서명 서비스에 대한 자세한 내용은 AEM Forms[에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).*
+>[!NOTE]
+>
+> 서명 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## 서명 필드 추가 {#adding-signature-fields}
 
@@ -131,12 +133,12 @@ PDF 문서에 서명 필드를 성공적으로 추가하려면 서명 필드의 
       * 서명 필드를 추가할 페이지 번호를 나타내는 `java.lang.Integer` 값입니다.
       * 서명 필드의 위치를 지정하는 `PositionRectangle` 개체입니다.
       * 디지털 서명이 서명 필드에 적용된 후 잠긴 PDF 문서의 필드를 지정하는 `FieldMDPOptions` 개체입니다. 이 매개 변수 값은 선택 사항이며 전달할 수 `null`있습니다.
-   * 다양한 런타임 값을 지정하는 `PDFSeedValueOptions` 개체. 이 매개 변수 값은 선택 사항이며 전달할 수 `null`있습니다.
+   * 다양한 런타임 값을 지정하는 `PDFSeedValueOptions` 객체입니다. 이 매개 변수 값은 선택 사항이며 전달할 수 `null`있습니다.
 
       이 `addSignatureField` `com.adobe.idp`메서드는 `Document` 서명 필드를 포함하는 PDF 문서를 나타내는 개체입니다.
    >[!NOTE]
    >
-   >객체의 메서드를 호출하여 보이지 않는 서명 필드를 추가할 수 있습니다. `SignatureServiceClient` `addInvisibleSignatureField`
+   >You can invoke the `SignatureServiceClient` object’s `addInvisibleSignatureField` method to add an invisible signature field.
 
 1. PDF 문서를 PDF 파일로 저장
 
@@ -187,14 +189,14 @@ PDF 문서에 서명 필드를 성공적으로 추가하려면 서명 필드의 
    * 서명 필드가 추가된 PDF 문서를 나타내는 `BLOB` 개체입니다.
    * 서명 필드 이름을 지정하는 문자열 값입니다.
    * 서명 필드가 추가되는 페이지 번호를 나타내는 정수 값입니다.
-   * 서명 필드의 위치를 지정하는 `PositionRect` 개체입니다.
-   * 디지털 서명이 서명 필드에 적용된 후 잠긴 PDF 문서의 필드를 지정하는 `FieldMDPOptions` 개체입니다. 이 매개 변수 값은 선택 사항이며 전달할 수 `null`있습니다.
-   * 다양한 런타임 값을 지정하는 `PDFSeedValueOptions` 개체. 이 매개 변수 값은 선택 사항이며 전달할 수 `null`있습니다.
+   * A `PositionRect` object that specifies the location of the signature field.
+   * A `FieldMDPOptions` object that specifies fields in the PDF document that are locked after a digital signature is applied to the signature field. 이 매개 변수 값은 선택 사항이며 전달할 수 `null`있습니다.
+   * A `PDFSeedValueOptions` object that specifies various run-time values. 이 매개 변수 값은 선택 사항이며 전달할 수 `null`있습니다.
    이 `addSignatureField` 메서드는 서명 필드가 포함된 PDF 문서를 나타내는 `BLOB` 개체를 반환합니다.
 
 1. PDF 문서를 PDF 파일로 저장
 
-   * 생성자를 호출하고 서명 필드를 포함할 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * 생성자를 호출하고 서명 필드가 포함될 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * 메서드에서 반환된 `BLOB` 개체의 내용을 저장하는 바이트 배열을 `addSignatureField` 만듭니다. 개체 데이터 멤버의 값을 가져와 바이트 배열을 `BLOB` 채웁니다 `binaryData` .
    * 생성자를 호출하고 객체를 전달하여 `System.IO.BinaryWriter` `System.IO.FileStream` 객체를 만듭니다.
    * 개체의 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다. `System.IO.BinaryWriter` `Write`
@@ -207,15 +209,15 @@ PDF 문서에 서명 필드를 성공적으로 추가하려면 서명 필드의 
 
 ## 서명 필드 이름 검색 {#retrieving-signature-field-names}
 
-서명하거나 인증할 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 잘 모르거나 이름을 확인하려면 프로그래밍 방식으로 검색할 수 있습니다. 서명 서비스는 서명 필드의 정규화된 이름(예: `form1[0].grantApplication[0].page1[0].SignatureField1[0]`) 을 반환합니다.
+서명하거나 인증할 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 >[!NOTE]
 >
->서명 서비스에 대한 자세한 내용은 AEM [Forms에 대한 서비스 참조를 참조하십시오.](https://www.adobe.com/go/learn_aemforms_services_63)
+>For more information about the Signature service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)
 
 ### 단계 요약 {#summary_of_steps-1}
 
-서명 필드 이름을 검색하려면 다음 작업을 수행하십시오.
+To retrieve signature field names, perform the following tasks:
 
 1. 프로젝트 파일 포함
 1. 서명 클라이언트 만들기를 참조하십시오.
@@ -398,11 +400,11 @@ PDF 문서에 있는 서명 필드를 수정하려면 다음 작업을 수행하
 * **필터**:서명 필드에 사용할 필터를 지정합니다. 예를 들어 Adobe.PPKLite 필터를 사용할 수 있습니다. (PDF [참조](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)참조)
 * **플래그 옵션**:이 서명 필드와 연결된 플래그 값을 지정합니다. 값이 1이면 서명자는 항목에 대해 지정된 값만 사용해야 합니다. 값이 0이면 다른 값이 허용됩니다. 다음은 비트 위치입니다.
 
-   * **** 1(필터):서명 필드에 서명하는 데 사용할 서명 처리기
-   * **** 2(SubFilter):서명 시 사용할 수 있는 인코딩을 나타내는 이름 배열
+   * **1(필터):** 서명 필드에 서명하는 데 사용할 서명 처리기
+   * **2(SubFilter):** 서명 시 사용할 수 있는 인코딩을 나타내는 이름 배열
    * **3. 5)**:서명 필드에 서명하는 데 사용할 서명 처리기의 최소 필수 버전 번호
-   * **** 4(사유):문서 서명의 가능한 이유를 지정하는 문자열 배열
-   * **** 5(PDFLegalWarnings):가능한 법적 증명을 지정하는 문자열 배열
+   * **4(사유):** 문서 서명의 가능한 이유를 지정하는 문자열 배열
+   * **5(PDFLegalWarnings):** 가능한 법적 증명을 지정하는 문자열 배열
 
 * **법적 증거 자료**:문서가 인증되면 문서의 내용을 모호하게 만들거나 오해할 수 있도록 특정 유형의 컨텐츠를 자동으로 스캔합니다. 예를 들어, 주석에서는 인증되는 내용을 이해하는 데 중요한 텍스트를 가릴 수 있습니다. 스캔 프로세스는 이 유형의 컨텐츠가 있음을 나타내는 경고를 생성합니다. 또한 경고를 생성할 수 있는 컨텐츠에 대한 추가 설명을 제공합니다.
 * **권한**:서명을 무효화하지 않고 PDF 문서에서 사용할 수 있는 권한을 지정합니다.
@@ -640,7 +642,7 @@ PDF 문서에 디지털 서명하는 데 사용된 인증서가 해지되었는�
 
 * **NoCheck**:해지 검사를 수행하지 마십시오.
 * **최상의 노력**:체인에 있는 모든 인증서의 취소를 항상 확인합니다. 확인 시 문제가 발생하면 해제가 유효하다고 가정합니다. 오류가 발생하는 경우 인증서가 해지되지 않았다고 가정합니다.
-* **** CheckIfAvailable:해지 정보를 사용할 수 있는 경우 체인에 있는 모든 인증서의 취소를 확인하십시오. 확인 시 문제가 발생하면 해제가 잘못된 것으로 간주됩니다. 오류가 발생하면 인증서가 해지되고 유효하지 않다고 가정합니다. (이 값이 기본값입니다.)
+* **CheckIfAvailable:** 해지 정보를 사용할 수 있는 경우 체인에 있는 모든 인증서의 취소를 확인하십시오. 확인 시 문제가 발생하면 해제가 잘못된 것으로 간주됩니다. 오류가 발생하면 인증서가 해지되고 유효하지 않다고 가정합니다. (이 값이 기본값입니다.)
 * **AlwaysCheck**:체인에 있는 모든 인증서의 취소를 확인하십시오. 인증서에 해지 정보가 없는 경우 취소는 잘못된 것으로 간주됩니다.
 
 인증서에 대한 해지 검사를 수행하려면 `CRLOptionSpec` 개체를 사용하여 CRL(인증서 해지 목록) 서버에 URL을 지정할 수 있습니다. 그러나 해지 검사를 수행하려고 하지만 CRL 서버에 대한 URL을 지정하지 않으면 서명 서비스는 인증서에서 URL을 가져옵니다.
@@ -715,7 +717,7 @@ PDF 문서에 성공적으로 서명하려면 디지털 서명이 포함될 서�
    * 서명자의 인증서에 대한 해지 검사를 수행할지 여부를 지정하는 `java.lang.Boolean` 개체.
    * OCSP(Online Certificate Status Protocol) 지원에 대한 기본 설정을 저장하는 `OCSPOptionSpec` 개체입니다. 해지 검사를 수행하지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 `null`있습니다.
    * CRL(인증서 해지 목록) 기본 설정을 저장하는 `CRLPreferences` 객체입니다. 해지 검사를 수행하지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 `null`있습니다.
-   * TSP(타임스탬프 공급자) 지원에 대한 환경 설정을 저장하는 `TSPPreferences` 개체입니다. 이 매개 변수는 선택 사항이며 `null`사용할 수 있습니다. 자세한 내용은 AEM Forms [API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * TSP(타임스탬프 공급자) 지원에 대한 환경 설정을 저장하는 `TSPPreferences` 개체입니다. 이 매개 변수는 선택 사항이며 `null`사용할 수 있습니다. 자세한 내용은 AEM Forms API [참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    이 `sign` 메서드는 서명된 PDF 문서를 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. 서명된 PDF 문서 저장
@@ -1401,7 +1403,7 @@ Signature Service API(Java)를 사용하여 디지털 서명을 확인합니다.
 
    개체의 `SignatureServiceClient` `verify2` 메서드를 호출하고 다음 값을 전달하여 서명을 확인합니다.
 
-   * 디지털 서명 또는 인증된 PDF 문서가 포함된 `com.adobe.idp.Document` 개체입니다.
+   * 디지털 서명 또는 인증된 PDF 문서가 들어 있는 `com.adobe.idp.Document` 개체입니다.
    * 확인할 서명이 들어 있는 서명 필드 이름을 나타내는 문자열 값입니다.
    * PKI 런타임 옵션이 포함된 `PKIOptions` 개체입니다.
    * SPI 정보가 포함된 `VerifySPIOptions` 인스턴스입니다. 이 매개 변수에 `null` 대해 지정할 수 있습니다.
