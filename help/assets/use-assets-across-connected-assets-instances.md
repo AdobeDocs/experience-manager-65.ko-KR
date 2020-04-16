@@ -3,7 +3,7 @@ title: 연결된 자산을 사용하여 Adobe Experience Manager Sites 작성 �
 description: 다른 Experience Manager Site 배포에서 웹 페이지를 만들 때 원격 Adobe Experience Manager Assets 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04fef21d6027dcfcb6a67a1121e0d1570926db41
+source-git-commit: 7628b5edd52a144aa4f92f8145493b9b927aeda0
 
 ---
 
@@ -89,9 +89,9 @@ AEM 관리자가 이 통합을 만들 수 있습니다. 통합을 만들면 이 
    1. 속성 마법사에서 **[!UICONTROL 경로]** 필드를 다음 매핑으로 변경하여 마운트 지점 **[!UICONTROL connectedassets]**&#x200B;을 제외하도록 해당 정규식을 업데이트합니다.
    | 이전 | 이후 |
    |---|---|
-   | /content/dam(/((?!/subassets).)*/)renditions/original | /content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*/)renditions/original | /content/dam(/((?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*)/jcr:content/metadata | /content/dam(/((?!connectedassets).)*/)jcr:content/metadata |
+   | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
