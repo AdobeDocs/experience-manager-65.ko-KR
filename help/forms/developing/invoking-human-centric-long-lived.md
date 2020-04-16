@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -33,7 +33,7 @@ FirstAppSolution */PreLoanProcess* 프로세스는 데이터 유형이 XML인 *f
 
 * 프로세스는 상당한 시간 동안 진행될 수 있습니다.
 * 프로세스는 조직의 경계를 확장할 수 있습니다.
-* 프로세스를 완료하려면 외부 입력이 필요합니다. 예를 들어, 사무실 밖에 있는 관리자에게 양식을 보내는 상황을 고려해 보십시오. 이 경우 관리자가 양식을 반환하고 채울 때까지 프로세스가 완료되지 않습니다.
+* 프로세스를 완료하려면 외부 입력이 필요합니다. 예를 들어 사무실 밖에 있는 관리자에게 양식을 보내는 상황을 고려해 보십시오. 이 경우 관리자가 양식을 반환하고 채울 때까지 프로세스가 완료되지 않습니다.
 
 긴 수명 프로세스가 호출되면 AEM Forms는 레코드 만들기의 일부로 호출 식별자 값을 만듭니다. 이 레코드는 오랫동안 지속된 프로세스의 상태를 추적하고 AEM Forms 데이터베이스에 저장됩니다. 호출 식별자 값을 사용하여 긴 기간의 프로세스 상태를 추적할 수 있습니다. 또한 프로세스 호출 식별자 값을 사용하여 실행 중인 프로세스 인스턴스 종료와 같은 프로세스 관리자 작업을 수행할 수 있습니다.
 
@@ -154,7 +154,7 @@ Java 서블릿 내에서 `FirstAppSolution/PreLoanProcess` 프로세스를 호�
              }
 ```
 
-일반적으로 클라이언트 코드는 Java 서블릿 `doGet` 또는 `doPost` 메서드 내에 배치하지 않습니다. 더 나은 프로그래밍 방법은 이 코드를 별도의 클래스에 배치하는 것입니다. 그런 다음 `doPost` 메서드(또는 `doGet` 메서드) 내에서 클래스를 인스턴스화하고 적절한 메서드를 호출합니다. 그러나 코드 간결성의 경우 코드 예제는 최소한으로 유지되며 `doPost` 메서드에 배치됩니다.
+일반적으로 클라이언트 코드는 Java 서블릿 `doGet` 또는 `doPost` 메서드 내에 배치하지 않습니다. 보다 효과적인 프로그래밍 방법은 이 코드를 별도의 클래스에 배치하는 것입니다. 그런 다음 `doPost` 메서드(또는 `doGet` 메서드) 내에서 클래스를 인스턴스화하고 적절한 메서드를 호출합니다. 그러나 코드 간결성의 경우 코드 예제는 최소한으로 유지되며 `doPost` 메서드에 배치됩니다.
 
 호출 API를 사용하여 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하려면 다음 작업을 수행하십시오.
 
@@ -163,7 +163,7 @@ Java 서블릿 내에서 `FirstAppSolution/PreLoanProcess` 프로세스를 호�
 1. 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. 연결 [속성](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
 1. 생성자를 사용하여 객체를 전달하여 `ServiceClient` 객체를 만듭니다 `ServiceClientFactory` . 객체를 `ServiceClient` 사용하면 서비스 작업을 호출할 수 있습니다. 호출 요청 찾기, 전달 및 라우팅과 같은 작업을 처리합니다.
 1. 생성자를 사용하여 `java.util.HashMap` 객체를 만듭니다.
-1. 각 입력 매개 변수에 대한 `java.util.HashMap` 개체의 `put` 메서드를 호출하여 긴 기간 프로세스를 전달합니다. 프로세스의 입력 매개 변수의 이름을 지정해야 합니다. 이 `FirstAppSolution/PreLoanProcess` 프로세스에는 유형 `XML` (이름 `formData`지정)의 입력 매개 변수가 하나만 필요하므로 `put` 메서드를 한 번만 호출하면 됩니다.
+1. 각 입력 매개 변수에 대해 `java.util.HashMap` 개체의 `put` 메서드를 호출하여 긴 기간 프로세스를 전달합니다. 프로세스의 입력 매개 변수의 이름을 지정해야 합니다. 이 `FirstAppSolution/PreLoanProcess` 프로세스에는 유형 `XML` (이름 `formData`지정)의 입력 매개 변수가 하나만 필요하므로 `put` 메서드를 한 번만 호출하면 됩니다.
 
    ```as3
     //Get the XML to pass to the FirstAppSolution/PreLoanProcess process
@@ -445,7 +445,9 @@ WAR 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 배포�
 
    HTML 양식 필드에 값을 입력하고 [응용 프로그램 제출] 단추를 클릭합니다. 문제가 발생하면 J2EE 응용 프로그램 서버의 로그 파일을 참조하십시오.
 
-   ***참고&#x200B;**:Java 응용 프로그램이 프로세스를 호출했는지 확인하려면 Workspace를 시작하고 대출을 수락합니다.*
+>[!NOTE]
+>
+>Java 응용 프로그램이 프로세스를 호출했는지 확인하려면 Workspace를 시작하고 대출을 수락합니다.
 
 ## 인간 중심의 장기 프로세스를 호출하는 ASP.NET 웹 응용 프로그램 만들기 {#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process}
 
