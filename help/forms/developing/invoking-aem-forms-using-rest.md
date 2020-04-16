@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -49,7 +49,11 @@ REST 요청을 사용하여 AEM Forms 서비스를 호출할 때 다음 데이�
    HTTP POST 메서드로 Forms 서비스를 호출하는 경우 HTTP 요청 본문 내에 인수가 전달됩니다. AEM Forms 서비스의 서명에 문자열 입력 매개 변수가 있으면 요청 본문에는 입력 매개 변수의 텍스트 값이 포함될 수 있습니다. 서비스의 서명이 여러 문자열 매개 변수를 정의하는 경우, 요청은 HTTP의 `application/x-www-form-urlencoded` 표기법을 따르면서 양식의 필드 이름으로 사용되는 매개 변수의 이름을 사용할 수 있습니다.
 
    Forms 서비스가 문자열 매개 변수를 반환하는 경우 결과는 출력 매개 변수의 텍스트 표현입니다. 서비스가 여러 문자열 매개 변수를 반환하는 경우 출력 매개 변수를 다음 형식으로 인코딩하는 XML 문서가 만들어집니다.
-   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`**참고&#x200B;**:이`output-paramater1`값은 출력 매개 변수 이름을 나타냅니다.
+   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
+
+   >[!NOTE]
+   >
+   >이 `output-paramater1` 값은 출력 매개 변수 이름을 나타냅니다.
 
    Forms 서비스에 `com.adobe.idp.Document` 매개 변수가 필요한 경우 HTTP POST 메서드를 사용해서만 서비스를 호출할 수 있습니다. 서비스에 하나의 매개 `com.adobe.idp.Document` 변수가 필요한 경우 HTTP 요청 본문은 입력 문서 개체의 내용이 됩니다.
 
@@ -278,7 +282,7 @@ REST 요청을 보내 정책을 만드는 대신( `PolicyEntry` 개체와 같은
 
 **REST를 사용하여 MyApplication/EncryptDocument 프로세스 호출**
 
-REST 파섹  **
+REST 파섹 **
 
 >[!NOTE]
 >
