@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: 86257dd8a54a0f25ed4365990a678bb794f18744
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
 
 # 프로그래밍 방식으로 AEM Document Services 사용 {#using-aem-document-services-programmatically}
 
-AEM Document Services를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 AEM Forms 클라이언트 SDK [jar에서 사용할 수](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 있습니다. maven 프로젝트에 대한 자세한 내용은 Maven을 사용하여 AEM 프로젝트를 빌드하는 [방법을 참조하십시오](/help/sites-developing/ht-projects-maven.md).
+AEM Document Services를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 AEM Forms 클라이언트 SDK [jar에서 사용할 수](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 있습니다. maven 프로젝트에 대한 자세한 내용은 Maven을 사용하여 AEM 프로젝트를 빌드하는 [방법을 참조하십시오](/help/sites-developing/ht-projects-maven.md).
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
 
 * [보안 문서](/help/forms/using/aem-document-services-programmatically.md#p-securing-documents-p)
 
-* [자격 증명 사용 권한 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-credential-usage-rights-p)
+* [자격 증명 사용 권한 받기](/help/forms/using/aem-document-services-programmatically.md#p-getting-credential-usage-rights-p)
 
 * [문서 사용 권한 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-document-usage-rights-p)
 
@@ -1357,7 +1357,9 @@ secureDocument를 사용하면 PDF 문서를 개별적으로 또는 특정 순�
 
 또한 CRL(인증서 해지 목록)은 만료 날짜 이전에 해지된 인증서에 대한 정보를 제공합니다. CRL 파섹 인증서의 해지 상태는 네트워크를 통해 OCSP(Online Certificate Status Protocol)를 통해 검색할 수도 있습니다.
 
-*****참고&#x200B;*:인증서를 사용하여 PDF 문서를 암호화하기*전에 AEM Trust Store에 인증서를 추가해야 합니다&#x200B;*.
+>[!NOTE]
+>
+>인증서를 사용하여 PDF 문서를 암호화하기 전에 AEM Trust Store에 인증서를 추가해야 합니다.
 
 **PDF 문서에 사용 권한 적용**
 
@@ -1375,9 +1377,13 @@ PDF 문서는 공개 키 기술을 통해 서명됩니다. 서명자에게는 �
 
 공개 키는 서명을 확인하기 위해 수신자가 사용할 수 있어야 하는 사용자의 인증서에 저장됩니다. 해지된 인증서에 대한 정보는 CA(인증 기관)가 배포한 CRL(인증서 해지 목록) 및 OCSP(온라인 인증서 상태 프로토콜) 응답에 있습니다. 서명 시간은 타임스탬프 기관이라고 하는 신뢰할 수 있는 소스에서 얻을 수 있습니다.
 
-*****참고&#x200B;*:PDF 문서에 디지털 서명을*하려면 AEM Keystore에서 자격 증명을 추가해야 합니다. 자격 증명은 서명에&#x200B;*사용되는 개인 키입니다.
+>[!NOTE]
+>
+>PDF 문서에 디지털 서명을 하려면 AEM Keystore에서 자격 증명을 추가해야 합니다. 자격 증명은 서명에 사용되는 개인 키입니다.
 
-****** 참고:AEM Forms는 PDF *[문서에 디지털](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*서명을 위한 CAdES 사양도 지원합니다.
+>[!NOTE]
+>
+>AEM Forms는 PDF *[문서에 디지털](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*서명을 위한 CAdES 사양도 지원합니다.
 
 **PDF 문서 인증**
 
@@ -1399,7 +1405,9 @@ Acrobat은 사용자가 이러한 방식으로 문서를 수정할 수 없도록
 
 예를 들어, 주석에서는 인증된 내용을 이해하는 데 중요한 페이지의 일부 텍스트를 가릴 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
 
-***참고&#x200B;**:PDF 문서에 디지털 서명을 하려면 AEM Keystore에서 자격 증명을 추가해야 합니다. 자격 증명은 서명에&#x200B;*사용되는 개인 키입니다.
+>[!NOTE]
+>
+>PDF 문서에 디지털 서명을 하려면 AEM Keystore에서 자격 증명을 추가해야 합니다. 자격 증명은 서명에 사용되는 개인 키입니다.
 
 **구문**:
 
@@ -2462,7 +2470,7 @@ public void removeDocumentUsageRights() {
  </tbody>
 </table>
 
-이 샘플 코드는 암호화된 PDF 문서에서 서명 필드를 확인하는 `DocAssuranceService` 데 사용합니다.
+이 샘플 코드는 암호화된 PDF 문서에서 서명 필드를 `DocAssuranceService` 확인하는 데 사용합니다.
 
 ```java
 /*************************************************************************
@@ -3617,19 +3625,19 @@ public class RemovePKIEncryption {
 
 출력 서비스는 XDP 파일을 .pdf, .pcl, .zpl 및 .ps 형식으로 렌더링하는 API를 제공합니다. 서비스는 다음 API를 지원합니다.
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)generatePDFutput **:양식 디자인을 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 데이터와 병합하여 PDF 문서를 리터럴 값으로 생성합니다.
+* **[generatePDFutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**양식 디자인을 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 데이터와 병합하여 PDF 문서를 리터럴 값으로 생성합니다.
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)generatePDFutput **:양식 디자인을 애플리케이션에 저장된 데이터와 병합하여 PDF 문서를 생성합니다.
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p)generatePDFOutputBatch **:양식 디자인을 데이터와 결합하여 PDF 문서를 만듭니다. 원할 경우, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다.
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p)generatePrintedOutput **:네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 및 데이터 파일에서 PCL, PostScript 또는 ZPL 출력을 리터럴 값으로 생성합니다.
+* **[generatePDFutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**양식 디자인을 애플리케이션에 저장된 데이터와 병합하여 PDF 문서를 생성합니다.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):**양식 디자인을 데이터와 결합하여 PDF 문서를 만듭니다. 원할 경우, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 및 데이터 파일에서 PCL, PostScript 또는 ZPL 출력을 리터럴 값으로 생성합니다.
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p)generatePrintedOutput **:애플리케이션에 저장된 양식 디자인 및 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 생성합니다.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**애플리케이션에 저장된 양식 디자인 및 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 생성합니다.
 
 ### generatePDFOutput {#generatepdfoutput}
 
 generatePDFutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 원할 경우, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 또는 데이터에 대해 generatePDFOutput API를 리터럴 값으로 사용합니다. 양식 디자인 및 XML 데이터가 애플리케이션에 저장된 경우 generatePDFOutput API를 [사용합니다](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) .
 
-**** 구문: `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
+**구문:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
 #### 입력 매개 변수 {#input-parameters}
 
@@ -3736,7 +3744,7 @@ try {
 
 generatePDFutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 원할 경우, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 애플리케이션에 저장된 양식 디자인 또는 데이터에 generatePrintedOutput API를 사용합니다. 양식 디자인 및 XML 데이터가 네트워크 위치, 로컬 또는 HTTP 위치에 리터럴 값으로 저장된 경우 generatePDFutput [API를](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) 사용합니다.
 
-**** 구문: `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
+**구문:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
 #### 입력 매개 변수 {#input-parameter}
 
@@ -3846,7 +3854,7 @@ Document doc=null;
 
 양식 디자인을 데이터와 결합하여 PDF 문서를 만듭니다. 원할 경우, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 리터럴 값으로 저장된 양식 디자인 또는 데이터에 generatePDFOutputBatch API를 사용합니다.
 
-**** 구문: `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
+**구문:** `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
 
 #### 입력 매개 변수 {#input-parameters-1}
 
@@ -3963,7 +3971,7 @@ String outputFolder="C:/Output";
 
 양식 디자인 및 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 생성합니다. 데이터 파일은 양식 디자인과 병합되며 인쇄용으로 형식이 지정됩니다. 출력물을 프린터로 직접 보내거나 파일로 저장할 수 있습니다. 애플리케이션에 저장된 양식 디자인 또는 데이터에 generatePrintedOutput API를 사용합니다.
 
-**** 구문: `Document generatePrintedOutput(String uriOrFileName, Document data, PrintedOutputOptions);`
+**구문:** `Document generatePrintedOutput(String uriOrFileName, Document data, PrintedOutputOptions);`
 
 #### 입력 매개 변수 {#input-parameters-2}
 
@@ -4054,7 +4062,7 @@ Document doc=null;
 
 양식 디자인 및 데이터 파일을 통해 PCL, PostScript 및 ZPL 출력을 생성합니다. 데이터 파일은 양식 디자인과 병합되며 인쇄용으로 형식이 지정됩니다. 출력물을 프린터로 직접 전송하거나 파일로 저장할 수 있습니다. 애플리케이션에 저장된 양식 디자인 또는 데이터에 generatePrintedOutput API를 사용합니다.
 
-**** 구문: `Document generatePrintedOutput(Document inputdocument, Document data, PrintedOutputOptions);`
+**구문:** `Document generatePrintedOutput(Document inputdocument, Document data, PrintedOutputOptions);`
 
 #### 입력 매개 변수 {#input-parameters-3}
 
@@ -4276,14 +4284,14 @@ String outputFolder="C:/Output";
 
 Forms 서비스는 인터랙티브한 PDF 양식을 통해 데이터를 가져오거나 내보낼 수 있는 API를 제공합니다. 인터랙티브한 PDF 양식은 사용자의 정보를 표시하고 수집하는 데 사용되는 필드를 하나 이상 포함하는 PDF 문서입니다. 서비스는 다음 API를 지원합니다.
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p)exportData **:pdf 양식에서 데이터를 내보냅니다.
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p)importData **:데이터를 대화형 PDF 양식으로 가져옵니다.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):**pdf 양식에서 데이터를 내보냅니다.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):**데이터를 대화형 PDF 양식으로 가져옵니다.
 
 ### exportData {#exportdata}
 
 인터랙티브한 PDF 양식의 양식 데이터를 XML 및 XDP 포맷으로 내보냅니다.
 
-**** 구문: `Document exportData(Document xdpOrPdf, DataFormat dataFormat)`
+**구문:** `Document exportData(Document xdpOrPdf, DataFormat dataFormat)`
 
 #### 입력 매개 변수 {#input-parameters-5}
 
@@ -4367,7 +4375,7 @@ try {
 
 양식 데이터를 대화형 PDF 양식으로 가져옵니다.
 
-**** 구문: `Document importData(Document PDF, Document data)`
+**구문:** `Document importData(Document PDF, Document data)`
 
 #### 입력 매개 변수 {#input-parameters-6}
 
@@ -4509,7 +4517,7 @@ createPDF 서비스에서는 다음과 같은 예외가 발생합니다.
 * InvalidParameterException
 * FileFormatNotSupportedException
 
-**** 구문: `Map createPDF(Document inputDoc, String inputFilename, String fileTypeSettings, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws InvalidParameterException, ConversionException, FileFormatNotSupportedException;`
+**구문:** `Map createPDF(Document inputDoc, String inputFilename, String fileTypeSettings, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws InvalidParameterException, ConversionException, FileFormatNotSupportedException;`
 
 #### 입력 매개 변수 {#input-parameters-7}
 
