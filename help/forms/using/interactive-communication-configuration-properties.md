@@ -11,7 +11,7 @@ topic-tags: interactive-communications
 discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -22,7 +22,7 @@ Interactive Communications에는 AEM Forms Add- [on](../../forms/using/installin
 
 다음 URL **을 사용하여 Adobe Experience** Manager 웹 콘솔 구성 페이지를 엽니다.
 
-`https://&lt;server&gt;:&lt;port&gt;/&lt;contextPath&gt;/system/console/configMgr`
+`https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
 구성 속성은 다음과 같습니다.
 
