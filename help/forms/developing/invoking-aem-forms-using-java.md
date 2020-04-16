@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -444,7 +444,9 @@ AEM Forms 서비스를 성공적으로 호출하려면 다음 연결 속성을 �
    * 이 연결 속성을 로 `WebLogic`설정하면 `java.naming.factory.initial` 값이 로 설정됩니다 `weblogic.jndi.WLInitialContextFactory`.
    * 마찬가지로 이 연결 속성을 로 설정하면 `JBoss`이 `java.naming.factory.initial` 값이 로 설정됩니다 `org.jnp.interfaces.NamingContextFactory`.
    * 기본값을 사용하지 않으려는 경우 `java.naming.factory.initial` 속성을 요구 사항을 충족하는 값으로 설정할 수 있습니다.
-   ***참고**:문자열을 사용하여 `DSC_SERVER_TYPE` 연결 속성을 설정하는 대신 `ServiceClientFactoryProperties` 클래스의 정적 멤버를 사용할 수 있습니다. 다음 값을 사용할 수 있습니다. `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`또는 `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`를 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`선택합니다.
+   >[!NOTE]
+   >
+   >문자열을 사용하여 `DSC_SERVER_TYPE` 연결 속성을 설정하는 대신 `ServiceClientFactoryProperties` 클래스의 정적 멤버를 사용할 수 있습니다. 다음 값을 사용할 수 있습니다. `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`또는 `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`를 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`선택합니다.
 
 * **DSC_CREDENTIAL_USERNAME:** AEM 양식 사용자 이름을 지정합니다. 사용자가 AEM Forms 서비스를 성공적으로 호출하려면 서비스 사용자 역할이 필요합니다. 사용자는 서비스 호출 권한을 포함하는 다른 역할을 가질 수도 있습니다. 그렇지 않으면 서비스를 호출하려고 할 때 예외가 발생합니다. 서비스 보안이 비활성화된 경우 이 연결 속성을 지정할 필요가 없습니다.
 * **DSC_CREDENTIAL_PASSWORD:** 해당 암호 값을 지정합니다. 서비스 보안이 비활성화된 경우 이 연결 속성을 지정할 필요가 없습니다.
@@ -1032,7 +1034,7 @@ Java 호출 API 파섹 `MyApplication/EncryptDocument`
 1. 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. 연결 [속성](invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
 1. 생성자를 사용하여 객체를 전달하여 `ServiceClient` 객체를 만듭니다 `ServiceClientFactory` . 객체를 `ServiceClient` 사용하면 서비스 작업을 호출할 수 있습니다. 호출 요청 찾기, 전달 및 라우팅과 같은 작업을 처리합니다.
 1. 생성자를 사용하여 `java.util.HashMap` 객체를 만듭니다.
-1. 각 입력 매개 변수에 대해 `java.util.HashMap` 개체의 `put` 메서드를 호출하여 긴 기간 프로세스를 전달합니다. 단기 프로세스에 유형 입력 매개 변수가 하나만 필요하므로 다음 예와 같이 `MyApplication/EncryptDocument` `Document``put` 메서드를 한 번만 호출하면 됩니다.
+1. 각 입력 매개 변수에 대한 `java.util.HashMap` 개체의 `put` 메서드를 호출하여 긴 기간 프로세스를 전달합니다. 단기 프로세스에 유형 입력 매개 변수가 하나만 필요하므로 다음 예와 같이 `MyApplication/EncryptDocument` `Document``put` 메서드를 한 번만 호출하면 됩니다.
 
    ```as3
     //Create a Map object to store the parameter value for inDoc
