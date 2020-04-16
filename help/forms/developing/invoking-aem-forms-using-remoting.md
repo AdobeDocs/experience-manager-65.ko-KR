@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -38,7 +38,7 @@ Remoting을 사용하여 이름이 지정된 다음 AEM Forms 단기 프로세�
 이 프로세스가 호출되면 다음 작업을 수행합니다.
 
 1. 입력 값으로 전달된 비보안 PDF 문서를 가져옵니다. 이 작업은 `SetValue` 작업을 기반으로 합니다. 입력 매개 변수의 이름은 `inDoc` 이고 데이터 유형은 `document`입니다. ( `document` 데이터 유형은 워크벤치 내에서 사용 가능한 데이터 유형입니다.)
-1. 암호로 PDF 문서를 암호화합니다. 이 작업은 `PasswordEncryptPDF` 작업을 기반으로 합니다. 이 프로세스에 대한 출력 값의 이름은 암호로 암호화된 PDF `outDoc` 문서를 나타냅니다. outDoc의 데이터 유형은 `document`입니다.
+1. 암호로 PDF 문서를 암호화합니다. 이 작업은 `PasswordEncryptPDF` 작업을 기반으로 합니다. 이 프로세스에 대한 출력 값의 이름은 암호로 암호화된 PDF 문서를 `outDoc` 나타냅니다. outDoc의 데이터 유형은 `document`입니다.
 1. 암호로 암호화된 PDF 문서를 PDF 파일로 로컬 파일 시스템에 저장합니다. 이 작업은 `WriteDocument` 작업을 기반으로 합니다.
 
 >[!NOTE]
@@ -127,10 +127,10 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 
 * 문서가 서버에 없으면 원격 업로드 서블릿을 사용하여 문서를 AEM Forms에 업로드합니다. AEM Forms의 새로운 기능은 보안 문서를 업로드하는 기능입니다. 보안 문서를 업로드할 때 문서 업로드 응용 프로그램 사용자 *역할이 있는 사용자를 사용해야* 합니다. 이 역할이 없으면 사용자가 보안 문서를 업로드할 수 없습니다. Single Sign-On을 사용하여 보안 문서를 업로드하는 것이 좋습니다. (Remoting [을 사용하여 프로세스를 호출하는 보안 문서 전달을 참조하십시오](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
-   **참고**:aem Forms가 안전하지 않은 문서를 업로드하도록 구성된 경우 문서 업로드 응용 프로그램 사용자 역할이 없는 사용자를 사용하여 문서를 업로드할 수 있습니다. 사용자는 문서 업로드 권한을 가질 수도 있습니다. 그러나 AEM Forms가 보안 문서만 허용하도록 구성된 경우 사용자에게 문서 업로드 응용 프로그램 사용자 역할 또는 문서 업로드 권한이 있는지 확인하십시오. (보안 [및 비보안 문서를](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)수락하도록 AEM 양식 구성을 참조하십시오.)
+>[!NOTE]
+aem Forms가 안전하지 않은 문서를 업로드하도록 구성된 경우 문서 업로드 응용 프로그램 사용자 역할이 없는 사용자를 사용하여 문서를 업로드할 수 있습니다. 사용자는 문서 업로드 권한을 가질 수도 있습니다. 그러나 AEM Forms가 보안 문서만 허용하도록 구성된 경우 사용자에게 문서 업로드 응용 프로그램 사용자 역할 또는 문서 업로드 권한이 있는지 확인하십시오. (보안 [및 비보안 문서를](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)수락하도록 AEM 양식 구성을 참조하십시오.
 
-   지정된 업로드 URL에 표준 Flash 업로드 기능을 사용합니다. `https://SERVER:PORT/remoting/lcfileupload`Adobe 그런 다음 유형의 입력 매개 변수가 필요할 때마다 `DocumentReference` 개체를 사용할 `Document` 수 있습니다
-   ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`Remoting Quick Start는 Remoting 업로드 서블릿을 사용하여 PDF 파일을 `MyApplication/EncryptDocument`프로세스에 전달합니다. ( [AEM Forms Remoting을 사용하여 안전하지 않은 문서를 전달하여 짧은 기간 동안 지속된 프로세스 호출을 참조하십시오](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
+지정된 업로드 URL에 표준 Flash 업로드 기능을 사용합니다. `https://SERVER:PORT/remoting/lcfileupload`Adobe 그런 다음 유형의 입력 매개 변수가 필요한 `DocumentReference` 위치에 개체를 사용할 수 있습니다. Remoting 빠른 `Document` 시작은 Remoting 업로드` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`서블릿을 사용하여 PDF 파일을 `MyApplication/EncryptDocument`프로세스에 전달합니다. ( [AEM Forms Remoting을 사용하여 안전하지 않은 문서를 전달하여 짧은 기간 동안 지속된 프로세스 호출을 참조하십시오](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
 
 ```java
  
@@ -197,9 +197,9 @@ Flex로 빌드된 애플리케이션에서 AEM 양식 프로세스를 호출하�
 
 Workbench에서 만든 AEM Forms 프로세스를 호출하는 `mx:RemoteObject` 인스턴스를 만듭니다. 인스턴스를 만들려면 `mx:RemoteObject` 다음 값을 지정합니다.
 
-* **** id:호출할 프로세스를 나타내는 `mx:RemoteObject` 인스턴스의 이름입니다.
-* **** 대상:호출할 AEM Forms 프로세스의 이름입니다. 예를 들어 프로세스를 호출하려면 `MyApplication/EncryptDocument` 을 지정합니다 `MyApplication/EncryptDocument`.
-* **** 결과:결과를 처리하는 Flex 메서드의 이름입니다.
+* **id:** 호출할 프로세스를 나타내는 `mx:RemoteObject` 인스턴스의 이름입니다.
+* **대상:** 호출할 AEM Forms 프로세스의 이름입니다. 예를 들어 프로세스를 호출하려면 `MyApplication/EncryptDocument` 을 지정합니다 `MyApplication/EncryptDocument`.
+* **결과:** 결과를 처리하는 Flex 메서드의 이름입니다.
 
 태그 내에서 프로세스의 호출 메서드 이름을 지정하는 `mx:RemoteObject` `<mx:method>` 태그를 지정합니다. 일반적으로 Forms 호출 메서드의 이름은 `invoke`입니다.
 
