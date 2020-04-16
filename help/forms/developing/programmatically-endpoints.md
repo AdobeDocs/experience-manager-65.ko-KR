@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,15 +28,17 @@ Endpoint Registry 서비스는 끝점을 프로그래밍 방식으로 관리하�
 * (AEM 양식에 대해 더 이상 사용되지 않음) Remoting
 * 작업 관리자
 
-   ***참고&#x200B;**:SOAP, EJB 및 (JEE의 AEM 양식에 대해 더 이상 사용되지 않음) 원격 끝점은 활성화된 각 서비스에 대해 자동으로 생성됩니다. SOAP 및 EJB 끝점은 모든 서비스 작업에 대해 SOAP 및 EJB를 활성화합니다.*
+>[!NOTE]
+>
+>SOAP, EJB 및 (JEE의 AEM 양식에 대해 더 이상 사용되지 않음) 원격 끝점은 활성화된 각 서비스에 대해 자동으로 생성됩니다. SOAP 및 EJB 끝점은 모든 서비스 작업에 대해 SOAP 및 EJB를 활성화합니다.
 
-   Remoting 종단점을 사용하면 Flex 클라이언트가 종단점이 추가된 AEM Forms 서비스에서 작업을 호출할 수 있습니다. 끝점과 동일한 이름을 갖는 Flex 대상이 생성되며 Flex 클라이언트는 해당 대상을 가리키는 RemoteObjects를 만들어 관련 서비스에서 작업을 호출할 수 있습니다.
+Remoting 종단점을 사용하면 Flex 클라이언트가 종단점이 추가된 AEM Forms 서비스에서 작업을 호출할 수 있습니다. 끝점과 동일한 이름을 갖는 Flex 대상이 생성되며 Flex 클라이언트는 해당 대상을 가리키는 RemoteObjects를 만들어 관련 서비스에서 작업을 호출할 수 있습니다.
 
-   이메일, 작업 관리자 및 감시 폴더 끝점은 서비스의 특정 작업만 노출합니다. 이러한 끝점을 추가하려면 호출할 메서드를 선택하고 구성 매개 변수를 설정하고 입력 및 출력 매개 변수 매핑을 지정하려면 두 번째 구성 단계가 필요합니다.
+이메일, 작업 관리자 및 감시 폴더 끝점은 서비스의 특정 작업만 노출합니다. 이러한 끝점을 추가하려면 호출할 메서드를 선택하고 구성 매개 변수를 설정하고 입력 및 출력 매개 변수 매핑을 지정하려면 두 번째 구성 단계가 필요합니다.
 
-   TaskManager 끝점을 *카테고리라는 그룹으로*&#x200B;구성할 수 있습니다. 그런 다음 이러한 범주는 TaskManager를 통해 Workspace에 노출되며 최종 사용자는 TaskManager 끝점을 범주별로 볼 수 있습니다. Workspace 내에서 최종 사용자는 탐색 창에 이러한 카테고리를 볼 수 있습니다. 각 카테고리 내의 끝점은 작업 공간의 프로세스 시작 페이지에서 프로세스 카드로 표시됩니다.
+TaskManager 끝점을 *카테고리라는 그룹으로*&#x200B;구성할 수 있습니다. 그런 다음 이러한 범주는 TaskManager를 통해 Workspace에 노출되며 최종 사용자는 TaskManager 끝점을 범주별로 볼 수 있습니다. Workspace 내에서 최종 사용자는 탐색 창에 이러한 카테고리를 볼 수 있습니다. 각 카테고리 내의 끝점은 작업 공간의 프로세스 시작 페이지에서 프로세스 카드로 표시됩니다.
 
-   Endpoint Registry 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
+Endpoint Registry 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
 * EJB 끝점을 추가합니다. EJB [끝점 추가를 참조하십시오](programmatically-endpoints.md#adding-ejb-endpoints).
 * SOAP 끝점을 추가합니다. SOAP [끝점 추가를 참조하십시오](programmatically-endpoints.md#adding-soap-endpoints).
