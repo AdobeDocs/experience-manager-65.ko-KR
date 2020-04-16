@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -26,7 +26,9 @@ PDF 변환 서비스를 사용하여 다음 작업을 수행할 수 있습니다
 * PDF 문서를 PostScript로 변환
 * PDF 문서를 이미지 포맷으로 변환
 
-   ***참고&#x200B;**:PDF 변환 서비스에 대한 자세한 내용은 AEM Forms[에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).*
+>[!NOTE]
+>
+>PDF 변환 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PDF 문서를 PostScript로 변환 {#converting-pdf-documents-to-postscript}
 
@@ -202,7 +204,7 @@ Convert PDF Service API(웹 서비스)를 사용하여 PDF 문서를 PostScript�
 
 ## PDF 문서를 이미지 포맷으로 변환 {#converting-pdf-documents-to-image-formats}
 
-PDF 변환 서비스를 사용하여 PDF 문서를 JPEG, JPEG 2000, TIFF 및 PNG가 포함된 이미지 형식으로 프로그래밍 방식으로 변환할 수 있습니다. PDF 문서를 이미지 파일로 변환하여 PDF 문서를 이미지 파일로 사용할 수 있습니다. 예를 들어, 이미지를 스토리지용 엔터프라이즈 컨텐츠 관리 시스템에 배치할 수 있습니다.
+PDF 변환 서비스를 사용하여 PDF 문서를 JPEG, JPEG 2000, TIFF 및 PNG가 포함된 이미지 형식으로 프로그래밍 방식으로 변환할 수 있습니다. PDF 문서를 이미지 파일로 변환하여 PDF 문서를 이미지 파일로 사용할 수 있습니다. 예를 들어, 이미지를 저장할 엔터프라이즈 컨텐츠 관리 시스템에 배치할 수 있습니다.
 
 PDF 문서를 이미지로 변환할 때 PDF 변환 서비스는 문서의 각 페이지에 대해 별도의 이미지를 만듭니다. 즉, 문서에 20페이지가 있는 경우 PDF 변환 서비스는 20개의 이미지 파일을 만듭니다. PDF 문서를 이미지 형식으로 변환할 때 PDF 문서 내의 각 페이지에 대한 개별 이미지를 만들거나 전체 PDF 문서에 대한 단일 이미지 파일을 만들 수 있습니다.
 
