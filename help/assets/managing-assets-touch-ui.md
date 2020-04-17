@@ -4,7 +4,7 @@ description: 디지털 에셋 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
 
 ---
 
@@ -306,7 +306,7 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
 추적이 완료되면 AEM에서 알림 영역에 알려줍니다. AEM이 ZIP을 추출하는 동안 추출을 중단하지 않고 작업을 다시 시작할 수 있습니다.
 
-![ZIP 추출 알림](assets/Zip-extraction-notification.png)
+![ZIP 파일 추출 알림](assets/Zip-extraction-notification.png)
 
 이 기능의 일부 제한 사항은 다음과 같습니다.
 
@@ -326,11 +326,9 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
    자산을 확대하려면 자산을 탭/클릭( `+` 또는 자산에서 확대경을 탭/클릭)합니다. 축소하려면 탭/클릭합니다 `-`. 확대하면 패닝하여 이미지의 모든 영역을 자세히 볼 수 있습니다. 확대/축소 재설정 화살표를 클릭하면 원래 보기로 돌아갑니다.
 
-   ![uploadicon](assets/uploadicon.png)
-
    재설정을 **[!UICONTROL 눌러]** 보기를 원래 크기로 재설정합니다.
 
-   ![chlimage_1-216](assets/chlimage_1-11.png)
+   ![사용자를 원래 보기로 되돌리려면 재설정 아이콘](assets/chlimage_1-11.png)
 
 **키보드 키만 사용하여 에셋 미리 보기**
 
@@ -353,11 +351,11 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
 ## 속성 및 메타데이터 편집 {#editing-properties}
 
-1. 편집할 메타데이터가 있는 자산의 위치로 이동합니다.
+1. 자산의 위치로 이동하여 메타데이터를 편집합니다.
 
 1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 속성을]** 탭/클릭하여 자산 속성을 봅니다. 또는 자산 **[!UICONTROL 카드에서 속성]** 빠른 작업을 선택합니다.
 
-   ![properties_quickaction](assets/properties_quickaction.png)
+   ![자산 카드 보기에서 속성 빠른 작업](assets/properties_quickaction.png)
 
 1. 속성 [!UICONTROL 페이지에서] 다양한 탭에서 메타데이터 속성을 편집합니다. 예를 들어 기본 **[!UICONTROL 탭에서]** 제목, 설명 등을 편집합니다.
 
@@ -367,13 +365,13 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
 1. 자산의 활성화를 위한 특정 날짜/시간을 예약하려면 [설정 시간] 필드 옆에 있는 날짜 **[!UICONTROL 선택기를 사용합니다]** .
 
-   ![설정 시간 필드의 날짜 시간 선택기 또는 키보드 키를 사용하여 자산 활성화 날짜 및 시간을 추가합니다.](assets/schedule-activation.png)
+   ![날짜 시간 선택기 또는 설정 시간 필드의 키보드 키를 사용하여 자산 활성화 날짜와 시간 추가](assets/schedule-activation.png)
 
    *그림:자산 활성화 예약*
 
 1. 특정 기간 후에 자산을 비활성화하려면 해제 시간 필드 옆에 있는 날짜 선택기에서 비활성화 날짜/시간을 **[!UICONTROL 선택합니다]** . 비활성화 날짜는 자산의 활성화 날짜보다 이후여야 합니다. 해제 [!UICONTROL 시간]후에는 자산 웹 인터페이스 또는 HTTP API를 통해 자산 및 표현물을 사용할 수 없습니다.
 
-   ![해제 시간 필드에 날짜 시간 선택기 또는 키보드 키를 사용하여 자산 비활성화 날짜 및 시간을 추가합니다.](assets/schedule-deactivation.png)
+   ![날짜 시간 선택기 또는 해제 시간 필드의 키보드 키를 사용하여 자산 비활성화 날짜 및 시간을 추가합니다.](assets/schedule-deactivation.png)
 
    *그림:자산 비활성화 예약*
 
@@ -385,7 +383,7 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
 1. 자산에 등급을 제공하려면 고급 **[!UICONTROL 탭을 탭/클릭한]** 다음 적절한 위치에서 별을 탭/클릭하여 원하는 등급을 지정합니다.
 
-   ![등급](assets/ratings.png)
+   ![등급 지정을 위한 자산 속성의 고급 탭](assets/ratings.png)
 
    자산에 지정하는 등급 점수는 등급 아래에 **[!UICONTROL 표시됩니다]**. 자산을 평가한 사용자로부터 자산이 받은 평균 등급 점수가 등급 아래에 **[!UICONTROL 표시됩니다]**. 또한 평균 등급 점수에 기여하는 평점 점수가 **[!UICONTROL 분류로 표시됩니다]**. 평균 등급 점수를 기준으로 자산을 검색할 수 있습니다.
 
@@ -414,7 +412,7 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 다른 속성과 메타데이터 정보는 그대로 유지됩니다. 자산을 복사할 때 부분 복사본이 만들어지지 않습니다.
 
 1. 자산 UI에서 하나 이상의 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 복사]** 아이콘을 탭/클릭합니다. 또는 자산 **[!UICONTROL 카드에서]** 빠른 복사 작업을 선택합니다.
-   ![copy_icon](assets/copy_icon.png)
+   ![자산 UI 도구 모음의 복사 아이콘](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -428,7 +426,7 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
 1. 도구 모음에서 자산 **[!UICONTROL 붙여넣기]** 아이콘을 클릭/탭합니다.
 
-   ![chlimage_1-](assets/chlimage_1-14.png)219 자산이 이 위치로 복사됩니다.
+   ![자산 UI 도구 모음의](assets/chlimage_1-14.png)붙여넣기 아이콘 자산이 이 위치에 복사됩니다.
 
    >[!NOTE]
    >
@@ -439,7 +437,7 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 1. 이동할 자산의 위치로 이동합니다.
 
 1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 이동]** 아이콘을 탭/클릭합니다.
-   ![move_icon](assets/move_icon.png)
+   ![자산 UI 도구 모음의 이동 아이콘](assets/move_icon.png)
 
 1. 자산 이동 마법사에서 다음 중 하나를 수행합니다.
 
