@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
 
 ---
 
 
 # 더 이상 사용되지 않는 및 제거된 기능 {#deprecated-and-removed-features}
 
-Adobe는 제품 기능을 지속적으로 평가하며, 시간이 지남에 따라 이전 기능을 더 현대적인 대체 제품으로 교체하여 전반적인 고객 가치를 높이며 이전 버전과의 호환성을 항상 신중하게 고려합니다.
+Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다.
 
 예정된 AEM 기능의 제거/교체를 알리려면 다음 규칙이 적용됩니다.
 
@@ -38,7 +38,7 @@ Adobe는 제품 기능을 지속적으로 평가하며, 시간이 지남에 따�
   </tr>
   <tr>
    <td>Creative Cloud 통합</td>
-   <td><p><a href="/help/assets/aem-cc-folder-sharing-best-practices.md">AEM에서 Creative Cloud</a> 폴더 공유에 대한 AEM은 크리에이티브 사용자가 AEM의 자산에 액세스할 수 있도록 하는 방법으로 AEM 6.2에서 도입되었으며, 이를 통해 CC 애플리케이션에서 열어 새 파일을 업로드하거나 AEM에 변경 내용을 저장할 수 있습니다. Creative Cloud 응용 프로그램에서 릴리스된 새로운 기능인 Adobe Asset Link를 사용하면 훨씬 향상된 사용자 경험을 제공할 수 있고 Photoshop, InDesign 및 Illustrator에서 바로 AEM의 에셋에 액세스할 수 있습니다.</p> <p>Adobe는 향후 Creative Cloud 폴더 공유 통합을 위해 AEM을 개선할 계획이 없습니다. 고객은 AEM에 해당 기능이 포함되어 있는 동안 교체 솔루션을 사용해 보시기 바랍니다.</p> </td>
+   <td><p><a href="/help/assets/aem-cc-folder-sharing-best-practices.md">AEM에서 Creative Cloud</a> 폴더 공유에 대한 AEM은 크리에이티브 사용자가 AEM의 자산에 액세스할 수 있도록 하는 방법으로 AEM 6.2에서 도입되었으며, 이를 통해 CC 애플리케이션에서 열어 새 파일을 업로드하거나 AEM에 변경 내용을 저장할 수 있습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다.</p> <p>Adobe는 향후 Creative Cloud 폴더 공유 통합을 위해 AEM을 개선할 계획이 없습니다. 고객은 AEM에 해당 기능이 포함되어 있는 동안 교체 솔루션을 사용해 보시기 바랍니다.</p> </td>
    <td>고객은 Adobe Asset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환해야 합니다. 자세한 내용은 <a href="/help/assets/aem-cc-integration-best-practices.md">AEM 및 Creative Cloud 통합 우수 사례</a>를 검토하십시오.</td>
   </tr>
   <tr>
@@ -151,6 +151,11 @@ Adobe는 제품 기능을 지속적으로 평가하며, 시간이 지남에 따�
    <td><p>CRXDE Lite의 클래식 UI 대화 상자 편집기</p> <p>Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 클래식 UI 대화 상자 편집기를 개선할 계획이 없습니다.</p> </td>
    <td> </td>
   </tr>
+  <tr>
+   <td>양식</td>
+   <td><p>AEM Mobile과 AEM Forms 통합 사용 안 함 </p> </td>
+   <td>교체 없음 </td>
+  </tr>
  </tbody>
 </table>
 
@@ -160,12 +165,13 @@ Adobe는 제품 기능을 지속적으로 평가하며, 시간이 지남에 따�
 
 | 영역 | 기능 | 대체 |
 |--- |--- |--- |
-| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. Adobe Analytics [에서 제공하는 ActivityMap 플러그인을 사용합니다](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. Adobe Analytics [에서 제공하는 ActivityMap 플러그인을 사용합니다](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | 통합 | ExactTarget 통합이 기본 배포(빠른 시작)에서 제거되었으며 더 이상 사용할 수 없습니다. | 교체 없음 |
 | 통합 | Salesforce Force API 통합이 기본 배포(빠른 시작)에서 제거되었으며 이제 PackageShare에서 설치할 수 있는 추가 패키지입니다. | 기능은 계속 사용할 수 있습니다. |
 | 양식 | Adobe Central 제품이 더 이상 지원되지 않아 Adobe Central Migration Bridge 서비스 지원이 제거되었습니다. | 교체 없음 |
 | 양식 | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | 교체 없음 |
 | 양식 | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | 교체 없음 |
+| 양식 | LiveCycle ES4 SP1에서 JEE의 AEM 6.5 Forms로 한 번에 업그레이드할 수 없습니다. | AEM Forms 업그레이드 설명서의 [사용 가능한 업그레이드 경로를](../forms/using/upgrade.md) 참조하십시오. |
 | 개발자 | Firebug Lite가 기본 배포(빠른 시작)에서 제거되었습니다. | 브라우저 내장 개발자 콘솔 사용 |
 | 개발자 | Remove `customJavaScriptPath` support in HTML Client Library Manager. | 교체 없음 |
 | 자산 | 자산 오프로딩 기능이 AEM 6.5에서 제거되었습니다. | 교체 없음 |
