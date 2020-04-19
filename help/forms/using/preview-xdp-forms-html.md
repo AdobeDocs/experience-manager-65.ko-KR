@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -78,7 +78,9 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
       * `/aem/forms` (OSGi의 AEM Forms)
       * `/lc/forms` (JEE의 AEM Forms)
-   **참고:** AEM Forms 서버가 실행 중인지 확인합니다. HTML 미리 보기는 CRX 서버에 연결하여 미리 보기를 *생성합니다* .
+   >[!NOTE]
+   >
+   >AEM Forms 서버가 실행 중인지 확인합니다. HTML 미리 보기는 CRX 서버에 연결하여 미리 보기를 *생성합니다* .
 
    ![AEM Forms 디자이너 옵션 ](assets/server_options.png)
 
