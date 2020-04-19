@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -134,8 +134,9 @@ SQL Server는 두 가지 백업 및 복구 도구를 제공합니다.
 
 MySQLdmin을 사용하거나 Windows에서 INI 파일을 수정하여 이진 로그 모드에서 실행되도록 MySQL 데이터베이스를 구성합니다. (MySQL [이진 로깅을](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)참조하십시오.) MySQL용 핫 백업 도구는 InnoBase 소프트웨어에서도 사용할 수 있습니다. (기본 [핫 백업 참조](https://www.innodb.com/hot-backup/features.md))
 
-**참고**:MySQL *의 기본 바이너리 로깅 모드는 &quot;문&quot;이며, 이는 컨텐츠 서비스에서 사용하는 테이블과 호환되지 않습니다(더 이상 사용되지 않음). 이 기본 모드에서 이진 로깅을 사용하면 컨텐츠 서비스(더 이상 사용되지 않음)가 실패합니다. 시스템에 컨텐츠 서비스(더 이상 사용되지 않음)가 포함되어 있는 경우 &quot;혼합&quot; 로깅 모드를 사용하십시오. &quot;혼합&quot; 로깅을 사용하려면 my.ini 파일에 다음 인수를 추가하십시오.*
-`binlog_format=mixed log-bin=logname`
+>[!NOTE]
+>
+>MySQL의 기본 바이너리 로깅 모드는 &quot;문&quot;이며, 이는 컨텐츠 서비스에서 사용하는 테이블과 호환되지 않습니다(더 이상 사용되지 않음). 이 기본 모드에서 이진 로깅을 사용하면 컨텐츠 서비스(더 이상 사용되지 않음)가 실패합니다. 시스템에 컨텐츠 서비스(더 이상 사용되지 않음)가 포함되어 있는 경우 &quot;혼합&quot; 로깅 모드를 사용하십시오. &quot;혼합&quot; 로깅을 사용하려면 my.ini file:*폴더에 다음 인수를 추가하십시오.`binlog_format=mixed log-bin=logname`
 
 myqldump 유틸리티를 사용하여 전체 데이터베이스 백업을 얻을 수 있습니다. 전체 백업이 필요하지만 항상 편리하지는 않습니다. 대용량 백업 파일을 생성하고 생성하는 데 시간이 걸립니다. 증분 백업을 수행하려면 이전 섹션에 설명된 대로 - `log-bin` 옵션으로 서버를 시작해야 합니다. MySQL Server가 다시 시작될 때마다 현재 이진 로그에 대한 쓰기가 멈추고 새 이진 로그를 만든 후 새 서버가 현재 로그가 됩니다. 명령을 사용하여 수동으로 스위치를 강제 적용할 수 `FLUSH LOGS SQL` 있습니다. 첫 번째 전체 백업 후, 다음 증분 백업은 myqladmin 유틸리티와 다음 로그 파일을 생성하는 `flush-logs` 명령을 사용하여 수행됩니다.
 
