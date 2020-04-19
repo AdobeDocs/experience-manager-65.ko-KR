@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ## 전제 조건 {#pre-requisites}
 
-We.Gov 참조 사이트 [설정 및 구성에 설명된 대로 참조 사이트를](../../forms/using/forms-install-configure-gov-reference-site.md)설정합니다.
+We.Gov 참조 사이트 설정 [및 구성에 설명된 대로 참조 사이트를](../../forms/using/forms-install-configure-gov-reference-site.md)설정합니다.
 
 ## 사용자 스토리 {#user-story}
 
@@ -116,7 +116,9 @@ Aya는 자신의 휴대폰에 간단한 적응형 양식을 기재함으로써 �
 
 1. 각 드롭다운 필드에서 선택합니다.
 
-   1. 참고:사용자가 200,000달러/년 이상 수익을 내는 경우 해당 사용자는 자격 조건을 갖추지 못합니다.
+   >[!NOTE]
+   >
+   >사용자가 200,000달러/년 이상 수익을 내는 경우 해당 사용자는 자격 조건을 갖추지 못합니다.
 
 1. &quot;**자격 조건&quot;을 클릭합니다.**” 단추.
 1. &quot;지금&#x200B;**적용**&quot; 버튼을 클릭하여 계속합니다.
