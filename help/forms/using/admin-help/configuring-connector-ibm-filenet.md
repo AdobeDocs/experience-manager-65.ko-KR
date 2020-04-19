@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -40,8 +40,8 @@ IBM FileNet P8 Content Engine은 FileNet 컨텐츠 저장소에서 엔터프라�
 
 1. 자격 증명 보호 체계 목록에서 다음 보호 수준 중 하나를 선택합니다.
 
-   * **** 지우기:보호되지 않는 모드로 네트워크를 통해 자격 증명 전송
-   * **** 대칭:네트워크를 통해 암호화된 자격 증명 전송
+   * **지우기:** 보호되지 않는 모드로 네트워크를 통해 자격 증명 전송
+   * **대칭:** 네트워크를 통해 암호화된 자격 증명 전송
 
 1. [암호화 파일 위치] 상자에 암호화 파일의 경로를 입력합니다.
 
@@ -78,14 +78,15 @@ FileNet에서 사용할 저장소 서비스 공급자를 구성할 수 있습니
 
 다음 옵션을 사용할 수 있습니다.
 
-**** 현재 저장소 공급자 이름:현재 저장소 서비스 공급자의 이름
+**현재 저장소 공급자 이름:** 현재 저장소 서비스 공급자의 이름
 
-**** IBM FileNet Repository Provider:FileNet 저장소 공급자를 저장소의 공급자로 만듭니다. 이 옵션은 더 이상 사용되지 않습니다.
+**IBM FileNet Repository Provider:** FileNet 저장소 공급자를 저장소의 공급자로 만듭니다. 이 옵션은 더 이상 사용되지 않습니다.
 
-**** 저장소 공급자:기본 저장소 공급자를 저장소의 공급자로 만듭니다.
+**저장소 공급자:** 기본 저장소 공급자를 저장소의 공급자로 만듭니다.
 
-***참고&#x200B;**:나열된 저장소 서비스 공급자 이외의 저장소 서비스 공급자를 선택하려면 응용 프로그램 및 서비스에서 RepositoryService를 구성합니다.<!-- Fix broken link(See Managing Services) -->*
+>[!NOTE]
+>
+>나열된 저장소 서비스 공급자 이외의 저장소 서비스 공급자를 선택하려면 응용 프로그램 및 서비스에서 RepositoryService를 구성합니다. <!-- Fix broken link(See Managing Services) -->
 
 1. 관리 콘솔에서 서비스 > IBM FileNet용 커넥터를 클릭합니다.
 1. 저장소 서비스 공급자 정보 영역에서 대체 저장소 서비스 공급자를 선택한 다음 저장을 클릭합니다.
-
