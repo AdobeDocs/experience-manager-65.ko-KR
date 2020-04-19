@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -170,7 +170,9 @@ Correspondence Management Solution은 다이내믹 데이터 항목(변수 데�
 
 **단어 단위로:** 검색은 단어 단위만 반환합니다.
 
-**참고:** 찾기 텍스트 상자에 특수 문자를 입력하면 단어 전체가 비활성화됩니다.
+>[!NOTE]
+>
+>찾기 텍스트 상자에 특수 문자를 입력하면 단어 전체가 비활성화됩니다.
 
 **예:** 정규 표현식을 사용하여 검색합니다. 예를 들어 다음 정규 표현식은 텍스트 모듈에서 이메일 주소를 검색합니다.
 
