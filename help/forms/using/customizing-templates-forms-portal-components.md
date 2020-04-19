@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -45,8 +45,12 @@ AEM Forms 사용자 인터페이스를 사용하면 메타데이터를 모든 �
    * 링크 구성 요소:/libs/fd/fp/linkTemplate
    레이아웃 템플릿을 선택할 때 표시할 제목을 추가합니다.
 
-   *참고:제목은 사용자가 만든 sling:Folder의 노드 이름과 다를 수 있습니다.*
-   *다음 이미지는 검색 및 라이브러리 구성 요소에 대한 구성을 보여 줍니다.* 슬링 ![만들기:폴더](assets/1.png)
+   >[!NOTE]
+   >
+   >제목은 사용자가 만든 sling:Folder의 노드 이름과 다를 수 있습니다.
+
+   다음 이미지는 검색 및 라이브러리 구성 요소에 대한 구성을 보여 줍니다.
+   ![슬링 만들기:폴더](assets/1.png)
 
 1. 이 폴더에 사용자 지정 템플릿으로 사용할 template.html 파일을 만듭니다.
 1. 사용자 지정 템플릿을 작성하고 아래에 설명된 대로 사용자 지정 메타데이터를 사용합니다.
@@ -93,7 +97,7 @@ Forms 포털에서는 자리 표시자가 사용자 지정/OOTB 메타데이터�
 
 ### 검색 및 라이브러리 구성 요소 {#search-amp-lister-component}
 
-* **** 제목:양식의 제목
+* **제목:** 양식의 제목
 * **이름**:양식의 이름(대부분 제목과 동일)
 * **설명**:양식의 설명
 * **formUrl**:양식을 HTML로 렌더링할 URL
@@ -102,7 +106,9 @@ Forms 포털에서는 자리 표시자가 사용자 지정/OOTB 메타데이터�
 
 * **htmlStyle**&amp; **pdfStyle**:렌더링에 각각 사용되는 HTML 및 PDF 아이콘의 표시 스타일 유효한 값은 &quot;**__FP_display_none**&quot; 또는 비어 있습니다.
 
-   **** 참고:사용자 정의 스타일 시트에서 __FP_display_none 클래스를 사용해야 합니다
+>[!NOTE]
+>
+>사용자 정의 스타일 시트에서 __FP_display_none 클래스를 사용해야 합니다.
 
 * **downloadUrl**:자산을 다운로드할 URL입니다.
 
@@ -118,7 +124,7 @@ Forms 포털에서는 자리 표시자가 사용자 지정/OOTB 메타데이터�
 
 ### 링크 구성 요소 {#link-component}
 
-* **** 제목:양식의 제목
+* **제목:** 양식의 제목
 * **formUrl**:양식을 HTML로 렌더링할 URL
 * **타겟**:링크의 타겟 속성입니다. 유효한 값은 &quot;_blank&quot; 및 &quot;_self&quot;입니다.
 * **linkText**:링크 캡션
@@ -149,15 +155,15 @@ Forms 포털에서는 자리 표시자가 사용자 지정/OOTB 메타데이터�
 
 **A**. 컨테이너 요소
 
-**** B.&quot;path&quot; 메타데이터에 고정된 계층 구조를 지정하여 각 양식에 대해 저장된 축소판을 가져옵니다.
+**B.** &quot;path&quot; 메타데이터에 고정된 계층 구조를 지정하여 각 양식에 대해 저장된 축소판을 가져옵니다.
 
 **C.** 각 양식에 대한 템플릿 섹션에 사용되는 데이터 반복 속성
 
-**** D.&quot;적용&quot; 문자열을 현지화하려면
+**D.** &quot;적용&quot; 문자열을 현지화하려면
 
-**** E.구성 속성 pdfLinkText 사용
+**E.** 구성 속성 pdfLinkText 사용
 
-**** F.&quot;pdfUrl&quot; 메타데이터 사용
+**F.** &quot;pdfUrl&quot; 메타데이터 사용
 
 ## 팁, 기법 및 알려진 문제 {#tips-tricks-and-known-issues}
 
