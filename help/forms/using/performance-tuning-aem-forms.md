@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -55,7 +55,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**참고**:권장 설정은 Windows 2008 R2 8 Core 및 Oracle HotSpot 1.7(64비트) JDK용이며 시스템 구성에 따라 확대되거나 축소되어야 합니다.
+>[!NOTE]
+>
+>권장 설정은 Windows 2008 R2 8 Core 및 Oracle HotSpot 1.7(64비트) JDK용이며 시스템 구성에 따라 확대되거나 축소되어야 합니다.
 
 ## 웹 서버 사용 {#using-a-web-server}
 
@@ -63,7 +65,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 예를 들어 다음 단계를 수행하여 JBoss에서 Apache Web Server 2.0 32비트에서 압축을 활성화합니다.
 
-***참고&#x200B;**:다음 지침은 Apache Web Server 2.0 32비트 이외의 서버에는 적용되지 않습니다. 다른 서버에 대한 단계는 해당 제품 설명서를 참조하십시오.*
+>[!NOTE]
+>
+>다음 지침은 Apache Web Server 2.0 32비트 이외의 서버에는 적용되지 않습니다. 다른 서버에 대한 단계는 해당 제품 설명서를 참조하십시오.
 
 다음 단계에서는 Apache 웹 서버와의 압축을 활성화하는 데 필요한 변경 사항을 보여 줍니다
 
