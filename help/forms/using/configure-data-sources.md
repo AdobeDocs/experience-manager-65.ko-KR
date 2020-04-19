@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -84,7 +84,8 @@ AEM 웹 콘솔의 사용자 프로필 커넥터 구성을 사용하여 AEM 사�
 
 ## 클라우드 서비스 구성을 위한 폴더 구성 {#cloud-folder}
 
-**참고**:RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하려면 클라우드 서비스 폴더에 대한 구성이 필요합니다.
+>[!NOTE]
+RESTful, SOAP 및 OData 서비스에 대한 클라우드 서비스를 구성하려면 클라우드 서비스 폴더에 대한 구성이 필요합니다.
 
 AEM의 모든 클라우드 서비스 구성은 AEM 저장소의 `/conf` 폴더에 통합됩니다. 기본적으로 `conf` 폴더에는 클라우드 서비스 구성을 만들 수 있는 `global` 폴더가 포함되어 있습니다. 하지만 클라우드 구성에 대해 수동으로 활성화해야 합니다. 클라우드 서비스 구성을 만들고 구성하기 `conf` 위해 에서 추가 폴더를 만들 수도 있습니다.
 
