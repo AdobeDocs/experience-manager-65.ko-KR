@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -59,13 +59,15 @@ Connector for EMC Documentum을 설정하려면 서버 연결 및 저장소 자�
 
 Documentum에서 사용할 저장소 서비스 공급자를 구성할 수 있습니다. 저장소 서비스 호출은 사용자가 구성하는 공급자에 위임됩니다. 다음 옵션을 사용할 수 있습니다.
 
-**** 현재 저장소 서비스 공급자 이름:현재 저장소 서비스 공급자의 이름
+**현재 저장소 서비스 공급자 이름:** 현재 저장소 서비스 공급자의 이름
 
-**** ECM Documentum Repository Provider:Documentum 저장소 공급자를 저장소의 공급자로 만듭니다. 이 옵션은 더 이상 사용되지 않습니다.
+**ECM Documentum Repository Provider:** Documentum 저장소 공급자를 저장소의 공급자로 만듭니다. 이 옵션은 더 이상 사용되지 않습니다.
 
-**** 저장소 공급자:기본 저장소 공급자를 저장소의 공급자로 만듭니다.
+**저장소 공급자:** 기본 저장소 공급자를 저장소의 공급자로 만듭니다.
 
-***참고&#x200B;**:나열된 저장소 서비스 공급자 이외의 저장소 서비스 공급자를 선택하려면 응용 프로그램 및 서비스 > 서비스 관리에서 RepositoryService를 구성합니다.<!-- Fix broken link (See Managing Services) -->*
+>[!NOTE]
+>
+>나열된 저장소 서비스 공급자 이외의 저장소 서비스 공급자를 선택하려면 응용 프로그램 및 서비스 > 서비스 관리에서 RepositoryService를 구성합니다. <!-- Fix broken link (See Managing Services) -->Adobe
 
 1. 관리 콘솔에서 서비스 > Connector for EMC Documentum > 구성 설정을 클릭합니다.
 1. 저장소 서비스 공급자 정보 영역에서 대체 저장소 서비스 공급자를 선택합니다.
