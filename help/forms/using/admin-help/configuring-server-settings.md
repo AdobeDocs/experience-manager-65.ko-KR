@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -195,15 +195,17 @@ AEM 양식에서 사용자의 수신 이메일 메시지를 수신하고 처리�
 
 `<`*PORT는&#x200B;*응용 프로그램`>`서버에 대한 HTTP 수신기의 포트 번호입니다. 지원되는 응용 프로그램 서버에 대한 기본 HTTP 수신기 포트는 다음과 같습니다.
 
-**** JBoss:8080년
+**JBoss:** 8080년
 
-**** Oracle WebLogic Server:7001년
+**Oracle WebLogic Server:** 7001년
 
-**** IBM WebSphere:9080년
+**IBM WebSphere:** 9080년
 
 이러한 URL이 제대로 작동하도록 하려면 `<`*PORT를&#x200B;*사용자 환경에`>`적합한 포트 번호로 바꿉니다.
 
-***참고&#x200B;**:양식 이외의 사용자 정의 웹 응용 프로그램을 사용하여 사용자에게 작업에 대한 액세스 권한을 제공하는 경우 사용자 정의 응용 프로그램에 적합한 URL 형식을 사용해야 합니다.*
+>[!NOTE]
+>
+>양식 이외의 사용자 정의 웹 응용 프로그램을 사용하여 사용자에게 작업에 대한 액세스 권한을 제공하는 경우 사용자 정의 응용 프로그램에 적합한 URL 형식을 대신 사용해야 합니다.
 
 ### 변수 선택기 {#variable-picker}
 
@@ -229,7 +231,9 @@ AEM 양식에서 사용자의 수신 이메일 메시지를 수신하고 처리�
 
 **group-name** 작업 항목이 지정된 그룹의 이름입니다.
 
-**참고**:변수에 값이 *없는 경우 아무 것도 반환되지 않습니다.*
+>[!NOTE]
+>
+>변수에 값이 없는 경우 아무 것도 반환되지 않습니다.
 
 중단된 분기의 경우 제목 및 알림 템플릿 상자에 다음 변수를 사용할 수 있습니다.
 
