@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: 66a3db6cd50ae25849dc173e0714df7c140c1774
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -201,7 +201,9 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
    1. 개인 정책을 보유한 사용자는 https://의&#x200B;[*서버*]:[*port*]/edc에서 문서 보안 웹 페이지에 로그인합니다.
    1. 서비스 > **[!UICONTROL Document Security > 내 정책으로 이동합니다]**.
    1. 정책을 열고 정책에서 사용자를 삭제합니다.
-   **참고**:관리자는 관리 콘솔을 사용하여 서비스 > Document Security > 내 **[!UICONTROL 정책에 있는 다른 사용자의 개인 정책에서 사용자 데이터를 검색, 액세스 및]** 삭제할 수 있습니다.
+   >[!NOTE]
+   >
+   >관리자는 관리 콘솔을 사용하여 서비스 > Document Security > 내 **[!UICONTROL 정책에 있는 다른 사용자의 개인 정책에서 사용자 데이터를 검색, 액세스 및]** 삭제할 수 있습니다.
 
 1. 사용자 관리 데이터베이스에서 주체 ID에 대한 데이터를 삭제합니다. 자세한 내용은 양식 [사용자 관리를 참조하십시오.| 사용자 데이터](/help/forms/using/user-management-handling-user-data.md)처리.
 1. AEM Forms 서버를 시작합니다.
