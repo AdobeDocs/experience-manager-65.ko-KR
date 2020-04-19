@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -306,7 +306,9 @@ AEM Forms 서버에서 Target을 구성하려면 AEM [Forms에서 Target 설정 
 1. CRXDE Lite를 열고 다음 파일을 백업합니다./libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. 위에 언급된 파일의 함수 정의를 다음 파일의 함수 정의로 바꿉니다. `onReportLoadSuccess` /apps/we-finance/demo-artifacts/targetreport.js
 
-   참고:이러한 변경 사항은 데모 용도로만 사용할 수 있습니다. 이 절차를 완료한 후 파일 내용을 복원해야 합니다.
+   >[!NOTE]
+   >
+   >이러한 변경 사항은 데모 용도로만 사용할 수 있습니다. 이 절차를 완료한 후 파일 내용을 복원해야 합니다.
 
 1. 생성한 보고서를 새로 고치면 다음과 같은 항목이 표시됩니다. 보고 대시보드를 검토합니다.
 
@@ -555,7 +557,9 @@ AEM Forms 서버에서 Target을 구성하려면 AEM [Forms에서 Target 설정 
 1. CRXDE Lite를 열고 다음 파일을 백업합니다./libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. 위에 언급된 파일의 `onReportLoadSuccess` 함수 정의를 다음 파일의 함수 정의로 바꿉니다./apps/we-finance/demo-artifacts/targetreport.js
 
-   참고:이러한 변경 사항은 데모 용도로만 사용할 수 있습니다. 이 절차를 완료한 후 파일 내용을 복원해야 합니다.
+   >[!NOTE]
+   >
+   >이러한 변경 사항은 데모 용도로만 사용할 수 있습니다. 이 절차를 완료한 후 파일 내용을 복원해야 합니다.
 
 1. 생성한 보고서를 새로 고치면 다음과 같은 항목이 표시됩니다. 보고 대시보드를 검토합니다.
 
