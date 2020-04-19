@@ -7,42 +7,39 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: a6afa740fa7897ef2629ca7ba07d6a1e08113957
 
 ---
 
 
 # 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
 
-## 소개 {#introduction}
-
 AEM Forms는 PDF 문서를 작성, 조합, 배포 및 보관하는 서비스, 문서에 대한 액세스를 제한하는 디지털 서명 추가, 바코드 양식을 디코딩하는 서비스 등 다양한 문서 수준 작업을 수행하는 OSGi 서비스를 제공합니다. 이러한 서비스는 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 이러한 서비스를 통칭하여 문서 서비스라고 합니다. 사용 가능한 문서 서비스 및 주요 기능 목록은 다음과 같습니다.
 
-PDF 및 XDP 문서를 결합, 재배치 및 보강하고 PDF 문서에 대한 정보를 얻을 수 있습니다. 또한 PDF 문서를 PDF/A 표준으로 변환 및 확인하고 PDF 양식, XML 양식 및 PDF 양식을 PDF/A-1b, PDF/A-2b 및 PDFA/A-3b로 변환할 수 있습니다. 자세한 내용은 어셈블러 [서비스를 참조하십시오](/help/forms/using/assembler-service.md).
+* **어셈블러 서비스:** PDF 및 XDP 문서를 결합, 재배치 및 보강하고 PDF 문서에 대한 정보를 얻을 수 있습니다. 또한 PDF 문서를 PDF/A 표준으로 변환 및 확인하고 PDF 양식, XML 양식 및 PDF 양식을 PDF/A-1b, PDF/A-2b 및 PDFA/A-3b로 변환할 수 있습니다. 자세한 내용은 어셈블러 [서비스를 참조하십시오](/help/forms/using/assembler-service.md).
 
-PDF 문서를 PostScript 또는 이미지 파일(JPEG, JPEG 2000, PNG 및 TIFF)로 변환할 수 있습니다. 자세한 내용은 ConvertPDF [Service를 참조하십시오](/help/forms/using/using-convertpdf-service.md).
+* **ConvertPDF 서비스:** PDF 문서를 PostScript 또는 이미지 파일(JPEG, JPEG 2000, PNG 및 TIFF)로 변환할 수 있습니다. 자세한 내용은 ConvertPDF [Service를 참조하십시오](/help/forms/using/using-convertpdf-service.md).
 
-바코드의 전자 이미지에서 데이터를 추출할 수 있습니다. 이 서비스는 하나 이상의 바코드를 입력으로 포함하는 TIFF 및 PDF 파일을 수용하고 바코드 데이터를 추출합니다. 자세한 내용은 바코드 양식 [서비스를 참조하십시오](/help/forms/using/using-barcoded-forms-service.md).
+* **바코드 양식 서비스:** 바코드의 전자 이미지에서 데이터를 추출할 수 있습니다. 이 서비스는 하나 이상의 바코드를 입력으로 포함하는 TIFF 및 PDF 파일을 수용하고 바코드 데이터를 추출합니다. 자세한 내용은 바코드 양식 [서비스를 참조하십시오](/help/forms/using/using-barcoded-forms-service.md).
 
-문서 암호화 및 암호 해독, Adobe Reader의 기능 확장, 추가 사용 권한 및 디지털 서명을 문서에 추가할 수 있습니다. Doc Assurance 서비스에는 다음과 같은 세 가지 서비스가 포함되어 있습니다.서명, 암호화 및 리더 익스텐션 자세한 내용은 DocAssurance [서비스를 참조하십시오](/help/forms/using/overview-aem-document-services.md).
+* **DocAssurance 서비스:** 문서 암호화 및 암호 해독, Adobe Reader의 기능 확장, 추가 사용 권한 및 디지털 서명을 문서에 추가할 수 있습니다. Doc Assurance 서비스에는 다음과 같은 세 가지 서비스가 포함되어 있습니다.서명, 암호화 및 리더 익스텐션 자세한 내용은 DocAssurance [서비스를 참조하십시오](/help/forms/using/overview-aem-document-services.md).
 
-문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 문서의 내용을 읽을 수 없게 됩니다. 권한이 있는 사용자는 문서를 해독하여 문서에 대한 액세스 권한을 얻을 수 있습니다. 자세한 내용은 암호화 [서비스를 참조하십시오](/help/forms/using/overview-aem-document-services.md#p-encryption-service-p).
+* **암호화 서비스:** 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 문서의 내용을 읽을 수 없게 됩니다. 권한이 있는 사용자는 문서를 해독하여 문서에 대한 액세스 권한을 얻을 수 있습니다. 자세한 내용은 암호화 [서비스를 참조하십시오](/help/forms/using/overview-aem-document-services.md#encryption-service).
 
-Forms Designer에서 일반적으로 작성된 양식을 확인, 처리, 변환 및 전달하는 대화형 데이터 캡처 클라이언트 애플리케이션을 만들 수 있습니다. 양식 서비스는 사용자가 개발한 모든 양식 디자인을 PDF 문서로 렌더링합니다. 자세한 내용은 양식 서비스를 [참조하십시오](/help/forms/using/forms-service.md).
+* **양식 서비스:** Forms Designer에서 일반적으로 작성된 양식을 확인, 처리, 변환 및 전달하는 대화형 데이터 캡처 클라이언트 애플리케이션을 만들 수 있습니다. 양식 서비스는 사용자가 개발한 모든 양식 디자인을 PDF 문서로 렌더링합니다. 자세한 내용은 양식 서비스를 [참조하십시오](/help/forms/using/forms-service.md).
 
-PDF, 레이저 프린터 포맷, 레이블 프린터 포맷 등 다양한 포맷으로 문서를 만들 수 있습니다. 레이저 프린터 형식은 PostScript 및 프린터 제어 언어(PCL)입니다. 자세한 내용은 출력 [서비스를 참조하십시오](/help/forms/using/output-service.md).
+* **출력 서비스:** PDF, 레이저 프린터 포맷, 레이블 프린터 포맷 등 다양한 포맷으로 문서를 만들 수 있습니다. 레이저 프린터 형식은 PostScript 및 프린터 제어 언어(PCL)입니다. 자세한 내용은 출력 [서비스를 참조하십시오](/help/forms/using/output-service.md).
 
-PDF Generator 서비스는 API를 제공하여 기본 파일 형식을 PDF로 변환합니다. 또한 PDF를 다른 파일 포맷으로 변환하고 PDF 문서의 크기를 최적화합니다. 자세한 내용은 PDF Generator [서비스를 참조하십시오](aem-document-services-programmatically.md#pdfgeneratorservice).
+* **PDF Generator 서비스:** PDF Generator 서비스는 API를 제공하여 기본 파일 형식을 PDF로 변환합니다. 또한 PDF를 다른 파일 포맷으로 변환하고 PDF 문서의 크기를 최적화합니다. 자세한 내용은 PDF Generator [서비스를 참조하십시오](aem-document-services-programmatically.md#pdfgeneratorservice).
 
-조직에서 Adobe Reader의 기능을 추가 사용 권한으로 확장하여 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 Adobe Reader를 사용하여 PDF 문서를 열 때 사용할 수 없는 기능(예: 문서에 주석 추가, 양식 채우기, 문서 저장)을 활성화합니다. 자세한 내용은 Reader 확장 [서비스를 참조하십시오](/help/forms/using/overview-aem-document-services.md#p-reader-extension-service-p).
+* **Reader 확장 서비스:** 조직에서 Adobe Reader의 기능을 추가 사용 권한으로 확장하여 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 Adobe Reader를 사용하여 PDF 문서를 열 때 사용할 수 없는 기능(예: 문서에 주석 추가, 양식 채우기, 문서 저장)을 활성화합니다. 자세한 내용은 Reader 확장 [서비스를 참조하십시오](/help/forms/using/overview-aem-document-services.md#reader-extension-service).
 
-AEM 서버에서 디지털 서명 및 문서를 사용하여 작업할 수 있습니다. 예를 들어, 서명 서비스는 일반적으로 다음과 같은 경우에 사용됩니다.
+* **서명 서비스:** AEM 서버에서 디지털 서명 및 문서를 사용하여 작업할 수 있습니다. 예를 들어, 서명 서비스는 일반적으로 다음과 같은 경우에 사용됩니다.
 
-* AEM 서버는 Acrobat 또는 Adobe Reader를 사용하여 열도록 사용자에게 전송하기 전에 양식을 인증합니다.
-* AEM 서버는 Acrobat 또는 Adobe Reader를 사용하여 양식에 추가된 서명을 확인합니다.
-* AEM 서버는 공공증인을 대신하여 양식에 서명합니다.
-
-서명 서비스는 신뢰 저장소에 저장된 인증서 및 자격 증명에 액세스합니다. 자세한 내용은 서명 [서비스를 참조하십시오](/help/forms/using/aem-document-services-programmatically.md).
+   * AEM 서버는 Acrobat 또는 Adobe Reader를 사용하여 열도록 사용자에게 전송하기 전에 양식을 인증합니다.
+   * AEM 서버는 Acrobat 또는 Adobe Reader를 사용하여 양식에 추가된 서명을 확인합니다.
+   * AEM 서버는 공공증인을 대신하여 양식에 서명합니다.
+   서명 서비스는 신뢰 저장소에 저장된 인증서 및 자격 증명에 액세스합니다. 자세한 내용은 서명 [서비스를 참조하십시오](/help/forms/using/aem-document-services-programmatically.md).
 
 AEM Forms는 강력한 엔터프라이즈급 플랫폼이며 문서 서비스는 AEM Forms 기능 중 하나에 불과합니다. 전체 기능 목록은 AEM Forms [소개를 참조하십시오](/help/forms/using/introduction-aem-forms.md).
 
@@ -50,7 +47,7 @@ AEM Forms는 강력한 엔터프라이즈급 플랫폼이며 문서 서비스는
 
 AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 일반적으로 AEM Forms 문서 서비스를 실행하려면 하나의 AEM 인스턴스(작성자 또는 게시)만 있으면 됩니다. AEM Forms 문서 서비스를 실행하려면 다음 토폴로지가 권장됩니다. 토폴로지에 대한 자세한 내용은 AEM Forms [용 아키텍처 및 배포 토폴로지를 참조하십시오](/help/forms/using/aem-forms-architecture-deployment.md).
 
-![](do-not-localize/document-services.png)
+![AEM Forms용 아키텍처 및 배포 토폴로지](do-not-localize/document-services.png)
 
 >[!NOTE]
 >
@@ -75,7 +72,7 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 
 * PDF 생성기에서 Microsoft Windows 및 Linux에서 변환을 수행하는 데 필요한 클라이언트 소프트웨어가 설치되어 있습니다.
 
-   * **Microsoft Windows**:Microsoft [Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)또는 [Apache OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft Windows**:Microsoft [Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)또는 [Apache OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
    * **Linux**:Apache [OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
 
 >[!NOTE]
@@ -85,6 +82,8 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 >
 
 
+
+### UNIX 기반 운영 체제를 위한 추가 요구 사항 {#extrarequirements}
 
 UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 미디어에서 다음 패키지를 설치합니다.
 
@@ -187,6 +186,10 @@ UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 
    * ld-linux.so.2
    * libexpat.so.1
 
+## 사전 설치 구성 {#preinstallationconfigurations}
+
+사전 설치 구성 섹션에 나열된 구성은 PDF Generator 서비스에만 적용됩니다. PDF Generator 서비스를 구성하지 않는 경우 사전 설치 구성 섹션을 건너뛸 수 있습니다.
+
 ### Adobe Acrobat 및 타사 애플리케이션 설치 {#install-adobe-acrobat-and-third-party-applications}
 
 PDF Generator 서비스를 사용하여 Microsoft Word, Microsoft Excel, Microsoft PowerPoint, OpenOffice, WordPerfect X7 및 Adobe Acrobat과 같은 기본 파일 형식을 PDF 문서로 변환하는 경우 이러한 애플리케이션이 AEM Forms 서버에 설치되어 있는지 확인하십시오.
@@ -256,7 +259,7 @@ Acrobat을 설치한 후 Microsoft Word를 엽니다. Acrobat ****&#x200B;탭에
 
 ### (IBM WebSphere에만 해당) IBM SSL 소켓 공급자 구성 {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
-* IBM SSL 소켓 공급자를 구성하려면 다음 단계를 수행하십시오.
+IBM SSL 소켓 공급자를 구성하려면 다음 단계를 수행하십시오.
 
 1. java.security 파일의 복사본을 만듭니다. 파일의 기본 위치는 입니다 `[WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security`.
 1. 편집용으로 복사한 java.security 파일을 엽니다.
@@ -287,7 +290,7 @@ Acrobat을 설치한 후 Microsoft Word를 엽니다. Acrobat ****&#x200B;탭에
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### Install Ink 및 Written Service 구성 {#configure-install-ink-and-handwriting-service}
+### (Windows만 해당) 잉크 및 필기 서비스 설치 구성 {#configure-install-ink-and-handwriting-service}
 
 Microsoft Windows Server를 실행하는 경우 잉크 및 필기 서비스를 구성합니다. Microsoft Office의 연결 기능을 사용하는 Microsoft PowerPoint 파일을 열려면 서비스가 필요합니다.
 
@@ -295,7 +298,7 @@ Microsoft Windows Server를 실행하는 경우 잉크 및 필기 서비스를 �
 1. 기능 **[!UICONTROL 메뉴에서 기능]** 추가를 **[!UICONTROL 클릭합니다]** . 잉크 및 **[!UICONTROL 필기 서비스]** 확인란을 선택합니다.
 1. **[!UICONTROL Ink &amp; Written]** Services **[!UICONTROL 를 선택한 상태에서 기능 대화 상자를]** 선택합니다. 설치를 **[!UICONTROL 클릭하면]** 서비스가 설치됩니다.
 
-### Microsoft Office에 대한 파일 블록 설정 구성 {#configure-the-file-block-settings-for-microsoft-office}
+### (Windows 전용) Microsoft Office에 대한 파일 블록 설정 구성 {#configure-the-file-block-settings-for-microsoft-office}
 
 PDF Generator 서비스가 이전 버전의 Microsoft Office로 만든 파일을 변환할 수 있도록 Microsoft Office Trust Center 설정을 변경합니다.
 
@@ -305,7 +308,7 @@ PDF Generator 서비스가 이전 버전의 Microsoft Office로 만든 파일을
 1. Trust Center **[!UICONTROL 설정에서]**&#x200B;파일 블록 **[!UICONTROL 설정을 클릭합니다]**.
 1. [ **[!UICONTROL 파일 유형]** ] 목록에서 PDF Generator **** 서비스가 PDF 문서로 변환할 수 있도록 허용해야 하는 파일 유형에 대해 [열기]를 선택 취소합니다.
 
-### 프로세스 수준 토큰 바꾸기 권한 부여 {#grant-the-replace-a-process-level-token-privilege}
+### (Windows만 해당) 프로세스 수준 토큰 바꾸기 권한을 부여합니다. {#grant-the-replace-a-process-level-token-privilege}
 
 응용 프로그램 서버를 시작하는 데 사용되는 사용자 계정에는 프로세스 수준 토큰 **바꾸기 권한이** 필요합니다. 로컬 시스템 계정에는 기본적으로 **프로세스 수준 토큰** 바꾸기 권한이 있습니다. 로컬 관리자 그룹 사용자와 함께 실행되는 서버의 경우 권한이 명시적으로 부여되어야 합니다. 다음 단계를 수행하여 권한을 부여합니다.
 
@@ -313,7 +316,7 @@ PDF Generator 서비스가 이전 버전의 Microsoft Office로 만든 파일을
 1. 로컬 컴퓨터 **[!UICONTROL 정책]** > **[!UICONTROL 컴퓨터 구성]** > **[!UICONTROL 컴퓨터 구성]** > 설정 **[!UICONTROL >]** 보안 > 로컬 보안 > Rights SecurityLocal Rights Policy_Security **** **** **** 사용자 할당 및 편집 프로세스 수준 토큰을 대체정책 포함으로 이동하고 관리자를 포함합니다.
 1. 프로세스 수준 토큰 바꾸기 항목에 사용자를 추가합니다.
 
-#### 관리자가 아닌 사용자를 위한 PDF Generator 서비스 활성화 {#enable-the-pdf-generator-service-for-non-administrators}
+### (Windows 전용) 관리자가 아닌 사용자에 대해 PDF Generator 서비스 활성화 {#enable-the-pdf-generator-service-for-non-administrators}
 
 관리자가 아닌 사용자가 PDF Generator 서비스를 사용하도록 설정할 수 있습니다. 일반적으로 관리 권한이 있는 사용자만 서비스를 사용할 수 있습니다.
 
@@ -321,7 +324,7 @@ PDF Generator 서비스가 이전 버전의 Microsoft Office로 만든 파일을
 1. 환경 변수의 값을 TRUE로 설정합니다.
 1. AEM Forms 인스턴스를 다시 시작합니다.
 
-### UAC(사용자 계정 컨트롤) 비활성화 {#disable-user-account-control-uac}
+### (Windows 전용) 사용자 계정 컨트롤 비활성화(UAC) {#disable-user-account-control-uac}
 
 1. System Configuration Utility에 액세스하려면 시작 > **[!UICONTROL 실행으로]** 이동한 다음 MSCONFIG를 **[!UICONTROL 입력합니다]**.
 1. 도구 **[!UICONTROL 탭을 클릭하고]** 아래로 스크롤한 다음 UAC 설정 **[!UICONTROL 변경을 선택합니다]**. 시작을 **[!UICONTROL 클릭하여]** 새 창에서 명령을 실행합니다.
@@ -335,13 +338,13 @@ PDF Generator 서비스가 이전 버전의 Microsoft Office로 만든 파일을
 
 1. 컴퓨터를 다시 시작합니다.
 
-### 오류 보고 서비스 비활성화 {#disable-error-reporting-service}
+### (Windows 전용) 오류 보고 서비스 비활성화 {#disable-error-reporting-service}
 
 Windows Server에서 PDF Generator 서비스를 사용하여 문서를 PDF로 변환하는 동안 Windows Server에서 실행 파일에 문제가 발생하여 닫아야 한다고 보고합니다. 그러나 백그라운드에서 PDF가 계속 변환되더라도 영향을 주지 않습니다.
 
 오류를 수신하지 않으려면 Windows 오류 보고를 비활성화할 수 있습니다. 오류 보고 비활성화에 대한 자세한 내용은 https://technet.microsoft.com/en-us/library/cc754364.aspx을 [참조하십시오](https://technet.microsoft.com/en-us/library/cc754364.aspx).
 
-### HTML을 PDF로 변환 구성 {#configure-html-to-pdf-conversion}
+### (Windows 전용) HTML을 PDF로 변환 구성 {#configure-html-to-pdf-conversion}
 
 PDF Generator 서비스는 WebKit, WebCapture 및 PhantomJS 경로를 통해 HTML 파일을 PDF 문서로 변환하는 방법을 제공합니다. Windows의 경우 WebKit 및 Acrobat WebCapture 경로에 대한 변환을 활성화하려면 유니코드 글꼴을 %windir%\fonts 디렉토리로 복사합니다.
 
@@ -350,11 +353,11 @@ PDF Generator 서비스는 WebKit, WebCapture 및 PhantomJS 경로를 통해 HTM
 > 글꼴 폴더에 새 글꼴을 설치할 때마다 AEM Forms 인스턴스를 다시 시작합니다.
 
 
-### HTML을 PDF로 변환하기 위한 추가 구성 {#extra-configurations-for-html-to-pdf-conversion}
+### (UNIX 기반 플랫폼만 해당) HTML을 PDF로 변환하기 위한 추가 구성 {#extra-configurations-for-html-to-pdf-conversion}
 
 UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경로를 지원하여 HTML 파일을 PDF 문서로 변환합니다. HTML을 PDF로 변환하려면 원하는 변환 경로에 해당하는 다음 구성을 수행하십시오.
 
-#### 유니코드 글꼴 지원(WebKit만 해당) {#enable-support-for-unicode-fonts-webkit-only}
+### (UNIX 기반 플랫폼만 해당) 유니코드 글꼴 지원(WebKit만 해당) {#enable-support-for-unicode-fonts-webkit-only}
 
 시스템에 맞게 다음 디렉토리에 유니코드 글꼴을 복사합니다.
 
@@ -378,9 +381,9 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경�
 
 
 
-## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
+## AEM Forms 추가 기능 패키지 설치 {#install-aem-forms-add-on-package}
 
-AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
+AEM Forms Add-on 패키지는 AEM에 배포된 애플리케이션입니다. 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
 
 1. AEM 서버에 [](http://localhost:4502) 관리자로 로그인하고 [패키지 공유를](http://localhost:4502/crx/packageshare)엽니다. 패키지 공유에 로그인하려면 Adobe ID가 필요합니다.
 
@@ -472,7 +475,7 @@ PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합�
  </tbody> 
 </table>
 
-### PDF Generator 서비스용 Acrobat 구성 {#configure-acrobat-for-the-pdf-generator-service}
+### (Windows 전용) PDF Generator 서비스용 Acrobat 구성 {#configure-acrobat-for-the-pdf-generator-service}
 
 Microsoft Windows의 경우 PDF Generator 서비스는 Adobe Acrobat을 사용하여 지원되는 파일 형식을 PDF 문서로 변환합니다. PDF Generator 서비스용 Adobe Acrobat을 구성하려면 다음 단계를 수행하십시오.
 
@@ -500,7 +503,7 @@ Microsoft Windows의 경우 PDF Generator 서비스는 Adobe Acrobat을 사용�
 
    1. 다음으로 이동 `[Path_of_reports_folder]`. SystemReadinessTool.html 파일을 엽니다. 보고서를 확인하고 언급된 문제를 수정합니다.
 
-### HTML을 PDF로 변환하는 기본 경로 구성(Windows만 해당) {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
+### (Windows 전용) HTML을 PDF로 변환하기 위한 기본 경로 구성 {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
 PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 여러 경로를 제공합니다.Webkit, Acrobat WebCapture(Windows 전용) 및 PhantomJS. PhantomJS 경로는 동적 컨텐츠를 처리할 수 있는 기능을 갖추고 있고 32비트 라이브러리, 32비트 JDK에 대한 종속성이 없거나 추가 글꼴이 필요하지 않으므로 사용하는 것이 좋습니다. 또한 PhantomJS 경로에는 변환을 실행하기 위한 sudo 또는 루트 액세스가 필요하지 않습니다.
 
@@ -510,7 +513,7 @@ HTML을 PDF로 변환하는 기본 경로는 Webkit입니다. 전환 경로를 �
 
 1. 일반 **[!UICONTROL 구성]** 탭의 기본 HTML에서 PDF로 변환 **** 기본 경로 드롭다운에서 기본 변환 경로를 선택합니다.
 
-### 전역 트러스트 저장소 초기화{#intialize-global-trust-store}
+### 전역 트러스트 저장소 초기화 {#intialize-global-trust-store}
 
 Trust Store Management를 사용하여 디지털 서명 및 인증서 인증의 유효성 검사를 위해 서버에서 신뢰하는 인증서를 가져오거나 편집 및 삭제할 수 있습니다. 인증서를 원하는 만큼 가져오거나 내보낼 수 있습니다. 인증서를 가져온 후 트러스트 설정 및 트러스트 저장소 유형을 편집할 수 있습니다. 트러스트 저장소를 초기화하려면 다음 단계를 수행하십시오.
 
