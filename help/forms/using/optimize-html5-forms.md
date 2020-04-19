@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -20,7 +20,9 @@ HTML5 양식은 HTML5 형식으로 양식을 렌더링합니다. 결과 출력�
 
 이 문서에서는 JBoss와 함께 Apache Web Server 2.0 32비트의 압축을 활성화하는 데 필요한 단계에 대해 설명합니다.
 
-*참고:다음 지침은 Apache Web Server 2.0 32비트 이외의 서버에는 적용되지 않습니다.*
+>[!NOTE]
+>
+>다음 지침은 Apache Web Server 2.0 32비트 이외의 서버에는 적용되지 않습니다.
 
 운영 체제에 적용할 수 있는 Apache 웹 서버 소프트웨어를 구입합니다.
 
