@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
 
 ## 작업 제출 소개 {#introduction-to-submit-actions}
 
-사용자가 적응형 양식의 제출 단추를 클릭하면 제출 작업이 트리거됩니다. 적응형 양식에서 제출 작업을 구성할 수 있습니다. 적응형 양식은 즉시 사용할 수 있는 제출 작업을 제공합니다. 기본 제출 작업을 복사하고 확장하여 직접 제출 작업을 만들 수 있습니다. 그러나 사용자의 요구 사항에 따라 제출 작업을 작성하고 등록하여 제출된 양식의 데이터를 처리할 수 있습니다. 제출 작업은 [동기 또는 비동기 제출을](../../forms/using/asynchronous-submissions-adaptive-forms.md)사용할 수 있습니다.
+사용자가 적응형 양식의 제출 단추를 클릭하면 제출 작업이 트리거됩니다. 적응형 양식에서 제출 작업을 구성할 수 있습니다. 적응형 양식은 즉시 사용할 수 있는 제출 작업을 제공합니다. 기본 제출 작업을 복사하고 확장하여 고유한 제출 작업을 만들 수 있습니다. 그러나 사용자의 요구 사항에 따라 제출 작업을 작성하고 등록하여 제출된 양식의 데이터를 처리할 수 있습니다. 제출 작업은 [동기 또는 비동기 제출을](../../forms/using/asynchronous-submissions-adaptive-forms.md)사용할 수 있습니다.
 
 세로 막대의 적응형 양식 컨테이너 **속성의** 제출 섹션에서 제출 작업을 구성할 수 있습니다.
 
@@ -102,7 +102,8 @@ REST **종단점에 제출** 동작을 사용하여 전송된 데이터를 나�
 
 전자 **메일로 PDF 보내기** 제출 작업은 양식 데이터가 포함된 PDF를 한 명 이상의 수신자에게 전송하여 양식을 성공적으로 제출합니다.
 
-**** 참고:이 제출 작업은 기록 문서 템플릿이 있는 XFA 기반 적응형 양식과 XSD 기반 적응형 양식에 사용할 수 있습니다.
+>[!NOTE]
+이 제출 작업은 기록 문서 템플릿이 있는 XFA 기반 적응형 양식과 XSD 기반 적응형 양식에 사용할 수 있습니다.
 
 ## Invoke a forms workflow {#invoke-a-forms-workflow}
 
@@ -126,7 +127,7 @@ REST **종단점에 제출** 동작을 사용하여 전송된 데이터를 나�
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-AEM **Workflow** 제출 작업 호출은 적응형 양식을 AEM Workflow와 연결합니다. 양식이 제출되면 관련 워크플로우는 처리 노드에서 자동으로 시작됩니다. 또한 데이터 파일, 첨부 파일 및 기록 문서(해당하는 경우)를 워크플로우의 페이로드 위치에 배치합니다.
+AEM **워크플로우 호출** 제출 동작은 적응형 양식을 AEM 워크플로우와 연관시킵니다. 양식이 제출되면 관련 워크플로우는 처리 노드에서 자동으로 시작됩니다. 또한 데이터 파일, 첨부 파일 및 기록 문서(해당하는 경우)를 워크플로우의 페이로드 위치에 배치합니다.
 
 AEM Workflow **제출 작업** 호출을 사용하기 전에 AEM DS 설정을 [구성합니다](../../forms/using/configuring-the-processing-server-url-.md). AEM Workflow를 만드는 방법에 대한 자세한 내용은 OSGi [에서 양식 중심 워크플로우를 참조하십시오](../../forms/using/aem-forms-workflow.md).
 
