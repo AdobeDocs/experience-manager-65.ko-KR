@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -25,7 +25,7 @@ AEM Forms 포털 초안 및 제출 구성 요소를 사용하면 양식을 초�
 >[!NOTE]
 >
 >* 이 문서에 설명된 예와 구성은 MySQL 5.6.24에 따라 다르며 데이터베이스 시스템에 맞게 적절하게 대체해야 합니다.
->* 최신 버전의 AEM Forms Add-on 패키지를 설치했는지 확인합니다. 사용 가능한 패키지 목록은 AEM Forms 릴리스 [문서를](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 참조하십시오.
+>* 최신 버전의 AEM Forms Add-on 패키지를 설치했는지 확인합니다. 사용 가능한 패키지 목록은 AEM Forms 릴리스 [문서를](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 참조하십시오.
 >
 
 
@@ -52,12 +52,12 @@ AEM Forms 포털 초안 및 제출 구성 요소를 사용하면 양식을 초�
 
    | **속성** | **설명** | **값** |
    |---|---|---|
-   | Forms 포털 초안 데이터 서비스 | 초안 데이터 서비스 식별자 | formsportal.sample dataservice |
-   | Forms 포털 초안 메타데이터 서비스 | 초안 메타데이터 서비스 식별자 | formsportal.samplementadaservice |
-   | Forms 포털 데이터 서비스 제출 | 전송 데이터 서비스에 대한 식별자 | formsportal.sample dataservice |
-   | Forms 포털 전송 메타데이터 서비스 | 전송 메타데이터 서비스 식별자 | formsportal.samplementadaservice |
-   | Forms 포털 보류 중인 Sign 데이터 서비스 | 대기 중인 Sign 데이터 서비스에 대한 식별자 | formsportal.sample dataservice |
-   | Forms 포털 Pending Sign 메타데이터 서비스 | 대기 중인 Sign 메타데이터 서비스에 대한 식별자 | formsportal.samplementadaservice |
+   | Forms 포털 초안 데이터 서비스 | 초안 데이터 서비스 식별자 | formsportal.sampledataservice |
+   | Forms 포털 초안 메타데이터 서비스 | 초안 메타데이터 서비스 식별자 | formsportal.samplemetadataservice |
+   | Forms 포털 데이터 서비스 제출 | 전송 데이터 서비스에 대한 식별자 | formsportal.sampledataservice |
+   | Forms 포털 전송 메타데이터 서비스 | 전송 메타데이터 서비스 식별자 | formsportal.samplemetadataservice |
+   | Forms 포털 보류 중인 Sign 데이터 서비스 | 대기 중인 Sign 데이터 서비스에 대한 식별자 | formsportal.sampledataservice |
+   | Forms 포털 Pending Sign 메타데이터 서비스 | 대기 중인 Sign 메타데이터 서비스에 대한 식별자 | formsportal.samplemetadataservice |
 
    >[!NOTE]
    >
@@ -78,7 +78,9 @@ AEM Forms 포털 초안 및 제출 구성 요소를 사용하면 양식을 초�
    데이터 테이블에 대해 다른 이름을 제공하려면
 
    * 웹 콘솔 구성에서 Forms 포털 데이터 서비스 샘플 구현을 찾아 클릭합니다. 데이터 소스 및 데이터 테이블 이름의 값을 변경할 수 있습니다.
-   **참고**:테이블 이름을 변경하는 경우 양식 포털 구성으로 제공합니다.
+   >[!NOTE]
+   >
+   >테이블 이름을 변경하는 경우 양식 포털 구성으로 제공합니다.
 
 1. 다른 구성을 그대로 두고 저장을 **[!UICONTROL 클릭합니다]**.
 
