@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86649ccfd494435038da06e72fbfed544a7aaf12
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -44,8 +44,11 @@ source-git-commit: 86649ccfd494435038da06e72fbfed544a7aaf12
 * **적응형 양식 사용:** 입력 적응형 양식을 찾을 방법을 지정합니다. 이 옵션은 유형 드롭다운 목록에서 적응형 양식 또는 읽기 전용 적응형 양식을 선택하는 경우에 사용할 수 있습니다. 워크플로우에 제출된 적응형 양식을 절대 경로에서 사용하거나 변수의 경로에서 사용할 수 있습니다. 문자열 유형의 변수를 사용하여 경로를 지정할 수 있습니다.\
    여러 적응형 양식을 워크플로우에 연결할 수 있습니다. 따라서 사용 가능한 입력 방법을 사용하여 런타임에 적응형 양식을 지정할 수 있습니다.
 
-* **대화형 통신 사용:** 입력 대화형 통신을 찾을 방법을 지정합니다. 워크플로우에 제출된 대화형 통신을 절대 경로로 사용하거나 변수의 경로에서 사용할 수 있습니다. 문자열 유형의 변수를 사용하여 경로를 지정할 수 있습니다. 이 옵션은 유형 드롭다운 목록에서 Interactive Communication Agent UI 또는 Interactive Communication Web Channel Document를 선택한 경우 사용할 수 있습니다.\
-   **참고:** AEM 받은 편지함에서 Interactive Communications Agent UI에 액세스하려면 cm-agent-users 및 workflow-users 그룹 할당이 있어야 합니다.
+* **대화형 통신 사용:** 입력 대화형 통신을 찾을 방법을 지정합니다. 워크플로우에 제출된 대화형 통신을 절대 경로로 사용하거나 변수의 경로에서 사용할 수 있습니다. 문자열 유형의 변수를 사용하여 경로를 지정할 수 있습니다. 이 옵션은 유형 드롭다운 목록에서 Interactive Communication Agent UI 또는 Interactive Communication Web Channel Document를 선택한 경우 사용할 수 있습니다.
+
+>[!NOTE]
+>
+>AEM 받은 편지함에서 Interactive Communications Agent UI에 액세스하려면 cm-agent-users 및 workflow-users 그룹 할당이 있어야 합니다.
 
 * **적응형 양식 또는 인터랙티브 커뮤니케이션 경로**:적응형 양식 또는 대화형 커뮤니케이션의 경로를 지정합니다. 절대 경로에서 사용할 수 있는 적응형 양식이나 워크플로우에 제출되는 대화형 통신을 사용하거나 문자열 데이터 유형의 변수에 저장된 경로에서 적응형 양식을 검색할 수 있습니다.
 * **다음을 사용하여 입력 PDF를 선택합니다.** 비대화형 PDF 문서의 경로를 지정합니다. [유형] 필드에서 비대화형 PDF 문서를 선택하면 이 필드를 사용할 수 있습니다. 페이로드에 상대적인 경로, 절대 경로에 저장된 경로 또는 문서 데이터 유형의 변수를 사용하여 입력 PDF를 선택할 수 있습니다. 예: Payload_ [Directory/Workflow/PDF/credit-card.pdf]. crx-repository에 경로가 없습니다. 관리자가 경로를 사용하기 전에 만듭니다. [PDF 경로] 옵션을 사용하려면 [기록 문서] 옵션을 활성화하거나 양식 템플릿 기반의 적응형 양식을 필요로 합니다.
