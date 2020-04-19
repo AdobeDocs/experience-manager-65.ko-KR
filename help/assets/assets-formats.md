@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산 및 Dynamic Media에서 지원하는 파일 포맷 및 각 형식에 지원되는 기능 목록.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 15691a164913cf06bfbb77392ec563d8c364a1b8
+source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
 
 ---
 
@@ -101,7 +101,7 @@ Adobe Imaging Transcoding 라이브러리는 인코딩, 트랜스코딩, 리샘�
 
 이미징 트랜스코딩 라이브러리는 JPG/JPEG, PNG(8비트 및 16비트), GIF, BMP, TIFF/Compressed TIFF(32비트 TIFF 파일 및 PTIFF 파일 제외), ICO 및 ICN MIME 유형을 지원합니다.
 
-이미징 [트랜스코딩 라이브러리를 참조하십시오](imaging-transcoding-library.md).
+See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## 지원되는 Camera Raw {#supported-camera-raw}
 
@@ -222,10 +222,6 @@ AEM Assets는 Adobe Camera Raw 라이브러리를 사용하여 Raw 이미지를 
 
 지원되는 MIME 유형 목록은 에서 CRXDE Lite에서 확인할 수 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`있습니다.
 
-업로드 [작업 매개 변수 지원을](config-dynamic.md)위해 MIME 유형 기반 구성을 참조하십시오.
-
-MIME [유형 기반 자산/Scene7 업로드 작업 매개 변수 지원을](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)참조하십시오.
-
 | 파일 확장명 | MIME 유형/인터넷 미디어 유형 | 기본 jobParam 값 | 허용되는 jobParam 값 |
 |---|---|---|---|
 | 이미지 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 기본 jobParam은 모든 이미지 MIME 유형 자산에 적용됩니다.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
@@ -262,7 +258,7 @@ MIME [유형 기반 자산/Scene7 업로드 작업 매개 변수 지원을](/hel
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
@@ -286,5 +282,6 @@ MIME [유형 기반 자산/Scene7 업로드 작업 매개 변수 지원을](/hel
 
 >[!MORELIKETHIS]
 >
->* [MIME 유형 기반 자산/Scene7 업로드 작업 매개 변수 지원을](../sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)활성화합니다.
+>* [MIME 유형 기반 자산/Scene7 업로드 작업 매개 변수 지원을](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)활성화합니다.
+>* [업로드 작업 매개 변수 지원을](config-dynamic.md)위해 MIME 유형 기반 구성을 참조하십시오.
 
