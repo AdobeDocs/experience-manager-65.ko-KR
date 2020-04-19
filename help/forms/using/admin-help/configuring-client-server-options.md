@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -26,7 +26,9 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 IPv6를 사용하는 경우 기본 URL을 컴퓨터 이름 또는 DNS 이름으로 입력합니다. 숫자 IP 주소를 사용하는 경우 Acrobat에서 정책으로 보호된 파일을 열지 못합니다. 또한 서버에 대해 HTTP 보안(HTTPS) URL을 사용합니다.
 
-***참고&#x200B;**:기본 URL은 정책으로 보호된 파일에 포함됩니다. 클라이언트 응용 프로그램은 기본 URL을 사용하여 서버에 다시 연결합니다. 보안 파일은 나중에 변경되더라도 기본 URL을 계속 포함합니다. 기본 URL을 변경하는 경우 연결된 모든 클라이언트에 대해 구성 정보를 업데이트해야 합니다.*
+>[!NOTE]
+>
+>기본 URL은 정책으로 보호된 파일에 포함됩니다. 클라이언트 응용 프로그램은 기본 URL을 사용하여 서버에 다시 연결합니다. 보안 파일은 나중에 변경되더라도 기본 URL을 계속 포함합니다. 기본 URL을 변경하는 경우 연결된 모든 클라이언트에 대해 구성 정보를 업데이트해야 합니다.
 
 **기본 오프라인 임대 기간:** 사용자가 오프라인으로 보호된 문서를 사용할 수 있는 기본 시간입니다. 이 설정은 정책을 만들 때 자동 오프라인 임대 기간 설정의 초기 값을 결정합니다. (정책 만들기 및 편집을 참조하십시오.) 임대 기간이 만료되면 수신자는 문서를 다시 동기화하여 계속 사용해야 합니다.
 
@@ -889,7 +891,7 @@ Microsoft Office용 Acrobat Reader DC 익스텐션은 Microsoft Office 제품 Mi
  </node>
 ```
 
-이 예에서 내 응용 프로그램 버전 3.0 및 내 기타 응용 프로그램 버전 2.0은 액세스가 거부되었습니다. 거부 이유에 관계없이 동일한 거부 정보 URL이 사용됩니다.
+이 예에서는 내 응용 프로그램 버전 3.0 및 내 기타 응용 프로그램 버전 2.0에 대한 액세스가 거부되었습니다. 거부 이유에 관계없이 동일한 거부 정보 URL이 사용됩니다.
 
 ```as3
  <node name="ClientVersionRules">
