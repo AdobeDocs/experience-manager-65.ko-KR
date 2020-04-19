@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -115,7 +115,9 @@ PDF Generator에서 지원되는 파일 유형에 대한 애플리케이션 설�
 
 **폴백 변환기 사용:** PDF Generator는 Java™ 또는 Acrobat을 사용하여 이미지 파일을 PDF로 변환할 수 있습니다. 이 옵션을 선택하고 변환이 실패하거나 지정된 시간 제한 제한에 도달하면 PDF Generator는 대체 방법을 사용하여 변환을 시도합니다. 대체 방법이 실패하거나 지정된 시간 제한 제한에 도달하면 로그 파일에 예외가 기록됩니다.
 
-***참고&#x200B;**:JPEG 2000 파일은 Acrobat을 통해서만 변환할 수 있습니다.*
+>[!NOTE]
+>
+>JPEG 2000 파일은 Acrobat을 통해서만 변환할 수 있습니다.
 
 **OCR 사용:** PDF에 OCR(광학 문자 인식)을 적용할지 여부를 지정합니다. OCR 소프트웨어를 사용하면 PDF에서 텍스트를 검색, 수정 및 복사할 수 있습니다.
 
