@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -65,8 +65,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    * 프로세스 또는 작업 요소를 선택하고 오른쪽 화살표를 클릭하여 보고서를 열 목록으로 이동합니다.
    * [보고할 열] 목록에서 프로세스 또는 작업 요소를 선택하고 위쪽 화살표 또는 아래쪽 화살표를 클릭하여 열 순서의 위치로 이동합니다. 검색 결과의 열 제목은 여기에 나열되는 순서대로 표시됩니다.
    * (선택 사항) 열 머리글에 대한 요소 이름을 변경하려면 [보고서를 열 대상] 목록에서 요소를 선택하고 새 이름을 제공합니다.
-
-      **참고**:검색 *템플릿에 지정된 레이아웃은 작업 공간에서 열 머리글에 대해 지정된 사용자의 기본 설정을 덮어씁니다.*
+   >[!NOTE]
+   >
+   >검색 템플릿에 지정된 레이아웃은 작업 공간에서 열 머리글에 대해 지정된 사용자의 기본 설정을 덮어씁니다.
 
 1. (선택 사항) 검색 결과에서 각 열을 정렬하려면 정렬 탭을 클릭하고 다음 단계를 수행합니다.
 
