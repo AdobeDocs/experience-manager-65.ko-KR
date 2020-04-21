@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 3e37ee6da263bb12eb0efea85213987e8286bc60
+source-git-commit: 7daf89f7e69d3e2e938780ff98fd2df46723e708
 
 ---
 
@@ -25,10 +25,10 @@ Smart Imaging 기술은 Adobe Sensei AI 기능을 활용하고 기존 &quot;이�
 
 | Image<br>(URL) | 썸네일 | 크기<br> (JPEG) | 크기(WebP)<br> (스마트 이미징 포함) | % 감소 |
 |---|---|---|---|---|
-| [이미지 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75KB | 45.92KB | 38% |
-| [이미지 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191KB | 70.66KB | 63% |
-| [이미지 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64KB | 39.44KB | 59% |
-| [이미지 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80KB | 178.19KB | 44% |
+| [이미지 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75KB | 45.92KB | 38% |
+| [이미지 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191KB | 70.66KB | 63% |
+| [이미지 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64KB | 39.44KB | 59% |
+| [이미지 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80KB | 178.19KB | 44% |
 |  |  |  |  | 평균 = 51% |
 
 위와 마찬가지로 Adobe는 라이브 고객 사이트에서 7009 URL을 사용하여 테스트를 실시했으며 스마트 이미징 기능 덕분에 JPEG에 대한 파일 크기 최적화와 WebP 포맷의 PNG에 대한 파일 크기 최적화를 평균 38% 더 향상시킬 수 있었습니다.
@@ -72,25 +72,24 @@ Smart Imaging은 Adobe Sensei를 사용하여 브라우저 기능을 기반으�
 * JPEG
 * PNG
 
-URL에 언급된 다른 형식의 경우 스마트 이미징을 명시적으로 해제해야 합니다.  JPEG 및 PNG 이외의 파일 포맷의 경우 수정자를 URL에 `bfc=off` 추가합니다. 다음 방법 중 하나를 사용하여 이 작업을 수행할 수 있습니다.
+<!-- For any other format mentioned in a URL, you should explicity turn off Smart Imaging.  Append modifier `bfc=off` to the URL for file formats other than JPEG and PNG. You can accomplish this by using either one of the following methods:
 
-* 수정자가 URL에 언급되는 경우 `fmt` 규칙 세트를 사용합니다.
-* 관련 사전 설정의 URL 수정자 필드에 추가합니다.
+* Use a ruleset if the `fmt` modifier is mentioned in the URL. 
+* Append in URL modifiers field of the presets concerned.
 
-Adobe는 또는 에 추가할 필요가 없는 영구 수정 작업을 수행하고 `bfc=off` `fmt !=JPEG` `fmt !=PNG`있습니다. 이 항목은 수정 사항이 전달되면 업데이트됩니다.
-
+Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
 ## 이미 사용 중인 기존 이미지 사전 설정과 함께 스마트 이미징은 어떻게 작동합니까? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
 스마트 이미징은 기존의 &quot;이미지 사전 설정&quot;과 연동되며 요청된 파일 형식이 JPEG 또는 PNG인 경우 품질(qlt) 및 포맷(fmt)을 제외하고 모든 이미지 설정을 확인합니다. 포맷 변환의 경우 이미지 사전 설정 설정에 정의된 대로 전체 시각적 품질을 그대로 유지하면서 파일 크기가 작습니다. 원본 이미지 크기가 스마트 이미징에서 만든 크기보다 작은 경우 원본 이미지가 제공됩니다.
 
-또한 이미지 사전 설정을 사용하여 반환 `fmt !=JPEG` 또는 `fmt !=PNG`반환하는 경우 사전 설정 수정자 필드에 `bfc=off` 추가되어 요청된 파일 형식을 반환해야 합니다.
+<!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## URL, 이미지 사전 설정을 변경하거나 Smart Imaging을 위해 내 사이트에 새로운 코드를 배포해야 합니까? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
 아니오. 스마트 이미징은 기존 이미지 URL 및 이미지 사전 설정과 완벽하게 호환됩니다. 또한 Smart Imaging에서는 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 이 모든 것이 자동으로 처리됩니다.
 
-앞서 언급했듯이 스마트 이미징은 JPEG 및 PNG 이미지 포맷만 지원합니다. 다른 형식의 경우 앞서 설명한 대로 `bfc=off` 수정자를 URL에 추가해야 합니다.
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 또한 스마트 [이미징을 사용할 수 있습니까?를 참조하십시오.](#am-i-eligible-to-use-smart-imaging) to understand for Smart Imaging.
 
