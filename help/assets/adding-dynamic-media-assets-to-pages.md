@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 202e4d5d0e3fa285b9973e4709a02ca77ccb6e71
 
 ---
 
@@ -22,7 +22,7 @@ AEM 파섹 WCM에 대해 서드 파티를 사용하는 경우 자산을 [링크�
 
 >[!NOTE]
 >
->자산을 AEM의 페이지에 추가하기 전에 게시해야 합니다. 다이내믹 [미디어 자산 게시를 참조하십시오](/help/assets/publishing-dynamicmedia-assets.md).
+>자산을 AEM의 페이지에 추가하기 전에 게시해야 합니다. See [Publishing Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
@@ -113,7 +113,7 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
 구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지가 응답하도록 하기 위해 중단점을 설정하거나 응답형 이미지 사전 설정을 적용할 수 있습니다.
 
-You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
+You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -162,7 +162,7 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -263,7 +263,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 * 2:1 종횡비.
 * 키워드 `equirectangular` 또는 (`spherical` + `panorama`) 또는 (`spherical` + `panoramic`) 태그가 지정되어 있습니다. 태그 [사용을 참조하십시오](/help/sites-authoring/tags.md).
 
-종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 파노라마 미디어 WCM 구성 요소에 대한 파노라마 **[!UICONTROL 자산에]** 적용됩니다.
+종횡비와 키워드 기준은 모두 자산 세부 사항 페이지 및 파노라마 미디어 WCM 구성 요소의 파노라마 **[!UICONTROL 자산에]** 적용됩니다.
 
 >[!NOTE]
 >
