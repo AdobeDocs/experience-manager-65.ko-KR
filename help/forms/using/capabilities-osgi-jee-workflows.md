@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
 
 ## AEM 받은 편지함 및 HTML 작업 영역 {#aem-inbox-and-html-workspace}
 
-AEM 받은 편지함은 OSGi에서 양식 중심의 AEM 워크플로우를 실행하고 모니터링하는 데 사용됩니다. HTML 작업 영역을 사용하면 AEM Forms JEE 작업 과정을 실행하고 모니터링할 수 있습니다. 다음 표는 OSGi의 양식 중심 AEM 워크플로우에 대한 AEM 받은 편지함에서 사용할 수 있는 중요한 작업과 AEM Forms JEE 워크플로우에 대한 HTML 작업 공간입니다.
+AEM 받은 편지함을 사용하여 OSGi에서 양식 중심의 AEM 워크플로우를 실행하고 모니터링할 수 있습니다. 반면에 HTML 작업 공간에서는 AEM Forms JEE 워크플로우를 실행하고 모니터링할 수 있습니다. 다음 표는 OSGi의 양식 중심 AEM 워크플로우에 대한 AEM 받은 편지함에서 사용할 수 있는 여러 중요한 작업과 AEM Forms JEE 워크플로우에 대한 HTML 작업 공간에서 사용할 수 있는 작업을 이해하는 데 도움이 됩니다.
 
 <table>
  <tbody>
@@ -97,7 +97,7 @@ AEM 받은 편지함은 OSGi에서 양식 중심의 AEM 워크플로우를 실�
 
 ## OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우 {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-OSGi 및 AEM Forms JEE 파섹 워크플로우(JEE 프로세스 관리의 AEM Forms)의 양식 중심의 AEM 워크플로우에는 다른 기능이 있습니다. 다음 표에는 JEE 워크플로우에서 OSGi 및 AEM Forms의 양식 중심 AEM 워크플로우의 기능에 사용할 수 있는 중요한 기능 및 지원이 나열되어 있습니다.
+OSGi 및 AEM Forms JEE 파섹 워크플로우(JEE 프로세스 관리의 AEM Forms)의 양식 중심의 AEM 워크플로우에는 다른 기능이 있습니다. 다음 표는 JEE 워크플로우에서 OSGi 및 AEM Forms의 양식 중심 AEM 워크플로우에서 사용할 수 있는 중요한 기능을 이해하는 데 도움이 됩니다.
 
 <table>
  <tbody>
@@ -107,7 +107,7 @@ OSGi 및 AEM Forms JEE 파섹 워크플로우(JEE 프로세스 관리의 AEM For
    <td>AEM Forms JEE 워크플로우</td>
   </tr>
   <tr>
-   <td>응용 양식</td>
+   <td>적응형 양식</td>
    <td>지원됨</td>
    <td>지원됨<br /> </td>
   </tr>
@@ -153,23 +153,23 @@ OSGi 및 AEM Forms JEE 파섹 워크플로우(JEE 프로세스 관리의 AEM For
   </tr>
   <tr>
    <td>전자 서명(Adobe Sign)</td>
-   <td>지원되는 <sup>[1]</sup></td>
-   <td>지원 <sup>[5]</sup></td>
+   <td>Supported <sup>[1]</sup></td>
+   <td>Supported <sup>[5]</sup></td>
   </tr>
   <tr>
    <td>작업 및 양식 애플리케이션 관리</td>
-   <td>지원 <sup>[2]</sup><br /> </td>
-   <td>지원 <sup>[2]</sup></td>
+   <td>Supported <sup>[2]</sup><br /> </td>
+   <td>Supported <sup>[2]</sup></td>
   </tr>
   <tr>
    <td>문서 서비스</td>
-   <td>지원 <sup>[3]</sup></td>
-   <td>지원 <sup>[3]</sup></td>
+   <td>Supported <sup>[3]</sup></td>
+   <td>Supported <sup>[3]</sup></td>
   </tr>
   <tr>
    <td>완료된 작업을 적응형 양식 또는 PDF 문서로 렌더링</td>
    <td>지원됨</td>
-   <td>지원 [4]</td>
+   <td>지원됨 [4]</td>
   </tr>
   <tr>
    <td>통신 관리와 통합</td>
@@ -203,12 +203,12 @@ OSGi 및 AEM Forms JEE 파섹 워크플로우(JEE 프로세스 관리의 AEM For
   </tr>
   <tr>
    <td>HTML5 양식, 인터랙티브한 PDF 양식, 양식 세트<br /> </td>
-   <td>Not Supported<br /> </td>
+   <td>지원되지 않음<br /> </td>
    <td>지원됨</td>
   </tr>
   <tr>
    <td>프로세스 보고</td>
-   <td>Not Supported<br /> </td>
+   <td>지원되지 않음<br /> </td>
    <td>지원됨<br /> </td>
   </tr>
   <tr>
@@ -283,7 +283,7 @@ OSGi 및 AEM Forms JEE 파섹 워크플로우(JEE 프로세스 관리의 AEM For
   </tr>
   <tr>
    <td>워크플로우가 끝난 후 이메일 보내기</td>
-   <td>지원 <sup>[7]</sup></td>
+   <td>Supported <sup>[7]</sup></td>
    <td>지원됨</td>
   </tr>
   <tr>
@@ -319,9 +319,9 @@ OSGi 및 AEM Forms JEE 파섹 워크플로우(JEE 프로세스 관리의 AEM For
  </tbody>
 </table>
 
-1. OSGi에서 양식 중심의 AEM 워크플로우를 사용하여 이미 채워진 적응형 양식에 서명할 수 있습니다. OSGi의 양식 중심의 AEM 워크플로우는 양식 서명을 지원합니다. 양식 [서명](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) 환경은 지원되지 않습니다.
+1. OSGi에서 양식 중심의 AEM 워크플로우를 사용하여 채워진 적응형 양식에 서명할 수 있습니다. OSGi의 양식 중심의 AEM 워크플로우는 양식 서명을 지원합니다. 양식 [서명](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) 환경은 지원되지 않습니다.
 
-1. AEM Forms JEE 워크플로우를 실행하고 모니터링하려면 AEM Forms OSGi AEM Workflows 및 HTML Workspace를 실행하고 모니터링하려면 AEM 받은 편지함에 대한 액세스 권한이 필요합니다.
+1. AEM Forms JEE 워크플로우를 실행하고 모니터링하려면 AEM Forms OSGi 및 HTML Workspace에서 양식 중심 워크플로우를 실행하고 모니터링하려면 AEM 받은 편지함에 액세스할 수 있어야 합니다.
 1. 기본 AEM Forms 문서 서비스는 OSGi의 양식 중심 AEM 워크플로우와 JEE 워크플로우의 AEM Forms 모두에 사용할 수 있습니다. AEM Workflow는 OSGi 및 AEM Forms JEE 파섹 워크플로우의 양식 중심 AEM 워크플로우에 기본 문서 서비스를 사용합니다.
 1. AEM Forms JEE 워크플로우는 적응형 양식만 렌더링할 수 있습니다. 적응형 양식을 PDF 문서로 렌더링하는 것을 지원하지 않습니다.
 1. AEM 양식 JEE 워크플로우에는 Adobe Sign에 대한 별도의 단계가 없습니다. AEM 양식 JEE 워크플로우에 대해 Adobe Sign이 활성화된 적응형 양식이 필요합니다. 자세한 내용은 Adobe Sign [설명서를](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)참조하십시오.
