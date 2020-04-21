@@ -4,7 +4,7 @@ description: 디지털 에셋 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: 6d26a708ac2073eb7ceff62e65c6aaafdb727639
 
 ---
 
@@ -478,15 +478,15 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
 1. 자산을 탭/클릭하여 자산 페이지를 엽니다.
 
-   ![chlimage_1-220](assets/chlimage_1-15.png)
+   ![자산 세부 사항 페이지를 사용하여 표현물 관리](assets/chlimage_1-15.png)
 
 1. GlobalNav 아이콘을 탭/클릭하고 목록에서 **[!UICONTROL 표현물을]** 선택합니다.
 
-   ![renditions_menu](assets/renditions_menu.png)
+   ![왼쪽 레일을 사용하여 메뉴를 열고 변환 옵션을 선택합니다.](assets/renditions_menu.png)
 
 1. 표현물 **[!UICONTROL 패널에서]** 자산에 대해 생성된 표현물 목록을 봅니다.
 
-   ![renditions_panel](assets/renditions_panel.png)
+   ![자산 세부 사항 페이지의 변환 패널](assets/renditions_panel.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,7 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
    자산에 대한 자산 세부 사항 페이지로 이동하고 도구 모음에서 **[!UICONTROL 변환 추가]** 아이콘을 탭/클릭하여 자산에 대한 새 변환을 업로드합니다.
 
-   ![chlimage_1-221](assets/chlimage_1-16.png)
+   ![변환 추가 아이콘을 사용하여 새 변환 업로드](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
@@ -516,7 +516,7 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
    마찬가지로 오버레이하여 주석 페이지 이미지를 사용자 정의할 수 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`있습니다.
 
-   ![chlimage_1-222](assets/chlimage_1-17.png)
+   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/chlimage_1-17.png)
 
    비디오 자산에 대한 변환 크기를 구성하려면 CRX 저장소의 `videopicker` 노드로 이동한 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`후 해당 속성을 편집합니다.
 
@@ -536,7 +536,7 @@ AEM에 많은 자산을 업로드하면 I/O 요청이 크게 증가하여 업로
 
 1. 자산을 선택하고 도구 모음에서 **[!UICONTROL 삭제]** 아이콘을 탭/클릭합니다.
 
-   ![delete_icon](assets/delete_icon.png)
+   ![삭제 아이콘](assets/delete_icon.png)
 
 1. 확인 대화 상자에서 다음을 클릭합니다.
 
@@ -584,11 +584,11 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. 게시를 취소할 자산/폴더를 선택하고 도구 모음에서 게시 **[!UICONTROL 관리]** 아이콘을 탭/클릭합니다.
 
-   ![manage_publication](assets/manage_publication.png)
+   ![게시 관리 아이콘](assets/manage_publication.png)
 
 1. 목록에서 **[!UICONTROL 게시]** 취소 작업을 선택합니다.
 
-   ![unpublish_action](assets/unpublish_action.png)
+   ![게시 취소 작업](assets/unpublish_action.png)
 
 1. 나중에 자산을 게시 취소하려면 [나중에 게시 **[!UICONTROL 취소]를]**&#x200B;선택한 다음 자산의 게시 취소 날짜를 선택합니다.
 1. 게시 환경에서 자산을 사용할 수 없는 날짜를 예약합니다.
@@ -610,11 +610,11 @@ CUG 파섹 폴더에 대한 로그인 페이지를 구성할 수도 있습니다
 1. 자산 UI에서 폴더를 선택하고 도구 모음에서 속성 아이콘을 탭/클릭하여 속성 페이지를 표시합니다.
 1. 권한 **[!UICONTROL 탭에서]** 닫힌 사용자 그룹 아래에 구성원 또는 그룹을 **[!UICONTROL 추가합니다]**.
 
-   ![add_user](assets/add_user.png)
+   ![폐쇄된 사용자 그룹에 사용자 추가](assets/add_user.png)
 
 1. 사용자가 폴더에 액세스할 때 로그인 화면을 표시하려면 활성화 **[!UICONTROL 옵션을 선택합니다]** . 그런 다음 AEM에서 로그인 페이지의 경로를 선택하고 변경 내용을 저장합니다.
 
-   ![login_page](assets/login_page.png)
+   ![사용자가 폴더에 액세스할 때 표시할 로그인 페이지 활성화 및 선택](assets/login_page.png)
 
    >[!NOTE]
    >
@@ -642,13 +642,13 @@ CUG 파섹 폴더에 대한 로그인 페이지를 구성할 수도 있습니다
 
 목록 보기 및 열 보기에서 **[!UICONTROL 자산]** 축소판 위에 포인터를 두면 선택 옵션이 표시됩니다.
 
-![select_quick_in_listview](assets/select_quick_in_listview.png)
+![목록 보기에서 자산 선택](assets/select_quick_in_listview.png)
 
-![select_quick_in_columnview](assets/select_quick_in_columnview.png)
+![열 보기에서 자산 선택](assets/select_quick_in_columnview.png)
 
 카드 보기에서는 선택 **[!UICONTROL 옵션이]** 빠른 작업으로 표시됩니다.
 
-![select_quick_action](assets/select_quick_action.png)
+![카드 보기에서 빠른 작업 선택](assets/select_quick_action.png)
 
 브라우저의 자산 사용자 인터페이스에서 폴더 또는 컬렉션을 검색할 때 오른쪽 위 모서리에서 모두 선택 [!UICONTROL 옵션을 사용하여] 표시되거나 로드된 모든 자산을 선택할 수 있습니다. 처음에는 100개의 에셋만 카드 보기로 로드되고 200개의 에셋이 목록 보기로 로드됩니다. 검색 결과 페이지를 스크롤할 때 더 많은 자산이 보기에서 로드됩니다. 모두 [!UICONTROL 선택] 옵션은 로드된 자산만 선택합니다.
 
@@ -667,36 +667,36 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
    * 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 클릭/탭합니다.
    * 카드 보기에서 자산에 **[!UICONTROL 표시되는]** 편집 아이콘을 탭/클릭합니다.
    * 자산 페이지의 도구 모음에서 편집 **[!UICONTROL 아이콘을 탭]** /클릭합니다.
-   ![edit_icon](assets/edit_icon.png)
+   ![도구 모음에서 편집 아이콘](assets/edit_icon.png)
 
 1. 이미지를 자르려면 자르기 아이콘을 탭/ **클릭합니다** .
 
-   ![chlimage_1-226](assets/chlimage_1-22.png)
+   ![자르기 아이콘](assets/chlimage_1-22.png)
 
 1. 목록에서 원하는 옵션을 선택합니다. 자르기 영역은 선택한 옵션에 따라 이미지에 나타납니다. [ **무료 손** ] 옵션을 사용하면 종횡비 제한 없이 이미지를 자를 수 있습니다.
 
-   ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
+   ![자르기 옵션](/help/assets/assets/chlimage_1-23.png)
 
 1. 잘라낼 영역을 선택하고 이미지에서 크기를 조정하거나 위치를 변경합니다.
 1. 마침 **아이콘** (오른쪽 상단)을 사용하여 이미지를 자릅니다. 마침 **아이콘을** 클릭하면 표현물의 재재생도 트리거됩니다.
 
-   ![chlimage_1-228](assets/chlimage_1-24.png)
+   ![마침 아이콘](assets/chlimage_1-24.png)
 
 1. 오른쪽 **위에 있는** [실행 취소 **] 및 [다시 실행** ] 아이콘을 사용하여 잘리지 않은 이미지로 되돌리거나 잘린 이미지를 각각 유지합니다.
 
-   ![chlimage_1-229](assets/chlimage_1-25.png)
+   ![실행 취소 및 다시 실행 아이콘](assets/chlimage_1-25.png)
 
 1. 이미지를 시계 방향 또는 반시계 방향으로 회전하려면 해당 회전 아이콘을 탭/클릭합니다.
 
-   ![chlimage_1-230](assets/chlimage_1-26.png)
+   ![시계 방향 및 반시계 방향 회전 아이콘](assets/chlimage_1-26.png)
 
 1. 해당 대칭 이동 아이콘을 탭/클릭하여 이미지를 가로 또는 세로로 뒤집습니다.
 
-   ![chlimage_1-231](assets/chlimage_1-27.png)
+   ![이미지를 가로 또는 세로로 뒤집는 아이콘](assets/chlimage_1-27.png)
 
 1. 마침 아이콘을 탭/클릭하여 **변경** 사항을 저장합니다.
 
-   ![chlimage_1-232](assets/chlimage_1-28.png)
+   ![마침 아이콘](assets/chlimage_1-28.png)
 
 >[!NOTE]
 >
@@ -739,11 +739,11 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    * [빠른 작업](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * 자산을 선택하거나 자산 페이지로 이동한 후 도구 모음에서
-   ![chlimage_1-233](assets/chlimage_1-29.png)
+   ![주석 아이콘](assets/chlimage_1-29.png)
 
 1. 타임라인 아래쪽에 있는 **[!UICONTROL [주석]** ] 상자에 주석을 추가합니다. 또는 이미지의 영역을 마크업하고 주석 추가 **[!UICONTROL 대화 상자에서 주석을]** 추가합니다.
 
-   ![chlimage_1-234](assets/chlimage_1-30.png)
+   ![주석 추가 대화 상자의 주석 상자](assets/chlimage_1-30.png)
 
 1. 주석에 대해 사용자에게 알리려면 사용자의 이메일 주소를 지정하고 주석을 추가합니다. 예를 들어 주석을 Aaron MacDonald에 알리려면 @aa를 입력합니다. 일치하는 모든 사용자에 대한 힌트가 목록에 표시됩니다. 목록에서 Aaron의 이메일 주소를 선택하여 주석에 태그를 지정합니다. 마찬가지로 주석 내 또는 그 이전 또는 후에 더 많은 사용자에게 태그를 지정할 수 있습니다.
 
@@ -751,11 +751,11 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
    >
    >관리자가 아닌 사용자의 경우, 사용자에게 Crx-de의 */home* 읽기 권한이 있는 경우에만 제안이 나타납니다.
 
-   ![chlimage_1-235](assets/chlimage_1-31.png)
+   ![사용자의 이메일 주소를 지정하고 사용자에게 알릴 주석 추가](assets/chlimage_1-31.png)
 
 1. 주석을 추가한 후 추가를 **[!UICONTROL 클릭하여]** 저장합니다. 주석에 대한 알림이 Aaron에게 전송됩니다.
 
-   ![chlimage_1-236](assets/chlimage_1-32.png)
+   ![추가 단추를 사용하여 주석 저장](assets/chlimage_1-32.png)
 
    >[!NOTE]
    >
@@ -786,15 +786,15 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
 1. GlobalNav 아이콘을 탭/클릭하고 **[!UICONTROL 목록에서 타임라인을]** 선택합니다.
 
-   ![chlimage_1-239](assets/chlimage_1-35.png)
+   ![GlobalNav 아이콘에 사용할 수 있는 옵션](assets/chlimage_1-35.png)
 
 1. 타임라인의 **[!UICONTROL 모든]** 표시 목록에서 주석을 **[!UICONTROL 기반으로 결과를]** 필터링하려면 주석을 선택합니다.
 
-   ![chlimage_1-240](assets/chlimage_1-36.png)
+   ![타임라인에 모든 목록 표시](assets/chlimage_1-36.png)
 
    타임라인 패널에서 주석을 탭/클릭하여 **[!UICONTROL 이미지에]** 해당하는 주석을 표시합니다.
 
-   ![chlimage_1-241](assets/chlimage_1-37.png)
+   ![이미지에서 주석을 볼 수 있는 타임라인 패널](assets/chlimage_1-37.png)
 
    삭제를 탭/ **[!UICONTROL 클릭하여]**&#x200B;특정 주석을 삭제합니다.
 
@@ -814,15 +814,15 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
 1. 특정 주석을 인쇄하려면 타임라인에서 주석을 선택합니다.
 
-   ![chlimage_1-242](assets/chlimage_1-38.png)
+   ![타임라인에서 주석을 선택하여 인쇄합니다.](assets/chlimage_1-38.png)
 
    검토 상태만 인쇄하려면 타임라인에서 선택합니다.
 
-   ![chlimage_1-243](assets/chlimage_1-39.png)
+   ![주석의 검토 상태만 인쇄하려면 타임라인에서 주석을 선택합니다](assets/chlimage_1-39.png)
 
 1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
 
-   ![chlimage_1-244](assets/chlimage_1-40.png)
+   ![도구 모음의 인쇄 아이콘](assets/chlimage_1-40.png)
 
 1. 인쇄 대화 상자에서 주석/검토 상태를 PDF에 표시할 위치를 선택합니다. 예를 들어 인쇄된 이미지가 들어 있는 페이지의 오른쪽 위에 주석/상태를 인쇄하려면 왼쪽 **위 설정을 사용합니다** . 기본적으로 선택됩니다.
 
@@ -836,11 +836,11 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
 1. 인쇄를 탭/ **[!UICONTROL 클릭합니다]**. 2단계에서 선택한 옵션에 따라 생성된 PDF에 지정된 위치에 주석/상태가 표시됩니다. 예를 들어 왼쪽 위 설정을 사용하여 주석과 검토 상태를 모두 인쇄하도록 선택한 **경우** 생성된 출력은 여기에 설명된 PDF 파일과 유사합니다.
 
-   ![chlimage_1-246](assets/chlimage_1-42.png)
+   ![생성된 PDF에 주석 및 검토 상태](assets/chlimage_1-42.png)
 
 1. 오른쪽 상단의 옵션을 사용하여 PDF를 다운로드하거나 인쇄할 수 있습니다.
 
-   ![chlimage_1-247](assets/chlimage_1-43.png)
+   ![PDF에서 다운로드 및 인쇄 옵션](assets/chlimage_1-43.png)
 
    >[!NOTE]
    >
@@ -848,7 +848,7 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
 
    글꼴 색상, 크기 및 스타일, 주석 및 상태의 배경색 등 렌더링된 PDF 파일의 모양을 수정하려면 Configuration Manager에서 **[!UICONTROL 주석 PDF 구성을]** 열고 원하는 옵션을 수정합니다. 예를 들어, 승인된 상태의 표시 색상을 변경하려면 해당 필드에서 색상 코드를 수정합니다. 주석의 글꼴 색상 변경에 대한 자세한 내용은 주석 [달기를 참조하십시오](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-44.png)
+   ![PDF 문서에서 에셋 주석 인쇄 구성](assets/chlimage_1-44.png)
 
    렌더링된 PDF 파일로 돌아가 새로 고칩니다. 새로 고친 PDF는 변경한 내용을 반영합니다.
 
@@ -905,7 +905,7 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
    * 버전으로 **[!UICONTROL 저장을]** 클릭하여 자산의 버전을 만듭니다. 레이블과 주석을 추가할 수도 있습니다.
    * 만들기를 **[!UICONTROL 클릭하여]** 버전을 만듭니다.
 
-      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+      ![사이드바에서 에셋 버전 만들기](assets/create-new-version-from-timeline.png)
 
       *그림:왼쪽 세로 막대에서 에셋 버전을[!UICONTROL 만듭니다].*
 
@@ -914,7 +914,7 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
    * 타임라인에서 **[!UICONTROL 모두]** 표시를 [!UICONTROL 클릭합니다].
    * 버전을 **[!UICONTROL 클릭합니다]**. 자산에 대해 생성된 모든 버전은 왼쪽 사이드바에 나열됩니다.
 
-      ![versions_option](assets/versions_option.png)
+      ![ 타임라인에서 버전 선택 옵션](assets/versions_option.png)
 
    * 자산의 특정 버전을 선택하고 버전 미리 **[!UICONTROL 보기를 클릭합니다]**.
 
@@ -923,7 +923,7 @@ AEM 자산 인터페이스의 편집 도구를 사용하여 이미지 자산에 
    * 자산의 버전을 클릭합니다. 레이블과 주석을 추가할 수도 있습니다.
    * Click **[!UICONTROL Revert to this Version]**.
 
-      ![select_version](assets/select_version.png)
+      ![되돌릴 버전 선택](assets/select_version.png)
 
       *그림:버전을 선택하고 해당 버전으로 되돌립니다. DAM 사용자가 사용할 수 있는 최신 버전이 됩니다.*
 
