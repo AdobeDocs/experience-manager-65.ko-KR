@@ -1,13 +1,9 @@
 ---
-title: 'AEM에서 컨텐츠를 작성하도록 리치 텍스트 편집기 구성 '
-description: AEM에서 컨텐츠를 작성하도록 AEM 리치 텍스트 편집기를 구성하는 방법에 대해 학습합니다.
-uuid: 4f87745e-586a-4cba-887b-391e37520ffc
+title: Adobe Experience Manager에서 컨텐츠를 작성하도록 리치 텍스트 편집기를 구성합니다.
+description: Adobe Experience Manager에서 콘텐츠를 제작하도록 Adobe Experience Manager 리치 텍스트 편집기를 구성하는 방법에 대해 학습합니다.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
-docset: aem65
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
 
 ---
 
@@ -16,19 +12,17 @@ source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 RTE(Rich Text Editor)는 작성자가 텍스트 컨텐츠를 편집할 수 있는 다양한 기능을 제공합니다. 아이콘, 선택 상자, 도구 모음 및 메뉴는 WYSIWYG 텍스트 편집 환경을 위해 제공됩니다.
 
-작성 구성 요소에서 사용 가능한 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성할 수 있습니다. 작성을 위해 RTE 기능을 사용하는 방법에 대한 자세한 내용은 [작성을](/help/sites-authoring/rich-text-editor.md)위해 리치 텍스트 편집기 사용을 참조하십시오.
+작성을 위해 RTE 기능을 사용하는 방법에 대한 자세한 내용은 [작성을](/help/sites-authoring/rich-text-editor.md)위해 리치 텍스트 편집기 사용을 참조하십시오. 작성 구성 요소에서 사용 가능한 기능을 활성화, 비활성화 및 확장하도록 RTE를 구성할 수 있습니다. 다음 워크플로우에서는 Experience Manager에서 RTE 구성 작업을 완료해야 하는 권장 순서를 보여줍니다.
 
-다음 워크플로우에서는 RTE 구성 작업을 완료하는 권장 순서를 보여줍니다.
-
-![보고서 구성 방법에 대한 일련의 단계](assets/rte_workflow_v1.png)
+![RTE를 구성하는 방법에 대한 일련의 단계](assets/rte_workflow_v1.png)
 
 *그림:RTE를 구성하는 방법에 대한 일련의 단계*
 
 ## 터치 지원 UI 및 클래식 UI 이해 {#understand-touch-enabled-ui-and-classic-ui}
 
-터치 지원 UI는 AEM의 표준 사용자 인터페이스입니다. Adobe는 제작 환경을 위한 [반응형 디자인으로](/help/sites-authoring/responsive-layout.md) Touch UI를 도입했습니다. Touch UI는 터치 및 데스크톱 장치용으로 설계되었습니다. UI는 원래 클래식 UI와 상당히 다릅니다.
+터치 지원 UI는 Experience Manager의 표준 사용자 인터페이스입니다. Adobe는 제작 환경을 위한 [반응형 디자인으로](/help/sites-authoring/responsive-layout.md) 터치 지원 UI를 도입했습니다. 터치 지원 UI 파섹 인터페이스는 원래 클래식 UI와 상당히 다릅니다.
 
-![터치 지원 UI의 리치 텍스트 편집기 도구 모음](assets/chlimage_1-35.png)
+![터치 지원 사용자 인터페이스의 리치 텍스트 편집기 도구 모음](assets/chlimage_1-35.png)
 
 *그림:터치 지원 UI의 리치 텍스트 편집기 도구 모음*
 
@@ -39,14 +33,14 @@ RTE(Rich Text Editor)는 작성자가 텍스트 컨텐츠를 편집할 수 있�
 >[!MORELIKETHIS]
 >
 >* [UI 추천](/help/sites-deploying/ui-recommendations.md)
->* 클래식 UI 사용 중단에 대한 자세한 내용은 [AEM 6.5 릴리스 노트를 참조하십시오.](/help/release-notes/deprecated-removed-features.md)
+>* 클래식 UI 사용 중단에 대한 자세한 내용은 Experience [Manager 6.5 릴리스 노트를 참조하십시오.](/help/release-notes/deprecated-removed-features.md)
 >* UI의 차이는 Touch UI와 [클래식 UI를 참조하십시오](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* 터치 지원 UI에 대한 자세한 내용은 AEM [Touch UI 개념을 참조하십시오.](/help/sites-developing/touch-ui-concepts.md)
+>* 터치 지원 UI에 대한 자세한 내용은 Experience [Manager 터치 UI의 개념을 참조하십시오.](/help/sites-developing/touch-ui-concepts.md)
 
 
 ## 다양한 편집 모드 {#editingmodes}
 
-작성자는 다양한 구성 요소 모드를 사용하여 AEM에서 텍스트 컨텐츠를 만들고 편집할 수 있습니다. 컨텐츠 작성 및 서식 지정을 위한 툴바 옵션과 다양한 편집 모드에서 RTE 지원 구성 요소의 사용자 환경은 RTE 구성에 따라 다릅니다.
+작성자는 다양한 구성 요소 모드를 사용하여 Experience Manager에서 텍스트 컨텐츠를 만들고 편집할 수 있습니다. 컨텐츠 작성 및 서식 지정을 위한 툴바 옵션과 다양한 편집 모드에서 RTE 지원 구성 요소의 사용자 환경은 RTE 구성에 따라 다릅니다.
 
 | 편집 모드 | 편집 영역 | 권장 기능 활성화 | 터치 UI | 클래식 UI |
 |--- |--- |--- |--- |--- |
@@ -71,7 +65,7 @@ RTE(Rich Text Editor)는 작성자가 텍스트 컨텐츠를 편집할 수 있�
 
 ### Full screen editing {#full-screen-editing}
 
-AEM 구성 요소는 페이지 컨텐츠를 숨기고 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 대부분의 편집 옵션을 제공하므로 전체 화면 편집이 인라인 편집의 자세한 버전을 고려하십시오. 인라인 편집 모드를 사용할 때 작은 ![도구 모음에서 rte_fullscreen](assets/rte_fullscreen.png)을 클릭하여 열 수 있습니다.
+Adobe Experience Manager 구성 요소는 페이지 컨텐츠를 숨기며 사용 가능한 화면을 차지하는 전체 화면 보기에서 열 수 있습니다. 대부분의 편집 옵션을 제공하므로 전체 화면 편집이 인라인 편집의 자세한 버전을 고려하십시오. 인라인 편집 모드를 사용할 때 작은 ![도구 모음에서 rte_fullscreen](assets/rte_fullscreen.png)을 클릭하여 열 수 있습니다.
 
 대화 상자 전체 화면 모드에서 세부 RTE 도구 모음과 함께 대화 상자에서 사용할 수 있는 옵션 및 구성 요소도 사용할 수 있습니다. RTE가 포함된 대화 상자와 다른 구성 요소에만 적용됩니다.
 
@@ -109,7 +103,6 @@ AEM 구성 요소는 페이지 컨텐츠를 숨기고 사용 가능한 화면을
 * API 설명서에 대한 링크가 있는 플러그인 ID. 플러그인을 [활성화할 때 ID가 노드 이름으로 사용됩니다](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 * 속성에 허용된 `features` 값.
 * 플러그인에서 제공하는 기능에 대한 설명입니다.
-
 
 | 플러그인 ID | features | 설명 |
 |--- |--- |--- |
