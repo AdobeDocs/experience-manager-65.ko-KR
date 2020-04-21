@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7aba1f3b492a07fe502f95535a94c8054a044eb5
+source-git-commit: f466193a259d9e8869d7f79eafda1be20869e4af
 
 ---
 
@@ -23,7 +23,7 @@ Dynamic Media-Hybrid와 Dynamic Media-Scene7의 추가적인 주요 차이점은
 * 이미지 표현물의 작성 및 저장.
 * 클라우드 구성 및 자격 증명(프로비저닝).
 
-Dynamic Media-Hybrid에서 Dynamic Media-Scene7으로 이동할 때 두 가지 옵션을 사용할 수 있습니다. 첫 번째 옵션은 AEM에서 Dynamic Media-Scene7의 새 인스턴스를 간단하게 제공하는 것입니다. 두 번째 옵션은 Dynamic Media-Hybrid의 기존 인스턴스를 Dynamic Media-Scene7으로 마이그레이션하는 것입니다. 이 옵션은 아래 표의 윤곽선을 표시합니다. 이동 중에 수행할 단계 및 고려 사항입니다.
+Dynamic Media-Hybrid에서 Dynamic Media-Scene7으로 이동하면 두 가지 옵션을 사용할 수 있습니다. 첫 번째 옵션은 AEM에서 Dynamic Media-Scene7의 새 인스턴스를 간단하게 제공하는 것입니다. 두 번째 옵션은 Dynamic Media-Hybrid의 기존 인스턴스를 Dynamic Media-Scene7으로 마이그레이션하는 것입니다. 이 옵션은 아래 표의 윤곽선을 표시합니다. 이동 중에 수행할 단계 및 고려 사항입니다.
 
 >[!IMPORTANT]
 >
