@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 070d4e105c94548dda1098bf47cab83e0847f24d
 
 ---
 
@@ -26,8 +26,7 @@ AEM Forms 포털 초안 및 제출 구성 요소를 사용하면 양식을 초�
 >
 >* 이 문서에 설명된 예와 구성은 MySQL 5.6.24에 따라 다르며 데이터베이스 시스템에 맞게 적절하게 대체해야 합니다.
 >* 최신 버전의 AEM Forms Add-on 패키지를 설치했는지 확인합니다. 사용 가능한 패키지 목록은 AEM Forms 릴리스 [문서를](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 참조하십시오.
->
-
+> * 샘플 패키지는 적응형 양식 제출 작업에서만 작동합니다.
 
 
 ## 샘플 설정 및 구성 {#set-up-and-configure-the-sample}
