@@ -4,14 +4,14 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Assets 사용 안내서
 translation-type: tm+mt
-source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 
 
 # AEM 6.5 Assets 사용 안내서 {#assets}
 
-+ [자산 사용 안내서](home.md)
++ [[!DNL 자산] 사용 안내서](home.md)
 + [AEM 6.5 Assets 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/release-notes/assets.html)
 + [DAM 정보](assets.md)
 + [자산에 대한 우수 사례](best-practices-for-assets.md)
@@ -19,7 +19,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [AEM Assets 홈 페이지 경험](assets-home-page.md)
    + [AEM에서 자산 검색](search-assets.md)
    + [다국어 자산](multilingual-assets.md)
-   + [AEM Assets에서 Adobe Stock 자산 사용](aem-assets-adobe-stock.md)
+   + [AEM 자산에 [!DNL Adobe Stock] 자산 사용](aem-assets-adobe-stock.md)
    + [3D 자산 미리 보기](previewing-3d-assets.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [타임라인의 활동 스트림](activity-stream.md)
@@ -74,7 +74,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [AEM Assets 사용자 지정 및 확장](extending-assets.md)
    + [미디어 핸들러 및 워크플로우를 사용하여 자산 처리](media-handlers.md)
    + [검색 기능 확장](searchx.md)
-   + [AEM Assets에서 작동하도록 ImageMagick 설치 및 구성](best-practices-for-imagemagick.md)
+   + [AEM 자산에서 작동하도록 [!DNL ImageMagick]을(를) 설치하고 구성합니다.](best-practices-for-imagemagick.md)
    + [자산과 활동 스트림 통합](extending-activity-stream.md)
    + [자산 편집기 확장](asseteditorx.md)
    + [자산 HTTP API](mac-api-assets.md)
