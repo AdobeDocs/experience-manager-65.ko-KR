@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
 
 ---
 
@@ -27,8 +27,8 @@ FFmpeg는 작성자 환경에서 업로드된 활성 리소스에 대한 메타�
 
 FFmpeg는 AEM *작성자* 인스턴스를 호스팅하는 서버에 설치해야 합니다.
 
-1. https://www.ffmpeg.org으로 [이동](https://www.ffmpeg.org/)
-1. 특정 환경용 최신 버전의 FFmpeg 다운로드(Macintosh, Windows 또는 Linux)
+1. https://www.ffmpeg.org으로 [이동합니다](https://www.ffmpeg.org/).
+1. 특정 환경(Macintosh, Windows 또는 Linux)용 최신 버전의 FFmpeg를 다운로드합니다.
 
    * 이전 버전의 보안 취약점으로 인해 FFmpeg를 최신 상태로 유지하는 것이 중요합니다.
 
@@ -38,7 +38,7 @@ FFmpeg는 AEM *작성자* 인스턴스를 호스팅하는 서버에 설치해야
 
    시스템의 모든 디렉토리에서 FFmpeg를 실행할 수 있어야 합니다.
 
-   * for example, `ffmpeg -version`
+   * 예, `ffmpeg -version`.
 
 ## FFmpeg 트랜스코딩 서비스 구성 {#configure-ffmpeg-transcoding-service}
 
@@ -48,23 +48,23 @@ FFmpeg는 AEM *작성자* 인스턴스를 호스팅하는 서버에 설치해야
 
 DAM 자산 [!UICONTROL 업데이트] 워크플로우를 수정하고 이 예에서는 코드 변환을 끕니다.
 
-* 관리자 권한으로 작성 인스턴스에 로그인
-* 전역 탐색에서:도구 **[!UICONTROL > 워크플로우 > 모델]**
-* DAM **[!UICONTROL 업데이트 자산 찾기]**
+* 관리자 권한으로 작성 인스턴스에 로그인합니다.
+* 글로벌 탐색에서 도구 > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델로]** 이동합니다 ****.
+* DAM **[!UICONTROL 자산 업데이트를 찾습니다]**.
 * 클래식 UI에서 편집할 워크플로우를 두 번 클릭하여 엽니다.
 
    결과 위치: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* FFmpeg **[!UICONTROL 트랜스코딩]** 단계를 두 번 클릭하여 단계 속성 대화 상자에 액세스합니다
+* FFmpeg **[!UICONTROL 트랜스코딩]** 단계를 두 번 클릭하여 단계 속성 대화 상자에 액세스합니다.
 * 프로세스 **[!UICONTROL 탭에서]** 다음을 수행합니다.
 
    * **[!UICONTROL 문서]**:코드 변환을 비활성화하려면 모든 항목 지우기 기본값: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
 ![chlimage_1-372](assets/chlimage_1-372.png)
 
-* 확인을 **[!UICONTROL 선택하여]** 대화 상자를 닫습니다 `Step Properties`
+* 확인을 **[!UICONTROL 선택하여]** 대화 상자를 닫습니다 `Step Properties` .
 
-* 저장을 **[!UICONTROL 선택하여]** 워크플로우를 저장합니다 `DAM Update Asset`
+* 저장을 **[!UICONTROL 선택하여]** 워크플로우를 저장합니다 `DAM Update Asset` .
 
-   (왼쪽 위 모서리)
+
 
