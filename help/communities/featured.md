@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ---
 
@@ -31,10 +31,10 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 구성 요소별로 컨텐츠를 기능할 수 있도록 허용되거나 허용되지 않을 수 있습니다.
 
-설명서의 이 섹션에서는
+설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
 * 커뮤니티 사이트에 주요 컨텐츠 추가
-* 구성 `Featured Content`요소에 대한 구성 설정
+* 구성 요소에 대한 구성 `Featured Content` 설정
 
 ## 페이지에 주요 컨텐츠 추가 {#adding-featured-content-to-a-page}
 
@@ -46,7 +46,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 필요한 정보를 보려면 커뮤니티 구성 [요소 기본 사항을 참조하십시오](basics.md).
 
-필요한 [클라이언트측 라이브러리가](essentials-featured.md#essentials-for-client-side) 포함되어 있으면 `Featured Content`구성 요소가 표시되는 방식입니다.
+필요한 [클라이언트측 라이브러리가](essentials-featured.md#essentials-for-client-side) `Featured Content` 포함되어 있으면 구성 요소가 표시되는 방식입니다.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
