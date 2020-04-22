@@ -1,9 +1,9 @@
 ---
-title: AEM 자산에서 Adobe Stock 자산 관리
-description: AEM 내에서 Adobe Stock 에셋을 검색, 가져오기, 라이선스 부여 및 관리할 수 있습니다. 라이선스가 부여된 에셋을 다른 디지털 에셋으로 사용할 수 있습니다.
+title: '[!DNL Adobe Experience Manager Assets]에서 [!DNL Adobe Stock] 자산을 관리합니다.'
+description: Adobe Experience Manager에서 [!DNL Adobe Stock] 자산을 검색, 가져오기, 라이선스 부여 및 관리할 수 있습니다. 라이선스가 부여된 에셋을 다른 디지털 에셋으로 사용할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 
