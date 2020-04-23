@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e8f97f6164a5021609917b99feb0608bcea59553
 
 ---
 
@@ -24,13 +24,13 @@ The new *Dynamic Media Viewers* extension for Adobe Launch, along with the recen
 
 익스텐션에 [대한 자세한 내용은](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/overview.html) Experience Platform 시작 사용 안내서의 Adobe 익스텐션을 참조하십시오.
 
-**** 본 문서를 읽어야 하는 사람:사이트 관리자, AEM 플랫폼의 개발자 및 운영
+**본 문서를 읽어야 하는 사람:** 사이트 관리자, AEM 플랫폼의 개발자 및 운영
 
 ### 통합의 제한 사항 {#limitations-of-the-integration}
 
 * Dynamic Media 뷰어에 대한 Adobe Launch 통합은 AEM 작성자 노드에서 작동하지 않습니다. WCM 페이지가 게시될 때까지 추적 내용을 볼 수 없습니다.
 * Dynamic Media 뷰어에 대한 Adobe Launch 통합은 &quot;팝업&quot; 작업 모드에서 지원되지 않습니다. 이 모드에서는 자산 세부 사항 페이지의 &quot;URL&quot; 단추를 사용하여 뷰어 URL을 얻을 수 있습니다.
-* Adobe Launch 통합을 이전 뷰어 Analytics 통합(매개 변수 방식)과 동시에 사용할 수 `config2=` 없습니다.
+* Adobe Launch 통합을 이전 뷰어 Analytics 통합(매개 변수 방식)과 동시에 사용할 수 없습니다. `config2=`
 * 비디오 추적에 대한 지원은 추적 개요에 설명된 바와 같이 핵심 재생 추적으로만 [제한됩니다](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html). 특히 QoS, 광고, 장/세그먼트 또는 오류 추적은 지원되지 않습니다.
 * 데이터 요소에 대한 저장소 지속 시간 구성은 다이내믹 미디어 뷰어 *확장을 사용하는 데이터 요소에 대해 지원되지* 않습니다. 스토리지 지속 시간을 없음으로 설정해야 **[!UICONTROL 합니다]**.
 
@@ -66,7 +66,7 @@ Dynamic Media Viewer 확장은 자동으로 데이터 요소의 값을 최신 �
 
 데이터 요소를 정의한 후에는 데이터 요소 선택기 위젯을 사용하여 Adobe Launch UI의 다른 위치에서 데이터 요소를 사용할 수 있습니다. 특히, 다이내믹 미디어 뷰어 추적의 목적으로 정의된 데이터 요소는 규칙의 Adobe Analytics 확장 프로그램의 변수 설정 동작에서 참조됩니다(아래 참조).
 
-자세한 [내용은 Experience Platform](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html) 시작 사용 안내서의 데이터 요소를 참조하십시오.
+자세한 [내용은 Experience Platform](https://docs.adobe.com/content/help/ko-KR/launch/using/reference/manage-resources/data-elements.html) 시작 사용 안내서의 데이터 요소를 참조하십시오.
 
 #### Adobe Launch의 규칙 정보 {#about-rules-in-adobe-launch}
 
@@ -92,7 +92,7 @@ Dynamic Media 뷰어를 추적하려면 다음과 같은 유형을 사용할 수
 
 변수 *설정* 작업 뒤에 비콘 보내기 *작업이* 와야 합니다. 비콘 *보내기* 작업은 실제로 데이터를 분석 추적 서버로 보냅니다. 변수 *설정* 및 *비콘*&#x200B;전송은 모두 Adobe Analytics 익스텐션에서 가져옵니다.
 
-자세한 [내용은](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html) Experience Platform 시작 사용 안내서의 규칙을 참조하십시오.
+자세한 [내용은](https://docs.adobe.com/content/help/ko-KR/launch/using/reference/manage-resources/rules.html) Experience Platform 시작 사용 안내서의 규칙을 참조하십시오.
 
 #### 샘플 구성 {#sample-configuration}
 
@@ -177,7 +177,7 @@ Dynamic Media Viewer 익스텐션은 아래 조건이 모두 충족되는 경우
 
 다이내믹 미디어 뷰어 확장의 유일한 구성 옵션은 오디오 및 비디오용 **[!UICONTROL Adobe Media Analytics 활성화입니다]**.
 
-이 옵션을 선택(활성화 또는 &quot;켜기&quot;)하고 Adobe Media Analytics for Audio 및 Video 익스텐션이 설치 및 올바르게 구성된 경우 비디오 재생 지표가 Adobe Analytics for Audio 및 Video 솔루션으로 전송됩니다. 이 옵션을 비활성화하면 비디오 추적이 꺼집니다.
+이 옵션을 선택(활성화 또는 &quot;켜기&quot;)할 때, Adobe Media Analytics for Audio 및 Video 익스텐션이 설치 및 올바르게 구성된 경우 비디오 재생 지표가 Adobe Analytics for Audio 및 Video 솔루션으로 전송됩니다. 이 옵션을 비활성화하면 비디오 추적이 꺼집니다.
 
 Adobe Media Analytics for Audio 및 Video 익스텐션을 설치하지 *않고* 이 옵션을 활성화하면 옵션이 적용되지 않습니다.
 
@@ -200,9 +200,9 @@ Dynamic Media Viewers 확장에서 제공하는 데이터 요소 유형은 데�
 
 마찬가지로 뷰어가 페이지에서 해당 이벤트를 전송하면 데이터 요소 값이 자동으로 업데이트됩니다. 값 업데이트는 특정 이벤트가 규칙 구성에 지정되지 않은 경우에도 발생합니다. 예를 들어 ZOOM **[!UICONTROL 이벤트의 &quot;scale&quot; 매개 변수에 데이터 요소]** ZoomScale이 **[!UICONTROL 정의되지만 규칙 구성에 있는 유일한 규칙은 LOAD 이벤트에 의해 트리거되는]** 경우 사용자가 뷰어 내에서 확대/축소를 **[!UICONTROL 실행할 때마다]** ZoomScale의값이 계속 업데이트됩니다.
 
-모든 Dynamic Media 뷰어는 웹 페이지에 고유한 식별자를 가집니다. 데이터 요소는 값 자체와 값을 채운 뷰어를 추적합니다. 즉, 동일한 페이지에 여러 명의 뷰어가 있고 LOAD **[!UICONTROL 이벤트]** 및 그 &quot;자산&quot; 인수를 가리키는 AssetName **[!UICONTROL 데이터 요소가]** 있는 경우 **[!UICONTROL AssetName 데이터 요소는 페이지에서 로드된 각 뷰어와]** 연결된 에셋 이름 컬렉션을유지합니다.
+모든 Dynamic Media 뷰어는 웹 페이지에 고유한 식별자를 가집니다. 데이터 요소는 값 자체와 값을 채운 뷰어를 추적합니다. 즉, 동일한 페이지에 여러 명의 뷰어가 있고 LOAD **[!UICONTROL 이벤트]** 및 &quot;자산&quot; 인수를 가리키는 AssetName **[!UICONTROL 데이터 요소가]** 있는 경우 **[!UICONTROL AssetName 데이터 요소는 페이지에서 로드된 각 뷰어와 연결된 에셋 이름]** 컬렉션을 유지 관리합니다.
 
-데이터 요소에서 반환하는 정확한 값은 컨텍스트에 따라 다릅니다. Dynamic Media 뷰어 이벤트에 의해 트리거된 규칙에서 데이터 요소가 요청되면 규칙을 시작한 뷰어에 대해 데이터 요소 값이 반환됩니다. 그리고, 데이터 요소가 다른 Adobe Launch 확장의 이벤트에 의해 트리거된 규칙에서 요청되는 경우 데이터 요소의 값은 이 데이터 요소를 마지막으로 업데이트한 뷰어의 값입니다.
+데이터 요소에서 반환되는 정확한 값은 컨텍스트에 따라 다릅니다. Dynamic Media 뷰어 이벤트에 의해 트리거된 규칙에서 데이터 요소가 요청되면 규칙을 시작한 뷰어에 대해 데이터 요소 값이 반환됩니다. 그리고, 데이터 요소가 다른 Adobe Launch 확장의 이벤트에 의해 트리거된 규칙에서 요청되는 경우 데이터 요소의 값은 이 데이터 요소를 마지막으로 업데이트한 뷰어의 값입니다.
 
 **다음 샘플 설정을**&#x200B;고려하십시오.
 
@@ -231,7 +231,7 @@ Dynamic Media Viewers 확장에서 제공하는 데이터 요소 유형은 데�
 
 어떤 경우든, Dynamic Media 뷰어를 기반으로 하는 데이터 요소의 값은 로컬 저장소 또는 서버에 저장되지 않습니다.대신 클라이언트측 Adobe Launch 라이브러리에만 보관됩니다. 이러한 데이터 요소의 값은 웹 페이지가 다시 로드되면 사라집니다.
 
-일반적으로 데이터 요소 편집기는 [저장소 기간 선택을](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)지원합니다. 그러나 Dynamic Media Viewers 확장 기능을 사용하는 데이터 요소는 [없음]의 저장 기간 옵션만 **[!UICONTROL 지원합니다]**. 사용자 인터페이스에서 다른 값을 설정할 수 있지만 이 경우에는 데이터 요소 동작이 정의되지 않습니다. 확장자는 데이터 요소의 값을 직접 관리합니다.전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지하는 데이터 요소입니다.
+일반적으로 데이터 요소 편집기는 [저장소 기간 선택을](https://docs.adobe.com/content/help/ko-KR/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)지원합니다. 그러나 Dynamic Media Viewers 확장을 사용하는 데이터 요소는 [없음]의 저장 기간 옵션만 **[!UICONTROL 지원합니다]**. 사용자 인터페이스에서 다른 값을 설정할 수 있지만 이 경우에는 데이터 요소 동작이 정의되지 않습니다. 확장자는 데이터 요소의 값을 직접 관리합니다.전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지하는 데이터 요소입니다.
 
 ### 다이내믹 미디어 뷰어 확장의 규칙 정보 {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -536,7 +536,7 @@ Experience [Cloud ID 서비스 확장을 참조하십시오](https://docs.adobe.
 
 이 확장을 구성하려면 먼저 Adobe Analytics의 관리 > 보고서 세트 아래의 보고서 세트 **[!UICONTROL ID]**&#x200B;열 **[!UICONTROL 헤더 아래에]** 있는보고서 세트 ID가필요합니다.
 
-(데모용으로만 DynamicMediaViewersExtensionDoc 보고서 **[!UICONTROL 세트의]** 보고서 세트 ID가 다음 스크린샷에서 사용됩니다. 이 ID는 이전에 보고서 세트 [선택에서 만들어](#selecting-a-report-suite) 사용되었습니다.)
+(데모용으로만 DynamicMediaViewersExtensionDoc 보고서 세트의 **[!UICONTROL 보고서]** 세트 ID가 다음 스크린샷에 사용됩니다. 이 ID는 이전에 보고서 세트 [선택에서 만들어](#selecting-a-report-suite) 사용되었습니다.)
 
 ![image2019-7-8_16-45-34](assets/image2019-7-8_16-45-34.png)
 
@@ -590,7 +590,7 @@ Adobe Launch에는 여러 개발 환경, 하나의 스테이징 환경 및 하�
 
 Adobe [Launch](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html) 환경에 대한 자세한 내용은 환경을 참조하십시오.
 
-라이브러리 게시에는 다음 두 단계가 포함됩니다.
+라이브러리를 게시하려면 다음 두 단계가 포함됩니다.
 
 * 필요한 모든 변경 사항(새 내용 및 업데이트)을 라이브러리에 포함하여 새 라이브러리를 추가하고 만듭니다.
 * 다른 환경 수준(개발에서 스테이징 및 프로덕션으로)을 통해 라이브러리 이동
@@ -669,7 +669,7 @@ AEM 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
 1. Adobe IMC 구성 페이지의 왼쪽 위 모퉁이에서 만들기를 **[!UICONTROL 클릭합니다]**.
 1. Adobe IMS **[!UICONTROL 기술 계정 구성]** 페이지의 클라우드 솔루션 **[!UICONTROL 드롭다운 목록에서 Adobe]** Launch를 **[!UICONTROL 클릭합니다]**.
-1. 새 **[!UICONTROL 인증서를]**&#x200B;만든 다음 텍스트 필드에 인증서에 대한 의미 있는 값을 입력합니다. 예를 들어 AdobeLaunchIMSCert *와 같습니다*. 인증서 **[!UICONTROL 만들기를 클릭합니다]**.
+1. 새 **[!UICONTROL 인증서를]**&#x200B;만든 다음 텍스트 필드에 인증서에 대한 의미 있는 값을 입력합니다. 예를 들어 AdobeLaunchIMSCert *와 같습니다*. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다.
 
    다음 정보 메시지가 표시됩니다.
 
@@ -694,7 +694,7 @@ AEM 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
-1. 두 번째 **[!UICONTROL 통합]** 만들기 페이지에서 Experience Platform Launch API **[!UICONTROL 라디오 단추를 활성화(켜기)]** 합니다. 페이지의 오른쪽 아래 모서리에서 계속을 **[!UICONTROL 클릭합니다]**.
+1. 두 번째 **[!UICONTROL 통합]** 만들기 페이지에서 Experience Platform Launch API **[!UICONTROL 라디오 단추를]** 활성화(켜기)합니다. 페이지의 오른쪽 아래 모서리에서 계속을 **[!UICONTROL 클릭합니다]**.
 
    ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
@@ -711,12 +711,12 @@ AEM 구성은 다음 두 가지 주요 단계로 구성됩니다.
    * Experience **[!UICONTROL Platform Launch API용 제품 프로필 선택]** 머리글에서 Launch - &lt;your_company_name> **[!UICONTROL 이라는 제품 프로필을 선택합니다]**.
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
-1. 통합 **[!UICONTROL 만들기를 클릭합니다]**.
+1. Click **[!UICONTROL Create integration]**.
 1. 통합 **[!UICONTROL 생성]** 페이지에서 계속을 클릭하여 통합 **[!UICONTROL 세부 사항을]**&#x200B;확인합니다.
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. 통합 세부 정보 페이지가 나타납니다. ****다음과 비슷합니다.
+1. 통합 세부 정보 페이지가 나타납니다. 다음과 **** 유사합니다.
 
    >[!NOTE]
    >
@@ -830,8 +830,6 @@ AEM 구성은 다음 두 가지 주요 단계로 구성됩니다.
 1. 오른쪽 위 모서리 근처에 있는 만들기를 **[!UICONTROL 클릭합니다]**.
 
    이제 새 Adobe Launch Cloud 구성이 만들어져서 다음 예와 유사한 웹 사이트 옆에 나열됩니다.
-
-   ![]()
 
 1. 새 Adobe Launch Cloud 구성을 선택합니다(구성 제목을 선택하면 구성 제목 왼쪽에 확인 표시가 나타납니다). 도구 모음에서 게시를 **[!UICONTROL 클릭합니다]**.
 
