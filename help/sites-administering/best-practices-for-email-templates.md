@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd0cb6abe024bc4ff77c9932c99b816c832377f5
+source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
 
 ---
 
@@ -99,7 +99,7 @@ AEM에서 사용할 수 있는 데모 캠페인은 이러한 모든 우수 사�
 |---|---|
 | 이미지에 *대체* 속성 추가 | alt *속성은* 이미지 구성 요소에 대해 필수로 정의되었습니다. |
 | 이미지에 *png* ** 형식 대신 jpg를 사용합니다. | 이미지는 이미지 구성 요소에서 항상 JPG로 제공됩니다. |
-| 표의 배경 이미지 대신 요소를 <img> 사용합니다. | 템플릿에 배경 이미지 데이터가 사용되지 않습니다. |
+| 표의 배경 이미지 대신 요소를 `<img>` 사용합니다. | 템플릿에 배경 이미지 데이터가 사용되지 않습니다. |
 | 그림에 속성 style=&quot;display block&quot;을 추가합니다. Gmail에 잘 표시됩니다. | 모든 이미지는 기본적으로 *style=&quot;display block&quot;* 속성을 포함합니다. |
 
 ### 텍스트 및 링크 {#text-and-links}
