@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -84,7 +84,7 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 
 
-## 최신 릴리스 {#latest-releases}
+## Latest Releases {#latest-releases}
 
 AEM 6.5 Communities GA는 커뮤니티 패키지와 함께 제공됩니다. AEM 6.5 Communities 업데이트에 대해 [알아보려면](/help/release-notes/release-notes.md#experiencemanagercommunities)AEM 6. [5 릴리스 노트를 참조하십시오](/help/release-notes/release-notes.md#communities-release-notes.html).
 
@@ -92,7 +92,7 @@ AEM 6.5 Communities GA는 커뮤니티 패키지와 함께 제공됩니다. AEM 
 
 AEM 6.4부터 AEM Cumulative Fix 팩 및 서비스 팩의 일부로 커뮤니티 업데이트가 제공됩니다.
 
-AEM 6.5에 대한 최신 업데이트는 Adobe Experience [Manager 6.4 누적 수정 팩 및 서비스 팩을 참조하십시오](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+AEM 6.5에 대한 최신 업데이트는 Adobe Experience [Manager 6.4 누적 수정 팩 및 서비스 팩을 참조하십시오](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html).
 
 ### 버전 내역 {#version-history}
 
@@ -245,7 +245,7 @@ AEM Communities에서 공용 스토어는 사용자 생성 콘텐츠(UGC)를 저
 
 * 작성자의 복제 콘솔 액세스
 
-   * 글로벌 탐색에서 UIControl 도구 > **[배포 > 복제 > 작성자의 에이전트로 이동합니다.]**
+   * 글로벌 탐색에서 도구 > 배포 **[!UICONTROL > 복제 > 작성자의 에이전트로 이동합니다.]**
 
 * 두 에이전트 모두에 대해 동일한 절차를 따르십시오.
 
@@ -324,7 +324,7 @@ AEM 6.3부터는 주요 자료가 파일 시스템에 저장되고 더 이상 �
 
 >[!CAUTION]
 >
->암호화 키를 기반으로 하는 다른 보안 기능이 이미 구성된 경우 암호화 키를 복제하면 구성이 손상될 수 있습니다. 도움이 필요한 경우 고객 지원 센터에 [문의하십시오](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>암호화 키를 기반으로 하는 다른 보안 기능이 이미 구성된 경우 암호화 키를 복제하면 구성이 손상될 수 있습니다. 도움이 필요한 경우 고객 지원 센터에 [문의하십시오](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html).
 
 #### 저장소 복제 {#repository-replication}
 
