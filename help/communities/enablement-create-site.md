@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 [작성자 인스턴스 사용](https://localhost:4502/)
 
 * 관리자 권한으로 로그인
-* UIControl **[커뮤니티 > 사이트로 이동]**
+* 커뮤니티 > **[!UICONTROL 사이트로 이동]**
 
 * **만들기**&#x200B;를 선택합니다
 
