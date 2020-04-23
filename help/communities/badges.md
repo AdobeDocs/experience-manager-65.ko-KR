@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 작성 환경에서 Badges 콘솔에 액세스하려면
 
-* 글로벌 탐색에서 UIControl 도구 > **[커뮤니티 > 배지로 이동합니다.]**
+* 글로벌 탐색에서 도구 > **[!UICONTROL 커뮤니티 > 배지로 이동합니다.]**
 
 이 콘솔에는 현재 사용 가능한 배지와 새 배지를 추가할 수 있는 배지가 표시됩니다.
 
