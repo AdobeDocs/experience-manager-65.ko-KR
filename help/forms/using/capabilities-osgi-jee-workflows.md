@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
+source-git-commit: 182043b43e9fdb2e7e6de982bceb87b43f36a3ba
 
 ---
 
@@ -79,12 +79,17 @@ AEM 받은 편지함을 사용하여 OSGi에서 양식 중심의 AEM 워크플�
   </tr>
   <tr>
    <td>큐(공유 개인 큐, 대기열에서 청구 작업)</td>
-   <td>지원되지 않음</td>
+   <td>지원됨</td>
    <td>지원됨</td>
   </tr>
   <tr>
    <td>부재 중 알림</td>
-   <td>지원되지 않음</td>
+   <td>지원됨</td>
+   <td>지원됨</td>
+  </tr>
+    <tr>
+   <td>UI 요소 사용자 정의</td>
+   <td>지원됨</td>
    <td>지원됨</td>
   </tr>
   <tr>
@@ -303,6 +308,11 @@ OSGi 및 AEM Forms JEE 파섹 워크플로우(JEE 프로세스 관리의 AEM For
   </tr>
   <tr>
    <td>게이트웨이, 대기 시간 없음 </td>
+   <td>지원됨</td>
+   <td>지원됨</td>
+  </tr>
+   <tr>
+   <td>데이터를 저장할 변수 </td>
    <td>지원됨</td>
    <td>지원됨</td>
   </tr>
