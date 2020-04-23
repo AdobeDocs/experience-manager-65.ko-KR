@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -200,7 +200,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 * **사이트 삭제**
 
-   삭제 아이콘을 선택하여 Control Communities > Sites 콘솔 **[]**&#x200B;내에서 커뮤니티 사이트를 삭제합니다. 이 작업은 UGC, 사용자 그룹, 자산 및 데이터베이스 레코드 등 사이트와 연관된 모든 항목을 제거합니다.
+   커뮤니티 > 사이트 콘솔 **[!UICONTROL 내에서 커뮤니티 사이트를 삭제하려면 삭제 아이콘을]**&#x200B;선택합니다. 이 작업은 UGC, 사용자 그룹, 자산 및 데이터베이스 레코드 등 사이트와 연관된 모든 항목을 제거합니다.
 
 ![사이트 작업](assets/siteactions.png)
 
@@ -210,17 +210,17 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 >
 >작성자 인스턴스의 기본 메뉴에서:
 >
->1. UIConcontrol 도구 **[> 작업 > 복제 메뉴로]** 이동합니다.
->1. 작성자의 **[UIControl 에이전트를 선택합니다]**.
->1. UIConcontrol **[기본 에이전트(게시)를]**&#x200B;선택합니다.
->1. UIConcontrol **[설정]**&#x200B;옆에서 [UIConcontrol **[편집]을 선택합니다]**.
->1. [에이전트 설정]의 팝업 대화 상자에서 [UIConcontrol **[전송] 탭을]** 선택합니다.
+>1. 도구 > **[!UICONTROL 작업 > 복제 메뉴로]** 이동합니다.
+>1. Select **[!UICONTROL Agents on author]**.
+>1. 기본 **[!UICONTROL 에이전트(게시)를 선택합니다]**.
+>1. 설정 **[!UICONTROL 옆에서]**&#x200B;편집을 **[!UICONTROL 선택합니다]**.
+>1. [에이전트 설정]의 팝업 대화 상자에서 [전송] **[!UICONTROL 탭을]** 선택합니다.
 >1. URI에서 포트 번호 4503을 원하는 포트 번호로 변경합니다. >
    >    * 예를 들어 포트 6103을 사용하려면
       >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
-1. UIControl **[확인을 선택합니다]**.
-1. (선택 사항) **[UIControl Clear]** 또는 UIConcontrol Force **[Retry]** 를 선택하여 복제 큐를 재설정합니다.
+1. 확인을 **[!UICONTROL 선택합니다]**.
+1. (선택 사항) **[!UICONTROL 지우기]** 또는 강제 **[!UICONTROL 재시도를 선택하여]** 복제 큐를 재설정합니다.
 
 
 
