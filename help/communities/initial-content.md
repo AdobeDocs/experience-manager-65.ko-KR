@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -21,9 +21,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 * SCF 샌드박스 사이트 - 기본 페이지의 영어 버전으로 리디렉션됩니다.
 
-   * SCF 샌드박스 - 사이트의 영어 버전에 대한 기본 페이지
+   * SCF 샌드박스 - 사이트의 영어 버전에 대한 기본 페이지입니다.
 
-      * SCF 재생 - 재생할 주 페이지의 하위 페이지
+      * SCF 재생 - 재생할 기본 페이지의 하위 항목입니다.
 
 이 자습서는 [언어 사본을](../../help/sites-administering/tc-prep.md)다루지는 않지만 루트 페이지가 HTML 헤더를 통해 사용자에 대한 기본 언어 탐지를 구현하고 해당 언어에 대한 적절한 기본 페이지로 리디렉션할 수 있도록 디자인되었습니다. 이 규칙은 페이지의 노드 이름에 대해 두 문자로 된 국가 코드를 사용합니다(예: 영어의 경우 &quot;en&quot;, 프랑스어의 경우 &quot;fr&quot; 등).
 
@@ -45,7 +45,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
    또는, /siteadmin으로 이동하여 웹 사이트에 대한 클래식 UI에 직접 [액세스합니다.](http://localhost:4502/siteadmin)
 
-1. 탐색기 창에서 웹 **[!UICONTROL 사이트를]** 선택한 다음 도구 모음에서 새로 만들기 > 새 **[!UICONTROL 페이지를 선택합니다]**.
+1. 탐색기 창에서 웹 **[!UICONTROL 사이트를]** 선택한 다음 도구 모음에서 새로 만들기 > **[!UICONTROL 새]** ****&#x200B;페이지를선택합니다.
 
    페이지 **[!UICONTROL 만들기]** 대화 상자에 다음을 입력합니다.
 
@@ -55,14 +55,14 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    * **[!UICONTROL 만들기]**&#x200B;를 클릭합니다
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. 탐색기 창에서 방금 만든 페이지를 선택하고 새로 만들기 `/Websites/SCF Sandbox Site`> **[!UICONTROL 새 페이지를 클릭합니다]**.
+1. 탐색기 창에서 방금 만든 페이지를 선택하고 새로 만들기 `/Websites/SCF Sandbox Site`> **[!UICONTROL 새]** 페이지를 **[!UICONTROL 클릭합니다]**.
 
    * 제목: `SCF Sandbox`
    * 이름: `en`
    * SCF **샌드박스 재생 템플릿 선택&#x200B;**
    * **만들기&#x200B;**를 클릭합니다
 
-1. 탐색기 창에서 방금 만든 페이지를 선택하고 새로 만들기 `/Websites/SCF Sandbox Site/SCF Sandbox`> **[!UICONTROL 새 페이지를 클릭합니다]**
+1. 탐색기 창에서 방금 만든 페이지를 선택하고 새로 만들기 `/Websites/SCF Sandbox Site/SCF Sandbox`> **[!UICONTROL 새]** 페이지를 **[!UICONTROL 클릭합니다]**
 
    * 제목: `SCF Play`
    * 이름: `play`
@@ -105,4 +105,5 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >[!NOTE]
 >
 >cq:designPath의 사용은 선택 사항이며, clientlibs의 [사용과 관련이](develop-app.md#includeclientlibsintemplate)없습니다. 이는 SCF 구성 요소가 clientlibs를 사용하여 [JS 및 CSS를](client-customize.md#clientlibs-for-scf) 관리하는 데 기본적으로 필요합니다.
+
 
