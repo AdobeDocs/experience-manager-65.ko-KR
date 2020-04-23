@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 4a2ac67b-d2c9-4703-a1cb-d454786f9e6b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
 
 ---
 
 
-# AEM Communities 시작하기{#getting-started-with-aem-communities}
+# AEM Communities 시작하기 {#getting-started-with-aem-communities}
 
 AEM Communities를 사용하면 사이트 템플릿 라이브러리에서 브랜딩된 전용 커뮤니티 경험을 제작할 수 있습니다. 포럼, 그룹, 블로그, 파일 공유, 달력, 활동 피드 및 확장된 사용자 프로필을 웹 사이트에 통합하여 프로필, 고객 및 회사 간의 상호 작용을 활성화할 수 있습니다.
 
