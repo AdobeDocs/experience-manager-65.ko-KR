@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ac5d8d4f-fc13-4e8d-819c-c5db07fa6870
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56f7db792b340ed6774c54170e9b5d2a52153cd5
+source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
 
 ---
 
@@ -36,17 +36,17 @@ source-git-commit: 56f7db792b340ed6774c54170e9b5d2a52153cd5
 
 다음은 이 자습서에서 이미 작성된 리소스 목록이며 인쇄 채널용 대화형 통신을 만드는 동안 필요합니다.
 
-**** 인쇄 템플릿: [create_first_ic_print_template](../../forms/using/create-templates-print-web.md)
+**인쇄 템플릿:**[create_first_ic_print_template](../../forms/using/create-templates-print-web.md)
 
-**** 양식 데이터 모델:FDM_ [Create_First_IC](../../forms/using/create-form-data-model0.md)
+**양식 데이터 모델:** FDM_ [Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**** 문서 조각: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
+**문서 조각:**[bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
 
-**** 레이아웃 조각: [table_lf](../../forms/using/create-templates-print-web.md)
+**레이아웃 조각:**[table_lf](../../forms/using/create-templates-print-web.md)
 
-**** 이미지:PayNow 및 ValueAddedServices
+**이미지:** PayNow 및 ValueAddedServices
 
-1. AEM 작성자 인스턴스에 로그인하고 Adobe Experience Manager > **양식** > **양식** 및 **문서로 이동합니다**.
+1. AEM 작성자 인스턴스에 로그인하고 Adobe Experience Manager > **[!UICONTROL 양식]** > **[!UICONTROL 양식]** 및 **[!UICONTROL 문서로 이동합니다]**.
 1. 만들기를 **누르고** 대화형 **통신을 선택합니다**. 대화형 **통신 만들기** 마법사가 표시됩니다.
 1. 제목 및 이름 **필드에 create_first_ic****를** **지정합니다** . 양식 **데이터 모델로 FDM_Create_First_IC를** 선택하고 다음을 **누릅니다**.
 1. 채널 **마법사에서** 다음을 수행합니다.
@@ -100,15 +100,15 @@ source-git-commit: 56f7db792b340ed6774c54170e9b5d2a52153cd5
 
 다음은 이 자습서에서 이미 만들어진 리소스 목록이며 웹 채널에 대한 대화형 통신을 만드는 동안 필요합니다.
 
-**** 웹 템플릿:Create_ [First_IC_Web_Template](../../forms/using/create-templates-print-web.md)
+**웹 템플릿:** Create_ [First_IC_Web_Template](../../forms/using/create-templates-print-web.md)
 
-**** 양식 데이터 모델:FDM_ [Create_First_IC](../../forms/using/create-form-data-model0.md)
+**양식 데이터 모델:** FDM_ [Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**** 문서 조각: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
+**문서 조각:**[bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
 
-**** 이미지:PayNowWeb 및 ValueAddedServicesWeb
+**이미지:** PayNowWeb 및 ValueAddedServicesWeb
 
-1. AEM 작성자 인스턴스에 로그인하고 Adobe Experience Manager > **양식** > **양식** 및 **문서로 이동합니다**.
+1. AEM 작성자 인스턴스에 로그인하고 Adobe Experience Manager > **[!UICONTROL 양식]** > **[!UICONTROL 양식]** 및 **[!UICONTROL 문서로 이동합니다]**.
 1. 만들기를 **누르고** 대화형 **통신을 선택합니다**. 대화형 **통신 만들기** 마법사가 표시됩니다.
 1. 제목 및 이름 **필드에 create_first_ic****를** **지정합니다** . 양식 **데이터 모델로 FDM_Create_First_IC를** 선택하고 다음을 **누릅니다**.
 1. 채널 **마법사에서** 다음을 수행합니다.
@@ -164,7 +164,7 @@ source-git-commit: 56f7db792b340ed6774c54170e9b5d2a52153cd5
    1. [경로] 필드에 결제 URL을 **지정합니다** .
    1. 타겟 **드롭다운** 목록에서 **새** 탭을 선택합니다.
 
-   1. 탭하여 하이퍼링크 속성을 ![](assets/done_icon.png) 저장합니다.
+   1. 을 ![](assets/done_icon.png) 눌러 하이퍼링크 속성을 저장합니다.
 
 1. 미리 **보기** 옵션 옆에 있는 드롭다운 목록에서 스타일을 **선택합니다** .
 
@@ -198,7 +198,7 @@ source-git-commit: 56f7db792b340ed6774c54170e9b5d2a52153cd5
 
 인쇄 채널을 사용하여 웹 채널 컨텐츠를 파생하려면 다음 단계를 수행하십시오.
 
-1. AEM 작성자 인스턴스에 로그인하고 Adobe Experience Manager > **양식** > **양식** 및 **문서로 이동합니다**.
+1. AEM 작성자 인스턴스에 로그인하고 Adobe Experience Manager > **[!UICONTROL 양식]** > **[!UICONTROL 양식]** 및 **[!UICONTROL 문서로 이동합니다]**.
 1. 만들기를 **누르고** 대화형 **통신을 선택합니다**. 대화형 **통신 만들기** 마법사가 표시됩니다.
 1. 제목 및 이름 **필드에 create_first_ic****를** **지정합니다** . 양식 **데이터 모델로 FDM_Create_First_IC를** 선택하고 다음을 **누릅니다**.
 1. 채널 **마법사에서** 다음을 수행합니다.
