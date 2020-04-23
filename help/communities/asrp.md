@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -45,7 +45,7 @@ AEM Communities 사이트에서 UGC용 ASRP를 사용하도록 구성하려면 �
 
 **AEM 작성자 인스턴스의 경우:**
 
-* 글로벌 탐색에서 UIControl 도구 > **[커뮤니티 > 스토리지 구성으로]** 이동한 다음 ASRP( **[Adobe Storage Resource Provider)]**&#x200B;제어를 선택합니다.
+* 글로벌 탐색에서 도구 > **[!UICONTROL 커뮤니티 > 스토리지 구성으로 이동한]** 후 **[!UICONTROL ASRP(Adobe Storage Resource Provider)]**&#x200B;를 선택합니다.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -94,7 +94,7 @@ ASRP는 모든 작성자 및 게시 인스턴스에서 공용 스토어로 식�
 
 AEM 작성자 인스턴스의 경우:
 
-* 주 메뉴에서 UIConcontrol 도구 > **[작업 > 복제를 탐색합니다]**.
+* 주 메뉴에서 도구 > 작업 **[!UICONTROL > 복제를 선택합니다]**.
 * 트리 **활성화 선택**
 * **시작 경로**:찾아보기 `/etc/socialconfig/srpc/`
 * 수정된 **항목만 선택 취소**
