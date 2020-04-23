@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
 
 ---
 
@@ -27,11 +27,12 @@ Handlebars Helpers(helpers)는 SCF 구성 요소 작업을 용이하게 하기 �
 
 AEM Communities를 사용하여 배달되는 사용자 지정 SCF 도우미는 [클라이언트 라이브러리에 정의됩니다](../../help/sites-developing/clientlibs.md).
 
-* /etc/clientlibs/social/commons/scf/helpers.js
+* `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
 >반드시 [최신 커뮤니티 기능 팩을](deploy-communities.md#latestfeaturepack)설치하십시오.
+
 
 ## 약어 {#abbreviate}
 
@@ -89,7 +90,7 @@ Then abbreviate would return
 
 ## 컨텐츠 추가 {#content-loadmore}
 
-두 보기 사이를 전환할 수 있는 기능을 사용하여 div 아래에 두 개의 범위를 추가하는 도우미, 하나는 전체 텍스트에 대해, 다른 하나는 덜 텍스트를 추가합니다.
+두 보기 사이를 전환할 수 있는 기능을 사용하여 div 아래에 두 개의 범위를 추가하는 도우미, 하나는 전체 텍스트에 대해, 다른 하나는 적은 텍스트에 대해 추가합니다.
 
 ### 매개 변수 {#parameters-1}
 
@@ -103,7 +104,7 @@ Then abbreviate would return
 
 * **moreText**:문자열
 
-   (선택 사항) 표시할 텍스트가 더 있음을 나타내는 표시할 텍스트입니다. 기본값은 &quot;more&quot;입니다.
+   (선택 사항) 표시할 텍스트가 더 있음을 나타내는 텍스트입니다. 기본값은 &quot;more&quot;입니다.
 
 * **ellipsesText**:문자열
 
@@ -135,7 +136,7 @@ Then content-loadmore would return
 
 * **컨텍스트**:숫자
 
-   (선택 사항) 1970년 1월 1일부터 초(epoch)까지의 밀리초 값 오프셋입니다. 기본값은 현재 날짜입니다.
+   (선택 사항) 1970년 1월 1일(epoch)부터 초 값 오프셋입니다. 기본값은 현재 날짜입니다.
 
 * **형식**:문자열
 
@@ -163,11 +164,11 @@ Then content-loadmore would return
 
 * **lvalue**:문자열
 
-   비교할 왼쪽 값
+   비교할 왼쪽 값입니다.
 
 * **rvalue**:문자열
 
-   비교할 오른쪽 값
+   비교할 오른쪽 값.
 
 ### 예 {#example-1}
 
@@ -191,7 +192,7 @@ WCM 모드의 현재 값을 [문자열로 구분된 모드](https://helpx.adobe.
 
 * **모드**:문자열
 
-   (선택 사항) WCM [모드를](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 설정할 경우 쉼표로 구분된 목록입니다.
+   (선택 사항) 설정할 경우 테스트할 WCM [모드의](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) 쉼표로 구분된 목록입니다.
 
 ### 예 {#example-2}
 
@@ -246,9 +247,9 @@ JavaScript [코드에서 문자열 국제화를 참조하십시오](../../help/s
 
    (선택 사항, 상대 경로를 제공하지 않는 한)
 
-   현재 `this`컨텍스트를 전달하려면
+   현재 컨텍스트를 전달하는 `this` 데 사용합니다.
 
-   resourceType `this.id` 을 렌더링하는 데 사용할 리소스를 `id` 찾습니다.
+   요청된 resourceType을 렌더링하기 `this.id` 위해 에서 리소스를 `id` 얻는 데 사용합니다.
 
 * **resourceType**:문자열
 
@@ -256,7 +257,7 @@ JavaScript [코드에서 문자열 국제화를 참조하십시오](../../help/s
 
 * **템플릿**:문자열
 
-   구성 요소 스크립트에 대한 경로
+   구성 요소 스크립트 경로.
 
 * **경로**:문자열
 
@@ -272,7 +273,7 @@ JavaScript [코드에서 문자열 국제화를 참조하십시오](../../help/s
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-&#x200B;+ /comments에 새 주석 구성 요소가 포함됩니다. `this.id`
+여기에는 `this.id` + /comments에 새 주석 구성 요소가 포함됩니다.
 
 ## IncludeClientLib {#includeclientlib}
 
@@ -383,7 +384,7 @@ XSS를 방지하기 위해 HTML 요소 컨텐츠에 대한 소스 문자열을 �
 
 * **컨텍스트**:개체
 
-   인코딩할 HTML
+   인코딩할 HTML입니다.
 
 ### 예 {#example-6}
 
@@ -401,7 +402,7 @@ XSS를 방지하기 위해 HTML 속성 값에 쓸 소스 문자열을 인코딩�
 
 * **컨텍스트**:개체
 
-   인코딩할 HTML
+   인코딩할 HTML입니다.
 
 ### 예 {#example-7}
 
@@ -419,7 +420,7 @@ JavaScript 문자열 컨텐츠에 기록할 소스 문자열을 인코딩하여 
 
 * **컨텍스트**:개체
 
-   인코딩할 HTML
+   인코딩할 HTML입니다.
 
 ### 예 {#example-8}
 
@@ -437,7 +438,7 @@ XSS를 방지하기 위해 HTML href 또는 srce 속성 값으로 쓸 URL을 가
 
 * **컨텍스트**:개체
 
-   문서의 기밀 정보 가리기
+   문서의 기밀 정보 가리기 URL입니다.
 
 ### 예 {#example-9}
 
@@ -449,7 +450,7 @@ XSS를 방지하기 위해 HTML href 또는 srce 속성 값으로 쓸 URL을 가
 
 Handlebars.js 설명서의 [](https://handlebarsjs.com/expressions.html)도우미 함수에 대한 빠른 개요:
 
-* Handlebars 도우미 호출은 간단한 식별자(helper의 *name *of the helper) 다음에 0개 이상의 공백으로 구분된 매개 변수가 오는 것입니다.
+* Handlebars 도우미 호출은 간단한 식별자(헬퍼 *이름* )와 0개 이상의 공백으로 구분된 매개 변수입니다.
 * 매개 변수는 간단한 문자열, 숫자, 부울 또는 JSON 개체일 수 있으며 마지막 매개 변수로서 선택적 키-값 쌍(해시 인수) 시퀀스가 될 수 있습니다.
 * 해시 인수의 키는 단순 식별자여야 합니다.
 * 해시 인수의 값은 Handlebars 식입니다.단순 식별자, 경로 또는 문자열.
@@ -566,6 +567,7 @@ public class FooTextHelper implements TemplateHelper<String>{
 >
 >구성 요소는 로그인한 사용자에 대해 클라이언트측에서 다시 렌더링되며, 클라이언트측 도우미가 없으면 구성 요소가 사라집니다.
 
+
 ### 클라이언트측 사용자 지정 도움말 도우미 {#client-side-custom-helpers}
 
 클라이언트측 도우미는 호출로 등록된 핸들바 스크립트입니다 `Handlebars.registerHelper()`.
@@ -589,9 +591,9 @@ function(Handlebars, SCF, $CQ) {
 사용자 지정 클라이언트측 도움말을 사용자 지정 클라이언트 라이브러리에 추가해야 합니다.
 clientlib은 다음을 수행해야 합니다.
 
-* 종속성 포함 `cq.social.scf`
-* 핸들바가 로드된 후 로드
-* 포함 [예정](clientlibs.md)
+* 종속성을 `cq.social.scf`포함합니다.
+* Handlebars가 로드된 후 로드됩니다.
+* 포함되어 [있습니다](clientlibs.md).
 
 참고:scf 도움말은 에 정의되어 `/etc/clientlibs/social/commons/scf/helpers.js`있습니다.
 
