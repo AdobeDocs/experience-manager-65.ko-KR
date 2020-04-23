@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 341fef2b8f040848a59381b0d4996c29f352b929
 
 ---
 
@@ -26,6 +26,7 @@ AEM Communities를 사용하면 브랜드 기업은 소셜 커뮤니티 내에�
 >[!NOTE]
 >
 >이 자습서에서는 Communities [기능 팩 1](deploy-communities.md#latestfeaturepack) 이상을 설치하는 것으로 가정합니다.
+
 
 * [초기 설정](enablement-setup.md)
 
