@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -148,7 +148,7 @@ Adobe Marketing Cloud의 보고서 [세트 관리자를](https://marketing.adobe
 * 커뮤니티 [사이트에 대한 분석 활성화](#enable-analytics-for-a-community-site)
 * 커뮤니티 사이트에 `Marketing Cloud Org Id` 연결
 
-커뮤니티 사이트 속성을 `Marketing Cloud Org Id` 수정하여 [](/help/communities/sites-console.md#enablement) 커뮤니티 사이트 생성 [시 또는 나중에 입력할](/help/communities/sites-console.md#modifying-site-properties) 수 있습니다. [](#aem-analytics-cloud-service-configuration)
+커뮤니티 사이트 속성을 `Marketing Cloud Org Id`[수정하여](/help/communities/sites-console.md#enablement) [커뮤니티 사이트 생성](/help/communities/sites-console.md#modifying-site-properties) 시 또는 나중에 입력할수 있습니다. [](#aem-analytics-cloud-service-configuration)
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
@@ -160,15 +160,15 @@ Adobe Marketing Cloud의 보고서 [세트 관리자를](https://marketing.adobe
 
 작성자 인스턴스의 표준 UI를 사용하여 Adobe Analytics를 AEM 커뮤니티 사이트와 통합하는 새 Analytics 통합을 만들려면:
 
-* 전역 탐색에서:UIControl **[도구 > 배포 > 클라우드 서비스]**
-* Adobe Analytics로 **[스크롤 다운하기]**
-* UIConcontrol **[지금 구성]** 또는 UIConcontrol 구성 **[표시 선택]**
+* 전역 탐색에서:도구 **[!UICONTROL > 배포 > 클라우드 서비스]**
+* Adobe Analytics로 **[!UICONTROL 스크롤 다운]**
+* 지금 **[!UICONTROL 구성]** 또는 구성 **[!UICONTROL 표시를 선택합니다.]**
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 ### 구성 만들기 대화 상자 {#create-configuration-dialog}
 
-* 사용 가능한 구성 `[+]` 제어 옆에 있는 **[]** 아이콘을 선택하여 새 구성을 만듭니다.
+* 사용 가능한 구성 옆에 `[+]` 있는 **** 아이콘을 선택하여 새 구성을 만듭니다.
 
 구성 만들기 대화 상자에서 입력할 값은 구성을 식별합니다.
 
@@ -246,7 +246,7 @@ Adobe Marketing Cloud의 보고서 [세트 관리자를](https://marketing.adobe
 
 Adobe Analytics에 대한 기본 연결을 성공적으로 구성한 후에는 커뮤니티 사이트에 대한 프레임워크를 만들거나 편집해야 합니다. 이 프레임워크의 목적은 AEM(Communities Feature) 변수를 Analytics(보고서 세트) 변수에 매핑하는 것입니다.
 
-* 사용 가능한 프레임워크 `[+]` 제어 옆에 있는 **[]** 아이콘을 선택하여 새 프레임워크를 만듭니다.
+* 사용 가능한 프레임워크 옆에 `[+]` 있는 **** 아이콘을 선택하여 새 프레임워크를 만듭니다.
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
