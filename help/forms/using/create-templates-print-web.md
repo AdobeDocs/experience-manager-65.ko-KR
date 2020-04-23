@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 양식 디자이너를 사용하여 XDP 템플릿을 만든 후에는 AEM Forms 서버에 업로드하여 대화형 통신을 만드는 동안 템플릿을 사용할 수 있도록 해야 합니다.
 
-1. [ **양식** ] > [ **양식 및 문서]를 선택합니다**.
+1. [ **[!UICONTROL 양식]** ] > [ **[!UICONTROL 양식 및 문서]를 선택합니다]**.
 1. 만들기 **> 파일** 업로드를 **누릅니다**.
 
    XDP( **create_first_ic_print_template** 템플릿)를 탐색하여 선택하고 **열기를** 눌러 XDP 템플릿을 AEM Forms 서버로 가져옵니다.
