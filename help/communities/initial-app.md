@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -19,8 +19,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 이 섹션에서 다음을 만듭니다.
 
-* 예제 웹 사이트에서 컨텐츠 페이지를 만드는 데 사용할 **[템플릿](#createthepagetemplate)**
-* 웹 사이트 페이지를 렌더링하는 데 사용할 **[구성 요소 및 스크립트](#create-the-template-s-rendering-component)**
+* 예제 웹 사이트에서 컨텐츠 페이지를 만드는 데 사용할 **[템플릿입니다](#createthepagetemplate)**.
+* 웹 사이트 페이지를 렌더링하는 데 사용할 **[구성 요소 및 스크립트입니다](#create-the-template-s-rendering-component)**.
 
 ## 컨텐츠 템플릿 만들기 {#create-the-content-template}
 
@@ -28,10 +28,10 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 이 연습에서는 모든 페이지가 하나의 간단한 템플릿을 기반으로 합니다.
 
-1. CRXDE Lite의 탐색기 창
+1. CRXDE Lite의 탐색기 창에서:
 
-   * select `/apps/an-scf-sandbox/templates`
-   * **[!UICONTROL 만들기 > 템플릿 만들기]**
+   * 선택 `/apps/an-scf-sandbox/templates`
+   * **[!UICONTROL 만들기]** > **[!UICONTROL 템플릿 만들기]**
 
 1. 템플릿 만들기 대화 상자에서 다음 값을 입력한 다음 다음을 **[!UICONTROL 클릭합니다]**.
 
@@ -44,7 +44,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
    리소스 유형이 `playpage``sling:resourceType`의 jcr:content 노드에 속성으로 나타납니다. 브라우저가 요청할 때 컨텐츠를 렌더링하는 구성 요소(리소스)를 식별합니다.
 
-   이 경우 `playpage`템플릿을 사용하여 만든 모든 페이지는 `an-scf-sandbox/components/playpage` 구성 요소로 렌더링됩니다. 규칙별로 구성 요소의 경로는 상대적입니다. 즉, Sling은 `/apps` 폴더에서 먼저 리소스를 검색하고, 찾을 수 없는 경우 `/libs` 폴더에서 리소스를 검색할 수 있습니다.
+   이 경우 템플릿을 사용하여 만든 모든 페이지는 `playpage` 구성 요소에 의해 렌더링됩니다 `an-scf-sandbox/components/playpage` . 규칙별로 구성 요소의 경로는 상대적입니다. 즉, Sling은 `/apps` 폴더에서 먼저 리소스를 검색하고, 찾을 수 없는 경우 `/libs` 폴더에서 리소스를 검색할 수 있습니다.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -58,7 +58,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
    참고:허용되는 경로 속성의 값은 *정규 표현식입니다.* 표현식과 일치하는 경로가 있는 컨텐츠 페이지에서는 템플릿을 사용할 수 있습니다. 이 경우 정규 표현식은 **/content** 폴더의 경로와 모든 하위 페이지의 경로와 일치합니다.
 
-   작성자가 아래 페이지를 만들면 `/content`사용할 수 있는 템플릿 목록에 &quot;SCF 샌드박스 페이지 템플릿&quot;이라는 `playpage`템플릿이 나타납니다.
+   작성자가 아래 페이지를 만들면 `/content`사용할 수 있는 템플릿 목록에 &quot;SCF 샌드박스 페이지 템플릿&quot;이라는 `playpage` 템플릿이 나타납니다.
 
    템플릿에서 루트 페이지를 만든 후 정규 표현식에 루트 경로를 포함하도록 속성을 수정하여 템플릿에 대한 액세스를 이 웹 사이트로 제한할 수 있습니다.
 
@@ -74,7 +74,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
    **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. 확인을 클릭하고 템플릿 만들기를 완료하면 새 `playpage`템플릿의 속성 탭 값 모서리에 빨간색 삼각형이 표시됩니다. 이러한 빨간색 삼각형은 저장되지 않은 편집 내용을 나타냅니다.
+1. 확인을 클릭하고 템플릿 만들기를 완료하면 새 `playpage` 템플릿의 속성 탭 값 모서리에 빨간색 삼각형이 표시됩니다. 이러한 빨간색 삼각형은 저장되지 않은 편집 내용을 나타냅니다.
 
    모두 **[!UICONTROL 저장을]** 클릭하여 새 템플릿을 저장소에 저장합니다.
 
@@ -100,7 +100,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    * 그룹:
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. 대화 **[!UICONTROL 상자의]** [ **[!UICONTROL 허용되는 하위]** ] 패널이 나타날 때까지 [다음]을 클릭합니다
+1. 대화 **[!UICONTROL 상자의]** [ **[!UICONTROL 허용되는 하위]** ] 패널이 나타날 때까지 다음을 클릭합니다.
 
    * **[!UICONTROL 확인]**&#x200B;을 클릭합니다
    * 모두 **[!UICONTROL 저장을 클릭합니다.]**
