@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
 
 # 좋아요 사용 {#using-liking}
 
-이 `Liking`구성 요소는 사용자가 포럼 내의 주석과 같은 특정 컨텐츠에 대한 의견을 표현할 수 있도록 하는 유용한 도구입니다. 구성 `Liking`요소를 사용하여 멤버는 하트 아이콘을 선택하여 긍정적인 의견을 표시합니다.
+구성 `Liking` 요소는 사용자가 포럼 내의 주석과 같은 특정 컨텐츠에 대한 의견을 표현할 수 있도록 하는 유용한 도구입니다. 구성 요소를 사용하여 멤버는 `Liking` 하트 아이콘을 선택하여 긍정적인 의견을 표시합니다.
 
 ## 페이지에 좋아요 추가 {#adding-liking-to-a-page}
 
-작성 모드에서 페이지에 `Liking` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여
+작성 모드에서 페이지에 `Liking` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 다음을 찾습니다.
 
 * `Communities / Liking`
 
@@ -43,11 +43,17 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL 긍정적인 응답 레이블]**(*필수*)긍정적인 응답을 위한 속성 이름입니다.
+* **[!UICONTROL 긍정적인 응답 레이블]**
 
-* **[!UICONTROL 네거티브 응답 레이블]**(*필수*) 네거티브 응답의 속성 이름입니다.
+   (*필수*) 긍정적인 응답의 속성 이름입니다.
 
-* **[!UICONTROL 총계]**&#x200B;이름(*필수*) 투표 구성 요소의 이 인스턴스에 대한 내부 식별 가능 속성 이름입니다.
+* **[!UICONTROL 부정적인 응답 레이블]**
+
+   (*필수*) 음수 응답의 속성 이름입니다.
+
+* **[!UICONTROL Tally 이름]**
+
+   (*필수*) 투표 구성 요소의 이 인스턴스에 대한 내부 식별 가능 속성 이름입니다.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
