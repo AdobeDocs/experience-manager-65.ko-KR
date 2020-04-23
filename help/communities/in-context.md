@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -30,16 +30,16 @@ AEM Communities의 경우 커뮤니티 콘텐츠가 게시된 페이지에서 �
 게시 인스턴스의 중재자에게 표시되는 UI는 UGC(사용자 생성 컨텐츠)를 게시 및 관리하기 위한 대화 상자에 포함되어 있습니다. UI의 요소는 사이트 방문자의 상태에 따라 결정됩니다.
 
 1. 컨텐츠를 게시한 구성원
-1. 신뢰할 수 있는 멤버 중재자
-1. 관리자
+1. 신뢰할 수 있는 멤버 중재자입니다.
+1. 관리자.
 1. 로그인했지만 관리자, 중재자 및 컨텐츠 작성자는 로그인하지 않았습니다.
-1. 로그인하지 않음
+1. 로그인하지 않았습니다.
 
 ## 예 {#example}
 
 AEM [Communities](http://localhost:4503/content/sites/engage/en.html) 시작하기 [](getting-started.md)시 만든 Geometrixx Engage 사이트를 사용하면 포럼의 스레드를 신속하게 설정할 수 있습니다. 포럼에서는 아래와 같이 게시 환경에서 다양한 중재 활동을 경험할 수 있습니다.
 
-Aaron McDonald씨(aaron.mcdonald@mailinator.com)가 사이트를 만들 때 커뮤니티 참여 중재자 그룹에 추가함으로써 신뢰할 수 있는 커뮤니티 구성원으로 확인되었습니다.
+Aaron McDonald씨(aaron.mcdonald@mailinator.com)이 사이트를 만들 때 커뮤니티 참여 중재자 그룹에 추가함으로써 신뢰할 수 있는 커뮤니티 구성원으로 확인되었습니다.
 
 Rebekah Larsen(rebekah.larsen@trashymail.com)은 구성원 콘솔을 [사용하여 커뮤니티 참여 구성원 그룹의 구성원으로 추가할 수](members.md)있습니다.
 
@@ -97,11 +97,11 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)은 구성원 콘솔을 [사용하�
 
 게시 시 Boyd Larsen으로 로그인하고 을 선택하여 스레드를 액세스한 `Forum`다음 `Read more` 벌새 게시물에 액세스합니다.
 
-알림
+알림:
 
-* 보이드는 포럼에 참석하지 않았습니다
-* Boyd를 삭제할 수 없음
-* Boyd가 로그인되어 있고 회신 또는 플래그 컨텐츠에 지정할 수 있습니다.
+* 보이드는 포럼에 참석하지 않았다.
+* Boyd는 아무 것도 삭제할 수 없습니다.
+* Boyd가 로그인되어 있고 회신 또는 플래그 컨텐츠가 가능합니다.
 
 Andrew가 게시한 컨텐츠에 플래그를 지정하려면 Boyd가 플래그를 선택하도록 하십시오.
 
@@ -113,9 +113,9 @@ Andrew가 게시한 컨텐츠에 플래그를 지정하려면 Boyd가 플래그�
 
 관리자로 로그인하고 포럼을 선택하여 스레드를 액세스한 다음 게시물에 대해 자세히 읽기를 선택합니다.
 
-알림
+알림:
 
-* 관리자는 플래그 지정, 삭제, 편집, 거부, 잘라내기, 닫기, 고정, 기능
+* 관리자는 플래그 지정, 삭제, 편집, 거부, 잘라내기, 닫기, 고정, 기능을 수행할 수 있습니다.
 * 관리자는 관리를 선택하여 중재 콘솔에 액세스할 수 있습니다.
 
 ![communityadmin-forum](assets/communityadmin-forum.png)
@@ -134,11 +134,11 @@ Andrew가 게시한 컨텐츠에 플래그를 지정하려면 Boyd가 플래그�
 
 커뮤니티 사회자인 Aaron McDonald로 로그인하고 포럼을 선택하여 스레드를 액세스한 다음 벌새 게시물에 대해 자세히 읽습니다(aaron.mcdonal@mailinator.com).
 
-알림
+알림:
 
-* Aaron은 자신의 게시물에 답글 달기, 삭제, 편집 또는 거부할 수 있습니다.
-* 또한 Aaron은 기타 컨텐트에 플래그 지정/허용, 회신, 삭제, 편집, 거부 기능을 수행할 수 있습니다.
-* Aaron은 포럼 주제를 잘라서 다른 포럼으로 옮길 수 있습니다.
+* Aaron은 자신의 게시물을 회신, 삭제, 편집 또는 거부할 수 있습니다.
+* 또한 Aaron은 다른 컨텐트에 플래그 지정/허용, 회신, 삭제, 편집, 거부 기능을 수행할 수 있습니다.
+* Aaron은 포럼 주제를 잘라서 그것을 그가 온건파가 있는 다른 포럼으로 옮길 수 있습니다.
 * Aaron은 중재 콘솔에 액세스할 관리를 선택할 수 있습니다.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
@@ -157,10 +157,10 @@ Andrew가 게시한 컨텐츠에 플래그를 지정하려면 Boyd가 플래그�
 
 스레드를 시작한 커뮤니티 멤버인 Rebekah Larsen(rebekah.larsen@mailinator.com)으로 로그인하고 포럼을 선택하여 스레드를 액세스한 다음 벌새 게시물에 대해 자세히 읽기를 참조하십시오.
 
-알림
+알림:
 
-* Rebekah can Delete or Edit her own post
-* Rebekah는 다른 컨텐츠에 답글을 달거나 플래그를 지정할 수도 있습니다.
+* Rebekah는 자신의 게시물을 삭제하거나 편집할 수 있습니다.
+* 또한 Rebekah는 다른 컨텐츠에 답글을 달거나 플래그를 지정할 수도 있습니다.
 * 중재 콘솔에 액세스할 수 없습니다.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
