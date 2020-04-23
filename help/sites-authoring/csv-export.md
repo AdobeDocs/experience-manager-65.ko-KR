@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
 
 ---
 
@@ -51,7 +51,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
 결과 `export.csv` 파일은 Excel 또는 기타 호환되는 애플리케이션에서 열 수 있습니다. 예를 들면 다음과 같습니다.
 
-![]() ![etc-01](assets/etc-01.png)
+![etc-01](assets/etc-01.png)
 
 The create **CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
 
@@ -60,7 +60,7 @@ The create **CSV Report** option is available when browsing the **Sites** consol
 CSV 내보내기를 만들려면:
 
 1. **사이트** 콘솔을 열고 필요한 경우 필요한 위치로 이동합니다.
-1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
+1. 도구 모음에서 **만들기**&#x200B;를 선택한 다음 **CSV 보고서**&#x200B;를 선택하여 마법사를 엽니다.
 
    ![etc-03](assets/etc-03.png)
 
