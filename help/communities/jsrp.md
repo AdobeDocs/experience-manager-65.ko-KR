@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: aa2c75e061e00ba74d54843a5f35bb7d82d12a92
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
@@ -35,7 +35,7 @@ SRP [옵션 및 권장 토폴로지의](working-with-srp.md#characteristics-of-s
 
 작성 환경에서 스토리지 구성 콘솔을 이용합니다.
 
-* 전역 탐색에서:도구 **[!UICONTROL > 커뮤니티 > 스토리지 구성]**
+* 전역 탐색에서:도구 **[!UICONTROL >]** 커뮤니티 **[!UICONTROL >]** 스토리지 **[!UICONTROL 구성]**
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -48,9 +48,8 @@ JSRP가 기본 구성인 경우 게시 환경에서 동일한 구성이 설정�
 
 * 작성자:
 
-   * 전역 탐색에서:도구 **[!UICONTROL > 배포 > 복제]**
-   * 트리 **[!UICONTROL 활성화 선택]**
-   * **[!UICONTROL 시작 경로]**:
+   * 전역 탐색에서:도구 **[!UICONTROL >]** 배포 **[!UICONTROL >]** **[!UICONTROL 복제]**
+   * 트리 **[!UICONTROL 활성화]** > 시작 **[!UICONTROL 경로를 선택합니다]**.
 
       * 탐색 `/conf/global/settings/community/srpc/`
    * 활성화 **[!UICONTROL 선택]**
@@ -58,7 +57,7 @@ JSRP가 기본 구성인 경우 게시 환경에서 동일한 구성이 설정�
 
 ## 사용자 데이터 관리 {#managing-user-data}
 
-게시 환경에 자주 입력되는 *사용자*, *사용자 프로필* 및 *사용자 그룹에*&#x200B;대한 자세한 내용은
+게시 환경에 자주 입력되는 *사용자*, *사용자 프로필* 및 *사용자 그룹에*&#x200B;대한 자세한 내용은 다음을 참조하십시오.
 
 * [사용자 동기화](sync.md)
 * [사용자 및 사용자 그룹 관리](users.md)
@@ -71,10 +70,10 @@ JSRP가 기본 구성인 경우 게시 환경에서 동일한 구성이 설정�
 
 모든 작성 및 게시 AEM 인스턴스에서 스토리지 구성 콘솔을 다시 방문하거나 AEM 저장소를 확인합니다.
 
-* jcr에서, if [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
+* JCR에서, if [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
    * srpc [노드를 포함하지](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) 않음, 즉 스토리지 공급자가 JSRP임을 의미합니다.
-   * srpc 노드가 존재하고 노드 [기본 구성을](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration)포함하는 경우 기본 구성의 속성은 JSRP를 기본 공급자로 정의해야 합니다
+   * srpc 노드가 존재하고 노드 [기본 구성을](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration)포함하는 경우 기본 구성의 속성은 JSRP를 기본 공급자로 정의해야 합니다.
 
 ### 작성자 인스턴스에 UGC가 표시되지 않음 {#ugc-not-visible-on-author-instance}
 
