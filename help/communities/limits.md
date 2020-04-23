@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
@@ -29,22 +29,22 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## AEM Communities 사용자 생성 콘텐츠 기여도 제한 구성 {#aem-communities-user-generated-content-contribution-limits-configuration}
 
-이 OSGi 구성
+이 OSGi 구성:
 
 * 기여도 제한(기간 내의 게시물 수)의 특성을 정의합니다.
 * 한도에 도달했을 때 회원이 메시지를 보낼 수 있는 사용자를 식별합니다.
-* 제한되지 않아야 하는 도메인을 식별합니다.
+* 제한되지 않아도 되는 도메인을 식별합니다.
 
 이 OSGi 구성에 도달하려면
 
-* 기본 게시자에서
-* 관리자 권한으로 로그인
-* 웹 [콘솔 액세스](../../help/sites-deploying/configuring-osgi.md)
+* 기본 게시자에서:
+* 관리자 권한으로 로그인합니다.
+* 웹 [콘솔에 액세스합니다](../../help/sites-deploying/configuring-osgi.md).
 
    * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* 찾기 `AEM Communities User Generated Content Contribution Limits Configuration`
-* 편집 아이콘 선택
+* 위치를 `AEM Communities User Generated Content Contribution Limits Configuration`찾습니다.
+* 편집 아이콘을 선택합니다.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
