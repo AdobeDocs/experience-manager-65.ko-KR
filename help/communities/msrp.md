@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
@@ -52,7 +52,7 @@ SRP [옵션 및 권장 토폴로지의](working-with-srp.md#characteristics-of-s
 
 작성자는 스토리지 구성 콘솔을 액세스합니다.
 
-* 전역 탐색에서:도구 **[!UICONTROL > 커뮤니티 > 스토리지 구성]**
+* 글로벌 탐색에서 도구 > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 스토리지]** 구성을 **[!UICONTROL 선택합니다]**.
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -79,18 +79,26 @@ SRP [옵션 및 권장 토폴로지의](working-with-srp.md#characteristics-of-s
 
    * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper 호스트&#x200B;**
 
-      외부 ZooKeeper [와 함께 SolrCloud 모드에서](solr.md#solrcloud-mode) 실행할 때 `HOST:PORT` my.server.com:2181 *와 같은 이 값을 ZooKeeper의 경우* host1:2181,host2:2188과 같이 쉼표로 구분된 `HOST:PORT` **값을 입력합니다. 11. ZooKeeper를 사용하여 독립 실행형 모드에서 R을 실행하는 경우 비워 둡니다.
+      외부 ZooKeeper [를 사용하여 SolrCloud 모드에서](solr.md#solrcloud-mode) 실행할 때 `HOST:PORT` my.server.com:2181과 같이 이 값을 ZooKeeper *의 값으로 설정합니다.*
+
+      ZooKeeper Ensemble의 경우 `HOST:PORT` host1:2181,host2:2181과 같이 쉼표로 구분된 *값을 입력합니다.*
+
+      내부 ZooKeeper를 사용하여 독립형 모드로 Solr를 실행하는 경우 비워 둡니다.
       *기본값*: *&lt;공백>*
-   * **[!UICONTROL 솔루션 URL]**독립 실행형 모드에서 Solr와 통신하는 데 사용되는 URL입니다.
+
+      * **[!UICONTROL 솔루션 URL]**독립 실행형 모드에서 Solr와 통신하는 데 사용되는 URL입니다.
 SolrCloud 모드에서 실행되는 경우 비워 둡니다.
-      *기본값*:https://127.0.0.1:8983/solr/
-   * **[!UICONTROL Solr Collection]**Solr 컬렉션 이름입니다.
-      *기본값*:collection1
+         *기본값*:https://127.0.0.1:8983/solr/
+
+      * **[!UICONTROL Solr Collection]**Solr 컬렉션 이름입니다.
+         *기본값*:collection1
+
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다
 
 >[!NOTE]
 >
->기본적으로 이름인 mongoDB 데이터베이스는 `communities`노드 저장소나 데이터(이진) 저장소에 [](../../help/sites-deploying/data-store-config.md)사용되는 데이터베이스의 이름으로 설정하면 안 됩니다. AEM 6 [의 스토리지 요소를 참조하십시오](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>기본적으로 이름인 mongoDB 데이터베이스는 `communities`노드 저장소나 데이터(이진) 저장소에 [](../../help/sites-deploying/data-store-config.md)사용되는 데이터베이스의 이름으로 설정하면 안 됩니다. AEM [6.5의 스토리지 요소를 참조하십시오](../../help/sites-deploying/storage-elements-in-aem-6.md).
+
 
 ### MongoDB 복제본 세트 {#mongodb-replica-set}
 
@@ -104,8 +112,8 @@ SolrCloud 모드에서 실행되는 경우 비워 둡니다.
 
 ```shell
 # Example url for:
-#     servers "mongoserver1", "mongoserver2", "mongoserver3"
-#     replica set 'rs0'
+# servers "mongoserver1", "mongoserver2", "mongoserver3"
+# replica set 'rs0'
 # port numbers only necessary if not default port 27017
 mongodb://mongoserver1:<mongoport1>,mongoserver2:<mongoport2>,mongoserver3:<mongoport3>/?replicaSet=rs0&maxPoolSize=100&waitQueueMultiple=50&readPreference=secondaryPreferred
 ```
@@ -122,7 +130,7 @@ Oak 컬렉션과 MSRP 컬렉션이 모두 집중적으로 사용되는 경우 �
 
 ### 업그레이드 {#upgrading}
 
-MSRP로 구성된 이전 버전에서 업그레이드하는 경우
+MSRP 파섹
 
 1. AEM Communities로 [업그레이드 수행](upgrade.md)
 1. 새 Solr 구성 파일 설치
@@ -134,14 +142,13 @@ MSRP로 구성된 이전 버전에서 업그레이드하는 경우
 
 MSRP는 모든 작성자 및 게시 인스턴스에서 공용 스토어로 식별되어야 합니다.
 
-게시 환경에서 동일한 구성을 사용할 수 있도록 하려면:
+게시 환경에서 동일한 구성을 사용하려면 작성자 인스턴스에 로그인하고 다음 단계를 따르십시오.
 
-* 작성자:
-   * 주 메뉴에서 도구 > **[!UICONTROL 작업 > 복제로 이동합니다.]**
-   * 트리 **[!UICONTROL 활성화 선택]**
-   * **[!UICONTROL 시작 경로]**:
-      * 탐색 `/etc/socialconfig/srpc/`
-   * 활성화 **[!UICONTROL 선택]**
+* 주 메뉴에서 도구 > **[!UICONTROL 작업]** > **[!UICONTROL 복제를]** 선택합니다 ****.
+* 트리 **[!UICONTROL 활성화 선택]**
+* **[!UICONTROL 시작 경로]**:
+   * 탐색 `/etc/socialconfig/srpc/`
+* 활성화 **[!UICONTROL 선택]**
 
 ## 사용자 데이터 관리 {#managing-user-data}
 
@@ -193,6 +200,7 @@ cURL -u *signin* -d *data* *reindex-url*
 >
 >DSRP 솔루션을 [다시 인덱싱하는](dsrp.md)경우 URL은 **/services/social/datastore/rdb/reindex입니다.**
 
+
 ### MSRP 다시 인덱스 예 {#msrp-reindex-example}
 
 ```shell
@@ -214,7 +222,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 * JCR에서, if/etc/socialconfig [](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
    * srpc [노드를 포함하지](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) 않음, 즉 스토리지 공급자가 JSRP임을 의미합니다.
-   * srpc 노드가 존재하고 노드 [기본 구성을](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)포함하는 경우 기본 구성의 속성은 MSRP를 기본 공급자로 정의해야 합니다
+   * srpc 노드가 존재하고 노드 [기본 구성을](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)포함하는 경우 기본 구성의 속성은 MSRP를 기본 공급자로 정의해야 합니다.
 
 ### 업그레이드 후 UGC가 사라짐 {#ugc-disappears-after-upgrade}
 
@@ -240,7 +248,7 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 ... 124 common frames omitted
 ```
 
-표준 MLS 설치에 대한 지침을 따를 때 오류를 [해결하려면](solr.md#installing-standard-mls)
+표준 MLS 설치 지침을 따를 때 오류를 해결하려면 [다음을](solr.md#installing-standard-mls)확인하십시오.
 
 * XML 구성 파일이 올바른 솔루션 위치에 복사되었습니다.
 * 새 구성 파일이 기존 구성 파일을 교체한 후 솔러를 다시 시작했습니다.
@@ -249,9 +257,9 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 
 클래스 정의가 누락되어 MongoDB 서버에 대한 보안 연결을 시도했으나 MongoDB 서버에 대한 연결이 실패하는 경우 공용 MAVEN 저장소에서 사용할 수 `mongo-java-driver`있는 MongoDB 드라이버 번들을 업데이트해야 합니다.
 
-1. https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar에서 [드라이버 다운로드](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (버전 2.13.2 이상)
+1. https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar(버전 2. [13](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) .2 이상)에서 드라이버를 다운로드합니다.
 1. AEM 인스턴스의 &quot;crx-quickstart/install&quot; 폴더에 번들을 복사합니다.
-1. AEM 인스턴스 다시 시작
+1. AEM 인스턴스를 다시 시작합니다.
 
 ## 리소스 {#resources}
 
