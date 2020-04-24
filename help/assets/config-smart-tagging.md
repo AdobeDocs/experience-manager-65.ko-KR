@@ -3,7 +3,7 @@ title: 스마트 콘텐츠 서비스를 사용하여 자산 태그 지정 구성
 description: 스마트 콘텐츠 서비스를 사용하여 AEM에서 스마트 태그 지정 및 고급 스마트 태그 지정 기능을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 Adobe Experience Manager(AEM)를 Adobe I/O를 사용하여 스마트 콘텐츠 서비스와 통합할 수 있습니다.이 구성을 사용하여 AEM 내에서 스마트 콘텐츠 서비스에 액세스합니다.
 
-이 문서에서는 스마트 콘텐츠 서비스를 구성하는 데 필요한 다음 주요 작업에 대해 자세히 설명합니다. 백엔드 AEM 서버는 스마트 콘텐츠 서비스로 요청을 전달하기 전에 Adobe IO 게이트웨이로 서비스 자격 증명을 인증합니다.
+이 문서에서는 스마트 콘텐츠 서비스를 구성하는 데 필요한 다음 주요 작업에 대해 자세히 설명합니다. 백엔드 AEM 서버는 스마트 콘텐츠 서비스로 요청을 전달하기 전에 Adobe I/O 게이트웨이로 서비스 자격 증명을 인증합니다.
 
 * AEM에서 스마트 콘텐츠 서비스 구성을 만들어 공개 키를 생성합니다. OAuth 통합을 위한 공용 인증서를 얻습니다.
 * Adobe I/O에서 통합을 만들고 생성된 공개 키를 업로드합니다.
@@ -44,7 +44,7 @@ Adobe Experience Manager(AEM)를 Adobe I/O를 사용하여 스마트 콘텐츠 �
 
    ![콘텐츠 서비스 URL을 제공하는 AEM 스마트 콘텐츠 서비스 대화 상자](assets/aem_scs.png)
 
-1. OAuth **[!UICONTROL 통합용 공개 인증서 다운로드를]**&#x200B;클릭하고 공개 인증서 파일을 `AEM-SmartTags.crt`다운로드합니다.
+1. OAuth **[!UICONTROL 통합을 위한 공용 인증서 다운로드를]**&#x200B;클릭하고 공개 인증서 파일을 `AEM-SmartTags.crt`다운로드합니다.
 
    ![스마트 태그 지정 서비스에 대해 생성된 설정의 표현](assets/download_link.png)
 
