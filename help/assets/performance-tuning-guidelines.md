@@ -4,7 +4,7 @@ description: 병목 현상을 제거하고 AEM 자산의 성능을 최적화하�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -267,7 +267,7 @@ XMP 원본에 의해 메타데이터가 AEM에서 수정될 때마다 원본 에
 
 1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
-   ```
+   ```conf
    slingResource
    name="sling:resource"
    ordered=false
