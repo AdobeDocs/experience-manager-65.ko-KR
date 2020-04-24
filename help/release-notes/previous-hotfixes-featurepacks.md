@@ -6,7 +6,7 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
@@ -16,21 +16,21 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ## Adobe Experience Manager 6.5.3.0
 
-[!DNL Adobe Experience Manager]6.5.3.0은 **2019년 4월**&#x200B;에 6.5 릴리스의 공식 출시 이후에 발표된 성능, 안정성, 보안 및 주요 고객 수정 사항과 개선 사항을 포함하는 중요한 릴리스입니다. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
+[!DNL Adobe Experience Manager]6.5.3.0은 **2019년 4월**&#x200B;에 6.5 릴리스의 공식 출시 이후에 발표된 성능, 안정성, 보안 및 주요 고객 수정 사항과 개선 사항을 포함하는 중요한 릴리스입니다. [!DNL Adobe Experience Manager] 6.5의 맨 위에 설치할 수 있습니다.
 
 이 서비스 팩 릴리스의 몇 가지 주요 사항은 다음과 같습니다.
 
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.10.6으로 업데이트되었습니다.
 
-* [!DNL Experience Manager Assets] 이제 Deflate64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다.
+* 이제 [!DNL Experience Manager Assets]에서 Deflate64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다.
 
 * 정렬 가능한 작성된 날짜에 대한 새 열이 DAM 목록 보기 및 자산 검색 결과의 목록 보기에 추가되었습니다.
 
 * 이름 열을 기반으로 한 자산 정렬이 목록 보기에서 활성화되었습니다.
 
-* [!DNL Dynamic Media] 이제 Smart Crop 비디오 에셋을 지원합니다. 스마트 자르기는 장면의 초점을 따라 프레임을 이동하면서 비디오를 다시 자르는 머신 러닝 기반의 기능입니다.
+* 이제 [!DNL Dynamic Media]에서 스마트 자르기 비디오 자산을 지원합니다. 스마트 자르기는 장면의 초점을 따라 프레임을 이동하면서 비디오를 다시 자르는 머신 러닝 기반의 기능입니다.
 
-* [!DNL Dynamic Media] 고급 이미징을 지원합니다.
+* [!DNL Dynamic Media]에서 스마트 이미징을 지원합니다.
 
 *  워크플로우에서 [부재 중](../forms/using/configure-out-of-office-settings.md) 환경 설정을 지정하는 기능.[!DNL Experience Manager]
 
@@ -44,7 +44,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 **제품 개선 사항**
 
-* [!DNL Experience Manager Assets] 이제 Deflate64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다(NPR-27573).
+* 이제 [!DNL Experience Manager Assets]에서 Deflate64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다(NPR-27573).
 
 * 정렬 가능한 새로 만든 날짜에 대한 열이 목록 보기의 DAM 목록 보기 및 자산 검색 결과에 추가되었습니다(NPR-31312).
 
@@ -52,11 +52,11 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 * GLB, GLTF, OBJ 및 STL 자산 파일은 DAM의 자산 세부 정보 페이지에서 자산 미리 보기를 지원합니다(CQ-428277).
 
-* ReplicationOnModifyListener event is triggered for chunk nodes during chunk upload in [!DNL Dynamic Media] (CQ-4281279).
+* ReplicationOnModifyListener 이벤트가 [!DNL Dynamic Media]에서 청크 업로드 중 청크 노드에 대해 트리거됩니다(CQ-4281279).
 
-* [!DNL Dynamic Media] 이제 Smart Crop 비디오 에셋을 지원합니다. 스마트 자르기는 장면의 초점을 따라 프레임을 이동하면서 비디오를 다시 자르도록 하는 머신 러닝 기반의 기능입니다(CQ-4278995).
+* 이제 [!DNL Dynamic Media]에서 스마트 자르기 비디오 자산을 지원합니다. 스마트 자르기는 장면의 초점을 따라 프레임을 이동하면서 비디오를 다시 자르도록 하는 머신 러닝 기반의 기능입니다(CQ-4278995).
 
-* [!DNL Dynamic Media] 스마트 이미징 지원(CQ-422249).
+* [!DNL Dynamic Media]에서 스마트 이미징을 지원합니다(CQ-422249).
 
 * 요청에서 쿼리 매개 변수가 전달되면 Foundation 선택기에서 검색/찾아보기 보기가 기본 보기로 설정되었습니다(NPR-31601).
 
@@ -92,27 +92,27 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 * 자산의 벌크 이동이 실패하고 경고 메시지가 표시됩니다(NPR-30610).
 
-* Asset names are changed to lower case when moving assets from one folder to another in [!DNL Experience Manager] running in [!DNL Dynamic Media]–Scene7 mode (NPR-31630).
+* [!DNL Dynamic Media]–Scene7 모드에서 실행 중인 [!DNL Experience Manager]에서 자산을 폴더 간에 이동할 때 자산 이름이 소문자로 변경됩니다(NPR-31630).
 
 * 원격 이미지 집합을 편집하는 동안 Scene 7 회사 이름과 같은 폴더에 있는 이미지에 대한 오류가 발견되었습니다(NPR-31340).
 
-* [!DNL Dynamic Media] 참조가 들어 있는 자산이 게시되지 않습니다(NPR-31180).
+* [!DNL Dynamic Media]참조가 포함된 자산이 게시되지 않습니다(NPR-31180).
 
-* Uploads from [!DNL Dynamic Media]7–Scene7 mode to [!DNL Dynamic Media Classic] are taking too long to complete (NPR-31048).
+* [!DNL Dynamic Media]7–Scene7 모드에서 [!DNL Dynamic Media Classic]으로 업로드를 완료하는 데 시간이 너무 오래 걸립니다(NPR-31048).
 
 * 이미지 자산에 추가된 핫스팟은 자산 세부 사항 페이지의 인터랙티브 이미지 뷰어를 통해 표시되지 않습니다(NPR-30979).
 
-* Huge sling jobs are created and Processing banner re-appears when actions done on assets in [!DNL Experience manager Assets] are passed to Scene 7 (NPR-30947).
+* [!DNL Experience manager Assets]의 자산에 대해 수행된 작업이 Scene 7로 전달되면 대규모 슬링 작업이 생성되고 처리 중 배너가 다시 나타납니다(NPR-30947).
 
 * 자산의 언어 사본을 만들 때 충돌이 발생하여 Scene 7로 업로드할 수 없습니다(NPR-30932).
 
-* Dynamic renditions downloaded from [!DNL Experience Manager] running in [!DNL Dynamic Media]–Hybrid mode are broken (they are of text type with content &#39;unable to find image&#39; instead of image content type) (NPR-30876).
+* [!DNL Dynamic Media]–Hybrid 모드에서 실행되는 [!DNL Experience Manager]에서 다운로드한 동적 변환이 손상되었습니다(이미지 컨텐츠 유형 대신 &#39;이미지를 찾을 수 없음&#39; 컨텐츠가 있는 텍스트 유형)(NPR-30876).
 
-* [!DNL Dynamic Media] 비디오 인코딩 워크플로우가 Adobe Experience Manager에서 Scene7 모드로 마이그레이션된 비디오의 축소판을 생성하지 못합니다(CQ-4282011). [!DNL Dynamic Media Classic] [!DNL Dynamic Media]
+* [!DNL Dynamic Media] 인코딩 비디오 워크플로우가 [!DNL Dynamic Media Classic]에서 Adobe Experience Manager의 [!DNL Dynamic Media]-Scene7 모드로 마이그레이션된 비디오의 축소판을 생성하지 못합니다(CQ-4282011).
 
-* IpsApiException은 다른 Scene 7 회사 ID를 사용하여 하나의 인스턴스에서 다른 인스턴스로 자산을 마이그레이션하는 동안 관찰되었습니다(CQ-4280548).
+* IpsApiException은 다른 Scene7 회사 ID를 사용하여 하나의 인스턴스에서 다른 인스턴스로 자산을 마이그레이션하는 동안 관찰되었습니다(CQ-4280548).
 
-* 3D Asset thumbnail is not informative, when a supported 3D model is ingested into [!DNL Experience Manager] (CQ-4283701).
+* 지원되는 3D 모델을 [!DNL Experience Manager]으로 수집할 때 3D 자산 축소판이 도움이 되지 않습니다(CQ-4283701).
 
 * 3D 자산에 카메라 보기가 거의 없는 경우 스크롤 버튼이 뷰어에 표시됩니다(CQ-4283322).
 
@@ -120,7 +120,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 * Internet Explorer 11 및 Safari에서 SmartCropVideoViewer로 비디오를 재생할 수 없습니다(CQ-4281422).
 
-* Use of move button to move multiple assets, from one folder to another, fails in [!DNL Experience Manager] running on [!DNL Dynamic Media]–Scene7 runmode (CQ-4280384).
+* [!DNL Dynamic Media]–Scene7 실행 모드에서 실행되는 [!DNL Experience Manager]에서 폴더 간에 여러 자산을 이동할 때 이동 단추를 사용할 수 없습니다(CQ-4280384).
 
 * MIME 유형이 MP4 이외인 경우 자산 세부 사항에 왜곡된 비디오가 표시됩니다(CQ-4279704).
 
@@ -150,7 +150,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 * 모두 선택한 다음 터치 UI에서 일부 항목(폴더/개별 자산)을 선택 해제할 때 작업 표시줄 및 자산 수가 업데이트되지 않습니다(NPR-31118).
 
-* An exception displays in [!DNL Experience Manager] while polling for job details of an Asset (CQ-4283569).
+* 자산에 대한 작업 세부 사항을 폴링하는 동안 [!DNL Experience Manager]에 예외가 표시됩니다(CQ-4283569).
 
 ### 사이트 {#sites}
 
@@ -169,7 +169,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 * 검색 결과 페이지의 카드 보기에서 목록 보기로 전환하는 경우 페이지를 스크롤하려면 지연이 있습니다(NPR-31286).
 
-* The Select All checkbox is hidden in the List view on [!DNL Sites] UI (NPR-31614).
+* [!DNL Sites] UI의 목록 보기에서 모두 선택 확인란이 숨겨집니다(NPR-31614).
 
 * 검색 결과 페이지에서 모두 선택 카운트가 잘못되었습니다(NPR-31120).
 
@@ -189,13 +189,13 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 * 이제 QueryBuilder는 xpath 쿼리에서 ``fn:name()`` orderby를 지원합니다(NPR-31322).
 
-* Duplicate activation tree is created on upgrading from [!DNL Experience Manager] 6.3 (NPR-31513).
+* [!DNL Experience Manager] 6.3에서 업그레이드 시 중복 활성화 트리가 만들어집니다(NPR-31513).
 
 * 전달된 요청은 슬링 인증 동안 설정된 응답 헤더를 보존하지 않습니다(NPR-30013).
 
 * 선택기 구성 요소 내에서 검색이 작동하지 않습니다(NPR-31692).
 
-* An error is displayed when attaching a ZIP file to an [!DNL Experience Manager Communities] post due to different versions of Apache POI and Apache Tika bundle (NPR-31018).
+* 서로 다른 버전의 Apache POI 및 Apache Tika 번들로 인해 ZIP 파일을 [!DNL Experience Manager Communities] 게시물에 첨부할 때 오류가 표시됩니다(NPR-31018).
 
 * 이 ``org.apache.sling.distribution.api`` 번들은 구성 관리자에 숨겨져 있으므로 사용자 지정 번들에는 사용할 수 없습니다(NPR-31720).
 
@@ -207,15 +207,15 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 **제품 개선 사항**
 
-* Asset Sourcing import workflow in [!DNL Experience Manager Assets] is modified to fetch only the newly created assets from [!DNL Brand Portal] to [!DNL Experience Manager], and skip the assets that already exist in the NEW folder to avoid replication (CQ-4278527).
+* [!DNL Experience Manager Assets]의 자산 소싱 가져오기 워크플로우가 [!DNL Brand Portal]에서 새로 만든 자산만 [!DNL Experience Manager]으로 가져오도록 수정되었으며, 복제를 방지하기 위해 NEW 폴더에 이미 있는 자산을 건너뜁니다(CQ-4278527).
 
 **수정 사항**
 
 * 자산 소싱 기능에서 새 기여도 폴더를 만들 때 잘못된 아이콘이 표시됩니다(CQ-4282825).
 * 새 기여도 폴더를 만들 때 기여도 폴더에 하위 폴더 하나 또는 둘 다(NEW 및 SHARED) 나타나지 않습니다(CQ-4282424).
-* System throws an exception if the user tries to republish Contribution folder from [!DNL Experience Manager] to [!DNL Brand Portal] after receiving new assets in the Contribution folder from [!DNL Brand Portal] end (CQ-4279740).
+* 사용자가 [!DNL Experience Manager] 끝의 기여도 폴더에서 새 자산을 받은 후 [!DNL Brand Portal]에서 [!DNL Brand Portal]로 기여도 폴더를 다시 게시하려고 하면 시스템에서 예외가 발생합니다(CQ-4279740).
 * 기여도 폴더(중첩된 폴더) 내에 기여도 폴더를 만들 수 없으므로 복잡성을 방지할 수 있습니다(CQ-4278391).
-* System throws an exception on uploading the [!DNL Brand Portal] user list (.csv file) imported from [!DNL Experience Manager] Admin Console. 다음 .csv 파일의 이메일, 이름 및 성 필드만 필수 필드입니다(CQ-4278390).
+* [!DNL Experience Manager] Admin Console.솔에서 가져온 [!DNL Brand Portal] 사용자 목록(.csv 파일)을 업로드할 때 시스템에 예외가 발생합니다. 다음 .csv 파일의 이메일, 이름 및 성 필드만 필수 필드입니다(CQ-4278390).
 
 ### 커뮤니티 {#communities}
 
@@ -224,11 +224,11 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 * 그룹 관리(그룹 열기/편집/게시/삭제)에 대한 빠른 링크는 커뮤니티 관리자(그룹 관리자/사이트 관리자)에 표시되지 않습니다(NPR-31627).
 * 페이지를 수동으로 새로 고치거나 다시 로드하지 않는 한 제출된 블로그가 표시되지 않습니다(NPR-31599).
 * 언급 기능에 사용되는 JCR 쿼리는 대/소문자를 구분하며 결과를 반환하는데 너무 오래 걸립니다(NPR-31475).
-* [!DNL Experience Manager] 6.5 UberJar 파일에서 예외가 발생하고,  6.5 UberJar 파일에서 `cq-social-translation` 번들이 누락되었습니다(NPR-31186).[!DNL Experience Manager]
+* [!DNL Experience Manager] 6.5 UberJar 파일에서 예외가 발생하고, 6.5 UberJar 파일에서 `cq-social-translation` 번들이 누락되었습니다(NPR-31186).[!DNL Experience Manager]
 * Jackson Databind 라이브러리가 새로운 취약점을 해결하기 위해 버전 2.9.9.3으로 업데이트되었습니다(NPR-30967).
 * 활동 및 알림 제목이 일치하지 않습니다(NPR-30941).
-* Pagination is not working properly in [!DNL Communities] Blogs (NPR-30914).
-* Analytics reports are not populated in [!DNL Experience Manager] author environment, blank page appears (NPR-30913).
+* 페이지 매김이 [!DNL Communities] 블로그에서 제대로 작동하지 않습니다(NPR-30914).
+* Analytics 보고서가 [!DNL Experience Manager] 작성자 환경에서 채워지지 않으며 빈 페이지가 표시됩니다(NPR-30913).
 
 ### Oak {#oak}
 
@@ -238,7 +238,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 >[!NOTE]
 >
->[!DNL Experience Manager] 서비스 팩에는 수정 사항이 포함되어 있지 않습니다 [!DNL Experience Manager Forms]. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](#install-aem-forms-add-on-package) and [Install Experience Manager Forms on JEE](#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] 서비스 팩에는 [!DNL Experience Manager Forms] 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 [!DNL Experience Manager Forms]에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [Experience Manager Forms 추가 기능 설치](#install-aem-forms-add-on-package) 및 [JEE에 Experience Manager Forms 설치](#install-aem-forms-jee-installer)를 참조하십시오.
 
 #### Forms 추가 기능 패키지 {#forms-add-on-package-6530}
 
@@ -254,7 +254,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 **서신 관리**
 
-* Captions and tooltips do not display while migrating letters from LiveCycle ES4SP1 to [!DNL Experience Manager] 6.5 (NPR-31615).
+* LiveCycle ES4SP1에서 [!DNL Experience Manager] 6.5로 문자를 마이그레이션하는 동안에는 캡션 및 도구 설명이 표시되지 않습니다(NPR-31615).
 
 * **문자를 초안으로 저장하는 동안 텍스트 흐름 형식이 더 이상 지원되지** 않습니다(NPR-30463).
 
@@ -280,7 +280,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 >[!NOTE]
 >
->For [!DNL Experience Manager Forms] customers, it is essential to install [!DNL Experience Manager Forms] add-on package after installing any [!DNL Experience Manager] Service Pack, Cumulative Fix Pack, or Feature Pack.
+>[!DNL Experience Manager Forms] 고객의 경우 [!DNL Experience Manager] 서비스 팩, 누적 수정 팩 또는 기능 팩을 설치한 후 [!DNL Experience Manager Forms] 추가 기능 패키지를 설치해야 합니다.
 
 #### 양식 - 기초 JEE {#forms-foundation-jee-feature}
 
@@ -288,19 +288,19 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ## Adobe Experience Manager 6.5.2.0
 
-[!DNL Adobe Experience Manager][!DNL Adobe Experience Manager] 6.5.2.0은 2019년 4월에&#x200B;**6.5의 공식 출시 이후에 발표된 성능, 안정성, 보안 및 주요 고객 수정 사항과 개선 사항을 포함하는 중요한 릴리스입니다**. It can be installed on top of [!DNL Experience Manager] 6.5.
+[!DNL Adobe Experience Manager][!DNL Adobe Experience Manager] 6.5.2.0은 2019년 4월에&#x200B;**6.5의 공식 출시 이후에 발표된 성능, 안정성, 보안 및 주요 고객 수정 사항과 개선 사항을 포함하는 중요한 릴리스입니다**. [!DNL Experience Manager] 6.5의 맨 위에 설치할 수 있습니다.
 
 이 서비스 팩 릴리스의 몇 가지 주요 사항은 다음과 같습니다.
 
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.10.3으로 업데이트되었습니다.
-* Added a configuration property to allow exporting Experience Fragments directly to user-defined workspaces for [!DNL Adobe Target].
-* Assets 사용자는 시각적으로 유사한 이미지를 검색할 수 있습니다. [!DNL Experience Manager] 사용자가 선택한 이미지와 유사한 DAM 저장소의 스마트 태그 이미지를 표시합니다. [시각적 검색](../assets/search-assets.md#visualsearch)을 참조하십시오.
+* 경험 구성요소를 [!DNL Adobe Target]의 사용자 지정 작업 공간으로 직접 내보낼 수 있는 구성 속성이 추가되었습니다.
+* Assets 사용자는 시각적으로 유사한 이미지를 검색할 수 있습니다. [!DNL Experience Manager]는 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다. [시각적 검색](../assets/search-assets.md#visualsearch)을 참조하십시오.
 
 * 원격 DAM 배포에서 문서를 가져오도록 지원을 추가하는 연결된 자산 기능이 향상되었습니다. 이제 사이트 작성자가 콘텐츠 파인더에서 지원되는 문서 유형을 검색하고 필터링할 수 있습니다. 원격 문서를 웹 페이지의 다운로드 구성 요소에 추가할 수 있습니다. [연결된 자산 사용](../assets/use-assets-across-connected-assets-instances.md)을 참조하십시오.
 
 * 여러 값을 갖는 옵션을 지원하기 위해 추가 MIME 유형을 사용하는 EnhanceDocument 유형 필터입니다.
 * 다중 리소스 지원을 위해 외부 재처리 워크플로우가 도입되었습니다.
-* 복제에 기본 자산 필터를 사용하여 성능을 [!DNL Dynamic Media] 최적화합니다.
+* 복제에 기본 자산 필터를 사용하여 [!DNL Dynamic Media] 성능이 최적화되었습니다.
 * DMS7에 대한 자르기/회전 자산 편집 옵션이 복원되었습니다.
 * VideoPlayer에 로드 시 비디오를 음소거하는 옵션이 구현되었습니다.
 * 자산 UI 열 보기에 임차인 관련 콘텐츠만 표시되도록 수정합니다.
@@ -312,12 +312,12 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 * 원격 DAM 배포에서 문서를 가져오도록 지원을 추가하는 연결된 자산 기능이 향상되었습니다. 이제 사이트 작성자가 콘텐츠 파인더에서 지원되는 문서 유형을 검색하고 필터링할 수 있습니다. 원격 문서를 웹 페이지의 다운로드 구성 요소에 추가할 수 있습니다. CQ-4270245용 핫픽스. [연결된 자산 사용](/help/assets/use-assets-across-connected-assets-instances.md)을 참조하십시오.
 
-* [!DNL Experience Manager Assets] 사용자는 시각적으로 유사한 이미지를 검색할 수 있습니다. [!DNL Experience Manager] 사용자가 선택한 이미지와 유사한 DAM 저장소의 스마트 태그 이미지를 표시합니다. [시각적 검색](../assets/search-assets.md#visualsearch)을 참조하십시오.
+* [!DNL Experience Manager Assets] 사용자는 시각적으로 유사한 이미지를 검색할 수 있습니다. [!DNL Experience Manager]는 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다. [시각적 검색](../assets/search-assets.md#visualsearch)을 참조하십시오.
 
 **수정 사항**
 
 * ACP API에서 생성된 URL 및 폴더 메타데이터의 자산 경로는 URL로 인코딩되지 않습니다. GRANITE-26198: CQ-4271814용 핫픽스
-* Unzipping an archive with a folder having a percent sign (%) in its name can not be opened using [!DNL Experience Manager Assets] interface. NPR-29989: CQ-4270467용 핫픽스
+* 이름에 백분율 기호(%)가 있는 폴더로 아카이브 압축을 푼 경우 [!DNL Experience Manager Assets] 인터페이스를 사용하여 열 수 없습니다. NPR-29989: CQ-4270467용 핫픽스
 * Touch UI: 게시 마법사를 관리하는 동안 post 요청 본문의 페이지 뒤에 참조가 추가되어 모든 자산이 페이지 뒤에 게시되며, 페이지가 렌더링될 때 게시 인스턴스의 일부 자산이 누락됩니다. NPR-29985: CQ-4270724용 핫픽스
 * 자산 관계 해제 기능은 이름에 특수 문자(URI로 인코딩되는 문자)가 있는 관련 자산에 대해 작동하지 않습니다. NPR-30387: CQ-4274446용 핫픽스
 * 콘텐츠 조각을 편집할 때 버전이 잘못된 사용자로 생성됩니다.
@@ -326,7 +326,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 * 제한된 파일 경고 창을 통해 삽입된 이미지로 가능한 XSS(교차 사이트 스크립팅) 공격을 볼 수 있습니다. NPR-30617: CQ-4270133용 핫픽스
 * MultiTenant: 폴더 속성을 저장하는 임차인은 성공 메시지와 작업이 실패했음을 설명하는 오류 메시지, &quot;속성을 편집할 수 없습니다. 권한이 부족합니다.&quot;를 모두 관찰하면 혼동됩니다. NPR-30545: CQ-4275333용 핫픽스
 * 자산 선택기 대화 상자에서는 자산을 선택할 수 없으므로 관련 소스 교체 기능을 사용하여 소스를 업데이트할 수 없습니다. NPR-30502: CQ-4275029용 핫픽스
-* [!UICONTROL DAM 자산] 업데이트 워크플로우 - 큰 mp4 파일 업로드 시 부실 상태입니다. NPR-30480: CQ-4271352용 핫픽스
+* [!UICONTROL DAM 자산 업데이트] 워크플로우 - 크기가 큰 mp4 파일을 업로드할 때 사용되지 않는 상태입니다. NPR-30480: CQ-4271352용 핫픽스
 * null 페이로드로 인해 모든 후속 리뷰 관련 작업이 실패하므로 리뷰 작업 만들기 기능이 작동하지 않습니다. NPR-30468: CQ-4274263용 핫픽스
 * Datapower를 통한 Adobe 스마트 태그 연결 문제. NPR-30026: CQ-4269457용 핫픽스
 * Assets UI 열 보기에서 레일 왼쪽에 있는 필터를 여는 동안 오류가 발생했습니다. NPR-30501: CQ-4273862용 핫픽스
@@ -335,11 +335,11 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 * 이름에 공백 및 &quot;&amp;&quot; 문자가 있는 폴더의 자산 공유 링크에는 일부 자산에 대해 빈 회색 카드가 표시됩니다. NPR-30557: CQ-4270187용 핫픽스
 * 폴더 메타데이터 스키마 양식은 자동으로 데이터 유형을 감지하지 않으므로 양식 전송 시 관련된 TypeHint를 생성하지 않습니다. NPR-30599: CQ-4275227용 핫픽스
 * 자산 자르기 및 회전 편집 옵션이 DMS7 작성 UI에서 비활성화됩니다. NPR-30118: CQ-4273221용 핫픽스
-* Share Link feature is not working on [!DNL Experience Manager] instance with DMS7 configuration. NPR-30080, NPR-30492: CQ-4273651용 핫픽스
-* Adding the [!DNL Dynamic Media]–Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641: CQ-4275962용 핫픽스
-* Added an IPSJobJournal in [!DNL Experience Manager] to create only one Intrusion Prevention Systems (IPS) job per processing profile. NPR-30490: CQ-4273614용 핫픽스
+* DMS7 구성이 있는 [!DNL Experience Manager] 인스턴스에서 링크 공유 기능이 작동하지 않습니다. NPR-30080, NPR-30492: CQ-4273651용 핫픽스
+* 페이지에 [!DNL Dynamic Media]–Scene7 구성 요소를 추가한 다음 페이지를 게시하면 dmscene7 구성이 매번 트리거되지 않습니다. NPR-30641: CQ-4275962용 핫픽스
+* 처리 프로필당 하나의 IPS(침입 방지 시스템) 작업만 작성하도록 [!DNL Experience Manager]에 IPSJobJournal이 추가되었습니다. NPR-30490: CQ-4273614용 핫픽스
 * [!DNL Dynamic Media]: 자산이 복제되지 않도록 하는 기본 필터가 게시 노드에 추가되었습니다. [!DNL Experience Manager] NPR-30538: CQ-4274678용 핫픽스
-* 폴더를 페이로드로 허용하도록 여러 리소스 지원을 위한 외부 재처리 워크플로우가 도입되었습니다. 이 워크플로우는 2단계로 진행됩니다. 메타데이터 맵을 통해 다음 단계로 자산을 재처리하고, 자산 핸들이 없는 모든 자산을 단일 IPS 작업으로 S7에 다시 업로드합니다. For more details, see Configuring [!DNL Dynamic Media] Cloud Services. NPR-30489: CQ-4272903용 핫픽스
+* 폴더를 페이로드로 허용하도록 여러 리소스 지원을 위한 외부 재처리 워크플로우가 도입되었습니다. 이 워크플로우는 2단계로 진행됩니다. 메타데이터 맵을 통해 다음 단계로 자산을 재처리하고, 자산 핸들이 없는 모든 자산을 단일 IPS 작업으로 S7에 다시 업로드합니다. 자세한 내용은 [!DNL Dynamic Media] Cloud Service 구성을 참조하십시오. NPR-30489: CQ-4272903용 핫픽스
 * 올바른 CSV 다음에 잘못된 CSV를 업로드하면 올바른 CSV가 지워집니다. CQ-4277694, CQ-4277814용 핫픽스
 * 제거할 기여도 폴더와 관련된 잘못된 아이콘입니다. CQ-4277580용 핫픽스
 * 자산 기여 탭의 사용자 선택기에서 사용자 선택 시 사용자의 이름이 표에 표시되지 않고 속성 페이지의 사용자 삭제 대화 상자에 잘못된 텍스트가 표시됩니다. CQ-4277875용 핫픽스
@@ -348,11 +348,11 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 * 관리자가 아닌 사용자가 자산 기여 폴더의 새 폴더에 자산을 게시할 수 있습니다. CQ-4278200용 핫픽스
 * DAM 사용자(관리자가 아닌 사용자)는 자산 기여 폴더에 기여자를 추가할 수 없습니다. CQ-4278192용 핫픽스
 * &quot;만들기&quot; 버튼은 자산 기여 폴더에 표시됩니다. CQ-4277560용 핫픽스
-* Sorting search query by relevance returns [!DNL InDesign] documents along with [!DNL InDesign] templates. CQ-4273864용 핫픽스
+* 관련성을 기준으로 검색 쿼리를 정렬하면 [!DNL InDesign] 템플릿과 함께 [!DNL InDesign] 문서가 반환됩니다. CQ-4273864용 핫픽스
 * 대문자 이메일 ID가 있는 사용자는 이전에 체크아웃된 자산에 대해 체크인할 수 없습니다. CQ-4276575용 핫픽스
 * 삭제 작업은 선택한 사전 설정에만 적용되며, 작업 후 화면의 목록이 자동으로 새로 고쳐지면 이미 새로 고친 다른 사전 설정이 표시됩니다. CQ-4261461용 핫픽스
-* Configuring [!DNL Dynamic Media] Cloud Services in [!DNL Dynamic Media]–Hybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. CQ-4249780용 핫픽스
-* Rename operation in [!DNL Experience Manager] asset to duplicated name fails to synchronize to Scene7. CQ-4276763용 핫픽스
+* [!DNL Dynamic Media]–Hybrid 모드에서 [!DNL Dynamic Media] Cloud Services를 구성하면 [!DNL Analytics]에 빈 보고서 세트가 여러 개 생성되고, [!DNL Experience Manager]에 저장된 보고서 세트 ID가 없기 때문에 보고서 세트가 중복됩니다. CQ-4249780용 핫픽스
+* [!DNL Experience Manager] Assets에서 중복된 이름으로 이름을 바꾸면 Scene7과 동기화되지 않았습니다. CQ-4276763용 핫픽스
 * 사용자 생성 콘텐츠가 검색 필터 패널에 잘못 표시됩니다. CQ-4273875용 핫픽스
 * TIFF 이미지에서 유사 항목 찾기 옵션을 사용할 수 없습니다. CQ-4278238용 핫픽스
 * VideoPlayer에 로드 시 비디오를 음소거하는 옵션이 구현되었습니다. CQ-4266465용 핫픽스
@@ -389,8 +389,8 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 ### UI - 기초 {#ui-foundation}
 
 * 사용자가 특정 사용자 인터페이스 내에서 &#39;m&#39;, &#39;p&#39;, &#39;e&#39;를 사용하지 못하도록 하는 단축키 트리거입니다. NPR-30355: GRANITE-26346용 핫픽스
-* Closing [!DNL Experience Manager Assets] Search UI does not reset the left rail to Content selection preventing the user from opening the filter rail the second time subsequently. NPR-30509: CQ-4274716용 핫픽스
-* Multi-tenant environment: [!DNL Experience Manager Assets] UI top navigation is not available and throwing JavaScript error. NPR-30104: GRANITE-26344용 핫픽스
+* [!DNL Experience Manager Assets] 검색 UI를 닫으면 왼쪽 레일이 컨텐츠 선택 사항으로 재설정되지 않아 사용자가 이후에 필터 레일을 다시 열 수 없습니다. NPR-30509: CQ-4274716용 핫픽스
+* 다중 임차인 환경: [!DNL Experience Manager Assets] UI 최상위 탐색을 사용할 수 없으며 JavaScript 오류가 발생합니다. NPR-30104: GRANITE-26344용 핫픽스
 
 ### 번역 {#translation-6520}
 
@@ -422,9 +422,9 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 >[!NOTE]
 >
->[!DNL Experience Manager] 서비스 팩에는 수정 사항이 포함되어 있지 않습니다 [!DNL Experience Manager Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](#install-aem-forms-add-on-package) and [Install Experience Manager Forms JEE installer](#forms-jee-installer).
+>[!DNL Experience Manager] 서비스 팩에는 [!DNL Experience Manager Forms] 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 [!DNL Forms] 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 [!DNL Experience Manager Forms]에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [Experience Manager Forms 추가 기능 설치](#install-aem-forms-add-on-package) 및 [Experience Manager Forms JEE 설치 프로그램 설치](#forms-jee-installer)를 참조하십시오.
 
-The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
+[!DNL Experience Manager] 6.5.2.0 Forms의 주요 기능은 다음과 같습니다.
 
 * `RenderAtClient` Forms OSGi용 API의 `PDFFormRenderOptions`에 &#39;자동&#39; 설정이 추가되었습니다. [!DNL Experience Manager]
 
@@ -471,17 +471,17 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 **양식 - 기초 JEE**
 
 * HTMLtoPDF 서비스가 JMX 콘솔에 maxReuseCount를 표시하지 않습니다. NPR-30134, NPR-30304: CQ-4273763용 핫픽스
-* Adding or editing a Web Service connection by invoking web services from [!DNL Experience Manager Forms] Workbench throws an error: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: CQ-4273217용 핫픽스
+* [!DNL Experience Manager Forms] Workbench에서 웹 서비스를 호출하여 웹 서비스 연결을 추가하거나 편집하면 ClassNotFoundException org.apache.axis.message.SOAPBodyElement 오류가 발생합니다. NPR-30105: CQ-4273217용 핫픽스
 
 ### 기능 팩이 포함됨 {#feature-packs-included}
 
 >[!NOTE]
 >
->For [!DNL Experience Manager Forms] customers, it is essential to install [!DNL Experience Manager Forms] add-on package after installing any [!DNL Experience Manager] Service Pack, Cumulative Fix Pack, or Feature Pack.
+>[!DNL Experience Manager Forms] 고객의 경우 [!DNL Experience Manager] 서비스 팩, 누적 수정 팩 또는 기능 팩을 설치한 후 [!DNL Experience Manager Forms] 추가 기능 패키지를 설치해야 합니다.
 
 #### 사이트 {#sites-feature-packs-included}
 
-* Added a configuration property to allow exporting Experience Fragments directly to user-defined workspaces for [!DNL Adobe Target]. NPR-29189: CQ-4249782용 핫픽스
+* 경험 구성요소를 [!DNL Adobe Target]의 사용자 지정 작업 공간으로 직접 내보낼 수 있는 구성 속성이 추가되었습니다. NPR-29189: CQ-4249782용 핫픽스
 
 #### 양식 - 문서 서비스 {#forms-document-services-1}
 
@@ -494,35 +494,35 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 이 서비스 팩 릴리스의 몇 가지 주요 사항은 다음과 같습니다.
 
 * 사용자 지정 속성으로 이벤트를 추적할 때 dynamic-UI-state 포함을 활성화했습니다.
-* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]–Scene7 mode.
+* [!DNL Dynamic Media]–Scene7 모드에 360도 비디오 자산의 배송에 대한 지원이 포함되었습니다.
 * 리치 텍스트 편집기의 스타일 플러그인을 통해 *일본어 자동 줄 바꿈* 기능이 활성화되었습니다. 자세한 내용은 [일본어 자동 줄바꿈 구성](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)을 참조하십시오.
 
 ### 자산
 
 * S3 다중 부분 지원에 대한 DAM DMGateway 인터페이스가 업데이트되었습니다. NPR-29740: CQ-4226303용 핫픽스
-* 변환 미리 보기는 `Only empty tenantId is currently supported` [!DNL Experience Manager] 6.5로 업그레이드한 후 오류를 생성합니다.NPR-29986:CQ-4272353에 대한 핫픽스
+* [!DNL Experience Manager] 6.5로 업그레이드한 후 변환 미리 보기를 수행하면 `Only empty tenantId is currently supported` 오류가 발생합니다. NPR-29986: CQ-4272353에 대한 핫픽스
 * 작업을 삭제할 수 있는 삭제 대화 상자가 표시되지 않습니다. NPR-29720: CQ-4271074용 핫픽스
-* After adding asset title in the properties page, when a user attempts to close the page, [!DNL Experience Manager] opens the properties page again. NPR-29627: CQ-4264929용 핫픽스
+* 속성 페이지에서 자산 제목을 추가한 후 사용자가 페이지를 닫으려고 하면 [!DNL Experience Manager]에 속성 페이지가 다시 열립니다. NPR-29627: CQ-4264929용 핫픽스
 * VersioningTimelineEventProvider는 nt: 버전 유형의 노드와 함께 루트 버전을 제공해야 합니다. GRANITE-26063용 핫픽스
-* Implemented the ability to upload and play 360 spherical videos in [!DNL Experience Manager] DM-Scene7 mode. CQ-4265131용 핫픽스
+* [!DNL Experience Manager] DM-Scene7 모드에서 360 구형 비디오를 업로드하고 재생하는 기능이 구현되었습니다. CQ-4265131용 핫픽스
 * 소스가 편집되면 Live copy가 올바르지 않은 상태를 검색합니다. CQ-4265451용 핫픽스
-* Enabled Multi-Site Manager support for [!DNL Experience Manager Assets]. CQ-4271453, CQ-4268621, CQ-4257491용 핫픽스
-* [!DNL Experience Manager] 인터페이스는 타임라인 내역에 자산의 현재 버전에 대한 추가 항목을 표시해야 하며, 이 항목은 최신 체크 인 주석을 표시합니다 [!DNL Adobe Asset Link]. CQ-4262864용 핫픽스
+* [!DNL Experience Manager Assets]에 대한 다중 사이트 관리자 지원이 활성화되었습니다. CQ-4271453, CQ-4268621, CQ-4257491용 핫픽스
+* [!DNL Experience Manager] 인터페이스는 타임라인 내역에서 자산의 현재 버전에 대한 추가 항목을 표시하여 [!DNL Adobe Asset Link]의 최신 체크인 설명을 표시해야 합니다. CQ-4262864용 핫픽스
 * 속성이 누락된 경우 콘텐츠 조각 타임라인에 오류 메시지가 표시됩니다. CQ-4272560용 핫픽스
 * 전체 화면으로 확장하는 경우 Scene 7 비디오 플레이어에 문제가 발생합니다. CQ-4266700용 핫픽스
 * ZoomVerticalViewer: 단일 이미지 자산을 사용하는 경우 이동 버튼이 표시되지 않습니다. CQ-4264795용 핫픽스
 * Live Copy에서 하위 노드를 삭제하려면 liveRelationship을 분리해야 합니다. CQ-4270395용 핫픽스
 * 메타데이터 스키마에는 글로벌 구성의 항목만 포함되어 있고 활성 임차인의 항목이 없습니다. formPath URL 값은 변경된 경우에도 기본값으로 되돌아 갑니다. NPR-29945: CQ-4262898용 핫픽스
-* Publish image presets to [!DNL Brand Portal] fails with 500 error code. NPR-29510: CQ-4268659용 핫픽스
+* [!DNL Brand Portal]에 이미지 사전 설정 게시가 실패하고 500 오류 코드가 표시됩니다. NPR-29510: CQ-4268659용 핫픽스
 
 ### 사이트
 
 * 빈 속성 및 여러 속성이 롤아웃 중에 블루프린트에서 전파되지 않습니다. Live Copy를 블루프린트로 재설정해도 구성 요소에 대해 작동하지 않습니다. NPR-29253: CQ-4264928, CQ-4264926, CQ-4267722용 핫픽스
 * CoralUI가 `Multifield`에서 사용되는 경우 multifield 수준이 아닌 구성 요소 수준에서 `fileReferenceParameter`를 저장합니다. NPR-29537: CQ-4266129용 핫픽스
-* Enhancement of [!DNL Experience Manager] text component and Text Editor to Japanese. NPR-29785: CQ-4265090용 핫픽스
+* 일본어 [!DNL Experience Manager] 텍스트 구성 요소 및 텍스트 편집기의 개선 사항입니다. NPR-29785: CQ-4265090용 핫픽스
 * 타임워프를 사용하여 복원된 페이지는 버전 지정 시 올바른 그림을 참조해야 합니다. NPR-29431: CQ-4262638용 핫픽스
 * 스타일 시스템 노드를 상위에서 하위로 상속하는 데 문제가 있습니다. NPR-29516: CQ-4270330용 핫픽스
-* An error message while setting up the social posting to [!DNL Facebook] authentication. NPR-29211: CQ-4266630용 핫픽스
+* [!DNL Facebook] 인증에 소셜 게시를 설정하는 동안 오류 메시지가 표시됩니다. NPR-29211: CQ-4266630용 핫픽스
 * 콘텐츠 조각의 렌더링된 썸네일에 날짜 및 시간 필드에 대한 내부 달력 표현이 표시됩니다. NPR-29531: CQ-4269362용 핫픽스
 * Coral2 구현에서 권한 탭을 열면 버튼이 표시되지 않습니다. CQ-4269419용 핫픽스
 
@@ -536,7 +536,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 ### 경험 구성요소
 
-* 경험 [!DNL Experience Manager] 조각을 내보낼 [!DNL Adobe Target]수 있습니다. CQ-4265469용 핫픽스
+* [!DNL Experience Manager] 경험 구성 요소를 [!DNL Adobe Target]으로 내보냅니다. CQ-4265469용 핫픽스
 * 스마트 이미지를 사용한 타겟으로 경험 구성요소 내보내기가 실패합니다. CQ-4269606용 핫픽스
 
 * 사용자가 카드 보기에서 Omnisearch를 통해 환경 조각을 이동하려고 하면 막다른 상황에 놓이게 됩니다. CQ-4263848용 핫픽스
@@ -560,13 +560,13 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 ### WCM - MSM
 
-* Upgrade to [!DNL Experience Manager] 6.4.3 makes Multi-Site Manager take a long time to roll out. CQ-4271410용 핫픽스
+* [!DNL Experience Manager] 6.4.3으로 업그레이드하면 다중 사이트 관리자가 롤아웃하는 데 시간이 오래 걸립니다. CQ-4271410용 핫픽스
 
 ### 통합
 
 * BrightEdge 자격 증명이 실패하고 연결 오류가 발생합니다. NPR-29168: CQ-4265872용 핫픽스
 
-* An exception message is displayed when trying to edit and save the [!DNL Experience Manager] launch configuration. NPR-29176: CQ-4265782/CQ-4266153용 핫픽스
+* [!DNL Experience Manager] 실행 구성을 편집하고 저장하려고 하면 예외 메시지가 표시됩니다. NPR-29176: CQ-4265782/CQ-4266153용 핫픽스
 
 ### 사용자 인터페이스
 
@@ -584,11 +584,11 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * 복제 에이전트 구성 요소는 중요한 정보를 권한이 없는 사용자에게 공개하는 취약성이 있습니다. NPR-29611: GRANITE-25070용 핫픽스
 
-* Session leak during OAuth for every replication to [!DNL Brand Portal]. NPR-30001: GRANITE-26196용 핫픽스
+* [!DNL Brand Portal]에 복제할 때마다 OAuth 중에 세션 누수가 발생합니다. NPR-30001: GRANITE-26196용 핫픽스
 
 ### 프로젝트
 
-* 작성자 [!DNL Experience Manager Assets] /content/dam/mac [!DNL Experience Manager] 폴더에서 게시하면 [!DNL Brand Portal] 작동하지 않습니다. NPR-29819: CQ-4271118용 핫픽스
+* [!DNL Experience Manager] Author /content/dam/mac 폴더에서 [!DNL Brand Portal]로 [!DNL Experience Manager Assets]이 게시되지 않습니다. NPR-29819: CQ-4271118용 핫픽스
 
 ### 플랫폼
 
@@ -600,7 +600,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 ### 양식
 
-The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
+[!DNL Experience Manager Forms] 6.5.1.0의 주요 기능은 다음과 같습니다.
 
 * OSGi만 해당: 출력 및 양식 서비스에 새 속성 `PAGECOUNT`가 추가되었습니다.
 
@@ -613,7 +613,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 **백엔드 통합**
 
 * 보호된 WSDL(Web Service Definition Language)을 가져오지 못했습니다. NPR-29944: CQ-4270777용 핫픽스
-* When [!DNL Experience Manager Forms]  is installed on IBM WebSphere, creating a form data model based on SOAP fails. CQ-4251134용 핫픽스
+* [!DNL Experience Manager Forms]가 IBM WebSphere에 설치된 경우 SOAP를 기반으로 한 양식 데이터 모델을 작성할 수 없습니다. CQ-4251134용 핫픽스
 * Microsoft Dynamics On-Premise 통합을 위한 ADFS(Active Directory Federation Service) v3.0에 대한 지원이 활성화되었습니다. CQ-4270586용 핫픽스
 * 데이터 소스의 제목이 변경되면 양식 데이터 모델에 업데이트된 제목이 표시되지 않습니다. CQ-4265599용 핫픽스
 * 엔티티 또는 속성의 이름에 하이픈이나 공백을 사용하는 경우 표현식이 그러한 엔티티 및 속성을 평가하지 못합니다. CQ-4225129용 핫픽스
@@ -627,10 +627,10 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 * 레이지 로딩 중에 응용 양식 조각에 새 인스턴스를 추가할 수 없습니다. NPR-29818: CQ-4269875용 핫픽스
 * 구성 요소가 레코드 템플릿 문서에 대한 오류를 기록하거나 표시하지 않는지 확인합니다. CQ-4272999용 핫픽스
 * 응용 양식에 대한 레이아웃 편집기를 비활성화하는 지원이 추가되었습니다. CQ-4270810용 핫픽스
-* Restored the verify step for Adaptive Forms in [!DNL Experience Manager] 6.5. Hotfix for CQ-4269583
+* [!DNL Experience Manager] 6.5에서 적용형 양식에 대한 확인 단계가 복원되었습니다. CQ-4269583용 핫픽스
 
-* 적응형 양식 필드 유효성 검사 실패가 [!DNL Adobe Sign]발생합니다. CQ-4269463용 핫픽스
-* When an [!DNL Experience Manager Forms] instance has more than 20 adaptive form fragments and name of all the form fragments starts with the same string, the search returns no or only recent 20 created fragments. CQ-4264414, CQ-4264914용 핫픽스
+* 적용형 양식 필드 유효성 검사 오류로 [!DNL Adobe Sign]이 중단되었습니다. CQ-4269463용 핫픽스
+* [!DNL Experience Manager Forms] 인스턴스에 적용형 양식 조각이 20개 이상 있고 모든 양식 조각의 이름이 동일한 문자열로 시작하는 경우 검색 결과에 최근에 작성된 조각 20개만 반환되거나 아무것도 반환되지 않습니다. CQ-4264414, CQ-4264914용 핫픽스
 
 * 응용 양식 앱이 큰 데이터 세트에서 사용되는 경우 성능 문제가 발생합니다. CQ-4235310용 핫픽스
 
@@ -652,7 +652,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 * 응용 양식 앱의 보낼 편지함에서 양식을 다시 제출하면 데이터가 손실됩니다. NPR-28345: CQ-4260929용 핫픽스
 * 변수가 아닌 사례에 대해 저장하는 동안 문서가 닫히지 않습니다. CQ-4269784용 핫픽스
 * 응용 양식 앱에서 Microsoft Windows 8.1에 대한 지원이 삭제되었습니다. CQ-4265274용 핫픽스
-* When an image of more than 2 MB is attached as a field level attachment to a form in the Android version of [!DNL Experience Manager Forms] app, the app crashes. CQ-4265578용 핫픽스
+* 2MB 이상의 이미지가 [!DNL Experience Manager Forms] 앱의 Android 버전에서 양식에 대한 필드 수준의 첨부 파일로 첨부된 경우 앱이 충돌합니다. CQ-4265578용 핫픽스
 
 * 작업 지정에서 대화형 통신 인쇄 채널에 대한 미리 채우기 옵션이 활성화되었습니다. CQ-4265577용 핫픽스
 * 사용자는 작업이 지정된 그룹의 구성원이 될 때까지 공유 작업을 볼 수 없습니다. CQ-4248733용 핫픽스
@@ -668,7 +668,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 **양식 - 서신 관리**
 
-* [!DNL Experience Manager Forms] 6.5 CCR UI(Correspondence UI)를 만들 때 [!DNL Experience Manager Forms] 6.3으로 작성된 서신을 열지 못합니다.CQ-4266392에 대한 핫픽스
+* [!DNL Experience Manager Forms] 6.5 CCR UI(Create Correspondence UI)에서 [!DNL Experience Manager Forms] 6.3으로 작성된 서신을 열지 못합니다. CQ-4266392에 대한 핫픽스
 * DDE 데이터 유형이 숫자 유형인 경우 XDP의 Sum 함수가 작동하지 않습니다. CQ-4227403용 핫픽스
 * 자산이 게시될 때 마지막 수정 시간이 업데이트되지 않으므로 메모리 내 캐시 무효화 로직의 문자가 업데이트됩니다. CQ-4250465용 핫픽스
 * 문서 조각, DD 및 문자를 게시할 수 없습니다. CQ-4272893용 핫픽스
@@ -683,7 +683,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 **양식 - 디자이너**
 
-* When a full accessibility check is performed on the static PDF created using [!DNL Experience Manager Forms Designer], the Primary Language check fails due to missing language attribute. CQ-4272923, CQ-4271002용 핫픽스
+* [!DNL Experience Manager Forms Designer]를 사용하여 작성된 정적 PDF에서 전체 액세스 가능성 검사를 수행하면 누락된 언어 속성으로 인해 기본 언어 검사가 실패합니다. CQ-4272923, CQ-4271002용 핫픽스
 
 **양식 - 문서 보안**
 
@@ -697,9 +697,9 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 * 양식 필드에 모양 사전이 없기 때문에 PDF가 PDF/A-1b로 변환되지 않습니다. NPR-29940: CQ-4269618용 핫픽스
 
 * OSGi: 렌더링 중에 생성된 페이지 수를 확인할 수 없습니다. NPR-28922: CQ-4270870용 핫픽스
-* Enabled support for Static PDF files using Forms Service in [!DNL Experience Manager Forms OSGi]. NPR-28572: CQ-4270869용 핫픽스
+* [!DNL Experience Manager Forms OSGi]에서 양식 서비스를 사용하는 정적 PDF에 대한 지원을 사용하도록 설정되었습니다. NPR-28572: CQ-4270869용 핫픽스
 * XMLForm.exe에 대한 권한을 변경할 수 없습니다. NPR-29828, NPR-29237: Q-4267080용 핫픽스
-* The static PDF created by the [!DNL Experience Manager Forms] server’s output module does not populate the language attribute/tag with the language of the document created. NPR-27332: CQ-4271002용 핫픽스
+* [!DNL Experience Manager Forms] 서버의 출력 모듈에서 작성된 정적 PDF가 언어 속성/태그를 작성된 문서의 언어로 채우지 않습니다. NPR-27332: CQ-4271002용 핫픽스
 
 **양식 - 기초 JEE**
 
@@ -711,11 +711,11 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 #### 자산 - 포함
 
-* Enabled Multi-Site Manager support for [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://helpx.adobe.com/kr/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199: CQ-4259922용 핫픽스
+* [!DNL Experience Manager Assets]에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [Experience Manager Assets에 MSM을 사용하여 자산 재사용](https://helpx.adobe.com/kr/experience-manager/6-5/help/assets/reuse-assets-using-msm.html)을 참조하십시오. NPR-29199: CQ-4259922용 핫픽스
 
 #### 사이트 - 포함
 
-* 경험 [!DNL Experience Manager] 조각을 내보낼 [!DNL Adobe Target]수 있습니다. 자세한 내용은 [경험 구성요소 링크 재작성기 공급자 - HTML](https://helpx.adobe.com/kr/experience-manager/6-5/help/sites-developing/experience-fragments.html#TheExperienceFragmentLinkRewriterProviderHTML)을 참조하십시오. CQ-4265469용 핫픽스
+* [!DNL Experience Manager] 경험 구성 요소를 [!DNL Adobe Target]으로 내보냅니다. 자세한 내용은 [경험 구성요소 링크 재작성기 공급자 - HTML](https://helpx.adobe.com/kr/experience-manager/6-5/help/sites-developing/experience-fragments.html#TheExperienceFragmentLinkRewriterProviderHTML)을 참조하십시오. CQ-4265469용 핫픽스
 
 #### 양식 - 문서 서비스 - 포함
 
@@ -725,12 +725,12 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 ### OSGi 번들 및 콘텐츠 패키지
 
-The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.1.0
+다음 텍스트 문서에는 [!DNL Experience Manager] 6.5.1.0에 포함된 OSGi 번들 및 컨텐츠 패키지 목록이 나와 있습니다.
 
-List of OSGi bundles included in [!DNL Experience Manager] 6.5.1.0
+[!DNL Experience Manager] 6.5.1.0에 포함된 OSGi 번들 목록
 
 [파일 가져오기](assets/6_5-bundle-list.txt)
 
-List of Content Packages included in [!DNL Experience Manager] 6.5.1.0
+[!DNL Experience Manager] 6.5.1.0에 포함된 컨텐츠 패키지 목록
 
 [파일 가져오기](assets/6_5-content-package-list.txt)
