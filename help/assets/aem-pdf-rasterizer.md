@@ -3,24 +3,24 @@ title: PDF 래스터라이저를 사용하여 변환 생성
 description: 이 문서에서는 Adobe PDF 래스터라이저 라이브러리를 사용하여 고품질 축소판과 변환을 생성하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# PDF 래스터라이저 사용 {#using-pdf-rasterizer}
+# Use PDF Rasterizer {#using-pdf-rasterizer}
 
 경우에 따라 컨텐츠 집약적인 대용량 PDF 또는 AI 파일을 AEM(Adobe Experience Manager) 자산에 업로드할 때 기본 라이브러리가 정확한 출력을 생성하지 못할 수 있습니다. 이러한 경우 Adobe의 PDF 래스터라이저 라이브러리를 사용하면 기본 라이브러리의 출력 결과와 비교하여 더 안정적이고 정확한 출력을 생성할 수 있습니다.
 
 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
-* 컨텐츠가 많이 사용되는 AI/PDF 파일
-* 축소판이 포함된 AI/PDF 파일 작성 안 함
+* 컨텐츠가 많은 AI/PDF 파일
+* 축소판이 포함된 AI 및 PDF 파일은 즉시 생성되지 않습니다.
 * PMS(Pantone Matching System) 색상이 있는 AI 파일
 
 PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 기본 출력 품질과 비교하여 더 우수하므로 다양한 디바이스에서 일관된 보기 환경을 제공합니다. Adobe PDF 래스터라이저 라이브러리는 색상 공간 변환을 지원하지 않습니다. 소스 파일의 색상 공간과 관계없이 항상 RGB로 출력합니다.
 
-1. 패키지 공유에서 AEM 인스턴스에 PDF 래스터라이저 패키지를 [설치합니다](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. 패키지 공유에서 AEM 배포에 PDF 래스터라이저 패키지를 [설치합니다](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
