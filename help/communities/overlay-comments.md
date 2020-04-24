@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
 
 이메일 알림의 메시지를 사용자 정의하려는 경우, 템플릿을 [오버레이하여](/help/communities/client-customize.md#overlays) /libs/settings/community/templates/email/html ****&#x200B;템플릿을 사용할 수 있습니다.
 
-예를 들어, 언급 이메일 알림을 수정하려면(ugc가 생성된 특정 커뮤니티 구성 요소에 대해) @mentions **지원을 활성화한 구성 요소의 템플릿에서 동사**&#x200B;언급에 대한 ****if** *를 추가합니다.
+예를 들어, 언급 이메일 알림을 수정하려면(ugc가 생성된 특정 커뮤니티 구성 요소에 대해) **if** 조건을 **@mentions** **** 지원을 활성화한 구성 요소의 템플릿에 추가합니다.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -44,4 +44,4 @@ source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
 {{/equals}}\
 ```
 
-블로그 댓글에서 @mention에 대한 이메일 알림 템플릿을 수정하려면 다음 위치에 있는 템플릿 외부에 두십시오./libs/settings/community/templates/email/html/social.journal.components.hbs.comment/kr ****
+블로그 댓글에서 @mention에 대한 이메일 알림 템플릿을 수정하려면 다음 위치에 있는 템플릿 외부에 두십시오. `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
