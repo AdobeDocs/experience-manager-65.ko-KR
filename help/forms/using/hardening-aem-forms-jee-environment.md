@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: dee9f9c9d3dfb916d1feaa0d258c883686e1a1dc
 
 ---
 
@@ -38,7 +38,7 @@ JEE에 AEM Forms를 설치하기 전에 네트워크 레이어 및 운영 체제
 
 **Windows에서 설치 및 구성**
 
-턴키 방법을 사용하거나 PDF Generator를 설치하는 경우 JBoss의 JEE에 AEM Forms를 설치하는 경우 Windows에서 관리자로 설치해야 합니다. 또한 기본 애플리케이션 지원을 통해 Windows에 PDF Generator를 설치할 때는 Microsoft Office를 설치한 Windows 사용자와 동일한 설치 프로그램을 실행해야 합니다. 설치 권한에 대한 자세한 내용은 응용 프로그램 **서버의 JEE에** AEM Forms 설치 및 배포 문서를 참조하십시오.
+턴키 방법을 사용하거나 PDF Generator를 설치하는 경우 JBoss의 JEE에 AEM Forms를 설치하는 경우 Windows에서 관리자로 설치해야 합니다. 또한 기본 애플리케이션 지원을 통해 Windows에 PDF Generator를 설치할 때는 Microsoft Office를 설치한 Windows 사용자와 동일한 설치 프로그램을 실행해야 합니다. 설치 권한에 대한 자세한 내용은 응용 프로그램 서버의 JEE*에 AEM Forms 설치 및 배포 문서를 참조하십시오.
 
 ### 네트워크 레이어 보안 {#network-layer-security}
 
@@ -60,7 +60,7 @@ JEE에 AEM Forms를 설치하기 전에 네트워크 레이어 및 운영 체제
   </tr> 
   <tr> 
    <td><p>개인 IP 주소</p> </td> 
-   <td><p>AEM Forms 응용 프로그램 서버에서 RFC 1918 개인 IP 주소와 함께 NAT(네트워크 주소 변환)를 사용합니다. 비공개 IP 주소(10.0.0.0/8, 172.16.0.0/12 및 192.168.0.0/16)을 할당하여 침입자가 인터넷을 통해 NAT의 내부 호스트에 트래픽을 라우팅하는 것을 더욱 어렵게 만듭니다.</p> </td> 
+   <td><p>AEM Forms 응용 프로그램 서버에서 RFC 1918 개인 IP 주소와 함께 NAT(네트워크 주소 변환)를 사용합니다. 비공개 IP 주소(10.0.0.0/8, 172.16.0.0/12 및 192.168.0.0/16)을 할당하여 공격자가 인터넷을 통해 NAT의 내부 호스트에 트래픽을 라우팅하는 것을 더욱 어렵게 만듭니다.</p> </td> 
   </tr> 
   <tr> 
    <td><p>방화벽</p> </td> 
@@ -184,7 +184,7 @@ JEE에서 AEM Forms가 배포되는 응용 프로그램 서버를 특정 비관�
    * 로컬에서 로그온 거부
    * 서비스로 로그온(이미 설정되어야 함)
 
-1. 새 사용자 계정에 JEE 웹 컨텐츠 디렉토리 항목에 대한 읽기 및 실행, 목록 폴더 컨텐츠 및 읽기 권한을 부여합니다.
+1. JEE 설치 디렉토리 및 GDS 파섹 디렉토리에서 AEM Forms를 완료하려면 새 사용자 계정에 읽기 및 실행, 쓰기, 수정, 목록 폴더 내용 및 읽기 권한을 부여합니다. GDS 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있으면 위치는 JBoss 루트 [/서버/]유형[/저장/DocumentStorage에서 응용 프로그램 서버 설치 아래]디렉토리로 기본적으로 설정됩니다.
 1. 응용 프로그램 서버를 시작합니다.
 
 **Configuration Manager 부트스트랩 서블릿 비활성화**
@@ -258,7 +258,7 @@ JEE의 AEM Forms가 설치되면, 기본 암호 ** Super Administrator/ 로그�
 1. 웹 브라우저에 다음 URL을 입력합니다.
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
    기본 포트 번호는 다음 중 하나입니다.
@@ -278,7 +278,7 @@ JEE의 AEM Forms가 설치되면, 기본 암호 ** Super Administrator/ 로그�
 
 또한 다음 단계를 수행하여 CRX 관리자의 기본 암호를 변경하는 것이 좋습니다.
 
-1. 기본 사용자 이름/암호를 사용하여 `https://'[server]:[port]'/lc/libs/granite/security/content/useradmin.html` 로그인합니다.
+1. 기본 사용자 이름/암호를 사용하여 `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` 로그인합니다.
 1. 검색 필드에 관리자를 입력하고 이동을 **클릭합니다**.
 1. 검색 **결과에서** 관리자를 선택하고 **사용자 인터페이스 오른쪽 아래에 있는** 편집 아이콘을 클릭합니다.
 1. 새 암호 필드에 새 **암호를** 지정하고 암호 **필드에 이전 암호를 지정합니다** .
@@ -291,7 +291,7 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 애
 1. 웹 브라우저에 다음 URL을 입력합니다.
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
 1. 설정 **> 핵심 시스템 설정 > 구성을 클릭합니다**.
@@ -319,7 +319,7 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 애
   </tr> 
   <tr> 
    <td><p>디렉토리 탐색</p> </td> 
-   <td><p>누군가 존재하지 않는 페이지를 요청하거나 디렉터의 이름을 요청할 때(요청 문자열은 슬래시(/)로 끝남), 응용 프로그램 서버는 해당 디렉토리의 컨텐츠를 반환하지 않아야 합니다. 이를 방지하기 위해 응용 프로그램 서버에서 디렉토리 검색을 비활성화할 수 있습니다. 관리 콘솔 응용 프로그램과 서버에서 실행 중인 다른 응용 프로그램에 대해 이 작업을 수행해야 합니다.</p> <p>JBoss의 경우 다음 예와 같이 <code>DefaultServlet</code> 속성의 목록 초기화 매개변수 값을 web.xml <code>false</code> 파일에서 설정합니다.</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalyina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;list&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>WebSphere의 경우 ibm-web-ext.xmi 파일의 <code>directoryBrowsingEnabled</code> 속성을 로 설정합니다 <code>false</code>.</p> <p>WebLogic의 경우 다음 예와 같이 weblogic.xml 파일의 인덱스 디렉토리 속성을 로 설정합니다. <code>false</code></p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>누군가 존재하지 않는 페이지를 요청하거나 디렉터의 이름을 요청할 때(요청 문자열은 슬래시(/)로 끝남), 응용 프로그램 서버는 해당 디렉토리의 컨텐츠를 반환하지 않아야 합니다. 이를 방지하기 위해 응용 프로그램 서버에서 디렉토리 검색을 비활성화할 수 있습니다. 관리 콘솔 응용 프로그램과 서버에서 실행 중인 다른 응용 프로그램에 대해 이 작업을 수행해야 합니다.</p> <p>JBoss의 경우 다음 예와 같이 <code>DefaultServlet</code> 속성의 목록 초기화 매개변수 값을 web.xml <code>false</code> 파일에서 설정합니다.</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;list&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>WebSphere의 경우 ibm-web-ext.xmi 파일의 <code>directoryBrowsingEnabled</code> 속성을 로 설정합니다 <code>false</code>.</p> <p>WebLogic의 경우 다음 예와 같이 weblogic.xml 파일의 인덱스 디렉토리 속성을 로 설정합니다. <code>false</code></p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -676,7 +676,7 @@ Document Services를 처음 설치하면 Allowed Referrer 목록이 Document Ser
 
 **허용된 레퍼러 목록 관리**
 
-관리 콘솔의 사용자 관리 인터페이스에서 허용된 레퍼러 목록을 관리할 수 있습니다. 사용자 관리 인터페이스는 목록을 생성, 편집 또는 삭제하는 기능을 제공합니다. 허용된 레퍼러 *[목록 작업에 대한 자세한 내용은](/help/forms/using/admin-help/preventing-csrf-attacks.md)*관리 도움말의&#x200B;*CSRF 공격 방지*섹션을 참조하십시오.
+관리 콘솔의 사용자 관리 인터페이스에서 허용된 레퍼러 목록을 관리할 수 있습니다. 사용자 관리 인터페이스는 목록을 생성, 편집 또는 삭제하는 기능을 제공합니다. 허용된 레퍼러 [목록 작업에 대한 자세한 내용은](/help/forms/using/admin-help/preventing-csrf-attacks.md)관리 도움말의 ** * CSRF 공격 방지* 섹션을 참조하십시오.
 
 **허용된 레퍼러 예외 및 허용된 URI 목록 관리**
 
@@ -691,7 +691,7 @@ JEE의 AEM Forms에서는 허용된 레퍼러 예외 목록 및 허용된 URI �
 * updateAllowedReferrerExceptions
 * deleteAllowedReferrerExceptions
 
-API에 *대한 자세한 내용은 JEE* API의 AEM Forms 참조를 참조하십시오.
+API에 대한 자세한 내용은 JEE API 참조*의 AEM Forms를 참조하십시오.
 
 글로벌 ***수준의 허용된 레퍼러 예외에 대한 LC_GLOBAL_ALLOWED*** _REFERRER_EXCEPTION 목록을 사용하여 모든 응용 프로그램에 적용되는 예외를 정의합니다. 이 목록에는 절대 경로(예:) `/index.html`또는 상대 경로(예: `/sample/`). 정규 표현식을 상대적 URI 끝에 추가할 수도 있습니다(예: `/sample/(.)*`Adobe
 
@@ -711,7 +711,7 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 **사용자 지정 WAR 파일에 대한 레퍼러 필터링**
 
-비즈니스 요구 사항을 충족하기 위해 JEE에서 AEM Forms와 함께 사용할 사용자 정의 WAR 파일을 만들 수 있습니다. 사용자 정의 WAR 파일에 대한 레퍼러 필터링을 활성화하려면 WAR의 클래스 경로에 ***adobe-usermanager-client.jar*** 를 *포함하고 다음 매개 변수를 사용하여* web.xml파일에 필터 항목을 포함시킵니다.
+비즈니스 요구 사항을 충족하기 위해 JEE에서 AEM Forms와 함께 사용할 사용자 정의 WAR 파일을 만들 수 있습니다. 사용자 정의 WAR 파일에 대한 레퍼러 필터링을 활성화하려면 WAR의 클래스 경로에 ***adobe-usermanager-client.jar*** 를 포함시키고 다음 매개 변수와 함께* web.xml* 파일에 필터 항목을 포함합니다.
 
 **CSRF_CHECK_GETS는** GET 요청에 대한 레퍼러 검사를 제어합니다. 이 매개 변수가 정의되지 않은 경우 기본값은 false로 설정됩니다. GET 요청을 필터링하려는 경우에만 이 매개 변수를 포함하십시오.
 
@@ -970,10 +970,11 @@ JEE 턴키 설치의 AEM Forms는 기본적으로 로컬 시스템 계정을 사
 1. 로컬 보안 설정 창의 사용자 권한 할당에서 양식 서버가 실행 중인 사용자 계정에 다음 권한을 부여합니다.
 
    * 터미널 서비스를 통해 로그온 거부
-   * 로컬에서 로그온 거부
+   * 로컬에서 로그인 거부
    * 서비스로 로그온(이미 설정되어야 함)
 
-1. JEE 웹 컨텐츠 디렉토리의 AEM Forms에 대한 읽기 및 실행, 목록 폴더 컨텐츠 및 읽기 권한을 새 사용자 계정에 부여합니다.
+1. JEE 설치 디렉토리 및 GDS 파섹 디렉토리에서 AEM Forms를 완료하려면 새 사용자 계정에 읽기 및 실행, 쓰기, 수정, 목록 폴더 내용 및 읽기 권한을 부여합니다. GDS 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있으면 위치는 JBoss 루트 [/서버/]유형[/저장/DocumentStorage에서 응용 프로그램 서버 설치 아래]디렉토리로 기본적으로 설정됩니다.
+
 1. 응용 프로그램 서버 서비스를 시작합니다.
 
 ### 파일 시스템 보안 {#file-system-security}
@@ -1038,4 +1039,3 @@ ibm-web-ext.xml 파일의 `directoryBrowsingEnabled` 속성을 로 `false`설정
 1. 애플리케이션 보안 **활성화** 및 Java **2 보안**&#x200B;사용을 모두 선택 취소합니다.
 1. 확인 **또는 적용을** **클릭합니다**.
 1. 메시지 **상자에서** 마스터 **구성에**&#x200B;직접 저장을 클릭합니다.
-
