@@ -10,22 +10,23 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
 
 # 노드 만들기 {#create-nodes}
 
-/libs에서 필요한 최소한의 파일 수를 /apps로 복사하고 /apps에서 수정하여 주석 시스템을 사용자 정의 버전으로 오버레이합니다.
+필요한 최소한의 파일 수를 복사하여 에서 수정하여 주석 시스템을 사용자 정의 `/libs` 버전으로 `/apps` 오버레이합니다 `/apps`.
 
 >[!CAUTION]
 >
 >다시 설치하거나 업그레이드하면 /apps 폴더의 내용이 그대로 유지되지만 /libs 폴더를 삭제하거나 대체할 수 있으므로 /libs 폴더의 내용은 편집되지 않습니다.
 
+
 작성자 [인스턴스에서 CRXDE](../../help/sites-developing/developing-with-crxde-lite.md) Lite를 사용하면 먼저 /apps 폴더에 /libs 폴더의 오버레이된 구성 요소 경로와 동일한 경로를 만듭니다.
 
-복제할 경로는
+복제할 경로는 다음과 같습니다.
 
 * `/libs/social/commons/components/hbs/comments/comment`
 
@@ -37,7 +38,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    * **[!UICONTROL 만들기 > 폴더 ...]**
       * 이름 입력: `social`
 1. 노드 `social` 선택
-   * **[!UICONTROL 만들기 > 폴더...]**
+   * **[!UICONTROL 만들기]** > **[!UICONTROL 폴더...]**
       * 이름 입력: `commons`
 1. 노드 `commons` 선택
    * **[!UICONTROL 만들기 > 폴더...]**
@@ -46,7 +47,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    * **[!UICONTROL 만들기 > 폴더..]**.
       * 이름 입력: `hbs`
 1. 노드 `hbs` 선택
-   * **[!UICONTROL 만들기 > 구성 요소 만들기...]**
+   * **[!UICONTROL 만들기]** > **[!UICONTROL 구성 요소 만들기...]**
       * 레이블 입력: `comments`
       * Enter Title: `Comments`
       * Enter Description: `List of comments without showing avatars`
@@ -74,7 +75,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->상속 체인을 보존하기 위해 오버레이 구성 요소의 `Super Type` (속성 `sling:resourceSuperType`)가 겹쳐지는 구성 요소의 `Super Type` 값과 동일한 값으로 설정됩니다(이 경우).
+>상속 체인을 보존하기 위해 오버레이 구성 요소의 `Super Type` (속성 `sling:resourceSuperType`)가 겹쳐지는 구성 요소의 `Super Type` 값과 같은 값으로 설정됩니다. 이 경우:
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
