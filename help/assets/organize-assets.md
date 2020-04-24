@@ -3,7 +3,7 @@ title: 디지털 자산 구성
 description: Adobe Experience Manager를 사용하여 디지털 자산, 이미지, 파일, 폴더 등을 구성할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
