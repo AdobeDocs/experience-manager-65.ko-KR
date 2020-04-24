@@ -3,7 +3,7 @@ title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -44,7 +44,7 @@ Smart Content Service가 올바른 태그를 적용하려면 분류 체계를 �
 
 ## 온보딩 {#onboarding}
 
-스마트 콘텐츠 서비스는 Experience Manager의 추가 기능으로 구매할 수 있습니다. 구입하면 Adobe IO에 대한 링크가 포함된 이메일이 조직 관리자에게 전송됩니다.
+스마트 콘텐츠 서비스는 Experience Manager의 추가 기능으로 구매할 수 있습니다. 구입하면 Adobe I/O 링크가 포함된 이메일이 조직 관리자에게 전송됩니다.
 
 관리자는 링크를 따라 스마트 콘텐츠 서비스를 Experience Manager와 통합할 수 있습니다. Experience Manager Assets와 서비스를 통합하려면 스마트 태그 [구성을 참조하십시오](config-smart-tagging.md).
 
