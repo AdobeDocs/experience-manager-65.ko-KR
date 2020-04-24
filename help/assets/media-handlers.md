@@ -3,7 +3,7 @@ title: 미디어 핸들러 및 워크플로우를 사용하여 자산 처리
 description: 미디어 핸들러와 워크플로우를 사용하여 디지털 자산에 대한 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b600e5eaf7c61568f2559b3fb4915d433f5e13bf
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -496,7 +496,7 @@ AEM을 사용하면 워크플로우 내에서 명령줄 도구를 실행하여 �
 
 수정된 워크플로우를 테스트하려면 자산을 추가합니다 `/content/dam`.
 
-1. 파일 시스템에서 원하는 .tiff 이미지를 가져옵니다. WebDAV를 사용하여 이름을 변경하여 `myImage.tiff` 복사하여 `/content/dam`붙여넣을 수 있습니다.
+1. 파일 시스템에서 원하는 TIFF 이미지를 가져올 수 있습니다. WebDAV를 사용하여 이름을 변경하여 `myImage.tiff` 복사하여 `/content/dam`붙여넣을 수 있습니다.
 1. 예를 들어 CQ5 **[!UICONTROL DAM]** 콘솔로 이동합니다 `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. 자산 myImage.tiff **[!UICONTROL 를]** 열고 역진행 이미지와 세 개의 축소판이 만들어졌는지 확인합니다.
 
@@ -516,7 +516,7 @@ AEM을 사용하면 워크플로우 내에서 명령줄 도구를 실행하여 �
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-그런 다음 워크플로우가 실행되면 이 단계는 이미지/gif 또는 mime:image/tiff가 있는 에셋에만 적용되며, 전환된 원본 이미지를 만들어 .jpg로 변환하고 크기가 작은 세 개의 축소판을 만듭니다.140x100, 48x48 및 10x250.
+그런 다음 워크플로우가 실행되면 단계는 원래 이미지의 뒤집힌 `image/gif` `mime:image/tiff` `mime-types`이미지만 만들고 JPG로 변환하며 크기가 작은 세 개의 축소판을 만듭니다.140x100, 48x48 및 10x250.
 
 ImageMagick을 [!UICONTROL 사용하여 다음] 프로세스 인수를 사용하여 세 개의 표준 축소판을 만듭니다.
 
