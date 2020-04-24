@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
@@ -26,14 +26,14 @@ comment.hbs 스크립트에서는 각 댓글에 대한 전체 HTML을 만듭니�
 
 1. 복사 `comment.hbs`위치 `libs`위치 `apps`
 
-   1. select `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. 선택 `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
    1. 복사 **선택**
-   1. select `/apps/social/commons/components/hbs/comments/comment`
+   1. 선택 `/apps/social/commons/components/hbs/comments/comment`
    1. 붙여넣기 **선택**
 
 1. 오버레이된 항목 열기 `comment.hbs`
 
-   * 노드를 두 번 `comment.hbs`클릭 `/apps/social/commons/components/hbs/comments/comment folder`
+   * Double-click on node `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
 1. 다음 줄을 찾아 삭제하거나 주석을 답니다.
 
@@ -42,7 +42,7 @@ comment.hbs 스크립트에서는 각 댓글에 대한 전체 HTML을 만듭니�
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-행을 삭제하거나 &#39;&lt;!—&#39; 및 &#39;—>&#39;를 사용하여 주석을 달 수 있습니다. 또한 &#39;xxx&#39; 문자는 아바타가 있었던 위치를 보여주는 시각적 표시기로 추가됩니다.
+선을 삭제하거나 선을 둘러싸서 `<!--` 주석을 `-->` 지정합니다. 또한 &#39;xxx&#39; 문자는 아바타가 있었던 위치를 보여주는 시각적 표시기로 추가됩니다.
 
 ```xml
    xxx
@@ -59,9 +59,10 @@ comment.hbs 스크립트에서는 각 댓글에 대한 전체 HTML을 만듭니�
 >
 >더욱 강력한 복제 방식은 패키지 관리자에서 패키지를 만들어 [활성화하는](/help/sites-administering/package-manager.md#replicating-packages) 것입니다. 패키지를 내보내고 보관할 수 있습니다.
 
-전역 탐색에서 도구, 배포, **복제** , 트리 **활성화를 선택합니다**.
 
-시작 경로에 `/apps/social/commons`****를 입력하고 활성화를 **선택합니다**.
+글로벌 탐색에서 도구 > 배포 **** > **[!UICONTROL 복제를]** 선택하고 **[!UICONTROL 트리]** 활성화를 ****&#x200B;클릭합니다.
+
+시작 경로에 대해 Enter `/apps/social/commons` 키를 누르고 **[!UICONTROL 활성화를 선택합니다]**.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
