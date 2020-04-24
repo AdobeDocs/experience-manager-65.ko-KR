@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 31a3ccc1f9f0940515ed64b1b18a535102bf7231
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 새로 만든 커뮤니티 사이트가 게시되었으므로 사이트를 만들 때 표시되는 URL을 탐색합니다(예: 게시 서버).
 
-* 작성자 URL = https://localhost:4502/content/sites/engage/en.html
+* A\작성자 URL = https://localhost:4502/content/sites/engage/en.html
 * 게시 URL = https://localhost:4503/content/sites/engage/en.html
 
 작성자 및 게시에서 로그인된 구성원에 대한 혼동을 최소화하려면 각 인스턴스에 대해 다른 브라우저를 사용하는 것이 좋습니다.
