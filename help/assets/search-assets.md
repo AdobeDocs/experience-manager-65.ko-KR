@@ -1,19 +1,19 @@
 ---
-title: AEM에서 디지털 자산 및 이미지 검색
-description: 필터 패널을 사용하여 AEM에서 필요한 자산을 찾는 방법과 검색에 표시되는 자산을 사용하는 방법을 알아봅니다.
+title: Adobe Experience Manager에서 디지털 자산 및 이미지 검색
+description: 필터 패널을 사용하여 Adobe Experience Manager에서 필요한 에셋을 찾는 방법 및 검색에 표시되는 에셋을 사용하는 방법을 살펴봅니다.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# AEM에서 자산 검색 {#search-assets-in-aem}
+# Adobe Experience Manager에서 자산 검색 {#search-assets-in-aem}
 
-AEM(Adobe Experience Manager) 자산에서는 콘텐츠 제작 시간을 단축할 수 있는 강력한 자산 검색 방법을 제공합니다. 팀은 즉시 사용 가능한 기능과 맞춤형 방법을 사용하여 매끄럽고 지능적인 검색 경험을 제공함으로써 출시 시간을 단축할 수 있습니다. 자산 검색은 크리에이티브 전문가가 추가적으로 사용하거나 비즈니스 사용자 및 마케터가 자산을 안전하게 관리하거나 DAM 관리자의 관리를 위해 디지털 자산 관리 시스템을 사용하는 데 중요합니다. AEM Assets 사용자 인터페이스 또는 기타 앱과 표면을 통해 수행할 수 있는 단순, 고급 및 사용자 지정 검색은 이러한 사용 사례를 수행하는 데 도움이 됩니다.
+Adobe Experience Manager Assets는 콘텐츠 제작 시간을 단축할 수 있는 강력한 자산 검색 방법을 제공합니다. 팀은 즉시 사용 가능한 기능과 맞춤형 방법을 사용하여 매끄럽고 지능적인 검색 경험을 제공함으로써 출시 시간을 단축할 수 있습니다. 자산 검색은 크리에이티브 전문가가 추가적으로 사용하거나 비즈니스 사용자 및 마케터가 자산을 안전하게 관리하거나 DAM 관리자의 관리를 위해 디지털 자산 관리 시스템을 사용하는 데 중요합니다. Adobe Experience Manager Assets 사용자 인터페이스 또는 기타 앱과 표면을 통해 수행할 수 있는 단순, 고급 및 사용자 지정 검색은 이러한 사용 사례를 수행하는 데 도움이 됩니다.
 
-AEM은 다음 사용 사례를 지원하며 이 문서에서는 이러한 사용 사례에 대한 사용, 개념, 구성, 제한 및 문제 해결에 대해 설명합니다.
+Adobe Experience Manager Assets는 다음 사용 사례를 지원하며 이 문서에서는 이러한 사용 사례에 대한 사용, 개념, 구성, 제한 사항 및 문제 해결에 대해 설명합니다.
 
 | 자산 검색 | 구성 및 관리 | 검색 결과를 사용한 작업 |
 |---|---|---|
@@ -23,16 +23,16 @@ AEM은 다음 사용 사례를 지원하며 이 문서에서는 이러한 사용
 | [검색 결과 및 행동 이해](#searchbehavior) | [검색 패싯 수정](#searchfacets) | [일괄 메타데이터 업데이트](#metadataupdates) |
 | [검색 등급 및 향상](#searchrank) | [텍스트 추출](#extracttextupload) | [스마트 컬렉션](#collections) |
 | [고급 검색:검색 필터링 및 범위](#scope) | [사용자 정의 설명](#custompredicates) | [예기치 않은 결과 이해 및 문제 해결](#troubleshoot-unexpected-search-results-and-issues) |
-| [다른 솔루션 및 앱에서](#beyondomnisearch)검색:<ul><li>[Adobe Asset Link](#aal)</li><li>[브랜드 포털](#brandportal)</li><li>[AEM Desktop App](#desktopapp)</li><li>[Adobe Stock 이미지](#adobestock)</li><li>[다이내믹 미디어 자산](#dynamicmedia)</li></ul> |  |  |
+| [다른 솔루션 및 앱에서](#beyondomnisearch)검색:<ul><li>[Adobe Asset Link](#aal)</li><li>[브랜드 포털](#brandportal)</li><li>[Experience Manager 데스크탑 앱](#desktopapp)</li><li>[Adobe Stock 이미지](#adobestock)</li><li>[다이내믹 미디어 자산](#dynamicmedia)</li></ul> |  |  |
 | [자산 선택기](#assetselector) |  |  |
 | [제한](#limitations) 및 [팁](#tips) |  |  |
 | [예시](#samples) |  |  |
 
-AEM 웹 인터페이스 상단의 Omnisearch 필드를 사용하여 자산을 검색합니다. AEM의 **[!UICONTROL 자산]** > **[!UICONTROL 파일로]** 이동하고 상단 막대에서 검색 아이콘을 클릭하고 검색 키워드를 입력한 다음 Return 키를 누릅니다. 또는 키워드 단축키 /(슬래시)를 사용하여 Omnisearch 필드를 엽니다. 위치: 자산을 미리 선택하여 검색을 DAM 자산으로 제한합니다. AEM에서는 검색 키워드를 입력하기 시작할 때 제안을 제공합니다.
+Experience Manager 웹 인터페이스 상단에 있는 Omnisearch 필드를 사용하여 자산을 검색합니다. Adobe Experience **[!UICONTROL Manager]** 의 자산 > **[!UICONTROL 파일로 이동하고]** 상단 막대의 검색 아이콘을 클릭하고 검색 키워드를 입력한 다음 Return 키를 누릅니다. 또는 키워드 단축키 /(슬래시)를 사용하여 Omnisearch 필드를 엽니다. 위치: 자산을 미리 선택하여 검색을 DAM 자산으로 제한합니다. Adobe Experience Manager는 검색 키워드를 입력하기 시작할 때 제안을 제공합니다.
 
 필터 **[!UICONTROL 패널을 사용하면]** 파일 유형, 파일 크기, 마지막 수정 날짜, 자산 상태, 인사이트 데이터 및 Adobe Stock 라이선스와 같은 다양한 옵션(예측)을 기반으로 검색 결과를 필터링하여 검색 범위를 좁힐 수 있습니다. 관리자는 필터 패널을 사용자 정의하고 검색 패싯을 사용하여 검색 조건자를 추가하거나 제거할 수 있습니다. 필터 [!UICONTROL 패널의 파일] 유형 [!UICONTROL 필터에는] 혼합 상태 확인란이있습니다. 따라서 모든 중첩 조건자(또는 형식)를 선택하지 않는 한 첫 번째 수준 확인란은 부분적으로 선택됩니다.
 
-AEM 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 컬렉션 [검색을](/help/assets/managing-collections-touch-ui.md)참조하십시오.
+Experience Manager 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 컬렉션 [검색을](/help/assets/managing-collections-touch-ui.md)참조하십시오.
 
 ## 검색 인터페이스 이해 {#searchui}
 
@@ -46,7 +46,7 @@ AEM 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원�
 
 ### 동적 검색 패싯 {#dynamicfacets}
 
-검색 패싯에서 동적으로 업데이트되는 예상 검색 결과 수를 사용하여 검색 결과 페이지에서 원하는 자산을 보다 빠르게 검색할 수 있습니다. 예상 자산 수는 검색 필터를 적용하기 전에도 업데이트됩니다. 필터에 대한 예상 카운트를 보면 검색 결과를 빠르고 효율적으로 탐색할 수 있습니다. 자세한 내용은 AEM에서 [자산 검색을 참조하십시오](search-assets.md).
+검색 패싯에서 동적으로 업데이트되는 예상 검색 결과 수를 사용하여 검색 결과 페이지에서 원하는 자산을 보다 빠르게 검색할 수 있습니다. 예상 자산 수는 검색 필터를 적용하기 전에도 업데이트됩니다. 필터에 대한 예상 카운트를 보면 검색 결과를 빠르고 효율적으로 탐색할 수 있습니다. For more info, see [Search assets in Experience Manager](search-assets.md).
 
 ![검색 패싯에서 검색 결과를 필터링하지 않고 대략적인 자산 수를 참조하십시오.](assets/asset_search_results_in_facets_filters.png)
 
@@ -58,21 +58,21 @@ AEM 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원�
 
 OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워드 검색은 대소문자를 구분하지 않으며 널리 사용되는 메타데이터 필드에서 전체 텍스트 검색입니다. 두 개 이상의 키워드를 검색할 경우 키워드 간의 기본 연산자는 기본 검색을 `AND` 위한 것이며, 에셋에 스마트 태그를 지정할 `OR` 때 사용됩니다.
 
-결과는 가장 가까운 일치부터 관련성별로 정렬됩니다. 여러 키워드의 경우 메타데이터에 두 용어가 모두 포함된 자산이 관련성이 더 높습니다. 메타데이터 내에서 스마트 태그로 나타나는 키워드는 다른 메타데이터 필드에 나타나는 키워드보다 등급이 높습니다. AEM에서는 특정 검색어의 가중치를 높일 수 있습니다. 또한 특정 검색어에 대한 몇 개의 타깃팅된 자산의 등급을 [](#searchrank) 높일 수 있습니다.
+결과는 가장 가까운 일치부터 관련성별로 정렬됩니다. 여러 키워드의 경우 메타데이터에 두 용어가 모두 포함된 자산이 관련성이 더 높습니다. 메타데이터 내에서 스마트 태그로 나타나는 키워드는 다른 메타데이터 필드에 나타나는 키워드보다 등급이 높습니다. Adobe Experience Manager를 사용하면 특정 검색어의 가중치를 높일 수 있습니다. 또한 특정 검색어에 대한 몇 개의 타깃팅된 자산의 등급을 [](#searchrank) 높일 수 있습니다.
 
 관련 자산을 신속하게 찾기 위해 리치 인터페이스는 필터링, 정렬 및 선택 메커니즘을 제공합니다. 여러 기준을 기반으로 결과를 필터링할 수 있으며 다양한 필터에 대해 검색된 자산의 수를 볼 수 있습니다. 또는 Omnisearch 필드에서 쿼리를 변경하여 검색을 다시 실행할 수 있습니다. 검색어 또는 필터를 변경하면 검색 컨텍스트를 유지하기 위해 다른 필터가 계속 적용됩니다.
 
-결과가 많은 자산이 있는 경우 AEM은 카드 보기에 처음 100을 표시하고 목록 보기에는 200을 표시합니다. 사용자가 스크롤하면 더 많은 자산이 로드됩니다. 이것은 성능을 개선하기 위한 것입니다.
+결과가 여러 자산인 경우 Adobe Experience Manager는 카드 보기에 처음 100을 표시하고 목록 보기에는 200을 표시합니다. 사용자가 스크롤하면 더 많은 자산이 로드됩니다. 이것은 성능을 개선하기 위한 것입니다.
 
 >[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
 
 경우에 따라 검색 결과에 예기치 않은 자산이 표시될 수 있습니다. 자세한 내용은 [예기치 않은 결과를](#troubleshoot-unexpected-search-results-and-issues)참조하십시오.
 
-AEM에서는 다양한 파일 형식을 검색할 수 있으며 비즈니스 요구 사항에 맞게 검색 필터를 사용자 정의할 수 있습니다. 관리자에게 문의하여 DAM 저장소에 사용할 수 있는 검색 옵션과 계정의 제한 사항에 대해 알아보십시오.
+Adobe Experience Manager를 사용하면 다양한 파일 포맷을 검색할 수 있고 비즈니스 요구 사항에 맞게 검색 필터를 사용자 정의할 수 있습니다. 관리자에게 문의하여 DAM 저장소에 사용할 수 있는 검색 옵션과 계정의 제한 사항에 대해 알아보십시오.
 
 ### 향상된 스마트 태그 사용 및 사용 안 함 {#withsmarttags}
 
-기본적으로 AEM 검색은 검색어와 AND 절을 결합합니다. 예를 들어 실행 중인 키워드 여성을 검색하는 것이 좋습니다. 메타데이터에 여성과 실행 중인 키워드가 모두 있는 자산만 기본적으로 검색 결과에 표시됩니다. 키워드에 특수 문자(마침표, 밑줄 또는 대시)를 사용할 때에도 동일한 동작이 유지됩니다. 다음 검색 쿼리는 동일한 결과를 반환합니다.
+기본적으로 Experience Manager 검색은 검색어와 AND 절을 결합합니다. 예를 들어 실행 중인 키워드 여성을 검색하는 것이 좋습니다. 메타데이터에 여성과 실행 중인 키워드가 모두 있는 자산만 기본적으로 검색 결과에 표시됩니다. 키워드에 특수 문자(마침표, 밑줄 또는 대시)를 사용할 때에도 동일한 동작이 유지됩니다. 다음 검색 쿼리는 동일한 결과를 반환합니다.
 
 * `woman running`
 * `woman.running`
@@ -87,7 +87,7 @@ AEM에서는 다양한 파일 형식을 검색할 수 있으며 비즈니스 요
 
 ### Search suggestions as you type {#searchsuggestions}
 
-키워드 입력을 시작하면 AEM에서 가능한 검색 키워드 또는 구문을 제안합니다. 제안은 기존 자산의 메타데이터를 기반으로 합니다. AEM 파섹 검색 제안을 제공하기 위해 시스템은 다음 몇 가지 메타데이터 필드의 값을 사용합니다. 검색 제안을 제공하려면 다음 필드를 적절한 키워드로 채우는 것이 좋습니다.
+키워드를 입력하기 시작하면 Experience Manager에서 가능한 검색 키워드 또는 구문을 제안합니다. 제안은 기존 자산의 메타데이터를 기반으로 합니다. Experience Manager는 검색에 도움이 되도록 모든 메타데이터 필드를 인덱싱합니다. 검색 제안을 제공하기 위해 시스템은 다음 몇 가지 메타데이터 필드의 값을 사용합니다. 검색 제안을 제공하려면 다음 필드를 적절한 키워드로 채우는 것이 좋습니다.
 
 * 자산 태그. (매핑 대상 `jcr:content/metadata/cq:tags`)
 * 자산 제목. (매핑 대상 `jcr:content/metadata/dc:title`)
@@ -115,7 +115,7 @@ AEM에서는 다양한 파일 형식을 검색할 수 있으며 비즈니스 요
 1. [ **[!UICONTROL 홍보 검색]** ] 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 추가를 클릭/ **[!UICONTROL 탭합니다]**. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
 1. 저장 및 **[!UICONTROL 닫기를 클릭/탭합니다]**. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 내에 나타납니다.
 
-타깃팅된 키워드에 대한 검색 결과에 있는 일부 자산의 등급을 높여 이점을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 내용은 AEM에서 [검색을 참조하십시오](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
+타깃팅된 키워드에 대한 검색 결과에 있는 일부 자산의 등급을 높여 이점을 활용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 내용은 Experience Manager에서 [검색을 참조하십시오](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -123,7 +123,7 @@ AEM에서는 다양한 파일 형식을 검색할 수 있으며 비즈니스 요
 
 ## Advanced search {#scope}
 
-AEM 파섹 다음은 자주 사용하는 몇 가지 방법에 대한 설명입니다. 일부 [예제는](#samples) 아래에 공유되어 있습니다.
+Adobe Experience Manager는 검색된 자산에 적용되는 필터와 같은 다양한 방법을 제공하므로 원하는 자산을 보다 신속하게 찾을 수 있습니다. 다음은 자주 사용하는 몇 가지 방법에 대한 설명입니다. 일부 [예제는](#samples) 아래에 공유되어 있습니다.
 
 **파일 또는 폴더**&#x200B;검색:검색 결과에서 파일, 폴더 또는 둘 다를 참조하십시오. 필터 **[!UICONTROL 패널에서]** 적절한 옵션을 선택할 수 있습니다. 검색 [인터페이스를](#searchui)참조하십시오.
 
@@ -135,7 +135,7 @@ AEM 파섹 다음은 자주 사용하는 몇 가지 방법에 대한 설명입�
 
 ### 유사한 이미지 찾기 {#visualsearch}
 
-사용자가 선택한 이미지와 시각적으로 유사한 이미지를 찾으려면 이미지 카드 **[!UICONTROL 보기나]** 도구 모음에서 비슷한 찾기 옵션을 클릭합니다. AEM은 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다. 유사성 검색을 구성하는 [방법을 살펴보십시오](#configvisualsearch).
+사용자가 선택한 이미지와 시각적으로 유사한 이미지를 찾으려면 이미지 카드 **[!UICONTROL 보기나]** 도구 모음에서 비슷한 찾기 옵션을 클릭합니다. Experience Manager는 사용자가 선택한 이미지와 유사한 DAM 저장소의 스마트 태그 이미지를 표시합니다. 유사성 검색을 구성하는 [방법을 살펴보십시오](#configvisualsearch).
 
 ![카드 보기에서 옵션을 사용하여 유사한 이미지 찾기](assets/search_find_similar.png)
 
@@ -143,7 +143,7 @@ AEM 파섹 다음은 자주 사용하는 몇 가지 방법에 대한 설명입�
 
 ### Adobe Stock 이미지 {#adobestock}
 
-AEM 사용자 인터페이스 내에서 사용자는 Adobe Stock [자산을](/help/assets/aem-assets-adobe-stock.md) 검색하고 필요한 자산에 라이선스를 부여할 수 있습니다. Omnisearch `Location: Adobe Stock` 막대에 추가합니다. 또한 필터 패널을 사용하여 라이선스가 부여되거나 라이선스가 부여되지 않은 모든 에셋을 찾거나 Adobe Stock 파일 번호를 사용하여 특정 에셋을 검색할 수 있습니다.
+Adobe Experience Manager 유저 인터페이스 내에서 사용자는 Adobe Stock [자산을](/help/assets/aem-assets-adobe-stock.md) 검색하고 필요한 에셋에 라이선스를 부여할 수 있습니다. Omnisearch `Location: Adobe Stock` 막대에 추가합니다. 또한 필터 패널을 사용하여 라이선스가 부여되거나 라이선스가 부여되지 않은 모든 에셋을 찾거나 Adobe Stock 파일 번호를 사용하여 특정 에셋을 검색할 수 있습니다.
 
 ### 다이내믹 미디어 자산 {#dmassets}
 
@@ -191,17 +191,17 @@ AEM 사용자 인터페이스 내에서 사용자는 Adobe Stock [자산을](/he
 * 특정 문자열이 포함된 속성 값을 사용하여 자산을 표시하려면(예:title = 바젤 회의실): `title:*Meeting*`
 * 특정 문자열이 들어 있고 특정 속성 값이 있는 자산을 표시하려면(예:title=John Doe가 있는 자산에서 문자열 Adobe 검색): `*Adobe* title:"John Doe"`
 
-## 다른 AEM 솔루션 또는 인터페이스에서 자산 검색 {#beyondomnisearch}
+## 다른 Experience Manager 솔루션 또는 인터페이스에서 자산 검색 {#beyondomnisearch}
 
-AEM(Adobe Experience Manager)은 DAM 리포지토리를 다른 다양한 AEM 솔루션과 연결하여 디지털 자산에 대한 신속한 액세스를 제공하고 크리에이티브 워크플로우를 간소화합니다. 모든 자산 검색은 검색 또는 검색으로 시작합니다. 검색 동작은 다양한 지표와 솔루션에서 동일하게 유지됩니다. 일부 검색 방법은 타겟 대상자, 사용 사례 및 사용자 인터페이스가 AEM 솔루션에 따라 달라집니다. 아래 링크에서 개별 솔루션에 대해 특정 방법이 문서화되어 있습니다. 일반적으로 적용 가능한 팁과 행동은 이 문서에 설명되어 있습니다.
+Adobe Experience Manager는 DAM 저장소를 다른 다양한 Adobe Experience Manager 솔루션과 연결하여 디지털 자산에 대한 신속한 액세스를 제공하고 크리에이티브 워크플로우를 간소화합니다. 모든 자산 검색은 검색 또는 검색으로 시작합니다. 검색 동작은 다양한 지표와 솔루션에서 동일하게 유지됩니다. 일부 검색 방법은 타겟 대상자, 사용 사례 및 사용자 인터페이스에 따라 달라집니다. 아래 링크에서 개별 솔루션에 대해 특정 방법이 문서화되어 있습니다. 일반적으로 적용 가능한 팁과 행동은 이 문서에 설명되어 있습니다.
 
 ### Adobe Asset Link 패널에서 에셋 검색 {#aal}
 
-이제 크리에이티브 전문가는 Adobe Asset Link를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고도 AEM 자산에 저장된 컨텐츠에 액세스할 수 있습니다. 크리에이티브 전문가는 Creative Cloud 앱에서 인앱 패널을 사용하여 에셋을 원활하게 검색하고 체크 아웃하고 체크 인할 수 있습니다.Photoshop, Illustrator 및 InDesign. 또한 에셋 링크를 사용하면 시각적으로 유사한 결과를 검색할 수 있습니다. 시각적 검색 표시 결과는 Adobe Sensei의 머신 러닝 알고리즘을 기반으로 하므로 사용자가 미적으로 유사한 이미지를 찾을 수 있습니다. Adobe [Asset Link를 사용하여 자산](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) 검색 및 검색을 참조하십시오.
+이제 크리에이티브 전문가는 Adobe Asset Link를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고도 Experience Manager Assets에 저장되어 있는 콘텐츠에 액세스할 수 있습니다. 크리에이티브 전문가는 Creative Cloud 앱에서 인앱 패널을 사용하여 에셋을 원활하게 검색하고 체크 아웃하고 체크 인할 수 있습니다.Photoshop, Illustrator 및 InDesign. 또한 에셋 링크를 사용하면 시각적으로 유사한 결과를 검색할 수 있습니다. 시각적 검색 표시 결과는 Adobe Sensei의 머신 러닝 알고리즘을 기반으로 하므로 사용자가 미적으로 유사한 이미지를 찾을 수 있습니다. Adobe [Asset Link를 사용하여 자산](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) 검색 및 검색을 참조하십시오.
 
-### AEM 데스크탑 앱의 자산 검색 {#desktopapp}
+### Experience Manager 데스크탑 앱에서 에셋 검색 {#desktopapp}
 
-크리에이티브 전문가는 데스크탑 앱을 사용하여 로컬 데스크탑(Win 또는 Mac)에서 AEM 자산을 손쉽게 검색 및 이용할 수 있도록 합니다. 크리에이티브는 Mac Finder 또는 Windows 탐색기에서 원하는 자산을 쉽게 표시할 수 있으며, 데스크탑 애플리케이션에서 열고 로컬에서 변경할 수 있습니다. 변경 사항은 저장소에서 만든 새 버전으로 다시 AEM에 저장됩니다. 애플리케이션은 하나 이상의 키워드 * 및 ? 와일드카드 및 AND 연산자를 사용할 수 있습니다. 데스크탑 앱의 에셋 [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 검색, 검색 및 미리 보기를 참조하십시오.
+크리에이티브 전문가는 데스크탑 앱을 사용하여 로컬 데스크탑(Win 또는 Mac)에서 Experience Manager 자산을 손쉽게 검색 및 이용할 수 있도록 합니다. 크리에이티브 전문가는 Mac Finder 또는 Windows 탐색기에서 원하는 에셋을 손쉽게 표시할 수 있으며, 데스크탑 애플리케이션에서 열고 로컬에서 변경할 수 있습니다. 변경 사항은 저장소에서 만든 새 버전으로 Experience Manager에 다시 저장됩니다. 애플리케이션은 하나 이상의 키워드 * 및 ? 와일드카드 및 AND 연산자를 사용할 수 있습니다. 데스크탑 앱의 에셋 [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 검색, 검색 및 미리 보기를 참조하십시오.
 
 ### Search assets in Brand Portal {#brandportal}
 
@@ -209,7 +209,7 @@ AEM(Adobe Experience Manager)은 DAM 리포지토리를 다른 다양한 AEM 솔
 
 ### Adobe Stock 이미지 검색 {#adobestock-1}
 
-AEM 사용자 인터페이스 내에서 사용자는 Adobe Stock 자산을 검색하고 필요한 자산에 라이선스를 부여할 수 있습니다. Omnisearch `Location: Adobe Stock` 필드에 추가합니다. 또한 필터 **[!UICONTROL 패널을 사용하여]** 라이선스가 부여되거나 라이선스가 부여되지 않은 모든 에셋을 찾거나 Adobe Stock 파일 번호를 사용하여 특정 에셋을 검색할 수 있습니다. AEM에서 Adobe Stock 이미지 [관리를 참조하십시오](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Adobe Experience Manager 유저 인터페이스 내에서 사용자는 Adobe Stock 에셋을 검색하고 필요한 에셋에 라이선스를 부여할 수 있습니다. Omnisearch `Location: Adobe Stock` 필드에 추가합니다. 또한 필터 **[!UICONTROL 패널을 사용하여]** 라이선스가 부여되거나 라이선스가 부여되지 않은 모든 에셋을 찾거나 Adobe Stock 파일 번호를 사용하여 특정 에셋을 검색할 수 있습니다. Experience Manager에서 Adobe Stock 이미지 [관리를 참조하십시오](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Dynamic Media 자산 검색 {#dynamicmedia}
 
@@ -217,11 +217,11 @@ AEM 사용자 인터페이스 내에서 사용자는 Adobe Stock 자산을 검�
 
 ### 웹 페이지를 작성할 때 Content Finder에서 자산 검색 {#contentfinder}
 
-작성자는 Content Finder를 사용하여 DAM 리포지토리에서 관련 자산을 검색하고, 만든 웹 페이지에서 자산을 사용할 수 있습니다. 작성자는 연결된 자산 기능을 사용하여 원격 AEM 배포에서 사용할 수 있는 자산을 검색할 수도 있습니다. 작성자는 이러한 자산을 로컬 AEM 배포의 웹 페이지에서 사용할 수 있습니다. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
+작성자는 Content Finder를 사용하여 DAM 리포지토리에서 관련 자산을 검색하고, 만든 웹 페이지에서 자산을 사용할 수 있습니다. 또한 작성자는 연결된 에셋 기능을 사용하여 원격 Experience Manager 배포에서 사용할 수 있는 에셋을 검색할 수 있습니다. 작성자는 이러한 자산을 로컬 Experience Manager 배포의 웹 페이지에서 사용할 수 있습니다. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
 ### 컬렉션 검색 {#collections}
 
-AEM 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 컬렉션 [검색을](/help/assets/managing-collections-touch-ui.md)참조하십시오.
+Experience Manager 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 컬렉션 [검색을](/help/assets/managing-collections-touch-ui.md)참조하십시오.
 
 ## 자산 선택기 {#assetselector}
 
@@ -248,18 +248,18 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 ## 제한 사항 {#limitations}
 
-AEM 자산의 검색 기능에는 다음과 같은 제한 사항이 있습니다.
+Experience Manager Assets의 검색 기능에는 다음과 같은 제한 사항이 있습니다.
 
 * 검색 쿼리에 선행 공백을 입력하지 마십시오. 그렇지 않으면 검색이 작동하지 않습니다.
-* 검색된 결과에서 자산의 속성을 선택한 다음 검색을 취소한 후에도 AEM은 검색어를 계속 표시할 수 있습니다. <!-- (CQ-4273540) -->
+* 검색된 결과에서 자산의 속성을 선택한 다음 검색을 취소한 후에도 Adobe Experience Manager는 검색어를 계속 표시할 수 있습니다. <!-- (CQ-4273540) -->
 * 폴더 또는 파일 및 폴더를 검색할 때 어떤 매개 변수에서 검색 결과를 정렬할 수 없습니다.
-* Omnisearch 막대에 아무 것도 입력하지 않고 Return 키를 누르면 AEM이 폴더가 아닌 파일 전용 목록을 반환합니다. 키워드를 사용하지 않고 폴더를 특히 검색하는 경우 AEM에서 아무 결과도 반환하지 않습니다.
+* Omnisearch 막대에 아무 것도 입력하지 않고 Return 키를 누르면 Experience Manager가 폴더가 아닌 파일 전용 목록을 반환합니다. 키워드를 사용하지 않고 폴더를 특히 검색하는 경우 Experience Manager는 결과를 반환하지 않습니다.
 * 검색 **[!UICONTROL 페이지의 오른쪽]** 위에 있는 모두 선택 옵션을 사용하여 검색된 자산을 선택합니다. Adobe Experience Manager는 처음에는 카드 보기에 100개의 자산을 표시하고 목록 보기에는 200개의 자산을 표시합니다. 검색 결과를 스크롤하면 더 많은 자산이 로드됩니다. 로드된 자산보다 더 많은 자산을 선택할 수 있습니다. 선택한 자산의 수가 검색 결과 페이지의 오른쪽 위 모서리에 표시됩니다. 선택한 에셋을 다운로드하거나, 선택한 자산에 대해 메타데이터 속성을 대량으로 업데이트하거나, 선택한 에셋을 컬렉션에 추가하는 등의 작업을 수행할 수 있습니다. 표시된 자산보다 많은 자산을 선택하면 선택한 모든 자산에 작업이 적용되거나 대화 상자에 적용된 자산 수가 표시됩니다. 로드되지 않은 자산에 작업을 적용하려면 모든 자산이 명시적으로 선택되어 있는지 확인합니다.
 
 시각적 검색 또는 유사성 검색에는 다음과 같은 제한이 있습니다.
 
 * 더 큰 저장소에서 시각적인 검색이 가장 적합합니다. 좋은 결과를 얻기 위해 필요한 최소 이미지 수는 없지만, 일부 이미지가 있는 일치 항목의 품질이 큰 저장소의 일치 항목 만큼 좋지 않을 수 있습니다.
-* 모델을 변경하거나 AEM에서 유사한 이미지를 찾도록 교육할 수 없습니다. 예를 들어 일부 자산에 스마트 태그를 추가하거나 제거해도 모델이 변경되지 않습니다. 자산은 시각적으로 유사한 검색 결과에서 제외됩니다.
+* 모델을 변경하거나 Adobe Experience Manager에서 유사한 이미지를 찾을 수 없습니다. 예를 들어 일부 자산에 스마트 태그를 추가하거나 제거해도 모델이 변경되지 않습니다. 자산은 시각적으로 유사한 검색 결과에서 제외됩니다.
 
 검색 기능에는 다음 시나리오에서 성능 제한이 있을 수 있습니다.
 
@@ -275,7 +275,7 @@ AEM 자산의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 * 전체 텍스트 검색은 -,^ 등과 같은 연산자를 지원합니다. 이러한 문자를 문자열 리터럴로 검색하려면 검색 표현식을 큰 따옴표로 묶습니다. 예를 들어 노트북 - Beauty 대신 &quot;Notebook - Beauty&quot;를 사용합니다.
 * 검색 결과가 너무 많으면 원하는 자산에서 검색 [범위를 0으로](#scope) 제한합니다. 특정 파일 유형, 특정 위치, 특정 메타데이터 등과 같이 원하는 에셋을 보다 잘 찾는 방법을 알고 있을 때 가장 적합합니다.
 
-* **태그 지정**:태그를 사용하면 보다 효율적으로 검색 및 검색할 수 있는 자산을 분류할 수 있습니다. 태깅을 사용하면 적절한 분류법을 다른 사용자 및 워크플로우에 전파할 수 있습니다. AEM은 사용 및 트레이닝을 통해 에셋에 태그를 더 잘 지정하도록 하는 Adobe Sensei의 인공적인 지능형 서비스를 사용하여 에셋에 자동으로 태그를 지정하는 방법을 제공합니다. 자산을 검색할 때 계정에서 기능이 활성화되어 있으면 스마트 태그가 포함됩니다. AEM의 내장된 검색 기능과 함께 작동합니다. 검색 [동작을](#searchbehavior)참조하십시오. 검색 결과가 표시되는 순서를 최적화하려면 일부 선택한 자산의 검색 등급을 [높일](#searchrank) 수 있습니다.
+* **태그 지정**:태그를 사용하면 보다 효율적으로 검색 및 검색할 수 있는 자산을 분류할 수 있습니다. 태깅을 사용하면 적절한 분류법을 다른 사용자 및 워크플로우에 전파할 수 있습니다. Adobe Experience Manager는 Adobe Sensei의 인공 지능(AI) 서비스를 사용하여 에셋에 자동으로 태그를 지정하여 사용 및 트레이닝을 통해 에셋에 태그를 지정하는 방법을 제공합니다. 자산을 검색할 때 계정에서 기능이 활성화되어 있으면 스마트 태그가 포함됩니다. 내장된 검색 기능과 함께 사용할 수 있습니다. 검색 [동작을](#searchbehavior)참조하십시오. 검색 결과가 표시되는 순서를 최적화하려면 일부 선택한 자산의 검색 등급을 [높일](#searchrank) 수 있습니다.
 
 * **인덱싱**:인덱싱된 메타데이터와 자산만 검색 결과에 반환됩니다. 더 나은 취재와 성과를 위해서는 적절한 색인 작성 및 우수 사례를 따르십시오. 색인 [지정을](#searchindex)참조하십시오.
 
@@ -324,9 +324,9 @@ AEM 자산의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 
 ### 시각적 또는 유사성 검색 {#configvisualsearch}
 
-시각적 검색은 스마트 태그 지정을 사용하며 AEM 6.5.2.0 이상이 필요합니다. 스마트 태그 지정 기능을 구성한 후 다음 단계를 수행합니다.
+시각적 검색은 스마트 태그 지정을 사용하며 Experience Manager 6.5.2.0 이상이 필요합니다. 스마트 태그 지정 기능을 구성한 후 다음 단계를 수행합니다.
 
-1. AEM CRXDE의 `/oak:index/lucene` 노드에서 다음 속성과 값을 추가하고 변경 사항을 저장합니다.
+1. Experience Manager CRXDE의 `/oak:index/lucene` 노드에서 다음 속성과 값을 추가하고 변경 사항을 저장합니다.
 
    * `costPerEntry` 속성( `Double` 값 포함) `10`.
 
@@ -347,11 +347,11 @@ AEM 자산의 검색 기능에는 다음과 같은 제한 사항이 있습니다
    변경 사항을 저장합니다.
 
 1. 의 값을 `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` 사용하여 유형의 `similarityTags` 속성에 액세스하고 추가할 `Boolean` 수 `true`있습니다.
-1. AEM 저장소의 자산에 스마트 태그를 적용합니다. 스마트 태그를 구성하는 [방법을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html).
+1. Experience Manager 저장소의 자산에 스마트 태그를 적용합니다. 스마트 태그를 구성하는 [방법을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html).
 1. CRXDE의 `/oak-index/damAssetLucene` 노드에서 `reindex` 속성을 로 설정합니다 `true`. 변경 사항을 저장합니다.
 1. (선택 사항) 검색 양식을 사용자 정의한 경우 `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` 노드를 `/conf/global/settings/dam/search/facets/assets/jcr:content/items`복사합니다. 모든 변경 내용을 저장합니다.
 
-관련 정보는 AEM의 스마트 태그 [이해](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) 및 스마트 태그 [관리](/help/assets/managing-smart-tags.md)방법을 참조하십시오.
+관련 정보는 Experience Manager의 스마트 태그 [이해](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) 및 스마트 태그 [관리](/help/assets/managing-smart-tags.md)방법을 참조하십시오.
 
 ### 필수 메타데이터 {#mandatorymetadata}
 
@@ -359,11 +359,11 @@ AEM 자산의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 
 ### 검색 패싯 수정 {#searchfacets}
 
-검색 속도를 개선하기 위해 AEM 자산에서는 검색 결과를 필터링할 수 있는 검색 패싯을 제공합니다. 필터 패널에는 기본적으로 몇 가지 표준 패싯이 포함되어 있습니다. 관리자는 내장된 조건자를 사용하여 필터 패널을 사용자 정의하여 기본 패싯을 수정할 수 있습니다. AEM 파섹 검색 패싯을 [참조하십시오](/help/assets/search-facets.md).
+검색 속도를 개선하기 위해 Experience Manager Assets는 검색 결과를 필터링할 수 있는 검색 패싯을 제공합니다. 필터 패널에는 기본적으로 몇 가지 표준 패싯이 포함되어 있습니다. 관리자는 내장된 조건자를 사용하여 필터 패널을 사용자 정의하여 기본 패싯을 수정할 수 있습니다. Adobe Experience Manager는 패싯을 사용자 정의할 수 있는 내장된 예측자와 편집기의 훌륭한 컬렉션을 제공합니다. 검색 패싯을 [참조하십시오](/help/assets/search-facets.md).
 
 ### 에셋 업로드 시 텍스트 추출 {#extracttextupload}
 
-사용자가 PSD 또는 PDF 파일과 같은 자산을 업로드할 때 자산에서 텍스트를 추출하도록 AEM을 구성할 수 있습니다. AEM 파섹 자산 [업로드를](/help/assets/managing-assets-touch-ui.md#uploading-assets)참조하십시오.
+사용자가 PSD 또는 PDF 파일과 같은 자산을 업로드할 때 Experience Manager가 자산에서 텍스트를 추출하도록 구성할 수 있습니다. Adobe Experience Manager는 추출된 텍스트를 색인화하고 추출된 텍스트를 기반으로 이러한 자산을 검색하는 데 도움이 됩니다. 자산 [업로드를](/help/assets/managing-assets-touch-ui.md#uploading-assets)참조하십시오.
 
 ### 검색 결과 필터링을 위한 사용자 정의 예측 {#custompredicates}
 
@@ -399,7 +399,7 @@ AEM 자산의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 
 ### 검색 결과 정렬 {#sort}
 
-검색 결과를 정렬하면 필요한 자산을 보다 신속하게 검색할 수 있습니다. 검색 결과 정렬은 목록 보기에서 작동하며 [필터] **[!UICONTROL [패널에서](#searchui)]**[**[!UICONTROL &#x200B;파일]을 선택한 경우에만&#x200B;]**작동합니다. AEM Assets는 서버측 정렬을 사용하여 폴더 내의 모든 자산(얼마나 많은 자산)을 빠르게 정렬하거나 검색 쿼리의 결과를 표시합니다. 서버측 정렬은 클라이언트측 정렬보다 빠르고 정확한 결과를 제공합니다.
+검색 결과를 정렬하면 필요한 자산을 보다 신속하게 검색할 수 있습니다. 검색 결과 정렬은 목록 보기에서 작동하며 [필터] **[!UICONTROL [패널에서](#searchui)]**[**[!UICONTROL &#x200B;파일]을 선택한 경우에만&#x200B;]**작동합니다. Adobe Experience Manager Assets는 서버측 정렬을 사용하여 폴더 내의 모든 자산(얼마나 많은 자산)을 빠르게 정렬하거나 검색 쿼리의 결과를 표시합니다. 서버측 정렬은 클라이언트측 정렬보다 빠르고 정확한 결과를 제공합니다.
 
 목록 보기에서는 모든 폴더의 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, 차원, 크기, 등급, 사용, (날짜) 작성일, 수정됨, (날짜) 게시, 워크플로우, 체크 아웃과 같은 열에서 작동합니다.
 
@@ -440,19 +440,19 @@ AEM 자산의 검색 기능에는 다음과 같은 제한 사항이 있습니다
 
 | 오류, 문제, 증상 | 가능한 이유 | 문제 해결 또는 이해 가능 |
 |---|---|---|
-| 메타데이터가 누락된 자산을 검색할 때 결과가 잘못되었습니다. | 필수 메타데이터가 누락된 자산을 검색할 때 AEM에 유효한 메타데이터가 있는 일부 자산이 표시될 수 있습니다. 결과는 인덱스 메타데이터 속성을 기반으로 합니다. | 메타데이터가 업데이트되면 자산 메타데이터의 올바른 상태를 반영하려면 다시 색인화가 필요합니다. 필수 [메타데이터를](metadata-schemas.md#define-mandatory-metadata)참조하십시오. |
+| 메타데이터가 누락된 자산을 검색할 때 결과가 잘못되었습니다. | 필수 메타데이터가 누락된 에셋을 검색할 때 Experience Manager에 유효한 메타데이터가 있는 일부 에셋이 표시될 수 있습니다. 결과는 인덱스 메타데이터 속성을 기반으로 합니다. | 메타데이터가 업데이트되면 자산 메타데이터의 올바른 상태를 반영하려면 다시 색인화가 필요합니다. 필수 [메타데이터를](metadata-schemas.md#define-mandatory-metadata)참조하십시오. |
 | 검색 결과가 너무 많습니다. | 광범위한 검색 매개 변수 | 검색 [범위](#scope)제한을 고려합니다. 스마트 태그를 사용하면 예상보다 더 많은 검색 결과를 얻을 수 있습니다. 스마트 태그를 사용한 [검색 동작을](#withsmarttags)참조하십시오. |
 | 관련 없거나 부분적으로 관련된 검색 결과 | 스마트 태그 지정 기능을 사용하여 검색 동작이 변경됩니다. | 스마트 태그 지정 [후 검색이 변경되는](#withsmarttags)방식을 이해합니다. |
-| 자산에 대한 자동 완성 제안 없음 | 새로 업로드된 에셋은 아직 색인이 되지 않았습니다. Omnisearch 막대에서 검색 키워드를 입력하기 시작하면 메타데이터는 제안 사항으로 즉시 사용할 수 없습니다. | AEM Assets는 백그라운드 작업을 실행하기 전에 시간 제한 기간(기본적으로 1시간)이 끝날 때까지 기다렸다가 새로 업로드되거나 업데이트된 모든 자산에 대한 메타데이터를 색인화한 다음 메타데이터를 제안 목록에 추가합니다. |
+| 자산에 대한 자동 완성 제안 없음 | 새로 업로드된 에셋은 아직 색인이 되지 않았습니다. Omnisearch 막대에서 검색 키워드를 입력하기 시작하면 메타데이터는 제안 사항으로 즉시 사용할 수 없습니다. | Adobe Experience Manager Assets는 백그라운드 작업을 실행하기 전에 시간 제한 기간(기본적으로 1시간)이 끝날 때까지 기다렸다가 새로 업로드되거나 업데이트된 모든 자산의 메타데이터를 색인화한 다음 메타데이터를 제안 목록에 추가합니다. |
 | 검색 결과 없음 | <ul><li>쿼리와 일치하는 자산이 없습니다.</li><li>검색 쿼리 전에 공백을 추가했습니다.</li><li>지원되지 않는 메타데이터 필드에 검색하는 키워드가 포함되어 있습니다.</li><li>자산 설정 시간 및 해제 시간이 구성되고 자산의 해제 시간 동안 검색이 수행되었습니다.</li></ul> | <ul><li>다른 키워드를 사용하여 검색합니다. 또는 (스마트) 태그 지정을 사용하여 검색 결과를 향상시킬 수 있습니다.</li><li>이것은 [알려진 제한이다](#limitations).</li><li>일부 메타데이터 필드는 검색으로 간주되지 않습니다. 자세한 내용은 [범위를](#scope)참조하십시오.</li><li>나중에 검색하거나 필요한 자산의 시간 설정을 수정 및 해제합니다.</li></ul> |
-| 검색 필터/조건자를 사용할 수 없습니다. | <ul><li>검색 필터가 구성되지 않았습니다.</li><li>로그인에는 사용할 수 없습니다.</li><li>(거의 사용되지 않음) 사용 중인 배포에 대해 검색 옵션이 사용자 지정되지 않습니다.</li></ul> | <ul><li>검색 사용자 정의 사용 가능 여부를 확인하려면 관리자에게 문의하십시오.</li><li>계정에 사용자 지정을 사용할 수 있는 권한/권한이 있는지 확인하려면 관리자에게 문의하십시오.</li><li>관리자에게 문의하여 사용 중인 AEM 자산 배포에 대한 사용 가능한 사용자 지정을 확인하십시오.</li></ul> |
-| 시각적으로 유사한 이미지를 검색할 때 예상 이미지가 누락됩니다 | <ul><li>AEM에서는 이미지를 사용할 수 없습니다.</li><li>이미지가 인덱싱되지 않았습니다. 일반적으로 최근에 업로드된 경우입니다.</li><li>이미지에 스마트 태그가 없습니다.</li></ul> | <ul><li>AEM 자산에 이미지를 추가합니다.</li><li>관리자에게 문의하여 저장소를 다시 색인화합니다. 또한 적절한 인덱스를 사용하고 있는지 확인합니다.</li><li>관리자에게 연락하여 관련 자산에 스마트 태그를 지정합니다.</li></ul> |
-| 시각적으로 유사한 이미지를 검색할 때 관련 없는 이미지가 표시됩니다 | 시각적 검색 동작 | AEM은 가능한 한 많은 관련 자산을 표시합니다. 연관성이 낮은 이미지가 있는 경우 결과에 추가되지만 검색 등급이 낮습니다. 검색 결과를 아래로 스크롤하면 검색 자산의 일치 항목 및 연관성이 낮아집니다. |
+| 검색 필터/조건자를 사용할 수 없습니다. | <ul><li>검색 필터가 구성되지 않았습니다.</li><li>로그인에는 사용할 수 없습니다.</li><li>(거의 사용되지 않음) 사용 중인 배포에 대해 검색 옵션이 사용자 지정되지 않습니다.</li></ul> | <ul><li>검색 사용자 정의 사용 가능 여부를 확인하려면 관리자에게 문의하십시오.</li><li>계정에 사용자 지정을 사용할 수 있는 권한/권한이 있는지 확인하려면 관리자에게 문의하십시오.</li><li>관리자에게 문의하여 사용 중인 Experience Manager 자산 배포에 대한 사용 가능한 사용자 지정을 확인하십시오.</li></ul> |
+| 시각적으로 유사한 이미지를 검색할 때 예상 이미지가 누락됩니다 | <ul><li>Experience Manager에서 이미지를 사용할 수 없습니다.</li><li>이미지가 인덱싱되지 않았습니다. 일반적으로 최근에 업로드된 경우입니다.</li><li>이미지에 스마트 태그가 없습니다.</li></ul> | <ul><li>Experience Manager 자산에 이미지를 추가합니다.</li><li>관리자에게 문의하여 저장소를 다시 색인화합니다. 또한 적절한 인덱스를 사용하고 있는지 확인합니다.</li><li>관리자에게 연락하여 관련 자산에 스마트 태그를 지정합니다.</li></ul> |
+| 시각적으로 유사한 이미지를 검색할 때 관련 없는 이미지가 표시됩니다 | 시각적 검색 동작 | Adobe Experience Manager는 관련성이 높은 자산을 가능한 한 많이 표시합니다. 연관성이 낮은 이미지가 있는 경우 결과에 추가되지만 검색 등급이 낮습니다. 검색 결과를 아래로 스크롤하면 검색 자산의 일치 항목 및 연관성이 낮아집니다. |
 | 검색 결과를 선택하고 실행할 때 검색된 모든 자산은 | 모두 [!UICONTROL 선택] 옵션은 카드 보기에서 처음 100개의 검색 결과와 목록 보기에서 처음 200개의 검색 결과만 선택합니다. |  |
 
 >[!MORELIKETHIS]
 >
->* [AEM 검색 구현 안내서](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Experience Manager 검색 구현 안내서](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [다중 값 및 태그 검색 예측자의 고급 구성](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
 >* [고급 번역 검색 구성](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
