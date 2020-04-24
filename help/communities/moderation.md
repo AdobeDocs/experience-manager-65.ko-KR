@@ -11,29 +11,29 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
-# 중재 콘솔{#moderation-console}
+# 중재 콘솔 {#moderation-console}
 
 AEM Communities에서는 관리자 및 커뮤니티 중재자(중재자로 지정된 신뢰할 수 있는 커뮤니티 구성원)가 작성 환경과 게시 환경 모두에서 커뮤니티 컨텐츠를 [일괄](/help/communities/moderate-ugc.md) 중재할 수 있습니다.
 
 관리자 및 커뮤니티 중재자는 게시 환경에서 [상황에 맞는 중재를](/help/communities/in-context.md) 수행할 수도 있습니다.
 
-모든 [커뮤니티 사이트의](/help/communities/sites-console.md) 기능은 관리자 권한으로 로그인한 사용자가 사용할 수 있는 `Administration`메뉴 항목입니다. 이 `Administration`링크는 중재 콘솔에 대한 액세스를 제공합니다.
+모든 [커뮤니티 사이트의](/help/communities/sites-console.md) 기능은 관리자 권한으로 로그인한 사용자가 사용할 수 있는 `Administration` 메뉴 항목입니다. 이 `Administration` 링크를 통해 중재 콘솔에 액세스할 수 있습니다.
 
 중재 콘솔에서 관리자 및 커뮤니티 중재자는 중재할 권한이 있는 모든 사용자 생성 콘텐츠(UGC)에 액세스할 수 있습니다. 여러 사이트를 중재할 수 있도록 허용된 경우 모든 사이트의 게시물을 보거나 선택한 커뮤니티 사이트별로 필터링할 수 있습니다.
 
 자세한 내용은 사용자 및 [사용자 그룹 관리를 참조하십시오](/help/communities/users.md).
 
-중재 콘솔은 다음을 지원합니다.
+중재 콘솔에서는 다음을 지원합니다.
 
 * 일괄 중재 작업 수행
-* UGC 검색
-* UGC 세부 정보 보기
-* UGC 작성자 세부 정보 보기
+* UGC를 검색하는 중입니다.
+* UGC 세부 사항 보기를 참조하십시오.
+* UGC 작성자 세부 정보 보기를 참조하십시오.
 
 관리자로 로그인하거나 함께 구성원으로 로그인된 경우에만 중재 작업을 수행할 ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`수 있습니다.
 
@@ -51,13 +51,14 @@ AEM Communities에서는 관리자 및 커뮤니티 중재자(중재자로 지�
 
 작성 환경에서 중재 콘솔에 도달하려면
 
-* 전역 탐색:탐색, **커뮤니티, 중재**
+* 글로벌 탐색에서 커뮤니티 > **[!UICONTROL 중재를]** 선택합니다 ****.
 
-관리자 또는 구성원으로 로그인된 경우에만 중재 작업을 수행할 수 ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`있습니다. 표시된 유일한 커뮤니티 콘텐츠는 로그인한 구성원이 중재할 수 있는 것입니다.
+관리자로 로그인하거나 [중재자 권한이](/help/communities/in-context.md#identifyingtrustedmembers)있는 구성원으로 로그인하는 경우에만 중재 작업을 수행할 수 있습니다. 표시된 유일한 커뮤니티 콘텐츠는 로그인한 구성원이 중재할 수 있는 것입니다.
 
 >[!NOTE]
 >
 >게시 환경의 UGC는 선택한 SRP가 공용 저장소를 구현하는 경우에만 작성자에게 표시됩니다. 예를 들어, 기본적으로 스토리지는 JSRP로 작성자와 게시를 위한 일반적인 스토어가 아닙니다. 커뮤니티 [컨텐츠 저장소를 참조하십시오](/help/communities/working-with-srp.md).
+
 
 ![moderationconsoundeauthor](assets/moderationconsoleauthor.png)
 
@@ -67,7 +68,7 @@ AEM Communities에서는 관리자 및 커뮤니티 중재자(중재자로 지�
 
 * **[위쪽 내비게이션 막대](#top-navigation-bar)**
 * **[도구 모음](#toolbar)**
-* **[콘텐츠 영역](#content-area)**
+* **[컨텐츠 영역](#content-area)**
 
 ### Top Navigation Bar {#top-navigation-bar}
 
@@ -89,21 +90,22 @@ AEM Communities에서는 관리자 및 커뮤니티 중재자(중재자로 지�
 
 ### 컨텐츠 영역 {#content-area}
 
-콘텐트 영역에는 게시된 UGC에 대한 정보가 포함되어 있습니다.
+컨텐츠 영역에는 게시된 UGC에 대한 정보가 포함되어 있습니다.
 
 * UGC 게시됨
 * 멤버 이름
-* 멤버 아바타
-* 게시물의 위치
-* 게시 시기
-* 게시물에 대한 답글 수
-* [게시물과 연결된 센티멘트](/help/communities/moderate-ugc.md#sentiment)
+* 회원 아바타
+* 게시물의 위치입니다.
+* 게시되었을 때
+* 게시물에 대한 답글 수입니다.
+* [게시물과](/help/communities/moderate-ugc.md#sentiment) 연결된 센티멘트
 * 승인되면 확인 표시가 표시됩니다.
-* 첨부 파일이 있는 경우 페이퍼클립이 표시됩니다
+* 첨부 파일이 있는 경우 종이 클립이 표시됩니다.
 
 >[!NOTE]
->
+> 
 >콘텐트 영역에는 *무한 스크롤이*&#x200B;적용되어 있으므로 콘텐츠의 끝에 도달할 때까지 계속 스크롤할 수 있습니다. 도구 모음은 스크롤하는 동안에도 컨텐츠 영역 위에 고정되고 표시되는 위치에 남아 있습니다.
+
 
 ### 필터 레일 {#ootbfilters}
 
@@ -111,15 +113,16 @@ AEM Communities에서는 관리자 및 커뮤니티 중재자(중재자로 지�
 
 사이드 패널 아이콘이 필터 레일을 엽니다. 컨텐츠 영역의 왼쪽에 표시되는 필터 레일은 서로 다른 필터를 제공하므로 각 필터는 컨텐츠 영역에 나타나는 참조된 UGC에 즉시 영향을 줍니다.
 
-각 카테고리 내의 필터는 ****&#x200B;함께 사용하거나 결합되며, 여러 카테고리의 필터는 ****&#x200B;함께 결합됩니다.
+각 카테고리 내의 필터는 **모두** OR이며, 다른 범주의 필터는 **AND**&#x200B;입니다.
 
-예를 들어 [질문] 및 [ **대답** ] **을**&#x200B;모두&#x200B;*선택하면 **질문 *** 또는 **AnswerAnswer**&#x200B;와 같은 컨텐츠가 표시됩니다.
+예를 들어 [질문] 및 [ **대답** ] **을**&#x200B;모두 **선택하면** 질문 *또는 VerizingAnswerAnswerAnswer* 에 해당하는 내용이 ****&#x200B;표시됩니다.
 
-그러나 질문 및 **보류** 상태를 **선택하면 **질문 ****&#x200B;이고 보류 중인 컨텐츠만 **표시됩니다**.
+그러나 질문 및 **보류** 중 **옵션을**&#x200B;선택하면 **질문이며 보류 중인** 콘텐트만 **볼**&#x200B;수있습니다.
 
 >[!NOTE]
 >
 >커뮤니티 중재자는 중재 콘솔 UI에 사전 정의된 필터를 책갈피로 지정할 수 있습니다. 이러한 필터는 URL 끝(쿼리 문자열 매개 변수)에 추가되므로 중재자는 나중에 책갈피가 지정된 필터로 다시 돌아가서 이러한 링크도 공유할 수 있습니다.
+
 
 ![searchicon](assets/searchicon.png)
 
@@ -149,6 +152,7 @@ AEM Communities에서는 관리자 및 커뮤니티 중재자(중재자로 지�
 >
 >신뢰할 수 있는 커뮤니티 구성원이 게시 시 벌크 중재 콘솔에 액세스하면 구성원이 중재할 수 있는 커뮤니티 사이트에 대해 만든 UGC에 대한 참조만 표시되며 사이트 필터로 필터링할 수 있습니다.
 
+
 #### 컨텐트 유형 {#content-type}
 
 컨텐츠 유형은 참조된 UGC가 선택한 리소스 유형의 게시물로 제한됩니다. 다음 유형 중 하나 이상을 선택할 수 있습니다. 선택하지 않으면 모든 유형이 표시됩니다.
@@ -173,22 +177,22 @@ AEM Communities에서는 관리자 및 커뮤니티 중재자(중재자로 지�
 
 필터링할 리소스를 추가하려면:
 
-* 작성자 인스턴스에서
-* 관리자로 로그인
-* 웹 [콘솔 열기](https://localhost:4502/system/console/configMgr)
-* locate `AEM Communities Moderation Dashboard Filters`
-* 편집 모드에서 열 구성 선택
-* 필터링할 구성 요소의 리소스 유형 입력
+* 관리자로 작성자 인스턴스에 로그인합니다.
+* 웹 [콘솔을 엽니다](https://localhost:4502/system/console/configMgr).
+* 위치를 `AEM Communities Moderation Dashboard Filters`찾습니다.
+* 편집 모드에서 열 구성을 선택합니다.
+* 필터링할 구성 요소의 ResourceType을 입력합니다.
 
-   * 예를 들어 포함된 투표 구성 요소를 필터링하려면 다음을 입력합니다.
+   * 예를 들어 포함된 투표 구성 요소에 대해 필터링하려면 다음을 입력합니다.
+
       `Voting=social/tally/components/hbs/voting`
 
 ![chlimage_1-215](assets/chlimage_1-215.png)
 
-* 저장 선택
-* 커뮤니티 - 중재 콘솔 새로 고침
+* 저장을 선택합니다.
+* 커뮤니티 - 중재 콘솔을 새로 고칩니다.
 
-필터 그룹 `Voting`아래에 대해 선택 가능한 새로운 필터가 `Content Type` 만들어집니다.
+그 결과 필터 그룹 `Voting` 아래에 대해 선택 가능한 새로운 필터가 `Content Type` 만들어집니다.
 
 이 필터를 선택하면 대시보드 컨텐츠가 입력된 ResourceTypes와 일치하는 UGC를 표시합니다.
 
@@ -200,13 +204,14 @@ AEM Communities에서는 관리자 및 커뮤니티 중재자(중재자로 지�
 >
 >해결책이 제시되지 않음 상태만 선택된 경우 중재자는 답변된 질문을 제외한 모든 컨텐츠 유형(모든 컨텐츠 유형)을 보게 됩니다. 답변되지 않은 질문과 포럼 주제, 블로그 기사 또는 댓글과 같은 기타 컨텐츠의 경우 답변된 질문에 대한 책임이 있는 속성이 존재하지 않기 때문입니다.
 
+
 ![상태](assets/statuses.png)
 
 #### 플래그 지정 {#flagging}
 
 플래그를 지정하면 플래그 지정되거나 숨겨진 게시물에 표시되는 참조된 UGC가 제한됩니다.
 
-컨텐츠가 플래그가 지정되면 **플래그 **버튼을 다시 한 번 선택하여 해당 컨텐츠의 플래그를 해제할 때까지 플래그가 지정됩니다. 중요 또는 팔로우와 같은 플래그 지정은 없습니다.
+컨텐츠 일부가 플래그가 지정되면 플래그 **단추를 다시 한 번 선택하여 해당 컨텐츠의 플래그를 해제할 때까지 플래그가** 지정됩니다. 중요 또는 팔로우와 같은 플래그 지정은 없습니다.
 
 ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -287,10 +292,10 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 
 ### 단일 게시물 중재 {#moderating-a-single-post}
 
-단일 선택 모드에서
+단일 선택 모드에서 다음을 수행할 수 있습니다.
 
-* 사용자 이름을 선택하여 사용자 세부 사항 보기
-* 게시물에 대한 링크를 선택하여 게시물 컨텍스트 내 보기
+* 사용자 이름을 선택하여 사용자 세부 사항을 봅니다.
+* 게시물에 대한 링크를 선택하여 상황에 맞는 게시물을 봅니다.
 * [답글](#reply)
 * [허용](#allow)
 * [거부](#deny)
@@ -299,12 +304,12 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 * 중재 [내역 보기](#moderation-history)
 * [세부 사항 보기](#viewdetails)
 
-중재 작업 아이콘 위의 카드 보기에는 게시물의 텍스트이고 아래는
+중재 작업 아이콘 위의 카드 보기에 표시되는 것은 게시물의 텍스트이고 아래에 표시되는 데이터는 다음과 같습니다.
 
-* if has replies, and if so, the first by the number of replies
+* 답글이 있는 경우, 그리고 있을 경우 답글 수 앞에 옵니다.
 * 플래그가 지정된 경우
-* if the approved
-* ugc가 게시되었을 때
+* 승인되었다면
+* UGC가 게시되었을 때.
 
 ![singleselectmode](assets/singleselectmode.png)
 
@@ -324,7 +329,7 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-**Deny **moderation 작업은 중재된 컨텐츠에만 사용할 수 있으며 다중 선택 모드를 제외한 중재되지 않은 컨텐츠에는 나타나지 않습니다.
+중재 **거부** 작업은 중재된 컨텐츠에만 사용할 수 있으며 다중 선택 모드를 제외한 중재되지 않은 컨텐츠에는 나타나지 않습니다.
 
 중재되지 않은 컨텐츠는 항상 승인됩니다.
 
@@ -336,7 +341,7 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-단일 선택 또는 벌크 모드에서 항목을 선택하고 삭제할 수 있습니다. 삭제 작업으로 인해 확인 대화 상자가 나타납니다. 삭제된 항목은 컨텐츠 영역에서 즉시 사라집니다. **UGC가 삭제되면 저장소에서 영구적으로 제거되고 나중에 검색할 수 없습니다.**
+단일 선택 또는 벌크 모드에서 항목을 선택하고 삭제할 수 있습니다. 삭제 작업으로 인해 확인 대화 상자가 나타납니다. 삭제된 항목은 컨텐츠 영역에서 즉시 사라집니다. **UGC가 삭제되면 저장소에서 영구적으로 제거되고 나중에 검색할**&#x200B;수 없습니다.
 
 #### 닫기 {#close}
 
