@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산 및 Dynamic Media에서 지원하는 파일 포맷 및 각 형식에 지원되는 기능 목록.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: 5304d956161ee7edce2ad5c058eec3ac7e200abf
 
 ---
 
@@ -111,8 +111,33 @@ AEM Assets는 Adobe Camera Raw 라이브러리를 사용하여 Raw 이미지를 
 
 자산 관리 기능에 지원되는 문서 형식은 다음과 같습니다.
 
-| 형식 | 저장 용량 | 메타데이터<br> 관리 | 메타데이터<br> 추출 | 축소판<br> 생성 | 인터랙티브한<br> 편집 | 메타데이터<br> 원본에 쓰기 | [인사이트](touch-ui-asset-insights.md) | [연결된 자산](use-assets-across-connected-assets-instances.md) |
+<!--
+DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
+
+| Format | Storage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
+| DOC | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
+| DOCX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
+| ODT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| HTML | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| RTF | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| TXT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| XLS | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
+| XLSX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
+| ODS | &#10003; | &#10003; | &#10003; | | | | | |
+| PPT | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
+| PPTX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
+| ODP | &#10003; | &#10003; | &#10003; | | | | | |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
+| PS | &#10003; | &#10003; | | | | | | |
+| QXP | &#10003; | &#10003; | | | | | | |
+| EPUB | &#10003; | &#10003; | | &#10003; | &#10003; | | | |
+-->
+
+| 형식 | 저장 용량 | [메타데이터 관리](metadata.md) | 전체 텍스트<br> 추출 | [메타데이터 추출](metadata.md) | 축소판<br> 생성 | [하위 자산 추출](managing-linked-subassets.md) | [메타데이터 원본에 쓰기](xmp-writeback.md) | [연결된 자산](use-assets-across-connected-assets-instances.md) |
+|---|---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
@@ -258,7 +283,7 @@ AEM Assets는 Adobe Camera Raw 라이브러리를 사용하여 Raw 이미지를 
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PFM | application/x-font-type1 |  |  |
+| PGM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
