@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산 및 Dynamic Media에서 지원하는 파일 포맷 및 각 형식에 지원되는 기능 목록.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7dd295a8da986c019d2ae7ea6be237eeb860ab80
+source-git-commit: 6ac091d413690bd44b171ed11415c154aa8f437c
 
 ---
 
@@ -32,7 +32,7 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PGM | ✓ | ✓ |  |  |  |  | ✓ |
+| PFM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
 | PSD‡ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
@@ -114,7 +114,7 @@ AEM Assets는 Adobe Camera Raw 라이브러리를 사용하여 Raw 이미지를 
 <!--
 DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
 
-| Format | Storage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| Format | Storage | Metadata management | Metadata extraction | Thumbnail generation | Interactive editing | Metadata writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
 | DOC | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
