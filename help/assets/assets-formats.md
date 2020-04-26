@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산 및 Dynamic Media에서 지원하는 파일 포맷 및 각 형식에 지원되는 기능 목록.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6ac091d413690bd44b171ed11415c154aa8f437c
+source-git-commit: 1d16716d5fcf5b05a741b2d06d333e5f80e0d290
 
 ---
 
@@ -24,7 +24,7 @@ AEM Assets를 다른 표준을 준수하는 DAM 파섹 솔루션 및 데스크�
 
 ## AEM 자산에서 지원되는 래스터 이미지 포맷 {#supported-raster-image-formats}
 
-| 형식 | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | 인터랙티브한 편집 | 메타데이터 원본에 쓰기 | 인사이트 |
+| 형식 | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | 편집 | 메타데이터 원본에 쓰기 | 인사이트 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
