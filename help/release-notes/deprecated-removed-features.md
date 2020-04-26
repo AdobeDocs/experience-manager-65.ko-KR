@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
+source-git-commit: 33fab976729baa09fdfd3725542f9e6bc7f37eeb
 
 ---
 
@@ -39,7 +39,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
   <tr>
    <td>Creative Cloud 통합</td>
    <td><p><a href="/help/assets/aem-cc-folder-sharing-best-practices.md">AEM에서 Creative Cloud</a> 폴더 공유에 대한 AEM은 크리에이티브 사용자가 AEM의 자산에 액세스할 수 있도록 하는 방법으로 AEM 6.2에서 도입되었으며, 이를 통해 CC 애플리케이션에서 열어 새 파일을 업로드하거나 AEM에 변경 내용을 저장할 수 있습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다.</p> <p>Adobe는 향후 Creative Cloud 폴더 공유 통합을 위해 AEM을 개선할 계획이 없습니다. 고객은 AEM에 해당 기능이 포함되어 있는 동안 교체 솔루션을 사용해 보시기 바랍니다.</p> </td>
-   <td>고객은 Adobe Asset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환해야 합니다. 자세한 내용은 <a href="/help/assets/aem-cc-integration-best-practices.md">AEM 및 Creative Cloud 통합 우수 사례</a>를 검토하십시오.</td>
+   <td>고객은 Adobe Asset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환해야 합니다. Review <a href="/help/assets/aem-cc-integration-best-practices.md">AEM and Creative Cloud Integration Best Practices</a> for more details.</td>
   </tr>
   <tr>
    <td>자산</td>
@@ -97,12 +97,12 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
      <li>새로 설치한 경우:
       <ul>
        <li>적응형 양식의 서명 단계에서 Adobe Sign 기반의 서명 경험을 사용할 수 있습니다.</li>
-       <li>적응형 양식, 인터랙티브한 커뮤니케이션 및 HTML5 양식에 독립형 스크리블 서명 구성 요소를 사용할 수 있습니다.</li>
+       <li>적응형 양식, 인터랙티브한 커뮤니케이션 및 HTML5 양식에 독립 실행형 스크리블 서명 구성 요소를 사용할 수 있습니다.</li>
       </ul> </li>
      <li>이전 릴리스에서 AEM 6.5 양식으로 업그레이드한 경우<br />
       <ul>
        <li>이미 해당 기능을 사용하고 있는 양식에서 서명 단계의 문지르기 기반의 서명 경험을 계속 사용할 수 있습니다.<br /> </li>
-       <li>새로운 양식을 만들 때 서명 단계에서 독립형 스크리블 서명 구성 요소 또는 Adobe Sign 기반의 서명 경험을 사용할 수 있습니다. </li>
+       <li>양식을 만들 때 서명 단계에서 독립 실행형 스크리블 서명 구성 요소 또는 Adobe Sign 기반의 서명 환경을 사용할 수 있습니다. </li>
       </ul> </li>
     </ul> <p> </p> <p> </p> </td>
   </tr>
@@ -165,13 +165,14 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 | 영역 | 기능 | 대체 |
 |--- |--- |--- |
-| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. Adobe Analytics [에서 제공하는 ActivityMap 플러그인을 사용합니다](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. Adobe Analytics [(https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공하는 ActivityMap]플러그인을 사용합니다. |
 | 통합 | ExactTarget 통합이 기본 배포(빠른 시작)에서 제거되었으며 더 이상 사용할 수 없습니다. | 교체 없음 |
 | 통합 | Salesforce Force API 통합이 기본 배포(빠른 시작)에서 제거되었으며 이제 PackageShare에서 설치할 수 있는 추가 패키지입니다. | 기능은 계속 사용할 수 있습니다. |
 | 양식 | Adobe Central 제품이 더 이상 지원되지 않아 Adobe Central Migration Bridge 서비스 지원이 제거되었습니다. | 교체 없음 |
 | 양식 | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | 교체 없음 |
 | 양식 | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | 교체 없음 |
 | 양식 | LiveCycle ES4 SP1에서 JEE의 AEM 6.5 Forms로 한 번에 업그레이드할 수 없습니다. | AEM Forms 업그레이드 설명서의 [사용 가능한 업그레이드 경로를](../forms/using/upgrade.md) 참조하십시오. |
+| 양식 | JEE의 AEM Forms에서 UPD 기반 클러스터링 지원 제거 | JEE의 AEM Forms에서는 TCP 기반 클러스터링만 사용할 수 있습니다. UDP 멀티캐스트 서버를 이전 버전에서 JEE의 AEM 5.5 Forms로 업그레이드하는 경우 수동 구성을 수행하여 TCP 기반 Gemfire 클러스터로 전환합니다. 자세한 지침은 JEE [에서 AEM 6.5 양식으로 업그레이드를 참조하십시오.](../forms/using/upgrade-forms-jee.md) |
 | 개발자 | Firebug Lite가 기본 배포(빠른 시작)에서 제거되었습니다. | 브라우저 내장 개발자 콘솔 사용 |
 | 개발자 | Remove `customJavaScriptPath` support in HTML Client Library Manager. | 교체 없음 |
 | 자산 | 자산 오프로딩 기능이 AEM 6.5에서 제거되었습니다. | 교체 없음 |
