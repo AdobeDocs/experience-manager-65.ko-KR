@@ -3,7 +3,7 @@ title: AEM Assets에서 작동하도록 ImageMagick 설치 및 구성
 description: ImageMagick 소프트웨어에 대한 자세한 내용, 설치 방법, 명령줄 프로세스 단계 설정, 이미지 축소판 편집, 작성 및 생성 방법 등을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -18,7 +18,7 @@ ImageMagick을 사용하여 대용량 파일을 처리하려면 일반적인 메
 
 >[!NOTE]
 >
->AMS(Adobe Managed Services)에서 AEM을 사용하는 경우 대규모 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 지원 센터에 문의하십시오.
+>AMS(Adobe Managed Services)에서 AEM을 사용하는 경우 고해상도 PSD 또는 PSB 파섹 파일을 많이 처리하려는 경우 Adobe 고객 지원 센터에 문의하십시오. Adobe Experience Manager는 3000 x 23000픽셀이 넘는 매우 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
 ## ImageMagick 설치 {#installing-imagemagick}
 
