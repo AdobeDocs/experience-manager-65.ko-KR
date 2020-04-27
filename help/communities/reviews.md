@@ -10,20 +10,21 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
 
 # 검토 및 검토 요약 사용(표시) {#using-reviews-and-reviews-summary-display}
 
-구성 `Reviews`요소는 사용할 준비가 된 [ 구성 `Comments`](comments.md) 요소와 [ `Rating`](rating.md) 구성 요소의 합성입니다.
+구성 `Reviews` 요소는 사용할 준비가 된 [주석 및](comments.md) 등급 [구성](rating.md) 요소의합성입니다.
 
 구성 `Reviews Summary (Display)` `Reviews` 요소는 사이트의 다른 곳에 표시할 구성 요소의 활성 또는 닫힌 인스턴스에 대한 요약을 제공합니다.
 
 >[!NOTE]
 >
 >검토의 익명 게시는 지원되지 않습니다. 사이트 방문자는 등록(회원이 되기)하고 로그인해야 참여합니다. 로그인한 방문자는 언제든지 검토를 업데이트할 수 있습니다.
+
 
 ## Adding a Review to a Page {#adding-a-review-to-a-page}
 
@@ -71,47 +72,82 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >[허용된 등급] **[!UICONTROL 탭에]** 지정되지 않은 항목이 [필수 등급 ** 탭에 입력되는]** 경우등급을 매길 항목에 포함되지 않습니다.
 
+
 검토 **[!UICONTROL 탭에서]** 검토 처리 방법을 지정합니다.
 
-![chlimage_1-340](assets/chlimage_1-344.png)
+![chlimage_1-344](assets/chlimage_1-344.png)
 
-* **[!UICONTROL 답글]**&#x200B;허용 이 확인란을 선택하면 답글을 검토에 허용합니다. 기본값은 선택 취소입니다.
+* **[!UICONTROL 답글 허용]**
 
-* **[!UICONTROL 닫힘]**&#x200B;이 옵션을 선택하면 검토가 새 검토 및 답글에 닫히고 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 답글을 검토에 허용합니다. 기본값은 선택 취소입니다.
 
-* **[!UICONTROL 파일 업로드]**&#x200B;허용 이 확인란을 선택하면 검토를 위해 첨부 파일을 업로드할 수 있습니다. 기본값은 선택 취소입니다.
+* **[!UICONTROL 닫힘]**
 
-* **최대 파일&#x200B;**크기 파일 업로드**[!UICONTROL 허용이 선택된 경우에만&#x200B;]**관련이 있습니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 10MB입니다.
+   이 확인란을 선택하면 검토가 새 검토 및 답글에 닫히고 기본값은 선택 취소입니다.
 
-* **[!UICONTROL 최대 메시지]**&#x200B;길이 텍스트 상자에 입력할 수 있는 최대 문자 수입니다. 기본값은 4096자입니다.
+* **[!UICONTROL 파일 업로드 허용]**
 
-* **[!UICONTROL 허용된 파일]**&#x200B;유형 파일 업로드 **[!UICONTROL 허용이 선택된 경우에만]** 관련이 있습니다. &quot;dot&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 지정된 파일 유형은 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   이 확인란을 선택하면 검토용으로 첨부 파일을 업로드할 수 있습니다. 기본값은 선택 취소입니다.
 
-* **[!UICONTROL 리치 텍스트]**&#x200B;편집기 선택 시 게시물에 마크업이 표시될 수 있습니다. 기본값은 선택 취소입니다.
+* **최대 파일 크기&#x200B;**
 
-* **[!UICONTROL 투표]**&#x200B;허용 이 확인란을 선택하면 항목에 대한 투표 기능을 포함합니다. 기본값은 선택 취소입니다.
+   파일 업로드 **[!UICONTROL 허용이]** 선택된 경우에만 관련됨. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 10MB입니다.
+
+* **[!UICONTROL 최대 메시지 길이]**
+
+   텍스트 상자에 입력할 수 있는 최대 문자 수입니다. 기본값은 4096자입니다.
+
+* **[!UICONTROL 허용되는 파일 유형]**
+
+   파일 업로드 **[!UICONTROL 허용이]** 선택된 경우에만 관련됨. &quot;dot&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 지정된 파일 유형은 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+
+* **[!UICONTROL 리치 텍스트 편집기]**
+
+   이 확인란을 선택하면 게시물에 마크업이 표시될 수 있습니다. 기본값은 선택 취소입니다.
+
+* **[!UICONTROL 투표 허용]**
+
+   이 확인란을 선택하면 항목에 투표 기능을 포함합니다. 기본값은 선택 취소입니다.
 
 사용자 중재 **[!UICONTROL 탭에서]** 게시된 검토 관리 방법을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](moderate-ugc.md).
 
 ![chlimage_1-345](assets/chlimage_1-345.png)
 
-* **[!UICONTROL 사전 중재]**&#x200B;이 확인란을 선택하면 검토 작업이 승인 후 게시 사이트에 표시됩니다. 기본값은 선택 취소입니다.
+* **[!UICONTROL 사전 관리]**
 
-* **[!UICONTROL 검토]**&#x200B;삭제 이 확인란을 선택하면 검토를 게시한 구성원에게 검토 삭제 권한이 제공됩니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 검토 작업이 승인되어야 게시 사이트에 표시됩니다. 기본값은 선택 취소입니다.
 
-* **[!UICONTROL 검토]**&#x200B;거부이 확인란을 선택하면 중재자가 검토를 거부할 수 있습니다. 기본값은 선택 취소입니다.
+* **[!UICONTROL 리뷰 삭제]**
 
-* **[!UICONTROL 검토 닫기/]**&#x200B;다시 열기 이 확인란을 선택하면 중재자가 검토를 닫고 다시 열 수 있습니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 검토를 게시한 구성원이 검토를 삭제할 수 있습니다. 기본값은 선택 취소입니다.
 
-* **[!UICONTROL 검토]**&#x200B;플래그 지정을 선택하면 멤버가 검토에 부적절한 플래그를 지정할 수 있습니다. 기본값은 선택 취소입니다.
+* **[!UICONTROL 리뷰 거부]**
 
-* **[!UICONTROL 플래그 이유]**&#x200B;목록 이 확인란을 선택하면 멤버가 드롭다운 목록에서 검토를 플래그를 지정한 이유를 부적절한 것으로 선택할 수 있습니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 중재자가 검토를 거부할 수 있습니다. 기본값은 선택 취소입니다.
 
-* **[!UICONTROL 사용자 지정 플래그]**&#x200B;이유 이 확인란을 선택하면 멤버가 검토 결과를 부적절한 것으로 표시하는 이유를 입력할 수 있습니다. 기본값은 선택 취소입니다.
+* **[!UICONTROL 리뷰 닫기/다시 열기]**
 
-* **[!UICONTROL 중재]**&#x200B;임계값 중재자에게 알림을 보내기 전에 구성원에게 검토를 플래그로 설정해야 하는 횟수를 입력합니다. 기본값은 1회입니다.
+   이 확인란을 선택하면 중재자가 검토를 닫고 다시 열 수 있습니다. 기본값은 선택 취소입니다.
 
-* **[!UICONTROL 제한]**&#x200B;플래그 지정검토가 공개 보기에서 숨겨지기 전에 플래그를 지정해야 하는 횟수를 입력합니다. 이 수는 중재 임계값보다 크거나 같아야 **[!UICONTROL 합니다]**. 기본값은 5입니다.
+* **[!UICONTROL 리뷰 플래그 지정]**
+
+   이 확인란을 선택하면 멤버가 검토에 부적절한 플래그를 지정할 수 있습니다. 기본값은 선택 취소입니다.
+
+* **[!UICONTROL 플래그 이유 목록]**
+
+   이 확인란을 선택하면 구성원이 드롭다운 목록에서 검토를 요청하는 이유를 부적절한 것으로 선택할 수 있습니다. 기본값은 선택 취소입니다.
+
+* **[!UICONTROL 사용자 지정 플래그 이유]**
+
+   이 확인란을 선택하면 멤버가 검토 결과를 부적절한 것으로 보는 이유를 직접 입력할 수 있습니다. 기본값은 선택 취소입니다.
+
+* **[!UICONTROL 관리 임계값]**
+
+   중재자에게 알림을 보내기 전에 구성원에 의해 검토가 플래그 지정되어야 하는 횟수를 입력합니다. 기본값은 1회입니다.
+
+* **[!UICONTROL 플래그 지정 제한]**
+
+   공개 보기에서 검토가 숨겨지기 전에 검토에 플래그를 지정해야 하는 횟수를 입력합니다. 이 수는 중재 임계값보다 크거나 같아야 **[!UICONTROL 합니다]**. 기본값은 5입니다.
 
 ### 페이지에 검토 요약(표시) 추가 {#adding-a-review-summary-display-to-a-page}
 
@@ -131,6 +167,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >&quot;평균&quot;은 요약되는 검토의 허용된 등급 탭에 나열된 첫 번째 항목에 대한 투표를 반영합니다.
 
+
 ### 검토 요약 구성(표시) {#configuring-reviews-summary-display}
 
 액세스할 배치된 `Reviews Summary (Display)` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
@@ -145,7 +182,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
    요약할 `reviews`구성 요소의 삽입된 인스턴스를 입력하거나 탐색합니다. 예를 들어 Geometrixx Engage 사이트의 웹 페이지에 [추가하면](getting-started.md) 경로는 다음과 같습니다.
 
-   /content/sites/engage/en/page/jcr:content/content/primary/reviews
+   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
@@ -165,19 +202,19 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 * **[!UICONTROL 댓글 리소스 유형]**
 
-   /apps에서 확장 `comment`구성 요소(단일 주석)의 resourceType으로 이동합니다. 예, `/apps/social/commons/components/hbs/comments/comment`
+   /apps에서 확장 `comment`구성 요소(단일 주석)의 resourceType으로 이동합니다. 예, `/apps/social/commons/components/hbs/comments/comment`.
 
    이 리소스는 방문자가 댓글을 게시할 때 생성된 UGC의 resourceType을 식별합니다.
 
 * **[!UICONTROL 투표 리소스 유형]**
 
-   /apps에서 확장 `voting`구성 요소의 resourceType으로 이동합니다. 예, `/apps/social/components/hbs/voting`
+   /apps에서 확장 `voting`구성 요소의 resourceType으로 이동합니다. 예, `/apps/social/components/hbs/voting`.
 
    이 리소스는 방문자가 투표를 게시할 때 생성된 UGC의 리소스 유형을 식별합니다.
 
 * **[!UICONTROL 주석 시스템 리소스 유형]**
 
-   /apps에서 확장 `comments`구성 요소(주석 시스템)의 resourceType으로 이동합니다. 페이지 템플릿에 리소스(주석 노드)로 페이지에 추가되지 않고 기본 스크립트에 주석 시스템이 [동적으로 포함되어](scf.md#add-or-include-a-communities-component) 있지 않으면 비워 둡니다. {{include}} [도우미에 대한 자세한 내용](handlebars-helpers.md#include)
+   /apps에서 확장 `comments`구성 요소(주석 시스템)의 resourceType으로 이동합니다. 페이지 템플릿에 리소스(주석 노드)로 페이지에 추가되지 않고 기본 스크립트에 주석 시스템이 [동적으로 포함되어](scf.md#add-or-include-a-communities-component) 있지 않으면 비워 둡니다. 자세한 내용은 [{{include}} 헬퍼에](handlebars-helpers.md#include)대한 내용을 참조하십시오.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
@@ -189,10 +226,10 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 사이트 방문자가 로그인하면 구성에 따라 로그인할 수 있습니다.
 
-* 새 검토 게시
-* 자체 검토 편집
+* 새로운 검토 게시
+* 직접 검토 편집
 * 자체 검토 삭제
-* 다른 사람의 검토 주석 플래그 지정
+* 다른 사람의 검토 주석에 플래그를 지정합니다.
 
 회원당 하나의 등급만 허용됩니다. 회원은 언제든지 등급을 변경할 수 있습니다.
 
