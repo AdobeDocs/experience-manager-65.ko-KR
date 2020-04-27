@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: b7318370c45f37a7faf5434b2de3f145b8d64bce
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
    <td>예 - <i>디자인 </i>모드에서 속성을 편집할 수 있습니다.</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs를</strong></a></td>
    <td> cq.social.hbs.rating</td>
   </tr>
   <tr>
@@ -76,7 +76,7 @@ AEM 6.1 Communities의 경우, UGC용 [공용 스토어를](working-with-srp.md)
 다음을 참조하십시오.
 
 * [스토리지 자원 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
-* [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 방법 및 예제
-* [SRP를 사용하여 UGC](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
-* [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑
+* [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 방법 및 예
+* [SRP를 사용하여 UGC에](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
+* [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑합니다.
 
