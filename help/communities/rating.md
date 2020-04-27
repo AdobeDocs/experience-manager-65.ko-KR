@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
 
 # 등급 사용 {#using-ratings}
 
-이 `Rating`구성 요소는 독립 실행형 또는 다른 커뮤니티 기능과 함께 사용됩니다. 이 구성 요소를 사용하면 로그인한 커뮤니티 구성원이 컨텐츠에 등급을 매겨 자신의 의견을 표현할 수 있습니다.
+이 `Rating` 구성 요소는 독립 실행형 또는 다른 커뮤니티 기능과 함께 사용됩니다. 이 구성 요소를 사용하면 로그인한 커뮤니티 구성원이 컨텐츠에 등급을 매겨 자신의 의견을 표현할 수 있습니다.
 
 ## Adding a Rating to a Page {#adding-a-rating-to-a-page}
 
-작성 모드에서 페이지에 `Rating`구성 요소를 추가하려면 구성 요소를 찾아 `Communities / Rating` 페이지에 놓습니다. 예를 들어 등급을 매길 멤버에 대한 기능과 관련된 위치입니다.
+작성 모드에서 페이지에 구성 요소를 추가하려면 구성 요소를 찾아 `Rating` `Communities / Rating` 페이지에 놓습니다. 예를 들어, 등급을 매길 멤버에 대한 기능을 기준으로 한 위치입니다.
 
 필요한 정보를 보려면 커뮤니티 구성 [요소 기본 사항을 참조하십시오](basics.md).
 
