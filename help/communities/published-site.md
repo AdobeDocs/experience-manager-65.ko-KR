@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 31a3ccc1f9f0940515ed64b1b18a535102bf7231
+source-git-commit: ca15258a5dc7ca99b6c9d6ae85e42c77a3802c87
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 31a3ccc1f9f0940515ed64b1b18a535102bf7231
 
 새로 만든 커뮤니티 사이트가 게시되었으므로 사이트를 만들 때 표시되는 URL을 탐색합니다(예: 게시 서버).
 
-* A\작성자 URL = https://localhost:4502/content/sites/engage/en.html
+* 작성자 URL = https://localhost:4502/content/sites/engage/en.html
 * 게시 URL = https://localhost:4503/content/sites/engage/en.html
 
 작성자 및 게시에서 로그인된 구성원에 대한 혼동을 최소화하려면 각 인스턴스에 대해 다른 브라우저를 사용하는 것이 좋습니다.
@@ -37,14 +37,14 @@ source-git-commit: 31a3ccc1f9f0940515ed64b1b18a535102bf7231
 
 익명의 사이트 방문자는 UI에서 다음을 볼 수 있습니다.
 
-* 사이트의 제목입니다. 시작하기 자습서
+* 사이트 제목(시작하기 자습서)
 * 프로필 링크 없음
 * 메시지 링크 없음
 * 알림 링크 없음
 * 검색 필드
 * 로그인 링크
 * 브랜드 배너
-* 참조 사이트 템플릿에 포함된 구성 요소에 대한 메뉴 링크
+* 참조 사이트 템플릿에 포함된 구성 요소에 대한 메뉴 링크.
 
 다양한 링크를 선택하면 해당 링크가 읽기 전용 모드임을 확인할 수 있습니다.
 
@@ -54,7 +54,7 @@ source-git-commit: 31a3ccc1f9f0940515ed64b1b18a535102bf7231
 
 jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트의 컨텐츠를 액세스하지 못하도록 보호하려면 다음 단계를 따르십시오.
 
-1. AEM 작성자 인스턴스에서 https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html로 이동합니다.
+1. AEM 작성자 인스턴스에서 https:// hostname:port/editor.html/content/site/sitename.html으로 이동합니다.
 
    >[!NOTE]
    >
@@ -64,19 +64,19 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
    ![사이트 인증](assets/site-authentication.png)
 
-1. **고급 **탭으로 이동합니다.
+1. 고급 **탭으로** 이동합니다.
 
    ![page-properties](assets/page-properties.png)
 
 1. Enable **Authentication Requirement**.
-1. 로그인 페이지의 경로를 추가합니다. 예:**/content/......./GetStarted**.
+1. 로그인 페이지의 경로를 추가합니다. 예: **/content/......./GetStarted**.
 1. 페이지를 게시합니다.
 
 ## 신뢰할 수 있는 커뮤니티 구성원 {#trusted-community-member}
 
 이 경험은 Aaron [McDonald가](/help/communities/tutorials.md#demo-users) [커뮤니티 관리자 및 사회자의 역할을 할당받았다고 가정합니다](/help/communities/create-site.md#roles). 그렇지 않은 경우 작성 환경으로 돌아가서 사이트 설정을 [](/help/communities/sites-console.md#modifying-site-properties) 수정하고 커뮤니티 관리자 및 중재자로 Aaron McDonald를 선택합니다.
 
-오른쪽 상단 모서리에서 사용자 이름 &quot;aaron.mcdonald@mailinator.com&quot; 및 암호 &quot;password&quot;를 선택하고 `Log in`서명합니다. Twitter 또는 Facebook 자격 증명으로 로그인할 수 있습니다.
+오른쪽 상단 모서리에서 사용자 이름(aaron.mcdonald@mailinator.com)과 암호(암호)를 선택하여 `Log in`서명합니다. Twitter 또는 Facebook 자격 증명으로 로그인할 수 있습니다.
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
@@ -85,8 +85,8 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 * **프로필** 옵션을 사용하면 프로필을 보고 편집할 수 있습니다.
 * [메시지](/help/communities/configure-messaging.md) 옵션은 직접 메시징 섹션으로 안내하며, 여기서 다음을 수행할 수 있습니다.
 
-1. 받은 쪽지(받은 편지함), 보낸 편지함(보낸 편지함), 삭제한 메시지(휴지통)를 봅니다.
-1. 새 쪽지를 작성하여 개인 및 그룹에 보냅니다.
+   1. 받은 쪽지(받은 편지함), 보낸 편지함(보낸 편지함), 삭제한 메시지(휴지통)를 봅니다.
+   1. 새 쪽지를 작성하여 개인 및 그룹에 보냅니다.
 
 * [알림](/help/communities/notifications.md) 옵션을 사용하면 알림 섹션으로 안내되어 관심 이벤트를 보고 알림 설정을 편집할 수 있습니다.
 * [중재](/help/communities/published-site.md#moderationlink) 권한이 있는 경우 AEM Communities 중재 페이지로 이동합니다.
@@ -99,7 +99,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 >[!NOTE]
 >
->커뮤니티 구성 요소 및 기능에 대한 자세한 내용은
+>커뮤니티 구성 요소 및 기능에 대한 자세한 내용은 다음을 참조하십시오.
 >
 >* [커뮤니티 구성 요소](/help/communities/author-communities.md) (작성자용)
 >* [구성 요소, 기능 및 Feature Essentials](/help/communities/essentials.md) (개발자용)
@@ -123,7 +123,7 @@ Aaron은 그룹 관리이므로 그룹 링크를 선택하면 Aaron이 그룹 �
 
 게시 환경에서 그룹이 만들어지는 예입니다.
 
-작성 환경에서 그룹을 만들고 작성 환경의 커뮤니티 사이트 내에서 관리할 수도 있습니다(커뮤니티 그룹 [콘솔](/help/communities/groups.md)). 이 튜토리얼에서는 작성자가 [그룹을](/help/communities/nested-groups.md) 만드는 방법을 살펴봅니다.
+작성 환경에서 그룹을 만들고 작성 환경의 커뮤니티 사이트 내에서 관리할 수도 있습니다(커뮤니티 그룹[콘솔](/help/communities/groups.md)). 이 튜토리얼에서는 작성자가 [그룹을](/help/communities/nested-groups.md) 만드는 방법을 살펴봅니다.
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -133,13 +133,13 @@ Aaron은 그룹 관리이므로 그룹 링크를 선택하면 Aaron이 그룹 �
 1. **설정 탭**
 
    * 그룹 이름 : `Sports`
-   * 설명 : `A parent group for various sporting groups`
+   * 설명 : `A parent group for various sporting groups`.
    * 그룹 URL 이름 : `sports`
-   * select `Open Group` (모든 커뮤니티 구성원이 참여하도록 허용)
+   * 선택 `Open Group` (모든 커뮤니티 구성원이 참여하여 참여할 수 있도록 허용)
 
 1. **템플릿 탭**
 
-   * select `Reference Group` (중첩된 그룹을 허용하기 위해 해당 구조에 그룹 함수 포함)
+   * 선택 `Reference Group` (중첩된 그룹을 허용하기 위해 해당 구조에 그룹 함수 포함)
 
 1. 그룹 **만들기 선택**
 
@@ -149,25 +149,25 @@ Aaron은 그룹 관리이므로 그룹 링크를 선택하면 Aaron이 그룹 �
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
-다음으로 시작하는 두 번째 링크 집합은 `Blog`현재 선택된 그룹인 `Sports`그룹에 속합니다. 스포츠(Sports) `Groups` 링크를 선택하면 두 그룹을 스포츠(Sports) 그룹 내에 중첩할 수 있습니다.
+다음으로 시작하는 두 번째 링크 집합은 `Blog`현재 선택된 그룹인 `Sports` 그룹에 속합니다. 스포츠(Sports) `Groups` 링크를 선택하면 두 그룹을 스포츠(Sports) 그룹 내에 중첩할 수 있습니다.
 
-예를 들어, `ew groups.`
+예를 들어 두 개를 `new groups`추가합니다.
 
-* one named `Baseball`
+* One named `Baseball`
 
-   * 설정된 상태로 `Open Group` (필수 멤버십) 유지
-   * 템플릿 탭에서 `Conversational Group`
+   * 설정된 항목을 `Open Group` (필수 멤버십) 그대로 두십시오.
+   * 템플릿 탭에서 을 `Conversational Group`선택합니다.
 
-* one named `Gymnastics`
+* One named `Gymnastics`
 
-   * 설정을 (제한된 멤버십으로 `Member Only Group` 변경)
-   * 템플릿 탭에서 `Conversational Group`
+   * 설정을 (제한된 멤버십)으로 `Member Only Group` 변경합니다.
+   * 템플릿 탭에서 을 `Conversational Group`선택합니다.
 
-**알림 **:
+**알림**:
 
 * 두 그룹이 모두 표시되기 전에 페이지를 새로 고쳐야 할 수 있습니다.
-* 이 템플릿에는 그룹 기능이 포함되어 있지 *않으므로 그룹을 더 이상 중첩할 수 없습니다.
-* 작성자의 경우 [그룹 콘솔은](/help/communities/groups.md) 세 번째 선택 항목( `Public Group` 선택 사항 멤버십)을 제공합니다.
+* 이 템플릿에는 그룹 함수가 *포함되어 있지* 않으므로 그룹을 더 이상 중첩할 수 없습니다.
+* 작성자의 경우 그룹 [콘솔은](/help/communities/groups.md) 세 번째 선택 항목(선택 사항 멤버십)을 `Public Group` 제공합니다.
 
 두 그룹을 모두 만들었으면 야구 그룹, 열린 그룹을 선택하고 해당 링크를 확인합니다.
 
@@ -181,14 +181,14 @@ Aaron은 그룹 관리이므로 그룹 링크를 선택하면 Aaron이 그룹 �
 
 게시가 계속 진행되면 Aaron McDonald로 로그아웃하고 스포츠 그룹의 그룹을 익명의 사이트 방문자로 봅니다.
 
-* 홈 페이지
-* 선택 `Groups`링크
-* 선택 `Sports`링크
-* sports&#39; `Groups`링크 선택
+* 홈 페이지에서
+* 링크 `Groups` 선택
+* 링크 `Sports` 선택
+* Sports&#39; `Groups` 링크를 선택합니다.
 
 야구 그룹만 표시됩니다.
 
-Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인한 다음 동일한 위치로 이동합니다. Weston은 공개 `Join` 그룹과 `Baseball` 비공개 `enter or Leave` `Gymnastics`그룹 중 하나를 수행할 수 있습니다.
+Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인한 다음 동일한 위치로 이동합니다. Weston은 공개 `Join` 그룹과 `Baseball` 비공개 `enter or Leave` `Gymnastics` 그룹 중 하나를 수행할 수 있습니다.
 
 ![chlimage_1-40](assets/chlimage_1-40.png)
 
@@ -196,7 +196,7 @@ Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인한 다음 동일�
 
 웹 페이지 링크를 선택하여 사이트에 포함된 기본 웹 페이지를 봅니다. 표준 AEM 작성 도구를 사용하여 작성 환경에서 이 페이지에 컨텐츠를 추가할 수 있습니다.
 
-예를 들어 **작성자** 인스턴스로 이동하고, 커뮤니티 사이트 콘솔에서 `engage` 폴더를 열고, 사이트 [열기](/help/communities/sites-console.md)아이콘을 선택하여 **작성자** 편집모드로 전환합니다. 그런 다음 미리 보기 모드를 선택하여 `Web Page`링크를 선택한 다음 편집 모드를 선택하여 제목 및 텍스트 구성 요소를 추가합니다. 마지막으로, 페이지나 전체 사이트를 다시 게시합니다.
+예를 들어 **작성자** 인스턴스로 이동하고, 커뮤니티 사이트 콘솔에서 `engage` 폴더를 열고, 사이트 [열기](/help/communities/sites-console.md)아이콘을 선택하여 **작성자** 편집모드로 전환합니다. 그런 다음 미리 보기 모드를 선택하여 `Web Page` 링크를 선택한 다음 편집 모드를 선택하여 제목 및 텍스트 구성 요소를 추가합니다. 마지막으로, 페이지나 전체 사이트를 다시 게시합니다.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
@@ -212,16 +212,16 @@ Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인한 다음 동일�
 
 로그아웃한 후 새 사용자 등록을 만들 수 있습니다.
 
-* select `Log In`
-* select `Sign up for a new account`
+* 선택 `Log In`
+* 선택 `Sign up for a new account`
 
 ![chlimage_1-43](assets/chlimage_1-43.png)![chlimage_1-44](assets/chlimage_1-44.png)
 
 기본적으로 이메일 주소는 로그인 ID입니다. 이 확인란을 선택하지 않으면 방문자는 자신의 로그인 ID(사용자 이름)를 입력할 수 있습니다. 사용자 이름은 게시 환경에서 고유해야 합니다.
 
-사용자의 이름, 이메일 및 암호를 지정한 후 사용자를 `Sign Up`선택하면 사용자가 만들어지고 사용자가 서명할 수 있습니다.
+사용자의 이름, 이메일 및 암호를 지정한 후 사용자를 `Sign Up` 선택하면 사용자가 만들어지고 사용자가 서명할 수 있습니다.
 
-로그인하면 표시된 첫 번째 페이지가 `Profile`페이지이므로 개인화할 수 있습니다.
+로그인하면 표시된 첫 번째 페이지가 `Profile` 페이지이며, 페이지를 개인화할 수 있습니다.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
