@@ -4,7 +4,7 @@ description: 병목 현상을 제거하고 AEM 자산의 성능을 최적화하�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -203,17 +203,13 @@ ImageMagick을 사용하여 [!UICONTROL 표현물을 생성하기 위해 DAM 자
 
 >[!CAUTION]
 >
->ImageMagick이 사용 가능한 모든 디스크 공간을 사용하는 경우 구성이 잘못되면 서버가 불안정해질 수 있습니다.
->
->ImageMagick을 사용하여 대용량 파일을 처리하는 데 필요한 정책 변경 사항이 AEM 성능에 영향을 줄 수 있습니다. 자세한 내용은 ImageMagick [설치 및 구성을 참조하십시오](/help/assets/best-practices-for-imagemagick.md).
+>ImageMagick이 사용 가능한 모든 디스크 공간을 사용하는 경우 구성이 잘못되면 서버가 불안정해질 수 있습니다. ImageMagick을 사용하여 대용량 파일을 처리하는 데 필요한 정책 변경 사항이 AEM 성능에 영향을 줄 수 있습니다. 자세한 내용은 ImageMagick [설치 및 구성을 참조하십시오](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
 >ImageMagick `policy.xml` 및 `configure.xml` 파일은 `/usr/lib64/ImageMagick-&#42;/config/` 대신 에서 사용할 수 있습니다. `/etc/ImageMagick/`구성 [파일의 위치는 ImageMagick 설명서를](https://www.imagemagick.org/script/resources.php) 참조하십시오.
 
->[!TIP]
->
->Adobe Managed Services(AMS)에서 Adobe Experience Manager를 사용하는 경우 대용량 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 지원 센터에 문의하십시오. Adobe 고객 지원 센터 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 포맷에 적합한 최상의 툴과 모델을 선택할 수 있습니다.
+Adobe Managed Services(AMS)에서 Adobe Experience Manager를 사용하는 경우 대용량 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 센터 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 포맷에 적합한 최상의 툴과 모델을 선택할 수 있습니다. Adobe Experience Manager는 3000 x 23000픽셀이 넘는 매우 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
 ### XMP writeback {#xmp-writeback}
 
