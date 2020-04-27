@@ -3,12 +3,12 @@ title: AEM Assets를 사용하여 지원되는 다양한 파일 형식을 처리
 description: AEM Assets를 사용하여 지원되는 다양한 파일 유형을 처리하는 우수 사례입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
 
-# Assets file format best practices {#assets-file-format-best-practices}
+# 자산 파일 형식 우수 사례 {#assets-file-format-best-practices}
 
 AEM Assets는 사용자의 다양한 파일 지원 요구 사항을 충족하기 위해 많은 독점적 및 타사 파일 형식 라이브러리를 지원합니다. 지원되는 Adobe 라이브러리에는 Adobe Camera Raw, Gibson, Adobe PDF 래스터라이저 및 Adobe InDesign Server가 있습니다. 또한 AEM Assets는 ImageMagick, TwelyMonkeys 등을 비롯한 타사 라이브러리를 지원합니다.
 
@@ -16,7 +16,7 @@ For the supported file formats, see [Assets supported formats](/help/assets/asse
 
 >[!TIP]
 >
->Adobe Managed Services(AMS)에서 Adobe Experience Manager를 사용하는 경우 대용량 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 지원 센터에 문의하십시오. Adobe 고객 지원 센터 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 포맷에 적합한 최상의 툴과 모델을 선택할 수 있습니다.
+>Adobe Managed Services(AMS)에서 Adobe Experience Manager를 사용하는 경우 대용량 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 지원 센터에 문의하십시오. Adobe 고객 지원 센터 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 포맷에 적합한 최상의 툴과 모델을 선택할 수 있습니다. Adobe Experience Manager는 3000 x 23000픽셀이 넘는 매우 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
 ## Adobe Camera Raw 라이브러리 {#adobe-camera-raw-library}
 
@@ -40,7 +40,7 @@ PDF 래스터라이저를 사용하여 생성된 축소판과 미리 보기는 �
 
 Adobe에서는 Adobe InDesign Server를 사용하여 IDML 및 HTML과 같은 Adobe InDesign 전용 변환을 추출하는 것이 좋습니다. 자세한 내용은 Adobe InDesign [에서 AEM 자산을 참조로 추가를 참조하십시오](/help/assets/managing-linked-subassets.md#refai).
 
-## 다이내믹 미디어  {#dynamic-media}
+## Dynamic Media  {#dynamic-media}
 
 Dynamic Media는 글로벌, 확장 및 성능 최적화 네트워크를 통해 다양한 유형의 리치 컨텐츠를 실시간으로 생성 및 전달합니다. 인터랙티브한 보기 경험을 제공하고 디지털 캠페인 관리 프로세스를 간소화합니다. 다이내믹 미디어 활성화에 대한 자세한 내용은 다이내믹 미디어 [구성을 참조하십시오](/help/assets/config-dynamic.md).
 
