@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -21,11 +21,11 @@ SCF(소셜 구성 요소 프레임워크)는 서버측 및 클라이언트측 �
 
 프레임워크의 이점
 
-* **기능**:80%의 사용 사례를 사용자 정의할 필요 없이 즉시 사용할 수 있는 간편한 통합
-* **스킨 변경이 가능한**&#x200B;경우:CSS 스타일링을 위해 HTML 속성을 일관되게 사용
-* **확장 가능**:구성 요소 구현은 객체 지향적이고 비즈니스 로직에 대한 경미함 - 서버에 증가분 비즈니스 로그인을 손쉽게 추가
-* **유연성**:쉽게 오버레이되고 사용자 정의된 간단한 로직이 없는 JavaScript 템플릿
-* **액세스 가능**:HTTP API는 모바일 앱을 비롯한 모든 클라이언트의 게시를 지원합니다
+* **기능**:80%의 사용 사례를 사용자 요구에 맞게 변경할 필요 없이 즉시 통합할 수 있습니다.
+* **스킨 변경이 가능한**&#x200B;경우:CSS 스타일링을 위해 HTML 속성을 일관되게 사용합니다.
+* **확장 가능**:구성 요소 구현은 객체 지향적이고 비즈니스 로직에 대한 경미이며, 서버에서 증가분 비즈니스 로그인을 쉽게 추가할 수 있습니다.
+* **유연성**:쉽게 오버레이되고 사용자 정의된 간단한 로직이 없는 JavaScript 템플릿.
+* **액세스 가능**:HTTP API는 모바일 앱을 비롯한 모든 클라이언트의 게시를 지원합니다.
 * **휴대용**:모든 기술을 기반으로 구축된 웹 페이지에 통합/임베드
 
 인터랙티브한 커뮤니티 구성 요소 안내서를 [](components-guide.md)사용하여 작성자 또는 게시 인스턴스를 살펴볼 수 있습니다.
@@ -48,20 +48,20 @@ SocialComponent API를 확장하여 뷰 레이어 또는 HTTP 클라이언트에
 
 구성 요소를 사용자 정의하거나 확장하려면 /apps 디렉토리에 오버레이 및 확장자만 작성하여 향후 릴리스로 업그레이드하는 과정을 간소화합니다.
 
-* 스키닝
-   * CSS만 [편집해야 함](client-customize.md#skinning-css)
-* 룩앤필
-   * JS 템플릿 및 CSS 변경
-* Look, Feel 및 UX
-   * JS 템플릿 변경, CSS 및 Javascript [확장/재정의](client-customize.md#extending-javascript)
-* JS 템플릿 또는 GET 끝점에 사용할 수 있는 정보를 수정하려면
-   * SocialComponent [확장](server-customize.md#socialcomponent-interface)
-* 작업 중에 사용자 정의 처리를 추가하려면
-   * OperationExtension [작성](server-customize.md#operationextension-class)
-* 새 사용자 정의 작업을 추가하려면
-   * 새 Sling [게시물 작업 만들기](server-customize.md#postoperation-class)
-   * 필요에 따라 기존 [Operation](server-customize.md#operationservice-class) Services 사용
-   * 필요에 따라 클라이언트 쪽에서 작업을 호출하는 Javascript 코드 추가
+* 스키닝:
+   * CSS만 [편집해야](client-customize.md#skinning-css)합니다.
+* 룩앤필:
+   * JS 템플릿 및 CSS를 변경합니다.
+* Look, Feel 및 UX:
+   * JS 템플릿, CSS를 변경하고 Javascript를 [확장/무시합니다](client-customize.md#extending-javascript).
+* JS 템플릿 또는 GET 끝점에 사용할 수 있는 정보를 수정하려면:
+   * SocialComponent를 [확장합니다](server-customize.md#socialcomponent-interface).
+* 작업 중에 사용자 정의 처리를 추가하려면:
+   * OperationExtension [을 작성합니다](server-customize.md#operationextension-class).
+* 새 사용자 지정 작업을 추가하려면:
+   * 새 Sling [게시물 작업을 만듭니다](server-customize.md#postoperation-class).
+   * 필요에 따라 기존 [OperationServices](server-customize.md#operationservice-class) 사용
+   * 필요에 따라 클라이언트 쪽에서 작업을 호출하는 Javascript 코드를 추가합니다.
 
 ## 서버측 프레임워크 {#server-side-framework}
 
@@ -83,11 +83,11 @@ HTTP API 파섹 또한 HTTP API를 통해 커뮤니티 사이트는 클라이언
 
 모든 SocialComponent에 대해 프레임워크는 HTTP 기반 API 끝점을 제공합니다. 끝점은 &#39;.social.json&#39; 선택기 + 확장명을 사용하여 GET 요청을 리소스로 전송하여 액세스합니다. Sling을 사용하면 요청이 `DefaultSocialGetServlet`담당자에게 전달됩니다.
 
-The `DefaultSocialGetServlet`
+**`DefaultSocialGetServlet`**
 
-1. 리소스(resourceType)를 `SocialComponentFactoryManager`에 전달하고 리소스를 `SocialComponent`나타내는 SocialComponentFactory를 선택할 수 있습니다.
+1. 리소스(resourceType)를 `SocialComponentFactoryManager` SocialComponentFactory에 전달하면 리소스를 `SocialComponent` 나타내는 SocialComponentFactory를 선택할 수 있습니다.
 
-1. 공품을 호출하고 자원 및 요청을 처리할 `SocialComponent`수 있는 능력을 받습니다.
+1. 공품을 호출하고 자원 및 요청을 처리할 `SocialComponent` 수 있는 능력을 받습니다.
 1. 요청을 처리하고 결과의 JSON 표현을 반환하는 `SocialComponent`호출을 호출합니다.
 1. 클라이언트에 대한 JSON 응답을 반환합니다.
 
@@ -111,11 +111,11 @@ GET(읽기) 작업 외에도 프레임워크는 끝점 패턴을 정의하여 �
 
 ### SRP(Storage Resource Provider) {#storage-resource-provider-srp}
 
-[커뮤니티 콘텐츠 저장소에](working-with-srp.md)저장된 UGC 처리에 대한 자세한 내용은
+[커뮤니티 콘텐츠 저장소에](working-with-srp.md)저장된 UGC 처리에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [스토리지 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
-* [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP API 유틸리티 메서드 및 예제
-* [SRP를 사용하여 UGC](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
+* [스토리지 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요.
+* [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP API 유틸리티 메서드 및 예.
+* [SRP를 사용하여 UGC에](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
 
 ### 서버측 사용자 정의 {#server-side-customizations}
 
@@ -181,6 +181,7 @@ AEM 6.1부터 구성 요소가 추가되는 대신 동적으로 포함되는 경
 >
 >템플릿에 구성 요소를 추가하거나 포함하는 대신 페이지에 동적으로 추가하려면 구성 요소 [사이드로드를 참조하십시오](sideloading.md).
 
+
 ### Handlebars Helpers {#handlebars-helpers}
 
 SCF [에서](handlebars-helpers.md) 사용할 수 있는 사용자 지정 도움말의 목록과 설명은 SCF Handlebars Helpers를 참조하십시오.
@@ -199,7 +200,7 @@ SCF [에서](handlebars-helpers.md) 사용할 수 있는 사용자 지정 도움
 
 * 명확하게 이름이 지정된 CSS 클래스 선택기 이름을 사용하고 &#39;heading&#39;, &#39;image&#39; 등과 같은 일반 이름은 사용하지 마십시오.
 * CSS 스타일시트가 페이지의 다른 요소 및 스타일과 잘 작동하도록 특정 클래스 선택기 스타일을 정의합니다. 예를 들어,`.social-forum .topic-list .li { color: blue; }`
-* JavaScript 기반의 UX를 위한 CSS 클래스와 스타일을 별도로 CSS 클래스 유지
+* CSS 클래스를 유지하여 스타일을 지정할 수 있으며 JavaScript 기반의 UX를 위한 CSS 클래스와 별도로 지정할 수 있습니다.
 
 ### 클라이언트측 사용자 정의 {#client-side-customizations}
 
