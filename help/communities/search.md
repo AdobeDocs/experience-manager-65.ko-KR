@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 검색 기능은 포럼과 같은 다양한 기타 기능과 연동되므로 컨텐츠를 검색할 수 있습니다.
 
-UGC(사용자 생성 컨텐츠)라고 하는 커뮤니티 구성원이 입력한 게시물을 검색할 수 있는 기능을 추가하면 두 가지 구성 요소가 있습니다. [ 및 `Search`](#search)[ `Search Results`](#search-results)를 참조하십시오.
+UGC(사용자 생성 컨텐츠)라고 하는 커뮤니티 구성원이 입력한 게시물을 검색할 수 있는 기능을 추가하면 두 가지 구성 요소가 있습니다.검색 [및](#search) 검색 [결과](#search-results).
 
 구성 요소를 포함하는 페이지는 `Search Results` 검색 및 결과 표시를 모두 지원합니다.
 
-구성 `Search`요소를 포함하는 페이지는 `Search Results` 페이지에 결과가 나타나는 검색을 시작할 수 있는 위치를 제공합니다.
+구성 요소를 포함하는 페이지는 `Search` 페이지에 나타나는 결과를 포함하여 검색을 시작할 수 있는 위치를 제공합니다 `Search Results` .
 
 검색 기능은 사이트 방문자 및 구성원이 컨텐츠를 볼 수 있도록 하는 다른 모든 기능과 함께 사용할 수 있습니다.
 
@@ -83,9 +83,13 @@ UGC(사용자 생성 컨텐츠)라고 하는 커뮤니티 구성원이 입력한
 
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* **[!UICONTROL 페이지당 검색 결과]**&#x200B;페이지당 표시되는 항목/게시물 수를 정의합니다. 기본값은 10입니다.
+* **[!UICONTROL 페이지당 검색 결과 수]**
 
-* **[!UICONTROL 검색]**&#x200B;경로 항목 추가 단추를 사용하여 검색 경로를 추가하면 컨텐츠 검색이 제한됩니다.
+   페이지당 표시되는 항목/게시물 수를 정의합니다. 기본값은 10입니다.
+
+* **[!UICONTROL 검색 경로]**
+
+   항목 추가 단추를 사용하여 검색 경로를 추가하면 컨텐츠 검색이 제한됩니다.
 
 ## 추가 정보 {#additional-information}
 
