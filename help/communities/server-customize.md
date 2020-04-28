@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -26,6 +26,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >[!NOTE]
 >
 >Communities API의 패키지 위치는 주요 릴리스에서 다음 릴리스로 업그레이드할 때 변경될 수 있습니다.
+
 
 ### SocialComponent 인터페이스 {#socialcomponent-interface}
 
@@ -43,7 +44,7 @@ SocialCollectionComponent 인터페이스는 SocialComponent 인터페이스를 
 
 ### SocialComponentFactory 인터페이스 {#socialcomponentfactory-interface}
 
-SocialComponentFactory(공장)는 프레임워크에 SocialComponent를 등록합니다. 이 팩터리는 프레임워크에서 주어진 resourceType에 사용할 수 있는 SocialComponents와 우선 순위 순위 및 amp;ast에 대해 알 수 있는 수단을 제공합니다.여러 Social 구성 요소가 식별되면
+SocialComponentFactory(공장)는 프레임워크에 SocialComponent를 등록합니다. 이 팩터리는 프레임워크에서 주어진 resourceType에 사용할 수 있는 SocialComponents와 여러 SocialComponents가 식별될 때 해당 우선 순위 등급을 알 수 있도록 하는 수단을 제공합니다.
 
 SocialComponentFactory는 선택한 SocialComponent의 인스턴스를 만들 책임이 있으므로 DI 방법을 사용하여 팩터리에서 SocialComponent에 필요한 모든 종속성을 삽입할 수 있습니다.
 
@@ -65,29 +66,29 @@ OSGi 서비스의 핸들은 `com.adobe.cq.social.scf.SocialComponentFactoryManag
 
 #### PostOperation 클래스 {#postoperation-class}
 
-HTTP API POST 끝점은 `SlingPostOperation``org.apache.sling.servlets.post`인터페이스(패키지)를 구현하여 정의된 PostOperation 클래스입니다.
+HTTP API POST 끝점은 `SlingPostOperation` 인터페이스(패키지 `org.apache.sling.servlets.post`)를 구현하여 정의된 PostOperation 클래스입니다.
 
-끝 `PostOperation`구현은 `sling.post.operation`작업이 응답할 값으로 설정됩니다. :operation 매개 변수가 해당 값으로 설정된 모든 POST 요청은 이 구현 클래스에 위임됩니다.
+끝 `PostOperation` 구현은 `sling.post.operation` 작업이 응답할 값으로 설정됩니다. :operation 매개 변수가 해당 값으로 설정된 모든 POST 요청은 이 구현 클래스에 위임됩니다.
 
-이 `PostOperation`호출에서는 작업에 필요한 작업을 `SocialOperation`수행하는 작업을 호출합니다.
+는 `PostOperation` 작업에 필요한 작업을 수행하는 `SocialOperation` 작업을 호출합니다.
 
-The `PostOperation`receive the result from the `SocialOperation`and return to the appropriate response to the client.
+는 `PostOperation` Client로부터 결과를 `SocialOperation` 수신하고 적절한 응답을 클라이언트에 반환합니다.
 
 #### SocialOperation 클래스 {#socialoperation-class}
 
-각 `SocialOperation`끝점은 AbstractSocialOperation 클래스를 확장하고 메서드를 재정의합니다. `performOperation().`이 메서드는 작업을 완료하고, `SocialOperationResult`또는 다른 실행에서 실행하는 데 필요한 모든 작업을 수행합니다. `OperationException`이 경우 메시지가 있는 HTTP 오류 상태는 일반적인 JSON 응답 또는 성공 HTTP 상태 코드 대신 반환됩니다.
+각 `SocialOperation` 끝점은 AbstractSocialOperation 클래스를 확장하고 메서드를 `performOperation()`무시합니다. 이 메서드는 작업을 완료하고, `SocialOperationResult` 또는 다른 실행에서 실행하는 데 필요한 모든 작업을 수행합니다. `OperationException`이 경우 메시지가 있는 HTTP 오류 상태가 일반적인 JSON 응답 또는 성공 HTTP 상태 코드 대신 반환됩니다.
 
-확장을 `AbstractSocialOperation`사용하면 JSON 응답을 `SocialComponents`전송하기 위해 재사용이 가능합니다.
+확장을 `AbstractSocialOperation` 통해 JSON 응답을 전송할 `SocialComponents` 수 있습니다.
 
 #### SocialOperationResult 클래스 {#socialoperationresult-class}
 
-이 `SocialOperationResult`클래스는 의 결과로 `SocialOperation`반환되며 `SocialComponent`HTTP 상태 코드 및 HTTP 상태 메시지로 구성됩니다.
+이 `SocialOperationResult` 클래스는 `SocialOperation` `SocialComponent`의 결과로 반환되며, HTTP 상태 코드 및 HTTP 상태 메시지로 구성됩니다.
 
-작업의 영향을 받은 리소스를 `SocialComponent`나타냅니다.
+작업의 영향을 받은 리소스를 `SocialComponent` 나타냅니다.
 
-만들기 작업의 경우, 에 `SocialComponent`포함된 리소스는 방금 생성된 리소스를 `SocialOperationResult`나타내며 업데이트 작업의 경우 공정에 의해 변경된 리소스를 나타냅니다. 삭제 작업에 대해 반환되지 `SocialComponent`않습니다.
+생성 작업의 경우, 에 `SocialComponent` 포함된 자원은 방금 생성된 자원을 `SocialOperationResult` 나타내며 갱신 작업의 경우 공정에 의해 변경된 자원을 나타냅니다. 삭제 작업에 대해 반환되지 `SocialComponent` 않습니다.
 
-사용된 성공 HTTP 상태 코드는
+사용된 성공 HTTP 상태 코드는 다음과 같습니다.
 
 * 제작 작업을 위한 201
 * 업데이트 작업 200
@@ -95,22 +96,24 @@ The `PostOperation`receive the result from the `SocialOperation`and return to th
 
 #### OperationException 클래스 {#operationexception-class}
 
-요청이 유효하지 않거나 내부 오류, 잘못된 매개 변수 값, 부적절한 권한 등과 같은 일부 다른 오류가 발생하는 경우 작업을 수행할 때 `OperationExcepton`An을 실행할 수 있습니다. HTTP 상태 코드와 오류 메시지로 `OperationException`구성되며, 이 메시지는 클라이언트에 대한 응답으로 반환됩니다 `PostOperatoin`.
+요청이 유효하지 않거나 내부 오류, 잘못된 매개 변수 값, 부적절한 권한 등과 같은 일부 다른 오류가 발생하는 경우 작업을 수행할 때 An `OperationExcepton` 을 실행할 수 있습니다. HTTP 상태 코드와 오류 메시지로 `OperationException` 구성되며 이 메시지는 클라이언트에 대한 응답으로 반환됩니다 `PostOperatoin`.
 
 #### OperationService 클래스 {#operationservice-class}
 
-소셜 구성 요소 프레임워크에서는 작업을 수행하는 비즈니스 논리를 `SocialOperation`클래스 내에서 구현하지 말고 대신 OSGi 서비스에 위임하는 것이 좋습니다. 비즈니스 로직용 OSGi 서비스를 사용하면 `SocialComponent`종단점에 의해 작동되는 `SocialOperation`종단점에 대해 다른 코드와 통합되고 다른 비즈니스 로직을 적용할 수 있습니다.
+소셜 구성 요소 프레임워크에서는 작업을 수행하는 비즈니스 논리를 `SocialOperation` 클래스 내에서 구현하지 말고 대신 OSGi 서비스에 위임하는 것이 좋습니다. 비즈니스 로직용 OSGi 서비스를 사용하면 종단점에 의해 `SocialComponent`작동되는 `SocialOperation` 종단점에 의해 다른 코드와 통합되고 다른 비즈니스 로직을 적용할 수 있습니다.
 
-모든 `OperationService``AbstractOperationService`클래스가 확장되어 수행되는 작업에 연결할 수 있는 추가 확장이 가능합니다. 서비스의 각 작업은 `SocialOperation`클래스로 표시됩니다. 이 `OperationExtensions`클래스는 작업 실행 중에 메서드를 호출하여 호출할 수 있습니다
+모든 `OperationService` `AbstractOperationService`클래스가 확장되어 수행되는 작업에 연결할 수 있는 추가 확장이 가능합니다. 서비스의 각 작업은 `SocialOperation` 클래스로 표시됩니다. 이 `OperationExtensions` 클래스는 작업 실행 중에 메서드를 호출하여 호출할 수 있습니다
 
 * `performBeforeActions()`
-사전 검사/사전 처리 및 유효성 검사 허용
+
+   사전 검사/사전 처리 및 유효성 검사 허용
 * `performAfterActions()`
-리소스를 추가로 수정하거나 사용자 지정 이벤트, 워크플로우 등을 호출할 수 있습니다.
+
+   리소스를 추가로 수정하거나 사용자 지정 이벤트, 워크플로우 등을 호출할 수 있습니다.
 
 #### OperationExtension 클래스 {#operationextension-class}
 
-`OperationExtension`클래스는 비즈니스 요구 사항에 맞게 작업을 사용자 정의할 수 있도록 작업에 삽입될 수 있는 사용자 정의 코드 조각입니다. 구성 요소의 소비자는 구성 요소에 기능을 동적으로 그리고 점진적으로 추가할 수 있습니다. 익스텐션/후크 패턴을 사용하면 개발자는 익스텐션 자체에만 집중할 수 있고 전체 작업 및 구성 요소를 복사하고 재정의할 필요가 없습니다.
+`OperationExtension` 클래스는 비즈니스 요구 사항에 맞게 작업을 사용자 정의할 수 있도록 작업에 삽입될 수 있는 사용자 정의 코드 조각입니다. 구성 요소의 소비자는 구성 요소에 기능을 동적으로 그리고 점진적으로 추가할 수 있습니다. 익스텐션/후크 패턴을 사용하면 개발자는 익스텐션 자체에만 집중할 수 있고 전체 작업 및 구성 요소를 복사하고 재정의할 필요가 없습니다.
 
 ## 샘플 코드 {#sample-code}
 
