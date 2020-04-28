@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 4f4f2897000a0afe26a0dbcc4514e20befdb4114
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -20,13 +20,16 @@ source-git-commit: 4f4f2897000a0afe26a0dbcc4514e20befdb4114
 웹 사이트를 설정하려면 아래 지침에 따라 다음 위치에서 만들 폴더에 대해 설명합니다.
 
 * `/apps/an-scf-sandbox`
-사용자 정의 애플리케이션 및 템플릿이 상주하는 곳입니다
+
+   여기에서 사용자 정의 응용 프로그램과 템플릿이 상주합니다.
 
 * `/etc/designs/an-scf-sandbox`
-다운로드 가능한 디자인 요소가 있는 경우
+
+   다운로드 가능한 디자인 요소가 상주합니다.
 
 * `/content/an-scf-sandbox`
-다운로드 가능한 웹 페이지가 있는 위치
+
+   다운로드 가능한 웹 페이지가 있는 곳입니다.
 
 이 자습서의 코드는 애플리케이션, 디자인 및 컨텐츠에 대해 동일한 기본 폴더 이름을 사용합니다. 웹 사이트의 다른 이름을 선택한 경우 항상 선택한 이름으로 `an-scf-sandbox` 바꾸십시오.
 
@@ -37,9 +40,11 @@ source-git-commit: 4f4f2897000a0afe26a0dbcc4514e20befdb4114
 >* CRXDE에 표시되는 이름은 주소 지정 가능한 컨텐츠의 경로를 구성하는 노드 이름입니다.
 >* 노드 이름에는 공백이 포함될 수 있지만 URI에서 사용할 경우 공백을 &#39;%20&#39; 또는 &#39;+&#39; 중 하나로 인코딩해야 합니다.
 >* 노드 이름에는 하이픈 및 밑줄이 포함될 수 있지만 Java 파일 내에서 패키지 이름으로 참조할 때는 인코딩해야 합니다. 하이픈과 밑줄 모두 밑줄로 이스케이프되고 유니코드 값이 이어집니다.
->
->   * hyphen은 &#39;_002d&#39;가 됩니다.
->   * 밑줄이 &#39;_005f&#39;가 됩니다.
+   >
+   >   
+   * hyphen은 &#39;_002d&#39;가 됩니다.
+   >   * 밑줄이 &#39;_005f&#39;가 됩니다.
+
 
 ## 응용 프로그램 디렉토리(/apps) 설정 {#setup-the-application-directory-apps}
 
@@ -51,27 +56,27 @@ source-git-commit: 4f4f2897000a0afe26a0dbcc4514e20befdb4114
 
    탐색기 **[!UICONTROL 창에서]** CRXDE Lite 사용
 
-   1. 폴더 `/apps` 선택
-   1. **[!UICONTROL 만들기...]**&#x200B;를 마우스 오른쪽 단추로&#x200B;**[!UICONTROL 클릭합니다.또는 만들기...]**&#x200B;를 아래로 끌어 옵니다.메뉴
-   1. **[!UICONTROL 폴더]**&#x200B;만들기...를 선택합니다..
-   1. 폴더 **[!UICONTROL 만들기]** 대화 상자에서 `an-scf-sandbox`
-   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다
+   1. 폴더를 `/apps` 선택합니다.
+   1. 만들기... **[!UICONTROL 를 마우스 오른쪽 단추로]**&#x200B;클릭합니다.또는 만들기... **[!UICONTROL 를 아래로 끌어 옵니다.]** 메뉴.
+   1. 폴더 **[!UICONTROL 만들기...를 선택합니다.]**.
+   1. [폴더 **[!UICONTROL 만들기]** ] 대화 상자에서 을 `an-scf-sandbox`입력합니다.
+   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
 1. 구성 **[!UICONTROL 요소]** 하위 폴더를 만듭니다.
 
-   1. 폴더 `/apps/an-scf-sandbox` 선택
-   1. 만들기 **[!UICONTROL > 폴더 만들기를 클릭합니다.]**
-   1. 폴더 **[!UICONTROL 만들기 대화]** 상자에서 **[!UICONTROL 구성 요소를 입력합니다.]**
-   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다
+   1. 폴더를 `/apps/an-scf-sandbox` 선택합니다.
+   1. 만들기 **[!UICONTROL > 폴더 만들기를 클릭합니다]**.
+   1. 폴더 **[!UICONTROL 만들기]** 대화 상자에서 **[!UICONTROL 구성 요소를]**&#x200B;입력합니다.
+   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-1. 템플릿 **하위 폴더를 만듭니다&#x200B;**.
+1. 템플릿 **[!UICONTROL 하위 폴더를 만듭니다]** .
 
-   1. 폴더 `/apps/an-scf-sandbox` 선택
-   1. 만들기 **[!UICONTROL > 폴더 만들기를 클릭합니다.]**
-   1. 폴더 **[!UICONTROL 만들기 대화]** 상자에서 **[!UICONTROL 템플릿을 입력합니다.]**
-   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다
-   1. 다시 선택 `/apps/an-scf-sandbox`
-   1. 모두 **[!UICONTROL 저장을 선택합니다.]**
+   1. 폴더를 `/apps/an-scf-sandbox` 선택합니다.
+   1. 만들기 **[!UICONTROL > 폴더 만들기를 클릭합니다]**.
+   1. 폴더 **[!UICONTROL 만들기]** 대화 상자에서 **[!UICONTROL 템플릿을]**&#x200B;입력합니다.
+   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+   1. 다시 `/apps/an-scf-sandbox`선택합니다.
+   1. 모두 **[!UICONTROL 저장을 선택합니다]**.
    모든 편집 프로세스와 마찬가지로 종종 비용을 절감할 수 있습니다. 데이터 입력 시 문제가 발생하면 로그인 시간이 초과되었거나 이전 편집 내용을 저장해야 할 수 있습니다.
 
 1. CRXDE Lite의 탐색기 창에 있는 구조는 다음과 같이 표시됩니다.
@@ -86,14 +91,14 @@ source-git-commit: 4f4f2897000a0afe26a0dbcc4514e20befdb4114
 
    참고:CRXDE Lite를 사용하여 노드 유형을 만드는 `cq:Page`경우 액세스 제어 및 복제는 페이지에 대한 기본 설정으로 설정되지 않습니다.
 
-1. 탐색기 창에서 디자인 **[!UICONTROL 폴더를 선택한]** 다음 새로 만들기 > **[!UICONTROL 새 페이지를 클릭합니다]**.
+1. 탐색기 창에서 디자인 **[!UICONTROL 폴더를 선택한]** 다음 새로 만들기 > **[!UICONTROL 새]** **[!UICONTROL 페이지를]**&#x200B;클릭합니다.
 
    Enter:
 
-   * 제목:SCF **샌드박스**
-   * 이름: **an-scf-sandbox**
-   * 디자인 **페이지 템플릿 선택**
-   **[!UICONTROL 만들기]**&#x200B;를 클릭합니다
+   * 제목:SCF **[!UICONTROL 샌드박스]**
+   * 이름: **[!UICONTROL an-scf-sandbox]**
+   * 디자인 **[!UICONTROL 페이지 템플릿 선택]**
+   **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
