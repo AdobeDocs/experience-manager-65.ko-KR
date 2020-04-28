@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 844d42ed50da153077423190684aa85265bce12f
 
 ---
 
@@ -28,6 +28,10 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 페이지를 [편집할](/help/sites-authoring/editing-content.md)때 링크가 활성화되지 않습니다.
 
 * [미리 **보기** 모드로](/help/sites-authoring/editing-content.md#preview-mode) 전환하여 컨텐츠의 링크를 사용하여 탐색할 수 있습니다.
+
+### 구조 페이지 {#structure-pages}
+
+페이지의 이름은 지정할 수 없습니다 `structure`. 이름이 지정된 페이지는 페이지 편집기에서 편집할 수 `structure` 없습니다.
 
 ## CSS 제한 {#css-limitations}
 
