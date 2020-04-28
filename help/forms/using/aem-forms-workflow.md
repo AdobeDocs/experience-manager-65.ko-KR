@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 14a6e0c5f79ac7acb9f8bd06d3524473f1007485
 
 ---
 
@@ -65,7 +65,7 @@ AEM 파섹 워크플로우 모델을 만드는 단계별 지침은 워크플로�
 
 [파일 가져오기](assets/example-mortgage-loan-application.zip)
 
-1. 워크플로우 모델 콘솔을 엽니다. 기본 URL은 https://&#39;[server]:[port]&#39;/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models입니다.
+1. 워크플로우 모델 콘솔을 엽니다. 기본 URL은 `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Select **Create**, then **Create Model**. 워크플로우 모델 추가 대화 상자가 나타납니다.
 1. 제목 및 **이름** ( **선택** 사항)을 입력합니다. 예를 들어 대출 신청서. **Done**&#x200B;을 누릅니다.
 1. 새로 만든 워크플로우 모델을 선택하고 편집을 **누릅니다**. 이제 워크플로우 단계를 추가하여 비즈니스 로직을 구축할 수 있습니다. 워크플로우 모델을 처음 만들면 다음과 같은 내용이 포함됩니다.
@@ -75,7 +75,7 @@ AEM 파섹 워크플로우 모델을 만드는 단계별 지침은 워크플로�
 
 1. 이메일 알림을 활성화합니다. OSGi에서 양식 중심의 워크플로우를 구성하여 사용자 또는 할당자에게 이메일 알림을 전송할 수 있습니다. 이메일 알림을 활성화하려면 다음 구성을 수행하십시오.
 
-   1. https://&#39;의 AEM 구성 관리자로[]이동합니다.[port]&#39;/system/console/configMgr.
+   1. 의 AEM 구성 관리자로 `https://[server]:[port]/system/console/configMgr`이동합니다.
    1. 일 **[!UICONTROL CQ 메일 서비스 구성을]** 엽니다. SMTP 서버 호스트 이름 **[!UICONTROL ,]** SMTP 서버 포트 **[!UICONTROL 및]** &quot;보낸 사람&quot; 주소 **[!UICONTROL 필드의 값을 지정합니다]** . **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
    1. Day CQ **[!UICONTROL Link Externalizer 구성을]** 엽니다. 도메인 **[!UICONTROL 필드에서]** 로컬, 작성자 및 게시 인스턴스에 대한 실제 호스트 이름/IP 주소 및 포트 번호를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -101,7 +101,7 @@ AEM 파섹 워크플로우 모델을 만드는 단계별 지침은 워크플로�
 
    표현식 편집기를 사용하여 분기 1과 분기 2에 대한 라우팅 표현식을 만듭니다. 이러한 라우팅 표현식은 AEM 받은 편지함의 사용자 작업을 기반으로 분기를 선택하는 데 도움이 됩니다.
 
-   **분기 2에 대한 라우팅 표현식**
+   **분기 1에 대한 라우팅 표현식**
 
    사용자가 AEM 받은 **편지함에서** 승인을 누르면 분기 1이 활성화됩니다.
 
@@ -265,10 +265,10 @@ OSGi에서 인터랙티브한 커뮤니케이션이나 편지 제출 시 양식 
 
 AEM 워크플로우의 작업 할당 및 이메일 보내기 단계를 사용하여 이메일을 보낼 수 있습니다. 이메일 서버 및 이메일을 보내는 데 필요한 기타 구성을 지정하려면 다음 단계를 수행하십시오.
 
-1. https://&#39;의 AEM 구성 관리자로[]이동합니다.[port]&#39;/system/console/configMgr.
+1. 의 AEM 구성 관리자로 `https://[server]:[port]/system/console/configMgr`이동합니다.
 1. 일 **[!UICONTROL CQ 메일 서비스 구성을]** 엽니다. SMTP 서버 호스트 이름 **[!UICONTROL ,]** SMTP 서버 포트 **[!UICONTROL 및]** &quot;보낸 사람&quot; 주소 **[!UICONTROL 필드의 값을 지정합니다]** . **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. Day CQ **[!UICONTROL Link Externalizer 구성을]** 엽니다. 도메인 **[!UICONTROL 필드에서]** 로컬, 작성자 및 게시 인스턴스에 대한 실제 호스트 이름/IP 주소 및 포트 번호를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ### 워크플로우 인스턴스 제거 {#purge-workflow-instances}
 
-워크플로우 인스턴스 수를 최소화하면 워크플로우 엔진의 성능이 향상되므로 저장소에서 완료되었거나 실행 중인 워크플로우 인스턴스를 정기적으로 제거할 수 있습니다. 자세한 내용은 워크플로우 인스턴스 [정기적인 제거를 참조하십시오](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+워크플로우 인스턴스 수를 최소화하면 워크플로우 엔진의 성능이 향상되므로 저장소에서 완료되었거나 실행 중인 워크플로우 인스턴스를 정기적으로 제거할 수 있습니다. 자세한 내용은 워크플로우 인스턴스 [제거를](/help/sites-administering/workflows-administering.md#regular) 참조하십시오.
