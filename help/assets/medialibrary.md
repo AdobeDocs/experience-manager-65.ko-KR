@@ -3,7 +3,7 @@ title: AEM 자산 및 AEM 미디어 라이브러리 제품 비교
 description: AEM Assets 및 AEM Media Library 솔루션을 비교하고 차이점을 파악합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 569c552686e6312ecae0d500147a8b65354c303d
+source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 569c552686e6312ecae0d500147a8b65354c303d
 
 AEM(Adobe Experience Manager) 자산은 AEM 플랫폼의 필수 요소입니다. 이러한 매끄러운 통합은 AEM의 주요 장점으로 보이며 컨텐츠 작성자의 일관성 및 높은 생산성을 보장합니다.
 
-## Frequently asked questions {#frequently-asked-questions}
+## FAQ {#frequently-asked-questions}
 
 ### AEM Assets 소개 {#what-is-aem-assets}
 
@@ -29,7 +29,7 @@ AEM Assets 고객만 사용할 수 있는 고유 기능은 다음과 같습니�
 * 제목, 태그 및 설명 이외의 메타데이터를 추출하고 편집할 수 있습니다.
 * siteadmin 옆에 있는 두 번째 단추를 선택하여 시작 화면에서 사용할 수 있는 AEM 자산 관리입니다.
 * 디지털 자산 관리와 관련된 모든 워크플로우 단계(AEM 자산 통합, AEM 자산 삭제, AEM 자산 하위 자산 처리, AEM 자산 메타데이터 추출)
-* 라이브러리(예: &quot;dam&quot; im package space 포함)
+* 라이브러리(예: &quot;dam&quot; im package space)
 
 이러한 기능을 사용하려면 유효한 AEM Assets 라이선스가 필요합니다.
 
@@ -55,7 +55,7 @@ AEM Assets 고객만 사용할 수 있는 고유 기능은 다음과 같습니�
 
 ### AEM 자산에 라이선스를 부여하지 않은 경우 사용자가 AEM 자산을 사용하지 못하도록 하려면 어떻게 해야 합니까? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-AEM에서 모든 AEM 자산별 워크플로우, 구성 요소, 분류, 옵션 및 AEM 자산 관리자를 제거할 수 있습니다. 이렇게 하면 사용자가 라이선스가 부여되지 않은 AEM 자산 기능을 실수로 사용할 수 없습니다.
+AEM에서 모든 AEM 자산별 워크플로우, 구성 요소, 분류, 옵션 및 AEM 자산 관리자를 제거할 수 있습니다. 이렇게 하면 사용자가 라이선스를 부여하지 않은 AEM 자산 기능을 실수로 사용하지 못하도록 할 수 있습니다.
 
 ### 페이지에 이미지를 추가하고 이미지를 자르고 크기를 조정하려고 합니다. AEM 자산이 필요합니까? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
