@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -29,7 +29,7 @@ Communities에서 일반적으로 검색된 두 가지 사항은 다음과 같�
 
 * 사용자 및 사용자 그룹(사용자 데이터)
 
-   * AEM 플랫폼 검색 기능 사용
+   * AEM 플랫폼 검색 기능을 사용합니다.
 
 설명서의 이 섹션에서는 UGC를 만들거나 관리하는 사용자 정의 구성 요소를 만드는 개발자에게 유용합니다.
 
@@ -43,7 +43,7 @@ UGC [및 ACL](srp-and-ugc.md) 섀도 노드에 액세스하는 데 사용되는 
 
 ## UGC 검색 API {#ugc-search-api}
 
-UGC [공통 스토어는](working-with-srp.md) 다양한 SRP(Storage Resource Provider) 중 한 곳에서 제공되며 각 SRP는 서로 다른 기본 쿼리 언어를 가지고 있을 수 있습니다. 따라서 선택한 SRP에 관계없이 사용자 지정 코드는 선택한 SRP에 적합한 쿼리 언어를 호출하는 [UGC API 패키지](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.sosocial.ugc.api*)의 메서드를 사용해야 합니다.
+UGC [공통 스토어는](working-with-srp.md) 다양한 SRP(Storage Resource Provider) 중 한 곳에서 제공되며 각 SRP는 다른 기본 쿼리 언어를 가지고 있을 수 있습니다. 따라서 선택한 SRP에 관계없이 사용자 지정 코드는 선택한 SRP에 적합한 쿼리 언어를 호출하는 [UGC API 패키지](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.sosocial.ugc.api*)의 메서드를 사용해야 합니다.
 
 ### ASRP 검색 {#asrp-searches}
 
@@ -60,9 +60,9 @@ MSRP [의](msrp.md)경우 UGC는 검색용으로 Solr를 사용하도록 구성�
 MSRP 및 솔루션 관련:
 
 * AEM 플랫폼용 임베디드 솔러는 MSRP에 사용되지 않습니다.
-* AEM 플랫폼용 원격 솔루션을 사용하는 경우 MSRP와 공유할 수 있지만 다른 컬렉션을 사용해야 합니다
-* 솔루션은 표준 검색 또는 다국어 검색(MLS)용으로 구성할 수 있습니다.
-* 구성에 대한 자세한 내용은 MSRP [용 솔루션](msrp.md#solr-configuration) 구성을 참조하십시오.
+* AEM 플랫폼용 원격 솔루션을 사용하는 경우 MSRP와 공유할 수 있지만 다른 컬렉션을 사용해야 합니다.
+* 솔루션은 표준 검색 또는 MLS(다국어 검색)용으로 구성할 수 있습니다.
+* 구성에 대한 자세한 내용은 MSRP [용](msrp.md#solr-configuration) 솔루션 구성을 참조하십시오.
 
 사용자 정의 검색 기능은 UGC [검색 API를 사용해야 합니다](#ugc-search-api).
 
@@ -70,7 +70,7 @@ MSRP 및 솔루션 관련:
 
 ### JSRP 검색 {#jsrp-searches}
 
-JSRP [의](jsrp.md)경우 UGC는 [Oak에 저장되고](../../help/sites-deploying/platform.md) AEM 작성자 또는 AEM이 입력된 게시 인스턴스의 보관소에만 표시됩니다.
+JSRP의 [경우](jsrp.md)UGC는 [Oak에 저장되고](../../help/sites-deploying/platform.md) AEM 작성자 또는 AEM이 입력된 게시 인스턴스의 보관소에만 표시됩니다.
 
 UGC는 일반적으로 게시 환경에 입력되므로, 다중 게시자 프로덕션 시스템의 경우, [게시 팜이](topologies.md)아닌 게시 클러스터를 구성해야 모든 게시자가 입력한 컨텐츠를 볼 수 있습니다.
 
@@ -88,8 +88,8 @@ AEM 플랫폼 검색에 대해 Oak 색인은 자동으로 만들어지지 않지
 
 Oak [색인 관리자는 ACS](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) AEM Commons에서 사용할 수 있습니다. 다음과 같은 이점을 제공합니다.
 
-* 기존 인덱스 보기
-* 다시 인덱싱 시작 기능
+* 기존 색인의 보기입니다.
+* 다시 색인 작성 기능
 
 CRXDE Lite에서 기존 Oak [색인을](../../help/sites-developing/developing-with-crxde-lite.md)보려면 위치는 다음과 같습니다.
 
@@ -135,11 +135,11 @@ CRXDE Lite에서 기존 Oak [색인을](../../help/sites-developing/developing-w
 
 ### 사용자 지정 속성 이름 지정 {#naming-of-custom-properties}
 
-사용자 지정 속성을 추가할 때 UGC 검색 API로 만든 정렬 및 검색에 이러한 속성을 [표시하려면](#ugc-search-api)*가 필요합니다.
+사용자 지정 속성을 추가할 때 UGC 검색 API를 사용하여 만든 정렬 및 검색에 [이러한 속성을 표시하려면](#ugc-search-api)속성 이름에 접미어를 *추가해야* 합니다.
 
 접미사는 스키마를 사용하는 쿼리 언어에 대한 것입니다.
 
-* 속성을 검색 가능한 것으로 식별합니다.
+* 검색 가능한 속성이라고 식별합니다.
 * 데이터 유형을 식별합니다.
 
 Solr는 스키마를 사용하는 쿼리 언어의 예입니다.
@@ -168,7 +168,7 @@ Solr는 스키마를 사용하는 쿼리 언어의 예입니다.
 
 AND 및 OR 로직의 필터 구문은 다음과 같이 표현됩니다(URL 인코딩 전에 표시됨).
 
-* OR을 지정하려면 쉼표로 구분된 값과 함께 필터 매개 변수 하나를 사용합니다.
+* OR을 지정하려면 쉼표로 구분된 값으로 필터 매개 변수 하나를 사용합니다.
 
    * `filter=name eq 'Jennifer',name eq 'Jen'`
 
@@ -229,8 +229,8 @@ Solr 쿼리 문제를 해결하는 데 도움이 되도록
 ## 관련 리소스 {#related-resources}
 
 * [커뮤니티 컨텐츠](working-with-srp.md) 저장소 - UGC 일반 스토어에 사용할 수 있는 SRP에 대해 설명합니다.
-* [스토리지 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
-* [SRP를 사용하여 UGC](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
-* [SocialUtils 리팩토링](socialutils.md) - SocialUtils를 대체하는 SRP에 대한 유틸리티 메서드
+* [스토리지 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요.
+* [SRP를 사용하여 UGC에](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
+* [SocialUtils 리팩토링](socialutils.md) - SocialUtils를 대체하는 SRP에 대한 유틸리티 메서드입니다.
 * [검색 및 검색 결과 구성 요소](search.md) - 템플릿에 UGC 검색 기능 추가
 
