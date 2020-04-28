@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 68cd1c13fff94ac485865e50bc955548cd285b14
 
 ---
 
@@ -61,11 +61,22 @@ ZIP 파일에 폴더 계층 구조의 가장 낮은 수준에 있는 두 개 이
 
 >[!NOTE]
 >
->HTML을 PDF로 변환 기능을 사용하려면 시스템 글꼴 디렉토리에 특정 글꼴이 있어야 합니다. Linux, Solaris 및 AIX 시스템의 경우 시스템 글꼴 디렉토리에 Courier 글꼴이 포함되어야 합니다. Windows 시스템의 경우 시스템 글꼴 디렉토리에 Times New Roman이 포함되어야 합니다.
+>* HTML을 PDF로 변환 기능을 사용하려면 시스템 글꼴 디렉토리에 특정 글꼴이 있어야 합니다. Linux, Solaris 및 AIX 시스템의 경우 시스템 글꼴 디렉토리에 Courier 글꼴이 포함되어야 합니다. Windows 시스템의 경우 시스템 글꼴 디렉토리에 Times New Roman이 포함되어야 합니다.
+   >
+   > 
+* 다음은 Linux에서 AEM Forms의 기본 일본어 글꼴입니다. >시스템에서 일본어 글꼴을 변환하려면 이러한 글꼴 중 하나 이상을 사용할 수 있어야 합니다.
+   >
+   >   
+   * 사자나미 고딕
+   >   * &quot;Kozuka Gothic Pro-VI&quot;
+   >   * &quot;Kozuka Mincho Pro-VI&quot;
+   >   * 사자나미 고딕
+   >   * &quot;Kozuka Mincho Pr6N&quot;
+   >   * &quot;Sazanami Mincho&quot;
+   >   * &quot;Adobe Heiti Std&quot;
+   >   * &quot;Adobe Song Std&quot;
+>* 로컬 파일 시스템에서 파일을 업로드하려면 HTML에서 PDF로 파일 업로드 옵션을 사용합니다.
 
->[!NOTE]
->
->로컬 파일 시스템에서 파일을 업로드하려면 HTML에서 PDF로 파일 업로드 옵션을 사용합니다.
 
 1. 관리 콘솔에서 서비스 > PDF Generator > HTML을 PDF로 클릭합니다.
 1. 다음 작업 중 하나를 수행하여 변환할 파일을 지정합니다.
