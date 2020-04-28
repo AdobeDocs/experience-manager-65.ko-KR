@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -21,26 +21,27 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 개발 및 데모를 위해 작성자 한 명과 게시 인스턴스 한 개를 실행해야 합니다.
 
-이렇게 하려면 기본 AEM 시작 [지침을](../../help/sites-deploying/deploy.md#getting-started) 따르면
+이렇게 하려면 기본 AEM 시작 [지침을](../../help/sites-deploying/deploy.md#getting-started) 따라 다음을 수행합니다.
 
 * 로컬 호스트의 작성 [환경:4502](http://localhost:4502/)
 * localhost: [4503에 환경 게시](http://localhost:4503/)
 
 AEM Communities,
 
-* 작성 환경은
+* 작성 환경은 다음과 같습니다.
 
    * 사이트, 템플릿 및 구성 요소 개발
-   * 관리 및 구성 작업
+   * 관리 및 구성 작업.
 
-* 게시 환경은
+* 게시 환경은 다음과 같습니다.
 
-   * 컨텐츠를 게시하고 중재하는 커뮤니티 경험
+   * 컨텐츠를 게시하고 중재하는 커뮤니티 경험입니다.
    * 커뮤니티 그룹, 구성원 및 구성원 그룹 만들기
 
 >[!NOTE]
 >
 >AEM에 익숙하지 않은 경우 [기본 처리에](../../help/sites-authoring/basic-handling.md) 대한 설명서와 페이지 [작성에 대한](../../help/sites-authoring/qg-page-authoring.md)빠른 안내서를 봅니다.
+
 
 ## 최신 커뮤니티 릴리스 설치 {#install-latest-communities-release}
 
@@ -90,17 +91,17 @@ See [Configuring Email](email.md).
 
    * 예: 사용자 이름 &#39;admin&#39; / 암호 &#39;admin&#39;
 
-* 주 콘솔에서 도구 > 작업 > **[!UICONTROL 보안 > 사용자로 이동합니다.]**
+* 기본 콘솔에서 도구 > 작업 **[!UICONTROL > 보안]** **[!UICONTROL >]** 사용자 **[!UICONTROL 를]******&#x200B;찾습니다.
 * 편집 **메뉴에서&#x200B;**사용자**[!UICONTROL 추가를 선택합니다&#x200B;]**
 
-* 대화 `Create New User` 상자에서
+* 대화 상자에서 다음을 `Create New User` 입력합니다.
 
-   * **[!UICONTROL ID&amp;ast;]**:시리우스
+   * **[!UICONTROL ID]**:시리우스
    * **[!UICONTROL 이메일 주소]**:sirius.nilson@mailinator.com
-   * **[!UICONTROL 암호;암호;ast;]**:암호
+   * **[!UICONTROL 암호]**:암호
    * **[!UICONTROL 암호 확인;암호;암호]**&#x200B;확인;암호
    * **[!UICONTROL 이름]**:시리우스
-   * **[!UICONTROL 성;amp;ast;]**:닐슨
+   * **[!UICONTROL 성]**:닐슨
 
 ### 커뮤니티 관리자 그룹에 Sirius 할당 {#assign-sirius-to-community-administrators-group}
 
@@ -111,7 +112,7 @@ See [Configuring Email](email.md).
    * 선택 `Community Administrators`
    * 선택 `Community Enablement Managers`
 
-* **[!UICONTROL 저장]**&#x200B;을 선택합니다
+* **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -120,7 +121,7 @@ See [Configuring Email](email.md).
 Facebook 및 Twitter의 소셜 로그인 데모를 사용하려면 먼저
 
 1. 수정 팩 또는 [최신 기능 팩](deploy-communities.md#latestfeaturepack) 설치(2017년 3월 Facebook API 변경 사항)
-1. [게시 환경에서 OAuth 공급자](social-login.md#adobe-granite-oauth-authentication-handler) 활성화
+1. [게시 환경에서 OAuth 공급자를](social-login.md#adobe-granite-oauth-authentication-handler) 활성화합니다.
 
 프로덕션 서버의 경우 소셜 로그인을 제공하는 데 필요한 클라우드 서비스를 만들어야 합니다.
 
@@ -141,10 +142,10 @@ Facebook [및 Twitter로 소셜 로그인을 참조하십시오](social-login.md
 
 ![chlimage_1-302](assets/chlimage_1-302.png)
 
-그런 다음 지침에 따라
+그런 다음 지침에 따라 다음을 수행합니다.
 
-1. [태그 권한 설정](../../help/sites-administering/tags.md#setting-tag-permissions)
-1. [태그 게시](../../help/sites-administering/tags.md#publishing-tags)
+1. [태그 권한을](../../help/sites-administering/tags.md#setting-tag-permissions)설정합니다.
+1. [태그를](../../help/sites-administering/tags.md#publishing-tags)게시합니다.
 
 AEM Communities 시작하기 자습서에 대해 만든 태그의 샘플 패키지
 
