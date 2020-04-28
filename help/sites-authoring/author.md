@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
 
 ---
 
@@ -38,13 +38,11 @@ AEM에서는 두 가지 환경을 제공합니다.
 
 >[!NOTE]
 >
->AEM 자체는 AEM 설명서를 작성하는 데 사용됩니다.
->
->디스패처와 함께 게시에도 사용됩니다.
+>AEM 및 디스패처는 이 AEM 설명서를 게시하는 데 사용됩니다.
 
 ### 작성 환경 {#author-environment}
 
-The author works in what is known as the **author environment**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It is usually located behind a company&#39;s firewall that provides full protection and requires the author to login, using an account that has been assigned the appropriate access rights.
+작성자는 **작성 환경**&#x200B;에서 작업합니다. 이 환경은 컨텐츠 작성에 적합한 사용하기 쉬운 인터페이스(그래픽 사용자 인터페이스(GUI 또는 UI))를 제공합니다. 완전한 보호 기능을 제공하고 작성자가 적절한 액세스 권한이 지정된 계정을 사용하여 로그인해야 하는 회사 방화벽 뒤에 일반적으로 위치합니다.
 
 >[!NOTE]
 >
@@ -83,11 +81,11 @@ AEM 사이트가 [커뮤니티 사이트](/help/communities/overview.md)이거�
 >안타깝게도 사용된 용어에 겹치는 경우가 있습니다. 다음과 같은 경우입니다.
 >
 >* **게시/게시 취소**
-   >  게시 환경에서 컨텐츠를 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업에 대한 기본 용어입니다.
+   >  이 용어는 컨텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
    >
    >
 * **활성화/비활성화**
-   >  이러한 용어는 게시/게시 취소와 동의어입니다.
+   >  게시/게시 취소와 동의어입니다.
    >
    >
 * **복제**
@@ -98,4 +96,4 @@ AEM 사이트가 [커뮤니티 사이트](/help/communities/overview.md)이거�
 
 #### Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implements load balancing and caching.
+웹 사이트 방문자가 체감하는 성능을 최적화하기 위해 **[디스패처](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)는 부하 분산 및 캐싱을 구현합니다.**
