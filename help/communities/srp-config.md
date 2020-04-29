@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 이 설정은 AEM Communities 코드에 UGC에 액세스할 때 사용할 SRP(저장소 리소스 공급자)의 구현에 대해 알리고 AEM이 배포될 때 설정된 토폴로지를 반영해야 합니다.
 
-스토리지 옵션 및 배포 토폴로지에 대한 자세한 내용은
+스토리지 옵션 및 배포 토폴로지에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [커뮤니티 콘텐츠 스토어](working-with-srp.md)
 * [권장 토폴로지](topologies.md)
@@ -30,9 +30,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-작성 환경에서 스토리지 구성 콘솔에 액세스하려면
+작성 환경에서 스토리지 구성 콘솔에 액세스할 수 있습니다.
 
-* 전역 탐색에서:도구 **[!UICONTROL > 커뮤니티 > 스토리지 구성]**
+* 글로벌 탐색에서 도구 > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 스토리지]** 구성을 **[!UICONTROL 선택합니다.]**
 
 기본 JCR 이외의 저장 옵션을 선택하려면 다음을 수행합니다.
 
@@ -43,7 +43,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    * DSRP [선택 세부 사항 보기](dsrp.md#select-dsrp)
    * ASRP [선택 세부 사항 보기](asrp.md#select-asrp)
 
-* **[!UICONTROL 제출]**&#x200B;을 선택합니다
+* **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
 ### JCR 스토리지 정보 {#about-jcr-storage}
 
@@ -55,5 +55,6 @@ JCR은 작성 및 게시 환경에서 공유되는 공용 저장소가 *아닙�
 
 >[!NOTE]
 >
->아래 노드가 `srpc`없으면 기본 JCR 저장소가 `/etc/socialconfig` [](jsrp.md)표시됩니다.
+>아래 노드가 없으면 `srpc` 기본 JCR 저장소가 `/etc/socialconfig` [](jsrp.md)표시됩니다.
+
 
