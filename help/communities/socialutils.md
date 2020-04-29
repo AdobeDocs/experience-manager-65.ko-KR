@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## SocialUtils 패키지 가치 하락 {#socialutils-package-deprecated}
 
-com.adobe.cq.sosocial. **ugcbase.SocialUtils** 패키지는 AEM 6.1에서 더 이상 사용되지 않습니다.
+패키지는 `com.adobe.cq.social.ugcbase.SocialUtils` AEM 6.1에서 더 이상 사용되지 않습니다.
 
 다음 표에는 SocialUtils 메서드 대신 사용할 메서드가 나와 있습니다.
 
