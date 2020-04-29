@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
 
 ---
 
@@ -30,6 +30,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 우수 사례를 �
 * [코드 함정](/help/sites-developing/code-pitfalls.md)
 * [JCR 상호 작용](/help/sites-developing/jcr-integration.md)
 * [OSGi 번들](/help/sites-developing/osgi-bundles.md)
+* [Java API 우수 사례](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### 추가 우수 사례 정보 {#additional-best-practices-information}
 
@@ -78,7 +79,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 우수 사례를 �
 
 ## 커뮤니티 {#communities}
 
-[AEM](/help/communities/overview.md) Communities를 사용하면 온-프레미스 커뮤니티의 생성 및 관리를 간소화할 수 있습니다.
+[AEM Communities](/help/communities/overview.md) 온프레미스 커뮤니티의 생성 및 관리를 간소화합니다.
 
 커뮤니티에 대한 일부 우수 사례는 다음과 같습니다.
 
@@ -93,11 +94,11 @@ HTML 템플릿 언어(HTL)는 AEM 6.0과 함께 도입된 새로운 HTML 템플�
 
 |  |  |  |
 |---|---|---|
-| HTL 개요 | [HTL 개요 및 구문](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) | 이 문서에서는 HTL이 무엇이고 샘플 프로젝트, 구문, 표현식 및 명령문으로 이동하는 방법에 대해 설명합니다 |
+| HTL 개요 | [HTL 개요 및 구문](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html) | 이 문서에서는 HTL이 무엇이고 샘플 프로젝트, 구문, 표현식 및 명령문으로 이동하는 방법에 대해 설명합니다 |
 | Java에서 API 사용 | [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | HTL Java Use-API를 사용하면 HTL 파일에서 사용자 지정 Java 클래스의 도우미 메서드에 액세스할 수 있습니다. |
 
 >[!NOTE]
 >
 >코어 구성 요소, 편집 가능한 템플릿, 클라이언트 라이브러리 및 구성 요소 개발을 자세히 설명하는 새 AEM 프로젝트를 설정하는 최상의 방법을 위해 다음의 다중 부분 자습서가 유용할 수 있습니다.
->[AEM Sites 시작하기 - WKND 자습서](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
