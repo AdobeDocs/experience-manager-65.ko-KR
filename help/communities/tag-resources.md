@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
 
 ---
 
@@ -26,13 +26,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 * [각 카탈로그에 대한 태그 네임스페이스](../../help/sites-administering/tags.md#creating-a-namespace) 만들기
 
    * [태그 권한 설정](../../help/sites-administering/tags.md#setting-tag-permissions)
+   * 커뮤니티 멤버에게만 해당(폐쇄된 커뮤니티)
 
-      * 커뮤니티 멤버에게만 해당(폐쇄된 커뮤니티)
+      * 커뮤니티 사이트의 [구성원 그룹에 대한 읽기 액세스 허용](users.md#publish-group-roles)
+   * 로그인 또는 익명 사이트 방문자(개방형 커뮤니티)
 
-         * 커뮤니티 사이트의 [구성원 그룹에 대한 읽기 액세스 허용](users.md#publish-group-roles)
-      * 로그인 또는 익명 사이트 방문자(개방형 커뮤니티)
-
-         * 해당 `Everyone`그룹에 대한 읽기 액세스 허용
+      * 그룹에 대한 읽기 액세스 `Everyone` 허용
    * [태그 게시](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -42,7 +41,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    * [사이트 구조에 존재하는 카탈로그 구성](functions.md#catalog-function)
 
       * 카탈로그 인스턴스에 태그를 추가하여 UI 필터에 표시된 태그 목록을 제어할 수 있습니다.
-      * 카탈로그의 포함 리소스를 제한하는 [사전 필터를](catalog-developer-essentials.md#pre-filters)추가할 수 있습니다.
+      * 카탈로그의 포함 리소스를 제한하기 위해 [사전 필터를](catalog-developer-essentials.md#pre-filters)추가할 수 있습니다.
 
 * [커뮤니티 사이트 게시](sites-console.md#publishing-the-site)
 * [활성 리소스에](resources.md#create-a-resource) 태그를 적용하여 일괄적으로 필터링할 수 있습니다.
@@ -82,9 +81,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 예를 들어 `ski-catalog` 네임스페이스가 만들어 이름이 지정된 카탈로그에 설정된 경우 두 개의 하위 태그가 있을 `Ski Catalog`수 있습니다. `lesson-1` 및 `lesson-2`Adobe
 
-따라서 다음 중 하나가 태그로 지정된 모든 활성 리소스
+따라서 다음 중 하나로 태그된 모든 활성 리소스
 
-* 스키 카탈로그:
 * 스키 카탈로그:레슨-1
 * 스키 카탈로그:레슨-2
 
