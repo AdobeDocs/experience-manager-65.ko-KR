@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -23,9 +23,10 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >커뮤니티 사이트 [만들기,](sites-console.md)커뮤니티 사이트 템플릿 [,](sites.md)커뮤니티 그룹 템플릿 [및](tools-groups.md) 커뮤니티 기능 [](functions.md) 은 작성 환경에서만 사용할 수 있는 콘솔입니다.
 
+
 ## 사이트 템플릿 콘솔 {#site-templates-console}
 
-작성 환경에서 커뮤니티 사이트 콘솔에 도달하려면
+작성 환경에서 커뮤니티 사이트 콘솔에 액세스하려면 다음을 수행하십시오.
 
 * 전역 탐색에서:도구 **[!UICONTROL > 커뮤니티 > 사이트 템플릿]**
 
@@ -45,13 +46,19 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 [기본 정보] 패널에서 이름, 설명 및 템플릿이 활성화되었는지 또는 비활성화되었는지 여부가 구성됩니다.
 
-* **[!UICONTROL 커뮤니티 사이트 템플릿]**&#x200B;이름 템플릿 이름 ID
+* **[!UICONTROL 커뮤니티 사이트 템플릿 이름]**
 
-* **[!UICONTROL 커뮤니티 사이트 템플릿]**&#x200B;설명 템플릿 설명
+   템플릿 이름 ID입니다.
 
-* **[!UICONTROL 비활성화/]**&#x200B;활성화템플릿 참조 여부를 제어하는 전환 스위치입니다.
+* **[!UICONTROL 커뮤니티 사이트 템플릿 설명]**
 
-### 축소판 {#thumbnail}
+   템플릿 설명입니다.
+
+* **[!UICONTROL 비활성화/활성화]**
+
+   템플릿을 참조할 수 있는지 여부를 제어하는 전환 스위치입니다.
+
+### 썸네일 {#thumbnail}
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -75,6 +82,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >먼저 [페이지 함수와](functions.md#page-function)같은 다른 함수를 포함하여 나열해야 합니다.
 
+
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
 ### 그룹 기능에 대한 그룹 템플릿 {#group-templates-for-groups-function}
@@ -84,6 +92,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >[!CAUTION]
 >
 >Groups 함수는 사이트 구조의 *첫 번째* 함수이거나 유일한 *함수가* 아니어야 합니다.
+
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
