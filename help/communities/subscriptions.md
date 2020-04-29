@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -26,8 +26,8 @@ Communities FP [1의](deploy-communities.md#latestfeaturepack)경우 커뮤니�
 가입과 알림의 차이점은 다음과 같습니다.
 
 * 다른 구성원을 팔로우하는 경우 회원은 가입할 수 없습니다.
-* 멤버가 수행할 수 있는 유일한 작업은 `Email Subscriptions` 다음을 수행할 때 선택하는 것입니다
-* 이메일 회신이 구성되면 회원은 받은 이메일에 간단하게 답글을 달아서 컨텐츠를 효과적으로 게시할 수 있습니다
+* 멤버가 수행할 수 있는 유일한 작업은 `Email Subscriptions` 다음을 선택할 때 선택합니다.
+* 이메일 회신이 구성되면 회원은 수신한 이메일에 간단하게 답글을 달아서 컨텐츠를 효과적으로 게시할 수 있습니다.
 
 ### 요구 사항 {#requirements}
 
@@ -49,15 +49,11 @@ Communities FP [1의](deploy-communities.md#latestfeaturepack)경우 커뮤니�
 
 다음 방법을 선택하면 단추 텍스트가 **다음과 같이 변경됩니다**. 편의를 위해 모든 방법을 전환하도록 선택할 `Unfollow All` 수 있습니다.
 
-[ **팔로우** ] 단추에는 포럼, QnA 또는 블로그가 이메일 구독을 사용하도록 구성된 경우에만 `Email Subscriptions` 옵션이 포함됩니다. 이 단추가 나타납니다
+[ **팔로우** ] 단추에는 포럼, QnA 또는 블로그가 이메일 구독을 사용하도록 구성된 경우에만 `Email Subscriptions` 옵션이 포함됩니다. 이 단추가 표시됩니다.
 
-* 활성화된 포럼, QnA 또는 블로그의 기본 기능 페이지
+* 활성화된 포럼, QnA 또는 블로그의 기본 기능 페이지에서 해당 기능 아래의 모든 활동에 대한 이메일을 보냅니다.
 
-   * 해당 기능의 모든 활동에 대한 이메일을 보냅니다.
-
-* 포럼 주제, QnA 질문 또는 블로그 아티클과 같은 특정 항목의 경우
-
-   * 특정 항목에 대한 활동이 있는 경우 이메일을 보냅니다.
+* 포럼 주제, QnA 질문 또는 블로그 아티클과 같은 특정 항목의 경우 해당 특정 항목에 대한 활동이 있을 때 이메일을 보냅니다.
 
 ## 이메일로 회신 {#reply-by-email}
 
