@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -42,6 +42,7 @@ SCF 구성 요소를 동적으로 추가하는 단계는 다음과 같습니다.
 >
 >존재하지 않는 [리소스의](scf.md#add-or-include-a-communities-component) 사이드로드는 지원되지 않습니다.
 
+
 ## 동적으로 DOM에 구성 요소 추가 {#dynamically-add-component-to-dom}
 
 구성 요소가 동적으로 포함되거나 동적으로 로드되는지 여부는 먼저 DOM에 추가해야 합니다.
@@ -50,9 +51,13 @@ SCF 구성 요소를 추가할 때 가장 많이 사용하는 태그는 DIV 태�
 
 태그가 사용된 모든 요소는 다음 두 속성을 포함하여 최소 SCF 루트 요소 패턴을 준수해야 합니다.
 
-* **data-component-id**&#x200B;추가된 구성 요소에 대한 유효 경로
+* **data-component-id**
 
-* **data-scf-component**&#x200B;구성 요소의 resourceType
+   추가된 구성 요소에 대한 유효 경로입니다.
+
+* **data-scf-component**
+
+   구성 요소의 resourceType입니다.
 
 다음은 추가된 주석 구성 요소의 예입니다.
 
@@ -73,7 +78,7 @@ SCF 구성 요소를 추가할 때 가장 많이 사용하는 태그는 DIV 태�
 
 페이지를 로드한 후 언제든지 SCF 구성 요소를 초기화하려면 다음과 같이 JQuery 이벤트를 실행하면 됩니다.
 
-$(document).trigger(SCF.events.BOOTSTRAP_REQUEST);
+`$(document).trigger(SCF.events.BOOTSTRAP_REQUEST);`
 
 ### 동적 로드 {#dynamic-loading}
 
@@ -81,6 +86,6 @@ $(document).trigger(SCF.events.BOOTSTRAP_REQUEST);
 
 DOM에 있는 모든 SCF 파섹 구성 요소를 부트스트래핑하는 대신 이 JavaScript 메서드를 사용하여 로드할 특정 SCF 파섹 구성 요소를 지정할 수 있습니다.
 
-SCF.add 파섹&#x200B;**
+`SCF.addComponent(document.getElementById(*someId*));`
 
-여기서 *some* Id는 **data-component-id** 속성의 값입니다.
+여기서 `someId` 속성의 값은 `data-component-id` 입니다.
