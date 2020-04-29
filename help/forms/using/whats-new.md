@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: a417094c1d7b28ec54a6e84303d7a9747bb0c510
 
 ---
 
@@ -108,7 +108,7 @@ AEM Forms를 사용하면 AEM Sites 단일 페이지 애플리케이션(SPA)에 
 
 #### 다양한 적응형 양식의 워크플로우 사용 {#use-a-workflow-with-different-adaptive-forms}
 
-런타임 시 할당 작업 [및 양식 중심 워크플로우의 기록 단계 문서를 위한 적응형 양식을](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) 지정할 수 있습니다. 워크플로우에서 다양한 적응형 양식을 사용할 수 있습니다. 워크플로우를 디자인하는 동안 적응형 양식을 선택하는 방법을 결정할 수 있습니다. 적응형 양식은 절대 경로에 위치하거나, 워크플로우에 페이로드로 제출하거나, 변수를 사용하여 계산된 경로에서 사용할 수 있습니다.
+런타임 시 양식 중심 워크플로우의 기록 단계 및 지정 작업에 [](../../forms/using/aem-forms-workflow-step-reference.md#assign-task-step) 대한 적응형 양식을 지정할 수 있습니다. 워크플로우에서 다양한 적응형 양식을 사용할 수 있습니다. 워크플로우를 디자인하는 동안 적응형 양식을 선택하는 방법을 결정할 수 있습니다. 적응형 양식은 절대 경로에 위치하거나, 워크플로우에 페이로드로 제출하거나, 변수를 사용하여 계산된 경로에서 사용할 수 있습니다.
 
 #### 양식 중심의 워크플로우 단계의 향상된 로깅 기능 사용 {#use-enhanced-logging-capabilities-of-forms-centric-workflow-steps}
 
@@ -148,7 +148,8 @@ AEM Forms는 지원되는 운영 체제, 응용 프로그램 서버, 데이터�
    <td>애플리케이션 서버<br /> </td>
    <td>
     <ul>
-     <li>Oracle Weblogic</li>
+    <li>WebSphere Liberty 프로필</li>
+    <li>Oracle WebLogic</li>
     </ul> </td>
   </tr>
   <tr>
