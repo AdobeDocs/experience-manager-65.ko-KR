@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 3d9bcc706a1fa7a15d0ce8729f7b85c4226b394f
 
 ---
 
@@ -158,7 +158,7 @@ SPA를 편집할 때 클라이언트-서버 상호 작용에 대한 자세한 �
 
 ## 요구 사항 및 제한 사항 {#requirements-limitations}
 
-작성자가 페이지 편집기를 사용하여 SPA의 컨텐츠를 편집할 수 있도록 하려면 AEM SPA Editor SDK와 상호 작용하려면 SPA 애플리케이션을 구현해야 합니다. 실행을 시작하는 [데 필요한 최소 사항은 AEM의](/help/sites-developing/spa-getting-started-react.md) SPA 시작 문서를 참조하십시오.
+작성자가 페이지 편집기를 사용하여 SPA의 컨텐츠를 편집할 수 있도록 하려면 AEM SPA Editor SDK와 상호 작용하려면 SPA 애플리케이션을 구현해야 합니다. AEM [에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md) 문서를 참조하여 최소 실행 방법을 확인하십시오.
 
 ### 지원되는 프레임워크 {#supported-frameworks}
 
@@ -172,6 +172,17 @@ SPA Editor SDK는 다음과 같은 최소 버전을 지원합니다.
 ### 추가 프레임워크 {#additional-frameworks}
 
 AEM SPA Editor SDK와 연동되도록 추가 SPA 프레임워크를 구현할 수 있습니다. AEM [SPA](/help/sites-developing/spa-blueprint.md) Editor에서 작동하는 모듈, 구성 요소 및 서비스로 구성된 프레임워크별 레이어를 만들려면 프레임워크가 반드시 충족해야 하는 요구 사항은 SPA Blueprint 문서를 참조하십시오.
+
+### 텍스트 편집기 요구 사항 {#text-editor-requirements}
+
+SPA에서 만든 텍스트 구성 요소의 즉석 편집기를 사용하려면 추가 구성이 필요합니다.
+
+1. 텍스트 HTML을 포함하는 컨테이너 래퍼 요소에 속성을 설정합니다(임의). WKND Journal 샘플 컨텐츠의 경우 `<div>` 요소이며 사용된 선택기가 `data-rte-editelement`사용됩니다.
+1. 해당 AEM 텍스트 구성 `editElementQuery` 요소의 구성을 해당 선택기를 `cq:InplaceEditingConfig` 가리키는 설정합니다(예: `data-rte-editelement`Adobe 이를 통해 편집자는 HTML 텍스트를 래핑하는 HTML 요소를 알 수 있습니다.
+
+이 작업을 수행하는 방법에 대한 예는 WKND Journal [샘플 컨텐츠를 참조하십시오.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+
+속성 및 리치 텍스트 편집기의 구성에 대한 `editElementQuery` 자세한 내용은 리치 텍스트 [편집기 구성을 참조하십시오.](/help/sites-administering/rich-text-editor.md)
 
 ### 제한 사항 {#limitations}
 
