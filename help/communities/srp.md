@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -33,9 +33,9 @@ SRP 옵션에는 여러 가지가 있습니다. 이 옵션에는 모두 새로�
 
 참고 항목:
 
-* [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 방법 및 예제
-* [SRP를 사용하여 UGC](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
-* [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑
+* [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 방법 및 예
+* [SRP를 사용하여 UGC에](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
+* [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑합니다.
 
 ## 저장소 정보 {#about-the-repository}
 
@@ -64,6 +64,7 @@ UGC가 공유 스토리지에 저장되면 대부분의 배포에서 작성 환�
 >샘플 [코드 및 자세한 내용은 SRP](srp-and-ugc.md) 및 UGC Essentials를 참조하십시오.
 >
 >코딩 [시 모범 사례를 보려면 SRP를](accessing-ugc-with-srp.md) 사용하여 UGC 액세스를 참조하십시오.
+
 
 ### ASRP {#asrp}
 
@@ -101,7 +102,7 @@ JSRP는 쿼리에 Oak 색인을 사용합니다.
 
 UGC 경로를 모방하는 그림자 노드는 다음 두 가지 목적을 위해 로컬 저장소에 있습니다.
 
-1. [액세스 제어(ACL](#for-access-control-acls))
+1. [액세스 제어(ACL)](#for-access-control-acls)
 1. [기존 리소스 없음(NER)](#for-non-existing-resources-ners)
 
 SRP 구현과 관계없이 실제 UGC는 그림자 노드와 동일한 위치에 표시되지 않습니다.
@@ -126,17 +127,18 @@ ACL 검사는 리소스의 UGC에 적용된 권한을 확인하는 데 적합한
 >
 >그림자 노드에 여러 가지 사용이 있으므로 그림자 노드가 존재한다고 해서 구성 요소가 NER임을 의미하지는 *않습니다* .
 
+
 ### 저장소 위치 {#storage-location}
 
 다음은 커뮤니티 구성 요소 안내서의 [댓글 구성 요소를](http://localhost:4502/content/community-components/en/comments.html) 사용하는 [그림자 노드의 예입니다](components-guide.md).
 
 * 구성 요소는 다음 위치에 로컬 저장소에 있습니다.
 
-   /content/community-components/en/comments/jcr:content/content/includable/comments
+   `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 * 해당 섀도 노드는 다음 로컬 저장소에 있습니다.
 
-   /content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments
+   `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 그림자 노드 아래에 UGC가 없습니다.
 
