@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 3d9bcc706a1fa7a15d0ce8729f7b85c4226b394f
 
 ---
 
@@ -114,6 +114,9 @@ AEM SPA 편집기를 활용하기 위해 SPA를 빌드하면 컨텐츠 작성자
 1. AEM 내에서 컨텐츠를 정상으로 편집하고 변경 사항이 지속됨을 확인합니다.
 
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
+
+   >[!NOTE]
+   >즉석 텍스트 [편집기 및 SPA에](spa-overview.md#requirements-limitations) 대한 자세한 내용은 SPA 편집기 개요를 참조하십시오.
 
 1. 자산 브라우저를 사용하여 새 이미지를 이미지 구성 요소로 드래그하여 놓습니다.
 
@@ -224,7 +227,7 @@ SPA가 최종 사용자에 대해 동작하는 방식을 경험하고 SPA 페이
 
 1. 또한 모델은 페이지를 함께 그룹화하여 동기적으로 로드되도록 할 수 있으므로 필요한 페이지 다시 로드 수가 줄어듭니다.
 
-   We.Retail 저널의 예에서, `home``blog`, `aboutus` 및 페이지는 방문자가 일반적으로 모든 페이지를 방문하므로 동기식으로 로드됩니다. 그러나 방문자가 페이지를 방문할 가능성이 적기 때문에 `weather` 페이지를 비동기식으로 로드합니다.
+   We.Retail 저널의 예에서, `home``blog`, `aboutus` 및 페이지는 방문자가 일반적으로 모든 페이지를 방문하므로 동기식으로 로드됩니다. 그러나 방문자가 페이지를 방문할 가능성이 적으므로 `weather` 페이지가 비동기식으로 로드됩니다.
 
    이 동작은 필수가 아니며 완전히 정의할 수 있습니다.
 
