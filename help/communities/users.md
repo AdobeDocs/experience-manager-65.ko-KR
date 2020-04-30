@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2422ed41b18bc558f0cfc9e80f7eb6f4923aa07c
 
 ---
 
@@ -19,14 +19,17 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## 개요 {#overview}
 
-AEM Communities의 게시 환경에서 사용자는 프로필을 직접 등록하고 편집할 수 있습니다. 적절한 권한이 주어지면,
+AEM Communities의 게시 환경에서 사용자는 프로필을 직접 등록하고 편집할 수 있습니다. 적절한 권한이 주어지면 다음과 같은 경우도 있습니다.
 
-* 커뮤니티 사이트 내에서 하위 커뮤니티 만들기( [커뮤니티 그룹](creating-groups.md)참조)
-* [사용자 생성](moderation.md) 컨텐츠 중재(UGC)
-* 지원 리소스 [연락처](resources.md) 유지
-* 블로그, 캘린더, QnA 및 포럼의 항목을 만들 수 있는 [권한이](#privileged-members-group) 있어야 합니다.
+* 커뮤니티 사이트 내에서 하위 커뮤니티를 만듭니다( [커뮤니티 그룹](creating-groups.md)참조).
 
-게시 환경에 등록된 사용자를 일반적으로 *커뮤니티 구성원(구성원)* (작성자 환경에서 *사용자와 구별하기 위해)이라고 합니다.
+* [UGC](moderation.md) (사용자 생성 콘텐츠)를 중재합니다.
+
+* 지원 리소스 [연락처일](resources.md) 수 있습니다.
+
+* 블로그, 캘린더, QnA 및 포럼의 항목을 만들 수 있는 [권한을](#privileged-members-group) 부여받습니다.
+
+게시 환경에 등록된 사용자를 일반적으로 *커뮤니티 구성원(구성원)* (작성자 환경의 *사용자와* 구별하기 위해)이라고 합니다.
 
 커뮤니티 사이트를 [만들거나](#publish-group-roles) [수정할](sites-console.md) 때 동적으로 만든 구성원(사용자) 그룹 [중 하나에 구성원을 할당하여](sites-console.md#modifying-site-properties) 권한을 부여합니다. 작성 환경에서 작업할 때 멤버는 [터널 서비스를](#tunnel-service)통해 게시 환경에서 볼 수 있습니다.
 
@@ -34,7 +37,7 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 직접 등록�
 
 작성자의 사용자와 게시의 구성원이 동일한 LDAP 디렉토리에서 동기화된 것과 같은 동일한 사용자 목록에서 오는 경우 작성자 및 게시 환경 모두에서 동일한 권한 및 그룹 구성원을 가진 사용자로 간주되지 않습니다. 구성원 및 사용자의 역할은 적절히 게시 및 작성자에 별도로 설정해야 합니다.
 
-게시 팜의 [](topologies.md)경우 동일한 사용자 데이터에 액세스할 수 있도록 한 게시 인스턴스에서 수행한 등록 및 수정 사항을 다른 게시 인스턴스와 동기화해야 합니다. [자세한 내용은 ](sync.md)사용자 동기화를[참조하십시오. 여기에는 다음과 같은 경우 발생하는 ](sync.md#what-happens-when)사항을 설명하는 섹션이 포함됩니다..
+게시 팜의 [](topologies.md)경우 동일한 사용자 데이터에 액세스할 수 있도록 한 게시 인스턴스에서 수행한 등록 및 수정 사항을 다른 게시 인스턴스와 동기화해야 합니다. 자세한 내용은 [사용자 동기화를](sync.md)참조하십시오. 여기에는 다음과 같은 경우 발생하는 [사항을 설명하는 섹션이 포함됩니다.](sync.md#what-happens-when).
 
 ### 기여도 제한 {#contribution-limits}
 
@@ -91,7 +94,7 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 직접 등록�
 
 ### 회원이 되기 {#becoming-a-member}
 
-게시 환경에서는 커뮤니티 사이트의 [설정에](sites-console.md#user-management) 따라 사이트 방문자가 커뮤니티 구성원이 될 수 있습니다
+게시 환경에서는 커뮤니티 사이트의 [설정에](sites-console.md#user-management) 따라 사이트 방문자가 커뮤니티 구성원이 될 수 있습니다.
 
 * 커뮤니티 사이트가 비공개인 경우(닫힘):
    * 초대장
@@ -104,6 +107,7 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 직접 등록�
 >[!NOTE]
 >
 >사이트 방문자가 하나의 열린 커뮤니티 사이트의 멤버로 등록하면 동일한 게시 환경에서 다른 개방형 커뮤니티 사이트의 구성원이 자동으로 됩니다.
+
 
 ### 그룹 역할 게시 {#publish-group-roles}
 
@@ -134,16 +138,17 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 직접 등록�
 
 하나 이상의 권한이 있는 구성원 그룹의 사양을 허용하는 커뮤니티 기능은 다음과 같습니다.
 
-* [블로그 함수](functions.md#blog-function) - 새 아티클 만들기 제한
-* [달력 함수](functions.md#calendar-function) - 새 이벤트 만들기 제한
-* [포럼 함수](functions.md#forum-function) - 새 항목 생성을 제한합니다.
-* [QnA 함수](functions.md#qna-function) - 새 질문 만들기 제한
+* [블로그 함수](functions.md#blog-function) - 새 아티클 만들기를 제한합니다.
+* [달력 함수](functions.md#calendar-function) - 새 이벤트 만들기를 제한합니다.
+* [포럼 함수](functions.md#forum-function) - 새 항목 생성을 제한하려면
+* [QnA 함수](functions.md#qna-function) - 새 질문 생성을 제한하려면
 
 커뮤니티 기능이 보안되지 않은 경우(권한 있는 구성원 그룹이 지정되지 않음) 모든 커뮤니티 사이트 구성원이 기능 컨텐츠(아티클, 이벤트, 주제, 질문)를 만들 수 있습니다.
 
 >[!NOTE]
 >
 >커뮤니티 사이트에 대해 권한이 있는 구성원 그룹에 사용자를 추가하면 해당 사용자가 동일한 커뮤니티 사이트의 구성원일 경우에만 만들기 권한을 부여합니다.
+
 
 ## 커뮤니티 구성원 만들기 {#creating-community-members}
 
@@ -201,25 +206,26 @@ AEM Communities의 게시 환경에서 사용자는 프로필을 직접 등록�
 작성자 인스턴스에서:
 
 1. 관리자 권한으로 로그인하면 클래식 UI 보안 콘솔로 이동합니다.
-예: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
+
+   예: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
 
 2. 편집 메뉴에서 사용자 **[!UICONTROL 만들기를 선택합니다]**.
 3. 대화 상자를 `Create User` 채웁니다.
-   * 경로는 `/home/users/community`
-4. **[!UICONTROL 만들기]**&#x200B;를 선택합니다
+   * 경로는 `/home/users/community`이어야 합니다.
+4. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
-![chlimage_1-130](assets/chlimage_1-130.png)
+   ![chlimage_1-130](assets/chlimage_1-130.png)
 
 * 왼쪽 창에서 새로 만든 사용자를 검색하고 오른쪽 창에 표시되도록 선택합니다.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+   ![chlimage_1-131](assets/chlimage_1-131.png)
 
 왼쪽 창에
 
-1. 검색 상자를 지우고 사용자 **[!UICONTROL 숨기기를 선택합니다.]**
-2. 오른쪽 `community-enablementmanagers` 창에 **[!UICONTROL 표시된 새 사용자의 그룹]** 탭으로 끌어다 놓기
+1. 검색 상자의 선택을 취소하고 사용자 **[!UICONTROL 숨기기를 선택합니다]**.
+2. 오른쪽 `community-enablementmanagers` 창에 **[!UICONTROL 표시된 새 사용자의 그룹]** 탭으로 드래그합니다.
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+   ![chlimage_1-132](assets/chlimage_1-132.png)
 
 ### 커뮤니티 관리자 역할 {#community-administrators-role}
 
@@ -233,7 +239,7 @@ AEM 파섹 이 내용은 AEM 6을 [사용하여 LDAP 구성에](../../help/sites
 
 다음은 커뮤니티 구성원 및 구성원 그룹에 대한 일부 구성 세부 정보입니다.
 
-1. 각 AEM 게시 인스턴스에 대한 LDAP 구성
+1. 각 AEM 게시 인스턴스에 대한 LDAP를 구성합니다.
 2. [LDAP ID 공급자](../../help/sites-administering/ldap-config.md#configuring-the-ldap-identity-provider)
 
    * 특별한 지침 없음
@@ -260,12 +266,16 @@ AEM 파섹 이 내용은 AEM 6을 [사용하여 LDAP 구성에](../../help/sites
 
 사용자 그룹을 가져올 경우 사용자 그룹이 각 게시 인스턴스에 동일한 경로를 가지도록 한 인스턴스로 가져온 다음 내보낼 패키지를 [](../../help/sites-administering/package-manager.md#creating-a-new-package) 만들고 다른 모든 게시 인스턴스에 해당 패키지를 설치합니다.
 
-사용자 동기화를 통한 사용자 그룹 동기화는 향후 릴리스에 포함되지만, 현재 사용자 동기화 실행 시 사용자 그룹의 *멤버십만 동기화됩니다.
+사용자 동기화를 통한 사용자 그룹 동기화는 향후 릴리스에 포함되지만, 현재 사용자 동기화가 실행되면 사용자 그룹의 *멤버십만* 동기화됩니다.
 
 ## 커뮤니티 그룹 정보 {#about-community-groups}
 
 그룹을 논의할 때 두 가지 서로 다른 주제가 있습니다.
 
-* **[커뮤니티 그룹](overview.md#communitygroups)**커뮤니티 그룹은 커뮤니티 그룹 생성을 지원하는 커뮤니티 사이트의 게시 환경에서 만들 수 있는 하위 커뮤니티입니다. 커뮤니티 그룹을 만들면 웹 사이트에 더 많은 페이지가 추가되고 상위 커뮤니티 사이트와 유사한 방식으로 관리됩니다. 자세한 내용은 Community Group[Essentials](essentials-groups.md)for developers 및 Community[Group for authors](creating-groups.md)를참조하십시오.
+* **[커뮤니티 그룹](overview.md#communitygroups)**
 
-* **[구성원 그룹](../../help/sites-administering/security.md)**구성원 그룹은 구성원이 소속되어 그룹 콘솔을 통해 관리되는 그룹입니다. 이 페이지에 대한 논의의 상당 부분이 구성원 그룹에 할애되었습니다. 커뮤니티 사이트에 대해 자동으로 생성된 구성원 그룹은 사전&#x200B;*`Community`*설정된 커뮤니티 그룹이라고 할 수 있으므로 토론의 컨텍스트를 고려해야 합니다.
+   커뮤니티 그룹은 커뮤니티 그룹 생성을 지원하는 커뮤니티 사이트의 게시 환경에서 만들 수 있는 하위 커뮤니티입니다. 커뮤니티 그룹을 만들면 웹 사이트에 더 많은 페이지가 추가되고 상위 커뮤니티 사이트와 유사한 방식으로 관리됩니다. 자세한 내용은 Community Group [Essentials](essentials-groups.md) for developers 및 Community [Group for authors](creating-groups.md) 를참조하십시오.
+
+* **[구성원 그룹](../../help/sites-administering/security.md)**
+
+   구성원 그룹은 구성원이 소속되어 그룹 콘솔을 통해 관리되는 그룹입니다. 이 페이지에 대한 논의의 상당 부분이 구성원 그룹에 할애되었습니다. 커뮤니티 사이트에 대해 자동으로 생성된 구성원 그룹은 사전 *`Community`*&#x200B;설정된 커뮤니티 그룹이라고 할 수 있으므로 토론의 컨텍스트를 고려해야 합니다.
