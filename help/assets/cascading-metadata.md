@@ -1,9 +1,9 @@
 ---
-title: 계단식 메타데이터
+title: '[!DNL Adobe Experience Manager Assets]에서 메타데이터 계단식 작성'
 description: 이 문서에서는 자산의 CSS 메타데이터를 정의하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 * 다른 필드에 지정된 값을 기준으로 특정 필드에 표시되는 옵션 변경
 * 다른 필드에 지정된 값을 기준으로 특정 필드에 기본 메타데이터 값을 설정합니다.
 
-## AEM에서 CSS 메타데이터 구성 {#configure-cascading-metadata-in-aem}
+## Configure cascading metadata in [!DNL Experience Manager]{#configure-cascading-metadata-in-aem}
 
 선택한 자산 유형에 따라 CSS 메타데이터를 표시하려는 시나리오를 고려해 보십시오. 몇 가지 예
 
@@ -32,7 +32,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 선택한 자산 유형에 관계없이 저작권 정보를 필수 필드로 표시합니다.
 
-1. Experience Manager 인터페이스에서 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터]** 스키마로 **[!UICONTROL 이동합니다]**.
+1. 인터페이스에서 도구 > [!DNL Experience Manager] 자산 **[!UICONTROL >]** 메타데이터 **[!UICONTROL 스키마로]** 이동합니다 ****.
 1. 스키마 **[!UICONTROL 양식]** 페이지에서 스키마 양식을 선택한 다음 **[!UICONTROL 도구 모음에서 편집을 클릭하여]** 스키마를 편집합니다.
 
    ![select_form](assets/select_form.png)
@@ -51,7 +51,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
    * 값을 수동으로 지정하려면 [수동으로 추가] **[!UICONTROL 를]**&#x200B;선택하고 [선택 **[!UICONTROL 추가]를]** 클릭하고 옵션 텍스트 및 값을 지정합니다. 예를 들어 비디오, PDF, Word 및 이미지 자산 유형을 지정합니다.
 
-   * JSON 파일에서 값을 동적으로 가져오려면 [JSON 경로를 **[!UICONTROL 통해 추가]** ]를 선택하고 JSON 파일의 경로를 제공합니다. AEM은 양식이 사용자에게 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
+   * JSON 파일에서 값을 동적으로 가져오려면 [JSON 경로를 **[!UICONTROL 통해 추가]** ]를 선택하고 JSON 파일의 경로를 제공합니다. [!DNL Experience Manager] 사용자에게 양식이 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
    두 옵션은 모두 함께 사용할 수 없습니다. JSON 파일에서 옵션을 가져와 수동으로 편집할 수는 없습니다.
 
    ![add_choice](assets/add_choice.png)
@@ -105,8 +105,8 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
    ![비디오 자산에 대한 CSS 메타데이터](assets/video_asset.png)
 
-   *그림:비디오용 CSS 메타데이터*
+   *그림:비디오에 대한 메타데이터 캐스케이딩*
 
    ![문서 자산에 대한 CSS 메타데이터](assets/doc_type_fields.png)
 
-   *그림:문서에 대한 CSS 메타데이터*
+   *그림:문서에 대한 메타데이터 계단식 작성*
