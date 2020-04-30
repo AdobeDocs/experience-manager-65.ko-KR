@@ -1,16 +1,16 @@
 ---
 title: 번역 프로젝트 만들기
-description: AEM에서 번역 프로젝트를 만드는 방법을 알아봅니다.
+description: '[!DNL Adobe Experience Manager]에서 번역 프로젝트를 만드는 방법을 알아봅니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # 번역 프로젝트 만들기 {#creating-translation-projects}
 
-언어 사본을 만들려면 AEM 사용자 인터페이스의 참조 레일에서 사용할 수 있는 다음 언어 복사 워크플로우 중 하나를 트리거합니다.
+언어 사본을 만들려면 [!DNL Experience Manager] 사용자 인터페이스의 참조 레일에서 사용할 수 있는 다음 언어 복사 워크플로우 중 하나를 트리거하십시오.
 
 * **작성 및 번역**:이 워크플로우에서 번역될 자산은 번역하려는 언어의 언어 루트로 복사됩니다. 또한 선택한 옵션에 따라 프로젝트 콘솔에서 자산에 대한 번역 프로젝트가 생성됩니다. 설정에 따라 번역 프로젝트를 수동으로 시작하거나 번역 프로젝트를 만드는 즉시 자동으로 실행할 수 있습니다.
 
@@ -28,15 +28,15 @@ source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 작성 및 번역 워크플로우를 사용하여 처음으로 특정 언어의 언어 사본을 생성할 수 있습니다. 워크플로우에서는 다음 옵션을 제공합니다.
 
-* 구조만 생성
-* 새 번역 프로젝트 만들기
-* 기존 번역 프로젝트에 추가
+* 구조만 생성.
+* 새 번역 프로젝트 만들기.
+* 기존 번역 프로젝트에 추가.
 
 ### 구조만 생성 {#create-structure-only}
 
 대상 **[!UICONTROL 언어 루트 내에 대상 폴더 계층 구조를 만들어 소스 언어 루트 내의 소스 폴더 계층 구조와 일치시키려면 구조만]** 만들기 옵션을 사용합니다. 이 경우 소스 에셋이 대상 폴더에 복사됩니다. 그러나 번역 프로젝트는 생성되지 않습니다.
 
-1. 자산 UI에서 대상 언어 루트에서 구조를 만들 소스 폴더를 선택합니다.
+1. 인터페이스에서 대상 언어 루트에서 구조를 만들 소스 폴더를 선택합니다. [!DNL Assets]
 1. 참조 **[!UICONTROL 창을 열고]** 사본 **[!UICONTROL 아래에서 언어]** 사본을 클릭/ **[!UICONTROL 탭합니다]**.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
@@ -116,7 +116,7 @@ source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
    ![자산 속성 페이지에서 번역된 메타데이터 보기](assets/translated-metadata-asset-properties.png)
 
-   *그림:자산 속성 페이지에서 번역된 메타데이터*
+   *그림:자산 속성 페이지에서 번역된 메타데이터입니다.*
 
 
    >[!NOTE]
@@ -277,13 +277,13 @@ source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ## 임시 언어 사본 만들기 {#creating-temporary-language-copies}
 
-번역 워크플로우를 실행하여 원래 자산의 편집된 버전으로 언어 사본을 업데이트할 때 번역된 자산을 승인할 때까지 기존 언어 사본이 유지됩니다. AEM Assets는 새로 번역된 자산을 임시 위치에 저장하고, 자산을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않습니다.
+번역 워크플로우를 실행하여 원래 자산의 편집된 버전으로 언어 사본을 업데이트할 때 번역된 자산을 승인할 때까지 기존 언어 사본이 유지됩니다. [!DNL Adobe Experience Manager Assets] 새로 번역된 에셋을 임시 위치에 저장하고 에셋을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않습니다.
 
-1. 언어 복사본을 이미 만든 언어 복사본 아래의 **[!UICONTROL 소스]** 루트 폴더를 클릭/탭한 다음 자산에 **[!UICONTROL 표시를 클릭/탭하여]** AEM 자산에 있는 폴더를 엽니다.
+1. 언어 복사본을 이미 만든 언어 **[!UICONTROL 복사본]** 아래의 소스 루트 폴더를 클릭/탭한 다음 **[!UICONTROL 자산에]** 표시를 클릭/탭하여 [!DNL Experience Manager Assets]폴더를에서 엽니다.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. 자산 UI에서 이미 번역한 자산을 선택하고 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 클릭/탭하여 편집 모드로 자산을 엽니다.
+1. 인터페이스에서 이미 번역한 자산을 선택하고 도구 모음에서 [!DNL Assets] 편집 **** 아이콘을 클릭/탭하여 편집 모드로 자산을 엽니다.
 1. 자산을 편집한 다음 변경 내용을 저장합니다.
 1. 기존 번역 프로젝트에 [추가 절차의 2-14단계를 수행하여 언어](#add-to-existing-translation-project) 사본을 업데이트합니다.
 1. 번역 작업 타일 아래쪽에 있는 줄임표를 **[!UICONTROL 클릭/탭합니다]** . 번역 작업 **[!UICONTROL 페이지의 자산]** 목록에서 번역된 버전의 자산이 저장되는 임시 위치를 명확하게 볼 수 있습니다.
@@ -303,6 +303,9 @@ source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-1. 자산 콘솔로 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
+1. 번역된 메타데이터를 보려면 [!DNL Assets] 콘솔로 이동하여 번역된 각 [!UICONTROL 자산에 대한 속성] 페이지를 엽니다.
 
-에셋의 메타데이터를 효율적으로 번역하는 방법에 대한 팁은 메타데이터를 효율적으로 번역하기 위한 [5단계를 참조하십시오](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+>[!MORELIKETHIS]
+>
+>* [메타데이터를](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)효율적으로 변환할 수 있는 팁
+
