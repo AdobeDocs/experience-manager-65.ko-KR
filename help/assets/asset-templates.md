@@ -1,9 +1,9 @@
 ---
 title: 자산 템플릿
-description: AEM Assets의 자산 템플릿 및 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.
+description: '[!DNL Adobe Experience Manager Assets]의 자산 템플릿 및 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아보십시오.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -16,11 +16,11 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 제한된 편집을 수행하는 동시에 글로벌 사이니지를 안전하게 보호하는 자산 템플릿을 사용하면 콘텐츠를 신속하게 조정하고 다양한 기능을 위해 컨텐츠 가공물로 배포할 수 있는 이상적인 기본 구성 요소가 됩니다. 컨텐츠를 재활용하면 인쇄 및 디지털 채널을 관리하는 데 소요되는 비용을 절감하고 이러한 채널에서 일관되고 전체적인 경험을 제공할 수 있습니다.
 
-마케터는 AEM Assets 내에서 템플릿을 저장 및 관리할 수 있고 단일 기본 템플릿을 사용하여 개인화된 여러 인쇄 경험을 손쉽게 만들 수 있습니다. 브로셔, 전단지, 엽서, 명함 등 다양한 유형의 마케팅 자료를 만들어 고객에게 마케팅 메시지를 전달할 수 있습니다. 또한 기존 또는 새로운 인쇄 출력에서 여러 페이지로 된 인쇄 출력을 취합할 수 있습니다. 무엇보다도 디지털 경험과 인쇄 경험을 손쉽게 동시에 전달하여 일관된 통합 경험을 제공할 수 있습니다.
+마케터는 템플릿을 저장 및 관리할 수 [!DNL Experience Manager Assets] 있고 하나의 기본 템플릿을 사용하여 개인화된 여러 인쇄 경험을 손쉽게 제작할 수 있습니다. 브로셔, 전단지, 엽서, 명함 등 다양한 유형의 마케팅 자료를 만들어 고객에게 마케팅 메시지를 전달할 수 있습니다. 또한 기존 또는 새로운 인쇄 출력에서 여러 페이지로 된 인쇄 출력을 취합할 수 있습니다. 무엇보다도 디지털 경험과 인쇄 경험을 손쉽게 동시에 전달하여 일관된 통합 경험을 제공할 수 있습니다.
 
-에셋 템플릿은 대부분 Adobe InDesign 파일이지만 Adobe InDesign의 숙련도는 뛰어난 아티팩트를 제작할 수 있는 장벽은 아닙니다. Adobe InDesign 템플릿의 필드를 제품 필드에 매핑할 필요는 없습니다. 웹 인터페이스에서 직접 WYSIWYG 모드에서 템플릿을 편집할 수 있습니다. 그러나 Adobe InDesign에서 편집 변경 사항을 처리하려면 먼저 AEM 자산을 Adobe InDesign 서버와 통합하도록 구성해야 합니다.
+에셋 템플릿이 대부분 [!DNL Adobe InDesign] 파일이지만 유물을 만드는 데 능숙하지는 [!DNL Adobe InDesign] 않습니다. 템플릿 필드를 제품 필드와 매핑할 필요는 없습니다. 그렇지 않으면 카탈로그를 만들 수 있습니다. [!DNL Adobe InDesign] 웹 인터페이스에서 직접 WYSIWYG 모드에서 템플릿을 편집할 수 있습니다. 그러나 편집 변경 내용을 [!DNL Adobe InDesign] 처리하려면 먼저 [!DNL Experience Manager Assets] 통합하도록 구성해야 합니다 [!DNL Adobe InDesign Server].
 
-웹 인터페이스에서 Adobe InDesign 템플릿을 편집할 수 있으므로 크리에이티브 담당자와 마케팅 담당자 간의 공동 작업을 향상시킬 수 있을 뿐만 아니라 로컬 프로모션 이니셔티브의 출시 시간을 단축할 수 있습니다.
+웹 인터페이스에서 [!DNL Adobe InDesign] 템플릿을 편집할 수 있으므로 크리에이티브 및 마케팅 담당자 간의 공동 작업을 향상시킬 수 있을 뿐만 아니라 로컬 프로모션 이니셔티브를 위한 출시 시간을 단축할 수 있습니다.
 
 자산 템플릿으로 다음을 수행할 수 있습니다.
 
@@ -30,7 +30,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 * 템플릿 편집 미리 보기
 * 여러 템플릿 파일을 병합하여 여러 페이지로 된 아티팩트 만들기
 
-자료에 사용할 템플릿을 선택하면 AEM Assets에서 편집할 수 있는 템플릿 사본을 만듭니다. 원본 템플릿은 그대로 유지되므로 글로벌 사이니지는 그대로 유지되고 브랜드 일관성을 유지하기 위해 다시 사용할 수 있습니다.
+자료에 사용할 템플릿을 선택하면 편집할 수 있는 템플릿 사본이 [!DNL Experience Manager Assets] 만들어집니다. 원본 템플릿은 그대로 유지되므로 글로벌 사이니지는 그대로 유지되고 브랜드 일관성을 유지하기 위해 다시 사용할 수 있습니다.
 
 업데이트된 파일을 상위 폴더 내에서 다음 형식으로 내보낼 수 있습니다.
 
@@ -42,9 +42,9 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ## 자료 만들기 {#creating-a-collateral}
 
-향후 캠페인을 위해 브로셔, 전단지 및 광고와 같은 디지털 인쇄 가능한 자료를 만들고 전세계에 아웃렛 스토어와 공유할 시나리오를 생각해 보십시오. 템플릿을 기반으로 한 마케팅 자료를 제작하면 모든 채널에서 일관된 고객 경험을 제공할 수 있습니다. 디자이너는 InDesign과 같은 크리에이티브 솔루션을 사용하여 캠페인 템플릿(단일 페이지 또는 다중 페이지)을 만들고 템플릿을 AEM 자산에 업로드할 수 있습니다. 자료를 만들기 전에 Adobe Experience Manager에 업로드하고 미리 사용할 수 있는 INDD 템플릿을 하나 이상 준비하십시오.
+향후 캠페인을 위해 브로셔, 전단지 및 광고와 같은 디지털 인쇄 가능한 자료를 만들고 전세계에 아웃렛 스토어와 공유할 시나리오를 생각해 보십시오. 템플릿을 기반으로 한 마케팅 자료를 제작하면 모든 채널에서 일관된 고객 경험을 제공할 수 있습니다. 디자이너는 템플릿과 같은 크리에이티브 솔루션을 사용하여 캠페인 템플릿(단일 페이지 또는 다중 페이지)을 만들고 [!DNL InDesign] 업로드할 수 [!DNL Experience Manager Assets] 있습니다. 자료를 만들기 전에 하나 이상의 INDD 템플릿을 업로드하여 [!DNL Experience Manager] 미리 사용할 수 있도록 하십시오.
 
-1. Experience Manager 인터페이스에서 자산을 [!UICONTROL 클릭합니다].
+1. 인터페이스에서 자산을 [!DNL Experience Manager] 클릭합니다 .
 
 1. 옵션에서 템플릿을 **[!UICONTROL 선택합니다]**.
 
@@ -54,7 +54,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
-1. 하나 이상의 INDD 템플릿을 Experience Manager에 업로드하여 미리 사용할 수 있도록 하십시오. 브로셔에 사용할 템플릿을 선택하고 [다음]을 **[!UICONTROL 클릭합니다]**.
+1. 하나 이상의 INDD 템플릿을 업로드하여 [!DNL Experience Manager] 미리 사용할 수 있도록 합니다. 브로셔에 사용할 템플릿을 선택하고 [다음]을 **[!UICONTROL 클릭합니다]**.
 
    ![chlimage_1-103](assets/chlimage_1-308.png)
 
@@ -82,7 +82,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
    * 자료 만들기의 7단계에서 만든 자료(이 경우 브로셔) [를](/help/assets/asset-templates.md#creating-a-collateral)엽니다.
    * 템플릿 페이지에서 자료를 만든 폴더로 이동한 다음 [!UICONTROL 담보의] 축소판에서 빠른 편집 작업을 클릭합니다.
-   * 자료의 자산 페이지에서 도구 모음에서 **[!UICONTROL 편집을]** 클릭합니다.
+   * 자료의 자산 페이지에서 도구 **[!UICONTROL 모음에서 편집을]** 클릭합니다.
    * 자료를 선택하고 도구 **[!UICONTROL 모음에서 편집을]** 클릭합니다.
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
@@ -90,17 +90,17 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
    텍스트 편집기를 사용하여 텍스트 필드에 표시할 텍스트를 수정할 수 있습니다. 태그 수준에서 글꼴 크기, 스타일, 색상 및 문자를 수정할 수 있습니다.
 
-   자산 파인더를 사용하여 AEM 자산 내에서 이미지를 찾거나 검색하고 템플릿의 편집 가능한 이미지를 원하는 이미지로 바꿀 수 있습니다.
+   자산 파인더를 사용하여 내에서 이미지를 찾거나 검색하고 템플릿의 편집 가능한 이미지를 원하는 이미지로 바꿀 수 [!DNL Experience Manager Assets] 있습니다.
 
    ![chlimage_1-109](assets/chlimage_1-314.png)
 
-   편집 가능 항목이 오른쪽에 표시됩니다. AEM Assets에서 필드를 편집하려면 템플릿의 해당 필드에 InDesign 태그가 지정되어 있어야 합니다. 즉, InDesign에서 편집 가능한 것으로 표시되어야 합니다.
+   편집 가능 항목이 오른쪽에 표시됩니다. 에서 필드를 편집할 [!DNL Experience Manager Assets]수 있으려면 템플릿의 해당 필드에 태그를 지정해야 합니다 [!DNL InDesign]. 즉, 에서 편집 가능한 것으로 표시되어야 합니다 [!DNL InDesign].
 
    ![chlimage_1-110](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
-   >AEM 인스턴스가 InDesign 서버와 통합되어 AEM Assets가 InDesign 템플릿에서 데이터를 추출하고 이를 편집할 수 있도록 하려면 필요합니다. 자세한 내용은 AEM [자산과 InDesign Server 통합을 참조하십시오](/help/assets/indesign.md).
+   >InDesign 템플릿에서 데이터를 추출하고 편집할 [!DNL Experience Manager] 수 있도록 하려면 인스턴스와 [!DNL InDesign Server] [!DNL Experience Manager Assets] 통합되어야 합니다. 자세한 내용은 Experience Manager [Assets와 InDesign Server 통합을 참조하십시오](/help/assets/indesign.md).
 
 1. 편집 가능한 필드의 텍스트를 수정하려면 편집 가능한 필드 목록에서 텍스트 필드를 클릭하고 필드의 텍스트를 편집합니다.
 
@@ -120,7 +120,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
    ![chlimage_1-114](assets/chlimage_1-319.png)
 
-   키워드, 태그 및 게시 상태를 기반으로 이미지를 검색할 수도 있습니다. AEM 자산 저장소를 탐색하고 원하는 이미지의 위치로 이동할 수 있습니다.
+   키워드, 태그 및 게시 상태를 기반으로 이미지를 검색할 수도 있습니다. 저장소를 탐색하고 원하는 이미지의 위치로 이동할 수 [!DNL Experience Manager Assets] 있습니다.
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
@@ -136,17 +136,17 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
    >[!NOTE]
    >
-   >미리 보기 및 완료 아이콘은 자료 내의 편집 가능한 이미지 필드에 누락된 아이콘이 없는 경우에만 활성화됩니다. 자료에 아이콘이 없는 경우 AEM에서 InDesign 템플릿의 이미지를 확인할 수 없기 때문입니다. 일반적으로 AEM은 다음 경우 이미지를 확인할 수 없습니다.
+   >미리 보기 및 완료 아이콘은 자료 내의 편집 가능한 이미지 필드에 누락된 아이콘이 없는 경우에만 활성화됩니다. 자료에 아이콘이 없는 경우 템플릿에서 이미지를 확인할 [!DNL Experience Manager] 수 없기 때문입니다 [!DNL InDesign] . 일반적으로 다음 [!DNL Experience Manager] 경우에는 이미지를 확인할 수 없습니다.
    >
-   >    * 이미지는 기본 InDesign 템플릿에 포함되지 않습니다.
-   >    * 로컬 파일 시스템에서 이미지 연결
+   >    * 이미지는 기본 [!DNL InDesign] 템플릿에 포함되지 않습니다.
+   >    * 이미지는 로컬 파일 시스템에서 연결됩니다.
    >
-   >AEM에서 이미지를 해결하려면 다음을 수행합니다.
+   >이미지를 [!DNL Experience Manager] 해결하려면 다음을 수행합니다.
    >
-   >    * InDesign 템플릿을 만들 때 이미지 포함(링크 및 [포함된 그래픽](https://helpx.adobe.com/indesign/using/graphics-links.html)참조)
-   >    * AEM을 로컬 파일 시스템에 마운트한 다음 누락된 아이콘을 기존 AEM 자산에 매핑합니다.
+   >    * 템플릿을 만들 때 이미지 포함(링크 및 [!DNL InDesign] 포함된 그래픽 [](https://helpx.adobe.com/indesign/using/graphics-links.html)참조)
+   >    * 로컬 파일 시스템에 [!DNL Experience Manager] 마운트한 다음 누락된 아이콘을 기존 에셋에 매핑합니다 [!DNL Experience Manager].
    >
-   >InDesign 문서 작업에 대한 자세한 내용은 AEM에서 InDesign [문서 작업에 대한 우수 사례를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >문서 작업에 대한 자세한 내용은 Adobe Experience Manager [!DNL InDesign] 에서 InDesign 문서를 사용한 작업 모범 사례를 참조하십시오 [](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. 브로셔에 대한 PDF 변환을 생성하려면 대화 상자에서 Acrobat 옵션을 선택한 다음 계속을 **[!UICONTROL 클릭합니다]**.
 1. 시작한 폴더에 자료가 만들어집니다. 변환을 보려면, 자료를 열고 GlobalNav **[!UICONTROL 목록에서]** 표현물을 선택합니다.
@@ -159,7 +159,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ## 자료 병합 {#merge-collateral}
 
-1. Experience Manager 인터페이스에서 탐색 [!UICONTROL 페이지에서] 자산을 클릭합니다.
+1. 인터페이스에서 탐색 [!DNL Experience Manager] 페이지의 자산을  클릭합니다.
 
 1. 옵션에서 템플릿을 **[!UICONTROL 선택합니다]**.
 
@@ -179,7 +179,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
    ![chlimage_1-123](assets/chlimage_1-328.png)
 
-   AEM 자산 저장소 또는 컬렉션을 탐색하고 원하는 템플릿의 위치로 이동한 다음 병합할 템플릿을 선택할 수 있습니다.
+   저장소 또는 컬렉션을 탐색하고 원하는 템플릿의 위치로 이동한 다음 병합할 템플릿을 선택할 수 있습니다. [!DNL Experience Manager Assets]
 
    ![chlimage_1-124](assets/chlimage_1-329.png)
 
@@ -192,7 +192,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. 템플릿 [!UICONTROL 구성] 화면에서 담보의 이름을 지정합니다. 원하는 경우, 적절하다고 생각하는 태그를 지정합니다. PDF 형식으로 출력을 내보내려면 Acrobat **[!UICONTROL (.PDF)]**&#x200B;을 선택합니다. 기본적으로 자료는 JPG 및 InDesign 형식으로 내보내집니다. 다중 페이지 자료에 대한 표시 축소판을 변경하려면 [축소판 변경] **[!UICONTROL 을 클릭합니다]**.
+1. 템플릿 [!UICONTROL 구성] 화면에서 담보의 이름을 지정합니다. 원하는 경우, 적절하다고 생각하는 태그를 지정합니다. PDF 형식으로 출력을 내보내려면 Acrobat **[!UICONTROL (.PDF)]**&#x200B;을 선택합니다. 기본적으로 자료는 JPG 및 [!DNL InDesign] 형식으로 내보내집니다. 다중 페이지 자료에 대한 표시 축소판을 변경하려면 [축소판 변경] **[!UICONTROL 을 클릭합니다]**.
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 
