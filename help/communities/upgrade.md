@@ -11,12 +11,12 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
 
-# AEM 6.5 Communities로 업그레이드{#upgrading-to-aem-communities}
+# AEM 6.5 Communities로 업그레이드 {#upgrading-to-aem-communities}
 
 각 사이트의 토폴로지 및 기능에 따라 AEM Communities 6.5로 업그레이드하거나 최신 기능 팩을 설치하는 경우 다음 작업이 필요할 수 있습니다.
 
@@ -26,17 +26,17 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ### 색인 재지정 솔루션 {#reindex-solr}
 
-MSRP로 구성된 배포에 새 커뮤니티 기능 팩을 설치하는 경우
+MSRP로 구성된 배포에 새 커뮤니티 기능 팩을 설치하는 경우 다음을 수행해야 합니다.
 
-1. [최신 기능 팩 설치](/help/communities/deploy-communities.md#latestfeaturepack)
-1. 최신 [Solr 구성 파일 설치](/help/communities/msrp.md#upgrading)
-1. MSRP 다시 색인화 섹션 [MSRP 다시 색인 도구 참조](/help/communities/msrp.md#msrp-reindex-tool)
+1. [최신 기능 팩을](/help/communities/deploy-communities.md#latestfeaturepack)설치합니다.
+1. 최신 [Solr 구성 파일을](/help/communities/msrp.md#upgrading)설치합니다.
+1. MSRP 다시 색인화 섹션 [MSRP 다시 색인 도구를 참조하십시오](/help/communities/msrp.md#msrp-reindex-tool).
 
 ### Enablement 2.0 {#enablement}
 
 AEM 6.3부터 지원 기능이 더 이상 MySQL에 보고 정보를 저장하지 않습니다. MySQL 종속성은 SCORM 콘텐트를 추적하기 위해서만 존재합니다.
 
-Enablement 1.0에서 콘텐츠 마이그레이션에 대한 지원은 [고객 지원](https://helpx.adobe.com/marketing-cloud/contact-support.html) 센터에 문의하십시오.
+Enablement 1.0에서 콘텐츠 마이그레이션에 대한 지원은 [고객 지원](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) 센터에 문의하십시오.
 
 ## AEM 6.0에서 업그레이드 {#upgrading-from-aem}
 
@@ -48,24 +48,24 @@ Enablement 1.0에서 콘텐츠 마이그레이션에 대한 지원은 [고객 �
 
 따라서 ASRP가 UGC에 액세스하도록 하는 `AEM 6.0 compatability-mode` 기능이 있습니다.
 
-모든 AEM 6.3 작성자 및 게시 인스턴스에 대해
+모든 AEM 6.3 작성자 및 게시 인스턴스의 경우:
 
-* 관리자 권한으로 로그인
-* asrp [구성](/help/communities/asrp.md)
+* 관리자 권한으로 로그인합니다.
+* ASRP [를 구성합니다](/help/communities/asrp.md).
 * 다음 단계에 따라 기존 UGC를 표시합니다.
 
-   * 웹 콘솔 찾아보기
+   * 웹 콘솔로 이동합니다.
 
       * 예: [https://&lt;host>:&lt;port>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-   * aem **Communities 유틸리티 구성** 찾기
-   * 구성 패널을 확장하려면 선택하십시오.
 
-      * *의 선택을 취소합니다. ***`Cloud Storage`**
+      * AEM **Communities 유틸리티 구성을** 찾습니다.
+      * 구성 패널을 확장하려면 선택합니다.
 
-      * select **Save**
+         * *선택 취소*`Cloud Storage`
 
+         * **저장**&#x200B;을 선택합니다
+      ![chlimage_1-176](assets/chlimage_1-176.png)
 
-![chlimage_1-176](assets/chlimage_1-176.png)
 
 ### 온-프레미스 스토리지 {#on-premise-storage}
 
@@ -99,8 +99,8 @@ AEM [Communities UGC 마이그레이션](https://github.com/Adobe-Marketing-Clou
 
 개념적으로, 세 세대의 커뮤니티 구성 요소가 있습니다.
 
-**Gen 1** :대략적으로 CQ 5.4부터 AEM 5.6.0까지 - **이러한 구성 요소는** 여러 플랫폼에서 UGC를 동기화하는 수단으로 복제를 사용하여 로컬 저장소에 UGC를 저장한 collab 구성 요소입니다. 다른 차이점은 작성 환경에서만 작성하도록 구성된 블로그 기능뿐만 아니라 Java Server Pages(JSP)를 사용하는 구현도 포함합니다.
+**Gen 1**:CQ 5.4부터 AEM 5.6.0까지 **이러한 구성 요소는** 여러 플랫폼에서 UGC를 동기화하는 수단으로 복제를 사용하여 로컬 저장소에 UGC를 저장한 collab 구성 요소입니다. 다른 차이점에는 Java Server Pages(JSP)를 사용하는 구현과 작성 환경에서만 작성하도록 구성된 블로그 기능이 포함됩니다.
 
-**Gen 2** :aem 5.6.1부터 AEM 6.1까지 - **collab** 및 **소셜** 구성 요소가 혼합되어 있습니다. AEM 6.0에서는 새로운 [소셜 구성 요소 프레임워크](/help/communities/scf.md) (SCF)와 AEM 6.2가 [스토리지 리소스 공급자](/help/communities/working-with-srp.md) (SRP)를 사용하여 UGC에 액세스하는 [공통 UGC 스토어를](/help/communities/srp.md) 도입했습니다.
+**Gen 2**:AEM 5.6.1부터 AEM 6.1까지 **collab** 및 **소셜** 구성 요소가 혼합되어 있습니다. AEM 6.0에서는 새로운 [소셜 구성 요소 프레임워크](/help/communities/scf.md) (SCF)와 AEM 6.2가 [스토리지 리소스 공급자](/help/communities/working-with-srp.md) (SRP)를 사용하여 UGC에 액세스하는 [공통 UGC 스토어를](/help/communities/srp.md) 도입했습니다.
 
-**Gen 3** :AEM 6.2에서는 HBS(Handlebars) 구성 요소로 SCF에 구현된 **소셜** 구성 요소만 UGC에 대해 SRP를 선택해야 합니다.
+**Gen 3**:AEM 6.2부터 HBS(Handlebars) 구성 요소로 SCF에 구현된 **소셜** 구성 요소만 UGC에 대해 SRP를 선택해야 합니다.
