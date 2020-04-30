@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -39,9 +39,11 @@ AEM 플랫폼은 사이트 컨텐츠를 작성자에서 게시로 복제하는 �
 >
 >배포에 [공용 저장소가](working-with-srp.md)포함되어 있지 않으면 UGC가 입력된 AEM 게시 또는 작성자 인스턴스에만 UGC가 표시됩니다.
 
+
 >[!NOTE]
 >
 >AEM 플랫폼에 대한 자세한 내용은 권장 [배포](../../help/sites-deploying/recommended-deploys.md) 및 AEM [플랫폼 소개를 참조하십시오](../../help/sites-deploying/data-store-config.md).
+
 
 ## 제작 {#for-production}
 
@@ -49,9 +51,9 @@ UGC를 위한 공통 스토어를 구축하는 것은 필수이며, 따라서 �
 
 두 가지 예:
 
-1) 예상 UGC 볼륨이 높고 로컬 MongoDB 인스턴스가 가능한 경우 MSRP가 [선택됩니다](msrp.md).
+1. 예상 UGC 볼륨이 높고 로컬 MongoDB 인스턴스가 가능한 경우 MSRP가 [선택됩니다](msrp.md).
 
-2) 페이지 컨텐츠의 최적 성능을 위해 [게시 팜](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) 및 ASRP를 선택하면 [상대적으로 간단한 작업으로 UGC의](asrp.md) 크기를 최적화할 수 있습니다.
+1. 페이지 컨텐츠의 최적 성능을 위해 [게시 팜](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) 및 ASRP를 선택하면 [상대적으로 간단한 작업으로 UGC의](asrp.md) 크기를 최적화할 수 있습니다.
 
 두 가지 모두에 배포는 OAK 마이크로커널을 기반으로 할 수 있습니다.
 
@@ -61,7 +63,7 @@ Oak 마이크로 커널에 대한 자세한 내용은 권장 [배포를 참조�
 
 ### TarMK Publish Farm {#tarmk-publish-farm}
 
-토폴로지가 게시 팜인 경우 중요한 관련 주제는
+토폴로지가 게시 팜인 경우 중요한 관련 주제는 다음과 같습니다.
 
 * [사용자 동기화](sync.md)
 * [사용자 및 사용자 그룹 관리](users.md)
@@ -100,7 +102,7 @@ Oak 마이크로 커널에 대한 자세한 내용은 권장 [배포를 참조�
 
 * UGC [공용 스토어](working-with-srp.md)
 
-   사이트 컨텐츠와 별도의 커뮤니티 컨텐츠 저장을 설명합니다.
+   사이트 컨텐츠와 별도의 커뮤니티 컨텐츠 저장소를 설명합니다.
 
 * [노드 저장소 및 데이터 저장소](../../help/sites-deploying/data-store-config.md)
 
