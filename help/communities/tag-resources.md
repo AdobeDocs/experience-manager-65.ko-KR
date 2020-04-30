@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -81,7 +81,7 @@ source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
 
 예를 들어 `ski-catalog` 네임스페이스가 만들어 이름이 지정된 카탈로그에 설정된 경우 두 개의 하위 태그가 있을 `Ski Catalog`수 있습니다. `lesson-1` 및 `lesson-2`Adobe
 
-따라서 다음 중 하나로 태그된 모든 활성 리소스
+따라서 다음 중 하나가 태그로 지정된 모든 활성 리소스
 
 * 스키 카탈로그:레슨-1
 * 스키 카탈로그:레슨-2
