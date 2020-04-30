@@ -9,12 +9,12 @@ content-type: reference
 discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# 벌크 에셋 마이그레이션을 위한 기능 팩 18912 설치{#installing-feature-pack-for-bulk-asset-migration}
+# Installing feature pack 18912 for bulk asset migration{#installing-feature-pack-for-bulk-asset-migration}
 
 기능 팩 18912의 설치는 *선택 사항입니다*.
 
@@ -34,13 +34,12 @@ Feature Pack을 설치하려면 먼저 서비스 사용자를 만들고 해당 �
 
 1. AEM 인스턴스에서 도구 > 보안 > **[!UICONTROL 사용자로 이동하고]** 사용자 **[!UICONTROL 만들기를 선택합니다]**. 이 서비스 사용자는 *읽기/쓰기* 권한이 있어야 합니다. `/content/dam.`
 1. ID **[!UICONTROL 및]** 암호 **[!UICONTROL 필드에]** 사용자 이름과 암호를 입력합니다.예를 들어, FTP **사용자**. 이 이름은 타임라인에 자산을 만든 사용자로 표시됩니다. 자산이 FTP에서 업로드되면 자산이 FTP 서버에 업로드되고 AEM으로 푸시될 때 만들어지는 것으로 간주됩니다.
-1. 기능 [팩 18912를](https://helpx.adobe.com/contact/enterprise-support.ec.html) 다운로드하려면 Adobe Enterprise Support for Experience Manager에 문의하십시오. 지원 센터에 문의할 때 다음 정보가 필요할 수 있습니다.
+1. 기능 [팩 18912를](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 다운로드하려면 Adobe Enterprise Customer Care for Experience Manager에 문의하십시오. 지원 센터에 문의할 때 다음 정보가 필요할 수 있습니다.
 
    * 작성자 인스턴스의 서버 IP 주소(기본적으로 포트 번호는 4502입니다.)
    * 이전 단계의 AEM 서비스 사용자 이름과 암호
 
-1. AEM용 Adobe 엔터프라이즈 지원은 FTP 자격 증명 및 기능 팩 18912에 대한 액세스 권한을 제공합니다.
+1. AEM용 Adobe 엔터프라이즈 고객 지원 센터에서는 FTP 자격 증명을 제공하고 기능 팩 18912에 액세스할 수 있습니다.
 1. 기능 팩 18912를 받으면 설치합니다.
 
    AEM [에서 패키지 공유](/help/sites-administering/package-manager.md) 및 패키지 사용에 대한 자세한 내용은 패키지 사용 방법을 참조하십시오.
-
