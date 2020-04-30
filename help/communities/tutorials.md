@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -21,7 +21,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## 클라이언트측 사용자 정의 {#client-side-customization}
 
-SCF [클라이언트측 맞춤화를](client-customize.md)참조하십시오.
+참고 항목:
+
+* [SCF 클라이언트측 사용자 정의](client-customize.md)
 
 * [커뮤니티 구성 요소 안내서](components-guide.md)
 
@@ -59,11 +61,11 @@ SCF [서버측 사용자 지정을](server-customize.md)참조하십시오.
 
 Geometrixx 샘플 패키지에는 데모 사용자가 포함되어 있습니다. 방문자(로그인하지 않음) 또는 구성원(로그인)이 되는 것과 Geometrixx 샘플 패키지가 설치되어 있는 경우 이러한 사용자를 사용하여 커뮤니티 구성 요소 안내서를 [탐색할 때 로그인 상태를 시뮬레이션할 수](components-guide.md)있습니다.
 
-데모 사용자의 전체 목록을 보려면 레일을 사용하여 도구 > 작업 > **[!UICONTROL 보안 > 사용자를 탐색하십시오]**. 또는 사용자 및 그룹을 관리하기 위해 클래식 UI [보안 콘솔을](http://localhost:4502/useradmin) 사용하십시오.
+데모 사용자의 전체 목록을 보려면 레일을 사용하여 도구 > 작업 > **[!UICONTROL 보안]** > **[!UICONTROL 사용자를]** ****&#x200B;선택합니다. 또는 사용자 및 그룹을 관리하기 위해 클래식 UI [보안 콘솔을](http://localhost:4502/useradmin) 사용하십시오.
 
 커뮤니티 [사이트를 만든](getting-started.md)경우 데모 사용자를 [커뮤니티 사용자 그룹에](users.md)할당할 수 있습니다.
 
-***사용자 ID */*암호:***
+***사용자 ID */*암호***:
 
 * aaron.mcdonald@mailinator.com / 암호
 * emily.andrews@mailinator.com / 암호
