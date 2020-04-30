@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager에서 참조 및 다중 페이지 에셋을 사용하여 복합 에셋을 관리합니다.
-description: Adobe InDesign, Adobe Illustrator 및 Adobe Photoshop에서 디지털 에셋에 대한 참조를 만드는 방법을 살펴봅니다. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 여러 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.
+title: '[!DNL Adobe Experience Manager]에서 참조 및 다중 페이지 자산으로 복합 자산을 관리합니다.'
+description: '[!DNL Adobe InDesign], [!DNL Adobe Illustrator] 및 [!DNL Adobe Photoshop] 내에서 디지털 자산에 대한 참조를 만드는 방법을 알아봅니다. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 여러 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 790efeaff6c8cf7e60104601e08955180dbb9600
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # 복합 자산 및 다중 페이지 자산 관리 {#managing-compound-assets}
 
-[!DNL Adobe Experience Manager Assets] 업로드된 파일에 이미 저장소에 있는 자산에 대한 참조가 포함되어 있는지 식별할 수 있습니다. 이 기능은 지원되는 파일 포맷에서만 사용할 수 있습니다. 업로드된 자산에 Experience Manager 자산에 대한 참조가 포함되어 있으면 업로드된 자산과 참조된 자산 사이에 양방향 링크가 만들어집니다.
+[!DNL Adobe Experience Manager Assets] 업로드된 파일에 이미 저장소에 있는 자산에 대한 참조가 포함되어 있는지 식별할 수 있습니다. 이 기능은 지원되는 파일 포맷에서만 사용할 수 있습니다. 업로드된 자산에 자산에 대한 참조가 포함되어 있으면 업로드된 자산과 참조된 자산 사이에 양방향 링크가 만들어집니다. [!DNL Experience Manager]
 
-중복성을 제거할 수 있을 뿐만 아니라 Adobe Creative Cloud 애플리케이션의 에셋을 참조하면 공동 작업을 향상시킬 수 있고 사용자의 효율성과 생산성을 향상시킬 수 있습니다.
+중복성을 제거할 수 있을 뿐만 아니라 [!DNL Adobe Creative Cloud] 애플리케이션의 에셋을 참조하면 공동 작업을 향상시킬 수 있고 사용자의 효율성과 생산성을 향상시킬 수 있습니다.
 
 [!DNL Experience Manager Assets] 는 양방향 참조를 지원합니다. 업로드된 파일의 자산 세부 사항 페이지에서 참조된 자산을 찾을 수 있습니다. 또한 참조된 자산의 자산 세부 사항 페이지에서 참조하는 파일을 볼 수 있습니다.
 
@@ -25,7 +25,7 @@ source-git-commit: 790efeaff6c8cf7e60104601e08955180dbb9600
 1. Experience [Manager 데스크탑 앱을](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)사용하여 로컬 파일 시스템에서 디지털 자산을 가져옵니다. 참조할 자산의 파일 시스템 위치로 이동합니다.
 1. 로컬 폴더의 자산을 [!DNL Illustrator] 파일로 드래그합니다.
 
-1. 마운트된 드라이브에 [!DNL Illustrator] 파일을 저장하거나 Experience Manager 저장소에 [업로드합니다](/help/assets/managing-assets-touch-ui.md#uploading-assets) .
+1. 마운트된 드라이브에 [!DNL Illustrator] 파일을 저장하거나 [저장소에](/help/assets/managing-assets-touch-ui.md#uploading-assets) 업로드합니다 [!DNL Experience Manager] .
 
 1. 워크플로우가 완료되면 자산의 자산 세부 사항 페이지로 이동합니다. 기존 디지털 자산에 대한 참조는 참조 **[!UICONTROL 열의 종속성]** 아래에 **[!UICONTROL 나열됩니다]** .
 
@@ -39,7 +39,7 @@ source-git-commit: 790efeaff6c8cf7e60104601e08955180dbb9600
 
    ![자산 세부 정보에서 참조 열의 Experience Manager 자산 참조](assets/asset-references.png)
 
-   *그림:자산 세부 정보의 자산 참조*
+   *그림:자산 세부 정보의 자산 참조.*
 
 ## 디지털 자산을 참조로 [!DNL Adobe InDesign] 추가 {#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -86,7 +86,7 @@ source-git-commit: 790efeaff6c8cf7e60104601e08955180dbb9600
 
 하위 자산 생성이 기본적으로 비활성화됩니다. 하위 자산 생성을 활성화하려면 다음 단계를 수행합니다.
 
-1. Experience Manager에 관리자로 로그인합니다. 도구 **[!UICONTROL > 워크플로우 > 모델에 액세스합니다]**.
+1. 관리자로 [!DNL Experience Manager] 로그인합니다. 도구 **[!UICONTROL > 워크플로우 > 모델에 액세스합니다]**.
 1. DAM **[!UICONTROL 자산 업데이트]** 워크플로우를 선택하고 편집을 **[!UICONTROL 클릭합니다]**.
 1. 사이드 **[!UICONTROL 패널 전환을]** 클릭하고 하위 자산 **[!UICONTROL 만들기 단계를]** 찾습니다. 워크플로우에 단계를 추가합니다. 동기화를 **[!UICONTROL 클릭합니다]**.
 
