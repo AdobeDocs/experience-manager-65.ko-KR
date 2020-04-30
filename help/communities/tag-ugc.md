@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -27,7 +27,7 @@ UGC(사용자 생성 콘텐츠)에 태그를 지정하는 것은 커뮤니티 �
 
 ## 커뮤니티 기능 {#communities-features}
 
-태그 지정을 허용하도록 구성할 수 있는 AEM Communities 기능은
+태그 지정을 허용하도록 구성할 수 있는 AEM Communities 기능은 다음과 같습니다.
 
 * [블로그](blog-feature.md)
 * [달력](calendar.md)
@@ -51,7 +51,7 @@ Social [Tag](tagcloud.md) Cloud 구성 요소를 페이지에 추가하려면 �
 
 태그 [권한 설정을 참조하십시오](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-다음은 관리자가 그룹에 대한 읽기 권한을 적용할 때 CRXDE에 표시되는 `/etc/tag/discussions` `*Community Engage Members*`방식입니다.
+다음은 관리자가 그룹에 대한 읽기 권한을 적용할 때 CRXDE에 표시되는 `/etc/tag/discussions` `Community Engage Members`방식입니다.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
