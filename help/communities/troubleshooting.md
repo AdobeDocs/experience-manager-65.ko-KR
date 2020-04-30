@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -31,9 +31,7 @@ Dispatcher 4.1.6 이상을 사용하면 이 문제가 해결됩니다.
 
 CQ 5.4에서 포럼이 만들어졌고 게시된 항목이 사이트를 AEM 5.6.1 이상으로 업그레이드한 경우 기존 게시물을 보려고 하면 페이지에 오류가 발생할 수 있습니다.
 
-이 서버의 /content/demoforums/forum-test.html에 요청을 제공할 수 없는 패턴 문자 &#39;a&#39;가 잘못되었습니다.
-
-그리고 로그에는 다음이 포함됩니다.
+이 서버에 대한 요청을 제공할 수 `/content/demoforums/forum-test.html` 없는 패턴 문자 &#39;a&#39;가 잘못되었습니다. 로그에 다음이 포함됩니다.
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -44,7 +42,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 문제는 com.day.cq.commons.date.RelativeTimeFormat의 형식 문자열이 5.4에서 5.5 사이에 변경되었으므로 &quot;ago&quot;의 &quot;a&quot;가 더 이상 허용되지 않습니다.
 
-따라서 RelativeTimeFormat() API를 사용하는 모든 코드는
+따라서 RelativeTimeFormat() API를 사용하는 모든 코드는 다음과 같이 변경해야 합니다.
 
 * 시작: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * 끝: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
@@ -59,9 +57,9 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 시작 중(1일 제외 - 이후 모든 항목) 로그에 다음 경고가 표시될 수 있습니다.
 
-* 11.04.2014 08:38: **07.223 WARN** WARN []FelixStartLevelcom.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39;이 &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;으로 대체되었습니다.
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` 의 `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-이 경고는 jknack.handlebars.Handlebars로 안전하게 무시될 수 있습니다. SCF에서 사용되는 [Handlebars](scf.md#handlebarsjavascripttemplatinglanguage)는 자체 i18n 도우미 유틸리티를 제공합니다. 시작할 때 AEM 관련 i18n [도우미로](handlebars-helpers.md#i-n)대체됩니다. 이 경고는 기존 도우미의 재정의를 확인하기 위해 타사 라이브러리에서 생성합니다.
+이 경고는 SCF에서 `jknack.handlebars.Handlebars`사용하는 자체 i18 [n 도우미 유틸리티와 함께](scf.md#handlebarsjavascripttemplatinglanguage)제공되는 것처럼 안전하게 무시될 수 있습니다. 시작할 때 AEM 관련 i18n [도우미로](handlebars-helpers.md#i-n)대체됩니다. 이 경고는 기존 도우미의 재정의를 확인하기 위해 타사 라이브러리에서 생성합니다.
 
 ### 로그인 경고:OakResourceListener 프로세스OsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
