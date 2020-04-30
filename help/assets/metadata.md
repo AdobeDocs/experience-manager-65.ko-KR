@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager]에서 디지털 자산의 메타데이�
 description: 메타데이터 유형과 [!DNL Adobe Experience Manager Assets]를 통해 자산을 위한 메타데이터를 관리하여 자산을 보다 손쉽게 분류하고 구성할 수 있는 방법을 살펴볼 수 있습니다. [!DNL Experience Manager]를 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bf48a6057e08e9feafc0e18d6fa9d0145768cf2
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -74,11 +74,11 @@ source-git-commit: 9bf48a6057e08e9feafc0e18d6fa9d0145768cf2
 * XMP:추출된 메타데이터를 저장소 내에 저장하는 [!DNL Assets] 데 사용됩니다.
 * ID3:for audio and video files.
 * Exif:for image files.
-* 기타/레거시:Microsoft Word, PowerPoint, Excel 등에서 사용할 수 있습니다.
+* 기타/레거시:출처: [!DNL Microsoft Word][!DNL PowerPoint], [!DNL Excel]and so on.
 
 ### XMP {#xmp}
 
-XMP(Extensible Metadata Platform)는 모든 메타데이터 관리에 사용되는 개방형 표준입니다. [!DNL Experience Manager Assets] 표준은 모든 파일 포맷에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe와 다른 회사는 리치 컨텐츠 모델을 제공하므로 XMP 표준을 지원합니다. XMP 표준과 XMP 사용자는 강력한 플랫폼을 [!DNL Experience Manager Assets] 사용하여 구축할 수 있습니다. 자세한 내용은 XMP를 [참조하십시오](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP)는 모든 메타데이터 관리에 사용되는 개방형 [!DNL Experience Manager Assets] 표준입니다. 표준은 모든 파일 포맷에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe와 다른 회사는 리치 컨텐츠 모델을 제공하므로 XMP 표준을 지원합니다. XMP 표준과 XMP 사용자는 강력한 플랫폼을 [!DNL Experience Manager Assets] 사용하여 구축할 수 있습니다. 자세한 내용은 XMP를 [참조하십시오](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -114,62 +114,62 @@ Exif의 주요 제한 사항은 BMP, GIF 또는 PNG와 같이 널리 사용되�
 
 ### 표준 메타데이터 {#standard-metadata}
 
-* dc - Dublin Core - 가장 중요하고 널리 사용되는 메타데이터 세트입니다.
+* dc - [!DNL Dublin Core] 가장 중요하고 널리 사용되는 메타데이터 세트입니다.
 * DICOM - 의료 분야의 디지털 이미징 및 커뮤니케이션
-* Iptc4xmpCore &amp; iptc4xmpExt - International Press Communications Standard - 다양한 분야별 메타데이터
+* Iptc4xmpCore &amp; iptc4xmpExt - International Press Communications Standard에는 여러 제목별 메타데이터가 포함되어 있습니다.
 * rdf - 리소스 설명 프레임워크 - 일반 의미론적 웹 메타데이터용
-* xmp - 확장 가능한 메타데이터 플랫폼.
+* xmp - [!DNL Extensible Metadata Platform].
 * xmpBJ - 기본 작업 티켓.
 
 ### 애플리케이션별 메타데이터 {#application-specific-metadata}
 
 애플리케이션별 메타데이터에는 기술 및 설명 메타데이터가 포함됩니다. 이러한 경우 다른 응용 프로그램에서 메타데이터를 사용할 수 없을 수 있습니다. 예를 들어 [!DNL Adobe Photoshop] 메타데이터가 있는 자산이 있고 다른 이미지 렌더링 응용 프로그램이 메타데이터에 액세스하려고 하면 메타데이터에 액세스할 수 없을 수 있습니다. 자산에 애플리케이션별 메타데이터가 많이 있는 경우 애플리케이션별 속성을 표준 속성으로 변경하는 워크플로우 단계를 만들 수 있습니다.
 
-* acdsee - ACDSee 프로그램이 관리하는 메타데이터(www.acdsee.com [/](https://www.acdsee.com/))
-* album - Adobe Photoshop Album.
+* ACDSee - [!DNL ACDSee] 프로그램에서 관리하는 메타데이터 www.acdsee.com [를 참조하십시오](https://www.acdsee.com/).
+* 앨범 - [!DNL Adobe Photoshop Album]Album.
 * cq - 에서 [!DNL Experience Manager Assets]사용됩니다.
-* dam - used by [!DNL Experience Manager Assets].
+* dam - 에 의해 [!DNL Experience Manager Assets]사용됩니다.
 * dex - SC 설명 탐색기를 최적화합니다.
 * crs - Adobe Photoshop Camera Raw.
-* lr - Adobe Lightroom.
+* lr - [!DNL Adobe Lightroom]a.
 * mediapro - IView MediaPro
 * Microsoft Photo &amp; MP - Microsoft Photo.
 * pdf 및 pdfx
-* photoshop &amp; psAux - Adobe Photoshop.
+* photoshop &amp; psAux - [!DNL Adobe Photoshop]를 참조하십시오.
 
 ### 디지털 권한 관리 메타데이터 {#digital-rights-management-metadata}
 
-* cc - creative commons
-* xmpRights
-* plus - Picture Licensing Universal System - https://www.useplus.com/
-* 프리즘 - https://www.idealliance.org/prism-metadata Standard 메타데이터에 대한 게시 요구 사항
-* prl - 프리즘 권한 언어
-* pur - 프리즘 사용 권한
-* xmpPlus - PLUS와 XMP 통합
+* 참조 - [!DNL Creative Commons].
+* [!DNL XMPRights].
+* plus - [Picture Licensing Universal System](https://www.useplus.com).
+* 프리즘 - https://www.idealliance.org/prism-metadata Publishing Requirements for Industry Standard Metadata.
+* PRL - 프리즘 권한 언어.
+* PUR - 프리즘 사용 권한.
+* xmpPlus - PLUS와 XMP의 통합
 
 ### 사진별 메타데이터 {#photography-specific-metadata}
 
-* exif - GPS 위치 등 카메라의 많은 기술 정보
-* crs - photoshop camera raw
-* Iptc4xmpCore 및 iptc4xmpExt
-* TIFF - 이미지 메타데이터(TIFF 이미지 전용 아님)
+* Exif - GPS 위치를 비롯한 카메라의 기술 정보입니다.
+* CRS - [!DNL Camera Raw] 스키마.
+* Iptc4xmpCore 및 iptc4xmpExt.
+* TIFF - 이미지 메타데이터(TIFF 이미지에만 국한되지 않음)
 
 ### 인쇄별 메타데이터 {#print-specific-metadata}
 
 * pdf 및 pdfx - Adobe PDF 및 타사 애플리케이션
-* 프리즘 - [www.prismstandard.org](https://www.prismstandard.org) 업계 표준 메타데이터를 위한 게시 요구 사항
-* xmp
-* xmpPG - 페이지 지정된 텍스트의 xmp
+* 프리즘 - [www.prismstandard.org](https://www.prismstandard.org) 업계 표준 메타데이터에 대한 게시 요구 사항
+* xmp.
+* xmpPG - 페이지 지정된 텍스트에 대한 XMP 메타데이터
 
 ### 멀티미디어별 메타데이터 {#multimedia-specific-metadata}
 
-* xmpDM - Dynamic Media
-* xmpMM - 미디어 관리
+* xmpDM - [!DNL Dynamic Media]XMP
+* xmpMM - 미디어 관리.
 
 ## 메타데이터 기반의 워크플로우 {#metadata-driven-workflows}
 
 메타데이터 중심의 워크플로우를 만들면 일부 프로세스를 자동화하여 효율성을 높일 수 있습니다. 메타데이터 중심의 워크플로우에서 워크플로우 관리 시스템은 워크플로우를 읽고 그 결과 미리 정의된 일부 작업을 수행합니다. 예를 들어, 메타데이터 중심의 워크플로우를 사용할 수 있는 방법 중 몇 가지를 제공합니다.
 
-* 워크플로우는 이미지에 제목이 있는지 여부를 확인할 수 있습니다. 그렇지 않으면 특정 사용자에게 제목을 추가하도록 알립니다.
-* 워크플로우는 자산에 대한 저작권 공지가 배포를 허용하는지 여부를 확인할 수 있습니다. 그런 경우, 시스템이 자산을 하나의 서버로 전송합니다. 그렇지 않으면 시스템이 자산을 다른 서버로 보냅니다.
-* 워크플로우는 사전 정의된 필수 메타데이터 또는 *잘못된* 메타데이터가 없는 자산을 확인할 수 있습니다.
+* 워크플로우는 이미지에 제목이 있는지 여부를 확인할 수 있습니다. 그렇지 않으면 제목 추가에 대한 알림이 표시됩니다.
+* 워크플로우는 자산에 대한 저작권 공지가 배포를 허용하는지 여부를 확인할 수 있습니다. 따라서 시스템은 자산을 한 서버 또는 다른 서버로 보냅니다.
+* 워크플로우는 사전 정의된 필수 메타데이터 또는 *잘못된* 메타데이터가 있는 자산을 확인하지 않고 자산을 확인할 수 있습니다.
