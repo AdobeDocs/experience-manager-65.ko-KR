@@ -1,16 +1,16 @@
 ---
-title: Adobe Experience Manager Assets로 자산 일괄 마이그레이션
-description: 자산을 AEM으로 가져오고, 메타데이터를 적용하고, 변환을 생성하며, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
+title: 자산을 [!DNL Adobe Experience Manager Assets]로 일괄 마이그레이션합니다.
+description: 자산을 [!DNL Adobe Experience Manager]로 가져오고, 메타데이터를 적용하고, 변환을 생성하며, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # 자산을 일괄 마이그레이션하는 방법 {#assets-migration-guide}
 
-자산을 AEM으로 마이그레이션할 때 고려해야 할 몇 가지 단계가 있습니다. 현재 집에서 자산 및 메타데이터를 추출하는 방법은 구현 간에 다양하므로 이 문서의 범위를 벗어납니다. 그러나 이 문서에서는 이러한 자산을 AEM으로 가져오고, 메타데이터를 적용하고, 변환을 생성하며, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
+자산을 로 마이그레이션할 [!DNL Adobe Experience Manager]때 고려해야 할 몇 가지 단계가 있습니다. 현재 집에서 에셋과 메타데이터를 추출하는 방법은 구현 간에 다양하므로 이 문서의 범위를 벗어납니다. 그러나 이 문서에서는 이러한 에셋을 [!DNL Experience Manager]가져오고, 메타데이터를 적용하고, 변환을 생성하며, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -18,7 +18,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 >[!NOTE]
 >
->다음 에셋 마이그레이션 도구는 AEM의 일부가 아니며 Adobe에서 지원되지 않습니다.
+>다음 에셋 마이그레이션 도구는 Adobe의 일부가 [!DNL Experience Manager] 아니며 지원되지 않습니다.
 >
 >* ACS AEM Tools Tag Maker
 >* ACS AEM 도구 CSV 자산 가져오기
@@ -29,9 +29,9 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 >
 이 소프트웨어는 오픈 소스이며 Apache v2 [라이센스의 적용을 받습니다](https://adobe-consulting-services.github.io/pages/license.html). 질문하거나 문제를 보고하려면 ACS AEM 도구 및 ACS AEM [Commons에 대한 해당 GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) 문제를 [참조하십시오](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## AEM으로 마이그레이션 {#migrating-to-aem}
+## 마이그레이션 대상 [!DNL Experience Manager]{#migrating-to-aem}
 
-자산을 AEM으로 마이그레이션하려면 몇 가지 단계가 필요하며 단계적인 프로세스로 봐야 합니다. 마이그레이션 단계는 다음과 같습니다.
+자산을 마이그레이션하려면 여러 단계가 [!DNL Experience Manager] 필요하며 단계적인 프로세스로 간주해야 합니다. 마이그레이션 단계는 다음과 같습니다.
 
 1. 워크플로우 비활성화
 1. 태그를 로드합니다.
@@ -48,7 +48,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ### 태그 로드 {#loading-tags}
 
-이미지에 적용할 태그 분류법이 이미 있을 수 있습니다. CSV Asset Importer 및 Experience Manager의 메타데이터 프로필 지원과 같은 도구를 사용하여 자산에 태그를 적용하는 프로세스를 자동화할 수 있지만, 태그를 시스템에 로드해야 합니다. ACS [AEM Tools Tag](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) Maker 기능을 사용하면 시스템에 로드된 Microsoft Excel 스프레드시트를 사용하여 태그를 채울 수 있습니다.
+이미지에 적용할 태그 분류법이 이미 있을 수 있습니다. CSV Asset Importer와 메타데이터 프로필 [!DNL Experience Manager] 지원과 같은 도구를 사용하여 자산에 태그를 적용하는 프로세스를 자동화할 수 있지만, 태그를 시스템에 로드해야 합니다. ACS [AEM Tools Tag](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) Maker 기능을 사용하면 시스템에 로드된 Microsoft Excel 스프레드시트를 사용하여 태그를 채울 수 있습니다.
 
 ### 에셋 인제스트 {#ingesting-assets}
 
@@ -58,7 +58,7 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 #### HTTP를 통해 보내기 {#pushing-through-http}
 
-Adobe의 Managed Services 팀은 Logton이라는 도구를 사용하여 고객 환경에 데이터를 로드합니다. Logton은 한 디렉토리에서 AEM 인스턴스의 다른 디렉토리로 모든 자산을 로드하는 작은 Java 애플리케이션입니다. Logton 대신 Perl 스크립트와 같은 도구를 사용하여 에셋을 저장소에 게시할 수도 있습니다.
+Adobe의 Managed Services 팀은 Logton이라는 도구를 사용하여 고객 환경에 데이터를 로드합니다. Logton은 한 디렉토리에서 [!DNL Experience Manager] 인스턴스의 다른 디렉토리로 모든 에셋을 로드하는 작은 Java 애플리케이션입니다. Logton 대신 Perl 스크립트와 같은 도구를 사용하여 에셋을 저장소에 게시할 수도 있습니다.
 
 https를 통해 푸싱하는 접근 방식을 사용하는 데는 두 가지 주요 단점이 있습니다.
 
@@ -75,12 +75,12 @@ ACS [AEM Tools CSV Asset](https://adobe-consulting-services.github.io/acs-aem-to
 
 ### 변환 처리 {#processing-renditions}
 
-자산을 시스템에 로드한 후 DAM 자산 업데이트 [!UICONTROL 워크플로우를 통해] 메타데이터를 추출하고 변환을 생성해야 합니다. 이 단계를 수행하기 전에 필요에 맞게 DAM 자산 [!UICONTROL 업데이트] 워크플로우를 복제하고 수정해야 합니다. 기본 작업 과정에는 Scene7 PTIFF 생성 또는 InDesign 서버 통합과 같이 사용자에게 필요하지 않은 여러 단계가 포함되어 있습니다.
+자산을 시스템에 로드한 후 DAM 자산 업데이트 [!UICONTROL 워크플로우를 통해] 메타데이터를 추출하고 변환을 생성해야 합니다. 이 단계를 수행하기 전에 필요에 맞게 DAM 자산 [!UICONTROL 업데이트] 워크플로우를 복제하고 수정해야 합니다. 기본 작업 과정에는 Scene7 PTIFF 생성 또는 [!DNL InDesign Server] 통합과 같이 사용자에게 필요하지 않을 수 있는 여러 단계가 포함되어 있습니다.
 
 필요에 따라 워크플로우를 구성한 후에는 두 가지 옵션을 사용하여 워크플로우를 실행합니다.
 
 1. 가장 간단한 방법은 ACS [Commons의 벌크 워크플로우 관리자입니다](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). 이 도구를 사용하여 쿼리를 실행하고 워크플로우를 통해 쿼리 결과를 처리할 수 있습니다. 일괄 처리 크기를 설정하는 옵션도 있습니다.
-1. ACS Commons Fast [Action Manager를](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) Synthetic Workflows와 함께 사용할 [수 있습니다](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). 이 방법은 보다 많이 사용되지만 서버 리소스 사용을 최적화하는 동안 AEM 워크플로우 엔진의 오버헤드를 제거할 수 있습니다. 또한 Fast Action Manager는 서버 리소스를 동적으로 모니터링하고 시스템에 배치된 로드를 조절하여 성능을 더욱 향상시켜 줍니다. 예제 스크립트는 ACS Commons 기능 페이지에 제공되었습니다.
+1. ACS Commons Fast [Action Manager를](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) Synthetic Workflows와 함께 사용할 [수 있습니다](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). 이러한 접근 방식은 더욱 복잡하지만 서버 리소스 사용을 최적화하는 동시에 [!DNL Experience Manager] 워크플로우 엔진의 오버헤드를 제거할 수 있습니다. 또한 Fast Action Manager는 서버 리소스를 동적으로 모니터링하고 시스템에 배치된 로드를 조절하여 성능을 더욱 향상시켜 줍니다. 예제 스크립트는 ACS Commons 기능 페이지에 제공되었습니다.
 
 ### 자산 활성화 {#activating-assets}
 
@@ -88,7 +88,7 @@ ACS [AEM Tools CSV Asset](https://adobe-consulting-services.github.io/acs-aem-to
 
 이 문제를 해결하려면 빠른 작업 관리자를 사용하여 [자산](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) 복제를 관리할 수 있습니다. 이는 Sling 대기열을 사용하지 않고 오버헤드를 줄이고 작업 로드를 조절하여 서버가 오버로드되지 않도록 합니다. FAM을 사용하여 복제를 관리하는 예는 기능의 설명서 페이지에 나와 있습니다.
 
-게시 팜에 에셋을 가져오기 위한 다른 옵션으로는 Jackrabbit의 일부로 제공되는 [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) 또는 [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)사용등이 있습니다. 또 다른 옵션은 Grabbit라는 AEM 인프라에 대해 [오픈 소스](https://github.com/TWCable/grabbit)도구를 사용하는 것입니다. 이 도구는 VLT보다 성능이 빠릅니다.
+게시 팜에 에셋을 가져오기 위한 다른 옵션으로는 Jackrabbit의 일부로 제공되는 [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) 또는 [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)사용등이 있습니다. 또 다른 옵션은 Grabbit라는 [!DNL Experience Manager] 인프라에 대해 오픈 소스 [도구를 사용하는](https://github.com/TWCable/grabbit)것으로, 성능보다 빨라졌다고 주장합니다.
 
 이러한 접근 방식에서 주의해야 할 점은 작성자 인스턴스의 에셋이 활성화된 것으로 표시되지 않는다는 것입니다. 이러한 자산의 플래그를 올바른 활성화 상태로 처리하려면 스크립트를 실행하여 자산을 활성화됨으로 표시해야 합니다.
 
@@ -112,22 +112,22 @@ ACS [AEM Tools CSV Asset](https://adobe-consulting-services.github.io/acs-aem-to
 
 마이그레이션이 완료되면 DAM Update Asset [!UICONTROL 워크플로우의] 방사선을 다시 활성화하여 지속적인 시스템 사용을 위해 변환 생성 및 메타데이터 추출을 지원해야 합니다.
 
-## AEM 배포 간 마이그레이션 {#migrating-between-aem-instances}
+## 배포 [!DNL Experience Manager] 간 마이그레이션 {#migrating-between-aem-instances}
 
-일반적이지는 않지만 경우에 따라 대량의 데이터를 한 AEM 인스턴스에서 다른 AEM 인스턴스로 마이그레이션해야 합니다.예를 들어 AEM 업그레이드를 수행할 때 하드웨어를 업그레이드하거나 AMS 마이그레이션과 같은 새 데이터 센터로 마이그레이션합니다.
+일반적이지는 않지만 한 [!DNL Experience Manager] 인스턴스에서 다른 인스턴스로 대량의 데이터를 마이그레이션해야 하는 경우가 있습니다.예를 들어, [!DNL Experience Manager] 업그레이드를 수행할 때 하드웨어를 업그레이드하거나 AMS 마이그레이션과 같은 새로운 데이터 센터로 마이그레이션합니다.
 
-이 경우 자산은 이미 메타데이터로 채워지고 표현물은 이미 생성됩니다. 한 인스턴스에서 다른 인스턴스로 에셋을 이동하는 데 집중할 수 있습니다. AEM 인스턴스 간에 마이그레이션할 때 다음 단계를 수행합니다.
+이 경우 자산은 이미 메타데이터로 채워지고 표현물은 이미 생성됩니다. 한 인스턴스에서 다른 인스턴스로 에셋을 이동하는 데 집중할 수 있습니다. 인스턴스 간에 마이그레이션할 때 [!DNL Experience Manager] 다음 단계를 수행합니다.
 
 1. 워크플로우 비활성화:Adobe 자산과 함께 변환을 마이그레이션하기 때문에 DAM 자산 업데이트 [!UICONTROL 워크플로우에 대한 워크플로우 런처를 비활성화하려고] 합니다.
 
-1. 태그 마이그레이션:소스 AEM 인스턴스에 이미 태그가 로드되어 있으므로 콘텐츠 패키지에서 태그를 빌드하고 대상 인스턴스에 패키지를 설치할 수 있습니다.
+1. 태그 마이그레이션:소스 [!DNL Experience Manager] 인스턴스에 이미 태그가 로드되어 있기 때문에 컨텐츠 패키지에서 태그를 빌드하고 대상 인스턴스에 패키지를 설치할 수 있습니다.
 
-1. 자산 마이그레이션:한 AEM 인스턴스에서 다른 AEM 인스턴스로 자산을 이동하는 데 권장되는 두 가지 도구가 있습니다.
+1. 자산 마이그레이션:한 [!DNL Experience Manager] 인스턴스에서 다른 인스턴스로 자산을 이동하는 데 권장되는 두 가지 도구가 있습니다.
 
    * **저장소 원격 복사** 또는 vlt rcp를 사용하면 네트워크를 통해 vlt를 사용할 수 있습니다. 소스 및 대상 디렉토리를 지정하고 Vlt가 한 인스턴스에서 모든 저장소 데이터를 다운로드하고 다른 인스턴스로 로드할 수 있습니다. Vlt rcp는 https://jackrabbit.apache.org/filevault/rcp.html에 [있습니다.](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **Grabbit** 는 AEM 구현을 위해 Time Warner Cable에서 개발한 오픈 소스 컨텐츠 동기화 도구입니다. vlt rcp에 비해 연속 데이터 스트림을 사용하기 때문에 지연 시간이 더 적고 vlt rcp에 비해 2-10배 빠른 속도 개선 효과가 있다고 주장합니다. 또한 Grabbit는 델타 컨텐츠 동기화만 지원하므로 초기 마이그레이션 전달이 완료된 후 변경 사항을 동기화할 수 있습니다.
+   * **Grabbit** 는 Time Warner Cable에서 개발한 오픈 소스 컨텐츠 동기화 [!DNL Experience Manager] 툴입니다. vlt rcp에 비해 연속 데이터 스트림을 사용하기 때문에 지연 시간이 더 적고 vlt rcp에 비해 2-10배 빠른 속도 개선 효과가 있다고 주장합니다. 또한 Grabbit는 델타 컨텐츠 동기화만 지원하므로 초기 마이그레이션 전달이 완료된 후 변경 사항을 동기화할 수 있습니다.
 
-1. 자산 활성화:AEM으로의 초기 마이그레이션에 대해 문서화된 자산 [](#activating-assets) 활성화에 대한 지침을 따르십시오.
+1. 자산 활성화:초기 마이그레이션을 위해 문서화된 자산 [활성화에 대한 지침을](#activating-assets) [!DNL Experience Manager]따르십시오.
 
 1. 복제 게시:새 마이그레이션과 마찬가지로, 단일 게시 인스턴스를 로드하고 복제하는 것이 두 노드에서 컨텐츠를 활성화하는 것보다 더 효율적입니다. 게시 [복제를 참조하십시오.](#cloning-publish)
 
