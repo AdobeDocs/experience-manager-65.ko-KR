@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Assets 사용 안내서
 translation-type: tm+mt
-source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -103,7 +103,7 @@ source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
    + [PDF 래스터라이저 사용](aem-pdf-rasterizer.md)
    + [업로드 제한 구성](configuring-asset-upload-restrictions.md)
    + [AEM 및 Creative Cloud 통합 우수 사례](aem-cc-integration-best-practices.md)
-   + [InDesign 서버와 통합](indesign.md)
+   + [InDesign Server와 통합](indesign.md)
    + [메타데이터 프로필](metadata-profiles.md)
    + [자산의 디지털 권한 관리](drm.md)
    + [자산 통찰력에 데모 패키지 사용](touch-ui-using-demo-package-for-asset-insights.md)
