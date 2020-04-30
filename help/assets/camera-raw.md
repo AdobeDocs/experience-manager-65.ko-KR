@@ -1,22 +1,22 @@
 ---
-title: Camera Raw 지원
-description: Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하는 방법을 알아봅니다.
+title: '[!DNL Adobe Camera Raw] 지원.'
+description: '[!DNL Adobe Experience Manager Assets]에서 [!DNL Adobe Camera Raw] 지원을 활성화하는 방법을 알아봅니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# Camera Raw를 사용하여 이미지 처리 지원 {#camera-raw-support}
+# Camera Raw를 사용하여 이미지 처리 {#camera-raw-support}
 
-Camera Raw 지원을 통해 CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처리하고 이미지를 JPEG 포맷으로 렌더링할 수 있습니다. 이 기능은 Adobe Experience Manager Assets에서 패키지 공유를 통해 [사용할 수 있는 Camera Raw 패키지를](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 사용하여 지원됩니다.
+CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처리하고 JPEG 포맷으로 이미지를 렌더링할 수 있습니다. [!DNL Adobe Camera Raw] 이 기능은 패키지 공유를 통해 [!DNL Adobe Experience Manager Assets] 사용할 수 있는 Camera Raw 패키지 [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 사용 시 지원됩니다.
 
 >[!NOTE]
 >
 >이 기능은 JPEG 변환만 지원합니다. Windows 64비트, Mac OS 및 RHEL 7.x에서 지원됩니다.
 
-Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하려면 다음 단계를 수행하십시오.
+에서 [!DNL Camera Raw] 지원을 활성화하려면 [!DNL Experience Manager Assets]다음 단계를 수행하십시오.
 
 1. 패키지 [공유에서 Camera Raw 패키지를](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 다운로드합니다.
 1. 액세스 `https://[aem_server]:[port]/workflow`. DAM 자산 **[!UICONTROL 업데이트 워크플로우를]** 엽니다.
@@ -53,13 +53,13 @@ Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하려면 �
 
 ![chlimage_1-131](assets/chlimage_1-337.png)
 
-*그림:사이드 창의 옵션*
+*그림:사이드 창의 옵션.*
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
 
-*그림:옵션을 사용하여 이미지를 간단하게 편집*
+*그림:옵션을 사용하여 이미지를 간단하게 편집할 수 있습니다.*
 
-편집 내용을 Camera Raw 이미지에 저장하면 이미지에 대한 새 변환이 `AdjustedPreview.jpg` 생성됩니다. Camera Raw를 제외한 다른 이미지 유형의 경우 변경 사항이 모든 변환에 반영됩니다.
+편집 내용을 [!DNL Camera Raw] 이미지에 저장하면 이미지에 대한 새 변환이 `AdjustedPreview.jpg` 생성됩니다. 다른 이미지 유형을 제외하고 [!DNL Camera Raw]변경 사항이 모든 변환에 반영됩니다.
 
 ## 모범 사례, 알려진 문제 및 제한 사항 {#best-practices}
 
@@ -67,4 +67,4 @@ Adobe Experience Manager Assets에서 Camera Raw 지원을 활성화하려면 �
 
 * 이 기능은 JPEG 변환만 지원합니다. Windows 64비트, Mac OS 및 RHEL 7.x에서 지원됩니다.
 * RAW 및 DNG 포맷에는 메타데이터 원본에 대한 지원이 지원되지 않습니다.
-* Camera Raw 라이브러리에는 한 번에 처리할 수 있는 전체 픽셀에 대한 제한이 있습니다. 현재, 파일의 긴 쪽에서 최대 65,000픽셀이나 어떤 기준이든 먼저 발견된 512MP를 처리할 수 있습니다.
+* 라이브러리에는 한 번에 처리할 수 있는 총 픽셀 수에 대한 제한이 있습니다 [!DNL Camera Raw] . 현재, 파일의 긴 쪽에서 최대 65,000픽셀이나 어떤 기준이든 먼저 발견된 512MP를 처리할 수 있습니다.
