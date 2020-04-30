@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
@@ -39,11 +39,17 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
-* **[!UICONTROL 긍정적인 응답 레이블]**(*필수*)긍정적인 응답을 위한 내부 속성 이름입니다.
+* **[!UICONTROL 긍정적인 응답 레이블]**
 
-* **[!UICONTROL 네거티브 응답 레이블]**(*필수*) 네거티브 응답의 내부 속성 이름입니다.
+   (*필수*) 긍정적인 응답을 위한 내부 속성 이름입니다.
 
-* **[!UICONTROL 총계]**&#x200B;이름(*필수*) 투표 구성 요소의 이 인스턴스에 대한 내부 식별 가능 속성 이름입니다.
+* **[!UICONTROL 부정적인 응답 레이블]**
+
+   (*필수*) 네거티브 응답의 내부 속성 이름입니다.
+
+* **[!UICONTROL Tally 이름]**
+
+   (*필수*) 투표 구성 요소의 이 인스턴스에 대한 내부 식별 가능 속성 이름입니다.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
