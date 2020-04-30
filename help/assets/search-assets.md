@@ -4,7 +4,7 @@ description: 필터 패널을 사용하여 Adobe Experience Manager에서 필요
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -40,7 +40,7 @@ Experience Manager 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 �
 
 ![Experience Manager Assets 검색 결과 인터페이스 이해](assets/aem_search_results.png)
 
-*그림:Experience Manager Assets 검색 결과 인터페이스 이해*
+*그림:Adobe Experience Manager Assets 검색 결과 인터페이스에 대한 이해*
 
 **A.** 검색을 스마트 컬렉션으로 저장할 수 있습니다. **B.** 검색 결과의 범위를 좁히기 위해 필터 또는 예측자를 사용합니다. **C.** 파일, 폴더 또는 둘 다를 표시합니다. **D.** 필터를 클릭하여 왼쪽 레일을 열거나 닫습니다. **E.** 검색 위치는 DAM입니다. **F.** 사용자가 제공한 검색 키워드가 있는 Omnisearch 필드. **G.** 로드된 검색 결과를 선택합니다. **H.** 총 검색 결과 중 표시되는 검색 결과 수입니다. **I.** 검색 J **닫기** 카드 보기와 목록 보기 간을 전환합니다.
 
@@ -50,7 +50,7 @@ Experience Manager 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 �
 
 ![검색 패싯에서 검색 결과를 필터링하지 않고 대략적인 자산 수를 참조하십시오.](assets/asset_search_results_in_facets_filters.png)
 
-*그림:검색 패싯에서 검색 결과를 필터링하지 않고 대략적인 자산 수 보기*
+*그림:검색 패싯에서 검색 결과를 필터링하지 않고 대략적인 자산 수를 참조하십시오.*
 
 ## 검색 결과 및 행동 이해 {#searchbehavior}
 
@@ -131,7 +131,7 @@ Adobe Experience Manager는 검색된 자산에 적용되는 필터와 같은 �
 
 ![필터 패널에서 폴더 경로를 추가하여 검색 결과를 폴더로 제한](assets/search_folder_select.gif)
 
-*그림:필터 패널에서 폴더 경로를 추가하여 검색 결과를 폴더로 제한*
+*그림:필터 패널에서 폴더 경로를 추가하여 검색 결과를 폴더로 제한할 수 있습니다.*
 
 ### 유사한 이미지 찾기 {#visualsearch}
 
@@ -139,7 +139,7 @@ Adobe Experience Manager는 검색된 자산에 적용되는 필터와 같은 �
 
 ![카드 보기에서 옵션을 사용하여 유사한 이미지 찾기](assets/search_find_similar.png)
 
-*그림:카드 보기에서 옵션을 사용하여 유사한 이미지 찾기*
+*그림:카드 보기에서 옵션을 사용하여 유사한 이미지를 찾습니다.*
 
 ### Adobe Stock 이미지 {#adobestock}
 
@@ -197,7 +197,7 @@ Adobe Experience Manager는 DAM 저장소를 다른 다양한 Adobe Experience M
 
 ### Adobe Asset Link 패널에서 에셋 검색 {#aal}
 
-이제 크리에이티브 전문가는 Adobe Asset Link를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고도 Experience Manager Assets에 저장되어 있는 콘텐츠에 액세스할 수 있습니다. 크리에이티브 전문가는 Creative Cloud 앱에서 인앱 패널을 사용하여 에셋을 원활하게 검색하고 체크 아웃하고 체크 인할 수 있습니다.Photoshop, Illustrator 및 InDesign. 또한 에셋 링크를 사용하면 시각적으로 유사한 결과를 검색할 수 있습니다. 시각적 검색 표시 결과는 Adobe Sensei의 머신 러닝 알고리즘을 기반으로 하므로 사용자가 미적으로 유사한 이미지를 찾을 수 있습니다. Adobe [Asset Link를 사용하여 자산](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) 검색 및 검색을 참조하십시오.
+이제 크리에이티브 전문가는 Adobe Asset Link를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고도 Experience Manager Assets에 저장되어 있는 콘텐츠에 액세스할 수 있습니다. 크리에이티브 전문가는 Creative Cloud 앱에서 인앱 패널을 사용하여 에셋을 원활하게 검색하고 체크 아웃하고 체크 인할 수 있습니다.Photoshop, Illustrator 및 InDesign. 또한 에셋 링크를 사용하면 시각적으로 유사한 결과를 검색할 수 있습니다. 시각적 검색 표시 결과는 Adobe Sensei의 머신 러닝 알고리즘을 기반으로 하므로 사용자가 미적으로 유사한 이미지를 찾을 수 있습니다. Adobe [Asset Link를 사용하여 자산](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) 검색 및 검색을 참조하십시오.
 
 ### Experience Manager 데스크탑 앱에서 에셋 검색 {#desktopapp}
 
@@ -244,7 +244,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 ![자산 선택기에서 자산 찾아보기 및 선택](assets/assetpicker.png)
 
-*그림:자산 선택기에서 자산 찾아보기 및 선택*
+*그림:자산 선택기에서 자산을 검색하고 선택합니다.*
 
 ## 제한 사항 {#limitations}
 
@@ -285,7 +285,7 @@ Experience Manager Assets의 검색 기능에는 다음과 같은 제한 사항�
 
 ![따옴표가 있는 경우와 없는 경우의 검색 동작](assets/search_with_quotes.gif)
 
-*그림:따옴표가 있는 경우와 없는 경우의 검색 동작*
+*그림:따옴표가 있는 경우와 없는 경우에는 검색 비헤이비어를 사용합니다.*
 
 **별표 와일드카드를**&#x200B;사용하여 검색:검색을 넓히려면 검색어 앞이나 뒤에 별표를 사용하여 원하는 수의 문자와 일치시킵니다. 예를 들어 별표 없이 실행만 검색해도 변형된 단어(메타데이터에 포함)가 포함된 자산은 반환되지 않습니다. 별표는 문자 수에 제한이 없습니다. 예,
 
@@ -296,7 +296,7 @@ Experience Manager Assets의 검색 기능에는 다음과 같은 제한 사항�
 
 ![예를 사용하여 자산 검색에서 별표 와일드카드의 사용 표시](assets/search_with_asterisk_run.gif)
 
-*그림:예를 사용하여 자산 검색에서 별표 와일드카드의 사용 표시*
+*그림:예를 사용하여 자산 검색에서 별표 와일드카드의 사용을 보여 줍니다.*
 
 **물음표 와일드카드로**&#x200B;검색:검색을 확장하려면 하나 이상의 &#39;?&#39;를 사용하십시오. 문자를 사용하여 정확한 문자 수와 일치시킵니다. 예를 들어 다음 그림에서
 
@@ -308,7 +308,7 @@ Experience Manager Assets의 검색 기능에는 다음과 같은 제한 사항�
 
 ![예를 사용하여 자산 검색에서 물음표 와일드카드 사용](assets/search_with_questionmark_run.gif)
 
-*그림:예를 사용하여 자산 검색에서 물음표 와일드카드 사용*
+*그림:예를 사용하여 자산 검색에서 물음표 와일드카드의 사용을 보여 줍니다.*
 
 **키워드**&#x200B;제외:키워드를 포함하지 않는 자산을 검색하려면 대시를 사용합니다. 예를 들어 `running -shoe` 쿼리는 포함되지만 포함되지 `running`않은 자산을 반환합니다 `shoe`. 마찬가지로 `camp -night` 쿼리는 포함되지만 포함되지 `camp` 않은 자산을 `night`반환합니다. 쿼리는 `camp-night` 및 `camp` `night`를 모두 포함하는 자산을 반환합니다.
 
@@ -415,7 +415,7 @@ Experience Manager Assets의 검색 기능에는 다음과 같은 제한 사항�
 
 ![검색 자산에 대한 타임라인 항목 정렬](assets/sort_timeline_search_results.gif)
 
-*그림:검색 자산에 대한 타임라인 항목 정렬*
+*그림:검색 자산에 대한 타임라인 항목을 정렬합니다.*
 
 ### 검색된 자산 다운로드 {#download}
 
