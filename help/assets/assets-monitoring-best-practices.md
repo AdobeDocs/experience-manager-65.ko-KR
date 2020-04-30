@@ -1,16 +1,16 @@
 ---
-title: AEM 자산 배포를 모니터하는 우수 사례
-description: AEM 인스턴스가 배포된 후 AEM 인스턴스의 환경 및 성능을 모니터링하기 위한 우수 사례입니다.
+title: '[!DNL Adobe Experience Manager Assets] 배포를 모니터링하는 모범 사례'
+description: 배포 후 [!DNL Adobe Experience Manager] 배포의 환경 및 성능을 모니터링하기 위한 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b0555655bceda4b1ac4a9f14029778387b223c2f
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# AEM 자산 배포를 모니터하는 우수 사례 {#assets-monitoring-best-practices}
+# Best practices to monitor [!DNL Adobe Experience Manager Assets] deployment {#assets-monitoring-best-practices}
 
-AEM(Adobe Experience Manager) 자산 관점에서 모니터링에는 다음 프로세스 및 기술에 대한 관찰과 보고가 포함되어야 합니다.
+모니터링은 [!DNL Experience Manager Assets] 측면에서 다음 프로세스 및 기술에 대한 관찰과 보고를 포함해야 합니다.
 
 * 시스템 CPU
 * 시스템 메모리 사용
@@ -19,13 +19,13 @@ AEM(Adobe Experience Manager) 자산 관점에서 모니터링에는 다음 프�
 * JMX MBeans를 사용하여 작업 과정과 같은 비동기 프로세스를 수행할 수 있습니다.
 * OSGi 콘솔 상태 검사
 
-일반적으로 AEM 자산은 라이브 모니터링과 장기 모니터링이라는 두 가지 방법으로 모니터링할 수 있습니다.
+일반적으로 실시간 모니터링과 장기 모니터링이라는 두 가지 방법으로 모니터링할 [!DNL Experience Manager Assets] 수 있습니다.
 
 ## 실시간 모니터링 {#live-monitoring}
 
 개발 단계나 고부하 상황에서 실시간 모니터링을 수행하여 환경의 성능 특성을 이해해야 합니다. 일반적으로 라이브 모니터링은 도구 모음을 사용하여 수행해야 합니다. 다음은 권장 사항입니다.
 
-* [시각적 VM](https://visualvm.java.net/):Visual VM을 사용하면 CPU 사용량, Java 메모리 사용을 비롯한 자세한 Java VM 정보를 볼 수 있습니다. 또한 인스턴스에서 실행되는 코드를 샘플링하고 평가할 수 있습니다.
+* [시각적 VM](https://visualvm.java.net/):Visual VM을 사용하면 CPU 사용량, Java 메모리 사용을 비롯한 자세한 Java VM 정보를 볼 수 있습니다. 또한 배포에서 실행되는 코드를 샘플링하고 평가할 수 있습니다.
 * [위쪽](https://man7.org/linux/man-pages/man1/top.1.html):맨 위에는 CPU, 메모리 및 IO 사용을 비롯한 사용 통계를 표시하는 대시보드를 여는 Linux 명령입니다. 인스턴스에서 발생하는 상황에 대한 고급 개요를 제공합니다.
 * [상단](https://hisham.hm/htop/):상단은 대화형 프로세스 뷰어입니다. Top이 제공할 수 있는 기능 외에 자세한 CPU 및 메모리 사용량을 제공합니다. Top은 `yum install htop` 또는 를 사용하여 대부분의 Linux 시스템에 설치할 수 `apt-get install htop`있습니다.
 
@@ -34,10 +34,10 @@ AEM(Adobe Experience Manager) 자산 관점에서 모니터링에는 다음 프�
 * [이벤트](https://www.ex-parrot.com/pdw/iftop/):Iftop에 이더넷/네트워크 사용에 대한 자세한 정보가 표시됩니다. 이때에는 이더넷을 사용하는 엔티티의 통신 채널 통계당 및 그들이 사용하는 대역폭 수치를 표시합니다. Iftop은 `yum install iftop` 또는 를 사용하여 대부분의 Linux 시스템에 설치할 수 `apt-get install iftop`있습니다.
 
 * JFR(Java Flight Recorder):비프로덕션 환경에서 자유롭게 사용할 수 있는 Oracle의 상업용 도구입니다. 자세한 내용은 Java [플라이트 레코더를 사용하여 CQ 런타임 문제 진단을 참조하십시오](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* AEM error.log 파일:AEM error.log 파일에서 시스템에 기록된 오류에 대한 세부 정보를 조사할 수 있습니다. 명령을 `tail -F quickstart/logs/error.log` 사용하여 조사해야 하는 오류를 식별합니다.
+* [!DNL Experience Manager] 파일: `error.log` 시스템에 기록된 오류에 대한 세부 정보를 [!DNL Experience Manager] 확인하려면 `error.log` 파일을 조사할 수 있습니다. 이 명령을 `tail -F quickstart/logs/error.log` 사용하여 오류를 찾아 보십시오.
 * [워크플로우 콘솔](/help/sites-administering/workflows.md):워크플로우 콘솔을 사용하여 지연 또는 중단되는 워크플로우를 모니터링할 수 있습니다.
 
-일반적으로 이러한 도구를 함께 사용하여 AEM 인스턴스의 성능에 대한 포괄적인 아이디어를 얻을 수 있습니다.
+일반적으로 이러한 도구를 함께 사용하여 [!DNL Experience Manager] 배포 성능에 대한 포괄적인 아이디어를 얻을 수 있습니다.
 
 >[!NOTE]
 >
@@ -47,16 +47,15 @@ AEM(Adobe Experience Manager) 자산 관점에서 모니터링에는 다음 프�
 
 *그림:Visual VM 도구를 사용한 실시간 모니터링*
 
-
 ![chlimage_1-32](assets/chlimage_1-142.png)
 
 ## 장기 모니터링 {#long-term-monitoring}
 
-AEM 인스턴스의 장기 모니터링에는 모니터링되는 동일한 부분을 더 오랜 기간 동안 모니터링하는 작업이 포함됩니다. 또한 환경에 대한 경고를 정의합니다.
+배포에 대한 장기 모니터링에는 [!DNL Experience Manager] 모니터링되는 동일한 부분을 장기간 모니터링해야 합니다. 또한 환경에 대한 경고를 정의합니다.
 
 ### 로그 집계 및 보고 {#log-aggregation-and-reporting}
 
-Splunk(TM) 및 Elastic Search/Logstash/Kabana(ELK)와 같은 로그를 집계하는 데 사용할 수 있는 몇 가지 도구가 있습니다. AEM 인스턴스의 가동 시간을 평가하려면 시스템 관련 로그 이벤트를 파악하고 이를 기반으로 경고를 생성해야 합니다. 개발 및 운영 사례에 대한 충분한 지식이 있으면 로그 수집 프로세스를 조정하여 중요한 경고를 생성하는 방법을 보다 잘 이해할 수 있습니다.
+Splunk(TM) 및 Elastic Search, Logstash 및 Kabana(ELK)와 같은 로그를 집계하는 데 사용할 수 있는 몇 가지 도구가 있습니다. 배포의 가동 시간을 평가하려면 [!DNL Experience Manager] 시스템 관련 로그 이벤트를 파악하고 이를 기반으로 경고를 생성해야 합니다. 개발 및 운영 사례에 대한 충분한 지식이 있으면 로그 수집 프로세스를 조정하여 중요한 경고를 생성하는 방법을 보다 잘 이해할 수 있습니다.
 
 ### 환경 모니터링 {#environment-monitoring}
 
@@ -73,7 +72,7 @@ Splunk(TM) 및 Elastic Search/Logstash/Kabana(ELK)와 같은 로그를 집계하
 
 #### 내부 애플리케이션 모니터링 {#internal-application-monitoring}
 
-내부 애플리케이션 모니터링에는 JVM, 컨텐츠 저장소 등 AEM 스택을 구성하는 애플리케이션 구성 요소 모니터링과 플랫폼에 내장된 사용자 정의 애플리케이션 코드를 통한 모니터링이 포함됩니다. 일반적으로 JMX Mbeans를 통해 수행되며, SolarWinds(TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) 등과 같이 널리 사용되는 많은 모니터링 솔루션에서 직접 모니터링할 수 있습니다. JMX에 대한 직접 연결을 지원하지 않는 시스템의 경우 셸 스크립트를 작성하여 JMX 데이터를 추출하고 이러한 시스템에 기본적으로 이해할 수 있는 형식으로 표시할 수 있습니다.
+내부 애플리케이션 모니터링에는 JVM, 컨텐츠 저장소 등 [!DNL Experience Manager] 스택을 구성하는 애플리케이션 구성 요소 모니터링과 플랫폼에 내장된 사용자 정의 애플리케이션 코드를 통한 모니터링이 포함됩니다. 일반적으로 JMX Mbeans를 통해 수행되며, SolarWinds(TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) 등과 같이 널리 사용되는 많은 모니터링 솔루션에서 직접 모니터링할 수 있습니다. JMX에 대한 직접 연결을 지원하지 않는 시스템의 경우 셸 스크립트를 작성하여 JMX 데이터를 추출하고 이러한 시스템에 기본적으로 이해할 수 있는 형식으로 표시할 수 있습니다.
 
 JMX Mbeans에 대한 원격 액세스는 기본적으로 활성화되어 있지 않습니다. JMX를 통한 모니터링에 대한 자세한 내용은 JMX [기술을 사용한 모니터링 및 관리를 참조하십시오](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
@@ -81,7 +80,7 @@ JMX Mbeans에 대한 원격 액세스는 기본적으로 활성화되어 있지 
 
 **JVM 모니터링**
 
-Java 기반 애플리케이션 스택과 마찬가지로 AEM은 기본 Java 가상 시스템을 통해 제공되는 리소스에 따라 달라집니다. JVM에 의해 노출되는 플랫폼 MXBeans를 통해 이러한 리소스 중 많은 수의 상태를 모니터링할 수 있습니다. MXBeans에 대한 자세한 내용은 플랫폼 MBean [서버 및 플랫폼 MXBeans 사용을 참조하십시오](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+Java 기반 애플리케이션 스택과 마찬가지로 기본 Java 가상 시스템을 통해 제공되는 리소스에 [!DNL Experience Manager] 따라 달라집니다. JVM에 의해 노출되는 플랫폼 MXBeans를 통해 이러한 리소스 중 많은 수의 상태를 모니터링할 수 있습니다. MXBeans에 대한 자세한 내용은 플랫폼 MBean [서버 및 플랫폼 MXBeans 사용을 참조하십시오](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
 다음은 JVM에 대해 모니터링할 수 있는 몇 가지 기준 매개 변수입니다.
 
@@ -105,11 +104,11 @@ Java 기반 애플리케이션 스택과 마찬가지로 AEM은 기본 Java 가�
 * 경고 임계값:스레드 수가 기준선의 150%보다 큰 경우
 * 경고 정의:적극적인 진행 과정이나 비효율적인 작업이 많은 양의 자원을 소비한다. 스레드 덤프를 분석하여 정의에 도달합니다.
 
-**AEM 모니터링**
+**모니터[!DNL Experience Manager]**
 
-또한 AEM은 JMX를 통해 통계 및 작업 세트를 표시합니다. 이러한 기능은 시스템 상태를 평가하고 사용자에게 영향을 미치기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 AEM JMX MBeans에 대한 [설명서를](/help/sites-administering/jmx-console.md) 참조하십시오.
+[!DNL Experience Manager] 또한 JMX를 통해 통계 및 작업 세트를 표시합니다. 이러한 기능은 시스템 상태를 평가하고 사용자에게 영향을 미치기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 JMX MBeans에 대한 [설명서를](/help/sites-administering/jmx-console.md) 참조하십시오 [!DNL Experience Manager] .
 
-다음은 AEM에 대해 모니터링할 수 있는 몇 가지 기준 매개 변수입니다.
+다음은 모니터링할 수 있는 몇 가지 기준 매개 변수입니다. [!DNL Experience Manager]
 
 복제 에이전트
 
@@ -187,7 +186,7 @@ Java 기반 애플리케이션 스택과 마찬가지로 AEM은 기본 Java 가�
 
 ## 일반적인 문제 및 해결 방법 {#common-issues-and-resolutions}
 
-모니터링 과정에서 문제가 발생하면 AEM 인스턴스의 일반적인 문제를 해결하기 위해 수행할 수 있는 몇 가지 문제 해결 작업이 있습니다.
+모니터링 과정에서 문제가 발생하면 [!DNL Experience Manager] 배포 관련 일반적인 문제를 해결하기 위해 수행할 수 있는 몇 가지 문제 해결 작업이 있습니다.
 
 * TarMK를 사용하는 경우 Tar 컴포지션을 자주 실행합니다. 자세한 내용은 저장소 [관리를](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)참조하십시오.
 * 로그를 `OutOfMemoryError` 확인합니다. 자세한 내용은 메모리 문제 [분석을](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)참조하십시오.
@@ -195,6 +194,6 @@ Java 기반 애플리케이션 스택과 마찬가지로 AEM은 기본 Java 가�
 * 인덱스되지 않은 쿼리, 트리 탐색 또는 색인 탐색에 대한 참조가 있는지 로그를 확인합니다. 이 항목은 인덱싱되지 않은 쿼리 또는 불충분한 인덱싱된 쿼리를 나타냅니다. 쿼리 및 인덱싱 성능 최적화에 대한 우수 사례는 쿼리 및 [색인화에](/help/sites-deploying/best-practices-for-queries-and-indexing.md)대한 우수 사례를 참조하십시오.
 * 워크플로우 콘솔을 사용하여 워크플로우가 예상대로 작동하는지 확인합니다. 가능하면 여러 워크플로우를 하나의 워크플로우로 통합합니다.
 * 실시간 모니터링을 다시 방문하여 추가 병목 현상 또는 특정 리소스의 높은 소비자에 대해 살펴봅니다.
-* 클라이언트 네트워크에서 송신 지점을 조사하고 디스패처를 포함하여 AEM 인스턴스 네트워크에 대한 수신 지점을 조사합니다. 이러한 경우가 종종 병목 영역입니다. 자세한 내용은 자산 [네트워크 고려 사항을](/help/assets/assets-network-considerations.md)참조하십시오.
-* AEM 서버의 크기를 조정합니다. AEM 인스턴스의 크기가 적절하지 않을 수 있습니다. Adobe 지원을 통해 서버 크기를 줄일 수 있습니다.
+* 클라이언트 네트워크의 송신 지점 및 디스패처를 포함한 배포 네트워크의 수신 지점을 [!DNL Experience Manager] 조사합니다. 이러한 경우가 종종 병목 영역입니다. 자세한 내용은 자산 [네트워크 고려 사항을](/help/assets/assets-network-considerations.md)참조하십시오.
+* 서버 크기 [!DNL Experience Manager] 상향 조정 배포 크기가 적절하지 않을 수 [!DNL Experience Manager] 있습니다. Adobe 고객 지원 센터는 서버 크기가 작은지 여부를 확인하는 데 도움이 됩니다.
 * 문제가 발생했을 때 `access.log` 및 `error.log` 파일에서 항목을 검사합니다. 사용자 지정 코드 예외 항목을 나타낼 수 있는 패턴을 찾습니다. 모니터링하는 이벤트 목록에 추가합니다.
