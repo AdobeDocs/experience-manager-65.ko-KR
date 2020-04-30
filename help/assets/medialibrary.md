@@ -3,7 +3,7 @@ title: AEM 자산 및 AEM 미디어 라이브러리 제품 비교
 description: AEM Assets 및 AEM Media Library 솔루션을 비교하고 차이점을 파악합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -72,32 +72,31 @@ AEM에서 모든 AEM 자산별 워크플로우, 구성 요소, 분류, 옵션 �
 * 처리 프로필
 * InDesign Server 통합
 * 자산 템플릿 및 카탈로그 제작 프레임워크
-* Adobe Photoshop, Illustrator 및 InDesign 연결된 에셋
+* Adobe Photoshop, Adobe Illustrator 및 Adobe InDesign 통합
 * 다국어 에셋 관리
 * PIM 통합
 * 권한 관리
 * Camera RAW 지원
 * 검색 패싯 관리 및 구성
 * 사전 제작된 DAM 워크플로우(예: 사진 촬영)
-* 자산 보고 및 분석:자산 통찰력
-* 3D 자산 관리
+* 인사이트라는 자산 보고 및 분석
+* 3D 에셋 관리
 * 연결된 자산
 * 브랜드 포털
 * 셀프 서비스 액세스
 * 검색, 검색 및 다운로드
 * 컬렉션 및 폴더 공유
-* 관리 도구
-* 스마트 태그
+* 관리 툴 및 인터페이스
+* 스마트 태그 지정
 * 시각적 검색
-* 자산 관리 UI
 
 **미디어 라이브러리**
 
 * 기본 메타데이터 속성
 * 태그 관리
 * 버전 제어
-* 정적 표현물
-* 프로젝트, 작업, 워크플로우 작성
+* 정적 변환
+* 프로젝트, 작업, 워크플로우 제작
 * 활동 스트림(타임라인)
 * 쿼리 빌더(API)
 * Marketing Cloud 통합
