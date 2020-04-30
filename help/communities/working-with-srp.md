@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 6f13b21a-f4ef-4889-9b8e-4da3f846fa35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
 
-# SRP - 커뮤니티 컨텐츠 스토리지{#srp-community-content-storage}
+# SRP - 커뮤니티 컨텐츠 스토리지 {#srp-community-content-storage}
 
 ## 소개 {#introduction}
 
@@ -32,15 +32,19 @@ UGC용 SRP 사용에 대한 자세한 내용은 스토리지 리소스 [공급�
 >
 >SRP는 커뮤니티 컨텐츠에만 적용됩니다. 사이트 컨텐츠가 저장되는 위치([노드 저장소](/help/sites-deploying/data-store-config.md))에는 영향을 주지 않으며 AEM 인스턴스 간 사용자 등록, 사용자 프로필 및 사용자 그룹의 보안 처리에 영향을 주지 않습니다(사용자 데이터 [관리 참조](#managing-user-data)).
 
+
 >[!CAUTION]
 >
 >AEM 6.1부터 UGC는 [복제되지](#ugc-never-replicated)않습니다.
 >
 >배포에 기본 JSRP 토폴로지와 같은 일반 [저장소가](/help/communities/topologies.md#jsrp) 포함되어 있지 않으면 UGC는 입력한 AEM 게시 또는 작성자 인스턴스에서만 표시됩니다. 토폴로지에 게시 클러스터가 포함된 경우에만 게시 인스턴스에서 UGC를 볼 수 있습니다.
 
+
 ## SRP 옵션 특성 {#characteristics-of-srp-options}
 
-[ASRP - Adobe](/help/communities/asrp.md)Storage Resource Provider 이 옵션을 사용하면 UGC는 Adobe에서 호스팅 및 관리하는 클라우드 서비스에서 원격으로 유지됩니다. 특정 라이선스에 대한 계정을 제공하려면 추가 라이선스가 필요하며 계정 담당자와 함께 작업해야 합니다. ASRP를 사용하려면 다음이 필요합니다.
+[ASRP - Adobe Storage Resource Provider](/help/communities/asrp.md)
+
+이 옵션을 사용하면 UGC는 Adobe에서 호스팅 및 관리하는 클라우드 서비스에서 원격으로 유지됩니다. 특정 라이선스에 대한 계정을 제공하려면 추가 라이선스가 필요하며 계정 담당자와 함께 작업해야 합니다. ASRP를 사용하려면 다음이 필요합니다.
 
 * 커뮤니티 콘텐츠를 저장할 수 있도록 Adobe에서 제공 및 지원하는 관련 클라우드 서비스
 * 특정 지역의 데이터 센터 선택(미국, EMEA, APAC).
@@ -49,14 +53,17 @@ UGC용 SRP 사용에 대한 자세한 내용은 스토리지 리소스 [공급�
 
 ASRP가 적합합니다.
 
-* for TarMK publish farm.
+* TarMK 게시 팜의 경우
 * 로컬 스토리지에 투자할 의사가 없는 경우
 
 >[!NOTE]
 >
 >첨부 파일을 ASRP의 게시물(또는 댓글)에 업로드할 수 있는 제한은 50MB입니다.
 
-[MSRP - MongoDB Storage](/help/communities/msrp.md)Resource Provider 이 옵션을 사용하면 UGC가 로컬 MongoDB 인스턴스에 직접 유지됩니다.
+
+[MSRP - MongoDB 저장소 리소스 공급자](/help/communities/msrp.md)
+
+이 옵션을 사용할 경우 UGC는 로컬 MongoDB 인스턴스에 직접 유지됩니다.
 
 MSRP의 요구:
 
@@ -70,7 +77,9 @@ ASRP가 적합합니다.
 * MongoMK 또는 RdbMK 클러스터의 경우
 * 대량의 커뮤니티 콘텐츠가 필요한 경우
 
-[DSRP - 관계형 데이터베이스](/help/communities/dsrp.md)저장소 리소스 공급자 이 옵션을 사용하면 UGC가 로컬 MySQL 데이터베이스 인스턴스에 직접 유지됩니다.
+[DSRP - 관계형 데이터베이스 저장소 리소스 공급자](/help/communities/dsrp.md)
+
+이 옵션을 사용하면 UGC는 로컬 MySQL 데이터베이스 인스턴스에 직접 유지됩니다.
 
 DSRP의 요구 사항:
 
@@ -84,7 +93,9 @@ DSRP가 적절합니다.
 * MongoMK 또는 RdbMK 클러스터의 경우
 * 대량의 커뮤니티 콘텐츠가 필요한 경우
 
-[JSRP - JCR](/help/communities/jsrp.md)저장소 리소스 공급자 기본 옵션을 사용할 경우 공통 저장소가 없습니다. UGC는 AEM이 입력된 AEM 인스턴스와 동일한 JCR 저장소에만 보관됩니다.
+[JSRP - JCR 스토리지 리소스 공급자](/help/communities/jsrp.md)
+
+기본 옵션을 사용하면 일반 스토어가 없습니다. UGC는 AEM이 입력된 AEM 인스턴스와 동일한 JCR 저장소에만 보관됩니다.
 
 JSRP:
 
@@ -115,7 +126,7 @@ JSRP:
 
 이전에는 이 커뮤니티 컨텐츠가 작성자 인스턴스로 역복제되었고 작성자가 복제되어 게시 인스턴스로 복제되었습니다. 역방향 및 앞으로 복제를 통해 AEM 인스턴스 간의 일관성을 유지하는 것은 문제가 있었습니다.
 
-AEM Communities 6.1부터, 위에서 설명한 바와 같이 UGC용 공유 저장소를 사용하여 UGC의 복제 필요성을 제거했습니다.
+AEM Communities 6.1부터 상기에 설명된 바와 같이 UGC용 공유 저장소를 사용하여 UGC의 복제 필요성을 제거했습니다.
 
 사이트 컨텐츠가 복제되는 동안 UGC는 복제되지 않습니다.
 
