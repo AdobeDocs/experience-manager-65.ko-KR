@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
-# 그룹 템플릿{#group-templates}
+# 그룹 템플릿 {#group-templates}
 
 그룹 템플릿 콘솔은 사이트 템플릿 [콘솔과](/help/communities/sites.md) 유사합니다. 두 제품 모두 미리 연결된 페이지 및 커뮤니티 사이트를 구성하는 기능에 대한 청사진입니다. 차이점은 사이트 템플릿은 기본 커뮤니티를 위한 것이며 그룹 템플릿은 커뮤니티 그룹을 위한 것이며 기본 커뮤니티 내에 중첩된 하위 커뮤니티를 위한 것입니다.
 
@@ -30,6 +30,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 >
 >커뮤니티 사이트 [만들기,](/help/communities/sites-console.md)커뮤니티 사이트 템플릿 [,](/help/communities/sites.md)커뮤니티 그룹 템플릿 [및](/help/communities/tools-groups.md) 커뮤니티 기능 [](/help/communities/functions.md) 은 작성 환경에서만 사용할 수 있는 콘솔입니다.
 
+
 ## 그룹 템플릿 콘솔 {#group-templates-console}
 
 AEM 작성자 환경의 그룹 템플릿 콘솔에 액세스하려면:
@@ -42,7 +43,7 @@ AEM 작성자 환경의 그룹 템플릿 콘솔에 액세스하려면:
 
 ## 그룹 템플릿 작성 {#create-group-template}
 
-새 그룹 템플릿을 만들려면 `Create`
+새 그룹 템플릿 만들기를 시작하려면 을 `Create`선택합니다.
 
 이렇게 하면 3개의 하위 패널이 포함된 사이트 편집기 패널이 표시됩니다.
 
@@ -52,17 +53,19 @@ AEM 작성자 환경의 그룹 템플릿 콘솔에 액세스하려면:
 
 [기본 정보] 패널에서 이름, 설명 및 템플릿이 활성화되었는지 또는 비활성화되었는지 여부가 구성됩니다.
 
-* **새 그룹 템플릿**&#x200B;템플릿 이름 ID
+* **새 그룹 템플릿 이름**
+
+   템플릿 이름 ID입니다.
 
 * **설명**
 
-   템플릿 설명
+   템플릿 설명입니다.
 
 * **비활성화/활성화**
 
-   템플릿을 참조할 수 있는지 여부를 제어하는 전환 스위치
+   템플릿을 참조할 수 있는지 여부를 제어하는 전환 스위치입니다.
 
-#### 축소판 {#thumbnail}
+#### 썸네일 {#thumbnail}
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
@@ -78,6 +81,7 @@ AEM 작성자 환경의 그룹 템플릿 콘솔에 액세스하려면:
 >
 >템플릿의 첫 번째 함수나 유일한 함수로 그룹 함수를 추가할 수 없습니다.
 
+
 ![그룹 템플릿 편집기](assets/template-editor.png)
 
 커뮤니티 기능을 추가하려면 사이트 메뉴 링크가 표시되는 순서대로 오른쪽에서 왼쪽으로 드래그합니다. 사이트를 만드는 동안 스타일이 템플릿에 적용됩니다.
@@ -88,7 +92,7 @@ AEM 작성자 환경의 그룹 템플릿 콘솔에 액세스하려면:
 
 ![드래그 함수](assets/dragfunctions.png)
 
-원하는 기능을 모두 템플릿 빌더 영역에 놓고 구성했으면 오른쪽 위 모서리에서 **저장 **을 선택합니다.
+원하는 기능을 모두 템플릿 빌더 영역에 놓고 구성했으면 오른쪽 **위** 모서리에서 저장을 선택합니다.
 
 ## 그룹 템플릿 편집{#edit-group-template}
 
