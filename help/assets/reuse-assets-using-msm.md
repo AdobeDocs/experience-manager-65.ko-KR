@@ -1,17 +1,17 @@
 ---
-title: MSM을 사용하여 에셋 재사용
+title: '[!DNL Adobe Experience Manager Assets]에 MSM을 사용하여 자산을 재사용합니다.'
 description: 상위 자산에서 파생되고 상위 자산에 연결된 여러 페이지/폴더에서 자산을 사용합니다. 에셋은 마스터 복사본과 동기화되고 몇 번의 클릭만으로 상위 에셋으로부터 업데이트를 받을 수 있습니다.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc1a9eb4c02c7751b99ed074e0f3250193957c59
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# MSM을 사용하여 에셋 재사용 {#reuse-assets-using-msm-for-assets}
+# Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
-AEM(Adobe Experience Manager)의 MSM(Multi Site Manager) 기능을 사용하면 한 번 제작되고 여러 웹 위치에서 다시 사용되는 컨텐츠를 재사용할 수 있습니다. MSM for Assets 기능과 동일한 기능을 디지털 자산에 사용할 수 있습니다. 자산에 대한 MSM을 사용하여 다음을 수행할 수 있습니다.
+의 MSM(Multi Site Manager) 기능을 [!DNL Adobe Experience Manager] 사용하면 한 번 작성되고 여러 웹 위치에서 다시 사용되는 컨텐츠를 재사용할 수 있습니다. MSM 파섹 [!DNL Assets] MSM을 사용하여 다음을 수행할 수 [!DNL Assets]있습니다.
 
 * 자산을 한 번 만든 다음 이러한 자산의 사본을 만들어 사이트의 다른 영역에서 재사용할 수 있습니다.
 * 여러 사본을 동기화하고 원본 마스터 사본을 한 번 업데이트하여 변경 사항을 하위 복사본으로 푸시합니다.
@@ -19,20 +19,20 @@ AEM(Adobe Experience Manager)의 MSM(Multi Site Manager) 기능을 사용하면 
 
 ## 전제 조건 {#configprereq}
 
-자산에 MSM을 사용하려면 서비스 팩 1 이상을 설치합니다. 자세한 내용은 [릴리스 노트를](/help/release-notes/sp-release-notes.md)참조하십시오.
+MSM을 사용하려면 [!DNL Assets]서비스 팩 1 이상을 설치합니다. 자세한 내용은 [릴리스 노트를](/help/release-notes/sp-release-notes.md)참조하십시오.
 
 ## 이점 및 개념 이해 {#concepts}
 
 ### 작동 방식과 이점 {#how-it-works-and-the-benefits}
 
-여러 웹 위치에서 동일한 컨텐츠(텍스트 및 자산)를 재사용하기 위한 사용 시나리오를 이해하려면 [가능한 MSM 시나리오를](/help/sites-administering/msm.md)참조하십시오. AEM 파섹 유지 관리 연결을 통해 중앙 집중식 변경 사항을 여러 Live Copy로 푸시할 수 있습니다. 이렇게 하면 복제 사본 관리의 제한 사항을 그대로 유지하면서 더욱 빠르게 업데이트할 수 있습니다. 변경 사항의 전달은 오류 없이 중앙에서 이루어집니다. 이 기능을 사용하면 선택한 Live Copy로 제한된 업데이트를 사용할 수 있습니다. 사용자는 상속이 단절된 연결을 분리하고 다음에 마스터 사본을 업데이트하고 변경 내용을 롤아웃할 때 덮어쓰지 않은 로컬 편집을 수행할 수 있습니다. 일부 특정 메타데이터 필드 또는 전체 자산에 대해 분리할 수 있습니다. 마스터 복사본에서 원래 상속된 에셋을 로컬에서 유연하게 업데이트할 수 있습니다.
+여러 웹 위치에서 동일한 컨텐츠(텍스트 및 자산)를 재사용하기 위한 사용 시나리오를 이해하려면 [가능한 MSM 시나리오를](/help/sites-administering/msm.md)참조하십시오. [!DNL Experience Manager] 원본 자산과 연결된 복사본(LC)의 링크를 유지합니다. 유지 관리 연결을 통해 중앙 집중식 변경 사항을 여러 Live Copy로 푸시할 수 있습니다. 이렇게 하면 복제 사본 관리의 제한 사항을 그대로 유지하면서 더욱 빠르게 업데이트할 수 있습니다. 변경 사항의 전달은 오류 없이 중앙에서 이루어집니다. 이 기능을 사용하면 선택한 Live Copy로 제한된 업데이트를 사용할 수 있습니다. 사용자는 상속이 단절된 연결을 분리하고 다음에 마스터 사본을 업데이트하고 변경 내용을 롤아웃할 때 덮어쓰지 않은 로컬 편집을 수행할 수 있습니다. 일부 특정 메타데이터 필드 또는 전체 자산에 대해 분리할 수 있습니다. 마스터 복사본에서 원래 상속된 에셋을 로컬에서 유연하게 업데이트할 수 있습니다.
 
 MSM 파섹
 
 * 소스 에셋에 대한 변경 사항은 Live Copy에도 적용(롤아웃)되므로 Live Copy는 소스와 동기화됩니다.
 * 라이브 관계를 일시 중단하거나 일부 제한된 필드에 대한 상속을 제거하여 Live Copy를 업데이트할 수 있습니다. 소스 수정 사항은 더 이상 Live Copy에 적용되지 않습니다.
 
-### MSM for Assets 용어 설명 {#glossary}
+### MSM 용어 [!DNL Assets] 용어집 {#glossary}
 
 **출처:** 원본 자산 또는 폴더 Live Copy가 파생되는 마스터 복사본입니다.
 
@@ -42,7 +42,7 @@ MSM 파섹
 
 **롤아웃:** 소스 다운스트림에 대한 수정 사항을 Live Copy로 푸시하는 작업입니다. 롤아웃 작업을 사용하여 한 번에 하나 이상의 Live Copy를 업데이트할 수 있습니다. 롤아웃을 참조하십시오.
 
-**롤아웃 구성:** 동기화할 속성, 방법 및 시기를 결정하는 규칙입니다. 이러한 구성은 Live Copy를 만들 때 적용됩니다.나중에 편집할 수 있습니다.하위 멤버는 상위 자산에서 롤아웃 구성을 상속할 수 있습니다. MSM for Assets의 경우 표준 롤아웃 구성만 사용하십시오. MSM for Assets에서는 다른 롤아웃 구성을 사용할 수 없습니다.
+**롤아웃 구성:** 동기화할 속성, 방법 및 시기를 결정하는 규칙입니다. 이러한 구성은 Live Copy를 만들 때 적용됩니다.나중에 편집할 수 있습니다.하위 멤버는 상위 자산에서 롤아웃 구성을 상속할 수 있습니다. MSM의 경우 [!DNL Assets]표준 롤아웃 구성만 사용하십시오. 다른 롤아웃 구성은 MSM에서 사용할 수 없습니다 [!DNL Assets].
 
 **동기화:** 소스 및 Live Copy 간에 업데이트를 소스로부터 Live Copy로 전송하여 패리티가 발생하는 롤아웃 외에 또 다른 작업입니다. 특정 Live Copy에 대한 동기화가 시작되어 소스에서 변경 내용을 가져옵니다. 이 작업을 사용하면 Live Copy 중 하나만 업데이트할 수 있습니다. 동기화 작업을 참조하십시오.
 
@@ -59,7 +59,7 @@ MSM 파섹
 하나 이상의 소스 자산 또는 폴더에서 Live Copy를 만들려면 다음 중 하나를 수행합니다.
 
 * 방법 1:소스 에셋을 선택하고 맨 **[!UICONTROL 위에 있는 도구 모음에서 만들기]** > Live Copy를 클릭합니다.
-* 방법 2:AEM 사용자 인터페이스에서 **[!UICONTROL 만들기 >]** Live Copy를 인터페이스 오른쪽 상단 모서리에서 클릭합니다.
+* 방법 2:사용자 인터페이스에서 [!DNL Experience Manager] 만들기 > Live Copy **** (인터페이스 오른쪽 상단)를 클릭합니다.
 
 자산 또는 폴더의 Live Copy를 한 번에 하나씩 만들 수 있습니다. 자산이나 Live Copy 자체인 폴더에서 파생된 Live Copy를 만들 수 있습니다. 사용 사례에는 컨텐츠 조각(CF)이 지원되지 않습니다. Live Copy를 만들려고 하면 CF가 관계 없이 그대로 복사됩니다. 복사된 CF는 시간 내 스냅샷이며 원본 CF가 업데이트될 때 업데이트되지 않습니다.
 
@@ -67,9 +67,9 @@ MSM 파섹
 
 1. 소스 자산 또는 폴더를 선택합니다. 도구 모음에서 만들기 > **[!UICONTROL Live Copy를 클릭합니다]**.
 
-   ![AEM 인터페이스에서 Live Copy 만들기](assets/create_lc1.png)
+   ![Experience Manager 인터페이스에서 Live Copy 만들기](assets/create_lc1.png)
 
-   *그림:AEM 인터페이스에서 Live Copy 만들기*
+   *그림:인터페이스에서 Live Copy 만들기[!DNL Experience Manager]*
 
 1. 대상 폴더를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 제목과 이름을 입력합니다. 자산에 하위 항목이 없습니다. 폴더의 Live Copy를 만들 때 하위 폴더를 포함하거나 제외하도록 선택할 수 있습니다.
@@ -77,11 +77,11 @@ MSM 파섹
 
 두 번째 방법을 사용하여 Live Copy를 만들려면 다음 단계를 수행합니다.
 
-1. AEM 인터페이스의 오른쪽 위 모서리에서 만들기 > **[!UICONTROL Live Copy를 클릭합니다]**.
+1. 인터페이스 오른쪽 위 모서리에서 만들기 > Live [!DNL Experience Manager] Copy를 클릭합니다 ****.
 
-   ![AEM 인터페이스에서 Live Copy 만들기](assets/create_lc2.png)
+   ![Experience Manager 인터페이스에서 Live Copy 만들기](assets/create_lc2.png)
 
-   *그림:AEM 인터페이스에서 Live Copy 만들기*
+   *그림:인터페이스에서 Live Copy 만들기[!DNL Experience Manager]*
 
 1. 소스 자산 또는 폴더를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 대상 폴더를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
@@ -94,12 +94,12 @@ MSM 파섹
 
 ## 소스 및 Live Copy의 다양한 속성과 상태 보기 {#properties}
 
-관계, 동기화, 롤아웃 등과 같은 Live Copy의 정보 및 MSM 관련 상태를 AEM 사용자 인터페이스의 다양한 영역에서 볼 수 있습니다.
+관계, 동기화, 롤아웃 등과 같은 Live Copy의 정보 및 MSM 관련 상태를 [!DNL Experience Manager] 사용자 인터페이스의 다양한 영역에서 볼 수 있습니다.
 
 자산 및 폴더에는 다음 두 가지 방법이 작동합니다.
 
 * Live Copy 자산을 선택하고 속성 페이지에서 정보를 찾습니다.
-* 소스 폴더를 선택하고 Live Copy 콘솔에서 각 Live Copy의 세부 정보를 찾습니다.
+* 소스 폴더를 선택하고 Live Copy 콘솔에서 각 Live Copy의 세부 정보를 [!UICONTROL 찾습니다].
 
 >[!TIP]
 >
@@ -122,14 +122,14 @@ Live Copy 자산 또는 폴더의 정보 및 상태를 확인하려면 다음 �
 
 ### 폴더의 모든 Live Copy 정보 및 상태 {#statuslcfolder}
 
-AEM에서는 소스 폴더의 모든 Live Copy의 동체를 확인할 수 있는 콘솔을 제공합니다. 이 콘솔에는 모든 하위 자산의 상태가 표시됩니다.
+[!DNL Experience Manager] 에서는 소스 폴더의 모든 Live Copy의 동상을 확인할 수 있는 콘솔을 제공합니다. 이 콘솔에는 모든 하위 자산의 상태가 표시됩니다.
 
 1. 소스 폴더를 선택합니다. Click **[!UICONTROL Properties]** from the toolbar. 또는 키보드 단축키를 `p`사용합니다.
 1. Live **[!UICONTROL Copy 소스를 클릭합니다]**. 콘솔을 열려면 Live Copy **[!UICONTROL 개요를 클릭합니다]**. 이 대시보드는 모든 하위 자산의 최상위 상태를 제공합니다.
 
    ![소스의 Live Copy 콘솔에서 Live Copy 상태 보기](assets/livecopy-statuses.png)
 
-   *그림:소스의 Live Copy 콘솔에서 Live Copy 상태 보기*
+   *그림:소스의 Live Copy 콘솔에서[!UICONTROL Live Copy의]상태를 봅니다.*
 
 1. Live Copy 폴더의 각 자산에 대한 세부 정보를 보려면 자산을 선택하고 도구 모음에서 **[!UICONTROL 관계]** 상태를 클릭합니다.
 
@@ -146,7 +146,7 @@ AEM에서는 소스 폴더의 모든 Live Copy의 동체를 확인할 수 있는
 소스 에셋 또는 폴더의 경우 다음 정보를 확인하고 참조 레일에서 바로 다음 작업을 수행할 수 있습니다.
 
 * Live Copy 경로 보기
-* AEM 사용자 인터페이스에서 특정 Live Copy를 열거나 표시합니다.
+* 사용자 인터페이스에서 특정 Live Copy를 열거나 표시합니다. [!DNL Experience Manager]
 * 업데이트를 특정 Live Copy에 동기화합니다.
 * 특정 Live Copy에 대한 관계를 일시 중단하거나 롤아웃 구성을 변경합니다.
 * Live Copy 개요 콘솔에 액세스합니다.
@@ -155,27 +155,27 @@ AEM에서는 소스 폴더의 모든 Live Copy의 동체를 확인할 수 있는
 
 ![선택한 소스에 대한 참조 레일에서 사용할 수 있는 작업 및 정보](assets/referencerail_source.png)
 
-*그림:선택한 소스에 대한 참조 레일에서 사용할 수 있는 작업 및 정보*
+*그림:선택한 소스에 대한 참조 레일에서 사용할 수 있는 작업 및 정보입니다.*
 
 특정 Live Copy의 경우 Live Copy **[!UICONTROL 편집을 클릭하여]** 관계를 일시 중단하거나 롤아웃 구성을 변경합니다.
 
 ![특정 Live Copy의 경우 소스 에셋을 선택하면 참조 레일에서 관계를 일시 중단하거나 롤아웃 구성을 변경할 수 있습니다](assets/referencerail_editlc_options.png)
 
-*그림:관계 일시 중단 또는 특정 Live Copy 롤아웃 구성 변경*
+*그림:관계를 일시 중단하거나 특정 Live Copy의 롤아웃 구성을 변경합니다.*
 
 ### Live Copy에 대한 참조 레일의 빠른 작업 {#refraillc}
 
 Live Copy 자산 또는 폴더의 경우 다음 정보를 확인하고 참조 레일에서 바로 다음 작업을 수행할 수 있습니다.
 
 * 소스 경로를 참조하십시오.
-* AEM 사용자 인터페이스에서 특정 Live Copy를 열거나 표시합니다.
+* 사용자 인터페이스에서 특정 Live Copy를 열거나 표시합니다. [!DNL Experience Manager]
 * 업데이트를 롤아웃합니다.
 
 Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 열고 참조를 **[!UICONTROL 클릭합니다]**. 또는 자산 또는 폴더를 선택하고 키보드 단축키를 `Alt + 4`사용합니다.
 
 ![선택한 Live Copy에 대한 참조 레일에서 사용할 수 있는 작업](assets/referencerail_livecopy.png)
 
-*그림:선택한 Live Copy에 대한 참조 레일에서 사용할 수 있는 작업*
+*그림:선택한 Live Copy에 대한 참조 레일에서 사용할 수 있는 작업.*
 
 ## 소스에서 Live Copy로 수정 내용 전달 {#rolloutsync}
 
@@ -207,7 +207,7 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 열고 참조를
 
 동기화 작업은 소스 수정 내용을 선택한 Live Copy로만 가져옵니다. 동기화 작업은 상속을 취소한 후 수행한 로컬 수정 사항을 존중하고 유지합니다. 로컬 수정 내용을 덮어쓰지 않고 취소된 상속이 다시 설정되지 않습니다. 세 가지 방법으로 동기화 작업을 시작할 수 있습니다.
 
-| AEM 인터페이스의 위치 | 사용 시기 및 이유 | 사용 방법 |
+| 인터페이스 [!DNL Experience Manager] 위치 | 사용 시기 및 이유 | 사용 방법 |
 |---|---|---|
 | [!UICONTROL 참조] 레일 | 소스를 이미 선택한 경우 신속하게 동기화할 수 있습니다. | 소스에 [대한 참조 레일의 빠른 작업 참조](#refrailsource) |
 | 속성 페이지의 [!UICONTROL 도구] 모음 | Live Copy 속성이 이미 열려 있으면 동기화를 시작합니다. | Live [Copy 동기화 참조](#synclc) |
@@ -249,7 +249,7 @@ Live Copy는 원본 소스를 만들 때 원본 소스의 복제본입니다. Li
 
 ## 라이브 관계 제거 {#detach}
 
-분리 작업을 사용하여 소스와 Live Copy 간의 관계를 완전히 제거할 수 있습니다. Live Copy가 분리된 후 독립 실행형 자산 또는 폴더가 됩니다. 분리 후 즉시 AEM 인터페이스에 새 자산으로 표시됩니다. Live Copy를 소스에서 분리하려면 다음 단계를 따르십시오.
+분리 작업을 사용하여 소스와 Live Copy 간의 관계를 완전히 제거할 수 있습니다. Live Copy가 분리된 후 독립 실행형 자산 또는 폴더가 됩니다. 분리 즉시 인터페이스에 새 자산으로 표시됩니다. [!DNL Experience Manager] Live Copy를 소스에서 분리하려면 다음 단계를 따르십시오.
 
 1. Live Copy 자산 또는 폴더를 선택합니다. Click **[!UICONTROL Properties]** from the toolbar. 또는 키보드 단축키를 `p`사용합니다.
 
@@ -267,7 +267,7 @@ Live Copy는 원본 소스를 만들 때 원본 소스의 복제본입니다. Li
 
 ## Live Copy 폴더의 많은 에셋에 대한 작업 수행 {#bulkactions}
 
-하나의 Live Copy 폴더에 여러 개의 자산이 있는 경우 각 자산에 대해 작업을 시작하는 것은 지루할 수 있습니다. Live Copy 콘솔에서 여러 자산에 대한 기본 작업을 신속하게 시작할 수 있습니다. 위의 메서드는 개별 자산에 대해 계속 작동합니다.
+하나의 Live Copy 폴더에 여러 개의 자산이 있는 경우 각 자산에 대해 작업을 시작하는 것은 지루할 수 있습니다. Live Copy 콘솔에서 많은 자산에 대한 기본 작업을 신속하게 시작할 [!UICONTROL 수 있습니다]. 위의 메서드는 개별 자산에 대해 계속 작동합니다.
 
 1. 소스 폴더를 선택합니다. Click **[!UICONTROL Properties]** from the toolbar. 또는 키보드 단축키를 `p`사용합니다.
 1. Live **[!UICONTROL Copy 소스를 클릭합니다]**. 콘솔을 열려면 Live Copy **[!UICONTROL 개요를 클릭합니다]**.
@@ -275,11 +275,11 @@ Live Copy는 원본 소스를 만들 때 원본 소스의 복제본입니다. Li
 
    ![Live Copy 개요 콘솔에서 Live Copy 폴더의 많은 에셋을 손쉽게 업데이트](assets/livecopyconsole_update_many_assets.png)
 
-   *그림:Live Copy 개요 콘솔에서 Live Copy 폴더의 많은 에셋을 손쉽게 업데이트*
+   *그림:Live Copy 개요 콘솔에서 Live Copy 폴더의 많은[!UICONTROL 에셋을 손쉽게 업데이트할 수]있습니다.*
 
-## 자산에 대한 MSM 확장 {#extendapi}
+## MSM 확장 [!DNL Assets]{#extendapi}
 
-AEM에서는 MSM Java API를 사용하여 기능을 확장할 수 있습니다. 자산의 경우 확장자는 MSM for Site와 동일하게 작동합니다. 자세한 내용은 MSM [확장](/help/sites-developing/extending-msm.md) 및 특정 작업에 대한 자세한 내용은 다음을 참조하십시오.
+[!DNL Experience Manager] msm Java API를 사용하여 기능을 확장할 수 있습니다. 예를 [!DNL Assets]들어 확장 기능은 MSM에서 작동하는 것과 동일하게 작동합니다 [!DNL Sites]. 자세한 내용은 MSM [확장](/help/sites-developing/extending-msm.md) 및 특정 작업에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [API 개요](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
 * [새 동기화 작업 만들기](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
@@ -288,14 +288,14 @@ AEM에서는 MSM Java API를 사용하여 기능을 확장할 수 있습니다. 
 
 >[!NOTE]
 >
->* MSM for Site의 블루프린트는 MSM의 Live Copy 소스 for Assets라고 합니다.
->* 사이트 만들기 마법사의 장 제거 단계는 MSM for Assets에서 지원되지 않습니다.
->* 페이지 속성(터치가 활성화된 UI)에서 MSM 잠금 구성은 자산의 MSM에서 지원되지 않습니다.
+>* MSM의 Blueprint [!DNL Sites] 를 MSM의 Live Copy 소스라고 합니다. [!DNL Assets]
+>* MSM에서 사이트 만들기 마법사에서 장 단계를 제거하는 것은 지원되지 않습니다 [!DNL Assets].
+>* 페이지 속성(터치 활성화 UI)에서 MSM 잠금 구성은 MSM에서 지원되지 않습니다 [!DNL Assets].
 
 
 ## 자산 관리 작업이 Live Copy에 미치는 영향 {#manageassets}
 
-Live Copy와 소스는 디지털 자산으로서 어느 정도 관리할 수 있는 자산 또는 폴더입니다. AEM 파섹
+Live Copy와 소스는 디지털 자산으로서 어느 정도 관리할 수 있는 자산 또는 폴더입니다. 의 일부 에셋 관리 작업은 Live Copy에 특정 영향을 [!DNL Experience Manager] 줍니다.
 
 * Live Copy를 복사하면 첫 번째 Live Copy와 동일한 소스의 Live Copy 에셋이 만들어집니다.
 * 소스 또는 Live Copy를 이동하면 라이브 관계가 유지됩니다.
@@ -304,17 +304,17 @@ Live Copy와 소스는 디지털 자산으로서 어느 정도 관리할 수 있
 * 소스 폴더의 경우 검토 작업을 만드는 옵션을 사용할 수 있습니다.
 * 목록 보기 및 열 보기에서 자산 목록을 볼 때 Live Copy 자산 또는 폴더에 대해 &#39;live copy&#39;가 표시됩니다. 이렇게 하면 폴더에서 Live Copy를 쉽게 식별할 수 있습니다.
 
-## 자산 및 사이트에 대한 MSM 비교 {#comparison}
+## MSM의 MSM [!DNL Assets] 비교 및 [!DNL Sites]{#comparison}
 
-더 많은 시나리오에서, MSM for Assets는 MSM for Sites 기능과 일치합니다. 다음과 같은 주요 차이점이 있습니다.
+더 많은 시나리오의 경우 MSM이 MSM for Sites 기능과 [!DNL Assets] 일치합니다. 다음과 같은 주요 차이점이 있습니다.
 
-* MSM for Site의 블루프린트는 MSM의 Live Copy 소스 for Assets라고 합니다.
-* 사이트에서는 블루프린트와 Live Copy를 비교할 수 있지만 Assets에서는 소스를 Live Copy와 비교할 수 없습니다.
-* 자산에서는 Live Copy를 편집할 수 없습니다.
-* 사이트에는 대개 하위 항목이 있지만 자산은 그렇지 않습니다. 개별 자산의 Live Copy를 만들 때 하위 항목을 포함하거나 제외하는 옵션이 없습니다.
-* 사이트 만들기 마법사의 장 제거 단계는 MSM for Assets에서 지원되지 않습니다.
-* 페이지 속성(터치가 활성화된 UI)에서 MSM 잠금 구성은 자산의 MSM에서 지원되지 않습니다.
-* MSM for Assets의 경우 표준 **[!UICONTROL 롤아웃 구성만]**&#x200B;사용하십시오. MSM for Assets에서는 다른 롤아웃 구성을 사용할 수 없습니다.
+* MSM의 Blueprint [!DNL Sites] 를 MSM의 Live Copy 소스라고 합니다. [!DNL Assets]
+* 사이트에서 블루프린트와 Live Copy를 비교할 수는 있지만 소스를 Live Copy와 [!DNL Assets] 비교할 수는 없습니다.
+* Live Copy는 에서 편집할 수 없습니다 [!DNL Assets].
+* 사이트에는 보통 아이들이 있지만 [!DNL Assets] 그렇지 않습니다. 개별 자산의 Live Copy를 만들 때 하위 항목을 포함하거나 제외하는 옵션이 없습니다.
+* MSM에서 사이트 만들기 마법사에서 장 단계를 제거하는 것은 지원되지 않습니다 [!DNL Assets].
+* MSM의 경우 페이지 속성(터치가 활성화된 UI)에서 MSM 잠금 구성이 지원되지 않습니다 [!DNL Assets].
+* MSM의 경우 [!DNL Assets]표준 롤아웃 **[!UICONTROL 구성만]**&#x200B;사용하십시오. 다른 롤아웃 구성은 MSM에서 사용할 수 없습니다 [!DNL Assets].
 
 ## Best practices {#bestpractices}
 
@@ -322,8 +322,8 @@ MSM에 대한 일부 우수 사례는 다음과 같습니다.
 
 * 구현을 시작하기 전에 자산 및 컨텐츠 흐름의 상위-하위 관계를 계획합니다.
 
-## MSM for Assets의 제한 및 알려진 문제 {#limitations}
+## MSM의 제한 및 알려진 문제 [!DNL Assets]{#limitations}
 
-다음은 자산에 대한 MSM의 제한 사항입니다.
+다음은 에 대한 MSM의 제한 [!DNL Assets]사항입니다.
 
 * 사용 사례에는 컨텐츠 조각(CF)이 지원되지 않습니다. Live Copy를 만들려고 하면 CF가 관계 없이 그대로 복사됩니다. 복사된 CF는 시간 내 스냅샷이며 원본 CF가 업데이트될 때 업데이트되지 않습니다.
