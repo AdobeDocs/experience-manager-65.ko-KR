@@ -3,7 +3,7 @@ title: 자산을 처리하여 업무 처리 과정 수행, 감사, 규정 준수
 description: 자산 처리를 통해 형식을 변환하고, 변환을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
 
 ![일부 기본 워크플로우](assets/aem-default-workflows.png)
 
-*그림:일부 기본 워크플로우는[!DNL Experience Manager]*
+*그림:에서 사용할 수 있는 기본 워크플로우 중 일부를[!DNL Experience Manager]참조하십시오.*
 
-## 워크플로우를 적용하여 에셋 처리 {#applying-workflows-to-assets}
+## Apply workflows to process assets {#applying-workflows-to-assets}
 
 디지털 자산에 워크플로우를 적용하는 것은 웹 사이트 페이지와 동일합니다. 워크플로우를 만들고 사용하는 방법에 대한 전체 지침은 워크플로우 [시작을 참조하십시오](/help/sites-authoring/workflows-participating.md).
 
