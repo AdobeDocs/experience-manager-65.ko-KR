@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -21,13 +21,13 @@ AEM Communities의 번역 기능은 SCF( [소셜 구성 요소 프레임워크) 
 
 UGC의 번역을 통해 사이트 방문자와 회원은 언어 장벽을 제거하여 글로벌 커뮤니티를 경험할 수 있습니다.
 
-예를 들어,
+예를 들어 다음과 같이 가정합니다.
 
-* 프랑스 출신의 한 회원이 국제 요리 웹사이트에서 프랑스어로 된 요리법을 커뮤니티 포럼에 게시했다
-* 일본의 또 다른 회원은 번역 기능을 사용하여 프랑스어를 일본어로 번역하는 방법을 트리거합니다
-* 이 요리법을 일본어로 읽은 후, 일본의 한 멤버는 일본어로 코멘트를 올렸다
-* 프랑스의 구성원은 번역 기능을 사용하여 일본어 주석을 프랑스어로 번역합니다
-* 글로벌 커뮤니케이션!
+* 프랑스 출신의 한 회원이 국제 요리 웹사이트에서 프랑스어로 된 요리법을 커뮤니티 포럼에 게시했다.
+* 이 요리법의 또 다른 일본인은 번역법을 사용하여 프랑스어에서 일본어로 번역되는 요리법을 사용한다.
+* 이 요리법을 일본어로 읽은 후, 일본의 한 멤버는 일본어로 댓글을 올렸다.
+* 프랑스 출신 회원은 번역 기능을 사용하여 일본어 주석을 프랑스어로 번역합니다.
+* 글로벌 커뮤니케이션
 
 ## 개요 {#overview}
 
@@ -49,6 +49,7 @@ AEM Communities는 몇 가지 언어로 [기본 번역 서비스를](../../help/
 >
 >프로덕션 시스템의 경우 라이선스 번역 서비스가 필요합니다. 라이센스가 없는 경우 기본 번역 서비스를 [해제해야](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors)합니다.
 
+
 ## UGC의 전역 번역 {#global-translation-of-ugc}
 
 웹 사이트에 여러 [언어 복사본이](../../help/sites-administering/tc-prep.md)있는 경우, 기본 번역 서비스는 UGC가 동일한 구성 요소(구성 요소를 포함하는 페이지의 언어 사본)에 의해 생성된 경우처럼 한 사이트에 입력된 UGC가 다른 사이트에 입력된 UGC와 관련이 있을 수 있음을 인식하지 못합니다.
@@ -67,6 +68,7 @@ AEM Communities는 몇 가지 언어로 [기본 번역 서비스를](../../help/
 >
 >언어별 컨텐츠를 글로벌 공유 스토어로 이동하거나 병합하기 위한 마이그레이션 도구는 없습니다.
 
+
 ### 번역 통합 구성 {#translation-integration-configuration}
 
 번역 서비스 커넥터를 작성자 인스턴스의 웹 사이트와 통합하는 새로운 번역 통합을 만들려면 다음을 수행하십시오.
@@ -79,11 +81,11 @@ AEM Communities는 몇 가지 언어로 [기본 번역 서비스를](../../help/
 * 클라우드 **[!UICONTROL 서비스 선택]**
 * 아래로 스크롤하여 **[!UICONTROL 번역 통합]**
 
-![chlimage_1-65](assets/chlimage_1-65.png)
+   ![chlimage_1-65](assets/chlimage_1-65.png)
 
 * 구성 **[!UICONTROL 표시 선택]**
 
-![chlimage_1-66](assets/chlimage_1-66.png)
+   ![chlimage_1-66](assets/chlimage_1-66.png)
 
 * 사용 가능한 구성 옆에 `[+]` 있는 **** 아이콘을 선택하여 새 구성을 만듭니다.
 
@@ -91,11 +93,17 @@ AEM Communities는 몇 가지 언어로 [기본 번역 서비스를](../../help/
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-* **[!UICONTROL 상위 구성]**(필수) 일반적으로 기본값으로 둡니다. 기본값은 `/etc/cloudservices/translation`입니다.
+* **[!UICONTROL 상위 구성]**
 
-* **[!UICONTROL 제목]**(필수) 선택한 표시 제목을 입력합니다. 기본값이 없습니다.
+   (필수) 일반적으로 기본값으로 둡니다. 기본값은 `/etc/cloudservices/translation`입니다.
 
-* **[!UICONTROL 이름]**(선택 사항) 구성 이름을 입력합니다. 기본값은 제목을 기반으로 하는 노드 이름입니다.
+* **[!UICONTROL 제목]**
+
+   (필수) 선택한 표시 제목을 입력합니다. 기본값이 없습니다.
+
+* **[!UICONTROL 이름]**
+
+   (선택 사항) 구성 이름을 입력합니다. 기본값은 제목을 기반으로 하는 노드 이름입니다.
 
 * **[!UICONTROL 만들기]**&#x200B;를 선택합니다
 
@@ -106,12 +114,13 @@ AEM Communities는 몇 가지 언어로 [기본 번역 서비스를](../../help/
 자세한 지침은 번역 [통합 구성 만들기를 참조하십시오.](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
 * **[!UICONTROL 사이트]** 탭:기본값으로 둘 수 있습니다.
+
 * **[!UICONTROL 커뮤니티]** 탭:
    * **[!UICONTROL 번역]**&#x200B;공급자 드롭다운 목록에서 번역 공급자를 선택합니다. 기본값은 `microsoft`시험버전 서비스입니다.
 
    * **[!UICONTROL 컨텐츠]**&#x200B;카테고리 번역되는 컨텐츠를 설명하는 카테고리를 선택합니다. 기본값은 `General.`
 
-   * ****&#x200B;로케일 선택...(선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화로 표시됩니다. 규칙에 따라 웹 사이트의 [기본 언어에](sites-console.md#translation) 대한 로케일을 선택합니다. [선택] `No Common Store` 하면 글로벌 번역이 비활성화됩니다. 기본적으로 글로벌 번역은 비활성화됩니다.
+   * **[!UICONTROL 로케일 선택...]**(선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화로 표시됩니다. 규칙에 따라 웹 사이트의 [기본 언어에](sites-console.md#translation) 대한 로케일을 선택합니다. [선택] `No Common Store` 하면 글로벌 번역이 비활성화됩니다. 기본적으로 글로벌 번역은 비활성화됩니다.
 
 * **[!UICONTROL 자산]** 탭:기본값으로 둘 수 있습니다.
 * 확인 **[!UICONTROL 선택]**
@@ -131,6 +140,7 @@ AEM Communities는 몇 가지 언어로 [기본 번역 서비스를](../../help/
 >기본 언어는 사이트 방문자가 로그인하고 언어 기본 설정을 지정한 경우 사용자 프로필에 설정된 언어 기본 설정입니다.
 >
 >사이트 방문자가 익명으로 방문하거나 프로필에 언어 기본 설정을 지정하지 않은 경우 기본 언어는 페이지 템플릿의 기본 언어입니다.
+
 
 ### 사용자 환경 설정 {#user-preference}
 
