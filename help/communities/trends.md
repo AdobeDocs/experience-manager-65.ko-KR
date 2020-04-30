@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
-# 활동 트렌드{#activity-trends}
+# 활동 트렌드 {#activity-trends}
 
 ## 소개 {#introduction}
 
@@ -24,9 +24,9 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 이 문서에서는 다음 사항에 대해 설명합니다.
 
-* `Community Activity List` 커뮤니티 사이트에 [구성 요소 추가](/help/communities/overview.md#community-sites)
+* `Community Activity List` 커뮤니티 사이트에 [](/help/communities/overview.md#community-sites)구성 요소 추가
 
-* 구성 요소의 구성 `Community Activity List` 설정
+* 구성 요소에 대한 구성 `Community Activity List` 설정입니다.
 
 ### 요구 사항 {#requirement}
 
@@ -54,7 +54,7 @@ Adobe Analytics에 대한 `Community Activity List` 데이터는 커뮤니티 �
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-**주석 **탭 아래에서 업로드된 파일에 대한 댓글이 표시되는 여부와 방법을 지정합니다.
+[ **주석** ] 탭에서 업로드된 파일에 대한 댓글이 표시되는 여부와 방법을 지정합니다.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -62,7 +62,7 @@ Adobe Analytics에 대한 `Community Activity List` 데이터는 커뮤니티 �
 
    커뮤니티 구성원과 관련된 데이터를 표시할지 또는 UGC(사용자 생성 콘텐츠)에 데이터를 표시할지 여부를 지정합니다.
 
-   선택 항목
+   다음 중에서 선택:
 
    * `Members`
    * `Content`
@@ -107,7 +107,7 @@ Adobe Analytics에 대한 `Community Activity List` 데이터는 커뮤니티 �
 
 * **구성원 수 집계**
 
-   선택 해제(해제)되면 최상위 게시물만 카운트됩니다. 예를 들어, 컨텍스트가 루트 페이지(기본값)인 경우 루트 페이지에 컨텐츠를 게시할 수 `Activity Type`있는 기능이 없으므로 `Posts`의 활동은 표시되지 않습니다. 이 확인란을 선택하면 모든 하위 페이지의 카운트가 포함됩니다.
+   선택 해제(해제)되면 최상위 게시물만 카운트됩니다. 예를 들어, 컨텍스트가 루트 페이지(기본값)인 경우 루트 페이지에 컨텐츠를 게시할 수 있는 기능이 없으므로 `Activity Type` 의 `Posts` 활동은 표시되지 않습니다. 이 확인란을 선택하면 모든 하위 페이지의 카운트가 포함됩니다.
 기본값은 선택되어 있습니다.
 
 ### 4개의 구성 요소가 있는 예제 페이지 {#example-page-with-components}
