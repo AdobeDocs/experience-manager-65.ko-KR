@@ -3,7 +3,7 @@ title: 디지털 자산 권한 관리
 description: AEM 파섹
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -89,7 +89,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
    >[!NOTE]
    >
-   >자산 생성자(AEM 자산에 특정 자산을 업로드하는 사람)만 자산이 만료되면 이메일을 받습니다. 전체 [AEM](/help/sites-administering/notification.md) 수준에서 이메일 알림 구성에 대한 자세한 내용은 이메일 알림 구성을 참조하십시오.
+   >자산 생성자(특정 자산을 AEM 자산에 업로드하는 사람)만 자산이 만료되면 이메일을 받습니다. 전체 [AEM](/help/sites-administering/notification.md) 수준에서 이메일 알림 구성에 대한 자세한 내용은 이메일 알림 구성을 참조하십시오.
 
 1. 이전 **[!UICONTROL 알림(초]** 단위) 필드에서 만료 관련 알림을 받을 때 자산이 만료되기 전 시간(초)을 지정합니다. 관리자 또는 자산 작성자는 자산이 만료되기 전에 지정된 시간 후에 만료될 것임을 알려주는 메시지를 받게 됩니다.
 
@@ -123,7 +123,7 @@ AEM(Adobe Experience Manager) 자산의 자산 콘솔은 자산에 대한 다양
    ![만료일 필드에서 자산 만료 날짜 및 시간 설정](assets/asset-properties-advanced-tab.png)
 
 
-   *그림:자산 속성의 고급 탭을 사용하여 에셋 만료 설정*
+   *그림:자산[!UICONTROL 속성]페이지의 고급탭을 사용하여 에셋 만료를 설정합니다.*
 
 1. 저장을 **[!UICONTROL 클릭한]** 다음 **[!UICONTROL 닫기를 클릭하여]** 자산 콘솔을 표시합니다.
 1. 자산에 대한 게시 상태는 카드 보기에서 자산 축소판의 아래쪽에 있는 만료된 상태를 나타냅니다. 목록 보기에서는 자산의 상태가 만료됨으로 **[!UICONTROL 표시됩니다]**.
