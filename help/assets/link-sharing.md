@@ -3,7 +3,7 @@ title: 공유 에셋에 대한 URL 생성
 description: 이 문서에서는 AEM 자산 내에서 자산, 폴더 및 컬렉션을 외부 당사자에게 URL로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -31,7 +31,7 @@ AEM(Adobe Experience Manager) 자산을 사용하면 자산, 폴더 및 컬렉�
 
    ![링크 공유 대화 상자](assets/Link-sharing-dialog-box.png)
 
-   *그림:링크 공유 대화 상자*
+   *그림:에셋을 링크로 공유하는 대화 상자*
 
    또는 이 절차의 3-7단계를 수행하여 이메일 수신자를 추가하고 링크의 만료 시간을 구성한 다음 대화 상자에서 보냅니다.
 
@@ -47,12 +47,9 @@ AEM(Adobe Experience Manager) 자산을 사용하면 자산, 폴더 및 컬렉�
    >[!NOTE]
    공유 에셋이 다른 위치로 이동하면 해당 링크가 작동하지 않습니다. 링크를 다시 만들고 사용자와 다시 공유합니다.
 
-1. 웹 콘솔에서 Day CQ Link **[!UICONTROL Externalizer]** 구성을 열고 도메인 **[!UICONTROL 필드에서 다음]** 속성을 수정하여각각에 대해 언급된 값을 사용합니다.
+1. AEM 인터페이스에서 도구 > **[!UICONTROL 작업]** > **[!UICONTROL 웹]** 콘솔에 **[!UICONTROL 액세스합니다]**.
 
-   * 로컬
-   * 작성자
-   * 페이지를
-   로컬 및 작성자 속성의 경우 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 단일 AEM 작성자 인스턴스를 실행하는 경우 로컬 및 작성자 속성은 모두 동일한 값을 갖습니다. 게시의 경우 게시 인스턴스의 URL을 제공합니다.
+1. 요일 **[!UICONTROL CQ 링크 외부라이저]** 구성을 열고 도메인 **[!UICONTROL 필드에서 다음]** 속성을 `local`, `author`및 에 대해 언급된 값으로 수정합니다 `publish`. 및 `local` `author` 속성에 대해 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 단일 Experience Manager 작성자 인스턴스를 실행하는 경우 `local` 및 `author` 속성 모두 동일한 값을 갖습니다. 예를 `publish`들어 Experience Manager 게시 인스턴스에 대한 URL을 제공합니다.
 
 1. [링크 공유] **[!UICONTROL 대화 상자의]** 이메일 주소 상자에 링크를 공유할 사용자의 이메일 ID를 입력합니다. 여러 사용자와 링크를 공유할 수도 있습니다.
 
@@ -62,13 +59,15 @@ AEM(Adobe Experience Manager) 자산을 사용하면 자산, 폴더 및 컬렉�
 
    ![링크 공유 대화 상자에서 바로 에셋에 대한 링크 공유](assets/Asset-Sharing-LinkShareDialog.png)
 
-   링크 공유 대화 상자에서 바로 에셋에 대한 링크 공유
+   *그림:링크 공유 대화 상자에서 바로 에셋에 대한[!UICONTROL 링크를 공유할 수]있습니다.*
 
    >[!NOTE]
-   조직의 구성원이 아닌 사용자의 이메일 ID를 입력하면 &quot;외부 사용자&quot;라는 단어 앞에 사용자의 이메일 ID가 붙습니다.
+   조직의 구성원이 아닌 사용자의 이메일 ID를 입력하면 외부 [!UICONTROL 사용자라는] 단어가 사용자의 이메일 ID로 접두사로 추가됩니다.
 
-1. 제목 **[!UICONTROL 상자에]** 공유할 자산의 제목을 입력합니다.
-1. 메시지 **[!UICONTROL 상자에]** 선택적 메시지를 입력합니다.
+1. 제목 **[!UICONTROL 필드에]** 공유할 자산의 제목을 입력합니다.
+
+1. 메시지 **[!UICONTROL 필드에]** 선택적 메시지를 입력합니다.
+
 1. 만료 **[!UICONTROL 필드에서]** 날짜 선택기를 사용하여 링크의 만료 날짜 및 시간을 지정합니다. 기본적으로 만료 날짜는 링크를 공유하는 날짜로부터 일주일 동안 설정됩니다.
 
    ![공유 링크의 만료 날짜 설정](assets/Set-shared-link-expiration.png)
@@ -102,7 +101,7 @@ AEM(Adobe Experience Manager) 자산을 사용하면 자산, 폴더 및 컬렉�
 
 ## 일 CQ 메일 서비스 구성 {#configmailservice}
 
-1. Adobe Experience Manager 홈 페이지에서 도구 > 작업 **** > **[!UICONTROL 웹]** 콘솔로 **[!UICONTROL 이동합니다]**.
+1. Experience Manager 홈 페이지에서 도구 > 작업 **** > **[!UICONTROL 웹]** 콘솔로 **[!UICONTROL 이동합니다]**.
 1. 서비스 목록에서 Day CQ Mail **[!UICONTROL Service를 찾습니다]**.
 1. 서비스 **[!UICONTROL 옆에]** 있는 편집을 누르고, 이름에 대해 **[!UICONTROL 명시된 세부 사항과 함께 Day CQ Mail Service에 대해]** 다음 매개 변수를 구성합니다.
 
