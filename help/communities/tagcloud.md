@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -55,21 +55,29 @@ See [Administering Tags](../../help/sites-administering/tags.md) for information
    * `All tags`
    기본값은 `From page and child pages`입니다. 여기서 &quot;page&quot;는 **아래의 페이지** 설정을 나타냅니다.
 
-* **[!UICONTROL 페이지]**(그렇지 않은 경우 `All tags)` 필수) 페이지의 UGC 경로입니다. 기본값은 현재 페이지를 비워 두면 됩니다.
+* **[!UICONTROL 페이지]**
 
-* **[!UICONTROL 태그에]**&#x200B;링크 없음 이 확인란을 선택하면 태그가 태그 클라우드에 일반 텍스트로 표시됩니다. 이 옵션을 선택하지 않으면 태그가 적용되는 모든 컨텐츠를 검색하는 활성 링크로 태그가 표시됩니다. 기본값은 선택 취소되어 있으며 검색 **[!UICONTROL 결과 경로를]** 설정해야 합니다.
+   (그렇지 않은 경우 `All tags)` 필수) 페이지에 대한 UGC 경로입니다. 기본값은 현재 페이지를 비워 두면 됩니다.
 
-* **[!UICONTROL 검색 결과]**&#x200B;경로페이지 설정에서 지정한 UGC 경로를 포함하는 `Search Result` 구성 요소가 배치된 페이지의 **경로입니다** .
+* **[!UICONTROL 태그에 링크 없음]**
+
+   이 확인란을 선택하면 태그가 일반 텍스트로 태그 클라우드에 표시됩니다. 이 옵션을 선택하지 않으면 태그가 적용되는 모든 컨텐츠를 검색하는 활성 링크로 태그가 표시됩니다. 기본값은 선택 취소되어 있으며 검색 **[!UICONTROL 결과 경로를]** 설정해야 합니다.
+
+* **[!UICONTROL 검색 결과 경로]**
+
+   페이지 설정에서 지정한 UGC 경로를 포함하는 UGC를 참조하도록 구성된 `Search Result` 구성 요소가 배치된 페이지의 **경로입니다** .
 
 ## 소셜 태그 클라우드 표시 변경 {#change-display-of-social-tag-cloud}
 
-소셜 태그 클라우드의 표시를 편집하려면 **디자인**&#x200B;모드를 [입력하고](../../help/sites-authoring/default-components-designmode.md) 가져온 구성 요소를 두 번 클릭하여 `Social Tag Cloud` 추가 탭이 있는 대화 상자를 엽니다.
+소셜 태그 클라우드의 표시를 편집하려면 **디자인**&#x200B;모드를 [입력하고](../../help/sites-authoring/default-components-designmode.md) 가져온 `Social Tag Cloud` 구성 요소를 두 번 클릭하여 추가 탭이 있는 대화 상자를 엽니다.
 
 소셜 **[!UICONTROL 태그 클라우드(디자인)]** 탭을 사용하여 태그를 표시하는 방법을 지정합니다. 태그는 단순 태그, 기본 네임스페이스의 단일 단어 또는 계층적 분류법일 수 있습니다.
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
-* **[!UICONTROL 전체 제목 경로]**&#x200B;표시 이 확인란을 선택하면 적용된 각 태그의 상위 태그 및 네임스페이스에 대한 제목이 표시됩니다.
+* **[!UICONTROL 전체 제목 경로 표시]**
+
+   이 확인란을 선택하면 상위 태그의 제목과 적용된 각 태그의 네임스페이스가 표시됩니다.
 
    예:
 
@@ -79,23 +87,31 @@ See [Administering Tags](../../help/sites-administering/tags.md) for information
 
    기본값은 선택 취소입니다.
 
-* **[!UICONTROL 리프 태그만]**&#x200B;표시 이 확인란을 선택하면 다른 태그가 없는 적용된 태그만 표시됩니다.
+* **[!UICONTROL 리프 태그만 표시]**
 
-   예를 들어,
+   이 확인란을 선택하면 다른 태그가 없는 적용된 태그만 표시됩니다.
+
+   예를 들어 다음과 같은 TagID가 주어집니다.
 
    `Geometrixx Media: Gadgets / Cars`
 
-   적용할 수 있는 태그는 다음과 같습니다. `Geometrixx Media (the namespace)`, `Gadgets`및 `Cars`
+   적용할 수 있는 태그는 다음과 같습니다.
+
+   `Geometrixx Media (the namespace)`, `Gadgets`및 `Cars`
 
    * 선택:적용된 경우에만 `Cars` 표시됩니다.
-   * 선택 취소: `Geometrixx Media` 및 `Gadgets`를 `Cars` 포함하여
+   * 선택 취소:적용되는 경우 `Geometrixx Media``Gadgets`및 `Cars` 표시됩니다.
    단순 태그는 리프 태그입니다.
 
    기본값은 선택 취소입니다.
 
-* **[!UICONTROL 링크]**&#x200B;템플릿기본 템플릿이 아닌 구성 요소 편집 대화 상자를 통해 링크가 활성화될 때 태그 클라우드에 링크를 표시하는 데 사용되는 템플릿입니다.
+* **[!UICONTROL 링크 템플릿]**
 
-* **[!UICONTROL 모든 태그에]**&#x200B;동일한 크기 이 확인란을 선택하면 태그 클라우드의 모든 단어가 동일하게 스타일이 지정됩니다. 이 확인란을 선택하지 않으면 단어의 용도에 따라 다르게 스타일이 지정됩니다. 기본값은 선택 취소입니다.
+   구성 요소 편집 대화 상자를 통해 링크가 활성화될 때 태그 클라우드에 링크를 표시하는 데 사용되는 기본 템플릿이 아닌 템플릿입니다.
+
+* **[!UICONTROL 모든 태그에 동일한 크기 사용]**
+
+   이 확인란을 선택하면 태그 클라우드의 모든 단어가 동일하게 스타일이 지정됩니다. 이 확인란을 선택하지 않으면 단어의 용도에 따라 다르게 스타일이 지정됩니다. 기본값은 선택 취소입니다.
 
 ## 추가 정보 {#additional-information}
 
