@@ -3,7 +3,7 @@ title: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 description: Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
@@ -11,11 +11,11 @@ source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 # Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (6.5)를 사용하면 분기별 서비스 팩 릴리스를 통해 새로운 기능과 지속적으로 향상된 기능을 이용할 수 있습니다. 이 방법을 사용하면 혁신적인 기능을 손쉽게 채택할 수 있습니다.
+Adobe Experience Manager(6.5)를 사용하면 분기별 서비스 팩 릴리스를 통해 새로운 기능과 지속적으로 향상된 기능을 이용할 수 있습니다. 이 방법을 사용하면 혁신적인 기능을 쉽게 채택할 수 있습니다.
 
-Experience Manager 서비스 팩 4(6.5.4.0)는 중요한 업데이트입니다. 여기에는 2019년 4월 AEM 6.5 릴리스 이후 릴리스된 모든 새로운 기능, 주요 고객이 요청한 개선 사항, 성능, 안정성 및 보안 개선 사항이 포함됩니다. AEM 6.5 이상 릴리스에 서비스 팩을 설치할 수 있습니다.
+Experience Manager 서비스 팩 4(6.5.4.0)는 중요한 업데이트입니다. 이 팩에는 2019년 4월 AEM 6.5 릴리스 이후 출시된 모든 새로운 기능, 고객이 요청한 주요 개선 사항, 성능, 안정성 및 보안 개선 사항이 포함됩니다. AEM 6.5 이상 릴리스에 서비스 팩을 설치할 수 있습니다.
 
-이 문서에서는 최신 6.5 서비스 팩에 포함된 기능, 이전 6.5 서비스 팩에 포함된 [주요 기능](#key-features-previous-service-packs)및 Experience Manager 6.5.3.0 이후 [주요 릴리스 중 일부를](#key-features-sice-sp3)소개합니다.
+이 문서에서는 최신 6.5 서비스 팩에 포함된 기능, [이전 6.5 서비스 팩에 포함된 주요 기능](#key-features-previous-service-packs) 및 [Experience Manager 6.5.3.0 이후 주요 릴리스](#key-features-sice-sp3) 중 일부를 소개합니다.
 
 ## AEM Sites {#aem-sites}
 
@@ -60,7 +60,7 @@ Experience Manager Assets은 다음과 같은 액세스 가능성이 개선되�
 
 * 현재 선택된 태그를 제거하기 위한 버튼의 `X` 기호가 선택한 태그의 수와 함께 화면 판독기에 표시됩니다.
 
-## AEM 양식 {#aem-forms}
+## AEM Forms {#aem-forms}
 
 ### AEM Forms 워크플로우에서 인쇄 가능한 출력 생성 {#generate-printable-output}
 
@@ -98,13 +98,13 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 
 ## 이전 AEM 6.5 서비스 팩의 주요 기능 {#key-features-previous-service-packs}
 
-### Smart Imaging for Dynamic Media {#smart-imaging}
+### Dynamic Media용 스마트 이미징 {#smart-imaging}
 
 스마트 이미징은 각 사용자의 고유한 보기 특성을 사용하여 환경에 맞게 최적화된 적합한 이미지를 자동으로 제공하므로 향상된 성능과 참여를 제공합니다. 스마트 이미징은 기존 이미지 사전 설정에서 작동하며 마지막 전달 순간에 인텔리전스를 사용하여 브라우저 또는 네트워크 연결 속도에 따라 이미지 파일 크기를 더 줄입니다. [스마트 이미징](../assets/imaging-faq.md)을 참조하십시오.
 
-### 다이내믹 미디어용 비디오 프로파일의 스마트 자르기(6.5.3.0) {#smart-crop-video}
+### Dynamic Media용 비디오 프로필에서 스마트 자르기(6.5.3.0) {#smart-crop-video}
 
-비디오 프로파일에서 사용할 수 있는 고급 비디오 자르기(선택 사항) - Adobe Sensei의 인공 지능 기능을 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자를 수 있는 도구입니다. 비디오 [프로파일에서](../assets/video-profiles.md)스마트 자르기 사용을 참조하십시오.
+비디오 프로필에서 사용할 수 있는 선택적 기능인 비디오 스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자르는 도구입니다. [비디오 프로필에서 스마트 자르기 사용 정보](../assets/video-profiles.md)를 참조하십시오.
 
 ### AEM Assets 시각적 검색(6.5.2.0) {#visual-search}
 
