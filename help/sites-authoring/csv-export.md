@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
 
 ---
@@ -53,7 +53,7 @@ source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
 
 ![etc-01](assets/etc-01.png)
 
-The create **CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
+**CSV 보고서** 만들기 옵션은 **사이트** 콘솔(목록 보기)을 탐색할 때 사용할 수 있습니다. 이 옵션은 **만들기** 드롭다운 메뉴의 옵션입니다.
 
 ![etc-02](assets/etc-02.png)
 
