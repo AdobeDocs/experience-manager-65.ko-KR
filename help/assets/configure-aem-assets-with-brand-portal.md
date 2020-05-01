@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e5e918c0b971159bc99bdcf604c89439c2b08244
 
 ---
@@ -207,7 +207,7 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 >
 >IMS 구성은 하나만 있어야 합니다. IMS 구성을 여러 개 만들지 마십시오.
 >
->IMS 구성이 상태 확인을 통과하는지 확인합니다. 구성이 상태 검사를 통과하지 않으면 구성이 잘못되었습니다. 이를 삭제하고 유효한 새 구성을 만들어야 합니다.
+>IMS 구성이 상태 검사를 통과하는지 확인합니다. 구성이 상태 검사를 통과하지 않으면 구성이 잘못된 것입니다. 이 구성을 삭제하고 유효한 새 구성을 만들어야 합니다.
 
 
 ### 클라우드 서비스 구성 {#configure-the-cloud-service}
