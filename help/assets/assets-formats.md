@@ -3,7 +3,7 @@ title: 자산 지원 형식
 description: AEM 자산 및 Dynamic Media에서 지원하는 파일 형식 및 각 형식에 지원되는 기능의 목록입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 134530e6e4cabc31342fc3136ec3218ba5acea4a
+source-git-commit: 2b30ab18aa22352d7ece4617d22391759592fd19
 
 ---
 
@@ -42,7 +42,7 @@ AEM Assets를 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루
 
 병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
-## 다이내믹 미디어에서 지원되는 래스터 이미지 포맷(#supported-raster-image-formats-dynamic-media)
+## 다이내믹 미디어에서 지원되는 래스터 이미지 포맷 {#supported-raster-image-formats-dynamic-media}
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 표현물<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -67,7 +67,7 @@ AEM Assets를 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루
 
 * EPS 파일의 경우 PS-Adobe(PostScript Document Structuring Convention) 버전 3.0 이상에서 메타데이터 원본에 대한 지원이 지원됩니다.
 
-## Dynamic Media에서 지원되지 않는 래스터 이미지 형식(#unsupported-image-formats-dynamic-media)
+## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
 다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 포맷의 하위 유형에 대해 설명합니다.
 
@@ -168,7 +168,7 @@ DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migra
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-## Dynamic Media에서 지원되는 문서 포맷(#supported-document-formats-dynamic-media)
+## Dynamic Media에서 지원되는 문서 포맷 {#supported-document-formats-dynamic-media}
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 표현물<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
