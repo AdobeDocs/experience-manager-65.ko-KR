@@ -3,13 +3,13 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 작성 사용 안내서
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
 
 ---
 
 
-# AEM 6.5 Authoring User Guide {#authoring}
+# AEM 6.5 작성 사용 안내서 {#authoring}
 
 + [작성 사용 안내서 개요](home.md)
 + AEM 작성을 위한 필수 작업, 도구 및 개념 {#essentials}
