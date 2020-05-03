@@ -1,9 +1,9 @@
 ---
-title: 연결된 자산을 사용하여 [!DNL Adobe Experience Manager Sites] 제작 워크플로우에서 DAM 자산을 공유할 수 있습니다.
+title: 연결된 자산을 사용하여 [!DNL Adobe Experience Manager Sites] 제작 워크플로우에서 DAM 자산을 공유합니다.
 description: 다른 Experience Manager 사이트 배포에서 웹 페이지를 만들 때 원격 [!DNL Adobe Experience Manager Assets] 배포에서 사용할 수 있는 자산을 사용하십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 2cdcea028814b40fb178e63f583939df27a46cad
 
 ---
 
@@ -18,26 +18,26 @@ source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 When editing pages in Page Editor, the authors can seamlessly search, browse, and embed assets from a different [!DNL Experience Manager Assets] deployment. To do an [!DNL Experience Manager] administrator do a one-time integration of a local deployment of [!DNL Experience Manager Sites] with a different (remote) deployment of [!DNL Experience Manager Assets].
 
-For the [!DNL Sites] authors, the remote assets are available as read-only local assets. 이 기능은 한 번에 여러 개의 원격 자산을 원활하게 검색하고 사용할 수 있도록 지원합니다. 로컬 배포에서 많은 원격 자산을 한 번에 사용할 수 있도록 하려면 자산을 일괄적으로 마이그레이션하는 것이 좋습니다. Experience [Manager 자산 마이그레이션 안내서를](/help/assets/assets-migration-guide.md)참조하십시오.
+For the [!DNL Sites] authors, the remote assets are available as read-only local assets. 이 기능은 한 번에 여러 개의 원격 자산을 원활하게 검색하고 사용할 수 있도록 지원합니다. 로컬 배포에서 많은 원격 자산을 한 번에 사용할 수 있도록 하려면 자산을 일괄적으로 마이그레이션하는 것이 좋습니다. Experience [Manager 자산 마이그레이션 가이드를 참조하십시오](/help/assets/assets-migration-guide.md).
 
 ### 사전 요구 사항 및 지원되는 배포 {#prerequisites}
 
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자 각 배포에 적절한 사용자 그룹에 포함됩니다.
-* Adobe Experience Manager 배포 유형이 지원되는 기준 중 하나를 충족합니다. [!DNL Experience Manager] 6.5 [!DNL Assets] 는 클라우드 [!DNL Experience Manager] 서비스로 작동합니다. 자세한 내용은 Experience Manager [의 클라우드 서비스로 연결된 자산 기능을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Adobe Experience Manager 배포 유형이 지원되는 기준 중 하나를 충족합니다. [!DNL Experience Manager] 6.5 [!DNL Assets] 는 클라우드 서비스 [!DNL Experience Manager] 로 작동합니다. 자세한 내용은 Experience Manager [의 클라우드 서비스로 연결된 자산 기능을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Experience Manager Sites] 클라우드 서비스로 | AMS에서 Adobe Experience Manager 6.5 [!DNL Sites] 를 이용할 수 있습니다. | Experience Manager 6.5 [!DNL Sites] 온프레미스 |
+   |  | [!DNL Experience Manager Sites] 클라우드 서비스로 | AMS 기반의 Adobe Experience Manager 6.5 [!DNL Sites] . | Experience Manager 6.5 [!DNL Sites] 온프레미스 |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]클라우드 서비스로&#x200B;** | 지원됨 | 지원됨 | 지원됨 |
-   | **AMS에서 Adobe Experience Manager 6.5[!DNL Assets]를 이용할 수 있습니다.** | 지원됨 | 지원됨 | 지원됨 |
+   | **AMS 기반의 Adobe Experience Manager 6.5[!DNL Assets].** | 지원됨 | 지원됨 | 지원됨 |
    | **Experience Manager 6.5[!DNL Assets]온프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
 ### 지원되는 파일 형식 {#mimetypes}
 
 작성자는 콘텐츠 파인더에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용할 수 있습니다. 문서를 `Download` 구성 요소에 추가할 수 있고 이미지를 `Image` 구성 요소에 추가할 수 있습니다. Authors can also add the remote assets in any custom Experience Manager component that extends the default `Download` or `Image` components. 지원되는 형식 목록은 다음과 같습니다.
 
-* **이미지 형식**:이미지 구성 요소에서 지원하는 이미지 [형식은 연결된](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 자산에서 지원됩니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
+* **이미지 형식**: 이미지 구성 요소에서 지원하는 이미지 형식 [은 연결된](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 자산에서 지원됩니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
 * **문서 형식**: [연결된 자산에서 지원하는 문서 형식](assets-formats.md#supported-document-formats)을 참조하십시오.
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
@@ -46,12 +46,12 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 | 역할 | 범위 | 사용자 그룹 | 연습의 사용자 이름 | 요구 사항 |
 |---|---|---|---|---|
-| [!DNL Sites] administrator | 로컬 | Experience Manager 관리자 | `admin` | Experience Manager를 설정하고 원격 [!DNL Assets] 배포와의 통합을 구성합니다. |
-| DAM 사용자 | 로컬 | 작성 | `ksaner` | `/content/DAM/connectedassets/`에서 가져온 자산을 보고 복제하는 데 사용됩니다. |
-| [!DNL Sites] 작성자 | 로컬 | Author (with read access on the remote DAM and author access on local [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. 작성자는 로컬 웹 페이지에서 필요한 이미지를 사용하고 콘텐츠 파인더를 사용하여 원격 DAM에서 자산을 검색하고 찾아봅니다. `ksaner` DAM 사용자의 자격 증명이 사용됩니다. |
-| [!DNL Assets] administrator | 원격 | Experience Manager 관리자 | `admin` 원격 Experience Manager | CORS(원본 간 리소스 공유)를 구성합니다. |
-| DAM 사용자 | 원격 | 작성 | `ksaner` 원격 Experience Manager | 원격 Experience Manager 배포의 작성자 역할. 콘텐츠 파인더를 사용하여 연결된 자산에서 자산을 검색하고 찾아봅니다. |
-| DAM 배포자(기술 사용자) | 원격 | 패키지 빌더 및 사이트 작성자 | `ksaner` 원격 Experience Manager | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. 이 역할은 위의 두 `ksaner` 역할과 동일하지 않으며 다른 사용자 그룹에 속합니다. |
+| [!DNL Sites] administrator | 로컬 | Experience Manager `administrators` | `admin` | Experience Manager를 설정하고 원격 배포와의 통합을 [!DNL Assets] 구성합니다. |
+| DAM 사용자 | 로컬 | `Authors` | `ksaner` | `/content/DAM/connectedassets/`에서 가져온 자산을 보고 복제하는 데 사용됩니다. |
+| [!DNL Sites] 작성자 | 로컬 | `Authors` (원격 DAM에 대한 읽기 액세스 및 로컬에 대한 작성자 액세스 [!DNL Sites]사용) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. 작성자는 로컬 웹 페이지에서 필요한 이미지를 사용하고 콘텐츠 파인더를 사용하여 원격 DAM에서 자산을 검색하고 찾아봅니다. `ksaner` DAM 사용자의 자격 증명이 사용됩니다. |
+| [!DNL Assets] administrator | 원격 | Experience Manager `administrators` | `admin` 원격 Experience Manager | CORS(원본 간 리소스 공유)를 구성합니다. |
+| DAM 사용자 | 원격 | `Authors` | `ksaner` 원격 Experience Manager | 원격 Experience Manager 배포의 작성자 역할. 콘텐츠 파인더를 사용하여 연결된 자산에서 자산을 검색하고 찾아봅니다. |
+| DAM 배포자(기술 사용자) | 원격 | `Authors` | `ksaner` 원격 Experience Manager | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. 이 역할은 위의 두 `ksaner` 역할과 동일하지 않으며 다른 사용자 그룹에 속합니다. |
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -70,7 +70,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 1. Access the local [!DNL Experience Manager Sites] deployment at `https://[local_sites]:4502`. **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 연결된 자산 구성]**&#x200B;을 클릭하고 다음 값을 제공합니다.
 
-   1. [!DNL Experience Manager Assets] 위치는 `https://[assets_servername_ams]:[port]`입니다.
+   1. [!DNL Experience Manager Assets] 위치는 입니다 `https://[assets_servername_ams]:[port]`.
    1. DAM 배포자의 자격 증명(기술 사용자)
    1. In **[!UICONTROL Mount Point]** field, enter the local Experience Manager path where Experience Manager fetches the assets. 예를 들면 `remoteassets` 폴더를 입력합니다.
    1. 네트워크에 따라 **[!UICONTROL 원본 이진 전송 최적화 임계값]**&#x200B;의 값을 조정합니다. 이 임계값보다 크기가 큰 자산 렌디션은 비동기적으로 전송됩니다.
@@ -95,7 +95,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    >[!NOTE]
    >
-   >작성자가 에셋을 가져올 때 Remote Experience Manager 배포에서 사용할 수 있는 모든 변환이 반입됩니다. 가져온 자산의 렌디션을 더 만들려면 이 구성 단계를 건너뜁니다. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
+   >작성자가 자산을 가져올 때 원격 Experience Manager 배포에서 사용할 수 있는 모든 변환이 반입됩니다. 가져온 자산의 렌디션을 더 만들려면 이 구성 단계를 건너뜁니다. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
 1. Add the [!DNL Experience Manager Sites] instance as one of the **[!UICONTROL Allowed Origins]** on the remote [!DNL Experience Manager Assets] CORS configuration.
 
@@ -111,7 +111,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 작성자는 로컬 DAM 인스턴스와 원격 DAM 인스턴스에서 모두 사용할 수 있는 자산을 단일 웹 페이지에서 사용할 수 있습니다. 콘텐츠 파인더를 사용하여 로컬 DAM을 검색하거나 원격 DAM을 검색합니다.
 
-Only those tags of remote assets are fetched that have an exact corresponding tag along with the same taxonomy hierarchy, available on the local [!DNL Sites] instance. 다른 태그는 모두 무시됩니다. 작성자는 Experience Manager에서 전체 텍스트 검색을 제공하므로 원격 Experience Manager 배포에 있는 모든 태그를 사용하여 원격 자산을 검색할 수 있습니다.
+Only those tags of remote assets are fetched that have an exact corresponding tag along with the same taxonomy hierarchy, available on the local [!DNL Sites] instance. 다른 태그는 모두 무시됩니다. Experience Manager에서 전체 텍스트 검색을 제공하므로 작성자는 원격 Experience Manager 배포에 있는 모든 태그를 사용하여 원격 자산을 검색할 수 있습니다.
 
 ### 사용 연습 {#walk-through-of-usage}
 
@@ -156,19 +156,19 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 **권한 및 자산 관리**
 
 * 로컬 자산은 원격 배포의 원본 자산과 동기화되지 않습니다. DAM 배포에 대한 권한 편집, 삭제 또는 취소는 다운스트림으로 전파되지 않습니다.
-* 로컬 자산은 읽기 전용 복사본입니다. Adobe Experience Manager 구성 요소를 사용하면 에셋을 훼손하지 않고 편집할 수 있습니다. 다른 편집 작업은 허용되지 않습니다.
+* 로컬 자산은 읽기 전용 복사본입니다. Adobe Experience Manager 구성 요소를 사용하면 에셋을 원본을 훼손하지 않고 편집할 수 있습니다. 다른 편집 작업은 허용되지 않습니다.
 * 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
 * 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Dynamic Media] 자산, 콘텐츠 조각 및 경험 구성요소는 지원되지 않습니다.
 * 메타데이터 스키마를 가져오지 않았습니다.
 * All [!DNL Sites] authors have read permissions on the fetched copies, even if they do not have access to the remote DAM deployment.
 * 통합을 사용자 지정할 수 있는 API 지원이 없습니다.
 * 이 기능을 통해 원격 자산을 원활하게 검색하고 사용할 수 있습니다. 로컬 배포에서 많은 원격 자산을 한 번에 사용할 수 있도록 하려면 자산을 마이그레이션하는 것이 좋습니다. [자산 마이그레이션 안내서](assets-migration-guide.md)를 참조하십시오.
-* 페이지 속성 사용자 인터페이스에서 원격 자산을 페이지 축소판으로 사용할 [!UICONTROL 수] 없습니다. 이미지 선택을 클릭하여 페이지 속성 [!UICONTROL 사용자 인터페이스에서] 웹 페이지의 축소판을 설정할 [!UICONTROL 수] 있습니다.
+* 원격 자산을 페이지 속성 사용자 인터페이스에서 페이지 축소판으로 사용할 [!UICONTROL 수] 없습니다. 이미지 선택을 클릭하여 [!UICONTROL 페이지 속성] 사용자 인터페이스에서 웹 페이지의 축소판을 설정할 수 [!UICONTROL 있습니다] .
 
 **설정 및 라이선스**
 
 * [!DNL Experience Manager Assets] AMS에서의 배포가 지원됩니다.
-* [!DNL Experience Manager Sites] 한 번에 하나의 [!DNL Experience Manager Assets] 저장소에 연결할 수 있습니다.
+* [!DNL Experience Manager Sites] 한 번에 단일 [!DNL Experience Manager Assets] 저장소에 연결할 수 있습니다.
 * A license of [!DNL Experience Manager Assets] working as remote repository.
 * One or more licenses of [!DNL Experience Manager Sites] working as local authoring deployment.
 
