@@ -1,9 +1,12 @@
 ---
-title: '[!DNL Adobe Experience Manager]에서 디지털 자산의 메타데이터를 관리합니다.'
-description: 메타데이터의 유형과 [!DNL Adobe Experience Manager Assets]를 통해 자산을 손쉽게 분류하고 구성할 수 있도록 메타데이터를 관리하는 방법에 대해 알아보십시오. [!DNL Experience Manager]를 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
+title: 디지털 자산의 메타데이터를 관리할 수 있습니다 [!DNL Adobe Experience Manager].
+description: 메타데이터의 유형과 메타데이터를 기반으로 에셋을 자동으로 구성하고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c32e64d4921d7239d07f57ab9e12c744758faa0a
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: c32e64d4921d7239d07f57ab9e12c744758faa0a
 * 포함된 폴더의 이름입니다.
 * 관련 자산 또는 적용된 태그
 
-위의 메타데이터 속성은 Experience Manager가 자산에 대해 관리할 수 있는 기본 메타데이터 속성으로, 사용자는 이를 통해 모든 자산을 볼 수 있습니다. 예를 들어, 마지막 수정 날짜별로 자산을 정렬하는 것은 최근에 추가된 자산을 검색하려고 할 때 유용합니다.
+위의 메타데이터 속성은 자산에 대해 관리할 [!DNL Experience Manager] 수 있으며, 이를 통해 사용자는 모든 자산을 볼 수 있습니다. 예를 들어, 마지막 수정 날짜별로 자산을 정렬하는 것은 최근에 추가된 자산을 검색하려고 할 때 유용합니다.
 
 디지털 자산에 더 많은 고급 데이터를 추가할 수 있습니다. 예:
 
@@ -90,7 +93,7 @@ ID3 태그는 MP3 파일 포맷용으로 설계되었습니다. 형식에 대한
 
 ### Exif {#exif}
 
-Exif(Exchange) 는 디지털 사진 분야에서 가장 널리 사용되는 메타데이터 포맷입니다. JPEG, TIFF, RIFF 및 WAV와 같은 다양한 파일 포맷으로 메타데이터 속성의 고정된 용어를 임베드하는 방법을 제공합니다. Exif는 메타데이터를 메타데이터 이름 및 메타데이터 값의 쌍으로 저장합니다. 이러한 메타데이터 이름-값-쌍은 태그라고도 합니다. 태깅과 혼동하지 마십시오 [!DNL Experience Manager].  최신 디지털 카메라는 Exif 메타데이터와 이를 지원하는 최신 그래픽 소프트웨어를 제작합니다. Exif 형식은 특히 이미지에 대한 메타데이터 관리를 위한 가장 일반적인 분모입니다.
+Exif(Exchange) 는 디지털 사진 분야에서 가장 널리 사용되는 메타데이터 포맷입니다. JPEG, TIFF, RIFF 및 WAV와 같은 다양한 파일 포맷으로 메타데이터 속성의 고정된 용어를 임베드하는 방법을 제공합니다. Exif는 메타데이터를 메타데이터 이름 및 메타데이터 값의 쌍으로 저장합니다. 이러한 메타데이터 이름-값-쌍은 태그라고도 합니다. 태깅과 혼동하지 마십시오 [!DNL Experience Manager]. 최신 디지털 카메라는 Exif 메타데이터와 이를 지원하는 최신 그래픽 소프트웨어를 제작합니다. Exif 형식은 특히 이미지에 대한 메타데이터 관리를 위한 가장 일반적인 분모입니다.
 
 Exif의 주요 제한 사항은 BMP, GIF 또는 PNG와 같이 널리 사용되는 몇 가지 이미지 파일 형식이 지원되지 않는다는 것입니다.
 
@@ -98,7 +101,7 @@ Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항�
 
 ### 기타 메타데이터 {#other-metadata}
 
-파일에서 임베드할 수 있는 기타 메타데이터에는 Microsoft Word, PowerPoint, Excel 등이 포함됩니다.
+파일에서 임베드할 수 있는 기타 메타데이터에는 [!DNL Microsoft Word][!DNL PowerPoint], [!DNL Excel]등이 포함됩니다.
 
 ## 메타데이터 스키마 {#metadata-schemata}
 
