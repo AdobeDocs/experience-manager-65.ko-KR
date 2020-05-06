@@ -1,9 +1,12 @@
 ---
-title: '[!DNL Adobe Experience Manager Assets]의 자산 템플릿입니다.'
-description: '[!DNL Adobe Experience Manager Assets]의 자산 템플릿 및 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 학습합니다.'
+title: 자산 템플릿 [!DNL Adobe Experience Manager Assets].
+description: 자산 템플릿 [!DNL Adobe Experience Manager Assets] 과 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1553'
+ht-degree: 1%
 
 ---
 
@@ -196,4 +199,4 @@ source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
 
 ## 모범 사례 및 제한 사항 {#best-practices-limitations-tips}
 
-* AEM InDesign 편집기는 태그 수준에서 작동하며 단일 태그 아래의 모든 텍스트는 단일 엔티티로 간주됩니다. 편집 시 텍스트 서식 및 스타일을 유지하려면 각 단락(또는 스타일이 다른 텍스트)에 개별적으로 태그를 지정합니다.
+* 의 [!DNL InDesign] 편집기는 [!DNL Experience Manager] 태그 수준에서 작동하며 단일 태그 아래의 모든 텍스트는 단일 엔티티로 간주됩니다. 편집 시 텍스트 서식 및 스타일을 유지하려면 각 단락(또는 스타일이 다른 텍스트)에 개별적으로 태그를 지정합니다.
