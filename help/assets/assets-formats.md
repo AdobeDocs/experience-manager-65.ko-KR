@@ -3,7 +3,10 @@ title: 자산 지원 형식
 description: AEM 자산 및 Dynamic Media에서 지원하는 파일 형식 및 각 형식에 지원되는 기능의 목록입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2b30ab18aa22352d7ece4617d22391759592fd19
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1770'
+ht-degree: 8%
 
 ---
 
@@ -186,7 +189,7 @@ DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migra
 
 ## 지원되는 멀티미디어 포맷 {#supported-multimedia-formats}
 
-|  | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | FFMPEG 트랜스코딩 |
+|  | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | FFmpeg 트랜스코딩 |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | AAC | ✓ | ✓ |  | − | * |
 | MIDI | ✓ | ✓ |  | − | * |
