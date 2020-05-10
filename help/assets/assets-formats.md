@@ -1,34 +1,32 @@
 ---
-title: 자산 지원 형식
-description: AEM 자산 및 Dynamic Media에서 지원하는 파일 형식 및 각 형식에 지원되는 기능의 목록입니다.
+title: 처리를 위해 지원되는 파일 포맷입니다 [!DNL Adobe Experience Manager Assets].
+description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1756'
 ht-degree: 8%
 
 ---
 
 
-# 지원되는 자산 형식 {#assets-supported-formats}
+# 지원되는 형식 [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets는 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형을 지원합니다.
-
-AEM Assets를 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 통합하려면 Adobe의 XMP(Extensible Metadata Platform)를 사용하십시오.
+[!DNL Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 기능은 서로 다른 MIME 유형을 다양하게 지원합니다. 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 통합하려면 Adobe의 [!DNL Assets] [!DNL Extensible Metadata Platform] (XMP)를 사용하십시오.
 
 지원 수준을 이해하려면 범례를 사용합니다.
 
 | 지원 수준 | 설명 |
-|:---:|---|
+| :-----------: | ------------------------------ |
 | ✓ | 지원됨 |
 | * | 추가 기능 지원 |
 | − | 해당 사항 없음 |
 
-## AEM 자산에서 지원되는 래스터 이미지 포맷 {#supported-raster-image-formats}
+## 지원되는 래스터 이미지 형식 [!DNL Assets] {#supported-raster-image-formats}
 
 | 형식 | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | 편집 | 메타데이터 원본에 쓰기 | 인사이트 |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | TIFF | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -45,7 +43,7 @@ AEM Assets를 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루
 
 병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
-## 다이내믹 미디어에서 지원되는 래스터 이미지 포맷 {#supported-raster-image-formats-dynamic-media}
+## 지원되는 래스터 이미지 형식 [!DNL Dynamic Media] {#supported-raster-image-formats-dynamic-media}
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 표현물<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -66,7 +64,7 @@ AEM Assets를 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루
 
 * PSB 파일 형식이 핸들러에 추가될 때 메타데이터 원본에 대해 `NComm` 작동합니다.
 
-* Dynamic Media를 사용하여 EPS 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* EPS 파일 [!DNL Dynamic Media] 에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * EPS 파일의 경우 PS-Adobe(PostScript Document Structuring Convention) 버전 3.0 이상에서 메타데이터 원본에 대한 지원이 지원됩니다.
 
@@ -263,7 +261,7 @@ DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migra
 
 | 파일 확장자 | MIME 유형/인터넷 미디어 유형 | 기본 jobParam 값 | 허용되는 jobParam 값 |
 |---|---|---|---|
-| 이미지 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 기본 jobParam은 모든 이미지 MIME 유형 자산에 적용됩니다.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
+| 이미지 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 기본 jobParam은 모든 이미지 MIME 형식 자산에 적용됩니다.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
 | 3G2 | video/3gpp2 |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
 | 3GP | video/3gpp |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_exclude_master_video_from_avs) |
 | AAC | audio/x-aac |  |  |
