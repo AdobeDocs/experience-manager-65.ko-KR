@@ -3,9 +3,9 @@ title: 처리를 위해 지원되는 파일 포맷입니다 [!DNL Adobe Experien
 description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 93731c44ae6b2d8617fedea87bce10495384fc52
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1765'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,9 @@ ht-degree: 8%
 | * | 추가 기능 지원 |
 | − | 해당 사항 없음 |
 
-## 지원되는 래스터 이미지 형식 [!DNL Assets] {#supported-raster-image-formats}
+## 지원되는 래스터 이미지 형식 [!DNL Experience Manager] {#supported-raster-image-formats}
+
+지원되는 래스터 이미지 포맷은 다음과 [!DNL Assets] 같습니다.
 
 | 형식 | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | 편집 | 메타데이터 원본에 쓰기 | 인사이트 |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
@@ -43,7 +45,7 @@ ht-degree: 8%
 
 병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
-## 지원되는 래스터 이미지 형식 [!DNL Dynamic Media] {#supported-raster-image-formats-dynamic-media}
+지원되는 래스터 이미지 포맷은 다음과 [!DNL Dynamic Media] 같습니다.
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 표현물<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -52,11 +54,11 @@ ht-degree: 8%
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
-| PSD **** | ✓ |  |  |  |  |
+| PSD ‡ | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-**병합된 이미지‡이 PSD 파일에서 추출됩니다.** 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
+병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
 위의 정보 이외에 다음을 고려하십시오.
 
@@ -122,31 +124,6 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 ## 지원되는 자산 문서 형식 {#supported-document-formats}
 
 자산 관리 기능에 지원되는 문서 형식은 다음과 같습니다.
-
-<!--
-DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
-
-| Format | Storage | Metadata management | Metadata extraction | Thumbnail generation | Interactive editing | Metadata writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
-| DOC | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| DOCX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| ODT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
-| HTML | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| RTF | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| TXT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| XLS | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| XLSX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| ODS | &#10003; | &#10003; | &#10003; | | | | | |
-| PPT | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
-| PPTX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
-| ODP | &#10003; | &#10003; | &#10003; | | | | | |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
-| PS | &#10003; | &#10003; | | | | | | |
-| QXP | &#10003; | &#10003; | | | | | | |
-| EPUB | &#10003; | &#10003; | | &#10003; | &#10003; | | | |
--->
 
 | 형식 | 저장 용량 | [메타데이터 관리](metadata.md) | 전체 텍스트<br> 추출 | [메타데이터 추출](metadata.md) | 축소판<br> 생성 | [하위 자산 추출](managing-linked-subassets.md) | [메타데이터 원본에 쓰기](xmp-writeback.md) | [연결된 자산](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
