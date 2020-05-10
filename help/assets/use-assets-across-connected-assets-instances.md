@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d2f9bf9f8e83a088769507da8a46f1c9ef4e74e
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 53%
+source-wordcount: '2081'
+ht-degree: 50%
 
 ---
 
@@ -41,7 +41,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 작성자는 콘텐츠 파인더에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용할 수 있습니다. 문서를 `Download` 구성 요소에 추가할 수 있고 이미지를 `Image` 구성 요소에 추가할 수 있습니다. Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 지원되는 형식은 다음과 같습니다.
 
 * **이미지 형식**: 이미지 구성 요소에서 [지원하는](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 형식입니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
-* **문서 형식**: [연결된 자산에서 지원하는 문서 형식](assets-formats.md#supported-document-formats)을 참조하십시오.
+* **문서 포맷**: 연결된 자산 [에서 지원하는 문서 형식을 참조하십시오](assets-formats.md#supported-document-formats).
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
 
@@ -185,5 +185,5 @@ Only those tags of remote assets are fetched that have an exact corresponding ta
 
 일반적인 오류 시나리오에 대한 문제를 해결하려면 다음 단계를 따르십시오.
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* 원격 사이트에 존재하지 않거나, 가져오기 위한 적절한 권한이 없거나, 네트워크 오류로 인해 원격 DAM에서 가져온 자산은 웹 페이지에 게시되지 않을 수 있습니다. 원격 DAM에서 자산이 제거되지 않았거나 권한이 변경되지 않았는지 확인합니다. 적절한 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/assets/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
+* If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
+* 원격 댐에서 가져온 에셋이 하나 이상의 이유로 웹 페이지에 게시되지 않을 수 있습니다. 원격 서버에 존재하지 않거나 해당 서버에 가져올 권한이 없거나 네트워크 오류가 원인일 수 있습니다. 원격 DAM에서 자산이 제거되지 않았는지 확인합니다. 적절한 권한이 제자리에 있고 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/assets/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
