@@ -3,8 +3,11 @@ title: AEM 6.5 Assets 사용 안내서
 seo-title: AEM 6.5 Assets 사용 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 AEM Assets 작업을 다룹니다.
 seo-description: 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 AEM Assets 작업을 다룹니다.
-translation-type: ht
-source-git-commit: e6c0ee967d1b01da18b538960520c206937599f6
+translation-type: tm+mt
+source-git-commit: db5996bd25c6c35854f8b7164558b41a477b4cd6
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: e6c0ee967d1b01da18b538960520c206937599f6
 | 사용 안내서 | 설명 |
 |--- |---|
 | [릴리스 정보](/help/release-notes/home.md) | 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 제공합니다. |
-| [[양식 사용 안내서](/help/forms/home.md) | 이 안내서에서는 디지털 양식 작성, 관리, 게시 및 업데이트 방법을 설명합니다. |
+| [양식 사용 안내서](/help/forms/home.md) | 이 안내서에서는 디지털 양식 작성, 관리, 게시 및 업데이트 방법을 설명합니다. |
 | [커뮤니티 사용 안내서](/help/communities/home.md) | 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다. |
 | [관리 안내서](/help/sites-administering/home.md) | AEM 관리 방법 이해 |
 | [작성 안내서](/help/sites-authoring/home.md) | 이 안내서에서는 AEM의 작성 개념을 설명합니다. |
