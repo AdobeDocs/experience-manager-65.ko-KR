@@ -4,14 +4,17 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Assets 사용 안내서
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 97%
 
 ---
 
 
 # AEM 6.5 Assets 사용 안내서 {#assets}
 
-+ [[!DNL 자산] 사용 안내서](home.md)
++ [[!DNL Assets] 사용 안내서](home.md)
 + [AEM 6.5 Assets 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/release-notes/assets.html)
 + [DAM 정보](assets.md)
 + [자산에 대한 우수 사례](best-practices-for-assets.md)
@@ -19,7 +22,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
    + [AEM Assets 홈 페이지 경험](assets-home-page.md)
    + [AEM에서 자산 검색](search-assets.md)
    + [다국어 자산](multilingual-assets.md)
-   + [AEM 자산에 [!DNL Adobe Stock] 자산 사용](aem-assets-adobe-stock.md)
+   + [AEM [!DNL Adobe Stock] 자산에 자산 사용](aem-assets-adobe-stock.md)
    + [3D 자산 미리 보기](previewing-3d-assets.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [타임라인의 활동 스트림](activity-stream.md)
@@ -34,7 +37,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
    + [Dynamic Media 구성 - Scene7 모드](config-dms7.md)
    + [Dynamic Media 구성 - 하이브리드 모드](config-dynamic.md)
    + [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)
-   + [다이내믹 미디어 - 하이브리드 모드에서 다이내믹 미디어로 마이그레이션 - S7 모드](migrate-from-hybrid-to-dms7.md)
+   + [Dynamic Media - 하이브리드 모드에서 Dynamic Media - S7 모드로 마이그레이션](migrate-from-hybrid-to-dms7.md)
    + [Dynamic Media 자산 관리](managing-assets.md)
    + [이미지 품질 최적화 우수 사례](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Dynamic Media 뷰어 사전 설정 관리](managing-viewer-presets.md)
@@ -53,7 +56,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
    + [파노라마 이미지](panoramic-images.md)
    + [혼합 미디어 세트](mixed-media-sets.md)
    + [스핀 세트](spin-sets.md)
-   + [비디오](video.md)
+   + [다이내믹 미디어의 비디오](video.md)
    + [회전 배너](carousel-banners.md)
    + [대화형 이미지](interactive-images.md)
    + [대화형 비디오](interactive-videos.md)
@@ -74,7 +77,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
    + [AEM Assets 사용자 지정 및 확장](extending-assets.md)
    + [미디어 핸들러 및 워크플로우를 사용하여 자산 처리](media-handlers.md)
    + [검색 기능 확장](searchx.md)
-   + [AEM 자산에서 작동하도록 [!DNL ImageMagick]을(를) 설치하고 구성합니다.](best-practices-for-imagemagick.md)
+   + [ [!DNL ImageMagick] AEM Assets에서 작동하도록 설치 및 구성](best-practices-for-imagemagick.md)
    + [자산과 활동 스트림 통합](extending-activity-stream.md)
    + [자산 편집기 확장](asseteditorx.md)
    + [자산 HTTP API](mac-api-assets.md)
