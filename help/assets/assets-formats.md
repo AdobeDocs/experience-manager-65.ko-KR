@@ -3,9 +3,9 @@ title: 처리를 위해 지원되는 파일 포맷입니다 [!DNL Adobe Experien
 description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 93731c44ae6b2d8617fedea87bce10495384fc52
+source-git-commit: 138c8d960ad8c1de20212b7aeebbda0a486832ee
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1779'
 ht-degree: 8%
 
 ---
@@ -73,6 +73,8 @@ ht-degree: 8%
 ## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
 다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 포맷의 하위 유형에 대해 설명합니다.
+
+Dynamic [Media에서 지원되지 않는 파일 형식 감지를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일
 * PSB 파일.
