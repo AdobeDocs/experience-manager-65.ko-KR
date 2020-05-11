@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1eb8a0335d3e4697c3cfd5a1e7048dda06bbdaf8
+source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
 workflow-type: tm+mt
-source-wordcount: '5750'
+source-wordcount: '5753'
 ht-degree: 1%
 
 ---
@@ -212,7 +212,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
    * **[!UICONTROL CMYK 기본 색상 공간]** - 기본 CMYK 색상 프로파일의 이름
    * **[!UICONTROL 회색 크기 조절 기본 색상 공간]** - 기본 회색 색상 프로필의 이름
    * **[!UICONTROL RGB 기본 색상 공간]** - 기본 RGB 색상 프로필의 이름
-   * **[!UICONTROL 색상 변환 렌더링 의도]** - 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL perception]**, **[!UICONTROL 상대]** colorometric **[!UICONTROL ,]**&#x200B;채도 **[!UICONTROL ,]**&#x200B;절대의 최고수준. Adobe에서는 **[!UICONTROL 상대]**를 기본값으로 권장합니다.
+   * **[!UICONTROL 색상 변환 렌더링 의도]** - 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL perception]**, **[!UICONTROL 상대]** colorometric **[!UICONTROL ,]**&#x200B;채도 **[!UICONTROL ,]**&#x200B;절대의소산입니다. Adobe에서는 **[!UICONTROL 상대]**를 기본값으로 권장합니다.
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 
@@ -480,7 +480,7 @@ spin-01-01
 
 ### (선택 사항) 다이내믹 미디어 성능 조정 - Scene7 모드 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-파일을 업로드할 때 작업 매개 변수를 조정하여 보다 신속하게 처리할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하지는 않으려는 경우 레이어 추출을 false(off)로 설정할 수 있습니다. 조정된 작업 매개 변수가 표시됩니다 `process=none&createTemplate=false`.
+파일을 업로드할 때 작업 매개 변수를 조정하여 보다 신속하게 처리할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하지는 않으려는 경우 레이어 추출을 false(off)로 설정할 수 있습니다. 이 경우 조정된 작업 매개 변수가 로 나타납니다 `process=none&createTemplate=false`.
 
 PSD, PDF 및 Postscript 파일에 대해 다음과 같은 &quot;조정된&quot; 작업 매개 변수를 사용하는 것이 좋습니다.
 
