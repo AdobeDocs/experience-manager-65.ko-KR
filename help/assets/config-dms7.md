@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d948ea6e6f6983ba0ecfe05710ffa7dedb772075
+source-git-commit: d77296df73861c33720c16c14534c1b448d35d06
 workflow-type: tm+mt
-source-wordcount: '5759'
+source-wordcount: '5763'
 ht-degree: 1%
 
 ---
@@ -168,7 +168,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 * **[!UICONTROL 요청 속성]** - 이러한 설정은 서버에서 전달할 수 있는 이미지에 제한을 적용합니다.
 * **[!UICONTROL 기본 요청 속성]** - 이 설정은 이미지의 기본 모양과 관련이 있습니다.
 * **[!UICONTROL 공통 축소판 속성]** - 이 설정은 축소판 이미지의 기본 모양과 관련이 있습니다.
-* **[!UICONTROL 카탈로그 필드의 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
+* **[!UICONTROL 카탈로그 필드 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
 * **[!UICONTROL 색상 관리 속성]** - 이 설정에 따라 어떤 ICC 색상 프로파일이 사용되는지 결정됩니다.
 * **[!UICONTROL 호환성 속성]** - 이 설정을 사용하면 텍스트 레이어의 선행 및 후행 단락을 이전 버전과의 호환성을 위해 버전 3.6에서와 같이 처리할 수 있습니다.
 * **[!UICONTROL 로컬라이제이션 지원]** - 이 설정을 통해 여러 로케일 특성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. 현지화 지원 설정에 대한 자세한 내용은 **자산 현지화 설정 시**&#x200B;고려 사항 [을 참조하십시오](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
@@ -502,11 +502,11 @@ Dynamic Media - Scene7 모드가 원활하게 실행되도록 유지하려면 �
 * 미리 정의된 [화강암 임시 워크플로우](이미지 및 비비디오 자산) 큐 작업자 스레드를 업데이트합니다.
 * Dynamic Media Classic 서버에 대한 최대 업로드 연결을 업데이트합니다.
 
-#### [MOCK] Updating the Granite Temporary Workflow queue {#updating-the-granite-transient-workflow-queue}
+#### [MOCK] Updating the Granite temporary workflow queue {#updating-the-granite-transient-workflow-queue}
 
 [DAM 자산 업데이트] 작업 과정에는 [GRANITE Transit 작업 과정 큐 **[!UICONTROL 가]** 사용됩니다. Dynamic Media에서 이미지 수집 및 처리에 사용됩니다.
 
-**[MOCK] To update the Granite Temporary Workflow queue**
+**[MOCK] To update the Granite temporary workflow queue**
 
 1. https://&lt; [server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) 로 이동하고 **큐 검색: [MOCK] Granite Temporary Workflow Queue**.
 
@@ -524,11 +524,11 @@ Dynamic Media - Scene7 모드가 원활하게 실행되도록 유지하려면 �
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 
-#### [MOCK] Updating the Granite Workflow queue {#updating-the-granite-workflow-queue}
+#### [MOCK] Updating the Granite workflow queue {#updating-the-granite-workflow-queue}
 
 [MOCK] The Granite Workflow queue is used for non-temporary workflows. Dynamic Media에서는 **[!UICONTROL 다이내믹 미디어 인코딩 비디오]** 워크플로우로 비디오를 처리했습니다.
 
-**[MOCK] To update the Granite Workflow queue**
+**[MOCK] To update the Granite workflow queue**
 
 1. 대기열로 `https://<server>/system/console/configMgr` 이동 및 **검색: [MOCK] Granite Workflow Queue**.
 
@@ -546,11 +546,11 @@ Dynamic Media - Scene7 모드가 원활하게 실행되도록 유지하려면 �
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 
-#### Scene7 업로드 연결 업데이트 {#updating-the-scene-upload-connection}
+#### Dynamic Media Classic 업로드 연결 업데이트 {#updating-the-scene-upload-connection}
 
 Scene7 업로드 연결 설정은 AEM 자산을 Dynamic Media Classic 서버에 동기화합니다.
 
-**Scene7 업로드 연결을 업데이트하려면**
+**Dynamic Media Classic 업로드 연결을 업데이트하려면**
 
 1. 다음으로 이동 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 연결 **[!UICONTROL 수]** 필드 및/또는 **[!UICONTROL 활성 작업 시간 초과]** 필드에서 원하는 대로 숫자를 변경합니다.
