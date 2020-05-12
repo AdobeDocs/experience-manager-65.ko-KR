@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+source-git-commit: d948ea6e6f6983ba0ecfe05710ffa7dedb772075
 workflow-type: tm+mt
-source-wordcount: '5753'
+source-wordcount: '5759'
 ht-degree: 1%
 
 ---
@@ -168,7 +168,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 * **[!UICONTROL 요청 속성]** - 이러한 설정은 서버에서 전달할 수 있는 이미지에 제한을 적용합니다.
 * **[!UICONTROL 기본 요청 속성]** - 이 설정은 이미지의 기본 모양과 관련이 있습니다.
 * **[!UICONTROL 공통 축소판 속성]** - 이 설정은 축소판 이미지의 기본 모양과 관련이 있습니다.
-* **[!UICONTROL 카탈로그 필드 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
+* **[!UICONTROL 카탈로그 필드의 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
 * **[!UICONTROL 색상 관리 속성]** - 이 설정에 따라 어떤 ICC 색상 프로파일이 사용되는지 결정됩니다.
 * **[!UICONTROL 호환성 속성]** - 이 설정을 사용하면 텍스트 레이어의 선행 및 후행 단락을 이전 버전과의 호환성을 위해 버전 3.6에서와 같이 처리할 수 있습니다.
 * **[!UICONTROL 로컬라이제이션 지원]** - 이 설정을 통해 여러 로케일 특성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. 현지화 지원 설정에 대한 자세한 내용은 **자산 현지화 설정 시**&#x200B;고려 사항 [을 참조하십시오](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
@@ -212,7 +212,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
    * **[!UICONTROL CMYK 기본 색상 공간]** - 기본 CMYK 색상 프로파일의 이름
    * **[!UICONTROL 회색 크기 조절 기본 색상 공간]** - 기본 회색 색상 프로필의 이름
    * **[!UICONTROL RGB 기본 색상 공간]** - 기본 RGB 색상 프로필의 이름
-   * **[!UICONTROL 색상 변환 렌더링 의도]** - 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL perception]**, **[!UICONTROL 상대]** colorometric **[!UICONTROL ,]**&#x200B;채도 **[!UICONTROL ,]**&#x200B;절대의소산입니다. Adobe에서는 **[!UICONTROL 상대]**를 기본값으로 권장합니다.
+   * **[!UICONTROL 색상 변환 렌더링 의도]** - 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL perception]**, **[!UICONTROL 상대]** colorometric **[!UICONTROL ,]**&#x200B;채도 **[!UICONTROL ,]**&#x200B;절대의 최고수준. Adobe에서는 **[!UICONTROL 상대]**를 기본값으로 권장합니다.
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 
@@ -480,7 +480,9 @@ spin-01-01
 
 ### (선택 사항) 다이내믹 미디어 성능 조정 - Scene7 모드 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-파일을 업로드할 때 작업 매개 변수를 조정하여 보다 신속하게 처리할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하지는 않으려는 경우 레이어 추출을 false(off)로 설정할 수 있습니다. 이 경우 조정된 작업 매개 변수가 로 나타납니다 `process=none&createTemplate=false`.
+**작업 매개 변수 최적화**
+
+파일을 업로드할 때 작업 매개 변수를 조정하여 보다 신속하게 처리할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하지는 않으려는 경우 레이어 추출을 false(off)로 설정할 수 있습니다. 이 경우 조정된 작업 매개 변수가 로 나타납니다 `process=None&createTemplate=false`.
 
 PSD, PDF 및 Postscript 파일에 대해 다음과 같은 &quot;조정된&quot; 작업 매개 변수를 사용하는 것이 좋습니다.
 
@@ -492,7 +494,9 @@ PSD, PDF 및 Postscript 파일에 대해 다음과 같은 &quot;조정된&quot; 
 
 이러한 매개 변수를 업데이트하려면 MIME 유형 기반 자산/ [Dynamic Media Classic 업로드 작업 매개 변수 지원의 단계를 따릅니다](#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
-또한 Dynamic Media - Scene7 모드가 원활하게 실행되도록 하려면 다음과 같은 동기화 성능/확장성 세부 조정 팁을 권장합니다.
+**동기화 성능/확장성 세부 조정 팁**
+
+Dynamic Media - Scene7 모드가 원활하게 실행되도록 유지하려면 다음과 같은 동기화 성능/확장성 세부 조정 팁을 권장합니다.
 
 * 미리 정의된 [granite workflow(비디오 에셋) 큐 작업자 스레드를 업데이트합니다.
 * 미리 정의된 [화강암 임시 워크플로우](이미지 및 비비디오 자산) 큐 작업자 스레드를 업데이트합니다.
