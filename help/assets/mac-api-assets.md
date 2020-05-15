@@ -3,7 +3,7 @@ title: Assets HTTP API in [!DNL Adobe Experience Manager].
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 1%
@@ -95,9 +95,9 @@ Adobe Experience Manager 폴더에 다음과 같은 구성 요소가 있습니�
 
 **전제 조건**
 
-* 이동 `https://[aem_server]:[port]/system/console/configMgr`.
-* [ **Adobe Granite CSRF 필터]로 이동합니다**.
-* 속성 필터 **메서드에 다음이 포함되어 있는지** 확인합니다. 게시물, 배치, 삭제
+1. 이동 `https://[aem_server]:[port]/system/console/configMgr`.
+1. [ **Adobe Granite CSRF 필터]로 이동합니다**.
+1. 속성 필터 **메서드에 다음이 포함되어 있는지** 확인합니다. 게시물, 배치, 삭제
 
 ## 폴더 목록 검색 {#retrieve-a-folder-listing}
 
