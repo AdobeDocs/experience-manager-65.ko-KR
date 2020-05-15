@@ -3,9 +3,9 @@ title: '메타데이터 속성 페이지의 레이아웃을 정의하는 메타�
 description: 메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 자산에 메타데이터 스키마를 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2366abc3be015fa637621f235edb8e8d79e51372
+source-git-commit: 69506287c1c8e45d99c3229d701604387bd57ca9
 workflow-type: tm+mt
-source-wordcount: '2725'
+source-wordcount: '2713'
 ht-degree: 3%
 
 ---
@@ -43,9 +43,9 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 |---|---|---|
 | [!UICONTROL 기본값] |  | 자산에 대한 기본 메타데이터 스키마 양식입니다. |
 |  | 다음 하위 양식은 [!UICONTROL 기본] 양식의 속성을 상속합니다. |  |
-|  | <ul><li> [!UICONTROL 이미지]</li></ul> | MIME 유형이 &quot;image&quot;인 에셋에 대한 스키마 양식(예: image/jpeg, image/png 등) <br> 이미지 [!UICONTROL 양식에는 다음과 같은 하위] 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 jpeg가 있는 자산에 대한 스키마 [!UICONTROL 양식입니다].</li> <li>[!UICONTROL tiff]: 하위 유형 tiff가 있는 자산의 [!UICONTROL 스키마 양식입니다].</li></ul> |
-|  | <ul><li> [!UICONTROL 응용 프로그램]</li></ul> | MIME 유형이 &quot;application&quot;인 에셋에 대한 스키마 양식(예: application/ pdf, application/ zip 등) <br>[!UICONTROL pdf]: 하위 유형 pdf가 있는 자산에 대한 스키마 양식입니다. |
-|  | <ul><li>[!UICONTROL 비디오]</li></ul> | 비디오/avi, 비디오/mp4 등과 같이 MIME 유형이 &quot;비디오&quot;인 에셋에 대한 스키마 양식입니다. |
+|  | <ul><li> [!UICONTROL 이미지]</li></ul> | MIME 유형이 &quot;image&quot;인 에셋에 대한 스키마 양식(예: `image/jpeg`, `image/png`등)입니다. <br> 이미지 [!UICONTROL 양식에는 다음과 같은 하위] 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 jpeg가 있는 자산에 대한 스키마 [!UICONTROL 양식입니다].</li> <li>[!UICONTROL tiff]: 하위 유형 tiff가 있는 자산의 [!UICONTROL 스키마 양식입니다].</li></ul> |
+|  | <ul><li> [!UICONTROL 응용 프로그램]</li></ul> | MIME 유형이 &quot;application&quot;인 에셋에 대한 스키마 양식(예: `application/pdf`등) `application/zip`입니다. <br>[!UICONTROL pdf]: 하위 유형 pdf가 있는 자산에 대한 스키마 양식입니다. |
+|  | <ul><li>[!UICONTROL 비디오]</li></ul> | MIME 유형이 &quot;비디오&quot;인 에셋에 대한 스키마 양식 `video/avi`(예: `video/mp4` 등). |
 | [!UICONTROL 컬렉션] |  | 컬렉션에 대한 스키마 양식입니다. |
 | [!UICONTROL contentfragment] |  | 콘텐츠 조각에 대한 스키마 양식입니다. |
 | [!UICONTROL 양식] |  | 이 스키마 양식은 [Adobe Experience Manager Forms와 관련이 있습니다](/help/forms/home.md). |
