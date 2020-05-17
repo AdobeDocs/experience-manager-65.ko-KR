@@ -3,7 +3,7 @@ title: PDF 래스터라이저를 사용하여 PDF 파일의 변환을 생성할 
 description: 의 Adobe PDF 래스터라이저 라이브러리를 사용하여 고품질 축소판과 변환을 생성할 수 [!DNL Adobe Experience Manager]있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -63,6 +63,7 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 
 
 
 1. 중간 변환을 삭제하려면 생성된 변환 **[!UICONTROL 삭제를 선택합니다]**.
+
 1. PDF 래스터라이저가 웹 변환을 생성하도록 하려면 [웹 변환 **[!UICONTROL 생성]을 선택합니다]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
@@ -72,8 +73,11 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. 워크플로우를 저장합니다.
-1. PDF 래스터라이저가 PDF 라이브러리를 사용하여 PDF 페이지를 처리할 수 있도록 하려면 워크플로우 콘솔에서 **[!UICONTROL DAM Process Subasset]** 모델을 엽니다.
+
+1. PDF 래스터라이저가 PDF 라이브러리를 사용하여 PDF 페이지를 처리할 수 있도록 하려면 워크플로우 **[!UICONTROL 콘솔에서]** DAM Process Subasset [!UICONTROL 모델을] 엽니다.
+
 1. 사이드 패널에서 PDF 래스터라이저 처리기 단계를 웹 지원 이미지 변환 **[!UICONTROL 만들기 단계 아래로]** 드래그합니다.
+
 1. PDF 래스터라이저 **[!UICONTROL 처리기 단계에 대해 다음 인수를]** 구성합니다.
 
    * MIME 형식: `application/pdf` or `application/postscript`
