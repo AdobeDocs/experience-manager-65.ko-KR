@@ -3,9 +3,9 @@ title: Assets HTTP API in [!DNL Adobe Experience Manager].
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1570'
 ht-degree: 1%
 
 ---
@@ -46,48 +46,48 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 **속성**:
 
-* `name`  — 폴더 이름입니다. URL 경로에서 확장자가 없는 마지막 세그먼트와 동일합니다
-* `title` — 이름 대신 표시할 수 있는 폴더의 선택 사항 제목
+* `name` 은 폴더 이름입니다. 확장자가 없는 URL 경로의 마지막 세그먼트와 동일합니다.
+* `title` 은 이름 대신 표시할 수 있는 폴더의 선택 제목입니다.
 
 >[!NOTE]
 >
->폴더 또는 자산의 일부 속성이 다른 접두사에 매핑됩니다. 접두어 `jcr` , `jcr:title`및 `jcr:description`는 `jcr:language` `dc` 접두사로 대체됩니다. 따라서 반환된 JSON에 `dc:title` 각각 및 `dc:description` 의 값 `jcr:title` 을 포함시키고 `jcr:description`있습니다.
+>폴더 또는 자산의 일부 속성이 다른 접두사에 매핑됩니다. 접두어 `jcr` , `jcr:title`및 `jcr:description`는 `jcr:language` `dc` 접두사로 대체됩니다. 따라서 반환된 JSON에 `dc:title` 는 `dc:description` 각각 `jcr:title` 및 `jcr:description`의 값을 포함합니다.
 
 **링크** 폴더에는 세 개의 링크가 표시됩니다.
 
-* `self`: 자체에 연결
-* `parent`: 상위 폴더에 대한 링크
-* `thumbnail`: (선택 사항) 폴더 축소판 이미지에 대한 링크
+* `self`: Link to self.
+* `parent`: 상위 폴더에 연결합니다.
+* `thumbnail`: (선택 사항) 폴더 축소판 이미지에 연결합니다.
 
 ### 자산 {#assets}
 
 Experience Manager에서 자산은 다음 요소를 포함합니다.
 
-* 자산의 속성 및 메타데이터
-* 원본 변환(원래 업로드된 에셋), 축소판 및 다양한 기타 표현물과 같은 여러 표현물. 추가 변환은 서로 다른 크기의 이미지, 서로 다른 비디오 인코딩 또는 PDF 또는 InDesign에서 추출한 페이지일 수 있습니다.
-* 선택적 주석
+* 자산의 속성 및 메타데이터입니다.
+* 원본 변환(원래 업로드된 에셋), 축소판 및 다양한 기타 표현물과 같은 여러 표현물. 추가 변환은 서로 다른 크기의 이미지, 서로 다른 비디오 인코딩 또는 PDF 또는 Adobe InDesign 파일에서 추출한 페이지일 수 있습니다.
+* 선택적 주석.
 
 콘텐츠 조각의 요소에 대한 자세한 내용은 Experience Manager Assets HTTP API의 [콘텐츠 조각 지원을 참조하십시오](/help/assets/assets-api-content-fragments.md#content-fragments).
 
 Adobe Experience Manager 폴더에 다음과 같은 구성 요소가 있습니다.
 
 * 엔티티: 자산의 하위 항목은 해당 표현물입니다.
-* 속성
-* 링크
+* 속성.
+* 링크.
 
 자산 HTTP API에는 다음 기능이 포함되어 있습니다.
 
-* 폴더 목록 검색
-* 폴더를 만듭니다
-* 자산 만들기
-* 자산 이진 업데이트
-* 자산 메타데이터 업데이트
-* 자산 변환 만들기
-* 자산 변환 업데이트
-* 에셋 주석 만들기
-* 폴더 또는 자산 복사
+* 폴더 목록을 검색합니다.
+* 폴더를 만듭니다.
+* 자산을 만듭니다.
+* 자산 바이너리를 업데이트합니다.
+* 자산 메타데이터를 업데이트합니다.
+* 자산 표현물을 만듭니다.
+* 자산 변환을 업데이트합니다.
+* 자산 주석을 만듭니다.
+* 폴더 또는 자산을 복사합니다.
 * 폴더 또는 자산 이동
-* 폴더, 자산 또는 변환 삭제
+* 폴더, 자산 또는 변환을 삭제합니다.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Adobe Experience Manager 폴더에 다음과 같은 구성 요소가 있습니�
 
 제공된 경로의 상위 노드가 없는 경우 API 호출이 `500` 응답 코드와 함께 실패합니다. 폴더가 이미 있는 `409` 경우 호출은 응답 코드를 반환합니다.
 
-**매개 변수**: `name` - 폴더 이름
+**매개 변수**: `name` 은 폴더 이름입니다.
 
 **요청**
 
