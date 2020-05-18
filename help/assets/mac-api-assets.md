@@ -3,9 +3,9 @@ title: Assets HTTP API in [!DNL Adobe Experience Manager].
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 >[!NOTE]
 >
->폴더 또는 자산의 일부 속성이 다른 접두사에 매핑됩니다. 접두어 `jcr` , `jcr:title`및 `jcr:description`는 `jcr:language` `dc` 접두사로 대체됩니다. 따라서 반환된 JSON에 `dc:title` 는 `dc:description` 각각 `jcr:title` 및 `jcr:description`의 값을 포함합니다.
+>폴더 또는 자산의 일부 속성이 다른 접두사에 매핑됩니다. 접두어 `jcr` , `jcr:title`및 `jcr:description`는 `jcr:language` `dc` 접두사로 대체됩니다. 따라서 반환된 JSON에 `dc:title` 각각 및 `dc:description` 의 값 `jcr:title` 을 포함시키고 `jcr:description`있습니다.
 
 **링크** 폴더에는 세 개의 링크가 표시됩니다.
 
@@ -69,7 +69,7 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 
 콘텐츠 조각의 요소에 대한 자세한 내용은 Experience Manager Assets HTTP API의 [콘텐츠 조각 지원을 참조하십시오](/help/assets/assets-api-content-fragments.md#content-fragments).
 
-Adobe Experience Manager 폴더에 다음과 같은 구성 요소가 있습니다.
+폴더 [!DNL Experience Manager] 에는 다음 구성 요소가 있습니다.
 
 * 엔티티: 자산의 하위 항목은 해당 표현물입니다.
 * 속성.
@@ -95,9 +95,9 @@ Adobe Experience Manager 폴더에 다음과 같은 구성 요소가 있습니�
 
 **전제 조건**
 
-1. 이동 `https://[aem_server]:[port]/system/console/configMgr`.
-1. [ **Adobe Granite CSRF 필터]로 이동합니다**.
-1. 속성 필터 **메서드에 다음이 포함되어 있는지** 확인합니다. 게시물, 배치, 삭제
+* 액세스 `https://[aem_server]:[port]/system/console/configMgr`.
+* [ **[!UICONTROL Adobe Granite CSRF 필터]로 이동합니다]**.
+* 속성 필터 **[!UICONTROL 메서드에 다음이 포함되어 있는지]** 확인합니다. `POST`, `PUT`, `DELETE`.
 
 ## 폴더 목록 검색 {#retrieve-a-folder-listing}
 
@@ -181,14 +181,14 @@ Adobe Experience Manager 폴더에 다음과 같은 구성 요소가 있습니�
 
 자산에 대한 새 자산 변환을 만듭니다. 요청 매개 변수 이름을 제공하지 않으면 파일 이름이 변환 이름으로 사용됩니다.
 
-**매개 변수** 매개 변수 `name` 는 변환의 이름과 파일 참조 `file` 로 사용됩니다.
+**매개 변수**: 매개 변수 `name` 는 변환의 이름 및 파일 참조입니다 `file` .
 
 **요청**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**응답 코드**
+**응답 코드**: 응답 코드는 다음과 같습니다.
 
 * 201 - CREATED - Rendition이 성공적으로 생성된 경우
 * 404 - 찾을 수 없음 - 제공된 URI에서 자산을 찾거나 액세스할 수 없는 경우
@@ -201,7 +201,7 @@ Adobe Experience Manager 폴더에 다음과 같은 구성 요소가 있습니�
 
 **요청**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**응답 코드** 응답 코드는 다음과 같습니다.
+**응답 코드**: 응답 코드는 다음과 같습니다.
 
 * 200 - 확인 - Rendition이 성공적으로 업데이트된 경우
 * 404 - 찾을 수 없음 - 제공된 URI에서 자산을 찾거나 액세스할 수 없는 경우
