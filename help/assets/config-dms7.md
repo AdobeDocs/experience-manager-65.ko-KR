@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f96a8fc51ffeef68b2e4c668bc1b2bae4e89133a
+source-git-commit: 06301db70f763eedebeca293dd288d22248cfbf6
 workflow-type: tm+mt
-source-wordcount: '5782'
+source-wordcount: '5777'
 ht-degree: 1%
 
 ---
@@ -479,8 +479,6 @@ spin-01-01
    사전 설정을 활성화하면 자산을 Dynamic Media에 업로드할 때 배치 세트 사전 설정이 적용되어 세트를 생성합니다.
 
 ### (선택 사항) 다이내믹 미디어 성능 조정 - Scene7 모드 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
-
-**동기화 성능/확장성 세부 조정 팁**
 
 Dynamic Media - Scene7 모드가 원활하게 실행되도록 유지하려면 다음과 같은 동기화 성능/확장성 세부 조정 팁을 권장합니다.
 
