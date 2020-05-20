@@ -3,9 +3,9 @@ title: 에셋 메타데이터를 일괄적으로 가져오거나 내보낼 수 �
 description: 디지털 에셋의 메타데이터를 일괄 가져오고 내보낼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 42532bfe73c44ad04b67afa973eef526f47588cf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '785'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 2%
    | [!UICONTROL 워크플로우 실행] | 기본적으로 False입니다. 설정 `true` 및 기본 론처 설정이 [!UICONTROL DAM 메타데이터 쓰기] 돌아가기 작업 과정(이진 XMP 데이터에 메타데이터를 쓰는 작업 과정)에 적용됩니다. 실행 워크플로우를 활성화하면 시스템이 느려집니다. |
    | [!UICONTROL 자산 경로 열 이름] | 자산이 있는 CSV 파일의 열 이름을 정의합니다. |
 
-1. 도구 모음에서 가져오기 **[!UICONTROL 를 탭]** /클릭합니다. 메타데이터를 가져오면 알림 받은 [!UICONTROL 편지함에 알림이] 표시됩니다.
+1. 도구 **[!UICONTROL 모음에서 가져오기를]** 클릭합니다. 메타데이터를 가져오면 알림 받은 [!UICONTROL 편지함에 알림이] 표시됩니다.
 
 1. 올바른 가져오기를 확인하려면 자산의 [!UICONTROL 속성] 페이지로 이동하고 필드의 값을 확인합니다.
 
