@@ -3,9 +3,9 @@ title: AEM에서 비공개 폴더 만들기 및 공유
 description: AEM(Adobe Experience Manager) 자산에서 비공개 폴더를 만들고 다른 사용자와 공유하며 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '508'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 > 비공개 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다.
 
 
-1. 자산 콘솔의 도구 모음에서 **[!UICONTROL 만들기를]** 탭/클릭한 다음 메뉴에서 **[!UICONTROL 폴더]** 를 선택합니다.
+1. 자산 콘솔의 도구 모음에서 **[!UICONTROL 만들기를]** 클릭한 다음 메뉴에서 **[!UICONTROL 폴더]** 를 선택합니다.
 
    ![에셋 폴더 만들기](assets/Create-folder.png)
 
@@ -28,11 +28,11 @@ ht-degree: 2%
 
    ![비공개 확인란을 선택하여 폴더 비공개](assets/private-folder.png)
 
-1. **[!UICONTROL 만들기]**&#x200B;를 탭/클릭합니다. UI에 비공개 폴더가 생성됩니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. UI에 비공개 폴더가 생성됩니다.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. 다른 사용자와 폴더를 공유하고 사용자에게 권한을 할당하려면 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]** 아이콘을 클릭/탭합니다.
+1. 다른 사용자와 폴더를 공유하고 사용자에게 권한을 할당하려면 폴더를 선택하고 도구 모음에서 **[!UICONTROL 속성]** 아이콘을 클릭합니다.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,11 +58,11 @@ ht-degree: 2%
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. 알림 아이콘을 탭/클릭하여 알림 목록을 엽니다.
+1. 알림 아이콘을 클릭하여 알림 목록을 엽니다.
 
    ![알림 목록](assets/Assets-Notification.png)
 
-1. 관리자가 공유하는 비공개 폴더의 항목을 클릭/탭하여 폴더를 엽니다.
+1. 관리자가 공유하는 비공개 폴더의 항목을 클릭하여 폴더를 엽니다.
 
 >[!NOTE]
 >
