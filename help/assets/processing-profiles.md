@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -95,14 +95,14 @@ Dynamic Media 서버에서 마이그레이션 게시 에이전트를 비활성�
 
 **재처리 워크플로우의 일괄 처리 크기를 선택적으로 조정하려면**
 
-1. Adobe Experience Manager에서 **[!UICONTROL Adobe Experience Manager]** 를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** (망치) 아이콘 > **[!UICONTROL 워크플로우 > 모델]**&#x200B;을 누릅니다.
+1. Adobe Experience Manager에서 **[!UICONTROL Adobe Experience Manager]** 를 클릭하여 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** (망치) 아이콘 > **[!UICONTROL 워크플로우 > 모델]**&#x200B;을 클릭합니다.
 1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다. 자산 재처리를 참조하십시오]**.
 
    ![Scene7이 있는 워크플로우 모델 페이지: 카드 보기에서 선택한 자산 재처리 워크플로우](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. 도구 모음에서 **[!UICONTROL 편집을 클릭합니다]**. 새 브라우저 탭이 Scene7을 엽니다. 자산 워크플로우 모델 페이지 재처리
-1. Scene7에서: 오른쪽 상단 근처에 있는 자산 재처리 워크플로우 페이지에서 **[!UICONTROL 편집을]** 눌러 워크플로우를 &quot;잠금 해제&quot;합니다.
-1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 연 다음 도구 모음에서 **[!UICONTROL 구성을]** 누릅니다.
+1. Scene7에서: 자산 재처리 워크플로우 페이지에서 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 편집을]** 클릭하여 워크플로우를 &quot;잠금 해제&quot;합니다.
+1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 연 다음 도구 모음에서 구성 **[!UICONTROL 을]** 클릭합니다.
 
    ![Scene7 일괄 업로드 구성 요소](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -115,16 +115,16 @@ Dynamic Media 서버에서 마이그레이션 게시 에이전트를 비활성�
    * 시간 초과에 **[!UICONTROL 도달했을]** 때 진행하려면 [시간 초과에 대한 진행]을 선택합니다. 시간 초과에 도달할 때 받은 편지함으로 계속 진행하려면 선택 취소합니다.
    ![속성 대화 상자](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Scene7 - 단계 **[!UICONTROL 속성]** 대화 상자의 오른쪽 위 모서리에서 완료를 **[!UICONTROL 누릅니다]**.
+1. Scene7 - 단계 **[!UICONTROL 속성]** 대화 상자의 오른쪽 위 모서리에서 완료를 **[!UICONTROL 클릭합니다]**.
 
-1. Scene7의 오른쪽 위 모서리: 자산 워크플로우 모델 페이지 재처리, 동기화를 **[!UICONTROL 누릅니다]**. 동기화된 ****&#x200B;워크플로우 런타임 모델은 성공적으로 동기화되어 폴더의 에셋을 재처리할 준비가 되었습니다.
+1. Scene7의 오른쪽 위 모서리: 자산 재처리 워크플로우 모델 페이지에서 동기화를 **[!UICONTROL 클릭합니다]**. 동기화된 ****&#x200B;워크플로우 런타임 모델은 성공적으로 동기화되어 폴더의 에셋을 재처리할 준비가 되었습니다.
 
    ![워크플로우 모델 동기화](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Scene7을 표시하는 브라우저 탭을 닫습니다. 자산 워크플로우 모델 재처리
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -135,10 +135,10 @@ Dynamic Media 서버에서 마이그레이션 게시 에이전트를 비활성�
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, tap **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
