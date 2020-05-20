@@ -3,9 +3,9 @@ title: '메타데이터 속성 페이지의 레이아웃을 정의하는 메타�
 description: 메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 자산에 메타데이터 스키마를 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 265fc8fa6b4d835241b1213d95beaa17db5798ac
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2661'
 ht-degree: 3%
 
 ---
@@ -19,11 +19,11 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 
 자산에 대한 속성 페이지를 보고 편집하려면 다음 단계를 따르십시오.
 
-1. 카드 보기의 자산 타일에 **[!UICONTROL 있는 빠른 작업]** 에서 속성 보기 아이콘을 클릭하거나 탭합니다.
+1. 카드 **[!UICONTROL 보기의 자산 타일에 있는 빠른 작업에서 속성]** 보기 아이콘을 클릭합니다.
 
    ![자산 타일에 대한 빠른 작업](assets/chlimage_1-170.png)
 
-   또는 자산을 선택한 다음 도구 모음에서 [!UICONTROL 속성] 아이콘을 클릭하거나 탭합니다.
+   또는 자산을 선택한 다음 도구 모음에서 [!UICONTROL 속성] 아이콘을 클릭합니다.
 
 1. 사용 가능한 탭에서 다양한 편집 가능한 메타데이터 속성을 편집할 수 있습니다. 하지만 속성 페이지의 [!UICONTROL 기본] 탭에서 자산 유형 [!UICONTROL 을] 수정할 수는 없습니다.
 
