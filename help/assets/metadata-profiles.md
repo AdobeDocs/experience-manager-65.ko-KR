@@ -3,7 +3,10 @@ title: 에셋의 메타데이터 요구 사항을 사용자 정의하는 메타�
 description: 자산에 대한 메타데이터 프로파일에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '1410'
+ht-degree: 5%
 
 ---
 
@@ -14,8 +17,8 @@ source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
 ## 메타데이터 프로필 추가 {#adding-a-metadata-profile}
 
-1. 도구 **[!UICONTROL > 자산 > 메타데이터 프로필로]** 이동하고 만들기를 **[!UICONTROL 누릅니다]**.
-1. 메타데이터 프로필의 제목(예: 샘플 메타데이터)을 입력하고 만들기를 **[!UICONTROL 누릅니다]**. 메타데이터 [!UICONTROL 프로필에] 대한 양식 편집이 표시됩니다.
+1. 도구 > **[!UICONTROL 자산 > 메타데이터 프로필로]** 이동하고 만들기를 **[!UICONTROL 클릭합니다]**.
+1. 메타데이터 프로필의 제목(예: 샘플 메타데이터)을 입력하고 만들기를 **[!UICONTROL 클릭합니다]**. 메타데이터 [!UICONTROL 프로필에] 대한 양식 편집이 표시됩니다.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
 
@@ -42,7 +45,7 @@ source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 1. (선택 사항) 양식 **[!UICONTROL 작성 탭에서 양식]** 편집에 구성 요소를 더 추가하고 설정 **[!UICONTROL 탭에서 해당 속성을]** 구성합니다. 양식 작성 탭에서 다음 속성을 **[!UICONTROL 사용할 수]** 있습니다.
 
 | 구성 요소 | 속성 |
-|---|---|
+| ----------------------------- | ----------------------------------------------------------------------- |
 | [!UICONTROL 섹션 머리글] | 필드 레이블, <br> 설명 |
 | [!UICONTROL 한 줄 텍스트] | 필드 레이블, 속성에 <br> 매핑, 기본값 <br> |
 | [!UICONTROL 다중 값 텍스트] | 필드 레이블, 속성에 <br> 매핑, 기본값 <br> |
@@ -52,7 +55,7 @@ source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
 ![chlimage_1-201](assets/chlimage_1-484.png)
 
-1. 완료를 탭/ **[!UICONTROL 클릭합니다]**. 메타데이터 프로필이 메타데이터 프로필 **[!UICONTROL 페이지의 프로필 목록에]** 추가됩니다.<br>
+1. 완료를 **[!UICONTROL 클릭합니다]**. 메타데이터 프로필이 메타데이터 프로필 **[!UICONTROL 페이지의 프로필 목록에]** 추가됩니다.<br>
 
    ![메타데이터 프로필 페이지에 추가된 메타데이터 프로필](assets/MetadataProfiles-page.png)
 
@@ -62,9 +65,9 @@ source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
    ![chlimage_1-203](assets/chlimage_1-486.png)
 
-1. 도구 모음 **[!UICONTROL 에서 복사를]** 누릅니다.
+1. 도구 **[!UICONTROL 모음에서]** 복사를 클릭합니다.
 1. 메타데이터 프로필 **[!UICONTROL 복사]** 대화 상자에서 메타데이터 프로필의 새 사본의 제목을 입력합니다.
-1. 복사를 **[!UICONTROL 누릅니다]**. 메타데이터 프로필 사본이 **[!UICONTROL 메타데이터 프로필]** 페이지의 프로필 목록에 나타납니다.
+1. **[!UICONTROL 복사]**&#x200B;를 클릭합니다. 메타데이터 프로필 사본이 **[!UICONTROL 메타데이터 프로필]** 페이지의 프로필 목록에 나타납니다.
 
    ![메타데이터 프로필 페이지에 추가된 메타데이터 프로필 사본](assets/copy-metadata-profile.png)
 
@@ -103,19 +106,19 @@ source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
 단계에 따라 메타데이터 프로필을 적용합니다.
 
-1. AEM 로고를 누르고 도구 > **[!UICONTROL 자산 > 메타데이터 프로필로 이동합니다]**.
+1. AEM 로고를 클릭하고 도구 > **[!UICONTROL 자산 > 메타데이터 프로필로 이동합니다]**.
 1. 폴더 또는 여러 폴더에 적용할 메타데이터 프로필을 선택합니다.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
 
-1. 폴더에 메타데이터 **[!UICONTROL 프로필 적용을]** 누르고 새로 업로드된 자산을 받기 위해 사용할 폴더 또는 여러 폴더를 선택한 다음 완료를 **[!UICONTROL 누릅니다]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 폴더에 메타데이터 **[!UICONTROL 프로필 적용을]** 클릭하고 새로 업로드한 자산을 받기 위해 사용할 폴더 또는 폴더를 선택한 다음 완료를 **[!UICONTROL 클릭합니다]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
 #### 속성의 폴더에 메타데이터 프로필 적용 {#applying-metadata-profiles-to-folders-from-properties}
 
-1. 왼쪽 레일에서 **[!UICONTROL 자산을]** 누른 다음 메타데이터 프로필을 적용할 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 누르거나 클릭하여 선택한 다음 속성을 탭하거나 **[!UICONTROL 클릭합니다]**.
+1. 왼쪽 레일에서 **[!UICONTROL 자산을]** 클릭한 다음 메타데이터 프로필을 적용할 폴더를 탐색합니다.
+1. 폴더에서 확인 표시를 클릭하여 선택한 다음 속성 **[!UICONTROL 을 클릭합니다]**.
 
-1. 메타데이터 **[!UICONTROL 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 저장을 **[!UICONTROL 누릅니다]**.
+1. 메타데이터 **[!UICONTROL 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 저장을 **[!UICONTROL 클릭합니다]**.
 
    ![chlimage_1-208](assets/chlimage_1-491.png)
 
@@ -129,7 +132,7 @@ source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
 메타데이터 프로필을 전역적으로 적용하려면 다음 단계를 따르십시오.
 
-* 해당 프로파일로 `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` 이동하여 적용하고 저장을 **[!UICONTROL 누릅니다]**.
+* 해당 프로파일로 `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` 이동하여 적용하고 저장을 **[!UICONTROL 클릭합니다]**.
 
    ![chlimage_1-209](assets/chlimage_1-492.png)
 
@@ -145,16 +148,16 @@ source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
 ### 프로필 사용자 인터페이스를 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. AEM 로고를 탭하거나 클릭하고 **[!UICONTROL 도구 > 자산 > 메타데이터 프로필로 이동합니다]**.
+1. AEM 로고를 클릭하고 도구 > **[!UICONTROL 자산 > 메타데이터 프로필로 이동합니다]**.
 1. 폴더 또는 여러 폴더에서 제거할 메타데이터 프로필을 선택합니다.
-1. 폴더에서 **[!UICONTROL 메타데이터 프로필 제거를]** 누르고 프로필을 제거할 폴더 또는 여러 폴더를 선택한 다음 완료를 **[!UICONTROL 누릅니다]**.
+1. 폴더에서 **[!UICONTROL 메타데이터 프로필 제거를]** 클릭하고 프로필을 제거할 폴더 또는 여러 폴더를 선택한 다음 완료를 **[!UICONTROL 클릭합니다]**.
 
    이름이 더 이상 폴더 이름 아래에 나타나지 않으므로 메타데이터 프로필이 더 이상 폴더에 적용되지 않도록 확인할 수 있습니다.
 
 ### 속성을 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. AEM 로고를 누르고 **[!UICONTROL 자산]** 으로 이동한 다음 메타데이터 프로필을 제거할 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성을 누릅니다]**.
+1. AEM 로고를 클릭하고 **[!UICONTROL 자산을]** 탐색한 다음 메타데이터 프로필을 제거할 폴더로 이동합니다.
+1. 폴더에서 확인 표시를 클릭하여 선택한 다음 속성 **[!UICONTROL 을 클릭합니다]**.
 1. 메타데이터 **[!UICONTROL 프로필]** 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]** 을 선택하고 **[!UICONTROL 저장을]**&#x200B;클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
 ## 제한 사항 및 우수 사례 {#limitations-best-practices-tips}
