@@ -1,20 +1,18 @@
 ---
 title: AEM 6.5 이전 서비스 팩 릴리스 노트
 description: Adobe Experience Manager 6.5 서비스 팩 3 이하에 대한 릴리스 노트입니다.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
-docset: aem65
-translation-type: ht
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+translation-type: tm+mt
+source-git-commit: af21ed3cb8b755402ab03a7b624fa1ea99f2035f
+workflow-type: tm+mt
+source-wordcount: '6277'
+ht-degree: 95%
 
 ---
 
 
 # 이전 서비스 팩에 포함된 핫픽스 및 기능 팩 {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0
+## Adobe Experience Manager 6.5.3.0 {#aem-6530}
 
 [!DNL Adobe Experience Manager]6.5.3.0은 **2019년 4월**&#x200B;에 6.5 릴리스의 공식 출시 이후에 발표된 성능, 안정성, 보안 및 주요 고객 수정 사항과 개선 사항을 포함하는 중요한 릴리스입니다. [!DNL Adobe Experience Manager] 6.5의 맨 위에 설치할 수 있습니다.
 
@@ -24,9 +22,9 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 * 이제 [!DNL Experience Manager Assets]에서 Deflate64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다.
 
-* 정렬 가능한 작성된 날짜에 대한 새 열이 DAM 목록 보기 및 자산 검색 결과의 목록 보기에 추가되었습니다.
+* DAM과 목록 보기의 검색 결과에서 자산을 볼 때 자산 생성 날짜를 표시하는 새 열을 사용할 수 있습니다. 열을 정렬하여 자산을 시간 순서대로 배열하거나 시간 순서를 반대로 정렬합니다.
 
-* 이름 열을 기반으로 한 자산 정렬이 목록 보기에서 활성화되었습니다.
+* 이제 목록 보기의 열을 기준으로 자산을 정렬할 수 `Name` 있습니다.
 
 * 이제 [!DNL Dynamic Media]에서 스마트 자르기 비디오 자산을 지원합니다. 스마트 자르기는 장면의 초점을 따라 프레임을 이동하면서 비디오를 다시 자르는 머신 러닝 기반의 기능입니다.
 
@@ -46,9 +44,9 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 * 이제 [!DNL Experience Manager Assets]에서 Deflate64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다(NPR-27573).
 
-* 정렬 가능한 새로 만든 날짜에 대한 열이 목록 보기의 DAM 목록 보기 및 자산 검색 결과에 추가되었습니다(NPR-31312).
+* DAM과 목록 보기의 검색 결과에서 자산을 볼 때 자산 생성 날짜를 표시하는 새 열을 사용할 수 있습니다. 열을 정렬하여 자산의 시간순 또는 역시간 순서로 정렬합니다(NPR-31312).
 
-* 이름 열을 기반으로 한 자산 정렬이 목록 보기에서 허용되었습니다(NPR-31299).
+* 이제 목록 보기의 `Name` 열을 기반으로 자산을 정렬할 수 있습니다(NPR-31299).
 
 * GLB, GLTF, OBJ 및 STL 자산 파일은 DAM의 자산 세부 정보 페이지에서 자산 미리 보기를 지원합니다(CQ-428277).
 
@@ -61,6 +59,8 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 * 요청에서 쿼리 매개 변수가 전달되면 Foundation 선택기에서 검색/찾아보기 보기가 기본 보기로 설정되었습니다(NPR-31601).
 
 **수정 사항**
+
+* Adobe Asset Link 사용 시 OAuth IMS 공급자는 프록시 서버를 통해 연결할 수 없습니다(NPR-30949).
 
 * 일부 PDF 문서의 메타데이터는 해당 제목을 수정할 때 업데이트되지 않고 PDF에 저장됩니다(NPR-31629).
 
@@ -82,17 +82,17 @@ source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 * 파일 이름에 더하기 &#39;+&#39; 기호가 있는 자산은 삭제할 수 없습니다(NPR-31162).
 
-* 폴더 선택 시 상단 메뉴에 표시되는 만들기 드롭다운 메뉴는 만들기 옵션으로 &#39;폴더&#39;를 표시하지 않습니다(NPR-30877).
+* 새 자산 또는 폴더를 만드는 옵션은 자산 사용자 인터페이스에서 팝업 메뉴로 사용할 수 있습니다. 폴더를 선택하면 Experience Manager는 팝업 메뉴에서 [!UICONTROL 폴더] 중 하나로 표시하지 않습니다(NPR-30877).
 
-* 경로에 있는 Deny jcr:removeChildNodes 및 jcr:removeNode에 대한 ACL이 사용자에 대해 적용되면 폴더 선택 만들기 > 파일 업로드 작업 항목이 누락됩니다(NPR-30840).
+* Folder selection Create > FileUpload action item is missing when ACL for Deny `jcr:removeChildNodes` and `jcr:removeNode` on path are applied for a user (NPR-30840).
 
-* 특정 mp4 자산이 업로드되면 DAM 워크플로우가 부실 상태로 전환되어 나머지 모든 워크플로우가 부실 상태로 전환됩니다(NPR-30662).
+* 특정 MP4 에셋이 업로드되면 DAM 워크플로우가 부실 상태로 전환되어 나머지 모든 워크플로우가 부실 상태로 전환됩니다(NPR-30662).
 
-* 대용량 PDF 파일(일부 GB 중)이 DAM에 업로드되고 하위 자산이 처리되는 경우 메모리 부족 오류가 발생합니다(NPR-30614).
+* 여러 GB의 대용량 PDF 파일이 DAM에 업로드되고 하위 자산이 처리되는 경우 메모리 부족 오류가 발생합니다(NPR-30614).
 
 * 자산의 벌크 이동이 실패하고 경고 메시지가 표시됩니다(NPR-30610).
 
-* [!DNL Dynamic Media]–Scene7 모드에서 실행 중인 [!DNL Experience Manager]에서 자산을 폴더 간에 이동할 때 자산 이름이 소문자로 변경됩니다(NPR-31630).
+* Asset names are changed to lower case when moving assets from one folder to another when working [!DNL Dynamic Media]–Scene7 mode (NPR-31630).
 
 * 원격 이미지 집합을 편집하는 동안 Scene 7 회사 이름과 같은 폴더에 있는 이미지에 대한 오류가 발견되었습니다(NPR-31340).
 
