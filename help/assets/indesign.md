@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager Assets] 통합 [!DNL Adobe InDesign Serv
 description: 통합 방법 [!DNL Adobe Experience Manager Assets] 을 살펴보십시오 [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 0%
@@ -165,7 +165,7 @@ Indesign 스크립트에 대한 자세한 내용은 [InDesign 개발자 설명�
 다른 호스트 [!DNL InDesign Server] 에서 [!DNL Experience Manager] 실행되거나 이러한 응용 프로그램이 기본 포트에서 실행되지 않는 경우 [!UICONTROL Day CQ Link Externalizer] 를 구성하여 해당 호스트 이름, 포트 및 컨텐트 경로를 설정합니다 [!DNL InDesign Server].
 
 1. 웹 콘솔에 액세스합니다 `https://[aem_server]:[port]/system/console/configMgr`.
-1. 구성 Day **[!UICONTROL CQ Link Externalizer를]**&#x200B;찾아 **[!UICONTROL 편집을]** 눌러 엽니다.
+1. 구성 **[!UICONTROL Day CQ Link Externalizer를]**&#x200B;찾아 **[!UICONTROL 편집을]** 클릭하여 엽니다.
 1. 호스트 이름과 컨텍스트 경로를 지정하고 [!DNL Indesign Server] 저장을 **클릭합니다**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
