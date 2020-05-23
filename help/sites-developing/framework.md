@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cef5251d6bd72a6fd352f18e31d3f9d787e4320e
+source-git-commit: 4c4a0b1a76f44dcf1084a4651194e60735bc5aea
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
@@ -258,6 +258,10 @@ AEM에 포함된 노드 유형에 대한 기본 정의는 다음과 같습니다
 * 태그가 이동 또는 병합되었을 때 변경 내용을 게시하려면, 노드 및 모든 `cq:Tag` 해당 백링크가 복제되어야 합니다. 태그 관리 콘솔에서 태그가 활성화되면 자동으로 수행됩니다.
 
 * 나중에 페이지 `cq:tags` 속성이 업데이트되면 &quot;이전&quot; 참조가 자동으로 정리됩니다. API를 통해 이동한 태그를 확인하면 대상 태그가 반환되므로 대상 태그 ID가 제공되기 때문에 트리거됩니다.
+
+> [!NOTE]
+>
+> 태그 이동은 태그 마이그레이션과 다릅니다.
 
 ## 태그 마이그레이션 {#tags-migration}
 
