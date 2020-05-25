@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 69e9b7499c1babcf7a6da62b8728bba7f127b4f9
+source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+workflow-type: tm+mt
+source-wordcount: '3010'
+ht-degree: 92%
 
 ---
 
@@ -55,7 +58,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ![bh-02](assets/bh-02.png)
 
-개요의 다음 페이지로 이동하려면 **다음**&#x200B;을 클릭하거나 탭합니다. Click or tap **Close** or click or tap outside of the overview dialog to close.
+개요의 다음 페이지로 이동하려면 **다음**&#x200B;을 클릭하거나 탭합니다. 닫으려면 **닫기**&#x200B;를 클릭 또는 탭하거나 개요 대화 상자의 외부를 클릭 또는 탭합니다.
 
 모든 슬라이드를 표시하지 않거나 **다시 표시 안 함** 옵션을 선택하지 않은 한 이후에 콘솔에 액세스하면 개요가 다시 시작됩니다.
 
@@ -63,7 +66,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 전역 탐색 패널을 사용하여 콘솔 간을 탐색할 수 있습니다. 화면의 왼쪽 상단에 있는 Adobe Experience Manager 링크를 클릭하거나 탭하면 전체 화면 드롭다운으로 트리거됩니다.
 
-You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
+**닫기**&#x200B;를 클릭하거나 탭하여 전역 탐색 패널을 닫고 이전 위치로 돌아갈 수 있습니다.
 
 ![bh-03](assets/bh-03.png)
 
@@ -73,16 +76,22 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 전역 탐색에는 다음과 같은 두 개의 패널이 있으며 화면의 왼쪽 여백에 아이콘으로 표시됩니다.
 
-* **[탐색](/help/sites-authoring/basic-handling.md#navigation-panel)**- 나침반으로 표시됨
+* **[탐색](/help/sites-authoring/basic-handling.md#navigation-panel)**- 나침반으로 표시되며,
 * **[도구](/help/sites-authoring/basic-handling.md#tools-panel)**- 망치로 표시됨
 
 이러한 패널에서 사용 가능한 옵션은 아래에 설명되어 있습니다.
 
 ### 탐색 패널 {#navigation-panel}
 
-탐색 패널:
+탐색 패널에서는 AEM 콘솔에 액세스할 수 있습니다.
 
 ![bh-01](assets/bh-01.png)
+
+콘솔 및 컨텐츠를 탐색할 때 브라우저 탭의 제목이 위치를 반영하도록 업데이트됩니다.
+
+>[!NOTE]
+>
+>탭 제목은 [AEM 6.5 서비스 팩 5의 위치를](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) 반영합니다.
 
 탐색에서 사용할 수 있는 콘솔은 다음과 같습니다.
 
@@ -105,7 +114,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
    <td>여기서는 제품, 제품 카탈로그 및 <a href="/help/sites-administering/ecommerce.md">상거래 </a> 사이트와 관련된 주문을 관리할 수 있습니다.</td>
   </tr>
   <tr>
-   <td>경험 조각</td>
+   <td>경험 구성요소</td>
    <td><a href="/help/sites-authoring/experience-fragments.md">경험 조각</a>은 여러 채널 간에 재사용할 수 있으며 변형이 있는 독립형 환경으로, 경험 또는 경험 일부를 반복해서 복사하고 붙여넣는 단조로운 작업을 수행할 필요를 없애줍니다.</td>
   </tr>
   <tr>
@@ -145,7 +154,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 * [전역 탐색](#navigatingconsolesandtools)
 
-   Select the **Adobe Experience Manager** link to navigate between consoles.
+   콘솔 간에 탐색하려면 **Adobe Experience Manager** 링크를 선택합니다.
 
    ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
 
@@ -153,9 +162,9 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ![](do-not-localize/screen_shot_2018-03-23at103542.png)
 
-   You can also use the [shortcut key](/help/sites-authoring/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+   [단축키](/help/sites-authoring/keyboard-shortcuts.md) `/`(슬래시)를 사용하여 모든 콘솔에서 검색을 호출할 수도 있습니다.
 
-* [솔루션](https://www.adobe.com/experience-cloud.html)
+* [솔루션](https://www.adobe.com/kr/experience-cloud.html)
 
    ![](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -189,7 +198,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ![bh-05](assets/bh-05.png)
 
-   레일의 중간에 위치하며 항상 현재 선택된 항목에 대한 설명을 표시하는 [탐색 표시]를 사용하면 특정 콘솔 내에서 탐색할 수 있습니다. 사이트 콘솔에서 웹 사이트 수준을 탐색할 수 있습니다.
+   레일의 중간에 위치하며 항상 현재 선택된 항목에 대한 설명을 표시하는 [탐색 표시]를 사용하면 특정 콘솔 내에서 탐색할 수 있습니다. Sites 콘솔에서는 웹 사이트 수준을 탐색할 수 있습니다.
 
    현재 선택된 항목의 계층 구조 레벨을 나열하는 드롭다운 목록을 표시하려면 [탐색 표시] 텍스트를 클릭하면 됩니다. 해당 위치로 이동하려면 항목을 클릭하십시오.
 
@@ -216,6 +225,18 @@ You can close the global navigation panel by clicking or tapping **Close** to re
    열 보기, 카드 보기 및 목록 보기 간에 전환할 수 있습니다. 목록 보기에서 보기 설정도 표시됩니다.
 
    ![bh-09](assets/bh-09.png)
+
+* 키보드 탐색
+
+   키보드만 사용하여 웹 사이트를 탐색할 수 있습니다. 여기서는 **TAB** 키(또는 **OPT+TAB**)의 표준 브라우저 기능을 사용하여 포커스가 있는 페이지의 요소 간에 이동할 *수*&#x200B;있습니다.
+
+   사이트 **콘솔** 에는 기본 컨텐츠로 **건너뛸 수 있는 추가된 옵션이 있습니다**. 헤더 옵션을 *탭하면* 볼 수 있고 (제품) 도구 모음의 표준 요소를 건너뛰고 기본 컨텐츠로 바로 이동할 수 있으므로 탐색 시간을 단축할 수 있습니다.
+
+   ![bh-30](assets/bh-30.png)
+
+   >[!NOTE]
+   >
+   >기본 **콘텐츠로** 건너뛰기 [는](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) AEM 6.5 서비스 팩 5버전부터 사용할 수 있습니다.
 
 ## 도움말 액세스 {#accessing-help}
 
@@ -252,7 +273,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 개발자 리소스 및 다운로드
    >[!NOTE]
    >
-   >콘솔에서 언제든지 핫키(물음표)를 사용하여 사용할 수 있는 단축키 `?` 개요를 볼 수 있습니다.
+   >콘솔에서 있을 때에는 핫키 `?`(물음표)를 사용하여 사용 가능한 단축키 개요를 언제든지 볼 수 있습니다.
    >
    >모든 키보드 단축키에 대한 개요는 다음 문서를 참조하십시오.
    >
@@ -264,8 +285,8 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 리소스를 선택하면(예: 페이지 또는 자산) 도구 모음에 설명 텍스트가 있는 아이콘으로 다양한 작업이 표시됩니다. 이러한 작업은 다음 항목에 따라 달라집니다.
 
-* 현재 콘솔
-* 현재 컨텍스트
+* 현재 콘솔.
+* 현재 컨텍스트.
 * [선택 모드](#navigatingandselectionmode)인지 여부
 
 
@@ -273,7 +294,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 [리소스 선택 방법](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)은 보기에 따라 다릅니다.
 
-일부 창은 공간이 제한되어 있으므로 도구 모음이 사용할 수 있는 공간보다 바로 길어질 수 있습니다. 이 경우추가 옵션이 표시됩니다. 줄임표(세 점 또는 **...**)를 클릭하거나 탭하면 나머지 작업을 모두 포함하는 드롭다운 선택기가 열립니다. 예를 들어 **사이트** 콘솔에서 페이지를 선택하면 다음이 수행됩니다.
+일부 창은 공간이 제한되어 있으므로 도구 모음이 사용할 수 있는 공간보다 바로 길어질 수 있습니다. 이 경우 추가 옵션이 표시됩니다. 생략 부호(세 점 또는 **...**)를 클릭하거나 탭하면 나머지 작업을 모두 포함하는 드롭다운 선택기가 열립니다. 예를 들어 **사이트** 콘솔에서 페이지를 선택하면 다음이 수행됩니다.
 
 ![bh-12](assets/bh-12.png)
 
@@ -285,7 +306,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 [카드 보기](#cardviewquickactions)에서는 특정 작업을 빠른 작업 아이콘으로 사용할 수 있을 뿐 아니라 도구 모음에 표시할 수도 있습니다. 빠른 작업 아이콘은 한 번에 단일 항목에 사용할 수 있으며 사전 선택할 필요가 없습니다.
 
-빠른 작업은 (데스크톱 장치) 리소스 카드 위에 마우스를 올려 놓으면 표시됩니다. 사용 가능한 빠른 작업은 콘솔 및 컨텍스트에 따라 달라질 수 있습니다. 예를 들어, **사이트** 콘솔에서 페이지에 대한 빠른 작업은 다음과 같습니다.
+빠른 작업은(데스크톱 장치) 리소스 카드 위에 마우스를 올려 놓으면 표시됩니다. 사용 가능한 빠른 작업은 콘솔 및 컨텍스트에 따라 달라질 수 있습니다. 예를 들어, **사이트** 콘솔에서 페이지에 대한 빠른 작업은 다음과 같습니다.
 
 ![bh-13](assets/bh-13.png)
 
@@ -293,9 +314,9 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 보기, 탐색 및 선택은 모든 보기에서 개념적으로는 같지만 사용 중인 보기에 따라 처리 방식이 약간 다릅니다.
 
-사용 가능한 보기 중 하나에서 (추가 작업을 위해) 리소스를 보고, 탐색하며 선택할 수 있습니다. 각 보기는 오른쪽 상단의 아이콘으로 선택할 수 있습니다.
+사용 가능한 보기 중 하나에서(추가 작업을 위해) 리소스를 보고, 탐색하며 선택할 수 있습니다. 각 보기는 오른쪽 상단의 아이콘으로 선택할 수 있습니다.
 
-* [열 보기 ](#column-view)
+* [열 보기](#column-view)
 * [카드 보기](#card-view)
 
 * [목록 보기](#list-view)
@@ -316,7 +337,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
    <td>선택 취소</td>
   </tr>
   <tr>
-   <td>열 보기 <br /> </td>
+   <td>열 보기<br /> </td>
    <td>
     <ul>
      <li>데스크톱: <br /> 썸네일 클릭</li>
@@ -332,13 +353,13 @@ You can close the global navigation panel by clicking or tapping **Close** to re
    <td>카드 보기<br /> </td>
    <td>
     <ul>
-     <li><br /> 데스크탑:마우스오버한 다음 확인 표시 빠른 작업을 사용합니다.</li>
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
      <li>모바일 장치: <br /> 카드를 길게 탭하기</li>
     </ul> </td>
    <td>
     <ul>
-     <li><br /> 데스크탑:카드를 클릭합니다.</li>
-     <li><br /> 모바일 장치:카드를 누릅니다</li>
+     <li>Desktop:<br /> Click the card</li>
+     <li>Mobile device:<br /> Tap the card</li>
     </ul> </td>
   </tr>
   <tr>
@@ -389,7 +410,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 1. 리소스를 선택하면 상단 헤더에는 현재 선택한 리소스에 적용할 수 있는 작업에 대한 액세스를 제공하는 [작업 도구 모음](#actionstoolbar)이 표시됩니다.
 
-   To exit selection mode select the **X** to the top-right, or use **escape**.
+   선택 모드를 종료하려면 오른쪽 상단에서 **X**&#x200B;를 선택하거나 **Esc** 키를 사용하십시오.
 
 ### 열 보기 {#column-view}
 
@@ -399,9 +420,9 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 맨 왼쪽 열의 리소스를 선택하면 오른쪽 열에 하위 리소스가 표시됩니다. 오른쪽 열에서 리소스를 선택하면 오른쪽의 다른 열에 하위 리소스가 표시됩니다.
 
-* 리소스 이름 또는 리소스 이름 오른쪽에 있는 V자형을 탭하거나 클릭하여 트리에서 위아래로 탐색할 수 있습니다.
+* 리소스 이름 또는 리소스 이름 오른쪽에 있는 V자형 화살표를 탭하거나 클릭하여 트리에서 위아래로 탐색할 수 있습니다.
 
-   * 탭하거나 클릭하면 리소스 이름 및 V자형이 강조 표시됩니다.
+   * 탭하거나 클릭하면 리소스 이름 및 V자형 화살표가 강조 표시됩니다.
    ![bh-17](assets/bh-17.png)
 
    * 클릭하거나 탭한 리소스의 하위 항목은 클릭하거나 탭한 리소스의 오른쪽에 있는 열에 표시됩니다.
@@ -478,13 +499,13 @@ You can close the global navigation panel by clicking or tapping **Close** to re
    * **페이지 시간**
    ![bh-21](assets/bh-21.png)
 
-   By default the **Name** column is shown, which makes up part of the URL for the page. 일부 경우에는 작성자가 다른 언어로 된 페이지에 액세스해야 하며 작성자가 페이지의 언어를 모르는 경우 페이지 이름(일반적으로 변경되지 않음)을 확인하면 도움이 될 수 있습니다.
+   기본적으로 페이지 URL 부분을 구성하는 **이름** 열이 표시됩니다. 일부 경우에는 작성자가 다른 언어로 된 페이지에 액세스해야 하며 작성자가 페이지의 언어를 모르는 경우 페이지 이름(일반적으로 변경되지 않음)을 확인하면 도움이 될 수 있습니다.
 
 * 목록에서 각 항목의 맨 오른쪽에 있는 점선 세로 막대를 사용하여 항목 순서를 변경합니다.
 
    >[!NOTE]
    >
-   >Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
+   >순서 변경은 `jcr:primaryType` 값이 `sling:OrderedFolder`인 순서가 지정된 폴더 내에서만 작동합니다.
 
    ![bh-22](assets/bh-22.png)
 
@@ -500,11 +521,11 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 ## 레일 선택기 {#rail-selector}
 
-The **Rail Selector** is available at the top-left of the window and displays options depending on your current consoles.
+**레일 선택기**&#x200B;는 창 왼쪽 상단에서 사용할 수 있으며 현재 콘솔에 따라 옵션을 표시합니다.
 
 ![bh-25](assets/bh-25.png)
 
-예를 들어 사이트에서 컨텐츠 전용(기본값), 컨텐츠 트리, 타임라인, 참조 또는 필터 사이드 패널을 선택할 수 있습니다.
+예를 들어 Sites에서 컨텐츠 전용(기본값), 컨텐츠 트리, 타임라인, 참조 또는 필터 사이드 패널을 선택할 수 있습니다.
 
 컨텐츠만을 선택하면 레일 아이콘만 표시됩니다. 기타 옵션이 선택된 경우, 레일 아이콘 옆에 옵션 이름이 표시됩니다.
 
@@ -547,14 +568,14 @@ The **Rail Selector** is available at the top-left of the window and displays op
       * 모두 표시
 
 
-* 선택한 항목에 대한[ 댓글 추가/보기](#timelineaddingandviewingcomments) 이벤트 목록 맨 아래쪽에 **주석** 상자가 표시됩니다. 댓글을 입력(입력 후 Return 키)하면 댓글이 등록되고 이 댓글은 **댓글** 또는 **모두 표시**&#x200B;를 선택하면 표시됩니다.
+* [선택한 항목에 대한 댓글 추가/보기](#timelineaddingandviewingcomments) 이벤트 목록 맨 아래쪽에 **주석** 상자가 표시됩니다. 댓글을 입력(입력 후 Return 키)하면 댓글이 등록되고 이 댓글은 **댓글** 또는 **모두 표시**&#x200B;를 선택하면 표시됩니다.
 
 * 특정 콘솔에는 추가 기능이 있습니다. 예를 들면 [사이트 콘솔]에서 다음을 수행할 수 있습니다.
 
    * [버전 저장](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [워크플로우 시작](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
-These options accessible via the chevron next to the **Comment** field.
+이러한 옵션은 **댓글** 필드 옆에 있는 V자형 화살표를 통해 액세스할 수 있습니다.
 
 ![bh-27](assets/bh-27.png)
 
