@@ -3,8 +3,11 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 작성 사용 안내서
-translation-type: ht
-source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
+translation-type: tm+mt
+source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 100%
 
 ---
 
@@ -48,7 +51,7 @@ source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
    + [구성 요소 콘솔](default-components-console.md)
    + [응답형 레이아웃](responsive-layout.md)
    + [컨텐츠 인사이트](content-insights.md)
-   + [액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성)](creating-accessible-content.md)
+   + [액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성)](creating-accessible-content.md)
    + [스캐폴딩](scaffolding.md)
    + [디자인 모드에서 구성 요소 구성](default-components-designmode.md)
    + [기초 구성 요소](default-components-foundation.md)
