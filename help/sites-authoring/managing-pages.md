@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 13e34a6df8a513a1654bc5277539b924c809ab8a
+workflow-type: tm+mt
+source-wordcount: '2349'
+ht-degree: 93%
 
 ---
 
@@ -77,11 +80,11 @@ Depending on the configuration of your instance, use of `/content` might be opti
  /...
 ```
 
-This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-authoring/basic-handling.md#navigating) and perform actions on the pages. 새 사이트와 [새 페이지](#creating-a-new-page)를 만들 수도 있습니다.
+이 구조가 표시되는 **사이트** 콘솔에서는 [웹 사이트의 페이지를 모두 탐색](/help/sites-authoring/basic-handling.md#navigating)하고 페이지에서 작업을 수행할 수 있습니다. 새 사이트와 [새 페이지](#creating-a-new-page)를 만들 수도 있습니다.
 
 어떤 지점에서든, 헤더 막대의 탐색 표시를 통해 위쪽 분기를 볼 수 있습니다.
 
-![caop-01](assets/caop-01.png)
+![cop-01](assets/caop-01.png)
 
 ### 페이지 이름 지정 규칙 {#page-naming-conventions}
 
@@ -107,7 +110,7 @@ This structure can be viewed From the **Sites** console, where you can [navigate
 
 >[!NOTE]
 >
->페이지 이름을 정의할 때 되도록이면 간단하게 지정하되, 함축적이며 기억하기 쉽게 지정하여 독자가 쉽게 이해할 수 있도록 하는 것이 좋습니다. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
+>페이지 이름을 정의할 때 되도록이면 간단하게 지정하되, 함축적이며 기억하기 쉽게 지정하여 독자가 쉽게 이해할 수 있도록 하는 것이 좋습니다. 자세한 내용은 `title` 요소에 대한 [W3C 스타일 가이드](https://www.w3.org/Provider/Style/TITLE.html)를 참조하십시오.
 
 >일부 브라우저(예: 이전 버전의 IE)는 특정 길이까지만 URL을 허용하므로 기술적인 이유로 페이지 이름을 짧게 유지하는 경우도 있습니다.
 >
@@ -118,8 +121,8 @@ This structure can be viewed From the **Sites** console, where you can [navigate
 * &#39;a&#39; - &#39;z&#39;
 * &#39;A&#39; - &#39;Z&#39;
 * &#39;0&#39; - &#39;9&#39;
-* `_` (밑줄)
-* `-` (하이픈/빼기)
+* `_`(밑줄)
+* `-`(하이픈/빼기)
 
 허용되는 모든 문자에 대한 전체 상세 정보는 [이름 지정 규칙](/help/sites-developing/naming-conventions.md)에서 찾을 수 있습니다.
 
@@ -128,7 +131,7 @@ AEM이 [MongoMK 지속성 관리자 배포](/help/sites-deploying/recommended-de
 
 #### 제목 {#title}
 
-새 페이지를 만들 때 페이지 **제목**&#x200B;만 제공하면 AEM은 이 문자열에서 페이지 **이름**&#x200B;을 파생하고 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. 예:
+새 페이지를 만들 때 페이지 **제목**&#x200B;만 제공하면 AEM은 이 문자열에서 페이지 **이름**[을 파생하고 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. ](/help/sites-developing/naming-conventions.md) A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. 예:
 
 | 제목 | 파생되는 이름 |
 |---|---|
@@ -137,9 +140,9 @@ AEM이 [MongoMK 지속성 관리자 배포](/help/sites-deploying/recommended-de
 
 #### 이름 {#name}
 
-새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다. **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 설명 메시지와 함께 강조 표시됩니다.
+새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. [](/help/sites-developing/naming-conventions.md) **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 설명 메시지와 함께 강조 표시됩니다.
 
-![caop-02](assets/caop-02.png)
+![cop-02](assets/caop-02.png)
 
 >[!NOTE]
 언어 루트가 아닌 경우 ISO-639-1에 따라 페이지 이름으로 정의된 두 문자 코드를 사용할 수 없습니다.
@@ -190,14 +193,14 @@ Components are the elements provided by AEM so that you can add specific types o
 1. 새 페이지를 만들 위치로 이동합니다.
 1. 도구 모음에서 **만들기**&#x200B;를 사용하여 드롭다운 선택기를 연 다음, 목록에서 **페이지**&#x200B;를 선택합니다.
 
-   ![caop-03](assets/caop-03.png)
+   ![cop-03](assets/caop-03.png)
 
 1. 마법사의 첫 번째 단계에서 다음 중 하나를 수행할 수 있습니다.
 
    * 새 페이지를 만드는 데 사용할 템플릿을 선택한 후, **다음**&#x200B;을 클릭/탭하여 계속 진행합니다.
 
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
-   ![caop-04](assets/caop-04.png)
+   ![cop-04](assets/caop-04.png)
 
 1. 마법사의 마지막 단계에서 다음 중 하나를 수행할 수 있습니다.
 
@@ -220,7 +223,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
    새 페이지를 만드는 데 필요한 최소 정보는 **제목**&#x200B;입니다.
 
-   ![caop-05](assets/caop-05.png)
+   ![cop-05](assets/caop-05.png)
 
 1. **만들기**&#x200B;를 클릭하여 프로세스를 완료하고 새 페이지를 만듭니다. 확인 대화 상자에 페이지를 즉시 **열지** 또는 콘솔로 돌아갈지(**완료**) 여부를 묻는 메시지가 표시됩니다.
 
@@ -231,7 +234,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
 1. 콘솔로 돌아오면 새 페이지가 보입니다.
 
-   ![caop-06](assets/caop-06.png)
+   ![cop-06](assets/caop-06.png)
 
 >[!CAUTION]
 페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. 대신 [새 템플릿으로 launch를 만들 수는 있지만 ](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)그렇게 되면 이미 존재하는 컨텐츠는 모두 잃게 됩니다.
@@ -246,7 +249,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) 및 도구 모음
-   And then select the **Edit** icon:
+   그런 다음 **편집** 아이콘을 선택하십시오.
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
 
@@ -272,14 +275,18 @@ Components are the elements provided by AEM so that you can add specific types o
    선택 모드에 있을 경우, 페이지가 복사되자마자 이 모드가 종료됩니다.
 
 1. 페이지의 새 복사본을 위한 위치로 이동합니다.
-1. **붙여넣기** 페이지 아이콘을 사용합니다. 
+1. **붙여넣기** 아이콘은 오른쪽 드롭다운 화살표로 사용할 수 있습니다.
 
-   ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
+   ![붙여넣기](assets/paste-without-children.png)
 
-   이 위치에 원래 페이지와 하위 페이지의 복사본이 만들어집니다.
+   다음을 수행할 수 있습니다.
+   * **붙여넣기** 아이콘 자체를 선택합니다. 원본 페이지와 모든 하위 페이지의 복사본이 이 위치에 만들어집니다.
+   * 드롭다운 화살표를 선택하여 **하위 항목 없이 붙여넣기** 옵션을 표시합니다. 이 위치에 원본 페이지의 복사본이 만들어집니다. 하위 페이지는 복사되지 않습니다.
+   >[!NOTE]
+   하위 **없이 붙여넣기** 옵션은 AEM 6. [5 서비스 팩 5에서 사용할 수 있습니다](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html).
 
    >[!NOTE]
-   페이지를 원본과 동일한 이름의 페이지가 이미 있는 위치에 복사하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter` 이미 존재하는 경우 `winter` 해당 항목이 `winter1`변경됩니다.
+   페이지를 원본과 동일한 이름의 페이지가 이미 있는 위치에 복사하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter`가 이미 존재하는 경우 `winter`는 `winter1`이 됩니다.
 
 ### 페이지 이동 또는 이름 바꾸기 {#moving-or-renaming-a-page}
 
@@ -313,12 +320,12 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    * 페이지가 이동되면 사용할 페이지의 이름을 지정한 후 **다음**&#x200B;을 클릭/탭하여 다음 단계로 진행합니다.
 
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
-   ![caop-07](assets/caop-07.png)
+   ![cop-07](assets/caop-07.png)
 
    페이지를 이동하는 경우에만 페이지 이름이 동일하게 유지될 수 있습니다.
 
    >[!NOTE]
-   페이지를 동일한 이름의 페이지가 이미 있는 위치로 이동하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter` 이미 존재하는 경우 `winter` 해당 항목이 `winter1`변경됩니다.
+   페이지를 동일한 이름의 페이지가 이미 있는 위치로 이동하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter`가 이미 존재하는 경우 `winter`는 `winter1`이 됩니다.
 
 1. 마법사의 **대상 선택** 단계에서 다음 중 하나를 수행할 수 있습니다.
 
@@ -330,10 +337,10 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    >[!NOTE]
    기본적으로 이동/이름을 바꾼 페이지의 상위 페이지는 대상으로 선택됩니다.
 
-   ![caop-08](assets/caop-08.png)
+   ![cop-08](assets/caop-08.png)
 
    >[!NOTE]
-   페이지를 동일한 이름의 페이지가 이미 있는 위치로 이동하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter` 이미 존재하는 경우 `winter` 해당 항목이 `winter1`변경됩니다.
+   페이지를 동일한 이름의 페이지가 이미 있는 위치로 이동하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter`가 이미 존재하는 경우 `winter`는 `winter1`이 됩니다.
 
 1. 페이지가 연결되거나 참조된 경우 또는 게시된 경우 세부 사항이 **조정/다시 게시** 단계에서 나열됩니다.
 
@@ -342,7 +349,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    >[!NOTE]
    페이지가 연결 또는 참조되지 않은 경우 이 단계를 사용할 수 없습니다.
 
-   ![caop-09](assets/caop-09.png)
+   ![cop-09](assets/caop-09.png)
 
 1. **이동**&#x200B;을 선택하면 프로세스가 완료되고 페이지가 적절하게 이동되거나 페이지 이름이 변경됩니다.
 
@@ -375,7 +382,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 ### 페이지 잠금 {#locking-a-page}
 
-콘솔에서, 또는 개별 페이지를 편집할 때 [페이지 잠금/잠금 해제](/help/sites-authoring/editing-content.md#locking-a-page)할 수 있습니다. 페이지가 잠겨 있는지 여부도 두 위치 모두에 표시됩니다.
+콘솔에서 또는 개별 페이지를 편집할 때 [페이지 잠금/잠금 해제](/help/sites-authoring/editing-content.md#locking-a-page)할 수 있습니다. 페이지가 잠겨 있는지 여부도 두 위치 모두에 표시됩니다.
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 
@@ -388,7 +395,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 >[!CAUTION]
 * 폴더는 **사이트**&#x200B;나 다른 폴더 아래에서만 직접 만들 수 있습니다. 페이지 아래에서는 만들 수 없습니다.
-* 폴더에서 이동, 복사, 붙여넣기, 삭제, 게시, 게시 취소 및 보기/편집 속성을 수행할 수 있습니다.
+* 표준 작업인 이동, 복사, 붙여넣기, 삭제, 게시, 게시 취소 및 보기/편집 속성은 폴더에서 수행할 수 있습니다.
 * live copy 내에서는 폴더를 선택할 수 없습니다.
 
 
