@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13e34a6df8a513a1654bc5277539b924c809ab8a
+source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2350'
 ht-degree: 93%
 
 ---
@@ -283,7 +283,7 @@ Components are the elements provided by AEM so that you can add specific types o
    * **붙여넣기** 아이콘 자체를 선택합니다. 원본 페이지와 모든 하위 페이지의 복사본이 이 위치에 만들어집니다.
    * 드롭다운 화살표를 선택하여 **하위 항목 없이 붙여넣기** 옵션을 표시합니다. 이 위치에 원본 페이지의 복사본이 만들어집니다. 하위 페이지는 복사되지 않습니다.
    >[!NOTE]
-   하위 **없이 붙여넣기** 옵션은 AEM 6. [5 서비스 팩 5에서 사용할 수 있습니다](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html).
+   하위 **없이 붙여넣기** 옵션은 [AEM 6.5 서비스 팩 5부터](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) 사용할 수 있습니다.
 
    >[!NOTE]
    페이지를 원본과 동일한 이름의 페이지가 이미 있는 위치에 복사하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter`가 이미 존재하는 경우 `winter`는 `winter1`이 됩니다.
