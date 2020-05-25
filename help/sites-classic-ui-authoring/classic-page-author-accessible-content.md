@@ -11,12 +11,26 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
+workflow-type: tm+mt
+source-wordcount: '9241'
+ht-degree: 94%
 
 ---
 
 
 # 액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성){#creating-accessible-content-wcag-conformance}
+
+>[!CAUTION]
+>
+>클래식 UI는 AEM 6.4에서 더 이상 사용되지 않으므로 이 페이지의 컨텐츠는 WCAG 2.1용으로 업데이트되지 않았습니다.
+>
+>AEM 및 WCAG 2.1과 관련된 자세한 내용은 다음 페이지를 참조하십시오.
+>
+>* [AEM 및 웹 접근성 지침](/help/managing/web-accessibility.md)
+>* [WCAG 2.1에 대한 빠른 안내서](/help/managing/qg-wcag.md)
+>* [액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성)](/help/sites-authoring/creating-accessible-content.md)
+
 
 WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사용할 수 있도록 하는 데 도움이 되는 기술 독립적 지침 및 성능 기준으로 구성되어 있습니다.
 
@@ -25,7 +39,7 @@ WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사�
 >참고 항목:
 >
 >* 자세한 내용은 [WCAG 2.0에 대한 빠른 안내](/help/managing/qg-wcag.md) 참조
->* [액세스 가능한 컨텐츠를 만들려면 리치 텍스트 편집기 구성 ](/help/sites-administering/rte-accessible-content.md)참조
+>* [액세스 가능한 컨텐츠를 만들려면 리치 텍스트 편집기 구성 참조](/help/sites-administering/rte-accessible-content.md)
 >
 
 
@@ -33,7 +47,7 @@ WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사�
 이러한 적합성 수준에 따라 레벨 A(가장 낮음), 레벨 AA 및 레벨 AAA(가장 높음)로 등급이 지정됩니다. 이러한 등급을 간단히 정의하면 다음과 같습니다.
 
 * **레벨 A:** 사이트가 기본적인 최소 액세서빌러티 수준에 도달합니다. 이 수준을 충족하려면, 모든 레벨 A 성공 기준을 만족시켜야 합니다.
-* **** 레벨 AA:이는 대부분의 기술을 사용하여 대부분의 상황에서 액세스할 수 있도록 사이트의 액세서빌러티 수준이 향상되어 대부분의 사용자가 사이트에 액세스할 수 있도록 하기 위해 노력하는 이상적인 액세서빌러티 수준입니다.이 수준을 충족하려면 모든 레벨 A 및 레벨 AA 성공 기준을 만족시켜야 합니다.
+* **레벨 AA:** 추구할만한 이상적인 액세서빌러티 수준으로서, 사이트는 대부분의 기술을 사용하여 대부분의 상황에서 대부분의 사람에게 액세스할 수 있도록 향상된 액세서빌러티 수준에 도달합니다. 이 수준을 충족하려면, 모든 레벨 A 및 레벨 AA 성공 기준을 만족해야 합니다.
 * **레벨 AAA:** 사이트가 매우 높은 액세서빌러티 수준에 도달합니다. 이 수준을 충족하려면, 모든 레벨 A, 레벨 AA 및 레벨 AAA 성공 기준을 만족시켜야 합니다.
 
 사이트를 만들 때에는 사이트가 따라야 할 전반적인 수준을 결정해야 합니다.
@@ -62,7 +76,7 @@ WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사�
 
 [지침 1.1 텍스트 대체 요소: 대형 인쇄물, 점자, 음성, 기호 또는 더 간결한 언어와 같이, 사람들이 필요로 하는 다른 형식으로 변경시킬 수 있도록 텍스트가 아닌 컨텐츠에 대해 텍스트 대체 요소를 제공하십시오.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
-### 텍스트가 아닌 컨텐츠 (1.1.1) {#non-text-content}
+### 텍스트가 아닌 컨텐츠(1.1.1) {#non-text-content}
 
 * 성공 기준 1.1.1
 * 레벨 A
@@ -80,7 +94,7 @@ WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사�
 
 >[!NOTE]
 >
->**회전판**&#x200B;이나 **Slideshow**&#x200B;처럼 기본적으로 제공되는 몇 가지 구성 요소에서는 이미지에 대체 텍스트 설명을 추가하는 수단을 제공하지 않습니다. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>**회전판**&#x200B;이나 **Slideshow**&#x200B;처럼 기본적으로 제공되는 몇 가지 구성 요소에서는 이미지에 대체 텍스트 설명을 추가하는 수단을 제공하지 않습니다. AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt`[ 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 **이미지** 구성 요소 대화 상자의 **고급**&#x200B;이미지 속성 탭에서 **대체 텍스트**&#x200B;필드를 사용할 수 있습니다.
 
@@ -117,7 +131,7 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 * 대체 텍스트는 동일한 페이지의 근처에서 텍스트 양식으로 제공되는 컨텐츠를 복제하지 말아야 합니다. 많은 이미지는 이미 페이지의 텍스트로 설명한 핵심 사항의 삽화이므로 이미지에 해당하는 상세한 텍스트 대체 요소가 이미 존재할 수 있습니다.
 * 텍스트가 아닌 컨텐츠가 다른 페이지나 문서의 링크이고 동일한 링크의 일부를 형성하는 다른 텍스트가 없다면, 이미지에 대한 대체 텍스트는 이미지를 설명하는 것이 아니라 링크 대상을 가리켜야 합니다.
 * 텍스트가 아닌 컨텐츠가 단추 요소에 들어 있고 동일한 단추의 일부를 형성하는 텍스트가 없다면, 이미지의 대체 텍스트는 이미지를 설명하는 것이 아니라 단추의 기능을 가리켜야 합니다.
-* 이미지에 빈(null) 대체 텍스트를 지정할 수는 있지만 이미지에 대체 텍스트가 없거나(예: 순전히 장식용인 그래픽), 또는 해당 텍스트가 페이지 텍스트에 이미 존재하는 경우에만 사용할 수 있습니다.
+* 이미지에 빈(null) 대체 텍스트를 제공하는 것은 충분히 가능하지만, 이미지에 대체 텍스트가 없거나(예: 순전히 장식용인 그래픽일 경우) 동등한 텍스트가 이미 페이지 텍스트에 존재하는 경우에만 해당합니다.
 
 [W3C 초안: 유용한 텍스트 대체 요소를 제공하기 위한 HTML5 기술](https://dev.w3.org/html5/alt-techniques/)에는 더 많은 세부 정보와 다양한 유형의 이미지에 적합한 대체 텍스트 제공의 예가 있습니다.
 
@@ -125,11 +139,11 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
 * 일러스트레이션 사진:
 
-   사람, 물건 또는 장소의 이미지입니다. Think about the role of the photo in the page; an appropriate text equivalent is likely to be *Photo of[object ]*, but may be dependent on the surrounding text.
+   사람, 사물 또는 장소의 이미지입니다. Think about the role of the photo in the page; an appropriate text equivalent is likely to be *Photo of[object ]*, but may be dependent on the surrounding text.
 
 * 아이콘:
 
-   특정 정보를 전달하는 작은 그림(그래픽)입니다. 페이지와 사이트에서 일관되게 사용되어야 합니다. 인접한 텍스트의 불필요한 복제가 초래되는 경우가 아니라면 이 아이콘은 페이지나 사이트에서 표시될 때마다 동일한 짧고 간결한 대체 텍스트를 포함해야 합니다.
+   특정 정보를 전달하는 작은 그림 문자(그래픽)입니다. 페이지와 사이트에서 일관되게 사용되어야 합니다. 인접한 텍스트의 불필요한 복제가 초래되는 경우가 아니라면 이 아이콘은 페이지나 사이트에서 표시될 때마다 동일한 짧고 간결한 대체 텍스트를 포함해야 합니다.
 
 * 차트 및 그래프:
 
@@ -155,7 +169,7 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
    공간 데이터를 제공하는 그래픽의 경우(예: 개체나 프로세스 간 관계를 설명하는 데 도움이 되도록), 핵심 메시지가 텍스트 형식으로 제공되는지 확인하십시오. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
 
-* CAPTCHAs:
+* CAPTCHA:
 
    A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. 이 테스트는 인간을 악성 소프트웨어로부터 구별하기 위해 웹 페이지에서 사용되는 보안 검사지만, 액세서빌러티 장벽을 생성할 수 있습니다. 보안 테스트를 통과하기 위해 보이는 내용을 설명할 것을 사용자에게 요구하는 이미지가 여기에 해당합니다. 이 이미지에 대한 대체 텍스트를 제공하는 것은 당연히 불가능하므로 대신 대체하는 비그래픽 해결 방법을 고려해야 합니다.
 
@@ -167,7 +181,7 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
 * 배경 이미지:
 
-   이러한 기능은 HTML이 아니라 CSS(Cascading Style Sheet)를 사용하여 얻을 수 있습니다. 이는 대체 텍스트 값을 지정할 수 없음을 의미합니다. 따라서 배경 이미지는 중요한 텍스트 정보를 제공하지 않아야 합니다. 그럴 경우 이 정보는 페이지의 텍스트에서도 제공되어야 합니다.
+   이러한 기능은 HTML이 아니라 CSS(Cascading Style Sheet)를 사용하여 만들어집니다. 이는 대체 텍스트 값을 지정할 수 없음을 의미합니다. 따라서 배경 이미지는 중요한 텍스트 정보를 제공해서는 안 됩니다. 그럴 경우 이 정보도 페이지의 텍스트로 제공되어야 합니다.
 
    하지만 이미지를 표시할 수 없을 때에는 대체 배경을 표시하는 것이 중요합니다.
 
@@ -192,7 +206,7 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
 * 성공 기준 1.2.1
 * 레벨 A
-* 오디오 전용 및 비디오 전용(사전 녹화된): 사전 녹음된 오디오 전용 및 사전 녹화된 비디오 전용 미디어의 경우 오디오나 비디오가 텍스트에 대한 대체 미디어이고 다음와 같이 레이블로 명시되어 있는 경우를 제외하면 다음 사항이 적용됩니다.
+* 오디오 전용 및 비디오 전용(사전 녹화된): 사전 녹음된 오디오 전용 및 사전 녹화된 비디오 전용 미디어의 경우 오디오나 비디오가 텍스트에 대한 대체 미디어이고 다음와 같이 레이블로 명시된 경우를 제외하면 다음 사항이 적용됩니다.
 
    * 사전 녹음된 오디오 전용: 사전 녹음된 오디오 전용 컨텐츠에 대해 이에 상당하는 정보를 나타내는 시간 기반 미디어의 대체 요소가 제공됩니다.
    * 사전 녹화된 비디오: 사전 녹화된 비디오 전용 컨텐츠에 대해 이에 상당하는 정보를 나타내는 시간 기반 미디어나 오디오 트랙의 대체 요소가 제공됩니다.
@@ -203,7 +217,7 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
 * 사운드트랙이 없거나 사운드트랙이 비디오나 애니메이션에서 일어나고 있는 일을 알려주기에 충분하지 않은데 시각 장애가 있는 사람
 * 청각 장애가 있거나 소리를 아예 들을 수 없거나 사운드트랙을 들을 수 없는 사람
-* 사운드트랙을 들을 수 있지만, 말하는 내용을 이해하지 못하는 사람(예를 들어, 이해할 수 없는 언어로 되어 있는 경우).
+* 사운드트랙을 들을 수 있지만, 말하는 내용을 이해하지 못하는 사람(예를 들어, 이해할 수 없는 언어로 된 경우).
 
 Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하지 않는 브라우저나 장치를 사용하는 사람도 비디오나 오디오를 사용하지 못할 수 있습니다.
 
@@ -230,7 +244,7 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 
 >[!NOTE]
 >
->정보 제공용 컨텐츠가 있는 멀티미디어를 사용하는 경우 대체 요소에 대한 링크도 만들어야 합니다.예를 들어 텍스트 스크립트를 포함하려면 HTML 페이지를 만들어 텍스트 스크립트를 표시한 다음 오디오 콘텐트 옆이나 아래에 링크를 추가합니다.
+>정보성 컨텐츠가 있는 멀티미디어를 사용하는 경우 대체 요소에 대한 링크도 만들어야 합니다. 예를 들어, 텍스트 스크립트를 포함하려면 HTML 페이지를 만들어 텍스트 스크립트를 표시한 다음 오디오 컨텐츠의 옆이나 아래에 링크를 추가합니다.
 
 #### 추가 정보 - 오디오 전용 및 비디오 전용(사전 녹화된)(1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
 
@@ -275,9 +289,9 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 
 * 성공 기준 1.2.3
 * 레벨 A
-* 오디오 설명 또는 미디어 대체 요소(사전 녹음된): 미디어가 텍스트의 미디어 대체 요소이고 이것이 레이블로 명시되어 있는 경우를 제외하면 동기화된 미디어에 대해 사전 녹화된 비디오 컨텐츠의 시간 기반 미디어나 오디오 설명에 대한 대체 요소가 제공됩니다.
+* 오디오 설명 또는 미디어 대체 요소(사전 녹음된): 미디어가 텍스트의 미디어 대체 요소이고 이것이 레이블로 명시된 경우를 제외하면 동기화된 미디어에 대해 사전 녹화된 비디오 컨텐츠의 시간 기반 미디어나 오디오 설명에 대한 대체 요소가 제공됩니다.
 
-#### 목적 - 오디오 설명 또는 미디어 대체 요소(사전 녹음된) (1.2.3) {#purpose-audio-description-or-media-alternative-pre-recorded}
+#### 목적 - 오디오 설명 또는 미디어 대체 요소(사전 녹음된)(1.2.3) {#purpose-audio-description-or-media-alternative-pre-recorded}
 
 앞이 안 보이거나 시각 장애가 있는 사람은 비디오나 애니메이션에 있는 정보가 시각적으로만 제공되거나, 사운드트랙이 시각적으로 일어나고 있는 상황에 대해 이해할 수 있도록 충분한 정보를 제공하지 않는 경우 액세서빌러티 장벽을 경험하게 됩니다.
 
@@ -297,13 +311,13 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 
 1. 비디오나 애니메이션의 오디오 요소와 시각적 요소에 상응하는 적절한 텍스트인 텍스트 스크립트를 제공합니다. 여기에는 가능할 경우 말하고 있는 사람, 설정 설명, 음성 표현에 대한 명시를 포함해야 합니다. 길이에 따라 텍스트 스크립트를 비디오나 애니메이션과 동일한 페이지에 배치하거나, 별도의 페이지에 배치할 수 있습니다. 후자를 선택하는 경우 비디오나 애니메이션에 인접한 텍스트 스크립트에 링크를 제공하십시오.
 
-오디오 설명이 있는 비디오를 만드는 방법에 대한 정확한 설명은 이 안내서의 범위를 벗어납니다. 비디오와 오디오 설명을 만드는 것은 시간이 많이 소요될 수 있지만, 다른 Adobe 제품을 사용하면 이런 작업을 수행하는 데 도움이 될 수 있습니다. If you create content in Adobe Flash Professional, you should also create a script to prompt the user to download the appropriate plug-in, and provide a text alternative through the `<noscript>` element.
+오디오 설명이 있는 비디오를 만드는 방법에 대한 정확한 설명은 이 안내서의 범위를 벗어납니다. 비디오와 오디오 설명을 만드는 것은 시간이 많이 소요될 수 있지만, 다른 Adobe 제품을 사용하면 이런 작업을 수행하는 데 도움이 될 수 있습니다. Adobe Flash Professional에서 컨텐츠를 만드는 경우 사용자에게 적절한 플러그인을 다운로드하라는 메시지를 표시하는 스크립트도 만들고 `<noscript>` 요소를 통해 텍스트 대체 요소도 제공해야 합니다.
 
 #### 추가 정보 - 오디오 설명 또는 미디어 대체 요소(사전 녹음된)(1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
 * [성공 기준 이해 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [성공 기준을 충족하는 방법 1.2.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://www.adobe.com/products/premiere/encore/)
+* [Adobe Encore CS5](https://www.adobe.com/kr/products/premiere/encore/)
 
 ### 캡션(라이브) (1.2.4)  {#captions-live}
 
@@ -313,11 +327,11 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 
 #### 목적 - 캡션(라이브)(1.2.4) {#purpose-captions-live}
 
-This success criterion is identical to [Captions (Pre-Recorded)](#captions-pre-recorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
+이 성공 기준이 웹캐스트와 같은 라이브 프레젠테이션을 다루는 경우를 제외하면 이 성공 기준은 소리를 아예 들을 수 없거나 청각 장애가 있는 사람이 경험하는 액세서빌러티 장벽을 해결한다는 점에서 [캡션(사전 녹음된)](#captions-pre-recorded)과 동일합니다.
 
 #### 충족하는 방법 - 캡션(라이브)(1.2.4) {#how-to-meet-captions-live}
 
-Follow the guidance provided for [Captions (Pre-Recorded)](#captions-pre-recorded) above. However, due to the live nature of the media, caption provision has to be created as quickly as possible and in response to what is happening. Therefore, you should consider using real time captioning or speech-to-text tools.
+위의 [캡션(사전 기록된)](#captions-pre-recorded)에 대해 제공된 지침을 따르십시오. 하지만 미디어에는 라이브 특성이 있으므로 캡션은 가능한 한 빨리 그리고 일어나고 있는 내용에 대응하여 제공해야 합니다. 따라서 실시간 캡션 기능이나 음성을 텍스트로 변환하는 도구의 사용을 고려해야 합니다.
 
 상세한 지침은 이 문서의 범위를 벗어나지만 다음 리소스는 유용한 정보를 제공합니다.
 
@@ -354,7 +368,7 @@ Follow the guidance provided for [Captions (Pre-Recorded)](#captions-pre-recorde
 
 이 지침에는 다음과 같은 사람을 지원하는 데 필요한 요구 사항이 포함됩니다.
 
-* *표준 *2차원, 다중 열, 컬러 웹 페이지 레이아웃에서 작성자가 제공한 정보에 액세스할 수 없을 수 있습니다.
+* *표준*의 2차원, 다중 열, 컬러 웹 페이지 레이아웃으로 작성자가 보여주는 대로 정보에 액세스할 수 없는 사람
 
 * 오디오만 사용할 수 있거나, 큰 텍스트나 높은 대비와 같은 대체 시각적 표시만 사용할 수 있는 사람
 
@@ -404,13 +418,13 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
 * **목록 사용**: HTML을 사용하여 세 가지 서로 다른 유형의 목록을 지정할 수 있습니다.
 
-   * The `<ul>` element is used for *unordered* lists (bulleted) lists. Individual list items are identified using the `<li>` element.
+   * The `<ul>` element is used for *unordered* lists (bulleted) lists. 개별 목록 항목이 `<li>` 요소를 사용하여 식별됩니다.
 
       in the RTE, use the **Bulleted List** icon.
 
-   * The `<ol>` element is used for *numbered* lists. Individual list items are identified using the `<li>` element.
+   * `<ol>` 요소는 *번호* 목록에 사용됩니다. 개별 목록 항목이 `<li>` 요소를 사용하여 식별됩니다.
 
-      RTE에서는 **번호 매기기 목록** 아이콘을 사용하십시오.
+      RTE에서는 **번호 목록** 아이콘을 사용하십시오.
    기존 컨텐츠를 특정 목록 유형으로 변경하려면, 적절한 텍스트를 강조 표시하고 적절한 목록 유형을 선택하십시오. 단락 텍스트가 어떻게 입력되는지를 보여주는 앞의 예에서처럼, 적절한 목록 요소가 HTML에 자동으로 추가되지만 소스 편집 보기에서 이를 볼 수도 있습니다.
 
    >[!NOTE]
@@ -420,20 +434,20 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
    데이터 표는 HTML 표 요소를 사용하여 식별해야 합니다.
 
-   * one `<table>` element
-   * a `<tr>` element for each row of the table
-   * a `<th>` element for each row and column heading
-   * a `<td>` element for every data cell
+   * 하나의 `<table>` 요소
+   * 표의 각 행에 대한 `<tr>` 요소
+   * 각 행 및 열 머리글에 대한 `<th>` 요소
+   * 모든 데이터 셀에 대한 `<td>` 요소
    >[!NOTE]
    표는 **표** 구성 요소로 구현해야 합니다. [텍스트] 구성 요소에서 표를 만들 수 있지만 권장되는 방법은 아닙니다.
 
    또한 액세스 가능한 표에서는 다음 요소와 속성을 사용합니다.
 
-   * The `<caption>` element is used to provide a visible caption for the table. 캡션은 기본적으로 표의 위쪽 중앙에 나타나지만 CSS를 사용하여 위치를 적절하게 지정할 수 있습니다. 캡션은 표와 프로그래밍 방식으로 연결되어 있으므로 컨텐츠에 소개를 제공하는 데 유용한 방법입니다.
-   * The `<h3 class="summary">` element assists non-sighted users to more easily understand the information presented within a table, by providing a synopsis of what a sighted user can see. 이 요소는 복잡하거나 색다른 표 레이아웃을 사용할 때 유용합니다(이 속성은 브라우저에 표시되지 않고 보조 기술에만 인식됨).
-   * The `scope` attribute of the `<th>` element is used to indicate whether a cell represents a header for a particular row, or for a particular column. 유사한 접근 방법은 복잡한 표에서 헤더와 id 속성을 사용하는 것입니다. 이 경우 데이터 셀이 하나 이상의 헤더와 연결되어 있을 수 있습니다.
+   * `<caption>` 요소를 사용하여 표에 보이는 캡션을 제공합니다. 캡션은 기본적으로 표의 위쪽 중앙에 나타나지만 CSS를 사용하여 위치를 적절하게 지정할 수 있습니다. 캡션은 표와 프로그래밍 방식으로 연결되어 있으므로 컨텐츠에 소개를 제공하는 데 유용한 방법입니다.
+   * `<h3 class="summary">` 요소는 시력이 정상인 사용자가 볼 수 있는 내용에 대한 개요를 제공함으로써, 안 보이는 사용자가 표 내에 제시된 정보를 더 쉽게 이해할 수 있도록 도와줍니다. 이 요소는 복잡하거나 색다른 표 레이아웃을 사용할 때 유용합니다(이 속성은 브라우저에 표시되지 않고 보조 기술에만 인식됨).
+   * `<th>` 요소의 `scope` 특성은 셀이 특정 행 또는 특정 열에 대한 헤더를 표현하는지 여부를 나타내기 위해 사용됩니다. 유사한 접근 방법은 복잡한 표에서 헤더와 id 속성을 사용하는 것입니다. 이 경우 데이터 셀이 하나 이상의 헤더와 연결되어 있을 수 있습니다.
    >[!NOTE]
-   By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+   시스템 관리자가 **표 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
    **표**&#x200B;를 추가할 때 이 대화 상자를 사용하여 **표 속성**&#x200B;을 구성할 수 있습니다.
 
@@ -447,7 +461,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
 * **복잡한 데이터 표:**
 
-   In some cases, where there are complex tables with two or more levels of headers, then the basic Table Properties may not be enough to provide all the structural information necessary. For these kinds of complex tables, direct relationships need to be created between the headers and their related cells using the **header** and **id** attributes. For example, in the table below headers and ids are matched to make a programmatic association for assistive technology users.
+   경우에 따라 두 개 이상의 헤더 수준이 있는 복잡한 표가 있을 때 기본 표 속성이 모든 필요한 구조적 정보를 제공하기에 충분하지 않을 수 있습니다. 이러한 종류의 복잡한 표의 경우, **header** 및 **id** 특성을 사용하여 헤더와 헤더 관련 셀 간에 직접적인 관계를 만들어야 합니다. 예를 들어, 아래 표에서 headers와 id는 보조 기술 사용자를 위해 프로그램 방식으로 연계되도록 일치됩니다.
 
    >[!NOTE]
    기본적으로 제공되는 설치에서는 id 속성을 사용할 수 없습니다. RTE에서 HTML 규칙과 직렬 변환기를 구성하여 사용하도록 만들 수 있습니다.
@@ -537,7 +551,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
 #### 목적 - 색상 사용(1.4.1) {#purpose-use-of-color}
 
-색상은 분명히 웹 페이지의 미적 호소력을 향상시키는 효과적 방법이며 정보를 전달하는 데에도 유용합니다. 하지만 실명에서부터 특정 색상을 구별하지 못하는 색약에 이르기까지 다양한 시각 장애가 있습니다. 따라서 색상 코딩은 정보를 제공하는 데 있어 믿을 수 있는 방법이 아닙니다.
+색상은 분명히 웹 페이지의 미적 호소력을 향상하는 효과적 방법이며 정보를 전달하는 데에도 유용합니다. 하지만 실명에서부터 특정 색상을 구별하지 못하는 색약에 이르기까지 다양한 시각 장애가 있습니다. 따라서 색상 코딩은 정보를 제공하는 데 있어 믿을 수 있는 방법이 아닙니다.
 
 예를 들어, 적색-녹색 색맹인 사람은 녹색 색조와 빨간색 색조를 구별하지 못할 것입니다. 이들은 두 색상을 모두 제 3의 색상(예: 갈색)으로 인식하므로 빨간색, 녹색 및 갈색을 구분할 수 없을 것입니다.
 
@@ -592,7 +606,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
 특정 시각 장애가 있는 사람은 특정의 낮은 대비 색상 쌍 간을 구별하지 못할 수 있습니다. 다음 중 하나의 경우 이러한 사람에 대해 액세서빌러티 문제가 발생할 수 있습니다.
 
-* 텍스트가 배경색과 대비가 잘 되지 않는 경우
+* 텍스트가 배경색과 대비가 잘 안되는 경우
 * 텍스트의 색상 코딩(링크 텍스트와 비링크 텍스트 등)은 정보를 구별하는 데 중요합니다.
 
 >[!NOTE]
@@ -696,14 +710,14 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
 #### 목적 - 세 번 발광 또는 임계값 미만(2.3.1) {#purpose-three-flashes-or-below-threshold}
 
-경우에 따라 발광하는 컨텐츠가 감광성 발작을 초래할 수 있습니다. 이 성공 기준은 이와 같은 사용자가 발광하는 컨텐츠에 대한 걱정 없이 모든 컨텐츠에 액세스하여 경험할 수 있도록 해줍니다.
+때에 따라 발광하는 컨텐츠가 감광성 발작을 초래할 수 있습니다. 이 성공 기준은 이와 같은 사용자가 발광하는 컨텐츠에 대한 걱정 없이 모든 컨텐츠에 액세스하여 경험할 수 있도록 해줍니다.
 
 #### 충족하는 방법 - 세 번 발광 또는 임계값 미만(2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
 
 다음 기술이 적용되었는지 확인하는 조치를 취해야 합니다.
 
 * 구성 요소가 1초 동안 세 번 넘게 발광하지 않도록 하십시오.
-* If the above condition cannot be met, then display flashing content within a *small safe area* in pixels on the screen. This area is calculated using a complex formula, covered in [G176: Keeping the flashing area small enough](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), so this technique should only be followed if flashing content is *absolutely* necessary.
+* 위의 조건을 충족할 수 없으면 발광하는 컨텐츠를 화면에서 픽셀 단위의 *작은 안전 영역* 내에 표시하십시오. 이 영역은 [G176: 발광하는 영역을 충분히 작게 유지하기](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176)에 설명된 복잡한 공식을 사용하여 계산되며, 따라서 이 기술은 발광 컨텐츠가 *절대적으로* 필요한 경우에만 수행해야 합니다.
 
 #### 추가 정보 - 세 번 발광 또는 임계값 미만(2.3.1) {#more-information-three-flashes-or-below-threshold}
 
@@ -752,10 +766,10 @@ You can also edit the page title when editing a page, which is accessible by **S
 
 * 좋은 예:
 
-   * 텍스트:2010년 가을 학기 저녁 수업 - 세부 사항.
+   * 텍스트: 2010년 가을 학기 저녁 강의 – 세부 정보.
    * 이유: 링크 요소의 텍스트와 위치를 약간 조정하여 링크 텍스트를 개선할 수 있습니다.
 
-Links should be phrased consistently across pages, especially for navigation bars. For example, if a link to a specific page is named **Publications** on one page, use that text on other pages to ensure consistency.
+페이지 간에 링크를 일관되게 표현해야 합니다(특히 탐색 막대의 경우). 예를 들어, 특정 페이지에 연결된 링크를 한 페이지에서 **게시물**&#x200B;이라고 이름을 지정했으면 다른 페이지에서도 이 텍스트를 사용하여 일관성을 보장해야 합니다.
 
 하지만 작성 시 제목의 사용을 둘러싸고 몇 가지 문제가 있습니다.
 
@@ -765,7 +779,7 @@ Links should be phrased consistently across pages, especially for navigation bar
 
 따라서 title 속성을 사용하여 링크에 추가 컨텍스트를 제공할 때에는 그 한계를 알고 적절한 링크 텍스트에 대한 대체 요소로 사용하지 마십시오.
 
-Where the link is made up of an image, make sure that the alternative text for the image describes the destination of the link. For example, if an image of a bookshelf is set as a link to a person’s publications, the alternative text should read **John Smith’s publications** and not **Bookshelf**.
+링크가 이미지로 이루어져 있을 경우 이미지에 대한 대체 텍스트가 링크 대상에 대해 설명하도록 하십시오. 예를 들어, 책장 이미지가 어떤 사람의 간행물에 대한 링크로 설정된 경우 대체 텍스트는 **John Smith의 간행물**&#x200B;이라고 읽어야지 **책장**&#x200B;이라고 읽으면 안 됩니다.
 
 또는 링크 앵커에 이미지 요소 이외에 링크의 목적을 설명하는 텍스트가 들어 있으면(그래서 해당 텍스트가 이미지와 함께 표시된다면), 이미지에 빈 alt 속성을 사용하십시오.
 
@@ -779,17 +793,17 @@ John Smith’s publications
 >[!NOTE]
 위의 코드 조각은 실례입니다. **이미지** 구성 요소를 사용하는 것이 좋습니다.
 
-추가 컨텍스트를 필요로 하지 않고 링크의 목적을 알려주는 링크 텍스트를 제공하는 것이 좋지만, 이것이 항상 가능하지는 않습니다. Context free links can be used in the following cases, HTML examples of which can be found in [How to Meet Success Criterion 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs).
+추가 컨텍스트를 필요로 하지 않고 링크의 목적을 알려주는 링크 텍스트를 제공하는 것이 좋지만, 이것이 항상 가능하지는 않습니다. 컨텍스트가 없는 링크는 다음 경우에 사용할 수 있습니다. HTML 예는 [성공 기준 충족 방법 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs)에서 찾을 수 있습니다.
 
 * 링크 텍스트가 밀접히 관련된 링크의 일부이고 이 링크를 둘러싼 목록 항목에서 컨텍스트를 충분히 제공하는 경우
-* Where the purpose of a link can be clearly identified from the *preceding* (not the following) paragraph text.
+* 링크의 목적을 *이전*(이후가 아닌) 단락 텍스트에서 명확히 식별할 수 있는 경우
 * 링크가 데이터 표 내에 들어 있어서 연결된 머리글에서 해당 목적을 명확히 식별할 수 있는 경우
 * 링크 목록이 일련의 머리글 내에 있고 머리글 자체에서 적절한 컨텍스트를 제공하는 경우
 * 링크 목록이 중첩된 링크 내에 있고 중첩된 목록의 위에 있는 상위 목록 항목이 적절한 컨텍스트를 제공하는 경우
 
 경우에 따라 한 페이지에 링크가 여러 개 있으면(각각이 복잡하지만 필요한 세부 정보로 링크의 방향을 제공), 정확히 동일한 컨텐츠를 표시하지만 링크 텍스트가 세부적이지 않은 웹 페이지의 대체 버전을 제공하는 것이 적절할 수 있습니다.
 
-Alternatively, scripts can be used so that a minimal amount of text is provided within the link itself, but on activating an appropriate control positioned towards the top of the page, the link text is *expanded* into further detail. A similar approach is to use CSS to *hide* the full link from sighted users, but still output it in full to screen reader users. This falls outside the scope of this document, but more information on how this can be achieved can be found in the [More Information - Link Purpose (In Context) (2.4.4)](#more-information-link-purpose-in-context) section.
+또는 스크립트를 사용하여 링크 자체 내에 최소의 텍스트를 표시하도록 하면서도, 페이지 상단 방향으로 배치된 적절한 컨트롤을 활성화하면 링크 텍스트가 *확장되어* 더 자세한 정보를 표시하도록 할 수 있습니다. 유사한 접근 방법은 CSS를 사용하여 보이는 사용자가 볼 수 없도록 전체 링크를 *숨기되,* 여전히 스크린 리더 사용자에게는 완전히 출력하는 것입니다. 이것은 이 문서의 범위를 벗어나지만, 이 작업을 어떻게 할 수 있는지에 대해 [추가 정보 - 링크 목적(컨텍스트 내)(2.4.4)](#more-information-link-purpose-in-context) 섹션에서 찾을 수 있습니다.
 
 #### 추가 정보 - 링크 목적(컨텍스트 내)(2.4.4) {#more-information-link-purpose-in-context}
 
@@ -805,7 +819,7 @@ Alternatively, scripts can be used so that a minimal amount of text is provided 
 
 [지침 3.1 읽기 가능: 텍스트 컨텐츠를 읽기 가능하고 이해 가능하도록 만들기](https://www.w3.org/TR/WCAG20/#meaning)
 
-### 페이지 언어 (3.1.1) {#language-of-page}
+### 페이지 언어(3.1.1) {#language-of-page}
 
 * 성공 기준 3.1.1
 * 레벨 A
@@ -817,9 +831,9 @@ Alternatively, scripts can be used so that a minimal amount of text is provided 
 
 #### 충족하는 방법 - 페이지 언어(3.1.1) {#how-to-meet-language-of-page}
 
-To meet this success criterion, the default language of a web page can be identified using the `lang` attribute within the `<html>` element at the top of the page. 예:
+이 성공 기준을 충족하기 위해 페이지의 상단에 있는 `<html>` 요소 내에서 `lang` 특성을 사용하여 웹 페이지의 기본 언어를 식별할 수 있습니다. 예:
 
-* If a page is written in British English, the `<html>` element should read:
+* 페이지가 영국 영어로 작성되면, `<html>` 요소는 다음과 같이 읽어야 합니다.
 
    `<html lang = “en-gb”>`
 
@@ -827,7 +841,7 @@ To meet this success criterion, the default language of a web page can be identi
 
    `<html lang = “en-us”>`
 
-**AEM에서 페이지의 기본 언어는 페이지를 만들 때 설정되지만, 페이지를 편집할 때 사이드 킥에서 페이지 탭 - 페이지**&#x200B;속성에&#x200B;**액세스할**&#x200B;수&#x200B;****&#x200B;있는경우페이지속성...- **고급** 탭.
+AEM에서는 페이지를 생성할 때 페이지의 기본 언어가 설정되어 있지만 **사이드 킥** - **페이지** 탭 - **페이지 속성...** - **고급** 탭으로 이동하여 페이지를 편집할 때도 변경할 수 있습니다.
 
 #### 추가 정보 - 페이지 언어(3.1.1) {#more-information-language-of-page}
 
@@ -835,7 +849,7 @@ To meet this success criterion, the default language of a web page can be identi
 * [충족하는 방법 - 성공 기준 3.1.1](https://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id)
 * 코드는 ISO 639-1을 기반으로 합니다. 각 언어에 대한 더 확장된 코드 목록은 [W3 Schools 사이트](https://www.w3schools.com/tags/ref_language_codes.asp)에서 찾을 수 있습니다.
 
-### 부분 언어 (3.1.2)  {#language-of-parts}
+### 부분 언어(3.1.2)  {#language-of-parts}
 
 * 성공 기준 3.1.2
 * 레벨 AA
@@ -871,9 +885,9 @@ To meet this success criterion, the default language of a web page can be identi
 ```
 
 >[!NOTE]
-이름이나 도시를 서로 다른 언어로 포함할 때, 또는 기본 언어에서 흔하게 사용하게 된 외래나 구(예: 영어의 *schadenfreude*)를 사용할 때에는 이 성공 기준을 따를 필요가 없습니다.
+이름이나 도시를 서로 다른 언어로 포함할 때 또는 기본 언어에서 흔하게 사용하게 된 외래나 구(예: 영어의 *schadenfreude*)를 사용할 때에는 이 성공 기준을 따를 필요가 없습니다.
 
-적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. 또는 시스템 관리자가 `lang`[ 특성을 RTE에 포함할 수 있습니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 #### 추가 정보 - 부분 언어(3.1.2) {#more-information-language-of-parts}
 
@@ -900,7 +914,7 @@ AEM에서 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페이�
 
 이 **제목** 필드는 보조 기술에 사용할 수 있는 레이블을 제공할 때 필드 요소에 사용해야 합니다. 필드의 옆에 텍스트로 레이블을 쓰는 것만으로는 충분하지 않습니다.
 
-For some form components it is also possible to visually hide labels using the **Hide Title** checkbox. Labels hidden in this way are still available to assistive technology, but not displayed on the screen. While this can be a good approach in some situations it is usually best to include a visual label wherever possible, as some users may be looking at a very small section of the screen (one field at a time) and need the labels to identify the field correctly.
+일부 양식 구성 요소의 경우 **제목 숨기기** 확인란을 사용하여 레이블을 보이지 않게 숨길 수도 있습니다. 이런 식으로 숨겨진 레이블은 화면에는 표시되지 않지만 여전히 보조 기술에서 사용할 수 있습니다. 어떤 사용자는 화면의 매우 작은 부분(한 번에 한 필드)을 보고 있어서 필드를 올바르게 식별하기 위해 레이블을 필요로 할 수 있으므로 가능하다면 시각적 레이블을 포함하는 것이 최상인 경우 이 방법이 좋은 접근 방법일 수 있습니다.
 
 #### 이미지 단추 {#image-buttons}
 
@@ -914,11 +928,11 @@ For some form components it is also possible to visually hide labels using the *
 
 ![라디오 그룹에 항목 추가. 그룹 제목은 제목 필드에 정의된 &#39;Contact me by&#39;입니다.](assets/chlimage_1-24a.png)
 
-하지만 그룹 제목과 라디오 단추 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔를 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성** 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다([추가 HTML 요소 및 속성에 대한 지원 추가](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes) 참조).
+하지만 그룹 제목과 라디오 단추 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔을 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 #### 양식에 대한 추가 고려 사항 {#additional-considerations-for-forms}
 
-데이터를 특정 형식으로 입력해야 하는 경우 레이블 텍스트에서 이를 분명히 하십시오. 예를 들어, 날짜를 `DD-MM-YYYY` 형식으로 입력해야 하는 경우, 특히 레이블의 일부로 이 형식을 표현하십시오. 이는 스크린 리더 사용자가 해당 필드를 만나면 형식에 대한 추가 정보와 함께 레이블을 자동으로 알림을 의미합니다.
+데이터를 특정 형식으로 입력해야 하는 경우 레이블 텍스트에서 이를 분명히 하십시오. 예를 들어, 날짜를 `DD-MM-YYYY` 형식으로 입력해야 하는 경우, 특히 레이블 일부로 이 형식을 표현하십시오. 이는 스크린 리더 사용자가 해당 필드를 만나면 형식에 대한 추가 정보와 함께 레이블을 자동으로 알림을 의미합니다.
 
 양식 필드에 대한 입력이 필수일 경우, 필요한 단어를 레이블의 일부로 사용하여 이를 명확히 하십시오. AEM에서는 필드가 필수이면 별표를 추가하지만, 레이블 자체에 `required` 라는 단어를 포함하는 것이 좋을 것입니다(편집 대화 상자의 **제목** 필드).
 
@@ -928,13 +942,13 @@ For some form components it is also possible to visually hide labels using the *
 
 * 확인란 또는 라디오 단추:
 
-   필드의 오른쪽에 레이블이 바로 배치됩니다.
+   필드의 바로 오른쪽에 레이블이 배치됩니다.
 
 * 기타 모든 양식 구성 요소(예: 텍스트 상자, 콤보 상자):
 
-   레이블은 필드의 바로 위 또는 왼쪽에 배치됩니다.
+   레이블은 필드의 바로 위나 왼쪽에 배치됩니다.
 
-In simple forms with very limited functionality, appropriately labelling a `Submit` button can act as a label for the adjacent field (for example `Search`). 이는 레이블 텍스트를 배치할 공간을 찾는 것이 어려운 상황에서 유용합니다.
+기능이 매우 제한된 간단한 양식에서는 `Submit` 단추에 적절히 레이블을 지정하면 이것이 인접 필드(예: `Search`)에 대한 레이블로 작동할 수 있습니다. 이는 레이블 텍스트를 배치할 공간을 찾는 것이 어려운 상황에서 유용합니다.
 
 #### 추가 정보 - 레이블 또는 지침(3.3.2) {#more-information-labels-or-instructions}
 
