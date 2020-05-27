@@ -9,8 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
-translation-type: ht
-source-git-commit: e5e918c0b971159bc99bdcf604c89439c2b08244
+translation-type: tm+mt
+source-git-commit: fb59bd52be86894e93063f4b7c32aef0ed23250b
+workflow-type: tm+mt
+source-wordcount: '1748'
+ht-degree: 99%
 
 ---
 
@@ -75,7 +78,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 * [AEM 6.5 서비스 팩 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes/sp-release-notes.html)
 
-최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **지원 센터에 문의**&#x200B;하십시오.
+**최신 AEM 패키지** 또는 서비스 팩을 찾을 수 없는 경우 고객 지원 센터에 문의하십시오.
 
 ## 구성 만들기 {#configure-new-integration-65}
 
@@ -88,9 +91,9 @@ Brand Portal에 AEM Assets을 처음 구성하는 경우 단계를 나열된 순
 
 ### IMS 구성 만들기 {#create-ims-configuration}
 
-IMS 구성은 AEM Assets 작성자 인스턴스로 Brand Portal 임차인을 인증합니다.
+IMS 구성은 AEM Assets 작성자 인스턴스를 사용하여 Brand Portal 테넌트를 인증합니다.
 
-IMS 구성에는 다음 두 단계가 포함됩니다.
+IMS 구성에는 두 단계가 포함됩니다.
 
 * [공개 인증서 받기](#public-certificate)
 * [IMS 계정 구성 만들기](#create-ims-account-configuration)
@@ -109,86 +112,86 @@ IMS 구성에는 다음 두 단계가 포함됩니다.
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   그러면 **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지로 이동합니다.
+   **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지가 표시됩니다.
 
 1. 기본적으로 **인증서** 탭이 열립니다.
 
    **클라우드 솔루션**&#x200B;에서 **[!UICONTROL Adobe Brand Portal]**&#x200B;을 선택합니다.
 
-1. **[!UICONTROL 새 인증서 만들기]** 확인란에 표시하고 인증서에 대한 **별칭**&#x200B;을 지정합니다. 별칭은 대화 상자의 이름 역할을 합니다.
+1. **[!UICONTROL 새 인증서 만들기]** 확인란을 선택하고 인증서 **별칭**&#x200B;을 지정합니다. 별칭은 대화 상자의 이름으로 사용됩니다.
 
-1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 대화 상자가 나타납니다. **[!UICONTROL 확인]**&#x200B;을 클릭하여 공개 인증서를 생성합니다.
+1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 대화 상자가 나타납니다. 공개 인증서를 생성하려면 **[!UICONTROL 확인]**&#x200B;을 클릭하십시오.
 
    ![인증서 만들기](assets/ims-config2.png)
 
-1. **[!UICONTROL 공개 키 다운로드]**&#x200B;를 클릭하고 컴퓨터에 *AEM-Adobe-IMS.crt* 인증서 파일을 저장합니다. 이 인증서 파일은 [Adobe I/O 통합을 만드는](#createnewintegration) 데 사용됩니다.
+1. **[!UICONTROL 공개 키 다운로드]**&#x200B;를 클릭하고 *AEM-Adobe-IMS.crt* 인증서 파일을 컴퓨터에 저장합니다. 인증서 파일은 [Adobe I/O 통합을 만드는 데](#createnewintegration) 사용됩니다.
 
    ![인증서 다운로드](assets/ims-config3.png)
 
 1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   **계정** 탭에서 Adobe IMS 계정을 만듭니다. 이를 위해서는 통합 세부 정보가 필요합니다. 지금은 이 페이지를 열어 두십시오.
+   **계정** 탭에서 Adobe IMS 계정을 만듭니다. 하지만 이를 위해서는 통합에 대한 세부 사항이 필요합니다. 우선은 이 페이지를 열어 두십시오.
 
-   새 탭을 열고 [Adobe I/O 통합을 만들어](#createnewintegration) IMS 계정 구성에 대한 통합 세부 정보를 가져옵니다.
+   새 탭을 열고 [Adobe I/O 통합을 만들어](#createnewintegration) IMS 계정 구성에 대한 통합 세부 사항을 받으십시오.
 
 ### Adobe I/O 통합 만들기 {#createnewintegration}
 
 Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클라이언트 암호 및 페이로드(JWT)를 생성합니다.
 
-1. Brand Portal 임차인의 IMS 조직에 대한 시스템 관리자 권한으로 Adobe I/O 콘솔에 로그인합니다.
+1. Brand Portal 테넌트의 IMS 조직에 대한 시스템 관리자 권한으로 Adobe I/O Console에 로그인합니다.
 
    기본 URL: [https://console.adobe.io/](https://console.adobe.io/)
 
 1. **[!UICONTROL 통합 만들기]**&#x200B;를 클릭합니다.
 
-1. **[!UICONTROL API에 액세스]**&#x200B;를 선택하고 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL API에 액세스]**&#x200B;를 선택하고, **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
    ![새 통합 만들기](assets/create-new-integration1.png)
 
-1. 새 통합 페이지 만들기가 열립니다.
+1. 새 통합 만들기 페이지가 열립니다.
 
-   드롭다운 목록에서 조직을 선택합니다.
+   드롭다운 목록에서 자신이 속한 조직을 선택합니다.
 
    **[!UICONTROL Experience Cloud]**&#x200B;에서 **[!UICONTROL AEM Brand Portal]**&#x200B;을 선택하고 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 
-   Brand Portal 옵션이 비활성화되어 있는 경우 **[!UICONTROL Adobe 서비스]** 옵션 위의 드롭다운 상자에서 올바른 조직을 선택했는지 확인합니다. 조직을 모르는 경우 관리자에게 문의하십시오.
+   Brand Portal 옵션이 비활성화되어 있다면 **[!UICONTROL Adobe 서비스]** 옵션 위의 드롭다운 상자에서 올바른 조직을 선택했는지 확인하십시오. 조직을 모르는 경우에는 관리자에게 문의하십시오.
 
    ![통합 만들기](assets/create-new-integration2.png)
 
-1. 통합의 이름과 설명을 지정합니다. **[!UICONTROL 컴퓨터에서 파일 선택]**&#x200B;을 클릭하고 [공개 인증서 받기](#public-certificate) 섹션에서 다운로드한 `AEM-Adobe-IMS.crt` 파일을 업로드합니다.
+1. 통합에 사용할 이름과 설명을 지정합니다. **[!UICONTROL 컴퓨터에서 파일 선택]**&#x200B;을 클릭하고 [공개 인증서 받기](#public-certificate) 섹션에서 다운로드한 `AEM-Adobe-IMS.crt` 파일을 업로드하십시오.
 
 1. 조직의 프로필을 선택합니다.
 
-   또는 기본 프로필 **[!UICONTROL Assets Brand Portal]**&#x200B;을 선택하고 **[!UICONTROL 통합 만들기]**&#x200B;를 클릭합니다. 통합이 생성됩니다.
+   또는 기본 프로필 **[!UICONTROL Assets Brand Portal]**&#x200B;을 선택하고 **[!UICONTROL 통합 만들기]**&#x200B;를 클릭하십시오. 통합이 생성됩니다.
 
-1. 통합 정보를 보려면 **[!UICONTROL 통합 세부 사항 계속]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 통합 세부 사항으로 계속]**&#x200B;을 클릭하여 통합 정보를 확인합니다.
 
    **[!UICONTROL API 키]**&#x200B;를 복사합니다.
 
    **[!UICONTROL 클라이언트 암호 검색]**&#x200B;을 클릭하고 클라이언트 암호 키를 복사합니다.
 
-   ![통합 API 키, 클라이언트 암호 및 페이로드 정보](assets/create-new-integration3.png)
+   ![통합의 API 키, 클라이언트 암호 및 페이로드 정보](assets/create-new-integration3.png)
 
-1. **[!UICONTROL JWT]** 탭으로 이동하고 **[!UICONTROL JWT 페이로드]**&#x200B;를 복사합니다.
+1. **[!UICONTROL JWT]** 탭으로 이동하여 **[!UICONTROL JWT 페이로드]**&#x200B;를 복사합니다.
 
-   API 키, 클라이언트 암호 키 및 JWT 페이로드 정보를 사용하여 IMS 계정 구성을 만듭니다.
+   API 키, 클라이언트 암호 키 및 JWT 페이로드 정보는 IMS 계정 구성을 만드는 데 사용됩니다.
 
 ### IMS 계정 구성 만들기 {#create-ims-account-configuration}
 
-다음 단계를 수행했는지 확인합니다.
+다음 절차를 수행했는지 확인하십시오.
 
 * [공개 인증서 받기](#public-certificate)
 * [Adobe I/O 통합 만들기](#createnewintegration)
 
-**IMS 계정 구성을 만드는 단계:**
+**IMS 계정 구성을 만드는 절차:**
 
-1. IMS 구성 페이지를 열고 **[!UICONTROL 계정]** 탭을 엽니다. [공개 인증서 받기](#public-certificate)섹션의 끝에 페이지를 열어 두었습니다.
+1. IMS 구성 페이지, **[!UICONTROL 계정]** 탭을 엽니다. [공개 인증서 받기](#public-certificate) 섹션의 끝에서 페이지를 열어 두었습니다.
 
-1. IMS 계정의 **[!UICONTROL 직책]**&#x200B;을 지정합니다.
+1. IMS 계정에 대한 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
 
-   **[!UICONTROL 인증 서버]**&#x200B;에 URL [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)을 입력합니다.
+   **[!UICONTROL 인증 서버]**&#x200B;에서 URL [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)을 입력하십시오.
 
-   [Adobe I/O 통합 만들기](#createnewintegration)에서 마지막에 복사한 API 키, 클라이언트 암호 및 JWT 페이로드를 붙여 넣습니다.
+   [Adobe I/O 통합 만들기](#createnewintegration)의 끝에서 복사한 API 키, 클라이언트 암호 및 JWT 페이로드를 붙여 넣습니다.
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -199,7 +202,7 @@ Adobe I/O 통합은 IMS 계정 구성을 설정하는 데 필요한 API 키, 클
 
 1. IMS 구성을 선택하고 **[!UICONTROL 상태 확인]**&#x200B;을 클릭합니다. 대화 상자가 나타납니다.
 
-   ]**확인**[!UICONTROL &#x200B;을 클릭합니다. 연결이 성공하면 *토큰이 검색되었습니다.* 메시지가 나타납니다.
+   **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 연결에 성공하면 *토큰이 검색되었습니다*&#x200B;라는 메시지가 나타납니다.
 
    ![](assets/create-new-integration5.png)
 
@@ -223,11 +226,11 @@ Brand Portal 클라우드 서비스 구성을 만들려면 다음 단계를 수�
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-1. 구성의 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
+1. 구성에 대한 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
 
-   [IMS 계정 구성 만들기](#create-ims-account-configuration) 단계에서 생성한 IMS 구성을 선택합니다.
+   [IMS 계정 구성 만들기](#create-ims-account-configuration) 단계에서 만든 IMS 구성을 선택하십시오.
 
-   **[!UICONTROL 서비스 URL]**&#x200B;에 Brand Portal 임차인 URL을 입력합니다.
+   **[!UICONTROL 서비스 URL]**&#x200B;에서 Brand Portal 테넌트 URL을 입력합니다.
 
    ![](assets/create-cloud-service.png)
 
@@ -289,7 +292,7 @@ Brand Portal 클라우드 서비스 구성을 만들려면 다음 단계를 수�
 Brand Portal이 AEM Assets 작성자 인스턴스로 구성되었습니다. 이제 다음을 수행할 수 있습니다.
 
 * [AEM Assets에서 Brand Portal에 자산 게시](../assets/brand-portal-publish-assets.md)
-* [AEM Assets에서 Brand Portal에 폴더 게시](../assets/brand-portal-publish-folder.md)
+* [AEM Assets의 폴더를 Brand Portal에 게시](../assets/brand-portal-publish-folder.md)
 * [AEM Assets에서 Brand Portal에 컬렉션 게시](../assets/brand-portal-publish-collection.md)
 * Brand Portal 사용자가 AEM Assets에 자산을 제공하고 게시할 수 있도록 [자산 소싱](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)을 구성합니다.
 
