@@ -1,11 +1,11 @@
 ---
-title: AEM에서 비공개 폴더 만들기 및 공유
-description: AEM(Adobe Experience Manager) 자산에서 비공개 폴더를 만들고 다른 사용자와 공유하며 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
+title: Adobe Experience Manager에서 비공개 폴더를 만들고 공유합니다.
+description: Adobe Experience Manager Assets에서 비공개 폴더를 만들고 다른 사용자와 공유하며 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '506'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 비공개 폴더 공유 {#private-folder-sharing}
 
-귀하에게만 제공되는 AEM(Adobe Experience Manager) 자산 사용자 인터페이스에서 비공개 폴더를 만들 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라, 사용자는 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
+Adobe Experience Manager Assets 사용자 인터페이스에 단독으로 사용할 수 있는 비공개 폴더를 만들 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라, 사용자는 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
 
 >[!NOTE]
 >
@@ -52,9 +52,9 @@ ht-degree: 2%
    >
    > 비공개 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다. 따라서 관리자는 비공개 폴더에서 모든 소유자 구성원을 제거할 수 없습니다. 그러나 개인 폴더에서 기존 소유자(및 관리자 자체)를 제거하려면 관리자가 다른 사용자를 소유자로 추가해야 합니다.
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 사용자가 AEM 자산에 로그인할 때 지정하는 역할에 따라 개인 폴더에 대한 권한 세트가 할당됩니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 사용자가 자산에 로그인할 때 지정하는 역할에 따라 개인 폴더에 대한 권한 세트가 할당됩니다.
 1. 확인을 **[!UICONTROL 클릭하여]** 확인 메시지를 닫습니다.
-1. 폴더를 공유하는 사용자는 공유 알림을 받습니다. 알림을 보려면 사용자의 자격 증명으로 AEM 자산에 로그인합니다.
+1. 폴더를 공유하는 사용자는 공유 알림을 받습니다. 알림을 보려면 사용자의 자격 증명으로 자산에 로그인합니다.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
