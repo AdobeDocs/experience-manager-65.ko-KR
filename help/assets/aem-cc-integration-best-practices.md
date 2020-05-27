@@ -3,10 +3,10 @@ title: Adobe Creative Cloud [!DNL Adobe Experience Manager] 및 통합 모범 �
 description: 자산 전송 워크플로우를 [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] 간소화하고 콘텐츠 전송 속도를 높일 수 있는 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '3253'
-ht-degree: 1%
+source-wordcount: '3247'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 | 고객의 가치 제안 | Adobe 솔루션 | 포함된 서피스 |
 |---|---|---|
-| 크리에이티브 사용자는 앱을 종료하지 않고도 에셋 [!DNL Experience Manager]을 검색하고, 열어 사용하고, 변경 사항을 편집 및 업로드하고, 새로운 파일 [!DNL Experience Manager]을 [!DNL Experience Manager]앱에 업로드합니다 [!DNL Creative Cloud] . | [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator 및 InDesign |
+| 크리에이티브 사용자는 앱을 종료하지 않고도 에셋 [!DNL Experience Manager]을 검색하고, 열어 사용하고, 변경 사항을 편집 및 업로드하고, 새로운 파일 [!DNL Experience Manager]을 [!DNL Experience Manager]앱에 업로드합니다 [!DNL Creative Cloud] . | [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]and [!DNL Adobe InDesign]. |
 | 비즈니스 사용자는 간단하게 에셋 열기 및 사용, 변경 사항 편집 및 업로드, 데스크탑 환경 [!DNL Experience Manager]에서 새 파일 업로드 [!DNL Experience Manager] 를 간소화할 수 있습니다. 일반 통합을 사용하여 Adobe가 아닌 것을 비롯한 모든 에셋 유형을 기본 데스크탑 애플리케이션에서 엽니다. | [Experience Manager 데스크탑 앱](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] Win 및 Mac 데스크탑에서 데스크탑 앱 사용 |
 | 마케터와 비즈니스 사용자는 내부에서 자산을 발견하고 미리 보고 라이선스를 부여받고 저장 및 관리할 수 [!DNL Adobe Stock] [!DNL Experience Manager]있습니다. 라이선스와 저장된 에셋은 더 나은 거버넌스를 위해 일부 [!DNL Adobe Stock] 메타데이터를 제공합니다. | [Adobe Experience Manager와 Adobe Stock 통합](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 웹 인터페이스 |
 
@@ -107,7 +107,7 @@ ht-degree: 1%
 * 저장된 에셋 [!DNL Experience Manager] 은 링크가 아닌 복사본입니다 [!DNL Adobe Stock].
 
 **에서 저장한 에셋[!DNL Adobe Stock]을 사용하여 작업[!DNL Experience Manager]을[!DNL Creative Cloud]**수행합니다. 이 통합[!DNL Adobe Asset Link]은 독립적이지만 이러한 자산에서 이러한 방식으로 저장된 에셋을[!DNL Adobe Asset Link]인식하며, 이러한 자산에 대한 추가 메타데이터 및[!DNL Stock]아이콘을[!DNL Stock]확장 UI,[!DNL Adobe Asset Link]또는 Facebook에서[!DNL Photoshop][!DNL Illustrator][!DNL InDesign]표시할 수 있습니다. 파일을 검색, 열기 등에 사용할 수 있습니다. 파일은 저장 시 일반 자산이므로 찾을 수[!DNL Experience Manager]있습니다.
-이미 라이선스가 부여된 에셋에 액세스할 수 있을 뿐만 아니라[!DNL Creative Cloud]확장자가 있는[!DNL Adobe Asset Link]앱에서 작업하는 크리에이티브 사용자는 라이브러리 패널[!DNL Adobe Stock]을 사용하여 에셋을 검색하고 미리 보고 라이선스를 부여할 수[!DNL Experience Manager][!DNL Creative Cloud][!DNL Adobe Stock]있습니다.[!DNL Assets]라이선스를[!DNL Adobe Stock]구매하여 저장한 크리에이티브 라이선스 에셋은 배포[!DNL Experience Manager]에 액세스하는 다양한 팀이 사용할 수 있는 반면[!DNL Experience Manager Assets]라이브러리 패널을[!DNL Adobe Stock]통해 제공되는 크리에이티브 라이선스 에셋은[!DNL Creative Cloud][!DNL Creative Cloud]계정 자체에서만 이용할 수 있습니다.
+이미 라이선스가 부여된 에셋에 액세스할 수 있을 뿐만 아니라[!DNL Creative Cloud]확장자가 있는[!DNL Adobe Asset Link]앱에서 작업하는 크리에이티브 사용자는 라이브러리 패널[!DNL Adobe Stock]을 사용하여 에셋을 검색하고 미리 보고 라이선스를 부여할 수[!DNL Experience Manager][!DNL Creative Cloud][!DNL Adobe Stock]있습니다.[!DNL Assets]라이선스와[!DNL Adobe Stock]저장된 에셋은 배포가 가능한 광범위한 팀이 이용할 수[!DNL Experience Manager]있는 반면, 라이브러리 패널을[!DNL Experience Manager Assets]통해[!DNL Adobe Stock]크리에이티브 라이선스 에셋을 제공하는 경우 기본적으로 자신의[!DNL Creative Cloud][!DNL Creative Cloud]계정에서만 이용할 수 있습니다.
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM article.
@@ -181,7 +181,7 @@ DAM 인스턴스에 직접 액세스하지 않고도 외부 에이전시 및 프
 
 Adobe Asset Link는 이러한 사용 사례를 지원합니다.
 
-* Photoshop, InDesign 또는 Illustrator의 사용자가 파일을 편집하려고 하면 해당 에셋에서 체크 아웃 작업을 수행합니다
+* 사용자가 파일 [!DNL Photoshop]을 편집하거나 [!DNL InDesign][!DNL Illustrator] 의도하면 해당 자산에 대해 체크아웃 작업을 실행합니다
 * 에셋이 백그라운드에서 다운로드되고, Creative Cloud 데스크탑 앱에서 디스크에 동기화된 사용자 Creative Cloud 계정에 넣으면, 자산에 체크 아웃 플래그가 표시되어 편집 충돌을 최소화할 수 있습니다 [!DNL Experience Manager]
 * 이 서버에서는 사용자가 동기화된 위치에 로컬로 저장된 파일에서 작업하며 필요한 빈도에 관계없이 필요한 변경 사항을 계속해서 작업하고 저장할 수 있습니다
 * 또한 자산은 Creative Cloud 계정에 있으므로 사용자가 보유하고 있는 다른 장치(예: 전용 Creative Cloud 모바일 앱에서 열거나 편집할 수 있음)에서도 사용할 수 있으며 공동 작업을 위해 다른 Creative Cloud 사용자와 공유할 수 있습니다.
