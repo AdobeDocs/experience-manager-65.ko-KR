@@ -3,9 +3,9 @@ title: 자산 통찰력
 description: 자산 인사이트 기능을 사용하여 타사 웹 사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 이미지의 사용자 등급과 사용 통계를 추적하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '737'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 자산 인사이트는 Adobe Analytics 보고서 세트의 자산 사용 데이터를 정기적으로 가져옵니다. 기본적으로 자산 통찰력은 오전 2시에 백그라운드 작업을 실행하여 데이터를 가져옵니다. 그러나 웹 콘솔에서 **[!UICONTROL Adobe CQ DAM 자산 성능 보고서 동기화 작업]** 서비스를 구성하여 빈도와 시간을 모두 수정할 수 있습니다.
 
-1. AEM 로고를 클릭하고 **[!UICONTROL 도구]** > 작업 **[!UICONTROL >]** 웹 콘솔 **[!UICONTROL 로]**&#x200B;이동합니다.
+1. Experience Manager 로고를 클릭하고 **[!UICONTROL 도구]** > 작업 **[!UICONTROL >]** 웹 콘솔 **[!UICONTROL 로]**&#x200B;이동합니다.
 1. Adobe **[!UICONTROL CQ DAM 자산 성능 보고서 동기화 작업]** 서비스 구성을 엽니다.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
