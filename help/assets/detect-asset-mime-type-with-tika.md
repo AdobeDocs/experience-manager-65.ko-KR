@@ -1,11 +1,11 @@
 ---
 title: Apache Tika를 사용하여 MIME 유형의 자산 탐지
-description: AEM Assets가 파일 확장자 대신 업로드 작업 동안 콘텐츠 스트림에서 MIME 유형의 자산을 검색하는 데 도움이 되도록 Apache Tika를 활성화합니다.
+description: Experience Manager Assets가 파일 확장자 대신 업로드 작업 중에 콘텐츠 스트림에서 MIME 유형의 자산을 검색하는 데 도움이 되도록 Apache Tika를 활성화합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '179'
 ht-degree: 9%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 9%
 
 # Apache Tika를 사용하여 MIME 유형의 자산 탐지 {#detecting-mime-type-of-assets-using-apache-tika}
 
-일반적으로 AEM(Adobe Experience Manager) 자산은 파일 확장자에서 업로드하는 자산의 MIME 유형을 감지합니다.
+일반적으로 Adobe Experience Manager Assets는 파일 확장자에서 업로드하는 자산의 MIME 유형을 감지합니다.
 
-Apache Tika를 사용하여 자산을 업로드하면 AEM Assets는 업로드 작업 동안 파일 확장자 대신 콘텐츠 스트림에서 MIME 형식을 감지합니다.
+Apache Tika를 사용하여 에셋을 업로드하면 Assets는 업로드 작업 중에 파일 확장자 대신 콘텐츠 스트림에서 MIME 형식을 감지합니다.
 
 이 기능은 기본적으로 비활성화됩니다. 이 기능을 활성화하려면 **[!UICONTROL Configuration Manager에서]** 일 CQ DAM MIME 유형 [!UICONTROL 서비스를]구성합니다.
 
