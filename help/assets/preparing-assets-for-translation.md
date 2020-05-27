@@ -3,9 +3,9 @@ title: 자산 번역 준비
 description: 언어 루트 폴더를 만들어 번역용 에셋을 준비함으로써 다국어 에셋을 지원합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 다국어 자산은 이진, 메타데이터 및 태그를 여러 언어로 포함한 자산을 의미합니다. 일반적으로 에셋에 대한 바이너리, 메타데이터 및 태그는 한 언어로 되어 있으며, 이 언어는 다른 언어로 번역되어 다국어 프로젝트에서 사용할 수 있습니다.
 
-AEM(Adobe Experience Manager) 자산에서, 다국어 자산은 폴더에 포함되며, 이 폴더에는 다른 언어의 자산이 포함됩니다.
+Adobe Experience Manager Assets에서는 각 폴더에 다른 언어로 된 자산이 들어 있는 폴더에 다국어 자산이 포함됩니다.
 
 각 언어 폴더를 언어 복사라고 합니다. 언어 루트라고 하는 언어 사본의 루트 폴더는 언어 사본에 있는 컨텐츠의 언어를 식별합니다. 예를 들어 */content/dam/it* 는 이탈리아어 카피를 위한 이탈리아어 루트입니다. 소스 에셋의 번역이 수행될 때 올바른 언어를 타깃팅하도록 언어 복사본은 [올바르게 구성된 언어 루트를](preparing-assets-for-translation.md#creating-a-language-root) 사용해야 합니다.
 
@@ -58,7 +58,7 @@ AEM(Adobe Experience Manager) 자산에서, 다국어 자산은 폴더에 포함
 
 ## 언어 루트 보기 {#viewing-language-roots}
 
-AEM 인터페이스에서는 AEM 자산 내에서 생성된 언어 루트 목록을 표시하는 **[!UICONTROL 참조]** 패널을 제공합니다.
+Adobe Experience Manager 인터페이스는 **[!UICONTROL 에셋]** 내에서 생성된 언어 루트 목록을 표시하는 참조 패널을 제공합니다.
 
 1. 자산 콘솔에서 언어 사본을 만들 언어 마스터를 선택합니다.
 1. 글로벌 탐색 아이콘을 클릭하고 **[!UICONTROL 참조를]** 선택하여 [!UICONTROL 참조] 창을엽니다.
