@@ -1,11 +1,11 @@
 ---
 title: 자산 프록시 개발
-description: 프록시는 프록시 작업자를 사용하여 작업을 처리하는 AEM 인스턴스입니다. AEM 프록시, 지원되는 작업, 프록시 구성 요소 및 사용자 지정 프록시 작업자 개발 방법을 구성하는 방법을 알아봅니다.
+description: 프록시는 프록시 작업자를 사용하여 작업을 처리하는 Experience Manager 인스턴스입니다. Experience Manager 프록시, 지원되는 작업, 프록시 구성 요소 및 사용자 지정 프록시 작업자 개발 방법을 구성하는 방법에 대해 학습합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '891'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 자산 프록시 개발 {#assets-proxy-development}
 
-AEM(Adobe Experience Manager) 자산은 프록시를 사용하여 특정 작업에 대한 처리를 배포합니다.
+Adobe Experience Manager Assets는 프록시를 사용하여 특정 작업에 대한 처리를 배포합니다.
 
-프록시는 작업을 처리하고 결과를 만드는 처리자로 프록시 작업자를 사용하는 특정(또는 경우에 따라 분리) AEM 인스턴스입니다. 프록시 작업자는 다양한 작업에 사용할 수 있습니다. AEM Assets 프록시의 경우 AEM Assets 내에서 렌더링할 자산을 로드하는 데 사용할 수 있습니다. 예를 들어, [IDS 프록시](indesign.md) 작업자는 InDesign Server를 사용하여 AEM 자산에 사용할 파일을 처리합니다.
+프록시는 작업을 처리하고 결과를 만드는 처리자로 프록시 작업자를 사용하는 특정(또는 경우에 따라 분리) Experience Manager 인스턴스입니다. 프록시 작업자는 다양한 작업에 사용할 수 있습니다. 자산 프록시의 경우 자산 내에서 렌더링하기 위해 자산을 로드하는 데 사용할 수 있습니다. 예를 들어 [IDS 프록시](indesign.md) 작업자는 [!DNL Adobe InDesign] 서버를 사용하여 자산에서 사용할 파일을 처리합니다.
 
-프록시가 별도의 AEM 인스턴스인 경우 AEM 작성 인스턴스의 로드를 줄이는 데 도움이 됩니다. 기본적으로 AEM Assets는 동일한 JVM의 자산 처리 작업(프록시를 통해 외부화됨)을 실행하여 AEM 작성 인스턴스의 로드를 줄입니다.
+프록시가 별도의 Experience Manager 인스턴스인 경우 Experience Manager 작성 인스턴스의 로드를 줄이는 데 도움이 됩니다. 기본적으로 자산은 동일한 JVM의 자산 처리 작업(프록시를 통해 외부화됨)을 실행하여 Experience Manager 작성 인스턴스의 로드를 줄입니다.
 
 ## 프록시(HTTP 액세스) {#proxy-http-access}
 
@@ -109,11 +109,11 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 >
 >프록시 API에 대한 참조 설명서는 아래에서 확인할 수 있습니다 [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-프록시 및 프록시 작업자 구성은 모두 AEM Assets **도구** 콘솔 또는 아래에서 액세스할 수 있는 클라우드 서비스 구성을 통해 사용할 수 있습니다 `/etc/cloudservices/proxy`. 각 프록시 작업자는 작업자별 구성 세부 정보 `/etc/cloudservices/proxy` (예: `/etc/cloudservices/proxy/workername`)에 대한 노드를 추가해야 합니다.
+Assets **Tools 콘솔 또는 아래에서 액세스할 수 있는 클라우드 서비스 구성을 통해 프록시 및 프록시** 작업자 구성을 모두 사용할 수 있습니다 `/etc/cloudservices/proxy`. 각 프록시 작업자는 작업자별 구성 세부 정보 `/etc/cloudservices/proxy` (예: `/etc/cloudservices/proxy/workername`)에 대한 노드를 추가해야 합니다.
 
 >[!NOTE]
 >
->자세한 내용은 [Indesign Server 프록시 작업자 구성](indesign.md#configuring-the-proxy-worker-for-indesign-server) 및 [클라우드 서비스 구성을](../sites-developing/extending-cloud-config.md) 참조하십시오.
+>자세한 내용은 [InDesign Server 프록시 작업자 구성](indesign.md#configuring-the-proxy-worker-for-indesign-server) 및 [클라우드 서비스 구성을](../sites-developing/extending-cloud-config.md) 참조하십시오.
 
 다음은 API 사용의 예입니다.
 
@@ -132,9 +132,9 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 ### 사용자 지정된 프록시 작업자 개발 {#developing-a-customized-proxy-worker}
 
-IDS [프록시 작업자](indesign.md) 는 Indesign 자산의 처리를 아웃소싱하기 위해 이미 기본적으로 제공되는 AEM Assets 프록시 작업자 예입니다.
+IDS [프록시 작업자](indesign.md) 는 InDesign 자산의 처리를 아웃소싱하기 위해 이미 기본적으로 제공되는 에셋 프록시 작업자의 예입니다.
 
-AEM Assets 프록시 작업자를 직접 개발하여 구성하여 특수 작업자를 만들어 AEM Assets 처리 작업을 전달하고 아웃소싱할 수도 있습니다.
+또한 자체 Assets 프록시 작업자를 개발 및 구성하여 전문 작업자를 만들어 Assets 처리 작업을 전달하고 아웃소싱할 수도 있습니다.
 
 자신만의 고유한 사용자 지정 프록시 레이어를 설정하려면 다음을 수행해야 합니다.
 
@@ -156,7 +156,7 @@ AEM Assets 프록시 작업자를 직접 개발하여 구성하여 특수 작업
 
 >[!NOTE]
 >
->다음 단계에서 Indesign에 상응하는 항목이 참조 예로 표시됩니다.
+>다음 단계에서 InDesign 상당 부분이 참조 예로 표시됩니다.
 
 1. Sling 작업 [이](https://sling.apache.org/site/eventing-and-jobs.html) 사용되므로 사용 사례에 대한 작업 항목을 정의해야 합니다.
 
@@ -176,12 +176,12 @@ AEM Assets 프록시 작업자를 직접 개발하여 구성하여 특수 작업
 
 >[!NOTE]
 >
->AEM Assets 프록시 프레임워크에서 제공하지 않는 것은 풀 메커니즘입니다.
+>Assets 프록시 프레임워크에서 제공하지 않는 것은 풀 메커니즘입니다.
 >
->InDesign 통합을 통해 IDSPool(indesign 서버 풀)에 액세스할 수 있습니다. 이 풀링은 AEM Assets 프록시 프레임워크의 일부가 아니라 Indesign 통합 전용입니다.
+>이 [!DNL InDesign] 통합을 통해 [!DNL InDesign] 서버 풀(IDSPool)에 액세스할 수 있습니다. 이 풀링은 통합 전용이며 [!DNL InDesign] [!DNL Assets] 프록시 프레임워크의 일부가 아닙니다.
 
 >[!NOTE]
 >
 >결과 동기화:
 >
->동일한 프록시를 사용하는 인스턴스가 없으면 처리 결과는 프록시에 유지됩니다. 작업 생성 시 클라이언트에 제공된 것과 동일한 고유 작업 ID를 사용하여 결과를 요청하는 것은 클라이언트(AEM 작성자)의 작업입니다. 프록시는 작업을 완료하고 결과를 요청할 준비가 되도록 유지합니다.
+>동일한 프록시를 사용하는 인스턴스가 없으면 처리 결과는 프록시에 유지됩니다. 작업을 만들 때 클라이언트에 제공된 것과 동일한 고유한 작업 ID를 사용하여 결과를 요청하는 것은 클라이언트(Experience Manager 작성자)의 작업입니다. 프록시는 작업을 완료하고 결과를 요청할 준비가 되도록 유지합니다.
