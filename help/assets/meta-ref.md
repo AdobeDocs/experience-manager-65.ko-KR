@@ -3,7 +3,7 @@ title: 메타데이터 스키마 참조
 description: 'Dublin Core, IPTC 및 기타 메타데이터 스키마를 비롯한 에셋 메타데이터를 설명하는 표준 규칙에 대해 알아봅니다. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ## 더블린 코어 {#dublin-core}
 
-Dublin Core 메타데이터는 보다 쉽게 찾을 수 있도록 자산을 설명하는 표준 규칙 세트를 제공합니다. AEM 자산에서 더블린 코어는 비디오, 사운드, 이미지 및 문서를 비롯한 디지털 자산에 대해 설명합니다.
+Dublin Core 메타데이터는 보다 쉽게 찾을 수 있도록 자산을 설명하는 표준 규칙 세트를 제공합니다. 자산에서 더블린 코어는 비디오, 사운드, 이미지 및 문서를 비롯한 디지털 자산에 대해 설명합니다.
 
 단순 더블린 코어 메타데이터 요소 세트(DCMES)에는 다음 표에 나열된 15개의 메타데이터 요소가 포함되어 있습니다. 각 더블린 코어 요소는 선택 사항이며 반복될 수 있습니다. 미디어 유형별 메타데이터와 마찬가지로 더블린 코어 메타데이터 정보를 추가하거나 삭제할 수 있습니다.
 
@@ -30,7 +30,7 @@ DCMES 외에도 Dublin Core Initiative에서 만든 기타 메타데이터 요�
 | creator | 컨텐츠 작성을 담당하는 사람 또는 회사 |
 | 날짜 | 자산과 관련된 날짜 또는 기간 |
 | 설명 | 자산에 대한 자세한 정보입니다. |
-| format | 자산의 파일 형식, 실제 미디어 또는 크기입니다. AEM은 자산 `dc:format` 의 MIME 유형을 나타내는 데 사용됩니다. |
+| format | 자산의 파일 형식, 실제 미디어 또는 크기입니다. Adobe Experience Manager `dc:format` 는 자산의 MIME 유형을 나타내는 데 사용합니다. |
 | 식별자 | 자산에 대한 고유한 참조입니다. |
 | 언어 | 자산의 언어(예: 영어). |
 | 게시자 | 자산을 사용할 수 있도록 만드는 담당자 또는 회사 |
