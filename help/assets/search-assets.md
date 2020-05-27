@@ -4,9 +4,9 @@ description: 필터 패널을 [!DNL Adobe Experience Manager] 사용하여 필�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '5869'
+source-wordcount: '5863'
 ht-degree: 1%
 
 ---
@@ -162,7 +162,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 | 작성자 | creator:John |
 | 위치 | 위치:북미 |
 | 설명 | 설명:&quot;샘플 이미지&quot; |
-| 작성자 도구 | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| 작성자 도구 | creatortool:&quot;Adobe Photoshop CC 2020&quot; |
 | 저작권 소유자 | 저작권 소유자:&quot;Adobe Systems&quot; |
 | 내용 작성자 | contributor:John |
 | 사용 약관 | usagterms:&quot;CopyRights Reserved&quot; |
@@ -200,7 +200,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 ### Adobe Asset Link 패널에서 에셋 검색 {#aal}
 
-이제 크리에이티브 전문가는 Adobe Asset Link를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고도 에 저장된 컨텐츠 [!DNL Experience Manager Assets]에 액세스할 수 있습니다. 크리에이티브 전문가는 Creative Cloud 앱에서 인앱 패널을 사용하여 에셋을 원활하게 검색하고 체크 아웃하고 확인할 수 있습니다. Photoshop, Illustrator 및 InDesign. 에셋 링크를 사용하면 시각적으로 유사한 결과를 검색할 수도 있습니다. 시각적 검색 표시 결과는 Adobe Sensei의 머신 러닝 알고리즘을 기반으로 하며 사용자가 미적으로 유사한 이미지를 찾을 수 있도록 도와줍니다. Adobe [Asset Link를 사용하여 자산](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) 검색 및 찾아보기를 참조하십시오.
+이제 크리에이티브 전문가는 Adobe Asset Link를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고도 에 저장된 컨텐츠 [!DNL Experience Manager Assets]에 액세스할 수 있습니다. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. 에셋 링크를 사용하면 시각적으로 유사한 결과를 검색할 수도 있습니다. 시각적 검색 표시 결과는 Adobe Sensei의 머신 러닝 알고리즘을 기반으로 하며 사용자가 미적으로 유사한 이미지를 찾을 수 있도록 도와줍니다. Adobe [Asset Link를 사용하여 자산](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) 검색 및 찾아보기를 참조하십시오.
 
 ### 데스크탑 앱에서 [!DNL Experience Manager] 에셋 검색 {#desktopapp}
 
