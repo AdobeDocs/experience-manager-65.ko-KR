@@ -3,10 +3,10 @@ title: 이미징 코드 변환 라이브러리
 description: 인코딩, 트랜스코딩, 이미지 리샘플링, 이미지 크기 조정 등 핵심 이미지 처리 기능을 수행할 수 있는 이미지 처리 솔루션인 Adobe의 이미징 트랜스코딩 라이브러리를 구성 및 사용하는 방법에 대해 알아보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 0%
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
@@ -55,10 +55,10 @@ Imaging Transcoding Library는 다양한 파일 포맷과 프로파일을 지원
 
 매개 변수에 대해 다음 옵션을 구성할 수 `-resize` 있습니다.
 
-* `X`: `Works similar to AEM. For example -resize 319.`
-* `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
-* `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
-* `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
+* `X`: Adobe Experience Manager와 유사합니다. 예: -resize 319.
+* `WxH`: 예를 들어 종횡비는 유지되지 않습니다 `-resize 319x319`.
+* `Wx`: 너비를 수정하고 종횡비를 유지하면서 높이를 계산합니다. 예 `-resize 319x`.
+* `xH`: 높이를 수정하고 종횡비를 유지하면서 너비를 계산합니다. 예 `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)
@@ -74,7 +74,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로를 업데�
 
 라이브러리를 구성하려면 다음 단계를 사용하여 라이브러리를 나타내는 .conf 파일을 만듭니다. 관리자 또는 루트 권한이 필요합니다.
 
-1. Imaging [Transcoding 라이브러리 패키지를](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) 다운로드하고 Package Manager를 사용하여 설치합니다. 패키지는 AEM 6.5와 호환됩니다.
+1. Imaging [Transcoding 라이브러리 패키지를](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) 다운로드하고 Package Manager를 사용하여 설치합니다. 패키지는 Experience Manager 6.5와 호환됩니다.
 
 1. 의 번들 ID에 대해 알아보려면 웹 콘솔 `com.day.cq.dam.cq-dam-switchengine`에 로그인하고 OSGi **[!UICONTROL > 번들을 클릭합니다]**. 또는 번들 콘솔을 열려면 `https://[aem_server:[port]/system/console/bundles/` URL에 액세스하십시오. 번들 `com.day.cq.dam.cq-dam-switchengine` 및 해당 ID를 찾습니다.
 
@@ -92,7 +92,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로를 업데�
 
 1. 명령을 실행하여 필요한 링크 및 캐시를 `ldconfig` 만듭니다.
 
-1. AEM을 시작하는 데 사용되는 계정에서 `.bash_profile` 파일을 편집합니다. 다음을 추가하여 `LD_LIBRARY_PATH` 추가합니다.
+1. Experience Manager를 시작하는 데 사용되는 계정에서 `.bash_profile` 파일을 편집합니다. 다음을 추가하여 `LD_LIBRARY_PATH` 추가합니다.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -136,8 +136,9 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로를 업데�
 
 1. 업데이트된 [!UICONTROL DAM 자산 업데이트 워크플로우] 모델을 동기화합니다. 워크플로우를 저장합니다.
 
-구성을 확인하고 TIFF 이미지를 업로드하고 error.log 파일을 모니터링합니다. 다음에 대한 언급 `INFO` 메시지가 표시됩니다 `SwitchEngineHandlingProcess execute: executing command line`. 로그에 생성된 표현물이 언급됩니다. 워크플로우가 완료되면 AEM에서 새 변환을 볼 수 있습니다.
+구성을 확인하고 TIFF 이미지를 업로드하고 error.log 파일을 모니터링합니다. 다음에 대한 언급 `INFO` 메시지가 표시됩니다 `SwitchEngineHandlingProcess execute: executing command line`. 로그에 생성된 표현물이 언급됩니다. 워크플로우가 완료되면 Experience Manager에서 새 변환을 볼 수 있습니다.
 
 >[!MORELIKETHIS]
 >
 >* [지원되는 MIME 형식 아티클](assets-formats.md#supported-image-transcoding-library)
+
