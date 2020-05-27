@@ -3,9 +3,9 @@ title: 자산 편집기 확장
 description: 사용자 지정 구성 요소를 사용하여 자산 편집기의 기능을 확장하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '695'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 사전 정의된 편집 구성 요소를 사용하는 편집기의 구성은 자산 편집기 페이지 [만들기 및 구성에서 다룹니다](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-기존 편집기 구성 요소를 사용하는 것 외에도 AEM(Adobe Experience Manager) 개발자는 자체 구성 요소를 만들 수 있습니다.
+기존 편집기 구성 요소를 사용하는 것 외에도 Adobe Experience Manager 개발자는 고유한 구성 요소를 만들 수 있습니다.
 
 ## 자산 편집기 템플릿 만들기 {#creating-an-asset-editor-template}
 
@@ -29,9 +29,9 @@ ht-degree: 1%
 
 ### Clientlib 구성 {#configuring-clientlib}
 
-AEM Assets 구성 요소는 WCM 편집 clientlib의 확장을 사용합니다. The clientlibs are usually loaded in `init.jsp`.
+자산 구성 요소는 WCM 편집 clientlib의 확장을 사용합니다. The clientlibs are usually loaded in `init.jsp`.
 
-기본 clientlib 로딩(코어의 경우)과 비교하여 AEM 자산 템플릿에는 다음이 `init.jsp`포함되어야 합니다.
+기본 clientlib 로딩(코어의 경우)과 비교하여 자산 템플릿에는 다음이 `init.jsp`있어야 합니다.
 
 * 템플릿에는 clientlib(대신)이 `cq.dam.edit` 포함되어야 `cq.wcm.edit`합니다.
 
@@ -41,7 +41,7 @@ AEM Assets 구성 요소는 WCM 편집 clientlib의 확장을 사용합니다. T
 
 ### JS 작업 구성 {#configuring-js-actions}
 
-일부 AEM 자산 구성 요소에는 에서 정의된 JS 함수가 필요합니다 `component.js`. 이 파일을 구성 요소 디렉토리에 복사하고 연결합니다.
+일부 자산 구성 요소에는 에서 정의된 JS 함수가 필요합니다 `component.js`. 이 파일을 구성 요소 디렉토리에 복사하고 연결합니다.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -51,7 +51,7 @@ AEM Assets 구성 요소는 WCM 편집 clientlib의 확장을 사용합니다. T
 
 ### 추가 스타일 시트 {#additional-style-sheets}
 
-일부 AEM 자산 구성 요소는 AEM 위젯 라이브러리를 사용합니다. 컨텐츠 컨텍스트에서 제대로 렌더링하려면 추가 스타일 시트를 로드해야 합니다. 태그 작업 구성 요소에는 하나 더 필요합니다.
+일부 에셋 구성 요소는 위젯 라이브러리를 사용합니다. 컨텐츠 컨텍스트에서 제대로 렌더링하려면 추가 스타일 시트를 로드해야 합니다. 태그 작업 구성 요소에는 하나 더 필요합니다.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
