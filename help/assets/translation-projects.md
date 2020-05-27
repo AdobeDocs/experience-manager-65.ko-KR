@@ -3,9 +3,9 @@ title: 번역 프로젝트 만들기
 description: 에서 번역 프로젝트를 만드는 방법을 [!DNL Adobe Experience Manager]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1897'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->PDF 및 InDesign 파일과 같은 복잡한 자산에 대한 번역 워크플로우를 실행하는 경우, 해당 하위 자산이나 변환(있는 경우)이 번역용으로 제출되지 않습니다.
+>PDF 및 파일과 같은 복잡한 자산에 대한 번역 워크플로우를 실행하는 경우 해당 하위 자산이나 [!DNL Adobe InDesign] 표현물(있는 경우)은 번역을 위해 제출되지 않습니다.
 
 ## 워크플로우 작성 및 번역 {#create-and-translate-workflow}
 
