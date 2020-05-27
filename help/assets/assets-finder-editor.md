@@ -3,9 +3,9 @@ title: 자산 편집기 페이지 만들기 및 구성
 description: 사용자 지정 자산 편집기 페이지를 만들고 여러 자산을 동시에 편집하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2146'
 ht-degree: 2%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 2%
 
 ## Why create and configure Asset Editor pages? {#why-create-and-configure-asset-editor-pages}
 
-디지털 자산 관리는 점점 더 많은 시나리오에서 사용되고 있습니다. 전문 사용자를 위한 AEM(Adobe Experience Manager)의 강력한 유저 인터페이스(UI)인 포토그래퍼 또는 택소노믹스 전문가 등 전문가 수준의 전문 트레이닝을 받은 소규모 사용자 그룹을 위한 소규모 솔루션을 비즈니스 사용자, WCM 작성자, 기자 등 다양한 사용자 그룹으로 전환하는 경우 에셋은 너무 많은 정보를 제공하고 이해 관계자가 연관성이 높은 디지털 에셋에 액세스하기 위해 특정 사용자 인터페이스 또는 애플리케이션을 요청할 수 있습니다.
+디지털 자산 관리는 점점 더 많은 시나리오에서 사용되고 있습니다. 전문 사용자를 위한 Adobe Experience Manager Assets의 강력한 유저 인터페이스는 전문 사용자뿐만 아니라 포토그래퍼나 택소노믹스 전문가 등 전문가 수준의 전문 지식을 갖춘 소규모 사용자 그룹을 위한 소규모 솔루션 환경에서 비즈니스 사용자, WCM 작성자, 기자 등 다양한 사용자 그룹으로 전환하는 경우 특정 유저 인터페이스 또는 애플리케이션을 요청하여 고객과 연관성이 높은 디지털 자산에 액세스할 수 있도록 많은 정보를 제공할 수 있습니다.
 
 이러한 자산 중심의 애플리케이션은 인트라넷의 간단한 사진 갤러리로 사용되므로 직원은 트레이드쇼 방문 또는 공개 웹 사이트의 보도 센터에서 사진을 업로드할 수 있습니다. 자산 중심의 애플리케이션은 장바구니, 체크아웃 및 확인 프로세스를 포함한 전체 솔루션으로 확장할 수 있습니다.
 
-에셋 중심의 애플리케이션을 만드는 것은 코딩 작업이 필요 없는 구성 프로세스, 사용 중인 메타데이터에 대한 지식 및 사용자 그룹 및 요구 사항에 대한 지식만 있을 뿐만 아니라 AEM Assets로 만든 자산 중심의 애플리케이션은 확장 가능합니다. 에셋 검색, 보기 및 수정에 사용할 수 있는 재사용 가능한 구성 요소를 중재하여 만들 수 있습니다.
+에셋 중심의 애플리케이션을 만드는 것은 코딩 작업이 필요 없는 구성 프로세스, 사용 중인 메타데이터에 대한 지식 및 사용자 그룹 및 요구 사항에 대한 지식만 있을 뿐만 아니라 자산 중심의 애플리케이션은 확장 가능합니다. 에셋 검색, 보기 및 수정에 사용할 수 있는 재사용 가능한 구성 요소를 중재하여 만들 수 있습니다.
 
-AEM의 자산 중심의 응용 프로그램은 자산 편집기 페이지로 구성되며, 이를 사용하여 특정 자산을 자세히 볼 수 있습니다. 자산 편집기 페이지에서는 메타데이터의 편집도 허용할 수 있습니다. 단, 자산에 액세스하는 사용자에게 필요한 권한이 있어야 합니다.
+Adobe Experience Manager의 자산 중심의 애플리케이션은 자산 편집기 페이지로 구성되며, 이를 사용하여 특정 자산을 자세히 볼 수 있습니다. 자산 편집기 페이지에서는 메타데이터의 편집도 허용할 수 있습니다. 단, 자산에 액세스하는 사용자에게 필요한 권한이 있어야 합니다.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -161,7 +161,7 @@ To customize the query builder:
 
 #### Add predicates {#adding-predicates}
 
-AEM Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
+Experience Manager Assets includes a number of predicates that you can add to the Asset Share page. These let your users further narrow searches. In some cases, they may override a query builder parameter (for example, the Path parameter).
 
 To add predicates:
 
@@ -278,9 +278,9 @@ Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-메타데이터 [양식에서 사용 가능한 네임스페이스를 수정하는 방법은 AEM 자산](/help/assets/extending-assets.md) 사용자 지정 및 확장을 참조하십시오.
+메타데이터 [양식에서 사용 가능한 네임스페이스를 수정하는 방법은 자산](/help/assets/extending-assets.md) 사용자 지정 및 확장을 참조하십시오.
 
-1. Click the **Constraints** tab. 여기에서 필수 필드인지 여부를 선택하고 필요한 경우 제한 조건을 추가할 수 있습니다.
+1. Click the **Constraints** tab. 여기에서 필수 필드인지 여부를 선택하고 필요한 경우 제한 사항을 추가할 수 있습니다.
 
 ![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
@@ -391,7 +391,7 @@ Thumbnail 구성 요소는 자산에 선택한 축소판이 표시되는 곳입�
 
 ## 자산 편집기 페이지를 사용하여 자산 다중 편집 {#multi-editing-assets-with-the-asset-editor-page}
 
-AEM Assets를 사용하여 여러 자산을 한 번에 변경할 수 있습니다. 자산을 선택한 후 해당 자산을 동시에 변경할 수 있습니다.
+Adobe Experience Manager Assets를 사용하면 여러 자산을 한 번에 변경할 수 있습니다. 자산을 선택한 후 해당 자산을 동시에 변경할 수 있습니다.
 
 * 태그
 * 메타 데이터
