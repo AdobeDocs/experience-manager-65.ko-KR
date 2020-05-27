@@ -3,7 +3,7 @@ title: 처리를 위해 지원되는 파일 포맷입니다 [!DNL Adobe Experien
 description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 138c8d960ad8c1de20212b7aeebbda0a486832ee
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 8%
@@ -103,7 +103,7 @@ The following table describes the sub-types of raster image formats that are *no
 
 ## 지원되는 PDF 래스터라이저 라이브러리 {#supported-pdf-rasterizer-library}
 
-Adobe PDF 래스터라이저 라이브러리는 컨텐츠 집약적이고 규모가 큰 Adobe Illustrator 및 PDF 파일에 대한 고품질 축소판과 미리 보기를 생성합니다. PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
+Adobe PDF 래스터라이저 라이브러리는 컨텐츠 집약적이고 크기가 큰 PDF 파일에 대한 고품질 축소판과 미리 보기를 생성합니다 [!DNL Adobe Illustrator] . PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
 * 처리해야 하는 리소스가 많은 AI/PDF 파일
 * 축소판이 기본적으로 생성되지 않는 AI/PDF 파일
@@ -121,7 +121,7 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## 지원되는 Camera Raw {#supported-camera-raw}
 
-Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지를 인제스트할 수 있습니다. See [Camera Raw support](camera-raw.md).
+Adobe Camera Raw 라이브러리를 사용하면 에셋을 Raw 이미지를 인제스트할 수 있습니다. See [Camera Raw support](camera-raw.md).
 
 ## 지원되는 자산 문서 형식 {#supported-document-formats}
 
@@ -234,7 +234,7 @@ Adobe Camera Raw 라이브러리를 사용하면 AEM Assets에서 Raw 이미지�
 
 ## Supported MIME types {#supported-mime-types}
 
-기본적으로 AEM은 파일 확장명을 사용하여 파일 유형을 감지합니다. AEM은 파일의 내용에서 검색할 수 있습니다. 후자의 경우, AEM 웹 콘솔 [!UICONTROL 의] 일 CQ DAM MIME 유형 서비스에서  컨텐트에서 MIME 감지 옵션을 선택합니다.
+기본적으로 Experience Manager는 파일 확장자를 사용하여 파일 유형을 감지합니다. Adobe Experience Manager는 파일의 내용에서 검색할 수 있습니다. 후자의 경우, Experience Manager 웹 콘솔 [!UICONTROL 의] 일 CQ DAM MIME 유형 서비스에서  컨텐트에서 MIME 감지 옵션을 선택합니다.
 
 지원되는 MIME 유형 목록은 에서 CRXDE Lite를 참조하십시오 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
