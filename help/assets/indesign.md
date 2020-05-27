@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager Assets] 통합 [!DNL Adobe InDesign Serv
 description: 통합 방법 [!DNL Adobe Experience Manager Assets] 을 살펴보십시오 [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 0%
@@ -58,7 +58,7 @@ ht-degree: 0%
    * 추출된 텍스트와 파일은 에 저장됩니다 [!DNL Experience Manager Assets].
    * 모든 변환은 자산 자체 [!DNL Experience Manager Assets]에 저장됩니다.
 
-## AEM과 [!DNL InDesign Server] 통합 {#integrating-the-indesign-server-with-aem}
+## Adobe Experience Manager [!DNL InDesign Server] 와 통합 {#integrating-the-indesign-server-with-aem}
 
 프록시를 구성 [!DNL InDesign Server] 과 [!DNL Experience Manager Assets] 구성한 후 사용할 수 있도록 통합하려면 다음을 수행해야 합니다.
 
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 * **스크립트 확장**: 여기에서 다양한 스크립트 조합을 지정할 수 있습니다. 에서 자신만의 스크립트를 실행하려면 스크립트를 [!DNL InDesign Server]저장할 수 있습니다 `/apps/settings/dam/indesign/scripts`.
 
-Indesign 스크립트에 대한 자세한 내용은 [InDesign 개발자 설명서를 참조하십시오](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+스크립트에 대한 자세한 [!DNL Adobe InDesign] 내용은 [InDesign 개발자 설명서를 참조하십시오](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -166,7 +166,7 @@ Indesign 스크립트에 대한 자세한 내용은 [InDesign 개발자 설명�
 
 1. 웹 콘솔에 액세스합니다 `https://[aem_server]:[port]/system/console/configMgr`.
 1. 구성 **[!UICONTROL Day CQ Link Externalizer를]**&#x200B;찾아 **[!UICONTROL 편집을]** 클릭하여 엽니다.
-1. 호스트 이름과 컨텍스트 경로를 지정하고 [!DNL Indesign Server] 저장을 **클릭합니다**.
+1. 호스트 이름과 컨텍스트 경로를 지정하고 [!DNL Adobe InDesign Server] 저장을 **클릭합니다**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
