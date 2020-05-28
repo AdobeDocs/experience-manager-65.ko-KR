@@ -1,15 +1,18 @@
 ---
 title: XDP 기반의 적응형 양식의 XFA 지원
 seo-title: XDP 기반의 적응형 양식의 XFA 지원
-description: 지원되는 XFA 이벤트, 속성, 스크립트 및 적응형 양식의 유효성 검사를 나열합니다.
-seo-description: 지원되는 XFA 이벤트, 속성, 스크립트 및 적응형 양식의 유효성 검사를 나열합니다.
+description: 지원되는 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 응용 양식에 나열합니다.
+seo-description: 지원되는 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 응용 양식에 나열합니다.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 5%
 
 ---
 
@@ -24,21 +27,21 @@ source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
 * XDP 파일의 필드에 대한 기본값 및 행동 속성을 캡처합니다.
 * XDP 파일에 정의된 유효성 검사 스크립트 실행
 
-XDP 파일을 기반으로 응용 양식을 만들 때 양식 작성 UI에서 속성, 이벤트 및 유효성 검사가 자동으로 채워집니다. 그러나 양식 작성자는 이러한 요소 중 일부를 재정의하여 대체 경험을 만들 수 있습니다.
+XDP 파일을 기반으로 응용 양식이 만들어지면 속성, 이벤트 및 유효성 검사가 양식 작성 UI에서 자동으로 채워집니다. 그러나 양식 작성자는 이러한 요소 중 일부를 재정의하여 대체 경험을 만들 수 있습니다.
 
-이 문서에서는 적응형 양식에서 수행된 지원되는 XFA 이벤트, 속성 및 유효성 검사를 나열하고 이를 적응형 양식에서 재정의하는 방법에 대해 설명합니다.
+이 문서에서는 적응형 양식에서 지원되는 XFA 이벤트, 속성 및 유효성 검사를 나열하고 이를 응용 양식에서 무시하는 방법에 대해 설명합니다.
 
-## 적응형 양식의 지원되는 XFA 요소 및 매핑 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
+## 응용 양식의 지원되는 XFA 요소 및 해당 매핑 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### 필드 {#fields}
 
-XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응형 양식으로 드래그하여 놓을 수 있습니다. 다음 표에는 XFA 필드가 적응형 양식 필드에 매핑되는 방법이 나와 있습니다.
+XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적응형 양식으로 드래그하여 놓을 수 있습니다. 다음 표에는 XFA 필드가 적응형 양식 필드에 매핑되는 방법이 나와 있습니다.
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>XFA 필드 또는 컨테이너</strong></p> </td>
-   <td><p><strong>해당 적응형 양식 구성 요소</strong></p> </td>
+   <td><p><strong>해당 응용 양식 구성 요소</strong></p> </td>
   </tr>
   <tr>
    <td><p>단추 </p> </td>
@@ -58,14 +61,14 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
   </tr>
   <tr>
    <td><p>서명 스크리블</p> </td>
-   <td><p>(더 이상 사용되지 않음) 자유롭게 서명</p> </td>
+   <td><p>낙서 서명</p> </td>
   </tr>
   <tr>
    <td><p>숫자 필드 </p> </td>
    <td><p>숫자 상자</p> </td>
   </tr>
   <tr>
-   <td><p>소수점</p> </td>
+   <td><p>십진수 필드</p> </td>
    <td><p>숫자 상자</p> </td>
   </tr>
   <tr>
@@ -85,7 +88,7 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
    <td><p>텍스트</p> </td>
   </tr>
   <tr>
-   <td><p>하위 양식 </p> </td>
+   <td><p>하위 폼 </p> </td>
    <td><p>패널</p> </td>
   </tr>
   <tr>
@@ -101,7 +104,7 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
 
 ### 속성 {#properties}
 
-다음 표에서는 XDP 파일에 정의된 다양한 XFA 스크립트가 적응형 양식에서 작동하는 방식을 캡처합니다.
+다음 표에서는 XDP 파일에 정의된 다양한 XFA 스크립트가 적응형 양식으로 작동하는 방식을 캡처합니다.
 
 <table>
  <tbody>
@@ -114,28 +117,28 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
    <td><p>적응형 양식의 Bind 참조(bindRef) 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>presence </p> </td>
-   <td><p>적응형 양식의 보이는 속성에 매핑됩니다. 가시성 표현식을 사용하여 재정의할 수 있습니다.</p> </td>
+   <td><p>존재 </p> </td>
+   <td><p>적응형 양식의 보이는 속성에 매핑됩니다. 가시성 표현식을 사용하여 무시할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><p>access </p> </td>
-   <td><p>적응형 양식의 활성화된 속성에 매핑됩니다. Access 표현식을 사용하여 재정의할 수 있습니다.</p> </td>
+   <td><p>적응형 양식의 활성화된 속성에 매핑됩니다. 액세스 표현식을 사용하여 무시할 수 있습니다.</p> </td>
   </tr>
   <tr>
-   <td><p>접근성:역할 </p> </td>
+   <td><p>접근성: 역할 </p> </td>
    <td><p>적응형 양식의 역할 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>접근성:speakPriority </p> </td>
+   <td><p>접근성: speakPriority </p> </td>
    <td><p>적응형 양식의 speakPriority 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>접근성:speakText</p> </td>
-   <td><p>적응형 양식의 사용자 지정 액세서빌러티 텍스트에 매핑됩니다.</p> </td>
+   <td><p>접근성: speakText</p> </td>
+   <td><p>적응형 양식의 사용자 지정 액세스 가능성 텍스트에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>접근성:toolTip </p> </td>
-   <td><p>응용 양식의 간단한 설명 속성에 매핑됩니다.</p> </td>
+   <td><p>접근성: toolTip </p> </td>
+   <td><p>응용 양식의 짧은 설명 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
    <td><p>캡션<em> (모든 필드 유형)</em></p> </td>
@@ -147,22 +150,22 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
   </tr>
   <tr>
    <td><p>rawValue<em> (모든 필드 유형)</em></p> </td>
-   <td><p>적응형 양식의 값 속성에 매핑됩니다.</p> </td>
+   <td><p>응용 양식의 값 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
    <td><p>항목<em> (목록 상자, 확인란)</em></p> </td>
-   <td><p>적응형 양식의 옵션 속성에 매핑됩니다. 옵션 표현식을 사용하여 재정의할 수 있습니다.</p> </td>
+   <td><p>적응형 양식의 옵션 속성에 매핑됩니다. 옵션 표현식을 사용하여 무시할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><p>maxChar<em> (텍스트 필드)</em></p> </td>
-   <td><p>응용 형식의 허용되는 최대 문자 수 속성에 매핑됩니다.</p> </td>
+   <td><p>응용 양식의 최대 문자 허용 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
    <td><p>여러 줄<em> (텍스트 필드)</em></p> </td>
-   <td><p>적응형 양식의 여러 줄 허용 속성에 매핑됩니다.</p> </td>
+   <td><p>응용 양식의 여러 줄 허용 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (숫자 필드, 십진수 필드)</em></p> </td>
+   <td><p>frcDigit<em> (숫자 필드, 십진수 필드)</em></p> </td>
    <td><p>적응형 양식의 프레임 숫자 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
@@ -196,7 +199,7 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
   </tr>
   <tr>
    <td><p>유효성 검사 </p> </td>
-   <td><p>적응형 양식의 유효성 검사 표현식에 매핑됩니다.</p> </td>
+   <td><p>응용 형식으로 유효성 검사 식에 매핑됩니다.</p> </td>
   </tr>
   <tr>
    <td><p>validationState </p> </td>
@@ -208,7 +211,7 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
   </tr>
   <tr>
    <td><p>클릭(단추 필드)</p> </td>
-   <td><p>단추의 클릭 표현식에 매핑됩니다.</p> </td>
+   <td><p>단추의 클릭 식에 매핑됩니다.</p> </td>
   </tr>
   <tr>
    <td><p>서버측 스크립트 지원</p> </td>
