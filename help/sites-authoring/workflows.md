@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 AEM 워크플로우에서는 (하나 이상의) 페이지 및/또는 자산에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
 
-예를 들어, 편집자는 게시할 때 사이트 관리자가 페이지를 활성화하기 전에 컨텐츠를 검토해야 합니다. 이 예제를 자동화하는 워크플로우는 필요한 작업을 수행할 때가 되면 각 참가자에게 알립니다.
+예를 들어, 편집자는 게시할 때 사이트 관리자가 페이지를 활성화하기 전에 컨텐츠를 검토해야 합니다. 이 예제를 자동화하는 워크플로우는 필요한 작업을 수행할 때가 되면 각 참가자에게 알립니다:
 
 1. 작성자는 페이지에 이 워크플로우를 적용합니다.
 1. 편집자는 페이지 컨텐츠를 검토해야 함을 나타내는 작업 항목을 수신합니다. 완료되면 작업 항목이 완료되었음을 나타냅니다.
@@ -32,6 +35,6 @@ AEM 워크플로우에서는 (하나 이상의) 페이지 및/또는 자산에�
 
 다음 페이지에 이 내용이 나와 있습니다.
 
-* ](/help/sites-authoring/workflows-applying.md)페이지에 워크플로우 적용[
-* ](/help/sites-authoring/workflows-participating.md)워크플로우에 참여[
+* [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md)
+* [워크플로우에 참여](/help/sites-authoring/workflows-participating.md)
 
