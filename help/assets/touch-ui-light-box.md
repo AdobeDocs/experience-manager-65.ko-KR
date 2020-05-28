@@ -1,11 +1,11 @@
 ---
-title: AEM Assets에서 개인 이미지 갤러리로 Lightbox 사용
-description: AEM Assets에서 개인 이미지 갤러리로 Lightbox에 대해 학습합니다.
+title: Adobe Experience Manager Assets에서 개인 이미지 갤러리로 Lightbox 활용
+description: Adobe Experience Manager Assets에서 개인 이미지 갤러리로 Lightbox에 대해 학습합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Lightbox는 자산에 손쉽게 액세스할 수 있는 특별한 유형의 컬렉션입니다. Lightbox에 빠르게 액세스하여 자산을 추가하거나 삭제할 수 있습니다. 개인 이미지 갤러리 역할을 합니다.
 
-AEM(Adobe Experience Manager) 자산 사용자인 경우 애플리케이션에 처음 로그인할 때 Lightbox가 자동으로 생성됩니다. 로그인에만 적용됩니다. 다른 사용자는 Lightbox에 액세스할 수 없습니다.
+Adobe Experience Manager Assets 사용자는 처음 애플리케이션에 로그인할 때 Lightbox가 자동으로 생성됩니다. 로그인에만 적용됩니다. 다른 사용자는 Lightbox에 액세스할 수 없습니다.
 
 ## Lightbox에 에셋 추가 {#adding-assets-to-lightbox}
 
