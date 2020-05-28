@@ -6,8 +6,11 @@ contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
-translation-type: ht
-source-git-commit: 33fab976729baa09fdfd3725542f9e6bc7f37eeb
+translation-type: tm+mt
+source-git-commit: 49209cb64c829fde396e87ca4b2e326ecf1dd941
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 99%
 
 ---
 
@@ -88,23 +91,6 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
    <td>구성 요소(AEM Sites)</td>
    <td>디자인 가져오기 프로그램 구성 요소 /libs/wcm/designimporter/components가 6.5부터 더 이상 사용되지 않음으로 표시되었습니다. Adobe는 디자인 가져오기 프로그램 구현을 추가 개선할 계획이 없습니다.</td>
    <td>Adobe는 향후 릴리스에서 사용 사례의 대체 구현을 제공할 계획입니다.</td>
-  </tr>
-  <tr>
-   <td>구성 요소(AEM Forms)</td>
-   <td><p>서명 단계에서는 사용자가 적응형 양식을 확인하고 서명할 수 있습니다. 이전 릴리스에서는 서명 단계에서 Adobe Sign과 스크리블 서명 구성 요소를 서명 필드로 사용할 수 있었습니다. AEM 6.5 Forms에서 서명 단계의 스크리블 서명 기반 서명 환경은 더 이상 사용되지 않습니다.</p> </td>
-   <td>
-    <ul>
-     <li>새로 설치한 경우:
-      <ul>
-       <li>적응형 양식의 서명 단계에서 Adobe Sign 기반의 서명 경험을 사용합니다.</li>
-       <li>적응형 양식, 대화형 커뮤니케이션 및 HTML5 양식에 독립형 스크리블 서명 구성 요소를 사용합니다.</li>
-      </ul> </li>
-     <li>이전 릴리스에서 AEM 6.5 Forms로 업그레이드한 경우:<br />
-      <ul>
-       <li>이미 해당 기능을 사용하고 있는 양식에서 서명 단계의 스크리블 서명 기반의 서명 경험을 계속 사용합니다.<br /> </li>
-       <li>양식을 만들 때 서명 단계에서 독립형 스크리블 서명 구성 요소 또는 Adobe Sign 기반의 서명 경험을 사용합니다. </li>
-      </ul> </li>
-    </ul> <p> </p> <p> </p> </td>
   </tr>
   <tr>
    <td>Foundation</td>
