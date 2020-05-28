@@ -3,9 +3,9 @@ title: 비디오 자산 관리
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및 게시하는 방법에 대해 알아보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 비디오 자산 관리 {#manage-video-assets}
 
-AEM(Adobe Experience Manager) 자산에서 비디오 자산을 관리하고 편집하는 방법을 알아봅니다. 또한 Dynamic Media를 사용할 수 있는 라이센스가 있는 경우 [Dynamic Media 비디오 설명서를 참조하십시오](/help/assets/video.md).
+Adobe Experience Manager Assets에서 비디오 자산을 관리하고 편집하는 방법을 알아봅니다. 또한 Dynamic Media를 사용할 수 있는 라이센스가 있는 경우 [Dynamic Media 비디오 설명서를 참조하십시오](/help/assets/video.md).
 
 ## 비디오 에셋 업로드 및 미리 보기 {#upload-and-preview-video-assets}
 
-Adobe Experience Manager Assets는 익스텐션 MP4를 사용하여 비디오 자산에 대한 미리 보기를 생성합니다. 자산의 형식이 MP4가 아닌 경우 FFmpeg 팩을 설치하여 미리 보기를 생성합니다. FFmpeg는 OGG 및 MP4 유형의 비디오 변환을 만듭니다. AEM Assets 사용자 인터페이스에서 이러한 변환을 미리 볼 수 있습니다.
+Adobe Experience Manager Assets는 익스텐션 MP4를 사용하여 비디오 자산에 대한 미리 보기를 생성합니다. 자산의 형식이 MP4가 아닌 경우 FFmpeg 팩을 설치하여 미리 보기를 생성합니다. FFmpeg는 OGG 및 MP4 유형의 비디오 변환을 만듭니다. 이러한 표현물은 자산 사용자 인터페이스에서 미리 볼 수 있습니다.
 
 1. 디지털 자산 폴더 또는 하위 폴더에서 디지털 자산을 추가할 위치로 이동합니다.
 1. 자산을 업로드하려면 도구 모음에서 **[!UICONTROL 만들기를]** 클릭한 다음 **[!UICONTROL 파일을 선택합니다]**. 또는 자산 영역에 직접 놓습니다. 업로드 [작업에 대한 자세한 내용은 자산](managing-assets-touch-ui.md#uploading-assets) 업로드를 참조하십시오.
@@ -44,11 +44,11 @@ Experience Manager Assets 구성 외에도 큰 자산을 업로드하려면 다�
 
 >[!NOTE]
 >
->AEM Classic 사용자 인터페이스에 2GB 파일 크기 제한이 없습니다. 또한 대형 비디오에 대한 엔드 투 엔드 워크플로우는 완벽하게 지원되지 않습니다.
+>Experience Manager Classic 사용자 인터페이스에 2GB 파일 크기 제한이 없습니다. 또한 대형 비디오에 대한 엔드 투 엔드 워크플로우는 완벽하게 지원되지 않습니다.
 
 더 높은 파일 크기 제한을 구성하려면 디렉토리에서 다음 단계를 `/apps` 수행합니다.
 
-1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE]** Lite를클릭합니다.
+1. Adobe Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE]** Lite를클릭합니다.
 1. CRXDE Lite에서 로 이동합니다 `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. 디렉토리 창을 보려면 아이콘을 `>>` 터치하십시오.
 1. 도구 모음에서 **[!UICONTROL 오버레이 노드를 클릭합니다]**. 또는 컨텍스트 메뉴에서 **[!UICONTROL 오버레이 노드]** 를 선택합니다.
 1. [ **[!UICONTROL 오버레이 노드]** ] 대화 상자에서 **[!UICONTROL 확인을 클릭합니다]**.
@@ -59,11 +59,11 @@ Experience Manager Assets 구성 외에도 큰 자산을 업로드하려면 다�
 1. 속성 **[!UICONTROL 탭에서]** 적절한 값을 바이트 단위로 입력하여 원하는 크기로 크기 제한을 늘립니다. 예를 들어 크기 제한을 30GB로 늘리려면 `{sizeLimit : "32212254720"}` 값을 입력합니다.
 
 1. 도구 모음에서 모두 **[!UICONTROL 저장을 터치합니다]**.
-1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 클릭합니다.
+1. Adobe Experience Manager에서 **[!UICONTROL 도구]** > 작업 **[!UICONTROL >]** 웹 콘솔 **[!UICONTROL 을 클릭합니다]**.
 1. Adobe Experience Manager 웹 콘솔 번들 페이지의 테이블의 이름 열에서 **[!UICONTROL Adobe Granite Workflow 외부 프로세스 작업 핸들러를 찾아 클릭합니다]**.
 1. [Adobe Granite Workflow 외부 프로세스 작업 처리기] 페이지에서 [ **[!UICONTROL 기본 시간 초과]** 및 **[!UICONTROL 최대 시간 초과]** 필드 `18000` 의 시간(초)을5시간(시간)으로 설정합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
-1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델을]**&#x200B;클릭합니다.
+1. Adobe Experience Manager에서 **[!UICONTROL 도구]** > 워크플로우 **[!UICONTROL > 모델]** 을 **[!UICONTROL 클릭합니다]**.
 1. 워크플로우 모델 페이지에서 **[!UICONTROL 다이내믹 미디어 인코딩 비디오를]**&#x200B;선택한 다음 **[!UICONTROL 편집을 클릭합니다]**.
 1. 워크플로우 페이지에서 **[!UICONTROL Dynamic Media 비디오 서비스 프로세스]** 구성 요소를 두 번 클릭합니다.
 1. 단계 [!UICONTROL 속성] 대화 상자의 **[!UICONTROL 공통]** 탭 아래에서 **고급**&#x200B;설정을확장합니다.
