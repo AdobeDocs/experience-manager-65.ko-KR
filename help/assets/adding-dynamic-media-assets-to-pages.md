@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 876589d26f17dc088531c3f34deea0fab4c7726a
+source-git-commit: b6a7648699bc8e8e041749fb03998f86a27292ce
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3129'
 ht-degree: 26%
 
 ---
@@ -29,7 +29,7 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-페이지에 Dynamic Media, 대화형 미디어, 파노라마 미디어 또는 비디오 360 미디어 구성 요소를 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media 구성 요소는 다음 섹션에 설명되어 있습니다.
+3D 미디어, 다이내믹 미디어, 인터랙티브 미디어, 파노라마 미디어, 스마트 자르기 비디오 또는 비디오 360 미디어 구성 요소를 페이지에 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media 구성 요소는 다음 섹션에 설명되어 있습니다.
 
 1. AEM에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
 1. 페이지 왼쪽의 패널에서(사이드 패널 표시 전환 필요) 구성 요소 **[!UICONTROL 아이콘을]** 클릭합니다.
@@ -40,10 +40,6 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. 사용할 **[!UICONTROL Dynamic Media]** 구성 요소를 드래그하여 페이지의 원하는 위치에 놓습니다.
-
-   아래 예에서, **[!UICONTROL 비디오 360 미디어]** 구성 요소가 사용되고 있습니다.
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. 마우스 포인터를 구성 요소에 바로 놓습니다. 구성 요소 주위에 파란색 상자가 표시되면 한 번 눌러 구성 요소의 도구 모음을 표시합니다. 구성( **[!UICONTROL 렌치)]** 아이콘을 누릅니다.
 
@@ -57,7 +53,7 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
    Dynamic Media Video 360 미디어 구성 요소입니다.
 
-1. 완료되면 대화 상자의 오른쪽 위 모서리 근처에 있는 체크 표시를 눌러 변경 내용을 저장합니다.
+1. 완료되면 대화 상자의 오른쪽 위 모서리에서 확인 표시를 눌러 변경 내용을 저장합니다.
 
 ### Dynamic Media 구성 요소 활성화 {#enabling-dynamic-media-components}
 
