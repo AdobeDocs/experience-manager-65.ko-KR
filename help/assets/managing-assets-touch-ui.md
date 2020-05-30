@@ -4,9 +4,9 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
 workflow-type: tm+mt
-source-wordcount: '9298'
+source-wordcount: '9304'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    자산이 큰 자산으로 간주되는 크기를 구성할 수 있습니다. 예를 들어 1000MB 이상의 자산(500MB 대신)을 큰 자산으로 간주하도록 시스템을 구성할 수 있습니다. 이 경우 크기가 1000MB보다 큰 **[!UICONTROL 에셋이 업로드되면 [일시 중지]** ]가 진행률 표시줄에 나타납니다.
 
-   1000MB보다 큰 파일이 1000MB보다 작은 파일로 업로드되면 [일시 중지] 단추가 표시되지 않습니다. 하지만 1,000MB 미만의 파일 업로드를 취소하면 [일시 **[!UICONTROL 중지]** ] 단추가 나타납니다.
+   1000MB보다 큰 파일이 1000MB보다 작은 파일로 업로드되면 [일시 중지] 단추가 표시되지 않습니다. 그러나 1,000MB 미만의 파일 업로드를 취소하면 [일시 **[!UICONTROL 중지]** ] 단추가 나타납니다.
 
    크기 제한을 수정하려면 CRX 저장소의 `chunkUploadMinFileSize` 노드 `fileupload`속성을 구성합니다.
 
@@ -301,11 +301,11 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 
 ### 스트리밍된 업로드 {#streamed-uploads}
 
-많은 에셋을 업로드하면 서버 [!DNL Experience Manager]에 대한 I/O 요청이 크게 증가하여 업로드 효율성이 떨어지고 일부 업로드 작업이 시간 초과될 수도 있습니다. [!DNL Experience Manager Assets] 은 에셋 스트리밍을 지원합니다. 스트리밍된 업로드는 업로드 작업 중에 서버의 임시 폴더에서 에셋 저장소를 방지하여 디스크에 I/O를 줄여 저장소에 복사합니다. 대신 데이터가 저장소로 직접 전송됩니다. 이렇게 하면 대용량 에셋을 업로드할 시간과 제한 시간이 줄어듭니다. 기본적으로 스트리밍된 업로드가 활성화되어 있습니다 [!DNL Assets].
+Adobe Experience Manager에 자산을 많이 업로드하면 I/O 요청이 크게 증가하여 업로드 효율성이 떨어지고 일부 업로드 작업이 시간 초과될 수도 있습니다. [!DNL Experience Manager Assets] 은 에셋 스트리밍을 지원합니다. 스트리밍된 업로드는 업로드 작업 중에 서버의 임시 폴더에서 에셋 저장소를 방지하여 디스크에 I/O를 줄여 저장소에 복사합니다. 대신 데이터가 저장소로 직접 전송됩니다. 이렇게 하면 대용량 에셋을 업로드할 시간과 제한 시간이 줄어듭니다. 기본적으로 스트리밍된 업로드가 활성화되어 있습니다 [!DNL Assets].
 
 >[!NOTE]
 >
->Servlet-api 버전이 3.1보다 낮은 JEE 서버에서 [!DNL Experience Manager] 실행되는 스트리밍 업로드가 비활성화됩니다.
+>servlet-api 버전이 3.1보다 낮은 JEE 서버에서 실행되는 Adobe Experience Manager에 대해 스트리밍 업로드를 사용할 수 없습니다.
 
 ### 에셋이 포함된 ZIP 아카이브 추출 {#extractzip}
 
