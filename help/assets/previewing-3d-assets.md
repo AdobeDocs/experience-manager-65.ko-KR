@@ -4,9 +4,9 @@ description: 3D 자산을 미리 보는 방법 살펴보기
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '564'
 ht-degree: 11%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Manager는 제작 프로세스의 일환으로 3D 자산의 업
 
 대화형 3D 뷰어는 AEM의 자산 세부 사항 페이지에서 사용할 수 있습니다. 이 뷰어에는 3D 자산을 궤도를 따라 이동하고, 확대/축소하고, 패닝할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
 
-다이내믹 [미디어에서 3D 자산 작업을 참조하십시오](/help/assets/assets-3d.md).
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
 ## AEM에서 3D 미리 보기에 지원되는 포맷 {#supported-3d-previewing-assets}
 
