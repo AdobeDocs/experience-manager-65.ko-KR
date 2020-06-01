@@ -8,9 +8,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: e78b3701e57b1954f03591c38b72e3dd33e8ef46
+source-git-commit: d40488ce830eb15b4209145df03dff027f9a2470
 workflow-type: tm+mt
-source-wordcount: '2674'
+source-wordcount: '2682'
 ht-degree: 4%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 4%
 >[!NOTE]
 >
 >스마트 자르기는 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
+
+>[!IMPORTANT]
+>
+>이미지 프로필은 PDF 파일에 적용되지 않습니다.
 
 ## Crop options {#crop-options}
 
@@ -281,7 +285,7 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 1. 폴더 또는 여러 폴더에서 제거할 이미지 프로필을 선택합니다.
 1. 폴더에서 **[!UICONTROL 처리 프로필 제거를]** 누르고 프로필을 제거할 폴더 또는 여러 폴더를 선택한 다음 제거를 **[!UICONTROL 누릅니다]**.
 
-   이름이 폴더 이름 아래에 더 이상 나타나지 않으므로 이미지 프로필이 더 이상 폴더에 적용되지 않도록 확인할 수 있습니다.
+   이름이 더 이상 폴더 이름 아래에 나타나지 않으므로 이미지 프로필이 더 이상 폴더에 적용되지 않도록 확인할 수 있습니다.
 
 ### 속성을 통해 폴더에서 다이내믹 미디어 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-properties}
 
