@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+source-git-commit: 46848fee0a3f838354ec65f2ea733cf70ac53deb
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2162'
 ht-degree: 4%
 
 ---
@@ -170,9 +170,7 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 AEM 관리자가 다이�
 
 ## 3D 미디어 구성 요소 작업 정보 {#working-with-three-d-media-component}
 
-Dynamic Media에는 웹 페이지에서 3D 모델을 대화형으로 볼 수 있도록 AEM Sites에서 사용할 수 있는 Dynamic Media 3D 미디어 구성 요소가 포함되어 있습니다.
-
-이 섹션에는 다음 항목이 포함됩니다.
+Dynamic Media에는 AEM Sites에서 사용할 수 있는 Dynamic Media 3D 미디어 구성 요소가 포함되어 있으므로 웹 페이지에서 3D 모델을 인터랙티브하게 볼 수 있습니다.
 
 * [페이지 템플릿에 3D 미디어 구성 요소 추가](#adding-three-d-media-component-to-page-template)
 * [웹 페이지에 3D 미디어 구성 요소 추가](#adding-the-three-d-media-component-to-a-web-page)
