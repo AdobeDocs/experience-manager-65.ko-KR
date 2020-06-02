@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cdcea49a25807e125ea15e7132ac9f188d3525bc
+source-git-commit: 9a27aabef07d5b5104c08c414138fbb22e284a68
 workflow-type: tm+mt
 source-wordcount: '2074'
-ht-degree: 47%
+ht-degree: 41%
 
 ---
 
@@ -24,7 +24,7 @@ AEM(Adobe Experience Manager) 자산은 브랜드 포털 테넌트의 승인을 
 
 >[!NOTE]
 >
->AEM 6.5.4.0 이상에서 Adobe I/O를 통해 Brand Portal에 AEM Assets을 구성할 수 있습니다.
+>Adobe 개발자 콘솔을 통해 브랜드 포털에서 AEM 자산 구성이 AEM 6.5.4.0 이상에서 지원됩니다.
 >
 >이전에는 Brand Portal이 기존 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 인증을 위해 IMS 액세스 토큰을 가져오는 데 JWT 토큰 교환을 사용합니다.
 >
@@ -35,13 +35,13 @@ AEM(Adobe Experience Manager) 자산은 브랜드 포털 테넌트의 승인을 
 >
 >***기존 고객 전용***
 >
->기존 OAuth 게이트웨이 구성을 계속 사용하는 것이 좋습니다. 기존 OAuth 게이트웨이 구성 문제가 발생하는 경우 기존 구성을 삭제하고 Adobe I/O를 통해 새 구성을 만드십시오.
+>기존 OAuth 게이트웨이 구성을 계속 사용하는 것이 좋습니다. 기존 OAuth 게이트웨이 구성에 문제가 있는 경우 기존 구성을 삭제하고 Adobe 개발자 콘솔을 통해 새 구성을 만듭니다.
 
 
 
 이 도움말은 다음 두 가지 사용 사례에 대해 설명합니다.
-* [새 구성](#configure-new-integration-65): 새 Brand Portal 사용자가 Brand Portal에서 AEM Assets 작성자 인스턴스를 구성하려는 경우 Adobe I/O에 새 구성을 만들 수 있습니다.
-* [업그레이드 구성](#upgrade-integration-65): 기존 OAuth 게이트웨이에 Brand Portal로 구성된 AEM Assets 작성자 인스턴스를 사용하는 기존 Brand Portal 사용자인 경우 기존 구성을 삭제하고 Adobe I/O에 새 구성을 만드는 것이 좋습니다.
+* [새 구성](#configure-new-integration-65): 새 브랜드 포털 사용자이고 브랜드 포털에서 AEM 자산 작성자 인스턴스를 구성하려면 Adobe 개발자 콘솔에서 새 구성을 만들 수 있습니다.
+* [업그레이드 구성](#upgrade-integration-65): 기존 OAuth 게이트웨이의 브랜드 포털로 구성된 AEM 자산 작성 인스턴스를 사용하는 기존 브랜드 포털 사용자는 기존 구성을 삭제하고 Adobe 개발자 콘솔에서 새 구성을 만드는 것이 좋습니다.
 
 제공된 정보는 이 도움말을 읽는 사람이 다음 기술을 잘 알고 있다는 가정을 기반으로 합니다.
 
