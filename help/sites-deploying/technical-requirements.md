@@ -11,7 +11,7 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f16c25468418b6f228132e9d06017d32466cf43a
+source-git-commit: a299e26668b1f1f08cca8d4a8085da185522ec96
 workflow-type: tm+mt
 source-wordcount: '3118'
 ht-degree: 1%
@@ -100,7 +100,7 @@ Adobe Experience Manager는 다음과 같은 버전의 Java Virtual Machines로 
  <tbody>
   <tr>
    <td>플랫폼</td>
-   <td>지원 수준<br /> </td>
+   <td>지원 수준</td>
   </tr>
   <tr>
    <td>Oracle Java SE 12 JDK [1]</td>
@@ -144,15 +144,15 @@ Adobe Experience Manager의 저장소를 배포하는 다양한 옵션이 있습
 
 | **플랫폼** | **설명** | **지원 수준** |
 |---|---|---|
-| **TAR 파일이 있는 파일 시스템[1 ]** | 보관소 | A: 지원됨 |
-| **데이터 저장소[1이 있는 파일 시스템&#x200B;]** | 이진 파일 | A: 지원됨 |
-| 파일 시스템 [1에서 TAR 파일에 바이너리 저장] | 이진 파일 | Z: 프로덕션에서 지원되지 않음 |
+| **TAR 파일이 있는 파일 시스템** `[1]` | 보관소 | A: 지원됨 |
+| **데이터 저장소가 있는 파일 시스템** `[1]` | 이진 파일 | A: 지원됨 |
+| 파일 시스템의 TAR 파일에 바이너리 저장 `[1]` | 이진 파일 | Z: 프로덕션에서 지원되지 않음 |
 | Amazon S3 | 이진 파일 | A: 지원됨 |
 | Microsoft Azure Blob 저장소 | 이진 파일 | A: 지원됨 |
-| MongoDB Enterprise 4.0 | 보관소 | A: 지원되는 [2, 3] |
+| MongoDB Enterprise 4.0 | 보관소 | A: 지원됨 `[2, 3]` |
 | MongoDB Enterprise 3.6 | 보관소 | Z: 지원되지 않음 |
 | MongoDB Enterprise 3.4 | 보관소 | Z: 지원되지 않음 |
-| IBM DB2 10.5 | 저장소 및 양식 데이터베이스 | R: 제한된 지원 [4] |
+| IBM DB2 10.5 | 저장소 및 양식 데이터베이스 | R: 제한된 지원 `[4]` |
 | Oracle 데이터베이스 12c(12.1.x) | 저장소 및 양식 데이터베이스 | R: 제한된 지원 |
 | Microsoft SQL Server 2016 | Forms 데이터베이스 | A: 지원됨 |
 | **Apache Lucene(Quickstart 내장)** | 검색 서비스 | A: 지원됨 |
@@ -199,11 +199,11 @@ Adobe Experience Manager는 독립 실행형 서버(빠른 시작 JAR 파일)로
 |---|---|
 | **Quickstart 내장된 Servlet Engine(Jetty 9.4)** | A: 지원됨 |
 | Oracle WebLogic Server 12.2(12cR2) | Z: 지원되지 않음 |
-| 웹 프로필 7.0 및 IBM JRE 1.8이 포함된 IBM WebSphere Application Server Continuous Delivery(LibertyProfile) | R: 새로운 계약에 대한 제한된 지원 [2] |
-| IBM WebSphere Application Server 9.0 및 IBM JRE 1.8 | R: 새로운 계약에 대한 제한된 지원 [1] [2] |
-| Apache Tomcat 8.5.x | R: 새로운 계약에 대한 제한된 지원 [2] |
+| 웹 프로필 7.0 및 IBM JRE 1.8이 포함된 IBM WebSphere Application Server Continuous Delivery(LibertyProfile) | R: 새로운 계약에 대한 제한된 지원 `[2]` |
+| IBM WebSphere Application Server 9.0 및 IBM JRE 1.8 | R: 새로운 계약에 대한 제한된 지원 `[1]` `[2]` |
+| Apache Tomcat 8.5.x | R: 새로운 계약에 대한 제한된 지원 `[2]` |
 | JBoss 애플리케이션 서버가 있는 JBoss EAP 7.2.x | Z: 지원되지 않음 |
-| JBoss 응용 프로그램 서버가 있는 JBoss EAP 7.1.4 | R: 새로운 계약에 대한 제한된 지원 [1] [2] |
+| JBoss 응용 프로그램 서버가 있는 JBoss EAP 7.1.4 | R: 새로운 계약에 대한 제한된 지원 `[1]` `[2]` |
 | JBoss 애플리케이션 서버가 있는 JBoss EAP 7.0.x | Z: 지원되지 않음 |
 
 1. AEM Forms를 사용한 배포에 권장됩니다.
@@ -215,11 +215,11 @@ Adobe Experience Manager는 프로덕션 환경을 위한 다음 서버 플랫�
 
 | **플랫폼** | **지원 수준** |
 |---|---|
-| **Linux, Red Hat 배포 기반** | A: 지원되는 [1] [3] |
-| Linux, Debian 배포 기반 우분투 | A: 지원되는 [2] |
+| **Linux, Red Hat 배포 기반** | A: 지원됨 `[1]` `[3]` |
+| Linux, Debian 배포 기반 우분투 | A: 지원됨 `[2]` |
 | Linux, SUSE 배포 기반 | A: 지원됨 |
-| Microsoft Windows Server 2019 [4] | R: 새로운 계약에 대한 제한된 지원 |
-| Microsoft Windows Server 2016 [4] | R: 새로운 계약에 대한 제한된 지원 [5] |
+| Microsoft Windows Server 2019 `[4]` | R: 새로운 계약에 대한 제한된 지원 |
+| Microsoft Windows Server 2016 `[4]` | R: 새로운 계약에 대한 제한된 지원 `[5]` |
 | Microsoft Windows Server 2012 R2 | Z: 지원되지 않음 |
 | Oracle Solaris 11 | Z: 지원되지 않음 |
 | IBM AIX 7.2 | Z: 지원되지 않음 |
@@ -248,7 +248,7 @@ Azure 또는 AWS에서 AEM을 배포하는 방법에 대한 권장 사항은 Ado
 
 | 플랫폼 | 지원 수준 |
 |---|---|
-| **Apache httpd 2.4.x** [1,2] | A: 지원됨 |
+| **Apache httpd 2.4.x** `[1,2]` | A: 지원됨 |
 | Microsoft IIS 10(인터넷 정보 서버) | A: 지원됨 |
 | Microsoft IIS 8.5(인터넷 정보 서버) | Z: 지원되지 않음 |
 
