@@ -1,18 +1,257 @@
 ---
 title: AEM 6.5 이전 서비스 팩 릴리스 노트
 description: Adobe Experience Manager 6.5 서비스 팩 3 이하에 대한 릴리스 노트입니다.
+uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
+contentOwner: User
+products: SG_EXPERIENCEMANAGER/6.5
+discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
+docset: aem65
 translation-type: tm+mt
-source-git-commit: 321710219053ab43fe5a223665bc20987e1afb31
+source-git-commit: c80cb65b42d8e132ba83c25f1decdcf0a0a6fc51
 workflow-type: tm+mt
-source-wordcount: '6277'
-ht-degree: 95%
+source-wordcount: '8093'
+ht-degree: 100%
 
 ---
 
 
 # 이전 서비스 팩에 포함된 핫픽스 및 기능 팩 {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0 {#aem-6530-rn}
+## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
+
+Adobe Experience Manager 6.5.4.0은 **2019년 4월** 6.5 릴리스의 공식 출시 이후 릴리스된 새로운 기능, 주요 고객이 요청한 향상된 기능 및 성능, 안정성, 보안 개선 사항이 포함된 중요한 업데이트입니다. AEM(Adobe Experience Manager) 6.5 맨 위에 설치할 수 있습니다.
+
+AEM 6.5.4.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과 같습니다.
+
+* 이제 AEM Assets은 Adobe I/O 콘솔을 통해 Brand Portal에 구성됩니다.
+
+* 이제 AEM Forms 워크플로우에서 새로운 [인쇄 가능한 출력 생성](../forms/using/aem-forms-workflow-step-reference.md) 단계를 사용할 수 있습니다.
+
+* 적용형 양식 및 대화형 커뮤니케이션용 레이아웃 모드에 대한 [다중 열을 지원](../forms/using/resize-using-layout-mode.md)합니다.
+
+* HTML5 양식의 [리치 텍스트](../forms/using/designing-form-template.md)를 지원합니다.
+
+* Experience Manager Assets의 [액세스 가능성이 개선](new-features-latest-service-pack.md#accessibility-enhancements)되었습니다.
+
+* 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.10.8으로 업데이트되었습니다.
+
+* 이제 선택적 컨텐츠 하위 트리를 `content/dam`에서 사용하는 대신 *Dynamic Media - Scene7 모드*&#x200B;로 동기화할 수 있습니다.
+
+* 이제 SOAP 웹 서비스와 양식 데이터 모델 통합을 통해 요소에 대한 선택 그룹 또는 속성을 지원합니다.
+
+* 이제 SOAP 입력 또는 출력 및 복잡한 데이터 구조가 Dynamic Group 대체를 지원합니다.
+
+이전 AEM 6.5 서비스 팩에 소개된 전체 기능, 주요 특징 및 주요 기능 목록에 대해서는 [Adobe Experience Manager 6.5 서비스 팩 4의 새로운 기능](new-features-latest-service-pack.md)을 참조하십시오.
+
+### 사이트 {#sites-fixes}
+
+* AEM Sites 페이지의 URL에 콜론(:) 또는 백분율 기호(%)가 포함되어 있는 경우 기본 브라우저가 응답을 중지하고 CPU 사이클에 스파이크가 표시됩니다(NPR-32369, NPR-31918).
+
+* AEM Sites 페이지를 열어 편집하고 구성 요소를 복사하면 일부 자리 표시자에 대해 붙여넣기 작업을 사용할 수 없습니다(NPR-32317).
+
+* 게시 관리 마법사가 열리면 코어 구성 요소에 연결된 경험 구성 요소가 게시된 참조 목록에 표시되지 않습니다(NPR-32233).
+
+* Touch UI의 Live Copy 개요는 클래식 UI보다 렌더링하는 데 훨씬 시간이 오래 걸립니다(NPR-32149).
+
+* 서버 시간과 컴퓨터 시간이 다른 시간대에 있는 경우 예약된 게시 시간은 Touch UI에 서버 시간을 표시하지만 클래식 UI에서는 시스템 시간이 표시됩니다(NPR-32077).
+
+* AEM Sites에서 URL에 접미사가 붙은 페이지를 열지 못합니다(NPR-32072).
+
+* 사용자가 컨텐츠 조각을 편집하면 삭제된 컨텐츠 조각의 변형이 복원됩니다(NPR-32062).
+
+* 사용자는 필수 필드에 정보를 제공하지 않고 컨텐츠 조각을 저장할 수 있습니다(NPR-31988).
+
+* kernel.js와 ui.j는 사전 컴파일되거나 캐시되지 않습니다. 이로 인해 페이지 렌더링 시간이 추가로 발생합니다(NPR-31891).
+
+* PageEventAuditListener가 활성화되어 있으면 커밋 큐의 길이가 늘어납니다. 벌크 게시, 탐색, 벌크 자산 이동과 같은 많은 작업 성능에 영향을 줍니다(NPR-31890).
+
+* 경험 구성 요소를 드래그할 때 응답 시간이 오래 걸립니다(NPR-31878).
+
+* 응답형 격자의 자리 표시자에서 구성 요소를 여기로 드래그하십시오. 옵션을 선택하면 GET 요청이 전송되고 HTTP 403 오류가 발생합니다(NPR-31845).
+
+* 동일한 폴더 내에서 컨텐츠를 이동할 때 페이지 이동 옵션이 비활성화됩니다(NPR-31840).
+
+* 편집 가능한 템플릿 구조 모드에서 레이아웃 컨테이너의 허용된 구성 요소 목록에 잘못된 결과가 표시됩니다. 디자인 대화 상자의 구성 요소만 레이아웃 컨테이너에 표시됩니다(NPR-31816).
+
+* 페이지에 사용자에 대한 읽기 전용 권한이 있으면 속성 열기 옵션이 sites.html에 표시되지만 editor.html에는 표시되지 않습니다(NPR-31770).
+
+* 사용자가 만들기 버튼을 클릭하면 페이지 옵션을 사용할 수 없습니다(NPR-31756).
+
+* Adobe Campaign에서 OOTB(기본 제공) 디자인 가져오기 구성 요소가 포함된 캠페인을 동기화할 수 없습니다(NPR-31728).
+
+* 글머리 기호 목록을 번호 매기기 목록으로 변경하려고 하면 목록의 처음 두 항목만 변경됩니다(NPR-31636).
+
+* 페이지가 작성되지 않은 경우 하위 노드를 선택하면 선택 대화 상자에 여전히 초기 노드가 표시됩니다. 페이지가 작성된 경우 사용자가 찾아보기를 클릭하면 페이지가 작성된 노드 대신 루트 노드로 리디렉션됩니다(NPR-31618).
+
+* 받은 편지함 사용자 지정 워크플로에서 구성 보기 대화 상자가 제대로 작동하지 않습니다(NPR-32503 및 NPR-32492).
+
+* 받은 편지함을 사용하여 워크플로우 정보를 보는 동안 오류 메시지가 표시됩니다(CQ-4282168).
+
+### 자산 {#assets-6540-enhancements}
+
+* 자산 수집 페이지에서 워크플로우를 트리거하는 버튼이 비활성화됩니다(NPR-32471).
+
+* Dynamic Media Scene7 구성을 사용하여 Experience Manager에서 자산을 폴더 간에 이동하는 동안 이름이 없는 폴더가 SPS(Scene7 Publishing System)에 생성됩니다(NPR-32440).
+
+* 게시된 자산이 들어 있는 폴더로 모든 자산을 이동시키는 작업이 오류로 실패합니다(NPR-32366).
+
+* ${extension}에서 자산의 렌디션이 생성되지 않습니다(NPR-32294).
+
+* 버전 기록 URL은 자산 속성 페이지의 참조자 필드 아래에 표시됩니다(NPR-31889).
+
+* DAM에서 다운로드한 ZIP 파일은 WinZip을 사용하여 열 수 없습니다(NPR-32293).
+
+* 폴더 설정을 열어 폴더 제목이나 축소판 이미지를 변경한 다음 저장하면 폴더의 원래 권한이 업데이트됩니다(NPR-32292).
+
+* 활성화가 예약된 달력 아이콘이 이후 날짜 및 시간에 대해 예약된 자산의 상태 열(DAM 자산 목록의 클래식 UI에 있음)에 표시되지 않습니다(NPR-32291).
+
+* 코드 조각 템플릿을 사용하여 코드 조각을 만들면 코드 조각 만들기 프로세스 중에 컬렉션 검색 시 오류가 발생합니다(NPR-32290).
+
+* 검색 필터에서 여러 태그를 선택하면 여러 검색 쿼리가 실행됩니다(NPR-32143).
+
+* 파일 이름이 50자를 초과하는 자산을 업로드하면 Experience Manager Assets UI에 잘린 파일 이름이 표시됩니다(NPR-32054).
+
+* Adobe Stock에서 확인란 트리의 수준 2 확인란을 선택한 경우 첫 번째와 두 번째 확인란의 선택을 취소하면 필터 패널의 모든 확인란이 지워집니다(NPR-31919).
+
+* Omnisearch 패싯을 사용한 파일 및 폴더를 검색하면 예외가 발생합니다(NPR-31872).
+
+* 종속성 규칙이 해당 메타데이터 스키마 양식에 설정된 경우 필수 필드를 선택하면 메타데이터 편집기의 필수 필드 선택을 위한 필드 강조 표시가 제거되지 않습니다(NPR-31834).
+
+* 태그 계층 구조에서 리프 수준 태그의 전체 이름이 자산 속성 페이지에 표시되지 않습니다(NPR-31820).
+
+* Safari 브라우저의 자산 속성 페이지에서 뒤로 명령을 사용하면 오류가 발생합니다(NPR-31753).
+
+* Omnisearch를 통해 수행한 터치 UI 검색 결과 페이지가 자동으로 스크롤되어 사용자의 스크롤 위치가 손실됩니다(NPR-31307).
+
+* Dynamic Media Scene7 실행 모드에서 실행되는 Experience Manager의 대상 컬렉션 및 표현물 추가 버튼 이외의 작업 버튼이 PDF 자산의 자산 세부 사항 페이지에 표시되지 않습니다(CQ-4286705).
+
+* Scene7의 일괄 업로드 프로세스를 통해 자산을 처리하는 데 시간이 너무 오래 걸립니다(CQ-4286445).
+
+* 사용자가 Dynamic Media 클라이언트의 설정 편집기에서 변경하지 않은 경우 저장 버튼이 원격 세트를 가져오지 않습니다(CQ-4285690).
+
+* 지원되는 3D 모델을 AEM으로 수집할 때 3D 자산 축소판이 도움이 되지 않습니다(CQ-4283701).
+
+* 스마트 자르기 비디오 뷰어 사전 설정이 처리되지 않은 상태로 사전 설정 이름과 함께 배너 텍스트에 두 번 표시됩니다(CQ-4283517).
+
+* 3D Viewer에서 업로드된 3D 모델을 미리 보기했을 때 모델의 잘못된 컨테이너 높이가 자산 세부 정보 페이지에서 확인되었습니다(CQ-4283309).
+
+* 캐러셀 편집기가 Experience Manager Dynamic Media 하이브리드 모드로 IE 11에서 열리지 않습니다(CQ-425590).
+
+* Chrome 및 Safari 브라우저에서 다운로드 대화 상자에 있는 이메일 드롭다운에서 키보드 포커스가 멈춥니다(NPR-32067).
+
+* AEM에서 DM 클라우드 구성을 추가하는 동안 모든 컨텐츠 동기화 확인란이 기본적으로 활성화되지 않습니다(CQ 파섹-4288533).
+
+### 기본 UI {#foundation-ui-6540}
+
+* 필터 패널을 사용하여 자산을 검색하는 동안 마우스 컨트롤이 기존 필터 필드에 있지 않고 이전 필터 필드로 이동합니다(NPR-32538).
+
+* 플랫폼 태그 지정: 태그 필드에 입력하여 태그를 검색하면 루트 경계 외부에 태그가 표시되고 태그 필드의 `rootPath` 속성이 유지되지 않습니다(NPR-31895).
+
+* 플랫폼 UI: 텍스트 필드에 잘못된 경로가 추가되면 경로 브라우저가 멈춥니다(NPR-31884).
+
+* 페이지 선택 시 알림이 고정 메뉴 뒤로 가려집니다(NPR-31628).
+
+### 플랫폼 {#platform-sling-6540}
+
+* (HTL) URL의 경로 섹션에서 밑줄이 콜론을 대체합니다(NPR-32231).
+
+### 프로젝트 {#projects-6540}
+
+* 사용자가 하위 폴더에 프로젝트를 만들 수 있는 권한이 있어도 만들기 버튼이 표시되지 않습니다(NPR-31832).
+
+### 프로젝트 번역 {#projects-translation-6540}
+
+* 번역 프로젝트를 만들 때 `Apache Sling JSP Script Handler`에서 지우기 공간 옵션이 활성화되어 있으면 UI가 중단됩니다(NPR-32154).
+
+* 변환할 태그가 번역 프로젝트에 추가될 때 오류 로그에 UI 및 의 Null 포인트 예외 오류가 관찰됩니다(NPR-31896).
+
+### 통합 {#integrations-6540}
+
+* Launch 라이브러리 URL 생성은 Launch API의 `path` 및 `library_name` 값만 기반으로 하고 `library_path` 값을 기반으로 하지 않습니다(NPR-31550).
+
+* LiveFyre 관련 항목을 처리하는 동안 오류 메시지가 표시됩니다(FYR-12420).
+
+* ReportSuitesServlet이 SSRF에 취약합니다(NPR-32156).
+
+### WCM 템플릿 편집기 {#wcm-template-editor-6540}
+
+* 편집 가능한 템플릿 구조 모드에서 레이아웃 컨테이너의 허용된 구성 요소 목록에 링크 버튼 구성 요소가 표시되지 않습니다(CQ-4282099).
+
+### WCM 페이지 편집기 {#wcm-page-editor-6540}
+
+* 오버레이를 선택한 다음 응답형 격자 구성 요소를 여기로 드래그하십시오.를 선택하면 오류가 발생합니다(CQ-4283342).
+
+### 캠페인 타깃팅 {#campaign-targeting-6540}
+
+* Target 클라우드 구성이 실패하고 Mbox 가져오기 요청이 실패했다는 오류가 표시됩니다(CQ-4279880).
+
+### 브랜드 포털 {#assets-brand-portal-6540}
+
+* Brand Portal 사용자는 AEM 15655에서 Adobe I/O로 업그레이드할 때 기여도 폴더 자산을 AEM Assets에 게시할 수 없습니다(CQDOC-15655).
+
+   이 문제는 다음 서비스 팩 AEM 6.5.5에서 수정됩니다.
+
+   AEM 6.5.4를 즉시 수정하려면 [핫픽스를 다운로드](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041)하고 작성자 인스턴스에 설치하는 것이 좋습니다.
+
+* 메타데이터 스키마 드롭다운 값은 자산 속성에 표시되지 않습니다(CQ 파섹-4283287).
+
+* 자산 속성의 MIME 유형에 따라 메타데이터 하위 스키마에 탭이 표시되지 않습니다(CQ-4283288).
+
+* 메타데이터 스키마 게시를 취소하면 백엔드에서 스키마가 제거되더라도 오류 메시지가 표시됩니다.
+
+* 게시된 자산에 대한 미리 보기 이미지가 표시되지 않습니다(CQ-4285886).
+
+* 사용자가 이름에 작은 따옴표가 포함된 자산을 게시하거나 게시를 취소할 수 없습니다(CQ-4272686).
+
+* 여러 자산을 다운로드하는 동안 약관이 표시되지 않습니다(CQ-4281224).
+
+* 사소한 보안 취약점이 해결되었습니다.
+
+### 커뮤니티 {#communities-6540}
+
+* 구성원 만들기 양식이 빈 페이지로 표시됩니다(NPR-31997).
+
+* 사용자가 작성자 인스턴스에서 Analytics 보고서를 볼 수 없습니다(NPR-30913).
+
+### Oak 색인 지정 및 쿼리 {#oak-indexing-6540}
+
+* JPEG 이미지가 포함된 MS Word 및 MS Excel 문서를 Tika 구문 분석기로 구문 분석하면 구문 분석되지 않고 클래스를 찾을 수 없다는 오류가 표시됩니다(NPR-31952).
+
+### 양식 {#forms-6540}
+
+>[!NOTE]
+>
+>AEM 서비스 팩에는 AEM Forms에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치](#install-aem-forms-jee-installer)를 참조하십시오.
+
+* 서신 관리: 게시 처리 워크플로우에 제출하면 편지에 추가 문자가 표시됩니다(NPR-32626).
+
+* 서신 관리: 게시 처리 워크플로우에 제출하면 편지에 드롭다운 자리 표시자가 텍스트 구성 요소로 표시됩니다(NPR-32539).
+
+* 서신 관리: 편지 템플릿에 정의된 기본값이 미리 보기 모드에서 표시되지 않습니다(NPR-32511).
+
+* 모바일 양식: HTML 버전에서 XDP 양식을 렌더링하는 동안 제출 버튼 크기가 확장되어 표시됩니다(NPR-32514).
+
+* 문서 서비스: 서비스 팩 2를 적용한 후 편지 및 일부 기타 페이지의 URL에 액세스하는 데 문제가 발생합니다(NPR-32508, NPR-32509).
+
+* 문서 서비스: 서버의 트랜잭션 수가 특정 제한을 초과하는 경우 HTML을 PDF로 변환할 수 없고 AEM Forms 서버에서 파일 유형 설정이 제거됩니다(NPR-32204).
+
+* 적용형 양식: WCAG2 레벨 AA 지침에 따라 브라우저 접근성 도구가 적용형 양식의 오류를 보고합니다(NPR-32312, NPR-32309, CQ-4285439).
+
+* 적용형 양식: Chrome 브라우저 접근성 도구가 모범 사례 오류를 보고합니다(NPR-32310).
+
+* 적용형 양식: AEM Sites 페이지에 포함된 적용형 양식을 구성하는 동안 번역 문제가 발생했습니다(NPR-32168).
+
+* Workbench: PDF 유틸리티 서비스에 PDF 속성 가져오기 작업을 사용하는 동안 오류 메시지가 표시됩니다(NPR-32150).
+
+* 문서 보안: DisableGlobalOfflineSynchronizationData 옵션이 True로 설정되어 보호된 PDF 파일을 오프라인으로 열 수 없습니다(NPR-32078).
+
+* 디자이너: 태그 지정 옵션이 활성화된 경우 생성된 PDF 출력에서 하위 양식 테두리가 사라집니다(NPR-32547, NPR-31983, NPR-31950).
+
+* 디자이너: 표에 병합된 셀이 있는 경우 출력 서비스를 사용하여 XDP 양식에서 변환된 출력 PDF 파일에 접근성 테스트를 수행하면 오류가 발생합니다(CQ-4285372).
+
+* Foundation JEE: 클러스터에서 AEM Forms 서버 연결이 끊어진 경우 캐싱 문제가 발생하여 서버에 다시 연결되지 않습니다(NPR-32412).
+
+## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
 [!DNL Adobe Experience Manager]6.5.3.0은 **2019년 4월**&#x200B;에 6.5 릴리스의 공식 출시 이후에 발표된 성능, 안정성, 보안 및 주요 고객 수정 사항과 개선 사항을 포함하는 중요한 릴리스입니다. [!DNL Adobe Experience Manager] 6.5의 맨 위에 설치할 수 있습니다.
 
@@ -22,9 +261,9 @@ ht-degree: 95%
 
 * 이제 [!DNL Experience Manager Assets]에서 Deflate64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다.
 
-* DAM과 목록 보기의 검색 결과에서 자산을 볼 때 자산 생성 날짜를 표시하는 새 열을 사용할 수 있습니다. 열을 정렬하여 자산을 시간 순서대로 배열하거나 시간 순서를 반대로 정렬합니다.
+* 정렬 가능한 작성된 날짜에 대한 새 열이 DAM 목록 보기 및 자산 검색 결과의 목록 보기에 추가되었습니다.
 
-* 이제 목록 보기의 열을 기준으로 자산을 정렬할 수 `Name` 있습니다.
+* 이름 열을 기반으로 한 자산 정렬이 목록 보기에서 활성화되었습니다.
 
 * 이제 [!DNL Dynamic Media]에서 스마트 자르기 비디오 자산을 지원합니다. 스마트 자르기는 장면의 초점을 따라 프레임을 이동하면서 비디오를 다시 자르는 머신 러닝 기반의 기능입니다.
 
@@ -44,9 +283,9 @@ ht-degree: 95%
 
 * 이제 [!DNL Experience Manager Assets]에서 Deflate64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다(NPR-27573).
 
-* DAM과 목록 보기의 검색 결과에서 자산을 볼 때 자산 생성 날짜를 표시하는 새 열을 사용할 수 있습니다. 열을 정렬하여 자산의 시간순 또는 역시간 순서로 정렬합니다(NPR-31312).
+* 정렬 가능한 새로 만든 날짜에 대한 열이 목록 보기의 DAM 목록 보기 및 자산 검색 결과에 추가되었습니다(NPR-31312).
 
-* 이제 목록 보기의 `Name` 열을 기반으로 자산을 정렬할 수 있습니다(NPR-31299).
+* 이름 열을 기반으로 한 자산 정렬이 목록 보기에서 허용되었습니다(NPR-31299).
 
 * GLB, GLTF, OBJ 및 STL 자산 파일은 DAM의 자산 세부 정보 페이지에서 자산 미리 보기를 지원합니다(CQ-428277).
 
@@ -59,8 +298,6 @@ ht-degree: 95%
 * 요청에서 쿼리 매개 변수가 전달되면 Foundation 선택기에서 검색/찾아보기 보기가 기본 보기로 설정되었습니다(NPR-31601).
 
 **수정 사항**
-
-* Adobe Asset Link 사용 시 OAuth IMS 공급자는 프록시 서버를 통해 연결할 수 없습니다(NPR-30949).
 
 * 일부 PDF 문서의 메타데이터는 해당 제목을 수정할 때 업데이트되지 않고 PDF에 저장됩니다(NPR-31629).
 
@@ -82,17 +319,17 @@ ht-degree: 95%
 
 * 파일 이름에 더하기 &#39;+&#39; 기호가 있는 자산은 삭제할 수 없습니다(NPR-31162).
 
-* 새 자산 또는 폴더를 만드는 옵션은 자산 사용자 인터페이스에서 팝업 메뉴로 사용할 수 있습니다. 폴더를 선택하면 Experience Manager는 팝업 메뉴에서 [!UICONTROL 폴더] 중 하나로 표시하지 않습니다(NPR-30877).
+* 폴더 선택 시 상단 메뉴에 표시되는 만들기 드롭다운 메뉴는 만들기 옵션으로 &#39;폴더&#39;를 표시하지 않습니다(NPR-30877).
 
-* Folder selection Create > FileUpload action item is missing when ACL for Deny `jcr:removeChildNodes` and `jcr:removeNode` on path are applied for a user (NPR-30840).
+* 경로에 있는 Deny jcr:removeChildNodes 및 jcr:removeNode에 대한 ACL이 사용자에 대해 적용되면 폴더 선택 만들기 > 파일 업로드 작업 항목이 누락됩니다(NPR-30840).
 
-* 특정 MP4 에셋이 업로드되면 DAM 워크플로우가 부실 상태로 전환되어 나머지 모든 워크플로우가 부실 상태로 전환됩니다(NPR-30662).
+* 특정 mp4 자산이 업로드되면 DAM 워크플로우가 부실 상태로 전환되어 나머지 모든 워크플로우가 부실 상태로 전환됩니다(NPR-30662).
 
-* 여러 GB의 대용량 PDF 파일이 DAM에 업로드되고 하위 자산이 처리되는 경우 메모리 부족 오류가 발생합니다(NPR-30614).
+* 대용량 PDF 파일(일부 GB 중)이 DAM에 업로드되고 하위 자산이 처리되는 경우 메모리 부족 오류가 발생합니다(NPR-30614).
 
 * 자산의 벌크 이동이 실패하고 경고 메시지가 표시됩니다(NPR-30610).
 
-* Asset names are changed to lower case when moving assets from one folder to another when working [!DNL Dynamic Media]–Scene7 mode (NPR-31630).
+* [!DNL Dynamic Media]–Scene7 모드에서 실행 중인 [!DNL Experience Manager]에서 자산을 폴더 간에 이동할 때 자산 이름이 소문자로 변경됩니다(NPR-31630).
 
 * 원격 이미지 집합을 편집하는 동안 Scene 7 회사 이름과 같은 폴더에 있는 이미지에 대한 오류가 발견되었습니다(NPR-31340).
 
@@ -203,7 +440,7 @@ ht-degree: 95%
 
 * 달력 보기를 전환할 수 없습니다(NPR-31271).
 
-### 브랜드 포털 {#assets-brand-portal}
+### 브랜드 포털 {#assets-brand-portal-6530}
 
 **제품 개선 사항**
 
@@ -217,7 +454,7 @@ ht-degree: 95%
 * 기여도 폴더(중첩된 폴더) 내에 기여도 폴더를 만들 수 없으므로 복잡성을 방지할 수 있습니다(CQ-4278391).
 * [!DNL Experience Manager] Admin Console.솔에서 가져온 [!DNL Brand Portal] 사용자 목록(.csv 파일)을 업로드할 때 시스템에 예외가 발생합니다. 다음 .csv 파일의 이메일, 이름 및 성 필드만 필수 필드입니다(CQ-4278390).
 
-### 커뮤니티 {#communities}
+### 커뮤니티 {#communities-6530}
 
 **수정 사항**
 
@@ -286,7 +523,7 @@ ht-degree: 95%
 
 * [!DNL Experience Manager]Oracle 18c에 대해 Forms가 지원됩니다(NPR-29155).
 
-## Adobe Experience Manager 6.5.2.0
+## Adobe Experience Manager 6.5.2.0 {#experience-manager-6520}
 
 [!DNL Adobe Experience Manager][!DNL Adobe Experience Manager] 6.5.2.0은 2019년 4월에&#x200B;**6.5의 공식 출시 이후에 발표된 성능, 안정성, 보안 및 주요 고객 수정 사항과 개선 사항을 포함하는 중요한 릴리스입니다**. [!DNL Experience Manager] 6.5의 맨 위에 설치할 수 있습니다.
 
@@ -487,7 +724,7 @@ ht-degree: 95%
 
 * `RenderAtClient` OSGi용 API의 `PDFFormRenderOptions`에 &#39;자동&#39; 설정이 추가되었습니다. [!DNL Experience Manager Forms] NPR-30759: CQ-4278193용 핫픽스
 
-## Adobe Experience Manager 6.5.1.0 {#release-6510}
+## Adobe Experience Manager 6.5.1.0 {#experience-manager-6510}
 
 [!DNL Adobe Experience Manager][!DNL Adobe Experience Manager] 6.5.1.0은 2019년 4월에&#x200B;*6.5의 공식 출시 이후에 발표된 성능, 안정성, 보안 및 주요 고객 수정 사항과 개선 사항을 포함하는 중요한 릴리스입니다.*[!DNL Experience Manager] 6.5의 맨 위에 설치할 수 있습니다.
 
