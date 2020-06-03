@@ -3,9 +3,9 @@ title: 디지털 자산에 대한 보고서
 description: 디지털 자산의 사용, 활동 및 공유를 이해하는 데 도움이 되는 Adobe Experience Manager Assets의 자산에 대한 보고서를 파악합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '974'
 ht-degree: 2%
 
 ---
@@ -37,10 +37,11 @@ Adobe Experience Manager Assets는 다음과 같은 표준 보고서를 생성�
 * 파일
 * 공유 링크
 
-Adobe Experience Manager 관리자는 구현을 위해 이러한 보고서를 손쉽게 생성하고 사용자 정의할 수 있습니다. 관리자는 다음 단계에 따라 보고서를 생성할 수 있습니다.
+[!DNL Adobe Experience Manager] 관리자는 구현을 위해 이러한 보고서를 쉽게 생성하고 사용자 정의할 수 있습니다. 관리자는 다음 단계에 따라 보고서를 생성할 수 있습니다.
 
 1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 자산 **[!UICONTROL > 보고서]** 를 **[!UICONTROL 클릭합니다]**.
-   ![](assets/AssetsReportNavigation.png)
+
+![](assets/AssetsReportNavigation.png)
 
 1. 자산 [!UICONTROL 보고서] 페이지의 도구 모음에서 **[!UICONTROL 만들기를]** 클릭합니다.
 1. 보고서 **[!UICONTROL 만들기]** 페이지에서 만들 보고서를 선택하고 다음을 **[!UICONTROL 클릭합니다]**.
