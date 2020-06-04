@@ -3,9 +3,9 @@ title: '[!DNL Adobe Camera Raw] 지원.'
 description: 지원 [!DNL Adobe Camera Raw] 을 활성화하는 방법을 [!DNL Adobe Experience Manager Assets]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '392'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처리하고 JPEG 포맷으로 �
 
 에서 [!DNL Camera Raw] 지원을 활성화하려면 다음 [!DNL Experience Manager Assets]단계를 수행합니다.
 
-1. 패키지 공유에서 [Camera Raw 패키지를](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 다운로드합니다.
+1. 패키지 공유 또는 [소프트웨어 배포에서](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw 패키지를 [다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem620/product/assets/aem-assets-cameraraw-pkg).
 1. 액세스 `https://[aem_server]:[port]/workflow`. DAM 자산 **[!UICONTROL 업데이트 워크플로우를]** 엽니다.
 1. [축소판 **[!UICONTROL 처리] 단계를]** 엽니다.
 1. [축소판] **[!UICONTROL 탭에서 다음 구성을]** 제공합니다.
