@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Experience Manager 6.5 자산 사용 안내서
 translation-type: tm+mt
-source-git-commit: b35b157c77bc28b415ffc1f318ff0021ddcb9d04
+source-git-commit: 4f1aea28b94e037da5cefedd46228026299a3ddc
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 95%
@@ -52,7 +52,7 @@ ht-degree: 95%
    + [컨텐츠의 HTTP2 전달](http2.md)
    + [Dynamic Media 자산 제공](delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](hotlink-protection.md)
-   + [3D 이미지](assets-3d.md)
+   + [3D 이미지](/help/assets/assets-3d.md)
    + [이미지 세트](image-sets.md)
    + [파노라마 이미지](panoramic-images.md)
    + [혼합 미디어 세트](mixed-media-sets.md)
