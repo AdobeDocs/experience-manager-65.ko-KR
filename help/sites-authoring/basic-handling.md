@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '3010'
-ht-degree: 92%
+source-wordcount: '2979'
+ht-degree: 93%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 92%
    >
 * 몇 가지 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
 >* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-authoring/keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
+
 >
 
 
@@ -88,10 +89,6 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 ![bh-01](assets/bh-01.png)
 
 콘솔 및 컨텐츠를 탐색할 때 브라우저 탭의 제목이 위치를 반영하도록 업데이트됩니다.
-
->[!NOTE]
->
->탭 제목은 [AEM 6.5 서비스 팩 5의 위치를](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) 반영합니다.
 
 탐색에서 사용할 수 있는 콘솔은 다음과 같습니다.
 
@@ -233,10 +230,6 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
    사이트 **콘솔** 에는 기본 컨텐츠로 **건너뛸 수 있는 추가된 옵션이 있습니다**. 헤더 옵션을 *탭하면* 볼 수 있고 (제품) 도구 모음의 표준 요소를 건너뛰고 기본 컨텐츠로 바로 이동할 수 있으므로 탐색 시간을 단축할 수 있습니다.
 
    ![bh-30](assets/bh-30.png)
-
-   >[!NOTE]
-   >
-   >기본 **콘텐츠로** 건너뛰기 [는](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) AEM 6.5 서비스 팩 5버전부터 사용할 수 있습니다.
 
 ## 도움말 액세스 {#accessing-help}
 
@@ -423,6 +416,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 * 리소스 이름 또는 리소스 이름 오른쪽에 있는 V자형 화살표를 탭하거나 클릭하여 트리에서 위아래로 탐색할 수 있습니다.
 
    * 탭하거나 클릭하면 리소스 이름 및 V자형 화살표가 강조 표시됩니다.
+
    ![bh-17](assets/bh-17.png)
 
    * 클릭하거나 탭한 리소스의 하위 항목은 클릭하거나 탭한 리소스의 오른쪽에 있는 열에 표시됩니다.
@@ -434,6 +428,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
    * 선택하면 확인 표시가 썸네일에 오버레이되고 리소스 이름도 강조 표시됩니다.
    * 선택한 리소스의 세부 정보가 마지막 열에 표시됩니다.
    * 작업 도구 모음을 사용할 수 있습니다.
+
    ![bh-18](assets/bh-18.png)
 
    [열 보기]에서 페이지를 선택하면 선택한 페이지가 다음 세부 정보와 함께 마지막 열에 표시됩니다.
@@ -497,6 +492,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
    * **페이지 분석**
    * **고유 방문자 수**
    * **페이지 시간**
+
    ![bh-21](assets/bh-21.png)
 
    기본적으로 페이지 URL 부분을 구성하는 **이름** 열이 표시됩니다. 일부 경우에는 작성자가 다른 언어로 된 페이지에 액세스해야 하며 작성자가 페이지의 언어를 모르는 경우 페이지 이름(일반적으로 변경되지 않음)을 확인하면 도움이 될 수 있습니다.
