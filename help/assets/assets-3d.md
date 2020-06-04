@@ -4,11 +4,11 @@ seo-title: Dynamic Media에서 3D 자산 작업
 description: Dynamic Media에서 3D 자산으로 작업하는 방법 살펴보기
 seo-description: Dynamic Media에서 3D 자산으로 작업하는 방법 살펴보기
 contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 46848fee0a3f838354ec65f2ea733cf70ac53deb
+source-git-commit: 2f0e626aa16a62203755e29800a5935b350ffe79
 workflow-type: tm+mt
 source-wordcount: '2162'
 ht-degree: 4%
