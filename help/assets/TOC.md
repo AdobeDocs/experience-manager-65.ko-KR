@@ -4,9 +4,9 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Experience Manager 6.5 자산 사용 안내서
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29f2679ffd388893e876d79a4fe50e9761e14f31
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '639'
 ht-degree: 95%
 
 ---
@@ -52,6 +52,7 @@ ht-degree: 95%
    + [컨텐츠의 HTTP2 전달](http2.md)
    + [Dynamic Media 자산 제공](delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](hotlink-protection.md)
+   + [입체적인 3D 이미지](assets-3d.md)
    + [이미지 세트](image-sets.md)
    + [파노라마 이미지](panoramic-images.md)
    + [혼합 미디어 세트](mixed-media-sets.md)
@@ -106,7 +107,7 @@ ht-degree: 95%
    + [PDF 래스터라이저 사용](aem-pdf-rasterizer.md)
    + [업로드 제한 구성](configuring-asset-upload-restrictions.md)
    + [AEM 및 Creative Cloud 통합 우수 사례](aem-cc-integration-best-practices.md)
-   + [InDesign Server와 통합](indesign.md)
+   + [InDesign 서버와 통합](indesign.md)
    + [메타데이터 프로필](metadata-profiles.md)
    + [자산의 디지털 권한 관리](drm.md)
    + [자산 통찰력에 데모 패키지 사용](touch-ui-using-demo-package-for-asset-insights.md)
