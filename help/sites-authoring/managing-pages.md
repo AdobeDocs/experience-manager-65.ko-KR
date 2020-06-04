@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 93%
+source-wordcount: '2334'
+ht-degree: 94%
 
 ---
 
@@ -200,6 +200,7 @@ Components are the elements provided by AEM so that you can add specific types o
    * 새 페이지를 만드는 데 사용할 템플릿을 선택한 후, **다음**&#x200B;을 클릭/탭하여 계속 진행합니다.
 
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
+
    ![cop-04](assets/caop-04.png)
 
 1. 마법사의 마지막 단계에서 다음 중 하나를 수행할 수 있습니다.
@@ -207,6 +208,7 @@ Components are the elements provided by AEM so that you can add specific types o
    * 세 탭을 사용하여 새 페이지에 지정할 [페이지 속성](/help/sites-authoring/editing-page-properties.md)을 입력한 다음, 실제로 페이지를 만들려면 **만들기**&#x200B;를 클릭/탭합니다.
 
    * 선택한 템플릿으로 돌아가려면 **뒤로**&#x200B;를 사용하십시오.
+
    주요 필드는 다음과 같습니다.
 
    * **제목**:
@@ -249,6 +251,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) 및 도구 모음
+
    그런 다음 **편집** 아이콘을 선택하십시오.
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -267,6 +270,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) 및 도구 모음
+
    그런 다음 페이지 **복사** 아이콘을 선택합니다.
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -282,8 +286,6 @@ Components are the elements provided by AEM so that you can add specific types o
    다음을 수행할 수 있습니다.
    * **붙여넣기** 아이콘 자체를 선택합니다. 원본 페이지와 모든 하위 페이지의 복사본이 이 위치에 만들어집니다.
    * 드롭다운 화살표를 선택하여 **하위 항목 없이 붙여넣기** 옵션을 표시합니다. 이 위치에 원본 페이지의 복사본이 만들어집니다. 하위 페이지는 복사되지 않습니다.
-   >[!NOTE]
-   하위 **없이 붙여넣기** 옵션은 [AEM 6.5 서비스 팩 5부터](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) 사용할 수 있습니다.
 
    >[!NOTE]
    페이지를 원본과 동일한 이름의 페이지가 이미 있는 위치에 복사하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter`가 이미 존재하는 경우 `winter`는 `winter1`이 됩니다.
@@ -309,6 +311,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) 및 도구 모음
+
    그런 다음 페이지 **이동** 아이콘을 선택합니다.
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -320,6 +323,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    * 페이지가 이동되면 사용할 페이지의 이름을 지정한 후 **다음**&#x200B;을 클릭/탭하여 다음 단계로 진행합니다.
 
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
+
    ![cop-07](assets/caop-07.png)
 
    페이지를 이동하는 경우에만 페이지 이름이 동일하게 유지될 수 있습니다.
@@ -334,6 +338,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
       * 대상의 썸네일을 클릭하여 대상을 선택합니다.
       * 계속하려면 **다음**&#x200B;을 클릭하십시오.
    * **뒤로**&#x200B;를 사용하여 페이지 이름 지정으로 돌아갑니다.
+
    >[!NOTE]
    기본적으로 이동/이름을 바꾼 페이지의 상위 페이지는 대상으로 선택됩니다.
 
