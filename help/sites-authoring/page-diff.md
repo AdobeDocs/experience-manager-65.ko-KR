@@ -11,7 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: eb9a4792f4d64f98805919f00bb62193a6a7dafc
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 100%
 
 ---
 
@@ -24,9 +27,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
 페이지 비교 기능을 사용하면 두 페이지를 서로 다른 점이 강조 표시된 상태로 편리하게 나란히 비교할 수 있습니다.
 
->[!CAUTION]
->
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>[!TIP]
 >
 >이 기능에 대한 기술적인 세부 사항은 [개발 및 페이지 차이](/help/sites-developing/pagediff.md#operation-details)를 참조하십시오.
 
@@ -34,10 +35,10 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
 이러한 병렬 비교에서 비교할 수 있는 내용은 다음과 같습니다.
 
-* [버전](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - 현재 상태가 있는 페이지의 이전 버전
-* [Live Copy](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy와 블루프린트
-* [론치](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - 해당 소스로 시작
-* [언어 사본](/help/sites-administering/tc-manage.md#comparing-language-copies) - 번역 전후(재변환) 페이지
+* [버전](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - 페이지의 이전 버전과 현재 상태
+* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy와 블루프린트
+* [론치](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - 론치와 소스
+* [](/help/sites-administering/tc-manage.md#comparing-language-copies)언어 사본 - (재)번역 전후 페이지
 
 해당 컨텍스트 내에서 비교를 시작하는 방법에 대한 각 주제를 참조하십시오.
 
@@ -68,7 +69,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 **HTML 변경 사항**
 
 * 진한 녹색 - 추가된 HTML
-* 빨간색 - HTML 제거됨
+* 빨간색 - 제거된 HTML
 
 >[!NOTE]
 >
@@ -96,7 +97,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
 * 버전과 론치를 비교할 때, 탐색 표시, 메뉴, 제품 목록 또는 로고(컨텐츠를 렌더링하기 위해 사이트 구조에 의존하는 구성 요소)와 같은 동적 구성 요소는 고려되지 않습니다.
 * 버전 비교 시 액세스 제어 정책 및 Live Copy 관계는 다시 만들어지지 않습니다.
-* alt, title 또는 src 속성을 수정하는 등 이미지를 변경하면 변경된 대로 파란색으로 강조 표시됩니다. 그러나 일부 경우에는 이미지에 src 속성의 Base64 표현이 있고 두 이미지가 동일하게 보여도 src 속성이 달라서 다르게 표시됩니다.
+* alt, title 또는 src 속성의 수정과 같이 이미지에 변경 사항이 생기면 변경되는 대로 파란색으로 강조 표시됩니다. 그러나 일부 경우에는 이미지에 src 속성의 Base64 표현이 있으며, 두 이미지가 동일하게 보이는데도 비교 시에는 src 특성 비교로 인해 다르게 표시됩니다.
 * 비교 시 이미지 회전은 감지할 수 없습니다.
 * 페이지가 이동되면 이동 전에 만든 버전으로 더 이상 다른 작업을 수행할 수 없습니다.
 
