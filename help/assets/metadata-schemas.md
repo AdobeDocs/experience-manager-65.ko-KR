@@ -3,9 +3,9 @@ title: '메타데이터 속성 페이지의 레이아웃을 정의하는 메타�
 description: 메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 자산에 메타데이터 스키마를 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8490b81242ee284208d0f7fd90797f411e2b99b2
+source-git-commit: 505ee267534b7b3de1f85fb6782b855dbf3c371d
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2648'
 ht-degree: 3%
 
 ---
@@ -119,7 +119,7 @@ application doesn't contain the sub type zip OOTB.
 
 * `./jcr:content/metadata/dc:title`: 자산의 메타데이터 노드에 값을 속성으로 저장합니다 `dc:title`.
 
-* `./jcr:created`: 자산의 노드에 JCR 속성을 표시합니다. 이러한 속성을 구성하는 경우 [편집 비활성화]로 표시하고 날짜 필드를 바인딩하지 않는 것이 좋습니다 `./jcr:created`. 보호된 속성입니다. DAM 사용자가 에셋을 업데이트하려고 하면 [!UICONTROL 에셋을 수정하지]못했습니다. 날짜 필드를 이 JCR 속성에 매핑하기로 결정한 경우 기본 스키마를 사용하십시오. 기본 스키마의 날짜 필드가 매핑되면 Adobe에서 제공한 기본 메타데이터 스키마를 복사하고 수정합니다 `./jcr:created`.
+* `./jcr:created`: 자산의 생성 날짜와 시간을 저장합니다. 보호된 속성입니다. 이러한 속성을 구성하는 경우 [편집 비활성화]로 표시하는 것이 좋습니다.
 
 구성 요소가 메타데이터 스키마 양식에서 제대로 표시되도록 하려면 속성 경로에 공백이 없어야 합니다.
 
