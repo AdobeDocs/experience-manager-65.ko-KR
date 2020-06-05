@@ -218,7 +218,7 @@ Adobe Experience Manager를 웹 컨텐츠 관리 시스템으로 사용하는 �
 
 이제 구성 요소에 3D 자산을 할당할 준비가 되었습니다.[](#assigning-a-three-d-asset-to-the-component)
 
-### 3D [미디어 구성 요소에 3D 자산 할당을 참조하십시오](#assigning-a-three-d-asset-to-the-component).
+### Optional &ndash; Configuring the 3D Media component {#configuring-the-three-d-component}
 
 1. 선택 사항 - 3D 미디어 구성 요소 구성 {#configuring-the-three-d-component}]**
 1. AEM Sites 페이지 편집기에서 이전에 페이지에 추가한 **[!UICONTROL 3D Media Viewer]** 구성 요소를 선택합니다.
