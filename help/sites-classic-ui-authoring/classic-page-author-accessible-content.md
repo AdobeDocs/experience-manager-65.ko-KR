@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9241'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사�
 
 사이트를 만들 때에는 사이트가 따라야 할 전반적인 수준을 결정해야 합니다.
 
-다음 섹션에서는 레벨 A 및 레벨 AA [적합성 수준](https://www.w3.org/TR/WCAG20/#guidelines)에 대한 관련 성공 기준이 있는 [WCAG 2.0 지침](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)에 대해 설명합니다. 
+다음 섹션에서는 레벨 A 및 레벨 AA [적합성 수준](https://www.w3.org/TR/WCAG20/#guidelines)에 대한 관련 성공 기준이 있는 [WCAG 2.0 지침](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -98,13 +98,13 @@ WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사�
 
 **이미지** 구성 요소 대화 상자의 **고급**&#x200B;이미지 속성 탭에서 **대체 텍스트**&#x200B;필드를 사용할 수 있습니다.
 
-![클래식 UI에 있는 [이미지] 구성 요소의 편집 대화 상자 - [대체 텍스트] 필드를 보여줍니다.](assets/chlimage_1-17a.png)
+![클래식 UI에 있는 이미지 구성 요소의 편집 대화 상자 - 대체 텍스트 필드를 보여줍니다.](assets/chlimage_1-17a.png)
 
 AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가합니다. 클래식 UI의 경우, 기본 속성이 만들어지는 방식에 대해 두 가지 다른 시나리오가 있습니다(하지만 기본값이 대체 요소로서 충분하지 않을 수 있으므로 **고급** 이미지 속성 탭에서 편집해야 함).
 
 * 파일:
 
-   사용자의 하드 드라이브에서 이미지가 업로드됩니다. If you add an image component to a page and then choose an image from your hard drive, or another source, the default value for **Alt Text** is `file`. **고급** 이미지 속성 탭에서 이 값을 변경해야 합니다. 즉, 이 값이 **대체 텍스트** 필드에 표시되지는 않지만, 값이 변경되면 필드에 새 값이 표시됩니다.
+   사용자의 하드 드라이브에서 이미지가 업로드됩니다. 이미지 구성 요소를 페이지에 추가한 다음 하드 드라이브나 다른 소스에서 이미지를 선택하는 경우 **대체 텍스트**&#x200B;에 대한 기본값은 `file`입니다. **고급** 이미지 속성 탭에서 이 값을 변경해야 합니다. 즉, 이 값이 **대체 텍스트** 필드에 표시되지는 않지만, 값이 변경되면 필드에 새 값이 표시됩니다.
 
 * 자산:
 
@@ -112,7 +112,7 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
 >[!NOTE]
 >
->In both of the above scenarios, the default **Alt Text** value is not visible in the **Advanced Image Properties** tab. To change the default value, simply enter a new value in the **Alt Text** field.
+>위의 시나리오 양쪽에서 기본 **대체 텍스트** 값은 **고급 이미지 속성** 탭에 표시되지 않습니다. 기본값을 변경하려면 **대체 텍스트** 필드에 새 값을 입력하면 됩니다.
 
 >[!NOTE]
 >
@@ -137,9 +137,9 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
 텍스트 대체 요소를 필요로 하는 특정 유형의 텍스트가 아닌 컨텐츠에는 다음 내용이 포함될 수 있습니다.
 
-* 일러스트레이션 사진:
+* 삽화 사진:
 
-   사람, 사물 또는 장소의 이미지입니다. Think about the role of the photo in the page; an appropriate text equivalent is likely to be *Photo of[object ]*, but may be dependent on the surrounding text.
+   사람, 사물 또는 장소의 이미지입니다. 페이지에서 사진의 역할에 대해 생각해 보십시오. 텍스트에 상당하는 적절한 요소는 *[개체의 사진&#x200B;]*일 수 있지만 주변 텍스트에 따라 달라질 수 있습니다.
 
 * 아이콘:
 
@@ -147,11 +147,11 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
 * 차트 및 그래프:
 
-   일반적으로 숫자 데이터를 나타냅니다. 따라서 텍스트 대체 요소를 제공하기 위한 한 가지 옵션은 차트나 그래픽에 표시된 주요 경향에 대한 간단한 요약을 포함하는 것일 수 있습니다. If necessary, also provide a more detailed description in text using the **Description** field in the **Advanced** image properties tab. 또한 소스 데이터를 페이지나 사이트의 다른 위치에서 표 형식으로 제공할 수 있습니다.
+   일반적으로 숫자 데이터를 나타냅니다. 따라서 텍스트 대체 요소를 제공하기 위한 한 가지 옵션은 차트나 그래픽에 표시된 주요 경향에 대한 간단한 요약을 포함하는 것일 수 있습니다. 필요할 경우 **고급** 이미지 속성 탭의&#x200B;**설명**&#x200B;필드를 사용하여 보다 자세한 설명을 텍스트로 제공할 수도 있습니다. 또한 소스 데이터를 페이지나 사이트의 다른 위치에서 표 형식으로 제공할 수 있습니다.
 
    ![그래프의 예. 대체 요소를 제공하는 가장 좋은 접근 방식이 아래에 나와있습니다.](assets/chlimage_1-2a.jpeg)
 
-   To provide an alternative for this example chart, add a concise `alt` text to the image itself and then follow the image with a full text alternative.
+   이 예제 차트에 대한 대체 요소를 제공하려면 이미지 자체에 간결한 `alt` 텍스트를 추가한 다음 이미지 다음에 전체 텍스트 대체 요소가 오게 합니다.
 
    ```xml
    <p><img src="figure1.gif" alt="Figure 1" ></p>
@@ -165,13 +165,13 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
    AEM에서 이 작업은 이미지의 구성 대화 상자에 있는 **대체 텍스트** 및 **설명** 필드 조합을 사용하여 수행할 수 있습니다([충족하는 방법 - 텍스트가 아닌 컨텐츠(1.1.1)](#how-to-meet-non-text-content) 참조).
 
-* 지도, 다이어그램, 순서도:
+* 맵, 다이어그램, 순서도:
 
-   공간 데이터를 제공하는 그래픽의 경우(예: 개체나 프로세스 간 관계를 설명하는 데 도움이 되도록), 핵심 메시지가 텍스트 형식으로 제공되는지 확인하십시오. For maps, providing a full text equivalent is likely to be impractical, but if the map is provided as a way of helping people find their way to a particular location, then the map image’s alternative text can briefly indicate *Map of X*, then provide directions to that location in text elsewhere in the page or through the **Description** field in the **Advanced** tab of the **Image** component.
+   공간 데이터를 제공하는 그래픽의 경우(예: 개체나 프로세스 간 관계를 설명하는 데 도움이 되도록), 핵심 메시지가 텍스트 형식으로 제공되는지 확인하십시오. 맵의 경우, 상응하는 전체 텍스트를 제공하는 것은 비현실적일 수 있지만, 맵이 특정 위치까지 가는 방법을 찾는 사람들을 돕는 방법으로 제공되는 경우, 맵 이미지의 대체 텍스트는 간단히 *X 지도*&#x200B;를 가리킨 다음, 페이지의 다른 곳이나 **이미지** 구성 요소의 **고급** 탭에 있는 **설명** 필드를 통해 해당 위치로 가는 방향을 텍스트로 제공할 수 있습니다.
 
 * CAPTCHA:
 
-   A CAPTCHA is a *Completely Automated Public Turing test to tell Computers and Humans Apart*. 이 테스트는 인간을 악성 소프트웨어로부터 구별하기 위해 웹 페이지에서 사용되는 보안 검사지만, 액세서빌러티 장벽을 생성할 수 있습니다. 보안 테스트를 통과하기 위해 보이는 내용을 설명할 것을 사용자에게 요구하는 이미지가 여기에 해당합니다. 이 이미지에 대한 대체 텍스트를 제공하는 것은 당연히 불가능하므로 대신 대체하는 비그래픽 해결 방법을 고려해야 합니다.
+   CAPTCHA는 *컴퓨터와 인간을 구분하기 위해 완전히 자동화된 공공 튜링 테스트*&#x200B;입니다. 이 테스트는 인간을 악성 소프트웨어로부터 구별하기 위해 웹 페이지에서 사용되는 보안 검사지만, 액세서빌러티 장벽을 생성할 수 있습니다. 보안 테스트를 통과하기 위해 보이는 내용을 설명할 것을 사용자에게 요구하는 이미지가 여기에 해당합니다. 이 이미지에 대한 대체 텍스트를 제공하는 것은 당연히 불가능하므로 대신 대체하는 비그래픽 해결 방법을 고려해야 합니다.
 
    W3C에서는 다음과 같이 많은 방법을 제안합니다. 이러한 접근 방법 각각에는 나름의 장점과 단점이 있습니다.
 
@@ -181,7 +181,7 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
 * 배경 이미지:
 
-   이러한 기능은 HTML이 아니라 CSS(Cascading Style Sheet)를 사용하여 만들어집니다. 이는 대체 텍스트 값을 지정할 수 없음을 의미합니다. 따라서 배경 이미지는 중요한 텍스트 정보를 제공해서는 안 됩니다. 그럴 경우 이 정보도 페이지의 텍스트로 제공되어야 합니다.
+   배경 이미지는 HTML보다는 CSS(계단식 스타일 시트)를 사용하여 만들어집니다. 이는 대체 텍스트 값을 지정할 수 없음을 의미합니다. 따라서 배경 이미지는 중요한 텍스트 정보를 제공해서는 안 됩니다. 그럴 경우, 이 정보가 페이지의 텍스트로도 제공되어야 합니다.
 
    하지만 이미지를 표시할 수 없을 때에는 대체 배경을 표시하는 것이 중요합니다.
 
@@ -269,7 +269,7 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 
 다음 중 한 방법으로 캡션을 사용할 수 있습니다.
 
-* 열림: 비디오가 재생될 때 항상 표시
+* 열림: 비디오가 재생될 때 항상 표시)
 * 닫힘: 사용자가 캡션을 켜거나 끌 수 있음
 
 캡션을 볼지 여부를 사용자가 선택할 수 있도록, 가능할 때마다 닫힘 캡션 기능을 사용하십시오.
@@ -396,7 +396,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
 * **머리글 사용:**
 
-   As long as you have the accessibility features of the RTE enabled (see [AEM and Accessibility](/help/sites-administering/rte-accessible-content.md)), AEM offers 3 levels of page heading. You can use these to identify sections and subsections of content. Heading 1 is the highest level of heading, Heading 3 the lowest. The system administrator can configure the system to allow the use of more heading levels.
+   RTE의 액세서빌러티 기능이 활성화되어 있는 한([AEM 및 액세서빌러티](/help/sites-administering/rte-accessible-content.md) 참조), AEM에서는 3가지 수준의 페이지 머리글을 제공합니다. 이러한 머리글을 사용하여 컨텐츠의 섹션과 하위 섹션을 식별할 수 있습니다. 머리글 1은 머리글 중 가장 높은 수준이며, 머리글 3은 가장 낮은 수준입니다. 시스템 관리자는 더 많은 머리글 수준 사용을 허용하도록 시스템을 구성할 수 있습니다.
 
    다음 이미지는 여러 가지 머리글 유형의 예를 보여줍니다.
 
@@ -407,7 +407,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
    강조를 나타내려면 &lt;strong> 또는 &lt;em> 요소를 사용합니다. 머리글을 사용하여 단락 내 텍스트를 강조 표시하지 마십시오.
 
    * 강조할 텍스트를 강조 표시합니다.
-   * Click on the **B** icon (for &lt;strong>) or the **I** icon (for &lt;em>) shown within the **Properties** panel (make sure that HTML is selected).
+   * **속성** 패널에 표시된 **B** 아이콘(&lt;strong>에 대해)이나 **I** 아이콘(&lt;em>에 대해)을 클릭합니다(HTML이 선택되어 있는지 확인).
    >[!NOTE]
    >
    >표준 AEM 설치의 RTE는 다음을 사용하도록 설정되어 있습니다.
@@ -418,9 +418,9 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
 * **목록 사용**: HTML을 사용하여 세 가지 서로 다른 유형의 목록을 지정할 수 있습니다.
 
-   * The `<ul>` element is used for *unordered* lists (bulleted) lists. 개별 목록 항목이 `<li>` 요소를 사용하여 식별됩니다.
+   * `<ul>` 요소는 *무순서*&#x200B;목록(글머리 기호 목록)에 사용됩니다. 개별 목록 항목이 `<li>` 요소를 사용하여 식별됩니다.
 
-      in the RTE, use the **Bulleted List** icon.
+      RTE에서는 **글머리 기호 목록** 아이콘을 사용하십시오.
 
    * `<ol>` 요소는 *번호* 목록에 사용됩니다. 개별 목록 항목이 `<li>` 요소를 사용하여 식별됩니다.
 
@@ -428,7 +428,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
    기존 컨텐츠를 특정 목록 유형으로 변경하려면, 적절한 텍스트를 강조 표시하고 적절한 목록 유형을 선택하십시오. 단락 텍스트가 어떻게 입력되는지를 보여주는 앞의 예에서처럼, 적절한 목록 요소가 HTML에 자동으로 추가되지만 소스 편집 보기에서 이를 볼 수도 있습니다.
 
    >[!NOTE]
-   `<dl>` 은 RTE에서 지원되지 않습니다.
+   `<dl>`은 RTE에서 지원되지 않습니다.
 
 * **표 사용**:
 
@@ -439,7 +439,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
    * 각 행 및 열 머리글에 대한 `<th>` 요소
    * 모든 데이터 셀에 대한 `<td>` 요소
    >[!NOTE]
-   표는 **표** 구성 요소로 구현해야 합니다. [텍스트] 구성 요소에서 표를 만들 수 있지만 권장되는 방법은 아닙니다.
+   표는 **표** 구성 요소로 구현해야 합니다. 텍스트 구성 요소에서 표를 만들 수 있지만 권장되는 방법은 아닙니다.
 
    또한 액세스 가능한 표에서는 다음 요소와 속성을 사용합니다.
 
@@ -455,7 +455,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
    * **폭**, **높이**, **테두리**, **셀 패딩**, **셀 간격** 속성은 전역 스타일 시트에서 설정할 수 있으므로 이러한 속성의 기본값 중 어느 것이든 얼마든지 제거하십시오.
    ![표 속성 대화 상자](assets/chlimage_1-20a.png)
 
-   You can then use the **Cell properties** to choose whether the cell is a data or header cell and, if a header cell, whether it relates to a row or column or both:
+   그런 다음 **셀 속성**&#x200B;을 사용하여 셀이 데이터인지 헤더 셀인지를 선택하고, 헤더 셀인 경우 이 셀이 행과 관련되는지, 열과 관련되는지, 아니면 열과 행 둘 다에 관련되는지를 선택할 수 있습니다.
 
    ![셀 속성 대화 상자. 행(보통 첫 번째 행)을 헤더 행으로 설정](assets/chlimage_1-21a.png)
 
@@ -467,7 +467,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
    기본적으로 제공되는 설치에서는 id 속성을 사용할 수 없습니다. RTE에서 HTML 규칙과 직렬 변환기를 구성하여 사용하도록 만들 수 있습니다.
 
    >[!NOTE]
-   표는 **표** 구성 요소로 구현해야 합니다. [텍스트] 구성 요소에서 표를 만들 수 있지만 권장되는 방법은 아닙니다.
+   표는 **표** 구성 요소로 구현해야 합니다. 텍스트 구성 요소에서 표를 만들 수 있지만 권장되는 방법은 아닙니다.
 
    ```xml
    <table>
@@ -738,7 +738,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
 새 HTML 페이지를 AEM에서 만들 때 페이지 제목을 지정할 수 있습니다. 컨텐츠가 실제로 방문자의 필요와 관련이 있는지 여부를 방문자가 신속히 파악할 수 있게 제목이 페이지의 컨텐츠를 적절히 설명하도록 하십시오.
 
-You can also edit the page title when editing a page, which is accessible by **Sidekick** - **Page** tab - **Page Properties...**
+또한 페이지를 편집할 때 **사이드 킥** - **페이지** 탭 - **페이지 속성...**&#x200B;으로 이동하여 페이지 제목을 편집할 수도 있습니다.
 
 #### 추가 정보 - 제목이 있는 페이지(2.4.2) {#more-information-page-titled}
 
@@ -940,13 +940,13 @@ AEM에서 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페이�
 
 레이블의 위치 지정은 적절한 필드를 찾는 데 도움이 되므로 역시 중요하며 복잡한 양식이 있을 때 특히 중요합니다. 다음 규칙을 따르십시오.
 
-* 확인란 또는 라디오 단추:
+* 확인란 또는 라디오 버튼:
 
    필드의 바로 오른쪽에 레이블이 배치됩니다.
 
 * 기타 모든 양식 구성 요소(예: 텍스트 상자, 콤보 상자):
 
-   레이블은 필드의 바로 위나 왼쪽에 배치됩니다.
+   필드의 바로 위나 왼쪽에 레이블이 배치됩니다.
 
 기능이 매우 제한된 간단한 양식에서는 `Submit` 단추에 적절히 레이블을 지정하면 이것이 인접 필드(예: `Search`)에 대한 레이블로 작동할 수 있습니다. 이는 레이블 텍스트를 배치할 공간을 찾는 것이 어려운 상황에서 유용합니다.
 
