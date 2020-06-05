@@ -3,9 +3,9 @@ title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: 라이선스가 부여된 에셋의 에셋 만료 상태 및 정보를 관리하는 방법을 [!DNL Experience Manager]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 20f337ea2e4f369eb6eb760d312199fa39556513
+source-git-commit: ee54a3fa395e2c1ab4a5895a0bb8fc251d24a35a
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1420'
 ht-degree: 1%
 
 ---
@@ -96,9 +96,7 @@ ht-degree: 1%
    >
    >자산 작성자(특정 자산을 업로드하는 사람)만 자산이 만료될 때 이메일을 [!DNL Assets]받습니다. 전체 [수준에서 이메일 알림 구성에 대한 자세한 내용은 이메일 알림](/help/sites-administering/notification.md) 구성 방법을 [!DNL Experience Manager] 참조하십시오.
 
-1. 초 단위 **[!UICONTROL 사전 알림]** 필드에서 만료 관련 알림을 받으려는 자산이 만료되기 전 시간(초)을 지정합니다. 관리자 또는 자산 작성자인 경우, 지정된 시간 후에 자산이 만료된다는 것을 알려주는 자산이 만료되기 전에 메시지를 받게 됩니다.
-
-   자산이 만료된 후 만료를 확인하는 다른 알림을 받게 됩니다. 또한 만료된 자산은 비활성화됩니다.
+1. 초 단위 **[!UICONTROL 사전 알림]** 필드에서 만료 관련 알림을 받으려는 자산이 만료되기 전 시간(초)을 지정합니다. 자산 생성자는 자산이 지정된 시간 후에 만료될 예정임을 알리는 메시지가 자산의 만료 전에 수신됩니다. 자산이 만료된 후 만료를 확인하는 다른 알림을 받게 됩니다. 또한 만료된 자산은 비활성화됩니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -110,7 +108,7 @@ ht-degree: 1%
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. 도구 **[!UICONTROL 모음에서]** 게시를 클릭합니다. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않으면 도구 모음에서]** 자세히 **[!UICONTROL 를 클릭하고]** 게시옵션을찾습니다.
+1. 도구 모음 **[!UICONTROL 에서 게시를]** 클릭합니다. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않으면 도구 모음에서]** 자세히 **[!UICONTROL 를 클릭하고]** 게시옵션을찾습니다.
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
