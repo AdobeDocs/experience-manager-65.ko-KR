@@ -10,11 +10,11 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 52cb99353ae33c8097b6b5bd29f6c040df30b42d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '584'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 84%
 
 태그는 웹 사이트에 포함된 컨텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다. 태그는 검색을 통해 해당 컨텐츠 및 관련 컨텐츠를 찾을 수 있도록 하기 위해 페이지, 자산 또는 컨텐츠에 첨부할 수 있는 키워드 또는 레이블이라고 할 수 있습니다.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* 태그 작성 및 관리 방법과 컨텐츠 태그가 적용되는 항목에 대한 내용은 [태그 관리](/help/sites-administering/tags.md)를 참조하십시오.
+* 사용자 지정 애플리케이션에서 태그를 포함 및 확장하는 방법과 태깅 프레임워크에 대한 내용은 [개발자를 위한 태깅](/help/sites-developing/tags.md)을 참조하십시오.
 
 ## 태깅을 사용해야 하는 10가지 이유 {#ten-reasons-to-use-tagging}
 
@@ -45,9 +45,9 @@ ht-degree: 84%
 
 작성 환경에서 작성자는 페이지 속성에 액세스하고 **태그/키워드** 필드에 하나 이상의 태그를 입력하여 태그를 적용할 수 있습니다.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. **표준 태그** 탭은 기본 네임스페이스이며, 이는 분류법에 접두사로 추가된 `namespace-string:`이 없음을 의미합니다.
+[사전 정의된 태그](/help/sites-administering/tags.md)를 적용하려면, **페이지 속성** 창에서 **태그** 필드와 **태그 선택** 창을 사용하십시오. **표준 태그** 탭은 기본 네임스페이스이며, 이는 분류법에 접두사로 추가된 `namespace-string:`이 없음을 의미합니다.
 
-![태그 창 선택; X 단추를 사용하여 현재 선택한 태그 선택 취소](assets/chlimage_1-41.png)
+![태그 선택 창; X 버튼을 사용하여 현재 선택한 태그 선택 취소](assets/chlimage_1-41.png)
 
 ### 태그 게시 {#publishing-tags}
 
@@ -61,7 +61,7 @@ To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Pr
 
 >[!NOTE]
 >
->페이지를 활성화하면 대화 상자가 자동으로 열리고 페이지에 속하는 활성화되지 않은 태그를 활성화할 수 있습니다.
+>페이지를 활성화하면 페이지에 속하면서 활성화되지 않은 태그를 활성화할 수 있는 대화 상자가 자동으로 열립니다.
 
 **비활성화**
 
