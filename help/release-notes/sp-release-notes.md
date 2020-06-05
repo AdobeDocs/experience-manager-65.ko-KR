@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.5 서비스 팩 5에 대한 릴리스 �
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d51577195e969ff8af31be49159ff575e3654cc9
+source-git-commit: 46f28926af6cbf3999a4c81cb1f1297b09c07f9f
 workflow-type: tm+mt
-source-wordcount: '4476'
+source-wordcount: '4486'
 ht-degree: 23%
 
 ---
@@ -423,7 +423,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 문서 [Uberjar 사용 방�
 
 * 계층 구조의 폴더 [!DNL Experience Manager Assets] 가 에서 이름이 변경되고 에셋이 포함된 중첩된 폴더가 게시되는 경우 루트 폴더가 다시 게시될 [!DNL Brand Portal][!DNL Brand Portal] 때까지 폴더의 제목이 업데이트되지 않습니다.
 
-* 버전 83의 업데이트로 인해 패키지 빌드에 문제가 발생했습니다. [!DNL chrome] 사용 가능한 기타 브라우저(예: [!DNL Internet Explorer] 및 기타 AEM [!DNL Firefox]표준 패키지 설치 옵션)를 사용하여 문제를 해결하십시오.
+* AEM 6.5.5.0을 설치하는 동안 [!DNL Chrome] 버전 83의 업데이트로 패키지 빌드에 문제가 발생합니다. 사용 가능한 기타 브라우저(예: [!DNL Internet Explorer] 및 기타 AEM [!DNL Firefox]표준 패키지 설치 옵션)를 사용하여 문제를 해결하십시오. AEM 6.5.5.0을 설치한 후 문제가 해결됩니다.
 
 * TLS v1.2를 사용하는 통신만 허용하므로 AEM 기본 메일 보낸 사람을 사용하여 원격 SMTP 서버로 이메일을 보낼 수 없습니다. 번들을 제거하고 번들을 새로 고쳐 문제를 해결하십시오. `javax.mail:mail:1.5.0-b01` `system/console`
 
