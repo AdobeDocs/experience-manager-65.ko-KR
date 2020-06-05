@@ -4,10 +4,10 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Experience Manager 6.5 자산 사용 안내서
 translation-type: tm+mt
-source-git-commit: 4f1aea28b94e037da5cefedd46228026299a3ddc
+source-git-commit: db60a7297defa2ed8e7f30f148d0f74a73a49893
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 95%
    + [AEM Assets 홈 페이지 경험](assets-home-page.md)
    + [AEM에서 자산 검색](search-assets.md)
    + [다국어 자산](multilingual-assets.md)
-   + [AEM [!DNL Adobe Stock] 자산에 자산 사용](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock] AEM Assets에서 자산 사용](aem-assets-adobe-stock.md)
    + [3D 자산 미리 보기](previewing-3d-assets.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [타임라인의 활동 스트림](activity-stream.md)
@@ -52,7 +52,7 @@ ht-degree: 95%
    + [컨텐츠의 HTTP2 전달](http2.md)
    + [Dynamic Media 자산 제공](delivering-dynamic-media-assets.md)
    + [Dynamic Media에서 핫링크 보호 활성화](hotlink-protection.md)
-   + [3D 이미지](/help/assets/assets-3d.md)
+   + [3D 지원](/help/assets/assets-3d.md)
    + [이미지 세트](image-sets.md)
    + [파노라마 이미지](panoramic-images.md)
    + [혼합 미디어 세트](mixed-media-sets.md)
@@ -154,7 +154,7 @@ ht-degree: 95%
    + [비동기 작업](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [자산 통찰력](touch-ui-asset-insights.md)
-   + [Adobe Launch를 통해 에셋 인사이트 활성화](touch-ui-using-dtm-for-asset-insights.md)
+   + [Adobe Launch를 통해 자산 인사이트 활성화](touch-ui-using-dtm-for-asset-insights.md)
    + [자산 통찰력 구성](touch-ui-configuring-asset-insights.md)
    + [자산 체크인 및 체크아웃](check-out-and-submit-assets.md)
    + [폴더에 번역 클라우드 서비스 적용](transition-cloud-services.md)
