@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 9a27aabef07d5b5104c08c414138fbb22e284a68
 workflow-type: tm+mt
 source-wordcount: '2074'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
@@ -78,7 +78,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 * [AEM 6.5 서비스 팩 릴리스 노트](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes/sp-release-notes.html)
 
-**최신 AEM 패키지** 또는 서비스 팩을 찾을 수 없는 경우 고객 지원 센터에 문의하십시오.
+최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **지원 센터에 문의**&#x200B;하십시오.
 
 ## 구성 만들기 {#configure-new-integration-65}
 
