@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18dc05876337629b7561320ff6f0945e3e785ea3
+source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 3%
@@ -29,6 +29,7 @@ ht-degree: 3%
 >
 >* 자산 REST API
 >* 컨텐츠 조각 지원 포함
+
 >
 >
 AEM Assets HTTP API의 현재 구현은 REST입니다.
@@ -129,6 +130,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 >
 >* [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [비디오 - AEM을 사용하는 CORS용 개발](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -292,7 +294,7 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 
 관련 상황에서 다음 상태 코드를 볼 수 있습니다.
 
-* **202 (확인)**
+* **200 (확인)**
 
    다음 경우에 반환:
 
@@ -345,6 +347,7 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    자세한 오류 메시지는 일반적으로 다음 방법으로 반환됩니다.
 
    ```xml
