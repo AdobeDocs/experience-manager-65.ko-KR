@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
 source-wordcount: '2334'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -44,15 +44,15 @@ ht-degree: 94%
 
 웹 사이트의 구조는 컨텐츠 페이지를 담는 트리 구조로 생각할 수 있습니다. 이 컨텐츠 페이지의 이름은 URL을 구성하는 데 사용됩니다. 반면에 제목은 페이지 컨텐츠가 표시될 때 표시됩니다.
 
-The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
+다음은 하이킹 요약 페이지(`desert-sky-shorts`)가 액세스되는 We.Retail 사이트의 예제를 보여줍니다.
 
-* 작성 환경
+* 작성자 환경
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * 게시 환경
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+인스턴스의 구성에 따라서는 게시 환경에서 `/content`의 사용은 선택 사항일 수 있습니다.
 
 ```xml
  /content
@@ -84,7 +84,7 @@ Depending on the configuration of your instance, use of `/content` might be opti
 
 어떤 지점에서든, 헤더 막대의 탐색 표시를 통해 위쪽 분기를 볼 수 있습니다.
 
-![cop-01](assets/caop-01.png)
+![caop-01](assets/caop-01.png)
 
 ### 페이지 이름 지정 규칙 {#page-naming-conventions}
 
@@ -131,7 +131,7 @@ AEM이 [MongoMK 지속성 관리자 배포](/help/sites-deploying/recommended-de
 
 #### 제목 {#title}
 
-새 페이지를 만들 때 페이지 **제목**&#x200B;만 제공하면 AEM은 이 문자열에서 페이지 **이름**[을 파생하고 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. ](/help/sites-developing/naming-conventions.md) A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. 예:
+새 페이지를 만들 때 페이지 **제목**&#x200B;만 제공하면 AEM은 이 문자열에서 페이지 **이름**[을 파생하고 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. ](/help/sites-developing/naming-conventions.md) **제목** 필드에는 잘못된 문자가 포함될 수 있지만, 파생되는 이름에서는 잘못된 문자가 대체됩니다. 예:
 
 | 제목 | 파생되는 이름 |
 |---|---|
@@ -142,7 +142,7 @@ AEM이 [MongoMK 지속성 관리자 배포](/help/sites-deploying/recommended-de
 
 새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다. [](/help/sites-developing/naming-conventions.md) **이름** 필드에 잘못된 문자를 제출할 수 없습니다. AEM에서 유효하지 않은 문자를 발견하면 필드가 설명 메시지와 함께 강조 표시됩니다.
 
-![cop-02](assets/caop-02.png)
+![caop-02](assets/caop-02.png)
 
 >[!NOTE]
 언어 루트가 아닌 경우 ISO-639-1에 따라 페이지 이름으로 정의된 두 문자 코드를 사용할 수 없습니다.
@@ -170,7 +170,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 ### 구성 요소 {#components}
 
-Components are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of [out-of-the-box components](/help/sites-authoring/default-components-console.md) that provide comprehensive functionality. These include:
+구성 요소는 특정 유형의 컨텐츠를 추가할 수 있도록 AEM에서 제공하는 요소입니다. AEM에는 다음과 같이 광범위한 기능을 제공하는 다양하고 [특별한 구성 요소](/help/sites-authoring/default-components-console.md)가 포함되어 있습니다.
 
 * 텍스트
 * 이미지
@@ -189,11 +189,11 @@ Components are the elements provided by AEM so that you can add specific types o
 
 모든 페이지가 미리 만들어져 있지 않다면 컨텐츠를 만들기 전에 우선 페이지를 만들어야 합니다.
 
-1. Open the Sites console (for example, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
+1. 사이트 콘솔을 엽니다(예: [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. 새 페이지를 만들 위치로 이동합니다.
 1. 도구 모음에서 **만들기**&#x200B;를 사용하여 드롭다운 선택기를 연 다음, 목록에서 **페이지**&#x200B;를 선택합니다.
 
-   ![cop-03](assets/caop-03.png)
+   ![caop-03](assets/caop-03.png)
 
 1. 마법사의 첫 번째 단계에서 다음 중 하나를 수행할 수 있습니다.
 
@@ -201,7 +201,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
 
-   ![cop-04](assets/caop-04.png)
+   ![caop-04](assets/caop-04.png)
 
 1. 마법사의 마지막 단계에서 다음 중 하나를 수행할 수 있습니다.
 
@@ -225,7 +225,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
    새 페이지를 만드는 데 필요한 최소 정보는 **제목**&#x200B;입니다.
 
-   ![cop-05](assets/caop-05.png)
+   ![caop-05](assets/caop-05.png)
 
 1. **만들기**&#x200B;를 클릭하여 프로세스를 완료하고 새 페이지를 만듭니다. 확인 대화 상자에 페이지를 즉시 **열지** 또는 콘솔로 돌아갈지(**완료**) 여부를 묻는 메시지가 표시됩니다.
 
@@ -236,7 +236,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
 1. 콘솔로 돌아오면 새 페이지가 보입니다.
 
-   ![cop-06](assets/caop-06.png)
+   ![caop-06](assets/caop-06.png)
 
 >[!CAUTION]
 페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. 대신 [새 템플릿으로 launch를 만들 수는 있지만 ](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)그렇게 되면 이미 존재하는 컨텐츠는 모두 잃게 됩니다.
@@ -296,7 +296,7 @@ Components are the elements provided by AEM so that you can add specific types o
 페이지 이름 바꾸기는 새 페이지 이름을 지정할 때의 [페이지 이름 지정 규칙](#page-naming-conventions)을 따릅니다.
 
 >[!NOTE]
-페이지는 페이지가 기반으로 하는 템플릿이 허용되는 위치로만 이동할 수 있습니다. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+페이지는 페이지가 기반으로 하는 템플릿이 허용되는 위치로만 이동할 수 있습니다. 자세한 내용은 [템플릿 가용성](/help/sites-developing/templates.md#template-availability)을 참조하십시오.
 
 페이지를 이동하는 절차와 페이지 이름을 변경하는 절차는 기본적으로 동일하며 같은 마법사로 처리됩니다. 이 마법사를 사용하여 다음을 수행할 수 있습니다.
 
@@ -324,7 +324,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
    * 프로세스를 중단하려면 **취소**&#x200B;를 클릭/탭합니다.
 
-   ![cop-07](assets/caop-07.png)
+   ![caop-07](assets/caop-07.png)
 
    페이지를 이동하는 경우에만 페이지 이름이 동일하게 유지될 수 있습니다.
 
@@ -342,7 +342,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    >[!NOTE]
    기본적으로 이동/이름을 바꾼 페이지의 상위 페이지는 대상으로 선택됩니다.
 
-   ![cop-08](assets/caop-08.png)
+   ![caop-08](assets/caop-08.png)
 
    >[!NOTE]
    페이지를 동일한 이름의 페이지가 이미 있는 위치로 이동하는 경우 숫자가 추가되어 변형된 이름이 자동으로 생성됩니다. 예를 들어 `winter`가 이미 존재하는 경우 `winter`는 `winter1`이 됩니다.
@@ -354,7 +354,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
    >[!NOTE]
    페이지가 연결 또는 참조되지 않은 경우 이 단계를 사용할 수 없습니다.
 
-   ![cop-09](assets/caop-09.png)
+   ![caop-09](assets/caop-09.png)
 
 1. **이동**&#x200B;을 선택하면 프로세스가 완료되고 페이지가 적절하게 이동되거나 페이지 이름이 변경됩니다.
 
