@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
 source-wordcount: '2979'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
   </tr>
   <tr>
    <td>스크린</td>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">스크린</a>을 사용하여 크기와 위치에 상관없이 고객이 보는 모든 화면을 관리할 수 있습니다.</td>
+   <td><a href="https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">스크린</a>을 사용하여 크기와 위치에 상관없이 고객이 보는 모든 화면을 관리할 수 있습니다.</td>
   </tr>
   <tr>
    <td>사이트</td>
@@ -195,7 +195,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
    ![bh-05](assets/bh-05.png)
 
-   레일의 중간에 위치하며 항상 현재 선택된 항목에 대한 설명을 표시하는 [탐색 표시]를 사용하면 특정 콘솔 내에서 탐색할 수 있습니다. Sites 콘솔에서는 웹 사이트 수준을 탐색할 수 있습니다.
+   레일의 중간에 위치하며 항상 현재 선택된 항목에 대한 설명을 표시하는 탐색 표시를 사용하면 특정 콘솔 내에서 탐색할 수 있습니다. Sites 콘솔에서는 웹 사이트 수준을 탐색할 수 있습니다.
 
    현재 선택된 항목의 계층 구조 레벨을 나열하는 드롭다운 목록을 표시하려면 [탐색 표시] 텍스트를 클릭하면 됩니다. 해당 위치로 이동하려면 항목을 클릭하십시오.
 
@@ -205,7 +205,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   [목록 보기]에서만 사용 가능합니다. See [list view](#list-view) for more information.
+   목록 보기에서만 사용 가능합니다. 자세한 내용은 [목록 보기](#list-view)를 참조하십시오.
 
 * **만들기** 단추
 
@@ -225,9 +225,9 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 * 키보드 탐색
 
-   키보드만 사용하여 웹 사이트를 탐색할 수 있습니다. 여기서는 **TAB** 키(또는 **OPT+TAB**)의 표준 브라우저 기능을 사용하여 포커스가 있는 페이지의 요소 간에 이동할 *수*&#x200B;있습니다.
+   키보드만 사용하여 웹 사이트를 탐색할 수 있습니다. 여기서는 **TAB** 키(또는 **OPT+TAB**)의 표준 브라우저 기능을 사용하여 *포커스가 있는* 페이지에서 요소 간에 이동할 수 있습니다.
 
-   사이트 **콘솔** 에는 기본 컨텐츠로 **건너뛸 수 있는 추가된 옵션이 있습니다**. 헤더 옵션을 *탭하면* 볼 수 있고 (제품) 도구 모음의 표준 요소를 건너뛰고 기본 컨텐츠로 바로 이동할 수 있으므로 탐색 시간을 단축할 수 있습니다.
+   **사이트** 콘솔에는 **기본 컨텐츠로 건너뛸 수 있는** 추가된 옵션이 있습니다. 헤더 옵션을 *탭하면* 볼 수 있고 (제품) 도구 모음의 표준 요소를 건너뛰고 기본 컨텐츠로 바로 이동할 수 있으므로 탐색 시간을 단축할 수 있습니다.
 
    ![bh-30](assets/bh-30.png)
 
@@ -346,13 +346,13 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
    <td>카드 보기<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
+     <li>데스크탑: <br /> 마우스를 올려 놓은 후 체크 표시 빠른 작업 사용</li>
      <li>모바일 장치: <br /> 카드를 길게 탭하기</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Click the card</li>
-     <li>Mobile device:<br /> Tap the card</li>
+     <li>데스크탑: <br /> 카드 클릭</li>
+     <li>모바일 장치: <br /> 카드 탭하기</li>
     </ul> </td>
   </tr>
   <tr>
@@ -393,7 +393,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ![bh-14](assets/bh-14.png)
 
-데스크톱 장치를 사용하는 경우, 키보드에서 ESC 키를 탭하여 [모든 보기]에 있는 모든 항목을 선택 취소할 수 있습니다.
+데스크톱 장치를 사용하는 경우, 키보드에서 ESC 키를 탭하여 모든 보기에 있는 모든 항목을 선택 취소할 수 있습니다.
 
 #### 선택 예 {#selecting-example}
 
