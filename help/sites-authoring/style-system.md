@@ -8,18 +8,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0985ba24f7430381fccc40faf3a316d3abd85a30
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1365'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
 # 스타일 시스템{#style-system}
 
-스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 컨텐츠 작성자가 선택할 수 있도록 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 구성 요소의 시각적 변형으로 구성 요소를 보다 유연하게 만들 수 있습니다.
+스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 컨텐츠 작성자가 선택할 수 있도록 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 구성 요소를 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
 
 따라서 각 스타일에 대해 사용자 지정 구성 요소를 개발하거나 이러한 스타일 기능을 사용하도록 구성 요소 대화 상자를 사용자 지정할 필요가 없습니다. 또한 AEM 백엔드 개발 없이 컨텐츠 작성자의 요구에 맞게 빠르고 쉽게 조정될 수 있는 재사용 가능한 구성 요소가 생성되게 됩니다.
 
@@ -29,7 +29,7 @@ ht-degree: 69%
 
 마찬가지로 컨텐츠 작성자는 컨텐츠를 구성하고 배열해야 할 뿐만 아니라 시각적으로 표시되는 방법도 선택해야 합니다.
 
-스타일 시스템은 템플릿 작성자의 요구 사항과 컨텐츠 작성자의 요구 사항을 모두 충족하는 통합 솔루션을 제공합니다.
+스타일 시스템은 템플릿 작성자 및 컨텐츠 작성자 요구 사항을 둘 다 충족할 수 있는 통합된 솔루션을 제공합니다.
 
 * 템플릿 작성자는 구성 요소의 컨텐츠 정책에 스타일 클래스를 정의할 수 있습니다.
 * 그러면 컨텐츠 작성자가 페이지에서 구성 요소를 편집할 때 해당 스타일을 적용하기 위해 드롭다운에서 이러한 클래스를 선택할 수 있습니다.
@@ -38,7 +38,7 @@ ht-degree: 69%
 
 ## 개요 {#overview}
 
-스타일 시스템을 사용하면 일반적으로 다음 양식이 사용됩니다.
+스타일 시스템을 사용할 경우 일반적으로 다음 양식이 사용됩니다.
 
 1. 웹 디자이너는 구성 요소의 다른 시각적 변형을 만듭니다.
 
@@ -64,11 +64,11 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ## 사용 {#use}
 
-이 기능을 보여주기 위해 핵심 구성 요소의 [제목 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2) 의 구현을 예로 사용할 것입니다.
+이 기능을 보여주기 위해 핵심 구성 요소의 [제목 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2_kr)의 구현을 예로 사용할 것입니다.
 
-The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
+다음 섹션 [컨텐츠 작성자](#as-a-content-author) 및 [템플릿 작성자](#as-a-template-author)에서는 WKND의 스타일 시스템을 사용하여 스타일 시스템의 기능을 테스트하는 방법을 설명합니다.
 
-자신만의 구성 요소에 스타일 시스템을 사용하려면 다음을 수행합니다.
+사용자 고유의 구성 요소에 대해 스타일 시스템을 사용하려면 다음을 수행하십시오.
 
 1. [개요](#overview) 섹션에서 설명한 대로 CSS를 클라이언트 라이브러리로 설치합니다.
 1. [템플릿 작성자](#as-a-template-author) 섹션에 설명된 대로 컨텐츠 작성자가 사용할 수 있도록 하려는 CSS 클래스를 구성합니다.
@@ -76,8 +76,8 @@ The following sections [As a Content Author](#as-a-content-author) and [As a Tem
 
 ### 컨텐츠 작성자 {#as-a-content-author}
 
-1. WKND 프로젝트를 설치한 후 에서 WKND의 영어 마스터 홈 페이지로 이동하여 페이지 `http://<host>:<port>/sites.html/content/wknd/language-masters/en` 를 편집합니다.
-1. 페이지 **에서** 더 아래로 제목 구성 요소 선택
+1. WKND 프로젝트를 설치한 후 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`에서 WKND의 영어 마스터 홈 페이지로 이동하여 페이지를 편집합니다.
+1. 페이지 아래쪽에서 **제목** 구성 요소 선택
 
    ![작성자를 위한 스타일 시스템](assets/style-system-author.png)
 
@@ -87,15 +87,15 @@ The following sections [As a Content Author](#as-a-content-author) and [As a Tem
 
    >[!NOTE]
    >
-   >이 예에서, 색상 **스타일(** Black **** Gray **및 GrayExclusive)는**&#x200B;반면 StyleOptions(Allies Align WhiteAlign RightAlign And Mini Spacing)는 상호 배타적인 **반면 Briey**&#x200B;및 Gray는 ****************&#x200B;배타적인으로, Albeshl(Alk 및 AllikAlign Align Allik 및 MiniSpacing을 조합할 수 있습니다. 이 내용은 ](#as-a-template-author)템플릿 작성자로서 템플릿에 구성[할 수 있습니다.
+   >이 예에서 **색상** 스타일(**검은색**, **흰색** 및 **회색**)은 상호 배타적이지만 **스타일** 옵션(**밑줄**, **오른쪽 정렬** 및 **미니 공간**)은 조합할 수 있습니다. 이 내용은 ](#as-a-template-author)템플릿 작성자로서 템플릿에 구성[할 수 있습니다.
 
 ### 템플릿 작성자 {#as-a-template-author}
 
-1. While editing WKND&#39;s English language master home page at `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edit the template of the page via **Page Information -> Edit Template**.
+1. WKND의 영어 마스터 홈 페이지인 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`를 편집하는 동안, **페이지 정보 -> 템플릿 편집**&#x200B;에서 페이지의 템플릿을 편집합니다.
 
    ![템플릿 편집](assets/style-system-edit-template.png)
 
-1. Edit the policy of the **Title** component by tapping or clicking the **Policy** button of the component.
+1. 구성 요소의 **정책** 버튼을 탭하거나 클릭하여 **제목** 구성 요소의 정책을 편집합니다.
 
    ![정책 편집](assets/style-system-edit-policy.png)
 
@@ -111,26 +111,26 @@ The following sections [As a Content Author](#as-a-content-author) and [As a Tem
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.
+>구성 요소 정책의 스타일 속성으로 구성된 CSS 클래스(필요한 Javascript 포함)는 [클라이언트 라이브러리](/help/sites-developing/clientlibs.md)로 배포해야 적용됩니다.
 
 ## 설정 {#setup}
 
-핵심 구성 요소 버전 2 이상은 스타일 시스템을 활용할 수 있도록 완벽하게 활성화되며 추가 구성이 필요 없습니다.
+핵심 구성 요소 버전 2 이상은 스타일 시스템을 활용할 수 있도록 전체적으로 활성화되며 추가 구성이 필요 없습니다.
 
-다음 단계는 사용자 정의 구성 요소에 대해 스타일 시스템을 활성화하거나 편집 대화 상자에서 스타일 탭(선택 사항)을 [활성화하기만 하면 됩니다.](#enable-styles-tab-edit)
+다음 단계는 사용자 지정 구성 요소에 대해 스타일 시스템을 활성화하거나 [편집 대화 상자에서 선택 사항 스타일 탭을 활성화](#enable-styles-tab-edit)하기만 하면 됩니다.
 
-### 디자인 대화 상자에서 스타일 탭 사용 {#enable-styles-tab-design}
+### 디자인 대화 상자에서 스타일 탭 활성화 {#enable-styles-tab-design}
 
-구성 요소가 AEM의 스타일 시스템에서 작동하고 디자인 대화 상자에 스타일 탭을 표시하려면 구성 요소 개발자가 구성 요소에 다음 설정이 있는 스타일 탭을 포함해야 합니다.
+구성 요소가 AEM의 스타일 시스템을 사용하고 디자인 대화 상자에 스타일 탭을 표시하도록 하려면 구성 요소 개발자가 다음 설정이 있는 스타일 탭을 구성 요소에 포함해야 합니다.
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 구성 요소가 구성되면 페이지 작성자가 구성한 스타일이 AEM을 통해 데코레이션 요소에 자동으로 삽입됩니다. AEM은 이러한 스타일을 편집 가능한 모든 구성 요소에 자동으로 래핑합니다. 구성 요소 자체는 이를 위해 어떤 작업도 수행할 필요가 없습니다.
 
-### 편집 대화 상자에서 스타일 탭 사용 {#enable-styles-tab-edit}
+### 편집 대화 상자에서 스타일 탭 활성화 {#enable-styles-tab-edit}
 
-이제 AEM 버전 6.5.3.0부터 편집 대화 상자의 선택 사항 스타일 탭을 사용할 수 있습니다. 디자인 대화 상자 탭과 달리 편집 대화 상자의 탭은 스타일 시스템이 작동하는 데 반드시 필요한 것은 아니지만 내용 작성자가 스타일을 설정할 수 있는 선택 가능한 대체 인터페이스입니다.
+이제 AEM 버전 6.5.3.0부터 편집 대화 상자의 선택 사항 스타일 탭을 사용할 수 있습니다. 디자인 대화 상자 탭과 달리 편집 대화 상자의 탭은 스타일 시스템이 작동하는 데 반드시 필요한 것은 아니지만 컨텐츠 작성자가 스타일을 설정할 수 있는 선택적 대체 인터페이스입니다.
 
 편집 대화 상자 탭은 디자인 대화 상자 탭과 유사한 방식으로 포함될 수 있습니다.
 
