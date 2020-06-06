@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc49aaad1f55b8c70228d3c800f1e5abf8a2519c
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '965'
 ht-degree: 1%
 
 ---
@@ -157,13 +157,13 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
    * 점수 및 배지 속성 추가
 
    ```
-   scoringRules = [/etc/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
-   badgingRules =[/etc/community/badging/rules/comments-scoring,
-   /etc/community/badging/rules/forums-scoring]
+   badgingRules =[/libs/settings/community/badging/rules/comments-scoring,
+   /libs/settings/community/badging/rules/forums-scoring]
    ```
 
    * 포럼 구성 요소 노드 찾기
@@ -189,7 +189,7 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
@@ -212,7 +212,7 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 1. 사용자에게 cURL을 사용하여 중재자 배지가 할당됩니다.
 
    ```shell
-   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
    사용자가 두 개의 청동 배지를 받았고 사회자 배지가 수여됨에 따라 포럼 참가자가 표시되는 방식은 다음과 같습니다.
@@ -225,8 +225,8 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 >
 >* 점수 규칙 이름은 전체적으로 고유해야 합니다. 같은 이름으로 끝나서는 안 됩니다.
    >  하지 *말아야* 할 사항의 예:
-   >  /etc/community/scoring/rules/site1/forums-scoring
-   >  /etc/community/scoring/rules/site2/forums-scoring
+   >  /libs/settings/community/scoring/rules/site1/forums-scoring
+   >  /libs/settings/community/scoring/rules/site2/forums-scoring
    >
    >
 * 다양한 AEM 사이트에 대한 고유한 배지 이미지 만들기
