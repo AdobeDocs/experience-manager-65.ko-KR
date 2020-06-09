@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06301db70f763eedebeca293dd288d22248cfbf6
+source-git-commit: f671e00ad94555346190ecb98c905441ad111e18
 workflow-type: tm+mt
 source-wordcount: '5777'
 ht-degree: 1%
@@ -110,6 +110,7 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
          * **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 항목에 대한 세부 상태는 도구 설명을 통해 표시됩니다.
          * **[!UICONTROL 하위 폴더]** 사용 - Dynamic Media에 동기화할 수 있도록 이 하위 트리에 있는 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
          * **[!UICONTROL 하위 폴더에]** 대해 비활성화됨 - 이 하위 트리의 모든 항목을 Dynamic Media로 동기화에서 제외합니다.
+
    >[!NOTE]
    >
    >DMS7에서는 버전 관리가 지원되지 않습니다. 또한, 지연된 활성화는 [다이내믹 미디어 구성 편집] 페이지의 **[!UICONTROL 자산]** 게시가 활성화 **[!UICONTROL 시]**&#x200B;로 설정된 경우에만 적용되며, 처음 자산이 활성화될 때까지만 적용됩니다.
@@ -118,7 +119,7 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
    >자산이 활성화되면 모든 업데이트가 즉시 S7 전달에 실시간으로 게시됩니다.
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
-1. Dynamic Media 콘텐츠를 게시하기 전에 안전하게 미리 보려면 AEM 작성자 인스턴스를 &quot;허용 목록&quot;으로 설정하여 Dynamic Media에 연결해야 합니다.
+1. Dynamic Media 콘텐츠를 게시하기 전에 안전하게 미리 보려면 AEM 작성자 인스턴스를 &quot;허용&quot;하여 Dynamic Media에 연결해야 합니다.
 
    * Dynamic Media Classic 계정에 로그온합니다. [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). 자격 증명 및 로그온은 프로비저닝 시점에 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
    * 페이지 오른쪽 상단의 탐색 막대에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버를 클릭합니다]**.
@@ -168,7 +169,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 * **[!UICONTROL 요청 속성]** - 이러한 설정은 서버에서 전달할 수 있는 이미지에 제한을 적용합니다.
 * **[!UICONTROL 기본 요청 속성]** - 이 설정은 이미지의 기본 모양과 관련이 있습니다.
 * **[!UICONTROL 공통 축소판 속성]** - 이 설정은 축소판 이미지의 기본 모양과 관련이 있습니다.
-* **[!UICONTROL 카탈로그 필드 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
+* **[!UICONTROL 카탈로그 필드의 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
 * **[!UICONTROL 색상 관리 속성]** - 이 설정에 따라 어떤 ICC 색상 프로파일이 사용되는지 결정됩니다.
 * **[!UICONTROL 호환성 속성]** - 이 설정을 사용하면 텍스트 레이어의 선행 및 후행 단락을 이전 버전과의 호환성을 위해 버전 3.6에서와 같이 처리할 수 있습니다.
 * **[!UICONTROL 로컬라이제이션 지원]** - 이 설정을 통해 여러 로케일 특성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. 현지화 지원 설정에 대한 자세한 내용은 **자산 현지화 설정 시**&#x200B;고려 사항 [을 참조하십시오](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
