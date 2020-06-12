@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] 통합 [!DNL Adobe InDesign Serv
 description: 통합 방법 [!DNL Adobe Experience Manager Assets] 을 살펴보십시오 [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1561'
+source-wordcount: '1560'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,7 @@ ht-degree: 0%
       * PDF 및 JPG 변환이 생성됩니다.
       * HTML 및 IDML 변환이 생성됩니다.
    * 결과 파일을 다시 에 [!DNL Experience Manager Assets]게시합니다.
+
    >[!NOTE]
    >
    >IDML은 파일의 모든 내용을 렌더링하는 XML 기반 [!DNL InDesign] 포맷입니다. 압축 패키지로 저장되며 [ZIP](https://www.techterms.com/definition/zip) 압축을 사용합니다. 자세한 내용은 InDesign Interchange [Formats INX 및 IDML을 참조하십시오](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
@@ -194,18 +195,19 @@ ht-degree: 0%
 
    실행 중인 컴퓨터가 여러 개인 경우 각 컴퓨터 [!DNL InDesign Server]에 대해 SOAP 끝점(시스템당 프로세서 수 -1)을 추가합니다.
 
-   >[!NOTE]
-   >
-   >근로자 풀을 사용하는 경우 ID 근로자의 블랙리스트 사용을 선택할 수 있습니다.
-   >
-   >
-   >이렇게 하려면 IDS 작업 검색을 활성화하는 **[!UICONTROL 구성 아래의 enable.retry.name]** 확인란을 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 활성화합니다.
-   >
-   >
-   >또한 구성 아래에서 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` ID를 작업 핸들러 목록에서 제외하기 전에 작업 검색의 수를 결정하는 매개 변수의 `max.errors.to.blacklist` 양수 값을 설정합니다.
-   >
-   >
-   >기본적으로 구성 가능한(retry.interval.to.whitelist.name) 시간(분) 후 IDS 워터의 유효성을 다시 검사해야 합니다. 이 씨가 온라인에서 발견될 경우 블랙 리스트에서 삭제된다.
+<!-- 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
+
+>[!NOTE]
+>
+>직원 풀을 사용하는 경우 차단된 IDS 작업자 목록을 활성화할 수 있습니다.
+>
+>이렇게 하려면 IDS 작업 검색을 활성화하는 **[!UICONTROL 구성 아래의 enable.retry.name]** 확인란을 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 활성화합니다.
+>
+>또한 구성 아래에서 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` ID를 작업 핸들러 목록에서 제외하기 전에 작업 검색의 수를 결정하는 매개 변수의 `max.errors.to.blacklist` 양수 값을 설정합니다.
+>
+>기본적으로 구성 가능한(`retry.interval.to.whitelist.name`) 시간(분) 후 IDS 워터의 유효성을 다시 검사해야 합니다. 작업자가 온라인에서 검색되면 차단된 목록에서 제거됩니다.
 
 ## 10.0 이상 [!DNL InDesign Server] 지원 활성화 {#enabling-support-for-indesign-server-or-later}
 
