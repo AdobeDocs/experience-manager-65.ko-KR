@@ -4,9 +4,9 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '9304'
+source-wordcount: '9303'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    자산이 큰 자산으로 간주되는 크기를 구성할 수 있습니다. 예를 들어 1000MB 이상의 자산(500MB 대신)을 큰 자산으로 간주하도록 시스템을 구성할 수 있습니다. 이 경우 크기가 1000MB보다 큰 **[!UICONTROL 에셋이 업로드되면 [일시 중지]** ]가 진행률 표시줄에 나타납니다.
 
-   1000MB보다 큰 파일이 1000MB보다 작은 파일로 업로드되면 [일시 중지] 단추가 표시되지 않습니다. 그러나 1,000MB 미만의 파일 업로드를 취소하면 [일시 **[!UICONTROL 중지]** ] 단추가 나타납니다.
+   1000MB보다 큰 파일이 1000MB보다 작은 파일로 업로드되면 [일시 중지] 단추가 표시되지 않습니다. 하지만 1,000MB 미만의 파일 업로드를 취소하면 [일시 **[!UICONTROL 중지]** ] 단추가 나타납니다.
 
    크기 제한을 수정하려면 CRX 저장소의 `chunkUploadMinFileSize` 노드 `fileupload`속성을 구성합니다.
 
@@ -197,7 +197,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 
 AI, EPS 및 PSD 파일을 비롯한 이미지 파일을 업로드할 때 [작업 옵션 [!UICONTROL 업로드] 대화 상자에서 다음 편집 작업을 수행할 수] 있습니다.
 
-* 이미지 가장자리에서 공백을 자릅니다(위 표의 설명 참조).
+* 이미지 가장자리에서 공백을 자릅니다(위 표에 설명 참조).
 * 이미지 양쪽에서 수동으로 자르기(위 표의 설명 참조)
 * 색상 프로파일을 선택합니다(위의 표에서 옵션 설명 참조).
 * 클리핑 패스에서 마스크를 만듭니다.
