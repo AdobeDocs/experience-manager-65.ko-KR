@@ -3,7 +3,7 @@ title: 자산 번역 준비
 description: 언어 루트 폴더를 만들어 번역용 에셋을 준비함으로써 다국어 에셋을 지원합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 3%
@@ -19,7 +19,7 @@ Adobe Experience Manager Assets에서는 각 폴더에 다른 언어로 된 자�
 
 각 언어 폴더를 언어 복사라고 합니다. 언어 루트라고 하는 언어 사본의 루트 폴더는 언어 사본에 있는 컨텐츠의 언어를 식별합니다. 예를 들어 */content/dam/it* 는 이탈리아어 카피를 위한 이탈리아어 루트입니다. 소스 에셋의 번역이 수행될 때 올바른 언어를 타깃팅하도록 언어 복사본은 [올바르게 구성된 언어 루트를](preparing-assets-for-translation.md#creating-a-language-root) 사용해야 합니다.
 
-에셋을 처음 추가하는 언어 사본은 언어 마스터입니다. 언어 마스터는 다른 언어로 번역되는 소스입니다. 샘플 폴더 계층 구조에는 여러 언어 루트가 포함되어 있습니다.
+자산을 처음 추가하는 언어 사본은 기본 언어입니다. 기본 언어는 다른 언어로 번역되는 소스입니다. 샘플 폴더 계층 구조에는 여러 언어 루트가 포함되어 있습니다.
 
 ```
  /content
@@ -35,9 +35,9 @@ Adobe Experience Manager Assets에서는 각 폴더에 다른 언어로 된 자�
 
 다음 단계를 수행하여 자산을 번역할 준비를 합니다.
 
-1. 언어 마스터의 언어 루트를 만듭니다. 예를 들어 샘플 폴더 계층 구조에 있는 영어 사본의 언어 루트는 입니다 `/content/dam/en`. 언어 루트 만들기의 정보에 따라 언어 루트 [가 올바르게 구성되었는지 확인합니다](preparing-assets-for-translation.md#creating-a-language-root).
+1. 기본 언어의 언어 루트를 만듭니다. 예를 들어 샘플 폴더 계층 구조에 있는 영어 사본의 언어 루트는 입니다 `/content/dam/en`. 언어 루트 만들기의 정보에 따라 언어 루트 [가 올바르게 구성되었는지 확인합니다](preparing-assets-for-translation.md#creating-a-language-root).
 
-1. 언어 마스터에 에셋 추가
+1. 기본 언어로 에셋을 추가합니다.
 1. 언어 사본이 필요한 각 대상 언어의 언어 루트를 만듭니다.
 
 ## 언어 루트 만들기 {#creating-a-language-root}
@@ -60,7 +60,7 @@ Adobe Experience Manager Assets에서는 각 폴더에 다른 언어로 된 자�
 
 Adobe Experience Manager 인터페이스는 **[!UICONTROL 에셋]** 내에서 생성된 언어 루트 목록을 표시하는 참조 패널을 제공합니다.
 
-1. 자산 콘솔에서 언어 사본을 만들 언어 마스터를 선택합니다.
+1. 자산 콘솔에서 언어 사본을 만들 기본 언어를 선택합니다.
 1. 글로벌 탐색 아이콘을 클릭하고 **[!UICONTROL 참조를]** 선택하여 [!UICONTROL 참조] 창을엽니다.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
