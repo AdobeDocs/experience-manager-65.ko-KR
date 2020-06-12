@@ -3,9 +3,9 @@ title: Adobe Creative Cloud [!DNL Adobe Experience Manager] 및 통합 모범 �
 description: 자산 전송 워크플로우를 [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] 간소화하고 콘텐츠 전송 속도를 높일 수 있는 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3249'
 ht-degree: 2%
 
 ---
@@ -160,7 +160,7 @@ DAM의 기존 에셋 변경 요청 후 마케팅 팀이 검토할 크리에이�
 
 #### DAM에 직접 액세스할 수 있는 크리에이티브 사용자 {#creative-users-with-direct-access-to-dam}
 
-일반적으로 사내 크리에이티브 팀 또는 내부 네트워크에 연결된 에이전시/크리에이티브 전문가는 로그인을 비롯한 DAM 인스턴스에 액세스할 수 [!DNL Experience Manager] 있습니다. [!DNL Experience Manager] 네트워크 인프라를 설정하여 외부 업체(일반적으로 클라이언트 관련 에이전시 등 신뢰할 수 있는 조직)에 직접 액세스할 수 있으므로 VPN 또는 IP 화이트리스트 등을 통해 네트워크를 통해 액세스할 수 [!DNL Experience Manager] 있습니다.
+일반적으로 사내 크리에이티브 팀 또는 내부 네트워크에 연결된 에이전시/크리에이티브 전문가는 로그인을 비롯한 DAM 인스턴스에 액세스할 수 [!DNL Experience Manager] 있습니다. [!DNL Experience Manager] 네트워크 인프라를 설정하여 외부 업체(일반적으로 클라이언트 관련 에이전시 등 신뢰할 수 있는 조직)에 직접 액세스할 수 있도록 함으로써 VPN 또는 IP 허용 목록을 통해 네트워크를 [!DNL Experience Manager] 통해 액세스할 수 있습니다.
 
 이러한 경우 Adobe Asset Link 또는 [!DNL Experience Manager] 데스크탑 앱을 사용하면 최종/승인된 자산에 손쉽게 액세스할 수 있고 크리에이티브한 에셋을 DAM에 저장할 수 있습니다.
 
@@ -173,7 +173,7 @@ DAM 인스턴스에 직접 액세스하지 않고도 외부 에이전시 및 프
 * 자산 링크가 작동하지 않는 경우 데스크탑 앱을 사용하십시오.
 * Experience [Manager Assets 브랜드 포털을](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) 사용하여 에셋을 외부 파트너에 안전하게 배포
 * 자산 공유 공유에 기반한 배포 및 소싱 포털의 사용자 [지정 구현 사용](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* 필요한 네트워크 인프라(예: VPN 및 IP 화이트리스트)에 설정된 액세스 제어 기능을 사용하여 외부 당사자가 DAM의 전용 컨텐츠 영역에 액세스할 수 있도록 합니다. [!DNL Experience Manager] 웹 [!DNL Experience Manager] UI를 사용하여 에셋을 가져오고 새 컨텐츠를 DAM에 업로드할 수 있습니다.
+* 필요한 네트워크 인프라(예: VPN 및 IP 허용 목록)에 설정된 액세스 제어 기능을 사용하여 외부 당사자가 DAM의 전용 컨텐츠 영역에 액세스할 수 있도록 합니다. [!DNL Experience Manager] 웹 [!DNL Experience Manager] UI를 사용하여 에셋을 가져오고 새 컨텐츠를 DAM에 업로드할 수 있습니다.
 
 #### 진행 중인 에셋 작업 [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
