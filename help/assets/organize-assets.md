@@ -3,7 +3,7 @@ title: 디지털 자산 구성
 description: Adobe Experience Manager를 사용하여 디지털 자산, 이미지, 파일, 폴더 등을 구성할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Adobe Experience Manager Assets는 다양한 콘텐츠 구성 방법을 지원�
 
    * **개발 폴더**: 현재 작업 중인 디지털 자산을 포함합니다.
    * **클라이언트 폴더**: 클라이언트 또는 프로젝트 이름을 기반으로 한 디지털 자산을 포함합니다.
-   * **마스터 폴더**: 원본 소스 디지털 에셋을 포함합니다.
+   * **기본 폴더**: 원본 소스 디지털 에셋을 포함합니다.
    * **변환 폴더**: 에는 원본 소스 디지털 자산의 표현물과 사본이 포함되어 있습니다.
    * **파일 크기 폴더**: 에는 작은 파일, 중간 크기 또는 큰 파일 크기에 기반한 디지털 에셋이 포함되어 있습니다.
    * **스테이징 폴더**: 웹 사이트에 라이브로 게시할 수 있는 디지털 자산을 포함합니다.
