@@ -3,9 +3,9 @@ title: 자산 네트워크 고려 사항 및 요구 사항
 description: Adobe Experience Manager Assets 배포를 디자인할 때의 네트워크 고려 사항에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Adobe Experience Manager Assets를 이해하는 것만큼 네트워크 이해도
 
 이 예에서 엔터프라이즈에는 10Gbps 업링크가 있습니다. 여러 고객에게 충분할 정도로 크겠죠 게다가, 방화벽에는 10Mbps의 호스트 속도 제한이 있다. 이 제한은 인터넷에 대한 업링크가 10Gbps지만 단일 호스트에 대한 트래픽을 10Mbps로 잠재적으로 조절합니다.
 
-클라이언트 지향의 가장 작은 초크포인트입니다. 그러나 이 방화벽을 담당하는 네트워크 작업 그룹의 변경 또는 허용 목록에 대해 평가할 수 있습니다.
+클라이언트 지향의 가장 작은 초크포인트입니다. 그러나 이 방화벽을 담당하는 네트워크 작업 그룹으로 허용된 목록을 변경하거나 구성할 수 있습니다.
 
 샘플 다이어그램에서, 여섯 개의 장치가 개념적인 10Mbps 채널을 공유한다고 결론 내릴 수 있습니다. 이용하는 자산의 크기에 따라 사용자 기대를 충족시키기에 적합하지 않을 수 있습니다.
 
