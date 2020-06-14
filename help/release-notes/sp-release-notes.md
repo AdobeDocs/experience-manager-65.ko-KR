@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.5 서비스 팩 5에 대한 릴리스 �
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cb48bba01b78a0724f3a07875f601367520b2a8e
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4510'
 ht-degree: 14%
 
 ---
@@ -173,7 +173,7 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 
 * [!UICONTROL 메타데이터 스키마 편집기] 페이지 및 해당 요소는 이제 키보드를 사용하여 액세스할 수 있으며 화면 판독기에 적합합니다(CQ-4290962, CQ-4272953).
 
-* 선택한 태그를 제거할 심볼이 `X` 이제 선택한 태그 수와 함께 화면 판독기에서 알려줍니다(CQ-4273017).
+* 선택한 태그를 제거하는 `X` 심볼의 용도는 이제 선택한 태그의 수와 함께 화면 판독기에서 알려줍니다(CQ-4273017).
 
 * 화면 판독기를 사용하는 비시형 사용자에 대한 혼동을 방지하기 위해 이제 화면 판독기에서 장식 아이콘 및 이미지를 무시합니다(CQ-4272944).
 
@@ -426,7 +426,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 
 * TLS v1.2를 사용하는 통신만 허용하므로 AEM 기본 메일 보낸 사람을 사용하여 원격 SMTP 서버로 이메일을 보낼 수 없습니다. 번들을 제거하고 번들을 새로 고쳐 문제를 해결하십시오. `javax.mail:mail:1.5.0-b01` `system/console`
 
-* 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 응용 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
+* 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 응용 양식의 다른 필드 몇 개를 구성하도록 선택하면 문제가 해결됩니다.
 
 * [!UICONTROL 연결된 자산 구성] 마법사가 설치 후 404 오류 메시지를 반환하는 경우 패키지 관리자를 사용하여 `cq-remotedam-client-ui-content` 및 `cq-remotedam-client-ui-components` 패키지를 수동으로 다시 설치합니다.
 
