@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 5의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 40%
@@ -56,9 +56,9 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 * 키보드를 사용하여 많은 유저 인터페이스 요소, 컨트롤 및 입력 양식 필드에 액세스할 수 있습니다.
 
-* 일부 사용자 인터페이스 요소의 색상 및 대비 비율이 업데이트되어 시력이 제한된 사용자 또는 색상에 대한 인식이 없는 사용자가 이러한 사용자 인터페이스 요소를 구분할 수 있습니다. 예를 들어, 별 등급 아이콘 색상(예: 자산 [!UICONTROL 속성] 또는 카드 보기에서 [!UICONTROL 고급] 탭 [!UICONTROL 의 등급] 섹션에서)이 적절한 대비를 위해 변경되었습니다.
+* 일부 사용자 인터페이스 요소의 색상 및 대비가 업데이트되어 시력이 제한된 사용자 또는 색상에 대한 인식이 없는 사용자가 이러한 사용자 인터페이스 요소를 구분할 수 있습니다. 예를 들어, 별 등급 아이콘 색상(예: 자산 [!UICONTROL 속성] 또는 카드 보기에서 [!UICONTROL 고급] 탭 [!UICONTROL 의 등급] 섹션에서)이 적절한 대비를 위해 변경되었습니다.
 
-   ![대비 비율이 향상된 등급 아이콘](assets/star-rating-icons.png)
+   ![향상된 대비 등급 아이콘](assets/star-rating-icons.png)
 
 ### 향상된 예외 처리 {#exception-handling}
 
@@ -146,9 +146,10 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 * 필터 패널의 혼합 상태 확인란(중첩된 모든 확인란을 선택하지 않은 경우 첫 번째 수준의 확인란을 선택하지 않으면 나머지도 선택되지 않음)은 화면 판독기에서 읽을 수 있습니다.
 
-* 날짜 및 시간 형식 제약 조건은 사용자가 키보드를 사용하여 날짜를 올바른 형식으로 입력할 수 있도록 날짜 필드의 필드 레이블에 제공됩니다. 예, `On Time (MM-DD-YYYY HH:mm)`. 여기서 MM은 두 자리 형식의 월, YYYY는 연도, DD는 두 자리 형식의 날짜, HH는 24시간 군대 형식의 시간, mm은 분입니다.
+* 날짜 및 시간 형식 제약 조건은 사용자가 키보드를 사용하여 날짜를 올바른 형식으로 입력할 수 있도록 날짜 필드의 필드 레이블에 제공됩니다.
+예, `On Time (MM-DD-YYYY HH:mm)`. 여기서 MM은 두 자리 형식의 월, YYYY는 연도, DD는 두 자리 형식의 날짜, HH는 24시간 군대 형식의 시간, mm은 분입니다.
 
-* 화면 판독기는 선택한 태그와 선택한 태그의 수를 제거하는 기호를 `X` 발표합니다.
+* 이제 화면 판독기에서 선택한 태그의 수와 함께 선택한 태그를 제거할 `X` 기호를 발표합니다.
 
 #### Visual search for [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
