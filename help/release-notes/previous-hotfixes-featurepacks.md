@@ -3,9 +3,9 @@ title: Adobe Experience Manager 6.5 이전 서비스 팩 릴리스 노트
 description: Adobe Experience Manager 6.5 서비스 팩 3 이하에 대한 릴리스 노트입니다.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '8094'
+source-wordcount: '8093'
 ht-degree: 90%
 
 ---
@@ -295,10 +295,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 파일 이름(NPR-31547)에 더하기 문자(`+`)가 있는 자산에 대해 자산 공유가 작동하지 않습니다.
 
-* 기본 검색 양식 자산 관리 * 검색 레일의 편집이 예상대로 작동하지 않습니다(NPR-31502).
-
-<!-- Review: Check if this seemingly stray asterisk is needed there or not.
--->
+* 기본 검색 양식 자산 관리자 검색 레일의 편집이 예상대로 작동하지 않습니다(NPR-31502).
 
 * 자산 보기에서 Omnisearch를 사용하여 자산 검색(NPR-31496)할 때는 제안이 표시되지 않습니다.
 
@@ -312,7 +309,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 모든 구성원(사용자/그룹)은 폴더의 멤버 섹션에서 제거할 수 없습니다. 모든 사용자를 제거하려고 하면 로그인한 사용자가 목록에 추가됩니다(NPR-31171).
 
-* Assets with a plus symbol (`+`) in the file name cannot be deleted (NPR-31162).
+* Assets with plus symbol (`+`) in the file name cannot be deleted (NPR-31162).
 
 * 폴더 선택 시 상단 메뉴에 표시되는 만들기 드롭다운 메뉴는 만들기 옵션으로 &#39;폴더&#39;를 표시하지 않습니다(NPR-30877).
 
