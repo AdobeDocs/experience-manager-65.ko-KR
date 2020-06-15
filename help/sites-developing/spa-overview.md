@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+source-git-commit: fe81a72a6269060a7ec1283f817920618ba715ef
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 0%
+source-wordcount: '1691'
+ht-degree: 1%
 
 ---
 
@@ -167,8 +167,8 @@ SPA를 편집할 때 클라이언트-서버 상호 작용에 대한 자세한 �
 
 SPA Editor SDK는 다음과 같은 최소 버전을 지원합니다.
 
-* 반응 16.3
-* Angular 6.x
+* 16.x 이상 반응
+* 각 6.x 이상
 
 이러한 프레임워크의 이전 버전은 AEM SPA Editor SDK에서 사용할 수 있지만 지원되지 않습니다.
 
