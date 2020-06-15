@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ ht-degree: 0%
 
 빠르게 시작하기
 
-1. [여러 뷰에 대한 마스터 이미지를 업로드합니다.](#uploading-assets-in-image-sets)
+1. [여러 뷰에 대한 기본 소스 이미지를 업로드합니다.](#uploading-assets-in-image-sets)
 
-   먼저 이미지 세트에 대한 이미지를 업로드합니다. 이미지 세트 뷰어에서 이미지를 확대/축소할 수 있으므로 이미지를 선택할 때 확대/축소를 고려합니다. 확대/축소 세부 사항을 최적화하려면 이미지가 가장 큰 차원에서 2000픽셀 이상이어야 합니다. Dynamic Media는 각 이미지를 최대 25메가픽셀까지 렌더링할 수 있습니다. 예를 들어 5000 x 5000메가픽셀 이미지 또는 최대 25메가픽셀의 기타 크기 조합을 사용할 수 있습니다.
+   먼저 이미지 세트에 대한 이미지를 업로드합니다. 이미지 세트 뷰어에서 이미지를 확대/축소할 수 있으므로 이미지를 선택할 때 확대/축소를 고려합니다. 확대/축소 세부 사항을 최적화하려면 이미지가 가장 큰 차원에서 2000픽셀 이상이어야 합니다. Dynamic Media은 최대 25메가픽셀의 이미지를 렌더링할 수 있습니다. 예를 들어 5000 x 5000메가픽셀 이미지 또는 최대 25메가픽셀의 기타 크기 조합을 사용할 수 있습니다.
 
-   AEM Assets는 많은 이미지 파일 포맷을 지원하지만 손실 없는 TIFF, PNG 및 EPS 이미지가 권장됩니다.
+   AEM Assets은 많은 이미지 파일 포맷을 지원하지만 손실 없는 TIFF, PNG 및 EPS 이미지가 권장됩니다.
 
 1. [이미지 세트 만들기를 참조하십시오.](#creating-image-sets)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
    또한 [일괄 세트 사전 설정을 통해 자동으로 이미지 세트를 만들 수도 있습니다](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
-   >배치 세트는 IPS(Image Production System)에서 자산 수정의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
+   >배치 세트는 IPS(Image Production System)에 의해 자산 수정의 일부로 생성되며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
    파일 [업로드 및 업로드를 위한 이미지 세트 자산 준비를 참조하십시오](#uploading-assets-in-image-sets).
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 1. [웹 응용 프로그램에 URL을 연결하거나 비디오 또는 이미지 뷰어](/help/assets/linking-urls-to-yourwebapplication.md)[를 포함합니다](/help/assets/embed-code.md).
 
-   AEM Assets는 이미지 세트에 대한 URL 호출을 만들고 이미지 세트를 게시한 후 활성화합니다. 자산을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
+   AEM Assets은 이미지 세트에 대한 URL 호출을 만들고 이미지 세트를 게시한 후 활성화합니다. 자산을 미리 볼 때 이러한 URL을 복사할 수 있습니다. 또는 웹 사이트에 포함할 수 있습니다.
 
    이미지 세트를 선택한 다음 왼쪽 레일 드롭다운 메뉴에서 뷰어를 **[!UICONTROL 선택합니다]**.
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 이미지 세트를 편집하려면 이미지 세트 [편집을 참조하십시오.](#editing-image-sets) 또한 [이미지 세트 속성을 보고 편집할 수도 있습니다](/help/assets/managing-assets-touch-ui.md#editing-properties).
 
-세트를 만드는 데 문제가 있는 경우, 다이내믹 미디어 문제 해결 - Scene7 [모드의 이미지 및 세트를 참조하십시오](/help/assets/troubleshoot-dms7.md#images-and-sets).
+세트를 만드는 데 문제가 있는 경우 문제 해결 Dynamic Media - Scene7 모드의 이미지 및 [세트를 참조하십시오](/help/assets/troubleshoot-dms7.md#images-and-sets).
 
 ## 이미지 세트에 자산 업로드 {#uploading-assets-in-image-sets}
 
@@ -118,7 +118,7 @@ Assets의 다른 자산을 [업로드하듯이 이미지 세트에 대한 이미
 >[!NOTE]
 >
 >또한 [일괄 세트 사전 설정을 통해 자동으로 이미지 세트를 만들 수도 있습니다](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
->**중요:**배치 세트는 IPS(Image Production System)에서 자산 수정의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
+>**중요:**배치 세트는 IPS(Image Production System)에 의해 자산 수정의 일부로 생성되며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.
 
 세트에 자산을 추가하면 자동으로 영숫자 순서로 추가됩니다. 자산을 추가한 후에 수동으로 다시 정렬하거나 정렬할 수 있습니다.
 
@@ -176,7 +176,7 @@ Assets의 다른 자산을 [업로드하듯이 이미지 세트에 대한 이미
 
 >[!IMPORTANT]
 >
->배치 세트는 IPS [이미지 프로덕션 시스템에서] 자산 수정의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.)
+>배치 세트는 IPS [이미지 프로덕션 시스템에서] 자산 수정의 일부로 생성되며 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.)
 
 하지만 배치 집합 사전 설정을 사용하여 만든 세트는 사용자 인터페이스에 *나타나지 않습니다* . 이러한 세트는 세 가지 방법으로 볼 수 있습니다. (사용자 인터페이스에서 이미지 세트를 만든 경우에도 이러한 방법을 사용할 수 있습니다.)
 
@@ -188,7 +188,7 @@ Assets의 다른 자산을 [업로드하듯이 이미지 세트에 대한 이미
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* 검색에서 **[!UICONTROL 필터**]를 선택한 다음 **[!UICONTROL Dynamic Media** 를 확장하고 **[!UICONTROL 세트를 선택할 수 있습니다]**.
+* 검색에서 **[!UICONTROL 필터**]를 선택한 다음 **[!UICONTROL Dynamic Media** 을 확장하고 **[!UICONTROL 세트를 선택할 수 있습니다]**.
 
    검색은 UI에서 수동으로 만들거나 배치 집합 사전 설정을 통해 자동으로 생성된 일치 집합을 반환합니다. 자동화된 세트의 경우 &quot;포함&quot; 검색 기준을 사용하는 AEM 검색과는 다른 &quot;다음으로 시작&quot; 검색 조건을 사용하여 검색 쿼리를 수행합니다. 필터를 **[!UICONTROL 세트로]** 설정하면 자동화된 세트를 검색할 수 있습니다.
 
@@ -221,6 +221,7 @@ Assets의 다른 자산을 [업로드하듯이 이미지 세트에 대한 이미
    * 자산의 순서를 바꾸려면 이미지를 새 위치로 드래그합니다(항목을 이동하려면 순서 변경 아이콘 선택).
    * 항목을 오름차순 또는 내림차순으로 정렬하려면 열 제목을 클릭합니다.
    * 자산을 추가하거나 기존 자산을 업데이트하려면 자산 **[!UICONTROL 추가를 클릭합니다]**. 자산으로 이동하여 선택한 다음 페이지의 오른쪽 위 모서리 **[!UICONTROL 근처에 있는 선택을]** 누릅니다.
+
       >[!NOTE]
       >
       >AEM에서 축소판에서 사용하는 이미지를 다른 이미지로 대체하여 삭제하면 원래 자산이 계속 표시됩니다.
@@ -228,6 +229,7 @@ Assets의 다른 자산을 [업로드하듯이 이미지 세트에 대한 이미
    * 사전 설정을 적용하려면 페이지의 오른쪽 위 모서리 근처에 있는 사전 설정을 **[!UICONTROL 누른]**&#x200B;다음 뷰어 사전 설정을 선택합니다.
    * 축소판을 추가하거나 변경하려면 자산의 오른쪽 옆에 있는 축소판 아이콘을 선택합니다. 새로운 축소판 또는 견본 에셋으로 이동하여 선택한 다음 선택을 **[!UICONTROL 누릅니다]**.
    * 전체 이미지 세트를 삭제하려면 이미지 세트로 이동하고 선택한 다음 **[!UICONTROL 삭제를 누릅니다]**.
+
    >[!NOTE]
    >
    >세트로 이동하여 왼쪽 레일에서 멤버 **** 설정을 누른 다음 개별 자산의 연필 아이콘을 눌러 편집 창을 열면 이미지 세트의 이미지를 편집할 수 있습니다.
