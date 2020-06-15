@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
 workflow-type: tm+mt
-source-wordcount: '11868'
+source-wordcount: '11877'
 ht-degree: 1%
 
 ---
@@ -23,32 +23,33 @@ ht-degree: 1%
 
 ## 빠른 시작: 비디오 {#quick-start-videos}
 
-다음 단계별 워크플로우 설명은 Dynamic Media에서 적응형 비디오 세트를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다. 각 단계 후에는 주제 제목에 대한 상호 참조가 있습니다. 여기에서 자세한 내용을 찾을 수 있습니다.
+다음 단계별 워크플로우 설명은 Dynamic Media의 적응형 비디오 세트를 빠르게 시작하고 실행하는 데 도움이 되도록 설계되었습니다. 각 단계 후에는 주제 제목에 대한 상호 참조가 있습니다. 여기에서 자세한 내용을 찾을 수 있습니다.
 
 >[!NOTE]
 >
->Dynamic Media에서 비디오를 사용하여 작업하기 전에 AEM 관리자가 다이내믹 미디어 - Scene7 모드 또는 다이내믹 미디어 - 하이브리드 모드에서 Dynamic Media Cloud 서비스를 이미 사용하고 구성했는지 확인하십시오.
+>Dynamic Media에서 비디오를 사용하여 작업하기 전에 AEM 관리자가 Dynamic Media(Scene7 모드 또는 Dynamic Media - 하이브리드 모드)에서 Dynamic Media Cloud Service을 이미 사용하고 구성했는지 확인하십시오.
 >
->* 다이내믹 미디어 구성 - [Scene7 모드 및 다이내믹 미디어 문제 해결 - Scene7 모드에서 Dynamic Media Cloud](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) 서비스 [구성을 참조하십시오.](/help/assets/troubleshoot-dms7.md)
+>* Dynamic Media [구성 - Scene7 모드 및 문제 해결 Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) - Scene7 모드에서 Dynamic Media Cloud Service [구성을 참조하십시오.](/help/assets/troubleshoot-dms7.md)
    >
    >
-* 다이내믹 [미디어 구성 - 하이브리드](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) 모드에서 Dynamic Media Cloud 서비스 구성을 참조하십시오.
+* Dynamic Media [구성 - 하이브리드](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) 모드에서 Dynamic Media Cloud Service 구성을 참조하십시오.
+
 >
 
 
 
 1. **다음을 수행하여 Dynamic Media 비디오를** 업로드합니다.
 
-   * 고유한 비디오 인코딩 프로필을 만듭니다. 또는 다이내믹 미디어와 함께 제공되는 사전 정의된 _응용 비디오 인코딩_ 프로필을 간단히 사용할 수 있습니다.
+   * 고유한 비디오 인코딩 프로필을 만듭니다. 또는 Dynamic Media과 함께 제공되는 사전 정의된 _응용 비디오 인코딩_ 프로필을 사용하면 됩니다.
 
       * [비디오 인코딩 프로필](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)만들기
       * 비디오 인코딩 [모범 사례에 대한 자세한 내용을 살펴보십시오](#best-practices-for-encoding-videos).
-   * 비디오 처리 프로필을 마스터 비디오를 업로드할 하나 이상의 폴더에 연결합니다.
+   * 기본 소스 비디오를 업로드할 하나 이상의 폴더에 비디오 처리 프로필을 연결합니다.
 
       * [폴더에 비디오 프로필 적용](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * 처리 프로필 [을 사용하기 위한 디지털 자산을 구성하는 모범 사례에 대해 자세히 알아보십시오](/help/assets/organize-assets.md).
       * 디지털 자산 [구성에 대한 자세한 내용을 살펴보십시오](/help/assets/organize-assets.md).
-   * 폴더에 마스터 비디오를 업로드합니다. 최대 15GB의 비디오 파일을 업로드할 수 있습니다. 폴더에 비디오를 추가하면 폴더에 할당된 비디오 처리 프로필에 따라 인코딩됩니다.
+   * 기본 소스 비디오를 폴더에 업로드합니다. 최대 15GB의 비디오 파일을 업로드할 수 있습니다. 폴더에 비디오를 추가하면 폴더에 할당된 비디오 처리 프로필에 따라 인코딩됩니다.
 
       * [비디오를 업로드합니다](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
       * 지원되는 [입력 파일 포맷에 대한 자세한 내용을 살펴보십시오](/help/assets/assets-formats.md#supported-multimedia-formats).
@@ -98,7 +99,7 @@ ht-degree: 1%
 
 1. **다음 중 하나를 수행하여 Dynamic Media 비디오를** 게시합니다.
 
-   * 웹 컨텐츠 관리 시스템으로 Adobe Experience Manager를 사용하는 경우 웹 페이지에 직접 비디오를 추가할 수 있습니다.
+   * 웹 컨텐츠 관리 시스템으로 Adobe Experience Manager을 사용하는 경우 웹 페이지에 직접 비디오를 추가할 수 있습니다.
 
       * [웹 페이지에 비디오 추가](adding-dynamic-media-assets-to-pages.md).
    * 타사 웹 컨텐츠 관리 시스템을 사용하는 경우 비디오를 웹 페이지에 링크하거나 포함할 수 있습니다.
@@ -121,7 +122,7 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry, Windows �
 
 예를 들어 iOS 모바일 장치에서 3G, 4G 또는 Wi-Fi와 같은 대역폭을 감지합니다. 그런 다음 응용 비디오 세트 내의 다양한 비디오 비트 전송률 중에서 올바른 인코딩된 비디오를 자동으로 선택합니다. 이 비디오는 데스크톱, 모바일 장치 또는 태블릿으로 스트리밍됩니다.
 
-또한 데스크탑 또는 모바일 디바이스에서 네트워크 상태가 변경되면 비디오 품질이 동적으로 전환됩니다. 또한 고객이 데스크탑에서 전체 화면 모드로 전환하면 응용 비디오 세트는 더 나은 해상도를 사용하여 응답하므로 고객의 보기 환경이 개선됩니다. 응용 비디오 세트를 사용하면 다양한 화면과 디바이스에서 Dynamic Media 비디오를 재생하는 고객에게 최상의 재생이 가능합니다.
+또한 데스크탑 또는 모바일 디바이스에서 네트워크 상태가 변경되면 비디오 품질이 동적으로 전환됩니다. 또한 고객이 데스크탑에서 전체 화면 모드로 전환하면 응용 비디오 세트는 더 나은 해상도를 사용하여 응답하므로 고객의 보기 환경이 개선됩니다. 응용 비디오 세트를 사용하면 여러 화면 및 디바이스에서 Dynamic Media 비디오를 재생하는 고객에게 최상의 재생 효과를 제공할 수 있습니다.
 
 비디오 플레이어에서 재생할 인코딩된 비디오를 결정하거나 재생 중에 선택할 인코딩된 비디오를 결정하는 로직은 다음 알고리즘을 기반으로 합니다.
 
@@ -146,11 +147,11 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry, Windows �
 
 적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. Scene7 [뷰어 참조 안내서를 참조하십시오](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html).
 
-Dynamic Media는 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다. [Blackberry에서 지원되는 비디오 포맷입니다](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다. [Blackberry에서 지원되는 비디오 포맷입니다](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 다음 위치에서 이 비디오 형식을 지원하는 Windows 장치를 찾을 수 있습니다. [Windows Phone에서 지원되는 비디오 포맷](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
-* 다음을 포함한 Dynamic Media Video Viewer 사전 설정을 사용하여 비디오를 재생합니다.
+* 다음을 포함한 Dynamic Media 비디오 뷰어 사전 설정을 사용하여 비디오를 재생합니다.
 
    * 단일 비디오 뷰어
    * 비디오와 이미지 컨텐츠를 모두 결합하는 혼합 미디어 뷰어.
@@ -261,9 +262,9 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
  </tbody>
 </table>
 
-## 다이내믹 미디어 비디오 솔루션 아키텍처 {#architecture-of-dynamic-media-video-solution}
+## Dynamic Media 비디오 솔루션 아키텍처 {#architecture-of-dynamic-media-video-solution}
 
-다음 그래픽은 DMGateway(Dynamic Media Hybrid 모드)를 통해 업로드 및 인코딩된 비디오의 전체 제작 워크플로우를 보여줍니다.
+다음 그래픽은 DMGateway(Dynamic Media 하이브리드 모드)를 통해 업로드 및 인코딩되고 공개 소비에 사용할 수 있도록 만들어진 비디오의 전체 제작 워크플로우를 보여줍니다.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -273,7 +274,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 ## 비디오 인코딩 우수 사례 {#best-practices-for-encoding-videos}
 
-다이내믹 **미디어 인코딩 비디오** 워크플로우는 다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. 비디오 [인코딩 및 YouTube 게시 진행 모니터링을 참조하십시오](#monitoring-video-encoding-and-youtube-publishing-progress). 다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL 다이내믹 미디어 인코딩 비디오]** 워크플로우가 자동으로 적용됩니다. 다이내믹 미디어를 사용하지 않는 경우 **[!UICONTROL DAM 자산]** 업데이트 워크플로우가 적용됩니다.
+다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 **Dynamic Media 비디오** 인코딩 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. 비디오 [인코딩 및 YouTube 게시 진행 모니터링을 참조하십시오](#monitoring-video-encoding-and-youtube-publishing-progress). 다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오]** 인코딩 워크플로우가 자동으로 적용됩니다. 다이내믹 미디어를 사용하지 않는 경우 **[!UICONTROL DAM 자산]** 업데이트 워크플로우가 적용됩니다.
 
 다음은 소스 비디오 파일을 인코딩하기 위한 우수 사례 팁입니다.
 
@@ -304,7 +305,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 ### 종횡비 {#aspect-ratio}
 
-마스터 비디오 파일에 대한 비디오 인코딩 사전 설정을 선택하거나 만들 때는 사전 설정이 마스터 비디오 파일과 동일한 종횡비를 가지는지 확인하십시오. 화면비는 비디오 높이와 너비의 비율입니다.
+기본 소스 비디오 파일에 대한 비디오 인코딩 사전 설정을 선택하거나 만들 때는 사전 설정이 기본 소스 비디오 파일과 동일한 종횡비를 가지는지 확인하십시오. 화면비는 비디오 높이와 너비의 비율입니다.
 
 비디오 파일의 종횡비를 결정하려면 파일의 메타데이터를 가져와 파일의 폭과 높이를 확인합니다(위의 파일 메타데이터 얻기 참조). 다음 공식을 사용하여 종횡비를 확인합니다.
 
@@ -371,7 +372,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 * 데이터 전송률을 선택한 다음 선택한 데이터 속도보다 해상도가 높은 고해상도로 인코딩할 수 있습니다.
 * 해상도를 선택한 다음 선택한 해상도에서 고품질의 비디오를 제작하는 데 필요한 데이터 속도로 인코딩할 수 있습니다.
 
-마스터 비디오 파일에 대한 비디오 인코딩 사전 설정을 선택(또는 만들기)할 때 다음 표를 사용하여 올바른 해상도를 타게팅합니다.
+기본 소스 비디오 파일에 대한 비디오 인코딩 사전 설정을 선택(또는 만들기)할 때 이 표를 사용하여 올바른 해상도를 타게팅합니다.
 
 | 해상도 | 높이(픽셀) | 화면 크기 |
 |--- |--- |--- |
@@ -386,7 +387,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 미국 및 일본에서는 대부분의 비디오가 29.97fps로 촬영됩니다. 유럽에서 대부분의 비디오는 25fps로 촬영됩니다. 영화는 24fps로 촬영됩니다.
 
-마스터 비디오 파일의 fps 속도와 일치하는 비디오 인코딩 사전 설정을 선택합니다. 예를 들어 마스터 비디오가 25fps인 경우 25fps의 인코딩 사전 설정을 선택합니다. 기본적으로 모든 사용자 정의 인코딩은 마스터 비디오 파일의 fps를 사용합니다. 따라서 비디오 인코딩 사전 설정을 만들 때 fps 설정을 명시적으로 지정할 필요가 없습니다.
+기본 소스 비디오 파일의 fps 속도와 일치하는 비디오 인코딩 사전 설정을 선택합니다. 예를 들어 기본 소스 비디오가 25fps인 경우 25fps의 인코딩 사전 설정을 선택합니다. 기본적으로 모든 사용자 정의 인코딩은 기본 소스 비디오 파일의 fps를 사용합니다. 따라서 비디오 인코딩 사전 설정을 만들 때 fps 설정을 명시적으로 지정할 필요가 없습니다.
 
 ### 비디오 인코딩 크기 {#video-encoding-dimensions}
 
@@ -407,17 +408,17 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 ### 인코딩된 비디오 파일 포맷 {#encoded-video-file-format}
 
-Dynamic Media는 MP4 H.264 비디오 인코딩 사전 설정을 사용하는 것이 좋습니다. MP4 파일은 H.264 비디오 코덱을 사용하기 때문에 고품질 비디오를 제공하지만 압축된 파일 크기로 제공합니다.
+Dynamic Media은 MP4 H.264 비디오 인코딩 사전 설정을 사용하는 것이 좋습니다. MP4 파일은 H.264 비디오 코덱을 사용하기 때문에 고품질 비디오를 제공하지만 압축된 파일 크기로 제공합니다.
 
 ## YouTube에 비디오 게시 {#publishing-videos-to-youtube}
 
 이전에 만든 YouTube 채널에 직접 온프레미스 AEM 비디오 자산을 게시할 수 있습니다.
 
-비디오 자산을 YouTube에 게시하려면 태그가 있는 AEM 자산을 설정합니다. 이러한 태그를 YouTube 채널과 연결합니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 정상적인 비디오 게시와 함께 발생합니다.
+비디오 자산을 YouTube에 게시하려면 태그가 있는 AEM Assets을 설정합니다. 이러한 태그를 YouTube 채널과 연결합니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 정상적인 비디오 게시와 함께 발생합니다.
 
-YouTube는 자체 인코딩을 수행합니다. 따라서 AEM에 업로드된 원본 비디오 파일은 Dynamic Media의 인코딩이 생성된 모든 비디오 변환 대신 YouTube에 게시됩니다. Dynamic Media를 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 비디오를 처리할 필요가 있습니다.
+YouTube는 자체 인코딩을 수행합니다. 따라서 AEM에 업로드된 원본 비디오 파일은 Dynamic Media 인코딩이 생성된 비디오 변환 대신 YouTube에 게시됩니다. Dynamic Media을 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 처리할 것입니다.
 
-비디오 처리 프로필을 무시하고 YouTube에 직접 게시하는 경우 간단히 말해 AEM Asset의 비디오 에셋에 볼 수 있는 축소판이 없을 수 있습니다. 또한 동적 미디어 또는 dynamicmedia_scene7 실행 모드에서 실행되는 경우 인코딩되지 않은 비디오는 어떤 다이내믹 미디어 자산 유형에서도 작동하지 않습니다.
+비디오 처리 프로필을 무시하고 YouTube에 직접 게시하는 경우 간단히 말해 AEM Asset의 비디오 에셋에 볼 수 있는 축소판이 없을 수 있습니다. 또한 동적 미디어 또는 dynamicmedia_scene7 실행 모드에서 실행되는 경우 인코딩되지 않은 비디오는 어떤 Dynamic Media 자산 유형에서도 작동하지 않습니다.
 
 YouTube 서버에 비디오 에셋을 게시하려면 YouTube를 통해 안전하고 안전한 서버 간 인증을 보장하기 위해 다음 작업을 완료해야 합니다.
 
@@ -457,7 +458,7 @@ Google 클라우드 설정을 구성하려면:
 
    필요한 경우 Google 계정 자격 증명을 **[!UICONTROL 사용하여]** 로그인해야 **[!UICONTROL 콘솔]** 옵션을 볼 수 있습니다.
 
-1. 대시보드 페이지의 **[!UICONTROL Google Cloud 플랫폼]**&#x200B;오른쪽에 있는 프로젝트 드롭다운 목록을 클릭하여 프로젝트 선택 대화 상자를 엽니다.
+1. 대시보드 페이지의 **[!UICONTROL Google Cloud Platform]**&#x200B;오른쪽에 있는 프로젝트 드롭다운 목록을 클릭하여 프로젝트 선택 대화 상자를 엽니다.
 1. 프로젝트 선택 대화 상자에서 새 프로젝트 **[!UICONTROL 를 누릅니다]**.
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
@@ -472,6 +473,7 @@ Google 클라우드 설정을 구성하려면:
 
    * 프로젝트의 대시보드의 시작하기 카드에서 탐색 **[!UICONTROL 및 API를 활성화합니다]**.
    * 프로젝트의 대시보드의 API 카드에서 API로 **[!UICONTROL 이동 개요를 누릅니다]**.
+
    ![6_5_googleaccount-api-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. API 및 서비스 페이지 상단 근처에 있는 **[!UICONTROL API 및 서비스 활성화를 탭합니다]**.
@@ -491,6 +493,7 @@ Google 클라우드 설정을 구성하려면:
    * API를 **[!UICONTROL 어디에서 호출합니까?]** 드롭다운 목록에서 **[!UICONTROL 웹 서버(예: node.js, Tomcat)를 선택합니다.]**
 
    * 어떤 **[!UICONTROL 데이터에 액세스합니까?]** 드롭다운 목록에서 **[!UICONTROL 사용자 데이터를 누릅니다]**.
+
    ![6_5_googleaccount-api-createcertification2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. 필요한 자격 증명 **[!UICONTROL 을 탭하려면]**
@@ -529,7 +532,7 @@ Google 클라우드 설정을 구성하려면:
 
 1. 파일을 `client_id.json` 저장합니다.
 
-   이 다운로드한 json 파일은 나중에 Adobe Experience Manager에서 YouTube를 설정할 때 필요합니다.
+   Adobe Experience Manager에서 YouTube를 나중에 설정할 때 다운로드한 json 파일이 필요합니다.
 
 1. 완료를 **[!UICONTROL 클릭합니다]**.
 
@@ -584,12 +587,12 @@ AEM 6.4부터 AEM에서 YouTube 게시를 설정하는 새로운 터치 사용�
 
 #### AEM 6.4 이상에서 YouTube 설정 {#setting-up-youtube-in-aem-and-later}
 
-1. Dynamic Media 인스턴스에 관리자로 로그인해야 합니다.
-1. AEM의 왼쪽 맨 위에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL YouTube 게시 구성을]**&#x200B;탭합니다.
+1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Cloud Service]** > **[!UICONTROL YouTube 게시 구성을]**&#x200B;탭합니다.
 1. 전역 **[!UICONTROL 을]** 누릅니다(선택하지 않음).
 
 1. Near the upper-right corner of the global page, tap **[!UICONTROL Create]**.
-1. YouTube 구성 만들기 페이지의 Google 클라우드 플랫폼 설정에서 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
+1. YouTube 구성 만들기 페이지의 Google 클라우드 Platform 설정 아래의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
 
    초기 Google Cloud 설정을 구성할 때 프로젝트 ID를 지정했습니다.
 YouTube 구성 만들기 페이지를 엽니다. 잠시 후에 다시 돌아오실 겁니다
@@ -619,7 +622,7 @@ YouTube 구성 만들기 페이지를 엽니다. 잠시 후에 다시 돌아오�
 
    이제 게시를 위한 태그를 설정합니다.
 
-1. **[!UICONTROL 게시할]** 태그 설정 - 클라우드 서비스 > YouTube 페이지에서 연필 아이콘을 눌러 사용할 태그 목록을 편집합니다.
+1. **[!UICONTROL 게시할]** 태그 설정 - Cloud Service > YouTube 페이지에서 연필 아이콘을 눌러 사용할 태그 목록을 편집합니다.
 1. 드롭다운 목록 아이콘(거꾸로 된 삽입 기호)을 탭하여 AEM에서 사용 가능한 태그 목록을 표시합니다.
 1. 태그를 하나 이상 눌러 추가합니다.
 
@@ -631,9 +634,9 @@ YouTube 구성 만들기 페이지를 엽니다. 잠시 후에 다시 돌아오�
 
 #### 6.4 이전 AEM에서 YouTube 설정 {#setting-up-youtube-in-aem-before}
 
-1. Dynamic Media 인스턴스에 관리자로 로그인해야 합니다.
+1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드 서비스를]**&#x200B;탭합니다.
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service을 누릅니다]**.
 1. 타사 서비스 머리글 아래의 YouTube에서 지금 **[!UICONTROL 구성을 누릅니다]**.
 1. 구성 만들기 대화 상자에서 각 필드에 제목(필수)과 이름(선택 사항)을 입력합니다.
 1. 만들기를 **[!UICONTROL 누릅니다]**.
@@ -665,7 +668,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 잠시 후에 다시 �
 
    이제 게시를 위한 태그를 설정합니다.
 
-1. **[!UICONTROL 게시할]** 태그 설정 - 클라우드 서비스 > YouTube 페이지에서 연필 아이콘을 눌러 사용할 태그 목록을 편집합니다.
+1. **[!UICONTROL 게시할]** 태그 설정 - Cloud Service > YouTube 페이지에서 연필 아이콘을 눌러 사용할 태그 목록을 편집합니다.
 1. 드롭다운 목록 아이콘(거꾸로 된 삽입 기호)을 탭하여 AEM에서 사용 가능한 태그 목록을 표시합니다.
 1. 태그를 하나 이상 눌러 추가합니다.
 
@@ -744,9 +747,9 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 잠시 후에 다시 �
 
 >[!NOTE]
 >
->다이내믹 미디어 - Scene7 모드에서 실행될 때는 즉시 게시가 YouTube에 자동으로 게시되지 않습니다. 다이내믹 미디어 - Scene7 모드가 설정된 경우 두 가지 게시 옵션을 선택할 수 있습니다. **[!UICONTROL 즉시]** 또는 활성화 **[!UICONTROL 시]**.
+>Dynamic Media에서 실행 시 - Scene7 모드에서는 즉시 게시해도 YouTube에 자동으로 게시되지 않습니다. Dynamic Media - Scene7 모드가 설정된 경우 선택할 수 있는 두 가지 게시 옵션이 있습니다. **[!UICONTROL 즉시]** 또는 활성화 **[!UICONTROL 시]**.
 >
->**[!UICONTROL 즉시]** 게시는 업로드된 자산이 IPS와 동기화된 후 배달 시스템에 자동으로 게시됨을 의미합니다. 이는 다이내믹 미디어에 해당되지만 YouTube에서는 그렇지 않습니다. YouTube에 게시하려면 AEM 작성자 방식으로 게시해야 합니다.
+>**[!UICONTROL 즉시]** 게시는 업로드된 자산이 IPS와 동기화된 후 배달 시스템에 자동으로 게시됨을 의미합니다. 이것은 Dynamic Media에게 진실이지만, 유투브에는 사실이 아니다. YouTube에 게시하려면 AEM Author을 통해 게시해야 합니다.
 
 >[!NOTE]
 >
@@ -770,7 +773,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 잠시 후에 다시 �
 1. 비디오 속성 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장 및 닫기를 클릭합니다]**.
 1. 도구 모음에서 **[!UICONTROL 빠른 게시를 클릭합니다]**.
 
-   AEM [Sites에서 게시 관리 사용을 참조하십시오](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   AEM Sites [에서 게시 관리 사용을 참조하십시오](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 
@@ -780,13 +783,13 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 잠시 후에 다시 �
 
 비디오 [인코딩 및 YouTube 게시 진행 모니터링을 참조하십시오](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-게시 시간은 마스터 비디오의 형식, 파일 크기 및 업로드 트래픽을 포함하는 다양한 요소에 따라 크게 달라질 수 있습니다. 게시 프로세스는 몇 분에서 몇 시간 정도 걸릴 수 있습니다. 또한 고해상도 포맷이 훨씬 더 느리게 렌더링된다는 점도 알고 있어야 합니다. 예를 들어 720p 및 1080p는 480p보다 표시되는 데 훨씬 더 오래 걸립니다.
+게시 시간은 기본 소스 비디오 형식, 파일 크기 및 업로드 트래픽을 포함하는 다양한 요소에 따라 크게 달라질 수 있습니다. 게시 프로세스는 몇 분에서 몇 시간 정도 걸릴 수 있습니다. 또한 고해상도 포맷이 훨씬 더 느리게 렌더링된다는 점도 알고 있어야 합니다. 예를 들어 720p 및 1080p는 480p보다 표시되는 데 훨씬 더 오래 걸립니다.
 
 업로드됨( **[!UICONTROL 처리 중)이라는 상태 메시지가 표시되는 경우 8시간 후]**&#x200B;사이트에서 비디오를 제거한 후 다시 업로드해 보십시오.
 
 ### Linking YouTube URLs to your Web Application {#linking-youtube-urls-to-your-web-application}
 
-비디오를 게시한 후 Dynamic Media에서 생성된 YouTube URL 문자열을 얻을 수 있습니다. YouTube URL을 복사하면 클립보드에 배치되므로 필요에 따라 웹 사이트나 애플리케이션의 페이지에 붙여넣을 수 있습니다.
+비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 얻을 수 있습니다. YouTube URL을 복사하면 클립보드에 배치되므로 필요에 따라 웹 사이트나 애플리케이션의 페이지에 붙여넣을 수 있습니다.
 
 >[!NOTE]
 >
@@ -836,9 +839,11 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
 1. 자산 폴더에서 비디오 인코딩 진행 상황 보기:
 
    * 카드 보기에서는 자산에 비디오 인코딩 진행률이 백분율로 표시됩니다. 오류가 있으면 이 정보도 자산에 표시됩니다.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * 목록 보기에서는 비디오 인코딩 진행 상태가 [ **[!UICONTROL 처리 상태] 열에]** 표시됩니다. 오류가 있으면 이 메시지가 동일한 열에 표시됩니다.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    이 열은 기본적으로 표시되지 않습니다. 열을 활성화하려면 보기 드롭다운 메뉴에서 **[!UICONTROL 설정]** 보기를 선택하고 **[!UICONTROL 처리 상태]** 열을 추가한 다음 **[!UICONTROL 업데이트]**&#x200B;를 탭하거나 클릭합니다.
@@ -858,6 +863,7 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    >    * Apache Sling 작업 큐 구성
    >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
    >    * [MOCK] Granite Workflow Timeout Queue
+
    >
    >이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
 
@@ -892,6 +898,7 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    >    * Apache Sling 작업 큐 구성
    >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
    >    * [MOCK] Granite Workflow Timeout Queue
+
    >
    >
    >이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
@@ -938,6 +945,7 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    * 게시 시작
    * 게시 실패
    * 게시 완료 - 채널 및 URL에 대한 정보 포함
+
    확인란을 지우면 YouTube 게시 워크플로우에서 지정된 이메일 알림을 받지 않게 됩니다.
 
    >[!NOTE]
@@ -951,7 +959,7 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
 
 >[!NOTE]
 >
->비디오 보고서는 다이내믹 미디어 - 하이브리드 모드를 실행할 때만 사용할 수 있습니다.
+>비디오 보고서는 Dynamic Media(하이브리드 모드)를 실행할 때만 사용할 수 있습니다.
 
 비디오 보고서에는 지정된 기간 동안 여러 개의 집계 지표가 표시되므로 *게시된 *개별 비디오와 집계 비디오가 예상대로 수행되고 있음을 모니터링할 수 있습니다. 다음 상위 지표 데이터는 전체 웹 사이트에서 게시된 모든 비디오에 대해 집계됩니다.
 
@@ -965,17 +973,17 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
 
 목록에서 비디오 이름을 누르면 라인 차트 형식으로 비디오의 대상 유지(드롭다운) 보고서가 표시됩니다. 차트에는 비디오 재생 중 특정 시간에 대한 보기 수가 표시됩니다. 비디오를 재생하면 세로 막대가 플레이어의 시간 표시기와 동기화되어 추적됩니다. 라인 차트 데이터의 드롭은 대상이 관심 없는 곳을 나타냅니다.
 
-비디오가 Adobe Experience Manager Dynamic Media 외부에서 인코딩된 경우 대상 유지(드롭다운) 차트와 테이블의 재생 백분율 데이터를 사용할 수 없습니다.
+비디오가 Adobe Experience Manager Dynamic Media 외부로 인코딩된 경우 대상 유지(드롭다운) 차트와 테이블의 재생 백분율 데이터를 사용할 수 없습니다.
 
-Dynamic [Media Cloud 서비스 구성을 참조하십시오](/help/assets/config-dynamic.md).
+Dynamic Media [Cloud Service 구성을 참조하십시오](/help/assets/config-dynamic.md).
 
 >[!NOTE]
 >
->추적 및 보고 데이터는 Dynamic Media의 자체 비디오 플레이어 및 관련 비디오 플레이어 사전 설정을 사용하는 경우에만 적용됩니다. 따라서 다른 비디오 플레이어로 재생되는 비디오를 추적하고 보고할 수 없습니다.
+>추적 및 보고 데이터는 Dynamic Media 자체 비디오 플레이어 및 관련 비디오 플레이어 사전 설정을 사용하는 경우에만 사용됩니다. 따라서 다른 비디오 플레이어로 재생되는 비디오를 추적하고 보고할 수 없습니다.
 
 기본적으로 비디오 보고서를 처음 입력할 때 보고서는 현재 월의 첫 부분에서 시작하여 현재 월의 날짜에 끝나는 비디오 데이터를 표시합니다. 그러나 고유한 날짜 범위를 지정하여 기본 날짜 범위를 무시할 수 있습니다. 다음 번에 비디오 보고서를 입력하면 지정한 날짜 범위가 사용됩니다.
 
-비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud 서비스가 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능을 사용할 수 있습니다. 그러나 게시 서버가 이미 설정되어 있어야 합니다. 게시 서버가 설정되어 있지 않으면 여전히 게시하여 비디오 보고서를 볼 수 있지만, Dynamic Media 클라우드 구성으로 돌아가서 확인을 **[!UICONTROL 탭해야 합니다]**.
+비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Service이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능을 사용할 수 있습니다. 그러나 게시 서버가 이미 설정되어 있어야 합니다. 게시 서버가 설정되어 있지 않으면 여전히 게시하여 비디오 보고서를 볼 수 있지만, Dynamic Media 클라우드 구성으로 돌아가서 **[!UICONTROL 확인을 탭해야 합니다]**.
 
 비디오 보고서를 보려면:
 
@@ -987,13 +995,14 @@ Dynamic [Media Cloud 서비스 구성을 참조하십시오](/help/assets/config
 
    * 오른쪽 위 모서리 근처에 있는 **날짜 선택기 **아이콘을 누릅니다.
 비디오 데이터를 저장할 시작 및 종료 날짜 범위를 지정한 다음 보고서 **[!UICONTROL 실행을 누릅니다]**.
+
    상위 지표 그룹 상자는 사이트에 게시된 모든 *비디오에 대한 다양한 집계 측정을 식별합니다.
 
 1. 상위 게시된 비디오가 나열된 테이블에서 비디오 이름을 눌러 비디오를 재생하고 비디오의 대상자 유지(드롭다운) 보고서를 확인합니다.
 
 ### Scene7 HTML5 뷰어 SDK를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 정의 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 Scene7 HTML5 뷰어 SDK를 기반으로 자체 비디오 뷰어를 만든 경우, 다음 단계에 따라 비디오 뷰어가 추적 이벤트를 다이내믹 미디어 비디오 보고서로 전송하도록 하십시오.
+Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 정의 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 Scene7 HTML5 뷰어 SDK를 기반으로 자체 비디오 뷰어를 만든 경우, 다음 단계에 따라 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서로 전송하도록 하십시오.
 
 Scene7 뷰어 참조 및 Scene7 HTML5 뷰어 SDK를 사용하여 고유한 비디오 뷰어를 만듭니다.
 
@@ -1012,7 +1021,7 @@ Scene7 HTML5 뷰어 SDK를 사용하여 만든 비디오 뷰어를 기반으로 
 
    `videoViewer.setParam("config2", "<value>");`
 
-   이 `config2` 매개 변수는 HTML5 뷰어에서 추적을 활성화합니다. 또한 비디오 보고 및 고객별 Adobe Analytics 구성에 대한 구성 정보가 포함된 회사별 사전 설정이기도 합니다.
+   이 `config2` 매개 변수는 HTML5 뷰어에서 추적을 활성화합니다. 또한 비디오 보고 및 고객별 Adobe Analytics 구성에 대한 구성 정보가 포함된 회사별 사전 설정입니다.
 
    config2 매개 변수의 올바른 값은 **포함 코드 **와 복사본 **URL **함수에 모두 있습니다. 복사 **URL **명령의 URL에서 찾을 매개 변수는 입니다 `&config2=<value>` . 이 값은 거의 항상 `companypreset`사용되지만, 어떤 경우에는 이 값 `companypreset-1`이 될 수도 `companypreset-2`있고, 기타 등일 수도 있습니다.
 
@@ -1062,7 +1071,7 @@ to attach the component to the trackingManager. 한 페이지에서 여러 뷰�
 >
 >사용하는 비디오 플레이어는 캡션 표시를 지원해야 합니다.
 
-Dynamic Media는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능을 제공합니다. 이러한 전환은 JSON 텍스트를 숨김과 전체 비디오 스크립트로 웹 페이지에 포함시킬 수 있음을 의미합니다. 그런 다음 검색 엔진을 통해 컨텐츠를 크롤링 및 색인화하여 비디오를 보다 손쉽게 검색할 수 있도록 하고 비디오 컨텐츠에 대한 추가 정보를 고객에게 제공할 수 있습니다.
+Dynamic Media에는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능이 있습니다. 이러한 전환은 JSON 텍스트를 숨김과 전체 비디오 스크립트로 웹 페이지에 포함시킬 수 있음을 의미합니다. 그런 다음 검색 엔진을 통해 컨텐츠를 크롤링 및 색인화하여 비디오를 보다 손쉽게 검색할 수 있도록 하고 비디오 컨텐츠에 대한 추가 정보를 고객에게 제공할 수 있습니다.
 
 URL에서 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제공 API 도움말](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) 의 정적(이미지가 아님) 컨텐츠 ** 제공을 참조하십시오.
 
@@ -1117,7 +1126,7 @@ URL에서 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제
 
 >[!NOTE]
 >
->사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. 다이내믹 미디어 비디오 플레이어는 장 마커를 지원하지만 타사 비디오 플레이어를 사용하는 경우에는 지원하지 않을 수 있습니다.
+>사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장(chapter) 마커를 지원하지만 타사 비디오 플레이어를 사용하는 경우에는 지원하지 않을 수 있습니다.
 
 원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 정의 비디오 뷰어를 만들고 브랜딩할 수 있습니다. 장 탐색을 사용하여 자신만의 HTML5 뷰어를 만드는 방법에 대한 자세한 내용은 HTML5용 Adobe Scene7 Viewer SDK 안내서에서 클래스 및 `s7sdk.video.VideoPlayer` 에서 &quot;수정자를 사용하여 동작 사용자 정의&quot; 머리글을 참조하십시오 `s7sdk.video.VideoScrubber`. Adobe Scene7 Viewer SDK는 [Adobe Developer Connection에서 다운로드할 수 있습니다](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
@@ -1189,7 +1198,7 @@ WebVTT [를 참조하십시오. 웹 비디오 텍스트 트랙 형식](https://d
      </tbody>
    </table>
 
-## Dynamic Media - Scene7 모드의 비디오 축소판 정보 {#about-video-thumbnails-in-dynamic-media-scene-mode}
+## Dynamic Media의 비디오 축소판 정보 - Scene7 모드 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
 비디오 축소판은 비디오 프레임 또는 고객에게 비디오를 나타내는 이미지 자산의 축소판입니다. 이 축소판은 고객이 비디오를 클릭하도록 권장해야 합니다.
 
@@ -1201,11 +1210,11 @@ AEM의 모든 비디오에는 연결된 축소판이 있어야 합니다. 축소
 
 비디오 축소판을 사용자 지정하는 기능은 비디오가 있는 폴더에 비디오 프로필을 적용한 후에만 사용할 수 있습니다.
 
-Dynamic Media [- 하이브리드 모드의 비디오 축소판 정보도 참조하십시오](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
+Dynamic Media [의 비디오 축소판 정보 - 하이브리드 모드를 참조하십시오](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
 
 ### 사용자 정의 비디오 축소판 추가 {#adding-a-custom-video-thumbnail}
 
-이러한 단계는 &quot;Dynamicmedia_Scene7&quot; 모드에서 실행되는 다이내믹 미디어에만 적용됩니다.
+이러한 단계는 &quot;Dynamicmedia_Scene7&quot; 모드에서 실행되는 Dynamic Media에만 적용됩니다.
 
 사용자 정의 비디오 축소판&#x200B;**을 추가하려면**,
 
@@ -1237,21 +1246,21 @@ Dynamic Media [- 하이브리드 모드의 비디오 축소판 정보도 참조�
 1. 축소판 변경 페이지에서 변경 내용 **[!UICONTROL 저장을 누릅니다]**.
 1. 비디오의 속성 페이지의 오른쪽 맨 위에서 저장 및 **[!UICONTROL 닫기를 누릅니다]**.
 
-## Dynamic Media - 하이브리드 모드의 비디오 축소판 {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
+## Dynamic Media의 비디오 축소판 정보 - 하이브리드 모드 {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
-Dynamic Media에서 자동으로 생성된 10개의 축소판 이미지 중 하나를 선택하여 비디오에 추가할 수 있습니다. 비디오 플레이어는 AEM Sites, AEM Mobile 또는 AEM Screens의 작성 환경에서 Dynamic Media 구성 요소와 함께 비디오 자산을 사용할 때 선택한 축소판을 표시합니다. 이 축소판은 전체 비디오의 내용을 가장 잘 나타내는 정적 사진 역할을 하며 사용자는 [재생] 단추를 클릭하도록 합니다.
+Dynamic Media에서 자동으로 생성한 10개의 축소판 이미지 중 하나를 선택하여 비디오에 추가할 수 있습니다. 비디오 플레이어는 AEM Sites, AEM Mobile 또는 AEM Screens의 작성 환경에서 Dynamic Media 구성 요소와 함께 비디오 에셋을 사용할 때 선택한 축소판을 표시합니다. 이 축소판은 전체 비디오의 내용을 가장 잘 나타내는 정적 사진 역할을 하며 사용자는 [재생] 단추를 클릭하도록 합니다.
 
-비디오의 총 시간을 기준으로 Dynamic Media는 10개의 축소판 이미지를 비디오에 캡처하여 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% 및 91%를 캡처합니다. 10개의 축소판은 지속되므로 나중에 다른 축소판을 선택하더라도 시리즈를 다시 생성할 필요가 없습니다. 10개의 축소판 이미지를 미리 본 다음 비디오에 사용할 이미지를 선택합니다. 기본값으로 변경하려면 CRXDE Lite를 사용하여 축소판 이미지가 생성되는 시간 간격을 구성할 수 있습니다. 예를 들어 비디오에서 간격을 일정하게 두고 네 개의 축소판 이미지만 생성하려는 경우 간격 시간을 24%, 49%, 74% 및 99%로 구성할 수 있습니다.
+비디오의 총 시간을 기준으로 Dynamic Media은 10개의 축소판 이미지를 비디오에 캡처합니다(기본값). 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% 및 91% 10개의 축소판은 지속되므로 나중에 다른 축소판을 선택하더라도 시리즈를 다시 생성할 필요가 없습니다. 10개의 축소판 이미지를 미리 본 다음 비디오에 사용할 이미지를 선택합니다. 기본값으로 변경하려면 CRXDE Lite를 사용하여 축소판 이미지가 생성되는 시간 간격을 구성할 수 있습니다. 예를 들어 비디오에서 간격을 일정하게 두고 네 개의 축소판 이미지만 생성하려는 경우 간격 시간을 24%, 49%, 74% 및 99%로 구성할 수 있습니다.
 
 가장 좋은 방법은 비디오를 업로드한 후 언제라도 웹 사이트에 비디오를 게시하기 전에 비디오 축소판을 추가할 수 있다는 것입니다.
 
 원하는 경우 Dynamic Media에서 생성된 축소판을 사용하는 대신 사용자 정의 축소판을 업로드하여 비디오를 나타낼 수 있습니다. 예를 들어 비디오의 제목, 시선을 사로잡는 오프닝 이미지 또는 비디오에서 캡처한 특정 이미지가 있는 사용자 정의 축소판 이미지를 만들 수 있습니다. 업로드하는 사용자 정의 비디오 축소판 이미지는 최대 해상도 1280 x 720픽셀(최소 너비 640픽셀)이며 2MB보다 크지 않아야 합니다.
 
-다이내믹 미디어 [- Scene7 모드의 비디오 축소판 정보도 참조하십시오](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
+Dynamic Media [의 비디오 축소판 정보 - Scene7 모드를 참조하십시오](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
 ### 비디오 축소판 추가 {#adding-a-video-thumbnail}
 
-이러한 단계는 하이브리드 모드에서 실행되는 다이내믹 미디어에만 적용됩니다.
+이러한 단계는 하이브리드 모드에서 실행되는 Dynamic Media에만 적용됩니다.
 
 비디오 축소판&#x200B;**을 추가하려면**,
 
@@ -1261,14 +1270,14 @@ Dynamic Media에서 자동으로 생성된 10개의 축소판 이미지 중 하�
 1. 비디오의 속성 페이지에서 축소판 **[!UICONTROL 변경을 누릅니다]**.
 1. 축소판 변경 페이지의 도구 모음에서 프레임 **[!UICONTROL 선택을 누릅니다]**.
 
-   Dynamic Media는 사용자가 지정한 기본 시간 간격 또는 시간 간격에 따라 비디오에서 일련의 축소판 이미지를 생성합니다.
+   Dynamic Media은 사용자가 지정한 기본 시간 간격 또는 시간 간격에 따라 비디오에서 시리즈 축소판 이미지를 생성합니다.
 
 1. 생성된 축소판 이미지를 미리 본 다음 비디오에 추가할 이미지를 선택합니다.
 1. 변경 **[!UICONTROL 저장을 누릅니다]**.
 
    선택한 축소판을 사용하도록 비디오의 축소판 이미지가 업데이트됩니다. 나중에 축소판 이미지를 변경하기로 결정한 경우 축소판 **[!UICONTROL 변경]** 페이지로 돌아가 새 이미지를 선택할 수 있습니다.
 
-   새 기본 시간 간격을 구성했거나 기존 비디오를 바꾸기 위해 새 비디오를 업로드한 경우 Dynamic Media에서 축소판을 다시 생성하도록 해야 합니다.
+   새로운 기본 시간 간격을 구성했거나 기존 비디오를 바꾸기 위해 새 비디오를 업로드한 경우 Dynamic Media에서 축소판을 다시 생성하도록 해야 합니다.
 
    비디오 [축소판이 생성되는 기본 시간 간격 구성을 참조하십시오](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
@@ -1300,7 +1309,7 @@ Dynamic Media에서 자동으로 생성된 10개의 축소판 이미지 중 하�
 
 ### 사용자 정의 비디오 축소판 추가 {#adding-a-custom-video-thumbnail-1}
 
-이러한 단계는 하이브리드 모드에서 실행되는 다이내믹 미디어에만 적용됩니다.
+이러한 단계는 하이브리드 모드에서 실행되는 Dynamic Media에만 적용됩니다.
 
 사용자 정의 비디오 축소판&#x200B;**을 추가하려면**,
 
