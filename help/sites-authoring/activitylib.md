@@ -11,7 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d53e72b198db91d368ddddac768d19b88ee29050
+source-git-commit: f62d2d639499c128fd4cafa5f9c39307ae9a607d
+workflow-type: tm+mt
+source-wordcount: '2022'
+ht-degree: 82%
 
 ---
 
@@ -77,13 +80,13 @@ When you create a brand using the Activities console, it also appears in the [Of
 * **타깃팅 엔진:** 타깃팅된 컨텐츠를 위한 엔진으로서 [AEM](/help/sites-authoring/personalization.md#aem) 또는 [Adobe Target](/help/sites-authoring/personalization.md#adobe-target)입니다.
 
 * **Target 구성 선택:**(Adobe Target만 해당) 이 활동에서 Adobe Target에 연결하는 데 사용해야 하는 클라우드 구성입니다. 이 선택 사항은 타깃팅 엔진용으로 Adobe Target을 선택한 경우에만 나타납니다.
-* **활동 유형:**활동 유형 - A/B 테스트 또는 경험 타깃팅
+* **활동 유형: **활동 유형 - A/B 테스트 또는 경험 타깃팅
 * **목표:**(선택 사항) 활동에 대한 설명입니다.
 * **경험:** 대상 이름과 사용자가 타깃팅하는 마케팅 세그먼트 간의 매핑입니다.
-* **** 트래픽 비율:A/B 테스트를 선택한 경우 각 경험에 대한 트래픽 양(백분율)을 변경할 수 있습니다.
+* **트래픽 비율:** A/B 테스트를 선택한 경우 각 경험에 대한 트래픽 양(백분율)을 변경할 수 있습니다.
 * **지속 기간:** 활동이 적용되는 기간입니다.
 * **우선 순위:** 활동의 상대적 우선 순위입니다. 활동에서 동일한 사용자 세그먼트에 대한 컨텐츠를 제공하면 우선 순위가 높은 활동이 우선권을 갖습니다.
-* **** 목표 지표:Adobe Target을 타깃팅 엔진으로 선택한 경우 활동에 성공 지표를 추가할 수 있습니다. 성공 지표 1개가 필요합니다.
+* **목표 지표:** Adobe Target을 타깃팅 엔진으로 선택한 경우 활동에 성공 지표를 추가할 수 있습니다. 성공 지표 1개가 필요합니다.
 
 >[!NOTE]
 Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아니라 타깃팅된 컨텐츠 편집기에서 새 Adobe Target 활동을 ***만들어야*** 합니다.
@@ -103,10 +106,11 @@ Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아
 1. 활동에 하나 이상의 경험을 추가합니다. **경험 추가**&#x200B;를 클릭하거나 탭합니다.
 1. AEM 타깃팅 또는 Adobe Target 경험 타깃팅을 사용하는 경우:
 
-   1. **대상자 선택 **을 클릭하거나 탭하고 경험이 타깃팅하는 세그먼트를 선택합니다.
+   1. **대상자 **를 클릭하거나 탭하고 경험이 타깃팅하는 세그먼트를 선택합니다.
    1. **경험 추가**&#x200B;를 클릭하거나 탭하고 이름을 입력한 다음, **확인**&#x200B;을 클릭하거나 탭합니다.
 
    1. **다음**&#x200B;을 클릭하거나 탭합니다.
+
    Adobe Target A/B 테스트를 사용하는 경우:
 
    1. 대상 상자에서 연필을 클릭하거나 탭하여 대상을 선택합니다.
@@ -138,7 +142,7 @@ Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아
 활동을 게시하여 사용할 수 있도록 해야 합니다. 반대로 활동의 게시를 취소하여 활동을 사용할 수 없게 할 수도 있습니다.
 
 >[!NOTE]
-활동 게시를 취소할 때
+활동을 게시 취소할 때 페이지를 새로 고치지 않으면 활동의 상태가 변경되지 않습니다.
 
 활동을 게시하거나 게시 취소하려면 다음을 수행하십시오.
 
@@ -160,7 +164,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동이 활성화되면 게시 �
 
 모든 Adobe Target 활동(XT 또는 A/B)의 성능을 볼 수 있습니다. A/B 테스트를 사용하는 경우에는 우승 경험을 전환할 수도 있으며, 전환된 후에는 기본 경험이 됩니다.
 
-활동 성능을 보고 우승 경험을 전환하려면
+활동 성능을 보고 우승 경험을 전환하려면 다음을 수행하십시오.
 
 1. In **Personalization**, click or tap **Activities** to navigate to the **Activities** console.
 1. 활동을 보려는 브랜드를 클릭하거나 탭합니다.
@@ -172,8 +176,9 @@ Adobe Target 타깃팅 엔진을 사용하는 활동이 활성화되면 게시 �
 
    우승자를 전환하면 다음 내용이 수행됩니다.
 
-   * 현재 활동을 비활성화합니다.
+   * 현재 활동이 비활성화됩니다.
    * 모든 페이지가 수정되고 타깃팅된 컨텐츠가 우승 경험의 실제 컨텐츠로 교체됩니다. The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
    우승 경험은 보고서에서 더 많은 리프트를 생성하는 경험으로서, 전환율을 기반으로 합니다.
@@ -218,7 +223,7 @@ When AEM synchronizes an activity with Adobe Target, AEM includes a property of 
 동기화 문제를 방지하려면 항상 활동에 고유한 이름을 사용하십시오. 활동이 동기화에 실패하는 경우, 해당 캠페인이 사용되고 있지 않다면 동일한 이름을 사용하는 Adobe Target 캠페인을 삭제할 수 있습니다.
 
 >[!NOTE]
-When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Adobe Target에서 이 캠페인을 삭제해도 `thirdPartyId`는 삭제되지 않습니다. `thirdPartyId`는 다른 유형의 캠페인(AB, XT)에 대해 다시 사용할 수 없으며 수동으로 제거할 수 없습니다. 이 문제를 방지하려면 각 캠페인의 이름을 고유한 이름으로 지정합니다.따라서 캠페인 이름을 다른 캠페인 유형에서 다시 사용할 수 없습니다.
+When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Adobe Target에서 이 캠페인을 삭제해도 `thirdPartyId`는 삭제되지 않습니다. `thirdPartyId`는 다른 유형의 캠페인(AB, XT)에 대해 다시 사용할 수 없으며 수동으로 제거할 수 없습니다. 이 문제를 방지하려면 각 캠페인의 이름을 고유한 이름으로 지정합니다. 따라서 캠페인 이름을 다른 캠페인 유형에서 다시 사용할 수 없습니다.
 동일한 캠페인 유형에서 동일한 이름을 사용하는 경우 기존 캠페인을 덮어쓰게 됩니다.
 동기화 중에 &quot;Request Failed. `thirdPartyId` already exists&quot;(요청이 실패했습니다. thirdPartyId가 이미 있습니다)라는 오류가 발생하는 경우, 캠페인 이름을 변경하고 다시 동기화하십시오.
 
