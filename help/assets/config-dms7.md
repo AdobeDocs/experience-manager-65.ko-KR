@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 구성 - Scene7 모드
-description: 다이내믹 미디어 - Scene7 모드를 구성하는 방법에 대한 정보입니다.
+description: Dynamic Media 구성 방법 - Scene7 모드에 대한 정보입니다.
 uuid: ce43c589-d415-4611-9266-b4e8887e4cdc
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f671e00ad94555346190ecb98c905441ad111e18
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
 workflow-type: tm+mt
-source-wordcount: '5777'
+source-wordcount: '5779'
 ht-degree: 1%
 
 ---
@@ -19,27 +19,27 @@ ht-degree: 1%
 
 # Dynamic Media 구성 - Scene7 모드{#configuring-dynamic-media-scene-mode}
 
-Adobe Experience Manager를 개발용, 스테이징용 및 라이브 프로덕션용 등 다양한 환경에 대해 설정하는 경우 해당 환경 각각에 대해 Dynamic Media Cloud 서비스를 구성해야 합니다.
+개발 환경, 스테이징용 및 라이브 프로덕션용 환경과 같이 서로 다른 환경에 대해 설정된 Adobe Experience Manager을 사용하는 경우 해당 환경 각 환경에 대해 Dynamic Media Cloud Service을 구성해야 합니다.
 
-## 다이내믹 미디어 - Scene7 모드 아키텍처 다이어그램 {#architecture-diagram-of-dynamic-media-scene-mode}
+## Dynamic Media 아키텍처 다이어그램 - Scene7 모드 {#architecture-diagram-of-dynamic-media-scene-mode}
 
-다음 아키텍처 다이어그램에서는 다이내믹 미디어 - Scene7 모드가 작동하는 방식을 설명합니다.
+다음 아키텍처 다이어그램에서는 Dynamic Media - Scene7 모드가 작동하는 방식을 설명합니다.
 
-새 아키텍처에서 자산 처리 및 게시에 대해 AEM은 마스터 자산을 담당하고 다이내믹 미디어와 동기화합니다.
+새 아키텍처에서 AEM은 기본 소스 자산을 담당하고 자산 처리 및 게시를 위한 Dynamic Media과 동기화합니다.
 
-1. 마스터 자산이 AEM에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media는 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 자산 처리 및 변환 생성을 처리합니다. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
-1. 변환이 생성되면 AEM은 안전하게 원격 다이내믹 미디어 표현물에 액세스하고 미리 볼 수 있습니다(바이너리는 AEM 인스턴스로 다시 전송되지 않음).
+1. 기본 소스 자산이 AEM에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media은 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 자산 처리 및 변환 생성을 처리합니다. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
+1. 변환이 생성되면 AEM은 안전하게 원격 Dynamic Media 변환에 액세스하고 미리 볼 수 있습니다(바이너리는 AEM 인스턴스로 다시 전송되지 않음).
 1. 컨텐츠가 게시 및 승인될 준비가 되면, Dynamic Media 서비스가 컨텐츠를 전달 서버로 푸시하고 CDN의 컨텐츠를 캐시하도록 트리거합니다.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
-## Scene7 모드에서 동적 미디어 활성화 {#enabling-dynamic-media-in-scene-mode}
+## Scene7 모드에서 Dynamic Media 활성화 {#enabling-dynamic-media-in-scene-mode}
 
 [다이내믹 미디어](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) 기능은 기본적으로 비활성화됩니다. 다이내믹 미디어 기능을 활용하려면 활성화해야 합니다.
 
 >[!NOTE]
 >
->동적 미디어 - Scene7 모드는 AEM 작성자 인스턴스에만 적용됩니다. 따라서 AEM 게시 인스턴스가 `runmode=dynamicmedia_scene7` 아니라 ** AEM 작성자 인스턴스에서 구성해야 합니다.
+>Dynamic Media - Scene7 모드는 AEM Author 인스턴스에만 사용됩니다. 따라서 AEM Publish 인스턴스가 `runmode=dynamicmedia_scene7` 아니라 ** AEM Author 인스턴스에서 구성해야 합니다.
 
 다이내믹 미디어를 활성화하려면 터미널 창에 다음 사항을 입력하여 명령줄에서 `dynamicmedia_scene7` 실행 모드를 사용하여 AEM을 시작해야 합니다(사용된 예제 포트는 4502).
 
@@ -47,15 +47,15 @@ Adobe Experience Manager를 개발용, 스테이징용 및 라이브 프로덕�
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
-## (선택 사항) Dynamic Media 사전 설정 및 구성을 6.3에서 6.5 가동 중지 시간 제로 마이그레이션 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (선택 사항) 6.3에서 6.5 가동 중지 시간 제로 Dynamic Media 사전 설정 및 구성 마이그레이션 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없이 배포할 수 있는 기능이 포함)로 업그레이드하는 경우, CRXDE Lite에서 모든 사전 설정 및 구성을 마이그레이션하기 위해 다음 curl 명령 `/etc` 을 실행해야 `/conf` 합니다.
+AEM Dynamic Media을 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없는 배포 기능 포함)로 업그레이드하는 경우, CRXDE Lite에서 모든 사전 설정 및 구성을 마이그레이션하기 위해 다음 curl 명령을 실행해야 `/etc` `/conf` 합니다.
 
 >[!NOTE]
 >
 >호환성 모드에서 AEM 인스턴스를 실행하는 경우, 즉, 패키지된 호환성이 설치되어 있으므로 이러한 명령을 실행할 필요가 없습니다.
 
-호환성 패키지 유무와 상관없이 모든 업그레이드의 경우 다음 Linux 말림 명령을 실행하여 원래 Dynamic Media와 함께 제공된 기본 기본 기본 기본 뷰어 사전 설정을 복사할 수 있습니다.
+호환성 패키지 유무와 상관없이 모든 업그레이드의 경우 다음 Linux 말림 명령을 실행하여 원래 Dynamic Media과 함께 제공된 기본 기본 기본 기본 뷰어 사전 설정을 복사할 수 있습니다.
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
@@ -67,21 +67,21 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
 
 기능 팩 18912의 설치는 *선택 사항입니다*.
 
-기능 팩 18912를 사용하면 FTP를 통해 자산을 벌크 인제스트하거나, AEM의 Dynamic Media - 하이브리드 모드 또는 Dynamic Media Classic에서 Dynamic Media - Scene7 모드로 자산을 마이그레이션할 수 있습니다. 이 서비스는 [Adobe 전문 서비스에서 제공됩니다](https://www.adobe.com/experience-cloud/consulting-services.html).
+기능 팩 18912를 사용하면 FTP를 통해 자산을 벌크 인제스트하거나, Dynamic Media(하이브리드 모드 또는 Dynamic Media Classic에서 Dynamic Media - AEM의 Scene7 모드로 자산을 마이그레이션할 수 있습니다. 이 서비스는 [Adobe 전문 서비스에서 제공됩니다](https://www.adobe.com/experience-cloud/consulting-services.html).
 
 자세한 [내용은 벌크 에셋 마이그레이션을](/help/assets/bulk-ingest-migrate.md) 위한 기능 팩 18912 설치를 참조하십시오.
 
-## 다이내믹 미디어 구성 만들기 {#configuring-dynamic-media-cloud-services}
+## Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
-**Dynamic Media를 구성하기 전**: Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 Dynamic Media Classic에 [로그인해야](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 암호를 변경할 수 있습니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud 서비스가 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
+**Dynamic Media을 구성하기 전**: Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 Dynamic Media Classic에 [로그인해야](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 암호를 변경할 수 있습니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**다이내믹 미디어 구성을 만들려면**
+**Dynamic Media 구성을 만들려면**
 
-1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭한 다음 **[!UICONTROL 클라우드 서비스 > 다이내믹 미디어 구성을 탭합니다]**.
+1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭한 다음 **[!UICONTROL Cloud Service > Dynamic Media 구성을 탭합니다]**.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL 글로벌]** ( **[!UICONTROL 전역]**&#x200B;왼쪽에 있는 폴더 아이콘을 탭하거나 선택하지 않음)을 탭한 다음 **[!UICONTROL 만들기를]**&#x200B;탭합니다.
-1. [다이내믹 미디어 구성 만들기] 페이지에서 제목과 Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. 이러한 서비스는 제공 이메일에서 Adobe가 제공합니다. 수신하지 못한 경우 지원 센터에 문의하십시오.
+1. Dynamic Media 구성 만들기 페이지에서 제목, Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. 이러한 서비스는 제공 이메일에서 Adobe가 제공합니다. 수신하지 못한 경우 지원 센터에 문의하십시오.
 
    Click **[!UICONTROL Connect to Dynamic Media]**.
 
@@ -91,61 +91,61 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
 
 1. 연결이 성공하면 다음을 설정할 수도 있습니다.
 
-   * **[!UICONTROL 회사]** - Dynamic Media 계정의 이름입니다. 다양한 하위 브랜드, 사업부 또는 다른 스테이징/프로덕션 환경에 대해 여러 개의 Dynamic Media 계정이 있을 수 있습니다.
+   * **[!UICONTROL 회사]** - Dynamic Media 계정의 이름입니다. 서로 다른 하위 브랜드, 사업부 또는 다른 스테이징/프로덕션 환경에 대해 여러 Dynamic Media 계정을 보유할 수도 있습니다.
 
    * **[!UICONTROL 회사 루트 폴더 경로]**
 
    * **[!UICONTROL 자산 게시]** - 다음 세 가지 옵션 중에서 선택할 수 있습니다.
       * **[!UICONTROL 에셋이 업로드되면 시스템이 에셋을 인제스트하고 URL/포함을 즉시 제공함을 의미합니다]** . 자산을 게시하는 데 필요한 사용자 개입은 없습니다.
       * **[!UICONTROL 활성화]** 시 URL/포함 링크를 제공하기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.
-   * **[!UICONTROL 보안 미리 보기 서버]** - 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM에서는 원격 다이내믹 미디어 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리는 AEM 인스턴스로 다시 전송되지 않음).
+   * **[!UICONTROL 보안 미리 보기 서버]** - 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM은 안전하게 원격 Dynamic Media 변환에 액세스하고 미리 볼 수 있습니다(바이너리는 AEM 인스턴스로 다시 전송되지 않음).
 회사 서버 또는 특수 서버를 사용할 특별한 계획이 없는 경우 이 설정을 지정한 대로 유지하는 것이 좋습니다.
 
-   * **[!UICONTROL 모든 컨텐츠]** 동기화 - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->기본적으로 선택되어 있습니다. Dynamic Media와의 동기화에서 자산을 선택적으로 포함 또는 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 가지 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.
+   * **[!UICONTROL 모든 컨텐츠]** 동기화 - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->기본적으로 선택되어 있습니다. Dynamic Media에 대한 동기화에서 자산을 선택적으로 포함 또는 제외하려면 이 옵션을 선택 취소합니다. 이 옵션을 선택 해제하면 다음 두 개의 Dynamic Media 동기화 모드 중에서 선택할 수 있습니다.
 
    * **[!UICONTROL Dynamic Media 동기화 모드]**
       * **[!UICONTROL 기본적으로]** 활성화됨 - 제외용으로 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 기본적으로]** 비활성화됨 - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시해야만 구성이 어떤 폴더에도 적용되지 않습니다.
-선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성을 클릭합니다]**. 세부 **[!UICONTROL 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택합니다. 완료되면 **[!UICONTROL 저장을 누릅니다]**. *기억하십시오. 이전에 모든 컨텐츠&#x200B;**동기화를 선택한 경우에는 이러한 세 가지 옵션을 사용할 수**없습니다.*
+선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성을 클릭합니다]**. [ **[!UICONTROL 세부 사항]** ] 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택합니다. 완료되면 **[!UICONTROL 저장을 누릅니다]**. *기억하십시오. 이전에 모든 컨텐츠&#x200B;**동기화를 선택한 경우에는 이러한 세 가지 옵션을 사용할 수**없습니다.*
          * **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 항목에 대한 세부 상태는 도구 설명을 통해 표시됩니다.
-         * **[!UICONTROL 하위 폴더]** 사용 - Dynamic Media에 동기화할 수 있도록 이 하위 트리에 있는 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
-         * **[!UICONTROL 하위 폴더에]** 대해 비활성화됨 - 이 하위 트리의 모든 항목을 Dynamic Media로 동기화에서 제외합니다.
+         * **[!UICONTROL 하위 폴더]** 사용 - Dynamic Media에 동기화하기 위해 이 하위 트리에 있는 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
+         * **[!UICONTROL 하위 폴더에]** 대해 비활성화됨 - 이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다.
 
    >[!NOTE]
    >
-   >DMS7에서는 버전 관리가 지원되지 않습니다. 또한, 지연된 활성화는 [다이내믹 미디어 구성 편집] 페이지의 **[!UICONTROL 자산]** 게시가 활성화 **[!UICONTROL 시]**&#x200B;로 설정된 경우에만 적용되며, 처음 자산이 활성화될 때까지만 적용됩니다.
+   >DMS7에서는 버전 관리가 지원되지 않습니다. 또한, 지연된 활성화는 [Dynamic Media 구성 편집] **[!UICONTROL 페이지의 [자산]** 게시]가 [활성화 시]로 설정된 ****&#x200B;경우에만 적용되며, 처음 자산이 활성화될 때까지 적용됩니다.
    >
    >
    >자산이 활성화되면 모든 업데이트가 즉시 S7 전달에 실시간으로 게시됩니다.
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
-1. Dynamic Media 콘텐츠를 게시하기 전에 안전하게 미리 보려면 AEM 작성자 인스턴스를 &quot;허용&quot;하여 Dynamic Media에 연결해야 합니다.
+1. 게시되기 전에 Dynamic Media 컨텐츠를 안전하게 미리 보려면 AEM 작성자 인스턴스를 &quot;허용 목록&quot;하여 Dynamic Media에 연결해야 합니다.
 
    * Dynamic Media Classic 계정에 로그온합니다. [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). 자격 증명 및 로그온은 프로비저닝 시점에 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
    * 페이지 오른쪽 상단의 탐색 막대에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버를 클릭합니다]**.
 
    * 이미지 서버 게시 페이지의 게시 컨텍스트 드롭다운 목록에서 이미지 제공 **[!UICONTROL 테스트를 선택합니다]**.
    * 클라이언트 주소 필터에서 추가를 **[!UICONTROL 누릅니다]**.
-   * 주소를 활성화(켜기)하려면 확인란을 선택하고 AEM 작성자 인스턴스의 IP 주소(발송자 IP가 아님)를 입력합니다.
+   * 주소를 활성화(켜기)하려면 확인란을 선택하고 Dispatcher IP가 아닌 AEM Author 인스턴스의 IP 주소를 입력합니다.
    * **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-이제 기본 구성이 완료되었습니다. 다이내믹 미디어 - Scene7 모드를 사용할 준비가 되었습니다.
+이제 기본 구성이 완료되었습니다. Dynamic Media - Scene7 모드를 사용할 준비가 되었습니다.
 
-구성을 추가로 사용자 지정하려면, Dynamic Media - Scene7 모드에서 고급 설정 구성 [(선택 사항)에서 원하는 작업을 완료할 수 있습니다](#optionalconfigurationofadvancedsettingindynamicmediascene7mode).
+구성을 추가로 사용자 지정하려면 Dynamic Media의 고급 설정 구성 - Scene7 모드 [에서 선택적으로 모든 작업을 완료할 수 있습니다](#optionalconfigurationofadvancedsettingindynamicmediascene7mode).
 
-## (선택 사항) Dynamic Media - Scene7 모드에서 고급 설정 구성 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## (선택 사항) Dynamic Media에서 고급 설정 구성 - Scene7 모드 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의하거나 성능을 최적화하려는 경우 다음 *선택* 작업 중 하나 이상을 완료할 수 있습니다.
+Dynamic Media(Scene7 모드)의 구성 및 설정을 추가로 사용자 정의하거나 성능을 최적화하려는 경우 다음 *선택* 작업 중 하나 이상을 완료할 수 있습니다.
 
-* [(선택 사항) 다이내믹 미디어 설정 및 구성 - Scene7 모드 설정](#optionalsetupandconfigurationofdynamicmediascene7modesettings)
+* [(선택 사항) Dynamic Media 설정 및 구성 - Scene7 모드 설정](#optionalsetupandconfigurationofdynamicmediascene7modesettings)
 
-* [(선택 사항) 다이내믹 미디어 성능 조정 - Scene7 모드](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
+* [(선택 사항) Dynamic Media 성능 조정 - Scene7 모드](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(선택 사항) 복제용 자산 필터링](#optional-filtering-assets-for-replication)
 
-### (선택 사항) 다이내믹 미디어 설정 및 구성 - Scene7 모드 설정</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
+### (선택 사항) Dynamic Media 설정 및 구성 - Scene7 모드 설정</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
 
-실행 모드에 있는 경우 Dynamic Media Classic(Scene7) 사용자 인터페이스 `dynamicmedia_scene7`를 사용하여 동적 미디어 설정을 변경합니다.
+실행 모드에 있는 경우 Dynamic Media Classic(Scene7) 사용자 인터페이스 `dynamicmedia_scene7`를 사용하여 Dynamic Media 설정을 변경합니다.
 
 위의 작업 중 일부는 여기에서 Dynamic Media Classic(Scene7)에 로그인해야 합니다. [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -160,7 +160,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 
 #### 이미지 서버에 대한 게시 설정 {#publishing-setup-for-image-server}
 
-게시 설정 설정에 따라 기본적으로 Dynamic Media에서 자산이 제공되는 방법이 결정됩니다. 설정이 지정되지 않은 경우, Dynamic Media는 제작 설정에 정의된 기본 설정에 따라 자산을 전달합니다. 예를 들어 해상도 속성이 포함되지 않은 이미지를 전달하라는 요청은 기본 개체 해상도 설정이 있는 이미지를 생성합니다.
+게시 설정 설정에 따라 기본적으로 Dynamic Media에서 자산이 제공되는 방법이 결정됩니다. 설정이 지정되지 않은 경우 Dynamic Media은 게시 설정에 정의된 기본 설정에 따라 자산을 전달합니다. 예를 들어 해상도 속성이 포함되지 않은 이미지를 전달하라는 요청은 기본 개체 해상도 설정이 있는 이미지를 생성합니다.
 
 게시 설정을 구성하려면: Dynamic Media Classic에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버를 클릭합니다]**.
 
@@ -169,14 +169,14 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 * **[!UICONTROL 요청 속성]** - 이러한 설정은 서버에서 전달할 수 있는 이미지에 제한을 적용합니다.
 * **[!UICONTROL 기본 요청 속성]** - 이 설정은 이미지의 기본 모양과 관련이 있습니다.
 * **[!UICONTROL 공통 축소판 속성]** - 이 설정은 축소판 이미지의 기본 모양과 관련이 있습니다.
-* **[!UICONTROL 카탈로그 필드의 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
+* **[!UICONTROL 카탈로그 필드 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
 * **[!UICONTROL 색상 관리 속성]** - 이 설정에 따라 어떤 ICC 색상 프로파일이 사용되는지 결정됩니다.
 * **[!UICONTROL 호환성 속성]** - 이 설정을 사용하면 텍스트 레이어의 선행 및 후행 단락을 이전 버전과의 호환성을 위해 버전 3.6에서와 같이 처리할 수 있습니다.
 * **[!UICONTROL 로컬라이제이션 지원]** - 이 설정을 통해 여러 로케일 특성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정할 수 있으므로 뷰어에서 다양한 도구 설명을 지원할 언어를 정의할 수 있습니다. 현지화 지원 설정에 대한 자세한 내용은 **자산 현지화 설정 시**&#x200B;고려 사항 [을 참조하십시오](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
 
 #### 응용 프로그램 일반 설정 구성 {#configuring-application-general-settings}
 
-응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 클릭합니다]**.
+[응용 프로그램 일반 설정] 페이지를 열려면 Dynamic Media의 클래식 전역 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 클릭합니다]**.
 
 **서버 - **계정 프로비저닝을 사용하면 Dynamic Media에서 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 응용 프로그램에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에 따라 다릅니다. AEM 지원에 의해 명시적으로 지시된 경우를 제외하고 서버 이름을 변경하지 마십시오.
 
@@ -213,7 +213,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
    * **[!UICONTROL CMYK 기본 색상 공간]** - 기본 CMYK 색상 프로파일의 이름
    * **[!UICONTROL 회색 크기 조절 기본 색상 공간]** - 기본 회색 색상 프로필의 이름
    * **[!UICONTROL RGB 기본 색상 공간]** - 기본 RGB 색상 프로필의 이름
-   * **[!UICONTROL 색상 변환 렌더링 의도]** - 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL perception]**, **[!UICONTROL 상대]** colorometric **[!UICONTROL ,]**&#x200B;채도 **[!UICONTROL ,]**&#x200B;절대의소산입니다. Adobe에서는 **[!UICONTROL 상대]**를 기본값으로 권장합니다.
+   * **[!UICONTROL 색상 변환 렌더링 의도]** - 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL perception]**, **[!UICONTROL 상대]** colorometric **[!UICONTROL ,]**&#x200B;채도 **[!UICONTROL ,]**&#x200B;절대의 최고수준. Adobe에서는 **[!UICONTROL 상대]**를 기본값으로 권장합니다.
 
 1. 저장을 **[!UICONTROL 누릅니다]**.
 
@@ -229,7 +229,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 
 #### 자산 처리 구성 {#configuring-asset-processing}
 
-Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자산 처리 매개 변수를 사용자 정의할 수 있습니다. 예를 들어 자산 처리 매개 변수를 지정하여 다음을 수행할 수 있습니다.
+Dynamic Media으로 처리해야 하는 자산 유형을 정의하고 고급 자산 처리 매개 변수를 사용자 정의할 수 있습니다. 예를 들어 자산 처리 매개 변수를 지정하여 다음을 수행할 수 있습니다.
 
 * Adobe PDF를 전자 카탈로그 에셋으로 변환
 * Adobe Photoshop 문서(.PSD)를 배너 템플릿 에셋으로 변환하여 개인화할 수 있습니다.
@@ -263,7 +263,7 @@ Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자
 
 #### 지원되지 않는 포맷에 대한 사용자 지정 MIME 형식 추가 {#adding-custom-mime-types-for-unsupported-formats}
 
-AEM Assets에서 지원되지 않는 포맷에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 AEM에서 삭제되지 않도록 하려면 MIME 유형을 먼저 이동해야 하며, 활성화된 값이 `image_` false로 ****&#x200B;설정되어 있어야 합니다.
+AEM Assets에서 지원되지 않는 형식에 대해 사용자 지정 MIME 형식을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 AEM에서 삭제되지 않도록 하려면 MIME 유형을 먼저 이동해야 하며, 활성화된 값이 `image_` false로 ****&#x200B;설정되어 있어야 합니다.
 
 **지원되지 않는 형식에 대한 사용자 지정 MIME 형식을 추가하려면**
 
@@ -271,7 +271,7 @@ AEM Assets에서 지원되지 않는 포맷에 대한 사용자 지정 MIME 유�
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
-1. 새 브라우저 탭이 **[!UICONTROL Adobe Experience Manager 웹 콘솔 구성]** 페이지에 열립니다.
+1. [ **[!UICONTROL Adobe Experience Manager 웹 콘솔 구성] 페이지에 새 브라우저 탭이]** 열립니다.
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
@@ -291,7 +291,7 @@ AEM Assets에서 지원되지 않는 포맷에 대한 사용자 지정 MIME 유�
 
 1. In the lower-right corner of the page, tap **[!UICONTROL Save]**.
 
-   이때 열려 있는 Adobe Experience Manager 웹 콘솔 구성 페이지가 있는 브라우저 탭을 닫을 수 있습니다.
+   이때 열린 Adobe Experience Manager 웹 콘솔 구성 페이지가 있는 브라우저 탭을 닫을 수 있습니다.
 
 1. 열려 있는 AEM 콘솔이 있는 브라우저 탭으로 돌아갑니다.
 1. AEM에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite를 누릅니다]**.
@@ -315,11 +315,11 @@ AEM Assets에서 지원되지 않는 포맷에 대한 사용자 지정 MIME 유�
 
 #### 이미지 세트 및 스핀 세트를 자동으로 생성하기 위한 일괄 세트 사전 설정 만들기 {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
-자산을 Dynamic Media로 업로드하는 동안 일괄 세트 사전 설정을 사용하여 이미지 세트 또는 스핀 세트 생성을 자동화할 수 있습니다.
+자산을 Dynamic Media에 업로드하는 동안 일괄 세트 사전 설정을 사용하여 이미지 세트 또는 스핀 세트 생성을 자동화할 수 있습니다.
 
 먼저 자산을 집합으로 그룹화하는 방법에 대한 이름 지정 규칙을 정의합니다. 그런 다음 사전 설정 레서피에서 정의된 이름 지정 규칙과 일치하는 이미지를 사용하여 세트를 구성하는 방법을 정의하는 고유한 이름의 자체 지침 세트인 배치 집합 사전 설정을 만들 수 있습니다.
 
-파일을 업로드하면 Dynamic Media는 활성 사전 설정에서 정의된 이름 지정 규칙과 일치하는 모든 파일이 포함된 세트를 자동으로 만듭니다.
+파일을 업로드하면 Dynamic Media은 활성 사전 설정에서 정의된 이름 지정 규칙과 일치하는 모든 파일이 포함된 세트를 자동으로 만듭니다.
 
 **기본 이름 지정 구성**
 
@@ -359,7 +359,7 @@ AEM Assets에서 지원되지 않는 포맷에 대한 사용자 지정 MIME 유�
 
 **배치 세트 사전 설정 만들기**
 
-Dynamic Media는 뷰어에 표시하기 위해 일괄 세트 사전 설정을 사용하여 에셋을 이미지 세트(대체 이미지, 색상 옵션, 360 회전)로 구성합니다. Dynamic Media의 자산 업로드 프로세스와 함께 일괄 세트 사전 설정이 자동으로 실행됩니다.
+Dynamic Media은 일괄 세트 사전 설정을 사용하여 뷰어에 표시하기 위해 자산을 이미지 세트(대체 이미지, 색상 옵션, 360회전)로 구성합니다. 배치 세트 사전 설정은 Dynamic Media의 자산 업로드 프로세스와 함께 자동으로 실행됩니다.
 
 배치 세트 사전 설정을 생성, 편집 및 관리할 수 있습니다. 두 가지 형태의 일괄 세트 사전 설정 정의가 있습니다. 하나는 설정한 기본 이름 지정 규칙과 시간에 만드는 사용자 지정 이름 지정 규칙에 대한 것입니다.
 
@@ -384,11 +384,11 @@ Dynamic Media는 뷰어에 표시하기 위해 일괄 세트 사전 설정을 �
 
    * 사전 설정을 설정할 때 새 이름 지정 규칙을 정의하려면 **[!UICONTROL 자산 이름 지정 규칙]**&#x200B;을 확장한 다음 파일 이름 지정 드롭다운 목록에서 사용자 지정 **[!UICONTROL 을 클릭합니다]**.
 
-1. 시퀀스 순서의 경우, 세트가 Dynamic Media로 그룹화된 후 이미지가 표시되는 순서를 정의합니다.
+1. 시퀀스 순서의 경우, 세트를 Dynamic Media으로 그룹화한 후 이미지가 표시되는 순서를 정의합니다.
 
    기본적으로 자산은 영숫자 순서가 지정됩니다. 그러나, 정규 표현식의 쉼표로 구분된 목록을 사용하여 순서를 정의할 수 있습니다.
 
-1. [이름 지정 및 생성 규칙 설정]에 [자산 이름 지정 규칙]에서 정의한 기본 이름에 접미사 또는 접두사를 지정합니다. 또한, Dynamic Media 폴더 구조 내에서 세트를 만들 위치를 정의합니다.
+1. [이름 지정 및 생성 규칙 설정]에 [자산 이름 지정 규칙]에서 정의한 기본 이름에 접미사 또는 접두사를 지정합니다. 또한 Dynamic Media 폴더 구조 내에서 세트를 만들 위치를 정의합니다.
 
    많은 수의 세트를 정의하는 경우 자산 자체가 포함된 폴더와 이러한 세트를 구분하도록 할 수 있습니다. 예를 들어 이미지 세트 폴더를 만들고 여기에 생성된 세트를 배치할 수 있습니다.
 
@@ -470,7 +470,7 @@ spin-01-01
 
 1. [이름 지정 및 생성 규칙 설정]에 [자산 이름 지정 규칙]에서 정의한 기본 이름에 접미사 또는 접두사를 지정합니다.
 
-   또한, Dynamic Media Classic 폴더 구조 내에서 스핀 세트를 만들 위치를 정의합니다.
+   또한 Dynamic Media Classic 폴더 구조 내에서 스핀 세트가 생성될 위치를 정의합니다.
 
    많은 수의 세트를 정의하는 경우 자산 자체가 포함된 폴더와 이러한 세트를 구분하도록 할 수 있습니다. 예를 들어, 여기서 생성된 세트를 배치할 회전 집합 폴더를 만듭니다.
 
@@ -479,14 +479,14 @@ spin-01-01
 
    사전 설정을 활성화하면 자산을 Dynamic Media에 업로드할 때 배치 세트 사전 설정이 적용되어 세트를 생성합니다.
 
-### (선택 사항) 다이내믹 미디어 성능 조정 - Scene7 모드 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (선택 사항) Dynamic Media 성능 조정 - Scene7 모드 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Dynamic Media - Scene7 모드가 원활하게 실행되도록 유지하려면 다음과 같은 동기화 성능/확장성 세부 조정 팁을 권장합니다.
+Dynamic Media 유지 - Scene7 모드가 원활하게 실행되도록 하려면 다음과 같은 동기화 성능/확장성 세부 조정 팁을 권장합니다.
 
 * 다양한 파일 형식을 처리하기 위해 사전 정의된 작업 매개 변수 업데이트
 * 미리 정의된 [granite workflow(비디오 에셋) 큐 작업자 스레드 업데이트
 * 미리 정의된 [화강암 임시 작업 과정(이미지 및 비비디오 자산) 큐 작업자 스레드를 업데이트합니다.
-* Dynamic Media Classic 서버에 대한 최대 업로드 연결 업데이트
+* Dynamic Media Classic 서버에 대한 최대 업로드 연결을 업데이트하는 중입니다.
 
 #### 다양한 파일 형식을 처리하기 위해 사전 정의된 작업 매개 변수 업데이트
 
@@ -500,7 +500,7 @@ PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정된&quot; 
 | Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-이러한 매개 변수를 업데이트하려면 MIME 유형 기반 자산/ [Dynamic Media Classic 업로드 작업 매개 변수 지원의 단계를 따릅니다](#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+이러한 매개 변수를 업데이트하려면 MIME 유형 기반 자산/Dynamic Media [Classic 업로드 작업 매개 변수 지원의 단계를 따르십시오](#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### [MOCK] Updating the Granite temporary workflow queue {#updating-the-granite-transient-workflow-queue}
 
@@ -518,7 +518,7 @@ PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정된&quot; 
 
    기본적으로 최대 병렬 작업 수는 사용 가능한 CPU 코어 수에 따라 달라집니다. 예를 들어 4코어 서버에서는 2개의 작업자 스레드를 할당합니다. (0.0과 1.0 사이의 값은 비율 기반이거나 1보다 큰 숫자는 작업자 스레드의 수를 지정합니다.)
 
-   Adobe에서는 Dynamic Media Classic(Scene7)에 **[!UICONTROL 대용량 파일 업로드를 지원하기 위해 32개의 최대 병렬 작업을]** 구성할 것을 권장합니다.
+   Adobe에서는 32 **[!UICONTROL 개의 최대 병렬 작업을]** Dynamic Media Classic(Scene7)에 대용량 파일 업로드를 적절히 지원하도록 구성할 것을 권장합니다.
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -526,7 +526,7 @@ PDF, Postscript 및 PSD 파일에 대해 다음과 같은 &quot;조정된&quot; 
 
 #### [MOCK] Updating the Granite workflow queue {#updating-the-granite-workflow-queue}
 
-[MOCK] The Granite Workflow queue is used for non-temporary workflows. Dynamic Media에서는 **[!UICONTROL 다이내믹 미디어 인코딩 비디오]** 워크플로우로 비디오를 처리했습니다.
+[MOCK] The Granite Workflow queue is used for non-temporary workflows. Dynamic Media에서는 비디오 인코딩 워크플로우로 비디오를 **[!UICONTROL 처리하곤]** 했습니다.
 
 **[MOCK] To update the Granite workflow queue**
 
@@ -555,9 +555,9 @@ Scene7 업로드 연결 설정은 AEM 자산을 Dynamic Media Classic 서버에 
 1. 다음으로 이동 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 연결 **[!UICONTROL 수]** 필드 및/또는 **[!UICONTROL 활성 작업 시간 초과]** 필드에서 원하는 대로 숫자를 변경합니다.
 
-   연결 **[!UICONTROL 수]** 설정은 AEM에서 Dynamic Media 업로드에 대해 허용되는 최대 HTTP 연결 수를 제어합니다. 일반적으로 사전 정의된 10개 연결 값이면 충분합니다.
+   연결 **[!UICONTROL 수]** 설정은 AEM에서 Dynamic Media 업로드에 허용되는 최대 HTTP 연결 수를 제어합니다. 일반적으로 사전 정의된 10개 연결 값이면 충분합니다.
 
-   [ **[!UICONTROL 활성 작업 시간 초과]** ] 설정은 업로드된 Dynamic Media 자산이 배달 서버에 게시되는 대기 시간을 결정합니다. 이 값은 기본적으로 2100초 또는 35분입니다.
+   [ **[!UICONTROL 활성 작업 시간 초과]** ] 설정은 업로드된 Dynamic Media 에셋이 배달 서버에 게시되는 대기 시간을 결정합니다. 이 값은 기본적으로 2100초 또는 35분입니다.
 
    대부분의 경우 2100으로 설정하면 충분합니다.
 
@@ -567,7 +567,7 @@ Scene7 업로드 연결 설정은 AEM 자산을 Dynamic Media Classic 서버에 
 
 ### (선택 사항) 복제용 자산 필터링 {#optional-filtering-assets-for-replication}
 
-비동적 미디어 배포에서는 AEM 작성 환경에서 *모든* 자산(이미지와 비디오 모두)을 AEM 게시 노드로 복제합니다. AEM 게시 서버도 자산을 제공하므로 이 워크플로우가 필요합니다.
+비Dynamic Media 배포에서는 AEM 작성 환경에서 *모든* 자산(이미지와 비디오 모두)을 AEM 게시 노드로 복제합니다. AEM 게시 서버도 자산을 제공하므로 이 워크플로우가 필요합니다.
 
 그러나 Dynamic Media 배포에서는 자산이 클라우드 서비스를 통해 전달되므로 이러한 동일한 자산을 AEM 게시 노드에 복제할 필요가 없습니다. 이러한 &quot;하이브리드 퍼블리싱&quot; 워크플로우는 에셋을 복제하는 데 필요한 추가 스토리지 비용과 더 긴 처리 시간을 방지합니다. 사이트 페이지와 같은 다른 컨텐츠는 AEM 게시 노드에서 계속 제공됩니다.
 
@@ -575,7 +575,7 @@ Scene7 업로드 연결 설정은 AEM 자산을 Dynamic Media Classic 서버에 
 
 #### 복제에 기본 자산 필터 사용 {#using-default-asset-filters-for-replication}
 
-이미징 및/또는 비디오에 Dynamic Media를 사용하는 경우 Adobe가 제공하는 기본 필터를 그대로 사용할 수 있습니다. 다음 필터는 기본적으로 활성화됩니다.
+이미징 및/또는 비디오에 Dynamic Media을 사용하는 경우 Adobe가 제공하는 기본 필터를 사용할 수 있습니다. 다음 필터는 기본적으로 활성화됩니다.
 
 <table>
  <tbody>
@@ -586,7 +586,7 @@ Scene7 업로드 연결 설정은 AEM 자산을 Dynamic Media Classic 서버에 
    <td><strong>표현물</strong></td>
   </tr>
   <tr>
-   <td>다이내믹 미디어 이미지 전달</td>
+   <td>Dynamic Media 이미지 배달</td>
    <td><p>필터 이미지</p> <p>필터 세트</p> <p> </p> </td>
    <td><p>이미지로 <strong>시작/</strong></p> <p>응용 프로그램/ <strong>응용 프로그램</strong> /를 포함하며 다음으로 <strong>끝납니다</strong>.</p> </td>
    <td>곧바로 사용할 수 있는 "필터 이미지"(대화형 이미지를 포함하여 단일 이미지 에셋에 적용) 및 "필터 세트"(스핀 세트, 이미지 세트, 혼합 미디어 집합 및 캐러셀 세트에 적용)는 다음과 같습니다.
@@ -595,7 +595,7 @@ Scene7 업로드 연결 설정은 AEM 자산을 Dynamic Media Classic 서버에 
     </ul> </td>
   </tr>
   <tr>
-   <td>다이내믹 미디어 비디오 전달</td>
+   <td>Dynamic Media 비디오 전달</td>
    <td>필터 비디오</td>
    <td>비디오로 <strong>시작/</strong></td>
    <td>곧바로 사용할 수 있는 "필터 비디오"는 다음과 같습니다.
