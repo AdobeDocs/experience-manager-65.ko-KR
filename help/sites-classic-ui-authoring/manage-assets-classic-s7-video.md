@@ -9,8 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
-translation-type: ht
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+translation-type: tm+mt
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '1741'
+ht-degree: 97%
 
 ---
 
@@ -94,18 +97,18 @@ Dynamic Media Classic에서 사전 설정이 업데이트되었기 때문에 AEM
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 
-### 마스터 비디오 업로드 {#uploading-your-master-video}
+### 기본 소스 비디오 업로드 {#uploading-your-master-video}
 
-Adobe DAM에서 Dynamic Media Classic으로 마스터 비디오를 업로드하려면:
+Adobe DAM에서 Dynamic Media Classic에 기본 소스 비디오를 업로드하려면:
 
 1. Dynamic Media Classic 인코딩 프로필을 사용하여 클라우드 구성을 설정한 CQ DAM 대상 폴더로 이동합니다.
-1. **[!UICONTROL 업로드]**&#x200B;를 클릭하여 마스터 비디오를 업로드합니다. [!UICONTROL DAM 자산 업데이트] 워크플로우가 완료되고 **[!UICONTROL Dynamic Media Classic에 게시]**&#x200B;가 선택되면 비디오 업로드 및 인코딩이 완료됩니다.
+1. 업로드를 **[!UICONTROL 클릭하여]** 기본 소스 비디오를 업로드합니다. [!UICONTROL DAM 자산 업데이트] 워크플로우가 완료되고 **[!UICONTROL Dynamic Media Classic에 게시]**&#x200B;가 선택되면 비디오 업로드 및 인코딩이 완료됩니다.
 
    >[!NOTE]
    >
    >비디오 썸네일을 생성하는 데 시간이 다소 걸릴 수 있습니다.
 
-   DAM 마스터 비디오를 비디오 구성 요소로 드래그하면 전달을 위해 Dynamic Media Classic의 *모든* 인코딩 프록시 표현물에 액세스할 수 있습니다.
+   Dragging the DAM primary source video on to the video component accesses *all* of the Dynamic Media Classic encoded proxy renditions for delivery.
 
 ### 기본 비디오 구성 요소와 Dynamic Media Classic 비디오 구성 요소 {#foundation-video-component-versus-scene-video-component}
 
