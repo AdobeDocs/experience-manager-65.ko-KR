@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
-translation-type: ht
-source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
 source-wordcount: '9241'
 ht-degree: 100%
 
@@ -40,6 +40,7 @@ WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사�
 >
 >* 자세한 내용은 [WCAG 2.0에 대한 빠른 안내](/help/managing/qg-wcag.md) 참조
 >* [액세스 가능한 컨텐츠를 만들려면 리치 텍스트 편집기 구성 참조](/help/sites-administering/rte-accessible-content.md)
+
 >
 
 
@@ -64,6 +65,7 @@ WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사�
 >
 >* [WCAG 2.0 지침](https://www.w3.org/TR/WCAG20/#guidelines)에 대해 간단한 이름을 사용합니다.
 >* WCAG 웹 사이트 상호 참조에 도움이 되도록 [WCAG 2.0 지침](https://www.w3.org/TR/WCAG20/#guidelines)에 사용되는 번호 지정 방법을 사용합니다.
+
 >
 
 
@@ -94,7 +96,7 @@ WCAG 2.0은 장애가 있는 사용자가 웹 컨텐츠를 액세스하여 사�
 
 >[!NOTE]
 >
->**회전판**&#x200B;이나 **Slideshow**&#x200B;처럼 기본적으로 제공되는 몇 가지 구성 요소에서는 이미지에 대체 텍스트 설명을 추가하는 수단을 제공하지 않습니다. AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt`[ 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>**회전판**&#x200B;이나 **Slideshow**&#x200B;처럼 기본적으로 제공되는 몇 가지 구성 요소에서는 이미지에 대체 텍스트 설명을 추가하는 수단을 제공하지 않습니다. AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt`[ 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 **이미지** 구성 요소 대화 상자의 **고급**&#x200B;이미지 속성 탭에서 **대체 텍스트**&#x200B;필드를 사용할 수 있습니다.
 
@@ -200,7 +202,7 @@ AEM에서는 기본적으로 이미지에 **대체 텍스트**&#x200B;를 추가
 
 [지침 1.2 시간 기반 미디어: 시간 기반 미디어에 대한 대체 요소를 제공합니다.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
-여기서는 *시간 기반*&#x200B;의 웹 컨텐츠를 다룹니다. 사용자가 재생할 수 있고(예: 비디오, 오디오 및 애니메이션 컨텐츠) 사전 녹화된 스트림이나 라이브 스트림일 수 있는 컨텐츠가 여기에 포함됩니다.
+여기서는 *시간 기반*&#x200B;의 웹 컨텐츠를 다룹니다.사용자가 재생할 수 있고(예: 비디오, 오디오 및 애니메이션 컨텐츠) 사전 녹화된 스트림이나 라이브 스트림일 수 있는 컨텐츠가 여기에 포함됩니다.
 
 ### 오디오 전용 및 비디오 전용(사전 녹화된)(1.2.1) {#audio-only-and-video-only-pre-recorded}
 
@@ -408,12 +410,14 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
    * 강조할 텍스트를 강조 표시합니다.
    * **속성** 패널에 표시된 **B** 아이콘(&lt;strong>에 대해)이나 **I** 아이콘(&lt;em>에 대해)을 클릭합니다(HTML이 선택되어 있는지 확인).
+
    >[!NOTE]
    >
    >표준 AEM 설치의 RTE는 다음을 사용하도록 설정되어 있습니다.
    >
    >* &lt;strong>에 대해 &lt;b>
    * &lt;em>에 대해 &lt;i>
+
    이러한 요소는 효과가 동일하지만 &lt;strong>과 &lt;em>이 의미상 올바른 html이므로 더 많이 사용합니다. 개발팀은 프로젝트 인스턴스를 개발할 때 &lt;strong>과 &lt;em>(&lt;b>와 &lt;i>대신)을 사용하도록 RTE를 구성할 수 있습니다.
 
 * **목록 사용**: HTML을 사용하여 세 가지 서로 다른 유형의 목록을 지정할 수 있습니다.
@@ -438,6 +442,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
    * 표의 각 행에 대한 `<tr>` 요소
    * 각 행 및 열 머리글에 대한 `<th>` 요소
    * 모든 데이터 셀에 대한 `<td>` 요소
+
    >[!NOTE]
    표는 **표** 구성 요소로 구현해야 합니다. 텍스트 구성 요소에서 표를 만들 수 있지만 권장되는 방법은 아닙니다.
 
@@ -446,13 +451,15 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
    * `<caption>` 요소를 사용하여 표에 보이는 캡션을 제공합니다. 캡션은 기본적으로 표의 위쪽 중앙에 나타나지만 CSS를 사용하여 위치를 적절하게 지정할 수 있습니다. 캡션은 표와 프로그래밍 방식으로 연결되어 있으므로 컨텐츠에 소개를 제공하는 데 유용한 방법입니다.
    * `<h3 class="summary">` 요소는 시력이 정상인 사용자가 볼 수 있는 내용에 대한 개요를 제공함으로써, 안 보이는 사용자가 표 내에 제시된 정보를 더 쉽게 이해할 수 있도록 도와줍니다. 이 요소는 복잡하거나 색다른 표 레이아웃을 사용할 때 유용합니다(이 속성은 브라우저에 표시되지 않고 보조 기술에만 인식됨).
    * `<th>` 요소의 `scope` 특성은 셀이 특정 행 또는 특정 열에 대한 헤더를 표현하는지 여부를 나타내기 위해 사용됩니다. 유사한 접근 방법은 복잡한 표에서 헤더와 id 속성을 사용하는 것입니다. 이 경우 데이터 셀이 하나 이상의 헤더와 연결되어 있을 수 있습니다.
+
    >[!NOTE]
-   시스템 관리자가 **표 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+   시스템 관리자가 **표 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
    **표**&#x200B;를 추가할 때 이 대화 상자를 사용하여 **표 속성**&#x200B;을 구성할 수 있습니다.
 
    * 적절한 **캡션**
    * **폭**, **높이**, **테두리**, **셀 패딩**, **셀 간격** 속성은 전역 스타일 시트에서 설정할 수 있으므로 이러한 속성의 기본값 중 어느 것이든 얼마든지 제거하십시오.
+
    ![표 속성 대화 상자](assets/chlimage_1-20a.png)
 
    그런 다음 **셀 속성**&#x200B;을 사용하여 셀이 데이터인지 헤더 셀인지를 선택하고, 헤더 셀인 경우 이 셀이 행과 관련되는지, 열과 관련되는지, 아니면 열과 행 둘 다에 관련되는지를 선택할 수 있습니다.
@@ -887,7 +894,7 @@ AEM에서는 페이지를 생성할 때 페이지의 기본 언어가 설정되�
 >[!NOTE]
 이름이나 도시를 서로 다른 언어로 포함할 때 또는 기본 언어에서 흔하게 사용하게 된 외래나 구(예: 영어의 *schadenfreude*)를 사용할 때에는 이 성공 기준을 따를 필요가 없습니다.
 
-적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. 또는 시스템 관리자가 `lang`[ 특성을 RTE에 포함할 수 있습니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. 또는 시스템 관리자가 `lang`[ 특성을 RTE에 포함할 수 있습니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### 추가 정보 - 부분 언어(3.1.2) {#more-information-language-of-parts}
 
@@ -928,7 +935,7 @@ AEM에서 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페이�
 
 ![라디오 그룹에 항목 추가. 그룹 제목은 제목 필드에 정의된 &#39;Contact me by&#39;입니다.](assets/chlimage_1-24a.png)
 
-하지만 그룹 제목과 라디오 단추 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔을 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+하지만 그룹 제목과 라디오 단추 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔을 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### 양식에 대한 추가 고려 사항 {#additional-considerations-for-forms}
 
