@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager용 액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성)
 description: AEM을 사용하여 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련
-translation-type: ht
-source-git-commit: cb7df7301364eb1ce3a1ca376256d2cd5afcb2c8
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
 source-wordcount: '13956'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ ht-degree: 100%
 >
 >전체 구성 요소에 대해 **[레이블](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)**필드(**액세서빌러티&#x200B;**탭)가 있더라도**회전 슬라이드&#x200B;**등의 바로 사용 가능한 일부 핵심 구성 요소는 개별 이미지에 대체 텍스트 설명을 추가하기 위해**[대체 텍스트](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** 필드를 제공하지 않습니다.
 >
->AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt`[ 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt`[ 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 AEM을 사용하려면 기본적으로 **대체 텍스트** 필드를 채워야 합니다. 이미지가 단순한 장식용이고 대체 텍스트가 필요 없는 경우 **이미지가 장식용임** 옵션을 선택할 수 있습니다.
 
@@ -319,6 +319,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 * **목록**: HTML을 사용하여 세 가지 서로 다른 유형의 목록을 지정할 수 있습니다.
    * `<ul>` 요소는 *무순서*(글머리 기호) 목록에 사용됩니다. 개별 목록 항목이 `<li>` 요소를 사용하여 식별됩니다. RTE에서는 **글머리 기호 목록** 아이콘을 사용하십시오.
    * `<ol>` 요소는 *번호* 목록에 사용됩니다. 개별 목록 항목이 `<li>` 요소를 사용하여 식별됩니다. RTE에서는 **번호 목록** 아이콘을 사용하십시오.
+
    기존 컨텐츠를 특정 목록 유형으로 변경하려면, 적절한 텍스트를 강조 표시하고 적절한 목록 유형을 선택하십시오. 단락 텍스트가 어떻게 입력되는지를 보여주는 앞의 예에서처럼, 적절한 목록 요소가 HTML에 자동으로 추가됩니다.
 
    전체 화면 모드에서는 개별 **글머리 기호 목록** 및 **번호 목록** 아이콘이 표시됩니다. 전체 화면 모드가 아닐 때는 단일 **목록** 아이콘 뒤에서 두 가지 옵션을 사용할 수 있습니다.
@@ -328,19 +329,22 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
    * 표의 각 행에 대한 `<tr>` 요소
    * 각 행 및 열 머리글에 대한 `<th>` 요소
    * 모든 데이터 셀에 대한 `<td>` 요소
+
    또한 액세스 가능한 표에서는 다음 요소와 속성을 사용합니다.
 
    * `<caption>` 요소를 사용하여 표에 보이는 캡션을 제공합니다. 캡션은 기본적으로 표의 위쪽 중앙에 나타나지만 CSS를 사용하여 위치를 적절하게 지정할 수 있습니다. 캡션은 표와 프로그래밍 방식으로 연결되어 있으므로 컨텐츠에 소개를 제공하는 데 유용한 방법입니다.
    * `<summary>` 요소는 시력이 정상인 사용자가 볼 수 있는 내용에 대한 개요를 제공함으로써, 안 보이는 사용자가 표 내에 제시된 정보를 더 쉽게 이해할 수 있도록 도와줍니다. 이 요소는 복잡하거나 색다른 표 레이아웃을 사용할 때 유용합니다(이 속성은 브라우저에 표시되지 않고 보조 기술에만 인식됨).
    * `<th>` 요소의 `scope` 특성은 셀이 특정 행 또는 특정 열에 대한 헤더를 표현하는지 여부를 나타내기 위해 사용됩니다. 유사한 접근 방법은 복잡한 표에서 헤더와 id 속성을 사용하는 것입니다. 이 경우 데이터 셀이 하나 이상의 헤더와 연결되어 있을 수 있습니다.
+
    >[!NOTE]
    >
-   >시스템 관리자가 **표 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
+   >시스템 관리자가 **표 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
    **표 속성** 탭을 선택할 수 있는 **표** 대화 상자를 열려면:
 
    * 적합한 **캡션**&#x200B;을 정의합니다.
    * **폭**, **높이**, **테두리**, **셀 패딩**, **셀 간격** 속성은 전역 스타일 시트에서 설정할 수 있으므로 이러한 속성의 기본값 중 어느 것이든 얼마든지 제거하십시오.
+
    그런 다음 **셀 속성**&#x200B;을 사용하여 셀이 데이터인지 또는 머리글 셀인지 여부를 선택할 수 있습니다.
 
 * **강조**: 강조를 나타내려면 `<strong>` 또는 `<em>` 요소를 사용합니다. 머리글을 사용하여 단락 내 텍스트를 강조 표시하지 마십시오.
@@ -353,6 +357,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
       >
       >* `<b>` 대상 `<strong>`
       >* `<i>` 대상 `<em>`
+
       >
       >이러한 요소는 효과가 동일하지만 `<strong>`과 `<em>`이 의미상 올바른 html이므로 더 많이 사용합니다. 개발팀은 프로젝트 인스턴스를 개발할 때 `<strong>`과 `<em>`(`<b>`와 `<i>` 대신)을 사용하도록 RTE를 구성할 수 있습니다.
 
@@ -524,6 +529,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
    * 큰 텍스트: 대규모 텍스트와 대규모 텍스트 이미지에는 최소 3:1의 대비율이 있습니다.
    * 부수적: 비활성 사용자 인터페이스 구성 요소에 속하거나, [순수 장식](https://www.w3.org/TR/WCAG/#dfn-pure-decoration)이거나, 아무도 볼 수 없거나, 상당한 다른 시각적 컨텐츠를 포함하는 사진에 속하는 텍스트나 텍스트 이미지에는 대비 요구 사항이 없습니다.
    * 로고: 로고나 브랜드 이름에 속하는 텍스트에는 최소 대비 요구 사항이 없습니다.
+
    >[!NOTE]
    >
    >자세한 내용은 [텍스트가 아닌 대비 이해](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)를 참조하십시오. 컨텐츠 작성자가 텍스트가 아닌 요소(아이콘, 인터페이스 요소 등)에 대한 추가 요구 사항을 이해할 수 있습니다.
@@ -1031,7 +1037,7 @@ AEM에서 페이지의 기본 언어는 페이지를 만들 때 설정되지만,
 >
 >이름이나 도시를 서로 다른 언어로 포함할 때 또는 기본 언어에서 흔하게 사용하게 된 외래나 구(예: 영어의 *schadenfreude*)를 사용할 때에는 이 성공 기준을 따를 필요가 없습니다.
 
-적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. 또는 시스템 관리자가 `lang`[ 특성을 RTE에 포함할 수 있습니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+적절한 언어를 사용하여 span 요소를 추가하려면 위와 같이 읽을 수 있도록 RTE의 소스 편집 모드에서 HTML 마크업을 수동으로 편집할 수 있습니다. 또는 시스템 관리자가 `lang`[ 특성을 RTE에 포함할 수 있습니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### 추가 정보 - 부분 언어(3.1.2) {#more-information-language-of-parts}
 
@@ -1195,7 +1201,7 @@ AEM WKND에서 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 �
 
 WKND 프로젝트에서 **라디오 그룹**&#x200B;과 같은 관련 컨트롤 그룹이 있으면 개별 컨트롤 뿐만 아니라 그룹에도 제목이 필요할 수 있습니다. 라디오 단추(**항목**)가 생성될 때 개별 제목이 지정되는 반면, AEM에서 라디오 단추 집합을 추가하면 **제목** 필드가 이 그룹 제목을 제공합니다.
 
-하지만 그룹 제목과 라디오 단추 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔을 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+하지만 그룹 제목과 라디오 단추 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이러한 연결을 만들어야 하며, 이 작업은 페이지 소스 콘솔을 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 ###### 양식에 대한 추가 고려 사항 {#additional-considerations-for-forms}
 
