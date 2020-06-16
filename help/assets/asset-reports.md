@@ -1,11 +1,11 @@
 ---
-title: 디지털 자산에 대한 보고서
-description: 디지털 자산의 사용, 활동 및 공유를 이해하는 데 도움이 되는 Adobe Experience Manager Assets의 자산에 대한 보고서를 파악합니다.
+title: 디지털 자산의 사용 및 공유에 대한 보고서
+description: 디지털 자산의 사용, 활동 [!DNL Adobe Experience Manager Assets] 및 공유를 이해하는 데 도움이 되는 자산에 대한 보고서입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2faf210d4177d6b2e29795b5668f8199816097eb
+source-git-commit: bc08b0039f8be92a7638245b1770c2ad21503f63
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1013'
 ht-degree: 2%
 
 ---
@@ -13,33 +13,42 @@ ht-degree: 2%
 
 # 자산 보고서 {#asset-reports}
 
-자산 보고는 Adobe Experience Manager 자산 배포의 유용성을 평가하는 주요 도구입니다. 자산을 사용하여 디지털 자산에 대한 다양한 보고서를 생성할 수 있습니다. 이 보고서에서는 시스템 사용량, 사용자가 자산과 상호 작용하는 방법, 다운로드 및 공유되는 자산에 대한 유용한 정보를 제공합니다.
+자산 보고를 사용하면 배포의 유용성을 평가할 수 [!DNL Adobe Experience Manager Assets] 있습니다. 를 [!DNL Assets]사용하면 디지털 자산에 대한 다양한 보고서를 생성할 수 있습니다. 이 보고서에서는 시스템 사용량, 사용자가 자산과 상호 작용하는 방법, 다운로드 및 공유되는 자산에 대한 유용한 정보를 제공합니다.
 
-보고서의 정보를 사용하여 주요 성공 지표를 추출하여 기업 내 및 고객별 자산의 채택을 측정합니다.
+보고서의 정보를 사용하여 주요 성공 지표를 추출하여 기업 내 및 고객별 [!DNL Assets] 채택을 측정합니다.
 
-자산 보고 프레임워크는 Sling 작업을 사용하여 보고서 요청을 정렬된 방식으로 비동기식으로 처리합니다. 대형 저장소에 맞게 확장 가능합니다. 비동기 보고서 처리는 보고서가 생성되는 효율성과 속도를 높입니다.
+보고 [!DNL Assets] 프레임워크는 [!DNL Sling] 작업을 사용하여 보고서 요청을 정렬된 방식으로 비동기식으로 처리합니다. 대형 저장소에 맞게 확장 가능합니다. 비동기 보고서 처리는 보고서가 생성되는 효율성과 속도를 높입니다.
 
 보고서 관리 인터페이스는 직관적이며, 보관된 보고서에 액세스하고 보고서 실행 상태(성공, 실패 및 큐에 있음)를 볼 수 있도록 세부적으로 분류된 옵션과 컨트롤을 포함합니다.
 
 보고서가 생성되면 이메일(선택 사항) 및 받은 편지함 알림을 통해 사용자에게 알립니다. 이전에 생성된 모든 보고서가 표시되는 보고서 목록 페이지에서 보고서를 보거나, 다운로드하거나, 삭제할 수 있습니다.
 
+## 전제 조건 {#prerequisite-for-reporting}
+
+보고서를 생성하려면 다음을 확인하십시오.
+
+* 도구 [!UICONTROL >] 작업 **[!UICONTROL >]** 웹 콘솔 레코더 **[!UICONTROL 에서]** 일 CQ DAM 이벤트 **[!UICONTROL 서비스를]**&#x200B;활성화합니다.
+* 보고할 활동 또는 이벤트를 선택합니다. 예를 들어, 다운로드된 자산에 대한 보고서를 생성하려면 다운로드된 [!UICONTROL 자산(다운로드됨)을 선택합니다].
+
+![웹 콘솔에서 자산 보고 활성화](assets/reports-config-day-cq-dam-event-recorder.png)
+
 ## 보고서 생성 {#generate-reports}
 
-Adobe Experience Manager Assets는 다음과 같은 표준 보고서를 생성합니다.
+[!DNL Experience Manager Assets] 다음과 같은 표준 보고서를 생성합니다.
 
 * 업로드
 * 다운로드
 * 만료
 * 수정
 * 게시
-* 브랜드 포털 게시
+* [!DNL Brand Portal] 페이지를
 * 디스크 사용량
 * 파일
 * 공유 링크
 
 [!DNL Adobe Experience Manager] 관리자는 구현을 위해 이러한 보고서를 쉽게 생성하고 사용자 정의할 수 있습니다. 관리자는 다음 단계에 따라 보고서를 생성할 수 있습니다.
 
-1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 자산 **[!UICONTROL > 보고서]** 를 **[!UICONTROL 클릭합니다]**.
+1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL >]** 자산 **[!UICONTROL > 보고서]** 를 **[!UICONTROL 클릭합니다]**.
 
 ![자산 보고서를 탐색하는 도구 페이지](assets/AssetsReportNavigation.png)
 
@@ -47,10 +56,6 @@ Adobe Experience Manager Assets는 다음과 같은 표준 보고서를 생성�
 1. 보고서 **[!UICONTROL 만들기]** 페이지에서 만들 보고서를 선택하고 다음을 **[!UICONTROL 클릭합니다]**.
 
    ![보고서 유형 선택](assets/choose_report.png)
-
-   >[!NOTE]
-   >
-   >다운로드한 **[!UICONTROL 자산]** 보고서를 생성하려면 먼저 자산 다운로드 서비스가 활성화되어 있는지 확인하십시오. 웹 콘솔(`https://[aem_server]:[port]/system/console/configMgr`)에서 **[!UICONTROL 일 CQ DAM 이벤트 레코더]** 구성을 열고 이벤트 유형 **[!UICONTROL 에서 아직 선택되지 않은 경우 자산 다운로드(DOWNLOADED)]** 옵션을 선택합니다.
 
    >[!NOTE]
    >
@@ -80,7 +85,7 @@ Adobe Experience Manager Assets는 다음과 같은 표준 보고서를 생성�
 
    ![파일 보고서의 세부 정보 페이지](assets/files_report.png)
 
-   링크 **[!UICONTROL 공유]** 보고서는 자산 내에서 외부 사용자와 공유되는 자산에 대한 URL을 표시합니다. 여기에는 자산을 공유한 사용자의 이메일 ID, 자산이 공유되는 사용자의 이메일 ID, 링크에 대한 공유 날짜 및 만료 날짜가 포함됩니다. 열을 사용자 지정할 수 없습니다.
+   링크 **[!UICONTROL 공유]** 보고서에는 내부 외부 사용자와 공유된 자산의 URL이 [!DNL Assets]표시됩니다. 여기에는 자산을 공유한 사용자의 이메일 ID, 자산이 공유되는 사용자의 이메일 ID, 링크에 대한 공유 날짜 및 만료 날짜가 포함됩니다. 열을 사용자 지정할 수 없습니다.
 
    링크 **[!UICONTROL 공유]** 보고서는 하위 폴더 및 변환에 대한 옵션을 포함하지 않습니다. 하위 폴더 및 변환은 아래에 표시되는 공유 URL만 게시하기 때문입니다 `/var/dam/share`.
 
@@ -92,12 +97,12 @@ Adobe Experience Manager Assets는 다음과 같은 표준 보고서를 생성�
 
    ![보고서 열 선택 또는 선택 취소](assets/configure_columns.png)
 
-   사용자 지정 열 이름 또는 속성 경로를 표시하려면 CRX의 jcr:content 노드 아래에 자산 바이너리에 대한 속성을 구성합니다. 또는 속성 경로 선택기를 통해 추가합니다.
+   사용자 지정 열 이름 또는 속성 경로를 표시하려면 CRX의 노드 아래에 있는 자산 바이너리에 대한 속성을 `jcr:content` 구성합니다. 또는 속성 경로 선택기를 통해 추가합니다.
 
    ![보고서 열 선택 또는 선택 취소](assets/custom_columns.png)
 
 1. 도구 **[!UICONTROL 모음에서]** 만들기를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
-1. 자산 보고서 페이지에서 보고서 생성 상태는 보고서 작업의 현재 상태를 기반으로 합니다(예: 성공, 실패, 대기 중 또는 예약됨). 동일한 상태가 알림 받은 편지함에 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 도구 모음에서 **[!UICONTROL 보기를]** 클릭합니다.
+1. [ [!UICONTROL 자산 보고서] ] 페이지에서 보고서 생성 상태는 보고서 작업의 현재 상태(예: [!UICONTROL 성공], [!UICONTROL 실패], 큐에 [!UICONTROL 있는 작업, 또는 예약된Facebook]으로 예약된Facebook )를 기반으로 합니다. 동일한 상태가 알림 받은 편지함에 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 도구 모음에서 **[!UICONTROL 보기를]** 클릭합니다.
 
    ![생성된 보고서](assets/report_page.png)
 
@@ -112,12 +117,12 @@ Adobe Experience Manager Assets는 다음과 같은 표준 보고서를 생성�
 * 만료
 * 수정
 * 게시
-* 브랜드 포털 게시
+* [!DNL Brand Portal] 페이지를
 * 파일
 
 이러한 보고서에 사용자 지정 열을 추가하려면 다음 단계를 따르십시오.
 
-1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 자산 **[!UICONTROL > 보고서]** 를 **[!UICONTROL 클릭합니다]**.
+1. 에서 [!DNL Manager interface]도구 **[!UICONTROL >]** 자산 **** > 보고서 **[!UICONTROL 를]**&#x200B;클릭합니다.
 1. 자산 [!UICONTROL 보고서] 페이지의 도구 모음에서 **[!UICONTROL 만들기를]** 클릭합니다.
 
 1. 보고서 **[!UICONTROL 만들기]** 페이지에서 만들 보고서를 선택하고 다음을 **[!UICONTROL 클릭합니다]**.
