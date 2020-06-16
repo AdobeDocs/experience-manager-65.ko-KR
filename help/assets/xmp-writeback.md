@@ -3,7 +3,7 @@ title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능을 사용하여 자산의 메타데이터 변경 내용을 자산의 모든 표현물 또는 특정 표현물에 전달하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 711cd438cc8962d310bb2bfbb14f079161aacce0
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 2%
@@ -52,9 +52,9 @@ XMP 원본에 대한 기능이 변환 축소판 140.100.png 및 319.319.png에 �
    ![step_properties](assets/step_properties.png)
 
 1. 변경 사항을 저장합니다.
-1. 새로운 속성을 사용하여 이미지의 피라미드형 TIFF 표현물을 재생성하려면 [!DNL Dynamic Media] DAM 메타데이터 작성 **[!UICONTROL 워크플로우에]** 다이내믹 미디어 프로세스 이미지 자산 [!UICONTROL 단계를] 추가하십시오.
+1. 새로운 속성을 사용하여 이미지에 대한 피라미드형 TIFF 표현물을 재생성하려면 [!DNL Dynamic Media] Dynamic Media 처리 이미지 자산 **[!UICONTROL 단계를]** DAM 메타데이터 쓰기 [!UICONTROL 작업 과정에] 추가하십시오.
 
-   PTIFF 변환은 Dynamic Media Hybrid 구현에서만 로컬로 만들어지고 저장됩니다.
+   PTIFF 변환은 Dynamic Media 하이브리드 구현에서만 로컬에 만들어지고 저장됩니다.
 
 1. 워크플로우를 저장합니다.
 
@@ -76,7 +76,7 @@ XMP 원본에 대한 기능이 변환 축소판 140.100.png 및 319.319.png에 �
 
 >[!NOTE]
 >
->필터링은 자산 바이너리의 XMP 소스에서 파생된 속성에만 작동합니다. EXIF 및 IPTC 포맷과 같이 XMP 이외의 소스에서 파생된 속성의 경우 필터링이 작동하지 않습니다. 예를 들어 에셋 작성 날짜는 EXIF TIFF에 명명된 속성 `CreateDate` 에 저장됩니다. Adobe Experience Manager는 이 값을 `exif:DateTimeOriginal` 소스는 XMP가 아닌 소스이므로 이 속성에서 필터링이 작업이 수행되지 않습니다.
+>필터링은 자산 바이너리의 XMP 소스에서 파생된 속성에만 작동합니다. EXIF 및 IPTC 포맷과 같이 XMP 이외의 소스에서 파생된 속성의 경우 필터링이 작동하지 않습니다. 예를 들어 에셋 작성 날짜는 EXIF TIFF에 명명된 속성 `CreateDate` 에 저장됩니다. Experience Manager은 이 값을 이름이 지정된 메타데이터 필드에 저장합니다 `exif:DateTimeOriginal`. 소스는 XMP가 아닌 소스이므로 이 속성에서 필터링이 작업이 수행되지 않습니다.
 
 <!-- TBD: The instructions don't seem to match the UI. I see com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.description
 in Config Manager. And the settings are,
@@ -90,14 +90,14 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 1. 구성 관리자를 열려면 액세스 `https://[aem_server]:[port]/system/console/configMgr`를 참조하십시오.
 1. Adobe **[!UICONTROL CQ DAM XmpFilter 구성을]** 엽니다.
-1. 허용된 목록을 통해 필터링을 적용하려면 **[!UICONTROL XMP 속성에 허용 목록]**&#x200B;적용을 선택하고 XMP 필터링을 위한 **[!UICONTROL 허용 목록 XML 이름 상자에 가져올 속성을]** 지정합니다.
+1. 허용된 목록을 통해 필터링을 적용하려면 [XMP 속성에 **[!UICONTROL 허용 목록 적용]**]을 선택하고 [XMP 필터링에 대해 **[!UICONTROL 허용되는 XML 이름]** ] 상자에서 가져올 속성을 지정합니다.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. 허용되는 목록을 통해 필터링을 적용한 후 차단된 XMP 속성을 필터링하려면 XMP 필터링을 위해 블랙리스트에 추가된 **[!UICONTROL XML 이름 상자에 해당 속성을]** 지정합니다.
+1. 허용된 목록을 통한 필터링을 적용한 후 차단된 XMP 속성을 필터링하려면 [XMP 필터링을 위한 **[!UICONTROL 차단된 XML 이름] 상자에 해당 속성을]** 지정합니다.
 
    >[!NOTE]
    >
-   >[ **[!UICONTROL XMP 속성에 블랙 리스트 적용]** ] 옵션이 기본적으로 선택되어 있습니다. 즉, 차단된 목록을 사용한 필터링은 기본적으로 활성화됩니다. 이러한 필터링을 비활성화하려면 [XMP 속성에 **[!UICONTROL 블랙 리스트 적용] 옵션을 선택]** 취소합니다.
+   >기본적으로 **[!UICONTROL XMP 속성에 블록 목록]** 적용 옵션이 선택되어 있습니다. 즉, 차단된 목록을 사용한 필터링은 기본적으로 활성화됩니다. 이러한 필터링을 비활성화하려면 [XMP 속성에 **[!UICONTROL 블록 목록 적용] 옵션을 선택]** 취소합니다.
 
 1. 변경 사항을 저장합니다.
