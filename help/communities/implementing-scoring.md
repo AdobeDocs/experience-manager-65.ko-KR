@@ -1,8 +1,8 @@
 ---
 title: 커뮤니티 점수 및 배지
 seo-title: 커뮤니티 점수 및 배지
-description: AEM Communities 점수 및 배지를 사용하여 커뮤니티 구성원을 식별하고 포상할 수 있습니다
-seo-description: AEM Communities 점수 및 배지를 사용하여 커뮤니티 구성원을 식별하고 포상할 수 있습니다
+description: AEM Communities 채점 및 배지를 사용하면 커뮤니티 구성원을 식별하고 포상할 수 있습니다
+seo-description: AEM Communities 채점 및 배지를 사용하면 커뮤니티 구성원을 식별하고 포상할 수 있습니다
 uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '2897'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## 개요 {#overview}
 
-AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하고 보상하는 기능을 제공합니다.
+AEM Communities 채점 및 배지 기능을 사용하면 커뮤니티 구성원을 식별하고 보상할 수 있습니다.
 
 점수 및 배지의 주요 특징은 다음과 같다.
 
@@ -65,15 +65,12 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 이번 릴리스에는 세 가지 역할 기반 배지가 포함되어 있습니다.
 
 * **중재자**
-
    `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **그룹 관리자**
-
    `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **권한 있는 멤버**
-
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
@@ -90,15 +87,12 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 이번 릴리스에는 세 개의 보상 기반 배지가 포함되어 있습니다.
 
 * **금**
-
    `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **은**
-
    `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **청동**
-
    `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
@@ -355,7 +349,7 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
      <li>number = 점수</li>
      <li>| = 세로 줄 문자(U+007C)</li>
      <li>path = 배지 이미지 리소스에 대한 전체 경로</li>
-    </ul> 숫자가 값을 늘리고 숫자와 경로 사이에 공백은 나타나지 않도록 문자열을 정렬해야 합니다.<br /> 응모 예:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> 숫자가 값을 늘리고 숫자와 경로 사이에 빈 공백이 없어야 하도록 문자열을 정렬해야 합니다.<br /> 응모 예:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -415,7 +409,6 @@ cURL -i -X POST -H *header**-u* signin *-F* operation ** -F *badgeFMember-profil
 >
 >* 터널 서비스가 활성화된 경우 [작성자 인스턴스를 참조할](/help/communities/users.md#tunnel-service) 수 있습니다.
 >* 잘 알려지지 않은 임의 이름일 수 있습니다. 권한 부여 가능한 ID에 대한 [보안 체크리스트를](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) 참조하십시오.
-
 >
 
 
