@@ -3,9 +3,9 @@ title: 디지털 자산을 다운로드할 수 [!DNL Adobe Experience Manager]�
 description: 다운로드 기능을 활성화하거나 비활성화하는 방법 [!DNL Adobe Experience Manager] 을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 527b2f50efac606a0a696c8f56b0d725f79cd692
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '796'
 ht-degree: 3%
 
 ---
@@ -19,27 +19,32 @@ ht-degree: 3%
 >
 >이메일 수신자는 이메일 메시지의 ZIP 다운로드 링크에 액세스하려면 `dam-users` 그룹의 구성원이어야 합니다. 자산을 다운로드할 수 있으려면 멤버는 에셋 다운로드를 트리거하는 워크플로우를 시작할 수 있는 권한이 있어야 합니다.
 
-자산을 다운로드하려면 자산으로 이동하고 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 다운로드를]** 클릭합니다. 결과 대화 상자에서 다운로드 옵션을 지정합니다.
-
 자산 유형 이미지 세트, 스핀 세트, 혼합 미디어 세트 및 회전판 세트는 다운로드할 수 없습니다.
 
-![Adobe Experience Manager Assets에서 자산을 다운로드할 때 사용 가능한 옵션](assets/asset_download_dialog.png)
+**자산을 다운로드하려면**
 
-*그림: 자산을 다운로드할 때 사용할 수 있는 옵션[!DNL Experience Manager Assets].*
+1. AEM의 왼쪽 위에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 탐색]** (나침반 아이콘)을 누릅니다.
+1. 탐색 페이지에서 **[!UICONTROL 자산 > 파일을 누릅니다]**.
+1. 다운로드할 자산이 들어 있는 폴더로 이동합니다.
+1. 폴더를 선택하거나 폴더 내에서 하나 이상의 자산을 선택합니다.
+1. 도구 모음에서 다운로드를 **[!UICONTROL 누릅니다]**.
 
-다음은 사용 가능한 내보내기 또는 다운로드 옵션입니다. 동적 표현물은 [!DNL Dynamic Media] 제공할 수 있습니다. 이 옵션을 사용하면 선택한 자산 외에 새 표현물을 실시간으로 생성할 수 있습니다. 이 옵션은 활성화된 경우에만 사용할 수 [!DNL Dynamic Media] 있습니다.
+   ![Experience Manager 자산에서 자산을 다운로드할 때 사용 가능한 옵션](/help/assets/assets/asset-download.png)
 
-| 내보내기 또는 다운로드 옵션 | 설명 |
-|---|---|
-| [!UICONTROL 자산] | 변환 없이 자산을 원래 형식으로 다운로드하려면 옵션을 선택합니다. |
-| [!UICONTROL 표현물] | 표현물은 자산의 이진 표현입니다. 자산에는 업로드된 파일의 기본 표현이 있습니다. 그들은 어떤 수의 진술도 가질 수 있다. <br> 이 옵션을 사용하여 다운로드할 변환을 선택할 수 있습니다. 사용할 수 있는 변환은 선택한 자산에 따라 다릅니다. |
-| [!UICONTROL 동적 표현물] | 동적 표현물은 다른 표현물을 실시간으로 생성합니다. 이 옵션을 선택할 때 [이미지 사전 설정](image-presets.md) 목록에서 선택하여 동적으로 만들 표현물도 선택할 수 있습니다. <br>또한 측정 크기 및 단위, 형식, 색상 공간, 해상도 및 이미지 수정자(예: 이미지 반전) 선택 |
-| [!UICONTROL 이메일] | 사용자에게 이메일 알림이 전송됩니다. 표준 이메일 템플릿은 다음 위치에서 사용할 수 있습니다.<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 배포 중에 사용자 지정하는 템플릿은 다음 위치에 있어야 합니다. <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>다음 위치에 임차인별 사용자 지정 템플릿을 저장할 수 있습니다.<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
-| [!UICONTROL 각 자산에 대해 별도의 폴더 만들기] | 자산을 다운로드할 때 폴더 계층을 유지하려면 옵션을 선택합니다. 기본적으로 폴더 계층은 무시되며 모든 자산은 로컬 파일 시스템의 한 폴더에 다운로드됩니다. |
+   *다운로드 대화 상자 옵션.*
 
-자산에 변환이 있는 경우 변환 옵션을 사용할 수 있습니다. 원본 자산에 하위 자산이 있는 경우 하위 자산 옵션을 사용할 수 있습니다.
+1. 다운로드 대화 상자에서 원하는 다운로드 옵션을 선택합니다.
 
-다운로드할 폴더를 선택하면 폴더 아래의 전체 자산 계층 구조가 다운로드됩니다. 다운로드한 각 자산(상위 폴더 아래에 중첩된 하위 폴더의 자산 포함)을 개별 폴더에 포함하려면 각 자산에 대해 **[!UICONTROL 별도의 폴더 만들기를 선택합니다]**.
+   | 다운로드 옵션 | 설명 |
+   |---|---|
+   | **[!UICONTROL 각 자산에 대해 별도의 폴더 만들기]** | 다운로드한 각 자산을 로컬 컴퓨터의 한 폴더에 자산의 상위 폴더 아래에 중첩된 하위 폴더에 포함시키려면 이 옵션을 선택합니다. 이 옵션을 선택하지 *않으면* 기본적으로 폴더 계층은 무시되고 모든 에셋이 로컬 컴퓨터의 한 폴더에 다운로드됩니다. |
+   | **[!UICONTROL 이메일]** | 수신자에게 이메일 알림을 보내려면 이 옵션을 선택합니다. 표준 이메일 템플릿은 다음 위치에서 사용할 수 있습니다.<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 배포 시 사용자 지정하는 템플릿은 다음 위치에서 사용할 수 있습니다. <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>다음 위치에 임차인별 사용자 지정 템플릿을 저장할 수 있습니다.<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL 자산]** | 표현물 없이 자산을 원래 형식으로 다운로드하려면 이 옵션을 선택합니다.<br>원본 자산에 하위 자산이 있는 경우 하위 자산 옵션을 사용할 수 있습니다. |
+   | **[!UICONTROL 표현물]** | 표현물은 자산의 이진 표현입니다. 자산에는 업로드된 파일의 기본 표현이 있습니다. 그들은 어떤 수의 진술도 가질 수 있다. <br> 이 옵션을 사용하여 다운로드할 변환을 선택할 수 있습니다. 사용할 수 있는 변환은 선택한 자산에 따라 다릅니다. |
+   | **[!UICONTROL 스마트 자르기]** | AEM 내에서 선택한 자산의 모든 스마트 자르기 변환을 다운로드하려면 이 옵션을 선택합니다. 스마트 자르기 변환이 있는 zip 파일이 만들어지고 로컬 컴퓨터에 다운로드됩니다. |
+   | **[!UICONTROL 동적 표현물]** | 일련의 대체 표현물을 실시간으로 생성하려면 이 옵션을 선택합니다. 이 옵션을 선택할 때 [이미지 사전 설정](image-presets.md) 목록에서 선택하여 동적으로 만들 표현물도 선택할 수 있습니다. <br>또한 측정 크기 및 단위, 형식, 색상 공간, 해상도 및 이미지 반전 등의 선택적 이미지 수정자를 선택할 수 있습니다. 이 옵션은 활성화된 경우에만 사용할 수 [!DNL Dynamic Media] 있습니다. |
+
+1. 대화 상자에서 다운로드를 **[!UICONTROL 누릅니다]**.
 
 ## 자산 다운로드 서블릿 활성화 {#enable-asset-download-servlet}
 
