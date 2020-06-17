@@ -3,7 +3,7 @@ title: 디지털 자산을 다운로드할 수 [!DNL Adobe Experience Manager]�
 description: 다운로드 기능을 활성화하거나 비활성화하는 방법 [!DNL Adobe Experience Manager] 을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 527b2f50efac606a0a696c8f56b0d725f79cd692
+source-git-commit: 64c09e454960a40632059a85f0861deed1899b86
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 3%
@@ -29,7 +29,7 @@ ht-degree: 3%
 1. 폴더를 선택하거나 폴더 내에서 하나 이상의 자산을 선택합니다.
 1. 도구 모음에서 다운로드를 **[!UICONTROL 누릅니다]**.
 
-   ![Experience Manager 자산에서 자산을 다운로드할 때 사용 가능한 옵션](/help/assets/assets/asset-download.png)
+   ![Experience Manager 자산에서 자산을 다운로드할 때 사용 가능한 옵션](/help/assets/assets/asset-download1.png)
 
    *다운로드 대화 상자 옵션.*
 
