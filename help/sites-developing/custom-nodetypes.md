@@ -1,8 +1,8 @@
 ---
 title: 사용자 지정 노드 유형
 seo-title: 사용자 지정 노드 유형
-description: AEM 파섹
-seo-description: AEM 파섹
+description: AEM은 Sling을 기반으로 하며 두 가지 모두에서 제공하는 노드 유형이 있는 JCR 저장소를 사용하지만 AEM은 다양한 사용자 지정 노드 유형을 제공합니다
+seo-description: AEM은 Sling을 기반으로 하며 두 가지 모두에서 제공하는 노드 유형이 있는 JCR 저장소를 사용하지만 AEM은 다양한 사용자 지정 노드 유형을 제공합니다
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,19 +10,22 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 translation-type: tm+mt
-source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
+source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+workflow-type: tm+mt
+source-wordcount: '1918'
+ht-degree: 9%
 
 ---
 
 
 # 사용자 지정 노드 유형{#custom-node-types}
 
-AEM 파섹
+AEM은 Sling을 기반으로 하고 JCR 리포지토리를 사용하기 때문에 두 가지 모두에서 제공되는 노드 유형을 사용할 수 있습니다.
 
 * [JCR 노드 유형](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling 노드 유형](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-이 외에도 AEM에서는 사용자 지정 노드 유형 범위를 제공합니다.
+여기에 더해서 AEM에서는 다양한 사용자 지정 노드 유형을 제공합니다.
 
 ## 감사 {#audit}
 
@@ -77,7 +80,7 @@ AEM 파섹
 
 **설명**
 
-노드의 노드 유형을 정의합니다. `commentattachment`
+노드의 노드 유형을 `commentattachment` 정의합니다.
 
 **정의**
 
@@ -108,8 +111,8 @@ AEM 파섹
 
 지리적 위치를 십진수(DD)로 정의하는 혼합
 
-* `@prop latitude` - 십진도를 사용하여 2배로 인코딩된 위도
-* `@prop longitude` - 십진도를 사용하여 더블로 인코딩된 경도
+* `@prop latitude` - 소수점을 사용하여 2배로 인코딩됨
+* `@prop longitude` - 소수점을 사용하여 double로 인코딩된 경도
 
 **정의**
 
@@ -121,7 +124,7 @@ AEM 파섹
 
 **설명**
 
-트랙백 노드의 노드 유형을 정의합니다.
+trackback 노드의 노드 유형을 정의합니다.
 
 **정의**
 
@@ -135,7 +138,7 @@ AEM 파섹
 
 기본 CQ 페이지를 정의합니다.
 
-* `@node jcr:content` - 페이지의 주요 컨텐츠.
+* `@node jcr:content` - 페이지의 기본 컨텐츠.
 
 **정의**
 
@@ -147,7 +150,7 @@ AEM 파섹
 
 **설명**
 
-노드를 의사 페이지로 표시하는 혼합 유형을 정의합니다. 즉, 페이지 및 WCM 편집 지원을 위해 조정할 수 있습니다.
+노드를 의사 페이지로 표시하는 혼합 유형을 정의합니다. 즉, 페이지 및 WCM 편집 지원에 맞게 조정할 수 있습니다.
 
 **정의**
 
@@ -157,24 +160,24 @@ AEM 파섹
 
 **설명**
 
-WCM에서 사용하는 최소 속성을 사용하여 페이지 컨텐츠의 기본 노드를 정의합니다.
+WCM에서 사용하는 최소 속성을 갖는 페이지 컨텐츠의 기본 노드를 정의합니다.
 
 * `@prop jcr:title` - 페이지의 제목입니다.
-* `@prop jcr:description` - 이 페이지에 대한 설명입니다.
+* `@prop jcr:description` - 이 페이지의 설명입니다.
 * `@prop cq:template` - 페이지를 만드는 데 사용되는 템플릿의 경로입니다.
-* `@prop cq:allowedTemplates` - 허용되는 템플릿의 경로를 결정하는 데 사용되는 정규 표현식 목록입니다.
+* `@prop cq:allowedTemplates` - 허용되는 템플릿에 대한 경로를 결정하는 데 사용되는 정규 표현식 목록입니다.
 * `@prop pageTitle` - 일반적으로 `<title>` 태그에 표시되는 제목입니다.
 * `@prop navTitle` - 일반적으로 탐색에 사용되는 제목입니다.
-* `@prop hideInNav` - 탐색에서 페이지를 숨길지 여부를 지정합니다.
+* `@prop hideInNav` - 탐색에서 페이지를 표시할지 여부를 지정합니다.
 * `@prop onTime` - 이 페이지가 유효한 시간입니다.
 * `@prop offTime` - 이 페이지가 잘못된 시간입니다.
 * `@prop cq:lastModified` - 페이지(또는 해당 단락)가 마지막으로 수정된 날짜
-* `@prop cq:lastModifiedBy` - 페이지(또는 해당 단락)를 변경할 마지막 사용자입니다.
+* `@prop cq:lastModifiedBy` - 마지막 사용자가 페이지(또는 해당 단락)를 변경합니다.
 * `@prop jcr:language` - 페이지 컨텐츠의 언어입니다.
 
 >[!NOTE]
 >
->페이지 컨텐츠가 이 유형을 사용하도록 강제되지 않습니다.
+>페이지 컨텐츠가 이 유형을 사용하도록 의무화되지 않습니다.
 
 **정의**
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
@@ -196,17 +199,17 @@ WCM에서 사용하는 최소 속성을 사용하여 페이지 컨텐츠의 기�
 
 CQ 템플릿을 정의합니다.
 
-* `@node jcr:content` - 새 페이지의 기본 컨텐츠
+* `@node jcr:content` - 새 페이지의 기본 컨텐츠.
 * `@node icon.png` - 특성 아이콘이 있는 파일입니다.
-* `@node thumbnail.png` - 특성 축소판 이미지를 포함하는 파일입니다.
+* `@node thumbnail.png` - 고유한 축소판 이미지를 포함하는 파일입니다.
 * `@node workflows` - 워크플로우 구성 자동 할당 구성은 아래의 구조를 따릅니다.
    * `+ workflows`
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - 정규 표현식 패턴으로 상위 템플릿으로 허용되는 템플릿에 대한 경로를 결정합니다.
-* `@prop allowedChildren` - 정규 표현식 패턴을 사용하여 하위 템플릿으로 허용되는 템플릿에 대한 경로를 결정합니다.
-* `@prop ranking` - 페이지 만들기 대화 상자에서 템플릿 목록 내에 배치합니다.
+* `@prop allowedParents` - 일반 표현식 패턴으로 상위 템플릿으로 허용되는 템플릿에 대한 경로를 결정합니다.
+* `@prop allowedChildren` - 정규 표현식 패턴으로 하위 템플릿으로 허용되는 템플릿에 대한 경로를 결정합니다.
+* `@prop ranking` - 페이지 만들기 대화 상자에서 템플릿 목록 내에 위치 지정
 
 **정의**
 
@@ -231,21 +234,21 @@ CQ 구성 요소를 정의합니다.
 * `@prop jcr:title` - 구성 요소의 제목입니다.
 * `@prop jcr:description` - 구성 요소에 대한 설명입니다.
 * `@node dialog` - 기본 대화 상자
-* `@prop dialogPath` - 기본 대화 상자 경로(대화 상자 대체).
+* `@prop dialogPath` - 기본 대화 상자 경로(대화 상자 대체)
 * `@node design_dialog` - 디자인 대화 상자
 * `@prop cq:cellName` - 디자인 셀의 이름입니다.
-* `@prop cq:isContainer` - 컨테이너 구성 요소인지 여부를 나타냅니다. 이렇게 하면 자식 구성 요소의 셀 이름이 경로 이름 대신 사용됩니다. 예를 들어 `parsys` 는 컨테이너 구성 요소입니다. 이 값이 정의되지 않은 경우 확인 작업은 `cq:childEditConfig`의 존재를 기반으로 수행됩니다.
+* `@prop cq:isContainer` - 컨테이너 구성 요소인지 여부를 나타냅니다. 이로 인해 하위 구성 요소의 셀 이름이 경로 이름 대신 사용됩니다. 예를 들어, 컨테이너 구성 요소 `parsys` 는 컨테이너 구성 요소입니다. 이 값이 정의되지 않은 경우 확인 작업은 `cq:childEditConfig`
 * `@prop cq:noDecoration` - true이면 이 구성 요소를 포함할 때 데코레이션 `div` 태그가 표시되지 않습니다.
 * `@node cq:editConfig` - 편집 막대의 매개 변수를 정의하는 구성
 * `@node cq:childEditConfig` - 하위 구성 요소에서 상속되는 편집 구성
-* `@node cq:htmlTag` - 구성 요소가 포함될 때 &quot;주변&quot; `div` 태그에 추가되는 추가 태그 속성을 정의합니다.
+* `@node cq:htmlTag` - 구성 요소를 포함할 때 &quot;주변&quot; `div` 태그에 추가되는 추가 태그 속성을 정의합니다.
 * `@node icon.png`- 특성 아이콘이 있는 파일입니다.
-* `@node thumbnail.png` - 특성 축소판 이미지를 포함하는 파일입니다.
-* `@prop allowedParents` - 정규 표현식 패턴을 사용하여 상위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
-* `@prop allowedChildren` - 정규 표현식 패턴을 사용하여 하위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
+* `@node thumbnail.png` - 고유한 축소판 이미지를 포함하는 파일입니다.
+* `@prop allowedParents` - 정규 표현식 패턴으로 상위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
+* `@prop allowedChildren` - 정규 표현식 패턴으로 하위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
 * `@node virtual` - 구성 요소 드래그 앤 드롭에 사용되는 가상 구성 요소를 반영하는 하위 노드를 포함합니다.
-* `@prop componentGroup` - 구성 요소 그룹의 이름입니다. 구성 요소를 드래그하여 놓을 때 사용됩니다.
-* `@node cq:infoProviders` - 하위 노드를 포함하며, 각 노드에는 `className` 해당 속성을 참조하는 속성이 `PageInfoProvider`있습니다.
+* `@prop componentGroup` - 구성 요소 드래그 앤 드롭에 사용되는 구성 요소 그룹의 이름입니다.
+* `@node cq:infoProviders` - Contains subnodes, wheach has a property `className` that references to a a a `PageInfoProvider`.
 
 **정의**
 
@@ -293,10 +296,10 @@ CQ 구성 요소를 혼합 유형으로 정의합니다.
 * `@node cq:inplaceEditing` - 이 구성 요소에 대한 즉석 편집 구성
 * `@prop cq:layout`- 편집 막대의 레이아웃:
    * `editbar` - 편집 막대
-   * `rollover` - 프레임 위로 롤
+   * `rollover` - 프레임 위로 스크롤
    * `auto` - 자동 감지
-* `@node cq:formParameters`- 대화 상자에 추가할 추가 매개 변수입니다.
-* `@prop cq:actions`- 작업 목록(편집 막대 단추 또는 메뉴 항목).
+* `@node cq:formParameters`- 대화 상자 양식에 추가할 추가 매개 변수
+* `@prop cq:actions`- 작업 목록(막대 단추 또는 메뉴 항목 편집)
 * `@node cq:actionConfigs` - 편집 막대 또는 메뉴 항목을 위한 위젯 구성
 * `@prop cq:emptyText` - 시각적 컨텐츠가 없는 경우 표시할 텍스트입니다.
 * `@node cq:dropTargets` - 노드 `{@link cq:DropTargetConfig}` 수집.
@@ -316,9 +319,9 @@ CQ 구성 요소를 혼합 유형으로 정의합니다.
 
 **설명**
 
-구성 요소의 한 드롭 대상을 구성합니다. 이 노드의 이름은 드래그 앤 드롭의 ID로 사용됩니다.
+구성 요소의 한 드롭 대상을 구성합니다. 이 노드의 이름은 드래그 앤 드롭에 ID로 사용됩니다.
 
-* `@prop accept` - 이 드롭 대상에서 허용되는 MIME 유형 목록;예: `["image/*"]`
+* `@prop accept` - 이 드롭 대상에서 허용되는 MIME 유형 목록; 예: `["image/*"]`
 * `@prop groups` - 소스를 허용하는 드래그 앤 드롭 그룹 목록
 * `@prop propertyName` - 참조를 저장하는 데 사용되는 속성의 이름입니다.
 
@@ -341,10 +344,10 @@ CQ 구성 요소를 혼합 유형으로 정의합니다.
 * `@node cq:editConfig` - 편집 막대의 매개 변수를 정의하는 구성을 편집합니다.
 * `@node cq:childEditConfig`- 하위 구성 요소에서 상속되는 구성을 편집합니다.
 * `@node icon.png` - 특성 아이콘이 있는 파일입니다.
-* `@node thumbnail.png` - 특성 축소판 이미지를 포함하는 파일입니다.
-* `@prop allowedParents` - 정규 표현식 패턴을 사용하여 상위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
-* `@prop allowedChildren` - 정규 표현식 패턴을 사용하여 하위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
-* `@prop componentGroup` - 구성 요소 드래그 앤 드롭에 대한 구성 요소 그룹의 이름입니다.
+* `@node thumbnail.png` - 고유한 축소판 이미지를 포함하는 파일입니다.
+* `@prop allowedParents` - 일반 표현식 패턴으로 상위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
+* `@prop allowedChildren` - 정규 표현식 패턴으로 하위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
+* `@prop componentGroup` - 구성 요소의 드래그 앤 드롭에 대한 구성 요소 그룹 이름입니다.
 
 **정의**
 
@@ -363,18 +366,18 @@ CQ 구성 요소를 혼합 유형으로 정의합니다.
 
 **설명**
 
-편집 이벤트에서 실행할 (클라이언트측) 리스너를 정의합니다. 값은 유효한 클라이언트측 리스너 함수를 참조하거나 사전 정의된 단축키를 포함해야 합니다.
+편집 이벤트에서 실행할 리스너를 정의합니다. 값은 유효한 클라이언트측 수신기 함수를 참조하거나 사전 정의된 단축키를 포함해야 합니다.
 
 * `REFRESH_PAGE`
 * `REFRESH_SELF`
 * `REFRESH_PARENT`
 
 * `@prop aftercreate` - 구성 요소를 만든 후 실행됩니다.
-* `@prop afteredit` - 구성 요소를 편집(수정)한 후 발생합니다.
+* `@prop afteredit` - 구성 요소를 편집(수정)한 후 실행됩니다.
 * `@prop afterdelete` - 구성 요소가 삭제된 후 발생합니다.
-* `@prop afterinsert` - 구성 요소가 이 컨테이너에 추가된 후에 발생합니다.
-* `@prop afterremove` - 구성 요소가 이 컨테이너에서 제거된 후에 발생합니다.
-* `@prop aftermove` - 구성 요소가 이 컨테이너에서 이동한 후에 발생합니다.
+* `@prop afterinsert` - 구성 요소가 이 컨테이너에 추가된 후 실행됩니다.
+* `@prop afterremove` - 이 컨테이너에서 구성 요소를 제거한 후에 발생합니다.
+* `@prop aftermove` - 이 컨테이너에서 구성 요소를 이동한 후에 발생합니다.
 
 **정의**
 
@@ -395,7 +398,7 @@ CQ 구성 요소를 혼합 유형으로 정의합니다.
 
 **설명**
 
-DAM 자산의 컨텐츠.
+DAM 자산의 내용.
 
 **정의**
 
@@ -407,7 +410,7 @@ DAM 자산의 컨텐츠.
 
 **설명**
 
-DAM 자산.
+DAM 자산
 
 **정의**
 
@@ -446,12 +449,12 @@ DAM 자산을 나타내는 축소판입니다.
 
 **설명**
 
-`cq:attributes` 는 ContentBus 버전 태그의 노드 유형입니다. 이 노드에는 일련의 속성만 있습니다.이 중 세 가지는 사전 정의된 &quot;created&quot;, &quot;csd&quot; 및 &quot;timestampe&quot;입니다.
+`cq:attributes` 는 ContentBus 버전 태그의 노드 유형입니다. 이 노드에는 일련의 속성만 있습니다. 이 세 가지 중에서 미리 정의된 &quot;created&quot;, &quot;csd&quot; 및 &quot;timestampe&quot;입니다.
 
-* `@prop created (long) mandatory copy` - 버전 정보 작성의 타임스탬프(일반적으로 이전 버전 또는 페이지 작성 시간의 체크 인 시간)
+* `@prop created (long) mandatory copy` - 버전 정보 작성의 타임스탬프, 일반적으로 이전 버전을 체크 인하거나 페이지를 만든 시간입니다.
 * `@prop csd (string) mandatory copy` - csd 표준 속성, 페이지 노드의 cq:csd 속성 사본
 * `@prop timestamp (long) mandatory copy` - 마지막 버전 수정 타임스탬프, 일반적으로 체크 인 시간
-* `@prop * (string) copy` - 추가 속성, 상위 노드 버전 관리
+* `@prop * (string) copy` - 추가 속성, 상위 노드를 사용한 버전 관리
 
 **정의**
 
@@ -465,13 +468,13 @@ DAM 자산을 나타내는 축소판입니다.
 
 **설명**
 
-노드 유형에는 ContentBus 컨텐츠 페이지에 대한 속성 및 하위 노드 정의가 `cq:contentPage` 포함되어 있습니다. 이 혼합 유형이 유형 노드에 추가되는 `cq:page`경우에만 노드가 ContentBus 컨텐츠 페이지가 됩니다.
+노드 유형은 ContentBus 컨텐츠 페이지에 대한 속성 및 하위 노드 정의를 `cq:contentPage` 포함합니다. 이 혼합 유형이 유형 노드에 추가되는 경우에만 노드가 ContentBus 컨텐츠 페이지 `cq:page`가 됩니다.
 
-의 항목은 `cq:Cq4ContentPage` 다음과 같습니다.
+a의 항목은 다음과 `cq:Cq4ContentPage` 같습니다.
 
 * `@prop cq:csd` - 페이지의 ContentBus CSD.
-* `@node cq:content` - 페이지의 컨텐츠입니다. 이 하위 노드는 페이지 노드가 &quot;컨텐트 없는 기존&quot; 또는 &quot;삭제됨&quot; 상태인 경우 존재하지 않습니다.
-* `@node cq:attributes` - 이전에 버전 태그로 알려졌던 페이지 속성 목록입니다. 이 노드는 cq:contentPage 유형에 대해 필수입니다. 속성 노드는 페이지의 버전이 노드인 경우 버전이 지정됩니다.
+* `@node cq:content` - 페이지의 컨텐츠. 페이지 노드가 &quot;컨텐트 없는 기존&quot; 또는 &quot;삭제됨&quot; 상태인 경우에는 이 하위 노드가 존재하지 않습니다.
+* `@node cq:attributes` - 이전에 버전 태그로 알려졌던 페이지 속성 목록입니다. 이 노드는 cq:contentPage 유형에 대해 필수입니다. 속성 노드는 페이지 버전이 지정된 경우 버전이 지정됩니다.
 
 **정의**
 
@@ -487,8 +490,8 @@ DAM 자산을 나타내는 축소판입니다.
 
 투표 구성을 참조하십시오.
 
-* `@prop source (String) mandatory` - 데이터 소스 URI입니다. 필수 항목이며 비워 둘 수 없습니다.
-* `@prop target (String)` - 데이터 소스에서 검색된 데이터가 저장되는 대상 위치입니다. 선택 사항이며 기본값은 cq:PollConfig 노드입니다.
+* `@prop source (String) mandatory` - 데이터 원본 URI, 필수 항목이며 비워 둘 수 없습니다.
+* `@prop target (String)` - 데이터 소스에서 검색된 데이터가 저장되는 대상 위치입니다. 선택 사항이며 기본적으로 cq:PollConfig 노드가 사용됩니다.
 * `@prop interval (Long)` - 데이터 소스의 새 데이터 또는 업데이트된 데이터에 대해 폴링할 간격(초)입니다. 선택 사항이며 기본값은 30분(1800초)입니다.
 * [Adobe Experience Manager용 사용자 지정 데이터 가져오기 서비스 만들기](https://helpx.adobe.com/experience-manager/using/polling.html)
 
@@ -518,7 +521,7 @@ DAM 자산을 나타내는 축소판입니다.
 
 지리적 위치를 십진수(DD)로 정의하는 혼합입니다.
 
-* `@prop latitude` - Latitude는 십진도를 사용하여 더블로 인코딩되었습니다.
+* `@prop latitude` - Latitude는 소수점을 사용하여 2배로 인코딩되었습니다.
 * `@prop longitude` - 소수점을 사용하여 2배로 인코딩된 경도
 
 **정의**
@@ -534,7 +537,7 @@ DAM 자산을 나타내는 축소판입니다.
 
 **설명**
 
-MeyerService nodetype입니다. 메일러 시스템은 이 믹신이 있는 노드를 메시지 정의의 루트 노드로 사용합니다.
+MeyerService 노데트를 참조하십시오. 메일러는 이 믹신이 있는 노드를 메시지 정의의 루트 노드로 사용합니다.
 
 **정의**
 
@@ -550,7 +553,7 @@ MeyerService nodetype입니다. 메일러 시스템은 이 믹신이 있는 노�
 
 **설명**
 
-LiveRelationship 믹스를 정의합니다. 마스터 노드 및 슬레이브 노드는 LiveRelationship을 통해 사실상 연결할 수 있습니다.
+LiveRelationship 믹스를 정의합니다. 기본 소스(제어) 노드 및 Live Copy(제어) 노드는 LiveRelationship을 통해 사실상 연결할 수 있습니다.
 
 **정의**
 
@@ -563,11 +566,11 @@ LiveRelationship 믹스를 정의합니다. 마스터 노드 및 슬레이브 �
 
 **설명**
 
-LiveSync 믹스를 정의합니다. 노드가 슬레이브로 마스터 노드와 LiveRelationship에 포함되는 경우 LiveSync로 표시됩니다.
+LiveSync 믹스를 정의합니다. 노드가 기본 소스(제어) 노드 및 Live Copy(제어) 노드와 LiveRelationship에 포함되는 경우 LiveSync로 표시됩니다.
 
-* `@prop cq:master` - LiveRelationship의 마스터 노드의 경로입니다.
-* `@prop cq:isDeep` - 자식에 대해 관계를 사용할 수 있는지 여부를 정의합니다.
-* `@prop cq:syncTrigger` - 동기화가 트리거되는 시기를 정의합니다.
+* `@prop cq:master` - LiveRelationship의 기본 소스(제어)의 경로입니다.
+* `@prop cq:isDeep` - 하위 항목에 관계를 사용할 수 있는지 정의합니다.
+* `@prop cq:syncTrigger` - 동기화를 트리거하는 시기를 정의합니다.
 * `@node * LiveSyncAction` - 동기화 시 수행할 작업
 
 **정의**
@@ -580,9 +583,9 @@ LiveSync 믹스를 정의합니다. 노드가 슬레이브로 마스터 노드�
 
 **설명**
 
-LiveSyncCancelled 믹스를 정의합니다. 부모 중 한 명으로 인해 LiveRelationship에 포함될 수 있는 슬레이브 노드의 LiveSync 동작을 취소합니다.
+LiveSyncCancelled 믹스를 정의합니다. 부모 중 한 명으로 인해 LiveRelationship에 포함될 수 있는 Live Copy(제어된) 노드의 LiveSync 동작을 취소합니다.
 
-* `@prop cq:isCancelledForChildren` - LiveSync를 취소할지 여부를 정의합니다.또한 어린이에게도 제공됩니다.
+* `@prop cq:isCancelledForChildren` - LiveSync를 취소할지 여부를 정의합니다. 또한 어린이들.
 
 **정의**
 
@@ -606,7 +609,7 @@ LiveSync에 연결된 LiveSyncAction을 정의합니다.
 
 **설명**
 
-Live Sync 구성.
+라이브 동기화 구성을 참조하십시오.
 
 **정의**
 
@@ -623,7 +626,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **설명**
 
-블루프린트 작업
+블루프린트 동작
 
 **정의**
 
@@ -648,14 +651,14 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **설명**
 
-복제 상태 정보 믹싱을 정의합니다.
+복제 상태 정보 혼합을 정의합니다.
 
 * `@prop cq:lastPublished`- 페이지가 마지막으로 게시된 날짜(더 이상 사용되지 않음)
 * `@prop cq:lastPublishedBy`- 페이지를 마지막으로 게시한 사용자(더 이상 사용되지 않음)
-* `@prop cq:lastReplicated` - 페이지를 마지막으로 복제한 날짜
+* `@prop cq:lastReplicated` - 페이지가 마지막으로 복제된 날짜입니다.
 * `@prop cq:lastReplicatedBy` - 페이지를 마지막으로 복제한 사용자입니다.
-* `@prop cq:lastReplicationAction` - 복제 작업:활성화 또는 비활성화합니다.
-* `@prop cq:lastReplicationStatus` - 복제 상태(더 이상 사용되지 않음)
+* `@prop cq:lastReplicationAction` - 복제 작업: 활성화 또는 비활성화
+* `@prop cq:lastReplicationStatus` - 복제 상태(더 이상 사용되지 않음).
 
 **정의**
 
@@ -782,7 +785,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **설명**
 
-태그할 수 있는 컨텐츠에 대한 추상 기본 믹싱
+태그할 수 있는 컨텐츠에 대한 추상 베이스 믹싱
 
 * `@node cq:tags`
 
@@ -795,7 +798,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **설명**
 
-작성자/소유자만 컨텐츠에 태그를 지정할 수 있습니다(조정/관리 태그 지정).
+작성자/소유자만 컨텐츠에 태그를 지정할 수 있습니다(조정/관리 태깅).
 
 **정의**
 
@@ -805,7 +808,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **설명**
 
-모든 사용자/공개 웹 사이트는 cq:userContent 내에서 사용되는 컨텐츠(Web2.0 스타일)에 태그를 지정할 수 있습니다.
+모든 사용자/공개 웹 사이트에서 cq:userContent 내에서 사용되는 컨텐츠(Web2.0 스타일)에 태그를 지정할 수 있습니다.
 
 **정의**
 
@@ -816,7 +819,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **설명**
 
-사용자가 수정할 수 있는 `cq:userContent` 하위 노드를 추가합니다. 각 사용자는 일반적으로 혼합이 있는 자체 `cq:userContent/<userid>` 하위 노드를 갖게 `cq:UserTaggable`됩니다.
+사용자가 수정할 수 있는 하위 노드를 `cq:userContent` 추가합니다. 각 사용자는 일반적으로 혼합이 있는 자체 하위 `cq:userContent/<userid>` 노드를 갖게 됩니다 `cq:UserTaggable`.
 
 **정의**
 
@@ -922,7 +925,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **정의**
 
-* &#39;[cq:TabPanel] > cq:Panel orderable&quot;
+* &#39;[cq:TabPanel] > cq:Panel possible&quot;
    * `- activeTab (long)`
 
 ### cq:필드 {#cq-field}
@@ -940,11 +943,11 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 ## Wiki {#wiki}
 
-### wiki:토픽 {#wiki-topic}
+### wiki:주제 {#wiki-topic}
 
 **설명**
 
-위키주제
+Wiki 주제
 
 **정의**
 
@@ -965,7 +968,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **설명**
 
-위키 사용자
+Wiki 사용자
 
 **정의**
 
@@ -1176,7 +1179,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **설명**
 
-워크플로우 시작 관리자
+워크플로우 실행 프로그램
 
 **정의**
 
