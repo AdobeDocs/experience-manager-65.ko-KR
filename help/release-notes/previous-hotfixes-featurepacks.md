@@ -19,7 +19,7 @@ Adobe Experience Manager 6.5.4.0은 **2019년 4월** 6.5 릴리스의 공식 출
 
 Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은 다음과 같습니다.
 
-* Adobe Experience Manager Assets는 이제 Adobe I/O 콘솔을 통해 브랜드 포털로 구성됩니다.
+* 이제 Adobe Experience Manager 에셋이 Adobe I/O 콘솔을 통해 브랜드 포털로 구성됩니다.
 
 * A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for Adobe Experience Manager Forms workflows.
 
@@ -41,9 +41,9 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 ### 사이트 {#sites-fixes}
 
-* Adobe Experience Manager Sites 페이지의 URL에 콜론(`:`) 또는 백분율 기호(`%`)가 포함되어 있으면 브라우저가 응답을 중단하고 CPU 사용 스파이크(NPR-32369, NPR-31918)가 발생합니다.
+* Adobe Experience Manager 사이트 페이지의 URL에 콜론(`:`) 또는 백분율 기호(`%`)가 포함되어 있으면 브라우저가 응답을 중단하고 CPU 사용 스파이크(NPR-32369, NPR-31918)가 발생합니다.
 
-* Experience Manager Sites 페이지를 열어 편집하고 구성 요소를 복사해도 일부 자리 표시자에 대해 붙여넣기 작업을 수행할 수 없습니다(NPR-32317).
+* Experience Manager 사이트 페이지를 열어 편집하고 구성 요소를 복사해도 일부 자리 표시자에 대해 붙여넣기 작업을 사용할 수 없는 상태로 유지됩니다(NPR-32317).
 
 * 게시 관리 마법사가 열리면 코어 구성 요소에 연결된 경험 구성 요소가 게시된 참조 목록에 표시되지 않습니다(NPR-32233).
 
@@ -51,7 +51,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 서버 시간과 컴퓨터 시간이 다른 시간대에 있는 경우 예약된 게시 시간은 Touch UI에 서버 시간을 표시하지만 클래식 UI에서는 시스템 시간이 표시됩니다(NPR-32077).
 
-* Experience Manager Sites에서 URL에 접미어를 붙인 페이지를 열지 못했습니다(NPR-32072).
+* Experience Manager 사이트에서 URL에 접미사를 붙인 페이지를 열지 못했습니다(NPR-32072).
 
 * 사용자가 컨텐츠 조각을 편집하면 삭제된 컨텐츠 조각의 변형이 복원됩니다(NPR-32062).
 
@@ -125,7 +125,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 사용자가 Dynamic Media 클라이언트의 설정 편집기에서 변경하지 않은 경우 저장 버튼이 원격 세트를 가져오지 않습니다(CQ-4285690).
 
-* 지원되는 3D 모델을 Experience Manager로 인제스트할 경우 3D 자산 축소판은 도움이 되지 않습니다(CQ-4283701).
+* 지원되는 3D 모델을 Experience Manager으로 인제스트하는 경우 3D 자산 축소판은 도움이 되지 않습니다(CQ-4283701).
 
 * 스마트 자르기 비디오 뷰어 사전 설정이 처리되지 않은 상태로 사전 설정 이름과 함께 배너 텍스트에 두 번 표시됩니다(CQ-4283517).
 
@@ -135,7 +135,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * Chrome 및 Safari 브라우저에서 다운로드 대화 상자에 있는 이메일 드롭다운에서 키보드 포커스가 멈춥니다(NPR-32067).
 
-* Experience Manager에서 DM 클라우드 구성을 추가하려고 하는 동안 모든 콘텐츠 동기화 확인란이 기본적으로 활성화되어 있지 않습니다(CQ-4288533).
+* Experience Manager에 DM 클라우드 구성을 추가하려고 하는 동안 모든 콘텐츠 동기화 확인란이 기본적으로 활성화되어 있지 않습니다(CQ-4288533).
 
 ### 기본 UI {#foundation-ui-6540}
 
@@ -213,7 +213,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 >[!NOTE]
 >
->Experience Manager Service Pack에는 Experience Manager Forms에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한 JEE에서 Adobe Experience Manager Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 출시됩니다. 자세한 내용은 [Experience Manager Forms 추가 기능 설치](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) 및 [JEE에 Experience Manager Forms 설치](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)를 참조하십시오.
+>Experience Manager 서비스 팩에는 Experience Manager 양식에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한 JEE의 Adobe Experience Manager 양식 수정 사항이 포함된 누적 설치 프로그램이 출시됩니다. 자세한 내용은 [Experience Manager Forms 추가 기능 설치](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) 및 [JEE에 Experience Manager Forms 설치](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)를 참조하십시오.
 
 * 서신 관리: 게시 처리 워크플로우에 제출하면 편지에 추가 문자가 표시됩니다(NPR-32626).
 
@@ -231,7 +231,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 적용형 양식: Chrome 브라우저 접근성 도구가 모범 사례 오류를 보고합니다(NPR-32310).
 
-* 적응형 양식: Experience Manager Sites 페이지에 포함된 적응형 양식을 구성하는 동안 번역 문제가 발생했습니다(NPR-32168).
+* 적응형 양식: Experience Manager 사이트 페이지에 포함된 적응형 양식을 구성하는 동안 번역 문제가 발생했습니다(NPR-32168).
 
 * Workbench: PDF 유틸리티 서비스에 PDF 속성 가져오기 작업을 사용하는 동안 오류 메시지가 표시됩니다(NPR-32150).
 
@@ -241,7 +241,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 디자이너: 표에 병합된 셀이 있는 경우 출력 서비스를 사용하여 XDP 양식에서 변환된 출력 PDF 파일에 접근성 테스트를 수행하면 오류가 발생합니다(CQ-4285372).
 
-* 재단 JEE: Experience Manager Forms 서버가 클러스터에서 연결이 끊긴 경우 캐싱 문제로 인해 서버가 서버에 다시 연결되지 않습니다(NPR-32412).
+* 재단 JEE: Experience Manager Forms 서버가 클러스터에서 연결이 끊긴 경우 캐싱 문제로 인해 서버에 다시 연결되지 않습니다(NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -945,7 +945,7 @@ Remove one mention of this fix.
 
 #### 자산 - 포함
 
-* [!DNL Experience Manager Assets]에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [Experience Manager Assets에 MSM을 사용하여 자산 재사용](https://helpx.adobe.com/kr/experience-manager/6-5/help/assets/reuse-assets-using-msm.html)을 참조하십시오. NPR-29199: CQ-4259922용 핫픽스
+* [!DNL Experience Manager Assets]에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [Experience Manager Assets에 MSM을 사용하여 자산 재사용](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html)을 참조하십시오. NPR-29199: CQ-4259922용 핫픽스
 
 #### 사이트 - 포함
 
