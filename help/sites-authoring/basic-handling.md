@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2979'
 ht-degree: 100%
 
