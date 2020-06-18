@@ -6,11 +6,11 @@ contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 49209cb64c829fde396e87ca4b2e326ecf1dd941
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1634'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 �
 
 | 영역 | 기능 | 대체 |
 |--- |--- |--- |
-| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://docs.adobe.complugin /content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)을 사용합니다. |
+| Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. [Adobe Analytics에서 제공하는 ActivityMap 플러그인](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)을 사용합니다. |
 | 통합 | ExactTarget 통합이 기본 배포(빠른 시작)에서 제거되어 더 이상 사용할 수 없습니다. | 교체 없음 |
 | 통합 | Salesforce Force API 통합이 기본 배포(빠른 시작)에서 제거되었으며 이제 PackageShare에서 설치할 수 있는 추가 패키지입니다. | 기능은 계속 사용할 수 있습니다. |
 | 양식 | Adobe Central 제품이 더 이상 지원되지 않아 Adobe Central Migration Bridge 서비스 지원이 제거되었습니다. | 교체 없음 |
