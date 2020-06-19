@@ -3,7 +3,7 @@ title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능을 사용하여 자산의 메타데이터 변경 내용을 자산의 모든 표현물 또는 특정 표현물에 전달하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 711cd438cc8962d310bb2bfbb14f079161aacce0
+source-git-commit: c1c845a479fcf04db1b2da8bcb9cf765fedd58b6
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 2%
@@ -77,16 +77,6 @@ XMP 원본에 대한 기능이 변환 축소판 140.100.png 및 319.319.png에 �
 >[!NOTE]
 >
 >필터링은 자산 바이너리의 XMP 소스에서 파생된 속성에만 작동합니다. EXIF 및 IPTC 포맷과 같이 XMP 이외의 소스에서 파생된 속성의 경우 필터링이 작동하지 않습니다. 예를 들어 에셋 작성 날짜는 EXIF TIFF에 명명된 속성 `CreateDate` 에 저장됩니다. Experience Manager은 이 값을 이름이 지정된 메타데이터 필드에 저장합니다 `exif:DateTimeOriginal`. 소스는 XMP가 아닌 소스이므로 이 속성에서 필터링이 작업이 수행되지 않습니다.
-
-<!-- TBD: The instructions don't seem to match the UI. I see com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.description
-in Config Manager. And the settings are,
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_whitelist.name
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.whitelist.name
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_blacklist.name
-com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.blacklist.name
- 
-TBD: Make updates to configurations for allow and block list after product updates are done.
--->
 
 1. 구성 관리자를 열려면 액세스 `https://[aem_server]:[port]/system/console/configMgr`를 참조하십시오.
 1. Adobe **[!UICONTROL CQ DAM XmpFilter 구성을]** 엽니다.
