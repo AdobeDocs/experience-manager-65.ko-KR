@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # 점수 및 배지 필수 {#scoring-and-badges-essentials}
 
-AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하고 보상하는 기능을 제공합니다.
+AEM Communities 채점 및 배지 기능을 사용하면 커뮤니티 구성원을 식별하고 보상할 수 있습니다.
 
 기능 설정에 대한 자세한 내용은
 
@@ -102,7 +102,7 @@ false인 경우, [할당]은 획득 점수에 대해 배지가 부여되었음�
 
 
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 로그 항목을 보려면
 
@@ -118,7 +118,7 @@ false인 경우, [할당]은 획득 점수에 대해 배지가 부여되었음�
 
    * 예, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-194](assets/chlimage_1-194.png)
+![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## 점수 지정 및 배지 지정 {#ugc-for-scoring-and-badging}
 
@@ -217,7 +217,7 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 
    사용자가 두 개의 청동 배지를 받았고 사회자 배지가 수여됨에 따라 포럼 참가자가 표시되는 방식은 다음과 같습니다.
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![chlimage_1-250](assets/chlimage_1-250.png)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Geometrixx Engage 사이트의 경우 사용자 및 점수는 점수 규칙 이�
 
 점수는 직접 값만 포함하거나 atomicCounter를 간접적으로 참조할 수 `scoreValue_tl` 있는 속성에 저장됩니다.
 
-![chlimage_1-196](assets/chlimage_1-196.png)
+![chlimage_1-251](assets/chlimage_1-251.png)
 
 ### 배지 UGC 액세스 {#access-badging-ugc}
 
@@ -271,11 +271,11 @@ API [를 사용하는 것이](#scoring-and-badging-apis) 좋습니다.
 
 #### 수상 배지 {#awarded-badge}
 
-![chlimage_1-197](assets/chlimage_1-197.png)
+![chlimage_1-252](assets/chlimage_1-252.png)
 
 #### 지정된 배지 {#assigned-badge}
 
-![chlimage_1-198](assets/chlimage_1-198.png)
+![chlimage_1-253](assets/chlimage_1-253.png)
 
 ## 추가 정보 {#additional-information}
 
