@@ -3,7 +3,7 @@ title: 디지털 자산을 다운로드할 수 [!DNL Adobe Experience Manager]�
 description: 다운로드 기능을 활성화하거나 비활성화하는 방법 [!DNL Adobe Experience Manager] 을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 64c09e454960a40632059a85f0861deed1899b86
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 3%
@@ -24,10 +24,10 @@ ht-degree: 3%
 **자산을 다운로드하려면**
 
 1. AEM의 왼쪽 위에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 탐색]** (나침반 아이콘)을 누릅니다.
-1. 탐색 페이지에서 **[!UICONTROL 자산 > 파일을 누릅니다]**.
+1. 탐색 페이지에서 자산 > **[!UICONTROL 파일을 누릅니다.]**
 1. 다운로드할 자산이 들어 있는 폴더로 이동합니다.
 1. 폴더를 선택하거나 폴더 내에서 하나 이상의 자산을 선택합니다.
-1. 도구 모음에서 다운로드를 **[!UICONTROL 누릅니다]**.
+1. 도구 모음에서 다운로드를 **[!UICONTROL 누릅니다.]**
 
    ![Experience Manager 자산에서 자산을 다운로드할 때 사용 가능한 옵션](/help/assets/assets/asset-download1.png)
 
@@ -44,7 +44,7 @@ ht-degree: 3%
    | **[!UICONTROL 스마트 자르기]** | AEM 내에서 선택한 자산의 모든 스마트 자르기 변환을 다운로드하려면 이 옵션을 선택합니다. 스마트 자르기 변환이 있는 zip 파일이 만들어지고 로컬 컴퓨터에 다운로드됩니다. |
    | **[!UICONTROL 동적 표현물]** | 일련의 대체 표현물을 실시간으로 생성하려면 이 옵션을 선택합니다. 이 옵션을 선택할 때 [이미지 사전 설정](image-presets.md) 목록에서 선택하여 동적으로 만들 표현물도 선택할 수 있습니다. <br>또한 측정 크기 및 단위, 형식, 색상 공간, 해상도 및 이미지 반전 등의 선택적 이미지 수정자를 선택할 수 있습니다. 이 옵션은 활성화된 경우에만 사용할 수 [!DNL Dynamic Media] 있습니다. |
 
-1. 대화 상자에서 다운로드를 **[!UICONTROL 누릅니다]**.
+1. 대화 상자에서 **[!UICONTROL 다운로드를 누릅니다]**.
 
 ## 자산 다운로드 서블릿 활성화 {#enable-asset-download-servlet}
 
