@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 8fa26e1d763950f370ba0adbc048efba612e8afc
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1720'
 ht-degree: 1%
@@ -47,15 +47,15 @@ ht-degree: 1%
 * &quot;bfc&quot; URL 매개 변수를 사용하여 스마트 이미징을 끌 수 있습니다.
 * TTL(Time To Live) 독립적입니다. 이전에는, 스마트 이미징이 작동되려면 최소 TTL이 12시간이었다.
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 Smart Imaging에서는 파생물만 캐시되어 단일 단계 캐시 무효화 프로세스를 허용합니다.
-* 사용자 지정 헤더를 규칙 세트에 사용하는 고객(예: &quot;타이밍 [출처 허용&quot;, &quot;X-Robot&quot;, 이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html))은 이전 버전의 Smart Imaging와 달리 헤더가 차단되지 않으므로 최신 스마트 이미징의 이점을 얻을 수 있습니다.
+* 사용자 지정 헤더를 규칙 세트에 사용하는 고객(예: &quot;타이밍 [출처 허용&quot;, &quot;X-Robot&quot;, 이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html))은 이전 버전의 Smart Imaging과 달리 헤더가 차단되지 않으므로 최신 Smart Imaging의 이점을 얻을 수 있습니다.
 
 ## 스마트 이미징과 관련된 라이선스 비용이 있습니까? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-아니오. 스마트 이미징은 Dynamic Media Classic(Scene7) 또는 AEM Dynamic Media(On Prem, AMS 및 AEM을 클라우드 서비스로 함)의 기존 라이선스에 포함되어 있습니다.
+아니오. 스마트 이미징은 Dynamic Media Classic(Scene7) 또는 AEM Dynamic Media(On Prem, AMS 및 AEM을 Cloud Service으로)의 기존 라이선스에 포함되어 있습니다.
 
 >[!NOTE]
 >
->Dynamic Media - Hybrid 고객은 스마트 이미징을 사용할 수 없습니다.
+>Dynamic Media - 하이브리드 고객은 스마트 이미징을 사용할 수 없습니다.
 
 
 ## 스마트 이미징은 어떻게 작동합니까? {#how-does-smart-imaging-work}
@@ -102,16 +102,16 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 스마트 이미징을 사용할 수 있습니까? {#am-i-eligible-to-use-smart-imaging}
 
-스마트 이미징을 사용하려면 회사의 AEM 계정에서 Dynamic Media Classic 또는 다이내믹 미디어가 다음 요구 사항을 충족해야 합니다.
+스마트 이미징을 사용하려면 회사의 Dynamic Media Classic 또는 AEM 계정의 Dynamic Media이 다음 요구 사항을 충족해야 합니다.
 
 * 라이선스의 일부로 Adobe 번들 CDN(Content Delivery Network)을 사용하십시오.
 * 일반 도메인(예:, `images.company.com` 또는 `mycompany.scene7.com`)이 아닌 전용 도메인 `s7d1.scene7.com`(예:, `s7d2.scene7.com`또는 `s7d13.scene7.com`)을 사용합니다.
 
 도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
 
-설정 **[!UICONTROL > 애플리케이션 설정 > 일반 설정을 누릅니다]**. 게시된 서버 이름 **[!UICONTROL 이라는 필드를 찾습니다]**. 현재 일반 도메인을 사용하고 있는 경우 기술 지원 티켓을 제출할 때 이 전환의 일부로 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
+설정 **[!UICONTROL > 애플리케이션 설정 > 일반 설정을 누릅니다.]** 게시된 서버 이름 **[!UICONTROL 이라는 필드를 찾습니다.]** 현재 일반 도메인을 사용하고 있는 경우 기술 지원 티켓을 제출할 때 이 전환의 일부로 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
 
-Dynamic Media 라이선스를 통해 첫 번째 사용자 지정 도메인을 추가 비용이 들지 않습니다.
+첫 번째 사용자 지정 도메인은 Dynamic Media 라이선스를 통해 추가 비용이 들지 않습니다.
 
 ## 내 계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
@@ -125,17 +125,17 @@ Dynamic Media 라이선스를 통해 첫 번째 사용자 지정 도메인을 �
 
       도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
 
-      설정 **[!UICONTROL > 응용 프로그램 설정 > 일반 설정을 클릭합니다]**.
+      설정 **[!UICONTROL > 응용 프로그램 설정 > 일반 설정을 클릭합니다.]**
 
-      게시된 서버 이름 **[!UICONTROL 이라는 필드를 찾습니다]**.
+      게시된 서버 이름 **[!UICONTROL 이라는 필드를 찾습니다.]**
    1. Adobe를 통해 CDN을 사용하고 있으며 직접적인 관계로 관리되지 않는지 확인합니다.
    1. 또는 `images.company.com` 와 같은 전용 도메인을 사용하고 있는지, `mycompany.scene7.com`그리고 일반 도메인(예: `s7d1.scene7.com`, `s7d2.scene7.com`) `s7d13.scene7.com`을 사용하고 있는지확인합니다.
 
       도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
 
-      설정 **[!UICONTROL > 응용 프로그램 설정 > 일반 설정을 클릭합니다]**.
+      설정 **[!UICONTROL > 응용 프로그램 설정 > 일반 설정을 클릭합니다.]**
 
-      게시된 서버 이름 **[!UICONTROL 이라는 필드를 찾습니다]**. 현재 일반 Dynamic Media Classic 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
+      게시된 서버 이름 **[!UICONTROL 이라는 필드를 찾습니다.]** 현재 일반 Dynamic Media Classic 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
    1. HTTP/2 이상에서 이 기능이 필요한지 여부를 표시합니다.
 
 1. 기술 지원에서 요청을 제출한 순서에 따라 스마트 이미징 고객 대기 목록에 추가합니다.
@@ -144,8 +144,8 @@ Dynamic Media 라이선스를 통해 첫 번째 사용자 지정 도메인을 �
 1. 지원이 완료되면 알림 메시지가 표시됩니다.
 1. 스마트 이미징의 성능 향상을 최대화하려면 TTL(Time To Live)을 24시간 이상으로 설정하는 것이 좋습니다. TTL은 CDN이 자산을 캐시하는 기간을 정의합니다. 이 설정을 변경하려면:
 
-   1. Dynamic Media Classic을 사용하는 경우 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버를 클릭합니다]**. 기본 **[!UICONTROL 클라이언트 캐시 시간을 라이브]** 값으로 24 이상으로 설정합니다.
-   1. Dynamic Media를 사용하는 경우 [다음 지침을 따르십시오](config-dynamic.md). 만료 **[!UICONTROL 값]** 24시간 이상을 설정합니다.
+   1. Dynamic Media Classic을 사용하는 경우 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버를 클릭합니다.]** 기본 **[!UICONTROL 클라이언트 캐시 시간을 라이브]** 값으로 24 이상으로 설정합니다.
+   1. Dynamic Media을 사용하는 경우 [다음 지침을 따르십시오](config-dynamic.md). 만료 **[!UICONTROL 값]** 24시간 이상을 설정합니다.
 
 ## Smart Imaging을 사용하여 계정을 활성화할 수 있는 시기는 언제입니까? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -156,7 +156,7 @@ Smart Imaging을 활성화하면 Adobe가 캐시를 지우므로 리드 타임�
 
 ## 스마트 이미징 사용을 위해 전환할 경우 어떤 위험이 있습니까? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-고객 웹 페이지에 대한 위험은 없습니다. 그러나 스마트 이미징으로 전환하는 경우 AEM에서 Dynamic Media Classic 또는 다이내믹 미디어의 새로운 구성으로 이동하는 것이 포함되므로 CDN의 캐시를 지웁니다.
+고객 웹 페이지에 대한 위험은 없습니다. 그러나 Smart Imaging로의 전환은 AEM의 새 Dynamic Media Classic 또는 Dynamic Media의 새 구성으로 이동하는 것을 포함하므로 CDN의 캐시를 지웁니다.
 
 초기 전환 중에 캐시되지 않은 이미지는 캐시가 다시 빌드될 때까지 Adobe의 원본 서버에 직접 접속됩니다. 이러한 이유로 Adobe는 한 번에 몇 가지 고객 전환을 처리하여 원본 고객의 요청을 가져올 때 허용되는 성능을 유지할 계획입니다. 대부분의 고객의 경우 캐시는 ~1~2일 내에 CDN에서 완전히 다시 빌드됩니다.
 
