@@ -1,6 +1,6 @@
 ---
 title: 자산 미리 보기
-description: Dynamic Media에서 자산을 미리 보는 방법 살펴보기
+description: Dynamic Media에서 에셋을 미리 보는 방법 살펴보기
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e6aba1f511754080305c0a97ce9bc85511f29a7
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 1%
@@ -36,8 +36,8 @@ ht-degree: 1%
 
 **소프트웨어 인터페이스를 사용하여 자산을 미리 보려면**
 
-1. [!UICONTROL Adobe Experience Manager **에서**[!UICONTROL 탐색 **** 페이지 **[!UICONTROL 에서 자산]**&#x200B;을 탭한 다음 **[!UICONTROL 파일Files를]** Assets에 액세스합니다.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
+1. [!UICONTROL Adobe Experience Manager **에서**[!UICONTROL 탐색 ******[!UICONTROL 페이지]**&#x200B;에서 자산 **[!UICONTROL 을 누른 다음 파일]** 을 눌러 자산에 액세스합니다.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View.]**
 1. (선택 사항) **[!UICONTROL 유형]** 열을 사용하여 미리 보기할 유형별로 자산을 정렬합니다.
 1. [ **[!UICONTROL 제목]** ] 열에서 미리 보려는 자산의 제목 이름(축소판 이미지가 아님)을 클릭합니다.
 1. 클릭한 자산 유형에 따라 다음 중 하나를 수행합니다.
@@ -87,7 +87,7 @@ ht-degree: 1%
       <td><p><strong>특정 변환에서 자산을 미리 보려면</strong></p>
       <ul>
       <li>페이지의 왼쪽 위 모서리 근처에 있는 아이콘을 클릭하면 드롭다운 목록이 나타납니다. 목록 <strong>에서 </strong>표현물을 클릭한 다음 미리 보려는 특정 표현물을 선택합니다.</li>
-      </ul> <p>미리 보기할 고해상도 비디오 변환을 선택하면 비디오가 잘릴 수 있습니다. 이는 미리 보기에 사용되는 임베디드 뷰어의 컨텍스트에서 고객이 보게 될 정확한 해상도를 표시 하기 때문입니다.</p> <p>자산 수준에서 응용 비디오 세트를 미리 보면 변환이 하나의 재생 경험으로 그룹화됩니다. 즉, 응용 비디오가 보기 장치 및 연결 속도 컨텍스트에서 최상의 해상도로 보기 위해 제대로 크기가 조정되고 재생됩니다.<br /> </p> <p><strong>특정 뷰어에서 자산을 미리 보려면</strong></p>
+      </ul> <p>미리 보기할 고해상도 비디오 변환을 선택하면 비디오가 잘릴 수 있습니다. 이는 미리 보기에 사용되는 임베드된 뷰어의 컨텍스트에서 고객이 보게 될 정확한 해상도를 보여 주기 때문입니다.</p> <p>자산 수준에서 응용 비디오 세트를 미리 보면 변환이 하나의 재생 경험으로 그룹화됩니다. 즉, 응용 비디오가 보기 장치 및 연결 속도 컨텍스트에서 최상의 해상도로 보기 위해 제대로 크기가 조정되고 재생됩니다.<br /> </p> <p><strong>특정 뷰어에서 자산을 미리 보려면</strong></p>
       <ul>
       <li>페이지의 왼쪽 위 모서리 근처에 있는 아이콘을 클릭하면 드롭다운 목록이 나타납니다. 목록에서 <strong>뷰어를</strong> 클릭한 다음 자산에 적용할 뷰어를 선택합니다.</li>
       </ul> </td>
