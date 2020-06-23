@@ -9,17 +9,17 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b6a7648699bc8e8e041749fb03998f86a27292ce
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '3129'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
 
 # 페이지에 Dynamic Media 자산 추가{#adding-dynamic-media-assets-to-pages}
 
-To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. 이렇게 하려면 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. Dynamic Media 구성 요소는 편리하게도 이미지나 비디오를 추가하는지 여부와 그에 따라 사용 가능한 구성 옵션이 달라집니다.
+To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. 이렇게 하려면 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. Dynamic Media 구성 요소는 스마트합니다. 이 구성 요소는 이미지를 추가하는지 아니면 비디오를 추가하는지 알며 사용 가능한 구성 옵션이 그에 따라 변경됩니다.
 
 AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가합니다. WCM에 서드 파티를 사용하는 경우 자산을 [연결하거나](/help/assets/linking-urls-to-yourwebapplication.md) 포함시킵니다 [](/help/assets/embed-code.md) . 반응형 타사 웹 사이트의 경우 반응형 사이트에 최적화된 이미지 [제공을 참조하십시오](/help/assets/responsive-site.md).
 
@@ -29,13 +29,13 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-3D 미디어, 다이내믹 미디어, 인터랙티브 미디어, 파노라마 미디어, 스마트 자르기 비디오 또는 비디오 360 미디어 구성 요소를 페이지에 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media 구성 요소는 다음 섹션에 설명되어 있습니다.
+3D 미디어, Dynamic Media, 대화형 미디어, 파노라마 미디어, 스마트 자르기 비디오 또는 비디오 360 미디어 구성 요소를 페이지에 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media 구성 요소는 다음 섹션에 설명되어 있습니다.
 
 1. AEM에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
 1. 페이지 왼쪽의 패널에서(사이드 패널 표시 전환 필요) 구성 요소 **[!UICONTROL 아이콘을]** 클릭합니다.
-1. 구성 **[!UICONTROL 요소]** 머리글 아래의 드롭다운 목록에서 **[!UICONTROL 다이내믹 미디어를 선택합니다]**.
+1. 구성 **[!UICONTROL 요소]** 머리글 아래의 드롭다운 목록에서 **[!UICONTROL Dynamic Media을 선택합니다.]**
 
-   사용할 수 있는 다이내믹 미디어 구성 요소 목록이 없는 경우 사용할 다이내믹 미디어 구성 요소를 활성화해야 합니다. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
+   사용 가능한 Dynamic Media 구성 요소 목록이 없을 경우 사용하려는 Dynamic Media 구성 요소를 활성화해야 합니다. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -45,13 +45,13 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
-1. 페이지에 배치한 Dynamic Media 구성 요소에 따라 구성 대화 상자가 열립니다. [필요에 따라 구성 요소의 옵션을](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) 설정합니다.
+1. 페이지에 드롭한 Dynamic Media 구성 요소에 따라 구성 대화 상자가 열립니다. [필요에 따라 구성 요소의 옵션을](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) 설정합니다.
 
-   아래의 예는 Dynamic Media **[!UICONTROL Video 360 미디어]** 구성 요소 대화 상자와 뷰어 사전 설정 드롭다운 목록에서 사용할 수 있는 옵션을 보여줍니다.
+   아래 예는 Dynamic Media **[!UICONTROL Video 360 미디어]** 구성 요소 대화 상자와 뷰어 사전 설정 드롭다운 목록에서 사용할 수 있는 옵션을 보여줍니다.
 
    ![비디오 360 미디어 구성 요소](assets/6_5_360video_wcmcomponentviewerpreset.png)
 
-   Dynamic Media Video 360 미디어 구성 요소입니다.
+   Dynamic Media 비디오 360 미디어 구성 요소입니다.
 
 1. 완료되면 대화 상자의 오른쪽 위 모서리에서 확인 표시를 눌러 변경 내용을 저장합니다.
 
@@ -64,7 +64,7 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
    ![편집 템플릿](/help/assets/assets-dm/edit-template.png)
 
-1. 페이지 위쪽 도구 모음 오른쪽의 드롭다운 목록에서 **[!UICONTROL 구조를 누릅니다]**.
+1. 페이지 위쪽 도구 모음 오른쪽의 드롭다운 목록에서 **[!UICONTROL 구조를 누릅니다.]**
 
    ![정책](/help/assets/assets-dm/structure-mode.png)
 
@@ -73,14 +73,14 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
    ![허용된 구성 요소](/help/assets/assets-dm/allowed-components.png)
 
-1. 다이내믹 미디어가 표시될 때까지 **[!UICONTROL 스크롤합니다]**.
-1. Dynamic Media의 왼쪽에 있는 > **[!UICONTROL 아이콘을]** 눌러 목록을 확장하고 활성화할 Dynamic Media 구성 요소를 선택합니다.
+1. Dynamic Media이 표시될 때까지 **[!UICONTROL 스크롤합니다.]**
+1. Dynamic Media 왼쪽에 있는 > 아이콘을 눌러 **** 목록을 확장하고 활성화할 Dynamic Media 구성 요소를 선택합니다.
 
    ![Dynamic Media 구성 요소 목록](/help/assets/assets-dm/dm-components-select.png)
 
 1. [레이아웃 컨테이너] 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 완료(확인 표시]** ) 아이콘을 누릅니다.
 
-1. 페이지 상단 근처에 있는 도구 모음 오른쪽에 있는 드롭다운 목록에서 **[!UICONTROL 초기 컨텐츠]**&#x200B;를 탭한 다음 평소대로 페이지에 [Dynamic Media 구성 요소를](#adding-a-dynamic-media-component-to-a-page) 추가합니다.
+1. 페이지 상단 근처의 도구 모음 오른쪽에 있는 드롭다운 목록에서 **[!UICONTROL 초기 컨텐츠]**&#x200B;를 누른 다음 Dynamic Media 구성 요소를 페이지에 [평소대로](#adding-a-dynamic-media-component-to-a-page) 추가합니다.
 
 ## Dynamic Media 구성 요소 현지화 {#localizing-dynamic-media-components}
 
@@ -98,11 +98,11 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
 ## Dynamic Media 구성 요소 {#dynamic-media-components}
 
-Dynamic Media 구성 요소는 **[!UICONTROL 구성 요소]** 아이콘을 누른 다음 **[!UICONTROL 다이내믹 미디어를 필터링할 때 사용할 수 있습니다]**.
+Dynamic Media 구성 요소는 구성 요소 **** 아이콘을 누른 다음 **[!UICONTROL Dynamic Media에 대해 필터링할 때 사용할 수 있습니다.]**
 
-사용할 수 있는 다이내믹 미디어 구성 요소는 다음과 같습니다.
+사용 가능한 Dynamic Media 구성 요소에는 다음이 포함됩니다.
 
-* **[!UICONTROL 다이내믹 미디어]** - 이미지, 비디오, e카탈로그 및 스핀 세트와 같은 자산에 사용합니다.
+* **[!UICONTROL Dynamic Media]** - 이미지, 비디오, e카탈로그 및 스핀 세트와 같은 에셋에 사용합니다.
 * **[!UICONTROL 인터랙티브한 미디어]** - 인터랙티브한 비디오, 인터랙티브한 이미지 또는 회전 메뉴 세트와 같은 인터랙티브한 자산에 사용할 수 있습니다.
 * **[!UICONTROL 파노라마 미디어]** - 파노라마 이미지 또는 파노라마 VR 이미지 자산에 사용합니다.
 * **[!UICONTROL 비디오 360 미디어]** - 360 비디오 및 360 VR 비디오 에셋에 사용합니다.
@@ -121,7 +121,7 @@ Dynamic Media 구성 요소는 스마트합니다. 이미지를 추가하는지 
 >
 >웹 페이지에 다음이 있는 경우:
 >
->* 동일한 페이지에서 사용되는 Dynamic Media 구성 요소의 여러 인스턴스.
+>* 동일한 페이지에서 사용 중인 Dynamic Media 구성 요소의 다중 인스턴스.
 >* 각 인스턴스는 동일한 자산 유형을 사용합니다.
 >
 >
@@ -140,13 +140,13 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
 구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지가 응답하도록 하기 위해 중단점을 설정하거나 응답형 이미지 사전 설정을 적용할 수 있습니다.
 
-You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
+You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings.]**
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. 고정 크기로 설정하려면 **[!UICONTROL 고급]** 탭의 구성 요소에서 **[!UICONTROL 폭]** 및 **[!UICONTROL 높이]**&#x200B;를 설정하십시오.
+>기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height.]**
 
 * **[!UICONTROL 뷰어 사전 설정]**- 드롭다운 메뉴에서 기존 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. 뷰어 사전 설정 관리를 참조하십시오. 이미지 사전 설정을 사용 중일 때는 뷰어 사전 설정을 선택할 수 없고 그 반대의 경우도 마찬가지입니다.
 
@@ -185,7 +185,7 @@ You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTRO
 
 #### 비디오 작업 시 {#when-working-with-video}
 
-다이내믹 미디어 구성 요소를 사용하여 웹 페이지에 다이내믹 비디오를 추가합니다. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 설정된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
+Dynamic Media 구성 요소를 사용하여 웹 페이지에 동적 비디오를 추가합니다. 구성 요소를 편집할 때 페이지에서 비디오를 재생하기 위해 사전 설정된 비디오 뷰어 사전 설정을 사용하도록 선택할 수 있습니다.
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
@@ -223,7 +223,7 @@ You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit
 
 >[!NOTE]
 >
->기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. 고정 크기로 설정하려면 **[!UICONTROL 고급]** 탭의 구성 요소에서 **[!UICONTROL 폭]** 및 **[!UICONTROL 높이]**&#x200B;를 설정하십시오.
+>기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height.]**
 
 * **[!UICONTROL 이미지 수정자]**- 추가 이미지 명령을 제공하여 이미지 효과를 적용할 수 있습니다. 이러한 내용은 이미지 사전 설정 및 이미지 제공 명령 참조에 설명되어 있습니다.
 
@@ -328,18 +328,18 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 
 원하는 뷰어 사전 설정이 표시되지 않는 경우 게시되었는지 확인하십시오. 뷰어 사전 설정을 사용하려면 먼저 게시해야 합니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 
 
-### HTTP/2를 사용하여 다이내믹 미디어 에셋 전달 {#using-http-to-delivery-dynamic-media-assets}
+### HTTP/2를 사용하여 Dynamic Media 에셋 전달 {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 정보를 빠르게 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. HTTP/2를 통해 다이내믹 미디어 에셋을 전달할 수 있으므로 응답 및 로드 시간이 향상됩니다.
+HTTP/2는 브라우저와 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 정보를 빠르게 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 에셋 배달을 HTTP/2를 통해 더 나은 응답 및 로드 시간을 제공할 수 있습니다.
 
-Dynamic Media 계정 [으로 HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 HTTP2 컨텐츠](/help/assets/http2.md) 배달을 참조하십시오.
+Dynamic Media 계정에서 HTTP/2 사용을 시작하는 방법에 대한 자세한 내용은 [HTTP2 컨텐츠](/help/assets/http2.md) 배달을 참조하십시오.
 
 >[!MORELIKETHIS]
 >
 >* [AEM Dynamic Media에서 비디오 플레이어 사용](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
 >* [AEM Dynamic Media에서 대화형 비디오 사용](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
->* [AEM Dynamic Media를 사용한 자산 뷰어 이해](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
+>* [AEM Dynamic Media을 사용한 자산 뷰어 이해](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
 >* [AEM Dynamic Media에서 사용자 지정 비디오 축소판 사용](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
->* [AEM Dynamic Media를 사용한 색상 관리 이해](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
+>* [AEM Dynamic Media을 사용한 색상 관리 이해](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
 >* [AEM Dynamic Media에서 이미지 선명하게 하기 사용](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-image-sharpening-feature-video-use.html)
 
