@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '2873'
 ht-degree: 26%
@@ -87,7 +87,7 @@ Dynamic Media 클래식(Scene7) 구성 요소를 페이지에 추가하는 것�
 
 1. AEM에서 Dynamic Media Classic(Scene7) 구성 요소를 추가할 페이지를 엽니다.
 
-1. 사용 가능한 Dynamic Media Classic 구성 요소가 없으면 **[!UICONTROL 디자인]** 모드를 클릭하고 파란색 테두리가 있는 구성 요소를 탭하고 **[!UICONTROL 상위]** 아이콘을 누른 다음 **[!UICONTROL 구성]** 아이콘을누릅니다. Parsys( **[!UICONTROL Design)]**&#x200B;에서 모든 Dynamic Media Classic 구성 요소를 선택하여 사용 가능하게 만들고 확인을 **[!UICONTROL 클릭합니다]**.
+1. 사용 가능한 Dynamic Media Classic 구성 요소가 없으면 **[!UICONTROL 디자인]** 모드를 클릭하고 파란색 테두리가 있는 구성 요소를 탭하고 **[!UICONTROL 상위]** 아이콘을 누른 다음 **[!UICONTROL 구성]** 아이콘을누릅니다. Parsys( **[!UICONTROL Design)]**&#x200B;에서 모든 Dynamic Media Classic 구성 요소를 선택하여 사용 가능하게 만들고 확인을 **[!UICONTROL 클릭합니다.]**
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
@@ -210,7 +210,7 @@ Tap **[!UICONTROL Edit]** to configure the component. You can configure [setting
 
 #### 동적으로 텍스트 변경 {#changing-text-dynamically}
 
-텍스트를 동적으로 변경하려면 필드에 새 텍스트를 입력하고 **[!UICONTROL 확인]**&#x200B;을 클릭하십시오. 이 예에서 **[!UICONTROL 가격]**&#x200B;은 현재 $50이며 배송비는 99센트입니다.
+텍스트를 동적으로 변경하려면 필드에 새 텍스트를 입력하고 **[!UICONTROL 확인을 클릭하십시오.]** 이 예에서 **[!UICONTROL 가격]**&#x200B;은 현재 $50이며 배송비는 99센트입니다.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -220,7 +220,7 @@ Tap **[!UICONTROL Edit]** to configure the component. You can configure [setting
 
 #### 클라이언트 컨텍스트 값을 반영하도록 텍스트 변경 {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-To link a field to a client context value, tap **[!UICONTROL Select]** to open the client-context menu, select the client context, and tap **[!UICONTROL OK]**. 이 예제에서 이름은 프로필의 형식이 지정된 이름과 연결되어 변경됩니다.
+To link a field to a client context value, tap **[!UICONTROL Select]** to open the client-context menu, select the client context, and tap **[!UICONTROL OK.]** 이 예제에서 이름은 프로필의 형식이 지정된 이름과 연결되어 변경됩니다.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -230,12 +230,12 @@ To link a field to a client context value, tap **[!UICONTROL Select]** to open t
 
 #### Dynamic Media 클래식 이미지 템플릿을 링크로 만들기 {#making-the-scene-image-template-a-link}
 
-1. Dynamic Media의 클래식 **[!UICONTROL 이미지 템플릿]** 구성 요소가 있는 페이지에서 편집을 **[!UICONTROL 누릅니다]**.
+1. Dynamic Media의 클래식 **[!UICONTROL 이미지 템플릿]** 구성 요소가 있는 페이지에서 편집을 **[!UICONTROL 누릅니다.]**
 1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. In the **[!UICONTROL Open in]** field, select whether you want the target to open (a new window or same window).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. 확인을 **[!UICONTROL 누릅니다]**.
+1. 확인을 **[!UICONTROL 누릅니다.]**
 
 ### 비디오 구성 요소 {#video-component}
 
@@ -343,7 +343,7 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 
 
-**[!UICONTROL 게시 상태]** - 게시 상태를 기반으로 자산에 대해 필터링할 수 있습니다. **[!UICONTROL 게시 취소]** 또는 **[!UICONTROL 게시됨]**. If you do not select any **[!UICONTROL Publish Status]**, AEM by default searches all publish statuses.
+**[!UICONTROL 게시 상태]** - 게시 상태를 기반으로 자산에 대해 필터링할 수 있습니다. **[!UICONTROL 게시 취소]** 또는 **[!UICONTROL 게시됨.]** 게시 상태를 선택하지 않으면 기본적으로 **[!UICONTROL AEM은]**&#x200B;모든 게시 상태를 검색합니다.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
