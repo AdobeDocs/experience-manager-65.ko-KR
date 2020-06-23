@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 메타데이터, 이미지 또는 비디오 프로필을 만든 후 새로 업로드된 자산의 대상으로 사용하는 하나 이상의 폴더에 할당합니다.
 
-AEM 자산에서 프로필 사용과 관련된 중요한 개념은 폴더에 할당된다는 것입니다. 프로필 내에는 비디오 프로필 또는 이미지 프로필과 함께 메타데이터 프로필 형식의 설정이 있습니다. 이러한 설정은 하위 폴더와 함께 폴더의 컨텐츠를 처리합니다. 따라서 파일 및 폴더의 이름 지정 방법, 하위 폴더 정렬 방법 및 이러한 폴더 내의 파일을 처리하는 방법은 해당 자산이 프로필로 처리되는 방식에 큰 영향을 줍니다.
+AEM Assets에서 프로필 사용에 대한 중요한 개념은 폴더에 프로필 할당된다는 것입니다. 프로필 내에는 비디오 프로필 또는 이미지 프로필과 함께 메타데이터 프로필 형식의 설정이 있습니다. 이러한 설정은 하위 폴더와 함께 폴더의 컨텐츠를 처리합니다. 따라서 파일 및 폴더의 이름 지정 방법, 하위 폴더 정렬 방법 및 이러한 폴더 내의 파일을 처리하는 방법은 해당 자산이 프로필로 처리되는 방식에 큰 영향을 줍니다.
 일관되고 적절한 파일 및 폴더 이름 지정 전략을 사용하고 적절한 메타데이터 방법을 사용하여 디지털 에셋 컬렉션을 최대한 활용하고 적합한 프로필을 통해 올바른 파일을 처리할 수 있습니다.
 
 >[!NOTE]
@@ -44,15 +44,15 @@ AEM 자산에서 프로필 사용과 관련된 중요한 개념은 폴더에 할
 
 >[!NOTE]
 >
->동적 *미디어에 적용 - AEM 6.4.6.0 이상에서만 Scene7 모드* .
+>Dynamic Media에 *적용 - AEM 6.4.6.0 이상에서만 Scene7 모드* .
 
 나중에 변경한 기존 처리 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다.
 
 예를 들어 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 에셋에는 자동으로 이미지 프로필이 자산에 적용됩니다. 하지만 나중에 프로필에 새로운 스마트 자르기 비율을 추가하기로 합니다. 이제 자산을 선택하고 다시 폴더에 업로드하지 않고 *Scene7을 실행하기만 하면 됩니다. 자산 재처리* 워크플로우.
 
-처리를 처음으로 실패한 자산에 대해 재처리 워크플로우를 실행할 수 있습니다. 따라서 처리 프로필을 편집하거나 처리 프로필을 적용하지 않았더라도 언제든지 자산 폴더에서 재처리 워크플로우를 실행할 수 있습니다.
+처리가 처음으로 실패한 자산에 대해 재처리 워크플로우를 실행할 수 있습니다. 따라서 처리 프로필을 편집하거나 처리 프로필을 적용하지 않았더라도 언제든지 자산 폴더에서 재처리 워크플로우를 실행할 수 있습니다.
 
-선택적으로 재처리 워크플로우의 일괄 처리 크기를 최대 1,000개의 자산에 대한 기본 50개의 자산에서 조정할 수 있습니다. Scene7 _을 실행할 때: 폴더에서 자산_ 재처리 워크플로우를 수행하면 자산이 일괄적으로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후 전체 배치 세트의 각 자산의 메타데이터는 AEM에서 업데이트됩니다. 배치 크기가 매우 큰 경우 처리 지연이 발생할 수 있습니다. 또는 일괄 처리 크기가 너무 작으면 Dynamic Media 서버로 왕복 이동이 너무 많을 수 있습니다.
+선택적으로 재처리 워크플로우의 일괄 처리 크기를 최대 1,000개의 자산에 대한 기본 50개의 자산에서 조정할 수 있습니다. Scene7 _을 실행할 때: 폴더에서 자산_ 재처리 워크플로우를 수행하면 자산이 일괄적으로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후 전체 배치 세트의 각 자산의 메타데이터는 AEM에서 업데이트됩니다. 배치 크기가 매우 큰 경우 처리 지연이 발생할 수 있습니다. 또는 일괄 처리 크기가 너무 작으면 Dynamic Media 서버로 너무 많은 라운드 트윗이 발생할 수 있습니다.
 
 재처리 워크플로우 [의 일괄 처리 크기 조정을 참조하십시오](#adjusting-load).
 
@@ -74,20 +74,20 @@ Dynamic Media 서버에서 마이그레이션 게시 에이전트를 비활성�
    * 기본 선택된 폴더에 자산이 있는 하위 폴더가 하나 이상 있는 경우, 워크플로우는 폴더 계층 구조의 모든 자산을 다시 처리합니다.
    * 자산 수가 1,000개가 넘는 폴더 계층 구조에서 이 워크플로우를 실행하지 않는 것이 좋습니다.
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 타임라인을 클릭합니다]**.
+1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 타임라인을 클릭합니다.]**
 1. 페이지의 왼쪽 아래 모서리 근처에 있는 [주석] 필드 오른쪽에 있는 캐럿 아이콘( **^** )을 클릭합니다.
 
    ![자산 재처리 워크플로우 1](/help/assets/assets/reprocess-assets1.png)
 
-1. 워크플로우 **[!UICONTROL 시작을 클릭합니다]**.
-1. 워크플로우 **[!UICONTROL 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7: 자산 재처리를 참조하십시오]**.
+1. 워크플로우 **[!UICONTROL 시작을 클릭합니다.]**
+1. 워크플로우 **[!UICONTROL 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7: 자산 재처리를 참조하십시오.]**
 1. (선택 사항) 워크플로우 **텍스트** 제목 입력 필드에 워크플로우의 이름을 입력합니다. 필요한 경우 이 이름을 사용하여 워크플로우 인스턴스를 참조할 수 있습니다.
 
    ![자산 재처리 2](/help/assets/assets/reprocess-assets2.png)
 
-1. 시작 **[!UICONTROL 을]**&#x200B;클릭한 다음 **[!UICONTROL 확인을 클릭합니다]**.
+1. 시작 **[!UICONTROL 을]**&#x200B;클릭한 다음 **[!UICONTROL 확인을 클릭합니다.]**
 
-   워크플로우를 모니터링하거나 진행 상황을 확인하려면 AEM 기본 콘솔 페이지에서 **[!UICONTROL 도구 > 워크플로우를 클릭합니다]**. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 작업 내역 **[!UICONTROL 열기를 클릭합니다]**. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
+   워크플로우를 모니터링하거나 진행 상황을 확인하려면 AEM 기본 콘솔 페이지에서 **[!UICONTROL 도구 > 워크플로우를 클릭합니다.]** 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 작업 내역 **[!UICONTROL 열기를 클릭합니다.]** 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
 
 ### 재처리 워크플로우의 일괄 처리 크기 조정 {#adjusting-load}
 
@@ -95,12 +95,12 @@ Dynamic Media 서버에서 마이그레이션 게시 에이전트를 비활성�
 
 **재처리 워크플로우의 일괄 처리 크기를 선택적으로 조정하려면**
 
-1. Adobe Experience Manager에서 **[!UICONTROL Adobe Experience Manager]** 를 클릭하여 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** (망치) 아이콘 > **[!UICONTROL 워크플로우 > 모델]**&#x200B;을 클릭합니다.
-1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다. 자산 재처리를 참조하십시오]**.
+1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]** 를 클릭하여 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** (망치) 아이콘 > **[!UICONTROL 워크플로우>모델을 클릭합니다.]**
+1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다. 자산 재처리를 참조하십시오.]**
 
    ![Scene7이 있는 워크플로우 모델 페이지: 카드 보기에서 선택한 자산 재처리 워크플로우](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. 도구 모음에서 **[!UICONTROL 편집을 클릭합니다]**. 새 브라우저 탭이 Scene7을 엽니다. 자산 워크플로우 모델 페이지 재처리
+1. 도구 모음에서 **[!UICONTROL 편집을 클릭합니다.]** 새 브라우저 탭이 Scene7을 엽니다. 자산 워크플로우 모델 페이지 재처리
 1. Scene7에서: 자산 재처리 워크플로우 페이지에서 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 편집을]** 클릭하여 워크플로우를 &quot;잠금 해제&quot;합니다.
 1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 연 다음 도구 모음에서 구성 **[!UICONTROL 을]** 클릭합니다.
 
@@ -111,20 +111,21 @@ Dynamic Media 서버에서 마이그레이션 게시 에이전트를 비활성�
    * 핸들러가 다음 단계로 **[!UICONTROL 이동할 경우 핸들러]** 고급을 선택합니다.
    * 시간 **[!UICONTROL 초과]** 필드에 외부 프로세스 시간 초과(초)를 입력합니다.
    * [ **[!UICONTROL 기간]** ] 필드에 외부 프로세스 완료를 테스트할 폴링 간격(초)을 입력합니다.
-   * [ **[!UICONTROL 배치] 필드에]** Dynamic Media 서버 일괄 처리 업로드 작업에서 처리할 최대 자산 수(50-1000)를 입력합니다.
+   * [ **[!UICONTROL 배치] 필드에]** Dynamic Media 서버 배치 처리 업로드 작업에서 처리할 최대 자산 수(50-1000)를 입력합니다.
    * 시간 초과에 **[!UICONTROL 도달했을]** 때 진행하려면 [시간 초과에 대한 진행]을 선택합니다. 시간 초과에 도달할 때 받은 편지함으로 계속 진행하려면 선택 취소합니다.
+
    ![속성 대화 상자](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Scene7 - 단계 **[!UICONTROL 속성]** 대화 상자의 오른쪽 위 모서리에서 완료를 **[!UICONTROL 클릭합니다]**.
+1. Scene7 - 단계 **[!UICONTROL 속성]** 대화 상자의 오른쪽 위 모서리에서 완료를 **[!UICONTROL 클릭합니다.]**
 
-1. Scene7의 오른쪽 위 모서리: 자산 재처리 워크플로우 모델 페이지에서 동기화를 **[!UICONTROL 클릭합니다]**. 동기화된 ****&#x200B;워크플로우 런타임 모델은 성공적으로 동기화되어 폴더의 에셋을 재처리할 준비가 되었습니다.
+1. Scene7의 오른쪽 위 모서리: 자산 재처리 워크플로우 모델 페이지에서 동기화를 **[!UICONTROL 클릭합니다.]** 동기화된 ****&#x200B;워크플로우 런타임 모델은 성공적으로 동기화되어 폴더의 에셋을 재처리할 준비가 되었습니다.
 
    ![워크플로우 모델 동기화](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Scene7을 표시하는 브라우저 탭을 닫습니다. 자산 워크플로우 모델 재처리
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite.]**
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -135,10 +136,10 @@ Dynamic Media 서버에서 마이그레이션 게시 에이전트를 비활성�
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, click **[!UICONTROL Add.]** The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
+1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
 1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
