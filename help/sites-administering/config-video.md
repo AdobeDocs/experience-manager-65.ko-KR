@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: 071f4a292343f0ad52ca3700c95bf60f03c307cc
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -74,7 +74,7 @@ AEM을 **구성하려면**&#x200B;다음 단계를 따르십시오.
    >
    >수정이 필요한 속성뿐만 아니라 전체 프로필 노드를 오버레이하고 편집합니다. 이러한 리소스는 SlingResourceCombination을 통해 해결되지 않습니다.
 
-4. If you changed either of the properties, click **[!UICONTROL Save All]**.
+4. If you changed either of the properties, click **[!UICONTROL Save All.]**
 
 >[!NOTE]
 >
