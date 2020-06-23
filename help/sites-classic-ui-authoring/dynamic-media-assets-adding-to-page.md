@@ -10,16 +10,19 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+workflow-type: tm+mt
+source-wordcount: '1724'
+ht-degree: 56%
 
 ---
 
 
-# Adding Dynamic Media assets to pages{#adding-dynamic-media-assets-to-pages}
+# 페이지에 Dynamic Media 자산 추가{#adding-dynamic-media-assets-to-pages}
 
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. 다이내믹 미디어 및 대화형 미디어 구성 요소는 편리하게도 이미지를 추가할지 아니면 비디오를 추가할지를 판단하고 그에 따라 사용 가능한 선택 사항도 달라집니다.
 
-AEM 파섹
+AEM을 WCM으로 사용하는 경우 다이내믹 미디어 자산을 페이지에 직접 추가합니다.
 
 >[!NOTE]
 >
@@ -45,17 +48,17 @@ Adding the [!UICONTROL Dynamic Media] or [!UICONTROL Interactive Media] componen
 
 ## Dynamic Media 구성 요소 {#dynamic-media-components}
 
-[!UICONTROL 다이내믹 미디어] 및 [!UICONTROL 인터랙티브 미디어는] 다이내믹 미디어 아래의 [!UICONTROL 사이드] 킥에서 사용할 수 **[!UICONTROL 있습니다]**. 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용합니다. 기타 모든 다이내믹 미디어 구성 요소의 경우에는 **[!UICONTROL Dynamic Media]** 구성 요소를 사용하십시오.
+[!UICONTROL Dynamic Media] 및 [!UICONTROL 인터랙티브 미디어] 는 [!UICONTROL Dynamic Media의 사이드] 킥에서 사용할 수 있습니다 **[!UICONTROL .]** 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용합니다. 기타 모든 다이내믹 미디어 구성 요소의 경우에는 **[!UICONTROL Dynamic Media]** 구성 요소를 사용하십시오.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
->이러한 구성 요소는 기본적으로 사용할 수 없으며 사용하기 전에 디자인 모드에서 선택해야 합니다. [디자인 모드에서](/help/sites-authoring/default-components-designmode.md)사용 가능하게 되면 다른 AEM 구성 요소처럼 페이지에 구성 요소를 추가할 수 있습니다.
+>이러한 구성 요소는 기본적으로 사용할 수 없으며 사용하기 전에 디자인 모드에서 선택해야 합니다. [디자인 모드에서](/help/sites-authoring/default-components-designmode.md)사용할 수 있게 되면 다른 AEM 구성 요소처럼 페이지에 구성 요소를 추가할 수 있습니다.
 
 ### Dynamic Media 구성 요소 {#dynamic-media-component}
 
-Dynamic Media 구성 요소는 스마트합니다. 이미지를 추가할지 아니면 비디오를 추가하는지에 따라 다양한 옵션이 제공됩니다. 이 구성 요소는 이미지 사전 설정, 이미지 세트와 같은 이미지 기반 뷰어, 스핀 세트, 혼합 미디어 집합 및 비디오를 지원합니다. 또한 뷰어는 반응형입니다. 화면 크기가 화면 크기에 따라 자동으로 조정됩니다. 모든 뷰어는 HTML5 기반 뷰어입니다.
+Dynamic Media 구성 요소는 지능적입니다. 이미지를 추가하는지 아니면 비디오를 추가하는지에 따라 다양한 옵션이 제공됩니다. 이 구성 요소는 이미지 사전 설정, 이미지 세트와 같은 이미지 기반 뷰어, 스핀 세트, 혼합 미디어 집합 및 비디오를 지원합니다. 또한 뷰어는 응답적입니다. 화면 크기가 화면의 크기에 따라 자동으로 조정되는 방식입니다. 모든 뷰어는 HTML5 기반 뷰어입니다.
 
 >[!NOTE]
 >
@@ -63,6 +66,7 @@ Dynamic Media 구성 요소는 스마트합니다. 이미지를 추가할지 아
 >
 >* [Dynamic Media를 활성화](/help/assets/config-dynamic.md)했습니다. Dynamic Media는 기본적으로 비활성화됩니다.
 >* 이미지에 피라미드형 tiff 파일이 있습니다. 다이내믹 미디어를 활성화하기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
+
 >
 
 
@@ -107,11 +111,11 @@ You can edit the following [!UICONTROL Advanced Settings] by clicking **[!UICONT
 
 이미지 세트, 스핀 세트 또는 혼합 미디어 집합을 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
-**[!UICONTROL URL, 열기]** 위치 - 자산을 설정하여 링크를 열 수 있습니다. Set the **[!UICONTROL URL]** and **[!UICONTROL Open in]** to indicate whether you want it to open in the same window or a new window.
+**[!UICONTROL URL, 열기]** - 링크를 열 자산을 설정할 수 있습니다. Set the **[!UICONTROL URL]** and **[!UICONTROL Open in]** to indicate whether you want it to open in the same window or a new window.
 
 이미지 세트, 스핀 세트 또는 혼합 미디어 집합을 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
-**[!UICONTROL 폭 및 높이]** - 이미지를 고정 크기로 설정하려면 값을 픽셀 단위로 입력합니다. 이 값을 공백으로 두면 자산이 적응형으로 설정됩니다.
+**[!UICONTROL 너비 및 높이]** - 이미지의 크기를 고정하려면 값을 픽셀 단위로 입력합니다. 이 값을 공백으로 두면 자산이 적응형으로 설정됩니다.
 
 #### When working with video {#when-working-with-video}
 
@@ -131,19 +135,19 @@ You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONT
 
 **[!UICONTROL 제목]** - 비디오 제목을 변경합니다.
 
-**[!UICONTROL 폭 및 높이]** - 비디오의 크기를 고정하려면 값을 픽셀 단위로 입력합니다. 이 값을 공백으로 두면 적응형으로 설정됩니다.
+**[!UICONTROL 너비 및 높이]** - 비디오를 고정 크기로 설정하려면 값을 픽셀 단위로 입력합니다. 이 값을 공백으로 두면 적응형으로 설정됩니다.
 
 #### 보안 비디오 제공 방법 {#how-to-delivery-secure-video}
 
 AEM 6.2에서 [FP-13480](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480)을 설치하면 비디오가 보안 SSL 연결(HTTPS)을 통해 제공되는지 아니면 비보안 연결(HTTP)을 통해 제공되는지를 제어할 수 있습니다. 기본적으로, 비디오 제공 프로토콜은 포함 웹 페이지의 프로토콜에서 자동으로 상속됩니다. 웹 페이지가 HTTPS를 통해 로드되는 경우 비디오도 HTTPS를 통해 제공됩니다. 또한 반대로, 웹 페이지가 HTTP에 있는 경우에는 비디오가 HTTP를 통해 제공됩니다. 대부분의 경우 이러한 기본 동작은 정상적이며 구성을 변경할 필요가 없습니다. 그러나 비디오 제공 URL 경로의 끝이나 포함 코드 조각에 있는 다른 뷰어 구성 매개 변수 목록에 `VideoPlayer.ssl=on`을 추가하여 이 기본 동작을 무시함으로써 보안 비디오 제공을 강제 적용할 수 있습니다.
 
-보안 비디오 제공과 URL 경로에 있는 `VideoPlayer.ssl` 구성 속성에 대한 자세한 내용은 뷰어 참조 가이드의 [보안 비디오 제공](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_viewer_20_securevideodelivery.html)을 참조하십시오. 비디오 뷰어 외에도 혼합 미디어 뷰어와 대화형 비디오 뷰어에서 보안 비디오 제공을 사용할 수 있습니다.
+보안 비디오 제공과 URL 경로에 있는 `VideoPlayer.ssl` 구성 속성에 대한 자세한 내용은 뷰어 참조 가이드의 [보안 비디오 제공](https://marketing.adobe.com/resources/help/ko_KR/s7/viewers_ref/c_html5_video_viewer_20_securevideodelivery.html)을 참조하십시오. 비디오 뷰어 외에도 혼합 미디어 뷰어 및 대화형 비디오 뷰어에 보안 비디오 제공을 사용할 수 있습니다.
 
 ### 대화형 미디어 구성 요소 {#interactive-media-component}
 
 대화형 미디어 구성 요소는 핫스팟이나 이미지 맵과 같은 상호 작용이 있는 자산을 위한 것입니다. 대화형 이미지, 대화형 비디오 또는 회전 배너가 있는 경우 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용하십시오.
 
-The [!UICONTROL Interactive Media] component is smart – depending on whether you add an image or a video, you have various options. 또한 뷰어는 반응형입니다. 화면 크기가 화면 크기에 따라 자동으로 조정됩니다. 모든 뷰어는 HTML5 기반 뷰어입니다.
+The [!UICONTROL Interactive Media] component is smart – depending on whether you add an image or a video, you have various options. 또한 뷰어는 응답적입니다. 화면 크기가 화면의 크기에 따라 자동으로 조정되는 방식입니다. 모든 뷰어는 HTML5 기반 뷰어입니다.
 
 ![chlimage_1-75](assets/chlimage_1-75a.png)
 
@@ -153,12 +157,12 @@ The [!UICONTROL Interactive Media] component is smart – depending on whether y
 
 **[!UICONTROL 제목]** - 비디오 제목을 변경합니다.
 
-**[!UICONTROL 폭 및 높이]** - 비디오의 크기를 고정하려면 값을 픽셀 단위로 입력합니다. 이 값을 공백으로 두면 적응형으로 설정됩니다.
+**[!UICONTROL 너비 및 높이]** - 비디오를 고정 크기로 설정하려면 값을 픽셀 단위로 입력합니다. 이 값을 공백으로 두면 적응형으로 설정됩니다.
 
 You can edit the following **[!UICONTROL Add To Cart** settings by clicking **[!UICONTROL Edit]** in the component.
 
-**[!UICONTROL 제품 자산]** 표시 - 기본적으로 이 값이 선택됩니다. 제품 자산은 상거래 모듈에 정의된 제품의 이미지를 보여줍니다. 제품 자산을 표시하지 않도록 하려면 확인 표시를 지우십시오.
+**[!UICONTROL 제품 자산 표시]** - 기본적으로 이 값이 선택되어 있습니다. 제품 자산은 상거래 모듈에 정의된 제품의 이미지를 보여줍니다. 제품 자산을 표시하지 않도록 하려면 확인 표시를 지우십시오.
 
-**[!UICONTROL 제품 가격]** 표시 - 기본적으로 이 값이 선택됩니다. 제품 가격은 상거래 모듈에 정의된 항목 가격을 보여줍니다. 제품 가격을 표시하지 않도록 하려면 확인 표시를 지우십시오.
+**[!UICONTROL 제품 가격 표시]** - 기본적으로 이 값이 선택됩니다. 제품 가격은 상거래 모듈에 정의된 항목 가격을 보여줍니다. 제품 가격을 표시하지 않도록 하려면 확인 표시를 지우십시오.
 
 **[!UICONTROL 제품 양식]** 표시 - 기본적으로 이 값은 선택되어 있지 않습니다. 제품 양식에는 크기 및 색상과 같은 모든 제품 변형이 포함됩니다. 제품 변형을 표시하지 않도록 하려면 확인 표시를 지우십시오.
