@@ -8,10 +8,10 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1628'
-ht-degree: 65%
+ht-degree: 61%
 
 ---
 
@@ -72,7 +72,7 @@ Scene7 비디오 구성 요소에 대해 다음 형식이 지원됩니다.
 
 범용 사전 설정을 구성하려면:
 
-1. **[!UICONTROL 클라우드 서비스]**&#x200B;에서 **[!UICONTROL Scene7]** 구성으로 이동한 후 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
+1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Scene7]** configuration and click **[!UICONTROL Edit.]**
 1. **[!UICONTROL 비디오]** 탭을 선택합니다.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -93,7 +93,7 @@ Scene7 비디오 구성 요소에 대해 다음 형식이 지원됩니다.
 
 ## 뷰어 및 인코딩 사전 설정 업데이트 {#updating-viewer-and-encoding-presets}
 
-Scene7에서 사전 설정이 업데이트되었기 때문에 AEM에서 비디오에 대한 뷰어 및 인코딩 사전 설정을 업데이트해야 할 경우 클라우드 구성에서 Scene7 구성으로 이동한 후 **[!UICONTROL 뷰어 및 인코딩 사전 설정 업데이트]**&#x200B;를 클릭합니다.
+If you need to update the viewer and encoding presets for video in AEM because the presets have been updated in Scene7, navigate to the Scene7 configuration in the cloud configuration and click **[!UICONTROL Update the viewer and encoding presets.]**
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -150,7 +150,7 @@ S7 클라우드 구성에서 선택한 S7 인코딩 사전 설정에 따라 다�
 
 1. AEM에서 **[!UICONTROL 도구 > 구성 콘솔을 누릅니다**.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. 새 S7 비디오 프로필을 만듭니다. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. 새 S7 비디오 프로필을 만듭니다. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create.]**
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
