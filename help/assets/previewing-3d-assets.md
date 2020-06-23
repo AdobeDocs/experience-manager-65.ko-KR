@@ -4,7 +4,7 @@ description: 3D 자산을 미리 보는 방법 살펴보기
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 11%
@@ -14,7 +14,7 @@ ht-degree: 11%
 
 # AEM에서 3D 자산 미리 보기{#previewing-3d-assets-aem}
 
-Adobe Experience Manager는 제작 프로세스의 일환으로 3D 자산의 업로드, 전달 및 대화형 미리 보기를 지원합니다.
+Adobe Experience Manager은 작성 프로세스의 일환으로 3D 자산의 업로드, 전달 및 대화형 미리 보기를 지원합니다.
 
 대화형 3D 뷰어는 AEM의 자산 세부 사항 페이지에서 사용할 수 있습니다. 이 뷰어에는 3D 자산을 궤도를 따라 이동하고, 확대/축소하고, 패닝할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
 
@@ -52,7 +52,7 @@ Adobe Experience Manager는 제작 프로세스의 일환으로 3D 자산의 업
 
 1. 3D 자산을 AEM에 업로드했는지 확인합니다.
 3D 미리 [보기](#supported-3d-previewing-assets) 및 자산 [업로드에 지원되는 형식을 참조하십시오](/help/assets/managing-assets-touch-ui.md#uploading-assets).
-1. AEM의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 > 파일]**&#x200B;을 탭합니다.
+1. AEM의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 >파일을 탭합니다.]**
 
    ![탐색 페이지](/help/assets/assets-dm/navigation-assets.png)
 
@@ -81,4 +81,4 @@ Adobe Experience Manager는 제작 프로세스의 일환으로 3D 자산의 업
    * **재설정**- 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 눌러 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정은 카메라를 더 가깝게 또는 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시합니다.
    * **전체 화면 모드**- 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래에 있는 전체 화면 아이콘을 누릅니다.
 
-1. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 닫기를 **[!UICONTROL 누릅니다]**.
+1. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 닫기를 **[!UICONTROL 누릅니다.]**
