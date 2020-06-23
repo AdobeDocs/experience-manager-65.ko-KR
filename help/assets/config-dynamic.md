@@ -10,7 +10,7 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '8031'
 ht-degree: 1%
@@ -144,7 +144,7 @@ Dynamic Media의 고객인 경우 모든 Dynamic Media 컨텐츠의 전달 메�
 
 >[!NOTE]
 >
->실행 모드를 통해 동적 미디어를 활성화하는 것은 플래그를 `dynamicMediaEnabled` true로 설정하여 동적 미디어를 활성화한 AEM 6.1 및 AEM 6.0의 기능을 대체합니다 ****. 이 플래그는 AEM 6.2 이상 버전에 기능이 없습니다. 또한 다이내믹 미디어를 활성화하기 위해 빠른 시작을 다시 시작할 필요가 없습니다.
+>실행 모드를 통해 동적 미디어를 활성화하는 것은 플래그를 `dynamicMediaEnabled` **[!UICONTROL true로 설정하여 동적 미디어를 활성화한 AEM 6.1 및 AEM 6.0의 기능을 대체합니다.]** 이 플래그는 AEM 6.2 이상 버전에 기능이 없습니다. 또한 다이내믹 미디어를 활성화하기 위해 빠른 시작을 다시 시작할 필요가 없습니다.
 
 Dynamic Media을 활성화하면 UI에서 다이내믹 미디어 기능을 사용할 수 있고 업로드된 모든 이미지 자산은 다이내믹 이미지 표현물을 신속하게 전달하는 데 사용되는 *cqdam.pyramid.tiff* 표현물을 받습니다. 이러한 PTIFF는 (1) 추가 저장 공간 없이 단일 기본 소스 이미지만을 관리하고 무한 변환을 즉석에서 생성할 수 있는 기능, (2) 확대/축소, 이동, 회전 등과 같은 대화형 시각화를 사용할 수 있는 기능 등 많은 이점을 제공합니다.
 
@@ -263,12 +263,12 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
 **인증을 설정하려면**
 
 1. 아직 KeyStore 파일 및 암호를 보유하고 있지 않은 경우 고객 지원 센터에 문의하십시오. 이 설정은 프로비저닝의 일부이며 해당 키를 계정에 연결합니다.
-1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구 > 보안 > 사용자를 누릅니다]**.
+1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구 > 보안 > 사용자를 누릅니다.]**
 1. 사용자 관리 페이지에서 **[!UICONTROL 다이내믹 미디어 복제]** 사용자로 이동한 다음 을 눌러 엽니다.
 
    ![dm-replication](assets/dm-replication.png)
 
-1. Edit User Settings For Dynamic-media-replication 페이지에서 Keystore **[!UICONTROL 탭을]** 누른 다음 KeyStore **[!UICONTROL 만들기를 클릭합니다]**.
+1. Edit User Settings For Dynamic-media-replication 페이지에서 Keystore **[!UICONTROL 탭을]** 누른 다음 KeyStore **[!UICONTROL 만들기를 클릭합니다.]**
 
    ![dm-replication-keystore](assets/dm-replication-keystore.png)
 
@@ -282,7 +282,7 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
 1. [ **[!UICONTROL 동적 미디어 복제를 위한 사용자 설정 편집]** ] 페이지에서 KeyStore 파일 **** 영역에서 개인 키 추가 영역을 확장하고 다음을 추가합니다(다음 이미지 참조).
 
    * 새 **[!UICONTROL 별칭]** 필드에 나중에 복제 구성에서 사용할 별칭의 이름을 입력합니다. 예를 들면 다음과 같습니다 `replication`.
-   * KeyStore **[!UICONTROL 파일을 누릅니다]**. Adobe에서 제공한 KeyStore 파일로 이동하여 선택한 다음 **[!UICONTROL 열기를 누릅니다]**.
+   * KeyStore **[!UICONTROL 파일을 누릅니다.]** Adobe에서 제공한 KeyStore 파일로 이동하여 선택한 다음 열기를 **[!UICONTROL 누릅니다.]**
    * KeyStore **[!UICONTROL 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 이 암호는 5단계에서 만든 KeyStore 암호가 **아니지만** Adobe에서 제공하는 KeyStore 파일 암호입니다. KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * 개인 **[!UICONTROL 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 개인 키 암호와 동일할 수 있음). Adobe는 제공하는 동안 사용자에게 보낸 환영 이메일에 개인 키 암호를 제공합니다. 개인 키 암호를 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
    * 개인 **[!UICONTROL 키 별칭]** 필드에 개인 키 별칭을 입력합니다. 예, `*companyname*-alias`. Adobe는 제공하는 동안 귀하에게 보낸 환영 이메일에 개인 키 별칭을 제공합니다. 개인 키 별칭을 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
@@ -295,28 +295,28 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
 
 ### 복제 에이전트 구성 {#configuring-the-replication-agent}
 
-1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구 > 배포 > 복제 > 작성자의 에이전트를 누릅니다]**.
-1. 작성자 페이지의 에이전트 페이지에서 **[!UICONTROL Dynamic Media 하이브리드 이미지 복제(s7delivery)를 누릅니다]**.
-1. 편집을 **[!UICONTROL 누릅니다]**.
+1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구 > 배포 > 복제 > 작성자의 에이전트를 누릅니다.]**
+1. 작성자 페이지의 에이전트 페이지에서 **[!UICONTROL Dynamic Media 하이브리드 이미지 복제(s7delivery)를 누릅니다.]**
+1. 편집을 **[!UICONTROL 누릅니다.]**
 1. 설정 **[!UICONTROL 탭을]** 누른 다음 다음을 입력합니다.
 
    * **[!UICONTROL 활성화됨]** - 복제 에이전트를 활성화하려면 이 확인란을 선택합니다.
    * **[!UICONTROL 지역]** - 해당 지역으로 설정합니다. 북미, 유럽 또는 아시아
    * **[!UICONTROL 테넌트 ID]** - 이 값은 Replication Service에 게시되는 회사/테넌트의 이름입니다. 이 값은 프로비전 중에 Adobe가 사용자에게 보낸 환영 이메일에서 제공하는 테넌트 ID입니다. 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 키 저장소 별칭]** - 이 값은 인증 설정에서 키를 생성할 때 설정된** 새 별칭** 값 [과 같습니다](#setting-up-authentication). 예를 들면 다음과 같습니다 `replication`. (인증 [설정의 7단계를 참조하십시오](#setting-up-authentication).)
-   * **[!UICONTROL 키 저장소 암호]** - 키 저장소 만들기를 탭했을 때 만들어진 키 **[!UICONTROL 스토어 암호입니다]**. Adobe는 이 암호를 제공하지 않습니다. 인증 [설정의 5단계를 참조하십시오](#setting-up-authentication).
+   * **[!UICONTROL 키 저장소 암호]** - KeyStore 만들기를 탭했을 때 만들어진 KeyStore **[!UICONTROL 암호입니다.]** Adobe는 이 암호를 제공하지 않습니다. 인증 [설정의 5단계를 참조하십시오](#setting-up-authentication).
 
    다음 이미지는 샘플 데이터가 있는 복제 에이전트를 보여줍니다.
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
-1. 확인을 **[!UICONTROL 누릅니다]**.
+1. 확인을 **[!UICONTROL 누릅니다.]**
 
 ### Dynamic Media에 대한 복제 에이전트 유효성 확인 {#validating-the-replication-agent-for-dynamic-media}
 
 다이내믹 미디어용 복제 에이전트의 유효성을 확인하려면 다음을 수행하십시오.
 
-연결 **[!UICONTROL 테스트를 누릅니다]**. 출력의 예는 다음과 같습니다.
+연결 **[!UICONTROL 테스트를 누릅니다.]** 출력의 예는 다음과 같습니다.
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -451,7 +451,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 **솔루션:**
 
-1. AEM에서 도구 > **[!UICONTROL 일반 > CRXDE Lite를 클릭합니다]**.
+1. AEM에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite를 클릭합니다.]**
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -462,7 +462,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
    `enableOauth=true`
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장을 탭합니다]**.
+1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장을 탭합니다.]**
 
 ### 구성 테스트 {#testing-your-configuration}
 
@@ -477,8 +477,8 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. 이미지 자산을 업로드합니다. (자산에서 **[!UICONTROL 만들기 > 파일]** 을 누르고 파일을 선택합니다.)
 1. 워크플로가 완료될 때까지 기다립니다.
-1. 이미지 자산을 게시합니다. 자산을 선택하고 빠른 게시 **[!UICONTROL 를 누릅니다]**.
-1. 이미지를 열고 표현물을 눌러 해당 이미지의 표현물로 **[!UICONTROL 이동합니다]**.
+1. 이미지 자산을 게시합니다. (자산을 선택하고 **[!UICONTROL 빠른 게시를 누릅니다.]**)
+1. 이미지를 열고 표현물을 눌러 해당 이미지의 표현물로 **[!UICONTROL 이동합니다.]**
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
@@ -499,8 +499,8 @@ Dynamic Media 클라우드 서비스를 설정하기 전에 게시 인스턴스�
 
 다이내믹 미디어 클라우드 서비스를 구성하려면:
 
-1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > Cloud Service > Dynamic Media 구성(Pre-6.3)을 누릅니다]**.
-1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL 전역]**&#x200B;을 선택한 다음 **[!UICONTROL 만들기를 누릅니다]**.
+1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > Cloud Service > Dynamic Media 구성(Pre-6.3)을 누릅니다.]**
+1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL 글로벌]**&#x200B;을 선택한 다음 만들기를 **[!UICONTROL 누릅니다.]**
 1. Dynamic Media **[!UICONTROL 구성]** 만들기 대화 상자의 제목 필드에 제목을 입력합니다.
 1. 비디오용 Dynamic Media을 구성하는 경우
 
@@ -625,7 +625,7 @@ JCR을 통해 설정 프로세스의 일부로 고유한 기본 카탈로그 설
    `https://<*server*>:<*port*>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
 1. 복제 **[!UICONTROL 탭을]** 누릅니다.
-1. 복제를 **[!UICONTROL 누릅니다]**.
+1. 복제를 **[!UICONTROL 누릅니다.]**
 
 ## 뷰어 사전 설정 복제 {#replicating-viewer-presets}
 
@@ -701,16 +701,16 @@ JCR을 통해 설정 프로세스의 일부로 고유한 기본 카탈로그 설
 
 비디오 전용 Dynamic Media을 사용하는 경우 다음 단계에 따라 복제를 위한 자산 필터를 설정합니다.
 
-1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > 배포 > 복제 > 작성자의 에이전트를 누릅니다]**.
-1. 작성자 페이지의 에이전트 **[!UICONTROL 에서 기본 에이전트(게시)를 누릅니다]**.
-1. 편집을 **[!UICONTROL 누릅니다]**.
+1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > 배포 > 복제 > 작성자의 에이전트를 누릅니다.]**
+1. 작성자 페이지의 [에이전트] 페이지에서 **[!UICONTROL 기본 에이전트(게시)를 누릅니다.]**
+1. 편집을 **[!UICONTROL 누릅니다.]**
 1. [ **[!UICONTROL 에이전트 설정]** ] 대화 상자의 [ **[!UICONTROL 설정]** ] 탭에서 **[!UICONTROL [사용]** ]을 선택하여에이전트를 켜십시오.
-1. 확인을 **[!UICONTROL 누릅니다]**.
-1. AEM에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite를 누릅니다]**.
+1. 확인을 **[!UICONTROL 누릅니다.]**
+1. AEM에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite를 누릅니다.]**
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
-1. 필터 **[!UICONTROL 비디오를]**&#x200B;찾아 마우스 오른쪽 버튼으로 클릭한 다음 **[!UICONTROL 복사를 선택합니다]**.
+1. 필터 **[!UICONTROL 비디오를]**&#x200B;찾아 마우스 오른쪽 버튼으로 클릭한 다음 **[!UICONTROL 복사를 선택합니다.]**
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/publish`
-1. jcr: **[!UICONTROL content]**&#x200B;를 찾아 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 붙여넣기를 선택합니다]**.
+1. jcr: **[!UICONTROL content]**&#x200B;를 찾아 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 붙여넣기를 선택합니다.]**
 
 비디오 자체는 Dynamic Media 클라우드 서비스에서 전달하는 동안 비디오 포스터 이미지 및 재생에 필요한 비디오 메타데이터를 제공하는 AEM 게시 인스턴스를 설정합니다. 또한 이 필터는 원본 비디오와 정적 축소판 표현물 복제에서 제외되며, 게시 인스턴스에는 필요하지 않습니다.
 
@@ -718,20 +718,20 @@ JCR을 통해 설정 프로세스의 일부로 고유한 기본 카탈로그 설
 
 비프로덕션 배포의 이미징에 Dynamic Media을 사용하는 경우 다음 단계에 따라 복제를 위한 자산 필터를 설정합니다.
 
-1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > 배포 > 복제 > 작성자의 에이전트를 누릅니다]**.
-1. 작성자 페이지의 에이전트 **[!UICONTROL 에서 기본 에이전트(게시)를 누릅니다]**.
-1. 편집을 **[!UICONTROL 누릅니다]**.
+1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > 배포 > 복제 > 작성자의 에이전트를 누릅니다.]**
+1. 작성자 페이지의 [에이전트] 페이지에서 **[!UICONTROL 기본 에이전트(게시)를 누릅니다.]**
+1. 편집을 **[!UICONTROL 누릅니다.]**
 1. [ **[!UICONTROL 에이전트 설정]** ] 대화 상자의 [ **[!UICONTROL 설정]** ] 탭에서 **[!UICONTROL [사용]** ]을 선택하여에이전트를 켜십시오.
-1. 확인을 **[!UICONTROL 누릅니다]**.
-1. AEM에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite를 누릅니다]**.
+1. 확인을 **[!UICONTROL 누릅니다.]**
+1. AEM에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite를 누릅니다.]**
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
-1. 필터 **[!UICONTROL 이미지를]**&#x200B;찾아 마우스 오른쪽 버튼으로 클릭한 다음 **[!UICONTROL 복사를 선택합니다]**.
+1. 필터 이미지 **[!UICONTROL 를]**&#x200B;찾아 마우스 오른쪽 버튼으로 클릭하고 **[!UICONTROL 복사를 선택합니다.]**
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/publish`
-1. jcr: **[!UICONTROL content]**&#x200B;를 찾아 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 노드 만들기를 선택합니다]**. 유형 `damRenditionFilters` 의 이름을 입력합니다 `nt:unstructured`.
-1. 위치를 `damRenditionFilters`찾아 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 붙여넣기를 선택합니다]**.
+1. jcr: **[!UICONTROL content]**&#x200B;를 찾아 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 노드 만들기를 선택합니다.]** 유형 `damRenditionFilters` 의 이름을 입력합니다 `nt:unstructured`.
+1. 위치를 `damRenditionFilters`찾아 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 붙여넣기를 선택합니다.]**
 
 비프로덕션 환경에 이미지를 전달하는 AEM 게시 인스턴스를 설정합니다. 또한 이 필터는 원본 이미지 및 정적 표현물 복제에서 제외되며, 게시 인스턴스에는 필요하지 않습니다.
 
@@ -745,14 +745,14 @@ JCR을 통해 설정 프로세스의 일부로 고유한 기본 카탈로그 설
 
 선택적으로 복제용 자산 필터를 사용자 정의하려면
 
-1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 > **[!UICONTROL 일반 > CRXDE Lite를 누릅니다]**.
+1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 > **[!UICONTROL 일반 > CRXDE Lite를 누릅니다.]**
 1. 왼쪽 폴더 트리에서 필터 `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` 로 이동합니다.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
 1. 필터에 대한 MIME 유형을 정의하려면 다음과 같이 MIME 형식을 찾을 수 있습니다.
 
-   왼쪽 레일에서 확장한 다음 표 `content > dam > <locate_your_asset> >  jcr:content > metadata` 에서 **[!UICONTROL dc:format을 찾습니다]**.
+   왼쪽 레일에서 확장한 다음 표 `content > dam > <locate_your_asset> >  jcr:content > metadata` 에서 **[!UICONTROL dc:format을 찾습니다.]**
 
    다음 그래픽은 자산의 dc:format 경로의 예입니다.
 
@@ -810,7 +810,7 @@ Dynamic Media은 활성화한 [후 즉시 작동합니다](#enabling-dynamic-med
 
 Dynamic Media 이미지 서버 설정을 구성하려면:
 
-1. AEM의 왼쪽 위 모서리에서 **[!UICONTROL Adobe Experience Manager]** 를 탭하여 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구 > 작업 > 웹 콘솔을 탭합니다]**.
+1. AEM의 왼쪽 위 모서리에서 **[!UICONTROL Adobe Experience Manager]** 를 탭하여 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구 > 작업 > 웹 콘솔을 탭합니다.]**
 1. Adobe Experience Manager 웹 콘솔 구성 페이지에서 **[!UICONTROL OSGi > 구성을]** 탭하여 현재 AEM 내에서 실행 중인 모든 번들을 나열합니다.
 
    Dynamic Media 배달 서버는 목록의 다음 이름 아래에 있습니다.
@@ -864,7 +864,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
  </tbody>
 </table>
 
-1. 저장을 **[!UICONTROL 누릅니다]**.
+1. 저장을 **[!UICONTROL 누릅니다.]**
 1. Adobe CQ Scene7 PlatformServer의 오른쪽에 있는 번들 목록에서 **[!UICONTROL 편집]** 아이콘을 누릅니다.
 1. Adobe CQ Scene7 PlatformServer 대화 상자에서 다음 기본 값 옵션을 설정합니다.
 
@@ -890,7 +890,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
 
 아래 표에 설명된 대로 새 값을 입력하여 속성 값을 변경할 수 있습니다.
 
-기본 매니페스트의 변경 작업이 끝나면 페이지의 왼쪽 위 모서리에서 모두 **[!UICONTROL 저장을 탭합니다]**.
+기본 매니페스트의 변경 작업이 끝나면 페이지의 왼쪽 위 모서리에서 모두 저장을 **[!UICONTROL 누릅니다.]**
 
 속성 탭 오른쪽에 있는 **[!UICONTROL 액세스 제어]** 탭을 누른 다음 모든 사용자 및 동적 미디어 복제 사용자에 대해 액세스 제어 권한을 `jcr:read` 설정합니다.
 
@@ -998,7 +998,7 @@ Feature Pack을 설치한 후 RGB 또는 CMYK 이미지 데이터를 요청할 �
 
    색상 교정 속성은 색상 교정 **속성 표에 설명되어** 있습니다. 색상 교정 속성에 지정할 수 있는 값은 **색상 프로파일** 표에 있습니다.
 
-   예를 들어 **[!UICONTROL 이름]**&#x200B;에서 `iccprofilecmyk`추가 **[!UICONTROL 를]** 선택한 `String`다음 `WebCoated` a **[!UICONTROL Value]**&#x200B;를으로 추가합니다. 그런 다음 **[!UICONTROL 추가를]** 누른 다음 **[!UICONTROL 모두를]** 저장하여 값을 저장합니다.
+   예를 들어 **[!UICONTROL 이름]**&#x200B;에서 `iccprofilecmyk`추가 **[!UICONTROL , 유형]**`String`을 `WebCoated` 선택한 다음 **[!UICONTROL 는값으로 추가합니다.]** 그런 다음 **[!UICONTROL 추가를]** 누른 다음 **[!UICONTROL 모두를]** 저장하여 값을 저장합니다.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1246,9 +1246,9 @@ Feature Pack을 설치한 후 RGB 또는 CMYK 이미지 데이터를 요청할 �
  </tbody>
 </table>
 
-1. 모두 **[!UICONTROL 저장을 누릅니다]**.
+1. 모두 **[!UICONTROL 저장을 누릅니다.]**
 
-예를 들어 iccprofilergb를 **[!UICONTROL 로]** 설정하고 `sRGB`iccprofilecmyk **[!UICONTROL 를]** WebCoated로 설정할 수 **[!UICONTROL 있습니다]**.
+예를 들어 iccprofilergb를 **[!UICONTROL 로]** 설정하고 `sRGB`iccprofilecmyk를 **[!UICONTROL WebCoated로]** 설정할 수 **[!UICONTROL 있습니다.]**
 
 이렇게 하면 다음이 수행됩니다.
 
