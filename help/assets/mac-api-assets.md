@@ -3,7 +3,7 @@ title: Assets HTTP API in [!DNL Adobe Experience Manager].
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -28,9 +28,9 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 ## 콘텐츠 조각 {#content-fragments}
 
-컨텐츠 [조각은](/help/assets/content-fragments.md) 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 자산(예: 이미지 또는 문서)에 몇 가지 차이가 있으므로 컨텐츠 조각 처리에 일부 추가 규칙이 적용됩니다. `standard`
+컨텐츠 [조각은](/help/assets/content-fragments/content-fragments.md) 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 자산(예: 이미지 또는 문서)에 몇 가지 차이가 있으므로 컨텐츠 조각 처리에 일부 추가 규칙이 적용됩니다. `standard`
 
-자세한 내용은 [Experience Manager Assets HTTP API의 콘텐츠 조각 지원을 참조하십시오](/help/assets/assets-api-content-fragments.md).
+자세한 내용은 Experience Manager 자산 HTTP API의 [콘텐츠 조각 지원을 참조하십시오](/help/assets/assets-api-content-fragments.md).
 
 ## Data model {#data-model}
 
@@ -51,7 +51,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 >[!NOTE]
 >
->폴더 또는 자산의 일부 속성이 다른 접두사에 매핑됩니다. 접두어 `jcr` , `jcr:title`및 `jcr:description`는 `jcr:language` `dc` 접두사로 대체됩니다. 따라서 반환된 JSON에 `dc:title` 각각 및 `dc:description` 의 값 `jcr:title` 을 포함시키고 `jcr:description`있습니다.
+>폴더 또는 자산의 일부 속성이 다른 접두사에 매핑됩니다. 접두어 `jcr` , `jcr:title`및 `jcr:description`는 `jcr:language` `dc` 접두사로 대체됩니다. 따라서 반환된 JSON에 `dc:title` 는 `dc:description` 각각 `jcr:title` 및 `jcr:description`의 값을 포함합니다.
 
 **링크** 폴더에는 세 개의 링크가 표시됩니다.
 
@@ -67,7 +67,7 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 * 원본 변환(원래 업로드된 에셋), 축소판 및 다양한 기타 표현물과 같은 여러 표현물. 추가 변환은 서로 다른 크기의 이미지, 다른 비디오 인코딩 또는 PDF 또는 [!DNL Adobe InDesign] 파일에서 추출한 페이지일 수 있습니다.
 * 선택적 주석.
 
-콘텐츠 조각의 요소에 대한 자세한 내용은 Experience Manager Assets HTTP API의 [콘텐츠 조각 지원을 참조하십시오](/help/assets/assets-api-content-fragments.md#content-fragments).
+컨텐츠 조각의 요소에 대한 자세한 내용은 Experience Manager 자산 HTTP API에서 [컨텐츠 조각 지원을 참조하십시오](/help/assets/assets-api-content-fragments.md#content-fragments).
 
 폴더 [!DNL Experience Manager] 에는 다음 구성 요소가 있습니다.
 
