@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+workflow-type: tm+mt
+source-wordcount: '2000'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +33,7 @@ SPA Editor는 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합
 
 ### 아티클 목표 {#article-objective}
 
-이 문서에서는 간단한 SPA 애플리케이션을 사용하여 기본적인 컨텐츠 편집을 시연함으로써 SPA 편집기의 연습을 안내하기 전에 SPA의 기본 개념을 소개합니다. 그런 다음 페이지 구성, SPA 응용 프로그램이 AEM SPA 편집기와 관련 및 상호 작용하는 방법을 자세히 다룹니다.
+이 문서에서는 간단한 SPA 애플리케이션을 사용하여 기본적인 컨텐츠 편집을 시연함으로써 SPA 편집기의 연습을 안내하기 전에 SPA의 기본 개념을 소개합니다. 그런 다음 페이지 구성, SPA 응용 프로그램이 AEM SPA 편집기와 관련 및 상호 작용하는 방법 등을 자세히 다룹니다.
 
 이 소개 및 연습의 목적은 AEM 개발자에게 SPA가 연관성이 있는 이유, 일반적으로 작동하는 방식, AEM SPA 편집기에서 SPA를 처리하는 방법, 표준 AEM 응용 프로그램과 다른 방식을 시연하는 것입니다.
 
@@ -225,7 +228,7 @@ SPA가 최종 사용자에 대해 동작하는 방식을 경험하고 SPA 페이
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   AEM SPA 편집기는 AEM [Content Services](/help/assets/content-fragments.md) 를 활용하여 페이지의 전체 컨텐츠를 JSON 모델로 전달합니다.
+   AEM SPA 편집기는 AEM [Content Services](/help/assets/content-fragments/content-fragments.md) 를 활용하여 페이지의 전체 컨텐츠를 JSON 모델로 전달합니다.
 
    Sling Models는 특정 인터페이스를 구현하여 SPA에 필요한 정보를 제공합니다. JSON 데이터의 배달은 각 구성 요소(페이지, 단락, 구성 요소 등)에 하향 위임됩니다.
 
