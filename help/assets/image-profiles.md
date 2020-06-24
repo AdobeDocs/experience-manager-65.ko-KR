@@ -8,7 +8,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
 source-wordcount: '2755'
 ht-degree: 4%
@@ -257,14 +257,12 @@ Sharpening is described in [Sharpening Images](/help/assets/assets/s7_sharpening
 
       * 이미지에 스마트 자르기 또는 스마트 색상 견본만 있는 경우 자르기 상자의 모서리 핸들을 드래그하여 자르기 영역의 보기 가능한 크기를 조정합니다.
       * 이미지에 스마트 자르기 및 스마트 색상 견본이 모두 있는 경우 자르기 상자의 모서리 핸들을 드래그하여 자르기의 보기 가능한 영역의 크기를 조정합니다. 또는 이미지 아래의 스마트 견본을 누르거나 클릭한 다음(색상 견본은 정적임) 자르기 상자의 모서리 핸들을 드래그하여 견본의 볼 수 있는 영역의 크기를 조정합니다.
-
       ![이미지의 스마트 자르기 크기 조정](assets/edit_smart_crops-resize.png)
 
    * 스마트 자르기 상자를 이동합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 색상 견본만 있으면 자르기 상자를 새 위치로 드래그합니다.
       * 이미지에 스마트 자르기 및 스마트 색상 견본이 모두 있는 경우 스마트 자르기 상자를 새 위치로 드래그합니다. 또는 이미지 아래의 스마트 견본을 누르거나 클릭한 다음(색상 견본은 정적입니다) 스마트 견본 자르기 상자를 새로운 위치로 드래그합니다.
-
       ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * 모든 편집 내용을 실행 취소하고 원본 스마트 자르기 또는 스마트 견본을 복원합니다(현재 편집 세션에만 적용).
