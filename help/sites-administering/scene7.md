@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '5474'
+source-wordcount: '5473'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,6 @@ Dynamic Media Classic을 사용하려면 Dynamic Media Classic 및 AEM Assets이
 >* Dynamic Media Classic의 DHTML 뷰어 플랫폼은 2014년 1월 31일에 공식적으로 사용 종료되었다. 자세한 내용은 [DHTML 뷰어 사용 종료 FAQ를 참조하십시오](../sites-administering/dhtml-viewer-endoflifefaqs.md).
 >* AEM에서 작동하도록 Dynamic Media Classic을 구성하기 전에 Dynamic Media Classic과 AEM [을](#best-practices-for-integrating-scene-with-aem) 통합하는 우수 사례를 참조하십시오.
 >* 사용자 지정 프록시 구성과 함께 Dynamic Media Classic을 사용하는 경우, AEM의 일부 기능으로서 두 HTTP 클라이언트 프록시 구성을 모두 구성해야 하며, 일부 다른 기능은 3.x API를 사용하고 있습니다. 3.x는 http://localhost:4502/system/console/configMgr/com.day.commons.httpclient으로 [구성되며](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) 4.x는 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator으로 구성됩니다](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
-
 >
 
 
@@ -343,7 +342,6 @@ Dynamic Media Classic에 자산을 게시할 수 있도록 AEM을 구성하려�
 >
 >* 게시 시 Dynamic Media Classic에 다시 연결할 때 게시 시 암호를 재설정해야 할 수도 있고 다시 연결할 경우 작동하지 않습니다. 이 문제는 작성 인스턴스에 문제가 아닙니다.
 >* 지역, 회사 이름과 같은 값을 수정하는 경우 Dynamic Media Classic에 다시 연결해야 합니다. 구성 옵션이 수정되었지만 저장되지 않은 경우 AEM에서 구성이 유효함을 잘못 표시합니다. 다시 연결해야 합니다.
-
 >
 
 
@@ -571,7 +569,7 @@ Digital Asset Manager/Dynamic Media Classic 자산의 동기화에 의해 트리
 
    예, `psprocess="rasterize"&psresolution=120` .
 
-   사용할 수 있는 추가 업로드 작업 매개 변수는 [Adobe Dynamic Media](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/) Classic Image Production System API를 참조하십시오.
+   사용할 수 있는 추가 업로드 작업 매개 변수는 [Adobe Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html) Classic Image Production System API를 참조하십시오.
 
    >[!NOTE]
    >
