@@ -33,6 +33,7 @@ ht-degree: 1%
    >
    >
 * Dynamic Media [구성 - 하이브리드](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) 모드에서 Dynamic Media Cloud Service 구성을 참조하십시오.
+
 >
 
 
@@ -472,6 +473,7 @@ Google 클라우드 설정을 구성하려면:
 
    * 프로젝트의 대시보드의 시작하기 카드에서 탐색 **[!UICONTROL 및 API를 활성화합니다.]**
    * 프로젝트의 대시보드의 API 카드에서 API로 **[!UICONTROL 이동 개요를 누릅니다.]**
+
    ![6_5_googleaccount-api-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. API 및 서비스 페이지 상단 근처에 있는 API 및 서비스 **[!UICONTROL 활성화를 탭합니다.]**
@@ -491,6 +493,7 @@ Google 클라우드 설정을 구성하려면:
    * API를 **[!UICONTROL 어디에서 호출합니까?]** 드롭다운 목록에서 **[!UICONTROL 웹 서버(예: node.js, Tomcat)를 선택합니다.]**
 
    * 어떤 **[!UICONTROL 데이터에 액세스합니까?]** 드롭다운 목록에서 **[!UICONTROL 사용자 데이터를 누릅니다.]**
+
    ![6_5_googleaccount-api-createcertification2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. 필요한 자격 증명 **[!UICONTROL 을 탭하려면]**
@@ -836,9 +839,11 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
 1. 자산 폴더에서 비디오 인코딩 진행 상황 보기:
 
    * 카드 보기에서는 자산에 비디오 인코딩 진행률이 백분율로 표시됩니다. 오류가 있으면 이 정보도 자산에 표시됩니다.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * 목록 보기에서는 비디오 인코딩 진행 상태가 [ **[!UICONTROL 처리 상태] 열에]** 표시됩니다. 오류가 있으면 이 메시지가 동일한 열에 표시됩니다.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    이 열은 기본적으로 표시되지 않습니다. 열을 활성화하려면 보기 드롭다운 메뉴에서 **[!UICONTROL 설정]** 보기를 선택하고 **[!UICONTROL 처리 상태]** 열을 추가한 다음 **[!UICONTROL 업데이트를 탭하거나클릭합니다.]**
@@ -858,6 +863,7 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    >    * Apache Sling 작업 큐 구성
    >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
    >    * [MOCK] Granite Workflow Timeout Queue
+
    >
    >이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
 
@@ -892,6 +898,7 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    >    * Apache Sling 작업 큐 구성
    >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
    >    * [MOCK] Granite Workflow Timeout Queue
+
    >
    >
    >이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
@@ -938,6 +945,7 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    * 게시 시작
    * 게시 실패
    * 게시 완료 - 채널 및 URL에 대한 정보 포함
+
    확인란을 지우면 YouTube 게시 워크플로우에서 지정된 이메일 알림을 받지 않게 됩니다.
 
    >[!NOTE]
@@ -987,6 +995,7 @@ Dynamic Media [Cloud Service 구성을 참조하십시오](/help/assets/config-d
 
    * 오른쪽 위 모서리 근처에 있는 **날짜 선택기 **아이콘을 누릅니다.
 비디오 데이터를 저장할 시작 및 종료 날짜 범위를 지정한 다음 보고서 **[!UICONTROL 실행을 누릅니다.]**
+
    상위 지표 그룹 상자는 사이트에 게시된 모든 *비디오에 대한 다양한 집계 측정을 식별합니다.
 
 1. 상위 게시된 비디오가 나열된 테이블에서 비디오 이름을 눌러 비디오를 재생하고 비디오의 대상자 유지(드롭다운) 보고서를 확인합니다.
