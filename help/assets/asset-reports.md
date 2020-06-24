@@ -3,9 +3,9 @@ title: 디지털 자산의 사용 및 공유에 대한 보고서
 description: 디지털 자산의 사용, 활동 [!DNL Adobe Experience Manager Assets] 및 공유를 이해하는 데 도움이 되는 자산에 대한 보고서입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c41666353a8ee8d39285c99327680ab12377d61
+source-git-commit: a8c4bc1992a48dd01a3f58498e9e924dcc9e886a
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1049'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >다운로드  보고서에는 개별적으로 선택하고 다운로드한 자산의 세부 정보만 표시됩니다. 그러나 다운로드한 폴더에 있는 자산의 세부 사항은 포함되지 않습니다.
+   >다운로드  보고서에는 개별적으로 선택하고 빠른 작업을 사용하여 다운로드하거나 다운로드한 자산의 세부 사항만 표시됩니다. 그러나 다운로드한 폴더에 있는 자산의 세부 사항은 포함되지 않습니다.
 1. 보고서가 저장되는 CRX 저장소의 제목, 설명, 축소판 및 폴더 경로와 같은 보고서 세부 사항을 구성합니다. 기본적으로 폴더 경로는 입니다 `/content/dam`. 다른 경로를 지정할 수 있습니다.
 
    ![보고서 세부 사항을 추가하는 페이지](assets/report_configuration.png)
