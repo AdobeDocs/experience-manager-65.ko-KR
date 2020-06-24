@@ -1,8 +1,8 @@
 ---
 title: AEM Assets HTTP API의 컨텐츠 조각 지원
 seo-title: AEM Assets HTTP API의 컨텐츠 조각 지원
-description: AEM Assets HTTP API의 콘텐츠 조각 지원에 대해 알아봅니다.
-seo-description: AEM Assets HTTP API의 콘텐츠 조각 지원에 대해 알아봅니다.
+description: AEM Assets HTTP API의 컨텐츠 조각 지원에 대해 알아보십시오.
+seo-description: AEM Assets HTTP API의 컨텐츠 조각 지원에 대해 알아보십시오.
 uuid: c500d71e-ceee-493a-9e4d-7016745c544c
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 3%
@@ -34,7 +34,7 @@ ht-degree: 3%
 >
 AEM Assets HTTP API의 현재 구현은 REST입니다.
 
-AEM(Adobe Experience Manager) [자산 REST API를](/help/assets/mac-api-assets.md) 통해 개발자는 CRUD 작업(만들기, 읽기, 업데이트, 삭제)을 통해 HTTP API를 통해 직접 컨텐츠(AEM에 저장)에 액세스할 수 있습니다.
+AEM(Adobe Experience Manager) [자산 REST API를](/help/assets/mac-api-assets.md) 통해 개발자는 CRUD 작업(만들기, 읽기, 업데이트, 삭제)을 통해 HTTP API를 통해 직접 AEM에 저장된 컨텐츠에 액세스할 수 있습니다.
 
 API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 서비스를 제공하여 AEM을 헤드리스 CMS(콘텐츠 관리 시스템)로 운영할 수 있습니다. 또는 HTTP 요청을 실행하고 JSON 응답을 처리할 수 있는 기타 애플리케이션입니다.
 
@@ -63,7 +63,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 * **GET** - 자산 또는 폴더의 JSON 표현 가져오기
 * **POST** - 새 자산 또는 폴더를 만들려면
 * **PUT** - 자산 또는 폴더의 속성을 업데이트하려면
-* **삭제** - 자산 또는 폴더를 삭제하려면
+* **DELETE** - 자산 또는 폴더 삭제
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 ## 사용 가능한 기능 {#available-features}
 
-컨텐츠 조각은 자산의 특정 유형입니다. 컨텐츠 조각 [작업을 참조하십시오](/help/assets/content-fragments.md).
+컨텐츠 조각은 자산의 특정 유형입니다. 컨텐츠 조각 [작업을 참조하십시오](/help/assets/content-fragments/content-fragments.md).
 
 API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음을 참조하십시오.
 
@@ -199,7 +199,7 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 
 ### 콘텐츠 조각 {#content-fragments}
 
-컨텐츠 [조각은](/help/assets/content-fragments.md) 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
+컨텐츠 [조각은](/help/assets/content-fragments/content-fragments.md) 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다.
 
 이미지 또는 오디오와 같은 *표준* 에셋에는 몇 가지 차이가 있으므로 처리 시 일부 추가 규칙이 적용됩니다.
 
@@ -238,7 +238,7 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 
 >[!NOTE]
 >
->자세한 내용은 [API 참조를 참조하십시오](/help/assets/assets-api-content-fragments.md#api-reference). 특히 [Adobe Experience Manager Assets API - 콘텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>자세한 내용은 [API 참조를 참조하십시오](/help/assets/assets-api-content-fragments.md#api-reference). 특히 [Adobe Experience Manager 자산 API - 컨텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
 
 ### 읽기/전달 {#read-delivery}
 
@@ -367,7 +367,7 @@ API를 통해 사용할 수 있는 기능에 대한 자세한 내용은 다음�
 
 자세한 API 참조는 여기를 참조하십시오.
 
-* [Adobe Experience Manager Assets API - 콘텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager 자산 API - 콘텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [자산 HTTP API](/help/assets/mac-api-assets.md)
 
    * [사용 가능한 기능](/help/assets/mac-api-assets.md#available-features)
