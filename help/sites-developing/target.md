@@ -1,8 +1,8 @@
 ---
-title: 타깃팅된 컨텐츠를 위한 개발
-seo-title: 타깃팅된 컨텐츠를 위한 개발
-description: 컨텐츠 타깃팅과 함께 사용할 구성 요소 개발에 대한 항목
-seo-description: 컨텐츠 타깃팅과 함께 사용할 구성 요소 개발에 대한 항목
+title: 타깃팅된 컨텐츠에 대한 개발
+seo-title: 타깃팅된 컨텐츠에 대한 개발
+description: 컨텐츠 타깃팅에 사용할 구성 요소 개발에 대한 항목
+seo-description: 컨텐츠 타깃팅에 사용할 구성 요소 개발에 대한 항목
 uuid: 2449347e-7e1c-427b-a5b0-561055186934
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,29 +11,32 @@ content-type: reference
 discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1287'
+ht-degree: 0%
 
 ---
 
 
-# 타깃팅된 컨텐츠를 위한 개발{#developing-for-targeted-content}
+# 타깃팅된 컨텐츠에 대한 개발{#developing-for-targeted-content}
 
 이 섹션에서는 컨텐츠 타깃팅에 사용할 구성 요소를 개발하는 방법에 대해 설명합니다.
 
-* Adobe Target과 연결에 대한 자세한 내용은 Adobe [Target과 통합을 참조하십시오](/help/sites-administering/target.md).
-* 타깃팅된 컨텐츠 작성에 대한 자세한 내용은 타깃팅 [모드를 사용하여 타깃팅된 컨텐츠 작성을 참조하십시오](/help/sites-authoring/content-targeting-touch.md).
+* Adobe Target 연결에 대한 자세한 내용은 Adobe Target과 [통합을 참조하십시오](/help/sites-administering/target.md).
+* 타깃팅된 컨텐츠 작성에 대한 자세한 내용은 타깃팅 모드를 [사용하여 타깃팅된 컨텐츠 작성을 참조하십시오](/help/sites-authoring/content-targeting-touch.md).
 
 >[!NOTE]
 >
->AEM 작성자의 구성 요소를 타깃팅하면 구성 요소는 Adobe Target에 대한 일련의 서버측 호출을 수행하여 캠페인을 등록하고, 오퍼를 설정하고, Adobe Target 세그먼트(구성된 경우)를 검색합니다. AEM을 Adobe Target에 게시하면 서버측 호출이 수행되지 않습니다.
+>AEM 작성자의 구성 요소를 타깃팅하면 구성 요소는 캠페인을 등록하고, 오퍼를 설정하고, Adobe Target 세그먼트를 가져오기 위해 Adobe Target에 일련의 서버측 호출을 만듭니다(구성된 경우). AEM 게시에서 Adobe Target으로 수행된 서버측 호출이 없습니다.
 
-## 페이지에서 Adobe Target을 사용하여 타깃팅 활성화 {#enabling-targeting-with-adobe-target-on-your-pages}
+## 페이지의 Adobe Target으로 타깃팅 활성화 {#enabling-targeting-with-adobe-target-on-your-pages}
 
-Adobe Target과 상호 작용하는 페이지에서 타깃팅된 구성 요소를 사용하려면 &lt;head> 요소에 특정 클라이언트측 코드를 포함하십시오.
+Adobe Target과 상호 작용하는 페이지에 타깃팅된 구성 요소를 사용하려면 &lt;head> 요소에 특정 클라이언트측 코드를 포함시키십시오.
 
 ### 헤드 섹션 {#the-head-section}
 
-다음 코드 블록 모두를 페이지의 &lt;head> 섹션에 추가합니다.
+다음 코드 블록을 페이지의 &lt;head> 섹션에 모두 추가합니다.
 
 ```xml
 <!--/* Include Context Hub */-->
@@ -46,7 +49,7 @@ Adobe Target과 상호 작용하는 페이지에서 타깃팅된 구성 요소�
 
 이 코드는 필요한 분석 javascript 개체를 추가하고 웹 사이트와 연결된 클라우드 서비스 라이브러리를 로드합니다. Target 서비스의 경우 라이브러리는 `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
 
-로드된 라이브러리 집합은 Target 구성에 사용되는 대상 클라이언트 라이브러리(mbox.js 또는 at.js)의 유형에 따라 다릅니다.
+로드된 라이브러리 세트는 Target 구성에 사용되는 대상 클라이언트 라이브러리(mbox.js 또는 at.js)의 유형에 따라 다릅니다.
 
 **기본 mbox.js**
 
@@ -68,7 +71,7 @@ Adobe Target과 상호 작용하는 페이지에서 타깃팅된 구성 요소�
  <script type="text/javascript" src="/libs/cq/foundation/testandtarget/init.js"></script>
 ```
 
-**at.js의 경우**
+**at.js용**
 
 ```
 <script type="text/javascript" src="/libs/cq/foundation/testandtarget/parameters.js"></script>
@@ -78,7 +81,7 @@ Adobe Target과 상호 작용하는 페이지에서 타깃팅된 구성 요소�
 
 >[!NOTE]
 >
->제품과 함께 `at.js` 제공되는 버전만 지원됩니다. 제품과 함께 `at.js` `at.js` 제공되는 버전은 다음 위치의 파일을 통해 얻을 수 있습니다.
+>제품과 함께 `at.js` 제공된 버전만 지원됩니다. 제품과 `at.js` 함께 배송된 버전은 다음 위치의 파일을 통해 `at.js` 가져올 수 있습니다.
 >
 >**/libs/cq/testandtarget/clientlibs/testandtarget/atjs/source/at.js**.
 
@@ -90,7 +93,7 @@ Adobe Target과 상호 작용하는 페이지에서 타깃팅된 구성 요소�
  <script type="text/javascript" src="/libs/cq/foundation/testandtarget/atjs-integration.js"></script>
 ```
 
-클라이언트 측의 Target 기능은 `CQ_Analytics.TestTarget` 개체에 의해 관리됩니다. 따라서 페이지에 다음 예와 같은 일부 init 코드가 포함됩니다.
+클라이언트 측의 Target 기능은 `CQ_Analytics.TestTarget` 개체에서 관리합니다. 따라서 페이지에 다음 예와 같은 일부 init 코드가 포함됩니다.
 
 ```
 <script type="text/javascript">
@@ -151,13 +154,13 @@ JSP는 필요한 분석 javascript 개체 및 참조를 클라이언트측 javas
 
 #### 본문 섹션(끝) {#the-body-section-end}
 
-&lt;/body> end 태그 바로 앞에 다음 코드를 추가합니다.
+&lt;/body> 종료 태그 바로 앞에 다음 코드를 추가합니다.
 
 ```xml
 <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
 ```
 
-이 구성 요소의 JSP 스크립트는 Target javascript API에 대한 호출을 생성하고 다른 필수 구성을 구현합니다. 스크립트가 생성하는 HTML은 다음 예와 유사합니다.
+이 구성 요소의 JSP 스크립트는 Target javascript API에 대한 호출을 생성하고 기타 필요한 구성을 구현합니다. 스크립트가 생성하는 HTML은 다음 예와 유사합니다.
 
 ```xml
 <div class="servicecomponents cloudservices">
@@ -185,7 +188,7 @@ JSP는 필요한 분석 javascript 개체 및 참조를 클라이언트측 javas
 </div>
 ```
 
-### 사용자 지정 타겟 라이브러리 파일 사용 {#using-a-custom-target-library-file}
+### 사용자 정의 Target 라이브러리 파일 사용 {#using-a-custom-target-library-file}
 
 >[!NOTE]
 >
@@ -193,51 +196,51 @@ JSP는 필요한 분석 javascript 개체 및 참조를 클라이언트측 javas
 
 >[!NOTE]
 >
->기본적으로 mbox는 숨겨지며 mboxDefault 클래스는 이 동작을 결정합니다. mbox를 숨기면 교환되기 전에 방문자가 기본 컨텐츠를 보지 못합니다.그러나 mbox를 숨기면 감지된 성능에 영향을 줍니다.
+>기본적으로 mbox는 숨겨지며 mboxDefault 클래스는 이 동작을 결정합니다. mbox를 숨기면 교환되기 전에 방문자에게 기본 컨텐츠가 표시되지 않습니다. 그러나 mbox를 숨기면 감지된 성능에 영향을 줍니다.
 
 mbox를 만드는 데 사용되는 기본 mbox.js 파일은 /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js에 있습니다. 고객 mbox.js 파일을 사용하려면 Target 클라우드 구성에 파일을 추가합니다. 파일을 추가하려면 파일 시스템에서 mbox.js 파일을 사용할 수 있어야 합니다.
 
-예를 들어 Marketing Cloud ID 서비스를 [사용하려면](https://marketing.adobe.com/resources/help/en_US/mcvid/) 테넌트를 기반으로 하는 `imsOrgID` 변수에 올바른 값을 포함하도록 mbox.js를 다운로드해야 합니다. 이 변수는 Marketing Cloud ID 서비스와 통합하는 데 필요합니다. 자세한 내용은 Adobe [Target의 보고 소스로 Adobe Analytics를](https://marketing.adobe.com/resources/help/en_US/target/a4t/a4t.html) 참조하고 [구현하기 전에](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_before_implement.html)참조하십시오.
+예를 들어 [Marketing Cloud ID 서비스를](https://docs.adobe.com/content/help/en/id-service/using/home.html) `imsOrgID` 사용하려면 테넌트를 기반으로 하는 변수에 올바른 값을 포함하도록 mbox.js를 다운로드해야 합니다. 이 변수는 Marketing Cloud ID 서비스와 통합하는 데 필요합니다. 자세한 내용은 [Adobe Analytics을 Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) 의 보고 소스로, 그리고 구현하기 [전에](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html)을 참조하십시오.
 
 >[!NOTE]
 >
->사용자 지정 mbox가 Target 구성에 정의된 경우 모든 사람이 게시 서버의 **/etc/cloudservices** 읽기 권한을 가져야 합니다. 이 액세스 권한이 없으면 게시 웹 사이트에서 mbox.js 파일을 로드하면 404 오류가 발생합니다.
+>사용자 지정 mbox가 Target 구성에 정의된 경우 모든 사람이 게시 서버의 **/etc/cloudservices** 에 대한 읽기 권한을 가져야 합니다. 이 액세스 권한이 없으면 게시 웹 사이트에서 mbox.js 파일을 로드하면 404 오류가 발생합니다.
 
-1. CQ 도구 **페이지로 이동하여** 클라우드 서비스를 **선택합니다**. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. [CQ **도구** ] 페이지로 이동하여 **Cloud Service을 선택합니다**. ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. 트리에서 Adobe Target을 선택하고 구성 목록에서 Target 구성을 두 번 클릭합니다.
 1. 구성 페이지에서 편집을 클릭합니다.
 1. 사용자 지정 mbox.js 속성에 대해 찾아보기를 클릭하고 파일을 선택합니다.
-1. 변경 내용을 적용하려면 Adobe Target 계정의 암호를 입력하고 Target에 다시 연결을 클릭한 다음 연결이 성공하면 확인을 클릭합니다. 그런 다음 구성 요소 편집 대화 상자에서 확인을 클릭합니다.
+1. 변경 사항을 적용하려면 Adobe Target 계정의 암호를 입력하고 [Target에 다시 연결]을 클릭한 다음 연결이 성공하면 [확인]을 클릭합니다. 그런 다음 구성 요소 편집 대화 상자에서 확인을 클릭합니다.
 
-Target 구성에는 사용자 지정 mbox.js 파일이 포함되어 [있으며 페이지의 헤드 섹션에](/help/sites-developing/target.md#p-the-head-section-p) 필요한 코드는 testandtarget.js 라이브러리에 대한 참조 대신 클라이언트 라이브러리 프레임워크에 파일을 추가합니다.
+Target 구성에는 사용자 지정 mbox.js 파일 [이 포함되어 있으며 페이지의 헤드 섹션에](/help/sites-developing/target.md#p-the-head-section-p) 있는 필수 코드는 testandtarget.js 라이브러리에 대한 참조 대신 클라이언트 라이브러리 프레임워크에 파일을 추가합니다.
 
-## 구성 요소에 대한 타겟 명령 비활성화 {#disabling-the-target-command-for-components}
+## 구성 요소에 대한 Target 명령 비활성화 {#disabling-the-target-command-for-components}
 
-대부분의 구성 요소는 컨텍스트 메뉴의 타겟 명령을 사용하여 타깃팅된 구성 요소로 변환할 수 있습니다.
+대부분의 구성 요소는 컨텍스트 메뉴의 Target 명령을 사용하여 타깃팅된 구성 요소로 변환할 수 있습니다.
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
-컨텍스트 메뉴에서 Target 명령을 제거하려면 다음 속성을 구성 요소의 cq:editConfig 노드에 추가합니다.
+컨텍스트 메뉴에서 Target 명령을 제거하려면 구성 요소의 cq:editConfig 노드에 다음 속성을 추가합니다.
 
-* 이름:cq:disableTargeting
+* 이름: cq:disableTargeting
 * Type: Boolean
-* 값:True
+* 값: True
 
 예를 들어 Geometrixx 데모 사이트 페이지의 제목 구성 요소에 대한 타깃팅을 비활성화하려면 /apps/geometrixx/components/title/cq:editConfig 노드에 속성을 추가합니다.
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-## Adobe Target에 주문 확인 정보 보내기 {#sending-order-confirmation-information-to-adobe-target}
+## Adobe Target으로 주문 확인 정보 전송 {#sending-order-confirmation-information-to-adobe-target}
 
 >[!NOTE]
 >
->DTM을 사용하지 않는 경우 주문 확인을 Adobe Target으로 보냅니다.
+>DTM을 사용하지 않는 경우 주문 확인을 Adobe Target에 보냅니다.
 
-웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 Adobe Target으로 구매 정보를 보내십시오. (Adobe [Target 문서에서 orderConfirmPage](https://marketing.adobe.com/resources/help/en_US/dtm/target/order-confirmation-mbox.html) mbox 만들기를 참조하십시오.) Adobe Target은 mbox 이름이 MBox일 때 mbox 데이터를 주문 확인 데이터로 인식하며 다음과 같은 특정 매개 변수 이름을 사용합니다. `orderConfirmPage`
+웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 Adobe Target으로 구매 정보를 전송합니다. Adobe Target [설명서에서 orderConfirmPage mbox](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) 만들기를 참조하십시오. Adobe Target은 MBox 이름이 있을 때 mbox 데이터를 주문 확인 데이터로 인식하며 다음과 같은 특정 매개 변수 이름을 사용합니다. `orderConfirmPage`
 
-* productPurchasedId:구입한 제품을 식별하는 ID 목록입니다.
-* orderId:주문의 ID입니다.
-* orderTotal:총 구매 금액.
+* productPurchasedId: 구매한 제품을 식별하는 ID 목록입니다.
+* orderId: 주문의 ID.
+* orderTotal: 총 구매 금액.
 
 mbox를 만드는 렌더링된 HTML 페이지의 코드는 다음 예와 유사합니다.
 
@@ -250,13 +253,13 @@ mbox를 만드는 렌더링된 HTML 페이지의 코드는 다음 예와 유사�
 </script>
 ```
 
-각 매개 변수의 값은 각 주문에 대해 다릅니다. 따라서 구매 속성을 기반으로 코드를 생성하는 구성 요소가 필요합니다. CQ eCommerce [Integration Framework](/help/sites-administering/ecommerce.md) 를 사용하면 제품 카탈로그와 통합하고 장바구니 및 체크아웃 페이지를 구현할 수 있습니다.
+각 매개 변수의 값은 각 순서에 따라 다릅니다. 따라서 구매 속성을 기반으로 코드를 생성하는 구성 요소가 필요합니다. CQ [eCommerce Integration Framework](/help/sites-administering/ecommerce.md) 를 사용하여 제품 카탈로그와 통합하고 장바구니 및 체크아웃 페이지를 구현할 수 있습니다.
 
-방문자가 제품을 구입할 때 Geometrixx Outdoors 샘플에는 다음 확인 페이지가 표시됩니다.
+방문자가 제품을 구입할 때 Geometrixx Outdoors 샘플에 다음 확인 페이지가 표시됩니다.
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
-구성 요소의 JSP 스크립트에 대한 다음 코드는 장바구니의 속성에 액세스한 다음 mbox 만들기에 대한 코드를 인쇄합니다.
+구성 요소의 JSP 스크립트에 대한 다음 코드는 장바구니의 속성에 액세스한 다음 mbox를 만들기 위한 코드를 인쇄합니다.
 
 ```java
 <%--
@@ -301,7 +304,7 @@ String orderID = session.getOrderId();
 </script>
 ```
 
-구성 요소가 이전 예제의 체크아웃 페이지에 포함되는 경우 페이지 소스에는 mbox를 만드는 다음 스크립트가 포함됩니다.
+구성 요소가 이전 예의 체크아웃 페이지에 포함되는 경우 페이지 소스에는 mbox를 만드는 다음 스크립트가 포함됩니다.
 
 ```
 <div class="mboxDefault"></div>
@@ -315,33 +318,33 @@ String orderID = session.getOrderId();
 </script>
 ```
 
-## 타겟 구성 요소 이해 {#understanding-the-target-component}
+## Target 구성 요소 이해 {#understanding-the-target-component}
 
 Target 구성 요소를 사용하면 작성자가 CQ 컨텐츠 구성 요소에서 동적 mbox를 만들 수 있습니다. (컨텐츠 [타깃팅을 참조하십시오](/help/sites-authoring/content-targeting-touch.md).) Target 구성 요소는 /libs/cq/personalization/components/target에 있습니다.
 
 target.jsp 스크립트는 페이지 속성에 액세스하여 구성 요소에 사용할 타깃팅 엔진을 결정한 다음 적절한 스크립트를 실행합니다.
 
-* Adobe Target:/libs/cq/personalization/components/target/engine_tnt.jsp
-* [AT.JS를 사용한 Adobe Target](/help/sites-administering/target.md):/libs/cq/personalization/components/target/engine_atjs.jsp
-* [Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md):/libs/cq/personalization/components/target/engine_cq_campaign.jsp
-* 클라이언트측 규칙/ContextHub:/libs/cq/personalization/components/target/engine_cq.jsp
+* Adobe Target: /libs/cq/personalization/components/target/engine_tnt.jsp
+* [Adobe Target(AT.JS 포함](/help/sites-administering/target.md): /libs/cq/personalization/components/target/engine_atjs.jsp
+* [Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md): /libs/cq/personalization/components/target/engine_cq_campaign.jsp
+* 클라이언트측 규칙/ContextHub: /libs/cq/personalization/components/target/engine_cq.jsp
 
 ### mbox 만들기 {#the-creation-of-mboxes}
 
 >[!NOTE]
 >
->기본적으로 mbox는 숨겨지며 mboxDefault 클래스는 이 동작을 결정합니다. mbox를 숨기면 교환되기 전에 방문자가 기본 컨텐츠를 보지 못합니다.그러나 mbox를 숨기면 감지된 성능에 영향을 줍니다.
+>기본적으로 mbox는 숨겨지며 mboxDefault 클래스는 이 동작을 결정합니다. mbox를 숨기면 교환되기 전에 방문자에게 기본 컨텐츠가 표시되지 않습니다. 그러나 mbox를 숨기면 감지된 성능에 영향을 줍니다.
 
-Adobe Target이 컨텐츠 타깃팅을 구동하는 경우 engine_tnt.jsp 스크립트는 타깃팅된 경험의 컨텐츠를 포함하는 mbox를 만듭니다.
+Adobe Target이 컨텐츠 타깃팅을 주도하는 경우 engine_tnt.jsp 스크립트는 타깃팅된 경험의 컨텐츠를 포함하는 mbox를 생성합니다.
 
-* Adobe `div` Target API에서 필요에 `mboxDefault`따라 의 클래스를 포함하는 요소를 추가합니다.
+* Adobe Target API에 필요한 클래스 `div` `mboxDefault`의 요소를 추가합니다.
 
-* 요소 내부에 mbox 컨텐츠(타깃팅된 경험의 컨텐츠)를 추가합니다. `div`
+* 요소 내부에 mbox 컨텐츠(타깃팅된 경험의 컨텐츠)를 `div` 추가합니다.
 
 div 요소 `mboxDefault` 다음에 mbox를 만드는 javascript가 삽입됩니다.
 
 * mbox 이름, ID 및 위치는 구성 요소의 저장소 경로를 기반으로 합니다.
-* 스크립트는 클라이언트 컨텍스트 매개 변수 이름과 값을 가져옵니다.
+* 이 스크립트는 클라이언트 컨텍스트 매개 변수 이름과 값을 가져옵니다.
 * mbox.js 및 기타 클라이언트 라이브러리가 mbox를 만들기 위해 정의하는 함수에 대한 호출이 수행됩니다.
 
 #### 컨텐츠 타깃팅을 위한 클라이언트 라이브러리 {#client-libraries-for-content-targeting}
