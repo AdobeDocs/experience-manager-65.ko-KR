@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
 workflow-type: tm+mt
 source-wordcount: '4345'
 ht-degree: 0%
@@ -56,9 +56,10 @@ AEM Assets [의 e커머스 개념을 참조하십시오](/help/sites-administeri
 이미지 배너 [업로드를 참조하십시오](#uploading-an-image-banner).
 
 1. **이미지 배너에 핫스팟 추가** - 이미지 배너에 하나 이상의 핫스팟을 추가하고 각 핫스팟을 하이퍼링크, 빠른 보기 또는 경험 조각 등의 동작과 연결합니다. 핫스팟을 추가한 후 대화형 이미지를 게시하여 이 작업을 완료합니다.
-이미지 [배너에 핫스팟 추가를 참조하십시오](#adding-hotspots-to-an-image-banner).
-대화형 이미지 [미리 보기](#optional-previewing-interactive-images) - 선택 사항을 참조하십시오. 원하는 경우 쇼퍼블 배너의 표현을 보고 인터랙션을 테스트할 수 있습니다.
-대화형 [이미지 자산을 게시하는 방법에 대한 자세한 내용은 자산](/help/assets/publishing-dynamicmedia-assets.md) 게시를 참조하십시오.
+
+   * 이미지 [배너에 핫스팟 추가를 참조하십시오](#adding-hotspots-to-an-image-banner).
+   * 대화형 이미지 [미리 보기](#optional-previewing-interactive-images) - 선택 사항을 참조하십시오. 원하는 경우 쇼퍼블 배너의 표현을 보고 인터랙션을 테스트할 수 있습니다.
+   * 대화형 [이미지 자산을 게시하는 방법에 대한 자세한 내용은 자산](/help/assets/publishing-dynamicmedia-assets.md) 게시를 참조하십시오.
 
 1. **AEM에서 웹 사이트 또는 웹 사이트에 대화형 이미지 추가** AEM Sites, AEM eCommerce 또는 둘 다를 사용하는 경우, 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 이미지를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 AEM Assets 및 Dynamic Media 독립 실행형 제품을 사용하는 경우 웹 사이트에 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. 웹 사이트 [와 대화형 이미지 통합을 참조하십시오](#integrating-an-interactive-image-with-your-website).
@@ -72,7 +73,6 @@ AEM Assets 및 Dynamic Media 독립 실행형 제품을 사용하는 경우 웹 
 >
 >* Quickviews에 트리거하여 이미지에 인터랙티브한 요소를 추가하려고 합니다.
 >* AEM을 구현해도 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다* . AEM Assets [의 e커머스 개념을 참조하십시오](/help/sites-administering/concepts.md).
-
 >
 >
 AEM 구현에서 e커머스를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
@@ -288,14 +288,13 @@ AEM Assets과 함께 제공되는 기본 대화형 이미지 뷰어 사전 설�
 
       * AEM Sites 고객인 경우 사이트 선택기 아이콘(폴더)을 탭하거나 클릭하여 URL로 이동합니다. 인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 지원되지 않습니다.
       * 독립 실행형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지의 전체 URL 경로를 지정합니다.
-
    링크를 새 브라우저 탭(권장 기본값)에서 열지 또는 동일한 탭에서 열지를 지정해야 합니다.
 
    자세한 [내용은 선택기](/help/assets/working-with-selectors.md) 작업을 참조하십시오.
 
    * 경험 **[!UICONTROL 조각을 누릅니다.]**
 
-      * AEM Sites 고객인 경우 검색 아이콘(확대경)을 탭하거나 클릭하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 탭하거나 클릭한 다음 페이지의 오른쪽 위 모서리에 있는 선택을 탭하여 핫스팟 관리 페이지로 돌아갑니다.
+      * AEM Sites 고객인 경우 검색 아이콘(확대경)을 탭하거나 클릭하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 탭하거나 클릭한 다음 페이지의 오른쪽 위 모서리에서 선택을 탭하여 핫스팟 관리 페이지로 돌아갑니다.
 경험 [조각을 참조하십시오](/help/sites-authoring/experience-fragments.md).
 
       * 배너에 표시될 경험 조각의 폭과 높이를 지정합니다.
