@@ -3,9 +3,9 @@ title: 처리를 위해 지원되는 파일 포맷입니다 [!DNL Adobe Experien
 description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1774'
 ht-degree: 8%
 
 ---
@@ -72,9 +72,9 @@ ht-degree: 8%
 
 ## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
-다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 포맷의 하위 유형에 대해 설명합니다.
+다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 형식의 하위 유형에 대해 설명합니다.
 
-Dynamic [Media에서 지원되지 않는 파일 형식 감지를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Dynamic Media에 대해 지원되지 [않는 파일 형식 감지를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일
 * PSB 파일.
@@ -158,11 +158,11 @@ Adobe Camera Raw 라이브러리를 사용하면 에셋을 Raw 이미지를 인�
 
 위의 기능 외에 다음을 고려하십시오.
 
-* Dynamic Media를 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media을 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media를 사용하여 AI 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media을 사용하여 AI 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media를 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 [InDesign(INDD) 파일 형식을 참조하십시오](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Dynamic Media을 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 [InDesign(INDD) 파일 형식을 참조하십시오](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## 지원되는 멀티미디어 포맷 {#supported-multimedia-formats}
 
@@ -212,7 +212,7 @@ Adobe Camera Raw 라이브러리를 사용하면 에셋을 Raw 이미지를 인�
 
 지원되는 아카이브 포맷 및 일반 DAM 워크플로우의 적용 가능성.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | Dynamic Media 배달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -222,9 +222,9 @@ Adobe Camera Raw 라이브러리를 사용하면 에셋을 Raw 이미지를 인�
 
 ## 기타 지원되는 포맷 {#other-supported-formats}
 
-기타 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 방법은 아래 표에 설명되어 있습니다. Dynamic Media Delivery를 제외한 저장소, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리와 같은 일반적인 DAM 기능이 모든 파일에 대해 지원됩니다.
+기타 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 방법은 아래 표에 설명되어 있습니다. 모든 파일에 대해 Dynamic Media 제공을 제외한 스토리지, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리와 같은 일반적인 DAM 기능이 지원됩니다.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | Dynamic Media 배달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -234,13 +234,13 @@ Adobe Camera Raw 라이브러리를 사용하면 에셋을 Raw 이미지를 인�
 
 ## Supported MIME types {#supported-mime-types}
 
-기본적으로 Experience Manager는 파일 확장자를 사용하여 파일 유형을 감지합니다. Adobe Experience Manager는 파일의 내용에서 검색할 수 있습니다. 후자의 경우, Experience Manager 웹 콘솔 [!UICONTROL 의] 일 CQ DAM MIME 유형 서비스에서  컨텐트에서 MIME 감지 옵션을 선택합니다.
+기본적으로 Experience Manager은 파일 확장자를 사용하여 파일 유형을 감지합니다. Experience Manager은 파일의 내용에서 검색할 수 있습니다. 후자의 경우 Experience Manager 웹 콘솔 [!UICONTROL 의] 일 CQ DAM MIME 유형 서비스에서  컨텐트에서 MIME 감지 옵션을 선택합니다.
 
 지원되는 MIME 유형 목록은 에서 CRXDE Lite를 참조하십시오 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | 파일 확장자 | MIME 유형/인터넷 미디어 유형 | 기본 jobParam 값 | 허용되는 jobParam 값 |
 |---|---|---|---|
-| 이미지 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 기본 jobParam은 모든 이미지 MIME 형식 자산에 적용됩니다.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
+| 이미지 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 기본 jobParam은 모든 이미지 MIME 형식 자산에 적용됩니다.<ul><li>[knockoutBackgroundOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
 | 3G2 | video/3gpp2 |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
 | 3GP | video/3gpp |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_exclude_master_video_from_avs) |
 | AAC | audio/x-aac |  |  |
