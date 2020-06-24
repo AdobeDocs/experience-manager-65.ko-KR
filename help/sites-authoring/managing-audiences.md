@@ -11,7 +11,10 @@ topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 66%
 
 ---
 
@@ -89,13 +92,13 @@ Adobe Target 대상을 만들려면 다음을 수행하십시오.
 
 | **속성** | **설명** | **자세한 내용** |
 |---|---|---|
-| **모바일** | 모바일 장치, 장치 유형, 장치 공급업체, 화면 크기(픽셀 단위) 등과 같은 매개 변수를 기반으로 모바일 장치를 타깃팅합니다. | Adobe [Target에서 모바일 설명서를](https://marketing.adobe.com/resources/help/en_US/target/target/c_mobile.html) 참조하십시오. |
-| **사용자 지정** | 사용자 지정 매개 변수는 mbox 매개 변수입니다. 임의의 mbox 매개 변수를 mbox에 전달하거나 targetPageParams 함수를 사용하는 경우 이러한 매개 변수는 대상에서 사용할 수 있도록 여기에 표시됩니다. | Adobe [Target에서 사용자 지정 매개 변수 설명서를](https://marketing.adobe.com/resources/help/en_US/target/target/c_custom_parameters.html) 참조하십시오. |
+| **모바일** | 모바일 장치, 장치 유형, 장치 공급업체, 화면 크기(픽셀 단위) 등과 같은 매개 변수를 기반으로 Target 모바일 장치 | Adobe Target에서 [모바일 설명서를](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) 참조하십시오. |
+| **사용자 지정** | 사용자 지정 매개 변수는 mbox 매개 변수입니다. 임의의 mbox 매개 변수를 mbox에 전달하거나 targetPageParams 함수를 사용하는 경우 이러한 매개 변수는 대상에서 사용할 수 있도록 여기에 표시됩니다. | Adobe Target [에서 사용자 지정 매개 변수 설명서를](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) 참조하십시오. |
 | **OS** | 특정 운영 체제를 사용하는 방문자를 타깃팅할 수 있습니다. | Linux, Macintosh 또는 Windows를 사용하는 사용자를 타깃팅합니다. |
-| **사이트 페이지** | 특정 페이지에 있거나 특정 mbox 매개 변수가 있는 방문자를 타게팅합니다. | Adobe [Target에서 사이트 페이지 설명서를](https://marketing.adobe.com/resources/help/en_US/target/target/c_site_pages.html) 참조하십시오. |
-| **브라우저** | 페이지를 방문할 때 특정 브라우저 또는 특정 브라우저 옵션을 사용하는 사용자를 타깃팅할 수 있습니다. | Adobe [Target에서](https://marketing.adobe.com/resources/help/en_US/target/target/c_browser_options.html)브라우저 옵션 설명서를 참조하십시오. |
-| **방문자 프로필** | 특정 프로필 매개 변수를 충족하는 방문자를 타깃팅합니다. | Adobe [Target에서 방문자 프로필 설명서를](https://marketing.adobe.com/resources/help/en_US/target/target/c_visitor_profile.html) 참조하십시오. |
-| **트래픽 소스** | 사이트를 참조하는 검색 엔진 또는 랜딩 페이지를 기반으로 방문자를 타깃팅합니다. | Adobe [Target에서 트래픽 소스 설명서를](https://marketing.adobe.com/resources/help/en_US/target/target/c_traffic_sources.html) 참조하십시오. |
+| **사이트 페이지** | 특정 페이지에 있거나 특정 mbox 매개 변수가 있는 Target 방문자 | Adobe Target에서 [사이트 페이지 설명서를](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) 참조하십시오. |
+| **브라우저** | 페이지를 방문할 때 특정 브라우저 또는 특정 브라우저 옵션을 사용하는 사용자를 타깃팅할 수 있습니다. | Adobe Target에서 [브라우저 옵션](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)설명서를 참조하십시오. |
+| **방문자 프로필** | 특정 프로필 매개 변수를 충족하는 Target 방문자. | Adobe Target에서 [방문자 프로필 설명서를](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) 참조하십시오. |
+| **트래픽 소스** | 사이트를 참조하는 검색 엔진 또는 랜딩 페이지를 기반으로 하는 Target 방문자 | Adobe Target에서 [트래픽 소스 설명서를](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) 참조하십시오. |
 
 ## 대상 콘솔에서 대상 수정 {#modifying-an-audience-in-the-audiences-console}
 
