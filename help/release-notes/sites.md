@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 64%
 
 ---
 
@@ -30,13 +33,13 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
        ${'a' in myObject}
       ```
 
-   * Variable decrement with data-sly-set :
+   * 데이터-슬라이셋으로 변수 선언:
       `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * 목록 및 반복 컨트롤 매개 변수:begin, step, end:
+   * 목록 및 반복 컨트롤 매개 변수: 시작, 단계, 끝:
       `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
-   * 데이터-슬라이 해제 식별자:
+   * 데이터-줄바꿈용 식별자:
 
       ```
       <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
@@ -48,17 +51,17 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
 
 * 코어 구성 요소 2.3.2+의 경우, ](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases)Github 릴리스 노트[를 참조하십시오.
 * 레이아웃 컨테이너 그리드 시스템의 경우, [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid)를 참조하십시오.
-* Clientlib 관리자:google Closure Compiler가 JavaScript clientlibs(이전 기본값은 Yahoo YUI)의 축소 기능을 기본값으로 설정했으며 v20190121 버전으로 업데이트된 Google Closure Compiler
+* Clientlib 관리자: Google Closure Compiler가 JavaScript clientlibs의 축소 설정(이전 기본값은 Yahoo YUI임) 및 업데이트된 Google Closure Compiler를 버전 v20190121로 업데이트했습니다.
 * 템플릿 편집기 및 정책
 
-   * JS SDK(SPA Editor라고도 함)를 사용하는 단일 페이지 앱에 대한 템플릿 만들기 및 편집
+   * JS SDK(SPA Editor라고도 함)를 사용하는 단일 페이지 앱용 템플릿을 만들고 편집할 수 있습니다.
 
 * Reference Site We.Retail 4.0의 경우 [Github 릴리스 노트](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)를 참조하십시오.
 * Toolkit to upgrade existing sites to leverage the latest editor capabilities, see [Github repository](https://github.com/adobe/aem-modernize-tools)
 
 >[!CAUTION]
 >
->AEM에는 기존 사용자 지정 코드와의 호환성을 최대한 제공하기 위해 jQuery 라이브러리의 버전 1.12.4가 포함되어 있습니다. 알려진 보안 문제를 해결하기 위해 Adobe에서 수정을 완료했습니다.
+>AEM에는 기존 사용자 지정 코드와 최대 호환성을 제공하기 위해 jQuery 라이브러리의 버전 1.12.4가 포함되어 있습니다. 알려진 보안 문제를 해결하기 위해 Adobe에서 수정을 완료했습니다.
 
 ## 사이트 관리 {#site-administration}
 
@@ -73,10 +76,10 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
 
 ## 컨텐츠 조각 및 편집기 {#content-fragments-amp-editor}
 
-* 컨텐츠 조각 편집기의 새로운 [주석](/help/assets/content-fragments-variations.md#viewing-editing-deleting-annotations) 레일을 통해 일반 주석을 작성하고 텍스트 내에서 주석 확인(타임라인 레일에도 표시)
-* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments-models.md) to simple text, rich text or markdown
-* RTE(전체 화면 뷰)의 텍스트를 선택하여 [주석](/help/assets/content-fragments-variations.md#annotating-a-content-fragment)을 추가
-* 참조 레일을 통해 컨텐츠 조각을 나란히 [버전 비교](/help/assets/content-fragments-managing.md#comparing-fragment-versions)
+* 컨텐츠 조각 편집기의 새로운 [주석](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) 레일을 통해 일반 주석을 작성하고 텍스트 내에서 주석 확인(타임라인 레일에도 표시)
+* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments/content-fragments-models.md) to simple text, rich text or markdown
+* RTE(전체 화면 뷰)의 텍스트를 선택하여 [주석](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)을 추가
+* 참조 레일을 통해 컨텐츠 조각을 나란히 [버전 비교](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions)
 * 자산 [보고서 다운로드]는 해당 컨텐츠 조각을 표시
 * /api.json를 통해 [Assets HTTP API에 컨텐츠 조각 지원](/help/assets/assets-api-content-fragments.md)을 추가합니다. 컨텐츠 조각을 작성, 업데이트, 읽기 및 삭제하기 위한 API가 있습니다.
 
@@ -88,7 +91,7 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
 ## 번역 {#translation}
 
 * 프로젝트 마스터를 사용하여 변역 프로젝트 생성 간소화
-* 번역 작업을 기본적으로 승인 상태로 설정하여 번역 프로젝트 실행 간소화
+* 번역 작업을 기본적으로 승인된 상태로 설정하여 번역 프로젝트 실행 간소화
 * 타사 번역 메모리의 변경 사항으로 번역 페이지 업데이트 허용
 * JSON 형식으로 번역 작업 내보내기 허용
 * V3 API를 사용하도록 Microsoft Translation 통합 업데이트
@@ -108,7 +111,7 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
 
 * ContextHub 데이터 계층 및 클라이언트측 규칙 엔진 JavaScript가 기본적으로 jQuery 3을 사용하도록 업데이트되었습니다.
 
-## AEM 및 Adobe Target {#aem-amp-adobe-target}
+## AEM and Adobe Target {#aem-amp-adobe-target}
 
 >[!CAUTION]
 >
@@ -116,11 +119,11 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
 
 * 이제 Adobe Target 통합은 Target Standard API를 사용할 수 있습니다. 이전 버전의 AEM에서는 이제 더 이상 사용되지 않는 Target Classic HTTP API를 사용합니다.
 * Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
-* `at.js` 버전 1.5.0이 이제 포함되어 있습니다. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
+* `at.js` 버전 1.5.0이 이제 포함됩니다. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
 
-## AEM 및 Adobe Analytics {#aem-amp-adobe-analytics}
+## AEM and Adobe Analytics {#aem-amp-adobe-analytics}
 
-* `s_code.js` H.27.5가 포함되어 있습니다. 구현을 `AppMeasurement.js`
+* `s_code.js` H.27.5가 포함되어 있습니다. 구현은 `AppMeasurement.js`
 * `AppMeasurement.js` v1.8.0이 포함되어 있습니다. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
 
 ## AEM 및 상거래 {#aem-commerce}
@@ -137,4 +140,4 @@ Improvements to the Commerce Integration Framework are on a faster release cycle
 * 시퀀스 채널의 유료 재생
 * 소스 파일을 사용하여 프로젝트 구조를 자동 생성(예: Excel 시트)
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
+For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html).
