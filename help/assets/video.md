@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '11877'
+source-wordcount: '11829'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 1%
    >
    >
 * Dynamic Media [구성 - 하이브리드](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) 모드에서 Dynamic Media Cloud Service 구성을 참조하십시오.
-
 >
 
 
@@ -145,7 +144,7 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry, Windows �
 * 비디오 에셋을 효율적으로 관리할 수 있는 완벽한 메타데이터 지원을 통해 비디오를 구성, 검색 및 검색할 수 있습니다.
 * 응용 비디오 세트를 웹뿐만 아니라 iPhone, iPad, Android, Blackberry 및 Windows 폰을 비롯한 데스크탑 및 모바일 장치에 제공합니다.
 
-적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. Scene7 [뷰어 참조 안내서를 참조하십시오](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_reference.html).
+적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. Scene7 [뷰어 참조 안내서를 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다. [Blackberry에서 지원되는 비디오 포맷입니다](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -161,7 +160,7 @@ Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 동적 [비디오 재생](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) 샘플을 참조하십시오.
 
-AEM [자산에 대한 AEM 및 Scene7](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html) 및 [뷰어는 Adobe Scene7 뷰어 참조 안내서에서만](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_asset_viewers.html) 참조하십시오.
+Adobe [Scene7 뷰어 참조 안내서에서만](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) AEM 자산에 대한 AEM Assets 및 Dynamic Media 클래식 [및](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 뷰어를참조하십시오.
 
 ## 모범 사례: HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
@@ -173,7 +172,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하고 내장된 재생을 제공하며 브라우저 기능에 따라 적응형 및 점진적 스트리밍을 사용하는 단일 플레이어로 통합함으로써 리치 미디어 컨텐츠의 범위를 데스크탑 및 모바일 사용자 모두로 확대하고 간소화된 비디오 경험을 제공할 수 있습니다.
 
-Adobe [Scene7 뷰어 참조 안내서에서 HTML5 뷰어](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_viewers_about.html) 정보를 참조하십시오.
+Adobe [Scene7 뷰어 참조 안내서에서 HTML5 뷰어](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 정보를 참조하십시오.
 
 ### HTML5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 디바이스에서 비디오 재생 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -473,7 +472,6 @@ Google 클라우드 설정을 구성하려면:
 
    * 프로젝트의 대시보드의 시작하기 카드에서 탐색 **[!UICONTROL 및 API를 활성화합니다.]**
    * 프로젝트의 대시보드의 API 카드에서 API로 **[!UICONTROL 이동 개요를 누릅니다.]**
-
    ![6_5_googleaccount-api-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. API 및 서비스 페이지 상단 근처에 있는 API 및 서비스 **[!UICONTROL 활성화를 탭합니다.]**
@@ -493,7 +491,6 @@ Google 클라우드 설정을 구성하려면:
    * API를 **[!UICONTROL 어디에서 호출합니까?]** 드롭다운 목록에서 **[!UICONTROL 웹 서버(예: node.js, Tomcat)를 선택합니다.]**
 
    * 어떤 **[!UICONTROL 데이터에 액세스합니까?]** 드롭다운 목록에서 **[!UICONTROL 사용자 데이터를 누릅니다.]**
-
    ![6_5_googleaccount-api-createcertification2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. 필요한 자격 증명 **[!UICONTROL 을 탭하려면]**
@@ -839,11 +836,9 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
 1. 자산 폴더에서 비디오 인코딩 진행 상황 보기:
 
    * 카드 보기에서는 자산에 비디오 인코딩 진행률이 백분율로 표시됩니다. 오류가 있으면 이 정보도 자산에 표시됩니다.
-
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * 목록 보기에서는 비디오 인코딩 진행 상태가 [ **[!UICONTROL 처리 상태] 열에]** 표시됩니다. 오류가 있으면 이 메시지가 동일한 열에 표시됩니다.
-
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    이 열은 기본적으로 표시되지 않습니다. 열을 활성화하려면 보기 드롭다운 메뉴에서 **[!UICONTROL 설정]** 보기를 선택하고 **[!UICONTROL 처리 상태]** 열을 추가한 다음 **[!UICONTROL 업데이트를 탭하거나클릭합니다.]**
@@ -863,7 +858,6 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    >    * Apache Sling 작업 큐 구성
    >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
    >    * [MOCK] Granite Workflow Timeout Queue
-
    >
    >이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
 
@@ -898,7 +892,6 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    >    * Apache Sling 작업 큐 구성
    >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
    >    * [MOCK] Granite Workflow Timeout Queue
-
    >
    >
    >이러한 구성에서 **[!UICONTROL 재시도]**, **[!UICONTROL 재시도 지연]**&#x200B;및 **[!UICONTROL 시간]** 제한속성을 조정할수 있습니다.
@@ -945,7 +938,6 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
    * 게시 시작
    * 게시 실패
    * 게시 완료 - 채널 및 URL에 대한 정보 포함
-
    확인란을 지우면 YouTube 게시 워크플로우에서 지정된 이메일 알림을 받지 않게 됩니다.
 
    >[!NOTE]
@@ -995,7 +987,6 @@ Dynamic Media [Cloud Service 구성을 참조하십시오](/help/assets/config-d
 
    * 오른쪽 위 모서리 근처에 있는 **날짜 선택기 **아이콘을 누릅니다.
 비디오 데이터를 저장할 시작 및 종료 날짜 범위를 지정한 다음 보고서 **[!UICONTROL 실행을 누릅니다.]**
-
    상위 지표 그룹 상자는 사이트에 게시된 모든 *비디오에 대한 다양한 집계 측정을 식별합니다.
 
 1. 상위 게시된 비디오가 나열된 테이블에서 비디오 이름을 눌러 비디오를 재생하고 비디오의 대상자 유지(드롭다운) 보고서를 확인합니다.
@@ -1006,11 +997,11 @@ Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기�
 
 Scene7 뷰어 참조 및 Scene7 HTML5 뷰어 SDK를 사용하여 고유한 비디오 뷰어를 만듭니다.
 
-Scene7 [뷰어 참조 안내서를 참조하십시오](https://marketing.adobe.com/resources/help/ko_KR/s7/viewers_ref/index.html).
+Scene7 [뷰어 참조 안내서를 참조하십시오](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html).
 
-Adobe Developer Connection에서 Scene7 HTML 뷰어 SDK를 다운로드합니다.
+<!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
-Adobe [Developer Connection을 참조하십시오](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 Scene7 HTML5 뷰어 SDK를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 보려면:
 
@@ -1073,7 +1064,7 @@ to attach the component to the trackingManager. 한 페이지에서 여러 뷰�
 
 Dynamic Media에는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능이 있습니다. 이러한 전환은 JSON 텍스트를 숨김과 전체 비디오 스크립트로 웹 페이지에 포함시킬 수 있음을 의미합니다. 그런 다음 검색 엔진을 통해 컨텐츠를 크롤링 및 색인화하여 비디오를 보다 손쉽게 검색할 수 있도록 하고 비디오 컨텐츠에 대한 추가 정보를 고객에게 제공할 수 있습니다.
 
-URL에서 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제공 API 도움말](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_serving_static_nonimage_contents.html) 의 정적(이미지가 아님) 컨텐츠 ** 제공을 참조하십시오.
+URL에서 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제공 API 도움말](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) 의 정적(이미지가 아님) 컨텐츠 ** 제공을 참조하십시오.
 
 비디오에 캡션 또는 자막을 추가하려면:
 
