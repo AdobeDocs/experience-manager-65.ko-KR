@@ -10,9 +10,9 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '8031'
+source-wordcount: '7951'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,6 @@ Dynamic Media에서 [비디오](/help/assets/video.md) 작업에 대한 자세�
 >
 >* `s7access.log`
 >* `ImageServing.log`
-
 >
 >
 AEM 인스턴스 [모니터링 및 유지 관리에 설명되어 있습니다](/help/sites-deploying/monitoring-and-maintaining.md).
@@ -177,10 +176,8 @@ AEM에서 Dynamic Media Classic(Scene7)을 사용하려면 [특정 시나리오�
    >Dynamic Media 관련 문제를 해결하려면 다음 로그를 `crx-quickstart/logs/` 참조하십시오.
    >
    >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log - ImageServer 로그는 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
-
    이미지 서버 로그 파일 이름의 예: `ImageServer-57346-2020-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access 로그는 `/is/image` 및 를 통해 Dynamic Media에 대한 각 요청을 기록합니다 `/is/content`.
-
    이러한 로그는 Dynamic Media이 활성화된 경우에만 사용됩니다. 페이지에서 생성된 전체 **다운로드** 패키지에 `system/console/status-Bundlelist` 포함되지 않습니다. Dynamic Media 문제가 있는 경우 고객 지원에 문의할 때 이 두 로그를 모두 문제에 추가하십시오.
 
 ### 다른 포트 또는 컨텍스트 경로에 AEM을 설치한 경우.. {#if-you-installed-aem-to-a-different-port-or-context-path}
@@ -239,7 +236,7 @@ AEM Dynamic Media을 6.3에서 6.5로 업그레이드하는 경우(이제 가동
 
 ## 이미지 복제 구성 {#configuring-image-replication}
 
-Dynamic Media 이미지 전달은 AEM Author에서 비디오 축소판과 같은 이미지 자산을 게시하여 Adobe의 on-demand 복제 서비스(Replication Service URL)에 복제하는 방식으로 작동합니다. 그런 다음 On-Demand 이미지 전달 서비스(이미지 서비스 URL)를 통해 에셋이 전달됩니다.
+Dynamic Media 이미지 전달은 AEM Author에서 비디오 축소판과 같은 이미지 자산을 게시하여 Adobe의 on-demand 복제 서비스(Replication Service URL)에 복제하는 방식으로 이루어집니다. 그런 다음 On-Demand 이미지 전달 서비스(이미지 서비스 URL)를 통해 에셋이 전달됩니다.
 
 다음을 수행해야 합니다.
 
@@ -286,7 +283,6 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
    * KeyStore **[!UICONTROL 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 이 암호는 5단계에서 만든 KeyStore 암호가 **아니지만** Adobe에서 제공하는 KeyStore 파일 암호입니다. KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * 개인 **[!UICONTROL 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 개인 키 암호와 동일할 수 있음). Adobe는 제공하는 동안 사용자에게 보낸 환영 이메일에 개인 키 암호를 제공합니다. 개인 키 암호를 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
    * 개인 **[!UICONTROL 키 별칭]** 필드에 개인 키 별칭을 입력합니다. 예, `*companyname*-alias`. Adobe는 제공하는 동안 귀하에게 보낸 환영 이메일에 개인 키 별칭을 제공합니다. 개인 키 별칭을 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
-
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. 저장 **[!UICONTROL 및 닫기를]** 눌러 변경 사항을 이 사용자에게 저장합니다.
@@ -305,7 +301,6 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
    * **[!UICONTROL 테넌트 ID]** - 이 값은 Replication Service에 게시되는 회사/테넌트의 이름입니다. 이 값은 프로비전 중에 Adobe가 사용자에게 보낸 환영 이메일에서 제공하는 테넌트 ID입니다. 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 키 저장소 별칭]** - 이 값은 인증 설정에서 키를 생성할 때 설정된** 새 별칭** 값 [과 같습니다](#setting-up-authentication). 예를 들면 다음과 같습니다 `replication`. (인증 [설정의 7단계를 참조하십시오](#setting-up-authentication).)
    * **[!UICONTROL 키 저장소 암호]** - KeyStore 만들기를 탭했을 때 만들어진 KeyStore **[!UICONTROL 암호입니다.]** Adobe는 이 암호를 제공하지 않습니다. 인증 [설정의 5단계를 참조하십시오](#setting-up-authentication).
-
    다음 이미지는 샘플 데이터가 있는 복제 에이전트를 보여줍니다.
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
@@ -923,7 +918,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
   <tr>
    <td>만료</td>
    <td>36000000</td>
-   <td><p>기본 클라이언트 캐시 시간을 라이브로 설정합니다. 특정 카탈로그 레코드에 유효한 카탈로그::Expiration 값이 없는 경우 기본 만료 간격을 제공합니다.</p> <p>실수, 0 이상 회신 데이터가 생성된 이후 만료까지 남은 시간(밀리초)입니다. 응답 이미지를 항상 즉시 만료되도록 0으로 설정하면 클라이언트 캐시를 효과적으로 사용할 수 없습니다. 기본적으로 이 값은 10시간으로 설정되며, 즉 새 이미지가 게시된 경우 이전 이미지가 사용자의 캐시를 나가는 데 10시간이 걸립니다. 캐시를 더 빨리 지워야 한다면 고객 지원 센터에 문의하십시오.</p> <p>이미지 제공 API에서 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_expiration.html">만료도</a> 참조하십시오.</p> </td>
+   <td><p>기본 클라이언트 캐시 시간을 라이브로 설정합니다. 특정 카탈로그 레코드에 유효한 카탈로그::Expiration 값이 없는 경우 기본 만료 간격을 제공합니다.</p> <p>실수, 0 이상 회신 데이터가 생성된 이후 만료까지 남은 시간(밀리초)입니다. 응답 이미지를 항상 즉시 만료되도록 0으로 설정하면 클라이언트 캐시를 효과적으로 사용할 수 없습니다. 기본적으로 이 값은 10시간으로 설정되며, 즉 새 이미지가 게시된 경우 이전 이미지가 사용자의 캐시를 나가는 데 10시간이 걸립니다. 캐시를 더 빨리 지워야 한다면 고객 지원 센터에 문의하십시오.</p> <p>이미지 제공 API에서 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">만료도</a> 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>jpegquality</td>
@@ -965,9 +960,9 @@ CMYK, RGB 또는 회색 출력을 사용하여 다이내믹 미디어 색상 관
 
 고급 사용 사례에서는 수동 구성 `icc=` 수정자를 사용하여 출력 색상 프로파일을 명시적으로 선택할 수 있습니다.
 
-* `icc` - [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_icc.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_icc.html)
+* `icc` - [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
 
-* `iccEmbed` - [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html)
+* `iccEmbed` - [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
 Adobe 표준 색상 프로파일은 소프트웨어 배포의 패키지 공유 [또는](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 기능 팩 12445의 기능 팩 1245 [가 설치되어 있는 경우에만 사용할 수](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 있습니다. 모든 기능 팩과 서비스 팩은 [패키지 공유](https://www.adobeaemcloud.com/content/packageshare.html) 및 [소프트웨어 배포를 통해 사용할 수 있습니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445는 Adobe 색상 프로필을 제공합니다.
@@ -1013,55 +1008,55 @@ Feature Pack을 설치한 후 RGB 또는 CMYK 이미지 데이터를 요청할 �
    <td><strong>설명</strong></td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilergb.html">iccprofilergb</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>기본 RGB 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilecmyk.html">iccprofilecmyk</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>기본 CMYK 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilegray.html">iccprofilegray</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>기본 회색 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>포함된 색상 프로필이 없는 RGB 이미지에 사용되는 기본 RGB 색상 프로필의 이름</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>포함된 색상 프로필이 없는 CMYK 이미지에 사용되는 기본 CMYK 색상 프로필의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrcgray.html">iccprofilesrcgray</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>포함된 색상 프로필이 없는 CMYK 이미지에 사용되는 기본 회색 색상 프로필의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccblackpointcompensation.html">icblackpointcompensation</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">icblackpointcompensation</a></td>
    <td>부울</td>
    <td>True</td>
    <td>색상 교정 중에 검은 점 보상을 수행할지 여부를 지정합니다. Adobe에서는 이 설정을 사용하는 것이 좋습니다.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccdither.html">시디더</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">시디더</a></td>
    <td>부울</td>
    <td>False</td>
    <td>색상 교정 중에 디더링을 수행할지 여부를 지정합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccrenderintent.html">icenderintent</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">icenderintent</a></td>
    <td>문자열</td>
    <td>상대적</td>
    <td><p>렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. <strong>지각, 상대, 채도, 절대. </strong><i></i>Adobe에서는 <strong>상대 </strong><i></i>를 기본값으로 권장합니다.</p> </td>
