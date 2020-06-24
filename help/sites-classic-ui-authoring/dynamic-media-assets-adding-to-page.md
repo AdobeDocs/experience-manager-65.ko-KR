@@ -66,6 +66,7 @@ Dynamic Media 구성 요소는 지능적입니다. 이미지를 추가하는지 
 >
 >* [Dynamic Media를 활성화](/help/assets/config-dynamic.md)했습니다. Dynamic Media는 기본적으로 비활성화됩니다.
 >* 이미지에 피라미드형 tiff 파일이 있습니다. 다이내믹 미디어를 활성화하기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
+
 >
 
 
