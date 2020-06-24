@@ -40,6 +40,7 @@ Dynamic Media에서 [비디오](/help/assets/video.md) 작업에 대한 자세�
 >
 >* `s7access.log`
 >* `ImageServing.log`
+
 >
 >
 AEM 인스턴스 [모니터링 및 유지 관리에 설명되어 있습니다](/help/sites-deploying/monitoring-and-maintaining.md).
@@ -176,8 +177,10 @@ AEM에서 Dynamic Media Classic(Scene7)을 사용하려면 [특정 시나리오�
    >Dynamic Media 관련 문제를 해결하려면 다음 로그를 `crx-quickstart/logs/` 참조하십시오.
    >
    >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log - ImageServer 로그는 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
+
    이미지 서버 로그 파일 이름의 예: `ImageServer-57346-2020-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access 로그는 `/is/image` 및 를 통해 Dynamic Media에 대한 각 요청을 기록합니다 `/is/content`.
+
    이러한 로그는 Dynamic Media이 활성화된 경우에만 사용됩니다. 페이지에서 생성된 전체 **다운로드** 패키지에 `system/console/status-Bundlelist` 포함되지 않습니다. Dynamic Media 문제가 있는 경우 고객 지원에 문의할 때 이 두 로그를 모두 문제에 추가하십시오.
 
 ### 다른 포트 또는 컨텍스트 경로에 AEM을 설치한 경우.. {#if-you-installed-aem-to-a-different-port-or-context-path}
@@ -236,7 +239,7 @@ AEM Dynamic Media을 6.3에서 6.5로 업그레이드하는 경우(이제 가동
 
 ## 이미지 복제 구성 {#configuring-image-replication}
 
-Dynamic Media 이미지 전달은 AEM Author에서 비디오 축소판과 같은 이미지 자산을 게시하여 Adobe의 on-demand 복제 서비스(Replication Service URL)에 복제하는 방식으로 이루어집니다. 그런 다음 On-Demand 이미지 전달 서비스(이미지 서비스 URL)를 통해 에셋이 전달됩니다.
+Dynamic Media 이미지 전달은 AEM Author에서 비디오 축소판과 같은 이미지 자산을 게시하여 Adobe의 on-demand 복제 서비스(Replication Service URL)에 복제하는 방식으로 작동합니다. 그런 다음 On-Demand 이미지 전달 서비스(이미지 서비스 URL)를 통해 에셋이 전달됩니다.
 
 다음을 수행해야 합니다.
 
@@ -283,6 +286,7 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
    * KeyStore **[!UICONTROL 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 이 암호는 5단계에서 만든 KeyStore 암호가 **아니지만** Adobe에서 제공하는 KeyStore 파일 암호입니다. KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * 개인 **[!UICONTROL 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 개인 키 암호와 동일할 수 있음). Adobe는 제공하는 동안 사용자에게 보낸 환영 이메일에 개인 키 암호를 제공합니다. 개인 키 암호를 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
    * 개인 **[!UICONTROL 키 별칭]** 필드에 개인 키 별칭을 입력합니다. 예, `*companyname*-alias`. Adobe는 제공하는 동안 귀하에게 보낸 환영 이메일에 개인 키 별칭을 제공합니다. 개인 키 별칭을 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
+
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. 저장 **[!UICONTROL 및 닫기를]** 눌러 변경 사항을 이 사용자에게 저장합니다.
@@ -301,6 +305,7 @@ Dynamic Media 이미지 배달 서비스에 이미지를 복제하려면 작성�
    * **[!UICONTROL 테넌트 ID]** - 이 값은 Replication Service에 게시되는 회사/테넌트의 이름입니다. 이 값은 프로비전 중에 Adobe가 사용자에게 보낸 환영 이메일에서 제공하는 테넌트 ID입니다. 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 키 저장소 별칭]** - 이 값은 인증 설정에서 키를 생성할 때 설정된** 새 별칭** 값 [과 같습니다](#setting-up-authentication). 예를 들면 다음과 같습니다 `replication`. (인증 [설정의 7단계를 참조하십시오](#setting-up-authentication).)
    * **[!UICONTROL 키 저장소 암호]** - KeyStore 만들기를 탭했을 때 만들어진 KeyStore **[!UICONTROL 암호입니다.]** Adobe는 이 암호를 제공하지 않습니다. 인증 [설정의 5단계를 참조하십시오](#setting-up-authentication).
+
    다음 이미지는 샘플 데이터가 있는 복제 에이전트를 보여줍니다.
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
