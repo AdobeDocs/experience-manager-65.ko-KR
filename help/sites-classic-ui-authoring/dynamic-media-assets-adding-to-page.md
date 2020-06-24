@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 56%
+source-wordcount: '1716'
+ht-degree: 55%
 
 ---
 
@@ -66,7 +66,6 @@ Dynamic Media 구성 요소는 지능적입니다. 이미지를 추가하는지 
 >
 >* [Dynamic Media를 활성화](/help/assets/config-dynamic.md)했습니다. Dynamic Media는 기본적으로 비활성화됩니다.
 >* 이미지에 피라미드형 tiff 파일이 있습니다. 다이내믹 미디어를 활성화하기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
-
 >
 
 
@@ -95,7 +94,7 @@ You can edit the following Dynamic Media settings by clicking **[!UICONTROL Edit
 
 이미지 세트, 스핀 세트 또는 혼합 미디어 집합을 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
-**[!UICONTROL 이미지 수정자]** - 추가 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
+**[!UICONTROL 이미지 수정자]** - 추가 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 이미지 세트, 스핀 세트 또는 혼합 미디어 집합을 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
@@ -141,7 +140,7 @@ You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONT
 
 AEM 6.2에서 [FP-13480](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480)을 설치하면 비디오가 보안 SSL 연결(HTTPS)을 통해 제공되는지 아니면 비보안 연결(HTTP)을 통해 제공되는지를 제어할 수 있습니다. 기본적으로, 비디오 제공 프로토콜은 포함 웹 페이지의 프로토콜에서 자동으로 상속됩니다. 웹 페이지가 HTTPS를 통해 로드되는 경우 비디오도 HTTPS를 통해 제공됩니다. 또한 반대로, 웹 페이지가 HTTP에 있는 경우에는 비디오가 HTTP를 통해 제공됩니다. 대부분의 경우 이러한 기본 동작은 정상적이며 구성을 변경할 필요가 없습니다. 그러나 비디오 제공 URL 경로의 끝이나 포함 코드 조각에 있는 다른 뷰어 구성 매개 변수 목록에 `VideoPlayer.ssl=on`을 추가하여 이 기본 동작을 무시함으로써 보안 비디오 제공을 강제 적용할 수 있습니다.
 
-보안 비디오 제공과 URL 경로에 있는 `VideoPlayer.ssl` 구성 속성에 대한 자세한 내용은 뷰어 참조 가이드의 [보안 비디오 제공](https://marketing.adobe.com/resources/help/ko_KR/s7/viewers_ref/c_html5_video_viewer_20_securevideodelivery.html)을 참조하십시오. 비디오 뷰어 외에도 혼합 미디어 뷰어 및 대화형 비디오 뷰어에 보안 비디오 제공을 사용할 수 있습니다.
+보안 비디오 제공과 URL 경로에 있는 `VideoPlayer.ssl` 구성 속성에 대한 자세한 내용은 뷰어 참조 가이드의 [보안 비디오 제공](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html)을 참조하십시오. 비디오 뷰어 외에도 혼합 미디어 뷰어 및 대화형 비디오 뷰어에 보안 비디오 제공을 사용할 수 있습니다.
 
 ### 대화형 미디어 구성 요소 {#interactive-media-component}
 
