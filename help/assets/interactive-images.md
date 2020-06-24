@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
+source-git-commit: 2014e4f28c63f6268606d46b5019d654bbe4aa08
 workflow-type: tm+mt
-source-wordcount: '4345'
+source-wordcount: '4334'
 ht-degree: 0%
 
 ---
@@ -294,7 +294,7 @@ AEM Assets과 함께 제공되는 기본 대화형 이미지 뷰어 사전 설�
 
    * 경험 **[!UICONTROL 조각을 누릅니다.]**
 
-      * AEM Sites 고객인 경우 검색 아이콘(확대경)을 탭하거나 클릭하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 탭하거나 클릭한 다음 페이지의 오른쪽 위 모서리에서 선택을 탭하여 핫스팟 관리 페이지로 돌아갑니다.
+      * AEM Sites 고객인 경우 검색 아이콘(확대경)을 탭하거나 클릭하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 탭하거나 클릭한 다음 페이지의 오른쪽 위 모서리에 있는 선택을 탭하여 핫스팟 관리 페이지로 돌아갑니다.
 경험 [조각을 참조하십시오](/help/sites-authoring/experience-fragments.md).
 
       * 배너에 표시될 경험 조각의 폭과 높이를 지정합니다.
@@ -374,9 +374,9 @@ See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.
 
 응답형 환경을 위해 쇼퍼블 방식의 인터랙티브한 이미지에 &quot;자르기&quot;를 적용하려면 경로에 인터랙티브한 이미지 구성 속성 `ZoomView.iscommand` 을 포함시킬 수 있습니다. 여기서 호출해야 할 구성 요소이고 `ZoomView` `iscommand` 적용하는 &quot;자르기&quot; 이미지 제공 명령입니다.
 
-ZoomView.iscommand [구성 속성을](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_interactive_image_config_attrib_zoomview_iscommand.html) 참조하십시오.
+ZoomView.iscommand [구성 속성을](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 참조하십시오.
 
-자르기 [이미지 제공 명령을](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_crop.html) 참조하십시오.
+자르기 [이미지 제공 명령을](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) 참조하십시오.
 
 이제 인터랙티브한 이미지를 웹 사이트의 기존 Quickview와 통합할 수 있습니다.
 
