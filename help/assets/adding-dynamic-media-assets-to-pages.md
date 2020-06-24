@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
+source-git-commit: 2014e4f28c63f6268606d46b5019d654bbe4aa08
 workflow-type: tm+mt
 source-wordcount: '3095'
 ht-degree: 25%
@@ -37,13 +37,13 @@ AEM을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접
 
    사용 가능한 Dynamic Media 구성 요소 목록이 없을 경우 사용하려는 Dynamic Media 구성 요소를 활성화해야 합니다. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
-   ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
+   ![6_5_360video_wcmcomponent](/help/assets/assets/6_5_360video_wcmcomponent.png)
 
 1. 사용할 **[!UICONTROL Dynamic Media]** 구성 요소를 드래그하여 페이지의 원하는 위치에 놓습니다.
 
 1. 마우스 포인터를 구성 요소에 바로 놓습니다. 구성 요소 주위에 파란색 상자가 표시되면 한 번 눌러 구성 요소의 도구 모음을 표시합니다. 구성( **[!UICONTROL 렌치)]** 아이콘을 누릅니다.
 
-   ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
+   ![6_5_360video_wcmcomponentconfigure](/help/assets/assets/6_5_360video_wcmcomponentconfigure.png)
 
 1. 페이지에 드롭한 Dynamic Media 구성 요소에 따라 구성 대화 상자가 열립니다. [필요에 따라 구성 요소의 옵션을](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) 설정합니다.
 
@@ -123,7 +123,6 @@ Dynamic Media 구성 요소는 스마트합니다. 이미지를 추가하는지 
 >
 >* 동일한 페이지에서 사용 중인 Dynamic Media 구성 요소의 다중 인스턴스.
 >* 각 인스턴스는 동일한 자산 유형을 사용합니다.
-
 >
 >
 해당 페이지의 각 Dynamic Media 구성 요소에 다른 뷰어 사전 설정을 할당하는 것은 지원되지 않습니다.
@@ -202,9 +201,8 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    뷰어 한정자를 사용하면 다음을 수행할 수 있습니다.
 
-   * 캡션 파일을 비디오와 연결: [캡션](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * 탐색 파일을 비디오와 연결: [탐색](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
-
+   * 캡션 파일을 비디오와 연결: [caption][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 탐색 파일을 비디오와 연결: [탐색][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL 제목**- 비디오 제목을 변경합니다.
@@ -259,7 +257,6 @@ You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit
 >
 >* 동일한 페이지에서 사용되는 대화형 미디어 구성 요소의 다중 인스턴스.
 >* 각 인스턴스는 동일한 자산 유형을 사용합니다.
-
 >
 >
 해당 페이지의 각 Interactive Media 구성 요소에 다른 뷰어 사전 설정을 할당하는 것은 지원되지 않습니다.
@@ -301,7 +298,6 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 >
 >* 동일한 페이지에서 사용되는 여러 **[!UICONTROL 파노라마 미디어]** 구성 요소 인스턴스입니다.
 >* 각 인스턴스는 동일한 자산 유형을 사용합니다.
-
 >
 >
 해당 페이지의 각 파노라마 미디어 구성 요소에 서로 다른 뷰어 **[!UICONTROL 사전]** 설정을 할당하는 것은 지원되지 않습니다.
