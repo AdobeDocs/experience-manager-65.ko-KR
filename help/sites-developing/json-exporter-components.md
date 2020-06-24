@@ -10,7 +10,7 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 translation-type: tm+mt
-source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 3%
@@ -96,7 +96,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 * 자산 [사용 안내서의 컨텐츠 조각 항목](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
-* [콘텐츠 조각 모델](/help/assets/content-fragments-models.md)
+* [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [콘텐츠 서비스용 JSON 내보내기](/help/sites-developing/json-exporter.md)
 * [핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 및 [컨텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
