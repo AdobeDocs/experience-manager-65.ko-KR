@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
 workflow-type: tm+mt
-source-wordcount: '7445'
+source-wordcount: '7603'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,26 @@ JEE에서 AEM Forms이 배포된 응용 프로그램 서버를 특정 비관리 
    * 로컬에서 로그온 거부
    * 서비스로 로그온(이미 설정되어야 함)
 
-1. JEE 설치 디렉토리 및 GDS(Global Document Storage) 디렉토리의 AEM Forms을 완료하기 위해 새 사용자 계정에 읽기 및 실행, 쓰기, 수정, 목록 폴더 내용 및 읽기 권한을 부여합니다. GDS 디렉토리의 위치는 AEM Forms 설치 과정에서 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 상태로 유지되면 JBoss root [/server/]type[]/svcconative/DocumentStorage에 있는 응용 프로그램 서버 설치 아래의 디렉터리로 기본 위치가 설정됩니다.
+1. 새 사용자 계정에 다음 디렉토리에 대한 수정 권한을 지정합니다.
+   * **GDS(Global Document Storage) 디렉토리**: GDS 디렉토리의 위치는 AEM Forms 설치 과정에서 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 상태로 남아 있는 경우, 위치는 응용 프로그램 서버 설치 시 `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **CRX-Repository 디렉토리**: 기본 위치는 `[AEM-Forms-installation-location]\crx-repository`
+   * **AEM Forms 임시 디렉토리**:
+      * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
+      * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리UNIX 기반 시스템에서 루트 이외의 사용자는 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
+      * (Linux) /var/tmp 또는 /usr/tmp
+      * (AIX) /tmp 또는 /usr/tmp
+      * (Solaris) /var/tmp 또는 /usr/tmp
+1. 새 사용자 계정에 다음 디렉토리에 대한 쓰기 권한을 지정합니다.
+   * [JBoss-directory]\standalone\deployment
+   * [JBoss-directory]\standalone\
+   * [JBoss-directory]\bin\
+
+   >[!NOTE]
+   >
+   > JBoss Application Server의 기본 설치 위치:
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jboss/
+
 1. 응용 프로그램 서버를 시작합니다.
 
 **Configuration Manager 부트스트랩 서블릿 비활성화**
@@ -451,7 +470,7 @@ JEE에 AEM Forms을 성공적으로 설치한 후에는 주기적으로 환경�
 
 JEE 웹 응용 프로그램의 각 AEM Forms에 대한 다음 응용 프로그램 루트 URL입니다. 최종 사용자에게 제공하려는 웹 응용 프로그램 기능에 대한 URL을 노출하도록 역방향 프록시를 구성해야 합니다.
 
-특정 URL은 최종 사용자 지원 웹 애플리케이션으로 강조 표시됩니다. 역방향 프록시를 통해 외부 사용자에 액세스하기 위해 Configuration Manager에 대한 다른 URL이 노출되는 것을 피해야 합니다.
+특정 URL은 최종 사용자 지원 웹 애플리케이션으로 강조 표시됩니다. 역방향 프록시를 통해 외부 사용자에 액세스하기 위해 Configuration Manager에 대한 다른 URL이 노출되지 않아야 합니다.
 
 <table> 
  <thead> 
@@ -977,7 +996,26 @@ JEE 턴키 설치의 AEM Forms은 기본적으로 로컬 시스템 계정을 사
    * 로컬에서 로그인 거부
    * 서비스로 로그온(이미 설정되어야 함)
 
-1. JEE 설치 디렉토리 및 GDS(Global Document Storage) 디렉토리의 AEM Forms을 완료하기 위해 새 사용자 계정에 읽기 및 실행, 쓰기, 수정, 목록 폴더 내용 및 읽기 권한을 부여합니다. GDS 디렉토리의 위치는 AEM Forms 설치 과정에서 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 상태로 유지되면 JBoss root [/server/]type[]/svcconative/DocumentStorage에 있는 응용 프로그램 서버 설치 아래의 디렉터리로 기본 위치가 설정됩니다.
+1. 새 사용자 계정에 다음 디렉토리에 대한 수정 권한을 지정합니다.
+   * **GDS(Global Document Storage) 디렉토리**: GDS 디렉토리의 위치는 AEM Forms 설치 과정에서 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 상태로 남아 있는 경우, 위치는 응용 프로그램 서버 설치 시 `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **CRX-Repository 디렉토리**: 기본 위치는 `[AEM-Forms-installation-location]\crx-repository`
+   * **AEM Forms 임시 디렉토리**:
+      * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
+      * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리UNIX 기반 시스템에서 루트 이외의 사용자는 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
+      * (Linux) /var/tmp 또는 /usr/tmp
+      * (AIX) /tmp 또는 /usr/tmp
+      * (Solaris) /var/tmp 또는 /usr/tmp
+1. 새 사용자 계정에 다음 디렉토리에 대한 쓰기 권한을 지정합니다.
+   * [JBoss-directory]\standalone\deployment
+   * [JBoss-directory]\standalone\
+   * [JBoss-directory]\bin\
+
+   >[!NOTE]
+   >
+   > JBoss Application Server의 기본 설치 위치:
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jboss/.
+
 
 1. 응용 프로그램 서버 서비스를 시작합니다.
 
