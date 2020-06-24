@@ -3,11 +3,11 @@ title: Adobe Experience Manager 6.5 자산 사용 안내서
 seo-title: Adobe Experience Manager 6.5 자산 사용 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
 seo-description: 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
-translation-type: ht
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 | [개발 사용 안내서](/help/sites-developing/home.md) | Experience Manager 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 Experience Manager 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
-| [Experience Manager Livefyre](https://marketing.adobe.com/resources/help/ko_KR/livefyre/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 [!DNL Livefyre]와 공유하는 방법을 보여 줍니다. |
+| [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 [!DNL Livefyre]와 공유하는 방법을 보여 줍니다. |
 
 ## 주요 Experience Manager 리소스
 
