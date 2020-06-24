@@ -2,25 +2,28 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Developing User Guide
+user-guide-title: AEM 6.5 개발 사용 안내서
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 62be4d88f6ed3df68a77a4b61f7e113bdf03002d
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 10%
 
 ---
 
 
 # AEM 6.5 Developing User Guide {#developing}
 
-+ [개발 사용 안내서 개요](home.md)
++ [사용자 안내서 개발 개요](home.md)
 + 개발자를 위한 소개{#introduction}
-   + [AEM 사이트 개발 시작 - WKND 자습서](getting-started.md)
+   + [AEM Sites 개발 시작 - WKND 자습서](getting-started.md)
    + [AEM 코어 개념](the-basics.md)
    + [AEM 터치 지원 UI 구조](touch-ui-structure.md)
    + [AEM Touch-Enabled UI 개념](touch-ui-concepts.md)
    + [AEM 개발 - 지침 및 우수 사례](dev-guidelines-bestpractices.md)
    + [클라이언트측 라이브러리 사용](clientlibs.md)
    + [개발 및 페이지 비교](pagediff.md)
-   + [편집기 제한](editor-limitations.md)
+   + [편집기 제한 사항](editor-limitations.md)
    + [CSRF Protection Framework](csrf-protection.md)
    + [데이터 모델링 - David Nuescheler의 모델](model-data.md)
    + [AEM에 기여](contributing-to-cq.md)
@@ -30,8 +33,8 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [디자인 및 디자이너(클래식 UI)](designer.md)
    + [터치 UI로 마이그레이션](/help/sites-developing/touch-ui-migration.md)
 + 플랫폼{#platform}
-   + [Sling Cheatsheet](sling-cheatsheet.md)
-   + [Sling 어댑터 사용](sling-adapters.md)
+   + [슬링 치트](sling-cheatsheet.md)
+   + [슬링 어댑터 사용](sling-adapters.md)
    + [태그 라이브러리](taglib.md)
    + 템플릿{#templates}
       + [템플릿](templates.md)
@@ -44,19 +47,19 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [이름 지정 규칙](naming-conventions.md)
    + [[MOCK] Creating a New Granite UI Field Component](granite-ui-component.md)
    + QueryBuilder{#query-builder}
-      + [쿼리 빌더에 대한 사용자 지정 설명 계산기 구현](implementing-custom-predicate-evaluator.md)
+      + [쿼리 빌더에 대한 사용자 지정 설명 평가기 구현](implementing-custom-predicate-evaluator.md)
       + [쿼리 빌더 설명 참조](querybuilder-predicate-reference.md)
       + [쿼리 빌더 API](querybuilder-api.md)
    + 태깅{#tagging}
       + [태깅](tags.md)
       + [AEM Tagging Framework](framework.md)
       + [AEM 애플리케이션에 태그 지정 작성](building.md)
-   + [오류 처리기에 표시되는 페이지 사용자 지정](customizing-errorhandler-pages.md)
+   + [오류 처리기에 표시된 페이지 사용자 지정](customizing-errorhandler-pages.md)
    + [사용자 지정 노드 유형](custom-nodetypes.md)
    + [그래픽 렌더링용 글꼴 추가](adding-fonts.md)
    + [SQL 데이터베이스에 연결](jdbc.md)
    + [URL 외부화](externalizer.md)
-   + [오프로드용 작업 만들기 및 사용](dev-offloading.md)
+   + [오프로드용 작업 만들기 및 소비](dev-offloading.md)
    + [쿠키 사용 구성](cookie-optout.md)
    + [프로그래밍 방식으로 AEM JCR에 액세스하는 방법](access-jcr.md)
    + [JMX 콘솔과 서비스 통합](jmx-integration.md)
@@ -65,9 +68,9 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + eCommerce{#ecommerce}
       + [eCommerce](ecommerce.md)
       + [개발(일반)](generic.md)
-      + [SAP Commerce Cloud를 사용한 개발](sap-commerce-cloud.md)
+      + [SAP Commerce Cloud를 사용하여 개발](sap-commerce-cloud.md)
 + 구성 요소{#components}
-   + [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+   + [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
    + [스타일 시스템](/help/sites-authoring/style-system.md)
    + [구성 요소 개요](components.md)
    + [AEM 구성 요소 - 기본 사항](components-basics.md)
@@ -94,40 +97,40 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [xtypes 사용(클래식 UI)](xtypes.md)
       + [양식 개발(클래식 UI)](developing-forms.md)
 + 헤드리스 환경 관리{#headless}
-   + [헤드리스 및 하이브리드(AEM 포함)](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [AEM을 사용한 헤드리스 및 하이브리드](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [구성 요소에 대해 JSON 내보내기 활성화](json-exporter-components.md)
    + 단일 페이지 애플리케이션{#spas}
       + [SPA 소개 및 연습](spa-walkthrough.md)
       + [SPA WKND 자습서](spa-wknd.md)
       + [AEM에서 SPA 시작하기 - 반응](spa-getting-started-react.md)
-      + [AEM에서 SPA 시작 - Angular](spa-getting-started-angular.md)
+      + [AEM에서 SPA 시작 - 각도](spa-getting-started-angular.md)
       + [SPA에 대한 반응 구성 요소 구현](spa-implementing-react-component.md)
       + [SPA 딥 디브](spa-deep-dives.md)
       + [SPA 편집기 개요](spa-overview.md)
       + [AEM용 SPA 개발](spa-architecture.md)
-      + [SPA Blueprint](spa-blueprint.md)
+      + [SPA 블루프린트](spa-blueprint.md)
       + [SPA 페이지 구성 요소](spa-page-component.md)
       + [SPA에 대한 동적 모델-구성 요소 매핑](spa-dynamic-model-to-component-mapping.md)
       + [SPA 모델 라우팅](spa-routing.md)
-      + [SPA와 Adobe Experience Platform 출시 통합](spa-launch.md)
+      + [SPA 및 Adobe Experience Platform 실행 통합](spa-launch.md)
       + [SPA 및 서버측 렌더링](spa-ssr.md)
       + [SPA Javascript API 참조](spa-reference-materials.md)
    + [HTTP API](/help/assets/mac-api-assets.md)
-   + [컨텐츠 조각](/help/assets/content-fragments.md)
+   + [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)
    + [경험 조각](/help/sites-authoring/experience-fragments.md)
-   + [AEM 파섹](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
+   + [AEM의 컨텐츠 조각 및 컨텐츠 서비스 이해](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + 개발 도구{#devtools}
    + [개발 도구](dev-tools.md)
    + [AEM 현대화 도구](modernization-tools.md)
    + [대화 상자 편집기](dialog-editor.md)
-   + [대화 상자 변환 도구](dialog-conversion.md)
+   + [대화 상자 전환 도구](dialog-conversion.md)
    + [CRXDE Lite를 사용한 개발](developing-with-crxde-lite.md)
    + [Maven을 사용하여 패키지 관리](vlt-mavenplugin.md)
    + [Eclipse를 사용하여 AEM 프로젝트를 개발하는 방법](howto-projects-eclipse.md)
    + [Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법](ht-projects-maven.md)
    + [IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법](ht-intellij.md)
    + [VLT 도구 사용 방법](ht-vlttool.md)
-   + [프록시 서버 도구를 사용하는 방법](ht-proxy-server.md)
+   + [프록시 서버 도구 사용 방법](ht-proxy-server.md)
    + [AEM Brackets 확장](aem-brackets.md)
    + [Eclipse용 AEM 개발자 도구](aem-eclipse.md)
    + [AEM 보고서 도구](aem-repo-tool.md)
@@ -135,11 +138,11 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [ContextHub](contexthub.md)
    + [ContextHub Javascript API 참조](contexthub-api.md)
    + [ContextHub 확장](ch-extend.md)
-   + [페이지에 ContextHub 추가 및 저장소 액세스](ch-adding.md)
+   + [페이지에 ContextHub 추가 및 스토어 액세스](ch-adding.md)
    + [샘플 ContextHub 저장소 후보](ch-samplestores.md)
    + [샘플 ContextHub UI 모듈 유형](ch-samplemodules.md)
    + [ContextHub 진단](ch-diagnostics.md)
-   + [타깃팅된 컨텐츠를 위한 개발](target.md)
+   + [타깃팅된 컨텐츠에 대한 개발](target.md)
    + ClientContext{#client-context}
       + [클라이언트 컨텍스트 관련 세부 정보](client-context.md)
       + [클라이언트 컨텍스트 Javascript API](ccjsapi.md)
@@ -148,27 +151,27 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [콘솔 사용자 정의](customizing-consoles-touch.md)
    + [페이지 속성 보기 사용자 정의](page-properties-views.md)
    + [페이지 속성의 벌크 편집을 위한 페이지 구성](bulk-editing.md)
-   + [컨텐츠 조각 사용자 정의 및 확장](customizing-content-fragments.md)
+   + [컨텐츠 조각 사용자 지정 및 확장](customizing-content-fragments.md)
    + [컨텐츠 조각 렌더링용 구성 요소 구성](content-fragments-config-components-rendering.md)
    + [경험 조각](experience-fragments.md)
    + 워크플로우 확장{#extending-workflows}
       + [워크플로우 개발 및 확장](workflows.md)
       + [워크플로우 모델 만들기](workflows-models.md)
       + [워크플로우 기능 확장](workflows-customizing-extending.md)
-      + [프로그래밍 방식으로 워크플로우와 인터랙션](workflows-program-interaction.md)
+      + [프로그래밍 방식으로 워크플로우를 사용한 인터랙션](workflows-program-interaction.md)
       + [워크플로우 단계 참조](workflows-step-ref.md)
       + [워크플로우 우수 사례](workflows-best-practices.md)
       + [워크플로우 프로세스 참조](workflows-process-ref.md)
       + [AEM 워크플로우의 변수](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [다중 사이트 관리자 확장](extending-msm.md)
-   + 추적 및 분석{#extending-analytics}
+   + 추적 및 Analytics{#extending-analytics}
       + [이벤트 추적 확장](extending-analytics.md)
       + [구성 요소에 Adobe Analytics 추적 추가](extending-analytics-components.md)
-      + [Adobe Analytics Framework 사용자 지정](extending-analytics-framework.md)
+      + [Adobe Analytics 프레임워크 사용자 정의](extending-analytics-framework.md)
       + [Analytics에 대한 서버측 페이지 이름 지정 구현](extending-analytics-pa-naming.md)
    + 클라우드 서비스{#extending-cloud-services}
       + [클라우드 서비스 구성](extending-cloud-config.md)
-      + [사용자 정의 클라우드 서비스 만들기](extending-cloud-config-custom-cloud.md)
+      + [사용자 정의 Cloud Service 만들기](extending-cloud-config-custom-cloud.md)
    + [사용자 지정 확장 프로그램 만들기](extending-campaign-extensions.md)
    + 양식{#extending-forms}
       + [사용자 지정 양식 매핑 만들기](extending-campaign-form-mapping.md)
@@ -184,12 +187,12 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [계획](planning.md)
    + [어떤 테스트 환경이 필요합니까?](test-environments.md)
    + [테스트 케이스 정의](test-cases.md)
-   + [테스트 - 언제 및 누구와 함께?](when-who.md)
+   + [테스트 - 언제 누구와 함께](when-who.md)
    + [테스트 계획 컴파일](test-plan.md)
    + [결과 추적 및 피드백 제공](results-and-feedback.md)
    + [테스트 및 추적 도구](tools.md)
-   + [승인 및 승인](acceptance-signoff.md)
-   + [다음 릴리스...](the-next-release.md)
+   + [수락 및 승인](acceptance-signoff.md)
+   + [다음 릴리스..](the-next-release.md)
    + [검사 목록](checklists.md)
    + [힘든 날](tough-day.md)
    + [UI 테스트](hobbes.md)
@@ -201,11 +204,11 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [소프트웨어 아키텍처](software-architecture.md)
    + We.Retail 참조 구현{#we-retail}
       + [We.Retail 참조 구현](we-retail.md)
-      + [We.Retail에서 콘텐츠 조각 다운로드](we-retail-content-fragments.md)
+      + [We.Retail에서 컨텐츠 조각 시도](we-retail-content-fragments.md)
       + [We.Retail에서 핵심 구성 요소 테스트하기](we-retail-core-components.md)
       + [We.Retail에서 편집 가능한 템플릿 시도](we-retail-editable-templates.md)
-      + [We.Retail에서 반응형 레이아웃 시도](we-retail-responsive-layout.md)
-      + [We.Retail에서 글로벌라이제이션 사이트 구조 확인](we-retail-globalized-site-structure.md)
+      + [We.Retail에서 응답형 레이아웃 테스트하기](we-retail-responsive-layout.md)
+      + [We.Retail에서 글로벌라이제이션 사이트 구조](we-retail-globalized-site-structure.md)
       + [We.Retail에서 경험 조각 시도](we-retail-experience-fragments.md)
    + [코딩 팁](coding-tips.md)
    + [코드 함정](code-pitfalls.md)
