@@ -4,7 +4,7 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
 workflow-type: tm+mt
 source-wordcount: '9303'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 에셋을 저장하고 관리하는 것 이상의 작업을 할 [!DNL Adobe Experience Manager Assets] 수 있습니다. [!DNL Experience Manager] 엔터프라이즈급 자산 관리 기능을 제공합니다. 에셋을 편집 및 공유하고, 고급 검색을 실행하며, 수십 개의 지원되는 파일 포맷의 여러 표현물을 만들고, 버전과 디지털 권한을 관리하고, 에셋 처리를 자동화하고, 메타데이터를 관리 및 제어하고, 주석을 사용하여 공동 작업을 하는 등 다양한 작업을 수행할 수 있습니다.
 
-이 문서에서는 만들기 또는 업로드와 같은 기본 자산 관리 작업에 대해 설명합니다. 메타데이터 업데이트; 복사, 이동 및 삭제; 자산 게시, 게시 취소 및 검색 사용자 인터페이스를 이해하려면 자산 사용자 인터페이스 [시작을 참조하십시오](/help/sites-authoring/basic-handling.md). 컨텐츠 조각을 관리하려면 컨텐츠 조각 자산 [관리를](content-fragments-managing.md) 참조하십시오.
+이 문서에서는 만들기 또는 업로드와 같은 기본 자산 관리 작업에 대해 설명합니다. 메타데이터 업데이트; 복사, 이동 및 삭제; 자산 게시, 게시 취소 및 검색 사용자 인터페이스를 이해하려면 자산 사용자 인터페이스 [시작을 참조하십시오](/help/sites-authoring/basic-handling.md). 컨텐츠 조각을 관리하려면 컨텐츠 조각 자산 [관리를](/help/assets/content-fragments/content-fragments-managing.md) 참조하십시오.
 
 ## 폴더 만들기 {#creating-folders}
 
@@ -50,7 +50,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 >[!NOTE]
 >
->다이내믹 미디어 - Scene7 모드에서는 파일 크기가 2GB 이하인 자산만 업로드할 수 있습니다.
+>Dynamic Media - Scene7 모드에서는 파일 크기가 2GB 이하인 자산만 업로드할 수 있습니다.
 
 처리 프로필이 폴더에 지정되거나 할당되지 않은 폴더에 자산을 업로드하도록 선택할 수 있습니다.
 
@@ -63,6 +63,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    * 도구 모음에서 **[!UICONTROL 만들기]** 아이콘을 클릭합니다. 메뉴에서 **[!UICONTROL 파일을 클릭합니다]**. 필요한 경우 표시된 대화 상자에서 파일의 이름을 변경할 수 있습니다.
    * HTML5를 지원하는 브라우저에서 자산을 [!DNL Assets] 사용자 인터페이스에서 바로 드래그합니다. 파일 이름 바꾸기 대화 상자가 표시되지 않습니다.
+
    ![자산 업로드 옵션 만들기](assets/create-options.png)
 
    여러 파일을 선택하려면 Ctrl 또는 Command 키를 누르고 파일 선택기 대화 상자에서 자산을 선택합니다. iPad를 사용하는 경우 한 번에 하나의 파일만 선택할 수 있습니다.
@@ -73,7 +74,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    자산이 큰 자산으로 간주되는 크기를 구성할 수 있습니다. 예를 들어 1000MB 이상의 자산(500MB 대신)을 큰 자산으로 간주하도록 시스템을 구성할 수 있습니다. 이 경우 크기가 1000MB보다 큰 **[!UICONTROL 에셋이 업로드되면 [일시 중지]** ]가 진행률 표시줄에 나타납니다.
 
-   1000MB보다 큰 파일이 1000MB보다 작은 파일로 업로드되면 [일시 중지] 단추가 표시되지 않습니다. 하지만 1,000MB 미만의 파일 업로드를 취소하면 [일시 **[!UICONTROL 중지]** ] 단추가 나타납니다.
+   1000MB보다 큰 파일이 1000MB보다 작은 파일로 업로드되면 [일시 중지] 단추가 표시되지 않습니다. 그러나 1,000MB 미만의 파일 업로드를 취소하면 [일시 **[!UICONTROL 중지]** ] 단추가 나타납니다.
 
    크기 제한을 수정하려면 CRX 저장소의 `chunkUploadMinFileSize` 노드 `fileupload`속성을 구성합니다.
 
@@ -99,7 +100,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
    >
    >이름 충돌 대화 상자 **[!UICONTROL 에서]** [!UICONTROL 대체를] 선택하면 새 자산에 대해 자산 ID가 다시 생성됩니다. 이 ID는 이전 자산의 ID와 다릅니다.
    >
-   >Adobe Analytics에서 자산 통찰력을 사용하여 노출 수/클릭 수를 추적하도록 활성화하면, 재생성된 자산 ID는 Analytics에서 자산에 대해 캡처된 데이터를 무효화합니다.
+   >자산 통찰력이 Adobe Analytics에서 노출 횟수/클릭을 추적하도록 활성화된 경우 재생성된 자산 ID는 Analytics에서 자산에 대해 캡처된 데이터를 무효화합니다.
 
    업로드한 자산이 있는 경우 [!DNL Assets]중복 **[!UICONTROL 검색]** 대화 상자에서 중복 자산을 업로드하려고 한다는 경고를 표시합니다. 이 대화 상자는 기존 자산의 바이너리의 `SHA 1` 체크섬 값이 업로드한 자산의 체크섬 값과 일치하는 경우에만 나타납니다. 이 경우 자산의 이름은 중요하지 않습니다.
 
@@ -119,6 +120,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    * 자산 파일 이름에 `* / : [ \\ ] | # % { } ? &`
    * 에셋 폴더 이름은 포함할 수 없습니다. `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
    자산 파일 이름의 확장명에 특수 문자를 포함하지 마십시오.
 
    ![업로드 진행 대화 상자에는 업로드된 파일과 업로드하지 못한 파일의 상태가 표시됩니다](assets/chlimage_1-10.png)
@@ -139,22 +141,22 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 ### FTP를 사용하여 자산 업로드 {#uploading-assets-using-ftp}
 
-Dynamic Media를 사용하면 FTP 서버를 통해 자산을 일괄 업로드할 수 있습니다. 큰 자산(> 1GB)을 업로드하거나 전체 폴더 및 하위 폴더를 업로드하려면 FTP를 사용해야 합니다. FTP 업로드가 반복적으로 예약되도록 설정할 수도 있습니다.
+Dynamic Media을 사용하면 FTP 서버를 통해 자산을 일괄 업로드할 수 있습니다. 큰 자산(> 1GB)을 업로드하거나 전체 폴더 및 하위 폴더를 업로드하려면 FTP를 사용해야 합니다. FTP 업로드가 반복적으로 예약되도록 설정할 수도 있습니다.
 
 >[!NOTE]
 >
->다이내믹 미디어 - Scene7 모드에서는 파일 크기가 2GB 이하인 자산만 업로드할 수 있습니다.
+>Dynamic Media - Scene7 모드에서는 파일 크기가 2GB 이하인 자산만 업로드할 수 있습니다.
 
 >[!NOTE]
 >
->다이내믹 미디어 - Scene7 모드에서 FTP를 통해 자산을 업로드하려면 [!DNL Experience Manager] 작성자 인스턴스에 Feature Pack 18912를 설치합니다. FP-18912에 액세스하고 FTP 계정 설정을 완료하려면 [Adobe 고객 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 센터에 문의하십시오. 자세한 내용은 [벌크 에셋 마이그레이션을 위한 기능 팩 18912 설치를 참조하십시오](/help/assets/bulk-ingest-migrate.md).
+>Dynamic Media에서 FTP를 통해 자산을 업로드하려면 - Scene7 모드에서 작성자 인스턴스에 Feature Pack 18912를 [!DNL Experience Manager] 설치합니다. FP-18912에 액세스하고 FTP 계정 설정을 완료하려면 [Adobe 고객 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 센터에 문의하십시오. 자세한 내용은 [벌크 에셋 마이그레이션을 위한 기능 팩 18912 설치를 참조하십시오](/help/assets/bulk-ingest-migrate.md).
 >
 >FTP를 사용하여 자산을 업로드하면 에 지정된 업로드 설정이 [!DNL Experience Manager] 무시됩니다. 대신 Dynamic Media Classic에 정의된 파일 처리 규칙이 사용됩니다.
 
 **FTP를 사용하여 자산을 업로드하려면**
 
 1. 원하는 FTP 클라이언트를 사용하여 프로비저닝 이메일에서 받은 FTP 사용자 이름과 암호를 사용하여 FTP 서버에 로그인합니다. FTP 클라이언트에서 FTP 서버에 파일 또는 폴더를 업로드합니다.
-1. [프로비전 이메일에서 받은 자격 증명을 사용하여 Dynamic Media](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classic에 로그인합니다. 전역 탐색 막대에서 **[!UICONTROL 업로드를 클릭합니다]**.
+1. [프로비전 이메일에서 받은 자격 증명을 사용하여 Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 에 로그인합니다. 전역 탐색 막대에서 **[!UICONTROL 업로드를 클릭합니다]**.
 
 1. 업로드 페이지의 왼쪽 위 모퉁이에서 FTP **[!UICONTROL 를]** 통해 탭을 클릭합니다.
 1. 페이지 왼쪽에서 파일을 업로드할 FTP 폴더를 선택합니다. 페이지 오른쪽에서 대상 폴더를 선택합니다.
@@ -164,12 +166,12 @@ Dynamic Media를 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 
    >[!NOTE]
    >
-   >FTP를 통해 자산을 업로드하면 Dynamic Media Classic(S7)에서 설정한 업로드 작업 옵션이 이전에 설정된 자산 처리 매개 변수보다 우선합니다 [!DNL Experience Manager].
+   >FTP를 통해 자산을 업로드할 때 Dynamic Media Classic(S7)에서 설정한 업로드 작업 옵션이 이전에 설정된 자산 처리 매개 변수보다 우선합니다 [!DNL Experience Manager].
 
 1. [작업 옵션 업로드] 대화 상자의 오른쪽 아래에 있는 [저장]을 **[!UICONTROL 클릭합니다]**.
 1. 업로드 페이지의 오른쪽 아래에 있는 업로드 **[!UICONTROL 제출을 클릭합니다]**.
 
-   업로드의 진행 상태를 보려면 글로벌 탐색 막대에서 **[!UICONTROL 작업을 클릭합니다]**. [작업] 페이지에는 업로드 진행률이 표시됩니다. 언제든지 Dynamic Media Classic에서 작업 [!DNL Experience Manager] 을 계속 수행하고 작업 페이지로 돌아가 진행 중인 작업을 검토할 수 있습니다.
+   업로드의 진행 상태를 보려면 글로벌 탐색 막대에서 **[!UICONTROL 작업을 클릭합니다]**. [작업] 페이지에는 업로드 진행률이 표시됩니다. 작업 중인 작업을 [!DNL Experience Manager] 검토할 수 있도록 언제든지 Dynamic Media Classic의 [작업] 페이지로 돌아가서 작업을 계속할 수 있습니다.
 진행 중인 업로드 작업을 취소하려면 [기간] **[!UICONTROL 옆에 있는 [취소]** ]를 클릭합니다.
 
 #### 업로드 작업 옵션 {#upload-job-options}
@@ -238,7 +240,7 @@ PostScript(EPS) 또는 Illustrator(AI) 이미지 파일을 업로드할 때 다�
 
 Photoshop 문서(PSD) 파일은 이미지 템플릿을 만드는 데 가장 많이 사용됩니다. PSD 파일을 업로드할 때 파일에서 자동으로 이미지 템플릿을 만들 수 있습니다(업로드 화면에서 템플릿 [!UICONTROL 만들기] 옵션 선택).
 
-파일을 사용하여 템플릿을 만드는 경우 Dynamic Media는 레이어가 포함된 PSD 파일에서 여러 이미지를 만듭니다. 각 레이어에 대해 하나의 이미지를 만듭니다.
+파일을 사용하여 템플릿을 만드는 경우 Dynamic Media에서 레이어가 포함된 PSD 파일에서 여러 이미지를 만듭니다. 각 레이어에 대해 하나의 이미지를 만듭니다.
 
 위에 설명된 [!UICONTROL 자르기 옵션] 및 [!UICONTROL 색상 프로파일 옵션](Photoshop 업로드 옵션)을 사용합니다.
 
@@ -301,11 +303,11 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 
 ### 스트리밍된 업로드 {#streamed-uploads}
 
-Adobe Experience Manager에 자산을 많이 업로드하면 I/O 요청이 크게 증가하여 업로드 효율성이 떨어지고 일부 업로드 작업이 시간 초과될 수도 있습니다. [!DNL Experience Manager Assets] 은 에셋 스트리밍을 지원합니다. 스트리밍된 업로드는 업로드 작업 중에 서버의 임시 폴더에서 에셋 저장소를 방지하여 디스크에 I/O를 줄여 저장소에 복사합니다. 대신 데이터가 저장소로 직접 전송됩니다. 이렇게 하면 대용량 에셋을 업로드할 시간과 제한 시간이 줄어듭니다. 기본적으로 스트리밍된 업로드가 활성화되어 있습니다 [!DNL Assets].
+많은 에셋을 Adobe Experience Manager에 업로드하면 I/O 요청이 크게 증가하여 업로드 효율성이 떨어지고 일부 업로드 작업이 시간 초과될 수도 있습니다. [!DNL Experience Manager Assets] 은 에셋 스트리밍을 지원합니다. 스트리밍된 업로드는 업로드 작업 중에 서버의 임시 폴더에서 에셋 저장소를 방지하여 디스크에 I/O를 줄여 저장소에 복사합니다. 대신 데이터가 저장소로 직접 전송됩니다. 이렇게 하면 대용량 에셋을 업로드할 시간과 제한 시간이 줄어듭니다. 기본적으로 스트리밍된 업로드가 활성화되어 있습니다 [!DNL Assets].
 
 >[!NOTE]
 >
->servlet-api 버전이 3.1보다 낮은 JEE 서버에서 실행되는 Adobe Experience Manager에 대해 스트리밍 업로드를 사용할 수 없습니다.
+>3.1보다 낮은 servlet-api 버전이 있는 JEE 서버에서 실행되는 Adobe Experience Manager에 대해 스트리밍 업로드를 사용할 수 없습니다.
 
 ### 에셋이 포함된 ZIP 아카이브 추출 {#extractzip}
 
@@ -350,6 +352,7 @@ Adobe Experience Manager에 자산을 많이 업로드하면 I/O 요청이 크�
 1. 자산을 확대하려면:
    1. 키를 `Tab` 사용하여 포커스를 이동하여 확대 아이콘
    1. 키를 사용하여 이미지 `Enter` 를 확대합니다.
+
    축소하려면 `Tab` 키를 사용하여 포커스를 축소 아이콘으로 이동하고 키를 누릅니다 `Enter`.
 
 1. + 키 `Shift` 를 사용하여 이미지 `Tab` 에서 포커스를 뒤로 이동합니다.
@@ -358,7 +361,7 @@ Adobe Experience Manager에 자산을 많이 업로드하면 I/O 요청이 크�
 
 >[!MORELIKETHIS]
 >
->* [다이내믹 미디어 자산 미리 보기를 참조하십시오](/help/assets/previewing-assets.md).
+>* [Dynamic Media 자산 미리 보기를 참조하십시오](/help/assets/previewing-assets.md).
 >* [하위 자산 보기](managing-linked-subassets.md#viewing-subassets).
 
 
@@ -407,6 +410,7 @@ Adobe Experience Manager에 자산을 많이 업로드하면 I/O 요청이 크�
    * 자산을 보거나 다운로드한 횟수
    * 자산이 사용된 채널/장치
    * 자산이 최근 사용된 크리에이티브 솔루션
+
    자세한 내용은 자산 [인사이트를 참조하십시오](/help/assets/touch-ui-asset-insights.md).
 
 1. Click **[!UICONTROL Save &amp; Close]**.
@@ -480,6 +484,7 @@ Adobe Experience Manager에 자산을 많이 업로드하면 I/O 요청이 크�
    * [ **[!UICONTROL 뒤로]** ]를 클릭하여 [대상 **[!UICONTROL 선택] 화면으로]** 돌아갑니다.
 
    * [ **[!UICONTROL 취소]** ]를 클릭하여 이동 작업을 중지합니다.
+
    참조를 업데이트하지 않으면 자산의 이전 경로를 계속 가리킵니다. 참조를 조정하면 새 자산 경로로 업데이트됩니다.
 
 ## 변환 관리 {#managing-renditions}
@@ -506,7 +511,7 @@ Adobe Experience Manager에 자산을 많이 업로드하면 I/O 요청이 크�
 
    **변환 삭제**
 
-   표현물 패널에서 **[!UICONTROL 변환을]** 선택한 다음 도구 모음에서 **[!UICONTROL 표현물]** 삭제 아이콘을 클릭합니다. 자산 처리가 완료된 후에는 변환을 일괄 삭제할 수 없습니다. 개별 자산의 경우 사용자 인터페이스에서 변환을 수동으로 제거할 수 있습니다. 여러 자산의 경우 Experience Manager를 사용자 지정하여 특정 표현물을 삭제하거나 자산을 삭제한 후 삭제된 자산을 다시 업로드할 수 있습니다.
+   표현물 패널에서 **[!UICONTROL 변환을]** 선택한 다음 도구 모음에서 **[!UICONTROL 표현물]** 삭제 아이콘을 클릭합니다. 자산 처리가 완료된 후에는 변환을 일괄 삭제할 수 없습니다. 개별 자산의 경우 사용자 인터페이스에서 변환을 수동으로 제거할 수 있습니다. 여러 자산의 경우 Experience Manager을 사용자 지정하여 특정 표현물을 삭제하거나 자산을 삭제하고 삭제된 자산을 다시 업로드할 수 있습니다.
 
    ![변환 삭제 옵션](assets/delete_renditionicon.png)
 
@@ -555,6 +560,7 @@ Adobe Experience Manager에 자산을 많이 업로드하면 I/O 요청이 크�
 
       * 자산에 참조가 없으면 자산이 삭제됩니다.
       * 자산에 참조가 있으면, 오류 메시지가 하나 **이상의 자산이 참조되었다고 알려줍니다.** **[!UICONTROL 강제 삭제]**&#x200B;나 **[!UICONTROL 취소]**&#x200B;를 선택할 수 있습니다.
+
    >[!NOTE]
    >
    >자산을 삭제하려면 사용자에게 삭제 권한이 필요합니다 `dam/asset`. 수정 권한만 있는 경우 자산 메타데이터만 편집하고 자산에 주석을 추가할 수 있습니다. 하지만 자산이나 해당 메타데이터를 삭제할 수는 없습니다.
@@ -565,13 +571,13 @@ Adobe Experience Manager에 자산을 많이 업로드하면 I/O 요청이 크�
 
 ## 자산 다운로드 {#downloading-assets}
 
-Experience [Manager에서 자산 다운로드를 참조하십시오](/help/assets/download-assets-from-aem.md).
+Experience Manager [에서 자산 다운로드를 참조하십시오](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publishing-assets}
 
 >[!NOTE]
 >
->다이내믹 미디어에 대한 자세한 내용은 다이내믹 미디어 자산 [게시를 참조하십시오.](/help/assets/publishing-dynamicmedia-assets.md)
+>Dynamic Media에 대한 자세한 내용은 Dynamic Media 자산 [게시를 참조하십시오.](/help/assets/publishing-dynamicmedia-assets.md)
 
 1. 게시할 자산/폴더의 위치로 이동합니다.
 
@@ -607,6 +613,7 @@ Experience [Manager에서 자산 다운로드를 참조하십시오](/help/asset
 
    * **[!UICONTROL 작업을 중지하려면]** 취소
    * **[!UICONTROL 게시]** 취소를 클릭하여 지정된 날짜에 자산 게시 취소(더 이상 게시 환경에서 사용할 수 없음)가 되었는지 확인합니다.
+
    >[!NOTE]
    >
    >복잡한 자산을 게시 취소하는 동안 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조 파일의 게시를 취소하지 마십시오.
@@ -637,7 +644,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
 자산 검색은 크리에이티브한 사람들이 더 많이 사용할 수 있도록 하거나, 비즈니스 사용자와 마케터가 자산을 안전하게 관리하거나, DAM 관리자가 관리하는 데 중요한 역할을 하는 디지털 자산 관리 시스템의 용도로만 사용할 수 있습니다.
 
-간단한 검색, 고급 검색 및 사용자 정의 검색을 통해 가장 적절한 자산을 검색하고 사용하려면 Experience Manager에서 [자산 검색을 참조하십시오](search-assets.md).
+가장 적절한 자산을 검색 및 사용하기 위한 단순, 고급 및 사용자 정의 검색에 대해서는 Experience Manager에서 [자산 검색을 참조하십시오](search-assets.md).
 
 ## 빠른 작업 {#quick-actions}
 
@@ -677,6 +684,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
    * 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 클릭합니다.
    * 카드 **[!UICONTROL 보기에서 자산에]** 나타나는 편집 아이콘을 클릭합니다.
    * 자산 페이지의 도구 모음에서 **[!UICONTROL 편집]** 아이콘을 클릭합니다.
+
    ![도구 모음의 편집 아이콘](assets/edit_icon.png)
 
 1. 이미지를 자르려면 자르기 **아이콘을** 클릭합니다.
@@ -732,7 +740,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
 >[!NOTE]
 >
->타임라인에는 컨텐츠 조각에 관련된 몇 가지 [옵션이 포함되어 있습니다](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
+>타임라인에는 컨텐츠 조각에 관련된 몇 가지 [옵션이 포함되어 있습니다](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## 자산에 주석 추가 {#annotating}
 
@@ -742,13 +750,14 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
 >[!NOTE]
 >
->컨텐츠 조각의 경우 [주석이 조각 편집기에서 생성됩니다](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
+>컨텐츠 조각의 경우 [주석이 조각 편집기에서 생성됩니다](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. 주석을 추가할 자산의 위치로 이동합니다.
 1. 다음 중 **[!UICONTROL 하나에서 주석]** 아이콘을 클릭합니다.
 
    * [빠른 작업](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * 자산을 선택하거나 자산 페이지로 이동한 후 도구 모음에서
+
    ![주석 아이콘](assets/chlimage_1-29.png)
 
 1. 타임라인 아래쪽에 있는 **[!UICONTROL 주석]** 상자에 주석을 추가합니다. 또는, 이미지에서 영역을 마크업하고 주석 **[!UICONTROL 추가 대화 상자에 주석을]** 추가합니다.
@@ -940,6 +949,7 @@ CJK(중국어, 일본어 및 한국어)로 주석을 인쇄하도록 구성할 �
 1. 이미지의 두 버전을 비교하려면 다음 단계를 수행하십시오.
    * 현재 버전과 비교할 버전을 클릭합니다.
    * 슬라이더를 왼쪽으로 드래그하면 현재 버전 위에 이 버전을 겹쳐놓고 비교할 수 있습니다.
+
    ![슬라이더를 사용하여 선택한 에셋 버전을 현재 버전과 비교](assets/version-slider.gif)
 
    *그림: 슬라이더를 사용하여 선택한 버전의 자산을 현재 버전과 쉽게 비교할 수 있습니다.*
