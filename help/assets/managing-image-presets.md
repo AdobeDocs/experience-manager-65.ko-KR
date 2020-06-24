@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3845'
 ht-degree: 3%
 
 ---
@@ -195,7 +195,6 @@ DAM 자산 업데이트 워크플로우에서 이러한 설정을 구성하여 �
    >
    >
 * 비디오의 축소판 크기는 [인수] 아래의 [ **[!UICONTROL 처리]** ] **[!UICONTROL 탭에서 [mpeg 축소판]** ] 단계에서 **[!UICONTROL 구성합니다.]**
-
 >
 
 
@@ -412,7 +411,7 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>Dynamic Media은 UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 [ <strong>이미지 수정자] 필드에 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다</strong> . 이러한 매개 변수는 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">이미지 서버 프로토콜 명령 참조에서 정의됩니다</a>.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>Dynamic Media은 UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 [ <strong>이미지 수정자] 필드에 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다</strong> . 이러한 매개 변수는 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">이미지 서버 프로토콜 명령 참조에서 정의됩니다</a>.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> and <code>textPs=</code></li>
      <li>현지화 명령: <code>locale=</code> and <code>req=xlate</code></li>
