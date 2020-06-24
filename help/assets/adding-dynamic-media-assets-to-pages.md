@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
 workflow-type: tm+mt
-source-wordcount: '3129'
+source-wordcount: '3095'
 ht-degree: 25%
 
 ---
@@ -123,6 +123,7 @@ Dynamic Media 구성 요소는 스마트합니다. 이미지를 추가하는지 
 >
 >* 동일한 페이지에서 사용 중인 Dynamic Media 구성 요소의 다중 인스턴스.
 >* 각 인스턴스는 동일한 자산 유형을 사용합니다.
+
 >
 >
 해당 페이지의 각 Dynamic Media 구성 요소에 다른 뷰어 사전 설정을 할당하는 것은 지원되지 않습니다.
@@ -201,8 +202,9 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    뷰어 한정자를 사용하면 다음을 수행할 수 있습니다.
 
-   * 캡션 파일을 비디오와 연결: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html)
-   * 탐색 파일을 비디오와 연결: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html)
+   * 캡션 파일을 비디오와 연결: [캡션](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 탐색 파일을 비디오와 연결: [탐색](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL 제목**- 비디오 제목을 변경합니다.
@@ -257,6 +259,7 @@ You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit
 >
 >* 동일한 페이지에서 사용되는 대화형 미디어 구성 요소의 다중 인스턴스.
 >* 각 인스턴스는 동일한 자산 유형을 사용합니다.
+
 >
 >
 해당 페이지의 각 Interactive Media 구성 요소에 다른 뷰어 사전 설정을 할당하는 것은 지원되지 않습니다.
@@ -298,6 +301,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 >
 >* 동일한 페이지에서 사용되는 여러 **[!UICONTROL 파노라마 미디어]** 구성 요소 인스턴스입니다.
 >* 각 인스턴스는 동일한 자산 유형을 사용합니다.
+
 >
 >
 해당 페이지의 각 파노라마 미디어 구성 요소에 서로 다른 뷰어 **[!UICONTROL 사전]** 설정을 할당하는 것은 지원되지 않습니다.
