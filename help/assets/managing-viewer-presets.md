@@ -10,9 +10,9 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '4400'
+source-wordcount: '4361'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 경로: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.
 예: 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html)
 
-Adobe 뷰어 [참조 안내서를 참조하십시오](https://marketing.adobe.com/resources/help/ko_KR/s7/viewers_ref/).
+Adobe 뷰어 [참조 안내서를 참조하십시오](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html).
 
 이 섹션에서는 뷰어 사전 설정을 만들고, 편집하고, 관리하는 방법에 대해 설명합니다. 미리 볼 때마다 자산에 뷰어 사전 설정을 적용할 수 있습니다. See [Applying Viewer Presets](#applying-a-viewer-preset-to-an-asset).
 
@@ -39,7 +39,7 @@ Adobe 뷰어 [참조 안내서를 참조하십시오](https://marketing.adobe.co
 
 모든 기본 뷰어는 키보드 접근성을 지원합니다.
 
-키보드 [액세스 가능성 및 탐색을 참조하십시오](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_keyboard_accessibility.html).
+키보드 [액세스 가능성 및 탐색을 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
 ## Managing Viewer Presets {#managing-viewer-presets-1}
 
@@ -55,7 +55,7 @@ Adobe 뷰어 [참조 안내서를 참조하십시오](https://marketing.adobe.co
 
 웹 페이지마다 요구 사항이 다릅니다. 예를 들어 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지가 필요한 경우가 있습니다. 다른 경우 호스팅 페이지에 HTML5 뷰어를 직접 포함해야 할 수도 있습니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있을 수 있습니다. 또는 &quot;응답 속도&quot;가 있을 수 있으며 서로 다른 장치 또는 서로 다른 브라우저 창 크기에 대해 다르게 표시됩니다. 이러한 요구 사항을 충족하기 위해 Dynamic Media과 함께 제공되는 미리 정의된 모든 HTML5 뷰어는 정적 웹 페이지와 반응형 디자인 웹 페이지를 모두 지원합니다.
 
-웹 페이지에 응답형 뷰어를 [임베드하는 방법에 대한 자세한 내용은](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_about_responsive_static_image_library.html) Scene7 Image Serving API 도움말 ** 의 응답형 이미지 라이브러리를 참조하십시오.
+웹 페이지에 응답형 뷰어를 [임베드하는 방법에 대한 자세한 내용은](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) Scene7 Image Serving API 도움말 ** 의 응답형 이미지 라이브러리를 참조하십시오.
 
 >[!NOTE]
 >
@@ -154,11 +154,11 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 
 다음 표는 Dynamic Media과 함께 제공되는 미리 정의된 모든 미리 정의된 기본 뷰어 사전 설정을 식별합니다.
 
-뷰어 [참조 라이브러리 예](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) 및 [라이브 데모를 참조하십시오](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+참고 항목 <!-- KEEP THIS REFERENCE FOR NOW [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) --> [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 뷰어용 지원되는 웹 브라우저 및 운영 체제 버전에 대한 자세한 내용은 뷰어 릴리스 정보를 검토할 수 있습니다.
 
-뷰어 참조 안내서의 목차 &quot;뷰어 릴리스 정보&quot;를 [참조하십시오](https://marketing.adobe.com/resources/help/ko_KR/s7/viewers_ref/).
+뷰어 참조 안내서의 목차 &quot;뷰어 릴리스 정보&quot;를 [참조하십시오](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html).
 
 >[!NOTE]
 >
@@ -438,13 +438,13 @@ AEM은 세부 사항 보기 > 뷰어에서 자산을 볼 때 다양한 뷰어 �
 
       시각적 편집기를 사용하면 특정 속성이 스타일에 미치는 영향을 확인할 수 있습니다. 편집기의 왼쪽에 있는 샘플을 사용하여 뷰어에 미치는 영향을 즉시 확인할 수 있도록 속성을 설정하거나 조정하기만 하면 됩니다.
 
-      각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 뷰어 참조 안내서의 &quot; *`<viewer name>`* 뷰어 사용자 지정&quot; 도움말 항목에 [설명되어 있습니다](https://marketing.adobe.com/resources/help/ko_KR/s7/viewers_ref/). 예를 들어, 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록 및 설명 `Mixed_Media`에 [대해서는 혼합 미디어 뷰어](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_mixedmedia_viewer_customizingviewer.html) 사용자 지정을 참조하십시오.
+      각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 뷰어 참조 안내서의 &quot; *`<viewer name>`* 뷰어 사용자 지정&quot; 도움말 항목에 [설명되어 있습니다](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html). 예를 들어, 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록 및 설명 `Mixed_Media`에 [대해서는 혼합 미디어 뷰어](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) 사용자 지정을 참조하십시오.
 
    * 별도의 CSS 파일에서 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 선택한 **[!UICONTROL 유형]** 풀다운 메뉴 아래에 있는 CSS **[!UICONTROL 가져오기를 탭하여 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결하려면]** 시각적 편집기를 위로 스크롤해야 할 수도 있습니다.
 
       CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 상위 뷰어 요소에 정의된 뷰어 클래스 이름을 사용하여 정의해야 `.s7mixedmediaviewer` 합니다.
 
-      주어진 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 뷰어 참조 안내서의 &quot; *&lt;뷰어 이름>* 뷰어&quot; 도움말 항목에 [설명되어 있습니다](https://marketing.adobe.com/resources/help/ko_KR/s7/viewers_ref/). 예를 들어 확대/축소 뷰어용 CSS 마커에 대해 읽으려면 확대/축소 뷰어 사용자 [지정을 참조하십시오](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_20_zoom_viewer_customizingviewer.html). 하지만 시각적 편집기가 일부 CSS 값을 이해하지 못할 수도 있습니다. 이러한 경우 시각적 편집기는 오류를 무시하여 CSS가 계속 작동할 수 있도록 합니다.
+      주어진 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 뷰어 참조 안내서의 &quot; *&lt;뷰어 이름>* 뷰어&quot; 도움말 항목에 [설명되어 있습니다](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html). 예를 들어 확대/축소 뷰어용 CSS 마커에 대해 읽으려면 확대/축소 뷰어 사용자 [지정을 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html). 하지만 시각적 편집기가 일부 CSS 값을 이해하지 못할 수도 있습니다. 이러한 경우 시각적 편집기는 오류를 무시하여 CSS가 계속 작동할 수 있도록 합니다.
    >[!NOTE]
    >
    >CSS를 Raw 형식으로 직접 편집하려면 선택한 유형 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS]** 표시/숨기기를 누릅니다(보려면 시각적 편집기를 위로 스크롤해야 할 수 있음).
@@ -460,7 +460,7 @@ AEM은 세부 사항 보기 > 뷰어에서 자산을 볼 때 다양한 뷰어 �
 
    시각적 편집기의 많은 구성 요소에는 관련된 자세한 설명이 있습니다. 이러한 설명은 구성 요소를 확장하여 연결된 매개 변수를 표시할 때 파란색 상자에 나타납니다.
 
-   일부 뷰어 유형에는 IS 명령 텍스트 필드에서 이미지 제공 명령을 지정할 수 있는 구성 **[!UICONTROL 요소가]** 있습니다. 사용할 수 있는 명령 목록은 [이미지 제공 API 참조를 참조하십시오](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/image_serving_api_ref.html).
+   일부 뷰어 유형에는 IS 명령 텍스트 필드에서 이미지 제공 명령을 지정할 수 있는 구성 **[!UICONTROL 요소가]** 있습니다. 사용할 수 있는 명령 목록은 [이미지 제공 API 참조를 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
 
    >[!NOTE]
    >
