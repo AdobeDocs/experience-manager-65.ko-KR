@@ -4,10 +4,10 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Experience Manager 6.5 자산 사용 안내서
 translation-type: tm+mt
-source-git-commit: db60a7297defa2ed8e7f30f148d0f74a73a49893
+source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -131,14 +131,14 @@ ht-degree: 99%
    + [폴더를 Brand Portal에 게시](brand-portal-publish-folder.md)
    + [컬렉션을 Brand Portal에 게시](brand-portal-publish-collection.md)
 + 콘텐츠 조각 {#fragments}
-   + [콘텐츠 조각을 사용한 작업](content-fragments.md)
-   + [콘텐츠 조각 관리](content-fragments-managing.md)
-   + [콘텐츠 조각 모델](content-fragments-models.md)
-   + [변형 - 조각 콘텐츠 작성](content-fragments-variations.md)
-   + [콘텐츠 조각 관련 콘텐츠](content-fragments-assoc-content.md)
-   + [메타데이터 - 조각 속성](content-fragments-metadata.md)
-   + [콘텐츠 조각 - 삭제 고려 사항](content-fragments-delete.md)
-   + [컨텐츠 조각 - Markdown](content-fragments-markdown.md)
+   + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
+   + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
+   + [콘텐츠 조각 모델](content-fragments/content-fragments-models.md)
+   + [변형 - 조각 콘텐츠 작성](content-fragments/content-fragments-variations.md)
+   + [콘텐츠 조각 관련 콘텐츠](content-fragments/content-fragments-assoc-content.md)
+   + [메타데이터 - 조각 속성](content-fragments/content-fragments-metadata.md)
+   + [콘텐츠 조각 - 삭제 고려 사항](content-fragments/content-fragments-delete.md)
+   + [컨텐츠 조각 - Markdown](content-fragments/content-fragments-markdown.md)
    + [컨텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md)
 + 자산 관리 {#managing}
    + [디지털 자산을 관리합니다](managing-assets-touch-ui.md)
