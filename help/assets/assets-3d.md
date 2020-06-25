@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 56c9bc1ea99dcb93af21d8b26bac8792512f4d42
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2312'
 ht-degree: 3%
 
 ---
@@ -30,9 +30,11 @@ Dynamic Media에서 3D 자산을 사용하는 데 필요한 추가 구성은 없
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
-## Dynamic Media에서 지원되는 3D 파일 포맷 {#supported-three-d-file-formats-in-dm}
+## Dynamic Media에서 지원되는 3D 포맷 {#supported-three-d-file-formats-in-dm}
 
-Dynamic Media은 다음과 같은 3D 파일 형식을 지원합니다.
+Dynamic Media은 다음과 같은 3D 형식을 지원합니다.
+
+지원되는 [3D 포맷을 참조하십시오.](/help/assets/assets-formats.md)
 
 | 3D 파일 확장자 | 파일 포맷 | MIME 유형 | 메모 |
 |---|---|---|---|
