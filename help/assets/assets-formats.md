@@ -3,9 +3,9 @@ title: 처리를 위해 지원되는 파일 포맷입니다 [!DNL Adobe Experien
 description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f47f5e45c64e3cbbe0b68d449a5ef8d4b7dd7f38
+source-git-commit: 62085bdd8fa576e0d4eaeae19076d6edbf8c484a
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1647'
 ht-degree: 9%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 9%
 
 다음 3D 형식 목록이 지원됩니다.
 
-Dynamic Media [에서 3D 자산 작업을 참조하십시오.](/help/assets/assets-3d.md)
+Dynamic Media [에서 3D 에셋을 사용한 작업을 참조하십시오.](/help/assets/assets-3d.md)
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 배달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
