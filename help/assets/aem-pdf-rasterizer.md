@@ -3,9 +3,9 @@ title: PDF 래스터라이저를 사용하여 PDF 파일의 변환을 생성할 
 description: 의 Adobe PDF 래스터라이저 라이브러리를 사용하여 고품질 축소판과 변환을 생성할 수 [!DNL Adobe Experience Manager]있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 21f30cf67b73d26afc3f0413ca997a0b6e46e3d3
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 기본 출력 품질과 비교하여 더 우수하므로 여러 디바이스에서 일관된 보기 경험을 제공할 수 있습니다. Adobe PDF 래스터라이저 라이브러리는 색상 공간 변환을 지원하지 않습니다. 소스 파일의 색상 공간에 관계없이 항상 RGB로 출력합니다.
 
-1. 패키지 공유 또는 소프트웨어 배포를 통해 배포 [!DNL Experience Manager] 에 PDF [래스터라이저](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) 패키지를 [설치합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. 소프트웨어 배포를 통해 PDF 래스터라이저 [!DNL Adobe Experience Manager] 패키지를 [설치합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
