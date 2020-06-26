@@ -3,17 +3,17 @@ title: '[!DNL Adobe Camera Raw] 지원.'
 description: 지원 [!DNL Adobe Camera Raw] 을 활성화하는 방법을 [!DNL Adobe Experience Manager Assets]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf840b0e13e58f961c32b0231e4b691cb47b947a
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 2%
+source-wordcount: '379'
+ht-degree: 3%
 
 ---
 
 
 # Camera Raw를 사용하여 이미지 처리 {#camera-raw-support}
 
-CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처리하고 JPEG 포맷으로 이미지를 렌더링할 수 있습니다. [!DNL Adobe Camera Raw] 이 기능은 패키지 공유 또는 [!DNL Adobe Experience Manager Assets] 소프트웨어 배포를 통해 [사용할 수 있는](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw 패키지 [사용 시](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)지원됩니다.
+CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처리하고 JPEG 포맷으로 이미지를 렌더링할 수 있습니다. [!DNL Adobe Camera Raw] 이 기능은 소프트웨어 배포 [!DNL Adobe Experience Manager Assets] 에서 사용할 수 있는 [Camera Raw 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 사용 시 지원됩니다.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ CR2, NEF 및 RAF와 같은 Raw 파일 포맷을 처리하고 JPEG 포맷으로 �
 
 에서 [!DNL Camera Raw] 지원을 활성화하려면 다음 [!DNL Experience Manager Assets]단계를 수행합니다.
 
-1. 패키지 공유 또는 [소프트웨어 배포에서](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw 패키지를 [다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
+1. 소프트웨어 배포에서 [Camera Raw 패키지를](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 다운로드합니다.
 1. 액세스 `https://[aem_server]:[port]/workflow`. DAM 자산 **[!UICONTROL 업데이트 워크플로우를]** 엽니다.
 1. [축소판 **[!UICONTROL 처리] 단계를]** 엽니다.
 1. [축소판] **[!UICONTROL 탭에서 다음 구성을]** 제공합니다.
