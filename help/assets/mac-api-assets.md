@@ -3,7 +3,7 @@ title: Assets HTTP API in [!DNL Adobe Experience Manager].
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -77,17 +77,17 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 
 자산 HTTP API에는 다음 기능이 포함되어 있습니다.
 
-* 폴더 목록을 검색합니다.
-* 폴더를 만듭니다.
-* 자산을 만듭니다.
-* 자산 바이너리를 업데이트합니다.
-* 자산 메타데이터를 업데이트합니다.
-* 자산 표현물을 만듭니다.
-* 자산 변환을 업데이트합니다.
-* 자산 주석을 만듭니다.
-* 폴더 또는 자산을 복사합니다.
-* 폴더 또는 자산 이동
-* 폴더, 자산 또는 변환을 삭제합니다.
+* [폴더 목록을 검색합니다](#retrieve-a-folder-listing).
+* [폴더를 만듭니다](#create-a-folder).
+* [자산을 만듭니다](#create-an-asset).
+* [자산 바이너리를 업데이트합니다](#update-asset-binary).
+* [자산 메타데이터를 업데이트합니다](#update-asset-metadata).
+* [자산 변환을 만듭니다](#create-an-asset-rendition).
+* [자산 변환을 업데이트합니다](#update-an-asset-rendition).
+* [자산 주석을 만듭니다](#create-an-asset-comment).
+* [폴더 또는 자산을 복사합니다](#copy-a-folder-or-asset).
+* [폴더 또는 자산을 이동합니다](#move-a-folder-or-asset).
+* [폴더, 자산 또는 변환을 삭제합니다](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
