@@ -3,9 +3,9 @@ title: 참조 및 여러 페이지 에셋을 사용하여 복합 자산을 관�
 description: 디지털 자산에 대한 참조를 만드는 방법을 [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]살펴보십시오. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 여러 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1363'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 파일 내에서 기존 디지털 자산을 참조할 수 [!DNL Adobe Illustrator] 있습니다.
 
-1. Experience [Manager 데스크탑 앱을](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)사용하여 로컬 파일 시스템에서 디지털 자산을 가져옵니다. 참조할 자산의 파일 시스템 위치로 이동합니다.
+1. Experience Manager 데스크탑 앱 [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)을 사용하여 로컬 파일 시스템에서 디지털 자산을 가져옵니다. 참조할 자산의 파일 시스템 위치로 이동합니다.
 1. 로컬 폴더의 자산을 [!DNL Illustrator] 파일로 드래그합니다.
 
 1. 마운트된 드라이브에 [!DNL Illustrator] 파일을 저장하거나 [저장소에](/help/assets/managing-assets-touch-ui.md#uploading-assets) 업로드할 [!DNL Experience Manager] 수있습니다.
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 1. 도구 모음 **[!UICONTROL 에서 속성]** 보기를 클릭합니다. [ [!UICONTROL 속성] ] 페이지에서 **[!UICONTROL 현재 자산을 참조하는 파일 목록이 []** 기본 **]** 탭의 [참조] 열 아래에나타납니다.
 
-   ![자산 세부 정보에서 참조에서 Experience Manager Assets의 참조 열 보기](assets/asset-references.png)
+   ![자산 세부 정보에서 참조 열의 Experience Manager 자산 참조 보기](assets/asset-references.png)
 
    *그림: 자산 세부 정보에 있는 자산 참조를 참조하십시오.*
 
@@ -105,7 +105,7 @@ Microsoft Word 문서 전용으로, DAM Parse Word 문서 **[!UICONTROL 워크�
 
 ## View subassets {#viewing-subassets}
 
-하위 자산은 하위 자산이 생성되어 선택된 여러 페이지 자산에 사용할 수 있는 경우에만 표시됩니다. 생성된 하위 자산을 보려면 다중 페이지 자산을 엽니다. 페이지의 왼쪽 위 영역에서 ![왼쪽 레일 아이콘](assets/do-not-localize/aem_leftrail_contentonly.png) 을 클릭하고 목록에서 **[!UICONTROL 하위 자산]** 을 클릭합니다. 목록에서 하위 **[!UICONTROL 자산을]** 선택하는 경우. 또는 키보드 단축키를 사용합니다 `alt + 5`.
+하위 자산은 하위 자산이 생성되어 선택된 여러 페이지 자산에 사용할 수 있는 경우에만 표시됩니다. 생성된 하위 자산을 보려면 다중 페이지 자산을 엽니다. 페이지의 왼쪽 위 영역에서 ![옵션을 클릭하여 왼쪽 레일을](assets/do-not-localize/aem_leftrail_contentonly.png) 열고 목록에서 **[!UICONTROL 하위 자산]** 을 클릭합니다. 목록에서 하위 **[!UICONTROL 자산을]** 선택하는 경우. 또는 키보드 단축키를 사용합니다 `alt + 5`.
 
 ![여러 페이지 자산에 대한 하위 자산 보기](assets/view_subassets_simulation.gif)
 
@@ -127,15 +127,16 @@ Microsoft Word 문서 전용으로, DAM Parse Word 문서 **[!UICONTROL 워크�
 
 * **[!UICONTROL 페이지 개요]** 옵션은 모든 하위 자산을 동시에 표시합니다.
 
-* **[!UICONTROL 왼쪽 레일 아이콘을 클릭한 후 왼쪽 레일의 타임라인]** 옵션은 ![파일의 활동 스트림을 표시합니다](assets/do-not-localize/aem_leftrail_contentonly.png) .
+* **[!UICONTROL 옵션(Option)을 클릭하여 왼쪽 레일을]** 연 후 왼쪽 레일의 타임라인 옵션에 파일 ![](assets/do-not-localize/aem_leftrail_contentonly.png) 의 활동 스트림이 표시됩니다.
 
 ## 모범 사례 및 제한 사항 {#best-practice-limitation-tips}
 
-* Adobe Experience Manager 배포의 경우 하위 자산 생성이 매우 중요한 요소입니다. 복잡한 자산이 업로드될 때 하위 자산을 생성하는 경우 DAM 자산 업데이트 워크플로우에서 단계를 추가합니다. 주문형 하위 자산을 생성하는 경우 별도의 워크플로우를 만들어 하위 자산을 생성합니다. 전용 워크플로우를 사용하면 DAM 자산 업데이트 워크플로우의 다른 단계를 건너뛰어 계산 리소스를 저장할 수 있습니다.
+* 하위 자산 생성은 모든 Experience Manager 배포에서 매우 많은 리소스를 필요로 할 수 있습니다. 복잡한 자산이 업로드될 때 하위 자산을 생성하는 경우 DAM 자산 업데이트 워크플로우에서 단계를 추가합니다. 주문형 하위 자산을 생성하는 경우 별도의 워크플로우를 만들어 하위 자산을 생성합니다. 전용 워크플로우를 사용하면 DAM 자산 업데이트 워크플로우의 다른 단계를 건너뛰어 계산 리소스를 저장할 수 있습니다.
 
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Manager 데스크탑 앱 사용](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
->* [Adobe Experience Manager에서 데스크탑 작업 구성](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Adobe Experience Manager에서 데스크톱 작업 구성](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Adobe Photoshop에서 연결된 고급 개체 만들기](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Adobe InDesign에 그래픽 배치](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+
