@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager Assets 정보
-description: 디지털 자산 관리란 무엇이고, 사용 사례는 물론, Adobe의 Experience Manager Asset 솔루션인지 살펴보십시오
+title: Adobe Experience Manager 자산 정보
+description: 디지털 자산 관리란 무엇이고, 사용 사례는 물론, Adobe의 Experience Manager 에셋 솔루션인지 살펴보십시오
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '879'
 ht-degree: 52%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 52%
 
 # Administer assets {#administering-assets}
 
-자산은 Adobe Experience Manager 플랫폼과 완벽하게 통합되어 있으므로 기업이 디지털 자산을 공유하고 배포할 수 있는 DAM(Digital Asset Management) 툴입니다. 조직의 사용자는 이미지, 비디오, 문서, 오디오 클립 및 리치 미디어(예: 웹용 Flash 파일, 인쇄물 및 디지털 배포용 미디어)를 관리, 저장 및 액세스할 수 있습니다.
+자산은 Experience Manager 플랫폼과 완전히 통합된 DAM(Digital Asset Management) 툴로, 기업은 디지털 자산을 공유하고 배포할 수 있습니다. 조직의 사용자는 이미지, 비디오, 문서, 오디오 클립 및 리치 미디어(예: 웹용 Flash 파일, 인쇄물 및 디지털 배포용 미디어)를 관리, 저장 및 액세스할 수 있습니다.
 
 ## 디지털 자산 관리란 무엇입니까? {#what-is-digital-asset-management}
 
-Assets는 조직의 핵심 디지털 자산의 엔터프라이즈 범위 공유 및 분배 기능을 제공합니다. 조직 전체의 사용자는 웹 인터페이스(또는 CIFS 또는 WebDAV 폴더)를 통해 이미지, 그래픽, 오디오, 비디오 및 문서와 같은 디지털 자산을 저장, 관리 및 액세스할 수 있습니다.
+Assets는 조직의 핵심 디지털 자산의 엔터프라이즈 범위 공유 및 분배 기능을 제공합니다. Users across an organization can store, manage, and access digital assets such as images, graphics, audio, video, and documents through a Web interface (or a CIFS or WebDAV folder).
 
-Adobe Experience Manager와 긴밀하게 통합된 에셋 기능을 사용하면 다음과 같은 작업을 수행할 수 있습니다.
+Experience Manager과 긴밀하게 통합된 에셋 기능을 통해 다음을 수행할 수 있습니다.
 
 * 이미지, 문서, 오디오 파일 및 비디오 파일을 다양한 파일 형식으로 추가하고 공유합니다.
 * 자산을 태그, 라이트박스 또는 별(즐겨찾기)별로 그룹화하여 관리합니다. 자산에 주석을 추가합니다.
@@ -28,9 +28,9 @@ Adobe Experience Manager와 긴밀하게 통합된 에셋 기능을 사용하면
 * 이미지 필터 추가 및 크기 조절과 같은 이미지 편집 기능을 수행합니다. WebDAV 또는 CIFS 폴더를 사용하여 여러 디지털 자산을 동시에 가져오고 내보냅니다.
 * 워크플로우 및 알림을 사용하여 자산 세트를 공동 처리 및 다운로드하고 자산에 대한 액세스 권한을 관리할 수 있도록 합니다.
 
-### Adobe Experience Manager Assets는 Adobe Experience Manager Sites와 통합 {#aem-assets-fully-integrated-in-cq-wcm}
+### Experience Manager 사이트와 통합된 Experience Manager 자산 {#aem-assets-fully-integrated-in-cq-wcm}
 
-자산은 사이트와 완전히 통합되어 있으며 기능은 DAM 아이콘을 사용하여 사용할 수 있습니다. 그런 다음 웹 페이지를 작성할 때 컨텐츠 파인더를 통해 자산 저장소 내에서 관리되는 디지털 자산에 액세스할 수 있습니다.
+에셋은 사이트와 완벽하게 통합되어 모든 기능을 매끄럽게 사용할 수 있습니다. 그런 다음 웹 페이지를 작성할 때 컨텐츠 파인더를 통해 자산 저장소 내에서 관리되는 디지털 자산에 액세스할 수 있습니다.
 
 기본 사용자 인터페이스는 사이트의 사용자 인터페이스와 동일합니다. 자세한 [내용은 사이트](/help/sites-authoring/page-authoring.md) 개요를 참조하십시오.
 
@@ -51,9 +51,9 @@ DAM 저장소에 이미지를 넣을지, 이미지 구성 요소를 사용할지
 >
 >대량의 자산(특히 이미지)을 업로드 및/또는 편집하면 Experience Manager 인스턴스의 성능에 영향을 줄 수 있습니다.
 
-### Experience Manager Assets 용어 {#aem-assets-terminology}
+### Experience Manager 자산 용어 {#aem-assets-terminology}
 
-Adobe Experience Manager에서 디지털 자산을 사용하여 작업하는 경우 다음 용어를 이해해야 합니다.
+Experience Manager에서 디지털 자산으로 작업하는 경우 다음 용어를 이해해야 합니다.
 
 * **컬렉션** 실제 위치(폴더), 공용 속성(저장된 검색 폴더) 또는 사용자 선택(lightbox 폴더)을 기반으로 하는 자산의 컬렉션입니다.
 
@@ -84,6 +84,6 @@ Adobe Experience Manager에서 디지털 자산을 사용하여 작업하는 경
 
 물론 워크플로우도 수동으로 적용할 수 있습니다. 기본 워크플로우 목록을 알려면 [ Assets 미디어 핸들러](/help/assets/media-handlers.md)를 참조하십시오.
 
-## Experience Manager Assets 및 MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## Experience Manager 에셋 및 미디어 라이브러리 {#cq-dam-vs-cq-medialibrary}
 
 차이점 [에 대한 자세한 내용은 에셋](/help/assets/medialibrary.md) 및 미디어 라이브러리를 참조하십시오.
