@@ -3,9 +3,9 @@ title: 번역 프로젝트 만들기
 description: 에서 번역 프로젝트를 만드는 방법을 [!DNL Adobe Experience Manager]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1895'
 ht-degree: 6%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 6%
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 
-1. [ **[!UICONTROL 대상 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
+1. [ **[!UICONTROL Target 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
    ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -77,7 +77,7 @@ ht-degree: 6%
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. [ **[!UICONTROL 대상 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
+1. [ **[!UICONTROL Target 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -137,7 +137,7 @@ ht-degree: 6%
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. [ **[!UICONTROL 대상 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
+1. [ **[!UICONTROL Target 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
@@ -286,7 +286,7 @@ ht-degree: 6%
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. 인터페이스에서 이미 번역한 자산을 선택하고 도구 모음에서 [!DNL Assets] 편집 **** 아이콘을 클릭하여 편집 모드에서 자산을 엽니다.
+1. 인터페이스에서 이미 번역한 자산을 선택하고 도구 모음에서 [!DNL Assets] 편집 **** 을 클릭하여 편집 모드에서 자산을 엽니다.
 1. 자산을 편집한 다음 변경 내용을 저장합니다.
 1. 기존 번역 프로젝트에 [추가](#add-to-existing-translation-project) 절차의 2-14단계를 수행하여 언어 사본을 업데이트합니다.
 1. 번역 작업 타일 맨 아래에 있는 **[!UICONTROL 줄임표를]** 클릭합니다. 번역 작업 **** 페이지의 자산 목록에서 번역된 버전의 자산이 저장되는 임시 위치를 명확하게 볼 수 있습니다.
