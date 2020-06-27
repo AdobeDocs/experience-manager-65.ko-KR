@@ -3,7 +3,7 @@ title: 디지털 자산의 메타데이터를 관리할 수 있습니다 [!DNL A
 description: 메타데이터의 유형과 메타데이터를 기반으로 에셋을 자동으로 구성하고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 0%
@@ -50,7 +50,7 @@ To customize the metadata properties page, including adding, modifying, deleting
 
 1. In the Assets user interface, navigate to the location of the assets you want to edit.
 1. Select the assets for which you want to edit common properties.
-1. From the toolbar, click the **[!UICONTROL Properties]** icon to open the properties page for the selected assets.
+1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
 
    >[!NOTE]
    >
@@ -64,7 +64,7 @@ To customize the metadata properties page, including adding, modifying, deleting
    >* In the properties page, you can remove assets from the asset list by deselecting them. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
    >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
 
-1. To select a different metadata schema for the assets, click the **[!UICONTROL Settings]** icon from the toolbar, and select the desired schema.
+1. To select a different metadata schema for the assets, click **[!UICONTROL Settings]** from the toolbar, and select the desired schema.
 1. Save the changes.
 1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. click **[!UICONTROL Submit]**.
 
