@@ -1,9 +1,9 @@
 ---
-title: DTM을 통해 자산 통찰력 활성화
+title: Enable Asset Insights through DTM
 description: Adobe DTM(다이내믹 태그 관리)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Enable Asset Insights through DTM {#enable-asset-insights-through-dtm}
 
-Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 도구입니다. Adobe Analytics 고객은 무료로 제공됩니다.
+Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 도구입니다. Adobe Analytics 고객에게는 무료로 제공됩니다.
 
 추적 코드를 사용자 지정하여 타사 CMS 솔루션을 사용하여 자산 통찰력을 사용할 수 있도록 할 수 있지만, DTM을 사용하여 자산 인사이트 태그를 삽입하는 것이 좋습니다.
 
@@ -24,12 +24,12 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
 다음 단계를 수행하여 DTM을 통해 자산 통찰력을 활성화합니다.
 
 1. Experience Manager 로고를 클릭하고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 인사이트 구성]** 으로 **[!UICONTROL 이동합니다]**.
-1. [DTM 클라우드 서비스를 사용하여 Experience Manager 인스턴스 구성](/help/sites-administering/dtm.md)
+1. [DTM Cloud Service으로 Experience Manager 인스턴스 구성](/help/sites-administering/dtm.md)
 
-   API 토큰은 https://dtm.adobe.com에 로그인하고 프로필 아이콘에서 [계정 설정](https://dtm.adobe.com/) 을 방문한 후 사용할 수 **** 있어야 합니다. Adobe Experience Manager Sites와 Asset Insights의 통합이 아직 제대로 진행되고 있으므로 자산 인사이트 관점에서 이 단계는 필요하지 않습니다.
+   API 토큰은 https://dtm.adobe.com에 [로그인하고 사용자 프로필의](https://dtm.adobe.com/) 계정 설정을 **[!UICONTROL 방문한 후 사용할 수]** 있어야 합니다. 자산 인사이트와 Experience Manager 사이트의 통합이 아직 진행 중이기 때문에 자산 인사이트 관점에서 이 단계는 필요하지 않습니다.
 
-1. https://dtm.adobe.com에 [로그인한](https://dtm.adobe.com/)후 회사를 선택합니다.
-1. 기존 웹 속성 만들기/열기
+1. https://dtm.adobe.com에 [로그인하여](https://dtm.adobe.com/)회사를 적절히 선택합니다.
+1. 기존 웹 속성 만들기 또는 열기
 
    * 웹 **[!UICONTROL 속성]** 탭을 선택한 다음 속성 **[!UICONTROL 추가를 클릭합니다]**.
 
@@ -40,7 +40,7 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Javascript **[!UICONTROL /타사 태그를 확장합니다]**. 그런 다음 **[!UICONTROL 순차적 HTML]** 탭에서 새 스크립트 **** 추가를 클릭하여 스크립트 대화 상자를 엽니다.
+1. JavaScript **[!UICONTROL /타사 태그를 확장합니다]**. 그런 다음 **[!UICONTROL 순차적 HTML]** 탭에서 새 스크립트 **** 추가를 클릭하여 스크립트 대화 상자를 엽니다.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
@@ -49,15 +49,15 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` 가 제거됩니다. DTM의 Adobe Analytics 도구를 통해 사용할 수 있습니다.
+   > * `AppMeasurement.js` 가 제거됩니다. DTM의 Adobe Analytics 도구를 통해 제공될 예정입니다.
    > * 에 대한 `assetAnalytics.dispatcher.init`() 호출이 제거됩니다. 이 함수는 DTM의 Adobe Analytics 도구 로드가 끝나면 호출될 예정입니다.
-   > * Asset Insights 페이지 추적기가 호스팅되는 위치(예: Experience Manager, CDN 등)에 따라 스크립트 소스의 출처를 변경해야 할 수 있습니다.
-   > * Experience Manager에서 호스팅하는 페이지 추적기의 경우, 소스는 발송자 인스턴스의 호스트 이름을 사용하여 게시 인스턴스를 가리켜야 합니다.
+   > * 자산 통찰력 페이지 추적기가 호스팅되는 위치(예: Experience Manager, CDN 등)에 따라 스크립트 소스의 출처를 변경해야 할 수 있습니다.
+   > * Experience Manager에서 호스팅하는 페이지 추적기의 경우 소스는 발송자 인스턴스의 호스트 이름을 사용하여 게시 인스턴스를 가리켜야 합니다.
 
 
-1. 액세스 `https://dtm.adobe.com`. 웹 **[!UICONTROL 속성에서]** 개요를 클릭하고 도구 **[!UICONTROL 추가를]** 클릭하거나 기존 Adobe Analytics 도구를 엽니다. 도구를 만드는 동안 구성 방법 **[!UICONTROL 을]** 자동으로 설정할 수 **[!UICONTROL 있습니다]**.
+1. 액세스 `https://dtm.adobe.com`. 웹 **[!UICONTROL 속성]** 에서 **[!UICONTROL 개요를]** 클릭하고 도구추가를 클릭하거나 기존Adobe Analytics 도구를 엽니다. 도구를 만드는 동안 구성 방법 **[!UICONTROL 을]** 자동으로 설정할 수 **[!UICONTROL 있습니다]**.
 
-   ![Adobe Analytics 도구 추가](assets/Add-Adobe-Analytics-Tool.png)
+   ![Adobe Analytics 추가 툴](assets/Add-Adobe-Analytics-Tool.png)
 
    필요에 따라 스테이징/프로덕션 보고서 세트를 선택합니다.
 
