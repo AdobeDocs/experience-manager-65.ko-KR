@@ -1,11 +1,11 @@
 ---
 title: '메타데이터 속성 페이지의 레이아웃을 정의하는 메타데이터 스키마 [!DNL Adobe Experience Manager Assets]. '
-description: 메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 자산에 메타데이터 스키마를 적용하는 방법을 알아봅니다.
+description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 자산에 메타데이터 스키마를 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 505ee267534b7b3de1f85fb6782b855dbf3c371d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2648'
+source-wordcount: '2644'
 ht-degree: 3%
 
 ---
@@ -13,29 +13,29 @@ ht-degree: 3%
 
 # 메타데이터 스키마 {#metadata-schemas}
 
-조직은 에셋 검색, 사용, 상호 운용성 등을 향상시키는 메타데이터 모델을 제공합니다. 메타데이터 기반의 워크플로우와 프로세스를 유지하기 위해 매우 안전한 메타데이터 애플리케이션을 구축할 수 있습니다. 조직 전체의 메타데이터 전략 및 표준을 준수하려면 DAM 사용자가 정렬하는 데 도움이 되는 메타데이터 스키마를 사용할 수 있습니다. [!DNL Adobe Experience Manager] 메타데이터 스키마를 생성, 유지 관리 및 적용할 수 있는 간편하고 유연한 방법을 제공합니다.
+Organizations come up with a metadata model that enhances the asset discovery, usage, interoperability, and so on. Correct metadata application is sacrosanct to maintaining metadata-driven workflows and processes. To adhere to organization-wide metadata strategy and standards, you can use metadata schemas that help DAM users to align. [!DNL Adobe Experience Manager] allows easy and flexible methods to create, maintain, and apply metadata schemas.
 
-in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보에 대한 특정 필드가 포함됩니다. 또한 사용자에게 친숙한 방식으로 메타데이터 필드를 표시하는 레이아웃 정보도 포함되어 있습니다. 메타데이터 속성에는 제목, 설명, MIME 유형, 태그 등이 포함됩니다. 메타데이터 스키마 [!UICONTROL 양식] 편집기를 사용하여 기존 스키마를 수정하거나 사용자 정의 메타데이터 스키마를 추가할 수 있습니다.
+In [!DNL Adobe Experience Manager Assets], schemas contain specific fields for specific information to be filled in. It also contains layout information to display metadata fields in a user-friendly way. Metadata properties include title, description, MIME types, tags, and more. You can use the [!UICONTROL Metadata Schema Forms] editor to modify the existing schemas or add custom metadata schemas.
 
-자산에 대한 속성 페이지를 보고 편집하려면 다음 단계를 따르십시오.
+To view and edit the properties page for an asset, follow these steps:
 
-1. 카드 **[!UICONTROL 보기의 자산 타일에 있는 빠른 작업에서 속성]** 보기 아이콘을 클릭합니다.
+1. Click the **[!UICONTROL View Properties]** option from the quick actions on the asset tile in card view.
 
-   ![자산 타일에 대한 빠른 작업](assets/chlimage_1-170.png)
+   ![Quick actions on asset tile](assets/chlimage_1-170.png)
 
-   또는 자산을 선택한 다음 도구 모음에서 [!UICONTROL 속성] 아이콘을 클릭합니다.
+   Alternatively, select an asset and then click **[!UICONTROL Properties]** from the toolbar.
 
-1. 사용 가능한 탭에서 다양한 편집 가능한 메타데이터 속성을 편집할 수 있습니다. 하지만 속성 페이지의 [!UICONTROL 기본] 탭에서 자산 유형 [!UICONTROL 을] 수정할 수는 없습니다.
+1. You can edit the various editable metadata properties under the available tabs. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
-   ![자산 속성의 기본 탭. 여기서 자산 유형은 변경할 수 없습니다.](assets/asset-properties-basic-tab.png)
+   ![Basic tab of asset Properties, where asset type cannot be changed](assets/asset-properties-basic-tab.png)
 
-*그림: 자산 속성의 기본 탭.*
+*Figure: Basic tab on asset[!UICONTROL Properties].*
 
-자산에 대한 MIME 형식을 수정하려면 사용자 지정 메타데이터 스키마 양식을 사용하거나 기존 양식을 수정하십시오. 자세한 [내용은 메타데이터 스키마 양식](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) 편집을 참조하십시오. MIME 유형의 메타데이터 스키마를 수정하는 경우 자산 및 모든 하위 유형에 대한 속성 페이지 레이아웃이 수정됩니다. 예를 들어 jpeg 스키마를 `default/image` 수정하면 MIME 형식의 자산에 대한 메타데이터 레이아웃(자산 속성)만 수정됩니다 `image/jpeg`. 그러나 기본 스키마를 편집하는 경우 변경 사항은 모든 유형의 자산에 대한 메타데이터 레이아웃을 수정합니다.
+To modify the MIME type for an asset, use a custom metadata schema form or modify an existing form. 자세한 [내용은 메타데이터 스키마 양식](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) 편집을 참조하십시오. If you modify the metadata schema of a MIME type, the properties page layout for the assets and all subtypes are modified. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. However, if you edit the default schema, your changes modify the metadata layout for all types of assets.
 
 ## 메타데이터 스키마 양식 {#default-metadata-schema-forms}
 
-양식이나 템플릿 목록을 보려면 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL > 자산]** > **[!UICONTROL 메타데이터 스키마]** 로 **[!UICONTROL 이동합니다]**.
+To view a list of forms or templates, in [!DNL Experience Manager] interface navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 
 [!DNL Experience Manager] 에는 다음 메타데이터 스키마 양식 템플릿이 제공됩니다.
 
@@ -44,11 +44,11 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 | [!UICONTROL 기본값] |  | 자산에 대한 기본 메타데이터 스키마 양식입니다. |
 |  | 다음 하위 양식은 [!UICONTROL 기본] 양식의 속성을 상속합니다. |  |
 |  | [!UICONTROL 이미지] | 및 같은 MIME 형식의 이미지에 대한 스키마 양식 `image/jpeg` 을 참조하십시오 `image/png`. <br> 이미지 [!UICONTROL 양식에는 다음과 같은 하위] 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 jpeg가 있는 자산에 대한 스키마 [!UICONTROL 양식입니다].</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF가 있는 자산의 스키마 양식입니다.</li></ul> |
-|  | [!UICONTROL 응용 프로그램] | 및 같은 MIME 형식의 자산에 대한 스키마 양식 `application/pdf``application/zip`. <br>[!UICONTROL pdf]: 하위 유형 PDF가 있는 자산에 대한 스키마 양식입니다. |
-|  | [!UICONTROL 비디오] | 및 같은 MIME 형식의 비디오 자산에 대한 스키마 양식 `video/avi``video/mp4`. |
-| [!UICONTROL 컬렉션] |  | 컬렉션에 대한 스키마 양식입니다. |
-| [!UICONTROL contentfragment] |  | [콘텐츠 조각에 대한 스키마 양식입니다](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL 양식] |  | 이 스키마 양식은 [Adobe Experience Manager Forms와 관련이 있습니다](/help/forms/home.md). |
+|  | [!UICONTROL 응용 프로그램] | 및 같은 MIME 형식의 자산에 대한 스키마 양식 `application/pdf``application/zip`. <br>[!UICONTROL pdf]: Schema form for assets with sub type PDF. |
+|  | [!UICONTROL 비디오] | Schema form for video assets with MIME type such as `video/avi` and `video/mp4`. |
+| [!UICONTROL 컬렉션] |  | Schema form for collections. |
+| [!UICONTROL contentfragment] |  | [Schema form for content fragments](/help/sites-developing/customizing-content-fragments.md). |
+| [!UICONTROL 양식] |  | 이 스키마 양식은 [Adobe Experience Manager 양식과 관련되어 있습니다](/help/forms/home.md). |
 
 <!-- 
 TBD: Add dm_video child for the default form OOTB.
@@ -58,37 +58,37 @@ application doesn't contain the sub type zip OOTB.
 
 >[!NOTE]
 >
->스키마 양식의 하위 양식을 보려면 스키마 양식 이름을 클릭합니다.
+>To view the child forms of a schema form, click the schema form name.
 
 ## 메타데이터 스키마 양식 추가 {#add-a-metadata-schema-form}
 
-메타데이터 스키마 양식을 추가하려면 다음 단계를 따르십시오.
+To add a metadata schema form, follow these steps:
 
-1. 사용자 지정 템플릿을 목록에 추가하려면 도구 모음에서 **[!UICONTROL 만들기를]** 클릭합니다.
+1. To add a custom template to the list, click **[!UICONTROL Create]** from the toolbar.
 
    >[!NOTE]
    >
-   >편집되지 않은 템플릿과 함께 잠금 아이콘이 표시됩니다. 템플릿을 사용자 지정하면 잠금 아이콘이 표시되지 않습니다.
+   >A lock symbol is displayed with the unedited templates. If you customize a template, it is not locked ![lock closed](assets/do-not-localize/lock_closed_icon.svg).
 
-1. 대화 상자에서 스키마 양식의 제목을 입력하고 **[!UICONTROL 만들기를]** 클릭하여 양식 작성 프로세스를 완료합니다.
+1. In the dialog, provide the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
 ## 메타데이터 스키마 양식 편집 {#edit-metadata-schema-forms}
 
-새로 추가되거나 기존 메타데이터 스키마 양식을 편집할 수 있습니다. 메타데이터 스키마 양식에는 탭 내의 탭 및 양식 항목이 포함됩니다. 이러한 양식 항목을 CRX 저장소의 메타데이터 노드 내의 필드에 매핑/구성할 수 있습니다. 메타데이터 스키마 양식에 탭 또는 양식 항목을 추가할 수 있습니다. 상위에서 파생된 탭 및 양식 항목은 잠긴 상태입니다. 하위 수준에서 변경할 수 없습니다.
+새로 추가되거나 기존 메타데이터 스키마 양식을 편집할 수 있습니다. 메타데이터 스키마 양식에는 탭 내의 탭 및 양식 항목이 포함됩니다. 이러한 양식 항목을 CRX 저장소의 메타데이터 노드 내의 필드에 매핑/구성할 수 있습니다. 메타데이터 스키마 양식에 탭 또는 양식 항목을 추가할 수 있습니다. 상위에서 파생된 탭 및 양식 항목은 잠긴 상태입니다. You cannot alter them at the child level.
 
-1. [ [!UICONTROL 메타데이터 스키마 양식] ] 페이지에서 양식을 선택하고 도구 모음에서 **[!UICONTROL 편집을]** 클릭합니다.
+1. On the [!UICONTROL Metadata Schema Forms] page, select a form and click **[!UICONTROL Edit]** in the toolbar.
 
-1. 메타데이터 스키마 **[!UICONTROL 양식 편집기]** 페이지에서 메타데이터 양식을 사용자 정의합니다. 필요한 구성 요소를 **[!UICONTROL 양식]** 작성 탭에서 탭 중 하나로 드래그합니다.
+1. On the **[!UICONTROL Metadata Schema Form Editor]** page, customize the metadata form. Drag the needed components from the **[!UICONTROL Build Form]** tab to one of the tabs.
 
-   ![자산 속성 사용자 지정을 위한 메타데이터 스키마 편집기](assets/metadata-schema-editor.png)
+   ![Metadata Schema Editor to customize asset Properties page](assets/metadata-schema-editor.png)
 
-   *그림: 사용 가능한 탭이 있는[!UICONTROL 메타데이터 스키마 양식 편집기]페이지.*
+   *Figure: A[!UICONTROL Metadata Schema Form Editor]page with available tabs.*
 
 1. 구성 요소를 구성하려면 구성 요소를 선택하고 설정 **[!UICONTROL 탭에서 해당 속성을]** 수정합니다.
 
 ### 양식 [!UICONTROL 작성 탭 내의] 구성 요소 {#components-within-the-build-form-tab}
 
-양식 **[!UICONTROL 작성]** 탭에는 스키마 양식에서 사용하는 양식 항목이 나열됩니다. [ **[!UICONTROL 설정]** ] 탭에서는 [양식 **[!UICONTROL 작성] 탭에서 선택하는 각 항목의 속성을]** 제공합니다. 다음 표에는 양식 작성 탭에서 사용할 수 있는 양식 **[!UICONTROL 항목이]** 나열됩니다.
+The **[!UICONTROL Build Form]** tab lists form items that you use in your schema form. The **[!UICONTROL Settings]** tab provides the attributes of each item that you select in the **[!UICONTROL Build Form]** tab. 다음 표에는 양식 작성 탭에서 사용할 수 있는 양식 **[!UICONTROL 항목이]** 나열됩니다.
 
 | 구성 요소 이름 | 설명 |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
@@ -99,7 +99,7 @@ application doesn't contain the sub type zip OOTB.
 | [!UICONTROL 날짜] | 날짜 구성 요소를 추가합니다. |
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
 | [!UICONTROL 표준 태그] | 태그 추가. |
-| [!UICONTROL 스마트 태그] | 메타데이터 태그를 자동으로 추가하여 검색 기능을 강화합니다. |
+| [!UICONTROL 스마트 태그] | Add to augment search capabilities by automatically adding metadata tags. |
 | [!UICONTROL 숨김 필드] | 숨김 필드를 추가합니다. 자산이 저장되면 POST 매개 변수로 전송됩니다. |
 | [!UICONTROL 자산 참조자] | 이 구성 요소를 추가하여 자산에서 참조하는 자산 목록을 봅니다. |
 | [!UICONTROL 자산 참조] | 자산을 참조하는 자산 목록을 표시하려면 추가합니다. |
@@ -175,7 +175,7 @@ application doesn't contain the sub type zip OOTB.
 
 >[!NOTE]
 >
->* 기본 양식에 대한 사용자 지정 변경 사항을 삭제하면 이 잠금 아이콘이 메타데이터 스키마 인터페이스에 다시 표시됩니다. 양식은 기본 상태로 되돌려졌음을 나타냅니다.
+>* 기본 양식에 대한 사용자 지정 변경 사항을 삭제하면 잠금 ![잠금이 양식](assets/do-not-localize/lock_closed_icon.svg) 앞에 다시 나타납니다. 양식은 기본 상태로 되돌려졌음을 나타냅니다.
 >* 기본 메타데이터 스키마 양식은 삭제할 수 없습니다 [!DNL Assets].
 
 
@@ -260,26 +260,26 @@ application doesn't contain the sub type zip OOTB.
 >
 >메타데이터 필드는 다른 필드의 값을 기준으로 필수로 정의할 수 있습니다. 카드 보기에서는 이러한 필수 메타데이터 필드에 대한 누락된 메타데이터에 대한 경고 메시지를 표시하지 [!DNL Experience Manager] 않습니다.
 
-1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL > 자산]** **[!UICONTROL >]** 메타데이터 스키마 **[!UICONTROL 로 이동합니다]**. 메타데이터 **[!UICONTROL 스키마 양식]** 페이지가 표시됩니다.
+1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL > 자산]** **[!UICONTROL >]** 메타데이터 스키마 **[!UICONTROL 로 이동합니다]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. 기본 메타데이터 양식을 사용자 지정 양식으로 저장합니다. 예를 들어 다른 이름으로 저장합니다 `my_default`.
 
 1. 사용자 지정 양식을 편집합니다. 필수 필드를 추가합니다. 예를 들어 카테고리 **** 필드를 추가하고 필드를 필수 필드로 만듭니다.
 
    ![메타데이터 스키마 양식 편집기의 규칙 탭에서 필수를 선택하여 메타데이터 양식에 필수 필드 추가](assets/mandatory-field-metadata-schema-editor.png)
 
-   *그림: 메타데이터 스키마 양식 편집기의 필수 필드입니다.*
+   *Figure: Mandatory field in metadata schema form editor.*
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [ **[!UICONTROL 메타데이터 스키마 양식] 페이지에]** 나열됩니다. 양식을 선택한 다음 도구 모음 **[!UICONTROL 에서 폴더에]** 적용을 클릭하여 사용자 지정 메타데이터를 폴더에 적용합니다.
 
-1. 사용자 지정 양식에 추가한 필수 필드에 대한 메타데이터가 없는 일부 자산을 폴더로 이동하고 업로드합니다. 필수 필드에 대한 누락된 메타데이터에 대한 메시지가 자산의 카드 보기에 표시됩니다.
+1. 사용자 지정 양식에 추가한 필수 필드에 대한 메타데이터가 없는 일부 자산을 폴더로 이동하고 업로드합니다. A message for the missing metadata for the mandatory field is displayed on the card view of the asset.
 
-   ![폴더에 자산 업로드 시 자산 카드 보기에서 필수 메타데이터가 누락되는 메시지](assets/chlimage_1-192.png)
+   ![Message for missing mandatory metadata on asset card view on uploading assets in folder](assets/chlimage_1-192.png)
 
-1. (선택 사항) 액세스 `https://[aem_server]:[port]/system/console/components/`. 기본적으로 비활성화된 구성 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 요소를 구성하고 활성화합니다. 자산에 대한 메타데이터의 유효성을 [!DNL Experience Manager] 확인하는 빈도를 설정합니다. 이 구성은 자산의 속성 `hasValidMetadata` 을 `jcr:content` 추가합니다. [!DNL Experience Manager] 이 속성을 사용하여 검색 결과의 잘못된 자산을 필터링합니다. 확인 후 자산을 추가하는 경우, 자산은 다음 예약된 확인 `hasValidMetadata` 이 될 때까지 로 플래그되지 않습니다. 따라서 다음 예약 확인 후 까지 유효하지 않은 메타데이터의 검색 필터에 자산이 표시되지 않습니다.
+1. (Optional) Access `https://[aem_server]:[port]/system/console/components/`. 기본적으로 비활성화된 구성 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 요소를 구성하고 활성화합니다. Set a frequency at which [!DNL Experience Manager] checks for the validity of metadata on the assets. This configuration adds a property `hasValidMetadata` to `jcr:content` of assets. [!DNL Experience Manager] uses this property to filter the invalid assets in a search result. If you add an asset after a check, the asset is not flagged with `hasValidMetadata` until the next scheduled check. Hence the assets do not appear in search filters for invalid metadata untill after the next scheduled check.
 
    >[!CAUTION]
    >
-   >메타데이터 유효성 검사는 리소스를 많이 사용하므로 시스템 성능에 영향을 줄 수 있습니다. 그에 따라 검사를 예약합니다. 서버에서 부하를 처리할 수 없는 경우 이 작업을 비활성화하십시오.
+   >The metadata validation checks are resource-intensive and may impact the performance of your system. Schedule the checks accordingly. If the server cannot cope up with the load, try disabling this job.
 
 <!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->
