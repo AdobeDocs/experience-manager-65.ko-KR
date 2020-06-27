@@ -3,9 +3,9 @@ title: 관련 자산
 description: 몇 가지 일반적인 특성을 공유하는 디지털 자산을 연결하는 방법을 알아봅니다. 또한 디지털 자산 간의 소스 파생적인 관계를 만들 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '636'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 ## Relate assets {#relating-assets}
 
-1. Adobe Experience Manager 인터페이스에서 연결하려는 자산의 **[!UICONTROL 속성]** 페이지를 엽니다.
+1. Experience Manager 인터페이스에서 연결하려는 자산의 **[!UICONTROL 속성]** 페이지를 엽니다.
 
    ![자산의 속성 페이지를 열어 자산 연결](assets/asset-properties-relate-assets.png)
 
@@ -36,7 +36,7 @@ ht-degree: 3%
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. 다른 자산을 선택한 자산과 연결하려면 도구 모음에서 **[!UICONTROL 관련]** 아이콘을 클릭합니다.
+1. 다른 자산을 선택한 자산과 연결하려면 도구 모음에서 **[!UICONTROL 연결을]** 클릭합니다.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -45,13 +45,14 @@ ht-degree: 3%
    * 자산의 소스 파일을 연결하려면 목록에서 **[!UICONTROL 소스를]** 선택합니다.
    * 파생된 파일과 관련시키려면 목록에서 **[!UICONTROL 파생됨]** 을 선택합니다.
    * 자산 간의 양방향 관계를 만들려면 목록에서 **[!UICONTROL 다른]** 항목을 선택합니다.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. 자산 **[!UICONTROL 선택]** 화면에서 연결하려는 자산의 위치로 이동하고 선택합니다.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Click the **[!UICONTROL Confirm]** icon.
+1. 확인을 **[!UICONTROL 클릭합니다]**.
 1. Click **[!UICONTROL OK]** to close the dialog. 3단계에서 선택한 관계에 따라 관련 자산이 **[!UICONTROL 관련]** 섹션의 해당 카테고리 아래에 나열됩니다. 예를 들어, 관련된 자산이 현재 자산의 소스 파일인 경우 **[!UICONTROL 소스]**&#x200B;아래에 나열됩니다.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
