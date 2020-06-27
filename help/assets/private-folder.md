@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager에서 비공개 폴더를 만들고 공유합니다.
-description: Adobe Experience Manager Assets에서 비공개 폴더를 만들고 다른 사용자와 공유하며 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
+description: Adobe Experience Manager 자산에서 비공개 폴더를 만들고 다른 사용자와 공유하며 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '503'
 ht-degree: 2%
 
 ---
@@ -13,12 +13,11 @@ ht-degree: 2%
 
 # 비공개 폴더 공유 {#private-folder-sharing}
 
-Adobe Experience Manager Assets 사용자 인터페이스에 단독으로 사용할 수 있는 비공개 폴더를 만들 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라, 사용자는 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
+단독으로 사용할 수 있는 Adobe Experience Manager 자산 사용자 인터페이스에 비공개 폴더를 만들 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라, 사용자는 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
 
 >[!NOTE]
 >
 > 비공개 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다.
-
 
 1. 자산 콘솔의 도구 모음에서 **[!UICONTROL 만들기를]** 클릭한 다음 메뉴에서 **[!UICONTROL 폴더]** 를 선택합니다.
 
@@ -32,7 +31,7 @@ Adobe Experience Manager Assets 사용자 인터페이스에 단독으로 사용
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. 다른 사용자와 폴더를 공유하고 사용자에게 권한을 할당하려면 폴더를 선택하고 도구 모음에서 **[!UICONTROL 속성]** 아이콘을 클릭합니다.
+1. 다른 사용자와 폴더를 공유하고 사용자에게 할당 권한을 공유하려면 폴더를 선택하고 도구 모음에서 **[!UICONTROL 속성]** 을 클릭합니다.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,7 +57,7 @@ Adobe Experience Manager Assets 사용자 인터페이스에 단독으로 사용
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. 알림 아이콘을 클릭하여 알림 목록을 엽니다.
+1. 알림을 클릭하여 알림 목록을 엽니다.
 
    ![알림 목록](assets/Assets-Notification.png)
 
