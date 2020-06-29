@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -33,11 +33,11 @@ ht-degree: 1%
 
 고급 점수 설정은 기본 점수 설정과 거의 동일합니다.
 
-* 기본 및 고급 점수 지정 및 배지 규칙은 동일한 방식으로 컨텐츠에 [적용됩니다](/help/communities/implementing-scoring.md#apply-rules-to-content)
+* 기본 및 고급 점수 및 배지 규칙은 동일한 방식으로 컨텐츠에 [적용됩니다](/help/communities/implementing-scoring.md#apply-rules-to-content) .
 
    * 동일한 컨텐츠에 기본 및 고급 점수 및 배지 규칙을 적용할 수 있습니다.
 
-* [구성 요소에 대한 배지](/help/communities/implementing-scoring.md#enable-badges-for-component) 활성화
+* [구성 요소에 대한 배지](/help/communities/implementing-scoring.md#enable-badges-for-component) 활성화는 일반적입니다.
 
 점수 지정 및 배지 규칙 설정의 차이점은 다음과 같습니다.
 
@@ -45,23 +45,24 @@ ht-degree: 1%
 * 고급 점수 지정 규칙:
 
    * `scoringType` 설정 `advanced`
-   * requires `stopwords`
+   * 필수 항목 `stopwords`
 
 * 고급 배지 규칙:
 
    * `badgingType` 설정 `advanced`
    * `badgingLevels` 상을 받을 전문가 수준 **수로 설정**
-   * 임계값에 대한 `badgingPaths` 배열 매핑 포인트가 아닌 배지 배열 필요
+   * 임계값 배열 매핑 지점 대신 배지 `badgingPaths` 배열을 필요로 합니다.
 
 >[!NOTE]
 >
 >고급 점수 지정 및 배지 기능을 사용하려면 [전문가 식별 패키지를 설치합니다](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
 
+
 ## 구성 가능한 점수 엔진 {#configurable-scoring-engine}
 
 고급 점수 엔진은 고급 점수 알고리즘에 영향을 주는 매개 변수를 사용하여 OSGi 구성을 제공합니다.
 
-![chlimage_1-139](assets/chlimage_1-139.png)
+![chlimage_1-260](assets/chlimage_1-260.png)
 
 * **점수 가중치**
 
@@ -102,7 +103,7 @@ ht-degree: 1%
 
 점수 [하위 규칙을 참조하십시오](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-140](assets/chlimage_1-140.png)
+![chlimage_1-261](assets/chlimage_1-261.png)
 
 ### 중지 단어 {#stopwords}
 
@@ -122,7 +123,7 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
 
 배지 이미지에 포인트를 연결하는 대신 허용된 전문가 수와 배지 이미지를 식별하기만 하면 됩니다.
 
-![chlimage_1-141](assets/chlimage_1-141.png)
+![chlimage_1-262](assets/chlimage_1-262.png)
 
 <table>
  <tbody>
@@ -164,7 +165,7 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-142](assets/chlimage_1-142.png)
+![chlimage_1-263](assets/chlimage_1-263.png)
 
 활동에 대한 보상으로 전문가 배지가 나타나려면 다음을 확인하십시오.
 
@@ -197,15 +198,15 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
 
 **메모:**
 
-* 노드 `rules`와 `sub-rules` 노드가 모두 `cq:Page`
+* 두 노드 `rules` 와 `sub-rules` 는 모두 유형입니다 `cq:Page`.
 
-* `subRules`은 규칙의 노드에서 문자열[] 유형의 특성입니다 `jcr:content`
+* `subRules` 은 규칙의 노드에서 문자열[] 유형의 `jcr:content` 속성입니다.
 
-* `sub-rules` 다양한 채점 규칙 간에 공유될 수 있습니다.
+* `sub-rules` 다양한 점수 규칙 간에 공유될 수 있습니다.
 
-* `rules`저장소 위치에 모든 사용자에 대한 읽기 권한이 있어야 합니다.
+* `rules` 는 모든 사람이 읽을 수 있는 권한이 있는 저장소 위치에 있어야 합니다.
 
-   * 규칙 이름은 위치에 관계없이 고유해야 합니다.
+* 규칙 이름은 위치에 관계없이 고유해야 합니다.
 
 ### 배지 규칙 포함 {#included-badging-rules}
 
@@ -216,8 +217,7 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
 
 **메모:**
 
-* `rules` nodes are of type cq:Page
-* `rules` 저장소 위치에 모든 사용자에 대한 읽기 권한이 있어야 합니다.
-
-   * 규칙 이름은 위치에 관계없이 고유해야 합니다.
+* `rules` nodes는 cq:Page 형식입니다.
+* `rules` 는 모든 사람이 읽을 수 있는 권한이 있는 저장소 위치에 있어야 합니다.
+* 규칙 이름은 위치에 관계없이 고유해야 합니다.
 
