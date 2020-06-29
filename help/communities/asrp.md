@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
 workflow-type: tm+mt
 source-wordcount: '827'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ UGC용 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 계�
 
 * 글로벌 탐색에서 **[!UICONTROL 도구 > 커뮤니티 > 스토리지 구성]** 으로 이동하고 **[!UICONTROL Adobe ASRP(Storage Resource Provider)를 선택합니다]**.
 
-![chlimage_1-30](assets/chlimage_1-30.png)
+![asrp-default](assets/asrp-default.png)
 
 다음은 제공 프로세스에서 얻은 정보입니다.
 
