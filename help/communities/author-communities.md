@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 44%
 
 ---
 
@@ -26,21 +29,22 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 * [AEM Communities 개요](/help/communities/overview.md)
 * [AEM Communities 시작하기](/help/communities/getting-started.md)
-* [활성화를 위한 AEM Communities 시작하기](/help/communities/getting-started-enablement.md)
+* [활성 AEM Communities 시작하기](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
->작성 환경에 익숙하지 않은 경우 [기본 처리에](/help/sites-authoring/basic-handling.md) 대한 설명서와 페이지 [작성에 대한](/help/sites-authoring/qg-page-authoring.md)빠른 안내서를 참조하십시오.
+>작성 환경에 익숙하지 않은 경우 [기본 처리](/help/sites-authoring/basic-handling.md) 및 페이지 작성에 대한 [빠른 안내서에 대한 설명서를 봅니다](/help/sites-authoring/qg-page-authoring.md).
+
 
 ## 사용 가능한 커뮤니티 구성 요소 {#available-communities-components}
 
-다음 표는 구성 요소 브라우저(사이드 킥됨)에서 활성화되면 작성자가 볼 수 있는 커뮤니티 구성 요소를 보여줍니다.
+다음 표는 구성 요소 브라우저(사이드 킥됨)에서 활성화하면 작성자가 볼 수 있는 커뮤니티 구성 요소를 보여 줍니다.
 
-대화형 커뮤니티 구성 요소 [안내서를](/help/communities/components-guide.md)참조하십시오.
+인터랙티브한 커뮤니티 [구성 요소 안내서를 참조하십시오](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->커뮤니티 구성 [요소를](/help/communities/basics.md) 사용하여 작성하는 데 필요한 정보가 포함되어 있으므로 커뮤니티 구성 요소 기본 사항을 읽으십시오.
+>커뮤니티 구성 [요소를 사용하여](/help/communities/basics.md) 작성하는 데 필요한 정보가 포함되어 있으므로 커뮤니티 구성 요소 기본 사항을 읽으십시오.
 
 | **구성 요소 제목** | **기능** |
 |---|---|
@@ -79,11 +83,12 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 >
 >투표 구성 요소는 더 이상 사용할 수 없으며 Experience Manager Communities에서 지원됩니다.
 
+
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
-* 권장 [배포에 대해](/help/communities/deploy-communities.md) 알려면 커뮤니티 배포를 참조하십시오.
+* 권장 [배포에](/help/communities/deploy-communities.md) 대해 알려면 커뮤니티 배포를 참조하십시오.
 
-* 커뮤니티 사이트 [관리를](/help/communities/administer-landing.md) 방문하여 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시지 구성에 대해 알아보십시오.
+* 커뮤니티 사이트 [관리](/help/communities/administer-landing.md) 사이트를 방문하여 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시지 구성에 대해 알아보십시오.
 
-* SCF [](/help/communities/communities.md) (소셜 구성 요소 프레임워크)에 대해 알아보고 커뮤니티 구성 요소 및 기능을 사용자 정의하려면 커뮤니티 개발을 참조하십시오.
+* SCF(소셜 [구성 요소 프레임워크](/help/communities/communities.md) )에 대해 알아보고 커뮤니티 구성 요소 및 기능을 사용자 지정하려면 커뮤니티 개발을 참조하십시오.
 
