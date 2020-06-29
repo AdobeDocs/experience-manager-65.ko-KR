@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 4%
 
 ---
@@ -35,9 +35,9 @@ ht-degree: 4%
 * [리더보드](/help/communities/enabling-leaderboard.md)
 * [관념화](/help/communities/ideation-feature.md)
 
-작성 환경에서 Badges 콘솔에 도달하려면
+작성 환경에서 Badges 콘솔로 이동합니다.
 
-* 글로벌 탐색에서 도구 > **[!UICONTROL 커뮤니티 > 배지로 이동합니다]**
+* 전역 탐색에서: **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 배지]**
 
 이 콘솔에는 현재 사용할 수 있는 배지와 새 배지를 추가할 수 있는 배지가 표시됩니다.
 
