@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 1%
 
 ---
 
@@ -20,75 +23,76 @@ source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ## 소개 {#introduction}
 
-설명서의 이 섹션에서는 커뮤니티 구성 요소의 페이지에 클라이언트측 라이브러리(clientlibs)를 추가하는 방법에 대해 설명합니다.
+설명서의 이 섹션에서는 커뮤니티 구성 요소의 페이지에 클라이언트측 라이브러리(clientlibs)를 추가하는 방법을 설명합니다.
 
-기본 정보는 다음을 참조하십시오.
+기본 정보를 보려면 다음을 방문하십시오.
 
-* [사용 세부 정보와](/help/sites-developing/clientlibs.md) 디버깅 도구를 제공하는 클라이언트측 라이브러리 사용
+* [사용 세부 정보와 디버깅 도구를 제공하는](/help/sites-developing/clientlibs.md) 클라이언트측 라이브러리 사용
 * [SCF 구성 요소를](/help/communities/client-customize.md#clientlibs) 사용자 정의할 때 유용한 정보를 제공하는 SCF용 Clientlibs
-* [블로그:AEM Client Libraries에 대한 설명은](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [블로그: AEM 클라이언트 라이브러리 설명](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## Clientlibs가 필요한 이유 {#why-clientlibs-are-required}
 
 Clientlibs는 구성 요소의 적절한 기능(JavaScript) 및 스타일링(CSS)을 위해 필요합니다.
 
-기능에 대한 [커뮤니티 기능이](/help/communities/functions.md) 있으면 필요한 clientlibs를 비롯한 모든 필수 구성 요소 및 구성이 커뮤니티 사이트에 표시됩니다. 작성자가 추가 구성 요소를 사용할 수 있도록 해야 하는 경우에만 추가 클라이언트 라이브러리를 추가해야 합니다.
+기능에 대한 [커뮤니티 기능이](/help/communities/functions.md) 있는 경우 필요한 clientlibs를 비롯한 모든 필수 구성 요소 및 구성이 커뮤니티 사이트에 제공됩니다. 작성자가 추가 구성 요소를 사용할 수 있어야 추가 clientlibs를 추가해야 합니다.
 
-필요한 clientlibs가 누락되면 페이지에 [커뮤니티 구성 요소를](/help/communities/author-communities.md) 추가하면 Javascript 오류와 예기치 않은 모양이 발생할 수 있습니다.
+필요한 clientlibs가 누락되면 페이지에 [커뮤니티 구성 요소를](/help/communities/author-communities.md) 추가하면 javascript 오류와 예기치 않은 모양이 발생할 수 있습니다.
 
-### 예:Clientlibs를 사용하지 않은 평가 {#example-placed-reviews-without-clientlibs}
+### 예: Clientlibs를 사용하지 않은 평가 {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![chlimage_1-426](assets/chlimage_1-426.png)
 
-### 예:Clientlibs를 사용한 평가 {#example-placed-reviews-with-clientlibs}
+### 예: Clientlibs를 사용한 평가 {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-427](assets/chlimage_1-427.png)
 
 ## 필수 클라이언트 식별 {#identifying-required-clientlibs}
 
-개발자를 위한 필수 기능 정보는 필요한 클라이언트를 식별합니다.
+개발자를 위한 필수 기능 정보는 필요한 clientlibs를 식별합니다.
 
-또한 AEM 인스턴스에서 커뮤니티 구성 요소 안내서를 [탐색하면](/help/communities/components-guide.md) 구성 요소에 필요한 clientlib 카테고리 목록에 액세스할 수 있습니다.
+또한 AEM 인스턴스에서 [커뮤니티 구성 요소 안내서를](/help/communities/components-guide.md) 검색하여 구성 요소에 필요한 clientlib 카테고리 목록에 액세스할 수 있습니다.
 
-예를 들어, [검토] 페이지의 맨 [위에](https://localhost:4502/content/community-components/en/reviews.html) 나열된 필수 clientlibs는
+예를 들어, [검토] 페이지 [의](https://localhost:4502/content/community-components/en/reviews.html) 맨 위에 나열된 필수 clientlibs는
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-134](assets/chlimage_1-134.png)
+![chlimage_1-246](assets/chlimage_1-246.png)
 
-## 필수 클라이언트 추가 {#adding-required-clientlibs}
+## 필수 Clientlibs 추가 {#adding-required-clientlibs}
 
-페이지에 커뮤니티 구성 요소를 추가하려면 아직 없는 경우 구성 요소에 필요한 clientlibs를 추가해야 합니다.
+Communities 구성 요소를 페이지에 추가하려면 아직 존재하지 않는 경우 구성 요소에 필요한 clientlibs를 추가해야 합니다.
 
-CRXDE [|Lite를](#using-crxde-lite) 사용하여 커뮤니티 사이트 페이지에 대한 기존 클라이언트 목록을 수정합니다.
+CRXDE [|Lite를](#using-crxde-lite) 사용하여 커뮤니티 사이트 페이지의 기존 clientlibslist를 수정합니다.
 
-CRXDE Lite를 사용하여 커뮤니티 사이트에 대한 clientlib [를 추가하려면](/help/sites-developing/developing-with-crxde-lite.md) :
+CRXDE [Lite를 사용하여 커뮤니티 사이트에 대한 clientlib을 추가하려면](/help/sites-developing/developing-with-crxde-lite.md):
 
-* https://&lt; [server>:&lt;port>/crx/de로 이동합니다.](https://localhost:4502/crx/de)
+* https://&lt; [server>:&lt;port>/crx/de로 이동합니다](https://localhost:4502/crx/de).
 * 구성 요소를 추가할 페이지의 `clientlibslist` 노드를 찾습니다.
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* With `clientlibslist` node selected
+* With `clientlibslist` node selected:
 
-   * String 속성을[] 찾습니다. `scg:requiredClientLibs`
-   * 문자열 배열 대화 상자에 `Value` 액세스하려면 문자열 배열 선택
+   * String 속성을[] 찾습니다 `scg:requiredClientLibs`.
+   * 문자열 배열 대화 상자 `Value` 에 액세스할 문자열을 선택합니다.
 
-      * 필요한 경우 아래로 스크롤하기
-      * +를 선택하여 새 클라이언트 라이브러리 입력
+      * 필요한 경우 아래로 스크롤합니다.
+      * +를 선택하여 새 클라이언트 라이브러리를 입력합니다.
 
          * 클라이언트 라이브러리를 더 추가하려면 이 단계를 반복합니다.
-      * 확인 **선택**
-   * 모두 **저장을 선택합니다.**
 
+         * 확인을 **선택합니다**.
+   * 모두 **저장을 선택합니다**.
 
 
 >[!NOTE]
 >
->사이트가 커뮤니티 사이트가 아닌 경우 사이트에 사용 중인 클라이언트 라이브러리의 존재 또는 위치를 검색해야 합니다.
+>사이트가 커뮤니티 사이트가 아닌 경우 사이트에 사용 중인 클라이언트 라이브러리의 기존 또는 위치를 검색해야 합니다.
 
-AEM [Communities 시작하기](/help/communities/getting-started.md) 예를 `site-name` 사용하여 *참여*: 검토 구성 요소를 추가하는 경우 clientliblist가 표시되는 방식입니다.
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+AEM Communities [로 시작](/help/communities/getting-started.md) 예(여기서 `site-name` 는 *참여*)를 사용하여 검토 구성 요소를 추가하는 경우 clientliblist가 표시되는 방법입니다.
+
+![chlimage_1-247](assets/chlimage_1-247.png)
 
