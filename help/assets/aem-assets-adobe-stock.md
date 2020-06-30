@@ -3,9 +3,9 @@ title: 자산 [!DNL Adobe Stock] 을 [!DNL Adobe Experience Manager Assets]관�
 description: 내부에서 자산을 검색, 가져오기, 라이선스 부여 및 [!DNL Adobe Stock] 관리할 수 있습니다 [!DNL Adobe Experience Manager]. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97e17df1f79450b5aed5867633c129a1c21a17ac
+source-git-commit: 376940612066123a8f84fe6c30ff3002cda08079
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1109'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. 로고를 [!DNL Experience Manager] 클릭합니다. 도구 **[!UICONTROL > 보안]** **** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다. 만들기 **[!UICONTROL 를]** 클릭하고 **[!UICONTROL 클라우드 솔루션]** > **[!UICONTROL Adobe Stock을 선택합니다]**.
+1. 사용자 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL >]** 보안 **** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다. 만들기 **[!UICONTROL 를]** 클릭하고 **[!UICONTROL 클라우드 솔루션]** > **[!UICONTROL Adobe Stock을 선택합니다]**.
 1. 기존 인증서를 재사용하거나 새 인증서 **[!UICONTROL 만들기를 선택합니다]**.
 1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 생성된 공개 키를 다운로드합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 다운로드한 공개 키를 [!DNL Adobe Developer Console] 서비스 계정에 추가합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다. Adobe [!UICONTROL IMS 기술 계정 구성] 화면을 열어 값을 바로 제공할 수 있습니다.
@@ -52,7 +52,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->여러 [!DNL Adobe Stock] 구성이 있는 경우 [사용자 환경 설정] 패널에서 원하는 구성을 [!UICONTROL 선택합니다] . 사용자 *인터페이스* 오른쪽 위 모서리에 있는 사용자 [!DNL Experience Manager] 로고를 클릭합니다.
+>구성이 여러 개 [!DNL Adobe Stock] 있는 경우 사용자 환경 설정 패널에서 원하는 구성을 선택합니다(AEM ******[!UICONTROL > 사용자 아이콘]** > **[!UICONTROL 사용자 환경 설정]** > Stock ****&#x200B;구성).
 
 ## 자산 사용 및 [!DNL Adobe Stock] 관리 [!DNL Experience Manager] {#usemanage}
 
