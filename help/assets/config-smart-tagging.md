@@ -1,11 +1,11 @@
 ---
 title: 스마트 콘텐츠 서비스를 사용하여 자산 태그 지정을 구성합니다.
-description: 스마트 콘텐츠 서비스를 사용하여 Adobe Experience Manager에서 스마트 태그 지정 및 고급 스마트 태그 지정 기능을 구성하는 방법을 알아봅니다.
+description: 스마트 콘텐츠 서비스를 사용하여 스마트 태그 지정 및 고급 스마트 태그 [!DNL Adobe Experience Manager]기능을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3d699f35c7b1ef832a0857fa2fa41aed1fe5a4e
+source-git-commit: dfac819018e85e0e8221bfcc57bc1eaf43b7ff25
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1118'
 ht-degree: 2%
 
 ---
@@ -17,10 +17,11 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 이 문서에서는 스마트 콘텐츠 서비스를 구성하는 데 필요한 다음 주요 작업에 대해 자세히 설명합니다. 백엔드 [!DNL Experience Manager] 에서 Smart Content Service에 요청을 전달하기 전에 Adobe Developer Console 게이트웨이로 서비스 자격 증명을 인증합니다.
 
-* 공개 키를 생성하려면 스마트 콘텐츠 서비스 구성 [!DNL Experience Manager] 을 만드십시오. OAuth 통합에 대한 공용 인증서를 얻습니다.
-* Adobe 개발자 콘솔에서 통합을 만들고 생성된 공개 키를 업로드합니다.
-* Adobe 개발자 콘솔의 API 키 및 기타 자격 증명을 사용하여 인스턴스를 [!DNL Experience Manager] 구성합니다.
-* 자산 업로드 시 자동 태그 지정을 활성화합니다(선택 사항).
+1. 공개 키를 생성하려면 스마트 콘텐츠 서비스 구성 [!DNL Experience Manager] 을 만드십시오. [OAuth 통합에 대한 공용 인증서](#obtain-public-certificate) 획득을 참조하십시오.
+1. [Adobe 개발자 콘솔에서](#create-adobe-i-o-integration) 통합을 만들고 생성된 공개 키를 업로드합니다.
+1. [API 키 및 Adobe 개발자 콘솔의 기타 자격 증명을 사용하여 배포를](#configure-smart-content-service) 구성합니다.
+1. [구성을 테스트합니다](#validate-the-configuration).
+1. 자산 업로드 시 자동 태그 지정 [을 활성화할 수도 있습니다](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
 ## 전제 조건 {#prerequisites}
 
@@ -29,11 +30,13 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 * 조직에 대한 관리자 권한이 있는 Adobe ID 계정
 * 조직에서 스마트 콘텐츠 서비스 서비스를 사용할 수 있습니다.
 
+고급 스마트 태그를 활성화하려면 위의 기능 외에 최신 [AEM 서비스 팩도 설치합니다](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html).
+
 ## 공개 인증서 받기 {#obtain-public-certificate}
 
 공용 인증서를 사용하면 Adobe 개발자 콘솔에서 프로필을 인증할 수 있습니다.
 
-1. 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구 > Cloud Service]**> 기존 Cloud Service **[!UICONTROL 에 액세스합니다]**.
+1. 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > Cloud Service **** > **[!UICONTROL 기존 Cloud Service에]**&#x200B;액세스합니다.
 
 1. Cloud Service 페이지에서 자산 스마트 태그 아래의 **[!UICONTROL 지금]** 구성을 **[!UICONTROL 클릭합니다]**.
 1. 구성 **[!UICONTROL 만들기]** 대화 상자에서 스마트 태그 구성의 제목과 이름을 지정합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
@@ -46,6 +49,10 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
    다른 필드는 비워 둡니다(나중에 제공). **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
    ![컨텐츠 서비스 URL을 제공하는 Experience Manager 스마트 콘텐츠 서비스 대화 상자](assets/aem_scs.png)
+
+   >[!NOTE]
+   >
+   >서비스 URL로 제공된 URL은 [!UICONTROL 브라우저를 통해] 액세스할 수 없으며 404 오류를 생성합니다. 구성은 [!UICONTROL 서비스 URL] 매개 변수와 동일한 값으로 작동합니다. 전체 서비스 상태 및 유지 관리 일정은 https://status.adobe.com을 [참조하십시오](https://status.adobe.com).
 
 1. OAuth **[!UICONTROL 통합용]**&#x200B;공용 인증서 다운로드를 클릭하고 공용 인증서 파일을 다운로드합니다 `AEM-SmartTags.crt`.
 
@@ -84,7 +91,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 ## 스마트 콘텐츠 서비스 구성 {#configure-smart-content-service}
 
-통합을 구성하려면 Adobe 개발자 콘솔 통합에서 기술 계정 ID, 조직 ID, 클라이언트 암호, 인증 서버 및 API 키 필드의 값을 사용하십시오. 스마트 태그 클라우드 구성을 만들면 인스턴스에서 API 요청을 인증할 수 [!DNL Experience Manager] 있습니다.
+통합을 구성하려면 Adobe 개발자 콘솔 통합에서 기술 계정 ID, 조직 ID, 클라이언트 암호, 인증 서버 및 API 키 필드의 값을 사용하십시오. 스마트 태그 클라우드 구성을 만들면 배포에서 API 요청을 인증할 수 [!DNL Experience Manager] 있습니다.
 
 1. 에서 [!DNL Experience Manager]도구 > Cloud Service **[!UICONTROL > 기존 Cloud Service]** 으로 이동하여 [!UICONTROL Cloud Service] 콘솔을 엽니다.
 1. 자산 **[!UICONTROL 스마트 태그]**&#x200B;아래에서 위에서 만든 구성을 엽니다. 서비스 설정 페이지에서 편집을 **[!UICONTROL 클릭합니다]**.
@@ -96,7 +103,6 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 구성을 완료한 후 JMX MBean을 사용하여 구성을 확인할 수 있습니다. 유효성을 확인하려면 다음 단계를 따르십시오.
 
 1. 에서 [!DNL Experience Manager] 서버에 액세스합니다 `https://[aem_server]:[port]`.
-
 1. 도구 > **[!UICONTROL 작업 > 웹 콘솔로]** 이동하여 OSGi 콘솔을 엽니다. 기본 **[!UICONTROL > JMX를 클릭합니다]**.
 1. com.day.cq.da **[!UICONTROL m.similaritysearch.internal.impl을 클릭합니다]**. 유사성 **[!UICONTROL 검색 기타 작업을 엽니다]**.
 1. 유효성 **[!UICONTROL 검사 구성()을 클릭합니다]**. 구성 유효성 **[!UICONTROL 확인]** 대화 상자에서 호출 **[!UICONTROL 을 클릭합니다]**.
@@ -110,7 +116,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 1. 도구 **[!UICONTROL 모음에서]** 편집을 클릭합니다.
 1. 사이드 패널을 확장하여 단계를 표시합니다. DAM 워크플로우 섹션에서 **[!UICONTROL 사용할 수 있는 스마트 태그]** 자산 **[!UICONTROL 단계를 드래그하여]** 축소판 처리단계 뒤에 놓습니다.
 
-   ![DAM 자산 업데이트 워크플로우에서 프로세스 축소판 단계 이후 [!UICONTROL 스마트 태그 자산] 추가](assets/smart-tag-in-dam-update-asset-workflow.png)
+   ![DAM 자산 업데이트 워크플로우에서 프로세스 축소판 단계 이후 스마트 태그 자산 추가](assets/smart-tag-in-dam-update-asset-workflow.png)
 
    *그림: DAM 자산 업데이트 워크플로우에서 프로세스 축소판 단계 이후 스마트 태그 자산[!UICONTROL 추가].*
 
