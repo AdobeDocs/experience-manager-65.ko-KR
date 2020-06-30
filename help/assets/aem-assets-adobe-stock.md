@@ -3,9 +3,9 @@ title: 자산 [!DNL Adobe Stock] 을 [!DNL Adobe Experience Manager Assets]관�
 description: 내부에서 자산을 검색, 가져오기, 라이선스 부여 및 [!DNL Adobe Stock] 관리할 수 있습니다 [!DNL Adobe Experience Manager]. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 97e17df1f79450b5aed5867633c129a1c21a17ac
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1113'
 ht-degree: 3%
 
 ---
@@ -34,8 +34,10 @@ ht-degree: 3%
 1. 로고를 [!DNL Experience Manager] 클릭합니다. 도구 **[!UICONTROL > 보안]** **** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다. 만들기 **[!UICONTROL 를]** 클릭하고 **[!UICONTROL 클라우드 솔루션]** > **[!UICONTROL Adobe Stock을 선택합니다]**.
 1. 기존 인증서를 재사용하거나 새 인증서 **[!UICONTROL 만들기를 선택합니다]**.
 1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 생성된 공개 키를 다운로드합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-1. 제목, **[!UICONTROL 권한 부여 서버]**, **[!UICONTROL API 키]**, **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL 및 Payload라는 필드에 적절한 값을]******&#x200B;제공합니다. 이러한 값을 가져오는 자세한 내용은 [JWT 인증 빠른 시작](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)을 참조하십시오 [!DNL Adobe I/O].
-1. 다운로드한 공개 키를 [!DNL Adobe I/O] 서비스 계정에 추가합니다.
+1. 다운로드한 공개 키를 [!DNL Adobe Developer Console] 서비스 계정에 추가합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다. Adobe [!UICONTROL IMS 기술 계정 구성] 화면을 열어 값을 바로 제공할 수 있습니다.
+1. Adobe [Developer Console에 액세스합니다](https://console.adobe.io). 통합이 필요한 조직에 대한 관리자 권한이 계정에 있는지 확인합니다.
+1. 새 프로젝트 **[!UICONTROL 만들기를]** 클릭하고 **[!UICONTROL API 추가를 클릭합니다]**. 사용 가능한 API 목록에서 **[!UICONTROL Adobe]** Stock을 [!UICONTROL 선택합니다]. OAUTH [!UICONTROL 2.0 Web을 선택합니다]. 표시된 다양한 값을 구성하고 복사합니다.
+1. 제목, 권한 부여 서버 [!DNL Experience Manager] 라는 필드 **[!UICONTROL 에]** API 키 **[!UICONTROL ,]** API Client Secret **[!UICONTROL , 및 Facebook Payload라는 값을]**********&#x200B;입력합니다. 이러한 값에 대한 자세한 내용은 [JWT 인증 빠른 시작](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)을 참조하십시오.
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
@@ -50,7 +52,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->구성이 여러 개 [!DNL Adobe Stock] 있는 경우 사용자 인터페이스 오른쪽 상단 모서리의 [!UICONTROL 사용자] 로고를 클릭하여 *사용자 환경 설정* 패널에서 원하는 구성을 [!DNL Experience Manager] 선택합니다.
+>여러 [!DNL Adobe Stock] 구성이 있는 경우 [사용자 환경 설정] 패널에서 원하는 구성을 [!UICONTROL 선택합니다] . 사용자 *인터페이스* 오른쪽 위 모서리에 있는 사용자 [!DNL Experience Manager] 로고를 클릭합니다.
 
 ## 자산 사용 및 [!DNL Adobe Stock] 관리 [!DNL Experience Manager] {#usemanage}
 
