@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 2%
 
 ---
 
@@ -21,25 +24,26 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 * [커뮤니티 사이트 만들기](sites-console.md)
 * 사이트 내에 중첩된 [그룹](groups.md) 추가
-* [커뮤니티 사이트 템플릿 관리](sites.md)
+* 커뮤니티 [사이트 템플릿 관리](sites.md)
 * 커뮤니티 [구성원 관리](members.md)
 * [사용자 생성](moderate-ugc.md) 콘텐츠 중재(UGC)
 * 사용자 [정의 배지 만들기](badges.md)
 * UGC에 대한 [기본 저장소 구성](srp-config.md)
 
-UGC [스토리지를](working-with-srp.md) 작성자 및 게시 환경에서 공유되는 공용 스토어로 구성하면 작성 및 게시 환경에서 사용할 수 있는 [중재 콘솔은](moderation.md)UGC의 단일 인스턴스에서 작동합니다.
+작성 및 게시 환경에서 공유되는 공용 스토어로 [UGC 스토리지를](working-with-srp.md) 구성하면 작성 및 게시 환경에서 사용할 수 있는 [중재 콘솔](moderation.md)은 UGC의 단일 인스턴스에서 작동합니다.
 
-작성 환경에서 관리자 권한으로 로그인한 후에는 탐색 및 도구 콘솔에서 콘솔을 사용할 수 `Communities` 있습니다.
+작성 환경에서 관리자 권한으로 로그인한 후에는 탐색 및 도구 콘솔에서 `Communities` 콘솔을 사용할 수 있습니다.
 
 >[!NOTE]
 >
->게시 환경에서, [커뮤니티 사이트는](sites-console.md) 로그인한 구성원이 적절한 권한을 가질 때 `Administration` 메뉴 항목을 표시합니다.
+>게시 환경에서 로그인한 구성원이 적절한 권한을 가질 때 [커뮤니티 사이트](sites-console.md) 에 `Administration` 메뉴 항목이 표시됩니다.
+
 
 ## 전역 탐색 패널 {#global-navigation-panel}
 
 ![chlimage_1-91](assets/chlimage_1-91.png)
 
-왼쪽 위 모서리의 `Adobe Experience Manager` 아이콘을 선택하여 글로벌 탐색 패널을 열고 다음 두 가지 아이콘을 이용할 수 있습니다.
+왼쪽 위 모서리의 `Adobe Experience Manager` 아이콘을 선택하여 전역 탐색 패널을 열고 다음 두 가지 아이콘을 이용할 수 있습니다.
 
 * [탐색 콘솔](#navigation-console)
 * [도구 콘솔](tools.md)
@@ -52,11 +56,11 @@ UGC [스토리지를](working-with-srp.md) 작성자 및 게시 환경에서 공
 
 * [사이트](sites-console.md)
 
-   사이트 콘솔은 커뮤니티 사이트와 [그룹을](groups.md)만들고 관리할 목적으로 작성 환경에서 액세스할 수 있습니다.
+   사이트 콘솔은 커뮤니티 사이트와 [그룹을 만들고 관리할 목적으로 작성 환경에서 액세스할 수 있습니다](groups.md).
 
 * [중재](moderation.md)
 
-   중재 콘솔은 UGC 및 작성 환경의 일괄 조정을 위한 것입니다. 게시 환경에서 하나 이상의 커뮤니티 사이트에 대해 [커뮤니티 중재자의](users.md#publishenvironmentusersandgroups) 역할을 할당받은 커뮤니티 구성원에게 유사한 벌크 중재 콘솔에 액세스할 수 있습니다.
+   중재 콘솔은 UGC 및 작성 환경에서 일괄 중재합니다. 하나 이상의 커뮤니티 사이트에 대해 [커뮤니티 중재자 역할을 할당받은 커뮤니티 구성원에게 비슷한 일괄 중재 콘솔에 액세스할](users.md#publishenvironmentusersandgroups) 수 있습니다.
 
 * [구성원, 그룹](members.md)
 
@@ -64,12 +68,12 @@ UGC [스토리지를](working-with-srp.md) 작성자 및 게시 환경에서 공
 
 * [보고서](reports.md)
 
-   보고서 콘솔은 커뮤니티 사이트에서 Adobe Analytics를 [활성화한 경우 할당, 페이지 보기 및 게시된 컨텐츠(UGC)에 대한 보고서를 생성할 수 있는 곳입니다](sites-console.md#analytics). 콘솔은 작성 환경에서만 사용할 수 있습니다.
+   보고서 콘솔은 커뮤니티 사이트에서 Adobe Analytics을 활성화한 경우 할당, 페이지 보기 및 게시된 컨텐츠(UGC)에 대한 보고서가 생성될 수 [있는 곳입니다](sites-console.md#analytics). 콘솔은 작성 환경에서만 사용할 수 있습니다.
 
 * [리소스](resources.md)
 
-   리소스 콘솔에서는 [활성 관리자가](enablement.md#communitymanagers) 리소스를 만들고 관리하고 [활성 커뮤니티 사이트의](overview.md#enablement-community)구성원에게 리소스를 할당할 수 있습니다. 콘솔은 작성 환경에서만 사용할 수 있습니다.
+   리소스 콘솔에서는 [활성 관리자가](enablement.md#communitymanagers) 리소스를 만들고 관리하고 [활성 커뮤니티 사이트](overview.md#enablement-community)구성원에게 할당합니다. 콘솔은 작성 환경에서만 사용할 수 있습니다.
 
 ## 도구 콘솔 {#tools-console}
 
-전역 [탐색에서 커뮤니티 도구](tools.md) (이전 관리 콘솔)에 액세스하려면:도구 **[!UICONTROL > 커뮤니티]**
+전역 탐색 [에서 커뮤니티 도구](tools.md) (이전 관리 콘솔)에 액세스하려면: **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]**
