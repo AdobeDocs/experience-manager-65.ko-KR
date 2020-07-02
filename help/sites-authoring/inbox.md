@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
-translation-type: ht
-source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
-workflow-type: ht
-source-wordcount: '1055'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
+workflow-type: tm+mt
+source-wordcount: '1148'
+ht-degree: 90%
 
 ---
 
@@ -49,6 +49,7 @@ ht-degree: 100%
 >* [프로젝트 - 작업 중](/help/sites-authoring/task-content.md)
 >* [워크플로우](/help/sites-authoring/workflows.md)
 >* [양식](/help/forms/home.md)
+
 >
 
 
@@ -123,6 +124,7 @@ AEM 알림 받은 편지함 열기
    * **그룹화 기준**
    * **예약** 또는 **없음**
    * **카드 크기**
+
    ![wf-92](assets/wf-92.png)
 
 * **목록 보기**
@@ -131,19 +133,28 @@ AEM 알림 받은 편지함 열기
 
    * **정렬 필드**
    * **정렬 순서**
+
    ![wf-83](assets/inbox-settings.png)
 
 ### 받은 편지함 - 관리자 컨트롤 {#inbox-admin-control}
 
 관리자는 관리자 컨트롤 옵션을 사용하여 다음을 수행할 수 있습니다.
 
+* AEM 받은 편지함 열 사용자 지정
+
 * 머리글 텍스트 및 로고 사용자 지정
 
 * 헤더에서 사용할 수 있는 탐색 링크 표시 제어
 
-관리자 컨트롤 옵션은 관리자 또는 워크플로 관리자 그룹의 구성원에게만 표시됩니다.
+The Admin Control option is visible only to the members of the `administrators` or `workflow-administrators` group.
 
-![admin-control](assets/admin-control.png)
+* **열 사용자 지정**: AEM 받은 편지함을 사용자 지정하여 열의 기본 제목을 변경하고, 열의 위치를 다시 정렬하고, 워크플로우의 데이터를 기반으로 추가 열을 표시합니다.
+   * **열 추가**: AEM 받은 편지함에 추가할 열을 선택합니다.
+   * **열 편집**: 열 제목 위에 마우스를 놓고 ![편집](assets/edit.svg) 아이콘을 눌러 열 표시 이름을 입력합니다.
+   * **열 삭제**: AEM 받은 편지함에서 ![삭제](assets/delete_updated.svg) 아이콘을 눌러 열을 삭제합니다.
+   * **열 이동**: AEM 받은 편지함의 새 위치로 열을 이동하려면 ![이동](assets/move_updated.svg) 아이콘을 드래그합니다.
+
+   ![admin-control](assets/admin-control-column-customize.png)
 
 * **브랜딩 사용자 지정**
 
@@ -178,6 +189,7 @@ AEM 알림 받은 편지함 열기
    * 이전 단계로 **돌아갑니다**.
    * 워크플로우에 대한 페이로드를 확인합니다.
    * 항목에서 프로젝트를 생성합니다.
+
    >[!NOTE]
    >
    >자세한 내용은 다음을 참조하십시오.
@@ -190,6 +202,7 @@ AEM 알림 받은 편지함 열기
    * 작업에 해당하는 대화 상자가 열립니다.
    * 작업 마법사가 시작됩니다.
    * 문서 페이지가 열립니다.
+
    예를 들어 **재지정**&#x200B;은 다음과 같은 대화 상자가 열립니다.
 
    ![wf-85](assets/wf-85.png)
@@ -218,11 +231,13 @@ AEM 알림 받은 편지함 열기
       * **작업 우선순위**
       * **시작 날짜**
       * **기한**
+
    ![wf-86](assets/wf-86.png)
 
    * **고급**
 
       * **이름**: URL을 구성하는 데 사용됩니다. 공백이 있는 경우 **제목**&#x200B;을 기준으로 합니다.
+
    ![wf-87](assets/wf-87.png)
 
 1. **제출**&#x200B;을 선택합니다.
