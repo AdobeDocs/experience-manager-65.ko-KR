@@ -8,18 +8,18 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '276'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 
 # 리치 텍스트 편집기를 사용한 컨텐츠 작성 {#use-rich-text-editor-to-author-content}
 
-리치 텍스트 편집기(RTE)는 텍스트 컨텐츠를 AEM에 입력하는 기본 빌딩 블록입니다. 이 편집기는 다음과 같은 다양한 구성 요소의 기초가 됩니다.포함:
+리치 텍스트 편집기(RTE)는 텍스트 컨텐츠를 AEM에 입력하는 기본 빌딩 블록입니다. 이 편집기는 다음과 같은 다양한 구성 요소의 기초가 됩니다., 다음 포함:
 
 * 텍스트
 * 텍스트 이미지
@@ -47,9 +47,9 @@ ht-degree: 74%
 
 ## 전체 화면 편집 {#full-screen-editing}
 
-For text-based components, tapping the full-screen mode from the toolbar ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
+텍스트 기반 구성 요소의 경우 도구 모음 ![](do-not-localize/screen_shot_2018-03-21at163236.png)에서 전체 화면 모드를 탭하면 리치 텍스트 편집기가 열리고 나머지 페이지 컨텐츠는 표시되지 않습니다.
 
-전체 화면 모드는 작성에 사용할 수 있는 구성된 모든 옵션을 표시합니다. The availability is options [depends on the configuration](/help/sites-administering/rich-text-editor.md).
+전체 화면 모드에서는 작성에 사용할 수 있는 구성된 모든 옵션이 표시됩니다. 옵션 사용 가능 여부는 [구성에 따라 다릅니다](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
@@ -66,4 +66,4 @@ For text-based components, tapping the full-screen mode from the toolbar ![](do-
 
 >[!NOTE]
 >
->Microsoft Word에서 RTE로 중첩된 목록을 복사하면 일관되지 않은 결과를 얻을 수 있으며 RTE에 텍스트를 붙여넣은 후 수동으로 조정해야 할 수도 있습니다.
+>중첩된 목록을 Microsoft Word에서 RTE로 복사하면 일관되지 않은 결과를 얻을 수 있고, 따라서 RTE에서 텍스트를 붙여넣은 후 수동으로 조정해야 할 수 있습니다.
