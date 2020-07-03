@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3221'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 
 # Scene7 기능을 페이지에 추가{#adding-scene-features-to-your-page}
 
-[Adobe Scene7](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html)은 풍부한 미디어 자산을 관리 및 개선하고, 웹, 모바일, 이메일 및 인터넷 연결 디스플레이와 프린터에 게시 및 제공하기 위한 호스팅된 솔루션입니다.
+[Adobe Scene7](https://help.adobe.com/ko_KR/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html)은 풍부한 미디어 자산을 관리 및 개선하고, 웹, 모바일, 이메일 및 인터넷 연결 디스플레이와 프린터에 게시 및 제공하기 위한 호스팅된 솔루션입니다.
 
 다양한 뷰어에서 Scene7에 게시된 AEM 자산을 볼 수 있습니다.
 
@@ -33,7 +33,7 @@ ht-degree: 71%
 
 AEM에서 Scene7으로 직접 디지털 자산을 게시하고, Scene7에서 AEM으로 디지털 자산을 게시할 수 있습니다.
 
-이 문서에서는 AEM에서 Scene7으로 또는 그 반대로 디지털 자산을 게시하는 방법을 설명합니다. 뷰어도 자세히 설명되어 있습니다. For information on configuring AEM for Scene7, see [Integrating Scene7 with AEM](/help/sites-administering/scene7.md).
+이 문서에서는 AEM에서 Scene7으로 또는 그 반대로 디지털 자산을 게시하는 방법을 설명합니다. 뷰어도 자세히 설명되어 있습니다. Scene7용 AEM 구성에 대한 내용은 [AEM과 Scene7 통합](/help/sites-administering/scene7.md)을 참조하십시오.
 
 [이미지 맵 추가](/help/assets/image-maps.md)도 참조하십시오.
 
@@ -43,7 +43,7 @@ AEM에서 비디오 구성 요소를 사용하는 방법에 대한 자세한 내
 
 >[!NOTE]
 >
->If Scene7 assets do not display properly, please make sure that Dynamic media is [disabled](/help/assets/config-dynamic.md#disabling-dynamic-media) and then refresh the page.
+>Scene7 자산이 제대로 표시되지 않을 경우, Dynamic Media가 [비활성화](/help/assets/config-dynamic.md#disabling-dynamic-media) 상태인지 확인한 후 페이지를 새로 고치십시오.
 
 ## 자산에서 Scene7에 수동으로 게시 {#manually-publishing-to-scene-from-assets}
 
@@ -58,9 +58,9 @@ AEM에서 비디오 구성 요소를 사용하는 방법에 대한 자세한 내
 
 자산이 Scene7 대상 폴더에 있는 경우 자산 콘솔에서 Scene7에 게시하려면 다음을 수행하십시오.
 
-1. In the AEM classic UI, click **Digital Assets** to access the digital asset manager.
+1. AEM 클래식 UI에서 **디지털 자산**&#x200B;을 클릭하여 디지털 자산 관리자에 액세스합니다.
 
-1. Scene7에 게시할 대상 폴더 내에서 자산 또는 폴더를 선택하고 마우스 오른쪽 단추로 클릭한 후 **Scene7에 게시**&#x200B;를 선택합니다. Alternatively, you can select **Publish to Scene7** from the **Tools menu**.
+1. Scene7에 게시할 대상 폴더 내에서 자산 또는 폴더를 선택하고 마우스 오른쪽 단추로 클릭한 후 **Scene7에 게시**&#x200B;를 선택합니다. 또는 **도구 메뉴**&#x200B;에서 **Scene7에 게시**&#x200B;를 선택할 수 있습니다.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -76,7 +76,7 @@ AEM에서 비디오 구성 요소를 사용하는 방법에 대한 자세한 내
 
 >[!NOTE]
 >
->If the asset is not located in the Scene7 synchronized folder, the link to **Publish to Scene7** will not appear.
+>자산이 Scene7 동기화 폴더에 없는 경우 **Scene7에 게시** 링크가 나타나지 않습니다.
 
 디지털 자산에서 Scene7에 직접 게시하려면
 
@@ -96,9 +96,9 @@ AEM에서 비디오 구성 요소를 사용하는 방법에 대한 자세한 내
 
 ### CQ 대상 폴더의 외부에서 자산 게시 {#publishing-assets-from-outside-the-cq-target-folder}
 
-Scene7 대상 폴더 내의 자산에서만 Scene7에 자산을 게시하는 것이 좋습니다. However, if you need to upload assets from a folder outside of the target folder, you can still do that by uploading them to an **ad-hoc** folder on Scene7.
+Scene7 대상 폴더 내의 자산에서만 Scene7에 자산을 게시하는 것이 좋습니다. 그러나 대상 폴더 외부의 폴더에서 자산을 업로드해야 하는 경우에도 Scene7의 **임시** 폴더로 업로드하여 이 작업을 수행할 수 있습니다.
 
-먼저 자산이 표시될 페이지에 대한 클라우드 구성을 설정합니다. 그런 다음, 페이지에 Scene7 구성 요소를 추가하고 자산을 구성 요소에 끌어다 놓습니다. After the page properties are set for that page, a **Publish to Scene7** link appears that when selected triggers uploading to Scene7.
+먼저 자산이 표시될 페이지에 대한 클라우드 구성을 설정합니다. 그런 다음, 페이지에 Scene7 구성 요소를 추가하고 자산을 구성 요소에 끌어다 놓습니다. 페이지 속성이 해당 페이지에 대해 설정되면 선택 시 Scene7에 대한 업로드를 트리거하는 **Scene7에 게시** 링크가 나타납니다.
 
 >[!NOTE]
 >
@@ -111,16 +111,16 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 1. 사이드 킥에서 **페이지** 아이콘을 클릭하고 **페이지 속성**&#x200B;을 클릭합니다.
 
 1. **클라우드 서비스**&#x200B;를 클릭하고 **서비스 추가**&#x200B;를 클릭한 후 **Scene7**&#x200B;을 선택합니다.
-1. **Adobe Scene7** 드롭다운 목록에서 원하는 구성을 선택하고 확인을 **클릭합니다**.
+1. **Adobe Scene7** 드롭다운 목록에서 원하는 구성을 선택하고 **확인**&#x200B;을 클릭합니다.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
 1. 웹 페이지에서 Scene7 구성 요소를 페이지의 원하는 위치에 추가합니다.
-1. 컨텐츠 파인더에서 디지털 자산을 구성 요소로 끌어옵니다. You see a link to **Check Scene7 Publication Status**.
+1. 컨텐츠 파인더에서 디지털 자산을 구성 요소로 끌어옵니다. **Scene7 게시 상태 확인**&#x200B;에 대한 링크가 표시됩니다.
 
    >[!NOTE]
    >
-   >If the digital asset is in the CQ target folder, then no link to **Check Scene7 Publication Status** appears. 자산은 단순히 구성 요소에 배치됩니다.
+   >디지털 자산이 CQ 대상 폴더에 있는 경우 **Scene7 게시 상태 확인**&#x200B;에 대한 링크가 표시되지 않습니다. 자산은 단순히 구성 요소에 배치됩니다.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
@@ -148,7 +148,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
 >[!NOTE]
 >
->If you are creating and developing custom S7 viewers and using the Content Finder, you need to explicity add the **allowfullscreen** parameter.
+>사용자 지정 S7 뷰어를 만들고 개발하려고 하며 컨텐츠 파인더를 사용하는 경우 **allowfullscreen** 매개 변수를 명시적으로 추가해야 합니다.
 
 ### Flash 뷰어 지원 중단 알림 {#flash-viewers-end-of-life-notice}
 
@@ -166,7 +166,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
 1. 사용 가능한 Scene7 구성 요소가 없는 경우 사이드 킥에서 눈금자를 클릭하여 **디자인** 모드를 시작하고 parsys **편집**&#x200B;을 클릭한 다음, 모든 **Scene7** 구성 요소를 선택하여 사용 가능하게 하십시오.
 
-1. Return to **Edit** mode by clicking the pencil in the sidekick.
+1. 사이드 킥에서 연필을 클릭하여 **편집** 모드로 돌아갑니다.
 
 1. 사이드 킥의 **Scene7** 그룹에서 원하는 위치의 페이지로 구성 요소를 끌어옵니다.
 
@@ -180,7 +180,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
 클래식 UI에서 응답형 사이트에 대화형 보기 환경을 추가하려면:
 
-1. Log in to AEM, and ensure that you have [configured Adobe Scene7 Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) and that Scene7 components are available.
+1. AEM에 로그인하고 [Adobe Scene7 클라우드 서비스를 구성](/help/sites-administering/scene7.md#configuring-scene-integration)했는지와 Scene7 구성 요소가 사용 가능한지 확인하십시오.
 
    >[!NOTE]
    >
@@ -207,33 +207,33 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
 ### 확대/축소 {#zoom}
 
-+ 단추를 누르면 HTML5 확대/축소 구성 요소가 더 큰 이미지를 표시합니다.
+HTML5 확대/축소 구성 요소가 더 큰 이미지를 표시하려면 + 단추를 누릅니다.
 
-자산의 맨 아래에는 확대/축소 도구가 있습니다. 확대하려면 **+**&#x200B;을 클릭하십시오. 축소하려면 **-**&#x200B;를 클릭하십시오. Clicking the **x** or the reset zoom arrow brings the image back to the original size it was imported as. 전체 화면으로 만들려면 대각선 화살표를 클릭합니다. **편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. With this component, you can configure [settings common to all Scene7 components](#settings-common-to-all-scene-components).
+자산의 맨 아래에는 확대/축소 도구가 있습니다. 확대하려면 **+**&#x200B;을 클릭하십시오. 축소하려면 **-**&#x200B;를 클릭하십시오. **x** 또는 확대/축소 재설정 화살표를 클릭하면 이미지가 가져온 원래 크기로 돌아갑니다. 전체 화면으로 만들려면 대각선 화살표를 클릭합니다. **편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. 이 구성 요소를 사용하여 [모든 Scene7 구성 요소에 공통되는 설정](#settings-common-to-all-scene-components)을 구성할 수 있습니다.
 
 ![](do-not-localize/chlimage_1-3.png)
 
 ### 플라이아웃 {#flyout}
 
-HTML5 플라이아웃 구성 요소에서 자산은 분할 화면으로 표시됩니다. 왼쪽에는 지정된 크기의 자산이 표시되고, 오른쪽에는 확대/축소 부분이 표시됩니다. **편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. With this component, you can configure [settings common to all Scene7 components](/help/sites-administering/scene7.md#settingscommontoallscene7components).
+HTML5 플라이아웃 구성 요소에서 자산은 분할 화면으로 표시됩니다. 왼쪽에는 지정된 크기의 자산이 표시되고, 오른쪽에는 확대/축소 부분이 표시됩니다. **편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. 이 구성 요소를 사용하여 [모든 Scene7 구성 요소에 공통되는 설정](/help/sites-administering/scene7.md#settingscommontoallscene7components)을 구성할 수 있습니다.
 
 >[!NOTE]
 >
 >플라이아웃 구성 요소가 사용자 지정 크기를 사용하는 경우 해당 사용자 지정 크기가 사용되고 구성 요소의 응답형 설정이 비활성화됩니다.
 >
->플라이아웃 구성 요소가 기본 크기를 사용하는 경우, 디자인 보기에서 설정된 대로 기본 크기가 사용되고 구성 요소가 구성 요소의 응답형 설정이 활성화되면서 페이지 레이아웃 크기에 맞게 확장됩니다. 그러나 구성 요소의 응답형 설정에 대한 제한은 있습니다. 응답형 설정이 있는 플라이아웃 구성 요소를 사용하는 경우 전체 페이지 늘리기를 함께 사용하면 안 됩니다. 그렇지 않으면 플라이아웃이 페이지의 오른쪽 테두리 이상으로 확장될 수 있습니다.
+>플라이아웃 구성 요소가 기본 크기를 사용하는 경우, 디자인 보기에서 설정된 대로 기본 크기가 사용되며, 구성 요소는 구성 요소의 응답형 설정이 활성화되면서 페이지 레이아웃 크기에 맞게 확장됩니다. 그러나 구성 요소의 응답형 설정에는 제한이 있습니다. 응답형 설정이 있는 플라이아웃 구성 요소를 사용하는 경우 전체 페이지 늘리기를 함께 사용하면 안 됩니다. 그러지 않으면, 플라이아웃이 확장되어 페이지의 오른쪽 테두리를 넘어갈 수 있습니다.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
 ### 이미지 {#image}
 
-Scene7 이미지 구성 요소를 사용하면 Scene7 수정자, 이미지 또는 뷰어 사전 설정, 선명하게 하기 등의 Scene7 기능을 이미지에 추가할 수 있습니다. Scene7 이미지 구성 요소는 특수한 Scene7 기능이 있는 AEM의 다 른 이미지 구성 요소와 유사합니다. In this example, the image has the Scene7 URL modifier, **&amp;op_invert=1** applied.
+Scene7 이미지 구성 요소를 사용하면 Scene7 수정자, 이미지 또는 뷰어 사전 설정, 선명하게 하기 등의 Scene7 기능을 이미지에 추가할 수 있습니다. Scene7 이미지 구성 요소는 특수한 Scene7 기능이 있는 AEM의 다 른 이미지 구성 요소와 유사합니다. 이 예의 이미지에는 Scene7 URL 수정자, **&amp;op_invert=1**&#x200B;이 적용되어 있습니다.
 
 ![](do-not-localize/chlimage_1-4.png)
 
-**제목, 대체 텍스트** 고급 탭에서 이미지에 제목을 추가하고 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.
+**제목, 대체 텍스트** 고급 탭에서 이미지에 제목을 추가하고, 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.
 
-**URL, 열기** 링크를 열 자산을 설정할 수 있습니다. URL을 설정하고 여는 위치에 같은 창에서 열지 또는 새 창에서 열지를 지정합니다.
+**URL, 여는 위치** 링크를 열 자산을 설정할 수 있습니다. URL을 설정하고 여는 위치에 같은 창에서 열지 또는 새 창에서 열지를 지정합니다.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -243,19 +243,19 @@ Scene7 이미지 구성 요소를 사용하면 Scene7 수정자, 이미지 또�
 
 **이미지 사전 설정** 드롭다운 메뉴에서 기존 이미지 사전 설정을 선택합니다. 보려는 이미지 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. 이미지 사전 설정 관리를 참조하십시오. 이미지 사전 설정을 사용 중일 때는 뷰어 사전 설정을 선택할 수 없고 그 반대의 경우도 마찬가지입니다.
 
-**출력 형식** 이미지의 출력 형식(예: jpeg)을 선택합니다. 선택한 출력 형식에 따라 추가 구성 옵션이 있을 수 있습니다. 이미지 사전 설정 우수 사례를 참조하십시오.
+**출력 형식** 이미지의 출력 형식(예: jpeg)을 선택하십시오. 선택한 출력 형식에 따라 추가 구성 옵션이 있을 수 있습니다. 이미지 사전 설정 우수 사례를 참조하십시오.
 
-**선명하게** 하기 이미지를 선명하게 할 방법을 선택합니다. 선명하게 하기는 이미지 사전 설정 우수 사례 및 선명하게 하기 우수 사례에 자세히 설명되어 있습니다.
+**선명도** 이미지를 선명하게 하려는 방법을 선택하십시오. 선명하게 하기는 이미지 사전 설정 우수 사례 및 선명하게 하기 우수 사례에 자세히 설명되어 있습니다.
 
 **URL 수정자** 추가 S7 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 내용은 이미지 사전 설정 및 명령 참조에 설명되어 있습니다.
 
-**중단점** 웹 사이트가 응답형인 경우 중단점을 조정하려고 합니다. 중단점은 쉼표(,)로 구분해야 합니다.
+**중단점** 웹 사이트가 응답형인 경우 중단점을 조정할 수 있습니다. 중단점은 쉼표(,)로 구분해야 합니다.
 
 ### 이미지 템플릿 {#image-template}
 
-[Scene7 이미지 템플릿](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html)은 Scene7로 가져온 계층화된 Photoshop 컨텐츠입니다. 여기서 컨텐츠 및 속성은 가변성을 위해 매개 변수화됩니다. **이미지 템플릿** 구성 요소를 사용하여 이미지를 가져오고 AEM에서 텍스트를 동적으로 변경할 수 있습니다. 또한 클라이언트 컨텍스트의 값을 사용하도록 **이미지 템플릿** 구성 요소를 구성할 수 있으므로 각 사용자는 개인화된 방식으로 이미지를 경험하게 됩니다.
+[Scene7 이미지 템플릿](https://help.adobe.com/ko_KR/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html)은 Scene7로 가져온 계층화된 Photoshop 컨텐츠입니다. 여기서 컨텐츠 및 속성은 가변성을 위해 매개 변수화됩니다. **이미지 템플릿** 구성 요소를 사용하여 이미지를 가져오고 AEM에서 텍스트를 동적으로 변경할 수 있습니다. 또한 클라이언트 컨텍스트의 값을 사용하도록 **이미지 템플릿** 구성 요소를 구성할 수 있으므로 각 사용자는 개인화된 방식으로 이미지를 경험하게 됩니다.
 
-**편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. You can configure [settings common to all Scene7 components](/help/sites-administering/scene7.md#settingscommontoallscene7components) as well as other settings described in this section.
+**편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. 이 절에 설명된 기타 설정과 [모든 Scene7 구성 요소에 공통되는 설정](/help/sites-administering/scene7.md#settingscommontoallscene7components)을 구성할 수 있습니다.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -265,13 +265,13 @@ Scene7 이미지 구성 요소를 사용하면 Scene7 수정자, 이미지 또�
 >
 >Scene7 URL 명령 및 매개 변수를 파일 참조 URL에 직접 추가할 수 없습니다. **매개 변수** 패널의 구성 요소 UI에서만 정의할 수 있습니다.
 
-**제목, 대체 텍스트** Scene7 이미지 템플릿 탭에서 이미지에 제목을 추가하고 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.
+**제목, 대체 텍스트** Scene7 이미지 템플릿 탭에서 이미지에 제목을 추가하고, 그래픽을 해제한 사용자를 위한 대체 텍스트를 추가합니다.
 
-**URL, 열기** 링크를 열 자산을 설정할 수 있습니다. URL을 설정하고 여는 위치에 같은 창에서 열지 또는 새 창에서 열지를 지정합니다.
+**URL, 여는 위치** 링크를 열 자산을 설정할 수 있습니다. URL을 설정하고 여는 위치에 같은 창에서 열지 또는 새 창에서 열지를 지정합니다.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-**매개 변수 패널** 이미지를 가져올 때 매개 변수가 이미지의 정보로 미리 채워집니다. 동적으로 변경할 수 있는 컨텐츠가 없는 경우 이 창은 비어 있습니다.
+**매개 변수 패널** 이미지를 가져올 때 매개 변수는 이미지의 정보로 미리 채워집니다. 동적으로 변경할 수 있는 컨텐츠가 없는 경우 이 창은 비어 있습니다.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -287,11 +287,11 @@ Scene7 이미지 구성 요소를 사용하면 Scene7 수정자, 이미지 또�
 
 #### 클라이언트 컨텍스트 값을 반영하도록 텍스트 변경 {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-To link a field to a client context value, click **Select** to open the client-context menu, select the client context, and click **OK**. 이 예제에서 이름은 프로필의 형식이 지정된 이름과 연결되어 변경됩니다.
+필드를 클라이언트 컨텍스트 값에 연결하려면 **선택**&#x200B;을 클릭하여 클라이언트 컨텍스트 메뉴를 열고 클라이언트 컨텍스트를 선택한 후 **확인**&#x200B;을 클릭합니다. 이 예제에서 이름은 프로필의 형식이 지정된 이름과 연결되어 변경됩니다.
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-텍스트는 현재 로그인한 사용자의 이름을 반영합니다. 필드 옆에 있는 **재설정 **을 클릭하여 텍스트를 원래 값으로 재설정할 수 있습니다.
+텍스트는 현재 로그인한 사용자의 이름을 반영합니다. 필드 옆에 있는 **재설정**을 클릭하여 텍스트를 원래 값으로 재설정할 수 있습니다.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -300,7 +300,7 @@ To link a field to a client context value, click **Select** to open the client-c
 Scene7 이미지 템플릿 구성 요소를 클릭 가능한 링크로 만들려면:
 
 1. Scene7 이미지 템플릿 구성 요소가 있는 페이지에서 **편집**&#x200B;을 클릭합니다.
-1. **URL** 필드에 이미지를 클릭할 때 사용자가 이동되는 URL을 입력합니다. In the **Open in** field, select whether you want the target to open (a new window or same window).
+1. **URL** 필드에 이미지를 클릭할 때 사용자가 이동되는 URL을 입력합니다. **여는 위치** 필드에서 대상을 새 창 또는 동일한 창 중 어떤 창에서 열지를 선택합니다.
 
    ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -308,11 +308,11 @@ Scene7 이미지 템플릿 구성 요소를 클릭 가능한 링크로 만들려
 
 ### 비디오 구성 요소 {#video-component}
 
-The Scene7 **Video** component (available from the Scene7 section of the sidekick) uses device and bandwidth detection to serve the right video to each screen. 이 구성 요소는 HTML5 비디오 플레이어로, 채널 간에 사용할 수 있는 단일 뷰어입니다.
+Scene7 **비디오** 구성 요소(사이드 킥의 Scene7 섹션에서 사용 가능)는 장치 및 대역폭 검색을 사용하여 각 화면에 올바른 비디오를 제공합니다. 이 구성 요소는 HTML5 비디오 플레이어로, 채널 간에 사용할 수 있는 단일 뷰어입니다.
 
 응용 비디오 세트, 단일 MP4 비디오 또는 단일 F4V 비디오에 사용할 수 있습니다.
 
-비디오가 Scene7 통합에 따라 작동하는 방식에 대한 자세한 내용은 [비디오](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)를 참조하십시오. In addition, see how [the **Scene7 video** component compares to the foundation **video** component](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
+비디오가 Scene7 통합에 따라 작동하는 방식에 대한 자세한 내용은 [비디오](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)를 참조하십시오. 또한 [**Scene7 비디오** 구성 요소와 기본 **비디오** 구성 요소](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)를 비교한 결과도 참조하십시오.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -327,7 +327,7 @@ Scene7 비디오 구성 요소에서 응용 비디오 세트를 사용할 때는
 
 ## Scene7 컨텐츠 브라우저 {#scene-content-browser}
 
-Scene7 컨텐츠 브라우저를 사용하면 AEM에서 직접 Scene7의 컨텐츠를 볼 수 있습니다. To access the content browser, in the Content Finder, select **Scene7** in the touch-optimized user interface or the **S7** icon in the classic user interface. 기능은 두 사용자 인터페이스에서 동일합니다.
+Scene7 컨텐츠 브라우저를 사용하면 AEM에서 직접 Scene7의 컨텐츠를 볼 수 있습니다. 컨텐츠 브라우저에 액세스하려면 컨텐츠 파인더의 터치 최적화 사용자 인터페이스에서 **Scene7**&#x200B;을 선택하거나, 클래식 사용자 인터페이스에서 **S7** 아이콘을 선택하십시오. 기능은 두 사용자 인터페이스에서 동일합니다.
 
 다중 구성이 있는 경우, 기본적으로 AEM은 [기본 구성](/help/sites-administering/scene7.md#configuring-a-default-configuration)을 표시합니다. 드롭다운 메뉴의 Scene7 컨텐츠 브라우저에서 직접 다른 구성을 선택할 수 있습니다.
 
@@ -335,20 +335,20 @@ Scene7 컨텐츠 브라우저를 사용하면 AEM에서 직접 Scene7의 컨텐�
 >
 >* 임시 폴더에 있는 자산은 Scene7 컨텐츠 브라우저에 나타나지 않습니다.
 >* [보안 미리 보기가 활성화](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)되면 Scene7의 게시된 자산 및 게시되지 않은 자산이 모두 Scene7 컨텐츠 브라우저에 표시됩니다.
->* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
+>* **Scene7** 또는 **S7** 아이콘이 컨텐츠 브라우저에 옵션으로 표시되지 않는 경우 [AEM에서 작동하도록 Scene7을 구성](/help/sites-administering/scene7.md)해야 합니다.
 
    >
    >
 * 비디오의 경우 Scene7 컨텐츠 브라우저는 다음을 지원합니다. >
    >    * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
    >    * 단일 MP4 비디오
-   >    * 단일 F4V 비디오
+   >    * 단일 F4V 동영상
 
 >
 
 
 
-### 컨텐츠 검색 {#browsing-content-in-the-classic-ui}
+### 컨텐츠 찾아보기 {#browsing-content-in-the-classic-ui}
 
 **S7** 탭을 클릭하여 Scene7에서 컨텐츠를 찾아봅니다.
 
@@ -366,7 +366,7 @@ Scene7 컨텐츠 브라우저를 사용하면 AEM에서 직접 Scene7의 컨텐�
 >
 >* 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
 >* 단일 MP4 비디오
->* 단일 F4V 비디오
+>* 단일 F4V 동영상
 
 >
 
@@ -380,11 +380,11 @@ Scene7 자산 검색은 검색 시, AEM으로 직접 가져오는 대신 Scene7 
 
 UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표시됨)에 따라 필터링할 수 있습니다.
 
-**키워드** 입력 이름별로 자산을 검색할 수 있습니다. 키워드를 검색할 때 파일 이름의 시작 문자를 입력합니다. 예를 들어, &quot;swimming&quot;이라는 단어를 입력하면 해당 문자가 해당 순서로 시작되는 모든 자산 파일 이름이 검색됩니다. 자산을 찾으려면 용어를 입력한 후 Enter 키를 클릭해야 합니다.
+**키워드 입력** 이름별로 자산을 검색할 수 있습니다. 키워드를 검색할 때 파일 이름의 시작 문자를 입력합니다. 예를 들어, &quot;swimming&quot;이라는 단어를 입력하면 해당 문자가 해당 순서로 시작되는 모든 자산 파일 이름이 검색됩니다. 자산을 찾으려면 용어를 입력한 후 Enter 키를 클릭해야 합니다.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-**폴더/경로** 표시되는 폴더의 이름은 선택한 구성을 기반으로 합니다. 폴더 아이콘을 클릭하고 하위 폴더를 선택한 후 확인 표시를 클릭하여 하위 레벨로 드릴다운할 수 있습니다.
+**폴더/경로** 표시되는 폴더의 이름은 선택한 구성에 따라 다릅니다. 폴더 아이콘을 클릭하고 하위 폴더를 선택한 후 확인 표시를 클릭하여 하위 레벨로 드릴다운할 수 있습니다.
 
 키워드를 입력하고 폴더를 선택하는 경우, AEM은 해당 폴더 및 하위 폴더를 검색합니다. 그러나 검색 시 키워드를 입력하지 않을 경우 폴더를 선택하면 해당 폴더의 자산만 표시되고 하위 폴더는 포함되지 않습니다.
 
@@ -396,11 +396,11 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**구성** Cloud Service에 둘 이상의 Scene7 구성이 정의된 경우 여기에서 선택할 수 있습니다. 결과적으로 폴더는 선택한 구성에 따라 변경됩니다.
+**구성** 클라우드 서비스에 둘 이상의 Scene7 구성이 정의되어 있는 경우 여기에서 선택할 수 있습니다. 결과적으로 폴더는 선택한 구성에 따라 변경됩니다.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**자산 유형** Scene7 브라우저 내에서 다음을 포함하도록 결과를 필터링할 수 있습니다. 이미지, 템플릿, 비디오 및 적응형 비디오 세트 자산 유형을 선택하지 않으면 기본적으로 AEM은 모든 자산 유형을 검색합니다.
+**자산 유형** Scene7 브라우저 내에서, 이미지, 템플릿, 비디오 및 응용 비디오 세트 중 하나를 포함하도록 결과를 필터링할 수 있습니다. 자산 유형을 선택하지 않으면 기본적으로 AEM은 모든 자산 유형을 검색합니다.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -414,6 +414,6 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 
 
-**게시 상태** 게시 상태를 기반으로 자산에 대해 필터링할 수 있습니다. 게시 취소 또는 게시됨. 게시 상태를 선택하지 않으면 기본적으로 AEM은 모든 게시 상태를 검색합니다.
+**게시 상태** 게시 상태(게시 취소됨 또는 게시됨)에 따라 자산을 필터링할 수 있습니다. 게시 상태를 선택하지 않으면 기본적으로 AEM은 모든 게시 상태를 검색합니다.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
