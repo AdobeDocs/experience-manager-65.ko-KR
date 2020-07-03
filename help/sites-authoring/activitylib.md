@@ -10,11 +10,11 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f62d2d639499c128fd4cafa5f9c39307ae9a607d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2022'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 82%
 
 활동 콘솔에서 활동은 브랜드별로 구성됩니다. 브랜드 및 폴더를 사용하여 활동 조직을 체계화할 수 있습니다. **개인화**&#x200B;를 탭/클릭하고 **활동**&#x200B;을 탭/클릭하여 활동 콘솔로 이동합니다.
 
-Activities are available in Targeting mode for [authoring targeted content](/help/sites-authoring/content-targeting-touch.md), where you can also create activities. 타깃팅 모드에서 만드는 활동은 활동 콘솔에 표시됩니다.
+활동은 [타깃팅된 컨텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)하는 타깃팅 모드에서 사용할 수 있으며, 이 모드에서는 활동을 만들 수도 있습니다. 타깃팅 모드에서 만드는 활동은 활동 콘솔에 표시됩니다.
 
 활동은 정의된 활동 종류를 설명하는 레이블로 표시됩니다.
 
@@ -54,14 +54,14 @@ Activities are available in Targeting mode for [authoring targeted content](/hel
 **추가 참고:** **xt_only** 선택 사항은 특정 Target 임차인(clientcode)에 적용되는 설정이며, Adobe Target에서 직접 수정하는 것만 가능합니다. 이 선택 사항은 AEM에서 활성하거나 비활성화할 수 없습니다.
 
 >[!CAUTION]
-You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스만 액세스할 수 있어야 합니다.
-See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
+일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호해야 합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스만 액세스할 수 있어야 합니다.
+자세한 내용은 [Adobe Target과 통합하기 위한 전제 조건](/help/sites-administering/target-requirements.md#securingtheactivitysettings)을 참조하십시오.
 
 ## 활동 콘솔을 사용한 브랜드 만들기 {#creating-a-brand-using-the-activities-console}
 
 마케팅 활동을 관리할 브랜드를 만드십시오.
 
-When you create a brand using the Activities console, it also appears in the [Offers console](/help/sites-authoring/offerlib.md) where you can create offers for the experiences of your activities.
+활동 콘솔을 사용하여 브랜드를 만들면, 활동의 경험에 대한 오퍼를 만들 수 있는 [오퍼 콘솔](/help/sites-authoring/offerlib.md)에도 표시됩니다.
 
 1. 탐색 콘솔에서 **개인화**&#x200B;를 클릭하거나 탭합니다. **활동**&#x200B;을 클릭하거나 탭합니다.
 
@@ -83,10 +83,10 @@ When you create a brand using the Activities console, it also appears in the [Of
 * **활동 유형: **활동 유형 - A/B 테스트 또는 경험 타깃팅
 * **목표:**(선택 사항) 활동에 대한 설명입니다.
 * **경험:** 대상 이름과 사용자가 타깃팅하는 마케팅 세그먼트 간의 매핑입니다.
-* **트래픽 비율:** A/B 테스트를 선택한 경우 각 경험에 대한 트래픽 양(백분율)을 변경할 수 있습니다.
+* **트래픽 비율:** A/B 테스트가 선택되면 각 경험에 대한 트래픽 크기(%)를 변경할 수 있습니다.
 * **지속 기간:** 활동이 적용되는 기간입니다.
 * **우선 순위:** 활동의 상대적 우선 순위입니다. 활동에서 동일한 사용자 세그먼트에 대한 컨텐츠를 제공하면 우선 순위가 높은 활동이 우선권을 갖습니다.
-* **목표 지표:** Adobe Target을 타깃팅 엔진으로 선택한 경우 활동에 성공 지표를 추가할 수 있습니다. 성공 지표 1개가 필요합니다.
+* **목표 지표:** 타깃팅 엔진으로 Adobe Target이 선택되면 활동에 성공 지표를 추가할 수 있습니다. 성공 지표 1개가 필요합니다.
 
 >[!NOTE]
 Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아니라 타깃팅된 컨텐츠 편집기에서 새 Adobe Target 활동을 ***만들어야*** 합니다.
@@ -94,7 +94,7 @@ Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아
 
 활동을 추가하려면 다음을 수행하십시오.
 
-1. Click or tap the brand for which you are creating the activity, and then click or tap **Create **then** Create Activity. **If editing, select the activity in the Master Area screen and clicking or tapping **Edit Activity**.
+1. 활동을 만들 브랜드를 클릭하거나 탭한 다음, **만들기&#x200B;**와**&#x200B;활동 만들기 를 차례로 클릭하거나 탭합니다. 편집 중이라면 마스터 영역 화면에서 활동을 선택하고 **활동 편집**&#x200B;을 클릭하거나 탭하십시오.
 1. 다음 정보를 제공한 후, **다음**&#x200B;을 클릭하거나 탭합니다.
 
    * 활동의 이름.
@@ -106,11 +106,10 @@ Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아
 1. 활동에 하나 이상의 경험을 추가합니다. **경험 추가**&#x200B;를 클릭하거나 탭합니다.
 1. AEM 타깃팅 또는 Adobe Target 경험 타깃팅을 사용하는 경우:
 
-   1. **대상자 **를 클릭하거나 탭하고 경험이 타깃팅하는 세그먼트를 선택합니다.
+   1. **대상 선택**을 클릭하거나 탭하고 사용자의 경험이 타깃팅하는 세그먼트를 선택합니다.
    1. **경험 추가**&#x200B;를 클릭하거나 탭하고 이름을 입력한 다음, **확인**&#x200B;을 클릭하거나 탭합니다.
 
    1. **다음**&#x200B;을 클릭하거나 탭합니다.
-
    Adobe Target A/B 테스트를 사용하는 경우:
 
    1. 대상 상자에서 연필을 클릭하거나 탭하여 대상을 선택합니다.
@@ -131,7 +130,7 @@ Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아
    * **지정한 날짜 및 시간**: 구체적인 시점입니다. 이 선택 사항을 선택하면 달력 아이콘을 클릭하거나 탭하고 날짜를 선택한 다음, 활동을 끝낼 시간을 지정하십시오.
 
 1. 활동의 우선 순위를 지정하려면 슬라이더를 사용하여 **낮음**, **일반** 또는 **높음**&#x200B;을 선택합니다.
-1. Adobe Target을 타깃팅 엔진으로 사용하는 경우 이 활동에서 측정할 사항을 선택합니다. See [Configuring the Activity and Setting Goals](/help/sites-authoring/content-targeting-touch.md) for more information on the success metrics available. 목표를 하나 이상 선택해야 합니다.
+1. Adobe Target을 타깃팅 엔진으로 사용하는 경우 이 활동에서 측정할 사항을 선택합니다. 사용 가능한 성공 지표에 대한 자세한 내용은 [활동 및 설정 목표 구성](/help/sites-authoring/content-targeting-touch.md)을 참조하십시오. 목표를 하나 이상 선택해야 합니다.
 1. **저장**&#x200B;을 클릭하거나 탭합니다.
 
    >[!NOTE]
@@ -142,7 +141,7 @@ Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아
 활동을 게시하여 사용할 수 있도록 해야 합니다. 반대로 활동의 게시를 취소하여 활동을 사용할 수 없게 할 수도 있습니다.
 
 >[!NOTE]
-활동을 게시 취소할 때 페이지를 새로 고치지 않으면 활동의 상태가 변경되지 않습니다.
+활동의 게시를 취소할 때 페이지를 새로 고치지 않으면 활동의 상태가 변경되지 않습니다.
 
 활동을 게시하거나 게시 취소하려면 다음을 수행하십시오.
 
@@ -166,19 +165,18 @@ Adobe Target 타깃팅 엔진을 사용하는 활동이 활성화되면 게시 �
 
 활동 성능을 보고 우승 경험을 전환하려면 다음을 수행하십시오.
 
-1. In **Personalization**, click or tap **Activities** to navigate to the **Activities** console.
+1. **개인화**&#x200B;에서 **활동**&#x200B;을 클릭하거나 탭하여 **활동** 콘솔로 이동합니다.
 1. 활동을 보려는 브랜드를 클릭하거나 탭합니다.
-1. Select the activity and click or tap **View Properties** and click the **Reports** tab and select the activity that you want to view performance for/convert winning experiences for. 성능 데이터가 표시됩니다.
+1. 활동을 선택하고 **속성 보기**&#x200B;를 클릭하거나 탭하고 **보고서** 탭을 클릭한 다음, 성능을 확인하거나 우승 경험을 전환할 활동을 선택합니다. 성능 데이터가 표시됩니다.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Click or tap the **Push winner** link to push that experience as the default experience.
+1. **우승자 푸시** 링크를 클릭하거나 탭하여 해당 경험을 기본 경험으로 푸시합니다.
 
    우승자를 전환하면 다음 내용이 수행됩니다.
 
    * 현재 활동이 비활성화됩니다.
-   * 모든 페이지가 수정되고 타깃팅된 컨텐츠가 우승 경험의 실제 컨텐츠로 교체됩니다. The content of the winning experience becomes part of the normal page **without** targeting.
-
+   * 모든 페이지가 수정되고 타깃팅된 컨텐츠가 우승 경험의 실제 컨텐츠로 교체됩니다. 우승 경험의 컨텐츠는 타깃팅되지 **않고** 일반 페이지의 일부가 됩니다.
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
    우승 경험은 보고서에서 더 많은 리프트를 생성하는 경험으로서, 전환율을 기반으로 합니다.
@@ -198,7 +196,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동은 Adobe Target 캠페인�
 활동이 동기화되면 Adobe Target에서 해당 캠페인이 만들어집니다.
 
 * 게시 인스턴스의 활동에는 해당 Adobe Target 캠페인과 동일한 이름이 있습니다.
-* Activities on the author instance correspond with Target campaigns of the same name with the `_author` suffix.
+* 작성 인스턴스의 활동은 `_author` 접미사를 사용하는 동일한 이름의 Target 캠페인에 해당합니다.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -208,7 +206,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동은 Adobe Target 캠페인�
 
 ## 활동 동기화 문제 해결 {#troubleshooting-activity-synchronization}
 
-When AEM synchronizes an activity with Adobe Target, AEM includes a property of the activity named `thirdPartyId`. 이 속성의 값은 AEM 저장소의 활동 경로를 기반으로 합니다. Adobe Target에 있는 두 개의 캠페인이 `thirdPartyId` 속성에 대해 동일한 값을 가질 수는 없습니다. 따라서 Adobe Target의 기존 캠페인(다른 유형 AB, XT)이 `thirdPartyId`에 대해 동일한 값을 사용하는 경우에는 활동이 실패하게 됩니다.
+AEM이 활동을 Adobe Target과 동기화할 때 AEM은 `thirdPartyId`라는 활동의 속성을 포함합니다. 이 속성의 값은 AEM 저장소의 활동 경로를 기반으로 합니다. Adobe Target에 있는 두 개의 캠페인이 `thirdPartyId` 속성에 대해 동일한 값을 가질 수는 없습니다. 따라서 Adobe Target의 기존 캠페인(다른 유형 AB, XT)이 `thirdPartyId`에 대해 동일한 값을 사용하는 경우에는 활동이 실패하게 됩니다.
 
 이러한 상황은 다음 경우에 발생할 수 있습니다.
 
@@ -223,7 +221,7 @@ When AEM synchronizes an activity with Adobe Target, AEM includes a property of 
 동기화 문제를 방지하려면 항상 활동에 고유한 이름을 사용하십시오. 활동이 동기화에 실패하는 경우, 해당 캠페인이 사용되고 있지 않다면 동일한 이름을 사용하는 Adobe Target 캠페인을 삭제할 수 있습니다.
 
 >[!NOTE]
-When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. Adobe Target에서 이 캠페인을 삭제해도 `thirdPartyId`는 삭제되지 않습니다. `thirdPartyId`는 다른 유형의 캠페인(AB, XT)에 대해 다시 사용할 수 없으며 수동으로 제거할 수 없습니다. 이 문제를 방지하려면 각 캠페인의 이름을 고유한 이름으로 지정합니다. 따라서 캠페인 이름을 다른 캠페인 유형에서 다시 사용할 수 없습니다.
+Adobe Target에서 캠페인을 만들 때 각 캠페인에 `thirdPartyId t`라는 속성을 지정하게 됩니다. Adobe Target에서 이 캠페인을 삭제해도 `thirdPartyId`는 삭제되지 않습니다. `thirdPartyId`는 다른 유형의 캠페인(AB, XT)에 대해 다시 사용할 수 없으며 수동으로 제거할 수 없습니다. 이러한 문제를 방지하려면 각 캠페인에 고유한 이름을 지정하십시오. 따라서 캠페인 이름은 다른 캠페인 유형에서 다시 사용할 수 없습니다.
 동일한 캠페인 유형에서 동일한 이름을 사용하는 경우 기존 캠페인을 덮어쓰게 됩니다.
 동기화 중에 &quot;Request Failed. `thirdPartyId` already exists&quot;(요청이 실패했습니다. thirdPartyId가 이미 있습니다)라는 오류가 발생하는 경우, 캠페인 이름을 변경하고 다시 동기화하십시오.
 
