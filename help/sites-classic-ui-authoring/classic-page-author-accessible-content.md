@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9241'
 ht-degree: 100%
 
@@ -257,7 +257,7 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 
 * 성공 기준 1.2.2
 * 레벨 A
-* 캡션(사전 기록된): 미디어가 텍스트의 미디어 대체 요소이고 이것이 레이블로 명시되어 있는 경우를 제외하면 동기화된 미디어에 있는 사전 녹음된 모든 오디오 컨텐츠에 대해 캡션이 제공됩니다.
+* 캡션(사전 기록된): 미디어가 텍스트의 미디어 대체 요소이고 이것이 레이블로 명시된 경우를 제외하면 동기화된 미디어에 있는 사전 녹음된 모든 오디오 컨텐츠에 대해 캡션이 제공됩니다.
 
 #### 목적 - 캡션(사전 기록된)(1.2.2) {#purpose-captions-pre-recorded}
 
