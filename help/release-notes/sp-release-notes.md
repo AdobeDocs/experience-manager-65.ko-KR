@@ -3,11 +3,11 @@ title: Adobe Experience Manager 6.5 서비스 팩 릴리스 노트
 description: Adobe Experience Manager 6.5 서비스 팩 5에 대한 릴리스 노트입니다.
 docset: aem65
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1eca1fcce90dfde8b512414249eb8cc05323c5cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4512'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -25,73 +25,73 @@ ht-degree: 71%
 
 ## Adobe Experience Manager 6.5.5.0에 포함된 제품 {#what-s-included-in-aem}
 
-Adobe Experience Manager 6.5.5.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the general availability of 6.5 release in **April 2019**. Adobe Experience Manager 6.5 위에 설치할 수 있습니다.
+Adobe Experience Manager 6.5.5.0은 **2019년 4월** 6.5 릴리스의 공식 출시 이후 릴리스된 새로운 기능, 주요 고객이 요청한 향상된 기능 및 성능, 안정성, 보안 개선 사항이 포함된 중요한 업데이트입니다. Adobe Experience Manager 6.5 맨 위에 설치할 수 있습니다.
 
 Adobe Experience Manager 6.5.5.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과 같습니다.
 
 * Adobe Experience Manager 받은 편지함에 표시되는 열 이름을 사용자 지정합니다.
 
-* 페이지 편집기, 핵심 구성 요소, RTE 및 관리 사용자 인터페이스와 같은 WCM(Experience Manager 웹 컨텐츠 관리)의 다양한 영역의 액세스 가능성을 개선했습니다.
+* 페이지 편집기, 코어 구성 요소, RTE 및 관리자 인터페이스와 같은 Experience Manager WCM(웹 컨텐츠 관리)의 다양한 영역에서 액세스 가능성이 개선되었습니다.
 
-* 초안을 [!DNL Interactive Communication] 저장합니다.
+* 초안을 [!DNL Interactive Communication](으)로 저장합니다.
 
-* Support for [!DNL Oracle WebLogic 12] for Experience Manager Forms on JEE.
+* JEE에서 Experience Manager Forms용 [!DNL Oracle WebLogic 12] 지원.
 
-* 사용자 인터페이스 흐름의 예외 처리가 [!DNL Adobe Experience Manager Assets] 개선되었습니다.
+* [!DNL Adobe Experience Manager Assets] 사용자 인터페이스 흐름의 예외 처리가 개선되었습니다.
 
-* Dynamic Media Scene7에 대한 게시 URL을 가져오려면 새로운 방법 `getRemoteAssetPublishURL` 이 `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` 인터페이스에 추가됩니다.
+* Dynamic Media Scene7에 대한 게시 URL을 가져오려면 새로운 방법 `getRemoteAssetPublishURL`이 `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` 인터페이스에 추가됩니다.
 
-* [WCAG](#assets-6550) (Web Content Accessibility Guidelines) [!DNL Adobe Experience Manager Assets] 를 준수하는 접근성 향상
+* WCAG(Web Content Accessibility Guidelines)를 준수하여 [ ](#assets-6550)액세스 가능성 개선[!DNL Adobe Experience Manager Assets].
 
-* Adobe Experience Manager 내에서 패키지 공유 통합을 제거했습니다.
+* Adobe Experience Manager와 패키지 공유 통합이 제거되었습니다.
 
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.22.3으로 업데이트되었습니다.
 
-For complete list of features, key highlights, key features introduced in Experience Manager 6.5 service pack 5, see [What&#39;s new in Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
+Experience Manager 6.5 서비스 팩 5에 소개된 전체 기능, 주요 특징 및 주요 기능 목록에 대해서는 [Adobe Experience Manager 6.5 서비스 팩 5의 새로운 기능](new-features-latest-service-pack.md)을 참조하십시오.
 
 다음은 [!DNL Experience Manager] 6.5.5.0 릴리스에서 제공된 수정 사항 목록입니다.
 
 ### [!DNL Sites] {#sites-6550}
 
-* Experience Manager 사이트에서는 해당 별칭에서 페이지를 게시 또는 게시 취소하는 옵션을 제공합니다. 이 옵션이 작동하지 않습니다(NPR-33415).
+* Experience Manager Sites는 해당 별칭에서 페이지를 게시 또는 게시 취소하는 옵션을 제공합니다. 이 옵션이 작동하지 않습니다(NPR-33415).
 * 여러 템플릿이 들어 있는 템플릿에서 레이아웃 컨테이너를 삭제하면 템플릿이 올바르게 렌더링되지 않습니다(NPR-33347).
-* Experience Manager 사이트 페이지가 여러 Live Copy가 있는 큰 컨텐츠 세트의 일부인 경우 페이지 버전 내역 미리 보기가 로드되지 않습니다(NPR-33311).
-* 이동 명령을 사용하여 Experience Manager 사이트 페이지의 이름을 변경해도 페이지 제목은 업데이트되지 않습니다(NPR-33264).
+* Experience Manager Sites 페이지가 여러 Live Copy가 있는 큰 컨텐츠 세트의 일부인 경우 페이지 버전 기록 미리 보기가 로드되지 않습니다(NPR-33311).
+* 이동 명령을 사용하여 Experience Manager Sites 페이지의 이름을 변경하면 페이지 제목이 업데이트되지 않습니다(NPR-33264).
 * 열 보기를 통해 페이지를 이동하면 열이 사라집니다(NPR-33216).
-* When the name of a local component in a language copy is identical to the name of a component in the blueprint and the component is rolled out from blueprint, term `_msm_moved` is not added to the name of the local component (NPR-33208).
-* The Page Redirect servlet appends .html to an Experience Manager Sites URL where ResourceType is not `cq:Page` (NPR-33176).
+* 언어 복사본에 있는 로컬 구성 요소의 이름이 블루프린트에서 구성 요소의 이름과 동일하고, 구성 요소가 블루프린트에서 롤아웃되면 `_msm_moved` 용어가 로컬 구성 요소의 이름에 추가되지 않습니다(NPR-33208).
+* 페이지 리디렉션 서블릿은 ResourceType이 `cq:Page`가 아닌 Sites URL에 .html을 추가합니다(NPR-33176).
 * 하위 트리를 붙여넣을 때 해당 하위 페이지를 붙여넣을 것인지 여부를 결정하는 옵션이 없습니다(NPR-33149).
 * 구성 요소의 라이브 사용량 결과 수는 49로 제한됩니다(NPR-33058).
 * 스키마에 컨텐츠 조각을 기반으로 하고 필수 텍스트 영역 또는 경로 필드를 포함하는 경우 컨텐츠 조각이 저장되지 않습니다(NPR-33007).
-* 기본 경험 조각 구성 요소를 사용하여 사용자 지정 구성 요소를 만들고 Experience Manager 사이트 페이지에서 사용하는 경우, Experience Manager은 사용자 지정 구성 요소의 참조(사용)를 표시하지 않습니다(NPR-32852).
+* 기본 경험 구성요소 구성 요소를 사용하여 사용자 지정 구성 요소를 만들고 Experience Manager Sites 페이지에서 사용하면 Experience Manager에 사용자 지정 구성 요소에 대한 참조(사용량)를 표시하지 않습니다(NPR-32852).
 * 참조 수가 많은 폴더의 이름을 바꾸면 해당 폴더에 대한 많은 참조가 업데이트되지 않습니다(NPR-32765).
 * 소스 편집 옵션을 활성화하면 인라인 전체 화면 옵션에는 사용할 수 있지만 리치 텍스트 편집기의 편집 대화 상자와 전체 화면 옵션에는 누락된 상태로 남게 됩니다(NPR-32763).
-* 다중 필드가 있고 블루프린트의 페이지 속성에 필수 필드(예: 드롭다운 또는 경로 필드)가 포함되어 있는 경우, 이러한 다중 필드가 포함된 페이지가 롤아웃되면, live copy의 페이지 속성이 저장되지 않습니다(NPR-32751).
+* 다중 필드가 있고 블루프린트의 페이지 속성에 필수 필드(예: 드롭다운 또는 경로 필드)가 포함되어 있는 경우 이러한 다중 필드가 포함된 페이지가 롤아웃되면 Live Copy의 페이지 속성이 저장되지 않습니다(NPR-32751).
 * 화면 판독기에서 제목 구조를 사용하여 페이지를 탐색할 수 없습니다. 또한 구성 요소 탭에 잘못된 레이블이 있습니다(NPR-32648).
 * 페이지 매김이 시작되면 경험 조각 선택기가 일부 항목을 로드하지 않습니다(NPR-32605).
 * Live Copy를 읽고, 수정하고, 만들고, 삭제할 수 있는 작성자 권한이 취소됩니다. 각 작성자는 블루프린트 내에서 페이지를 이동하기 위해 읽기 및 수정 권한을 명시적으로 제공해야 했습니다(NPR-32550).
 * 컨텐츠 작성자가 Adobe Analytics와 통합된 페이지에 대해 시작을 만들지 못했습니다(NPR-32548).
 * 사용자가 동기화와 함께 상속을 다시 시작하면 상위 페이지의 Live Copy는 블루프린트와 동기화되지 않고 잘못된 상태를 표시합니다(NPR-32500).
-* Experience Manager 사이트 편집기 페이지를 로드하는 데 15초 이상 걸립니다(NPR-32413).
+* Experience Manager Sites 편집기 페이지는 로드하는 데 15초 이상 걸립니다(NPR-32413).
 * 특정 필드에는 상속 취소 옵션이 표시되지 않습니다(NPR-32362).
 * 경험 조각 구성 요소의 경로를 선택하고 선택 대화 상자 열기 확인란을 선택하면 경로 브라우저에서 선택한 경로로 이동되지 않습니다(NPR-32308).
-* Experience Manager 6.2에서 Experience Manager 6.5로 업그레이드하는 경우 정적 템플릿의 Parsys 구성 요소가 올바르게 표시되지 않습니다. Parsys 구성 요소의 높이는 0으로 설정되며 구성 요소 내의 구성 요소는 표시되지 않습니다(NPR-33663).
+* Experience Manager 6.2에서 Experience Manager 6.5로 업그레이드하는 경우 정적 템플릿의 Parsys 구성 요소가 올바르게 표시되지 않습니다. Parsys 구성 요소의 높이가 0으로 설정되고 이 구성 요소 내에 있는 구성 요소가 표시되지 않습니다(NPR-33663).
 * 사용자가 동일한 페이지에서 레이아웃 컨테이너를 복사하고 붙여넣으면 레이아웃 컨테이너의 구성 요소가 표시되지 않습니다(NPR-33648).
 * Dispatcher 상태 확인은 로그 파일에 `Invalid cookie header` 경고 메시지를 표시합니다(NPR-33629).
 
 ### [!DNL Assets] {#assets-6550}
 
-Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
+**Experience Manager Assets의 액세스 가능성이 개선되었습니다**
 
 * 이제 자산의 [!UICONTROL 타임라인] 패널에서 [!UICONTROL 새 버전 만들기]에 있는 버전 설명 [!UICONTROL 만들기]에 대한 클릭 가능한 옵션과 [!UICONTROL 댓글] 목록에 키보드 포커스를 둘 수 있습니다(NPR-33424).
 
 * 이제 키보드 키를 사용하여 [!UICONTROL 보기 설정] 대화 상자에서 자산에 대한 [!UICONTROL 보기 설정] 옵션에 도달하고 설정을 변경할 수 있습니다(NPR-33420).
 
-* 이제 콤보 상자의 목록 상자 팝업(여러 페이지의 여러 필드)에 항목이 화면 판독기에서 알릴 수 있는 옵션 목록으로 표시됩니다(NPR-33516).
+* 이제 콤보 상자의 목록 상자 팝업(다른 페이지의 여러 필드)에 항목이 화면 판독기에서 알릴 수 있는 옵션 목록으로 표시됩니다(NPR-33516).
 
 * 이제 정렬 가능한 머리글의 정렬 기능(목록 보기, [!UICONTROL 타임라인] 보기 및 [!UICONTROL 게시 관리] 페이지)을 화면 판독기에서 알려주고, 열 헤더의 정렬 컨트롤은 키보드를 사용하여 액세스할 수 있습니다(NPR-32979).
 
-* 이제 댓글 카드, 버전 업데이트, 콤보 상자 및 메뉴 V자 아이콘과 같은 클릭 가능한 요소를 키보드(NPR-33514)를 사용하여 포커스를 지정하고 상호 작용할 수 있습니다.
+* 이제 클릭 가능한 요소(예: 주석 카드, 버전 업데이트, 콤보 상자, 메뉴의 펼침 아이콘)는 키보드를 사용하여 포커스를 지정하고 작업을 수행할 수 있습니다(NPR-33514).
 
 * 이제 [!UICONTROL 인사이트 보기]의 인사이트 아이콘(사용량, 노출 횟수 및 클릭 수) 기능(또는 작업 목적)을 화면 판독기에서 올바르게 알려줍니다(NPR-33513).
 
@@ -113,11 +113,11 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 
 * 이제 [!DNL Adobe Experience Manager] Assets에서 검색한 모든 페이지의 제목이 고유합니다(NPR-33343).
 
-* 트리 구조를 탐색할 때 트리 보기 컨트롤의 다양한 요소가 화면 판독기에 의해 올바르게 표시됩니다(NPR-33304).
+* 이제 트리 구조를 탐색할 때 트리 보기 컨트롤의 여러 요소가 화면 판독기에 올바르게 표시됩니다(NPR-33304).
 
 * 이제 키보드 키를 사용하여 자산 세부 사항 페이지의 [!UICONTROL 타임라인] 보기에서 다른 자산 버전에 액세스할 수 있습니다(NPR-33283).
 
-* 이제 Omnisearch 콤보 상자에 나타나는 검색 제안 이름이 검색 기능을 사용할 때 화면 판독기에 의해 발표됩니다(NPR-33280).
+* 이제 검색 기능을 사용할 때 Omnisearch 콤보 상자에 표시되는 검색 제안 이름이 화면 판독기에 표시됩니다(NPR-33280).
 
 * [!UICONTROL 참조 레일]에서 클릭 가능한 요소 및 [!UICONTROL 링크로 이동] 기능이 이제 클릭 가능한 요소로 화면 판독기에 표시됩니다(NPR-33278).
 
@@ -173,9 +173,9 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 
 * 이제 키보드를 사용하여 [!UICONTROL 메타데이터 스키마 편집기] 페이지와 해당 요소에 액세스할 수 있으며, 이러한 페이지는 화면 판독기에 친숙합니다(CQ-4290962, CQ-4272953).
 
-* 선택한 태그를 제거하는 `X` 심볼의 용도는 이제 선택한 태그의 수와 함께 화면 판독기에서 알려줍니다(CQ-4273017).
+* 선택한 태그를 제거하는 `X` 기호의 용도는 이제 선택한 태그의 수와 함께 화면 판독기에서 알려줍니다(CQ-4273017).
 
-* 화면 판독기를 사용하는 비시형 사용자에 대한 혼동을 방지하기 위해 이제 화면 판독기에서 장식 아이콘 및 이미지를 무시합니다(CQ-4272944).
+* 화면 판독기를 사용하는 시각 장애 사용자에 대한 혼동을 방지하기 위해 이제 화면 판독기에서 장식 아이콘 및 이미지를 무시합니다(CQ-4272944).
 
 **Experience Manager Assets에서 해결된 문제**
 
@@ -183,7 +183,7 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 
 * 컬렉션의 에셋에 대한 [!UICONTROL 워크플로우 만들기] 대화 상자에서 [!UICONTROL 시작] 옵션이 비활성화되어 워크플로우가 트리거되지 않습니다(NPR-32471).
 
-* When using cascading popup in metadata schemas, on selecting and saving a drop-down option containing an apostrophe (from the child drop-down) the selected apostrophe option disappears after reopening asset [!UICONTROL Properties] (NPR-32649).
+* 메타데이터 스키마에서 계단식 팝업을 사용할 때 동안 하위 드롭다운에서 아포스트로피가 포함된 드롭다운 옵션 선택 및 저장 시 선택한 아포스트로피 옵션은 자산 [!UICONTROL 속성]을 다시 열면 사라집니다(NPR-32649).
 
 * [!UICONTROL 자산 통찰력 동기화 작업]이 다음 항목으로 이동하는 대신 잘못된 항목(Analytics 쪽)이 나타나면 중지되고 실패합니다(NPR-32674).
 
@@ -207,19 +207,19 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 
 * [!UICONTROL 다음] 옵션이 상위 노드(단일 하위 폴더가 표시되는 경우)를 선택한 다음 하위 폴더를 선택할 때 활성화되지 않습니다(NPR-33275).
 
-* AAL(Adobe Asset Link)에서 AAL(체크 인 및 체크 아웃)은 읽기, 만들기 또는 수정과 같은 다른 권한이 부여되었더라도 삭제 권한이 비활성화됩니다(NPR-33272).
+* AAL(Adobe Asset Link)에서 체크인 및 체크아웃 권한은 삭제 권한이 있는 사용자에게 읽기, 만들기 또는 수정과 같은 다른 권한이 부여되더라도 비활성화됩니다(NPR-33272).
 
 * 스마트 자르기 렌디션은 자산 다운로드 대화 상자에서 사용할 수 없습니다(NPR-33167).
 
 * 스마트 자르기 프로필이 있는 폴더에서 PDF에 대한 렌디션 레일을 열 때 로그에 예외가 관찰됩니다(CQ-4294201).
 
-* Image Presets do not publish, if [!UICONTROL Dynamic Media sync mode] is disabled by default on Experience Manager with Dynamic Media Scene7 runmode (CQ-4294200).
+* Experience Manager의 Dynamic Media Scene7 실행 모드에서 기본적으로 [!UICONTROL Dynamic Media 동기화 모드]가 비활성화된 경우 이미지 사전 설정이 게시되지 않습니다(CQ-4294200).
 
 * 벌크 업로드 중 자산 처리가 중단되고 워크플로우 인스턴스에 DAM 업데이트 자산의 중단 인스턴스가 표시됩니다(CQ-4293916).
 
-* Experience Manager에 Dynamic Media 구성을 만드는 것은 작동하지만 사용자 인터페이스에서 저장을 선택하면 아무런 변화가 없습니다(CQ-4292442).
+* Experience Manager에서 Dynamic Media 구성 만들기가 작동하지만 사용자 인터페이스에서 저장을 선택하면 아무 일도 발생하지 않습니다(CQ-4292442).
 
-* Safari/Mac에서 F4V 비디오 에셋 미리 보기가 점진적 재생에서 작동하지 않습니다(CQ-4289844).
+* Safari/Mac에서 F4V 비디오 자산 미리 보기가 점진적 재생에서 작동하지 않습니다(CQ-4289844).
 
 * 이름에 점 `.` 문자가 있는 상위 폴더의 자산을 스마트 자르기하면 추가 폴더가 만들어집니다(CQ-4289337).
 
@@ -231,7 +231,7 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 
    * 큰 바이너리를 Dynamic Media 이미지 처리 서버로 업로드하는 데 시간이 너무 오래 걸립니다.
 
-   * Dynamic Media Scene7 아키텍처로 인해 Experience Manager에서 축소판 생성 시간이 증가합니다.
+   * Dynamic Media Scene7 아키텍처로 인해 Experience Manager에서 축소판 생성 시간이 늘어납니다.
 
 * 자산 수가 많은 고객의 경우 Dynamic Media Scene7 마이그레이션 문제가 발생합니다(CQ-4279206).
 
@@ -242,11 +242,11 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 ### 플랫폼 {#platform-6550}
 
 * `sling:match` 맵 항목이 `/etc/maps`에 작성되지 않으면 [!DNL Sling] 필터가 호출되지 않습니다(NPR-33362).
-* Experience Manager crashes due to segmentation fault with [!DNL Apache Lucene] (NPR-32988).
-* [!DNL Jackson] Experience Manager uberjar 파일에 코어 패키지가 없습니다(NPR-32848).
-* CRXDE Lite does not load content for users without read permission on the `jcr:primaryType` property for a node (NPR-32611).
-* [!DNL Granite] 유지 관리 작업 스케줄러는 Experience Manager 배포 시 너무 자주 다시 초기화됩니다(CQ-4294627).
-* 예를 들어 7시간 동안 SQL 쿼리가 실행될 때 Experience Manager이 응답을 중지합니다(NPR-33044).
+* [!DNL Apache Lucene]의 세그먼트 문제로 인해 Experience Manager에서 충돌이 발생합니다(NPR-32988).
+* Experience Manager uberjar 파일에 [!DNL Jackson] 코어 패키지가 없습니다(NPR-32848).
+* CRXDE Lite는 노드의 `jcr:primaryType` 속성에 대한 읽기 권한이 없는 사용자에 대한 컨텐츠를 로드하지 않습니다(NPR-32611).
+* [!DNL Granite] 유지 관리 작업 스케줄러가 Experience Manager 배포 시 너무 자주 다시 초기화됩니다(CQ-4294627).
+* SQL 쿼리가 오래 실행되면(예: 7시간) Experience Manager가 응답하지 않습니다(NPR-33044).
 
 ### 사용자 인터페이스 {#ui-6550}
 
@@ -260,14 +260,14 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 * Adobe Target 구성 요소가 있는 페이지가 게시되면 내부 캐시가 지워집니다(NPR-33162).
 * Adobe Target과의 통합이 [!DNL Windows Internet Explorer] 11에서 작동하지 않습니다(NPR-33111).
 * Adobe Target을 구성할 때 [!UICONTROL 회사] 및 [!UICONTROL 보고서 세트] 필드가 보고 소스 선택 시 표시되지 않습니다(NPR-32502).
-* When exporting [!DNL Experience Fragments] using Adobe I/O, metadata like Source Product is not exported into Adobe Target (NPR-32159).
+* Adobe I/O를 사용하여 [!DNL Experience Fragments]을 내보낼 때 소스 제품과 같은 메타 데이터가 Adobe Target으로 내보내지지 않습니다(NPR-32159).
 * 로컬 Experience Manager 관리 그룹의 승인된 IMS 사용자는 IMS 구성을 만들거나 수정할 수 없습니다(NPR-33045).
 * Adobe Launch 구성 페이지에 모든 레코드가 표시되지 않습니다(NPR-33011).
 * 컨텐츠 작성자 그룹의 사용자는 JavaScript 오류로 인해 Adobe Target 구성 요소의 속성을 편집할 수 없습니다(NPR-32996).
 
 ### 번역 프로젝트 {#translation-6550}
 
-* 번역된 태그는 타사 번역 서비스에서 Experience Manager으로 가져올 수 없습니다(NPR-33154).
+* 번역된 태그는 타사 번역 서비스에서 Experience Manager로 가져올 수 없습니다(NPR-33154).
 * 번역 구성 페이지에는 변환에 사용한 것과 다른 잘못된 번역 공급자가 표시됩니다(NPR-32971).
 * 기존 번역 프로젝트에 경험 조각 폴더를 추가하면 새 프로젝트가 만들어집니다(NPR-32843).
 * 번역 작업 실행 시 로그에 `NullPointerException` 오류가 표시됩니다(NPR-32628).
@@ -281,7 +281,7 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 ### [!DNL Brand Portal] {#assets-brand-portal-6550}
 
 * [!DNL Brand Portal]에서 게시된 메타데이터 스키마를 제거하면 오류가 발생합니다(CQ-4292063).
-* If an administrator configures [!DNL Experience Manager Assets] 6.5.4 with Brand Portal via Adobe Developer Console, the [!DNL Brand Portal] user is not able to publish a contribution folder&#39;s asset from [!DNL Brand Portal] to [!DNL Experience Manager] (NPR-33046).
+* 관리자가 Adobe 개발자 콘솔을 통해 Brand Portal로 [!DNL Experience Manager Assets] 6.5.4를 구성하는 경우 [!DNL Brand Portal] 사용자는 기여 폴더의 자산을 [!DNL Brand Portal]에서 [!DNL Experience Manager]에 게시할 수 없습니다(NPR-33046).
 * 충돌을 일으키는 상위 폴더가 중복 복제됩니다(NPR-33001).
 
 ### [!DNL Communities] {#communities-6550}
@@ -290,7 +290,7 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 * [!UICONTROL 활동 스트림] 페이지 액세스 시 오류가 발생합니다(NPR-33146).
 * 작성자 인스턴스에서 삭제된 그룹은 일부 게시 인스턴스에서 제거되지 않습니다(NPR-33199).
 * 작성자는 새 그룹을 만든 후 [!DNL Internet Explorer] 11의 [!UICONTROL 커뮤니티 그룹] 섹션으로 리디렉션되지 않습니다(NPR-33205).
-* Experience Manager 받은 편지함에서 메시지를 액세스해도 메시지의 상태가 읽음으로 변경되지 않습니다(NPR-32764).
+* Experience Manager 받은 편지함의 메시지에 액세스해도 메시지의 상태가 읽음으로 변경되지 않습니다(NPR-32764).
 * [!DNL Communities] 그룹을 편집하고 썸네일 이미지를 변경해도 그룹 썸네일 이미지가 업데이트되지 않습니다(NPR-32599). 
 * 사용자가 커뮤니티의 다른 사용자에게 이메일을 보낼 수 없습니다(NPR-32598).
 * 사용자가 페이지를 새로 고칠 때까지 제출된 블로그가 표시되지 않습니다(NPR-32391).
@@ -299,13 +299,13 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 ### 워크플로우 {#workflow-6550}
 
 * 왼쪽 레일의 [!UICONTROL 타임라인] 옵션을 로드하는 데 예상보다 시간이 더 걸립니다(NPR-32851).
-* Experience Manager 인스턴스를 다시 시작한 후 컬렉션에 대한 검토 작업에 대한 이메일에 잘못된 페이로드 링크(NPR-32774)가 포함되어 있습니다.
+* Experience Manager 인스턴스를 다시 시작하면 컬렉션에 대한 검토 작업 이메일에 잘못된 페이로드 링크가 포함되어 있습니다(NPR-32774).
 
 ### [!DNL Forms] {#forms-6550}
 
 >[!NOTE]
 >
->Experience Manager Service Pack does not include fixes for [!DNL Forms]. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치](#install-aem-forms-jee-installer)를 참조하십시오.
+>Experience Manager 서비스 팩에는 [!DNL Forms] 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 AEM Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치](#install-aem-forms-jee-installer)를 참조하십시오.
 
 * 통신 관리: 대상 영역의 자산 순서는 편지를 제출한 후 섞입니다(NPR-33359, NPR-33153).
 * 적응형 양식: 사용자가 적응형 양식을 편집할 때 [!UICONTROL 페이지 정보] 메뉴에서 사용할 수 있는 [!UICONTROL 워크플로우 시작] 옵션이 작동하지 않습니다(NPR-33004).
@@ -326,37 +326,37 @@ Experience Manager Assets의 **액세스 가능성이 개선되었습니다**
 
 **설치 요구 사항**
 
-* AEM 6.5.5.0 requires AEM 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
-* 서비스 팩 다운로드는 Adobe [Software Distribution에서 다운로드할 수 있습니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* AEM 6.5.5.0을 사용하려면 AEM 6.5가 필요합니다. 세부 지침은[업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
+* 서비스 팩은 Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 다운로드할 수 있습니다.
 * MongoDB 및 여러 인스턴스가 포함된 배포에서 패키지 관리자를 사용하여 작성자 인스턴스 중 하나에 AEM 6.5.5.0을 설치합니다.
 * 설치하기 전에 AEM 인스턴스의 스냅샷 또는 새 백업을 만듭니다.
 * 설치하기 전에 인스턴스를 다시 시작합니다. 이 작업은 인스턴스가 여전히 업데이트 모드인 경우(및 인스턴스가 이전 버전에서 업데이트된 경우)에만 필요하지만 인스턴스가 오랫동안 실행 중인 경우 권장됩니다.
 
 >[!NOTE]
 >
->Adobe에서는 Adobe Experience Manager 6.5.5.0 패키지를 제거하거나 제거할 것을 권장하지 않습니다.
+>Adobe Experience Manager 6.5.5.0 패키지를 삭제하거나 제거하지 않는 것이 좋습니다.
 
 ### 서비스 팩 설치 {#install-service-pack}
 
 기존 Adobe Experience Manager 6.5 인스턴스에 서비스 팩을 설치하려면 다음 단계를 수행하십시오.
 
-1. 패키지 공유 또는 소프트웨어 배포 [에서](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0) 서비스 팩 [을 다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip).
+1. [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0) 또는 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip)에서 서비스 팩을 다운로드하십시오.
 
-1. 패키지 관리자를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다. 사용 방법에 대해서는 [패키지 관리자를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. 패키지 관리자를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다. 사용 방법은 [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 참조하십시오.
 
-1. Select the package and click **[!UICONTROL Install]**.
+1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
 >[!NOTE]
 >
->패키지 관리자 UI에 대한 대화 상자가 서비스 팩을 설치하는 동안 종료되는 경우가 있습니다. 배포에 액세스하기 전에 오류 로그가 안정될 때까지 기다리는 것이 좋습니다. 업데이터 번들 제거와 관련된 특정 로그를 기다린 후 설치가 성공했는지 확인합니다. 일반적으로 이러한 작업은 [!DNL Safari] 발생하지만 모든 브라우저에서 간헐적으로 발생할 수 있습니다.
+>패키지 관리자 UI에 대한 대화 상자가 서비스 팩을 설치하는 동안 종료되는 경우가 있습니다. 배포에 액세스하기 전에 오류 로그가 안정될 때까지 기다리는 것이 좋습니다. 업데이터 번들 제거와 관련된 특정 로그를 기다린 후 설치가 성공했는지 확인합니다. 일반적으로 이러한 작업은 [!DNL Safari]에서 발생하지만 모든 브라우저에서 간헐적으로 발생할 수 있습니다.
 
 **자동 설치**
 
 작업 인스턴스에 Adobe Experience Manager 6.5.5.0을 자동으로 설치하는 두 가지 방법이 있습니다.
 
-A. Place the package into `../crx-quickstart/install` folder when the server is available online. 패키지가 자동으로 설치됩니다.
+A. 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다. 패키지가 자동으로 설치됩니다.
 
-B. 패키지 관리자에서 [HTTP API를 사용합니다](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html). 중첩된 패키지가 설치되도록 `cmd=install&recursive=true` 사용합니다.
+B. [패키지 관리자에서 HTTP API](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html)를 사용합니다. 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
 
 >[!NOTE]
 >
@@ -364,37 +364,37 @@ B. 패키지 관리자에서 [HTTP API를 사용합니다](https://docs.adobe.co
 
 **설치 확인**
 
-1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.5.0)` under [!UICONTROL Installed Products].
+1. 제품 정보 페이지(`/system/console/productinfo`)에는 [!UICONTROL 설치된 제품] 아래에 업데이트된 버전 문자열 `Adobe Experience Manager (6.5.5.0)`이 표시됩니다.
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
-1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.10.6 or higher (Use Web Console: `/system/console/bundles`).
+1. OSGI 번들 `org.apache.jackrabbit.oak-core`는 버전 1.10.6 이상에 있습니다(웹 콘솔 사용: `/system/console/bundles`).
 
-이번 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항을 참조하십시오](/help/sites-deploying/technical-requirements.md).
+이번 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하십시오.
 
 ### Adobe Experience Manager Forms 추가 기능 패키지 설치 {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->AEM Forms를 사용하지 않는 경우 건너뜁니다. Adobe Experience Manager 양식의 수정 사항은 별도의 추가 기능 패키지를 통해 제공됩니다.
+>AEM Forms를 사용하지 않는 경우 건너뜁니다. Adobe Experience Manager Forms의 수정 사항은 별도의 추가 기능 패키지를 통해 전달됩니다.
 
 1. Adobe Experience Manager 서비스 팩을 설치했는지 확인합니다.
 1. 운영 체제에 대한 [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
 1. [AEM Forms 추가 기능 패키지 설치](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
 
-### JEE에 Adobe Experience Manager 양식 설치 {#install-aem-forms-jee-installer}
+### JEE에 Adobe Experience Manager Forms 설치 {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. JEE의 Adobe Experience Manager 양식 수정 사항은 별도의 설치 관리자를 통해 제공됩니다.
+>JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 프로그램을 통해 JEE의 Adobe Experience Manager Forms 수정 사항이 전달됩니다.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes for patch 0014](https://helpx.adobe.com/kr/aem-forms/quick-fixes/6-5/jee-patch-0014.html).
+JEE의 Experience Manager Forms용 누적 설치 프로그램 설치 및 배포 후 구성에 대한 자세한 내용은 [패치 0014에 대한 릴리스 노트](https://helpx.adobe.com/kr/aem-forms/quick-fixes/6-5/jee-patch-0014.html)를 참조하십시오.
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.5.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/).
+Experience Manager 6.5.5.0용 UberJar는 [Adobe Public Maven 저장소](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/)에서 사용할 수 있습니다.
 
-To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
+Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/help/sites-developing/ht-projects-maven.md)을 참조하여 프로젝트 POM에 다음 종속성을 포함하십시오.
 
 ```shell
 <dependency>
@@ -414,7 +414,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 
 | 영역 | 기능 | 대체 |
 |---|---|---|
-| 통합 | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. AEM 6.5에서 Adobe IMS 및 I/O를 통해 인증을 사용하는 Target 표준 API를 지원하고 분석 및 개인 설정을 위해 AEM 페이지를 계측하는 Adobe Launch의 늘어나는 역할을 지원하도록 AEM 및 Target 통합이 업데이트되어 옵트인 마법사가 기능상 무관해졌습니다. | 해당 AEM cloud services을 통해 시스템 연결, Adobe IMS 인증 및 Adobe I/O 통합을 구성합니다. |
+| 통합 | **[!UICONTROL AEM 클라우드 서비스 옵트인]** 화면은 더 이상 사용되지 않습니다. AEM 6.5에서 Adobe IMS 및 I/O를 통해 인증을 사용하는 Target 표준 API를 지원하고 분석 및 개인 설정을 위해 AEM 페이지를 계측하는 Adobe Launch의 늘어나는 역할을 지원하도록 AEM 및 Target 통합이 업데이트되어 옵트인 마법사가 기능상 무관해졌습니다. | 해당 AEM 클라우드 서비스를 통해 시스템 연결, Adobe IMS 인증 및 Adobe I/O 통합 구성. |
 
 ## 알려진 문제 {#known-issues}
 
