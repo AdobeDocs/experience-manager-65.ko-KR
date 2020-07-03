@@ -3,18 +3,18 @@ title: Adobe Experience Manager 6.5 서비스 팩 5의 새로운 기능
 description: Adobe Experience Manager 6.5 서비스 팩 5의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1849'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Manager 6.5 서비스 팩 5의 새로운 기능 {#aem-whats-new-service-pack-5}
 
-Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고객의 요청에 따라 향상된 기능, 성능, 안정성 및 보안 개선 사항을 제공합니다. 분기별 가용성을 통해 새로운 기능과 혁신적인 기능을 손쉽게 이용하고 채택할 수 있습니다.
+Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고객의 요청에 따라 향상된 기능, 성능, 안정성 및 보안 개선 사항을 제공합니다. 분기별 출시되어 새로운 기능과 혁신적인 기능에 쉽게 액세스하고 그러한 기능을 채택할 수 있습니다.
 
 이 문서에서는 최신 6.5 서비스 팩에 포함된 기능, [이전 6.5 서비스 팩에 포함된 주요 기능](#key-features-previous-service-packs) 및 [Experience Manager 6.5.4.0 이후 주요 릴리스](#key-releases-since-last-sp) 중 일부를 소개합니다.
 
@@ -26,7 +26,7 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 
 * 키보드 탐색 중 유저 인터페이스 포커스가 개선되었습니다.
 
-* 다양한 유저 인터페이스 요소의 대비 비율이 개선되었습니다.
+* 다양한 사용자 인터페이스 요소의 대비 비율이 개선되었습니다.
 
 * 페이지 이미지에 대한 대체 속성의 일관성 개선.
 
@@ -40,47 +40,47 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 
 * 페이지 트리를 복사하거나 붙여넣을 때 이제 루트 페이지를 붙여넣거나 루트 페이지를 트리의 하위 페이지와 함께 붙여넣을 수 있습니다.
 
-* [!DNL Adobe Experience Manager Experience Fragments] 이제 작업 [!DNL Adobe Target] 영역으로 내보내면 고유한 오퍼 유형과 오퍼 소스로 표시됩니다 [!DNL Target].
+* [!DNL Adobe Target] 작업 공간으로 내보낸 [!DNL Adobe Experience Manager Experience Fragments]는 이제 [!DNL Target]에서 고유한 오퍼 유형 및 오퍼 소스로 표시됩니다.
 
-* 다중 사이트 관리자 - 이제 구성 요소가 소스 페이지에서 삭제된 경우 게시된 페이지에서 구성 요소가 삭제됩니다.
+* 다중 사이트 관리자 - 이제 구성 요소가 소스 페이지에서 삭제되는 경우 게시 트리거가 게시된 페이지에서 구성 요소를 삭제합니다.
 
-* Multi Site Manager - When the name of a local component in a [!UICONTROL Live Copy] is identical to the name of a component in the blueprint and the component is rolled out from the blueprint, then the term `_msm_moved` is now added to the name of the local component.
+* 다중 사이트 관리자 - [!UICONTROL Live Copy]의 로컬 구성 요소의 이름이 블루프린트에서 구성 요소의 이름과 동일하고 이 구성 요소가 블루프린트에서 롤아웃되면, 이제 `_msm_moved` 용어가 로컬 구성 요소의 이름에 성공적으로 추가됩니다.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-### Accessibility enhancements in [!DNL Assets] {#assets-accessibility}
+### [!DNL Assets]에서의 액세스 가능성 개선 {#assets-accessibility}
 
-[!DNL Experience Manager Assets] 는 이제 WCAG(Web Content Accessibility Guidelines)를 준수하여 보다 쉽게 액세스할 수 있습니다. 다음 개선 사항으로 인해 액세서빌러티가 개선되었습니다.
+이제 WCAG(Web Content Accessibility Guidelines)를 준수하여 [!DNL Experience Manager Assets]에 더 쉽게 액세스할 수 있습니다. 다음이 개선되어 액세스 가능성이 향상되었습니다.
 
-* 많은 유저 인터페이스 요소, 컨트롤, 페이지 및 대화 상자는 화면 판독기에 적합합니다.
+* 다양한 사용자 인터페이스 요소, 컨트롤, 페이지 및 대화 상자가 화면 판독기에 친숙한 형식으로 제공됩니다.
 
-* 키보드를 사용하여 많은 유저 인터페이스 요소, 컨트롤 및 입력 양식 필드에 액세스할 수 있습니다.
+* 다양한 인터페이스 요소, 컨트롤 및 입력 양식 필드에 키보드를 사용하여 액세스할 수 있습니다.
 
-* 일부 사용자 인터페이스 요소의 색상 및 대비가 업데이트되어 시력이 제한된 사용자 또는 색상에 대한 인식이 없는 사용자가 이러한 사용자 인터페이스 요소를 구분할 수 있습니다. 예를 들어 별 등급 아이콘 색상(예: 자산 [!UICONTROL 속성] 또는 카드 보기에서 [!UICONTROL 고급] 탭 의 [!UICONTROL 등급] 섹션)이 적절한 대비를 위해 변경되었습니다.
+* 일부 사용자 인터페이스 요소의 색상 및 대비가 업데이트되어 시력이 제한된 사용자 또는 색상을 인식하지 못하는 사용자가 이러한 사용자 인터페이스 요소를 구분할 수 있습니다. 예를 들어 별 등급 아이콘 색상(예: 자산 [!UICONTROL 속성] 또는 카드 보기에서 [!UICONTROL 고급] 탭 의 [!UICONTROL 등급] 섹션)이 적절한 대비를 위해 변경되었습니다.
 
-   ![향상된 대비 등급 아이콘](assets/star-rating-icons.png)
+   ![등급 아이콘의 대비 향상](assets/star-rating-icons.png)
 
-### Enhanced exception handling {#exception-handling}
+### 향상된 예외 처리 {#exception-handling}
 
 [!DNL Assets] 사용자 인터페이스 흐름의 예외 처리가 향상되었습니다. 자산에 차원에 대한 유형이 없는 경우, 관찰된 예외가 로그 파일에 기록됩니다.
 
-### 3D 자산 지원 [!DNL Dynamic Media] {#support-for-3d}
+### [!DNL Dynamic Media]에서 3D 자산 지원 {#support-for-3d}
 
-Support for 3D images in [!DNL Dynamic Media] enables customers to publish and add 3D content to web pages and applications. 지원에는 다음이 포함됩니다.
+[!DNL Dynamic Media]의 3D 이미지 지원을 통해 고객은 웹 페이지 및 애플리케이션에 3D 컨텐츠를 게시하고 추가할 수 있습니다. 지원에는 다음이 포함됩니다.
 
 * 일반적인 3D 자산 형식을 게시하고 웹 페이지 및 기타 애플리케이션에서 사용할 수 있는 자산 URL을 생성합니다.
 
-* 게시된 3D 에셋을 대화식으로 볼 수 있는 3D Web Viewer [!DNL Adobe Dimension]를 기반으로 합니다.
+* 게시된 3D 자산을 대화식으로 볼 수 있도록 해주는 [!DNL Adobe Dimension] 제공 3D Web Viewer,
 
-* WCM 구성 요소를 사용하여 [!DNL Experience Manager Sites] 페이지에서 일반적인 3D 자산을 [!DNL Sites] 게시하고 볼 수 있습니다.
+* [!DNL Sites] WCM 구성 요소를 사용하여 [!DNL Experience Manager Sites] 페이지에서 일반적인 3D 자산을 게시하고 볼 수 있습니다.
 
 ## Adobe Experience Manager Forms {#aem-forms}
 
 ### Adobe Experience Manager 받은 편지함 열 사용자 지정 {#customize-aem-inbox-columns}
 
-You can customize an [!DNL Experience Manager] Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow. 또는 그룹 `administrators` 의 `workflow-administrators` 구성원은 열을 사용자 지정할 수 있습니다.
+[!DNL Experience Manager] 받은 편지함을 사용자 지정하여 열의 기본 제목을 변경하고, 열의 위치를 다시 정렬하며, 워크플로우의 데이터를 기반으로 추가 열을 표시할 수 있습니다. 또는 `administrators` 또는 `workflow-administrators` 그룹의 구성원은 열을 사용자 지정할 수 있습니다.
 
-![Experience Manager 받은 편지함 열 사용자 정의](assets/customize-columns.gif)
+![Experience Manager 받은 편지함 열 사용자 지정](assets/customize-columns.gif)
 
 ### 대화형 커뮤니케이션을 초안으로 저장 {#save-as-draft}
 
@@ -90,15 +90,15 @@ You can customize an [!DNL Experience Manager] Inbox to change the default title
 
 ### [!DNL Oracle WebLogic] 애플리케이션 서버 지원 {#weblogic-support}
 
-Adobe Experience Manager 양식에 대한 지원이 JEE에서 [!DNL Oracle WebLogic 12] 추가되었습니다. You can upgrade from a previous version or set up a new Experience Manager 6.5 Forms on JEE server on [!DNL Oracle WebLogic] 12.2.1.4 and later. 이후에 버전이 약간 변경되었으며, 여기서 12.2.1.x의 x는 버전 번호로 대체됩니다.
+Adobe Experience Manager Forms에 JEE에서 Adobe Experience Manager Forms에 대한 [!DNL Oracle WebLogic 12] 지원이 추가되었습니다. 이전 버전에서 업그레이드하거나 [!DNL Oracle WebLogic] 12.2.1.4 이상의 JEE 서버에서 새 Experience Manager 6.5 Forms를 설정할 수 있습니다. 이후에 버전이 약간 변경되었으며, 여기서 12.2.1.x의 x는 버전 번호로 대체됩니다.
 
 ### 액세스 가능성 향상 {#accessibility-improvements}
 
-Adobe Experience Manager 양식에는 다음과 같은 액세서빌러티 개선 사항이 포함됩니다.
+Adobe Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었습니다.
 
 * 사용자가 적응형 양식을 HTML 양식으로 미리 보면 [!UICONTROL 스크리블 서명] 필드에 탭 포커스가 유지됩니다.
 
-* The error messages displayed on submitting an adaptive form now contain the `aria-describedBy` attribute. 이 속성은 오류 메시지에서 참조되는 필드에 첨부됩니다. `aria-describedby` 속성은 개체를 설명하는 요소의 ID를 나타냅니다. 위젯 또는 그룹과 이를 설명하는 텍스트 간의 관계를 설정하는 데 도움이 됩니다.
+* 이제 적응형 양식 제출 시 표시되는 오류 메시지에 `aria-describedBy` 속성이 포함됩니다. 이 속성은 오류 메시지에서 참조되는 필드에 첨부됩니다. `aria-describedby` 속성은 개체를 설명하는 요소의 ID를 나타냅니다. 위젯 또는 그룹과 이를 설명하는 텍스트 간의 관계를 설정하는 데 도움이 됩니다.
 
 * 적응형 양식에 필수 필드가 있으면 ARIA 액세스 가능성 스키마의 해당 필드에 대해 필수 속성이 `True`로 설정됩니다.
 
@@ -108,39 +108,39 @@ Adobe Experience Manager 양식에는 다음과 같은 액세서빌러티 개선
 
 ### 기타 주요 개선 사항 {#other-improvements}
 
-* Experience Manager 6.5 Forms on JEE Document Security is now based on [!DNL Apache Struts 2].
+* JEE Document Security의 Experience Manager 6.5 Forms는 이제 [!DNL Apache Struts 2]를 기반으로 합니다.
 
 * [!DNL Oracle Real Applications Cluster (RAC) 19c]에 대한 지원이 추가되었습니다.
 
-## Key features in previous Experience Manager 6.5 Service Packs {#key-features-previous-service-packs}
+## 이전 Experience Manager 6.5 서비스 팩의 주요 기능 {#key-features-previous-service-packs}
 
 ### Experience Manager Sites {#aem-sites-previous-service-packs}
 
-#### Style System enhancements (6.5.4.0) {#style-system-enhancements}
+#### 스타일 시스템 향상(6.5.4.0) {#style-system-enhancements}
 
 이제 향상된 스타일 시스템을 사용하여 구성 요소 대화 상자 내에서 스타일을 선택할 수 있습니다.
 
 #### 다양한 영역의 성능 개선(6.5.4.0) {#performance-improvements}
 
-* 사이트(`contexthub.kernel.js`) 내에서 ContextHub를 로드하고 초기화하는 데 걸리는 시간이 줄었습니다. 따라서 사이트 방문 중에 페이지 로드 속도가 빨라졌습니다.
+* 사이트(`contexthub.kernel.js`) 내에서 ContextHub를 로드하고 초기화하는 데 걸리는 시간이 단축되었습니다. 따라서 사이트 방문 중에 페이지 로드 속도가 빨라졌습니다.
 
-* Reduced the time to refresh a page after dragging [!DNL Experience Fragments] to [!DNL Sites] Page Editor.
+* [!DNL Experience Fragments]를 [!DNL Sites] 페이지 편집기로 드래그한 후 페이지를 새로 고치는 시간이 단축되었습니다.
 
-* Shortened the load time for entries on a [!DNL Sites] page with more than 200 live copies in **[!UICONTROL Live Copy Overview]**.
+* **[!UICONTROL Live Copy 개요]**&#x200B;에서 Live Copy가 200개 이상인 [!DNL Sites] 페이지의 항목 로드 시간이 줄었습니다.
 
-* 불완전하거나 잘못된 URL의 처리가 개선되었습니다. 이러한 URL을 사용하면 템플릿 편집기의 속도가 느려질 수 있습니다.
+* 불완전하거나 잘못된 URL의 처리가 개선되었습니다. 그러한 URL을 사용하면 템플릿 편집기의 속도가 느려질 수 있습니다.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
 
-#### 구성 [!DNL Experience Manager Assets] ( [!DNL Brand Portal] 6.5.4.0) {#configure-assets-bp}
+#### [!DNL Brand Portal](6.5.4.0){#configure-assets-bp}을 사용한 [!DNL Experience Manager Assets] 구성
 
-에서 사이의 인증 채널 [!DNL Experience Manager Assets] 이 [!DNL Brand Portal] 변경되었습니다. Earlier, [!DNL Brand Portal] was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. [!DNL Experience Manager Assets] 이제 Adobe I/O를 [!DNL Brand Portal] 통해 임차인 인증을 위해 IMS 토큰을 조달합니다 [!DNL Brand Portal] .
+[!DNL Experience Manager Assets]과 [!DNL Brand Portal] 사이의 인증 채널이 변경되었습니다. 이전에는 [!DNL Brand Portal]이 기존 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 인증을 위해 IMS 액세스 토큰을 가져오는 데 JWT 토큰 교환을 사용합니다. 이제 [!DNL Experience Manager Assets]은 Adobe I/O를 통해 [!DNL Brand Portal]에 구성되며, [!DNL Brand Portal]은 테넌트의 인증을 위해 IMS 토큰을 받습니다.
 
-The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] are different depending on your [!DNL Experience Manager] version, and whether you are configuring for the first time, or upgrading the existing configurations. See [Configure Experience Manager Assets with Brand Portal](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
+[!DNL Brand Portal]에서 [!DNL Experience Manager Assets]을 구성하는 단계는 [!DNL Experience Manager] 버전과 처음 구성하는 것인지 아니면 기존 구성을 업그레이드하는 것인지에 따라 다릅니다. 자세한 내용은 [Brand Portal에서 Experience Manager Assets 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)을 참조하십시오.
 
 #### 액세스 가능성 개선(6.5.4.0) {#accessibility-enhancements}
 
-[!DNL Experience Manager Assets] 에는 다음과 같은 액세서빌러티 개선 사항이 포함됩니다.
+[!DNL Experience Manager Assets]에서는 다음과 같은 액세스 가능성이 개선되었습니다.
 
 * 키보드의 화살표 키를 사용하여 확대/축소된 이미지 내에서 영역을 이동할 수 있습니다. 자세한 내용은 [키보드 키만 사용하여 자산 미리 보기](../assets/managing-assets-touch-ui.md#previewing-assets)를 참조하십시오.
 
@@ -149,11 +149,11 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 * 날짜 및 시간 형식 제약 조건은 사용자가 키보드를 사용하여 날짜를 올바른 형식으로 입력할 수 있도록 날짜 필드의 필드 레이블에 제공됩니다.
 예, `On Time (MM-DD-YYYY HH:mm)`. 여기서 MM은 두 자리 형식의 월, YYYY는 연도, DD는 두 자리 형식의 날짜, HH는 24시간 군대 형식의 시간, mm은 분입니다.
 
-* 이제 화면 판독기에서 선택한 태그의 수와 함께 선택한 태그를 제거할 `X` 기호를 발표합니다.
+* 이제 화면 판독기에 `X` 기호가 표시되어 선택한 태그 개수와 함께 선택한 태그를 제거합니다.
 
-#### Visual search for [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
+#### [!DNL Adobe Experience Manager Assets](6.5.2.0) {#visual-search} 시각적 검색
 
-[!DNL Assets] 사용자는 시각적으로 유사한 이미지를 검색할 수 있습니다. Experience Manager은 사용자가 선택한 이미지와 유사한 DAM 저장소의 스마트 태그 이미지를 표시합니다. [시각적 검색](../assets/search-assets.md)을 참조하십시오.
+[!DNL Assets] 사용자는 시각적으로 유사한 이미지를 검색할 수 있습니다. Experience Manager는 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다. [시각적 검색](../assets/search-assets.md)을 참조하십시오.
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
@@ -167,13 +167,13 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### Generate printable output in Experience Manager Forms workflows (6.5.4.0) {#generate-printable-output}
+#### Experience Manager Forms 워크플로우에서 인쇄 가능한 출력 생성(6.5.4.0) {#generate-printable-output}
 
 인쇄 가능한 출력 생성 워크플로우 단계를 통해 소스 템플릿 파일을 데이터 파일과 통합할 수 있습니다. 이 통합을 통해 템플릿 파일의 다른 복사본을 인쇄하거나 저장할 수 있습니다. 이 단계에서는 PCL, PostScript, ZPL, IPL, TPCL 또는 DPL 출력을 생성합니다. 이 기능에 대한 자세한 내용은 [OSGi의 양식 중심의 워크플로우 - 단계 참조](../forms/using/aem-forms-workflow-step-reference.md)를 참조하십시오.
 
 ![인쇄 가능한 출력 생성](assets/generate-print-output-step.gif)
 
-#### Multi-column support for adaptive forms and interactive communications in Layout mode (6.5.4.0) {#multi-column-adaptive-forms}
+#### 레이아웃 모드에서 적응형 양식 및 대화형 커뮤니케이션에 대한 다중 열 지원(6.5.4.0) {#multi-column-adaptive-forms}
 
 이제 적용형 양식 및 대화형 커뮤니케이션에서 패널의 열 수를 정의할 수 있습니다. 레이아웃 모드로 전환하여 새로운 다중 열 옵션을 사용합니다. 자세한 내용은 [레이아웃 모드를 사용하여 구성 요소의크기 조정](../forms/using/resize-using-layout-mode.md)을 참조하십시오.
 
@@ -187,7 +187,7 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 * 헤더에서 사용할 수 있는 탐색 링크 표시 제어.
 
-The Admin Control option is visible only to the members of the `administrators` or `workflow-administrators` group. 이 기능에 대한 자세한 내용은 [받은 편지함](../sites-authoring/inbox.md)을 참조하십시오.
+관리자 컨트롤 옵션은 `administrators` 또는 `workflow-administrators` 그룹의 구성원에게만 표시됩니다. 이 기능에 대한 자세한 내용은 [받은 편지함](../sites-authoring/inbox.md)을 참조하십시오.
 
 #### HTML5 양식에서 리치 텍스트 지원(6.5.4.0) {#rich-text-support}
 
@@ -201,7 +201,7 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 
 * 적용형 양식의 각 페이지에는 이제 제목과 기본 랜드마크 레이블이 각각 하나씩 포함되어 있습니다.
 
-#### Share and request access to Inbox items of an Experience Manager Forms user (6.5.3.0) {#share-request-access}
+#### Experience Manager Forms 사용자의 받은 편지함 항목 공유 및 액세스 요청(6.5.3.0) {#share-request-access}
 
 받은 편지함 항목을 다른 사용자와 공유할 수 있습니다. 다른 사용자가 받은 편지함 항목에 액세스할 수 있게 되면 해당 사용자는 소유권을 주장하고 공유 항목에 적절한 작업을 수행할 수 있습니다. 마찬가지로 다른 사용자의 받은 편지함 항목에 대한 액세스를 요청할 수 있습니다. [사용자의 받은 편지함 항목 공유 및 액세스 요청](../forms/using/configure-shared-queues-osgi.md)을 참조하십시오.
 
@@ -216,19 +216,19 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 
 ## Adobe Experience Manager 6.5 SP4 이후 주요 릴리스 {#key-releases-since-last-sp}
 
-2020년 3월 5일부터 2020년 6월 4일까지 Adobe는 서비스 팩 및 누적 수정 팩 외에 다음과 같은 내용을 발표했습니다.
+2020년 3월 5일부터 2020년 6월 4일까지 Adobe는 서비스 팩 및 누적 수정 팩 외에 다음과 같은 사항을 발표했습니다.
 
-* [소프트웨어 배포 포털은](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) Experience Manager 서비스 팩, 누적 수정 팩, 핫픽스 및 기능 팩을 다운로드할 수 있습니다.
+* [Software Distribution 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 Experience Manager 서비스 팩, 누적 수정 팩, 핫픽스 및 기능 팩을 다운로드할 수 있습니다.
 
-* [!DNL Adobe Experience Manager Cloud Manager] [2020.3.0](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html)및 [2020.5.0](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/release-notes/release-notes-current.html).
+* [!DNL Adobe Experience Manager Cloud Manager] [2020.3.0](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html) 및 [2020.5.0](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/release-notes/release-notes-current.html).
 
 * [Experience Manager 데스크탑 앱 2.0.2.0](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager 스크린: Feature Pack 202004](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
+* [Experience Manager Screens: 기능 팩 202004](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Manager 6.5 설명서](../user-guide/home.md)
->* [Adobe Experience Manager 6.5에 대한 일반 릴리스 노트](release-notes.md)
->* [Adobe Experience Manager 6.5용 서비스 팩 릴리스 노트](sp-release-notes.md)
+>* [Adobe Experience Manager 6.5의 일반적인 릴리스 노트](release-notes.md)
+>* [Adobe Experience Manager 6.5의 서비스 팩 릴리스 노트](sp-release-notes.md)
 
