@@ -2,11 +2,11 @@
 title: Adobe Experience Manager 6.5 이전 서비스 팩 릴리스 노트
 description: Adobe Experience Manager 6.5 서비스 팩 3 이하에 대한 릴리스 노트입니다.
 contentOwner: AK
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8093'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 90%
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
-Adobe Experience Manager 6.5.4.0은 **2019년 4월** 6.5 릴리스의 공식 출시 이후 릴리스된 새로운 기능, 주요 고객이 요청한 향상된 기능 및 성능, 안정성, 보안 개선 사항이 포함된 중요한 업데이트입니다. Adobe Experience Manager 6.5 위에 설치할 수 있습니다.
+Adobe Experience Manager 6.5.4.0은 **2019년 4월** 6.5 릴리스의 공식 출시 이후 릴리스된 새로운 기능, 주요 고객이 요청한 향상된 기능 및 성능, 안정성, 보안 개선 사항이 포함된 중요한 업데이트입니다. Adobe Experience Manager 6.5 맨 위에 설치할 수 있습니다.
 
-Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은 다음과 같습니다.
+Adobe Experience Manager 6.5.4.0에서 도입된 주요 기능 및 개선 사항은 다음과 같습니다.
 
-* 이제 Adobe Experience Manager 에셋이 Adobe I/O 콘솔을 통해 브랜드 포털로 구성됩니다.
+* 이제 Adobe Experience Manager Assets은 Adobe I/O 콘솔을 통해 Brand Portal에 구성됩니다.
 
-* A new [Generate printable Output](../forms/using/aem-forms-workflow-step-reference.md) step is now available for Adobe Experience Manager Forms workflows.
+* 이제 Adobe Experience Manager Forms 워크플로우에서 새로운 [인쇄 가능한 출력 생성](../forms/using/aem-forms-workflow-step-reference.md) 단계를 사용할 수 있습니다.
 
 * 적용형 양식 및 대화형 커뮤니케이션용 레이아웃 모드에 대한 [다중 열을 지원](../forms/using/resize-using-layout-mode.md)합니다.
 
@@ -37,13 +37,13 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 이제 SOAP 입력 또는 출력 및 복잡한 데이터 구조가 Dynamic Group 대체를 지원합니다.
 
-최신 서비스 팩에 포함된 기능 및 주요 특징 [의 전체 목록을 살펴보려면 Adobe Experience Manager 6.5 서비스 팩의 새로운 기능을 참조하십시오](new-features-latest-service-pack.md).
+최신 서비스 팩에 포함된 기능 및 주요 특징 의 전체 목록을 살펴보려면 [Adobe Experience Manager 6.5 서비스 팩의 새로운 기능](new-features-latest-service-pack.md)을 참조하십시오.
 
 ### 사이트 {#sites-fixes}
 
 * Adobe Experience Manager 사이트 페이지의 URL에 콜론(`:`) 또는 백분율 기호(`%`)가 포함되어 있으면 브라우저가 응답을 중단하고 CPU 사용 스파이크(NPR-32369, NPR-31918)가 발생합니다.
 
-* Experience Manager 사이트 페이지를 열어 편집하고 구성 요소를 복사해도 일부 자리 표시자에 대해 붙여넣기 작업을 사용할 수 없는 상태로 유지됩니다(NPR-32317).
+* Experience Manager Sites 페이지를 열어 편집하고 구성 요소를 복사하면 일부 자리 표시자에 대해 붙여넣기 작업을 사용할 수 없습니다(NPR-32317).
 
 * 게시 관리 마법사가 열리면 코어 구성 요소에 연결된 경험 구성 요소가 게시된 참조 목록에 표시되지 않습니다(NPR-32233).
 
@@ -51,7 +51,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 서버 시간과 컴퓨터 시간이 다른 시간대에 있는 경우 예약된 게시 시간은 Touch UI에 서버 시간을 표시하지만 클래식 UI에서는 시스템 시간이 표시됩니다(NPR-32077).
 
-* Experience Manager 사이트에서 URL에 접미사를 붙인 페이지를 열지 못했습니다(NPR-32072).
+* Experience Manager Sites에서 URL에 접미사가 붙은 페이지를 열지 못합니다(NPR-32072).
 
 * 사용자가 컨텐츠 조각을 편집하면 삭제된 컨텐츠 조각의 변형이 복원됩니다(NPR-32062).
 
@@ -125,7 +125,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 사용자가 Dynamic Media 클라이언트의 설정 편집기에서 변경하지 않은 경우 저장 버튼이 원격 세트를 가져오지 않습니다(CQ-4285690).
 
-* 지원되는 3D 모델을 Experience Manager으로 인제스트하는 경우 3D 자산 축소판은 도움이 되지 않습니다(CQ-4283701).
+* 지원되는 3D 모델을 Experience Manager로 수집할 때 3D 자산 축소판이 도움이 되지 않습니다(CQ-4283701).
 
 * 스마트 자르기 비디오 뷰어 사전 설정이 처리되지 않은 상태로 사전 설정 이름과 함께 배너 텍스트에 두 번 표시됩니다(CQ-4283517).
 
@@ -135,7 +135,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * Chrome 및 Safari 브라우저에서 다운로드 대화 상자에 있는 이메일 드롭다운에서 키보드 포커스가 멈춥니다(NPR-32067).
 
-* Experience Manager에 DM 클라우드 구성을 추가하려고 하는 동안 모든 콘텐츠 동기화 확인란이 기본적으로 활성화되어 있지 않습니다(CQ-4288533).
+* Experience Manager에서 DM 클라우드 구성을 추가하는 동안 모든 컨텐츠 동기화 확인란이 기본적으로 활성화되지 않습니다(CQ -4288533).
 
 ### 기본 UI {#foundation-ui-6540}
 
@@ -183,7 +183,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 ### 브랜드 포털 {#assets-brand-portal-6540}
 
-* Brand Portal users are not able to publish contribution folder assets to [!DNL Assets] on upgrading to Adobe I/O on Experience Manager 6.5.4 (CQDOC-15655). For an immediate fix on Experience Manager 6.5.4, it is recommended to [download the hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) and install on your author instance.
+* Brand Portal 사용자는 Experience Manager 6.5.4에서 Adobe I/O로 업그레이드할 때 기여도 폴더 자산을 [!DNL Assets]에 게시할 수 없습니다(CQDOC-15655). Experience Manager 6.5.4를 즉시 수정하려면 [핫픽스를 다운로드](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041)하고 작성자 인스턴스에 설치하는 것이 좋습니다.
 
 * 메타데이터 스키마 팝업 값은 자산 속성에 표시되지 않습니다(CQ-4283287).
 
@@ -213,7 +213,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 >[!NOTE]
 >
->Experience Manager 서비스 팩에는 Experience Manager 양식에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한 JEE의 Adobe Experience Manager 양식 수정 사항이 포함된 누적 설치 프로그램이 출시됩니다. 자세한 내용은 [Experience Manager Forms 추가 기능 설치](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) 및 [JEE에 Experience Manager Forms 설치](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)를 참조하십시오.
+>Experience Manager 서비스 팩에는 Experience Manager Forms에 대한 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 Forms 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 Adobe Experience Manager Forms에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [Experience Manager Forms 추가 기능 설치](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) 및 [JEE에 Experience Manager Forms 설치](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)를 참조하십시오.
 
 * 서신 관리: 게시 처리 워크플로우에 제출하면 편지에 추가 문자가 표시됩니다(NPR-32626).
 
@@ -225,13 +225,13 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 문서 서비스: 서비스 팩 2를 적용한 후 편지 및 일부 기타 페이지의 URL에 액세스하는 데 문제가 발생합니다(NPR-32508, NPR-32509).
 
-* Document Services: If the number of transactions on a server exceeds a specific limit, the HTML to PDF conversion fails and the file type settings are removed from [!DNL Forms] server (NPR-32204).
+* 문서 서비스: 서버의 트랜잭션 수가 특정 제한을 초과하는 경우 HTML을 PDF로 변환할 수 없고 [!DNL Forms] 서버에서 파일 유형 설정이 제거됩니다(NPR-32204).
 
 * 적용형 양식: WCAG2 레벨 AA 지침에 따라 브라우저 접근성 도구가 적용형 양식의 오류를 보고합니다(NPR-32312, NPR-32309, CQ-4285439).
 
 * 적용형 양식: Chrome 브라우저 접근성 도구가 모범 사례 오류를 보고합니다(NPR-32310).
 
-* 적응형 양식: Experience Manager 사이트 페이지에 포함된 적응형 양식을 구성하는 동안 번역 문제가 발생했습니다(NPR-32168).
+* 적용형 양식: Experience Manager Sites 페이지에 포함된 적용형 양식을 구성하는 동안 번역 문제가 발생했습니다(NPR-32168).
 
 * Workbench: PDF 유틸리티 서비스에 PDF 속성 가져오기 작업을 사용하는 동안 오류 메시지가 표시됩니다(NPR-32150).
 
@@ -241,7 +241,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 디자이너: 표에 병합된 셀이 있는 경우 출력 서비스를 사용하여 XDP 양식에서 변환된 출력 PDF 파일에 접근성 테스트를 수행하면 오류가 발생합니다(CQ-4285372).
 
-* 재단 JEE: Experience Manager Forms 서버가 클러스터에서 연결이 끊긴 경우 캐싱 문제로 인해 서버에 다시 연결되지 않습니다(NPR-32412).
+* Foundation JEE: 클러스터에서 Experience Manager Forms 서버 연결이 끊어진 경우 캐싱 문제가 발생하여 서버에 다시 연결되지 않습니다(NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -275,11 +275,11 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 이제 [!DNL Experience Manager Assets]에서 Deflate64 알고리즘을 사용하여 만든 ZIP 아카이브를 지원합니다(NPR-27573).
 
-* 만들어진 날짜에 대한 새 열(정렬 가능)이 목록 보기의 DAM 목록 보기 및 자산 검색 결과에 추가됩니다(NPR-31312).
+* 정렬 가능한 새로 만든 날짜에 대한 열이 목록 보기의 DAM 목록 보기 및 자산 검색 결과에 추가되었습니다(NPR-31312).
 
-* 목록 보기에서 [!UICONTROL 이름] 열(NPR-31299)을 사용하여 자산 목록을 정렬할 수 있습니다.
+* 목록 보기에서 [!UICONTROL 이름] 열을 사용하여 자산 목록을 정렬할 수 있습니다(NPR-31299).
 
-* The GLB, GLTF, OBJ, and STL files can be previewed in [!UICONTROL Asset Details] page in DAM (CQ-4282277).
+* GLB, GLTF, OBJ 및 STL 자산 파일은 DAM의 [!UICONTROL 자산 세부 정보] 페이지에서 자산 미리 보기를 지원합니다(CQ-4282277).
 
 * `ReplicationOnModifyListener` 이벤트가 [!DNL Dynamic Media]에서 청크 업로드 중 청크 노드에 대해 트리거됩니다(CQ-4281279).
 
@@ -287,17 +287,17 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * [!DNL Dynamic Media]에서 스마트 이미징을 지원합니다(CQ-422249).
 
-* 요청(NPR-31601)에서 쿼리 매개 변수가 전달되면 검색 또는 찾아보기 보기가 기본 보기로 설정된 경우,
+* 요청에서 쿼리 매개 변수가 전달되면 Foundation 선택기에서 검색 또는 찾아보기 보기가 기본 보기로 설정되었습니다(NPR-31601).
 
 **수정 사항**
 
-* 일부 PDF 문서의 제목이 수정될 때 일부 PDF 문서의 메타데이터는 업데이트되지 않고 PDF에 저장됩니다(NPR-31629).
+* 일부 PDF 문서의 메타데이터는 해당 제목을 수정할 때 업데이트되지 않고 PDF에 저장됩니다(NPR-31629).
 
-* 파일 이름(NPR-31547)에 더하기 문자(`+`)가 있는 자산에 대해 자산 공유가 작동하지 않습니다.
+* 파일 이름에 더하기 문자(`+`)가 있는 자산에 대해 자산 공유가 작동하지 않습니다(NPR-31547).
 
-* 기본 검색 양식 자산 관리자 검색 레일의 편집이 예상대로 작동하지 않습니다(NPR-31502).
+* 기본 검색 양식 자산 관리 검색 레일의 편집이 예상대로 작동하지 않습니다(NPR-31502).
 
-* 자산 보기에서 Omnisearch를 사용하여 자산 검색(NPR-31496)할 때는 제안이 표시되지 않습니다.
+* 자산 보기에서 Omnisearch를 사용하여 자산 검색할 때 제안이 표시되지 않습니다(NPR-31496).
 
 * 다른 사용자가 동일한 자산을 다른 컬렉션에서 참조하는 경우 참조된 자산을 다른 위치로 이동할 때 컬렉션 내의 자산 참조는 업데이트되지 않습니다(NPR-31486).
 
@@ -305,11 +305,11 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 필터 레일에서 검색이 트리거될 때 검색 결과 카운트가 정확하게 업데이트되지 않습니다(NPR-31316).
 
-* 파일 유형 필터에서 두 번째 수준 확인란을 선택 해제하면 모든 확인란이 선택 취소되고 검색 막대의 텍스트가 선택한 속성이나 선택 취소된 속성과 동기화되지 않습니다(NPR-31287).
+* 파일 유형 필터에서 두 번째 수준 확인란을 선택 취소하면 모든 확인란이 선택 취소되고 검색 막대의 텍스트가 선택한 또는 선택되지 않은 속성과 동기화되지 않습니다(NPR-31287).
 
 * 모든 구성원(사용자/그룹)은 폴더의 멤버 섹션에서 제거할 수 없습니다. 모든 사용자를 제거하려고 하면 로그인한 사용자가 목록에 추가됩니다(NPR-31171).
 
-* Assets with plus symbol (`+`) in the file name cannot be deleted (NPR-31162).
+* 파일 이름에 더하기 기호(`+`)가 있는 자산은 삭제할 수 없습니다(NPR-31162).
 
 * 폴더 선택 시 상단 메뉴에 표시되는 만들기 드롭다운 메뉴는 만들기 옵션으로 &#39;폴더&#39;를 표시하지 않습니다(NPR-30877).
 
@@ -373,7 +373,7 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 
 * 변환 워크플로우가 실패했습니다(CQ-4271928).
 
-* DAM Event Purge deletes the latest (`maxSavedActivities`) event data and holds the data created earlier (NPR-31336).
+* DAM 이벤트 삭제 기능은 최신(`maxSavedActivities`) 이벤트 데이터를 삭제하고 이전에 만든 데이터를 저장합니다(NPR-31336).
 
 * Omnisearch를 통해 수행한 터치 UI 검색 결과 페이지가 자동으로 스크롤되어 사용자의 스크롤 위치가 손실됩니다(NPR-31307).
 
@@ -390,22 +390,22 @@ Adobe Experience Manager 6.5.4.0에 도입된 주요 기능 및 개선 사항은
 * 기본 제공되는 스캐폴딩 RTE(리치 텍스트 편집기)가 예기치 않게 인라인 글꼴 크기를 요소에 적용합니다(NPR-31284).
 * 사용자가 왼쪽 레일 필드에 초점을 맞추고 키보드 단축키를 사용하여 콘텐츠를 붙여넣으면 왼쪽 레일 필드에서 복사한 콘텐츠 대신 페이지 편집기 클립보드의 콘텐츠를 붙여넣습니다(NPR-31172).
 * 사용자가 다중 필드에 파일 업로드 필드를 추가하면 이미지 경로가 다중 필드 노드 대신 구성 요소 노드에 저장됩니다(NPR-30882).
-* The `ResponsiveGridExporter` API does not return `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` interface. The `com.day.cq.wcm.foundation.model.impl` package is declared as a private package (NPR-31398).
+* `ResponsiveGridExporter` API는 `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` 인터페이스를 반환하지 않습니다. `com.day.cq.wcm.foundation.model.impl` 패키지는 비공개 패키지로 선언됩니다(NPR-31398).
 
 <!-- Review: NPR-31398 has fixVersion as 6530. However, it is mentioned twice in 6530 and 6520 as fixed. 
 Remove one mention of this fix.
 -->
 
-* When a page containing some Experience Fragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher)., the request ends in HTTP status error code `500` (NPR-30743).
+* 일부 Experience Fragments가 포함된 페이지를 편집기가 아닌 모드(`editor.html` 접두사가 없고 `wcmmode=disabled`된 작성자 및 또는 게시자에서)로 열리면 HTTP 상태 오류 코드 `500`에서 요청이 종료됩니다(NPR-30743).
 * 사용자는 암호를 변경하고 프로필 페이지에 액세스할 수 없습니다(NPR-31161).
 
 ### 검색 및 사용자 인터페이스 {#search-ui-interface}
 
-* 카드 보기에서 검색 결과 페이지의 목록 보기로 전환할 때 페이지를 스크롤하기 전에 지연이 있습니다(NPR-31286).
+* 검색 결과 페이지의 카드 보기에서 목록 보기로 전환하는 경우 페이지를 스크롤하려면 지연이 있습니다(NPR-31286).
 
-* The [!UICONTROL Select All] checkbox is hidden in the list view on [!DNL Sites] user interface (NPR-31614).
+* [!DNL Sites] 사용자 인터페이스의 목록 보기에서 [!UICONTROL 모두 선택] 확인란이 숨겨집니다(NPR-31614).
 
-* The [!UICONTROL Select All] count on a search result page is incorrect (NPR-31120).
+* 검색 결과 페이지에서 [!UICONTROL 모두 선택] 카운트가 잘못되었습니다(NPR-31120).
 
 * 메타데이터 편집기에 존재하지 않는 태그가 표시됩니다(NPR-31119).
 
@@ -602,13 +602,13 @@ Remove one mention of this fix.
 
 * LiveCopy 상속이 끊어지면 LiveCopy 페이지에 LiveCopy 링크 대신 언어 복사 링크가 표시됩니다(NPR-30980).
 * 새 블루프린트의 경우 레코드 수가 40개를 초과하는 경우 처음 40개의 레코드만 표시됩니다. 블루프린트는 나머지 레코드에 대한 빈 라인을 표시합니다(NPR-31182).
-* 텍스트 구성 요소의 RTE(Rich Text Editor) 플러그인은 일본어 및 한국어 텍스트에 대해 왜곡된 문자를 표시합니다(NPR-31331).
+* 텍스트 구성 요소의 리치 편집기(RTE) 플러그인은 일본어 및 한국어 텍스트의 왜곡된 문자를 표시합니다(NPR-31331).
 * 리치 텍스트 편집기(RTE)가 포함된 테이블을 목록 항목으로 삽입할 수 없습니다(NPR-30879).
-* RTE(Rich Text Editor)가 기본 스캐폴딩인 인라인 글꼴 크기를 요소에 적용합니다. 예기치 않게(NPR-31284)
-* 사용자가 왼쪽 레일 필드에 초점을 맞추고 키보드 단축키를 사용하여 컨텐츠를 붙여넣을 때 왼쪽 레일 필드에서 복사한 내용(NPR-31172) 대신 페이지 편집기 클립보드의 내용을 붙여넣습니다.
+* 즉시 스캐폴딩할 수 있는 리치 텍스트 편집기(RTE)가 예기치 않게 인라인 글꼴 크기를 요소에 적용됩니다(NPR-31284).
+* 사용자가 왼쪽 레일 필드에 초점을 맞추고 키보드 단축키를 사용하여 컨텐츠를 붙여넣으면 왼쪽 레일 필드에서 복사한 컨텐츠 대신 페이지 편집기 클립보드의 컨텐츠를 붙여넣습니다(NPR-31172).
 * 사용자가 다중 필드에 파일 업로드 필드를 추가하면 이미지 경로가 다중 필드 노드 대신 구성 요소 노드에 저장됩니다(NPR-30882).
-* The `ResponsiveGridExporter` API does not return `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` interface. The `com.day.cq.wcm.foundation.model.impl` package is declared as private package (NPR-31398).
-* When a page containing some Experience Fragments is opened in non-editor mode (either in Author without the `editor.html` prefix and `wcmmode=disabled`, or in Publisher), the request ends in HTTP status error code 500 (NPR-30743).
+* `ResponsiveGridExporter` API는 `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` 인터페이스를 반환하지 않습니다. `com.day.cq.wcm.foundation.model.impl` 패키지는 비공개 패키지로 선언됩니다(NPR-31398).
+* 일부 Experience Fragments가 포함된 페이지를 편집기가 아닌 모드(`editor.html` 접두사가 없고 `wcmmode=disabled`된 작성자 및 또는 게시자에서)로 열리면 HTTP 상태 오류 코드 500에서 요청이 종료됩니다(NPR-30743).
 
 ### WCM - 페이지 편집기 {#wcm-page-editor-6520}
 
