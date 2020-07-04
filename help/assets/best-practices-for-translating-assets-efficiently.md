@@ -3,9 +3,9 @@ title: 자산 번역 우수 사례
 description: 번역된 다양한 버전을 동기화하고 번역 워크플로우를 간소화하기 위한 효율적인 자산 관리를 위한 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '421'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 자산 번역 우수 사례 {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager Assets는 다국어 워크플로우를 지원하므로 디지털 자산에 대한 바이너리, 메타데이터 및 태그를 다양한 로캘로 변환하고 번역된 에셋을 관리할 수 있습니다. 자세한 내용은 다국어 [자산을 참조하십시오](multilingual-assets.md).
+Adobe Experience Manager 자산은 다국어 워크플로우를 지원하므로 디지털 자산에 대한 이진, 메타데이터 및 태그를 여러 로케일로 변환하고 번역된 자산을 관리할 수 있습니다. 자세한 내용은 다국어 [자산을 참조하십시오](multilingual-assets.md).
 
 번역 워크플로우를 실행하기 전에 다양한 번역 버전이 동기화되도록 자산을 효율적으로 관리할 수 있도록 자산의 [언어 사본을](preparing-assets-for-translation.md) 만드십시오.
 
@@ -25,20 +25,22 @@ Adobe Experience Manager Assets는 다국어 워크플로우를 지원하므로 
 
 파일 데이터 저장소 및 Amazon S3 데이터 저장소는 이러한 시나리오에 가장 적합한 저장소 인프라를 제공합니다. 이러한 저장소 저장소에는 여러 로케일에서 메타데이터 및 태그로 공유할 수 있는 자산 이진 파일(변환 포함)의 단일 사본이 저장됩니다. 따라서 자산 언어 사본을 만들고 메타데이터와 태그를 번역해도 저장소 크기에 영향을 주지 않습니다.
 
-또한 두 가지 워크플로우 및 번역 통합 프레임워크에 대해 몇 가지 구성 변경을 수행하여 프로세스를 더욱 간소화할 수 있습니다.
+또한 두 가지 워크플로우 및 번역 통합 프레임워크에 대해 몇 가지 구성 변경 사항을 적용하여 프로세스를 더욱 간소화할 수 있습니다.
 
 1. 다음 중 하나를 수행하십시오.
 
    * [파일 데이터 저장소 설정](/help/sites-deploying/data-store-config.md)
    * [Amazon S3 데이터 저장소 설정](/help/sites-deploying/data-store-config.md)
 
-1. DAM [메타 데이터 쓰기 되돌리기](/help/sites-administering/workflow-offloader.md#disable-offloading) 작업 과정을 비활성화합니다.
+<!--
+1. Disable the [DAM MetaData Write-back](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow.
 
-   이름에서 알 수 있듯이 [!UICONTROL DAM 메타데이터 쓰기] 워크플로우는 메타데이터를 바이너리 파일에 다시 씁니다. 메타데이터는 번역 후 변경되므로 이진 파일에 다시 쓰면 언어 사본에 대해 다른 바이너리가 생성됩니다.
+   As the name suggests, the [!UICONTROL DAM Metadata Writeback] workflow rewrites the metadata to the binary file. Because the metadata changes after translation, writing it back to the binary file generates a different binary for a language copy.
 
    >[!NOTE]
    >
-   >DAM [!UICONTROL 메타 데이터 쓰기] 작업 과정을 비활성화하면 자산 바이너리에 대한 XMP 메타데이터 쓰기 돌아가기가 꺼집니다. 따라서 향후 메타데이터 변경 사항은 더 이상 에셋 내에 저장되지 않습니다. 이 워크플로우를 비활성화하기 전에 결과를 평가합니다.
+   >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
+-->
 
 1. 마지막으로 [!UICONTROL 수정한 날짜] 설정 워크플로우를 활성화합니다.
 
