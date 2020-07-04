@@ -10,9 +10,9 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: c3e4b68c10496cac8f75d009fdd9ebd777826850
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
 workflow-type: tm+mt
-source-wordcount: '2771'
+source-wordcount: '2403'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Offloading 프레임워크는 작업을 저장소의 리소스와 연결하는 �
 
 클러스터의 각 인스턴스에 대해 다음과 같은 몇 가지 토폴로지 관련 속성을 볼 수 있습니다.
 
-* 인스턴스의 작업 소비자에 대한 허용 항목 목록입니다.
+* 인스턴스의 작업 소비자에 대한 주제 허용 목록.
 * 토폴로지와 연결할 수 있는 끝점입니다.
 * 인스턴스가 오프로드를 위해 등록된 작업 항목입니다.
 * 인스턴스가 처리하는 작업 주제입니다.
@@ -108,7 +108,7 @@ Offloading 프레임워크는 작업을 저장소의 리소스와 연결하는 �
 
 Apache Sling Resource-Based Discovery Service는 각 인스턴스에서 실행되어 Experience Manager 인스턴스가 토폴로지와 상호 작용하는 방식을 제어합니다.
 
-검색 서비스는 주기적으로 POST 요청(하트비트)을 토폴로지 커넥터 서비스에 전송하여 토폴로지와 연결을 설정하고 유지 관리합니다. 토폴로지 커넥터 서비스는 토폴로지에 참여할 수 있는 IP 주소 또는 호스트 이름의 허용 목록을 유지합니다.
+검색 서비스는 주기적으로 POST 요청(하트비트)을 토폴로지 커넥터 서비스에 전송하여 토폴로지와 연결을 설정하고 유지 관리합니다. 토폴로지 커넥터 서비스는 토폴로지 참여를 허용하는 IP 주소 또는 호스트 이름의 허용 목록을 유지 관리합니다.
 
 * 인스턴스를 토폴로지에 연결하려면 루트 멤버의 토폴로지 커넥터 서비스의 URL을 지정합니다.
 * 인스턴스가 토폴로지에 가입하도록 하려면 루트 멤버의 토폴로지 커넥터 서비스의 허용 목록에 인스턴스를 추가하십시오.
@@ -169,7 +169,7 @@ Apache Sling Resource-Based Discovery Service는 각 인스턴스에서 실행�
 1. 검색 서비스 구성을 클릭합니다.
 1. 토폴로지 커넥터 URL 속성에 항목을 추가하고 루트 토폴로지 멤버의 토폴로지 커넥터 서비스의 URL을 지정합니다. URL은 https://rootservername:4502/libs/sling/topology/connector 형식입니다.
 
-토폴로지의 루트 멤버에 대해 다음 절차를 수행합니다. 이 절차는 검색 서비스 허용 목록에 다른 토폴로지 멤버의 이름을 추가합니다.
+토폴로지의 루트 멤버에 대해 다음 절차를 수행합니다. 이 절차에서는 다른 토폴로지 멤버의 이름을 검색 서비스 허용 목록에 추가합니다.
 
 1. 브라우저에서 웹 콘솔을 엽니다. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. 기본 > 토폴로지 관리를 클릭합니다.
@@ -200,6 +200,7 @@ Offloading Browser를 사용하여 토폴로지의 Experience Manager 인스턴�
    * 활성화됨: 이 인스턴스는 이 항목의 작업을 사용합니다.
    * 비활성화됨: 이 인스턴스는 이 항목의 작업을 소비하지 않습니다.
    * 전용: 이 인스턴스는 이 항목의 작업만 사용합니다.
+
    **참고:** 주제에 대해 [배타적]을 선택하면 다른 모든 주제가 자동으로 [비활성화]로 설정됩니다.
 
 ### 설치된 Job 소비자 {#installed-job-consumers}
@@ -210,22 +211,25 @@ Offloading Browser를 사용하여 토폴로지의 Experience Manager 인스턴�
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Apache Sling과 함께 설치 이전 버전과의 호환성을 위해 OSGi 이벤트 관리자가 생성하는 작업을 처리합니다. |
 | com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | 작업 페이로드를 복제하는 복제 에이전트입니다. |
-| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | DAM 자산 업데이트 오프로더 워크플로우가 생성하는 작업을 처리합니다. |
+
+<!--
+| com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
+-->
 
 ### 인스턴스에 대한 항목 비활성화 및 활성화 {#disabling-and-enabling-topics-for-an-instance}
 
-Apache Sling Job Consumer Manager 서비스는 목록 및 블록 목록 속성을 허용합니다. Experience Manager 인스턴스의 특정 항목 처리를 활성화하거나 비활성화하도록 이러한 속성을 구성합니다.
+Apache Sling Job Consumer Manager 서비스는 주제 허용 목록 및 차단 목록 속성을 제공합니다. Experience Manager 인스턴스의 특정 항목 처리를 활성화하거나 비활성화하도록 이러한 속성을 구성합니다.
 
 **참고:** 인스턴스가 토폴로지에 속한 경우 토폴로지 내의 모든 컴퓨터에서 브라우저 오프로딩 기능을 사용하여 항목을 활성화하거나 비활성화할 수도 있습니다.
 
-활성화된 항목 목록을 만드는 논리는 먼저 허용 목록에 있는 모든 항목을 허용했다가 블록 목록에 있는 항목을 제거합니다. 기본적으로 모든 항목이 활성화되어 있고(허용 목록 값이 `*`활성화되어 있음) 토픽이 비활성화되어 있지 않습니다(블록 목록에 값이 없음).
+활성화된 항목 목록을 만드는 논리는 먼저 허용 목록에 있는 모든 항목을 허용한 다음 차단 목록에 있는 항목을 제거합니다. 기본적으로 모든 항목이 활성화되어 있고(허용 목록 값이 `*`활성화되어 있음) 토픽이 비활성화되어 있지 않습니다(차단 목록에 값이 없음).
 
 웹 콘솔 또는 `sling:OsgiConfig` 노드를 사용하여 다음 속성을 구성합니다. 노드의 경우 Job Consumer Manager 서비스의 PID는 org.apache.sling.event.impl.jobs.JobConsumerManager입니다. `sling:OsgiConfig`
 
 | 웹 콘솔의 속성 이름 | OSGi ID | 설명 |
 |---|---|---|
-| 항목 허용 목록 | job.consumermanager.whitelist | 로컬 JobManager 서비스가 처리하는 항목 목록. &amp;ast;의 기본값 모든 항목을 등록된 TopicConsumer 서비스로 보냅니다. |
-| 주제 블록 목록 | job.consumermanager.blacklist | 로컬 JobManager 서비스가 처리하지 않는 항목 목록. |
+| 주제 허용 목록 | job.consumermanager.whitelist | 로컬 JobManager 서비스가 처리하는 항목 목록. &amp;ast;의 기본값 모든 항목을 등록된 TopicConsumer 서비스로 보냅니다. |
+| 주제 차단 목록 | job.consumermanager.blacklist | 로컬 JobManager 서비스가 처리하지 않는 항목 목록. |
 
 ## 오프로드용 복제 에이전트 만들기 {#creating-replication-agents-for-offloading}
 
@@ -316,35 +320,37 @@ Apache Sling Job Consumer Manager 서비스는 목록 및 블록 목록 속성�
 * 웹 콘솔을 열고 [Sling Settings]에서 Sling ID 속성(http://localhost:4502/system/console/status-slingsettings)의 값을[찾습니다](http://localhost:4502/system/console/status-slingsettings). 이 메서드는 인스턴스가 아직 토폴로지의 일부가 아닌 경우에 유용합니다.
 * 인스턴스가 이미 토폴로지의 일부인 경우 토폴로지 브라우저를 사용합니다.
 
-## DAM 자산 처리 취소 {#offloading-the-processing-of-dam-assets}
+<!--
+## Offloading the Processing of DAM Assets {#offloading-the-processing-of-dam-assets}
 
-특정 인스턴스가 DAM에서 추가 또는 업데이트되는 자산의 백그라운드 처리를 수행하도록 토폴로지 인스턴스를 구성합니다.
+Configure the instances of a topology so that specific instances perform the background processing of assets that are added or updated in DAM.
 
-기본적으로 Experience Manager은 DAM 자산이 변경되거나 DAM에 [!UICONTROL 추가된 경우 DAM 자산] 업데이트 워크플로우를 실행합니다. Experience Manager이 대신 [!UICONTROL DAM 자산 오프로더 업데이트 워크플로우를 실행하도록 기본 동작을] 변경합니다. 이 워크플로우는 주제가 있는 JobManager 작업을 생성합니다 `com/adobe/granite/workflow/offloading`. 그런 다음 전용 작업자에게 작업이 오프로드되도록 토폴로지를 구성합니다.
+By default, Experience Manager executes the [!UICONTROL DAM Update Asset] workflow when a DAM asset changes or one is added to DAM. Change the default behavior so that Experience Manager instead executes the [!UICONTROL DAM Update Asset Offloader] workflow. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Then, configure the topology so that the job is offloaded to a dedicated worker.
 
 >[!CAUTION]
 >
->워크플로우 오프로드와 함께 사용하면 워크플로우가 일시적으로 중단되어서는 안 됩니다. 예를 들어 자산 오프로딩에 [!UICONTROL DAM 자산] 업데이트 워크플로우가 일시적으로 유지되어서는 안 됩니다. 워크플로우에서 임시 플래그를 설정/해제하려면 임시 워크플로우 [를 참조하십시오](/help/assets/performance-tuning-guidelines.md#workflows).
+>No workflow should be transient when used with workflow offloading. For example, the [!UICONTROL DAM Update Asset] workflow must not be transient when used for asset offloading. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
 
-다음 절차에서는 오프로드 토폴로지에 대해 다음 특성을 가정합니다.
+The following procedure assumes the following characteristics for the offloading topology:
 
-* 하나 이상의 Experience Manager 인스턴스는 사용자가 DAM 자산을 추가하거나 업데이트하기 위해 상호 작용하는 작성 인스턴스입니다.
-* 사용자는 DAM 자산을 처리하는 하나 이상의 Experience Manager 인스턴스와 직접 상호 작용하지 않습니다. 이러한 인스턴스는 DAM 자산의 백그라운드 처리에 사용됩니다.
+* One or more Experience Manager instance are authoring instances that users interact with for adding or updating DAM assets.
+* Users to do not directly interact with one or more Experience Manager instances that process the DAM assets. These instances are dedicated to the background processing of DAM assets.
 
-1. 각 Experience Manager 인스턴스에서 루트 지형은 커넥터를 가리키도록 검색 서비스를 구성합니다. 토폴로지 [구성원 구성을 참조하십시오](#title4).
-1. 연결 인스턴스가 허용 목록에 있도록 루트 지형 커넥터를 구성합니다.
-1. 오프로드 브라우저를 열고 사용자가 DAM 자산을 업로드하거나 변경하기 위해 상호 작용하는 인스턴스의 `com/adobe/granite/workflow/offloading` 항목을 비활성화합니다.
+1. On each Experience Manager instance, configure the Discovery Service so that it points to the root Topography Connector. (See [Configuring Topology Membership](#title4).)
+1. Configure the root Topography Connector so that the connecting instances are on the allow list.
+1. Open Offloading Browser and disable the `com/adobe/granite/workflow/offloading` topic on the instances with which users interact to upload or change DAM assets.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
-1. 사용자가 DAM 자산을 업로드하거나 변경하기 위해 상호 작용하는 각 인스턴스에서 DAM 자산 [!UICONTROL 업데이트 오프로드 워크플로우를 사용하도록 워크플로우] 레이아웃을 구성합니다.
+1. On each instance that users interact with to upload or change DAM assets, configure workflow launchers to use the [!UICONTROL DAM Update Asset Offloading] workflow:
 
-   1. 워크플로우 콘솔을 엽니다.
-   1. 론처 탭을 클릭합니다.
-   1. DAM 자산 업데이트 작업 과정을 실행하는 두 가지 [!UICONTROL 실행] 관리자를 찾습니다. 론처 구성 이벤트 유형 하나는 Node Created이고 다른 유형은 Node Modified입니다.
-   1. 두 이벤트 유형을 모두 변경하여 [!UICONTROL DAM 자산 오프로드 작업 흐름을] 실행합니다. 실행 프로그램 구성에 대한 자세한 내용은 노드 변경 [시 워크플로우 시작을 참조하십시오](/help/sites-administering/workflows-starting.md).
+    1. Open the Workflow console.
+    1. Click the Launcher tab.
+    1. Locate the two Launcher configurations that execute the [!UICONTROL DAM Update Asset] workflow. One launcher configuration event type is Node Created, and the other type is Node Modified.
+    1. Change both event types so that they execute the [!UICONTROL DAM Update Asset Offloading] workflow. (For information about launcher configurations, see [Starting Workflows When Nodes Change](/help/sites-administering/workflows-starting.md).)
 
-1. DAM 자산의 백그라운드 처리를 수행하는 인스턴스에서 [!UICONTROL DAM 자산 업데이트 워크플로우를 실행하는 워크플로우] 런처를 비활성화합니다.
+1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the [!UICONTROL DAM Update Asset] workflow.
+-->
 
 ## Further Reading {#further-reading}
 
