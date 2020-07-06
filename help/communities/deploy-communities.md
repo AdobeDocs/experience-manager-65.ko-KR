@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 85d4cdf0e2cfcb8b5e70387ce2dc556df9033257
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1899'
 ht-degree: 1%
 
 ---
@@ -74,14 +74,14 @@ ht-degree: 1%
 
          * UGC가 복제되지 않음
          * UGC가 입력된 AEM 인스턴스 또는 클러스터에만 표시
-      * 기본값은 JSRP입니다.
+
+         * 기본값은 JSRP입니다.
    지원 **[기능](/help/communities/overview.md#enablement-community)**
 
    * [FFmpeg 설치 및 구성](/help/communities/ffmpeg.md)
    * [MySQL용 JDBC 드라이버 설치](#jdbc-driver-for-mysql)
    * [AEM Communities SCORM-Engine 설치](#scorm-package)
    * [MySQL 지원 설치 및 구성](/help/communities/mysql.md)
-
 
 
 
@@ -105,8 +105,8 @@ AEM 6.4 이상에서 AEM Communities 기능 및 핫픽스는 AEM Communities 누
 
 두 개의 커뮤니티 기능은 MySQL 데이터베이스를 사용합니다.
 
-* [ [활성화]](/help/communities/enablement.md) : SCORM 활동 및 수강생 기록
-* DSRP의 [경우](/help/communities/dsrp.md) : 사용자 생성 컨텐츠 저장(UGC)
+* [ [활성화]](/help/communities/enablement.md): SCORM 활동 및 수강생 기록
+* DSRP의 [경우](/help/communities/dsrp.md): 사용자 생성 컨텐츠 저장(UGC)
 
 MySQL 커넥터를 별도로 구하고 설치해야 합니다.
 
@@ -125,7 +125,6 @@ MySQL 커넥터를 별도로 구하고 설치해야 합니다.
    * MySQLcom *용 Oracle Corporation의 JDBC 드라이버가 활성 상태인지 확인하고 활성 상태가 아니면 시작(또는 로그 확인)* 하십시오.
 
 1. JDBC가 구성된 후 기존 배포에 설치하는 경우 웹 콘솔에서 JDBC 구성을 다시 저장하여 JDBC를 새 커넥터에 다시 바인딩합니다.
-
    * 예: https://localhost:4502/system/console/configMgr
    * 구성 `Day Commons JDBC Connections Pool` 찾기
    * 열려면 선택하십시오
@@ -137,7 +136,7 @@ MySQL 커넥터를 별도로 구하고 설치해야 합니다.
 
 #### 예: 설치된 MySQL Connector 번들 {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![chlimage 번들](assets/chlimage-bundles.png)
 
 ### SCORM 패키지 {#scorm-package}
 
@@ -222,7 +221,7 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 따라서 모든 보조 게시 인스턴스의 구성을 **편집하여 확인란을 선택** 취소해야 **`Primary Publisher`** 합니다.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![chlimage_1-411](assets/chlimage_1-411.png)
 
 게시 팜에 있는 다른(보조) 게시 인스턴스의 경우:
 
@@ -248,7 +247,7 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 * 작성자의 복제 콘솔 액세스
 
-   * 전역 탐색에서 **[!UICONTROL 도구 > 배포 > 복제 > 작성자의 에이전트로 이동합니다]**
+   * 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > 작성자의 **[!UICONTROL 에이전트로이동합니다]**
 
 * 두 에이전트 모두에 대해 동일한 절차를 따르십시오.
 
@@ -262,15 +261,15 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
       1. 사용자 `admin`가 아닌 경우 **사용자** 및 **암호** 를 편집하여 `administrators` 사용자 그룹의 구성원을 지정합니다
 
-다음 이미지는 4503에서 6103으로 포트를 변경한 결과를
+다음 이미지는 포트를 4503에서 6103으로 변경하는 결과를 보여 줍니다.
 
 #### 기본 에이전트(게시) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![chlimage_1-412](assets/chlimage_1-412.png)
 
 #### 역방향 복제 에이전트(다시 게시) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![chlimage_1-413](assets/chlimage_1-413.png)
 
 ### 저자에 대한 터널 서비스 {#tunnel-service-on-author}
 
@@ -280,8 +279,7 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 터널 서비스를 활성화하려면:
 
-* 작성자 ****
-* 관리자 권한으로 로그인
+* 작성자 인스턴스에 대한 관리자 권한으로 로그인합니다.
 * 게시자가 localhost:4503이 아니거나 전송 사용자가 아닌 경우 `admin`복제 에이전트를 [구성합니다.](#replication-agents-on-author)
 
 * 웹 [콘솔 액세스](/help/sites-deploying/configuring-osgi.md)
@@ -293,7 +291,7 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 * 활성화 **상자** 선택
 * **저장**&#x200B;을 선택합니다
 
-![](/help/communities/assets/chlimage_1-129.png)
+   ![chlimage_1-414](assets/chlimage_1-414.png)
 
 ### 암호화 키 복제 {#replicate-the-crypto-key}
 
@@ -312,8 +310,8 @@ AEM 6.3부터는 주요 자료가 파일 시스템에 저장되고 더 이상 �
    * 데이터 폴더(예:
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * hmac 및 기본 노드 파일 복사
 
+      * hmac 및 기본 노드 파일 복사
 
 
 * 각 대상 AEM 인스턴스에 대해
@@ -329,6 +327,7 @@ AEM 6.3부터는 주요 자료가 파일 시스템에 저장되고 더 이상 �
 >
 >암호화 키를 기반으로 하는 다른 보안 기능이 이미 구성된 경우 암호화 키를 복제하면 구성이 손상될 수 있습니다. 도움이 필요한 경우 고객 [지원 센터에 문의하십시오](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html).
 
+
 #### 저장소 복제 {#repository-replication}
 
 AEM 6.2 및 이전 버전의 경우와 마찬가지로 저장소에 주요 자료를 저장하게 하려면 각 AEM 인스턴스의 처음 시작 시 다음 시스템 속성을 지정하여 보존할 수 있습니다(초기 저장소를 만듭니다.).
@@ -339,9 +338,10 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로 저장소에 주요 자�
 >
 >작성자의 [복제 에이전트가 올바르게 구성되었는지](#replication-agents-on-author) 확인하는 것이 중요합니다.
 
+
 저장소에 저장된 주요 자료를 통해 작성자로부터 다른 인스턴스로 암호화 키를 복제하는 방법은 다음과 같습니다.
 
-CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md) :
+CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md):
 
 * https://&lt; [server>:&lt;port>/crx/de로 이동합니다.](https://localhost:4502/crx/de)
 * 선택 `/etc/key`
@@ -350,7 +350,7 @@ CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [Granite Crypto 번들 새로 고침](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+   ![chlimage_1-415](assets/chlimage_1-415.png)
 
 #### [MOCK] Refresh the Granite Crypto Bundle {#refresh-the-granite-crypto-bundle}
 
@@ -361,7 +361,7 @@ CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md) :
 * 번들 `Adobe Granite Crypto Support` 찾기(com.adobe.granite.crypto)
 * 새로 고침 **선택**
 
-![](/help/communities/assets/chlimage_1-131.png)
+   ![chlimage_1-416](assets/chlimage_1-416.png)
 
 * 잠시 후 **성공** 대화 상자가 나타나야 합니다.
    `Operation completed successfully.`
