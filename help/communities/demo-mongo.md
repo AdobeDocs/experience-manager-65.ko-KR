@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 1%
@@ -165,7 +165,7 @@ MongoDB 공용 스토어를 테스트 및 확인하려면 게시 인스턴스에
 
    참고: 작성자 상의 *asipath 아래에* JCR 노드가 있지만 SCF 프레임워크에 사용됩니다. 실제 UGC는 JCR에 있지 않고 MongoDB에 있습니다.
 
-1. mongodb Communities > **[!UICONTROL Collections > Content에서 UGC 보기]**
+1. mongodb Communities에서 UGC **[!UICONTROL 보기]** > **[!UICONTROL 컬렉션]** **[!UICONTROL >콘텐츠]**
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -175,6 +175,7 @@ MongoDB 공용 스토어를 테스트 및 확인하려면 게시 인스턴스에
    * 선택할 사용자 `core selector` `collection1`
    * 선택 `Query`
    * 선택 `Execute Query`
+
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
 ## 문제 해결 {#troubleshooting}
@@ -186,6 +187,7 @@ MongoDB 공용 스토어를 테스트 및 확인하려면 게시 인스턴스에
 1. MSRP가 기본 공급자로 구성되었는지 확인하십시오.
 
    * 모든 작성 및 AEM 인스턴스에서 [스토리지 구성 콘솔 다시 방문](srp-config.md)
+
    또는 AEM 리포지토리를 확인합니다.
 
    * JCR에서 if/etc/socialconfig [로](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
