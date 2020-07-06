@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2b04724138f28cd7f357d155b88daf964632f3bc
+source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '616'
 ht-degree: 4%
 
 ---
@@ -32,13 +32,17 @@ ht-degree: 4%
 
 CRXDE Lite 사용:
 
-<!--Resolve steps below-->
-    이름: &#39;sling:resourceSuperType&#39;
-    유형: &#39;String&#39;
-    값: &#39;foundation/components/page&#39;
+1. 노드를 선택합니다 `/apps/an-scf-sandbox/components/playpage`.
+1. 속성 탭에서 다음 값을 갖는 새 속성을 입력합니다.
 
-1. 녹색 **[!UICONTROL [+추가]클릭]**
-1. 모두 **[!UICONTROL 저장을 클릭합니다.]**
+   이름: `sling:resourceSuperType`
+
+   유형: `String`
+
+   값: `foundation/components/page`
+
+1. 녹색 **[!UICONTROL +추가]** 단추를 클릭합니다.
+1. 모두 **[!UICONTROL 저장을 클릭합니다]**.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -89,12 +93,12 @@ CRXDE Lite 사용:
 
    작성을 위해 설정하려면 로컬 스크립트 `body.jsp` 와 오버레이하고 본문에 단락 시스템(parsys)을 포함합니다.
 
-   1. 다음으로 이동 `/apps/an-scf-sandbox/components`
-   1. 노드 `playpage`선택
+   1. 다음으로 이동 `/apps/an-scf-sandbox/components`.
+   1. 노드를 `playpage` 선택합니다.
    1. 마우스 오른쪽 버튼을 클릭하고 `Create > Create File...`
 
       * 이름: **body.jsp**
-   1. 모두 **[!UICONTROL 저장을 클릭합니다.]**
+   1. 모두 **[!UICONTROL 저장을 클릭합니다]**.
 
    다음 텍스트 `/apps/an-scf-sandbox/components/playpage/body.jsp` 를 열고 붙여 넣습니다.
 
@@ -114,7 +118,7 @@ CRXDE Lite 사용:
    </body>
    ```
 
-1. 모두 **[!UICONTROL 저장을 클릭합니다.]**
+1. 모두 **[!UICONTROL 저장을 클릭합니다]**.
 
 **편집 모드에서 브라우저에서 페이지 보기:**
 
