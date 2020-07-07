@@ -3,9 +3,9 @@ title: Process assets using media handlers and workflows in [!DNL Adobe Experien
 description: 미디어 핸들러와 워크플로우를 사용하여 디지털 자산에 대한 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2109'
 ht-degree: 2%
 
 ---
@@ -21,15 +21,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->각 형식에 지원되는 [모든 포맷](assets-formats.md) 및 기능에 대한 설명은 [!DNL Assets] 자산 지원 형식페이지를 참조하십시오.
+>지원되는 [자산 형식](assets-formats.md) 페이지 [!DNL Assets] 에서 지원되는 모든 형식 및 각 형식에 대해 지원되는 기능에 대한 설명을 참조하십시오.
 
 ## 기본 미디어 핸들러 {#default-media-handlers}
 
 다음 미디어 핸들러는 내부에서 사용할 수 [!DNL Assets] 있으며 가장 일반적인 MIME 형식을 처리합니다.
 
-<!-- TBD: 
-* Apply correct formatting once table is moved to MD.
-* Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
 -->
 
 | 처리기 이름 | 서비스 이름(시스템 콘솔) | 지원되는 MIME 형식 |
@@ -68,7 +66,7 @@ ht-degree: 2%
 
 기존 워크플로우를 확장할 수 있으며 특정 요구 사항에 따라 자산을 처리하기 위해 새로운 워크플로우를 만들 수 있습니다.
 
-다음 예에서는 PDF 문서를 제외한 모든 자산에 대해 하위 자산이 **[!UICONTROL 생성되도록]** AEM 자산 동기화 작업 과정을 향상시키는 방법을 보여줍니다.
+다음 예에서는 PDF 문서를 제외한 모든 자산에 대해 하위 자산이 생성되도록 **[!UICONTROL AEM Assets 동기화]** 작업 과정을 향상시키는 방법을 보여 줍니다.
 
 ### 미디어 처리기 비활성화 또는 활성화 {#disabling-enabling-a-media-handler}
 
@@ -140,7 +138,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 1. Eclipse에서 `myBundle` [!DNL Maven] 프로젝트 제작:
 
-   1. 메뉴 모음에서 **[!UICONTROL 파일 > 새로 만들기 > 기타 를 클릭합니다]**.
+   1. 메뉴 모음에서 **[!UICONTROL 파일]** > 새로 **[!UICONTROL 만들기]** > **[!UICONTROL 기타]**&#x200B;를클릭합니다.
    1. 대화 상자에서 [!DNL Maven] 폴더를 확장하고 프로젝트를 선택한 다음 [!DNL Maven] 다음을 **[!UICONTROL 클릭합니다]**.
    1. 간단한 프로젝트 만들기 상자와 기본 작업 공간 위치 사용 상자를 선택한 다음 **[!UICONTROL 다음을 클릭합니다]**.
    1. 프로젝트 [!DNL Maven] 정의:
@@ -505,7 +503,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 |---|---|
 | mime:&lt;mime-type> | 선택적 인수입니다. 자산이 인수 중 하나와 동일한 MIME 형식을 갖는 경우 프로세스가 적용됩니다. <br>여러 MIME 형식을 정의할 수 있습니다. |
 | tn:&lt;width>:&lt;height> | 선택적 인수입니다. 인수에 정의된 치수로 축소판을 만듭니다. <br>여러 축소판을 정의할 수 있습니다. |
-| cmd: &lt;command> | 실행할 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 하나의 명령만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다<br>`${filename}`. 입력 파일의 이름(예: original.jpg) <br> `${file}`: 입력 파일의 전체 경로 이름(예: /tmp/cqdam0816.tmp/original.jpg) <br> `${directory}`: 입력 파일의 디렉토리(예: /tmp/cqdam0816.tmp <br>`${basename}`: 입력 파일의 확장자가 없는 이름(예: 원본 <br>`${extension}`: JPG와 같은 입력 파일의 확장입니다. |
+| cmd: &lt;command> | 실행되는 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 하나의 명령만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다<br>`${filename}`. 입력 파일의 이름(예: original.jpg) <br> `${file}`: 입력 파일의 전체 경로 이름(예: `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: 입력 파일의 디렉토리(예: `/tmp/cqdam0816.tmp` 다음 <br>`${basename}`) 입력 파일의 확장자가 없는 이름(예: 원본 <br>`${extension}`: JPG와 같은 입력 파일의 확장입니다. |
 
 예를 들어, 서버 [!DNL ImageMagick] 를 호스팅하는 디스크에 설치되어 있고 CommandLineProcess [!DNL Experience Manager] 를 구현으로 사용하여 프로세스 단계를 만드는 경우 [!UICONTROL 다음 값을] 프로세스 인수로 [!UICONTROL 지정합니다].
 
