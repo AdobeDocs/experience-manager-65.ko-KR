@@ -8,17 +8,17 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2862'
-ht-degree: 26%
+ht-degree: 30%
 
 ---
 
 
 # 페이지에 Dynamic Media 클래식 기능 추가 {#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) 은 리치 미디어 에셋을 관리, 향상, 게시 및 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄물로 전달하는 호스팅 솔루션입니다.
+[Adobe Dynamic Media Classic](https://help.adobe.com/ko_KR/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) 은 리치 미디어 에셋을 관리, 향상, 게시 및 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄물로 전달하는 호스팅 솔루션입니다.
 
 다양한 뷰어에서 Dynamic Media Classic에 게시된 AEM 자산을 볼 수 있습니다.
 
@@ -71,7 +71,7 @@ After they are made available in **[!UICONTROL Design]** mode, you can add the c
 
 >[!NOTE]
 >
->If you are creating and developing custom viewers and using the Content Finder, you need to explicity add the **[!UICONTROL allowfullscreen]** parameter.
+>사용자 지정 뷰어를 만들고 개발하려고 하며 컨텐츠 파인더를 사용하는 경우 **[!UICONTROL allowfullscreen]** 매개 변수를 명시적으로 추가해야 합니다.
 
 ### Flash 뷰어 지원 중단 알림 {#flash-viewers-end-of-life-notice}
 
@@ -154,7 +154,7 @@ In the HTML5 **[!UICONTROL Flyout]** component, the asset is shown as split scre
 >
 >If your **[!UICONTROL Flyout]** component uses a custom size, then that custom size is used and responsive setup of the component is disabled.
 >
->If your **[!UICONTROL Flyout]** component uses the default size, as set in the **[!UICONTROL Design View]**, then the default size is used and the component stretches to accomodate the page layout size with responsive setup of the component enabled. 그러나 구성 요소의 응답형 설정에 대한 제한은 있습니다. When the you use the **[!UICONTROL Flyout]** component with responsive setup, you should not use it with full page stretch. Otherwise, the **[!UICONTROL Flyout]** may extend beyond the page&#39;s right border.
+>If your **[!UICONTROL Flyout]** component uses the default size, as set in the **[!UICONTROL Design View]**, then the default size is used and the component stretches to accomodate the page layout size with responsive setup of the component enabled. 그러나 구성 요소의 응답형 설정에는 제한이 있습니다. When the you use the **[!UICONTROL Flyout]** component with responsive setup, you should not use it with full page stretch. Otherwise, the **[!UICONTROL Flyout]** may extend beyond the page&#39;s right border.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -231,7 +231,7 @@ To link a field to a client context value, tap **[!UICONTROL Select]** to open t
 #### Dynamic Media 클래식 이미지 템플릿을 링크로 만들기 {#making-the-scene-image-template-a-link}
 
 1. Dynamic Media의 클래식 **[!UICONTROL 이미지 템플릿]** 구성 요소가 있는 페이지에서 편집을 **[!UICONTROL 누릅니다.]**
-1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. In the **[!UICONTROL Open in]** field, select whether you want the target to open (a new window or same window).
+1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. **[!UICONTROL 여는 위치]** 필드에서 대상을 새 창 또는 동일한 창 중 어떤 창에서 열지를 선택합니다.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -268,9 +268,11 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 AEM에서 직접 Dy
 >* [ [보안 미리 보기]가 활성화되면](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)Dynamic Media Classic의 게시된 자산과 게시 취소된 자산이 모두 Dynamic Media Classic 콘텐츠 브라우저에 표시됩니다.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* 비디오의 경우 Classic 컨텐츠 브라우저가 지원하는 Dynamic Media:
-   >   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
+   >
+   >   
+   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
    >   * 단일 MP4 비디오
-   >   * 단일 F4V 비디오
+   >   * 단일 F4V 동영상
 
 
 ### Browsing content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
@@ -285,7 +287,6 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 AEM에서 직접 Dy
 >
 >* Dynamic Media Classic 컨텐츠 브라우저는 약 100개의 에셋을 로드하고 이름별로 정렬합니다.
 >* 보안 미리 보기 서버가 설정된 경우 브라우저에서 미리 보기 서버를 사용하여 축소판과 자산을 렌더링합니다.
-
 >
 
 
@@ -338,7 +339,6 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
    >
 * 비디오를 검색할 때 단일 표현물을 검색합니다. 결과는 원래 변환(&amp;ast;.mp4만)과 인코딩된 변환을 반환합니다.
 >* 응용 비디오 세트를 검색할 때 폴더 및 모든 하위 폴더가 검색되지만, 검색에 키워드를 추가한 경우에만 검색됩니다. 키워드를 추가하지 않은 경우 AEM이 하위 폴더를 검색하지 않습니다.
-
 >
 
 
