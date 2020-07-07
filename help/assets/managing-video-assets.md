@@ -3,7 +3,7 @@ title: 비디오 자산을 관리할 수 있습니다 [!DNL Adobe Experience Man
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및 게시할 수 있습니다 [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 0%
@@ -55,7 +55,7 @@ ht-degree: 0%
 1. 도구 모음에서 **[!UICONTROL 오버레이 노드를 클릭합니다]**. 또는 컨텍스트 메뉴에서 **[!UICONTROL 오버레이 노드]** 를 선택합니다.
 1. [ **[!UICONTROL 오버레이 노드]** ] 대화 상자에서 **[!UICONTROL 확인을 클릭합니다]**.
 
-   ![Overlay node](assets/overlay-node-path.png)
+   ![오버레이 노드](assets/overlay-node-path.png)
 
 1. 브라우저를 새로 고칩니다. 오버레이 노드가 `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` 선택되었습니다.
 1. 속성 **[!UICONTROL 탭에서]** 적절한 값을 바이트 단위로 입력하여 원하는 크기로 크기 제한을 늘립니다. 예를 들어 크기 제한을 30GB로 늘리려면 `{sizeLimit : "32212254720"}` 값을 입력합니다.
