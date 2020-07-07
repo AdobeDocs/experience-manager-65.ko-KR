@@ -3,7 +3,7 @@ title: 폴더 메타데이터 스키마
 description: Adobe Experience Manager 에셋의 에셋 폴더에 대한 메타데이터 스키마를 만드는 방법 알아보기
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 2%
@@ -108,7 +108,7 @@ Adobe Experience Manager 자산을 사용하면 폴더 속성 페이지에 표�
 
 ### 폴더 메타데이터 스키마 페이지에서 스키마에 할당 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 자산 **[!UICONTROL > 폴더 메타데이터 스키마]**&#x200B;로 **[!UICONTROL 이동합니다]**.
+1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 자산 **[!UICONTROL >]** 폴더 메타데이터 스키마로 **[!UICONTROL 이동합니다]**.
 1. 폴더 메타데이터 스키마 양식 페이지에서 폴더에 적용할 스키마 양식을 선택합니다.
 1. 도구 모음에서 폴더에 **[!UICONTROL 적용을 클릭합니다]**.
 
