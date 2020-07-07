@@ -4,9 +4,9 @@ description: 병목 현상을 [!DNL Experience Manager] 제거하고 성능을 �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da2e435f33e8527793e009700c30e60868d196be
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2767'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 플랫폼 {#platform}
 
-Adobe Experience Manager는 여러 플랫폼에서 지원되지만 Linux 및 Windows 기반의 기본 툴에 대한 지원이 대폭 강화되어 최적의 성능과 구현 용이성을 제공합니다. 배포의 높은 메모리 요구 사항을 충족하기 위해 64비트 운영 체제를 배포하는 것이 [!DNL Experience Manager Assets] 좋습니다. Adobe Experience Manager 배포와 마찬가지로 가능한 한 TarMK를 구현해야 합니다. TarMK는 단일 작성자 인스턴스 이상으로 확장할 수 없지만 MongoMK보다 뛰어난 것으로 나타났습니다. TarMK 오프로드 인스턴스를 추가하여 배포의 워크플로우 처리 능력을 높일 수 [!DNL Experience Manager Assets] 있습니다.
+다양한 플랫폼에서 Experience Manager이 지원되지만 Adobe는 Linux 및 Windows 기반의 기본 툴을 가장 많이 지원하므로 최적의 성능과 구현 용이성을 제공합니다. 배포의 높은 메모리 요구 사항을 충족하기 위해 64비트 운영 체제를 배포하는 것이 [!DNL Experience Manager Assets] 좋습니다. 모든 Experience Manager 배포과 마찬가지로 가능한 모든 곳에 TarMK를 구현해야 합니다. TarMK는 단일 작성자 인스턴스 이상으로 확장할 수 없지만 MongoMK보다 뛰어난 것으로 나타났습니다. TarMK 오프로드 인스턴스를 추가하여 배포의 워크플로우 처리 능력을 높일 수 [!DNL Experience Manager Assets] 있습니다.
 
 ### 임시 폴더 {#temp-folder}
 
@@ -55,9 +55,8 @@ Windows OS의 경우 타사 드라이버를 사용하여 RAM 드라이브를 만
 
 Adobe는 최적의 성능을 위해 Java 8 [!DNL Experience Manager Assets] 에 배포할 것을 권장합니다.
 
->[!NOTE]
->
->Oracle은 2015년 4월 Java 7에 대한 업데이트 해제를 중지했습니다.
+<!-- TBD: Link to the latest official word around Java.
+-->
 
 ### JVM 매개 변수 {#jvm-parameters}
 
@@ -77,7 +76,7 @@ Adobe는 최적의 성능을 위해 Java 8 [!DNL Experience Manager Assets] 에 
 
 ### 버퍼링된 이미지 캐시의 최대 크기 구성 {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-많은 양의 자산을 Adobe Experience Manager [!DNLA]에 업로드할 때, 메모리 소모에서 예상치 못한 스파이크를 허용하고 OutOfMemoryErrors로 JVM이 실패하는 것을 방지하려면 버퍼링된 이미지 캐시의 구성된 최대 크기를 줄입니다. 최대 더미(- `Xmx`매개 변수)가 5GB이고, Oak BlobCache가 1GB로 설정되고, 문서 캐시가 2GB로 설정되는 시스템이 있는 경우를 생각해 보십시오. 이 경우 버퍼링된 캐시는 최대 1.25GB와 메모리를 사용하므로 예상치 못한 스파이크에 대해 0.75GB 메모리만 남습니다.
+많은 양의 자산을 [!DNLAAdobe Experience Manager]에 업로드할 때, 메모리 소비에서 예상치 못한 스파이크가 발생할 수 있도록 하고 OutOfMemoryErrors로 JVM이 실패하는 것을 방지하려면 버퍼링된 이미지 캐시의 구성된 최대 크기를 줄입니다. 최대 더미(- `Xmx`매개 변수)가 5GB이고, Oak BlobCache가 1GB로 설정되고, 문서 캐시가 2GB로 설정되는 시스템이 있는 경우를 생각해 보십시오. 이 경우 버퍼링된 캐시는 최대 1.25GB와 메모리를 사용하므로 예상치 못한 스파이크에 대해 0.75GB 메모리만 남습니다.
 
 OSGi 웹 콘솔에서 버퍼링된 캐시 크기를 구성합니다. 에서 `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`속성을 바이트 단위 `cq.dam.image.cache.max.memory` 로 설정합니다. 예를 들어 1073741824는 1GB(1024 x 1024 x 1024 = 1GB)입니다.
 
@@ -242,7 +241,7 @@ XMP writeback은 메타데이터를 수정할 때마다 원래 에셋을 업데�
 
 ## 검색 색인 {#search-indexes}
 
-최신 서비스 팩 및 성능 관련 핫픽스는 시스템 색인에 대한 업데이트를 자주 포함하므로 구현해야 합니다. 색인 [최적화에 대한 성능 조정 팁을](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) 참조하십시오.
+최신 서비스 팩 및 성능 관련 핫픽스는 시스템 색인에 대한 업데이트가 자주 포함되므로 구현해야 합니다. 색인 [최적화에 대한 성능 조정 팁을](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) 참조하십시오.
 
 자주 실행하는 쿼리에 대한 사용자 정의 색인을 만듭니다. 자세한 내용은 슬로우 쿼리 [분석](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) 및 사용자 정의 인덱스 [를 만드는 방법을 참조하십시오](/help/sites-deploying/queries-and-indexing.md). 쿼리 및 색인 우수 사례에 대한 추가 인사이트를 보려면 쿼리 및 색인 작성 [우수 사례를 참조하십시오](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
