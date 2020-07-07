@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
@@ -49,7 +49,7 @@ PDF Generator가 Acrobat 5.0 이상에서 만든 PDF 문서에는 XML 형식의 
 
 문서 메타데이터에는 Acrobat의 [문서 속성] 대화 상자의 [설명] 탭에도 표시되는 정보가 포함되어 있습니다(이에 제한되지 않음). 설명 탭에서 변경한 내용은 문서 메타데이터에 반영됩니다. 타사 제품을 사용하여 문서 메타데이터를 확장 및 수정할 수 있습니다.
 
-Adobe XMP(Extensible Metadata Platform)는 출판 워크플로우 전반에서 문서 메타데이터의 작성, 처리 및 교환을 표준화하는 공통 XML 프레임워크를 Adobe 애플리케이션에 제공합니다. 문서 메타데이터 XML 소스 코드를 XMP 포맷으로 저장하고 가져올 수 있으므로 다양한 문서 간에 메타데이터를 손쉽게 공유할 수 있습니다. XMP 파일에 대한 자세한 내용은 XMP( [Extensible Metadata Platform)](https://www.adobe.com/products/xmp/) 및 [Adobe XMP 개발자 센터를 참조하십시오](https://www.adobe.com/devnet/xmp.html).
+Adobe XMP(Extensible Metadata Platform)은 출판 워크플로우 전반에서 문서 메타데이터의 작성, 처리 및 교환을 표준화하는 공통 XML 프레임워크를 Adobe 애플리케이션에 제공합니다. 문서 메타데이터 XML 소스 코드를 XMP 포맷으로 저장하고 가져올 수 있으므로 다양한 문서 간에 메타데이터를 손쉽게 공유할 수 있습니다. XMP 파일에 대한 자세한 내용은 XMP( [Extensible Metadata Platform)](https://www.adobe.com/products/xmp/) 및 [Adobe XMP 개발자 센터를 참조하십시오](https://www.adobe.com/devnet/xmp.html).
 
 Acrobat에서 XMP 파일을 만들 수 있습니다.
 
@@ -66,19 +66,21 @@ ZIP 파일에 폴더 계층 구조의 가장 낮은 수준에서 둘 이상의 H
 >
 >* HTML을 PDF로 변환 기능을 사용하려면 시스템 글꼴 디렉토리의 특정 글꼴이 필요합니다. Linux, Solaris 및 AIX 시스템의 경우 시스템 글꼴 디렉토리에 Courier 글꼴이 포함되어야 합니다. Windows 시스템의 경우 시스템 글꼴 디렉토리에 Times New Roman이 포함되어야 합니다.
    >
-   > 
-* (UNIX 기반 시스템만 해당) 일본어 글꼴이 포함된 웹 페이지를 PDF 문서로 변환하려면 AEM Forms 서버에서 다음 일본어 글꼴 중 하나를 사용할 수 있어야 합니다.
    >
-   >   
-   * 사자나미 고딕
-   >   * &quot;Kozuka Gothic Pro-VI&quot;
-   >   * &quot;Kozuka Mincho Pro-VI&quot;
-   >   * 사자나미 고딕
-   >   * &quot;Kozuka Mincho Pr6N&quot;
-   >   * &#39;사자나미 민초&#39;
-   >   * &quot;Adobe Heiti Std&quot;
-   >   * &quot;Adobe Song Std&quot;
->* 로컬 파일 시스템에서 파일을 업로드하려면 HTML을 PDF로 파일 업로드 옵션을 사용합니다.
+* (UNIX 기반 시스템에만 해당) 일본어 글꼴이 포함된 웹 페이지를 PDF 문서로 변환하려면 AEM Forms 서버에서 다음 일본어 글꼴 중 하나를 사용할 수 있어야 합니다.
+   >
+   >  
+* 사자나미 고딕
+>  * &quot;Kozuka Gothic Pro-VI&quot;
+>  * &quot;Kozuka Mincho Pro-VI&quot;
+>  * 사자나미 고딕
+>  * &quot;Kozuka Mincho Pr6N&quot;
+>  * &#39;사자나미 민초&#39;
+>  * &quot;Adobe Heiti Std&quot;
+>  * &quot;Adobe Song Std&quot;
+   >
+   >
+* 로컬 파일 시스템에서 파일을 업로드하려면 HTML을 PDF로 파일 업로드 옵션을 사용합니다.
 
 
 1. 관리 콘솔에서 서비스 > PDF 생성기 > HTML을 PDF로 클릭합니다.
