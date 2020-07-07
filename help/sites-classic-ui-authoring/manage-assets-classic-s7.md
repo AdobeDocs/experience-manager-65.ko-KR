@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
-translation-type: ht
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 100%
 
@@ -339,13 +339,12 @@ Scene7 컨텐츠 브라우저를 사용하면 AEM에서 직접 Scene7의 컨텐�
 
    >
    >
-* 비디오의 경우 Scene7 컨텐츠 브라우저는 다음을 지원합니다. >
-   >    * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
-   >    * 단일 MP4 비디오
-   >    * 단일 F4V 동영상
-
->
-
+* 비디오의 경우 Scene7 컨텐츠 브라우저는 다음을 지원합니다.
+   >
+   >  
+* 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
+>  * 단일 MP4 비디오
+>  * 단일 F4V 동영상
 
 
 ### 컨텐츠 찾아보기 {#browsing-content-in-the-classic-ui}
