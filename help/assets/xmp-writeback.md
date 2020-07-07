@@ -3,9 +3,9 @@ title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능을 사용하여 자산의 메타데이터 변경 내용을 자산의 모든 표현물 또는 특정 표현물에 전달하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c1c845a479fcf04db1b2da8bcb9cf765fedd58b6
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '793'
 ht-degree: 2%
 
 ---
@@ -64,15 +64,15 @@ XMP 원본에 대한 기능이 변환 축소판 140.100.png 및 319.319.png에 �
 >
 >64비트 Linux의 XMP 쓰기 저장 문제 [의 경우 64비트 RedHat Linux에서 XMP 다시 쓰기를 활성화하는 방법을 참조하십시오](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
->지원되는 플랫폼에 대한 자세한 내용은 [XMP 메타데이터 쓰기 백 사전 요구 사항을 참조하십시오](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+>지원되는 플랫폼에 대해서는 [XMP 메타데이터 쓰기 백 사전 요구 사항을 참조하십시오](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
 ## XMP 메타데이터 필터링 {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] 자산 이진에서 읽고 자산을 인제스트할 때 JCR에 저장된 XMP 메타데이터에 대한 차단된 목록과 허용되는 속성/노드 목록 필터링을 지원합니다.
+[!DNL Experience Manager Assets] 자산 이진에서 읽고 자산을 인제스트할 때 JCR에 저장된 XMP 메타데이터에 대한 속성/노드의 차단 목록 및 허용 목록 필터링을 모두 지원합니다.
 
-차단된 목록을 사용하여 필터링하면 제외에 지정된 속성을 제외한 모든 XMP 메타데이터 속성을 가져올 수 있습니다. 하지만 대량의 XMP 메타데이터가 있는 INDD 파일(예: 1000개의 노드가 10,000개 속성)과 같은 자산 유형의 경우 필터링할 노드 이름이 미리 알려지는 것은 아닙니다. 차단된 목록을 사용하여 필터링하면 많은 XMP 메타데이터가 있는 많은 수의 자산을 가져올 수 있는 경우, AEM 인스턴스/클러스터에는 끊어진 관측 대기열과 같은 안정성 문제가 발생할 수 있습니다.
+차단 목록을 사용하여 필터링하면 제외에 지정된 속성을 제외한 모든 XMP 메타데이터 속성을 가져올 수 있습니다. 하지만 대량의 XMP 메타데이터가 있는 INDD 파일(예: 1000개의 노드가 10,000개 속성)과 같은 자산 유형의 경우 필터링할 노드 이름이 미리 알려지는 것은 아닙니다. 차단 목록을 사용하여 필터링하면 많은 XMP 메타데이터가 있는 많은 자산을 가져올 수 있는 경우, AEM 인스턴스/클러스터는 대기 줄이 막혀 있는 것과 같이 안정성 문제가 발생할 수 있습니다.
 
-허용된 목록을 통해 XMP 메타데이터를 필터링하면 가져올 XMP 속성을 정의할 수 있어 이 문제가 해결됩니다. 이렇게 하면 기타 또는 알 수 없는 XMP 속성이 무시됩니다. 이전 버전과의 호환성을 위해 차단된 목록을 사용하는 필터에 이러한 속성 중 일부를 추가할 수 있습니다.
+허용 목록을 통해 XMP 메타데이터를 필터링하면 가져올 XMP 속성을 정의할 수 있어 이 문제가 해결됩니다. 이렇게 하면 기타 또는 알 수 없는 XMP 속성이 무시됩니다. 이전 버전과의 호환성을 위해 차단 목록을 사용하는 필터에 이러한 속성 중 일부를 추가할 수 있습니다.
 
 >[!NOTE]
 >
@@ -80,14 +80,14 @@ XMP 원본에 대한 기능이 변환 축소판 140.100.png 및 319.319.png에 �
 
 1. 구성 관리자를 열려면 액세스 `https://[aem_server]:[port]/system/console/configMgr`를 참조하십시오.
 1. Adobe **[!UICONTROL CQ DAM XmpFilter 구성을]** 엽니다.
-1. 허용된 목록을 통해 필터링을 적용하려면 [XMP 속성에 **[!UICONTROL 허용 목록 적용]**]을 선택하고 [XMP 필터링에 대해 **[!UICONTROL 허용되는 XML 이름]** ] 상자에서 가져올 속성을 지정합니다.
+1. 허용 목록을 통해 필터링을 적용하려면 [XMP 속성에 **[!UICONTROL 허용 목록에 추가하다 적용]**]을 선택하고 [XMP 필터링에 대해 **[!UICONTROL 허용되는 XML 이름]** ] 상자에서 가져올 속성을 지정합니다.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. 허용된 목록을 통한 필터링을 적용한 후 차단된 XMP 속성을 필터링하려면 [XMP 필터링을 위한 **[!UICONTROL 차단된 XML 이름] 상자에 해당 속성을]** 지정합니다.
+1. 허용 목록을 통한 필터링을 적용한 후 차단된 XMP 속성을 필터링하려면 XMP 필터링에 대해 **[!UICONTROL 차단된 XML 이름 상자에 해당 속성을]** 지정합니다.
 
    >[!NOTE]
    >
-   >기본적으로 **[!UICONTROL XMP 속성에 블록 목록]** 적용 옵션이 선택되어 있습니다. 즉, 차단된 목록을 사용한 필터링은 기본적으로 활성화됩니다. 이러한 필터링을 비활성화하려면 [XMP 속성에 **[!UICONTROL 블록 목록 적용] 옵션을 선택]** 취소합니다.
+   >[ **[!UICONTROL XMP 차단 목록에 추가하다 속성에 적용]** ] 옵션이 기본적으로 선택되어 있습니다. 즉, 차단 목록을 사용한 필터링은 기본적으로 활성화되어 있습니다. 이러한 필터링을 비활성화하려면 [XMP 속성에 **[!UICONTROL 차단 목록에 추가하다 적용] 옵션을 선택 취소합니다]** .
 
 1. 변경 사항을 저장합니다.
