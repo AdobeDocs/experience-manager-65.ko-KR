@@ -3,9 +3,9 @@ title: 디지털 자산을 다운로드할 수 [!DNL Adobe Experience Manager]�
 description: 다운로드 기능을 활성화하거나 비활성화하는 방법 [!DNL Adobe Experience Manager] 을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '795'
 ht-degree: 3%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 3%
 **자산을 다운로드하려면**
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 내비게이션을 누릅니다]**.
-1. 탐색 페이지에서 자산 > **[!UICONTROL 파일을 누릅니다.]**
+1. 탐색 페이지에서 **[!UICONTROL 자산]** > **[!UICONTROL 파일을 누릅니다.]**
 1. 다운로드할 자산이 들어 있는 폴더로 이동합니다.
 1. 폴더를 선택하거나 폴더 내에서 하나 이상의 자산을 선택합니다.
 1. 도구 모음에서 다운로드를 **[!UICONTROL 누릅니다.]**
 
    ![Experience Manager 자산에서 자산을 다운로드할 때 사용 가능한 옵션](/help/assets/assets/asset-download1.png)
 
-   *다운로드 대화 상자 옵션.*
+   *그림: 다운로드 대화 상자 옵션.*
 
 1. 다운로드 대화 상자에서 원하는 다운로드 옵션을 선택합니다.
 
