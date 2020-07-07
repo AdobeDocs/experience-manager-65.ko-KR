@@ -3,7 +3,7 @@ title: 자산 통찰력
 description: 자산 인사이트 기능을 사용하여 타사 웹 사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 이미지의 사용자 등급과 사용 통계를 추적하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 1%
@@ -48,7 +48,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >자산 인사이트 기능은 일반적으로 Adobe Analytics의 솔루션 데이터를 정기적으로 포함하므로 솔루션 섹션에 가장 최근 데이터가 표시되지 않을 수 있습니다. 데이터가 표시되는 기간은 자산 인사이트에서 Analytics 데이터를 검색하기 위해 실행하는 가져오기 작업의 예약에 따라 다릅니다.
+   >자산 인사이트 기능은 일반적으로 Adobe Analytics의 솔루션 데이터를 정기적으로 포함하므로 솔루션 섹션에 가장 최근 데이터가 표시되지 않을 수 있습니다. 데이터가 표시되는 기간은 자산 인사이트가 Analytics 데이터를 검색하기 위해 실행하는 가져오기 작업의 예약에 따라 다릅니다.
 
 1. 일정 기간 동안 자산에 대한 성능 통계를 그래픽으로 보려면 **[!UICONTROL 성과 통계]** 섹션에서 기간을 선택합니다. 클릭 및 노출 수를 비롯한 세부 사항은 그래프의 트렌드 라인으로 표시됩니다.
 
