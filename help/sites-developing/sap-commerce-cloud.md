@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -172,6 +172,7 @@ hybris에서 유지 관리되는 제품 데이터를 AEM에서 사용할 수 있
 * hybris 확장 기능은 지정된 간격(예: 간격을 초 단위로 지정하는 24시간마다)에 변경 내용을 AEM으로 가져오도록 구성할 수 있는 폴링 가져오기(&quot;hybris&quot; scheme&quot;)를 제공합니다.
 
    * 
+
       ```
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
@@ -226,10 +227,9 @@ hybris에서 유지 관리되는 제품 데이터를 AEM에서 사용할 수 있
    >
    >
 1. 하나 더
-   >   이 추가 변형은 제품 참조의 `variationAxis` 속성을 통해 선택됩니다(일반적으로 Geometrixx Outdoors `color` ).
 >
-
-
+>   
+이 추가 변형은 제품 참조의 `variationAxis` 속성을 통해 선택됩니다(일반적으로 Geometrixx Outdoors `color` ).
 
 #### 제품 참조 및 제품 데이터 {#product-references-and-product-data}
 
@@ -356,7 +356,7 @@ public class AxisFilter implements VariantFilter {
 * **AEM-일반 제품 구조**
 
    * 각 변형에는 자체 리프 노드가 있어야 합니다.
-   * 제품 인터페이스는 제품 및 변형을 모두 표시하지만 관련 저장소 노드는 해당 항목과 관련이 있습니다.
+   * 제품 인터페이스는 제품 및 변형을 모두 표시하지만 관련 저장소 노드는 그에 따라 다릅니다.
    * 제품 노드는 제품 속성과 변형 축에 대해 설명합니다.
 
 #### 예 {#example-1}
