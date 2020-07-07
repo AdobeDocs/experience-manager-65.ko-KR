@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86d3f14ec9e99297ede0aa1c027884d7f73665bc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 2%
@@ -104,7 +104,7 @@ AEM WCM은 여러 사용자 및 그룹을 설치합니다. 설치 후 보안 콘
   <tr>
    <td>dam-users</td>
    <td>그룹</td>
-   <td>일반적인 AEM 자산 사용자를 위한 기본 참조 그룹입니다. 이 그룹의 구성원은 자산 및 컬렉션의 업로드/공유를 활성화할 수 있는 적절한 권한이 있습니다.</td>
+   <td>일반 AEM Assets 사용자를 위한 기본 참조 그룹 이 그룹의 구성원은 자산 및 컬렉션의 업로드/공유를 활성화할 수 있는 적절한 권한이 있습니다.</td>
    <td> </td>
   </tr>
   <tr>
@@ -493,11 +493,11 @@ AEM WCM 보안에 액세스하려면 다음 중 하나를 수행합니다.
 >[!NOTE]
 >
 >보안 콘솔을 사용하여 관리 암호를 변경할 수 없습니다. 관리자 계정의 암호를 변경하려면 [ [사용자] 콘솔](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) (Granite Operations)을 사용합니다.
-> JEE에서 AEM Forms를 사용하는 경우, 아래 지침에 따라 암호를 변경하려면 JEE 관리 콘솔(/adminui)에서 AEM Forms를 사용하십시오.
+>
+>JEE에서 AEM Forms을 사용하는 경우, 아래 지침에 따라 암호를 변경하기 위해 JEE 관리 콘솔(/adminui)의 AEM Forms을 사용하지 마십시오.
 
 1. 보안 **** 콘솔에서 암호를 변경할 사용자 이름을 두 번 클릭합니다.
 1. 속성 **탭을** 클릭합니다(아직 활성화되지 않은 경우).
-
 1. 암호 **설정을 클릭합니다**. 암호를 변경할 수 있는 암호 설정 창이 열립니다.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
