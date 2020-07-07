@@ -1,9 +1,9 @@
 ---
-title: Enable Asset Insights through DTM
+title: DTM을 통해 자산 통찰력 활성화
 description: Adobe DTM(다이내믹 태그 관리)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 1%
@@ -44,15 +44,15 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Experience Manager 로고를 클릭하고 도구 > **[!UICONTROL 자산으로 이동합니다]**.
+1. Experience Manager 로고를 클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산으로 이동합니다]**.
 1. 인사이트 **[!UICONTROL 페이지 추적기를]**&#x200B;클릭하고 추적기 코드를 복사한 다음 6단계에서 연 스크립트 대화 상자에 붙여넣습니다. 변경 사항을 저장합니다.
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` 가 제거됩니다. DTM의 Adobe Analytics 도구를 통해 제공될 예정입니다.
-   > * 에 대한 `assetAnalytics.dispatcher.init`() 호출이 제거됩니다. 이 함수는 DTM의 Adobe Analytics 도구 로드가 끝나면 호출될 예정입니다.
-   > * 자산 통찰력 페이지 추적기가 호스팅되는 위치(예: Experience Manager, CDN 등)에 따라 스크립트 소스의 출처를 변경해야 할 수 있습니다.
-   > * Experience Manager에서 호스팅하는 페이지 추적기의 경우 소스는 발송자 인스턴스의 호스트 이름을 사용하여 게시 인스턴스를 가리켜야 합니다.
+   >* `AppMeasurement.js` 가 제거됩니다. DTM의 Adobe Analytics 도구를 통해 제공될 예정입니다.
+   >* 통화가 `assetAnalytics.dispatcher.init()` 제거됩니다. 이 함수는 DTM의 Adobe Analytics 도구 로드가 끝나면 호출될 예정입니다.
+   >* 자산 통찰력 페이지 추적기가 호스팅되는 위치(예: Experience Manager, CDN 등)에 따라 스크립트 소스의 출처를 변경해야 할 수 있습니다.
+   >* Experience Manager에서 호스팅하는 페이지 추적기의 경우 소스는 발송자 인스턴스의 호스트 이름을 사용하여 게시 인스턴스를 가리켜야 합니다.
 
 
 1. 액세스 `https://dtm.adobe.com`. 웹 **[!UICONTROL 속성]** 에서 **[!UICONTROL 개요를]** 클릭하고 도구추가를 클릭하거나 기존Adobe Analytics 도구를 엽니다. 도구를 만드는 동안 구성 방법 **[!UICONTROL 을]** 자동으로 설정할 수 **[!UICONTROL 있습니다]**.
