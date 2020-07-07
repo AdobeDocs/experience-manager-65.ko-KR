@@ -3,7 +3,7 @@ title: 에서 비동기 작업을 [!DNL Adobe Experience Manager]구성합니다
 description: 리소스를 많이 사용하는 작업을 비동기적으로 완료하여 성능을 최적화할 수 [!DNL Experience Manager Assets]있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 18b81ba3fcf15838ac9bebd451f4ad8b0b6e3bbb
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 1%
