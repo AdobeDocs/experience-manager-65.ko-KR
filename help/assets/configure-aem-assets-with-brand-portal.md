@@ -9,11 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
-translation-type: ht
-source-git-commit: 9a27aabef07d5b5104c08c414138fbb22e284a68
-workflow-type: ht
-source-wordcount: '2074'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d7e2d33b81847b15d1e33b3aa406e5e91d44a5f8
+workflow-type: tm+mt
+source-wordcount: '2045'
+ht-degree: 97%
 
 ---
 
@@ -45,9 +45,9 @@ AEM(Adobe Experience Manager) Assets는 Brand Portal 테넌트의 인증을 위�
 
 제공된 정보는 이 도움말을 읽는 사람이 다음 기술을 잘 알고 있다는 가정을 기반으로 합니다.
 
-* Adobe Experience Manager 및 AEM 패키지 설치, 구성 및 관리
+* Adobe Experience Manager 및 AEM 패키지 설치, 구성 및 관리.
 
-* Linux 및 Microsoft Windows 운영 체제 사용
+* Linux 및 Microsoft Windows 운영 체제 사용.
 
 ## 전제 조건 {#prerequisites}
 
@@ -357,7 +357,7 @@ Brand Portal 클라우드 서비스를 만들려면 다음 절차를 수행하�
 
    >[!NOTE]
    >
-   >일부 자산의 복제가 실패할 수 있으므로 복제 에이전트를 비활성화하지 마십시오.
+   >복제 에이전트를 비활성화하지 마십시오. 이로 인해 일부 자산의 복제가 실패할 수 있습니다.
 
 AEM Assets 작성자 인스턴스가 Brand Portal을 사용하여 성공적으로 구성되었으므로 이제 다음 작업을 수행할 수 있습니다.
 
@@ -375,7 +375,7 @@ AEM Assets 작성자 인스턴스가 Brand Portal을 사용하여 성공적으�
 
 ### 실행 중인 작업 확인 {#verify-jobs}
 
-수정하기 전에 AEM Assets 작성자 인스턴스에서 게시 작업이 실행되고 있지 않은지 확인합니다. 이러한 경우 4개의 복제 에이전트를 모두 확인하고 큐가 유휴 상태인지/비어 있는지 확인할 수 있습니다.
+수정하기 전에 AEM Assets 작성자 인스턴스에서 게시 작업이 실행되고 있지 않은지 확인합니다. 이 경우 네 개의 복제 에이전트를 모두 확인하고 대기열이 비어 있는지 확인할 수 있습니다.
 
 1. AEM Assets 작성자 인스턴스에 로그인합니다.
 
@@ -415,7 +415,7 @@ AEM Assets 작성자 인스턴스가 Brand Portal을 사용하여 성공적으�
    ![](assets/delete-mac-user.png)
 
 
-이제 AEM 6.5 작성자 인스턴스에서 [구성을 만들](#configure-new-integration-65) 수 있습니다.
+이제 AEM 6.5 작성자 인스턴스의 Adobe 개발자 콘솔을 통해 구성을 [만들](#configure-new-integration-65) 수 있습니다.
 
 
 
@@ -431,8 +431,4 @@ AEM Assets 작성자 인스턴스가 Brand Portal을 사용하여 성공적으�
    <li>Step text</li>
    -->
 
-복제가 성공하면 자산, 폴더 및 컬렉션을 Brand Portal에 게시할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 
-* [자산을 Brand Portal에 게시](/help/assets/brand-portal-publish-assets.md)
-* [폴더를 Brand Portal에 게시](/help/assets/brand-portal-publish-folder.md)
-* [컬렉션을 Brand Portal에 게시](/help/assets/brand-portal-publish-collection.md)
