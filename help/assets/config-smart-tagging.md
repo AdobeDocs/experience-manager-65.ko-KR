@@ -3,9 +3,9 @@ title: 스마트 콘텐츠 서비스를 사용하여 자산 태그 지정을 구
 description: 스마트 콘텐츠 서비스를 사용하여 스마트 태그 지정 및 고급 스마트 태그 [!DNL Adobe Experience Manager]기능을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dfac819018e85e0e8221bfcc57bc1eaf43b7ff25
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1116'
 ht-degree: 2%
 
 ---
@@ -93,7 +93,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 통합을 구성하려면 Adobe 개발자 콘솔 통합에서 기술 계정 ID, 조직 ID, 클라이언트 암호, 인증 서버 및 API 키 필드의 값을 사용하십시오. 스마트 태그 클라우드 구성을 만들면 배포에서 API 요청을 인증할 수 [!DNL Experience Manager] 있습니다.
 
-1. 에서 [!DNL Experience Manager]도구 > Cloud Service **[!UICONTROL > 기존 Cloud Service]** 으로 이동하여 [!UICONTROL Cloud Service] 콘솔을 엽니다.
+1. 에서 [!DNL Experience Manager]열려 있는 기존 Cloud ServiceConsole을 **[!UICONTROL 탐색하는]** [도구] > **[!UICONTROL Cloud Service]** > **[!UICONTROL 레거시 Cloud Service]**  으로 이동합니다.
 1. 자산 **[!UICONTROL 스마트 태그]**&#x200B;아래에서 위에서 만든 구성을 엽니다. 서비스 설정 페이지에서 편집을 **[!UICONTROL 클릭합니다]**.
 1. [ **[!UICONTROL AEM 스마트 콘텐츠 서비스]** ] 대화 상자에서 **[!UICONTROL 서비스 URL]** 및 **[!UICONTROL 인증 서버]** 필드에 대해 미리 채워진 값을사용합니다.
 1. 필드 API 키, **[!UICONTROL 기술 계정]** ID **[!UICONTROL ,]**&#x200B;조직 ID **[!UICONTROL 및 클라이언트 암호]**&#x200B;의 경우 위에서 생성된 값을 ****&#x200B;사용합니다.
@@ -103,15 +103,13 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 구성을 완료한 후 JMX MBean을 사용하여 구성을 확인할 수 있습니다. 유효성을 확인하려면 다음 단계를 따르십시오.
 
 1. 에서 [!DNL Experience Manager] 서버에 액세스합니다 `https://[aem_server]:[port]`.
-1. 도구 > **[!UICONTROL 작업 > 웹 콘솔로]** 이동하여 OSGi 콘솔을 엽니다. 기본 **[!UICONTROL > JMX를 클릭합니다]**.
-1. com.day.cq.da **[!UICONTROL m.similaritysearch.internal.impl을 클릭합니다]**. 유사성 **[!UICONTROL 검색 기타 작업을 엽니다]**.
-1. 유효성 **[!UICONTROL 검사 구성()을 클릭합니다]**. 구성 유효성 **[!UICONTROL 확인]** 대화 상자에서 호출 **[!UICONTROL 을 클릭합니다]**.
+1. 도구 > **[!UICONTROL 작업]** **** > **[!UICONTROL 웹 콘솔]** 로 이동하여 OSGi 콘솔을엽니다. 기본 **[!UICONTROL > JMX]를[!UICONTROL 클릭합니다]**.
+1. 클릭 `com.day.cq.dam.similaritysearch.internal.impl`. 유사성 **[!UICONTROL 검색 기타 작업을 엽니다]**.
+1. 클릭 `validateConfigs()`. 구성 유효성 **[!UICONTROL 확인]** 대화 상자에서 호출 **[!UICONTROL 을 클릭합니다]**. 유효성 검사 결과가 동일한 대화 상자에 표시됩니다.
 
-   유효성 검사 결과가 동일한 대화 상자에 표시됩니다.
+## DAM 자산 [!UICONTROL 업데이트 워크플로우에서 스마트 태그] 설정(선택 사항) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-## DAM 자산 업데이트 워크플로우에서 스마트 태그 지정 사용(선택 사항) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
-
-1. 에서 [!DNL Experience Manager]도구 > 워크플로우 > 모델 **[!UICONTROL 으로 이동합니다]**.
+1. 에서 [!DNL Experience Manager]도구 **[!UICONTROL >]** 워크플로우 **[!UICONTROL >]** 모델로 **[!UICONTROL 이동합니다]**.
 1. 워크플로우 **[!UICONTROL 모델]** 페이지에서 **[!UICONTROL DAM 자산]** 업데이트 워크플로우 모델을선택합니다.
 1. 도구 **[!UICONTROL 모음에서]** 편집을 클릭합니다.
 1. 사이드 패널을 확장하여 단계를 표시합니다. DAM 워크플로우 섹션에서 **[!UICONTROL 사용할 수 있는 스마트 태그]** 자산 **[!UICONTROL 단계를 드래그하여]** 축소판 처리단계 뒤에 놓습니다.
