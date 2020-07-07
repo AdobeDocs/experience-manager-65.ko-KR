@@ -3,7 +3,7 @@ title: 자산 템플릿 [!DNL Adobe Experience Manager Assets].
 description: 자산 템플릿 [!DNL Adobe Experience Manager Assets] 과 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 1%
@@ -95,7 +95,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >인스턴스에서 템플릿 [!DNL Experience Manager] 의 데이터를 추출하고 [!DNL InDesign Server] 편집할 수 있도록 하려면 인스턴스와 [!DNL Experience Manager Assets] [!DNL InDesign] 통합되어야 합니다. 자세한 내용은 Experience Manager Assets와 InDesign Server [통합을 참조하십시오](/help/assets/indesign.md).
+   >인스턴스에서 템플릿 [!DNL Experience Manager] 의 데이터를 추출하고 [!DNL InDesign Server] 편집할 수 있도록 하려면 인스턴스와 [!DNL Experience Manager Assets] [!DNL InDesign] 통합되어야 합니다. 자세한 내용은 Experience Manager 에셋을 InDesign Server와 [통합을 참조하십시오](/help/assets/indesign.md).
 
 1. 편집 가능한 필드의 텍스트를 수정하려면 편집 가능한 필드 목록에서 텍스트 필드를 클릭하고 필드의 텍스트를 편집합니다.
 
@@ -131,17 +131,17 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >미리 보기 및 완료 아이콘은 자료 내의 편집 가능한 이미지 필드에 누락된 아이콘이 없는 경우에만 활성화됩니다. 자료에 아이콘이 없는 경우 템플릿에서 이미지를 확인할 [!DNL Experience Manager] 수 없기 [!DNL InDesign] 때문입니다. 일반적으로 다음 경우 이미지 [!DNL Experience Manager] 를 해결할 수 없습니다.
+   >미리 보기 및 완료 옵션은 담보물 내의 편집 가능한 이미지 필드에 누락된 아이콘이 없는 경우에만 활성화됩니다. 자료에 아이콘이 없는 경우 템플릿에서 이미지를 확인할 [!DNL Experience Manager] 수 없기 [!DNL InDesign] 때문입니다. 일반적으로 다음 경우 이미지 [!DNL Experience Manager] 를 해결할 수 없습니다.
    >
-   >    * 이미지는 기본 [!DNL InDesign] 템플릿에 포함되지 않습니다.
-   >    * 이미지는 로컬 파일 시스템에서 연결됩니다.
+   >* 이미지는 기본 [!DNL InDesign] 템플릿에 포함되지 않습니다.
+   >* 이미지는 로컬 파일 시스템에서 연결됩니다.
    >
    >이미지 [!DNL Experience Manager] 를 해결하려면 다음을 수행합니다.
    >
-   >    * 템플릿을 만드는 동안 이미지 [!DNL InDesign] 포함(링크 및 포함된 그래픽 [정보 참조](https://helpx.adobe.com/indesign/using/graphics-links.html)).
-   >    * 로컬 파일 시스템 [!DNL Experience Manager] 에 마운트한 다음 누락된 아이콘을 기존 에셋에 매핑합니다 [!DNL Experience Manager].
+   >* 템플릿을 만드는 동안 이미지 [!DNL InDesign] 포함(링크 및 포함된 그래픽 [정보 참조](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* 로컬 파일 시스템 [!DNL Experience Manager] 에 마운트한 다음 누락된 아이콘을 기존 에셋에 매핑합니다 [!DNL Experience Manager].
    >
-   >문서 작업에 대한 자세한 내용은 [!DNL InDesign] Experience Manager에서 InDesign 문서 [작업 모범 사례를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >문서 작업에 대한 자세한 내용은 Experience Manager에서 InDesign 문서를 사용하여 작업하는 [!DNL InDesign] 모범 사례를 참조하십시오 [](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. 브로셔에 대한 PDF 변환을 생성하려면 대화 상자에서 Acrobat 옵션을 선택한 다음 **[!UICONTROL 계속을 클릭합니다]**.
 1. 이 자료는 사용자가 시작한 폴더에 만들어집니다. 변환을 보려면, 자료를 열고 전역 탐색 목록에서 **[!UICONTROL 표현물]** 을 선택합니다.
