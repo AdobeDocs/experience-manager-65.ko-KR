@@ -3,7 +3,7 @@ title: 참조 및 여러 페이지 에셋을 사용하여 복합 자산을 관�
 description: 디지털 자산에 대한 참조를 만드는 방법을 [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]살펴보십시오. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 여러 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 0%
@@ -89,7 +89,7 @@ PDF 파일, AI 파일, 파일, 파일 등 여러 페이지 형식의 지원되�
 
 하위 자산 생성은 기본적으로 비활성화됩니다. 하위 자산 생성을 활성화하려면 다음 단계를 수행합니다.
 
-1. 관리자로 [!DNL Experience Manager] 로그인합니다. 도구 **[!UICONTROL > 워크플로우 > 모델에 액세스합니다]**.
+1. 관리자로 [!DNL Experience Manager] 로그인합니다. 도구 **[!UICONTROL > 워크플로우]** **** > **[!UICONTROL 모델에 액세스합니다]**.
 1. DAM **[!UICONTROL 자산 업데이트]** 워크플로우를 선택하고 편집을 **[!UICONTROL 클릭합니다]**.
 1. 사이드 패널 **[!UICONTROL 전환을]** 클릭하고 **[!UICONTROL 하위 자산 만들기]** 단계를 찾습니다. 워크플로우에 단계를 추가합니다. 동기화를 **[!UICONTROL 클릭합니다]**.
 
@@ -99,7 +99,7 @@ PDF 파일, AI 파일, 파일, 파일 등 여러 페이지 형식의 지원되�
 * 기존 다중 페이지 자산: 다음 단계 중 하나를 [!UICONTROL 따라 DAM 자산] 업데이트 워크플로우를 수동으로 실행합니다.
 
    * 자산을 선택하고 [!UICONTROL 타임라인] 을 클릭하여 왼쪽 패널을 엽니다. 또는 키보드 단축키를 사용합니다 `alt + 3`. 워크플로우 [!UICONTROL 시작]을 클릭하고 [!UICONTROL DAM 자산]업데이트 [!UICONTROL 를 선택한 다음]시작을 [!UICONTROL 클릭하고]Continue를 클릭합니다.
-   * 자산을 선택하고 도구 모음에서 [!UICONTROL 만들기 > 워크플로우] 를 클릭합니다. 팝업 대화 상자에서 [!UICONTROL DAM 자산] 업데이트 워크플로우를 선택하고 [!UICONTROL 시작을]클릭한 다음 [!UICONTROL 진행을 클릭합니다].
+   * 자산을 선택하고 도구 모음에서 [!UICONTROL 만들기] > [!UICONTROL 작업] 흐름을클릭합니다. 팝업 대화 상자에서 [!UICONTROL DAM 자산] 업데이트 워크플로우를 선택하고 [!UICONTROL 시작을]클릭한 다음 [!UICONTROL 진행을 클릭합니다].
 
 Microsoft Word 문서 전용으로, DAM Parse Word 문서 **[!UICONTROL 워크플로우를]** 실행합니다. Microsoft Word 문서의 내용에서 구성 `cq:Page` 요소를 생성합니다. 문서에서 추출한 이미지는 구성 요소에서 `cq:Page` 참조됩니다. 이러한 이미지는 하위 자산 생성을 사용하지 않는 경우에도 추출됩니다.
 
