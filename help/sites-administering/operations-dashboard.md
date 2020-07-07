@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9eb8f3921e7d485ca4eb035cd04a9d8731dd6b06
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '6229'
 ht-degree: 2%
@@ -115,7 +115,6 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
 
       * **유형:** `String`
       * **값:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
-
    >[!NOTE]
    >
    >위의 리소스 경로는 다음과 같이 만들어집니다. 상태 확인의 mbean 이름이 &quot;test&quot;인 경우 경로 끝에 &quot;test&quot;를 추가합니다 `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
@@ -154,7 +153,6 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
    * **태그(hc.tags):** 이 상태 확인에 대한 태그입니다. 이 복합 상태 검사가 다른 복합 상태 확인(예: 상태 확인 계층 구조)의 일부여야 하는 경우 이 합성이 관련된 태그를 추가합니다.
    * **MBean 이름(hc.mbean.name):** 이 복합 상태 확인의 JMX MBean에 제공될 Mbean의 이름입니다.
    * **필터 태그(filter.tags):** 복합 상태 확인에 사용되는 속성입니다. 합성이 집계해야 하는 태그입니다. 복합 상태 확인은 이 합성의 필터 태그와 일치하는 태그가 있는 모든 상태 검사를 그룹 아래에 집계합니다. 예를 들어 필터 태그 **테스트** 및 **확인** 이 있는 복합 상태 확인은 **테스트** 및 확인 **태그가 있는 모든 개별 및 복합 상태 확인을 모두 집계하고, 태그 속성** ()에 CheckTags `hc.tags`및CDS 태그를집계합니다.
-
    >[!NOTE]
    >
    >Apache Sling Composite Health Check의 새로운 각 구성에 대해 새 JMX Mbean이 생성됩니다.**
@@ -166,7 +164,6 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
    * **이름:** `Composite Health Check`
 
       * **유형:** `nt:unstructured`
-
    다음 속성 사용:
 
    * **이름:** `sling:resourceType`
@@ -177,7 +174,6 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
 
       * **유형:** `String`
       * **값:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
-
    >[!NOTE]
    >
    >기본적으로 Dashboard에 이미 있는 복합 검사 아래에 논리적으로 속하는 개별 상태 검사를 만드는 경우, 이러한 상태 확인은 자동으로 캡처되어 각각의 복합 검사 아래에 그룹화됩니다. 따라서 이러한 검사를 위해 새 구성 노드를 만들 필요가 없습니다.
@@ -342,7 +338,6 @@ AEM 6에는 두 가지 유형의 상태 검사가 있습니다.
    1. 왼쪽 창에서 고급 구성 아래의 **핵심 구성 관리자** 를 **누릅니다**.
    1. 모니터링 **섹션 아래에 있는 호스트** 링크를 **누릅니다** .
    1. 호스트 정의를 추가합니다.
-
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
    다음은 Nagios Core를 사용하는 경우 호스트 구성 파일의 예입니다.
@@ -481,7 +476,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### 쿼리 설명 {#explain-query}
 
-지정된 쿼리의 경우 Oak는 **oak:index** 노드 아래에 있는 저장소에 정의된 Oak 색인을 기반으로 가장 적합한 실행 방법을 알아내려고 합니다. 쿼리에 따라 Oak에서 다른 인덱스를 선택할 수 있습니다. Oak가 쿼리를 실행하는 방식을 이해하는 것이 쿼리를 최적화하는 첫 번째 단계입니다.
+지정된 쿼리의 경우 Oak는 **oak:index 노드 아래에 있는 저장소에 정의된 Oak 색인을 기반으로 가장 잘 실행되는 방법을** 파악하려고 합니다. 쿼리에 따라 Oak에서 다른 인덱스를 선택할 수 있습니다. Oak가 쿼리를 실행하는 방식을 이해하는 것은 쿼리를 최적화하는 첫 번째 단계입니다.
 
 설명 쿼리는 Oak가 쿼리를 실행하는 방법을 설명하는 도구입니다. AEM 시작 화면에서 **도구 - 작업 - 진단** 으로 이동한 다음 **쿼리 성능** 을 클릭하고 **쿼리 설명** 탭으로 전환하여 액세스할수 있습니다.
 
@@ -589,7 +584,7 @@ Lucene 이진 파일 정리 작업을 사용하여 lucene 바이너리를 제거
 
 >[!NOTE]
 >
-> 워크플로우 유지 관리에 대한 자세한 내용은 [이 페이지를 참조하십시오](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>워크플로우 유지 관리에 대한 자세한 내용은 [이 페이지를 참조하십시오](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### 감사 로그 유지 관리 {#audit-log-maintenance}
 
