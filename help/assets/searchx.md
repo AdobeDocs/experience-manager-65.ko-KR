@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager Assets의 검색 기능 확장
-description: Adobe Experience Manager Assets의 검색 기능을 기본값 이상으로 확장합니다.
+title: Adobe Experience Manager 자산의 검색 기능 확장
+description: Adobe Experience Manager 자산의 검색 기능을 기본값 이상으로 확장합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 7%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->기본적으로 /에 있는 디렉토리 구조가 `apps` 없으므로 만들어야 합니다. 노드 유형이 / 아래에 있는 노드 유형과 일치하는지 `libs`확인합니다.
+>기본적으로 아래 디렉토리 구조가 `/apps` 없으므로 만듭니다. 노드 유형이 아래 유형과 일치하는지 `/libs`확인합니다.
 
 ## 탭 추가 {#adding-tabs}
 
@@ -48,7 +48,7 @@ ht-degree: 7%
 
 [!DNL Assets] 에셋 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 예측 세트가 포함되어 있습니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [를 만들고 구성하는 데 포함됩니다](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Adobe Experience Manager 개발자는 기존의 예측 기능을 사용하는 것 외에도 [쿼리 빌더 API를 사용하여 자체 설명을 만들 수 있습니다](/help/sites-developing/querybuilder-api.md).
+Experience Manager 개발자는 기존의 예측 기능을 사용하는 것 외에도 [쿼리 빌더 API를 사용하여 자체 설명을 만들 수 있습니다](/help/sites-developing/querybuilder-api.md).
 
 사용자 정의 설명을 만들려면 [Widgets 프레임워크에 대한 기본적인 지식이 필요합니다](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -138,7 +138,7 @@ Adobe Experience Manager 개발자는 기존의 예측 기능을 사용하는 �
    </script>
    ```
 
-1. 구성 요소를 사용할 수 있게 하려면 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하게 만들려면 CRXDE에서 기본 유형의 **cq:editConfig** 노드를 **추가합니다**. 단락을 제거할 수 있도록 단일 값 **의 DELETE 값으로 다중 값 속성 cq:액션** 을 **추가합니다**.
+1. 구성 요소를 사용할 수 있게 하려면 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하게 만들려면 CRXDE에서 기본 유형의 **cq:editConfig** 노드를 **추가합니다**. 단락을 제거할 수 있도록 단일 값 **의 DELETE으로 다중 값 속성 cq:액션** 을 추가할 수 **있습니다**.
 1. 브라우저로 이동하고 샘플 페이지(예: **press.html**)에서 디자인 모드로 전환하고 설명 단락 시스템(예: **왼쪽)에 대한 새 구성 요소를 활성화합니다**.
 
 1. 이제 **편집** 모드에서 새 구성 요소를 사이드 킥에서 사용할 수 있습니다( **검색** 그룹에 있음). 설명 열에 구성 요소 **를** 삽입하고 검색 단어(예: **다이아몬드** )를 입력하고 확대경을 클릭하여 검색을 시작합니다.
@@ -242,7 +242,7 @@ Adobe Experience Manager 개발자는 기존의 예측 기능을 사용하는 �
        });
    ```
 
-1. 구성 요소를 사용할 수 있게 하려면 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하게 만들려면 CRXDE에서 기본 유형의 **cq:editConfig** 노드를 **추가합니다**. 단락을 제거할 수 있도록 단일 값 **의 DELETE 값으로 다중 값 속성 cq:액션** 을 **추가합니다**.
+1. 구성 요소를 사용할 수 있게 하려면 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하게 만들려면 CRXDE에서 기본 유형의 **cq:editConfig** 노드를 **추가합니다**. 단락을 제거할 수 있도록 단일 값 **의 DELETE으로 다중 값 속성 cq:액션** 을 추가할 수 **있습니다**.
 1. 브라우저로 이동하고 샘플 페이지(예: **press.html**)에서 디자인 모드로 전환하고 설명 단락 시스템(예: **왼쪽)에 대한 새 구성 요소를 활성화합니다**.
 1. 이제 **편집** 모드에서 새 구성 요소를 사이드 킥에서 사용할 수 있습니다( **검색** 그룹에 있음). 설명 열에 구성 요소를 **삽입합니다** .
 
@@ -296,6 +296,6 @@ Adobe Experience Manager 개발자는 기존의 예측 기능을 사용하는 �
 
 ## 검색 결과 사용자 정의 {#customizing-search-results}
 
-자산 공유 페이지의 검색 결과 프레젠테이션은 선택한 렌즈에 의해 제어됩니다. Adobe Experience Manager Assets에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 미리 정의된 렌즈 세트가 포함되어 있습니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [만들기 및 구성에서 다룹니다](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+자산 공유 페이지의 검색 결과 프레젠테이션은 선택한 렌즈에 의해 제어됩니다. Experience Manager 자산은 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 렌즈 세트와 함께 제공됩니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [만들기 및 구성에서 다룹니다](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Adobe Experience Manager 개발자는 기존 렌즈를 사용하는 것 외에도 직접 렌즈를 만들 수 있습니다.
+Experience Manager 개발자들은 기존의 렌즈를 사용하는 것 외에 자체 렌즈를 만들 수도 있다.
