@@ -3,7 +3,7 @@ title: Adobe Experience Manager에서 비공개 폴더를 만들고 공유합니
 description: Adobe Experience Manager 자산에서 비공개 폴더를 만들고 다른 사용자와 공유하며 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> 비공개 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다.
+>비공개 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다.
 
 1. 자산 콘솔의 도구 모음에서 **[!UICONTROL 만들기를]** 클릭한 다음 메뉴에서 **[!UICONTROL 폴더]** 를 선택합니다.
 
