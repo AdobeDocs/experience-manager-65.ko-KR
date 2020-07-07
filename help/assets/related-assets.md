@@ -3,7 +3,7 @@ title: 관련 자산
 description: 몇 가지 일반적인 특성을 공유하는 디지털 자산을 연결하는 방법을 알아봅니다. 또한 디지털 자산 간의 소스 파생적인 관계를 만들 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 3%
@@ -17,8 +17,9 @@ ht-degree: 3%
 
 이 기능을 사용하면 공급업체 또는 대리점과 저해상도 PDF 파일 또는 JPG 파일을 공유하고 요청 시 고해상도 INDD 파일을 사용할 수 있는 유연성을 얻을 수 있습니다.
 
->[!NOTE] 자산에 대한 편집 권한이 있는 사용자만 자산과 관련지을 수 있고 자산 관계를 취소할 수 있습니다.
+>[!NOTE]
 >
+>자산에 대한 편집 권한이 있는 사용자만 자산과 관련지을 수 있고 자산 관계를 취소할 수 있습니다.
 
 ## Relate assets {#relating-assets}
 
