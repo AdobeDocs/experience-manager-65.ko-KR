@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 5a97dd9a34d42bfbf3e2185763e4040e1190f297
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 3%
@@ -68,7 +68,7 @@ ht-degree: 3%
 
 ### 감시 폴더에서 일괄 처리 API 사용 {#using-the-batch-api-watched-folders}
 
-API를 쉽게 경험할 수 있도록 AEM Forms는 즉시 배치 API를 사용하도록 구성된 감시 폴더 서비스를 제공합니다. AEM Forms UI를 통해 서비스에 액세스하여 여러 대화형 통신을 생성할 수 있습니다. 요구 사항에 따라 맞춤형 서비스를 만들 수도 있습니다. 아래 나열된 방법을 사용하여 감시 폴더와 함께 배치 API를 사용할 수 있습니다.
+API를 쉽게 경험할 수 있도록 AEM Forms은 즉시 배치 API를 사용하도록 구성된 감시 폴더 서비스를 제공합니다. AEM Forms UI를 통해 서비스에 액세스하여 여러 대화형 통신을 생성할 수 있습니다. 요구 사항에 따라 맞춤형 서비스를 만들 수도 있습니다. 아래 나열된 방법을 사용하여 감시 폴더와 함께 배치 API를 사용할 수 있습니다.
 
 * JSON 파일 포맷의 입력 데이터(레코드)를 지정하여 인터랙티브한 커뮤니케이션 제작
 * 외부 데이터 소스에 저장되어 양식 데이터 모델을 통해 액세스되는 입력 데이터(레코드)를 사용하여 인터랙티브한 커뮤니케이션을 제작할 수 있습니다
@@ -177,7 +177,7 @@ Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파�
 
 1. AEM 인스턴스에 로그인하고 대화형 통신을 만듭니다. 아래 샘플 코드에 언급된 대화형 통신을 사용하려면 여기를 [클릭하십시오](assets/SimpleMediumIC.zip).
 1. [AEM 인스턴스에서 Apache Maven을 사용하여](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) AEM 프로젝트를 빌드하고 배포합니다.
-1. AEM [프로젝트의 POM 파일의 종속성 목록에 AEM Forms Client SDK 버전 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) 이상을 추가합니다. 예,
+1. AEM 프로젝트의 POM 파일 종속성 목록에 [AEM Forms 클라이언트 SDK 버전 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) 이상을 추가합니다. 예,
 
    ```XML
        <dependency>
@@ -345,12 +345,15 @@ batchType을 웹 채널을 렌더링하도록 설정하면 API는 모든 데이�
 파일 시스템에 데이터를 저장하는 것 외에도 JSON 파일을 CRX-repository, 파일 시스템, 웹 서버에 저장하거나 OSGI 프리플 서비스를 통해 데이터에 액세스할 수 있습니다. 다양한 프로토콜을 사용하여 데이터를 병합하는 구문은 다음과 같습니다.
 
 * **CRX 프로토콜**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **파일 프로토콜**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
 * **자동 완성 서비스 프로토콜**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
    SERVICE_NAME은 OSGI 미리 채우기 서비스의 이름을 나타냅니다. 미리 채우기 서비스 만들기 및 실행을 참조하십시오.
@@ -358,7 +361,9 @@ batchType을 웹 채널을 렌더링하도록 설정하면 API는 모든 데이�
    IDENTIFIER는 OSGI 미리 채우기 서비스에 필요한 모든 메타데이터를 나타냅니다. 로그인한 사용자의 식별자는 사용할 수 있는 메타데이터의 예입니다.
 
 * **HTTP 프로토콜**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
-> 기본적으로 CRX 프로토콜만 활성화됩니다. 지원되는 다른 프로토콜을 활성화하려면 Configuration Manager를 [사용하여 자동 완성 서비스 구성을 참조하십시오](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>
+>기본적으로 CRX 프로토콜만 활성화됩니다. 지원되는 다른 프로토콜을 활성화하려면 Configuration Manager를 [사용하여 자동 완성 서비스 구성을 참조하십시오](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
