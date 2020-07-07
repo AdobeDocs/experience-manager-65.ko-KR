@@ -3,7 +3,7 @@ title: 검색 패싯
 description: 이 문서에서는 Adobe Experience Manager에서 검색 패싯을 만들고, 수정하고, 사용하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '2523'
 ht-degree: 2%
@@ -19,13 +19,13 @@ ht-degree: 2%
 
 요약하면 검색 패싯을 사용하면 사전에 결정된 단일 분류 체계 순서가 아니라 다양한 방식으로 자산을 검색할 수 있습니다. 원하는 세부 수준으로 드릴다운하여 보다 집중적인 검색을 수행할 수 있습니다.
 
-예를 들어, 이미지를 찾고 있는 경우 비트맵과 벡터 이미지 중 어떤 것을 원하는지 선택할 수 있습니다. 이미지의 MIME 형식을 지정하여 검색 범위를 더 줄일 수 있습니다. Similarly, when searching for documents, you can specify the format, for example PDF or MS Word.
+예를 들어, 이미지를 찾고 있는 경우 비트맵과 벡터 이미지 중 어떤 것을 원하는지 선택할 수 있습니다. 이미지의 MIME 형식을 지정하여 검색 범위를 더 줄일 수 있습니다. 마찬가지로 문서를 검색할 때 PDF 또는 MS Word와 같은 형식을 지정할 수 있습니다.
 
 ## 설명 추가 {#adding-a-predicate}
 
-The search facets that appear in the Filters panel are defined in the underlying search form using predicates. 더 많거나 다른 패싯을 표시하려면 기본 양식에 예측자를 추가하거나 선택한 패싯을 포함하는 사용자 지정 양식을 사용합니다.
+필터 패널에 나타나는 검색 패싯은 기본 검색 양식에서 예측자를 사용하여 정의됩니다. 더 많거나 다른 패싯을 표시하려면 기본 양식에 예측자를 추가하거나 선택한 패싯을 포함하는 사용자 지정 양식을 사용합니다.
 
-전체 텍스트 검색의 경우 양식에 전체 텍스트 설명을 추가합니다. Use the Property predicate to search for assets that match a single property you specify. 옵션 조건자를 사용하여 특정 속성에 대해 하나 이상의 값과 일치하는 자산을 검색합니다. 날짜 범위 술어를 추가하여 지정된 날짜 범위 내에 만든 자산을 검색합니다.
+전체 텍스트 검색의 경우 양식에 전체 텍스트 설명을 추가합니다. 속성 조건자를 사용하여 지정한 단일 속성과 일치하는 자산을 검색합니다. 옵션 조건자를 사용하여 특정 속성에 대해 하나 이상의 값과 일치하는 자산을 검색합니다. 날짜 범위 술어를 추가하여 지정된 날짜 범위 내에 만든 자산을 검색합니다.
 
 1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 양식]**&#x200B;검색으로 이동합니다.
 1. 양식 검색 페이지에서 **[!UICONTROL 자산 관리 검색 레일을]**&#x200B;선택한 다음 **aemassets_edit** ![](assets/aemassets_edit.png)편집을클릭합니다.
@@ -114,7 +114,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 >
 >Options 조건자는 설명된 동작을 보여주는 속성 조건자를 포함하는 사용자 지정 래퍼입니다. 현재 이 기능을 기본적으로 지원하는 데 사용할 수 있는 REST 끝점이 없습니다.
 
-1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구 > 일반 > 양식 검색으로 이동합니다]**.
+1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 양식]**&#x200B;검색으로 이동합니다.
 1. 양식 **[!UICONTROL 검색]** 페이지에서 **[!UICONTROL 자산 관리 검색 레일을]**&#x200B;선택한 다음 **[!UICONTROL 편집을]**&#x200B;클릭합니다.
 1. 검색 양식 **[!UICONTROL 편집]** 페이지에서 **[!UICONTROL 설명]** 선택 **[!UICONTROL 탭에서]** 옵션 설명조건자를 주창으로드래그합니다.
 1. [ **[!UICONTROL 설정]** ] 탭에서 속성의 레이블과 이름을 입력합니다. 예를 들어, 형식을 기준으로 자산을 검색하려면 레이블에 대해 사용자에게 친숙한 이름(예: **[!UICONTROL 파일 유형)을 지정합니다]**. 예를 들어 속성 필드에서 검색을 수행할 속성을 지정합니다 `jcr:content/metadata/dc:format.`
