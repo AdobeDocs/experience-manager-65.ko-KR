@@ -3,7 +3,7 @@ title: 에셋의 메타데이터 요구 사항을 사용자 정의하는 메타�
 description: 자산에 대한 메타데이터 프로파일에 대해 알아봅니다. 메타데이터 프로필을 만들어 폴더 자산에 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 ## 메타데이터 프로필 추가 {#adding-a-metadata-profile}
 
-1. 도구 > **[!UICONTROL 자산 > 메타데이터 프로필로]** 이동하고 만들기를 **[!UICONTROL 클릭합니다]**.
+1. 도구 **[!UICONTROL > 자산]** > **[!UICONTROL 메타데이터]** 프로필 **[!UICONTROL 으로]** 이동하고 **[!UICONTROL 만들기를]**&#x200B;클릭합니다.
 1. 메타데이터 프로필의 제목(예: 샘플 메타데이터)을 입력하고 만들기를 **[!UICONTROL 클릭합니다]**. 메타데이터 [!UICONTROL 프로필에] 대한 양식 편집이 표시됩니다.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
@@ -31,11 +31,13 @@ ht-degree: 5%
    * **[!UICONTROL 필드 레이블]**: 메타데이터 속성의 표시 이름입니다. 사용자 참조용입니다.
 
    * **[!UICONTROL 속성에 매핑]**: 이 속성의 값은 저장소에 저장된 자산 노드에 대한 상대 경로/이름을 제공합니다. 이 값은 경로가 자산의 노드 아래에 있음을 `./` 나타내므로 항상 다음으로 시작해야 합니다.
+
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
    속성에 **[!UICONTROL 매핑에 지정하는]** 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 를 지정하는 경우 `/jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, Assets stores the value `dc:desc` at the asset&#39;s metadata node.
 
    * **[!UICONTROL 기본값]**: 이 속성을 사용하여 메타데이터 구성 요소의 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 노드 `dc:desc` 에 있는 속성에 할당됩니다.
+
    ![chlimage_1-200](assets/chlimage_1-483.png)
 
    >[!NOTE]
@@ -106,7 +108,7 @@ ht-degree: 5%
 
 단계에 따라 메타데이터 프로필을 적용합니다.
 
-1. Experience Manager 로고를 클릭하고 도구 > 자산 > **[!UICONTROL 메타데이터 프로필로 이동합니다]**.
+1. Experience Manager 로고를 클릭하고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터]** 프로필로 **[!UICONTROL 이동합니다]**.
 1. 폴더 또는 여러 폴더에 적용할 메타데이터 프로필을 선택합니다.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -126,7 +128,7 @@ ht-degree: 5%
 
 ### 전역 메타데이터 프로필 적용 {#applying-a-metadata-profile-globally}
 
-폴더에 프로필을 적용하는 것 외에도, Adobe Experience Manager 자산에 업로드된 모든 콘텐츠가 선택한 프로필이 적용되도록 전체적으로 적용할 수도 있습니다.
+폴더에 프로필을 적용하는 것 외에도 Experience Manager 자산에 업로드된 모든 콘텐트에 선택한 프로필이 적용되도록 전체적으로 적용할 수도 있습니다.
 
 나중에 변경한 기존 메타데이터 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
 
@@ -148,7 +150,7 @@ ht-degree: 5%
 
 ### 프로필 사용자 인터페이스를 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Experience Manager 로고를 클릭하고 도구 > 자산 > **[!UICONTROL 메타데이터 프로필로 이동합니다]**.
+1. Experience Manager 로고를 클릭하고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터]** 프로필로 **[!UICONTROL 이동합니다]**.
 1. 폴더 또는 여러 폴더에서 제거할 메타데이터 프로필을 선택합니다.
 1. 폴더에서 **[!UICONTROL 메타데이터 프로필 제거를]** 클릭하고 프로필을 제거할 폴더 또는 여러 폴더를 선택한 다음 완료를 **[!UICONTROL 클릭합니다]**.
 
@@ -156,11 +158,11 @@ ht-degree: 5%
 
 ### 속성을 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Experience Manager 로고를 클릭하고 **[!UICONTROL 자산을]** 탐색한 다음 메타데이터 프로필을 제거할 폴더로 이동합니다.
+1. Experience Manager 로고를 클릭하고 **[!UICONTROL 에셋을]** 탐색한 다음 메타데이터 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 클릭하여 선택한 다음 속성 **[!UICONTROL 을 클릭합니다]**.
 1. 메타데이터 **[!UICONTROL 프로필]** 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]** 을 선택하고 **[!UICONTROL 저장을]**&#x200B;클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-## 제한 사항 및 우수 사례 {#limitations-best-practices-tips}
+## Limitations and best practices {#limitations-best-practices-tips}
 
 * 6.5로 업그레이드하기 전에 기존 메타데이터 프로필이 있을 수 있습니다. 업그레이드 후 [ [!DNL Experience Manager] 메타데이터 프로필 ] 탭의 [!UICONTROL 속성] 폴더에 이러한 프로필을 적용하면 메타데이터 양식 필드가 표시되지 않습니다. 그러나 새로 만든 메타데이터 프로필을 적용하면 양식 필드가 표시되지만 예상대로 사용할 수 없습니다. 기능 손실은 없지만 (사용할 수 없음) 양식 필드를 보려면 기존 메타데이터 프로필을 편집하고 저장합니다.
 
