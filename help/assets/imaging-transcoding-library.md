@@ -3,7 +3,7 @@ title: 이미징 코드 변환 라이브러리
 description: 인코딩, 트랜스코딩, 이미지 리샘플링, 이미지 크기 조정 등 핵심 이미지 처리 기능을 수행할 수 있는 이미지 처리 솔루션인 Adobe의 이미징 트랜스코딩 라이브러리를 구성 및 사용하는 방법에 대해 알아보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 1%
@@ -76,7 +76,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로를 업데�
 
 1. 소프트웨어 배포에서 [이미징 트랜스코딩 라이브러리 패키지를 다운로드하고](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) 패키지 관리자를 사용하여 설치합니다. 그 패키지는 Experience Manager 6.5와 호환된다.
 
-1. 의 번들 ID에 대해 알아보려면 웹 콘솔 `com.day.cq.dam.cq-dam-switchengine`에 로그인하고 OSGi **[!UICONTROL > 번들을 클릭합니다]**. 또는 번들 콘솔을 열려면 `https://[aem_server:[port]/system/console/bundles/` URL에 액세스하십시오. 번들 `com.day.cq.dam.cq-dam-switchengine` 및 해당 ID를 찾습니다.
+1. 의 번들 ID에 대해 알려면 웹 콘솔 `com.day.cq.dam.cq-dam-switchengine`에 로그인하고 OSGi **[!UICONTROL > 번들을]** 클릭합니다 ****. 또는 번들 콘솔을 열려면 `https://[aem_server:[port]/system/console/bundles/` URL에 액세스하십시오. 번들 `com.day.cq.dam.cq-dam-switchengine` 및 해당 ID를 찾습니다.
 
 1. 번들 ID를 사용하여 폴더 이름이 구성되는 명령을 사용하여 폴더를 확인하여 필요한 모든 라이브러리 `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`가 추출되는지 확인합니다. 예를 들어 번들 id가 `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` 인 경우 이 명령을 사용합니다 `588`.
 
@@ -105,7 +105,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로를 업데�
 
 이미지 처리에 라이브러리를 사용하도록 [!UICONTROL DAM 자산] 업데이트 워크플로우를 업데이트합니다.
 
-1. Experience Manager 사용자 인터페이스에서 도구 > **[!UICONTROL 워크플로우 > 모델을 선택합니다]**.
+1. Experience Manager 사용자 인터페이스에서 **[!UICONTROL 도구]** > 워크플로우 **[!UICONTROL > 모델]** 을 **[!UICONTROL 선택합니다]**.
 
 1. 워크플로우 **[!UICONTROL 모델]** 페이지에서 **[!UICONTROL DAM 자산]** 업데이트 워크플로우 모델을 편집 모드로 엽니다.
 
@@ -126,6 +126,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 워크플로를 업데�
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![천하](assets/chlimage_1-199.png)
 
 1. (선택 사항) 하나의 명령을 사용하여 중간 변환에서 축소판을 생성합니다. 중간 변환은 정적 및 웹 변환을 생성하는 소스 역할을 합니다. 이 방법은 이전 방법보다 빠릅니다. 그러나 이 방법을 사용하면 사용자 정의 매개 변수를 축소판에 적용할 수 없습니다.
