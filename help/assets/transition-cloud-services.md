@@ -3,7 +3,7 @@ title: 폴더에 번역 클라우드 서비스 적용
 description: 폴더에 번역 클라우드 서비스 적용
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 6%
@@ -42,7 +42,7 @@ Adobe Experience Manager을 사용하면 원하는 번역 제공업체에서 클
 번역 워크플로우에서 사용할 번역 서비스의 사용자 지정 커넥터를 적용하려는 경우 사용자 지정 커넥터를 적용하려면 먼저 패키지 관리자에서 커넥터를 설치합니다. 그런 다음 Cloud Service 콘솔에서 커넥터를 구성합니다. 커넥터를 구성한 후에는 변환 서비스 적용 [에 설명된 Cloud Service 탭의 커넥터 목록에서 사용할 수 있습니다](transition-cloud-services.md#applying-the-translation-services). 사용자 정의 커넥터를 적용하고 번역 워크플로우를 실행하면 번역 프로젝트의 **[!UICONTROL 번역 요약]** 타일에 헤드 **[!UICONTROL 제공자]** 및 **[!UICONTROL 메서드 아래에 커넥터 세부 정보가]**&#x200B;표시됩니다.
 
 1. 패키지 관리자에서 커넥터를 설치합니다.
-1. Experience Manager 로고를 클릭하고 **[!UICONTROL 도구 > 배포 > Cloud Service으로 이동합니다]**.
+1. Experience Manager 로고를 클릭하고 도구 > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Service]** 로 **[!UICONTROL 이동합니다]**.
 1. Cloud Service **[!UICONTROL 페이지에서]** 타사 서비스 **[!UICONTROL 아래에 설치한 커넥터를]** 찾습니다.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
