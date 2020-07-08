@@ -3,7 +3,7 @@ title: Introduction to [!DNL Adobe Experience Manager Assets].
 description: 디지털 에셋 관리란 무엇이고 활용 사례, [!DNL Adobe Experience Manager Asset] 분석 등을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5b3a442756e95c15cb01c4117a83b761dc8367
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 32%
@@ -49,7 +49,7 @@ DAM 저장소에 이미지를 넣을지, 이미지 구성 요소를 사용할지
 
 >[!CAUTION]
 >
->Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] instance.
+>Uploading and/or editing a large volume of assets (particularly images) can impact the performance of your [!DNL Experience Manager] deployment.
 
 ### [!DNL Experience Manager Assets] 용어 {#aem-assets-terminology}
 
