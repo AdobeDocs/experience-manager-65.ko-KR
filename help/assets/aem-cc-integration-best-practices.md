@@ -3,9 +3,9 @@ title: Adobe Creative Cloud [!DNL Adobe Experience Manager] 및 통합 모범 �
 description: 자산 전송 워크플로우를 [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] 간소화하고 콘텐츠 전송 속도를 높일 수 있는 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '3250'
+source-wordcount: '3251'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,9 @@ ht-degree: 2%
 
 ### 활용 사례 및 Adobe 솔루션 매핑 {#mapping-of-use-cases-and-adobe-solutions}
 
+<!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
+-->
+
 | 사용 사례 | [!DNL Adobe Asset Link] | [!DNL Experience Manager] 데스크탑 앱 | 참고/기타 해결 방법 |
 |---|---|---|---|
 | Discover - DAM 폴더 찾아보기 | 예 | [!DNL Experience Manager] 웹 인터페이스 및 데스크탑 작업 |  |
@@ -73,7 +76,7 @@ ht-degree: 2%
 ### 일반 용어 용어집 {#glossary-of-common-terms}
 
 * **진행 중인 작업 또는 크리에이티브 작업 진행 중(WIP):** 자산 라이프사이클에서 자산이 여러 개의 변경을 받고 일반적으로 더 광범위한 팀과 공유할 준비가 되지 않은 단계입니다.
-* **크리에이티브한 에셋:** [!DNL Assets] 마케팅 또는 LOB 팀과 공유할 수 있도록 크리에이티브 팀에서 선택/승인했거나 더 광범위한 팀과 공유할 준비가 되었습니다.
+* **크리에이티브한 에셋:** [!DNL Assets] 마케팅 또는 LOB 팀과 공유할 수 있도록 크리에이티브 팀에서 선택 또는 승인한 팀 또는 광범위한 팀과 공유할 준비가 되었습니다.
 * **자산 승인:** DAM에 이미 업로드된 자산에 대해 실행되는 승인 프로세스는 일반적으로 브랜드 승인, 법적 승인 등을 포함합니다.
 * **최종 자산:** 모든 승인/메타데이터 태그 지정을 통해 광범위한 팀에서 사용할 수 있는 자산 이러한 자산은 DAM에 저장되며 모든(또는 모든 관심 있는) 사용자가 사용할 수 있게 됩니다. 마케팅 채널 또는 크리에이티브 팀이 디자인을 제작하는 데 사용할 수 있습니다.
 * **사소한 에셋 업데이트/변경:** 디지털 에셋에 대한 빠르고 간단한 변경 수정 또는 경미한 편집 요청, 에셋 검토 또는 승인(예: 위치 변경, 텍스트 크기 변경, 채도/밝기, 색상 조정 등)에 대한 응답으로 주로 사용됩니다.
@@ -107,7 +110,7 @@ ht-degree: 2%
 * 저장된 에셋 [!DNL Experience Manager] 은 링크가 아닌 복사본입니다 [!DNL Adobe Stock].
 
 **에서 저장한 에셋[!DNL Adobe Stock]을 사용하여 작업[!DNL Experience Manager]을[!DNL Creative Cloud]**수행합니다. 이 통합[!DNL Adobe Asset Link]은 독립적이지만 이러한 자산에서 이러한 방식으로 저장된 에셋을[!DNL Adobe Asset Link]인식하며, 확장[!DNL Stock]UI,[!DNL Adobe Stock]또는에서 이러한 에셋에 추가 메타데이터 및[!DNL Adobe Asset Link]로고를 표시할 수[!DNL Photoshop][!DNL Illustrator][!DNL InDesign]있습니다. 파일을 검색, 열기 등에 사용할 수 있습니다. 파일은 저장 시 일반 자산이므로 찾을 수[!DNL Experience Manager]있습니다.
-이미 라이선스가 부여된 에셋에 액세스할 수 있을 뿐만 아니라[!DNL Creative Cloud]확장자가 있는[!DNL Adobe Asset Link]앱에서 작업하는 크리에이티브 사용자는 라이브러리 패널[!DNL Adobe Stock]을 사용하여 에셋을 검색하고 미리 보고 라이선스를 부여할 수[!DNL Experience Manager][!DNL Creative Cloud][!DNL Adobe Stock]있습니다.[!DNL Assets]라이선스를[!DNL Adobe Stock]구매하여 저장한 크리에이티브 라이선스 에셋은 배포[!DNL Experience Manager]에 액세스하는 다양한 팀이 사용할 수 있는 반면[!DNL Experience Manager Assets]라이브러리 패널을[!DNL Adobe Stock]통해 제공되는 크리에이티브 라이선스 에셋은[!DNL Creative Cloud][!DNL Creative Cloud]계정 자체에서만 이용할 수 있습니다.
+이미 라이선스가 부여된 에셋에 액세스할 수 있을 뿐만 아니라[!DNL Creative Cloud]확장자가 있는[!DNL Adobe Asset Link]앱에서 작업하는 크리에이티브 사용자는 라이브러리 패널[!DNL Adobe Stock]을 사용하여 에셋을 검색하고 미리 보고 라이선스를 부여할 수[!DNL Experience Manager][!DNL Creative Cloud][!DNL Adobe Stock]있습니다.[!DNL Assets]라이선스[!DNL Adobe Stock]및 저장된 에셋은 배포[!DNL Experience Manager]에 액세스하는 다양한 팀이 사용할 수 있는 반면, 라이브러리 패널을[!DNL Experience Manager Assets]통해[!DNL Adobe Stock]크리에이티브 라이선스 에셋을 자신의[!DNL Creative Cloud][!DNL Creative Cloud]계정에서만 이용할 수 있습니다.
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
@@ -160,13 +163,13 @@ DAM의 기존 에셋 변경 요청 후 마케팅 팀이 검토할 크리에이�
 
 #### DAM에 직접 액세스할 수 있는 크리에이티브 사용자 {#creative-users-with-direct-access-to-dam}
 
-일반적으로 사내 크리에이티브 팀 또는 내부 네트워크에 연결된 에이전시/크리에이티브 전문가는 로그인을 비롯한 DAM 인스턴스에 액세스할 수 [!DNL Experience Manager] 있습니다. [!DNL Experience Manager] 네트워크 인프라를 설정하여 외부 업체(일반적으로 클라이언트 관련 에이전시 등 신뢰할 수 있는 조직)에 직접 액세스할 수 있도록 함으로써 VPN 또는 IP 허용 목록을 통해 네트워크를 [!DNL Experience Manager] 통해 액세스할 수 있습니다.
+일반적으로 사내 크리에이티브 팀이나 사내 에이전시/크리에이티브 전문가는 내부 네트워크에 [!DNL Experience Manager] 로그인을 비롯한 DAM 배포에 액세스할 수 있습니다. [!DNL Experience Manager] 네트워크 인프라를 설정하여 외부 업체(일반적으로 클라이언트 관련 에이전시 등 신뢰할 수 있는 조직)에 직접 액세스할 수 있으므로 VPN 또는 IP 허용 목록을 통해 네트워크를 [!DNL Experience Manager] 통해 액세스할 수 있습니다.
 
 이러한 경우 Adobe Asset Link 또는 [!DNL Experience Manager] 데스크탑 앱을 사용하면 최종/승인된 자산에 손쉽게 액세스할 수 있고 크리에이티브한 에셋을 DAM에 저장할 수 있습니다.
 
 #### DAM을 이용할 수 없는 크리에이티브 사용자 {#creative-users-without-access-to-dam}
 
-DAM 인스턴스에 직접 액세스하지 않고도 외부 에이전시 및 프리랜서가 승인된 자산을 액세스하거나 DAM에 새로운 디자인을 추가해야 할 수 있습니다.
+DAM 배포에 직접 액세스하지 않고도 외부 에이전시 및 프리랜서가 승인된 자산을 액세스하거나 DAM에 새로운 디자인을 추가해야 할 수 있습니다.
 
 다음 전략을 사용하여 최종/승인된 자산에 액세스할 수 있습니다.
 
