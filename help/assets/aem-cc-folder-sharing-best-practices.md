@@ -3,7 +3,7 @@ title: Adobe Creative Cloud 폴더 공유 우수 사례 Adobe Experience Manager
 description: Experience Manager 에셋 사용자가 Adobe Creative Cloud(CC) 사용자와 폴더를 교환할 수 있도록 Adobe Experience Manager을 구성합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Creative Cloud 폴더 공유 Experience Manager 기능은 더 이상 사용되지 않습니다. Adobe에서는 [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [Experience Manager 데스크탑 앱과 같은 최신 기능을 사용할 것을 적극 권장합니다](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Experience Manager 및 [Creative Cloud 통합 모범 사례에 대한 자세한 내용을 살펴보십시오](/help/assets/aem-cc-integration-best-practices.md).
 
-Adobe Experience Manager은 에셋 사용자가 Adobe Creative Cloud 앱 사용자와 폴더를 공유할 수 있도록 구성할 수 있으므로 Adobe Creative Cloud Assets 서비스에서 공유 폴더로 사용할 수 있습니다. 이 기능을 사용하여 크리에이티브 팀과 자산 사용자 간에 파일을 교환할 수 있습니다. 특히 크리에이티브 사용자가 자산 인스턴스에 액세스할 수 없는 경우(기업 네트워크에 있지 않음)
+Adobe Experience Manager은 에셋 사용자가 Adobe Creative Cloud 앱 사용자와 폴더를 공유할 수 있도록 구성할 수 있으므로 Adobe Creative Cloud Assets 서비스에서 공유 폴더로 사용할 수 있습니다. 이 기능을 사용하여 크리에이티브 팀과 자산 사용자 간에 파일을 교환할 수 있습니다. 특히 크리에이티브 사용자가 에셋 배포에 액세스할 수 없는 경우(기업 네트워크에 있지 않음)
 
 이러한 유형의 통합은 다음 사용 사례에서 특히 자산에 직접 액세스하지 않는 사용자와 작업할 때 사용할 수 있습니다.
 
@@ -39,7 +39,7 @@ Creative Cloud 폴더 공유에 대한 Experience Manager은 자산과 Creative 
 통합에는 다음 요소가 포함됩니다.
 
 * **엔터프라이즈 네트워크에 배포된 Experience Manager 자산 서버** (관리 서비스 또는 온-프레미스): 폴더 공유가 여기에서 시작됩니다.
-* **Adobe Marketing Cloud 자산 핵심 서비스**: Experience Manager과 Creative Cloud 스토리지 서비스 간의 중간 역할을 합니다. 통합을 사용하는 회사의 관리자는 Marketing Cloud 조직과 자산 인스턴스 간에 신뢰 관계를 설정해야 합니다. 또한 자산 사용자가 추가 보안을 위해 폴더를 공유할 수 있도록 승인된 Creative Cloud 협력자 [목록을](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)정의합니다.
+* **Adobe Marketing Cloud 자산 핵심 서비스**: Experience Manager과 Creative Cloud 스토리지 서비스 간의 중간 역할을 합니다. 통합을 사용하는 회사의 관리자는 Marketing Cloud 조직과 자산 배포 간에 신뢰 관계를 설정해야 합니다. 또한 자산 사용자가 추가 보안을 위해 폴더를 공유할 수 있도록 승인된 Creative Cloud 협력자 [목록을](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)정의합니다.
 
 * **Creative Cloud Assets 웹 서비스** (스토리지 및 Creative Cloud Files 웹 UI): 여기에서 에셋 폴더를 공유한 특정 Creative Cloud 앱 사용자는 초대를 수락할 수 있으며 Creative Cloud 계정 저장소의 폴더를 볼 수 있습니다.
 * **Creative Cloud 데스크탑 앱**: (선택 사항) Creative Cloud Assets 저장소와 동기화를 통해 크리에이티브 사용자의 데스크탑에서 공유 폴더/파일에 직접 액세스할 수 있습니다.
@@ -65,7 +65,7 @@ Creative Cloud 폴더 공유에 Experience Manager을 활용하기 위한 모범
 * **볼륨 고려 사항:** Experience Manager/Creative Cloud 폴더 공유를 사용하면 특정 캠페인 또는 활동과 관련된 더 적은 수의 파일을 공유할 수 있습니다. 조직에서 승인된 모든 자산과 같이 더 큰 자산 세트를 공유하려면 다른 배포 방법(예: 자산 브랜드 포털) 또는 Experience Manager 데스크탑 앱을 사용하십시오.
 
 * **계층 공유 방지:** 공유는 반복적으로 작동하며 선택적 공유를 허용하지 않습니다. 일반적으로 하위 폴더가 없거나 하위 폴더 수준 1과 같이 매우 낮은 계층 구조를 가진 폴더만 공유하는 것으로 간주됩니다.
-* **단방향 공유를 위한 개별 폴더:** 최종 에셋을 Creative Cloud 파일에 공유하고 Creative Cloud 파일에서 에셋으로 되돌아가 크리에이티브한 에셋을 공유하려면 별도의 폴더를 사용해야 합니다. 이러한 폴더에 대한 훌륭한 명명 규칙과 함께, 자산 및 Creative Cloud 사용자 모두를 위한 이해하기 쉬운 작업 환경을 만듭니다.
+* **단방향 공유를 위한 개별 폴더:** 최종 에셋을 Creative Cloud 파일에 공유하고 Creative Cloud 파일에서 에셋으로 되돌아가는 크리에이티브 에셋을 공유하려면 별도의 폴더를 사용해야 합니다. 이러한 폴더에 대한 훌륭한 명명 규칙과 함께, 자산 및 Creative Cloud 사용자 모두를 위한 이해하기 쉬운 작업 환경을 만듭니다.
 * **공유 폴더의 WIP 방지:** 진행 중인 작업에 공유 폴더를 사용할 수 없습니다. 파일을 자주 변경해야 하는 작업을 수행하려면 Creative Cloud 파일의 별도의 폴더를 사용하십시오.
 * **공유 폴더 외부에서 새 작업 시작:** 새 디자인(크리에이티브 파일)은 Creative Cloud 파일의 별도의 WIP 폴더에서 시작해야 하며, Assets 사용자와 공유할 준비가 되었으면 공유 폴더로 이동하거나 저장해야 합니다.
 * **공유 구조 간소화:** 더욱 관리가 용이한 운영 체제를 원한다면 공유 구조를 단순화하는 것이 좋습니다. 모든 크리에이티브 사용자와 공유하는 대신 에셋 폴더는 크리에이티브 디렉터나 팀 관리자와 같은 팀 담당자만 공유해야 합니다. 크리에이티브 팀의 관리자는 최종 자산을 받고 작업 할당을 결정한 다음 디자이너가 WIP 자산에 대해 자신의 Creative Cloud 계정에서 작업을 할 수 있도록 합니다. Creative Cloud 공동 작업 기능을 사용하여 작업을 조정하고, Assets로 다시 공유할 준비가 된 에셋을 선택하여 크리에이티브한 공유 폴더로 가져올 수 있습니다.
