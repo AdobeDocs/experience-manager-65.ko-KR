@@ -3,7 +3,7 @@ title: 자산 템플릿 [!DNL Adobe Experience Manager Assets].
 description: 자산 템플릿 [!DNL Adobe Experience Manager Assets] 과 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 1%
@@ -79,6 +79,7 @@ ht-degree: 1%
    * 템플릿 페이지에서 담보물을 만든 폴더로 이동하고 [!UICONTROL 담보물 축소판에서 빠른 편집] 작업을 클릭합니다.
    * 자료의 자산 페이지에서 도구 모음에서 **[!UICONTROL 편집을]** 클릭합니다.
    * 자료를 선택하고 도구 모음에서 **[!UICONTROL 편집]** 을 클릭합니다.
+
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
    자산 파인더와 텍스트 편집기가 페이지 왼쪽에 표시됩니다. 텍스트 편집기는 기본적으로 열려 있습니다.
@@ -95,7 +96,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >인스턴스에서 템플릿 [!DNL Experience Manager] 의 데이터를 추출하고 [!DNL InDesign Server] 편집할 수 있도록 하려면 인스턴스와 [!DNL Experience Manager Assets] [!DNL InDesign] 통합되어야 합니다. 자세한 내용은 Experience Manager 에셋을 InDesign Server와 [통합을 참조하십시오](/help/assets/indesign.md).
+   >배포가 템플릿으로부터 데이터 [!DNL Experience Manager] 를 추출하고 [!DNL InDesign Server] 편집할 수 있도록 하기 위해 [!DNL Experience Manager Assets] [!DNL InDesign] 와 통합되어야 합니다. 자세한 내용은 Experience Manager 에셋을 InDesign Server와 [통합을 참조하십시오](/help/assets/indesign.md).
 
 1. 편집 가능한 필드의 텍스트를 수정하려면 편집 가능한 필드 목록에서 텍스트 필드를 클릭하고 필드의 텍스트를 편집합니다.
 
@@ -135,11 +136,13 @@ ht-degree: 1%
    >
    >* 이미지는 기본 [!DNL InDesign] 템플릿에 포함되지 않습니다.
    >* 이미지는 로컬 파일 시스템에서 연결됩니다.
+
    >
    >이미지 [!DNL Experience Manager] 를 해결하려면 다음을 수행합니다.
    >
    >* 템플릿을 만드는 동안 이미지 [!DNL InDesign] 포함(링크 및 포함된 그래픽 [정보 참조](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* 로컬 파일 시스템 [!DNL Experience Manager] 에 마운트한 다음 누락된 아이콘을 기존 에셋에 매핑합니다 [!DNL Experience Manager].
+
    >
    >문서 작업에 대한 자세한 내용은 Experience Manager에서 InDesign 문서를 사용하여 작업하는 [!DNL InDesign] 모범 사례를 참조하십시오 [](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
