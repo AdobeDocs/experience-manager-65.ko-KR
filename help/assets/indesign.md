@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] 통합 [!DNL Adobe InDesign Serv
 description: 통합 방법 [!DNL Adobe Experience Manager Assets] 을 살펴보십시오 [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 * 특정 작업을 정의 및 관리하는 프록시 작업자입니다.
 여기에는 다양한 작업이 포함될 수 있습니다. 예를 들어, an을 사용하여 파일 [!DNL InDesign Server] 을 처리합니다.
 
-프록시로 만든 파일 [!DNL Experience Manager Assets] 을 업로드하기 위해 [!DNL Adobe InDesign] 가 사용됩니다. 이 기능은 프록시 작업자를 사용하여 스크립트와 [!DNL Adobe InDesign Server]통신합니다. 여기에서 [스크립트를 실행하여 메타데이터를 추출하고 다양한 변환을 생성할 수](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) [!DNL Experience Manager Assets]있습니다. 프록시 작업자는 클라우드 구성에서 인스턴스와 인스턴스 간 [!DNL InDesign Server] 의 [!DNL Experience Manager] 양방향 통신을 활성화합니다.
+프록시로 만든 파일 [!DNL Experience Manager Assets] 을 업로드하기 위해 [!DNL Adobe InDesign] 가 사용됩니다. 이 기능은 프록시 작업자를 사용하여 스크립트와 [!DNL Adobe InDesign Server]통신합니다. 여기에서 [스크립트를 실행하여 메타데이터를 추출하고 다양한 변환을 생성할 수](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) [!DNL Experience Manager Assets]있습니다. 프록시 작업자는 클라우드 구성의 인스턴스와 인스턴스 간 [!DNL InDesign Server] 의 양방향 통신을 [!DNL Experience Manager] 활성화합니다.
 
 >[!NOTE]
 >
@@ -59,12 +59,12 @@ ht-degree: 0%
    * 추출된 텍스트와 파일은 에 저장됩니다 [!DNL Experience Manager Assets].
    * 모든 변환은 자산 자체 [!DNL Experience Manager Assets]에 저장됩니다.
 
-## Adobe Experience Manager [!DNL InDesign Server] 와 통합 {#integrating-the-indesign-server-with-aem}
+## Experience Manager [!DNL InDesign Server] 와 통합 {#integrating-the-indesign-server-with-aem}
 
 프록시를 구성 [!DNL InDesign Server] 과 [!DNL Experience Manager Assets] 구성한 후 사용할 수 있도록 통합하려면 다음을 수행해야 합니다.
 
 1. [InDesign Server를 설치합니다](#installing-the-indesign-server).
-1. 필요한 경우 [Experience Manager 자산 워크플로우를 구성합니다](#configuring-the-aem-assets-workflow).
+1. 필요한 경우 Experience Manager 자산 워크플로우를 [구성합니다](#configuring-the-aem-assets-workflow).
 기본값이 인스턴스에 적합하지 않은 경우에만 필요합니다.
 1. InDesign [Server에 대한 프록시 작업자 구성을 참조하십시오](#configuring-the-proxy-worker-for-indesign-server).
 
@@ -149,7 +149,7 @@ ht-degree: 0%
 >
 >작업자는 프록시 인스턴스에 상주합니다.
 
-1. 도구 콘솔의 왼쪽 창에서 **[!UICONTROL 클라우드 서비스]** 구성을 확장합니다. 그런 다음 **[!UICONTROL 클라우드 프록시 구성을 확장합니다]**.
+1. 도구 콘솔의 왼쪽 창에서 **[!UICONTROL Cloud Service 구성을]** 확장합니다. 그런 다음 **[!UICONTROL 클라우드 프록시 구성을 확장합니다]**.
 
 1. IDS **[!UICONTROL 작업자]** 를 두 번 클릭하여 구성을 엽니다.
 
@@ -201,13 +201,13 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!NOTE]
 >
->직원 풀을 사용하는 경우 차단된 IDS 작업자 목록을 활성화할 수 있습니다.
+>직원 풀을 사용하는 경우 ID 근로자의 차단 목록을 활성화할 수 있습니다.
 >
 >이렇게 하려면 IDS 작업 검색을 활성화하는 **[!UICONTROL 구성 아래의 enable.retry.name]** 확인란을 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 활성화합니다.
 >
 >또한 구성 아래에서 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` ID를 작업 핸들러 목록에서 제외하기 전에 작업 검색의 수를 결정하는 매개 변수의 `max.errors.to.blacklist` 양수 값을 설정합니다.
 >
->기본적으로 구성 가능한(`retry.interval.to.whitelist.name`) 시간(분) 후 IDS 워터의 유효성을 다시 검사해야 합니다. 작업자가 온라인에서 검색되면 차단된 목록에서 제거됩니다.
+>기본적으로 구성 가능한(`retry.interval.to.whitelist.name`) 시간(분) 후 IDS 워터의 유효성을 다시 검사해야 합니다. 작업자가 온라인에서 발견될 경우 차단 목록에서 제거됩니다.
 
 ## 10.0 이상 [!DNL InDesign Server] 지원 활성화 {#enabling-support-for-indesign-server-or-later}
 
@@ -223,7 +223,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 ## 자격 증명 [!DNL Experience Manager] 구성 {#configure-aem-credentials}
 
-기본 관리자 자격 증명(사용자 이름 및 암호)을 변경하여 [!DNL InDesign Server] 인스턴스와의 통합을 중단하지 않고 액세스할 수 [!DNL Experience Manager] [!DNL InDesign Server]있습니다.
+기본 관리자 자격 증명(사용자 이름 및 암호)을 변경하여 배포에서 [!DNL InDesign Server] 액세스할 수 있습니다. 단, [!DNL Experience Manager] 통합은 중단되지 않습니다 [!DNL InDesign Server].
 
 1. 이동 `/etc/cloudservices/proxy.html`.
 1. 대화 상자에서 새 사용자 이름과 암호를 지정합니다.
