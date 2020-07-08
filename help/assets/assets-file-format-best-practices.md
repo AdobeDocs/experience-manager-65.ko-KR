@@ -1,9 +1,12 @@
 ---
-title: '[!DNL Adobe Experience Manager Assets]를 사용하여 지원되는 다양한 파일 형식을 처리하는 모범 사례'
-description: '[!DNL Experience Manager Assets]를 사용하여 지원되는 다양한 파일 형식을 처리하는 우수 사례입니다.'
+title: 지원되는 다양한 파일 형식을 사용하는 [!DNL Adobe Experience Manager Assets]모범 사례
+description: 지원되는 다양한 파일 유형을 처리하는 모범 사례 [!DNL Experience Manager Assets]
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f67b4e5ccd5d7e982732e449050123e917c9914
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 1%
 
 ---
 
@@ -38,9 +41,9 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기가 
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-IDML 및 HTML [!DNL Adobe InDesign Server] 과 같은 [!DNL Adobe InDesign]특정 표현물을 추출하는 데 사용하는 것이 좋습니다. 자세한 내용은 Adobe InDesign [에서 Experience Manager 자산을 참조로 추가를 참조하십시오](/help/assets/managing-linked-subassets.md#refai).
+IDML 및 HTML [!DNL Adobe InDesign Server] 과 같은 [!DNL Adobe InDesign]특정 표현물을 추출하는 데 사용하는 것이 좋습니다. 자세한 내용은 Adobe InDesign [에서 Experience Manager 에셋을 참조로 추가를 참조하십시오](/help/assets/managing-linked-subassets.md#refai).
 
-## [!DNL Dynamic Media]  {#dynamic-media}
+## [!DNL Dynamic Media] {#dynamic-media}
 
 [!DNL Dynamic Media] 글로벌, 확장 및 성능 최적화 네트워크를 통해 다양한 유형의 리치 컨텐츠를 실시간으로 생성 및 전달합니다. 인터랙티브한 보기 경험을 제공하고 디지털 캠페인 관리 프로세스를 간소화합니다. 활성화 [!DNL Dynamic Media]에 대한 자세한 내용은 Dynamic Media [구성을 참조하십시오](/help/assets/config-dynamic.md).
 
