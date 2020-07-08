@@ -3,7 +3,7 @@ title: 공유 에셋에 대한 URL 생성
 description: 이 문서에서는 Experience Manager 자산 내에서 자산, 폴더 및 컬렉션을 외부 당사자에게 URL로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Adobe Experience Manager 자산을 사용하면 자산, 폴더 및 컬렉션을 
 
    >[!NOTE]
    >
-   >Experience Manager 작성자 인스턴스의 링크를 외부 엔티티에 공유하려면 `GET` 요청에만 다음 URL(링크 공유에 사용됨)만 표시해야 합니다. 다른 URL을 차단하여 Experience Manager 작성자의 보안을 보장합니다.
+   >Experience Manager 작성자 배포의 링크를 외부 엔티티에 공유하려면 `GET` 요청에만 다음 URL(링크 공유에 사용됨)만 표시해야 합니다. 다른 URL을 차단하여 Experience Manager 작성자의 보안을 보장합니다.
    >
    >* http://[aem_server]:[port]/linkshare.html
    >* http://[aem_server]:[port]/linksharepreview.html
