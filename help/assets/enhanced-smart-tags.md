@@ -3,7 +3,7 @@ title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 0%
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 예를 들어 자동차 제조업체는 자동차 이미지에 모델 이름을 태그로 지정할 수 있으므로 다양한 모델의 이미지를 검색하여 프로모션 캠페인을 디자인할 때만 관련 이미지만 나타납니다.
 
-Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 인식하도록 훈련해야 합니다. 서비스를 교육하려면 먼저 이러한 자산을 가장 잘 설명하는 자산 및 태그 세트를 조정하십시오. 자산에 이러한 태그를 적용하고 교육 워크플로우를 실행하여 서비스 학습에 도움이 됩니다.
+Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 인식하도록 훈련해야 합니다. 서비스를 교육하려면 먼저 이러한 자산을 가장 잘 설명하는 자산 및 태그 집합을 조정하십시오. 자산에 이러한 태그를 적용하고 교육 워크플로우를 실행하여 서비스 학습에 도움이 됩니다.
 
 태그가 교육되고 준비되면, 서비스는 태그 지정 워크플로우를 통해 이러한 태그를 자산에 적용할 수 있습니다.
 
 Smart Content Service는 백그라운드에서 Adobe Sensei AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
 
-스마트 콘텐츠 서비스는 Adobe I/O에서 호스팅되는 클라우드 서비스입니다. Adobe Experience Manager에서 사용하려면 시스템 관리자가 Experience Manager 인스턴스를 Adobe I/O와 통합해야 합니다.
+스마트 콘텐츠 서비스는 Adobe I/O에서 호스팅되는 클라우드 서비스입니다. Adobe Experience Manager에서 사용하려면 시스템 관리자가 Experience Manager 배포를 Adobe I/O와 통합해야 합니다.
 
 다음은 스마트 콘텐츠 서비스를 사용하는 주요 단계입니다.
 
