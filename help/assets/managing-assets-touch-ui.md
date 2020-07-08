@@ -4,7 +4,7 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '9250'
 ht-degree: 1%
@@ -63,6 +63,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    * 도구 모음에서 만들기를 **[!UICONTROL 클릭합니다]**. 메뉴에서 **[!UICONTROL 파일을 클릭합니다]**. 필요한 경우 표시된 대화 상자에서 파일의 이름을 변경할 수 있습니다.
    * HTML5를 지원하는 브라우저에서 자산을 [!DNL Assets] 사용자 인터페이스에서 바로 드래그합니다. 파일 이름 바꾸기 대화 상자가 표시되지 않습니다.
+
    ![자산 업로드 옵션 만들기](assets/create-options.png)
 
    여러 파일을 선택하려면 Ctrl 또는 Command 키를 누르고 파일 선택기 대화 상자에서 자산을 선택합니다. iPad를 사용하는 경우 한 번에 하나의 파일만 선택할 수 있습니다.
@@ -73,7 +74,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    자산이 큰 자산으로 간주되는 크기를 구성할 수 있습니다. 예를 들어 1000MB 이상의 자산(500MB 대신)을 큰 자산으로 간주하도록 시스템을 구성할 수 있습니다. 이 경우 크기가 1000MB보다 큰 **[!UICONTROL 에셋이 업로드되면 [일시 중지]** ]가 진행률 표시줄에 나타납니다.
 
-   1000MB보다 큰 파일이 1000MB보다 작은 파일로 업로드되면 [일시 중지] 단추가 표시되지 않습니다. 그러나 1,000MB 미만의 파일 업로드를 취소하면 [일시 **[!UICONTROL 중지]** ] 단추가 나타납니다.
+   1000MB보다 큰 파일이 1000MB보다 작은 파일로 업로드되면 [일시 중지] 단추가 표시되지 않습니다. 하지만 1,000MB 미만의 파일 업로드를 취소하면 [일시 **[!UICONTROL 중지]** ] 단추가 나타납니다.
 
    크기 제한을 수정하려면 CRX 저장소의 `chunkUploadMinFileSize` 노드 `fileupload`속성을 구성합니다.
 
@@ -119,6 +120,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    * 자산 파일 이름에 `* / : [ \\ ] | # % { } ? &`
    * 에셋 폴더 이름은 포함할 수 없습니다. `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
    자산 파일 이름의 확장명에 특수 문자를 포함하지 마십시오.
 
    ![업로드 진행 대화 상자에는 업로드된 파일과 업로드하지 못한 파일의 상태가 표시됩니다](assets/chlimage_1-10.png)
@@ -131,7 +133,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 ### 직렬 업로드 {#serialuploads}
 
-대량의 자산을 업로드하면 상당한 입출력 리소스가 소비되므로 인스턴스 성능에 부정적인 영향을 줄 수 [!DNL Assets] 있습니다. 특히, 느린 인터넷 연결이 있는 경우 디스크 I/O의 급증으로 인해 업로드 시간이 크게 증가합니다. 또한 웹 브라우저에서는 동시 자산 업로드에 대해 처리할 수 있는 POST 요청 수에 대한 추가 제한 사항을 도입할 [!DNL Assets] 수 있습니다. 따라서 업로드 작업이 실패하거나 너무 빨리 종료됩니다. 즉, 여러 파일을 인제스트하는 동안 일부 파일이 누락되거나 모든 파일을 인제스트하지 못할 [!DNL Experience Manager Assets] 수 있습니다.
+대량의 자산을 업로드하면 상당한 입출력 리소스가 소비되므로 배포 성능에 부정적인 영향을 미칠 수 [!DNL Assets] 있습니다. 특히, 느린 인터넷 연결이 있는 경우 디스크 I/O의 급증으로 인해 업로드 시간이 크게 증가합니다. 또한 웹 브라우저에서는 동시 자산 업로드에 대해 처리할 수 있는 POST 요청 수에 대한 추가 제한 사항을 도입할 [!DNL Assets] 수 있습니다. 따라서 업로드 작업이 실패하거나 너무 빨리 종료됩니다. 즉, 여러 파일을 인제스트하는 동안 일부 파일이 누락되거나 모든 파일을 인제스트하지 못할 [!DNL Experience Manager Assets] 수 있습니다.
 
 이러한 상황을 [!DNL Assets] 극복하기 위해 일괄 업로드 작업 동안 모든 자산을 동시에 인제스트하는 대신 한 번에 하나의 자산을 인제스트합니다(시리얼 업로드).
 
@@ -350,6 +352,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 1. 자산을 확대하려면:
    1. 키를 `Tab` 사용하여 초점을 확대 옵션으로 이동합니다.
    1. 키를 사용하여 이미지 `Enter` 를 확대합니다.
+
    축소하려면 `Tab` 키를 사용하여 초점을 확대/축소 옵션으로 이동하고 키를 누릅니다 `Enter`.
 
 1. + 키 `Shift` 를 사용하여 이미지 `Tab` 에서 포커스를 뒤로 이동합니다.
@@ -407,6 +410,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
    * 자산을 보거나 다운로드한 횟수
    * 자산이 사용된 채널/장치
    * 자산이 최근 사용된 크리에이티브 솔루션
+
    자세한 내용은 자산 [인사이트를 참조하십시오](/help/assets/touch-ui-asset-insights.md).
 
 1. Click **[!UICONTROL Save &amp; Close]**.
@@ -480,6 +484,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
    * [ **[!UICONTROL 뒤로]** ]를 클릭하여 [대상 **[!UICONTROL 선택] 화면으로]** 돌아갑니다.
 
    * [ **[!UICONTROL 취소]** ]를 클릭하여 이동 작업을 중지합니다.
+
    참조를 업데이트하지 않으면 자산의 이전 경로를 계속 가리킵니다. 참조를 조정하면 새 자산 경로로 업데이트됩니다.
 
 ## 변환 관리 {#managing-renditions}
@@ -555,6 +560,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 
       * 자산에 참조가 없으면 자산이 삭제됩니다.
       * 자산에 참조가 있으면, 오류 메시지가 하나 **이상의 자산이 참조되었다고 알려줍니다.** **[!UICONTROL 강제 삭제]**&#x200B;나 **[!UICONTROL 취소]**&#x200B;를 선택할 수 있습니다.
+
    >[!NOTE]
    >
    >자산을 삭제하려면 사용자에게 삭제 권한이 필요합니다 `dam/asset`. 수정 권한만 있는 경우 자산 메타데이터만 편집하고 자산에 주석을 추가할 수 있습니다. 하지만 자산이나 해당 메타데이터를 삭제할 수는 없습니다.
@@ -607,6 +613,7 @@ Experience Manager [에서 자산 다운로드를 참조하십시오](/help/asse
 
    * **[!UICONTROL 작업을 중지하려면]** 취소
    * **[!UICONTROL 게시]** 취소를 클릭하여 지정된 날짜에 자산 게시 취소(더 이상 게시 환경에서 사용할 수 없음)가 되었는지 확인합니다.
+
    >[!NOTE]
    >
    >복잡한 자산을 게시 취소하는 동안 자산만 게시 취소합니다. 게시된 다른 자산에서 참조될 수 있으므로 참조 파일의 게시를 취소하지 마십시오.
@@ -677,6 +684,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
    * 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 편집을]** 클릭합니다.
    * 카드 **[!UICONTROL 보기에서 자산에 표시되는 편집]** 옵션을 클릭합니다.
    * 도구 **[!UICONTROL 모음에서]** 편집을 클릭합니다.
+
    ![도구 모음의 편집 옵션](assets/edit_icon.png)
 
 1. 이미지를 자르려면 자르기 옵션 **[!UICONTROL 을]** 클릭하여 ![이미지를 자릅니다](assets/chlimage_1-22.png).
@@ -742,6 +750,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
    * [빠른 작업](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * 자산을 선택하거나 자산 페이지로 이동한 후 도구 모음에서
+
    ![주석 옵션](assets/chlimage_1-29.png)
 
 1. 타임라인 아래쪽에 있는 **[!UICONTROL 주석]** 상자에 주석을 추가합니다. 또는, 이미지에서 영역을 마크업하고 주석 **[!UICONTROL 추가 대화 상자에 주석을]** 추가합니다.
@@ -870,7 +879,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
    * 글꼴 모음 옵션 `<font_family_name_of_custom_font, sans-serif>` 에 문자열을 포함합니다. 예를 들어 CJK(중국어, 일본어 및 한국어)로 주석을 인쇄하려면 글꼴 모음 옵션 `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` 에 문자열을 포함시킵니다. 힌디어로 주석을 인쇄하려면 해당 글꼴을 다운로드하고 글꼴 제품군을 Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif로 구성합니다.
 
-1. 인스턴스를 다시 [!DNL Experience Manager] 시작합니다.
+1. 배포를 다시 [!DNL Experience Manager] 시작합니다.
 
 CJK(중국어, 일본어 및 한국어)로 주석을 인쇄하도록 구성할 수 [!DNL Experience Manager] 있는 방법의 예는 다음과 같습니다.
 
@@ -933,6 +942,7 @@ CJK(중국어, 일본어 및 한국어)로 주석을 인쇄하도록 구성할 �
 1. 이미지의 두 버전을 비교하려면 다음 단계를 수행하십시오.
    * 현재 버전과 비교할 버전을 클릭합니다.
    * 슬라이더를 왼쪽으로 드래그하면 현재 버전 위에 이 버전을 겹쳐놓고 비교할 수 있습니다.
+
    ![슬라이더를 사용하여 선택한 에셋 버전을 현재 버전과 비교](assets/version-slider.gif)
 
    *그림: 슬라이더를 사용하여 선택한 버전의 자산을 현재 버전과 쉽게 비교할 수 있습니다.*
