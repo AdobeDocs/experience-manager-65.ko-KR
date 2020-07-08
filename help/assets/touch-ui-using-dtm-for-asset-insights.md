@@ -3,7 +3,7 @@ title: DTM을 통해 자산 통찰력 활성화
 description: Adobe DTM(다이내믹 태그 관리)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
 다음 단계를 수행하여 DTM을 통해 자산 통찰력을 활성화합니다.
 
 1. Experience Manager 로고를 클릭하고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 인사이트 구성]** 으로 **[!UICONTROL 이동합니다]**.
-1. [DTM Cloud Service으로 Experience Manager 인스턴스 구성](/help/sites-administering/dtm.md)
+1. [DTM Cloud Service을 사용하여 Experience Manager 배포 구성](/help/sites-administering/dtm.md)
 
    API 토큰은 https://dtm.adobe.com에 [로그인하고 사용자 프로필의](https://dtm.adobe.com/) 계정 설정을 **[!UICONTROL 방문한 후 사용할 수]** 있어야 합니다. 자산 인사이트와 Experience Manager 사이트의 통합이 아직 진행 중이기 때문에 자산 인사이트 관점에서 이 단계는 필요하지 않습니다.
 
@@ -34,6 +34,7 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
    * 웹 **[!UICONTROL 속성]** 탭을 선택한 다음 속성 **[!UICONTROL 추가를 클릭합니다]**.
 
    * 필드를 적절히 업데이트하고 속성 **[!UICONTROL 만들기를 클릭합니다]**. 설명서를 [참조하십시오](https://helpx.adobe.com/experience-manager/using/dtm.html).
+
    ![웹 속성 편집](assets/Create-edit-web-property.png)
 
 1. 규칙 **** 탭 **[!UICONTROL 의 탐색 창에서]** 페이지 로드 규칙 **[!UICONTROL 을 선택하고 새 규칙]**&#x200B;만들기를 클릭합니다.
