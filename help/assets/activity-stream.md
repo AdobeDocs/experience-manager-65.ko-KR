@@ -3,7 +3,7 @@ title: 타임라인의 활동 스트림
 description: 이 문서에서는 타임라인에 있는 자산에 대한 활동 로그를 표시하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 12%
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 # 타임라인의 활동 스트림 {#activity-stream-in-timeline}
 
-이 기능은 타임라인의 자산에 대한 활동 로그를 표시합니다. Adobe Experience Manager Assets에서 다음 자산 관련 작업을 수행하면 활동 스트림 기능이 타임라인을 업데이트하여 활동을 반영합니다.
+이 기능은 타임라인의 자산에 대한 활동 로그를 표시합니다. Adobe Experience Manager 자산에서 다음 자산 관련 작업을 수행하는 경우 활동 스트림 기능은 활동을 반영하도록 타임라인을 업데이트합니다.
 
 다음 작업이 활동 스트림에 기록됩니다.
 
@@ -26,7 +26,7 @@ ht-degree: 12%
 * 거부
 * 이동
 
-타임라인에 표시할 작업 로그는 로그 파일이 저장되는 CRX의 위치 `/var/audit/com.day.cq.dam/content/dam` 에서 가져옵니다.  또한, 타임라인 활동은 [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 또는 [Experience Manager 데스크탑 앱을 통해](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html)새로운 자산을 업로드하거나 기존 에셋을 수정하고 Experience Manager에 체크 인하면 기록됩니다.
+타임라인에 표시할 작업 로그는 로그 파일이 저장되는 CRX의 위치 `/var/audit/com.day.cq.dam/content/dam` 에서 가져옵니다. 또한, 타임라인 활동은 [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 또는 [Experience Manager 데스크탑 앱을 통해 새 에셋을 업로드하거나 기존 에셋을 수정 및 Experience Manager으로 체크 인하면 기록됩니다](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
