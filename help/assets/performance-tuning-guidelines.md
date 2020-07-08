@@ -4,7 +4,7 @@ description: 병목 현상을 [!DNL Experience Manager] 제거하고 성능을 �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '2767'
 ht-degree: 0%
@@ -128,7 +128,7 @@ accessKey=<snip>
 
 가능한 경우 [!UICONTROL DAM 자산 업데이트] 워크플로우를 일시적 으로 설정합니다. 이 경우 워크플로우는 일반적인 추적 및 보관 프로세스를 통과하지 않아도 되기 때문에 워크플로우를 처리하는 데 필요한 오버헤드가 크게 줄어듭니다.
 
-1. Experience Manager 인스턴스 `/miscadmin` 에서 [!DNLE로] 이동합니다 `https://[aem_server]:[port]/miscadmin`.
+1. Experience Manager `/miscadmin` 배포 [!DNLE위치] `https://[aem_server]:[port]/miscadmin`로 이동합니다.
 
 1. 도구 **[!UICONTROL > 워크플로우]** **** > **[!UICONTROL 모델]** > **[!UICONTROL dam을]**&#x200B;확장합니다.
 
@@ -285,11 +285,11 @@ XMP writeback은 메타데이터를 수정할 때마다 원래 에셋을 업데�
 * 네트워크 벤치마크 도구 사용
 * 디스패처 테스트
 
-### [!DNL Experience Manager] 인스턴스 테스트 {#aem-instance-testing}
+### [!DNL Experience Manager] 배포 테스트 {#aem-deployment-testing}
 
-효율적인 CPU 사용률 및 로드 공유를 통해 지연 시간을 최소화하고 높은 처리량을 얻으려면 [!DNL Experience Manager] 인스턴스의 성능을 정기적으로 모니터링합니다. 특히:
+효율적인 CPU 사용률 및 로드 공유를 통해 지연율을 최소화하고 높은 처리량을 얻으려면 [!DNL Experience Manager] 배포의 성능을 정기적으로 모니터링합니다. 특히:
 
-* 인스턴스에 대해 로드 테스트를 [!DNL Experience Manager] 실행합니다.
+* 배포에 대해 로드 테스트를 [!DNL Experience Manager] 실행합니다.
 * 업로드 성능 및 UI 응답성을 모니터링합니다.
 
 ## [!DNL Experience Manager Assets] 성과 점검 목록 및 자산 관리 작업의 영향 {#checklist}
