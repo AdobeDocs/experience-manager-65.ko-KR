@@ -3,7 +3,7 @@ title: 자산을 일괄 [!DNL Adobe Experience Manager Assets] 마이그레이�
 description: 에셋을 [!DNL Adobe Experience Manager]가져오고, 메타데이터를 적용하고, 변환을 생성하며, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 0%
@@ -28,6 +28,7 @@ ht-degree: 0%
 >* ACS 커머스 벌크 워크플로우 관리자
 >* ACS 커머스 빠른 조치 관리자
 >* 합성 워크플로우
+
 >
 >
 이 소프트웨어는 오픈 소스로 제공되며 [Apache v2 라이센스에서 다룹니다](https://adobe-consulting-services.github.io/pages/license.html). 질문하거나 문제를 보고하려면 ACS AEM 도구 [및](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) ACS AEM Commons에 대한 해당 GitHub 문제를 [참조하십시오](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
@@ -61,7 +62,7 @@ ht-degree: 0%
 
 #### HTTP를 통해 보내기 {#pushing-through-http}
 
-Adobe의 Managed Services 팀은 Logton이라는 도구를 사용하여 고객 환경에 데이터를 로드합니다. Logton은 한 디렉토리의 모든 에셋을 인스턴스의 다른 디렉토리로 로드하는 작은 Java [!DNL Experience Manager] 애플리케이션입니다. Logton 대신 Perl 스크립트와 같은 도구를 사용하여 에셋을 저장소에 게시할 수도 있습니다.
+Adobe의 Managed Services 팀은 Logton이라는 도구를 사용하여 고객 환경에 데이터를 로드합니다. Logton은 배포의 한 디렉토리에서 다른 디렉터리로 모든 에셋을 로드하는 작은 Java 응용 [!DNL Experience Manager] 프로그램입니다. Logton 대신 Perl 스크립트와 같은 도구를 사용하여 에셋을 저장소에 게시할 수도 있습니다.
 
 https를 통해 푸싱하는 접근 방식을 사용하는 두 가지 주요 단면이 있습니다.
 
@@ -72,7 +73,7 @@ https를 통해 푸싱하는 접근 방식을 사용하는 두 가지 주요 단
 
 #### 로컬 파일 시스템에서 가져오기 {#pulling-from-the-local-filesystem}
 
-ACS [AEM Tools CSV Asset Importer는](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) 자산을 가져오기 위해 파일 시스템 및 자산 메타데이터에서 자산을 가져옵니다. Experience Manager Asset Manager API는 자산을 시스템으로 가져오고 구성된 메타데이터 속성을 적용하는 데 사용됩니다. 에셋은 네트워크 파일 마운트 또는 외부 드라이브를 통해 서버에 마운트되는 것이 좋습니다.
+ACS [AEM Tools CSV Asset Importer는](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) 자산을 가져오기 위해 파일 시스템 및 자산 메타데이터에서 자산을 가져옵니다. Experience Manager 자산 관리자 API는 자산을 시스템으로 가져오고 구성된 메타데이터 속성을 적용하는 데 사용됩니다. 에셋은 네트워크 파일 마운트 또는 외부 드라이브를 통해 서버에 마운트되는 것이 좋습니다.
 
 자산을 네트워크를 통해 전송할 필요가 없기 때문에 전반적인 성능이 크게 향상되고 일반적으로 이 방법이 저장소에 자산을 로드하는 가장 효율적인 방법으로 간주됩니다. 또한 이 툴은 메타데이터 질문을 지원하므로 모든 에셋과 메타데이터를 한 번에 가져올 수 있습니다. 또한 별도의 툴을 통해 메타데이터를 적용하는 두 번째 단계를 만드는 대신
 
@@ -117,15 +118,15 @@ ACS [AEM Tools CSV Asset Importer는](https://adobe-consulting-services.github.i
 
 ## 배포 간 [!DNL Experience Manager] 마이그레이션 {#migrating-between-aem-instances}
 
-일반적이지는 않지만 많은 양의 데이터를 한 [!DNL Experience Manager] 인스턴스에서 다른 인스턴스로 마이그레이션해야 하는 경우가 있습니다. 예를 들어, [!DNL Experience Manager] 업그레이드를 수행할 때 하드웨어를 업그레이드하거나 AMS 마이그레이션과 같은 새로운 데이터 센터로 마이그레이션합니다.
+일반적인 데이터 전송만큼이나 많은 양의 데이터를 한 [!DNL Experience Manager] 배포에서 다른 배포로 마이그레이션해야 하는 경우가 있습니다. 예를 들어, [!DNL Experience Manager] 업그레이드를 수행할 때 하드웨어를 업그레이드하거나 AMS 마이그레이션과 같은 새로운 데이터 센터로 마이그레이션합니다.
 
-이 경우 자산이 이미 메타데이터로 채워지고 변환이 이미 생성됩니다. 한 인스턴스에서 다른 인스턴스로 자산을 이동하는 것에 간단하게 집중할 수 있습니다. 인스턴스 간 마이그레이션 시 [!DNL Experience Manager] 다음 단계를 수행합니다.
+이 경우 자산이 이미 메타데이터로 채워지고 변환이 이미 생성됩니다. 한 인스턴스에서 다른 인스턴스로 자산을 이동하는 것에 간단하게 집중할 수 있습니다. 배포 간에 마이그레이션할 때 [!DNL Experience Manager] 다음 단계를 수행합니다.
 
 1. 워크플로우 비활성화: Adobe 자산과 함께 표현물을 마이그레이션하기 때문에 [!UICONTROL DAM 자산 업데이트 워크플로우에 대한 워크플로우] 런처를 비활성화할 수 있습니다.
 
-1. 태그 마이그레이션: 소스 인스턴스에 이미 태그가 로드되어 있기 때문에 [!DNL Experience Manager] 콘텐츠 패키지에서 태그를 빌드하고 대상 인스턴스에 패키지를 설치할 수 있습니다.
+1. 태그 마이그레이션: 소스 [!DNL Experience Manager] 배포에 태그가 이미 로드되어 있으므로, 컨텐츠 패키지에서 태그를 빌드하고 대상 인스턴스에 패키지를 설치할 수 있습니다.
 
-1. 자산 마이그레이션: 한 인스턴스에서 다른 인스턴스로 자산을 이동하는 데 권장되는 두 가지 도구가 [!DNL Experience Manager] 있습니다.
+1. 자산 마이그레이션: 한 배포에서 다른 배포로 자산을 이동하는 데 권장되는 두 가지 도구가 [!DNL Experience Manager] 있습니다.
 
    * **저장소 원격 복사** 또는 vlt rcp를 사용하면 네트워크를 통해 vlt를 사용할 수 있습니다. 소스 및 대상 디렉토리를 지정하고 vlt가 한 인스턴스에서 모든 저장소 데이터를 다운로드하고 다른 인스턴스로 로드할 수 있습니다. Vlt rcp는 https://jackrabbit.apache.org/filevault/rcp.html에 [설명되어 있습니다.](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit** 는 Time Warner Cable에서 구현하기 위해 개발한 오픈 소스 컨텐츠 동기화 [!DNL Experience Manager] 툴입니다. vlt rcp에 비해 연속 데이터 스트림을 사용하기 때문에 지연 시간이 더 적고 vlt rcp에 비해 2-10배 빠른 속도 개선 효과를 제공합니다. 또한 Grabbit는 델타 컨텐츠 동기화만 지원하므로 초기 마이그레이션 전달이 완료된 후 변경 사항을 동기화할 수 있습니다.
