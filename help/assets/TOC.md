@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Experience Manager 6.5 자산 사용 안내서
 translation-type: tm+mt
-source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
+source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 100%
@@ -151,7 +151,7 @@ ht-degree: 100%
    + [번역 프로젝트 만들기](translation-projects.md)
    + [자산 번역 준비](preparing-assets-for-translation.md)
    + [AEM에서 자산 다운로드](download-assets-from-aem.md)
-   + [비동기 작업](asynchronous-jobs.md)
+   + [비동기 작업](/help/sites-administering/asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [자산 통찰력](touch-ui-asset-insights.md)
    + [Adobe Launch를 통해 자산 인사이트 활성화](touch-ui-using-dtm-for-asset-insights.md)
