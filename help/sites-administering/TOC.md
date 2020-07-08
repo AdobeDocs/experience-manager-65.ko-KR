@@ -4,9 +4,9 @@ product: adobe experience manager
 audience: admin-user
 user-guide-title: AEM 6.5 관리 사용 안내서
 translation-type: tm+mt
-source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
+source-git-commit: 8d000088f4fd0ff1f85f11818d4e72337da5a280
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '624'
 ht-degree: 14%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 14%
 + [사용자 안내서 관리 개요](home.md)
 + 사이트 기능 {#introduction}
    + [웹 사이트 관리](msm-and-translation.md)
+   + [비동기 작업](asynchronous-jobs.md)
    + [컨텐츠 재활용: 다중 사이트 관리자 및 Live Copy](msm.md)
    + [Live Copy 개요 콘솔](msm-livecopy-overview.md)
    + [Live Copy 동기화 구성](msm-sync.md)
