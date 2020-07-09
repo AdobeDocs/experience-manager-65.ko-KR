@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6943eb3d0b73a348fc7bb5a713813bf73f8e7e79
+source-git-commit: 0a55ed44cb7fe3320b2196df38fe8492ee03912d
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 60%
+source-wordcount: '586'
+ht-degree: 57%
 
 ---
 
@@ -69,6 +69,8 @@ ht-degree: 60%
 * (JBoss 7에만 해당) 이전 버전에서 AEM 6.5 Forms로 업그레이드하면 기본 제출 또는 기본 렌더링 프로세스의 사본을 만들어 사용한 프로세스(.lca)가 이전 버전에서 필요한 작업을 수행하지 못합니다. (CQ-4243928)
 * 적응형 양식에서 양식 데이터 모델 서비스가 규칙 편집기에서 호출되어 이미지 선택 구성 요소 값을 동적으로 업데이트하는 경우 이미지 선택 구성 요소 값이 업데이트되지 않습니다. (CQ-4254754)
 * AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). 설치를 시작하기 전에 위에서 설명한 재배포 가능 런타임 패키지가 설치되어 있는지 확인하십시오. (CQ-4265668)
+
+* PDF Generator는 스마트 카드 기반 인증을 지원하지 않습니다.  관리자가 Windows 서버에서 그룹 정책 `Interactive Logon: Require Smart card` 을 활성화하면 기존 PDF Generator 사용자가 모두 무효화됩니다.
 
 * 적응형 양식이 구성 요소의 값을 동적으로 업데이트하도록 구성되고 양식을 호스팅하는 게시 인스턴스에 디스패처를 통해 액세스할 때 필드의 값을 동적으로 업데이트하는 기능의 작동이 중단됩니다. 이 문제를 해결하려면 게시 인스턴스에서 CRXDE를 열고 /libs/fd/af/runtime/clientlibs/guideChartReducer로 이동한 다음 아래에 나열된 속성을 생성합니다.
 
