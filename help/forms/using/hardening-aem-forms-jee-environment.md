@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
+source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -466,7 +466,7 @@ LDAP를 사용하는 일반적인 공격에는 침입자가 고의적으로 여�
 
 1. 변수의 값을 TRUE로 설정합니다.
 
-1. AEM 양식 인스턴스를 다시 시작합니다.
+1. AEM Forms 인스턴스를 다시 시작합니다.
 
 ## 기업 외부에서 액세스할 수 있도록 JEE에 AEM Forms 구성 {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -480,7 +480,7 @@ JEE에 AEM Forms을 성공적으로 설치한 후에는 주기적으로 환경�
 
 JEE 웹 응용 프로그램의 각 AEM Forms에 대한 다음 응용 프로그램 루트 URL입니다. 최종 사용자에게 제공하려는 웹 응용 프로그램 기능에 대한 URL을 노출하도록 역방향 프록시를 구성해야 합니다.
 
-특정 URL은 최종 사용자 지원 웹 애플리케이션으로 강조 표시됩니다. 역방향 프록시를 통해 외부 사용자에 액세스하기 위해 Configuration Manager에 대한 다른 URL이 노출되지 않아야 합니다.
+특정 URL은 최종 사용자 지원 웹 애플리케이션으로 강조 표시됩니다. 역방향 프록시를 통해 외부 사용자에 액세스하기 위해 Configuration Manager에 대한 다른 URL이 노출되는 것을 피해야 합니다.
 
 <table> 
  <thead> 
