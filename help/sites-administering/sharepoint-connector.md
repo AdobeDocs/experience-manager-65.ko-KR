@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5d74f3510ff20e062f1e78f61d98e9c2e7a0414f
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 2%
@@ -74,7 +74,7 @@ SharePoint 커넥터를 패키지 [에서 다운로드할 수 있습니다](http
 
 * AEM 버전:
 
-   * AEM 6.5, 6.4, 6.3
+   * AEM 6.4, 6.3
 
 * Microsoft SharePoint 버전:
 
@@ -131,9 +131,9 @@ SharePoint 서버의 URL 및 고급 옵션을 설정하려면 다음 단계를 �
 또한 커넥터를 여러 작업 영역에 맞게 구성할 수 있습니다. 이 경우 각 작업 영역은 작업 영역을 통해 노출되는 각 SharePoint 서버의 URL과 연결됩니다. 작업 영역을 추가하려면 작업 영역 매개 변수에 작업 영역 정의를 추가합니다. 작업 공간 정의 형식은 다음과 같습니다.
 `<name>`= `<url>` where`<name>` is the name of JCR workspace and`<url>` is the URL of the SharePoint server for that workspace.
 
-AEM에서 위 구성 단계 외에 한 단계 더 수행합니다. &#39;com.day.cq.da **m.cq-dam-jcr-connectors&#39; 번들 목록을**&#x200B;허용합니다.
+AEM에서 위 구성 단계 외에 한 단계 더 수행합니다. &#39;com.day.cq.da **m.cq-dam-jcr-connectors&#39; 번들을 허용 목록**&#x200B;합니다.
 
-AEM에서 목록 번들을 허용하려면 다음 단계를 수행하십시오.
+AEM에서 번들을 허용 목록하려면 다음 단계를 수행하십시오.
 
 1. OSGi 관리 콘솔로 이동합니다. http://localhost:4502/system/console/configMgr.
 1. &quot;Apache Sling 로그인 관리 화이트 리스트&quot; 서비스를 검색합니다.
