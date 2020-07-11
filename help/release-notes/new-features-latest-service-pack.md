@@ -3,11 +3,11 @@ title: Adobe Experience Manager 6.5 서비스 팩 5의 새로운 기능
 description: Adobe Experience Manager 6.5 서비스 팩 5의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
-translation-type: ht
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
-workflow-type: ht
-source-wordcount: '1849'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
+workflow-type: tm+mt
+source-wordcount: '1873'
+ht-degree: 98%
 
 ---
 
@@ -78,13 +78,13 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 
 ### Adobe Experience Manager 받은 편지함 열 사용자 지정 {#customize-aem-inbox-columns}
 
-[!DNL Experience Manager] 받은 편지함을 사용자 지정하여 열의 기본 제목을 변경하고, 열의 위치를 다시 정렬하며, 워크플로우의 데이터를 기반으로 추가 열을 표시할 수 있습니다. 또는 `administrators` 또는 `workflow-administrators` 그룹의 구성원은 열을 사용자 지정할 수 있습니다.
+[!DNL Experience Manager] 받은 편지함을 사용자 지정하여 열의 기본 제목을 변경하고, 열의 위치를 다시 정렬하며, 워크플로우의 데이터를 기반으로 추가 열을 표시할 수 있습니다. 또는 `administrators` 또는 `workflow-administrators` 그룹의 구성원은 열을 사용자 지정할 수 있습니다. 자세한 내용은 관리 [컨트롤을 참조하십시오](../sites-authoring/inbox.md#inbox-admin-control).
 
 ![Experience Manager 받은 편지함 열 사용자 지정](assets/customize-columns.gif)
 
 ### 대화형 커뮤니케이션을 초안으로 저장 {#save-as-draft}
 
-에이전트 UI를 사용하여 각 대화형 커뮤니케이션에 대해 하나 이상의 초안을 저장하고 나중에 초안을 검색하여 계속 작업할 수 있습니다. 각 초안의 다른 이름을 지정하여 해당 초안을 식별할 수 있습니다.
+에이전트 UI를 사용하여 각 대화형 커뮤니케이션에 대해 하나 이상의 초안을 저장하고 나중에 초안을 검색하여 계속 작업할 수 있습니다. 각 초안의 다른 이름을 지정하여 해당 초안을 식별할 수 있습니다. 자세한 내용은 Interactive Communications [를 초안으로 저장을 참조하십시오](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![초안으로 저장](assets/save-as-draft.gif)
 
@@ -104,7 +104,7 @@ Adobe Experience Manager Forms는 다음과 같은 액세스 가능성이 개선
 
 ### 양식 데이터 모델 {#x509-based-authentication-soap}에서 SOAP 기반 웹 서비스를 위한 X-509 인증서 기반 인증
 
-이제 양식 데이터 모델은 SOAP 웹 서비스를 데이터 소스로 사용하면서 X-509 인증서 기반 인증을 지원합니다.
+이제 양식 데이터 모델은 SOAP 웹 서비스를 데이터 소스로 사용하면서 X-509 인증서 기반 인증을 지원합니다. 자세한 내용은 [SOAP 웹 서비스 구성을 참조하십시오](../forms/using/configure-data-sources.md#configure-soap-web-services).
 
 ### 기타 주요 개선 사항 {#other-improvements}
 
