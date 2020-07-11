@@ -7,9 +7,9 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '4353'
+source-wordcount: '4295'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,7 @@ AEM Forms은 PDF 문서를 작성, 조합, 배포 및 보관하는 서비스, �
    * AEM 서버는 Acrobat 또는 Adobe Reader를 사용하여 열도록 사용자에게 전송되기 전에 양식을 인증합니다.
    * AEM 서버는 Acrobat 또는 Adobe Reader를 사용하여 양식에 추가된 서명을 확인합니다.
    * AEM 서버는 공공증인을 대신하여 양식에 서명합니다.
+
    서명 서비스는 신뢰 저장소에 저장된 인증서 및 자격 증명에 액세스합니다. 자세한 내용은 [서명 서비스를 참조하십시오](/help/forms/using/aem-document-services-programmatically.md).
 
 AEM Forms은 강력한 엔터프라이즈급 플랫폼이며 문서 서비스는 AEM Forms의 기능 중 하나에 불과합니다. 전체 기능 목록은 AEM Forms [소개를 참조하십시오](/help/forms/using/introduction-aem-forms.md).
@@ -82,6 +83,7 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 >
 >* Microsoft Windows에서 PDF Generator는 WebKit, Acrobat WebCapture 및 PhantomJS 변환 경로를 지원하여 HTML 파일을 PDF 문서로 변환합니다.
 >* UNIX 기반 운영 체제에서 PDF Generator는 WebKit 및 PhantomJS 변환 경로를 지원하여 HTML 파일을 PDF 문서로 변환합니다.
+
 >
 
 
@@ -202,6 +204,7 @@ PDF Generator 서비스를 사용하여 Microsoft Word, Microsoft Excel, Microso
 >* Adobe Acrobat, Microsoft Word, Excel 및 Powerpoint는 Microsoft Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 Microsoft Office 파일을 PDF 문서로 변환합니다.
 >* PDF Generator 서비스를 사용하도록 구성된 모든 사용자를 위해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 대화 상자를 모두 거부합니다.
 >* 설치된 모든 소프트웨어를 최소 한 번 시작합니다. PDF Generator 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 닫습니다.
+
 >
 
 
@@ -255,6 +258,7 @@ Acrobat을 설치한 후 Microsoft Word를 엽니다. [ **Acrobat]**&#x200B;탭�
 >* Word, PowerPoint, Excel 및 Project와 같은 Microsoft Office 애플리케이션이나 AutoCAD용 환경 변수를 설정하지 마십시오. 이러한 응용 프로그램이 서버에 설치되어 있는 경우 PDF 생성 서비스는 이러한 응용 프로그램을 자동으로 시작합니다.
 >* UNIX 기반 플랫폼에서 OpenOffice를 /root로 설치합니다. OpenOffice가 루트로 설치되지 않은 경우 PDF Generator 서비스가 OpenOffice 문서를 PDF 문서로 변환하지 못합니다. 루트가 아닌 사용자로 OpenOffice를 설치하고 실행해야 하는 경우 루트가 아닌 사용자에게 해당 권한을 제공합니다.
 >* UNIX 기반 플랫폼에서 OpenOffice를 사용하는 경우 다음 명령을 실행하여 path 변수를 설정합니다.
+
 >
 >  
 `export OpenOffice_PATH=/opt/openoffice.org4`
@@ -378,6 +382,7 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경�
 >* /usr/share/fonts 또는 /usr/share/X11/fonts 디렉토리에서 모든 글꼴(유니코드 및 비유니코드)을 사용할 수 있는지 확인합니다.
 >* 루트가 아닌 사용자로 PDF Generator 서비스를 실행하는 경우 루트 이외의 사용자가 모든 글꼴 디렉토리에 대한 읽기 및 쓰기 액세스 권한을 제공할 수 있습니다.
 >* 글꼴 폴더에 새 글꼴을 설치할 때마다 AEM Forms 인스턴스를 다시 시작합니다.
+
 >
 
 
@@ -386,15 +391,16 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경�
 
 AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 문서 서비스 및 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
 
-1. 관리자로 [AEM 서버에](http://localhost:4502) 로그인하고 [패키지 공유를 엽니다](http://localhost:4502/crx/packageshare). 패키지 공유에 로그인하려면 Adobe ID이 필요합니다.
+1. 오픈 [소프트웨어 배포](https://experience.adobe.com/downloads). 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
+1. 헤더 메뉴에서 **[!UICONTROL 사용 가능한 Adobe Experience Manager]** 를 누릅니다.
+1. 필터 **[!UICONTROL 섹션]** :
+   1. **[!UICONTROL 솔루션]** **** 드롭다운 목록에서 양식을선택합니다.
+   2. 패키지의 버전과 유형을 선택합니다. 다운로드 **[!UICONTROL 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
+1. 운영 체제에 해당하는 패키지 이름을 누르고 EULA 약관 **[!UICONTROL 승인을 선택한]**&#x200B;다음 **[!UICONTROL 다운로드를 누릅니다]**.
+1. [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-1. AEM [패키지 공유](http://localhost:4502/crx/packageshare/login.html)에서 **[!UICONTROL AEM 6.4 Forms Add-on 패키지를]**&#x200B;검색하고 운영 체제에 해당하는 패키지를 클릭한 다음 **[!UICONTROL 다운로드를 클릭합니다]**. 사용권 계약을 읽고 동의한 다음 **[!UICONTROL 확인을 클릭합니다]**. 다운로드가 시작됩니다. 다운로드되면 패키지 옆에 **[!UICONTROL 다운로드됨]** 단어가 나타납니다.
-
-   버전 번호를 사용하여 추가 기능 패키지를 검색할 수도 있습니다. 최신 패키지의 버전 번호는 [AEM Forms 릴리스 문서를](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 참조하십시오.
-
-1. 다운로드가 완료되면 **[!UICONTROL 다운로드를 클릭합니다]**. 패키지 관리자로 리디렉션됩니다. 패키지 관리자에서 다운로드한 패키지를 검색하고 [설치]를 **[!UICONTROL 클릭합니다]**.
-
-   AEM Forms 릴리스 [문서에 나열된 직접 링크를 통해 패키지를 수동으로 다운로드하는 경우 패키지 관리자에 로그인하여 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 업로드 ****&#x200B;를 클릭하고 다운로드한 패키지를 선택한 다음 업로드를 클릭합니다. 패키지가 업로드된 후 패키지 이름을 클릭하고 **[!UICONTROL 설치를 클릭합니다]**.
+   AEM Forms 릴리스 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 [있습니다](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) .
 
 1. 패키지가 설치되면 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log 파일에 나타나지 않고 로그가 안정될 때까지 기다립니다.
 
