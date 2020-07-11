@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 2%
+source-wordcount: '1817'
+ht-degree: 3%
 
 ---
 
@@ -111,15 +111,16 @@ AEM Forms의 데이터 캡처 기능을 설치하고 구성하기 전에 다음�
 
 AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 데이터 캡처 및 기타 기능이 들어 있습니다. Add-on 패키지를 설치하려면 다음 단계를 수행하십시오.
 
-1. 관리자로 [AEM 서버에](https://localhost:4502) 로그인하고 [패키지 공유를 엽니다](https://localhost:4502/crx/packageshare). 패키지 공유에 로그인하려면 Adobe ID이 필요합니다.
-1. AEM [패키지 공유](https://localhost:4502/crx/packageshare/login.html)에서 **AEM 6.5 Forms Add-on 패키지를**&#x200B;검색하고 운영 체제에 해당하는 패키지를 클릭한 다음 **다운로드를 클릭합니다**. 사용권 계약을 읽고 동의한 다음 **확인을 클릭합니다**. 다운로드가 시작됩니다. 다운로드되면 패키지 옆에 **다운로드됨** 단어가 나타납니다.
+1. 오픈 [소프트웨어 배포](https://experience.adobe.com/downloads). 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
+1. 헤더 메뉴에서 **[!UICONTROL 사용 가능한 Adobe Experience Manager]** 를 누릅니다.
+1. 필터 **[!UICONTROL 섹션]** :
+   1. **[!UICONTROL 솔루션]** **** 드롭다운 목록에서 양식을선택합니다.
+   2. 패키지의 버전과 유형을 선택합니다. 다운로드 **[!UICONTROL 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
+1. 운영 체제에 해당하는 패키지 이름을 누르고 EULA 약관 **[!UICONTROL 승인을 선택한]**&#x200B;다음 **[!UICONTROL 다운로드를 누릅니다]**.
+1. [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   버전 번호를 사용하여 추가 기능 패키지를 검색할 수도 있습니다. 최신 패키지의 버전 번호는 [AEM Forms 릴리스 문서를](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 참조하십시오.
-
-1. 다운로드가 완료되면 **다운로드를 클릭합니다**. 패키지 관리자로 리디렉션됩니다. 패키지 관리자에서 다운로드한 패키지를 검색하고 [설치]를 **클릭합니다**.
-
-   AEM Forms 릴리스 [문서에 나열된 직접 링크를 통해 패키지를 수동으로 다운로드하는 경우 패키지 관리자에 로그인하여 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 업로드 ****&#x200B;를 클릭하고 다운로드한 패키지를 선택한 다음 업로드를 클릭합니다. 패키지가 업로드된 후 패키지 이름을 클릭하고 [ **설치]를 클릭합니다.**
-
+   AEM Forms 릴리스 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 [있습니다](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) .
 1. 패키지가 설치되면 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` 파일에 나타나지 않고 로그가 안정될 때까지 기다립니다.
 1. 모든 작성자 및 게시 인스턴스에 대해 1-4단계를 반복합니다.
 
@@ -150,11 +151,11 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 구성이 있습니다. 필�
 
 #### 직렬화 에이전트 구성 {#configure-the-serialization-agent}
 
-모든 작성자 및 게시 인스턴스에 대해 다음 단계를 수행하여 패키지를 허용 목록에 추가합니다.
+모든 작성자 및 게시 인스턴스에 대해 다음 단계를 수행하여 패키지를에 허용 목록에 추가하다 추가합니다.
 
 1. 브라우저 창에서 AEM Configuration Manager를 엽니다. 기본 URL은 `https://'[server]:[port]'/system/console/configMgr`.
 1. com.adobe.cq.deserfw.impl. **DeserializationFirewallImpl.name을** 검색하고 구성을 엽니다.
-1. allowlist **필드에** sun.util.calendar **패키지를** 추가합니다. **저장**&#x200B;을 클릭합니다.
+1. 필드에 **sun.util.calendar** 패키지를 **허용 목록에 추가하다 추가합니다** . **저장**&#x200B;을 클릭합니다.
 1. 모든 작성자 및 게시 인스턴스에 대해 1-3단계를 반복합니다.
 
 ### 설치 후 구성(선택 사항) {#optional-post-installation-configurations}
