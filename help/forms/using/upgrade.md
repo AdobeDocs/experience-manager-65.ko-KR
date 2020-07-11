@@ -10,16 +10,19 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43fe9540a3a29ae86f48756c77001c0a4b8ea3e4
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
 
 # AEM 6.5 Forms로 업그레이드{#upgrade-to-aem-forms}
 
-AEM 6.5 양식에는 양식 및 서신에서 작성, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다. AEM 6.5 양식의 모든 새로운 기능 및 개선 사항에 대한 자세한 내용은 새로운 [기능 요약 문서를](../../forms/using/whats-new.md)참조하십시오.
+AEM 6.5 양식에는 양식과 통신의 작성, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다. AEM 6.5 양식의 새로운 기능과 개선 사항에 대해 자세히 알아보려면 [새로운 기능 요약 문서를 참조하십시오](../../forms/using/whats-new.md).
 
-기존 LiveCycle 또는 AEM Forms 설치를 업그레이드하여 기존 데이터, 프로세스 및 자산을 그대로 유지하면서 AEM 6.5 Forms에서 제공되는 새로운 기능 및 향상된 기능을 얻을 수 있습니다. 업그레이드 시 프로세스의 메타데이터와 상태도 유지됩니다. 업그레이드를 시작할 업그레이드 경로를 선택할 수 있습니다.
+기존 LiveCycle 또는 AEM Forms 설치를 업그레이드하여 기존 데이터, 프로세스 및 자산을 그대로 유지하면서 AEM 6.5 Forms에서 제공하는 새로운 기능과 향상된 기능을 얻을 수 있습니다. 업그레이드 시 프로세스의 메타데이터와 상태도 유지됩니다. 업그레이드를 시작할 업그레이드 경로를 선택할 수 있습니다.
 
 다음 다이어그램은 OSGi에서 AEM Forms에 사용할 수 있는 업그레이드 경로를 보여줍니다.
 
@@ -27,32 +30,32 @@ AEM 6.5 양식에는 양식 및 서신에서 작성, 관리 및 사용자 경험
 
 다음 위치에서 직접 업그레이드를 수행할 수 있습니다.
 
-* OSGi에 대한 AEM 6.3 양식
-* OSGi의 AEM 6.4 양식
+* OSGi에서 AEM 6.3 양식
+* OSGi에서 AEM 6.4 양식
 
 또한
 
-* OSGi의 AEM 6.0 양식
-* OSGi의 AEM 6.1 양식
-* OSGi에 대한 AEM 6.2 양식
+* OSGi에서 AEM 6.0 양식
+* OSGi에서 AEM 6.1 양식
+* OSGi에서 AEM 6.2 양식
 
-다음 다이어그램은 JEE에서 AEM Forms에 사용할 수 있는 업그레이드 경로를 보여줍니다.
+다음 다이어그램은 JEE AEM Forms에 사용할 수 있는 업그레이드 경로를 보여줍니다.
 
 ![](do-not-localize/jee-upgrade-6-5.png)
 
 다음 위치에서 직접 업그레이드를 수행할 수 있습니다.
 
-* JEE의 AEM 6.3 양식
-* JEE의 AEM 6.3 양식
+* JEE에 대한 AEM 6.3 양식
+* JEE에 대한 AEM 6.4 양식
 
 또한
 
 * LiveCycle ES2
 * LiveCycle ES3
 * LiveCycle ES4 SP1
-* JEE의 AEM 6.0 양식
-* JEE의 AEM 6.1 양식
-* JEE의 AEM 6.2 양식
+* JEE에서 AEM 6.0 양식
+* JEE에 대한 AEM 6.1 양식
+* JEE에 대한 AEM 6.2 양식
 
 <!--
 [Work in Progress]
@@ -70,7 +73,7 @@ Migration involves moving only assets (PDF, XDP, images, adaptive forms, corresp
 
     * **Run Migration Utility**
 
-      The migration utility makes the adaptive forms and correspondence management assets of earlier versions compatible with AEM 6.3 forms. You can download the utility from AEM package share. For step-by-step information to configure and use the migration utility, see [migration utility](../../forms/using/migration-utility.md) documentation.
+      The migration utility makes the adaptive forms and correspondence management assets of earlier versions compatible with AEM 6.3 forms. You can download the utility from AEM Software Distribution. For step-by-step information to configure and use the migration utility, see [migration utility](../../forms/using/migration-utility.md) documentation.
 
     * **Reconfigure Adobe Sign**
 
