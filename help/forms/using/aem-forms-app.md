@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 0%
+source-wordcount: '2470'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 AEM Forms 앱을 사용하면 서버를 기반으로 모바일 디바이스에서 적응형 양식, 모바일 양식 및 양식을 동기화할 수 있습니다. JEE에서 OSGi [또는](/help/forms/using/aem-forms-workflow.md) 양식 워크플로우에서 [양식 중심 워크플로우인 워크플로우를 정의할 수 있습니다](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application). 예를 들어 은행 회사를 실행하고 AEM Forms을 사용하여 고객 애플리케이션과 커뮤니케이션을 관리합니다. 고객이 양식을 작성하고 확인을 위해 제출합니다. 모바일 장치에서 양식을 활성화하면 고객이 AEM Forms 앱에서 양식을 채울 수 있습니다. 모바일 장치에서 확인 양식을 활성화하여 확인 워크플로우를 관리할 수도 있습니다. 현장 작업자는 모바일 장치를 고객에게 휴대하고 세부 사항을 확인하고 양식을 제출할 수 있습니다. AEM Forms 앱은 AEM Forms 서버와 동기화되고 모바일 장치에서 사용할 수 있는 양식을 가져옵니다. 앱이 오프라인 상태인 경우 로컬에 데이터를 저장합니다.
 
-고객은 패키지 공유를 통해 AEM Forms 앱의 소스 코드를 사용할 수 있습니다. 패키지 공유의 소스 코드 패키지를 다음과 같이 사용할 수 있습니다. `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+고객은 소프트웨어 배포를 통해 AEM Forms 앱의 소스 코드를 사용할 수 있습니다. 소프트웨어 배포의 소스 코드 패키지는 다음과 같이 사용할 수 있습니다. `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 AEM Forms 앱은 iOS, Android, Windows 디바이스에서 지원됩니다. Google Play, App Store 및 Windows Store에서 Android용 AEM Forms 앱을 설치할 수 있습니다.
 
@@ -179,20 +179,18 @@ AEM Forms 앱은 조직별 요구 사항에 맞게 손쉽게 변경할 수 있�
 
 ### 구축 및 배포 {#build-and-distribute}
 
-패키지 공유에서 AEM Forms 앱 소스 패키지의 일부로 사용할 수 있는 adobe-lc-mobileworkspace-src.zip에서 AEM Forms 앱에 대한 소스 코드를 추출할 수 있습니다.
+AEM Forms 앱의 소스 코드는 소프트웨어 배포의 AEM Forms 앱 소스 패키지 `adobe-lc-mobileworkspace-src.zip` 의 일부로 사용할 수 있는 소스 코드에서 추출할 수 있습니다.
 
 AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
-1. 패키지 공유 탐색
-
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. 소스 패키지를 다운로드합니다. 패키지를 다운로드할 때 AEM Forms 패키지 관리자에 추가됩니다.
-1. 다운로드한 후 다음 위치로 이동합니다. `https://<server>:<port>/crx/packmgr/index.jsp`을 클릭하고 설치합니다 `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
-
-1. 패키지를 다운로드하려면 브라우저 `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` 에서 엽니다.
-
-   소스 패키지가 장치에 다운로드됩니다.
+1. 오픈 [소프트웨어 배포](https://experience.adobe.com/downloads). 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
+1. 헤더 메뉴에서 **[!UICONTROL 사용 가능한 Adobe Experience Manager]** 를 누릅니다.
+1. 필터 **[!UICONTROL 섹션]** :
+   1. **[!UICONTROL 솔루션]** **** 드롭다운 목록에서 양식을선택합니다.
+   2. 패키지의 버전과 유형을 선택합니다. 다운로드 **[!UICONTROL 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
+1. 운영 체제에 해당하는 패키지 이름을 누르고 EULA 약관 **[!UICONTROL 승인을 선택한]**&#x200B;다음 **[!UICONTROL 다운로드를 누릅니다]**.
+1. [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
 **iOS의 경우**:
 
