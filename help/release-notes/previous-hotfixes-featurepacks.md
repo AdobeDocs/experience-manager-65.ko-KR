@@ -2,11 +2,11 @@
 title: Adobe Experience Manager 6.5 이전 서비스 팩 릴리스 노트
 description: Adobe Experience Manager 6.5 서비스 팩 3 이하에 대한 릴리스 노트입니다.
 contentOwner: AK
-translation-type: ht
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
-workflow-type: ht
-source-wordcount: '8093'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: f75e5ad12aed95e950dbf7a00e0f444605f800dd
+workflow-type: tm+mt
+source-wordcount: '8102'
+ht-degree: 99%
 
 ---
 
@@ -505,6 +505,8 @@ Remove one mention of this fix.
 **양식 - 문서 서비스**
 
 * 다음 .NET 프로젝트에서 MTOM을 사용하는 SOAP 웹 서비스에는 AssemblerServiceClient 호출 및 HtmlToPDF2 메서드에 대한 예외가 표시됩니다(NPR-4281771).
+
+* 축 jar 버전 1.4 및 1.4.1에는 보안 취약점이 포함되어 있습니다(NPR-31015).
 
 **Foundation JEE**
 
