@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: a18a018181a779b9f48ef3e39c26410a1bc4919b
 workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 3%
@@ -114,7 +114,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    AEM Forms 릴리스 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 [있습니다](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) .
 
 1. 패키지가 설치되면 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지하기 전에 AEM-Installation-Directory /crx-quickstart/logs/error.log 파일에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 [나타나지 않고]로그가 안정될 때까지 기다립니다.
-1. 모든 작성자 및 게시 인스턴스에 대해 1-4단계를 반복합니다.
+1. 모든 작성자 및 게시 인스턴스에 대해 1-7단계를 반복합니다.
 
 ## 설치 후 구성 {#post-installation-configurations}
 
