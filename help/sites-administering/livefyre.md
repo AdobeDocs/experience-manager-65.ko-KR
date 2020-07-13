@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: d6ae8bffa2d9d59f5656b9344d8826128f12885c
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1653'
 ht-degree: 1%
 
 ---
@@ -39,22 +39,13 @@ AEM 6.5에는 미리 설치된 Livefyre 기능 패키지 1.2.6이 포함되어 �
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. AEM 홈 페이지로 돌아가서 도구를 클릭한 다음 배포 > **패키지 공유로 이동합니다**.
+1. 소프트웨어 배포에서 Livefyre [패키지를 다운로드합니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-   다운로드에 사용할 수 있는 기능 팩 및 핫픽스 목록입니다.
-
-1. 키워드 검색에서 &quot;Livefyre&quot;를 검색한 다음 AEM 버전에 해당하는 Livefyre 기능 팩을 선택합니다.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. 기능 팩 정보 페이지에서 **다운로드를**&#x200B;클릭한 다음 패키지 라이센스 계약을 읽고 **승인을 클릭합니다**.
-1. 패키지 관리자로 돌아가 새로 다운로드한 패키지를 찾은 다음 **설치를 클릭합니다**.
+1. 패키지 관리자에서 다운로드한 패키지를 설치합니다. AEM [에서 소프트웨어 배포 및 패키지 사용에 대한 자세한 내용은 패키지](/help/sites-administering/package-manager.md) 사용 방법을 참조하십시오.
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    이제 Livefyre-AEM 패키지가 설치됩니다. 통합 기능 사용을 시작하려면 먼저 Livefyre를 사용하도록 AEM을 구성해야 합니다.
-
-   패키지에 대한 자세한 내용은 패키지 [를 사용한 작업 방법을 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html).
 
    기능 팩에 대한 자세한 내용 및 릴리스 정보는 [기능 팩을 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
