@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: e795a647b8728b224792f342200a700169a5e87b
+source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 2%
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트의 컨텐츠를 액세스로부터 보호하려면 다음 단계를 따르십시오.
 
-1. AEM Author 인스턴스에서 https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html로 이동합니다.
+1. AEM 작성자 인스턴스의 경우 https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html로 이동합니다.
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 * 모든 지원 리소스 및 학습 경로
 * 특정 역량 강화 리소스 또는 학습 경로
 
-커뮤니티, **보고서[콘솔](reports.md)**로 이동하고
+커뮤니티, **보고서[콘솔](reports.md)**로 이동하고 다음을 따라 보고서를 생성합니다.
 
 * 역량 강화 리소스 및 학습 경로 지정
 * 특정 기간 동안 커뮤니티 사이트에 게시물 게시
@@ -203,12 +203,11 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 게시 중인 리소스와 약간의 활동 및 상호 작용이 있으면 작성자에 대한 보고서를 보는 것이 유용할 것입니다.
 
-* 작성자
-* 관리자 권한으로 로그인
-* 주 메뉴에서 커뮤니티 > **[!UICONTROL 리소스로 이동합니다.]**
-* 사이트 `Enablement Tutorial` 선택
+* 작성자의 경우 관리자 권한으로 로그인합니다.
+* 주 메뉴에서 **[!UICONTROL 커뮤니티]** > 리소스 **[!UICONTROL 로 이동합니다]**.
+* 사이트를 `Enablement Tutorial` 선택합니다.
 * 모든 리소스의 요약 `Report` 아이콘을 선택합니다.
-* 리소스를 선택한 다음 해당 리소스에 대한 보고서의 `Report` 아이콘
+* 리소스를 선택한 다음 해당 리소스에 대한 보고서의 `Report` 아이콘을 선택합니다.
 
 Adobe Analytics의 데이터를 표시하기에는 너무 이르며, 이 데이터는 1시간에서 12시간이 걸릴 수 있습니다. 그러나 기본 SCORM 보고는 이미 사용할 수 있습니다.
 
@@ -236,10 +235,9 @@ Adobe Analytics의 데이터를 표시하기에는 너무 이르며, 이 데이�
 
 할당에 대한 보고서의 경우:
 
-* 작성자
-* 관리자 권한으로 로그인
-* 커뮤니티 **[!UICONTROL > 보고서]** **** > **[!UICONTROL 할당보고서로이동합니다.]**
-* 풀다운 메뉴 **[!UICONTROL 에서]** 사이트 선택(선택 `Enablement Tutorial`)
+* 작성자의 경우 관리자 권한으로 로그인합니다.
+* 커뮤니티 **[!UICONTROL > 보고서]** **** > **[!UICONTROL 할당 보고서]**&#x200B;로이동합니다.
+* 풀다운 메뉴 **[!UICONTROL 에서]** 사이트를 선택합니다(선택 `Enablement Tutorial`).
 
 * 그룹 **[!UICONTROL 선택]** (선택 `Community Ski Class`)
 
@@ -251,15 +249,15 @@ Adobe Analytics의 데이터를 표시하기에는 너무 이르며, 이 데이�
 
 보기에 대한 보고서의 경우:
 
-* 작성자의 경우 관리자 권한으로 로그인
-* 커뮤니티 **[!UICONTROL > 보고서]** **** > **[!UICONTROL 보기보고서로이동합니다.]**
-* 풀다운 메뉴 **에서&#x200B;**사이트 선택(선택`Enablement Tutorial`)
+* 작성자의 경우 관리자 권한으로 로그인합니다.
+* 커뮤니티 > **[!UICONTROL 보고서]** **** > **[!UICONTROL 보기]**&#x200B;보고서로이동합니다.
+* 풀다운 메뉴 **에서&#x200B;**사이트를 선택합니다(선택`Enablement Tutorial`).
 
-* 컨텐츠 **[!UICONTROL 유형]** 선택(선택 `all`)
+* [ **[!UICONTROL 콘텐트 유형]** ]을 선택합니다(선택 `all`).
 
-* 날짜 **[!UICONTROL 범위]** 선택(선택 `Last 7 days`)
+* 날짜 **[!UICONTROL 범위를]** 선택합니다(선택 `Last 7 days`).
 
-* 생성 **[!UICONTROL 선택]**
+* 생성을 **[!UICONTROL 선택합니다]**.
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 
