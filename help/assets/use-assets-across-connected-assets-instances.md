@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 7d001ce126e72663bf8ad0722cf59c1cb7239ae0
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 50%
+source-wordcount: '2080'
+ht-degree: 44%
 
 ---
 
@@ -38,7 +38,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 ### 지원되는 파일 형식 {#mimetypes}
 
-작성자는 콘텐츠 파인더에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용할 수 있습니다. 문서를 `Download` 구성 요소에 추가할 수 있고 이미지를 `Image` 구성 요소에 추가할 수 있습니다. Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 지원되는 형식은 다음과 같습니다.
+작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용합니다. 문서는 구성 요소 및 `Download` 이미지에 `Image` 추가됩니다. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 지원되는 형식은 다음과 같습니다.
 
 * **이미지 형식**: 이미지 구성 요소에서 [지원하는](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 형식입니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
 * **문서 포맷**: 연결된 자산 [에서 지원하는 문서 형식을 참조하십시오](assets-formats.md#supported-document-formats).
@@ -58,9 +58,9 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
-An [!DNL Experience Manager] administrator can create this integration. Once created, the permissions required to use it are established via user groups that are defined on the [!DNL Sites] deployment and on the DAM deployment.
+An [!DNL Experience Manager] administrator can create this integration. 만들어진 후에는 이 권한을 사용하는 데 필요한 권한이 사용자 그룹을 통해 설정됩니다. 사용자 그룹은 배포 및 DAM 배포에 대해 [!DNL Sites] 정의됩니다.
 
-To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps.
+To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps:
 
 1. Access an existing [!DNL Sites] deployment or create a deployment using the following command:
 
@@ -75,7 +75,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    1. [!DNL Assets] 위치는 입니다 `https://[assets_servername_ams]:[port]`.
    1. DAM 배포자의 자격 증명(기술 사용자)
-   1. In **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. 예를 들면 `remoteassets` 폴더를 입력합니다.
+   1. In the **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. 예를 들면 `remoteassets` 폴더를 입력합니다.
    1. 네트워크에 따라 **[!UICONTROL 원본 이진 전송 최적화 임계값]**&#x200B;의 값을 조정합니다. 이 임계값보다 크기가 큰 자산 렌디션은 비동기적으로 전송됩니다.
    1. 데이터 저장소를 사용하여 자산을 저장하고 데이터 저장소가 두 배포의 공통 저장소인 경우 **[!UICONTROL 연결된 자산과 공유되는 데이터 저장소]**&#x200B;를 선택합니다. 이 경우 실제 자산 바이너리가 데이터 저장소에 있고 전송되지 않으므로 임계값 제한은 문제가 되지 않습니다.
 
@@ -107,7 +107,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    1. 관리자 자격 증명을 사용하여 로그인합니다. Search for `Cross-Origin`. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스합니다.
 
-   1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+   1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. 구성을 저장합니다.
 
@@ -145,7 +145,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    *그림: 백그라운드에서 발생하는 자산의 비동기적 가져오기에 대한 알림.*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. 게시할 때 원격 자산을 성공적으로 가져오는지 확인합니다. 가져온 각 자산의 상태를 확인하려면 [비동기 작업](/help/sites-administering/asynchronous-jobs.md) 사용자 인터페이스를 참조하십시오.
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used on the page. 게시할 때 원격 자산을 성공적으로 가져오는지 확인합니다. 가져온 각 자산의 상태를 확인하려면 [비동기 작업](/help/sites-administering/asynchronous-jobs.md) 사용자 인터페이스를 참조하십시오.
 
    >[!NOTE]
    >
@@ -153,20 +153,20 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 >[!CAUTION]
 >
->가져온 원격 자산은 웹 페이지에서 사용한 경우 가져온 자산이 저장된 로컬 폴더에 액세스할 권한이 있는 모든 사람이 검색하고 사용할 수 있습니다(위의 연습에서 `connectedassets`). 또한 자산은 [!UICONTROL 콘텐츠 파인더]를 통해 로컬 저장소에서 검색하고 볼 수 있습니다.
+>웹 페이지에서 사용되면 가져온 원격 에셋은 로컬 폴더에 액세스할 수 있는 권한이 있는 모든 사용자가 검색 및 사용할 수 있습니다. 가져온 에셋은 로컬 폴더(위`connectedassets` 안내 화면)에 저장됩니다. 또한 자산은 [!UICONTROL 콘텐츠 파인더]를 통해 로컬 저장소에서 검색하고 볼 수 있습니다.
 
 가져온 자산은 연결된 메타데이터를 편집할 수 없다는 점을 제외하고 다른 로컬 자산으로 사용할 수 있습니다.
 
 ## 제한 사항 {#limitations}
 
-### 권한 및 자산 관리 {#permissions-and-managing-assets}
+### 권한 및 에셋 관리 {#permissions-and-managing-assets}
 
 * 로컬 자산은 원격 배포의 원본 자산과 동기화되지 않습니다. DAM 배포에 대한 권한 편집, 삭제 또는 취소는 다운스트림으로 전파되지 않습니다.
 * 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager] 구성 요소는 변경되지 않은 상태로 자산을 유지한 채 편집합니다. 다른 편집 작업은 허용되지 않습니다.
 * 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
 * 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Dynamic Media] 자산, 콘텐츠 조각 및 경험 구성요소는 지원되지 않습니다.
 * 메타데이터 스키마를 가져오지 않았습니다.
-* All [!DNL Sites] authors have read permissions on the fetched copies, even if authors do not have access to the remote DAM deployment.
+* 작성자가 원격 DAM 배포에 액세스할 수 없는 경우에도 모든 작성자는 가져온 복사본에 대한 읽기 권한을 가집니다. [!DNL Sites]
 * 통합을 사용자 지정할 수 있는 API 지원이 없습니다.
 * 이 기능을 통해 원격 자산을 원활하게 검색하고 사용할 수 있습니다. 로컬 배포에서 많은 원격 자산을 한 번에 사용할 수 있도록 하려면 자산을 마이그레이션하는 것이 좋습니다. [자산 마이그레이션 안내서](assets-migration-guide.md)를 참조하십시오.
 * 원격 자산을 페이지 속성 사용자 인터페이스에서 페이지 축소판으로 사용할 [!UICONTROL 수] 없습니다. 이미지 선택을 클릭하여 [!UICONTROL 페이지 속성] 사용자 인터페이스에서 웹 페이지의 축소판을 설정할 수 [!UICONTROL 있습니다] .
@@ -180,13 +180,13 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 ### 사용량 {#usage}
 
-* 로컬 페이지에서 원격 자산을 검색하고 원격 자산을 작성자 콘텐츠로 드래그하는 기능만 지원됩니다.
+* 사용자는 작성할 때 원격 자산을 검색하고 로컬 페이지에서 자산을 드래그할 수 있습니다. 다른 기능은 지원되지 않습니다.
 * 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
-*  `Image` 구성 요소를 통해 지원되는 편집과 원본에 영향을 주지 않는 간단한 편집은 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
+* Simple edits that are non-destructive and the edit supported via the `Image` component can be done on fetched assets. 자산은 읽기 전용입니다.
 
 ## 문제 해결 {#troubleshoot}
 
-일반적인 오류 시나리오에 대한 문제를 해결하려면 다음 단계를 따르십시오.
+일반적인 오류 시나리오에 대한 문제를 해결하려면 다음 단계를 수행하십시오.
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
+* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * 원격 댐에서 가져온 에셋이 하나 이상의 이유로 웹 페이지에 게시되지 않을 수 있습니다. 원격 서버에 존재하지 않거나 해당 서버에 가져올 권한이 없거나 네트워크 오류가 원인일 수 있습니다. 원격 DAM에서 자산이 제거되지 않았는지 확인합니다. 적절한 권한이 제자리에 있고 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/sites-administering/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
