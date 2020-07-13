@@ -1,8 +1,8 @@
 ---
 title: Assignments Essentials
 seo-title: Assignments Essentials
-description: 역량 강화 커뮤니티를 위한 할당 기능 개요
-seo-description: 역량 강화 커뮤니티를 위한 할당 기능 개요
+description: 활성 커뮤니티를 위한 할당 기능 개요
+seo-description: 활성 커뮤니티를 위한 할당 기능 개요
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 역량 강화 커뮤니티 [](/help/communities/overview.md#enablement-community) 사이트의 할당 기능 작업에 필요한 필수 정보에 대해 자세히 알아보십시오.
 
-할당 기능은 역량 강화 리소스와 학습 경로를 역량 강화 커뮤니티 구성원에게 할당하는 기능입니다.
+할당 기능은 활성 리소스 및 학습 경로를 활성 커뮤니티 구성원에게 지정하는 기능입니다.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -31,12 +34,12 @@ source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
    <td>social/enablement/components/hbs/myassigned</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
    <td>아니오</td>
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learning path</td>
+   <td>cq.social.enabltumbs.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.lear닝경로</td>
   </tr>
   <tr>
    <td> <strong>템플릿</strong></td>
@@ -48,7 +51,7 @@ source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>참조, <a href="/help/communities/assignments.md">할당 기능</a></td>
+   <td>할당 <a href="/help/communities/assignments.md">기능 보기</a></td>
   </tr>
  </tbody>
 </table>
@@ -70,7 +73,7 @@ source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 * 합격
 * 실패
 
-완료 및 성공 상태의 유일한 조합은 다음과 같습니다.
+완료 및 성공 상태의 조합만 가능합니다.
 
 | **완료** | **성공** |
 |---|---|
@@ -83,13 +86,13 @@ source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ### 지정 기능 {#assignments-function}
 
-Assignments 함수를 포함하는 [커뮤니티 사이트](/help/communities/functions.md#assignments-function)구조에는 구성된 ` [assignments](/help/communities/assignments.md)` 구성 요소가 포함됩니다.
+Assignments 함수를 포함하는 커뮤니티 사이트 구조 [에 구성된](/help/communities/functions.md#assignments-function)` [assignments](/help/communities/assignments.md)` 구성 요소가 포함됩니다.
 
 ### 참조 API {#reference-apis}
 
-* [지원 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
+* [활성 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
 * [보고 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [보고 분석 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [보고 Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 
