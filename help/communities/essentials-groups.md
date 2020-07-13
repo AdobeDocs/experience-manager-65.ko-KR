@@ -1,6 +1,6 @@
 ---
-title: Community Group Essentials
-seo-title: Community Group Essentials
+title: 커뮤니티 그룹 필수
+seo-title: 커뮤니티 그룹 필수
 description: 동적으로 커뮤니티 사이트 만들기
 seo-description: 동적으로 커뮤니티 사이트 만들기
 uuid: 168e7aeb-6e9a-468d-8ac4-274007cea252
@@ -10,16 +10,19 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 1%
 
 ---
 
 
-# Community Group Essentials {#community-group-essentials}
+# 커뮤니티 그룹 필수  {#community-group-essentials}
 
-커뮤니티 그룹 기능은 게시 및 작성 환경에서 승인된 사용자가 커뮤니티 사이트 내에서 하위 커뮤니티를 동적으로 만들 수 있는 기능입니다.
+커뮤니티 그룹 기능은 게시 및 작성 환경에서 승인된 사용자가 커뮤니티 사이트 내에서 하위 커뮤니티를 동적으로 만드는 기능입니다.
 
-커뮤니티 [기능 팩 1부터](deploy-communities.md#latestfeaturepack)그룹을 다른 그룹 내에 중첩할 수 있습니다.
+커뮤니티 [기능 팩 1](deploy-communities.md#latestfeaturepack)의 경우 그룹을 다른 그룹 내에 중첩할 수 있습니다
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -73,7 +76,7 @@ source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
  </tbody>
 </table>
 
-* [클라이언트측 사용자 정의](client-customize.md)
+* [클라이언트측 사용자 지정](client-customize.md)
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
@@ -85,22 +88,23 @@ source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ### 그룹 함수 {#groups-function}
 
-그룹 기능을 포함하는 [커뮤니티 사이트 구조는](functions.md#groups-function) 게시 및 작성 환경에서 새 `community groups` 작성 작업을 지원합니다. 만들어진 커뮤니티 그룹에는 그룹의 구성원을 나열하는 구성 요소가 포함됩니다. `community groups member list`
+그룹 기능이 포함된 커뮤니티 사이트 구조는 [게시](functions.md#groups-function) 및 작성 환경에서 새 `community groups` 작성 작업을 지원합니다. 만들어진 커뮤니티 그룹에는 그룹의 구성원을 나열하는 구성 요소가 포함됩니다. `community groups member list`
 
-커뮤니티 그룹 페이지의 디자인을 제공하는 하나 이상의 [커뮤니티 그룹 템플릿은](tools-groups.md)해당 기능이 [커뮤니티 사이트 템플릿에](sites.md) 추가되거나 커뮤니티 그룹 템플릿 내에 중첩될 때 그룹 기능에 대해 구성할 수 있습니다.
+커뮤니티 그룹 페이지의 디자인을 제공하는 하나 이상의 [커뮤니티 그룹 템플릿](tools-groups.md)은 해당 기능이 [커뮤니티 사이트 템플릿](sites.md) 또는 커뮤니티 그룹 템플릿 내에 중첩될 때 그룹 기능에 대해 구성할 수 있습니다.
 
-여러 커뮤니티 그룹 템플릿이 포함되면 작성자를 위한 [커뮤니티 그룹](creating-groups.md) 섹션에 나와 있는 것처럼 커뮤니티 사이트에 대해 새 커뮤니티 그룹이 만들어질 때 권한이 있는 사용자에게 디자인 선택이 표시됩니다.
+여러 커뮤니티 그룹 템플릿이 포함되어 있으면 작성자를 위한 [커뮤니티 그룹](creating-groups.md) 섹션에 나와 있는 것처럼 커뮤니티 사이트에 대해 새 커뮤니티 그룹이 만들어질 때 권한이 있는 사용자에게 디자인 선택 사항이 표시됩니다.
 
 ### 중첩 그룹 {#nested-groups}
 
 Communities [FP1의](deploy-communities.md#latestfeaturepack)경우 그룹 기능을 그룹 템플릿에 포함할 수 있으므로 중첩된 그룹(하위 커뮤니티)을 사용할 수 있습니다.
 
-커뮤니티 사이트 또는 그룹 템플릿에 그룹 함수가 포함되어 있으면
+커뮤니티 사이트 또는 그룹 템플릿에 그룹 함수가 포함되어 있으면 다음을 수행할 수 있습니다.
 
-* 작성 환경에서 하위 커뮤니티 만들기
-* 게시 환경에서 그룹을 만들 수 있도록 구성할 때
+* 작성 환경에서 하위 커뮤니티를 만듭니다.
 
-작성 환경에서 그룹을 만들 때는 먼저 커뮤니티 사이트를 게시한 다음 그룹을 게시해야 합니다. 커뮤니티 사이트를 게시하면 ACL이 설정된 하위 커뮤니티의 구성원 그룹을 만들지 않고도 그룹의 페이지가 게시됩니다. 따라서 그룹이 명시적으로 게시될 때까지 제한된(비밀) 그룹이 표시될 수 있습니다.
+* 게시 환경에서 그룹을 만들도록 구성할 때 만듭니다.
+
+작성 환경에서 그룹을 만들 때는 먼저 커뮤니티 사이트를 게시한 다음 그룹을 게시해야 합니다. 커뮤니티 사이트를 게시하면 ACL이 설정된 하위 커뮤니티의 구성원 그룹을 만들지 않고도 그룹의 페이지가 게시됩니다. 따라서 그룹이 명시적으로 게시될 때까지 제한된(비밀) 그룹을 볼 수 있습니다.
 
 ## 링크 및 관련 정보 {#links-and-related-information}
 
