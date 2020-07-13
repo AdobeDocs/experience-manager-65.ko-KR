@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -27,10 +27,10 @@ ht-degree: 10%
 
 페이지에 리더보드 구성 요소를 포함하기 전에 [커뮤니티 점수 및 배지를 구성해야 합니다](/help/communities/implementing-scoring.md).
 
-설명서의 이 섹션에서는
+설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
-* 커뮤니티 사이트에 구성 `Leaderboard` 요소 [추가](/help/communities/overview.md#community-sites)
-* 구성 요소에 대한 `Leaderboard` 구성 설정
+* 커뮤니티 사이트 `Leaderboard` 에 구성 [요소 추가](/help/communities/overview.md#community-sites).
+* 구성 요소의 구성 `Leaderboard` 설정.
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -44,17 +44,19 @@ ht-degree: 10%
 
 커뮤니티 사이트의 페이지에 처음 배치하면 구성 요소가 표시되는 방식입니다.
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 ### 리드 보드 구성 {#configuring-leaderboard}
 
 액세스할 배치된 `Leaderboard` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-20](assets/chlimage_1-20.png)![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-9](assets/chlimage_1-9.png)
+
+![chlimage_1-10](assets/chlimage_1-10.png)
 
 #### 설정 탭 {#settings-tab}
 
-설정 **탭** 아래에서, 멤버와 관련된 정보가 표시되는 것을 지정합니다.
+설정 **[!UICONTROL 탭]** 아래에서, 멤버와 관련된 정보가 표시되는 것을 지정합니다.
 
 * **표시 이름**
 
@@ -118,7 +120,7 @@ ht-degree: 10%
    * 배지 규칙 = `/libs/settings/community/badging/rules//reference-badging`
    * 표시 제한 = `10`
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![chlimage_1-11](assets/chlimage_1-11.png)
 
 ### 예: 전문가 경영진 {#example-experts-leaderboard}
 
@@ -141,7 +143,7 @@ ht-degree: 10%
    * 배지 규칙 = `/libs/settings/community/badging/rules/adv-forums-badging`
    * 표시 제한 = `10`
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 ### 추가 정보 {#additional-information}
 
