@@ -10,16 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 5%
 
 ---
 
 
-# 주요 컨텐츠 필수 {#featured-content-essentials}
+# 주요 컨텐츠 필수  {#featured-content-essentials}
 
-이 페이지에서는 주요 컨텐츠 작업에 필요한 정보를 제공합니다.
+이 페이지에서는 주요 컨텐츠 작업에 필요한 필수 정보를 제공합니다.
 
-포럼 맨 위에 게시물을 고정하는 것과 달리 이 기능을 사용하면 커뮤니티 사이트 내의 아무 곳에나 컨텐츠를 강조 표시할 수 있습니다.
+포럼 맨 위에 게시물을 고정하는 것과 달리 이 기능을 사용하면 커뮤니티 사이트 내의 어디서나 컨텐츠를 강조 표시할 수 있습니다.
+
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -30,7 +34,7 @@ source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
    <td>social/commons/components/hbs/features</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
    <td>아니오</td>
   </tr>
   <tr>
@@ -52,8 +56,8 @@ source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
  </tbody>
 </table>
 
-* [클라이언트측 사용자 정의](client-customize.md)
+* [클라이언트측 사용자 지정](client-customize.md)
 
 ### 파일 라이브러리 기능 {#file-library-function}
 
-주요 컨텐츠 기능을 포함하는 [커뮤니티 사이트 구조에는](functions.md#featured-content-function)구성된 `featured content` 구성 요소가 포함됩니다.
+주요 컨텐츠 기능을 포함하는 커뮤니티 사이트 구조에는 구성된 [구성](functions.md#featured-content-function)요소가 `featured content` 포함됩니다.
