@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 95c23d29aa1dd1695ed4e541dd11c2bbc7214f75
+source-git-commit: 4949eeb190f26850f80e1ad107f2057c661ed23d
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '2100'
 ht-degree: 1%
 
 ---
@@ -118,7 +118,78 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
-   <td>"파일"의 바이너리 컨텐츠를 반환합니다.<code>nt:resource</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr></tbody></table>
+   <td>파일 리소스의 바이너리 컨텐츠를 반환합니다(JCR 노드 기반 리소스이고 노드 유형이 <code>nt:file</code> 또는 <code>nt:resource</code>인 경우). 번들 리소스인 경우; 파일 컨텐츠(파일 시스템 리소스인 경우) 또는 바이너리 JCR 속성 리소스의 데이터입니다.</td>
+  </tr>
+  <tr>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/net/URL.html">URL</a></td>
+   <td>리소스(JCR 노드 기반 리소스인 경우 이 노드의 저장소 URL; 번들 리소스인 경우 jar bundle URL; 파일 시스템 리소스인 경우 파일 URL).</td>
+  </tr>
+  <tr>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/File.html">파일</a></td>
+   <td>파일 시스템 리소스인 경우</td>
+  </tr>
+  <tr>
+   <td><a href="https://sling.apache.org/apidocs/sling5/org/apache/sling/api/scripting/SlingScript.html">SlingScript</a></td>
+   <td>이 리소스가 sling에 등록된 스크립트(예: jsp 파일)인 경우</td>
+  </tr>
+  <tr>
+   <td><a href="https://java.sun.com/products/servlet/2.2/javadoc/javax/servlet/Servlet.html">서블릿</a></td>
+   <td>이 리소스가 Sling에 등록된 스크립트(예: jsp 파일)이거나 Servlet 리소스인 경우</td>
+  </tr>
+  <tr>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">문자열</a><br /> 긴 <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">2개</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html"></a><br /> <a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html"></a><br /> <a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">CalendarValueCumulativeValueCumulativeCumulativeJolean[]Boolean[]Long[]Long[]CulerCalendar[]CalendarValue[]</a></td>
+   <td>JCR 속성 기반 리소스인 경우 값을 반환합니다(값이 적절함).</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html">레이블리소스</a></td>
+   <td>JCR 노드 기반 리소스인 경우</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html">자산</a></td>
+   <td>dam:Asset 노드 리소스인 경우</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Rendition.html">Rendition</a></td>
+   <td>dam:Asset 변환(dam:Assert의 변환 폴더 아래에 nt:file)인 경우</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
+   <td>JCR 기반 리소스이고 사용자에게 UserManager에 액세스할 권한이 있는 경우 JCR 세션을 기반으로 합니다.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">승인 가능 대상</a></td>
+   <td>권한 부여됨은 사용자 및 그룹의 공통 기본 인터페이스입니다.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/User.html">사용자</a></td>
+   <td>사용자는 인증 및 가장할 수 있는 특별한 승인 대상입니다.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/SimpleSearch.html">단순 검색</a></td>
+   <td>리소스 아래에서 검색하거나 setSearchIn()(JCR 기반 리소스인 경우)을 사용합니다.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
+   <td>지정된 페이지/워크플로우 페이로드 노드에 대한 워크플로우 상태입니다.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/ReplicationStatus.html">복제 상태</a></td>
+   <td>지정된 리소스 또는 해당 jcr:content 하위 노드에 대한 복제 상태입니다(먼저 선택됨).</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
+   <td>JCR 노드 기반 리소스인 경우 특정 유형에 대해 조정된 커넥터 리소스를 반환합니다.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/config/package-summary.html">구성</a></td>
+   <td>노드 <code>cq:ContentSyncConfig</code> 리소스인 경우</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
+   <td>노드 리소스 아래에 있는 <code>cq:ContentSyncConfig</code> 경우입니다.</td>
+  </tr>
+ </tbody>
+</table>
 
 [**리소스 확인자&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html):
 
