@@ -1,8 +1,8 @@
 ---
-title: Sling 어댑터 사용
-seo-title: Sling 어댑터 사용
-description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 객체를 편리하게 변환합니다.
-seo-description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 객체를 편리하게 변환합니다.
+title: 슬링 어댑터 사용
+seo-title: 슬링 어댑터 사용
+description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 개체를 편리하게 변환합니다
+seo-description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 개체를 편리하게 변환합니다
 uuid: 07f66a33-072d-49e1-8e67-8b80a6a9072a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,19 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 95c23d29aa1dd1695ed4e541dd11c2bbc7214f75
+workflow-type: tm+mt
+source-wordcount: '1496'
+ht-degree: 1%
 
 ---
 
 
-# Sling 어댑터 사용{#using-sling-adapters}
+# 슬링 어댑터 사용{#using-sling-adapters}
 
-[Sling](https://sling.apache.org) 은 [어댑터 패턴을](https://sling.apache.org/site/adapters.html) 제공하여 적응형 인터페이스를 구현하는 개체를 편리하게 [변환합니다](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) . 이 인터페이스는 [개체를 인수로 전달되는 클래스 형식으로 변환하는 제네릭 adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 메서드를 제공합니다.
+[Sling](https://sling.apache.org) 은 [어댑터 패턴](https://sling.apache.org/site/adapters.html) 을 제공하여 어댑터 인터페이스 [를 구현하는 개체를 편리하게](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 변환합니다. 이 인터페이스는 인수 [로 전달되는 클래스 유형으로 개체를 변환하는 일반](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) adaptTo() 메서드를 제공합니다.
 
-예를 들어 Resource 객체를 해당 Node 객체로 변환하려면 간단하게 다음을 수행할 수 있습니다.
+예를 들어 리소스 개체를 해당 노드 개체로 변환하려면 다음을 수행하면 됩니다.
 
 ```java
 Node node = resource.adaptTo(Node.class);
@@ -29,15 +32,15 @@ Node node = resource.adaptTo(Node.class);
 
 다음과 같은 사용 사례가 있습니다.
 
-* 구현별 개체 가져오기
+* 구현별 개체를 가져옵니다.
 
-   예를 들어, 일반 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 인터페이스의 JCR 기반 구현은 기본 JCR에 대한 액세스 권한을 제공합니다. [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)&#39;
+   예를 들어 일반 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 인터페이스의 JCR 기반 구현은 기본 JCR에 대한 액세스 권한을 제공합니다 [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).&#39;
 
-* 내부 컨텍스트 객체를 전달해야 하는 객체의 바로 만들기
+* 내부 컨텍스트 개체를 전달해야 하는 개체의 바로 가기 만들기
 
-   예를 들어, JCR 기반 [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) 파일에는 요청의 참조가 들어 [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)있으며, 이 참조는 [`PageManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 또는 [`UserManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html)와 같은 요청 세션을 기반으로 하는 많은 개체에 필요합니다.
+   예를 들어, JCR 기반 [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) 은 요청에 대한 참조를 보유하며, [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)이것은 [`PageManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 또는 [`UserManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html)같은 요청 세션을 기반으로 작동할 많은 개체에 필요합니다.
 
-* 서비스로 바로 가기
+* 서비스에 바로 가기
 
    드문 경우이지만 `sling.getService()` 간단합니다.
 
@@ -47,39 +50,39 @@ Node node = resource.adaptTo(Node.class);
 
 다음과 같은 여러 가지 이유가 있습니다.
 
-* 구현에서 대상 유형을 지원하지 않습니다.
+* 구현에서 대상 유형을 지원하지 않음
 * 이 케이스를 처리하는 어댑터 팩터리가 활성 상태가 아닙니다(예: 서비스 참조가 없기 때문에)
-* 내부 조건 실패
+* 내부 조건이 실패했습니다.
 * 서비스를 사용할 수 없습니다.
 
-Null 케이스를 적절하게 처리해야 합니다. jsp 렌더링의 경우 빈 컨텐츠가 발생하는 경우 jsp가 실패할 수 있습니다.
+Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌더링의 경우 jsp가 실패할 경우 빈 컨텐츠가 발생할 수 있습니다.
 
 ### 캐싱 {#caching}
 
-성능을 개선하기 위해 구현은 `obj.adaptTo()` 호출에서 반환된 개체를 캐시할 수 있습니다. 동일한 `obj` 경우 반환된 객체가 동일합니다.
+성능을 개선하기 위해 구현은 호출에서 반환된 개체를 캐시할 수 `obj.adaptTo()` 있습니다. 동일한 `obj` 경우 반환된 개체가 동일합니다.
 
 이 캐싱은 모든 `AdapterFactory` 기반 사례에 대해 수행됩니다.
 
-그러나 일반 규칙이 없습니다. 개체는 새 인스턴스나 기존 인스턴스일 수 있습니다. 이것은 두 가지 행동에 의존할 수 없음을 의미합니다. 따라서 특히 이 시나리오에서 개체가 다시 `AdapterFactory`사용할 수 있는 것이 중요합니다.
+그러나 일반 규칙이 없습니다. 개체가 새 인스턴스나 기존 인스턴스일 수 있습니다. 이는 두 행동 중 하나에 의존할 수 없음을 의미합니다. 따라서 특히 내부에서 이 시나리오에서 개체 `AdapterFactory`가 다시 사용된다는 것이 중요합니다.
 
 ### 작동 방식 {#how-it-works}
 
 다음과 같은 다양한 방법으로 구현할 `Adaptable.adaptTo()` 수 있습니다.
 
-* 목적 자체에 의해;메서드 자체를 구현하고 특정 개체에 매핑을 적용합니다.
-* 임의 개체를 매핑할 수 있는 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)&#39;에 의해.
+* 목적 자체로는; 메서드 자체를 구현하고 특정 개체에 매핑을 수행합니다.
+* 임의의 개체를 매핑할 수 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)&#39;
 
-   개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며 [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) 이를 확장(중앙 어댑터 관리자에 `adaptTo` 호출 전달)해야 합니다.
+   개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며 [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (이 경우 `adaptTo` 호출을 중앙 어댑터 관리자에게 전달) 확장해야 합니다.
 
-   이렇게 하면 같은 기존 클래스의 `adaptTo` 메커니즘에 연결할 수 `Resource`있습니다.
+   이렇게 하면 기존 클래스(예: `adaptTo` 예: `Resource`)에 대한 메커니즘에 연결이 가능합니다.
 
-* 두 가지 모두를 결합합니다.
+* 두 가지 조합입니다.
 
-첫 번째 사례에서는 javadocs가 가능한 내용을 `adaptTo-targets` 설명할 수 있습니다. 그러나 JCR 기반 리소스와 같은 특정 하위 클래스의 경우 이는 종종 불가능합니다. 후자의 경우, 구현은 `AdapterFactory` 일반적으로 번들의 개인 클래스의 일부이므로 클라이언트 API에 노출되거나 javadocs에 나열되지 않습니다. 이론적으로는 OSGi 서비스 런타임에서 모든 `AdapterFactory` 구현에 액세스하고 [해당 &quot;적응형 테이블&quot;(소스 및 타겟) 구성을 볼 수 있지만 서로 매핑하지 않을 수 있습니다](/help/sites-deploying/configuring-osgi.md) . 결국, 이것은 문서화되어야 하는 내부 논리에 따라 다릅니다. 따라서 이 참조가 사용됩니다.
+첫 번째 경우, javadocs는 가능한 것을 나타낼 수 `adaptTo-targets` 있습니다. 그러나 JCR 기반 리소스와 같은 특정 하위 클래스의 경우 이는 종종 불가능합니다. 후자의 경우, 구현은 일반적으로 번들의 개인 클래스 `AdapterFactory` 의 일부이므로 클라이언트 API에 노출되거나 javadocs에 나열되지 않습니다. 이론적으로는 `AdapterFactory` OSGi [](/help/sites-deploying/configuring-osgi.md) 서비스 런타임에서 모든 구현에 액세스하여 &quot;적응형&quot;(소스 및 대상) 구성을 볼 수 있지만 서로 매핑하지 않을 수 있습니다. 결국, 이것은 문서화되어야 하는 내부 로직에 따라 다릅니다. 따라서 이 참조
 
 ## 참조 {#reference}
 
-### Sling {#sling}
+### 슬링 {#sling}
 
 [**리소스는&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html)다음 항목에 맞게 조정됩니다.
 
@@ -91,7 +94,7 @@ Null 케이스를 적절하게 처리해야 합니다. jsp 렌더링의 경우 �
   </tr>
   <tr>
    <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">속성</a></td>
-   <td>JCR 속성 기반 리소스인 경우</td>
+   <td>JCR 속성 기반 리소스인 경우.</td>
   </tr>
   <tr>
    <td><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Item.html">항목</a></td>
@@ -103,21 +106,21 @@ Null 케이스를 적절하게 처리해야 합니다. jsp 렌더링의 경우 �
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>JCR 노드 기반 리소스(또는 기타 리소스 지원 값 맵)인 경우 속성의 편리한 맵을 반환합니다. Null을 처리하는 등)을 사용하여<br /> (더욱 간단하게) 수행할 <code><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> 수 있습니다.</td>
+   <td>JCR 노드 기반 리소스(또는 기타 리소스 지원 값 맵)인 경우 속성의 편리한 맵을 반환합니다. (null 케이스 처리 등)를 사용하여<br /> (더욱 간단하게 <code><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> ) 수행할 수도 있습니다.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
-   <td>속성을 <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">찾을</a> 때 리소스 계층을 고려하도록 하는 ValueMap 확장.</td>
+   <td>속성을 <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">찾을</a> 때 리소스 계층을 고려하도록 하는 ValueMap의 확장입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/PersistableValueMap.html">PersistentValueMap</a></td>
-   <td>이 리소스가 JCR 노드 기반 리소스이고 해당 노드에서 속성을 수정할 수 있는 권한이 있는 경우<br /> 참고:다중 지속 맵은 해당 값을 공유하지 않습니다.</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">수정 가능 값 맵</a></td>
+   <td>해당 노드에서 속성을 수정할 수 <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">있는 ValueMap</a>확장입니다.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
-   <td>"파일"의 바이너리 컨텐츠를 반환합니다.<code>nt:resource</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>AuthorizableResourceProvider</code><code>org.apache.sling.jackrabbit.usermanager</code><code>/system/userManager</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Page</code><code>cq:PseudoPage</code></td></tr><tr><td></td><td><code>cq:Component</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td><code>cq:Template</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Tag</code></td></tr><tr><td></td><td><code>cq:Preferences</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr></tbody></table>
+   <td>"파일"의 바이너리 컨텐츠를 반환합니다.<code>nt:resource</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr></tbody></table>
 
-[**ResourceResolver **](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html),
+[**리소스 확인자&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html):
 
 <table>
  <tbody>
@@ -126,28 +129,13 @@ Null 케이스를 적절하게 처리해야 합니다. jsp 렌더링의 경우 �
    <td>요청의 JCR 세션(JCR 기반 리소스 확인자(기본값)입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Designer.html">디자이너</a></td>
-   <td> </td>
-  </tr>
-  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
-   <td>JCR 세션을 기반으로 하며, JCR 기반 리소스 확인자인 경우 사용합니다.</td>
+   <td>JCR 세션을 기반으로 하는 경우, JCR 기반 리소스 확인자입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
-   <td>JCR 세션을 기반으로 하며, JCR 기반 리소스 확인자인 경우 사용합니다.</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
-   <td>JCR 세션을 기준으로, JCR 기반 리소스 확인자인 경우, 그리고 사용자에게 UserManager에 액세스할 권한이 있는 경우.</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
+   <td>UserManager는 사용자 및 그룹과 같이 권한이 부여된 개체를 유지 관리하기 위한 액세스 및 방법을 제공합니다. UserManager는 특정 세션에 바인딩됩니다.
+   </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">승인 가능 대상</a> </td>
@@ -158,35 +146,19 @@ Null 케이스를 적절하게 처리해야 합니다. jsp 렌더링의 경우 �
    <td>현재 사용자입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/privileges/PrivilegeManager.html">권한 관리자</a></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/preferences/Preferences.html">환경 설정</a></td>
-   <td>현재 사용자의 환경 설정(JCR 기반 리소스 확인자인 경우 JCR 세션 기준).</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/preferences/PreferencesService.html">기본 설정서비스</a></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/auth/pin/PinManager.html">PinManager</a></td>
-   <td> </td>
-  </tr>
-  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td>
-   <td>절대 URL을 외부화하기 위해, 요청 개체를 사용하지 않아도 됩니다.<br /> </td>
+   <td>절대 URL을 외부화하는 경우, 요청 개체가 있더라도.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-[**SlingHttpServletRequest는&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)다음 항목에 적용됩니다.
+[**SlingHttpServletRequest는&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)다음 항목에 맞게 조정됩니다.
 
-대상이 아직 없지만 Adaptable을 구현하고 사용자 지정 AdapterFactory에서 소스로 사용할 수 있습니다.
+타겟이 아직 없지만 Adaptable을 구현하며 사용자 지정 AdapterFactory에서 소스로 사용할 수 있습니다.
 
 [**SlingHttpServletResponse는&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)다음 항목에 적용됩니다.
 
@@ -194,14 +166,14 @@ Null 케이스를 적절하게 처리해야 합니다. jsp 렌더링의 경우 �
  <tbody>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/org/xml/sax/ContentHandler.html">ContentHandler</a><br /> (XML)</td>
-   <td>Sling 리writer 응답인 경우</td>
+   <td>이것이 슬링 리셀러 응답이라면</td>
   </tr>
  </tbody>
 </table>
 
 #### WCM {#wcm}
 
-[**페이지가&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)적용되는 대상:
+**페이지** 적응형:
 
 <table>
  <tbody>
@@ -219,25 +191,25 @@ Null 케이스를 적절하게 처리해야 합니다. jsp 렌더링의 경우 �
   </tr>
   <tr>
    <td>...</td>
-   <td>페이지의 리소스를 조정할 수 있는 모든 것</td>
+   <td>페이지 리소스를 조정할 수 있는 모든 것</td>
   </tr>
  </tbody>
 </table>
 
-[**구성 요소는&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)다음 항목에 적용됩니다.
+**구성 요소** 어댑터:
 
 | [리소스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 구성 요소의 리소스입니다. |
 |---|---|
 | [레이블리소스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html) | 레이블이 지정된 리소스(== this). |
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 구성 요소의 노드입니다. |
-| ... | 구성 요소의 리소스를 조정할 수 있는 모든 것. |
+| ... | 구성 요소의 리소스를 조정할 수 있는 모든 것 |
 
-[**템플릿이&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)다음 항목에 맞게 조정됩니다.
+**템플릿** 적용 대상:
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">리소스</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /></a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">리소스</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
    <td>템플릿의 리소스입니다.</td>
   </tr>
   <tr>
@@ -250,37 +222,37 @@ Null 케이스를 적절하게 처리해야 합니다. jsp 렌더링의 경우 �
   </tr>
   <tr>
    <td>...</td>
-   <td>템플릿의 리소스를 조정할 수 있는 모든 것</td>
+   <td>템플릿 리소스를 조정할 수 있는 모든 것</td>
   </tr>
  </tbody>
 </table>
 
 #### 보안 {#security}
 
-[**승인 가능&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html),[**사용자**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) 및 [**그룹은&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html)다음과 같이 적용됩니다.
+**인증 가능**, **사용자** 및 **그룹** 은다음 항목에맞게 적용됩니다.
 
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 사용자/그룹 홈 노드를 반환합니다. |
 |---|---|
-| [ReplicationStatus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/ReplicationStatus.html) | 사용자/그룹 홈 노드의 복제 상태를 반환합니다. |
+| [복제 상태](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/ReplicationStatus.html) | 사용자/그룹 홈 노드에 대한 복제 상태를 반환합니다. |
 
 #### DAM {#dam}
 
-[**자산이&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html)다음 항목에 맞게 조정됩니다.
+**자산이** 다음 항목에 맞게 조정됩니다.
 
-| [리소스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 자산의 리소스입니다. |
+| [리소스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 자산의 리소스. |
 |---|---|
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 자산의 노드입니다. |
 | ... | 자산의 리소스를 조정할 수 있는 모든 것. |
 
 #### 태깅 {#tagging}
 
-[**태그는&#x200B;**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html)다음 항목에 적용됩니다.
+**태그** 어댑터:
 
-| [리소스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 태그의 리소스입니다. |
+| [리소스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 태그의 리소스. |
 |---|---|
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 태그의 노드입니다. |
-| ... | 태그의 리소스가 적용할 수 있는 모든 것. |
+| ... | 태그의 리소스에 적용할 수 있는 모든 것 |
 
 #### 기타 {#other}
 
-또한 Sling / JCR / OCM은 사용자 정의 OCM(Object Content Mapping) ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` 객체에 대한[](https://jackrabbit.apache.org/object-content-mapping.html)정보도 제공합니다.
+또한 Sling / JCR / OCM은 사용자 정의 OCM(Object Content Mapping ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` ) 개체에 대한[](https://jackrabbit.apache.org/object-content-mapping.html)기능도 제공합니다.
