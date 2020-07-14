@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+source-git-commit: d621a612556f0bea032444c2e07be101868b1905
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM의 핵심 개념으로 이동하기 전에 AEM Sites [개발 시작 문서의 WKND 자습서를 완료하여 AEM 개발 프로세스 및 핵심 개념 소개를](/help/sites-developing/getting-started.md) 수행하는 것이 좋습니다.
+>AEM의 핵심 개념으로 이동하기 전에 AEM 개발 프로세스 및 핵심 개념 소개에 대한 개요에 대한 자세한 내용을 보려면 [AEM Sites](/help/sites-developing/getting-started.md) 개발 시작 문서의 WKND 자습서를 완료하는 것이 좋습니다.
 
 ## AEM에서 개발하기 위한 전제 조건 {#prerequisites-for-developing-on-aem}
 
@@ -68,11 +68,11 @@ Sling [을 사용하여 개발하는 첫 번째 단계는 Discover Sling을 15�
 
 다음 다이어그램에서는 Sling 스크립트 해상도에 대해 설명합니다. 이 표는 HTTP 요청에서 컨텐츠 노드, 컨텐츠 노드에서 리소스 유형에 이르기까지, 리소스 유형에서 스크립트 유형에 이르기까지, 그리고 사용할 수 있는 스크립팅 변수를 얻는 방법을 보여줍니다.
 
-![chlimage_1-84](assets/chlimage_1-97.png)
+![Apache Sling 스크립트 해상도 이해](assets/sling-cheatsheet-01.png)
 
 다음 다이어그램에서는 저장소의 노드를 생성, 수정, 삭제, 복사 및 이동하는 데 필요한 선택 사항을 제공하는 모든 POST 요청에 대한 기본 핸들러인 SlingPostServlet을 처리할 때 사용할 수 있는 숨겨진 강력한 요청 매개 변수에 대해 설명합니다.
 
-![chlimage_1-85](assets/chlimage_1-98.png)
+![SlingPostServlet 사용](assets/sling-cheatsheet-02.png)
 
 ### 컨텐츠 중심의 Sling {#sling-is-content-centric}
 
@@ -315,7 +315,7 @@ OSGi 프레임워크는 다시 시작할 필요 없이 이러한 번들의 동�
 >
 >특히 기본 교육 페이지에는 프레젠테이션 및 자습서가 포함되어 있습니다.
 
-이 아키텍처에서는 응용 프로그램별 모듈로 Sling을 확장할 수 있습니다. 따라서 CQ5인 Sling은 OSGI(Open Services Gateway 이니셔티브)의 [Apache Felix](https://felix.apache.org/) 구현을 사용하며 OSGi Service Platform 릴리스 4 버전 4.2 사양을 기반으로 합니다. 두 OSGi 번들 모두 OSGi 프레임워크에서 실행되는 OSGi 번들 모음입니다.
+이 아키텍처에서는 응용 프로그램별 모듈로 Sling을 확장할 수 있습니다. 따라서 CQ5인 Sling은 OSGI(Open Services Gateway 이니셔티브)의 [Apache Felix](https://felix.apache.org/) 구현을 사용하며 OSGi 서비스 Platform 릴리스 4 버전 4.2 사양을 기반으로 합니다. 두 OSGi 번들 모두 OSGi 프레임워크에서 실행되는 OSGi 번들 모음입니다.
 
 설치 내의 패키지에 대해 다음 작업을 수행할 수 있습니다.
 
@@ -444,9 +444,9 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 AEM을 사용하는 프로덕션 환경은 종종 두 가지 유형의 인스턴스로 구성됩니다. 작성자 및 [게시 인스턴스](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
-## 디스패처 {#the-dispatcher}
+## Dispatcher {#the-dispatcher}
 
-Dispatcher는 캐싱 및/또는 로드 밸런싱 모두를 위한 Adobe의 툴입니다. 자세한 내용은 디스패처 아래 [에서 확인할 수 있습니다](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html).
+Dispatcher은 캐싱 및/또는 로드 밸런싱 모두를 위한 Adobe의 툴입니다. 더 자세한 정보는 Dispatcher [에서 찾을 수 있다](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html).
 
 ## FileVault(소스 개정 시스템) {#filevault-source-revision-system}
 
