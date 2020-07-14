@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 38f40badf8a850de363fa3f28232d3037fbf209b
+source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
 workflow-type: tm+mt
-source-wordcount: '5037'
+source-wordcount: '4685'
 ht-degree: 1%
 
 ---
@@ -77,31 +77,6 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 * 샘플(메모리 내) Apache Derby 데이터베이스
 * Apache Derby 데이터 소스(양식 데이터 모델과 함께 사용)
 
-## 구성 옵션 {#configuration-options}
-
-사용자는 다음을 포함한 다양한 워크플로우 서비스 옵션을 구성할 수 있습니다.
-
-1. Microsoft Dynamics 항목
-1. Adobe Sign
-1. AEM 사용자 지정 커뮤니케이션 관리
-1. Adobe Analytics
-
-워크플로우 내에서 활성화되도록 구성하려면 다음 작업을 수행해야 합니다.
-
-1. https://&#39;[server]:[port]&#39;/system/console/configMgr로 이동합니다.
-
-1. WeGov *구성을 찾습니다*.
-
-1. 서비스 정의를 열고 선택한 서비스가 워크플로우 내에서 호출되도록 합니다.
-
->[!NOTE]
->
->사용자가 Configuration Manager 페이지 내에서 서비스를 사용하도록 설정했다고 해도 사용자가 요청된 외부 서비스와 통신하기 위해 서비스 구성을 설정해야 합니다.
-
-![정부 양식 패키지](assets/aftia-configuration-options.jpg)
-
-1. 완료되면 저장 단추를 클릭하여 설정을 저장합니다.
-
 ## 데모 패키지 설치 {#demo-package-installation}
 
 이 섹션에는 데모 패키지 설치에 대한 정보가 포함되어 있습니다.
@@ -163,18 +138,19 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 
 1. https://&lt; *aemserver>:&lt;port>/libs/granite/security/content/groupadmin.html으로 이동합니다.*
 1. 아래 작업을 수행하려면 관리자로 로그인합니다.
+1. 모든 사용자 그룹을 로드하려면 페이지 끝까지 아래로 스크롤합니다.
 1. &quot;워크플로우&quot;를&#x200B;**검색합니다**.
 1. &quot;**workflow-users**&quot; 그룹을 선택하고 &quot;속성&quot;을 클릭합니다.
 1. &quot;구성원&quot; 탭으로 이동합니다.
 1. &quot; **사용자 또는** 그룹 선택&quot; 필드에 wegov를 입력합니다.
-1. 드롭다운 &quot;We.**Gov 양식 사용자&quot;에서 선택합니다**.
+1. 드롭다운 &quot;We.**Gov Forms Users&quot;에서 선택합니다**.
 
    ![워크플로우 사용자를 위한 그룹 설정 편집](assets/edit_group_settings.jpg)
 
 1. 메뉴 모음에서 &quot;저장 및 닫기&quot;를 클릭합니다.
-1. &quot;**analytics**&quot;를 검색하고, &quot;**Analytics 관리자**&quot; 그룹을 선택한 다음 &quot;**We.Gov 양식 사용자**&quot; 그룹을 구성원으로 추가하여 2-7단계를반복합니다.
-1. &quot;**양식 사용자**&quot;를 검색하고, &quot;**forms-power-users**&quot; 그룹을 선택한 다음 &quot;**We.Gov 양식 사용자**&quot; 그룹을 구성원으로 추가하여 2-7단계를 반복합니다.
-1. &quot;**양식 사용자**&quot;를 검색하고, &quot;**forms-users**&quot; 그룹을 선택한 다음, 이번에는 &quot;**We.Gov 사용자**&quot; 그룹을 구성원으로 추가하여 2-7단계를반복합니다.
+1. &quot;**analytics**&quot;를 검색하고, &quot;**Analytics 관리자**&quot; 그룹을 선택한 다음 &quot;**We.Gov Forms 사용자**&quot; 그룹을 구성원으로 추가하여 2-7단계를반복합니다.
+1. &quot;**양식 사용자**&quot;를 검색하고, &quot;**forms-power-users**&quot; 그룹을 선택한 다음 &quot;**We.Gov Forms 사용자**&quot; 그룹을 구성원으로 추가하여 2-7단계를 반복합니다.
+1. &quot;**forms-users**&quot;를 검색하고, &quot;**forms-users**&quot; 그룹을 선택한 다음, 이번에는 &quot;**We.Gov 사용자**&quot; 그룹을 구성원으로 추가하여 2-7단계를반복합니다.
 
 ### 이메일 서버 구성 {#email-server-configuration}
 
@@ -362,7 +338,7 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 
 1. Click on **Save and Close**.
 
-1. 구성된 데이터 소스에 성공적으로 연결되도록 서비스를 테스트합니다.
+1. [구성된 데이터 소스에 성공적으로 연결되도록 서비스를](work-with-form-data-model.md#test-data-model-objects-and-services) 테스트합니다.
 
    * 연결을 테스트하려면 CAUSORTAGEACCOUNT **를** 선택하고 서비스 제공을 요청합니다. 서비스 및 시스템 관리자가 검색할 데이터를 볼 수 있도록 테스트합니다.
 
@@ -488,25 +464,6 @@ AEM Forms Analytics 데이터는 오프라인 상태나 패키지가 설치된 �
 
    ![Analytics 보고서 데이터 보기](assets/analytics_report_data.jpg)
 
-#### Adobe Analytics 보고 보기 {#view-adobe-analytics-reporting}
-
-원할 경우, Adobe Analytics으로 직접 이동하여 분석 데이터를 볼 수 있습니다.
-
-1. https://my.omniture.com/login/으로 [이동](https://my.omniture.com/login/)
-1. 자격 증명을 사용하여 로그인:
-
-   1. **회사:** AEM Forms 데모
-   1. **사용자:** &lt;요청 시 사용 가능>
-   1. **암호:** &lt;요청 시 사용 가능>
-
-1. 보고서 세트에서 &quot;We.Gov 참조 사이트&quot;를 선택합니다.
-
-   ![보고서 세트](assets/report_suites.jpg)
-
-1. 사용 가능한 보고서 중 하나를 선택하여 해당 보고서의 분석 데이터를 표시합니다.
-
-   ![보고서의 Analytics 데이터](assets/analytics_data.jpg)
-
 ### Adobe Automated Forms Configuration Enablement {#automated-forms-enablement}
 
 Adobe Forms를 사용하여 AEM Forms을 설치하고 구성하려면 전환 도구 사용자가 다음을 수행해야 합니다.
@@ -535,7 +492,7 @@ Adobe Forms를 사용하여 AEM Forms을 설치하고 구성하려면 전환 도
 
 1. 인증서를 다운로드해야 합니다.
 
-1. 나머지 구성 - 검토 섹션(TBD)으로 진행하지 마십시오.
+1. 나머지 구성 작업을 진행하지 마십시오 - 검토 섹션 [Adobe I/O에서 통합 만들기](#create-integration-adobeio)
 
 >[!NOTE]
 이 섹션에서 만든 인증서는 Adobe I/O에서 통합 서비스를 만드는 데 사용됩니다. 사용자가 통합 서비스에서 생성되면 Adobe I/O에서 해당 정보를 사용하여 구성을 완료할 수 있습니다.
@@ -590,7 +547,7 @@ Adobe Forms를 사용하여 AEM Forms을 설치하고 구성하려면 전환 도
 
 #### 클라우드 구성(We.Gov AFC Production) {#configure-cloud-configuration}
 
-IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 있습니다.
+IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 검토할 수 있습니다. 구성이 없는 경우 다음 단계에 따라 AEM에서 클라우드 구성을 만드십시오.
 
 1. 브라우저를 열고 시스템 URL https://&lt;domain_name>:&lt;system_port>로 이동합니다.
 
@@ -672,13 +629,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
    ![고급 전환 설정](assets/aftia-conversion-settings-2.jpg)
 
-1. 사용할 옵션을 모두 구성했으면 전환 시작을 선택합니다
-
-   >[!NOTE]
-   *사용자가 액세스할 수 있는 초단기 테마* 테마를 지정할 수 있는 응용 양식 테마 섹션을 지정합니다.
-
-   >[!NOTE]
-   생성된 양식을 FDM과 바인딩하거나 다른 어떤 것을 바인딩하려면 데이터 바인딩 없이 응용 양식 *생성 확인란을 선택해야 합니다*.
+1. 사용할 옵션을 모두 구성한 후에는 전환 시작을 선택합니다.
 
 1. 전환 프로세스가 시작되면 다음 화면이 표시됩니다.
 
@@ -688,57 +639,11 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
    ![적응형 양식 변환](assets/aftia-converted-adaptive-form-2.jpg)
 
-#### 양식 변환 테스트(We.Finance 신용 카드 응용 프로그램) {#testing-forms-conversion-wefinance}
-
-구성이 설정되면 사용자는 PDF 문서를 업로드하여 테스트할 수 있습니다.
-
-1. AEM 시스템 https://&lt;domain_name>:&lt;system_port>으로 이동합니다.
-
-1. 양식 > 양식 및 문서 > AEM Forms We.finance 양식 > PDF forms을 클릭합니다.
-
-1. We.Finance 신용 카드 응용 프로그램을 선택합니다.
-
-1. 오른쪽 상단 모서리의 **자동화된 전환** 시작 단추를 클릭합니다.
-
-1. 사용자는 아래 표시된 옵션을 볼 수 있어야 합니다.
-
-   ![PDF forms](assets/aftia-pdf-forms.jpg)
-
-1. 단추를 선택하면 사용자에게 다음 옵션이 표시됩니다.
-
-   * 사용자가 We.Finance AFC *Production* 구성을 선택해야 합니다.
-
-   ![We.Finance AFC Production 선택](assets/aftia-select-production-configuration.jpg)
-
-   ![고급 전환 설정](assets/aftia-advanced-conversion-settings-wefinance.jpg)
-
-1. 사용할 옵션을 모두 구성했으면 전환 시작을 선택합니다
-
-   >[!NOTE]
-   *사용자가 액세스할 수 있는 초단기 테마* 테마를 지정할 수 있는 응용 양식 테마 섹션을 지정합니다.
-
-   >[!NOTE]
-   생성된 양식을 FDM과 바인딩하거나 다른 어떤 것을 바인딩하려면 데이터 바인딩 없이 응용 양식 *생성 확인란을 선택해야 합니다*.
-
-   >[!NOTE]
-   렌더링된 양식이 We.Gov 사이트의 양식 포털에 나타나려면 사용자는 출력 폴더 위치를 */content/dam/formsdocuments/adobe-finance-forms/afc-converted-forms* 로 설정해야 합니다.
-
-1. 전환 프로세스가 시작되면 다음 화면이 표시됩니다.
-
-   ![전환 진행 중](assets/aftia-conversion-progress.jpg)
-
-   >[!NOTE]
-   3은 클라우드 구성에서 제공한 폴더를 별도로 선택하더라도 출력 폴더를 로컬에 생성한 다음 생성된 양식을 올바른 위치에 배치해야 하는 버그가 보고됩니다.
-
-1. 변환이 완료되면 사용자에게 다음 화면이 표시됩니다.
-
-   ![전환 진행 중](assets/aftia-conversion-complete.jpg)
-
-1. 또한 사용자는 전환 프로세스를 검토하고 결과를 편집하여 시스템에서 향상된 전환 기능을 제공할 수 있습니다.
+   생성된 적응형 양식을 보려면 **출력** 폴더를 클릭합니다.
 
 #### 알려진 문제 및 메모 {#known-issues-notes}
 
-양식 변환 프로세스에는 일부 제한 사항이 있으며 Adobe 웹 사이트에서 볼 수 있습니다. 양식이 이 [프로세스와 호환되는지 확인하려면 알려진](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html) 문제를 참조하십시오.
+자동화된 양식 전환 서비스에는 특정 [모범 사례, 알려진 복잡한 패턴](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)및 [알려진 문제가 포함되어 있습니다](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html). AEM Forms 자동 양식 변환 서비스를 사용하기 전에 이러한 내용을 검토하십시오.
 
 1. 변환 후 양식을 FDM에 바인딩하려는 경우 데이터 바인딩 없이 응용 양식 생성을 사용하여 양식을 생성합니다.
 
@@ -868,6 +773,30 @@ Adobe가 유지 관리하는 공개적으로 사용 가능한 Ultramarine 테마
 패키지 관리자를 사용하면 **양식** > 테마 **>** 참조 테마 **>** 고급 **과 액세스 가능한 초단기**&#x200B;태그로 이동하여 AEM Forms에서해양 테마에 액세스할 수 있습니다.
 
 ![초마린 테마](assets/aftia-ultramarine-theme.jpg)
+
+## 구성 옵션 {#configuration-options}
+
+사용자는 다음을 포함한 다양한 워크플로우 서비스 옵션을 구성할 수 있습니다.
+
+1. Microsoft Dynamics 항목
+1. Adobe Sign
+1. AEM 사용자 지정 커뮤니케이션 관리
+1. Adobe Analytics
+
+워크플로우 내에서 활성화되도록 구성하려면 다음 작업을 수행해야 합니다.
+
+1. https://&#39;[server]:[port]&#39;/system/console/configMgr로 이동합니다.
+
+1. WeGov *구성을 찾습니다*.
+
+1. 서비스 정의를 열고 선택한 서비스가 워크플로우 내에서 호출되도록 합니다.
+
+>[!NOTE]
+사용자가 Configuration Manager 페이지 내에서 서비스를 사용하도록 설정했다고 해도 사용자가 요청된 외부 서비스와 통신하기 위해 서비스 구성을 설정해야 합니다.
+
+![정부 양식 패키지](assets/aftia-configuration-options.jpg)
+
+1. 완료되면 저장 단추를 클릭하여 설정을 저장합니다.
 
 ## 다음 단계 {#next-steps}
 
