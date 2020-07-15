@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 4949eeb190f26850f80e1ad107f2057c661ed23d
+source-git-commit: bac56cb8e172d826114e1e607dc24b0a17821f8c
 workflow-type: tm+mt
 source-wordcount: '2100'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Node node = resource.adaptTo(Node.class);
 
 * 구현별 개체를 가져옵니다.
 
-   예를 들어 일반 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 인터페이스의 JCR 기반 구현은 기본 JCR에 대한 액세스 권한을 제공합니다 [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).&#39;
+   예를 들어 일반 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 인터페이스의 JCR 기반 구현은 기본 JCR에 대한 액세스를 제공합니다 [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * 내부 컨텍스트 개체를 전달해야 하는 개체의 바로 가기 만들기
 
@@ -70,7 +70,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 다음과 같은 다양한 방법으로 구현할 `Adaptable.adaptTo()` 수 있습니다.
 
 * 목적 자체로는; 메서드 자체를 구현하고 특정 개체에 매핑을 수행합니다.
-* 임의의 개체를 매핑할 수 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)&#39;
+* 임의 개체 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)를 매핑할 수 있습니다.
 
    개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며 [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (이 경우 `adaptTo` 호출을 중앙 어댑터 관리자에게 전달) 확장해야 합니다.
 
