@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.5 서비스 팩 5에 대한 릴리스 �
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 97714abf86a80f6b3d1c68c85ccf443482da22bf
+source-git-commit: a599a1c75a1933d6b21e60e96485f43a0aedd679
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4496'
 ht-degree: 99%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 99%
 | 버전 | 6.5.5.0 |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2020년 6월 4일 |
-| 다운로드 URL | [패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0), [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
+| 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
 
 ## Adobe Experience Manager 6.5.5.0에 포함된 제품 {#what-s-included-in-aem}
 
@@ -340,7 +340,7 @@ Experience Manager 6.5 서비스 팩 5에 소개된 전체 기능, 주요 특징
 
 기존 Adobe Experience Manager 6.5 인스턴스에 서비스 팩을 설치하려면 다음 단계를 수행하십시오.
 
-1. [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.5.0) 또는 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip)에서 서비스 팩을 다운로드하십시오.
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip).
 
 1. 패키지 관리자를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다. 사용 방법은 [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 참조하십시오.
 
