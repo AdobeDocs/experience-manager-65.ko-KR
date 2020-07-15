@@ -8,10 +8,10 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29b1a151a6c284fcb0bf01de425dfba79f5943c2
+source-git-commit: f4dcf58d70ea5a17617ef1e80942de7db3233031
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 1%
+source-wordcount: '2464'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +102,7 @@ We.Gov 데모 패키지는 다음과 같은 내장된 가상 사용자와 함께
 
 ## 자동화된 양식 변환(Camila) {#automated-forms-conversion}
 
-**이 섹션**: CX Lead 의 이전 PDF 기반 양식이 종이 기반 프로세스의 일부로 사용되었습니다. 최신 적응형 양식을 자동으로 만드는 데 이 PDF 양식을 사용하고자 하는 경우
+**이 섹션**: CX Lead 의 Camila 에는 종이 기반 프로세스의 일부로 사용되었던 기존 PDF 기반 양식이 있습니다. 최신 적응형 양식을 자동으로 만드는 데 이 PDF 양식을 사용하고자 하는 경우
 
 ### 자동화된 양식 전환 - We.Gov(Camila) {#automated-forms-conversion-wegov}
 
@@ -116,7 +116,7 @@ We.Gov 데모 패키지는 다음과 같은 내장된 가상 사용자와 함께
 
    ![양식 업로드](assets/aftia-upload-form.jpg)
 
-1. 그런 다음 카밀라는 자동화된 양식 변환 작업을 선택합니다.
+1. 그런 다음 카밀라는 PDF 양식을 선택하고 자동 변환 **시작을** 클릭하여 전환 프로세스를 시작합니다. 양식을 변환한 경우 **변환** 덮어쓰기를 클릭해야 할 수 있습니다.
 
    >[!NOTE]
    >
@@ -124,9 +124,11 @@ We.Gov 데모 패키지는 다음과 같은 내장된 가상 사용자와 함께
 
    * **선택 사항**: 액세스 가능한 초마린 테마를 사용하려면 응용 양식 테마 지정을 클릭하고 옵션 목록에 나타나는 액세스 가능한 초마린 테마를 선택하면 됩니다.
 
+   ![전환 시작](assets/aftia-start-conversion.jpg)
+
    ![초마린 테마](assets/aftia-upload-conversion-settings.jpg)
 
-   ![전환 시작](assets/aftia-start-conversion.jpg)
+   전환 중에 완료 백분율이 표시됩니다. 상태가 [ **변환됨**] **으로** 표시되면 **출력** 폴더를 클릭하고 응용 양식을 선택한 다음 [편집]을 클릭하여 변환된 양식을 엽니다.
 
 1. 카밀라는 그 양식에 대해 검토하고 모든 분야가 존재하는 것을 확실히 했다
 
@@ -156,7 +158,7 @@ We.Gov 데모 패키지는 다음과 같은 내장된 가상 사용자와 함께
 
 또한 Camila는 작성된 컨텐츠가 기업 표준에 따라 올바로 작성되고 완벽하게 액세스할 수 있는지 확인합니다.
 
-1. Camila는 완성된 We.Gov 양식을 엽니다.
+1. Camila가 **출력** 폴더를 클릭하고 적응형 양식을 선택하고 미리 보기 **를** 클릭하여 완료된 We.Gov 양식을 엽니다.
 
 1. Chrome 개발자 도구 내에서 감사 탭을 엽니다.
 
@@ -214,24 +216,9 @@ Aya는 서비스 요청 애플리케이션을 완료하기 전에 집에서 일�
    1. 기본 정보
 
       1. 이름
-      1. 가운데 이름
       1. 성
-      1. 기본 이름
       1. DOB
-      1. 성별
-   1. 연락처 정보
-
-      1. 상세 주소
-      1. 도시
-      1. 전화 번호
-      1. 우편 번호
       1. 이메일
-      1. 상태
-   1. 무술 상태
-
-      1. 가족 상태
-
-
 
 1. 다음 **동적 논리** 기능을 사용하여 가족 상태 **드롭다운을 사용하여 동적 기능을 시연할 수 있습니다** .
 
