@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 23dfcc944a83dd683078cfe00f85c4cc734e7752
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 55%
+source-wordcount: '1723'
+ht-degree: 54%
 
 ---
 
@@ -139,7 +139,7 @@ You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONT
 
 #### 보안 비디오 제공 방법 {#how-to-delivery-secure-video}
 
-AEM 6.2에서 [FP-13480](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480)을 설치하면 비디오가 보안 SSL 연결(HTTPS)을 통해 제공되는지 아니면 비보안 연결(HTTP)을 통해 제공되는지를 제어할 수 있습니다. 기본적으로, 비디오 제공 프로토콜은 포함 웹 페이지의 프로토콜에서 자동으로 상속됩니다. 웹 페이지가 HTTPS를 통해 로드되는 경우 비디오도 HTTPS를 통해 제공됩니다. 또한 반대로, 웹 페이지가 HTTP에 있는 경우에는 비디오가 HTTP를 통해 제공됩니다. 대부분의 경우 이러한 기본 동작은 정상적이며 구성을 변경할 필요가 없습니다. 그러나 비디오 제공 URL 경로의 끝이나 포함 코드 조각에 있는 다른 뷰어 구성 매개 변수 목록에 `VideoPlayer.ssl=on`을 추가하여 이 기본 동작을 무시함으로써 보안 비디오 제공을 강제 적용할 수 있습니다.
+AEM 6.2에서 [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480)을 설치하면 비디오가 보안 SSL 연결(HTTPS)을 통해 제공되는지 아니면 비보안 연결(HTTP)을 통해 제공되는지를 제어할 수 있습니다. 기본적으로, 비디오 제공 프로토콜은 포함 웹 페이지의 프로토콜에서 자동으로 상속됩니다. 웹 페이지가 HTTPS를 통해 로드되는 경우 비디오도 HTTPS를 통해 제공됩니다. 또한 반대로, 웹 페이지가 HTTP에 있는 경우에는 비디오가 HTTP를 통해 제공됩니다. 대부분의 경우 이러한 기본 동작은 정상적이며 구성을 변경할 필요가 없습니다. 그러나 비디오 제공 URL 경로의 끝이나 포함 코드 조각에 있는 다른 뷰어 구성 매개 변수 목록에 `VideoPlayer.ssl=on`을 추가하여 이 기본 동작을 무시함으로써 보안 비디오 제공을 강제 적용할 수 있습니다.
 
 보안 비디오 제공과 URL 경로에 있는 `VideoPlayer.ssl` 구성 속성에 대한 자세한 내용은 뷰어 참조 가이드의 [보안 비디오 제공](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html)을 참조하십시오. 비디오 뷰어 외에도 혼합 미디어 뷰어 및 대화형 비디오 뷰어에 보안 비디오 제공을 사용할 수 있습니다.
 
