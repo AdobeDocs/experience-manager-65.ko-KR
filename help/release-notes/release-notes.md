@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 7d3ceccb-4f00-4e11-9c9f-6de46a455e02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 23dfcc944a83dd683078cfe00f85c4cc734e7752
+workflow-type: tm+mt
+source-wordcount: '2182'
+ht-degree: 80%
 
 ---
 
@@ -36,7 +39,7 @@ source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
   </tr>
   <tr>
    <th>권장 업데이트</th>
-   <td>See <a href="https://helpx.adobe.com/experience-manager/aem-releases-updates.html">AEM Releases and Updates</a></td>
+   <td>See <a href="https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html">AEM Releases and Updates</a></td>
   </tr>
  </tbody>
 </table>
@@ -53,7 +56,7 @@ Adobe Experience Manager 6.5는 일반적으로 2019년 4월 8일 이후에 사�
 
 Adobe Experience Manager 6.5는 Adobe Web Experience Manager 6.4 코드 베이스에 대한 업그레이드 릴리스입니다. 새롭고 향상된 기능, 주요 고객 수정 사항, 우선 순위가 높은 고객 개선 사항 및 제품 안정화를 위한 일반적인 버그 수정을 제공합니다. 또한 SP4까지 Adobe Experience Manager 6.4 서비스 팩이 포함되어 있습니다.
 
-아래 목록은 개요를 제공하며, 후속 페이지에는 전체 세부 사항이 나열됩니다.
+아래 목록은 개요를 제공하며, 그 다음 페이지에는 전체 세부 정보가 나열됩니다.
 
 ### Experience Manager Foundation {#experience-manager-foundation}
 
@@ -111,7 +114,7 @@ Full list of changes in [AEM Sites and Add-ons](/help/release-notes/sites.md).
 AEM 6.4 SP2의 일부로 처음 출시되었으며, AEM 6.5에서는 SPA 지원이 다음과 같은 기능을 제공합니다.
 
 * 템플릿 편집기를 사용하여 SPA의 AEM 편집 가능 부분을 편집 및 구성합니다.
-* 멀티사이트 관리를 사용하여 국가, 프랜차이즈 또는 화이트리로 표시된 SPA 경험 제작
+* 멀티사이트 관리 기능을 사용하여 국가, 프랜차이즈 또는 라벨이 붙여진 SPA 경험 제작
 
 #### 헤드리스 컨텐츠 관리 {#headless-content-management}
 
@@ -142,7 +145,7 @@ AEM은 다양한 형식 및 다양한 스택 레벨에서 컨텐츠를 제공할
 * 동적 자리 표시자를 사용하여 데이터 트리거된 컨텐츠 위치 또는 구성을 맞춤 설정합니다.
 * Adobe Analytics를 AEM Screens Player에 통합하여 인사이트를 제공합니다.
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
+For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 ### Experience Manager 자산 {#experience-manager-assets}
 
@@ -152,7 +155,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 연관된 광고 및 마케팅 �
 
 #### Adobe Creative Cloud와 통합 {#integration-with-adobe-creative-cloud}
 
-Photoshop, Illustrator 및 InDesign을 비롯한 Adobe Creative Cloud 애플리케이션으로 작업하는 창의적인 사용자를 위한 인앱 환경인 [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 도입으로 컨텐츠 작성 프로세스에서 광고 및 마케팅 담당자 간의 공동 작업을 간소화합니다. AEM 데스크탑 앱은 모든 파일 유형 및 데스크탑 애플리케이션을 사용하여 데스크탑에서 AEM의 자산으로 작업하는 사용자의 요구 사항을 계속 지원합니다.
+Photoshop, Illustrator 및 InDesign을 비롯한 Adobe Creative Cloud 애플리케이션으로 작업하는 창의적인 사용자를 위한 인앱 환경인 [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 도입으로 컨텐츠 작성 프로세스에서 광고 및 마케팅 담당자 간의 공동 작업을 간소화합니다. AEM 데스크탑 앱은 모든 파일 유형 및 데스크탑 애플리케이션을 사용하여 데스크탑에서 AEM의 자산으로 작업하는 사용자의 요구 사항을 계속 지원합니다.
 
 또한 AEM은 Adobe Stock과 통합되어 AEM Web UI에서 직접 Adobe Stock 자산을 찾아 미리 보고, 라이센스를 지정하거나 저장할 수 있습니다.
 
@@ -160,9 +163,9 @@ Photoshop, Illustrator 및 InDesign을 비롯한 Adobe Creative Cloud 애플리�
 
 #### 연결된 자산 {#connected-assets}
 
-연결된 자산 기능은 중앙 AEM Assets DAM 배포의 자산을 활용해야 하는 많은 AEM Sites 배포를 통해 대규모 배포를 타깃팅합니다. 이를 통해 다양한 Sites 배포에 대한 자산 제공의 효율성을 강화하는 동시에 중앙집중식으로 관리되는 자산에 대한 제어 기능을 개선할 수 있습니다.
+연결된 에셋 기능은 중앙 AEM Assets DAM 배포의 에셋을 활용해야 하는 다양한 AEM Sites 배포를 통해 대규모 배포를 타깃팅합니다. 이를 통해 다양한 Sites 배포에 대한 자산 제공의 효율성을 강화하는 동시에 중앙집중식으로 관리되는 자산에 대한 제어 기능을 개선할 수 있습니다.
 
-### 다이내믹 미디어 {#dynamic-media}
+### Dynamic Media {#dynamic-media}
 
 Dynamic Media는 AEM Assets에서 향상된 리치 미디어 작성 및 전달 기능을 제공하여 몰입 및 맞춤화된 최신 경험을 제공합니다. 고품질의 단일 마스터 자산을 사용하면 고급 클라우드 렌더링, Smart Crop 및 업계 최고의 뷰어를 활용하여 업계 최고의 성능으로 가장 매력적인 경험을 제공할 수 있습니다.
 
@@ -217,7 +220,7 @@ Livefyre를 AEM 6.5 인스턴스와 통합할 수 있습니다. AEM과 Livefyre�
 
 Adobe는 고객 중심 개발 모델을 사용하여 고객이 사양, 개발 및 테스트 중에 개발 프로세스의 모든 단계에 기여할 수 있도록 합니다. 이 프로세스에 참여하신 모든 고객과 파트너에게 감사의 인사를 드립니다.
 
-Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 순위 지정 및 추적을 위한 절차와 프로세스를 마련했습니다. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. 고객 문의는 가능한 경우 고객 지원 센터에서 식별 및 해결합니다. R&amp;D로 에스컬레이션하면 모든 고객 정보가 캡처되고 우선 순위 지정 및 보고용으로 사용됩니다. 개발 중에는 유료 지원 및 보증 문제, 유료 고객 개선 사항에 우선 순위가 부여됩니다.
+Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 순위 지정 및 추적을 위한 절차와 프로세스를 마련했습니다. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. 고객 문의는 가능한 경우 고객 지원 센터에서 식별 및 해결합니다. R&amp;D로 에스컬레이션하면 모든 고객 정보가 캡처되고 우선 순위 지정 및 보고용으로 사용됩니다. 개발 중에는 유료 지원 및 보증 문제, 유료 고객 개선 사항에 우선 순위가 부여됩니다.
 
 이러한 우선 순위 지정 프로세스를 통해 750가지 이상의 고객 중심 변경 사항이 AEM 6.5에서 수정되었습니다.
 
@@ -226,7 +229,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 **Foundation**
 
 * 독립형 빠른 시작: cq-quickstart-6.5.0.jar
-* 응용 프로그램 서버 빠른 시작:cq-quickstart-6.5.0.war
+* 응용 프로그램 서버 빠른 시작: cq-quickstart-6.5.0.war
 * 다양한 웹 서버 및 플랫폼에 대한 4.3.2 이후 버전([다운로드 링크](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html))
 * Eclipse IDE용 플러그인([자세히 보기 및 다운로드](/help/sites-developing/aem-eclipse.md))
 
@@ -246,10 +249,10 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 * 스마트 컨텐츠 언어 모델입니다. 영어는 사전 설치되어 있으며 더 많은 언어를 다운로드할 수 있습니다.
 
-   * [독일어](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [스페인어](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [이탈리아어](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [프랑스어](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+   * [독일어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+   * [스페인어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+   * [이탈리아어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+   * [프랑스어](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * AEM Modernize Tools 제품군(예: 대화 상자 변환 도구) ([GitHub 프로젝트](https://github.com/adobe/aem-modernize-tools))
 
@@ -260,7 +263,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 **양식**
 
-* ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)AEM Forms 기능 패키지[
+* ](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)AEM Forms 기능 패키지[
 * [AEM Forms OSGi Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
 
 ## 언어 {#languages}
@@ -290,7 +293,7 @@ Experience Manager 6.5에서는 중국어 인코딩 표준을 사용하도록 GB
 
 지원되는 플랫폼이 포함된 전체 매트릭스를 찾으십시오. [AEM 6.5 기술 요구 사항](/help/sites-deploying/technical-requirements.md) 지원 수준
 
-Oak MicroKernel forOak MicroKernel for
+Oak MicroKernel forOak MicroKernel
 
 >[!NOTE]
 >
