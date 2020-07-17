@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
+source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
 workflow-type: tm+mt
-source-wordcount: '4685'
+source-wordcount: '5004'
 ht-degree: 1%
 
 ---
@@ -222,6 +222,48 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 1. 구성된 Adobe Sign 인스턴스에서 구성된 클라이언트 ID와 클라이언트 암호를 제공합니다.
 1. &quot;Adobe Sign에 연결&quot;을 클릭합니다.
 1. 연결이 성공적으로 완료되면 &quot;저장 및 닫기&quot;를 클릭하여 통합을 완료합니다.
+
+### 여러 양식 채우기 및 서명 {#fill-sign-multiple-forms}
+
+이 문서에서는 여러 양식을 작성하고 서명할 수 있는 기능을 설정하는 데 필요한 단계를 설명합니다. 여기에서 [동일한 기능을 사용할 수도 있습니다](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). 이 샘플은 이 샘플에 필요한 데이터를 AME 저장소에 저장합니다. 이 작업은 로컬 서버에 데모 에셋을 배포하기 위한 완벽한 환경을 제공하기 위해 수행됩니다. 실생활에서는 동일한 정보를 원하는 RDMS에 저장하게 됩니다.
+
+#### 전제 조건 {#pre-requisites-fill-sign-multiple-forms}
+
+* [일 CQ 메일 서비스 구성](https://docs.adobe.com/content/help/en/experience-manager-65/communities/administer/email.html)
+
+* [Adobe Sign을 사용하여 AEM Forms 구성](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html)
+
+#### 로컬 서버에 샘플 설정 {#setup-sample-local-server}
+
+로컬 서버에서 샘플을 설정하려면 다음 단계를 수행하십시오.
+
+1. 패키지를 설치합니다. 이 패키지에는 다음 내용이 들어 있습니다.
+   * 적응형 양식. 양식은 **형식 지정 데모** 폴더에 있습니다
+   * 사용자 정의 OSGI 번들
+   * 워크플로우
+1. Adobe [Sign 구성을 사용하도록 동의 양식을](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/consentform.html) 구성합니다.
+1. Adobe [Sign 구성을 사용하도록 다중 상태 관심](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/multistateinterestratelock.html) 잠금 양식을 구성합니다.
+1. 양식 [서명데모](http://localhost:4502/editor.html/conf/global/settings/workflow/models/formsandsigningdemo.html) 워크플로우 모델 열기:
+   1. CRX에서 양식 저장 단계를 엽니다.
+   1. localhost를 AEM Server의 IP 주소로 변경합니다.
+   1. 변경 내용을 저장합니다.
+   1. 워크플로를 동기화하여 런타임 모델을 생성합니다.
+
+      ![여러 양식에 서명](assets/sign-multiple-forms.jpg)
+
+   1. 재무구조 [양식을 엽니다](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+   1. 필수 필드를 입력합니다. 유효한 이메일 주소를 입력하고 양식에 서명하고 제출할 양식을 하나 이상 선택합니다.
+양식에 내용을 입력하고 서명할 수 있는 링크가 포함된 이메일을 수신하게 됩니다.
+
+#### 문제 해결 {#troubleshoot-sign-multiple-forms}
+
+* 디버그 로그는 서버의 로그 폴더에 있는 `signingmultipleforms.log` 파일에 기록됩니다.
+
+* 서명할 양식은 아래에 저장됩니다 `/content/formsforsigning`.
+
+* 모든 번들이 활성 상태여야 합니다.
+
+* 이메일 서버 구성을 확인합니다.
 
 ### (선택 사항) MS Dynamics 클라우드 구성 {#ms-dynamics-cloud-configuration}
 
