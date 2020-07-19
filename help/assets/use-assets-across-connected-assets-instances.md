@@ -3,9 +3,9 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7d001ce126e72663bf8ad0722cf59c1cb7239ae0
+source-git-commit: 28c55333e0eebb68ada46ee89785f5f6475abf9e
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2105'
 ht-degree: 44%
 
 ---
@@ -27,8 +27,8 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
-* 사용자 각 배포에 적절한 사용자 그룹에 포함됩니다.
-* Adobe Experience Manager 배포 유형의 경우 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] 6.5 [!DNL Assets] 는 Cloud Service [!DNL Experience Manager] 로 작동합니다. 자세한 내용은 Experience Manager의 [연결된 자산 기능을 Cloud Service으로 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* 사용자는 각 배포 시 적절한 사용자 그룹의 일부입니다.
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] 는 Cloud Service [!DNL Experience Manager] 로 작동합니다. 자세한 내용은 Experience Manager의 [연결된 자산 기능을 Cloud Service으로 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
@@ -41,7 +41,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용합니다. 문서는 구성 요소 및 `Download` 이미지에 `Image` 추가됩니다. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 지원되는 형식은 다음과 같습니다.
 
 * **이미지 형식**: 이미지 구성 요소에서 [지원하는](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 형식입니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
-* **문서 포맷**: 연결된 자산 [에서 지원하는 문서 형식을 참조하십시오](assets-formats.md#supported-document-formats).
+* **문서 포맷**: 지원되는 [문서 형식을 참조하십시오](assets-formats.md#supported-document-formats).
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
 
@@ -96,8 +96,8 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    | 이전 | 이후 |
    |---|---|
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
+   | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
@@ -182,11 +182,12 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 * 사용자는 작성할 때 원격 자산을 검색하고 로컬 페이지에서 자산을 드래그할 수 있습니다. 다른 기능은 지원되지 않습니다.
 * 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
-* Simple edits that are non-destructive and the edit supported via the `Image` component can be done on fetched assets. 자산은 읽기 전용입니다.
+*  `Image` 구성 요소를 통해 지원되는 편집과 원본에 영향을 주지 않는 간단한 편집은 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
+* 자산을 다시 가져오는 유일한 방법은 페이지에서 자산을 드래그하는 것입니다. API 지원 또는 업데이트하기 위해 자산을 다시 가져오는 다른 방법이 없습니다.
 
 ## 문제 해결 {#troubleshoot}
 
 일반적인 오류 시나리오에 대한 문제를 해결하려면 다음 단계를 수행하십시오.
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
-* 원격 댐에서 가져온 에셋이 하나 이상의 이유로 웹 페이지에 게시되지 않을 수 있습니다. 원격 서버에 존재하지 않거나 해당 서버에 가져올 권한이 없거나 네트워크 오류가 원인일 수 있습니다. 원격 DAM에서 자산이 제거되지 않았는지 확인합니다. 적절한 권한이 제자리에 있고 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/sites-administering/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
+* 원격 댐에서 가져온 에셋이 하나 이상의 이유로 웹 페이지에 게시되지 않을 수 있습니다. 원격 서버에 존재하지 않거나 해당 서버에 가져올 권한이 없거나 네트워크 오류가 원인일 수 있습니다. 원격 DAM에서 자산이 제거되지 않았는지 확인합니다. 적절한 권한이 있으며 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/sites-administering/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
