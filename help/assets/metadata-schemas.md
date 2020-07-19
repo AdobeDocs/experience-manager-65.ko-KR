@@ -3,9 +3,9 @@ title: '메타데이터 속성 페이지의 레이아웃을 정의하는 메타�
 description: 메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 자산에 메타데이터 스키마를 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 0496d2d541be052e1201ada2bff99a2ed6fef4f3
 workflow-type: tm+mt
-source-wordcount: '2644'
+source-wordcount: '2670'
 ht-degree: 3%
 
 ---
@@ -43,16 +43,17 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 |---|---|---|
 | [!UICONTROL 기본값] |  | 자산에 대한 기본 메타데이터 스키마 양식입니다. |
 |  | 다음 하위 양식은 [!UICONTROL 기본] 양식의 속성을 상속합니다. |  |
+|  | [!UICONTROL dm_video] | Dynamic Media 비디오에 대한 스키마 양식입니다. |
 |  | [!UICONTROL 이미지] | 및 같은 MIME 형식의 이미지에 대한 스키마 양식 `image/jpeg` 을 참조하십시오 `image/png`. <br> 이미지 [!UICONTROL 양식에는 다음과 같은 하위] 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 jpeg가 있는 자산에 대한 스키마 [!UICONTROL 양식입니다].</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF가 있는 자산의 스키마 양식입니다.</li></ul> |
 |  | [!UICONTROL 응용 프로그램] | 및 같은 MIME 형식의 자산에 대한 스키마 양식 `application/pdf``application/zip`. <br>[!UICONTROL pdf]: 하위 유형 PDF가 있는 자산에 대한 스키마 양식입니다. |
 |  | [!UICONTROL 비디오] | 및 같은 MIME 형식의 비디오 자산에 대한 스키마 양식 `video/avi``video/mp4`. |
 | [!UICONTROL 컬렉션] |  | 컬렉션에 대한 스키마 양식입니다. |
 | [!UICONTROL contentfragment] |  | [콘텐츠 조각에 대한 스키마 양식입니다](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL 양식] |  | 이 스키마 양식은 [Adobe Experience Manager 양식과 관련되어 있습니다](/help/forms/home.md). |
+| [!UICONTROL ugc_contentfragment] |  | 사용자가 생성한 콘텐츠 조각 및 소셜 미디어의 Experience Manager에 통합된 자산에 대한 스키마 양식입니다. |
 
 <!-- 
-TBD: Add dm_video child for the default form OOTB.
-video doesn't contain any sub types as listed above OOTB.
+TBD: video doesn't contain any sub types as listed above OOTB.
 application doesn't contain the sub type zip OOTB.
 -->
 
