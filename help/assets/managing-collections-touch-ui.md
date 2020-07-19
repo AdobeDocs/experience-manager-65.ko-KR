@@ -4,9 +4,9 @@ description: 컬렉션 만들기, 보기, 삭제, 편집, 다운로드 등 자�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 983f281b77a122c757bb508bee570c6c8490a2b9
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2197'
 ht-degree: 0%
 
 ---
@@ -246,7 +246,7 @@ ht-degree: 0%
 
 ![saved_searches_list](assets/saved_searches_list.png)
 
-스마트 컬렉션을 만들면 저장된 검색이 생성됩니다. 스마트 컬렉션은 저장된 검색 **[!UICONTROL 목록에 자동으로]** 추가됩니다. 컬렉션에 대한 저장된 검색 쿼리는 상대 위치의 CRXDE의 `dam:query` 속성에 저장됩니다 `/content/dam/collections/`.
+스마트 컬렉션을 만들면 저장된 검색이 생성됩니다. 스마트 컬렉션은 저장된 검색 **[!UICONTROL 목록에 자동으로]** 추가됩니다. 컬렉션에 대한 [!UICONTROL 저장된 검색] 쿼리는 `dam:query` CRXDE의 상대 위치에 있는 속성에 저장됩니다 `/content/dam/collections/`. 저장할 수 있는 검색과 목록에 표시된 저장된 검색에는 제한이 없습니다.
 
 >[!NOTE]
 >
@@ -264,7 +264,7 @@ ht-degree: 0%
 
 1. 저장된 검색 **[!UICONTROL 목록]** 에서 삭제할 **[!UICONTROL 스마트]** 컬렉션 옆에 있는 삭제를 클릭합니다.
 
-   ![select_smart_collection-1](assets/select_smart_collection-1.png)
+   ![select_smart_collection](assets/select_smart_collection.png)
 
 1. 대화 상자에서 **[!UICONTROL 삭제를]** 클릭하여 저장된 검색을 삭제합니다.
 
