@@ -1,18 +1,18 @@
 ---
 title: AEM 6.5 릴리스 노트
-description: AEM 릴리스 노트에는 AEM의 최신 릴리스에 대한 중요한 정보(새로운 기능, 지원되는 플랫폼, 가치 하락과 제거된 기능, 알려진 문제 등)가 포함되어 있습니다.
-translation-type: tm+mt
+description: AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 다룹니다.
+translation-type: ht
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
 # AEM 6.5 릴리스 노트
 
-AEM 릴리스 노트에는 AEM의 최신 릴리스에 대한 중요한 정보(새로운 기능, 지원되는 플랫폼, 가치 하락과 제거된 기능, 알려진 문제 등)가 포함되어 있습니다.
+AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 다룹니다.
 
 ## 주요 AEM 문서
 
@@ -24,7 +24,7 @@ AEM 릴리스 노트에는 AEM의 최신 릴리스에 대한 중요한 정보(�
 
 | 사용 안내서 | 설명 |
 |--- |---|
-| [자산 사용 안내서](/help/assets/home.md) | 디지털 자산 제작, 관리, 전달 및 최적화 |
+| [자산 사용 안내서](/help/assets/home.md) | 디지털 자산을 생성, 관리, 게재 및 최적화합니다. |
 | [양식 사용 안내서](/help/forms/home.md) | 이 안내서에서는 디지털 양식 작성, 관리, 게시 및 업데이트 방법을 설명합니다. |
 | [커뮤니티 사용 안내서](/help/communities/home.md) | 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다. |
 | [관리 안내서](/help/sites-administering/home.md) | AEM 관리 방법 이해 |
@@ -35,7 +35,7 @@ AEM 릴리스 노트에는 AEM의 최신 릴리스에 대한 중요한 정보(�
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
-| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 콘텐츠를 Livefyre와 공유하는 방법을 보여줍니다. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
 ## 주요 AEM 리소스
 
@@ -48,8 +48,8 @@ AEM 릴리스 노트에는 AEM의 최신 릴리스에 대한 중요한 정보(�
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 
-## Copyright, licenses, and disclaimers {#copyright-licenses-and-disclaimers}
+## 저작권, 라이센스 및 면책조항 {#copyright-licenses-and-disclaimers}
 
-자세한 내용은 https://www.adobe.com/legal/terms/enterprise-licensing.html을 [참조하십시오.](https://www.adobe.com/kr/legal/terms/enterprise-licensing.html)
+자세한 내용은 [https://www.adobe.com/kr/legal/terms/enterprise-licensing.html](https://www.adobe.com/kr/legal/terms/enterprise-licensing.html)을 참조하십시오.
 
-Notice of third party licenses: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
+타사 라이센스에 대한 알림: [https://www.adobe.com/kr/products/eula/third_party/](https://www.adobe.com/kr/products/eula/third_party/)
