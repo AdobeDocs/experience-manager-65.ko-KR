@@ -1,18 +1,18 @@
 ---
-title: AEM 6.5 커뮤니티 사용자 안내서
-seo-title: AEM 6.5 커뮤니티 사용자 안내서
+title: AEM 6.5 Communities 사용 안내서
+seo-title: AEM 6.5 Communities 사용 안내서
 description: 이 안내서에서는 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험 만들기와 같은 모든 AEM Communities 작업을 다룹니다.
 seo-description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험 만들기와 같은 모든 AEM Communities 작업을 다룹니다.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 
-# AEM 6.5 커뮤니티 사용자 안내서
+# AEM 6.5 Communities 사용 안내서
 
 이 안내서에서는 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험 만들기와 같은 모든 AEM Communities 작업을 다룹니다.
 
@@ -28,7 +28,7 @@ ht-degree: 71%
 | 사용 안내서 | 설명 |
 |--- |---|
 | [릴리스 정보](/help/release-notes/home.md) | 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 제공합니다. |
-| [자산 사용 안내서](/help/assets/home.md) | 디지털 자산을 제작, 관리, 전달 및 최적화하는 방법을 살펴볼 수 있습니다. |
+| [자산 사용 안내서](/help/assets/home.md) | 디지털 자산을 생성, 관리, 게재 및 최적화하는 방법을 알아봅니다. |
 | [양식 사용 안내서](/help/forms/home.md) | 이 안내서에서는 디지털 양식 작성, 관리, 게시 및 업데이트 방법을 설명합니다. |
 | [커뮤니티 사용 안내서](/help/communities/home.md) | 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다. |
 | [관리 안내서](/help/sites-administering/home.md) | AEM 관리 방법 이해 |
@@ -39,7 +39,7 @@ ht-degree: 71%
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
-| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 콘텐츠를 Livefyre와 공유하는 방법을 보여줍니다. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
 ## 주요 AEM 리소스
 
