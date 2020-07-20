@@ -16,7 +16,7 @@ ht-degree: 3%
 ---
 
 
-# Dynamic Media에서 3D 에셋 작업 {#working-with-three-d-assets-dm}
+# Working with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}
 
 Dynamic Media을 사용하면 3D 자산을 매력적인 경험으로 업로드, 관리, 보고 전달할 수 있습니다.
 
