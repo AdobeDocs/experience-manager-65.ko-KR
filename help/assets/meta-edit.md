@@ -3,19 +3,19 @@ title: 메타데이터를 편집하거나 추가하는 방법
 description: 자산 메타데이터를 편집할 수 있는 다양한 방법 [!DNL Adobe Experience Manager Assets] 으로 자산 메타데이터에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 4748eed3ce484e8446b641ccbc7b5d76cb66f428
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 1%
+source-wordcount: '436'
+ht-degree: 2%
 
 ---
 
 
 # 메타데이터를 편집하거나 추가하는 방법 {#how-to-edit-or-add-metadata}
 
-메타데이터는 검색할 수 있는 자산에 대한 추가 정보입니다. 이미지를 업로드할 때 자동으로 압축이 해제됩니다. 기존 메타데이터를 편집하거나 기존 필드에 새 메타데이터 속성을 추가할 수 있습니다(예: 메타데이터 필드가 비어 있는 경우).
+메타데이터는 검색할 수 있는 자산에 대한 추가 정보입니다. 이미지를 업로드할 때 자동으로 압축이 해제됩니다. 메타데이터 필드가 비어 있는 경우와 같이 기존 메타데이터를 편집하거나 기존 필드에 새 메타데이터 속성을 추가할 수 있습니다.
 
-기업은 제어 및 안정적인 메타데이터 어휘 [!DNL Experience Manager Assets] 가 필요하므로 새로운 메타데이터 속성을 추가할 필요가 없습니다. 작성자는 에셋에 대한 새 메타데이터 필드를 추가할 수 없지만 개발자는 이를 수행할 수 있습니다. 자산에 대한 메타데이터 [속성 만들기를 참조하십시오](meta-edit.md#editing-metadata-schema).
+조직에는 제어 및 안정적인 메타데이터 어휘가 필요합니다. 따라서 새로운 메타데이터 속성을 On-Demand로 추가할 수 [!DNL Experience Manager Assets] 없습니다. 작성자가 아닌 개발자는 에셋에 대한 새 메타데이터 필드를 추가할 수 있습니다. 자산에 대한 메타데이터 [속성 만들기를 참조하십시오](meta-edit.md#editing-metadata-schema).
 
 ## 자산에 대한 메타데이터 편집 {#editing-metadata-for-an-asset}
 
@@ -25,10 +25,11 @@ ht-degree: 1%
 
    * 인터페이스에서 자산을 선택하고 도구 모음에서 [!DNL Assets] 속성 **** 보기 를 클릭합니다.
    * 자산 축소판에서 속성 **[!UICONTROL 보기 빠른 작업을]** 선택합니다.
-   * 자산 페이지의 도구 모음에서 **[!UICONTROL 속성]** 보기 ![를](assets/chlimage_1-168.png) 클릭합니다.
+   * 자산 페이지의 도구 모음에서 **[!UICONTROL 속성]** 정보 ![보기 아이콘](assets/do-not-localize/info-circle-icon.png) 을 클릭합니다.
+
    자산 페이지에는 모든 자산의 메타데이터가 표시됩니다. 에셋이 업로드될 때 메타데이터가 추출됩니다(인제스트됨) [!DNL Experience Manager].
 
-   ![자산 속성을 선택하여 메타데이터 보기](assets/asset-metadata.png)
+   ![자산의 속성을 선택하여 해당 메타데이터를 봅니다.](assets/asset-metadata.png)
 
    *그림: 자산 속성 페이지에서 메타데이터를 편집하거나[!UICONTROL 추가합니다].*
 
@@ -50,8 +51,14 @@ XMP 다시 쓰기는 [기술 요구 사항에 설명된 플랫폼 및 파일 포
 
 고유한 네임스페이스를 안에 추가할 수 있습니다 [!DNL Experience Manager]. 저장소 메타데이터 및 XML 처리와 같은 사전 정의된 네임스페이스 `cq``jcr`와 `sling`마찬가지로 저장소 메타데이터 및 XML 처리를 위한 네임스페이스를 가질 수 있습니다.
 
-1. 노드 유형 관리 페이지로 이동합니다 `https:[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
-1. 페이지 **[!UICONTROL 상단에서]** 네임스페이스를 클릭합니다. 네임스페이스 관리 페이지가 창에 표시됩니다.
+1. 노드 유형 관리 페이지에 액세스합니다 `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
+1. 네임스페이스 관리 페이지에 액세스하려면 페이지 **[!UICONTROL 상단의 네임스페이스]** 를 클릭합니다.
+1. 네임스페이스를 추가하려면 페이지 **[!UICONTROL 아래쪽에서]** [새로 만들기]를 클릭합니다.
+1. XML 네임스페이스 규칙에서 사용자 지정 네임스페이스를 지정합니다. URI 형식으로 ID를 지정하고 ID에 연결된 접두사를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-1. 네임스페이스를 추가하려면 아래쪽에 있는 **[!UICONTROL 새로]** 만들기를 클릭합니다.
-1. XML 네임스페이스 규칙에서 사용자 지정 네임스페이스를 지정합니다. URI 형식으로 ID를 지정하고 id에 연결된 접두사를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+>[!MORELIKETHIS]
+>
+>* [자산에서의 메타데이터 및 그 필요 정보](metadata.md)
+>* [XMP 메타데이터](xmp.md)
+>* [메타데이터 스키마 참조](meta-ref.md)
+
