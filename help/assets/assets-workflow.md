@@ -3,9 +3,9 @@ title: 자산을 처리하여 업무 처리 과정 수행, 감사, 규정 준수
 description: 자산 처리를 사용하여 형식을 변환하고, 변환을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+source-git-commit: f6c770e8830bd2fe7c436c4bfe9725564c49a08f
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -103,6 +103,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 ## 모범 사례 및 제한 사항 {#best-practices-limitations-tips}
 
 * 워크플로우를 설계할 때 모든 유형의 변환에 대한 요구 사항을 고려합니다. 나중에 변환의 필요성을 예측할 수 없는 경우 워크플로우에서 변환 생성 단계를 제거합니다. 나중에 변환을 일괄 삭제할 수 없습니다. 장기 사용 후 원치 않는 변환이 많은 저장 공간을 차지할 수 있습니다 [!DNL Experience Manager]. 개별 자산의 경우 사용자 인터페이스에서 변환을 수동으로 제거할 수 있습니다. 여러 자산의 경우 특정 표현물을 삭제하도록 사용자 [!DNL Experience Manager] 지정하거나 자산을 삭제하고 다시 업로드할 수 있습니다.
+* 기본적으로 [!UICONTROL DAM 자산] 업데이트 워크플로우에는 축소판과 웹 표현물을 만드는 몇 가지 단계가 포함되어 있습니다. 워크플로우에서 기본 변환이 제거되면 의 사용자 인터페이스가 제대로 렌더링되지 [!DNL Assets] 않습니다.
 
 >[!MORELIKETHIS]
 >
