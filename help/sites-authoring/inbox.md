@@ -9,11 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1148'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -146,13 +146,13 @@ AEM 알림 받은 편지함 열기
 
 * 헤더에서 사용할 수 있는 탐색 링크 표시 제어
 
-The Admin Control option is visible only to the members of the `administrators` or `workflow-administrators` group.
+관리자 컨트롤 옵션은 `administrators` 또는 `workflow-administrators` 그룹의 구성원에게만 표시됩니다.
 
-* **열 사용자 지정**: AEM 받은 편지함을 사용자 지정하여 열의 기본 제목을 변경하고, 열의 위치를 다시 정렬하고, 워크플로우의 데이터를 기반으로 추가 열을 표시합니다.
-   * **열 추가**: AEM 받은 편지함에 추가할 열을 선택합니다.
-   * **열 편집**: 열 제목 위에 마우스를 놓고 ![편집](assets/edit.svg) 아이콘을 눌러 열 표시 이름을 입력합니다.
-   * **열 삭제**: AEM 받은 편지함에서 ![삭제](assets/delete_updated.svg) 아이콘을 눌러 열을 삭제합니다.
-   * **열 이동**: AEM 받은 편지함의 새 위치로 열을 이동하려면 ![이동](assets/move_updated.svg) 아이콘을 드래그합니다.
+* **열 사용자 지정**: AEM 받은 편지함을 사용자 지정하여 열의 기본 제목을 변경하고, 열의 위치를 다시 정렬하고, 워크플로우의 데이터를 기반으로 추가 열을 표시할 수 있습니다.
+   * **열 추가**: AEM 받은 편지함에서 추가할 열을 선택합니다.
+   * **열 편집**: 열 제목 위에 마우스를 놓고 ![편집](assets/edit.svg) 아이콘을 탭하여 열 표시 이름을 입력합니다.
+   * **열 삭제**: AEM 받은 편지함에서 ![삭제](assets/delete_updated.svg) 아이콘을 탭하여 열을 삭제합니다.
+   * **열 이동**: ![이동](assets/move_updated.svg) 아이콘을 드래그하여 열을 AEM 받은 편지함의 새 위치로 이동합니다.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
@@ -170,7 +170,7 @@ The Admin Control option is visible only to the members of the `administrators` 
 
 >[!NOTE]
 >
->두 개 이상의 항목을 선택할 수 있지만 한 번에 한 항목에서만 작업을 수행할 수 있습니다.
+>항목을 두 개 이상 선택할 수 있지만 한 번에 한 항목에서만 작업을 수행할 수 있습니다.
 
 
 1. 항목에 대해 작업을 수행하기 위해서는 해당 항목 옆에 있는 썸네일을 선택합니다. 해당 항목에 적용할 수 있는 작업에 대한 아이콘이 도구 모음에 표시됩니다.
@@ -194,7 +194,7 @@ The Admin Control option is visible only to the members of the `administrators` 
    >
    >자세한 내용은 다음을 참조하십시오.
    >
-   >* 워크플로우 항목 - ](/help/sites-authoring/workflows-participating.md)워크플로우에 참여[
+   >* 워크플로우 항목 - [워크플로우에 참여](/help/sites-authoring/workflows-participating.md)
 
 
 1. 선택한 항목에 따라 작업이 시작됩니다. 예를 들면 다음과 같습니다.
