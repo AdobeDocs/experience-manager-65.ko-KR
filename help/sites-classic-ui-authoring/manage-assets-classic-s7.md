@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9bd71115dac8109c9a47155ab60ac7573d88014c
+source-git-commit: 81707b4d57f7f15106459b91f95b1bc6ec333bf4
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 100%
@@ -336,10 +336,7 @@ Scene7 컨텐츠 브라우저를 사용하면 AEM에서 직접 Scene7의 컨텐�
 >* 임시 폴더에 있는 자산은 Scene7 컨텐츠 브라우저에 나타나지 않습니다.
 >* [보안 미리 보기가 활성화](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)되면 Scene7의 게시된 자산 및 게시되지 않은 자산이 모두 Scene7 컨텐츠 브라우저에 표시됩니다.
 >* **Scene7** 또는 **S7** 아이콘이 컨텐츠 브라우저에 옵션으로 표시되지 않는 경우 [AEM에서 작동하도록 Scene7을 구성](/help/sites-administering/scene7.md)해야 합니다.
-
-   >
-   >
-* 비디오의 경우 Scene7 컨텐츠 브라우저는 다음을 지원합니다.
+>* 비디오의 경우 Scene7 컨텐츠 브라우저는 다음을 지원합니다.
    >   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
    >   * 단일 MP4 비디오
    >   * 단일 F4V 동영상
