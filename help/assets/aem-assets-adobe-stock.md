@@ -3,9 +3,9 @@ title: 자산 [!DNL Adobe Stock] 을 [!DNL Adobe Experience Manager Assets]관�
 description: 내부에서 자산을 검색, 가져오기, 라이선스 부여 및 [!DNL Adobe Stock] 관리할 수 있습니다 [!DNL Adobe Experience Manager]. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 376940612066123a8f84fe6c30ff3002cda08079
+source-git-commit: 2701c64b3e049ac423ef74147930de2da78a3d81
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1098'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 전제 조건 {#prerequisites}
 
-통합하려면 [기업 Adobe Stock 플랜](https://stockenterprise.adobe.com/) 및 [!DNL Experience Manager] 6.5 이상이 필요합니다. 6.5 서비스 팩 세부 정보는 이 [!DNL Experience Manager] 릴리스 정보를 참조하십시오 [](/help/release-notes/sp-release-notes.md).
+통합하려면 [엔터프라이즈 Adobe Stock 플랜이 필요합니다](https://stockenterprise.adobe.com/).
 
 ## 통합 [!DNL Experience Manager] 및 [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. 사용자 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL >]** 보안 **** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다. 만들기 **[!UICONTROL 를]** 클릭하고 **[!UICONTROL 클라우드 솔루션]** > **[!UICONTROL Adobe Stock을 선택합니다]**.
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. 만들기 **[!UICONTROL 를]** 클릭하고 **[!UICONTROL 클라우드 솔루션]** > **[!UICONTROL Adobe Stock을 선택합니다]**.
 1. 기존 인증서를 재사용하거나 새 인증서 **[!UICONTROL 만들기를 선택합니다]**.
 1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 생성된 공개 키를 다운로드합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 다운로드한 공개 키를 [!DNL Adobe Developer Console] 서비스 계정에 추가합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다. Adobe [!UICONTROL IMS 기술 계정 구성] 화면을 열어 값을 바로 제공할 수 있습니다.
@@ -47,7 +47,7 @@ ht-degree: 3%
 1. 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > Cloud Service **** > **[!UICONTROL Adobe Stock으로]**&#x200B;이동합니다.
 1. 만들기 **[!UICONTROL 를]** 클릭하여 구성을 만들고 기존 IMS 구성에 연결합니다. 환경 매개 변수 `PROD` 로 선택합니다.
 1. 라이센스 **[!UICONTROL 자산 경로]** 필드에서 위치를 그대로 두십시오. 자산을 저장할 위치를 변경하지 [!DNL Adobe Stock] 마십시오.
-1. 필요한 모든 속성을 추가하여 작성을 완료합니다. Click **[!UICONTROL Save &amp; Close]**.
+1. 필요한 모든 속성을 추가하여 작성을 완료합니다. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
 1. 자산에 라이선스를 부여할 수 있는 사용자 또는 그룹을 추가합니다. [!DNL Experience Manager]
 
 >[!NOTE]
