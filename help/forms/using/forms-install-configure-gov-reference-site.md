@@ -8,10 +8,10 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
+source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
 workflow-type: tm+mt
-source-wordcount: '5004'
-ht-degree: 1%
+source-wordcount: '5035'
+ht-degree: 2%
 
 ---
 
@@ -81,19 +81,16 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 
 이 섹션에는 데모 패키지 설치에 대한 정보가 포함되어 있습니다.
 
-### 패키지 공유에서 {#from-package-share}
+### 소프트웨어 배포 {#from-software-distribution}
 
-1. https://&lt; *aemserver>:&lt;port>/crx/packageshare/*
-
-   또는 AEM에서 배포를 클릭하고 패키지 공유 아이콘으로 이동합니다.
-
-   ![패키지 공유 아이콘](assets/package_share_icon.jpg)
-
-1. Adobe ID을 사용하여 로그인합니다.
-1. we-gov-forms.pkg.all-&lt;version> **** 패키지를 검색하고 찾습니다.
-1. &quot;다운로드&quot; 옵션을 선택하고 약관에 동의합니다.
-1. 다운로드가 완료되면 &quot;다운로드됨&quot; 옵션을 선택하여 패키지 관리자에서 패키지를 찾습니다.
-1. &quot;설치&quot; 옵션을 선택하여 패키지를 설치합니다.
+1. 오픈 [소프트웨어 배포](https://experience.adobe.com/downloads). 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
+1. 헤더 메뉴에서 **[!UICONTROL 사용 가능한 Adobe Experience Manager]** 를 누릅니다.
+1. 필터 **[!UICONTROL 섹션]** :
+   1. **[!UICONTROL 솔루션]** **** 드롭다운 목록에서 양식을선택합니다.
+   2. 패키지의 버전과 유형을 선택합니다. 다운로드 **[!UICONTROL 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
+1. we-gov-forms.pkg.all-&lt;version>.zip **패키지 이름을 누르고** EULA 약관 **[!UICONTROL 승인을 선택한 다음]**&#x200B;다운로드를 누릅니다 ****.
+1. [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
    ![정부 양식 패키지](assets/wegov_forms_package.jpg)
 
