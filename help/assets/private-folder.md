@@ -3,10 +3,10 @@ title: Adobe Experience Manager에서 비공개 폴더를 만들고 공유합니
 description: Adobe Experience Manager 자산에서 비공개 폴더를 만들고 다른 사용자와 공유하며 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 2%
+source-wordcount: '505'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 1. 다른 사용자와 폴더를 공유하고 사용자에게 할당 권한을 공유하려면 폴더를 선택하고 도구 모음에서 **[!UICONTROL 속성]** 을 클릭합니다.
 
-   ![chlimage_1-414](assets/chlimage_1-414.png)
+   ![정보 옵션](assets/do-not-localize/info-circle-icon.png)
 
    >[!NOTE]
    >
