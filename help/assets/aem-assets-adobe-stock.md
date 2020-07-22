@@ -3,9 +3,9 @@ title: 자산 [!DNL Adobe Stock] 을 [!DNL Adobe Experience Manager Assets]관�
 description: 내부에서 자산을 검색, 가져오기, 라이선스 부여 및 [!DNL Adobe Stock] 관리할 수 있습니다 [!DNL Adobe Experience Manager]. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2701c64b3e049ac423ef74147930de2da78a3d81
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1097'
 ht-degree: 3%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 3%
 
 * 자산을 검색하려면 탐색 [!DNL Adobe Stock] > 자산 **[!UICONTROL >]** Adobe Stock **** 검색 **[!UICONTROL 을]**&#x200B;클릭합니다.
 
-* 여러 [!DNL Adobe Stock] 가지 [!DNL Experience Manager Assets]에서 자산을 검색하려면 search_ ![icon을 클릭합니다](assets/search_icon.png).
+* 여러 [!DNL Adobe Stock] 가지 [!DNL Experience Manager Assets]에서 자산을 검색하려면 ![검색을 클릭합니다](assets/do-not-localize/search_icon.png).
 
 또는 검색 막대 `Location: Adobe Stock` 에 입력하기 시작하여 자산을 [!DNL Adobe Stock] 선택합니다. [!DNL Experience Manager] 검색된 자산에 고급 필터링 기능을 제공하여 지원되는 에셋 유형, 이미지 방향 및 라이선스 상태 등의 필터를 사용하여 필요한 에셋을 신속하게 이용할 수 있습니다.
 
