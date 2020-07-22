@@ -3,9 +3,9 @@ title: 관련 자산
 description: 몇 가지 일반적인 특성을 공유하는 디지털 자산을 연결하는 방법을 알아봅니다. 또한 디지털 자산 간의 소스 파생적인 관계를 만들 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 3%
 
 ---
@@ -37,10 +37,7 @@ ht-degree: 3%
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. 다른 자산을 선택한 자산과 연결하려면 도구 모음에서 **[!UICONTROL 연결을]** 클릭합니다.
-
-   ![chlimage_1-275](assets/chlimage_1-275.png)
-
+1. 다른 자산을 선택한 자산과 연결하려면 도구 모음에서 **[!UICONTROL 자산]** 관련 ![을](assets/do-not-localize/link-relate.png) 클릭합니다.
 1. 다음 중 하나를 수행하십시오.
 
    * 자산의 소스 파일을 연결하려면 목록에서 **[!UICONTROL 소스를]** 선택합니다.
@@ -60,7 +57,7 @@ ht-degree: 3%
 
 1. 자산 관계를 해제하려면 도구 모음에서 **[!UICONTROL 비연관]** 을 클릭합니다.
 
-   ![chlimage_1-279](assets/chlimage_1-279.png)
+   ![자산 연결 해제](assets/do-not-localize/link-unrelate-icon.png)
 
 1. 관계 **[!UICONTROL 제거(Remove Relations) 대화 상자에서 연관되지 않을 자산을]** 선택하고 연결 해제(Unrelate)를 **[!UICONTROL 클릭합니다]**.
 
