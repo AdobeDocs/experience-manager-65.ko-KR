@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager Assets 릴리스 노트
 description: Adobe Experience Manager 6.5 자산에 대한 새로운 기능과 개선 사항입니다.
-translation-type: ht
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+translation-type: tm+mt
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +34,7 @@ source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 [!DNL Adobe Stock] 서비스는 디자이너와 기업의 모든 광고 프로젝트를 위해 고품질로 큐레이팅된 로열티가 없는 수백만 장의 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산에 대한 액세스를 제공합니다.
 
-자세한 정보는 [Experience Manager Assets에서 [!DNL Adobe Stock] 자산 사용](/help/assets/aem-assets-adobe-stock.md)을 참조하십시오.
+For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
 ![Experience Manager Assets 내에서 Adobe Stock 이미지 및 라이선스 미리 보기](assets/stock_image_preview_license_options.png)
 
