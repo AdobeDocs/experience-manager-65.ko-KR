@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
+source-git-commit: 5412d788ccebe00707f2d94dfb1e40da6cb0471c
 workflow-type: tm+mt
 source-wordcount: '5035'
 ht-degree: 2%
@@ -222,7 +222,7 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 
 ### 여러 양식 채우기 및 서명 {#fill-sign-multiple-forms}
 
-이 문서에서는 여러 양식을 작성하고 서명할 수 있는 기능을 설정하는 데 필요한 단계를 설명합니다. 여기에서 [동일한 기능을 사용할 수도 있습니다](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). 이 샘플은 이 샘플에 필요한 데이터를 AME 저장소에 저장합니다. 이 작업은 로컬 서버에 데모 에셋을 배포하기 위한 완벽한 환경을 제공하기 위해 수행됩니다. 실생활에서는 동일한 정보를 원하는 RDMS에 저장하게 됩니다.
+이 문서에서는 여러 양식을 작성하고 서명할 수 있는 기능을 설정하는 데 필요한 단계를 설명합니다. 여기에서 [동일한 기능을 사용할 수도 있습니다](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). 이 샘플은 이 샘플에 필요한 데이터를 AEM 저장소에 저장합니다. 이 작업은 로컬 서버에 데모 에셋을 배포하기 위한 완벽한 환경을 제공하기 위해 수행됩니다. 실생활에서는 동일한 정보를 원하는 RDMS에 저장하게 됩니다.
 
 #### 전제 조건 {#pre-requisites-fill-sign-multiple-forms}
 
