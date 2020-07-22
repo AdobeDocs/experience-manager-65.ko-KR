@@ -3,10 +3,10 @@ title: 디지털 이미지에 하이퍼링크가 포함된 이미지 맵 추가
 description: 이미지에 하이퍼링크가 포함된 이미지 맵을 추가하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 3%
+source-wordcount: '271'
+ht-degree: 2%
 
 ---
 
@@ -26,12 +26,9 @@ ht-degree: 3%
    * 카드 **[!UICONTROL 또는]** **[!UICONTROL 목록]** 보기에서 자산을 선택하고 도구 모음에서 **[!UICONTROL 편집]** 을클릭합니다.
    * 자산 **[!UICONTROL 페이지에서 편집을]** 클릭합니다.
 
-      ![chlimage_1-420](assets/chlimage_1-420.png)
+      ![편집 옵션](assets/do-not-localize/edit_icon.png)
 
-1. 이미지 맵을 삽입하려면 도구 모음에서 **[!UICONTROL 론치]** 맵을 클릭합니다.
-
-   ![chlimage_1-421](assets/chlimage_1-421.png)
-
+1. 이미지 맵을 삽입하려면 도구 모음에서 **[!UICONTROL 론치 맵]** ![](assets/do-not-localize/image-map-icon.png) 이미지 맵을클릭합니다.
 1. 이미지 맵의 모양을 선택합니다. 선택한 모양의 핫스팟이 이미지에 배치됩니다.
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
@@ -40,13 +37,9 @@ ht-degree: 3%
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. 확인 **[!UICONTROL 을]** 클릭한 다음 **[!UICONTROL 도구 모음에서]** 마침을 클릭하여 변경 사항을 저장합니다.
+1. 확인 **[!UICONTROL 을]** 클릭한 **[!UICONTROL 다음]** 마침을 ![클릭하여 도구 모음에서](assets/do-not-localize/check-ok-done-icon.png) 는체크완료를 선택하여 변경 사항을 저장합니다.
 
-   ![chlimage_1-424](assets/chlimage_1-424.png)
-
-   이미지 맵을 삭제하려면 핫 스팟 을 클릭하고 **[!UICONTROL 삭제를 클릭합니다]**.
-
-   ![chlimage_1-425](assets/chlimage_1-425.png)
+   이미지 맵을 삭제하려면 핫스팟을 클릭하고 **[!UICONTROL 삭제]** 를 ![클릭합니다](assets/do-not-localize/delete-solid-line.png).
 
 1. 이미지 맵을 보려면 자산 세부 사항 페이지로 이동하고 커서를 이미지 위로 가져갑니다.
 
