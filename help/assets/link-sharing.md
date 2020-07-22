@@ -3,9 +3,9 @@ title: 공유 에셋에 대한 URL 생성
 description: 이 문서에서는 Experience Manager 자산 내에서 자산, 폴더 및 컬렉션을 외부 당사자에게 URL로 공유하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Adobe Experience Manager 자산을 사용하면 자산, 폴더 및 컬렉션을 
 >사용자와 링크를 공유하기 전에 요일 CQ 메일 서비스가 구성되어 있는지 확인합니다. 일 CQ 메일 서비스를 먼저 [구성하지 않고 링크를 공유하려고 하면 오류가 발생합니다](/help/assets/link-sharing.md#configmailservice).
 
 1. 자산 사용자 인터페이스에서 링크로 공유할 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 링크]** 자산 ![공유](assets/assets_share.png)_공유를 클릭합니다.
+1. 도구 모음에서 **[!UICONTROL 링크]** 공유 ![자산 아이콘을 클릭합니다](assets/do-not-localize/assets_share.png).
 
    [링크 공유] 필드에 자산 링크가 **[!UICONTROL 자동으로]** 만들어집니다. 이 링크를 복사하고 사용자와 공유합니다. 링크에 대한 기본 만료 시간은 하루입니다.
 
@@ -53,7 +53,7 @@ Adobe Experience Manager 자산을 사용하면 자산, 폴더 및 컬렉션을 
 
 1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 작업 **[!UICONTROL >]** 웹 콘솔 **[!UICONTROL 에]**&#x200B;액세스합니다.
 
-1. 일 **[!UICONTROL CQ 링크 외부라이저]** 구성을 열고 도메인 **[!UICONTROL 필드]** 에서, 및 에 대해 언급된 값으로 다음 속성 `local`을 `author`수정합니다 `publish`. 속성 `local` 과 `author` 속성에 대해 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 단일 Experience Manager 작성자 인스턴스를 실행하는 경우 `local` 및 `author` 속성 모두 동일한 값이 있습니다. 예를 `publish`들어 Experience Manager 게시 인스턴스의 URL을 제공합니다.
+1. 일 **[!UICONTROL CQ 링크 외부라이저]** 구성을 열고 도메인 **[!UICONTROL 필드]** 에서, 및 에 대해 언급된 값으로 다음 속성 `local`을 `author`수정합니다 `publish`. 속성 `local` 과 `author` 속성에 대해 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 단일 Experience Manager 작성자 인스턴스를 실행하는 경우 `local` 및 `author` 속성 모두 동일한 값을 갖습니다. 예를 `publish`들어 Experience Manager 게시 인스턴스의 URL을 제공합니다.
 
 1. [ **[!UICONTROL 링크 공유]** ] 대화 상자의 이메일 주소 상자에 링크를 공유할 사용자의 이메일 ID를 입력합니다. 여러 사용자와 링크를 공유할 수도 있습니다.
 
