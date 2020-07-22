@@ -3,9 +3,9 @@ title: 자산 템플릿 [!DNL Adobe Experience Manager Assets].
 description: 자산 템플릿 [!DNL Adobe Experience Manager Assets] 과 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1554'
 ht-degree: 1%
 
 ---
@@ -165,9 +165,7 @@ ht-degree: 1%
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. 템플릿 [!UICONTROL 병합] 페이지에서 **[!UICONTROL 병합을 클릭합니다]**.
-
-   ![chlimage_1-121](assets/chlimage_1-326.png)
+1. 템플릿 [!UICONTROL 병합] 페이지에서 **[!UICONTROL 병합]** 자산 ![추가를 클릭합니다](assets/do-not-localize/assets_add_icon.png).
 
 1. 병합할 자료의 위치로 이동하고 병합할 자료의 축소판을 클릭하여 선택합니다.
 
@@ -185,7 +183,7 @@ ht-degree: 1%
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
-1. 도구 모음 **[!UICONTROL 에서]** 다음을 클릭합니다.
+1. Click **[!UICONTROL Next]** from the toolbar.
 1. 미리 **[!UICONTROL 보기 및 순서]** 변경 화면에서 필요한 경우 템플릿을 다시 정렬하고 병합할 템플릿 선택을 미리 봅니다. 그런 다음 도구 모음 **[!UICONTROL 에서 [다음]** ]을 클릭합니다.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
