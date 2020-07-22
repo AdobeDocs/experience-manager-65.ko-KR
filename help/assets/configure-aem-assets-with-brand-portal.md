@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d7e2d33b81847b15d1e33b3aa406e5e91d44a5f8
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 97%
@@ -129,7 +129,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. AEM Assets 작성자 인스턴스에 로그인합니다. 기본 URL은
    `http:// localhost:4502/aem/start.html`
-1. **도구** ![도구](assets/tools.png) 패널에서 **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다.
+1. **도구** ![도구](assets/do-not-localize/tools.png) 패널에서 **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다.
 
    ![Adobe IMS 계정 구성 UI](assets/ims-config1.png)
 
@@ -302,7 +302,7 @@ Brand Portal 클라우드 서비스를 만들려면 다음 절차를 수행하�
 
 1. AEM Assets 작성자 인스턴스에 로그인합니다.
 
-1. **도구** ![도구](assets/tools.png) 패널에서 **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL AEM Brand Portal]**&#x200B;로 이동합니다.
+1. **도구** ![도구](assets/do-not-localize/tools.png) 패널에서 **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL AEM Brand Portal]**&#x200B;로 이동합니다.
 
 1. Brand Portal 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -322,7 +322,7 @@ Brand Portal 클라우드 서비스를 만들려면 다음 절차를 수행하�
 
 1. AEM Assets 클라우드 인스턴스에 로그인합니다.
 
-1. **도구** ![도구](assets/tools.png) 패널에서 **[!UICONTROL 배포]** > **[!UICONTROL 복제]**&#x200B;로 이동합니다.
+1. **도구** ![도구](assets/do-not-localize/tools.png) 패널에서 **[!UICONTROL 배포]** > **[!UICONTROL 복제]**&#x200B;로 이동합니다.
 
    ![](assets/test-integration1.png)
 
@@ -379,7 +379,7 @@ AEM Assets 작성자 인스턴스가 Brand Portal을 사용하여 성공적으�
 
 1. AEM Assets 작성자 인스턴스에 로그인합니다.
 
-1. **도구** ![도구](assets/tools.png) 패널에서 **[!UICONTROL 배포]** > **[!UICONTROL 배포 복제]**&#x200B;로 이동합니다.
+1. **도구** ![도구](assets/do-not-localize/tools.png) 패널에서 **[!UICONTROL 배포]** > **[!UICONTROL 배포 복제]**&#x200B;로 이동합니다.
 
 1. 복제 페이지에서 **[!UICONTROL 작성자의 에이전트]**&#x200B;를 클릭합니다.
 
