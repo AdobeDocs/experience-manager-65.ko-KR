@@ -3,9 +3,9 @@ title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: 라이선스가 부여된 에셋의 에셋 만료 상태 및 정보를 관리하는 방법을 [!DNL Experience Manager]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee54a3fa395e2c1ab4a5895a0bb8fc251d24a35a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1422'
 ht-degree: 1%
 
 ---
@@ -108,10 +108,7 @@ ht-degree: 1%
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. 도구 모음 **[!UICONTROL 에서 게시를]** 클릭합니다. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않으면 도구 모음에서]** 자세히 **[!UICONTROL 를 클릭하고]** 게시옵션을찾습니다.
-
-   ![chlimage_1-156](assets/chlimage_1-156.png)
-
+1. Click **[!UICONTROL Publish]** from the toolbar. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않는 경우 도구]** 모음에서 **[!UICONTROL 추가]** 를 ![클릭하고](assets/do-not-localize/publish-globe.png) 게시옵션게시 옵션을찾습니다.
 1. 메뉴에서 **[!UICONTROL 게시를]** 선택한 다음 확인 대화 상자를 닫습니다.
 1. 선택 모드를 종료합니다. 자산에 대한 게시 상태는 카드 보기의 자산 축소판 아래에 표시됩니다. 목록 보기에서 게시된 열에는 자산이 게시된 시간이 표시됩니다.
 
@@ -138,10 +135,7 @@ ht-degree: 1%
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. 상태를 기준으로 자산을 검색하려면 **[!UICONTROL 검색을]** 클릭하여 Omniture 막대를 표시합니다.
-
-   ![chlimage_1-162](assets/chlimage_1-162.png)
-
+1. 상태를 기준으로 자산을 검색하려면 **[!UICONTROL 검색]** 옵션 ![](assets/do-not-localize/search_icon.png) 검색을 클릭하여 Omniture 막대를 표시합니다.
 1. Return 키를 누르고 클릭 [!DNL Experience Manager] 을 눌러 검색 패널을 표시합니다.
 1. 검색 패널에서 게시 상태 **[!UICONTROL 를]** 클릭하고 **[!UICONTROL 게시됨]** 을 선택하여 게시된 자산을 검색할 수 [!DNL Assets]있습니다.
 
