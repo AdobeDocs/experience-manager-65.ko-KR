@@ -3,9 +3,9 @@ title: 자산을 처리하여 업무 처리 과정 수행, 감사, 규정 준수
 description: 자산 처리를 사용하여 형식을 변환하고, 변환을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f6c770e8830bd2fe7c436c4bfe9725564c49a08f
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -72,10 +72,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. 맨 아래 **[!UICONTROL 에서]** 작업을 클릭합니다.
-
-   ![chlimage_1-30](assets/chlimage_1-137.png)
-
+1. 맨 아래에 있는 **[!UICONTROL 작업]** ![Chevrup](assets/do-not-localize/chevron-up-icon.png) 을 클릭합니다.
 1. 워크플로우 **[!UICONTROL 시작을 클릭합니다]**. 워크플로우 **[!UICONTROL 시작]** 대화 상자의 목록에서 워크플로우 모델을 선택합니다.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)
