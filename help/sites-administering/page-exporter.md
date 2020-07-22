@@ -2,7 +2,7 @@
 title: 페이지 내보내기
 description: AEM 페이지 내보내기 기능을 사용하는 방법에 대해 학습합니다.
 translation-type: tm+mt
-source-git-commit: b0126894dec33648a24c0308972aa5b47d7e4b84
+source-git-commit: c152cf4bf8cf19e0fa7b328241ced753fa42f7a4
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -16,10 +16,11 @@ AEM에서는 페이지 `.js` 를 이미지 및 `.css` 파일을 포함한 전체
 
 구성된 경우 브라우저에서 URL로 대체하여 페이지 내보내기 `html` 를 요청합니다 `export.zip` . 이렇게 하면 렌더링된 페이지가 참조되는 자산과 함께 html 형식으로 포함된 보관(zip) 파일이 생성됩니다. 페이지의 모든 경로(예: 이미지 경로)는 아카이브에 포함된 파일 또는 서버의 리소스를 가리키도록 다시 작성됩니다. 그런 다음 브라우저에서 아카이브(zip) 파일을 다운로드할 수 있습니다.
 
->!![NOTE]
-브라우저 및 설정에 따라 다운로드가 다음 중 하나가 됩니다.
-* 아카이브 파일 (`<page-name>.export.zip`)
-* a 폴더 (`<page-name>`); 이미 확장된 아카이브 파일
+>[!NOTE]
+>
+>브라우저 및 설정에 따라 다운로드가 다음 중 하나가 됩니다.
+>* 아카이브 파일 (`<page-name>.export.zip`)
+>* a 폴더 (`<page-name>`); 이미 확장된 아카이브 파일
 
 
 ## 페이지 내보내기 {#exporting-a-page}
