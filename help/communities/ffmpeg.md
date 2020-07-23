@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: 299c4cb377c65e49b94383704a906fdd0bb38d06
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -61,7 +61,7 @@ DAM 자산 [!UICONTROL 업데이트] 작업 과정을 수정하고 이 예에서
 * 단계 속성 대화 상자에 액세스하려면 **[!UICONTROL FFmpeg 트랜스코딩]** 단계를 두 번 클릭합니다.
 * 프로세스 **[!UICONTROL 탭]** 아래에서
 
-   * **[!UICONTROL 문서]**: 코드 변환을 비활성화하려면 모든 항목을 지웁니다. 기본값: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL 문서]**: 코드 변환을 비활성화하려면 모든 항목을 지웁니다. 기본값: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
