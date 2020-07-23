@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
+source-git-commit: 8738989c18c6f09452da95d0b9f2c05b0a2a1a81
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 2%
@@ -39,13 +39,13 @@ ht-degree: 2%
 
 **http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-433](assets/chlimage_1-433.png)
+![enablement-login](assets/enablement-login.png)
 
 ## 익명의 사이트 방문자 {#anonymous-site-visitor}
 
 익명의 사이트 방문자는 이 비공개 활성 커뮤니티 사이트에 대한 로그인 페이지가 즉시 표시됩니다. Facebook 또는 Twitter에 직접 등록하거나 로그인할 수 있는 옵션은 없습니다.
 
-이 홈 페이지에는 다음 4개의 메뉴 항목이 표시됩니다. `Assignments, Ski Catalog, What's New` 로그인하지 `Discussions`않으면 연결할 수 없습니다.
+이 홈 페이지에는 4개의 메뉴 항목이 표시됩니다. `Assignments, Ski Catalog, What's New` 로그인하지 `Discussions`않으면 연결할 수 없습니다.
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 1. 고급 **[!UICONTROL 탭으로]** 이동합니다.
 1. Enable **[!UICONTROL Authentication Requirement]**.
 
-   ![site-authentication-1](assets/site-authentication-1.png)
+   ![사이트 인증](assets/site-authentication.png)
 
 1. 로그인 페이지의 경로를 추가합니다. 예, `/content/......./GetStarted`.
 1. 페이지를 게시합니다.
