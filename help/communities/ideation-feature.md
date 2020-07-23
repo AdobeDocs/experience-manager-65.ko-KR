@@ -1,8 +1,8 @@
 ---
-title: 관념화 기능
-seo-title: 관념화 기능
-description: 관념화 기능 추가 및 구성
-seo-description: 관념화 기능 추가 및 구성
+title: 아이디어 기능
+seo-title: 아이디어 기능
+description: 아이디어 기능 추가 및 구성
+seo-description: 아이디어 기능 추가 및 구성
 uuid: 38468290-6d00-4ee4-91d8-7c2e8ae32712
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,26 +11,29 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 9%
 
 ---
 
 
-# 관념화 기능 {#ideation-feature}
+# 아이디어 기능 {#ideation-feature}
 
 ## 소개 {#introduction}
 
-관념화 기능은 게시 환경에서 로그인된 사이트 방문자(커뮤니티 구성원)를 위한 영역을 제공합니다.
+아이디어 기능은 게시 환경에서 로그인된 사이트 방문자(커뮤니티 구성원)를 위한 영역을 제공합니다.
 
 * 커뮤니티와 공유할 아이디어를 만들어 보세요.
-* 아이디어 보기 및 주석 달기
+* 아이디어를 보고 주석을 달 수 있습니다.
 * 아이디어 표현
 * 아이디어에 투표하세요.
 
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
-* AEM 사이트에 관념화 기능 추가
-* 관념화 구성 요소에 대한 구성 설정입니다.
+* AEM 사이트에 아이디어 기능 추가
+* 아이디어 구성 요소에 대한 구성 설정.
 
 ### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
 
@@ -38,23 +41,25 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 * `Communities / Ideation`
 
-아이디어를 표시할 페이지로 드래그하여 놓습니다.
+아이디어를 표현할 수 있는 페이지에 드래그합니다.
 
-필요한 정보를 보려면 커뮤니티 구성 [요소 기본 사항을 참조하십시오](/help/communities/basics.md).
+필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](/help/communities/basics.md).
 
-필요한 [클라이언트측 라이브러리가](/help/communities/ideation.md#essentials-for-client-side) `Ideation` 포함되어 있으면 구성 요소가 표시되는 방식입니다.
+필요한 [클라이언트측 라이브러리가](/help/communities/ideation.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Ideation` 방식입니다.
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![아이디어](assets/ideation.png)
 
-### 관념화 구성 {#configuring-an-ideation}
+### 아이디어 구성 {#configuring-an-ideation}
 
 액세스할 배치된 `Ideation` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-72](assets/chlimage_1-72.png) ![ideation-settings](assets/ideation-settings.png)
+![configure-new](assets/configure-new.png)
+
+![아이디어 설정](assets/ideation-settings.png)
 
 #### 설정 탭 {#settings-tab}
 
-설정 **[!UICONTROL 탭에서]** 아이디어 및 주석 설정을 지정합니다.
+설정 **[!UICONTROL 탭]** 아래에서 아이디어 및 주석 설정을 지정합니다.
 
 * **첨부 파일 썸네일 허용**
 * **최대 첨부 파일 썸네일 크기**
@@ -65,10 +70,10 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 * **작성자 편집 모드에서 사용자 생성 컨텐츠 차단**
 * **관념화 제목**
 
-* 아이디어 표시 제목입니다. 기본값은 `Ideation`입니다.
+* 아이디어의 표시 제목입니다. 기본값은 `Ideation`입니다.
 * **관념화 설명입니다**
 
-   아이디어를 위한 하위 제목으로 표시할 설명입니다. 기본값은 설명이 없습니다.
+   아이디어를 위한 하위 제목으로 표시하는 설명입니다. 기본값은 설명이 아닙니다.
 
 * **페이지당 주제 수**
 
@@ -76,7 +81,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 * **조정됨**
 
-   이 확인란을 선택하면 아이디어와 댓글이 게시 사이트에 표시되기 전에 게시 승인이 필요합니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 아이디어 및 댓글이 게시 사이트에 표시되기 전에 게시 승인이 필요합니다. 기본값은 선택 취소입니다.
 
 * **닫힘**
 
@@ -84,11 +89,11 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 * **리치 텍스트 편집기**
 
-   이 확인란을 선택하면 아이디어와 댓글이 마크업으로 입력될 수 있습니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 아이디어 및 주석을 마크업에 입력할 수 있습니다. 기본값은 선택 취소입니다.
 
 * **태깅 허용**
 
-   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다(태그 필드 **[!UICONTROL 탭]** 참조). 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다(태그 **[!UICONTROL 필드]** 탭 참조). 기본값은 선택 취소입니다.
 
 * **파일 업로드 허용**
 
@@ -96,11 +101,11 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 * **최대 파일 크기**
 
-   선택한 경우에만 `Allow File Uploads` 관련성이 있습니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
+   선택한 경우에만 `Allow File Uploads` 관련됨 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
 
 * **허용되는 파일 유형**
 
-   선택한 경우에만 `Allow File Uploads` 관련성이 있습니다. &quot;dot&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   선택한 경우에만 `Allow File Uploads` 관련됨 &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **이미지 첨부 파일 최대 크기**
 
@@ -108,11 +113,11 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 * **답글 허용**
 
-   선택하는 경우 아이디어에 게시된 댓글에 답글을 허용합니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 아이디어에 게시된 댓글에 대한 답글을 허용합니다. 기본값은 선택 취소입니다.
 
 * **투표 허용**
 
-   선택하는 경우 아이디어의 댓글에 대해 투표를 허용합니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 아이디어 댓글에 대한 투표를 허용합니다. 기본값은 선택 취소입니다.
 
 * **사용자가 주석 및 주제를 삭제하도록 허용**
 
@@ -120,25 +125,25 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 * **다음 허용**
 
-   이 확인란을 선택하면 구성원에게 새 게시물에 대한 [알림을](/help/communities/notifications.md) 제공할 수 있는 아이디어 게시물에 다음 기능을 포함합니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원에게 새 게시물에 대한 [알림을 받을](/help/communities/notifications.md) 수 있는 아이디어 게시물에 대해 다음 기능을 포함합니다. 기본값은 선택 취소입니다.
 
 * **이메일 구독 허용**
 
-   이 확인란을 선택하면 새 게시물에 대한 알림을 이메일([구독](/help/communities/subscriptions.md))로 받을 수 있습니다. 확인 및 `Allow Following` 이메일 구성이 [](/help/communities/email.md)필요합니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 이메일([구독](/help/communities/subscriptions.md))로 새 게시물에 대한 알림을 받을 수 있습니다. 확인 및 `Allow Following` 이메일 구성 [](/help/communities/email.md)필요 기본값은 선택 취소입니다.
 
 * **투표 허용**
 
-   선택하는 경우 아이디어의 댓글에 대해 투표를 허용합니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 아이디어 댓글에 대한 투표를 허용합니다. 기본값은 선택 취소입니다.
 
 * **배지 표시**
 
-   이 확인란을 선택하면 멤버의 아이디어와 함께 획득 [배지가](/help/communities/implementing-scoring.md) 표시됩니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 획득 [배지가](/help/communities/implementing-scoring.md) 표시되고 멤버의 아이디어가 할당됩니다. 기본값은 선택 취소입니다.
 
-* **목록 페이지에서 답글을 가져오지 않음**
+* **목록 페이지에 대한 답글을 받지 않음**
 
 * **특별 포함된 컨텐츠 허용**
 
-   이 확인란을 선택하면 아이디어를 [주요 컨텐츠로](/help/communities/featured.md)식별할 수 있습니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 해당 아이디어를 [주요 컨텐츠로 식별할 수 있습니다](/help/communities/featured.md). 기본값은 선택 취소입니다.
 
 * **언급 활성화**
 * **최대 언급 수**
@@ -146,7 +151,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
-사용자 중재 **[!UICONTROL 탭에서]** 게시된 아이디어 및 댓글(사용자 생성 컨텐츠)의 관리 방법을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+사용자 중재 **[!UICONTROL 탭]** 아래에서 게시된 아이디어와 댓글(사용자가 생성한 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
 
 * **게시물 거부**
 
@@ -162,11 +167,11 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 * **플래그 이유 목록**
 
-   이 확인란을 선택하면 구성원이 드롭다운 목록에서 주제 또는 댓글에 플래그를 지정하는 것이 부적절하다고 판단할 수 있습니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 멤버가 드롭다운 목록에서 주제 또는 댓글에 플래그를 지정하는 이유가 부적절한 것으로 표시됩니다. 기본값은 선택 취소입니다.
 
 * **사용자 지정 플래그 이유**
 
-   이 확인란을 선택하면 구성원이 주제 또는 댓글에 대한 자신만의 이유를 입력할 수 있습니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 주제 또는 댓글에 대한 자신의 이유를 부적절한 것으로 입력할 수 있습니다. 기본값은 선택 취소입니다.
 
 * **관리 임계값**
 
@@ -174,15 +179,15 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 * **플래그 지정 제한**
 
-   주제 또는 댓글이 공개 보기에서 숨겨지기 전에 플래그가 지정되어야 하는 횟수를 입력합니다. -1로 설정하면 플래그가 지정된 주제 또는 댓글이 공개 보기에서 숨겨지지 않습니다. 그렇지 않은 경우 이 숫자는 중재 임계값보다 크거나 같아야 합니다. 기본값은 5입니다.
+   토픽이나 댓글이 공개 보기에서 숨겨지기 전에 플래그가 달린 횟수를 입력합니다. -1로 설정하면 플래그가 지정된 토픽이나 댓글은 공개 보기에서 숨겨지지 않습니다. 그렇지 않은 경우 이 숫자는 중재 임계값보다 크거나 같아야 합니다. 기본값은 5입니다.
 
 #### 태그 필드 탭 {#tag-field-tab}
 
-태그 **[!UICONTROL 필드]** 탭 아래에서 설정 탭 아래에서 허용되는 경우 적용할 수 있는 **[!UICONTROL 태그는]** 선택한 네임스페이스에 따라제한됩니다.
+[ **[!UICONTROL 태그] 필드]** 탭 아래에서 **[!UICONTROL 설정]** 탭 아래에서 허용되는 경우 적용할 수 있는 태그는 선택한 네임스페이스에 따라제한됩니다.
 
 * **허용되는 네임스페이스**
 
-   설정 탭 아래에서 `Allow Tagging` 선택한 **[!UICONTROL 경우 관련성]** . 적용할 수 있는 태그는 선택된 네임스페이스 범주 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값은 선택하지 않았으므로 모든 네임스페이스가 허용됩니다.
+   설정 탭 아래 `Allow Tagging` 에서 **[!UICONTROL 선택되어 있는 경우]** 관련 적용할 수 있는 태그는 확인된 네임스페이스 범주 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값은 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
 
 * **제안 한도**
 
@@ -190,11 +195,11 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 #### 정렬 설정 탭 {#sort-settings-tab}
 
-[ **[!UICONTROL 정렬 설정]** ] 탭 아래에서 게시 주석이 표시될 때 정렬되는 방식을 지정합니다.
+정렬 설정 **[!UICONTROL 탭]** 아래에서, 표시할 때 게시된 댓글이 정렬되는 방식을 지정합니다.
 
 * **정렬 기준**
 
-   허용되는 모든 정렬 선택 사항 확인: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`Adobe 기본값은 `Newest, Oldest, Last Updated`입니다.
+   허용되는 모든 정렬 선택 사항 확인: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 기본값은 `Newest, Oldest, Last Updated`입니다.
 
 * **기본값으로 설정**
 
@@ -202,7 +207,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 * **분석 정렬에 대한 시간 옵션 선택**
 
-   아래로 끌어 하나를 `All, Last 24 Hours, Last 7 Days, Last 30 Days`선택합니다. 기본값은 `All`입니다.
+   아래로 끌어 하나를 선택합니다 `All, Last 24 Hours, Last 7 Days, Last 30 Days`. 기본값은 `All`입니다.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
@@ -212,28 +217,28 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 로그인하면 멤버가 새로운 아이디어를 만들 수 있습니다.
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![창의적인 아이디어](assets/create-new-idea.png)
 
 아이디어를 제출하기 전에 멤버가 초안을 저장할 수 있습니다.
 
-이 `Save as Draft` 단추를 선택하면 초안이 저장됩니다.
+단추를 선택하면 `Save as Draft` 초안이 저장됩니다.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![아이디어 저장](assets/save-idea.png)
 
-탭에서 저장된 초안을 볼 때 `My Drafts` 편집 모드를 다시 `Read More` 시작하려면 선택합니다.
+탭에서 저장된 초안을 볼 때 `My Drafts` 편집 모드 `Read More` 를 다시 입력하려면 선택합니다.
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![edit-idea](assets/edit-idea.png)
 
 #### 피드백 제공 {#providing-feedback}
 
-아이디어가 게시되면 다른 멤버는 로그인하여 아이디어를 열고() `Read More`아이디어를 좋아하여 투표 수에 추가하고 의견을 추가할 수 있습니다.
+아이디어가 게시되면 다른 구성원은 로그인하여 아이디어를 열고 ( `Read More`) 아이디어를 좋아하여 투표 수에 추가하고 의견을 추가할 수 있습니다.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![피드백](assets/feedback-idea.png)
 
 ### 추가 정보 {#additional-information}
 
-개발자를 위한 Ideation Essentials [페이지에](/help/communities/ideation.md) 대한 자세한 내용이 있습니다.
+개발자를 위한 Ideation Essentials [페이지에](/help/communities/ideation.md) 대한 자세한 내용이 나와 있습니다.
 
-게시된 주제 및 댓글에 대한 중재는 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+게시된 항목 및 댓글에 대한 중재는 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
 
-게시된 항목 및 댓글에 태그를 지정하려면 사용자 생성 [컨텐츠 태깅을 참조하십시오](/help/communities/tag-ugc.md).
+게시된 항목 및 댓글에 태그를 지정하려면 사용자 생성 컨텐츠 [태그 지정을 참조하십시오](/help/communities/tag-ugc.md).
