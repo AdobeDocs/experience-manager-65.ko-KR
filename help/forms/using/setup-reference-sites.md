@@ -10,9 +10,9 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: 371ecbdaad97b7111353f40d1ddfb686e99d46c5
 workflow-type: tm+mt
-source-wordcount: '2864'
+source-wordcount: '2878'
 ht-degree: 0%
 
 ---
@@ -216,8 +216,8 @@ AEM Forms 참조 사이트의 경우 AEM DS 설정 서비스에서 처리 서버
 
 소프트웨어 배포를 사용하여 참조 사이트 패키지 [를 설치합니다](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
 
-* [AEM Forms FSI 참조 사이트 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-FSI-REF-SITE)
-* [AEM Forms Gov Reference 사이트 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/fd/AEM-FORMS-6.5-GOV-REF-SITE)
+* [AEM Forms FSI 참조 사이트 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-FSI-REF-SITE)
+* [AEM Forms Gov Reference 사이트 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-GOV-REF-SITE)
 
 패키지 사용 방법에 대한 자세한 내용은 패키지 [를 사용한 작업 방법을 참조하십시오](/help/sites-administering/package-manager.md).
 
@@ -266,7 +266,7 @@ AEM Forms과 Microsoft Dynamics 간의 통신을 사용하도록 AEM Forms에서
 1. AEM 작성자 인스턴스의 경우 **도구** > Cloud Service ******>** 데이터 소스 **>**&#x200B;글로벌으로이동합니다. Refsite **Dynamics 통합** 아이콘을 누르고 속성을 누릅니다.
 1. Microsoft Azure Active Directory 계정으로 이동합니다. 등록된 응용 프로그램에 대한 회신 URL **설정에** 복사된 클라우드 서비스 구성 URL을 추가합니다. 구성을 저장합니다.
 1. [인증 설정] 탭에서 **서비스 루트**, **클라이언트 ID**, **클라이언트 암호**&#x200B;및 **Microsoft Dynamics 인스턴스의 리소스 URL을 지정합니다** . Microsoft Dynamics **로그인** 페이지로 리디렉션하는 OAuth에 연결을 클릭합니다.
-1. 로그인 자격 증명을 제공합니다. 로그인하면 AEM Forms 클라우드 서비스 구성 페이지로 리디렉션됩니다. Click **Save &amp; Close**. 클라우드 서비스 구성이 저장됩니다.
+1. 로그인 자격 증명을 제공합니다. 로그인하면 AEM Forms 클라우드 서비스 구성 페이지로 리디렉션됩니다. **저장 후 닫기**&#x200B;를 클릭합니다. 클라우드 서비스 구성이 저장됩니다.
 1. 양식 > **데이터** 통합 **>** We. **Finance로**&#x200B;이동합니다. 자동 보험(Dynamics)을 선택하고 편집을 클릭합니다. Microsoft Dynamics 엔티티는 데이터 소스 탭 아래에 나열됩니다. 모든 개체가 Microsoft Dynamics에서 반입되고 데이터 소스 탭 아래에 나열될 때까지 기다립니다.
 1. AutoInsuranceRenewal **엔티티를** 선택하고 **Test Model Object를 클릭합니다**. 입력 요청 섹션에서 고객 ID에 대한 값을 &quot;900001&quot;로 지정하고 **테스트를 클릭합니다**. 출력 섹션에는 고객 ID 90001에 대해 Microsoft Dynamics에서 가져온 레코드가 표시됩니다.
 1. 입력 요청 섹션에서 고객 ID에 대한 값을 &quot;900001&quot;로 지정하고 **테스트를 클릭합니다**. 출력 섹션에는 고객 ID 90001에 대해 Microsoft Dynamics에서 가져온 레코드가 표시됩니다.
