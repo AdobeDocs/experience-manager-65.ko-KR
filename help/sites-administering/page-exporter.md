@@ -2,9 +2,9 @@
 title: 페이지 내보내기
 description: AEM 페이지 내보내기 기능을 사용하는 방법에 대해 학습합니다.
 translation-type: tm+mt
-source-git-commit: c152cf4bf8cf19e0fa7b328241ced753fa42f7a4
+source-git-commit: 6aee1506b54a932bae8f2521fce4488de7d2a52a
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ AEM에서는 페이지 `.js` 를 이미지 및 `.css` 파일을 포함한 전체
 
 템플릿이 구성되면 사용할 수 있도록 설정해야 합니다.
 
-1. CRXDE에서 분기의 필수 페이지로 `/content` 이동합니다.
+1. CRXDE에서 분기의 필수 페이지로 `/content` 이동합니다. 개별 페이지이거나 하위 트리의 루트 페이지일 수 있습니다.
 
 1. 페이지의 `jcr:content` 노드에서 속성을 만듭니다.
    * `Name`: `cq:exportTemplate`
