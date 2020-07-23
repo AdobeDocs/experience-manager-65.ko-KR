@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '3845'
+source-wordcount: '3843'
 ht-degree: 3%
 
 ---
@@ -291,7 +291,7 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
 
 이미지 사전 설정을 만들거나 편집할 때 이 섹션에 설명된 옵션이 있습니다. 또한 Adobe에서는 다음과 같은 &quot;우수 사례&quot; 옵션을 선택하여 시작할 것을 권장합니다.
 
-* **[!UICONTROL 형식** (**[!UICONTROL 기본]** 탭) - 요구 사항을 충족하는 **[!UICONTROL JPEG]** 또는 다른 형식을 선택합니다. 모든 웹 브라우저는 JPEG 이미지 형식을 지원합니다. 작은 파일 크기와 이미지 품질 간의 적절한 균형을 제공합니다. 그러나 JPEG 형식 이미지는 압축 설정이 너무 낮으면 원치 않는 이미지 가공물을 가져올 수 있는 손실 압축 체계를 사용합니다. 이러한 이유로 Adobe에서는 압축 품질을 75로 설정하는 것이 좋습니다. 이 설정은 이미지 품질과 작은 파일 크기 간의 적절한 균형을 제공합니다.
+* **[!UICONTROL 형식]** (**[!UICONTROL 기본]** 탭) - **[!UICONTROL JPEG]** 또는 요구 사항을 충족하는 다른 형식을 선택합니다. 모든 웹 브라우저는 JPEG 이미지 형식을 지원합니다. 작은 파일 크기와 이미지 품질 간의 적절한 균형을 제공합니다. 그러나 JPEG 형식 이미지는 압축 설정이 너무 낮으면 원치 않는 이미지 가공물을 가져올 수 있는 손실 압축 체계를 사용합니다. 이러한 이유로 Adobe에서는 압축 품질을 75로 설정하는 것이 좋습니다. 이 설정은 이미지 품질과 작은 파일 크기 간의 적절한 균형을 제공합니다.
 
 * **[!UICONTROL 단순 선명]** 활성화 - [ **[!UICONTROL 간단한 선명하게 하기]** 설정]을 선택하지 마십시오(이 선명 효과 필터는 [언샵 마스크] 설정에 비해 더 적은 컨트롤을 제공합니다).
 
@@ -412,7 +412,7 @@ INDD( [InDesign) 파일 형식을 참조하십시오](#indesign-indd-file-format
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>Dynamic Media은 UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 [ <strong>이미지 수정자] 필드에 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다</strong> . 이러한 매개 변수는 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">이미지 서버 프로토콜 명령 참조에서 정의됩니다</a>.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>Dynamic Media은 UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 [ <strong>이미지 수정자] 필드에 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다</strong> . 이러한 매개 변수는 <a href="https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">이미지 서버 프로토콜 명령 참조에서 정의됩니다</a>.</p> <p>중요: API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> and <code>textPs=</code></li>
      <li>현지화 명령: <code>locale=</code> and <code>req=xlate</code></li>
@@ -504,5 +504,5 @@ Dynamic Media - 하이브리드 모드를 실행 중인 경우 이미지 사전 
 
 1. AEM에서 AEM 로고를 탭하거나 클릭하여 글로벌 탐색 콘솔에 액세스합니다.
 1. 도구 **[!UICONTROL 아이콘을]** 누른 다음 **[!UICONTROL 자산 > 이미지 사전 설정으로 이동합니다.]**
-1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제를 클릭합니다**. Dynamic Media에서 삭제할 것임을 확인합니다. 삭제를 **[!UICONTROL 눌러]** 삭제하거나 **[!UICONTROL 취소를 눌러]** 중단합니다.
+1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제를 클릭합니다]**. Dynamic Media에서 삭제할 것임을 확인합니다. 삭제를 **[!UICONTROL 눌러]** 삭제하거나 **[!UICONTROL 취소를 눌러]** 중단합니다.
 
