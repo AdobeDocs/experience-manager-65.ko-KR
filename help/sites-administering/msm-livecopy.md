@@ -2,9 +2,9 @@
 title: Live Copy 생성 및 동기화
 description: Live Copy를 만들고 동기화하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
 workflow-type: tm+mt
-source-wordcount: '4116'
+source-wordcount: '4115'
 ht-degree: 2%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 2%
 
 모든 페이지의 Live Copy를 만들 수 있습니다.
 
-* 페이지는 [블루프린트 구성에 의해 참조됩니다](#creating-a-blueprint-configuration).
+* 블루프린트 구성에 의해 참조되는 [페이지입니다](#creating-a-blueprint-configuration).
 * 구성에 연결되지 않은 페이지입니다.
 * 또한 AEM에서는 다른 Live Copy 페이지 내에서 Live Copy를 만들 수도 있습니다.
 
