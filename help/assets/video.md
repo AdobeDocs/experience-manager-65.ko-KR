@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '11829'
+source-wordcount: '11828'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry, Windows �
 * 지원되는 다양한 비디오 포맷 및 오디오 포맷의 비디오를 업로드하고 여러 화면에서 재생할 수 있는 MP4 H.264 포맷으로 비디오를 인코딩할 수 있습니다. 사전 정의된 응용 비디오 사전 설정, 단일 비디오 인코딩 사전 설정을 사용하거나 자체 인코딩을 사용자 지정하여 비디오의 품질과 크기를 제어할 수 있습니다.
 
    * 응용 비디오 세트가 생성되면 MP4 비디오가 포함됩니다.
-   * **참고**: 마스터/소스 비디오는 응용 비디오 세트에 추가되지 않습니다.
+   * **참고**: 응용 기본 비디오 세트에/소스 비디오가 추가되지 않습니다.
 
 * 모든 HTML5 비디오 뷰어에서 비디오 캡션 지정
 * 비디오 에셋을 효율적으로 관리할 수 있는 완벽한 메타데이터 지원을 통해 비디오를 구성, 검색 및 검색할 수 있습니다.
@@ -221,7 +221,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   </tr>
   <tr>
    <td>데스크톱</td>
-   <td>크롬</td>
+   <td>Chrome</td>
    <td>HLS</td>
   </tr>
   <tr>
@@ -395,7 +395,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 이 비율을 계산하려면 소스 너비를 인코딩된 너비로 나누어 너비 비율을 가져옵니다. 그런 다음 소스 높이를 인코딩된 높이로 나누면 높이 비율이 높아집니다.
 
-결과 비율이 정수 단위인 경우 비디오 크기가 최적으로 조절됨을 의미합니다. 결과 비율이 정수가 아닌 경우 나머지 픽셀 가공물은 디스플레이에 그대로 두면 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 잘 나타납니다.
+결과 비율이 정수 단위인 경우, 비디오가 최적으로 크기가 조정됨을 의미합니다. 결과 비율이 정수가 아닌 경우 나머지 픽셀 가공물은 디스플레이에 그대로 두면 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 잘 나타납니다.
 
 예를 들어 소스 비디오가 1920 x 1080이라고 가정합니다. 다음 표에서 세 개의 인코딩된 비디오는 사용할 최적의 인코딩 설정을 제공합니다.
 
@@ -1089,7 +1089,7 @@ URL에서 JSON 함수 사용에 대한 자세한 내용은 [Scene7 이미지 제
 
    최상의 결과를 얻으려면 Internet Explorer 9 이상, Google Chrome 또는 Safari에서 도구를 사용하십시오.
 
-   도구에서 비디오 파일 **[!UICONTROL URL]** 입력 필드에서 비디오 파일의 복사한 URL을 붙여 넣은 다음 **[!UICONTROL Load를 클릭합니다**. 비디오 파일 자체에 URL을 가져온 다음 비디오 파일 [의 URL](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) **[!UICONTROL 입력 필드에 붙여 넣을 수 있는 자산의 URL을 얻기를 참조하십시오.]** 그러면 Internet Explorer, Chrome 또는 Safari에서 비디오를 기본적으로 재생할 수 있습니다.
+   도구에서 비디오 파일의 **[!UICONTROL URL 입력]** 필드에서 비디오 파일의 복사한 URL을 붙여 넣은 다음 **[!UICONTROL 로드를 클릭합니다]**. 비디오 파일 자체에 URL을 가져온 다음 비디오 파일 [의 URL](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) **[!UICONTROL 입력 필드에 붙여 넣을 수 있는 자산의 URL을 얻기를 참조하십시오.]** 그러면 Internet Explorer, Chrome 또는 Safari에서 비디오를 기본적으로 재생할 수 있습니다.
 
    이제 사이트의 화면 지침에 따라 WebVTT 파일을 작성하고 저장합니다. 완료되면 캡션 파일 내용을 복사하여 일반 텍스트 편집기에 붙여넣고 .vtt 파일 확장명으로 저장합니다.
 
