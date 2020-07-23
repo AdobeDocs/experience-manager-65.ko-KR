@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
+source-git-commit: 9e1d77b8696436b392f0d9209ddcb2c9196f3c09
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7698'
 ht-degree: 0%
 
 ---
@@ -393,7 +393,7 @@ WebSphere에서는 WebSphere에 포함된 SQL Server JDBC 드라이버가 아닌
 1. 오른쪽 창의 추가 속성에서 **사용자 지정 속성**&#x200B;을 클릭한 다음 **새로 만들기를 클릭합니다**.
 1. 이름 **** 상자 `integratedSecurity` 에 및 값 **상자에** 를 `true`입력합니다.
 1. WebSphere가 설치된 컴퓨터에서 Windows 시스템 경로(C:\Windows)에 sqljdbc_auth.dll 파일을 추가합니다. sqljdbc_auth.dll 파일은 Microsoft SQL JDBC 1.2 드라이버 설치 위치와 동일한 위치에 있습니다(기본값은 *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
-1. [ **시작** ] > [ **제어판** ] > [ **서비스**]를 선택하고 WebSphere용 Windows 서비스(IBM WebSphere Application Server &lt;버전> - &lt;노드>)를 마우스 오른쪽 단추로 클릭하고 [속성]을 ****&#x200B;선택합니다.
+1. [ **시작** ] > **Campaign 컨트롤 패널** > **서비스**]를 선택하고 WebSphere용 Windows 서비스(IBM WebApplication Server &lt;버전> - &lt;노드>)를 마우스 오른쪽 단추로 누르고 속성 ****&#x200B;을 선택합니다.
 1. 속성 대화 상자에서 **로그온** 탭을 클릭합니다.
 1. 이 계정 **을** 선택하고 사용할 로그인 계정을 설정하는 데 필요한 정보를 제공합니다.
 1. SQL Server의 보안을 혼합 **모드에서** Windows 인증만 **으로**&#x200B;설정합니다.
@@ -688,8 +688,8 @@ JEE의 AEM Forms은 레퍼러 필터 기능을 사용하여 CSRF 공격을 차�
 
 1. 양식 서버는 요청된 URI가에 있는지 여부를 허용 목록에 추가하다 확인합니다.
 
-   1. URI가 허용되는 경우 서버가 요청을 수락합니다.
-   1. 요청한 URI가 나열되지 않으면 서버는 요청의 레퍼러를 검색합니다.
+   1. URI가 허용 목록에추가된 있는 경우 서버가 요청을 수락합니다.
+   1. 요청한 URI가 허용 목록에추가된 없으면 서버는 요청의 레퍼러를 검색합니다.
 
 1. 요청에 레퍼러가 있는 경우 서버는 레퍼러가 허용된 참조인지 여부를 확인합니다. 허용되는 경우 서버는 레퍼러 예외를 확인합니다.
 
@@ -955,6 +955,8 @@ JEE의 AEM Forms에 필요한 WebSphere 포트에 대한 자세한 내용은 Web
 JEE 물리적 아키텍처의 섹션 [AEM Forms에 설명된 물리적 아키텍처를](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)참조하려면 사용하려는 모든 연결에 대해 SSL을 구성해야 합니다. 특히 모든 SOAP 연결은 SSL을 통해 수행되어야 네트워크에서 사용자 자격 증명이 노출되지 않습니다.
 
 JBoss, WebLogic 및 WebSphere에서 SSL을 구성하는 방법에 대한 지침은 [관리 도움말의 &quot;SSL 구성&quot;을 참조하십시오](https://www.adobe.com/go/learn_aemforms_admin_64).
+
+AEM Forms 서버에 대해 구성된 JVM(Java Virtual Machine)으로 인증서를 가져오는 방법에 대한 지침은 [AEM Forms 워크벤치 도움말의 상호 인증 섹션을 참조하십시오](http://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### SSL 리디렉션 구성 {#configuring-ssl-redirect}
 
