@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 3%
@@ -129,7 +129,7 @@ ht-degree: 3%
 
 #### MODERATION {#moderation}
 
-UGC(사용자 생성 콘텐츠)를 [중재하기](/help/communities/sites-console.md#moderation) 위한 기본 전역 설정을 적용합니다.
+사용자 생성 콘텐츠(UGC)를 [중재하기](/help/communities/sites-console.md#moderation) 위한 기본 전역 설정을 적용합니다.
 
 ![chlimage_1-452](assets/chlimage_1-452.png)
 
@@ -256,7 +256,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 `https://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
-![chlimage_1-433](assets/chlimage_1-433.png)
+![enablement-login](assets/enablement-login.png)
 
 ### 인증 구성 오류 {#configure-for-authentication-error}
 
