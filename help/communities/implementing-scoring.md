@@ -12,7 +12,7 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
 workflow-type: tm+mt
 source-wordcount: '2897'
 ht-degree: 2%
@@ -65,12 +65,15 @@ AEM Communities 채점 및 배지 기능을 사용하면 커뮤니티 구성원�
 이번 릴리스에는 세 가지 역할 기반 배지가 포함되어 있습니다.
 
 * **중재자**
+
    `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **그룹 관리자**
+
    `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **권한 있는 멤버**
+
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
@@ -87,12 +90,15 @@ AEM Communities 채점 및 배지 기능을 사용하면 커뮤니티 구성원�
 이번 릴리스에는 세 개의 보상 기반 배지가 포함되어 있습니다.
 
 * **금**
+
    `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **은**
+
    `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **청동**
+
    `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
@@ -409,6 +415,7 @@ cURL -i -X POST -H *header**-u* signin *-F* operation ** -F *badgeFMember-profil
 >
 >* 터널 서비스가 활성화된 경우 [작성자 인스턴스를 참조할](/help/communities/users.md#tunnel-service) 수 있습니다.
 >* 잘 알려지지 않은 임의 이름일 수 있습니다. 권한 부여 가능한 ID에 대한 [보안 체크리스트를](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) 참조하십시오.
+
 >
 
 
