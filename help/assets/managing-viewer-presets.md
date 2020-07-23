@@ -10,9 +10,9 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '4361'
+source-wordcount: '4360'
 ht-degree: 2%
 
 ---
@@ -97,11 +97,11 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   </tr>
   <tr>
    <td><strong>이미지 집합</strong></td>
-   <td>In the Image Set viewer, users can see different views or color variations of an item by clicking a thumbnail image. This viewer also offers zooming tools for examining images closely.</td>
+   <td>이미지 세트 뷰어에서 축소판 이미지를 클릭하면 항목의 서로 다른 보기 또는 색상 변형을 볼 수 있습니다. 이 뷰어에서는 이미지를 자세히 검사하는 확대/축소 도구를 제공합니다.</td>
   </tr>
   <tr>
    <td><strong>대화형 이미지</strong></td>
-   <td>Hotspots are added to portions of an image that a customer can then click for additional details or for purchasing directly from a website's category, home, or landing pages.</td>
+   <td>핫스팟은 고객이 추가 세부 사항을 살펴보거나 웹 사이트의 카테고리, 홈 또는 랜딩 페이지에서 직접 구매할 수 있는 이미지의 일부에 추가됩니다.</td>
   </tr>
   <tr>
    <td><strong>대화형 비디오</strong></td>
@@ -109,19 +109,19 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   </tr>
   <tr>
    <td><strong>혼합 미디어</strong></td>
-   <td>Displays different types of media in one viewer. 스핀 세트, 이미지 세트, 이미지 및 비디오를 포함할 수 있습니다.</td>
+   <td>하나의 뷰어에서 서로 다른 유형의 미디어를 표시합니다. 스핀 세트, 이미지 세트, 이미지 및 비디오를 포함할 수 있습니다.</td>
   </tr>
   <tr>
    <td><strong>파노라마 이미지</strong></td>
    <td><p>파노라마 이미지 및 PanoramicVR 뷰어는 구형 파노라마 이미지를 렌더링하여 사용자가 360° 회의실, 속성, 위치 또는 가로에서 볼 수 있는 환경을 경험하도록 합니다.</p> <p>업로드된 이미지가 구형 파노라인으로 자격을 부여하려면 다음 중 하나 또는 둘 다를 가져야 합니다.</p>
     <ul>
      <li>2:1 종횡비</li>
-     <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. See <a href="/help/sites-authoring/tags.md">Using Tags</a>.</li>
-    </ul> <p>Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the "Panoramic Media" WCM component.</p> <p><strong>중요</strong>: 이 뷰어는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.</p> </td>
+     <li>키워드 <code>equirectangular</code>또는 <code>spherical</code> 및 <code>panorama</code>및 <code>spherical </code>and <code>panoramic</code>로 태그되었습니다. 태그 <a href="/help/sites-authoring/tags.md">사용을 참조하십시오</a>.</li>
+    </ul> <p>종횡비와 키워드 기준은 모두 자산 세부 사항 페이지와 "파노라마 미디어" WCM 구성 요소의 파노라마 에셋에 적용됩니다.</p> <p><strong>중요</strong>: 이 뷰어는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><strong>스마트 크롭 비디오</strong><br /> </td>
-   <td><p>Use this viewer to automatically detect and crop to the focal point in any video.</p> </td>
+   <td><p>이 뷰어를 사용하여 모든 비디오의 초점까지 자동으로 감지하고 자를 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><strong>회전 집합</strong></td>
@@ -129,7 +129,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   </tr>
   <tr>
    <td><strong>360 비디오</strong></td>
-   <td><p>Use the 360/VR Video viewer to render equirectangular video for an immersive viewing experience of a room, property, location, landscape, or medical procedure.</p> <p>평면 디스플레이에서 재생하는 동안 사용자는 보기 각도를 제어할 수 있습니다. 모바일 디바이스에서 재생하는 경우 일반적으로 내장된 자이로스코프 컨트롤을 활용할 수 있습니다.</p> <p>뷰어에는 360개의 비디오 에셋 배달에 대한 기본 지원이 포함되어 있습니다. 기본적으로 보거나 재생하는 데 추가 구성이 필요하지 않습니다. .mp4, .mkv 및 .mov와 같은 표준 비디오 익스텐션을 사용하여 360개의 비디오를 제공할 수 있습니다. 가장 일반적인 코덱은 H.264입니다.</p> <p><strong>중요</strong>: 이 뷰어는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.</p> </td>
+   <td><p>360/VR 비디오 뷰어를 사용하여 등장방형 비디오를 렌더링하여 방, 속성, 위치, 가로 또는 의료 시법의 몰입형 시청 환경을 구현할 수 있습니다.</p> <p>평면 디스플레이에서 재생하는 동안 사용자는 보기 각도를 제어할 수 있습니다. 모바일 디바이스에서 재생하는 경우 일반적으로 내장된 자이로스코프 컨트롤을 활용할 수 있습니다.</p> <p>뷰어에는 360개의 비디오 에셋 배달에 대한 기본 지원이 포함되어 있습니다. 기본적으로 보거나 재생하는 데 추가 구성이 필요하지 않습니다. .mp4, .mkv 및 .mov와 같은 표준 비디오 익스텐션을 사용하여 360개의 비디오를 제공할 수 있습니다. 가장 일반적인 코덱은 H.264입니다.</p> <p><strong>중요</strong>: 이 뷰어는 Dynamic Media - Scene7 모드에서만 사용할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><strong>비디오</strong></td>
@@ -145,7 +145,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   </tr>
   <tr>
    <td><strong>확대/축소</strong></td>
-   <td>Lets users zoom into the area by clicking it. 사용자는 컨트롤을 클릭하여 이미지를 확대, 축소 및 기본 크기로 재설정할 수 있습니다.</td>
+   <td>사용자가 영역을 클릭하여 확대할 수 있습니다. 사용자는 컨트롤을 클릭하여 이미지를 확대, 축소 및 기본 크기로 재설정할 수 있습니다.</td>
   </tr>
  </tbody>
 </table>
@@ -165,7 +165,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
 >Dynamic Media의 모든 기본 뷰어 사전 설정은 이미 활성화(켜짐)되었지만 게시해야 합니다.
 >See [Publishing Viewer Presets](#publishing-viewer-presets).
 >
->Any new viewer presets that you create and add must be both activated *and *published.
+>만들고 추가하는 모든 새로운 뷰어 사전 설정은 모두 활성화되어야 하고 *게시되어야 합니다.
 >뷰어 [사전 설정 활성화 또는 비활성화](#activating-or-deactivating-viewer-presets) 및 [게시 뷰어 사전 설정을 참조하십시오](#publishing-viewer-presets).
 
 <table>
@@ -296,7 +296,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
    <td><code>html5_video360viewersocial.css</code></td>
   </tr>
   <tr>
-   <td><p>Video360VR</p> <p>(Designed for end users who use virtual reality glasses. 기본 비디오 재생 컨트롤 및 소셜 미디어 기능 포함)</p> </td>
+   <td><p>Video360VR</p> <p>(가상 현실 안경을 사용하는 최종 사용자를 위해 설계되었습니다. 기본 비디오 재생 컨트롤 및 소셜 미디어 기능 포함)</p> </td>
    <td>Video_360</td>
    <td><code>html5_video360viewer.css</code></td>
   </tr>
@@ -349,7 +349,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
   <tr>
    <td><p><strong>탭하기</strong></p> </td>
    <td><p>플라이아웃 창 표시</p> </td>
-   <td><p>Shows or hides the user interface</p> </td>
+   <td><p>사용자 인터페이스를 표시하거나 숨깁니다.</p> </td>
    <td><p>사용자 인터페이스를 표시하거나 숨깁니다.</p> </td>
   </tr>
   <tr>
@@ -359,7 +359,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
    <td><p>확대 또는 재설정</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Pinch open</strong></p> </td>
+   <td><p><strong>핀치 열기</strong></p> </td>
    <td><p>적용되지 않음</p> </td>
    <td><p>확대(iOS 및 Android 3x만 해당)</p> </td>
    <td><p>확대(iOS 및 Android 3x만 해당)</p> </td>
@@ -385,9 +385,9 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
  </tbody>
 </table>
 
-## Increasing the number of Viewer Presets that display {#increasing-the-number-of-viewer-presets-that-display}
+## 표시되는 뷰어 사전 설정 수 증가 {#increasing-the-number-of-viewer-presets-that-display}
 
-AEM shows a wide variety viewer presets when viewing an assets from **[!UICONTROL Detail View > Viewers.]** 표시되는 뷰어 수를 늘리거나 줄일 수 있습니다.
+AEM은 세부 사항 보기 > 뷰어에서 자산을 볼 때 다양한 뷰어 사전 **[!UICONTROL 설정을 보여줍니다.]** 표시되는 뷰어 수를 늘리거나 줄일 수 있습니다.
 
 **표시되는 뷰어 사전 설정 수를 늘리려면**
 
@@ -401,12 +401,12 @@ AEM shows a wide variety viewer presets when viewing an assets from **[!UICONTRO
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tap **[!UICONTROL Save All.]**
+1. limit 속성에서 숫자를 원하는 숫자로 변경합니다(예: `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. 모두 **[!UICONTROL 저장을 누릅니다.]**
 
-## Creating a Viewer Preset {#creating-a-new-viewer-preset}
+## 뷰어 사전 설정 만들기 {#creating-a-new-viewer-preset}
 
-뷰어 사전 설정을 만들면 다양한 설정을 적용하여 자산을 보고 상호 작용할 수 있습니다. 그러나 새 뷰어 사전 설정을 만들 필요는 없습니다. 원하는 경우 AEM Assets과 함께 제공되는 기본 기본 기본 기본 기본 기본 기본 뷰어 사전 설정을 사용할 수 있습니다.
+뷰어 사전 설정을 만들면 다양한 설정을 적용하여 자산을 보고 상호 작용할 수 있습니다. 그러나 새 뷰어 사전 설정을 만들 필요는 없습니다. 원하는 경우 이미 AEM Assets과 함께 제공되는 기본 기본 기본 기본 기본 기본 뷰어 사전 설정을 사용할 수 있습니다.
 
 새 뷰어 사전 설정을 만들도록 선택하는 경우, 저장한 후 뷰어 사전 설정 페이지에서 뷰어 상태가 자동으로 활성화(설정 ****)됩니다. 이 상태는 Dynamic Media 구성 요소 및 대화형 미디어 구성 요소에서 그리고 이미지나 비디오를 미리 볼 때마다 표시됨을 의미합니다.
 
@@ -422,10 +422,10 @@ AEM shows a wide variety viewer presets when viewing an assets from **[!UICONTRO
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
-1. On the Viewer Presets page, on the toolbar, tap **[!UICONTROL Create.]**
-1. In the **[!UICONTROL New Viewer Preset** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. 이름을 신중하게 선택합니다. 만들기를 탭한 후에는 편집할 수 **[!UICONTROL 없습니다.]**
+1. 뷰어 사전 설정 페이지의 도구 모음에서 만들기를 **[!UICONTROL 누릅니다.]**
+1. [ **[!UICONTROL 새 뷰어 사전 설정]** ] 대화 상자의 [ **[!UICONTROL 사전 설정 이름]** ] 필드에 새 사전 설정의 이름을 입력합니다. 이름을 신중하게 선택합니다. 만들기를 탭한 후에는 편집할 수 **[!UICONTROL 없습니다.]**
 
-   When you save the preset later in these steps, the name appears on the Viewer Presets page under the Preset Title column header.
+   이러한 단계에서 나중에 사전 설정을 저장할 때 이름이 [사전 설정 제목] 열 헤더 아래의 [뷰어 사전 설정] 페이지에 나타납니다.
 
 1. 리치 미디어 유형 드롭다운 메뉴에서 만들 뷰어 사전 설정 유형을 선택한 다음 페이지의 오른쪽 위 모서리에서 만들기를 **[!UICONTROL 누릅니다.]**
 
@@ -434,17 +434,17 @@ AEM shows a wide variety viewer presets when viewing an assets from **[!UICONTRO
 1. 뷰어 사전 설정 편집기 페이지에서 모양 **[!UICONTROL 탭을]** 누릅니다.
 1. 다음 중 하나를 수행하십시오.
 
-   * In the **[!UICONTROL Selected Type]** pull-down menu, select a component whose visual design you want to customize. 또는 뷰어에서 시각적 요소를 탭하거나 클릭하여 구성할 수 있습니다.
+   * 선택한 **[!UICONTROL 유형]** 풀다운 메뉴에서 사용자 정의할 시각적 디자인을 포함하는 구성 요소를 선택합니다. 또는 뷰어에서 시각적 요소를 탭하거나 클릭하여 구성할 수 있습니다.
 
       시각적 편집기를 사용하면 특정 속성이 스타일에 미치는 영향을 확인할 수 있습니다. 편집기의 왼쪽에 있는 샘플을 사용하여 뷰어에 미치는 영향을 즉시 확인할 수 있도록 속성을 설정하거나 조정하기만 하면 됩니다.
 
-      각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 뷰어 참조 안내서의 &quot; *`<viewer name>`* 뷰어 사용자 지정&quot; 도움말 항목에 [설명되어 있습니다](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html). For example, if you are creating a viewer preset of the type `Mixed_Media`, see [Customizing Mixed Media Viewer](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) for a list and description of each property.
+      각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 뷰어 참조 안내서의 &quot; *`<viewer name>`* 뷰어 사용자 지정&quot; 도움말 항목에 [설명되어 있습니다](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html). 예를 들어, 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록 및 설명 `Mixed_Media`에 [대해서는 혼합 미디어 뷰어](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) 사용자 지정을 참조하십시오.
 
    * 별도의 CSS 파일에서 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 선택한 **[!UICONTROL 유형]** 풀다운 메뉴 아래에 있는 CSS **[!UICONTROL 가져오기를 탭하여 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결하려면]** 시각적 편집기를 위로 스크롤해야 할 수도 있습니다.
 
       CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 상위 뷰어 요소에 정의된 뷰어 클래스 이름을 사용하여 정의해야 `.s7mixedmediaviewer` 합니다.
 
-      You can import arbitrary, handmade CSS as long as it properly defines the CSS markers for a given viewer. (CSS markers are described in any &quot;Customzing *&lt;viewer name>* Viewer&quot; Help topic in the [Viewers Reference Guide](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html). 예를 들어 확대/축소 뷰어용 CSS 마커에 대해 읽으려면 확대/축소 뷰어 사용자 [지정을 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html). 하지만 시각적 편집기가 일부 CSS 값을 이해하지 못할 수도 있습니다. 이러한 경우 시각적 편집기는 오류를 무시하여 CSS가 계속 작동할 수 있도록 합니다.
+      주어진 뷰어에 대한 CSS 마커를 올바르게 정의하는 한 임의의 수제 CSS를 가져올 수 있습니다. (CSS 마커는 뷰어 참조 안내서의 &quot; *&lt;뷰어 이름>* 뷰어&quot; 도움말 항목에 [설명되어 있습니다](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html). 예를 들어 확대/축소 뷰어용 CSS 마커에 대해 읽으려면 확대/축소 뷰어 사용자 [지정을 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html). 하지만 시각적 편집기가 일부 CSS 값을 이해하지 못할 수도 있습니다. 이러한 경우 시각적 편집기는 오류를 무시하여 CSS가 계속 작동할 수 있도록 합니다.
    >[!NOTE]
    >
    >CSS를 Raw 형식으로 직접 편집하려면 선택한 유형 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS]** 표시/숨기기를 누릅니다(보려면 시각적 편집기를 위로 스크롤해야 할 수 있음).
