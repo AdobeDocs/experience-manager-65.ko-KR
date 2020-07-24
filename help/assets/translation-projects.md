@@ -3,10 +3,10 @@ title: 번역 프로젝트 만들기
 description: 에서 번역 프로젝트를 만드는 방법을 [!DNL Adobe Experience Manager]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 34b98636966264b15b16fffc9e712b925303a701
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 6%
+source-wordcount: '1904'
+ht-degree: 5%
 
 ---
 
@@ -46,11 +46,9 @@ ht-degree: 6%
 
 1. 맨 아래에 있는 **[!UICONTROL 만들기]** 및 번역을 클릭합니다.
 
-   ![chlimage_1-58](assets/chlimage_1-58.png)
-
 1. [ **[!UICONTROL Target 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
-   ![chlimage_1-59](assets/chlimage_1-59.png)
+   ![대상 언어 선택](assets/target-language.png)
 
 1. 프로젝트 **[!UICONTROL 목록]** 에서 구조만 **[!UICONTROL 만들기를 선택합니다]**.
 
@@ -58,11 +56,11 @@ ht-degree: 6%
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 대상 언어의 새 구조는 언어 사본 아래에 **[!UICONTROL 나열되어 있습니다]**.
 
-   ![chlimage_1-61](assets/chlimage_1-61.png)
+   ![언어 복사](assets/lang-copy2.png)
 
 1. 목록에서 구조를 클릭한 다음 자산에 **[!UICONTROL 표시]** 를 클릭하여 대상 언어 내의 폴더 구조로 이동합니다.
 
-   ![chlimage_1-62](assets/chlimage_1-62.png)
+   ![자산 표시](assets/reveal-in-assets.png)
 
 ### 새 번역 프로젝트 만들기 {#create-a-new-translation-project}
 
@@ -74,8 +72,6 @@ ht-degree: 6%
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 1. 맨 아래에 있는 **[!UICONTROL 만들기]** 및 번역을 클릭합니다.
-
-   ![chlimage_1-64](assets/chlimage_1-64.png)
 
 1. [ **[!UICONTROL Target 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
@@ -91,11 +87,11 @@ ht-degree: 6%
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 소스 폴더의 에셋이 4단계에서 선택한 로케일의 대상 폴더로 복사됩니다.
 
-   ![chlimage_1-68](assets/chlimage_1-68.png)
+   ![언어 복사](assets/lang-copy2.png)
 
 1. 폴더로 이동하려면 언어 사본을 선택하고 자산에 **[!UICONTROL 표시를 클릭합니다]**.
 
-   ![chlimage_1-69](assets/chlimage_1-69.png)
+   ![자산 표시](assets/reveal-in-assets.png)
 
 1. 프로젝트 콘솔로 이동합니다. 번역 폴더가 프로젝트 콘솔로 복사됩니다.
 
@@ -135,11 +131,9 @@ ht-degree: 6%
 1. 사본 **[!UICONTROL 에서]** 언어 사본 **[!UICONTROL 을 클릭합니다]**. 사용 가능한 번역 사본 목록이 표시됩니다.
 1. 맨 아래에 있는 **[!UICONTROL 만들기]** 및 번역을 클릭합니다.
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
-
 1. [ **[!UICONTROL Target 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![대상 언어 선택](assets/target-language.png)
 
 1. 프로젝트 **[!UICONTROL 목록]** 에서 **[!UICONTROL 기존 번역 프로젝트에]** 추가를 선택하여 폴더에서 번역 워크플로우를 실행합니다.
 
@@ -207,11 +201,9 @@ ht-degree: 6%
 1. [ **[!UICONTROL 참조]** ] 창 **[!UICONTROL 을]** 열고 [복사본] 아래에 있는 **** 언어 사본을 클릭하여 언어 사본목록을 표시합니다.
 1. 언어 사본 앞의 **[!UICONTROL 확인란을]**&#x200B;선택한 다음 해당 로케일에 해당하는 대상 폴더를 선택합니다.
 
-   ![chlimage_1-84](assets/chlimage_1-84.png)
+   ![언어 사본 선택](assets/lang-copy1.png)
 
 1. 아래쪽에 있는 **[!UICONTROL 언어 사본]** 업데이트를 클릭합니다.
-
-   ![chlimage_1-85](assets/chlimage_1-85.png)
 
 1. 프로젝트 **[!UICONTROL 목록]** 에서 **[!UICONTROL 새 번역 프로젝트]**&#x200B;만들기를 선택합니다.
 
@@ -261,11 +253,9 @@ ht-degree: 6%
 
 1. 모든 언어 사본을 선택하는 언어 사본 **[!UICONTROL 앞에]**&#x200B;있는 확인란을 선택합니다. 번역할 로케일에 해당하는 언어 사본(사본)을 제외한 다른 사본의 선택을 취소합니다.
 
-   ![chlimage_1-95](assets/chlimage_1-95.png)
+   ![언어 사본 선택](assets/lang-copy1.png)
 
 1. 아래쪽에 있는 **[!UICONTROL 언어 사본]** 업데이트를 클릭합니다.
-
-   ![chlimage_1-96](assets/chlimage_1-96.png)
 
 1. 프로젝트 **[!UICONTROL 목록]** 에서 기존 번역 프로젝트에 **[!UICONTROL 추가를 선택합니다]**.
 
@@ -273,7 +263,7 @@ ht-degree: 6%
 
 1. 기존 **[!UICONTROL 번역 프로젝트]** 목록에서 프로젝트를 선택하여 번역 자산을 추가합니다.
 
-   ![chlimage_1-98](assets/chlimage_1-98.png)
+   ![프로젝트 선택](assets/select-a-project.png)
 
 1. 시작을 **[!UICONTROL 클릭합니다]**.
 1. 나머지 절차를 완료하려면 기존 번역 프로젝트에 [추가](translation-projects.md#add-to-existing-translation-project) 9-14단계를 참조하십시오.
@@ -294,17 +284,13 @@ ht-degree: 6%
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. 제목 옆에 있는 확인란을 **[!UICONTROL 선택합니다]**.
-1. 도구 모음에서 **[!UICONTROL 번역]** 수락 **[!UICONTROL 을 클릭한 다음]** 대화 상자에서수락을 클릭하여 대상 폴더의 번역된 자산을 편집된 자산의 번역된 버전으로 덮어씁니다.
-
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+1. 도구 모음에서 **[!UICONTROL 번역]** ![수락](assets/do-not-localize/thumb-up.png) 번역 **[!UICONTROL 을]** 클릭한 다음 대화 상자에서동의를 클릭하여 대상 폴더의 번역된 자산을 편집된 자산의 번역된 버전으로 덮어씁니다.
 
    >[!NOTE]
    >
    >번역 워크플로우가 대상 자산을 업데이트하도록 하려면 자산과 메타데이터를 모두 수락합니다.
 
-   번역 **[!UICONTROL 거부]** (Reject Translation)를 클릭하여 원래 번역된 에셋 버전을 대상 로케일 루트에 유지하고 편집한 버전을 거부합니다.
-
-   ![chlimage_1-103](assets/chlimage_1-103.png)
+   번역 **[!UICONTROL 거부]** 를 클릭하여 원래 번역된 에셋 버전을 대상 로케일 루트에서 유지하고 편집한 버전을 거부합니다 ![](assets/do-not-localize/thumb-down.png) .
 
 1. 번역된 메타데이터를 보려면 [!DNL Assets] 콘솔로 이동하고 번역된 각 자산에 대한 [!UICONTROL 속성] 페이지를 엽니다.
 
