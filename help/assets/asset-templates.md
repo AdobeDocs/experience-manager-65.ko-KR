@@ -3,9 +3,9 @@ title: 자산 템플릿 [!DNL Adobe Experience Manager Assets].
 description: 자산 템플릿 [!DNL Adobe Experience Manager Assets] 과 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1556'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 1%
 
 1. 미리 **[!UICONTROL 보기를]** 클릭하여 텍스트 변경 내용을 미리 봅니다.
 
-   ![chlimage_1-112](assets/chlimage_1-317.png)
+   ![변경 내용 보기](assets/view-changes.png)
 
 1. 이미지를 교체하려면 **[!UICONTROL 자산 파인더를 클릭합니다]**.
 
@@ -122,11 +122,11 @@ ht-degree: 1%
 
 1. 미리 **[!UICONTROL 보기를]** 클릭하여 이미지를 미리 봅니다.
 
-   ![chlimage_1-116](assets/chlimage_1-321.png)
+   ![변경 내용 보기](assets/view-changes.png)
 
 1. 다중 페이지 담보에서 특정 페이지를 편집하려면 하단에 있는 페이지 탐색기를 사용합니다.
 
-   ![chlimage_1-117](assets/chlimage_1-322.png)
+   ![페이지 탐색기](assets/page-navigator.png)
 
 1. 도구 모음 **[!UICONTROL 에서 미리]** 보기를 클릭하여 모든 변경 사항을 미리 봅니다. 완료를 **[!UICONTROL 클릭하여]** 마케팅 자료에 대한 편집 변경 내용을 저장합니다.
 
@@ -172,8 +172,6 @@ ht-degree: 1%
    ![chlimage_1-122](assets/chlimage_1-327.png)
 
    Omnisearch 상자에서 템플릿을 검색할 수도 있습니다.
-
-   ![chlimage_1-123](assets/chlimage_1-328.png)
 
    저장소 또는 컬렉션을 [!DNL Experience Manager Assets] 탐색하고 원하는 템플릿의 위치로 이동한 다음 병합할 위치를 선택할 수 있습니다.
 
