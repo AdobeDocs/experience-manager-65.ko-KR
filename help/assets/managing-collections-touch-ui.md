@@ -4,9 +4,9 @@ description: 컬렉션 만들기, 보기, 삭제, 편집, 다운로드 등 자�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2203'
 ht-degree: 0%
 
 ---
@@ -102,19 +102,14 @@ ht-degree: 0%
 
    ![collection_listing](assets/collection_listing.png)
 
-   스마트 선택 **[!UICONTROL 만들기 단추]** 레이블이 스마트 선택 **[!UICONTROL 편집으로 변경됩니다]**. 스마트 컬렉션의 설정을 편집하려면 파일 및 폴더 **[!UICONTROL 목록에서]** **[!UICONTROL 파일을]** 선택합니다. 그런 다음 스마트 선택 **[!UICONTROL 편집]** 단추를 클릭합니다.
-
-   ![chlimage_1-7](assets/chlimage_1-112.png)
+   스마트 선택 **[!UICONTROL 만들기]** 옵션 레이블이 스마트 선택 **[!UICONTROL 편집으로 변경됩니다]**. 스마트 컬렉션의 설정을 편집하려면 파일 및 폴더 **[!UICONTROL 목록에서]** **[!UICONTROL 파일을]** 선택합니다. 스마트 **[!UICONTROL 선택 편집]** 스마트 컬렉션 ![편집](assets/do-not-localize/edit-smart-collection.png) 옵션을 클릭합니다.
 
 ## Add assets to a collection {#adding-assets-to-a-collection}
 
 참조된 자산 또는 폴더 목록이 포함된 자산을 컬렉션에 추가할 수 있습니다. 스마트 컬렉션은 검색 쿼리를 사용하여 자산을 채웁니다. 따라서 자산 및 폴더에 대한 정적 참조는 적용할 수 없습니다.
 
-1. 자산 사용자 인터페이스에서 자산을 선택하고 도구 모음 **[!UICONTROL 에서 컬렉션으로]** 를 클릭합니다.
-
-   ![chlimage_1-8](assets/chlimage_1-113.png)
-
-   또는 자산을 인터페이스의 **[!UICONTROL 컬렉션에]** 놓기 영역으로 끌 수 있습니다. 영역 레이블이 추가할 드롭으로 변경되면 자산을 **[!UICONTROL 추가합니다]**.
+1. 자산 사용자 인터페이스에서 자산을 선택하고 도구 모음 **[!UICONTROL 에서 컬렉션에]** ![추가](assets/do-not-localize/add-to-collection.png) 를 클릭합니다.
+또는 자산을 인터페이스의 **[!UICONTROL 컬렉션에]** 놓기 영역으로 끌 수 있습니다. 영역 레이블이 추가할 드롭으로 변경되면 자산을 **[!UICONTROL 추가합니다]**.
 
 1. 컬렉션에 **[!UICONTROL 추가]** 페이지에서 자산을 추가할 컬렉션을 선택합니다.
 
