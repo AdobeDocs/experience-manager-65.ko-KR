@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
-translation-type: ht
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
-workflow-type: ht
-source-wordcount: '1971'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+workflow-type: tm+mt
+source-wordcount: '1973'
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ AEM 컨텐츠 조각을 사용하여 구조화된 컨텐츠를 설명하고 관�
 >
 경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 >
->자세한 내용은 [AEM의 컨텐츠 조각 및 경험 조각 이해](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)를 참조하십시오.
+>자세한 내용은 [AEM의 컨텐츠 조각 및 경험 조각 이해](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)를 참조하십시오.
 
 >[!CAUTION]
 >
