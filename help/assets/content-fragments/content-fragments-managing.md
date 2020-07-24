@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 관리
 seo-title: 컨텐츠 조각 관리
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
-seo-description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
+seo-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
 uuid: 675e1a6b-2583-488f-bbb4-210daed3e1b0
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,11 +10,11 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
-translation-type: ht
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
-workflow-type: ht
-source-wordcount: '1483'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+workflow-type: tm+mt
+source-wordcount: '1486'
+ht-degree: 99%
 
 ---
 
@@ -120,7 +120,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->이러한 작업 중 대부분은 [자산](/help/assets/managing-assets-touch-ui.md) 및/또는 [AEM 데스크톱 앱에 대한 표준 작업](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html)입니다.
+>이러한 작업 중 대부분은 [자산](/help/assets/managing-assets-touch-ui.md) 및/또는 [AEM 데스크톱 앱에 대한 표준 작업](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)입니다.
 
 ## 조각 편집기 열기 {#opening-the-fragment-editor}
 
@@ -143,9 +143,11 @@ ht-degree: 100%
    >[!NOTE]
    >
    >1. 이미 컨텐츠 페이지에서 조각을 참조 중이면 메시지가 표시됩니다.
-   >
-   >
-   >2. 사이드 패널은 **사이드 패널 전환** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
+      >
+      >
+      >
+
+   2. 사이드 패널은 **사이드 패널 전환** 아이콘을 사용하여 숨기거나 표시할 수 있습니다.
 
 
 1. 사이드 패널의 아이콘을 사용하여 세 가지 모드를 탐색합니다.
@@ -178,7 +180,7 @@ ht-degree: 100%
 
    >[!CAUTION]
    >
-   >컨텐츠 조각을 편집하려면 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 있어야 합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
+   >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
 
    >[!NOTE]
    >
