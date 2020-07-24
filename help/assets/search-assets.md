@@ -4,9 +4,9 @@ description: 필터 패널을 [!DNL Adobe Experience Manager] 사용하여 필�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8ca4e3057ec13762404a8b7fb6f6bdf5dd562281
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '5826'
+source-wordcount: '5830'
 ht-degree: 1%
 
 ---
@@ -116,9 +116,9 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 1. 사용자 [!DNL Assets] 인터페이스에서 자산의 속성 페이지를 엽니다. 고급 **[!UICONTROL 을]** 클릭하고 **[!UICONTROL 검색 키워드]** 에 대한 **[!UICONTROL 격상]**&#x200B;아래에서추가를 클릭합니다.
 1. 홍보 **[!UICONTROL 검색]** 상자에서 이미지 검색을 강화할 키워드를 지정한 다음 **[!UICONTROL 추가를 클릭합니다]**. 동일한 방법으로 여러 키워드를 지정할 수 있습니다.
-1. Click **[!UICONTROL Save &amp; Close]**. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 사이에 나타납니다.
+1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다. 이 키워드에 대해 홍보한 자산이 상위 검색 결과 사이에 나타납니다.
 
-타깃팅된 키워드에 대한 검색 결과의 일부 자산의 등급을 강화하여 이 분류를 장점에 사용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 내용은 Experience Manager에서 [검색을 참조하십시오](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
+타깃팅된 키워드에 대한 검색 결과의 일부 자산의 등급을 강화하여 이 분류를 장점에 사용할 수 있습니다. 아래 예제 비디오를 참조하십시오. 자세한 내용은 Experience Manager에서 [검색을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -126,7 +126,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 ## Advanced search {#scope}
 
-[!DNL Experience Manager] 는 원하는 에셋을 보다 빠르게 찾을 수 있도록 검색된 에셋에 적용되는 필터와 같은 다양한 방법을 제공합니다. 다음은 흔히 사용되는 몇 가지 방법을 설명한 것입니다. 일부 [예제는](#samples) 아래에 공유되어 있습니다.
+[!DNL Experience Manager] 는 원하는 에셋을 보다 신속하게 찾을 수 있도록 검색된 에셋에 적용되는 필터와 같은 다양한 방법을 제공합니다. 다음은 흔히 사용되는 몇 가지 방법을 설명한 것입니다. 일부 [예제는](#samples) 아래에 공유되어 있습니다.
 
 **파일 또는 폴더**&#x200B;검색: 검색 결과에서 파일, 폴더 또는 둘 다를 참조하십시오. 필터 **[!UICONTROL 패널에서]** 적절한 옵션을 선택할 수 있습니다. 검색 [인터페이스를 참조하십시오](#searchui).
 
@@ -351,7 +351,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 1. CRXDE의 `/oak-index/damAssetLucene` 노드에서 속성을 `reindex` 로 설정합니다 `true`. 변경 사항을 저장합니다.
 1. (선택 사항) 검색 양식을 사용자 정의한 경우 노드를 `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` 다음으로 복사합니다 `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. 변경 사항을 저장합니다.
 
-관련 정보는 Experience Manager의 스마트 태그 [이해](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) 및 스마트 태그 [관리 방법을 참조하십시오](/help/assets/managing-smart-tags.md).
+관련 정보는 Experience Manager의 스마트 태그 [이해](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) 및 스마트 태그 [관리 방법을 참조하십시오](/help/assets/managing-smart-tags.md).
 
 ### 필수 메타데이터 {#mandatorymetadata}
 
