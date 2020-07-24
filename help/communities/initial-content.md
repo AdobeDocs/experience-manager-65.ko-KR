@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -38,13 +38,13 @@ ht-degree: 6%
 
    클래식 UI로 전환하려면 전역 탐색을 선택하고 프로젝트 아이콘 오른쪽에 마우스를 놓습니다. 나타나는 클래식 UI *로* 전환 아이콘을 선택합니다.
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![클래식 UI](assets/classic-ui.png)
 
    클래식 UI로 전환하는 기능은 관리자가 [활성화해야 합니다](../../help/sites-administering/enable-classic-ui.md).
 
 1. 클래식 UI [시작 페이지에서](http://localhost:4502/welcome.html)웹 **[!UICONTROL 사이트를 선택합니다]**.
 
-   ![chlimage_1-37](assets/chlimage_1-37.png)
+   ![classic-ui-website](assets/classic-ui-website.png)
 
    또는, /siteadmin으로 이동하여 웹 사이트에 대한 클래식 UI에 직접 [액세스합니다.](http://localhost:4502/siteadmin)
 
@@ -57,7 +57,7 @@ ht-degree: 6%
    * SCF **[!UICONTROL 샌드박스 재생 템플릿 선택]**
    * **[!UICONTROL 만들기]**&#x200B;를 클릭합니다
 
-   ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 1. 탐색기 창에서 방금 만든 페이지를 선택하고 새로 `/Websites/SCF Sandbox Site`만들기 **[!UICONTROL > 새 페이지]** 를 클릭합니다 ****.
 
@@ -75,11 +75,11 @@ ht-degree: 6%
 
 1. 이제 웹 사이트가 웹 사이트 콘솔에 표시되는 방식입니다. 탐색기 창에서 선택한 항목의 하위 페이지가 관리될 수 있는 오른쪽 창에 표시됩니다.
 
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+   ![classic-ui-website-page](assets/classic-ui-website-page.png)
 
    웹 사이트 도구 및 템플릿을 사용하여 만든 항목의 저장소 보기입니다.
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![classic-ui-repository-view](assets/classic-ui-repository-view.png)
 
 ## 디자인 패스 추가 {#add-the-design-path}
 
@@ -100,7 +100,7 @@ ht-degree: 6%
 
 응답은 다음과 같이 표시됩니다.
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * 모두 **[!UICONTROL 저장을 클릭합니다.]**
 
