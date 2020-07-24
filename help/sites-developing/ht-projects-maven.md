@@ -1,6 +1,6 @@
 ---
-title: Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법
-seo-title: Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법
+title: Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법
+seo-title: Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법
 description: 이 문서에서는 Apache Maven을 기반으로 AEM 프로젝트를 설정하는 방법에 대해 설명합니다
 seo-description: 이 문서에서는 Apache Maven을 기반으로 AEM 프로젝트를 설정하는 방법에 대해 설명합니다
 uuid: 5db68639-7393-48b7-9d81-5b19b596ff21
@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1669412afb670a9f55f02476e828de55b4f7a55a
+source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
 workflow-type: tm+mt
 source-wordcount: '2424'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Apache Maven을 사용하여 AEM 프로젝트를 빌드하는 방법{#how-to-build-aem-projects-using-apache-maven}
+# Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법{#how-to-build-aem-projects-using-apache-maven}
 
 ## 개요 {#overview}
 
@@ -46,11 +46,11 @@ Adobe는 AEM 프로젝트의 기준 역할을 할 수 있는 두 개의 Maven �
 
 ### 우버항아리는 무엇입니까? {#what-is-the-uberjar}
 
-&quot;UberJar&quot;는 Adobe에서 제공하는 특수 JAR(Java Archives) 파일에 지정된 비공식 이름입니다. 이러한 JAR 파일에는 Adobe Experience Manager에서 노출한 모든 공개 Java API가 포함되어 있습니다. 제한된 외부 라이브러리뿐만 아니라, Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava에서 제공하는 AEM에서 사용할 수 있는 모든 공용 API와 이미지 처리에 사용되는 2개의 라이브러리(Werner Randelshofer의 CYMK JPEG ImageIO 라이브러리 및 TwenteMonkeys 이미지 라이브러리)가 포함되어 있습니다. UberJar에는 API 인터페이스와 클래스만 포함되어 있으므로 AEM에서 OSGi 번들로 내보내지는 인터페이스와 클래스만 포함합니다. 또한 내보낸 모든 패키지에 대해 올바른 패키지 *내보내기 버전이 들어 있는 MANIFEST.MF* 파일도 포함되어 있으므로 UberJar에 대해 빌드된 프로젝트에 올바른 패키지 가져오기 범위가 있는지 확인합니다.
+&quot;UberJar&quot;는 Adobe에서 제공하는 특수 JAR(Java Archives) 파일에 지정된 비공식 이름입니다. 이러한 JAR 파일에는 Adobe Experience Manager에 의해 노출된 모든 공용 Java API가 포함되어 있습니다. 제한된 외부 라이브러리뿐만 아니라, Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava에서 제공하는 AEM에서 사용할 수 있는 모든 공용 API와 이미지 처리에 사용되는 2개의 라이브러리(Werner Randelshofer의 CYMK JPEG ImageIO 라이브러리 및 TwenteMonkeys 이미지 라이브러리)가 포함되어 있습니다. UberJar에는 API 인터페이스와 클래스만 포함되어 있으므로 AEM에서 OSGi 번들로 내보내지는 인터페이스와 클래스만 포함합니다. 또한 내보낸 모든 패키지에 대해 올바른 패키지 *내보내기 버전이 들어 있는 MANIFEST.MF* 파일도 포함되어 있으므로 UberJar에 대해 빌드된 프로젝트에 올바른 패키지 가져오기 범위가 있는지 확인합니다.
 
 ### Adobe가 UberJar를 개발한 이유는 무엇입니까? {#why-did-adobe-create-the-uberjars}
 
-이전에는 개발자는 서로 다른 AEM 라이브러리에 대한 상대적으로 많은 수의 개별 종속성을 관리해야 했으며, 각 새로운 API를 사용하는 경우 하나 이상의 개별 종속성을 프로젝트에 추가해야 했습니다. 한 프로젝트에서 UberJar 도입으로 인해 프로젝트에서 30개의 개별 종속성이 제거됩니다.
+이전에는 개발자는 서로 다른 AEM 라이브러리에 대한 상대적으로 많은 수의 개별 종속성을 관리해야 했고, 각 새로운 API를 사용할 때 하나 이상의 개별 종속성을 프로젝트에 추가해야 했습니다. 한 프로젝트에서 UberJar 도입으로 인해 프로젝트에서 30개의 개별 종속성이 제거됩니다.
 
 AEM 6.5부터 Adobe는 두 개의 UberJar를 제공합니다. 더 이상 사용되지 않는 인터페이스와 더 이상 사용되지 않는 인터페이스를 제거하는 인터페이스를 포함하는 것입니다. 빌드 시 명시적으로 한 코드를 참조함으로써 가치 하락이 있는 코드에 대한 의존성이 있는지 여부를 고객이 이해해야 합니다.
 
@@ -126,7 +126,7 @@ UberJar를 사용하면 AEM API(및 위에 언급한 프로젝트에서 사용�
 
 ### 우버항아리는 어떻게 하면 되죠? {#what-can-t-i-do-with-the-uberjar}
 
-UberJar에는 **API만** 포함되어 있으므로 실행 파일이 아니며 Adobe Experience Manager를 **실행하는** 데 사용할 수 없습니다. AEM을 실행하려면 AEM Quickstart(독립 실행형 또는 웹 애플리케이션 아카이브) 양식이 필요합니다.
+UberJar에는 **API만** 포함되어 있으므로 실행 파일이 아니며 Adobe Experience Manager을 **실행하는 데 사용할** 수 없습니다. AEM을 실행하려면 AEM Quickstart(독립 실행형 또는 웹 애플리케이션 아카이브) 양식이 필요합니다.
 
 ### 단위 테스트에 제한 사항을 언급했습니다. 더 설명해주세요 {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -386,10 +386,6 @@ SCR 생성과 마찬가지로, 코드가 AEM API에서 기본 클래스(추상 �
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/myproject"/>
-    <filter root="/etc/msm/rolloutconfigs/myrolloutconfig"/>
-    <filter root="/etc/blueprints/mysite/globalsite"/>
-    <filter root="/etc/workflow/models/myproject"/>
-    <filter root="/etc/designs/myproject"/>
     <filter root="/content/myproject/sample-content"/>
 </workspaceFilter>
 ```
