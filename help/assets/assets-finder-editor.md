@@ -3,9 +3,9 @@ title: 자산 편집기 페이지 만들기 및 구성
 description: 사용자 지정 자산 편집기 페이지를 만들고 여러 자산을 동시에 편집하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2130'
 ht-degree: 6%
 
 ---
@@ -280,7 +280,7 @@ Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는
 
 메타데이터 [양식에서 사용 가능한 네임스페이스를 수정하는 방법은 자산](/help/assets/extending-assets.md) 사용자 지정 및 확장을 참조하십시오.
 
-1. Click the **Constraints** tab. 여기에서 필수 필드인지 여부를 선택하고 필요한 경우 제한 사항을 추가할 수 있습니다.
+1. Click the **Constraints** tab. 여기에서 필수 필드인지 여부를 선택하고 필요한 경우 제한 조건을 추가할 수 있습니다.
 
 ![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
@@ -297,8 +297,6 @@ Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는
 #### 하위 자산 {#sub-assets}
 
 하위 자산 구성 요소는 하위 자산을 보고 선택할 수 있는 곳입니다. 기본 자산 [](/help/assets/assets.md#what-are-digital-assets) 및 하위 자산 아래에 표시되는 이름을 결정할 수 있습니다.
-
-![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
 
 하위 자산 구성 요소를 두 번 클릭하여 기본 자산 및 하위 자산의 제목을 변경할 수 있는 하위 자산 대화 상자를 엽니다. 기본값은 해당 필드 아래에 나타납니다.
 
@@ -347,8 +345,6 @@ Thumbnail 구성 요소는 자산에 선택한 축소판이 표시되는 곳입�
 #### 제목 {#title}
 
 제목 구성 요소는 자산의 제목과 설명을 표시합니다.
-
-![chlimage_1-163](assets/chlimage_1-391.png)
 
 기본적으로 읽기 전용 모드이므로 사용자가 편집할 수 없습니다. 편집 가능하려면 구성 요소를 두 번 클릭하고 편집 **단추** 숨기기 확인란의 선택을 취소합니다. 또한 여러 자산의 제목을 입력합니다.
 
