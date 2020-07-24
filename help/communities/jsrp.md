@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 1%
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
 
@@ -44,20 +44,18 @@ SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-
 
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다
 
-![chlimage_1-234](assets/chlimage_1-234.png)
+![jsrp 구성](assets/jsrp-configuration.png)
 
 ### 구성 게시 {#publishing-the-configuration}
 
 JSRP는 기본 구성이지만 게시 환경에서 동일한 구성이 설정되어 있는지 확인합니다.
 
-* 작성자:
+* 전역 탐색에서: **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]**
+* 트리 **[!UICONTROL 활성화]** > **[!UICONTROL 시작 경로를 선택합니다]**.
 
-   * 전역 탐색에서: **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]**
-   * 트리 **[!UICONTROL 활성화]** > **[!UICONTROL 시작 경로를 선택합니다]**.
+   * 검색 대상 `/conf/global/settings/community/srpc/`
 
-      * 검색 대상 `/conf/global/settings/community/srpc/`
-   * 활성화 **[!UICONTROL 선택]**
-
+* 활성화 **[!UICONTROL 선택]**
 
 ## 사용자 데이터 관리 {#managing-user-data}
 
