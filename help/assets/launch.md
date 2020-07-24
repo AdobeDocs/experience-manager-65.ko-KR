@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '6662'
+source-wordcount: '6623'
 ht-degree: 1%
 
 ---
@@ -141,7 +141,9 @@ AEM Sites에서 Dynamic Media 뷰어를 추적하려면 모든 통합 부분 구
 
 적절한 구성에 따라, Dynamic Media에서 지원하는 WCM 구성 요소를 사용하여 사이트 페이지에 추가하는 모든 Dynamic Media 뷰어는 Adobe Analytics 또는 비디오용 Adobe Analytics에 자동으로 데이터를 추적하거나 둘 다에 데이터를 추적합니다.
 
-Adobe [Sites를 사용하여 페이지에 Dynamic Media 자산 추가를 참조하십시오](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
+<!-- To be reviewed and updated:
+See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
+-->
 
 ### 포함 코드를 사용하여 Dynamic Media 뷰어 추적 {#tracking-dynamic-media-viewers-using-embed-code}
 
@@ -153,7 +155,9 @@ Adobe Analytics [구성 및 Adobe Launch](#configuringadobeanalytics) 구성 섹
 
 Adobe [Launch 라이브러리 포함 코드](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html) 사용 방법에 대한 자세한 내용은 론치 포함 코드 추가를 참조하십시오.
 
-AEM [Dynamic Media의 포함 코드 기능을 사용하는 방법에 대한 자세한 내용은 웹 페이지에](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) 비디오 또는 이미지 뷰어 포함을 참조하십시오.
+<!-- To be reviewed and updated:
+See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
+-->
 
 **포함 코드를 사용하여 Dynamic Media 뷰어를 추적하려면 다음을 수행하십시오**.
 
@@ -581,7 +585,7 @@ Adobe Launch에서 Dynamic Media 뷰어를 추적하는 데 필요한 데이터 
 
 Adobe [Launch를 사용한 추적에 대한 개요는 통합에](#how-data-and-event-tracking-works-in-the-integration) 포함된 데이터 및 이벤트 추적이 작동하는 방식을 참조하십시오.
 
-뷰어 [로드](#sample-configuration) 시 자산 이름을 추적하는 방법을 보여주는 Adobe Launch의 샘플 구성에 대한 샘플 구성을 참조하십시오.
+뷰어 [로드 시 자산 이름을 추적하는 방법을 보여주는 Adobe Launch의 샘플 구성에 대한 샘플 구성을](#sample-configuration) 참조하십시오.
 
 익스텐션 [기능에 대한 자세한 내용은 Dynamic Media 뷰어 확장](#configuring-the-dynamic-media-viewers-extension) 구성을 참조하십시오.
 
@@ -748,101 +752,102 @@ AEM 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    * **[!UICONTROL 제목]** - 설명 계정 제목을 입력합니다.
    * **[!UICONTROL 인증 서버]** - 이전에 연 통합 세부 정보 페이지로 돌아갑니다. Click the **[!UICONTROL JWT]** tab. 경로 없이 아래 강조 표시된 서버 이름을 복사합니다.
-계정 **[!UICONTROL 페이지로 돌아가서]** 해당 필드에 이름을 붙여 넣습니다.
-예를 들어, `https://ims-na1.adobelogin.com/`(예제 서버 이름은 그림 용으로만 사용됨)   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)]**`https://ims-na1.adobelogin.com/`
 
-   ![통합 세부 정보 페이지 - JWT 탭](assets/2019-07-25_15-01-53.png)
+(예제 서버 이름은 그림 용도로만 사용됩니다)   계정 **[!UICONTROL 페이지로 돌아가서]** 해당 필드에 이름을 붙여 넣습니다.
+예를 들어, `https://ims-na1.adobelogin.com/`(예제 서버 이름은 그림 용으로만 사용됨)
 
-   **[!UICONTROL API 키]** - 통합 세부 사항 페이지로 돌아갑니다. [ **[!UICONTROL 개요]** ] 탭을 클릭한 다음 **[!UICONTROL API 키(클라이언트 ID)]** 필드 오른쪽에 있는 **[!UICONTROL 복사를 클릭합니다]**.
+   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 
-1. 계정 **[!UICONTROL 페이지로 돌아가서]** 해당 ****필드에 키를 붙여넣습니다.]**********
+   통합 세부 정보 페이지 - JWT 탭
 
-   ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)]**
+1. **[!UICONTROL API 키]** - 통합 세부 사항 페이지로 돌아갑니다. [ **[!UICONTROL 개요]** ] 탭을 클릭한 다음 **[!UICONTROL API 키(클라이언트 ID)]** 필드 오른쪽에 있는 **[!UICONTROL 복사를 클릭합니다]**.
 
-   ![통합 세부 사항 페이지.](assets/2019-07-25_14-35-333.png)
+   계정 **[!UICONTROL 페이지로 돌아가서]** 해당 ****필드에 키를 붙여넣습니다.
 
-   **[!UICONTROL 클라이언트 암호]**- 통합 세부 사항 페이지로 돌아갑니다. [ **[!UICONTROL 개요]** ] 탭에서 **[!UICONTROL 클라이언트 암호 검색을 클릭합니다]**. 클라이언트 **[!UICONTROL 암호]** 필드 오른쪽에서 **[!UICONTROL 복사를 클릭합니다]**.
+   ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
 
-1. 계정 **[!UICONTROL 페이지로 돌아가서]** 키를 각 필드에 붙여 넣습니다.****************
+   통합 세부 사항 페이지.
 
-   **[!UICONTROL 페이로드]** - 통합 세부 사항 페이지로 돌아갑니다. JWT **** 탭의 JWT 페이로드 필드에서 전체 JSON 개체 코드를 복사합니다.
+1. **[!UICONTROL 클라이언트 암호]**- 통합 세부 사항 페이지로 돌아갑니다. [ **[!UICONTROL 개요]** ] 탭에서 **[!UICONTROL 클라이언트 암호 검색을 클릭합니다]**. 클라이언트 **[!UICONTROL 암호]** 필드 오른쪽에서 **[!UICONTROL 복사를 클릭합니다]**.
 
-1. 계정 **[!UICONTROL 페이지로 돌아가서]** 코드를 각 필드에 붙여 넣습니다.****
+   계정 **[!UICONTROL 페이지로 돌아가서]** 키를 각 필드에 붙여 넣습니다.
 
-   ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)]**
+1. **[!UICONTROL 페이로드]** - 통합 세부 사항 페이지로 돌아갑니다. JWT **** 탭의 JWT 페이로드 필드에서 전체 JSON 개체 코드를 복사합니다.
 
-   ![통합 세부 정보 페이지 - JWT 탭](assets/2019-07-25_21-59-12.png)
+   계정 **[!UICONTROL 페이지로 돌아가서]** 코드를 각 필드에 붙여 넣습니다.
+
+   ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
+
+   통합 세부 정보 페이지 - JWT 탭
 
    모든 필드가 채워진 계정 페이지는 다음과 비슷합니다.
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-   계정 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기를]** **[!UICONTROL 클릭합니다]**.](assets/2019-07-25_22-08-30.png)
+1. 계정 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기를]** **[!UICONTROL 클릭합니다]**.
 
-1. AEM IMS가 구성된 경우 이제 **[!UICONTROL Adobe IMS 구성 아래에 새 IMSAccount가 나열됩니다]**.****
+   AEM IMS가 구성된 경우 이제 **[!UICONTROL Adobe IMS 구성 아래에 새 IMSAccount가 나열됩니다]**.
 
-   ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)]**
+   ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-   통합을 위해 Adobe Launch Cloud 구성 {#configuring-adobe-launch-cloud-for-the-integration}](assets/image2019-7-15_14-17-54.png)
+## 통합을 위해 Adobe Launch Cloud 구성 {#configuring-adobe-launch-cloud-for-the-integration}
 
-## AEM 작성자의 왼쪽 위 모서리 근처에 있는 도구 아이콘(망치)을 클릭한 다음 **[!UICONTROL Cloud Service > Adobe Launch 구성을 클릭합니다]**.
+1. AEM 작성자의 왼쪽 위 모서리 근처에 있는 도구 아이콘(망치)을 클릭한 다음 **[!UICONTROL Cloud Service > Adobe Launch 구성을 클릭합니다]**.
 
-1. ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)]**
+   ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
-   Adobe **[!UICONTROL Launch 구성]** 페이지의 왼쪽 패널에서 Adobe Launch 구성을 적용할 AEM 사이트를 선택합니다.](assets/2019-07-26_12-10-38.png)
+1. Adobe **[!UICONTROL Launch 구성]** 페이지의 왼쪽 패널에서 Adobe Launch 구성을 적용할 AEM 사이트를 선택합니다.
 
-1. 일러스트레이션만을 위해 아래 스크린샷에서 **[!UICONTROL We.Retail]** 사이트가 선택됩니다.
+   일러스트레이션만을 위해 아래 스크린샷에서 **[!UICONTROL We.Retail]** 사이트가 선택됩니다.
 
-   ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)]**
+   ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
-   페이지의 왼쪽 위 모서리 근처에 있는 만들기를 **[!UICONTROL 클릭합니다]**.](assets/2019-07-26_12-20-06.png)
-
+1. 페이지의 왼쪽 위 모서리 근처에 있는 만들기를 **[!UICONTROL 클릭합니다]**.
 1. Adobe Launch 구성 **[!UICONTROL 만들기]** 창의 **[!UICONTROL 일반]** 페이지(1/3페이지)에서 다음 필드를 채웁니다.
-1. **[!UICONTROL 제목]** - 설명 구성 제목을 입력합니다. 예, `We.Retail Launch cloud configuration`.]**
+
+   * **[!UICONTROL 제목]** - 설명 구성 제목을 입력합니다. 예, `We.Retail Launch cloud configuration`.
 
    * **[!UICONTROL 연결된 Adobe IMS 구성]** - AEM IMS 구성에서 이전에 만든 [IMS 구성을 선택합니다.](#configuring-aem-ims).
 
-   * **[!UICONTROL 회사]** - **[!UICONTROL 회사]** 드롭다운 목록에서 Experience Cloud 회사를 선택합니다. 목록이 자동으로 채워집니다.](#configuring-aem-ims)
+   * **[!UICONTROL 회사]** - **[!UICONTROL 회사]** 드롭다운 목록에서 Experience Cloud 회사를 선택합니다. 목록이 자동으로 채워집니다.
 
-   * **[!UICONTROL 속성]** - 속성 드롭다운 목록에서 이전에 만든 Adobe Launch 속성을 선택합니다. 목록이 자동으로 채워집니다.****
+   * **[!UICONTROL 속성]** - 속성 드롭다운 목록에서 이전에 만든 Adobe Launch 속성을 선택합니다. 목록이 자동으로 채워집니다.
+   모든 필드를 완료한 후 **[!UICONTROL 일반]** 페이지는 다음과 비슷합니다.
 
-   * 모든 필드를 완료한 후 **[!UICONTROL 일반]** 페이지는 다음과 비슷합니다.
-   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)]**
+   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
-   왼쪽 위 모서리 근처에 있는 [ **[!UICONTROL 다음]을 클릭합니다]**.](assets/image2019-7-15_14-34-23.png)
-
+1. 왼쪽 위 모서리 근처에 있는 [ **[!UICONTROL 다음]을 클릭합니다]**.
 1. Adobe **[!UICONTROL Launch 구성]** 만들기 **[!UICONTROL 창의 준비]** 페이지(2/3 페이지)에서 다음 필드를채웁니다.
-1. 라이브러리 **[!UICONTROL URI]** 필드에서 Adobe Launch 라이브러리의 스테이징 버전의 위치를 확인합니다. AEM이 이 필드를 자동으로 채웁니다.****
 
-   일러스트레이션 목적으로만, 이 단계에서는 Adobe CDN에 배포된 Adobe Launch 라이브러리를 사용합니다.****
+   라이브러리 **[!UICONTROL URI]** 필드에서 Adobe Launch 라이브러리의 스테이징 버전의 위치를 확인합니다. AEM이 이 필드를 자동으로 채웁니다.
 
-   [!NOTE]
+   일러스트레이션 목적으로만, 이 단계에서는 Adobe CDN에 배포된 Adobe Launch 라이브러리를 사용합니다.
 
-   >[!NOTE]자동 채워진 라이브러리 URI(Uniform Resource Identifier)의 형식이 아닌지 확인하십시오. 필요한 경우 URI가 프로토콜 상대 URI를 나타내도록 수정합니다. 즉, 이중 슬래시에서 시작됩니다.
+   >[!NOTE]
+   >
+   >자동 채워진 라이브러리 URI(Uniform Resource Identifier)의 형식이 아닌지 확인하십시오. 필요한 경우 URI가 프로토콜 상대 URI를 나타내도록 수정합니다. 즉, 이중 슬래시에서 시작됩니다.
+   >
    >
    >예: `//assets.adobetm.com/launch-xxxx`.
-   >
-   >
-   >스테이징 **** 페이지는 다음과 유사해야 합니다. [라이브러리 **[!UICONTROL 비동기식으로]** 보관 **[!UICONTROL 및]** 로드 라이브러리] ***옵션은*** 설정되지않습니다.
 
-   ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)]****************
+   스테이징 **** 페이지는 다음과 유사해야 합니다. [라이브러리 **[!UICONTROL 비동기식으로]** 보관 **[!UICONTROL 및]** 로드 라이브러리] ***옵션은*** 설정되지않습니다.
 
-   오른쪽 위 모서리 근처에 있는 **[!UICONTROL 다음을 클릭합니다]**.](assets/image2019-7-15_15-21-8.png)
+   ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
+1. 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 다음을 클릭합니다]**.
 1. Adobe **[!UICONTROL Launch 구성]** 만들기 **[!UICONTROL 창의]** 프로덕션 **[!UICONTROL 페이지(3/3 페이지)에서 필요한 경우, 자동 채워진 프로덕션 URI를 이전]** 스테이징페이지에서 수행한 것과 유사한 방식으로 수정합니다.
-1. 오른쪽 위 모서리 근처에 있는 만들기를 **[!UICONTROL 클릭합니다]**.********
-1. 이제 웹 사이트 옆에 다음과 유사한 새로운 Adobe Launch Cloud 구성이 만들어지고 나열됩니다.****
+1. 오른쪽 위 모서리 근처에 있는 만들기를 **[!UICONTROL 클릭합니다]**.
 
-   새 Adobe Launch Cloud 구성을 선택합니다(선택한 구성 제목 왼쪽에 확인 표시가 나타납니다). 도구 모음에서 게시를 **[!UICONTROL 클릭합니다]**.
+   이제 웹 사이트 옆에 다음과 유사한 새로운 Adobe Launch Cloud 구성이 만들어지고 나열됩니다.
 
-1. ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)]**
+1. 새 Adobe Launch Cloud 구성을 선택합니다(선택한 구성 제목 왼쪽에 확인 표시가 나타납니다). 도구 모음에서 게시를 **[!UICONTROL 클릭합니다]**.
 
-   ![현재 AEM 작성자는 Dynamic Media 뷰어와 Adobe Launch의 통합을 지원하지 않습니다.](assets/image2019-7-15_15-47-6.png)
+   ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
+
+현재 AEM 작성자는 Dynamic Media 뷰어와 Adobe Launch의 통합을 지원하지 않습니다.
 
 하지만 AEM 게시 노드에서 지원됩니다. AEM 게시에서는 Adobe Launch Cloud 구성의 기본 설정을 사용하여 Adobe Launch의 제작 환경을 사용합니다. 따라서 테스트 중에 매번 개발 환경에서 프로덕션 환경까지 Adobe Launch 라이브러리 업데이트를 푸시해야 합니다.
 
 위의 AEM 게시용 Adobe Launch Cloud 구성에서 Adobe Launch 라이브러리의 개발 또는 스테이징 URL을 지정하여 이 제한 사항을 해결할 수 있습니다. 이렇게 하면 AEM 게시 노드가 Adobe Launch 라이브러리의 개발 또는 스테이징 버전을 사용하게 됩니다.
 
-Adobe [Launch Cloud 구성 설정에 대한 자세한 내용은 Adobe I/O를[#$tu400] 통해 AEM과 Adobe Launch 통합을 참조하십시오.
-
-See [Integrate AEM with Adobe Launch Via Adobe I/O-ERR:REF-NOT-FOUND- for more information about setting up Adobe Launch Cloud Configuration.
+Adobe [Launch Cloud 구성 설정에 대한 자세한 내용은 Adobe I/O를](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) 통해 AEM과 Adobe Launch 통합을 참조하십시오.
