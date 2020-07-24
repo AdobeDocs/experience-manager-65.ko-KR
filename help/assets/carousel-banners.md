@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '4811'
+source-wordcount: '4814'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Carousel 배너를 통해 마케터는 인터랙티브한 회전 프로모션 �
       ](/help/assets/adding-dynamic-media-assets-to-pages.md)AEM Sites 고객인 경우 대화형 미디어 구성 요소를 사용하여 AEM의 페이지에 직접 회전판 세트를 추가할 수 있습니다.
 
 
-회전판 세트를 편집해야 하는 경우 회전판 세트 [편집을 참조하십시오.](#editing-carousel-sets) 또한 회전판 세트 속성을 보고 편집할 [수 있습니다](https://helpx.adobe.com/experience-manager/6-5/help/assets/managing-assets-touch-ui.md#editingproperties).
+회전판 세트를 편집해야 하는 경우 회전판 세트 [편집을 참조하십시오.](#editing-carousel-sets) 또한 회전판 세트 속성을 보고 편집할 [수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties).
 
 ## 핫스팟 및 이미지 맵 변수 식별 {#identifying-hotspot-and-image-map-variables}
 
@@ -128,7 +128,7 @@ AEM Assets의 배너 이미지에 핫스팟이나 이미지 맵을 추가할 때
 * Google Chrome에서 나가는 HTTP 요청을 모두 보려면 F12(Windows) 또는 Command-Option-I(Mac)를 눌러 개발자 도구 패널을 연 다음 네트워크 탭을 누릅니다.
 * Firefox에서는 F12(Windows) 또는 Command-Option-I(Mac)를 눌러 Firebug 플러그인을 활성화하고 Net 탭을 사용하거나 내장 검사기 도구 및 해당 네트워크 탭을 사용할 수 있습니다.
 
-브라우저에서 네트워크 모니터링을 켜면 페이지의 빠른 보기를 트리거합니다.
+브라우저에서 네트워크 모니터링을 활성화하면 페이지의 빠른 보기를 트리거합니다.
 
 이제 네트워크 로그에서 빠른 보기 Ajax URL을 찾아 기록된 URL을 복사하여 이후 분석을 수행합니다. 대부분의 경우 빠른 보기를 트리거할 때 서버에 전송되는 요청이 많습니다. 일반적으로 빠른 보기 Ajax URL은 목록의 첫 번째 중 하나입니다. 복잡한 쿼리 문자열 부분이나 경로가 있으며 응답 MIME 유형은 `text/html`, `text/xml`또는 `text/javascript`입니다.
 
@@ -200,6 +200,7 @@ AEM Assets의 배너 이미지에 핫스팟이나 이미지 맵을 추가할 때
    * 페이지의 왼쪽 위 모서리 근처에 있는 슬라이드 **[!UICONTROL 추가]** 아이콘을 누릅니다.
 
    * 페이지 가운데 근처에 있는 탭하기 **[!UICONTROL 를 눌러 자산 선택기를 엽니다.]**
+
    회전판 세트에 포함할 자산을 선택하려면 을 누릅니다. 선택한 자산에 확인 표시 아이콘이 표시됩니다. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL Select를 누릅니다**.
 
    자산 선택기를 사용하여 키워드를 입력하고 재시작을 탭하거나 클릭하여 자산을 검색할 수 **[!UICONTROL 있습니다.]** 필터를 적용하여 검색 결과를 조정할 수도 있습니다. 경로, 컬렉션, 파일 유형 및 태그별로 필터링할 수 있습니다. 필터를 선택한 다음 도구 모음에서 **[!UICONTROL 필터]** 아이콘을 누릅니다. 보기 아이콘을 탭하고 열 보기, **[!UICONTROL 카드 보기]**&#x200B;또는 목록 보기 **[!UICONTROL 를 선택하여]**&#x200B;보기를 **[!UICONTROL 변경합니다.]**
@@ -226,6 +227,7 @@ AEM Assets의 배너 이미지에 핫스팟이나 이미지 맵을 추가할 때
    >    * 단추 스타일입니다. 사용자는 각 점 또는 숫자를 눌러 배너를 통해 회전할 수 있습니다. 세트 표시기 단추가 표시되는 위치와 숫자 또는 점선 스타일인 경우 단추 크기를 변경할 수 있습니다.
    >    * 이미지 맵의 밝은 영역 스타일 또는 핫스팟에 사용되는 아이콘을 변경합니다.
    >    * 뷰어 사전 설정을 편집하기 전에 사전 설정을 기준으로 할 스타일을 선택합니다. 이렇게 하지 않으면 뷰어 사전 설정을 편집하기 시작하면 다른 사전 설정으로 변경하면 변경 사항이 모두 손실됩니다
+
    >
    >
    >뷰어 [편집기에 대한 자세한 설명과 자세한 내용은 캐러셀 배너에](/help/assets/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) 대한 특별 고려 사항을 참조하십시오.
@@ -274,6 +276,7 @@ AEM Assets의 배너 이미지에 핫스팟이나 이미지 맵을 추가할 때
 
    * 핫스팟: 이미지에서 핫스팟을 표시할 위치를 누릅니다.
    * 이미지 맵의 경우: 이미지에서 왼쪽 상단에서 오른쪽 하단으로 드래그하여 이미지 맵 영역을 만듭니다. 모서리를 드래그하여 이미지 맵의 크기를 조정할 수 있습니다.
+
    필요한 경우 핫스팟 또는 이미지 맵을 새 위치로 드래그합니다. 필요에 따라 핫스팟 또는 이미지 맵을 추가합니다.
 
    핫스팟 또는 이미지 맵을 삭제하려면 작업 **[!UICONTROL 탭을]** 누릅니다. 맵 및 **[!UICONTROL 핫스팟]** 머리글 아래의 **[!UICONTROL 선택한 유형]** 드롭다운 메뉴에서 제거할 핫스팟 또는 이미지 맵의 이름을 선택합니다. 메뉴 옆에 있는 **[!UICONTROL 휴지통]** 아이콘을 누른 다음 **[!UICONTROL 삭제를 누릅니다.]**
@@ -298,6 +301,7 @@ AEM Assets의 배너 이미지에 핫스팟이나 이미지 맵을 추가할 때
          대화형 컨텐츠에 상대 URL, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
 
       * 독립 실행형 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지의 전체 URL 경로를 지정합니다.
+
    링크를 새 브라우저 탭(권장 기본값)에서 열지 또는 동일한 탭에서 열지를 지정해야 합니다.
 
    자세한 [내용은 선택기](/help/assets/working-with-selectors.md) 작업을 참조하십시오.
@@ -356,6 +360,7 @@ AEM Assets의 배너 이미지에 핫스팟이나 이미지 맵을 추가할 때
    * 슬라이드를 삭제하려면 해당 슬라이드를 선택한 다음 도구 모음에서 **[!UICONTROL 슬라이드]** 삭제를 누릅니다.
    * 페이지 오른쪽 위 모서리 근처에 있는 사전 설정을 적용하려면 **[!UICONTROL 사전 설정]** 드롭다운 목록을 누른 다음 뷰어 사전 설정을 선택합니다.
    * 전체 회전판 세트를 삭제하려면 회전판 세트로 이동하고 선택한 다음 **[!UICONTROL 삭제를 누릅니다.]**
+
    >[!NOTE]
    핫스팟이 있는 대화형 이미지를 편집하고 이미지를 자르면 핫스팟이 제거됩니다.
 
@@ -405,7 +410,7 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/adding-dynamic-media-as
 >[!NOTE]
 AEM Sites 고객인 경우 Interactive Media 구성 요소를 페이지로 드래그하여 회전판 배너를 페이지에 직접 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-그러나 독립 실행형 AEM 자산 고객인 경우 이 섹션에 설명된 대로 웹 사이트 랜딩 페이지에 회전식 배너를 수동으로 추가할 수 있습니다.
+그러나 독립형 AEM 자산 고객인 경우 이 섹션에 설명된 대로 회전판 배너를 웹 사이트 랜딩 페이지에 수동으로 추가할 수 있습니다.
 
 1. 게시된 Carousel 세트의 포함 코드를 복사합니다.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
