@@ -3,9 +3,9 @@ title: 자산 번역 준비
 description: 언어 루트 폴더를 만들어 번역용 에셋을 준비함으로써 다국어 에셋을 지원합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 3%
 
 ---
@@ -67,4 +67,4 @@ Experience Manager 인터페이스는 **[!UICONTROL 에셋]** 내에서 생성�
 
 1. 참조 창에서 언어 사본 **[!UICONTROL 을 클릭합니다]**. 언어 [!UICONTROL 복사] 패널에는 자산의 언어 사본이 표시됩니다.
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+   ![언어 복사](assets/lang-copy2.png)
