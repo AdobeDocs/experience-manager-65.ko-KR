@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37c9cb6db35cb941a117a03aadf7a9815809c85e
+source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 80%
+source-wordcount: '2673'
+ht-degree: 79%
 
 ---
 
@@ -188,7 +188,7 @@ Live Copy가 소스 컨텐츠와 동기화되는 방법 및 시기를 제어하�
   </tr>
   <tr>
    <td>workflow</td>
-   <td><p>대상 속성(페이지에 대해서만)에 정의된 워크플로우를 시작하고 Live Copy를 페이로드로 가져옵니다.</p> <p>대상 경로는 모델 노드의 경로입니다(예: /etc/workflow/models/request_for_activation/jcr:content/model)입니다.</p> </td>
+   <td><p>대상 속성(페이지에 대해서만)에 정의된 워크플로우를 시작하고 Live Copy를 페이로드로 가져옵니다.</p> <p>대상 경로는 모델 노드의 경로입니다.</p> </td>
    <td>대상: (문자열) 워크플로우 모델에 대한 경로입니다.<br /> </td>
   </tr>
   <tr>
@@ -416,4 +416,4 @@ Configure the service using either the [Web Console](/help/sites-deploying/confi
 * 웹 콘솔에서 구성할 속성의 이름은 기본 롤아웃 구성입니다.
 * Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
 
-시스템 기본값으로 사용할 롤아웃 구성 경로로 이 속성 값을 설정합니다. The default value is `/etc/msm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
+시스템 기본값으로 사용할 롤아웃 구성 경로로 이 속성 값을 설정합니다. The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
