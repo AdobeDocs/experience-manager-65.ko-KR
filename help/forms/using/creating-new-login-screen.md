@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e345fbff7030dbdeb3710e34599c0087eed4b1b8
+source-git-commit: 81249e13db9bd173d4251683ccaacbb7f71b3209
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 4%
@@ -27,9 +27,15 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
 1. 관리자 권한 `/lc/crx/de` 으로 로그인합니다.
 1. 다음 작업을 수행합니다.
 
-   1. 계층 구조 복제: 의 `/libs/livecycle/core/content` 값 `/apps/livecycle/core/content`. 동일한(노드/폴더) 속성과 액세스 제어를 유지 관리합니다.
+   1. 계층 구조 복제: 의 `/libs/livecycle/core/content` 값 `/apps/livecycle/core/content`.
 
-   1. 콘텐트 폴더 복사: 부터 `/libs/livecycle/core` 까지 `/apps/livecycle/core`.
+      동일한(노드/폴더) 속성과 액세스 제어를 유지 관리합니다.
+
+   1. 콘텐트 폴더 복사:
+
+      시작: `/libs/livecycle/core`
+
+      끝: `/apps/livecycle/core`.
 
    1. 폴더 내용을 `/apps/livecycle/core` 삭제합니다.
 
@@ -244,6 +250,7 @@ String browserLocale = "en";
 
       * 끝 `/apps/livecycle/core/components/login`
    1. 새로 추가된 스타일 `/apps/livecycle/core/components/login/login.jsp` 을 통합하려면 수정합니다.
+
 
 
 예:
