@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '11828'
+source-wordcount: '11830'
 ht-degree: 1%
 
 ---
@@ -395,7 +395,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 이 비율을 계산하려면 소스 너비를 인코딩된 너비로 나누어 너비 비율을 가져옵니다. 그런 다음 소스 높이를 인코딩된 높이로 나누면 높이 비율이 높아집니다.
 
-결과 비율이 정수 단위인 경우, 비디오가 최적으로 크기가 조정됨을 의미합니다. 결과 비율이 정수가 아닌 경우 나머지 픽셀 가공물은 디스플레이에 그대로 두면 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 잘 나타납니다.
+결과 비율이 정수 단위인 경우 비디오 크기가 최적으로 조절됨을 의미합니다. 결과 비율이 정수가 아닌 경우 나머지 픽셀 가공물은 디스플레이에 그대로 두면 비디오 품질에 영향을 줍니다. 이 효과는 비디오에 텍스트가 있을 때 가장 잘 나타납니다.
 
 예를 들어 소스 비디오가 1920 x 1080이라고 가정합니다. 다음 표에서 세 개의 인코딩된 비디오는 사용할 최적의 인코딩 설정을 제공합니다.
 
@@ -773,7 +773,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다. 잠시 후에 다시 �
 1. 비디오 속성 페이지의 오른쪽 위 모서리에서 저장 및 **[!UICONTROL 닫기를 클릭합니다.]**
 1. 도구 모음에서 **[!UICONTROL 빠른 게시를 클릭합니다.]**
 
-   AEM Sites [에서 게시 관리 사용을 참조하십시오](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   AEM Sites [에서 게시 관리 사용을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 
@@ -1277,7 +1277,7 @@ Dynamic Media [의 비디오 축소판 정보 - Scene7 모드를 참조하십시
 
    선택한 축소판을 사용하도록 비디오의 축소판 이미지가 업데이트됩니다. 나중에 축소판 이미지를 변경하기로 결정한 경우 축소판 **[!UICONTROL 변경]** 페이지로 돌아가 새 이미지를 선택할 수 있습니다.
 
-   새로운 기본 시간 간격을 구성했거나 기존 비디오를 바꾸기 위해 새 비디오를 업로드한 경우 Dynamic Media에서 축소판을 다시 생성하도록 해야 합니다.
+   새로운 기본 시간 간격을 구성하거나 기존 비디오를 대체할 새 비디오를 업로드한 경우 Dynamic Media에서 축소판을 다시 생성하도록 해야 합니다.
 
    비디오 [축소판이 생성되는 기본 시간 간격 구성을 참조하십시오](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
