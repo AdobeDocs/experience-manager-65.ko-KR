@@ -3,7 +3,7 @@ title: 스마트 콘텐츠 서비스를 사용하여 자산 태그 지정을 구
 description: 스마트 콘텐츠 서비스를 사용하여 스마트 태그 지정 및 고급 스마트 태그 [!DNL Adobe Experience Manager]기능을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 35%
@@ -29,6 +29,9 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 * 조직에 대한 관리자 권한이 부여된 Adobe ID 계정이 있습니다.
 * 조직에서 스마트 콘텐츠 서비스 서비스를 사용할 수 있습니다.
+
+<!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
+-->
 
 고급 스마트 태그를 활성화하려면 위의 기능 외에 최신 [AEM 서비스 팩도 설치합니다](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html).
 
