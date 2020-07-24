@@ -10,16 +10,21 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 5%
 
 ---
 
 
 # Leaderboard Essentials {#leaderboard-essentials}
 
-이 페이지에서는 리드 보드 기능 작업에 필요한 정보를 제공합니다.
+이 페이지에서는 리더보드 기능 작업에 필요한 정보를 제공합니다.
 
-페이지에 리더보드 구성 요소를 포함하기 전에 커뮤니티 점수 및 배지를 구성해야 [합니다](implementing-scoring.md). 점수 [및 배지 필수 요점을 참조하십시오](configure-scoring.md).
+페이지에 리더보드 구성 요소를 포함하기 전에 [커뮤니티 점수 및 배지를 구성해야 합니다](implementing-scoring.md).
+
+점수 [지정 및 배지 필수 요점을 참조하십시오](configure-scoring.md).
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -30,7 +35,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    <td>소셜/게임화/구성 요소/hbs/leaderboard</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
    <td>아니오</td>
   </tr>
   <tr>
@@ -52,7 +57,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
  </tbody>
 </table>
 
-* [클라이언트측 사용자 정의](client-customize.md)
+* [클라이언트측 사용자 지정](client-customize.md)
 
 ### 파일 라이브러리 기능 {#file-library-function}
 
