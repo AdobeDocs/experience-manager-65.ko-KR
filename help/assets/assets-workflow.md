@@ -3,9 +3,9 @@ title: 자산을 처리하여 업무 처리 과정 수행, 감사, 규정 준수
 description: 자산 처리를 사용하여 형식을 변환하고, 변환을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -56,11 +56,9 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 
 1. 워크플로우 **[!UICONTROL 시작]** 대화 상자의 목록에서 워크플로우 모델을 선택합니다.
 
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
 1. (선택 사항) 워크플로우의 인스턴스를 참조하는 데 사용할 수 있는 워크플로우의 제목을 지정합니다.
 
-   ![chlimage_1-255](assets/chlimage_1-51.png)
+   ![워크플로우 선택, 제목 제공 및 시작](assets/start-workflow.png)
 
 1. 시작 **[!UICONTROL 을]** 클릭한 다음 **[!UICONTROL 진행을 클릭합니다]**. 각 워크플로우 단계가 이벤트로 타임라인에 표시됩니다.
 
@@ -75,7 +73,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 1. 맨 아래에 있는 **[!UICONTROL 작업]** ![Chevrup](assets/do-not-localize/chevron-up-icon.png) 을 클릭합니다.
 1. 워크플로우 **[!UICONTROL 시작을 클릭합니다]**. 워크플로우 **[!UICONTROL 시작]** 대화 상자의 목록에서 워크플로우 모델을 선택합니다.
 
-   ![chlimage_1-31](assets/chlimage_1-138.png)
+   ![워크플로우 시작](assets/start-workflow.png)
 
 1. (선택 사항) 워크플로우 인스턴스를 참조하는 데 사용할 수 있는 워크플로우의 제목을 지정합니다.
 1. 시작 **[!UICONTROL 을]** 클릭한 다음 대화 **[!UICONTROL 상자에서]** 확인을 클릭합니다. 워크플로우는 선택한 모든 자산에서 실행됩니다.
