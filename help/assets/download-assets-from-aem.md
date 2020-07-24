@@ -3,10 +3,10 @@ title: 디지털 자산을 다운로드할 수 [!DNL Adobe Experience Manager]�
 description: 다운로드 기능을 활성화하거나 비활성화하는 방법 [!DNL Adobe Experience Manager] 을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3602a39e03536696911b39cceb20f10dfd3a9347
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 4%
+source-wordcount: '852'
+ht-degree: 3%
 
 ---
 
@@ -74,6 +74,6 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유
 >[!MORELIKETHIS]
 >
 >* [DRM 보호 에셋을 다운로드합니다](drm.md).
->* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 에셋을 다운로드할 수 있습니다](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html).
+>* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 에셋을 다운로드할 수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
 >* [지원되는 Adobe Creative Cloud 앱에서 Adobe Assets Link를 사용하여 에셋을 다운로드할 수 있습니다](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html).
 
