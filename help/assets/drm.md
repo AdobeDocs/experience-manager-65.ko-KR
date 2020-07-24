@@ -3,7 +3,7 @@ title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: 라이선스가 부여된 에셋의 에셋 만료 상태 및 정보를 관리하는 방법을 [!DNL Experience Manager]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 1%
@@ -65,9 +65,6 @@ ht-degree: 1%
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
 1. 검색 패널을 표시하려면 [!DNL Experience Manager] 로고를 클릭합니다.
-
-   ![chlimage_1-151](assets/chlimage_1-151.png)
-
 1. 만료 **[!UICONTROL 상태]** 옵션을 클릭하여 확장합니다.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -114,11 +111,9 @@ ht-degree: 1%
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. 해당 자산 세부 사항 페이지를 표시하려면 [!DNL Assets] 인터페이스에서 자산을 선택하고 **[!UICONTROL 속성을 클릭합니다]**.
+1. 해당 자산 세부 사항 페이지를 표시하려면 [!DNL Assets] 인터페이스에서 자산을 선택하고 속성 **[!UICONTROL 보기]** 속성을 ![클릭합니다](assets/do-not-localize/info-circle-icon.png).
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
-
-1. 고급 탭의 만료 필드에서 자산의 만료 날짜를 **[!UICONTROL 설정합니다]** .
+1. [ [!UICONTROL 고급] ] 탭에서 [만료] **[!UICONTROL 필드에서 자산의 만료 날짜를]** 설정합니다.
 
    ![만료됨 필드에서 자산 만료 날짜 및 시간 설정](assets/asset-properties-advanced-tab.png)
 
