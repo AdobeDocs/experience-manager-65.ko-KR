@@ -2,14 +2,18 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Communities User Guide
+user-guide-title: AEM 6.5 Communities 사용 안내서
+user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 9%
 
 ---
 
 
-# AEM 6.5 Communities User Guide {#communities}
+# AEM 6.5 Communities 사용 안내서 {#communities}
 
 + [커뮤니티 사용 안내서 개요](home.md)
 + Introduction to AEM Communities {#introduction}
@@ -17,26 +21,26 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [AEM Communities 개요](overview.md)
    + [AEM Communities 릴리스 노트](/help/release-notes/communities-release-notes.md)
    + [AEM Communities 시작하기](getting-started.md)
-   + [활성화를 위한 AEM Communities 시작하기](getting-started-enablement.md)
+   + [활성 AEM Communities 시작하기](getting-started-enablement.md)
    + [초기 설정](setup.md)
    + [새 커뮤니티 사이트 작성](create-site.md)
    + [게시된 사이트 경험](published-site.md)
    + [중첩된 그룹 작성](nested-groups.md)
-   + [활성화를 위한 초기 설정](enablement-setup.md)
-   + [활성화를 위한 새 커뮤니티 사이트 작성](enablement-create-site.md)
+   + [[MOCK] Initial Setup for Enablement](enablement-setup.md)
+   + [[MOCK] Author a New Community Site for Enablement](enablement-create-site.md)
    + [활성 리소스 만들기 및 할당](resource.md)
    + [게시된 활성 사이트 경험](enablement-published-site.md)
 + 배포 {#deploy}
    + [커뮤니티 배포](deploy-communities.md)
    + [AEM 6.5 Communities로 업그레이드](upgrade.md)
    + [커뮤니티를 위한 권장 토폴로지](topologies.md)
-   + [Dispatcher for Communities 구성](dispatcher.md)
+   + [커뮤니티에 대한 Dispatcher 구성](dispatcher.md)
 + 관리 {#administer}
    + [AEM Communities의 사용자 및 UGC 관리 서비스](user-ugc-management-service.md)
    + [커뮤니티 사이트](administer-landing.md)
    + [커뮤니티 콘솔](consoles.md)
-   + [커뮤니티 기능에 대한 분석 구성](analytics.md)
-   + [지원 기능 구성](enablement.md)
+   + [커뮤니티 기능에 대한 Analytics 구성](analytics.md)
+   + [활성 기능 구성](enablement.md)
    + [메시징 구성](messaging.md)
    + [커뮤니티 콘텐츠 중재](moderate-ugc.md)
    + [이메일 구성](email.md)
@@ -45,7 +49,7 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [커뮤니티 점수 및 배지](implementing-scoring.md)
    + [사용자 및 사용자 그룹 관리](users.md)
    + [커뮤니티 그룹 콘솔](groups.md)
-   + [Facebook 및 Twitter를 사용한 소셜 로그인](social-login.md)
+   + [Facebook 및 Twitter로 소셜 로그인](social-login.md)
    + [SRP - 커뮤니티 컨텐츠 스토리지](working-with-srp.md)
    + [커뮤니티 사이트 콘솔](sites-console.md)
    + [구성원 및 그룹 관리 콘솔](members.md)
@@ -55,16 +59,16 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [그룹 템플릿](tools-groups.md)
    + [커뮤니티 기능](functions.md)
    + [저장소 구성](srp-config.md)
-   + [Badges 콘솔](badges.md)
-   + [지원 리소스 콘솔](resources.md)
+   + [Badges Console](badges.md)
+   + [활성 리소스 콘솔](resources.md)
    + [보고서 콘솔](reports.md)
-   + [지원 기능을 위한 MySQL 구성](mysql.md)
-   + [커뮤니티를 위한 FFmpeg](ffmpeg.md)
+   + [활성 기능을 위한 MySQL 구성](mysql.md)
+   + [커뮤니티용 FFmpeg](ffmpeg.md)
    + [컨텍스트 내 중재](in-context.md)
    + [고급 점수 및 배지](advanced.md)
    + [ASRP - Adobe Storage Resource Provider](asrp.md)
    + [MSRP - MongoDB 저장소 리소스 공급자](msrp.md)
-   + [MongoDB for Demo 설정 방법](demo-mongo.md)
+   + [데모용 MongoDB를 설정하는 방법](demo-mongo.md)
    + [DSRP - 관계형 데이터베이스 저장소 리소스 공급자](dsrp.md)
    + [DSRP용 MySQL 구성](dsrp-mysql.md)
    + [JSRP - JCR 스토리지 리소스 공급자](jsrp.md)
@@ -78,7 +82,7 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [커뮤니티 개발](communities.md)
    + [소셜 구성 요소 프레임워크](scf.md)
    + [커뮤니티 구성 요소 안내서](components-guide.md)
-   + [구성 요소, 기능 및 기능 필수](essentials.md)
+   + [구성 요소, 함수 및 기능 필수](essentials.md)
    + [튜토리얼](tutorials.md)
    + [문제 해결](troubleshooting.md)
    + [코딩 지침](code-guide.md)
@@ -90,15 +94,15 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [활동 스트림 필수](essentials-activities.md)
    + [Assignments Essentials](essentials-assignments.md)
    + [Blog Essentials](blog-developer-basics.md)
-   + [Calendar Essentials](calendar-basics-for-developers.md)
+   + [달력 필수](calendar-basics-for-developers.md)
    + [Catalog Essentials](catalog-developer-essentials.md)
    + [커뮤니티 구성 요소용 Clientlibs](clientlibs.md)
-   + [주석 필수](essentials-comments.md)
+   + [댓글 필수](essentials-comments.md)
    + [커뮤니티 구성 요소에 대한 OSGi 이벤트](events.md)
    + [주요 컨텐츠 필수](essentials-featured.md)
    + [파일 라이브러리 필수](essentials-file-library.md)
    + [포럼 필수](essentials-forum.md)
-   + [Community Group Essentials](essentials-groups.md)
+   + [커뮤니티 그룹 필수](essentials-groups.md)
    + [Ideation Essentials](ideation.md)
    + [Leaderboard Essentials](leaderboard.md)
    + [기본 사항 좋아요](essentials-liking.md)
@@ -109,12 +113,12 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [리치 텍스트 편집기 필수](rte.md)
    + [점수 및 배지 필수](configure-scoring.md)
    + [Search Essentials](search-implementation.md)
-   + [구성 요소 사이드로드](sideloading.md)
+   + [구성 요소 사이드로딩](sideloading.md)
    + [소셜 그래프 필수](essentials-socialgraph.md)
    + [SRP 및 UGC Essentials](srp-and-ugc.md)
    + [Tag Essentials](tag.md)
    + [Tally Essentials](tally.md)
-   + [투표 요점](essentials-voting.md)
+   + [투표 필수](essentials-voting.md)
    + [웹 사이트 구조 설정](setup-website.md)
    + [SCF 샌드박스 만들기](an-scf-sandbox.md)
    + [초기 샌드박스 애플리케이션](initial-app.md)
@@ -143,13 +147,13 @@ source-git-commit: e9e7112cb1188de465b4c233292f6eec7d5d82c6
    + [블로그 기능](blog-feature.md)
    + [달력 기능](calendar.md)
    + [카탈로그 기능](catalog.md)
-   + [주석 사용](comments.md)
+   + [댓글 사용](comments.md)
    + [주요 컨텐츠 기능](featured.md)
    + [파일 라이브러리 기능](file-library.md)
    + [포럼 기능](forum.md)
    + [커뮤니티 그룹](creating-groups.md)
-   + [관념화 기능](ideation-feature.md)
-   + [리더보드 기능](enabling-leaderboard.md)
+   + [아이디어 기능](ideation-feature.md)
+   + [리드 보드 기능](enabling-leaderboard.md)
    + [좋아요 사용](liking.md)
    + [메시징 기능](configure-messaging.md)
    + [Q&amp;A 포럼 기능](working-with-qna.md)
