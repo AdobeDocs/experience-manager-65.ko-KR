@@ -2,14 +2,18 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Classic UI Authoring User Guide
+user-guide-title: AEM 6.5 클래식 UI 작성 사용 안내서
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 94%
 
 ---
 
 
-# AEM 6.5 Classic UI Authoring User Guide {#classic-ui}
+# AEM 6.5 클래식 UI 작성 사용 안내서 {#classic-ui}
 
 + [클래식 UI 작성 안내서 개요](home.md)
 + 클래식 UI 작성 소개 {#introduction}
