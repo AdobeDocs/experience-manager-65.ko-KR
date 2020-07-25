@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 작성 사용 안내서
-translation-type: ht
-source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
-workflow-type: ht
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
+translation-type: tm+mt
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 100%
 
