@@ -2,21 +2,25 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Deploying Guide
+user-guide-title: AEM 6.5 배포 안내서
+user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 14%
 
 ---
 
 
-# AEM 6.5 Deploying User Guide {#deploying}
+# AEM 6.5 배포 사용 안내서 {#deploying}
 
-+ [사용 안내서 배포](home.md)
++ [배포 사용 안내서](home.md)
 + AEM Platform 소개 {#introduction}
    + [AEM Platform 소개](platform.md)
    + [기술 요구 사항](technical-requirements.md)
    + [AEM 6.5의 스토리지 요소](storage-elements-in-aem-6.md)
-   + [AEM with MongoDB](aem-with-mongodb.md)
+   + [MongoDB가 있는 AEM](aem-with-mongodb.md)
 + AEM 배포 {#deploying}
    + [배포 및 유지 관리](deploy.md)
    + [권장 배포](recommended-deploys.md)
@@ -25,13 +29,13 @@ source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
    + [명령줄 시작 및 중지](command-line-start-and-stop.md)
    + [AEM 6에서 노드 저장소 및 데이터 저장소 구성](data-store-config.md)
    + [개정 정리](revision-cleanup.md)
-   + [Oak 쿼리 및 인덱싱](queries-and-indexing.md)
+   + [Oak 쿼리 및 색인](queries-and-indexing.md)
    + [TarMK Cold Standby를 사용하여 AEM을 실행하는 방법](tarmk-cold-standby.md)
    + [AEM 6.5의 RDBMS 지원](rdbms-support-in-aem.md)
    + [Oak-run Jar를 통한 인덱싱](indexing-via-the-oak-run-jar.md)
    + [Oak-run.jar 인덱싱 사용 사례](oak-run-indexing-usecases.md)
    + [Oak 인덱스 문제 해결](troubleshooting-oak-indexes.md)
-   + [집계된 사용 통계 컬렉션 선택](opt-in-aggregated-usage-statistics.md)
+   + [집계된 사용 통계 수집 선택](opt-in-aggregated-usage-statistics.md)
    + [릴리즈 차량 정의 갱신](update-release-vehicle-definitions.md)
    + [문제 해결](troubleshooting.md)
 + AEM 구성 {#configuring}
@@ -47,7 +51,7 @@ source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
    + [정적 개체 만료](expiration-static-objects.md)
    + [버전 제거](version-purging.md)
    + [AEM 인스턴스 모니터링 및 유지 관리](monitoring-and-maintaining.md)
-   + [작업 오프로딩](offloading.md)
+   + [작업 오프로드](offloading.md)
    + [단일 사인온](single-sign-on.md)
    + [리소스 매핑](resource-mapping.md)
    + [SSL을 통해 HTTP 활성화](/help/sites-administering/ssl-by-default.md)
@@ -57,21 +61,21 @@ source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
    + [자산 성과 가이드](assets-performance-sizing.md)
    + [구성 방법 문서](ht-deploy.md)
    + [웹 콘솔 구성](configuring-web-console.md)
-+ AEM 6.5로 업그레이드 {#upgrading}
++ Upgrading to AEM 6.5 {#upgrading}
    + [AEM 6.5로 업그레이드](upgrade.md)
    + [업그레이드 계획](upgrade-planning.md)
    + [Pattern Detector를 사용한 업그레이드 복잡성 평가](pattern-detector.md)
    + [AEM 6.5의 이전 버전과의 호환성](backward-compatibility.md)
    + [업그레이드 절차](upgrade-procedure.md)
-   + [즉석 업그레이드 수행](in-place-upgrade.md)
+   + [업그레이드 수행](in-place-upgrade.md)
    + [레이지 컨텐츠 마이그레이션](lazy-content-migration.md)
    + [CRX2Oak 마이그레이션 도구 사용](using-crx2oak.md)
    + [업그레이드 전 유지 관리 작업](pre-upgrade-maintenance-tasks.md)
    + [업그레이드 후 확인 및 문제 해결](post-upgrade-checks-and-troubleshooting.md)
-   + [사용자 정의 검색 양식 업그레이드](upgrading-custom-search-forms.md)
+   + [사용자 지정 검색 양식 업그레이드](upgrading-custom-search-forms.md)
    + [지속적인 업그레이드](sustainable-upgrades.md)
    + [코드 및 사용자 정의 업그레이드](upgrading-code-and-customizations.md)
-   + [애플리케이션 서버 설치 업그레이드 단계](app-server-upgrade.md)
+   + [응용 프로그램 서버 설치 업그레이드 단계](app-server-upgrade.md)
    + [업그레이드 후 제거된 오래된 번들 목록](obsolete-bundles.md)
 + 저장소 재구성 {#restructuring}
    + [AEM 6.5의 저장소 재구성](repository-restructuring.md)
@@ -79,18 +83,18 @@ source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
    + [AEM 6.5의 사이트 저장소 재구성](sites-repository-restructuring-in-aem-6-5.md)
    + [AEM 6.5의 자산 저장소 재구성](assets-repository-restructuring-in-aem-6-5.md)
    + [AEM 6.5의 Dynamic Media 리포지토리 재구성](dynamicmedia-repository-restructuring-in-aem-6-5.md)
-   + [AEM 6.5의 양식 저장소 재구성](forms-repository-restructuring-in-aem-6-5.md)
+   + [AEM 6.5의 Forms 리포지토리 재구성](forms-repository-restructuring-in-aem-6-5.md)
    + [AEM 6.5의 전자 상거래 저장소 재구성](ecommerce-repository-restructuring-in-aem-6-5.md)
-   + [6.5의 AEM Communities에 대한 리포지토리 재구성](communities-repository-restructuring-in-aem-6-5.md)
+   + [6.5의 AEM Communities에 대한 저장소 재구성](communities-repository-restructuring-in-aem-6-5.md)
 + eCommerce {#ecommerce}
-   + [전자 상거래 개요](ecommerce.md)
+   + [eCommerce 개요](ecommerce.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [마젠토](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + 우수 사례 {#practices}
    + [배포 우수 사례](best-practices.md)
    + [성능 트리](performance-tree.md)
-   + [성능 테스트를 위한 모범 사례](best-practices-for-performance-testing.md)
+   + [성능 테스트 모범 사례](best-practices-for-performance-testing.md)
    + [쿼리 및 색인 작성 우수 사례](best-practices-for-queries-and-indexing.md)
    + [고객을 위한 사용자 인터페이스 권장 사항](ui-recommendations.md)
    + [성능 및 확장성](performance.md)
