@@ -3,16 +3,17 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
 user-guide-title: AEM 6.5 관리 사용 안내서
+user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 8d000088f4fd0ff1f85f11818d4e72337da5a280
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
 
-# AEM 6.5 Administering User Guide {#administering}
+# AEM 6.5 관리 사용 안내서 {#administering}
 
 + [사용자 안내서 관리 개요](home.md)
 + 사이트 기능 {#introduction}
@@ -96,7 +97,7 @@ ht-degree: 14%
 + 개인화 {#personalization}
    + [개인화](personalization.md)
    + [ContextHub 구성](contexthub-config.md)
-   + [ClientContext](client-context.md)
+   + [Client Context](client-context.md)
    + [캠페인](campaigns.md)
    + [ContextHub로 세그멘테이션 구성](segmentation.md)
    + [세그멘테이션 구성](campaign-segmentation.md)
@@ -157,7 +158,7 @@ ht-degree: 14%
    + [우수 사례](administer-best-practices.md)
    + [번역 우수 사례](tc-bp.md)
    + [MSM 우수 사례](msm-best-practices.md)
-   + [AEM Sites - GDPR 준비](gdpr-compliance-sites.md)
+   + [AEM Sites - GDPR 준비 완료](gdpr-compliance-sites.md)
    + [AEM Foundation에 대한 GDPR 요청 처리](handling-gdpr-requests-for-aem-platform.md)
    + [AEM Commerce - GDPR 준비](gdpr-compliance-commerce.md)
 + 컨텐츠 관리 {#contentmanagement}
