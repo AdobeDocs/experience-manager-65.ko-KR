@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -94,7 +94,7 @@ JBoss 응용 프로그램 서버에서 SSL을 구성하려면 인증을 위한 S
 1. 
    * **단일 서버의 경우,** lc_&lt;dbame/tunkey>.xml 파일에서 &lt;security-reales> 섹션 뒤에 다음 항목을 추가합니다.
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -110,13 +110,13 @@ JBoss 응용 프로그램 서버에서 SSL을 구성하려면 인증을 위한 S
 
    위의 코드 다음에 있는 &lt;server> 섹션에 다음을 추가합니다.
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
    * **서버 클러스터의 경우** 모든 노드의 [appserver 루트]\domain\configuration\host.xml에 &lt;security-reales> 섹션 뒤에 다음 항목을 추가합니다.
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -132,7 +132,7 @@ JBoss 응용 프로그램 서버에서 SSL을 구성하려면 인증을 위한 S
 
    위의 코드 다음에 있는 &lt;server> 섹션에 다음을 추가합니다.
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
@@ -141,7 +141,7 @@ JBoss 응용 프로그램 서버에서 SSL을 구성하려면 인증을 위한 S
 
    * 턴키 설치의 경우:
 
-      * Windows 제어판에서 관리 도구를 클릭한 다음 서비스를 클릭합니다.
+      * Windows Campaign 컨트롤 패널에서 관리 도구를 클릭한 다음 서비스를 클릭합니다.
       * Adobe Experience Manager 양식에 대해 JBoss를 선택합니다.
       * 작업 > 중지를 선택합니다.
       * 서비스의 상태가 중지된 것으로 나타날 때까지 기다립니다.
