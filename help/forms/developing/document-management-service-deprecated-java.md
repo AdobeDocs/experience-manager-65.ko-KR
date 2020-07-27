@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '645'
+ht-degree: 0%
 
 ---
 
@@ -21,35 +24,35 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 >[!NOTE]
 >
->Adobe는 2011년 8월 5일부터 Content Services ES 고객을 Adobe Digital Enterprise Platform Experience Services로 마이그레이션합니다. Content Services를 사용하는 고객을 위한 제품 로드맵은 Adobe의 Day Software 인수 과정에서 취득한 최신 모듈형 CRX 아키텍처를 기반으로 구축된 기본 컨텐츠 저장소를 포함하는 새로운 ADEP Experience Services - Core로 이동하는 것입니다.
+>Adobe는 2011년 8월 5일부터 Content Services ES 고객을 Adobe Digital Enterprise Platform Experience Services로 마이그레이션합니다. 컨텐츠 서비스를 사용하는 고객을 위한 제품 로드맵은 Adobe의 데이 소프트웨어 인수 과정에서 취득한 최신 모듈식 CRX 아키텍처를 기반으로 구축된 기본 컨텐츠 저장소를 포함하는 새로운 ADEP Experience Services - Core로 이동하는 것입니다.
 
-[빠른 시작(SOAP 모드):Java API 파섹](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스 공간 만들기](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드):Java API 파섹](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스 컨텐츠 삭제](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 컨텐츠 서비스에 컨텐츠 추가](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스에 컨텐츠 추가](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드):Java API 파섹](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스에서 컨텐츠 검색](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드):Java API 파섹](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스 컨텐츠 이동](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 컨텐츠 서비스 컨텐츠 나열](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스 컨텐츠 나열](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 컨텐츠 서비스 컨텐츠 검색](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스 컨텐츠 검색](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 컨텐츠 서비스 권한 설정](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
+[빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스 권한 설정](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 
-AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 창 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
+AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 창 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 컨텐츠 서비스 공간 만들기(더 이상 사용되지 않음) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스 공간 만들기(더 이상 사용되지 않음) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 회사 홈에 있는 테스트 *디렉토리라는* 새 공간을 만듭니다. 새 공간의 식별 값이 콘솔에 기록됩니다.
+다음 Java 코드 예제에서는 회사 홈에 있는 *테스트 디렉토리* 라는 새 공간을 만듭니다. 새 공간의 식별 값이 콘솔에 기록됩니다.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -141,11 +144,11 @@ AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 콘텐츠 서비스 콘텐츠 삭제(더 이상 사용되지 않음) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스 콘텐츠 삭제(더 이상 사용되지 않음) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 다음 Java 코드 예제에서는 /Company Home/Test Directory라는 공백을 삭제합니다.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -241,11 +244,11 @@ AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 컨텐츠 서비스에 컨텐츠 추가(더 이상 사용되지 않음) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스에 컨텐츠 추가(더 이상 사용되지 않음) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 MortgageForm.pdf *라는* PDF 파일을 /Company Home/Test Directory라는 폴더에 추가합니다. 작성자 및 설명 속성이 설정됩니다. 새 컨텐츠의 식별 값이 콘솔에 기록됩니다.
+다음 Java 코드 예제는 /Company Home/Test Directory라는 폴더에 *ModitionForm.pdf* 라는 PDF 파일을 추가합니다. 작성자 및 설명 속성이 설정됩니다. 새 컨텐츠의 식별 값이 콘솔에 기록됩니다.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -364,11 +367,11 @@ AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 컨텐츠 서비스에서 컨텐츠 검색(더 이상 사용되지 않음) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스에서 컨텐츠 검색(더 이상 사용되지 않음) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 /Company Home에서 MortgageForm.pdf *라는* PDF 파일을 검색합니다. PDF 파일은 로컬 파일 시스템에 저장되고 이름이 UpdatedModerationForm.pdf *로 지정됩니다*.
+다음 Java 코드 예제는 /Company Home에서 *MorgageForm.pdf* 라는 PDF 파일을 검색합니다. PDF 파일은 로컬 파일 시스템에 저장되고 이름이 UpdatedModerationForm.pdf *로 지정됩니다*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -470,11 +473,11 @@ AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 콘텐츠 서비스 콘텐츠 이동(더 이상 사용되지 않음) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스 콘텐츠 이동(더 이상 사용되지 않음) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 MortgageForm.pdf라는 PDF 파일을 */Company Home/Test Directory* 에서 /Company Home으로 이동합니다. 이동한 컨텐츠의 식별 값이 콘솔에 기록됩니다.
+다음 Java 코드 예제에서는 MortgageForm.pdf라는 PDF 파일 *을 /Company Home/Test Directory에서 /Company Home으로* 이동합니다. 이동한 컨텐츠의 ID 값이 콘솔에 기록됩니다.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -571,11 +574,11 @@ AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 컨텐츠 서비스 컨텐츠 나열(더 이상 사용되지 않음) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스 컨텐츠 나열(더 이상 사용되지 않음) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
 다음 Java 코드 예는 /Company Home에 있는 컨텐츠를 나열합니다. 각 노드 유형 및 노드 이름이 표시됩니다.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -684,11 +687,11 @@ AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 컨텐츠 서비스 컨텐츠 검색(더 이상 사용되지 않음) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 컨텐츠 서비스 컨텐츠 검색(더 이상 사용되지 않음) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
-다음 Java 코드는 /Company Home에서 MortgageForm 텍스트가 포함된 문서를 검색합니다. 하위 폴더도 검색됩니다.
+다음 Java 코드는 /Company Home에서 텍스트 ModerationForm이 포함된 문서를 검색합니다. 하위 폴더도 검색됩니다.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -794,11 +797,11 @@ AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 콘텐츠 서비스 권한 설정(더 이상 사용되지 않음) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 콘텐츠 서비스 권한 설정(더 이상 사용되지 않음) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
-다음 Java 코드 예제에서는 tony blue라는 사용자에 대한 권한을 설정합니다. 지정된 도메인이 기본 도메인입니다. 소비자 권한이 지정되고 노드가 `/Company Home/Test Directory`지정됩니다.
+다음 Java 코드 예제에서는 tony blue라는 사용자에 대한 권한을 설정합니다. 지정된 도메인이 기본 도메인입니다. 소비자 권한이 지정되고 노드가 됩니다 `/Company Home/Test Directory`.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -904,11 +907,11 @@ AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 연결 만들기(더 이상 사용되지 않음) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 연결 만들기(더 이상 사용되지 않음) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
-다음 Java 코드는 XML 데이터 파일과 PDF 양식의 연결을 만듭니다. 이러한 유형의 연결은 LinkedBy로 명명됩니다. PDF 문서에 적용되는 종횡비 링크가 있어야 합니다.
+다음 Java 코드는 XML 데이터 파일과 PDF 양식의 연결을 만듭니다. 이 유형의 연결은 LinkedBy라고 합니다. PDF 문서에는 해당 문서에 적용되는 종횡비 링크가 있어야 합니다.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
