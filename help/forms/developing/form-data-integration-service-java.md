@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -36,7 +36,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 Java 코드 예제에서는 데이터를 PDF 양식으로 가져옵니다. 데이터는 Loan_data.xml이라는 XML 파일 *에* 있으며 PDF 양식은 *ResultLoanForm.pdf라는 PDF 파일로 저장됩니다*. 양식 [데이터 가져오기를 참조하십시오](/help/forms/developing/importing-exporting-data.md#importing-form-data).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -138,7 +138,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 Java 코드 예제에서는 PDF 양식의 데이터를 내보냅니다. 양식 데이터는 *Loan_data.xml이라는 XML 파일로 저장됩니다*. 양식 데이터 [내보내기를 참조하십시오](/help/forms/developing/importing-exporting-data.md#exporting-form-data).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
