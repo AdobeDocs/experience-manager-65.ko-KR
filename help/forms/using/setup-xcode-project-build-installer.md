@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 3%
@@ -90,7 +90,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. 디버그, 릴리스 **및**&#x200B;모든 iOS SDK에 대해 동일한 서명 **을**&#x200B;선택해야 **합니다**.
 1. 파일의 다음 코드를 `AEM Forms-info.plist` 바꿉니다.
 
-   ```java
+   ```xml
    <key>NSAppTransportSecurity</key>
    <dict>
    <key>NSAllowsArbitraryLoads</key>
@@ -100,7 +100,7 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
    을 사용하여 서버를 위한 적절한 호스트 이름 `yourserver.com` 으로 바꾸는 동안 다음을 수행합니다.
 
-   ```java
+   ```xml
    <key>NSAppTransportSecurity</key>
    <dict>
    <key>NSExceptionDomains</key>
