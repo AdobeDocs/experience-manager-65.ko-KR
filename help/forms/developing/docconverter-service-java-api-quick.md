@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -36,7 +36,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 Java 코드 예제에서는 Loan.pdf라는 PDF 문서 *를 LoanArchive.pdf라는 PDF* 파일로 저장한 PDF/ *A 문서로 변환합니다*. (문서 [를 PDF/A 문서로 변환을 참조하십시오](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -139,7 +139,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 Java 코드 예제에서는 입력 PDF 문서가 PDF/A 규격인지 확인합니다. DocConverter 서비스로 전달되는 입력 PDF 문서의 이름은 *LoanArchive.pdf입니다*. 유효성 검사 결과는 *ValidationResults.xml이라는 XML 파일에 기록됩니다*. 자세한 내용은 [프로그래밍 방식으로 PDF/A 규정 준수 여부 결정을 참조하십시오](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
