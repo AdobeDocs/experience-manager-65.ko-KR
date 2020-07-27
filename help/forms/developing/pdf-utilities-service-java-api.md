@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 0%
 
 ---
 
@@ -19,27 +22,27 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 다음 빠른 시작을 PDF 유틸리티 서비스에 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드):Java API 파섹](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서를 XDP 문서로 변환](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API 파섹](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 XDP 문서를 PDF 문서로 변환](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 속성 검색](pdf-utilities-service-java-api.md#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 속성 검색](pdf-utilities-service-java-api.md#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서에 대한 저장 스타일 설정](pdf-utilities-service-java-api.md#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 대한 저장 스타일 설정](pdf-utilities-service-java-api.md#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):PDF 문서 기밀 정보 가리기](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
+[빠른 시작(SOAP 모드): PDF 문서 기밀 정보 가리기](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에서 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 Forms Server 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드):Java API 파섹 {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서를 XDP 문서로 변환 {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
 다음 코드 예제에서는 PDF 문서를 XDP 문서로 변환합니다. (PDF [문서를 XDP 문서로 변환을 참조하십시오](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -136,11 +139,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API 파섹 {#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 XDP 문서를 PDF 문서로 변환 {#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api}
 
 다음 코드 예제에서는 XDP 문서를 PDF 문서로 변환합니다. (XDP [문서를 PDF 문서로 변환을 참조하십시오](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -236,11 +239,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 속성 검색 {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 속성 검색 {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-다음 코드 예제에서는 문서가 PDF 문서인지 여부를 확인하고, 그렇다면 문서를 읽을 수 있는 가장 빠른 Acrobat 버전입니다. (PDF [문서 속성 검색을 참조하십시오](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
+다음 코드 예제에서는 문서가 PDF 문서인지 여부를 확인하고, PDF인 경우 문서를 읽을 수 있는 가장 빠른 Acrobat 버전입니다. (PDF [문서 속성 검색을 참조하십시오](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -353,11 +356,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서에 대한 저장 스타일 설정 {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 대한 저장 스타일 설정 {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
 
-다음 코드 예제에서는 웹 보기를 빠르게 하기 위한 저장 모드를 설정한 다음 PDF 문서를 암호화가 된 암호화 서비스에 전달합니다. 빠른 웹 보기를 위해 저장된 암호화된 PDF 문서는* FastWebViewLoan.pdf*라는 PDF 파일로 저장됩니다. (PDF [문서 저장 모드 설정을 참조하십시오](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes).)
+다음 코드 예제는 빠른 웹 보기를 위해 저장 모드를 설정한 다음 PDF 문서를 암호화된 암호화 서비스에 전달합니다. 빠른 웹 보기를 위해 저장된 암호화된 PDF 문서는* FastWebViewLoan.pdf*라는 PDF 파일로 저장됩니다. (PDF [문서 저장 모드 설정을 참조하십시오](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -493,11 +496,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API 파섹 {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 문서를 PDF/A-2b 문서로 변환 {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 Loan.pdf *라는* PDF 문서를 LoanArchive.pdf라는 PDF 파일로 저장된 PDF/A-2b 문서로 *변환합니다*. (문서를 [PDF/A 문서로 변환을 참조하십시오](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+다음 Java 코드 예제에서는 Loan.pdf라는 PDF 문서 *를 LoanArchive.pdf라는 PDF* 파일로 저장한 PDF/A-2b 문서로 *변환합니다*. (문서 [를 PDF/A 문서로 변환을 참조하십시오](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -581,11 +584,11 @@ public class CreatePDFADocument {
 }
 ```
 
-## 빠른 시작(SOAP 모드):PDF 문서 기밀 정보 가리기 {#quick-start-soap-mode-sanitizing-pdf-documents}
+## 빠른 시작(SOAP 모드): PDF 문서 기밀 정보 가리기 {#quick-start-soap-mode-sanitizing-pdf-documents}
 
-다음 Java 코드 예제에서는 Loan.pdf라는 PDF 문서를 *정리합니다*.
+다음 Java 코드 예제에서는 *Loan.pdf라는 PDF 문서의 기밀 정보를 가리기 시작합니다*.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
