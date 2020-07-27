@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
 
 ## 드롭다운 목록을 동적으로 채우는 절차 {#procedure-to-dynamically-populate-drop-down-lists}
 
-국가 드롭다운 목록에서 선택한 값을 **기준으로** 상태 드롭다운 목록을 채울 **시나리오를** 고려합니다. 국가 드롭다운 목록에서 호주를 **선택하면** 주 **드롭다운** 목록에 오스트레일리아 내 상태가 표시됩니다. 다음 절차에서는 이 작업을 수행하는 방법에 대해 설명합니다.
+국가 **드롭다운 목록에서 선택한 값을 기준으로** 상태 **드롭다운 목록을 채울 시나리오를** 생각해보십시오. [ **국가** ] 드롭다운 목록에서 호주를 선택하면 **주** 드롭다운 목록에 호주 내의 상태가 표시됩니다. 다음 절차에서는 이 작업을 수행하는 방법에 대해 설명합니다.
 
 1. 다음 모듈로 프로젝트를 만듭니다.
 
@@ -144,18 +147,18 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
    }
    ```
 
-1. 앱의 특정 폴더 계층 구조 아래에 드롭다운 노드를 만듭니다(예: /apps/myfolder/demo 아래에 노드 만들기). 노드의 `sling:resourceType` 매개 변수가 서블릿이 가리키는 매개 변수와 같은지 확인합니다(/apps/populatedropdown).
+1. 앱의 특정 폴더 계층 아래에 드롭다운 노드를 만듭니다(예: /apps/myfolder/demo 아래에 노드 만들기). 노드에 대한 매개 `sling:resourceType` 변수가 서블릿이 가리키는 매개 변수와 동일한지 확인합니다(/apps/populated ropdown).
 
    ![드롭다운 노드 만들기](assets/dropdown-node.png)
 
-1. 컨텐츠 노드를 패키지하고 특정 위치(예: /apps/myfolder/demo/install/)에 .jar 파일을 포함합니다. 서버에 동일한 파일을 배포합니다.
-1. 적응형 양식을 만들고 국가 및 상태를 두 개의 드롭다운 목록을 추가합니다. 국가 목록에는 국가 이름이 포함될 수 있습니다. 상태 목록은 첫 번째 목록에서 선택한 국가의 상태 이름을 동적으로 채울 수 있습니다.
+1. 컨텐트 노드를 패키지하고 특정 위치(예: /apps/myfolder/demo/install/)에 .jar 파일을 포함합니다. 서버에 동일한 파일을 배포합니다.
+1. 적응형 양식을 만들고 거기에 국가 및 상태를 두 개의 드롭다운 목록을 추가합니다. 국가 목록에는 국가 이름이 포함될 수 있습니다. 상태 목록은 첫 번째 목록에서 선택한 국가의 상태 이름을 동적으로 채울 수 있습니다.
 
-   국가 목록에 표시할 국가 이름을 추가합니다. [상태] 목록에서 스크립트를 추가하여 [국가] 목록의 국가 이름을 기준으로 채웁니다.
+   국가 목록에 표시할 국가 이름을 추가합니다. 상태 목록에서 국가 목록에 있는 국가의 이름을 기준으로 스크립트를 추가하여 채웁니다.
 
-   ![국가 이름](assets/country-dropdown.png) 추가 ![상태 이름을](assets/state-dropdown.png) 채우는 스크립트 추가 국가 및 ![상태 드롭다운 목록을 사용하여 수집](assets/2dropdowns.png)
+   ![국가 이름](assets/country-dropdown.png) ![추가](assets/state-dropdown.png) 시/도 이름 ![을 채우는 스크립트 추가](assets/2dropdowns.png)
 
-   ```
+   ```javascript
    JSON.parse(
        $.ajax({
            url: "/apps/myfolder/demo/dropdown",
@@ -171,6 +174,6 @@ source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
    .responseText);
    ```
 
-위의 코드가 구현된 샘플 응용 양식(demo/AFdemo)이 포함된 컨텐츠 패키지.
+위의 코드가 구현된 샘플 응용 양식(데모/AFdemo)이 포함된 컨텐츠 패키지
 
 [파일 가져오기](assets/dropdown-demo-content-1.0.1-snapshot.zip)
