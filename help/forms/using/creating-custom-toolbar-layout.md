@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
 
 적응형 양식을 만들 때 양식의 도구 모음 레이아웃을 지정할 수 있습니다. 도구 모음 레이아웃은 양식에 있는 도구 모음의 명령과 레이아웃을 정의합니다.
 
-도구 모음 레이아웃에서는 복잡한 JavaScript 및 CSS 코드를 기반으로 하는 클라이언트측 처리에 크게 의존합니다. 이 코드의 제공을 구성하고 최적화하는 것은 복잡한 문제가 될 수 있습니다. 이 문제를 해결하기 위해 AEM에서는 클라이언트측 라이브러리 폴더를 제공하여 클라이언트측 코드를 저장소에 저장하고 카테고리로 구성하고 각 코드 카테고리가 클라이언트에게 제공될 시기와 방법을 정의할 수 있습니다. 그런 다음 클라이언트측 라이브러리 시스템은 최종 웹 페이지에서 올바른 링크를 만들어 올바른 코드를 로드합니다. 자세한 내용은 AEM에서 [클라이언트측 라이브러리가 작동하는 방식을 참조하십시오.](/help/sites-developing/clientlibs.md)
+도구 모음 레이아웃에서는 복잡한 JavaScript 및 CSS 코드를 기반으로 하는 클라이언트측 처리에 크게 의존합니다. 이 코드의 제공을 구성하고 최적화하는 것은 복잡한 문제가 될 수 있습니다. 이 문제를 해결하기 위해 AEM에서는 클라이언트측 라이브러리 폴더를 제공합니다. 이를 통해 클라이언트측 코드를 저장소에 저장하고, 카테고리로 구성하고, 각 코드 카테고리가 클라이언트에게 제공되는 시기와 방법을 정의할 수 있습니다. 그러면 클라이언트측 라이브러리 시스템은 최종 웹 페이지에서 올바른 링크를 만들어 올바른 코드를 로드합니다. 자세한 내용은 AEM에서 [클라이언트측 라이브러리가 작동하는 방식을 참조하십시오.](/help/sites-developing/clientlibs.md)
 
 ![도구 모음의 샘플 레이아웃](assets/default_toolbar_layout.png)
 
@@ -33,15 +36,15 @@ source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
 
 즉시 사용 가능한 툴바 레이아웃
 
-또한 사용자 정의 도구 모음 레이아웃을 만들 수 있습니다.
+또한 사용자 정의 도구 모음 레이아웃을 만들 수도 있습니다.
 
-다음 절차에서는 도구 모음에 세 가지 작업이 표시되고, 도구 모음의 드롭다운 목록에 다른 작업이 표시되는 사용자 정의 도구 모음을 만드는 절차에 대해 자세히 설명합니다.
+다음 절차에서는 도구 모음에 세 가지 작업이 표시되고 도구 모음의 드롭다운 목록에 다른 작업이 표시되는 사용자 정의 도구 모음을 만드는 단계에 대해 자세히 설명합니다.
 
-첨부된 콘텐츠 패키지에는 아래 설명된 전체 코드가 들어 있습니다. 컨텐츠 패키지를 설치한 후 열어서 사용자 정의 도구 모음 레이아웃 데모를 `/content/forms/af/CustomLayoutDemo.html` 봅니다.
+첨부된 콘텐츠 패키지에는 아래 설명된 전체 코드가 들어 있습니다. 컨텐츠 패키지를 설치한 후 열어서 사용자 정의 도구 모음 레이아웃 데모 `/content/forms/af/CustomLayoutDemo.html` 를 봅니다.
 
 CustomToolbarLayoutDemo.zip
 
-[파일 다운로드](assets/customtoolbarlayoutdemo.zip)사용자 정의 도구 모음 레이아웃
+[파일 데모](assets/customtoolbarlayoutdemo.zip)사용자 정의 툴바 레이아웃 다운로드
 
 ## 사용자 정의 도구 모음 레이아웃을 만들려면 {#layout-1}
 
@@ -53,7 +56,7 @@ CustomToolbarLayoutDemo.zip
 
    `/libs/fd/af/layouts/toolbar`
 
-   예를 들어, `mobileFixedToolbarLayout` 노드를 `/libs/fd/af/layouts/toolbar` 폴더에서 `/apps/customlayout/toolbar` 폴더로 복사합니다.
+   예를 들어, 폴더 `mobileFixedToolbarLayout` 에서 `/libs/fd/af/layouts/toolbar` 폴더로 노드를 `/apps/customlayout/toolbar` 복사합니다.
 
    또한 toolbarCommon.jsp를 `/apps/customlayout/toolbar` 폴더에 복사합니다.
 
@@ -61,21 +64,21 @@ CustomToolbarLayoutDemo.zip
    >
    >사용자 정의 레이아웃을 유지하기 위해 만드는 폴더는 `apps` 폴더를 사용하여 많이 만들어집니다.
 
-1. 복사된 노드의 이름을 다음으로 `mobileFixedToolbarLayout`변경합니다. `customToolbarLayout.`
+1. 복사한 노드 이름 `mobileFixedToolbarLayout`을 `customToolbarLayout.`
 
-   또한 노드에 대한 관련 설명을 제공합니다. 예를 들어 노드의 jcr:description을 도구 모음의 **사용자 정의 레이아웃으로 변경합니다**.
+   또한 노드에 대한 관련 설명을 제공합니다. 예를 들어, 노드의 jcr:description을 도구 모음의 **사용자 정의 레이아웃으로 변경합니다**.
 
-   노드의 `guideComponentType` 속성에 따라 레이아웃 유형이 결정됩니다. 이 경우 레이아웃 유형은 도구 모음이므로 도구 모음 레이아웃 선택 드롭다운에 표시됩니다.
+   노드의 `guideComponentType` 속성은 레이아웃 유형을 결정합니다. 이 경우 레이아웃 유형은 도구 모음이므로 도구 모음 레이아웃 선택 드롭다운에 나타납니다.
 
    ![관련 설명이 있는 노드](assets/toolbar3.png)
 
    관련 설명이 있는 노드
 
-   새 사용자 정의 도구 모음 레이아웃이 적응형 양식 도구 **모음 대화 상자 구성에** 표시됩니다.
+   새 사용자 정의 도구 모음 레이아웃이 응용 **양식 도구 모음 대화 상자 구성에** 표시됩니다.
 
-   ![사용 가능한 도구 모음 레이아웃 목록](assets/toolbar4.png)
+   ![사용 가능한 툴바 레이아웃 목록](assets/toolbar4.png)
 
-   사용 가능한 도구 모음 레이아웃 목록
+   사용 가능한 툴바 레이아웃 목록
 
    >[!NOTE]
    >
@@ -83,7 +86,7 @@ CustomToolbarLayoutDemo.zip
 
 1. 이 사용자 정의 도구 모음 레이아웃을 선택하고 확인을 클릭합니다.
 
-   노드에 clientlib(javascript 및 css)를 추가하고 `/etc/customlayout` 에 clientlib의 참조를 `customToolbarLayout.jsp`포함합니다.
+   노드에 clientlib(javascript 및 css) `/etc/customlayout` `customToolbarLayout.jsp`을 추가하고,
 
    ![customToolbarLayout.css 파일의 경로](assets/toolbar_3.png)
 
@@ -91,7 +94,7 @@ CustomToolbarLayoutDemo.zip
 
    샘플 `customToolbarLayout.jsp`:
 
-   ```php
+   ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <cq:includeClientLib categories="customtoolbarlayout" />
    <c:if test="${isEditMode}">
@@ -109,7 +112,7 @@ CustomToolbarLayoutDemo.zip
 
    샘플 `toolBarCommon.jsp`:
 
-   ```php
+   ```jsp
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
    <%--------------------
    This code iterates over all the tool bar items using the guideToolbar bean.
@@ -164,7 +167,7 @@ CustomToolbarLayoutDemo.zip
    </c:forEach>
    ```
 
-   clientlib 노드 내에 있는 CSS
+   clientlib 노드 내에 있는 CSS:
 
    ```css
    .mobilecustomToolbar .dropdown {
