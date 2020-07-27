@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '793'
+ht-degree: 0%
 
 ---
 
@@ -19,35 +22,35 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 Java API 빠른 시작(SOAP)은 서명 서비스에 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서에 서명 필드 추가](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 서명 필드 추가](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 서명 필드 이름 검색](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 서명 필드 이름 검색](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 서명 필드 수정](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 서명 필드 수정](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서에 디지털 서명](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 디지털 서명](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 XFA 기반 양식에 디지털 서명](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 XFA 기반 양식에 디지털 서명](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 인증](signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 인증](signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 디지털 서명 확인](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 디지털 서명 확인](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 여러 디지털 서명 확인](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 여러 디지털 서명 확인](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 디지털 서명 제거](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 디지털 서명 제거](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms Server를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
+>AEM Forms을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서에 서명 필드 추가 {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 서명 필드 추가 {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 SignatureField1 *이라는* 서명 필드를&#x200B;*Loan.pdf라는 PDF 파일을*&#x200B;기반으로 하는 PDF 문서에 추가합니다. 새 서명 필드가 포함된 PDF 문서는 LoanSig.pdf라는 PDF 파일로 *저장됩니다*. (서명 [필드 추가를 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
+다음 Java 코드 예제에서는 SignatureField1 *이라는* 서명 필드를&#x200B;*Loan.pdf라는 PDF 파일을 기반으로 하는 PDF 문서에 추가합니다*. 새 서명 필드가 포함된 PDF 문서는 *LoanSig.pdf라는 PDF 파일로 저장됩니다*. (서명 필드 [추가를 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -159,11 +162,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 서명 필드 이름 검색 {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 서명 필드 이름 검색 {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-다음 Java 코드 예제에서는 LoanSig.pdf라는 PDF 문서에 있는 서명 *필드의 이름을 검색합니다*. (서명 [필드 이름 검색을 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+다음 Java 코드 예제는 LoanSig.pdf라는 PDF 문서에 있는 서명 필드 *이름을 검색합니다*. (서명 [필드 이름 검색을 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -265,11 +268,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 서명 필드 수정 {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 서명 필드 수정 {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-다음 Java 코드 예제에서는 서명이 서명 필드에 적용될 때 양식의 모든 필드를 잠가 변경이 허용되지 않도록 하여 SignatureField1이라는 서명 필드를 수정합니다. 서명 서비스가 수정된 서명 필드가 포함된 PDF 문서를 반환하면 PDF 문서가 LoanSig.pdf라는 PDF 파일로 저장됩니다. (이 예에서는 Signature 서비스에 전달된 PDF 파일을 덮어씁니다.) (서명 [필드 수정을 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
+다음 Java 코드 예제에서는 서명이 서명 필드에 적용될 때 양식의 모든 필드를 잠그고 변경이 허용되지 않도록 하여 SignatureField1이라는 서명 필드를 수정합니다. 서명 서비스가 수정된 서명 필드가 포함된 PDF 문서를 반환하면 PDF 문서가 RoanSig.pdf라는 PDF 파일로 저장됩니다. 이 예에서는 Signature 서비스에 전달된 PDF 파일을 덮어씁니다. (서명 필드 [수정을 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -393,11 +396,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서에 디지털 서명 {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에 디지털 서명 {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 LoanSig.pdf라는 PDF 파일을 기반으로 하는 PDF *문서에 디지털 서명을*&#x200B;합니다. 보안 자격 증명에 대해 지정된 별칭은 안전하며, 해지 검사가 수행됩니다. CRL 또는 OCSP 서버 정보가 지정되지 않았으므로 PDF 문서에 디지털 서명하는 데 사용되는 인증서에서 서버 정보를 가져옵니다. 서명된 문서는 LoanSigned.pdf라는 PDF 파일로 *저장됩니다*. (PDF [문서에 디지털 서명을 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+다음 Java 코드 예제에서는 RoanSig.pdf라는 PDF 파일을 기반으로 하는 PDF *문서에 디지털 서명을 합니다*. 보안 자격 증명에 대해 지정된 별칭은 안전하며, 취소 확인이 수행됩니다. CRL 또는 OCSP 서버 정보가 지정되지 않았으므로 PDF 문서에 디지털 서명하는 데 사용되는 인증서에서 서버 정보를 얻습니다. 서명된 문서는 LoanSigned.pdf라는 PDF 파일 *로 저장됩니다*. (PDF 문서 [디지털 서명 참조](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents))
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -542,11 +545,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 XFA 기반 양식에 디지털 서명 {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 XFA 기반 양식에 디지털 서명 {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
-다음 Java 코드 예제는 Forms 서비스가 제공하는 대화형 양식에 서명합니다. 양식 서비스에서 반환되는 `com.adobe.idp.Document` 인스턴스는 서명 서비스로 전달됩니다. 서명된 대화형 양식은 LoanXFASigned.pdf라는 *PDF 파일로 저장됩니다*.
+다음 Java 코드 예는 양식 서비스를 통해 렌더링되는 대화형 양식에 서명합니다. 양식 서비스에서 반환되는 `com.adobe.idp.Document` 인스턴스는 서명 서비스로 전달됩니다. 서명된 대화형 양식은 *RoanXFASigned.pdf라는 PDF 파일로 저장됩니다*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -754,11 +757,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 인증 {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 인증 {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예는 LoanSig.pdf라는 PDF 파일을 기반으로 하는 PDF *문서를 인증합니다*. 보안 자격 증명에 대해 지정된 별칭은 안전하며, 해지 검사가 수행되지 않습니다. 인증된 문서는 LoanCertified.pdf라는 PDF 파일로 *저장됩니다*. (PDF [문서 인증을 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
+다음 Java 코드 예는 RoanSig.pdf라는 PDF 파일을 기반으로 하는 PDF 문서 *를 인증합니다*. 보안 자격 증명에 대해 지정된 별칭은 안전하며, 해지 확인이 수행되지 않습니다. 인증된 문서는 LoanCertified.pdf라는 PDF 파일 *로 저장됩니다*. (PDF [문서 인증을 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -903,11 +906,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 디지털 서명 확인 {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 디지털 서명 확인 {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-다음 Java 코드 예제에서는 LoanSigned.pdf라는 PDF 파일을 기반으로 서명된 PDF 문서에 있는 디지털 서명을 확인합니다. 확인 시간이 현재 시간으로 설정되고 취소 확인 옵션이 최상의 노력으로 설정되어 있습니다. (디지털 [서명 확인을 참조하십시오](#verifying-digital-signatures).)
+다음 Java 코드 예제에서는 LoanSigned.pdf라는 PDF 파일을 기반으로 서명된 PDF 문서에 있는 디지털 서명을 확인합니다. 확인 시간이 현재 시간으로 설정되고 취소 확인 옵션이 최선의 노력을 하도록 설정됩니다. (디지털 서명 [확인을 참조하십시오](#verifying-digital-signatures).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-signatures-client.jar
@@ -1067,11 +1070,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 여러 디지털 서명 확인 {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 여러 디지털 서명 확인 {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-다음 Java 코드 예제에서는 LoanAllSigs.pdf라는 PDF 파일을 기반으로 서명된 PDF 문서에 있는 여러 디지털 서명을 확인합니다. 확인 시간이 현재 시간으로 설정되고 취소 확인 옵션이 최상의 노력으로 설정되어 있습니다. (여러 [디지털 서명 확인을 참조하십시오](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
+다음 Java 코드 예제에서는 LoanAllSigs.pdf라는 PDF 파일을 기반으로 서명된 PDF 문서에 있는 여러 디지털 서명을 확인합니다. 확인 시간이 현재 시간으로 설정되고 취소 확인 옵션이 최선의 노력을 하도록 설정됩니다. (여러 [디지털 서명 확인을 참조하십시오](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1229,11 +1232,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 디지털 서명 제거 {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 디지털 서명 제거 {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
 
-다음 Java 코드 예제에서는 SignatureField1이라는 서명 필드에서 디지털 서명을 *제거합니다*. 서명 필드가 포함된 PDF 파일의 이름은 LoanSigned.pdf *입니다*. (디지털 [서명 제거를 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
+다음 Java 코드 예제에서는 *SignatureField1이라는*&#x200B;서명 필드에서 디지털 서명을 제거합니다. 서명 필드가 포함된 PDF 파일의 이름은 *LoanSigned.pdf입니다*. (디지털 서명 [제거를 참조하십시오](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
