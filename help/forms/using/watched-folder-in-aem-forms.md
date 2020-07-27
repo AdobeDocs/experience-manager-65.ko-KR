@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '7153'
 ht-degree: 0%
@@ -160,7 +160,7 @@ The
 
    많은 양의 파일을 삭제하는 경우 일괄 처리 크기를 크게 만듭니다. 예를 들어, 감시 폴더 종단점에서 시작한 서비스가 분당 700개의 파일을 처리할 수 있고 사용자가 파일을 동일한 속도로 입력 폴더에 드롭한 다음, 일괄 처리 크기를 350초로 설정하고 투표 간격을 30초로 설정하면 감시 폴더를 너무 자주 검색하지 않고도 감시 폴더 성능을 지원할 수 있습니다.
 
-   파일이 감시 폴더에 드롭되면 입력에 있는 파일이 나열됩니다. 스캔하는 매 초마다 성능이 저하될 수 있습니다. 스캔 간격을 늘리면 성능이 향상될 수 있습니다. 삭제할 파일의 볼륨이 작은 경우 그에 따라 [일괄 처리 크기] 및 [투표 간격]을 조정합니다. 예를 들어 초당 10개의 파일이 삭제되는 경우 pollInterval을 1초로 설정하고 [일괄 처리 크기]를 10으로 설정해 보십시오
+   파일을 감시 폴더에 드롭하면 입력에 있는 파일이 나열되므로 초당 스캔하는 경우 성능이 저하될 수 있습니다. 스캔 간격을 늘리면 성능이 향상될 수 있습니다. 삭제할 파일의 볼륨이 작은 경우 그에 따라 [일괄 처리 크기] 및 [투표 간격]을 조정합니다. 예를 들어 초당 10개의 파일이 삭제되는 경우 pollInterval을 1초로 설정하고 [일괄 처리 크기]를 10으로 설정해 보십시오
 
 * **throttleOn(부울)**: 이 옵션을 선택하면 AEM Forms이 지정된 시간에 처리하는 감시 폴더 작업 수가 제한됩니다. 최대 작업 수는 배치 크기 값으로 결정됩니다. 기본 값이 true입니다. 제한 [정보를 참조하십시오](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).
 
@@ -360,7 +360,7 @@ processWorkflowContext()에 대한 인수는 com.adobe.aemfd.watchfolder.workflo
 
 ECMAScript는 워크플로우 컨텍스트 서비스에 대한 참조를 가져와서 WorkflowContextProcessor 인터페이스의 구현을 만듭니다. WorkflowContextProcessor 구현은 입력 파일을 받아 파일을 임시 위치에 복사하고 복사한 파일을 나타내는 문서를 반환합니다. Boolean 변수 purgePrevious의 값을 기준으로 현재 작업 흐름 인스턴스에서 단계가 시작된 경우 현재 단계에서는 지난 번에 생성된 출력을 동일한 단계로 삭제합니다. 마지막으로 wfSvc.execute 메서드는 WorkflowContextProcessor 구현을 실행하도록 호출됩니다. 출력 문서의 컨텐츠는 감시 폴더 구성 노드에 언급된 물리적 경로의 결과 폴더에 저장됩니다.
 
-```java
+```javascript
 log.error("Watch-folder workflow script called for step: " + graniteWorkItem.getNode().getTitle());
 var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
 // Custom WorkflowContextProcessor implementation which defines the processWorkflowContext() method purely in JS
@@ -613,7 +613,7 @@ ECMAScript는 PDF Generator의 createPDF API를 사용하여 Microsoft Word(.doc
 
 1. PDFG 폴더에서 pdfg-openOffice-sample.ecma라는 파일을 만들고 파일에 다음 코드를 추가합니다.
 
-   ```java
+   ```javascript
    var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
    // Custom ContentProcessor implementation which defines the processInputs() method purely in JS
    var impl = { processWorkflowContext: function (wrkfContext) {
