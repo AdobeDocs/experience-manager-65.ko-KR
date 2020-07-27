@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -77,6 +77,7 @@ AEM Forms 포털 초안 및 제출 구성 요소를 사용하면 양식을 초�
    메타데이터 테이블의 다른 이름을 제공하려면 다음을 수행하십시오.
 
    * 웹 콘솔 구성에서 양식 포털 메타데이터 서비스 샘플 구현을 찾아 클릭합니다. 데이터 소스, 메타데이터/추가 메타데이터 테이블 이름의 값을 변경할 수 있습니다.
+
    데이터 테이블에 대해 다른 이름을 제공하려면
 
    * 웹 콘솔 구성에서 양식 포털 데이터 서비스 샘플 구현을 찾아 클릭합니다. 데이터 소스 및 데이터 테이블 이름의 값을 변경할 수 있습니다.
@@ -162,6 +163,7 @@ AEM Forms 포털 초안 및 제출 구성 요소를 사용하면 양식을 초�
 >
 > * MySQL용 JDBC 드라이버는 샘플과 함께 제공되지 않습니다. JDBC 접속 풀을 구성하는 데 필요한 정보를 제공하고 프로비저닝에 대해 프로비저닝했는지 확인합니다.
 > * 동일한 데이터베이스를 사용하려면 작성자 및 게시 인스턴스를 가리킵니다. 모든 작성자 및 게시 인스턴스에 대해 JDBC 연결 URI 필드의 값이 동일해야 합니다.
+
 >
 
 
@@ -335,7 +337,7 @@ Forms 포털의 데이터베이스 구현에서는 추가 메타데이터 테이
 
 1. 노드를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 새 파일]**&#x200B;만들기를 클릭한 다음 확장자가 .txt인 파일을 만듭니다. 예를 들어 새로 만든 .txt 파일에 `js.txt`다음 코드를 추가하고 모두 **[!UICONTROL 저장을 클릭합니다]**.
 
-   ```
+   ```javascript
    #base=util
     util.js
    ```
@@ -346,7 +348,7 @@ Forms 포털의 데이터베이스 구현에서는 추가 메타데이터 테이
 
 1. util.js 파일에 다음 코드를 추가하고 모두 **[!UICONTROL 저장을 클릭합니다]**. 이 코드는 파일 이름의 길이를 확인합니다.
 
-   ```
+   ```javascript
    /*
     * ADOBE CONFIDENTIAL
     * ___________________
