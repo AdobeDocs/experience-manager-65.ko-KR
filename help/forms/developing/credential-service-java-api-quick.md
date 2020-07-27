@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 0%
 
 ---
 
@@ -19,25 +22,25 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 자격 증명 서비스에서 Java API 빠른 시작(SOAP)을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 자격 증명 가져오기](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 자격 증명 가져오기](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 자격 증명 삭제](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 자격 증명 삭제](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 FormsServer를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
+>AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 FormsServer를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
 >웹 서비스를 사용하여 자격 증명 서비스 작업을 수행할 수 없습니다.
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 자격 증명 가져오기 {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 자격 증명 가져오기 {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-다음 코드 예제에서는 cred.p12라는 파일을 기반으로 자격 증명을 *가져옵니다*. 자격 증명을 가져오는 데 사용되는 별칭 값은 입니다 `Secure`. (Trust [Manager API를 사용하여 자격 증명 가져오기를 참조하십시오](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+다음 코드 예제에서는 cred.p12 *라는 파일을 기반으로 자격 증명을 가져옵니다*. 자격 증명을 가져오는 데 사용되는 별칭 값입니다 `Secure`. (Trust [Manager API를 사용하여 자격 증명 가져오기를 참조하십시오](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -134,11 +137,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 자격 증명 삭제 {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 자격 증명 삭제 {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-다음 코드 예제에서는 별칭 값 *보안을*&#x200B;기반으로 자격 증명을 삭제합니다. (Trust [Manager API를 사용하여 자격 증명 삭제를 참조하십시오](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+다음 코드 예제에서는 별칭 값 *보안을 기반으로 자격 증명을 삭제합니다*. (Trust [Manager API를 사용하여 자격 증명 삭제를 참조하십시오](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
