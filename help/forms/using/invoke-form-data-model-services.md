@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
-source-git-commit: adf1ac2cb84049ca7e42921ce31135a6149ef510
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 API는 응용 양식 필드 내에서 서비스를 호출합니다. `guidelib.dataIntegrationUtils.executeOperation` API 구문은 다음과 같습니다.
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
 API의 구조는 `guidelib.dataIntegrationUtils.executeOperation` 서비스 작업에 대한 세부 사항을 지정합니다. 구조의 구문은 다음과 같습니다.
 
-```
+```javascript
 var operationInfo = {
 formDataModelId,
 operationTitle,
@@ -95,7 +95,7 @@ API 구조는 서비스 작업에 대해 다음과 같은 세부 사항을 지�
 
 공정 `getAccountById` 은 인수 입력으로 `employeeID` 양식 필드의 값을 `empId` 가져와서 해당 사원의 사원명, 계정 번호 및 계정 잔액을 반환합니다. 출력 값은 지정된 양식 필드에 채워집니다. 예를 들어, 인수 `name` 의 값은 양식 요소 `fullName` 에서 채워지고 양식 요소의 `accountNumber` 인수에 대한 값이 `account` 채워집니다.
 
-```
+```javascript
 var operationInfo = {
 "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeAccount",
 "operationName": "getAccountDetails"
@@ -115,7 +115,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 콜백 함수와 함께 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 양식 데이터 모델 서비스를 호출할 수도 있습니다. API 구문은 다음과 같습니다.
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
@@ -131,7 +131,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, c
 >
 > 콜백 함수를 사용하는 경우 `success` 출력 값이 지정된 양식 필드에 채워지지 않습니다.
 
-```
+```javascript
 var operationInfo = {
     "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
     "operationTitle": "GETOrder",
