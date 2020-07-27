@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a18a018181a779b9f48ef3e39c26410a1bc4919b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1638'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -133,7 +133,7 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 구성이 있습니다. 필�
 
 1. sling.properties 파일에 다음 속성을 추가합니다.
 
-   ```
+   ```shell
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
    sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
@@ -147,7 +147,7 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 구성이 있습니다. 필�
 
 1. 브라우저 창에서 AEM Configuration Manager를 엽니다. 기본 URL은 https://&#39;[server]:[port]&#39;/system/console/configMgr입니다.
 1. 방화벽 **구성을 검색하고 엽니다**.
-1. 필드에 **sun.util.calendar** 패키지를 **허용 목록에 추가하다 추가합니다** . [저장]을 클릭합니다.
+1. 필드에 **sun.util.calendar** 패키지를 **허용 목록에 추가하다 추가합니다** . 저장을 클릭합니다.
 1. 모든 작성자 및 게시 인스턴스에 대해 1-3단계를 반복합니다.
 
 ### 설치 후 구성(선택 사항) {#optional-post-installation-configurations}
@@ -166,7 +166,7 @@ Dispatcher이 AEM에 대한 캐싱 및 로드 밸런싱 도구를 사용하고 �
 
 1. 레퍼러 필터 서비스를 구성합니다.
 
-   Apache Felix 구성 관리자에 관리자로 로그인합니다. 구성 관리자의 기본 URL은 https://&#39;server&#39;:[port_number]/system/console/configMgr입니다. [ **구성** ] 메뉴에서 [ **아파치 슬링 레퍼러 필터** ] 옵션을 선택합니다. 호스트 허용 필드에서 디스패처의 호스트 이름을 입력하여 레퍼러로 허용하고 저장을 **클릭합니다**. 항목의 형식은 다음과 같습니다 `https://'[server]:[port]'`.
+   Apache Felix 구성 관리자에 관리자로 로그인합니다. 구성 관리자의 기본 URL은 https://&#39;server&#39;:[port_number]/system/console/configMgr입니다. [ **구성** ] 메뉴에서 [ **아파치 슬링 레퍼러 필터** ] 옵션을 선택합니다. 호스트 허용 필드에서 디스패처의 호스트 이름을 입력하여 레퍼러로 허용하고 저장을 **클릭합니다**. The format of the entry is `https://'[server]:[port]'`.
 
 #### 캐시 구성 {#configure-cache}
 
