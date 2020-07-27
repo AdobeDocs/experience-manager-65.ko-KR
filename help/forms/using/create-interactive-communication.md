@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3271ad3a7d0daac731803975e12d79b77905068a
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6120'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,7 @@ Interactive Communications는 개인화되고 인터랙티브한 커뮤니케이
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   문서 조각을 탭하고 ![configure_icon](assets/configure_icon.png) (구성)을 탭한 다음 대화형 통신 **[!UICONTROL 의 사이드 킥에서]** 속성을 탭합니다. 변수 **[!UICONTROL 및 데이터 모델 개체]** 섹션에는 숨겨진 변수 및 문서 조각에 사용된 데이터 모델 개체를 비롯한 변수가 나열됩니다. 각 데이터 모델 개체 또는 변수 옆에 있는 ![편집](assets/edit.svg) (편집) 아이콘을 사용하여 속성을 편집합니다. 또한 인쇄 채널을 사용하여 웹 채널에서 [자동](#synchronize) 생성된 ![](assets/cancelinheritance.png) 문서 조각의 경우 각 데이터 모델 개체 및 변수 옆에 있는 [(상속 취소) 아이콘을 사용하여 상속을](#cancelinheritance) 취소하고편집할 수 있습니다.
+   문서 조각을 탭하고 ![configure_icon](assets/configure_icon.png) (구성)을 탭한 다음 대화형 통신 **[!UICONTROL 의 사이드 킥에서]** 속성을 탭합니다. 변수 **[!UICONTROL 및 데이터 모델 개체]** 섹션에는 숨겨진 변수 및 문서 조각에 사용된 데이터 모델 개체를 비롯한 변수가 나열됩니다. 각 데이터 모델 개체 또는 변수 옆에 있는 ![편집](assets/edit.svg) (편집) 아이콘을 사용하여 속성을 편집합니다. 또한 인쇄 채널을 사용하여 웹 채널에서 [자동](#synchronize) 생성된 ![문서 조각에 대해서는 각 데이터 모델 개체 및 변수 옆에 있는](assets/cancelinheritance.png) 취소 상속 [(상속 취소) 아이콘을 사용하여 상속을](#cancelinheritance) 취소하고편집할 수 있습니다.
 
 1. 웹 채널에서 웹 채널을 선택하고 구성 요소를 추가하려면 **[!UICONTROL 구성 요소를 누릅니다]**. 필요에 따라 대화형 커뮤니케이션의 웹 채널에 구성 요소를 드래그하여 놓고 구성합니다.
 
@@ -386,12 +386,12 @@ Interactive Communications는 개인화되고 인터랙티브한 커뮤니케이
 
 #### 표 셀의 텍스트 추가 또는 편집 {#addedittexttable}
 
-1. 표 셀의 기본 텍스트 상자를 선택하고 ![](assets/edit.png) (편집)을 누릅니다.
-1. 표 셀에 텍스트를 입력하고 을 눌러 ![](assets/done_icon.png) 저장합니다.
+1. 표 셀의 기본 텍스트 상자를 선택하고 ![편집](assets/edit.png) (편집)을 누릅니다.
+1. 표 셀에 텍스트를 입력하고 ![done_icon](assets/done_icon.png) 을 눌러 저장합니다.
 
 #### 테이블 셀과 데이터 모델 개체 요소 간의 바인딩 만들기 {#createbindingtablecells}
 
-1. 표 행에서 기본 텍스트 상자를 선택하고 ![](assets/edit.png) (편집)을 누릅니다.
+1. 표 행에서 기본 텍스트 상자를 선택하고 ![편집](assets/edit.png) (편집)을 누릅니다.
 1. 데이터 모델 개체 드롭다운 목록을 누르고 속성을 선택합니다.
 1. 을 눌러 저장하고 테이블 셀과 데이터 모델 개체 속성 간의 바인딩을 생성합니다.
 
@@ -399,10 +399,10 @@ Interactive Communications는 개인화되고 인터랙티브한 커뮤니케이
 
 #### 표 셀의 텍스트에 대한 하이퍼링크 만들기 {#createhyperlinktable}
 
-1. 표 셀의 기본 텍스트 상자를 선택하고 ![](assets/edit.svg) (편집)을 누릅니다.
+1. 표 셀의 기본 텍스트 상자를 선택하고 ![편집](assets/edit.svg) (편집)을 누릅니다.
 1. 표 셀의 텍스트를 선택하고 하이퍼링크 아이콘을 누릅니다.
 1. 경로 필드에 URL을 **지정합니다** .
-1. 탭 ![](assets/done_icon.png) 을 눌러 하이퍼링크 속성을 저장합니다.
+1. done_icon ![을](assets/done_icon.png) 눌러 하이퍼링크 속성을 저장합니다.
 
 ![하이퍼링크 만들기](assets/create_hyperlink_table_new.png)
 
@@ -426,9 +426,9 @@ Interactive Communication에서 테이블의 열을 기반으로 데이터를 �
 
 정렬을 활성화하려면
 
-1. 테이블을 선택하고 ![](assets/configure_icon.png) (구성)을 누릅니다. 대화형 통신 사이드 킥의 **컨텐츠** 브라우저를 사용하여 테이블을 선택할 수도 있습니다.
+1. 테이블을 선택하고 ![configure_icon](assets/configure_icon.png) (구성)을 누릅니다. 대화형 통신 사이드 킥의 **컨텐츠** 브라우저를 사용하여 테이블을 선택할 수도 있습니다.
 1. 정렬 **활성화를 선택합니다.**
-1. 표 속성 ![](assets/done_icon.png) 을 저장하려면 을 누릅니다. 열 머리글의 위쪽 및 아래쪽 화살표는 정렬이 활성화되었음을 나타냅니다.
+1. done_icon ![을](assets/done_icon.png) 눌러 표 속성을 저장합니다. 열 머리글의 위쪽 및 아래쪽 화살표는 정렬이 활성화되었음을 나타냅니다.
 
    ![정렬 사용](assets/enable_sorting_new-1.png)
 
@@ -479,7 +479,7 @@ Interactive Communication에서 테이블의 열을 기반으로 데이터를 �
 단추를 추가하고 규칙을 정의하려면
 
 1. 웹 템플릿에서 루트 패널을 누르고 **+** 를 눌러 **단추** 구성 요소를 대화형 통신에 추가합니다.
-1. 단추 구성 요소를 누르고 단추 탭 ![](assets/edit-rules.png) 에서 규칙을 정의하려면 누릅니다.
+1. 단추 구성 요소를 누르고 ![편집 규칙](assets/edit-rules.png) 을 눌러 단추 탭에서 규칙을 정의합니다.
 1. [ **시기** ] 섹션 **의 단추 드롭다운 목록 상태에서 클릭한** 것을 선택합니다.
 1. Then **섹션에서** :
 
