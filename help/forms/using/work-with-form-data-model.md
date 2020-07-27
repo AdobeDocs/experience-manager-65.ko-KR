@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '4102'
 ht-degree: 0%
@@ -200,7 +200,7 @@ https://&lt;server-name>:&lt;포트 번호>/crx/de/index.jsp#/home/users/
 
 1. head.jsp 파일에 다음 텍스트를 포함합니다.
 
-   ```
+   ```jsp
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
     request.setAttribute("paramMap",paraMap);%>
@@ -242,6 +242,7 @@ https://&lt;server-name>:&lt;포트 번호>/crx/de/index.jsp#/home/users/
    * 연결 유형(하나 대1 또는 하나 대 다)을 선택합니다.
    * 연결할 데이터 모델 개체를 선택합니다.
    * 선택한 모델 개체에서 데이터를 읽을 읽기 서비스를 선택합니다. 읽기 서비스 인수가 나타납니다. 필요에 따라 인수를 변경하려면 편집하고 연결할 데이터 모델 개체의 속성에 바인딩합니다.
+
    다음 예에서 종속 데이터 모델 개체의 읽기 서비스에 대한 기본 인수는 입니다 `dependentid`.
 
    ![add-association-example](assets/add-association-example.png)
@@ -279,6 +280,7 @@ https://&lt;server-name>:&lt;포트 번호>/crx/de/index.jsp#/home/users/
    * **데이터 모델 개체**: 읽기 및 쓰기 서비스를 지정하고 인수를 편집합니다.
    * **속성**: 속성의 유형, 하위 유형 및 형식을 지정합니다. 선택한 속성이 데이터 모델 개체의 기본 키인지 여부를 지정할 수도 있습니다.
    * **서비스**: 서비스에 대한 입력 모델 개체, 출력 유형 및 인수를 지정합니다. Get 서비스의 경우 배열을 반환할지 여부를 지정할 수 있습니다.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    가져오기 서비스의 속성 편집 대화 상자
@@ -347,7 +349,7 @@ OData 서비스에서 탐색 속성은 두 데이터 모델 개체 간의 연결
 
 양식 데이터 모델에서 OData 서비스를 구성할 때 엔티티 컨테이너의 모든 탐색 속성은 양식 데이터 모델의 서비스를 통해 사용할 수 있게 됩니다. TripPin OData 서비스의 이 예에서, 양식 데이터 모델에서 하나의 서비스를 사용하여 개체 컨테이너의 3개 탐색 속성을 읽을 수 `Person` `GET LINK` 있습니다.
 
-다음은 TripPin OData 서비스 엔터티의 3개 탐색 속성에 대한 결합된 서비스인 양식 데이터 모델의 `GET LINK of Person /People` `Person` 서비스를 강조 표시합니다.
+다음은 TripPin OData 서비스 엔티티의 3개 탐색 속성에 대한 결합된 서비스인 양식 데이터 모델의 `GET LINK of Person /People` `Person` 서비스를 강조 표시합니다.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
@@ -508,24 +510,24 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
 
 이 예에서 입력 데이터는 Swagger 파일에 정의된 최대, 최소 및 필수 제한 사항을 기반으로 검증됩니다. 입력 데이터는 주문 ID가 있고 해당 값이 1과 10 사이인 경우에만 검증 기준을 충족합니다.
 
-```xml
-parameters: [
-{
-name: "orderId",
-in: "path",
-description: "ID of pet that needs to be fetched",
-required: true,
-type: "integer",
-maximum: 10,
-minimum: 1,
-format: "int64"
-}
-]
+```json
+   parameters: [
+   {
+   name: "orderId",
+   in: "path",
+   description: "ID of pet that needs to be fetched",
+   required: true,
+   type: "integer",
+   maximum: 10,
+   minimum: 1,
+   format: "int64"
+   }
+   ]
 ```
 
 입력 데이터가 유효성 검사 기준을 충족하지 않을 경우 예외가 표시됩니다. 로그 수준이 **디버그로**&#x200B;설정된 경우 오류가 **error.log** 파일에 기록됩니다. 예,
 
-```java
+```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
 ```
 
