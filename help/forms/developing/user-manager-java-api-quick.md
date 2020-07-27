@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -46,7 +46,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 코드 예제에서는 Wendy Blue라는 사용자를 AEM Forms에 추가합니다. (사용자 [추가를 참조하십시오](/help/forms/developing/users.md#adding-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -164,7 +164,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 코드 예제에서는 AEM Forms에서 Wendy Blue라는 사용자를 삭제합니다. (사용자 [삭제를 참조하십시오](/help/forms/developing/users.md#deleting-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -260,7 +260,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 코드 예제에서는 로컬 사용자와 사용자가 속한 로컬 그룹을 찾습니다. (See [Managing Users and Groups](/help/forms/developing/users.md#managing-users-and-groups).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -384,7 +384,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 코드 예제에서는 서비스 사용자 역할을 주체에 지정하고 주체가 보유한 역할을 인쇄한 다음 주체로부터 해당 역할을 제거합니다. 이 빠른 시작을 위해 두 개의 서비스가 호출됩니다. DirectoryManager 서비스 및 AuthorizationManager 서비스.역할 및 권한 [관리를 참조하십시오](/help/forms/developing/users.md#managing-roles-and-permissions).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -527,7 +527,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 Java 코드 예는 사용자 관리 API를 사용하여 사용자를 동기화합니다. 프로그램 [방식으로 사용자 동기화를 참조하십시오](/help/forms/developing/users.md#programmatically-synchronizing-users).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -636,7 +636,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 코드 예제에서는 Wendy Blue라는 사용자를 AEM Forms에 추가합니다. (사용자 [추가를 참조하십시오](/help/forms/developing/users.md#adding-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -754,7 +754,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 다음 코드 예제에서는 AEM Forms에 AdobeGroup이라는 그룹을 만듭니다. (그룹 [만들기를 참조하십시오](/help/forms/developing/users.md#creating-groups).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -906,7 +906,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 사용자 관리 API를 사용하여 환경 설정 노드를 관리하는 다음 Java 코드 모델입니다. ( 기본 설정 노드 [프로그래밍 방식 관리를 참조하십시오](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1009,7 +1009,7 @@ public class ManagePreferences {
 
 사용자 관리 API를 사용하여 환경 설정 노드를 관리하는 다음 Java 코드 모델( 프로그래밍 방식 [으로 환경 설정 노드 관리 참조](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
