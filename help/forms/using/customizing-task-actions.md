@@ -1,26 +1,29 @@
 ---
 title: 작업 작업 사용자 지정
 seo-title: 작업 작업 사용자 지정
-description: 작업 동작의 모양을 사용자 정의하고, 작업에 이미지만 사용하고, 경로 작업에 사용되는 이미지를 사용자 지정할 수 있습니다.
-seo-description: 작업 동작의 모양을 사용자 정의하고, 작업에 이미지만 사용하고, 경로 작업에 사용되는 이미지를 사용자 지정할 수 있습니다.
+description: 작업 작업의 모양을 사용자 정의하고, 작업에 이미지만 사용하고, 경로 작업에 사용되는 이미지를 사용자 지정할 수 있습니다.
+seo-description: 작업 작업의 모양을 사용자 정의하고, 작업에 이미지만 사용하고, 경로 작업에 사용되는 이미지를 사용자 지정할 수 있습니다.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
 
 # 작업 작업 사용자 지정 {#customizing-task-actions}
 
-AEM Forms 작업 영역을 사용하여 작업 작업을 사용자 정의할 수 있습니다. 작업 작업을 사용자 정의하기 전에 AEM Forms 작업 영역 사용자 [지정에](/help/forms/using/generic-steps-html-workspace-customization.md)대한 일반 단계에 나열된 단계를 따르십시오.
+AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수 있습니다. 작업 작업을 사용자 정의하기 전에 AEM Forms 작업 공간 사용자 지정을 위한 [일반 단계에 나와 있는 단계를 따라야 합니다](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## 텍스트 스타일 사용자 정의 {#customizing-text-style}
 
-텍스트 스타일을 사용자 정의하려면 `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가합니다.
+텍스트 스타일을 사용자 정의하려면 파일에 다음 코드 조각을 `/apps/ws/css/newStyle.css` 추가합니다.
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -129,17 +132,17 @@ AEM Forms 작업 영역을 사용하여 작업 작업을 사용자 정의할 수
 }
 ```
 
-## 동작에 대한 이미지만 표시 {#showing-only-images-for-actions}
+## 작업에 사용할 이미지만 표시 {#showing-only-images-for-actions}
 
-동작에 대한 이미지만 표시하려면 경로 작업에 사용되는 이미지를 사용자 정의합니다. 자세한 내용은 경로 [작업을 위한 이미지를 참조하십시오](/help/forms/using/images-route-actions.md).
+작업에 사용할 이미지만 표시하려면 경로 작업에 사용되는 이미지를 사용자 정의합니다. 자세한 내용은 경로 [작업을 위한 이미지를 참조하십시오](/help/forms/using/images-route-actions.md).
 
 ### 작업 목록 작업 팝업 메뉴 {#task-list-task-action-nbsp-pop-up-menu}
 
-1. AEM Forms 작업 영역 작업 목록 작업 팝업 메뉴의 항목을 사용자 정의하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 AEM Forms 작업 [영역 코드 작성을 참조하십시오.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. AEM Forms 작업 공간 작업 목록 작업 작업 팝업 메뉴의 항목을 사용자 정의하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 AEM Forms 작업 공간 코드 [작성을 참조하십시오.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. /libs/ws/js/runtime/templates/task.html을 복사하여 다음 코드 조각을 `/apps/ws/js/runtime/templates/task.html`바꿉니다.
 
-   ```
+   ```html
    // Orignal code
    <div class="taskActionsPopUp">
            <!--START_TASKACTIONS-->
@@ -174,7 +177,7 @@ AEM Forms 작업 영역을 사용하여 작업 작업을 사용자 정의할 수
        </div>
    ```
 
-   ```
+   ```html
    //New code
    
    <div class="taskActionsPopUp">
@@ -260,14 +263,14 @@ AEM Forms 작업 영역을 사용하여 작업 작업을 사용자 정의할 수
    }
    ```
 
-### 작업 세부 사항 작업 팝업 메뉴 {#task-details-task-action-pop-up-menu}
+### 작업 세부 정보 작업 팝업 메뉴 {#task-details-task-action-pop-up-menu}
 
 세부 정보 작업 팝업 메뉴를 사용자 정의하려면 다음 단계를 수행합니다.
 
 * /libs/ws/js/runtime/templates/taskdetails.html 파일을 `/apps/ws/js/runtime/templates/` 폴더에 복사합니다.
-* 텍스트 대신 앵커 태그 내에 아이콘 태그를 캡슐화합니다. 예를 들어, 아래에 나열된 *새 코드는* 앵커 태그 내에 icon 태그를 캡슐화합니다.
+* 텍스트 대신 앵커 태그 내에 아이콘 태그를 캡슐화합니다. 예를 들어, 아래에 *나열된 새 코드는* 앵커 태그 내에 icon 태그를 캡슐화합니다.
 
-```
+```html
 // Original code
 <div class="taskActionsPopUp">
         <!--START_ACTIONBUTTONGROUP-->
@@ -310,7 +313,7 @@ AEM Forms 작업 영역을 사용하여 작업 작업을 사용자 정의할 수
     </div>
 ```
 
-```
+```html
 //New code
 
 <div class="taskActionsPopUp">
