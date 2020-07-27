@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 1%
@@ -226,7 +226,7 @@ Adobe Asset Composer 빌딩 블록 번들을 다시 시작한 후 사용자 지�
    1. ccrcustomization.js 파일을 두 번 클릭하여 CRX에서 엽니다.
    1. 파일에서 다음 코드를 붙여 넣고 모두 **저장을 클릭합니다**.
 
-      ```
+      ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
         * One instance of handler will be created for each action.
         * CM.domain.CCRCustomActionHandler is actionHandler class.
@@ -380,7 +380,7 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 
 1. **가져오기**&#x200B;를 클릭합니다. 
 
-#### Allowlist 서비스 목록에 ServiceName 추가 {#adding-servicename-to-the-allowlist-service-list}
+#### 서비스 목록에 허용 목록에 추가하다 ServiceName 추가 {#adding-servicename-to-the-allowlist-service-list}
 
 AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 언급합니다.
 
