@@ -1,28 +1,31 @@
 ---
 title: 오류 대화 상자 사용자 정의
 seo-title: 오류 대화 상자 사용자 정의
-description: LiveCycle AEM Forms 작업 영역의 오류 대화 상자를 사용자 정의하여 다른 오류 설명을 추가하는 방법
-seo-description: LiveCycle AEM Forms 작업 영역의 오류 대화 상자를 사용자 정의하여 다른 오류 설명을 추가하는 방법
+description: LiveCycle AEM Forms 작업 영역의 오류 대화 상자를 사용자 정의하여 다른 오류 설명을 추가하는 방법.
+seo-description: LiveCycle AEM Forms 작업 영역의 오류 대화 상자를 사용자 정의하여 다른 오류 설명을 추가하는 방법.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 4%
 
 ---
 
 
 # 오류 대화 상자 사용자 정의 {#customizing-error-dialogs}
 
-AEM Forms 작업 영역에서 오류 대화 상자를 사용자 정의할 수 있습니다. AEM [Forms 작업 영역 사용자 지정에](/help/forms/using/generic-steps-html-workspace-customization.md) 대한 일반 단계를 수행한 다음 오류 대화 상자를 사용자 정의합니다.
+AEM Forms 작업 영역을 사용하면 오류 대화 상자를 사용자 정의할 수 있습니다. AEM Forms 작업 공간 사용자 정의 [에 대한 일반 단계를 수행한](/help/forms/using/generic-steps-html-workspace-customization.md) 다음 단계에 따라 오류 대화 상자를 사용자 정의합니다.
 
 ## 텍스트 사용자 정의 {#customizing-text}
 
-1. 파일에서 의 값을 사용자 지정된 `/apps/ws/locales/en-US/translation.json` `wserror` 값으로 변경합니다. 예:
+1. 파일에서 `/apps/ws/locales/en-US/translation.json` 값을 사용자 정의된 값 `wserror` 으로 변경합니다. 예:
 
-   ```
+   ```json
    "wserror" : {
     "message" : "Message:",
     "ComponentUI" : "Component UI:",
@@ -30,15 +33,18 @@ AEM Forms 작업 영역에서 오류 대화 상자를 사용자 정의할 수 �
     "ok" : "Ok",
     "ErrorCode" : "Error Code:"
     }
-   
-   To
-    "wserror" : {
-    "message" : "Error Message:",
-    "ComponentUI" : "UI Component:",
-    "error" : "Something went wrong!!",
-    "ok" : "Ok",
-    "ErrorCode" : "Error Code:"
-    }
+   ```
+
+   끝
+
+   ```json
+   "wserror" : {
+   "message" : "Error Message:",
+   "ComponentUI" : "UI Component:",
+   "error" : "Something went wrong!!",
+   "ok" : "Ok",
+   "ErrorCode" : "Error Code:"
+   }
    ```
 
    >[!NOTE]
@@ -47,7 +53,7 @@ AEM Forms 작업 영역에서 오류 대화 상자를 사용자 정의할 수 �
 
 ## CSS 사용자 정의 {#customizing-css}
 
-1. 파일에 다음 코드 조각을 추가하여 대화 상자, 머리글, 컨텐츠 영역, 발-막대, 발-막대 단추 및 기타 컬렉션을 업데이트할 수 `/apps/ws/css/newStyle.css` 있습니다.
+1. 파일에 다음 코드 조각을 추가하여 대화 상자, 헤더, 컨텐츠 영역, 발-막대, 발-막대 버튼 및 기타 자료를 업데이트할 수 `/apps/ws/css/newStyle.css` 있습니다.
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -182,7 +188,7 @@ AEM Forms 작업 영역에서 오류 대화 상자를 사용자 정의할 수 �
    }
    ```
 
-1. 발 표시줄 단추 범위의 경우 `.error-dialog` 및 `.foot-bar` 단추 범위를 합성 목록에서 구분합니다. 이 변경 사항을 적용하려면 newStyle.css 파일에 다음을 추가하십시오.
+1. 발 막대 단추 범위의 경우 복합 목록에서 `.error-dialog` 및 `.foot-bar` 단추 범위를 분리합니다. 이 변경 사항을 적용하려면 newStyle.css 파일에 다음을 추가하십시오.
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -193,25 +199,27 @@ AEM Forms 작업 영역에서 오류 대화 상자를 사용자 정의할 수 �
        white-space: nowrap;
        overflow: hidden;
    }
-   
-   To
-   
+   ```
+
+   끝
+
+   ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
    #userSearchPopUp #actionbar span, #taskarea .action button span, .oooAction button span, .wsMessageContainerDiv .action button span
    {
-       display: block;
-       text-overflow: ellipsis;
-       white-space: nowrap;
-       overflow: hidden;
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
    }
    
    /*-------- Customized following Portion --------*/
    .error-dialog .foot-bar button span
    {
-       display: block;
-       text-overflow: ellipsis;
-       text-decoration:underline;
-       white-space: wrap;
+      display: block;
+      text-overflow: ellipsis;
+      text-decoration:underline;
+      white-space: wrap;
    }
    ```
 
@@ -236,9 +244,11 @@ AEM Forms 작업 영역에서 오류 대화 상자를 사용자 정의할 수 �
     box-shadow:0px 0px 10px 3px #888;
     display:none;
 }
+```
 
-To
+끝
 
+```css
 .error-dialog{
     border: 9px solid #DEDEDE;
     width: 200px;
@@ -267,9 +277,11 @@ To
     overflow: hidden;
     white-space: nowrap;
 }
+```
 
-To
+끝
 
+```css
 .error-dialog .head-bar{
     height: 40px;
     background: url(../images/error.png) no-repeat 7px 10px #DEDEDE;
