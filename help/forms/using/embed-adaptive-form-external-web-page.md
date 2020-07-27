@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -120,14 +120,14 @@ Apache 2.4 역방향 프록시 서버를 디스패처 없이 설정하는 방법
 
 1. 구성 파일을 열고 `httpd.conf` 다음 코드 줄의 주석을 해제합니다. 또는 파일에 이러한 코드 줄을 추가할 수 있습니다.
 
-   ```
+   ```text
    LoadModule proxy_html_module modules/mod_proxy_html.so
    LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
 1. 구성 파일에 다음 코드 줄을 추가하여 프록시 규칙을 `httpd-proxy.conf` 설정합니다.
 
-   ```
+   ```text
    ProxyPass /forms https://[AEM_Instance]/forms
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
@@ -136,7 +136,7 @@ Apache 2.4 역방향 프록시 서버를 디스패처 없이 설정하는 방법
 
 컨텍스트 경로에 AEM 서버를 마운트하지 않으면 Apache 레이어의 프록시 규칙은 다음과 같습니다.
 
-```java
+```text
 ProxyPass /content https://<AEM_Instance>/content
 ProxyPass /etc https://<AEM_Instance>/etc
 ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
@@ -151,7 +151,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->다른 토폴로지를 설정하는 경우 디스패처 레이어의 허용 목록에 제출, 자동 채우기 및 기타 URL을 추가해야 합니다.
+>다른 토폴로지를 설정하는 경우, 전송, 자동 채우기 및 기타 URL을 디스패처 레이어의에 허용 목록에 추가하다 추가해야 합니다.
 
 ## Best practices {#best-practices}
 
