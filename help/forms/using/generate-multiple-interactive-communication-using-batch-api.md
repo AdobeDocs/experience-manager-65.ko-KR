@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 3%
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 **JSON 파일의 단일 레코드**
 
-```JSON
+```json
 {
    "employee": {
        "name": "Sara",
@@ -41,7 +41,7 @@ ht-degree: 3%
 
 **JSON 파일의 여러 레코드**
 
-```JSON
+```json
 [{
    "employee": {
        "name": "John",
@@ -179,7 +179,7 @@ Java 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파�
 1. [AEM 인스턴스에서 Apache Maven을 사용하여](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) AEM 프로젝트를 빌드하고 배포합니다.
 1. AEM 프로젝트의 POM 파일 종속성 목록에 [AEM Forms 클라이언트 SDK 버전 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) 이상을 추가합니다. 예,
 
-   ```XML
+   ```xml
        <dependency>
            <groupId>com.adobe.aemfd</groupId>
            <artifactId>aemfd-client-sdk</artifactId>
