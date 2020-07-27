@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -19,21 +22,21 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 Java API 빠른 시작(SOAP)은 백업 및 복원 서비스 API에 사용할 수 있습니다.
 
-[빠른 시작:Java API(SOAP)를 사용하여 백업 모드 시작](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[빠른 시작: Java API(SOAP)를 사용하여 백업 모드 시작](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[빠른 시작:Java API(SOAP)를 사용하여 백업 모드 종료](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[빠른 시작: Java API(SOAP)를 사용하여 백업 모드 종료](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 수 있으며 연결 모드를 SOAP로 설정해야 합니다.
+AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms를 사용한 프로그래밍에서 빠른 시작은 양식 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)설정을 참조하십시오.
+>AEM Forms을 사용한 프로그래밍에 있는 빠른 시작은 양식 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 백업 모드 시작 {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 백업 모드 시작 {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-다음 Java 코드 예제는 2시간 동안 고유한 레이블이 있는 백업 모드로 전환됩니다. 백업 시간이 만료되거나 백업 모드가 명시적으로 종료되면 양식 서버가 전역 문서 저장소에서 파일을 제거하도록 돌아갑니다. 양식 [서버에서](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)백업 모드 시작을 참조하십시오.
+다음 Java 코드 예제는 2시간 동안 고유한 레이블이 있는 백업 모드로 들어갑니다. 백업 시간이 만료되거나 백업 모드가 명시적으로 종료되면 양식 서버가 전역 문서 저장소에서 파일 제거로 돌아갑니다. 양식 서버 [에서 백업 모드 시작을 참조하십시오](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -144,11 +147,11 @@ AEM Forms 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 백업 모드 종료 {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## 빠른 시작(SOAP 모드): Java API를 사용하여 백업 모드 종료 {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-다음 Java 코드 예제에서는 Forms 서버가 백업 모드를 종료하고 전역 문서 저장소에서 파일을 제거하도록 되돌립니다. 양식 [서버에서](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)백업 모드 종료를 참조하십시오.
+다음 Java 코드 예제는 Forms 서버가 백업 모드를 종료하고 전역 문서 저장소에서 파일을 제거하도록 합니다. 양식 서버에서 [백업 모드 종료를 참조하십시오](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
