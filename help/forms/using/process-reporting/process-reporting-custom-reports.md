@@ -1,8 +1,8 @@
 ---
-title: 프로세스 내 사용자 지정 보고서
-seo-title: 프로세스 내 사용자 지정 보고서
-description: 사용자 지정 보고서를 만들고 이러한 보고서를 JEE 프로세스 보고 UI의 AEM Forms에 추가할 수 있습니다.
-seo-description: 사용자 지정 보고서를 만들고 이러한 보고서를 JEE 프로세스 보고 UI의 AEM Forms에 추가할 수 있습니다.
+title: 프로세스 보고 내 사용자 지정 보고서
+seo-title: 프로세스 보고 내 사용자 지정 보고서
+description: 사용자 지정 보고서를 만들고 JEE 프로세스 보고 UI의 AEM Forms에 이러한 보고서를 추가할 수 있습니다.
+seo-description: 사용자 지정 보고서를 만들고 JEE 프로세스 보고 UI의 AEM Forms에 이러한 보고서를 추가할 수 있습니다.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,15 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
 
-# 프로세스 내 사용자 지정 보고서{#custom-reports-in-process-reporting}
+# 프로세스 보고 내 사용자 지정 보고서{#custom-reports-in-process-reporting}
 
 QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API를 사용하여 OSGi 서비스를 만들어 사용자 지정 보고서를 만들 수 있습니다.
 
@@ -23,21 +26,21 @@ QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API를 사�
 
 사용자 지정 보고서를 추가하기 전에 다음 템플릿 절차를 수행하십시오.
 
-1. 사용자 지정 보고서에 사용된 데이터는 프로세스 보고에서 사용할 수 있어야 합니다. 데이터를 사용할 수 있도록 하려면 크론 작업을 예약하거나 프로세스 보고 UI **[에서](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**동기화 옵션을 사용합니다.
-1. URL 요청(원하는 쿼리 캡슐화)은 적절한 쿼리 결과 개체를 반환해야 합니다. 쿼리를 만들려면 QueryBuilder의 REST 인터페이스를 사용하여 [QueryBuilder API를](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) 사용하여 OSGi 서비스를 만들 수 있습니다. 동적 또는 정적 쿼리를 만들 수 있습니다.
+1. 사용자 지정 보고서에 사용된 데이터는 프로세스 보고에서 사용할 수 있어야 합니다. 데이터를 사용할 수 있도록 하려면 복제 작업을 예약하거나 프로세스 보고 UI에서 **[동기화](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**옵션을 사용하십시오.
+1. URL 요청(원하는 쿼리 캡슐화)은 적절한 쿼리 결과 개체를 반환해야 합니다. 쿼리를 만들려면 QueryBuilder의 REST 인터페이스 [를](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) 사용하여 QueryBuilder API를 사용하여 OSGi 서비스를 만들 수 있습니다. 동적 또는 정적 쿼리를 만들 수 있습니다.
 
-1. 사용자 정의 사용자 인터페이스를 만들어 결과를 표시합니다. 독립 실행형 사용자 인터페이스를 만들거나 기존의 프로세스 보고 UI와 결과를 통합할 수 있습니다.
+1. 결과를 표시하는 사용자 정의 사용자 인터페이스를 만듭니다. 독립형 사용자 인터페이스를 만들거나 기존 프로세스 보고 UI와 결과를 통합할 수 있습니다.
 
 ## QueryBuilder의 REST 인터페이스 사용 {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 CRX [QueryBuilder REST 인터페이스를](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)사용하는 방법을 알아봅니다.
+CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 [CRX QueryBuilder REST 인터페이스](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)사용 방법을 학습합니다.
 
 1. URL 찾아보기 `https://'[server]:[port]'/lc/bin/querybuilder.json`
-1. 프로세스 보고 스토리지 노드 구조 및 노드 속성을 기반으로 쿼리를 만듭니다.
+1. 프로세스 보고 스토리지 노드 구조 및 노드 속성을 기반으로 쿼리를 생성합니다.
 
    선택적 매개 변수를 지정하여 오프셋, 제한, 히트 및 속성을 지정할 수 있습니다. 정적 보고서의 인수를 하드코딩하고 동적 보고서의 경우 UI에서 매개 변수를 가져올 수 있습니다.
 
-   모든 프로세스 이름을 가져오려면 쿼리는 다음과 같습니다.
+   모든 프로세스 이름을 가져오기 위해 질의는 다음과 같습니다.
 
    `https://'[server]:[port]'/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
 
@@ -45,27 +48,27 @@ CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 
    >
    >모든 쿼리에서 경로 매개 변수는 crx 저장소 위치를 가리키며 문자는 URL 표준에 따라 이스케이프됩니다.
 
-## 쿼리 빌더 API를 사용하여 서비스 만들기 {#creating-a-service-using-query-builder-api-nbsp}
+## 쿼리 빌더 API를 사용하여 서비스 만들기  {#creating-a-service-using-query-builder-api-nbsp}
 
-QueryBuilder API를 사용하여 서비스를 만들기 위한 사전 요구 사항은 CQ OSGI 번들을 [](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) 만들고 배포하고 Query Builder API를 [사용하는 것입니다](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
+QueryBuilder API를 사용하여 서비스를 만들기 위한 필수 구성 요소는 CQ OSGI 번들을 [만들고 배포하고 Query Builder API를](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) 사용하는 것입니다 [](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
-1. 적절한 주석을 사용하여 OSGi 서비스를 만듭니다. QueryBuilder에 액세스하려면 다음을 사용합니다.
+1. 적절한 주석을 사용하여 OSGi 서비스를 만듭니다. QueryBuilder에 액세스하려면
 
-   ```
+   ```java
    @Reference(referenceInterface = QueryBuilder.class)
     private QueryBuilder queryBuilder;
    ```
 
-1. 조건자 그룹을 만듭니다. 설명 그룹을 만드는 코드는 다음과 같습니다.
+1. 설명 그룹을 만듭니다. 설명 그룹을 만드는 코드는 다음과 같습니다.
 
-   ```
+   ```java
    PredicateGroup predicateGroup = new PredicateGroup();
     predicateGroup.setAllRequired(true);
    ```
 
-1. 새로 만든 술어 그룹에 조건자를 추가합니다. 유용한 구문 몇 가지는 [JcrBoolPropertyPredicateJcr](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), JcrPropertyPredicateRange [Property](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html)PropertyPropertyPropertyPropertyDate [, DateRangeEapper Decher, Dec Type PredictorEerApper입니다](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
+1. 새로 만든 술어 그룹에 설명을 추가합니다. 몇 가지 유용한 설명 구문은 [JcrBoolPropertyPredicate](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPectorPector](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), PropertyPector [PropertyPectorRange](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), DateDatePagerPector 및 [](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html)조건자 조건자 조건자Evaluator입니다.
 
-   정적 보고서의 경우 조건자를 하드코딩하고, 동적 보고서의 경우 요청에서 예측자를 가져옵니다.
+   정적 보고서의 경우 예측자를 하드코딩하는 반면, 동적 보고서의 경우 요청에서 예측자를 가져옵니다.
 
    프로세스의 모든 인스턴스를 가져오는 샘플 코드는 다음과 같습니다.
 
@@ -134,13 +137,13 @@ QueryBuilder API를 사용하여 서비스를 만들기 위한 사전 요구 사
                        out.write(row.toString().getBytes());
    ```
 
-1. 를 `org.apache.felix maven-bundle-plugin` 사용하여 서블릿용 OSGi 번들을 만듭니다.
+1. 서블릿용 OSGi 번들 `org.apache.felix maven-bundle-plugin` 을 만드는 데 이 코드를 사용합니다.
 
 1. CRX 서버에 번들을 배포합니다.
 
 ### 서비스 예 {#service-example}
 
-다음 서비스 예는 매달, 분기 및 **연도말에 RUNNING** 및 **COMPLETE** 상태에 있는프로세스의 인스턴스를 카운트합니다.
+다음 서비스 예는 매달, 분기 및 연말에 **RUNNING** 및 **COMPLETE** 상태에 있는 프로세스의 인스턴스를카운트합니다.
 
 ```java
 package custom.reporting.service;
@@ -340,7 +343,7 @@ public class PeriodicProcessVolume {
 
 서비스 위에 빌드할 샘플 `pom.xml`파일은 다음과 같습니다.
 
-```java
+```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -420,27 +423,27 @@ public class PeriodicProcessVolume {
 </project>
 ```
 
-## 별도의 UI 만들기 {#creating-a-separate-ui-nbsp}
+## 별도의 UI 만들기  {#creating-a-separate-ui-nbsp}
 
-결과 표시를 위한 별도의 UI를 만들기 위한 사전 요구 사항은 [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) 만들기 및 적절한 [액세스 권한을](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)제공하는 것입니다.
+별도의 UI를 만들어 결과를 표시하는 데 필요한 사전 요구 사항은 [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [CRX 노드](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) 만들기 [및 적절한](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)액세스 권한을 제공하는 것입니다.
 
-1. 노드에 CRX 노드를 만들고 적절한 액세스 권한을 `/apps` 부여합니다. (PERM_PROCESS_REPORTING_USER)
+1. 노드에서 CRX 노드를 만들고 `/apps` 적절한 액세스 권한을 부여합니다. (PERM_PROCESS_REPORTING_USER)
 1. 노드에서 렌더러를 `/content` 정의합니다.
-1. 1단계에서 만든 노드에 JSP 또는 HTML 파일을 추가합니다. CSS 파일을 추가할 수도 있습니다.
+1. 1단계에서 생성된 노드에 JSP 또는 HTML 파일을 추가합니다. CSS 파일을 추가할 수도 있습니다.
 
    ![JSP 및 CSS 파일이 있는 샘플 노드](assets/nodewith_jsp_css_new.png)
 
    JSP 및 CSS 파일이 있는 샘플 노드
 
-1. JavaScript 코드를 추가하여 Ajax 호출을 QueryBuilder REST API 또는 서비스에 시작합니다. 또한 적절한 인수를 추가합니다.
+1. JavaScript 코드를 추가하여 QueryBuilder REST API 또는 서비스에 대한 Ajax 호출을 시작합니다. 또한 적절한 인수를 추가합니다.
 
-1. Ajax 호출에 적절한 성공 처리기를 추가하여 결과를 구문 분석하고 표시합니다. 결과를 여러 형식(json/csv/사용자 정의)으로 분석하여 표 형식이나 다른 형식으로 표시할 수 있습니다.
+1. Ajax 호출에 적절한 성공 핸들러를 추가하여 결과를 구문 분석하고 표시합니다. 결과를 여러 형식(json/csv/user defined)으로 분석하여 표 형식 또는 다른 형식으로 표시할 수 있습니다.
 
 1. (선택 사항) Ajax 호출에 적절한 오류 핸들러를 추가합니다.
 
-OSGi Service와 QueryBuilder API를 모두 사용하는 샘플 JSP 코드는 다음과 같습니다.
+OSGi 서비스 및 QueryBuilder API를 모두 사용하는 샘플 JSP 코드:
 
-```
+```html
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
 <%request.setAttribute("silentAuthor", new Boolean(true));%>
 <%@include file="/libs/foundation/global.jsp"%>
@@ -628,23 +631,24 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## 기존 프로세스 보고 UI에서 보고서 UI 통합 {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## 기존 프로세스 보고 UI에서 보고서 UI 통합  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-결과 표시를 위한 별도의 UI를 만들기 위한 사전 요구 사항은 [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) 만들기 및 적절한 [액세스 권한을](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)제공하는 것입니다.
+별도의 UI를 만들어 결과를 표시하는 데 필요한 사전 요구 사항은 [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [CRX 노드](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) 만들기 [및 적절한](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)액세스 권한을 제공하는 것입니다.
 
-1. 별도의 UI를 만듭니다.
-1. 모든 플러그형 보고서에 대해 노드에 하위 `nt:unstructured` `/content/process-reporting-runtime/custom-reports` 노드를 만듭니다.
+1. 별도의 UI 만들기
+1. 모든 플러그인 `nt:unstructured` 보고서 `/content/process-reporting-runtime/custom-reports` 에 대해 노드에서 하위 노드를 만듭니다.
 
-   * **id**- 보고서의 고유 ID 번호를 지정합니다.
-   * **이름**- 보고서 이름을 지정합니다. 이름이 UI에 표시됩니다.
-   * **link**- 별도의 UI의 렌더러에 대한 상대적 링크를 지정합니다. 링크가 1단계에서 생성됩니다.
-   * **설명**- 보고서에 대한 한 줄의 설명을 지정합니다. 설명 필드를 비워 둘 수 있습니다.
-   * **아이콘**- 사진을 선택하여 보고서를 표시합니다. 아이콘 필드를 비워 둘 수 있습니다.
+   * **id**- 보고서의 고유 식별 번호를 지정합니다.
+   * **이름**- 보고서 이름을 지정합니다. UI에 이름이 표시됩니다.
+   * **link**- 별도의 UI의 렌더러에 대한 상대적 링크를 지정합니다. 링크가 1단계에서 만들어집니다.
+   * **설명**- 보고서에 대한 하나의 라인 설명을 지정합니다. 설명 필드를 비워 둘 수 있습니다.
+   * **아이콘**- 보고서를 시각적으로 나타내는 이미지를 지정합니다. 아이콘 필드를 비워 둘 수 있습니다.
+
    ![노드의 속성 ](assets/node_properties_new.png)
 
    노드의 속성
 
-1. 보고서 UI 파섹 UI를 통합하면 업데이트된 UI가 다음 이미지와 비슷합니다.
+1. 보고서 UI는 프로세스 보고 UI에 통합됩니다. UI를 통합하면 업데이트된 UI가 다음 이미지와 비슷합니다.
 
    ![새로 추가된 사용자 지정 보고서의 사용자 인터페이스](assets/sampleui_screenshot_new.png)
 
@@ -656,6 +660,6 @@ response.setCharacterEncoding("utf-8");
 
 ## 샘플 패키지 {#sample-package}
 
-패키지를 `sample-report-pkg-1.zip` 가져와 아티클에서 설명한 사용자 정의 보고서와 UI를 프로세스 관리 UI로 통합할 수 있습니다.
+패키지를 가져와 `sample-report-pkg-1.zip` 문서에서 설명한 사용자 지정 보고서와 UI를 프로세스 관리 UI로 통합합니다.
 
 [파일 가져오기](assets/sample-report-pkg-1.zip)
