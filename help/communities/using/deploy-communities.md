@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -138,7 +138,7 @@ MySQL 커넥터를 별도로 구하고 설치해야 합니다.
 
 #### 예: 설치된 MySQL Connector 번들 {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![](../assets/chlimage_1-125.png)
 
 ### SCORM 패키지 {#scorm-package}
 
@@ -222,7 +222,7 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 따라서 모든 보조 게시 인스턴스의 구성을 **편집하여 확인란을 선택** 취소해야 **`Primary Publisher`** 합니다.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![](../assets/chlimage_1-126.png)
 
 게시 팜에 있는 다른(보조) 게시 인스턴스의 경우:
 
@@ -242,7 +242,7 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 주 게시자의 경우 [복제 에이전트 구성이](/help/sites-deploying/replication.md) 게시 서버와 인증된 사용자를 올바르게 식별하는지 확인합니다. 기본 권한이 있는 사용자는 `admin,` 이미 적절한 권한(구성원)을 `Communities Administrators`갖습니다.
 
-일부 다른 사용자가 적절한 권한을 가지려면 해당 권한을 사용자 그룹( `administrators` 사용자 그룹에도 구성원)에 `Communities Administrators`추가해야 합니다.
+다른 사용자가 적절한 권한을 가지려면 해당 권한을 사용자 그룹( `administrators` 사용자 그룹에도 `Communities Administrators`멤버)에 구성원으로 추가해야 합니다.
 
 작성 환경에 전송 구성을 올바르게 구성해야 하는 복제 에이전트가 두 개 있습니다.
 
@@ -266,11 +266,11 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 
 #### 기본 에이전트(게시) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![configure-limits](../assets/configure-limits.png)
 
 #### 역방향 복제 에이전트(다시 게시) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![](../assets/chlimage_1-128.png)
 
 ### 저자에 대한 터널 서비스 {#tunnel-service-on-author}
 
@@ -293,7 +293,7 @@ AEM Communities에서는 UGC(User Generated Content)를 저장하는 데 공용 
 * **enable **box 확인
 * select **Save**
 
-![](/help/communities/assets/chlimage_1-129.png)
+![](../assets/chlimage_1-129.png)
 
 ### 암호화 키 복제 {#replicate-the-crypto-key}
 
@@ -350,7 +350,7 @@ CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [Granite Crypto 번들 새로 고침](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+![](../assets/chlimage_1-130.png)
 
 #### [MOCK] Refresh the Granite Crypto Bundle {#refresh-the-granite-crypto-bundle}
 
@@ -361,7 +361,7 @@ CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md) :
 * 번들 `Adobe Granite Crypto Support` 찾기(com.adobe.granite.crypto)
 * 새로 고침 **선택**
 
-![](/help/communities/assets/chlimage_1-131.png)
+![](../assets/chlimage_1-131.png)
 
 * 잠시 후 **성공 **대화 상자가 나타나야 합니다.
    `Operation completed successfully.`
