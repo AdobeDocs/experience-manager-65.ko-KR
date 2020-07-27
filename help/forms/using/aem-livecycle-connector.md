@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 0%
@@ -33,7 +33,7 @@ AEM LiveCycle Connector는 [AEM Forms 추가 기능 패키지의 일부입니다
 
 * **서버 URL** - LiveCycle 서버의 URL을 지정합니다. LiveCycle 및 AEM이 https를 통해 통신하도록 하려면 다음 JVM으로 AEM을 시작하십시오
 
-   ```
+   ```java
    argument
     -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
    ```
@@ -118,7 +118,7 @@ AEM 내에서 노출 서비스를 시작하려면 다음 단계를 수행하십�
 
    위의 코드 조각은 문서를 PDF로 변환하기 위해 GeneratePdfServiceClient의 createPDF API를 시작합니다. 다음 코드를 사용하여 JSP에서 유사한 호출을 수행할 수 있습니다. 주요 차이점은 다음 코드는 Sling ScriptHelper를 사용하여 GeneratePdfServiceClient에 액세스한다는 것입니다.
 
-   ```java
+   ```jsp
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
    <%@ page import="com.adobe.livecycle.generatepdf.client.CreatePDFResult" %>
    <%@ page import="com.adobe.idp.Document" %>
@@ -156,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 LiveCycle의 거의 모든 문서 서비스에는 인증이 필요합니다. 다음 옵션을 사용하여 코드에 명시적 자격 증명을 제공하지 않고 이러한 서비스를 시작할 수 있습니다.
 
-### Allowlist 구성 {#allowlist-configuration}
+### 허용 목록에 추가하다 구성 {#allowlist-configuration}
 
 LiveCycle Client SDK 구성에는 서비스 이름에 대한 설정이 포함되어 있습니다. 이 구성은 호출 논리 시스템에서 관리자 자격 증명을 사용하는 서비스 목록입니다. 예를 들어, DirectoryManager 서비스(사용자 관리 API의 일부)를 이 목록에 추가하는 경우 모든 클라이언트 코드는 서비스를 직접 사용할 수 있으며 호출 레이어가 구성된 자격 증명을 LiveCycle 서버로 전송된 요청의 일부로 자동으로 전달합니다
 
