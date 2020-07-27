@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -49,11 +49,11 @@ ht-degree: 0%
 * 위치 `AEM Communities User Generated Content Contribution Limits Configuration`확인
 * 편집 아이콘을 선택합니다.
 
-![chlimage_1-127](assets/chlimage_1-127.png)
+![configure-limits](assets/configure-limits.png)
 
 * **[!UICONTROL UGC 기여도 제한 자동 적용]**
 
-   이 확인란을 선택하면 커뮤니티 구성원으로 등록할 때 사용자에게 기여도 제한을 자동으로 설정합니다. 이는 커뮤니티 멤버의 프로필에 반영되며 [구성원 콘솔에서 활성화/비활성화할 수 있습니다](members.md). 도메인 허용 목록에서 이메일 주소를 사용하는 새 멤버는 제한되지 않습니다.
+   이 확인란을 선택하면 커뮤니티 구성원으로 등록할 때 사용자에게 기여도 제한을 자동으로 설정합니다. 이는 커뮤니티 멤버의 프로필에 반영되며 [구성원 콘솔에서 활성화/비활성화할 수 있습니다](members.md). 도메인허용 목록에 추가하다에서 이메일 주소를 사용하는 새 멤버는 제한되지 않습니다.
 
    기본값은 선택 취소입니다.
 
@@ -71,11 +71,11 @@ ht-degree: 0%
 
 * **[!UICONTROL 도메인]**
 
-   하나 이상의 이메일 도메인의 허용 목록. 추가 항목을 만들려면 + 아이콘을 선택합니다.
+   하나 허용 목록에 추가하다 이상의 이메일 도메인의 목록입니다. 추가 항목을 만들려면 + 아이콘을 선택합니다.
 
-   도메인 허용 목록에 이메일 주소를 사용하는 사용자는 UGC 기여도 제한이 자동으로 적용되는 경우에는 영향을 받지 않습니다. 예를 들어 도메인 `mycompany.com` 이 도메인 목록에 추가된 경우 이메일 주소를 사용하는 멤버의 게시가 절대 제한되지 `me@mycompany.com` 않습니다.
+   UGC 기여도 허용 목록에 추가하다 제한이 자동으로 적용되는 경우 도메인에 이메일 주소를 사용하는 사용자는 영향을 받지 않습니다. 예를 들어 도메인 `mycompany.com` 이 도메인 목록에 추가된 경우 이메일 주소를 사용하는 멤버의 게시가 절대 제한되지 `me@mycompany.com` 않습니다.
 
-   기본값은 빈 허용 목록입니다.
+   기본값은 빈 허용 목록에 추가하다입니다.
 
 * **[!UICONTROL 메시지 수신자]**
 
