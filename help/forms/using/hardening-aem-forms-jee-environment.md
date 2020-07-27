@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 9e1d77b8696436b392f0d9209ddcb2c9196f3c09
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '7698'
 ht-degree: 0%
@@ -218,7 +218,7 @@ Configuration Manager가 응용 프로그램 서버에 배포된 서블릿을 �
 1. META-INF/application.xml 파일을 엽니다.
 1. adobe-bootstrapper.war 섹션을 검색합니다.
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <module id="WebApp_adobe_bootstrapper"> 
        <web> 
@@ -238,7 +238,7 @@ Configuration Manager가 응용 프로그램 서버에 배포된 서블릿을 �
 1. AEM Forms 서버를 중지합니다.
 1. adobe-bootstrapper.war 및 adobe-lcm-bootstrapper-redirectory에 주석을 설정합니다. 다음과 같은 전쟁 모듈입니다.
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <!-- 
    <module id="WebApp_adobe_bootstrapper"> 
@@ -280,7 +280,7 @@ JEE의 AEM Forms이 설치되면 기본 암호 *를 사용하는 사용자 Super
 
 1. 웹 브라우저에 다음 URL을 입력합니다.
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -313,7 +313,7 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 애
 
 1. 웹 브라우저에 다음 URL을 입력합니다.
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -357,7 +357,7 @@ Oracle에서 사용하는 데이터베이스 계정에는 CONNECT, RESOURCE 및 
 
 1. 다음 예와 같이 [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} `integratedSecurity=true` 을 수정하여 연결 URL에 추가합니다.
 
-   ```as3
+   ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
    ```
 
@@ -369,7 +369,7 @@ Oracle에서 사용하는 데이터베이스 계정에는 CONNECT, RESOURCE 및 
 
 1. 웹 브라우저의 URL 줄에 다음 URL을 입력하여 WebLogic Server 관리 콘솔을 시작합니다.
 
-   ```as3
+   ```java
    https://[host name]:7001/console
    ```
 
@@ -730,7 +730,7 @@ API에 대한 자세한 내용은 JEE API 참조*의* AEM Forms을 참조하십�
 
 LC_ ***GLOBAL_ALLOWED_REFERER_EXCEPTION*** 목록 ID는 에 있는 `UMConstants` 네임스페이스의 `com.adobe.idp.um.api` 클래스에 상수로 정의됩니다 `adobe-usermanager-client.jar`. AEM Forms API를 사용하여 이 목록을 생성, 수정 또는 편집할 수 있습니다. 예를 들어, 전역 허용 레퍼러 예외 목록을 만들려면 다음을 사용합니다.
 
-```as3
+```java
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
 ```
 
@@ -758,7 +758,7 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 다음은 *SAMPLE* WAR 파일의 web.xml ***파일에 있는 필터 항목의*** 예입니다.
 
-```as3
+```java
 <filter> 
        <filter-name> filter-name </filter-name> 
        <filter-class> com.adobe.idp.um.auth.filter.RemoteCSRFFilter </filter-class> 
@@ -976,7 +976,7 @@ WebSphere 또는 WebLogic에 대한 SSL 리디렉션을 구성하려면 애플�
 
 1. https 커넥터 요소에 다음 코드를 추가합니다.
 
-   ```
+   ```xml
    <connector name="https" protocol="HTTP/1.1" scheme="https" socket-binding="https" secure="true" enabled="true"> 
     <ssl name="jboss7_ssl" key-alias="jboss71" password="Tibco321" certificate-key-file="../standalone/configuration/server.keystore" protocol="TLSv1"/> 
     </connector>
@@ -1053,7 +1053,7 @@ JEE의 AEM Forms은 다음 방법으로 파일 시스템을 사용합니다.
 
 관리 콘솔에 로그인한 후에는 URL을 수정하여 콘솔의 디렉토리 목록을 찾아볼 수 있습니다. 예를 들어 URL을 다음 URL 중 하나로 변경하면 디렉토리 목록이 나타날 수 있습니다.
 
-```as3
+```java
 https://<servername>:8080/adminui/secured/ 
 https://<servername>:8080/um/
 ```
@@ -1066,7 +1066,7 @@ https://<servername>:8080/um/
 
 다음 예제와 같이 weblogic.xml 파일의 index-directories 속성 `false`을 로 설정합니다.
 
-```as3
+```xml
 <container-descriptor> 
     <index-directory-enabled>false 
     </index-directory-enabled> 
