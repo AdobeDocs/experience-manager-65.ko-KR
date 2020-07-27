@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a18a018181a779b9f48ef3e39c26410a1bc4919b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 3%
@@ -121,7 +121,7 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 구성이 있습니다. 필�
 
 1. sling.properties 파일에 다음 속성을 추가합니다.
 
-   ```
+   ```shell
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
    sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
@@ -135,7 +135,7 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 구성이 있습니다. 필�
 
 1. 브라우저 창에서 AEM Configuration Manager를 엽니다. 기본 URL은 https://&#39;[server]:[port]&#39;/system/console/configMgr입니다.
 1. 방화벽 **구성을 검색하고 엽니다**.
-1. 필드에 **sun.util.calendar** 패키지를 **허용 목록에 추가하다 추가합니다** . [저장]을 클릭합니다.
+1. 필드에 **sun.util.calendar** 패키지를 **허용 목록에 추가하다 추가합니다** . 저장을 클릭합니다.
 1. 모든 작성자 및 게시 인스턴스에 대해 1-3단계를 반복합니다.
 
 ### 설치 후 구성(선택 사항) {#optional-post-installation-configurations}
