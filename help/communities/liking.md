@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,17 +34,17 @@ ht-degree: 6%
 
 [필요한 클라이언트측 라이브러리가](essentials-liking.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Liking` 방식입니다.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![좋아요 구성 요소](assets/liking-component.png)
 
 ## 좋아요 구성 {#configuring-liking}
 
 액세스할 배치된 `Liking` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![configure-new](assets/configure-new.png)
 
 텍스트 및 **[!UICONTROL 레이블]** 탭 아래에서 좋아요를 기록하는 데 사용되는 속성을 지정합니다.
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![configure-like](assets/configure-liking.png)
 
 * **[!UICONTROL 긍정적인 응답 레이블]**
 
