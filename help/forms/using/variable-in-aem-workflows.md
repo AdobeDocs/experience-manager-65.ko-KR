@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2113'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ AEM 워크플로우 모델에서 다음을 수행할 수 있습니다.
    * 양식 데이터 모델 - 양식 데이터 모델 경로를 지정합니다.
    * ArrayList - 컬렉션의 하위 유형을 지정합니다.
 
-1. 변수에 대한 선택적 설명을 지정하고 을 눌러 변경 사항 ![](assets/done_icon.png) 을 저장합니다. 이 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
+1. 변수에 대한 선택적 설명을 지정하고 ![done_icon](assets/done_icon.png) 을 눌러 변경 사항을 저장합니다. 이 변수는 왼쪽 창에서 사용할 수 있는 목록에 표시됩니다.
 
 변수를 만들 때는 다음 방법을 고려하십시오.
 
@@ -97,10 +97,10 @@ JSON DOT 표기법 또는 XPATH 표기법을 사용하여 JSON 또는 XML 유형
 다음 단계를 실행하여 변수 간 매핑을 추가합니다.
 
 1. 워크플로우 편집 페이지에서 워크플로우 모델의 사이드 킥에 있는 단계 아이콘을 누릅니다.
-1. 변수 **설정** 단계를 워크플로우 편집기로 드래그하여 놓고 단계를 탭하고 ![](assets/configure_icon.png) (구성)을 선택합니다.
+1. 변수 **설정** 단계를 워크플로우 편집기로 드래그하여 놓고 단계를 탭하고 ![configure_icon](assets/configure_icon.png) (구성)을 선택합니다.
 1. 변수 설정 대화 상자에서 **[!UICONTROL 매핑]** > 매핑 **[!UICONTROL 추가를 선택합니다]**.
 1. 변수 **매핑** 섹션에서 데이터를 저장할 변수를 선택하고 매핑 모드를 선택한 다음 변수에 저장할 값을 지정합니다. 매핑 모드는 변수 유형에 따라 다릅니다.
-1. 의미 있는 표현을 만들 변수를 더 매핑합니다. 을 눌러 변경 사항 ![](assets/done_icon.png) 을 저장합니다.
+1. 의미 있는 표현을 만들 변수를 더 매핑합니다. done_icon ![을 눌러](assets/done_icon.png) 변경 사항을 저장합니다.
 
 ### 예 1: XML 변수를 쿼리하여 문자열 변수에 대한 값을 설정합니다. {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -273,8 +273,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## 변수 편집 {#edit-a-variable}
 
 1. 편집 워크플로우 페이지에서 워크플로우 모델의 사이드 킥에 있는 변수 아이콘을 누릅니다. 왼쪽 창의 변수 섹션에는 모든 기존 변수가 표시됩니다.
-1. 편집할 변수 이름 옆에 있는 ![](assets/edit.png) (편집) 아이콘을 누릅니다.
-1. 변수 정보를 편집하고 을 눌러 변경 사항 ![](assets/done_icon.png) 을 저장합니다. 변수의 **[!UICONTROL 이름]** 및 **[!UICONTROL 유형]** 필드는 편집할 수 없습니다.
+1. 편집할 변수 이름 옆에 있는 ![편집](assets/edit.png) (편집) 아이콘을 누릅니다.
+1. 변수 정보를 편집하고 ![done_icon](assets/done_icon.png) 을 눌러 변경 사항을 저장합니다. 변수의 **[!UICONTROL 이름]** 및 **[!UICONTROL 유형]** 필드는 편집할 수 없습니다.
 
 ## 변수 삭제 {#delete-a-variable}
 
@@ -284,7 +284,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 1. 편집 워크플로우 페이지에서 워크플로우 모델의 사이드 킥에 있는 변수 아이콘을 누릅니다. 왼쪽 창의 변수 섹션에는 모든 기존 변수가 표시됩니다.
 1. 삭제할 변수 이름 옆에 있는 삭제 아이콘을 누릅니다.
-1. 을 눌러 변수 ![](assets/done_icon.png) 를 확인하고 삭제합니다.
+1. done_icon ![을](assets/done_icon.png) 눌러 변수를 확인하고 삭제합니다.
 
 ## 참조 {#references}
 
