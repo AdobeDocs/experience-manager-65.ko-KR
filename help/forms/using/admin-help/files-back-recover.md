@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '2190'
 ht-degree: 0%
@@ -57,7 +57,7 @@ GDS 위치를 기본값이 아닌 위치로 변경한 경우 다음과 같이 �
 
 관리 콘솔을 사용하여 AEM Forms 데이터베이스에서 AEM Forms 문서 저장소를 활성화할 수 있습니다. 이 옵션은 모든 영구 문서를 데이터베이스에 보관하지만 AEM Forms는 세션 및 AEM Forms 호출과 관련된 영구 파일 및 임시 파일 및 리소스를 저장하는 데 사용되므로 파일 시스템 기반 GDS 디렉토리가 필요합니다.
 
-관리 콘솔의 핵심 시스템 설정에서 &quot;데이터베이스에서 문서 저장소 사용&quot; 옵션을 선택하거나 Configuration Manager를 사용하여 AEM 양식에서는 스냅샷 백업 모드 및 순환 백업 모드를 허용하지 않습니다. 따라서 AEM 양식을 사용하여 백업 모드를 관리할 필요가 없습니다. 이 옵션을 사용하는 경우 옵션을 활성화한 후 GDS를 한 번만 백업해야 합니다. 백업에서 AEM 양식을 복구할 때 GDS의 백업 디렉터리 이름을 변경하거나 GDS를 복원할 필요가 없습니다.
+관리 콘솔의 핵심 시스템 설정에서 &quot;데이터베이스에서 문서 저장소 사용&quot; 옵션을 선택하거나 Configuration Manager를 사용하여 AEM 양식에서는 스냅샷 백업 모드 및 순환 백업 모드를 허용하지 않습니다. 따라서 AEM 양식을 사용하여 백업 모드를 관리할 필요가 없습니다. 이 옵션을 사용하는 경우 옵션을 활성화한 후 GDS를 한 번만 백업해야 합니다. 백업에서 AEM 양식을 복구할 때 GDS에 대한 백업 디렉터리 이름을 변경하거나 GDS를 복원할 필요가 없습니다.
 
 ## AEM 리포지토리 {#aem-repository}
 
@@ -146,7 +146,7 @@ myqldump 유틸리티를 사용하여 전체 데이터베이스 백업을 얻을
 
 백업 [전략 요약을 참조하십시오](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
-```as3
+```text
 binlog_format=mixed
 log-bin=logname
 ```
