@@ -11,18 +11,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1639'
+ht-degree: 0%
 
 ---
 
 
 # 암호화된 PDF 문서 취합 {#assembling-encrypted-pdf-documents}
 
-Assembler 서비스를 사용하여 암호를 사용하여 PDF 문서를 암호화할 수 있습니다. PDF 문서가 암호로 암호화된 후 사용자는 암호를 지정하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 볼 수 있습니다. 암호로 PDF 문서를 암호화하려면 DCX 문서에 PDF 문서를 암호화하는 데 필요한 암호화 요소 값이 있어야 합니다.
+Assembler 서비스를 사용하여 암호로 PDF 문서를 암호화할 수 있습니다. PDF 문서가 암호로 암호화된 후 사용자는 암호를 지정하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 볼 수 있습니다. 암호로 PDF 문서를 암호화하려면 DDX 문서에 PDF 문서를 암호화하는 데 필요한 암호화 요소 값이 포함되어야 합니다.
 
-이 토론의 목적을 위해 다음 DCX 문서가 사용되었다고 가정합니다.
+이 토론의 목적으로 다음 DDX 문서를 사용한다고 가정합니다.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
         <PDF result="EncryptLoan.pdf" encryption="userProtect">
@@ -34,27 +37,27 @@ Assembler 서비스를 사용하여 암호를 사용하여 PDF 문서를 암호�
  </DDX>
 ```
 
-이 DCX 문서 내에서 source 속성에 값이 할당되어 `inDoc`있습니다. 한 개의 입력 PDF 문서만 어셈블러 서비스로 전달되고 한 개의 PDF 문서가 반환되는 상황에서 `invokeOneDocument` 작업을 불러와서 PDF 소스 속성에 값을 `inDoc` 할당합니다. 작업을 호출할 때 `invokeOneDocument` `inDoc` 값은 DCX 문서에 지정해야 하는 사전 정의된 키입니다.
+이 DDX 문서 내에서 소스 속성에 값이 지정되어 있음을 알 수 있습니다 `inDoc`. 한 개의 입력 PDF 문서만 어셈블러 서비스로 전달되고 한 개의 PDF 문서가 반환되는 상황에서 `invokeOneDocument` 작업을 호출하여 PDF 소스 속성 `inDoc` 에 값을 할당합니다. 작업 `invokeOneDocument` 을 호출할 때 이 `inDoc` 값은 DDX 문서에 지정해야 하는 사전 정의된 키입니다.
 
-반면에 두 개 이상의 입력 PDF 문서를 Assembler 서비스로 전달할 때 `invokeDDX` 작업을 호출할 수 있습니다. 이 경우 입력 PDF 문서의 파일 이름을 `source` 속성에 지정합니다.
+반면, 두 개 이상의 입력 PDF 문서를 어셈블러 서비스로 전달할 때 작업을 호출할 수 `invokeDDX` 있습니다. 이 경우 입력 PDF 문서의 파일 이름을 속성에 `source` 지정합니다.
 
-암호화 서비스는 AEM 양식 설치에 포함되어 있지 않아도 암호로 PDF 문서를 암호화할 수 있습니다. PDF [문서 암호화 및 해독을 참조하십시오](/help/forms/developing/encrypting-decrypting-pdf-documents.md).
-
->[!NOTE]
->
->어셈블러 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+암호화 서비스는 암호를 사용하여 PDF 문서를 암호화하기 위해 AEM 양식 설치에 포함되어 있지 않아도 됩니다. PDF [문서 암호화 및 해독](/help/forms/developing/encrypting-decrypting-pdf-documents.md)을 참조하십시오.
 
 >[!NOTE]
 >
->DDX 문서에 대한 자세한 내용은 어셈블러 서비스 [및 DCX 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>어셈블러 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+
+>[!NOTE]
+>
+>DDX 문서에 대한 자세한 내용은 어셈블러 서비스 [및 DDX 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## 단계 요약 {#summary-of-steps}
 
 암호화된 PDF 문서를 취합하려면 다음 단계를 수행하십시오.
 
 1. 프로젝트 파일 포함
-1. PDF Assembler 클라이언트 만들기
-1. 기존 DCX 문서를 참조합니다.
+1. PDF 어셈블러 클라이언트 만들기
+1. 기존 DDX 문서를 참조합니다.
 1. 비보안 PDF 문서를 참조합니다.
 1. 런타임 옵션을 설정합니다.
 1. 문서를 암호화합니다.
@@ -64,15 +67,15 @@ Assembler 서비스를 사용하여 암호를 사용하여 PDF 문서를 암호�
 
 개발 프로젝트에 필요한 파일을 포함할 수 있습니다. Java를 사용하여 클라이언트 응용 프로그램을 만드는 경우 필요한 JAR 파일을 포함합니다. 웹 서비스를 사용하는 경우 프록시 파일을 포함해야 합니다.
 
-다음 JAR 파일을 프로젝트의 클래스 경로에 추가해야 합니다.
+프로젝트의 클래스 경로에 다음 JAR 파일을 추가해야 합니다.
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (AEM Forms가 JBoss에 배포된 경우 필요)
-* jbossall-client.jar(JBoss에 AEM Forms가 배포된 경우 필요)
+* adobe-utilities.jar(AEM Forms이 JBoss에 배포된 경우 필요)
+* jbossall-client.jar(AEM Forms이 JBoss에 배포된 경우 필요)
 
-aem Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms가 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 교체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 AEM [Forms Java 라이브러리 파일](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)포함을 참조하십시오.
+AEM Forms이 JBoss 이외의 지원되는 J2EE 응용 프로그램 서버에 배포된 경우, adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 고유한 JAR 파일로 교체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 AEM Forms Java 라이브러리 파일 [포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **어셈블러 클라이언트 만들기**
 
@@ -80,23 +83,23 @@ aem Forms가 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 
 **기존 DCX 문서 참조**
 
-PDF 문서를 조합하려면 DCX 문서를 참조해야 합니다. 예를 들어 이 섹션에 소개된 DCX 문서를 생각해 보십시오. PDF 문서를 암호화하려면 DCX 문서에 `PasswordEncryptionProfile` 요소가 포함되어야 합니다.
+PDF 문서를 조합하려면 DDX 문서를 참조해야 합니다. 예를 들어 이 섹션에 도입된 DDX 문서를 생각해 보십시오. PDF 문서를 암호화하려면 DCX 문서에 `PasswordEncryptionProfile` 요소가 포함되어야 합니다.
 
 **비보안 PDF 문서 참조**
 
-보안되지 않은 PDF 문서를 참조하고 암호화하기 위해 어셈블러 서비스로 전달해야 합니다. 이미 암호화된 PDF 문서를 참조하면 예외가 발생합니다.
+보안되지 않은 PDF 문서를 참조하고 이를 암호화하기 위해 어셈블러 서비스로 전달해야 합니다. 이미 암호화된 PDF 문서를 참조하면 예외가 발생합니다.
 
 **런타임 옵션 설정**
 
-작업을 수행하는 동안 어셈블러 서비스의 동작을 제어하는 런타임 옵션을 설정할 수 있습니다. 예를 들어 오류가 발생하면 어셈블리 서비스에서 작업을 계속 처리하도록 하는 옵션을 설정할 수 있습니다. 설정할 수 있는 런타임 옵션에 대한 자세한 내용은 AEM Forms API 참조에서 `AssemblerOptionSpec` 클래스 [참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+작업을 수행하는 동안 어셈블러 서비스의 동작을 제어하는 런타임 옵션을 설정할 수 있습니다. 예를 들어 오류가 발생한 경우 어셈블리 서비스에서 작업을 계속 처리하도록 하는 옵션을 설정할 수 있습니다. 설정할 수 있는 런타임 옵션에 대한 자세한 내용은 `AssemblerOptionSpec` AEM Forms API 참조에서 [클래스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **문서 암호화**
 
-Assembler 서비스 클라이언트를 만든 후 암호화 정보가 포함된 DCX 문서를 참조하고, 비보안 PDF 문서를 참조하고, 런타임 옵션을 설정한 후 `invokeOneDocument` 작업을 호출할 수 있습니다. 하나의 입력 PDF 문서만 어셈블러 서비스로 전달되고 있으며 한 문서가 반환되고 있으므로 작업 대신 `invokeOneDocument` 작업을 사용할 수 있습니다 `invokeDDX` .
+어셈블러 서비스 클라이언트를 만든 후 암호화 정보가 포함된 DDX 문서를 참조하고, 보안되지 않은 PDF 문서를 참조하고, 런타임 옵션을 설정한 후 작업을 호출할 수 `invokeOneDocument` 있습니다. 하나의 입력 PDF 문서만 어셈블러 서비스로 전달되고 있으며 한 문서가 반환되고 있으므로 작업 대신 `invokeOneDocument` 작업을 사용할 수 `invokeDDX` 있습니다.
 
 **암호화된 PDF 문서 저장**
 
-하나의 PDF 문서만 어셈블러 서비스로 전달되면 어셈블러 서비스는 컬렉션 개체 대신 단일 문서를 반환합니다. 즉, `invokeOneDocument` 작업을 호출할 때 단일 문서가 반환됩니다. 이 섹션에서 참조된 DCX 문서에는 암호화 정보가 포함되어 있으므로 어셈블러 서비스는 암호로 암호화된 PDF 문서를 반환합니다.
+하나의 PDF 문서만 어셈블러 서비스로 전달되면 어셈블러 서비스는 컬렉션 개체 대신 단일 문서를 반환합니다. 즉, 작업을 호출할 때 `invokeOneDocument` 단일 문서가 반환됩니다. 이 섹션에서 참조되는 DCX 문서에는 암호화 정보가 포함되어 있으므로 어셈블러 서비스는 암호로 암호화된 PDF 문서를 반환합니다.
 
 **참고 항목**
 
@@ -115,100 +118,102 @@ Assembler 서비스 클라이언트를 만든 후 암호화 정보가 포함된 
 1. 어셈블러 클라이언트를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하여 객체를 전달하여 `AssemblerServiceClient` 객체를 만듭니다 `ServiceClientFactory` .
+   * 생성자를 사용하여 개체를 `AssemblerServiceClient` 만들고 개체를 `ServiceClientFactory` 전달합니다.
 
-1. 기존 DCX 문서를 참조합니다.
+1. 기존 DDX 문서를 참조합니다.
 
-   * 생성자를 사용하고 DCX 파일의 위치를 지정하는 문자열 값을 전달하여 DCX 문서를 나타내는 `java.io.FileInputStream` 객체를 만듭니다.
-   * 생성자를 사용하여 객체를 전달하여 `com.adobe.idp.Document` 객체를 만듭니다 `java.io.FileInputStream` .
+   * 생성자를 사용하여 DCX 문서를 나타내는 `java.io.FileInputStream` 개체를 만들고 DDX 파일의 위치를 지정하는 문자열 값을 전달합니다.
+   * 생성자를 사용하여 개체를 `com.adobe.idp.Document` 만들고 개체를 `java.io.FileInputStream` 전달합니다.
 
 1. 비보안 PDF 문서를 참조합니다.
 
    * 생성자를 사용하여 비보안 PDF 문서의 위치를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
-   * 개체를 `com.adobe.idp.Document` 만들고 PDF 문서가 포함된 `java.io.FileInputStream` 개체를 전달합니다. 이 `com.adobe.idp.Document` 개체는 `invokeOneDocument` 메서드에 전달됩니다.
+   * 개체를 `com.adobe.idp.Document` 만들고 PDF 문서가 포함된 `java.io.FileInputStream` 개체를 전달합니다. 이 `com.adobe.idp.Document` 개체는 `invokeOneDocument` 메서드로 전달됩니다.
 
 1. 런타임 옵션을 설정합니다.
 
    * 생성자를 사용하여 런타임 옵션을 저장하는 `AssemblerOptionSpec` 객체를 만듭니다.
-   * 객체에 속하는 메서드를 호출하여 비즈니스 요구 사항을 충족하도록 런타임 옵션을 `AssemblerOptionSpec` 설정합니다. 예를 들어 오류가 발생할 때 어셈블리 서비스에서 작업을 계속 처리하도록 하려면 `AssemblerOptionSpec` 개체의 `setFailOnError` 메서드를 호출하고 전달합니다 `false`.
+   * 개체에 속하는 메서드를 호출하여 비즈니스 요구 사항에 맞게 런타임 옵션을 `AssemblerOptionSpec` 설정합니다. 예를 들어 오류가 발생할 때 어셈블리 서비스에서 작업을 계속 처리하도록 지정하려면 `AssemblerOptionSpec` 개체의 `setFailOnError` 메서드를 호출하고 전달합니다 `false`.
 
 1. 문서를 암호화합니다.
 
-   객체의 `AssemblerServiceClient` `invokeOneDocument` 메서드를 호출하고 다음 값을 전달합니다.
+   개체의 `AssemblerServiceClient` 메서드를 `invokeOneDocument` 호출하고 다음 값을 전달합니다.
 
-   * DCX 문서를 나타내는 `com.adobe.idp.Document` 개체입니다. 이 DCX 문서에 PDF 소스 `inDoc` 요소의 값이 포함되어 있는지 확인합니다.
-   * 비보안 PDF 문서를 포함하는 `com.adobe.idp.Document` 개체입니다.
+   * DDX 문서를 나타내는 `com.adobe.idp.Document` 개체입니다. 이 DCX 문서에 PDF 소스 요소 `inDoc` 의 값이 포함되어 있는지 확인합니다.
+   * 보안되지 않은 PDF 문서를 포함하는 `com.adobe.idp.Document` 개체입니다.
    * 기본 글꼴 및 작업 로그 수준을 포함하여 런타임 옵션을 지정하는 `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` 개체입니다.
+
    이 `invokeOneDocument` 메서드는 암호로 암호화된 PDF 문서를 포함하는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. 암호화된 PDF 문서를 저장합니다.
 
-   * 개체를 만들고 파일 이름 확장자가 .pdf인지 확인합니다. `java.io.File`
-   * 객체의 메서드를 호출하여 `Document` `copyToFile` `Document` 객체의 내용을 파일에 복사합니다. 메서드가 반환한 `Document` 객체를 사용해야 `invokeOneDocument` 합니다.
+   * 객체를 만들고 파일 이름 확장자가 .pdf인지 확인합니다. `java.io.File`
+   * 개체의 `Document` 메서드를 `copyToFile` 호출하여 `Document` 개체의 내용을 파일에 복사합니다. 메서드가 반환한 `Document` 개체를 `invokeOneDocument` 사용해야 합니다.
 
 **참고 항목**
 
-[빠른 시작(SOAP 모드):Java API 파섹](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 암호화된 PDF 문서 취합](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
 ## 웹 서비스 API를 사용하여 암호화된 PDF 문서 취합 {#assemble-an-encrypted-pdf-document-using-the-web-service-api}
 
 1. 프로젝트 파일 포함
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 서비스 참조를 설정할 때 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`Adobe
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 서비스 참조를 설정할 때 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >AEM `localhost` Forms를 호스팅하는 서버의 IP 주소로 대체합니다.
+   >AEM Forms `localhost` 를 호스팅하는 서버의 IP 주소로 대체합니다.
 
 1. 어셈블러 클라이언트를 만듭니다.
 
-   * 기본 생성자를 사용하여 `AssemblerServiceClient` 객체를 만듭니다.
-   * 생성자를 사용하여 `AssemblerServiceClient.Endpoint.Address` 객체를 만듭니다 `System.ServiceModel.EndpointAddress` . WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.
-   * 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다 `AssemblerServiceClient.Endpoint.Binding` . 반환 값을 로 `BasicHttpBinding`캐스팅합니다.
-   * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 로 설정합니다 `MessageEncoding` . `WSMessageEncoding.Mtom` 이 값을 사용하면 MTOM이 사용됩니다.
+   * 기본 생성자를 사용하여 `AssemblerServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하여 `AssemblerServiceClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). 속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.
+   * 필드의 값을 `System.ServiceModel.BasicHttpBinding` 가져와 개체를 `AssemblerServiceClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
+   * 개체 `System.ServiceModel.BasicHttpBinding` 필드를 (으)로 `MessageEncoding` 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * AEM 양식 사용자 이름을 필드에 `AssemblerServiceClient.ClientCredentials.UserName.UserName`지정합니다.
-      * 필드에 해당 암호 값을 지정합니다 `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * 필드에 상수 값을 `HttpClientCredentialType.Basic` 지정합니다 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 필드에 상수 값을 `BasicHttpSecurityMode.TransportCredentialOnly` 지정합니다 `BasicHttpBindingSecurity.Security.Mode`.
+      * 필드에 AEM 양식 사용자 이름을 지정합니다 `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * 해당 암호 값을 필드에 지정합니다 `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * 필드에 상수 값 `HttpClientCredentialType.Basic` 을 지정합니다 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 필드에 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly` 을 지정합니다 `BasicHttpBindingSecurity.Security.Mode`.
 
-1. 기존 DCX 문서를 참조합니다.
+1. 기존 DDX 문서를 참조합니다.
 
-   * 생성자를 사용하여 `BLOB` 객체를 만듭니다. 이 `BLOB` 개체는 DCX 문서를 저장하는 데 사용됩니다.
-   * 생성자를 호출하고 DCX 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 객체를 만듭니다.
-   * 개체의 내용을 저장하는 바이트 배열을 `System.IO.FileStream` 만듭니다. 개체의 `System.IO.FileStream` `Length` 속성을 가져와 바이트 배열의 크기를 결정할 수 있습니다.
-   * 객체의 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다. `System.IO.FileStream` `Read`
+   * 생성자를 사용하여 `BLOB` 개체를 만듭니다. 이 `BLOB` 개체는 DDX 문서를 저장하는 데 사용됩니다.
+   * 생성자를 호출하고 DDX 문서의 파일 위치 및 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
+   * 개체의 내용을 저장하는 바이트 배열을 `System.IO.FileStream` 만듭니다. 개체의 속성을 가져와 바이트 배열의 크기를 결정할 수 `System.IO.FileStream` `Length` 있습니다.
+   * 개체의 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열 `System.IO.FileStream` `Read` 을 스트림 데이터로 채웁니다.
    * 바이트 배열의 내용으로 해당 `BLOB` `MTOM` 필드를 할당하여 개체를 채웁니다.
 
 1. 비보안 PDF 문서를 참조합니다.
 
-   * 생성자를 사용하여 `BLOB` 객체를 만듭니다. 이 `BLOB` 개체는 입력 PDF 문서를 저장하는 데 사용됩니다. 이 `BLOB` 개체는 `invokeOneDocument` 인수로 전달됩니다.
-   * 생성자를 호출하고 입력 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
-   * 개체의 내용을 저장하는 바이트 배열을 `System.IO.FileStream` 만듭니다. 개체의 `System.IO.FileStream` `Length` 속성을 가져와 바이트 배열의 크기를 결정할 수 있습니다.
-   * 객체의 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다. `System.IO.FileStream` `Read`
+   * 생성자를 사용하여 `BLOB` 개체를 만듭니다. 이 `BLOB` 개체는 입력 PDF 문서를 저장하는 데 사용됩니다. 이 `BLOB` 개체는 인수로 `invokeOneDocument` 전달됩니다.
+   * 생성자를 호출하고 입력 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 객체를 만듭니다.
+   * 개체의 내용을 저장하는 바이트 배열을 `System.IO.FileStream` 만듭니다. 개체의 속성을 가져와 바이트 배열의 크기를 결정할 수 `System.IO.FileStream` `Length` 있습니다.
+   * 개체의 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열 `System.IO.FileStream` `Read` 을 스트림 데이터로 채웁니다.
    * 바이트 배열의 내용으로 해당 `BLOB` `MTOM` 필드를 할당하여 개체를 채웁니다.
 
 1. 런타임 옵션을 설정합니다.
 
    * 생성자를 사용하여 런타임 옵션을 저장하는 `AssemblerOptionSpec` 객체를 만듭니다.
-   * 객체에 속하는 데이터 멤버에 값을 할당하여 비즈니스 요구 사항에 맞게 런타임 옵션을 설정할 수 `AssemblerOptionSpec` 있습니다. 예를 들어 오류가 발생할 때 어셈블리 서비스에서 작업을 계속 처리하도록 하려면 개체의 `false` `AssemblerOptionSpec` `failOnError` 데이터 멤버에 할당합니다.
+   * 객체에 속하는 데이터 멤버에 값을 할당하여 비즈니스 요구 사항에 맞게 런타임 옵션을 `AssemblerOptionSpec` 설정합니다. 예를 들어 오류가 발생할 때 어셈블리 서비스에서 작업을 계속 처리하도록 지정하려면 개체 `false` 의 `AssemblerOptionSpec` 데이터 `failOnError` 멤버에 할당합니다.
 
 1. 문서를 암호화합니다.
 
-   객체의 `AssemblerServiceClient` `invokeOneDocument` 메서드를 호출하고 다음 값을 전달합니다.
+   개체의 `AssemblerServiceClient` 메서드를 `invokeOneDocument` 호출하고 다음 값을 전달합니다.
 
    * DCX 문서를 나타내는 `BLOB` 개체
    * 비보안 PDF 문서를 나타내는 `BLOB` 개체
    * 런타임 옵션을 지정하는 `AssemblerOptionSpec` 개체
+
    이 `invokeOneDocument` 메서드는 암호화된 PDF 문서를 포함하는 `BLOB` 개체를 반환합니다.
 
 1. 암호화된 PDF 문서를 저장합니다.
 
-   * 생성자를 호출하고 암호화된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
-   * 메서드가 반환한 `BLOB` 객체의 내용을 저장하는 바이트 배열을 `invokeOneDocument` 만듭니다. 개체 데이터 멤버의 값을 가져와 바이트 배열을 `BLOB` 채웁니다 `MTOM` .
-   * 생성자를 호출하고 객체를 전달하여 `System.IO.BinaryWriter` `System.IO.FileStream` 객체를 만듭니다.
-   * 개체의 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다. `System.IO.BinaryWriter` `Write`
+   * 생성자를 호출하고 암호화된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 객체를 만듭니다.
+   * 반환된 객체의 내용을 저장하는 바이트 배열 `BLOB` 을 `invokeOneDocument` 만듭니다. 개체 데이터 멤버의 값을 가져와 바이트 배열 `BLOB` 을 `MTOM` 채웁니다.
+   * 생성자를 호출하고 개체를 전달하여 `System.IO.BinaryWriter` 개체를 `System.IO.FileStream` 만듭니다.
+   * 개체의 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일 `System.IO.BinaryWriter` `Write` 에 씁니다.
 
 **참고 항목**
 
