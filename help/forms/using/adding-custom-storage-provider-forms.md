@@ -1,6 +1,6 @@
 ---
-title: 초안 및 제출 구성 요소에 대한 사용자 정의 저장소
-seo-title: 초안 및 제출 구성 요소에 대한 사용자 정의 저장소
+title: 초안 및 제출 구성 요소를 위한 사용자 정의 저장소
+seo-title: 초안 및 제출 구성 요소를 위한 사용자 정의 저장소
 description: 초안 및 제출용 사용자 데이터의 저장을 사용자 지정하는 방법을 참조하십시오.
 seo-description: 초안 및 제출용 사용자 데이터의 저장을 사용자 지정하는 방법을 참조하십시오.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
@@ -9,29 +9,32 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
 
-# 초안 및 제출 구성 요소에 대한 사용자 정의 저장소 {#custom-storage-for-drafts-and-submissions-component}
+# 초안 및 제출 구성 요소를 위한 사용자 정의 저장소 {#custom-storage-for-drafts-and-submissions-component}
 
 ## 개요 {#overview}
 
-AEM Forms를 사용하면 양식을 초안으로 저장할 수 있습니다. 초안 기능을 사용하면 진행 중인 작업 양식을 유지 관리할 수 있으며, 이 양식을 작성하여 모든 장치에서 나중에 제출할 수 있습니다.
+AEM Forms을 사용하면 양식을 초안으로 저장할 수 있습니다. 초안 기능을 사용하면 진행 중인 작업 양식을 유지 관리할 수 있으며, 이 양식을 모든 장치에서 작성하여 나중에 제출할 수 있습니다.
 
-기본적으로 AEM Forms는 양식 초안 및 제출과 연관된 사용자 데이터를 게시 인스턴스의 `/content/forms/fp` 노드에 저장합니다. 또한 AEM Forms 포털 구성 요소는 초안 및 제출용 사용자 데이터 저장 구현을 사용자 지정하는 데 사용할 수 있는 데이터 서비스를 제공합니다. 예를 들어 데이터 저장소에 사용자 데이터를 저장할 수 있습니다.
+기본적으로 AEM Forms은 양식의 초안 및 제출과 연관된 사용자 데이터를 게시 인스턴스의 `/content/forms/fp` 노드에 저장합니다. 또한 AEM Forms 포털 구성 요소는 초안 및 제출용 사용자 데이터 저장 구현을 사용자 정의하는 데 사용할 수 있는 데이터 서비스를 제공합니다. 예를 들어 데이터 저장소에 사용자 데이터를 저장할 수 있습니다.
 
 ## 전제 조건  {#prerequisites}
 
 * 양식 [포털 구성 요소 활성화](/help/forms/using/enabling-forms-portal-components.md)
 * [양식 포털 페이지 만들기](/help/forms/using/creating-form-portal-page.md)
-* 양식 포털에 [적응형 양식 사용](/help/forms/using/draft-submission-component.md)
-* 맞춤형 스토리지 [구축 세부 정보 살펴보기](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* 양식 [포털에 적응형 양식 사용](/help/forms/using/draft-submission-component.md)
+* 사용자 [정의 스토리지에 대한 구현 세부 정보 알아보기](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## 초안 데이터 서비스 {#draft-data-service}
 
-초안의 사용자 데이터 저장소를 사용자 정의하려면 `DraftDataService` 인터페이스의 모든 방법을 구현해야 합니다. 다음 샘플 코드는 메서드 및 인수에 대해 설명합니다.
+초안의 사용자 데이터 저장소를 사용자 정의하려면 인터페이스의 모든 방법을 구현해야 `DraftDataService` 합니다. 다음 샘플 코드는 메서드 및 인수를 설명합니다.
 
 ```java
 /**
@@ -94,9 +97,9 @@ public interface DraftDataService {
 }
 ```
 
-## 제출 데이터 서비스 {#submission-data-service}
+## 데이터 서비스 제출 {#submission-data-service}
 
-제출용 사용자 데이터의 저장을 사용자 정의하려면 `SubmitDataService` 인터페이스의 모든 방법을 구현해야 합니다. 다음 샘플 코드는 메서드 및 인수에 대해 설명합니다.
+제출용 사용자 데이터의 저장을 사용자 지정하려면 `SubmitDataService` 인터페이스 모든 방법을 구현해야 합니다. 다음 샘플 코드는 메서드 및 인수를 설명합니다.
 
 ```java
 /**
@@ -181,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-양식 포털은 UUID(Universal Unique Identifier) 개념을 사용하여 모든 초안 및 제출된 양식에 대한 고유 ID를 생성합니다. 고유한 ID를 생성할 수도 있습니다. FPKeyGeneratorService 인터페이스를 구현하고, 메서드를 재정의하고, 사용자 지정 논리를 개발하여 모든 초안 및 제출된 양식에 대해 사용자 지정 고유 ID를 생성할 수 있습니다. 또한 0보다 높은 사용자 지정 ID 생성 구현의 서비스 등급을 설정합니다. 기본 구현 대신 사용자 지정 구현이 사용됩니다.
+양식 포털은 UUID(Universal Unique Identifier) 개념을 사용하여 모든 초안 및 제출 양식에 대한 고유 ID를 생성합니다. 고유한 ID를 생성할 수도 있습니다. FPKeyGeneratorService 인터페이스를 구현하고, 해당 메서드를 재정의하고, 사용자 지정 논리를 개발하여 모든 초안 및 제출된 양식에 대해 사용자 지정 고유 ID를 생성할 수 있습니다. 또한 0보다 높은 사용자 지정 ID 생성 구현의 서비스 등급을 설정합니다. 기본 구현 대신 사용자 지정 구현이 사용됩니다.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -196,14 +199,14 @@ public interface FPKeyGeneratorService {
 }
 ```
 
-아래 주석을 사용하여 위 코드로 생성된 사용자 지정 ID에 대한 서비스 등급을 높일 수 있습니다.
+아래 주석을 사용하여 위의 코드로 생성된 사용자 지정 ID에 대한 서비스 등급을 높일 수 있습니다.
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-위의 주석을 사용하려면 프로젝트에 다음 내용을 가져옵니다.
+위의 주석을 사용하려면 프로젝트에 다음을 가져옵니다.
 
-```
+```java
 import org.apache.felix.scr.annotations.Properties;
- import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Property;
 ```
 
