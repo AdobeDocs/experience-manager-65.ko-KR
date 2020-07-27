@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '16977'
 ht-degree: 0%
@@ -195,6 +195,7 @@ PDF 문서에 서명 필드를 성공적으로 추가하려면 서명 필드의 
    * 서명 필드의 위치를 지정하는 `PositionRect` 개체입니다.
    * 디지털 서명이 서명 필드에 적용된 후 잠긴 PDF 문서의 필드를 지정하는 `FieldMDPOptions` 개체 이 매개 변수 값은 선택 사항이며 전달할 수 있습니다 `null`.
    * 다양한 런타임 값을 지정하는 `PDFSeedValueOptions` 개체입니다. 이 매개 변수 값은 선택 사항이며 전달할 수 있습니다 `null`.
+
    이 `addSignatureField` 메서드는 서명 필드가 포함된 PDF 문서를 나타내는 `BLOB` 개체를 반환합니다.
 
 1. PDF 문서를 PDF 파일로 저장
@@ -460,6 +461,7 @@ PDF 문서에 있는 서명 필드를 수정하려면 다음 작업을 수행하
    * 개체의 메서드를 호출하고 열거형 값을 전달하여 PDF 문서의 모든 필드 `FieldMDPOptionSpec` 를 `setMdpValue` `FieldMDPAction.ALL` 잠급니다.
    * 개체의 메서드를 호출하고 개체를 전달하여 시드 값 사전 정보 `PDFSignatureFieldProperties` 를 `setSeedValue` `PDFSeedValueOptionSpec` 설정합니다.
    * 개체의 메서드를 호출하고 개체를 전달하여 서명 필드 잠금 사전 정보 `PDFSignatureFieldProperties`를 `setFieldMDP` `FieldMDPOptionSpec` 설정합니다.
+
    >[!NOTE]
    >
    >설정할 수 있는 모든 시드 값 사전 값을 보려면 `PDFSeedValueOptionSpec` 클래스 참조를 참조하십시오. (AEM Forms [API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
@@ -471,6 +473,7 @@ PDF 문서에 있는 서명 필드를 수정하려면 다음 작업을 수행하
    * 수정할 서명 필드가 포함된 PDF 문서를 저장하는 `com.adobe.idp.Document` 개체
    * 서명 필드의 이름을 지정하는 문자열 값
    * 서명 필드 잠금 사전 및 시드 값 사전 정보를 저장하는 `PDFSignatureFieldProperties` 개체
+
    이 `modifySignatureField` 메서드는 수정된 서명 필드가 포함된 PDF 문서를 저장하는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. PDF 문서를 PDF 파일로 저장
@@ -520,6 +523,7 @@ PDF 문서에 있는 서명 필드를 수정하려면 다음 작업을 수행하
    * 개체의 데이터 멤버에 열거형 값을 할당하여 PDF 문서의 모든 필드 `FieldMDPAction.ALL` 를 `FieldMDPOptionSpec` `mdpValue` 잠급니다.
    * 개체의 데이터 멤버에 개체를 할당하여 시드 값 사전 정보 `PDFSeedValueOptionSpec` 를 `PDFSignatureFieldProperties` `seedValue` 설정합니다.
    * 개체의 데이터 멤버에 개체를 할당하여 서명 필드 잠금 사전 정보 `FieldMDPOptionSpec` 를 `PDFSignatureFieldProperties` `fieldMDP` 설정합니다.
+
    >[!NOTE]
    >
    >설정할 수 있는 모든 시드 값 사전 값을 보려면 `PDFSeedValueOptionSpec` 클래스 참조를 참조하십시오. (AEM Forms [API 참조 참조 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
@@ -531,6 +535,7 @@ PDF 문서에 있는 서명 필드를 수정하려면 다음 작업을 수행하
    * 수정할 서명 필드가 포함된 PDF 문서를 저장하는 `BLOB` 개체
    * 서명 필드의 이름을 지정하는 문자열 값
    * 서명 필드 잠금 사전 및 시드 값 사전 정보를 저장하는 `PDFSignatureFieldProperties` 개체
+
    이 `modifySignatureField` 메서드는 수정된 서명 필드가 포함된 PDF 문서를 저장하는 `BLOB` 개체를 반환합니다.
 
 1. PDF 문서를 PDF 파일로 저장
@@ -584,8 +589,8 @@ Cipher NShield HSM 자격 증명을 사용하여 PDF 문서에 서명하거나 �
 
 cknfastrc 파일에 /opt/nfast/cknfastrc(또는 c:\nfast\cknfastrc)에 있는 다음 구성 값을 추가할 수 있습니다.
 
-```as3
- CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 이 구성 값을 cknfastrc 파일에 추가하면 J2EE 응용 프로그램 서버를 다시 시작하지 않고 새 자격 증명을 사용할 수 있습니다.
@@ -721,6 +726,7 @@ PDF 문서에 성공적으로 서명하려면 디지털 서명이 포함되어 �
    * OCSP(Online Certificate Status Protocol) 지원에 대한 환경 설정을 저장하는 `OCSPOptionSpec` 개체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`.
    * CRL(인증서 해지 목록) 기본 설정을 저장하는 `CRLPreferences` 객체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`.
    * TSP(타임스탬프 공급자) 지원에 대한 환경 설정을 저장하는 `TSPPreferences` 개체입니다. 이 매개 변수는 선택 사항이며 사용할 수 있습니다 `null`. 자세한 내용은 [AEM Forms API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+
    이 `sign` 메서드는 서명된 PDF 문서를 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. 서명된 PDF 문서 저장
@@ -788,6 +794,7 @@ PDF 문서에 성공적으로 서명하려면 디지털 서명이 포함되어 �
    * OCSP(Online Certificate Status Protocol) 지원에 대한 환경 설정을 저장하는 `OCSPOptionSpec` 개체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`. 이 개체에 대한 자세한 내용은 [AEM Forms API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * CRL(인증서 해지 목록) 기본 설정을 저장하는 `CRLPreferences` 객체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`.
    * TSP(타임스탬프 공급자) 지원에 대한 환경 설정을 저장하는 `TSPPreferences` 개체입니다. 이 매개 변수는 선택 사항이며 사용할 수 있습니다 `null`.
+
    이 `sign` 메서드는 서명된 PDF 문서를 나타내는 `BLOB` 개체를 반환합니다.
 
 1. 서명된 PDF 문서 저장
@@ -919,6 +926,7 @@ PDF 문서에 서명할 때 서명 서비스가 사용하는 런타임 옵션을
       * 런타임 옵션을 저장하는 `PDFFormRenderSpec` 개체입니다.
       * Forms 서비스에 필요한 URI 값이 포함된 `URLSpec` 개체입니다. 이 매개 변수 값 `null` 에 대해 지정할 수 있습니다.
       * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 선택 매개 변수이며 양식에 파일을 첨부하지 않으려는 `null` 경우 지정할 수 있습니다.
+
       이 `renderPDFForm2` 메서드는 양식 데이터 스트림을 포함하는 `FormsResult` 개체를 반환합니다
 
    * 개체의 방법을 호출하여 PDF 양식 `FormsResult` 을 `getOutputContent` 검색합니다. 이 메서드는 대화형 양식을 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
@@ -939,6 +947,7 @@ PDF 문서에 서명할 때 서명 서비스가 사용하는 런타임 옵션을
    * OCSP(Online Certificate Status Protocol) 지원에 대한 환경 설정을 저장하는 `OCSPPreferences` 개체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`.
    * CRL(인증서 해지 목록) 기본 설정을 저장하는 `CRLPreferences` 객체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`.
    * TSP(타임스탬프 공급자) 지원에 대한 환경 설정을 저장하는 `TSPPreferences` 개체입니다. 이 매개 변수는 선택 사항이며 사용할 수 있습니다 `null`.
+
    이 `sign` 메서드는 서명된 PDF 문서를 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. 서명된 PDF 문서 저장
@@ -984,6 +993,7 @@ PDF 문서에 서명할 때 서명 서비스가 사용하는 런타임 옵션을
       * 해당 암호 값을 필드에 지정합니다 `SignatureServiceClient.ClientCredentials.UserName.Password`.
       * 필드에 상수 값 `HttpClientCredentialType.Basic` 을 지정합니다 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * 필드에 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly` 을 지정합니다 `BasicHttpBindingSecurity.Security.Mode`.
+
    >[!NOTE]
    >
    >Forms 서비스 클라이언트에 대해 다음 단계를 반복합니다.
@@ -1031,6 +1041,7 @@ PDF 문서에 서명할 때 서명 서비스가 사용하는 런타임 옵션을
    * OCSP(Online Certificate Status Protocol) 지원에 대한 환경 설정을 저장하는 `OCSPPreferences` 개체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`. 이 개체에 대한 자세한 내용은 [AEM Forms API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * CRL(인증서 해지 목록) 기본 설정을 저장하는 `CRLPreferences` 객체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`.
    * TSP(타임스탬프 공급자) 지원에 대한 환경 설정을 저장하는 `TSPPreferences` 개체입니다. 이 매개 변수는 선택 사항이며 사용할 수 있습니다 `null`.
+
    이 `sign` 메서드는 서명된 PDF 문서를 나타내는 `BLOB` 개체를 반환합니다.
 
 1. 서명된 PDF 문서 저장
@@ -1066,8 +1077,8 @@ PDF 문서를 인증된 서명이라고 하는 특정 유형의 서명을 사용
 
 cknfastrc 파일에 /opt/nfast/cknfastrc(또는 c:\nfast\cknfastrc)에 있는 다음 구성 값을 추가할 수 있습니다.
 
-```as3
-             CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 이 구성 값을 cknfastrc 파일에 추가하면 J2EE 응용 프로그램 서버를 다시 시작하지 않고 새 자격 증명을 사용할 수 있습니다.
@@ -1179,6 +1190,7 @@ PDF 문서를 성공적으로 인증하려면 서명 서비스에서 PDF 문서�
    * OCSP(Online Certificate Status Protocol) 지원에 대한 환경 설정을 저장하는 `OCSPPreferences` 개체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`. 이 개체에 대한 자세한 내용은 [AEM Forms API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * CRL(인증서 해지 목록) 기본 설정을 저장하는 `CRLPreferences` 객체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`.
    * TSP(타임스탬프 공급자) 지원에 대한 환경 설정을 저장하는 `TSPPreferences` 개체입니다. 예를 들어 `TSPPreferences` 개체를 만든 후 개체의 메서드를 호출하여 TSP 서버의 URL을 설정할 수 `TSPPreferences` `setTspServerURL` 있습니다. 이 매개 변수는 선택 사항이며 사용할 수 있습니다 `null`. 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+
    이 `certify` 메서드는 인증된 PDF 문서를 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. 인증된 PDF 문서를 PDF 파일로 저장
@@ -1251,6 +1263,7 @@ PDF 문서를 성공적으로 인증하려면 서명 서비스에서 PDF 문서�
    * OCSP(Online Certificate Status Protocol) 지원에 대한 기본 설정을 저장하는 `OCSPPreferences` 개체로, PDF 문서를 인증하는 데 사용되는 자격 증명의 상태에 대한 정보를 제공합니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`.
    * CRL(인증서 해지 목록) 기본 설정을 저장하는 `CRLPreferences` 객체입니다. 해지 검사가 수행되지 않으면 이 매개 변수가 사용되지 않으며 지정할 수 있습니다 `null`.
    * TSP(타임스탬프 공급자) 지원에 대한 환경 설정을 저장하는 `TSPPreferences` 개체입니다. 예를 들어 `TSPPreferences` 개체를 만든 후 개체의 데이터 멤버를 설정하여 TSP의 URL을 `TSPPreferences` 설정할 수 `tspServerURL` 있습니다. 이 매개 변수는 선택 사항이며 사용할 수 있습니다 `null`.
+
    이 `certify` 메서드는 인증된 PDF 문서를 나타내는 `BLOB` 개체를 반환합니다.
 
 1. 인증된 PDF 문서를 PDF 파일로 저장
@@ -1410,6 +1423,7 @@ CRL 서버를 사용하는 대신 해지 확인을 수행할 때 OCSP(온라인 
    * 확인할 서명이 포함된 서명 필드 이름을 나타내는 문자열 값입니다.
    * PKI 런타임 옵션이 포함된 `PKIOptions` 개체입니다.
    * SPI 정보가 포함된 `VerifySPIOptions` 인스턴스입니다. 이 매개 변수 `null` 에 대해 지정할 수 있습니다.
+
    이 `verify2` 메서드는 디지털 서명을 확인하는 데 사용할 수 있는 정보가 포함된 `PDFSignatureVerificationInfo` 개체를 반환합니다.
 
 1. 서명 상태 확인
@@ -1478,6 +1492,7 @@ Signature Service API(웹 서비스)를 사용하여 디지털 서명을 확인�
    * 확인할 서명이 포함된 서명 필드 이름을 나타내는 문자열 값입니다.
    * PKI 런타임 옵션이 포함된 `PKIOptions` 개체입니다.
    * SPI 정보가 포함된 `VerifySPIOptions` 인스턴스입니다. 이 매개 변수 `null` 에 대해 지정할 수 있습니다.
+
    이 `verify2` 메서드는 디지털 서명을 확인하는 데 사용할 수 있는 정보가 포함된 `PDFSignatureVerificationInfo` 개체를 반환합니다.
 
 1. 서명 상태 확인
@@ -1625,6 +1640,7 @@ Signature Service API(Java)를 사용하여 여러 디지털 서명을 확인합
    * 여러 디지털 서명이 포함된 PDF 문서를 포함하는 `com.adobe.idp.Document` 개체입니다.
    * PKI 런타임 옵션이 포함된 `PKIOptions` 개체입니다.
    * SPI 정보가 포함된 `VerifySPIOptions` 인스턴스입니다. 이 매개 변수 `null` 에 대해 지정할 수 있습니다.
+
    이 방법 `verifyPDFDocument` 은 PDF 문서에 있는 모든 디지털 서명에 대한 정보가 포함된 `PDFDocumentVerificationInfo` 개체를 반환합니다.
 
 1. 모든 서명을 통해 공유
@@ -1690,6 +1706,7 @@ Signature Service API(웹 서비스)를 사용하여 여러 디지털 서명을 
    * 여러 디지털 서명이 포함된 PDF 문서를 포함하는 `BLOB` 개체입니다.
    * PKI 런타임 옵션이 포함된 `PKIOptions` 개체입니다.
    * SPI 정보가 포함된 `VerifySPIOptions` 인스턴스입니다. 이 매개 변수에 null을 지정할 수 있습니다.
+
    이 방법 `verifyPDFDocument` 은 PDF 문서에 있는 모든 디지털 서명에 대한 정보가 포함된 `PDFDocumentVerificationInfo` 개체를 반환합니다.
 
 1. 모든 서명을 통해 공유
@@ -1789,6 +1806,7 @@ PDF 문서에서 디지털 서명을 성공적으로 제거하려면 디지털 �
 
    * 제거할 서명이 포함된 PDF 문서를 나타내는 `com.adobe.idp.Document` 개체입니다.
    * 디지털 서명이 포함된 서명 필드의 이름을 지정하는 문자열 값.
+
    이 방법 `clearSignatureField` 은 디지털 서명이 제거된 PDF 문서를 나타내는 `com.adobe.idp.Document` 개체를 반환합니다.
 
 1. PDF 문서를 PDF 파일로 저장
@@ -1845,6 +1863,7 @@ PDF 문서에서 디지털 서명을 성공적으로 제거하려면 디지털 �
 
    * 서명된 PDF 문서를 포함하는 `BLOB` 개체입니다.
    * 제거할 디지털 서명이 포함된 서명 필드의 이름을 나타내는 문자열 값입니다.
+
    이 방법 `clearSignatureField` 은 디지털 서명이 제거된 PDF 문서를 나타내는 `BLOB` 개체를 반환합니다.
 
 1. PDF 문서를 PDF 파일로 저장
