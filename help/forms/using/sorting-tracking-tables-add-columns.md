@@ -1,28 +1,31 @@
 ---
-title: 추적 테이블 사용자 정의
-seo-title: 추적 테이블 사용자 정의
-description: AEM Forms 작업 영역의 추적 탭에 표시되는 작업 테이블에서 사용자 프로세스의 세부 사항 표시를 사용자 지정하는 방법.
-seo-description: AEM Forms 작업 영역의 추적 탭에 표시되는 작업 테이블에서 사용자 프로세스의 세부 사항 표시를 사용자 지정하는 방법.
+title: 추적 표 사용자 정의
+seo-title: 추적 표 사용자 정의
+description: AEM Forms 작업 공간의 추적 탭에 표시되는 작업 테이블에 있는 사용자 프로세스 세부 사항 표시를 사용자 지정하는 방법
+seo-description: AEM Forms 작업 공간의 추적 탭에 표시되는 작업 테이블에 있는 사용자 프로세스 세부 사항 표시를 사용자 지정하는 방법
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 2%
 
 ---
 
 
-# 추적 테이블 사용자 정의{#customize-tracking-tables}
+# 추적 표 사용자 정의{#customize-tracking-tables}
 
-AEM Forms 작업 영역의 추적 탭은 로그인한 사용자가 관련된 프로세스 인스턴스의 세부 사항을 표시하는 데 사용됩니다. 추적 테이블을 보려면 먼저 왼쪽 창에서 프로세스 이름을 선택하여 가운데 창에 인스턴스 목록을 표시합니다. 오른쪽 창에서 이 인스턴스에서 생성된 작업 테이블을 보려면 프로세스 인스턴스를 선택합니다. 기본적으로 테이블 열에는 다음 작업 속성이 표시됩니다(작업 모델의 해당 속성이 괄호 안에 표시됨).
+AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 관련된 프로세스 인스턴스의 세부 사항을 표시하는 데 사용됩니다. 추적 테이블을 보려면 왼쪽 창에서 프로세스 이름을 선택하여 가운데 창에 있는 인스턴스 목록을 확인합니다. 오른쪽 창에서 이 인스턴스에서 생성된 작업 테이블을 보려면 프로세스 인스턴스를 선택합니다. 기본적으로 테이블 열에는 다음과 같은 작업 속성이 표시됩니다(작업 모델의 해당 속성은 괄호 안에 표시됨).
 
 * ID ( `taskId`)
 * 이름 ( `stepName`)
 * 지침 ( `instructions`)
 * 선택된 동작 ( `selectedRoute`)
-* 작성 시간( `createTime`)
+* 생성 시간( `createTime`)
 * 완료 시간( `completeTime`)
 * 소유자 ( `currentAssignment.queueOwner`)
 
@@ -66,7 +69,7 @@ AEM Forms 작업 영역의 추적 탭은 로그인한 사용자가 관련된 프
    <td><p>showACLActions</p> </td>
   </tr>
   <tr>
-   <td><p>기한</p> </td>
+   <td><p>마감</p> </td>
    <td><p>numForms</p> </td>
    <td><p>showDirectActions</p> </td>
   </tr>
@@ -113,13 +116,13 @@ AEM Forms 작업 영역의 추적 탭은 로그인한 사용자가 관련된 프
  </tbody>
 </table>
 
-작업 테이블에서 다음 사용자 지정을 수행하려면 소스 코드에서 의미 변경을 수행해야 합니다. 작업 [공간 SDK를 사용하여 의미 체계 변경을 수행하고 변경된 소스에서 축소된 패키지를 생성하는 방법은 AEM Forms 작업 영역](/help/forms/using/introduction-customizing-html-workspace.md) 사용자 지정 소개를 참조하십시오.
+작업 테이블의 다음 사용자 지정을 수행하려면 소스 코드에서 의미 변경을 수행해야 합니다. 작업 [공간 SDK를 사용하여 의미 체계 변경을 수행하고 변경된 소스에서 축소 패키지를 빌드하는 방법에 대한 자세한 내용은 AEM Forms 작업 공간](/help/forms/using/introduction-customizing-html-workspace.md) 사용자 정의 소개를 참조하십시오.
 
-## 표 열 및 해당 순서 변경 {#changing-table-columns-and-their-order}
+## 테이블 열 및 해당 순서 변경 {#changing-table-columns-and-their-order}
 
-1. 테이블 및 해당 주문에 표시된 작업 속성을 수정하려면 /ws/js/runtime/templates/processinstancehistory.html 파일을 구성합니다.
+1. 테이블 및 해당 순서에 표시된 작업 속성을 수정하려면 /ws/js/runtime/templates/processinstancehistory.html파일을 구성합니다.
 
-   ```as3
+   ```html
    <table>
        <thead>
            <tr>
@@ -134,7 +137,7 @@ AEM Forms 작업 영역의 추적 탭은 로그인한 사용자가 관련된 프
    </table>
    ```
 
-   ```as3
+   ```html
    <table>
        <tbody>
            <%_.each(obj, function(task){%>
@@ -155,9 +158,9 @@ AEM Forms 작업 영역의 추적 탭은 로그인한 사용자가 관련된 프
 
 열 머리글을 클릭할 때 작업 목록 테이블을 정렬하려면 다음을 수행합니다.
 
-1. 파일에서 에 대한 클릭 핸들러를 `.fixedTaskTableHeader th` 등록합니다 `js/runtime/views/processinstancehistory.js`.
+1. 파일에서 에 대한 클릭 핸들러 `.fixedTaskTableHeader th` 를 등록합니다 `js/runtime/views/processinstancehistory.js`.
 
-   ```as3
+   ```javascript
    events: {
        //other handlers
        "click .fixedTaskTableHeader th": "onTaskTableHeaderClick",
@@ -165,21 +168,21 @@ AEM Forms 작업 영역의 추적 탭은 로그인한 사용자가 관련된 프
    }
    ```
 
-   처리기에서 의 `onTaskTableHeaderClick` 함수를 `js/runtime/util/history.js`호출합니다.
+   처리기에서 의 `onTaskTableHeaderClick` 함수를 호출합니다 `js/runtime/util/history.js`.
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick: function (event) {
            history.onTaskTableHeaderClick(event);
    }
    ```
 
-1. 메서드를 `TaskTableHeaderClick` 표시합니다 `js/runtime/util/history.js`.
+1. 메서드를 `TaskTableHeaderClick` 노출합니다 `js/runtime/util/history.js`.
 
-   이 메서드는 클릭 이벤트에서 작업 속성을 찾고, 해당 속성에 대한 작업 목록을 정렬하고, 정렬된 작업 목록과 함께 작업 테이블을 렌더링합니다.
+   이 메소드는 click 이벤트에서 작업 속성을 찾고, 해당 속성에 대한 작업 목록을 정렬하고, 정렬된 작업 목록과 함께 작업 테이블을 렌더링합니다.
 
-   비교자 함수를 제공하여 작업 목록 컬렉션의 백본 정렬 기능을 사용하여 정렬이 수행됩니다.
+   비교자 함수를 제공하여 작업 목록 컬렉션의 백본 정렬 기능을 사용하여 정렬을 수행합니다.
 
-   ```as3
+   ```javascript
        return {
            //other methods
            onTaskTableHeaderClick  : onTaskTableHeaderClick,
@@ -187,7 +190,7 @@ AEM Forms 작업 영역의 추적 탭은 로그인한 사용자가 관련된 프
        };
    ```
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick = function (event) {
            var target = $(event.target),
             comparator,
