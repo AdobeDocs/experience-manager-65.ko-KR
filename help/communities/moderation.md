@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -112,7 +112,7 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 ### 필터 레일 {#ootbfilters}
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![오픈 필터레일](assets/open-filterrail.png)
 
 사이드 패널 아이콘이 필터 레일을 엽니다. 컨텐츠 영역의 왼쪽에 표시되는 필터 레일은 서로 다른 필터를 제공하므로 각 필터는 컨텐츠 영역에 나타나는 참조된 UGC에 즉시 영향을 줍니다.
 
@@ -141,17 +141,17 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 텍스트 검색은 입력한 텍스트가 포함된 게시물에 표시된 참조된 UGC를 제한합니다.
 
-![chlimage_1-213](assets/chlimage_1-213.png)
+![text-search](assets/text-search.png)
 
 #### 사이트 {#site}
 
 사이트는 참조된 UGC가 선택한 커뮤니티 사이트에 게시물로 제한됩니다. 사이트를 선택하지 않으면 UGC에 대한 모든 참조가 표시됩니다.
 
-![chlimage_1-214](assets/chlimage_1-214.png)
+![site-panel](assets/site-panel.png)
 
 >[!NOTE]
 >
->관리자가 벌크 중재 콘솔에 액세스하면 Geometrixx 샘플과 같이 [사이트 만들기 마법사로](/help/communities/sites-console.md)만들지 않은 사이트를 비롯하여 UGC에 대한 모든 참조가 표시됩니다.
+>관리자가 벌크 중재 콘솔에 액세스하면 Geometrixx 샘플과 같이 [사이트 생성 마법사로](/help/communities/sites-console.md)만들어지지 않은 사이트를 비롯하여 UGC에 대한 모든 참조가 표시됩니다.
 >
 >신뢰할 수 있는 커뮤니티 구성원이 게시 시 벌크 중재 콘솔에 액세스하면 멤버가 중재할 수 있는 커뮤니티 사이트에 대해 생성된 UGC에 대한 참조만 표시되며 사이트 필터로 필터링할 수 있습니다.
 
@@ -189,8 +189,7 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
    * 예를 들어 포함된 투표 구성 요소를 필터링하려면 다음을 입력합니다.
 
       `Voting=social/tally/components/hbs/voting`
-
-![chlimage_1-215](assets/chlimage_1-215.png)
+   ![additional contenttype](assets/additional-contenttype.png)
 
 * 저장을 선택합니다.
 * 커뮤니티 - 중재 콘솔을 새로 고칩니다.
@@ -216,25 +215,25 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 한 컨텐츠의 플래그가 지정되면 해당 단일 컨텐츠에 플래그를 해제할 때까지 플래그 지정된 상태로 남아 있습니다. 단, **플래그** 단추를 다시 선택합니다. 중요 또는 후속 조치와 같은 플래그 지정은 없습니다.
 
-![chlimage_1-216](assets/chlimage_1-216.png)
+![플래그](assets/flagging.png)
 
 #### 구성원 {#members}
 
 멤버는 입력한 멤버 이름으로 게시된 UGC로 참조된 UGC를 제한합니다.
 
-![chlimage_1-217](assets/chlimage_1-217.png)
+![구성원](assets/members.png)
 
 #### 마지막에 게시된 항목 {#posted-in-the-last}
 
 [마지막 위치에 게시]는 지난 시간, 일, 주, 월 또는 연도의 게시물에 표시된 참조된 UGC를 제한합니다.
 
-![chlimage_1-218](assets/chlimage_1-218.png)
+![게시 마지막](assets/posted-last.png)
 
 #### 감정 {#sentiment}
 
 [센티멘트는](/help/communities/moderate-ugc.md#sentiment) 긍정, 부정 또는 중립적인 센티멘트 값이 있는 게시물에 표시된 참조된 UGC를 제한합니다.
 
-![chlimage_1-219](assets/chlimage_1-219.png)
+![감정](assets/sentiment.png)
 
 ## Custom Filters {#custom-filters}
 
@@ -242,7 +241,7 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) 태그 필터를 구현하여 특정 태그가 사용자 생성 컨텐츠에 적용되는지 여부를 기준으로 UGC 목록을 필터링합니다. 샘플 코드를 따라 기타 유사한 UGC 메타데이터 필드에 대한 분석 필터를 작성할 수 있습니다.
+Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) 태그 필터를 구현하여 특정 태그가 사용자 생성 컨텐츠에 적용되는지 여부를 기준으로 UGC 목록을 필터링합니다. 샘플 코드를 따라 기타 유사한 UGC 메타데이터 필드에 대한 분석 필터를 만들 수 있습니다.
 
 태그 필터 샘플을 설치하려면:
 
@@ -271,7 +270,7 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 
 [컨텐츠 영역에 있는 하나 이상의 선택 사항이나 컨텐츠 세부 사항을 볼 때 중재 작업을](/help/communities/moderate-ugc.md#moderation-actions) 수행할 수 있습니다.
 
-게시물을 일괄적으로 중재하려면 컨텐츠 영역에서 게시물의 선택( ![선택](assets/selecticon.png)) 아이콘을 클릭하여 마우스(데스크탑)로 마우스를 위에 놓거나 게시물(모바일)에서 손가락을 누른 상태로 게시물을 클릭합니다. 이렇게 하면 다중 선택 모드로 전환되고 이후 게시물을 클릭하여 일괄 중재할 수 있습니다. 도구 모음에 표시된 단추를 사용하여 선택한 게시물에 대해 중재 작업을 수행합니다. 모든 작업이 확인 메시지를 표시합니다.
+게시물을 일괄적으로 중재하려면 컨텐츠 영역에서 게시물의 선택(![선택](assets/selecticon.png)) 아이콘을 클릭하여 마우스(데스크탑)로 마우스를 위에 놓거나 게시물(모바일)에서 손가락을 누른 상태로 게시물을 클릭합니다. 이렇게 하면 다중 선택 모드로 전환되고 이후 게시물을 클릭하여 일괄 중재할 수 있습니다. 도구 모음에 표시된 단추를 사용하여 선택한 게시물에 대해 중재 작업을 수행합니다. 모든 작업이 확인 메시지를 표시합니다.
 
 컨텐츠 영역의 단일 게시물을 중재하려면 마우스(데스크톱)로 마우스를 가져가거나 게시물(모바일)에서 손가락을 누른 상태에서 해당 단추가 게시물에 나타납니다. 단일 컨텐츠 세부 정보로 작업하는 경우 삭제 작업만 확인 메시지를 표시합니다.
 
@@ -318,19 +317,19 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 
 #### 답글 {#reply}
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![회신](assets/reply.png)
 
 단일 게시물로 작업할 때 UGC 유형이 응답을 지원하고 답글을 허용하도록 구성된 경우 회신 아이콘이 표시됩니다.
 
 #### 허용 {#allow}
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![허용](assets/allow.png)
 
 단일 게시물로 작업할 때 게시물이 플래그 지정되거나 거부되면 허용 아이콘이 표시됩니다. 플래그가 지정된 경우 허용을 선택하면 모든 플래그가 지워집니다.
 
 #### 거부 {#deny}
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![거부](assets/deny.png)
 
 중재 **거부** 동작은 중재된 컨텐츠에만 사용할 수 있으며, 다중 선택 모드를 제외한 중재되지 않은 컨텐츠에는 나타나지 않습니다.
 
@@ -342,31 +341,31 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 
 #### 삭제 {#delete}
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![삭제](assets/delete.png)
 
 단일 선택 또는 벌크 모드에서 항목을 선택하고 삭제할 수 있습니다. 삭제 작업을 수행하면 확인 대화 상자가 나타납니다. 삭제된 항목은 콘텐츠 영역에서 바로 사라집니다. **UGC가 삭제되면 저장소에서 영구적으로 제거되고 나중에 검색할 수 없습니다**.
 
 #### 닫기 {#close}
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![닫기](assets/close.png)
 
 단일 게시물로 작업할 때 UGC 유형이 해당 리소스에 대한 추가 게시물을 방지하는 기능을 지원하는 경우 닫기 아이콘이 표시됩니다.
 
 #### 관리 내역 {#moderation-history}
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![중재](assets/moderation.png)
 
 단일 게시물을 사용하여 작업할 때 마우스로 가리키면 중재 내역 아이콘이 표시됩니다. 아이콘을 선택하면 UGC 게시물에 대해 수행된 작업 내역이 포함된 창이 표시됩니다.
 
 여러 UGC 게시물의 컨텐츠 영역 표시로 돌아가려면 보기 세부 사항 창의 오른쪽 맨 위에 있는 X를 선택합니다.
 
-예 :
+예:
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![중재 내역](assets/moderation-history.png)
 
 #### 세부 사항 보기 {#view-detail}
 
-![chlimage_1-227](assets/chlimage_1-227.png)
+![보기](assets/view.png)
 
 단일 게시물을 사용하여 작업할 때 세부 사항 모드에서 UGC를 열어 자세한 내용을 볼 수 있습니다.
 
@@ -374,7 +373,7 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 
 여러 UGC 게시물의 컨텐츠 영역 표시로 돌아가려면 보기 세부 사항 창의 오른쪽 맨 위에 있는 X를 선택합니다.
 
-예 :
+예:
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![view1](assets/view1.png)
 
