@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d488b1acc789c0fb1a631e58844d9fe9a70c2662
+source-git-commit: 3a1d02fc1bc561b54e57cf91abc8f4406ba8c365
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2601'
 ht-degree: 2%
 
 ---
@@ -25,8 +25,9 @@ ht-degree: 2%
 
 * MSM Java API의 주요 구성원에 대해 알아봅니다.
 * 롤아웃 구성에 사용할 수 있는 새 동기화 작업을 만듭니다.
-* 사이트 만들기 마법사에서 &quot;장&quot; 단계를 제거합니다.
 * 기본 언어 및 국가 코드를 수정합니다.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
