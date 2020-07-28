@@ -3,9 +3,9 @@ title: 검색 패싯.
 description: Adobe Experience Manager에서 검색 패싯을 만들고, 수정하고, 사용하는 방법.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2515'
 ht-degree: 2%
 
 ---
@@ -27,12 +27,10 @@ ht-degree: 2%
 
 전체 텍스트 검색의 경우 양식에 [!UICONTROL 전체 텍스트] 조건자를 추가합니다. 속성 조건자를 사용하여 지정한 단일 속성과 일치하는 자산을 검색합니다. 옵션 조건자를 사용하여 특정 속성에 대해 하나 이상의 값과 일치하는 자산을 검색합니다. 날짜 범위 술어를 추가하여 지정된 날짜 범위 내에 만든 자산을 검색합니다.
 
-1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 양식]**&#x200B;검색으로 이동합니다.
-1. 양식 검색 페이지에서 **[!UICONTROL 자산 관리 검색 레일을]**&#x200B;선택한 다음 **편집** 아이콘을 ![클릭합니다](assets/do-not-localize/aemassets_edit.png).
+1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms]**&#x200B;검색으로이동합니다.
+1. Forms 검색 페이지에서 **[!UICONTROL 자산 관리 검색 레일을]**&#x200B;선택한 다음 **[!UICONTROL 편집]** 아이콘을 ![클릭합니다](assets/do-not-localize/aemassets_edit.png).
 
    ![자산 관리자 검색 레일을 찾아 선택합니다.](assets/assets_admin_searchrail.png)
-
-   자산 관리자 검색 레일을 찾아 선택합니다.
 
    >[!NOTE]
    >
@@ -44,7 +42,7 @@ ht-degree: 2%
    >1. 변경 사항을 저장합니다.
 
 
-1. [검색 양식 편집] 페이지의 [설명 선택] **[!UICONTROL 탭에서]** 기본 창으로 조건자를 드래그합니다. 예를 들어 속성 설명 **[!UICONTROL 을 드래그합니다]**.
+1. [검색 Forms 편집] 페이지에서 [설명 선택] **[!UICONTROL 탭에서]** 기본 창으로 술어를 드래그합니다. 예를 들어 속성 설명 **[!UICONTROL 을 드래그합니다]**.
 
    ![조건자를 눌러 이동하여 검색 필터를 사용자 정의합니다.](assets/drag_predicate.png)
 
@@ -76,7 +74,7 @@ ht-degree: 2%
 1. 미리 보기를 닫으려면 미리 보기 **[!UICONTROL 의]** 오른쪽 위 모서리에 있는 [ ![닫기](assets/do-not-localize/close.png) ]를 클릭합니다.
 1. 완료를 **[!UICONTROL 클릭하여]** 설정을 저장합니다.
 1. 자산 사용자 인터페이스에서 검색 패널로 이동합니다. 속성 조건자가 패널에 추가됩니다.
-1. 텍스트 상자에 검색할 자산에 대한 설명을 입력합니다. 예를 들어 &quot;Adobe&quot;를 입력합니다. 검색을 수행하면 설명과 일치하는 &quot;Adobe&quot;가 있는 자산이 검색 결과에 나열됩니다.
+1. 텍스트 상자에 검색할 자산에 대한 설명을 입력합니다. 예를 들어 를 입력합니다 `Adobe`. 검색을 수행할 때 설명과 일치하는 자산 `Adobe` 이 검색 결과에 표시됩니다.
 
 ## 옵션 설명 추가 {#adding-an-options-predicate}
 
@@ -90,13 +88,13 @@ ht-degree: 2%
 
 예를 들어 파일 유형에 대해 &quot;이미지&quot;를 선택하면 OR 연산을 사용하여 속성을 결합하여 자산에 대한 검색 쿼리가 `value` 만들어집니다. 예를 들어, 이미지에 대한 검색 쿼리는 *이미지/이미지/gif*, *이미지/png*, *image/jpeg*, *image/pjpeg, andpimage/jpeg,*** `jcr:content/metadata/dc:format` andpimage/tiffOR 연산을 사용하여 속성을 위한 combining the results를 결합하여 만들어집니다.
 
-![CRXDE에서와 같이 파일 형식의 값 속성은 검색 쿼리가 작동하는 데 사용됩니다](assets/chlimage_1-418.png)
+![CRXDE에서와 같이 파일 형식의 값 속성은 검색 쿼리가 작동하는 데 사용됩니다](assets/filetype-value-property.png)
 
 CRXDE에서와 같이 파일 형식의 값 속성은 검색 쿼리가 작동하는 데 사용됩니다
 
 CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대신 해당 키-값 쌍을 지정하여 JSON 파일에서 옵션을 정의할 수 있습니다. [속성 이름] 필드에 JSON 파일 **[!UICONTROL 경로를]** 지정합니다. 예를 들어 다음 샘플 JSON 파일에 나와 있는 것처럼 키-값 쌍, `image/bmp``image/gif`, `image/jpeg`및 값 `image/png` 을 정의하고 지정할 수 있습니다. 속성 **[!UICONTROL 이름]** 필드에서 이 파일의 CRXDE 경로를 지정할 수 있습니다.
 
-```JSON
+```json
 {
     "options" :
  [
@@ -114,8 +112,8 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 >
 >Options 조건자는 설명된 동작을 보여주는 속성 조건자를 포함하는 사용자 지정 래퍼입니다. 현재 이 기능을 기본적으로 지원하는 데 사용할 수 있는 REST 끝점이 없습니다.
 
-1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 양식]**&#x200B;검색으로 이동합니다.
-1. 양식 **[!UICONTROL 검색]** 페이지에서 **[!UICONTROL 자산 관리 검색 레일을]**&#x200B;선택한 다음 **[!UICONTROL 편집을]**&#x200B;클릭합니다.
+1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms]**&#x200B;검색으로이동합니다.
+1. Forms **[!UICONTROL 검색]** 페이지에서 **[!UICONTROL 자산 관리 검색 레일을]**&#x200B;선택한 다음 **[!UICONTROL 편집을]**&#x200B;클릭합니다.
 1. 검색 양식 **[!UICONTROL 편집]** 페이지에서 **[!UICONTROL 설명]** 선택 **[!UICONTROL 탭에서]** 옵션 설명조건자를 주창으로드래그합니다.
 1. [ **[!UICONTROL 설정]** ] 탭에서 속성의 레이블과 이름을 입력합니다. 예를 들어, 형식을 기준으로 자산을 검색하려면 레이블에 대해 사용자에게 친숙한 이름(예: **[!UICONTROL 파일 유형)을 지정합니다]**. 예를 들어 속성 필드에서 검색을 수행할 속성을 지정합니다 `jcr:content/metadata/dc:format.`
 1. 다음 중 하나를 수행하십시오.
@@ -136,8 +134,8 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 
 다중 값 속성 조건자를 사용하면 자산을 여러 값으로 검색할 수 있습니다. 자산에 여러 제품의 이미지가 있고 각 이미지에 대한 메타데이터에 제품과 연관된 SKU 번호가 포함된 시나리오를 생각해 보십시오. 이 술어를 사용하여 여러 SKU 번호를 기반으로 제품 이미지를 검색할 수 있습니다.
 
-1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 양식]**&#x200B;검색으로 이동합니다.
-1. 양식 검색 페이지에서 **[!UICONTROL 자산 관리 검색 레일을 선택하고]**&#x200B;편집 **[!UICONTROL 아이콘을]** 클릭합니다 ![](assets/do-not-localize/aemassets_edit.png).
+1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms]**&#x200B;검색으로이동합니다.
+1. Forms 검색 페이지에서 **[!UICONTROL 자산 관리 검색 레일을 선택하고]**&#x200B;편집 **[!UICONTROL 아이콘을]** 클릭합니다 ![](assets/do-not-localize/aemassets_edit.png).
 1. [검색 양식 편집] 페이지의 [설명 선택] **[!UICONTROL 탭에서]** 다중 값 속성 설명 **[!UICONTROL 을]** 기본 창으로드래그합니다.
 1. [ **[!UICONTROL 설정]** ] 탭에서 술자의 레이블과 자리 표시자 텍스트를 입력합니다. 예를 들어 속성 필드에서 검색을 수행할 속성 이름을 지정합니다 `jcr:content/metadata/dc:value`. 선택 대화 상자를 사용하여 노드를 선택할 수도 있습니다.
 1. 구분 **[!UICONTROL 기호 지원이]** 선택되었는지 확인합니다. [ **[!UICONTROL 입력 구분 기호]** ] 필드에서 구분 기호를 지정하여 개별 값을 구분합니다. 기본적으로 쉼표는 구분 기호로 지정됩니다. 다른 구분 기호를 지정할 수 있습니다.
@@ -149,8 +147,8 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 
 태그 조건자를 사용하면 자산을 위한 태그 기반 검색을 수행할 수 있습니다. 기본적으로 자산은 사용자가 지정하는 태그를 기준으로 일치하는 하나 이상의 태그를 자산으로 검색합니다. 즉, 검색 쿼리는 지정된 태그를 사용하여 OR 작업을 수행합니다. 하지만 모든 태그 일치 옵션을 사용하여 지정한 모든 태그가 포함된 자산을 검색할 수 있습니다.
 
-1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 양식]**&#x200B;검색으로 이동합니다.
-1. 양식 검색 페이지에서 **[!UICONTROL 자산 관리 검색 레일을]** 선택한 다음 **[!UICONTROL 편집]** 아이콘을 ![클릭합니다](assets/do-not-localize/aemassets_edit.png).
+1. Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms]**&#x200B;검색으로이동합니다.
+1. Forms 검색 페이지에서 **[!UICONTROL 자산 관리 검색 레일을]** 선택한 다음 **[!UICONTROL 편집]** 아이콘을 ![클릭합니다](assets/do-not-localize/aemassets_edit.png).
 1. 검색 양식 편집 페이지의 설명 선택 **[!UICONTROL 탭에서]** 태그 설명조건자를 주 창으로 드래그합니다.
 1. [설정] 탭에서 설명 자리 표시자 텍스트를 입력합니다. 속성 필드에서 검색을 수행할 속성 이름(예: jcr:content/metadata/cq:tags)을 *지정합니다*. 또는 선택 대화 상자에서 CRXDE의 노드를 선택할 수 있습니다.
 1. 이 술어의 루트 태그 경로 속성을 구성하여 태그 목록에 있는 다양한 태그를 채웁니다.
@@ -164,7 +162,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 1. 검색 패널로 이동합니다. 태그 **[!UICONTROL 설명]** 이 검색 패널에 추가됩니다.
 1. 자산을 검색할 태그를 지정하거나 제안 목록에서 선택하십시오.
 
-   ![태그 이름을 입력할 때 Experience Manager 제공 제안](assets/chlimage_1-419.png)
+   ![태그 이름을 입력할 때 Experience Manager 제공 제안](assets/tag-suggestion.png)
 
    *그림: 태그의 이름을 입력할 때 Experience Manager 제공 제안.*
 
@@ -193,17 +191,17 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 
 ## 기본 검색 패싯 복원 {#restoring-default-search-facets}
 
-기본적으로 양식 검색 페이지의 자산 관리 검색 레일 ![앞에 잠금 아이콘](assets/do-not-localize/lock_closed_icon.svg) 잠금 **[!UICONTROL 아이콘]** 이 **[!UICONTROL 나타납니다]** . [양식 검색] 페이지의 옵션에 대해 잠금 아이콘은 기본 설정이 유지되고 사용자 지정되지 않음을 나타냅니다. 양식에 검색 패싯을 추가하면 기본 양식이 ![수정되었음을 나타내는 아이콘 잠금 아이콘](assets/do-not-localize/lock_closed_icon.svg) 이 사라집니다.
+기본적으로 Forms 검색 페이지의 자산 관리자 검색 레일 ![앞에 잠금 아이콘](assets/do-not-localize/lock_closed_icon.svg) 잠금 **[!UICONTROL 아이콘]** 이 **[!UICONTROL 나타납니다]** . Forms 검색 페이지의 옵션에 대해 잠금 아이콘은 기본 설정이 그대로 유지되고 사용자 지정되지 않음을 나타냅니다. 양식에 검색 패싯을 추가하면 기본 양식이 ![수정되었음을 나타내는 아이콘 잠금 아이콘](assets/do-not-localize/lock_closed_icon.svg) 이 사라집니다.
 
-![[양식 검색] 페이지의 옵션에 대해 잠금 아이콘은 기본 설정이 유지되고 사용자 지정되지 않음을 나타냅니다.](assets/locked_admin_rail.png)
+![Forms 검색 페이지의 옵션에 대해 잠금 아이콘은 기본 설정이 그대로 유지되고 사용자 지정되지 않음을 나타냅니다.](assets/locked_admin_rail.png)
 
 기본 검색 패싯을 복원하려면 다음 단계를 수행하십시오.
 
-1. [ **[!UICONTROL 양식 검색] 페이지에서 [자산 관리 검색]** 레일] **[!UICONTROL 을]** 선택합니다.
+1. Forms **[!UICONTROL 검색 페이지에서 자산 관리 검색]** 레일을 **[!UICONTROL 선택합니다]** .
 1. 도구 모음 **[!UICONTROL 에서]** 삭제 ![윤곽선](assets/do-not-localize/deleteoutline.png) 삭제를 클릭합니다.
 1. 확인 대화 상자에서 **[!UICONTROL 삭제를]** 클릭하여 사용자 지정 변경 사항을 제거합니다.
 
-   검색 패싯에 대한 사용자 지정 변경 사항을 삭제하면 잠금 아이콘 ![잠금 아이콘](assets/do-not-localize/lock_closed_icon.svg) 아이콘 **[!UICONTROL 이]** 검색 양식 **[!UICONTROL 페이지의]** 자산 관리 검색 레일앞에 다시나타납니다.
+   검색 패싯에 대한 사용자 지정 변경 사항을 삭제하면 잠금 아이콘 ![잠금 아이콘](assets/do-not-localize/lock_closed_icon.svg) 이 **[!UICONTROL 검색 Forms]** 페이지의 자산 관리 검색 레일 **[!UICONTROL 앞에]** 다시 나타납니다.
 
 ## User permissions {#user-permissions}
 
