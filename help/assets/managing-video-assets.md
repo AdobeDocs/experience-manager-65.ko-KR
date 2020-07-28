@@ -3,9 +3,9 @@ title: 비디오 자산을 관리할 수 있습니다 [!DNL Adobe Experience Man
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및 게시할 수 있습니다 [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
@@ -23,25 +23,19 @@ ht-degree: 0%
 
 1. 디지털 자산 폴더 또는 하위 폴더에서 디지털 자산을 추가할 위치로 이동합니다.
 1. 자산을 업로드하려면 도구 모음에서 **[!UICONTROL 만들기를]** 클릭한 다음 **[!UICONTROL 파일을 선택합니다]**. 또는 자산 영역에 직접 놓습니다. 업로드 작업에 대한 자세한 내용은 [자산](managing-assets-touch-ui.md#uploading-assets) 업로드를 참조하십시오.
-1. 카드 보기에서 비디오를 미리 보려면 비디오 자산에서 **[!UICONTROL 재생]** 단추를 클릭합니다.
+1. 카드 보기에서 비디오를 미리 보려면 비디오 자산에서 **[!UICONTROL 재생]** 옵션 ![](assets/do-not-localize/play.png) 옵션을 클릭합니다. 카드 보기에서만 비디오를 일시 중지하거나 재생할 수 있습니다. [ [!UICONTROL 재생] ] 및 [!UICONTROL [일시 정지] ] 옵션은 목록 보기에서 사용할 수 없습니다.
 
-   ![chlimage_1-65](assets/chlimage_1-201.png)
+1. 자산 세부 사항 페이지에서 비디오를 미리 보려면 카드에서 **[!UICONTROL 편집을]** 클릭합니다. 비디오가 브라우저의 기본 비디오 플레이어에서 재생됩니다. 비디오를 재생, 일시 정지, 볼륨 조절 및 전체 화면으로 확대/축소할 수 있습니다.
 
-   카드 보기에서만 비디오를 일시 중지하거나 재생할 수 있습니다. [ [!UICONTROL 재생] ] 및 [!UICONTROL [일시 정지] ] 단추는 목록 보기에서 사용할 수 없습니다.
-
-1. 자산 세부 사항 페이지에서 비디오를 미리 보려면 카드에서 **[!UICONTROL 편집을]** 클릭합니다.
-
-   비디오가 브라우저의 기본 비디오 플레이어에서 재생됩니다. 비디오를 재생, 일시 정지, 볼륨 조절 및 전체 화면으로 확대/축소할 수 있습니다.
-
-   ![chlimage_1-66](assets/chlimage_1-202.png)
+   ![비디오 재생 컨트롤](assets/video-playback-controls.png)
 
 ## 2GB보다 큰 자산을 업로드하기 위한 구성 {#configuration-to-upload-assets-that-are-larger-than-gb}
 
-기본적으로 파일 크기 제한 때문에 2GB보다 큰 에셋은 업로드할 수 [!DNL Assets] 없습니다. 그러나 CRXDE Lite로 이동하여 디렉터리 아래에 노드를 만들면 이 제한을 `/apps` 덮어쓸 수 있습니다. 노드에는 동일한 노드 이름, 디렉토리 구조 및 비교 가능한 노드 속성이 있어야 합니다.
+기본적으로 파일 크기 제한 때문에 2GB보다 큰 에셋은 업로드할 수 [!DNL Assets] 없습니다. 그러나 CRXDE Lite으로 이동하고 디렉터리 아래에 노드를 만들어 이 제한을 `/apps` 덮어쓸 수 있습니다. 노드에는 동일한 노드 이름, 디렉토리 구조 및 비교 가능한 노드 속성이 있어야 합니다.
 
 구성 외에도 다음 구성을 변경하여 큰 자산을 업로드합니다. [!DNL Assets]
 
-* 토큰 만료 시간을 늘립니다. 웹 [!UICONTROL 콘솔에서] Adobe Granite CSRF Servlet을 참조하십시오 `https://[aem_server]:[port]/system/console/configMgr`. 자세한 내용은 [CSRF 보호를 참조하십시오](/help/sites-developing/csrf-protection.md).
+* 토큰 만료 시간을 늘립니다. 웹 콘솔의 [!UICONTROL Adobe] Granite CSRF Servlet()을 참조하십시오 `https://[aem_server]:[port]/system/console/configMgr`. 자세한 내용은 [CSRF 보호를 참조하십시오](/help/sites-developing/csrf-protection.md).
 * Dispatcher 구성 `receiveTimeout` 을 늘립니다. 자세한 내용은 [Experience Manager Dispatcher 구성을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
@@ -50,8 +44,8 @@ ht-degree: 0%
 
 더 높은 파일 크기 제한을 구성하려면 디렉토리에서 다음 단계를 `/apps` 수행합니다.
 
-1. 에서 [!DNL Experience Manager]도구 **[!UICONTROL >]** 일반 **** > **[!UICONTROL CRXDE]** Lite를 클릭합니다.
-1. CRXDE Lite에서 로 이동합니다 `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. 디렉토리 창을 보려면 을 클릭합니다 `>>`.
+1. 에서 [!DNL Experience Manager]도구 **[!UICONTROL >]** 일반 **** > CRXDE Lite을 **[!UICONTROL 클릭합니다]**.
+1. CRXDE Lite에서 탐색합니다 `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. 디렉토리 창을 보려면 을 클릭합니다 `>>`.
 1. 도구 모음에서 **[!UICONTROL 오버레이 노드를 클릭합니다]**. 또는 컨텍스트 메뉴에서 **[!UICONTROL 오버레이 노드]** 를 선택합니다.
 1. [ **[!UICONTROL 오버레이 노드]** ] 대화 상자에서 **[!UICONTROL 확인을 클릭합니다]**.
 
@@ -62,8 +56,8 @@ ht-degree: 0%
 
 1. 도구 모음에서 모두 **[!UICONTROL 저장을 클릭합니다]**.
 1. 에서 [!DNL Experience Manager]도구 **[!UICONTROL > 작업]****[!UICONTROL >]** 웹 콘솔 ****&#x200B;을 클릭합니다.
-1. [ [!DNL Adobe Experience Manager] 웹 콘솔 번들  페이지의 테이블의 [이름] 열에서] Adobe Granite Workflow 외부 프로세스 작업 핸들러를 찾아 클릭합니다 ****.
-1. [ [!UICONTROL Adobe Granite Workflow 외부 프로세스 작업 처리기] ] 페이지에서 [ **[!UICONTROL 기본 시간 초과]** 및 **[!UICONTROL 최대 시간 초과]** 필드 `18000` 에 대한 초(5시간)를 설정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. [ [!DNL Adobe Experience Manager] 웹 콘솔 번들  페이지의 테이블의 [이름] 열에서 [Adobe]의 [] [화강암 워크플로우 외부 프로세스 작업 처리기]를 찾아 클릭합니다 ****.
+1. [ [!UICONTROL Adobe [화강암 워크플로우 외부 프로세스 작업 처리기] ] 페이지에서 [ **[!UICONTROL 기본 시간 초과]** 및 **[!UICONTROL 최대 시간 초과]** 필드 `18000` 에 대한 시간(초)을(5시간)으로 설정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. 에서 [!DNL Experience Manager]도구 **[!UICONTROL > 워크플로우]** > **[!UICONTROL 모델]** 을 **[!UICONTROL 클릭합니다]**.
 1. 워크플로우 모델 페이지에서 **[!UICONTROL Dynamic Media 인코딩 비디오를]**&#x200B;선택한 다음 **[!UICONTROL 편집을 클릭합니다]**.
 1. 워크플로우 페이지에서 **[!UICONTROL Dynamic Media 비디오 서비스 프로세스]** 구성 요소를 두 번 클릭합니다.
