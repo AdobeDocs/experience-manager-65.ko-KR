@@ -4,9 +4,9 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '9234'
+source-wordcount: '9216'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->* Marketing Cloud [!DNL Assets] 에 공유할 때는 형식 폴더 공유가 지원되지 `sling:OrderedFolder` 않습니다. 폴더를 공유하려면 폴더를 만들 때 [ [!UICONTROL 순서] ]를 선택하지 마십시오.
+>* Marketing Cloud에 공유할 때 형식 [!DNL Assets] 폴더 공유가 지원되지 `sling:OrderedFolder` 않습니다. 폴더를 공유하려면 폴더를 만들 때 [ [!UICONTROL 순서] ]를 선택하지 마십시오.
 >* [!DNL Experience Manager] 은 폴더 이름으로 `subassets` word를 사용할 수 없도록 합니다. 복합 자산에 대한 하위 자산을 포함하는 노드에 예약된 키워드입니다.
 
 
@@ -50,7 +50,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 >[!NOTE]
 >
->Dynamic Media - Scene7 모드에서는 파일 크기가 2GB 이하인 자산만 업로드할 수 있습니다.
+>Dynamic Media - Scene7 모드에서는 파일 크기가 2GB 이하인 에셋만 업로드할 수 있습니다.
 
 처리 프로필이 폴더에 지정되거나 할당되지 않은 폴더에 자산을 업로드하도록 선택할 수 있습니다.
 
@@ -70,17 +70,17 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    큰 자산(500MB 이상)의 업로드를 일시 중지하고 나중에 동일한 페이지에서 다시 시작할 수 있습니다. 업로드가 **[!UICONTROL 시작되면 나타나는 진행률]** 막대 옆에 있는 일시 중지를 클릭합니다.
 
-   ![자산 업로드 진행률 표시줄](assets/chlimage_1-5.png)
+   ![자산 업로드 진행률 표시줄](assets/upload-progress-bar.png)
 
    자산이 큰 자산으로 간주되는 크기를 구성할 수 있습니다. 예를 들어 1000MB 이상의 자산(500MB 대신)을 큰 자산으로 간주하도록 시스템을 구성할 수 있습니다. 이 경우 크기가 1000MB보다 큰 **[!UICONTROL 에셋이 업로드되면 [일시 중지]** ]가 진행률 표시줄에 나타납니다.
 
-   1000MB보다 큰 파일이 1000MB보다 작은 파일로 업로드되면 [일시 중지] 단추가 표시되지 않습니다. 그러나 1,000MB 미만의 파일 업로드를 취소하면 [일시 **[!UICONTROL 중지]** ] 단추가 나타납니다.
+   1000MB보다 큰 파일이 1000MB보다 작은 파일로 업로드되면 [일시 중지] 단추가 표시되지 않습니다. 하지만 1,000MB 미만의 파일 업로드를 취소하면 [일시 **[!UICONTROL 중지]** ] 단추가 나타납니다.
 
    크기 제한을 수정하려면 CRX 저장소의 `chunkUploadMinFileSize` 노드 `fileupload`속성을 구성합니다.
 
    일시 중지 **[!UICONTROL 를]**&#x200B;클릭하면 **[!UICONTROL 재생]** 옵션으로 전환됩니다. 업로드를 다시 시작하려면 [ **[!UICONTROL 재생]을 클릭합니다]**.
 
-   ![일시 중지된 자산 업로드 다시 시작](assets/chlimage_1-6.png)
+   ![일시 중지된 자산 업로드 다시 시작](assets/resume-paused-upload.png)
 
    진행 중인 업로드를 취소하려면 진행률 표시줄 옆에 있는 닫기(`X`)를 클릭합니다. 업로드 작업을 취소하면 [!DNL Assets] 자산의 부분적으로 업로드된 부분이 삭제됩니다.
 
@@ -94,13 +94,13 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    기존 자산을 교체하거나, 다른 버전을 만들거나, 업로드된 새 자산의 이름을 변경하여 두 자산을 모두 유지하도록 선택할 수 있습니다. 기존 자산을 대체할 경우, 자산에 대한 메타데이터와 기존 자산에 대한 이전 수정(예: 주석 또는 자르기)이 삭제됩니다. 두 자산을 모두 유지하려면 새 자산의 이름이 이름에 숫자 `1` 가 추가됩니다.
 
-   ![자산 이름 충돌을 해결하기 위한 이름 충돌 대화 상자](assets/chlimage_1-7.png)
+   ![자산 이름 충돌을 해결하기 위한 이름 충돌 대화 상자](assets/resolve-naming-conflict.png)
 
    >[!NOTE]
    >
    >이름 충돌 대화 상자 **[!UICONTROL 에서]** [!UICONTROL 대체를] 선택하면 새 자산에 대해 자산 ID가 다시 생성됩니다. 이 ID는 이전 자산의 ID와 다릅니다.
    >
-   >자산 통찰력이 Adobe Analytics에서 노출 횟수/클릭을 추적하도록 활성화된 경우 재생성된 자산 ID는 Analytics에서 자산에 대해 캡처된 데이터를 무효화합니다.
+   >자산 통찰력을 사용하여 Adobe Analytics의 노출/클릭 수를 추적하는 경우 재생성된 자산 ID는 Analytics에서 자산에 대해 캡처된 데이터를 무효화합니다.
 
    업로드한 자산이 있는 경우 [!DNL Assets]중복 **[!UICONTROL 검색]** 대화 상자에서 중복 자산을 업로드하려고 한다는 경고를 표시합니다. 이 대화 상자는 기존 자산의 바이너리의 `SHA 1` 체크섬 값이 업로드한 자산의 체크섬 값과 일치하는 경우에만 나타납니다. 이 경우 자산의 이름은 중요하지 않습니다.
 
@@ -108,7 +108,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
    >
    >중복 [!UICONTROL 검색 기능이 활성화된] 경우에만 검색된 복제 대화 상자가 나타납니다. 중복 감지 기능을 활성화하려면 복제 감지 [활성화를 참조하십시오](/help/assets/duplicate-detection.md).
 
-   ![중복된 자산 검색 대화 상자](assets/chlimage_1-8.png)
+   ![중복된 자산 검색 대화 상자](assets/duplicate-asset-detected.png)
 
    중복된 자산을 에서 유지하려면 [!DNL Assets]보관을 **[!UICONTROL 클릭합니다]**. 업로드한 중복 자산을 삭제하려면 **[!UICONTROL 삭제를 클릭합니다]**.
 
@@ -123,7 +123,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    자산 파일 이름의 확장명에 특수 문자를 포함하지 마십시오.
 
-   ![업로드 진행 대화 상자에는 업로드된 파일과 업로드하지 못한 파일의 상태가 표시됩니다](assets/chlimage_1-10.png)
+   ![업로드 진행 대화 상자에는 업로드된 파일과 업로드하지 못한 파일의 상태가 표시됩니다](assets/bulk-upload-progress.png)
 
    또한 [!DNL Assets] 사용자 인터페이스에는 업로드한 가장 최근 자산이나 처음 만든 폴더가 표시됩니다.
 
@@ -133,7 +133,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 ### 직렬 업로드 {#serialuploads}
 
-대량의 자산을 업로드하면 상당한 입출력 리소스가 소비되므로 배포 성능에 부정적인 영향을 미칠 수 [!DNL Assets] 있습니다. 특히, 느린 인터넷 연결이 있는 경우 디스크 I/O의 급증으로 인해 업로드 시간이 크게 증가합니다. 또한 웹 브라우저에서는 동시 자산 업로드에 대해 처리할 수 있는 POST 요청 수에 대한 추가 제한 사항을 도입할 [!DNL Assets] 수 있습니다. 따라서 업로드 작업이 실패하거나 너무 빨리 종료됩니다. 즉, 여러 파일을 인제스트하는 동안 일부 파일이 누락되거나 모든 파일을 인제스트하지 못할 [!DNL Experience Manager Assets] 수 있습니다.
+대량의 자산을 업로드하면 상당한 입출력 리소스가 소비되므로 배포 성능에 부정적인 영향을 미칠 수 [!DNL Assets] 있습니다. 특히, 느린 인터넷 연결이 있는 경우 디스크 I/O의 급증으로 인해 업로드 시간이 크게 증가합니다. 또한 웹 브라우저는 동시 자산 업로드에 대해 처리할 수 있는 POST 요청 수에 대한 추가 제한 사항을 도입할 [!DNL Assets] 수 있습니다. 따라서 업로드 작업이 실패하거나 너무 빨리 종료됩니다. 즉, 여러 파일을 인제스트하는 동안 일부 파일이 누락되거나 모든 파일을 인제스트하지 못할 [!DNL Experience Manager Assets] 수 있습니다.
 
 이러한 상황을 [!DNL Assets] 극복하기 위해 일괄 업로드 작업 동안 모든 자산을 동시에 인제스트하는 대신 한 번에 하나의 자산을 인제스트합니다(시리얼 업로드).
 
@@ -145,11 +145,11 @@ Dynamic Media을 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 
 >[!NOTE]
 >
->Dynamic Media - Scene7 모드에서는 파일 크기가 2GB 이하인 자산만 업로드할 수 있습니다.
+>Dynamic Media - Scene7 모드에서는 파일 크기가 2GB 이하인 에셋만 업로드할 수 있습니다.
 
 >[!NOTE]
 >
->Dynamic Media에서 FTP를 통해 자산을 업로드하려면 - Scene7 모드에서 작성자 인스턴스에 Feature Pack 18912를 [!DNL Experience Manager] 설치합니다. FP-18912에 액세스하고 FTP 계정 설정을 완료하려면 [Adobe 고객 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 센터에 문의하십시오. 자세한 내용은 [벌크 에셋 마이그레이션을 위한 기능 팩 18912 설치를 참조하십시오](/help/assets/bulk-ingest-migrate.md).
+>Dynamic Media - Scene7 모드에서 FTP를 통해 에셋을 업로드하려면 작성자 인스턴스에 Feature Pack 18912를 [!DNL Experience Manager] 설치합니다. FP-18912에 액세스하고 FTP 계정 설정을 완료하려면 [Adobe 고객 지원 센터에](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 문의하십시오. 자세한 내용은 [벌크 에셋 마이그레이션을 위한 기능 팩 18912 설치를 참조하십시오](/help/assets/bulk-ingest-migrate.md).
 >
 >FTP를 사용하여 자산을 업로드하면 에 지정된 업로드 설정이 [!DNL Experience Manager] 무시됩니다. 대신 Dynamic Media Classic에 정의된 파일 처리 규칙이 사용됩니다.
 
@@ -188,7 +188,7 @@ Dynamic Media을 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 |  | 자르기 옵션 | 이미지의 양쪽에서 수동으로 자르려면 [자르기] 메뉴를 선택하고 [수동]을 선택합니다. 그런 다음 이미지의 어느 쪽이나 각 쪽에서 자를 픽셀 수를 입력합니다. 이미지 파일의 ppi(인치당 픽셀) 설정에 따라 잘리는 이미지의 양이 달라집니다. 예를 들어 이미지가 150ppi로 표시되고 [위쪽], [오른쪽], [아래쪽] 및 [왼쪽] 텍스트 상자에 75를 입력하면 각 면에서 1/2인치 잘립니다.<br> 이미지에서 흰색 공간 픽셀을 자동으로 자르려면 [자르기] 메뉴를 열고 [수동]을 선택한 다음 [위쪽], [오른쪽], [아래쪽] 및 [왼쪽] 필드에 픽셀 측정을 입력하여 양쪽에서 자를 수 있습니다. 자르기 메뉴에서 트리밍을 선택하고 다음 옵션을 선택할 수도 있습니다.<br> **트리밍 기준** <ul><li>**색상** - 색상 옵션을 선택합니다. 그런 다음 [모서리] 메뉴를 선택하고 자르려는 흰색 공간 색상을 가장 잘 나타내는 색상으로 이미지의 모서리를 선택합니다.</li><li>**투명도** - 투명도 옵션을 선택합니다.<br> **허용치** - 슬라이더를 드래그하여 0에서 1까지의 허용치를 지정합니다. 색상을 기반으로 트리밍하는 경우 이미지 모서리에서 선택한 색상과 정확히 일치하는 경우에만 픽셀을 자르도록 0을 지정합니다. 1에 가까운 숫자는 더 많은 색상 차이를 허용합니다.<br>투명도를 기반으로 트리밍하는 경우 픽셀이 투명한 경우에만 픽셀을 자르도록 0을 지정합니다. 1에 가깝게 있는 숫자는 더 많은 투명성을 허용합니다.</li></ul><br>이러한 자르기 옵션은 원본을 훼손하지 않습니다. |
 |  | 색상 프로파일 옵션 | 전달에 사용되는 최적화된 파일을 만들 때 색상 변환을 선택합니다.<ul><li>기본 색상 보존: 이미지에 색상 공간 정보가 포함될 때마다 소스 이미지 색상을 유지 관리합니다. 색상 변환은 없습니다. 현재 거의 모든 이미지에 적합한 색상 프로필이 이미 포함되어 있습니다. 그러나 CMYK 소스 이미지에 포함된 색상 프로필이 없으면 색상이 sRGB(표준 Red Green Blue) 색상 공간으로 변환됩니다. sRGB는 웹 페이지에 이미지를 표시하는 데 권장되는 색상 공간입니다.</li><li>원본 색상 공간 유지: 이때 색상 변환 없이 원래 색상을 유지합니다. 포함된 색상 프로필이 없는 이미지의 경우 모든 색상 변환은 [게시] 설정에 구성된 기본 색상 프로필을 사용하여 수행됩니다. 이 옵션으로 만든 파일의 색상 프로필과 일치하지 않을 수 있습니다. 따라서 기본 색상 보존 옵션을 사용하는 것이 좋습니다.</li><li>[사용자 정의 시작] > [열기]<br> 메뉴를 열어 [전환] 및 [색상 공간으로 변환]을 선택할 수 있습니다. 이 고급 옵션은 소스 파일에 포함된 모든 색상 정보를 무시합니다. 제출하는 모든 이미지에 잘못된 색상 프로파일 데이터가 있거나 누락된 경우 이 옵션을 선택합니다.</li></ul> |
 |  | 이미지 편집 옵션 | 이미지의 클리핑 마스크를 유지하고 색상 프로파일을 선택할 수 있습니다.<br> 업로드할 때 [이미지 편집 옵션 설정을 참조하십시오](#setting-image-editing-options-at-upload). |
-|  | Postscript 옵션 | PostScript® 파일 래스터화, 파일 자르기, 투명한 배경 유지, 해상도 선택, 색상 공간 선택 등의 작업을 할 수 있습니다.<br> PostScript [및 Illustrator 업로드 옵션 설정을 참조하십시오](#setting-postscript-and-illustrator-upload-options). |
+|  | Postscript 옵션 | PostScript ® 파일 래스터화, 파일 자르기, 투명한 배경 유지, 해상도 선택, 색상 공간 선택 등의 작업을 할 수 있습니다.<br> PostScript [및 Illustrator 업로드 옵션 설정을 참조하십시오](#setting-postscript-and-illustrator-upload-options). |
 |  | Photoshop 옵션 | Adobe® Photoshop® 파일에서 템플릿을 만들고, 레이어를 유지하고, 레이어 이름을 지정하는 방법을 지정하고, 텍스트를 추출하고, 이미지가 템플릿에 고정된 방식을 지정할 수 있습니다.<br> 템플릿은 에서 지원되지 않습니다 [!DNL Experience Manager].<br> Photoshop [업로드 옵션 설정을 참조하십시오](#setting-photoshop-upload-options). |
 |  | PDF 옵션 | 파일을 래스터화하고, 검색어와 링크를 추출하고, eCatalog를 자동 생성하고, 해상도를 설정하고, 색상 공간을 선택할 수 있습니다.<br> eCatalogs는 에서 지원되지 않습니다 [!DNL Experience Manager]. <br> PDF [업로드 옵션 설정을 참조하십시오](#setting-pdf-upload-options). |
 |  | Illustrator 옵션 | Adobe Illustrator® 파일을 래스터화하고 투명한 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다.<br> PostScript [및 Illustrator 업로드 옵션 설정을 참조하십시오](#setting-postscript-and-illustrator-upload-options). |
@@ -223,7 +223,7 @@ AI, EPS 및 PSD 파일을 비롯한 이미지 파일을 업로드할 때 [작업
 
 #### PostScript 및 Illustrator 업로드 옵션 설정 {#setting-postscript-and-illustrator-upload-options}
 
-PostScript(EPS) 또는 Illustrator(AI) 이미지 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 있습니다. 파일을 래스터화하고 투명한 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다. PostScript 및 Illustrator 파일 서식 지정 옵션은 [!UICONTROL PostScript 옵션] 및 [!UICONTROL Illustrator 옵션] 아래의 [!UICONTROL 업로드 작업 옵션]대화 상자에서 사용할 수있습니다.
+EPS(PostScript) 또는 Illustrator(AI) 이미지 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 있습니다. 파일을 래스터화하고 투명한 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다. PostScript 및 Illustrator 파일의 서식 지정 옵션은 PostScript 옵션 [!UICONTROL 및] Illustrator 옵션 [!UICONTROL 아래의] 업로드 작업 옵션 [!UICONTROL 대화 상자에서 사용할 수]있습니다.
 
 | 옵션 | 하위 옵션 | 설명 |
 |---|---|---|
@@ -242,7 +242,7 @@ Photoshop 문서(PSD) 파일은 이미지 템플릿을 만드는 데 가장 많�
 
 파일을 사용하여 템플릿을 만드는 경우 Dynamic Media에서 레이어가 포함된 PSD 파일에서 여러 이미지를 만듭니다. 각 레이어에 대해 하나의 이미지를 만듭니다.
 
-위에 설명된 [!UICONTROL 자르기 옵션] 및 [!UICONTROL 색상 프로파일 옵션](Photoshop 업로드 옵션)을 사용합니다.
+Photoshop 업로드 옵션 [!UICONTROL 과] 함께 위에 설명된 [!UICONTROL 자르기 옵션]및 색상 프로파일 옵션을 사용합니다.
 
 >[!NOTE]
 >
@@ -256,8 +256,8 @@ Photoshop 문서(PSD) 파일은 이미지 템플릿을 만드는 데 가장 많�
 | 레이어를 배경 크기로 확장 |  | 분리된 이미지 레이어의 크기를 배경 레이어의 크기로 확장합니다. |
 | 레이어 이름 지정 |  | PSD 파일의 레이어는 개별 이미지로 업로드됩니다. |
 |  | 레이어 이름 | PSD 파일에서 이미지 이름 뒤에 이름을 지정합니다. 예를 들어 원본 PSD 파일의 가격 태그라는 레이어는 가격 태그라는 이미지가 됩니다. 그러나 PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름(배경, 레이어 1, 레이어 2 등)인 경우 이미지는 기본 레이어 이름이 아니라 PSD 파일에서 레이어 번호의 이름을 따릅니다. |
-|  | Photoshop 및 레이어 번호 | 원본 레이어 이름은 무시하고 PSD 파일에서 레이어 번호 뒤에 이미지 이름을 지정합니다. 이미지 이름은 Photoshop 파일 이름과 레이어 번호가 추가됩니다. 예를 들어 Spring Ad.psd라는 파일의 두 번째 레이어 이름은 Photoshop에서 기본이 아닌 이름이 있더라도 Spring Ad_2입니다. |
-|  | Photoshop 및 레이어 이름 | PSD 파일 뒤에 레이어 이름이나 레이어 번호가 나오는 이미지 이름을 지정합니다. 레이어 번호는 PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름인 경우에 사용됩니다. 예를 들어 SpringAd라는 PSD 파일의 Price Tag라는 레이어는 Spring Ad_Price Tag입니다. 기본 이름이 Layer 2인 레이어를 Spring Ad_2라고 합니다. |
+|  | Photoshop 및 레이어 번호 | 원본 레이어 이름은 무시하고 PSD 파일에서 레이어 번호 뒤에 이미지 이름을 지정합니다. 이미지 이름은 Photoshop 파일 이름과 레이어 번호가 추가됩니다. 예를 들어 Spring Ad.psd라는 파일의 두 번째 레이어 이름은 Spring Ad_2입니다. 이 파일의 이름은 Spring Ad_2입니다. |
+|  | Photoshop 및 레이어 이름 | PSD 파일 뒤에 레이어 이름이나 레이어 번호가 나오는 이미지 이름을 지정합니다. PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름인 경우 레이어 번호가 사용됩니다. 예를 들어 SpringAd라는 PSD 파일의 Price Tag라는 레이어는 Spring Ad_Price Tag입니다. 기본 이름이 Layer 2인 레이어를 Spring Ad_2라고 합니다. |
 | 앵커 |  | PSD 파일에서 생성된 레이어로 구성된 컴포지션에서 생성된 템플릿에 이미지가 고정되는 방식을 지정합니다. 기본적으로 앵커는 가운데입니다. 가운데 앵커를 사용하면 교체 이미지의 종횡비에 관계없이 동일한 공간을 대체할 수 있는 이미지를 사용할 수 있습니다. 템플릿을 참조하고 매개 변수 대체를 사용할 때 이 이미지를 대체하는 다른 측면을 가진 이미지가 동일한 공간을 효과적으로 차지합니다. 애플리케이션에서 템플릿의 할당된 공간을 채우려면 대체 이미지가 필요한 경우 다른 설정으로 변경합니다. |
 
 #### PDF 업로드 옵션 설정 {#setting-pdf-upload-options}
@@ -479,10 +479,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 
 1. 원본을 제외한 자산에 대한 변환을 추가하거나 제거할 수 있습니다. 표현물을 추가하거나 제거하려는 자산의 위치로 이동합니다.
 
-1. 자산을 클릭하여 자산 페이지를 엽니다.
-
-   ![표현물을 관리하기 위한 자산 세부 사항 페이지](assets/chlimage_1-15.png)
-
+1. 자산을 클릭하여 해당 페이지를 엽니다.
 1. Experience Manager 인터페이스의 목록에서 **[!UICONTROL 표현물]** 을 선택합니다.
 
    ![메뉴를 열고 표현물 옵션을 선택하는 왼쪽 레일](assets/renditions_menu.png)
@@ -515,7 +512,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 
    마찬가지로 오버레이하여 주석 페이지 이미지를 사용자 정의할 수 있습니다 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/chlimage_1-17.png)
+   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/renditionpicker-node-crxde.png)
 
    비디오 자산에 대한 변환 크기를 구성하려면 해당 위치의 CRX 저장소의 `videopicker` 노드로 이동한 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`후 해당 속성을 편집합니다.
 
@@ -671,21 +668,16 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
 1. 목록에서 원하는 옵션을 선택합니다. 자르기 영역은 선택한 옵션에 따라 이미지에 나타납니다. [ **무료 손** ] 옵션을 사용하면 종횡비를 제한하지 않고 이미지를 자를 수 있습니다.
 
-   ![자르기 옵션](assets/chlimage_1-23.png)
+   ![자르기 옵션](assets/crop-options.png)
 
 1. 잘라낼 영역을 선택하고 이미지에서 크기를 조정하거나 위치를 변경합니다.
 
-1. [ **[!UICONTROL 실행 취소]** ] 및 **[!UICONTROL 다시 실행]** 옵션을 사용하여 잘리지 않은 이미지로 되돌리거나 잘린 이미지를 각각 유지합니다.
-
-   ![실행 취소 및 다시 실행 옵션](assets/chlimage_1-25.png)
-
+1. 실행 취소 **[!UICONTROL 취소]** 도구 모음 옵션 ![](assets/do-not-localize/undo.png) 및 **[!UICONTROL 다시 실행 도구 모음 옵션]** 잘라내지 않은 이미지로 되돌리거나 잘린 이미지를 각각 유지하려면 ![다시 실행](assets/do-not-localize/redo.png) 을 사용합니다.
 1. 해당 [ **[!UICONTROL 회전]** ] 옵션을 클릭하여 이미지를 시계 방향 또는 반시계 방향으로 회전합니다.
 
-   ![시계 방향 및 반시계 방향 회전 옵션](assets/chlimage_1-26.png)
+   ![시계 방향 및 반시계 방향 회전 옵션](assets/do-not-localize/rotate-options.png)
 
-1. 이미지를 가로 또는 세로로 뒤집으려면 적절한 **[!UICONTROL 뒤집기]** 옵션을 클릭합니다.
-
-   ![이미지를 가로 또는 세로로 뒤집는 옵션](assets/chlimage_1-27.png)
+1. 적절한 **[!UICONTROL 뒤집기]** 옵션을 클릭하여 이미지를 가로 ![로 반사 옵션](assets/do-not-localize/flip-horizontal.png) 또는 세로 ![반사 옵션을](assets/do-not-localize/flip-vertical.png)뒤집습니다.
 
 1. 이미지 편집을 완료하려면 [마침] 옵션 ****![을 클릭합니다](assets/do-not-localize/check-ok-done-icon.png). 마침 **을** 클릭하면 표현물의 재재생도 시작됩니다.
 
@@ -731,23 +723,23 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
    * [빠른 작업](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * 자산을 선택하거나 자산 페이지로 이동한 후 도구 모음에서
 
-   ![주석 옵션](assets/chlimage_1-29.png)
+   ![주석 옵션](assets/annotate-option.png)
 
 1. 타임라인 아래쪽에 있는 **[!UICONTROL 주석]** 상자에 주석을 추가합니다. 또는, 이미지에서 영역을 마크업하고 주석 **[!UICONTROL 추가 대화 상자에 주석을]** 추가합니다.
 
-   ![주석 추가 대화 상자의 주석 상자](assets/chlimage_1-30.png)
+   ![주석 추가 대화 상자의 주석 상자](assets/annotation-comment-box.png)
 
 1. 주석에 대해 사용자에게 알리려면 사용자의 이메일 주소를 지정하고 주석을 추가합니다. 예를 들어 주석을 Aaron MacDonald에 알리려면 @aa를 입력합니다. 일치하는 모든 사용자에 대한 힌트가 목록에 표시됩니다. 목록에서 Aaron의 이메일 주소를 선택하여 주석에 태그를 지정합니다. 마찬가지로 주석 내 또는 그 전 또는 후에 더 많은 사용자에게 태그를 지정할 수 있습니다.
 
+   ![사용자의 이메일 주소를 지정하고 사용자에게 알릴 주석 추가](assets/annotation-add-user-email.png)
+
    >[!NOTE]
    >
-   >관리자가 아닌 사용자의 경우 제안 사항은 사용자가 Crx-de에서 */home에* 읽기 권한이 있는 경우에만 나타납니다.
-
-   ![사용자의 이메일 주소를 지정하고 사용자에게 알릴 주석 추가](assets/chlimage_1-31.png)
+   >관리자가 아닌 사용자의 경우 CRXDE의 경로에서 사용자에게 읽기 권한이 있는 경우에만 제안 사항이 `/home` 표시됩니다.
 
 1. 주석을 추가한 후 **[!UICONTROL 추가를]** 클릭하여 저장합니다. 주석에 대한 알림이 Aaron에게 전송됩니다.
 
-   ![주석을 저장할 추가 단추](assets/chlimage_1-32.png)
+   ![주석을 저장할 추가 단추](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -778,15 +770,15 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
 1. Experience Manager 인터페이스에서 **[!UICONTROL 타임라인을 선택합니다]**.
 
-   ![Experience Manager에서 사용 가능한 옵션](assets/chlimage_1-35.png)
+   ![Experience Manager에서 사용할 수 있는 타임라인 옵션](assets/view-timeline.png)
 
 1. 타임라인의 **[!UICONTROL 모두]** 표시 목록에서 **[!UICONTROL 주석을]** 기준으로 결과를 필터링하려면 주석을 선택합니다.
 
-   ![타임라인에 모든 목록 표시](assets/chlimage_1-36.png)
+   ![타임라인에 모든 목록 표시](assets/timeline-show-all-option.png)
 
    [ **[!UICONTROL 타임라인]** ] 패널에서 주석을 클릭하여 이미지에 해당하는 주석을 봅니다.
 
-   ![이미지에서 주석을 볼 수 있는 타임라인 패널](assets/chlimage_1-37.png)
+   ![이미지에서 주석을 볼 수 있는 타임라인 패널](assets/timeline-view-annotations.png)
 
    특정 **[!UICONTROL 주석을]**&#x200B;삭제하려면 삭제를 클릭합니다.
 
@@ -806,11 +798,9 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
 1. 특정 주석을 인쇄하려면 타임라인에서 주석을 선택합니다.
 
-   ![타임라인에서 주석을 선택하여 인쇄](assets/chlimage_1-38.png)
+   ![타임라인에서 주석을 선택하여 인쇄](assets/timeline-select-annotations.png)
 
    검토 상태만 인쇄하려면 타임라인에서 선택합니다.
-
-   ![주석의 검토 상태만 인쇄하려면 타임라인에서 주석을 선택합니다](assets/chlimage_1-39.png)
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
@@ -824,11 +814,11 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
    >[!NOTE]
    >
-   >긴 주석이 PDF 파일에서 제대로 렌더링되지 않을 수 있습니다. 최적의 렌더링을 위해 주석을 50단어로 제한하는 것이 좋습니다.
+   >긴 주석이 PDF 파일에서 제대로 렌더링되지 않을 수 있습니다. 렌더링을 최적화하려면 주석을 50단어로 제한하는 것이 좋습니다.
 
 1. 인쇄를 **[!UICONTROL 클릭합니다]**. 2단계에서 선택한 옵션에 따라, 생성된 PDF에 지정된 위치에 주석/상태가 표시됩니다. 예를 들어 왼쪽 **위** 설정을 사용하여 주석과 검토 상태를 모두 인쇄하도록 선택하면 생성된 출력이 여기에 설명된 PDF 파일과 유사합니다.
 
-   ![생성된 PDF에 주석 및 검토 상태](assets/chlimage_1-42.png)
+   ![생성된 PDF에 주석 및 검토 상태](assets/annotation-status-pdf.png)
 
 1. 오른쪽 ![상단에 있는 옵션을 사용하여 PDF의](assets/do-not-localize/download.png) 다운로드 옵션 또는 PDF의 ![인쇄 옵션](assets/do-not-localize/print.png) 을 PDF로 다운로드할 수 있습니다.
 
@@ -838,7 +828,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
    글꼴 색상, 크기 및 스타일, 주석과 상태에 대한 배경색 등 렌더링된 PDF 파일의 모양을 수정하려면 Configuration Manager에서 **[!UICONTROL 주석 PDF 구성을]** 열고 원하는 옵션을 수정합니다. 예를 들어, 승인된 상태의 표시 색상을 변경하려면 해당 필드에서 색상 코드를 수정합니다. 주석의 글꼴 색상 변경에 대한 자세한 내용은 주석 달기를 [참조하십시오](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![PDF 문서에서 에셋 주석 인쇄 구성](assets/chlimage_1-44.png)
+   ![PDF 문서에서 에셋 주석 인쇄 구성](assets/annotation-print-pdf-config.png)
 
    렌더링된 PDF 파일로 돌아가 새로 고칩니다. 새로 고친 PDF는 변경 사항을 반영합니다.
 
@@ -848,7 +838,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 1. CQ-DAM-Handler-Gibson Font Manager Service를 구성하려면 다음 중 하나를 수행합니다.
 
    * 시스템 글꼴 디렉토리 옵션에서 시스템에 있는 글꼴 디렉토리의 전체 경로를 지정합니다. 예를 들어 Mac 사용자의 경우 시스템 글꼴 디렉토리 옵션에서 */Library/Fonts* 경로를 지정할 수 있습니다. [!DNL Experience Manager] 이 디렉토리에서 글꼴을 가져옵니다.
-   * 폴더 `fonts` 안에 이름이 지정된 디렉토리를 ``crx-quickstart`` 만듭니다. CQ-DAM-Handler-Gibson Font Manager Service는 위치에 있는 글꼴을 자동으로 가져옵니다 `crx-quickstart/fonts`. Adobe Server Fonts 디렉토리 옵션 내에서 이 기본 경로를 재정의할 수 있습니다.
+   * 폴더 `fonts` 안에 이름이 지정된 디렉토리를 ``crx-quickstart`` 만듭니다. CQ-DAM-Handler-Gibson Font Manager Service는 위치에 있는 글꼴을 자동으로 가져옵니다 `crx-quickstart/fonts`. Adobe 서버 글꼴 디렉토리 옵션 내에서 이 기본 경로를 재정의할 수 있습니다.
 
    * 시스템에 글꼴을 위한 새 폴더를 만들고 원하는 글꼴을 폴더에 저장합니다. 그런 다음 고객 글꼴 디렉토리 옵션에서 해당 폴더의 전체 경로를 지정합니다.
 
