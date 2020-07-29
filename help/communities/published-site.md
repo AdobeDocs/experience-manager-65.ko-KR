@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## 게시 시 새 사이트 찾아보기 {#browse-to-new-site-on-publish}
 
-새로 만든 커뮤니티 사이트가 게시되었으므로 사이트를 만들 때 표시되는 URL을 탐색합니다(예: 게시 서버).
+새로 만든 커뮤니티 사이트가 게시되었으므로 사이트를 만들 때 표시되는 URL을 탐색하고 게시 서버에서 다음을 수행합니다.
 
 * 작성자 URL = https://localhost:4502/content/sites/engage/en.html
 * 게시 URL = https://localhost:4503/content/sites/engage/en.html
@@ -65,13 +65,14 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 1. 페이지 **속성으로 이동합니다**.
 
-   ![사이트 인증](assets/site-authentication.png)
+   ![page-properties](assets/page-properties.png)
 
 1. 고급 **탭으로** 이동합니다.
 
-   ![page-properties](assets/page-properties.png)
-
 1. Enable **Authentication Requirement**.
+
+   ![사이트 인증](assets/site-authentication.png)
+
 1. 로그인 페이지의 경로를 추가합니다. 예: **/content/....../GetStarted**.
 1. 페이지를 게시합니다.
 
