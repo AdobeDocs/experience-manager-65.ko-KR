@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: ac3d18bf0b39efbe927c10aef557296140628e19
 workflow-type: tm+mt
-source-wordcount: '2190'
+source-wordcount: '2187'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,17 @@ ht-degree: 0%
 
 백업 및 복구와 관련하여 다음 사항을 고려합니다.
 
-* 데이터베이스는 GDS 및 AEM 리포지토리 전에 백업해야 합니다.
+* GDS와 AEM 저장소 전에 데이터베이스를 백업해야 합니다.
 * 백업을 위해 클러스터된 환경에서 노드를 종료해야 하는 경우 보조 노드가 주 노드 앞에 종료되었는지 확인하십시오. 그렇지 않으면 클러스터 또는 서버에서 불일치가 발생할 수 있습니다. 또한 보조 노드 이전에 기본 노드를 라이브로 설정해야 합니다.
 * 클러스터의 복원 작업을 수행하려면 클러스터의 각 노드에 대해 응용 프로그램 서버를 중지해야 합니다.
 
 ## 전역 문서 저장소 디렉터리 {#global-document-storage-directory}
 
-GDS는 프로세스 내에서 사용되는 긴 파일 저장에 사용되는 디렉토리입니다. 긴 파일의 수명은 AEM 양식 시스템의 하나 이상의 실행을 확장하기 위한 것으로, 일 수 및 년을 확장할 수 있습니다. 이러한 긴 파일에는 PDF, 정책 및 양식 템플릿이 포함될 수 있습니다. 긴 기간 파일은 많은 AEM 양식 배포의 전체 상태 중 중요한 부분입니다. 긴 문서의 일부 또는 전체가 유실되거나 손상되면 양식 서버가 불안정해질 수 있습니다.
+GDS는 프로세스 내에서 사용되는 긴 파일 저장에 사용되는 디렉토리입니다. 긴 파일의 수명은 AEM 양식 시스템을 하나 이상 실행할 수 있도록 고안된 것으로 며칠 또는 몇 년 동안 작업할 수 있습니다. 이러한 긴 파일에는 PDF, 정책 및 양식 템플릿이 포함될 수 있습니다. 긴 기간 파일은 많은 AEM 양식 배포의 전반적인 상태에 있어 매우 중요합니다. 긴 문서의 일부 또는 전체가 유실되거나 손상되면 양식 서버가 불안정해질 수 있습니다.
 
 비동기 작업 호출용 입력 문서는 GDS에도 저장되므로 요청을 처리할 수 있어야 합니다. 따라서 GDS를 호스팅하고 RAID(Independent Disks Array) 또는 기타 기술을 사용하는 파일 시스템의 신뢰성을 서비스 품질 및 수준에 맞게 고려하는 것이 중요합니다.
 
-GDS의 위치는 AEM Forms 설치 프로세스 동안 또는 관리 콘솔을 사용하여 결정됩니다. GDS의 고가용성 위치를 유지하는 것 외에도 문서의 데이터베이스 저장소를 활성화할 수 있습니다. 문서 [저장소에 데이터베이스가 사용되는 경우 백업 옵션을 참조하십시오](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
+GDS의 위치는 AEM 양식 설치 프로세스 중 또는 관리 콘솔을 사용하여 결정됩니다. GDS의 고가용성 위치를 유지하는 것 외에도 문서의 데이터베이스 저장소를 활성화할 수 있습니다. 문서 [저장소에 데이터베이스가 사용되는 경우 백업 옵션을 참조하십시오](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
 
 ### GDS 위치 {#gds-location}
 
@@ -55,13 +55,13 @@ GDS 위치를 기본값이 아닌 위치로 변경한 경우 다음과 같이 �
 
 ### 데이터베이스를 문서 저장소에 사용하는 경우 백업 옵션 {#backup-options-when-database-is-used-for-document-storage}
 
-관리 콘솔을 사용하여 AEM Forms 데이터베이스에서 AEM Forms 문서 저장소를 활성화할 수 있습니다. 이 옵션은 모든 영구 문서를 데이터베이스에 보관하지만 AEM Forms는 세션 및 AEM Forms 호출과 관련된 영구 파일 및 임시 파일 및 리소스를 저장하는 데 사용되므로 파일 시스템 기반 GDS 디렉토리가 필요합니다.
+관리 콘솔을 사용하여 AEM 양식 데이터베이스에서 AEM 양식 문서 저장소를 활성화할 수 있습니다. 이 옵션을 사용하면 모든 영구 문서를 데이터베이스에 저장할 수 있지만 AEM 양식은 세션 및 AEM 양식 호출과 관련된 영구 파일 및 임시 파일과 리소스를 저장하는 데 사용되므로 여전히 파일 시스템 기반 GDS 디렉토리가 필요합니다.
 
-관리 콘솔의 핵심 시스템 설정에서 &quot;데이터베이스에서 문서 저장소 사용&quot; 옵션을 선택하거나 Configuration Manager를 사용하여 AEM 양식에서는 스냅샷 백업 모드 및 순환 백업 모드를 허용하지 않습니다. 따라서 AEM 양식을 사용하여 백업 모드를 관리할 필요가 없습니다. 이 옵션을 사용하는 경우 옵션을 활성화한 후 GDS를 한 번만 백업해야 합니다. 백업에서 AEM 양식을 복구할 때 GDS에 대한 백업 디렉터리 이름을 변경하거나 GDS를 복원할 필요가 없습니다.
+관리 콘솔의 핵심 시스템 설정에서 &quot;데이터베이스에서 문서 저장소 사용&quot; 옵션을 선택하거나 Configuration Manager를 사용하여 AEM 양식에서 스냅샷 백업 모드 및 순환 백업 모드를 허용하지 않습니다. 따라서 AEM 양식을 사용하여 백업 모드를 관리할 필요가 없습니다. 이 옵션을 사용하는 경우 옵션을 활성화한 후 GDS를 한 번만 백업해야 합니다. 백업에서 AEM 양식을 복구할 때 GDS의 백업 디렉터리 이름을 변경하거나 GDS를 복원할 필요가 없습니다.
 
-## AEM 리포지토리 {#aem-repository}
+## AEM 저장소 {#aem-repository}
 
-AEM Forms를 설치하는 동안 crx-repository가 구성된 경우 AEM 리포지토리(crx-repository)가 생성됩니다. crx-repository 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 결정됩니다. AEM Forms 데이터의 일관성을 유지하려면 데이터베이스 및 GDS와 함께 AEM 리포지토리 백업 및 복원이 필요합니다. AEM 저장소에는 통신 관리 솔루션, 양식 관리자 및 AEM Forms 작업 공간에 대한 데이터가 포함됩니다.
+AEM 리포지토리(crx-repository)는 AEM 양식을 설치하는 동안 crx-repository가 구성된 경우 생성됩니다. crx-repository 디렉토리의 위치는 AEM forms 설치 프로세스 중에 결정됩니다. AEM 양식의 AEM 양식 데이터를 일관되게 유지하기 위해 데이터베이스 및 GDS와 함께 AEM 저장소 백업 및 복원이 필요합니다. AEM 보관소에는 통신 관리 솔루션, Forms 관리자 및 AEM Forms 작업 공간에 대한 데이터가 포함되어 있습니다.
 
 ### 통신 관리 솔루션 {#correspondence-management-solution}
 
@@ -75,25 +75,25 @@ Correspondence Management Solution은 안전하고 개인화된 인터랙티브�
 
 ### AEM Forms 작업 공간 {#html-workspace}
 
-AEM Forms 작업 공간은 (JEE에서 AEM 양식에 대해 더 이상 사용되지 않음) Flex 작업 영역의 기능과 일치하고 작업 영역을 확장 및 통합하고 사용자에게 보다 친숙한 새 기능을 추가합니다.
+AEM Forms 작업 공간은 (JEE에서 AEM 양식에 대해 더 이상 사용되지 않음) Flex 작업 영역의 기능과 일치하고, 작업 영역을 확장 및 통합하며 보다 사용자에게 친숙한 컨텐츠를 만드는 새로운 기능을 추가합니다.
 
 >[!NOTE]
 >
 >Flex 작업 영역은 AEM 양식 릴리스에서 더 이상 사용되지 않습니다.
 
-Flash Player 및 Adobe Reader가 없는 클라이언트에서 작업을 관리할 수 있습니다. PDF forms 및 Flex 양식 외에도 HTML Forms를 손쉽게 변환할 수 있습니다.
+Flash Player과 Adobe Reader 없이도 클라이언트에 대한 작업 관리를 수행할 수 있습니다. PDF forms 및 Flex 양식 외에도 HTML Forms 변환이 용이합니다.
 
-## AEM Forms 데이터베이스 {#aem-forms-database}
+## AEM forms 데이터베이스 {#aem-forms-database}
 
-AEM Forms 데이터베이스는 양식 객체, 서비스 구성, 프로세스 상태 및 데이터베이스 참조와 같은 컨텐츠를 GDS 및 컨텐츠 저장소 루트 디렉토리(컨텐츠 서비스용)에 저장합니다. 데이터베이스 백업은 서비스 중단 없이 실시간으로 수행할 수 있으며 특정 시점 또는 특정 변경 사항까지 복구할 수 있습니다. 이 섹션에서는 실시간으로 백업할 수 있도록 데이터베이스를 구성하는 방법에 대해 설명합니다.
+AEM 양식 데이터베이스는 양식 객체, 서비스 구성, 프로세스 상태 및 데이터베이스 참조와 같은 컨텐츠를 GDS 및 컨텐츠 저장소 루트 디렉토리(컨텐츠 서비스용)에 있는 파일에 저장합니다. 데이터베이스 백업은 서비스 중단 없이 실시간으로 수행할 수 있으며 특정 시점 또는 특정 변경 사항까지 복구할 수 있습니다. 이 섹션에서는 실시간으로 백업할 수 있도록 데이터베이스를 구성하는 방법에 대해 설명합니다.
 
-시스템 관리자와 데이터베이스 관리자는 적절하게 구성된 AEM 양식 시스템에서 시스템을 일관되고 알려진 상태로 복구하기 위해 쉽게 협업할 수 있습니다.
+시스템 관리자와 데이터베이스 관리자는 제대로 구성된 AEM 양식 시스템에서 시스템을 일관되고 알려진 상태로 복구하기 위해 쉽게 협업할 수 있습니다.
 
 데이터베이스를 실시간으로 백업하려면 스냅샷 모드를 사용하거나 지정한 로그 모드에서 실행되도록 데이터베이스를 구성해야 합니다. 데이터베이스를 열고 사용할 수 있는 동안 데이터베이스 파일을 백업할 수 있습니다. 또한 이 모드에서 실행 중인 데이터베이스는 롤백 및 트랜잭션 로그를 보존합니다.
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치되는 컨텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 디자인, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. Adobe [제품 라이프사이클 문서를 참조하십시오](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). 콘텐츠 서비스 구성에 대해 알아보려면 콘텐츠 서비스 관리 [를 참조하십시오](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
+>Adobe® LiveCycle ® 컨텐츠 서비스 ES(더 이상 사용되지 않음)는 LiveCycle과 함께 설치되는 컨텐츠 관리 시스템입니다. 이를 통해 사용자는 인간 중심 프로세스를 디자인, 관리, 모니터링 및 최적화할 수 있습니다. 콘텐츠 서비스(더 이상 사용되지 않음) 지원은 2014년 12월 31일에 종료됩니다. 제품 라이프사이클 [Adobe 문서를 참조하십시오](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). 콘텐츠 서비스 구성에 대해 알아보려면 콘텐츠 서비스 관리 [를 참조하십시오](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).
 
 ### DB2 {#db2}
 
@@ -101,7 +101,7 @@ AEM Forms 데이터베이스는 양식 객체, 서비스 구성, 프로세스 �
 
 >[!NOTE]
 >
->AEM 양식 환경이 이전 버전의 AEM 양식에서 업그레이드되어 DB2를 사용하는 경우 온라인 백업이 지원되지 않습니다. 이 경우 AEM 양식을 종료하고 오프라인 백업을 수행해야 합니다. AEM 양식의 향후 버전은 업그레이드 고객을 위한 온라인 백업을 지원합니다.
+>AEM 양식 환경이 이전 버전의 AEM 양식에서 업그레이드되어 DB2를 사용하는 경우 온라인 백업이 지원되지 않습니다. 이 경우 AEM 양식을 종료하고 오프라인 백업을 수행해야 합니다. 향후 버전의 AEM 양식은 업그레이드 고객을 위한 온라인 백업을 지원합니다.
 
 IBM에는 데이터베이스 관리자가 백업 및 복구 작업을 관리하는 데 도움이 되는 도구 및 도움말 시스템이 포함되어 있습니다.
 
@@ -131,7 +131,7 @@ SQL Server는 다음과 같은 두 가지 백업 및 복구 도구를 제공합�
 * SQL Server Management Studio(GUI)
 * T-SQL(명령줄)
 
-백업 [전략](https://articles.techrepublic.com.com/5100-1035_61-1043671.md)및 [백업 및 복원을 참조하십시오](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+자세한 내용은 [백업 및 복원을 참조하십시오](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
@@ -157,7 +157,7 @@ log-bin=logname
 
 ### 컨텐츠 저장소 루트 위치(독립 실행형 환경) {#content-storage-root-location-stand-alone-environment}
 
-콘텐츠 서비스(더 이상 사용되지 않음)가 설치되면 콘텐츠 저장소 루트 디렉토리가 생성됩니다. 콘텐츠 저장소 루트 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 결정됩니다.
+콘텐츠 서비스(더 이상 사용되지 않음)가 설치되면 콘텐츠 저장소 루트 디렉토리가 생성됩니다. 컨텐츠 저장소 루트 디렉토리의 위치는 AEM 양식 설치 프로세스 중에 결정됩니다.
 
 컨텐츠 저장소 루트 디렉토리의 기본 위치는 입니다 `[aem-forms root]/lccs_data`.
 
