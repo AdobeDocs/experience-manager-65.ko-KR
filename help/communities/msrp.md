@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 6a9f273c6e9eb822e2d4765700361a205019b84c
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 1%
@@ -33,7 +33,7 @@ SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-
    * 버전 2.6 이상
    * No need to configure mongos or sharding
    * 반드시 [복제본 세트를 사용하는 것이 좋습니다.](#mongoreplicaset)
-   * AEM과 동일한 호스트에서 실행하거나 원격으로 실행할 수 있습니다.
+   * AEM과 동일한 호스트에서 실행하거나 원격으로 실행 가능
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -43,7 +43,7 @@ SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-
    * 실행 모드 선택:
       * 독립 실행형 모드
       * [SolrCloud 모드](solr.md#solrcloud-mode) (프로덕션 환경에 권장)
-   * MLS(Multilingual Search) 선택
+   * MLS(Multilingual Search) 선택:
       * [표준 MLS 설치](solr.md#installing-standard-mls)
       * [고급 MLS 설치](solr.md#installing-advanced-mls)
 
@@ -102,7 +102,7 @@ SolrCloud 모드에서 실행되는 경우 비워 둡니다.
 
 >[!NOTE]
 >
->기본적으로 이름으로 설정되는 mongoDB 데이터베이스 `communities`는 [노드 저장소 또는 데이터(이진) 저장소에 사용되는 데이터베이스의 이름으로 설정하면 안 됩니다](../../help/sites-deploying/data-store-config.md). AEM 6.5 [의 스토리지 요소를 참조하십시오](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>기본적으로 이름으로 설정되는 mongoDB 데이터베이스 `communities`는 [노드 저장소 또는 데이터(이진) 저장소에 사용되는 데이터베이스의 이름으로 설정하면 안 됩니다](../../help/sites-deploying/data-store-config.md). AEM [6.5의 스토리지 요소를 참조하십시오](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 
 ### MongoDB 복제본 세트 {#mongodb-replica-set}
@@ -224,7 +224,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 저장소 옵션의 구성을 확인하여 MSRP가 기본 공급자로 구성되었는지 확인하십시오. 기본적으로 저장소 리소스 공급자는 JSRP입니다.
 
-모든 작성 및 AEM 인스턴스에서 [스토리지 구성 콘솔을](srp-config.md) 다시 방문하거나 AEM 저장소를 확인합니다.
+모든 작성 및 게시 AEM 인스턴스에서 [스토리지 구성 콘솔을](srp-config.md) 다시 방문하거나 AEM 저장소를 확인합니다.
 
 * JCR에서 if/etc/socialconfig [로](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -239,7 +239,7 @@ GitHub에서 사용할 수 있는 오픈 소스 도구는 다음과 같습니다
 
 * [AEM Communities UGC 마이그레이션 도구](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-AEM Communities 6.1 이상으로 가져오기 위해 이전 버전의 AEM 소셜 커뮤니티에서 UGC를 내보내도록 마이그레이션 도구를 사용자 지정할 수 있습니다.
+AEM Communities 6.1 이상으로 가져오기 위해 AEM 소셜 커뮤니티의 이전 버전에서 UGC를 내보내도록 마이그레이션 도구를 사용자 지정할 수 있습니다.
 
 ### 오류 - 정의되지 않은 필드 provider_id {#error-undefined-field-provider-id}
 
@@ -270,6 +270,6 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 
 ## 리소스 {#resources}
 
-* [MongoDB가 있는 AEM](../../help/sites-deploying/aem-with-mongodb.md)
+* [AEM with MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [MongoDB 설명서](https://docs.mongodb.org/)
 
