@@ -1,8 +1,8 @@
 ---
 title: 새 로그인 화면 만들기
 seo-title: 새 로그인 화면 만들기
-description: AEM Forms 작업 공간이나 Forms Manager와 같이 LiveCycle 모듈의 로그인 페이지를 수정하는 방법
-seo-description: AEM Forms 작업 공간이나 Forms Manager와 같이 LiveCycle 모듈의 로그인 페이지를 수정하는 방법
+description: AEM Forms 작업 공간이나 Forms 관리자 같은 LiveCycle 모듈의 로그인 페이지를 수정하는 방법.
+seo-description: AEM Forms 작업 공간이나 Forms 관리자 같은 LiveCycle 모듈의 로그인 페이지를 수정하는 방법.
 uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b4c1bc5f09491a8843a82c3589604f6717a76ea8
+source-git-commit: 9fcfd1c2c63d9a32f2d68f5b0c974bc5b5d22b40
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '485'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # 새 로그인 화면 만들기{#creating-a-new-login-screen}
 
-AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 화면을 수정할 수 있습니다. 예를 들어 수정은 Forms Manager 및 AEM Forms 작업 영역의 로그인 화면에 영향을 줍니다.
+AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 화면을 수정할 수 있습니다. 예를 들어 수정 사항은 Forms 관리자와 AEM Forms 작업 영역의 로그인 화면에 영향을 줍니다.
 
 ## 전제 조건 {#prerequisite}
 
@@ -97,9 +97,11 @@ String browserLocale = "en";
             break;
         }
     }
+```
 
-To
+끝
 
+```jsp
 String browserLocale = "en";
     for(int i=0; i<locales.length; i++)
     {
@@ -125,8 +127,9 @@ String browserLocale = "en";
             break;
         }
     }
-```jsp
+```
 
+```jsp
 String browserLocale = "en";
 
     for(int i=0; i<locales.length; i++)
@@ -149,9 +152,11 @@ String browserLocale = "en";
             break;
         }
     }
+```
 
-To
+끝
 
+```jsp
 String browserLocale = "en";
     for(int i=0; i<locales.length; i++)
     {
@@ -177,20 +182,19 @@ String browserLocale = "en";
             break;
         }
     }
-***To change Default locale***
-
-```jsp
-
-String browserLocale = "en";
-for(int i=0; i<locales.length; i++)
-
-To
-
-String browserLocale = "ar";
-for(int i=0; i<locales.length; i++)
 ```
 
+***기본 로케일을 변경하려면***
 
+```jsp
+   String browserLocale = "en";
+   for(int i=0; i<locales.length; i++)
+
+   To
+
+   String browserLocale = "ar";
+   for(int i=0; i<locales.length; i++)
+```
 
 ### 새 텍스트 추가 또는 기존 텍스트 수정 {#adding-new-text-or-modifying-existing-text}
 
@@ -233,8 +237,6 @@ for(int i=0; i<locales.length; i++)
                        <span class="loginTitle"><%= i18n.get("Login") %></code>
                        <% if (loginFailed) {%>
    ```
-
-
 
 ### 새 스타일 추가 또는 기존 스타일 수정 {#adding-new-style-or-modifying-existing-style}
 
@@ -285,7 +287,6 @@ css.newLoginContentArea {
 >
 >에서 복사한 기존 이미지 `/apps/livecycle/core/content/login` 가 제거되면 `/libs/livecycle/core/content/login`CSS에서 해당 참조를 제거합니다.
 
-
 ### 새 이미지 추가 {#add-new-images}
 
 1. 새 스타일 추가 또는 기존 스타일(위에 문서화됨)을 수정하는 단계를 수행합니다.
@@ -324,4 +325,3 @@ css.newLoginContentArea {
 ```jsp
 <div class="newLginContainerBkg">
 ```
-
