@@ -3,9 +3,9 @@ title: Assets HTTP API in [!DNL Adobe Experience Manager].
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 92b7ca5c4864c4cca0eb8f1fb1c6bcec9d87c21c
+source-git-commit: f29eeb54c115514947a11bbc8a9e9e7df7cd082b
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1583'
 ht-degree: 1%
 
 ---
@@ -254,8 +254,11 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 
 **요청**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-URL `/content/dam` 에서 사용하지 마십시오. 덮어쓰는 동안 이동하는 샘플 명령:
-`curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"`
+URL `/content/dam` 에서 사용하지 마십시오. 자산을 이동하고 기존 자산을 덮어쓰는 샘플 명령은 다음과 같습니다.
+
+```shell
+curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
+```
 
 **응답 코드**: 응답 코드는 다음과 같습니다.
 
