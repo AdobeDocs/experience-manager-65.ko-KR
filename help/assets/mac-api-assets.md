@@ -3,9 +3,9 @@ title: Assets HTTP API in [!DNL Adobe Experience Manager].
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
+source-git-commit: 92b7ca5c4864c4cca0eb8f1fb1c6bcec9d87c21c
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1580'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 >[!NOTE]
 >
->폴더 또는 자산의 일부 속성이 다른 접두사에 매핑됩니다. 접두어 `jcr` , `jcr:title`및 `jcr:description`는 `jcr:language` `dc` 접두사로 대체됩니다. 따라서 반환된 JSON에 `dc:title` 는 `dc:description` 각각 `jcr:title` 및 `jcr:description`의 값을 포함합니다.
+>폴더 또는 자산의 일부 속성이 다른 접두사에 매핑됩니다. 접두어 `jcr` , `jcr:title`및 `jcr:description`는 `jcr:language` `dc` 접두사로 대체됩니다. 따라서 반환된 JSON에 `dc:title` 각각 및 `dc:description` 의 값 `jcr:title` 을 포함시키고 `jcr:description`있습니다.
 
 **링크** 폴더에는 세 개의 링크가 표시됩니다.
 
@@ -96,7 +96,7 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 **전제 조건**
 
 * 액세스 `https://[aem_server]:[port]/system/console/configMgr`.
-* [ **[!UICONTROL Adobe Granite CSRF 필터]로 이동합니다]**.
+* [ **[!UICONTROL Adobe [화강암 CSRF 필터]로 이동합니다]**.
 * 속성 필터 **[!UICONTROL 메서드에 다음이 포함되어 있는지]** 확인합니다. `POST`, `PUT`, `DELETE`.
 
 ## 폴더 목록 검색 {#retrieve-a-folder-listing}
@@ -253,6 +253,9 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 * `X-Overwrite` - 기존 리소스 `T` 를 강제로 삭제하거나 기존 리소스 `F` 를 덮어쓰지 않도록 하려면 이 중 하나를 사용합니다.
 
 **요청**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+
+URL `/content/dam` 에서 사용하지 마십시오. 덮어쓰는 동안 이동하는 샘플 명령:
+`curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"`
 
 **응답 코드**: 응답 코드는 다음과 같습니다.
 
