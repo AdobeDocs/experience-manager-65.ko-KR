@@ -3,7 +3,7 @@ title: 자산 편집기 페이지 만들기 및 구성
 description: 사용자 지정 자산 편집기 페이지를 만들고 여러 자산을 동시에 편집하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: c679cc5ad8f0ecf3495b020ef593de2e73c05ae0
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 6%
@@ -171,7 +171,7 @@ To add predicates:
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
-![assetshare4](assets/assetshare4.bmp)
+![assetshare4](assets/assetshare4.png)
 
 The following predicates are available:
 
@@ -204,17 +204,17 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 자산 편집기 페이지를 만들려면:
 
 1. 웹 **[!UICONTROL 사이트]** 탭에서 자산 편집기 페이지를 만들 위치로 이동하고 새로 만들기를 **클릭합니다**.
-1. Geometrixx **자산 편집기를** 선택하고 **만들기를 클릭합니다**. 새 페이지가 만들어지고 페이지가 웹 사이트 **탭에** 나열됩니다.
+1. 자산 **편집기 Geometrixx을** 선택하고 **만들기를 클릭합니다**. 새 페이지가 만들어지고 페이지가 웹 사이트 **탭에** 나열됩니다.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
 Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는 다음과 같습니다.
 
-![assetshare5](assets/assetshare5.bmp)
+![assetshare5](assets/assetshare5.png)
 
-자산 편집기 페이지를 사용자 정의하려면 사이드 킥의 요소를 사용합니다. Geometrixx Press **Center에서** 액세스하는 자산 편집기 페이지는 다음 템플릿을 기반으로 한 페이지의 사용자 정의 버전입니다.
+자산 편집기 페이지를 사용자 정의하려면 사이드 킥의 요소를 사용합니다. Geometrixx **보도** 센터에서 액세스하는 자산 편집기 페이지는 다음 템플릿을 기반으로 한 페이지의 사용자 정의 버전입니다.
 
-![assetshare6](assets/assetshare6.bmp)
+![assetshare6](assets/assetshare6.png)
 
 #### 자산 공유 페이지에서 열도록 자산 편집기 설정 {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -262,7 +262,7 @@ Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는
 
 #### 메타데이터 양식 및 텍스트 필드 - 메타데이터 보기 구성 요소 구성 {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-메타데이터 양식은 시작 및 종료 동작을 포함하는 양식입니다. 그 사이에 **텍스트** 필드를 입력합니다. 양식 [작업에](/help/sites-authoring/default-components-foundation.md#form-component) 대한 자세한 내용은 양식을 참조하십시오.
+메타데이터 양식은 시작 및 종료 동작을 포함하는 양식입니다. 그 사이에 **텍스트** 필드를 입력합니다. 양식 작업에 대한 자세한 내용은 [Forms](/help/sites-authoring/default-components-foundation.md#form-component) 를 참조하십시오.
 
 1. 양식의 시작 영역에서 **편집을** 클릭하여 시작 동작을 만듭니다. 원하는 경우 상자 제목을 입력할 수 있습니다. 기본적으로 상자 제목은 **메타데이터입니다**. 유효성 검사를 위해 java-script 클라이언트 코드를 생성하려는 경우 클라이언트 유효성 검사 확인란을 선택합니다.
 
@@ -394,7 +394,7 @@ Experience Manager 자산을 사용하여 여러 자산을 한 번에 변경할 
 
 자산 편집기 페이지를 사용하여 자산을 다중 편집하려면:
 
-1. Geometrixx **Press Center 페이지를** 엽니다.
+1. Geometrixx **보도** 센터 페이지를 엽니다.
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. 자산을 선택합니다.
@@ -405,7 +405,7 @@ Experience Manager 자산을 사용하여 여러 자산을 한 번에 변경할 
    자산 범위를 선택하려면 첫 번째 자산을 클릭한 다음 마지막 자산 `Shift + click` 을 클릭합니다.
 
 1. 작업 **필드** (페이지의 왼쪽 부분) **에서 메타데이터** 편집을 클릭합니다.
-1. Geometrixx **Press Center Asset Editor** 페이지가 새 탭에 열립니다. 자산의 메타데이터는 다음과 같이 표시됩니다.
+1. Geometrixx **프레싱 센터 자산 편집기** 페이지가 새 탭에 열립니다. 자산의 메타데이터는 다음과 같이 표시됩니다.
 
    * 일부 자산에만 적용되는 태그는 기울임꼴로 표시됩니다.
    * 모든 자산에 적용되는 태그는 일반 글꼴로 표시됩니다.
