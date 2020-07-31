@@ -1,8 +1,8 @@
 ---
-title: Barcoded Forms Service
-seo-title: AEM Forms 바코드 양식 서비스 사용
-description: 'AEM Forms 바코드 양식 서비스를 사용하여 바코드의 전자 이미지에서 데이터를 추출합니다. '
-seo-description: 'AEM Forms 바코드 양식 서비스를 사용하여 바코드의 전자 이미지에서 데이터를 추출합니다. '
+title: 바코드 Forms 서비스
+seo-title: AEM Forms 바코드 Forms 서비스 사용
+description: 'AEM Forms 바코드 Forms 서비스를 사용하여 바코드의 전자 이미지에서 데이터를 추출합니다. '
+seo-description: 'AEM Forms 바코드 Forms 서비스를 사용하여 바코드의 전자 이미지에서 데이터를 추출합니다. '
 uuid: b044a788-0e4a-4718-b71a-bd846933d51b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Barcoded Forms Service{#barcoded-forms-service}
+# 바코드 Forms 서비스{#barcoded-forms-service}
 
 ## 개요 {#overview}
 
-바코드된 양식 서비스는 바코드의 전자적 이미지에서 데이터를 추출합니다. 이 서비스는 하나 이상의 바코드를 입력할 수 있는 TIFF 및 PDF 파일을 받아 바코드 데이터를 추출합니다. 바코드 데이터의 형식은 XML, 구분된 문자열 또는 JavaScript로 만든 사용자 정의 형식을 포함하여 다양한 방법으로 지정할 수 있습니다.
+바코드된 Forms 서비스는 바코드의 전자적 이미지에서 데이터를 추출한다. 이 서비스는 하나 이상의 바코드를 입력할 수 있는 TIFF 및 PDF 파일을 받아 바코드 데이터를 추출합니다. 바코드 데이터의 형식은 XML, 구분된 문자열 또는 JavaScript로 만든 사용자 정의 형식을 포함하여 다양한 방법으로 지정할 수 있습니다.
 
 Barcoded Forms 서비스는 스캔한 TIFF 또는 PDF 문서로 제공된 다음과 같은 **2차원(2D)** 기호를 지원합니다.
 
@@ -47,7 +47,7 @@ Barcoded Forms 서비스를 사용하여 다음 작업을 수행할 수 있습�
 
 ![example](assets/example.png)
 
-Barcoded Forms 서비스는 바코드를 디코딩한 후 다음 XML 문서를 반환합니다.
+바코드 Forms 서비스는 바코드를 디코딩한 후 다음 XML 문서를 반환합니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>  
@@ -98,9 +98,9 @@ Barcoded Forms 서비스는 바코드를 디코딩한 후 다음 XML 문서를 �
 
 양식 작성자는 디자이너를 사용하여 인터랙티브한 바코드 양식을 만듭니다. (디자이너 [도움말을](https://www.adobe.com/go/learn_aemforms_designer_63)참조하십시오.) 사용자가 Adobe Reader 또는 Acrobat을 사용하여 바코드된 양식을 채울 때 바코드가 자동으로 업데이트되어 양식 데이터를 인코딩합니다.
 
-Barcoded Forms 서비스는 종이에 있는 데이터를 전자 형식으로 변환하는 데 유용합니다. 예를 들어 바코드된 양식을 작성하여 인쇄하면 인쇄된 사본을 스캔하여 Barcoded Forms 서비스에 입력으로 사용할 수 있습니다.
+바코드 Forms 서비스는 종이에 있는 데이터를 전자 형식으로 변환하는 데 유용합니다. 예를 들어 바코드된 양식을 작성하여 인쇄하면 인쇄된 사본을 스캔하여 Barcoded Forms 서비스에 입력으로 사용할 수 있습니다.
 
-감시 폴더 끝점은 일반적으로 바코드 양식 서비스를 사용하는 응용 프로그램을 시작하는 데 사용됩니다. 예를 들어, 문서 스캐너는 바코드 양식의 TIFF 또는 PDF 이미지를 감시 폴더에 저장할 수 있습니다. 감시 폴더 끝점이 디코딩을 위해 이미지를 서비스로 전달합니다.
+감시 폴더 끝점은 일반적으로 Barcoded Forms 서비스를 사용하는 응용 프로그램을 시작하는 데 사용됩니다. 예를 들어, 문서 스캐너는 바코드 양식의 TIFF 또는 PDF 이미지를 감시 폴더에 저장할 수 있습니다. 감시 폴더 끝점이 디코딩을 위해 이미지를 서비스로 전달합니다.
 
 ### 권장 인코딩 및 디코딩 형식 {#recommended-encoding-and-decoding-formats}
 
@@ -124,16 +124,16 @@ BCF API를 사용하는 경우 다음 제한 사항을 고려하십시오.
 
 ### 기타 제한 사항 {#other-limitations}
 
-또한 바코드 양식 서비스를 사용할 때는 다음 제한 사항을 고려하십시오.
+또한 바코드 Forms 서비스를 사용할 때는 다음 제한 사항을 고려하십시오.
 
-* 이 서비스는 AcroForms와 2D 바코드가 포함된 정적 양식을 완벽하게 지원합니다. 이 바코드는 Adobe Reader 또는 Acrobat을 사용하여 저장됩니다. 그러나 1D 바코드의 경우 양식을 병합하거나 스캔한 PDF 또는 TIFF 문서로 제공할 수 있습니다.
+* 이 서비스는 Adobe Reader 또는 Acrobat을 사용하여 저장한 2D 바코드가 포함된 AcroForms 및 정적 양식을 완벽하게 지원합니다. 그러나 1D 바코드의 경우 양식을 병합하거나 스캔한 PDF 또는 TIFF 문서로 제공할 수 있습니다.
 * 동적 XFA 양식은 완전히 지원되지 않습니다. 1D 및 2D 바코드를 동적 양식으로 적절하게 디코딩하려면 양식을 병합하거나 스캔한 PDF 또는 TIFF 문서로 제공하십시오.
 
 또한 위의 제한 사항이 발견되면 지원되는 심볼을 사용하는 바코드를 디코딩할 수 있습니다. 인터랙티브한 바코드 양식을 만드는 방법에 대한 자세한 내용은 [디자이너 도움말을 참조하십시오](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## 서비스의 속성 구성   {#configureproperties}
 
-AEM Console에서 **AEMFD Barcoded Forms Service** 를 사용하여 이 서비스에 대한 속성을 구성할 수 있습니다. AEM 콘솔의 기본 URL은 입니다 `https://[host]:'port'/system/console/configMgr`.
+AEM 콘솔에서 **AEMFD Barcoded Forms** 서비스를 사용하여 이 서비스에 대한 속성을 구성할 수 있습니다. AEM 콘솔의 기본 URL은 입니다 `https://[host]:'port'/system/console/configMgr`.
 
 ## 서비스 사용 {#using}
 
@@ -234,13 +234,13 @@ Barcoded Forms Service는 다음과 같은 두 개의 API를 제공합니다.
 
 ### AEM 워크플로우에서 BCF 서비스 사용 {#using-the-bcf-service-with-aem-workflows}
 
-워크플로우에서 Barcoded Forms 서비스를 실행하는 것은 JSP/Servlet에서 서비스를 실행하는 것과 비슷합니다. JSP/Servlet에서 서비스를 실행하면 문서 객체가 ResourceResolverHelper 개체에서 ResourceResolver 개체의 인스턴스를 자동으로 검색합니다. 이 자동 메커니즘은 워크플로우에서 코드를 호출할 때 작동하지 않습니다.
+워크플로우에서 바르코드된 Forms 서비스 실행은 JSP/Servlet에서 서비스를 실행하는 것과 비슷합니다. JSP/Servlet에서 서비스를 실행하면 문서 객체가 ResourceResolverHelper 개체에서 ResourceResolver 개체의 인스턴스를 자동으로 검색합니다. 이 자동 메커니즘은 워크플로우에서 코드를 호출할 때 작동하지 않습니다.
 
 워크플로의 경우 ResourceResolver 개체의 인스턴스를 Document 클래스 생성자에 명시적으로 전달합니다. 그런 다음 Document 개체는 제공된 ResourceResolver 개체를 사용하여 보관소에서 콘텐츠를 읽습니다.
 
 다음 샘플 워크플로우 프로세스는 문서에서 바코드를 디코딩하고 결과를 디스크에 저장합니다. 코드는 ECMAScript로 작성되며 문서는 워크플로우 페이로드로 전달됩니다.
 
-```
+```javascript
 /*
  * Imports 
  */
