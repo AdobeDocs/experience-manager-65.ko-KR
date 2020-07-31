@@ -1,6 +1,6 @@
 ---
-title: AEM Forms에서 단일 사인온 활성화
-seo-title: AEM Forms에서 단일 사인온 활성화
+title: AEM 양식에서 SSO(Single Sign-On) 사용
+seo-title: AEM 양식에서 SSO(Single Sign-On) 사용
 description: HTTP 헤더 및 SPNEGO를 사용하여 SSO(Single Sign-On)를 활성화하는 방법을 알아봅니다.
 seo-description: HTTP 헤더 및 SPNEGO를 사용하여 SSO(Single Sign-On)를 활성화하는 방법을 알아봅니다.
 uuid: 2bc08b4f-dcbe-4a16-9025-32fc14605e13
@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 0%
@@ -18,17 +18,17 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms에서 단일 사인온 활성화{#enabling-single-sign-on-in-aem-forms}
+# AEM 양식에서 SSO(Single Sign-On) 사용{#enabling-single-sign-on-in-aem-forms}
 
 AEM 양식은 SSO(Single Sign-On)를 활성화하는 두 가지 방법, 즉 HTTP 헤더와 SPNEGO를 제공합니다.
 
-SSO가 구현되면 AEM Forms 사용자 로그인 페이지는 필요하지 않으며 사용자가 회사 포털을 통해 이미 인증된 경우 표시되지 않습니다.
+SSO가 구현되면 AEM Forms 사용자 로그인 페이지는 필요하지 않으며 사용자가 회사 포털을 통해 이미 인증된 경우 나타나지 않습니다.
 
 AEM 양식에서 이러한 방법 중 하나를 사용하여 사용자를 인증할 수 없는 경우 사용자가 로그인 페이지로 리디렉션됩니다.
 
 ## HTTP 헤더를 사용하여 SSO 활성화 {#enable-sso-using-http-headers}
 
-포털 구성 페이지를 사용하여 응용 프로그램과 HTTP 헤더를 통해 ID를 전달하는 것을 지원하는 응용 프로그램 간에 SSO(Single Sign-On)를 활성화할 수 있습니다. SSO가 구현되면 AEM Forms 사용자 로그인 페이지는 필요하지 않으며 사용자가 회사 포털을 통해 이미 인증된 경우 표시되지 않습니다.
+포털 구성 페이지를 사용하여 응용 프로그램과 HTTP 헤더를 통해 ID를 전달하는 것을 지원하는 응용 프로그램 간에 SSO(Single Sign-On)를 활성화할 수 있습니다. SSO가 구현되면 AEM Forms 사용자 로그인 페이지는 필요하지 않으며 사용자가 회사 포털을 통해 이미 인증된 경우 나타나지 않습니다.
 
 SPNEGO를 사용하여 SSO를 활성화할 수도 있습니다. (SPNEGO [를 사용하여 SSO 활성화를 참조하십시오](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
@@ -65,7 +65,7 @@ HTTP 헤더를 사용하여 SSO를 활성화할 수도 있습니다. (HTTP 헤�
 >JEE의 AEM Forms은 여러 하위 도메인 환경에서 Kerberos/SPNEGO를 사용하여 SSO 구성을 지원하지 않습니다.
 
 1. SSO를 활성화하는 데 사용할 도메인을 결정합니다. AEM Forms 서버와 사용자는 동일한 Windows 도메인 또는 신뢰할 수 있는 도메인에 속해 있어야 합니다.
-1. Active Directory에서 AEM Forms 서버를 나타내는 사용자를 만듭니다. (사용자 [계정 만들기를 참조하십시오](enabling-single-sign-on-aem.md#create-a-user-account).) SPNEGO를 사용하도록 두 개 이상의 도메인을 구성하는 경우 이러한 각 사용자에 대한 암호가 달라야 합니다. 암호가 다를 경우 SPNEGO SSO가 작동하지 않습니다.
+1. Active Directory에서 AEM 양식 서버를 나타내는 사용자를 만듭니다. (사용자 [계정 만들기를 참조하십시오](enabling-single-sign-on-aem.md#create-a-user-account).) SPNEGO를 사용하도록 두 개 이상의 도메인을 구성하는 경우 이러한 각 사용자에 대한 암호가 달라야 합니다. 암호가 다를 경우 SPNEGO SSO가 작동하지 않습니다.
 1. 서비스 주체 이름을 매핑합니다. SPN(서비스 사용자 이름 [매핑)을 참조하십시오](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).
 1. 도메인 컨트롤러를 구성합니다. (Kerberos [무결성 검사 실패 방지를 참조하십시오](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. 도메인 추가 또는 [기존 도메인](/help/forms/using/admin-help/adding-domains.md#adding-domains) 편집 [및 변환에 설명된 대로 엔터프라이즈 도메인을 추가하거나 편집합니다](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). 기업 도메인을 생성하거나 편집할 때 다음 작업을 수행합니다.
@@ -86,7 +86,7 @@ HTTP 헤더를 사용하여 SSO를 활성화할 수도 있습니다. (HTTP 헤�
 
 ### 사용자 계정 만들기 {#create-a-user-account}
 
-1. SPNEGO에서 도메인 컨트롤러의 Active Directory에 사용자로 서비스를 등록하여 AEM 양식을 표시합니다. 도메인 컨트롤러에서 시작 메뉴 > 관리 도구 > Active Directory 사용자 및 컴퓨터로 이동합니다. 관리 도구가 시작 메뉴에 없으면 Campaign 컨트롤 패널을 사용하십시오.
+1. SPNEGO에서 도메인 컨트롤러의 Active Directory 사용자로 서비스를 등록하여 AEM 양식을 표시합니다. 도메인 컨트롤러에서 시작 메뉴 > 관리 도구 > Active Directory 사용자 및 컴퓨터로 이동합니다. 관리 도구가 시작 메뉴에 없으면 Campaign 컨트롤 패널을 사용하십시오.
 1. 사용자 목록을 표시하려면 사용자 폴더를 클릭합니다.
 1. 사용자 폴더를 마우스 오른쪽 단추로 클릭하고 새로 만들기 > 사용자를 선택합니다.
 1. 이름/성 및 사용자 로그온 이름을 입력한 다음 다음을 클릭합니다. 예를 들어 다음 값을 설정합니다.
@@ -121,14 +121,14 @@ HTTP 헤더를 사용하여 SSO를 활성화할 수도 있습니다. (HTTP 헤�
 
 이 오류가 발생하는 경우:
 
-```java
+```shell
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
 사용자를 spnegodemo@um.lc.com으로 지정합니다.
 
-```java
+```shell
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 
@@ -153,7 +153,7 @@ https://lcserver:8080과 같이 컴퓨터 이름을 사용하여 서버에 액�
 1. 로컬 인트라넷 아이콘을 클릭한 다음 사이트를 클릭합니다.
 1. 고급을 클릭하고 영역에 이 웹 사이트 추가 상자에 양식 서버의 URL을 입력합니다. 예를 들어 `https://lcserver.um.lc.com`
 1. 모든 대화 상자가 닫힐 때까지 확인을 클릭합니다.
-1. AEM Forms 서버의 URL에 액세스하여 구성을 테스트합니다. 예를 들어 브라우저 URL 상자에 `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. AEM 양식 서버의 URL에 액세스하여 구성을 테스트합니다. 예를 들어 브라우저 URL 상자에 `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Mozilla Firefox 구성**
 
