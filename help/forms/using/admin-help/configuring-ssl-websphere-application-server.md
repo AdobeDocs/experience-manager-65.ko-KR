@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%
@@ -127,7 +127,7 @@ ikeyman 유틸리티 또는 관리 콘솔을 사용하여 Truststore 및 keystor
 
    이제 사용자 정의 SSL 설정 및 인증서에 대해 프로필이 실행됩니다.
 
-## AEM Forms Native 지원 활성화 {#enabling-support-for-aem-forms-natives}
+## AEM 양식 기본 지원 활성화 {#enabling-support-for-aem-forms-natives}
 
 1. WebSphere 관리 콘솔에서 **보안 > 전역 보안을 선택합니다**.
 1. 인증 섹션에서 **RMI/IIOP 보안을** 확장하고 **CSIv2 인바운드 통신을 클릭합니다**.
@@ -178,7 +178,7 @@ https로 시작하는 URL을 변환하려면 해당 URL에 대한 서명자 인�
 1. \crx-repository\launchpad\sling.properties `[aem-forms_root]`파일을 열어 편집할 수 있습니다.
 1. 속성을 `sling.bootdelegation.ibm` 찾아 해당 값 필드 `com.ibm.websphere.ssl.*`에 추가합니다. 업데이트된 필드는 다음과 같습니다.
 
-   ```java
+   ```shell
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
