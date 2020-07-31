@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
+source-git-commit: a842aa85652e5c04d5825a3e88aa6b64ef8a0088
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 2%
@@ -34,7 +34,7 @@ AEM Forms은 적응형 양식의 테스트를 자동화하는 테스트 프레�
 
 테스트 세트에는 테스트 케이스 컬렉션이 있습니다. 여러 테스트 세트를 사용할 수 있습니다. 양식마다 별도의 테스트 세트가 있는 것이 좋습니다. 테스트 세트를 만들려면:
 
-1. 관리자로 AEM Forms 작성자 인스턴스에 로그인합니다. CRXDE Lite를 엽니다. AEM 로고 > **도구** > **일반** > **CRXDE Lite** 를 [누르거나 브라우저에서 https://localhost:4502/crx/de/index.jspURL을](https://localhost:4502/crx/de/index.jsp) 열어 CRXDE Lite를 열 수 있습니다.
+1. 관리자로 AEM Forms 작성자 인스턴스에 로그인합니다. CRXDE Lite 열기 AEM 로고 > **도구** > 일반 **** > **CRXDE Lite** 를 [누르거나 브라우저에서 https://localhost:4502/crx/de/index.jspURL을](https://localhost:4502/crx/de/index.jsp) 열어 CRXDE Lite을 열 수 있습니다.
 
 1. CRXDE Lite의 /etc/clientlibs로 이동합니다. /etc/clientlibs 하위 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기** > 노드 **만들기를 클릭합니다.** 이름 필드에서 **WeRetailFormTestCases를 입력합니다**. cq:ClientLibraryFolder로 **유형을** 선택하고 확인을 **클릭합니다**. 노드를 만듭니다. WeRetailFormTestCases 대신 임의의 이름을 사용할 수 있습니다.
 1. WeRetailFormTestCases 노드에 다음 속성을 추가하고 모두 **저장을 탭합니다**.
@@ -177,7 +177,7 @@ AEM Forms은 적응형 양식의 테스트를 자동화하는 테스트 프레�
 
 1. WeRetailFormTests 노드 `prefillTest.js`에서 파일을 **[!UICONTROL 만듭니다]** . 파일에 아래 코드를 추가합니다. 이 코드는 테스트 케이스를 만듭니다. 테스트 케이스는 양식의 모든 필드를 미리 작성하고 일부 필드의 유효성을 검사하여 올바른 값이 입력되었는지 확인합니다.
 
-   ```
+   ```javascript
    (function (window, hobs) {
        'use strict';
    
