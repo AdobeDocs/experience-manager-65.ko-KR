@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '10273'
 ht-degree: 0%
@@ -43,7 +43,7 @@ IPv6를 사용하는 경우 기본 URL을 컴퓨터 이름 또는 DNS 이름으�
 
 **익명 사용자 액세스 허용:** 익명 사용자가 정책으로 보호된 문서를 열 수 있도록 허용하는 공유 및 개인 정책을 만들 수 있도록 하려면 이 옵션을 선택합니다. 계정이 없는 사용자는 문서에 액세스할 수 있지만 문서 보안에 로그인하거나 정책으로 보호된 다른 문서를 사용할 수는 없습니다.
 
-**버전 7 클라이언트에 대한 액세스 비활성화:** 사용자가 Acrobat 또는 Reader 7.0을 사용하여 서버에 연결할 수 있는지 여부를 지정합니다. 이 옵션을 선택하면 사용자는 Acrobat 또는 Reader 8.0 이상을 사용하여 PDF 문서에 대한 문서 보안 작업을 완료해야 합니다. 정책으로 보호된 문서를 열 때 Acrobat 또는 Reader 8.0 이상이 인증 모드로 실행되어야 하는 정책이 있으면 Acrobat 또는 Reader 7에 대한 액세스를 비활성화해야 합니다. 자세한 내용은 사용자 및 그룹에 대한 문서 권한 지정을 참조하십시오.
+**버전 7 클라이언트에 대한 액세스 비활성화:** 사용자가 Acrobat 또는 Reader 7.0을 사용하여 서버에 연결할 수 있는지 여부를 지정합니다. 이 옵션을 선택하면 사용자는 PDF 문서에서 문서 보안 작업을 완료하려면 Acrobat 또는 Reader 8.0 이상을 사용해야 합니다. 정책으로 보호된 문서를 열 때 Acrobat 또는 Reader 8.0 이상이 인증 모드로 실행되어야 한다고 하는 정책이 있으면 Acrobat 또는 Reader 7에 대한 액세스를 비활성화해야 합니다. 자세한 내용은 사용자 및 그룹에 대한 문서 권한 지정을 참조하십시오.
 
 **문서당** 오프라인 액세스 허용 문서당 오프라인 액세스를 지정하려면 이 옵션을 선택합니다. 이 설정이 활성화되면 사용자는 사용자가 온라인으로 최소한 한 번 이상 연 문서에만 오프라인으로 액세스할 수 있습니다.
 
@@ -55,9 +55,9 @@ IPv6를 사용하는 경우 기본 URL을 컴퓨터 이름 또는 DNS 이름으�
 
 **확장 인증** 허용 확장 인증을 활성화한 다음 확장 인증 랜딩 URL을 입력하십시오.
 
-이 옵션을 선택하면 클라이언트 응용 프로그램이 확장 인증을 사용할 수 있습니다. 확장 인증은 사용자 지정된 인증 프로세스와 AEM Forms 서버에 구성된 다양한 인증 옵션을 제공합니다. 예를 들어, 사용자는 이제 Acrobat 및 Reader 클라이언트에서 AEM 양식 사용자 이름/암호 대신 SAML 기반 인증을 경험할 수 있습니다. 기본적으로 랜딩 URL에는 서버 이름으로 *localhost* 가 포함됩니다. 서버 이름을 정규화된 호스트 이름으로 바꿉니다. 확장 인증이 아직 활성화되지 않은 경우 랜딩 URL의 호스트 이름은 기본 URL에서 자동으로 채워집니다. 확장 [인증 공급자 추가를 참조하십시오](configuring-client-server-options.md#add-the-extended-authentication-provider).
+이 옵션을 선택하면 클라이언트 응용 프로그램이 확장 인증을 사용할 수 있습니다. 확장 인증은 AEM Forms 서버에 구성된 사용자 정의 인증 프로세스와 다양한 인증 옵션을 제공합니다. 예를 들어, 사용자는 이제 Acrobat 및 Reader 클라이언트에서 AEM 양식 사용자 이름/암호 대신 SAML 기반 인증을 경험할 수 있습니다. 기본적으로 랜딩 URL에는 서버 이름으로 *localhost* 가 포함됩니다. 서버 이름을 정규화된 호스트 이름으로 바꿉니다. 확장 인증이 아직 활성화되지 않은 경우 랜딩 URL의 호스트 이름은 기본 URL에서 자동으로 채워집니다. 확장 [인증 공급자 추가를 참조하십시오](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
-***참고&#x200B;**: 확장 인증은 Adobe Acrobat 릴리스 11.0.6 이상이 설치된 Apple Mac OS X에서 지원됩니다.*
+***참고&#x200B;**: 확장된 인증은 Adobe Acrobat 릴리스 11.0.6 이상이 설치된 Apple Mac OS X에서 지원됩니다.*
 
 **확장 인증을 위한 기본 HTML 컨트롤 너비** 사용자 자격 증명을 입력하기 위해 Acrobat에서 열리는 확장 인증 대화 상자의 너비를 지정합니다.
 
@@ -73,7 +73,7 @@ IPv6를 사용하는 경우 기본 URL을 컴퓨터 이름 또는 DNS 이름으�
 
 ### 관리자에게 문서 보안 역할 할당 {#assigning-document-security-roles-to-administrators}
 
-AEM Forms 환경에는 사용자 및 그룹을 만들 수 있는 적절한 권한이 있는 관리자 한 명 이상이 포함되어 있습니다. 조직에서 문서 보안을 사용 중인 경우 초대된 사용자와 로컬 사용자를 관리할 권한이 하나 이상 할당되어야 합니다.
+AEM 양식 환경에는 사용자 및 그룹을 만들 수 있는 적절한 권한이 있는 하나 이상의 관리자 사용자가 포함되어 있습니다. 조직에서 문서 보안을 사용 중인 경우 초대된 사용자와 로컬 사용자를 관리할 권한이 하나 이상 할당되어야 합니다.
 
 관리 콘솔에 액세스하려면 관리 콘솔 사용자 역할도 있어야 합니다. 역할 [만들기 및 구성을 참조하십시오](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).
 
@@ -83,7 +83,7 @@ AEM Forms 환경에는 사용자 및 그룹을 만들 수 있는 적절한 권�
 
 표시되는 사용자 및 그룹 목록은 정책 집합 코디네이터에 표시되며, 정책에 추가할 사용자 또는 그룹을 선택할 때 최종 사용자가 검색할 수 있는 도메인을 제한하는 데 사용됩니다. 이 작업을 수행하지 않으면 정책 집합 코디네이터는 정책에 추가할 사용자 또는 그룹을 찾지 못합니다. 지정된 정책 집합에 대해 두 개 이상의 정책 집합 코디네이터가 있을 수 있습니다.
 
-1. 문서 보안을 사용하여 AEM 양식 환경을 설치 및 구성한 후 사용자 관리에서 해당 도메인을 모두 설정합니다. <!-- Fix broken link (See Setting up and managing domains) -->
+1. 문서 보안을 사용하여 AEM 양식 환경을 설치 및 구성한 후 사용자 관리에서 모든 적절한 도메인을 설정합니다. <!-- Fix broken link (See Setting up and managing domains) -->
 
    ***참고&#x200B;**: 정책을 만들려면 먼저 도메인을 만들어야 합니다.*
 
@@ -95,11 +95,11 @@ AEM Forms 환경에는 사용자 및 그룹을 만들 수 있는 적절한 권�
 
 ## 확장 인증 공급자 추가 {#add-the-extended-authentication-provider}
 
-AEM Forms는 환경에 맞게 사용자 정의할 수 있는 샘플 구성을 제공합니다. 다음 단계를 수행합니다.
+AEM 양식은 사용자 환경에 맞게 사용자 정의할 수 있는 샘플 구성을 제공합니다. 다음 단계를 수행합니다.
 
 >[!NOTE]
 >
->확장 인증은 Adobe Acrobat 릴리스 11.0.6 이상이 설치된 Apple Mac OS X에서 지원됩니다.
+>확장된 인증은 Adobe Acrobat 릴리스 11.0.6 이상이 설치된 Apple Mac OS X에서 지원됩니다.
 
 1. 샘플 WAR 파일을 배포합니다. 응용 프로그램 서버에 적합한 설치 가이드를 참조하십시오.
 1. 양식 서버가 기본 URL로 IP 주소 대신 정규화된 이름을 가지고 있으며 HTTPS URL인지 확인합니다. 서버 [구성 설정을 참조하십시오](configuring-client-server-options.md#server-configuration-settings).
@@ -108,11 +108,11 @@ AEM Forms는 환경에 맞게 사용자 정의할 수 있는 샘플 구성을 �
 
 ### 확장 인증을 위한 SSO 리디렉션 URL 추가 {#add-sso-redirect-urls-for-extended-authentication}
 
-확장된 인증을 사용하는 사용자는 Acrobat XI 또는 Reader XI에서 정책으로 보호된 문서를 열면 인증을 위한 대화 상자가 표시됩니다. 이 대화 상자는 문서 보안 서버 설정에서 확장 인증 랜딩 URL로 지정한 HTML 페이지를 로드합니다. 서버 [구성 설정을 참조하십시오](configuring-client-server-options.md#server-configuration-settings).
+확장된 인증이 활성화되면 사용자가 Acrobat XI 또는 Reader XI에서 정책으로 보호된 문서를 열면 인증 대화 상자가 표시됩니다. 이 대화 상자는 문서 보안 서버 설정에서 확장 인증 랜딩 URL로 지정한 HTML 페이지를 로드합니다. 서버 [구성 설정을 참조하십시오](configuring-client-server-options.md#server-configuration-settings).
 
 >[!NOTE]
 >
->확장 인증은 Adobe Acrobat 릴리스 11.0.6 이상이 설치된 Apple Mac OS X에서 지원됩니다.
+>확장된 인증은 Adobe Acrobat 릴리스 11.0.6 이상이 설치된 Apple Mac OS X에서 지원됩니다.
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 구성 파일 가져오기 및 내보내기를 클릭합니다.
 1. 내보내기를 클릭하고 구성 파일을 디스크에 저장합니다.
@@ -196,7 +196,7 @@ document security는 인터넷 또는 네트워크에 연결하지 않고도 오
 * 정책으로 보호된 문서 이벤트(예: 권한이 있거나 권한이 없는 사용자가 문서를 열려고 함)
 * 정책 만들기, 변경, 삭제, 활성화, 비활성화 등의 정책 이벤트
 * 외부 사용자 초대 및 등록, 활성화 및 비활성화된 사용자 계정, 사용자 암호 변경 및 프로필 업데이트와 같은 사용자 이벤트
-* 버전 불일치, 사용할 수 없는 디렉토리 서버 및 인증 공급자, 서버 구성 변경 등과 같은 AEM 양식 이벤트
+* AEM forms 이벤트(예: 버전 불일치와 같은 경우), 사용할 수 없는 디렉토리 서버 및 인증 공급자, 서버 구성 변경
 
 ### 이벤트 감사 활성화 또는 비활성화 {#enable-or-disable-event-auditing}
 
@@ -239,7 +239,7 @@ document security는 인터넷 또는 네트워크에 연결하지 않고도 오
 
 ### 사용자 지정 감사 이벤트 유형 가져오기 {#import-a-custom-audit-event-type}
 
-특정 파일 유형에 해당하는 이벤트와 같은 추가 이벤트 감사를 지원하는 문서 보안 지원 응용 프로그램을 사용하는 경우 Adobe 파트너는 문서 보안으로 가져올 수 있는 사용자 지정 감사 이벤트를 제공할 수 있습니다. 이 기능은 Adobe 파트너가 사용자 지정 이벤트 유형을 제공한 경우에만 사용하십시오.
+특정 파일 유형에 해당하는 이벤트와 같은 추가 이벤트 감사를 지원하는 문서 보안 지원 응용 프로그램을 사용하는 경우 Adobe 파트너가 문서 보안으로 가져올 수 있는 사용자 정의 감사 이벤트를 제공할 수 있습니다. Adobe 파트너가 사용자 지정 이벤트 유형을 제공한 경우에만 이 기능을 사용하십시오.
 
 1. 관리 콘솔에서 서비스 > Document Security > 구성 > 이벤트 관리를 클릭합니다.
 1. 찾아보기를 클릭하여 가져올 XML 파일로 이동하고 가져오기를 클릭합니다.
@@ -309,9 +309,9 @@ document security는 인터넷 또는 네트워크에 연결하지 않고도 오
 
 **문서의 정책 전환:** 사용자나 관리자는 문서에 첨부된 정책을 전환합니다.
 
-**다른 이름으로 문서 게시:** documentName 및 라이센스가 기존 문서와 동일한 새 문서가 서버에 등록되어 있으며 해당 문서에는 부모-자식 관계가 없습니다. 이 이벤트는 AEM Forms SDK를 사용하여 트리거할 수 있습니다.
+**다른 이름으로 문서 게시:** documentName 및 라이센스가 기존 문서와 동일한 새 문서가 서버에 등록되어 있으며 해당 문서에는 부모-자식 관계가 없습니다. 이 이벤트는 AEM forms SDK를 사용하여 트리거할 수 있습니다.
 
-**문서 반복:** documentName 및 라이센스가 기존 문서와 동일한 새 문서가 서버에 등록되고 문서는 부모-자식 관계를 갖습니다. 이 이벤트는 AEM Forms SDK를 사용하여 트리거할 수 있습니다.
+**문서 반복:** documentName 및 라이센스가 기존 문서와 동일한 새 문서가 서버에 등록되고 문서는 부모-자식 관계를 갖습니다. 이 이벤트는 AEM forms SDK를 사용하여 트리거할 수 있습니다.
 
 **정책 이벤트**
 
@@ -432,7 +432,7 @@ document security는 인터넷 또는 네트워크에 연결하지 않고도 오
 
 정책에서 지정하는 워터마크는 수신자가 문서를 보거나 인쇄할 때 정책으로 보호된 문서에 나타납니다. 영구 워터마크와 달리 동적 워터마크는 문서에 저장되지 않습니다. 이는 보기 응용 프로그램이 특정 사용자의 ID를 표시하도록 인트라넷 환경에서 문서를 배포할 때 필요한 유연성을 제공하는 것입니다. 또한 문서에 여러 사용자가 있는 경우 동적 워터마크를 사용하면 서로 다른 워터마크가 있는 여러 버전 대신 하나의 문서를 사용할 수 있습니다. 나타나는 워터마크는 현재 사용자의 ID를 반영합니다.
 
-동적 워터마크는 Acrobat에서 사용자가 문서에 직접 추가할 수 있는 워터마크와 다릅니다. 정책으로 보호된 문서에 두 개의 워터마크를 포함할 수 있습니다.
+동적 워터마크는 사용자가 Acrobat에서 문서에 직접 추가할 수 있는 워터마크와 다릅니다. 정책으로 보호된 문서에 두 개의 워터마크를 포함할 수 있습니다.
 
 ### 워터마크를 만들 때의 고려 사항 {#considerations-when-creating-watermarks}
 
@@ -452,24 +452,24 @@ document security는 인터넷 또는 네트워크에 연결하지 않고도 오
 * 워터마크 요소로 사용할 최대 PDF 파일 크기를 변경할 수 있습니다. 그러나 워터마크로 사용되는 큰 PDF 문서는 이러한 워터마크와 함께 적용된 문서의 오프라인 동기화 도중 성능이 저하됩니다. 워터마크 [구성 매개 변수 변경을 참조하십시오](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
 * 선택한 PDF의 첫 페이지만 워터마크로 사용됩니다. 첫 번째 페이지 자체에서 워터마크로 표시할 정보를 사용할 수 있는지 확인합니다.
 * PDF 문서의 크기 조정을 지정할 수 있지만 머리글, 바닥글 또는 여백에 워터마크로 사용하려는 경우 PDF의 페이지 크기와 레이아웃을 고려하십시오.
-* 글꼴 이름을 지정할 때 이름을 올바르게 입력합니다. AEM Forms는 문서가 열려 있는 클라이언트 시스템에 없는 경우 지정한 글꼴을 대체합니다.
+* 글꼴 이름을 지정할 때 이름을 올바르게 입력합니다. AEM 양식은 문서가 열려 있는 클라이언트 시스템에 없는 경우 지정한 글꼴을 대체합니다.
 * 워터마크 컨텐츠로 텍스트를 선택한 경우, 크기가 다른 페이지에 대해 크기 조정 옵션을 페이지에 맞추면 작동하지 않습니다.
 * 워터마크 요소의 위치를 지정할 때 두 개 이상의 요소에 같은 위치가 있는지 확인합니다. 두 개의 워터마크 요소에 가운데 같은 위치가 있으면 문서에서 겹치는 것처럼 표시되고 워터마크에 추가된 순서대로 겹쳐집니다.
-* 글꼴 크기 및 문자를 지정할 때는 텍스트 길이가 페이지 내에서 완전히 표시되는지 확인하십시오. 텍스트 컨텐츠는 새 줄로 롤오버되므로 여백에 표시하려는 워터마크 컨텐츠가 페이지의 컨텐츠 영역에 겹칠 수 있습니다. 그러나 Acrobat 9에서 문서를 열면 한 줄의 텍스트가 잘립니다.
+* 글꼴 크기 및 문자를 지정할 때는 텍스트 길이가 페이지 내에서 완전히 표시되는지 확인하십시오. 텍스트 컨텐츠는 새 줄로 롤오버되므로 여백에 표시하려는 워터마크 컨텐츠가 페이지의 컨텐츠 영역에 겹칠 수 있습니다. 그러나 문서를 Acrobat 9에서 열면 단일 행 이상의 텍스트가 잘립니다.
 
 ### 동적 워터마크 제한 사항 {#limitations-of-dynamic-watermarks}
 
-일부 클라이언트 응용 프로그램은 동적 워터마크를 지원하지 않을 수도 있습니다. 해당 Acrobat Reader DC 확장 도움말을 참조하십시오. 또한 동적 워터마크를 지원하는 Acrobat 버전은 다음과 같습니다.
+일부 클라이언트 응용 프로그램은 동적 워터마크를 지원하지 않을 수도 있습니다. 해당 Acrobat Reader DC 확장 도움말을 참조하십시오. 또한 동적 워터마크를 지원하는 Acrobat 버전에 대해 다음 사항을 염두에 두십시오.
 
 * 암호로 보호된 PDF 문서는 워터마크 요소로 사용할 수 없습니다.
-* Acrobat 및 Adobe Reader 10 이전 버전은 다음과 같은 워터마크 기능을 지원하지 않습니다.
+* 10 이전 Acrobat 및 Adobe Reader 버전은 다음과 같은 워터마크 기능을 지원하지 않습니다.
 
    * PDF 워터마크
    * 워터마크의 여러 요소(텍스트/PDF)
    * 페이지 범위 또는 표시 옵션과 같은 고급 옵션
-   * 지정된 글꼴, 글꼴 이름 및 색상과 같은 텍스트 서식 옵션 그러나 이전 버전의 Acrobat 및 Reader에서는 기본 글꼴 및 색상으로 텍스트 컨텐츠를 표시합니다.
+   * 지정된 글꼴, 글꼴 이름 및 색상과 같은 텍스트 서식 옵션 그러나 이전 버전의 Acrobat 및 Reader에서는 텍스트 컨텐츠가 기본 글꼴과 색상으로 표시됩니다.
 
-* Acrobat 9.0 및 이전 버전: Acrobat 9.0 및 이전 버전은 동적 워터마크의 정책 이름을 지원하지 않습니다. Acrobat 9.0에서 정책 이름 및 기타 동적 데이터가 포함된 동적 워터마크가 있는 정책으로 보호된 문서를 열면 정책 이름 없이 워터마크가 표시됩니다. 동적 워터마크에 정책 이름만 포함된 경우 Acrobat에 오류 메시지가 표시됩니다
+* Acrobat 9.0 및 이전 버전: Acrobat 9.0 및 이전 버전은 동적 워터마크의 정책 이름을 지원하지 않습니다. Acrobat 9.0에서 정책 이름과 기타 동적 데이터가 포함된 동적 워터마크가 있는 정책으로 보호된 문서를 열면 정책 이름 없이 워터마크가 표시됩니다. 동적 워터마크에 정책 이름만 포함된 경우, Acrobat에 오류 메시지가 표시됩니다
 
 ### 동적 워터마크 템플릿 추가 {#add-a-dynamic-watermark-template}
 
@@ -553,7 +553,7 @@ document security는 인터넷 또는 네트워크에 연결하지 않고도 오
 
 등록 이메일에는 등록 페이지에 대한 링크 및 등록 방법에 대한 정보가 포함되어 있습니다. 초대받은 사용자가 등록한 후 정품 인증 페이지에 대한 링크가 포함된 정품 인증 이메일이 문서 보안 문제를 해결합니다. 활성화하면 계정을 비활성화하거나 삭제할 때까지 유효한 상태로 유지됩니다.
 
-기본 제공 등록을 활성화하면 SMTP 서버, 등록 이메일 세부 사항, 액세스 기능 및 암호 이메일 정보를 한 번만 재설정합니다. 기본 제공 등록을 활성화하기 전에 사용자 관리에서 로컬 도메인을 생성한 후 조직의 해당 사용자 및 그룹에 &quot;문서 보안 초대 사용자&quot; 역할을 할당했는지 확인하십시오. 로컬 도메인 [추가](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) 및 역할 [만들기 및 구성을 참조하십시오](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles). 기본 제공 등록을 사용하지 않는 경우 AEM Forms SDK를 사용하여 만든 사용자 등록 시스템이 있어야 합니다. AEM 양식을 사용한 [프로그래밍의 &quot;AEM 양식에 대한 SPI 개발&quot;에 대한 도움말을 참조하십시오](https://www.adobe.com/go/learn-aemforms-programming-63). 기본 제공 등록 옵션을 사용하지 않는 경우 활성화 이메일과 클라이언트 로그인 화면에서 새 암호 또는 기타 정보를 위해 관리자에게 연락하는 방법에 대한 메시지를 구성하는 것이 좋습니다.
+기본 제공 등록을 활성화하면 SMTP 서버, 등록 이메일 세부 사항, 액세스 기능 및 암호 이메일 정보를 한 번만 재설정합니다. 기본 제공 등록을 활성화하기 전에 사용자 관리에서 로컬 도메인을 생성한 후 조직의 해당 사용자 및 그룹에 &quot;문서 보안 초대 사용자&quot; 역할을 할당했는지 확인하십시오. 로컬 도메인 [추가](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) 및 역할 [만들기 및 구성을 참조하십시오](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles). 기본 제공 등록을 사용하지 않는 경우 AEM forms SDK를 사용하여 만든 사용자 등록 시스템이 있어야 합니다. AEM 양식을 사용한 [프로그래밍의 &quot;AEM 양식에 대한 SPI 개발&quot;에 대한 도움말을 참조하십시오](https://www.adobe.com/go/learn-aemforms-programming-63). 기본 제공 등록 옵션을 사용하지 않는 경우 활성화 이메일과 클라이언트 로그인 화면에서 새 암호 또는 기타 정보를 위해 관리자에게 연락하는 방법에 대한 메시지를 구성하는 것이 좋습니다.
 
 **초대된 사용자 등록 활성화 및 구성**
 
@@ -781,7 +781,7 @@ Document Security를 사용하면 보호된 문서가 문서 보안 서버에 �
 
 * Adobe Acrobat 9.0 Professional/Acrobat 9.0 Standard 이상
 * Adobe Reader 9.0 이상
-* Microsoft Office 8.2 이상용 Acrobat Reader DC 익스텐션
+* Microsoft Office 8.2 이상용 Acrobat Reader DC 확장
 
 클라이언트 응용 프로그램은 문서 보안 C++ Client SDK의 클라이언트 API를 사용하여 문서 보안으로부터 서비스를 요청합니다. 클라이언트 API 요청에는 플랫폼 및 SDK 버전 정보(클라이언트 API로 미리 컴파일됨)와 클라이언트 애플리케이션에서 얻은 제품 정보가 포함됩니다.
 
@@ -795,11 +795,11 @@ Document Security를 사용하면 보호된 문서가 문서 보안 서버에 �
 
 해당 정보가 없으면 클라이언트 응용 프로그램은 해당 필드를 비워둡니다.
 
-Acrobat, Adobe Reader 및 Microsoft Office용 Acrobat Reader DC 익스텐션을 비롯한 문서 보안 서비스를 요청할 때 일부 Adobe 애플리케이션에는 제품 정보가 포함되어 있습니다.
+Microsoft Office용 Acrobat, Adobe Reader 및 Acrobat Reader DC 익스텐션을 비롯한 여러 Adobe 응용 프로그램에는 문서 보안 서비스를 요청할 때 제품 정보가 포함됩니다.
 
-**Acrobat 및 Adobe Reader**
+**Acrobat과 Adobe Reader**
 
-Acrobat 또는 Adobe Reader에서 문서 보안으로부터 서비스를 요청하면 다음 제품 정보를 제공합니다.
+Acrobat 또는 Adobe Reader이 문서 보안으로부터 서비스를 요청할 때 다음 제품 정보를 제공합니다.
 
 * **통합자:** Adobe Systems, Inc.
 * **통합자 버전:** 1.0
@@ -807,13 +807,13 @@ Acrobat 또는 Adobe Reader에서 문서 보안으로부터 서비스를 요청�
 * **응용 프로그램 이름:** Acrobat
 * **애플리케이션 버전:** 9.0.0
 
-**Microsoft Office용 Acrobat Reader DC 익스텐션**
+**Microsoft Office용 Acrobat Reader DC 확장**
 
 Microsoft Office용 Acrobat Reader DC 익스텐션은 Microsoft Office 제품 Microsoft Word, Microsoft Excel 및 Microsoft PowerPoint와 함께 사용되는 플러그인입니다. 서비스를 요청할 때 다음 정보를 제공합니다.
 
 * **통합자:** Adobe Systems Incorporated
 * **통합자 버전:** 8.2
-* **애플리케이션 제품군:** Microsoft Office용 Acrobat Reader DC 익스텐션
+* **애플리케이션 제품군:** Microsoft Office용 Acrobat Reader DC 확장
 * **응용 프로그램 이름:** Microsoft Word, Microsoft Excel 또는 Microsoft PowerPoint
 * **애플리케이션 버전:** 2003년 또는 2007년
 
@@ -822,7 +822,7 @@ Microsoft Office용 Acrobat Reader DC 익스텐션은 Microsoft Office 제품 Mi
 1. 문서 보안 구성 파일을 내보냅니다. 자세한 내용은 [문서 보안 구성 파일](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)수동 편집을 참조하십시오.
 1. 편집기에서 구성 파일을 열고 노드를 `PolicyServer` 찾습니다. 노드가 없는 경우 노드 `ClientVersionRules` 를 `PolicyServer` 노드의 직계 자식으로 추가합니다.
 
-   ```java
+   ```xml
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -879,7 +879,7 @@ Microsoft Office용 Acrobat Reader DC 익스텐션은 Microsoft Office 제품 Mi
 
 이 예에서 모든 Windows 클라이언트는 액세스가 거부됩니다.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -897,7 +897,7 @@ Microsoft Office용 Acrobat Reader DC 익스텐션은 Microsoft Office 제품 Mi
 
 이 예에서 내 응용 프로그램 버전 3.0 및 내 기타 응용 프로그램 버전 2.0은 액세스가 거부됩니다. 거부 이유에 관계없이 동일한 거부 정보 URL이 사용됩니다.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -920,9 +920,9 @@ Microsoft Office용 Acrobat Reader DC 익스텐션은 Microsoft Office 제품 Mi
  </node>
 ```
 
-이 예에서는 Microsoft Office용 Acrobat Reader DC 익스텐션의 Microsoft PowerPoint 2007 또는 Microsoft PowerPoint 2010 설치에서 온 모든 요청이 거부됩니다.
+이 예에서는 Microsoft Office용 Acrobat Reader DC 익스텐션의 Microsoft PowerPoint 2007 또는 Microsoft PowerPoint 2010 설치에서 요청한 모든 요청이 거부됩니다.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -955,7 +955,7 @@ Microsoft Office용 Acrobat Reader DC 익스텐션은 Microsoft Office 제품 Mi
 
    두 번째 항목인 *최대 요소* 수는 워터마크에서 허용되는 최대 요소 수입니다. 기본값은 5입니다.
 
-   ```java
+   ```xml
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -975,7 +975,7 @@ config.xml에 대한 다음 변경 사항은 Right Management 사용자 인터�
 1. 편집기에서 구성 파일을 열고 노드를 `DisplaySettings` 찾습니다.
 1. 모든 외부 링크를 비활성화하려면 노드에서 `DisplaySettings` 다음 항목을 추가한 다음 파일을 저장합니다. `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```java
+   ```xml
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -989,7 +989,7 @@ config.xml에 대한 다음 변경 사항은 초대된 사용자 등록 기능�
 1. 편집기에서 구성 파일을 열고 노드를 `DisplaySettings` 찾습니다.
 1. 다음 노드를 찾습니다. `<node name="ExternalUser">`
 
-   ```java
+   ```xml
    <node name="ExternalUser">
    ```
 
@@ -1005,7 +1005,7 @@ config.xml에 대한 다음 변경 사항은 초대된 사용자 등록 기능�
 1. 문서 보안 구성 파일을 내보냅니다. 자세한 내용은 [문서 보안 구성 파일](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)수동 편집을 참조하십시오.
 1. 편집기에서 구성 파일을 열고 다음 노드를 찾습니다. `<node name="DRM">`
 
-   ```java
+   ```xml
    <node name="DRM">
    ```
 
@@ -1015,7 +1015,7 @@ config.xml에 대한 다음 변경 사항은 초대된 사용자 등록 기능�
 
 1. 문서 보안 문서에 대한 SOAP 끝점을 비활성화하려면 값 특성을 **false로 설정합니다**.
 
-   ```java
+   ```xml
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>
