@@ -1,6 +1,6 @@
 ---
-title: Acrobat Reader DC 익스텐션 서비스Java API 빠른 시작(SOAP)
-seo-title: Acrobat Reader DC 익스텐션 서비스Java API 빠른 시작(SOAP)
+title: Acrobat Reader DC 확장 서비스Java API 빠른 시작(SOAP)
+seo-title: Acrobat Reader DC 확장 서비스Java API 빠른 시작(SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 ---
 
 
-# Acrobat Reader DC 익스텐션 서비스Java API 빠른 시작(SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# Acrobat Reader DC 확장 서비스Java API 빠른 시작(SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
-다음 빠른 시작을 Acrobat Reader DC Extensions 서비스에 사용할 수 있습니다.
+다음 빠른 시작을 Acrobat Reader DC 확장 서비스에 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 사용 권한 적용](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
@@ -143,7 +143,6 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  } 
   
   
- 
 ```
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서에서 사용 권한 제거 {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
