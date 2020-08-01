@@ -3,9 +3,9 @@ title: 자산을 처리하여 업무 처리 과정 수행, 감사, 규정 준수
 description: 자산 처리를 사용하여 형식을 변환하고, 변환을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 
 ## 여러 자산에 워크플로우 적용 {#applying-a-workflow-to-multiple-assets}
 
-1. 자산 콘솔에서 워크플로우를 시작할 자산의 위치로 이동하고 자산을 선택합니다. 메뉴에서 **[!UICONTROL 타임라인]** 을 선택하여 타임라인을 표시합니다.
+1. 콘솔에서 [!DNL Assets] 워크플로우를 시작할 자산의 위치로 이동하고 자산을 선택합니다. 메뉴에서 **[!UICONTROL 타임라인]** 을 선택하여 타임라인을 표시합니다.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
