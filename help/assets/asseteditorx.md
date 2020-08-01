@@ -3,9 +3,9 @@ title: 자산 편집기 확장
 description: 사용자 지정 구성 요소를 사용하여 자산 편집기의 기능을 확장하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '688'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 1%
 
 사전 정의된 편집 구성 요소를 사용하는 편집기의 구성은 자산 편집기 페이지 [만들기 및 구성에서 다룹니다](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-기존 편집기 구성 요소를 사용하는 것 외에도 Adobe Experience Manager 개발자는 고유한 구성 요소를 만들 수 있습니다.
+기존 편집기 구성 요소를 사용하는 것 외에도 개발자는 [!DNL Adobe Experience Manager] 자체 구성 요소를 만들 수 있습니다.
 
 ## 자산 편집기 템플릿 만들기 {#creating-an-asset-editor-template}
 
-다음 샘플 페이지가 Geometrixx에 포함되어 있습니다.
+다음 샘플 페이지가 Geometrixx에 포함됩니다.
 
 * Geometrixx 샘플 페이지: `/content/geometrixx/en/press/asseteditor.html`
 * 샘플 템플릿: `/apps/geometrixx/templates/asseteditor`
@@ -29,9 +29,9 @@ ht-degree: 1%
 
 ### Clientlib 구성 {#configuring-clientlib}
 
-자산 구성 요소는 WCM 편집 clientlib의 확장을 사용합니다. The clientlibs are usually loaded in `init.jsp`.
+[!DNL Assets] components use an extension of the WCM edit clientlib. The clientlibs are usually loaded in `init.jsp`.
 
-기본 clientlib 로딩(코어의 경우)과 비교하여 자산 템플릿에는 다음이 `init.jsp`있어야 합니다.
+기본 clientlib 로딩(코어 `init.jsp`의 경우)과 비교할 때 [!DNL Assets] 템플릿에는 다음이 있어야 합니다.
 
 * 템플릿에는 clientlib(대신)이 `cq.dam.edit` 포함되어야 `cq.wcm.edit`합니다.
 
@@ -41,23 +41,23 @@ ht-degree: 1%
 
 ### JS 작업 구성 {#configuring-js-actions}
 
-일부 자산 구성 요소에는 에서 정의된 JS 함수가 필요합니다 `component.js`. 이 파일을 구성 요소 디렉토리에 복사하고 연결합니다.
+일부 구성 요소에는 [!DNL Assets] 에서 정의된 JS 함수가 필요합니다 `component.js`. 이 파일을 구성 요소 디렉토리에 복사하고 연결합니다.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-이 샘플은 이 javascript 소스를 `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)에 로드합니다.
+이 샘플은 이 JavaScript 소스를 `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)로 로드합니다.
 
 ### 추가 스타일 시트 {#additional-style-sheets}
 
-일부 에셋 구성 요소는 위젯 라이브러리를 사용합니다. 컨텐츠 컨텍스트에서 제대로 렌더링하려면 추가 스타일 시트를 로드해야 합니다. 태그 작업 구성 요소에는 하나 더 필요합니다.
+일부 구성 요소는 [!DNL Assets] 위젯 라이브러리를 사용합니다. 컨텐츠 컨텍스트에서 제대로 렌더링하려면 추가 스타일 시트를 로드해야 합니다. 태그 작업 구성 요소에는 하나 더 필요합니다.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx Style Sheet {#geometrixx-style-sheet}
+### Geometrixx 스타일 시트 {#geometrixx-style-sheet}
 
 샘플 페이지 구성 요소에서는 모든 선택기가 ( `.asseteditor` )로 `static.css` 시작되어야`/etc/designs/geometrixx/static.css`합니다. 모범 사례: 모든 `.asseteditor` 선택기를 스타일 시트로 복사하고 원하는 대로 규칙을 조정합니다.
 
