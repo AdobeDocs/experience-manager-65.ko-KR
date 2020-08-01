@@ -3,9 +3,9 @@ title: 관련 자산
 description: 몇 가지 일반적인 특성을 공유하는 디지털 자산을 연결하는 방법을 알아봅니다. 또한 디지털 자산 간의 소스 파생적인 관계를 만들 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '636'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## Relate assets {#relating-assets}
 
-1. Experience Manager 인터페이스에서 연결하려는 자산의 **[!UICONTROL 속성]** 페이지를 엽니다.
+1. 인터페이스에서 연결하려는 자산의 [!DNL Experience Manager] 속성 **** 페이지를 엽니다.
 
    ![자산의 속성 페이지를 열어 자산 연결](assets/asset-properties-relate-assets.png)
 
