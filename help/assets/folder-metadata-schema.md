@@ -3,25 +3,25 @@ title: 폴더 메타데이터 스키마
 description: Adobe Experience Manager 에셋의 에셋 폴더에 대한 메타데이터 스키마를 만드는 방법 알아보기
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 2%
+source-wordcount: '1016'
+ht-degree: 4%
 
 ---
 
 
 # 폴더 메타데이터 스키마 {#folder-metadata-schema}
 
-Adobe Experience Manager 자산을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더의 메타데이터 스키마를 생성할 수 있습니다.
+[!DNL Adobe Experience Manager Assets]을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다. 
 
 ## 폴더 메타데이터 스키마 양식 추가 {#add-a-folder-metadata-schema-form}
 
-폴더 메타데이터 스키마 양식 편집기를 사용하여 폴더의 메타데이터 스키마를 만들고 편집할 수 있습니다.
+폴더 메타데이터 스키마 Forms 편집기를 사용하여 폴더의 메타데이터 스키마를 만들고 편집할 수 있습니다.
 
-1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 자산 **[!UICONTROL >]** 폴더 메타데이터 스키마로 **[!UICONTROL 이동합니다]**.
-1. [ [!UICONTROL 폴더 메타데이터 스키마 양식] ] 페이지에서 만들기를 **[!UICONTROL 클릭합니다]**.
-1. Specify a name for the form, and click **[!UICONTROL Create]**. 새 스키마 양식이 [스키마 양식] [!UICONTROL 페이지에] 나열됩니다.
+1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL >]** 자산 **** > **[!UICONTROL 폴더 메타데이터 스키마로 이동합니다]**.
+1. 폴더 [!UICONTROL 메타데이터 스키마 Forms] 페이지에서 만들기를 **[!UICONTROL 클릭합니다]**.
+1. Specify a name for the form, and click **[!UICONTROL Create]**. 새 스키마 양식이 스키마 Forms [!UICONTROL 페이지에] 나열됩니다.
 
 ## Edit folder metadata schema forms {#edit-folder-metadata-schema-forms}
 
@@ -32,7 +32,7 @@ Adobe Experience Manager 자산을 사용하면 폴더 속성 페이지에 표�
 
 이러한 양식 항목을 CRX 저장소의 메타데이터 노드 내의 필드에 매핑/구성할 수 있습니다. 메타데이터 스키마 양식에 새 탭 또는 양식 항목을 추가할 수 있습니다.
 
-1. 스키마 양식 페이지에서 작성한 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]** 옵션을 선택합니다.
+1. 스키마 Forms 페이지에서 생성한 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]** 옵션을 선택합니다.
 1. 폴더 메타데이터 스키마 편집기 페이지에서 을 클릭하여 양식 `+` 에 탭을 추가합니다. 탭의 이름을 변경하려면 기본 이름을 클릭하고 설정 아래에서 새 이름을 **[!UICONTROL 지정합니다]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -66,7 +66,7 @@ Adobe Experience Manager 자산을 사용하면 폴더 속성 페이지에 표�
 | [!UICONTROL 날짜] | 날짜 구성 요소를 추가합니다. |
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
 | [!UICONTROL 표준 태그] | 태그 추가. |
-| [!UICONTROL 숨김 필드] | 숨김 필드를 추가합니다. 자산이 저장되면 POST 매개 변수로 전송됩니다. |
+| [!UICONTROL 숨김 필드] | 숨김 필드를 추가합니다. 에셋을 저장할 때 POST 매개 변수로 전송됩니다. |
 
 ### 양식 항목 편집 {#editing-form-items}
 
@@ -80,7 +80,7 @@ Adobe Experience Manager 자산을 사용하면 폴더 속성 페이지에 표�
 
 * `./jcr:content/metadata/dc:title`: 폴더의 메타데이터 노드에 값을 속성으로 저장합니다 `dc:title`.
 
-* `./jcr:created`: 폴더 노드에 JCR 속성을 표시합니다. CRXDE에서 이러한 속성을 구성하는 경우 해당 속성이 보호되므로 [편집 비활성화]로 표시하는 것이 좋습니다. 그렇지 않으면 자산의 속성을 저장할 때 &#39; `Asset(s) failed to modify`&#39; 오류가 발생합니다.
+* `./jcr:created`: 폴더 노드에 JCR 속성을 표시합니다. CRXDE에서 이러한 속성을 구성하는 경우 보호되므로 [편집 비활성화]로 표시하는 것이 좋습니다. 그렇지 않으면 자산의 속성을 저장할 때 &#39; `Asset(s) failed to modify`&#39; 오류가 발생합니다.
 
 구성 요소가 메타데이터 스키마 양식에서 제대로 표시되도록 하려면 속성 경로에 공백을 포함하지 마십시오.
 
@@ -96,20 +96,20 @@ Adobe Experience Manager 자산을 사용하면 폴더 속성 페이지에 표�
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-폴더 메타데이터 스키마 양식 페이지에서 폴더 메타데이터 스키마 양식을 삭제할 수 있습니다. 양식을 삭제하려면 양식을 선택하고 도구 모음에서 삭제 옵션을 클릭합니다.
+폴더 메타데이터 스키마 Forms 페이지에서 폴더 메타데이터 스키마 양식을 삭제할 수 있습니다. 양식을 삭제하려면 양식을 선택하고 도구 모음에서 삭제 옵션을 클릭합니다.
 
 ![delete_form](assets/delete_form.png)
 
 ## 폴더 메타데이터 스키마 할당 {#assign-a-folder-metadata-schema}
 
-폴더 메타데이터 스키마 양식 페이지에서 또는 폴더를 만들 때 폴더 메타데이터 스키마를 폴더에 지정할 수 있습니다.
+폴더 메타데이터 스키마 Forms 페이지 또는 폴더를 만들 때 폴더 메타데이터 스키마를 폴더에 지정할 수 있습니다.
 
 폴더에 대한 메타데이터 스키마를 구성하는 경우 스키마 양식 경로는 폴더 노드 아래의 `folderMetadataSchema` 속성에 저장됩니다.*/jcr:content*.
 
 ### 폴더 메타데이터 스키마 페이지에서 스키마에 할당 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 자산 **[!UICONTROL >]** 폴더 메타데이터 스키마로 **[!UICONTROL 이동합니다]**.
-1. 폴더 메타데이터 스키마 양식 페이지에서 폴더에 적용할 스키마 양식을 선택합니다.
+1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL >]** 자산 **** > **[!UICONTROL 폴더 메타데이터 스키마로 이동합니다]**.
+1. 폴더 메타데이터 스키마 Forms 페이지에서 폴더에 적용할 스키마 양식을 선택합니다.
 1. 도구 모음에서 폴더에 **[!UICONTROL 적용을 클릭합니다]**.
 
 1. 스키마를 적용할 폴더를 선택한 다음 적용을 **[!UICONTROL 클릭합니다]**. 메타데이터 스키마가 이미 폴더에 적용된 경우 기존 메타데이터 스키마를 덮어쓸지 모른다는 경고 메시지가 표시됩니다. 덮어쓰기를 **[!UICONTROL 클릭합니다]**.
