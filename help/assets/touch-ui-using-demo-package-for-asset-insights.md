@@ -1,11 +1,11 @@
 ---
 title: 자산 인사이트를 위한 데모 패키지 사용
-description: 데모 패키지를 사용하여 Adobe Asset Insights를 사용하여 웹 페이지에서 데이터를 캡처하고 인사이트를 생성할 수 있습니다.
+description: 데모 패키지를 사용하여 Adobe 자산 인사이트를 통해 웹 페이지에서 데이터를 캡처하고 인사이트를 생성할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '160'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # Use demo package for Asset Insights {#using-demo-package-for-asset-insights}
 
-데모 패키지를 사용하면 Adobe Asset Insights를 사용하여 샘플 웹 페이지에서 데이터를 캡처하고 인사이트를 생성할 수 있습니다.
+데모 패키지를 사용하면 Adobe 자산 인사이트를 통해 샘플 웹 페이지에서 데이터를 캡처하고 인사이트를 생성할 수 있습니다.
 
-## 샘플 웹 페이지에서 Experience Manager Assets Insights 사용  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] 샘플 웹 페이지를 통한 인사이트  {#using-aem-assets-insights-with-sample-web-page}
 
 1. 자산 인사이트 구성의 지침에 따라 자산 [인사이트를 구성합니다](touch-ui-configuring-asset-insights.md).
 1. 아래에서 샘플 에셋 패키지를 다운로드하고 CRXDE 패키지 관리자에서 패키지를 설치합니다.
@@ -34,4 +34,4 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >외부 웹 페이지는 Experience Manager 자체에 있을 수 있습니다.
+   >외부 웹 페이지는 [!DNL Experience Manager] 그 자체일 수 있습니다.
