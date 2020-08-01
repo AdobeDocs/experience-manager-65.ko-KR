@@ -3,9 +3,9 @@ title: 처리를 위해 지원되는 파일 포맷입니다 [!DNL Adobe Experien
 description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 62085bdd8fa576e0d4eaeae19076d6edbf8c484a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1636'
 ht-degree: 9%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # 지원되는 형식 [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-[!DNL Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 기능은 서로 다른 MIME 유형을 다양하게 지원합니다. 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 통합하려면 Adobe의 [!DNL Assets] [!DNL Extensible Metadata Platform] (XMP)를 사용하십시오.
+[!DNL Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 기능은 서로 다른 MIME 유형을 다양하게 지원합니다. 다른 표준을 준수하는 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 통합하려면 Adobe(XMP) [!DNL Assets] [!DNL Extensible Metadata Platform] 을 사용하십시오.
 
 지원 수준을 이해하려면 범례를 사용합니다.
 
@@ -43,7 +43,7 @@ ht-degree: 9%
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
+병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함됩니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
 지원되는 래스터 이미지 포맷은 다음과 [!DNL Dynamic Media] 같습니다.
 
@@ -58,7 +58,7 @@ ht-degree: 9%
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
+병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함됩니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
 위의 정보 이외에 다음을 고려하십시오.
 
@@ -66,7 +66,7 @@ ht-degree: 9%
 
 * PSB 파일 형식이 핸들러에 추가될 때 메타데이터 원본에 대해 `NComm` 작동합니다.
 
-* EPS 파일 [!DNL Dynamic Media] 에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* EPS 파일 [!DNL Dynamic Media] 에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), EPS(Postscript) 및 PDF 파일 형식을 참조하십시오.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * EPS 파일의 경우 PS-Adobe(PostScript Document Structuring Convention) 버전 3.0 이상에서 메타데이터 원본에 대한 지원이 지원됩니다.
 
@@ -74,7 +74,7 @@ ht-degree: 9%
 
 다음 3D 형식 목록이 지원됩니다.
 
-Dynamic Media [에서 3D 에셋을 사용한 작업을 참조하십시오.](/help/assets/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 배달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -118,7 +118,7 @@ The following table describes the sub-types of raster image formats that are *no
 
 ## 지원되는 PDF 래스터라이저 라이브러리 {#supported-pdf-rasterizer-library}
 
-Adobe PDF 래스터라이저 라이브러리는 컨텐츠 집약적이고 크기가 큰 PDF 파일에 대한 고품질 축소판과 미리 보기를 생성합니다 [!DNL Adobe Illustrator] . PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
+Adobe PDF 래스터라이저 라이브러리는 컨텐츠를 많이 사용하는 대용량 및 PDF 파일을 위한 고품질 축소판과 미리 보기를 생성합니다 [!DNL Adobe Illustrator] . Adobe은 다음과 같은 경우 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
 * 처리해야 하는 리소스가 많은 AI/PDF 파일
 * 축소판이 기본적으로 생성되지 않는 AI/PDF 파일
@@ -128,7 +128,7 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## 지원되는 이미지 트랜스코딩 라이브러리 {#supported-image-transcoding-library}
 
-Adobe Imaging Transcoding 라이브러리는 인코딩, 트랜스코딩, 리샘플링 및 크기 조정과 같은 핵심 이미지 처리 기능을 수행하는 이미지 처리 솔루션입니다.
+Adobe 이미징 트랜스코딩 라이브러리는 인코딩, 트랜스코딩, 리샘플링 및 크기 조정과 같은 핵심 이미지 처리 기능을 수행하는 이미지 처리 솔루션입니다.
 
 이미징 트랜스코딩 라이브러리는 JPG/JPEG, PNG(8비트 및 16비트), GIF, BMP, TIFF/Compressed TIFF(32비트 TIFF 파일 및 PTIFF 파일 제외), ICO 및 ICN MIME 유형을 지원합니다.
 
@@ -136,9 +136,9 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## 지원되는 Camera Raw {#supported-camera-raw}
 
-Adobe Camera Raw 라이브러리를 사용하면 에셋을 Raw 이미지를 인제스트할 수 있습니다. See [Camera Raw support](camera-raw.md).
+라이브러리를 통해 [!DNL Adobe Camera Raw] Raw 이미지 [!DNL Assets] 를 인제스트할 수 있습니다. See [Camera Raw support](camera-raw.md).
 
-## 지원되는 자산 문서 형식 {#supported-document-formats}
+## 지원되는 [!DNL Assets] 문서 포맷 {#supported-document-formats}
 
 자산 관리 기능에 지원되는 문서 형식은 다음과 같습니다.
 
@@ -249,9 +249,9 @@ Adobe Camera Raw 라이브러리를 사용하면 에셋을 Raw 이미지를 인�
 
 ## Supported MIME types {#supported-mime-types}
 
-기본적으로 Experience Manager은 파일 확장자를 사용하여 파일 유형을 감지합니다. Experience Manager은 파일의 내용에서 검색할 수 있습니다. 후자의 경우 Experience Manager 웹 콘솔 [!UICONTROL 의] 일 CQ DAM MIME 유형 서비스에서  컨텐트에서 MIME 감지 옵션을 선택합니다.
+기본적으로 파일 확장자를 사용하여 파일 유형을 [!DNL Experience Manager] 감지합니다. [!DNL Experience Manager] 파일의 내용에서 검색할 수 있습니다. 후자의 경우, 웹 콘솔 [!UICONTROL 의] 일 CQ DAM MIME 유형 서비스에서 [!UICONTROL 컨텐트에서 MIME] 감지 옵션을 [!DNL Experience Manager] 선택합니다.
 
-지원되는 MIME 유형 목록은 에서 CRXDE Lite를 참조하십시오 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+지원되는 MIME 형식 목록은 의 CRXDE Lite에서 사용할 수 있습니다 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | 파일 확장자 | MIME 유형/인터넷 미디어 유형 | 기본 jobParam 값 | 허용되는 jobParam 값 |
 |---|---|---|---|
