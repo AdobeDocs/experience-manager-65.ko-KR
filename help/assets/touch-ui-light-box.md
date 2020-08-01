@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager Assets에서 개인 이미지 갤러리로 Lightbox 활용
-description: Adobe Experience Manager Assets에서 개인 이미지 갤러리로 Lightbox에 대해 학습합니다.
+title: Lightbox를 개인 이미지 갤러리로 [!DNL Adobe Experience Manager Assets]사용
+description: Adobe Experience Manager 에셋]에서 개인 이미지 갤러리로 Lightbox에 대해 알아보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Lightbox는 자산에 손쉽게 액세스할 수 있는 특별한 유형의 컬렉션입니다. Lightbox에 빠르게 액세스하여 자산을 추가하거나 삭제할 수 있습니다. 개인 이미지 갤러리 역할을 합니다.
 
-Adobe Experience Manager Assets 사용자는 처음 애플리케이션에 로그인할 때 Lightbox가 자동으로 생성됩니다. 로그인에만 적용됩니다. 다른 사용자는 Lightbox에 액세스할 수 없습니다.
+사용자의 경우 응용 프로그램에 처음 로그인할 때 Lightbox가 자동으로 생성됩니다. [!DNL Adobe Experience Manager Assets] 로그인에만 적용됩니다. 다른 사용자는 Lightbox에 액세스할 수 없습니다.
 
 ## Lightbox에 에셋 추가 {#adding-assets-to-lightbox}
 
-1. 자산 사용자 인터페이스에서 Lightbox에 추가할 자산을 선택합니다.
+1. 사용자 [!DNL Assets] 인터페이스에서 Lightbox에 추가할 자산을 선택합니다.
 1. 자산을 Lightbox **[!UICONTROL 에서 놓기 영역으로]** 드래그합니다. 드롭 영역이 활성화되고 해당 레이블이 [ **[!UICONTROL 추가할 드롭]으로 변경되면 해제합니다]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
