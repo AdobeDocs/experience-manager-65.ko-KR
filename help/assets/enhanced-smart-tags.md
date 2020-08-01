@@ -3,10 +3,10 @@ title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1561'
-ht-degree: 0%
+source-wordcount: '1536'
+ht-degree: 1%
 
 ---
 
@@ -25,9 +25,9 @@ Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 �
 
 태그가 교육되고 준비되면, 서비스는 태그 지정 워크플로우를 통해 이러한 태그를 자산에 적용할 수 있습니다.
 
-Smart Content Service는 백그라운드에서 Adobe Sensei AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
+백그라운드에서 Smart Content Service는 Adobe Sensei AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
 
-스마트 콘텐츠 서비스는 Adobe I/O에서 호스팅되는 클라우드 서비스입니다. Adobe Experience Manager에서 사용하려면 시스템 관리자가 Experience Manager 배포를 Adobe I/O와 통합해야 합니다.
+스마트 콘텐츠 서비스는 Adobe I/O에서 호스팅되는 클라우드 서비스입니다. 시스템 관리자 [!DNL Adobe Experience Manager][!DNL Experience Manager] 는 배포를 Adobe I/O와 통합해야 합니다.
 
 다음은 스마트 콘텐츠 서비스를 사용하는 주요 단계입니다.
 
@@ -40,22 +40,22 @@ Smart Content Service는 백그라운드에서 Adobe Sensei AI 프레임워크�
 
 ## 전제 조건 {#prerequisites}
 
-스마트 콘텐츠 서비스를 사용하려면 먼저 다음을 확인하여 Adobe I/O에 통합합니다.
+스마트 콘텐츠 서비스를 사용하려면 먼저 Adobe I/O에 통합을 만들려면 다음을 확인하십시오.
 
-* 조직에 대한 관리자 권한이 있는 Adobe ID 계정
+* 조직에 대한 관리자 권한이 부여된 Adobe ID 계정이 있습니다.
 * 조직에서 스마트 콘텐츠 서비스 서비스를 사용할 수 있습니다.
 
 ## 온보딩 {#onboarding}
 
-스마트 콘텐츠 서비스는 Experience Manager의 추가 기능으로 구매할 수 있습니다. 구입하면 Adobe I/O 링크가 포함된 이메일이 조직 관리자에게 전송됩니다.
+The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. 구입하면 Adobe I/O에 대한 링크가 포함된 이메일이 조직의 관리자에게 전송됩니다.
 
-관리자는 링크를 따라 Smart Content Service를 Experience Manager과 통합할 수 있습니다. 서비스를 Experience Manager 자산과 통합하려면 스마트 태그 [구성을 참조하십시오](config-smart-tagging.md).
+관리자는 링크를 따라 Smart Content Service를 통합할 수 있습니다 [!DNL Experience Manager]. 서비스를 통합하려면 스마트 태그 구성 [!DNL Experience Manager Assets]을 [참조하십시오](config-smart-tagging.md).
 
-관리자가 서비스를 구성하고 Experience Manager의 사용자를 추가하면 온보딩 프로세스가 완료됩니다.
+온보딩 프로세스는 관리자가 서비스를 구성하고 사용자를 [!DNL Experience Manager]
 
 >[!NOTE]
 >
->Experience Manager 6.3 이전 버전을 사용하고 있고 자산에 대한 태그 지정 서비스가 필요한 경우 [스마트 태그를 참조하십시오](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). 스마트 태그는 최신 AI 기능을 사용하지 않으므로 향상된 스마트 태그 지정 서비스보다 정확도가 떨어집니다.
+>6.3 이전 버전을 사용하고 있고 자산에 대한 태그 지정 서비스가 필요한 경우 [!DNL Experience Manager] 스마트 태그를 참조하십시오 [](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). 스마트 태그는 최신 AI 기능을 사용하지 않으므로 향상된 스마트 태그 지정 서비스보다 정확도가 떨어집니다.
 
 ## 자산 및 태그 검토 {#reviewing-assets-and-tags}
 
@@ -67,7 +67,7 @@ Smart Content Service는 백그라운드에서 Adobe Sensei AI 프레임워크�
 
 >[!NOTE]
 >
->1. 훈련은 취소할 수 없는 과정이다. 태그에서 스마트 콘텐츠 서비스를 교육하기 전에 선별된 자산 세트의 태그를 검토하는 것이 좋습니다.
+>1. 훈련은 취소할 수 없는 과정이다. Adobe은 태그에서 스마트 컨텐츠 서비스를 교육하기 전에 선별된 자산 세트의 태그를 검토할 것을 권장합니다.
 >1. 태그에 대한 교육을 시작하기 전에 [스마트 콘텐츠 서비스 교육 지침을](smart-tags-training-guidelines.md) 읽어 보십시오.
 >1. 스마트 콘텐츠 서비스를 처음 교육할 때 두 개 이상의 개별 태그로 교육하는 것이 좋습니다.
 
@@ -90,13 +90,13 @@ Smart Content Service가 폴더 내의 자산 및 관련 태그를 정기적으�
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-폴더에 대해 이 옵션을 선택하면 Experience Manager은 자동으로 교육 워크플로우를 실행하여 폴더 자산 및 해당 태그에서 스마트 콘텐츠 서비스를 훈련합니다. 기본적으로 교육 워크플로우는 매주 토요일 오전 12시 30분에 실행됩니다.
+폴더에 대해 이 옵션을 선택하면 교육 워크플로우가 자동으로 [!DNL Experience Manager] 실행되어 폴더 자산 및 해당 태그에서 스마트 콘텐츠 서비스를 훈련합니다. 기본적으로 교육 워크플로우는 매주 토요일 오전 12시 30분에 실행됩니다.
 
 ### 주문형 트레이닝 {#on-demand-training}
 
 Workflow 콘솔에서 필요할 때마다 스마트 콘텐츠 서비스를 교육할 수 있습니다.
 
-1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 워크플로우 **[!UICONTROL > 모델]** 으로 **[!UICONTROL 이동합니다]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. [워크플로우 **[!UICONTROL 모델]** ] 페이지에서 **[!UICONTROL 스마트 태그 교육]** 작업 과정을 선택한 다음 도구 모음에서 **[!UICONTROL 워크플로우]** 시작을클릭합니다.
 1. [워크플로우 **[!UICONTROL 실행]** ] 대화 상자에서 서비스 교육을 위해 태그가 지정된 에셋이 포함된 페이로드 폴더를 찾습니다.
 1. 워크플로우의 제목을 지정하고 주석을 추가합니다. 그런 다음 실행을 **[!UICONTROL 클릭합니다]**. 교육 목적으로 자산 및 태그가 제출됩니다.
@@ -111,7 +111,7 @@ Workflow 콘솔에서 필요할 때마다 스마트 콘텐츠 서비스를 교�
 
 스마트 콘텐츠 서비스가 교육 자산의 태그에 대해 교육되었는지 확인하려면 보고서 콘솔에서 교육 워크플로우 보고서를 검토하십시오.
 
-1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 자산 **[!UICONTROL > 보고서]** 로 **[!UICONTROL 이동합니다]**.
+1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL >]** 자산 **[!UICONTROL > 보고서]** 로 **[!UICONTROL 이동합니다]**.
 1. 자산 **[!UICONTROL 보고서]** 페이지에서 만들기를 **[!UICONTROL 클릭합니다]**.
 1. 스마트 **[!UICONTROL 태그 교육]** 보고서를 선택한 다음 도구 모음에서 **[!UICONTROL 다음]** 을 클릭합니다.
 1. 보고서의 제목과 설명을 지정합니다. 보고서 **[!UICONTROL 예약]**&#x200B;아래에서 **[!UICONTROL 지금]** 옵션을 선택된 상태로 두십시오. 나중에 보고서를 예약하려면 **[!UICONTROL 나중에를]** 선택하고 날짜 및 시간을 지정합니다. 그런 다음 도구 **[!UICONTROL 모음에서]** 만들기를 클릭합니다.
@@ -153,7 +153,7 @@ Smart Content Service가 폴더 내의 에셋에 정기적으로 태그를 지�
 
 #### 워크플로우 콘솔에서 자산 태그 지정 {#tagging-assets-from-the-workflow-console}
 
-1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 워크플로우 **[!UICONTROL > 모델]** 으로 **[!UICONTROL 이동합니다]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. 워크플로우 **[!UICONTROL 모델]** 페이지에서 **[!UICONTROL DAM 스마트 태그 자산]** 워크플로우를 선택한 다음 도구 모음에서 **[!UICONTROL 워크플로우]** 시작을클릭합니다.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -167,7 +167,7 @@ Smart Content Service가 폴더 내의 에셋에 정기적으로 태그를 지�
 
 #### 타임라인에서 에셋에 태그 지정 {#tagging-assets-from-the-timeline}
 
-1. 자산 사용자 인터페이스에서 스마트 태그를 적용할 자산 또는 특정 자산이 들어 있는 폴더를 선택합니다.
+1. 사용자 [!DNL Assets] 인터페이스에서 스마트 태그를 적용할 자산 또는 특정 자산이 들어 있는 폴더를 선택합니다.
 1. 왼쪽 위 모서리에서 **[!UICONTROL 타임라인을 엽니다]**.
 1. 왼쪽 사이드바 아래쪽에서 작업을 열고 [워크플로우 **[!UICONTROL 시작]을 클릭합니다]**.
 
