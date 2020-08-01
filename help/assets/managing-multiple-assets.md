@@ -1,11 +1,11 @@
 ---
-title: Adobe Enterprise Manager에서 많은 자산 및 컬렉션의 메타데이터를 관리할 수 있습니다.
+title: 여러 자산 및 컬렉션의 메타데이터를 관리할 수 있습니다 [!DNL Adobe Enterprise Manager].
 description: 여러 자산 및 컬렉션의 메타데이터를 동시에 편집하여 일반적인 메타데이터 변경 사항을 신속하게 전파할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Manage assets and collections {#managing-multiple-assets-and-collections}
 
-Adobe Enterprise Manager Assets를 사용하면 여러 자산의 메타데이터를 동시에 편집할 수 있으므로 일반적인 메타데이터 변경 사항을 자산에 일괄 적용할 수 있습니다. 여러 컬렉션의 메타데이터를 일괄 편집할 수도 있습니다.
+[!DNL Adobe Enterprise Manager Assets] 여러 자산의 메타데이터를 동시에 편집할 수 있으므로 일반적인 메타데이터 변경 사항을 자산에 일괄 전파할 수 있습니다. 여러 컬렉션의 메타데이터를 일괄 편집할 수도 있습니다.
 
 속성 페이지를 사용하여 여러 자산 또는 컬렉션에 대한 메타데이터 변경을 수행합니다.
 
@@ -28,9 +28,9 @@ Adobe Enterprise Manager Assets를 사용하면 여러 자산의 메타데이터
 
 ## 여러 자산의 메타데이터 속성 편집 {#editing-metadata-properties-of-multiple-assets}
 
-1. 자산 사용자 인터페이스에서 편집할 자산의 위치로 이동합니다.
+1. 사용자 인터페이스에서 편집할 자산의 위치로 이동합니다. [!DNL Assets]
 1. 공통 속성을 편집할 자산을 선택합니다.
-1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
+1. 도구 모음에서 **[!UICONTROL 속성]** 을 클릭하여 선택한 자산에 대한 속성 페이지를 엽니다.
 
    >[!NOTE]
    >
@@ -55,11 +55,11 @@ Adobe Enterprise Manager Assets를 사용하면 여러 자산의 메타데이터
 
 ## 일괄 메타데이터 업데이트에 대한 제한 구성 {#configlimit}
 
-DOS와 같은 상황을 방지하기 위해 Enterprise Manager는 Sling 요청에서 지원되는 매개 변수의 수를 제한합니다. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. Enterprise Manager는 로그에 다음 경고를 생성합니다.
+DOS와 같은 상황을 방지하기 위해 Enterprise Manager는 Sling 요청에서 지원되는 매개 변수의 수를 제한합니다. 한 번에 많은 자산의 메타데이터를 업데이트할 때 한도에 도달해도 메타데이터가 더 많은 자산에 대해 업데이트되지 않습니다. Enterprise Manager는 로그에 다음 경고를 생성합니다.
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-제한을 변경하려면 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]** 에 액세스하고 Apache Sapache Request 매개 변수 처리OSGi 구성에 있는 최대 **[!UICONTROL POST 매개 변수의 값을]** Maximum POST 매개 변수 값으로 변경합니다 **** .
+제한을 변경하려면 [ **[!UICONTROL 도구] > [작업]** ] > [ **[!UICONTROL 웹 콘솔]** ] **[!UICONTROL 에 액세스한 후 [최대 POST] 매개 변수]** 값 **[!UICONTROL 과 [최대 매개 변수]]** **** 를 변경하고 [Apache Sling 요청 매개 변수 처리OSGi 구성]을 사용하십시오.
 
 >[!MORELIKETHIS]
 >
