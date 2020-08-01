@@ -1,12 +1,12 @@
 ---
 title: 스마트 콘텐츠 서비스 교육 지침
-description: Adobe Sensei의 AI 서비스를 트레이닝하여 자산에 스마트 태그 적용
+description: Adobe Sensei AI 서비스 트레이닝을 통해 자산에 스마트 태그 적용
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ![트레이닝 지침을 예시하기 위한 실례가 되는 이미지](/help/assets/assets/do-not-localize/coherence.png)
 
-**적용 범위**: 트레이닝에서 이미지에 다양한 이미지가 있어야 합니다. Adobe Experience Manager는 몇 가지 다양한 예제를 제시하여 최적의 환경에 집중할 수 있도록 해야 합니다. 시각적으로 다른 이미지에 동일한 태그를 적용하는 경우 각 종류의 최소 5개의 예를 포함합니다.
+**적용 범위**: 트레이닝에서 이미지에 다양한 이미지가 있어야 합니다. Experience Manager이 올바른 것에 초점을 맞추도록 몇 가지 하지만 상당히 다양한 예를 제공하는 것이 그 생각입니다. 시각적으로 다른 이미지에 동일한 태그를 적용하는 경우 각 종류의 최소 5개의 예를 포함합니다.
 
 예를 들어 태그 *모델 다운 포즈의*&#x200B;경우 태그 지정 중에 서비스에서 유사한 이미지를 보다 정확하게 식별할 수 있도록 아래 강조 표시된 이미지와 유사한 더 많은 교육 이미지를 포함합니다.
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 * 이미지의 미묘한 차이를 인식하지 못함 예를 들어, 슬림형 셔츠는 일반 셔츠가 들어 있는 것과 같습니다.
 * 이미지의 작은 패턴/부분을 기반으로 태그를 식별할 수 없음 예를 들어 T-셔츠 상의 로고
-* 태깅은 Experience Manager가 지원되는 로케일에서 지원됩니다. 언어 목록은 [스마트 콘텐츠 서비스 릴리스 노트를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+* 태깅은 에서 지원되는 로케일에서 [!DNL Experience Manager] 지원됩니다. 언어 목록은 [스마트 콘텐츠 서비스 릴리스 노트를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
-스마트 태그가 있는 자산을 검색하려면(일반 또는 고급) 자산 검색(전체 텍스트 검색)을 사용합니다. 스마트 태그에는 별도의 검색 조건자가 없습니다.
+스마트 태그가 있는 자산을 검색하려면(일반 또는 향상된) Omnisearch(전체 텍스트 검색)를 [!DNL Assets] 사용하십시오. 스마트 태그에는 별도의 검색 조건자가 없습니다.
 
 >[!NOTE]
 >
