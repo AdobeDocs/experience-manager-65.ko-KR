@@ -1,26 +1,26 @@
 ---
-title: Assets HTTP API in [!DNL Adobe Experience Manager].
+title: '[!DNL 자산] HTTP API in [!DNL Adobe Experience Manager].'
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f29eeb54c115514947a11bbc8a9e9e7df7cd082b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1579'
 ht-degree: 1%
 
 ---
 
 
-# 자산 HTTP API {#assets-http-api}
+# [!DNL Assets] HTTP API {#assets-http-api}
 
 ## 개요 {#overview}
 
-자산 HTTP API를 사용하면 메타데이터, 표현물, 댓글 등 디지털 자산에 대한 CRUD(Create-Read-Update-Delete) 작업을 컨텐츠 조각을 사용한 구조화된 컨텐츠와 함께 수행할 수 [!DNL Experience Manager] 있습니다. REST API로 `/api/assets` 노출되어 구현됩니다. 여기에는 컨텐츠 조각에 대한 [지원이 포함됩니다](/help/assets/assets-api-content-fragments.md).
+HTTP [!DNL Assets] API를 사용하면 메타데이터, 표현물, 댓글 등 디지털 자산에 대한 CRUD(Create-Read-Update-Delete) 작업을 컨텐츠 조각을 사용한 구조화된 컨텐츠와 함께 수행할 수 [!DNL Experience Manager] 있습니다. REST API로 `/api/assets` 노출되어 구현됩니다. 여기에는 컨텐츠 조각에 대한 [지원이 포함됩니다](/help/assets/assets-api-content-fragments.md).
 
 API에 액세스하려면:
 
 1. 에서 API 서비스 문서를 엽니다 `https://[hostname]:[port]/api.json`.
-1. 자산 서비스 링크를 따라 이동합니다 `https://[hostname]:[server]/api/assets.json`.
+1. 다음으로 [!DNL Assets] 이동하는 서비스 링크를 따르십시오 `https://[hostname]:[server]/api/assets.json`.
 
 API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 대한 응답 코드입니다. JSON 응답은 선택 사항이며, 예를 들어 PDF 파일의 경우 사용할 수 없습니다. 추가적인 분석 또는 작업을 위해 응답 코드를 사용합니다.
 
@@ -34,7 +34,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 ## Data model {#data-model}
 
-자산 HTTP API는 두 가지 주요 요소, 폴더 및 자산을 노출합니다(표준 자산의 경우).
+HTTP [!DNL Assets] API는 두 가지 주요 요소, 폴더 및 자산을 노출합니다(표준 에셋의 경우).
 
 또한 컨텐츠 조각에서 구조화된 컨텐츠를 설명하는 사용자 지정 데이터 모델에 대한 보다 자세한 요소를 노출합니다. 자세한 내용은 [컨텐츠 조각 데이터 모델](/help/assets/assets-api-content-fragments.md#content-fragments) 을 참조하십시오.
 
@@ -75,7 +75,7 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 * 속성.
 * 링크.
 
-자산 HTTP API에는 다음 기능이 포함되어 있습니다.
+HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 * [폴더 목록을 검색합니다](#retrieve-a-folder-listing).
 * [폴더를 만듭니다](#create-a-folder).
