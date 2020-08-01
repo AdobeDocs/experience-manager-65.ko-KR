@@ -3,9 +3,9 @@ title: 비디오 자산을 관리할 수 있습니다 [!DNL Adobe Experience Man
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및 게시할 수 있습니다 [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 비디오 에셋 업로드 및 미리 보기 {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] 에서는 확장 MP4를 사용하여 비디오 자산에 대한 미리 보기를 생성합니다. 자산의 형식이 MP4가 아닌 경우 FFmpeg 팩을 설치하여 미리 보기를 생성합니다. FFmpeg는 OGG 및 MP4 유형의 비디오 변환을 만듭니다. 자산 사용자 인터페이스에서 변환을 미리 볼 수 있습니다.
+[!DNL Adobe Experience Manager Assets] 에서는 확장 MP4를 사용하여 비디오 자산에 대한 미리 보기를 생성합니다. 자산의 형식이 MP4가 아닌 경우 FFmpeg 팩을 설치하여 미리 보기를 생성합니다. FFmpeg는 OGG 및 MP4 유형의 비디오 변환을 만듭니다. 사용자 인터페이스에서 변환을 미리 볼 수 [!DNL Assets] 있습니다.
 
 1. 디지털 자산 폴더 또는 하위 폴더에서 디지털 자산을 추가할 위치로 이동합니다.
 1. 자산을 업로드하려면 도구 모음에서 **[!UICONTROL 만들기를]** 클릭한 다음 **[!UICONTROL 파일을 선택합니다]**. 또는 자산 영역에 직접 놓습니다. 업로드 작업에 대한 자세한 내용은 [자산](managing-assets-touch-ui.md#uploading-assets) 업로드를 참조하십시오.
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ## 비디오 자산에 주석 달기 {#annotate-video-assets}
 
-1. 자산 콘솔에서 자산 카드의 [!UICONTROL 편집을] 클릭하여 자산 세부 사항 페이지를 표시합니다.
+1. 콘솔에서 [!DNL Assets] 자산 카드의 [!UICONTROL 편집을] 클릭하여 자산 세부 사항 페이지를 표시합니다.
 1. 비디오를 재생하려면 미리 [!UICONTROL 보기를 클릭합니다].
 1. 비디오에 주석을 추가하려면 [주석] **[!UICONTROL 단추를]** 클릭합니다. 비디오의 특정 시간(프레임)에 주석이 추가됩니다. 주석을 달 때 캔버스에서 드로잉하고 드로잉에 주석을 추가할 수 있습니다. 주석이 자동으로 저장됩니다.
 
