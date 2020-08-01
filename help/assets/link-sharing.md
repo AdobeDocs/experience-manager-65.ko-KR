@@ -1,11 +1,11 @@
 ---
 title: 공유 에셋에 대한 URL 생성
-description: 이 문서에서는 Experience Manager 자산 내에서 자산, 폴더 및 컬렉션을 외부 당사자에게 URL로 공유하는 방법에 대해 설명합니다.
+description: 이 문서에서는 자산, 폴더 및 컬렉션을 외부 당사자에게 URL과 공유하는 방법 [!DNL Experience Manager Assets] 에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1196'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 링크를 통해 에셋 공유 {#asset-link-sharing}
 
-Adobe Experience Manager 자산을 사용하면 자산, 폴더 및 컬렉션을 URL로 조직 및 외부 개체의 구성원(파트너 및 공급업체 등)과 공유할 수 있습니다. 링크를 통해 에셋을 공유하는 것은 외부 당사자가 에셋에 처음 로그인하지 않고도 리소스를 사용할 수 있도록 하는 편리한 방법입니다.
+[!DNL Adobe Experience Manager Assets] 자산, 폴더 및 컬렉션을 URL로 조직 및 외부 개체(파트너 및 공급업체 등)의 구성원과 공유할 수 있습니다. 링크를 통해 에셋을 공유하는 것은 외부 당사자가 처음 로그인할 필요 없이 리소스를 사용할 수 있도록 하는 편리한 방법입니다 [!DNL Assets].
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Adobe Experience Manager 자산을 사용하면 자산, 폴더 및 컬렉션을 
 >
 >사용자와 링크를 공유하기 전에 요일 CQ 메일 서비스가 구성되어 있는지 확인합니다. 일 CQ 메일 서비스를 먼저 [구성하지 않고 링크를 공유하려고 하면 오류가 발생합니다](/help/assets/link-sharing.md#configmailservice).
 
-1. 자산 사용자 인터페이스에서 링크로 공유할 자산을 선택합니다.
+1. 사용자 [!DNL Assets] 인터페이스에서 링크로 공유할 자산을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 링크]** 공유 ![자산 아이콘을 클릭합니다](assets/do-not-localize/assets_share.png).
 
    [링크 공유] 필드에 자산 링크가 **[!UICONTROL 자동으로]** 만들어집니다. 이 링크를 복사하고 사용자와 공유합니다. 링크에 대한 기본 만료 시간은 하루입니다.
@@ -40,7 +40,7 @@ Adobe Experience Manager 자산을 사용하면 자산, 폴더 및 컬렉션을 
 
    >[!NOTE]
    >
-   >Experience Manager 작성자 배포의 링크를 외부 엔티티에 공유하려면 `GET` 요청에만 다음 URL(링크 공유에 사용됨)만 표시해야 합니다. 다른 URL을 차단하여 Experience Manager 작성자의 보안을 보장합니다.
+   >작성자 배포의 링크를 외부 엔티티에 공유하려는 경우 [!DNL Experience Manager] 요청에 대해서만 다음 URL(링크 공유에 사용됨)만 `GET` 표시해야 합니다. 다른 URL을 차단하여 작성자의 보안을 [!DNL Experience Manager] 보장합니다.
    >
    >* http://[aem_server]:[port]/linkshare.html
    >* http://[aem_server]:[port]/linksharepreview.html
@@ -51,9 +51,9 @@ Adobe Experience Manager 자산을 사용하면 자산, 폴더 및 컬렉션을 
    >
    >공유 에셋이 다른 위치로 이동되면 해당 링크가 작동하지 않습니다. 링크를 다시 만들고 사용자와 다시 공유합니다.
 
-1. Experience Manager 인터페이스에서 **[!UICONTROL 도구]** > 작업 **[!UICONTROL >]** 웹 콘솔 **[!UICONTROL 에]**&#x200B;액세스합니다.
+1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL > 작업]****[!UICONTROL >]** 웹 **[!UICONTROL 콘솔에 액세스합니다]**.
 
-1. 일 **[!UICONTROL CQ 링크 외부라이저]** 구성을 열고 도메인 **[!UICONTROL 필드]** 에서, 및 에 대해 언급된 값으로 다음 속성 `local`을 `author`수정합니다 `publish`. 속성 `local` 과 `author` 속성에 대해 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 단일 Experience Manager 작성자 인스턴스를 실행하는 경우 `local` 및 `author` 속성 모두 동일한 값을 갖습니다. 예를 `publish`들어 Experience Manager 게시 인스턴스의 URL을 제공합니다.
+1. 일 **[!UICONTROL CQ 링크 외부라이저]** 구성을 열고 도메인 **[!UICONTROL 필드]** 에서, 및 에 대해 언급된 값으로 다음 속성 `local`을 `author`수정합니다 `publish`. 속성 `local` 과 `author` 속성에 대해 로컬 및 작성자 인스턴스의 URL을 각각 제공합니다. 단일 작성자 인스턴스 `local` 를 실행하는 경우 및 `author` 속성 모두 동일한 값을 [!DNL Experience Manager] 갖습니다. 예를 `publish`들어 게시 인스턴스의 URL을 [!DNL Experience Manager] 제공합니다.
 
 1. [ **[!UICONTROL 링크 공유]** ] 대화 상자의 이메일 주소 상자에 링크를 공유할 사용자의 이메일 ID를 입력합니다. 여러 사용자와 링크를 공유할 수도 있습니다.
 
@@ -96,19 +96,19 @@ Adobe Experience Manager 자산을 사용하면 자산, 폴더 및 컬렉션을 
 
    >[!NOTE]
    >
-   >Experience Manager은 이러한 MIME 유형의 자산 미리 보기를 생성할 수 있도록 지원합니다. JPG, PNG, GIF, BMP, INDD, PDF 및 PPT입니다. 다른 MIME 형식의 자산만 다운로드할 수 있습니다.
+   >[!DNL Experience Manager] 에서는 다음과 같은 MIME 형식의 자산 미리 보기 생성을 지원합니다. JPG, PNG, GIF, BMP, INDD, PDF 및 PPT입니다. 다른 MIME 형식의 자산만 다운로드할 수 있습니다.
 
 1. 공유 자산을 다운로드하려면 도구 모음에서 **[!UICONTROL 선택]** 을 클릭하고 자산을 클릭한 다음 도구 모음에서 **[!UICONTROL 다운로드를]** 클릭합니다.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. 링크로 공유한 자산을 보려면 자산 UI로 이동하고 Experience Manager 로고를 클릭합니다. 목록에서 **[!UICONTROL 탐색]** 을 선택하여 탐색 창을 표시합니다.
+1. 링크로 공유한 자산을 보려면 [!DNL Assets] 사용자 인터페이스로 이동하고 [!DNL Experience Manager] 로고를 클릭합니다. 목록에서 **[!UICONTROL 탐색]** 을 선택하여 탐색 창을 표시합니다.
 1. 탐색 창에서 **[!UICONTROL 공유 링크]** 를 선택하여 공유 에셋 목록을 표시합니다.
 1. 자산 공유를 취소하려면 자산을 선택하고 도구 모음에서 **[!UICONTROL 공유]** 해제를 클릭합니다. 확인 메시지가 표시됩니다. 자산의 항목이 목록에서 제거됩니다.
 
 ## 일 CQ 메일 서비스 구성 {#configmailservice}
 
-1. Experience Manager 홈 페이지에서 **[!UICONTROL 도구]** > 작업 **[!UICONTROL >]** 웹 콘솔 **[!UICONTROL 로]**&#x200B;이동합니다.
+1. 홈 [!DNL Experience Manager] 페이지에서 **[!UICONTROL 도구]** > 작업 **[!UICONTROL >]** 웹 콘솔 **[!UICONTROL 로 이동합니다]**.
 1. 서비스 목록에서 **[!UICONTROL Day CQ Mail Service를 찾습니다]**.
 1. 서비스 옆에 있는 **[!UICONTROL 편집을]** 클릭하고 이름에 대해 **[!UICONTROL 언급된 세부 사항과 함께]** Day CQ Mail Service에 대해 다음 매개 변수를 구성합니다.
 
@@ -123,9 +123,9 @@ Adobe Experience Manager 자산을 사용하면 자산, 폴더 및 컬렉션을 
 
 ## 최대 데이터 크기 구성 {#maxdatasize}
 
-링크 공유 기능을 사용하여 공유된 링크에서 자산을 다운로드할 때 Experience Manager은 저장소의 자산 계층 구조를 압축한 다음 ZIP 파일로 자산을 반환합니다. 그러나 ZIP 파일에서 압축할 수 있는 데이터 양에 대한 제한이 없는 경우 엄청난 양의 데이터가 압축될 수 있으므로 JVM에서 메모리 오류가 발생하지 않습니다. 이러한 상황에서 시스템을 잠재적 서비스 거부 공격으로부터 보호하려면 Configuration Manager의 **[!UICONTROL 일 CQ DAM Adhoc 에셋 공유 프록시 서블릿에 대한 최대 컨텐트 크기(비압축)]** 매개 변수를 사용하여 최대 크기를  구성합니다. 압축되지 않은 자산 크기가 구성된 값을 초과하는 경우 자산 다운로드 요청이 거부됩니다. 기본값은 100MB입니다.
+링크 공유 기능을 사용하여 공유된 링크에서 자산을 다운로드할 때 저장소에서 자산 계층을 압축한 다음 ZIP 파일로 자산을 반환합니다. [!DNL Experience Manager] 그러나 ZIP 파일에서 압축할 수 있는 데이터 양에 대한 제한이 없는 경우 엄청난 양의 데이터가 압축될 수 있으므로 JVM에서 메모리 오류가 발생하지 않습니다. 이러한 상황에서 시스템을 잠재적 서비스 거부 공격으로부터 보호하려면 Configuration Manager의 **[!UICONTROL 일 CQ DAM Adhoc 에셋 공유 프록시 서블릿에 대한 최대 컨텐트 크기(비압축)]** 매개 변수를 사용하여 최대 크기를  구성합니다. 압축되지 않은 자산 크기가 구성된 값을 초과하는 경우 자산 다운로드 요청이 거부됩니다. 기본값은 100MB입니다.
 
-1. Experience Manager 로고를 클릭한 다음 도구 > **[!UICONTROL 작업]** **** > **[!UICONTROL 웹 콘솔]**&#x200B;로이동합니다.
+1. 로고를 [!DNL Experience Manager] 클릭한 다음 **[!UICONTROL 도구]** > 작업 **[!UICONTROL >]** 웹 콘솔 **[!UICONTROL 로 이동합니다]**.
 1. 웹 콘솔에서 **[!UICONTROL 일 CQ DAM 애드혹 자산 공유 프록시 서블릿 구성을]** 찾습니다.
 1. 편집 모드에서 **[!UICONTROL 일 CQ DAM Adhoc 에셋 공유 프록시 서블릿]** 구성을 열고 **[!UICONTROL 최대 컨텐트 크기(압축되지 않은) 매개 변수의 값을]** 수정합니다.
 
@@ -136,6 +136,6 @@ Adobe Experience Manager 자산을 사용하면 자산, 폴더 및 컬렉션을 
 ## Best practices and troubleshooting {#bestpractices}
 
 * 이름에 공백이 포함된 자산 폴더 또는 컬렉션은 공유되지 않을 수 있습니다.
-* 사용자가 공유 자산을 다운로드할 수 없는 경우 Experience Manager 관리자에게 [다운로드 제한](#maxdatasize) 사항을 문의하십시오.
-* 공유 자산에 대한 링크가 있는 이메일을 보낼 수 없거나 다른 사용자가 이메일을 받을 수 없는 경우 [이메일 서비스가](#configmailservice) 구성되었는지 여부를 Experience Manager 관리자에게 문의하십시오.
+* 사용자가 공유 자산을 다운로드할 수 없는 경우 관리자에게 [!DNL Experience Manager] 다운로드 제한 [](#maxdatasize) 사항을 문의하십시오.
+* 공유 자산에 대한 링크가 포함된 이메일을 보낼 수 없거나 다른 사용자가 이메일을 수신할 수 없는 경우 [!DNL Experience Manager] 이메일 서비스가 [](#configmailservice) 구성되었는지 여부를 관리자에게 문의하십시오.
 * 링크 공유 기능을 사용하여 자산을 공유할 수 없는 경우 적절한 권한이 있는지 확인하십시오. 자산 [공유를 참조하십시오](#sharelink).
