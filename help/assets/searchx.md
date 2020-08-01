@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager 자산의 검색 기능 확장
-description: Adobe Experience Manager 자산의 검색 기능을 기본값 이상으로 확장합니다.
+title: 의 검색 기능을 [!DNL Adobe Experience Manager Assets]확장합니다.
+description: 기본값 [!DNL Adobe Experience Manager Assets] 을 벗어나는 검색 기능을 확장합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '841'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->6.4부터 클래식 UI는 더 이상 사용되지 않습니다. [!DNL Experience Manager] 자세한 내용은 [더 이상 사용되지 않는 기능 및 제거된 기능을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe에서는 터치 지원 UI를 사용하는 것이 좋습니다. 사용자 정의에 대해서는 [검색 패싯을 참조하십시오](/help/assets/search-facets.md).
+>6.4부터 클래식 UI는 더 이상 사용되지 않습니다. [!DNL Experience Manager] 자세한 내용은 [더 이상 사용되지 않는 기능 및 제거된 기능을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe은 터치 지원 UI를 사용하는 것이 좋습니다. 사용자 정의에 대해서는 [검색 패싯을 참조하십시오](/help/assets/search-facets.md).
 
 ## 오버레이 {#overlaying}
 
@@ -35,7 +35,7 @@ ht-degree: 7%
 
 ## 탭 추가 {#adding-tabs}
 
-자산 관리 인터페이스에서 검색 탭을 구성하여 추가 검색 탭을 추가할 수 있습니다. 추가 탭을 만들려면
+관리 인터페이스에서 검색 탭을 구성하여 추가 검색 탭을 추가할 수 [!DNL Assets] 있습니다. 추가 탭을 만들려면
 
 1. 폴더 구조가 없는 `/apps/wcm/core/content/damadmin/tabs,`경우 폴더 구조를 만들고, `tabs` 노드를 복사한 후 붙여넣습니다 `/libs/wcm/core/content/damadmin` .
 1. 원하는 대로 두 번째 탭을 만들고 구성합니다.
@@ -48,7 +48,7 @@ ht-degree: 7%
 
 [!DNL Assets] 에셋 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 예측 세트가 포함되어 있습니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [를 만들고 구성하는 데 포함됩니다](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Experience Manager 개발자는 기존의 예측 기능을 사용하는 것 외에도 [쿼리 빌더 API를 사용하여 자체 설명을 만들 수 있습니다](/help/sites-developing/querybuilder-api.md).
+개발자는 기존 예측자를 사용하는 것 외에도 [!DNL Experience Manager] 쿼리 빌더 API를 사용하여 [고유한 설명](/help/sites-developing/querybuilder-api.md)을 만들 수 있습니다.
 
 사용자 정의 설명을 만들려면 [Widgets 프레임워크에 대한 기본적인 지식이 필요합니다](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -296,6 +296,6 @@ Experience Manager 개발자는 기존의 예측 기능을 사용하는 것 외�
 
 ## 검색 결과 사용자 정의 {#customizing-search-results}
 
-자산 공유 페이지의 검색 결과 프레젠테이션은 선택한 렌즈에 의해 제어됩니다. Experience Manager 자산은 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 사전 정의된 렌즈 세트와 함께 제공됩니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [만들기 및 구성에서 다룹니다](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+자산 공유 페이지의 검색 결과 프레젠테이션은 선택한 렌즈에 의해 제어됩니다. [!DNL Experience Manager Assets] 에는 자산 공유 페이지를 사용자 지정하는 데 사용할 수 있는 미리 정의된 렌즈 세트가 포함되어 있습니다. 이렇게 자산 공유 사용자 지정은 자산 공유 페이지 [만들기 및 구성에서 다룹니다](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Experience Manager 개발자들은 기존의 렌즈를 사용하는 것 외에 자체 렌즈를 만들 수도 있다.
+기존 렌즈를 사용하는 것 외에도, [!DNL Experience Manager] 개발자들은 자신들의 렌즈를 만들 수 있습니다.
