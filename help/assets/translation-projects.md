@@ -3,9 +3,9 @@ title: 번역 프로젝트 만들기
 description: 에서 번역 프로젝트를 만드는 방법을 [!DNL Adobe Experience Manager]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34b98636966264b15b16fffc9e712b925303a701
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1898'
 ht-degree: 5%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 5%
 
 이 옵션을 사용하면 번역될 에셋이 번역하려는 언어의 언어 루트로 복사됩니다. 선택한 옵션에 따라 프로젝트 콘솔에서 자산에 대한 번역 프로젝트가 생성됩니다. 설정에 따라 번역 프로젝트를 수동으로 시작하거나 번역 프로젝트를 만드는 즉시 자동으로 실행할 수 있습니다.
 
-1. 자산 UI에서 언어 사본을 만들 소스 폴더를 선택합니다.
+1. 사용자 인터페이스에서 언어 사본을 만들 소스 폴더를 선택합니다. [!DNL Assets]
 1. 참조 **[!UICONTROL 창]** 을 열고 사본 **[!UICONTROL 에서 언어 사본]** 을 **[!UICONTROL 클릭합니다]**.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
@@ -85,7 +85,7 @@ ht-degree: 5%
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 소스 폴더의 에셋이 4단계에서 선택한 로케일의 대상 폴더로 복사됩니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. [!DNL Assets] 소스 폴더에서 4단계에서 선택한 로케일의 대상 폴더로 복사됩니다.
 
    ![언어 복사](assets/lang-copy2.png)
 
@@ -111,12 +111,11 @@ ht-degree: 5%
 
    작업 상태에 대한 자세한 내용은 번역 작업 [상태 모니터링을 참조하십시오](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. 자산 UI로 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
+1. UI로 [!DNL Assets] 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
    ![자산 속성 페이지에서 번역된 메타데이터 보기](assets/translated-metadata-asset-properties.png)
 
    *그림: 자산 속성 페이지의 번역된 메타데이터*
-
 
    >[!NOTE]
    >
@@ -126,7 +125,7 @@ ht-degree: 5%
 
 이 옵션을 사용하면 이전 번역 워크플로우를 실행한 후 소스 폴더에 추가하는 자산에 대해 번역 워크플로우가 실행됩니다. 이전에 번역된 에셋이 포함된 대상 폴더에는 새로 추가된 에셋만 복사됩니다. 이 경우에는 새 번역 프로젝트가 생성되지 않습니다.
 
-1. 자산 UI에서 번역되지 않은 자산이 포함된 소스 폴더로 이동합니다.
+1. UI [!DNL Assets] 에서 번역되지 않은 에셋이 포함된 소스 폴더로 이동합니다.
 1. 번역할 자산을 선택하고 **[!UICONTROL 참조 창을 엽니다]**. 언어 **[!UICONTROL 복사]** 섹션에는 현재 사용 가능한 번역 사본의 수가 표시됩니다.
 1. 사본 **[!UICONTROL 에서]** 언어 사본 **[!UICONTROL 을 클릭합니다]**. 사용 가능한 번역 사본 목록이 표시됩니다.
 1. 맨 아래에 있는 **[!UICONTROL 만들기]** 및 번역을 클릭합니다.
@@ -184,7 +183,7 @@ ht-degree: 5%
 
    자세한 내용은 번역 작업 [상태 모니터링을 참조하십시오](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. 번역이 완료되면 상태가 검토 준비됨으로 변경됩니다. 자산 UI로 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
+1. 번역이 완료되면 상태가 검토 준비됨으로 변경됩니다. UI로 [!DNL Assets] 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
 ## 언어 복사 업데이트 {#update-language-copies}
 
@@ -197,7 +196,7 @@ ht-degree: 5%
 
 이 옵션을 사용하면 언어 사본을 업데이트할 에셋 세트에 대한 번역 프로젝트가 생성됩니다.
 
-1. 자산 UI에서 자산을 추가한 소스 폴더를 선택합니다.
+1. UI [!DNL Assets] 에서 자산을 추가한 소스 폴더를 선택합니다.
 1. [ **[!UICONTROL 참조]** ] 창 **[!UICONTROL 을]** 열고 [복사본] 아래에 있는 **** 언어 사본을 클릭하여 언어 사본목록을 표시합니다.
 1. 언어 사본 앞의 **[!UICONTROL 확인란을]**&#x200B;선택한 다음 해당 로케일에 해당하는 대상 폴더를 선택합니다.
 
@@ -240,13 +239,13 @@ ht-degree: 5%
 
    작업 상태에 대한 자세한 내용은 번역 작업 [상태 모니터링을 참조하십시오](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. 자산 UI로 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
+1. 사용자 인터페이스로 [!DNL Assets] 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
 ### 기존 번역 프로젝트에 추가 {#add-to-existing-translation-project-1}
 
 이 옵션을 사용하면 기존 번역 프로젝트에 자산 세트가 추가되어 선택한 로케일에 대한 언어 사본을 업데이트합니다.
 
-1. 자산 UI에서 자산 폴더를 추가한 소스 폴더를 선택합니다.
+1. UI에서 [!DNL Assets] 자산 폴더를 추가한 소스 폴더를 선택합니다.
 1. 참조 창 **[!UICONTROL 을]**&#x200B;열고 사본 **[!UICONTROL 에서]** 언어 사본 **[!UICONTROL 을 클릭하여 언어 사본]** 목록을 표시합니다.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
