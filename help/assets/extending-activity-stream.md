@@ -1,23 +1,23 @@
 ---
-title: 활동 스트림과 자산 통합
-description: Experience Manager의 레코딩 기능과 특정 이벤트를 기록하도록 구성하는 방법에 대해 설명합니다.
+title: Integrate [!DNL Assets] with activity stream.
+description: 특정 이벤트를 기록하도록 레코딩 기능 [!DNL Experience Manager] 과 이를 구성하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
 
 
-# Integrate Assets with activity stream {#integrating-assets-with-activity-stream}
+# Integrate [!DNL Assets] with activity stream {#integrating-assets-with-activity-stream}
 
-Adobe Experience Manager Assets 사용자는 자산 만들기, 업로드 및 삭제와 같은 다양한 작업을 수행합니다. 이러한 작업을 기록하여 사용자가 수행한 작업의 내역을 제공할 수 있습니다. 이 섹션에서는 Experience Manager의 레코딩 기능과 특정 이벤트를 기록하기 위해 Experience Manager를 구성하는 방법에 대해 설명합니다.
+[!DNL Adobe Experience Manager Assets] 사용자는 자산 만들기, 업로드 및 삭제와 같은 많은 작업을 수행합니다. 이러한 작업을 기록하여 사용자가 수행한 작업의 내역을 제공할 수 있습니다. 이 섹션에서는 특정 이벤트를 기록하기 위해 [!DNL Experience Manager] 의 레코딩 기능과 구성 방법 [!DNL Experience Manager] 에 대해 설명합니다.
 
 ## 성능 고려 사항 및 기본 동작 {#performance-considerations-and-default-behavior}
 
-이 통합은 벌크 가져오기를 수행할 때와 같이 CPU 및 디스크 공간이 많이 소모될 수 있습니다. 이러한 이유로 활동 스트림과의 자산 통합이 기본적으로 비활성화되어 있습니다.
+이 통합은 벌크 가져오기를 수행할 때와 같이 CPU 및 디스크 공간이 많이 소모될 수 있습니다. 이러한 이유로 활동 스트림과의 [!DNL Assets] 통합이 기본적으로 비활성화됩니다.
 
 ## 지원되는 작업 이벤트 {#supported-action-events}
 
@@ -39,7 +39,7 @@ Adobe Experience Manager Assets 사용자는 자산 만들기, 업로드 및 삭
 * 하위 자산 업데이트됨(SUBASSET_UPDATED)
 * 하위 자산이 제거됨(SUBASSET_REMOVED)
 
-## 자산 이벤트 기록 구성 {#configuring-aem-assets-events-recording}
+## 이벤트 [!DNL Assets] 기록 구성 {#configuring-aem-assets-events-recording}
 
 웹 [콘솔에서는](/help/sites-deploying/configuring-osgi.md) 자산 이벤트 레코더 조정에 액세스할 수 있습니다. 자산 이벤트 레코더를 구성하려면 다음과 같이 하십시오.
 
