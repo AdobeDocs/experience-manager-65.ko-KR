@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager에서 비공개 폴더를 만들고 공유합니다.
-description: Adobe Experience Manager 자산에서 비공개 폴더를 만들고 다른 사용자와 공유하며 이들에게 다양한 권한을 할당하는 방법을 알아보십시오.
+title: 에서 비공개 폴더를 만들고 공유합니다 [!DNL Adobe Experience Manager].
+description: 비공개 폴더를 만들고 다른 사용자와 [!DNL Adobe Experience Manager Assets] 공유하고 다양한 권한을 할당하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '480'
 ht-degree: 2%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 2%
 
 # 비공개 폴더 공유 {#private-folder-sharing}
 
-단독으로 사용할 수 있는 Adobe Experience Manager 자산 사용자 인터페이스에 비공개 폴더를 만들 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라, 사용자는 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
+개인 폴더는 [!DNL Adobe Experience Manager Assets] 사용자 인터페이스에서만 사용할 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라, 사용자는 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
 
 >[!NOTE]
 >
 >비공개 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다.
 
-1. 자산 콘솔의 도구 모음에서 **[!UICONTROL 만들기를]** 클릭한 다음 메뉴에서 **[!UICONTROL 폴더]** 를 선택합니다.
+1. 콘솔의 도구 모음 [!DNL Assets] 에서 **[!UICONTROL 만들기를]** 클릭한 다음 메뉴에서 **[!UICONTROL 폴더]** 를 선택합니다.
 
    ![에셋 폴더 만들기](assets/Create-folder.png)
 
@@ -49,9 +49,9 @@ ht-degree: 2%
    >
    >비공개 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다. 따라서 관리자는 비공개 폴더에서 모든 소유자 구성원을 제거할 수 없습니다. 그러나 개인 폴더에서 기존 소유자(및 관리자 자체)를 제거하려면 관리자가 다른 사용자를 소유자로 추가해야 합니다.
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 사용자가 자산에 로그인할 때 지정하는 역할에 따라 개인 폴더에 대한 권한 세트가 할당됩니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 지정한 역할에 따라 사용자가 로그인할 때 개인 폴더에 대한 권한 세트가 할당됩니다 [!DNL Assets].
 1. 확인을 **[!UICONTROL 클릭하여]** 확인 메시지를 닫습니다.
-1. 폴더를 공유하는 사용자는 공유 알림을 받습니다. 알림을 보려면 사용자의 자격 증명으로 자산에 로그인합니다.
+1. 폴더를 공유하는 사용자는 공유 알림을 받습니다. 알림을 보려면 사용자 [!DNL Assets] 의 자격 증명으로 로그인합니다.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
