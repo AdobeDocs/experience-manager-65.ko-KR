@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Experience Manager 6.5 자산 사용 안내서
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '630'
+ht-degree: 95%
 
 ---
 
@@ -16,21 +16,21 @@ ht-degree: 100%
 # Experience Manager 6.5 자산 사용 안내서 {#assets}
 
 + [[!DNL Assets] 사용 안내서](home.md)
-+ [AEM 6.5 Assets 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/release-notes/assets.html)
++ [Experience Manager 6.5 자산 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/release-notes/assets.html)
 + [DAM 정보](assets.md)
 + [자산에 대한 우수 사례](best-practices-for-assets.md)
-+ AEM Assets 사용 {#using}
-   + [AEM Assets 홈 페이지 경험](assets-home-page.md)
-   + [AEM에서 자산 검색](search-assets.md)
++ Experience Manager 자산 사용 {#using}
+   + [자산 홈 페이지 경험](assets-home-page.md)
+   + [디지털 에셋 검색](search-assets.md)
    + [다국어 자산](multilingual-assets.md)
-   + [ [!DNL Adobe Stock] AEM Assets에서 자산 사용](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock]  Assets에서 자산 사용](aem-assets-adobe-stock.md)
    + [3D 자산 미리 보기](previewing-3d-assets.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [타임라인의 활동 스트림](activity-stream.md)
    + [자산 처리](assets-workflow.md)
    + [이미지 맵 추가](image-maps.md)
    + [MSM을 사용하여 자산 재사용](reuse-assets-using-msm.md)
-   + [AEM Sites와 연결된 자산](use-assets-across-connected-assets-instances.md)
+   + [ Sites와 연결된 자산](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Experience League의 Dynamic Media 뉴스레터](dynamic-media-newsletter.md)
    + [Dynamic Media 설정](administering-dynamic-media.md)
@@ -76,14 +76,14 @@ ht-degree: 100%
    + [벌크 자산 마이그레이션용 기능 팩 18912 설치](bulk-ingest-migrate.md)
    + [선택기를 사용한 작업](working-with-selectors.md)
 + 자산 확장 {#extending}
-   + [AEM Assets 사용자 지정 및 확장](extending-assets.md)
+   + [ Assets 사용자 지정 및 확장](extending-assets.md)
    + [미디어 핸들러 및 워크플로우를 사용하여 자산 처리](media-handlers.md)
    + [검색 기능 확장](searchx.md)
-   + [ [!DNL ImageMagick] AEM Assets에서 작동하도록 설치 및 구성](best-practices-for-imagemagick.md)
+   + [ [!DNL ImageMagick]  Assets에서 작동하도록 설치 및 구성](best-practices-for-imagemagick.md)
    + [자산과 활동 스트림 통합](extending-activity-stream.md)
    + [자산 편집기 확장](asseteditorx.md)
    + [자산 HTTP API](mac-api-assets.md)
-   + [AEM Assets HTTP API의 컨텐츠 조각 지원](assets-api-content-fragments.md)
+   + [ Assets HTTP API의 컨텐츠 조각 지원](assets-api-content-fragments.md)
    + [자산 프록시 개발](proxy.md)
 + 자산 관리 {#administer}
    + [지원되는 파일 형식](assets-formats.md)
@@ -104,10 +104,10 @@ ht-degree: 100%
    + [자산 마이그레이션 안내서](assets-migration-guide.md)
    + [XMP 메타데이터](xmp.md)
    + [자산 네트워크 고려사항](assets-network-considerations.md)
-   + [AEM Assets 및 AEM MediaLibrary](medialibrary.md)
+   + [에셋 및 미디어 라이브러리](medialibrary.md)
    + [PDF 래스터라이저 사용](aem-pdf-rasterizer.md)
    + [업로드 제한 구성](configuring-asset-upload-restrictions.md)
-   + [AEM 및 Creative Cloud 통합 우수 사례](aem-cc-integration-best-practices.md)
+   + [Experience Manager 및 Creative Cloud 통합](aem-cc-integration-best-practices.md)
    + [InDesign 서버와 통합](indesign.md)
    + [메타데이터 프로필](metadata-profiles.md)
    + [자산의 디지털 권한 관리](drm.md)
@@ -127,7 +127,7 @@ ht-degree: 100%
    + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [스마트 태그 관리](managing-smart-tags.md)
 + 브랜드 포털 {#brandportal}
-   + [Brand Portal에서 AEM Assets 구성](configure-aem-assets-with-brand-portal.md)
+   + [Brand Portal로 Assets 구성](configure-aem-assets-with-brand-portal.md)
    + [자산을 Brand Portal에 게시](brand-portal-publish-assets.md)
    + [폴더를 Brand Portal에 게시](brand-portal-publish-folder.md)
    + [컬렉션을 Brand Portal에 게시](brand-portal-publish-collection.md)
@@ -151,7 +151,7 @@ ht-degree: 100%
    + [비디오 자산 관리](managing-video-assets.md)
    + [번역 프로젝트 만들기](translation-projects.md)
    + [자산 번역 준비](preparing-assets-for-translation.md)
-   + [AEM에서 자산 다운로드](download-assets-from-aem.md)
+   + [Experience Manager에서 자산 다운로드](download-assets-from-aem.md)
    + [비동기 작업](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [자산 통찰력](touch-ui-asset-insights.md)
