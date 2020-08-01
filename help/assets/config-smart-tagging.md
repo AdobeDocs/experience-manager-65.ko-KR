@@ -3,9 +3,9 @@ title: 스마트 콘텐츠 서비스를 사용하여 자산 태그 지정을 구
 description: 스마트 콘텐츠 서비스를 사용하여 스마트 태그 지정 및 고급 스마트 태그 [!DNL Adobe Experience Manager]기능을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1103'
 ht-degree: 35%
 
 ---
@@ -19,7 +19,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 1. Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. OAuth 통합을 위한 [공개 인증서를 받습니다](#obtain-public-certificate).
 1. [Adobe 개발자 콘솔에서 통합을 만들고](#create-adobe-i-o-integration) 생성된 공개 키를 업로드합니다.
-1. [API 키 및 Adobe 개발자 콘솔의 기타 자격 증명을 사용하여 배포를](#configure-smart-content-service) 구성합니다.
+1. [Adobe 개발자 콘솔의 API 키 및 기타 자격 증명을 사용하여 배포를](#configure-smart-content-service) 구성합니다.
 1. [구성을 테스트합니다](#validate-the-configuration).
 1. 자산 업로드 시 자동 태그 지정 [을 활성화할 수도 있습니다](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
@@ -33,7 +33,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
 -->
 
-고급 스마트 태그를 활성화하려면 위의 기능 외에 최신 [AEM 서비스 팩도 설치합니다](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html).
+고급 스마트 태그를 활성화하려면 위의 [Experience Manager 서비스 팩도 설치합니다](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html).
 
 ## 공개 인증서 받기 {#obtain-public-certificate}
 
@@ -43,7 +43,7 @@ Adobe 개발자 콘솔 [!DNL Adobe Experience Manager] 을 사용하여 스마�
 
 1. Cloud Service 페이지에서 자산 스마트 태그 아래의 **[!UICONTROL 지금]** 구성을 **[!UICONTROL 클릭합니다]**.
 1. 구성 **[!UICONTROL 만들기]** 대화 상자에서 스마트 태그 구성의 제목과 이름을 지정합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
-1. AEM **[!UICONTROL 스마트 콘텐츠 서비스]** 대화 상자에서 다음 값을 사용하십시오.
+1. AEM **[!UICONTROL 스마트 콘텐츠 서비스]** 대화 상자에서 다음 값을 사용합니다.
 
    **[!UICONTROL 서비스 URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
 
