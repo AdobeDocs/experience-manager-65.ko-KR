@@ -1,21 +1,16 @@
 ---
 title: AEM Communities 릴리스 노트
 description: Adobe Experience Manager 6.5 Communities와 관련된 릴리스 노트입니다.
-uuid: 1b436959-581c-4b34-b2df-cccc5727da59
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: c3505807-1550-491a-8619-e87839afca4f
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 62%
+ht-degree: 61%
 
 ---
 
 
-# AEM Communities 릴리스 노트{#aem-communities-release-notes}
+# AEM Communities release notes {#aem-communities-release-notes}
 
 6.4 릴리스 이후 AEM Communities에 대한 개선 사항을 확인하십시오. To learn about the new features in greater detail, see [AEM 6.5 Communities User Guide](https://helpx.adobe.com/kr/experience-manager/6-4/communities/user-guide.html).
 
@@ -25,13 +20,13 @@ To obtain the latest release, see the [Deploying Communities](https://helpx.adob
 
 ### 커뮤니티 참여에 대한 개선 {#enhancements-to-community-engagement}
 
-**@언급 지원** AEM Communities를 사용하면 등록된 사용자가 사용자 생성 컨텐츠에서 다른 등록된 멤버에 태그를 지정하여 관심을 유도할 수 있습니다. 그런 다음 태그가 지정된(멘션된) 구성원에게 해당 사용자 생성 컨텐츠에 대한 상세 링크와 정보가 제공됩니다. 그러나 사용자는 웹 및 이메일 알림을 비활성화/활성화하도록 선택할 수 있습니다.
+**@언급 지원** AEM Communities을 통해 등록된 사용자가 사용자 생성 컨텐츠에서 다른 등록된 멤버에 태그를 지정하여 관심을 유도할 수 있습니다(언급). 그런 다음 태그가 지정된(멘션된) 구성원에게 해당 사용자 생성 컨텐츠에 대한 상세 링크와 정보가 제공됩니다. 그러나 사용자는 웹 및 이메일 알림을 비활성화/활성화하도록 선택할 수 있습니다.
 
 ![@mentions 지원](assets/at-mentions.png)
 
 커뮤니티 사용자는 자신의 이름, 성 또는 사용자 이름을 검색하지 않아도 누군가가 자신의 관심을 끌었거나 주의를 기울여야 하는지 확인할 수 있습니다. 또한 UGC 작성자는 문제를 가장 잘 처리하고 입력을 추가할 수 있는 등록된 특정 사용자의 응답을 찾을 수 있습니다.
 
-커뮤니티 관리자는 등록된 사용자가 해당 구성 요소에서 기능을 사용할 수 있도록 하려면 **커뮤니티 구성 요소에서 언급 **을 활성화해야 합니다.
+The community administrators need to **Enable Mention** on community components to allow registered users use the functionality on those components.
 
 **그룹 메시징**
 
@@ -71,8 +66,10 @@ AEM 6.5 Communities 이상에서는 서로 다른 커뮤니티 사이트 및 그
 
 The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
 
-**지원 구성 요소의 키보드 탐색 지원**AEM Communities의 활성 구성 요소(예: 카탈로그 및 강좌 재생, 할당, 파일 라이브러리)는 키보드 탐색을 지원하여 액세서빌러티를 향상시킵니다.
+* 활성 구성 요소의 키보드 탐색 지원
+* AEM Communities의 활성 구성 요소(예: 카탈로그 및 강좌 재생, 할당, 파일 라이브러리)는 키보드 탐색을 지원하여 액세서빌러티를 향상시킵니다.
 
 ### 기타 개선 사항 {#other-enhancements}
 
-* **Solr 7 지원**AEM 6.5 Communities는 MSRP 및 DSRP를 설정하는 동안 검색 플랫폼의 Apache Solr 7.0 버전을 지원합니다.
+* Solr 7 지원
+* AEM 6.5 Communities는 MSRP 및 DSRP를 설정하는 동안 검색 플랫폼의 Apache Solr 7.0 버전을 지원합니다.
