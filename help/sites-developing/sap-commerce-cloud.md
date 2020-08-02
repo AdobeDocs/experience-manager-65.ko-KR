@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+source-git-commit: 2dad235c94c73c1c624fa05ff86a7260d4d4a01b
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2329'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 1%
 통합 프레임워크에는 API와 통합 레이어가 포함되어 있습니다. 이를 통해 다음을 수행할 수 있습니다.
 
 * e커머스 시스템을 연결하고 AEM에 제품 데이터 가져오기
+
 * 특정 eCommerce 엔진과 독립적인 상거래 기능을 위한 AEM 구성 요소 구축
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
@@ -56,6 +57,7 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
    * 구현은 리소스 계층 구조에서 `adaptTo` `cq:commerceProvider` 속성을 찾습니다.
 
       * 검색된 경우 이 값은 커머스 서비스 조회를 필터링하는 데 사용됩니다.
+
       * 찾을 수 없으면 가장 높은 등급의 커머스 서비스가 사용됩니다.
    * 혼합을 `cq:Commerce` 사용하여 강력한 형식의 리소스에 추가할 `cq:commerceProvider` 수 있습니다.
 
@@ -69,7 +71,7 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
 아래의 예를 참조하십시오.
 
 | `cq:commerceProvider = geometrixx` | 표준 AEM 설치에서는 특정 구현이 필요합니다. 예를 들어, geometrixx 예제(일반 API에 대한 최소 확장 기능 포함) |
-|---|---|
+|--- |--- |
 | `cq:commerceProvider = hybris` | hybris 구현 |
 
 ### 예 {#example}
@@ -117,6 +119,7 @@ Hybris 4를 개발하기 위해서는 다음이 필요합니다.
 * OSGi 구성 관리자에서:
 
    * 기본 응답 파서 서비스에 대한 Hybris 5 지원을 비활성화합니다.
+
    * Hybris Basic Authentication Handler 서비스가 Hybris OAuth Handler 서비스보다 서비스 순위가 낮은지 확인하십시오.
 
 ### 세션 처리 {#session-handling}
@@ -124,7 +127,9 @@ Hybris 4를 개발하기 위해서는 다음이 필요합니다.
 hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정보를 저장합니다. 세션 ID는 이후 하이브리스로 요청을 보낼 때 `JSESSIONID` 쿠키의 hybris에서 반환됩니다. 세션 ID를 저장소에 저장하지 않게 하려면 구매자의 브라우저에 저장된 다른 쿠키로 인코딩됩니다. 다음 단계가 수행됩니다.
 
 * 첫 번째 요청에서는 구매자의 요청에 쿠키가 설정되지 않습니다. 따라서 세션을 만들기 위해 hybris 인스턴스로 요청이 전송됩니다.
+
 * 세션 쿠키는 응답에서 추출되며 새 쿠키(예:)로 인코딩되어 구매자에 대한 응답을 `hybris-session-rest`설정합니다. 원래 쿠키는 특정 경로에만 유효하고 이후 요청에서는 브라우저에서 다시 전송되지 않으므로 새 쿠키의 인코딩이 필요합니다. 경로 정보도 쿠키의 값에 추가해야 합니다.
+
 * 후속 요청에서 쿠키는 `hybris-session-<*xxx*>` 쿠키에서 디코딩되고 하이브리스의 데이터를 요청하는 데 사용되는 HTTP 클라이언트에 설정됩니다.
 
 >[!NOTE]
@@ -136,6 +141,7 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 * 이 세션은 **장바구니를 &quot;소유&quot;합니다.**
 
    * 추가/제거/기타
+
    * 장바구니에서 다양한 계산을 수행합니다.
 
       `commerceSession.getProductPrice(Product product)`
@@ -145,6 +151,7 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
    `CommerceSession.getUserContext()`
 
 * 또한 **결제** 처리 연결을 소유합니다.
+
 * 주문 처리 **연결도** 소유
 
 ### 제품 동기화 및 게시 {#product-synchronization-and-publishing}
@@ -163,33 +170,34 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 * 하이브리스의 카탈로그 변경 사항은 피드를 통해 AEM에 표시된 다음 AEM(b)에 전파됩니다.
 
    * 카탈로그 버전과 관련하여 추가/삭제/변경된 제품
+
    * 제품 승인됨.
 
 * hybris 확장자는 지정된 간격(예: 간격을 초 단위로 지정하는 24시간마다)에 변경 내용을 AEM으로 가져오도록 구성할 수 있는 투표 가져오기(&quot;hybris&quot; scheme&quot;)를 제공합니다.
 
-   * 
-
-      ```js
-      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-       {
-       * "jcr:mixinTypes": ["cq:PollConfig"],
-       * "enabled": true,
-       * "source": "hybris:outdoors",
-       * "jcr:primaryType": "cq:PageContent",
-       * "interval": 86400
-       }
-      ```
+   ```JavaScript
+       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+        {
+        * "jcr:mixinTypes": ["cq:PollConfig"],
+        * "enabled": true,
+        * "source": "hybris:outdoors",
+        * "jcr:primaryType": "cq:PageContent",
+        * "interval": 86400
+        }
+   ```
 
 * AEM의 카탈로그 구성은 단계 **및** **온라인** 카탈로그 버전을 인식합니다.
 
 * 카탈로그 버전 간 제품을 동기화하려면 해당 AEM 페이지(a, c)의 (비)정품 인증이 필요합니다.
 
    * 온라인 **** 카탈로그 버전에 제품을 추가하려면 제품 페이지를 활성화해야 합니다.
+
    * 제품을 제거하려면 비정품 인증이 필요합니다.
 
 * AEM(c)에서 페이지를 활성화하려면 확인(b)이 필요하며,
 
    * 이 제품은 제품 페이지의 **온라인** 카탈로그 버전입니다.
+
    * 참조된 제품은 다른 페이지(예: 캠페인 페이지)에 대한 **온라인** 카탈로그 버전에서 사용할 수 있습니다.
 
 * 활성화된 제품 페이지는 제품 데이터의 **온라인** 버전(d)에 액세스해야 합니다.
@@ -213,7 +221,6 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 >[!NOTE]
 >
 >변형 축은 반환되는 모든 것에 의해 `Product.getVariantAxes()` 결정됩니다.
->
 >* hybris는 hybris 구현을 위해 정의합니다.
 >
 >
@@ -224,7 +231,7 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
    >
 1. 하나 더
 >
->   
+>
 이 추가 변형은 제품 참조의 `variationAxis` 속성을 통해 선택됩니다(일반적으로 Geometrixx Outdoors `color` ).
 
 #### 제품 참조 및 제품 데이터 {#product-references-and-product-data}
@@ -237,7 +244,7 @@ hybris는 사용자 세션을 사용하여 고객의 장바구니와 같은 정�
 
 제품 변형과 제품 데이터 노드 간에는 1:1 맵이 있어야 합니다.
 
-제품 참조에도 제시된 각 변형에 대한 노드가 있어야 하지만 모든 변형을 제시할 필요는 없습니다. 예를 들어 제품에 S, M, L 변형이 있는 경우 제품 데이터가 될 수 있습니다.
+제품 참조에도 제시된 각 변형에 대한 노드가 있어야 하지만 모든 변형을 제시할 필요는 없습니다. 예를 들어 제품에 S, M, L 변형이 있는 경우 제품 데이터는 다음과 같습니다.
 
 ```shell
 etc
@@ -249,7 +256,7 @@ etc
 |       |──shirt-l
 ```
 
-&quot;크고 긴&quot; 카탈로그만 있을 수 있습니다.
+&quot;크고 긴&quot; 카탈로그에는 다음이 있을 수 있습니다.
 
 ```shell
 content
@@ -335,24 +342,30 @@ public class AxisFilter implements VariantFilter {
 
 * **일반 스토리지 메커니즘**
 
-   * 제품 노드는 구조화되지 않습니다.
+   * 제품 노드는 그대로 `nt:unstructured`있습니다.
+
    * 제품 노드는 다음 중 하나일 수 있습니다.
 
       * 제품 데이터가 다른 곳에 저장되는 참조:
 
          * 제품 참조에는 제품 데이터(일반적으로 아래)를 가리키는 `productData` 속성이 `/etc/commerce/products`포함됩니다.
+
          * 제품 데이터는 계층적입니다. 제품 속성은 제품 데이터 노드의 상위 항목에서 상속됩니다.
+
          * 제품 참조에는 제품 데이터에 지정된 속성을 재정의하는 로컬 속성이 포함될 수도 있습니다.
       * 제품 자체:
 
          * 속성 `productData` 이 없습니다.
+
          * 모든 속성을 로컬로 보유하며 productData 속성을 포함하지 않는 제품 노드는 해당 상위 제품에서 바로 제품 특성을 상속합니다.
 
 
 * **AEM-일반 제품 구조**
 
    * 각 변형에는 자체 리프 노드가 있어야 합니다.
+
    * 제품 인터페이스는 제품 및 변형을 모두 표시하지만 관련 저장소 노드는 해당 항목과 관련이 있습니다.
+
    * 제품 노드는 제품 속성과 변형 축에 대해 설명합니다.
 
 #### 예 {#example-1}
@@ -507,6 +520,7 @@ The `CommerceSession` owner the three elements:
 **결제 처리**
 
 * 결제 처리 `CommerceSession` 연결도 소유합니다.
+
 * 구현자는 특정 호출(선택한 결제 처리 서비스에)을 구현에 추가해야 `CommerceSession` 합니다.
 
 **주문 처리**
