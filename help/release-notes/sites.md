@@ -1,21 +1,16 @@
 ---
 title: AEM Sites 릴리스 노트
 description: Adobe Experience Manager 6.5 Sites에 관한 릴리스 노트입니다.
-uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
-docset: aem65
-translation-type: ht
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 100%
 
 ---
 
 
-# AEM Sites 릴리스 노트{#aem-sites-release-notes}
+# AEM Sites 릴리스 노트 {#aem-sites-release-notes}
 
 AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십시오.
 
@@ -27,10 +22,10 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
 
    * 문자열, 배열 및 개체의 &quot;in&quot; 연산자:
 
-      ```
+      ```html
       ${'a' in 'abc’}
-       ${100 in myArray}
-       ${'a' in myObject}
+      ${100 in myArray}
+      ${'a' in myObject}
       ```
 
    * data-sly-set을 사용한 변수 선언:
@@ -41,10 +36,10 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
 
    * data-sly-unwrap용 식별자:
 
-      ```
+      ```html
       <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-       text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-       </div>
+      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+      </div>
       ```
 
    * 음수 지원
@@ -105,7 +100,7 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
 ## 론치 {#launches}
 
 * 실행을 위한 신규 검토 및 승인 워크플로우, 승인된 실행 페이지만 프로모션할 수 있는 기능
-* 프로모션 단계[ 직후 [실행]을 삭제할 수 있도록 선택하기 위해 UI에 옵션 추가](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
+* 프로모션 단계](/help/sites-authoring/launches-promoting.md#promoting-launch-pages) 직후 [실행]을 삭제할 수 있도록 선택하기 위해 UI에 옵션 추가[
 
 ## 컨텐츠 타깃팅 및 시뮬레이션 {#content-targeting-simulation}
 
