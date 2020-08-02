@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 5의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '1873'
 ht-degree: 98%
