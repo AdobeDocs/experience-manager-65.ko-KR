@@ -3,9 +3,9 @@ title: 검색 패싯.
 description: 검색 패싯을 만들고 수정하며 사용하는 [!DNL Adobe Experience Manager]방법입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: c7f06670ca8b488a661fde7a133bce6886ee7f5d
 workflow-type: tm+mt
-source-wordcount: '2488'
+source-wordcount: '2485'
 ht-degree: 2%
 
 ---
@@ -134,7 +134,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 
 다중 값 속성 조건자를 사용하면 자산을 여러 값으로 검색할 수 있습니다. 여러 제품의 이미지가 있는 경우 각 이미지에 대한 메타데이터에 제품 [!DNL Assets] 과 연관된 SKU 번호가 포함된 시나리오를 고려하십시오. 이 술어를 사용하여 여러 SKU 번호를 기반으로 제품 이미지를 검색할 수 있습니다.
 
-1. [!DNL Experience Manager 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms]**&#x200B;검색으로이동합니다.
+1. 로고를 [!DNL Experience Manager] 클릭한 다음 도구 > **[!UICONTROL 일반]** > **[!UICONTROL Forms]** **[!UICONTROL 검색]**&#x200B;으로 이동합니다.
 1. Forms 검색 페이지에서 **[!UICONTROL 자산 관리 검색 레일을 선택하고]**&#x200B;편집 **[!UICONTROL 아이콘을]** 클릭합니다 ![](assets/do-not-localize/aemassets_edit.png).
 1. [검색 양식 편집] 페이지의 [설명 선택] **[!UICONTROL 탭에서]** 다중 값 속성 설명 **[!UICONTROL 을]** 기본 창으로드래그합니다.
 1. [ **[!UICONTROL 설정]** ] 탭에서 술자의 레이블과 자리 표시자 텍스트를 입력합니다. 예를 들어 속성 필드에서 검색을 수행할 속성 이름을 지정합니다 `jcr:content/metadata/dc:value`. 선택 대화 상자를 사용하여 노드를 선택할 수도 있습니다.
