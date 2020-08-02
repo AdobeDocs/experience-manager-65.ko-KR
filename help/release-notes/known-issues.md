@@ -1,16 +1,11 @@
 ---
 title: 알려진 문제
 description: Adobe Experience Manager 6.5의 알려진 문제에 관한 릴리스 노트입니다.
-uuid: 8fbdb167-833a-4179-aad1-0a26a4e5b3a7
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 0a55ed44cb7fe3320b2196df38fe8492ee03912d
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 95%
+source-wordcount: '571'
+ht-degree: 81%
 
 ---
 
@@ -25,9 +20,9 @@ ht-degree: 95%
 
 * CRX-Quickstart와 그 컨텐츠가 삭제되는 문제가 보고됩니다.
 
-   다음의 각 작업에 대해 &quot;*htmllibmanager.fileSystemOutputCacheLocation*&quot; 속성이 빈 문자열이 아닌지 확인하십시오.
+   On each of these actions, ensure that the property `htmllibmanager.fileSystemOutputCacheLocation` is not an empty string:
 
-   1. */libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true* 호출.
+   1. 전화 `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`중입니다.
    2. AEM 6.5로 업그레이드
    3. AEM 6.5에서 &quot;레이지 컨텐츠 마이그레이션&quot; 실행.
 
@@ -35,7 +30,7 @@ ht-degree: 95%
 
 * AEM 6.5 인스턴스에서 JDK 11을 사용하는 경우 일부 패키지를 배포한 후 일부 페이지가 공백으로 표시될 수 있습니다. 로그 파일에 다음 오류 메시지가 표시됩니다.
 
-   ```
+   ```java
    *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
    java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
    ```
@@ -44,13 +39,13 @@ ht-degree: 95%
 
 1. AEM 인스턴스를 중지합니다. `<aem_server_path_on_server>crx-quickstart\conf`로 이동하고 `sling.properties` 파일을 엽니다. 이 파일을 백업하는 것이 좋습니다.
 
-2. `org.osgi.framework.bootdelegation=`을 검색합니다. 결과를 다음과 같이 표시하려면 `jdk.internal.reflect,jdk.internal.reflect.*` 속성을 추가하십시오.
+1. `org.osgi.framework.bootdelegation=`을 검색합니다. Add `jdk.internal.reflect,jdk.internal.reflect.*` properties to display the result as.
 
-   ```
-   org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.internal.reflect.*
-   ```
+```java
+org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.internal.reflect.*
+```
 
-3. 파일을 저장하고 AEM 인스턴스를 다시 시작합니다.
+1. 파일을 저장하고 AEM 인스턴스를 다시 시작합니다.
 
 ## 자산 {#assets}
 
@@ -60,10 +55,10 @@ ht-degree: 95%
 
 ## 양식 {#forms}
 
-* Linux 운영 시스템에 AEM Forms가 설치된 경우 하드웨어 보안 모듈에 있는 디지털 서명이 작동하지 않습니다. (CQ-4266721)
+* Linux 운영 체제에 AEM Forms이 설치되면 하드웨어 보안 모듈이 있는 디지털 서명이 작동하지 않습니다. (CQ-4266721)
 * (WebSphere의 AEM Forms만 해당) **Forms Workflow** > **태스크 검색** 옵션이 검색 기준으로 **사용자 이름**&#x200B;을 **관리자**&#x200B;로 검색할 경우 결과를 반환하지 않습니다. (CQ-4266457)
 
-* AEM Forms가 JPEG 압축으로 .tif 및 .tiff 파일을 PDF 문서로 변환하지 못합니다. (CQ-4265972)
+* AEM Forms에서 JPEG 압축이 적용된 TIF 및 TIFF 파일을 PDF 문서로 변환하지 못합니다. (CQ-4265972)
 * **AEM Forms 자산 스캐너** 및 **인터랙티브 커뮤니케이션 마이그레이션 서신** 옵션이 **AEM Forms Migration** 페이지에서 작동하지 않습니다. (CQ-4266572)
 
 * (JBoss 7만 해당) 이전 버전에서 AEM 6.5 Forms로 업그레이드하고 이전 버전에서는 기본 제출 또는 기본 렌더링 프로세스의 사본을 작성 및 사용한 프로세스(.lca)가 있는 경우, 이러한 프로세스(.lca)를 사용하는 HTML5 Forms는 필수 조치를 수행하지 못합니다. (CQ-4243928)
@@ -72,7 +67,7 @@ ht-degree: 95%
 
 * PDF Generator는 스마트 카드 기반 인증을 지원하지 않습니다.  관리자가 Windows 서버에서 그룹 정책 `Interactive Logon: Require Smart card` 을 활성화하면 기존 PDF Generator 사용자가 모두 무효화됩니다.
 
-* 적응형 양식이 구성 요소의 값을 동적으로 업데이트하도록 구성되고 양식을 호스팅하는 게시 인스턴스에 디스패처를 통해 액세스할 때 필드의 값을 동적으로 업데이트하는 기능의 작동이 중단됩니다. 이 문제를 해결하려면 게시 인스턴스에서 CRXDE를 열고 /libs/fd/af/runtime/clientlibs/guideChartReducer로 이동한 다음 아래에 나열된 속성을 생성합니다.
+* 적응형 양식이 구성 요소의 값을 동적으로 업데이트하도록 구성되고 양식을 호스팅하는 게시 인스턴스에 디스패처를 통해 액세스할 때 필드의 값을 동적으로 업데이트하는 기능의 작동이 중단됩니다. To resolve the issue, on the publish instance, open CRXDE, navigate to `/libs/fd/af/runtime/clientlibs/guideChartReducer`, and create the property listed in below.
 
    * Name: allowProxy
    * Type: Boolean
@@ -80,9 +75,8 @@ ht-degree: 95%
    * Protected: False
    * Mandatory: False
    * Multiple: False
-   * Auto Created: Flase
+   * 자동 생성: False
 
    이 속성으로 런타임 폴더 아래의 클라이언트 라이브러리가 프록시에 액세스할 수 있습니다. (CQ-4268679)
 
-* 
-   * AEM Forms가 시작되면 `SAX Security Manager could not be setup`라는 경고가 나타납니다.
+* AEM Forms가 시작되면 `SAX Security Manager could not be setup`라는 경고가 나타납니다.
