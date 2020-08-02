@@ -3,7 +3,7 @@ title: Adobe Experience Manager 6.5 이전 서비스 팩 릴리스 노트
 description: Adobe Experience Manager 6.5 서비스 팩 3 이하에 대한 릴리스 노트입니다.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '8108'
 ht-degree: 99%
@@ -399,7 +399,7 @@ Remove one mention of this fix.
 * 일부 Experience Fragments가 포함된 페이지를 편집기가 아닌 모드(`editor.html` 접두사가 없고 `wcmmode=disabled`된 작성자 및 또는 게시자에서)로 열리면 HTTP 상태 오류 코드 `500`에서 요청이 종료됩니다(NPR-30743).
 * 사용자는 암호를 변경하고 프로필 페이지에 액세스할 수 없습니다(NPR-31161).
 
-### 검색 및 사용자 인터페이스 {#search-ui-interface}
+### 검색 및 사용자 인터페이스 {#ui-interface-and-search}
 
 * 검색 결과 페이지의 카드 보기에서 목록 보기로 전환하는 경우 페이지를 스크롤하려면 지연이 있습니다(NPR-31286).
 
