@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 6.5 릴리스에서 사용 중단되거나 제거된 기능.
 description: Adobe Experience Manager 6.5의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '1642'
 ht-degree: 76%
@@ -10,18 +10,18 @@ ht-degree: 76%
 ---
 
 
-# 더 이상 사용되지 않는 및 제거된 기능 {#deprecated-and-removed-features}
+# 이제 사용되지 않는 기능과 제거된 기능 {#deprecated-and-removed-features}
 
 Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다.
 
-AEM 기능의 분리 또는 교체를 전달하려면 다음 규칙이 적용됩니다.
+AEM 기능 분리 또는 교체를 전달하려면 다음 규칙이 적용됩니다.
 
 1. 사용 중지 공지가 먼저 표시됩니다. 더 이상 사용되지 않지만 기능은 여전히 사용할 수 있지만 더 이상 향상되지 않습니다.
 1. 가치가 떨어진 기능은 빠른 시기에 다음 주요 릴리스에서 제거됩니다. 실제 제거 대상일이 공지됩니다.
 
 이 프로세스에서 고객에게 하나 이상의 릴리스 주기를 제공하여, 실제 제거 전에 더 이상 사용되지 않는 기능의 새 버전이나 후속 버전에 대한 구현을 채택할 수 있도록 합니다.
 
-## 더 이상 사용되지 않는 기능 {#deprecated-features}
+## 이제 사용되지 않는 기능 {#deprecated-features}
 
 이 섹션에서는 AEM 6.5에서 더 이상 사용되지 않는 것으로 표시된 기능을 제시합니다. 일반적으로 이후 릴리스에서 제거될 예정인 기능은 먼저 사용 중지로 설정되고 대체 기능과 함께 제공됩니다.
 
@@ -36,10 +36,10 @@ AEM 기능의 분리 또는 교체를 전달하려면 다음 규칙이 적용됩
 | DTM 태그 관리자 | DTM(다이내믹 태그 관리자)과의 통합이 더 이상 사용되지 않습니다. | Adobe Experience Platform Launch를 태그 관리자로 사용하도록 전환. |
 | Adobe Target | AEM 6.5에서 Adobe I/O 기반 Adobe Target Standard API(Rest API)를 사용하여 AEM을 Adobe Target 서비스에 연결할 수 있는 기능이 추가됨에 따라 Target Classic API(XML) 방식은 더 이상 사용되지 않습니다. | Reconfigure the integration to [use the new API](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html). |
 | Adobe Target | Using the `mbox.js` based integration with Adobe Target in AEM is deprecated. | Switch to use `at.js` 1.x. |
-| 상거래 | [CIF REST](https://github.com/adobe/commerce-cif-api)는 AEM과 상거래 엔진 간의 통합을 가능하게 하기 위해 마이크로 서비스 세트로 2018년에 제공되었습니다. Adobe는 2018년 중반에 Magento를 인수한 후 두 가지 이유로 접근 방식을 변경하기로 결정했습니다. Magento에는 고유한 상거래 API(REST 및 GraphQL) 세트가 있으며 두 개의 API 세트를 유지하는 것은 좋지 않습니다. 시장 트렌드는 GraphQL이 데이터를 쿼리하는 보다 효율적인 방법이므로 고객이 GraphQL로 이동하고 있음을 나타냅니다. Adobe는 2019년 Magento의 GraphQL API를 소스로 사용하여 새로운 상거래 통합 프레임워크를 발표했습니다. Adobe는 더 이상 CIF REST에 투자할 계획이 없습니다. 고객은 교체 솔루션을 사용해야 합니다. | For AEM-Magento integrations, switch to [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) and [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components). See AEM and Magento integration [using Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md). 새로운 접근 방식과 타사(Magento 제외) 통합 지원이 로드맵에 있습니다. |
+| 상거래 | [CIF REST](https://github.com/adobe/commerce-cif-api)는 AEM과 상거래 엔진 간의 통합을 가능하게 하기 위해 마이크로 서비스 세트로 2018년에 제공되었습니다. Adobe은 2018년 중반 Magento을 인수하면서 두 가지 이유로 현 방식을 바꾸기로 했다. Magento에는 자체 상거래 API(REST 및 GraphQL) 세트가 있으며 두 개의 API 세트를 유지하는 것은 좋지 않습니다. 시장 트렌드는 GraphQL이 데이터를 쿼리하는 보다 효율적인 방법이므로 고객이 GraphQL로 이동하고 있음을 나타냅니다. Adobe는 2019년 Magento의 GraphQL API를 소스로 사용하여 새로운 상거래 통합 프레임워크를 발표했습니다. Adobe는 더 이상 CIF REST에 투자할 계획이 없습니다. 고객은 교체 솔루션을 사용해야 합니다. | For AEM-Magento integrations, switch to [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) and [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components). See AEM and Magento integration [using Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md). 새로운 접근 방식과 타사(Magento 제외) 통합 지원이 로드맵에 있습니다. |
 | 구성 요소(AEM Sites) | Adobe does not plan to make further enhancements to most of the Foundation Components stored in `/libs/foundation/components`. Look for the `cq:deprecated` and `cq:deprecatedReason` property in the component folder. AEM 6.5에는 기초 구성 요소가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 또한, Foundation 구성 요소는 더 이상 사용되지 않지만 완전히 지원됩니다. | 향후 프로젝트에 핵심 구성 요소를 사용하는 것이 좋습니다. 기존 사이트는 그대로 유지되거나 [AEM Modernize Tools 제품군](https://github.com/adobe/aem-modernize-tools)을 사용하여 코어 구성 요소를 사용하도록 사이트를 리팩터링할 수 있습니다. |
-| 구성 요소(AEM Sites) | Design Importer Components `/libs/wcm/designimporter/components` have been marked as deprecated starting 6.5. Adobe does not plan to make further enhancements to that implementation of the design importer. | Adobe는 향후 릴리스에서 사용 사례에 대한 대체 구현을 제공할 계획입니다. |
-| Foundation | Granite 오프로드 프레임워크. Adobe는 자산 처리를 외부화하기 위해 CQ 5.6.1에 도입된 오프로드 프레임워크를 추가로 개선할 계획이 없습니다. | Adobe는 차세대 클라우드 기반 오프로드 프레임워크에서 작동합니다. |
+| 구성 요소(AEM Sites) | Design Importer Components `/libs/wcm/designimporter/components` have been marked as deprecated starting 6.5. Adobe does not plan to make further enhancements to that implementation of the design importer. | Adobe은 향후 릴리스에서 사용 사례에 대한 대체 구현을 제공할 계획입니다. |
+| Foundation | Granite 오프로드 프레임워크. Adobe은 자산 처리를 외부화하기 위해 CQ 5.6.1에서 도입된 오프로드 프레임워크를 추가로 개선할 계획이 없습니다. | Adobe는 차세대 클라우드 기반 오프로드 프레임워크에서 작동합니다. |
 | 개발자 | `Hobbes.js`. Adobe does not plan to make further enhancements to the `hobbes.js` user interface testing framework. | 고객이 Selenium 자동화를 사용하는 것이 좋습니다. |
 | 개발자 | jQuery UI 클라이언트 라이브러리. Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 jQuery UI 클라이언트 라이브러리를 유지 및 업데이트할 계획이 없습니다. | 코드에 여전히 jQuery UI가 필요한 고객은 코드를 해당 프로젝트 코드 베이스에 추가하시기 바랍니다. |
 | 개발자 | jQuery Animation client library (`granite.jquery.animation`). Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 jQuery Animation 클라이언트 라이브러리를 유지 및 업데이트할 계획이 없습니다. | 코드에 여전히 jQuery Animation이 필요한 고객은 코드를 해당 프로젝트 코드 베이스에 추가하시기 바랍니다. |
@@ -48,7 +48,7 @@ AEM 기능의 분리 또는 교체를 전달하려면 다음 규칙이 적용됩
 | 개발자 | `Granite.Sling.js` 클라이언트 라이브러리. Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 Granite.Sling.js 클라이언트 라이브러리를 개선할 계획이 없습니다. | 코드를 리팩토링하는 라이브러리 기능에 의존하고 있는 고객들은 더 이상 해당 기능을 사용할 수 없습니다. |
 | 개발자 | YUI를 사용하여 JavaScript 클라이언트 라이브러리를 압축/축소할 수 있습니다. Adobe는 향후 YUI 라이브러리를 업데이트할 계획이 없습니다. AEM 6.4가 출시되기 이전까지, YUI는 기본적으로 GCC(Google Closure Compiler)로 전환할 수 있는 옵션과 함께 JavaScript를 축소할 수 있었습니다. AEM 6.5부터는 GCC가 기본값입니다. | 고객은 이러한 구현에 따라 GCC로 전환하기 위해 AEM 6.5로 업그레이드하는 것이 좋습니다. |
 | 개발자 | CRXDE Lite의 클래식 UI 대화 상자 편집기. Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 클래식 UI 대화 상자 편집기를 개선할 계획이 없습니다. | 교체 작업이 없습니다. |
-| 양식 | AEM Mobile과의 AEM Forms 통합은 더 이상 사용되지 않습니다. | 교체할 수 없습니다. |
+| 양식 | AEM Mobile와의 AEM Forms 통합은 더 이상 사용되지 않습니다. | 교체할 수 없습니다. |
 
 ## 제거된 기능 {#removed-features}
 
@@ -69,7 +69,7 @@ AEM 기능의 분리 또는 교체를 전달하려면 다음 규칙이 적용됩
 | [!DNL Assets] | 자산 오프로드 기능은 [!DNL Adobe Experience Manager] 6.5에서 제거됩니다. | 교체 작업이 없습니다. |
 | 캐시 | `system/console/slingjsp`가 제거되어 AEM 6.5에서 더 이상 사용할 수 없습니다. | 클래스 및 Slightly 캐시는 Apache Sling Commons FileSystem ClassLoader 번들 아래에 저장됩니다. AEM 웹 콘솔에서 번들 번호를 확인하고 파일 시스템(`crx-quickstart/launchpad/felix/bundle<ID>`)에서 직접 캐시 폴더를 제거할 수 있습니다. |
 
-## 다음 릴리스에 대한 사전 공지 {#pre-announcement-for-next-release}
+## Pre-announcement for next release {#pre-announcement-for-next-release}
 
 이 섹션은 향후 릴리스에서 예정된 변경 사항을 미리 발표하는 데 사용됩니다. 발표된 변경 사항은 아직 효력이 없지만 고객에게 영향을 줄 것입니다. 예를 들어 기능은 아직 더 이상 사용되지 않지만 사용 중단 이후 사용자에게 영향을 줍니다. 이러한 업데이트는 계획 목적으로 제공됩니다.
 
