@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager Assets 릴리스 노트
-description: Adobe Experience Manager 6.5 자산에 대한 새로운 기능과 개선 사항입니다.
+title: 릴리스 노트( [!DNL Adobe Experience Manager Assets] 6.5).
+description: 6.5의 새로운 기능 및 [!DNL Adobe Experience Manager] 개선 [!DNL Assets]사항
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 98%
+source-wordcount: '901'
+ht-degree: 95%
 
 ---
 
 
-# Adobe Experience Manager Assets 릴리스 노트 {#aem-assets-release-notes}
+# [!DNL Adobe Experience Manager Assets] 릴리스 노트 {#aem-assets-release-notes}
 
-다음은 Adobe Experience Manager 6.5 Assets 릴리스의 주요 기능입니다.
+Here are the key features and highlights of the [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] release.
 
 ## [!DNL Adobe Creative Cloud] 및 광고 워크플로우와 통합{#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -70,11 +70,11 @@ For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/a
 
 새 [!DNL Dynamic Media] 기능에 대한 자세한 내용은 [Dynamic Media 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/release-notes/s7rn2017.html)를 참조하십시오.
 
-### Video 360 지원 {#video-support}
+### 360 video support {#video-support}
 
 최첨단 뷰어를 통해 [!DNL Experience Manager]에서 Video 360 파일을 직접 관리하여 데스크탑, 모바일 및 VR 헤드셋에 VR 경험을 제공할 수 있습니다. 자세한 내용은 [Video 360 사용하기](/help/assets/360-video.md)를 참조하십시오.
 
-### 사용자 지정 비디오 썸네일 {#custom-video-thumbnails}
+### Custom video thumbnails {#custom-video-thumbnails}
 
 비디오 자체 또는 DAM에 저장된 기타 컨텐츠의 프레임을 사용하여 비디오 자산의 썸네일을 사용자 지정할 수 있습니다. 자세한 내용은 [비디오 썸네일 정보](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode)를 참조하십시오.
 
@@ -82,7 +82,7 @@ For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/a
 
 이제 [!DNL Dynamic Media] 뷰어에는 Aria 지원, 화면 판독기 및 대체 텍스트와 같은 향상된 액세스 가능성에 대한 지원이 포함되어 있습니다. 자세한 내용은 [Dynamic Media 뷰어 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
 
-## 검색 환경 개선 {#search-experience-enhancement}
+## 검색 환경 개선 {#experience-enhancement-for-searching}
 
 [!DNL Experience Manager] 6.5에서는 마케터가 검색 결과 페이지에서 원하는 자산을 더 빨리 발견할 수 있습니다. 검색 패싯은 검색 필터를 적용하기 전에도 자산 수로 업데이트됩니다. 필터에 대한 예상 수를 확인하면 사용자가 검색 결과를 효율적으로 탐색할 수 있습니다. 자세한 내용은 [Experience Manager에서 자산 검색](../assets/search-assets.md)을 참조하십시오.
 
