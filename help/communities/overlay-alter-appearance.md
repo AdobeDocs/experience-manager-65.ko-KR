@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -30,9 +30,9 @@ comment.hbs 스크립트에서는 각 댓글에 대한 전체 HTML을 만듭니�
 1. 복사 `comment.hbs`위치 `libs`는 `apps`
 
    1. 선택 `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. 복사 **선택**
+   1. 복사 **[!UICONTROL 선택]**
    1. 선택 `/apps/social/commons/components/hbs/comments/comment`
-   1. 붙여넣기 **선택**
+   1. 붙여넣기 **[!UICONTROL 선택]**
 
 1. 오버레이된 `comment.hbs`
 
