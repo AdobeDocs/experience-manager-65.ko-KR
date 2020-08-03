@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: 6a9f273c6e9eb822e2d4765700361a205019b84c
+source-git-commit: 412200c1bb0c7050c981fc5dc2a5430f37b3beb3
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 1%
@@ -57,7 +57,7 @@ SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-
 
 * 글로벌 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** ****>스토리지 구성을 선택합니다.
 
-![chlimage_1-28](assets/chlimage_1-28.png)
+![msrp](assets/msrp.png)
 
 * Select **[!UICONTROL MongoDB Storage Resource Provider (MSRP)]**
 * **[!UICONTROL mongoDB 구성]**
