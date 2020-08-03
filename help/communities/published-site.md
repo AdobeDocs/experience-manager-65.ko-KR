@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
+source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 1%
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![authorpublished](assets/authorpublished.png)
 
 ## 익명의 사이트 방문자 {#anonymous-site-visitor}
 
@@ -82,7 +82,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 오른쪽 상단 모서리에서 사용자 이름(aaron.mcdonald@mailinator.com) `Log in`과 암호(암호)를 선택하여 서명합니다. Twitter 또는 Facebook 자격 증명으로 로그인할 수 있습니다.
 
-![chlimage_1-32](assets/chlimage_1-32.png)
+![login](assets/login.png)
 
 등록된 커뮤니티 멤버로 로그인하면 다음 메뉴 항목을 통해 커뮤니티 사이트를 클릭하여 탐색합니다.
 
@@ -95,11 +95,11 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 * [알림](/help/communities/notifications.md) 옵션은 관심 이벤트를 보고 알림 설정을 편집할 수 있는 알림 섹션으로 연결됩니다.
 * [중재 권한이 있는 경우 AEM Communities 중재 페이지로 이동합니다](/help/communities/published-site.md#moderationlink) .
 
-![chlimage_1-33](assets/chlimage_1-33.png)
+![adscreen](assets/adminscreen.png)
 
 선택한 참조 사이트 템플릿에 달력 함수가 먼저 포함되고, 다음으로 활동 스트림 함수, 포럼 함수 등이 추가되었기 때문에 달력 페이지는 홈 페이지입니다. 이 구조는 [사이트 템플릿](/help/communities/sites.md#edit-site-template) 콘솔에서 또는 작성 환경에서 사이트 속성을 수정할 때 표시됩니다.
 
-![chlimage_1-34](assets/chlimage_1-34.png)
+![사이트 템플릿](assets/sitetemplate.png)
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 사이트 방문자는 게시물을 보고 다양한 방법으로 정렬할 수 있습니다.
 
-![chlimage_1-35](assets/chlimage_1-35.png)
+![forumlink](assets/forumlink.png)
 
 ### 그룹 링크 {#groups-link}
 
@@ -130,7 +130,7 @@ Aaron은 그룹 관리이므로 그룹 링크를 선택하면 Aaron이 그룹 �
 
 작성 환경에서 그룹을 만들고 작성 환경의 커뮤니티 사이트([커뮤니티 그룹 콘솔](/help/communities/groups.md))에서 관리할 수도 있습니다. 이 튜토리얼에서는 작성자 [에서 그룹을](/help/communities/nested-groups.md) 만드는 환경이 다음으로 중요합니다.
 
-![클래식 UI](assets/classic-ui.png)
+![집단](assets/grouplink.png)
 
 참조 그룹 만들기:
 
@@ -148,11 +148,11 @@ Aaron은 그룹 관리이므로 그룹 링크를 선택하면 Aaron이 그룹 �
 
 1. 그룹 **만들기 선택**
 
-![classic-ui-website](assets/classic-ui-website.png)
+   ![creategroup](assets/creategroup.png)
 
 새 그룹을 만든 후 새 스포츠 그룹을 **선택하여** 그 안에 두 개의 그룹(중첩된 그룹)을 만듭니다. 사이트 구조는 그룹 기능으로 시작할 수 없으므로 스포츠 그룹을 연 후에는 그룹 링크를 선택해야 합니다.
 
-![classic-ui-create-page](assets/classic-ui-create-page.png)
+![grouplink1](assets/grouplink1.png)
 
 다음으로 시작하는 두 번째 링크 집합 `Blog`은 현재 선택된 그룹인 `Sports` 그룹에 속합니다. 스포츠(Sports) `Groups` 링크를 선택하면 두 그룹을 스포츠 그룹 내에 중첩할 수 있습니다.
 
@@ -180,7 +180,7 @@ Aaron은 그룹 관리이므로 그룹 링크를 선택하면 Aaron이 그룹 �
 
 그룹의 링크는 기본 사이트의 링크 아래에 표시되고 다음 표시가 나타납니다.
 
-![classic-ui-website-page](assets/classic-ui-website-page.png)
+![grouplink2](assets/grouplink2.png)
 
 작성자 - 관리 권한이 있는 경우 [커뮤니티 그룹 콘솔로](/help/communities/members.md) 이동하고 Weston McCall을 `Community Engage Gymnastics <uid> Members` 그룹에 추가합니다.
 
@@ -195,7 +195,7 @@ Aaron은 그룹 관리이므로 그룹 링크를 선택하면 Aaron이 그룹 �
 
 Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인한 다음 동일한 위치로 이동합니다. Weston은 공개 `Join` 그룹 `Baseball` 과 비공개 `enter or Leave` 그룹 중 하나 `Gymnastics` 에 참여할 수 있습니다.
 
-![classic-ui-repository-view](assets/classic-ui-repository-view.png)
+![grouplink3](assets/grouplink3.png)
 
 ### 웹 페이지 링크 {#web-page-link}
 
@@ -203,7 +203,7 @@ Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인한 다음 동일�
 
 예를 들어, **작성자** 인스턴스로 이동하고, `engage` 커뮤니티 사이트 콘솔에서 [폴더를 열고](/help/communities/sites-console.md)사이트 **열기** 아이콘을 선택하여 작성자 편집 모드로 전환합니다. 그런 다음 미리 보기 모드를 선택하여 `Web Page` 링크를 선택한 다음 편집 모드를 선택하여 제목 및 텍스트 구성 요소를 추가합니다. 마지막으로, 페이지나 전체 사이트를 다시 게시합니다.
 
-![classic-ui-repository-path](assets/classic-ui-repository-path.png)
+![webpagelink](assets/webpagelink.png)
 
 ### 중재 링크 {#moderationlink}
 
@@ -211,7 +211,7 @@ Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인한 다음 동일�
 
 브라우저의 뒤로 단추를 사용하여 게시된 사이트로 돌아갑니다. 대부분의 콘솔은 게시 환경의 전역 탐색에서 액세스할 수 없습니다. [](/help/communities/moderate-ugc.md)
 
-![chlimage_1-42](assets/chlimage_1-42.png)
+![moderationlink](assets/moderationlink.png)
 
 ## 자가 등록 {#self-registration}
 
@@ -220,7 +220,9 @@ Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인한 다음 동일�
 * 선택 `Log In`
 * 선택 `Sign up for a new account`
 
-![chlimage_1-43](assets/chlimage_1-43.png)![chlimage_1-44](assets/chlimage_1-44.png)
+![등록](assets/registration.png)
+
+![등록](assets/signup.png)
 
 기본적으로 이메일 주소는 로그인 ID입니다. 이 확인란을 선택하지 않으면 방문자는 자신의 로그인 ID(사용자 이름)를 입력할 수 있습니다. 사용자 이름은 게시 환경에서 고유해야 합니다.
 
@@ -228,9 +230,9 @@ Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인한 다음 동일�
 
 로그인하면 표시된 첫 번째 페이지가 `Profile` 페이지의 페이지이므로 사용자가 개인화할 수 있습니다.
 
-![chlimage_1-45](assets/chlimage_1-45.png)
+![프로필](assets/profile.png)
 
 회원이 로그인 ID를 잊은 경우 해당 이메일 주소를 사용하여 복구할 수 있습니다.
 
-![chlimage_1-46](assets/chlimage_1-46.png)
+![사용자 이름](assets/forgotusername.png)
 
