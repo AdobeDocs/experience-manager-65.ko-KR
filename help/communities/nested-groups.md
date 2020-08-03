@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 AEM Author 인스턴스의 전역 탐색:
 
-* **[!UICONTROL 커뮤니티] > **[!UICONTROL 사이트를 선택합니다]**.
+* 커뮤니티 **[!UICONTROL > 사이트]** 를 **[!UICONTROL 선택합니다]**.
 * 폴더 **[!UICONTROL 를]** 열려면 참여 폴더를 선택하십시오.
 * 시작하기 자습서 **[!UICONTROL 영어]** 사이트의 카드를 선택합니다.
 
@@ -34,11 +34,11 @@ AEM Author 인스턴스의 전역 탐색:
 
 그 결과 [그룹 콘솔에 도달합니다](/help/communities/groups.md).
 
-![chlimage_1-91](assets/chlimage_1-91.png)
+![create-group](assets/create-group.png)
 
 그룹 함수는 그룹 인스턴스가 만들어지는 폴더로 표시됩니다. [그룹] 폴더를 선택하여 엽니다. 게시에서 만든 그룹이 표시됩니다.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![create-new-group](assets/create-new-group.png)
 
 ## 메인 아트 그룹 만들기 {#create-main-arts-group}
 
@@ -94,11 +94,11 @@ AEM Author 인스턴스의 전역 탐색:
 
 그룹 내에 중첩된 그룹을 만들기 전에 `arts` 카드 위에 마우스를 `arts` 놓고 게시 아이콘을 선택하여 게시합니다.
 
-![좋아요 구성 요소](assets/liking-component.png)
+![게시 사이트](assets/publish-site.png)
 
 그룹이 게시되었다는 확인을 기다립니다.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![group-published](assets/group-published.png)
 
 그룹에는 `arts` 폴더가 하나 `groups` 있지만 비어 있고 새 그룹을 만들 수 있는 폴더가 있어야 합니다. 아트 그룹 폴더로 이동하여 각각 다른 멤버십 설정으로 3개의 중첩된 그룹을 만듭니다.
 
@@ -133,11 +133,11 @@ AEM Author 인스턴스의 전역 탐색:
 * 아트 **[!UICONTROL 카드 선택]**
 * 그룹 **[!UICONTROL 폴더]** 선택
 
-![configure-like](assets/configure-liking.png)
+![create-new-group2](assets/create-new-group2.png)
 
 ## 게시 그룹 {#publishing-groups}
 
-![chlimage_1-96](assets/chlimage_1-96.png)
+![게시 사이트](assets/publish-site.png)
 
 기본 커뮤니티 사이트를 게시한 후:
 
@@ -149,7 +149,7 @@ AEM Author 인스턴스의 전역 탐색:
 
    * 모든 그룹은 하향식 방식으로 게시되어야 합니다.
 
-![chlimage_1-97](assets/chlimage_1-97.png)
+![group-published](assets/group-published.png)
 
 ## 게시 경험 {#experience-on-publish}
 
