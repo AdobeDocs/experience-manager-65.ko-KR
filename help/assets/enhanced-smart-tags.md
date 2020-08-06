@@ -3,9 +3,9 @@ title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1533'
 ht-degree: 1%
 
 ---
@@ -68,7 +68,7 @@ The Smart Content Service is available for purchase as an add-on to [!DNL Experi
 >[!NOTE]
 >
 >1. 훈련은 취소할 수 없는 과정이다. Adobe은 태그에서 스마트 컨텐츠 서비스를 교육하기 전에 선별된 자산 세트의 태그를 검토할 것을 권장합니다.
->1. 태그에 대한 교육을 시작하기 전에 [스마트 콘텐츠 서비스 교육 지침을](smart-tags-training-guidelines.md) 읽어 보십시오.
+>1. 태그에 대한 트레이닝 전에 [스마트 콘텐츠 서비스 교육 지침을 참조하십시오](smart-tags-training-guidelines.md).
 >1. 스마트 콘텐츠 서비스를 처음 교육할 때 두 개 이상의 개별 태그로 교육하는 것이 좋습니다.
 
 
