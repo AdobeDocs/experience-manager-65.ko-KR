@@ -11,9 +11,9 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 업그레이드를 실행하기 전에 몇 가지 단계를 완료해야 합니다. 자세한 내용은 [코드 및 사용자 지정](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) 업그레이드를 참조하십시오. 또한 시스템이 새로운 버전의 AEM에 대한 요구 사항을 충족하는지 확인하십시오. Pattern Detector를 통해 업그레이드 복잡성을 파악하는 방법을 살펴보고 자세한 내용은 업그레이드 계획 [의 업그레이드 범위 및 요구 사항 섹션을](/help/sites-deploying/upgrade-planning.md) 참조하십시오.
 
-마지막으로 업그레이드를 수행하기 **전에 저장소를 인덱싱하여 업그레이드 중 다운타임이 크게 줄어들 수** 있습니다. 자세한 내용은 오프라인 [재색인 사용을 통해 업그레이드 중 다운타임을 줄이기를 참조하십시오.](/help/sites-deploying/upgrade-offline-reindexing.md)
+<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
@@ -130,7 +130,7 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 
 crx2oak 도구 사용에 대한 추가 지침은 [CRX2Oak 마이그레이션 도구 사용을 참조하십시오](/help/sites-deploying/using-crx2oak.md). 필요한 경우 quickstart를 압축 해제한 후 새 버전으로 직접 교체하여 crx2oak helper JAR를 수동으로 업그레이드할 수 있습니다. AEM 설치 폴더의 위치는 다음과 같습니다. `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. CRX2Oak 마이그레이션 도구의 최신 버전은 다음 Adobe 저장소에서 다운로드할 수 있습니다. [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
-마이그레이션이 성공적으로 완료되면 종료 코드가 0인 상태로 도구가 종료됩니다. 또한 AEM 설치 디렉토리 아래에 있는 `upgrade.log` 파일에서 WARN 및 ERROR 메시지 `crx-quickstart/logs` 가 마이그레이션 중에 발생한 치명적이지 않은 오류를 나타낼 수 있으므로 확인합니다.
+마이그레이션이 성공적으로 완료되면 종료 코드가 0인 상태로 도구가 종료됩니다. 또한 AEM 설치 디렉토리 아래에 있는 `upgrade.log` 파일에서 WARN 및 ERROR 메시지 `crx-quickstart/logs` 가 마이그레이션 중에 발생한 치명적이지 않은 오류를 나타낼 수 있으므로 WARN 및 ERROR 메시지를 확인합니다.
 
 폴더 아래에서 구성 파일을 `crx-quickstart/install` 확인합니다. 마이그레이션이 필요한 경우 대상 저장소를 반영하도록 업데이트됩니다.
 
