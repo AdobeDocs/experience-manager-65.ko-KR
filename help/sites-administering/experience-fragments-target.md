@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1afda7c23dd71f7ba40c295c13cf24a4d52dbd1c
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->이 페이지의 일부 기능을 사용하려면 AEM 6.5.3.0의 응용 프로그램이 필요합니다.
+>이 페이지의 일부 기능을 사용하려면 AEM 6.5.3.0 응용 프로그램이 필요합니다.
 >
 >6.5.3.0
 >
@@ -37,6 +37,7 @@ ht-degree: 0%
    >   
    * 기본 작업 영역입니다.
    >   * 클라우드 구성에 지정된 명명된 작업 공간입니다.
+      >     **참고:** 특정 작업 영역으로 내보내려면 Adobe Target Premium이 필요합니다.
 >* AEM은 Adobe I/O를 사용하여 Adobe Target과 [통합되어야 합니다](/help/sites-administering/integration-ims-adobe-io.md).
 
 >
@@ -44,7 +45,7 @@ ht-degree: 0%
 AEM 6.5.0.0 및 6.5.1.0:
 >
 >* AEM 경험 조각은 Adobe Target의 기본 작업 영역으로 내보내집니다.
->* Adobe Target과 통합 아래의 지침에 따라 AEM을 Adobe Target과 [통합해야 합니다](/help/sites-administering/target.md).
+>* AEM은 Adobe Target과 통합 [의 지침에 따라 Adobe Target과 통합되어야 합니다](/help/sites-administering/target.md).
 
 
 Adobe Experience Manager(AEM)에서 [만든 경험](/help/sites-authoring/experience-fragments.md)조각을 Adobe Target(Target)으로 내보낼 수 있습니다. 그런 다음 Target 활동에서 오퍼로 사용하여 경험을 규모에 맞게 테스트 및 개인화할 수 있습니다.
@@ -55,11 +56,11 @@ Adobe Experience Manager(AEM)에서 [만든 경험](/help/sites-authoring/experi
 * JSON: 헤드리스 컨텐츠 전달 지원
 * HTML 및 JSON
 
-AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 Adobe Target의 사용자 정의 작업 영역으로 내보낼 수 있습니다. 이 작업은 Adobe I/O를 통해 수행되며, AEM은 Adobe I/O를 사용하여 Adobe Target과 [통합되어야 합니다](/help/sites-administering/integration-ims-adobe-io.md).
+AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 Adobe Target의 사용자 정의 작업 영역으로 내보낼 수 있습니다. 이는 Adobe I/O를 통해 수행되므로 AEM은 Adobe I/O를 사용하여 Adobe Target과 [통합되어야 합니다](/help/sites-administering/integration-ims-adobe-io.md).
 
 >[!NOTE]
 >
->Adobe Target 작업 영역이 Adobe Target 자체에 없습니다. Adobe IMS(Identity Management 시스템)에서 정의 및 관리된 다음 Adobe I/O 통합을 사용하여 솔루션 간에 사용하도록 선택됩니다.
+>Adobe Target 작업 영역은 Adobe Target 자체에 존재하지 않습니다. Adobe IMS(Identity Management 시스템)에서 정의 및 관리된 다음 Adobe I/O 통합을 사용하는 솔루션 간에 사용하도록 선택합니다.
 
 >[!NOTE]
 >
@@ -80,12 +81,12 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
 
 >[!CAUTION]
 >
->이 페이지의 일부 기능을 사용하려면 AEM 6.5.3.0의 응용 프로그램이 필요합니다.
+>이 페이지의 일부 기능을 사용하려면 AEM 6.5.3.0 응용 프로그램이 필요합니다.
 
 다양한 작업이 필요합니다.
 
-1. Adobe [I/O를 사용하여 AEM을 Adobe Target과 통합해야 합니다](/help/sites-administering/integration-ims-adobe-io.md).
-2. 경험 조각은 AEM 작성자 인스턴스에서 내보내집니다. 따라서 [경험 조각](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) 내의 모든 참조가 웹 전달에 대해 외부화되어 있는지 확인하려면 작성 인스턴스에서 AEM Link Externalizer를 구성해야 합니다.
+1. Adobe I/O를 사용하여 AEM과 Adobe Target을 [통합해야 합니다](/help/sites-administering/integration-ims-adobe-io.md).
+2. 경험 조각은 AEM 작성자 인스턴스에서 내보내집니다. 따라서 [경험 조각](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) 내의 모든 참조가 웹 전달에 대해 외부화되어 있는지 확인하려면 작성 인스턴스에서 AEM 링크 외부 도우미를 구성해야 합니다.
 
    >[!NOTE]
    >
@@ -112,7 +113,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
    >
    >클라우드 구성을 경험 조각 자체에 추가하는 경우 구성은 모든 변수에서 상속됩니다.
 
-1. Cloud Service **탭을** 선택합니다.
+1. Cloud Services **탭을** 선택합니다.
 
 1. Cloud Service **구성**&#x200B;아래의 드롭다운 목록에서 **Adobe Target** 를 선택합니다.
 
@@ -134,23 +135,23 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
 
    >[!CAUTION]
    >
-   >externalizer 도메인은 선택 사항입니다. 내보낸 콘텐츠가 특정 *게시* 도메인을 가리키도록 할 때 AEM Externalizer가 구성됩니다. 자세한 내용은 AEM Link [Externalizer 구성을 참조하십시오](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >externalizer 도메인은 선택 사항입니다. 내보낸 컨텐츠가 특정 *게시* 도메인을 가리키도록 하려면 AEM 외부 도우미가 구성됩니다. 자세한 내용은 AEM [Link Externalizer 구성을 참조하십시오](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
 
    예를 들어 폴더의 경우:
 
-   ![폴더 - 클라우드](assets/xf-target-integration-01.png "서비스 폴더 - Cloud Service")
+   ![폴더 - 클라우드](assets/xf-target-integration-01.png "서비스 폴더 - Cloud Services")
 
 1. **저장 및 닫기**.
 
-## Adobe Target으로 경험 조각 내보내기 {#exporting-an-experience-fragment-to-adobe-target}
+## 경험 조각을 Adobe Target으로 내보내기 {#exporting-an-experience-fragment-to-adobe-target}
 
 >[!CAUTION]
 >
->이미지와 같은 미디어 에셋의 경우 참조만 Target으로 내보내집니다. 자산 자체는 AEM Assets에 저장되어 있으며 AEM 게시 인스턴스에서 배달됩니다.
+>이미지와 같은 미디어 에셋의 경우 참조만 Target으로 내보내집니다. 자산 자체는 AEM Assets에 저장되어 AEM 게시 인스턴스에서 배달됩니다.
 >
 >이 때문에 Target으로 내보내기 전에 관련 자산이 모두 포함된 경험 조각을 게시해야 합니다.
 
-클라우드 구성을 지정한 후 AEM에서 Target으로 경험 조각을 내보내려면 다음을 수행하십시오.
+클라우드 구성을 지정한 후 경험 조각을 AEM에서 Target으로 내보내려면 다음을 수행하십시오.
 
 1. 경험 조각 콘솔로 이동합니다.
 1. 대상으로 내보낼 경험 조각을 선택합니다.
@@ -159,7 +160,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
    >
    >경험 조각 웹 변형이어야 합니다.
 
-1. Adobe Target으로 내보내기 **를 탭/클릭합니다**.
+1. Adobe Target으로 **내보내기를 탭/클릭합니다**.
 
    >[!NOTE]
    >
@@ -181,7 +182,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
 
    >[!NOTE]
    >
-   >Adobe Target에서 경험 조각을 볼 때, *마지막으로 수정된* 날짜는 조각이 Adobe Target으로 마지막으로 내보낸 날짜가 아니라 AEM에서 마지막으로 수정한 날짜입니다.
+   >Adobe Target에서 경험 조각을 볼 때, *마지막으로 수정된* 날짜는 조각이 마지막으로 Adobe Target으로 내보낸 날짜가 아니라 AEM에서 마지막으로 수정한 날짜입니다.
 
 >[!NOTE]
 >
@@ -193,21 +194,21 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
 
 >[!NOTE]
 >
->Adobe Target에서 경험 조각을 볼 때, *마지막으로 수정된* 날짜는 조각이 Adobe Target으로 마지막으로 내보낸 날짜가 아니라 AEM에서 마지막으로 수정한 날짜입니다.
+>Adobe Target에서 경험 조각을 볼 때, *마지막으로 수정된* 날짜는 조각이 마지막으로 Adobe Target으로 내보낸 날짜가 아니라 AEM에서 마지막으로 수정한 날짜입니다.
 
 ## Adobe Target으로 이미 내보낸 경험 조각 삭제 {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-Target으로 이미 내보낸 경험 조각을 삭제하면 해당 단편이 Target의 오퍼에서 이미 사용되고 있는 경우 문제가 발생할 수 있습니다. 조각을 삭제하면 AEM에서 제공하는 조각 컨텐츠로 인해 오퍼를 사용할 수 없게 됩니다.
+Target으로 이미 내보낸 경험 조각을 삭제하면 해당 단편이 Target의 오퍼에서 이미 사용되고 있는 경우 문제가 발생할 수 있습니다. 조각을 삭제하면 조각 컨텐츠가 AEM에서 배달되고 있으므로 오퍼를 사용할 수 없게 됩니다.
 
 이러한 상황을 피하려면
 
-* 경험 조각이 현재 활동에서 사용되지 않는 경우 AEM에서는 사용자가 경고 메시지 없이 조각을 삭제할 수 있습니다.
-* 현재 Target의 활동에 의해 경험 조각을 사용 중인 경우, AEM 사용자에게 조각을 삭제하면 활동에 발생할 수 있는 결과에 대해 경고 메시지가 표시됩니다.
+* 경험 조각이 현재 활동에서 사용되지 않는 경우 AEM에서는 경고 메시지 없이 조각을 삭제할 수 있습니다.
+* 현재 Target의 활동에 의해 경험 조각을 사용 중인 경우, 오류 메시지는 AEM 사용자에게 조각을 삭제하면 활동에 발생할 수 있는 결과에 대해 경고합니다.
 
    AEM의 오류 메시지에서 사용자가 경험 조각을 삭제할 수 없습니다(강제-). 경험 조각이 삭제된 경우:
 
-   * AEM 경험 조각 Target 오퍼에 원하지 않는 동작이 표시될 수 있습니다.
+   * AEM 경험 조각의 Target 오퍼에 원하지 않는 동작이 표시될 수 있습니다.
 
       * 경험 조각 HTML이 Target으로 푸시되었기 때문에 오퍼는 여전히 렌더링됩니다
       * 참조된 자산이 AEM에서도 삭제된 경우 경험 조각의 모든 참조가 제대로 작동하지 않을 수 있습니다.
-   * 물론, 경험 조각은 AEM에 더 이상 존재하지 않기 때문에 경험 조각에 대한 추가 수정은 불가능합니다.
+   * 물론, 경험 조각은 더 이상 AEM에 존재하지 않으므로 경험 조각에 대한 추가 수정은 불가능합니다.
