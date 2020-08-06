@@ -12,9 +12,9 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '720'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,8 @@ ht-degree: 4%
 * [업그레이드 계획](/help/sites-deploying/upgrade-planning.md)
 * [Pattern Detector를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md)
 * [AEM 6.5의 이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md)
-* [오프라인 재색인화를 사용하여 업그레이드 중 다운타임 감소](/help/sites-deploying/upgrade-offline-reindexing.md)
+
+<!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [업그레이드 절차](/help/sites-deploying/upgrade-procedure.md)
 * [코드 및 사용자 정의 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
@@ -89,7 +90,7 @@ AEM 업그레이드는 여러 단계로 여러 달에 걸쳐 이루어집니다.
 
 6.5에서는 모든 새로운 기능을 이전 버전과 호환되는 상태로 유지하기에 큰 중점을 두었지만, 이전 버전과의 호환성 문제가 여전히 남아 있는 경우 호환성 모드를 통해 사용자 지정 코드를 6.5와 호환되도록 개발을 일시적으로 중단할 수 있습니다. 이 방법을 사용하면 업그레이드 직후 개발 작업을 피할 수 있습니다(AEM 6.5의 [이전 버전 호환성 참조](/help/sites-deploying/backward-compatibility.md)).
 
-마지막으로 6.5 개발 주기의 경우 지속 가능한 업그레이드( [지속 가능한 업그레이드](/help/sites-deploying/sustainable-upgrades.md)참조)에 도입된 기능을 사용하면 Best Practice를 통해 향후 업그레이드를 보다 효율적이고 매끄럽게 진행할 수 있습니다.
+마지막으로 6.5 개발 주기 동안 지속 가능한 업그레이드( [지속 가능한 업그레이드](/help/sites-deploying/sustainable-upgrades.md)참조)에 도입된 기능을 사용하면 Best Practice를 통해 향후 업그레이드를 보다 효율적이고 매끄럽게 진행할 수 있습니다.
 
 ![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
 
