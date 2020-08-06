@@ -3,9 +3,9 @@ title: 자산을 일괄 [!DNL Adobe Experience Manager Assets] 마이그레이�
 description: 에셋을 [!DNL Adobe Experience Manager]가져오고, 메타데이터를 적용하고, 변환을 생성하며, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >
 >
-이 소프트웨어는 오픈 소스로 제공되며 [Apache v2 라이센스에서 다룹니다](https://adobe-consulting-services.github.io/pages/license.html). 질문하거나 문제를 보고하려면 ACS AEM 도구 [및](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) ACS AEM Commons에 대한 해당 GitHub 문제를 [참조하십시오](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+이 소프트웨어는 오픈 소스로 제공되며 [Apache v2 라이센스에서 다룹니다](https://adobe-consulting-services.github.io/pages/license.html). 질문을 하거나 문제를 보고하려면 ACS AEM 도구 [및](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) ACS AEM Commons에 대한 해당 GitHub 문제를 [참조하십시오](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
 ## 마이그레이션 대상 [!DNL Experience Manager] {#migrating-to-aem}
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 #### HTTP를 통해 보내기 {#pushing-through-http}
 
-Adobe의 Managed Services 팀은 Logton이라는 도구를 사용하여 고객 환경에 데이터를 로드합니다. Logton은 배포의 한 디렉토리에서 다른 디렉터리로 모든 에셋을 로드하는 작은 Java 응용 [!DNL Experience Manager] 프로그램입니다. Logton 대신 Perl 스크립트와 같은 도구를 사용하여 에셋을 저장소에 게시할 수도 있습니다.
+Adobe Managed Services 팀은 글루튼이라는 도구를 사용하여 고객 환경에 데이터를 로드합니다. Logton은 배포의 한 디렉토리에서 다른 디렉터리로 모든 에셋을 로드하는 작은 Java 응용 [!DNL Experience Manager] 프로그램입니다. Logton 대신 Perl 스크립트와 같은 도구를 사용하여 에셋을 저장소에 게시할 수도 있습니다.
 
 https를 통해 푸싱하는 접근 방식을 사용하는 두 가지 주요 단면이 있습니다.
 
@@ -88,7 +88,7 @@ ACS [AEM Tools CSV Asset Importer는](https://adobe-consulting-services.github.i
 
 ### 자산 활성화 {#activating-assets}
 
-게시 계층이 있는 배포의 경우 게시 팜에서 자산을 활성화해야 합니다. Adobe에서는 단일 게시 인스턴스 이상을 실행하는 것이 좋지만, 모든 자산을 단일 게시 인스턴스에 복제한 다음 해당 인스턴스를 복제하는 것이 가장 효율적입니다. 대량의 자산을 활성화할 때 트리 활성화를 트리거한 후 개입해야 할 수 있습니다. 그 이유는 다음과 같습니다. 활성화가 시작될 때 항목이 Sling 작업/이벤트 대기열에 추가됩니다. 이 큐의 크기가 약 40,000개 항목을 초과할 경우 처리 속도가 크게 느려집니다. 이 큐의 크기가 100,000개 항목을 초과하면 시스템 안정성이 손상되기 시작합니다.
+게시 계층이 있는 배포의 경우 게시 팜에서 자산을 활성화해야 합니다. Adobe은 단일 게시 인스턴스 이상을 실행하는 것이 좋지만, 모든 자산을 단일 게시 인스턴스에 복제한 다음 해당 인스턴스를 복제하는 것이 가장 효율적입니다. 대량의 자산을 활성화할 때 트리 활성화를 트리거한 후 개입해야 할 수 있습니다. 그 이유는 다음과 같습니다. 활성화가 시작될 때 항목이 Sling 작업/이벤트 대기열에 추가됩니다. 이 큐의 크기가 약 40,000개 항목을 초과할 경우 처리 속도가 크게 느려집니다. 이 큐의 크기가 100,000개 항목을 초과하면 시스템 안정성이 손상되기 시작합니다.
 
 이 문제를 해결하려면 [빠른 작업 관리자를](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) 사용하여 자산 복제를 관리할 수 있습니다. 이는 Sling 대기열을 사용하지 않고 오버헤드를 낮추고 작업 로드를 조절하여 서버의 오버로드가 되지 않도록 합니다. FAM을 사용하여 복제를 관리하는 예는 기능의 설명서 페이지에 나와 있습니다.
 
@@ -98,7 +98,7 @@ ACS [AEM Tools CSV Asset Importer는](https://adobe-consulting-services.github.i
 
 >[!NOTE]
 >
->Adobe는 Grabbit를 유지 관리하거나 지원하지 않습니다.
+>Adobe은 Grabbit를 유지 관리하거나 지원하지 않습니다.
 
 ### 복제 게시 {#cloning-publish}
 
