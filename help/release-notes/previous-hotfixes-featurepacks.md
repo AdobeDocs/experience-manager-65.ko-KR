@@ -3,7 +3,7 @@ title: Adobe Experience Manager 6.5 이전 서비스 팩 릴리스 노트
 description: Adobe Experience Manager 6.5 서비스 팩 3 이하에 대한 릴리스 노트입니다.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
 source-wordcount: '8108'
 ht-degree: 99%
@@ -421,7 +421,7 @@ Remove one mention of this fix.
 
 * Jetty 기반 HTTP 서비스에 대한 버퍼 크기 구성의 업데이트가 저장되지 않습니다(NPR-30925).
 
-* 이제 QueryBuilder는 xpath 쿼리에서 ``fn:name()`` orderby를 지원합니다(NPR-31322).
+* 이제 QueryBuilder는 xpath 쿼리에서 `fn:name()` orderby를 지원합니다(NPR-31322).
 
 * [!DNL Experience Manager] 6.3에서 업그레이드 시 중복 활성화 트리가 만들어집니다(NPR-31513).
 
@@ -431,7 +431,7 @@ Remove one mention of this fix.
 
 * 서로 다른 버전의 Apache POI 및 Apache Tika 번들로 인해 ZIP 파일을 [!DNL Experience Manager Communities] 게시물에 첨부할 때 오류가 표시됩니다(NPR-31018).
 
-* 이 ``org.apache.sling.distribution.api`` 번들은 구성 관리자에 숨겨져 있으므로 사용자 지정 번들에는 사용할 수 없습니다(NPR-31720).
+* 이 `org.apache.sling.distribution.api` 번들은 구성 관리자에 숨겨져 있으므로 사용자 지정 번들에는 사용할 수 없습니다(NPR-31720).
 
 ### 프로젝트 {#projects}
 
