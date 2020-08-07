@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1afda7c23dd71f7ba40c295c13cf24a4d52dbd1c
+source-git-commit: e6d02717811ac78b77dc459814941d654e94733f
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 0%
@@ -37,11 +37,13 @@ ht-degree: 0%
    >   
    * 기본 작업 영역입니다.
    >   * 클라우드 구성에 지정된 명명된 작업 공간입니다.
-      >     **참고:** 특정 작업 영역으로 내보내려면 Adobe Target Premium이 필요합니다.
+   >   * **참고:** 특정 작업 영역으로 내보내려면 Adobe Target Premium이 필요합니다.
+>
 >* AEM은 Adobe I/O를 사용하여 Adobe Target과 [통합되어야 합니다](/help/sites-administering/integration-ims-adobe-io.md).
 
 >
 >
+
 AEM 6.5.0.0 및 6.5.1.0:
 >
 >* AEM 경험 조각은 Adobe Target의 기본 작업 영역으로 내보내집니다.
@@ -52,8 +54,8 @@ Adobe Experience Manager(AEM)에서 [만든 경험](/help/sites-authoring/experi
 
 경험 조각을 Adobe Target으로 내보내는 데 사용할 수 있는 세 가지 형식 옵션이 있습니다.
 
-* HTML(기본값): 웹 및 하이브리드 컨텐츠 전달 지원
-* JSON: 헤드리스 컨텐츠 전달 지원
+* HTML(기본값):웹 및 하이브리드 컨텐츠 전달 지원
+* JSON:헤드리스 컨텐츠 전달 지원
 * HTML 및 JSON
 
 AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 Adobe Target의 사용자 정의 작업 영역으로 내보낼 수 있습니다. 이는 Adobe I/O를 통해 수행되므로 AEM은 Adobe I/O를 사용하여 Adobe Target과 [통합되어야 합니다](/help/sites-administering/integration-ims-adobe-io.md).
@@ -64,7 +66,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
 
 >[!NOTE]
 >
->Adobe Target 작업 영역을 사용하여 조직(그룹) 구성원이 이 조직에 대한 오퍼와 활동을 만들고 관리할 수 있습니다. 다른 사용자에게 액세스 권한을 부여하지 않습니다. 예를 들어 글로벌 우려 범위에서 국가별 조직을 지정할 수 있습니다.
+>Adobe Target 작업 영역을 사용하여 조직(그룹) 구성원이 이 조직에 대한 오퍼와 활동을 만들고 관리할 수 있습니다.다른 사용자에게 액세스 권한을 부여하지 않습니다. 예를 들어 글로벌 우려 범위에서 국가별 조직을 지정할 수 있습니다.
 
 >[!NOTE]
 >
@@ -97,10 +99,10 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
 조각을 내보내려면 먼저 **Adobe Target용** 클라우드 구성을 조각 또는 폴더에 추가해야 **** 합니다. 또한 다음을 수행할 수 있습니다.
 
 * 내보내기에 사용할 형식 옵션을 지정합니다.
-* Target 작업 영역을 대상으로 선택
+* target 작업 영역을 대상으로 선택
 * 경험 조각에서 참조를 재작성할 externalizer 도메인 선택(선택 사항)
 
-필요한 폴더 및/또는 조각의 **페이지** 속성에서 필요한 옵션을 선택할 수 있습니다. 그 사양은 필요에 따라 상속된다.
+필요한 폴더 및/또는 조각의 **페이지** 속성에서 필요한 옵션을 선택할 수 있습니다.그 사양은 필요에 따라 상속된다.
 
 1. Navigate to the **Experience Fragments** console.
 
@@ -130,7 +132,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
 
    * 적절한 구성
    * 필수 형식 옵션
-   * Adobe Target 작업 영역
+   * adobe target 작업 영역
    * 필요한 경우 - externalizer 도메인
 
    >[!CAUTION]
