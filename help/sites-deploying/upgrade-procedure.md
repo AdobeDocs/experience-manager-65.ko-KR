@@ -12,9 +12,9 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 5f8198f0fd6c335708f2b771848b2e66dfc242b3
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,14 @@ ht-degree: 0%
 >
 >대부분의 AEM 업그레이드가 적소에 수행되므로 업그레이드 시 작성자 계층의 가동 중지 시간이 필요합니다. 이러한 모범 사례를 통해 게시 계층 다운타임을 최소화하거나 제거할 수 있습니다.
 
-AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다운타임을 최소화하기 위해 작성자 환경 또는 게시 환경 간의 접근 방식의 차이점을 고려해야 합니다. 이 페이지에서는 현재 AEM 6.x 버전에서 실행 중인 AEM 토폴로지를 업그레이드하는 높은 수준의 절차에 대해 설명합니다. 작성 및 게시 계층과 Mongo 및 TarMK 기반 배포 간에 프로세스가 다르므로 각 계층과 마이크로커널이 별도의 섹션에 나열되어 있습니다. 배포를 실행할 때 먼저 작성 환경을 업그레이드하고 성공을 확인한 다음 게시 환경으로 진행하는 것이 좋습니다.
+AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다운타임을 최소화하기 위해 작성자 환경 또는 게시 환경 간의 접근 방식의 차이점을 고려해야 합니다. 이 페이지에서는 현재 AEM 6.x 버전에서 실행 중인 AEM 토폴로지를 업그레이드하는 높은 수준의 절차에 대해 설명합니다.작성 및 게시 계층과 Mongo 및 TarMK 기반 배포 간에 프로세스가 다르므로 각 계층과 마이크로커널이 별도의 섹션에 나열되어 있습니다. 배포를 실행할 때 먼저 작성 환경을 업그레이드하고 성공을 확인한 다음 게시 환경으로 진행하는 것이 좋습니다.
 
-<!-->>[!IMPORTANT]
->업그레이드를 수행하기 전에 저장소를 인덱싱하여 업그레이드 중 다운타임을 크게 줄일 수 있습니다. 자세한 내용은 오프라인 [재색인 사용을 통해 업그레이드](/help/sites-deploying/upgrade-offline-reindexing.md)중 다운타임을 줄이기를 참조하십시오—>
+<!--
+>[!IMPORTANT]
 >
+>The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
+-->
+
 ## TarMK Author Tier {#tarmk-author-tier}
 
 ### 토폴로지 시작 {#starting-topology}
