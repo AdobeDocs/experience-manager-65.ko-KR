@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.5 서비스 팩 5에 대한 릴리스 �
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2f5072a73b11853bbfd63c4b4ce9ffcf186adad1
+source-git-commit: ca965d8495c0460b2b6bc5e08d8818b91f9fcdee
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4531'
 ht-degree: 98%
 
 ---
@@ -79,6 +79,7 @@ Experience Manager 6.5 서비스 팩 5에 소개된 전체 기능, 주요 특징
 * 사용자가 동일한 페이지에서 레이아웃 컨테이너를 복사하고 붙여넣으면 레이아웃 컨테이너의 구성 요소가 표시되지 않습니다(NPR-33648).
 * Dispatcher 상태 확인은 로그 파일에 `Invalid cookie header` 경고 메시지를 표시합니다(NPR-33629).
 * PreferencesServlet에 반영된 XSS(NPR-33438).
+* 익명 사용자는 CRX DE Lite 기능(GRANITE-27790)에 액세스할 수 있습니다.
 
 ### [!DNL Assets] {#assets-6550}
 
