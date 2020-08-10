@@ -1,6 +1,6 @@
 ---
-title: 슬링 어댑터 사용
-seo-title: 슬링 어댑터 사용
+title: Sling 어댑터 사용
+seo-title: Sling 어댑터 사용
 description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 개체를 편리하게 변환합니다
 seo-description: Sling은 어댑터 패턴을 제공하여 적응형 인터페이스를 구현하는 개체를 편리하게 변환합니다
 uuid: 07f66a33-072d-49e1-8e67-8b80a6a9072a
@@ -10,15 +10,15 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: bac56cb8e172d826114e1e607dc24b0a17821f8c
+source-git-commit: 36cc5ca0de9ae2933a0d7585a00f26cc984d24db
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2350'
 ht-degree: 1%
 
 ---
 
 
-# 슬링 어댑터 사용{#using-sling-adapters}
+# Sling 어댑터 사용{#using-sling-adapters}
 
 [Sling](https://sling.apache.org) 은 [어댑터 패턴](https://sling.apache.org/site/adapters.html) 을 제공하여 어댑터 인터페이스 [를 구현하는 개체를 편리하게](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 변환합니다. 이 인터페이스는 인수 [로 전달되는 클래스 유형으로 개체를 변환하는 일반](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) adaptTo() 메서드를 제공합니다.
 
@@ -69,7 +69,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 
 다음과 같은 다양한 방법으로 구현할 `Adaptable.adaptTo()` 수 있습니다.
 
-* 목적 자체로는; 메서드 자체를 구현하고 특정 개체에 매핑을 수행합니다.
+* 목적 자체로는;메서드 자체를 구현하고 특정 개체에 매핑을 수행합니다.
 * 임의 개체 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)를 매핑할 수 있습니다.
 
    개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며 [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (이 경우 `adaptTo` 호출을 중앙 어댑터 관리자에게 전달) 확장해야 합니다.
@@ -118,11 +118,11 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
-   <td>파일 리소스의 바이너리 컨텐츠를 반환합니다(JCR 노드 기반 리소스이고 노드 유형이 <code>nt:file</code> 또는 <code>nt:resource</code>인 경우). 번들 리소스인 경우; 파일 컨텐츠(파일 시스템 리소스인 경우) 또는 바이너리 JCR 속성 리소스의 데이터입니다.</td>
+   <td>파일 리소스의 바이너리 컨텐츠를 반환합니다(JCR 노드 기반 리소스이고 노드 유형이 <code>nt:file</code> 또는 <code>nt:resource</code>인 경우).번들 리소스인 경우;파일 컨텐츠(파일 시스템 리소스인 경우) 또는 바이너리 JCR 속성 리소스의 데이터입니다.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/net/URL.html">URL</a></td>
-   <td>리소스(JCR 노드 기반 리소스인 경우 이 노드의 저장소 URL; 번들 리소스인 경우 jar bundle URL; 파일 시스템 리소스인 경우 파일 URL).</td>
+   <td>리소스(JCR 노드 기반 리소스인 경우 이 노드의 저장소 URL;번들 리소스인 경우 jar bundle URL;파일 시스템 리소스인 경우 파일 URL).</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/File.html">파일</a></td>
@@ -145,12 +145,36 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
    <td>JCR 노드 기반 리소스인 경우</td>
   </tr>
   <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html">페이지</a></td>
+   <td>JCR 노드 기반 리소스이고 노드가 <code>cq:Page</code> (또는 <code>cq:PseudoPage</code>)인 경우</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html">구성 요소</a></td>
+   <td>노드 <code>cq:Component</code> 리소스인 경우</td>
+  </tr>  
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Design.html">디자인</a></td>
+   <td>디자인 노드인 경우(<code>cq:Page</code>).</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html">템플릿</a></td>
+   <td>노드 <code>cq:Template</code> 리소스인 경우</td>
+  </tr>  
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">블루프린트</a></td>
+   <td>노드 <code>cq:Template</code> 리소스인 경우</td>
+  </tr>
+  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html">자산</a></td>
    <td>dam:Asset 노드 리소스인 경우</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Rendition.html">Rendition</a></td>
    <td>dam:Asset 변환(dam:Assert의 변환 폴더 아래에 nt:file)인 경우</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html">태그</a></td>
+   <td>노드 <code>cq:Tag</code> 리소스인 경우</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
@@ -200,7 +224,23 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
    <td>요청의 JCR 세션(JCR 기반 리소스 확인자(기본값)입니다.</td>
   </tr>
   <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/ComponentManager.html">ComponentManager</a></td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Designer.html">디자이너</a></td>
+   <td> </td>
+  </tr>
+  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
+   <td>JCR 세션을 기반으로 하는 경우, JCR 기반 리소스 확인자입니다.</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
    <td>JCR 세션을 기반으로 하는 경우, JCR 기반 리소스 확인자입니다.</td>
   </tr>
   <tr>
@@ -244,7 +284,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 
 #### WCM {#wcm}
 
-**페이지** 적응형:
+**[페이지](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)**적응형:
 
 <table>
  <tbody>
@@ -267,7 +307,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
  </tbody>
 </table>
 
-**구성 요소** 어댑터:
+**[구성 요소](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)**어댑터:
 
 | [리소스](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 구성 요소의 리소스입니다. |
 |---|---|
@@ -275,7 +315,7 @@ Null 케이스를 정상적으로 처리하는 것이 중요합니다. jsp 렌�
 | [노드](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 구성 요소의 노드입니다. |
 | ... | 구성 요소의 리소스를 조정할 수 있는 모든 것 |
 
-**템플릿** 적용 대상:
+**[템플릿](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)**적용 대상:
 
 <table>
  <tbody>
