@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70052a5a8cba16dd2d73179e6e1d617347d716bc
+source-git-commit: e562ffe229543a1ee93467bcbc1a7be6c12927c6
 workflow-type: tm+mt
-source-wordcount: '3679'
+source-wordcount: '3643'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,13 @@ Adobe Sign을 사용하면 적응형 양식에 전자 서명 워크플로우를 
 * 계약 주기 시간을 단축하고 벤더를 보다 신속하게 확보할 수 있습니다.
 * 일반적인 프로세스를 자동화하는 디지털 워크플로우 구축
 
-AEM Forms과 Adobe Sign의 통합 기능:
+Adobe Sign과 AEM Forms의 통합 지원:
 
 * 단일 및 여러 사용자 서명 워크플로우
 * 순차적 및 동시 서명 워크플로우
 * 양식 및 양식 외 서명 경험
 * 익명 또는 로그인 사용자로 양식 서명
-* 동적 서명 프로세스(AEM Forms 워크플로우와 통합)
+* 다이내믹한 서명 프로세스(AEM Forms 워크플로우와 통합)
 * 기술 자료, 전화 및 소셜 프로필을 통한 인증
 
 ## 전제 조건 {#prerequisites}
@@ -126,7 +126,7 @@ Adobe Sign에는 적응형 형태로 배치할 수 있는 다양한 필드가 �
 
 1. **Adobe Sign 필드** aem_6_ ![3_adobesign](assets/aem_6_3_adobesign.png) 아이콘을 누릅니다. Adobe Sign 필드를 선택하고 추가하는 옵션이 표시됩니다.
 
-   유형 **드롭다운** 필드를 확장하여 Adobe Sign 필드를 선택하고 완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 눌러 선택한 필드를 Adobe Sign 블록에 추가합니다. 유형 **** 드롭다운 필드에는 서명, 서명자 정보 및 데이터 필드 유형이 포함되어 있습니다. 유형 드롭다운 상자에 나열된 AEM Forms 지원 필드와 Adobe Sign 통합 Adobe Sign 필드에 대한 자세한 내용은 [Adobe Sign 설명서를 참조하십시오](https://helpx.adobe.com/sign/help/field-types.html).
+   유형 **드롭다운** 필드를 확장하여 Adobe Sign 필드를 선택하고 완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 눌러 선택한 필드를 Adobe Sign 블록에 추가합니다. 유형 **** 드롭다운 필드에는 서명, 서명자 정보 및 데이터 필드 유형이 포함되어 있습니다. 유형 드롭다운 상자의 AEM Forms 지원 필드와 Adobe Sign 통합 Adobe Sign 필드에 대한 자세한 내용은 [Adobe Sign 설명서를 참조하십시오](https://helpx.adobe.com/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -156,9 +156,9 @@ AEM Forms 인스턴스에 대해 여러 Adobe Sign 서비스를 구성할 수 �
 
 1. 컨텐츠 브라우저에서 **양식 컨테이너**&#x200B;를 누르고 구성 **** 구성 ![](assets/configure.png) 아이콘을누릅니다. 속성 브라우저를 열고 응용 양식 컨테이너 속성을 표시합니다.
 1. 속성 브라우저에서 **전자 서명** 아코디언을 확장하고 [Adobe Sign **사용** ] 옵션을 선택합니다. Adobe Sign의 적응형 양식을 활용할 수 있습니다.
-1. 이미 구성된 Adobe Sign Cloud Service 목록에서 클라우드 서비스를 선택합니다.
+1. 이미 구성된 Adobe Sign Cloud Services 목록에서 클라우드 서비스를 선택합니다.
 
-   Adobe Sign **Cloud Service** 목록이 비어 있는 경우 AEM Forms과 함께 [Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md) 구성 아티클에 따라 서비스를 구성합니다.
+   Adobe Sign **Cloud Service** 목록이 비어 있는 경우 AEM Forms [와 함께 Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md) 구성 아티클을 따라 서비스를 구성합니다.
 
 1. 서명자가 서명할 수 있음 **대화 상자에서 서명** 순서를 선택합니다. Adobe Sign 가수들은 임의의 순서대로 **적응형** 양식에 서명할 수 있습니다. 즉, 다른 서명자의 다음 또 **는 동시에** 서명할 수 있습니다.
 
@@ -184,21 +184,21 @@ AEM Forms 인스턴스에 대해 여러 Adobe Sign 서비스를 구성할 수 �
 
    * **서명자와 양식 작성자는 동일합니까?** 양식 작성자 **와**&#x200B;첫 번째 서명자가 동일한 경우 예를 선택합니다. 이 옵션이 **아니요로 설정된** 경우 적응형 양식의 서명 단계 구성 요소를 사용하지 마십시오. 양식에 서명 단계 구성 요소가 포함되어 있으면 해당 필드는 자동으로 예로 설정됩니다.
 
-   * **서명자 이메일 주소:** 서명자의 이메일 주소를 지정합니다. 서명자는 지정된 이메일 주소로 문서/양식에 서명하도록 수신됩니다. 양식 필드에 제공된 이메일 주소를 사용하거나, 로그인한 사용자의 AEM 사용자 프로필에 사용하거나, 이메일 주소를 수동으로 입력할 수 있습니다. It is a mandatory step. Ensure that the email address of the first signer or the only signer (in case of single signer) is not identical to Adobe Sign account used to configure AEM cloud services.
+   * **서명자 이메일 주소:** 서명자의 이메일 주소를 지정합니다. 서명자는 지정된 이메일 주소로 문서/양식에 서명하도록 수신됩니다. 양식 필드에 제공된 이메일 주소를 사용하거나, 로그인한 사용자의 AEM 사용자 프로필에 사용하거나, 이메일 주소를 수동으로 입력할 수 있습니다. 그것은 의무적인 단계이다. 첫 번째 서명자 또는 유일한 서명자(단일 서명자의 경우)의 이메일 주소가 AEM 클라우드 서비스를 구성하는 데 사용되는 Adobe Sign 계정과 동일하지 않은지 확인하십시오.
 
-   * **Signer Authentication Method:** Specify the method to authenticate a user before opening a form for signing. You can choose between phone, knowledge base, and social identity-based authentication.
+   * **서명자 인증 방법:** 서명을 위해 양식을 열기 전에 사용자를 인증할 방법을 지정합니다. 전화, 기술 자료 및 소셜 ID 기반 인증 중에서 선택할 수 있습니다.
    >[!NOTE]
    >
-   >    * By default, the social identity-based authentication provides an option to authenticate using Facebook, Google, and LinkedIn. 다른 소셜 인증 공급자를 활성화하려면 Adobe Sign 지원에 문의할 수 있습니다.
+   >    * 기본적으로 소셜 ID 기반 인증에서는 Facebook, Google 및 LinkedIn을 사용하여 인증할 수 있는 옵션을 제공합니다. 다른 소셜 인증 공급자를 활성화하려면 Adobe Sign 지원에 문의할 수 있습니다.
 
 
-   * **Adobe Sign fields to fill or sign:** Select Adobe Sign fields for the signer. 적응형 양식에는 여러 개의 Adobe Sign 필드가 있을 수 있습니다. You can choose to enable specific fields for a signer. 이 필드는 사용 가능한 모든 Adobe Sign 블록을 표시합니다. When you select a block, all the fields of the block are selected. You can use the X icon to deselect a field.
+   * **채우거나 서명할 Adobe Sign 필드:** 서명자의 Adobe Sign 필드를 선택합니다. 적응형 양식에는 여러 개의 Adobe Sign 필드가 있을 수 있습니다. 서명자에 대해 특정 필드를 활성화하도록 선택할 수 있습니다. 이 필드는 사용 가능한 모든 Adobe Sign 블록을 표시합니다. 블록을 선택하면 블록의 모든 필드가 선택됩니다. X 아이콘을 사용하여 필드를 선택 취소할 수 있습니다.
 
-   ![signer-details](assets/signer-details.png)
+   ![서명자 세부 정보](assets/signer-details.png)
 
-   The above image has two example Adobe Sign Blocks: Personal-Information and Office-details
+   위 이미지에는 두 개의 Adobe Sign 블록 예가 있습니다.개인 정보 및 Office 세부 정보
 
-   Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon. 서명자가 추가되고 구성됩니다.
+   Done aem_ ![6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 누릅니다. 서명자가 추가되고 구성됩니다.
 
 ### 적응형 양식의 작업 제출 선택 {#selectsubmitactionforanadaptiveform}
 
@@ -206,15 +206,16 @@ AEM Forms 인스턴스에 대해 여러 Adobe Sign 서비스를 구성할 수 �
 
 또한 Adobe Sign 지원 적응형 양식은 모든 서명자가 양식에 서명한 후에만 제출됩니다. 양식 포털의 Pending Sign 섹션에서 부분적으로 서명된 양식을 찾을 수 있습니다. Adobe Sign 구성 서비스는 [정기적으로](../../forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign 서버를 폴링하여 서명 상태를 확인합니다. 모든 서명자가 양식 서명을 완료하면 제출 작업 서비스가 시작되고 양식이 제출됩니다. 사용자 지정 제출 작업을 사용하고 양식에 Adobe Sign이 사용된 경우 사용자 지정 제출 작업을 업데이트하여 제출 작업 서비스를 사용하십시오.
 
+<!-- Remove when forms portal goes live
 >[!NOTE]
 >
->적응형 양식의 데이터는 Forms 포털에 일시적으로 저장됩니다. Forms 포털에는 [맞춤형 스토리지를 사용하는 것이 좋습니다](/help/forms/using/configuring-draft-submission-storage.md). PII(개인 식별 정보) 데이터가 AEM 서버에 저장되지 않도록 합니다.
+>Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. -->
 
-양식 서명 환경을 경험해 보십시오. 양식을 미리 보고 서명 환경을 확인할 수 있습니다. On the published form, Adobe Sign Block fields are displayed when a signer receives the form for signing through an email. This experience is also known as out-of-form signing experience. 첫 번째 서명자에 대해 양식 서명 환경을 구성할 수도 있습니다. 자세한 내용은 양식 서명 경험 [만들기를 참조하십시오](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
+양식 서명 환경을 경험해 보십시오. 양식을 미리 보고 서명 환경을 확인할 수 있습니다. 게시된 양식에서는 서명자가 이메일을 통해 서명을 받기 위한 양식을 수신하면 Adobe Sign 블록 필드가 표시됩니다. 이러한 경험을 폼 없는 서명 경험이라고도 합니다. 첫 번째 서명자에 대해 양식 서명 환경을 구성할 수도 있습니다. 자세한 내용은 양식 서명 경험 [만들기를 참조하십시오](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
 
 ## 적응형 양식에 대한 클라우드 서명 구성 {#configure-cloud-signatures-for-an-adaptive-form}
 
-Cloud-based digital signatures or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. 클라우드 기반의 디지털 서명을 사용하여 적응형 양식에 서명할 수 있습니다.
+클라우드 기반의 디지털 서명 또는 원격 서명은 데스크탑, 모바일 및 웹에서 사용할 수 있는 차세대 디지털 서명으로, 최고 수준의 규정 준수 및 서명자 인증을 보장합니다. 클라우드 기반의 디지털 서명을 사용하여 적응형 양식에 서명할 수 있습니다.
 
 Adobe 서명에 [대한 적응형 양식 속성을](../../forms/using/working-with-adobe-sign.md#enableadobesign)편집한 후 다음 단계를 수행하여 적응형 양식에 클라우드 서명 필드를 추가합니다.
 
@@ -238,8 +239,8 @@ Adobe 서명에 [대한 적응형 양식 속성을](../../forms/using/working-wi
 
    다음을 사용하여 적응형 양식에 디지털 서명 적용
 
-   * 클라우드 서명: 트러스트 서비스 제공업체에서 호스팅하는 [디지털 ID로](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) 서명합니다.
-   * Adobe Acrobat 또는 Reader: 스마트 카드, USB 토큰 또는 파일 기반 디지털 ID를 사용하여 문서를 다운로드하여 Adobe Acrobat 또는 Reader에서 엽니다.
+   * 클라우드 서명:트러스트 서비스 제공업체에서 호스팅하는 [디지털 ID로](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) 서명합니다.
+   * Adobe Acrobat 또는 Reader:스마트 카드, USB 토큰 또는 파일 기반 디지털 ID를 사용하여 문서를 다운로드하여 Adobe Acrobat 또는 Reader에서 엽니다.
 
    적응형 양식에 클라우드 서명 필드를 추가한 후 다음 단계를 수행하여 구성 프로세스를 완료합니다.
 
@@ -267,15 +268,15 @@ Adobe 서명에 [대한 적응형 양식 속성을](../../forms/using/working-wi
 1. 구성 요소 브라우저에서 **서명 단계** 구성 요소를 양식으로 드래그하여 놓습니다.
 1. 새로 추가된 서명 단계 구성 요소를 선택하고 구성 **아이콘을** ![누릅니다](assets/configure.png) . 속성 브라우저를 열고 서명 단계 속성을 표시합니다. 다음 속성을 구성합니다.
 
-   * **요소 이름**: 구성 요소의 이름을 지정합니다.
+   * **요소 이름**:구성 요소의 이름을 지정합니다.
 
    * **제목:** 구성 요소의 고유한 제목을 지정합니다.
    * **템플릿 메시지:** 서명 PDF를 로드하는 동안 표시할 메시지를 지정합니다. Adobe Sign 서비스는 서명 PDF를 준비하고 로드하는 데 시간이 다소 소요됩니다.
    * **서명 서비스:** Adobe Sign **옵션을** 선택합니다.
 
-   * **기존 전자 서명 구성 요소**&#x200B;사용: AEM Forms 작업 공간 [, AEM Forms 앱 또는 기본 응용 양식에 기존 전자 서명 구성 요소가 있는 경우 기존 전자 서명 구성 요소](../../forms/using/introduction-html-workspace.md)사용 옵션을 선택합니다 **** .
+   * **기존 전자 서명 구성 요소**&#x200B;사용:AEM Forms 작업 공간 [, AEM Forms 앱 또는 기본 응용 양식에 기존 전자 서명 구성 요소가 있는 경우 기존 전자 서명 구성 요소](../../forms/using/introduction-html-workspace.md)사용 옵션을 **** 선택합니다.
 
-   * **구성**: 구성(Adobe Sign Cloud Service)을 선택합니다. 드롭다운 상자는 이전 전자 서명 구성 요소 **사용** 옵션이 활성화된 경우에만 사용할 수 있습니다.
+   * **구성**:구성(Adobe Sign Cloud Service)을 선택합니다. 드롭다운 상자는 이전 전자 서명 구성 요소 **사용** 옵션이 활성화된 경우에만 사용할 수 있습니다.
 
    변경 사항을 저장하려면 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 완료 아이콘을 누릅니다.
 
@@ -307,7 +308,7 @@ Adobe 서명에 [대한 적응형 양식 속성을](../../forms/using/working-wi
 
 **Ans:** 고급 템플릿을 사용하여 만든 응용 양식이 Adobe Sign을 사용하도록 구성되었습니다. 오류를 해결하려면 Adobe Sign 클라우드 구성을 만들고 선택하고 적응형 양식의 Adobe Sign 서명자를 구성합니다.
 
-**Ans:** 예. 텍스트 구성 요소의 텍스트 태그를 사용하여 활성화된 적응형 양식의 기록 [문서](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (자동 생성 문서 옵션만 해당)에 Adobe Sign 필드를 추가할 수 있습니다. 텍스트 태그를 만드는 절차와 규칙에 대해 자세히 알아보려면 [Adobe Sign 설명서를 참조하십시오](https://helpx.adobe.com/sign/help/text-tags.html). 또한 적응형 양식에는 텍스트 태그에 대한 지원이 제한됩니다. 텍스트 태그를 사용하여 [Adobe Sign 블록에서 지원하는 필드만 만들 수](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) 있습니다.
+**Ans:** 예. 텍스트 구성 요소의 텍스트 태그를 사용하여 활성화된 적응형 양식의 기록 [문서](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (자동 생성 문서 옵션만 해당)에 Adobe Sign 필드를 추가할 수 있습니다. 텍스트 태그를 만드는 절차와 규칙에 대해 자세히 알아보려면 [Adobe Sign 설명서를 참조하십시오](https://helpx.adobe.com/sign/using/text-tag.html). 또한 적응형 양식에는 텍스트 태그에 대한 지원이 제한됩니다. 텍스트 태그를 사용하여 [Adobe Sign 블록에서 지원하는 필드만 만들 수](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) 있습니다.
 
 **Ans:** 양식에서 두 구성 요소를 동시에 사용할 수 있습니다. 다음은 이러한 구성 요소를 사용하기 위한 몇 가지 권장 사항입니다.
 
@@ -327,12 +328,12 @@ Adobe 서명에 [대한 적응형 양식 속성을](../../forms/using/working-wi
 * Adobe Sign 클라우드 서비스를 구성하는 데 사용된 Adobe Sign 서버의 API 응용 프로그램에 필요한 권한이 있는지 확인하십시오.
 * 여러 Adobe Sign 클라우드 서비스를 사용하는 경우 모든 서비스의 **[!UICONTROL oAuth URL]** 을 동일한 **[!UICONTROL Adobe Sign 샤드]**&#x200B;로 가리킵니다.
 
-* 별도의 이메일 주소를 사용하여 Adobe Sign 계정, 첫 번째 서명자 및 단일 서명자에 대해 구성합니다. 첫 번째 서명자의 이메일 주소 또는 유일한 서명자(단일 서명자의 경우)는 AEM cloud services 구성에 사용되는 Adobe Sign 계정과 동일하지 않습니다.
+* 별도의 이메일 주소를 사용하여 Adobe Sign 계정, 첫 번째 서명자 및 단일 서명자에 대해 구성합니다. 첫 번째 서명자의 이메일 주소 또는 유일한 서명자(단일 서명자의 경우)는 AEM 클라우드 서비스를 구성하는 데 사용되는 Adobe Sign 계정과 동일하지 않습니다.
 
 ## 관련 문서 {#related-articles}
 
 * [Adobe Sign과 AEM Forms 통합](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 * [적응형 양식에서 Adobe Sign 사용](../../forms/using/working-with-adobe-sign.md)
 
-* [AEM Forms과 Adobe Sign 사용(비디오)
+* [Adobe Sign과 AEM Forms 사용(비디오)
    ](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
