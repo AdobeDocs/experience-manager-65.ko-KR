@@ -3,7 +3,7 @@ title: 비디오 자산을 관리할 수 있습니다 [!DNL Adobe Experience Man
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및 게시할 수 있습니다 [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 비디오 포맷은 조직의 디지털 자산에 중요한 역할을 합니다. [!DNL Adobe Experience Manager] 비디오 에셋 제작 후 전체 라이프사이클을 관리할 수 있는 완벽한 솔루션과 기능을 제공합니다.
 
-비디오 에셋을 관리하고 편집하는 방법을 살펴보십시오 [!DNL Adobe Experience Manager Assets]. 또한 사용 권한이 있는 경우 [!DNL Dynamic Media]Dynamic Media 비디오 설명서 [](/help/assets/video.md)를 참조하십시오.
+비디오 에셋을 관리하고 편집하는 방법을 살펴보십시오 [!DNL Adobe Experience Manager Assets]. 또한 사용 권한이 있는 경우 [!DNL Dynamic Media]다이내믹 미디어 비디오 설명서 [](/help/assets/video.md)를 참조하십시오.
 
 ## 비디오 에셋 업로드 및 미리 보기 {#upload-and-preview-video-assets}
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 구성 외에도 다음 구성을 변경하여 큰 자산을 업로드합니다. [!DNL Assets]
 
 * 토큰 만료 시간을 늘립니다. 웹 콘솔의 [!UICONTROL Adobe] Granite CSRF Servlet()을 참조하십시오 `https://[aem_server]:[port]/system/console/configMgr`. 자세한 내용은 [CSRF 보호를 참조하십시오](/help/sites-developing/csrf-protection.md).
-* Dispatcher 구성 `receiveTimeout` 을 늘립니다. 자세한 내용은 [Experience Manager Dispatcher 구성을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
+* Dispatcher 구성 `receiveTimeout` 의 크기를 늘립니다. 자세한 내용은 [Experience Manager 디스패처 구성을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
@@ -59,11 +59,11 @@ ht-degree: 0%
 1. [ [!DNL Adobe Experience Manager] 웹 콘솔 번들  페이지의 테이블의 [이름] 열에서 [Adobe]의 [] [화강암 워크플로우 외부 프로세스 작업 처리기]를 찾아 클릭합니다 ****.
 1. [ [!UICONTROL Adobe [화강암 워크플로우 외부 프로세스 작업 처리기] ] 페이지에서 [ **[!UICONTROL 기본 시간 초과]** 및 **[!UICONTROL 최대 시간 초과]** 필드 `18000` 에 대한 시간(초)을(5시간)으로 설정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. 에서 [!DNL Experience Manager]도구 **[!UICONTROL > 워크플로우]** > **[!UICONTROL 모델]** 을 **[!UICONTROL 클릭합니다]**.
-1. 워크플로우 모델 페이지에서 **[!UICONTROL Dynamic Media 인코딩 비디오를]**&#x200B;선택한 다음 **[!UICONTROL 편집을 클릭합니다]**.
+1. 워크플로우 모델 페이지에서 **[!UICONTROL 다이내믹 미디어 인코딩 비디오를]**&#x200B;선택한 다음 **[!UICONTROL 편집을 클릭합니다]**.
 1. 워크플로우 페이지에서 **[!UICONTROL Dynamic Media 비디오 서비스 프로세스]** 구성 요소를 두 번 클릭합니다.
 1. 단계 [!UICONTROL 속성] 대화 상자의 **[!UICONTROL 공통]** 탭 아래에서 **고급**&#x200B;설정을확장합니다.
-1. 시간 **[!UICONTROL 초과]** 필드 `18000`에서 값 **[!UICONTROL 을 지정한 다음]** 확인을 **[!UICONTROL 클릭하여 Dynamic Media 비디오]** 인코딩 워크플로우 페이지로 돌아갑니다.
-1. 페이지 상단의 [비디오 인코딩] [!UICONTROL Dynamic Media 페이지 제목 아래에서 [저장] ]을 **[!UICONTROL 클릭합니다]**.
+1. 시간 **[!UICONTROL 초과]** 필드 `18000`에서 값 **[!UICONTROL 을 지정한 다음]** 확인을 **[!UICONTROL 클릭하여]** Dynamic Media Encode 비디오워크플로 페이지로 돌아갑니다.
+1. 페이지 상단의 [!UICONTROL Dynamic Media 인코딩 비디오] 페이지 제목 아래에서 **[!UICONTROL 저장을 클릭합니다]**.
 
 ## 비디오 에셋 게시 {#publish-video-assets}
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
    주석 마법사를 종료하려면 **[!UICONTROL 닫기를 클릭합니다]**.
 
-1. 비디오의 특정 지점을 찾아서 **텍스트** 필드(초)에서 시간을 지정하고 **이동을 클릭합니다**. 예를 들어 비디오의 처음 10초를 건너뛰려면 텍스트 필드에 20을 입력합니다.
+1. 비디오의 특정 지점을 찾아서 **텍스트** 필드(초)에서 시간을 지정하고 **이동을 클릭합니다**. 예를 들어 비디오 처음 20초를 건너뛰려면 텍스트 필드에 20을 입력합니다.
 
    ![비디오에서 지정된 초 단위로 건너뛸 시간 찾기](assets/seek-in-video.png)
 
