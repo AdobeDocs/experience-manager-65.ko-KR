@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Experience Manager 6.5 자산 사용 안내서
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 95%
+source-wordcount: '635'
+ht-degree: 93%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 95%
    + [URL을 웹 애플리케이션에 연결](linking-urls-to-yourwebapplication.md)
    + [규칙 세트를 사용하여 URL 변환](using-rulesets-to-transform-urls.md)
    + [Dynamic Media 자산 게시](publishing-dynamicmedia-assets.md)
-   + [CDN 캐시 콘텐츠 무효화](invalidate-cdn-cached-content.md)
+   + [Dynamic Media Classic을 통해 CDN 캐시 무효화](invalidate-cdn-cache-dm-classic.md)
    + [벌크 자산 마이그레이션용 기능 팩 18912 설치](bulk-ingest-migrate.md)
    + [선택기를 사용한 작업](working-with-selectors.md)
 + 자산 확장 {#extending}
