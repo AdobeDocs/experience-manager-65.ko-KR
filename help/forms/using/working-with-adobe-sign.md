@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e562ffe229543a1ee93467bcbc1a7be6c12927c6
+source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
 workflow-type: tm+mt
-source-wordcount: '3643'
+source-wordcount: '3839'
 ht-degree: 0%
 
 ---
@@ -304,12 +304,16 @@ Adobe 서명에 [대한 적응형 양식 속성을](../../forms/using/working-wi
 
 ## FAQ {#frequently-asked-questions}
 
+**Q:** 응용 양식을 다른 응용 양식에 포함할 수 있습니다. 포함된 응용 양식을 Adobe Sign으로 사용할 수 있습니까?
 **Ans:** 아니요. AEM Forms은 Adobe Sign이 활성화된 적응형 양식을 서명을 위해 포함하는 적응형 양식 사용을 지원하지 않습니다.
 
+**Q:** 고급 템플릿을 사용하여 적응형 양식을 만들고 편집용으로 열면 &quot;전자 서명 또는 서명자가 올바르게 구성되지 않음&quot;이라는 오류 메시지가 표시됩니다. 가 나타납니다. 오류 메시지를 해결하는 방법?
 **Ans:** 고급 템플릿을 사용하여 만든 응용 양식이 Adobe Sign을 사용하도록 구성되었습니다. 오류를 해결하려면 Adobe Sign 클라우드 구성을 만들고 선택하고 적응형 양식의 Adobe Sign 서명자를 구성합니다.
 
+**Q:** 적응형 양식의 정적 텍스트 구성 요소에서 Adobe Sign 텍스트 태그를 사용할 수 있습니까?
 **Ans:** 예. 텍스트 구성 요소의 텍스트 태그를 사용하여 활성화된 적응형 양식의 기록 [문서](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (자동 생성 문서 옵션만 해당)에 Adobe Sign 필드를 추가할 수 있습니다. 텍스트 태그를 만드는 절차와 규칙에 대해 자세히 알아보려면 [Adobe Sign 설명서를 참조하십시오](https://helpx.adobe.com/sign/using/text-tag.html). 또한 적응형 양식에는 텍스트 태그에 대한 지원이 제한됩니다. 텍스트 태그를 사용하여 [Adobe Sign 블록에서 지원하는 필드만 만들 수](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) 있습니다.
 
+**Q:** AEM Forms은 Adobe Sign 블록과 서명 단계 구성 요소를 모두 제공합니다. 적응형 양식에서 동시에 사용할 수 있습니까?
 **Ans:** 양식에서 두 구성 요소를 동시에 사용할 수 있습니다. 다음은 이러한 구성 요소를 사용하기 위한 몇 가지 권장 사항입니다.
 
 **Adobe Sign 블록:** Adobe Sign 블록을 사용하여 적응형 양식의 아무 곳에나 Adobe Sign 필드를 추가할 수 있습니다. 서명자에게 특정 필드를 할당하는 데에도 도움이 됩니다. 응용 양식을 미리 보거나 게시한 Adobe Sign 블록이 표시되지 않는 경우 기본적으로 표시됩니다. 이러한 블록은 서명 문서에서만 활성화됩니다. 서명 문서에서는 서명자에게 할당된 필드만 활성화됩니다. Adobe Sign 블록을 첫 번째 및 다음 서명자와 함께 사용할 수 있습니다.
@@ -329,6 +333,14 @@ Adobe 서명에 [대한 적응형 양식 속성을](../../forms/using/working-wi
 * 여러 Adobe Sign 클라우드 서비스를 사용하는 경우 모든 서비스의 **[!UICONTROL oAuth URL]** 을 동일한 **[!UICONTROL Adobe Sign 샤드]**&#x200B;로 가리킵니다.
 
 * 별도의 이메일 주소를 사용하여 Adobe Sign 계정, 첫 번째 서명자 및 단일 서명자에 대해 구성합니다. 첫 번째 서명자의 이메일 주소 또는 유일한 서명자(단일 서명자의 경우)는 AEM 클라우드 서비스를 구성하는 데 사용되는 Adobe Sign 계정과 동일하지 않습니다.
+
+
+**문제**&#x200B;적응형 양식에 대해 Adobe Sign이 구성된 경우 Forms Workflow 호출 옵션을 사용하여 구성된 워크플로가 시작되지 않습니다.
+
+**해상도**
+
+* 서명 단계 없이 Adobe Sign을 사용하거나 양식에 여러 사람의 서명이 필요한 경우 AEM Forms 서버는 스케줄러가 모든 사람이 양식에 서명했는지 확인할 때까지 기다립니다. 스케줄러는 모든 사람이 서명을 완료하고 워크플로우가 적응형 양식을 성공적으로 제출한 후에만 응용 양식을 제출합니다. 일정 간격을 줄여 신속하게 양식 서명 상태를 확인하고 양식 제출을 [강화할](adobe-sign-integration-adaptive-forms.md) 수 있습니다.
+
 
 ## 관련 문서 {#related-articles}
 
