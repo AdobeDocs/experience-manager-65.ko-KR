@@ -1,16 +1,16 @@
 ---
 title: We.Gov 참조 사이트 설정 및 구성
 seo-title: We.Gov 참조 사이트 설정 및 구성
-description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 정의합니다.
-seo-description: AEM Forms 데모 패키지를 설치, 구성 및 사용자 정의합니다.
+description: AEM Forms 데모 패키지 설치, 구성 및 사용자 정의
+seo-description: AEM Forms 데모 패키지 설치, 구성 및 사용자 정의
 uuid: 0a6ad8f9-0d38-40c3-ad8d-e705edef55f8
 contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5412d788ccebe00707f2d94dfb1e40da6cb0471c
+source-git-commit: 4c42e5e5274c41469824f12b228698a77bf5d4a6
 workflow-type: tm+mt
-source-wordcount: '5035'
+source-wordcount: '4738'
 ht-degree: 2%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 2%
 
 ### 설치 사전 요구 사항 {#installation-prerequisites}
 
-이 패키지는 **AEM Forms 6.4 OSGI 작성자에**&#x200B;대해 작성되었으며, 테스트되었으며, 다음 플랫폼 버전에서 지원됩니다.
+이 패키지는 **AEM Forms 6.4 OSGI 작성자용으로**&#x200B;제작되었으며, 테스트되었으며, 다음 플랫폼 버전에서 지원됩니다.
 
-| AEM 버전 | AEM FORMS. 패키지 버전 | 상태 |
+| AEM 버전 | AEM FORMS 패키지 버전 | 상태 |
 |---|---|---|
 | 6.4 | 5.0.86 | **지원됨** |
 | 6.5 | 6.0.80 | **지원됨** |
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 ### 이 소포에 무엇이 포함되어 있습니까 {#what-does-this-package-include}
 
-AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 다른 여러 하위 패키지 및 서비스를 포함하는 패키지로 제공됩니다. 패키지에는 다음 모듈이 포함되어 있습니다.
+[AEM Forms We.Gov 데모 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/we-gov-forms.pkg.all-2.0.2.zip) (**we-gov-forms.pkg.all-&lt;version>.zip**)는 다른 여러 하위 패키지 및 서비스를 포함하는 패키지로 제공됩니다. 패키지에는 다음 모듈이 포함되어 있습니다.
 
 * **we-gov-forms.pkg.all-&lt;version>.zip** - *데모 패키지 완료*
 
@@ -56,10 +56,10 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 
       * **core.wcm.components.all-2.0.4.zip** - *샘플 WCM 구성 요소 컬렉션*
 
-      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *AEM Sites 사이트 페이지 제어용 격자 레이아웃 패키지*
+      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *AEM Sites 사이트 레이아웃 패키지 페이지 열 컨트롤*
    * **we-gov-forms.ui.content-&lt;version>.zip** - 모든 컨텐츠, *페이지, 이미지, 양식, 인터랙티브한 커뮤니케이션 에셋 등을 포함합니다.*
 
-   * **we-gov-forms.ui.ananalytics-&lt;버전>.zip** - *저장소 내에 저장할 모든 We.Gov 양식 Analytics 데이터를 포함합니다.*
+   * **we-gov-forms.ui.ananalytics-&lt;버전>.zip** - *저장소 내에 저장할 모든 We.Gov Forms 분석 데이터를 포함합니다.*
 
    * **we-gov-forms.config.public-&lt;version>.zip** - *양식 데이터 모델 및 서비스 바인딩 문제를 방지하기 위해 자리 표시자 클라우드 구성을 비롯한 모든 기본 구성 노드가 포함되어 있습니다.*
 
@@ -67,8 +67,8 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 이 패키지에 포함된 자산은 다음과 같습니다.
 
 * 편집 가능한 템플릿이 있는 AEM 사이트 페이지
-* AEM Forms 적응형 양식
-* AEM Forms 대화형 통신(인쇄 및 웹 채널)
+* AEM Forms 적응형 Forms
+* AEM Forms 인터랙티브 커뮤니케이션(인쇄 및 웹 채널)
 * AEM Forms XDP 기록
 * AEM Forms MS Dynamics Forms 데이터 모델
 * Adobe Sign 통합
@@ -86,7 +86,7 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 1. 오픈 [소프트웨어 배포](https://experience.adobe.com/downloads). 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
 1. 헤더 메뉴에서 **[!UICONTROL 사용 가능한 Adobe Experience Manager]** 를 누릅니다.
 1. 필터 **[!UICONTROL 섹션]** :
-   1. **[!UICONTROL 솔루션]** **** 드롭다운 목록에서 양식을선택합니다.
+   1. 솔루션 ******[!UICONTROL 드롭다운 목록에서]** Forms을선택합니다.
    2. 패키지의 버전과 유형을 선택합니다. 다운로드 **[!UICONTROL 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. we-gov-forms.pkg.all-&lt;version>.zip **패키지 이름을 누르고** EULA 약관 **[!UICONTROL 승인을 선택한 다음]**&#x200B;다운로드를 누릅니다 ****.
 1. [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
@@ -140,7 +140,7 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 1. &quot;**workflow-users**&quot; 그룹을 선택하고 &quot;속성&quot;을 클릭합니다.
 1. &quot;구성원&quot; 탭으로 이동합니다.
 1. &quot; **사용자 또는** 그룹 선택&quot; 필드에 wegov를 입력합니다.
-1. 드롭다운 &quot;We.**Gov Forms Users&quot;에서 선택합니다**.
+1. 드롭다운 &quot;We.**Gov Forms 사용자**&quot;에서 선택합니다.
 
    ![워크플로우 사용자를 위한 그룹 설정 편집](assets/edit_group_settings.jpg)
 
@@ -160,10 +160,10 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 
 1. 원하는 SMTP 서버에 연결할 서비스를 구성합니다.
 
-   1. **SMTP 서버 호스트 이름**: e.g(smtp.gmail.com)
-   1. **서버 포트**: 예: SSL을 사용한 Gmail
+   1. **SMTP 서버 호스트 이름**:e.g(smtp.gmail.com)
+   1. **서버 포트**:예: SSL을 사용한 Gmail
    1. **SMTP 사용자:** demo@ &lt;companyname> .com
-   1. **&quot;보낸 사람&quot; 주소**: aemformsdemo@adobe.com
+   1. **&quot;보낸 사람&quot; 주소**:aemformsdemo@adobe.com
 
    ![SMTP 구성](assets/configure_smtp.jpg)
 
@@ -199,11 +199,11 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 
 **참조:**
 
-1. [AEM Forms과 Adobe Sign 통합](adobe-sign-integration-adaptive-forms.md)
+1. [Adobe Sign과 AEM Forms 통합](adobe-sign-integration-adaptive-forms.md)
 
 #### Cloud configuration {#cloud-configuration}
 
-1. 사전 요구 사항을 검토하십시오. 필수 [SSL](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig) 구성에 대해서는 AEM SSL 구성을 참조하십시오.
+1. 사전 요구 사항을 검토하십시오. 필요한 SSL 구성에 대해서는 [AEM SSL](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig) 구성을 참조하십시오.
 1. 다음으로 이동:
 
    *https://&lt;aemserver>:&lt;port>/libs/adobesign/cloudservices/adobesign.html/conf/we-gov*
@@ -220,48 +220,6 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 1. &quot;Adobe Sign에 연결&quot;을 클릭합니다.
 1. 연결이 성공적으로 완료되면 &quot;저장 및 닫기&quot;를 클릭하여 통합을 완료합니다.
 
-### 여러 양식 채우기 및 서명 {#fill-sign-multiple-forms}
-
-이 문서에서는 여러 양식을 작성하고 서명할 수 있는 기능을 설정하는 데 필요한 단계를 설명합니다. 여기에서 [동일한 기능을 사용할 수도 있습니다](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). 이 샘플은 이 샘플에 필요한 데이터를 AEM 저장소에 저장합니다. 이 작업은 로컬 서버에 데모 에셋을 배포하기 위한 완벽한 환경을 제공하기 위해 수행됩니다. 실생활에서는 동일한 정보를 원하는 RDMS에 저장하게 됩니다.
-
-#### 전제 조건 {#pre-requisites-fill-sign-multiple-forms}
-
-* [일 CQ 메일 서비스 구성](https://docs.adobe.com/content/help/en/experience-manager-65/communities/administer/email.html)
-
-* [Adobe Sign을 사용하여 AEM Forms 구성](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html)
-
-#### 로컬 서버에 샘플 설정 {#setup-sample-local-server}
-
-로컬 서버에서 샘플을 설정하려면 다음 단계를 수행하십시오.
-
-1. 패키지를 설치합니다. 이 패키지에는 다음 내용이 들어 있습니다.
-   * 적응형 양식. 양식은 **형식 지정 데모** 폴더에 있습니다
-   * 사용자 정의 OSGI 번들
-   * 워크플로우
-1. Adobe [Sign 구성을 사용하도록 동의 양식을](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/consentform.html) 구성합니다.
-1. Adobe [Sign 구성을 사용하도록 다중 상태 관심](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/multistateinterestratelock.html) 잠금 양식을 구성합니다.
-1. 양식 [서명데모](http://localhost:4502/editor.html/conf/global/settings/workflow/models/formsandsigningdemo.html) 워크플로우 모델 열기:
-   1. CRX에서 양식 저장 단계를 엽니다.
-   1. localhost를 AEM Server의 IP 주소로 변경합니다.
-   1. 변경 내용을 저장합니다.
-   1. 워크플로를 동기화하여 런타임 모델을 생성합니다.
-
-      ![여러 양식에 서명](assets/sign-multiple-forms.jpg)
-
-   1. 재무구조 [양식을 엽니다](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
-   1. 필수 필드를 입력합니다. 유효한 이메일 주소를 입력하고 양식에 서명하고 제출할 양식을 하나 이상 선택합니다.
-양식에 내용을 입력하고 서명할 수 있는 링크가 포함된 이메일을 수신하게 됩니다.
-
-#### 문제 해결 {#troubleshoot-sign-multiple-forms}
-
-* 디버그 로그는 서버의 로그 폴더에 있는 `signingmultipleforms.log` 파일에 기록됩니다.
-
-* 서명할 양식은 아래에 저장됩니다 `/content/formsforsigning`.
-
-* 모든 번들이 활성 상태여야 합니다.
-
-* 이메일 서버 구성을 확인합니다.
-
 ### (선택 사항) MS Dynamics 클라우드 구성 {#ms-dynamics-cloud-configuration}
 
 이 섹션에는 MS Dynamics 클라우드 구성에 대한 세부 사항과 지침이 포함되어 있습니다.
@@ -269,7 +227,7 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 **참조:**
 
 1. [Microsoft Dynamics OData 구성](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
-1. [AEM Forms에 대한 Microsoft Dynamics 구성](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
+1. [AEM Forms용 Microsoft Dynamics 구성](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
 
 #### MS Dynamics OData 클라우드 서비스 {#ms-dynamics-odata-cloud-service}
 
@@ -312,19 +270,19 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 1. 왼쪽 메뉴에서 &quot;모든 서비스&quot;를 선택합니다.
 1. &quot;앱 등록&quot;을 검색하거나 탐색합니다.
 1. 기존 애플리케이션 등록을 만들거나 선택합니다.
-1. AEM **클라우드** 구성에서 OAuth **클라이언트 ID로** 사용할 응용 프로그램 ID를복사합니다
+1. AEM **클라우드** 구성에서 OAuth **클라이언트 ID로** 사용할 응용 프로그램 ID복사
 1. &quot;설정&quot; 또는 &quot;매니페스트&quot;를 클릭하여 회신 **URL을 구성합니다.**
 
-   1. 이 URL은 OData 서비스를 구성할 때 AEM 서버에 액세스하는 데 사용되는 URL과 일치해야 합니다.
+   1. 이 URL은 OData 서비스를 구성할 때 AEM 서버에 액세스하는 데 사용된 URL과 일치해야 합니다.
 
-1. 설정 보기에서 &quot;키&quot;를 클릭하여 새 키(AEM에서 클라이언트 암호로 사용됨)를 봅니다.
+1. 설정 보기에서 &quot;키&quot;를 클릭하여 새 키를 만듭니다(AEM의 클라이언트 암호로 사용됨).
 
-   1. 나중에 Azure 또는 AEM에서 볼 수 없으므로 키의 사본을 보관하십시오.
+   1. 나중에 Azure 또는 AEM에서 볼 수 없으므로 키의 복사본을 보관하십시오.
 
 1. 리소스 URL/서비스 루트 URL을 찾으려면 MS Dynamics 인스턴스 대시보드로 이동합니다.
 1. 상단 내비게이션 막대에서 &quot;Sales&quot; 또는 고유 인스턴스 유형과 &quot;Select Settings(설정 선택)&quot;를 클릭합니다.
 1. 오른쪽 하단에 있는 &quot;사용자 지정&quot; 및 &quot;개발자 리소스&quot;를 클릭합니다.
-1. 서비스 루트 URL은 여기에서 찾을 수 있습니다. e.g
+1. 서비스 루트 URL은 여기에서 찾을 수 있습니다.e.g
 
    *[https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
 
@@ -332,7 +290,7 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 
    *[https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
 
-#### 양식 데이터 모델 테스트(Dynamics) {#testing-the-form-data-model}
+#### Forms 데이터 모델 테스트(Dynamics) {#testing-the-form-data-model}
 
 클라우드 구성이 완료되면 양식 데이터 모델을 테스트할 수 있습니다.
 
@@ -359,7 +317,7 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
    >[!NOTE]
    데이터 소스를 FDM에 성공적으로 바인딩하려면 AEM Server를 다시 시작해야 한다고 보고되었습니다.
 
-#### 양식 데이터 모델 테스트(Derby) {#test-fdm-derby}
+#### Forms 데이터 모델 테스트(Derby) {#test-fdm-derby}
 
 클라우드 구성이 완료되면 양식 데이터 모델을 테스트할 수 있습니다.
 
@@ -383,13 +341,13 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 
 ### Adobe Analytics 구성(선택 사항) {#adobe-analytics-configuration}
 
-이 섹션에는 Adobe Analytics 클라우드 구성에 대한 세부 사항과 지침이 포함되어 있습니다.
+이 섹션에는 Adobe Analytics Cloud 구성에 대한 세부 사항과 지침이 들어 있습니다.
 
 **참조:**
 
 * [Adobe Analytics와 통합](../../sites-administering/adobeanalytics.md)
 
-* [Adobe Analytics에 연결 및 프레임워크 만들기](../../sites-administering/adobeanalytics-connect.md)
+* [Adobe Analytics 및 프레임워크 연결](../../sites-administering/adobeanalytics-connect.md)
 
 * [페이지 분석 데이터 보기](../../sites-authoring/pa-using.md)
 
@@ -407,17 +365,17 @@ AEM Forms We.Gov 데모 패키지(**we-gov-forms.pkg.all-&lt;version>.zip**)는 
 
    ![Analytics 클라우드 서비스 구성](assets/analytics_config.jpg)
 
-1. &quot;편집&quot; 버튼을 클릭하여 Adobe Analytics 구성을 업데이트합니다(공유 암호 제공이 필요함). [Analytics에 연결]을 클릭하여 연결하고 [확인]을 클릭하여 완료합니다.
+1. &quot;편집&quot; 단추를 클릭하여 Adobe Analytics 구성을 업데이트합니다(공유 암호 제공 필요). &quot;Connect to Analytics&quot;를 클릭하여 연결하고 &quot;확인&quot;을 클릭하여 완료합니다.
 
    ![We.Gov Adobe Analytics](assets/wegov_adobe_analytics.jpg)
 
-1. 프레임워크 구성을 업데이트하려면 같은 페이지에서 &quot;We.Gov Adobe Analytics Framework(Analytics 프레임워크)&quot;를 클릭합니다( [작성을 활성화하려면 AEM 작성](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) 활성화 참조).
+1. 프레임워크 구성을 업데이트하려면 같은 페이지에서 &quot;We.Gov Adobe Analytics 프레임워크(Analytics Framework)&quot;를 클릭합니다( [작성을 활성화하려면 AEM 저작](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) 활성화 참조).
 
 #### Adobe Analytics 사용자 자격 증명 찾기 {#analytics-locating-user-credentials}
 
-Adobe Analytics 계정에 대한 사용자 자격 증명을 찾으려면 계정 관리자가 다음 작업을 수행해야 합니다.
+Adobe Analytics 계정의 사용자 자격 증명을 찾으려면 계정 관리자가 다음 작업을 수행해야 합니다.
 
-1. Adobe Experience Cloud 포털로 이동합니다.
+1. Adobe Experience Cloud 포털으로 이동합니다.
    * 관리자 자격 증명으로 로그인
 1. 기본 대시보드에서 Adobe Analytics 아이콘을 선택합니다.
    ![빠른 액세스](assets/aftia-quick-access.jpg)
@@ -430,7 +388,7 @@ Adobe Analytics 계정에 대한 사용자 자격 증명을 찾으려면 계정 
    ![액세스 관리](assets/aftia-admin-user-access.jpg)
 1. 사용자 이름 및 공유 암호 정보가 권한 상자 오른쪽에 나타납니다.
 1. 사용자 이름에 콜론이 포함되며 콜론의 왼쪽에 있는 모든 정보는 사용자 이름이며 콜론 오른쪽에 있는 모든 정보는 회사 이름이 됩니다.
-   * 다음은 그 예입니다. *username : 회사 이름*
+   * 다음은 그 예입니다. *username :회사 이름*
 
 #### Adobe Analytics에서 사용자 인증 설정 {#setup-user-authentication}
 
@@ -461,15 +419,15 @@ Adobe Analytics 계정에 대한 사용자 자격 증명을 찾으려면 계정 
 #### Adobe Analytics 사이트 보고 보기 {#view-adobe-analytics-sites-reporting}
 
 >[!NOTE]
-AEM Forms Analytics 데이터는 오프라인 상태나 패키지가 설치된 경우 Adobe Analytics 클라우드 구성이 없는 상태에서 사용할 수 있지만 AEM Sites 데이터에는 활성 클라우드 구성이 필요합니다. `we-gov-forms.ui.analytics-<version>.zip`
+AEM Forms Analytics 데이터는 오프라인 상태나 패키지가 설치된 경우 Adobe Analytics 클라우드 구성 없이 사용할 수 있지만 AEM Sites 데이터에는 활성 클라우드 구성이 필요합니다. `we-gov-forms.ui.analytics-<version>.zip`
 
 1. https://&lt; *aemserver>:&lt;port>/sites.html/content로 이동합니다.*
-1. 사이트 페이지를 보려면 &quot;We.Gov 사이트 AEM Forms&quot;을 선택합니다.
-1. 사이트 페이지(예: 홈) 중 하나를 선택하고 &quot;Analytics 및 권장 사항&quot;을 선택합니다.
+1. 사이트 페이지를 보려면 &quot;AEM Forms We.Gov 사이트&quot;를 선택합니다.
+1. 사이트 페이지(예: 홈) 중 하나를 선택하고 &quot;분석 및 Recommendations&quot;을 선택합니다.
 
-   ![분석 및 권장 사항](assets/analytics_recommendations.jpg)
+   ![분석 및 Recommendations](assets/analytics_recommendations.jpg)
 
-1. 이 페이지에서는 AEM Sites 페이지와 관련된 Adobe Analytics에서 가져온 정보를 볼 수 있습니다(참고: 이 정보는 Adobe Analytics에서 정기적으로 갱신되며 실시간으로 표시되지 않습니다.)
+1. 이 페이지에서는 AEM Sites 페이지와 관련된 Adobe Analytics의 가져오는 정보를 볼 수 있습니다(참고:이 정보는 주기적으로 Adobe Analytics에서 새로 고쳐지며 실시간으로 표시되지 않습니다.)
 
    ![AEM Sites 분석](assets/sites_analysis.jpg)
 
@@ -478,7 +436,7 @@ AEM Forms Analytics 데이터는 오프라인 상태나 패키지가 설치된 �
 
    ![목록 보기](assets/list_view.jpg)
 
-1. 동일한 메뉴에서 &quot;설정 보기&quot;를 선택하고 &quot;Analytics&quot; 섹션에서 표시할 열을 선택합니다.
+1. 동일한 메뉴에서 &quot;설정 보기&quot;를 선택하고 &quot;분석&quot; 섹션에서 표시할 열을 선택합니다.
 
    ![열 구성](assets/configure_columns.jpg)
 
@@ -489,25 +447,25 @@ AEM Forms Analytics 데이터는 오프라인 상태나 패키지가 설치된 �
 #### Adobe Analytics 양식 보고 보기 {#view-adobe-analytics-forms-reporting}
 
 >[!NOTE]
-AEM Forms Analytics 데이터는 오프라인 상태나 패키지가 설치된 경우 Adobe Analytics 클라우드 구성이 없는 상태에서 사용할 수 있지만 AEM Sites 데이터에는 활성 클라우드 구성이 필요합니다. `we-gov-forms.ui.analytics-<version>.zip`
+AEM Forms Analytics 데이터는 오프라인 상태나 패키지가 설치된 경우 Adobe Analytics 클라우드 구성 없이 사용할 수 있지만 AEM Sites 데이터에는 활성 클라우드 구성이 필요합니다. `we-gov-forms.ui.analytics-<version>.zip`
 
 1. 다음으로 이동
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. &quot;의료 혜택을 위한 등록 애플리케이션&quot; 적응형 양식을 선택하고 &quot;Analytics 보고서&quot; 옵션을 선택합니다.
+1. &quot;Registered Application For Health Benefits&quot; 적응형 양식을 선택하고 &quot;Analytics Report&quot; 옵션을 선택합니다.
 
-   ![Analytics 보고서](assets/analytics_report.jpg)
+   ![분석 보고서](assets/analytics_report.jpg)
 
 1. 페이지가 로드될 때까지 기다렸다가 Analytics 보고서 데이터를 봅니다.
 
-   ![Analytics 보고서 데이터 보기](assets/analytics_report_data.jpg)
+   ![분석 보고서 데이터 보기](assets/analytics_report_data.jpg)
 
-### Adobe Automated Forms Configuration Enablement {#automated-forms-enablement}
+### Adobe 자동화된 Forms 구성 지원 {#automated-forms-enablement}
 
-Adobe Forms를 사용하여 AEM Forms을 설치하고 구성하려면 전환 도구 사용자가 다음을 수행해야 합니다.
+Adobe Forms을 사용하여 AEM Forms을 설치하고 구성하려면 전환 도구 사용자가 다음을 보유해야 합니다.
 
-1. Adobe IO 액세스.
+1. Adobe IO에 액세스합니다.
 
 1. Adobe Forms 전환 서비스와의 통합을 만들 수 있는 권한
 
@@ -519,9 +477,9 @@ Adobe Forms를 사용하여 AEM Forms을 설치하고 구성하려면 전환 도
 
 #### IMS 구성 파트 1 만들기 {#creating-ims-config}
 
-서비스를 양식 전환 도구와 올바르게 통신하도록 구성하려면 사용자가 Adobe I/O에 등록할 수 있도록 Identity Management 시스템(IMS) 서비스를 구성해야 합니다.
+서비스를 양식 전환 도구와 올바르게 통신하도록 구성하려면 사용자가 Adobe I/O에 등록할 수 있도록 IMS(Identity Management 시스템) 서비스를 구성해야 합니다.
 
-1. https://&lt;aemserver>:&lt;port> > 왼쪽 상단의 Adobe Experience Manager 클릭 > 도구 > 보안 > Adobe IMS 구성으로 이동합니다.
+1. https://&lt;aemserver>:&lt;port> > 왼쪽 상단의 Adobe ExperienceManager 클릭 > 도구 > 보안 > Adobe IMS 구성으로 이동합니다.
 
 1. 만들기를 클릭합니다.
 
@@ -531,16 +489,16 @@ Adobe Forms를 사용하여 AEM Forms을 설치하고 구성하려면 전환 도
 
 1. 인증서를 다운로드해야 합니다.
 
-1. 나머지 구성 작업을 진행하지 마십시오 - 검토 섹션 [Adobe I/O에서 통합 만들기](#create-integration-adobeio)
+1. 나머지 구성 작업을 진행하지 마십시오. 검토 섹션 [I/O에서 통합 만들기](#create-integration-adobeio)
 
 >[!NOTE]
-이 섹션에서 만든 인증서는 Adobe I/O에서 통합 서비스를 만드는 데 사용됩니다. 사용자가 통합 서비스에서 생성되면 Adobe I/O에서 해당 정보를 사용하여 구성을 완료할 수 있습니다.
+이 섹션에서 만든 인증서는 Adobe I/O에서 통합 서비스를 만드는 데 사용됩니다.사용자가 통합 서비스에 생성되면 사용자는 Adobe I/O의 해당 정보를 사용하여 구성을 완료할 수 있습니다.
 
 #### Adobe I/O에서 통합 만들기 {#create-integration-adobeio}
 
-시스템 관리자에게 연락하지 않은 경우 Adobe 도메인 내에서 통합을 만들 수 있습니다.
+시스템 관리자에게 연락하지 않은 경우 Adobe 도메인 내에 통합을 만들 수 있습니다.
 
-1. [Adobe I/O 콘솔로 이동합니다](https://console.adobe.io/).
+1. Adobe [I/O 콘솔로 이동합니다](https://console.adobe.io/).
 
 1. 통합 만들기를 클릭합니다.
 
@@ -548,7 +506,7 @@ Adobe Forms를 사용하여 AEM Forms을 설치하고 구성하려면 전환 도
 
 1. 올바른 그룹(오른쪽 상단 드롭다운 목록)에 있는지 확인합니다.
 
-1. Experience Cloud 섹션에서 양식 변환 도구를 선택합니다.
+1. Experience Cloud 섹션에서 Forms 변환 도구를 선택합니다.
 
 1. 계속을 클릭합니다.
 
@@ -574,7 +532,7 @@ Adobe Forms를 사용하여 AEM Forms을 설치하고 구성하려면 전환 도
 
 1. API 키를 입력합니다.
 
-1. 클라이언트 암호를 입력합니다(Adobe I/O의 통합에서 노출을 클릭해야 알려짐).
+1. 클라이언트 암호를 입력합니다(Adobe I/O의 통합에서 노출을 클릭해야 노출).
 
 1. JWT 페이로드를 가져와 IMS 구성의 페이로드에 붙여넣으려면 Adobe I/O에서 JWT 탭을 클릭합니다.
 
@@ -590,7 +548,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 검토할 수
 
 1. 브라우저를 열고 시스템 URL https://&lt;domain_name>:&lt;system_port>로 이동합니다.
 
-1. 화면 왼쪽 상단에 있는 Adobe Experience Manager > 도구 > Cloud Service > 자동화된 양식 대화 구성을 클릭합니다.
+1. 화면 왼쪽 상단에 있는 Adobe Experience Manager을 클릭합니다. > 도구 > Cloud Services > 자동화된 Forms 대화 구성.
 
 1. 구성을 배치할 구성 폴더를 선택합니다.
 
@@ -620,7 +578,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 1. 브라우저를 열고 시스템 URL https://&lt;domain_name>:&lt;system_port>로 이동합니다.
 
-1. 화면 왼쪽 상단에 있는 Adobe Experience Manager > 도구 > Cloud Service > 자동화된 양식 대화 구성을 클릭합니다.
+1. 화면 왼쪽 상단에 있는 Adobe Experience Manager을 클릭합니다. > 도구 > Cloud Services > 자동화된 Forms 대화 구성.
 
 1. 구성을 배치할 구성 폴더를 선택합니다.
 
@@ -648,9 +606,9 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 구성이 설정되면 사용자는 PDF 문서를 업로드하여 테스트할 수 있습니다.
 
-1. AEM 시스템 https://&lt;domain_name>:&lt;system_port>으로 이동합니다.
+1. AEM 시스템 https://&lt;domain_name>:&lt;system_port>로 이동합니다.
 
-1. 양식 > 양식 및 문서 > AEM Forms We.gov 양식 > AFC 를 클릭합니다.
+1. Forms > Forms 및 문서 > AEM Forms We.gov Forms > AFC를 클릭합니다.
 
 1. We.Gov 등록 애플리케이션 PDF를 선택합니다.
 
@@ -682,7 +640,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 #### 알려진 문제 및 메모 {#known-issues-notes}
 
-자동화된 양식 전환 서비스에는 특정 [모범 사례, 알려진 복잡한 패턴](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)및 [알려진 문제가 포함되어 있습니다](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html). AEM Forms 자동 양식 변환 서비스를 사용하기 전에 이러한 내용을 검토하십시오.
+자동화된 Forms 전환 서비스에는 특정 [모범 사례, 알려진 복잡한 패턴](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)및 [알려진 문제가 포함됩니다](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html). AEM Forms 자동화된 Forms 전환 서비스를 사용하기 전에 이 내용을 검토하십시오.
 
 1. 변환 후 양식을 FDM에 바인딩하려는 경우 데이터 바인딩 없이 응용 양식 생성을 사용하여 양식을 생성합니다.
 
@@ -698,7 +656,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 *https://&lt;aemserver>:&lt;port>/libs/wcm/core/content/sites/templates.html/conf/we-gov*
 
-이러한 템플릿에는 AEM 사이트, 적응형 양식 및 인터랙티브 커뮤니케이션 템플릿이 포함되어 있으며, 이러한 템플릿은 다음 위치에 찾을 수 있습니다.
+이러한 템플릿에는 AEM 사이트, 적응형 양식 및 인터랙티브한 커뮤니케이션 템플릿이 포함되어 있으며, 이러한 템플릿은
 
 *https://&lt;aemserver>:&lt;port>/crx/de/index.jsp#/apps/we-gov/components*
 
@@ -734,7 +692,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 모든 사이트 페이지는 다음 사이트에서 사용할 수 있습니다. *https://&lt;aemserver>:&lt;port>/sites.html/content/we-gov*
 
-이러한 사이트 페이지는 AEM Grid 패키지를 사용하여 일부 구성 요소의 레이아웃을 제어합니다.
+이러한 사이트 페이지는 AEM 격자 패키지를 사용하여 일부 구성 요소의 레이아웃을 제어합니다.
 
 #### Style system {#style-system}
 
@@ -755,8 +713,8 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 **의료 보험 가입 신청서:**
 
 * contact_id - 제출 시 MS Dynamics 연락처 ID를 받는 데 사용되는 숨김 필드
-* 제출 - 콜백을 지원하려면 제출 단추 로직을 사용자 정의해야 합니다. 사용자 지정이 문서화되어 있지만, 양식 데이터 모델을 통해 POST 및 GET 작업을 MS Dynamics로 수행하는 동안 큰 스크립트가 양식을 제출해야 했습니다.
-* 루트 패널 - 초기화 이벤트는 모든 AEM 받은 편지함 [granite UI] 구성 요소가 수정할 수 없으므로 가능한 최소 침입방식으로 AEM 받은 편지함에 MS Dynamics 단추를 추가하는 데 사용됩니다.
+* 제출 - 콜백을 지원하려면 제출 단추 로직을 사용자 정의해야 합니다. 사용자 지정이 문서화되어 있지만 Forms 데이터 모델을 통해 POST 및 GET 작업을 모두 MS Dynamics로 수행하는 동안 큰 스크립트가 양식을 제출해야 했습니다.
+* 루트 패널 - 초기화 이벤트는 모든 AEM 받은 편지함 [화강암 UI] 구성 요소는 수정할 수 없으므로 가능한 최소한의 방식으로 AEM 받은 편지함에 MS Dynamics 단추를 추가하는 데 사용됩니다.
 
 #### 적응형 양식 스타일 {#adaptive-form-styling}
 
@@ -780,12 +738,12 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 ### 데모 고려 사항 {#demo-considerations}
 
 * AGRS-159에 따라 등록 적응형 양식에 사용된 연락처의 이름(첫 번째, 가운데 및 마지막)이 고유한지 확인합니다.
-* 등록 적응형 양식은 Adobe Sign 이메일을 양식의 이메일 필드에 지정된 이메일로 전송합니다. 해당 이메일 주소는 Adobe Sign 클라우드 구성을 구성하는 데 사용된 이메일과 동일한 이메일 주소가 될 수 없습니다.
+* 등록 적응형 양식에서는 Adobe Sign 이메일을 양식의 이메일 필드에 지정된 이메일로 보냅니다. 해당 이메일 주소는 Adobe Sign 클라우드 구성을 구성하는 데 사용된 이메일과 동일한 이메일 주소가 될 수 없습니다.
 
 ### 알려진 문제 {#known-issues}
 
 * (AGRS-120) 사이트 탐색 구성 요소는 현재 2개 수준 깊이의 중첩된 하위 페이지를 지원하지 않습니다.
-* (AGRS-159) 현재 MS Dynamics FDM은 먼저 2개의 작업을 수행하고 등록 적응형 양식 데이터를 Dynamics에 게시한 다음 연락처 ID를 검색하기 위해 사용자 레코드를 반입해야 합니다. 현재 상태에서 이름이 같은 두 명 이상의 사용자가 Dynamics에 있으면 연락처 ID를 가져올 수 없어 등록 적응형 양식의 제출을 허용하지 않습니다.
+* (AGRS-159) 현재 MS Dynamics FDM은 먼저 2개의 작업을 수행하여 등록 적응형 양식 데이터를 Dynamics로 POST한 다음 사용자 레코드를 가져와서 연락처 ID를 검색해야 합니다. 현재 상태에서 이름이 같은 두 명 이상의 사용자가 Dynamics에 있으면 연락처 ID를 가져올 수 없어 등록 적응형 양식의 제출을 허용하지 않습니다.
 
 ## 접근성 테스트 구성 {#configure-accessibility-testing}
 
@@ -793,7 +751,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 액세서빌러티 테스트를 먼저 수행하려면 Chrome 플러그인을 설치해야 합니다. 이 플러그인은 [여기에서 찾을 수 있습니다](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en).
 
-설치되면 Chrome Browser에서 테스트할 페이지를 로드합니다(참고: 탭을 여러 개 열면 점수에 영향을 줄 수 있으므로 탭을 한 개만 여는 것이 좋습니다.) 페이지가 로드되면 페이지를&#x200B;**마우스 오른쪽 단추로 클릭하고** 감사 **탭을** 선택합니다. There developers can select the type of audit to be performed by the Accessibility plugin. 원하는 옵션을 모두 선택하면 사용자가 보고서 생성 단추를 선택할 수 있습니다. 전체 액세서빌러티 등급과 접근성 등급을 높이기 위해 사용할 수 있는 요소를 보여주는 PDF 문서가 생성됩니다.
+설치되면 Chrome Browser에서 테스트할 페이지를 로드합니다(참고:탭을 여러 개 열면 점수에 영향을 줄 수 있으므로 탭을 한 개만 여는 것이 좋습니다.) 페이지가 로드되면 페이지를&#x200B;**마우스 오른쪽 단추로 클릭하고** 감사 **탭을** 선택합니다. There developers can select the type of audit to be performed by the Accessibility plugin. 원하는 옵션을 모두 선택하면 사용자가 보고서 생성 단추를 선택할 수 있습니다. 전체 액세서빌러티 등급과 접근성 등급을 높이기 위해 사용할 수 있는 요소를 보여주는 PDF 문서가 생성됩니다.
 
 보고서가 실행되면 사용자는 다음을 볼 수 있습니다.
 
@@ -807,9 +765,9 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 ### Ultramarine 테마 {#ultramarine-theme}
 
-Adobe가 유지 관리하는 공개적으로 사용 가능한 Ultramarine 테마는 설치 가능한 ZIP 파일에`we-gov-forms.pkg.all-<version>.zip` 내장되어 있습니다. CRX를 사용하여 이 패키지를 설치하고 나면
+Adobe이 유지 관리하는 공개적으로 사용 가능한 Ultramarine 테마는 설치 가능한 ZIP 파일에`we-gov-forms.pkg.all-<version>.zip` 내장됩니다. CRX를 사용하여 이 패키지를 설치하고 나면
 
-패키지 관리자를 사용하면 **양식** > 테마 **>** 참조 테마 **>** 고급 **과 액세스 가능한 초단기**&#x200B;태그로 이동하여 AEM Forms에서해양 테마에 액세스할 수 있습니다.
+패키지 관리자를 사용하는 사용자는 AEM Forms에서 **Forms** > 테마 **>** 참조 테마 **>** Teremarine-AccessibleTrumeravailablePharinCamera로 이동하여 **Ularine 테마**&#x200B;에 액세스할 수 있습니다.
 
 ![초마린 테마](assets/aftia-ultramarine-theme.jpg)
 
@@ -819,7 +777,7 @@ Adobe가 유지 관리하는 공개적으로 사용 가능한 Ultramarine 테마
 
 1. Microsoft Dynamics 항목
 1. Adobe Sign
-1. AEM 사용자 지정 커뮤니케이션 관리
+1. AEM Custom Communication Management
 1. Adobe Analytics
 
 워크플로우 내에서 활성화되도록 구성하려면 다음 작업을 수행해야 합니다.
