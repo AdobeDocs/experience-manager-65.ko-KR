@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
+source-git-commit: f34742a9d11909dcf8403e1b002b65a01e882a74
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3853'
 ht-degree: 0%
 
 ---
@@ -334,6 +334,7 @@ Adobe 서명에 [대한 적응형 양식 속성을](../../forms/using/working-wi
 
 * 별도의 이메일 주소를 사용하여 Adobe Sign 계정, 첫 번째 서명자 및 단일 서명자에 대해 구성합니다. 첫 번째 서명자의 이메일 주소 또는 유일한 서명자(단일 서명자의 경우)는 AEM 클라우드 서비스를 구성하는 데 사용되는 Adobe Sign 계정과 동일하지 않습니다.
 
+### Adobe Sign 사용 응용 양식에 대해 구성된 AEM Forms 작업 과정이 시작되지 않음 {#adobe-sign-aem-form-workflow-failures}
 
 **문제**&#x200B;적응형 양식에 대해 Adobe Sign이 구성된 경우 Forms Workflow 호출 옵션을 사용하여 구성된 워크플로가 시작되지 않습니다.
 
