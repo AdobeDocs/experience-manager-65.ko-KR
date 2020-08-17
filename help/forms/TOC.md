@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.5 Forms 사용 안내서
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 636224c2ea165e43f8979797926fd05197a15905
+source-git-commit: a1ada0e747f46923dc834c872e522e648adae073
 workflow-type: tm+mt
-source-wordcount: '3708'
+source-wordcount: '3719'
 ht-degree: 2%
 
 ---
@@ -592,6 +592,8 @@ ht-degree: 2%
          + [API를 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-apis.md)
          + [AEM Forms 프로세스 이해](developing/aem-forms-processes.md)
          + [서비스 컨테이너](developing/service-container.md)
+      + AEM Forms용 SPI 개발 {#developing-spis-aem-forms}
+         + [외부 사용자 초대 처리기 만들기](developing/creating-invite-external-users-handler.md)
       + Java API 빠른 시작 - 코드 예 {#java-api-quick-start-code-examples}
          + [Application Manager 클라이언트 JavaAPI 빠른 시작(SOAP)](developing/application-manager-client-java-api.md)
          + [Application Manager 서비스 JavaAPI 빠른 시작(SOAP)](developing/application-manager-service-java-api.md)
