@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 스토리지 구성은 UGC(사용자 생성 컨텐츠)라고도 하는 커뮤니티 컨텐츠에 대해 선택한 스토리지를 식별하는 방법입니다.
 
-이 설정은 AEM Communities 코드에 UGC에 액세스할 때 사용할 SRP(저장소 리소스 공급자)의 구현에 대해 알리고 AEM이 배포될 때 설정된 토폴로지를 반영해야 합니다.
+이 설정은 UGC에 액세스할 때 SRP(저장소 리소스 공급자)의 구현이 사용될 것인지 AEM Communities 코드에 알려줍니다. AEM 배포 시 설정된 토폴로지를 반영해야 합니다.
 
 스토리지 옵션 및 배포 토폴로지에 대한 자세한 내용은 다음을 참조하십시오.
 
@@ -28,33 +31,33 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ## 스토리지 구성 콘솔 {#storage-configuration-console}
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+![jsrp 구성](assets/jsrp-configuration.png)
 
-작성 환경에서 스토리지 구성 콘솔에 액세스할 수 있습니다.
+작성 환경에서 스토리지 구성 콘솔에 연결합니다.
 
-* 글로벌 탐색에서 도구 > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 스토리지]** 구성을 **[!UICONTROL 선택합니다.]**
+* 글로벌 탐색에서 도구 > **[!UICONTROL 커뮤니티]** **** > **[!UICONTROL 저장소구성을 선택합니다.]**
 
-기본 JCR 이외의 저장 옵션을 선택하려면 다음을 수행합니다.
+기본 JCR이 아닌 저장 옵션을 선택하려면 다음을 수행합니다.
 
 * 옵션 선택
 * 적절하게 구성
 
-   * MSRP [선택 세부 사항 보기](msrp.md#select-msrp)
-   * DSRP [선택 세부 사항 보기](dsrp.md#select-dsrp)
-   * ASRP [선택 세부 사항 보기](asrp.md#select-asrp)
+   * MSRP [선택에 대한 자세한 내용 보기](msrp.md#select-msrp)
+   * DSRP [선택에 대한 자세한 내용 보기](dsrp.md#select-dsrp)
+   * ASRP [선택에 대한 자세한 내용 보기](asrp.md#select-asrp)
 
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
-### JCR 스토리지 정보 {#about-jcr-storage}
+### JCR 저장소 정보 {#about-jcr-storage}
 
-선택하지 않은 경우 기본값은 AEM 리포지토리 JCR입니다.
+선택하지 않으면 기본적으로 AEM 저장소 JCR이 사용됩니다.
 
-JCR은 작성 및 게시 환경에서 공유되는 공용 저장소가 *아닙니다* . 커뮤니티 컨텐츠는 작성된 작성자 또는 게시 환경에서만 표시됩니다.
+JCR은 작성 및 게시 환경에서 공유되는 공용 저장소가 *아닙니다* . 커뮤니티 컨텐츠는 해당 컨텐츠가 만들어진 작성자 또는 게시 환경에서만 표시됩니다.
 
-자세한 [내용은 JCR](jsrp.md) 스토어를 참조하십시오.
+자세한 [내용은 JCR 스토어를](jsrp.md) 참조하십시오.
 
 >[!NOTE]
 >
->아래 노드가 없으면 `srpc` 기본 JCR 저장소가 `/etc/socialconfig` [](jsrp.md)표시됩니다.
+>아래 노드가 없으면 기본 JCR 스토어 `srpc` 를 `/etc/socialconfig` 나타냅니다 [](jsrp.md).
 
 
