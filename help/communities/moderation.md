@@ -11,17 +11,17 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
 workflow-type: tm+mt
 source-wordcount: '2110'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
 
 # 중재 콘솔 {#moderation-console}
 
-AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정된 신뢰할 수 있는 커뮤니티 구성원)가 만든 환경과 게시 환경 모두에서 커뮤니티 컨텐츠 [](/help/communities/moderate-ugc.md) 의 일괄 중재를 할 수 있습니다.
+AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정된 신뢰할 수 있는 커뮤니티 구성원)가 만든 환경과 게시 환경 모두에서 커뮤니티 콘텐츠 [](/help/communities/moderate-ugc.md) 를 일괄 중재할 수 있습니다.
 
 관리자 및 커뮤니티 중재자는 게시 환경 [에서 상황에 맞는 중재를](/help/communities/in-context.md) 수행할 수도 있습니다.
 
@@ -241,15 +241,15 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) 태그 필터를 구현하여 특정 태그가 사용자 생성 컨텐츠에 적용되는지 여부를 기준으로 UGC 목록을 필터링합니다. 샘플 코드를 따라 기타 유사한 UGC 메타데이터 필드에 대한 분석 필터를 만들 수 있습니다.
+Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) 태그 필터를 구현하여 특정 태그가 사용자 생성 컨텐츠에 적용되는지 여부를 기준으로 UGC 목록을 필터링합니다. 샘플 코드를 따라 기타 유사한 UGC 메타데이터 필드에 대한 분석 필터를 만들 수 있습니다.
 
 태그 필터 샘플을 설치하려면:
 
-1. AEM Author(https://[aem-author]:4502/crx/packmgr/index.jsp[) 인스턴스 및 AEM Publish(](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)https://[aem-publish]:4503/crx/packmgr/index.jsp[](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) 인스턴스에서 패키지 관리자를 엽니다.
+1. AEM 작성자([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) 인스턴스 및 AEM 게시([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) 인스턴스에서 패키지 관리자를 엽니다.
 1. Github 코드 `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` 에서 패키지를 빌드하고 동일한 패키지를 설치하고 활성화합니다.
-1. AEM Author( `https://[aem-author]:4502/system/console/bundles`) 인스턴스 및 AEM Publish() 인스턴스에서 번들 콘솔을 `https://[aem-publish]:4503/system/console/bundles`엽니다.
+1. AEM 작성자() 인스턴스 및 AEM 게시() 인스턴스에서 번들 콘솔을 `https://[aem-author]:4502/system/console/bundles``https://[aem-publish]:4503/system/console/bundles`엽니다.
 1. Github ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` 에서 패키지를 빌드하고 동일한 패키지를 설치하고 활성화합니다.
-1. AEM Author의 **/apps/social/moderation/facets** 노드([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facet](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets))와 AEM Publish([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facet](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) 인스턴스로 이동합니다.
+1. AEM 작성자( **https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets** ) 및 AEM 게시([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facet](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)[](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) 인스턴스로 이동합니다.
 1. 권한이 있는 기술 사용자 **커뮤니티-유틸리티** 리더 `jcr:read` 추가
 
 기존 커뮤니티 사이트에 사용자 지정 필터를 표시하려면 다음을 수행하십시오.
