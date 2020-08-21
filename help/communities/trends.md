@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -33,9 +33,9 @@ ht-degree: 5%
 
 ### 요구 사항 {#requirement}
 
-Adobe Analytics `Community Activity List` 에 대한 데이터는 커뮤니티 사이트에 대해 라이선스가 부여되고 구성된 경우에만 사용할 수 있습니다.
+커뮤니티 사이트 `Community Activity List` 에 대한 Adobe Analytics 라이선스가 부여되고 구성된 경우에만 해당 사이트의 데이터를 사용할 수 있습니다.
 
-커뮤니티 기능에 대한 [Analytics 구성을 참조하십시오](/help/communities/analytics.md).
+커뮤니티 [기능에 대한 분석 구성을 참조하십시오](/help/communities/analytics.md).
 
 ### 페이지에 커뮤니티 활동 목록 추가 {#adding-a-community-activity-list-to-a-page}
 
@@ -55,11 +55,11 @@ Adobe Analytics `Community Activity List` 에 대한 데이터는 커뮤니티 �
 
 액세스할 배치된 `Community Activity List` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-55](assets/chlimage_1-55.png)
+![configure](assets/configure-new.png)
 
 [ **주석** ] 탭에서 업로드한 파일에 대한 댓글이 표시되는 여부와 방법을 지정합니다.
 
-![chlimage_1-56](assets/chlimage_1-56.png)
+![속성](assets/activity-list-properties.png)
 
 * **유형**
 
@@ -118,13 +118,13 @@ Adobe Analytics `Community Activity List` 에 대한 데이터는 커뮤니티 �
 
 ### 4개의 구성 요소가 있는 예제 페이지 {#example-page-with-components}
 
-**상위 방문자** 구성: 유형 = 멤버, 활동 유형 = 보기
+**상위 방문자** 구성:유형 = 멤버, 활동 유형 = 보기
 
-**상위 작성자** 구성: 유형 = 멤버, 활동 유형 = 게시물
+**상위 작성자** 구성:유형 = 멤버, 활동 유형 = 게시물
 
-**상위 컨텐츠** 구성: 유형 = 컨텐트, 활동 유형 = 보기,
+**상위 컨텐츠** 구성:유형 = 컨텐트, 활동 유형 = 보기,
 
-**트렌드 콘텐츠** 구성: 유형 = 컨텐츠, 활동 유형 = 게시물
+**트렌드 콘텐츠** 구성:유형 = 컨텐츠, 활동 유형 = 게시물
 
-![chlimage_1-57](assets/chlimage_1-57.png)
+![components](assets/activity-list-components.png)
 
