@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10c17fc199c476ec66059cc6bf4cbb4a0ff1af40
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -44,13 +44,13 @@ ht-degree: 5%
 
 [필요한 클라이언트측 라이브러리가](/help/communities/essentials-activities.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Activity Streams` 방식입니다.
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![활동 스트림](assets/activity-component.png)
 
 ### 활동 스트림 구성 {#configuring-activity-streams}
 
 액세스할 배치된 `Activity Streams` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![configure](assets/configure-new.png)
 
 사용자 **활동** 탭 아래에서 표시할 활동을 지정합니다.
 
@@ -80,7 +80,7 @@ ht-degree: 5%
 
 다음을 사용하도록 구성 요소를 구성해야 합니다. 다음을 수행할 수 있는 기능은 [블로그](/help/communities/blog-feature.md), 포럼 [,](/help/communities/forum.md)달력, [라이브러리](/help/communities/working-with-qna.md)[](/help/communities/calendar.md)[](/help/communities/file-library.md)[](/help/communities/comments.md),라이브러리,및 comments입니다.
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![following-view](assets/following-activities.png)
 
 [ **팔로우** ] 단추를 사용하면 항목 [을 활동, 알림](/help/communities/notifications.md)또는 [구독으로 팔로우할 수 있습니다](/help/communities/subscriptions.md). [ **따라하기** ] 단추를 선택할 때마다 선택 항목을 켜거나 끌 수 있습니다. 이 선택 `Email Subscriptions` 사항은 구성된 경우에만 표시됩니다.
 
