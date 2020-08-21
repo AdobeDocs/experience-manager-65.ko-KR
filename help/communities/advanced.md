@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 고급 점수 엔진은 고급 점수 알고리즘에 영향을 주는 매개 변수를 사용하여 OSGi 구성을 제공합니다.
 
-![chlimage_1-260](assets/chlimage_1-260.png)
+![고급 채점 엔진](assets/advanced-scoring-engine.png)
 
 * **점수 가중치**
 
@@ -103,7 +103,7 @@ ht-degree: 1%
 
 점수 [하위 규칙을 참조하십시오](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-261](assets/chlimage_1-261.png)
+![advanced-scoring-type](assets/advanced-scoring-type.png)
 
 ### 중지 단어 {#stopwords}
 
@@ -123,7 +123,7 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
 
 배지 이미지에 포인트를 연결하는 대신 허용된 전문가 수와 배지 이미지를 식별하기만 하면 됩니다.
 
-![chlimage_1-262](assets/chlimage_1-262.png)
+![고급 배지 규칙](assets/advanced-badging-rules.png)
 
 <table>
  <tbody>
@@ -150,7 +150,7 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
   <tr>
    <td>점수 지정 규칙</td>
    <td>String[]</td>
-   <td><em>(선택 사항)</em> 나열된 점수 규칙에 의해 식별된 점수 이벤트로 배지 규칙을 제한하는 다중 값 문자열.<br /> 응모 예:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> 기본값은 제한이 없습니다.</td>
+   <td><em>(선택 사항)</em> 나열된 점수 규칙에 의해 식별된 점수 이벤트로 배지 규칙을 제한하는 다중 값 문자열.<br /> 응모 예:<br /><code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> 기본값은 제한이 없습니다.</td>
   </tr>
  </tbody>
 </table>
@@ -165,7 +165,7 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-263](assets/chlimage_1-263.png)
+![전문가 배지](assets/included-badge.png)
 
 활동에 대한 보상으로 전문가 배지가 나타나려면 다음을 확인하십시오.
 
