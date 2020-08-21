@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2b1cc29fbfdb80aff6b6fc5c6c4fc9093d12e418
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -23,20 +23,20 @@ ht-degree: 3%
 
 ## ClientLibraryFolder 추가(clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-사이트의 페이지를 렌더링하는 데 사용되는 JS와 CSS가 포함될 `clientlibs`ClientLibraryFolder를 만듭니다.
+사이트의 페이지를 렌더링하는 데 사용되는 JS와 CSS가 포함될 ClientLibraryFolder `clientlibs` 를 만듭니다.
 
-이 클라이언트 라이브러리에 지정된 `categories`속성 값은 컨텐츠 페이지에서 이 clientlib을 직접 포함하거나 다른 clientlibs에 포함하는 데 사용되는 식별자입니다.
+이 클라이언트 라이브러리에 지정된 `categories` 속성 값은 컨텐츠 페이지에서 이 clientlib을 직접 포함하거나 다른 clientlibs에 포함하는 데 사용되는 식별자입니다.
 
-1. CRXDE **Lite를 사용하여**&#x200B;확장 `/etc/designs`
+1. CRXDE Lite **를 사용하여**&#x200B;확장 `/etc/designs`
 
-1. 마우스 오른쪽 단추 클릭 `an-scf-sandbox` 과 `Create Node`
+1. 마우스 오른쪽 단추 클릭 `an-scf-sandbox` 을 선택하고 `Create Node`
 
    * 이름 : `clientlibs`
    * 유형 : `cq:ClientLibraryFolder`
 
 1. **확인**&#x200B;을 클릭합니다
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![add-client-library](assets/add-client-library.png)
 
 새 노드의 **속성** 탭 `clientlibs` 에 범주 **속성을 입력합니다** .
 
@@ -46,7 +46,7 @@ ht-degree: 3%
 * **추가**&#x200B;를 클릭합니다
 * 모두 **저장을 클릭합니다.**
 
-참고: &#39;apps&#39;로 카테고리 값 미리 보기 는 &#39;소유 응용 프로그램&#39;이 /libs가 아닌 /apps 폴더에 있는 것으로 식별하기 위한 규칙입니다.  중요: 자리 표시자 `js.tx`및 **`css.txt`** 파일 추가 (cq:ClientLibraryFolder가 없는 것은 아닙니다.)
+참고:&#39;apps&#39;로 카테고리 값 미리 보기 는 &#39;소유 응용 프로그램&#39;이 /libs가 아닌 /apps 폴더에 있는 것으로 식별하기 위한 규칙입니다.  중요:자리 표시자 `js.tx`및 **`css.txt`** 파일 추가 (cq:ClientLibraryFolder가 없는 것은 아닙니다.)
 
 1. 마우스 오른쪽 단추 클릭 **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. 파일 **만들기...를 선택합니다.**
@@ -55,7 +55,7 @@ ht-degree: 3%
 1. Enter **Name:** `js.txt`
 1. 모두 **저장을 클릭합니다.**
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![clientlibs-css](assets/clientlibs-css.png)
 
 css.txt 및 js.txt의 첫 번째 행은 다음 파일 목록을 찾을 기본 위치를 식별합니다.
 
@@ -103,11 +103,11 @@ css.txt의 컨텐츠를
 
 * 모두 **저장을 클릭합니다.**
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![scf-clientlibs](assets/scf-clientlibs.png)
 
 이제 저장소 `/etc/designs/an-scf-sandbox/clientlibs` 에 다음과 같이 표시됩니다.
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![scf-clientlibs-view](assets/scf-clientlibs1.png)
 
 ### PlayPage 템플릿에 Clientlibs 포함 {#include-clientlibs-in-playpage-template}
 
@@ -115,17 +115,17 @@ css.txt의 컨텐츠를
 
 예를 들어 clientlibs를 포함하지 않으면 SCF 주석 구성 요소는 스타일이 지정되지 않은 것으로 나타납니다.
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![clientlibs-comment](assets/clientlibs-comment.png)
 
 apps.an-scf-sandbox clientlibs가 포함되면, SCF 댓글 구성 요소가 스타일이 적용된 것으로 나타납니다.
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![clientlibs-comment-styled](assets/clientlibs-comment1.png)
 
 include 문은 스크립트 `head` 섹션에 `html` 속합니다. 기본적으로 겹쳐질 수 있는 스크립트가 **`foundation head.jsp`** 포함됩니다. **`headlibs.jsp`**.
 
 **headlibs.jsp 복사 및 clientlibs 포함:**
 
-1. CRXDE **Lite를 사용하여****`/libs/foundation/components/page/headlibs.jsp`**
+1. CRXDE Lite **를 사용하여****`/libs/foundation/components/page/headlibs.jsp`**
 
 1. 마우스 오른쪽 버튼을 클릭하고 **복사** (또는 도구 모음에서 복사 선택)
 1. 선택 **`/apps/an-scf-sandbox/components/playpage`**
@@ -150,7 +150,7 @@ include 문은 스크립트 `head` 섹션에 `html` 속합니다. 기본적으�
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![커뮤니티 플레이](assets/community-play.png)
 
 ### 지금까지 작업 저장 {#saving-your-work-so-far}
 
@@ -163,8 +163,8 @@ include 문은 스크립트 `head` 섹션에 `html` 속합니다. 기본적으�
 * CRXDE Lite에서 [패키지 아이콘 클릭](https://localhost:4502/crx/packmgr/)
 * 패키지 **만들기를 클릭합니다.**
 
-   * 패키지 이름: an-scf-sandbox-minimal-pkg
-   * 버전: 0.1
+   * 패키지 이름:an-scf-sandbox-minimal-pkg
+   * 버전:0.1
    * 그룹: `leave as default`
    * **확인**&#x200B;을 클릭합니다
 
@@ -173,13 +173,13 @@ include 문은 스크립트 `head` 섹션에 `html` 속합니다. 기본적으�
    * 필터 **탭** 선택
 
       * 필터 **추가를 클릭합니다.**
-      * 루트 경로: 찾아보기 `/apps/an-scf-sandbox`
+      * 루트 경로:찾아보기 `/apps/an-scf-sandbox`
       * 완료를 **클릭합니다**
       * 필터 **추가를 클릭합니다.**
-      * 루트 경로: 찾아보기 `/etc/designs/an-scf-sandbox`
+      * 루트 경로:찾아보기 `/etc/designs/an-scf-sandbox`
       * 완료를 **클릭합니다**
       * 필터 **추가를 클릭합니다.**
-      * 루트 경로: 찾아보기 `/content/an-scf-sandbox**`
+      * 루트 경로:찾아보기 `/content/an-scf-sandbox**`
       * 완료를 **클릭합니다**
    * **저장**&#x200B;을 클릭합니다
 
