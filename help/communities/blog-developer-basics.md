@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -71,8 +71,8 @@ AEM 6.1 Communities의 블로그는 커뮤니티 활동입니다. 이제 블로�
 
 | **resourceType** | social/journal/components/hbs/sidebar |
 |---|---|
-| [**포함 가능&#x200B;**](/help/communities/scf.md#add-or-include-a-communities-component) | 아니오 |
-| [**clientlibs **](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
+| [**포함 가능**](/help/communities/scf.md#add-or-include-a-communities-component) | 아니오 |
+| [**clientlibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **템플릿** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **속성** | 블로그 [기능 보기](/help/communities/blog-feature.md) |
@@ -96,7 +96,7 @@ AEM 6.1 Communities의 블로그는 커뮤니티 활동입니다. 이제 블로�
 중재의 표준 방법 중 하나를 사용하여 UGC를 중재해야 합니다.
 사용자 [생성 컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
 
-AEM 6.1 Communities의 경우, UGC용 [공용 스토어](/help/communities/working-with-srp.md) 사용에는 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 상관없이 UGC에 대한 프로그래머틱 액세스가 포함됩니다.
+AEM 6.1 Communities의 경우, UGC용 [공용 스토어](/help/communities/working-with-srp.md) 사용에는 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 상관없이 UGC에 대한 프로그래밍 방식의 액세스가 포함됩니다.
 
 **저장소의 UGC의 위치와 형식은 경고**&#x200B;없이 변경될 수 있습니다.
 
@@ -117,11 +117,11 @@ AEM 6.1 Communities의 경우, UGC용 [공용 스토어](/help/communities/worki
 
 AEM 플랫폼은
 
-* [XSS(Cross-Site Scripting)로부터 보호](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [XSS(Cross-Site Scripting)를 통한 Protect](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
 AEM 6.2부터 이전에 수동으로 수행해야 했던 수정 사항은 기본 AntiSamey 구성 파일에 포함됩니다.
 
 리치 미디어는 다음 아이콘을 선택하여 블로그 아티클에 `Embed Media from External Sites` 포함됩니다.
 
-![chlimage_1-471](assets/chlimage_1-471.png)
+![media](assets/media-icon.png)
 
