@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 4%
@@ -41,7 +41,7 @@ ht-degree: 4%
 
 이 콘솔에는 현재 사용할 수 있는 배지와 새 배지를 추가할 수 있는 배지가 표시됩니다.
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![badges homepage](assets/badges-homepage.png)
 
 ## 배지 만들기 {#create-badge}
 
@@ -49,7 +49,7 @@ ht-degree: 4%
 
 게시 환경이 게시자의 팜인 경우 [사용자 동기화를 구성해야 합니다](/help/communities/sync.md).
 
-![chlimage_1-243](assets/chlimage_1-243.png)
+![create-badge](assets/create-badge.png)
 
 * **이미지 업로드**
 
