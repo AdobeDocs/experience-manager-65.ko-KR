@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 2%
@@ -80,8 +80,7 @@ SolrCloud 모드에서 실행되는 경우 MLS 설치 전에 다음 SolrCloud �
 
 #### 2. 컬렉션 만들기 {#create-a-collection}
 
-참조:[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create
-](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+참조:[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 사용량:
 ./bin/solr create \
@@ -327,4 +326,4 @@ solrconfig.xml **** 파일은 자동 커밋 간격 및 검색 가시성을 제�
 
 커밋으로 인한 변경 사항을 반영하도록 업데이트된 색인을 사용하도록 검색을 변경하려면 포함된 내용을 true `openSearcher` 로 변경합니다.
 
-`autoSoftCommit`:&#39;soft&#39; 커밋을 사용하면 변경 내용이 표시되고(색인이 업데이트됨) 변경 사항이 안정된 저장소(하드 커밋)에 동기화되지는 않습니다. 그 결과 성능이 개선되었습니다. 기본적으로 포함 항목 `autoSoftCommit` 이 -1로 설정된 경우 이 `maxTime` 가 비활성화됩니다.
+`autoSoftCommit`:&#39;soft&#39; 커밋을 사용하면 변경 내용이 표시되고(색인이 업데이트됨) 변경 사항이 안정된 저장소(하드 커밋)에 동기화되지는 않습니다. 그 결과 성능이 개선되었습니다. 기본적으로 포함 항목 `autoSoftCommit` 이 -1로 설정되어 있으면 비활성화되어 `maxTime` 있습니다.
