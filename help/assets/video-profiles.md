@@ -1,6 +1,6 @@
 ---
 title: 비디오 프로필
-description: Dynamic Media은 미리 정의된 응용 비디오 인코딩 프로필을 제공합니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하기 위해 최적화되어 있습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
+description: Dynamic Media는 사전 정의된 응용 비디오 인코딩 프로필을 이미 갖추고 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하기 위해 최적화되어 있습니다. 비디오에 스마트 자르기를 추가할 수도 있습니다.
 uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Video profiles {#video-profiles}
 
-Dynamic Media은 미리 정의된 응용 비디오 인코딩 프로필을 제공합니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하기 위해 최적화되어 있습니다. 응용 비디오 인코딩 프로필을 사용하여 기본 소스 비디오를 인코딩할 때 재생 중에 비디오 플레이어는 고객의 인터넷 연결 속도에 따라 비디오 스트림의 품질을 자동으로 조정합니다. 이를 적응형 스트리밍이라고 합니다.
+Dynamic Media는 사전 정의된 응용 비디오 인코딩 프로필을 이미 갖추고 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 보기 경험을 제공하기 위해 최적화되어 있습니다. 응용 비디오 인코딩 프로필을 사용하여 기본 소스 비디오를 인코딩할 때 재생 중에 비디오 플레이어는 고객의 인터넷 연결 속도에 따라 비디오 스트림의 품질을 자동으로 조정합니다. 이를 적응형 스트리밍이라고 합니다.
 
 다음은 비디오의 품질을 판별하는 기타 요인입니다.
 
@@ -37,7 +37,7 @@ Dynamic Media은 미리 정의된 응용 비디오 인코딩 프로필을 제공
 
 >[!NOTE]
 >
->비디오의 메타데이터와 관련 비디오 이미지 축소판을 생성하려면 비디오 자체에서 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. 다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 AEM에서 **[!UICONTROL Dynamic Media 비디오]** 인코딩 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. 비디오 [인코딩 및 YouTube 게시 진행 모니터링을 참조하십시오](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). 다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오]** 인코딩 워크플로우가 자동으로 적용됩니다. 다이내믹 미디어를 사용하지 않는 경우 **[!UICONTROL DAM 자산]** 업데이트 워크플로우가 적용됩니다.
+>비디오의 메타데이터와 관련 비디오 이미지 축소판을 생성하려면 비디오 자체가 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. AEM에서 **[!UICONTROL 다이내믹 미디어 인코딩 비디오]** 워크플로우는 다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. 비디오 [인코딩 및 YouTube 게시 진행 모니터링을 참조하십시오](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). 다이내믹 미디어를 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL 다이내믹 미디어 인코딩 비디오]** 워크플로우가 자동으로 적용됩니다. 다이내믹 미디어를 사용하지 않는 경우 **[!UICONTROL DAM 자산]** 업데이트 워크플로우가 적용됩니다.
 >
 >메타데이터는 자산을 검색할 때 유용합니다. 축소판은 인코딩 중 생성된 정적 비디오 이미지입니다. AEM 시스템에서 이러한 요구 사항을 충족해야 하며 사용자 인터페이스에서 카드 보기, 검색 결과 보기 및 자산 목록 보기에서 비디오를 시각적으로 식별하는 데 도움이 됩니다. 인코딩된 비디오의 표현물 아이콘(페인터의 팔레트)을 누르면 생성된 축소판이 표시됩니다.
 
@@ -108,7 +108,7 @@ Dynamic Media은 미리 정의된 응용 비디오 인코딩 프로필을 제공
 * 초당 30프레임(FPS)
 * 300MB 파일 크기
 
-Adobe Sensei는 현재 9,000프레임으로 제한됩니다. 즉, 30FPS로 5분 정도 비디오의 FPS가 더 높은 경우 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 60FPS 비디오는 Adobe Sensai 및 스마트 자르기에서 지원되려면 2분 30분이 걸려야 합니다.
+Adobe Sensei은 현재 9000프레임으로 제한됩니다. 즉, 30FPS로 5분 정도 비디오의 FPS가 더 높은 경우 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 60FPS 비디오는 Adobe 센사이 및 스마트 자르기에서 지원되려면 2분 30분이 걸려야 합니다.
 
 ![비디오용 스마트 자르기](assets/smart-crop-video.png)
 
@@ -130,7 +130,7 @@ Adobe Sensei는 현재 9,000프레임으로 제한됩니다. 즉, 30FPS로 5분 
 
 ## 적응형 스트리밍을 위한 비디오 프로필 만들기 {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Dynamic Media은 MP4 H.264-를 위한 사전 정의된 응용 비디오 인코딩 프로필, 최상의 보기 경험을 위해 최적화된 비디오 업로드 설정 그룹과 함께 제공됩니다. 비디오를 업로드할 때 이 프로필을 사용할 수 있습니다.
+Dynamic Media는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.264-용 비디오 업로드 설정 그룹으로 사전 정의된 응용 비디오 인코딩 프로필을 제공합니다. 비디오를 업로드할 때 이 프로필을 사용할 수 있습니다.
 
 그러나 사전 정의된 이 프로필이 사용자의 요구 사항을 충족하지 않을 경우 응용 비디오 인코딩 프로필을 직접 만들 수 있습니다. 적응형 스트리밍 **[!UICONTROL 을]**&#x200B;위한 인코딩 설정을 프로필에 추가하는 최적의 모든 인코딩 사전 설정으로 사용하면 모든 비디오의 종횡비가 동일한지 확인할 수 있습니다. 또한 인코딩된 비디오는 스트리밍을 위한 다중 비트 전송률 세트로 처리됩니다.
 
@@ -199,8 +199,8 @@ Dynamic Media은 MP4 H.264-를 위한 사전 정의된 응용 비디오 인코�
 
 실행 중인 모드에 따라 지원되는 비디오 형식 코덱은 다음과 같습니다.
 
-* Dynamic Media-Scene7 모드: H.264(.mp4)
-* Dynamic Media-하이브리드 모드: H.264(.mp4), WebM
+* 다이내믹 미디어-Scene7 모드:H.264(.mp4)
+* 다이내믹 미디어-하이브리드 모드:H.264(.mp4), WebM
 
 응용 [스트리밍을 위한 비디오 인코딩 프로필 만들기를 참조하십시오](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
@@ -255,7 +255,7 @@ Dynamic Media은 MP4 H.264-를 위한 사전 정의된 응용 비디오 인코�
 
 **사용자 요구에 맞게 추가된 비디오 인코딩 매개 변수를 사용하려면 다음을 수행하십시오**.
 
-1. AEM 로고를 누른 다음 도구 > **[!UICONTROL 일반]** **** > CRXDE **[!UICONTROL Lite로이동합니다.]**
+1. AEM 로고를 누른 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite으로이동합니다.]**
 1. CRXDE Lite 페이지의 왼쪽에 있는 탐색기 패널에서 다음 페이지로 이동합니다.
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -313,13 +313,13 @@ Dynamic Media은 MP4 H.264-를 위한 사전 정의된 응용 비디오 인코�
    * 3단계와 4단계를 반복하여 비디오 인코딩 프로필에 다른 매개 변수를 추가합니다.
    * 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장을 탭합니다.]**
 
-1. CRXDE Lite 페이지의 왼쪽 맨 위에서 **[!UICONTROL 뒤로 홈]** 아이콘을 눌러 AEM으로 돌아갑니다.
+1. CRXDE Lite 페이지의 왼쪽 위 모서리에서 **[!UICONTROL 뒤로 홈]** 아이콘을 눌러 AEM으로 돌아갑니다.
 
 ### 비디오 프로필 편집 {#editing-a-video-encoding-profile}
 
 해당 프로필 내에서 비디오 사전 설정을 추가, 편집 또는 삭제하기 위해 만든 모든 비디오 프로필을 편집할 수 있습니다.
 
-기본적으로 Dynamic Media과 함께 제공된 사전 정의된 기본 **[!UICONTROL 응용 비디오 인코딩]** 프로필은 편집할 수 없습니다. 대신 프로필을 복사하여 새 이름으로 쉽게 저장할 수 있습니다. 그런 다음 복사한 프로필에서 원하는 사전 설정을 편집할 수 있습니다.
+기본적으로 Dynamic Media와 함께 제공되는 사전 정의된 **[!UICONTROL 적응형 비디오 인코딩]** 프로필은 편집할 수 없습니다. 대신 프로필을 복사하여 새 이름으로 쉽게 저장할 수 있습니다. 그런 다음 복사한 프로필에서 원하는 사전 설정을 편집할 수 있습니다.
 
 비디오 [인코딩에 대한 우수 사례를 참조하십시오](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -347,7 +347,7 @@ Dynamic Media은 MP4 H.264-를 위한 사전 정의된 응용 비디오 인코�
 1. 비디오 인코딩 프로필 페이지에서 프로필의 새 이름을 입력합니다.
 1. 적응형 스트리밍을 위해 **[!UICONTROL 인코딩]** 확인란이 선택되어 있는지 확인하는 것이 좋습니다. 적응형 스트리밍에 대한 설명을 보려면 정보 아이콘을 누릅니다. 점진적 비디오 프로필을 복사하는 경우 확인란을 선택하지 마십시오.
 
-   Dynamic Media - 하이브리드 모드에서 WebM 비디오 사전 설정이 비디오 프로필의 일부인 경우 모든 사전 설정이 MP4여야 하므로 **[!UICONTROL 적응형 스트리밍을]** 위해 인코딩할 수 없습니다.
+   다이내믹 미디어 - 하이브리드 모드에서 WebM 비디오 사전 설정이 비디오 프로필에 포함되어 있으면 모든 사전 설정이 MP4여야 하므로 **[!UICONTROL 적응형 스트리밍을]** 위해 인코딩할 수 없습니다.
 1. 비디오 인코딩 사전 설정 제목 아래에서 프로필을 구성하는 비디오 인코딩 사전 설정을 추가, 편집 또는 삭제합니다.
 
    권장 설정 및 설명을 보려면 기본 및 고급 탭의 각 옵션 옆에 있는 정보 아이콘을 누릅니다.
@@ -387,12 +387,12 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 1. AEM 로고를 누르고 도구 > **[!UICONTROL 자산]** > **[!UICONTROL 비디오]** 프로필로 **[!UICONTROL 이동합니다.]**
 1. 폴더 또는 여러 폴더에 적용할 비디오 프로필을 선택합니다.
-1. 폴더에 **[!UICONTROL 프로필 적용을]** 누르고 새로 업로드된 자산을 받기 위해 사용할 폴더 또는 여러 폴더를 선택한 다음 적용을 **[!UICONTROL 누릅니다.]** 프로필이 이미 할당된 폴더는 [ **[!UICONTROL 카드 보기]에서 폴더 이름 바로 아래에 프로필 이름을 표시하여 나타냅니다.]**
+1. 폴더에 **[!UICONTROL 프로필 적용을]** 누르고 새로 업로드된 자산을 받기 위해 사용할 폴더 또는 여러 폴더를 선택한 다음 적용을 **[!UICONTROL 누릅니다.]** 프로필이 이미 할당된 폴더는 [ **[!UICONTROL 카드 보기]에서 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.]**
 비디오 프로필 처리 작업의 진행 상태를 [모니터링할 수 있습니다](#monitoring-the-progress-of-an-encoding-job).
 
 #### 속성의 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-folders-from-properties}
 
-1. AEM 로고를 탭하거나 클릭하고 **[!UICONTROL 자산으로]** 이동한 다음 비디오 프로필을 적용할 폴더로 이동합니다.
+1. AEM 로고를 누르거나 클릭하고 **[!UICONTROL 자산]** 으로 이동한 다음 비디오 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 속성을 **[!UICONTROL 누릅니다.]**
 1. [ **[!UICONTROL 비디오 프로필]** ] 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기를 클릭합니다.]** 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
@@ -400,13 +400,13 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 ### 전역 비디오 프로필 적용 {#applying-a-video-profile-globally}
 
-폴더에 프로필을 적용하는 것 외에도 AEM 자산에 업로드된 모든 콘텐츠가 선택한 프로필이 적용되도록 전체적으로 적용할 수도 있습니다.
+폴더에 프로필을 적용하는 것 외에도, 모든 폴더의 AEM 자산에 업로드된 콘텐트에 선택한 프로필이 적용되도록 전체적으로 적용할 수도 있습니다.
 
 See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
 
 **비디오 프로필을 전체적으로 적용하려면**,
 
-* 다음 노드로 CRXDE Lite로 이동합니다. `/content/dam/jcr:content`. 속성을 추가하고 `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 모두 **[!UICONTROL 저장을 누릅니다.]**
+* 다음 노드로 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`. 속성을 추가하고 `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 모두 **[!UICONTROL 저장을 누릅니다.]**
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * 비디오 프로필 처리 작업의 진행 상태를 [모니터링할 수 있습니다](#monitoring-the-progress-of-an-encoding-job).
@@ -415,7 +415,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 비디오 프로필 처리 작업의 진행 상황을 시각적으로 모니터링할 수 있도록 처리 표시기(또는 진행률 막대)가 표시됩니다.
 
-또한 `error.log` 파일을 확인하여 인코딩 작업 진행 상황을 모니터링하거나 인코딩이 완료되었는지 확인하거나 작업 오류를 확인할 수 있습니다. AEM `error.log` 의 인스턴스가 설치된 `logs` 폴더에서 찾을 수 있습니다.
+또한 `error.log` 파일을 확인하여 인코딩 작업 진행 상황을 모니터링하거나 인코딩이 완료되었는지 확인하거나 작업 오류를 확인할 수 있습니다. 이 `error.log` 는 AEM 인스턴스가 설치된 `logs` 폴더에서 찾을 수 있습니다.
 
 ## 폴더에서 비디오 프로필 제거 {#removing-a-video-profile-from-folders}
 
@@ -433,7 +433,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 ### 속성을 통해 폴더에서 비디오 프로필 제거 {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. AEM 로고를 탭하거나 클릭하고 **[!UICONTROL 자산으로]** 이동한 다음 비디오 프로필을 제거할 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 누르거나 클릭하여 선택한 다음 속성을 탭하거나 **클릭합니다.]**
+1. AEM 로고를 누르거나 클릭하고 **[!UICONTROL 자산]** 으로 이동한 다음 비디오 프로필을 제거할 폴더로 이동합니다.
+1. 폴더에서 확인 표시를 누르거나 클릭하여 선택한 다음 속성을 탭하거나 **[!UICONTROL 클릭합니다.]**
 1. [ **[!UICONTROL 비디오 프로필]** ] 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]** 을 선택한 다음 **[!UICONTROL 저장 및닫기를 클릭합니다.]** 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
