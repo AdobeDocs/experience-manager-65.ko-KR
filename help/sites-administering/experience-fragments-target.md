@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e6d02717811ac78b77dc459814941d654e94733f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 0%
@@ -119,7 +119,6 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
 
 1. Cloud Service **구성**&#x200B;아래의 드롭다운 목록에서 **Adobe Target** 를 선택합니다.
 
-1. 
    >[!NOTE]
    >
    >경험 조각 오퍼의 JSON 형식을 사용자 정의할 수 있습니다. 이렇게 하려면 고객 경험 조각 구성 요소를 정의한 다음 구성 요소 슬링 모델에서 해당 속성을 내보내는 방법에 주석을 답니다.
@@ -151,7 +150,7 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
 >
 >이미지와 같은 미디어 에셋의 경우 참조만 Target으로 내보내집니다. 자산 자체는 AEM Assets에 저장되어 AEM 게시 인스턴스에서 배달됩니다.
 >
->이 때문에 Target으로 내보내기 전에 관련 자산이 모두 포함된 경험 조각을 게시해야 합니다.
+>이 때문에 Target으로 내보내기 전에 모든 관련 자산이 있는 경험 조각을 게시해야 합니다.
 
 클라우드 구성을 지정한 후 경험 조각을 AEM에서 Target으로 내보내려면 다음을 수행하십시오.
 
