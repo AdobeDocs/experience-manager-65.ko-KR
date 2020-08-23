@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '768'
 ht-degree: 4%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 4%
 
 # AEM 업데이트 릴리스 차량 정의{#update-release-vehicle-definitions}
 
-이 문서에는 Adobe가 고객에게 제공하는 전체 릴리스, 기능 팩 및 서비스 팩 등 다양한 유형의 AEM(Adobe Experience Manager) 릴리스에 대한 세부 정보가 포함되어 있습니다.
+본 문서에는 Adobe이 고객에게 제공하는 전체 릴리스, 기능 팩 및 서비스 팩 등 다양한 유형의 Adobe Experience Manager(AEM) 릴리스에 대한 세부 정보가 포함되어 있습니다.
 
->[!Note]
+>[!NOTE]
 >
->AEM 업데이트 릴리스의 릴리스 예약은 [AEM 업데이트 릴리스 로드맵을 참조하십시오.](https://helpx.adobe.com/kr/experience-manager/update-releases-roadmap.html)
+>AEM 업데이트 릴리스의 릴리스 일정은 [AEM 업데이트 릴리스 로드맵을 참조하십시오.](https://helpx.adobe.com/kr/experience-manager/update-releases-roadmap.html)
 
 ## 전체 릴리스 {#full-release}
 
@@ -240,9 +240,9 @@ ht-degree: 4%
    <td><strong>정의</strong></td>
    <td>
     <ul>
-     <li>기능 팩은 추가 기능이며 서비스 팩을 통해 제공됩니다. AEM 버전에서 마지막 서비스 팩을 릴리스한 경우 Adobe는 향후 기능 팩을 제공하지 않습니다.</li>
+     <li>기능 팩은 추가 기능이며 서비스 팩을 통해 제공됩니다. AEM 버전에서 마지막 서비스 팩을 릴리스한 경우 Adobe은 향후 기능 팩을 제공하지 않습니다.</li>
      <li>FP에는 후속 제품 릴리스로 예정되어 있지만 Adobe 제품 관리의 결정에 따라 일찍 배달되는 향상된 제품이 포함되어 있습니다.</li>
-     <li>기능은 항상 다음 주요 릴리스와 병합된 다음 고객이 필요로 하는 AEM 버전으로 백포팅됩니다</li>
+     <li>기능은 항상 다음 주요 릴리스와 병합된 다음 고객이 필요로 하는 AEM 버전으로 지원됩니다</li>
      <li>공통 관심 및 GA 기능 팩은 다음 서비스 팩에 병합됩니다.</li>
     </ul> </td>
   </tr>
@@ -282,5 +282,5 @@ ht-degree: 4%
  </tbody>
 </table>
 
-* [1]: OAK 수정 사항은 개별 핫픽스로 제공되지 않습니다. 하지만 다음의 누적 오크 핫픽스에 포함되어 있습니다. 필요한 경우 최신 COFP 위에 진단 빌드를 제공할 수 있습니다. 고객의 요구 사항은 최신 COFP가 실행되고 있다는 것입니다. 진단 빌드는 핫픽스와 동일한 수준의 품질 보증만 제공합니다. 따라서 누적 수정 팩, 서비스 팩 또는 제품 릴리스와 동일한 수준의 품질 보증을 제공하지 않습니다. 최종 수정 사항은 다음 CFP와 함께 전달됩니다.
+* [1]:OAK 수정 사항은 개별 핫픽스로 제공되지 않습니다. 하지만 다음의 누적 오크 핫픽스에 포함되어 있습니다. 필요한 경우 최신 COFP 위에 진단 빌드를 제공할 수 있습니다. 고객의 요구 사항은 최신 COFP가 실행되고 있다는 것입니다. 진단 빌드는 핫픽스와 동일한 수준의 품질 보증만 제공합니다. 따라서 누적 수정 팩, 서비스 팩 또는 제품 릴리스와 동일한 수준의 품질 보증을 제공하지 않습니다. 최종 수정 사항은 다음 CFP와 함께 전달됩니다.
 
