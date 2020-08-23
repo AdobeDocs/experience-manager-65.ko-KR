@@ -3,9 +3,9 @@ title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능이 자산의 메타데이터 변경 내용을 자산의 모든 표현물 또는 특정 표현물에 전달하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ XMP 원본에 쓰기 기능을 사용하면 메타데이터 변경 내용을 자
 
 1. 구성 관리자를 열려면 액세스 `https://[aem_server]:[port]/system/console/configMgr`를 참조하십시오.
 1. **[!UICONTROL Adobe CQ DAM Rendition Maker]** 구성을 엽니다.
-1. **[!UICONTROL XMP 전달[!UICONTROL ** 옵션을 선택한 다음 변경 내용을 저장합니다.
+1. XMP **[!UICONTROL 전달]** 옵션을 선택한 다음 변경 내용을 저장합니다.
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
@@ -52,9 +52,9 @@ XMP 원본에 쓰기 기능이 메타데이터를 변환 축소판 140.100.png �
    ![step_properties](assets/step_properties.png)
 
 1. 변경 사항을 저장합니다.
-1. 새로운 속성을 사용하여 이미지에 대한 피라미드형 TIFF 표현물을 재생성하려면 [!DNL Dynamic Media] Dynamic Media 처리 이미지 자산 **[!UICONTROL 단계를]** DAM 메타데이터 쓰기 [!UICONTROL 작업 과정에] 추가하십시오.
+1. 새로운 속성을 사용하여 이미지의 피라미드형 TIFF 표현물을 재생성하려면 [!DNL Dynamic Media] DAM 메타데이터 작성 **[!UICONTROL 워크플로우에]** 다이내믹 미디어 프로세스 이미지 자산 [!UICONTROL 단계를] 추가하십시오.
 
-   PTIFF 변환은 Dynamic Media 하이브리드 구현에서만 로컬에 만들어지고 저장됩니다.
+   PTIFF 변환은 Dynamic Media Hybrid 구현에서만 로컬로 만들어지고 저장됩니다.
 
 1. 워크플로우를 저장합니다.
 
@@ -70,7 +70,7 @@ XMP 원본에 쓰기 기능이 메타데이터를 변환 축소판 140.100.png �
 
 [!DNL Experience Manager Assets] 자산 이진에서 읽고 자산을 인제스트할 때 JCR에 저장되는 XMP 메타데이터에 대한 속성/노드의 차단 목록 및 허용 목록 필터링을 모두 지원합니다.
 
-차단 목록을 사용하여 필터링하면 제외에 지정된 속성을 제외한 모든 XMP 메타데이터 속성을 가져올 수 있습니다. 하지만 대량의 XMP 메타데이터가 있는 INDD 파일(예: 1000개의 노드 및 10,000개의 속성)과 같은 에셋 유형의 경우 필터링할 노드 이름이 미리 알려지는 것은 아닙니다. 차단 목록을 사용하여 필터링하면 많은 XMP 메타데이터가 있는 많은 자산을 가져올 수 있는 경우, 배포에는 안정성 문제(예: 끊어진 관측 큐)가 발생할 수 있습니다. [!DNL Experience Manager]
+차단 목록을 사용하여 필터링하면 제외에 지정된 속성을 제외한 모든 XMP 메타데이터 속성을 가져올 수 있습니다. 하지만 대량의 XMP 메타데이터가 있는 INDD 파일(예: 1000개의 노드 및 10,000개의 속성)과 같은 에셋 유형의 경우 필터링할 노드 이름이 미리 알려지는 것은 아닙니다. 차단 목록을 사용하여 필터링하면 많은 XMP 메타데이터가 있는 많은 자산을 가져올 수 있는 경우, 배포에는 안정성 문제(예: 끊어진 관측 큐)가 발생할 수 [!DNL Experience Manager] 있습니다.
 
 허용 목록을 통해 XMP 메타데이터를 필터링하면 가져올 XMP 속성을 정의할 수 있어 이 문제가 해결됩니다. 이렇게 하면 기타 또는 알 수 없는 XMP 속성이 무시됩니다. 이전 버전과의 호환성을 위해 차단 목록을 사용하는 필터에 이러한 속성 중 일부를 추가할 수 있습니다.
 
