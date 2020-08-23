@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 0%
@@ -59,8 +59,8 @@ keytool 명령은 일반적으로 Java jre/bin 디렉토리에 있으며 다음 
    <td><p>키 저장소 파일의 위치와 이름입니다.</p><p>위치에 파일의 절대 경로가 포함될 수 있습니다. 또는 keytool 명령을 입력한 명령 프롬프트에서 현재 디렉토리를 기준으로 할 수 있습니다.</p></td>
    <td>
     <ul>
-     <li><p>사용자 지정 ID 키 스토어: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[서버 이름]</i><code>/ads-ssl.jks</code></p></li>
-     <li><p>사용자 지정 트러스트 키 저장소: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[서버 이름]</i><code>/ads-ca.jks</code></p></li>
+     <li><p>사용자 지정 ID 키 스토어: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[server name]</i><code>/ads-ssl.jks</code></p></li>
+     <li><p>사용자 지정 트러스트 키 저장소: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[server name]</i><code>/ads-ca.jks</code></p></li>
     </ul></td>
   </tr>
   <tr>
@@ -78,8 +78,8 @@ keytool 명령은 일반적으로 Java jre/bin 디렉토리에 있으며 다음 
    <td><p>키 저장소의 컨텐츠를 보호하는 암호입니다. </p></td>
    <td>
     <ul>
-     <li><p>사용자 지정 ID 키 스토어: 키 저장소 암호는 관리 콘솔의 Trust Store 구성 요소에 대해 지정된 SSL 자격 증명 암호와 일치해야 합니다.</p></li>
-     <li><p>사용자 지정 트러스트 키 저장소: 사용자 지정 ID 키 저장소에 사용한 암호와 동일한 암호를 사용하십시오.</p></li>
+     <li><p>사용자 지정 ID 키 스토어:키 저장소 암호는 관리 콘솔의 Trust Store 구성 요소에 대해 지정된 SSL 자격 증명 암호와 일치해야 합니다.</p></li>
+     <li><p>사용자 지정 트러스트 키 저장소:사용자 지정 ID 키 저장소에 사용한 암호와 동일한 암호를 사용하십시오.</p></li>
     </ul></td>
   </tr>
   <tr>
@@ -134,7 +134,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
 
    >[!NOTE]
    >
-   >JDK `[JAVA_HOME]` 가 설치된 디렉터리로 바꾸고 `store`*_**를 사용자 지정 ID 키 저장소`password`의 암호로 바꿉니다.*
+   >JDK `[JAVA_HOME]` 가 설치된 디렉터리로 바꾸고 `store`*_* *를 사용자 지정 ID 키 저장소 `password`의 암호로 바꿉니다.*
 
    예:
 
@@ -151,7 +151,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
 
    >[!NOTE]
    >
-   >JDK `[JAVA_HOME]` 가 설치된 디렉터리로 교체하고, 고유한 암호 `store`*로&#x200B;*_and`password`_`key`** Facebook을 `password` *바꿉니다.*
+   >JDK `[JAVA_HOME]` 가 설치된 디렉터리로 교체하고, 고유한 암호 `store`*로* _and `password` _ `key`** Facebook을 `password` *바꿉니다.*
 
    예:
 
@@ -182,7 +182,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
 
    **사용자 지정 ID 키 스토어**: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks에서 *[appserverdomain] *는 실제 경로이며 *[서버 이름은]* 응용 프로그램 서버의 이름입니다.
 
-   **사용자 지정 ID 키 저장소 유형**: JKS
+   **사용자 지정 ID 키 저장소 유형**:JKS
 
    **사용자 지정 ID 키 저장소 암호**: *mypassword* (사용자 정의 ID 키 저장소 암호)
 
@@ -190,7 +190,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
 
    **사용자 지정 Trust Keystore 파일 이름**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, where `*[appserverdomain]*` is actual path
 
-   **사용자 지정 트러스트 키 저장소 유형**: JKS
+   **사용자 지정 트러스트 키 저장소 유형**:JKS
 
    **사용자 지정 Trust Keystore 비밀번호 구문**: *mypassword* (사용자 지정 신뢰 키 암호)
 
@@ -198,7 +198,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
 1. 기본적으로 Keystore는 ID 및 신뢰 위치에 대해 선택됩니다. 없는 경우 키 스토어로 변경합니다.
 1. ID 아래에서 다음 값을 지정합니다.
 
-   **개인 키 별칭**: 광고 자격 증명
+   **개인 키 별칭**:광고 자격 증명
 
    **암호**: *mypassword*
 
