@@ -1,8 +1,8 @@
 ---
 title: SPA 소개 및 연습
 seo-title: SPA 소개 및 연습
-description: 이 문서에서는 SPA의 개념을 소개하고 저작 시 기본 SPA 응용 프로그램을 사용하는 방법을 단계별로 설명합니다. 이 응용 프로그램이 기본 AEM SPA Editor와 어떻게 관련되어 있는지 보여줍니다.
-seo-description: 이 문서에서는 SPA의 개념을 소개하고 저작 시 기본 SPA 응용 프로그램을 사용하는 방법을 단계별로 설명합니다. 이 응용 프로그램이 기본 AEM SPA Editor와 어떻게 관련되어 있는지 보여줍니다.
+description: 이 문서에서는 SPA의 개념을 소개하고 저작 시 기본 SPA 애플리케이션을 사용하는 방법을 단계별로 살펴봅니다. 이 애플리케이션은 AEM SPA 편집기와 어떻게 관련되어 있는지 보여줍니다.
+seo-description: 이 문서에서는 SPA의 개념을 소개하고 저작 시 기본 SPA 애플리케이션을 사용하는 방법을 단계별로 살펴봅니다. 이 애플리케이션은 AEM SPA 편집기와 어떻게 관련되어 있는지 보여줍니다.
 uuid: 4b0a9e53-3892-4d60-8bd3-7ff740d2f137
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,19 +11,19 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 
 # SPA 소개 및 연습{#spa-introduction-and-walkthrough}
 
-단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 구축할 수 있고 작성자는 이러한 프레임워크를 사용하여 구축한 사이트에 대해 AEM 내의 컨텐츠를 원활하게 편집할 수 있기를 원합니다.
+단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 구축할 수 있어야 하며, 작성자는 이러한 프레임워크를 사용하여 구축한 사이트에 AEM의 컨텐츠를 완벽하게 편집하고자 합니다.
 
-SPA Editor는 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 작성을 위한 기본 SPA 응용 프로그램을 사용하는 과정을 소개하고 기본 AEM SPA 편집기와 관련된 방법을 설명합니다.
+SPA Editor는 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합니다. 저작 시 기본 SPA 애플리케이션을 사용하는 방법을 살펴보고 기본 AEM SPA Editor와 어떻게 관련되어 있는지 살펴봅니다.
 
 >[!NOTE]
 >
@@ -33,21 +33,20 @@ SPA Editor는 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합
 
 ### 아티클 목표 {#article-objective}
 
-이 문서에서는 간단한 SPA 애플리케이션을 사용하여 기본적인 컨텐츠 편집을 시연함으로써 SPA 편집기의 연습을 안내하기 전에 SPA의 기본 개념을 소개합니다. 그런 다음 페이지 구성, SPA 응용 프로그램이 AEM SPA 편집기와 관련 및 상호 작용하는 방법 등을 자세히 다룹니다.
+이 문서에서는 간단한 SPA 애플리케이션을 사용하여 기본적인 컨텐츠 편집을 시연함으로써 SPA 편집기의 연습을 안내하기 전에 SPA의 기본 개념을 소개합니다. 그런 다음 페이지 구성, SPA 애플리케이션이 AEM SPA Editor와 관련 및 상호 작용하는지 자세히 살펴봅니다.
 
-이 소개 및 연습의 목적은 AEM 개발자에게 SPA가 연관성이 있는 이유, 일반적으로 작동하는 방식, AEM SPA 편집기에서 SPA를 처리하는 방법, 표준 AEM 응용 프로그램과 다른 방식을 시연하는 것입니다.
+이 소개 및 연습의 목적은 AEM 개발자에게 SPA가 연관성이 높은 이유, 일반적으로 작동하는 방식, AEM SPA Editor에서 SPA를 처리하는 방식, 표준 AEM 애플리케이션과 어떻게 다른지 시연하는 것입니다.
 
 이 연습은 표준 AEM 기능과 샘플 We.Retail Journal 앱을 기반으로 합니다. 다음 요구 사항을 충족해야 합니다.
 
-* [AEM 버전 6.4(서비스 팩 2 이상)
-   ](/help/release-notes/sp-release-notes.md)
+* [AEM 버전 6.4(서비스 팩 2 이상)](/help/release-notes/sp-release-notes.md)
 * [여기에서 GitHub에 있는 샘플 We.Retail Journal 앱을 설치합니다.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
 >[!CAUTION]
 >
 >이 문서에서는 데모용으로만 [We.Retail Journal 앱을](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) 사용합니다. 어떤 프로젝트 작업에도 사용해서는 안 됩니다.
 >
->모든 AEM 프로젝트는 React 또는 Angular를 사용하여 SPA 프로젝트를 [지원하고 SPA SDK를 활용하는 AEM Project 원형형을 활용해야](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)합니다.
+>모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)(React or Angular)을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 프로젝트 전형(Pretype)을 활용해야 합니다.
 
 ### 스파란? {#what-is-a-spa}
 
@@ -55,7 +54,7 @@ SPA Editor는 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합
 
 이를 통해 페이지 새로 고침이 필요하지 않으며, 사용자에게 매끄럽고 빠르며 기본 앱 경험과 같은 경험을 제공합니다.
 
-프런트 엔드 개발자는 AEM SPA 편집기를 사용하여 AEM 사이트에 통합할 수 있는 SPA를 만들 수 있으므로 컨텐츠 작성자가 다른 AEM 컨텐츠와 마찬가지로 SPA 컨텐츠를 손쉽게 편집할 수 있습니다.
+AEM SPA Editor를 사용하면 프런트 엔드 개발자는 AEM 사이트에 통합할 수 있는 SPA를 만들 수 있으므로 컨텐츠 작성자는 다른 AEM 컨텐츠과 마찬가지로 SPA 컨텐츠를 손쉽게 편집할 수 있습니다.
 
 ### 왜 스파죠? {#why-a-spa}
 
@@ -92,13 +91,13 @@ SPA의 주요 아이디어는 서버 호출로 인한 지연을 최소화하여 
 
 >[!NOTE]
 >
->AEM에서 SPA가 작동하는 방식에 대한 기술 정보는 AEM의 SPA [시작하기 문서를 참조하십시오](/help/sites-developing/spa-getting-started-react.md).
+>AEM에서 SPA가 작동하는 방법에 대한 자세한 내용은 AEM에서 SPA [시작하기 문서를 참조하십시오](/help/sites-developing/spa-getting-started-react.md).
 >
 >SPA Editor의 디자인, 아키텍처 및 기술 워크플로우에 대한 자세한 내용은 [SPA Editor 개요를 참조하십시오](/help/sites-developing/spa-overview.md).
 
 ## SPA를 사용한 컨텐츠 편집 경험 {#content-editing-experience-with-spa}
 
-AEM SPA 편집기를 활용하기 위해 SPA를 빌드하면 컨텐츠 작성자는 컨텐츠를 편집하고 만들 때 아무런 차이도 느끼지 않습니다. 공통 AEM 기능을 사용할 수 있으며 작성자의 워크플로우를 변경할 필요가 없습니다.
+AEM SPA 편집기를 활용할 수 있도록 SPA를 구축하면 컨텐츠 작성자는 컨텐츠를 편집하고 제작할 때 아무런 차이도 느끼지 않습니다. 공통 AEM 기능을 사용할 수 있으며 작성자의 워크플로우를 변경할 필요가 없습니다.
 
 >[!NOTE]
 >
@@ -106,11 +105,12 @@ AEM SPA 편집기를 활용하기 위해 SPA를 빌드하면 컨텐츠 작성자
 >
 >* [AEM 버전 6.4(서비스 팩 2)](/help/release-notes/sp-release-notes.md)
 >* [여기에서 GitHub에 있는 샘플 We.Retail Journal 앱을 설치합니다.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+
 >
 
 
 
-1. AEM에서 We.Retail 저널 앱을 편집합니다.
+1. AEM에서 We.Retail Journal 앱을 편집합니다.
 
    `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
@@ -120,7 +120,7 @@ AEM SPA 편집기를 활용하기 위해 SPA를 빌드하면 컨텐츠 작성자
 
    ![screen_shot_2018-06-07at142937](assets/screen_shot_2018-06-07at142937.png)
 
-1. 컨텐츠를 AEM 내에서 정상으로 편집하고 변경 사항이 지속된다는 점을 참고하십시오.
+1. AEM 내에서 컨텐츠를 정상적으로 편집하고 변경 사항이 지속된다는 점을 참고하십시오.
 
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
@@ -141,11 +141,11 @@ AEM SPA 편집기를 활용하기 위해 SPA를 빌드하면 컨텐츠 작성자
 >
 >SPA 편집기는 응용 프로그램의 DOM을 수정하지 않습니다. SPA 자체에서 DOM을 책임집니다.
 >
->이 작동 방식을 확인하려면 이 아티클 [SPA 앱 및 AEM SPA 편집기의 다음 섹션으로 계속하십시오](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor).
+>이 방법을 확인하려면 SPA Apps 및 AEM [SPA Editor의 다음 섹션으로 계속하십시오](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor).
 
 ## SPA 앱 및 AEM SPA 편집기 {#spa-apps-and-the-aem-spa-editor}
 
-SPA가 최종 사용자에 대해 동작하는 방식을 경험하고 SPA 페이지를 검사하면 AEM의 SPA 편집기와 SAP 앱이 작동하는 방식을 더 잘 이해할 수 있습니다.
+SPA가 최종 사용자를 위해 동작하는 방식을 경험하고 SPA 페이지를 검사하면 AEM의 SPA Editor에서 SAP 앱이 작동하는 방식을 더 잘 이해할 수 있습니다.
 
 ### SPA 애플리케이션 사용 {#using-an-spa-application}
 
@@ -228,7 +228,7 @@ SPA가 최종 사용자에 대해 동작하는 방식을 경험하고 SPA 페이
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   AEM SPA 편집기는 AEM [Content Services](/help/assets/content-fragments/content-fragments.md) 를 활용하여 페이지의 전체 컨텐츠를 JSON 모델로 전달합니다.
+   AEM SPA Editor는 [AEM Content Services](/help/assets/content-fragments/content-fragments.md) 를 활용하여 페이지의 전체 컨텐츠를 JSON 모델로 전달합니다.
 
    Sling Models는 특정 인터페이스를 구현하여 SPA에 필요한 정보를 제공합니다. JSON 데이터의 배달은 각 구성 요소(페이지, 단락, 구성 요소 등)에 하향 위임됩니다.
 
@@ -236,7 +236,7 @@ SPA가 최종 사용자에 대해 동작하는 방식을 경험하고 SPA 페이
 
 1. 또한 모델은 동기적으로 로드되도록 페이지를 함께 그룹화하여 필요한 페이지 다시 로드 횟수를 줄일 수 있습니다.
 
-   We.Retail 저널의 예에서, `home``blog`, 및 `aboutus` 페이지는 방문자가 일반적으로 모든 페이지를 방문하므로 동기식으로 로드됩니다. 그러나 방문자가 `weather` 페이지를 방문할 가능성이 적기 때문에 페이지를 비동기식으로 로드합니다.
+   We.Retail 저널의 예에서, `home``blog`, 및 `aboutus` 페이지는 방문자가 일반적으로 모든 페이지를 방문하기 때문에 동기적으로 로드됩니다. 그러나 방문자가 `weather` 페이지를 방문할 가능성이 적기 때문에 페이지를 비동기식으로 로드합니다.
 
    이 동작은 필수 사항이 아니며 완전히 정의할 수 있습니다.
 
@@ -252,9 +252,9 @@ SPA가 최종 사용자에 대해 동작하는 방식을 경험하고 SPA 페이
 
 샘플 We.Retail 저널 애플리케이션을 사용하면 앱이 어떻게 동작하며 게시 시 로드되는지 명확히 알 수 있습니다. JSON 컨텐츠 전달과 리소스 비동기 로딩에 대한 컨텐츠 서비스를 활용할 수 있습니다.
 
-또한 컨텐츠 작성자의 경우 AEM 내에서 SPA 편집기를 사용한 컨텐츠 만들기가 매끄럽게 이루어집니다.
+또한 컨텐츠 작성자의 경우 SPA 편집기를 사용한 컨텐츠 제작은 AEM 내에서 원활하게 이루어집니다.
 
-다음 섹션에서는 SPA Editor가 SPA 내의 구성 요소를 AEM 구성 요소에 연결시키고 이러한 매끄러운 편집 환경을 구현할 수 있는 계약을 살펴봅니다.
+다음 섹션에서는 SPA Editor가 SPA 내의 구성 요소를 AEM 구성 요소에 연결하여 이러한 완벽한 편집 환경을 제공할 수 있는 계약을 살펴봅니다.
 
 1. 편집기에서 We.Retail 저널 애플리케이션을 로드하고 미리 보기 **모드로** 전환합니다.
 
@@ -278,15 +278,15 @@ SPA가 최종 사용자에 대해 동작하는 방식을 경험하고 SPA 페이
 
    >[!NOTE]
    >
-   >AEM의 서버측 렌더링된 페이지에서 편집 가능한 각 구성 요소에 대해 삽입된 요소가 있는 동작의 `cq` 변화입니다.
+   >AEM의 서버측 렌더링된 페이지에서 편집 가능한 각 구성 요소에 대해 삽입된 `cq` 요소가 있는 동작이 변경되었습니다.
    >
    >
    >SPA에서 이 방법을 사용하면 사용자 정의 요소를 주입할 필요가 없으며 추가 데이터 속성만 적용되므로 프런트 엔드 개발자는 마크업을 더욱 간소화할 수 있습니다.
 
 ## 다음 단계 {#next-steps}
 
-이제 AEM의 SPA 편집 경험과 SPA가 SPA Editor와 어떻게 관련되어 있는지 이해하게 되므로 SPA가 어떻게 구성되어 있는지 더 자세히 살펴볼 수 있습니다.
+AEM의 SPA 편집 경험과 SPA Editor와 SPA SPA SPA가 어떻게 구성되어 있는지 자세히 살펴보십시오.
 
-* [AEM에서 SPA](/help/sites-developing/spa-getting-started-react.md) 시작하기를 통해 AEM의 SPA 편집기로 기본 SPA가 빌드되는 방법을 보여 줍니다
-* [AEM과](/help/sites-developing/spa-overview.md) SPA 간의 커뮤니케이션 모델에 대해 SPA 편집기 개요를 참조하십시오.
-* [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) 방법에서는 프런트 엔드 개발자가 AEM용 SPA를 개발하는 방법뿐만 아니라 SPA가 AEM의 아키텍처와 어떻게 연동되는지 설명합니다.
+* [AEM에서](/help/sites-developing/spa-getting-started-react.md) SPA를 시작하기(Getting Started with SPA)는 AEM의 SPA Editor에서 작동하는 기본 SPA를 어떻게 구축하는지 보여줍니다
+* [SPA Editor 개요](/help/sites-developing/spa-overview.md) 는 AEM과 SPA 간의 커뮤니케이션 모델에 대해 더 자세히 설명합니다.
+* [AEM용](/help/sites-developing/spa-architecture.md) SPA를 개발하는 방법에서는 프런트 엔드 개발자가 AEM용 SPA를 개발하는 방법뿐만 아니라 SPA가 AEM 아키텍처와 어떻게 연동되는지 설명합니다.
