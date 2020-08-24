@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '7842'
 ht-degree: 0%
@@ -34,26 +34,26 @@ PDF 생성 서비스는 기본 애플리케이션을 사용하여 다음 파일 
 
 * DWF, DWG 및 DXW를 변환할 수 있는 Autodesk AutoCAD 2005, 2006, 2007, 2008 및 2009(영어로만 제공)
 * Corel WordPerfect 12 및 X4 - WPD, QPW, SHW 변환(영어로만 제공)
-* OpenOffice 2.0, 2.4, 3.0.1 및 3.1을 변환하여 ODT, ODS, ODP, ODG, ODF, SXW, SXI, SXC, SXD, DOC, DOCX, RTF, TXT, XLSX, PPPX pt, PPTX, VSD, MPP, MPPX 및 PUB
+* OpenOffice 2.0, 2.4, 3.0.1 및 3.1을 변환하여 ODT, ODS, ODP, ODG, ODF, SXW, SXI, SXC, SXD, DOC, DOCX, RTF, TXT, XLS, PSX pt, PPTX, VSD, MPP, MPPX 및 PUB
 
 >[!NOTE]
 >
 >PDF 생성 서비스는 64비트 버전의 OpenOffice를 지원하지 않습니다.
 
-* PSD로 변환할 수 있는 Adobe Photoshop® CS2(Windows 전용)
+* PSD로 변환할 Adobe Photoshop® CS2(Windows 전용)
 
 >[!NOTE]
 >
 >Photoshop CS3 및 CS4는 Windows Server 2003 또는 Windows Server 2008을 지원하지 않으므로 지원되지 않습니다.
 
 * FM 변환 Adobe FrameMaker® 7.2 및 8(Windows 전용)
-* PMD, PM6, P65 및 PM을 변환할 수 있는 Adobe PageMaker® 7.0(Windows만 해당)
+* PMD, PM6, P65 및 PM을 변환할 수 있는 Adobe PageMaker® 7.0(Windows 전용)
 * 타사 응용 프로그램에서 지원하는 기본 형식(응용 프로그램별 설정 파일 개발 필요)(Windows만 해당)
 
 PDF 생성 서비스는 다음과 같은 표준 기반 파일 포맷을 PDF로 변환합니다.
 
-* 비디오 포맷: SWF, FLV(Windows 전용)
-* 이미지 형식: JPEG, JPG, JP2, J2Kí, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
+* 비디오 포맷:SWF, FLV(Windows 전용)
+* 이미지 형식:JPEG, JPG, JP2, J2Kí, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
 * HTML(Windows, Sun™ Solaris™ 및 Linux®)
 
 PDF 생성 서비스는 PDF를 다음 파일 형식으로 변환합니다(Windows만 해당).
@@ -84,7 +84,7 @@ PDF 생성 서비스를 사용하여 이러한 작업을 수행할 수 있습니
 
 >[!NOTE]
 >
->PDF 생성 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 생성 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Word 문서를 PDF 문서로 변환 {#converting-word-documents-to-pdf-documents}
 
@@ -96,7 +96,7 @@ PDF 생성 서비스를 사용하여 이러한 작업을 수행할 수 있습니
 
 >[!NOTE]
 >
->PDF 생성 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 생성 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary-of-steps}
 
@@ -104,7 +104,7 @@ Microsoft Word 문서를 PDF 문서로 변환하려면 다음 작업을 수행�
 
 1. 프로젝트 파일 포함
 1. PDF 클라이언트 생성
-1. 파일을 검색하여 PDF 문서로 변환
+1. PDF 문서로 변환할 파일을 검색합니다.
 1. 파일을 PDF 문서로 변환
 1. 결과 검색
 
@@ -153,7 +153,7 @@ PDF API 생성(Java)을 사용하여 Microsoft Word 문서를 PDF 문서로 변�
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
    * 생성자를 사용하여 개체를 `GeneratePdfServiceClient` 만들고 개체를 `ServiceClientFactory` 전달합니다.
 
-1. 파일을 검색하여 PDF 문서로 변환
+1. PDF 문서로 변환할 파일을 검색합니다.
 
    * 생성자를 사용하여 변환할 Word 파일을 나타내는 `java.io.FileInputStream` 개체를 만듭니다. 파일 위치를 지정하는 문자열 값을 전달합니다.
    * 생성자를 사용하여 개체를 `com.adobe.idp.Document` 만들고 개체를 `java.io.FileInputStream` 전달합니다.
@@ -189,7 +189,7 @@ PDF API 생성(Java)을 사용하여 Microsoft Word 문서를 PDF 문서로 변�
 
 [단계 요약](converting-file-formats-pdf.md#summary-of-steps)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 Microsoft Word 문서를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 Microsoft Word 문서를 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -220,7 +220,7 @@ PDF API(웹 서비스)를 사용하여 Microsoft Word 문서를 PDF 문서로 �
       * 필드에 상수 값 `HttpClientCredentialType.Basic` 을 지정합니다 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * 필드에 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly` 을 지정합니다 `BasicHttpBindingSecurity.Security.Mode`.
 
-1. 파일을 검색하여 PDF 문서로 변환
+1. PDF 문서로 변환할 파일을 검색합니다.
 
    * 생성자를 사용하여 `BLOB` 개체를 만듭니다. 이 `BLOB` 개체는 PDF 문서로 변환할 파일을 저장하는 데 사용됩니다.
    * 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. 변환할 파일의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
@@ -263,7 +263,7 @@ PDF API(웹 서비스)를 사용하여 Microsoft Word 문서를 PDF 문서로 �
 
 >[!NOTE]
 >
->PDF 생성 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 생성 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-1}
 
@@ -344,9 +344,9 @@ PDF API 생성(Java)을 사용하여 HTML 문서를 PDF 문서로 변환:
 
 [HTML 문서를 PDF 문서로 변환](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 내용을 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 HTML 내용을 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 내용을 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 HTML 내용을 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -413,7 +413,7 @@ PDF API 생성(웹 서비스)을 사용하여 HTML 컨텐츠를 PDF 문서로 �
 
 >[!NOTE]
 >
->PDF 생성 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>PDF 생성 서비스에 대한 자세한 내용은 AEM Forms [에 대한 서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 단계 요약 {#summary_of_steps-2}
 
@@ -497,7 +497,7 @@ PDF API 생성(Java)을 사용하여 PDF 문서를 RTF 파일로 변환:
 
 [단계 요약](converting-file-formats-pdf.md#summary-of-steps)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 내용을 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 HTML 내용을 PDF 문서로 변환](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -585,7 +585,7 @@ PDF 생성 서비스는 파일 형식과 관련된 응용 프로그램을 불러
 *AppMon은* 사용자가 해당 애플리케이션에서 제공하는 대화 상자를 탐색하는 것과 동일한 방식으로 기본 애플리케이션과 상호 작용하는 기업 구성 요소입니다. AppMon이 Microsoft Word와 같은 응용 프로그램을 열어 인쇄하도록 지시하는 데 사용하는 XML 그램에는 다음과 같은 순차적 작업이 포함됩니다.
 
 1. 파일 > 열기를 선택하여 파일 열기
-1. 열기 대화 상자가 나타나는지 확인합니다. 그렇지 않으면 오류 처리
+1. 열기 대화 상자가 나타나는지 확인합니다.그렇지 않으면 오류 처리
 1. 파일 이름 필드에 파일 이름을 제공한 다음 열기 단추를 클릭합니다.
 1. 파일이 실제로 열리는지 확인
 1. 파일 > 인쇄를 선택하여 인쇄 대화 상자 열기
@@ -595,7 +595,7 @@ AppMon은 표준 Win32 API를 사용하여 타사 애플리케이션과 상호 �
 
 이러한 Win32 API의 제한 사항으로 인해 AppMon은 이러한 UI 이벤트를 부동 메뉴 모음(텍스트 패드와 같은 일부 응용 프로그램에서 찾음)과 Win32 API를 사용하여 내용을 검색할 수 없는 특정 유형의 대화 상자와 같은 특정 종류의 창으로 전달할 수 없습니다.
 
-부동 메뉴 막대를 시각적으로 손쉽게 식별할 수 있습니다. 하지만 시각적인 조사만으로 특수한 유형의 대화를 구별할 수는 없을 것이다. 대화 상자를 검사하여 AppMon이 표준 Win32 API를 사용하여 AppMon과 상호 작용할 수 있는지 확인하기 위해 Microsoft Spy++(Microsoft Visual C++ 개발 환경의 일부) 또는 이와 동일한 WinID(https://www.dennisbabkin.com/php/download.php?what=WinID에서 무료로 다운로드할 수 있음 [](https://www.dennisbabkin.com/php/download.php?what=WinID))와 같은 타사 응용 프로그램이 필요합니다.
+부동 메뉴 막대를 시각적으로 손쉽게 식별할 수 있습니다.하지만 시각적인 조사만으로 특수한 유형의 대화를 구별할 수는 없을 것이다. 대화 상자를 검사하여 AppMon이 표준 Win32 API를 사용하여 AppMon과 상호 작용할 수 있는지 확인하기 위해 Microsoft Spy++(Microsoft Visual C++ 개발 환경의 일부) 또는 이와 동일한 WinID(https://www.dennisbabkin.com/php/download.php?what=WinID에서 무료로 다운로드할 수 있음 [](https://www.dennisbabkin.com/php/download.php?what=WinID))와 같은 타사 응용 프로그램이 필요합니다.
 
 WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 내용을 추출할 수 있는 경우 AppMon도 같은 작업을 수행할 수 있습니다.
 
@@ -617,7 +617,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 내용을 
   </tr>
   <tr>
    <td><p>스크립트 </p></td>
-   <td><p>PDF 생성 서비스와 기본 애플리케이션 간의 상호 작용을 지정합니다. 이러한 상호 작용은 일반적으로 응용 프로그램이 파일을 Adobe PDF 드라이버로 인쇄하도록 합니다. </p><p>스크립트에는 기본 응용 프로그램이 특정 대화 상자를 열도록 안내하고 해당 대화 상자의 필드 및 단추에 대한 특정 응답을 제공하는 지침이 들어 있습니다. </p></td>
+   <td><p>PDF 생성 서비스와 기본 애플리케이션 간의 상호 작용을 지정합니다. 이러한 상호 작용은 일반적으로 애플리케이션이 파일을 Adobe PDF 드라이버으로 인쇄하도록 합니다. </p><p>스크립트에는 기본 응용 프로그램이 특정 대화 상자를 열도록 안내하고 해당 대화 상자의 필드 및 단추에 대한 특정 응답을 제공하는 지침이 들어 있습니다. </p></td>
    <td><p>PDF 생성 서비스에는 지원되는 모든 기본 애플리케이션에 대한 스크립트 파일이 포함되어 있습니다. XML 편집 응용 프로그램을 사용하여 이러한 파일을 수정할 수 있습니다.</p><p>새 기본 애플리케이션에 대한 지원을 추가하려면 새 스크립트 파일을 만들어야 합니다. 기본 응용 <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오</a>. </p></td>
   </tr>
   <tr>
@@ -632,8 +632,8 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 내용을 
   </tr>
   <tr>
    <td><p>추가 애플리케이션별 대화 상자 지침 </p></td>
-   <td><p>애플리케이션별 대화 상자 지침에 대한 무시 및 추가를 지정합니다. 이 섹션에는 이러한 정보의 예가 나와 있습니다. </p><p>이 정보가 들어 있는 파일이 적용됩니다.<i>'[appname]'</i>.addition.<i>'[locale]'</i>.xml. 예: appmon.addition.en_US.xml</p></td>
-   <td><p>이 유형의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. 기본 응용 <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오</a>. </p><p><strong>중요</strong>: 서버가 지원할 각 기본 응용 프로그램에 대한 추가 응용 프로그램별 대화 상자 지침을 만들어야 합니다. </p></td>
+   <td><p>애플리케이션별 대화 상자 지침에 대한 무시 및 추가 사항을 지정합니다. 이 섹션에는 이러한 정보의 예가 나와 있습니다. </p><p>이 정보가 들어 있는 파일이 적용됩니다.<i>'[appname]'</i>.addition.<i>'[locale]'</i>.xml. 예: appmon.addition.en_US.xml</p></td>
+   <td><p>이 유형의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. 기본 응용 <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">프로그램에 대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오</a>. </p><p><strong>중요</strong>:서버가 지원할 각 기본 응용 프로그램에 대한 추가 응용 프로그램별 대화 상자 지침을 만들어야 합니다. </p></td>
   </tr>
  </tbody>
 </table>
@@ -648,7 +648,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등과 같은 대화 내용을 
 
 이 섹션과 다음 섹션에서는 설명하는 원근에 따라 대화 상자와 대화 상자에 포함된 구성 요소에 대해 서로 다른 용어를 사용합니다. 대화 상자 구성 요소는 단추, 필드 및 콤보 상자와 같은 항목입니다.
 
-이 섹션 및 다음 섹션에서는 사용자의 관점에서 대화 상자와 해당 구성 요소에 대해 설명할 때 *대화 상자*, *단추*, *필드*, 필드 *및* 콤보 상자와 같은 용어가 사용됩니다.
+이 섹션 및 다음 섹션에서 사용자의 관점에서 대화 상자와 해당 구성 요소에 대해 설명하는 경우 대화 상자 *,*&#x200B;단추 *,*&#x200B;필드 *,*&#x200B;필드 *및* 콤보 상자와 같은 용어가 사용됩니다.
 
 이 섹션과 다음 섹션에서 내부 표현의 관점에서 대화 상자와 해당 구성 요소를 설명하면 *창 요소라는 용어가* 사용됩니다. 창 요소의 내부 표시는 각 창 요소 인스턴스가 레이블로 식별되는 계층입니다. 또한 창 요소 인스턴스는 물리적인 특성과 동작을 설명합니다.
 
@@ -682,7 +682,7 @@ PDF 생성 서비스가 스크립트 XML 파일을 지원함에 따라 기본 �
 
 대화 *상자 XML 파일은* PDF 생성 서비스가 시스템 또는 기본 응용 프로그램 대화 상자에 응답하는 방식을 지정합니다. 대화 상자 XML 파일을 통해 PDF 생성 서비스가 메시지가 표시되지 않는 대화 상자에 손쉽게 응답하여 변환 프로세스를 진행할 수 있습니다.
 
-현재 실행 중인 스크립트 XML 파일에서 처리되지 않은 대화 상자를 시스템 또는 기본 응용 프로그램에 표시할 때 PDF 생성 서비스는 일치 항목을 찾을 때 정지하여 이 순서로 대화 상자 XML 파일을 검색합니다.
+현재 실행 중인 스크립트 XML 파일에서 처리되지 않은 대화 상자를 시스템 또는 기본 애플리케이션에 표시하는 경우 PDF 생성 서비스는 일치 항목을 찾을 때 정지하여 이 순서로 대화 상자 XML 파일을 검색합니다.
 
 * appmon.`[appname]`추가.`[locale]`.xml
 * appmon.`[appname]`.`[locale]`.xml(이 파일을 수정하지 마십시오.)
@@ -690,7 +690,7 @@ PDF 생성 서비스가 스크립트 XML 파일을 지원함에 따라 기본 �
 
 [PDF 생성] 서비스에서 대화 상자에 대한 일치 항목을 찾으면 대화 상자에 지정된 키 입력이나 기타 작업을 전송하여 제거됩니다. 대화 상자에 대한 지시에서 중단 메시지를 지정하면 PDF 생성 서비스가 현재 실행 중인 작업을 종료하고 오류 메시지를 생성합니다. 이러한 중단 메시지는 스크립트 XML 문법의 `abortMessage` 요소에 지정됩니다.
 
-PDF 생성 서비스에서 이전에 나열된 파일에 설명된 대화 상자가 나타나면 PDF 생성 서비스는 대화 상자의 캡션을 로그 파일 항목에 통합합니다. 현재 실행 중인 작업이 결국 시간 초과됩니다. 그런 다음 로그 파일의 정보를 사용하여 기본 응용 프로그램의 추가 대화 상자 XML 파일에 새 지침을 작성할 수 있습니다.
+PDF 생성 서비스에서 이전에 나열된 파일에 설명되어 있지 않은 대화 상자가 나타나면 PDF 생성 서비스는 대화 상자의 캡션을 로그 파일 항목에 통합합니다. 현재 실행 중인 작업이 결국 시간 초과됩니다. 그런 다음 로그 파일의 정보를 사용하여 기본 응용 프로그램의 추가 대화 상자 XML 파일에 새 지침을 작성할 수 있습니다.
 
 ### 기본 파일 형식에 대한 지원 추가 또는 수정 {#adding-or-modifying-support-for-a-native-file-format}
 
@@ -715,8 +715,8 @@ PDF 생성 서비스에서 이전에 나열된 파일에 설명된 대화 상자
 다음 문제에 주의하십시오.
 
 * Microsoft Spy++는 앰퍼샌드(&amp;)를 사용하여 캡션의 핫키를 식별하여 캡션을 표시합니다. 예를 들어 Spy++에는 하나의 인쇄 대화 상자에 대한 캡션이 표시됩니다. 이는 핫키가 n임을 `Pri&nt`나타냅니다 **. 스크립트 및 대화 상자 XML 파일의 캡션 제목에는 앰퍼샌드를 생략해야 합니다.
-* 일부 캡션에는 줄 바꿈이 포함됩니다. PDF 생성 서비스는 줄바꿈을 식별할 수 없습니다. 캡션에 줄 바꿈이 포함되어 있는 경우 캡션을 충분히 포함시켜 다른 메뉴 항목과 구분한 다음 누락된 부분에 정규 표현식을 사용합니다. 예로는 ( `^Long caption title$`)가 있습니다.]. 캡션 [특성에서 정규 표현식 사용을 참조하십시오](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).
-* 예약된 XML 문자에 문자 엔티티(이스케이프 시퀀스라고도 함)를 사용합니다. 예를 들어 앰퍼샌드 `&` 에 대해, 기호 `<` 보다 `>` 작음 `&apos;` 에 대해, 아포스트로피 `&quot;` 및 인용 부호에 사용합니다.
+* 일부 캡션에는 줄 바꿈이 포함됩니다. PDF 생성 서비스는 줄바꿈을 식별할 수 없습니다. 캡션에 줄 바꿈이 포함되어 있는 경우 캡션을 충분히 포함시켜 다른 메뉴 항목과 구분한 다음 누락된 부분에 정규 표현식을 사용합니다. 예로는 ( `^Long caption title$`)가 있습니다. 캡션 [특성에서 정규 표현식 사용을 참조하십시오](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).
+* 예약된 XML 문자에 문자 엔티티(이스케이프 시퀀스라고도 함)를 사용합니다. 예를 들어 앰퍼샌드 `&` 에 `<` 대해, `>` 보다 작거나 큰 기호 `&apos;` 에 대해, 아포스트로피 `&quot;` 및 인용 부호에 대해 사용합니다.
 
 대화 상자 또는 스크립트 XML 파일 작업을 하려면 Microsoft Spy+ 응용 프로그램을 설치해야 합니다.
 
@@ -875,9 +875,9 @@ Microsoft Spy++를 사용하여 기본 응용 프로그램에서 창 요소 속�
 
 **PDF 서비스 구성 파일 업데이트**
 
-1. [ **홈** ] > [ **서비스** ] > [ **Adobe PDF Generator** ] > [구성 파일 **]******&#x200B;을 선택한 다음 [Export Configuration]을 선택합니다.
+1. 홈 **** > **서비스** > **Adobe PDF 생성기** 구성 파일 > ********&#x200B;파일 내보내기를 선택한 다음 Export Configuration을 선택합니다.
 1. 필요에 따라 native2pdfconfig.xml 파일의 `filetype-settings` 요소를 수정합니다.
-1. [ **홈** ] > [ **서비스** ] > [ **Adobe PDF Generator** ] > [구성 파일&#x200B;**]을 선택한 다음 [******&#x200B;파일 가져오기]를 선택한 다음 [구성]을 선택합니다. 구성 데이터를 PDF 생성 서비스로 가져와 이전 설정을 대체합니다.
+1. 홈 **** > **서비스** > **Adobe PDF 생성기** > 구성&#x200B;**파일 >******&#x200B;파일 가져오기를 선택한 다음 Facebook 구성을 선택합니다. 구성 데이터를 PDF 생성 서비스로 가져와 이전 설정을 대체합니다.
 
 >[!NOTE]
 >
@@ -937,7 +937,7 @@ Microsoft Spy++를 사용하여 기본 응용 프로그램에서 창 요소 속�
 
 #### XML 파일 {#xml-files}
 
-AEM Forms에는 파일 이름 확장명이 .txt인 파일을 처리하기 위해 메모장을 사용하는 PDF 생성 서비스가 사용되는 샘플 XML 파일이 포함되어 있습니다. 이 코드는 이 섹션에 포함되어 있습니다. 또한 이 섹션에 설명된 다른 수정 사항을 수행해야 합니다.
+AEM Forms에는 파일 확장명이 .txt인 파일을 처리하기 위해 메모장을 사용하는 PDF 생성 서비스가 사용되는 샘플 파일이 포함되어 있습니다. 이 코드는 이 섹션에 포함되어 있습니다. 또한 이 섹션에 설명된 다른 수정 사항을 수행해야 합니다.
 
 #### 추가 대화 상자 XML 파일 {#additional-dialog-xml-file}
 
