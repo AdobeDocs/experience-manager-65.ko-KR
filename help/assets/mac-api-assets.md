@@ -3,9 +3,9 @@ title: '[!DNL 자산] HTTP API in [!DNL Adobe Experience Manager].'
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: fb3fdf25718cd099ff36a206718aa4bf8a2b5068
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1673'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,10 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일과 모든 MIME 유형에 
 
 해제 [!UICONTROL 시간]후에는 [!DNL Assets] 웹 인터페이스와 HTTP API를 통해 자산 및 해당 변환을 사용할 수 없습니다. 설정 시간이 미래 또는 [!UICONTROL 해제 시간이] 과거인 경우 API는 404 오류 [!UICONTROL 메시지를] 반환합니다.
 
+>[!CAUTION]
+>
+>[HTTP API는 네임스페이스의 메타데이터 속성을](#update-asset-metadata) `jcr` 업데이트합니다. 그러나 Experience Manager 사용자 인터페이스는 네임스페이스의 메타데이터 속성을 `dc` 업데이트합니다.
+
 ## 콘텐츠 조각 {#content-fragments}
 
 컨텐츠 [조각은](/help/assets/content-fragments/content-fragments.md) 특별한 유형의 자산입니다. 텍스트, 숫자, 날짜 등 구조화된 데이터에 액세스하는 데 사용할 수 있습니다. 자산(예: 이미지 또는 문서)에 몇 가지 차이가 있으므로 컨텐츠 조각 처리에 일부 추가 규칙이 적용됩니다. `standard`
@@ -42,7 +46,7 @@ HTTP [!DNL Assets] API는 두 가지 주요 요소, 폴더 및 자산을 노출�
 
 폴더는 일반적인 파일 시스템의 디렉토리와 같습니다. 다른 폴더 또는 어설션의 컨테이너입니다. 폴더에는 다음 구성 요소가 있습니다.
 
-**엔티티**: 폴더 엔티티는 폴더 및 자산일 수 있는 하위 요소입니다.
+**엔티티**:폴더 엔티티는 폴더 및 자산일 수 있는 하위 요소입니다.
 
 **속성**:
 
@@ -51,13 +55,13 @@ HTTP [!DNL Assets] API는 두 가지 주요 요소, 폴더 및 자산을 노출�
 
 >[!NOTE]
 >
->폴더 또는 자산의 일부 속성이 다른 접두사에 매핑됩니다. 접두어 `jcr` , `jcr:title`및 `jcr:description`는 `jcr:language` `dc` 접두사로 대체됩니다. 따라서 반환된 JSON에 `dc:title` 각각 및 `dc:description` 의 값 `jcr:title` 을 포함시키고 `jcr:description`있습니다.
+>폴더 또는 자산의 일부 속성이 다른 접두사에 매핑됩니다. 접두어 `jcr` , `jcr:title`및 `jcr:description`는 `jcr:language` `dc` 접두사로 대체됩니다. 따라서 반환된 JSON에 `dc:title` 는 `dc:description` 각각 `jcr:title` 및 `jcr:description`의 값을 포함합니다.
 
 **링크** 폴더에는 세 개의 링크가 표시됩니다.
 
-* `self`: Link to self.
-* `parent`: 상위 폴더에 연결합니다.
-* `thumbnail`: (선택 사항) 폴더 축소판 이미지에 연결합니다.
+* `self`:Link to self.
+* `parent`:상위 폴더에 연결합니다.
+* `thumbnail`:(선택 사항) 폴더 축소판 이미지에 연결합니다.
 
 ### 자산 {#assets}
 
@@ -71,7 +75,7 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 
 폴더 [!DNL Experience Manager] 에는 다음 구성 요소가 있습니다.
 
-* 엔티티: 자산의 하위 항목은 해당 표현물입니다.
+* 엔티티:자산의 하위 항목은 해당 표현물입니다.
 * 속성.
 * 링크.
 
@@ -105,17 +109,17 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 **요청**: `GET /api/assets/myFolder.json`
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 200 - OK - success.
 * 404 - 찾을 수 없음 - 폴더가 없거나 액세스할 수 없습니다.
 * 500 - 내부 서버 오류 - 다른 오류가 발생한 경우
 
-**응답**: 반환된 엔티티의 클래스는 자산이나 폴더입니다. 포함된 엔티티의 속성은 각 엔티티의 전체 속성 세트의 하위 집합입니다. 엔티티의 전체 표현을 얻으려면 클라이언트는 A가 있는 링크를 통해 가리키는 URL의 컨텐츠를 검색해야 `rel` 합니다 `self`.
+**응답**:반환된 엔티티의 클래스는 자산이나 폴더입니다. 포함된 엔티티의 속성은 각 엔티티의 전체 속성 세트의 하위 집합입니다. 엔티티의 전체 표현을 얻으려면 클라이언트는 A가 있는 링크를 통해 가리키는 URL의 컨텐츠를 검색해야 `rel` 합니다 `self`.
 
 ## 폴더를 만듭니다 {#create-a-folder}
 
-새 항목을 만듭니다 `sling`. `OrderedFolder` 를 선택합니다. 노드 이름 대신 a `*` 가 제공되면 서블릿은 매개변수 이름을 노드 이름으로 사용합니다. 요청 데이터는 새 폴더의 사이렌 표시 또는 HTML 양식에서 직접 폴더를 만드는 데 유용한 이름-값 쌍 집합 `application/www-form-urlencoded` 또는 `multipart`/ `form`- `data`로 인코딩됩니다. 또한 폴더의 속성을 URL 쿼리 매개 변수로 지정할 수 있습니다.
+새 파일을 만듭니다 `sling`. `OrderedFolder` 를 선택합니다. 노드 이름 대신 a `*` 가 제공되면 서블릿은 매개변수 이름을 노드 이름으로 사용합니다. 요청 데이터는 새 폴더의 사이렌 표시 또는 HTML 양식에서 직접 폴더를 만드는 데 유용한 이름-값 쌍 집합 `application/www-form-urlencoded` 또는 `multipart`/ `form`- `data`로 인코딩됩니다. 또한 폴더의 속성을 URL 쿼리 매개 변수로 지정할 수 있습니다.
 
 제공된 경로의 상위 노드가 없는 경우 API 호출이 `500` 응답 코드와 함께 실패합니다. 폴더가 이미 있는 `409` 경우 호출은 응답 코드를 반환합니다.
 
@@ -126,7 +130,7 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 201 - CREATED - 제작 성공 시
 * 409 - CONFLICT - 폴더가 이미 있는 경우
@@ -137,14 +141,14 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 제공된 파일을 제공된 경로에 배치하여 DAM 저장소에 자산을 만듭니다. 노드 이름 대신 a `*` 가 제공되는 경우 서블릿은 매개 변수 이름이나 파일 이름을 노드 이름으로 사용합니다.
 
-**매개 변수**: 매개 변수 `name` 는 에셋 이름 및 파일 참조 `file` 에 사용됩니다.
+**매개 변수**:매개 변수 `name` 는 에셋 이름 및 파일 참조 `file` 에 사용됩니다.
 
 **요청**
 
 * `POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"`
 * `POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"`
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 201 - CREATED - 자산이 성공적으로 생성된 경우
 * 409 - 충돌 - 자산이 이미 존재하는 경우
@@ -157,7 +161,7 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 **요청**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 200 - 확인 - 자산이 성공적으로 업데이트된 경우
 * 404 - 찾을 수 없음 - 제공된 URI에서 자산을 찾거나 액세스할 수 없는 경우
@@ -168,27 +172,48 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 자산 메타데이터 속성을 업데이트합니다. 네임스페이스의 속성을 업데이트하면 API가 네임스페이스에 있는 동일한 속성을 `dc:` `jcr` 업데이트합니다. API는 두 네임스페이스의 속성을 동기화하지 않습니다.
 
-**요청**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**요청**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 200 - 확인 - 자산이 성공적으로 업데이트된 경우
 * 404 - 찾을 수 없음 - 제공된 URI에서 자산을 찾거나 액세스할 수 없는 경우
 * 412 - 사전 조건 실패 - 루트 컬렉션을 찾을 수 없거나 액세스할 수 없는 경우
 * 500 - 내부 서버 오류 - 다른 오류가 발생한 경우
 
+### 네임스페이스 간 메타데이터 업데이트 `dc` `jcr` 동기화 {#sync-metadata-between-namespaces}
+
+API 메서드는 네임스페이스의 메타데이터 속성을 `jcr` 업데이트합니다. Touch-UI를 사용하여 수행한 업데이트는 네임스페이스의 메타데이터 속성을 `dc` 변경합니다. 메타데이터 값을 `dc` 및 `jcr` 네임스페이스 간에 동기화하려면 워크플로우를 만들고 자산 편집 시 워크플로우를 실행하도록 Experience Manager을 구성할 수 있습니다. ECMA 스크립트를 사용하여 필요한 메타데이터 속성을 동기화합니다. 다음 샘플 스크립트는 `dc:title` 와 사이에 제목 문자열을 동기화합니다 `jcr:title`.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
+
 ## 자산 변환 만들기 {#create-an-asset-rendition}
 
 자산에 대한 새 자산 변환을 만듭니다. 요청 매개 변수 이름을 제공하지 않으면 파일 이름이 변환 이름으로 사용됩니다.
 
-**매개 변수**: 매개 변수 `name` 는 변환의 이름 및 파일 참조입니다 `file` .
+**매개 변수**:매개 변수 `name` 는 변환의 이름 및 파일 참조입니다 `file` .
 
 **요청**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 201 - CREATED - Rendition이 성공적으로 생성된 경우
 * 404 - 찾을 수 없음 - 제공된 URI에서 자산을 찾거나 액세스할 수 없는 경우
@@ -201,7 +226,7 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 **요청**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 200 - 확인 - Rendition이 성공적으로 업데이트된 경우
 * 404 - 찾을 수 없음 - 제공된 URI에서 자산을 찾거나 액세스할 수 없는 경우
@@ -212,11 +237,11 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 새 자산 주석을 만듭니다.
 
-**매개 변수**: 매개 변수 `message` 는 주석의 메시지 본문과 JSON 형식의 주석 데이터 `annotationData` 에 사용됩니다.
+**매개 변수**:매개 변수 `message` 는 주석의 메시지 본문과 JSON 형식의 주석 데이터 `annotationData` 에 사용됩니다.
 
 **요청**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 201 - CREATED - 댓글이 성공적으로 작성된 경우
 * 404 - 찾을 수 없음 - 제공된 URI에서 자산을 찾거나 액세스할 수 없는 경우
@@ -227,7 +252,7 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 제공된 경로에서 사용 가능한 폴더 또는 자산을 새 대상에 복사합니다.
 
-**요청 헤더**: 매개 변수는 다음과 같습니다.
+**요청 헤더**:매개 변수는 다음과 같습니다.
 
 * `X-Destination` - 리소스를 복사할 API 솔루션 범위 내의 새 대상 URI입니다.
 * `X-Depth` - `infinity` 또는 `0`. 를 사용하면 리소스와 해당 속성만 복사되며 하위 항목은 복사하지 않습니다. `0`
@@ -235,7 +260,7 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 **요청**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 201 - CREATED - 폴더/자산이 존재하지 않는 대상에 복사되는 경우
 * 204 - 콘텐트 없음 - 폴더/자산이 기존 대상에 복사되는 경우
@@ -246,7 +271,7 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 지정된 경로의 폴더 또는 자산을 새 대상으로 이동합니다.
 
-**요청 헤더**: 매개 변수는 다음과 같습니다.
+**요청 헤더**:매개 변수는 다음과 같습니다.
 
 * `X-Destination` - 리소스를 복사할 API 솔루션 범위 내의 새 대상 URI입니다.
 * `X-Depth` - `infinity` 또는 `0`. 를 사용하면 리소스와 해당 속성만 복사되며 하위 항목은 복사하지 않습니다. `0`
@@ -260,7 +285,7 @@ URL `/content/dam` 에서 사용하지 마십시오. 자산을 이동하고 기�
 curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
 ```
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 201 - CREATED - 폴더/자산이 존재하지 않는 대상에 복사되는 경우
 * 204 - 콘텐트 없음 - 폴더/자산이 기존 대상에 복사되는 경우
@@ -277,7 +302,7 @@ curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.p
 * `DELETE /api/assets/myFolder/myAsset.png`
 * `DELETE /api/assets/myFolder/myAsset.png/renditions/original`
 
-**응답 코드**: 응답 코드는 다음과 같습니다.
+**응답 코드**:응답 코드는 다음과 같습니다.
 
 * 200 - 확인 - 폴더가 성공적으로 삭제된 경우
 * 412 - 사전 조건 실패 - 루트 컬렉션을 찾을 수 없거나 액세스할 수 없는 경우
