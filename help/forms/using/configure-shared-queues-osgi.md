@@ -1,15 +1,15 @@
 ---
 title: 공유 큐 구성
 seo-title: 공유 큐 구성
-description: OSGi 기반의 AEM Forms에서 양식 중심의 워크플로우에 공유 대기열을 사용하는 방법을 살펴볼 수 있습니다.
-seo-description: OSGi 기반의 AEM Forms에서 양식 중심의 워크플로우에 공유 대기열을 사용하는 방법을 살펴볼 수 있습니다.
+description: OSGi 기반의 AEM Forms에서 Forms 중심의 워크플로우를 위해 공유 대기열을 사용하는 방법을 살펴볼 수 있습니다.
+seo-description: OSGi 기반의 AEM Forms에서 Forms 중심의 워크플로우를 위해 공유 대기열을 사용하는 방법을 살펴볼 수 있습니다.
 uuid: null
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: null
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 2%
@@ -43,7 +43,7 @@ AEM 받은 편지함을 사용하면 받은 편지함에 있는 단일 또는 �
 
 >[!NOTE]
 >
->(양식 중심의 워크플로우 항목에만 해당) 워크플로우에서 **[할당 작업](aem-forms-workflow-step-reference.md)**단계의 받은 편지함 공유&#x200B;**옵션을 통해 할당자가 공유할 수 있도록**허용 옵션을 활성화합니다. 앞서 언급한 옵션을 활성화한 항목만 다른 사용자에게 표시됩니다.
+>(Forms 중심 워크플로우 항목에만 해당) 워크플로우에서 **[할당 작업](aem-forms-workflow-step-reference.md)** 단계의 받은 편지함 공유 **옵션을 통해 할당자가 공유할 수 있도록** 허용 옵션을 활성화합니다. 앞서 언급한 옵션을 활성화한 항목만 다른 사용자에게 표시됩니다.
 
 ### 개별 항목 공유
 
@@ -57,7 +57,7 @@ AEM 받은 편지함을 사용하면 받은 편지함에 있는 단일 또는 �
 
 >[!NOTE]
 >
->(양식 중심의 워크플로우 항목에만 해당) 할당자가 워크플로우 **[에서 작업](aem-forms-workflow-step-reference.md)**할당 단계의 받은 편지함에서 명시적으로 공유할 수 있도록 허용 옵션을&#x200B;**활성화합니다**. 앞서 언급한 옵션을 활성화한 항목만 다른 사용자에게 표시됩니다.
+>(Forms 중심 워크플로우 항목에만 해당) 할당자가 워크플로우에서 **[할당 작업](aem-forms-workflow-step-reference.md)** 단계의 받은 편지함에서 명시적으로 공유할 수 있도록 허용 옵션을 **** 활성화합니다. 앞서 언급한 옵션을 활성화한 항목만 다른 사용자에게 표시됩니다.
 
 ## 받은 편지함 항목 액세스 요청 {#request-access}
 
@@ -75,7 +75,7 @@ AEM 받은 편지함을 사용하면 받은 편지함에 있는 단일 또는 �
 
 1. AEM 인스턴스에 로그인합니다. 받은 편지함 ![아이콘](assets/bell.svg) 을 누르고 모두 **[!UICONTROL 보기를 누릅니다]**.
 1. 컨텐츠 전용 ![](assets/railleft.svg) 아이콘을 눌러 필터 선택기를 엽니다.
-1. 할당자 **[!UICONTROLS선택]** 드롭다운을 눌러 받은 항목을 사용자와 공유한 사용자를 보고 선택합니다.
+1. 할당자 **[!UICONTROL 선택]** 드롭다운을 눌러 받은 항목을 사용자와 공유한 사용자를 보고 선택합니다.
 1. 항목을 선택하고 클레임을 **[!UICONTROL 누릅니다]**. 항목이 받은 편지함에 추가됩니다.
 
 ## 요청된 항목 출시 {#release-items}
