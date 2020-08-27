@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1148ac87ef6ff1afa77788e9cbd180d883290bfe
+source-git-commit: 6eb6ea86c5544329be5cb28500c59c632ccc9639
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ Adobe Sign을 AEM Forms과 통합하려면 다음이 필요합니다.
 * Adobe Sign [API 애플리케이션입니다](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Adobe Sign API 응용 프로그램의 자격 증명(클라이언트 ID 및 클라이언트 암호).
 * 다시 구성할 때 작성자 및 게시 인스턴스 모두에서 기존 Adobe Sign 구성을 제거합니다.
+* 작성 및 게시 인스턴스에 [동일한 암호화](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) 키를 사용합니다.
 
 ## AEM Forms과 Adobe Sign 구성 {#configure-adobe-sign-with-aem-forms}
 
@@ -89,16 +90,11 @@ Adobe Sign을 AEM Forms과 통합하려면 다음이 필요합니다.
 1. AEM 웹 콘솔을 엽니다. URL은 `https://'[server]:[port]'/system/console/configMgr`
 1. Forms **일반 구성 서비스를 엽니다.**
 1. 허용 **필드에서 모든 사용자** - 익명 또는 로그인한 모든 사용자가 첨부 파일을 미리 보고 양식을 확인 및 서명하고 **저장을 클릭합니다** **.** 작성자 인스턴스가 Adobe Sign을 사용하도록 구성되어 있습니다.
-1. 게시 [인스턴스에서](/help/sites-deploying/deploy.md) 로그인하고 다음 URL을 엽니다.
+1. 복제 [를](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) 사용하여 해당 게시 인스턴스에 동일한 구성을 만듭니다.
 
-   `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`
+이제 Adobe Sign은 AEM Forms과 통합되어 적응형 양식으로 사용할 수 있습니다. 적응형 양식에서 Adobe Sign 서비스를 [사용하려면 위에 만든 구성 컨테이너를 적응형 양식](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)속성으로 지정합니다.
 
-1. 1단계에서 12단계를 반복하여 AEM Forms과 Adobe Sign을 구성합니다. 구성에 동일한 제목(3단계에서 지정됨)과 동일한 이름(6단계에서 지정됨)을 사용하여 작성자 인스턴스에 구성된 설정을 복제할 수 있습니다.
 
-   이제 Adobe Sign은 AEM Forms과 통합되어 적응형 양식으로 사용할 수 있습니다. 적응형 양식에서 Adobe Sign 서비스를 [사용하려면 위에 만든 구성 컨테이너를 적응형 양식](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)속성으로 지정합니다.
-
-   >[!NOTE]
-   > URL에 대한 액세스 권한이 없는 견고한 환경이 있는 경우 `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`작성자에 대한 구성을 완료하고 [복제를](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) 사용하여 해당 게시 인스턴스에 동일한 구성을 만듭니다.
 
 ## 서명 상태를 동기화하도록 Adobe Sign 스케줄러 구성 {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
