@@ -4,9 +4,9 @@ description: 병목 현상을 [!DNL Experience Manager] 제거하고 성능을 �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
+source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
 workflow-type: tm+mt
-source-wordcount: '2748'
+source-wordcount: '2746'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Adobe은 많은 회사가 HTTP 트래픽을 탐지하는 방화벽을 가지고 
 
 ### 최대 병렬 작업 {#maximum-parallel-jobs}
 
-기본적으로 서버의 프로세서 수와 같은 최대 병렬 작업 수를 [!DNL Experience Manager] 실행합니다. 이 설정의 문제는 부하가 많은 기간 동안 모든 프로세서가 [!UICONTROL DAM 자산] 업데이트 워크플로우로 사용되고 UI 응답성이 저하되고 서버 성능과 안정성을 보호하는 다른 프로세스 [!DNLE를 실행하지] 못하게 된다는 것입니다. 다음 단계를 수행하여 서버에서 사용할 수 있는 프로세서의 절반으로 이 값을 설정하는 것이 좋습니다.
+기본적으로 서버의 프로세서 수와 같은 최대 병렬 작업 수를 [!DNL Experience Manager] 실행합니다. 이 설정의 문제는 부하가 많은 기간 동안 모든 프로세서가 [!UICONTROL DAM 자산] 업데이트 워크플로우에 의해 사용되고 UI 응답성이 저하되고 서버 성능 및 안정성을 보호하는 다른 프로세스가 실행되지 [!DNL Experience Manager] 않는다는 것입니다. 다음 단계를 수행하여 서버에서 사용할 수 있는 프로세서의 절반으로 이 값을 설정하는 것이 좋습니다.
 
 1. 작성자에서 [!DNL Experience Manager] 액세스합니다 `https://[aem_server]:[port]/system/console/slingevent`.
 
