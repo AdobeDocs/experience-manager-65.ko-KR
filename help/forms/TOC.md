@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.5 Forms 사용 안내서
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: a1ada0e747f46923dc834c872e522e648adae073
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '3719'
+source-wordcount: '3704'
 ht-degree: 2%
 
 ---
@@ -42,11 +42,8 @@ ht-degree: 2%
       + [자습서:템플릿 만들기](using/create-templates-print-web.md)
       + [자습서:인터랙티브한 커뮤니케이션 제작](using/create-interactive-communication0.md)
    + AEM Forms 참조 자료 {#aem-forms-reference-collaterals}
-      + [We.Finance 및 Employee 셀프 서비스 참조 사이트 설정 및 구성](using/setup-reference-sites.md)
-      + [We.Gov 참조 사이트 설정 및 구성](/help/forms/using/forms-install-configure-gov-reference-site.md)
-      + [We.Finance 참조 사이트 연습](using/finance-reference-site-walkthrough.md)
-      + [We.Gov 참조 사이트 연습](/help/forms/using/forms-gov-reference-site-user-demo.md)
-      + [직원 셀프 서비스 참조 사이트 연습](/help/forms/using/employee-self-service-reference-site.md)
+      + [We.Gov 및 We.Finance 참조 사이트 설정 및 구성](/help/forms/using/forms-install-configure-gov-reference-site.md)
+      + [We.Gov 및 We.Finance 참조 사이트 연습](/help/forms/using/forms-gov-reference-site-user-demo.md)
       + [직원 채용 참조 사이트 연습](/help/forms/using/employee-recruitment-reference-site.md)
       + [We.Finance Auto Insurance Renewal 참조 사이트](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
       + [We.Gov 참조 사이트 FOIA 연습](/help/forms/using/gov-reference-site-foia-walkthrough.md)
@@ -493,7 +490,7 @@ ht-degree: 2%
       + [정책 집합 만들기 및 관리](/help/forms/using/admin-help/creating-policy-sets.md)
       + [사용자로 등록](/help/forms/using/admin-help/registering-as-a-user.md)
    + Forms 구성 {#configure-forms}
-      + [양식 구성에 대한 기본 사항](/help/forms/using/admin-help/overview-7.md)
+      + [양식 구성 기본 사항](/help/forms/using/admin-help/overview-7.md)
       + [국제화 옵션 설정](/help/forms/using/admin-help/setting-internationalization-options.md)
       + [Forms에 대한 캐싱 구성](/help/forms/using/admin-help/configuring-caching-forms.md)
       + [XCI 구성 옵션 지정](/help/forms/using/admin-help/specifying-xci-configuration-options.md)
