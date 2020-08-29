@@ -1,5 +1,5 @@
 ---
-title: We.Gov 참조 사이트 설정 및 구성
+title: We.Gov 및 We.Finance 참조 사이트 설정 및 구성
 seo-title: We.Gov 참조 사이트 설정 및 구성
 description: AEM Forms 데모 패키지 설치, 구성 및 사용자 정의
 seo-description: AEM Forms 데모 패키지 설치, 구성 및 사용자 정의
@@ -8,15 +8,15 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4c42e5e5274c41469824f12b228698a77bf5d4a6
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '4738'
+source-wordcount: '4742'
 ht-degree: 2%
 
 ---
 
 
-# We.Gov 참조 사이트 설정 및 구성 {#set-up-and-configure-we-gov-reference-site}
+# We.Gov 및 We.Finance 참조 사이트 설정 및 구성 {#set-up-and-configure-we-gov-reference-site}
 
 ## 데모 패키지 세부 정보 {#demo-package-details}
 
@@ -590,7 +590,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 1. 구성과 제목 및 이름을 제공합니다.
 
-1. 시스템의 서비스 URL은 https://aemformsconversion.adobe.io/으로 설정됩니다.
+1. 시스템의 서비스 URL이 https://aemformsconversion.adobe.io/으로 설정됩니다.
 
 1. 템플릿 URL: */conf/we-finance/settings/wcm/templates/we-finance-adaptive-form*
 
@@ -692,7 +692,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 모든 사이트 페이지는 다음 사이트에서 사용할 수 있습니다. *https://&lt;aemserver>:&lt;port>/sites.html/content/we-gov*
 
-이러한 사이트 페이지는 AEM 격자 패키지를 사용하여 일부 구성 요소의 레이아웃을 제어합니다.
+이러한 사이트 페이지는 AEM 격자 패키지를 사용하여 몇 가지 구성 요소의 레이아웃을 제어합니다.
 
 #### Style system {#style-system}
 
