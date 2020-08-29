@@ -1,26 +1,26 @@
 ---
-title: We.Gov 참조 사이트 연습
-seo-title: We.Gov 참조 사이트 연습
-description: 가상 사용자 및 그룹을 사용하여 We.Gov 데모 패키지를 사용하여 AEM Forms 작업을 수행합니다.
-seo-description: 가상 사용자 및 그룹을 사용하여 We.Gov 데모 패키지를 사용하여 AEM Forms 작업을 수행합니다.
+title: We.Gov 및 We.Finance 참조 사이트 연습
+seo-title: We.Gov 및 We.Finance 참조 사이트 연습
+description: 가상 사용자와 그룹을 사용하여 We.Gov 및 We.Finance 데모 패키지를 사용하여 AEM Forms 작업을 수행합니다.
+seo-description: 가상 사용자와 그룹을 사용하여 We.Gov 및 We.Finance 데모 패키지를 사용하여 AEM Forms 작업을 수행합니다.
 uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1da42d7274e9a4257b9e8effae2b754e0104aa4
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2548'
 ht-degree: 0%
 
 ---
 
 
-# We.Gov 참조 사이트 연습 {#we-gov-reference-site-walkthrough}
+# We.Gov 및 We.Finance 참조 사이트 연습 {#we-gov-reference-site-walkthrough}
 
 ## 전제 조건 {#pre-requisites}
 
-We.Gov 참조 사이트 [설정 및 구성에 설명된 대로 참조 사이트를 설정합니다](../../forms/using/forms-install-configure-gov-reference-site.md).
+We.Gov 및 We. [Finance 참조 사이트 설정 및 구성에 설명된 대로 참조 사이트를 설정합니다](../../forms/using/forms-install-configure-gov-reference-site.md).
 
 ## 사용자 스토리 {#user-story}
 
@@ -288,7 +288,7 @@ Aya는 서비스 요청 애플리케이션을 완료하기 전에 집에서 일�
 
    ![문서](/help/forms/using/assets/sign_document_new.png) 서명 ![테스트 문서 서명](/help/forms/using/assets/sign_test_document.png)
 
-## 정부 기관(George) {#government-agent-george}
+## 정부 대리인(George) {#government-agent-george}
 
 ![정부 요원 조지](/help/forms/using/assets/george_lang-1.png)
 
@@ -309,7 +309,7 @@ Aya는 서비스 요청 애플리케이션을 완료하기 전에 집에서 일�
 
       1. &quot;가장 대상&#x200B;**&quot; 필드에 &quot;**&#x200B;조지&#x200B;**&quot;**&#x200B;를입력합니다.
 
-      1. 가장하려면 확인을 클릭합니다.
+      1. [확인]을 클릭하여 가장합니다.
 
 
 1. 오른쪽 상단 모서리에서 알림(벨) 아이콘을 클릭합니다.
@@ -368,7 +368,7 @@ George는 Aya의 응용 프로그램을 승인하고, 기존의 자동 작업 �
 
       1. &quot;가장&#x200B;**으로**&quot; 필드에 &quot;**Camila&quot;를**&#x200B;입력합니다.
 
-      1. 가장하려면 확인을 클릭합니다.
+      1. [확인]을 클릭하여 가장합니다.
 
 
 1. 오른쪽 상단 모서리에서 알림(벨) 아이콘을 클릭합니다.
@@ -408,7 +408,7 @@ George는 Aya의 응용 프로그램을 승인하고, 기존의 자동 작업 �
 1. 을 클릭하여 PDF 첨부 파일을 엽니다.
 1. 이메일 클라이언트에서 다시 스크롤하고 &quot;**View welcome kit online**&quot;을 클릭합니다.
 
-   1. 그러면 동일한 문서의 웹 채널 버전이 열립니다.
+   1. 동일한 문서의 웹 채널 버전이 열립니다.
 
 1. PDF에 직접 신속하게 참조하려면
 
