@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.5 클래식 UI 작성 사용 안내서
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '257'
 ht-degree: 94%
 
 ---
@@ -61,10 +61,8 @@ ht-degree: 94%
 + 개인화 {#personalization}
    + [세그멘테이션 이해](classic-personalization-campaigns-segmentation.md)
    + [캠페인 관리](classic-personalization-campaigns.md)
-   + [티저 및 전략](classic-personalization-campaigns-teasers-strategy.md)
    + [랜딩 페이지](classic-personalization-campaigns-landingpage.md)
    + [Target 오퍼](classic-personalization-campaigns-target-offers.md)
-   + [마케팅 캠페인 관리자 작업](classic-personalization-campaigns-mktg-manager.md)
    + [이메일 마케팅](classic-personalization-campaigns-email.md)
    + [바운스된 이메일 추적](classic-personalization-campaigns-email-tracking-bounces.md)
    + [티저 및 전략](classic-personalization-campaigns-teasers-strategy.md)
