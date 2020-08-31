@@ -5,9 +5,9 @@ audience: admin-user
 user-guide-title: AEM 6.5 관리 사용 안내서
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '619'
 ht-degree: 16%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 16%
 + 사이트 기능 {#introduction}
    + [웹 사이트 관리](msm-and-translation.md)
    + [비동기 작업](asynchronous-jobs.md)
-   + [컨텐츠 재활용: 다중 사이트 관리자 및 Live Copy](msm.md)
+   + [컨텐츠 재활용:다중 사이트 관리자 및 Live Copy](msm.md)
    + [Live Copy 개요 콘솔](msm-livecopy-overview.md)
    + [Live Copy 동기화 구성](msm-sync.md)
    + [Live Copy 생성 및 동기화](msm-livecopy.md)
@@ -59,7 +59,7 @@ ht-degree: 16%
    + [워크플로우 인스턴스 관리](workflows-administering.md)
    + [AEM에서 cURL 사용](curl.md)
    + [프록시 서버 도구(proxy.jar)](proxy-jar.md)
-   + [AEM 앱 구성](config-apps.md)
+   + [AEM 앱에 대한 구성](config-apps.md)
    + [검색 양식 구성](search-forms.md)
    + [도구 콘솔](tools-consoles.md)
    + [보고](reporting.md)
@@ -74,9 +74,9 @@ ht-degree: 16%
    + [OWASP Top 10](owasp-top10.md)
    + [프로덕션 준비 모드에서 AEM 실행](production-ready.md)
    + [ID 관리](identity-management.md)
-   + [AEM Managed Services에 대한 Adobe IMS 인증 및 Admin Console 지원](ims-config-and-admin-console.md)
+   + [AEM Managed Services용 Adobe IMS 인증 및 Admin Console 지원](ims-config-and-admin-console.md)
    + [닫힌 사용자 그룹 만들기](cug.md)
-   + [AEM의 정리 문제 완화](mitigating-serialization-issues.md)
+   + [AEM의 일련화 문제 완화](mitigating-serialization-issues.md)
    + [사용자 동기화](sync.md)
    + [캡슐화된 토큰 지원](encapsulated-token.md)
    + [단일 사인온](/help/sites-deploying/single-sign-on.md)
@@ -107,7 +107,7 @@ ht-degree: 16%
    + [eCommerce](ecommerce.md)
    + [개념](concepts.md)
    + [일반 전자 상거래 관리](generic.md)
-   + [마젠토](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
+   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [AEM Commerce - GDPR 준비](gdpr-compliance-commerce.md)
@@ -116,7 +116,7 @@ ht-degree: 16%
    + [Salesforce와 통합](salesforce.md)
    + [Adobe Target과 통합](target.md)
    + [Adobe Analytics와 통합](adobeanalytics.md)
-   + [Adobe Analytics에 연결 및 프레임워크 만들기](adobeanalytics-connect.md)
+   + [Adobe Analytics 및 프레임워크 연결](adobeanalytics-connect.md)
    + [Adobe Analytics에 대한 링크 추적 구성](adobeanalytics-link.md)
    + [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](adobeanalytics-mapping.md)
    + [Adobe Analytics에 대한 비디오 추적 구성](adobeanalytics-video.md)
@@ -130,26 +130,25 @@ ht-degree: 16%
    + [Adobe Campaign Standard과 통합](campaignstandard.md)
    + [Flash 뷰어 지원 중단 알림](flash-viewers-eol.md)
    + [제품 피드](product-feed.md)
-   + [Adobe 다이내믹 태그 관리와의 통합](dtm.md)
-   + [Adobe Analytics 및 Adobe Target에 선택](opt-in.md)
+   + [Adobe 다이내믹 태그 관리와 통합](dtm.md)
+   + [Adobe Analytics 및 Adobe Target 선택](opt-in.md)
    + [AEM 포털 및 포틀릿](aem-as-portal.md)
    + [Dynamic Media Classic(Scene7)과 통합](scene7.md)
    + [AEM Livefyre 레서피](aem-livefyre-recipes.md)
    + [통합 문제 해결](troubleshooting-integration-issues.md)
    + [BrightEdge Content Optimizer와 통합](brightedge.md)
-   + [이메일 템플릿 우수 사례](best-practices-for-email-templates.md)
    + [카탈로그 프로듀서](catalog-producer.md)
-   + [Experience Cloud 및 Creative Cloud와 AEM Assets 통합 구성](configure-assets-cc-integration.md)
+   + [Experience Cloud 및 Creative Cloud과 AEM Assets 통합 구성](configure-assets-cc-integration.md)
    + [Silverpop Engage와 통합](silverpop.md)
    + [Adobe Campaign과 통합](campaign.md)
    + [ExactTarget과 통합](exacttarget.md)
-   + [외부 공급자와 Analytics](external-providers.md)
+   + [외부 제공업체를 통한 분석](external-providers.md)
    + [Adobe Marketing Cloud과 통합](marketing-cloud.md)
    + [Adobe Target과 통합 수동 구성](target-configuring.md)
    + [Adobe Target과 통합을 위한 전제 조건](target-requirements.md)
-   + [Adobe I/O를 사용한 Adobe Target과 통합](integration-ims-adobe-io.md)
+   + [Adobe I/O를 사용하는 Adobe Target과 통합](integration-ims-adobe-io.md)
    + [Adobe 분류](adobeanalytics-classifications.md)
-   + [Adobe Search&amp;Promote과 통합](search-and-promote.md)
+   + [Adobe Search &amp; Promote과 통합](search-and-promote.md)
    + [솔루션 통합](integration.md)
    + [경험 조각을 Adobe Target으로 내보내기](experience-fragments-target.md)
    + [이메일 템플릿 우수 사례](best-practices-for-email-templates.md)
