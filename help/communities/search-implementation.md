@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 4%
@@ -83,18 +83,18 @@ JSRP의 경우 게시 환경에 입력된 UGC는 작성 환경에서 보이지 �
 
 #### Oak 인덱싱 {#oak-indexing}
 
-AEM 플랫폼 검색에 대해 Oak 색인은 자동으로 만들어지지 않지만 AEM 6.2에서는 UGC 검색 결과를 제공할 때 성과를 향상시키고 페이지 매김을 지원하기 위해 AEM Communities이 추가되었습니다.
+AEM 플랫폼 검색에 대해 Oak 색인은 자동으로 만들어지지 않지만 AEM 6.2에서는 UGC 검색 결과를 표시할 때 성능을 향상시키고 페이지 매김을 지원하기 위해 AEM Communities이 추가되었습니다.
 
-사용자 지정 속성이 사용 중이고 검색이 느린 경우 사용자 지정 속성을 더 나은 성능을 얻으려면 추가 색인을 만들어야 합니다. 이식성을 유지하려면 검색 가능한 사용자 정의 속성을 만들 때 [이름 지정 요구](#naming-of-custom-properties) 사항을 따르십시오.
+사용자 지정 속성이 사용 중이고 검색이 느린 경우 사용자 지정 속성을 더 성능으로 만들려면 추가 색인을 만들어야 합니다. 이식성을 유지하려면 검색 가능한 사용자 정의 속성을 만들 때 [이름 지정 요구](#naming-of-custom-properties) 사항을 따르십시오.
 
-기존 색인을 수정하거나 사용자 지정 색인을 만들려면 [Oak 쿼리 및 색인을 참조하십시오](../../help/sites-deploying/queries-and-indexing.md).
+기존 색인을 수정하거나 사용자 정의 색인을 만들려면 [Oak 쿼리 및 색인을 참조하십시오](../../help/sites-deploying/queries-and-indexing.md).
 
 Oak [색인 관리자는](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) ACS AEM Commons에서 사용할 수 있습니다. 다음과 같은 이점을 제공합니다.
 
-* 기존 색인의 보기입니다.
+* 기존 색인의 보기.
 * 다시 색인 작성 기능
 
-CRXDE Lite의 기존 Oak 색인을 보려면 [위치](../../help/sites-developing/developing-with-crxde-lite.md):
+CRXDE Lite에서 기존 Oak 색인을 보려면 [위치](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * `/oak:index/socialLucene`
 
