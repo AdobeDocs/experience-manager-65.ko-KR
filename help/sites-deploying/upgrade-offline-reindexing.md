@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 translation-type: tm+mt
-source-git-commit: f465b6ffd1a93ddad3db0caf00d4ff797e1b189f
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 0%
@@ -147,7 +147,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 **생성된 색인 정의에 대해 오프라인 색인 만들기 수행**
 
-Lucene 재색인은 oak-run을 사용하여 오프라인으로 수행할 수 있습니다. 이 프로세스는 아래 디스크에 인덱스 데이터를 만듭니다 `indexing-result/indices`. 저장소에 쓰지 **않으므로** 실행 중인 AEM 인스턴스를 중지할 필요가 없습니다. 생성된 텍스트 스토어는 다음 프로세스에 포함됩니다.
+Lucene 재색인은 oak-run을 사용하여 오프라인으로 수행할 수 있습니다. 이 프로세스는 아래 디스크에 인덱스 데이터를 만듭니다 `indexing-result/indexes`. 저장소에 쓰지 **않으므로** 실행 중인 AEM 인스턴스를 중지할 필요가 없습니다. 생성된 텍스트 스토어는 다음 프로세스에 포함됩니다.
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
@@ -155,7 +155,7 @@ java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --re
 Sample <checkpoint> looks like r16c85700008-0-8
 —fds-path: path to data store.
 --pre-extracted-text-dir: Directory of pre-extracted text.
-merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indices in this file will be re-indexed.
+merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indexes in this file will be re-indexed.
 ```
 
 저장소 컨텐츠를 로컬 플랫 파일로 스풀링하여 다시 색인 시간을 크게 향상시킴으로써 매개 변수 `--doc-traversal-mode` 사용을 쉽게 할 수 있습니다. 그러나 저장소 크기의 2배의 추가 디스크 공간이 필요합니다.
@@ -164,9 +164,9 @@ MongoMK의 경우 이 단계가 MongoDB 인스턴스에 더 가까운 인스턴�
 
 색인 작업을 위한 추가 기술 세부 사항은 [오크 실행 문서에서 확인할 수 있습니다](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 
-### 인덱스 가져오기 {#importing-indices}
+### 인덱스 가져오기 {#importing-indexes}
 
-AEM 6.4 및 최신 버전의 AEM에는 시작 시퀀스의 디스크에서 색인을 가져오는 기능이 내장되어 있습니다. 시작 중 인덱스 데이터가 있는지 폴더 `<repository>/indexing-result/indices` 가 감시됩니다. 새 버전의 [target](in-place-upgrade.md#performing-the-upgrade) AEM jar로 시작하기 전에 **업그레이드 프로세스** 중에 미리 생성된 인덱스를 위 위치에 복사할 수 있습니다. AEM은 이를 저장소로 가져오고 해당 체크포인트를 시스템에서 제거합니다. 따라서 색인은 완전히 피하는 것이다.
+AEM 6.4 이상 버전의 AEM에는 시작 시퀀스에 디스크에서 색인을 가져오는 기능이 내장되어 있습니다. 시작 중 인덱스 데이터가 있는지 폴더 `<repository>/indexing-result/indexes` 가 감시됩니다. 새 버전의 [target](in-place-upgrade.md#performing-the-upgrade) AEM jar로 시작하기 전에 **업그레이드 프로세스** 중에 미리 생성된 인덱스를 위 위치에 복사할 수 있습니다. AEM은 이를 저장소로 가져오고 해당 체크포인트를 시스템에서 제거합니다. 따라서 색인은 완전히 피하는 것이다.
 
 ## 추가 팁 및 문제 해결 {#troubleshooting}
 
