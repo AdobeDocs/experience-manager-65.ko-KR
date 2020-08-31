@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.5 배포 안내서
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '328'
 ht-degree: 14%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 14%
 # AEM 6.5 배포 사용 안내서 {#deploying}
 
 + [배포 사용 안내서](home.md)
-+ AEM Platform 소개 {#introduction}
-   + [AEM Platform 소개](platform.md)
++ AEM 플랫폼 소개 {#introduction}
+   + [AEM 플랫폼 소개](platform.md)
    + [기술 요구 사항](technical-requirements.md)
    + [AEM 6.5의 스토리지 요소](storage-elements-in-aem-6.md)
-   + [MongoDB가 있는 AEM](aem-with-mongodb.md)
+   + [AEM with MongoDB](aem-with-mongodb.md)
 + AEM 배포 {#deploying}
    + [배포 및 유지 관리](deploy.md)
    + [권장 배포](recommended-deploys.md)
@@ -68,11 +68,12 @@ ht-degree: 14%
    + [AEM 6.5의 이전 버전과의 호환성](backward-compatibility.md)
    + [업그레이드 절차](upgrade-procedure.md)
    + [업그레이드 수행](in-place-upgrade.md)
+   + [오프라인 재색인화를 사용하여 업그레이드 중 다운타임 감소](upgrade-offline-reindexing.md)
    + [레이지 컨텐츠 마이그레이션](lazy-content-migration.md)
    + [CRX2Oak 마이그레이션 도구 사용](using-crx2oak.md)
    + [업그레이드 전 유지 관리 작업](pre-upgrade-maintenance-tasks.md)
    + [업그레이드 후 확인 및 문제 해결](post-upgrade-checks-and-troubleshooting.md)
-   + [사용자 지정 검색 양식 업그레이드](upgrading-custom-search-forms.md)
+   + [사용자 지정 검색 Forms 업그레이드](upgrading-custom-search-forms.md)
    + [지속적인 업그레이드](sustainable-upgrades.md)
    + [코드 및 사용자 정의 업그레이드](upgrading-code-and-customizations.md)
    + [응용 프로그램 서버 설치 업그레이드 단계](app-server-upgrade.md)
@@ -82,19 +83,19 @@ ht-degree: 14%
    + [AEM 6.5의 공용 저장소 재구성](all-repository-restructuring-in-aem-6-5.md)
    + [AEM 6.5의 사이트 저장소 재구성](sites-repository-restructuring-in-aem-6-5.md)
    + [AEM 6.5의 자산 저장소 재구성](assets-repository-restructuring-in-aem-6-5.md)
-   + [AEM 6.5의 Dynamic Media 리포지토리 재구성](dynamicmedia-repository-restructuring-in-aem-6-5.md)
-   + [AEM 6.5의 Forms 리포지토리 재구성](forms-repository-restructuring-in-aem-6-5.md)
-   + [AEM 6.5의 전자 상거래 저장소 재구성](ecommerce-repository-restructuring-in-aem-6-5.md)
-   + [6.5의 AEM Communities에 대한 저장소 재구성](communities-repository-restructuring-in-aem-6-5.md)
+   + [AEM 6.5의 Dynamic Media Repository 재구성](dynamicmedia-repository-restructuring-in-aem-6-5.md)
+   + [AEM 6.5의 Forms 리포지토리 구조조정](forms-repository-restructuring-in-aem-6-5.md)
+   + [AEM 6.5의 전자 상거래 저장소 구조 조정](ecommerce-repository-restructuring-in-aem-6-5.md)
+   + [Repository Recommendations for AEM Communities 6.5](communities-repository-restructuring-in-aem-6-5.md)
 + eCommerce {#ecommerce}
    + [eCommerce 개요](ecommerce.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [마젠토](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
+   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + 우수 사례 {#practices}
    + [배포 우수 사례](best-practices.md)
    + [성능 트리](performance-tree.md)
    + [성능 테스트 모범 사례](best-practices-for-performance-testing.md)
    + [쿼리 및 색인 작성 우수 사례](best-practices-for-queries-and-indexing.md)
-   + [고객을 위한 사용자 인터페이스 권장 사항](ui-recommendations.md)
+   + [고객을 위한 유저 인터페이스 Recommendations](ui-recommendations.md)
    + [성능 및 확장성](performance.md)
