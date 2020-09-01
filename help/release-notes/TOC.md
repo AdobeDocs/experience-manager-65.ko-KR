@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: AEM 6.5 릴리스 노트
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 100%
+source-wordcount: '57'
+ht-degree: 91%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 100%
    + [이전 서비스 팩 릴리스 노트](previous-hotfixes-featurepacks.md)
 + [AEM Sites 릴리스 노트](sites.md)
 + [AEM Assets 릴리스 노트](assets.md)
++ [AEM Forms JEE 패치 설치 프로그램](jee-patch-installer-65.md)
 + [AEM Communities 릴리스 노트](communities-release-notes.md)
 + [더 이상 사용되지 않는 및 제거된 기능](deprecated-removed-features.md)
 + [알려진 문제](known-issues.md)
