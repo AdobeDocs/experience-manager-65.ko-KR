@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: AEM 6.5 릴리스 노트
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 translation-type: tm+mt
-source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
+source-git-commit: 5b4c684e3ebf2f4c37cfe3244c0118cd994093fb
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 91%
@@ -19,7 +19,7 @@ ht-degree: 91%
 + [일반 릴리스 노트](release-notes.md)
 + 서비스 팩 릴리스 노트 {#service-pack}
    + [새로운 기능](new-features-latest-service-pack.md)
-   + [서비스 팩 5 릴리스 노트](sp-release-notes.md)
+   + [서비스 팩 6 릴리스 노트](sp-release-notes.md)
    + [이전 서비스 팩 릴리스 노트](previous-hotfixes-featurepacks.md)
 + [AEM Sites 릴리스 노트](sites.md)
 + [AEM Assets 릴리스 노트](assets.md)
