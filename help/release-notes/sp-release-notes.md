@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6da27dfda2bb504fc7a1de24260e94141f1a22ab
+source-git-commit: f072522706074d5b3f4e4749caf4379ff8fdfcc3
 workflow-type: tm+mt
 source-wordcount: '4407'
 ht-degree: 27%
@@ -154,7 +154,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
    *그림:[!UICONTROL 도움말]메뉴에서[!UICONTROL 도움말]검색*
 
-   * 잘못된 값이 [ [!ICONTROL 사용자] ] 옵션 아래의 [가장 대상] 필드에  입력되고 포커스가 텍스트 필드로 올바르게 이동하는 경우 오류 메시지(NPR-33804).
+   * 잘못된 값이 [ [!UICONTROL 사용자] ] 옵션 아래의 [가장 대상] 필드에  입력되고 포커스가 텍스트 필드로 올바르게 이동하는 경우 오류 메시지(NPR-33804).
 
    ![헤더의 사용자 메뉴](assets/User_aem_header.png)
 
