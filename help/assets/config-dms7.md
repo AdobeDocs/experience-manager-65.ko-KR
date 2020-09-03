@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: d357b5832a3bd95c372c26fd7553eba70583eb6f
 workflow-type: tm+mt
-source-wordcount: '5778'
+source-wordcount: '5944'
 ht-degree: 1%
 
 ---
@@ -71,17 +71,17 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
 
 자세한 [내용은 벌크 에셋 마이그레이션을](/help/assets/bulk-ingest-migrate.md) 위한 기능 팩 18912 설치를 참조하십시오.
 
-## 다이내믹 미디어 구성 만들기 {#configuring-dynamic-media-cloud-services}
+## Cloud Services에서 다이내믹 미디어 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
 **Dynamic Media를 구성하기 전**:Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 Dynamic Media Classic에 [로그인해야](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 암호를 변경할 수 있습니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**다이내믹 미디어 구성을 만들려면**
+**Cloud Services에서 다이내믹 미디어 구성을 만들려면**
 
-1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 아이콘을 누르거나 클릭한 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성을 누릅니다.]**
+1. AEM에서 AEM 로고를 눌러 글로벌 탐색 콘솔에 액세스하고 도구 아이콘을 누른 다음 **[!UICONTROL Cloud Services > Dynamic Media 구성을 누릅니다.]**
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL 전역]** ( **[!UICONTROL 전역]**&#x200B;왼쪽에 있는 폴더 아이콘을 탭하거나 선택하지 않음)을 탭한 다음 **[!UICONTROL 만들기를탭합니다.]**
-1. [다이내믹 미디어 구성 만들기] 페이지에서 제목과 Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. Adobe이 제공 이메일에 제공합니다. 수신하지 못한 경우 지원 센터에 문의하십시오.
+1. [ **[!UICONTROL 동적 미디어 구성]** 만들기] 페이지에서 제목, Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. Adobe이 제공 이메일에 제공합니다. 수신하지 못한 경우 지원 센터에 문의하십시오.
 
    Click **[!UICONTROL Connect to Dynamic Media.]**
 
@@ -89,7 +89,7 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
    >
    >Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 Dynamic Media Classic에 [로그인하여](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 암호를 변경하십시오. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media 클라우드 서비스가 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
 
-1. 연결이 성공하면 다음을 설정할 수도 있습니다.
+1. 연결이 성공하면 다음을 설정합니다. 별표(*)가 있는 제목은 필수입니다.
 
    * **[!UICONTROL 회사]** - Dynamic Media 계정의 이름입니다. 다양한 하위 브랜드, 사업부 또는 다른 스테이징/프로덕션 환경에 대해 여러 개의 Dynamic Media 계정이 있을 수 있습니다.
 
@@ -98,6 +98,7 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
    * **[!UICONTROL 자산 게시]** - 다음 세 가지 옵션 중에서 선택할 수 있습니다.
       * **[!UICONTROL 에셋이 업로드되면 시스템이 에셋을 인제스트하고 URL/포함을 즉시 제공함을 의미합니다]** . 자산을 게시하는 데 필요한 사용자 개입은 없습니다.
       * **[!UICONTROL 활성화]** 시 URL/포함 링크를 제공하기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.
+      * **[!UICONTROL 선택적 게시]** 이 옵션을 사용하면 다이내믹 미디어에 게시되는 폴더를 제어할 수 있으므로 스마트 자르기 또는 다이내믹 표현물과 같은 기능을 사용하거나 미리 보기 위해 AEM에만 게시된 폴더를 사용할 수 있습니다.동일한 에셋은 공개 도메인에 전달되기 위해 Dynamic Media에 게시되지 *않습니다* .<br>이 옵션은 **[!UICONTROL Dynamic Media 클라우드 구성에서]** 설정할 수도 있고, 원하는 경우 폴더의 **[!UICONTROL 속성에서 폴더 수준에서 설정할 수도 있습니다]**.<br>동적 [미디어에서 선택적 게시 작업을 참조하십시오.](/help/assets/selective-publishing.md)<br>나중에 이 구성을 변경하거나 나중에 폴더 수준에서 변경하면 해당 시점부터 업로드한 새 자산에만 변경 사항이 적용됩니다. 빠른 게시 **[!UICONTROL 또는 게시]** 관리 대화 상자에서 수동으로 변경할 때까지 폴더에 있는 기존 자산의 게시 상태는 그대로 유지됩니다 **** .
    * **[!UICONTROL 보안 미리 보기 서버]** - 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM은 안전하게 원격 Dynamic Media 변환에 액세스하고 미리 볼 수 있습니다(이진 파일은 AEM 인스턴스로 다시 전송되지 않음).
 회사 서버 또는 특수 서버를 사용할 특별한 계획이 없는 경우 이 설정을 지정한 대로 유지하는 것이 좋습니다.
 
@@ -106,7 +107,7 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
    * **[!UICONTROL Dynamic Media 동기화 모드]**
       * **[!UICONTROL 기본적으로]** 활성화됨 - 제외용으로 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 기본적으로]** 비활성화됨 - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시해야만 구성이 어떤 폴더에도 적용되지 않습니다.
-선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 속성을 **[!UICONTROL 클릭합니다.]** 세부 **[!UICONTROL 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택합니다. 완료되면 저장을 **[!UICONTROL 누릅니다.]** *기억하십시오.이전에 모든 컨텐츠&#x200B;**동기화를 선택한 경우에는 이러한 세 가지 옵션을 사용할 수**없습니다.*
+선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 속성을 **[!UICONTROL 클릭합니다.]** 세부 **[!UICONTROL 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택합니다. 완료되면 저장을 **[!UICONTROL 누릅니다.]** *기억하십시오.이전에 모든 컨텐츠&#x200B;**동기화를 선택한 경우에는 이러한 세 가지 옵션을 사용할 수**없습니다.* Dynamic [Media의 폴더 수준에서 선택적 게시 작업을 참조하십시오.](/help/assets/selective-publishing.md)
          * **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 항목에 대한 세부 상태는 도구 설명을 통해 표시됩니다.
          * **[!UICONTROL 하위 폴더]** 사용 - Dynamic Media에 동기화할 수 있도록 이 하위 트리에 있는 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
          * **[!UICONTROL 하위 폴더에]** 대해 비활성화됨 - 이 하위 트리의 모든 항목을 Dynamic Media로 동기화에서 제외합니다.
