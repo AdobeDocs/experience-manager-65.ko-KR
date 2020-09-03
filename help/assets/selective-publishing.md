@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6e7368663d18dd0b5b46be9e292dba17577acf70
+source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 2%
@@ -202,6 +202,7 @@ AEM에서 [자산 검색을 참조하십시오.](/help/assets/search-assets.md)
    | Dynamic Media에 게시 | 선택적 게시 | Dynamic Media에만 게시되었습니다. |
    | Dynamic Media에서 게시 취소 | 즉시 또는 활성화 시 | AEM, Dynamic Media 또는 두 가지 모두에서 게시 취소되지 않습니다. |
    | Dynamic Media에서 게시 취소 | 선택적 게시 | Dynamic Media에서만 게시 취소됩니다. |
+
 1. 예약 **[!UICONTROL 에서]**비활성화 시간을 설정합니다.
 | 선택한 일정 | 발생하는 일 |
 | — | — |
