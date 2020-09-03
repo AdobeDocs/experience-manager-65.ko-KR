@@ -3,9 +3,9 @@ title: 스마트 태그 및 검색 관리
 description: 부정확한 스마트 태그를 업데이트하거나 제거하여 태그의 연관성을 향상시킬 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ TBD: This article should be merged into a new, uber article for Smart Tags. Dele
 
 ## 스마트 태그를 사용하여 [!DNL Experience Manager] 검색 결과 이해 {#understandsearch}
 
-기본적으로 [!DNL Experience Manager] 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 적용 스마트 태그의 검색어 중 하나를 찾기 위한 추가 `OR` 조항이 추가됩니다. For example, consider searching for `woman running`. 메타데이터에 키워드 `woman` 만 `running` 이 있는 자산은 기본적으로 검색 결과에 나타나지 않습니다. 그러나 스마트 태그를 사용하거나 둘 중 하나 `woman` 로 태그된 `running` 자산은 이러한 검색 쿼리에 나타납니다. 검색 결과는
+기본적으로 [!DNL Experience Manager] 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 적용 스마트 태그의 검색어 중 하나를 찾기 위한 추가 `OR` 조항이 추가됩니다. For example, consider searching for `woman running`. 메타데이터에 키워드 `woman` 만 `running` 이 있는 자산은 기본적으로 검색 결과에 나타나지 않습니다. 하지만 스마트 태그를 사용하거나 둘 중 하나 `woman` 로 태그가 `running` 지정된 자산이 이러한 검색 쿼리에 나타납니다. 검색 결과는
 
 * 메타데이터에 `woman` 및 키워드가 있는 `running` 자산입니다.
 
@@ -44,3 +44,7 @@ TBD: This article should be merged into a new, uber article for Smart Tags. Dele
 1. 다양한 메타데이터 필드 `woman running` 에서 일치하는 항목을 찾습니다.
 1. 의 일치 `woman running` 를 스마트 태그로 지정합니다.
 1. 은 스마트 태그 `woman` 에 있거나 `running` 있는 것과 일치합니다.
+
+>[!CAUTION]
+>
+>Lucene 색인화가 완료된 경우 스마트 태그를 [!DNL Adobe Experience Manager] 기반으로 한 검색이 예상대로 작동하지 않습니다.
