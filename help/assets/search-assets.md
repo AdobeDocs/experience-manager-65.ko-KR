@@ -4,9 +4,9 @@ description: 필터 패널을 [!DNL Adobe Experience Manager] 사용하여 필�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5bbdc80f199a2af38631a5443c46daae827abb52
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '5858'
+source-wordcount: '5878'
 ht-degree: 1%
 
 ---
@@ -354,6 +354,10 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 1. (선택 사항) 검색 양식을 사용자 정의한 경우 노드를 `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` 다음으로 복사합니다 `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. 변경 사항을 저장합니다.
 
 관련 정보는 Experience Manager의 스마트 태그 [이해](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) 및 스마트 태그 [관리 방법을 참조하십시오](/help/assets/managing-smart-tags.md).
+
+>[!CAUTION]
+>
+>Lucene 색인화가 완료된 경우 스마트 태그 기반 [!DNL Adobe Experience Manager]의 검색은 예상대로 작동하지 않습니다.
 
 ### 필수 메타데이터 {#mandatorymetadata}
 
