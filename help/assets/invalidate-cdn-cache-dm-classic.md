@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 3eacfe8a79d155dddde8908d05b05790d048b0c5
+source-git-commit: 10eef47ec15aef1f17238702520848df4ed36342
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ CDN은 다이내믹 미디어 자산을 캐시하여 빠른 배달을 수행합�
 
 >[!IMPORTANT]
 >
->다음 단계는 AEM 6.5, 서비스 팩 5 또는 이전 버전의 Dynamic Media에만 적용됩니다.
+>다음 단계는 AEM 6.5, 서비스 팩 5(AEM 6.5.5) 또는 이전 버전의 Dynamic Media에만 적용됩니다.<br>AEM 6.5, 서비스 팩 6(AEM 6.5.6) 이상에서 Dynamic Media를 사용하는 경우 Dynamic Media를 통해 [CDN 캐시 무효화에 있는 단계를 따릅니다](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 
 Dynamic Media [Classic(Scene7)의 캐시 개요를 참조하십시오](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
