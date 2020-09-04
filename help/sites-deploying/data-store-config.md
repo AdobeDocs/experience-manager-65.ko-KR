@@ -12,9 +12,9 @@ discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
 translation-type: tm+mt
-source-git-commit: f0ec3415ffef70c985828f17b32dc0d453c1ae7c
+source-git-commit: 93cb84763cfd77b67a5dd1481caab79337f6e7c4
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3423'
 ht-degree: 1%
 
 ---
@@ -190,7 +190,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 1. 파일을 편집하고 설정에 필요한 구성 옵션을 추가합니다.
 1. AEM 시작
 
-### 1.10.x S3 Connector의 새 버전으로 업그레이드 {#upgrading-to-a-new-version-of-the-x-s-connector}
+### 1.10.x S3 Connector의 새 버전으로 업그레이드 {#upgrading-to-a-new-version-of-the-s-connector}
 
 1.10.x S3 커넥터의 새 버전(예: 1.10.0에서 1.10.4로)으로 업그레이드해야 하는 경우 다음 단계를 수행합니다.
 
@@ -204,7 +204,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
    >[!NOTE]
    >
-   >위에 제시된 파일 이름은 일러스트레이션 목적으로만 사용되며 확정적이지 않습니다.
+   >위에 표시된 파일 이름은 일러스트레이션 용도로만 사용됩니다.
 
 1. Adobe 저장소에서 최신 버전의 1.8.x 기능 팩을 [다운로드합니다](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. 컨텐츠를 별도의 폴더에 압축 해제한 다음 로 이동합니다 `jcr_root/libs/system/install/15`.
