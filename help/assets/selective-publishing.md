@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 68e3e80b1c1dda8352ff30989f85f83e82bde261
+source-git-commit: 29f91713f5760ab0b5a557b5c811ef2efee1cc61
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 4%
@@ -114,6 +114,7 @@ ht-degree: 4%
 
 1. [게시 **[!UICONTROL 관리]** ] 페이지의 오른쪽 맨 위에서 [다음]을 **[!UICONTROL 누릅니다.]**
 1. 게시 **[!UICONTROL 관리 - 범위]** 페이지에서 다음 중 하나를 수행합니다.
+
    * 필요한 경우 게시에서 제거할 자산을 하나 이상 선택합니다.
    * [게시 **[!UICONTROL 관리 - 범위]** ] 페이지의 오른쪽 맨 위에서 **[!UICONTROL 게시]** 또는 **[!UICONTROL Dynamic Media에게시를누릅니다.]**
 1. 확인을 **[!UICONTROL 누릅니다.]**
