@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager 6.5 이전 서비스 팩 릴리스 노트
-description: Adobe Experience Manager 6.5 서비스 팩 3 이하에 대한 릴리스 노트입니다.
+title: '[!DNL Adobe Experience Manager] 6.5 이전 서비스 팩 릴리스 노트.'
+description: 6. [!DNL Adobe Experience Manager] 5 서비스 팩 릴리스 노트입니다.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: a842da57a155f56ad3efc268610c167fe140998b
+source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
 workflow-type: tm+mt
-source-wordcount: '11431'
+source-wordcount: '11438'
 ht-degree: 99%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 99%
 
 # 이전 서비스 팩에 포함된 핫픽스 및 기능 팩 {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.5.0 {#experience-manager-6550}
+## [!DNL Adobe Experience Manager] 6.5.5.0 {#experience-manager-6550}
 
 Adobe Experience Manager 6.5.5.0은 **2019년 4월** 6.5 릴리스의 공식 출시 이후 릴리스된 새로운 기능, 주요 고객이 요청한 향상된 기능 및 성능, 안정성, 보안 개선 사항이 포함된 중요한 업데이트입니다. Adobe Experience Manager 6.5 맨 위에 설치할 수 있습니다.
 
-Adobe Experience Manager 6.5.5.0에 도입된 몇 가지 주요 기능 및 개선 사항은 다음과 같습니다.
+Some key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.5.0 includes:
 
-* Adobe Experience Manager 받은 편지함에 표시되는 열 이름을 사용자 지정합니다.
+* CRXDE Lite에 대한 익명 액세스는 허용되지 않습니다. 대신 사용자에게 로그인 화면이 표시됩니다. See [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+
+* Customize the column names that display in [!DNL Adobe Experience Manager] Inbox.
 
 * 페이지 편집기, 코어 구성 요소, RTE 및 관리자 인터페이스와 같은 Experience Manager WCM(웹 컨텐츠 관리)의 다양한 영역에서 액세스 가능성이 개선되었습니다.
 
@@ -69,7 +71,7 @@ Experience Manager 6.5 서비스 팩 5에 소개된 전체 기능, 주요 특징
 * 사용자가 동일한 페이지에서 레이아웃 컨테이너를 복사하고 붙여넣으면 레이아웃 컨테이너의 구성 요소가 표시되지 않습니다(NPR-33648).
 * Dispatcher 상태 확인은 로그 파일에 `Invalid cookie header` 경고 메시지를 표시합니다(NPR-33629).
 * PreferencesServlet에 반영된 XSS(NPR-33438).
-* 익명 사용자는 CRX DE Lite 기능(GRANITE-27790)에 액세스할 수 있습니다.
+* 익명 사용자는 CRXDE Lite 기능(GRANITE-27790)에 액세스할 수 있습니다.
 
 ### [!DNL Assets] {#assets-6550}
 
