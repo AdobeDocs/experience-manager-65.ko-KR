@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 097109edcf66cc06460c9d962037e49613e3405b
+source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '822'
 ht-degree: 2%
 
 ---
@@ -78,7 +78,7 @@ AEM Communities은 이메일을 사용합니다.
 
 ## AEM Communities 이메일 구성 {#aem-communities-email-configuration}
 
-기본 [메일 서비스가](#default-mail-service-configuration) 구성되면 릴리스에 포함된 OSGi 구성의 기존 두 `AEM Communities Email Reply Configuration` 개 인스턴스가 작동합니다.
+기본 메일 서비스 [가 구성되면](#default-mail-service-configuration) `AEM Communities Email Reply Configuration` 릴리스에 포함된 OSGi 구성의 기존 두 인스턴스가 작동합니다.
 
 이메일로 회신을 허용할 때는 구독 인스턴스만 추가로 구성해야 합니다.
 
@@ -112,7 +112,7 @@ AEM Communities은 이메일을 사용합니다.
 
 * 회신 **이메일에서 게시물** 만들기가 올바른지 확인합니다 `unchecked`.
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![chlimage_1-100](assets/configure-email.png)
 
 ### 가입 구성 {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ AEM Communities은 이메일을 사용합니다.
 * 편집 아이콘을 선택합니다.
 * 이름이 **있는지** 확인합니다 `subscriptions-email`.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/configure-email-subscription.png)
 
 * **[!UICONTROL 이름]**
 
@@ -138,9 +138,10 @@ AEM Communities은 이메일을 사용합니다.
 * **[!UICONTROL 제목의 최대 길이]**
 
    추적기 ID가 제목 줄에 추가된 경우 추적된 ID를 제외하고 제목의 최대 길이로, 그 뒤에 트리밍됩니다. 추적된 ID 정보가 손실되지 않도록 가능한 한 작게 표시되어야 합니다. 기본값은 200입니다.
-* **[!UICONTROL 이메일 &quot;보낸 사람&quot; 주소]**
 
-   *(필수)* 알림 이메일이 배달될 주소입니다. 기본 메일 서비스에 대해 동일한 **SMTP 사용자** 가 [지정된 것 같습니다](#configuredefaultmailservice). 기본값은 `no-reply@example.com`입니다.
+* **[!UICONTROL &quot;회신&quot; 이메일 주소]**
+
+   &quot;회신&quot; 이메일 주소로 사용되는 주소. 기본값은 `communities@adobe.com`입니다.
 
 * **[!UICONTROL 회신 구분 기호]**
 
@@ -154,7 +155,7 @@ AEM Communities은 이메일을 사용합니다.
 
    추적기 ID가 메시지 본문에 추가된 경우 이 접두사가 사용됩니다. 기본값은 `Please do not remove this:`입니다.
 
-* **[!UICONTROL HTML로 이메일]**: 이 확인란을 선택하면 컨텐츠 유형의 이메일이 로 설정됩니다 `"text/html;charset=utf-8"`. 기본값은 선택되어 있습니다.
+* **[!UICONTROL HTML로 이메일]**:이 확인란을 선택하면 컨텐츠 유형의 이메일이 로 설정됩니다 `"text/html;charset=utf-8"`. 기본값은 선택되어 있습니다.
 
 * **[!UICONTROL 기본 사용자 이름]**
 
@@ -208,13 +209,13 @@ AEM Communities은 이메일을 사용합니다.
 
 새 폴링 구성이 저장되면, 프로토콜을 에서 `POP3` `emailreply`
 
-CRXDE [Lite 사용](../../help/sites-developing/developing-with-crxde-lite.md):
+CRXDE Lite [사용](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * 관리자 권한으로 기본 게시자에 로그인하고 https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importers/polling [으로 이동합니다](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * 새로 만든 구성을 선택하고 다음 속성을 수정합니다.
 
-   * **feedType**: 다음으로 `pop3s` 바꾸기 **`emailreply`**
-   * **소스**: 소스 프로토콜 `pop3s://` 을 **`emailreply://`**
+   * **feedType**:다음으로 `pop3s` 바꾸기 **`emailreply`**
+   * **소스**:소스 프로토콜 `pop3s://` 을 **`emailreply://`**
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
