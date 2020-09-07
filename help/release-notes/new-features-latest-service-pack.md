@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.5 서비스 팩 6의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8980348736825f45647a91062b1fe4e4a790b8f1
+source-git-commit: f8a072e0ab24d542a1bec8faf03da57f99747102
 workflow-type: tm+mt
-source-wordcount: '2438'
-ht-degree: 70%
+source-wordcount: '2462'
+ht-degree: 69%
 
 ---
 
@@ -126,6 +126,8 @@ AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함되어 있는 경우, �
 * 향상된 화면 판독기 지원.
 
 #### Other key enhancements (6.5.5.0) {#other-enhancements-sites}
+
+* CRXDE Lite에 대한 익명의 액세스는 보안을 강화하도록 허용되지 않습니다. 대신 사용자에게 로그인 화면이 표시됩니다. See [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 * 페이지 트리를 복사하거나 붙여넣을 때 이제 루트 페이지를 붙여넣거나 루트 페이지를 트리의 하위 페이지와 함께 붙여넣을 수 있습니다.
 
