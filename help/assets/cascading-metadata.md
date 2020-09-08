@@ -3,9 +3,9 @@ title: CSS(Cascading Metadata in [!DNL Adobe Experience Manager Assets])
 description: 이 문서에서는 자산의 CSS 메타데이터를 정의하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: c92215a6cb1f4c3d02e9a5f5b3fd36c65fc002ce
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 자산의 메타데이터 정보를 캡처할 때 사용자는 사용 가능한 다양한 필드에 정보를 제공합니다. 다른 필드에서 선택한 옵션에 따라 특정 메타데이터 필드 또는 필드 값을 표시할 수 있습니다. 이러한 메타데이터 조건부 표시를 계단식 메타데이터라고 합니다. 즉, 특정 메타데이터 필드/값과 하나 이상의 필드 및/또는 해당 값 간에 종속성을 만들 수 있습니다.
 
 메타데이터 스키마를 사용하여 계단식 메타데이터를 표시하는 규칙을 정의할 수 있습니다. 예를 들어 메타데이터 스키마에 자산 유형 필드가 포함되어 있는 경우 사용자가 선택하는 자산 유형에 따라 표시할 관련 필드 세트를 정의할 수 있습니다.
+
+>[!CAUTION]
+>
+>콘텐츠 조각에 대해서는 계단식 메타데이터가 지원되지 않습니다.
 
 다음은 계단식 메타데이터를 정의할 수 있는 몇 가지 사용 사례입니다.
 
@@ -36,7 +40,7 @@ ht-degree: 0%
 선택한 자산 유형에 관계없이 저작권 정보를 필수 필드로 표시합니다.
 
 1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL >]** 자산 **[!UICONTROL >]** 메타데이터 스키마 **[!UICONTROL 로]**&#x200B;이동합니다.
-1. 스키마 **[!UICONTROL 양식]** 페이지에서 스키마 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 편집을]** 클릭하여 스키마를 편집합니다.
+1. 스키마 **[!UICONTROL Forms]** 페이지에서 스키마 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]** 을 클릭하여 스키마를 편집합니다.
 
    ![select_form](assets/select_form.png)
 
@@ -109,8 +113,8 @@ ht-degree: 0%
 
    ![비디오 에셋용 CSS 메타데이터](assets/video_asset.png)
 
-   *그림: 비디오에 대한 CSS 메타데이터*
+   *그림:비디오에 대한 CSS 메타데이터*
 
    ![문서 에셋에 대한 CSS 메타데이터](assets/doc_type_fields.png)
 
-   *그림: 문서의 메타데이터 계단식 생성*
+   *그림:문서에 대한 CSS 메타데이터*
