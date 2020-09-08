@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 24d817bf8e52136980783ef14cea8531519ee622
+source-git-commit: cbc43991143397c8bc0080b7402bfdc664522ab8
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1910'
 ht-degree: 3%
 
 ---
@@ -180,7 +180,7 @@ AEM Forms에는 몇 가지 필수 구성 및 선택 구성이 있습니다. 필�
 
 #### 디스패처 구성 {#configure-dispatcher}
 
-Dispatcher가 AEM용 캐싱 및 로드 밸런싱 도구를 사용하고 있습니다. AEM Dispatcher는 또한 AEM 서버를 공격으로부터 보호합니다. 엔터프라이즈급 웹 서버와 함께 Dispatcher를 사용하여 AEM 인스턴스의 보안을 강화할 수 있습니다. Dispatcher [를](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html을 참조하십시오.)사용하는 경우 AEM Forms에 대해 다음 구성을 수행합니다.
+Dispatcher는 엔터프라이즈급 웹 서버와 함께 사용할 수 있는 Adobe Experience Manager의 캐싱 및/또는 로드 밸런싱 도구입니다. Dispatcher [를](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html을 참조하십시오.)사용하는 경우 AEM Forms에 대해 다음 구성을 수행합니다.
 
 1. AEM Forms에 대한 액세스 권한 구성:
 
@@ -241,6 +241,6 @@ AEM 양식은 Adobe Marketing Cloud 솔루션인 Adobe Target과 통합되어 �
 AEM Forms 데이터 캡처 기능을 사용하도록 환경을 구성했습니다. 이제 이 기능을 사용하기 위한 다음 단계는 다음과 같습니다.
 
 * [간단한 적응형 양식 만들기](/help/forms/using/create-your-first-adaptive-form.md)
-* [간단한 PDF 양식 작성](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+* [간단한 PDF 양식 만들기](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [HTML5 Forms 소개](/help/forms/using/introduction.md)
 
