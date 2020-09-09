@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
+source-git-commit: 5d33b48000cf607eb77c626ec539280cadab378e
 workflow-type: tm+mt
-source-wordcount: '2740'
+source-wordcount: '2889'
 ht-degree: 0%
 
 ---
@@ -233,9 +233,9 @@ categories 속성을 사용하여 포함할 클라이언트 라이브러리 폴�
 * **유형:** 문자열[]
 * **값:** 포함할 노드의 categories 속성 값 `cq:ClientLibraryFolder` 입니다.
 
-<!-- #### Using Embedding to Minimize Requests {#using-embedding-to-minimize-requests}
+#### 포함 기능을 사용하여 요청 최소화 {#using-embedding-to-minimize-requests}
 
-In some cases you may find that the final HTML generated for typical page by your publish instance includes a relatively large number of `<script>` elements, particularly if your site is using client context information for analaytics or targeting. For example, in a non-optimized project you might find the following series of `<script>` elements in the HTML for a page:
+경우에 따라 게시 인스턴스별로 일반적인 페이지에 대해 생성된 최종 HTML에 비교적 많은 수의 `<script>` 요소가 포함되어 있습니다. 특히 사이트에서 분석 또는 타깃팅을 위해 클라이언트 컨텍스트 정보를 사용하고 있는 경우입니다. 예를 들어, 최적화되지 않은 프로젝트에서는 페이지의 HTML에 다음과 같은 일련의 `<script>` 요소를 찾을 수 있습니다.
 
 ```xml
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery.js"></script>
@@ -243,13 +243,12 @@ In some cases you may find that the final HTML generated for typical page by you
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/shared.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/underscore.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
-In such cases, it can be useful to combine all the required client library code in to a single file so that the number of back and forth requests on page load is reduced. To do this you can `embed` the required libraries into you app-specific client library using the embed property of the `cq:ClientLibraryFolder` node.
+이러한 경우 필요한 모든 클라이언트 라이브러리 코드를 하나의 파일로 결합하여 페이지 로드 시 요청이 오고 나가는 횟수를 줄이는 것이 유용할 수 있습니다. 이렇게 하려면 노드의 embed 속성 `embed` 을 사용하여 필요한 라이브러리를 앱별 클라이언트 라이브러리에 포함할 수 `cq:ClientLibraryFolder` 있습니다.
 
-The following client library categories are incuded with AEM. You should embed only those that are required for he functioning of your particular site. However, **you should maintain the order listed here**:
+다음 클라이언트 라이브러리 카테고리는 AEM에 포함됩니다. 특정 사이트의 기능에 필요한 것만 포함해야 합니다. 그러나 여기에 나와 **있는 주문을 유지해야 합니다**.
 
 1. `browsermap.standard`
 1. `browsermap`
@@ -269,10 +268,6 @@ The following client library categories are incuded with AEM. You should embed o
 1. `cq.collab.toggle`
 1. `cq.collab.forum`
 1. `cq.cleditor`
-
-EDITOR NOTE: removed as requested on CQDOC-16765
-
--->
 
 #### CSS 파일의 경로 {#paths-in-css-files}
 
