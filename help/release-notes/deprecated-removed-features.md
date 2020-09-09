@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Manager 6.5 릴리스에서 사용 중단되거나 제거된 기능.
+title: Adobe Experience Manager 6.5 릴리스의 가치 하락 및 제거 기능.
 description: Adobe Experience Manager 6.5의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 76%
+source-wordcount: '1722'
+ht-degree: 74%
 
 ---
 
@@ -48,7 +48,8 @@ AEM 기능 분리 또는 교체를 전달하려면 다음 규칙이 적용됩니
 | 개발자 | `Granite.Sling.js` 클라이언트 라이브러리. Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 Granite.Sling.js 클라이언트 라이브러리를 개선할 계획이 없습니다. | 코드를 리팩토링하는 라이브러리 기능에 의존하고 있는 고객들은 더 이상 해당 기능을 사용할 수 없습니다. |
 | 개발자 | YUI를 사용하여 JavaScript 클라이언트 라이브러리를 압축/축소할 수 있습니다. Adobe는 향후 YUI 라이브러리를 업데이트할 계획이 없습니다. AEM 6.4가 출시되기 이전까지, YUI는 기본적으로 GCC(Google Closure Compiler)로 전환할 수 있는 옵션과 함께 JavaScript를 축소할 수 있었습니다. AEM 6.5부터는 GCC가 기본값입니다. | 고객은 이러한 구현에 따라 GCC로 전환하기 위해 AEM 6.5로 업그레이드하는 것이 좋습니다. |
 | 개발자 | CRXDE Lite의 클래식 UI 대화 상자 편집기. Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 클래식 UI 대화 상자 편집기를 개선할 계획이 없습니다. | 교체 작업이 없습니다. |
-| 양식 | AEM Mobile와의 AEM Forms 통합은 더 이상 사용되지 않습니다. | 교체할 수 없습니다. |
+| 양식 | AEM Mobile와의 AEM Forms 통합은 더 이상 사용되지 않습니다. | 교체할 수 없습니다. |  | 개발자 | CRXDE Lite의 클래식 UI 대화 상자 편집기. Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 클래식 UI 대화 상자 편집기를 개선할 계획이 없습니다. | 교체 작업이 없습니다. |
+| 양식 | 클라이언트 라이브러리 로대시/밑줄 표시 Adobe은 배포의 일부로 배송된 로대시/밑줄 클라이언트 라이브러리를 추가 유지 및 업데이트할 계획이 없습니다(빠른 시작). | Adobe은 코드에 로대시/밑줄이 필요한 고객이 프로젝트 코드 베이스에 추가하도록 권장합니다. |
 
 ## 제거된 기능 {#removed-features}
 
