@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
+source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 2%
@@ -112,7 +112,7 @@ AEM Communities은 이메일을 사용합니다.
 
 * 회신 **이메일에서 게시물** 만들기가 올바른지 확인합니다 `unchecked`.
 
-![chlimage_1-100](assets/configure-email.png)
+![configure-email-response](assets/configure-email-reply.png)
 
 ### 가입 구성 {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ AEM Communities은 이메일을 사용합니다.
 * 편집 아이콘을 선택합니다.
 * 이름이 **있는지** 확인합니다 `subscriptions-email`.
 
-   ![chlimage_1-101](assets/configure-email-subscription.png)
+   ![configure-email-subscription](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL 이름]**
 
@@ -141,7 +141,7 @@ AEM Communities은 이메일을 사용합니다.
 
 * **[!UICONTROL &quot;회신&quot; 이메일 주소]**
 
-   &quot;회신&quot; 이메일 주소로 사용되는 주소. 기본값은 `communities@adobe.com`입니다.
+   &quot;회신&quot; 이메일 주소로 사용되는 주소. 기본값은 `no-reply@example.com`입니다.
 
 * **[!UICONTROL 회신 구분 기호]**
 
