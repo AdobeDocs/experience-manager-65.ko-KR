@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5baef6f4d570aff738444e0620b982729b897f89
+source-git-commit: 8633216807061c73f4bc692d13f9eba37845cffc
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 66%
+source-wordcount: '2028'
+ht-degree: 65%
 
 ---
 
@@ -152,7 +152,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 ### 서비스 계정(JWT) 연결 만들기 {#createnewintegration}
 
-Adobe 개발자 콘솔에서 프로젝트 및 API는 브랜드 포털 테넌트(조직) 수준에서 구성됩니다. API를 구성하면 Adobe 개발자 콘솔에 서비스 계정(JWT) 연결이 만들어집니다. 키 쌍(개인 및 공개 키)을 생성하거나 공개 키를 업로드하여 API를 구성하는 두 가지 방법이 있습니다. 브랜드 포털에서 AEM Assets을 구성하려면 AEM Assets에서 공개 인증서(공개 키)를 생성하고 공개 키를 업로드하여 Adobe 개발자 콘솔에서 자격 증명을 만들어야 합니다. 이 공개 키는 선택한 브랜드 포털 테넌트에 대한 API를 구성하는 데 사용되고 서비스 계정에 대한 자격 증명 및 JWT 페이로드를 생성합니다. 이러한 자격 증명은 AEM Assets에서 IMS 계정을 구성하는 데 추가로 사용됩니다. IMS 계정이 구성되면 AEM Assets에서 브랜드 포털 클라우드 서비스를 구성할 수 있습니다.
+Adobe 개발자 콘솔에서 프로젝트 및 API는 브랜드 포털 테넌트(조직) 수준에서 구성됩니다. API를 구성하면 Adobe 개발자 콘솔에 서비스 계정(JWT) 연결이 만들어집니다. 키 쌍(개인 및 공개 키)을 생성하거나 공개 키를 업로드하여 API를 구성하는 두 가지 방법이 있습니다. 브랜드 포털에서 AEM Assets을 구성하려면 AEM Assets에서 공개 인증서(공개 키)를 생성하고 공개 키를 업로드하여 Adobe 개발자 콘솔에서 자격 증명을 만들어야 합니다. 이 공개 키는 선택한 브랜드 포털 테넌트에 대한 API를 구성하는 데 사용되며 서비스 계정에 대한 자격 증명과 JWT 페이로드를 생성합니다. 이러한 자격 증명은 AEM Assets에서 IMS 계정을 구성하는 데 추가로 사용됩니다. IMS 계정이 구성되면 AEM Assets에서 브랜드 포털 클라우드 서비스를 구성할 수 있습니다.
 
 서비스 계정 자격 증명과 JWT 페이로드를 생성하려면 다음 단계를 수행합니다.
 
@@ -357,6 +357,8 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
    >[!NOTE]
    >
    >복제 에이전트를 비활성화하지 마십시오. 이로 인해 일부 자산의 복제가 실패할 수 있습니다.
+   >
+   >시간 초과 오류를 방지하도록 네 개의 복제 에이전트가 모두 구성되어 있는지 확인합니다. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 AEM Assets 작성자 인스턴스가 Brand Portal을 사용하여 성공적으로 구성되었으므로 이제 다음 작업을 수행할 수 있습니다.
 
