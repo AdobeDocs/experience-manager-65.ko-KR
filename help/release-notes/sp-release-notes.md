@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 32addae877604a242c97eac3ed81bbc2f55ec60a
+source-git-commit: 622fbe5eba3e737ebc25e6c57d7ed68d7bff9555
 workflow-type: tm+mt
 source-wordcount: '4423'
 ht-degree: 26%
@@ -209,7 +209,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
    >[!NOTE]
    >
-   >[!DNL Experience Manager] 6.5 서비스 팩 6로 업그레이드하면 6.5 GA에서 [!DNL Experience Manager] 6.5 서비스 팩 5 또는 이전 버전을 설치할 때 런타임 복사본이 삭제되는 경우 런타임 사본이 검색되지 않습니다. 런타임 복사본을 검색하려면 HTTP API를 사용하여 워크플로우 모델의 디자인 시간 사본을 런타임 복사본과 동기화합니다.
+   >6. [!DNL Experience Manager] 5 서비스 팩 6로 업그레이드하면 6.5 GA에서 [!DNL Experience Manager] 6.5 서비스 팩 5 또는 이전 버전을 설치할 때 런타임 복사본이 삭제되는 경우 런타임 사본이 검색되지 않습니다. 런타임 복사본을 검색하려면 HTTP API를 사용하여 워크플로우 모델의 디자인 시간 사본을 런타임 복사본과 동기화합니다.
    `<designModelPath>/jcr:content.generate.json`.
 
 **다이내믹 미디어에서 해결된 문제**
@@ -434,7 +434,7 @@ JEE의 Experience Manager Forms용 누적 설치 프로그램 설치 및 배포 
 
 ### UberJar {#uber-jar}
 
-Experience Manager 6.5.6.0용 UberJar는 [Adobe Public Maven 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6/)에서 사용할 수 있습니다.
+Experience Manager 6.5.6.0용 UberJar는 [Adobe Public Maven 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/)에서 사용할 수 있습니다.
 
 Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/help/sites-developing/ht-projects-maven.md)을 참조하여 프로젝트 POM에 다음 종속성을 포함하십시오.
 
@@ -442,7 +442,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.5.6</version>  
+      <version>6.5.6-1.0</version>  
       <scope>provided</scope>
 </dependency>
 ```
