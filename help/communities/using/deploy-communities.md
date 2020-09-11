@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e05502b590fb2c7c36919f94611efe999262d32
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 1%
@@ -150,7 +150,7 @@ AEM Communities SCORM 엔진은 [활성화](/help/communities/overview.md#enable
 
 **SCORM 패키지를 설치하려면**
 
-1. 패키지 공유에서 [cq-social-scorm-package, 버전 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg)을 설치합니다
+1. 패키지 공유에서 [cq-social-scorm-package, 버전 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) 설치
 1. cq 인스턴스 `/libs/social/config/scorm/database_scormengine_data.sql` 에서 다운로드하고 mysql 서버에서 실행하여 업그레이드된 scormEngineDB 스키마를 만듭니다.
 1. 게시자 `/content/communities/scorm/RecordResults` 의 CSRF 필터에 있는 제외된 경로 속성에 `https://<hostname>:<port>/system/console/configMgr` 추가를 참조하십시오.
 
