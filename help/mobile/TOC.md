@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 모바일 사용 안내서
+breadcrumb-title: Mobile Guide
 user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 7%
@@ -49,14 +50,14 @@ ht-degree: 7%
    + [컨텐츠 전달](develop-content-as-a-service.md)
 + 온디맨드 서비스 앱 관리 {#administering}
    + [AEM Mobile 온디맨드](aem-mobile.md)
-   + [AEM Mobile SetUp](aem-mobile-setup.md)
+   + [AEM Mobile 설정](aem-mobile-setup.md)
    + [사용자 및 사용자 그룹 구성](aem-mobile-configure-users.md)
    + [Preflight를 사용하여 미리 보기](aem-mobile-manage-ondemand-services.md)
    + [모바일 앱](administer-mobile-apps.md)
    + [모델 개요](model-management.md)
    + [스페이스 및 엔티티](spaces-and-entities.md)
    + [컬렉션 관리](mobile-on-demand-managing-collections.md)
-+ Adobe PhoneGap Enterprise 작성 {#author-phonegap}
++ Authoring Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [앱 메타데이터 편집](phonegap-editmetadata.md)
    + [앱 정의](phonegap-app-definitions.md)
@@ -65,7 +66,7 @@ ht-degree: 7%
    + [모바일 애플리케이션 제작](phonegap-authoring-apps.md)
    + [앱 타일 관리](phonegap-app-details-tile.md)
    + [AEM Mobile 콘텐츠 개인화](phonegap-aem-mobile-content-personalization.md)
-+ Adobe PhoneGap Enterprise 개발 {#developphonegap}
++ Developing Adobe PhoneGap Enterprise {#developphonegap}
    + [PhoneGap](developing-in-phonegap.md)
    + [모바일 애플리케이션 구축](building-app-mobile-phonegap.md)
    + [알림 푸시](phonegap-push-notifications.md)
@@ -75,7 +76,7 @@ ht-degree: 7%
    + [PhoneGap CLI를 사용하여 앱 개발](phonegap-apps-pg-cli.md)
    + [즉시 사용 가능한 앱 핸들러](contentsync-app-handlers.md)
    + [앱 콘솔을 사용하여 앱 만들기 및 편집](phonegap-apps-console.md)
-   + [하이브리드 앱이 AEM Mobile용으로 준비되었습니까?](phonegap-adding-content-to-imported-app.md)
+   + [AEM Mobile을 위한 하이브리드 앱 준비](phonegap-adding-content-to-imported-app.md)
    + [장치 기능 액세스](phonegap-access-device-features.md)
    + [모바일 애플리케이션에 Adobe Analytics 추가](phonegap-add-analytics-to-apps.md)
    + [모바일 앱용 페이지 템플릿](phonegap-apps-arch-page-templates.md)
@@ -85,11 +86,11 @@ ht-degree: 7%
    + [AEM PhoneGap 시작](starting-aem-phonegap-app.md)
    + [모바일 앱 테스트](develop-mobile-apps-testing.md)
    + [앱 구조](phonegap-structure-an-app.md)
-   + [Adobe 모바일 Analytics을 사용하여 앱 성능 추적](phonegap-intro-to-app-analytics.md)
-+ Adobe PhoneGap Enterprise 관리 {#administering-phonegap}
+   + [Adobe 모바일 분석을 통해 앱 성능 추적](phonegap-intro-to-app-analytics.md)
++ Adobe PhoneGap 엔터프라이즈 관리 {#administering-phonegap}
    + [모바일 빠른 시작](phonegap-mobile-quickstart.md)
-   + [AEM과 Adobe PhoneGap Enterprise용 컨텐츠 관리](administer-phonegap.md)
-   + [Adobe PhoneGap 빌드 Cloud Service 구성](configure-phonegap-build-cloud.md)
+   + [AEM과 Adobe PhoneGap 엔터프라이즈를 위한 컨텐츠 관리](administer-phonegap.md)
+   + [Adobe PhoneGap Build Cloud Service 구성](configure-phonegap-build-cloud.md)
    + [레퍼러 필터를 설정하여 비어 있음](setting-referrer-filter-empty.md)
    + [Adobe Mobile Services Cloud Service 구성](configure-adobe-mobile-cloud-service.md)
    + [사용자 및 사용자 그룹 구성](configure-users-groups.md)
