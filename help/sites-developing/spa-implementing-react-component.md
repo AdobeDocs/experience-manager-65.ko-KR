@@ -1,8 +1,8 @@
 ---
-title: SPA에 대한 반응 구성 요소 구현
-seo-title: SPA에 대한 반응 구성 요소 구현
-description: 이 문서에서는 AEM SPA Editor와 연동되도록 간단하고 기존 React 구성 요소를 조정하는 방법에 대한 예를 제공합니다.
-seo-description: 이 문서에서는 AEM SPA Editor와 연동되도록 간단하고 기존 React 구성 요소를 조정하는 방법에 대한 예를 제공합니다.
+title: SPA에 대한 React 구성 요소 구현
+seo-title: SPA에 대한 React 구성 요소 구현
+description: 이 문서에서는 AEM SPA Editor와 연동되는 간단하고 기존 Responsive 구성 요소를 적용하는 방법을 설명합니다.
+seo-description: 이 문서에서는 AEM SPA Editor와 연동되는 간단하고 기존 Responsive 구성 요소를 적용하는 방법을 설명합니다.
 uuid: ae6a0a6f-0c3c-4820-9b58-c2a85a9f5291
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,19 @@ content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 8%
 
 ---
 
 
-# SPA에 대한 반응 구성 요소 구현{#implementing-a-react-component-for-spa}
+# SPA에 대한 React 구성 요소 구현{#implementing-a-react-component-for-spa}
 
-단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 구축하고, 작성자는 AEM 내에서 SPA 프레임워크를 사용하여 구축한 사이트에 대한 컨텐츠를 완벽하게 편집하고자 합니다.
+단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 구축하고, 작성자는 SPA 프레임워크를 사용하여 구축된 사이트에서 AEM 내에서 컨텐츠를 완벽하게 편집하고자 합니다.
 
-SPA 작성 기능은 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 AEM SPA Editor와 연동되도록 간단하고 기존 React 구성 요소를 조정하는 방법에 대한 예를 제공합니다.
+SPA 저작 기능은 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 AEM SPA Editor와 연동되는 간단하고 기존 Responsive 구성 요소를 적용하는 방법을 설명합니다.
 
 >[!NOTE]
 >
@@ -28,7 +31,7 @@ SPA 작성 기능은 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 �
 
 ## 소개 {#introduction}
 
-AEM에서 요구하는 간단한 경량 계약 덕분에 SPA와 SPA Editor 사이에 구축된 AEM에서 기존 Javascript 애플리케이션을 취하여 AEM의 SPA와 함께 사용하는 데 적응하는 것은 매우 간단합니다.
+SPA와 SPA Editor가 AEM에서 요구하는 간단한 경량 계약 덕분에 기존의 Javascript 애플리케이션을 도입하여 AEM에서 SPA와 함께 사용할 수 있도록 적응하는 것은 매우 간단합니다.
 
 이 문서에서는 We.Retail Journal 샘플 SPA의 날씨 구성 요소의 예를 설명합니다.
 
@@ -37,7 +40,7 @@ AEM에서 요구하는 간단한 경량 계약 덕분에 SPA와 SPA Editor 사�
 >[!CAUTION]
 >이 문서에서는 데모용으로만 [We.Retail Journal 앱을](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) 사용합니다. 어떤 프로젝트 작업에도 사용해서는 안 됩니다.
 >
->모든 AEM 프로젝트는 React 또는 Angular를 사용하여 SPA 프로젝트를 [지원하고 SPA SDK를 활용하는 AEM Project 원형형을 활용해야](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)합니다.
+>모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)(React or Angular)을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 프로젝트 전형(Pretype)을 활용해야 합니다.
 
 ## 날씨 구성 요소 {#the-weather-component}
 
@@ -69,14 +72,14 @@ SPA 편집기에서 SPA의 컨텐츠를 작성할 때 날씨 구성 요소는 �
 
 We.Retail 저널 애플리케이션에서 사용자 지정된 날씨 구성 요소( `Weather.js`)의 코드 검토:
 
-* **16행**: 필요한 경우 반응형 개방형 날씨 위젯이 로드됩니다.
-* **46호선**: 이 `MapTo` 함수는 AEM 구성 요소를 해당 AEM 구성 요소에 연결하여 SPA 편집기에서 편집할 수 있도록 합니다.
+* **16행**:필요한 경우 반응형 개방형 날씨 위젯이 로드됩니다.
+* **46호선**:이 `MapTo` 함수는 SPA 편집기에서 편집할 수 있도록 해당 AEM 구성 요소에 이 React 구성 요소를 연결합니다.
 
-* **22-29호선**: 도시 `EditConfig` 가 채워졌는지 확인하고 비어 있는 경우 값을 정의하는 것이 정의됩니다.
+* **22-29호선**:도시 `EditConfig` 가 채워졌는지 확인하고 비어 있는 경우 값을 정의하는 것이 정의됩니다.
 
-* **31-44행**: Weather 구성 요소는 `Component` 클래스를 확장하고 React Open Weather 구성 요소에 대한 NPM 사용 설명서에 정의된 대로 필요한 데이터를 제공하고 구성 요소를 렌더링합니다.
+* **31-44행**:Weather 구성 요소는 `Component` 클래스를 확장하고 React Open Weather 구성 요소에 대한 NPM 사용 설명서에 정의된 대로 필요한 데이터를 제공하고 구성 요소를 렌더링합니다.
 
-```
+```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~ Copyright 2018 Adobe Systems Incorporated
  ~
@@ -94,7 +97,7 @@ We.Retail 저널 애플리케이션에서 사용자 지정된 날씨 구성 요�
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 import React, {Component} from 'react';
 import ReactWeather from 'react-open-weather';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Weather.css');
 
