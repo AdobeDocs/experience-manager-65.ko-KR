@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1483'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의
 
 Apache Solr 다운로드 및 설치:
 
-* [버전 4.10](https://archive.apache.org/dist/lucene/solr/4.10.4/) 또는 [버전 5.x](https://archive.apache.org/dist/lucene/solr/5.5.3/)
+* [버전 7.0](https://archive.apache.org/dist/lucene/solr/7.0.0/)
 
 * 솔러는 Java 1.7 이상이 필요합니다.
 * 서비스가 필요 없음
