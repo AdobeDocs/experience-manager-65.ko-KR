@@ -1,6 +1,6 @@
 ---
-title: AEM에서 SPA 시작 - 각도
-seo-title: AEM에서 SPA 시작 - 각도
+title: AEM에서 SPA 시작하기 - Angular
+seo-title: AEM에서 SPA 시작하기 - Angular
 description: 이 문서에서는 샘플 SPA 애플리케이션과 함께 설치되는 방법을 설명하며 Angular 프레임워크를 사용하여 신속하게 자체 SPA를 익힐 수 있도록 해 줍니다.
 seo-description: 이 문서에서는 샘플 SPA 애플리케이션과 함께 설치되는 방법을 설명하며 Angular 프레임워크를 사용하여 신속하게 자체 SPA를 익힐 수 있도록 해 줍니다.
 uuid: d3d2fa63-68c8-4a48-8c8d-045f4f8db937
@@ -10,20 +10,23 @@ content-type: reference
 discoiquuid: 9cdd7648-d67e-414d-aedf-a5687da39326
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+workflow-type: tm+mt
+source-wordcount: '1053'
+ht-degree: 3%
 
 ---
 
 
-# AEM에서 SPA 시작 - 각도{#getting-started-with-spas-in-aem-angular}
+# AEM에서 SPA 시작하기 - Angular{#getting-started-with-spas-in-aem-angular}
 
-단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 구축하고, 작성자는 AEM 내에서 SPA 프레임워크를 사용하여 구축한 사이트에 대한 컨텐츠를 완벽하게 편집하고자 합니다.
+단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 구축하고, 작성자는 SPA 프레임워크를 사용하여 구축된 사이트에서 AEM 내에서 컨텐츠를 완벽하게 편집하고자 합니다.
 
-SPA 작성 기능은 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합니다. 이 문서는 Angular 프레임워크에 간소화된 SPA 애플리케이션을 제시하며, 이를 어떻게 구성하는지에 대해 설명하며, SPA를 신속하게 설치하여 바로 사용할 수 있습니다.
+SPA 저작 기능은 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합니다. 이 문서는 Angular 프레임워크에 간소화된 SPA 애플리케이션을 제시하며, 이를 어떻게 구성하는지에 대해 설명하며, SPA를 신속하게 설치하여 바로 사용할 수 있습니다.
 
 >[!NOTE]
 >
->이 문서는 Angular 프레임워크를 기반으로 합니다. Responsive 프레임워크에 대한 해당 문서는 AEM의 SPA [시작하기 - 반응을 참조하십시오](/help/sites-developing/spa-getting-started-react.md).
+>이 문서는 Angular 프레임워크를 기반으로 합니다. Responsive 프레임워크에 해당하는 문서는 AEM에서 SPA [시작하기 - 반응을 참조하십시오](/help/sites-developing/spa-getting-started-react.md).
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ SPA 작성 기능은 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 �
 
 이 문서는 간단한 SPA의 기본적인 기능과 필요한 최소 기능을 요약해 놓은 것입니다.
 
-AEM에서 SPA가 작동하는 방식에 대한 자세한 내용은 다음 문서를 참조하십시오.
+AEM에서 SPA가 작동하는 방법에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
 * [SPA 소개 및 연습](/help/sites-developing/spa-walkthrough.md)
 * [SPA 저작 소개](/help/sites-developing/spa-overview.md)
@@ -41,9 +44,9 @@ AEM에서 SPA가 작동하는 방식에 대한 자세한 내용은 다음 문서
 
 >[!NOTE]
 >
->SPA 내에서 컨텐츠를 저작할 수 있으려면 컨텐츠를 AEM에 저장하고 컨텐츠 모델에 의해 노출되어야 합니다.
+>SPA 내에서 컨텐츠를 저작할 수 있으려면 컨텐츠가 AEM에 저장되어 컨텐츠 모델에 노출되어 있어야 합니다.
 >
->AEM 외부에서 개발된 SPA는 컨텐츠 모델 계약을 준수하지 않는 경우 인증할 수 없습니다.
+>AEM 외부에서 개발된 SPA는 컨텐츠 모델 계약을 준수하지 않으면 저작권을 얻을 수 없습니다.
 
 본 문서는 간소화된 SPA의 구조를 자세히 설명하여 SPA에 이러한 이해를 적용할 수 있는 방법을 설명합니다.
 
@@ -57,9 +60,9 @@ AEM에서 SPA가 작동하는 방식에 대한 자세한 내용은 다음 문서
 
 ```
 "dependencies": {
-  "@adobe/cq-angular-editable-components": "~1.0.3",
-  "@adobe/cq-spa-component-mapping": "~1.0.3",
-  "@adobe/cq-spa-page-model-manager": "~1.0.4"
+  "@adobe/aem-angular-editable-components": "~1.0.3",
+  "@adobe/aem-spa-component-mapping": "~1.0.5",
+  "@adobe/aem-spa-page-model-manager": "~1.0.3"
 }
 ```
 
@@ -108,17 +111,17 @@ module.exports = {
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
-일단 빌드하면 패키지를 AEM 인스턴스에 업로드할 수 있습니다.
+패키지를 빌드하면 AEM 인스턴스에 업로드할 수 있습니다.
 
 ### AEM 프로젝트 전형 {#aem-project-archetype}
 
-모든 AEM 프로젝트는 React 또는 Angular를 사용하여 SPA 프로젝트를 [지원하고 SPA SDK를 활용하는 AEM Project 원형형을 활용해야](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)합니다.
+모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)(React or Angular)을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 프로젝트 전형(Pretype)을 활용해야 합니다.
 
 ## 애플리케이션 구조 {#application-structure}
 
-이전에 설명한 대로 종속성 및 앱 빌드를 포함시키면 AEM 인스턴스에 업로드할 수 있는 작업 SPA 패키지가 남습니다.
+이전에 설명한 바와 같이 종속성 및 앱 빌드를 포함하면 AEM 인스턴스에 업로드할 수 있는 작업 중인 SPA 패키지가 남아 있습니다.
 
-이 문서의 다음 섹션에서는 AEM의 SPA가 구조화된 방식, 애플리케이션을 구동하는 중요한 파일 및 이러한 SPA가 어떻게 연동되는지 살펴볼 수 있습니다.
+이 문서의 다음 섹션에서는 AEM의 SPA 구성 방법, 애플리케이션을 구동하는 중요한 파일 및 이러한 SPA의 작동 방식을 살펴볼 수 있습니다.
 
 간소화된 이미지 구성 요소를 예로 사용하지만 애플리케이션의 모든 구성 요소는 동일한 개념을 기반으로 합니다.
 
@@ -131,7 +134,7 @@ SPA의 엔트리 포인트는 중요한 컨텐츠에 초점을 맞추기 위해 
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SpaAngularEditableComponentsModule } from '@adobe/cq-angular-editable-components';
+import { SpaAngularEditableComponentsModule } from '@adobe/aem-angular-editable-components';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -160,8 +163,8 @@ export class AppModule {}
 ```
 // app.component.ts
 import { Component } from '@angular/core';
-import { ModelManager } from '@adobe/cq-spa-page-model-manager';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { ModelManager } from '@adobe/aem-spa-page-model-manager';
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-root',
@@ -195,7 +198,7 @@ export class AppComponent {
 import { Component } from '@angular/core';
 import { ModelManagerService }     from '../model-manager.service';
 import { ActivatedRoute } from '@angular/router';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-main',
@@ -253,7 +256,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-AEM의 SPA에 대한 중앙 아이디어는 SPA 구성 요소를 AEM 구성 요소에 매핑하고 컨텐츠가 수정될 때(또는 그 반대로) 구성 요소를 업데이트하는 것입니다. 이 통신 모델에 대한 요약 내용은 [SPA Editor](/help/sites-developing/spa-overview.md) Overview 문서를 참조하십시오.
+AEM의 SPA는 SPA 구성 요소를 AEM 구성 요소에 매핑하고 컨텐츠가 수정될 때(또는 그 반대로) 구성 요소를 업데이트하는 것을 목표로 합니다. 이 통신 모델에 대한 요약 내용은 [SPA Editor](/help/sites-developing/spa-overview.md) Overview 문서를 참조하십시오.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
@@ -278,7 +281,7 @@ AEM의 SPA에 대한 중앙 아이디어는 SPA 구성 요소를 AEM 구성 요�
 
 ## SPA 구성 요소 간 정보 공유 {#sharing-information-between-spa-components}
 
-단일 페이지 애플리케이션 내의 구성 요소가 정보를 공유하려면 정기적으로 필요합니다. 다음과 같이 복잡성이 증가하는 여러 가지 권장 방법으로 이 작업을 수행할 수 있습니다.
+단일 페이지 애플리케이션 내의 구성 요소가 정보를 공유하려면 정기적으로 필요합니다. 다음과 같은 몇 가지 권장 방법으로 복잡도가 높아집니다.
 
 * **옵션 1:** util 클래스를 순수한 객체 지향 솔루션으로 사용하면 논리 및 브로드캐스트를 필요한 구성 요소로 중앙에서 제어할 수 있습니다.
 * **옵션 2:** NgRx와 같은 상태 라이브러리를 사용하여 구성 요소 상태를 공유합니다.
@@ -286,10 +289,10 @@ AEM의 SPA에 대한 중앙 아이디어는 SPA 구성 요소를 AEM 구성 요�
 
 ## 다음 단계 {#next-steps}
 
-자체 SPA를 만드는 단계별 가이드는 AEM SPA 편집기 [시작하기 - WKND 이벤트 자습서를 참조하십시오](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+자체 SPA를 만드는 방법에 대한 단계별 가이드는 AEM SPA Editor - WKND Events Tutorial [을 참조하십시오](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
-AEM용 SPA를 개발하기 위해 자신을 구성하는 방법에 대한 자세한 내용은 AEM용 SPA [개발 문서를 참조하십시오](/help/sites-developing/spa-architecture.md).
+AEM용 SPA를 개발하는 방법을 알려면 AEM용 SPA [개발 문서를 참조하십시오](/help/sites-developing/spa-architecture.md).
 
-동적 모델-구성 요소 매핑 및 AEM의 SPA 내에서 작동하는 방식에 대한 자세한 내용은 SPA에 대한 구성 요소 매핑 [에 대한 아티클을 참조하십시오](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+동적 모델-구성 요소 매핑 및 AEM의 SPA 내에서 작동하는 방식에 대한 자세한 내용은 SPA를 위한 구성 요소 매핑 [으로 동적 모델을 참조하십시오](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-AEM에서 React 또는 Angular 이외의 프레임워크에 대해 SPA를 구현하거나 AEM용 SPA SDK 작동 방식을 자세히 살펴보려면 [SPA Blueprint](/help/sites-developing/spa-blueprint.md) 문서를 참조하십시오.
+AEM에서 Responsive 또는 Angular 이외의 프레임워크를 위해 SPA를 구현하거나 AEM용 SPA SDK의 작동 방식을 자세히 살펴보려면 [SPA Blueprint](/help/sites-developing/spa-blueprint.md) 문서를 참조하십시오.
