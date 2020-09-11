@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -72,10 +72,10 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM *후* MongoDB가 시작된 경우, 모든 **AEM** 인스턴스를 다시 **시작하여** MongoDB에 올바르게 연결됩니다.
+>AEM *후에* MongoDB가 시작된 경우 모든 **AEM** 인스턴스를 다시 **시작하여** MongoDB에올바르게 연결합니다.
 
 
-### 데모 제작 옵션: MongoDB 복제본 세트 설정 {#demo-production-option-setup-mongodb-replica-set}
+### 데모 제작 옵션:MongoDB 복제본 세트 설정 {#demo-production-option-setup-mongodb-replica-set}
 
 다음 명령은 localhost에서 3개의 노드가 있는 복제본 세트를 설정하는 예입니다.
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 * Apache Lucene에서 [솔루션 다운로드](https://archive.apache.org/dist/lucene/solr/):
 
    * 모든 OS에 적합
-   * 버전 4.10 또는 버전 5를 사용하십시오.
+   * Solr 버전 7.0.
    * 솔러는 Java 1.7 이상이 필요합니다.
 
 * 기본 구성
@@ -131,7 +131,7 @@ Solr 실행 방법은 설치 버전 및 방법에 따라 다를 수 있습니다
 
 >[!NOTE]
 >
->Solr Console을 사용할 수 없는 경우 &lt;solrinstall>/example/logs 아래에서 로그를 확인하십시오. SOLR이 확인할 수 없는 특정 호스트 이름(예: &quot;user-macbook-pro&quot;).
+>Solr Console을 사용할 수 없는 경우 &lt;solrinstall>/example/logs 아래에서 로그를 확인하십시오. SOLR이 확인할 수 없는 특정 호스트 이름(예:&quot;user-macbook-pro&quot;).
 이 호스트 이름(예: 127.0.0.1 user-macbook-pro)에 대한 새 항목으로 etc/hosts 파일을 업데이트하면 Solaris가 제대로 시작됩니다.
 
 
@@ -143,9 +143,9 @@ Solr 실행 방법은 설치 버전 및 방법에 따라 다를 수 있습니다
 
 ## MongoDB를 일반 스토어로 식별 {#identify-mongodb-as-common-store}
 
-필요한 경우 작성자를 실행하고 AEM 인스턴스를 게시합니다.
+필요한 경우 작성자 및 AEM 인스턴스를 게시합니다.
 
-MongoDB를 시작하기 전에 AEM이 실행 중이면 AEM 인스턴스를 다시 시작해야 합니다.
+AEM이 MongoDB를 시작하기 전에 실행 중이면 AEM 인스턴스를 다시 시작해야 합니다.
 
 기본 설명서 페이지의 지침을 따르십시오. [MSRP - MongoDB 공용 스토어](msrp.md)
 
@@ -163,7 +163,7 @@ MongoDB 공용 스토어를 테스트 및 확인하려면 게시 인스턴스에
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-   참고: 작성자 상의 *asipath 아래에* JCR 노드가 있지만 SCF 프레임워크에 사용됩니다. 실제 UGC는 JCR에 있지 않고 MongoDB에 있습니다.
+   참고:작성자의 *asipath 아래에* JCR 노드가 있는 동안 이러한 노드는 SCF 프레임워크용입니다. 실제 UGC는 JCR에 있지 않고 MongoDB에 있습니다.
 
 1. mongodb Communities에서 UGC **[!UICONTROL 보기]** > **[!UICONTROL 컬렉션]** **[!UICONTROL >콘텐츠]**
 
@@ -186,7 +186,7 @@ MongoDB 공용 스토어를 테스트 및 확인하려면 게시 인스턴스에
 
 1. MSRP가 기본 공급자로 구성되었는지 확인하십시오.
 
-   * 모든 작성 및 AEM 인스턴스에서 [스토리지 구성 콘솔 다시 방문](srp-config.md)
+   * 모든 작성자 및 게시 AEM 인스턴스에서 [스토리지 구성 콘솔 다시 방문](srp-config.md)
 
    또는 AEM 리포지토리를 확인합니다.
 
@@ -196,4 +196,4 @@ MongoDB 공용 스토어를 테스트 및 확인하려면 게시 인스턴스에
    * srpc 노드가 있고 노드 [기본 구성을](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)포함하는 경우, 기본 구성의 속성은 MSRP를 기본 공급자로 정의해야 합니다
 
 
-1. MSRP를 선택한 후 AEM이 다시 시작되었는지 확인합니다.
+1. AEM이 MSRP를 선택한 후 다시 시작되었는지 확인합니다.
