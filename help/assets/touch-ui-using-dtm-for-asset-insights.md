@@ -3,9 +3,9 @@ title: DTM을 통해 자산 통찰력 활성화
 description: Adobe DTM(다이내믹 태그 관리)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 3fbf32ec0930b8e832f8bea5b466fcb6bd38fbd3
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 2%
 
 # Enable Asset Insights through DTM {#enable-asset-insights-through-dtm}
 
-Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 도구입니다. Adobe Analytics 고객에게는 무료로 제공됩니다.
+Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 도구입니다. Adobe Analytics 고객에게는 무료로 제공됩니다. 추적 코드를 사용자 지정하여 타사 CMS 솔루션을 사용하여 자산 통찰력을 사용하거나 DTM을 사용하여 자산 인사이트 태그를 삽입할 수 있습니다. 인사이트는 이미지만 지원되고 제공됩니다.
 
-추적 코드를 사용자 지정하여 타사 CMS 솔루션을 사용하여 자산 통찰력을 사용할 수 있도록 할 수 있지만 Adobe은 DTM을 사용하여 자산 인사이트 태그를 삽입하는 것이 좋습니다.
-
->[!NOTE]
+>[!CAUTION]
 >
->인사이트는 이미지만 지원되고 제공됩니다.
+>Adobe DTM은 Adobe Experience Platform Launch에게 더 이상 사용되지 않으며 곧 [수명이 다될 것입니다](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe에서는 자산 통찰력에 론치를 [사용하는 것이 좋습니다](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 다음 단계를 수행하여 DTM을 통해 자산 통찰력을 활성화합니다.
 
