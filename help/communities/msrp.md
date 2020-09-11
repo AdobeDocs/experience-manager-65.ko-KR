@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: 412200c1bb0c7050c981fc5dc2a5430f37b3beb3
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1209'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## MSRP 정보 {#about-msrp}
 
-MSRP를 공용 스토어로 사용하도록 AEM Communities이 구성된 경우 동기화나 복제 없이도 모든 작성자 및 게시 인스턴스에서 UGC(사용자 생성 콘텐츠)에 액세스할 수 있습니다.
+AEM Communities이 MSRP를 공용 스토어로 사용하도록 구성된 경우 동기화나 복제 없이도 모든 작성자 및 게시 인스턴스에서 사용자가 생성한 컨텐츠(UGC)에 액세스할 수 있습니다.
 
 SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-options) 의 [특성을 참조하십시오](topologies.md).
 
@@ -37,7 +37,7 @@ SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
-   * 버전 4.10 또는 버전 5
+   * Solr 버전 7.0
    * 솔러는 Java 1.7 이상이 필요합니다.
    * 서비스가 필요 없음
    * 실행 모드 선택:
@@ -64,23 +64,23 @@ SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-
 
    * **[!UICONTROL mongoDB URI]**
 
-      *기본값*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+      *기본값*:mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
    * **[!UICONTROL mongoDB 데이터베이스]**
 
-      *기본값*: 커뮤니티
+      *기본값*:커뮤니티
 
    * **[!UICONTROL mongoDB UGC 컬렉션]**
 
-      *기본값*: content
+      *기본값*:content
 
    * **[!UICONTROL mongoDB 첨부 파일 컬렉션]**
 
-      *기본값*: 첨부 파일
+      *기본값*:첨부 파일
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper 호스트&#x200B;**
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper 호스트**
 
       외부 ZooKeeper를 사용하여 [SolrCloud 모드에서](solr.md#solrcloud-mode) 실행할 때 `HOST:PORT` my.server.com:2181과 같은 ZooKeeper *의 값으로 이 값을 설정합니다.*
 
@@ -92,11 +92,11 @@ SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-
       * **[!UICONTROL 솔루션 URL]**독립 실행형 모드에서 Solr와 통신하는 데 사용되는 URL입니다.
 SolrCloud 모드에서 실행되는 경우 비워 둡니다.
 
-         *기본값*: https://127.0.0.1:8983/solr/
+         *기본값*:https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Solr Collection]**Solr 컬렉션 이름입니다.
 
-         *기본값*: collection1
+         *기본값*:collection1
 
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다
 
@@ -137,7 +137,7 @@ Oak 및 MSRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상�
 
 MSRP로 구성된 이전 버전에서 업그레이드하는 경우 다음을 수행해야 합니다.
 
-1. AEM Communities으로 [업그레이드 수행](upgrade.md)
+1. AEM Communities으로 [업그레이드](upgrade.md)
 1. 새 Solr 구성 파일 설치
    * 표준 [MLS의 경우](solr.md#installing-standard-mls)
    * 고급 [MLS](solr.md#installing-advanced-mls)
@@ -166,7 +166,7 @@ MSRP는 모든 작성자 및 게시 인스턴스에 있는 공통 스토어로 �
 
 새 구성 파일을 설치하거나 손상된 Solr 인덱스를 복구할 때 MSRP용 Solr를 다시 인덱싱하기 위한 HTTP 끝점이 있습니다.
 
-이 도구를 사용하여 MongoDB는 MSRP의 *진실* 소스입니다. 백업은 MongoDB에서만 가져와야 합니다.
+이 도구를 사용하여 MongoDB는 MSRP의 *진실* 소스입니다.백업은 MongoDB에서만 가져와야 합니다.
 
 *path *data 매개 변수에 의해 지정된 대로 전체 UGC 트리가 재인덱싱되거나 특정 하위 트리만 될 수 있습니다.
 
@@ -176,7 +176,7 @@ MSRP는 모든 작성자 및 게시 인스턴스에 있는 공통 스토어로 �
 
 적절한 기본값은 5000입니다.
 
-* 메모리가 문제가 되는 경우 더 작은 숫자를 지정합니다.
+* 메모리가 문제가 되는 경우 더 작은 숫자를 지정하십시오.
 * 속도가 문제가 되는 경우 더 큰 숫자를 지정하여 속도를 높입니다
 
 ### cURL 명령을 사용하여 MSRP 다시 색인 도구 실행 {#running-msrp-reindex-tool-using-curl-command}
@@ -187,7 +187,7 @@ MSRP는 모든 작성자 및 게시 인스턴스에 있는 공통 스토어로 �
 
 cURL -u *sign* -d *data* *reindex-url*
 
-*signing* = administrator-id:password예: 관리:관리자
+*signing* = administrator-id:password예:관리:관리자
 
 *data* = &quot;batchSize=*size*&amp;path=*path&quot;*
 
@@ -233,19 +233,19 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 ### 업그레이드 후 UGC가 사라짐 {#ugc-disappears-after-upgrade}
 
-기존 AEM Communities 6.0 사이트에서 업그레이드하는 경우, AEM Communities 6.3으로 업그레이드한 후 기존 UGC를 [SRP](srp.md) API에 필요한 구조에 맞게 변환해야 합니다.
+기존 AEM Communities 6.0 사이트에서 업그레이드하는 경우, AEM Communities 6.3으로 업그레이드한 후 기존의 모든 UGC를 [SRP](srp.md) API에 필요한 구조에 맞게 변환해야 합니다.
 
 GitHub에서 사용할 수 있는 오픈 소스 도구는 다음과 같습니다.
 
 * [AEM Communities UGC 마이그레이션 도구](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-AEM Communities 6.1 이상으로 가져오기 위해 AEM 소셜 커뮤니티의 이전 버전에서 UGC를 내보내도록 마이그레이션 도구를 사용자 지정할 수 있습니다.
+이전 버전의 AEM 소셜 커뮤니티에서 UGC를 내보내어 AEM Communities 6.1 이상으로 가져올 수 있도록 마이그레이션 도구를 사용자 지정할 수 있습니다.
 
 ### 오류 - 정의되지 않은 필드 provider_id {#error-undefined-field-provider-id}
 
 로그에 다음 오류가 표시되면 Solr 스키마 파일이 제대로 구성되지 않았음을 나타냅니다.
 
-#### JsonMappingException: 정의되지 않은 필드 provider_id {#jsonmappingexception-undefined-field-provider-id}
+#### JsonMappingException:정의되지 않은 필드 provider_id {#jsonmappingexception-undefined-field-provider-id}
 
 ```xml
 Caused by: com.fasterxml.jackson.databind.JsonMappingException: undefined field provider_id
