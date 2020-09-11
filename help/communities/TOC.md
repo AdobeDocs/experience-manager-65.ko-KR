@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Communities 사용 안내서
+breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 9%
@@ -21,7 +22,7 @@ ht-degree: 9%
    + [AEM Communities 개요](overview.md)
    + [AEM Communities 릴리스 노트](/help/release-notes/communities-release-notes.md)
    + [AEM Communities 시작하기](getting-started.md)
-   + [활성 AEM Communities 시작하기](getting-started-enablement.md)
+   + [활성화를 위한 AEM Communities 시작하기](getting-started-enablement.md)
    + [초기 설정](setup.md)
    + [새 커뮤니티 사이트 작성](create-site.md)
    + [게시된 사이트 경험](published-site.md)
@@ -34,12 +35,12 @@ ht-degree: 9%
    + [커뮤니티 배포](deploy-communities.md)
    + [AEM 6.5 Communities로 업그레이드](upgrade.md)
    + [커뮤니티를 위한 권장 토폴로지](topologies.md)
-   + [커뮤니티에 대한 Dispatcher 구성](dispatcher.md)
+   + [커뮤니티용 Dispatcher 구성](dispatcher.md)
 + 관리 {#administer}
    + [AEM Communities의 사용자 및 UGC 관리 서비스](user-ugc-management-service.md)
    + [커뮤니티 사이트](administer-landing.md)
    + [커뮤니티 콘솔](consoles.md)
-   + [커뮤니티 기능에 대한 Analytics 구성](analytics.md)
+   + [커뮤니티 기능에 대한 분석 구성](analytics.md)
    + [활성 기능 구성](enablement.md)
    + [메시징 구성](messaging.md)
    + [커뮤니티 콘텐츠 중재](moderate-ugc.md)
@@ -66,7 +67,7 @@ ht-degree: 9%
    + [커뮤니티용 FFmpeg](ffmpeg.md)
    + [컨텍스트 내 중재](in-context.md)
    + [고급 점수 및 배지](advanced.md)
-   + [ASRP - Adobe Storage Resource Provider](asrp.md)
+   + [ASRP - Adobe 저장소 리소스 공급자](asrp.md)
    + [MSRP - MongoDB 저장소 리소스 공급자](msrp.md)
    + [데모용 MongoDB를 설정하는 방법](demo-mongo.md)
    + [DSRP - 관계형 데이터베이스 저장소 리소스 공급자](dsrp.md)
