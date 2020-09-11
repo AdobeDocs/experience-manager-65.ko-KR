@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%
@@ -48,7 +48,7 @@ CRXDE Lite 사용:
 
 ### 헤드 및 본문 스크립트 {#head-and-body-scripts}
 
-1. CRXDE **Lite** 탐색기 창에서 파일 `/apps/an-scf-sandbox/components/playpage` 을 탐색하고 두 번 클릭하여 편집 창에서 파일을 `playpage.jsp` 엽니다.
+1. CRXDE Lite **탐색기 창에서 파일** 을 탐색하고 두 번 클릭하여 편집 창 `/apps/an-scf-sandbox/components/playpage` `playpage.jsp` 에서 엽니다.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
