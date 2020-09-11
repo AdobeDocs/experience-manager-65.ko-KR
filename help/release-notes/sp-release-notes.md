@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 622fbe5eba3e737ebc25e6c57d7ed68d7bff9555
+source-git-commit: 74f1fc80bb908f7b7114177c5f8355ff892b95ed
 workflow-type: tm+mt
-source-wordcount: '4423'
+source-wordcount: '4422'
 ht-degree: 26%
 
 ---
@@ -112,7 +112,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
 * 이제 검색 페이지 및 검색 결과 페이지에 화면 판독기 사용자를 더 잘 이해할 수 있는 정보가 포함된 제목이 추가되었습니다(NPR-34093).
 
-* 이제 화면 판독기가 자산 속성 단추의 [!UICONTROL 기본] 탭에서 선택한 태그를 삭제하는 옵션 을 알려 선택한 태그를 삭제합니다(NPR-33972).
+* 이제 화면 판독기가 자산 [!UICONTROL 속성] 단추의 [!UICONTROL 기본] 탭에서 선택한 태그를 삭제하는 옵션을 알려 선택한 태그를 삭제합니다(NPR-33972).
 
 * 이제 목록 보기의 각 행에 있는 요소가 화면 판독기를 통해 동일한 행의 요소로 올바르게 선언됩니다(NPR-33932).
 
