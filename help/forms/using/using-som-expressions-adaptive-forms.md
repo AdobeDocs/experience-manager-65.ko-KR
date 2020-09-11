@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6b4bc58efd72900c54cb245878239e345d72ae3e
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -35,7 +35,7 @@ DOM 트리
 
 라디오 단추가 두 개인 DOM 트리
 
-응용 양식의 라디오 단추 위치를 변경하면 SOM 표현식이 변경됩니다. 작성 모드에서는 AEM Forms 내에서 SOM 표현식 보기 옵션을 사용하여 필드 또는 요소의 SOM 표현식을 볼 수 있습니다. 이 옵션이 패널에 표시되고 필드나 요소를 마우스 오른쪽 단추로 클릭하면 표시됩니다.
+응용 양식의 라디오 단추 위치를 변경하면 SOM 표현식이 변경됩니다. 작성 모드에서는 SOM 표현식 보기 옵션을 사용하여 AEM Forms 내의 필드 또는 요소의 SOM 표현식을 볼 수 있습니다. 이 옵션이 패널에 표시되고 필드나 요소를 마우스 오른쪽 단추로 클릭하면 표시됩니다.
 
 ![응용 양식의 SOM 표현식 추출](assets/som-expressions.png)
 
@@ -48,4 +48,3 @@ DOM 트리
 패널 도구 모음을 사용하여 SOM 표현식 추출
 
 GuideBridge에 나열된 일부 [API는](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) 요소의 SOM 표현식을 사용합니다. 예를 들어 적응형 양식의 특정 필드에 초점을 맞추려면 해당 SOM 표현식을 `getFocus`API로 전달합니다 `guideBridge`.
-
