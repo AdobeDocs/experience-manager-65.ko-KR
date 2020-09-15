@@ -209,7 +209,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
    >[!NOTE]
    >
-   >6. [!DNL Experience Manager] 5 서비스 팩 6로 업그레이드하면 6.5 GA에서 [!DNL Experience Manager] 6.5 서비스 팩 5 또는 이전 버전을 설치할 때 런타임 복사본이 삭제되는 경우 런타임 사본이 검색되지 않습니다. 런타임 복사본을 검색하려면 HTTP API를 사용하여 워크플로우 모델의 디자인 시간 사본을 런타임 복사본과 동기화합니다.
+   >[!DNL Experience Manager] 6.5 서비스 팩 6로 업그레이드하면 6.5 GA에서 [!DNL Experience Manager] 6.5 서비스 팩 5 또는 이전 버전을 설치할 때 런타임 복사본이 삭제되는 경우 런타임 사본이 검색되지 않습니다. 런타임 복사본을 검색하려면 HTTP API를 사용하여 워크플로우 모델의 디자인 시간 사본을 런타임 복사본과 동기화합니다.
    `<designModelPath>/jcr:content.generate.json`.
 
 **다이내믹 미디어에서 해결된 문제**
