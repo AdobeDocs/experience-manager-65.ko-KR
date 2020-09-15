@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.5 서비스 팩 6의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f8a072e0ab24d542a1bec8faf03da57f99747102
+source-git-commit: 5cf27977d3d94d39c9dfec51eb50778048f76dfd
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2482'
 ht-degree: 69%
 
 ---
@@ -88,6 +88,10 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 ### 자동화된 Forms 전환 서비스에서 [!DNL Adobe Sign] 텍스트 태그에 대한 지원을 추가했습니다. {#sign-integration-acroform-afcs}
 
 AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함되어 있는 경우, 이러한 필드는 이제 인식되어 적응형 양식의 [!DNL Adobe Sign] 필드로 표현됩니다 [!DNL Automated Forms Conversion service]. 서명자는 적응형 양식에 서명하면서 이러한 필드를 채울 수 있습니다.
+
+### 컬러 PDF forms을 적응형 양식으로 변환하는 지원 {#colore-PDF-forms}
+
+색상 PDF forms [!DNL Automated Forms Conversion service] 를 응용 양식으로 변환하는 데 사용할 수 있습니다.
 
 ### SMB 2 및 SMB 3 프로토콜 지원 {#smb-support}
 
