@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74606bc3e9c768c3d94b7d05c722980f29e20e0e
+source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
 workflow-type: tm+mt
-source-wordcount: '4418'
+source-wordcount: '4458'
 ht-degree: 26%
 
 ---
@@ -99,7 +99,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 * 참조가 많은 페이지는 비동기식으로 이동할 수 없으며 이동 작업이 실패하는 경우가 있습니다(CQ-4297969).
 * 작성하는 동안 URL에 `/` 문자가 포함된 웹 페이지가 응답하지 않습니다. 작성하는 동안 구성 요소가 추가되면 CPU 사용이 증가하고 브라우저가 응답을 중지합니다(CQ-4295749).
 * 검색 모드에서는 유형/크기 메뉴 옵션에서 선택한 값을 내레이트하지 않습니다. 시각적 포커스가 선택한 요소에 있지 않습니다. 화면 판독기를 사용하는 사용자는 찾아보기 모드를 사용할 수 없습니다(CQ-4294993).
-* 웹 페이지를 만들 때 사용자는 컨텐츠 페이지 [!UICONTROL 템플릿을 선택할 수] 있습니다. 소셜 [!UICONTROL 미디어] 탭에서 기본 설정 XF [!UICONTROL 변형을 선택합니다]. NVDA 검색 모드에서 경험 조각을 선택하려면 키보드 키를 사용할 수 없습니다(CQ-4292669).
+* 웹 페이지를 만들 때 사용자는 컨텐츠 페이지 [!UICONTROL 템플릿을 선택할 수] 있습니다. 소셜 [!UICONTROL 미디어] 탭에서 기본 설정 XF [!UICONTROL 변형을 선택합니다]. NVDA 찾아보기 모드에서 경험 조각을 선택하려면 키보드 키를 사용할 수 없습니다(CQ-4292669).
 * handlebars 라이브러리를 더 안전한 v4.7.3(NPR-34484)으로 업데이트했습니다.
 
 ### [!DNL Assets] {#assets-6560}
@@ -209,7 +209,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
    >[!NOTE]
    >
-   >[!DNL Experience Manager] 6.5 서비스 팩 6로 업그레이드하면 6.5 GA에서 [!DNL Experience Manager] 6.5 서비스 팩 5 또는 이전 버전을 설치할 때 런타임 복사본이 삭제되는 경우 런타임 사본이 검색되지 않습니다. 런타임 복사본을 검색하려면 HTTP API를 사용하여 워크플로우 모델의 디자인 시간 사본을 런타임 복사본과 동기화합니다.
+   >6. [!DNL Experience Manager] 5 서비스 팩 6로 업그레이드하면 6.5 GA에서 [!DNL Experience Manager] 6.5 서비스 팩 5 또는 이전 버전을 설치할 때 런타임 복사본이 삭제되는 경우 런타임 사본이 검색되지 않습니다. 런타임 복사본을 검색하려면 HTTP API를 사용하여 워크플로우 모델의 디자인 시간 사본을 런타임 복사본과 동기화합니다.
    `<designModelPath>/jcr:content.generate.json`.
 
 **다이내믹 미디어에서 해결된 문제**
@@ -228,7 +228,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
    * `ExcludeFromAVS` 옵션이 제공되지 않습니다(CQ-4298401).
 
-* 이미지 프로필을 여러 종횡비(예: 11)가 있는 폴더에 추가할 때 스마트 자르기 기능이 실패하므로 오류가 발생합니다(NPR-34082).
+* 이미지 프로필을 여러 종횡비(예: 11)가 있는 폴더에 추가할 때 스마트 자르기 기능이 오류로 인해 실패합니다. (NPR-34082)
 
 * DAM 자산 업데이트 워크플로우는 사용자가 Dynamic Media Scene7으로 구성된 [!UICONTROL 도구] 의 워크플로우 [!UICONTROL 탭] 에서 [!UICONTROL 워크플로우][!DNL Adobe Experience Manager] 페이지에서아래로 스크롤할 때트리거됩니다(CQ-429727).
 
@@ -434,7 +434,7 @@ JEE의 Experience Manager Forms용 누적 설치 프로그램 설치 및 배포 
 
 ### UberJar {#uber-jar}
 
-Experience Manager 6.5.6.0용 UberJar는 [Adobe Public Maven 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/)에서 사용할 수 있습니다.
+The UberJar for Experience Manager 6.5.6.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/).
 
 Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/help/sites-developing/ht-projects-maven.md)을 참조하여 프로젝트 POM에 다음 종속성을 포함하십시오.
 
@@ -446,6 +446,10 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
       <scope>provided</scope>
 </dependency>
 ```
+
+>[!NOTE]
+>
+>이 릴리스부터 UberJar 및 기타 관련 아티팩트는 Adobe Public Maven 리포지토리(repo.adobe.com) 대신 Maven Central Repository에서 사용할 수 있습니다. 기본 UberJar 파일의 이름이 로 변경되었습니다 `uber-jar-<version>.jar`. 그 결과, 태그 `classifier`에 대한 값 `apis` 이 없는 `dependency` 것으로 나타났습니다.
 
 ## 이제 사용되지 않는 기능 {#removed-deprecated-features}
 
