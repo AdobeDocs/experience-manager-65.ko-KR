@@ -3,7 +3,7 @@ title: 디지털 자산의 사용 및 공유에 대한 보고서
 description: 디지털 자산의 사용, 활동 [!DNL Adobe Experience Manager Assets] 및 공유를 이해하는 데 도움이 되는 자산에 대한 보고서입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a8c4bc1992a48dd01a3f58498e9e924dcc9e886a
+source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 자산 보고서 {#asset-reports}
 
-자산 보고를 사용하면 배포의 유용성을 평가할 수 [!DNL Adobe Experience Manager Assets] 있습니다. 를 [!DNL Assets]사용하면 디지털 자산에 대한 다양한 보고서를 생성할 수 있습니다. 이 보고서에서는 시스템 사용량, 사용자가 자산과 상호 작용하는 방법, 다운로드 및 공유되는 자산에 대한 유용한 정보를 제공합니다.
+자산 보고를 사용하면 배포의 유용성을 평가할 수 [!DNL Adobe Experience Manager Assets] 있습니다. 를 [!DNL Assets]사용하면 디지털 자산에 대한 다양한 보고서를 생성할 수 있습니다. 이 보고서에서는 시스템 사용, 사용자가 자산과 상호 작용하는 방법, 다운로드 및 공유되는 자산에 대한 유용한 정보를 제공합니다.
 
 보고서의 정보를 사용하여 주요 성공 지표를 추출하여 기업 내 및 고객별 [!DNL Assets] 채택을 측정합니다.
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 ## 전제 조건 {#prerequisite-for-reporting}
 
-보고서를 생성하려면 다음을 확인하십시오.
+보고서를 생성하려면 다음을 수행합니다.
 
 * 도구 [!UICONTROL >] 작업 **[!UICONTROL >]** 웹 콘솔 레코더 **[!UICONTROL 에서]** 일 CQ DAM 이벤트 **[!UICONTROL 서비스를]**&#x200B;활성화합니다.
 * 보고할 활동 또는 이벤트를 선택합니다. 예를 들어, 다운로드된 자산에 대한 보고서를 생성하려면 다운로드된 [!UICONTROL 자산(다운로드됨)을 선택합니다].
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL >]** 자산 **[!UICONTROL > 보고서]** 를 **[!UICONTROL 클릭합니다]**.
 
-![자산 보고서를 탐색하는 도구 페이지](assets/AssetsReportNavigation.png)
+   ![자산 보고서를 탐색하는 도구 페이지](assets/AssetsReportNavigation.png)
 
 1. 자산 [!UICONTROL 보고서] 페이지의 도구 모음에서 **[!UICONTROL 만들기를]** 클릭합니다.
 1. 보고서 **[!UICONTROL 만들기]** 페이지에서 만들 보고서를 선택하고 다음을 **[!UICONTROL 클릭합니다]**.
@@ -59,11 +59,12 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >기본적으로 컨텐츠 조각 및 링크 공유는 자산 다운로드 [!UICONTROL 보고서에 포함됩니다] . 링크 공유 보고서를 만들거나 콘텐트 조각을 다운로드 보고서에서 제외하려면 적절한 옵션을 선택합니다.
+   >기본적으로 컨텐츠 조각 및 링크 공유는 자산 [!UICONTROL 다운로드] 보고서에 포함됩니다. 링크 공유 보고서를 만들거나 콘텐트 조각을 다운로드 보고서에서 제외하려면 적절한 옵션을 선택합니다.
 
    >[!NOTE]
    >
-   >다운로드  보고서에는 개별적으로 선택하고 빠른 작업을 사용하여 다운로드하거나 다운로드한 자산의 세부 사항만 표시됩니다. 그러나 다운로드한 폴더에 있는 자산의 세부 사항은 포함되지 않습니다.
+   >다운로드  보고서에는 개별적으로 선택한 후 다운로드되거나 빠른 작업을 사용하여 다운로드한 자산에 대한 세부 사항만 표시됩니다. 그러나 다운로드한 폴더에 있는 자산의 세부 사항은 포함되지 않습니다.
+
 1. 보고서가 저장되는 CRX 저장소의 제목, 설명, 축소판 및 폴더 경로와 같은 보고서 세부 사항을 구성합니다. 기본적으로 폴더 경로는 입니다 `/content/dam`. 다른 경로를 지정할 수 있습니다.
 
    ![보고서 세부 사항을 추가하는 페이지](assets/report_configuration.png)
@@ -94,7 +95,7 @@ ht-degree: 2%
 
    ![링크 공유 보고서의 세부 사항 페이지](assets/link_share.png)
 
-1. 도구 모음 **[!UICONTROL 에서]** 다음을 클릭합니다.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. 열 **[!UICONTROL 구성]** 페이지에서 기본적으로 보고서에 일부 열이 표시되도록 선택됩니다. 열을 더 선택할 수 있습니다. 보고서에서 제외하려면 선택한 열을 선택 취소합니다.
 
@@ -104,7 +105,7 @@ ht-degree: 2%
 
    ![보고서 열 선택 또는 선택 취소](assets/custom_columns.png)
 
-1. 도구 **[!UICONTROL 모음에서]** 만들기를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
+1. Click **[!UICONTROL Create]** from the toolbar. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 1. [ [!UICONTROL 자산 보고서] ] 페이지에서 보고서 생성 상태는 보고서 작업의 현재 상태(예: [!UICONTROL 성공], [!UICONTROL 실패], 큐에 [!UICONTROL 있는 작업, 또는 예약된Facebook]으로 예약된Facebook )를 기반으로 합니다. 동일한 상태가 알림 받은 편지함에 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 도구 모음에서 **[!UICONTROL 보기를]** 클릭합니다.
 
    ![생성된 보고서](assets/report_page.png)
@@ -141,7 +142,7 @@ ht-degree: 2%
 
    사용자 지정 열을 더 추가하려면 **[!UICONTROL 추가를]** 클릭하고 5단계와 6단계를 반복합니다.
 
-1. 도구 **[!UICONTROL 모음에서]** 만들기를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
+1. Click **[!UICONTROL Create]** from the toolbar. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
 
 ## 제거 서비스 구성 {#configure-purging-service}
 
