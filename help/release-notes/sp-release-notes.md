@@ -4,10 +4,10 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b6db346f7ec2570972329a8edb089fe909120b75
 workflow-type: tm+mt
-source-wordcount: '4458'
-ht-degree: 26%
+source-wordcount: '4402'
+ht-degree: 25%
 
 ---
 
@@ -104,39 +104,39 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
 ### [!DNL Assets] {#assets-6560}
 
-**Experience Manager Assets의 액세스 가능성 개선**
+**Experience Manager Assets의 액세스 가능성이 개선되었습니다**
 
-* 이제 사용자는 키보드 키를 사용하여 에셋 [!UICONTROL 참조] 목록에 있는 인터랙티브한 유저 인터페이스 옵션에 액세스하고 집중할 수 있습니다(NPR-34115).
+* 이제 사용자는 키보드 키를 사용하여 에셋 [!UICONTROL 참조] 목록(NPR-34115)의 인터랙티브한 유저 인터페이스 옵션에 액세스하고 집중할 수 있습니다.
 
-* 이제 화면 판독기가 검색 필터의 옵션을 확장 가능한 아코디언(NPR-34104)으로 발표합니다.
+* 이제 화면 판독기가 검색 페이지에서 설명 메시지의 의도된 동작을 발표합니다(NPR-34104).
 
 * 이제 검색 페이지 및 검색 결과 페이지에 화면 판독기 사용자를 더 잘 이해할 수 있는 정보가 포함된 제목이 추가되었습니다(NPR-34093).
 
-* 이제 화면 판독기가 자산 [!UICONTROL 속성] 단추의 [!UICONTROL 기본] 탭에서 선택한 태그를 삭제하는 옵션을 알려 선택한 태그를 삭제합니다(NPR-33972).
+* 이제 화면 판독기가 자산 [!UICONTROL 속성] 페이지의 [!UICONTROL 기본] 탭에서 선택한 태그를 삭제할 수 있는 옵션을 발표합니다(NPR-33972).
 
-* 이제 목록 보기의 각 행에 있는 요소가 화면 판독기를 통해 동일한 행의 요소로 올바르게 선언됩니다(NPR-33932).
+* 이제 목록 보기의 각 행에 있는 요소가 화면 판독기에서 동일한 행의 요소로 선언됩니다(NPR-33932).
 
-* 이제 Tab 키를 사용하여 탐색할 때 사용자의 포커스가 버전 미리 보기의 닫기 옵션으로 올바르게 이동합니다(NPR-33863).
+* 이제 `Tab` 키를 사용하여 탐색할 때 사용자의 포커스가 버전 미리 보기의 닫기 옵션으로 이동합니다(NPR-33863).
 
-* 이제 Omnisearch가 닫힌 후 사용자 포커스가 검색 아이콘으로 올바르게 이동합니다(NPR-33705).
+* 이제 Omnisearch가 닫힌 후 사용자 포커스가 검색 아이콘으로 이동합니다(NPR-33705).
 
-* 이제 실행 가능한 유저 인터페이스 옵션이 키보드 키를 사용할 때 향상된 대비 기능으로 보다 눈에 잘 띄는 시각적 포커스를 갖게 되었습니다. 그러므로, 시력이 있는 키보드 사용자는 이제 초점이 맞춰진 영역(NPR-33542)을 차별화할 수 있습니다.
+* 이제 실행 가능한 유저 인터페이스 옵션이 키보드 키를 사용하여 탐색할 때 향상된 대비 기능을 사용하여 보다 눈에 잘 띄는 초점을 갖게 되었습니다. 키보드 사용자는 초점을 맞춘 영역을 식별할 수 있습니다(NPR-33542).
 
-* 키보드를 사용하는 드래그 기능이 이제 화면 판독기의 검색 모드에서 [!UICONTROL 메타데이터 스키마] 편집기에서 올바르게 작동합니다(CQ-4296326).
+* 키보드를 사용하는 드래그 기능이 이제 화면 판독기의 검색 모드에서 [!UICONTROL 메타데이터 스키마] 편집기에서 작동합니다(CQ-4296326).
 
-* 링크 공유 대화 상자에서 찾아보기 모드에서 탐색할 때 화면 판독기에서
+* 링크 공유 대화 상자에서 찾아보기 모드에서 탐색할 때 화면 판독기가
 
-   * 이제 대화 상자가 로드되는 즉시 테이블 정보를 분류하지 마십시오.
+   * 대화 상자가 로드되는 즉시 테이블 정보를 분류하지 않습니다.
 
    * 나열된 모든 자동 제안 항목으로 이동할 수 있습니다.
 
-   * 이제 이메일 주소/검색 [!UICONTROL 추가에 대해 표시되는 자동 제안] 나레이션을 지정합니다(CQ-4294232).
+   * 이메일 주소/검색 [!UICONTROL 추가에 대해 표시되는 자동 제안] 내레이션이 표시됩니다(CQ-4294232).
 
-* 축소판 보기에서 빠른 작업 아이콘을 제거하기 위해 Esc 키를 사용해도 마지막 초점이 있는 항목에서 키보드 포커스가 제거되는 문제가 해결되었습니다(CQ-4293554).
+* 카드 보기에서 빠른 작업 아이콘을 제거하기 위해 `Esc` 키를 사용해도 마지막 초점을 맞춘 항목에서 키보드 포커스가 제거되는 문제가 해결되었습니다(CQ-4293554).
 
-* 화면 판독기는 이제 문자 이름(CQ-4272943) 대신 아이콘(예: 쉐브론)에 대한 기능을 설명하는 텍스트 대체 요소를 선언합니다.
+* 사용자 인터페이스에 대한 대화형 옵션의 경우 화면 판독기는 이제 아이콘의 문자 이름이 아닌 해당 목적을 알립니다(CQ-4272943).
 
-* 키보드 포커스를 [!UICONTROL 플라이아웃], [!UICONTROL Shopable][!UICONTROL ,]Zoom_Dark [!UICONTROL 으로 이동, Zoom_darkDark가 이제 성공적으로 움직이며 Zoom_lightZoomLightlight와 Zoom_Zoom을]  제공합니다. Dark를 사용하여 키를 탐색할 때 Vertical_Zoom에서 다이내믹한 에셋의 키를 사용하여 키를 탐색할 때 키보드 포커스를 (CQ-4290605).
+* 이제 키보드 포커스를 [!UICONTROL 플라이아웃], [!UICONTROL Shopperable][!UICONTROL , Zoom]_Dark [!UICONTROL , Zoom_darkDark가 움직이며 Zoom_lightZoomLightlight, Zoom_zoomLightCumeline으로 이동하도록 성공Keyboard focus를 사용하여 탭합니다. SpiboxSpirindesign의 에셋의 세부 정보를 사용하여 키를 탐색할 때Spyline에서를 사용하여 키보드 포커스를 탐색하는 경우SpandronSpandroidSpandroidSpiranSpirnCumeline에서를를의 기본에서]  [!DNL Dynamic Media] , SpiranSpirn의 기본의 기본의 기본의 기본를를에서 사용자를를를를를 사용자를에서에서SpandroidSpandroidSpandroid를q-4290605).
 
 * [!UICONTROL 자산 속성] 페이지의 저장 [!UICONTROL 및 닫기] 옵션은 키보드 키(NPR-34107)를 사용하여 액세스할 수 있습니다.
 
@@ -144,38 +144,35 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
 * 헤더 [!DNL Experience Manager] 섹션에서 검색 모드로 탐색할 때 화면 판독기에서 이제
 
-   * Omnisearch에서 검색할 [!UICONTROL 유형] 의 제안 자동 편집
+   * Omnisearch에서 검색할 [!UICONTROL 유형] 제안 자동 편집
 
-   * [ [!UICONTROL 솔루션]], [도움말 , []받은 편지함 [!UICONTROL 및] 사용자 [!UICONTROL 옵션]에 대해 확장되거나 축소된 상태] .
+   * [ [!UICONTROL 솔루션]], [도움말 , [받은 편지함]] 및 [ [!UICONTROL 사용자]옵션]에 대한 상태가 확장되거나 축소되는 경우 [!UICONTROL 는] 옵션으로 표시됩니다.
 
-   * 도움말 [!UICONTROL 검색] 옵션 아래의 도움말 [!UICONTROL 검색 필드에서 검색 문자열을 입력할 때 표시되는 도움말][!UICONTROL 상태] 메시지를참조하십시오.
+   * 사용자가 도움말 [!UICONTROL 검색] 옵션 아래의 도움말 [!UICONTROL 필드] 에서 검색 문자열을 입력할 때 표시되는 도움말 [!UICONTROL 상태] 메시지.
 
    ![헤더의 도움말 메뉴](assets/Help_aem_header.png)
 
    *그림:[!UICONTROL 도움말]메뉴에서[!UICONTROL 도움말]검색*
 
-   * 잘못된 값이 [ [!UICONTROL 사용자] ] 옵션 아래의 [가장 대상] 필드에  입력되고 포커스가 텍스트 필드로 올바르게 이동하는 경우 오류 메시지(NPR-33804).
+   * 잘못된 값이 사용자 [!UICONTROL 옵션 아래의 가장 대상] 필드  에 입력되고 포커스가 텍스트 필드로 올바르게 이동하는 경우 오류 메시지(NPR-33804).
 
    ![헤더의 사용자 메뉴](assets/User_aem_header.png)
 
    *그림:[!UICONTROL 헤더의]사용자메뉴의 가장 대상 필드*
 
-* 이제 사용자는 다음 내에서 키보드 키를 사용하여 포커스를 이동할 수 있습니다.
+* 이제 사용자는 다음 내의 키보드를 사용하여 포커스를 변경할 수 있습니다.
 
-   * [!UICONTROL [링크 공유] 대화 상자의 [이메일 주소] 검색/추가] [!UICONTROL 필드] .
+   * [!UICONTROL [링크 공유] 대화 상자의 [이메일 주소] 검색/ [!UICONTROL 추가]] 필드
 
    * [!UICONTROL 폴더 속성] 의 [!UICONTROL 권한] 탭 [!UICONTROL 에 있는 폐쇄된 사용자 그룹] 아래의 사용자 또는 그룹 [!UICONTROL 필드] 추가(NPR-34452).
 
 **Experience Manager Assets에서 해결된 문제**
 
-[!DNL Adobe Experience Manager] 6.5.6.0 Assets은 다음 문제에 대한 수정 사항을 제공합니다.
+[!DNL Adobe Experience Manager] 6.5.6.0 [!DNL Assets] 은 다음 문제에 대한 수정 사항을 제공합니다.
 
-* (INDD) 템플릿을 사용하여 만든 마케팅 자료 자산(예: 브로셔, 전단지 및 명함)의 미리 보기에는 [!DNL Adobe InDesign] 줄 바꿈 및 단락 나누기(NPR-34268)가 유지되지 않습니다.
+* 템플릿을 사용하여 만든 마케팅 자료 자산(예: 브로셔, 전단지 및 명함)의 미리 보기에는 라인 구분과 단락 나누기가 표시되지 않습니다(NPR-34268). [!DNL Adobe InDesign]
 
-* 업로드된 PDF 파일에 대한 텍스트 추출을 사용할 수 없으며 PDF 파일에서 일부 단어를 전체 텍스트로 검색하지 못했습니다(NPR-34164).
-
-   >[!NOTE]
-   >이 수정 사항을 적용하려면 서비스 팩 6.5.6.0을 설치한 후 Adobe Experience Manager 인스턴스를 다시 시작하십시오.
+* 텍스트 추출 및 업로드된 PDF 파일에 대한 전체 텍스트 검색이 작동하지 않습니다(NPR-34164). 이를 해결하려면 서비스 팩 6을 설치한 후 배포를 다시 [!DNL sAdobe Experience Manager] 시작하십시오.
 
 * 다중 페이지 자산의 타임라인에는 특정 하위 자산에 대한 주석을 표시하는 대신 타임라인 보기에서 자산을 검색할 때 모든 하위 자산에 적용된 주석이 표시됩니다(NPR-34100).
 
@@ -205,11 +202,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
 * 폴더 메타데이터 스키마 양식 [!UICONTROL 에서 드롭다운에 대한 규칙을 만들 때 사용자는]필드 선택  열에서 값을 선택할 수 없습니다(CQ-4297530).
 
-* 6.5 GA에 6.5 서비스 팩 5 또는 이전 버전 설치( `/var/workflow/models/dam`NPR-34532)할 때 에셋 사용자 정의 워크플로우 모델의 런타임 복사본이 삭제됩니다.
-
-   >[!NOTE]
-   >
-   >6. [!DNL Experience Manager] 5 서비스 팩 6로 업그레이드하면 6.5 GA에서 [!DNL Experience Manager] 6.5 서비스 팩 5 또는 이전 버전을 설치할 때 런타임 복사본이 삭제되는 경우 런타임 사본이 검색되지 않습니다. 런타임 복사본을 검색하려면 HTTP API를 사용하여 워크플로우 모델의 디자인 시간 사본을 런타임 복사본과 동기화합니다.
+* 6.5 서비스 팩 5 또는 이전 버전(NPR-34532)을 설치할 때 `/var/workflow/models/dam`만든 에셋 사용자 정의 워크플로우 모델의 런타임 사본이 [!DNL Experience Manager] [!DNL Experience Manager] 삭제됩니다. 런타임 사본을 검색하려면 HTTP API를 사용하여 워크플로우 모델의 디자인 타임 사본을 런타임 복사본과 동기화합니다.
    `<designModelPath>/jcr:content.generate.json`.
 
 **다이내믹 미디어에서 해결된 문제**
@@ -410,7 +403,7 @@ B. [패키지 관리자에서 HTTP API](https://docs.adobe.com/content/docs/en/c
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
-1. OSGI 번들 `org.apache.jackrabbit.oak-core`는 버전 1.22.3 이상에 있습니다(웹 콘솔 사용: `/system/console/bundles`).
+1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or later (Use Web Console: `/system/console/bundles`).
 
 이번 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하십시오.
 
@@ -453,7 +446,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 
 ## 이제 사용되지 않는 기능 {#removed-deprecated-features}
 
-이 섹션에는 AEM 6.5.6.0에서 더 이상 사용되지 않는 것으로 표시된 기능이 나와 있습니다. 이후 릴리스에서 제거될 예정인 기능은 먼저 사용 중지로 설정되고 사용할 대체 옵션이 제공됩니다.
+이 섹션에는 Experience Manager 6.5.6.0에서 더 이상 사용되지 않는 것으로 표시된 기능 및 기능이 나열됩니다. 향후 릴리스에서 제거될 예정인 기능은 먼저 더 이상 사용되지 않도록 설정되며, 사용할 대체 옵션이 있습니다.
 
 고객은 현재 배포에서 기능을 사용할지 검토하고 대체 옵션을 사용할 수 있도록 구현 변경을 계획하는 것이 좋습니다.
 
@@ -464,7 +457,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 
 ## 알려진 문제 {#known-issues}
 
-* 6.5 GA에 [!DNL Experience Manager] 6.5 서비스 팩 5 또는 이전 버전을 설치하는 경우 자산 사용자 정의 워크플로우 모델(에서 생성)의 런타임 사본 `/var/workflow/models/dam`이 삭제됩니다.
+* 6.5에 [!DNL Experience Manager] 6.5 서비스 팩 5 또는 이전 서비스 팩을 설치하는 경우, 사용자 지정 워크플로우 모델(에서 생성)의 런타임 복사본 [!DNL Experience Manager] `/var/workflow/models/dam`이 삭제됩니다.
 런타임 복사본을 검색하려면 HTTP API를 사용하여 사용자 지정 워크플로우 모델의 디자인 시간 사본을 해당 런타임 복사본과 동기화하는 것이 Adobe에서 제안합니다.
    `<designModelPath>/jcr:content.generate.json`.
 
