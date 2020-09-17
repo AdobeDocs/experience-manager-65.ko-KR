@@ -3,9 +3,9 @@ title: 리치 텍스트 편집기 플러그인 구성
 description: 개별 기능을 사용하도록 Adobe Experience Manager 리치 텍스트 편집기 플러그인을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 6f5e650c99017c4b2f04ca8495eea8481b3236cd
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4398'
 ht-degree: 3%
 
 ---
@@ -405,7 +405,7 @@ Paragraph Formats 플러그인이 처음 활성화되면 기본 Paragraph Format
 
 
 >[!CAUTION]
-RTE의 단락 형식을 구성할 때는 단락 태그 &lt;p>를 서식 옵션으로 제거하지 마십시오. 태그를 `<p>` 제거한 경우 컨텐츠 작성자는 추가 형식이 구성된 경우에도 **단락 형식** 옵션을 선택할 수 없습니다.
+RTE의 단락 형식을 구성할 때 단락 태그 &lt;p>를 서식 옵션으로 제거하지 마십시오. 태그를 `<p>` 제거한 경우 컨텐츠 작성자는 추가 형식이 구성된 경우에도 **단락 형식** 옵션을 선택할 수 없습니다.
 
 ### 사용 가능한 단락 서식 지정 {#paraformatsindropdown}
 
@@ -503,7 +503,7 @@ CRXDE에서 속성을 저장하면 표현된 문자가 표시됩니다. 아래 �
    * **이름** `rangeStart`
 
       **유형** `Long`
-      **범위** 에서 [첫 번째](https://unicode.org/) 문자의 유니코드 표현(십진수) 값
+      **범위** 에서 첫 [번째](https://unicode.org/) 문자의 유니코드 표현(십진수) 값
 
    * **이름** `rangeEnd`
 
@@ -731,7 +731,7 @@ AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
       * **이름** `cssExternal`
       * **유형** `String`
       * **값** CSS 클래스의 이름(이전 &#39;.&#39; 없이); for example, `cssClass` instead of `.cssClass`)
-   * 유효한 **프로토콜** 배열 `https://``https://`( `file://`, `mailto:` 및 기타프로토콜포함)
+   * 유효한 **프로토콜 배열**. 지원되는 프로토콜은 `http://`, `https://``file://`및 `mailto:`입니다.
 
       * **이름** `protocols`
       * **유형** `String[]`
