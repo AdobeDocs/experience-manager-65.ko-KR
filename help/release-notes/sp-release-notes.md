@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b6db346f7ec2570972329a8edb089fe909120b75
+source-git-commit: 4f6b2bbb58f7f18798eb01a6c8f2cef4b02063a3
 workflow-type: tm+mt
-source-wordcount: '4402'
+source-wordcount: '4413'
 ht-degree: 25%
 
 ---
@@ -47,7 +47,7 @@ Adobe Experience Manager 6.5.6.0에 도입된 주요 기능 및 개선 사항은
 
 * 자동화된 Forms 전환 서비스에서 Adobe Sign 텍스트 태그 지원.
 
-* 색상 있는 양식을 적응형 양식으로 변환하는 지원 [!DNL Automated Forms Conversion service].
+* Support to convert colored forms to adaptive forms using [!DNL Automated Forms Conversion service].
 
 * SMB 2 및 SMB 3 프로토콜 지원
 
@@ -170,6 +170,8 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
 [!DNL Adobe Experience Manager] 6.5.6.0 [!DNL Assets] 은 다음 문제에 대한 수정 사항을 제공합니다.
 
+* 자산의 타임라인에서 주석을 선택하면 강조 표시되지 않습니다(CQ-4302422).
+
 * 템플릿을 사용하여 만든 마케팅 자료 자산(예: 브로셔, 전단지 및 명함)의 미리 보기에는 라인 구분과 단락 나누기가 표시되지 않습니다(NPR-34268). [!DNL Adobe InDesign]
 
 * 텍스트 추출 및 업로드된 PDF 파일에 대한 전체 텍스트 검색이 작동하지 않습니다(NPR-34164). 이를 해결하려면 서비스 팩 6을 설치한 후 배포를 다시 [!DNL sAdobe Experience Manager] 시작하십시오.
@@ -221,7 +223,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
    * `ExcludeFromAVS` 옵션이 제공되지 않습니다(CQ-4298401).
 
-* 이미지 프로필을 여러 종횡비(예: 11)가 있는 폴더에 추가할 때 스마트 자르기 기능이 오류로 인해 실패합니다. (NPR-34082)
+* 이미지 프로필을 여러 종횡비(예: 11)가 있는 폴더에 추가할 때 스마트 자르기 기능이 실패하므로 오류가 발생합니다(NPR-34082).
 
 * DAM 자산 업데이트 워크플로우는 사용자가 Dynamic Media Scene7으로 구성된 [!UICONTROL 도구] 의 워크플로우 [!UICONTROL 탭] 에서 [!UICONTROL 워크플로우][!DNL Adobe Experience Manager] 페이지에서아래로 스크롤할 때트리거됩니다(CQ-429727).
 
