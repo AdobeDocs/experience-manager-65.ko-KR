@@ -3,10 +3,10 @@ title: '[!DNL Adobe Experience Manager] 6.5 이전 서비스 팩 릴리스 노�
 description: 6. [!DNL Adobe Experience Manager] 5 서비스 팩 릴리스 노트입니다.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
+source-git-commit: 5db4dd7ccc7d722f0503b22fdd5ff9e5508be4ea
 workflow-type: tm+mt
-source-wordcount: '11438'
-ht-degree: 99%
+source-wordcount: '11482'
+ht-degree: 98%
 
 ---
 
@@ -74,6 +74,10 @@ Experience Manager 6.5 서비스 팩 5에 소개된 전체 기능, 주요 특징
 * 익명 사용자는 CRXDE Lite 기능(GRANITE-27790)에 액세스할 수 있습니다.
 
 ### [!DNL Assets] {#assets-6550}
+
+>[!IMPORTANT]
+>
+>Windows 사용자 [!DNL Experience Manager desktop app] 는 [데스크톱 앱 버전 2.0.3.2로 업그레이드하여](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html#whats-new-added) 인스턴스 [!DNL Adobe Experience Manager 6.5.5.0] 에서 DAM 저장소에 액세스하도록 권장합니다. 데스크탑 앱 버전 2.0.2를 사용하여 [!DNL Adobe Experience Manager] 6.5.5.0 인스턴스의 DAM 저장소에 액세스할 때 문제가 발생할 수 있습니다.
 
 **Experience Manager Assets의 액세스 가능성이 개선되었습니다**
 
