@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+source-git-commit: c77a353d43a3a6f33dffecf0b4e7672ed3e2dd3f
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 설명서의 작성 섹션에서는 작성 편집 모드에서 AEM 사이트에 커뮤니티 기능을 추가하는 방법과 구성 요소 구성을 설명하는 방법을 설명합니다.
 
-구성 요소는 AEM 인스턴스 및 대화형 커뮤니티 구성 요소 [안내서를 사용하여 탐색할 수 있습니다](components-guide.md).
+AEM 인스턴스와 대화형 커뮤니티 구성 요소 안내서를 사용하여 구성 요소를 [탐색할 수 있습니다](components-guide.md).
 
 ## 커뮤니티 구성 요소 액세스 {#accessing-communities-components}
 
@@ -47,11 +47,11 @@ ht-degree: 2%
 
 다음은 몇 개의 커뮤니티 구성 요소를 선택하고 구성 요소 브라우저에서 보는 이미지입니다.
 
-![chlimage_1-424](assets/chlimage_1-424.png)
+![component-design](assets/component-design.png)
 
 이제 구성 요소 브라우저에서 선택한 구성 요소를 사용할 수 있습니다.
 
-![chlimage_1-425](assets/chlimage_1-425.png)
+![component-design1](assets/component-design1.png)
 
 ## 필수 Clientlibs {#required-clientlibs}
 
@@ -59,13 +59,13 @@ ht-degree: 2%
 
 페이지에 커뮤니티 구성 요소를 추가할 때, 결과가 오류이거나 예기치 않은 모양일 경우, 가장 먼저 시도해야 하는 것은 커뮤니티 구성 요소에 필요한 clientlibs를 추가하는 것입니다. 자세한 내용은 커뮤니티 구성 [요소용 Clientlibs를 참조하십시오](clientlibs.md).
 
-### 예: 처음에 클라이언트 라이브러리 없이 검토 작업.. {#example-initially-placed-reviews-without-client-libraries}
+### 예:처음에 클라이언트 라이브러리 없이 검토 작업.. {#example-initially-placed-reviews-without-client-libraries}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![clientlibs1](assets/clientlibs1.png)
 
-### ... 클라이언트 라이브러리 사용 {#and-with-client-libraries}
+### ...클라이언트 라이브러리 사용 {#and-with-client-libraries}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![clientlibs2](assets/clientlibs2.png)
 
 ## 태깅 {#tagging}
 
@@ -84,12 +84,12 @@ ht-degree: 2%
 관리 정보:
 
 * 태그 네임스페이스(분류) 만들기: [태그 관리](../../help/sites-administering/tags.md)
-* 커뮤니티 사이트 구성: 태그 지정 [참조](sites-console.md#tagging)
+* 커뮤니티 사이트 구성:태그 지정 [참조](sites-console.md#tagging)
 * [사용자 생성 컨텐츠 태그 지정](../../help/sites-authoring/tags.md)
 * [태깅 지원 리소스](tag-resources.md)
 
 개발자 정보:
 
-* [AEM Tagging Framework](../../help/sites-developing/framework.md)
+* [AEM 태깅 프레임워크](../../help/sites-developing/framework.md)
 * [Tagging Essentials](tag.md)
 
