@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.5 서비스 팩 6의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2480'
 ht-degree: 69%
 
 ---
@@ -70,7 +70,7 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 
 ### Other enhancements in Assets {#other-enhancements-assets-6560}
 
-* 이제 비공개 폴더를 삭제할 때 비공개 폴더의 사용자 그룹이 저장소에서 제거됩니다. 비공개 폴더를 삭제하면 고립된 사용자 그룹의 저장소가 정리되므로 비공개 폴더를 만들 때마다 이 그룹이 만들어집니다. 자세한 내용은 폴더 삭제 시 [사용자 그룹 제거를 참조하십시오](#group-removal-on-folder-deletion).
+* 이제 폴더(비공개 및 비공개 아님)와 연관된 사용자 그룹이 해당 폴더를 [삭제할 때 저장소에서 제거됩니다](/help/assets/private-folder.md#delete-private-folder). 그러나 JMX를 사용하여 저장소에서 기존의 중복, 고아, 사용하지 않음 및 자동 생성된 사용자 그룹을 정리할 수 있습니다.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
