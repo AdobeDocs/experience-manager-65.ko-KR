@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 7%
+source-wordcount: '1676'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 ## 소개 {#introduction}
 
-AEM Communities에 대한 블로그 기능은 작성 활동에서 게시 환경에서 발생하는 진정한 커뮤니티 활동으로 바뀌었습니다.
+AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 발생하는 진정한 커뮤니티 활동으로 바뀌었습니다.
 
 블로그 기능은 저널링 포맷으로 커뮤니티 정보를 제공하는 것을 지원합니다. 블로그 항목은 게시 환경에서 승인된 구성원(등록된 로그인 사용자)이 만듭니다.
 
@@ -47,7 +47,7 @@ AEM Communities에 대한 블로그 기능은 작성 활동에서 게시 환경�
 >
 >구성 요소 `Journal` 와 `Journal Sidebar` 의 제목 `Blog` 및 `Blog Sidebar`입니다.
 >
->이제 AEM 6.0 및 이전 릴리스에 있는 블로그 기능이 제거됩니다. 템플릿을 기반으로 했고 작성자만 작성 환경에서 컨텐츠를 만들 수 있었습니다.
+>이제 AEM 6.0 및 이전 릴리스에서 발견된 블로그 기능이 제거됩니다. 템플릿을 기반으로 했고 작성자만 작성 환경에서 컨텐츠를 만들 수 있었습니다.
 
 
 ## 페이지에 블로그 구성 요소 추가 {#adding-blog-components-to-a-page}
@@ -61,19 +61,15 @@ AEM Communities에 대한 블로그 기능은 작성 활동에서 게시 환경�
 
 필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](/help/communities/basics.md).
 
-[필요한 클라이언트측 라이브러리가](/help/communities/blog-developer-basics.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Blog` 방식입니다.
+필요한 [클라이언트측 라이브러리가](/help/communities/blog-developer-basics.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Blog` 방식입니다.
 
-![chlimage_1-147](assets/chlimage_1-147.png)
-
-And how the `Blog Sidebar` will appear:
-
-![chlimage_1-148](assets/chlimage_1-148.png)
+![add-blog-component](assets/add-blog-component.png)
 
 ### 블로그 구성 {#configuring-blog}
 
 액세스할 배치된 `Blog` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![configure](assets/configure-new.png)
 
 ![블로그 설정](assets/blog-configure.png)
 
@@ -153,7 +149,7 @@ And how the `Blog Sidebar` will appear:
 
 * **허용되는 파일 유형**
 
-   선택한 경우에만 `Allow File Uploads` 관련됨 &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   선택한 경우에만 `Allow File Uploads` 관련됨 &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **이미지 첨부 파일 최대 크기**
 
@@ -257,11 +253,11 @@ And how the `Blog Sidebar` will appear:
 
    블로그 항목 보관에 사용되는 형식입니다. 이 형식은 Java 규칙 뒤에 자리 표시자를 사용합니다.
 
-   * yyyy : &#39;2015&#39;와 같은 1년
-   * yy : &#39;15&#39;처럼 짧은 해
-   * MMMMM : 6월처럼 1개월
-   * MMM : 준처럼 짧은 달
-   * MM : 월 번호(예: 06)
+   * yyyy :&#39;2015&#39;와 같은 1년
+   * yy :&#39;15&#39;처럼 짧은 해
+   * MMMMM :6월처럼 1개월
+   * MMM :준처럼 짧은 달
+   * MM :월 번호(예: 06)
 
    기본값은 &quot;yyyy MMMMM&quot;로, &quot;2015년 6월&quot;과 같이 표시됩니다.
 
@@ -307,7 +303,7 @@ And how the `Blog Sidebar` will appear:
 
 로그인한 사용자에게 중재자 또는 관리자 권한이 있으면 블로그에 게시된 모든 블로그 아티클 및 댓글에 대해 [중재 작업](/help/communities/moderate-ugc.md) (구성 요소의 구성에 의해 허용되는 경우)을 수행할 수 있습니다.
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![조정자 홈 페이지](assets/moderator-homepage.png)
 
 #### 구성원 {#members}
 
@@ -322,15 +318,15 @@ And how the `Blog Sidebar` will appear:
 * 자신의 블로그 기사 또는 댓글 삭제
 * 다른 사람의 블로그 기사 또는 댓글에 플래그 지정
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![회원 홈페이지](assets/member-homepage.png)
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![create-blog](assets/create-blog.png)
 
 #### 익명 {#anonymous}
 
 로그인하지 않은 사이트 방문자는 게시된 블로그 기사 및 댓글만 읽을 수 있고, 지원되는 경우 번역할 수 있으며, 블로그 기사 또는 댓글을 추가하거나 다른 사람의 기사 또는 댓글에 플래그를 지정할 수 없습니다.
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![익명 사용자 보기](assets/anonymous-user-view.png)
 
 ## 추가 정보 {#additional-information}
 
