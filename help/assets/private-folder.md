@@ -1,23 +1,27 @@
 ---
-title: 에서 비공개 폴더를 만들고 공유합니다 [!DNL Adobe Experience Manager].
+title: 비공개 폴더( [!DNL Adobe Experience Manager Assets]
 description: 비공개 폴더를 만들고 다른 사용자와 [!DNL Adobe Experience Manager Assets] 공유하고 다양한 권한을 할당하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 2%
+source-wordcount: '642'
+ht-degree: 1%
 
 ---
 
 
-# 비공개 폴더 공유 {#private-folder-sharing}
+# 비공개 폴더( [!DNL Adobe Experience Manager Assets] {#private-folder}
 
 개인 폴더는 [!DNL Adobe Experience Manager Assets] 사용자 인터페이스에서만 사용할 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라, 사용자는 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
 
 >[!NOTE]
 >
 >비공개 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다.
+
+## 비공개 폴더 생성 및 공유 {#create-share-private-folder}
+
+비공개 폴더를 만들고 공유하려면:
 
 1. 콘솔의 도구 모음 [!DNL Assets] 에서 **[!UICONTROL 만들기를]** 클릭한 다음 메뉴에서 **[!UICONTROL 폴더]** 를 선택합니다.
 
@@ -64,3 +68,25 @@ ht-degree: 2%
 >[!NOTE]
 >
 >비공개 폴더를 만들려면 비공개 폴더를 만들 상위 폴더에 대해 ACL 읽기 및 편집 권한이 필요합니다. 관리자가 아닌 경우 기본적으로 이러한 권한이 활성화되어 있지 않습니다 `/content/dam`. 이 경우 비공개 폴더를 만들거나 폴더 설정을 보기 전에 먼저 사용자 ID/그룹에 대한 이러한 권한을 얻습니다.
+
+## 비공개 폴더 삭제 {#delete-private-folder}
+
+폴더를 선택하고 상단 메뉴에서 [!UICONTROL 삭제] 옵션을 선택하거나 키보드에서 백스페이스 키를 사용하여 비공개 폴더를 삭제할 수 있습니다.
+
+### 폴더 삭제 시 사용자 그룹 제거 {#group-removal-on-folder-deletion}
+
+사용자 인터페이스에서 위의 방법을 사용하여 비공개 폴더를 삭제하면 연결된 사용자 그룹도 삭제됩니다. 그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 [JMX를 사용하여 저장소에서 정리될 수 있습니다](#group-clean-up-jmx).
+
+>[!CAUTION]
+>
+>CRXDE Lite에서 비공개 폴더를 삭제하면 중복된 사용자 그룹이 저장소에 남아 있게 됩니다.
+
+### JMX를 사용하여 사용되지 않은 사용자 그룹 정리 {#group-clean-up-jmx}
+
+사용하지 않은 사용자 그룹의 저장소를 정리하려면
+
+1. JMX를 열어 자산의 중복 그룹을 정리합니다 `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+
+1. 이 JMX에서 `clean` 메서드를 호출합니다.
+
+이전에 삭제한 그룹과 동일한 이름으로 비공개 폴더를 만들 때 생성되는 모든 중복 사용자 그룹 또는 자동 생성 그룹이 경로에서 제거됨을 확인할 수 있습니다 `/home/groups/mac/default/<user_name>/<folder_name>`.
