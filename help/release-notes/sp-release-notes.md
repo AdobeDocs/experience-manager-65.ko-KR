@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4da9481dbd74a8cecf13c51b78c94abc4d48332e
+source-git-commit: bd67a41e493cbcf97956de09e088d16997ab0e93
 workflow-type: tm+mt
-source-wordcount: '4485'
+source-wordcount: '4495'
 ht-degree: 24%
 
 ---
@@ -22,10 +22,6 @@ ht-degree: 24%
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2020년 9월 03일 |
 | 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
-
->[!NOTE]
->
->AEM 6.5 서비스 팩 6의 업데이트된 버전을 사용할 수 있습니다. 이미 이전 버전의 서비스 팩 6를 설치한 경우 최신 버전으로 업그레이드하십시오.
 
 ## Adobe Experience Manager 6.5.6.0에 포함된 제품 {#what-s-included-in-aem}
 
@@ -103,7 +99,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 * 참조가 많은 페이지는 비동기식으로 이동할 수 없으며 이동 작업이 실패하는 경우가 있습니다(CQ-4297969).
 * 작성하는 동안 URL에 `/` 문자가 포함된 웹 페이지가 응답하지 않습니다. 작성하는 동안 구성 요소가 추가되면 CPU 사용이 증가하고 브라우저가 응답을 중지합니다(CQ-4295749).
 * 검색 모드에서는 유형/크기 메뉴 옵션에서 선택한 값을 내레이트하지 않습니다. 시각적 포커스가 선택한 요소에 있지 않습니다. 화면 판독기를 사용하는 사용자는 찾아보기 모드를 사용할 수 없습니다(CQ-4294993).
-* 웹 페이지를 만들 때 사용자는 컨텐츠 페이지 [!UICONTROL 템플릿을 선택할 수] 있습니다. 소셜 [!UICONTROL 미디어] 탭에서 기본 설정 XF [!UICONTROL 변형을 선택합니다]. NVDA 검색 모드에서 경험 조각을 선택하려면 키보드 키를 사용할 수 없습니다(CQ-4292669).
+* 웹 페이지를 만들 때 사용자는 컨텐츠 페이지 [!UICONTROL 템플릿을 선택할 수] 있습니다. 소셜 [!UICONTROL 미디어] 탭에서 기본 설정 XF [!UICONTROL 변형을 선택합니다]. NVDA 찾아보기 모드에서 경험 조각을 선택하려면 키보드 키를 사용할 수 없습니다(CQ-4292669).
 * handlebars 라이브러리를 더 안전한 v4.7.3(NPR-34484)으로 업데이트했습니다.
 
 ### [!DNL Assets] {#assets-6560}
@@ -319,6 +315,8 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
 * 적응형 양식에는 열려 있는 리소스 해상도가 있습니다. 이로 인해 제출 실패가 발생합니다. 문제가 간헐적으로 발생합니다(CQ-4299407).
 
+* 처음 필드 구성을 열면 속성 아이콘이 표시되지 않습니다(CQ-4296284).
+
 **워크플로우**
 
 * 워크플로우 승인자가 첨부를 업로드하면 첨부의 이름이 `undefined` (NPR-33699)로 바뀝니다.
@@ -386,6 +384,10 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 1. 패키지 관리자를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다. 사용 방법은 [패키지 관리자](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/administering/contentmanagement/package-manager.html)를 참조하십시오.
 
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
+
+>[!NOTE]
+>
+>알려진 문제로 인해 업데이트된 서비스 팩 패키지를 사용할 수 있습니다. 패키지를 설치하는 것이 좋습니다.
 
 >[!NOTE]
 >
