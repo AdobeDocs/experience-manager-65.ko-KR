@@ -4,9 +4,9 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2de85f2fc8daaf1cc30a1e12b7c18b20a640c747
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '9370'
+source-wordcount: '9368'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 >
 >청크 업로드가 트리거되는 경우의 기본값은 500MB이고 청크 크기는 50MB입니다. 자산을 업로드하는 데 걸리는 시간 [](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) `timeout configuration` 보다 적게 설정하도록 Apache Jackrabbit Oak TokenConfiguration을 수정하는 경우 자산 업로드가 진행되는 동안 세션 시간 제한 상황이 발생할 수 있습니다. 따라서 각 청크 요청이 세션을 새로 고치도록 `chunkUploadMinFileSize` 및 `chunksize`을 변경해야 합니다.
 >
->자격 증명 만료 시간 초과, 지연, 대역폭 및 예상 동시 업로드가 주어지면 다음 두 개를 선택할 수 있도록 하는 최고 값입니다.
+>자격 증명-만료 시간 초과, 지연, 대역폭 및 예상 동시 업로드가 주어지면 다음을 선택할 수 있는 최고 값입니다.
 >
 >* 업로드가 진행되는 동안 청크 업로드를 사용할 수 있는 크기가 있는 파일에 대해 자격 증명 만료가 발생할 수 있습니다.
    >
@@ -202,7 +202,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 |  | 이미지 편집 옵션 | 이미지의 클리핑 마스크를 유지하고 색상 프로파일을 선택할 수 있습니다.<br> 업로드할 때 [이미지 편집 옵션 설정을 참조하십시오](#setting-image-editing-options-at-upload). |
 |  | Postscript 옵션 | PostScript ® 파일 래스터화, 파일 자르기, 투명한 배경 유지, 해상도 선택, 색상 공간 선택 등의 작업을 할 수 있습니다.<br> PostScript [및 Illustrator 업로드 옵션 설정을 참조하십시오](#setting-postscript-and-illustrator-upload-options). |
 |  | Photoshop 옵션 | Adobe® Photoshop® 파일에서 템플릿을 만들고, 레이어를 유지하고, 레이어 이름을 지정하는 방법을 지정하고, 텍스트를 추출하고, 이미지가 템플릿에 고정된 방식을 지정할 수 있습니다.<br> 템플릿은 에서 지원되지 않습니다 [!DNL Experience Manager].<br> Photoshop [업로드 옵션 설정을 참조하십시오](#setting-photoshop-upload-options). |
-|  | PDF 옵션 | 파일 래스터화, 검색 단어 및 링크 추출, eCatalog 자동 생성, 해상도 설정, 색상 공간 선택 등의 작업을 수행할 수 있습니다.<br> eCatalogs는 에서 지원되지 않습니다 [!DNL Experience Manager]. <br> PDF [업로드 옵션 설정을 참조하십시오](#setting-pdf-upload-options). |
+|  | PDF 옵션 | 파일을 래스터화하고, 검색어와 링크를 추출하고, eCatalog를 자동 생성하고, 해상도를 설정하고, 색상 공간을 선택할 수 있습니다.<br> eCatalogs는 에서 지원되지 않습니다 [!DNL Experience Manager]. <br> PDF [업로드 옵션 설정을 참조하십시오](#setting-pdf-upload-options). |
 |  | Illustrator 옵션 | Adobe Illustrator® 파일을 래스터화하고 투명한 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다.<br> PostScript [및 Illustrator 업로드 옵션 설정을 참조하십시오](#setting-postscript-and-illustrator-upload-options). |
 |  | EVideo 옵션 | 비디오 사전 설정을 선택하여 비디오 파일을 트랜스코딩할 수 있습니다.<br> eVideo [업로드 옵션 설정을 참조하십시오](#setting-evideo-upload-options). |
 |  | 배치 집합 사전 설정 | 업로드된 파일에서 이미지 세트 또는 회전 집합을 만들려면 사용할 사전 설정에 대한 활성 열을 클릭합니다. 두 개 이상의 사전 설정을 선택할 수 있습니다. Dynamic Media Classic의 응용 프로그램 설정/배치 집합 사전 설정 페이지에서 사전 설정을 만듭니다.<br> 일괄 [세트 사전 설정 만들기에 대한 자세한 내용은 일괄 세트 사전 설정 구성을](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 참조하십시오.<br> 업로드 시 [배치 집합 사전 설정 설정을 참조하십시오](#setting-batch-set-presets-at-upload). |
