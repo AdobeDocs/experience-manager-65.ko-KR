@@ -3,9 +3,9 @@ title: 비공개 폴더( [!DNL Adobe Experience Manager Assets]
 description: 비공개 폴더를 만들고 다른 사용자와 [!DNL Adobe Experience Manager Assets] 공유하고 다양한 권한을 할당하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: be97ef4f3bb6b904dabcfcd44025a4898bcf4dee
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---
@@ -67,26 +67,30 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->비공개 폴더를 만들려면 비공개 폴더를 만들 상위 폴더에 대해 ACL 읽기 및 편집 권한이 필요합니다. 관리자가 아닌 경우 기본적으로 이러한 권한이 활성화되어 있지 않습니다 `/content/dam`. 이 경우 비공개 폴더를 만들거나 폴더 설정을 보기 전에 먼저 사용자 ID/그룹에 대한 이러한 권한을 얻습니다.
+>비공개 폴더를 만들려면 비공개 폴더를 만들 상위 폴더에 대한 읽기 및 수정 [액세스 권한](/help/sites-administering/security.md#permissions-in-aem) 권한이 필요합니다. 관리자가 아닌 경우 기본적으로 이러한 권한이 활성화되어 있지 않습니다 `/content/dam`. 이 경우 비공개 폴더를 만들기 전에 먼저 사용자 ID/그룹에 대해 이러한 권한을 얻습니다.
 
 ## 비공개 폴더 삭제 {#delete-private-folder}
 
-폴더를 선택하고 상단 메뉴에서 [!UICONTROL 삭제] 옵션을 선택하거나 키보드에서 백스페이스 키를 사용하여 비공개 폴더를 삭제할 수 있습니다.
+폴더를 선택하고 상단 메뉴에서 [!UICONTROL 삭제] 옵션을 선택하거나 키보드에서 백스페이스 키를 사용하여 폴더를 삭제할 수 있습니다.
 
-### 폴더 삭제 시 사용자 그룹 제거 {#group-removal-on-folder-deletion}
-
-사용자 인터페이스에서 위의 방법을 사용하여 비공개 폴더를 삭제하면 연결된 사용자 그룹도 삭제됩니다. 그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 [JMX를 사용하여 저장소에서 정리될 수 있습니다](#group-clean-up-jmx).
+![상단 메뉴에서 옵션 삭제](assets/delete-option.png)
 
 >[!CAUTION]
 >
 >CRXDE Lite에서 비공개 폴더를 삭제하면 중복된 사용자 그룹이 저장소에 남아 있게 됩니다.
 
+>[!NOTE]
+>
+>사용자 인터페이스에서 위의 방법을 사용하여 폴더를 삭제하면 연결된 사용자 그룹도 삭제됩니다.
+그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 [JMX를 사용하여 저장소에서 정리될 수 있습니다](#group-clean-up-jmx).
+
 ### JMX를 사용하여 사용되지 않은 사용자 그룹 정리 {#group-clean-up-jmx}
 
 사용하지 않은 사용자 그룹의 저장소를 정리하려면
 
-1. JMX를 열어 자산의 중복 그룹을 정리합니다 `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+1. JMX를 열어 작성자 인스턴스의 자산에 대한 중복 그룹을 [!DNL Experience Manager] 정리합니다 `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+예, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
 
 1. 이 JMX에서 `clean` 메서드를 호출합니다.
 
-이전에 삭제한 그룹과 동일한 이름으로 비공개 폴더를 만들 때 생성되는 모든 중복 사용자 그룹 또는 자동 생성 그룹이 경로에서 제거됨을 확인할 수 있습니다 `/home/groups/mac/default/<user_name>/<folder_name>`.
+이전에 삭제한 그룹과 동일한 이름으로 폴더를 만들 때 생성되는 모든 중복 사용자 그룹 또는 자동 생성 그룹이 경로에서 제거됨을 확인할 수 있습니다 `/home/groups/mac/default/<user_name>/<folder_name>`.
