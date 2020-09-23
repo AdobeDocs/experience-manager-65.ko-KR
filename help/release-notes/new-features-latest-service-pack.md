@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.5 서비스 팩 6의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2492'
 ht-degree: 69%
 
 ---
@@ -70,7 +70,7 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 
 ### Other enhancements in Assets {#other-enhancements-assets-6560}
 
-* 이제 비공개 폴더를 삭제할 때 비공개 폴더의 사용자 그룹이 저장소에서 제거됩니다. 비공개 폴더를 삭제하면 고립된 사용자 그룹의 저장소가 정리되므로 비공개 폴더를 만들 때마다 이 그룹이 만들어집니다.
+* 이제 비공개 폴더를 삭제할 때 비공개 폴더의 사용자 그룹이 저장소에서 제거됩니다. 비공개 폴더를 삭제하면 고립된 사용자 그룹의 저장소가 정리되므로 비공개 폴더를 만들 때마다 이 그룹이 만들어집니다. 자세한 내용은 폴더 삭제 시 [사용자 그룹 제거를 참조하십시오](#group-removal-on-folder-deletion).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -87,7 +87,7 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 
 AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함되어 있는 경우, 이러한 필드는 이제 인식되어 적응형 양식의 [!DNL Adobe Sign] 필드로 표현됩니다 [!DNL Automated Forms Conversion service]. 서명자는 적응형 양식에 서명하면서 이러한 필드를 채울 수 있습니다.
 
-### 컬러 PDF forms을 적응형 양식으로 변환하는 지원 {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
 
 색상 PDF forms [!DNL Automated Forms Conversion service] 를 응용 양식으로 변환하는 데 사용할 수 있습니다.
 
