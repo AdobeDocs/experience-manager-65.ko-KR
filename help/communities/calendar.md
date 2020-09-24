@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 6%
@@ -42,15 +42,15 @@ ht-degree: 6%
 
 [필요한 클라이언트측 라이브러리가](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Calendar` 방식입니다.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![calendar-component](assets/calendar-component.png)
 
 ### 달력 구성 {#configuring-calendar}
 
 액세스할 배치된 `Calendar` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![configure](assets/configure-new.png)
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![configure-calendar](assets/configure-calendar1.png)
 
 #### 설정 탭 {#settings-tab}
 
@@ -90,7 +90,7 @@ ht-degree: 6%
 
 * **허용되는 파일 유형**
 
-   선택한 경우에만 `Allow File Uploads` 관련됨 &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   선택한 경우에만 `Allow File Uploads` 관련됨 &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **이미지 첨부 파일 최대 크기**
 
@@ -193,7 +193,7 @@ ht-degree: 6%
 
 로그인한 사용자에게 중재자 또는 관리자 권한이 있는 경우 이벤트에 게시된 모든 달력 이벤트 및 댓글에 대해 [중재 작업](/help/communities/moderate-ugc.md) (구성 요소의 구성에서 허용하는 경우)을 수행할 수 있습니다.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![중재자 보기](assets/moderators-view.png)
 
 #### 구성원 {#members}
 
@@ -207,15 +207,15 @@ ht-degree: 6%
 * 자신의 달력 이벤트 또는 주석 삭제
 * 다른 사람의 달력 이벤트 또는 주석 플래그 지정
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![create-event](assets/configure-calendar2.png)
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![event-post](assets/configure-calendar3.png)
 
 #### 익명 {#anonymous}
 
 로그인하지 않은 사이트 방문자는 게시된 달력 이벤트만 읽고, 지원되는 경우 번역만 할 수 있으며, 이벤트 또는 댓글을 추가하거나 다른 사람의 이벤트 또는 댓글에 플래그를 지정할 수 없습니다.
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![익명 사용자 보기](assets/anonymous-user-view1.png)
 
 ## 추가 정보 {#additional-information}
 
