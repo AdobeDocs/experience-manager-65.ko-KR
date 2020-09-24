@@ -6,11 +6,11 @@ seo-description: AEM Forms은 적응형 Forms 및 관련 자산을 관리하는 
 uuid: 2275a0b6-b31e-4d8e-8154-ccdfff3705aa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: introduction
+topic-tags: forms-manager, introduction
 discoiquuid: c0e4c9bb-e12a-4f9a-a8fa-1a8ad41d3995
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8d352255ace00499412a21564f45f61f45060f4d
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 1%
@@ -87,7 +87,7 @@ AEM [!DNL Forms] 서신은 안전하고 개인화되고 인터랙티브한 커�
 
 ### 데이터 사전 {#data-dictionaries}
 
-일반적으로 비즈니스 사용자는 XSD(XML 스키마) 및 Java 클래스와 같은 메타데이터 표현에 대한 지식이 필요하지 않습니다. 그러나 일반적으로 솔루션을 구축하려면 이러한 데이터 구조와 속성에 액세스해야 합니다. AEM [!DNL Forms] 는 데이터 사전을 사용하여 비즈니스 사용자가 기본 데이터 모델에 대한 기술 정보를 몰라도 백엔드 데이터 소스의 정보를 사용할 수 있도록 합니다.
+일반적으로 비즈니스 사용자는 XSD(XML 스키마) 및 Java 클래스와 같은 메타데이터 표현에 대한 지식이 필요하지 않습니다. 그러나 일반적으로 솔루션을 구축하려면 이러한 데이터 구조와 속성에 액세스해야 합니다. AEM [!DNL Forms] 는 비즈니스 사용자가 기본 데이터 모델에 대한 기술 정보를 알지 못하고 백엔드 데이터 소스의 정보를 사용할 수 있도록 하는 데이터 사전을 사용합니다.
 
 데이터 사전 만들기 및 사용에 대한 자세한 내용은 [데이터 사전 문서 만들기를 참조하십시오](../../forms/using/data-dictionary.md)
 
