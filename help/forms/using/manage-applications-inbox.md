@@ -1,16 +1,16 @@
 ---
-title: AEM 받은 편지함에서 양식 애플리케이션 및 작업 관리
-seo-title: AEM 받은 편지함에서 양식 애플리케이션 및 작업 관리
-description: AEM 받은 편지함을 사용하면 애플리케이션을 제출하고 작업을 관리하여 양식 중심의 워크플로우를 실행할 수 있습니다.
-seo-description: AEM 받은 편지함을 사용하면 애플리케이션을 제출하고 작업을 관리하여 양식 중심의 워크플로우를 실행할 수 있습니다.
+title: AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리
+seo-title: AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리
+description: AEM Inbox를 사용하면 애플리케이션을 제출하고 작업을 관리하여 Forms 중심의 워크플로우를 실행할 수 있습니다.
+seo-description: AEM Inbox를 사용하면 애플리케이션을 제출하고 작업을 관리하여 Forms 중심의 워크플로우를 실행할 수 있습니다.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
-topic-tags: publish
+topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# AEM 받은 편지함에서 양식 애플리케이션 및 작업 관리{#manage-forms-applications-and-tasks-in-aem-inbox}
+# AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-양식 중심의 워크플로우를 실행하거나 트리거하는 여러 방법 중 하나는 AEM 받은 편지함의 애플리케이션을 통해 입니다. Forms 워크플로우를 받은 편지함에서 애플리케이션으로 사용하려면 워크플로우 애플리케이션을 만들어야 합니다. 워크플로우 애플리케이션 및 기타 양식 워크플로우 실행 방법에 대한 자세한 내용은 OSGi에서 [양식 중심의 워크플로우 시작을 참조하십시오](../../forms/using/aem-forms-workflow.md#launch).
+AEM 받은 편지함의 애플리케이션을 통해 Forms 중심 워크플로우를 실행하거나 트리거하는 다양한 방법 중 하나를 사용할 수 있습니다. Workflow 응용 프로그램을 만들어 Inbox에서 응용 프로그램으로 Forms 워크플로우를 사용할 수 있도록 해야 합니다. 워크플로우 애플리케이션 및 기타 Forms 워크플로우 실행 방법에 대한 자세한 내용은 [OSGi에서 Forms 중심의 워크플로우 시작을 참조하십시오](../../forms/using/aem-forms-workflow.md#launch).
 
-또한 AEM 받은 편지함은 양식 워크플로우를 포함하여 다양한 AEM 구성 요소의 알림 및 작업을 통합합니다. 할당 작업 단계가 포함된 양식 워크플로우가 트리거되면 연결된 애플리케이션이 할당자의 받은 편지함에 작업으로 나열됩니다. 할당자가 그룹인 경우 개별 요청이나 위임을 받을 때까지 모든 그룹 구성원의 받은 편지함에 작업이 나타납니다.
+또한 AEM Inbox는 Forms 워크플로우를 비롯한 다양한 AEM 구성 요소의 알림 및 작업을 통합합니다. 할당 작업 단계가 포함된 양식 워크플로우가 트리거되면 연결된 애플리케이션이 할당자의 받은 편지함에 작업으로 나열됩니다. 할당자가 그룹인 경우 개별 요청이나 위임을 받을 때까지 모든 그룹 구성원의 받은 편지함에 작업이 나타납니다.
 
 받은 편지함 사용자 인터페이스는 작업을 볼 수 있는 목록 및 달력 보기를 제공합니다. 보기 설정을 구성할 수도 있습니다. 다양한 매개 변수를 기반으로 작업을 필터링할 수 있습니다. 보기 및 필터에 대한 자세한 내용은 받은 편지함 [을 참조하십시오](/help/sites-authoring/inbox.md).
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM 받은 편지함을 사용할 수 있으려면 Workflow-users 그룹의 구성원이어야 합니다.
+>AEM 받은 편지함을 사용하려면 Workflow-users 그룹의 구성원이어야 합니다.
 
 ## 애플리케이션 만들기 {#create-application}
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## 작업 관리 {#manage-tasks}
 
-양식 워크플로우가 트리거되고 사용자가 할당자 그룹의 할당자 또는 일부일 경우 작업이 받은 편지함에 나타납니다. 받은 편지함에서 작업 세부 사항을 보고 작업에 대해 사용 가능한 작업을 수행할 수 있습니다.
+Forms 워크플로우가 트리거되고 사용자가 할당자 그룹의 할당자 또는 일부인 경우 작업이 받은 편지함에 나타납니다. 받은 편지함에서 작업 세부 사항을 보고 작업에 대해 사용 가능한 작업을 수행할 수 있습니다.
 
 ### 요청 또는 위임 작업 {#claim-or-delegate-tasks}
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ### 작업에 대한 세부 사항 보기 및 작업 수행 {#view-details-and-perform-actions-on-tasks}
 
-작업을 열면 작업 세부 사항을 보고 사용 가능한 작업을 수행할 수 있습니다. 작업에 사용할 수 있는 작업은 관련 양식 워크플로우의 지정 작업 단계에서 정의됩니다.
+작업을 열면 작업 세부 사항을 보고 사용 가능한 작업을 수행할 수 있습니다. 작업에 사용할 수 있는 작업은 연관된 Forms 워크플로우의 할당 작업 단계에서 정의됩니다.
 
 1. 을 눌러 작업 축소판을 선택합니다. 선택한 작업을 열거나 위임하는 옵션이 맨 위에 표시됩니다.
 1. 열기 **를** 눌러 작업 세부 사항을 보고 작업을 수행합니다. 세부 작업 보기가 열립니다. 이 보기에서 작업 세부 사항을 보고 작업에 대해 작업을 수행할 수 있습니다.
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 목록에 표시되지 않습니다. 하지만 받은 편지함 필터를 사용하여 작업 유형, 상태, 시작 날짜 및 종료 날짜 등과 같은 여러 매개 변수를 기준으로 작업을 필터링할 수 있습니다. 완료된 작업을 보려면
 
-1. AEM 받은 편지함에서 ![토글 사이드 패널1을](assets/toggle-side-panel1.png) 눌러 필터 선택기를 엽니다.
+1. AEM Inbox에서 ![토글 사이드 패널1을](assets/toggle-side-panel1.png) 눌러 필터 선택기를 엽니다.
 1. 작업 **[!UICONTROL 상태]** 아코디언을 누르고 완료를 **[!UICONTROL 선택합니다]**. 완료된 작업이 모두 표시됩니다.
 
    ![필터](assets/filter.png)
