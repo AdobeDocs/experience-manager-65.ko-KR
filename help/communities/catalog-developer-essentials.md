@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 커뮤니티 사이트에 포함된 카탈로그 기능을 통해 커뮤니티 구성원은 카탈로그에 나열된 활성 리소스를 검색하고 선택할 수 있습니다.
 
-이 구성 요소 [ 를 사용하면 커뮤니티 구성원이 `enablement catalog` 활성 리소스 카탈로그에 액세스할 수 있습니다](catalog.md) [](resources.md). AEM 태그 사용은 카탈로그의 활성 리소스 모양을 관리하는 데 중요한 부분입니다.
+이 구성 요소 [ 를 사용하면 커뮤니티 구성원이 `enablement catalog` 활성 리소스 카탈로그에 액세스할 수 있습니다](catalog.md) [](resources.md). AEM 태그의 사용은 카탈로그의 활성 리소스 모양을 관리하는 데 중요한 부분입니다.
 
 활성 리소스 [태그 지정을 참조하십시오](tag-resources.md).
 
@@ -95,7 +95,7 @@ ht-degree: 3%
    * 다중 속성 추가
 
       * 이름: `se_resource-tags`
-      * 유형: 문자열
+      * 유형:문자열
       * 값: *&lt;[TagID 입력](#pre-filter-tagids)>*
          * 다중 **[!UICONTROL 선택]**
          * 추가 **[!UICONTROL 선택]**
@@ -104,13 +104,13 @@ ht-degree: 3%
 
 * 커뮤니티 사이트 다시 게시
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![configure-catalog](assets/configure-catalog.png)
 
 #### 태그 ID 사전 필터링 {#pre-filter-tagids}
 
 사전 필터 [TagID는](../../help/sites-developing/framework.md#tagid) 활성 리소스에 적용된 태그와 정확히 일치해야 합니다. 사이트의 `resources` 폴더에서 속성 값으로 볼 수 있습니다 `se_resource-tags`.
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![configure-filters](assets/configure-catalog1.png)
 
 ### 참조 API {#reference-apis}
 
@@ -118,5 +118,5 @@ ht-degree: 3%
 
 * [보고 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [보고 Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [보고 분석 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
