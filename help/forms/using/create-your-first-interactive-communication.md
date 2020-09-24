@@ -6,10 +6,13 @@ seo-description: 간단한 인터랙티브 커뮤니케이션 제작
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
-Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 이메일, 청구서 및 환영 키트와 같은 안전하고 개인화된 인터랙티브한 통신의 작성, 조합 및 전달을 중앙 집중화하고 관리합니다. 인터랙티브한 커뮤니케이션은 다음 두 가지 채널을 사용하여 제공할 수 있습니다.인쇄 및 웹 인쇄 채널은 PDF와 종이 문서를 작성하는 데 사용되는 반면 웹 채널은 온라인 경험을 전달하는 데 사용됩니다.
+Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 이메일, 청구서 및 환영 키트와 같은 안전하고 개인화되고 인터랙티브한 통신의 작성, 수집 및 전달을 중앙 집중화하고 관리합니다. 인터랙티브 커뮤니케이션은인쇄 및 웹. 인쇄 채널은 PDF와 종이 커뮤니케이션을 만드는 데 사용되는 반면 웹 채널은 온라인 경험을 전달하는 데 사용됩니다.
 
-이 자습서는 인터랙티브한 커뮤니케이션을 만들기 위한 엔드 투 엔드 프레임워크를 제공합니다. 이 자습서는 사용 사례와 여러 안내선으로 구성됩니다. 각 안내서는 대화형 통신을 만들기 위한 기본 요소로 사용되는 기능을 만드는 데 도움이 됩니다.
+이 자습서는 인터랙티브 커뮤니케이션을 만드는 엔드 투 엔드 프레임워크를 제공합니다. 이 자습서는 사용 사례와 여러 안내선으로 구성됩니다. 각 안내서는 인터랙티브 커뮤니케이션을 만들기 위한 구성 요소로 사용되는 기능을 만드는 데 도움이 됩니다.
 
 다음 이미지는 대화형 통신을 만드는 데 필요한 구성 요소를 보여 줍니다.
 
@@ -36,30 +39,30 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 ## Use case {#use-case}
 
-고객 여정은 사용 사례를 학습하는 것으로 시작됩니다.
+고객 여정은 사용 사례를 익히는 것으로 시작됩니다.
 
-통신 사업자는 고객에게 이메일로 매월 청구서를 보냅니다. 청구서는 인터랙티브 커뮤니케이션이다. 이메일에는 다음이 포함됩니다.
+통신 사업자는 고객에게 이메일로 매월 청구서를 보낸다. 그 법안은 인터랙티브 커뮤니케이션이다. 이메일에는 다음이 포함됩니다.
 
-* 암호로 보호된 PDF를 이 자습서에서 인쇄 채널이라고 합니다. 고객 세부 사항, 청구 세부 사항, 비용 요약, 간편한 결제 모드 및 사용 세부 사항이 포함되어 있습니다.
-* 이 자습서에서 웹 채널이라고 하는 BOM의 웹 버전에 대한 링크. PDF 버전에 포함된 세부 사항 외에 BOM의 웹 버전은 Adobe Target을 기반으로 사용 세부 사항과 개인화된 제안을 그래픽으로 보여줍니다. 웹 버전에는 온라인 결제 양식이 포함되어 있습니다. IC를 종료하지 않고도 온라인 결제를 할 수 있습니다.
-* 온라인 스토리지, 음악 구독, 주문형 비디오 구독 등 부가 가치 서비스 링크.
+* 이 자습서에서 인쇄 채널이라고 하는 암호로 보호된 PDF입니다. 고객 세부 사항, 청구 세부 사항, 비용 요약, 간편한 결제 방식 및 사용 세부 사항이 포함되어 있습니다.
+* 이 튜토리얼에서 웹 채널이라고 하는 BOM의 웹 버전에 대한 링크입니다. PDF 버전에 포함된 세부 사항 외에, 법안의 웹 버전은 Adobe Target을 기반으로 사용 세부 사항과 개인화된 제안을 그래픽으로 보여줍니다. 웹 버전에는 온라인 결제 양식이 포함되어 있습니다. IC를 벗어나지 않고도 온라인 결제를 할 수 있습니다.
+* 온라인 스토리지, 음악 구독 및 주문형 비디오 구독과 같은 부가 가치 서비스에 대한 링크입니다.
 
 ## 전제 조건 {#prerequisites}
 
 * AEM 작성자 인스턴스를 설정합니다.
-* 작성 [인스턴스에 AEM Forms Add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) 설치
+* 작성자 인스턴스에 [AEM Forms Add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) 설치
 * MYSQL 데이터베이스 설정
-* 데이터베이스 공급자로부터 JDBC 데이터베이스 드라이버(JAR 파일)를 얻습니다. 자습서의 예는 MySQL 데이터베이스를 기반으로 하며 Oracle의 MySQL JDBC [데이터베이스 드라이버를](https://dev.mysql.com/downloads/connector/j/5.1.html)사용합니다.
+* 데이터베이스 공급자로부터 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예는 MySQL 데이터베이스를 기반으로 하며 Oracle의 [MySQL JDBC 데이터베이스 드라이버를 사용합니다](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## 1단계:인터랙티브 커뮤니케이션 계획 {#step-plan-the-interactive-communication}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-대화형 통신을 계획하는 첫 번째 단계는 대화형 커뮤니케이션의 컨텐츠를 마무리하는 것입니다. 컨텐츠가 완료되면 이를 분석하여 대화형 통신을 만드는 데 필요한 다양한 자산 유형을 식별해야 합니다.
+대화형 통신을 계획하는 첫 번째 단계는 대화형 커뮤니케이션의 내용을 마무리하는 것입니다. 컨텐츠가 완료되면 이를 분석하여 대화형 통신을 만드는 데 필요한 다양한 자산 유형을 식별해야 합니다.
 
 **목표:**
 
-다음 데이터 입력 모드를 사용하여 인터랙티브 커뮤니케이션에 대한 해부를 만들려면:
+다음과 같은 데이터 입력 모드를 사용하여 인터랙티브 커뮤니케이션의 구조를 만들려면
 
 * 정적 텍스트
 * 양식 데이터 모델
@@ -73,13 +76,13 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-양식 데이터 모델을 사용하면 인터랙티브 커뮤니케이션을 서로 다른 데이터 소스에 연결할 수 있습니다. 예: AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스. 양식 데이터 모델은 연결된 데이터 소스에서 사용할 수 있는 비즈니스 개체 및 서비스의 통합된 데이터 표현 스키마입니다. 대화형 통신과 함께 양식 데이터 모델을 사용하여 연결된 데이터 소스에서 데이터를 검색할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 AEM Forms [데이터 통합을 참조하십시오](/help/forms/using/data-integration.md).
+양식 데이터 모델을 사용하면 인터랙티브 커뮤니케이션을 서로 다른 데이터 소스에 연결할 수 있습니다. 예를 들어 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스를 제공합니다. 양식 데이터 모델은 연결된 데이터 소스에서 사용할 수 있는 비즈니스 엔티티 및 서비스의 통합된 데이터 표현 스키마입니다. 대화형 통신과 함께 양식 데이터 모델을 사용하여 연결된 데이터 소스에서 데이터를 검색할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합을 참조하십시오](/help/forms/using/data-integration.md).
 
 **목표:**
 
 * 데이터베이스 인스턴스(MySQL 데이터베이스)를 데이터 소스로 구성
 * MySQL 데이터베이스를 데이터 소스로 사용하여 양식 데이터 모델 만들기
-* 양식 데이터 모델에 데이터 모델 개체 추가
+* 데이터 모델에 데이터 모델 개체 추가
 * 양식 데이터 모델에 대한 읽기 및 쓰기 서비스 구성
 * 데이터 모델 개체 간 연결 만들기
 * 자동 생성된 샘플 데이터 보기
@@ -106,15 +109,15 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-대화형 통신을 만들려면 인쇄 및 웹 채널용 AEM 서버에서 사용할 수 있는 템플릿이 있어야 합니다.
+대화형 통신을 만들려면 AEM 서버에서 인쇄 및 웹 채널용 템플릿을 사용할 수 있어야 합니다.
 
-인쇄 채널의 템플릿은 Adobe Forms Designer에서 만들고 AEM 서버에 업로드됩니다. 그런 다음 대화형 통신을 만들 때 이러한 템플릿을 사용할 수 있습니다.
+인쇄 채널의 템플릿은 Adobe Forms 디자이너에서 만들고 AEM 서버에 업로드됩니다. 그런 다음 대화형 통신을 만드는 동안 이러한 템플릿을 사용할 수 있습니다.
 
-웹 채널에 대한 템플릿은 AEM에서 만들어집니다. 템플릿 작성자 및 관리자는 웹 템플릿을 만들고 편집하고 활성화할 수 있습니다. 작성 및 활성화된 템플릿은 대화형 통신을 만들 때 사용할 수 있습니다.
+웹 채널의 템플릿은 AEM에서 만듭니다. 템플릿 작성자 및 관리자는 웹 템플릿을 만들고 편집하고 활성화할 수 있습니다. 작성 및 활성화된 템플릿은 대화형 통신을 만드는 동안 사용할 수 있습니다.
 
 **목표:**
 
-* Adobe Forms Designer를 사용하여 인쇄 채널용 XDP 템플릿 만들기
+* Adobe Forms 디자이너를 사용하여 인쇄 채널용 XDP 템플릿 만들기
 * XDP 템플릿을 AEM Forms 서버에 업로드
 * 웹 채널에 대한 템플릿 만들기 및 활성화
 
@@ -124,26 +127,26 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
-양식 데이터 모델, 문서 조각 및 웹 버전에 대한 템플릿과 같은 모든 구성 요소를 만들면 대화형 통신을 만들기 시작할 수 있습니다.
+양식 데이터 모델, 문서 조각 및 웹 버전에 대한 템플릿과 같은 구성 요소를 모두 만들면 인터랙티브 커뮤니케이션 만들기를 시작할 수 있습니다.
 
-인터랙티브 커뮤니케이션은 다음 두 가지 채널을 통해 제공할 수 있습니다.인쇄 및 웹 또한 인쇄 채널을 사용하여 대화형 통신을 마스터로 만들 수도 있습니다. 웹 채널에 대한 마스터 옵션으로 인쇄하면 웹 채널의 컨텐츠, 상속 및 데이터 바인딩이 인쇄 채널에서 파생됩니다.
+인터랙티브 커뮤니케이션은인쇄 및 웹. 또한 인쇄 채널이 있는 대화형 통신을 마스터로 만들 수도 있습니다. 웹 채널에 대한 마스터 옵션으로 인쇄하면 웹 채널의 컨텐츠, 상속 및 데이터 바인딩이 인쇄 채널에서 파생됩니다.
 
 **목표:**
 
 * 인쇄 채널용 대화형 통신 만들기
-* 웹 채널에 대한 대화형 통신 만들기
-* 마스터로 인쇄하여 인쇄 및 웹 인터랙티브한 커뮤니케이션 제작
+* 웹 채널을 위한 대화형 통신 만들기
+* 인쇄물로 인쇄 및 웹 인터랙티브 커뮤니케이션 기본 제작
 * 웹 버전의 인터랙티브 커뮤니케이션에서 동적 표 만들기
-* 웹 버전의 대화형 통신에서 차트 만들기
+* 웹 버전의 인터랙티브 커뮤니케이션으로 차트 만들기
 * 웹 버전의 인터랙티브 커뮤니케이션에서 하이퍼링크 만들기
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
 ## 6단계:인터랙티브한 커뮤니케이션 테스트 {#step-test-your-interactive-communication}
 
-![11 test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
+![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
-대화형 통신을 만든 후에는 변경 내용을 모두 테스트하는 것이 중요합니다. 인터랙티브 커뮤니케이션의 모든 필드를 테스트하는 것은 번거로운 작업입니다. AEM Forms는 웹 브라우저에서 대화형 통신 테스트를 자동화하는 SDK(Calvin SDK)를 제공합니다.
+인터랙티브 커뮤니케이션을 만든 후에는 변경 사항을 모두 테스트하는 것이 중요합니다. 인터랙티브한 커뮤니케이션의 모든 분야를 테스트하는 작업은 번거로운 작업입니다. AEM Forms은 웹 브라우저에서 인터랙티브 커뮤니케이션 테스트를 자동화하는 SDK(Calvin SDK)를 제공합니다.
 
 **목표:**
 
@@ -153,9 +156,9 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 ## 7단계:인터랙티브 커뮤니케이션 게시 {#step-publish-your-interactive-communication}
 
-![12-publish-your-adaptive-form-small](assets/12-publish-your-adaptive-form-_small.png)
+![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-인쇄 및 웹 채널을 사용하여 인터랙티브 커뮤니케이션을 만들고 테스트하고 나면 이러한 자산을 게시할 수 있습니다. 이 자습서에서 설명하는 사용 사례는 이러한 자산을 이메일 클라이언트와 통합하는 데 중점을 둡니다. 이메일 클라이언트는 대화형 통신을 여러 이메일 주소로 전송하는 브리지 역할을 합니다.
+인쇄 및 웹 채널을 사용하여 대화형 통신을 만들고 테스트하고 나면 이러한 자산을 게시할 수 있습니다. 이 자습서에서 설명하는 사용 사례는 이러한 자산을 이메일 클라이언트와 통합하는 데 중점을 둡니다. 이메일 클라이언트는 인터랙티브 커뮤니케이션을 여러 이메일 주소로 전송하는 다리 역할을 합니다.
 
 **목표:**
 
