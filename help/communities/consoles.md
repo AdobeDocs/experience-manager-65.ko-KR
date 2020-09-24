@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 2%
 
 ---
@@ -41,8 +41,6 @@ ht-degree: 2%
 
 ## 전역 탐색 패널 {#global-navigation-panel}
 
-![chlimage_1-91](assets/chlimage_1-91.png)
-
 왼쪽 위 모서리의 `Adobe Experience Manager` 아이콘을 선택하여 전역 탐색 패널을 열고 다음 두 가지 아이콘을 이용할 수 있습니다.
 
 * [탐색 콘솔](#navigation-console)
@@ -52,7 +50,7 @@ ht-degree: 2%
 
 다양한 커뮤니티 콘솔에 액세스하려면 전역 탐색에서 **탐색, 커뮤니티를 선택합니다**.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![커뮤니티](assets/communities.png)
 
 * [사이트](sites-console.md)
 
@@ -68,7 +66,7 @@ ht-degree: 2%
 
 * [보고서](reports.md)
 
-   보고서 콘솔은 커뮤니티 사이트에서 Adobe Analytics을 활성화한 경우 할당, 페이지 보기 및 게시된 컨텐츠(UGC)에 대한 보고서가 생성될 수 [있는 곳입니다](sites-console.md#analytics). 콘솔은 작성 환경에서만 사용할 수 있습니다.
+   보고서 콘솔은 커뮤니티 사이트에서 Adobe Analytics을 활성화한 경우 할당, 페이지 보기 및 게시된 컨텐츠(UGC)에 대한 보고서를 생성할 수 [있는 곳입니다](sites-console.md#analytics). 콘솔은 작성 환경에서만 사용할 수 있습니다.
 
 * [리소스](resources.md)
 
