@@ -5,10 +5,10 @@ description: We.Finance 참조 사이트의 주택 담보 대출 워크플로우
 seo-description: We.Finance 참조 사이트의 주택 담보 대출 워크플로우를 위한 적응형 양식을 통해 Microsoft® Dynamics 365 서비스를 활용하는 방법을 알아봅니다.
 uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: Configuration
+topic-tags: develop, Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
