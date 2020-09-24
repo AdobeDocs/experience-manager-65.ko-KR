@@ -6,11 +6,11 @@ seo-description: 인라인 조건을 사용하고 인터랙티브한 커뮤니�
 uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
-topic-tags: interactive-communications
+topic-tags: interactive-communications, correspondence-management
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -32,7 +32,7 @@ AEM Forms을 사용하면 텍스트 모듈의 인라인 조건을 사용하여 �
 * [통신 관리 개요](/help/forms/using/cm-overview.md)
 * [인터랙티브 커뮤니케이션의 텍스트](../../forms/using/texts-interactive-communications.md)
 
-### 예: 규칙을 사용하여 인터랙티브 커뮤니케이션에서 인라인 텍스트 조건부 지정 {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
+### 예:규칙을 사용하여 인터랙티브 커뮤니케이션에서 인라인 텍스트 조건부 지정 {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
 
 Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조건부 지정하려면 해당 텍스트 문서 조각에서 규칙을 생성할 수 있습니다. 다음 예제는 무료 전화 번호를 대화형 통신 미국 수신자에게만 표시하는 규칙을 사용합니다.
 
@@ -40,7 +40,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
 
 대화형 통신 및 에이전트에 텍스트 조각을 포함하면 에이전트 UI를 사용하여 대화형 통신을 준비하면 받는 사람에 대한 (양식 데이터 모델) 데이터가 평가되고 텍스트는 미국의 수신자에게만 표시됩니다.
 
-### 예: 편지에 인라인 조건을 사용하여 적절한 주소 렌더링  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
+### 예:편지에 인라인 조건을 사용하여 적절한 주소 렌더링  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
 해당 텍스트 모듈에 인라인 조건을 삽입하여 문자에 인라인 조건을 삽입할 수 있습니다. 다음 예에서는 두 가지 조건을 사용하여 DD 요소 성별을 기준으로 적절한 주소인 Sir 또는 Ma&#39;am을 평가하고 표시합니다. 유사한 단계를 사용하여 다른 조건을 만들 수 있습니다.
 
@@ -95,7 +95,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
 
 또한 반복 구배 내에서 규칙/조건을 지정하여 대화형 통신/서신에 렌더링되는 정보/항목을 조건화할 수 있습니다.
 
-### 예: Interactive Communication에서 반복 사용을 사용하여 신용 카드 거래 목록 서식, 구조 및 표시 {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### 예:Interactive Communication에서 반복 사용을 사용하여 신용 카드 거래 목록 서식, 구조 및 표시 {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 다음 예에서는 반복 사용을 사용하여 인터랙티브 커뮤니케이션에서 신용 카드 거래를 구조화하고 렌더링하는 단계를 보여 줍니다.
 
@@ -139,7 +139,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
 
    ![screen_shot_2018-03-09at15516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
-### 예: 서신의 반복 사용을 통해 신용 카드 거래 목록 서식, 구조 및 표시 {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### 예:서신의 반복 사용을 통해 신용 카드 거래 목록 서식, 구조 및 표시 {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 다음 예에서는 반복적인 방법으로 신용 카드 거래를 구조화하고 렌더링하는 단계를 제공합니다. 유사한 단계를 사용하여 다른 시나리오에서 반복을 사용할 수 있습니다.
 
@@ -186,8 +186,8 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
 
 1. 동적 텍스트의 서식을 지정할 구분 기호를 선택하고 체크 표시를 눌러 저장합니다.
 
-   * **줄 바꿈**: 출력 서신의 각 트랜잭션 입력 뒤에 줄 바꿈을 삽입합니다.
-   * **텍스트**: 출력 서신의 각 트랜잭션 입력 뒤에 지정된 텍스트 문자를 삽입합니다.
+   * **줄 바꿈**:출력 서신의 각 트랜잭션 입력 뒤에 줄 바꿈을 삽입합니다.
+   * **텍스트**:출력 서신의 각 트랜잭션 입력 뒤에 지정된 텍스트 문자를 삽입합니다.
 
    조건이 삽입되면 반복이 있는 텍스트가 빨간색으로 강조 표시되고 핸들이 왼쪽에 나타납니다. 반복의 왼쪽에 있는 핸들 위로 마우스를 가져가면 반복 구절을 볼 수 있습니다.
 
