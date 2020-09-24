@@ -7,10 +7,13 @@ uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-topic-tags: page-authoring
+topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 * [시작하기](#getting-started):첫 번째 페이지를 만들고 게시하는 데 필요한 기본 이벤트 순서에 대해 자세히 설명합니다.
 
-* [추가 작업](#further-actions):작성 시 사용할 수 있는 다른 많은 작업을 계속 진행합니다.
+* [추가 작업](#further-actions):작성 시 사용할 수 있는 다른 많은 작업을 계속 수행합니다.
 
 ## 시작하기 {#getting-started}
 
