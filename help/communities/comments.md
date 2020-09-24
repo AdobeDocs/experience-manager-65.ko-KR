@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
+source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 5%
@@ -47,7 +47,7 @@ ht-degree: 5%
 
 필요한 [클라이언트측 라이브러리가](/help/communities/essentials-comments.md#essentials-for-client-side) 포함된 경우 구성 요소가 표시되는 `Comments` 방식입니다.
 
-![chlimage_1-428](assets/chlimage_1-428.png)
+![comments-component](assets/comments-component.png)
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ ht-degree: 5%
 
 * **허용되는 파일 유형**
 
-   파일 업로드 허용이 선택된 경우에만 관련성이 있습니다. &quot;점&quot; 구분 기호가 있는 파일 이름 확장자의 쉼표로 구분된 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 형식을 지정한 경우 지정되지 않은 파일 형식을 사용할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   파일 업로드 허용이 선택된 경우에만 관련성이 있습니다. &quot;점&quot; 구분 기호가 있는 파일 이름 확장자의 쉼표로 구분된 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 형식을 지정한 경우 지정되지 않은 파일 형식을 사용할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **리치 텍스트 편집기**
 
@@ -160,13 +160,13 @@ ht-degree: 5%
 
 ### 사용자 지정 댓글 유형으로 변경 {#changing-to-a-custom-comment-type}
 
-주석 리소스 유형을 변경하면 댓글 시스템에서 더 이상 기본값을 사용하여 주석 인스턴스를 생성하지 않고 개발자가 사용자 정의(확장)한 인스턴스를 생성합니다.
+주석 리소스 유형을 변경하면 댓글 시스템에서 더 이상 기본값을 사용하여 주석 인스턴스를 생성하지 않고 개발자가 사용자 정의(확장)한 주석을 생성합니다.
 
 사용자 지정 리소스 유형이 알려지면 [디자인 모드를](/help/sites-authoring/default-components-designmode.md) `Comments` 입력하고 배치된 구성 요소를 두 번 클릭하여 추가 탭이 있는 대화 상자를 엽니다.
 
 리소스 **유형** 탭에서 구성 요소의 새 인스턴스에 대한 사용자 지정 resourceType을 `Comments or Voting` 지정합니다.
 
-![chlimage_1-429](assets/chlimage_1-429.png)
+![resource-type](assets/resource-type.png)
 
 * **댓글 리소스 유형**
 
