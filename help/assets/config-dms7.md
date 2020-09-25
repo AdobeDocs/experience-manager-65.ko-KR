@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d357b5832a3bd95c372c26fd7553eba70583eb6f
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '5944'
 ht-degree: 1%
@@ -132,19 +132,19 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
 
 이제 기본 구성이 완료되었습니다.다이내믹 미디어 - Scene7 모드를 사용할 준비가 되었습니다.
 
-구성을 추가로 사용자 지정하려면 Dynamic Media - Scene7 모드에서 고급 설정 구성 [(선택 사항) 아래에서 원하는 작업을 완료할 수 있습니다](#optionalconfigurationofadvancedsettingindynamicmediascene7mode).
+구성을 추가로 사용자 지정하려면 Dynamic Media - Scene7 모드에서 고급 설정 구성 [(선택 사항) 아래에서 원하는 작업을 완료할 수 있습니다](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ## (선택 사항) Dynamic Media - Scene7 모드에서 고급 설정 구성 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 다이내믹 미디어 - Scene7 모드의 구성 및 설정을 사용자 정의하거나 성능을 최적화하려는 경우 다음 *선택* 작업 중 하나 이상을 완료할 수 있습니다.
 
-* [(선택 사항) 다이내믹 미디어 설정 및 구성 - Scene7 모드 설정](#optionalsetupandconfigurationofdynamicmediascene7modesettings)
+* [(선택 사항) 다이내믹 미디어 설정 및 구성 - Scene7 모드 설정](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
 * [(선택 사항) 다이내믹 미디어 성능 조정 - Scene7 모드](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(선택 사항) 복제용 자산 필터링](#optional-filtering-assets-for-replication)
 
-### (선택 사항) 다이내믹 미디어 설정 및 구성 - Scene7 모드 설정</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
+### (선택 사항) 다이내믹 미디어 설정 및 구성 - Scene7 모드 설정 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
 실행 모드에 있는 경우 Dynamic Media Classic(Scene7) 사용자 인터페이스 `dynamicmedia_scene7`를 사용하여 Dynamic Media 설정을 변경합니다.
 
@@ -196,7 +196,7 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
 
 >[!NOTE]
 >
->기본적으로 자산의 세부 정보 보기에서 뷰어 **[!UICONTROL 를]** 선택하면 변환 **[!UICONTROL 및 15개의 뷰어 사전 설정을 선택하면]** 15개의 변환이표시됩니다. 이 한도를 늘릴 수 있습니다. 표시되는 [이미지 사전](/help/assets/managing-image-presets.md#increasingthenumberofimagepresetsthatdisplay) 설정 수 증가 [또는 표시되는](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가를 참조하십시오.
+>기본적으로 자산의 세부 정보 보기에서 뷰어 **[!UICONTROL 를]** 선택하면 변환 **[!UICONTROL 및 15개의 뷰어 사전 설정을 선택하면]** 15개의 변환이표시됩니다. 이 한도를 늘릴 수 있습니다. 표시되는 [이미지 사전](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 설정 수 증가 [또는 표시되는](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)뷰어 사전 설정 수 증가를 참조하십시오.
 
 
 #### 색상 관리 구성 {#configuring-color-management}
