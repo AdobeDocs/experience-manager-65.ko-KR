@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 1%
@@ -51,7 +51,7 @@ ht-degree: 1%
       * 디지털 자산 [구성에 대한 자세한 내용을 살펴보십시오](/help/assets/organize-assets.md).
    * 기본 소스 비디오를 폴더에 업로드합니다. 최대 15GB의 비디오 파일을 업로드할 수 있습니다. 폴더에 비디오를 추가하면 폴더에 할당된 비디오 처리 프로필에 따라 인코딩됩니다.
 
-      * [비디오를 업로드합니다](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+      * [비디오를 업로드합니다](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * 지원되는 [입력 파일 포맷에 대한 자세한 내용을 살펴보십시오](/help/assets/assets-formats.md#supported-multimedia-formats).
    * 자산 또는 워크플로우 보기에서 [비디오 인코딩 진행](#monitoring-video-encoding-and-youtube-publishing-progress) 상황을 모니터링할 수 있습니다.
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
       * [디지털 자산](/help/assets/organize-assets.md)구성 [처리 프로필 사용을 위한 디지털 자산을 구성하기 위한 모범 사례에 대한 자세한 내용](organize-assets.md)
 
-      * [비디오 자산](search-assets.md#custompredicates) 검색 또는 [자산 검색](managing-assets-touch-ui.md#search-assets)
+      * [비디오 자산](search-assets.md#custompredicates) 검색 또는 [자산 검색](/help/assets/search-assets.md)
    * 비디오 에셋 미리 보기 및 게시
 
       * 비디오의 소스 비디오 및 인코딩된 표현물과 관련 축소판을 봅니다.
@@ -1222,7 +1222,7 @@ Dynamic Media [- 하이브리드 모드의 비디오 축소판 정보도 참조�
    * 비디오 에셋에 사용할 폴더를 만들었습니다.
    * [비디오 프로필을 폴더에 적용했습니다](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
-   * [비디오를 폴더에 업로드했습니다](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+   * [비디오를 폴더에 업로드했습니다](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. 축소판 이미지를 변경할 업로드된 비디오 자산으로 이동합니다.
 1. 자산 선택 모드에서 **[!UICONTROL 목록 보기]** 또는 **[!UICONTROL 카드 보기]**&#x200B;에서 비디오 자산을 탭합니다.
