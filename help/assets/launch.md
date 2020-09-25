@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '6623'
 ht-degree: 1%
@@ -133,13 +133,13 @@ Experience Cloud 계정에서 오디오 및 비디오에 Adobe Analytics을 사�
 
 ## 다이내믹 미디어 뷰어 확장 사용 {#using-the-dynamic-media-viewers-extension}
 
-통합에 [대한 사용 사례에서](#use%20cases%20for%20the%20integration)언급했듯이, AEM Sites의 새로운 Adobe 실행 통합을 통해 Dynamic Media 뷰어를 추적하고 포함 코드를 사용할 수 있습니다.
+통합에 [대한 사용 사례에서](#use-cases-for-the-integration)언급했듯이, AEM Sites의 새로운 Adobe 실행 통합을 통해 Dynamic Media 뷰어를 추적하고 포함 코드를 사용할 수 있습니다.
 
 ### AEM Sites에서 다이내믹 미디어 뷰어 추적 {#tracking-dynamic-media-viewers-in-aem-sites}
 
 AEM Sites에서 Dynamic Media 뷰어를 추적하려면 [모든 통합 부분](#configuring-all-the-integration-pieces) 구성 섹션에 나열된 모든 단계를 수행해야 합니다. 특히 IMS 구성과 Adobe Launch Cloud 구성을 만들어야 합니다.
 
-적절한 구성을 따르면, Dynamic Media에서 지원하는 WCM 구성 요소를 사용하여 사이트 페이지에 추가하는 모든 Dynamic Media 뷰어는 자동으로 Adobe Analytics으로, 또는 비디오용 Adobe Analytics으로, 또는 두 가지 모두를 추적합니다.
+적절한 구성을 따르면, 다이내믹 미디어에서 지원하는 WCM 구성 요소를 사용하여 사이트 페이지에 추가하는 모든 Dynamic Media 뷰어는 자동으로 Adobe Analytics으로, 또는 비디오용 Adobe Analytics 또는 둘 다에 대한 데이터를 추적합니다.
 
 <!-- To be reviewed and updated:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
@@ -149,7 +149,7 @@ See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe
 
 AEM Sites을 사용하지 않거나 Dynamic Media 뷰어를 AEM Sites 외부의 웹 페이지 또는 둘 다에 포함하지 않는 고객은 여전히 Adobe 론치 통합을 사용할 수 있습니다.
 
-[Adobe Analytics 구성] 및 [Adobe 시작 구성] [섹션에서](#configuringadobeanalytics) 구성 [단계를 완료해야](#configuringadobelaunch) 합니다. 그러나 AEM 관련 구성 단계는 필요하지 않습니다.
+[Adobe Analytics 구성] 및 [Adobe 시작 구성] [섹션에서](#configuring-adobe-analytics-for-the-integration) 구성 [단계를 완료해야](#configuring-adobe-launch-for-the-integration) 합니다. 그러나 AEM 관련 구성 단계는 필요하지 않습니다.
 
 적절한 구성을 통해 Dynamic Media 뷰어를 사용하여 웹 페이지에 Adobe 실행 지원을 추가할 수 있습니다.
 
@@ -162,7 +162,7 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 **포함 코드를 사용하여 Dynamic Media 뷰어를 추적하려면 다음을 수행하십시오**.
 
 1. Dynamic Media 뷰어를 포함할 웹 페이지가 준비되었습니다.
-1. Adobe 론치에 먼저 로그인하여 Adobe 시작 라이브러리에 대한 포함 코드를 얻습니다(Adobe 론치 [구성 참조](#configuringadobelaunch)).
+1. Adobe 론치에 먼저 로그인하여 Adobe 시작 라이브러리에 대한 포함 코드를 얻습니다(Adobe 론치 [구성 참조](#configuring-adobe-launch-for-the-integration)).
 1. 속성 **[!UICONTROL 을]**&#x200B;클릭한 다음 환경 **[!UICONTROL 탭을]** 클릭합니다.
 1. 웹 페이지의 환경과 관련된 환경 수준을 선택합니다. 그런 다음 **[!UICONTROL 설치]** 열에서 상자 아이콘을 클릭합니다.
 1. **[!UICONTROL 웹 설치 지침]** 대화 상자에서 전체 Adobe 실행 라이브러리 포함 코드를 주변 `<script/>` 태그와 함께 복사합니다.
@@ -736,7 +736,7 @@ AEM 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
 1. 이전에 열어 둔 **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지로 돌아갑니다. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]** 을 클릭하여 **[!UICONTROL Adobe IMS 기술 계정 구성]** 창의 **[!UICONTROL 계정]** 페이지를엽니다.
 
-   (실수로 페이지를 앞쪽으로 닫은 경우 AEM 작성자로 돌아간 다음 **[!UICONTROL 도구 > 보안 > Adobe IMS 구성 을 클릭합니다]**. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Adobe 시작을 선택합니다]**. 인증서 **** 드롭다운 목록에서 이전에 만든 인증서의 이름을 선택합니다.)
+   (페이지를 실수로 앞쪽으로 닫은 경우 AEM 작성자로 돌아간 다음 **[!UICONTROL 도구 > 보안 > Adobe IMS 구성 을 클릭합니다]**. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Adobe 시작을 선택합니다]**. 인증서 **** 드롭다운 목록에서 이전에 만든 인증서의 이름을 선택합니다.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
