@@ -6,9 +6,9 @@ user-guide-title: AEM 6.5 개발 사용 안내서
 breadcrumb-title: Developing Guide
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '823'
 ht-degree: 99%
 
 ---
@@ -138,13 +138,14 @@ ht-degree: 99%
    + [AEM Repo Tool](aem-repo-tool.md)
 + 개인화{#personlization}
    + [ContextHub](contexthub.md)
-   + [ContextHub Javascript API 참조](contexthub-api.md)
-   + [ContextHub 확장](ch-extend.md)
+   + [컨텍스트 허브 구성](ch-configuring.md)
    + [페이지에 ContextHub 추가 및 저장소 액세스](ch-adding.md)
+   + [ContextHub 확장](ch-extend.md)
    + [샘플 ContextHub 저장소 후보](ch-samplestores.md)
    + [샘플 ContextHub UI 모듈 유형](ch-samplemodules.md)
    + [ContextHub 진단](ch-diagnostics.md)
    + [타깃팅된 컨텐츠를 위한 개발](target.md)
+   + [ContextHub Javascript API 참조](contexthub-api.md)
    + Client Context{#client-context}
       + [Client Context 관련 세부 사항](client-context.md)
       + [Client Context Javascript API](ccjsapi.md)
