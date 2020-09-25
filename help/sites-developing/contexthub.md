@@ -10,39 +10,42 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 1%
 
 ---
 
 
 # ContextHub{#contexthub}
 
-ContextHub은 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크입니다. 클라이언트측 Javascript API를 사용하면 컨텐츠를 개인화하기 위해 데이터에 액세스할 수 있습니다.
+ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크입니다. 클라이언트측 Javascript API를 사용하면 컨텐츠를 개인화하기 위해 데이터에 액세스할 수 있습니다.
 
 >[!NOTE]
 >
->We. [Retail 참조 구현은](/help/sites-developing/we-retail.md) ContextHub를 구현하며 ContextHub를 자신의 프로젝트에 통합할 때 참조 역할을 할 수 있습니다.
+>We. [Retail 참조 구현은](/help/sites-developing/we-retail.md) ContextHub를 구현하며, ContextHub를 프로젝트에 통합할 때 참조 역할을 할 수 있습니다.
 
 >[!CAUTION]
 >
->We.Retail 참조 구현 [(](/help/sites-developing/we-retail.md) `/libs/settings/cloudsettings/legacy`)에서 사용되는 샘플 ContextHub 구성을 포함하는 경로는 자체 구성을 만들기 위한 참조로만 사용해야 합니다.
+>We.Retail 참조 구현 [()에서 사용되는 샘플 ContextHub 구성을 포함하는](/help/sites-developing/we-retail.md) `/libs/settings/cloudsettings/legacy`경로는 자체 구성을 만들기 위한 참조로만 사용해야 합니다.
 >
->프로젝트에서 자체 ContextHub 구성으로 사용해서는 안 됩니다.
+>프로젝트에서 자신의 ContextHub 구성으로 사용해서는 안 됩니다.
 
 ## 지속성 {#persistence}
 
-ContextHub 저장소는 클라이언트에서 컨텍스트 데이터를 유지합니다. ContextHub Javascript API를 사용하면 필요에 따라 데이터를 생성, 업데이트 및 삭제할 수 있는 저장소에 액세스할 수 있습니다. 따라서 ContextHub은 페이지의 데이터 레이어를 나타냅니다.
+ContextHub 저장소는 클라이언트에 컨텍스트 데이터를 저장합니다. ContextHub Javascript API를 사용하면 필요에 따라 데이터를 생성, 업데이트 및 삭제할 수 있는 저장소에 액세스할 수 있습니다. 따라서 ContextHub은 페이지의 데이터 레이어를 나타냅니다.
 
 각 ContextHub 저장소는 사전 정의된 저장소 유형의 인스턴스입니다.
 
-* ContextHub에서는 몇 가지 [샘플 스토어 유형을](/help/sites-developing/ch-samplestores.md)제공합니다.
-* AEM 콘솔을 사용하여 스토어를 [만듭니다](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
+* ContextHub에서는 몇 가지 [샘플 스토어 유형을 제공합니다](/help/sites-developing/ch-samplestores.md).
+* AEM 콘솔을 사용하여 스토어 [를 만듭니다](ch-configuring.md#creating-a-contexthub-store).
 * 개발자는 맞춤형 스토어 유형을 [만들 수 있습니다](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
-* 개발자는 Javascript를 통해 스토어 데이터에 [](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) 액세스할 수 있습니다.
+* 개발자는 [Javascript를 통해 스토어 데이터에](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) 액세스할 수 있습니다.
 
 ## 세그멘테이션 {#segmentation}
 
-ContextHub에는 세그먼트를 관리하고 현재 컨텍스트에 대해 해결된 세그먼트를 결정하는 세그멘테이션 엔진이 포함되어 있습니다. 여러 세그먼트가 정의됩니다. Javascript API를 사용하여 해결된 세그먼트를 [](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments)확인할 수 있습니다.
+ContextHub에는 세그먼트를 관리하고 현재 컨텍스트에 대해 해결된 세그먼트를 결정하는 세그멘테이션 엔진이 포함되어 있습니다. 여러 세그먼트가 정의됩니다. Javascript API를 사용하여 [해결된 세그먼트를 결정할 수 있습니다](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
 
 ## 프레젠테이션 {#presentation}
 
@@ -50,8 +53,8 @@ ContextHub [도구 모음을](/help/sites-authoring/ch-previewing.md) 사용하�
 
 각 ContextHub UI 모듈은 사전 정의된 모듈 유형의 인스턴스입니다.
 
-* ContextHub에서는 몇 가지 [샘플 모듈 유형을](/help/sites-developing/ch-samplemodules.md)제공합니다.
-* AEM 콘솔을 사용하여 UI 모듈을 [](/help/sites-administering/contexthub-config.md#adding-a-ui-module)추가하고 UI 모드로 [그룹화할 수 있습니다](/help/sites-administering/contexthub-config.md#adding-a-ui-mode).
+* ContextHub에서는 몇 가지 [샘플 모듈 유형을 제공합니다](/help/sites-developing/ch-samplemodules.md).
+* AEM 콘솔을 사용하여 UI 모듈을 [추가하고](ch-configuring.md#adding-a-ui-module)UI 모드로 [그룹화할 수 있습니다](ch-configuring.md#adding-a-ui-mode).
 
 * 개발자는 맞춤형 모듈 유형을 [만들 수 있습니다](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
