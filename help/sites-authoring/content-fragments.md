@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 100%
@@ -29,7 +29,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 
 >[!NOTE]
 >
->**컨텐츠 조각** 및 **[경험 조각](/help/sites-authoring/experience-fragments.md)**은 AEM 내의 다양한 기능입니다.
+>**컨텐츠 조각** 및 **[경험 조각](/help/sites-authoring/experience-fragments.md)**&#x200B;은 AEM 내의 다양한 기능입니다.
 >
 >* **컨텐츠 조각**&#x200B;은 편집 가능한 컨텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 컨텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
@@ -148,7 +148,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 
 특정 컨텐츠 조각이 페이지에 추가되면 조각의 각 HTML 단락 사이(및 상단/하단)에 **구성 요소를 여기로 드래그하십시오.** 자리 표시자가 있습니다.
 
-이렇게 하면 루트 조각을 변경하지 않고도 조각 컨텐츠 [사이(즉, 중간 컨텐츠)](/help/assets/content-fragments/content-fragments.md#inbetweencontent)(사용 가능한 모든 지점)에 컨텐츠를 더 추가할 수 있습니다.
+이렇게 하면 루트 조각을 변경하지 않고도 조각 컨텐츠 [사이(즉, 중간 컨텐츠)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)(사용 가능한 모든 지점)에 컨텐츠를 더 추가할 수 있습니다.
 
 중간 컨텐츠에서 다음 작업을 수행할 수 있습니다.
 
@@ -186,7 +186,7 @@ AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산
 
 ### 관련 컨텐츠 사용 {#using-associated-content}
 
-[](/help/assets/content-fragments/content-fragments-assoc-content.md)컨텐츠를 컨텐츠 조각과 연결[](/help/assets/content-fragments/content-fragments.md)한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). 연관된 컨텐츠는 [중간 컨텐츠](#adding-in-between-content)의 특별한 컨텐츠 소스입니다.
+[관련 컨텐츠](/help/assets/content-fragments/content-fragments-assoc-content.md)를 [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)과 연결한 경우 이러한 자산은 사이드 패널에서 사용할 수 있습니다(조각을 컨텐츠 페이지에 배치한 후에). 연관된 컨텐츠는 [중간 컨텐츠](#adding-in-between-content)의 특별한 컨텐츠 소스입니다.
 
 >[!NOTE]
 >
