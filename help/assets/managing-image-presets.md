@@ -10,7 +10,7 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 3%
@@ -60,7 +60,7 @@ AEM 로고를 탭하거나 클릭하여 글로벌 탐색 콘솔에 액세스한 
 
 >[!NOTE]
 >
->자산의 세부 정보 보기에서 표현물을 선택하면 **[!UICONTROL 다양한]** 표현물이 표시됩니다. 표시되는 이미지 사전 설정 수를 늘리거나 줄일 수 있습니다. 표시되는 [이미지 사전 설정 수 증가를 참조하십시오](#increasingthenumberofimagepresetsthatdisplay).
+>자산의 세부 정보 보기에서 표현물을 선택하면 **[!UICONTROL 다양한]** 표현물이 표시됩니다. 표시되는 이미지 사전 설정 수를 늘리거나 줄일 수 있습니다. 표시되는 [이미지 사전 설정 수 증가를 참조하십시오](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 ### Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 포맷 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
