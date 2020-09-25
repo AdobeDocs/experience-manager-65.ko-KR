@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '2076'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Assets의 다른 자산을 [업로드하듯이 이미지 세트에 대한 이미
 
 >[!NOTE]
 >
->또한 [일괄 세트 사전 설정을 통해 자동으로 이미지 세트를 만들 수도 있습니다](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
+>또한 [일괄 세트 사전 설정을 통해 자동으로 이미지 세트를 만들 수도 있습니다](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >**중요:** 배치 세트는 IPS(Image Production System)를 통해 자산 수정의 일부로 생성되며 다이내믹 미디어 - Scene7 모드에서만 사용할 수 있습니다.
 
 세트에 자산을 추가하면 자동으로 영숫자 순서로 추가됩니다. 자산을 추가한 후에 수동으로 다시 정렬하거나 정렬할 수 있습니다.
@@ -172,7 +172,7 @@ Assets의 다른 자산을 [업로드하듯이 이미지 세트에 대한 이미
 
 ## 이미지 세트 보기 {#viewing-image-sets}
 
-사용자 인터페이스에서 또는 [일괄 세트 사전 설정을 사용하여 자동으로 이미지 세트를 만들 수 있습니다](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
+사용자 인터페이스에서 또는 [일괄 세트 사전 설정을 사용하여 자동으로 이미지 세트를 만들 수 있습니다](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 >[!IMPORTANT]
 >
