@@ -6,7 +6,7 @@ user-guide-title: AEM 6.5 관리 사용 안내서
 breadcrumb-title: Administering Guide
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 16%
@@ -97,7 +97,7 @@ ht-degree: 16%
    + [AEM 6.5의 사용자 지정 사용자 그룹 매핑](/help/sites-administering/cug-mapping.md)
 + 개인화 {#personalization}
    + [개인화](personalization.md)
-   + [ContextHub 구성](contexthub-config.md)
+   + [ContextHub 구성](/help/sites-developing/ch-configuring.md)
    + [Client Context](client-context.md)
    + [캠페인](campaigns.md)
    + [ContextHub로 세그멘테이션 구성](segmentation.md)
