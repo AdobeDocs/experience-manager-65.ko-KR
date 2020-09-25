@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
@@ -30,7 +30,7 @@ See also [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
 업로드된 자산이 파노라마 이미지 뷰어와 함께 사용할 구형 파노라마 이미지로 자격을 갖추려면 자산에 다음 중 하나 또는 둘 다가 있어야 합니다.
 
 * 2 종횡비
-CRXDE Lite의 기본 종횡비 설정(2의 기본 종횡비 설정)은 다음과 같이 재정의할 수 있습니다.
+CRXDE Lite의 기본 종횡비 설정(2의 경우)은 다음과 같이 재정의할 수 있습니다.
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * 키워드 `equirectangular`, `spherical`및 `panorama`및 `spherical` 및 `panoramic`으로 태그되었습니다. 태그 [사용을 참조하십시오](/help/sites-authoring/tags.md).
@@ -39,9 +39,9 @@ CRXDE Lite의 기본 종횡비 설정(2의 기본 종횡비 설정)은 다음과
 
 파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 자산 [업로드를 참조하십시오](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
-## Dynamic Media 클래식 구성(Scene7) {#configuring-dynamic-media-classic-scene}
+## Dynamic Media Classic 구성(Scene7) {#configuring-dynamic-media-classic-scene}
 
-파노라마 이미지 뷰어가 AEM 내에서 제대로 작동하려면 JCR에서 뷰어 사전 설정이 업데이트되도록 Scene7(Scene7) 및 Dynamic Media Classic(Scene7) 관련 메타데이터와 파노라마 이미지 뷰어 사전 설정을 동기화해야 합니다. 이 작업을 수행하려면 다음 방법으로 Dynamic Media Classic(Scene7)을 구성하십시오.
+Panoric Image 뷰어가 AEM 내에서 제대로 작동하려면 Panoramic Image 뷰어 사전 설정을 Dynamic Media Classic(Scene7) 및 Dynamic Media Classic(Scene7)별 메타데이터와 동기화해야 JCR에서 뷰어 사전 설정이 업데이트됩니다. 이를 수행하려면 다음 방법으로 Dynamic Media Classic(Scene7)을 구성하십시오.
 
 1. [각 회사 계정에 대한 Dynamic Media Classic(Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 인스턴스에 로그인합니다.
 
@@ -66,17 +66,17 @@ CRXDE Lite의 기본 종횡비 설정(2의 기본 종횡비 설정)은 다음과
 
 1. [이미지 서버 게시] 페이지 하단의 왼쪽에서 [저장]을 **[!UICONTROL 클릭합니다.]**
 
-1. 오른쪽 아래 모서리에서 **[!UICONTROL 닫기를 클릭합니다.]**
+1. 오른쪽 아래 모서리에서 닫기를 **[!UICONTROL 클릭합니다.]**
 
 ### 파노라마 미디어 WCM 구성 요소 문제 해결 {#troubleshooting-the-panoramic-media-wcm-component}
 
 WCM의 파노라마 미디어 구성 요소에 이미지를 드롭했고 구성 요소 자리 표시자가 축소된 경우 다음 문제를 해결하려고 할 수 있습니다.
 
-* 403 금지 오류가 발생하는 경우 요청한 이미지 크기가 너무 커서 발생할 수 있습니다. Dynamic Media **[!UICONTROL 클래식(Scene7)]** 구성에서 응답 이미지 크기 제한 [설정을](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7))검토하십시오.
+* 403 금지 오류가 발생하는 경우 요청한 이미지 크기가 너무 커서 발생할 수 있습니다. Dynamic Media Classic **[!UICONTROL 구성(Scene7)에서]** 회신 이미지 크기 제한 [설정을](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene)검토하십시오.
 
 * 자산에 대한 &quot;잘못된 잠금&quot; 또는 페이지에 표시된 &quot;구문 분석 오류&quot;의 경우 요청 난독화 모드 및 요청 잠금 모드를 선택하여 이 잠금이 해제되었는지 확인합니다.
 * 잘못된 캔버스 오류의 경우 이미지 자산에 대한 이전 요청에 대해 규칙 세트 정의 파일 경로를 설정하고 CTN을 무효화합니다.
-* 이미지 요청이 지원되는 제한보다 크게 길어질 경우 [ **[!UICONTROL JPEG 인코딩 속성] > [품질]** ] 설정이 비어 있지 않은지 확인하십시오. 품질 **[!UICONTROL 필드의 일반적인]** 설정은 `95`입니다. [이미지 서버 게시] 페이지에서 설정을 찾을 수 있습니다. 페이지에 액세스하려면 Dynamic Media [클래식 구성(Scene7)을 참조하십시오](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* 이미지 요청이 지원되는 제한보다 크게 길어질 경우 [ **[!UICONTROL JPEG 인코딩 속성] > [품질]** ] 설정이 비어 있지 않은지 확인하십시오. 품질 **[!UICONTROL 필드의 일반적인]** 설정은 `95`입니다. [이미지 서버 게시] 페이지에서 설정을 찾을 수 있습니다. 페이지에 액세스하려면 Dynamic Media [Classic 구성(Scene7)을 참조하십시오](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## 파노라마 이미지 미리 보기 {#previewing-panoramic-images}
 
