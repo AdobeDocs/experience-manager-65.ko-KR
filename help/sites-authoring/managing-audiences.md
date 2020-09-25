@@ -1,7 +1,7 @@
 ---
 title: 대상자 관리
 seo-title: 대상자 관리
-description: 대상 콘솔을 사용하면 Adobe Target 계정용 대상을 생성, 구성 및 관리하거나 ContextHub 또는 Client Context용 세그먼트를 관리할 수 있습니다.
+description: 대상자 콘솔을 사용하면 Adobe Target 계정용 대상자를 생성, 구성 및 관리하거나 ContextHub 또는 Client Context용 세그먼트를 관리할 수 있습니다.
 seo-description: 대상자 콘솔을 사용하면 Adobe Target 계정용 대상자를 생성, 구성 및 관리하거나 ContextHub 또는 Client Context용 세그먼트를 관리할 수 있습니다.
 uuid: 76408a8c-25db-4e9f-8a69-27e820a2a7cf
 contentOwner: msm-service
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
-translation-type: ht
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ ContextHub와 Client Context에서 *세그먼트*&#x200B;라고 하는 대상�
    >
    >**수정됨**&#x200B;을 탭하거나 클릭하여 수정된 목록을 정렬하면 새로 만들어진 대상자를 내림차순으로 정렬하여 볼 수 있습니다.
 
-ContextHub을 사용하여 세그먼트를 만드는 방법에 대한 자세히 알려면 [ContextHub을 사용한 세그멘테이션 구성](/help/sites-administering/segmentation.md) 설명서를 참조하십시오.
+ContextHub을 사용하여 세그먼트를 만드는 방법에 대한 자세히 알려면 ](/help/sites-administering/segmentation.md)ContextHub을 사용한 세그멘테이션 구성[ 설명서를 참조하십시오.
 
 ## 대상 콘솔을 사용하여 Adobe Target 대상 만들기 {#creating-an-adobe-target-audience-using-the-audience-console}
 
@@ -110,4 +110,4 @@ Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 
 1. 탐색 콘솔에서 **개인화**&#x200B;를 클릭하거나 탭합니다. **대상자**&#x200B;를 클릭하거나 탭합니다.
 1. 편집하려는 ContextHub 또는 Client Context 세그먼트 옆에 있는 아이콘을 탭하거나 클릭하고 **편집**&#x200B;을 탭하거나 클릭합니다.
-1. 세그먼트 편집기에서 편집을 수행합니다. [Client Context](/help/sites-administering/campaign-segmentation.md) 또는 [ContextHub](/help/sites-administering/contexthub-config.md) 설명서를 참조하십시오.
+1. 세그먼트 편집기에서 편집을 수행합니다. [Client Context](/help/sites-administering/campaign-segmentation.md) 또는 [ContextHub](/help/sites-developing/ch-configuring.md) 설명서를 참조하십시오.
