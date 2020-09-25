@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '5029'
 ht-degree: 1%
@@ -532,7 +532,7 @@ UI 모듈 및 UI 모듈 렌더러를 관리합니다.
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-ContextHub에 UI 모듈 렌더러를 등록합니다. 렌더러가 등록되면 UI 모듈을 [만드는 데 사용할 수 있습니다](/help/sites-administering/contexthub-config.md#adding-a-ui-module). 사용자 정의 UI 모듈 렌더러를 [만들려면 이 함수를](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) ContextHub.UI.BaseModuleRenderer를 확장할 때 사용합니다.
+ContextHub에 UI 모듈 렌더러를 등록합니다. 렌더러가 등록되면 UI 모듈을 [만드는 데 사용할 수 있습니다](ch-configuring.md#adding-a-ui-module). 사용자 정의 UI 모듈 렌더러를 [만들려면 이 함수를](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) ContextHub.UI.BaseModuleRenderer를 확장할 때 사용합니다.
 
 **매개 변수**
 
