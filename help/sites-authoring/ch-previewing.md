@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 * UI 모드는 도구 모음의 왼쪽에 표시되는 아이콘입니다. 아이콘을 클릭하거나 탭하면 포함된 UI 모듈이 도구 모음에 표시됩니다.
 * UI 모듈은 하나 이상의 ContextHub 저장소에서 가져온 데이터를 표시합니다. 일부 UI 모듈에서는 저장소 데이터를 조작할 수도 있습니다.
 
-ContextHub는 몇 가지 UI 모드와 UI 모듈을 설치합니다. 관리자가 다른 것들을 표시하도록 [ContextHub를 구성](/help/sites-administering/contexthub-config.md)했을 수 있습니다.
+ContextHub는 몇 가지 UI 모드와 UI 모듈을 설치합니다. 관리자가 다른 것들을 표시하도록 [ContextHub를 구성](/help/sites-developing/ch-configuring.md)했을 수 있습니다.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 
