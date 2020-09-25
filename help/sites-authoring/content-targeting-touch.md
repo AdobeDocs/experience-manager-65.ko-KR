@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
-translation-type: ht
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 100%
 
@@ -731,5 +731,4 @@ Client Context(클라이언트측)를 엔진으로 선택하는 경우:
 
 AEM을 Adobe Campaign과 통합하는 경우 엔진으로 **Adobe Campaign**&#x200B;을 선택합니다. 자세한 내용은 [Adobe Campaign과 AEM 통합](/help/sites-administering/campaign.md)을 참조하십시오.
 
-타깃팅에 ContextHub를 사용하는 경우에는 엔진으로 **ContextHub**&#x200B;를 선택하십시오. [ContextHub 구성](/help/sites-administering/contexthub-config.md)을 참조하십시오.
-
+타깃팅에 ContextHub를 사용하는 경우에는 엔진으로 **ContextHub**&#x200B;를 선택하십시오. [ContextHub 구성](/help/sites-developing/ch-configuring.md)을 참조하십시오.
