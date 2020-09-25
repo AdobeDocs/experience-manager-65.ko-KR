@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: bd67a41e493cbcf97956de09e088d16997ab0e93
+source-git-commit: 74ab94126383d53dac5f55171266c66c28757969
 workflow-type: tm+mt
-source-wordcount: '4495'
+source-wordcount: '4518'
 ht-degree: 24%
 
 ---
@@ -290,6 +290,16 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 >[!NOTE]
 >
 >[!DNL Experience Manager] 서비스 팩에는 [!DNL Forms] 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 [!DNL Forms] 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 [!DNL Experience Manager Forms]에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치](#install-aem-forms-jee-installer)를 참조하십시오.
+
+6. [!DNL Experience Manager Forms] 5.6.0 Add-on 패키지를 설치한 후:
+
+* Stop the [!DNL Experience Manager Forms] instance.
+
+* 디렉토리에서 `bcpkix-1.51`JAR 파일 `bcmail-1.51`및 `bcprov-1.51` JAR 파일을 `crx-repository\launchpad\ext` 삭제합니다.
+
+* 파일에서` sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider` 속성을 `sling.properties` 삭제합니다.
+
+* 인스턴스를 다시 [!DNL Experience Manager Forms] 시작합니다.
 
 **적응형 양식**
 
