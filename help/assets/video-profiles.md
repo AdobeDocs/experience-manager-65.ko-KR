@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 3%
@@ -373,7 +373,7 @@ Dynamic Media는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.264
 
 특정 폴더 또는 모든 자산에 전역으로 비디오 프로필을 적용할 수 있습니다.
 
-나중에 변경한 기존 비디오 프로필이 이미 있는 폴더의 에셋을 다시 처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile)를 참조하십시오.
+나중에 변경한 기존 비디오 프로필이 이미 있는 폴더의 에셋을 다시 처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
 
 ### 특정 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-specific-folders}
 
@@ -381,7 +381,7 @@ Dynamic Media는 이미 최상의 보기 경험을 위해 최적화된 MP4 H.264
 
 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 #### 프로필 사용자 인터페이스를 통해 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
@@ -402,7 +402,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 폴더에 프로필을 적용하는 것 외에도, 모든 폴더의 AEM 자산에 업로드된 콘텐트에 선택한 프로필이 적용되도록 전체적으로 적용할 수도 있습니다.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile).
+See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 **비디오 프로필을 전체적으로 적용하려면**,
 
