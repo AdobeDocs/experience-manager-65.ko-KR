@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '1781'
+ht-degree: 90%
 
 ---
 
@@ -43,7 +46,8 @@ source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
       * 그러면 새 태그가 표시되고 태그 오른쪽에는 새 태그임을 가리키는 작은 별이 표시됩니다.
    * 드롭다운 기능을 통해 기존 태그에서 선택할 수 있습니다.
    * 선택 상자에서 태그 항목을 마우스로 가리키면 x가 표시됩니다. 이를 통해 이 페이지에서 해당 태그를 제거할 수 있습니다.
-   태그에 대한 자세한 내용은 ](/help/sites-authoring/tags.md)태그 사용[을 참조하십시오.
+
+   태그에 대한 자세한 내용은 [태그 사용](/help/sites-authoring/tags.md)을 참조하십시오.
 
 * **탐색 시 숨김**
 
@@ -92,7 +96,7 @@ source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
    >* 기존 페이지로 설정하면 안 됩니다.
 
 
-   또한 별칭 URL에 대한 액세스를 사용하도록 Dispatcher를 구성해야 합니다. 자세한 [내용은 별칭 URL에](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) 액세스 활성화를 참조하십시오.
+   별칭 URL에 대한 액세스를 사용하도록 Dispatcher를 구성해야 합니다. 자세한 [내용은 별칭 URL에](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) 대한 액세스 활성화를 참조하십시오.
 
 * **별칭 URL 리디렉션**
 
@@ -146,11 +150,11 @@ source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
 
    >[!NOTE]
    >
-   >페이지의 닫힌 사용자 그룹은 **[권한](/help/sites-authoring/editing-page-properties.md#permissions)**탭에 정의됩니다.
+   >페이지의 닫힌 사용자 그룹은 **[권한](/help/sites-authoring/editing-page-properties.md#permissions)** 탭에 정의됩니다.
 
    >[!CAUTION]
    >
-   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)**tab allows editing of CUG configurations based on the presence of the`granite:AuthenticationRequired`mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of`cq:cugEnabled`property, a warning message will be shown under **Authentication Requirement**and the option will not be editable, nor will the[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)be editable.
+   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
@@ -204,11 +208,11 @@ source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
 
 * **ContextHub 구성**
 
-   [ContextHub 구성](/help/sites-administering/contexthub-config.md) 및 [세그먼트 경로](/help/sites-administering/segmentation.md)를 선택합니다.
+   [ContextHub 구성](/help/sites-developing/ch-configuring.md) 및 [세그먼트 경로](/help/sites-administering/segmentation.md)를 선택합니다.
 
 * **타깃팅 구성**
 
-   [타깃팅할 범위를 지정하려면 [브랜드]](/help/sites-authoring/target-adobe-campaign.md)를 선택합니다.
+   [타깃팅할 범위를 지정하려면 브랜드](/help/sites-authoring/target-adobe-campaign.md)를 선택합니다.
 
    >[!NOTE]
    >이 옵션을 사용하려면 사용자 계정이 `Target Adminstrators`그룹에 있어야 합니다.
@@ -277,6 +281,7 @@ source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#selectionmode)
+
    페이지 속성이 해당 탭을 사용하여 표시됩니다.
 
 1. 필요에 따라 속성을 보거나 편집합니다.
@@ -346,8 +351,9 @@ source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
       * 페이지 선택을 한 페이지로 제한하면 모든 속성이 보입니다.
    * 공통 값을 갖는 공통 속성
 
-      * 공통 값을 갖는 속성만 [보기] 모드에 표시됩니다.
+      * 공통 값을 갖는 속성만 보기 모드에 표시됩니다.
       * 필드가 다중 값이면(예: 태그) *모두* 공통된 경우에만 값이 표시됩니다. 일부만 공통된 경우에는 편집할 때만 표시됩니다.
+
    공통 값이 있는 속성이 없으면 메시지가 표시됩니다.
 
 * **편집**
