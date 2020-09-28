@@ -10,9 +10,9 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '6067'
+source-wordcount: '6062'
 ht-degree: 1%
 
 ---
@@ -348,7 +348,7 @@ AEM Forms의 테마는 양식과 인터랙티브한 커뮤니케이션에서 패
 * **사이드 패널** 전환 ![사이드 패널](assets/toggle-side-panel.png):사이드바를 표시하거나 숨길 수 있습니다.
 * **테마 옵션** ![테마 옵션](assets/theme-options.png):세 가지 옵션을 제공합니다.
 
-   * 구성:미리 보기 양식 또는 대화형 통신, 기본 clientlib 및 typekit 구성을 선택하는 옵션을 제공합니다.
+   * 구성:미리 보기 양식 또는 대화형 통신, 기본 clientlib 및 Adobe Fonts 구성을 선택하는 옵션을 제공합니다.
    * 테마 CSS 보기:선택한 테마에 대한 CSS를 생성합니다.
    * 스타일 관리:텍스트 및 이미지 스타일 관리 옵션을 제공합니다.
    * 도움말:테마 편집기의 이미지 둘러보기 실행
@@ -485,23 +485,23 @@ AEM Forms의 테마는 양식과 인터랙티브한 커뮤니케이션에서 패
 
 ### 테마에서 웹 글꼴 사용 {#using-web-fonts-in-a-theme}
 
-이제 적응형 양식 또는 인터랙티브한 커뮤니케이션에서 웹 서비스에서 사용 가능한 글꼴을 사용할 수 있습니다. Adobe의 웹 글꼴 서비스인 [Typekit](https://typekit.com/)은 즉시 사용할 수 있습니다. Typekit을 사용하려면 키트와 글꼴을 만들고 [Typekit 웹 사이트에서 키트 ID를 얻으십시오](https://typekit.com/).
+이제 적응형 양식 또는 인터랙티브한 커뮤니케이션에서 웹 서비스에서 사용 가능한 글꼴을 사용할 수 있습니다. Adobe의 웹 글꼴 서비스인 [Adobe Fonts](https://fonts.adobe.com/)(YouTube)는 기본적으로 구성으로 제공됩니다. Adobe Fonts을 사용하려면 키트를 만들고 여기에 글꼴을 추가한 다음 [Adobe Fonts에서 키트 ID를 받습니다](https://fonts.adobe.com/).
 
-AEM에서 Typekit을 구성하려면 다음 단계를 수행하십시오.
+AEM에서 Adobe Fonts을 구성하려면 다음 단계를 수행하십시오.
 
 1. 작성 인스턴스에서 adobeexperienceManager ![](assets/adobeexperiencemanager.png)Adobe Experience Manager > 도구 ![망치](assets/hammer.png) > 배포 > Cloud Services을 클릭합니다.
-1. Cloud Services **페이지에서** 타사 서비스 **> Typekit** 으로 **이동하고 Typekit** 에서 지금 **** 구성을 클릭합니다. 구성을 이미 사용할 수 있는 경우 **+** 단추를 클릭하여 새 인스턴스를 만듭니다.
+1. Cloud Services **페이지에서** Adobe Fonts **옵션으로 이동하여** 엽니다. 구성 폴더를 열고 만들기를 **클릭합니다**.
 1. 구성 **만들기** 대화 상자에서 구성 제목을 지정하고 만들기를 **클릭합니다**.
 
    구성 페이지로 리디렉션됩니다.
 
 1. 나타나는 구성 요소 편집 대화 상자에서 키트 ID를 입력하고 **확인을 클릭합니다**.
 
-TypeKit 구성을 사용하도록 테마를 구성하려면 다음 단계를 수행하십시오.
+다음 단계를 수행하여 Adobe Fonts 구성을 사용하도록 테마를 구성합니다.
 
 1. 작성자 인스턴스의 테마 편집기에서 테마를 엽니다.
 1. 테마 편집기에서 **테마 옵션** ![테마 옵션](assets/theme-options.png) > **구성**&#x200B;으로이동합니다.
-1. Typekit **구성** 필드에서 키트를 선택하고 저장을 **클릭합니다**.
+1. [ **Adobe Fonts 구성** ] 필드에서 키트를 선택하고 [저장]을 **클릭합니다**.
 
    이제 테마의 글꼴 모음 속성에 글꼴이 추가되었음을 확인할 수 있습니다.
 
