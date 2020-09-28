@@ -1,11 +1,11 @@
 ---
-title: 자산 템플릿 [!DNL Adobe Experience Manager Assets].
+title: 자산 템플릿
 description: 자산 템플릿 [!DNL Adobe Experience Manager Assets] 과 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1555'
 ht-degree: 1%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >배포가 템플릿으로부터 데이터 [!DNL Experience Manager] 를 추출하고 [!DNL InDesign Server] 편집할 수 있도록 하기 위해 [!DNL Experience Manager Assets] [!DNL InDesign] 와 통합되어야 합니다. 자세한 내용은 Experience Manager 에셋을 InDesign Server와 [통합을 참조하십시오](/help/assets/indesign.md).
+   >배포가 템플릿으로부터 데이터 [!DNL Experience Manager] 를 추출하고 [!DNL InDesign Server] 편집할 수 있도록 하기 위해 [!DNL Experience Manager Assets] [!DNL InDesign] 와 통합되어야 합니다. 자세한 내용은 Experience Manager 에셋을 InDesign Server과 [통합을 참조하십시오](/help/assets/indesign.md).
 
 1. 편집 가능한 필드의 텍스트를 수정하려면 편집 가능한 필드 목록에서 텍스트 필드를 클릭하고 필드의 텍스트를 편집합니다.
 
@@ -186,7 +186,7 @@ ht-degree: 1%
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. 템플릿 [!UICONTROL 구성] 화면에서 담보물 이름을 지정합니다. 원하는 경우, 적절하다고 생각하는 태그를 지정합니다. PDF 형식으로 출력을 내보내려면 **[!UICONTROL Acrobat(.PDF)을 선택합니다]**. 기본적으로 자료는 JPG 및 [!DNL InDesign] 형식으로 내보내집니다. 여러 페이지로 구성된 자료에 대한 표시 축소판을 변경하려면 축소판 **[!UICONTROL 변경을 클릭합니다]**.
+1. 템플릿 [!UICONTROL 구성] 화면에서 담보물 이름을 지정합니다. 원하는 경우, 적절하다고 생각하는 태그를 지정합니다. PDF 형식으로 출력을 내보내려면 **[!UICONTROL Acrobat(.PDF)를 선택합니다]**. 기본적으로 자료는 JPG 및 [!DNL InDesign] 형식으로 내보내집니다. 여러 페이지로 구성된 자료에 대한 표시 축소판을 변경하려면 축소판 **[!UICONTROL 변경을 클릭합니다]**.
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 
