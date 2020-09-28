@@ -1,11 +1,11 @@
 ---
-title: '[!DNL 자산] HTTP API in [!DNL Adobe Experience Manager].'
+title: '[!DNL 자산] HTTP API.'
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: fb3fdf25718cd099ff36a206718aa4bf8a2b5068
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1672'
 ht-degree: 1%
 
 ---
