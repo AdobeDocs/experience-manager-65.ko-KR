@@ -1,12 +1,12 @@
 ---
-title: 디지털 자산 관리 [!DNL Adobe Experience Manager Assets]
+title: 디지털 자산 관리
 description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, 주석 및 버전 지정과 같은 에셋 관리 작업에 대해 학습합니다.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '9410'
+source-wordcount: '9409'
 ht-degree: 1%
 
 ---
