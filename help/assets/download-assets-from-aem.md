@@ -1,11 +1,11 @@
 ---
-title: 디지털 자산을 다운로드할 수 [!DNL Adobe Experience Manager]있습니다.
+title: 자산 다운로드
 description: 다운로드 기능을 활성화하거나 비활성화하는 방법 [!DNL Adobe Experience Manager] 을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '850'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
    ![Experience Manager 자산에서 자산을 다운로드할 때 사용 가능한 옵션](/help/assets/assets/asset-download1.png)
 
-   *그림: 다운로드 대화 상자 옵션.*
+   *그림:다운로드 대화 상자 옵션.*
 
 1. 다운로드 대화 상자에서 원하는 다운로드 옵션을 선택합니다.
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 
 인증된 사용자가 서버와 네트워크를 과부할 수 있는 자산의 ZIP 파일을 만들기 위해 인증된 사용자가 임의로 크기가 큰 동시 다운로드 요청을 발행할 수 [!DNL Experience Manager] 있도록 합니다. 이 기능으로 인해 발생할 수 있는 DoS 위험을 줄이기 위해 게시 인스턴스에 대해 `AssetDownloadServlet` 기본적으로 OSGi 구성 요소가 비활성화됩니다.
 
-DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유물 또는 기타 포털과 같은 구현을 사용할 때 OSGi 구성을 통해 서블릿을 수동으로 활성화합니다. Adobe에서는 일상적인 다운로드 요구 사항에 영향을 주지 않고 가능한 낮은 다운로드 크기를 설정할 것을 권장합니다. 높은 가치는 성능에 영향을 줄 수 있습니다.
+DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유물 또는 기타 포털과 같은 구현을 사용할 때 OSGi 구성을 통해 서블릿을 수동으로 활성화합니다. Adobe은 일상적인 다운로드 요구 사항에 영향을 주지 않고 가능한 한 낮은 다운로드 크기를 설정할 것을 권장합니다. 높은 가치는 성능에 영향을 줄 수 있습니다.
 
 1. 게시 실행 모드(`config.publish`)를 대상으로 하는 이름 지정 규칙이 있는 폴더를 만듭니다. `/apps/<your-app-name>/config.publish`. 실행 모드에 대한 구성 속성을 정의하려면 [실행 모드를 참조하십시오](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. 구성 폴더에서 `nt:file` 명명된 형식의 파일을 만듭니다 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
@@ -75,5 +75,5 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유
 >
 >* [DRM 보호 에셋을 다운로드합니다](drm.md).
 >* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 에셋을 다운로드할 수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
->* [지원되는 Adobe Creative Cloud 앱에서 Adobe Assets Link를 사용하여 에셋을 다운로드할 수 있습니다](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html).
+>* [지원되는 Adobe Creative Cloud 앱](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)내에서 Adobe 자산 링크를 사용하여 자산을 다운로드합니다.
 
