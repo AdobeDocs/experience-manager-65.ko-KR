@@ -1,9 +1,9 @@
 ---
-title: 처리를 위해 지원되는 파일 포맷입니다 [!DNL Adobe Experience Manager Assets].
+title: 지원되는 파일 포맷 및 MIME 유형
 description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 9%
@@ -76,7 +76,7 @@ ht-degree: 9%
 
 See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 배달 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -87,9 +87,9 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
 ## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
-다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 형식의 하위 유형에 대해 설명합니다.
+다음 목록은 Dynamic Media에서 지원되지 *않는* 래스터 이미지 파일 포맷의 하위 유형에 대해 설명합니다.
 
-Dynamic Media에 대해 지원되지 [않는 파일 형식 감지를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Dynamic [Media에서 지원되지 않는 파일 형식 감지를 참조하십시오](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일
 * PSB 파일.
@@ -173,11 +173,11 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 위의 기능 외에 다음을 고려하십시오.
 
-* Dynamic Media을 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media를 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 [Adobe Illustrator(AI), EPS(Postscript) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media을 사용하여 AI 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media를 사용하여 AI 파일에 대한 동적 변환을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media을 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 [InDesign(INDD) 파일 형식을 참조하십시오](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Dynamic Media를 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 [InDesign(INDD) 파일 형식을 참조하십시오](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## 지원되는 멀티미디어 포맷 {#supported-multimedia-formats}
 
@@ -227,7 +227,7 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 지원되는 아카이브 포맷 및 일반 DAM 워크플로우의 적용 가능성.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | Dynamic Media 배달 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -237,9 +237,9 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## 기타 지원되는 포맷 {#other-supported-formats}
 
-기타 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 방법은 아래 표에 설명되어 있습니다. 모든 파일에 대해 Dynamic Media 제공을 제외한 스토리지, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리와 같은 일반적인 DAM 기능이 지원됩니다.
+기타 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 방법은 아래 표에 설명되어 있습니다. Dynamic Media Delivery를 제외한 저장소, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리와 같은 일반적인 DAM 기능이 모든 파일에 대해 지원됩니다.
 
-| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | Dynamic Media 배달 |
+| 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
