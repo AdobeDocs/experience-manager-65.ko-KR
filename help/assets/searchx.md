@@ -1,12 +1,12 @@
 ---
-title: 의 검색 기능을 [!DNL Adobe Experience Manager Assets]확장합니다.
+title: 검색 기능 확장.
 description: 기본값 [!DNL Adobe Experience Manager Assets] 을 벗어나는 검색 기능을 확장합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 7%
+source-wordcount: '840'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 7%
 
 가장 좋은 방법은 기존 술어를 복사하고 조정하는 것입니다. 샘플 예측자는 /libs/cq/search/components/ **예측자에 있습니다**.
 
-### 예: 간단한 속성 설명 만들기 {#example-build-a-simple-property-predicate}
+### 예:간단한 속성 설명 만들기 {#example-build-a-simple-property-predicate}
 
 속성 조건자를 빌드하려면
 
@@ -147,7 +147,7 @@ ht-degree: 7%
    >
    >검색할 때는 올바른 경우를 포함하여 정확하게 용어를 입력해야 합니다.
 
-### 예: 단순 그룹 설명 작성 {#example-build-a-simple-group-predicate}
+### 예:단순 그룹 설명 작성 {#example-build-a-simple-group-predicate}
 
 그룹 조건자를 빌드하려면 다음을 수행하십시오.
 
