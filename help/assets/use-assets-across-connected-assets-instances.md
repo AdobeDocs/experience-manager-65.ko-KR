@@ -1,11 +1,11 @@
 ---
-title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 28c55333e0eebb68ada46ee89785f5f6475abf9e
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2103'
 ht-degree: 44%
 
 ---
@@ -30,18 +30,18 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 * 사용자는 각 배포 시 적절한 사용자 그룹의 일부입니다.
 * For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] 는 Cloud Service [!DNL Experience Manager] 로 작동합니다. 자세한 내용은 Experience Manager의 [연결된 자산 기능을 Cloud Service으로 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
+   |  | [!DNL Sites] cloud service | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]Cloud Service ** | 지원됨 | 지원됨 | 지원됨 |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]AMS ** | 지원됨 | 지원됨 | 지원됨 |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]온-프레미스&#x200B;** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
+   | **[!DNL Experience Manager Assets]cloud service** | 지원됨 | 지원됨 | 지원됨 |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]AMS** | 지원됨 | 지원됨 | 지원됨 |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
 ### 지원되는 파일 형식 {#mimetypes}
 
 작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용합니다. 문서는 구성 요소 및 `Download` 이미지에 `Image` 추가됩니다. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 지원되는 형식은 다음과 같습니다.
 
-* **이미지 형식**: 이미지 구성 요소에서 [지원하는](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 형식입니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
-* **문서 포맷**: 지원되는 [문서 형식을 참조하십시오](assets-formats.md#supported-document-formats).
+* **이미지 형식**:이미지 구성 요소에서 [지원하는](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 형식입니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
+* **문서 포맷**:지원되는 [문서 형식을 참조하십시오](assets-formats.md#supported-document-formats).
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
 
@@ -105,7 +105,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 1. 원격 [!DNL Sites] CORS 구성에 **[!UICONTROL 허용된 원본]** 중 하나로 배포를 [!DNL Assets'] 추가합니다.
 
-   1. 관리자 자격 증명을 사용하여 로그인합니다. Search for `Cross-Origin`. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스합니다.
+   1. 관리자 자격 증명을 사용하여 로그인합니다. `Cross-Origin`을 검색합니다. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스합니다.
 
    1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
