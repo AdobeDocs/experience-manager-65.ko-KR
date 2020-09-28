@@ -1,12 +1,12 @@
 ---
-title: Reuse assets using MSM for [!DNL Adobe Experience Manager Assets].
+title: MSM을 사용하여 자산 재사용
 description: 상위 자산에서 파생되고 이에 연결된 여러 페이지/폴더에서 자산을 사용합니다. 자산은 기본 복사본과 동기화되며 몇 번의 클릭만으로 상위 자산으로부터 업데이트를 받습니다.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '3368'
+source-wordcount: '3367'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,13 @@ MSM은 소스 자산과 Live Copy 간에 라이브 관계를 유지하여 다음
 
 **출처:** 원본 자산 또는 폴더 Live Copy가 파생되는 기본 복사본입니다.
 
-**Live copy:** 소스 자산/폴더와 해당 소스를 동기화하는 복사본. Live Copy는 추가 Live Copy의 소스가 될 수 있습니다. LC를 만드는 방법을 확인하십시오.
+**Live copy:** 소스 자산/폴더와 해당 소스의 복사본. Live Copy는 추가 Live Copy의 소스가 될 수 있습니다. LC를 만드는 방법을 확인하십시오.
 
-**상속:** Live Copy 자산/폴더와 시스템에서 업데이트를 보낼 위치를 기억하기 위해 사용하는 소스 간의 링크/참조입니다. 상속은 메타데이터 필드에 대한 세부 수준으로 존재합니다. 소스와 Live Copy 간의 라이브 관계를 유지하면서 선택적 메타데이터 필드에 대한 상속을 제거할 수 있습니다.
+**상속:** Live Copy 자산/폴더와 시스템에서 업데이트를 보낼 위치를 기억하는 데 사용하는 해당 소스 간의 링크/참조입니다. 상속은 메타데이터 필드에 대한 세부 수준으로 존재합니다. 소스와 Live Copy 간의 라이브 관계를 유지하면서 선택적 메타데이터 필드에 대한 상속을 제거할 수 있습니다.
 
 **롤아웃:** 소스 다운스트림에 대한 수정 사항을 Live Copy로 푸시하는 작업입니다. 롤아웃 작업을 사용하여 한 번에 하나 이상의 Live Copy를 업데이트할 수 있습니다. 롤아웃을 참조하십시오.
 
-**롤아웃 구성:** 동기화할 속성, 방법 및 시기를 결정하는 규칙입니다. 이러한 구성은 Live Copy를 만들 때 적용됩니다. 나중에 편집할 수 있습니다. 하위 요소는 상위 자산에서 롤아웃 구성을 상속할 수 있습니다. 의 경우 MSM의 경우 [!DNL Assets]표준 롤아웃 구성만 사용하십시오. 다른 롤아웃 구성은 MSM에서 사용할 수 없습니다 [!DNL Assets].
+**롤아웃 구성:** 동기화할 속성, 방법 및 시기를 결정하는 규칙입니다. 이러한 구성은 Live Copy를 만들 때 적용됩니다.나중에 편집할 수 있습니다.하위 요소는 상위 자산에서 롤아웃 구성을 상속할 수 있습니다. 의 경우 MSM의 경우 [!DNL Assets]표준 롤아웃 구성만 사용하십시오. 다른 롤아웃 구성은 MSM에서 사용할 수 없습니다 [!DNL Assets].
 
 **동기화:** 출시에 추가하여 소스 및 Live Copy 간에 업데이트를 소스에서 Live Copy로 전송하여 패리티 역할을 하는 또 다른 작업을 수행할 수 있습니다. 특정 Live Copy에 대한 동기화가 시작되어 소스에서 변경 내용을 가져옵니다. 이 작업을 사용하면 Live Copy 중 하나만 업데이트할 수 있습니다. 동기화 작업을 참조하십시오.
 
@@ -53,7 +53,7 @@ MSM은 소스 자산과 Live Copy 간에 라이브 관계를 유지하여 다음
 
 **다시 시작:** Live Copy가 소스에서 업데이트를 받기 시작하도록 라이브 관계를 다시 시작합니다. 다시 시작 동작을 참조하십시오.
 
-**재설정:** 재설정 작업을 수행하면 로컬 변경 사항을 덮어써서 Live Copy가 다시 소스의 복제본으로 됩니다. 또한 상속 취소가 제거되고 모든 메타데이터 필드에 대한 상속이 재설정됩니다. 나중에 로컬 수정을 수행하려면 특정 필드의 상속을 다시 취소해야 합니다. LC의 로컬 수정 사항을 참조하십시오.
+**재설정:** 재설정 작업을 수행하면 로컬 변경 사항을 덮어써서 Live Copy가 다시 소스의 복제본으로 됩니다. 또한 상속을 취소하고 모든 메타데이터 필드에 대한 상속을 재설정합니다. 나중에 로컬 수정을 수행하려면 특정 필드의 상속을 다시 취소해야 합니다. LC의 로컬 수정 사항을 참조하십시오.
 
 **분리:** Live Copy 자산/폴더의 라이브 관계를 완전히 제거할 수 있습니다. 작업을 분리하면 Live Copy는 소스에서 업데이트를 받지 못하고 더 이상 Live Copy가 되지 않습니다. 관계 제거를 참조하십시오.
 
@@ -61,8 +61,8 @@ MSM은 소스 자산과 Live Copy 간에 라이브 관계를 유지하여 다음
 
 하나 이상의 소스 자산 또는 폴더에서 Live Copy를 만들려면 다음 중 하나를 수행합니다.
 
-* 방법 1: 소스 에셋을 선택하고 맨 위에 있는 **[!UICONTROL 도구 모음에서]** 만들기 **** >Live Copy를 클릭합니다.
-* 방법 2: 사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 만들기]** **[!UICONTROL >]** Live Copy를 클릭합니다.
+* 방법 1:소스 에셋을 선택하고 맨 위에 있는 **[!UICONTROL 도구 모음에서]** 만들기 **** >Live Copy를 클릭합니다.
+* 방법 2:사용자 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 만들기]** **[!UICONTROL >]** Live Copy를 클릭합니다.
 
 자산 또는 폴더의 Live Copy를 한 번에 만들 수 있습니다. 자산이나 Live Copy 자체인 폴더에서 파생된 Live Copy를 만들 수 있습니다. 사용 사례에는 컨텐츠 조각(CF)이 지원되지 않습니다. Live Copy를 생성하려고 하면 CF가 아무런 관계 없이 그대로 복사됩니다. 복사된 CF는 시간 내 스냅샷으로 원본 CF가 업데이트될 때 업데이트되지 않습니다.
 
@@ -72,19 +72,19 @@ MSM은 소스 자산과 Live Copy 간에 라이브 관계를 유지하여 다음
 
    ![Experience Manager 인터페이스에서 Live Copy 만들기](assets/create_lc1.png)
 
-   *그림: 인터페이스에서 Live Copy 생성[!DNL Experience Manager]*
+   *그림:인터페이스에서 Live Copy 생성[!DNL Experience Manager]*
 
 1. 대상 폴더를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 제목과 이름을 입력합니다. 자산에 자식이 없습니다. 폴더의 Live Copy를 만들 때 하위 항목을 포함하거나 제외하도록 선택할 수 있습니다.
 1. 롤아웃 구성을 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-두 번째 방법을 사용하여 Live Copy를 만들려면 다음 단계를 수행하십시오.
+두 번째 방법을 사용하여 Live Copy를 만들려면 다음 단계를 수행합니다.
 
 1. 인터페이스 [!DNL Experience Manager] 에서 오른쪽 위 모서리에서 **[!UICONTROL 만들기]** > **[!UICONTROL Live Copy를 클릭합니다]**.
 
    ![Experience Manager 인터페이스에서 Live Copy 만들기](assets/create_lc2.png)
 
-   *그림: 인터페이스에서 Live Copy 생성[!DNL Experience Manager]*
+   *그림:인터페이스에서 Live Copy 생성[!DNL Experience Manager]*
 
 1. 소스 자산 또는 폴더를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 대상 폴더를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
@@ -117,7 +117,7 @@ Live Copy 자산이나 폴더의 정보 및 상태를 확인하려면 다음 단
 
    ![Live Copy 정보 및 상태가 속성의 콘솔에 표시됩니다.](assets/lcfolder_info_properties.png)
 
-   *그림: Live Copy 정보 및 상태*
+   *그림:Live Copy 정보 및 상태*
 
 1. 하위 자산이 Live Copy 구성을 빌리는 경우 활성화하거나 비활성화할 수 있습니다.
 
@@ -132,7 +132,7 @@ Live Copy 자산이나 폴더의 정보 및 상태를 확인하려면 다음 단
 
    ![소스의 Live Copy 콘솔에서 Live Copy의 상태 보기](assets/livecopy-statuses.png)
 
-   *그림: 소스의[!UICONTROL Live Copy 콘솔에서]Live Copy 상태 보기*
+   *그림:소스의[!UICONTROL Live Copy 콘솔에서]Live Copy 상태 보기*
 
 1. Live Copy 폴더의 각 자산에 대한 세부 정보를 보려면 자산을 선택하고 도구 모음에서 **[!UICONTROL 관계]** 상태를 클릭합니다.
 
@@ -158,13 +158,13 @@ Live Copy 자산이나 폴더의 정보 및 상태를 확인하려면 다음 단
 
 ![선택한 소스에 대한 참조 레일에서 사용할 수 있는 작업 및 정보](assets/referencerail_source.png)
 
-*그림: 선택한 소스에 대한 참조 레일에서 사용할 수 있는 작업 및 정보입니다.*
+*그림:선택한 소스에 대한 참조 레일에서 사용할 수 있는 작업 및 정보입니다.*
 
 특정 Live Copy의 경우 **[!UICONTROL Live Copy]** 편집을 클릭하여 관계를 일시 중단하거나 롤아웃 구성을 변경합니다.
 
 ![특정 Live Copy의 경우 소스 에셋을 선택하면 참조 레일에서 관계 일시 중단 또는 롤아웃 구성 변경 옵션을 사용할 수 있습니다](assets/referencerail_editlc_options.png)
 
-*그림: 관계를 일시 중단하거나 특정 Live Copy의 롤아웃 구성을 변경합니다.*
+*그림:관계를 일시 중단하거나 특정 Live Copy의 롤아웃 구성을 변경합니다.*
 
 ### Live Copy에 대한 참조 레일의 빠른 작업 {#refraillc}
 
@@ -178,7 +178,7 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 연 다음 **[!U
 
 ![선택한 Live Copy에 대한 참조 레일에서 사용할 수 있는 작업](assets/referencerail_livecopy.png)
 
-*그림: 선택한 Live Copy에 대한 참조 레일에서 사용할 수 있는 작업.*
+*그림:선택한 Live Copy에 대한 참조 레일에서 사용할 수 있는 작업.*
 
 ## 소스에서 Live Copy로 수정 내용 전달 {#rolloutsync}
 
@@ -194,7 +194,7 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 연 다음 **[!U
 
    ![소스 수정 내용을 일부 또는 전체 Live Copy로 롤아웃합니다.](assets/livecopy_rollout_page.png)
 
-   *그림: 소스 수정 내용을 일부 또는 전체 Live Copy로 롤아웃합니다.*
+   *그림:소스 수정 내용을 일부 또는 전체 Live Copy로 롤아웃합니다.*
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 연 다음 **[!U
 
 ![소스 수정 내용을 선택한 Live Copy에 롤아웃합니다.](assets/livecopy_rollout_dialog.png)
 
-*그림: 소스 수정 내용을 선택한 Live Copy에 롤아웃합니다.*
+*그림:소스 수정 내용을 선택한 Live Copy에 롤아웃합니다.*
 
 ### 동기화 작업 정보 {#aboutsync}
 
@@ -224,7 +224,7 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 연 다음 **[!U
 
 ![동기화 작업은 변경 내용을 소스에 가져옵니다.](assets/livecopy_sync.png)
 
-*그림: 동기화 작업은 변경 내용을 소스에 가져옵니다.*
+*그림:동기화 작업은 변경 내용을 소스에 가져옵니다.*
 
 >[!NOTE]
 >
@@ -238,7 +238,7 @@ Live Copy가 소스 에셋 또는 폴더에 대한 수정 내용을 수신하지
 
 또는 **[!UICONTROL Live Copy 개요]** 콘솔에서 Live Copy 폴더에 있는 여러 자산의 관계를 신속하게 일시 중단하거나 다시 시작할 수 있습니다. Live [Copy 폴더의 많은 자산에 대한 작업 수행을 참조하십시오](#bulkactions).
 
-## Live Copy를 로컬에서 수정 {#localmods}
+## Live Copy의 로컬 수정 {#localmods}
 
 Live Copy는 소스 생성 시 원본 소스의 복제본입니다. Live Copy의 메타데이터 값은 소스에서 상속됩니다. 메타데이터 필드는 소스 자산의 각 필드에 따라 상속을 개별적으로 유지합니다.
 
@@ -248,7 +248,7 @@ Live Copy는 소스 생성 시 원본 소스의 복제본입니다. Live Copy의
 
 ![재설정 작업은 로컬 편집을 덮어쓰고 Live Copy를 소스와 함께 가져옵니다.](assets/livecopy_reset.png)
 
-*그림: 재설정 작업은 로컬 편집을 덮어쓰고 Live Copy를 소스와 함께 가져옵니다.*
+*그림:재설정 작업은 로컬 편집을 덮어쓰고 Live Copy를 소스와 함께 가져옵니다.*
 
 ## 라이브 관계 제거 {#detach}
 
@@ -260,7 +260,7 @@ Live Copy는 소스 생성 시 원본 소스의 복제본입니다. Live Copy의
 
    ![작업을 분리하면 원본과 Live Copy 간의 관계가 완전히 제거됩니다](assets/livecopy_detach.png)
 
-   *그림: 작업을 분리하면 원본과 Live Copy 간의 관계가 완전히 제거됩니다.*
+   *그림:작업을 분리하면 원본과 Live Copy 간의 관계가 완전히 제거됩니다.*
 
    >[!CAUTION]
    >
@@ -278,7 +278,7 @@ Live Copy는 소스 생성 시 원본 소스의 복제본입니다. Live Copy의
 
    ![Live Copy 개요 콘솔에서 Live Copy 폴더의 많은 에셋을 손쉽게 업데이트](assets/livecopyconsole_update_many_assets.png)
 
-   *그림: Live Copy 개요 콘솔에서 Live Copy 폴더의 많은[!UICONTROL 에셋을 손쉽게]업데이트할 수 있습니다.*
+   *그림:Live Copy 개요 콘솔에서 Live Copy 폴더의 많은[!UICONTROL 에셋을 손쉽게]업데이트할 수 있습니다.*
 
 ## MSM 확장 [!DNL Assets] {#extendapi}
 
@@ -314,7 +314,7 @@ Live Copy와 소스는 디지털 자산으로서 어느 정도 관리할 수 있
 * MSM의 Blueprint [!DNL Sites] 를 MSM의 Live Copy 소스라고 합니다. for [!DNL Assets].
 * 사이트에서는 블루프린트와 Live Copy를 비교할 수 있지만 소스를 Live Copy와 비교할 수는 없습니다 [!DNL Assets] .
 * Live Copy는 편집할 수 없습니다 [!DNL Assets].
-* 사이트에는 보통 아이들이 있지만 [!DNL Assets] 그렇지 않다. 개별 자산의 Live Copy를 만들 때는 하위 항목을 포함하거나 제외하는 옵션이 없습니다.
+* 사이트에는 대개 자녀가 있지만 [!DNL Assets] 그렇지 않다. 개별 자산의 Live Copy를 만들 때는 하위 항목을 포함하거나 제외하는 옵션이 없습니다.
 * 사이트 만들기 마법사의 장 제거 단계는 MSM에서 지원되지 않습니다 [!DNL Assets].
 * 페이지 속성에서 MSM 잠금 구성(터치 활성화 UI)은 MSM에서 지원되지 않습니다 [!DNL Assets].
 * MSM의 경우 [!DNL Assets]표준 **[!UICONTROL 롤아웃 구성만 사용하십시오]**. 다른 롤아웃 구성은 MSM에서 사용할 수 없습니다 [!DNL Assets].
