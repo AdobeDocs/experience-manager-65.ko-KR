@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Experience Manager 6.5 자산 사용 안내서
+user-guide-title: 자산 안내서
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 91%
+source-wordcount: '644'
+ht-degree: 90%
 
 ---
 
 
-# Experience Manager 6.5 자산 사용 안내서 {#assets}
+# 자산 안내서 {#assets}
 
 + [[!DNL Assets] 사용 안내서](home.md)
 + [Experience Manager 6.5 자산 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/release-notes/assets.html)
