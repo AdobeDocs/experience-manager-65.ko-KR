@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Adobe Experience Manager 자산] 홈 페이지 경험입니다.'
+title: '[!DNL 자산] 홈 페이지 경험'
 description: 홈 페이지 [!DNL Experience Manager Assets] 를 개인화하여 최근 자산 활동 요약 등 다양한 시작 화면 환경을 제공합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '562'
 ht-degree: 1%
 
 ---
@@ -65,11 +65,11 @@ ht-degree: 1%
 * 최근
 * 검색
 
-**활동**: 이 섹션에서 **[!UICONTROL 내 활동]** 위젯은 로그인한 사용자가 자산(변환되지 않은 자산 포함)을 사용하여 수행한 최근 활동을 자산 업로드, 다운로드, 자산 생성, 편집, 댓글, 주석 및 공유 등의 방법으로 표시합니다.
+**활동**:이 섹션에서 **[!UICONTROL 내 활동]** 위젯은 로그인한 사용자가 자산(변환되지 않은 자산 포함)을 사용하여 수행한 최근 활동을 자산 업로드, 다운로드, 자산 생성, 편집, 댓글, 주석 및 공유 등의 방법으로 표시합니다.
 
-**최근**: 이 섹션 **[!UICONTROL 아래의 최근 조회]** 위젯은 폴더, 컬렉션, 프로젝트 등 로그인한 사용자가 최근에 액세스한 개체를 표시합니다.
+**최근**:이 섹션 **[!UICONTROL 아래의 최근 조회]** 위젯은 폴더, 컬렉션, 프로젝트 등 로그인한 사용자가 최근에 액세스한 개체를 표시합니다.
 
-**Discover**: 이 섹션 **[!UICONTROL 아래의 새]** 위젯에는 최근 배포에 업로드된 자산 및 표현물이 [!DNL Assets] 표시됩니다.
+**Discover**:이 섹션 **[!UICONTROL 아래의 새]** 위젯에는 최근 배포에 업로드된 자산 및 표현물이 [!DNL Assets] 표시됩니다.
 
 사용자 활동 데이터 제거를 활성화하려면 Configuration Manager에서 **[!UICONTROL DAM 이벤트 제거 서비스를]** 활성화합니다. 이 서비스를 활성화하면 지정된 수를 초과하는 로그인한 사용자의 활동이 시스템에서 삭제됩니다.
 
