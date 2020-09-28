@@ -1,12 +1,12 @@
 ---
-title: 성능 [!DNL Adobe Experience Manager Assets]조정
+title: 성능 조정 [!DNL Assets].
 description: 병목 현상을 [!DNL Experience Manager] 제거하고 성능을 최적화하기 위한 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소의 변경 사항 등에 대한 제안 및 지침 [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 0%
 
 ---
