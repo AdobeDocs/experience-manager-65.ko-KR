@@ -1,9 +1,9 @@
 ---
-title: 다국어 자산 및 자산 번역.
+title: 다국어 자산 및 자산 번역
 description: 이진, 메타데이터 및 태그를 비롯한 에셋을 여러 언어로 변환하는 워크플로우를 자동화하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 11%
@@ -17,9 +17,9 @@ ht-degree: 11%
 
 번역 워크플로우를 자동화하기 위해 번역 서비스 제공업체와 통합하고 에셋을 여러 언어로 번역하는 프로젝트 [!DNL Experience Manager] 를 제작할 수 있습니다. [!DNL Experience Manager] 인간 및 기계 번역 워크플로우를 지원합니다.
 
-인간 번역: 번역된 에셋이 반환되어 로 [!DNL Experience Manager]가져옵니다. 번역 제공업체가 통합된 경우 [!DNL Experience Manager]번역 제공업체와 사이에 에셋이 자동으로 [!DNL Experience Manager] 전송됩니다.
+인간 번역:번역된 에셋이 반환되어 로 [!DNL Experience Manager]가져옵니다. 번역 제공업체가 통합된 경우 [!DNL Experience Manager]번역 제공업체와 사이에 에셋이 자동으로 [!DNL Experience Manager] 전송됩니다.
 
-기계 번역: 기계 번역 서비스는 자산의 메타데이터와 태그를 즉시 변환합니다.
+기계 번역:기계 번역 서비스는 자산의 메타데이터와 태그를 즉시 변환합니다.
 
 자산 번역에는 다음이 포함됩니다.
 
