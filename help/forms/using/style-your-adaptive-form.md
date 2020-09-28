@@ -8,9 +8,9 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
+source-git-commit: 0b3884301e09eba6860891f00a98508033d12ec8
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2058'
 ht-degree: 7%
 
 ---
@@ -442,18 +442,18 @@ ht-degree: 7%
 
 다양한 글꼴을 사용하여 적응형 양식을 디자인할 수 있습니다. 응용 양식이 표시되는 모든 장치에는 응용 양식을 디자인하는 데 사용되는 글꼴이 없을 수 있습니다. 웹 글꼴 서비스를 사용하여 필요한 글꼴을 대상 장치에 제공할 수 있습니다.
 
-[!DNL Adobe Typekit] 는 웹 글꼴 서비스입니다. 적응형 양식과 함께 서비스를 구성하고 사용할 수 있습니다. 응용 양식 [!DNL Adobe Typekit] 에서 사용하려면
+[!DNL Adobe Fonts] 는 웹 글꼴 서비스입니다. 적응형 양식과 함께 서비스를 구성하고 사용할 수 있습니다. 응용 양식 [!DNL Adobe Fonts] 에서 사용하려면
 
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] 는 이제 Adobe Fonts라고 하며 Creative Cloud 및 기타 구독에 포함되어 있습니다. [추가 정보](https://fonts.adobe.com/).
 
-1. 키트에 글꼴 Myriad Pro를 추가하고 키트를 게시한 후 [Adobe Typekit](https://typekit.com/) 계정을 만들고 키트를 만듭니다. 응용 형식으로 [!DNL Adobe Typekit] 글꼴(웹 글꼴)을 사용해야 합니다.
-1. Adobe experienceEmanager 서버 [!DNL Forms] 에서 ![](assets/adobeexperiencemanager.png) Adobe Experience Manager ******[!UICONTROL > AdobeMarketing]** ToolsBlacknowledge ![](assets/hammer.png) **** **** AEMDeploymentCloud Services으로 이동합니다. Cloud Services 페이지에서 **[!UICONTROL 제3자 서비스]** > **[!UICONTROL Typekit]**&#x200B;으로 이동하고 Typekit에서 **[!UICONTROL 지금]** 구성을 클릭합니다. 구성을 이미 사용할 수 있는 경우 + 단추를 클릭하여 새 인스턴스를 만듭니다.
+1. 키트에 글꼴 Myriad Pro를 추가하고 키트를 게시한 후 [Adobe Fonts](https://typekit.com/) 계정을 만들고 키트를 만듭니다. 적응형 양식에 [!DNL Adobe Fonts] (웹 글꼴)를 사용해야 합니다.
+1. Adobe experiencemanimated 서버 [!DNL Forms] 에서 ![](assets/adobeexperiencemanager.png) Adobe Experience Manager **** Ager **[!UICONTROL >]** ThamkToolsBlacknowledgeCowledge ![](assets/hammer.png) ****&#x200B;로 이동합니다. 이제 구성 폴더를 엽니다. 구성을 이미 사용할 수 있는 경우 **[!UICONTROL 만들기]** 단추를 클릭하여 새 인스턴스를 만듭니다.
 
    구성 만들기 대화 상자에서 구성에 **제목을** 지정하고 만들기를 **[!UICONTROL 클릭합니다]**. 구성 페이지로 리디렉션됩니다. 나타나는 구성 요소 [!UICONTROL 편집] 대화 상자에서 **키트 ID를** 제공하고 **[!UICONTROL 확인을]**&#x200B;클릭합니다.
 
-1. 구성을 사용하도록 테마를 [!DNL TypeKit] 구성합니다. 작성 인스턴스의 테마 편집기에서 **[!UICONTROL 전역]** 테마를 엽니다. 테마 편집기에서 **[!UICONTROL 테마 옵션]** ![테마 옵션](assets/theme-options.png) > **[!UICONTROL 구성]**&#x200B;으로이동합니다. Typekit **[!UICONTROL 구성]** 필드에서 키트를 선택하고 저장을 **[!UICONTROL 클릭합니다]**.
+1. 구성을 사용하도록 테마를 [!DNL Adobe Fonts] 구성합니다. 작성 인스턴스의 테마 편집기에서 **[!UICONTROL 전역]** 테마를 엽니다. 테마 편집기에서 **[!UICONTROL 테마 옵션]** ![테마 옵션](assets/theme-options.png) > **[!UICONTROL 구성]**&#x200B;으로이동합니다. [ **[!UICONTROL Adobe Fonts 구성]** ] 필드에서 키트를 선택하고 [저장]을 **[!UICONTROL 클릭합니다]**.
 
-   Typekit에 추가된 글꼴 [!UICONTROL 은] 모든 구성 요소의 **[!UICONTROL 텍스트]** 아코디언에서선택할 수 있습니다.
+   모든 구성 요소의 **[!UICONTROL 텍스트]** 아코디언에서 **[!UICONTROL Adobe Fonts에]** 추가된 글꼴을 선택할 수있습니다.
 
