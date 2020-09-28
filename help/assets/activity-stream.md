@@ -1,11 +1,11 @@
 ---
-title: 의 타임라인 보기에서 디지털 자산의 활동 스트림 [!DNL Experience Manager].
+title: 타임라인 보기에서 디지털 자산의 활동 스트림
 description: 이 문서에서는 타임라인에 있는 자산에 대한 활동 로그를 표시하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '215'
 ht-degree: 11%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->이러한 워크플로우에 대해 내역 정보가 저장되지 않으므로 임시 워크플로우는 타임라인에 표시되지 않습니다.
+>이러한 워크플로에 대해 내역 정보가 저장되지 않으므로 임시 워크플로우는 타임라인에 표시되지 않습니다.
 
 활동 스트림을 보려면 자산에 대해 하나 이상의 작업을 수행하고 자산을 선택한 다음 전역 탐색 목록에서 **[!UICONTROL 타임라인을]** 선택합니다.
 
