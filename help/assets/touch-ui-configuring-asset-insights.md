@@ -1,11 +1,11 @@
 ---
-title: 디지털 자산 사용 분석을 얻으려면 자산 통찰력을 구성합니다.
+title: 분석을 얻기 위해 자산 통찰력을 구성합니다.
 description: 에서 자산 통찰력을 [!DNL Adobe Experience Manager Assets]구성합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -26,9 +26,9 @@ ht-degree: 1%
 1. 인사이트 **[!UICONTROL 구성]** 카드를 클릭합니다.
 1. 마법사에서 데이터 센터를 선택하고 조직의 이름, 사용자 이름 및 공유 암호를 비롯한 자격 증명을 제공합니다.
 
-   ![Experience Manager에서 자산 인사이트를 위한 Adobe Analytics 구성](assets/insights_config2.png)
+   ![Experience Manager에서 자산 인사이트에 대한 Adobe Analytics 구성](assets/insights_config2.png)
 
-   *그림: 자산 인사이트 구성[!DNL Adobe Analytics]을 참조하십시오[!DNL Experience Manager].*
+   *그림:자산 인사이트 구성[!DNL Adobe Analytics]을 참조하십시오[!DNL Experience Manager].*
 
 1. 인증을 **[!UICONTROL 클릭합니다]**.
 1. 자격 증명을 [!DNL Experience Manager] 인증한 후 **[!UICONTROL 보고서 세트]** 목록에서 자산 인사이트를 데이터 [!DNL Adobe Analytics] 로 가져올 보고서 세트를 선택합니다. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
