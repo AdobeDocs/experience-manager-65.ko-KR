@@ -3,7 +3,7 @@ title: 디지털 자산에 워터마크 추가
 description: 워터마크 기능을 사용하여 디지털 워터마크를 자산에 추가하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 1. 사이드 패널에서 워터마크 **[!UICONTROL 추가]** 단계를 [!UICONTROL DAM 자산 업데이트 워크플로우로] 드래그합니다.
 
    ![워터마크 [!UICONTROL 추가] 단계를 드래그하여 [!UICONTROL DAM 자산 업데이트 워크플로우에] 추가](assets/add_watermark_step_aem_assets.png)2
-   *그림: 워터마크[!UICONTROL 추가]단계를 드래그하여[!UICONTROL DAM 자산 업데이트 워크플로우에]추가합니다.*
+   *그림:워터마크[!UICONTROL 추가]단계를 드래그하여[!UICONTROL DAM 자산 업데이트 워크플로우에]추가합니다.*
 
    >[!NOTE]
    >
@@ -34,7 +34,7 @@ ht-degree: 0%
 
    ![자산의 워터마크 추가 단계에서 인수 제공](assets/arguments_add_watermark_aem_assets.png)
 
-   *그림: 의 워터마크 추가 단계에서 인수를 제공합니다[!DNL Assets].*
+   *그림:의 워터마크 추가 단계에서 인수를 제공합니다[!DNL Assets].*
 
 1. 워터마크 단계를 통해 **[!UICONTROL DAM 자산]** 업데이트 워크플로우를 저장합니다.
 1. 사용자 인터페이스에서 샘플 자산을 업로드합니다. [!DNL Assets] 워터마크는 위 단계에서 구성한 위치에 글꼴 크기, 색상 등과 함께 나타납니다.
