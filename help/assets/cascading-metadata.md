@@ -1,9 +1,9 @@
 ---
-title: CSS(Cascading Metadata in [!DNL Adobe Experience Manager Assets])
+title: Cascading metadata in [!DNL Assets]
 description: 이 문서에서는 자산의 CSS 메타데이터를 정의하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c92215a6cb1f4c3d02e9a5f5b3fd36c65fc002ce
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
