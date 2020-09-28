@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager 6.5 자산 사용 안내서
-seo-title: Adobe Experience Manager 6.5 자산 사용 안내서
+title: 자산 안내서
+seo-title: Adobe Experience Manager 6.5 자산 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
 seo-description: 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 97%
+source-wordcount: '371'
+ht-degree: 93%
 
 ---
 
 
-# Adobe Experience Manager 6.5 자산 사용 안내서
+# Adobe Experience Manager 6.5 자산 안내서
 
 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
 
@@ -26,7 +26,7 @@ ht-degree: 97%
 * [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [Security 검사 목록](/help/sites-administering/security-checklist.md)
 
-## Adobe Experience Manager 6.5 사용 안내서
+## Experience Manager 6.5 안내서
 
 | 사용 안내서 | 설명 |
 |--- |---|
