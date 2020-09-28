@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '965'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -102,7 +102,7 @@ false인 경우, [할당]은 획득 점수에 대해 배지가 부여되었음�
 
 
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![debug-scoring-log](assets/debug-scoring-log.png)
 
 로그 항목을 보려면
 
@@ -118,17 +118,17 @@ false인 경우, [할당]은 획득 점수에 대해 배지가 부여되었음�
 
    * 예, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-249](assets/chlimage_1-249.png)
+![점수 매기기](assets/scoring-log.png)
 
 ## 점수 지정 및 배지 지정 {#ugc-for-scoring-and-badging}
 
 선택한 SRP가 JSRP 또는 MSRP일 때 점수 및 배지 지정과 관련된 UGC를 볼 수 있지만 ASRP는 볼 수 없습니다. (이러한 용어에 익숙하지 않은 경우 [커뮤니티 컨텐츠 저장소](/help/communities/working-with-srp.md) 및 [저장소 리소스 공급자 개요를 참조하십시오](/help/communities/srp.md).)
 
-CRXDE Lite를 사용하여 UGC에 쉽게 액세스할 수 있으므로 점수 및 배지 데이터에 액세스하기 위한 설명은 JSRP를 [사용합니다](/help/sites-developing/developing-with-crxde-lite.md).
+점수 및 배지 데이터에 액세스하기 위한 설명은 [CRXDE Lite을 사용하여 UGC에 쉽게 액세스할 수 있기 때문에 JSRP를 사용합니다](/help/sites-developing/developing-with-crxde-lite.md).
 
-**작성자의 JSRP**: 작성 환경에서 테스트하면 작성 환경에서만 표시되는 UGC가 만들어집니다.
+**작성자의 JSRP**:작성 환경에서 테스트하면 작성 환경에서만 표시되는 UGC가 만들어집니다.
 
-**게시**&#x200B;시 JSRP: 마찬가지로 게시 환경에서 테스트하는 경우 게시 인스턴스에 대한 관리 권한이 있는 CRXDE Lite에 액세스해야 합니다. 게시 인스턴스가 [프로덕션 모드](/help/sites-administering/production-ready.md) (nosamplecontent runmode)에서 실행 중인 경우 CRXDE Lite를 [활성화해야 합니다](/help/sites-administering/enabling-crxde-lite.md).
+**게시**&#x200B;시 JSRP:마찬가지로 게시 환경에서 테스트하는 경우 게시 인스턴스에 대한 관리 권한이 있는 CRXDE Lite에 액세스해야 합니다. 게시 인스턴스가 [프로덕션 모드](/help/sites-administering/production-ready.md) (nosamplecontent runmode)에서 실행 중인 경우 CRXDE Lite을 [활성화해야 합니다](/help/sites-administering/enabling-crxde-lite.md).
 
 JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr/`.
 
@@ -139,13 +139,13 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 * [com.adobe.cq.sosocial.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.sosocial.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-설치된 기능 팩에 대한 최신 Javadocs는 Adobe 저장소의 개발자가 사용할 수 있습니다. 커뮤니티에 대한 [Maven 사용을 참조하십시오. Javadocs](/help/communities/maven.md#javadocs).
+설치된 기능 팩에 대한 최신 Javadocs는 Adobe 저장소의 개발자가 사용할 수 있습니다. 커뮤니티에 대한 [Maven 사용을 참조하십시오.Javadocs](/help/communities/maven.md#javadocs).
 
 **저장소의 UGC의 위치와 형식은 경고**&#x200B;없이 변경될 수 있습니다.
 
 ### 예제 설정 {#example-setup}
 
-저장소 데이터의 스크린샷은 서로 다른 두 AEM 사이트의 포럼에 대한 점수 지정 및 배지 설정으로부터 나옵니다.
+저장소 데이터의 스크린샷은 두 개의 다른 AEM 사이트에서 포럼에 대한 점수 지정 및 배지 설정으로부터 나옵니다.
 
 1. 고유 ID가 *있는* AEM 사이트(마법사를 사용하여 만든 커뮤니티 사이트):
 
@@ -217,19 +217,19 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 
    사용자가 두 개의 청동 배지를 받았고 사회자 배지가 수여됨에 따라 포럼 참가자가 표시되는 방식은 다음과 같습니다.
 
-![chlimage_1-250](assets/chlimage_1-250.png)
+   ![중재자](assets/moderator.png)
 
 >[!NOTE]
 >
 >이 예는 다음과 같은 우수 사례를 따르지 않습니다.
 >
->* 점수 규칙 이름은 전체적으로 고유해야 합니다. 같은 이름으로 끝나서는 안 됩니다.
-   >  하지 *말아야* 할 사항의 예:
+>* 점수 규칙 이름은 전체적으로 고유해야 합니다.같은 이름으로 끝나서는 안 됩니다.
+   >  하지 *않을* 작업의 예:
    >  /libs/settings/community/scoring/rules/site1/forums-scoring
    >  /libs/settings/community/scoring/rules/site2/forums-scoring
    >
    >
-* 다양한 AEM 사이트에 대한 고유한 배지 이미지 만들기
+* 다양한 AEM 사이트에 사용할 고유한 배지 이미지 만들기
 
 >
 
@@ -245,7 +245,7 @@ API [를 사용하는 것이](#scoring-and-badging-apis) 좋습니다.
 
 의 하위 노드 `scoring` 는 점수 지정 규칙 이름입니다. 따라서 서버의 점수 지정 규칙 이름은 전역적으로 고유하도록 하는 것이 좋습니다.
 
-Geometrixx Engage 사이트의 경우 사용자 및 점수는 점수 규칙 이름, 커뮤니티 사이트의 사이트 ID(), 고유 ID 및 사용자 ID로 구성된 경로에 있습니다. `engage-ba81p`
+Geometrixx 참여 사이트의 경우 사용자 및 점수는 점수 규칙 이름, 커뮤니티 사이트의 사이트 ID(), 고유 ID 및 사용자 ID로 구성된 경로에 있습니다. `engage-ba81p`
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
@@ -255,7 +255,7 @@ Geometrixx Engage 사이트의 경우 사용자 및 점수는 점수 규칙 이�
 
 점수는 직접 값만 포함하거나 atomicCounter를 간접적으로 참조할 수 `scoreValue_tl` 있는 속성에 저장됩니다.
 
-![chlimage_1-251](assets/chlimage_1-251.png)
+![access-scoring-ugc](assets/access-scoring-ugc.png)
 
 ### 배지 UGC 액세스 {#access-badging-ugc}
 
@@ -271,11 +271,11 @@ API [를 사용하는 것이](#scoring-and-badging-apis) 좋습니다.
 
 #### 수상 배지 {#awarded-badge}
 
-![chlimage_1-252](assets/chlimage_1-252.png)
+![수상-배지-ugc](assets/access-badging-ugc.png)
 
 #### 지정된 배지 {#assigned-badge}
 
-![chlimage_1-253](assets/chlimage_1-253.png)
+![assigned-badge](assets/assigned-badge.png)
 
 ## 추가 정보 {#additional-information}
 
