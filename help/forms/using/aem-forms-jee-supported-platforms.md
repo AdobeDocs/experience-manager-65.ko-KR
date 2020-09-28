@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 23aee6802e625e82d18a205586eb77341b6ef16e
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3247'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,6 @@ JEE 서버의 AEM Forms은 지원되는 운영 체제, 응용 프로그램 서�
 >
 >* 지원되는 서버 플랫폼에 대한 예외 사항의 전체 목록은 지원되는 서버 플랫폼 [에 대한 예외를 참조하십시오](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >* AEM Forms on JEE는 지원되는 운영 체제 및 애플리케이션의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
-
 >
 
 
@@ -457,11 +456,9 @@ JEE 서버에 AEM Forms을 설정할 플랫폼을 선택할 때는 다음 예외
 >* OpenOffice용 PDF Generator 변환은 Windows 및 Linux에서만 지원됩니다.
 >* OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
 >* Acrobat 버전은 PDF Generator 기능을 사용하도록 AEM Forms에 번들로 포함되어 있습니다. 번들로 제공되는 버전은 AEM Forms 라이선스 기간 동안 AEM Forms PDF Generator와 함께 사용할 수 있는 AEM Forms에서만 프로그램 방식으로 액세스해야 합니다. 자세한 내용은 배포(온프레미스[또는](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) Managed Services [](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))에 따라 AEM Forms 제품 설명을 참조하십시오.&quot;
-
    >
    >
 * PDF Generator 서비스는 Microsoft Windows 10을 지원하지 않습니다.
-
 >
 
 
@@ -640,7 +637,6 @@ AEM Forms의 다음 하위 시스템은 [508을](https://www.section508.gov/) �
 >* Safari에서는 관리 콘솔이 지원되지 않습니다.
 >* 통신 관리에서는 AEM 6.1 양식용 Windows® Internet Explorer 9.0을 지원하지 않습니다.
 >* Forms 포털은 접근성을 위해 Internet Explorer 11에서 JAWS 14.0 화면 판독기 소프트웨어를 지원합니다.
-
 >
 
 
@@ -675,7 +671,6 @@ AEM Forms의 다음 하위 시스템은 [508을](https://www.section508.gov/) �
 >[!NOTE]
 >
 >* Forms 포털은 iPad의 Safari에서만 지원됩니다.
-
 >
 
 
@@ -688,7 +683,7 @@ AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 
 | **플랫폼** | **지원되는 장치** |
 |---|---|
-| Apple iOS | iOS 11 이상 버전이 실행되는 Apple iPhone, iPad, iPad Air 및 iPad mini |
+| Apple iOS | iOS 12 이상 버전이 실행되는 Apple iPhone, iPad, iPad Air 및 iPad mini |
 | Google Android | Android 5.1 이상 AEM Forms 앱은 7, 10인치 삼성 갤럭시태블릿과 인기 스마트폰에서 인증을 받았다. |
 | Microsoft Windows | Microsoft Windows 10 운영 체제를 실행하는 Microsoft Surface 장치, 태블릿, 랩탑 및 데스크탑 |
 
@@ -734,3 +729,8 @@ Adobe이 제어할 수 없는 상황에서 이전 버전과의 호환성을 주�
 Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼과 해당 시점에 지원되는 패치 정의를 변경할 권한을 가집니다.
 
 타사 패치에 대한 추가 정보는 Adobe 엔터프라이즈 지원 사이트에서 제품과 관련된 기술 자료 문서를 검색하여 찾을 수도 있습니다.
+
+## 개정 내역 {#revision-history}
+
+* 2020년 9월 9일
+   * AEM Forms 앱에 대해 지원되는 iOS 버전이 iOS 12로 변경되었습니다. 이전 버전은 iOS 11입니다.
