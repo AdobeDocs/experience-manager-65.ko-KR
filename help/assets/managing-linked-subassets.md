@@ -1,11 +1,11 @@
 ---
-title: 참조 및 여러 페이지 에셋을 사용하여 복합 자산을 관리합니다 [!DNL Adobe Experience Manager].
+title: 참조 및 여러 페이지로 복합 자산 관리
 description: 디지털 자산에 대한 참조를 만드는 방법을 [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]살펴보십시오. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 여러 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
    ![자산 세부 정보에서 참조 열의 Experience Manager 자산 참조 보기](assets/asset-references.png)
 
-   *그림: 자산 세부 정보에 있는 자산 참조를 참조하십시오.*
+   *그림:자산 세부 정보에 있는 자산 참조를 참조하십시오.*
 
 ## 디지털 자산을 참조로 추가 [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -95,13 +95,13 @@ PDF 파일, AI 파일, 파일, 파일 등 여러 페이지 형식의 지원되�
 
 하위 자산을 생성하려면 다음 중 하나를 수행합니다.
 
-* 새 자산: DAM 자산 [!UICONTROL 업데이트] 워크플로우는 업로드된 모든 새 자산에 대해 실행됩니다 [!DNL Experience Manager]. 하위 자산은 새 다중 페이지 자산에 대해 자동으로 생성됩니다.
-* 기존 다중 페이지 자산: 다음 단계 중 하나를 [!UICONTROL 따라 DAM 자산] 업데이트 워크플로우를 수동으로 실행합니다.
+* 새 자산:DAM 자산 [!UICONTROL 업데이트] 워크플로우는 업로드된 모든 새 자산에 대해 실행됩니다 [!DNL Experience Manager]. 하위 자산은 새 다중 페이지 자산에 대해 자동으로 생성됩니다.
+* 기존 다중 페이지 자산:다음 단계 중 하나를 [!UICONTROL 따라 DAM 자산] 업데이트 워크플로우를 수동으로 실행합니다.
 
    * 자산을 선택하고 [!UICONTROL 타임라인] 을 클릭하여 왼쪽 패널을 엽니다. 또는 키보드 단축키를 사용합니다 `alt + 3`. 워크플로우 [!UICONTROL 시작]을 클릭하고 [!UICONTROL DAM 자산]업데이트 [!UICONTROL 를 선택한 다음]시작을 [!UICONTROL 클릭하고]Continue를 클릭합니다.
    * 자산을 선택하고 도구 모음에서 [!UICONTROL 만들기] > [!UICONTROL 작업] 흐름을클릭합니다. 팝업 대화 상자에서 [!UICONTROL DAM 자산] 업데이트 워크플로우를 선택하고 [!UICONTROL 시작을]클릭한 다음 [!UICONTROL 진행을 클릭합니다].
 
-Microsoft Word 문서 전용으로, DAM Parse Word 문서 **[!UICONTROL 워크플로우를]** 실행합니다. Microsoft Word 문서의 내용에서 구성 `cq:Page` 요소를 생성합니다. 문서에서 추출한 이미지는 구성 요소에서 `cq:Page` 참조됩니다. 이러한 이미지는 하위 자산 생성을 사용하지 않는 경우에도 추출됩니다.
+Microsoft Word 문서 전용으로, **[!UICONTROL DAM Parse Word 문서 워크플로우를]** 실행합니다. Microsoft Word 문서의 내용에서 구성 `cq:Page` 요소를 생성합니다. 문서에서 추출한 이미지는 구성 요소에서 `cq:Page` 참조됩니다. 이러한 이미지는 하위 자산 생성을 사용하지 않는 경우에도 추출됩니다.
 
 ## View subassets {#viewing-subassets}
 
