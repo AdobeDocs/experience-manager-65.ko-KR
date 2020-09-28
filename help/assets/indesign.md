@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] 통합 [!DNL Adobe InDesign Server]'
+title: ' [!DNL Assets] 통합 [!DNL InDesign Server]'
 description: 통합 방법 [!DNL Adobe Experience Manager Assets] 을 살펴보십시오 [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 0%
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 * 특정 처리 작업의 로드를 배포하는 프록시입니다. 프록시는 특정 작업을 수행하기 위해 프록시 작업자와 통신하고 결과를 전달하는 다른 [!DNL Experience Manager] [!DNL Experience Manager] 인스턴스입니다.
 * 특정 작업을 정의 및 관리하는 프록시 작업자입니다.
-여기에는 다양한 작업이 포함될 수 있습니다. 예를 들어, an을 사용하여 파일 [!DNL InDesign Server] 을 처리합니다.
+여기에는 다양한 작업이 포함될 수 있습니다.예를 들어, an을 사용하여 파일 [!DNL InDesign Server] 을 처리합니다.
 
 프록시로 만든 파일 [!DNL Experience Manager Assets] 을 업로드하기 위해 [!DNL Adobe InDesign] 가 사용됩니다. 이 기능은 프록시 작업자를 사용하여 스크립트와 [!DNL Adobe InDesign Server]통신합니다. 여기에서 [스크립트를 실행하여 메타데이터를 추출하고 다양한 변환을 생성할 수](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) [!DNL Experience Manager Assets]있습니다. 프록시 작업자는 클라우드 구성의 인스턴스와 인스턴스 간 [!DNL InDesign Server] 의 양방향 통신을 [!DNL Experience Manager] 활성화합니다.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] 는 두 개의 별도 서비스로 제공됩니다. [인쇄 및 디지털 배포를 위한 페이지 레이아웃을 디자인하는 데 사용되는 Adobe InDesign](https://www.adobe.com/products/indesign.html) 데스크탑 앱 [Adobe InDesign Server를](https://www.adobe.com/products/indesignserver.html) 사용하면 제작한 컨텐츠를 기반으로 프로그래밍 방식으로 자동화된 문서를 만들 수 있습니다 [!DNL InDesign]. 이 스크립트는 [ExtendScript](https://www.adobe.com/devnet/scripting.html) 엔진에 대한 인터페이스를 제공하는 서비스로 작동합니다.스크립트는 [!DNL ExtendScript]작성되며 이는 [!DNL JavaScript]비슷한 방식입니다. 스크립트에 대한 자세한 내용은 [!DNL InDesign] https://www.adobe.com/devnet/indesign/documentation.html#idscripting을 [참조하십시오](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] 는 두 개의 별도 서비스로 제공됩니다. [인쇄 및 디지털 배포를 위한 페이지 레이아웃을 디자인하는 데 사용되는 Adobe InDesign](https://www.adobe.com/products/indesign.html) 데스크탑 앱 [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) 기능을 사용하면 만든 문서를 바탕으로 프로그래밍 방식으로 자동화된 문서를 만들 수 있습니다 [!DNL InDesign]. 이 스크립트는 [ExtendScript](https://www.adobe.com/devnet/scripting.html) 엔진에 대한 인터페이스를 제공하는 서비스로 작동합니다.스크립트를 작성한 [!DNL ExtendScript]것은 비슷한 방식입니다 [!DNL JavaScript]. 스크립트에 대한 자세한 내용은 [!DNL InDesign] https://www.adobe.com/devnet/indesign/documentation.html#idscripting을 [참조하십시오](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## 추출 작동 방식 {#how-the-extraction-works}
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이전 버전의 XMP와 축소판을 추출할 수 [!DNL Experience Manager] 있었지만 이제 모든 미디어를 추출할 수 있습니다.
+>이전 버전의 XMP과 축소판을 추출할 수 [!DNL Experience Manager] 있었지만 이제 모든 미디어를 추출할 수 있습니다.
 
 1. INDD 파일을 업로드합니다 [!DNL Experience Manager Assets].
 1. 프레임워크는 명령 스크립트를 SOAP(Simple Object Access Protocol)를 통해 [!DNL InDesign Server] 전송합니다.
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >IDML은 파일의 모든 내용을 렌더링하는 XML 기반 [!DNL InDesign] 포맷입니다. 압축 패키지로 저장되며 [ZIP](https://www.techterms.com/definition/zip) 압축을 사용합니다. 자세한 내용은 InDesign Interchange [Formats INX 및 IDML을 참조하십시오](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML은 파일의 모든 내용을 렌더링하는 XML 기반 [!DNL InDesign] 포맷입니다. 압축 패키지로 저장되며 [ZIP](https://www.techterms.com/definition/zip) 압축을 사용합니다. 자세한 내용은 [InDesign 교환 형식 INX 및 IDML을 참조하십시오](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
@@ -63,10 +63,10 @@ ht-degree: 0%
 
 프록시를 구성 [!DNL InDesign Server] 과 [!DNL Experience Manager Assets] 구성한 후 사용할 수 있도록 통합하려면 다음을 수행해야 합니다.
 
-1. [InDesign Server를 설치합니다](#installing-the-indesign-server).
+1. [InDesign Server을 설치합니다](#installing-the-indesign-server).
 1. 필요한 경우 Experience Manager 자산 워크플로우를 [구성합니다](#configuring-the-aem-assets-workflow).
 기본값이 인스턴스에 적합하지 않은 경우에만 필요합니다.
-1. InDesign [Server에 대한 프록시 작업자 구성을 참조하십시오](#configuring-the-proxy-worker-for-indesign-server).
+1. InDesign Server에 대한 [프록시 작업자 구성을 참조하십시오](#configuring-the-proxy-worker-for-indesign-server).
 
 ### 설치 [!DNL InDesign Server] {#installing-the-indesign-server}
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >출력 메시지를 파일에 저장하려면 리디렉션; 예를 들어, Windows:
+   >출력 메시지를 파일에 저장하려면 리디렉션;예를 들어, Windows:
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
 ### 워크플로우 [!DNL Experience Manager Assets] 구성 {#configuring-the-aem-assets-workflow}
@@ -108,11 +108,11 @@ ht-degree: 0%
 
 미디어 추출 인수 및 스크립트 경로
 
-* **ExtendScript 라이브러리**: 다른 스크립트에 필요한 간단한 http get/post 메서드 라이브러리입니다.
+* **ExtendScript 라이브러리**:다른 스크립트에 필요한 간단한 http get/post 메서드 라이브러리입니다.
 
-* **스크립트 확장**: 여기에서 다양한 스크립트 조합을 지정할 수 있습니다. 에서 자신만의 스크립트를 실행하려면 스크립트를 [!DNL InDesign Server]저장할 수 있습니다 `/apps/settings/dam/indesign/scripts`.
+* **스크립트 확장**:여기에서 다양한 스크립트 조합을 지정할 수 있습니다. 에서 자신만의 스크립트를 실행하려면 스크립트를 [!DNL InDesign Server]저장할 수 있습니다 `/apps/settings/dam/indesign/scripts`.
 
-스크립트에 대한 자세한 [!DNL Adobe InDesign] 내용은 [InDesign 개발자 설명서를 참조하십시오](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+스크립트에 대한 자세한 내용은 [!DNL Adobe InDesign] [InDesign 개발자 설명서를 참조하십시오.](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -130,18 +130,18 @@ ht-degree: 0%
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **페이지 추출 처리기**: 팝업 목록에서 사용할 핸들러를 선택합니다. 추출 핸들러는 관련 API에 의해 선택된 특정 변환에서 작동합니다 `RenditionPicker` ( `ExtractionHandler` API 참조). 표준 [!DNL Experience Manager] 설치에서는 다음을 사용할 수 있습니다.
-   * IDML 내보내기 추출 핸들: MediaExtract 단계에서 생성된 `IDML` 변환에서 작동합니다.
+* **페이지 추출 처리기**:팝업 목록에서 사용할 핸들러를 선택합니다. 추출 핸들러는 관련 API에 의해 선택된 특정 변환에서 작동합니다 `RenditionPicker` ( `ExtractionHandler` API 참조). 표준 [!DNL Experience Manager] 설치에서는 다음을 사용할 수 있습니다.
+   * IDML 내보내기 추출 핸들:MediaExtract 단계에서 생성된 `IDML` 변환에서 작동합니다.
 
-* **페이지 이름**: 결과 페이지에 지정할 이름을 지정합니다. 비워 두면 이름이 &quot;page&quot;(또는 &quot;page&quot;가 이미 있는 파생 페이지)입니다.
+* **페이지 이름**:결과 페이지에 지정할 이름을 지정합니다. 비워 두면 이름이 &quot;page&quot;(또는 &quot;page&quot;가 이미 있는 파생 페이지)입니다.
 
-* **페이지 제목**: 결과 페이지에 지정할 제목을 지정합니다.
+* **페이지 제목**:결과 페이지에 지정할 제목을 지정합니다.
 
-* **페이지 루트 경로**: 결과 페이지의 루트 위치에 대한 경로입니다. 비워 두면 자산의 표현물을 포함하는 노드가 사용됩니다.
+* **페이지 루트 경로**:결과 페이지의 루트 위치에 대한 경로입니다. 비워 두면 자산의 표현물을 포함하는 노드가 사용됩니다.
 
-* **페이지 템플릿**: 결과 페이지를 생성할 때 사용할 템플릿입니다.
+* **페이지 템플릿**:결과 페이지를 생성할 때 사용할 템플릿입니다.
 
-* **페이지 디자인**: 결과 페이지를 생성할 때 사용할 페이지 디자인입니다.
+* **페이지 디자인**:결과 페이지를 생성할 때 사용할 페이지 디자인입니다.
 
 ### 프록시 작업자 구성 [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
 
@@ -149,7 +149,7 @@ ht-degree: 0%
 >
 >작업자는 프록시 인스턴스에 상주합니다.
 
-1. 도구 콘솔의 왼쪽 창에서 **[!UICONTROL Cloud Service 구성을]** 확장합니다. 그런 다음 **[!UICONTROL 클라우드 프록시 구성을 확장합니다]**.
+1. 도구 콘솔의 왼쪽 창에서 **[!UICONTROL Cloud Services 구성을]** 확장합니다. 그런 다음 **[!UICONTROL 클라우드 프록시 구성을 확장합니다]**.
 
 1. IDS **[!UICONTROL 작업자]** 를 두 번 클릭하여 구성을 엽니다.
 
@@ -180,7 +180,7 @@ ht-degree: 0%
 
 병렬 ID 작업 수를 구성하려면:
 
-1. Felix Console의 **[!UICONTROL 구성]** 탭을 엽니다. 예를 들면 다음과 같습니다. `https://[aem_server]:[port]/system/console/configMgr`.
+1. Felix Console의 **[!UICONTROL 구성]** 탭을 엽니다.예를 들면 다음과 같습니다. `https://[aem_server]:[port]/system/console/configMgr`.
 
 1. 아래에서 IDS 처리 큐를 선택합니다 `Apache Sling Job Queue Configuration`.
 
