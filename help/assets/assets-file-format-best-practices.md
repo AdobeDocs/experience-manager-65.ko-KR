@@ -1,11 +1,11 @@
 ---
-title: 지원되는 다양한 파일 형식을 사용하는 [!DNL Adobe Experience Manager Assets]모범 사례
+title: 지원되는 파일 형식을 처리하기 위한 모범 사례
 description: 지원되는 다양한 파일 유형을 처리하는 모범 사례 [!DNL Experience Manager Assets]
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -13,17 +13,17 @@ ht-degree: 1%
 
 # 자산 파일 형식 우수 사례 {#assets-file-format-best-practices}
 
-[!DNL Adobe Experience Manager Assets] 사용자의 다양한 파일 지원 요구 사항을 충족하기 위해 많은 독점적 및 타사 파일 형식 라이브러리를 지원합니다. 지원되는 Adobe 라이브러리에는, Gibson, [!DNL Adobe Camera Raw]Adobe PDF 래스터라이저 등이 있습니다 [!DNL Adobe InDesign Server]. 또한, [!DNL Experience Manager Assets] 등과 같은 타사 라이브러리 [!DNL ImageMagick][!DNL TwelveMonkeys]를 지원합니다.
+[!DNL Adobe Experience Manager Assets] 사용자의 다양한 파일 지원 요구 사항을 충족하기 위해 많은 독점적 및 타사 파일 형식 라이브러리를 지원합니다. 지원되는 Adobe 라이브러리에는, 깁슨, Adobe PDF 래스터라이저 [!DNL Adobe Camera Raw]등이 있습니다 [!DNL Adobe InDesign Server]. 또한, [!DNL Experience Manager Assets] 등과 같은 타사 라이브러리 [!DNL ImageMagick][!DNL TwelveMonkeys]를 지원합니다.
 
 For the supported file formats, see [Assets supported formats](/help/assets/assets-formats.md).
 
 >[!TIP]
 >
->Adobe Managed Services(AMS) [!DNL Experience Manager] 를 사용하는 경우 대용량 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 센터 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 포맷에 가장 적합한 툴과 모델을 선택할 수 있습니다. [!DNL Experience Manager] 3000 x 23000픽셀이 넘는 매우 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
+>Adobe Managed Services(AMS) [!DNL Experience Manager] 를 사용하는 경우 대용량 PSD 또는 PSB 파일을 처리할 계획인 경우 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 센터 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 포맷에 적합한 최상의 툴과 모델을 선택할 수 있습니다. [!DNL Experience Manager] 3000 x 23000픽셀이 넘는 매우 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
 ## [!DNL Adobe Camera Raw] 라이브러리 {#adobe-camera-raw-library}
 
-최적의 성능을 위해 Adobe에서는 RAW 및 DNG 파일에 [!DNL Adobe Camera Raw] 라이브러리를 사용하는 것이 좋습니다.
+최적의 성능을 위해 RAW 및 DNG 파일에 라이브러리를 사용하는 것이 [!DNL Adobe Camera Raw] 좋습니다.
 
 [!DNL Adobe Camera Raw] 라이브러리는 CMYK 색상 프로파일을 입력으로 지원합니다. 그러나 RGB 색상 공간에서 출력을 생성하고 JPEG 포맷에서만 출력을 지원합니다. 축소판의 소스 파일 색상 공간(예: CMYK)은 유지되지 않습니다.
 
@@ -41,7 +41,7 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기가 
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-IDML 및 HTML [!DNL Adobe InDesign Server] 과 같은 [!DNL Adobe InDesign]특정 표현물을 추출하는 데 사용하는 것이 좋습니다. 자세한 내용은 Adobe InDesign [에서 Experience Manager 에셋을 참조로 추가를 참조하십시오](/help/assets/managing-linked-subassets.md#refai).
+Adobe에서는 IDML 및 HTML [!DNL Adobe InDesign Server] 과 같은 [!DNL Adobe InDesign]특정 표현물을 추출하는 데 사용하는 것이 좋습니다. 자세한 내용은 Adobe InDesign [에서 Experience Manager 에셋을 참조로 추가를 참조하십시오](/help/assets/managing-linked-subassets.md#refai).
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
@@ -51,7 +51,7 @@ IDML 및 HTML [!DNL Adobe InDesign Server] 과 같은 [!DNL Adobe InDesign]특�
 
 ## ImageMagick 라이브러리 {#imagemagick-library}
 
-다음 시나리오에서 ImageMagick 라이브러리를 사용하는 것이 좋습니다.
+Adobe은 다음 시나리오에서 ImageMagick 라이브러리를 사용하는 것이 좋습니다.
 
 * EPS 파일에 대한 축소판 변환을 생성하려면
 * 이미지 프로필 정보를 보존하려면
@@ -62,7 +62,7 @@ IDML 및 HTML [!DNL Adobe InDesign Server] 과 같은 [!DNL Adobe InDesign]특�
 
 ## 이미지 트랜스코딩 라이브러리 {#image-transcoding-library}
 
-Adobe Imaging Transcoding Library는 이미지 인코딩, 트랜스코딩, 리샘플링, 크기 조정 등 핵심 이미지 처리 기능을 수행하는 이미지 처리 솔루션입니다.
+Adobe 이미징 트랜스코딩 라이브러리는 이미지 인코딩, 트랜스코딩, 리샘플링, 크기 조정 등 핵심 이미지 처리 기능을 수행하는 이미지 처리 솔루션입니다.
 
 이미징 트랜스코딩 라이브러리는 다음과 같은 MIME 유형을 지원합니다.
 
