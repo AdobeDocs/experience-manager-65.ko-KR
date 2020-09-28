@@ -1,11 +1,11 @@
 ---
-title: 자산을 처리하여 업무 처리 과정 수행, 감사, 규정 준수, 기본적인 안정성 유지
+title: 워크플로우를 사용하여 자산 처리
 description: 자산 처리를 사용하여 형식을 변환하고, 변환을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 ![일부 기본 워크플로우](assets/aem-default-workflows.png)
 
-*그림: 일부 기본 워크플로우는 에서 사용할 수 있습니다[!DNL Experience Manager].*
+*그림:일부 기본 워크플로우는 에서 사용할 수 있습니다[!DNL Experience Manager].*
 
 ## Apply workflows to process assets {#applying-workflows-to-assets}
 
-디지털 자산에 워크플로우를 적용하는 것은 웹 사이트 페이지의 워크플로우와 동일합니다. 워크플로우 생성 및 사용 방법에 대한 전체 지침은 워크플로우 [시작을 참조하십시오](/help/sites-authoring/workflows-participating.md).
+디지털 자산에 워크플로우를 적용하는 것은 웹 사이트 페이지의 워크플로우와 동일합니다. 워크플로우 작성 및 사용 방법에 대한 전체 지침은 워크플로우 [시작을 참조하십시오](/help/sites-authoring/workflows-participating.md).
 
 디지털 자산의 워크플로우를 사용하여 자산을 활성화하거나 워터마크를 만들 수 있습니다. 자산에 대한 많은 워크플로우가 자동으로 켜집니다. 예를 들어, 이미지를 편집한 후 자동으로 표현물을 만드는 워크플로우가 자동으로 켜집니다.
 
