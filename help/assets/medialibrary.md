@@ -1,9 +1,9 @@
 ---
-title: 미디어 [!DNL Adobe Experience Manager Assets] 라이브러리(CC) 솔루션
+title: 비교 [!DNL Assets] 및 미디어 라이브러리 솔루션
 description: 비교 [!DNL Experience Manager Assets] 및 미디어 라이브러리 솔루션을 통해 차이점을 파악할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 3%
