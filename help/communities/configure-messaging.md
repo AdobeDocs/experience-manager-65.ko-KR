@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # 메시징 기능 {#messaging-feature}
 
-포럼 및 주석에서 발생하는 공개적으로 표시되는 상호 작용 이외에도, AEM Communities의 메시지 기능을 통해 커뮤니티 구성원은 더 비공개로 상호 작용할 수 있습니다.
+포럼과 주석에서 발생하는 공개적으로 보이는 상호 작용 이외에도, AEM Communities의 메시지 기능을 통해 커뮤니티 회원들은 더욱 비공개로 상호 작용할 수 있습니다.
 
 이 기능은 [커뮤니티 사이트를](/help/communities/overview.md#communitiessites) 만들 때 포함될 수 있습니다.
 
@@ -41,7 +41,9 @@ ht-degree: 4%
 
 **G** - 삭제된 메시지 복원
 
-![messaging-section](assets/messaging-section.png) restore- ![message](assets/restore-message.png)
+![메시지 섹션](assets/messaging-section.png)
+
+![restore-message](assets/restore-message.png)
 
 메시징 기능을 활성화하고 수정하려면 다음을 참조하십시오.
 
@@ -77,7 +79,7 @@ ht-degree: 4%
 
 * **서비스 선택기**
 
-   (*필수***`serviceSelector.name`** ) AEM Communities 메시징 작업 서비스 [의 속성 값으로](/help/communities/messaging.md#messaging-operations-service)설정합니다.
+   (*필수***`serviceSelector.name`** ) [AEM Communities 메시징 작업 서비스에서 속성 값](/help/communities/messaging.md#messaging-operations-service)으로 설정합니다.
 
 * **페이지 작성**
 
@@ -97,7 +99,7 @@ ht-degree: 4%
 
 * **폴더 경로**
 
-   (*필수***** ) AEM Communities 메시징 작업 서비스 **서비스의 inbox.path.name** 및 [sentitems.path.name](/help/communities/messaging.md#messaging-operations-service)에 대해 설정된 값을참조합니다. 에 대해 구성할 때 `Inbox`inbox.path.name의 값을 사용하여 하나의 **항목을 추가합니다**. 에 대해 구성할 `Outbox`때 **sentitems.path.name 값을 사용하여 항목을 하나 추가합니다**. 을(를) 구성할 때 두 값 `Trash`으로 두 항목을 추가합니다.
+   (*필수***** ) **AEM Communities 메시징 작업 서비스** 서비스의 inbox.path.name [및](/help/communities/messaging.md#messaging-operations-service)sentitems.path.name에 대해 설정된 값을참조합니다. 에 대해 구성할 때 `Inbox`inbox.path.name의 값을 사용하여 하나의 **항목을 추가합니다**. 에 대해 구성할 `Outbox`때 **sentitems.path.name 값을 사용하여 항목을 하나 추가합니다**. 을(를) 구성할 때 두 값 `Trash`으로 두 항목을 추가합니다.
 
 #### 표시 탭 {#display-tab}
 
@@ -167,7 +169,7 @@ ht-degree: 4%
 
 * **서비스 선택기**
 
-   (*필수***`serviceSelector.name`** ) AEM Communities 메시징 작업 서비스 [의 속성 값으로](/help/communities/messaging.md#messaging-operations-service)설정합니다.
+   (*필수***`serviceSelector.name`** ) [AEM Communities 메시징 작업 서비스에서 속성 값](/help/communities/messaging.md#messaging-operations-service)으로 설정합니다.
 
 #### 표시 탭 {#display-tab-1}
 
