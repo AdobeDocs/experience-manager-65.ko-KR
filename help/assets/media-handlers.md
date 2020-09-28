@@ -1,11 +1,11 @@
 ---
-title: Process assets using media handlers and workflows in [!DNL Adobe Experience Manager].
+title: 미디어 핸들러 및 워크플로우를 사용하여 자산 처리
 description: 미디어 핸들러와 워크플로우를 사용하여 디지털 자산에 대한 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2108'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 2%
 
 미디어 핸들러는 일반적으로 워크플로우와 함께 사용되는 서비스입니다.
 
-[!DNL Experience Manager] 자산 처리를 위한 몇 가지 기본 워크플로우가 있습니다. 이를 보려면 워크플로우 콘솔을 열고 모델 **[!UICONTROL 탭을]** 클릭합니다. 다음으로 시작하는 워크플로우 제목 [!DNL Assets] 은 자산별 제목입니다.
+[!DNL Experience Manager] 자산 처리를 위한 몇 가지 기본 워크플로우가 있습니다. 이를 보려면 워크플로우 콘솔을 열고 모델 **[!UICONTROL 탭을]** 클릭합니다.다음으로 시작하는 워크플로우 제목 [!DNL Assets] 은 자산별 제목입니다.
 
 기존 워크플로우를 확장할 수 있으며 특정 요구 사항에 따라 자산을 처리하기 위해 새로운 워크플로우를 만들 수 있습니다.
 
@@ -76,7 +76,7 @@ ht-degree: 2%
 
 1. In your browser, navigate to `https://<host>:<port>/system/console/components`.
 1. 미디어 **[!UICONTROL 처리기 이름 옆에 있는 비활성화를]** 클릭합니다. 예: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
-1. 페이지를 새로 고칩니다. 비활성화되었음을 나타내는 아이콘이 미디어 처리기 옆에 표시됩니다.
+1. 페이지를 새로 고칩니다.비활성화되었음을 나타내는 아이콘이 미디어 처리기 옆에 표시됩니다.
 1. 미디어 핸들러를 활성화하려면 미디어 핸들러의 이름 **[!UICONTROL 옆에]** 있는 활성화를 클릭합니다.
 
 ### 새 미디어 처리기 만들기 {#creating-a-new-media-handler}
@@ -85,15 +85,15 @@ ht-degree: 2%
 
 #### 중요한 클래스 및 인터페이스 {#important-classes-and-interfaces}
 
-구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 합리적인 기본 동작을 제공하는 제공된 추상적인 구현에서 상속하는 것입니다. 수업 `com.day.cq.dam.core.AbstractAssetHandler` .
+구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 합리적인 기본 동작을 제공하는 제공된 추상적인 구현에서 상속하는 것입니다.수업 `com.day.cq.dam.core.AbstractAssetHandler` .
 
 이 클래스는 추상 서비스 설명자를 이미 제공합니다. 따라서 이 클래스에서 상속하고 maven-sling-plugin을 사용하는 경우 inherit 플래그를 로 설정해야 합니다 `true`.
 
 다음 방법을 구현합니다.
 
-* `extractMetadata()`: 사용 가능한 모든 메타데이터를 추출합니다.
-* `getThumbnailImage()`: 전달된 자산에서 축소판 이미지를 만듭니다.
-* `getMimeTypes()`: 자산 MIME 형식을 반환합니다.
+* `extractMetadata()`:사용 가능한 모든 메타데이터를 추출합니다.
+* `getThumbnailImage()`:전달된 자산에서 축소판 이미지를 만듭니다.
+* `getMimeTypes()`:자산 MIME 형식을 반환합니다.
 
 다음은 예제 템플릿입니다.
 
@@ -103,30 +103,30 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 인터페이스 및 클래스에는 다음이 포함됩니다.
 
-* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스: 이 인터페이스는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. 이 인터페이스를 구현하려면 새 MIME 형식을 추가해야 합니다. 인터페이스에는 축소판을 만들고 메타데이터를 추출하기 위한 특정 문서를 가져오거나 내보내는 방법이 포함되어 있습니다.
-* `com.day.cq.dam.core.AbstractAssetHandler` class: 이 클래스는 다른 모든 자산 처리기 구현의 기초로 사용되고 일반적으로 사용되는 기능을 제공합니다.
+* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스:이 인터페이스는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. 이 인터페이스를 구현하려면 새 MIME 형식을 추가해야 합니다. 인터페이스에는 축소판을 만들고 메타데이터를 추출하기 위한 특정 문서를 가져오거나 내보내는 방법이 포함되어 있습니다.
+* `com.day.cq.dam.core.AbstractAssetHandler` class:이 클래스는 다른 모든 자산 처리기 구현의 기초로 사용되고 일반적으로 사용되는 기능을 제공합니다.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` 클래스:
    * 이 클래스는 다른 모든 자산 처리기 구현의 기초로 사용되고, 일반적으로 사용되는 기능과 하위 자산 추출에 사용되는 기능을 제공합니다.
-   * 구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 합리적인 기본 동작을 제공하는 제공된 추상적인 구현에서 상속하는 것입니다. com.day.cq.dam.core.AbstractAssetHandler 클래스.
+   * 구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 합리적인 기본 동작을 제공하는 제공된 추상적인 구현에서 상속하는 것입니다.com.day.cq.dam.core.AbstractAssetHandler 클래스.
    * 이 클래스는 추상 서비스 설명자를 이미 제공합니다. 따라서 이 클래스에서 상속하고 maven-sling-plugin을 사용하는 경우 inherit 플래그를 true로 설정해야 합니다.
 
 다음 방법을 구현해야 합니다.
 
-* `extractMetadata()`: 이 메서드는 사용 가능한 모든 메타데이터를 추출합니다.
-* `getThumbnailImage()`: 이 방법을 사용하면 전달된 자산에서 축소판 이미지를 만듭니다.
-* `getMimeTypes()`: 이 메서드는 자산 MIME 형식을 반환합니다.
+* `extractMetadata()`:이 메서드는 사용 가능한 모든 메타데이터를 추출합니다.
+* `getThumbnailImage()`:이 방법을 사용하면 전달된 자산에서 축소판 이미지를 만듭니다.
+* `getMimeTypes()`:이 메서드는 자산 MIME 형식을 반환합니다.
 
 다음은 예제 템플릿입니다.
 
-package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler가 com.day.cq.dam.core.AbstractAssetHandler { /// implement the related parts }
+package my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;true&quot; &amp;ast;@scr.service &amp;ast;/ public class MyMediaHandler가 com.day.cq.dam.core.AbstractAssetHandler { /// implement the related parts }
 
 인터페이스 및 클래스에는 다음이 포함됩니다.
 
-* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스: 이 인터페이스는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. 이 인터페이스를 구현하려면 새 MIME 형식을 추가해야 합니다. 인터페이스에는 축소판을 만들고 메타데이터를 추출하기 위한 특정 문서를 가져오거나 내보내는 방법이 포함되어 있습니다.
-* `com.day.cq.dam.core.AbstractAssetHandler` class: 이 클래스는 다른 모든 자산 처리기 구현의 기초로 사용되고 일반적으로 사용되는 기능을 제공합니다.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` class: 이 클래스는 다른 모든 에셋 처리기 구현의 기초로 사용되고, 일반적으로 사용되는 기능뿐만 아니라 하위 에셋 추출을 위한 일반적인 기능을 제공합니다.
+* `com.day.cq.dam.api.handler.AssetHandler` 인터페이스:이 인터페이스는 특정 MIME 유형에 대한 지원을 추가하는 서비스에 대해 설명합니다. 이 인터페이스를 구현하려면 새 MIME 형식을 추가해야 합니다. 인터페이스에는 축소판을 만들고 메타데이터를 추출하기 위한 특정 문서를 가져오거나 내보내는 방법이 포함되어 있습니다.
+* `com.day.cq.dam.core.AbstractAssetHandler` class:이 클래스는 다른 모든 자산 처리기 구현의 기초로 사용되고 일반적으로 사용되는 기능을 제공합니다.
+* `com.day.cq.dam.core.AbstractSubAssetHandler` class:이 클래스는 다른 모든 에셋 처리기 구현의 기초로 사용되고, 일반적으로 사용되는 기능뿐만 아니라 하위 에셋 추출을 위한 일반적인 기능을 제공합니다.
 
-#### 예: 특정 텍스트 처리기 만들기 {#example-create-a-specific-text-handler}
+#### 예:특정 텍스트 처리기 만들기 {#example-create-a-specific-text-handler}
 
 이 섹션에서는 워터마크가 있는 축소판을 생성하는 특정 텍스트 핸들러를 만듭니다.
 
@@ -144,9 +144,9 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
    1. 프로젝트 [!DNL Maven] 정의:
 
       * 그룹 ID: `com.day.cq5.myhandler`.
-      * 아티팩트 ID: myBundle.
-      * 이름: 내 [!DNL Experience Manager] 번들
-      * 설명: 이건 제 [!DNL Experience Manager] 묶음이에요.
+      * 아티팩트 ID:myBundle.
+      * 이름:내 [!DNL Experience Manager] 번들
+      * 설명:이건 제 [!DNL Experience Manager] 묶음이에요.
    1. 마침을 **[!UICONTROL 클릭합니다]**.
 
 
@@ -471,7 +471,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 서버 [!DNL ImageMagick] 를 호스팅하는 디스크에 [!DNL Experience Manager] 설치:
 
-1. 설치 [!DNL ImageMagick]: ImageMagick [설명서를 참조하십시오](https://www.imagemagick.org/script/download.php).
+1. 설치 [!DNL ImageMagick]:ImageMagick [설명서를 참조하십시오](https://www.imagemagick.org/script/download.php).
 1. 명령줄에서 변환을 실행할 수 있도록 도구를 설정합니다.
 1. 도구가 제대로 설치되었는지 확인하려면 명령줄에서 다음 명령 `convert -h` 을 실행하십시오.
 
@@ -491,7 +491,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 1. 파일 시스템에서 원하는 TIFF 이미지를 가져올 수 있습니다. WebDAV를 사용하여 이름을 `myImage.tiff` 변경하여 `/content/dam`복사할 수 있습니다.
 1. 예를 들어 **[!UICONTROL CQ5 DAM]** 콘솔로 이동합니다 `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
-1. 에셋을 **[!UICONTROL myImage.tiff]** 열고 역진행 이미지와 3개의 축소판을 만들었는지 확인합니다.
+1. 에셋 myImage.tiff **[!UICONTROL 를 열고]** 역진행 이미지와 3개의 축소판이 만들어졌는지 확인합니다.
 
 #### CommandLineProcess 프로세스 단계 구성 {#configuring-the-commandlineprocess-process-step}
 
@@ -503,13 +503,13 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 |---|---|
 | mime:&lt;mime-type> | 선택적 인수입니다. 자산이 인수 중 하나와 동일한 MIME 형식을 갖는 경우 프로세스가 적용됩니다. <br>여러 MIME 형식을 정의할 수 있습니다. |
 | tn:&lt;width>:&lt;height> | 선택적 인수입니다. 인수에 정의된 치수로 축소판을 만듭니다. <br>여러 축소판을 정의할 수 있습니다. |
-| cmd: &lt;command> | 실행되는 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 하나의 명령만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다<br>`${filename}`. 입력 파일의 이름(예: original.jpg) <br> `${file}`: 입력 파일의 전체 경로 이름(예: `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: 입력 파일의 디렉토리(예: `/tmp/cqdam0816.tmp` 다음 <br>`${basename}`) 입력 파일의 확장자가 없는 이름(예: 원본 <br>`${extension}`: JPG와 같은 입력 파일의 확장입니다. |
+| cmd:&lt;command> | 실행되는 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 하나의 명령만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다<br>`${filename}`.입력 파일의 이름(예: original.jpg) <br> `${file}`:입력 파일의 전체 경로 이름(예: `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`:입력 파일의 디렉토리(예: `/tmp/cqdam0816.tmp` 다음 <br>`${basename}`)입력 파일의 확장자가 없는 이름(예: 원본 <br>`${extension}`:JPG와 같은 입력 파일의 확장입니다. |
 
 예를 들어, 서버 [!DNL ImageMagick] 를 호스팅하는 디스크에 설치되어 있고 CommandLineProcess [!DNL Experience Manager] 를 구현으로 사용하여 프로세스 단계를 만드는 경우 [!UICONTROL 다음 값을] 프로세스 인수로 [!UICONTROL 지정합니다].
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-그런 다음 워크플로우가 실행되면 이 단계는 원래 이미지 `image/gif` 를 뒤집거나 원래 이미지 `mime:image/tiff` `mime-types`를 만든 에셋에만 적용되며 JPG로 변환하여 크기가 작은 세 개의 축소판을 만듭니다. 140x100, 48x48 및 10x250.
+그런 다음 워크플로우가 실행되면 이 단계는 원래 이미지 `image/gif` 를 뒤집거나 원래 이미지 `mime:image/tiff` `mime-types`를 만든 에셋에만 적용되며 JPG로 변환하여 크기가 작은 세 개의 축소판을 만듭니다.140x100, 48x48 및 10x250.
 
 다음 [!UICONTROL 프로세스 인수를] 사용하여 세 개의 표준 축소판을 만들 수 있습니다 [!DNL ImageMagick].
 
