@@ -1,11 +1,11 @@
 ---
-title: '[!DNL 자산] 네트워크 고려 사항 및 요구 사항입니다.'
+title: 네트워크 고려 사항 및 요구 사항
 description: 배포를 디자인할 때의 네트워크 고려 [!DNL Adobe Experience Manager Assets] 사항에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 환경의 토폴로지 [!DNL Experience Manager] 를 디자인하려면 시스템 구성에 대한 자세한 지식과 사용자 환경 내에서 네트워크를 연결하는 방법을 알아야 합니다.
 
-샘플 시나리오에는 5개의 서버가 있는 게시 팜, S3 이진 저장소 및 구성된 Dynamic Media이 포함됩니다.
+샘플 시나리오에는 5개의 서버가 있는 게시 팜, S3 이진 저장소 및 Dynamic Media가 구성되어 있습니다.
 
 디스패처는 이를 바깥 세상과 [!DNL Experience Manager] 배포에 있는 두 개의 개체들과 100Mbps 연결을 공유합니다. 동시에 업로드 및 다운로드 작업을 하려면 이 숫자를 2로 나누어야 합니다. 연결된 외부 저장소는 별도의 연결을 사용합니다.
 
