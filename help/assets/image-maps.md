@@ -1,11 +1,11 @@
 ---
-title: 디지털 이미지에 하이퍼링크가 포함된 이미지 맵 추가
+title: 하이퍼링크를 사용하여 이미지 맵 추가
 description: 이미지에 하이퍼링크가 포함된 이미지 맵을 추가하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '268'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
       >
       >빠른 작업은 목록 보기에서 사용할 수 **[!UICONTROL 없습니다]** .
 
-   * 카드 **[!UICONTROL 또는]** **[!UICONTROL 목록]** 보기에서 자산을 선택하고 도구 모음에서 **[!UICONTROL 편집]** 을클릭합니다.
+   * 카드 **[!UICONTROL 또는]** **[!UICONTROL 목록]****[!UICONTROL 보기에서 자산을 선택하고 도구 모음에서]** 편집을클릭합니다.
    * 자산 **[!UICONTROL 페이지에서 편집을]** 클릭합니다.
 
       ![편집 옵션](assets/do-not-localize/edit_icon.png)
@@ -45,4 +45,4 @@ ht-degree: 2%
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Dynamic Media 옵션이 활성화되어 있으면 자산 편집기로 이동하고 **[!UICONTROL 맵을 클릭하여]** 적용된 모든 이미지 맵을 봅니다.
+   다이내믹 미디어 옵션이 활성화되어 있으면, 자산 편집기로 이동하고 **[!UICONTROL 맵을]** 클릭하여 적용된 모든 이미지 맵을 봅니다.
