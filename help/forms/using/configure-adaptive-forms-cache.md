@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1a4bfc91cf91b4b56cc4efa99f60575ac1a9a549
+source-git-commit: d5a649337acdc01c58ecc473e7c919e06cbd0188
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 1%
@@ -127,7 +127,8 @@ ht-degree: 1%
       # added for AEM forms specific use cases.
       /0003 { /glob "dataRef" /type "allow" }
       }
-   
+   ```
+
 AEM 환경은 적응형 양식을 캐시하도록 구성되어 있습니다. 모든 유형의 적응형 양식을 캐시합니다. 캐시된 페이지를 전달하기 전에 페이지에 대한 사용자 액세스 권한을 확인해야 하는 요구 사항이 있는 경우 [보안 컨텐츠 캐싱을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## 문제 해결 {#troubleshooting}
