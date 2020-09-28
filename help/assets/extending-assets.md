@@ -1,9 +1,9 @@
 ---
-title: Customize and extend [!DNL Adobe Experience Manager Assets].
+title: Customize and extend [!DNL Assets]
 description: 사용자에게 특별히 맞춤화된 인터페이스와 기능 세트를 제공하는 자산 공유 및 자산 편집기를 사용자 정의하고 확장할 수 있는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 2%
@@ -30,9 +30,9 @@ ht-degree: 2%
 
 자산 편집기의 다음과 같은 모양 및 느낌을 사용자 정의할 수 있습니다.
 
-* 로고: 인터페이스에 조직의 로고를 추가할 수 있습니다.
-* 색상 및 글꼴: 인터페이스에 사용된 색상과 글꼴을 변경할 수 있습니다.
-* HTML 코드: 보다 정확한 사용자 지정을 위해 인터페이스를 정의하는 기본 HTML 코드를 변경할 수 있습니다.
+* 로고:인터페이스에 조직의 로고를 추가할 수 있습니다.
+* 색상 및 글꼴:인터페이스에 사용된 색상과 글꼴을 변경할 수 있습니다.
+* HTML 코드:보다 정확한 사용자 지정을 위해 인터페이스를 정의하는 기본 HTML 코드를 변경할 수 있습니다.
 
 ## 변환 사용자 정의 {#customizing-renditions}
 
