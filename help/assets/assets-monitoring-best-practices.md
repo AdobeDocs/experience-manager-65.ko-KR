@@ -1,9 +1,9 @@
 ---
-title: 배포를 [!DNL Adobe Experience Manager Assets] 모니터링하는 모범 사례
+title: 배포 [!DNL Assets] 모니터링을 위한 모범 사례
 description: 배포가 배포된 후 환경 및 성능 [!DNL Adobe Experience Manager] 을 모니터링하기 위한 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
