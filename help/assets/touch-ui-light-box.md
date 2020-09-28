@@ -1,11 +1,11 @@
 ---
-title: Lightbox를 개인 이미지 갤러리로 [!DNL Adobe Experience Manager Assets]사용
-description: Adobe Experience Manager 에셋]에서 개인 이미지 갤러리로 Lightbox에 대해 알아보십시오.
+title: 개인 이미지 갤러리로 Lightbox 사용
+description: Adobe Experience Manager 자산에서 개인 이미지 갤러리로 Lightbox에 대해 알아보십시오.]
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
