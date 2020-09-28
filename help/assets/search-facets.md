@@ -1,11 +1,11 @@
 ---
-title: 검색 패싯.
+title: 검색 결과를 필터링하는 패싯 검색
 description: 검색 패싯을 만들고 수정하며 사용하는 [!DNL Adobe Experience Manager]방법입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7f06670ca8b488a661fde7a133bce6886ee7f5d
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2489'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 2%
 
    ![조건자를 눌러 이동하여 검색 필터를 사용자 정의합니다.](assets/drag_predicate.png)
 
-   *그림: 조건자를 누르고 이동하여 검색 필터를 사용자 정의합니다.*
+   *그림:조건자를 누르고 이동하여 검색 필터를 사용자 정의합니다.*
 
 1. 설정 탭에서 설명 필드 레이블, 자리 표시자 텍스트 및 설명을 입력합니다. 조건자와 연결할 메타데이터 속성의 올바른 이름을 지정합니다.
 
@@ -137,7 +137,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 1. 로고를 [!DNL Experience Manager] 클릭한 다음 도구 > **[!UICONTROL 일반]** > **[!UICONTROL Forms]** **[!UICONTROL 검색]**&#x200B;으로 이동합니다.
 1. Forms 검색 페이지에서 **[!UICONTROL 자산 관리 검색 레일을 선택하고]**&#x200B;편집 **[!UICONTROL 아이콘을]** 클릭합니다 ![](assets/do-not-localize/aemassets_edit.png).
 1. [검색 양식 편집] 페이지의 [설명 선택] **[!UICONTROL 탭에서]** 다중 값 속성 설명 **[!UICONTROL 을]** 기본 창으로드래그합니다.
-1. [ **[!UICONTROL 설정]** ] 탭에서 술자의 레이블과 자리 표시자 텍스트를 입력합니다. 예를 들어 속성 필드에서 검색을 수행할 속성 이름을 지정합니다 `jcr:content/metadata/dc:value`. 선택 대화 상자를 사용하여 노드를 선택할 수도 있습니다.
+1. [ **[!UICONTROL 설정]** ] 탭에서 조건자의 레이블과 자리 표시자 텍스트를 입력합니다. 예를 들어 속성 필드에서 검색을 수행할 속성 이름을 지정합니다 `jcr:content/metadata/dc:value`. 선택 대화 상자를 사용하여 노드를 선택할 수도 있습니다.
 1. 구분 **[!UICONTROL 기호 지원이]** 선택되었는지 확인합니다. [ **[!UICONTROL 입력 구분 기호]** ] 필드에서 구분 기호를 지정하여 개별 값을 구분합니다. 기본적으로 쉼표는 구분 기호로 지정됩니다. 다른 구분 기호를 지정할 수 있습니다.
 1. 설명 **** 필드에 선택적 설명을 입력한 다음 완료를 **[!UICONTROL 클릭합니다]**.
 1. 사용자 인터페이스에서 필터 패널로 [!DNL Assets] 이동합니다. 다중 값 **[!UICONTROL 속성]** 조건자가 패널에 추가됩니다.
@@ -164,7 +164,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 
    ![태그 이름을 입력할 때 Experience Manager 제공 제안](assets/tag-suggestion.png)
 
-   *그림: 태그의 이름을 입력할 때 Experience Manager 제공 제안.*
+   *그림:태그의 이름을 입력할 때 Experience Manager 제공 제안.*
 
 1. 지정한 **[!UICONTROL 모든]** 태그가 포함된 일치 항목을 검색하려면 모두 일치를 선택합니다.
 
