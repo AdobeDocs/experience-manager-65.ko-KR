@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 0%
+source-wordcount: '1133'
+ht-degree: 2%
 
 ---
 
@@ -123,3 +123,37 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 
+## 문제 해결 {#troubleshooting-workflows}
+
+### AEM 받은 편지함에서 AEM Workflow 관련 항목을 볼 수 없습니다. {#unable-to-see-aem-worklow-items}
+
+워크플로우 모델 소유자는 AEM 받은 편지함에서 AEM Workflow와 관련된 항목을 볼 수 없습니다. 문제를 해결하려면 아래 나열된 색인을 AEM 저장소에 추가하고 색인을 다시 작성합니다.
+
+1. 다음 방법 중 하나를 사용하여 색인을 추가합니다.
+
+   * 다음 표에 지정된 각 속성을 사용하여 CRX DE `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` 에서 다음 노드를 생성합니다.
+
+      | 노드 | 속성 | 유형 |
+      |---|---|---|
+      | sharedWith | sharedWith | 문자열 |
+      | 잠김 | 잠김 | 부울 |
+      | 반환 | 반환 | 부울 |
+      | allowInboxSharing | allowInboxSharing | 부울 |
+      | allowExplicitSharing | allowExplicitSharing | 부울 |
+
+
+   * AEM 패키지를 통해 색인을 배포합니다. AEM [Tranype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype) 프로젝트를 사용하여 배포 가능한 AEM 패키지를 생성할 수 있습니다. 다음 샘플 코드를 사용하여 AEM Tranype 프로젝트에 색인을 추가합니다.
+
+   ```Java
+      .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
+      .property("locked", "locked").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("returned", "returned").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("allowInboxSharing", "allowInboxSharing").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
+   ```
+
+1. [속성 색인을 만들고 true로 설정합니다](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
+
+1. CRX DE에서 색인을 구성하거나 패키지를 통해 배포한 후 저장소 [를 다시 인덱싱합니다](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
+
+https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html
