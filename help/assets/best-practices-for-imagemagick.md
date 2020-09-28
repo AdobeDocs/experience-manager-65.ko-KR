@@ -1,11 +1,11 @@
 ---
-title: Install and configure ImageMagick to work with [!DNL Adobe Experience Manager Assets].
+title: ImageMagick 설치 및 구성
 description: ImageMagick 소프트웨어에 대한 자세한 내용, 설치 방법, 명령줄 프로세스 단계 설정, 이미지 축소판 편집, 작성 및 생성 등에 사용할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ImageMagick을 사용하여 대용량 파일을 처리하려면 일반적인 메
 
 >[!NOTE]
 >
->AMS [!DNL Experience Manager] 를 사용하고 [!DNL Adobe Managed Services] 있는 경우 고해상도 PSD 또는 PSB 파일을 여러 개 처리할 계획인 경우 Adobe 고객 지원 센터에 문의하십시오. [!DNL Experience Manager] 3000 x 23000픽셀이 넘는 매우 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
+>AMS [!DNL Experience Manager] 를 사용하는 [!DNL Adobe Managed Services] 경우 많은 고해상도 PSD 또는 PSB 파일을 처리하려는 경우 Adobe 고객 지원 센터에 문의하십시오. [!DNL Experience Manager] 3000 x 23000픽셀이 넘는 매우 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
 ## ImageMagick 설치 {#installing-imagemagick}
 
@@ -82,7 +82,7 @@ ImageMagick을 사용하여 대용량 파일을 처리하려면 일반적인 메
 
 또한 다양한 이미지 처리 플러그인은 ImageMagick 라이브러리에 따라 다릅니다. PHP의 이미지 빠른 기능, Ruby의 빠른 이미지 및 페이퍼클립, nodejs의 이미지 빠른 기능 등 다양한 기능이 제공됩니다.
 
-ImageMagick 또는 영향을 받는 라이브러리를 사용하는 경우 Adobe에서는 다음 작업 중 하나 이상을 수행하여 알려진 취약점을 완화하는 것이 좋습니다(둘 다 권장).
+ImageMagick 또는 영향을 받는 라이브러리를 사용하는 경우, Adobe은 다음 작업 중 하나 이상을 수행하여 알려진 취약점을 완화시킬 것을 권장합니다(하지만 둘 다).
 
 1. 모든 이미지 파일이 처리를 위해 ImageMagick으로 보내기 전에 지원하는 이미지 파일 [유형에](https://en.wikipedia.org/wiki/List_of_file_signatures) 해당하는 예상 &quot;매직 바이트&quot;로 시작하는지 확인합니다.
 1. 취약한 ImageMagick 코더를 비활성화하려면 정책 파일을 사용합니다. ImageMagick에 대한 글로벌 정책은 `/etc/ImageMagick`
