@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 1a4bfc91cf91b4b56cc4efa99f60575ac1a9a549
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -26,27 +26,38 @@ ht-degree: 0%
 
 **양식별 사전** 적응형 양식에 사용된 문자열을 포함합니다. 예를 들어 레이블, 필드 이름, 오류 메시지, 도움말 설명 등이 있습니다. 이 파일은 각 로케일에 대한 XLIFF 파일 세트로 관리되며, 여기에서 액세스할 수 있습니다 `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
-**전역 사전** AEM 클라이언트 라이브러리에 JSON 개체로 관리되는 두 개의 글로벌 사전이 있습니다. 이러한 사전에는 기본 오류 메시지, 월 이름, 통화 기호, 날짜 및 시간 패턴 등이 포함되어 있습니다. 이러한 사전은 /libs/fd/xfaforms/clientlibs/I18N의 CRXDe Lite에서 찾을 수 있습니다. 이러한 위치에는 각 로케일에 대한 개별 폴더가 포함되어 있습니다. 글로벌 사전은 일반적으로 자주 업데이트되지 않으므로 각 로케일에 대해 별도의 JavaScript 파일을 유지하면 동일한 서버에서 다른 응용 양식에 액세스할 때 브라우저가 이를 캐싱하고 네트워크 대역폭 사용을 줄일 수 있습니다.
+**전역 사전** AEM 클라이언트 라이브러리에 JSON 개체로서 관리되는 2개의 글로벌 사전이 있습니다. 이러한 사전에는 기본 오류 메시지, 월 이름, 통화 기호, 날짜 및 시간 패턴 등이 포함되어 있습니다. 이러한 사전은 /libs/fd/xfaforms/clientlibs/I18N의 CRXDe Lite에서 찾을 수 있습니다. 이러한 위치에는 각 로케일에 대한 개별 폴더가 포함되어 있습니다. 글로벌 사전은 일반적으로 자주 업데이트되지 않으므로 각 로케일에 대해 별도의 JavaScript 파일을 유지하면 동일한 서버에서 다른 응용 양식에 액세스할 때 브라우저가 이를 캐싱하고 네트워크 대역폭 사용을 줄일 수 있습니다.
 
 ### 적응형 양식의 로컬라이제이션 방식 {#how-localization-of-adaptive-form-works}
 
-적응형 양식이 렌더링되면 지정된 순서로 다음 매개 변수를 확인하여 요청된 로케일을 식별합니다.
+응용 양식의 로케일을 식별하는 두 가지 방법이 있습니다. 응용 양식이 렌더링되면, 요청된 로케일을 다음과 같이 식별합니다.
 
-* 요청 매개 변수 `afAcceptLang`사용자의 브라우저 로케일을 무시하려면 
+* 적응형 양식 URL에서 `[local]` 선택기를 봅니다. The format of the URL is `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. 선택기 `[local]` 를 사용하면 응용 양식을 캐싱할 수 있습니다.
+
+* 지정된 순서로 다음 매개 변수를 봅니다.
+
+   * 요청 매개 변수 `afAcceptLang`사용자의 브라우저 로케일을 무시하려면 
 `afAcceptLang` request 매개 변수를 사용하여 로케일을 강제 적용합니다. 예를 들어 다음 URL은 양식을 일본어 로케일로 강제로 렌더링합니다.
-   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* 사용자에 대한 브라우저 로케일 집합으로서, 헤더를 사용하여 요청에 지정되어 `Accept-Language` 있습니다.
+   * 사용자에 대한 브라우저 로케일 집합으로서, 헤더를 사용하여 요청에 지정되어 `Accept-Language` 있습니다.
 
-* AEM에 지정된 사용자의 언어 설정.
+   * AEM에 지정된 사용자의 언어 설정입니다.
 
-로케일이 식별되면 적응형 양식에서 양식별 사전을 선택합니다. 요청된 로케일에 대한 양식별 사전을 찾을 수 없으면 영어(en) 사전이 사용됩니다.
+   * 브라우저 로케일은 기본적으로 활성화되어 있습니다. 브라우저 로케일 설정을 변경하려면
+      * 구성 관리자를 엽니다. URL은 `http://[server]:[port]/system/console/configMgr`
+      * 응용 양식 및 **[!UICONTROL 대화형 통신 웹 채널]** 구성을 찾아 엽니다.
+      * 브라우저 로케일 **[!UICONTROL 사용]** 옵션 및 구성 **[!UICONTROL 저장]** 상태를 변경합니다.
+
+로케일이 식별되면 적응형 양식에서 양식별 사전을 선택합니다. 요청한 로케일에 대한 양식별 사전을 찾을 수 없으면 적응형 양식이 작성되는 언어의 사전을 사용합니다.
+
+로케일 정보가 없는 경우 적응형 양식이 양식의 원래 언어로 제공됩니다. 원래 언어는 적응형 양식을 개발하는 동안 사용되는 언어입니다.
 
 요청한 로케일에 대한 클라이언트 라이브러리가 없는 경우 로케일에 있는 언어 코드가 클라이언트 라이브러리에 있는지 확인합니다. 예를 들어 요청된 로케일이 `en_ZA` (남아프리카 영어)이고 클라이언트 라이브러리가 `en_ZA` 없는 경우 적응형 양식이 클라이언트 라이브러리를 `en` (영어) 언어로 사용합니다(있는 경우). 그러나 응용 양식에 로케일이 없는 경우 사전에서는 `en` 로케일에 사용됩니다.
 
 ## 지원되지 않는 로케일에 로컬라이제이션 지원 추가 {#add-localization-support-for-non-supported-locales}
 
-AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질)(pt-BR), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로케일로 적응형 양식 컨텐츠의 로컬라이제이션을 지원합니다.
+AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어-브라질(pt-BR), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로캘로 적응형 양식 컨텐츠의 로컬라이제이션을 지원합니다.
 
 적응형 양식 런타임에서 새 로케일에 대한 지원을 추가하려면:
 
@@ -82,7 +93,7 @@ I18N.js
 
 ### 로케일용 응용 양식 클라이언트 라이브러리 추가 {#add-adaptive-form-client-library-for-a-locale-br}
 
-카테고리 및 종속성 `cq:ClientLibraryFolder` 과 같은 `etc/<folderHierarchy>`범주 `guides.I18N.<locale>` 및 종속 항목을 포함하는 유형 노드 `xfaforms.3rdparty`를 `xfaforms.I18N.<locale>` 만들고, `guide.common`및 &quot;
+카테고리 및 종속성 `cq:ClientLibraryFolder` 과 같은 `etc/<folderHierarchy>`범주 `guides.I18N.<locale>` 및 종속 항목을 포함하는 유형 노드 `xfaforms.3rdparty`를 `xfaforms.I18N.<locale>` 만들고, `guide.common`및&quot;
 
 클라이언트 라이브러리에 다음 파일을 추가합니다.
 
