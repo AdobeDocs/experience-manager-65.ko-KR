@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 12b2b73b6363c90d784527b260d664e48c746496
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2200'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 데이터의 자동 완성 구조 {#the-prefill-structure}
 
-적응형 양식에는 바인딩되지 않은 필드와 바인딩되지 않은 필드가 혼합되어 있을 수 있습니다. 바인딩된 필드는 Content Finder 탭에서 드래그하는 필드이며 필드 편집 대화 상자에 비어 있지 않은 `bindRef` 속성 값을 포함합니다. 언바운드 필드는 사이드 킥의 구성 요소 브라우저에서 직접 드래그되며 빈 `bindRef` 값이 있습니다.
+적응형 양식에는 바인딩되지 않은 필드와 바인딩되지 않은 필드가 혼합되어 있을 수 있습니다. 바인딩된 필드는 Content Finder 탭에서 드래그하는 필드이며 필드 편집 대화 상자에 비어 있지 않은 `bindRef` 속성 값을 포함합니다. 언바운드 필드는 사이드 킥의 구성 요소 브라우저에서 바로 드래그되며 빈 `bindRef` 값이 있습니다.
 
 적응형 양식의 바운드 필드와 언바운드 필드를 모두 미리 채울 수 있습니다. 자동 완성 데이터에는 aBoundData 및 afUnBoundData 섹션이 포함되어 있으므로 적응형 양식의 바인딩된 필드와 바인딩 필드를 모두 미리 채울 수 있습니다. 이 `afBoundData` 섹션에는 바인딩된 필드 및 패널에 대한 자동 채우기 데이터가 포함되어 있습니다. 이 데이터는 연결된 양식 모델 스키마를 준수해야 합니다.
 
@@ -75,15 +75,15 @@ ht-degree: 0%
 }
 ```
 
-이름이 같은 바인딩 필드 또는 언바운드 필드가 동일한 경우 XML 태그 또는 JSON 개체에 지정된 데이터가 모든 필드에 채워집니다. 예를 들어 양식의 두 필드가 자동 완성 데이터의 이름 `textbox` 에 매핑됩니다. 런타임 시 첫 번째 텍스트 상자 필드에 &quot;A&quot;가 포함된 경우 두 번째 텍스트 상자에 &quot;A&quot;가 자동으로 채워집니다. 이 연결을 응용 양식 필드의 라이브 링크라고 합니다.
+이름이 같은 바인딩 필드 또는 바인딩 해제된 필드의 경우 XML 태그 또는 JSON 개체에 지정된 데이터가 모든 필드에 채워집니다. 예를 들어 양식의 두 필드가 자동 완성 데이터의 이름 `textbox` 에 매핑됩니다. 런타임 시 첫 번째 텍스트 상자 필드에 &quot;A&quot;가 포함된 경우 두 번째 텍스트 상자에 &quot;A&quot;가 자동으로 채워집니다. 이 연결을 응용 양식 필드의 라이브 링크라고 합니다.
 
 ### XFA 양식 템플릿을 사용한 적응형 양식 {#xfa-based-af}
 
 XFA 기반 응용 양식의 자동 완성 XML 및 제출된 XML의 구조는 다음과 같습니다.
 
-* **XML 구조 자동 완성**: XFA 기반 응용 양식용 자동 채우기 XML은 XFA 양식 템플릿의 데이터 스키마를 준수해야 합니다. 언바운드 필드를 미리 채우려면 미리 채우기 XML 구조를 `/afData/afBoundData` 태그로 둘러싸십시오.
+* **XML 구조 자동 완성**:XFA 기반 응용 양식용 자동 채우기 XML은 XFA 양식 템플릿의 데이터 스키마를 준수해야 합니다. 언바운드 필드를 미리 채우려면 미리 채우기 XML 구조를 `/afData/afBoundData` 태그로 둘러싸십시오.
 
-* **제출된 XML 구조**: XML의 프리플라이트 기능을 사용하지 않는 경우, 제출된 XML은 `afData` 래퍼 태그의 바운드 필드와 언바운드 필드 모두에 대한 데이터를 포함합니다. 자동 완성 XML을 사용하는 경우 제출한 XML의 구조는 자동 완성 XML과 동일합니다. 자동 완성 XML이 `afData` 루트 태그로 시작하는 경우 출력 XML도 같은 형식을 갖습니다. 프리플라이트 XML에 `afData/afBoundData`래퍼가 없고 대신 다음과 같은 스키마 루트 태그에서 바로 시작하는 경우 `employeeData`제출된 XML도 `employeeData` 태그로 시작합니다.
+* **제출된 XML 구조**:XML의 프리플라이트 기능을 사용하지 않는 경우, 제출된 XML은 `afData` 래퍼 태그의 바운드 필드와 언바운드 필드 모두에 대한 데이터를 포함합니다. 자동 완성 XML을 사용하는 경우 제출한 XML의 구조는 자동 완성 XML과 동일합니다. 자동 완성 XML이 `afData` 루트 태그로 시작하는 경우 출력 XML도 같은 형식을 갖습니다. 프리플라이트 XML에 `afData/afBoundData`래퍼가 없고 대신 다음과 같은 스키마 루트 태그에서 바로 시작하는 경우 `employeeData`제출된 XML도 `employeeData` 태그로 시작합니다.
 
 Prefill-Submit-Data-ContentPackage.zip
 
@@ -93,8 +93,8 @@ Prefill-Submit-Data-ContentPackage.zip
 
 XML 스키마를 기반으로 적응형 양식을 위한 XML 자동 완성 및 제출 XML의 구조는 다음과 같습니다.
 
-* **XML 구조**&#x200B;자동 채우기: 자동 완성 XML은 연결된 XML 스키마를 준수해야 합니다. 언바운드 필드를 미리 채우려면 미리 채우기 XML 구조를 /afData/afBoundData 태그로 둘러싸십시오.
-* **제출된 XML 구조**: XML을 프리필할 수 없는 경우, 제출된 XML은 `afData` 래퍼 태그의 바운드 필드와 언바운드 필드 모두에 대한 데이터를 포함합니다. 자동 완성 XML을 사용하는 경우 제출한 XML의 구조는 자동 완성 XML과 동일합니다. XML을 프리플라이트 후 `afData` 루트 태그로 시작하는 경우 출력 XML의 형식이 동일합니다. 프리플라이트 XML에 `afData/afBoundData` 래퍼가 없고 대신 이와 같은 스키마 루트 태그에서 바로 시작하는 경우 `employeeData`제출된 XML도 `employeeData` 태그로 시작합니다.
+* **XML 구조**&#x200B;자동 채우기:자동 완성 XML은 연결된 XML 스키마를 준수해야 합니다. 언바운드 필드를 미리 채우려면 미리 채우기 XML 구조를 /afData/afBoundData 태그로 둘러싸십시오.
+* **제출된 XML 구조**:XML을 프리필할 수 없는 경우, 제출된 XML은 `afData` 래퍼 태그의 바운드 필드와 언바운드 필드 모두에 대한 데이터를 포함합니다. 자동 완성 XML을 사용하는 경우 제출한 XML의 구조는 자동 완성 XML과 동일합니다. XML을 프리플라이트 후 `afData` 루트 태그로 시작하는 경우 출력 XML의 형식이 동일합니다. 프리플라이트 XML에 `afData/afBoundData` 래퍼가 없고 대신 이와 같은 스키마 루트 태그에서 바로 시작하는 경우 `employeeData`제출된 XML도 `employeeData` 태그로 시작합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -146,8 +146,8 @@ XML 스키마를 기반으로 적응형 양식을 위한 XML 자동 완성 및 �
 
 JSON 스키마를 기반으로 하는 적응형 양식의 경우 자동 완성 JSON 및 제출된 JSON의 구조가 아래에 설명되어 있습니다. 자세한 내용은 JSON 스키마를 [사용하여 적응형 양식 만들기를 참조하십시오](../../forms/using/adaptive-form-json-schema-form-model.md).
 
-* **JSON 구조**&#x200B;미리 채우기: JSON은 관련 JSON 스키마를 준수해야 합니다. 또한 언바운드 필드도 미리 채우려면 /afData/afBoundData 개체에 이 필드를 둘러싸야 합니다.
-* **제출된 JSON 구조**: prefill JSON을 사용하지 않는 경우, 제출된 JSON은 afData 래퍼 태그의 바운드 필드 및 언바운드 필드 모두에 대한 데이터를 포함합니다. JSON을 미리 채우기 JSON을 사용하는 경우 제출된 JSON의 구조는 미리 채우기 JSON과 동일합니다. 자동 완성 JSON이 afData 루트 객체로 시작하는 경우 출력 JSON의 형식이 동일합니다. 자동 완성 JSON에 afData/afBoundData 래퍼가 없고 대신 사용자와 같은 스키마 루트 개체에서 직접 시작하는 경우, 전송된 JSON도 사용자 개체로 시작됩니다.
+* **JSON 구조**&#x200B;미리 채우기:JSON은 관련 JSON 스키마를 준수해야 합니다. 또한 언바운드 필드도 미리 채우려면 /afData/afBoundData 개체에 이 필드를 둘러싸야 합니다.
+* **제출된 JSON 구조**:prefill JSON을 사용하지 않는 경우, 제출된 JSON은 afData 래퍼 태그의 바운드 필드 및 언바운드 필드 모두에 대한 데이터를 포함합니다. JSON을 미리 채우기 JSON을 사용하는 경우 제출된 JSON의 구조는 미리 채우기 JSON과 동일합니다. 자동 완성 JSON이 afData 루트 객체로 시작하는 경우 출력 JSON의 형식이 동일합니다. 자동 완성 JSON에 afData/afBoundData 래퍼가 없고 대신 사용자와 같은 스키마 루트 개체에서 직접 시작하는 경우, 전송된 JSON도 사용자 개체로 시작됩니다.
 
 ```json
 {
@@ -233,7 +233,7 @@ JSON 스키마 모델을 사용하는 필드의 경우 아래 샘플 JSON에 표
 >
 >자동 완성 서비스 구성은 적응형 양식, HTML5 양식 및 HTML5 양식 세트에 적용됩니다.
 
-1. URL을 사용하여 **[!UICONTROL Adobe Experience Manager 웹 콘솔]** 구성을 엽니다.\
+1. 다음 URL을 사용하여 **[!UICONTROL Adobe Experience Manager 웹 콘솔]** 구성을 엽니다.\
    https://&lt;server>:&lt;port>/system/console/configMgr
 1. 기본 자동 완성 **[!UICONTROL 서비스 구성을 검색하고 엽니다]**.
 
@@ -246,7 +246,7 @@ JSON 스키마 모델을 사용하는 필드의 경우 아래 샘플 JSON에 표
 
    >[!NOTE]
    >
-   >기본적으로 모든 유형의 응용 양식(XSD, XDP, JSON, FDM, FDM, Form Model 기반)에 대해 crx 파일을 통해 자동 채우기 기능을 사용할 수 있습니다. 프리필은 JSON 및 XML 파일만 사용할 수 있습니다.
+   >기본적으로 모든 유형의 응용 Forms(XSD, XDP, JSON, FDM, FDM, Form Model 기반)에 대한 crx 파일을 통해 자동 완성 기능을 사용할 수 있습니다. 프리필은 JSON 및 XML 파일만 사용할 수 있습니다.
 
 1. 이제 양식에 대해 자동 완성 서비스가 구성됩니다.
 
@@ -265,7 +265,7 @@ JSON 스키마 모델을 사용하는 필드의 경우 아래 샘플 JSON에 표
 >
 >제본되지 않은 필드의 최종 사용자가 채운 데이터와 교차하는 경우 제본되지 않은 필드와 바인딩되지 않은 필드가 혼합되지 마십시오. 가능한 경우 스키마 또는 XFA 양식 템플릿을 수정하고 제본되지 않은 필드에 대한 항목을 추가해야 데이터를 제출된 데이터의 다른 필드와 마찬가지로 사용할 수 있습니다.
 
-## 사용자 데이터의 자동 입력을 위한 지원되는 프로토콜 {#supported-protocols-for-prefilling-user-data}
+## 사용자 데이터 자동 입력을 위한 지원되는 프로토콜 {#supported-protocols-for-prefilling-user-data}
 
 적합한 regex로 구성된 경우 다음 프로토콜을 통해 자동 채우기 데이터 형식의 사용자 데이터로 자동 입력 가능한 양식을 사용할 수 있습니다.
 
@@ -365,9 +365,26 @@ prefill page component.zip
 
 #### 자동 완성 서비스 시작 및 사용 {#start-and-use-the-prefill-service}
 
-자동 완성 서비스를 시작하려면 AEM Forms 웹 콘솔에 JAR 파일을 업로드하고 서비스를 활성화합니다. 이제 적응형 양식 편집기에 서비스가 나타납니다. 자동 완성 서비스를 응용 양식에 연결하려면:
+자동 완성 서비스를 시작하려면 JAR 파일을 AEM Forms 웹 콘솔로 업로드하고 서비스를 활성화합니다. 이제 적응형 양식 편집기에 서비스가 나타납니다. 자동 완성 서비스를 응용 양식에 연결하려면:
 
-1. 양식 편집기에서 적응형 양식을 열고 양식 컨테이너에 대한 속성 패널을 엽니다.
+1. Forms 편집기에서 적응형 양식을 열고 양식 컨테이너에 대한 속성 패널을 엽니다.
 1. 속성 콘솔에서 AEM Forms 컨테이너 > 기본 > 자동 완성 서비스로 이동합니다.
 1. 기본 자동 완성 서비스를 선택하고 저장을 **[!UICONTROL 클릭합니다]**. 서비스가 양식과 연결됩니다.
 
+## 클라이언트의 데이터 미리 채우기 {#prefill-at-client}
+
+적응형 양식을 미리 입력할 때 AEM Forms 서버는 데이터를 적응형 양식과 병합하고 채워진 양식을 사용자에게 전달합니다. 기본적으로 데이터 병합 작업은 서버에서 수행됩니다.
+
+서버 대신 클라이언트에서 데이터 병합 작업을 수행하도록 AEM Forms 서버를 구성할 수 있습니다. 적응형 양식을 프리플라이트 및 렌더링하는 데 필요한 시간이 크게 줄어듭니다. 기본적으로 이 기능은 비활성화됩니다. 구성 관리자 또는 명령줄에서 활성화할 수 있습니다.
+
+* 구성 관리자에서 활성화 또는 비활성화하려면
+   1. AEM 구성 관리자를 엽니다.
+   1. 적응형 양식 및 대화형 커뮤니케이션 웹 채널 구성 찾기 및 열기
+   1. Configuration.af.clientside.datamerge.enabled.name 옵션 활성화
+* 명령줄에서 활성화 또는 비활성화하려면
+   * 활성화하려면 다음 cURL 명령을 실행합니다.
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+   * 비활성화하려면 다음 cURL 명령을 실행합니다.
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+   클라이언트 데이터 미리 채우기 옵션을 최대한 활용하려면 미리 채우기 서비스를 업데이트하여 [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) 및 [CustomContext를 반환합니다.](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
