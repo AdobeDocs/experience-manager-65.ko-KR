@@ -3,9 +3,9 @@ title: 자산을 공유할 비공개 폴더
 description: 비공개 폴더를 만들고 다른 사용자와 [!DNL Adobe Experience Manager Assets] 공유하고 다양한 권한을 할당하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '591'
 ht-degree: 1%
 
 ---
@@ -82,15 +82,4 @@ ht-degree: 1%
 >[!NOTE]
 >
 >사용자 인터페이스에서 위의 방법을 사용하여 폴더를 삭제하면 연결된 사용자 그룹도 삭제됩니다.
-그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 [JMX를 사용하여 저장소에서 정리될 수 있습니다](#group-clean-up-jmx).
-
-### JMX를 사용하여 사용되지 않은 사용자 그룹 정리 {#group-clean-up-jmx}
-
-사용하지 않은 사용자 그룹의 저장소를 정리하려면
-
-1. JMX를 열어 작성자 인스턴스의 자산에 대한 중복 그룹을 [!DNL Experience Manager] 정리합니다 `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-예, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-
-1. 이 JMX에서 `clean` 메서드를 호출합니다.
-
-이전에 삭제한 그룹과 동일한 이름으로 폴더를 만들 때 생성되는 모든 중복 사용자 그룹 또는 자동 생성 그룹이 경로에서 제거됨을 확인할 수 있습니다 `/home/groups/mac/default/<user_name>/<folder_name>`.
+그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 작성자 인스턴스의 JMX의 `clean` 방법을 사용하여 저장소에서 정리될 수 있습니다(http://[server]:[]/system/console/jmx/com.day.cq.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets).
