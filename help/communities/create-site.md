@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d5f4b8a8c42df86831bb57b73949e443ec19d7ea
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
 source-wordcount: '1661'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 3%
 
 ## 커뮤니티 사이트 만들기 {#create-a-community-site}
 
-작성 인스턴스를 사용하여 커뮤니티 사이트를 만듭니다. AEM Author 인스턴스:
+작성 인스턴스를 사용하여 커뮤니티 사이트를 만듭니다. AEM 작성자 인스턴스의 경우:
 
 1. 관리자 권한으로 로그인합니다.
-1. 전역 탐색에서 탐색, **커뮤니티, 사이트로 이동합니다.**
+1. 전역 탐색에서 **[!UICONTROL 커뮤니티]** > **[!UICONTROL 사이트로 이동합니다]**.
 
 커뮤니티 사이트 콘솔에서는 커뮤니티 사이트를 만드는 단계를 안내하는 마법사를 제공합니다. 마지막 단계에서 사이트를 커밋하기 전에 `Next` 단계나 이전 단계 `Back` 로 이동할 수 있습니다.
 
@@ -36,7 +36,7 @@ ht-degree: 3%
 
 ![createcommonitysite](assets/createcommunitysite.png)
 
-### 1단계: 사이트 템플릿 {#step-site-template}
+### 1단계:사이트 템플릿 {#step-site-template}
 
 ![사이트 만들기 템플릿](assets/create-site.png)
 
@@ -44,22 +44,22 @@ ht-degree: 3%
 
 * **커뮤니티 사이트 제목**: `Getting Started Tutorial`
 * **커뮤니티 사이트 설명**: `A site for engaging with the community.`
-* **커뮤니티 사이트 루트**: (기본 루트에 대해서는 비워 `/content/sites`둡니다.
-* **클라우드 구성**: (클라우드 구성이 지정되지 않은 경우 비워 두십시오) 지정된 클라우드 구성의 경로를 제공하십시오.
-* **커뮤니티 사이트 기본 언어**: (단일 언어 이외의 언어 유지: 영어) 드롭다운 목록을 사용하여 독일어, 이탈리아어, 프랑스어, 일본어, 스페인어, 포르투갈어(브라질), 중국어(번체) 및 중국어(간체) 등 사용 가능한 언어에서 하나 *이상의* 기본 언어를 선택합니다. 추가된 각 언어에 대해 하나의 커뮤니티 사이트가 생성되고, 다국어 사이트에 대한 컨텐츠 번역 [에 설명된 우수 사례 다음에 동일한 사이트 폴더 내에 존재합니다](/help/sites-administering/translation.md). 각 사이트의 루트 페이지에는 선택한 언어 중 하나의 언어 코드에 의해 이름이 지정된 하위 페이지가 포함됩니다(예: &#39;en&#39;, &#39;fr&#39;, 프랑스어).
+* **커뮤니티 사이트 루트**:(기본 루트에 대해서는 비워 `/content/sites`둡니다.
+* **클라우드 구성**:(클라우드 구성이 지정되지 않은 경우 비워 두십시오) 지정된 클라우드 구성의 경로를 제공하십시오.
+* **커뮤니티 사이트 기본 언어**:(단일 언어 이외의 언어 유지:영어) 드롭다운 목록을 사용하여 독일어, 이탈리아어, 프랑스어, 일본어, 스페인어, 포르투갈어(브라질), 중국어(번체) 및 중국어(간체) 등 사용 가능한 언어에서 하나 *이상의* 기본 언어를 선택합니다. 추가된 각 언어에 대해 하나의 커뮤니티 사이트가 생성되고, 다국어 사이트에 대한 컨텐츠 번역 [에 설명된 우수 사례 다음에 동일한 사이트 폴더 내에 존재합니다](/help/sites-administering/translation.md). 각 사이트의 루트 페이지에는 선택한 언어 중 하나의 언어 코드에 의해 이름이 지정된 하위 페이지가 포함됩니다(예: &#39;en&#39;, &#39;fr&#39;, 프랑스어).
 
-* **커뮤니티 사이트 이름**: 참여
+* **커뮤니티 사이트 이름**:참여
 
    * 사이트를 만든 후 쉽게 변경되지 않으므로 이름을 다시 확인하십시오
    * 초기 URL이 커뮤니티 사이트 이름 아래에 표시됩니다
    * 유효한 URL의 경우 기본 언어 코드 + &quot;.html&quot;을 추가합니다.
    * *예*: https://localhost:4502/content/sites/ `engage/en.html`
 
-* **템플릿**: 아래로 끌다 `Reference Site`
+* **템플릿**:아래로 끌다 `Reference Site`
 
 * **다음**&#x200B;을 선택합니다.
 
-### 2단계: 디자인 {#step-design}
+### 2단계:디자인 {#step-design}
 
 디자인 단계는 테마와 브랜딩 배너를 선택할 수 있는 두 섹션으로 구성되어 있습니다.
 
@@ -71,17 +71,17 @@ ht-degree: 3%
 
 (선택 사항) 배너 이미지를 업로드하여 사이트 페이지에 표시합니다. 배너는 커뮤니티 사이트 헤더와 탐색 링크 사이의 브라우저의 왼쪽 가장자리에 고정됩니다. 배너 높이는 120픽셀로 잘립니다. 브라우저의 폭과 120픽셀 높이에 맞게 배너의 크기를 조정할 수 없습니다.
 
-![chlimage_1-284](assets/chlimage_1-284.png)
+![community-site-branding](assets/community-site-branding.png)
 
 ![upload-image-site](assets/upload-image-site.png)
 
 **다음**&#x200B;을 선택합니다.
 
-### 3단계: 설정 {#step-settings}
+### 3단계:설정 {#step-settings}
 
 설정 단계에서 선택하기 전에 사용자 관리, 태깅, 중재, 그룹 관리, 분석, 번역 및 활성화와 관련된 구성에 대한 액세스를 제공하는 7개의 섹션이 있습니다. `Next`
 
-활성 [기능 작업을 경험하려면 AEM Communities 시작하기](/help/communities/getting-started-enablement.md) 자습서를 참조하십시오.
+[ [AEM Communities을 위한 시작하기] 자습서를](/help/communities/getting-started-enablement.md) 방문하여 활성화 기능을 사용한 작업을 경험하십시오.
 
 #### 사용자 관리 {#user-management}
 
@@ -102,14 +102,14 @@ ht-degree: 3%
 
 #### TAGGING {#tagging}
 
-커뮤니티 컨텐츠에 적용할 수 있는 태그는 이전에 [태깅 콘솔](/help/sites-administering/tags.md#tagging-console) (예: [자습서 네임스페이스)을 통해 정의된 AEM 네임스페이스를 선택하여 제어합니다](/help/communities/setup.md#create-tutorial-tags).
+커뮤니티 컨텐츠에 적용할 수 있는 태그는 이전에 [Tagging Console](/help/sites-administering/tags.md#tagging-console) (예: [Tutorial 네임스페이스)을 통해 정의된 AEM 네임스페이스를 선택하여 제어합니다](/help/communities/setup.md#create-tutorial-tags).
 
 사전 문자 검색을 사용하면 네임스페이스를 손쉽게 찾을 수 있습니다. 예,
 
 * 유형 `tut`
 * 선택 `Tutorial`
 
-![chlimage_1-286](assets/chlimage_1-286.png)
+![태그 지정](assets/tagging.png)
 
 #### ROLES {#roles}
 
@@ -133,15 +133,15 @@ ht-degree: 3%
 
 UGC(사용자 생성 콘텐츠)를 [중재하기](/help/communities/sites-console.md#moderation) 위한 기본 전역 설정을 적용합니다.
 
-![chlimage_1-287](assets/chlimage_1-287.png)
+![중재](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
-Adobe Analytics에 라이선스가 부여되고 Analytics 클라우드 서비스 및 프레임워크가 구성된 경우 Analytics을 활성화하고 프레임워크를 선택할 수 있습니다.
+Adobe Analytics에 라이선스가 부여되고 Analytics 클라우드 서비스 및 프레임워크가 구성된 경우 Analytics를 활성화하고 프레임워크를 선택할 수 있습니다.
 
-커뮤니티 기능에 대한 [Analytics 구성을 참조하십시오](/help/communities/analytics.md).
+커뮤니티 [기능에 대한 분석 구성을 참조하십시오](/help/communities/analytics.md).
 
-![chlimage_1-288](assets/chlimage_1-288.png)
+![분석](assets/analytics.png)
 
 #### TRANSLATION {#translation}
 
@@ -154,23 +154,23 @@ Adobe Analytics에 라이선스가 부여되고 Analytics 클라우드 서비스
 * 전체 **페이지 번역 선택**
 * 기본 지속성 유지 옵션 유지
 
-![chlimage_1-289](assets/chlimage_1-289.png)
+![번역 설정](assets/translation-settings.png)
 
 #### ENABLEMENT {#enablement}
 
 참여 커뮤니티를 만들 때는 비워 둡니다.
 
-활성 커뮤니티를 빠르게 만들기 위한 유사한 자습서를 보려면 [역량](/help/communities/overview.md#enablement-community)강화에 [대한 AEM Communities 시작하기를 참조하십시오](/help/communities/getting-started-enablement.md).
+활성 커뮤니티를 빠르게 만들기 위한 유사한 자습서를 보려면 [AEM Communities](/help/communities/overview.md#enablement-community)지원 [시작하기를 참조하십시오](/help/communities/getting-started-enablement.md).
 
 **다음**&#x200B;을 선택합니다.
 
-![chlimage_1-290](assets/chlimage_1-290.png)
+![enablement](assets/enablement.png)
 
-### 4단계: 커뮤니티 사이트 만들기 {#step-create-communities-site}
+### 4단계:커뮤니티 사이트 만들기 {#step-create-communities-site}
 
 **만들기**&#x200B;를 선택합니다.
 
-![chlimage_1-291](assets/chlimage_1-291.png)
+![create-site](assets/create-site2.png)
 
 프로세스가 완료되면 커뮤니티 - 사이트 콘솔에 새 사이트의 폴더가 표시됩니다.
 
@@ -224,7 +224,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 >1. 기본 **[!UICONTROL 에이전트(게시)를 선택합니다]**.
 >1. 설정 **[!UICONTROL 옆에서]**&#x200B;편집을 **[!UICONTROL 선택합니다]**.
 >1. [에이전트 설정]에 대한 팝업 대화 상자에서 [전송] **[!UICONTROL 탭을]** 선택합니다.
->1. URI에서 포트 번호 4503을 원하는 포트 번호로 변경합니다. 예를 들어 포트 6103을 사용하려면: https://localhost:6103/bin/receive?sling:authRequestLogin=1
+>1. URI에서 포트 번호 4503을 원하는 포트 번호로 변경합니다. 예를 들어 포트 6103을 사용하려면:https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >1. 확인을 **[!UICONTROL 선택합니다]**.
 >1. (선택 사항) **[!UICONTROL 지우기]** 또는 **[!UICONTROL 강제 재시도를]** 선택하여 복제 큐를 재설정합니다.
 
@@ -236,17 +236,15 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 게시 서버가 실행 중인지 확인한 후 커뮤니티 사이트를 게시할 월드 아이콘을 선택합니다.
 
-![chlimage_1-292](assets/chlimage_1-292.png)
+![게시 사이트](assets/publish-site.png)
 
-커뮤니티 사이트가 성공적으로 게시되면 다음과 같은 메시지가 잠깐 표시됩니다.
-
-![chlimage_1-293](assets/chlimage_1-293.png)
+커뮤니티 사이트가 성공적으로 게시되면 &#39;사이트 게시됨&#39;이라는 메시지가 잠깐 표시됩니다.
 
 ### 새 커뮤니티 사용자 그룹 {#new-community-user-groups}
 
 새 커뮤니티 사이트와 함께 다양한 관리 기능에 적합한 권한이 설정된 새 사용자 그룹이 만들어집니다. 자세한 내용은 커뮤니티 사이트를 [위한 사용자 그룹을 참조하십시오](/help/communities/users.md#usergroupsforcommunitysites).
 
-이 새 커뮤니티 사이트의 경우 1단계에서 사이트 이름이 &quot;참여&quot;되면 [그룹 콘솔에서](/help/communities/members.md) 4개의 새 사용자 그룹을 볼 수 있습니다(전역 탐색: 커뮤니티, 그룹):
+이 새 커뮤니티 사이트의 경우 1단계에서 사이트 이름이 &quot;참여&quot;되면 [그룹 콘솔에서](/help/communities/members.md) 4개의 새 사용자 그룹을 볼 수 있습니다(전역 탐색:커뮤니티, 그룹):
 
 * 커뮤니티 참여 커뮤니티 관리자
 * 커뮤니티 참여 그룹 관리자
@@ -261,11 +259,11 @@ Aaron [](/help/communities/tutorials.md#demo-users) McDonald는
 * 커뮤니티 참여 중재자
 * 커뮤니티 참여 구성원(중재자 그룹의 구성원으로서 간접적으로)
 
-![chlimage_1-294](assets/chlimage_1-294.png)
+![사용자 그룹](assets/user-group.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-311](assets/chlimage_1-311.png)
+![참여](assets/engage.png)
 
 ## 인증 구성 오류 {#configure-for-authentication-error}
 
@@ -321,17 +319,17 @@ Aaron [](/help/communities/tutorials.md#demo-users) McDonald는
 >비활성화하려면 속성 값에 &#39;x&#39; - `sling:match` 로 접두사를 지정하고 [모두 `xlocalhost.4503/$` 저장]을 선택하면 됩니다 ****.
 
 
-![chlimage_1-297](assets/chlimage_1-297.png)
+![선택 단계](assets/optional-steps.png)
 
-#### 문제 해결: 맵 저장 중 오류 발생 {#troubleshooting-error-saving-map}
+#### 문제 해결:맵 저장 중 오류 발생 {#troubleshooting-error-saving-map}
 
-변경 사항을 저장할 수 없는 경우 노드 이름이 &#39;점&#39; 구분 문자 `localhost.4503`로 &#39;콜론&#39; 구분 문자가 아닌 &#39;점&#39; 구분 문자 `localhost:4503` 로 되어 `localhost`있는지 확인하십시오.
+변경 사항을 저장할 수 없는 경우 노드 이름이 &#39;점&#39; 구분 문자 `localhost.4503`로 &#39;콜론&#39; 구분 기호가 아닌 &#39;점&#39; 구분 문자 `localhost:4503` 로 되어 `localhost`있는지 확인하십시오.
 
-![chlimage_1-298](assets/chlimage_1-298.png)
+![error-message](assets/error-message.png)
 
-#### 문제 해결: 리디렉션 실패 {#troubleshooting-fail-to-redirect}
+#### 문제 해결:리디렉션 실패 {#troubleshooting-fail-to-redirect}
 
-정규 표현식&#x200B;**문자열 끝에 있는 &#39;**$ `sling:match`&#39;는 반드시 매핑되어야 하며, `https://localhost:4503/` 그렇지 않으면 리디렉션 값이 URL에서 server:port 뒤에 있을 수 있는 모든 경로에 접두사가 됩니다. 따라서 AEM이 로그인 페이지로 리디렉션하려고 하면 실패합니다.
+정규 표현식&#x200B;**문자열 끝에 있는 &#39;**$ `sling:match`&#39;는 반드시 매핑되어야 하며, `https://localhost:4503/` 그렇지 않으면 리디렉션 값이 URL에서 server:port 뒤에 있을 수 있는 모든 경로에 접두사가 됩니다. 따라서 AEM에서 로그인 페이지로 리디렉션하려고 하면 실패합니다.
 
 ### 사이트 수정 {#modify-the-site}
 
