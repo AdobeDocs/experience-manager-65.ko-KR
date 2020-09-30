@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 7790c9c90953e0f5c5b6be38f5d54346fb595e8f
 workflow-type: tm+mt
-source-wordcount: '2103'
-ht-degree: 44%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -157,7 +157,9 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 가져온 자산은 연결된 메타데이터를 편집할 수 없다는 점을 제외하고 다른 로컬 자산으로 사용할 수 있습니다.
 
-## 제한 사항 {#limitations}
+## Limitations and best practices {#tips-and-limitations}
+
+* 자산 사용에 대한 통찰력을 얻으려면 인스턴스에서 [자산 인사이트](/help/assets/touch-ui-asset-insights.md) 기능을 [!DNL Sites] 구성합니다.
 
 ### 권한 및 에셋 관리 {#permissions-and-managing-assets}
 
@@ -165,7 +167,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 * 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager] 구성 요소는 변경되지 않은 상태로 자산을 유지한 채 편집합니다. 다른 편집 작업은 허용되지 않습니다.
 * 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
 * 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Dynamic Media] 자산, 콘텐츠 조각 및 경험 구성요소는 지원되지 않습니다.
-* 메타데이터 스키마를 가져오지 않았습니다.
+* [!DNL Experience Manager] 은 메타데이터 스키마를 가져오지 않습니다. 이는 가져온 모든 메타데이터가 표시되지 않을 수 있음을 의미합니다. 스키마를 별도로 업데이트하면 모든 속성이 표시됩니다.
 * 작성자가 원격 DAM 배포에 액세스할 수 없는 경우에도 모든 작성자는 가져온 복사본에 대한 읽기 권한을 가집니다. [!DNL Sites]
 * 통합을 사용자 지정할 수 있는 API 지원이 없습니다.
 * 이 기능을 통해 원격 자산을 원활하게 검색하고 사용할 수 있습니다. 로컬 배포에서 많은 원격 자산을 한 번에 사용할 수 있도록 하려면 자산을 마이그레이션하는 것이 좋습니다. [자산 마이그레이션 안내서](assets-migration-guide.md)를 참조하십시오.
@@ -184,6 +186,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 * 5초 후에 가져오기 작업 시간이 종료됩니다. 네트워크 문제가 있는 경우 작성자가 자산을 가져오는 데 문제가 있을 수 있습니다. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 *  `Image` 구성 요소를 통해 지원되는 편집과 원본에 영향을 주지 않는 간단한 편집은 가져온 자산에서 수행할 수 있습니다. 자산은 읽기 전용입니다.
 * 자산을 다시 가져오는 유일한 방법은 페이지에서 자산을 드래그하는 것입니다. API 지원 또는 업데이트하기 위해 자산을 다시 가져오는 다른 방법이 없습니다.
+* DAM에서 자산이 해체되면 [!DNL Sites] 페이지에서 계속 사용 중입니다.
 
 ## 문제 해결 {#troubleshoot}
 
