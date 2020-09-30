@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1728'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 * **만들기**&#x200B;를 선택합니다.
 
-### 1단계: 사이트 템플릿 {#step-site-template}
+### 1단계:사이트 템플릿 {#step-site-template}
 
 ![활성 사이트 템플릿](assets/enablement-site-template.png)
 
@@ -43,10 +43,10 @@ ht-degree: 3%
 
 * **커뮤니티 사이트 설명**: `A site for enabling the community to learn.`
 
-* **커뮤니티 사이트 루트**: (기본 루트에 대해서는 비워 `/content/sites`둡니다.
+* **커뮤니티 사이트 루트**:(기본 루트에 대해서는 비워 `/content/sites`둡니다.
 
-* **클라우드 구성**: (클라우드 구성이 지정되지 않은 경우 비워 두십시오) 지정된 클라우드 구성의 경로를 제공하십시오.
-* **커뮤니티 사이트 기본 언어**: (단일 언어 이외의 다른 언어 버전 유지: 영어) 드롭다운을 사용하여 독일어, 이탈리아어, 프랑스어, 일본어, 스페인어, 포르투갈어(브라질), 중국어(번체) 및 중국어(간체) 등 사용 가능한 언어에서 하나 *이상의* 기본 언어를 선택합니다. 추가된 각 언어에 대해 하나의 커뮤니티 사이트가 생성되고, 다국어 사이트에 대한 컨텐츠 번역 [에 설명된 우수 사례 다음에 동일한 사이트 폴더 내에 존재합니다](/help/sites-administering/translation.md). 각 사이트의 루트 페이지에는 선택한 언어 중 하나의 언어 코드에 의해 이름이 지정된 하위 페이지가 포함됩니다(예: &#39;en&#39;, &#39;fr&#39;, 프랑스어).
+* **클라우드 구성**:(클라우드 구성이 지정되지 않은 경우 비워 두십시오) 지정된 클라우드 구성의 경로를 제공하십시오.
+* **커뮤니티 사이트 기본 언어**:(단일 언어 이외의 다른 언어 버전 유지:영어) 드롭다운을 사용하여 독일어, 이탈리아어, 프랑스어, 일본어, 스페인어, 포르투갈어(브라질), 중국어(번체) 및 중국어(간체) 등 사용 가능한 언어에서 하나 *이상의* 기본 언어를 선택합니다. 추가된 각 언어에 대해 하나의 커뮤니티 사이트가 생성되고, 다국어 사이트에 대한 컨텐츠 번역 [에 설명된 우수 사례 다음에 동일한 사이트 폴더 내에 존재합니다](/help/sites-administering/translation.md). 각 사이트의 루트 페이지에는 선택한 언어 중 하나의 언어 코드에 의해 이름이 지정된 하위 페이지가 포함됩니다(예: &#39;en&#39;, &#39;fr&#39;, 프랑스어).
 
 * **커뮤니티 사이트 이름**: `enable`
 
@@ -54,11 +54,11 @@ ht-degree: 3%
    * 유효한 URL의 경우 기본 언어 코드 + &quot;.html&quot;을 추가합니다.
       *예*: https://localhost:4502/content/sites/ `enable/en.html`
 
-* **참조 사이트 템플릿**: 아래로 끌다 `Reference Structured Learning Site Template`
+* **참조 사이트 템플릿**:아래로 끌다 `Reference Structured Learning Site Template`
 
 **다음**&#x200B;을 선택합니다.
 
-### 2단계: 디자인 {#step-design}
+### 2단계:디자인 {#step-design}
 
 디자인 단계는 테마와 브랜딩 배너를 선택할 수 있는 두 섹션으로 구성되어 있습니다.
 
@@ -76,7 +76,7 @@ ht-degree: 3%
 
 **다음**&#x200B;을 선택합니다.
 
-### 3단계: 설정 {#step-settings}
+### 3단계:설정 {#step-settings}
 
 설정 단계에서 선택하기 전에 사용자 관리, 태깅, 역할, 중재, 분석, 번역 및 활성화와 관련된 구성에 대한 액세스를 제공하는 7개의 섹션이 있음을 알 수 있습니다. `Next`
 
@@ -98,7 +98,7 @@ ht-degree: 3%
 
 #### TAGGING {#tagging}
 
-커뮤니티 컨텐츠에 적용할 수 있는 태그는 이전에 [태깅 콘솔](/help/sites-administering/tags.md#tagging-console) (예: [자습서 네임스페이스)을 통해 정의된 AEM 네임스페이스를 선택하여 제어합니다](/help/communities/enablement-setup.md#create-tutorial-tags).
+커뮤니티 컨텐츠에 적용할 수 있는 태그는 이전에 [Tagging Console](/help/sites-administering/tags.md#tagging-console) (예: [Tutorial 네임스페이스)을 통해 정의된 AEM 네임스페이스를 선택하여 제어합니다](/help/communities/enablement-setup.md#create-tutorial-tags).
 
 또한 커뮤니티 사이트에 대한 태그 네임스페이스를 선택하면 카탈로그 및 활성 리소스를 정의할 때 표시되는 선택이 제한됩니다. 중요 [정보는 태깅 지원 리소스](/help/communities/tag-resources.md) 를 참조하십시오.
 
@@ -107,7 +107,7 @@ ht-degree: 3%
 * 유형 `tut`
 * 선택 `Tutorial`
 
-![활성화 태깅](assets/enablement-tagging.png)
+![enablement](assets/enablement-tagging.png)
 
 ### ROLES {#roles}
 
@@ -129,7 +129,7 @@ ht-degree: 3%
 
 #### MODERATION {#moderation}
 
-사용자 생성 콘텐츠(UGC)를 [중재하기](/help/communities/sites-console.md#moderation) 위한 기본 전역 설정을 적용합니다.
+UGC(사용자 생성 콘텐츠)를 [중재하기](/help/communities/sites-console.md#moderation) 위한 기본 전역 설정을 적용합니다.
 
 ![chlimage_1-452](assets/chlimage_1-452.png)
 
@@ -160,13 +160,13 @@ ht-degree: 3%
    * 유형 `s`
    * 선택 `Sirius Nilson`
 
-* **Marketing Cloud 조직 ID**(선택 사항) [비디오 하트비트 Analytics을 활성 보고](/help/communities/analytics.md#video-heartbeat-analytics) 에 포함하는 데 필요한 Adobe Analytics 계정의 ID입니다.
+* **Marketing Cloud 조직 ID**(선택 사항) 활성화 보고에서 [비디오 하트비트 분석을 포함하는 데 필요한 Adobe Analytics 계정의](/help/communities/analytics.md#video-heartbeat-analytics) ID입니다.
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
 **다음**&#x200B;을 선택합니다.
 
-### 4단계: 커뮤니티 사이트 만들기 {#step-create-community-site}
+### 4단계:커뮤니티 사이트 만들기 {#step-create-community-site}
 
 **만들기**&#x200B;를 선택합니다.
 
@@ -270,7 +270,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 데모를 위해 게시 사이트를 사용할 때 기본 홈 페이지를 새 사이트로 변경하는 것이 유용할 수 있습니다.
 
-이렇게 하려면 게시 시 [리소스 매핑](https://localhost:4503/crx/de) 테이블을 편집하려면 CRX|DE [](/help/sites-deploying/resource-mapping.md) Lite를 사용해야 합니다.
+게시에서 [리소스 매핑](https://localhost:4503/crx/de) 테이블을 편집하려면 CRX|DE [](/help/sites-deploying/resource-mapping.md) Lite를 사용해야 합니다.
 
 시작하려면 다음을 수행하십시오.
 
@@ -319,15 +319,15 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-#### 문제 해결: 맵 저장 중 오류 발생 {#troubleshooting-error-saving-map}
+#### 문제 해결:맵 저장 중 오류 발생 {#troubleshooting-error-saving-map}
 
 변경 사항을 저장할 수 없는 경우 노드 이름이 &#39;점&#39; 구분 문자 `localhost.4503`로 &#39;콜론&#39; 구분 문자가 아닌 &#39;점&#39; 구분 문자 `localhost:4503` 로 되어 `localhost` 있는지 확인하십시오.
 
 ![chlimage_1-365](assets/chlimage_1-365.png)
 
-#### 문제 해결: 리디렉션 실패 {#troubleshooting-fail-to-redirect}
+#### 문제 해결:리디렉션 실패 {#troubleshooting-fail-to-redirect}
 
-정규 표현식&#x200B;**문자열 끝에 있는 &#39;**$ `sling:match` &#39;는 반드시 매핑되어야 하며, `https://localhost:4503/` 그렇지 않으면 리디렉션 값이 URL에서 server:port 뒤에 있을 수 있는 모든 경로에 앞에 추가됩니다. 따라서 AEM이 로그인 페이지로 리디렉션하려고 하면 실패합니다.
+정규 표현식&#x200B;**문자열 끝에 있는 &#39;**$ `sling:match` &#39;는 반드시 매핑되어야 하며, `https://localhost:4503/` 그렇지 않으면 리디렉션 값이 URL에서 server:port 뒤에 있을 수 있는 모든 경로에 앞에 추가됩니다. 따라서 AEM에서 로그인 페이지로 리디렉션하려고 하면 실패합니다.
 
 ## 커뮤니티 사이트 수정 {#modifying-the-community-site}
 
@@ -350,7 +350,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 사이트 구조에 이미 카탈로그 기능이 포함되어 있는 경우 해당 제목을 변경할 수 있습니다.
 
-사이트의 구조를 수정하려면 **커뮤니티, 사이트** 콘솔로 이동하고 `enable` 폴더를 연 다음 사이트 **편집** 아이콘을 선택하여 사이트의 `Enablement Tutorial`속성에 액세스하십시오.
+사이트의 구조를 수정하려면 **[!UICONTROL 커뮤니티]** > **[!UICONTROL 사이트]** 콘솔로 이동하고, `enable` 폴더를 **연 다음** 사이트 `Enablement Tutorial`편집아이콘을 선택하여 사이트의 속성에액세스합니다.
 
 STRUCTURE 패널을 선택하여 카탈로그를 추가하거나 기존 카탈로그를 수정합니다.
 
@@ -358,7 +358,7 @@ STRUCTURE 패널을 선택하여 카탈로그를 추가하거나 기존 카탈�
 
 * **URL**: `catalog`
 
-* **모든 네임스페이스 선택**: 을(를) 기본값으로 둡니다.
+* **모든 네임스페이스 선택**:을(를) 기본값으로 둡니다.
 
 * **저장**&#x200B;을 선택합니다.
 
