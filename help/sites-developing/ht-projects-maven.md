@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
+source-git-commit: add17f46dfb292aeaf8425e5f75cfe955ed93cbc
 workflow-type: tm+mt
-source-wordcount: '2424'
+source-wordcount: '2468'
 ht-degree: 1%
 
 ---
@@ -25,19 +25,19 @@ ht-degree: 1%
 
 이 문서에서는 [Apache Maven을 기반으로 AEM 프로젝트를 설정하는 방법에 대해 설명합니다](https://maven.apache.org/).
 
-Apache Maven은 빌드를 자동화하고 품질 프로젝트 정보를 제공하여 소프트웨어 프로젝트를 관리하기 위한 오픈 소스 툴입니다. AEM 프로젝트에 권장되는 빌드 관리 도구입니다.
+Apache Maven은 빌드를 자동화하고 품질 프로젝트 정보를 제공하여 소프트웨어 프로젝트를 관리하기 위한 오픈 소스 툴입니다. AEM 프로젝트에 권장되는 빌드 관리 툴입니다.
 
 Maven을 기반으로 AEM 프로젝트를 빌드하면 다음과 같은 몇 가지 이점이 있습니다.
 
 * IDE에 관계없이 개발 환경
-* Adobe가 제공하는 마웬 원형 및 인공물의 사용
+* Adobe이 제공하는 마웬 원형과 유물의 활용
 * Maven 기반 개발 설정을 위한 Apache Sling 및 Apache Felix 도구 세트의 사용
-* 간편한 IDE 가져오기 예: Eclipse 및/또는 IntelliJ
+* 간편한 IDE 가져오기예: Eclipse 및/또는 IntelliJ
 * 지속적인 통합 시스템과의 간편한 통합
 
 ### Maven Project Archetypes {#maven-project-archetypes}
 
-Adobe는 AEM 프로젝트의 기준 역할을 할 수 있는 두 개의 Maven 원형 모델을 제공합니다. 자세한 내용은 아래 링크를 참조하십시오.
+Adobe은 AEM 프로젝트의 기준점으로 사용할 수 있는 두 개의 Maven 원형 모델을 제공합니다. 자세한 내용은 아래 링크를 참조하십시오.
 
 * [AEM 프로젝트 원형](https://github.com/adobe/aem-project-archetype)
 * [단일 페이지 애플리케이션 시작 키트를 위한 Maven 원형](https://github.com/adobe/aem-spa-project-archetype)
@@ -46,26 +46,30 @@ Adobe는 AEM 프로젝트의 기준 역할을 할 수 있는 두 개의 Maven �
 
 ### 우버항아리는 무엇입니까? {#what-is-the-uberjar}
 
-&quot;UberJar&quot;는 Adobe에서 제공하는 특수 JAR(Java Archives) 파일에 지정된 비공식 이름입니다. 이러한 JAR 파일에는 Adobe Experience Manager에 의해 노출된 모든 공용 Java API가 포함되어 있습니다. 제한된 외부 라이브러리뿐만 아니라, Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava에서 제공하는 AEM에서 사용할 수 있는 모든 공용 API와 이미지 처리에 사용되는 2개의 라이브러리(Werner Randelshofer의 CYMK JPEG ImageIO 라이브러리 및 TwenteMonkeys 이미지 라이브러리)가 포함되어 있습니다. UberJar에는 API 인터페이스와 클래스만 포함되어 있으므로 AEM에서 OSGi 번들로 내보내지는 인터페이스와 클래스만 포함합니다. 또한 내보낸 모든 패키지에 대해 올바른 패키지 *내보내기 버전이 들어 있는 MANIFEST.MF* 파일도 포함되어 있으므로 UberJar에 대해 빌드된 프로젝트에 올바른 패키지 가져오기 범위가 있는지 확인합니다.
+&quot;UberJar&quot;는 Adobe에서 제공하는 특수 JAR(Java Archives) 파일에 지정된 비공식 이름입니다. 이러한 JAR 파일에는 Adobe Experience Manager에서 노출한 모든 공개 Java API가 포함되어 있습니다. 이러한 라이브러리에는 제한된 외부 라이브러리뿐만 아니라, Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava에서 제공하는 AEM에서 이용할 수 있는 모든 공용 API와 이미지 처리에 사용되는 2개의 라이브러리(Werner Randelshofer의 CYMK JPEG ImageIO 라이브러리 및 12개의 Monkeys 이미지 라이브러리)가 포함되어 있습니다. UberJar에는 API 인터페이스와 클래스만 포함되어 있으므로 AEM에서 OSGi 번들로 내보내지는 인터페이스와 클래스만 포함합니다. 또한 내보낸 모든 패키지에 대해 올바른 패키지 *내보내기 버전이 들어 있는 MANIFEST.MF* 파일도 포함되어 있으므로 UberJar에 대해 빌드된 프로젝트에 올바른 패키지 가져오기 범위가 있는지 확인합니다.
 
-### Adobe가 UberJar를 개발한 이유는 무엇입니까? {#why-did-adobe-create-the-uberjars}
+### Adobe이 우버항들을 만든 이유는? {#why-did-adobe-create-the-uberjars}
 
-이전에는 개발자는 서로 다른 AEM 라이브러리에 대한 상대적으로 많은 수의 개별 종속성을 관리해야 했고, 각 새로운 API를 사용할 때 하나 이상의 개별 종속성을 프로젝트에 추가해야 했습니다. 한 프로젝트에서 UberJar 도입으로 인해 프로젝트에서 30개의 개별 종속성이 제거됩니다.
+이전에는 개발자는 서로 다른 AEM 라이브러리에 대한 상대적으로 많은 수의 개별 종속성을 관리해야 했고, 각 새로운 API를 사용할 때는 하나 이상의 개별 종속성을 프로젝트에 추가해야 했습니다. 한 프로젝트에서 UberJar 도입으로 인해 프로젝트에서 30개의 개별 종속성이 제거됩니다.
 
-AEM 6.5부터 Adobe는 두 개의 UberJar를 제공합니다. 더 이상 사용되지 않는 인터페이스와 더 이상 사용되지 않는 인터페이스를 제거하는 인터페이스를 포함하는 것입니다. 빌드 시 명시적으로 한 코드를 참조함으로써 가치 하락이 있는 코드에 대한 의존성이 있는지 여부를 고객이 이해해야 합니다.
+AEM 6.5부터 Adobe은 두 개의 UberJar를 제공합니다.더 이상 사용되지 않는 인터페이스와 더 이상 사용되지 않는 인터페이스를 제거하는 인터페이스를 포함하는 것입니다. 빌드 시 명시적으로 한 코드를 참조함으로써 가치 하락이 있는 코드에 대한 의존성이 있는지 여부를 고객이 이해해야 합니다.
 
 두 번째 Uber Jar는 가치가 하락하는 모든 클래스, 메서드 및 속성을 제거하므로 고객은 나중에 사용자 정의 코드가 맞는지 컴파일하고 확인할 수 있습니다.
 
 ### 어떤 우버jar를 사용해야 합니까? {#which-uberjar-to-use}
 
-AEM 6.5에는 두 가지 버전의 Uber Jar가 포함되어 있습니다.
+AEM 6.5는 두 가지 방법으로 나온다.
 
-1. Uber Jar - 사용 중단으로 표시되지 않은 공용 인터페이스만 포함합니다. 이것은 가치가 떨어진 API에 의존하여 향후 코드베이스를 방지하는 데 도움이 되므로 **권장하는** UberJar입니다.
-1. 더 이상 사용되지 않는 API가 포함된 Uber Jar - 향후 AEM 버전에서 사용 중단으로 표시된 인터페이스를 포함하여 모든 공용 인터페이스를 포함합니다.
+1. Uber Jar - 사용 중단으로 표시되지 않은 공용 인터페이스만 포함합니다. 이것은 가치가 떨어진 API에 의존하지 않고 나중에 코드 기반을 방지하는 데 도움이 되므로 **권장되는** UberJar입니다.
+1. 더 이상 사용되지 않는 API가 포함된 Uber Jar - 향후 AEM 버전에서 사용 중단으로 표시된 모든 공용 인터페이스를 포함합니다.
+
+>[!NOTE]
+>
+>AEM 6.5.6부터 UberJar 및 기타 관련 객체는 Adobe Public Maven 리포지토리(repo.adobe.com) 대신 [Maven Central 저장소에서](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/) 사용할 수 있습니다. 기본 UberJar 파일의 이름이 로 변경되었습니다 `uber-jar-<version>.jar`. 그 결과, 태그 `classifier`에 대한 값 `apis` 이 없는 `dependency` 것으로 나타났습니다.
 
 ### 우버항아리는 어떻게 사용하나요? {#how-do-i-use-the-uberjars}
 
-빌드 시스템(대부분의 AEM Java 프로젝트의 경우)으로 Apache Maven을 사용하는 경우, 한 개 또는 두 개의 요소를 *pom.xml* 파일에 추가해야 합니다. 첫 번째 요소는 프로젝트에 실제 종속성을 추가하는 *종속성* 요소입니다.
+빌드 시스템(대부분의 AEM Java 프로젝트의 경우)으로 Apache Maven을 사용하는 경우, pom.xml ** 파일에 하나 또는 두 개의 요소를 추가해야 합니다. 첫 번째 요소는 프로젝트에 실제 종속성을 추가하는 *종속성* 요소입니다.
 
 **Uber Jar 종속성&#x200B;*(더 이상 사용되지 않는 API 없음)***
 
@@ -83,7 +87,7 @@ AEM 6.5에는 두 가지 버전의 Uber Jar가 포함되어 있습니다.
 
 >[!CAUTION]
 >
->***does not* **include the deprecated APIs that your applications will be refferent propersed on the Uber Jar that **does not**contains the depreceded API to make sure your applications will be professfully on further version of AEM.
+>***does not* **include the deprecated APIs that your applications will be properly on futable version of AEM.
 >
 >사용되지 않는 API를 사용하는 코드를 수정할 수 없는 경우에만 사용되지 않는 API 지원과 함께 Uber Jar를 사용하십시오.
 
@@ -97,7 +101,7 @@ AEM 6.5에는 두 가지 버전의 Uber Jar가 포함되어 있습니다.
 </dependency>
 ```
 
-회사에서 이미 Sonatype Nexus, Apache Archiva 또는 JFrog Artitfactory와 같은 Maven Repository Manager를 사용하고 있는 경우, 프로젝트에 적절한 구성을 추가하여 이 저장소 관리자를 참조하고 Adobe의 Maven 리포지토리([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/))를 저장소 관리자에 추가합니다.
+회사에서 이미 Sonatype Nexus, Apache Archiva 또는 JFrog Artitfactory와 같은 Maven Repository Manager를 사용하고 있는 경우 프로젝트에 적절한 구성을 추가하여 이 저장소 관리자를 참조하고 Adobe Maven 리포지토리([https://repo.maven.apache.org/maven2/](https://repo.maven.apache.org/maven2/))를 저장소 관리자에 추가합니다.
 
 저장소 관리자를 사용하고 있지 않은 경우 *저장소* 요소를 pom.xml 파일에 추가해야 *합니다* .
 
@@ -106,7 +110,7 @@ AEM 6.5에는 두 가지 버전의 Uber Jar가 포함되어 있습니다.
     <repository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </repository>
 </repositories>
@@ -114,7 +118,7 @@ AEM 6.5에는 두 가지 버전의 Uber Jar가 포함되어 있습니다.
     <pluginRepository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </pluginRepository>
 </pluginRepositories>
@@ -122,11 +126,11 @@ AEM 6.5에는 두 가지 버전의 Uber Jar가 포함되어 있습니다.
 
 ### 우버항으로 무엇을 할 수 있습니까? {#what-can-i-do-with-the-uberjar}
 
-UberJar를 사용하면 AEM API(및 위에 언급한 프로젝트에서 사용되는 API)에 따라 결정되는 프로젝트 코드를 컴파일할 수 있습니다. OSGi SCR(Service Component Runtime) 및 OSGi Metatype 정보를 생성할 수도 있습니다. 몇 가지 제한 사항으로 단위 테스트를 작성하고 실행할 수도 있습니다.
+UberJar를 사용하면 AEM API(및 위에 언급한 프로젝트에서 사용되는 API에 따라 사용되는 프로젝트 코드를 컴파일할 수 있습니다.) OSGi SCR(Service Component Runtime) 및 OSGi Metatype 정보를 생성할 수도 있습니다. 몇 가지 제한 사항으로 단위 테스트를 작성하고 실행할 수도 있습니다.
 
 ### 우버항아리는 어떻게 하면 되죠? {#what-can-t-i-do-with-the-uberjar}
 
-UberJar에는 **API만** 포함되어 있으므로 실행 파일이 아니며 Adobe Experience Manager을 **실행하는 데 사용할** 수 없습니다. AEM을 실행하려면 AEM Quickstart(독립 실행형 또는 웹 애플리케이션 아카이브) 양식이 필요합니다.
+UberJar에는 **API만** 포함되어 있으므로 실행 파일이 아니며 Adobe Experience Manager을 **실행하는 데 사용할** 수 없습니다. AEM을 실행하려면 AEM Quickstart(독립 실행형 또는 웹 애플리케이션 아카이브(WAR) 양식이 필요합니다.
 
 ### 단위 테스트에 제한 사항을 언급했습니다. 더 설명해주세요 {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -134,7 +138,7 @@ UberJar에는 **API만** 포함되어 있으므로 실행 파일이 아니며 Ad
 
 #### 사용 사례 #1 - API 인터페이스를 호출하는 사용자 지정 코드 {#use-case-custom-code-which-calls-a-api-interface}
 
-가장 일반적인 이러한 경우에는 AEM API로 정의된 Java 인터페이스에서 메서드를 실행하는 일부 사용자 지정 코드가 포함됩니다. 이 인터페이스의 구현은 직접 제공하거나 종속성 삽입 패턴을 사용하여 주입할 수 있습니다. **이 사용 사례는 UberJar로 처리할 수 있습니다.**
+가장 일반적인 이러한 경우에는 AEM API에서 정의한 Java 인터페이스에서 메서드를 실행하는 몇 가지 사용자 지정 코드가 포함됩니다. 이 인터페이스의 구현은 직접 제공하거나 종속성 삽입 패턴을 사용하여 주입할 수 있습니다. **이 사용 사례는 UberJar로 처리할 수 있습니다.**
 
 이전 버전의 예:
 
@@ -174,7 +178,7 @@ public class ComponentWhichHasAEMInterfaceInjected implements TitleTrimmer {
 }
 ```
 
-이러한 방법 중 하나를 유닛 테스트하려면 개발자는 JMockit [,](http://jmockit.github.io)Mockito [](https://mockito.org/), [JMock](https://www.jmock.org/)또는 [EasymockEasymock등과 같은 조롱하는 프레임워크를 사용하여 참조되는 AEM API에 사용할 가상 개체를](https://easymock.org/) 만듭니다. 이러한 샘플은 JMockit을 사용하지만 이러한 특정 사용 사례에서 이러한 프레임워크의 차이는 일반적으로 구적입니다.
+이러한 방법 중 하나를 유닛 테스트하기 위해 개발자는 JMockit [,](http://jmockit.github.io)Mockito [](https://mockito.org/), [JMock](https://www.jmock.org/), 또는 [](https://easymock.org/) EasymockEasymock등과 같은 조롱하는 프레임워크를 사용하여 참조된 AEM API에 대한 모의 오브젝트를 제작합니다. 이러한 샘플은 JMockit을 사용하지만 이러한 특정 사용 사례에서 이러한 프레임워크의 차이는 일반적으로 구적입니다.
 
 ```java
 @RunWith(JMockit.class)
@@ -355,7 +359,7 @@ SCR 생성과 마찬가지로, 코드가 AEM API에서 기본 클래스(추상 �
 
 ### 컨텐츠 모듈에 경로를 추가하는 방법 {#how-to-add-paths-to-the-content-module}
 
-콘텐츠 모듈에는 Maven이 구축한 AEM 패키지의 필터를 정의하는 src/main/content/META-INF/vault/filter.xml파일이 포함되어 있습니다. Maven 원형에 의해 생성된 파일은 다음과 같습니다.
+컨텐츠 모듈에는 Maven이 구축한 AEM 패키지의 필터를 정의하는 src/main/content/META-INF/vault/filter.xml 파일이 포함되어 있습니다. Maven 원형에 의해 생성된 파일은 다음과 같습니다.
 
 #### src/main/content/META-INF/vault/filter.xml {#src-main-content-meta-inf-vault-filter-xml}
 
@@ -370,7 +374,7 @@ SCR 생성과 마찬가지로, 코드가 AEM API에서 기본 클래스(추상 �
 
 * 패키지 `content-package-maven-plugin` 에 포함할 컨텐츠를 결정하기 위해
 * VLT 도구를 사용하여 고려할 경로를 결정합니다.
-* 패키지가 AEM Package Manager에서 다시 빌드되는 경우, 이 설정은 포함할 경로도 정의합니다
+* aem Package Manager에서 패키지가 다시 빌드되는 경우, 이 설정은
 
 응용 프로그램의 요구 사항에 따라 다음과 같이 더 많은 컨텐츠를 포함하도록 이러한 경로에 추가할 수 있습니다.
 
@@ -404,7 +408,7 @@ content-package-maven-plugin을 통해 빌드했지만 파일 시스템과 저�
 
 #### 패키지에 추가하지 않고 경로 동기화 {#syncing-paths-without-adding-them-to-the-package}
 
-경우에 따라 파일 시스템과 저장소 간에 특정 경로가 동기화된 상태로 유지되지만 AEM에 설치되도록 빌드된 패키지에 포함되지 않을 수 있습니다.
+경우에 따라 파일 시스템과 저장소 간에 특정 경로를 동기화된 상태로 유지하려고 하지만 AEM에 설치되도록 패키지에 포함하지는 않을 수 있습니다.
 
 대표적인 것이 `/libs/foundation` 길이다. 개발 목적으로 파일 시스템에서 이 경로의 내용을 사용할 수 있도록 할 수 있습니다. 이렇게 하면 IDE에서 JSP를 포함하는 JSP를 확인할 수 있습니다 `/libs`. 그러나 구성 요소에는 사용자 지정 구현에 의해 수정되어서는 안 되는 제품 코드가 포함되어 있기 때문에 빌드하는 패키지에 해당 부분을 포함시키지 `/libs` 않을 수 있습니다.
 
@@ -431,7 +435,7 @@ content-package-maven-plugin을 통해 빌드했지만 파일 시스템과 저�
 </workspaceFilter>
 ```
 
-패키지에 이러한 파일을 포함하지 않도록 maven-resources-plugin을 다시 구성해야 합니다. 패키지 설치 시 filter.xml 파일은 적용되지 않지만 패키지 관리자를 사용하여 패키지를 다시 빌드할 때만 적용됩니다.
+패키지에 이러한 파일을 포함하지 않도록 maven-resources-plugin을 다시 구성해야 합니다.패키지 설치 시 filter.xml 파일은 적용되지 않지만 패키지 관리자를 사용하여 패키지를 다시 빌드할 때만 적용됩니다.
 
 콘텐트 `<resources>` 창의 섹션을 다음과 같이 변경합니다.
 
@@ -457,9 +461,9 @@ content-package-maven-plugin을 통해 빌드했지만 파일 시스템과 저�
 
 지금까지 설명한 Maven 설정은 구성 요소와 해당 JSP를 포함할 수 있는 컨텐츠 패키지를 생성합니다. 하지만 Maven은 이러한 파일을 컨텐츠 패키지에 포함된 다른 파일로 취급하여 JSP로 인식하지 못합니다.
 
-결과 구성 요소는 AEM에서 모두 동일하게 작동하지만 JSP에 대해 Maven이 인식하도록 하는 것은 두 가지 주요 이점을 제공합니다
+결과 구성 요소는 AEM에서 모두 동일하게 작동하지만 JSP에 대해 Maven이 인식하도록 하는 데는 두 가지 주요 이점이 있습니다
 
-* JSP에 오류가 있는 경우 MAVEN이 실패할 수 있으므로 AEM에서 처음 컴파일된 때가 아니라 빌드 시간에 이러한 오류가 표시되도록 합니다
+* JSP에 오류가 있는 경우 Maven이 실패할 수 있으므로 빌드 시 이러한 오류가 표시되므로 AEM에서 처음 컴파일된 시기가 아닙니다
 * Maven 프로젝트를 가져올 수 있는 IDE의 경우 JSP에서 코드 완성 및 태그 라이브러리 지원을 사용할 수도 있습니다
 
 이 설정을 사용하려면 다음 두 가지가 필요합니다.
@@ -473,7 +477,7 @@ content-package-maven-plugin을 통해 빌드했지만 파일 시스템과 저�
 
 >[!NOTE]
 >
->위의 AEM 제품 종속성 [가져오기에 설명된 대로 제품 종속성을](#importingaemproductdependencies) 가져오지 않는 한, 위의 종속성 추가에서 설명한 바와 같이, AEM 설정과 일치하는 버전과 함께 상위 POM에 해당 종속성을 추가해야 [합니다](#addingdependencies) . 아래 각 항목에 있는 주석에는 종속성 파인더에서 검색할 패키지가 표시됩니다.
+>위의 AEM 제품 종속성 [가져오기에 설명된 대로 제품 종속성을](#importingaemproductdependencies) 가져오지 않으면 위의 종속성 추가에 설명된 대로 AEM 설정과 일치하는 버전과 함께 상위 POM에 해당 종속성을 추가해야 [합니다](#addingdependencies) . 아래 각 항목에 있는 주석에는 종속성 파인더에서 검색할 패키지가 표시됩니다.
 
 >[!NOTE]
 >
@@ -488,7 +492,7 @@ Maven의 `compile` 단계에서 JSP를 컴파일하기 위해 Apache Sling의 [M
 * JSP를 `${project.build.directory}/jsps-to-compile`
 * 결과를 다음으로 출력합니다( `${project.build.directory}/ignoredjspc` 이렇게 변환됨 `myproject/content/target/ignoredjspc`).
 
-* maven-resources-plugin을 설정하여 JSP를 생성-소스 단계 `${project.build.directory}/jsps-to-compile` `libs/` 에 복사하고 폴더를 복사하지 않도록 구성합니다(AEM 제품 코드이고 프로젝트를 컴파일하기 위해 종속성을 발생시키기를 원치 않으며, 컴파일되었는지 확인할 필요가 없음).
+* maven-resources-plugin을 설정하여 JSP를 generate-sources 단계 `${project.build.directory}/jsps-to-compile` `libs/` 에 복사하고 이 폴더를 복사하지 않도록 구성합니다(이는 AEM 제품 코드이고 프로젝트를 컴파일하기 위해 종속성을 발생시키고자 하지 않으며, 컴파일되었는지 확인할 필요가 없기 때문입니다.
 
 위에 명시된 주요 목표는 JSP의 유효성을 확인하고 오류가 있는 경우 빌드 프로세스가 실패하는지 확인하는 것입니다. 이러한 이유로 무시된 별도의 디렉토리에 컴파일됩니다(그리고 곧 삭제됨).
 
@@ -645,7 +649,7 @@ maven-eclipse.xml
 
 SCM에서 이 파일을 원하지 않을 수 있으므로 git을 사용하는 경우 해당 파일을 추가합니다. `gitignore` 파일:
 
-#### src/main/content/jcr_root/apps/myproject/install/.gitgnore {#src-main-content-jcr-root-apps-myproject-install-gitignore}
+#### src/main/content/jcr_root/apps/myproject/install/.gitignore {#src-main-content-jcr-root-apps-myproject-install-gitignore}
 
 ```shell
 *.jar
@@ -697,6 +701,6 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 
 ### AEM Communities 사용 방법 {#how-to-work-with-aem-communities}
 
-AEM Communities 기능에 대해 라이선스를 부여하면 추가 API jar가 필요합니다.
+AEM Communities 기능에 대한 라이선스를 부여하면 추가 API jar가 필요합니다.
 
 자세한 내용은 커뮤니티에 대한 [Maven 사용을 참조하십시오.](/help/communities/maven.md)
