@@ -3,9 +3,9 @@ title: 자산을 공유할 비공개 폴더
 description: 비공개 폴더를 만들고 다른 사용자와 [!DNL Adobe Experience Manager Assets] 공유하고 다양한 권한을 할당하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
+source-git-commit: 2bd850ff421494dda83bafb59fa695365498bbbe
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
@@ -82,4 +82,4 @@ ht-degree: 1%
 >[!NOTE]
 >
 >사용자 인터페이스에서 위의 방법을 사용하여 폴더를 삭제하면 연결된 사용자 그룹도 삭제됩니다.
-그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 작성자 인스턴스의 JMX의 `clean` 방법을 사용하여 저장소에서 정리될 수 있습니다(http://[server]:[]/system/console/jmx/com.day.cq.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets).
+그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 작성자 인스턴스( `clean``http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`)의 JMX의 방법을 사용하여 저장소에서 정리할 수 있습니다.
