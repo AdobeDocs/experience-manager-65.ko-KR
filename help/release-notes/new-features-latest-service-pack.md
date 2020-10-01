@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.5 서비스 팩 6의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
+source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
 workflow-type: tm+mt
-source-wordcount: '2480'
-ht-degree: 69%
+source-wordcount: '2518'
+ht-degree: 68%
 
 ---
 
@@ -199,6 +199,12 @@ AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함되어 있는 경우, �
 예, `On Time (MM-DD-YYYY HH:mm)`. 여기서 MM은 두 자리 형식의 월, YYYY는 연도, DD는 두 자리 형식의 날짜, HH는 24시간 군대 형식의 시간, mm은 분입니다.
 
 * 이제 화면 판독기에 `X` 기호가 표시되어 선택한 태그 개수와 함께 선택한 태그를 제거합니다.
+
+#### 목록 보기의 자산 만들기 날짜에 대한 정렬 가능한 열(6.5.3.0) {#sortable-date-created-column}
+
+자산의 만든 날짜에 대한 정렬 가능한 새 열이 DAM 목록 보기 및 목록 보기의 자산 검색 결과에 추가됩니다.
+
+![만든 날짜에 대한 정렬 가능한 열](assets/asset-created-date.png)
 
 #### [!DNL Adobe Experience Manager Assets](6.5.2.0) {#visual-search} 시각적 검색
 
