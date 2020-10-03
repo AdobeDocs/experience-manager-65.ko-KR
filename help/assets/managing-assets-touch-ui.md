@@ -4,9 +4,9 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cb531bfc009fc766bab20d28cf332856b1e95c7b
+source-git-commit: 087940d0a51c43125a309b34b82831030e7e54b4
 workflow-type: tm+mt
-source-wordcount: '9408'
+source-wordcount: '9618'
 ht-degree: 1%
 
 ---
@@ -202,7 +202,7 @@ Dynamic Media를 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 |  | 이미지 편집 옵션 | 이미지의 클리핑 마스크를 유지하고 색상 프로파일을 선택할 수 있습니다.<br> 업로드할 때 [이미지 편집 옵션 설정을 참조하십시오](#setting-image-editing-options-at-upload). |
 |  | Postscript 옵션 | PostScript ® 파일 래스터화, 파일 자르기, 투명한 배경 유지, 해상도 선택, 색상 공간 선택 등의 작업을 할 수 있습니다.<br> PostScript [및 Illustrator 업로드 옵션 설정을 참조하십시오](#setting-postscript-and-illustrator-upload-options). |
 |  | Photoshop 옵션 | Adobe® Photoshop® 파일에서 템플릿을 만들고, 레이어를 유지하고, 레이어 이름을 지정하는 방법을 지정하고, 텍스트를 추출하고, 이미지가 템플릿에 고정된 방식을 지정할 수 있습니다.<br> 템플릿은 에서 지원되지 않습니다 [!DNL Experience Manager].<br> Photoshop [업로드 옵션 설정을 참조하십시오](#setting-photoshop-upload-options). |
-|  | PDF 옵션 | 파일 래스터화, 검색 단어 및 링크 추출, eCatalog 자동 생성, 해상도 설정, 색상 공간 선택 등의 작업을 수행할 수 있습니다.<br> eCatalogs는 에서 지원되지 않습니다 [!DNL Experience Manager]. <br> PDF [업로드 옵션 설정을 참조하십시오](#setting-pdf-upload-options). |
+|  | PDF 옵션 | 파일을 래스터화하고, 검색어와 링크를 추출하고, eCatalog를 자동 생성하고, 해상도를 설정하고, 색상 공간을 선택할 수 있습니다.<br> eCatalogs는 에서 지원되지 않습니다 [!DNL Experience Manager]. <br> PDF [업로드 옵션 설정을 참조하십시오](#setting-pdf-upload-options). |
 |  | Illustrator 옵션 | Adobe Illustrator® 파일을 래스터화하고 투명한 배경을 유지하며 해상도를 선택하고 색상 공간을 선택할 수 있습니다.<br> PostScript [및 Illustrator 업로드 옵션 설정을 참조하십시오](#setting-postscript-and-illustrator-upload-options). |
 |  | EVideo 옵션 | 비디오 사전 설정을 선택하여 비디오 파일을 트랜스코딩할 수 있습니다.<br> eVideo [업로드 옵션 설정을 참조하십시오](#setting-evideo-upload-options). |
 |  | 배치 집합 사전 설정 | 업로드된 파일에서 이미지 세트 또는 회전 집합을 만들려면 사용할 사전 설정에 대한 활성 열을 클릭합니다. 두 개 이상의 사전 설정을 선택할 수 있습니다. Dynamic Media Classic의 응용 프로그램 설정/배치 집합 사전 설정 페이지에서 사전 설정을 만듭니다.<br> 일괄 [세트 사전 설정 만들기에 대한 자세한 내용은 일괄 세트 사전 설정 구성을](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 참조하십시오.<br> 업로드 시 [배치 집합 사전 설정 설정을 참조하십시오](#setting-batch-set-presets-at-upload). |
@@ -450,7 +450,14 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
    >
    >붙여넣기 **** 옵션은 붙여넣기 작업이 완료될 때까지 도구 모음에서 사용할 수 있습니다.
 
-### 자산 이동 또는 이름 바꾸기 {#moving-or-renaming-assets}
+## 자산 이동 및 이름 변경 {#moving-or-renaming-assets}
+
+자산(또는 폴더)을 다른 위치로 이동할 때 자산을 복사하는 동안 자산(또는 폴더)이 중복되지 않습니다. 자산(또는 폴더)은 대상 위치에 배치되고 소스 위치에서 제거됩니다. 자산을 새 위치로 이동할 때 자산의 이름을 바꿀 수도 있습니다.
+게시된 자산을 다른 위치로 이동하는 경우 자산을 다시 게시할 수 있는 옵션이 있습니다. 게시된 자산에 대한 기본적으로 이동 작업은 자동으로 게시 취소됩니다. 자산을 이동할 때 작성자가 [!UICONTROL 다시 게시] 옵션을 선택하면 이동된 자산이 다시 게시됩니다.
+
+![이미 게시된 자산을 이동할 때 다시 게시할 수 있습니다](assets/republish-on-move.png)
+
+자산 또는 폴더를 이동하려면
 
 1. 이동할 자산의 위치로 이동합니다.
 
@@ -486,6 +493,14 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
    * [ **[!UICONTROL 취소]** ]를 클릭하여 이동 작업을 중지합니다.
 
    참조를 업데이트하지 않으면 자산의 이전 경로를 계속 가리킵니다. 참조를 조정하면 새 자산 경로로 업데이트됩니다.
+
+### 드래그 작업을 사용하여 에셋 이동 {#move-using-drag}
+
+사용자 인터페이스에서 [!UICONTROL 이동] 옵션을 사용하는 대신 자산을 대상 위치로 드래그하여 동위 폴더, [!UICONTROL Lightbox] 컬렉션 또는 다른 컬렉션으로 이동할 수 있습니다. 하지만 이 작업은 목록 보기에서만 가능합니다.
+
+자산을 드래그하여 이동하는 경우 자산 [!UICONTROL 이동] 마법사가 열리지 않으므로 이동하는 동안 자산 이름을 변경할 수 있는 옵션이 없습니다. 게다가, 이미 게시된 자산은 사용자의 재게시 승인을 요청하지 않고 드래그하여 이동하는 방식으로 다시 게시됩니다.
+
+![자산을 드래그하여 자산을 동위 폴더로 이동](assets/move-by-drag.gif)
 
 ## 변환 관리 {#managing-renditions}
 
