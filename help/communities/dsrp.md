@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -71,7 +71,7 @@ Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의
       >[!NOTE]
       >
       >기본 스토리지 구성은 이제 etc path(경로`/conf/global/settings/community/srpc/defaultconfiguration`) 대신 conf 경로(`/etc/socialconfig/srpc/defaultconfiguration`)에 저장됩니다. 예상대로 기본 [srp를](#zerodt-migration-steps) 작동하도록 하려면 마이그레이션 단계를 따라야 합니다.
-   ![chlimage_1-128](assets/chlimage_1-128.png)
+   ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **데이터베이스 구성**
@@ -80,17 +80,17 @@ Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의
 
       MySQL 연결에 지정된 이름은 [JDBC OSGi 구성에 입력한 이름과 동일해야 합니다.](dsrp-mysql.md#configurejdbcconnections)
 
-      *기본값*: 커뮤니티
+      *기본값*:커뮤니티
 
    * **[!UICONTROL 데이터베이스 이름]**
 
       init_schema.sql [](dsrp-mysql.md#obtain-the-sql-script) 스크립트에서 스키마에 지정된 이름
 
-      *기본값*: 커뮤니티
+      *기본값*:커뮤니티
 
 * **SolrConfiguration**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper 호스트&#x200B;**
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Zookeeper 호스트**
 
       내부 ZooKeeper를 사용하여 Solr을 실행하는 경우 이 값을 비워 둡니다. 그렇지 않은 경우 외부 [ZooKeeper와 함께 SolrCloud 모드에서](solr.md#solrcloud-mode) 실행할 때 *my.server.com:80과 같은 ZooKeeper의 URI로 이 값을 설정합니다*
 
@@ -98,11 +98,11 @@ Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의
 
    * **[!UICONTROL Solr URL]**
 
-      *기본값*: https://127.0.0.1:8983/solr/
+      *기본값*:https://127.0.0.1:8983/solr/
 
    * **[!UICONTROL Solr 컬렉션]**
 
-      *기본값*: collection1
+      *기본값*:collection1
 
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
