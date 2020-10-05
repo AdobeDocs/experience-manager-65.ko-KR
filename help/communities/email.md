@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 2%
@@ -48,7 +48,7 @@ AEM Communities은 이메일을 사용합니다.
 
 예를 들어(실례만을 위해 값으로 채워짐):
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+![email-config](assets/email-config.png)
 
 * **[!UICONTROL SMTP 서버 호스트 이름]**
 
@@ -98,7 +98,7 @@ AEM Communities은 이메일을 사용합니다.
 
 * 위치 `AEM Communities Email Reply Configuration`확인
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+![email-reply-config](assets/email-reply-config.png)
 
 ### 알림 구성 {#configuration-for-notifications}
 
@@ -177,7 +177,7 @@ AEM Communities은 이메일을 사용합니다.
 
 * 추가 **[!UICONTROL 선택]**
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![여론 조사 가져오기](assets/polling-importer.png)
 
 * **[!UICONTROL 유형]**
 
@@ -207,7 +207,7 @@ AEM Communities은 이메일을 사용합니다.
 
 ### 새 폴링 가져오기 프로토콜 조정 {#adjust-protocol-for-new-polling-importer}
 
-새 폴링 구성이 저장되면, 프로토콜을 에서 `POP3` `emailreply`
+새 폴링 구성이 저장되면, 프로토콜을 에서 (으)로 변경하려면 구독 이메일 가져오기 기능의 속성을 추가로 수정해야 `POP3` 합니다 `emailreply`.
 
 CRXDE Lite [사용](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -217,7 +217,7 @@ CRXDE Lite [사용](../../help/sites-developing/developing-with-crxde-lite.md):
    * **feedType**:다음으로 `pop3s` 바꾸기 **`emailreply`**
    * **소스**:소스 프로토콜 `pop3s://` 을 **`emailreply://`**
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![여론 조사 프로토콜](assets/polling-protocol.png)
 
 빨간색 삼각형은 수정된 속성을 나타냅니다. 다음 변경 사항을 저장해야 합니다.
 
