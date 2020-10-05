@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+source-git-commit: 6337a57ea12f1e026f6c754a083307ce018a1c13
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -33,17 +33,17 @@ ht-degree: 4%
 
 새 커뮤니티 그룹을 만드는 기능은 [참조 사이트 템플릿에서 만든 것과 같이 그룹 기능을 포함하는 커뮤니티 사이트의 존재에 의존합니다](/help/communities/sites.md).
 
-다음에 나오는 예는 AEM Communities으로 시작하기 자습서에 설명된 `Reference Site Template` 대로 에서 만든 [커뮤니티 사이트를](/help/communities/getting-started.md) 사용합니다.
+다음에 나오는 예는 AEM Communities `Reference Site Template` 시작하기 튜토리얼에 설명된 대로, 에서 만든 커뮤니티 사이트 [를 사용합니다](/help/communities/getting-started.md) .
 
 [그룹] 메뉴 항목을 선택하면 게시 시 **로드되는** 페이지입니다.
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![new-group](assets/new-group.png)
 
 새 그룹 **아이콘** 을 선택하면 편집 대화 상자가 열립니다.
 
 설정 **탭** 아래에서 그룹의 기본 기능을 제공합니다.
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![group-settings](assets/group-settings.png)
 
 * **그룹 이름**
 
@@ -71,21 +71,21 @@ ht-degree: 4%
 
 [ **템플릿** ] 탭 아래에는 그룹 함수가 커뮤니티 사이트의 구조나 커뮤니티 사이트 템플릿에 포함될 때 지정된 커뮤니티 그룹 템플릿 목록에서 선택하는 기능이 있습니다.
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![group-template](assets/group-template.png)
 
 [ **이미지** ] 탭 아래에서는 커뮤니티 사이트의 [그룹] 페이지에서 그룹에 대해 표시할 이미지를 업로드할 수 있습니다. 기본 스타일 시트는 이미지의 크기를 170 x 90픽셀로 지정합니다.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![group-image](assets/group-image.png)
 
 그룹 **만들기** 단추를 선택하면 그룹의 페이지가 선택한 템플릿을 기반으로 만들어지고 사용자 그룹이 멤버십에 대해 만들어지고 그룹 페이지가 업데이트되어 새 하위 커뮤니티가 표시됩니다.
 
 예를 들어 이미지 축소판이 업로드된 새 하위 커뮤니티인 &quot;포커스 그룹&quot;이 있는 그룹 페이지는 다음과 같이 표시됩니다(커뮤니티 그룹 관리자로 로그인됨).
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![group-page](assets/group-page.png)
 
 링크를 선택하면 선택한 템플릿을 기반으로 초기 모양이 나타나는 브라우저의 [포커스 그룹] 페이지가 열리고 기본 커뮤니티 사이트의 메뉴 아래에 하위 메뉴가 포함됩니다. `Focus Group`
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![open-group-page](assets/open-group-page.png)
 
 ### Community Group Member List Component {#community-group-member-list-component}
 
