@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: ade3747ba608164a792a62097b82c55626245891
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 1. 포함된 코드에서:
 
-   * 적응형 양식의 게시 URL의 경로로 *options.path* 변수의 값을 변경합니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우 URL에 컨텍스트 경로가 포함되어 있는지 확인하십시오. 예를 들어 위의 코드 및 응용 프로그램은 동일한 aem forms 서버에 상주하므로 이 예제에서는 적응형 양식 /content/forms/af/locbasic.html의 컨텍스트 경로를 사용합니다.
+   * 적응형 양식의 게시 URL의 경로로 *options.path* 변수의 값을 변경합니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우 URL에 컨텍스트 경로가 포함되어 있는지 확인하십시오. 항상 확장을 포함하여 응용 양식의 전체 이름을 언급하십시오.   예를 들어 위의 코드 및 응용 프로그램은 동일한 AEM 양식 서버에 상주하므로 이 예제에서는 적응형 양식 /content/forms/af/locbasic.html의 컨텍스트 경로를 사용합니다.
    * options.dataRef *을* URL로 전달할 속성으로 바꿉니다. dataref 변수를 사용하여 응용 양식을 [미리 채울 수 있습니다](/help/forms/using/prepopulate-adaptive-form-fields.md).
    * options. *theme* Path를 적응형 양식에 구성된 테마 이외의 테마 경로로 바꿉니다. 또는 요청 속성을 사용하여 테마 경로를 지정할 수 있습니다.
    * CSS_Selector는 적응형 양식이 포함된 양식 컨테이너의 CSS 선택기입니다. 예를 들어 .customafsection css 클래스는 위의 예에서 CSS 선택기입니다.
