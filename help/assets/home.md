@@ -1,22 +1,21 @@
 ---
 title: 자산 안내서
-seo-title: Adobe Experience Manager 6.5 자산 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
-seo-description: 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
+user-guide-title: 자산 안내서
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: e460a23ef4df14ff494d8d1472ab234787f220d7
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 93%
+source-wordcount: '339'
+ht-degree: 89%
 
 ---
 
 
-# Adobe Experience Manager 6.5 자산 안내서
+# 자산 안내서
 
-이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
+This guide covers all [!DNL Experience Manager Assets] tasks, such as how to create, manage, deliver, and optimize digital assets.
 
-## 주요 Experience Manager 문서
+## Key [!DNL Experience Manager] articles
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
@@ -26,7 +25,7 @@ ht-degree: 93%
 * [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [Security 검사 목록](/help/sites-administering/security-checklist.md)
 
-## Experience Manager 6.5 안내서
+## [!DNL Experience Manager] 6.5 안내서
 
 | 사용 안내서 | 설명 |
 |--- |---|
@@ -43,7 +42,7 @@ ht-degree: 93%
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 [!DNL Livefyre]와 공유하는 방법을 보여 줍니다. |
 
-## 주요 Experience Manager 리소스
+## Key [!DNL Experience Manager] resources
 
 * [Experience Manager 비디오 튜토리얼](https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
