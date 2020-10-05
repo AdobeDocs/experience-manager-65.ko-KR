@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 4%
@@ -44,7 +44,7 @@ CRXDE Lite 사용:
 1. 녹색 **[!UICONTROL +추가]** 단추를 클릭합니다.
 1. 모두 **[!UICONTROL 저장을 클릭합니다]**.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![page-script](assets/page-script.png)
 
 ### 헤드 및 본문 스크립트 {#head-and-body-scripts}
 
@@ -128,13 +128,13 @@ CRXDE Lite 사용:
 
 사이드 패널이 모두 열리고 창이 충분히 넓어 사이드 컨텐츠와 페이지 컨텐츠가 모두 표시될 때 자산/구성 요소 사이드 패널이 표시됩니다.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![보기 페이지](assets/view-page.png)
 
 * 클래식 UI: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 다음은 컨텐츠 파인더(cf)와 함께 재생 페이지가 클래식 UI에 표시되는 방식입니다.
 
-![chlimage_1-233](assets/chlimage_1-233.png)
+![play-page-view](assets/play-page-view.png)
 
 ## 커뮤니티 구성 요소 {#communities-components}
 
