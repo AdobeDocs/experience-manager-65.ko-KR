@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
@@ -157,26 +157,26 @@ MongoDB 공용 스토어를 테스트 및 확인하려면 게시 인스턴스에
 1. 로그인하여 댓글 게시:
 1. 댓글 텍스트 입력 상자에 텍스트를 입력하고 **[!UICONTROL 게시물을 클릭합니다]**
 
-   ![chlimage_1-191](assets/chlimage_1-191.png)
+   ![post-comment](assets/post-comment.png)
 
 1. 작성자 인스턴스의 주석을 [](http://localhost:4502/content/community-components/en/comments.html) 간단히 볼 수 있습니다(관리자/관리자로 계속 로그인됨).
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![보기 주석](assets/view-comment.png)
 
-   참고:작성자의 *asipath 아래에* JCR 노드가 있는 동안 이러한 노드는 SCF 프레임워크용입니다. 실제 UGC는 JCR에 있지 않고 MongoDB에 있습니다.
+   참고:JCR 노드는 작성자의 *api* 아래에 있지만 SCF 프레임워크에 사용됩니다. 실제 UGC는 JCR에 있지 않고 MongoDB에 있습니다.
 
 1. mongodb Communities에서 UGC **[!UICONTROL 보기]** > **[!UICONTROL 컬렉션]** **[!UICONTROL >콘텐츠]**
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+   ![ugc 컨텐츠](assets/ugc-content.png)
 
 1. 솔어에서 UGC 보기:
 
-   * 솔루션 대시보드로 찾아보기: [http://localhost:8983/solr/](http://localhost:8983/solr/)
-   * 선택할 사용자 `core selector` `collection1`
-   * 선택 `Query`
-   * 선택 `Execute Query`
+   * 솔루션 대시보드로 찾아보기: [http://localhost:8983/solr/](http://localhost:8983/solr/).
+   * 선택할 사용자 `core selector``collection1`.
+   * 선택 `Query`.
+   * 선택 `Execute Query`.
 
-   ![chlimage_1-194](assets/chlimage_1-194.png)
+   ![ugc 솔루션](assets/ugc-solr.png)
 
 ## 문제 해결 {#troubleshooting}
 
@@ -186,14 +186,9 @@ MongoDB 공용 스토어를 테스트 및 확인하려면 게시 인스턴스에
 
 1. MSRP가 기본 공급자로 구성되었는지 확인하십시오.
 
-   * 모든 작성자 및 게시 AEM 인스턴스에서 [스토리지 구성 콘솔 다시 방문](srp-config.md)
+   * 모든 작성 및 게시 AEM 인스턴스에서 [스토리지 구성 콘솔을](srp-config.md) 다시 방문하거나 AEM 저장소를 확인합니다.
 
-   또는 AEM 리포지토리를 확인합니다.
-
-   * JCR에서 if/etc/socialconfig [로](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
-
-   * srpc 노드가 [포함되어](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) 있지 않습니다. 이는 스토리지 공급자가 JSRP임을 의미합니다.
-   * srpc 노드가 있고 노드 [기본 구성을](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)포함하는 경우, 기본 구성의 속성은 MSRP를 기본 공급자로 정의해야 합니다
-
+   * JCR에서 [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) 에 srpc 노드가 [없으면](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) 스토리지공급자가 JSRP임을 의미합니다.
+   * srpc 노드가 있고 노드 [기본 구성을](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)포함하는 경우, 기본 구성의 속성은 MSRP를 기본 공급자로 정의해야 합니다.
 
 1. AEM이 MSRP를 선택한 후 다시 시작되었는지 확인합니다.
