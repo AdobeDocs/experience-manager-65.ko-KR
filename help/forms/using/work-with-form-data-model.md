@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4162'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # 양식 데이터 모델을 사용한 작업{#work-with-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![데이터 통합](do-not-localize/data-integeration.png)
 
 양식 데이터 모델 편집기는 양식 데이터 모델을 편집하고 구성하기 위한 직관적인 유저 인터페이스와 도구를 제공합니다. 편집기를 사용하여 양식 데이터 모델의 관련 데이터 소스에서 데이터 모델 개체, 속성 및 서비스를 추가하고 구성할 수 있습니다. 또한 데이터 소스 없이 데이터 모델 개체 및 속성을 만들고 나중에 해당 데이터 모델 개체 및 속성과 바인딩할 수 있습니다. 미리 보는 동안 적응형 양식 및 인터랙티브한 커뮤니케이션을 미리 채우기 위해 사용할 수 있는 데이터 모델 객체 속성에 대한 샘플 데이터를 생성하고 편집할 수도 있습니다. 양식 데이터 모델에서 구성된 데이터 모델 개체 및 서비스를 테스트하여 데이터 소스와 제대로 통합되었는지 확인할 수 있습니다.
 
-Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하지 않았거나 양식 데이터 모델을 만들지 않은 경우 다음 항목을 참조하십시오.
+Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하거나 양식 데이터 모델을 만들지 않은 경우 다음 항목을 참조하십시오.
 
 * [AEM Forms 데이터 통합](/help/forms/using/data-integration.md)
 * [데이터 소스 구성](/help/forms/using/configure-data-sources.md)
@@ -33,7 +33,7 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하지 �
 
 >[!NOTE]
 >
->양식 데이터 모델을 만들고 사용할 수 있으려면 **fdm-author** 및 **forms-user** 그룹 모두의 구성원이어야 합니다. 그룹의 구성원이 되려면 AEM 관리자에게 문의하십시오.
+>양식 데이터 모델을 만들고 사용할 수 있으려면 **fdm-author** 및 **forms-user** 그룹 모두의 구성원이어야 합니다. 해당 그룹의 구성원이 되려면 AEM 관리자에게 문의하십시오.
 
 ## 데이터 모델 개체 및 서비스 추가 {#add-data-model-objects-and-services}
 
@@ -43,7 +43,7 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하지 �
 
 데이터 모델 개체 및 서비스를 추가하려면:
 
-1. AEM 작성자 인스턴스에 로그인하고 **[!UICONTROL 양식 > 데이터 통합으로]**&#x200B;이동한 다음 데이터 모델 개체를 추가할 양식 데이터 모델을 엽니다.
+1. AEM 작성자 인스턴스에 로그인하고 **[!UICONTROL Forms > 데이터 통합으로]**&#x200B;이동한 다음 데이터 모델 개체를 추가할 양식 데이터 모델을 엽니다.
 1. 데이터 소스 창에서 데이터 소스를 확장하여 사용 가능한 데이터 모델 개체 및 서비스를 봅니다.
 1. 양식 데이터 모델에 추가할 데이터 모델 개체 및 서비스를 선택하고 선택한 항목 **[!UICONTROL 추가를 누릅니다]**.
 
@@ -85,7 +85,7 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하지 �
 
 데이터 소스 없이 데이터 모델 개체를 만들려면
 
-1. AEM 작성자 인스턴스에 로그인하고 **[!UICONTROL 양식 > 데이터 통합으로]**&#x200B;이동한 다음 데이터 모델 개체 또는 개체를 만들 양식 데이터 모델을 엽니다.
+1. AEM 작성자 인스턴스에 로그인하고 **[!UICONTROL Forms > 데이터 통합으로]**&#x200B;이동한 다음 데이터 모델 개체 또는 개체를 만들 양식 데이터 모델을 엽니다.
 1. 엔티티 **[!UICONTROL 만들기를 누릅니다]**.
 1. 데이터 모델 만들기 대화 상자에서 데이터 모델 개체의 이름을 지정하고 추가를 **[!UICONTROL 누릅니다]**. 데이터 모델 개체가 양식 데이터 모델에 추가됩니다. 새로 추가된 데이터 모델 개체는 데이터 소스에 바인딩되지 않으며 다음 이미지에 표시된 것처럼 속성이 없습니다.
 
@@ -100,7 +100,7 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하지 �
 자식 속성을 만들려면:
 
 1. 양식 데이터 모델에서 데이터 모델 개체를 선택하고 하위 속성 **[!UICONTROL 만들기를 누릅니다]**.
-1. 하위 **[!UICONTROL 속성]** 만들기 대화 상자에서 **[!UICONTROL 이름]** 및 **[!UICONTROL 유형]** 필드에 속성에 대한 이름및 데이터 유형을 각각지정합니다. 속성에 대한 제목과 설명을 선택적으로 지정할 수 있습니다.
+1. 하위 **[!UICONTROL 속성]** 만들기 대화 상자에서 **[!UICONTROL 이름]** 및 **[!UICONTROL 유형]** 필드에 속성의 이름 및 데이터 유형을 각각지정합니다. 속성에 대한 제목과 설명을 선택적으로 지정할 수 있습니다.
 1. 속성이 계산된 속성이면 계산됨을 활성화합니다. 계산된 속성의 값은 규칙이나 식을 기반으로 평가됩니다. 자세한 내용은 속성 [편집을 참조하십시오](#edit-properties).
 1. 데이터 모델 개체가 데이터 소스에 바인딩되면 추가된 자식 속성이 동일한 이름과 데이터 형식이 있는 부모 데이터 모델 개체의 속성에 자동으로 바인딩됩니다.
 
@@ -175,11 +175,11 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하지 �
 
 #### 사용자 프로필 속성 {#user-profile-attribute}
 
-바인딩 대상 **[!UICONTROL 드롭다운]** 메뉴에서 **** 사용자 프로필 속성을 **[!UICONTROL 선택하고]** 바인딩 값필드에 속성 이름을입력합니다. AEM 인스턴스에 로그인한 사용자의 세부 정보는 속성 이름을 기준으로 데이터 소스에서 검색됩니다.
+바인딩 대상 **[!UICONTROL 드롭다운]** 메뉴에서 **** 사용자 프로필 속성을 **[!UICONTROL 선택하고]** 바인딩 값필드에 속성 이름을입력합니다. AEM 인스턴스에 로그인한 사용자의 세부 정보는 속성 이름을 기반으로 데이터 소스에서 검색됩니다.
 
 바인딩 값 필드에 지정된 속성 이름 **[!UICONTROL 은]** 사용자의 속성 이름이 될 때까지 전체 바인딩 경로를 포함해야 합니다. 다음 URL을 열어 CRXDE의 사용자 세부 정보에 액세스합니다.
 
-https://&lt;server-name>:&lt;포트 번호>/crx/de/index.jsp#/home/users/
+`https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![사용자 프로필](assets/binding_crxde_user_profile_new.png)
 
@@ -195,15 +195,29 @@ https://&lt;server-name>:&lt;포트 번호>/crx/de/index.jsp#/home/users/
 
 1. 바인딩 대상 **[!UICONTROL 드롭다운 메뉴에서]** **[!UICONTROL 요청 속성]** 을 **** 선택하고바인딩 값필드에 속성 이름을입력합니다.
 
-1. CRXDE에 대한 속성 세부 사항을 정의하려면 head.jsp를 엽니다.\
-   `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. head.jsp용 [오버레이를](../../../help/sites-developing/overlays.md) 만듭니다. 오버레이를 만들려면 CRX DE를 열고 `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` 파일을 `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
-1. head.jsp 파일에 다음 텍스트를 포함합니다.
+   >[!NOTE]
+   >
+   > * 정적 템플릿을 사용하는 경우 다음 위치에 head.jsp를 오버레이합니다./libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+   > * 편집 가능한 템플릿을 사용하는 경우 다음 위치에서 aftetemplatedpage.jsp를 오버레이합니다./libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
 
-   ```jsp
+
+1. 요청 속성 [!DNL paramMap] 에 대해 설정합니다. 예를 들어, apps 폴더의 .jsp 파일에 다음 코드를 포함합니다.
+
+   ```javascript
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
-    request.setAttribute("paramMap",paraMap);%>
+    request.setAttribute("paramMap",paraMap);
+   ```
+
+   예를 들어 아래 코드를 사용하여 데이터 소스에서 전송된 값을 검색합니다.
+
+
+   ```javascript
+   <%Map paraMap = new HashMap();
+   paraMap.put("petId",request.getParameter("petId"));
+   request.setAttribute("paramMap",paraMap);%>
    ```
 
 세부 사항은 요청에 지정된 속성 이름을 기준으로 데이터 소스에서 검색됩니다.
@@ -277,9 +291,9 @@ https://&lt;server-name>:&lt;포트 번호>/crx/de/index.jsp#/home/users/
 1. 양식 데이터 모델의 데이터 모델 개체, 속성 또는 서비스 옆에 있는 확인란을 선택합니다.
 1. 속성 **[!UICONTROL 편집을 누릅니다]**. 선택한 모델 개체, **[!UICONTROL 속성]** 또는 서비스에 대한 속성 편집 창이 열립니다.
 
-   * **데이터 모델 개체**: 읽기 및 쓰기 서비스를 지정하고 인수를 편집합니다.
-   * **속성**: 속성의 유형, 하위 유형 및 형식을 지정합니다. 선택한 속성이 데이터 모델 개체의 기본 키인지 여부를 지정할 수도 있습니다.
-   * **서비스**: 서비스에 대한 입력 모델 개체, 출력 유형 및 인수를 지정합니다. Get 서비스의 경우 배열을 반환할지 여부를 지정할 수 있습니다.
+   * **데이터 모델 개체**:읽기 및 쓰기 서비스를 지정하고 인수를 편집합니다.
+   * **속성**:속성의 유형, 하위 유형 및 형식을 지정합니다. 선택한 속성이 데이터 모델 개체의 기본 키인지 여부를 지정할 수도 있습니다.
+   * **서비스**:서비스에 대한 입력 모델 개체, 출력 유형 및 인수를 지정합니다. Get 서비스의 경우 배열을 반환할지 여부를 지정할 수 있습니다.
 
    ![edit-properties-service](assets/edit-properties-service.png)
 
@@ -407,9 +421,9 @@ OData 서비스에서 탐색 속성은 두 데이터 모델 개체 간의 연결
 
 플래그는 다음 값 중 하나로 설정할 수 있습니다.
 
-* **전체**: FDM은 모든 제한을 기준으로 유효성 검사를 수행합니다.
-* **해제**: 유효성 검사 없음
-* **기본**: FDM은 &#39;필수&#39; 및 &#39;nullable&#39; 제약 조건을 기반으로 유효성 검사를 수행합니다.
+* **전체**:FDM은 모든 제한을 기준으로 유효성 검사를 수행합니다.
+* **해제**:유효성 검사 없음
+* **기본**:FDM은 &#39;필수&#39; 및 &#39;nullable&#39; 제약 조건을 기반으로 유효성 검사를 수행합니다.
 
 플래그에 대해 값이 설정되지 않은 `ValidationOptions`경우 입력 데이터에 **대해** BASIC유효성 검사가 수행됩니다.
 
