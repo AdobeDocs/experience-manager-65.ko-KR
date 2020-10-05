@@ -1,8 +1,8 @@
 ---
-title: 커뮤니티에 대한 Dispatcher 구성
-seo-title: 커뮤니티에 대한 Dispatcher 구성
-description: AEM Communities에 대한 디스패처 구성
-seo-description: AEM Communities에 대한 디스패처 구성
+title: 커뮤니티용 Dispatcher 구성
+seo-title: 커뮤니티용 Dispatcher 구성
+description: AEM Communities용 디스패처 구성
+seo-description: AEM Communities용 디스패처 구성
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 2%
@@ -18,23 +18,23 @@ ht-degree: 2%
 ---
 
 
-# 커뮤니티에 대한 Dispatcher 구성 {#configuring-dispatcher-for-communities}
+# 커뮤니티용 Dispatcher 구성 {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities의 경우, [커뮤니티 사이트에서 제대로 기능하도록 Dispatcher을 구성해야 합니다](overview.md#community-sites). 커뮤니티 활성화 및 소셜 로그인과 같은 기능을 포함하는 경우 추가 구성이 필요합니다.
+AEM Communities의 경우, [커뮤니티 사이트에서 제대로 기능하도록 Dispatcher를 구성해야 합니다](overview.md#community-sites). 커뮤니티 활성화 및 소셜 로그인과 같은 기능을 포함하는 경우 추가 구성이 필요합니다.
 
 특정 배포 및 사이트 디자인에 필요한 사항을 살펴보려면
 
 * Contact [Customer Care](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)
 
-기본 [Dispatcher 설명서를 참조하십시오](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+기본 Dispatcher [설명서를 참조하십시오](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-## Dispatcher 캐싱 {#dispatcher-caching}
+## 발송자 캐싱 {#dispatcher-caching}
 
 ### 개요 {#overview}
 
-AEM Communities용 Dispatcher 캐싱은 디스패처가 커뮤니티 사이트 페이지의 완전히 캐시된 버전을 제공하는 기능입니다.
+AEM Communities용 디스패처 캐싱은 디스패처가 커뮤니티 사이트 페이지의 완전히 캐시된 버전을 제공하는 기능입니다.
 
 현재, 커뮤니티 사이트를 탐색하거나 검색 결과로 커뮤니티 페이지에 도착하는 사용자와 페이지를 인덱싱하는 검색 엔진 등 익명의 사이트 방문자에게만 지원됩니다. 이러한 이점은 익명의 사용자와 검색 엔진이 향상된 성능을 경험할 수 있다는 것입니다.
 
@@ -44,7 +44,7 @@ AEM Communities용 Dispatcher 캐싱은 디스패처가 커뮤니티 사이트 �
 
 ### 요구 사항 {#requirements}
 
-* Dispatcher 버전 4.1.2 이상( [최신 버전의 Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) 설치 참조)
+* Dispatcher 버전 4.1.2 이상( [최신 버전의](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) Dispatcher 설치 참조)
 * [ACS AEM Commons 패키지](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 버전 3.3.2 이상
@@ -52,7 +52,7 @@ AEM Communities용 Dispatcher 캐싱은 디스패처가 커뮤니티 사이트 �
 
 ### 구성 {#configuration}
 
-OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 연령** - 지정된 경로 아래에 표시되는 캐시된 페이지의 만료를 설정합니다.
+OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 지정된 경로 아래에 표시되는 캐시된 페이지의 만료를 설정합니다.
 
 * 웹 [콘솔에서](../../help/sites-deploying/configuring-osgi.md)
 
@@ -61,7 +61,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 연령*
 * 찾기 `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * 새 연결 구성을 만들려면 &#39;+&#39; 아이콘을 선택합니다.
 
-   ![chlimage_1-339](assets/chlimage_1-339.png)
+   ![Dispatcher](assets/dispatcher.png)
 
 * **필터 패턴**
 
@@ -71,11 +71,11 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 연령*
 
    *(필수)* 캐시 컨트롤 헤더에 추가할 최대 페이지(초)입니다. 값은 0보다 커야 합니다.
 
-## Dispatcher 클라이언트 헤더 {#dispatcher-client-headers}
+## 발송자 클라이언트 헤더 {#dispatcher-client-headers}
 
 의 /clientheaders 섹션에서 `dispatcher.any`특정 헤더 세트를 나열하는 경우 [ `"CSRF-Token"` 활성화] 기능이 [](enablement.md) 제대로 작동하려면 반드시 포함해야 합니다.
 
-## Dispatcher 필터 {#dispatcher-filters}
+## 발송자 필터 {#dispatcher-filters}
 
 파일의 /filter 섹션은 컨텐츠에 대한 액세스 `dispatcher.any` 구성 - /filter에 설명되어 있습니다 [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
@@ -167,7 +167,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher 캐시 제어 헤더 - 최대 연령*
 /7001 { /type "allow" /glob "GET /libs/cq/security/userinfo.json?cq_ck=*"
 ```
 
-## Dispatcher 규칙 {#dispatcher-rules}
+## 발송자 규칙 {#dispatcher-rules}
 
 의 규칙 섹션에서는 요청된 URL을 기반으로 캐시해야 하는 응답을 `dispatcher.any` 정의합니다. Communities의 경우 규칙 섹션을 사용하여 캐시해서는 안 되는 항목을 정의합니다.
 
