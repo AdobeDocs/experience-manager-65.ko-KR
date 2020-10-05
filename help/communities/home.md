@@ -1,18 +1,18 @@
 ---
-title: AEM 6.5 Communities 사용 안내서
-seo-title: AEM 6.5 Communities 사용 안내서
+title: Adobe Experience Manager 6.5 커뮤니티 가이드
+seo-title: Adobe Experience Manager 6.5 커뮤니티 가이드
 description: 이 안내서에서는 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험 만들기와 같은 모든 AEM Communities 작업을 다룹니다.
 seo-description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험 만들기와 같은 모든 AEM Communities 작업을 다룹니다.
-translation-type: ht
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
-workflow-type: ht
-source-wordcount: '386'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 96%
 
 ---
 
 
-# AEM 6.5 Communities 사용 안내서
+# Adobe Experience Manager 6.5 커뮤니티 가이드
 
 이 안내서에서는 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험 만들기와 같은 모든 AEM Communities 작업을 다룹니다.
 
