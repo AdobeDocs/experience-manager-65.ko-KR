@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 618464d1e01986786a47a4e9c6ecce87e2a77ec3
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ## HBS 스크립트 수정 {#modify-the-hbs-scripts}
 
-CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md):
+CRXDE Lite [사용](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Open [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
@@ -74,7 +74,7 @@ CRXDE [Lite 사용](/help/sites-developing/developing-with-crxde-lite.md):
 
 [동일한 사용자로 로그인되어 있는 게시 인스턴스에서 경험을](/help/communities/extend-sample-page.md#publish-sample-page) 계속 진행하면 이제 아바타를 제거하기 위한 수정 사항을 보기 위해 게시 환경에서 페이지를 새로 고칠 수 있습니다.
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![view-modified-content](assets/view-modified-content.png)
 
 ### 샘플 주석 확장 패키지 {#sample-comment-extension-package}
 
