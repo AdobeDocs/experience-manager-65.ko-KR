@@ -12,7 +12,7 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 807a81045fca19ab83b9d7872684a5f8a9ed70f1
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -32,21 +32,21 @@ ht-degree: 2%
 
 커뮤니티 그룹의 다양한 패싯은 다음과 같습니다.
 
-* **제작**: 작성자 및 선택적으로 게시 인스턴스에 새 그룹을 만들 수 있습니다.
-* **컨트롤**: 그룹은 열려 있거나 비밀로 할 수 있습니다.
-* **중첩**: 그룹에는 0개 이상의 그룹이 포함될 수 있습니다.
+* **제작**:작성자 및 선택적으로 게시 인스턴스에 새 그룹을 만들 수 있습니다.
+* **컨트롤**:그룹은 열려 있거나 비밀로 할 수 있습니다.
+* **중첩**:그룹에는 0개 이상의 그룹이 포함될 수 있습니다.
 
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.-->
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+-->
 
 >[!NOTE]
 >
 >커뮤니티 사이트 콘솔에서만 액세스할 수 있는 이 그룹 콘솔은 구성원 그룹을 관리하기 위한 구성원 [그룹 콘솔과](/help/communities/members.md) 혼동되지 않습니다.
 >
 >구성원 그룹은 게시 환경에 등록되어 [터널 서비스를 사용하여 작성 환경에서 액세스되는 사용자 그룹입니다](/help/communities/deploy-communities.md#tunnel-service-on-author).
-
 
 ## 그룹 생성 {#group-creation}
 
@@ -72,7 +72,7 @@ ht-degree: 2%
 
 * 그룹 **만들기** 단추를 선택합니다.
 
-### 1단계: 커뮤니티 그룹 템플릿 {#step-community-group-template}
+### 1단계:커뮤니티 그룹 템플릿 {#step-community-group-template}
 
 ![다국어 커뮤니티 그룹](assets/multi-lingual-group.png)
 
@@ -107,7 +107,7 @@ ht-degree: 2%
 
    드롭다운을 사용하여 사용 가능한 [커뮤니티 그룹 템플릿을 선택합니다](/help/communities/tools.md).
 
-### 2단계: 디자인 {#step-design}
+### 2단계:디자인 {#step-design}
 
 ### COMMUNITY GROUP THEME {#community-group-theme}
 
@@ -138,7 +138,7 @@ ht-degree: 2%
    * 브라우저 폭보다 작으면 이미지가 가로로 반복됩니다.
    * 브라우저 폭보다 큰 이미지는 잘려 보입니다.
 
-### 3단계: 설정 {#step-settings}
+### 3단계:설정 {#step-settings}
 
 **중재**
 
@@ -188,7 +188,7 @@ ht-degree: 2%
 
 ![thumbnail-image](assets/thumbnail-image.png)
 
-### 4단계: 그룹 만들기 {#step-create-group}
+### 4단계:그룹 만들기 {#step-create-group}
 
 ![community-create-group](assets/community-create-group.png)
 
@@ -202,8 +202,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->그룹은 1단계에서 지정한 모든 언어로 [생성됩니다. 커뮤니티 그룹 템플릿](/help/communities/groups.md#step-community-group-template) (추가 사용 가능한 커뮤니티 그룹 언어)을 참조하십시오.
-
+>그룹은 1단계에서 지정한 모든 언어로 [생성됩니다.커뮤니티 그룹 템플릿](/help/communities/groups.md#step-community-group-template) (추가 사용 가능한 커뮤니티 그룹 언어)을 참조하십시오.
 
 ## 작성자 그룹 컨텐츠 {#author-group-content}
 
@@ -256,15 +255,13 @@ BASIC 패널에서
 >
 >예를 들어, URL의 이름을 바꾸면 기존 UGC가 이동하지 않으므로 &#39;손실&#39; UGC가 영향을 받습니다.
 
-
 >[!CAUTION]
 >
 >그룹 함수는 사이트 구조의 *첫 번째* 함수이거나 유일한 ** 함수여야 합니다.
 >
 >페이지 함수 [](/help/communities/functions.md#page-function)등 다른 모든 함수를 먼저 포함하여 나열해야 합니다.
 
-
-**예: 하위 커뮤니티(그룹) 구조에 달력 함수 추가**
+**예:하위 커뮤니티(그룹) 구조에 달력 함수 추가**
 
 ![community-group-add-calendar](assets/community-group-add-calendar.png)
 
@@ -304,7 +301,6 @@ DESIGN 패널에서 테마를 수정할 수 있습니다.
 >상위 커뮤니티 사이트 및 상위 그룹이 이미 게시되었어야 합니다.
 >
 >커뮤니티 사이트와 중첩 그룹은 위에서 아래로 게시해야 합니다.
-
 
 ## 그룹 삭제 {#delete-the-group}
 
