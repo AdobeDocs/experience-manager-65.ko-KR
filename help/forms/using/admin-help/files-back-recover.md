@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -139,8 +139,7 @@ MySQLAdmin을 사용하거나 Windows에서 INI 파일을 수정하여 바이너
 
 >[!NOTE]
 >
->MySQL의 기본 바이너리 로깅 모드는 컨텐츠 서비스에서 사용하는 테이블과 호환되지 않는 &quot;문&quot;입니다(더 이상 사용되지 않음). 이 기본 모드에서 이진 로깅을 사용하면 컨텐츠 서비스(더 이상 사용되지 않음)가 실패합니다. 시스템에 컨텐츠 서비스(더 이상 사용되지 않음)가 포함되어 있는 경우 &quot;혼합&quot; 로깅 모드를 사용하십시오. &quot;혼합&quot; 로깅을 활성화하려면 my.ini file:*에 다음 인수를 추가하십시오.
-`binlog_format=mixed log-bin=logname`
+>MySQL의 기본 바이너리 로깅 모드는 컨텐츠 서비스에서 사용하는 테이블과 호환되지 않는 &quot;문&quot;입니다(더 이상 사용되지 않음). 이 기본 모드에서 이진 로깅을 사용하면 컨텐츠 서비스(더 이상 사용되지 않음)가 실패합니다. 시스템에 컨텐츠 서비스(더 이상 사용되지 않음)가 포함되어 있는 경우 &quot;혼합&quot; 로깅 모드를 사용하십시오. &quot;혼합&quot; 로깅을 사용하려면 my.ini 파일에 다음 인수를 추가하십시오. `binlog_format=mixed log-bin=logname`
 
 myqldump 유틸리티를 사용하여 전체 데이터베이스 백업을 얻을 수 있습니다. 전체 백업이 필요하지만 항상 편리하지는 않습니다. 대용량 백업 파일을 생성하고 생성하는 데 시간이 소요됩니다. 증분 백업을 수행하려면 이전 섹션에 설명된 대로 - `log-bin` 옵션으로 서버를 시작해야 합니다. MySQL Server가 다시 시작될 때마다 현재 이진 로그에 대한 쓰기가 정지되고 새 바이너리 로그가 생성되며 이후 새로운 바이너리 로그가 현재 상태가 됩니다. 명령을 사용하여 수동으로 스위치를 강제 적용할 수 `FLUSH LOGS SQL` 있습니다. 첫 번째 전체 백업 후 다음 로그 파일을 생성하는 myqladmin 유틸리티를 사용하여 이후의 증분 백업을 `flush-logs` 수행합니다.
 
