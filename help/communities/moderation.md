@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 3%
@@ -62,7 +62,6 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 >
 >선택한 SRP가 공용 스토어를 구현하는 경우에만 게시 환경의 UGC가 작성자에게만 표시됩니다. 예를 들어 기본적으로 JSRP는 작성자 및 게시를 위한 일반적인 스토어가 아닙니다. 커뮤니티 [컨텐츠 저장소를 참조하십시오](/help/communities/working-with-srp.md).
 
-
 ![moderationconsole 작성자](assets/moderationconsoleauthor.png)
 
 ## 중재 콘솔 UI {#moderation-console-ui}
@@ -109,7 +108,6 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 > 
 >콘텐트 영역에는 *무한 스크롤이*&#x200B;적용되어 있으므로 콘텐츠의 끝에 도달할 때까지 계속 스크롤할 수 있습니다. 도구 모음은 스크롤하는 동안에도 컨텐츠 영역 위에 고정되고 보이는 위치에 남아 있습니다.
 
-
 ### 필터 레일 {#ootbfilters}
 
 ![오픈 필터레일](assets/open-filterrail.png)
@@ -125,7 +123,6 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 >[!NOTE]
 >
 >커뮤니티 중재자는 중재 콘솔 UI에 사전 정의된 필터를 책갈피로 지정할 수 있습니다. 이러한 필터는 URL 끝(쿼리 문자열 매개 변수)에 추가되므로 중재자는 나중에 책갈피가 표시된 필터로 다시 돌아가 이러한 링크를 공유할 수 있습니다.
-
 
 ![searchicon](assets/searchicon.png)
 
@@ -154,7 +151,6 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 >관리자가 벌크 중재 콘솔에 액세스하면 Geometrixx 샘플과 같이 [사이트 생성 마법사로](/help/communities/sites-console.md)만들어지지 않은 사이트를 비롯하여 UGC에 대한 모든 참조가 표시됩니다.
 >
 >신뢰할 수 있는 커뮤니티 구성원이 게시 시 벌크 중재 콘솔에 액세스하면 멤버가 중재할 수 있는 커뮤니티 사이트에 대해 생성된 UGC에 대한 참조만 표시되며 사이트 필터로 필터링할 수 있습니다.
-
 
 #### 컨텐츠 유형 {#content-type}
 
@@ -205,7 +201,6 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 >[!NOTE]
 >
 >해결책이 제시되지 않음 상태만 선택된 경우 중재자는 답변된 질문을 제외한 모든 컨텐츠 유형(모든 컨텐츠 유형)을 볼 수 있습니다. 답변되지 않은 질문 및 포럼 주제, 블로그 기사 또는 댓글과 같은 기타 컨텐츠에 답변된 질문에 대한 속성이 존재하지 않기 때문입니다.
-
 
 ![상태](assets/statuses.png)
 
