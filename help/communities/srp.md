@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -33,7 +33,6 @@ AEM Communities 6.1의 경우, UGC(사용자 생성 컨텐츠)라고 하는 커�
 >[!NOTE]
 >
 >**사용자 지정 구성 요소**:AEM Communities의 라이센스 고객의 경우 SRP API는 기본 토폴로지와 관계없이 UGC에 액세스할 수 있도록 사용자 지정 구성 요소 개발자가 사용할 수 있습니다. SRP [및 UGC Essentials를 참조하십시오](srp-and-ugc.md).
-
 
 참고 항목:
 
@@ -68,7 +67,6 @@ UGC가 공유 저장소에 저장되면 대부분의 배포에서 작성 환경�
 >샘플 코드 [와 자세한 내용은 SRP](srp-and-ugc.md) 및 UGC Essentials를 참조하십시오.
 >
 >코딩 [시 모범 사례를 보려면 SRP를](accessing-ugc-with-srp.md) 사용하여 UGC 액세스를 참조하십시오.
-
 
 ### ASRP {#asrp}
 
@@ -130,7 +128,6 @@ ACL 검사는 리소스의 UGC에 적용된 권한을 확인하는 데 적합한
 >[!CAUTION]
 >
 >그림자 노드에는 여러 가지 사용이 있으므로 그림자 노드의 존재 여부는 구성 요소가 NER임을 의미하지 *않습니다* .
-
 
 ### 저장소 위치 {#storage-location}
 
