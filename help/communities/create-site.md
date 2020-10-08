@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 2%
@@ -97,7 +97,6 @@ ht-degree: 2%
 >
 >제작 환경의 경우 사용자 지정 Facebook 및 Twitter 애플리케이션을 만들어야 합니다. Facebook 및 [Twitter로 소셜 로그인을 참조하십시오](/help/communities/social-login.md).
 
-
 ![커뮤니티 사이트 설정](assets/site-settings.png)
 
 #### TAGGING {#tagging}
@@ -125,7 +124,6 @@ ht-degree: 2%
 >[!NOTE]
 >
 >[터널 서비스를](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) 통해 게시 환경에만 존재하는 구성원 및 그룹을 선택할 수 있습니다.
-
 
 ![새 사이트의 사용자 역할](assets/site-admin-1.png)
 
@@ -228,9 +226,6 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 >1. 확인을 **[!UICONTROL 선택합니다]**.
 >1. (선택 사항) **[!UICONTROL 지우기]** 또는 **[!UICONTROL 강제 재시도를]** 선택하여 복제 큐를 재설정합니다.
 
->
-
-
 
 ### 게시{#select-publish}를 선택합니다 
 
@@ -318,7 +313,6 @@ Aaron [](/help/communities/tutorials.md#demo-users) McDonald는
 >
 >비활성화하려면 속성 값에 &#39;x&#39; - `sling:match` 로 접두사를 지정하고 [모두 `xlocalhost.4503/$` 저장]을 선택하면 됩니다 ****.
 
-
 ![선택 단계](assets/optional-steps.png)
 
 #### 문제 해결:맵 저장 중 오류 발생 {#troubleshooting-error-saving-map}
@@ -342,5 +336,3 @@ Aaron [](/help/communities/tutorials.md#demo-users) McDonald는
 >[!NOTE]
 >
 >AEM에 익숙하지 않은 경우 [기본 처리](/help/sites-authoring/basic-handling.md) 및 페이지 작성에 대한 [빠른 안내서에 대한 설명서를 봅니다](/help/sites-authoring/qg-page-authoring.md).
-
-
