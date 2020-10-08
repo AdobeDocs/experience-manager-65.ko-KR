@@ -1,8 +1,8 @@
 ---
 title: 클라이언트측 사용자 정의
 seo-title: 클라이언트측 사용자 정의
-description: AEM Communities에서 동작 또는 모양 클라이언트측 사용자 정의
-seo-description: AEM Communities에서 동작 또는 모양 클라이언트측 사용자 정의
+description: AEM Communities의 동작 또는 모양 클라이언트측 사용자 정의
+seo-description: AEM Communities의 동작 또는 모양 클라이언트측 사용자 정의
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -99,7 +99,7 @@ All properties set on a component/resource can be accessed by referencing the pr
 1. 스타일시트 파일(.css)을 만듭니다.
 1. 사이트의 클라이언트 라이브러리 폴더([clientlibs](#clientlibs-for-scf))에 스타일시트를 포함시키고 [ui:includeClientLib이 있는 템플릿과 페이지에 스타일시트가 포함되어 있는지 확인합니다](../../help/sites-developing/clientlibs.md).
 
-1. 스타일 시트에서 식별한 CSS 클래스 및 규칙(#2)을 재정의하고 스타일을 추가합니다.
+1. 스타일 시트에서 식별한 CSS 클래스 및 규칙을 재정의하고 스타일을 추가합니다.
 
 이제 사용자 정의 스타일이 기본 프레임워크 스타일을 덮어쓰고 구성 요소가 새 스킨으로 렌더링됩니다.
 
@@ -108,7 +108,6 @@ All properties set on a component/resource can be accessed by referencing the pr
 >접두사가 있는 모든 CSS 클래스 이름 `scf-js` 은 javascript 코드에서 특정 사용을 가집니다. 이러한 클래스는 구성 요소의 상태(예: 숨김에서 표시로 전환)에 영향을 주며, 무시하거나 제거할 수 없습니다.
 >
 >클래스에 `scf-js` 는 스타일에 영향을 주지 않지만, 클래스 이름은 요소 상태를 제어하므로 부작용이 있을 수 있다는 주의해야 하는 사항이 있는 스타일시트에서 사용할 수 있습니다.
-
 
 ## Javascript 확장 {#extending-javascript}
 
@@ -120,7 +119,7 @@ All properties set on a component/resource can be accessed by referencing the pr
 1. 메서드를 확장합니다.
 1. SCF.registerComponent()를 사용하여 모든 메서드를 기본값이나 사용자 지정된 개체 및 보기로 등록합니다.
 
-### forum.js: 포럼 확장 샘플 - HBS  {#forum-js-sample-extension-of-forum-hbs}
+### forum.js:포럼 확장 샘플 - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -194,7 +193,7 @@ Community [Components guide](components-guide.md) lists the complete clientlibs 
 * 클라이언트 폴더 노드: `/libs/social/forum/hbs/forum/clientlibs`
 * 카테고리 속성: `cq.social.author.hbs.forum`
 
-참고: author clientlibs never embed other libraries, they do list their dependencies. 다른 라이브러리에 포함할 경우 종속성은 자동으로 가져오지 않고 포함되어 있어야 합니다.
+참고:author clientlibs never embed other libraries, they do list their dependencies. 다른 라이브러리에 포함할 경우 종속성은 자동으로 가져오지 않고 포함되어 있어야 합니다.
 
 The required author clientlibs can be identified by inserting &quot;author&quot; into the clientlibs listed for each SCF component in [Community Components guide](components-guide.md).
 
@@ -202,8 +201,8 @@ The required author clientlibs can be identified by inserting &quot;author&quot;
 
 모든 사이트는 클라이언트 라이브러리를 관리하는 방식이 서로 다릅니다. 다양한 요소는 다음과 같습니다.
 
-* 전체 속도: 사이트가 응답하기 위한 것일 수도 있지만 첫 페이지의 로드 속도가 약간 느려도 가능합니다. 많은 페이지가 동일한 Javascript를 사용하는 경우, 다양한 Javascripts를 하나의 clientlib에 내장하고 첫 번째 페이지에서 참조하여 로드할 수 있습니다. 이 단일 다운로드에서 Javascript는 캐시되어 이후 페이지에 대해 다운로드할 데이터의 양을 최소화합니다.
-* 짧은 첫 페이지: 첫 페이지가 빨리 로드되기를 바라는 것일 수도 있습니다. 이 경우 Javascript는 필요한 경우에만 참조할 수 있도록 여러 개의 작은 파일에 있습니다.
+* 전체 속도:사이트가 응답하기 위한 것일 수도 있지만 첫 페이지의 로드 속도가 약간 느려도 가능합니다. 많은 페이지가 동일한 Javascript를 사용하는 경우, 다양한 Javascripts를 하나의 clientlib에 내장하고 첫 번째 페이지에서 참조하여 로드할 수 있습니다. 이 단일 다운로드에서 Javascript는 캐시되어 이후 페이지에 대해 다운로드할 데이터의 양을 최소화합니다.
+* 짧은 첫 페이지:첫 페이지가 빨리 로드되기를 바라는 것일 수도 있습니다. 이 경우 Javascript는 필요한 경우에만 참조할 수 있도록 여러 개의 작은 파일에 있습니다.
 * 첫 번째 페이지 로드와 후속 다운로드 간의 균형.
 
 | **[Feature ⇐ Essentials](essentials.md)** | **[서버측 맞춤화 =](server-customize.md)** |
