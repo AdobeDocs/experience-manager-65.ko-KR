@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2884'
 ht-degree: 2%
 
 ---
@@ -31,6 +31,7 @@ AEM Communities 채점 및 배지 기능을 사용하면 커뮤니티 구성원�
 * [커뮤니티에서 구성원의 역할을 식별하는 배지](#assign-and-revoke-badges) 할당에
 
 * [참가자의 참여를 유도하기 위해 구성원에 대한 배지의](#enable-scoring) 기본 제공(제작된 컨텐츠의 수량)
+
 * [구성원을 전문가(콘텐츠 품질)로 식별하기 위한 고급 배지](/help/communities/advanced.md) 제공
 
 **배지** 수여는 기본적으로 [활성화되지 않습니다](/help/communities/implementing-scoring.md#main-pars-text-237875536).
@@ -38,7 +39,6 @@ AEM Communities 채점 및 배지 기능을 사용하면 커뮤니티 구성원�
 >[!CAUTION]
 >
 >CRXDE Lite에 표시되는 구현 구조는 UI를 사용할 수 있게 되면 변경될 수 있습니다.
-
 
 ## 배지 {#badges}
 
@@ -76,7 +76,7 @@ AEM Communities 채점 및 배지 기능을 사용하면 커뮤니티 구성원�
 
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+   ![지정된 배지](assets/assigned-badges.png)
 
 ### 수상 배지 {#awarded-badges}
 
@@ -101,14 +101,13 @@ AEM Communities 채점 및 배지 기능을 사용하면 커뮤니티 구성원�
 
    `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+   ![수상 배지](assets/awarded-badges.png)
 
 >[!NOTE]
 >
 >점수 지정 규칙은 부적절한 게시물에 대해 부정 점수를 할당하도록 구성되므로 점수 값에 영향을 줄 수 있습니다. 그러나 배지가 획득되면 점수 지정 포인트 감소 또는 점수 지정 규칙이 변경되어 배지가 자동으로 제거되지 않습니다.
 >
 >배지는 지정된 배지와 동일한 방식으로 취소될 수 있습니다. 배지 [지정 및 폐지 섹션을](#assign-and-revoke-badges) 참조하십시오. UI가 개선되어 멤버의 배지를 관리할 수 있게 됩니다.
-
 
 ### 사용자 지정 배지 {#custom-badges}
 
@@ -140,13 +139,12 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
 
 | **속성** | **유형** | **설명** |
 |---|---|---|
-| 배지 규칙 | String[] | 배지 규칙 [배열 목록](#badging-rules) |
-| 점수 지정 규칙 | String[] | 점수 [규칙 배열 목록](#scoring-rules) |
+| 배지 규칙 | 문자열 | 배지 규칙 [배열 목록](#badging-rules) |
+| 점수 지정 규칙 | 문자열 | 점수 [규칙 배열 목록](#scoring-rules) |
 
 >[!NOTE]
 >
 >점수 지정 규칙이 배지 수여에 영향을 주지 않는 것으로 나타나면 배지 규칙의 scoringRules 속성으로 점수 지정 규칙이 차단되지 않았는지 확인합니다. 배지 규칙 [이라는 섹션을 참조하십시오](#badging-rules).
-
 
 ### 구성 요소에 대한 배지 활성화 {#enable-badges-for-component}
 
@@ -154,20 +152,19 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
 
 구성 요소 인스턴스 `allowBadges`에 대한 배지 표시를 활성화/비활성화하는 부울 속성입니다. 포럼, QnA 및 주석 구성 요소에 대한 [구성 요소 편집 대화](/help/communities/author-communities.md) 상자에서 디스플레이 배지 **라는 확인란을 통해 구성 요소를 구성할 수 있습니다**.
 
-#### 예: 포럼 구성 요소 인스턴스에 대한 allowBadges {#example-allowbadges-for-forum-component-instance}
+#### 예:포럼 구성 요소 인스턴스에 대한 allowBadges {#example-allowbadges-for-forum-component-instance}
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![enable-badges-component](assets/enable-badges-component.png)
 
 >[!NOTE]
 >
 >포럼, QnA 및 댓글에 있는 HBS 코드를 사용하여 배지 표시를 위해 구성 요소를 오버레이할 수 있습니다.
 
-
 ## 점수 지정 규칙 {#scoring-rules}
 
 채점 규칙은 배지 수상을 위한 채점 과정이다.
 
-매우 간단하게 각 점수 규칙은 하나 이상의 하위 규칙의 목록입니다. 배지가 활성화되면 적용할 규칙을 식별하기 위해 점수 지정 규칙이 커뮤니티 사이트 컨텐츠에 적용됩니다.
+매우 간단하게, 각 점수 규칙은 하나 이상의 하위 규칙의 목록입니다. 배지가 활성화되면 적용할 규칙을 식별하기 위해 점수 지정 규칙이 커뮤니티 사이트 컨텐츠에 적용됩니다.
 
 점수 규칙은 상속되지만 첨가하지는 않습니다. 예:
 
@@ -186,14 +183,14 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
 
 >[!NOTE]
 >
->모범 사례: 각 점수 규칙에 이름을 고유하게 지정합니다.
+>모범 사례:각 점수 규칙에 이름을 고유하게 지정합니다.
 >
->점수 규칙 이름은 전체적으로 고유해야 합니다. 같은 이름으로 끝나서는 안 됩니다.
+>점수 규칙 이름은 전체적으로 고유해야 합니다.같은 이름으로 끝나서는 안 됩니다.
 >
 >하지 *않을* 작업의 예:
+>
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
-
 
 ### 점수 하위 규칙 {#scoring-sub-rules}
 
@@ -228,7 +225,7 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
    <td>긴</td>
    <td>
     <ul>
-     <li>필수; 동사는 이벤트 동작에 해당합니다</li>
+     <li>필수;동사는 이벤트 동작에 해당합니다</li>
      <li>동사 속성이 하나 이상 있어야 합니다.</li>
      <li>동사는 모두 대문자로 입력해야 합니다.</li>
      <li>여러 동사 속성이 있지만 중복되지 않습니다.</li>
@@ -239,11 +236,11 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
   </tr>
   <tr>
    <td><code>topics</code></td>
-   <td>String[]</td>
+   <td>문자열</td>
    <td>
     <ul>
-     <li>선택 사항; 이벤트 항목별로 식별된 커뮤니티 구성 요소에 대한 하위 규칙을 제한합니다.</li>
-     <li>specified : 값이 이벤트 항목의 다중 값 문자열입니다.</li>
+     <li>선택 사항;이벤트 항목별로 식별된 커뮤니티 구성 요소에 대한 하위 규칙을 제한합니다.</li>
+     <li>specified :값이 이벤트 항목의 다중 값 문자열입니다.</li>
      <li>릴리스의 주제 목록은 항목 및 <a href="#topics-and-verbs">동사 섹션에 있습니다</a></li>
      <li>기본값은 동사와 연관된 모든 주제에 적용됩니다.</li>
     </ul> </td>
@@ -253,7 +250,7 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
    <td>부울</td>
    <td>
     <ul>
-     <li>선택 사항; 멤버가 소유한 컨텐츠를 사용하는 경우 관련 없음</li>
+     <li>선택 사항;멤버가 소유한 컨텐츠를 사용하는 경우 관련 없음</li>
      <li>true인 경우 작업 중인 컨텐츠 소유자에게 점수를 적용합니다.</li>
      <li>false이면 멤버 작업 시 점수를 적용합니다.</li>
      <li>default is false</li>
@@ -264,7 +261,7 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
    <td>문자열</td>
    <td>
     <ul>
-     <li>선택 사항; 점수 지정 엔진 식별</li>
+     <li>선택 사항;점수 지정 엔진 식별</li>
      <li>"basic"인 경우 수량을 기준으로 점수 지정 엔진을 지정합니다.
       <ul>
        <li>릴리스에 포함됨</li>
@@ -289,7 +286,7 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
 
 1. /libs/settings/community/scoring/rules/forums-scoring
 
-   * subRules[] =/libs/settings/community/scoring/rules/sub-forum-create/libs/settings/community/scoring/rules/sub-scoring/rules/sub-review/settings/community/scoring/rules/members-give-voke/libs/community/scoring/rules/sub-is-advertising-advertising-ading-advertisized-adminisized-ading-advertising-settings
+   * subRules[] =/libs/settings/community/scoring/rules/sub-forum-create/libs/settings/community/scoring/rules/sub-scoring/rules/sub-review/settings/community/scoring/rules/members-give-voke/libs/community/scoring/rules/sub-is-advertising-advertising-ading-advertising-advertising-adminisized-settings
 
 **메모:**
 
@@ -310,8 +307,8 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
 
 배지 규칙은 다음을 지정하여 점수 지정 규칙을 배지에 연결합니다.
 
-* 점수 지정 규칙.
-* 특정 배지를 표시하기 위해 필요한 점수입니다.
+* 점수 지정 규칙
+* 특정 배지 표시 시 필요한 점수
 
 배지 규칙은 점수 및 배지 `cq:Page` 와 점수 규칙을 상관시키는 해당 `jcr:content` 노드의 속성이 있는 유형 노드입니다.
 
@@ -335,10 +332,9 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
 
 >[!NOTE]
 >
->모범 사례: 각 AEM 사이트에 고유한 배지 이미지를 만듭니다.
+>모범 사례:각 AEM 사이트에 고유한 배지 이미지를 만듭니다.
 
-
-![chlimage_1-101](assets/chlimage_1-101.png)
+![배지 규칙 구성](assets/badging-rule-configuration.png)
 
 <table>
  <tbody>
@@ -349,7 +345,7 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
   </tr>
   <tr>
    <td>임계값</td>
-   <td>String[]</td>
+   <td>문자열</td>
    <td><em>(필수)</em> 'number|path' 형식의 다중 값 문자열
     <ul>
      <li>number = 점수</li>
@@ -364,7 +360,7 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
   </tr>
   <tr>
    <td>점수 지정 규칙</td>
-   <td>String[]</td>
+   <td>문자열</td>
    <td>(<em>선택</em>사항) 점수 지정 규칙에 의해 식별된 점수 이벤트로 배지 규칙을 제한하는 다중 값 문자열</td>
   </tr>
  </tbody>
@@ -374,9 +370,9 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
 
 이번 릴리스에 포함된 두 가지 배지 규칙은 포럼 및 [댓글 점수 규칙에 해당됩니다](#includedscoringrules).
 
-* /libs/settings/community/badging/rules/comments-badging
+* `/libs/settings/community/badging/rules/comments-badging`
 
-* /libs/settings/community/badging/rules/forums-badging
+* `/libs/settings/community/badging/rules/forums-badging`
 
 **메모:**
 
@@ -395,19 +391,19 @@ Badges 콘솔에서 설치하면 사용자 지정 배지가 게시 환경에 자
 
 다음 cURL 명령은 배지 할당 및 취소에 대한 HTTP 요청에 필요한 사항을 보여줍니다. 기본 형식은 다음과 같습니다.
 
-cURL -i -X POST -H *header**-u* signin *-F* operation ** -F *badgeFMember-profile-url*
+cURL -i -X POST -H *header* -u *sign in* -F *operation**F* badge -f *badgeFmember-profile-url*
 
 *header* = &quot;Accept:application/json&quot; 사용자 정의 헤더를 전달하여 서버를 통과합니다(필수).
 
-*signing* = administrator-id:passwordfor example: 관리:관리자
+*signing* = administrator-id:passwordfor example:관리:관리자
 
 *operation* = &quot;:operation=social:assignBadge&quot; OR &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = 저장소의 배지 이미지 파일 위치입니다. 예: content/moderator.png
+*badge-image-file* = 저장소의 배지 이미지 파일 위치입니다. 예:content/moderator.png
 
-*member-profile-url* = 게시할 때 멤버 프로필에 대한 끝점입니다. 예: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url* = 게시할 때 멤버 프로필에 대한 끝점입니다. 예:https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -415,9 +411,6 @@ cURL -i -X POST -H *header**-u* signin *-F* operation ** -F *badgeFMember-profil
 >
 >* 터널 서비스가 활성화된 경우 [작성자 인스턴스를 참조할](/help/communities/users.md#tunnel-service) 수 있습니다.
 >* 잘 알려지지 않은 임의 이름일 수 있습니다. 권한 부여 가능한 ID에 대한 [보안 체크리스트를](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) 참조하십시오.
-
->
-
 
 
 ### 예: {#examples}
@@ -454,8 +447,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 >
 >구성 요소 인스턴스에 대한 배지 표시 `allowBadges`를 활성화/비활성화하는 새로운 부울 속성입니다. 디스플레이 배지로 레이블이 지정된 확인란을 통해 업데이트된 [구성 요소 편집 대화](/help/communities/author-communities.md) 상자에서 구성 **가능합니다**.
 
-
-**[달력 구성 요소](/help/communities/calendar.md)**SocialEvent`topic`= com/adobe/cq/social/calendar
+**[달력 구성 요소](/help/communities/calendar.md)** SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **동사** | **설명** |
 |---|---|
@@ -464,7 +456,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 | 업데이트 | 구성원의 달력 이벤트 또는 댓글이 편집됨 |
 | 삭제 | 구성원의 달력 이벤트 또는 댓글이 삭제됨 |
 
-**[댓글 구성 요소](/help/communities/comments.md)**SocialEvent`topic`= com/adobe/cq/social/comment
+**[댓글 구성 요소](/help/communities/comments.md)** SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **동사** | **설명** |
 |---|---|
@@ -473,7 +465,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 | 업데이트 | 구성원 댓글이 편집됨 |
 | 삭제 | 구성원 댓글이 삭제됨 |
 
-**[파일 라이브러리 구성 요소](/help/communities/file-library.md)**SocialEvent`topic`= com/adobe/cq/social/fileLibrary
+**[파일 라이브러리 구성 요소](/help/communities/file-library.md)** SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **동사** | **설명** |
 |---|---|
@@ -482,7 +474,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 | 업데이트 | 구성원이 폴더 또는 파일을 업데이트합니다. |
 | 삭제 | 구성원이 폴더 또는 파일을 삭제합니다. |
 
-**[포럼 구성 요소](/help/communities/forum.md)**SocialEvent`topic`= com/adobe/cq/social/forum
+**[포럼 구성 요소](/help/communities/forum.md)** SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **동사** | **설명** |
 |---|---|
@@ -491,7 +483,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 | 업데이트 | 회원의 포럼 주제 또는 답변이 편집됨 |
 | 삭제 | 회원의 포럼 주제 또는 답글이 삭제됨 |
 
-**[저널 구성 요소](/help/communities/blog-feature.md)**SocialEvent`topic`= com/adobe/cq/social/journal
+**[저널 구성 요소](/help/communities/blog-feature.md)** SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **동사** | **설명** |
 |---|---|
@@ -500,7 +492,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 | 업데이트 | 구성원의 블로그 기사 또는 댓글이 편집됨 |
 | 삭제 | 멤버의 블로그 아티클 또는 댓글이 삭제됨 |
 
-**[QnA 구성 요소](/help/communities/working-with-qna.md)**SocialEvent`topic`= com/adobe/cq/social/qna
+**[QnA 구성 요소](/help/communities/working-with-qna.md)** SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **동사** | **설명** |
 |---|---|
@@ -511,7 +503,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 | 선택 취소 | 구성원 답변 선택 취소 |
 | 삭제 | 구성원의 QnA 질문 또는 답변이 삭제되었습니다. |
 
-**[검토 구성 요소](/help/communities/reviews.md)**SocialEvent`topic`= com/adobe/cq/social/review
+**[검토 구성 요소](/help/communities/reviews.md)** SocialEvent `topic`= com/adobe/cq/social/review
 
 | **동사** | **설명** |
 |---|---|
@@ -519,14 +511,14 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 | 업데이트 | 구성원 검토 편집 |
 | 삭제 | 구성원 검토 삭제 |
 
-**[등급 구성 요소](/help/communities/rating.md)**SocialEvent`topic`= com/adobe/cq/social/tally/rating
+**[등급 구성 요소](/help/communities/rating.md)** SocialEvent `topic`= com/adobe/cq/social/tally/rating
 
 | **동사** | **설명** |
 |---|---|
 | 등급 추가 | 회원의 컨텐츠가 등급 상승되었습니다. |
 | 등급 제거 | 회원의 컨텐츠가 평점을 받지 못했습니다. |
 
-**[투표 구성 요소](/help/communities/voting.md)**SocialEvent`topic`= com/adobe/cq/social/tally/voting
+**[투표 구성 요소](/help/communities/voting.md)** SocialEvent `topic`= com/adobe/cq/social/tally/voting
 
 | **동사** | **설명** |
 |---|---|
@@ -574,7 +566,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 시작하기 자습서(참여) 사이트를 사용하여 점수 [와 배지](/help/communities/getting-started.md) 작업을 신속하게 시도할 수 있습니다.
 
-* 작성자의 CRXDE Lite에 액세스
+* 작성자의 CRXDE Lite 액세스
 * 기본 페이지로 이동합니다.
 
    * /content/sites/engage/en/jcr:content
@@ -603,11 +595,11 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 * 모두 **저장을 선택합니다**.
 
-![chlimage_1-102](assets/chlimage_1-102.png)
+![테스트 점수 배지](assets/test-scoring-badging.png)
 
 그런 다음 포럼 및 주석 구성 요소를 통해 배지가 표시되는지 확인합니다.
 
-* 다시 CRXDE Lite를 사용합니다.
+* 다시 CRXDE Lite 사용
 * 포럼 구성 요소 찾아보기
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -618,18 +610,18 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
    * **유형**: `Boolean`
    * **값**: `true`
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![test-forum-component](assets/test-forum-component.png)
 
 그런 다음 [커뮤니티 사이트를 다시](/help/communities/sites-console.md#publishing-the-site) 게시합니다.
 
 마지막으로
 
 * 게시 인스턴스의 구성 요소를 찾습니다.
-* 커뮤니티 구성원으로 로그인(예: weston.mccall@dodgit.com / password).
+* 커뮤니티 구성원으로 로그인(예:weston.mccall@dodgit.com / password).
 * 새 포럼 주제를 게시합니다.
 * 배지가 표시되도록 페이지를 새로 고쳐야 합니다.
 
-   * 로그아웃 및 다른 커뮤니티 구성원으로 로그인(예: aaron.mcdonald@mailinator.com/password).
+   * 로그아웃 및 다른 커뮤니티 구성원으로 로그인(예:aaron.mcdonald@mailinator.com/password).
 
 * 포럼을 선택합니다.
 
