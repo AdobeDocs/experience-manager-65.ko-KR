@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 42606e76742fe7698c4c186208e515ed22adc5a4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2787'
+ht-degree: 1%
 
 ---
 
@@ -71,7 +71,6 @@ Facebook 그래프 API가 버전 1.0일 때 소셜 로그인 및 소매 Facebook
 >
 >이전 AEM 버전의 경우 로그에서 예외가 발생하면 **이**&#x200B;버전에서 토큰을 추출할 수 없으면 해당 AEM 릴리스에 대한 최신 CFP로 업그레이드하십시오.
 
-
 Facebook 그래프 API 버전 정보는 [Facebook API 변경 로그를 참조하십시오](https://developers.facebook.com/docs/apps/changelog).
 
 ### Facebook 앱 만들기 {#create-a-facebook-app}
@@ -93,7 +92,6 @@ Facebook 애플리케이션을 만들려면 https://developers.facebook.com/apps
 >[!NOTE]
 >
 >개발을 위해 http://localhost:4503이 작동합니다.
-
 
 응용 프로그램이 만들어지면 **[!UICONTROL 앱 ID]** 및 **[!UICONTROL 앱 암호]** 설정을 찾습니다. 이 정보는 [Facebook 클라우드 서비스를 구성하는 데 필요합니다](#createafacebookcloudservice).
 
@@ -130,7 +128,6 @@ Facebook 애플리케이션을 만들려면 https://developers.facebook.com/apps
 
    * Select **[!UICONTROL SAVE]**.
    * **[!UICONTROL 게시]**.
-
 
 
 
@@ -394,7 +391,6 @@ AEM Communities 구성은 [ [Adobe [Granite OAuth 응용 프로그램 및 Provid
 >[!CAUTION]
 >
 >인증 핸들러를 Granite OAuth 응용 프로그램 및 공급자의 Facebook 또는 Twitter 인스턴스와 *혼동하지 않도록 주의하십시오*.
-
 
 ![chlimage_1-490](assets/chlimage_1-490.png)
 
