@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 2%
@@ -44,7 +44,6 @@ AEM Communities의 경우
 >[!NOTE]
 >
 >AEM에 익숙하지 않은 경우 [기본 처리](../../help/sites-authoring/basic-handling.md) 및 페이지 작성에 대한 [빠른 안내서에 대한 설명서를 봅니다](../../help/sites-authoring/qg-page-authoring.md).
-
 
 ## 최신 커뮤니티 릴리스 설치 {#install-latest-communities-release}
 
@@ -95,7 +94,7 @@ See [Configuring Email](email.md).
    * 예: 사용자 이름 &#39;admin&#39; / 암호 &#39;admin&#39;
 
 * 주 콘솔에서 **[!UICONTROL 도구]** > 작업 **[!UICONTROL >]** 보안 ******[!UICONTROL >]**&#x200B;사용자로이동합니다.
-* 편집 **메뉴에서&#x200B;**사용자**[!UICONTROL 추가를 선택합니다.]**
+* 편집 **메뉴에서** 사용자 **[!UICONTROL 추가를 선택합니다.]**
 
 * 대화 상자에서 다음을 `Create New User` 입력합니다.
 
