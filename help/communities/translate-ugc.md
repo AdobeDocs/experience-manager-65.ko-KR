@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 1%
@@ -36,7 +36,7 @@ UGC의 번역을 통해 사이트 방문자와 회원은 언어 장벽을 제거
 
 설명서의 이 섹션에서는 번역 서비스가 UGC와 작동하는 방식에 대해 자세히 설명하며 AEM을 [번역 서비스 제공업체에](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) 연결하고 [번역 통합 프레임워크를 구성하여 해당 서비스를 웹 사이트에 통합하는 방법에 대해 설명합니다](../../help/sites-administering/tc-tic.md).
 
-번역 서비스 공급자가 사이트와 연결되어 있으면 사이트의 각 언어 사본은 SCF 구성 요소(예: 주석)를 통해 게시된 자체 UGC 스레드를 유지합니다.
+번역 서비스 공급자가 사이트와 연결되어 있으면 사이트의 각 언어 사본은 주석과 같은 SCF 구성 요소를 통해 게시된 자체 UGC 스레드를 유지합니다.
 
 번역 서비스 제공업체 외에 번역 통합 프레임워크가 구성되면 사이트의 각 언어 복사본에서 UGC의 단일 스레드를 공유할 수 있으므로 언어 사본 간에 글로벌 커뮤니케이션을 제공할 수 있습니다. 언어별로 분리된 토론 스레드 대신 구성된 [전역 공유 저장소를](#global-translation-of-ugc) 사용하면 표시되는 언어 복사와 상관없이 전체 스레드를 볼 수 있습니다. 또한 지역별 등 글로벌 참가자의 논리적 그룹화를 위해 서로 다른 글로벌 공유 스토어를 지정하여 여러 번역 통합 구성을 구성할 수 있습니다.
 
@@ -51,7 +51,6 @@ AEM Communities은 여러 언어로 [기본 번역 서비스를](../../help/site
 >기본 번역 서비스는 데모용입니다.
 >
 >프로덕션 시스템의 경우 라이선스 번역 서비스가 필요합니다. 라이센스가 없는 경우 기본 번역 서비스를 [해제해야 합니다](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
-
 
 ## UGC의 전역 번역 {#global-translation-of-ugc}
 
@@ -70,7 +69,6 @@ AEM Communities은 여러 언어로 [기본 번역 서비스를](../../help/site
 >UGC는 여전히 [공용 저장소에](working-with-srp.md)있지만, 언어 전용 UGC 위치에 있고 글로벌 번역이 구성된 후 추가된 새 컨텐츠는 글로벌 공유 스토어 위치에서 검색되고 있습니다.
 >
 >언어별 콘텐츠를 글로벌 공유 스토어로 이동 또는 병합하기 위한 마이그레이션 도구는 없습니다.
-
 
 ### 번역 통합 구성 {#translation-integration-configuration}
 
@@ -145,7 +143,6 @@ AEM Communities은 여러 언어로 [기본 번역 서비스를](../../help/site
 >기본 언어는 사이트 방문자가 로그인하고 언어 기본 설정을 지정한 경우 사용자 프로필에 설정된 언어 기본 설정입니다.
 >
 >사이트 방문자가 익명이거나 프로필에 언어 기본 설정을 지정하지 않은 경우 기본 언어는 페이지 템플릿의 기본 언어입니다.
-
 
 ### 사용자 환경 설정 {#user-preference}
 
