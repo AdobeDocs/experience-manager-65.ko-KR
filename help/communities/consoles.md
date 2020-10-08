@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 2%
@@ -37,7 +37,6 @@ ht-degree: 2%
 >[!NOTE]
 >
 >게시 환경에서 로그인한 구성원이 적절한 권한을 가질 때 [커뮤니티 사이트](sites-console.md) 에 `Administration` 메뉴 항목이 표시됩니다.
-
 
 ## 전역 탐색 패널 {#global-navigation-panel}
 
