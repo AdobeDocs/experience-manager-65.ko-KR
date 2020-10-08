@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: f05d7c19e3284c0627e29b9590db4749be100229
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '183'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 AEM Communities 설명서의 이 섹션에서는 다음과 같은 항목을 다룹니다.
 
-* [Apache Maven을 사용하여 AEM 프로젝트 빌드](../../help/sites-developing/ht-projects-maven.md).
+* [Apache Maven을 사용하여 AEM 프로젝트 제작](../../help/sites-developing/ht-projects-maven.md).
 
 이제 개별 아티팩트를 대체하는 두 가지 &quot;우버&quot; 아티팩트가 있습니다.
 
@@ -44,7 +44,7 @@ AEM Communities 설명서의 이 섹션에서는 다음과 같은 항목을 다�
 </dependency>
 ```
 
-지정한 버전이 AEM Communities에 대해 설치된 커뮤니티 패키지 버전과 일치하는지 확인합니다. 설치된 버전 번호를 확인하려면:
+지정한 버전이 AEM Communities용으로 설치된 커뮤니티 패키지 버전에 해당하는지 확인합니다. 설치된 버전 번호를 확인하려면:
 
 1. 관리자 권한으로 로그인합니다.
 1. 패키지 관리자 [로 이동합니다](../../help/sites-administering/package-manager.md). 예: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
@@ -59,7 +59,6 @@ AEM Communities 설명서의 이 섹션에서는 다음과 같은 항목을 다�
 >최신 커뮤니티 릴리스를 최신 상태로 유지하는 것이 좋습니다.
 >
 >최신 릴리스 [섹션을](deploy-communities.md#latest-releases) 방문하여 최신 버전을 확인하십시오.
-
 
 ## MAVEN 종속성 예 {#maven-dependency-example}
 
