@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
-AEM Communities에 대한 메시징 기능은 로그인 사이트 방문자(구성원)가 사이트에 로그인할 때 액세스할 수 있는 서로 메시지를 보내는 기능을 제공합니다.
+AEM Communities의 메시징 기능은 로그인 사이트 방문자(구성원)가 사이트에 로그인할 때 액세스할 수 있는 다른 사람에게 메시지를 보내는 기능을 제공합니다.
 
 커뮤니티 사이트를 만드는 동안 상자를 선택하면 커뮤니티 사이트에 대한 [메시징이 활성화됩니다](/help/communities/sites-console.md).
 
@@ -33,7 +33,7 @@ AEM Communities에 대한 메시징 기능은 로그인 사이트 방문자(구�
 
 ## 메시징 작업 서비스 {#messaging-operations-service}
 
-구성 [AEM Communities 메시징 작업](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) 서비스는 메시징 관련 요청을 처리하는 종단점을 식별하고, 서비스가 메시지를 저장하는 데 사용해야 하는 폴더, 메시지에 파일 첨부 파일이 포함될 수 있는 경우 허용되는 파일 유형을 식별합니다.
+구성 [](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities 메시징 작업 서비스는 메시징 관련 요청을 처리하는 종단점, 서비스가 메시지를 저장하는 데 사용해야 하는 폴더, 메시지에 첨부 파일이 포함되어 있을 수 있는 경우 허용되는 파일 유형을 식별합니다.
 
 를 사용하여 만든 커뮤니티 사이트의 경우 받은 편지함 `Communities Sites console`이 설정된 서비스 인스턴스가 이미 있습니다 `/mail/inbox`.
 
@@ -135,7 +135,6 @@ AEM Communities에 대한 메시징 기능은 로그인 사이트 방문자(구�
 >
 >파일 이름 확장자를 제외한 모든 파일 이름차단 목록에 추가된을 허용하려면 &#39;**-**&#39; 아이콘을 사용하여 [저장]을 클릭하기 전에 비어 있는 단일 항목을 다시 **제거합니다**.
 
-
 ## Group Messaging {#group-messaging}
 
 등록된 사용자가 사용자 그룹에 직접 메시지를 일괄적으로 보낼 수 있도록 하려면 다음 두 가지 메시지 작업 서비스 구성 **에서 그룹 메시지** 사용을 **활성화해야** 합니다.
@@ -143,11 +142,11 @@ AEM Communities에 대한 메시징 기능은 로그인 사이트 방문자(구�
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
 
-**메시징 작업 서비스: 소셜 콘솔**
+**메시징 작업 서비스:소셜 콘솔**
 
 ![social-console-op-service](assets/social-console-op-service.png)
 
-**메시징 작업 서비스: 소셜 메시지**
+**메시징 작업 서비스:소셜 메시지**
 
 ![social-message-op-service](assets/social-message-op-service.png)
 
