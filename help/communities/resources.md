@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
-source-git-commit: 4e2fa3b0a64ae2e959dad85e3a1bc4a1027a2eef
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 5%
@@ -35,18 +35,15 @@ AEM Communities의 경우 리소스 콘솔에서는 활성 [관리자가](users.
 >
 >SCORM이 커뮤니티 사이트를 만든 후 설치된 경우 SCORM이 설치되기 전에 있는 모든 활성 리소스를 다시 만들어야 합니다.
 
-
-
 >[!NOTE]
 >
 >AEM 6.3 [및 상응하는 Communities 기능 팩](deploy-communities.md#latestfeaturepack) AEM 6.2 FP3 [및](deploy-communities.md#latestfeaturepack) AEM 6.1 FP7 [](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack)이 출시되면서 활성 기능에는 더 이상 MySQL 데이터베이스 [](mysql.md)가 필요하지 않습니다.
-
 
 ## 용어 {#terminology}
 
 ### 리소스 {#resource}
 
-리소스는 [역량 강화 커뮤니티에 필수적입니다](overview.md#enablement-community). 멤버들은 그들의 기술을 향상시킬 수 있도록 하기 위해 할당되는 자료들이다.
+리소스는 [역량 강화 커뮤니티에 필수적입니다](overview.md#enablement-community). 멤버들은 그들의 기술을 향상시킬 수 있는 소재이다.
 
 자원의 특성:
 
@@ -251,7 +248,6 @@ AEM Communities의 경우 리소스 콘솔에서는 활성 [관리자가](users.
 >
 >회원이 해당 리소스를 참조하는 리소스와 학습 경로 모두에 등록되어 있는 경우 해당 할당에 단일 리소스와 학습 경로 내의 리소스가 모두 표시됩니다.
 
-
 * **[!UICONTROL 소셜 설정]**
 
    이러한 설정은 학습자가 역량 강화 리소스에 대한 입력을 제공할 수 있는지 여부를 제어합니다. 중재 [설정은](sites-console.md#moderation) 상위 커뮤니티 사이트의 설정입니다.
@@ -389,7 +385,6 @@ AEM Communities의 경우 리소스 콘솔에서는 활성 [관리자가](users.
 >
 >학습 경로와 동일한 수준에서 사용 가능한 리소스만 선택할 수 있습니다. 예를 들어, 그룹에서 만든 학습 경로의 경우 그룹 수준 리소스만 사용할 수 있습니다.커뮤니티 사이트에서 만든 학습 경로의 경우 해당 사이트의 리소스를 학습 경로에 추가할 수 있습니다.
 
-
 * **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
 ### 설정 {#settings-1}
@@ -411,7 +406,6 @@ AEM Communities의 경우 리소스 콘솔에서는 활성 [관리자가](users.
 >학습 경로에서 참조되는 활성 리소스는 동일한 할당자(수강생)가 나열되면 안 됩니다.
 >
 >회원이 활성 리소스와 해당 리소스를 참조하는 학습 경로 모두에 등록되어 있는 경우 해당 할당에 단일 리소스와 학습 경로 내의 리소스가 모두 표시됩니다.
-
 
 ## 리소스 관리 {#managing-a-resource}
 
