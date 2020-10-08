@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 03e3bb3a6843ef19b63a4ed915d9821dd706c3d4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2760'
 ht-degree: 3%
@@ -382,7 +382,6 @@ Analytics에 대해 구현된 새 사용자 지정 구성 요소가 만들어진
 >[!NOTE]
 >
 >저널 구성 요소는 블로그 기능을 구현하는 데 사용됩니다.
-
 
 ### AEM 변수에 Analytics 매핑 {#mapped-analytics-to-aem-variables}
 
