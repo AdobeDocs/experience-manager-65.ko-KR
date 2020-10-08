@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 4%
@@ -25,7 +25,6 @@ ht-degree: 4%
 >[!NOTE]
 >
 >작성 환경에서만 사용할 수 있는 [커뮤니티 사이트](sites-console.md), [커뮤니티 사이트 템플릿](sites.md), [커뮤니티 그룹 템플릿](tools-groups.md) 및 [커뮤니티 기능](functions.md) 의 콘솔입니다.
-
 
 ## 사이트 템플릿 콘솔 {#site-templates-console}
 
@@ -85,7 +84,6 @@ ht-degree: 4%
 >
 >페이지 함수 [](functions.md#page-function)등 다른 모든 함수를 먼저 포함하여 나열해야 합니다.
 
-
 ![사이트 편집기](assets/site-editor.png)
 
 ### 그룹 기능에 대한 그룹 템플릿 {#group-templates-for-groups-function}
@@ -95,7 +93,6 @@ ht-degree: 4%
 >[!CAUTION]
 >
 >Groups 함수는 사이트 구조의 *첫 번째* 함수이거나 유일한 ** 함수여야 합니다.
-
 
 ![사이트 함수](assets/site-functions.png)
 
