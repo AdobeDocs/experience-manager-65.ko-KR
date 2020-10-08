@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 44%
@@ -29,12 +29,11 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 * [AEM Communities 개요](/help/communities/overview.md)
 * [AEM Communities 시작하기](/help/communities/getting-started.md)
-* [활성 AEM Communities 시작하기](/help/communities/getting-started-enablement.md)
+* [활성화를 위한 AEM Communities 시작하기](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
 >작성 환경에 익숙하지 않은 경우 [기본 처리](/help/sites-authoring/basic-handling.md) 및 페이지 작성에 대한 [빠른 안내서에 대한 설명서를 봅니다](/help/sites-authoring/qg-page-authoring.md).
-
 
 ## 사용 가능한 커뮤니티 구성 요소 {#available-communities-components}
 
@@ -82,7 +81,6 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 >[!NOTE]
 >
 >투표 구성 요소는 더 이상 사용할 수 없으며 Experience Manager Communities에서 지원됩니다.
-
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
