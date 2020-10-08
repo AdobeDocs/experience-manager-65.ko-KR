@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 translation-type: tm+mt
-source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 2%
@@ -140,11 +140,8 @@ Follow the steps below (
 >* [JDBC 구성](#configure-jdbc-connections)
 >* [SCORM 구성](#configure-scorm)
 
->
 
-
-
-#### 1단계: SQL 파일 열기 {#step-open-sql-file}
+#### 1단계:SQL 파일 열기 {#step-open-sql-file}
 
 MySQL Workbench
 
@@ -156,7 +153,7 @@ MySQL Workbench
 
 ![scrom-database](assets/scrom-database.png)
 
-#### 2단계: SQL 스크립트 실행 {#step-execute-sql-script}
+#### 2단계:SQL 스크립트 실행 {#step-execute-sql-script}
 
 1단계에서 연 파일의 워크벤치 창에서 스크립트를 실행할 `lightening (flash) icon` 을 선택합니다.
 
@@ -170,7 +167,7 @@ SCORM 데이터베이스를 만드는 `database_scormengine.sql` 스크립트 �
 
 ![scrom-database2](assets/scrom-database2.png)
 
-#### 결과: 형식 엔진 edb {#result-scormenginedb}
+#### 결과:형식 엔진 edb {#result-scormenginedb}
 
 SCHEMAS를 설치하고 새로 고치면 이 항목이 `scormenginedb` 표시됩니다.
 
@@ -195,17 +192,17 @@ AEM과 다른 서버에서 MySQL을 실행하는 경우 JDBC 커넥터의 &#39;l
 
 * 다음 값을 입력합니다.
    * **[!UICONTROL JDBC 드라이버 클래스]**: `com.mysql.jdbc.Driver`
-   * **DBC 연결 URIJ **:`jdbc:mysql://localhost:3306/aem63reporting`MySQL 서버가 &#39;this&#39; AEM 서버와 같지 않을 경우 localhost 대신 서버를 지정합니다.
-   * **[!UICONTROL 사용자 이름]**: &#39;root&#39;가 아닌 경우 MySQL Server에 대해 구성된 사용자 이름을 입력하거나 루트를 입력합니다.
-   * **[!UICONTROL 암호]**: MySQL에 대해 설정된 암호가 없으면 이 필드를 지우거나 MySQL 사용자 이름에 대해 구성된 암호를 입력합니다.
-   * **[!UICONTROL 데이터 소스 이름]**: MySQL 연결에 대해 입력한 이름( [예: &#39;enablement](#new-connection-settings)&#39;).
+   * **DBC 연결 URIJ**: `jdbc:mysql://localhost:3306/aem63reporting` MySQL 서버가 &#39;this&#39; AEM 서버와 같지 않을 경우 localhost 대신 서버를 지정합니다.
+   * **[!UICONTROL 사용자 이름]**:&#39;root&#39;가 아닌 경우 MySQL Server에 대해 구성된 사용자 이름을 입력하거나 루트를 입력합니다.
+   * **[!UICONTROL 암호]**:MySQL에 대해 설정된 암호가 없으면 이 필드를 지우거나 MySQL 사용자 이름에 대해 구성된 암호를 입력합니다.
+   * **[!UICONTROL 데이터 소스 이름]**:MySQL 연결에 대해 입력한 이름( [예: &#39;enablement](#new-connection-settings)&#39;).
 * **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 ## Scorm 구성 {#configure-scorm}
 
 ### AEM Communities ScormEngine 서비스 {#aem-communities-scormengine-service}
 
-AEM Communities ScormEngine 서비스에 대한 OSGi 구성은 **활성 커뮤니티의 MySQL Server 사용을 위해 SCORM을** 구성합니다.
+AEM Communities ScormEngine 서비스에 대한 OSGi 구성은 **역량 강화 커뮤니티에서 MySQL** 서버를 사용하도록 SCORM을 구성합니다.
 
 이 구성은 SCORM 패키지 [가](deploy-communities.md#scorm-package) 설치될 때 나타납니다.
 
@@ -224,12 +221,12 @@ AEM과 다른 서버에서 MySQL을 실행하는 경우 ScormEngine 서비스의
 
 * 다음 매개 변수 값이 [JDBC 연결 구성과 일치하는지](#configurejdbcconnectionspool) 확인합니다.
    * **[!UICONTROL JDBC 연결 URI]**: `jdbc:mysql://localhost:3306/ScormEngineDB` *SCORMEngineDB는* SQL 스크립트의 기본 데이터베이스 이름입니다
-   * **[!UICONTROL 사용자 이름]**: &#39;root&#39;가 아닌 경우 MySQL Server에 대해 구성된 사용자 이름을 입력하거나 루트를 입력합니다.
-   * **[!UICONTROL 암호]**: MySQL에 대해 설정된 암호가 없으면 이 필드를 지우거나 MySQL 사용자 이름에 대해 구성된 암호를 입력하십시오.
+   * **[!UICONTROL 사용자 이름]**:&#39;root&#39;가 아닌 경우 MySQL Server에 대해 구성된 사용자 이름을 입력하거나 루트를 입력합니다.
+   * **[!UICONTROL 암호]**:MySQL에 대해 설정된 암호가 없으면 이 필드를 지우거나 MySQL 사용자 이름에 대해 구성된 암호를 입력하십시오.
 * 다음 매개 변수에 대해:
-   * **[!UICONTROL Scorm 사용자 암호]**: 편집 안 함
+   * **[!UICONTROL Scorm 사용자 암호]**:편집 안 함
 
-      내부용으로만 사용: 이는 AEM Communities에서 scorm 엔진과 통신하는 데 사용하는 특수 서비스 사용자용입니다.
+      내부용으로만 사용:이는 AEM Communities이 scorm 엔진과 통신하는 데 사용하는 특수 서비스 사용자를 위한 것입니다.
 * **[!UICONTROL 저장]**&#x200B;을 선택합니다
 
 ### Adobe Granite CSRF 필터 {#adobe-granite-csrf-filter}
