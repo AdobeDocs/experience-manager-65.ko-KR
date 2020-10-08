@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -28,7 +28,7 @@ SRP(Storage Resource Provider) 및 UGC(User-Generated Content)와의 관계에 �
 
 ## StorageResourceProvider API {#storageresourceprovider-api}
 
-SocialResourceProvider API(SRP API)는 다양한 Sling 리소스 공급자 API의 확장입니다. 페이지 매김 및 원자 증분에 대한 지원이 포함되어 있습니다(집계 및 점수 매김에 유용함).
+SocialResourceProvider API(SRP API)는 다양한 Sling 리소스 공급자 API의 확장입니다. 페이지 매김 및 원자 증가에 대한 지원이 포함되어 있습니다(집계 및 점수 매김에 유용함).
 
 날짜, 도움말, 투표 수 등을 기준으로 정렬할 필요가 있으므로 SCF 구성 요소에 대해 쿼리가 필요합니다. 모든 SRP 옵션에는 버킷에 의존하지 않는 유연한 쿼리 메커니즘이 있습니다.
 
@@ -45,7 +45,6 @@ AEM 6.0 이전 버전에서 업그레이드하는 경우 오픈 소스 도구를
 >이전에는 UGC에 액세스하기 위한 유틸리티가 더 이상 존재하지 않는 SocialUtils 패키지에서 발견되었습니다.
 >
 >대체 유틸리티에 대해서는 SocialUtils [리팩토링을 참조하십시오](socialutils.md).
-
 
 ## UGC에 액세스하기 위한 유틸리티 방법 {#utility-method-to-access-ugc}
 
@@ -74,7 +73,6 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 >
 >경로 resourceToUGCtoragePath()가 반환하는 것은 *ACL 확인에 적합하지* 않습니다 [](srp.md#for-access-control-acls).
 
-
 ## ACL에 액세스하는 유틸리티 메서드 {#utility-method-to-access-acls}
 
 ASRP 및 MSRP와 같은 일부 SRP 구현은 ACL 확인을 제공하지 않는 데이터베이스에 커뮤니티 컨텐츠를 저장합니다. 그림자 노드는 로컬 저장소의 ACL을 적용할 수 있는 위치를 제공합니다.
@@ -101,7 +99,6 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 >[!CAUTION]
 >
 >resourceToACLPath()가 반환하는 경로는 UGC *자체에 액세스하는 데 적합하지* 않습니다 [](#utility-method-to-access-acls) .
-
 
 ## UGC 관련 스토리지 위치 {#ugc-related-storage-locations}
 
@@ -136,4 +133,3 @@ UGC는 두 위치 모두에서 생성되므로 SRP API를 호출하는 [유틸�
 * [스토리지 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
 * [SRP를 사용하여 UGC](accessing-ugc-with-srp.md) 액세스 - 코딩 가이드라인.
 * [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑합니다.
-
