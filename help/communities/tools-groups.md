@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 3%
@@ -33,10 +33,9 @@ ht-degree: 3%
 >
 >작성 환경에서만 사용할 수 있는 [커뮤니티 사이트](/help/communities/sites-console.md), [커뮤니티 사이트 템플릿](/help/communities/sites.md), [커뮤니티 그룹 템플릿](/help/communities/tools-groups.md) 및 [커뮤니티 기능](/help/communities/functions.md) 의 콘솔입니다.
 
-
 ## 그룹 템플릿 콘솔 {#group-templates-console}
 
-AEM Author 환경의 그룹 템플릿 콘솔에 액세스하려면
+AEM 작성자 환경의 그룹 템플릿 콘솔에 액세스하려면:
 
 * 도구 **선택 | 커뮤니티 | 그룹 템플릿,** 전역 탐색
 
@@ -83,7 +82,6 @@ AEM Author 환경의 그룹 템플릿 콘솔에 액세스하려면
 >중첩 그룹 기능은 Communities [FP1에서 사용할 수 있습니다](/help/communities/communities.md#latestfeaturepack).
 >
 >템플릿의 첫 번째 또는 유일한 함수로 Groups 함수를 추가할 수 없습니다.
-
 
 ![그룹 템플릿 편집기](assets/template-editor.png)
 
