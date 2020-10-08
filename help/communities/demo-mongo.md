@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
@@ -74,7 +74,6 @@ ht-degree: 1%
 >
 >AEM *후에* MongoDB가 시작된 경우 모든 **AEM** 인스턴스를 다시 **시작하여** MongoDB에올바르게 연결합니다.
 
-
 ### 데모 제작 옵션:MongoDB 복제본 세트 설정 {#demo-production-option-setup-mongodb-replica-set}
 
 다음 명령은 localhost에서 3개의 노드가 있는 복제본 세트를 설정하는 예입니다.
@@ -133,7 +132,6 @@ Solr 실행 방법은 설치 버전 및 방법에 따라 다를 수 있습니다
 >
 >Solr Console을 사용할 수 없는 경우 &lt;solrinstall>/example/logs 아래에서 로그를 확인하십시오. SOLR이 확인할 수 없는 특정 호스트 이름(예:&quot;user-macbook-pro&quot;).
 이 호스트 이름(예: 127.0.0.1 user-macbook-pro)에 대한 새 항목으로 etc/hosts 파일을 업데이트하면 Solaris가 제대로 시작됩니다.
-
 
 ### SolrCloud {#solrcloud}
 
