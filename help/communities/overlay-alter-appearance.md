@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -61,7 +61,6 @@ comment.hbs 스크립트에서는 각 댓글에 대한 전체 HTML을 만듭니�
 >[!NOTE]
 >
 >더욱 강력한 복제 방식은 패키지 관리자에서 패키지를 만들어 [활성화하](/help/sites-administering/package-manager.md#replicating-packages) 는 것입니다. 패키지를 내보내고 보관할 수 있습니다.
-
 
 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** 를 **[!UICONTROL 선택하고 트리]**&#x200B;활성화를클릭합니다.
 
