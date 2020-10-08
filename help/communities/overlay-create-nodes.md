@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 6%
@@ -25,7 +25,6 @@ ht-degree: 6%
 >[!CAUTION]
 >
 >/apps 폴더의 내용은 그대로 유지한 상태에서 다시 설치하거나 업그레이드하면 /libs 폴더를 삭제하거나 교체할 수 있으므로 /libs 폴더의 내용은 편집되지 않습니다.
-
 
 작성자 인스턴스의 [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) 를 사용하면 먼저 /libs 폴더에 있는 겹쳐진 구성 요소의 경로와 동일한 경로를 /apps 폴더에 만들기 시작합니다.
 
@@ -82,9 +81,6 @@ ht-degree: 6%
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
->
-
 
 
 오버레이의 자체 `Type`(속성 `sling:resourceType`)는 /apps에서 찾을 수 없는 모든 콘텐츠를 /libs에서 찾을 수 있도록 상대 자체 참조여야 합니다.
