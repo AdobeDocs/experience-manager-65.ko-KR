@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: 8738989c18c6f09452da95d0b9f2c05b0a2a1a81
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 2%
@@ -45,13 +45,13 @@ ht-degree: 2%
 
 익명의 사이트 방문자는 이 비공개 활성 커뮤니티 사이트에 대한 로그인 페이지가 즉시 표시됩니다. Facebook 또는 Twitter에 직접 등록하거나 로그인할 수 있는 옵션은 없습니다.
 
-이 홈 페이지에는 4개의 메뉴 항목이 표시됩니다. `Assignments, Ski Catalog, What's New` 로그인하지 `Discussions`않으면 연결할 수 없습니다.
+이 홈 페이지에는 다음 4개의 메뉴 항목이 표시됩니다. `Assignments, Ski Catalog, What's New` 로그인하지 `Discussions`않으면 연결할 수 없습니다.
 
 >[!NOTE]
 >
 >사이트 방문자가 직접 등록하지 않아도 활성 사이트에 대한 익명 액세스 권한을 부여할 수 있습니다.
+>
 >활성 리소스가 로 설정되어 `show in catalog` 있는 `allow anonymous access`경우 익명 사이트 방문자가 카탈로그의 리소스를 볼 수 있습니다.
-
 
 ### JCR에서 익명 액세스 차단 {#prevent-anonymous-access-on-jcr}
 
@@ -114,7 +114,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 [ *스키 수업 1]을* 선택하면 활성 리소스의 세부 사항 페이지가 열립니다.
 
-세부 사항 페이지에서 구성원은 학습, [평가](rating.md) , [댓글](comments.md)추가 등의 작업을 수행할 수 있습니다. 모든 멤버 활동이 사이트의 새로운 기능 섹션에 반영됩니다.
+세부 사항 페이지에서 구성원은 학습, 강의 [평가](rating.md) , [댓글](comments.md)추가 등의 작업을 수행할 수 있습니다. 모든 멤버 활동이 사이트의 새로운 기능 섹션에 반영됩니다.
 
 활성 리소스와의 상호 작용은 작성 환경에서 액세스할 수 있는 보고서 섹션에 표시됩니다.
 
@@ -182,7 +182,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 * 모든 지원 리소스 및 학습 경로
 * 특정 역량 강화 리소스 또는 학습 경로
 
-커뮤니티, **보고서[콘솔](reports.md)**로 이동하고 다음을 따라 보고서를 생성합니다.
+커뮤니티, **보고서[콘솔](reports.md)**&#x200B;로 이동하고 다음을 따라 보고서를 생성합니다.
 
 * 역량 강화 리소스 및 학습 경로 지정
 * 특정 기간 동안 커뮤니티 사이트에 게시물 게시
@@ -209,7 +209,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 * 모든 리소스의 요약 `Report` 아이콘을 선택합니다.
 * 리소스를 선택한 다음 해당 리소스에 대한 보고서의 `Report` 아이콘을 선택합니다.
 
-Adobe Analytics의 데이터를 표시하기에는 너무 이르며, 이 데이터는 1시간에서 12시간이 걸릴 수 있습니다. 그러나 기본 SCORM 보고는 이미 사용할 수 있습니다.
+나타나는 데 1~12시간이 걸릴 수 있는 Adobe Analytics의 데이터를 표시하기에는 너무 이른 것 같습니다. 그러나 기본 SCORM 보고는 이미 사용할 수 있습니다.
 
 #### 스키 레슨 리소스 보고서 {#ski-lessons-resource-report}
 
@@ -251,7 +251,7 @@ Adobe Analytics의 데이터를 표시하기에는 너무 이르며, 이 데이�
 
 * 작성자의 경우 관리자 권한으로 로그인합니다.
 * 커뮤니티 > **[!UICONTROL 보고서]** **** > **[!UICONTROL 보기]**&#x200B;보고서로이동합니다.
-* 풀다운 메뉴 **에서&#x200B;**사이트를 선택합니다(선택`Enablement Tutorial`).
+* 풀다운 메뉴 **에서** 사이트를 선택합니다(선택 `Enablement Tutorial`).
 
 * [ **[!UICONTROL 콘텐트 유형]** ]을 선택합니다(선택 `all`).
 
