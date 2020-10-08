@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 2%
@@ -47,7 +47,6 @@ AEM Communities의 경우
 >[!NOTE]
 >
 >AEM에 익숙하지 않은 경우 [기본 처리](../../help/sites-authoring/basic-handling.md) 및 페이지 작성에 대한 [빠른 안내서에 대한 설명서를 봅니다](../../help/sites-authoring/qg-page-authoring.md).
-
 
 ## 최신 커뮤니티 릴리스 설치 {#install-latest-communities-release}
 
@@ -123,7 +122,6 @@ AEM Communities 시작하기 Tutorials에 대해 만든 태그의 샘플 패키�
 >
 >대신 나중에 구성원 그룹에 [할당됩니다](enablement-create-site.md#assignuserstocommunityenablemembersgroup).
 
-
 ### 라일리 테일러 - 등록자 {#riley-taylor-enrollee}
 
 [수강생 그룹(커뮤니티 스키 클래스 그룹)에 추가될 구성원을](members.md#create-new-member) 만듭니다.
@@ -178,7 +176,6 @@ AEM Communities 시작하기 Tutorials에 대해 만든 태그의 샘플 패키�
 >[!NOTE]
 >
 >커뮤니티 사이트를 만드는 동안 기존 구성원 및 그룹을 커뮤니티 사이트의 구성원 그룹에 추가할 수 있습니다.
-
 
 ## 커뮤니티 관리자 역할 {#community-administrator-role}
 
