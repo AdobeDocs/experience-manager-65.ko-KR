@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 6%
@@ -22,7 +22,7 @@ ht-degree: 6%
 
 ## 개요 {#overview}
 
-AEM Communities을 사용하면 포럼, 사용자 그룹, 블로그, Q&amp;A, 캘린더, 주석, 검토, 투표, 평점, 할당 등의 커뮤니티 기능을 간단하게 만들고 사용자 정의할 수 있습니다. 이러한 기능으로 인해 UGC(사용자 생성 콘텐츠)가 게시 환경에 입력됩니다.
+AEM Communities은 포럼, 사용자 그룹, 블로그, Q&amp;A, 캘린더, 주석, 검토, 투표, 평점 및 할인과 같은 커뮤니티 기능의 작성 및 사용자 지정을 간소화합니다. 이러한 기능으로 인해 UGC(사용자 생성 콘텐츠)가 게시 환경에 입력됩니다.
 
 커뮤니티 사이트 [의 기본은](overview.md#communitiessites) 소셜 구성 요소 프레임워크 [](scf.md) (SCF)입니다. 커뮤니티 사이트 만들기는 [커뮤니티 기능으로 구성된](sites-console.md) 커뮤니티 사이트 템플릿 [선택으로 시작합니다](functions.md).
 
@@ -30,27 +30,26 @@ AEM Communities을 사용하면 포럼, 사용자 그룹, 블로그, Q&amp;A, �
 
 * [AEM Communities 개요](overview.md)
 * [AEM Communities 시작하기](getting-started.md)
-* [활성 AEM Communities 시작하기](getting-started-enablement.md)
+* [활성화를 위한 AEM Communities 시작하기](getting-started-enablement.md)
 
 >[!NOTE]
 > 
 >최신 릴리스를 항상 [최신 상태로 유지하는 것이 좋습니다](deploy-communities.md#latest-releases).
 
-
 ## 권장 배포 {#recommended-deployments}
 
-* [커뮤니티 컨텐츠 스토리지](working-with-srp.md): UGC 일반 스토어에 사용 가능한 SRP 선택 사항에 대해 설명합니다.
-* [커뮤니티를 위한 권장 토폴로지](topologies.md): 사용 사례 및 SRP 선택에 따라 토폴로지 논의
+* [커뮤니티 컨텐츠 스토리지](working-with-srp.md):UGC 일반 스토어에 사용 가능한 SRP 선택 사항에 대해 설명합니다.
+* [커뮤니티를 위한 권장 토폴로지](topologies.md):사용 사례 및 SRP 선택에 따라 토폴로지 논의
 
 ## 소셜 구성 요소 프레임워크 {#social-component-framework}
 
-* [소셜 구성 요소 프레임워크](scf.md): 프레임워크 및 API 개요.
-* [SCF Handlebars Helpers](handlebars-helpers.md): 기본 도움말 도우미 및 사용자 지정 도움말을 작성하는 방법.
-* [클라이언트측 사용자 정의](client-customize.md): 브라우저에서 실행되는 코드 사용자 지정
-* [서버측 사용자 정의](server-customize.md): 서버에서 실행되는 코드 사용자 지정
-* [SRP(Storage Resource Provider)](srp.md): 커뮤니티 콘텐츠 저장소 개요.
-* [코딩 지침](code-guide.md): 지침, 팁 및 기법.
-* [커뮤니티 구성 요소 안내서](components-guide.md): 인터랙티브한 개발 툴
+* [소셜 구성 요소 프레임워크](scf.md):프레임워크 및 API 개요.
+* [SCF Handlebars Helpers](handlebars-helpers.md):기본 도움말 도우미 및 사용자 지정 도움말을 작성하는 방법.
+* [클라이언트측 사용자 정의](client-customize.md):브라우저에서 실행되는 코드 사용자 지정
+* [서버측 사용자 정의](server-customize.md):서버에서 실행되는 코드 사용자 지정
+* [SRP(Storage Resource Provider)](srp.md):커뮤니티 콘텐츠 저장소 개요.
+* [코딩 지침](code-guide.md):지침, 팁 및 기법.
+* [커뮤니티 구성 요소 안내서](components-guide.md):인터랙티브한 개발 툴
 
 ## 구성 요소, 함수 및 기능 필수 {#component-function-and-feature-essentials}
 
