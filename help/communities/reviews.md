@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 3%
@@ -27,7 +27,6 @@ ht-degree: 3%
 >[!NOTE]
 >
 >검토의 익명 게시는 지원되지 않습니다. 사이트 방문자는 등록(회원이 되기)하고 로그인해야 참여합니다. 로그인한 방문자는 언제든지 검토를 업데이트할 수 있습니다.
-
 
 ## Adding a Review to a Page {#adding-a-review-to-a-page}
 
@@ -75,7 +74,6 @@ ht-degree: 3%
 >
 >허용된 등급 **[!UICONTROL 탭에 지정되지 않은]** 필수 등급 **** 탭에 항목이 입력되는 경우등급 지정 항목에 포함되지 않습니다.
 
-
 검토 **[!UICONTROL 탭]** 아래에서 검토 처리 방법을 지정합니다.
 
 ![리뷰 수](assets/configure-review3.png)
@@ -92,7 +90,7 @@ ht-degree: 3%
 
    이 확인란을 선택하면 파일 첨부 파일을 업로드하여 검토할 수 있습니다. 기본값은 선택 취소입니다.
 
-* **최대 파일 크기&#x200B;**
+* **최대 파일 크기**
 
    파일 업로드 **[!UICONTROL 허용이 선택된 경우에만]** 관련성이 있습니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 10MB입니다.
 
@@ -102,7 +100,7 @@ ht-degree: 3%
 
 * **[!UICONTROL 허용되는 파일 유형]**
 
-   파일 업로드 **[!UICONTROL 허용이 선택된 경우에만]** 관련성이 있습니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형이 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   파일 업로드 **[!UICONTROL 허용이 선택된 경우에만]** 관련성이 있습니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 형식을 지정하는 경우 지정하지 않은 파일 유형은 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **[!UICONTROL 리치 텍스트 편집기]**
 
@@ -169,7 +167,6 @@ ht-degree: 3%
 >[!NOTE]
 >
 >&quot;평균&quot;은 요약되는 검토의 허용된 등급 탭에 나열된 첫 번째 항목에 대한 투표를 반영합니다.
-
 
 ### 검토 요약 구성(표시) {#configuring-reviews-summary-display}
 
