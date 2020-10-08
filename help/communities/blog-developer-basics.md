@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -30,7 +30,6 @@ AEM 6.1 Communities의 블로그는 커뮤니티 활동입니다. 이제 블로�
 >[!NOTE]
 >
 >블로그 기능의 기본 인프라는 저널 기능입니다.
-
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
