@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '3292'
 ht-degree: 4%
@@ -33,7 +33,6 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 >[!NOTE]
 >
 >커뮤니티 사이트 [,](/help/communities/sites-console.md)커뮤니티 사이트 템플릿 [,](/help/communities/sites.md)커뮤니티 그룹 템플릿 [및](/help/communities/tools-groups.md) 커뮤니티 기능 [](/help/communities/functions.md) 을 만들기 위한 기본 커뮤니티 메뉴는 작성 환경에서만 사용할 수 있습니다.
-
 
 ## 전제 조건 {#prerequisites}
 
@@ -62,7 +61,7 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 
 새 커뮤니티 사이트를 만들려면 만들기 **아이콘을** 선택합니다.
 
-기존 커뮤니티 사이트에 액세스하려면 중첩된 그룹을 작성, 수정, 게시, 내보내기 또는 추가할 목적으로 사이트의 폴더 아이콘을 선택합니다.
+기존 커뮤니티 사이트에 액세스하려면, 중첩된 그룹을 작성, 수정, 게시, 내보내기 또는 추가할 목적으로 사이트의 폴더 아이콘을 선택합니다.
 
 예를 들어 다음 이미지는 두 커뮤니티 사이트의 폴더를 표시하는 기본 커뮤니티 사이트 콘솔을 보여 줍니다. [활성화](/help/communities/getting-started-enablement.md) 및 [참여](/help/communities/getting-started.md):
 
@@ -180,7 +179,6 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 >
 >이 작업은 작성 환경에 대해 ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` 를 활성화하여 수행됩니다.
 
-
 #### USER MANAGEMENT {#user-management}
 
 ![createsitesettings](assets/createsitesettings.png)
@@ -190,7 +188,6 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 >역량 강화 [커뮤니티 사이트는](/help/communities/overview.md#enablement-community) 비공개로 유지하는 것이 좋습니다(자세한 내용은 계정 담당자에게 문의).
 >
 >익명의 사이트 방문자가 액세스가 거부되면 커뮤니티 사이트는 비공개 사이트이고, 자가 등록을 할 수 없으며, 소셜 로그인을 사용할 수 없습니다.
-
 
 * **사용자 등록 허용**
 
@@ -227,7 +224,6 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 >**소셜 로그인 허용**
 >
 >샘플 Facebook 및 Twitter 구성이 존재하거나 선택할 수 있지만 [제작 환경의](/help/sites-administering/production-ready.md)경우 사용자 정의 Facebook 및 Twitter 애플리케이션을 만들어야 합니다. Facebook 및 [Twitter로 소셜 로그인을 참조하십시오](/help/communities/social-login.md).
-
 
 #### TAGGING {#tagging}
 
@@ -403,7 +399,6 @@ Communities Sites 콘솔에서는 다음 항목에 액세스할 수 있습니다
 >
 >AEM에 익숙하지 않은 경우 [기본 처리](/help/sites-authoring/basic-handling.md) 및 페이지 작성에 대한 [빠른 안내서에 대한 설명서를 봅니다](/help/sites-authoring/qg-page-authoring.md).
 
-
 ## 사이트 속성 수정 {#modifying-site-properties}
 
 ![편집 사이트](assets/edit-site.png)
@@ -450,7 +445,6 @@ BASIC 패널에서 다음을 수정할 수 있습니다.
 >
 >맨 위에 있는 함수를 제외하고 사이트 구조에서 모든 함수의 순서를 변경할 수 있습니다. 따라서 커뮤니티 사이트의 홈 페이지는 변경할 수 없습니다.
 
-
 >[!CAUTION]
 >
 >* 표시 제목은 부작용없이 변경할 수 있지만 커뮤니티 사이트에 속하는 커뮤니티 함수의 URL 이름은 편집하지 않는 것이 좋습니다.
@@ -458,13 +452,11 @@ BASIC 패널에서 다음을 수정할 수 있습니다.
 >
 예를 들어, URL의 이름을 바꾸면 기존 UGC가 이동하지 않으므로 &#39;손실&#39; UGC가 영향을 받습니다.
 
-
 >[!CAUTION]
 >
 >그룹 함수는 사이트 구조의 *첫 번째* 함수이거나 유일한 ** 함수여야 합니다.
 >
 >페이지 함수 [](/help/communities/functions.md#page-function)등 다른 모든 함수를 먼저 포함하여 나열해야 합니다.
-
 
 #### 예:커뮤니티 사이트 구조에 카탈로그 함수 추가 {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -551,7 +543,6 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 >
 >
 가 만들어지면, 적용된 [Facebook 클라우드](/help/communities/social-login.md#createafacebookcloudservice) 서비스를 구성하여 이 그룹에 사용자를 추가해야 합니다.
-
 
 ## 인증 구성 오류 {#configure-for-authentication-error}
 
