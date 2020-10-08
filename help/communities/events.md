@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 4%
@@ -123,19 +123,15 @@ ht-degree: 4%
 
 사용자 지정 구성 요소의 경우, [SocialEvent 개요](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) 클래스를 확장하여 구성 요소의 이벤트 `actions`를 `topic`기록해야 합니다.
 
-사용자 지정 이벤트는 메서드를 재정의하여 각 `getVerb()` 에 대해 적절한 `verb`결과가 반환됩니다 `action`. 작업에 대해 `verb` 반환되는 값은 일반적으로 사용되는 작업(예: `POST`) 또는 구성 요소에 대한 전문 작업(예: `ADD RATING`) 중 하나일 수 있습니다. *와* 사이에는 `actions`N1 `verbs`관계가 있다.
+사용자 지정 이벤트는 각 이벤트에 대해 적절한 값 `getVerb()` 이 반환되도록 메서드 `verb`를 재정의합니다 `action`. 작업에 대해 `verb` 반환되는 값은 일반적으로 사용되는 작업(예: `POST`) 또는 구성 요소에 대한 전문 작업(예: `ADD RATING`) 중 하나일 수 있습니다. *와* 사이에는 `actions`N1 `verbs`관계가 있다.
 
 >[!NOTE]
 >
 >사용자 지정 확장이 제품의 기존 구현보다 낮은 등급으로 등록되었는지 확인합니다.
 
-
 ### 사용자 지정 구성 요소 이벤트에 대한 의사 코드 {#pseudo-code-for-custom-component-event}
 
-[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
-[com.adobe.cq.sosocial.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
-[com.adobe.granite.activitystreams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
-[com.adobe.granite.activitystreams.Verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
+[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);[com.adobe.cq.sosocial.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);[com.adobe.granite.activitystreams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);[com.adobe.granite.activitystreams.Verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
 
 ```java
 package com.mycompany.recipe;
