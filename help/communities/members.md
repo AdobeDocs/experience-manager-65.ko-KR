@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -39,7 +39,6 @@ AEM Communities 기능을 사용하려면 게시 환경에서 커뮤니티에 �
 >
 >샘플 컨텐츠가 배포되고 활성화되어 있으면 많은 샘플 사용자가 작성자 및 게시 환경 모두에 존재합니다. 이러한 사용자는 [nosamplecontent runmode를 사용하여 실행할 때 존재하지 않습니다](../../help/sites-administering/production-ready.md).
 
-
 ## 멤버 콘솔 {#members-console}
 
 작성 환경에서 게시 환경에 등록된 멤버를 관리하기 위한 멤버 콘솔에 도달하려면 다음을 수행합니다.
@@ -49,7 +48,6 @@ AEM Communities 기능을 사용하려면 게시 환경에서 커뮤니티에 �
 >[!CAUTION]
 >
 >터널 서비스가 활성화되지 않으면 [멤버 콘솔을](deploy-communities.md#tunnel-service-on-author) 사용할 수 없습니다.
-
 
 ![member-console1](assets/member-console1.png)
 
@@ -66,7 +64,7 @@ AEM Communities 기능을 사용하려면 게시 환경에서 커뮤니티에 �
 
 ### 멤버 통계 {#member-statistics}
 
-사용자가 Adobe Analytics이 활성화된 하나 이상의 커뮤니티 사이트 `Views`에 속해 있을 때 표시, `Posts``Follows` 및 `Likes` 업데이트되는 열입니다 [](sites-console.md#analytics).
+사용자가 Adobe Analytics이 `Views`활성화된 하나 이상의 커뮤니티 사이트 `Posts`에 속해 있을 때 표시 `Follows` , `Likes`[및](sites-console.md#analytics)업데이트됩니다.
 
 ### CSV 내보내기 {#export-csv}
 
@@ -174,7 +172,6 @@ AEM Communities 기능을 사용하려면 게시 환경에서 커뮤니티에 �
 >[!CAUTION]
 >
 >터널 서비스가 활성화되지 않으면 그룹 콘솔을 사용할 수 [없습니다](deploy-communities.md#tunnel-service-on-author) .
-
 
 ### 새 그룹 만들기 {#create-new-group}
 
