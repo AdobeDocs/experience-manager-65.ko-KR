@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: c77a353d43a3a6f33dffecf0b4e7672ed3e2dd3f
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -37,7 +37,6 @@ AEM 인스턴스와 대화형 커뮤니티 구성 요소 안내서를 사용하�
 >일반 작성 정보는 페이지 작성에 대한 [빠른 안내서를 참조하십시오](../../help/sites-authoring/qg-page-authoring.md).
 >
 >AEM에 익숙하지 않은 경우 [기본 처리에 대한 설명서를 참조하십시오](../../help/sites-authoring/basic-handling.md).
-
 
 ### 디자인 모드 시작 {#entering-design-mode}
 
