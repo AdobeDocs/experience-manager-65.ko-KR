@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4742'
 ht-degree: 2%
@@ -788,10 +788,10 @@ Adobe이 유지 관리하는 공개적으로 사용 가능한 Ultramarine 테마
 
 1. 서비스 정의를 열고 선택한 서비스가 워크플로우 내에서 호출되도록 합니다.
 
->[!NOTE]
-사용자가 Configuration Manager 페이지 내에서 서비스를 사용하도록 설정했다고 해도 사용자가 요청된 외부 서비스와 통신하기 위해 서비스 구성을 설정해야 합니다.
+   >[!NOTE]
+   사용자가 Configuration Manager 페이지 내에서 서비스를 사용하도록 설정했다고 해도 사용자가 요청된 외부 서비스와 통신하기 위해 서비스 구성을 설정해야 합니다.
 
-![정부 양식 패키지](assets/aftia-configuration-options.jpg)
+   ![정부 양식 패키지](assets/aftia-configuration-options.jpg)
 
 1. 완료되면 저장 단추를 클릭하여 설정을 저장합니다.
 
