@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 5%
@@ -59,5 +59,3 @@ JCR은 작성 및 게시 환경에서 공유되는 공용 저장소가 *아닙�
 >[!NOTE]
 >
 >아래 노드가 없으면 기본 JCR 스토어 `srpc` 를 `/etc/socialconfig` 나타냅니다 [](jsrp.md).
-
-
