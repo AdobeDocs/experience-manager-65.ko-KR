@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 2%
@@ -92,8 +92,8 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 
 >[!NOTE]
 >
 >**속성 이름 예**
+>
 >표시된 모든 속성 이름(예: **0050** 및 **0170**)은 기존 디스패처 내에 맞게 조정되어야 합니다.모든 구성 파일.
-
 
 다음 항목은 특히 모든 거부 항목 뒤에 /filter 섹션 끝에 추가해야 합니다.
 
