@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 5%
@@ -34,7 +34,6 @@ ht-degree: 5%
 >
 >댓글의 익명 게시는 지원되지 않습니다. 사이트 방문자는 등록(회원이 되기)하고 로그인해야 참여합니다.
 
-
 ### 페이지에 주석 추가 {#adding-comments-to-a-page}
 
 작성 모드에서 페이지에 `Comments` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여
@@ -52,7 +51,6 @@ ht-degree: 5%
 >[!NOTE]
 >
 >한 페이지에 하나의 `Comments` 구성 요소만 있을 수 있습니다. 블로그, 일정, 포럼, QnA 및 검토와 같은 여러 커뮤니티 기능에는 이미 댓글이 포함되어 있습니다.
-
 
 ### 주석 구성 {#configuring-comments}
 
