@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 3%
@@ -34,7 +34,6 @@ SRP 옵션 [및 권장 토폴로지](working-with-srp.md#characteristics-of-srp-
 >[!NOTE]
 >
 >기본 스토리지 구성은 이제 etc path(경로`/conf/global/settings/community/srpc/defaultconfiguration`) 대신 conf 경로(`/etc/socialconfig/srpc/defaultconfiguration`)에 저장됩니다. 예상대로 기본 [srp를](#zerodt-migration-steps) 작동하도록 하려면 마이그레이션 단계를 따라야 합니다.
-
 
 ## 관계형 데이터베이스 구성 {#relational-database-configuration}
 
