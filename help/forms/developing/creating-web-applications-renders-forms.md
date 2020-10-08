@@ -1,6 +1,6 @@
 ---
-title: 양식을 렌더링하는 웹 애플리케이션 만들기
-seo-title: 양식을 렌더링하는 웹 애플리케이션 만들기
+title: Forms을 렌더링하는 웹 애플리케이션 만들기
+seo-title: Forms을 렌더링하는 웹 애플리케이션 만들기
 description: 'null'
 seo-description: 'null'
 uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 0%
@@ -19,15 +19,15 @@ ht-degree: 0%
 ---
 
 
-# 양식을 렌더링하는 웹 애플리케이션 만들기 {#creating-web-applications-thatrenders-forms}
+# Forms을 렌더링하는 웹 애플리케이션 만들기 {#creating-web-applications-thatrenders-forms}
 
-## 양식을 렌더링하는 웹 애플리케이션 만들기 {#creating-web-applications-that-renders-forms}
+## Forms을 렌더링하는 웹 애플리케이션 만들기 {#creating-web-applications-that-renders-forms}
 
-Java 서블릿을 사용하여 양식 서비스를 호출하고 양식을 렌더링하는 웹 기반 응용 프로그램을 만들 수 있습니다. Java™ 서블릿을 사용하면 프로세스의 반환 값을 클라이언트 웹 브라우저에 작성할 수 있다는 이점이 있습니다. 즉, Java 서블릿을 양식을 반환하는 Forms 서비스와 클라이언트 웹 브라우저 간의 링크로 사용할 수 있습니다.
+Java 서블릿을 사용하여 Forms 서비스를 호출하고 양식을 렌더링하는 웹 기반 응용 프로그램을 만들 수 있습니다. Java™ 서블릿을 사용하면 프로세스의 반환 값을 클라이언트 웹 브라우저에 작성할 수 있다는 이점이 있습니다. 즉, Java 서블릿을 양식을 반환하는 Forms 서비스와 클라이언트 웹 브라우저 간의 링크로 사용할 수 있습니다.
 
 >[!NOTE]
 >
->이 섹션에서는 Forms 서비스를 호출하고 조각을 기반으로 양식을 렌더링하는 Java 서블릿을 사용하는 웹 기반 응용 프로그램을 만드는 방법에 대해 설명합니다. 조각 기반 [양식 렌더링을 참조하십시오](/help/forms/developing/rendering-forms-based-fragments.md).
+>이 섹션에서는 Forms 서비스를 호출하고 조각을 기반으로 양식을 렌더링하는 Java 서블릿을 사용하는 웹 기반 응용 프로그램을 만드는 방법에 대해 설명합니다. (조각에 [따라 Forms 렌더링을 참조하십시오](/help/forms/developing/rendering-forms-based-fragments.md).)
 
 Java 서블릿을 사용하여 고객이 데이터를 보고 양식에 입력할 수 있도록 클라이언트 웹 브라우저에 양식을 작성할 수 있습니다. 양식에 데이터를 채우고 나면 웹 사용자가 양식에 있는 제출 단추를 클릭하여 데이터를 검색하고 처리할 수 있는 Java 서블릿으로 정보를 다시 보냅니다. 예를 들어 데이터를 다른 프로세스로 전송할 수 있습니다.
 
@@ -45,13 +45,13 @@ Java 서블릿을 사용하여 고객이 데이터를 보고 양식에 입력할
 
 >[!NOTE]
 >
->조각을 기반으로 양식 디자인을 만드는 방법에 대한 자세한 내용은 [양식 디자이너를 참조하십시오](https://www.adobe.com/go/learn_aemforms_designer_63).
+>조각을 기반으로 양식 디자인을 만드는 방법에 대한 자세한 내용은 [Forms 디자이너를 참조하십시오](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **샘플 파일**
 
 이 섹션에서는 다음 위치에 위치할 수 있는 샘플 파일을 사용합니다.
 
-&lt;*Forms Designer 설치 디렉토리*>/Samples/Forms/Purchase Order/Form Fragments
+&lt;*Forms 디자이너 설치 디렉토리*>/Samples/Forms/Purchase Order/Form Fragments
 
 여기서 &lt;*install directory*>는 설치 경로입니다. 클라이언트 응용 프로그램의 목적으로 Purchase Order Dynamic.xdp 파일이 이 설치 위치에서 복사되어 Applications/FormsApplication이라는 Forms 응용 프로그램에 *배포되었습니다*. Purchase Order Dynamic.xdp 파일은 FormsFolder라는 폴더에 있습니다. 마찬가지로 다음 그림과 같이 조각이라는 폴더에 조각이 배치됩니다.
 
@@ -63,7 +63,7 @@ Purchase Order Dynamic.xdp 양식 디자인에 액세스하려면 양식 이름 
 
 >[!NOTE]
 >
->워크벤치를 사용하여 Forms 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [워크벤치 도움말을 참조하십시오](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>워크벤치를 사용하여 Forms 애플리케이션을 만드는 방법에 대한 자세한 내용은 [워크벤치 도움말을 참조하십시오](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 ### 단계 요약 {#summary-of-steps}
 
@@ -107,19 +107,19 @@ Forms 서비스를 호출할 수 있는 Java 서블릿을 포함하는 웹 응�
 
 **프로젝트에 Java 서블릿을 추가하려면:**
 
-1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 `FragmentsWebApplication` 새로 만들기 **>** 기타 **를 선택합니다**.
+1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 `FragmentsWebApplication` 새로 만들기 **>** 기타 **를 선택합니다**.
 1. 웹 **폴더를** 확장하고 서블릿을 **선택한**&#x200B;다음 **을 클릭합니다**.
 1. 서블릿 만들기 대화 상자에서 서블릿 이름 `RenderFormFragment` 을 입력한 다음 **마침을 클릭합니다**.
 
 **프로젝트에 HTML 페이지를 추가하려면:**
 
-1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 `FragmentsWebApplication` 새로 만들기 **>** 기타 **를 선택합니다**.
+1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 `FragmentsWebApplication` 새로 만들기 **>** 기타 **를 선택합니다**.
 1. **웹** 폴더를 확장하고 **HTML을**&#x200B;선택한 다음 **다음을**&#x200B;클릭합니다.
 1. 새 HTML 대화 상자에서 파일 이름 `index.html` 을 입력한 다음 마침을 **클릭합니다**.
 
 >[!NOTE]
 >
->Java 서블릿을 호출하는 HTML 페이지 만들기에 대한 자세한 내용은 `RenderFormFragment` 웹 페이지[만들기를 참조하십시오](/help/forms/developing/rendering-forms.md#creating-the-web-page).
+>Java 서블릿을 호출하는 HTML 페이지 만들기에 대한 자세한 내용은 웹 페이지 `RenderFormFragment` 만들기를 참조하십시오 [](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
 ### 서블릿에 대한 Java 응용 프로그램 논리 생성 {#creating-java-application-logic-for-the-servlet}
 
@@ -148,14 +148,14 @@ Forms 서비스 API를 사용하여 조각을 기반으로 양식을 렌더링�
 1. 생성자를 사용하여 개체를 `FormsServiceClient` 만들고 개체를 `ServiceClientFactory` 전달합니다.
 1. 생성자를 사용하여 URI 값을 저장하는 `URLSpec` 객체를 만듭니다.
 1. 객체의 `URLSpec` `setApplicationWebRoot` 메서드를 호출하고 응용 프로그램의 웹 루트를 나타내는 문자열 값을 전달합니다.
-1. 개체의 `URLSpec` `setContentRootURI` 메서드를 호출하고 콘텐츠 루트 URI 값을 지정하는 문자열 값을 전달합니다. 양식 디자인과 조각이 컨텐츠 루트 URI에 있는지 확인합니다. 그렇지 않으면 Forms 서비스에서 예외가 발생합니다. AEM Forms 리포지토리를 참조하려면 을 지정합니다 `repository://`.
+1. 개체의 `URLSpec` `setContentRootURI` 메서드를 호출하고 콘텐츠 루트 URI 값을 지정하는 문자열 값을 전달합니다. 양식 디자인과 조각이 컨텐츠 루트 URI에 있는지 확인합니다. 그렇지 않을 경우 Forms 서비스는 예외를 throw합니다. AEM Forms 리포지토리를 참조하려면 을 지정합니다 `repository://`.
 1. 개체의 `URLSpec` 메서드를 `setTargetURL` 호출하고 양식 데이터가 게시된 위치에 대상 URL 값을 지정하는 문자열 값을 전달합니다. 양식 디자인에서 대상 URL을 정의하는 경우 빈 문자열을 전달할 수 있습니다. 계산을 수행하기 위해 양식이 전송되는 URL을 지정할 수도 있습니다.
 1. 개체의 `FormsServiceClient` 메서드를 `renderPDFForm` 호출하고 다음 값을 전달합니다.
 
    * 파일 이름 확장자를 포함하여 양식 디자인 이름을 지정하는 문자열 값.
    * 양식과 병합할 데이터가 포함된 `com.adobe.idp.Document` 개체(2단계에서 생성됨).
    * 런타임 옵션을 저장하는 `PDFFormRenderSpec` 개체입니다. 자세한 내용은 [AEM Forms API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * 조각을 기반으로 양식을 렌더링하기 위해 Forms 서비스에 필요한 URI 값이 포함된 `URLSpec` 개체
+   * 조각을 기반으로 양식을 렌더링하는 데 필요한 URI 값이 포함된 `URLSpec` 개체
    * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 선택 매개 변수이며 양식에 파일을 첨부하지 않으려는 `null` 경우 지정할 수 있습니다.
 
    이 `renderPDFForm` 메서드는 클라이언트 웹 브라우저에 작성해야 하는 양식 데이터 스트림을 포함하는 `FormsResult` 개체를 반환합니다.
@@ -307,7 +307,7 @@ Forms 서비스 API를 사용하여 조각을 기반으로 양식을 렌더링�
 
 ### 웹 페이지 만들기 {#creating-the-web-page}
 
-index.html 웹 페이지는 Java 서블릿에 대한 시작 지점을 제공하며 Forms 서비스를 호출합니다. 이 웹 페이지는 두 개의 라디오 버튼과 제출 단추가 포함된 기본 HTML 양식입니다. 라디오 단추 이름은 라디오입니다. 사용자가 전송 단추를 클릭하면 양식 데이터가 `RenderFormFragment` Java 서블릿에 게시됩니다.
+index.html 웹 페이지는 Java 서블릿에 대한 시작 지점을 제공하고 Forms 서비스를 호출합니다. 이 웹 페이지는 두 개의 라디오 버튼과 제출 단추가 포함된 기본 HTML 양식입니다. 라디오 단추 이름은 라디오입니다. 사용자가 전송 단추를 클릭하면 양식 데이터가 `RenderFormFragment` Java 서블릿에 게시됩니다.
 
 Java 서블릿은 다음 Java 코드를 사용하여 HTML 페이지에서 게시되는 데이터를 캡처합니다.
 
@@ -379,11 +379,11 @@ Forms 서비스를 호출하는 Java 서블릿을 배포하려면 웹 응용 프
 
 1. 프로젝트 **탐색기** 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 내보내기 `FragmentsWebApplication` > **WAR 파일** 을 **선택합니다**.
 1. 웹 **모듈** 텍스트 상자에 Java 프로젝트 `FragmentsWebApplication` 의 이름을 입력합니다.
-1. [ **대상** ] 텍스트 상자 `FragmentsWebApplication.war`**에서 파일 이름&#x200B;**을 입력하고 WAR 파일의 위치를 지정한 다음 [마침]을 클릭합니다.
+1. [ **대상** ] 텍스트 상자 `FragmentsWebApplication.war`**에서 파일 이름**&#x200B;을 입력하고 WAR 파일의 위치를 지정한 다음 [마침]을 클릭합니다.
 
 ### J2EE 응용 프로그램 서버에 WAR 파일 배포 {#deploying-the-war-file-to-the-j2ee-application-server}
 
-AEM Forms이 배포된 J2EE 응용 프로그램 서버에 WAR 파일을 배포할 수 있습니다. WAR 파일이 배포된 후 웹 브라우저를 사용하여 HTML 웹 페이지에 액세스할 수 있습니다.
+WAR 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 배포할 수 있습니다. WAR 파일이 배포된 후 웹 브라우저를 사용하여 HTML 웹 페이지에 액세스할 수 있습니다.
 
 **WAR 파일을 J2EE 응용 프로그램 서버에 배포하려면**
 
@@ -391,7 +391,7 @@ AEM Forms이 배포된 J2EE 응용 프로그램 서버에 WAR 파일을 배포�
 
 ### 웹 애플리케이션 테스트 {#testing-your-web-application}
 
-웹 애플리케이션을 배포한 후 웹 브라우저를 사용하여 테스트할 수 있습니다. AEM Forms을 호스팅하는 동일한 컴퓨터를 사용하고 있다고 가정할 경우 다음 URL을 지정할 수 있습니다.
+웹 애플리케이션을 배포한 후 웹 브라우저를 사용하여 테스트할 수 있습니다. AEM Forms을 호스팅하는 것과 동일한 컴퓨터를 사용하고 있다고 가정할 경우 다음 URL을 지정할 수 있습니다.
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
