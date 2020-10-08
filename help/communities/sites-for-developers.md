@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 1%
@@ -55,11 +55,9 @@ ht-degree: 1%
 >
 >오버레이된 경로의 모든 노드는 유형이어야 합니다 `Folder`.
 
-
 >[!CAUTION]
 >
 >사용자 지정 템플릿에 sitepage.hbs라는 이름이 *지정되면*&#x200B;모든 커뮤니티 사이트가 사용자 지정됩니다.
-
 
 ### 사용자 지정 사이트 템플릿 예 {#custom-site-template-example}
 
