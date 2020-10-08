@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -28,7 +28,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >확장을 사용하려면 웹 사이트의 댓글 시스템 인스턴스(/content)가 해당 resourceType을 사용자 지정 주석 시스템으로 설정해야 합니다.
-
 
 ## HBS 스크립트 수정 {#modify-the-hbs-scripts}
 
