@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 4%
@@ -32,7 +32,6 @@ ht-degree: 4%
 >사이트 페이지당 하나의 주석 시스템만 허용됩니다.
 >
 >많은 커뮤니티 기능에는 이미 확장된 주석 시스템을 참조하도록 resourceType을 수정할 수 있는 주석 시스템이 포함되어 있습니다.
-
 
 ## 주석 구성 요소 만들기 {#create-the-comments-component}
 
@@ -109,7 +108,7 @@ ht-degree: 4%
 
 ### 기본 HBS 스크립트 복사 및 수정 {#copy-and-modify-the-default-hbs-scripts}
 
-CRXDE [Lite 사용](../../help/sites-developing/developing-with-crxde-lite.md):
+CRXDE Lite [사용](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * 복사 `comments.hbs`
 
@@ -147,7 +146,7 @@ CRXDE [Lite 사용](../../help/sites-developing/developing-with-crxde-lite.md):
 
 이 클라이언트 라이브러리를 명시적으로 포함할 필요가 없도록 하기 위해 기본 주석 시스템의 clientlib에 대한 카테고리 값을 사용할 수 있습니다( `cq.social.author.hbs.comments`). 그러나 이 clientlib은 기본 구성 요소의 모든 인스턴스에도 포함됩니다.
 
-CRXDE [Lite 사용](../../help/sites-developing/developing-with-crxde-lite.md):
+CRXDE Lite [사용](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * 노드 `/apps/custom/components/comments` 선택
 * 노드 **[!UICONTROL 만들기 선택]**
@@ -164,7 +163,7 @@ CRXDE [Lite 사용](../../help/sites-developing/developing-with-crxde-lite.md):
 
    * **이름**: `css.txt`
    * **이름**: `js.txt`
-   * **이름**: customcomments.js
+   * **이름**:customcomments.js
 
 * &#39;customcomments system.js&#39;를 `js.txt`
 * 모두 **[!UICONTROL 저장 선택]**
