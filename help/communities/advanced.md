@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 점수 알고리즘은 컨텐츠 연관성 외에도 투표 및 대답 비율과 같은 멤버 활동을 고려합니다. 기본 점수에는 양적인 기준이 포함되지만 고급 점수에서는 알고리즘에 의해 사용됩니다.
 
-따라서, 고급 점수 엔진은 분석의 의미가 있는 데이터를 필요로 한다. 전문가가 되기 위한 성취 임계값은 알고리즘이 계속해서 생성된 컨텐츠의 양과 품질을 조정하므로 지속적으로 재평가됩니다. 회원의 이전 *지위를* 박탈하는 개념도 있다. 전문가 멤버가 전문가 자격을 얻은 관련 항목에 더 이상 참여하지 않을 경우 사전 결정된 일부 지점( [점수 지정 엔진 구성](#configurable-scoring-engine)참조)에 따라 전문가로서의 지위를 잃게 됩니다.
+따라서, 고급 점수 엔진은 분석의 의미가 있는 데이터를 필요로 한다. 전문가가 되기 위한 성취 임계값은 알고리즘이 생성된 컨텐츠의 양과 품질을 지속적으로 조정하므로 지속적으로 재평가됩니다. 회원의 이전 *지위를* 박탈하는 개념도 있다. 전문가 멤버가 전문가 자격을 얻은 관련 항목에 더 이상 참여하지 않을 경우 사전 결정된 일부 지점( [점수 지정 엔진 구성](#configurable-scoring-engine)참조)에 따라 전문가로서의 지위를 잃게 됩니다.
 
 고급 점수 설정은 기본 점수 설정과 거의 동일합니다.
 
@@ -56,7 +56,6 @@ ht-degree: 1%
 >[!NOTE]
 >
 >고급 점수 지정 및 배지 기능을 사용하려면 [전문가 식별 패키지를 설치합니다](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg).
-
 
 ## 구성 가능한 점수 엔진 {#configurable-scoring-engine}
 
@@ -150,7 +149,7 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
   <tr>
    <td>점수 지정 규칙</td>
    <td>String[]</td>
-   <td><em>(선택 사항)</em> 나열된 점수 규칙에 의해 식별된 점수 이벤트로 배지 규칙을 제한하는 다중 값 문자열.<br /> 응모 예:<br /><code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> 기본값은 제한이 없습니다.</td>
+   <td><em>(선택 사항)</em> 나열된 점수 규칙에 의해 식별된 점수 이벤트로 배지 규칙을 제한하는 다중 값 문자열.<br /> 응모 예:<br /><code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> 기본값은 제한이 아닙니다.</td>
   </tr>
  </tbody>
 </table>
