@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 1%
@@ -103,7 +103,6 @@ SolrCloud 모드에서 실행되는 경우 비워 둡니다.
 >[!NOTE]
 >
 >기본적으로 이름으로 설정되는 mongoDB 데이터베이스 `communities`는 [노드 저장소 또는 데이터(이진) 저장소에 사용되는 데이터베이스의 이름으로 설정하면 안 됩니다](../../help/sites-deploying/data-store-config.md). AEM [6.5의 스토리지 요소를 참조하십시오](../../help/sites-deploying/storage-elements-in-aem-6.md).
-
 
 ### MongoDB 복제본 세트 {#mongodb-replica-set}
 
@@ -206,7 +205,6 @@ cURL -u *sign* -d *data* *reindex-url*
 >[!NOTE]
 >
 >DSRP 솔루션을 [다시 인덱싱하는 경우](dsrp.md)URL은 **/services/social/datastore/rdb/reindex입니다.**
-
 
 ### MSRP 다시 색인 예 {#msrp-reindex-example}
 
