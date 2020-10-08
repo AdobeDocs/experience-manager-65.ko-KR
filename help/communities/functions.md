@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 7%
@@ -23,12 +23,11 @@ ht-degree: 7%
 
 커뮤니티 경험에서 예상되는 기능 유형은 잘 알려져 있습니다. 커뮤니티 기능은 커뮤니티 기능으로 사용할 수 있습니다. 기본적으로 이 구성 요소는 작성 모드에서 페이지에 구성 요소를 추가하는 것 이상의 것이 필요한 커뮤니티 기능을 구현하기 위해 미리 연결된 하나 이상의 페이지입니다. 커뮤니티 사이트가 [만들어지는](/help/communities/sites.md) 커뮤니티 사이트 템플릿 [구조를 정의하는 데 사용되는 기본](/help/communities/sites-console.md)블록입니다.
 
-커뮤니티 사이트가 만들어지면 표준 AEM 작성 모드를 사용하여 결과 페이지에 컨텐츠를 추가할 [수 있습니다](/help/sites-authoring/editing-content.md). 커뮤니티 기능 콘솔에서 보듯이 다양한 커뮤니티 기능을 사용할 수 있습니다.
+커뮤니티 사이트가 만들어지면 표준 [AEM 작성 모드를 사용하여 결과 페이지에 컨텐츠가 추가될 수 있습니다](/help/sites-authoring/editing-content.md). 커뮤니티 기능 콘솔에서 보듯이 다양한 커뮤니티 기능을 사용할 수 있습니다.
 
 >[!NOTE]
 >
 >커뮤니티 사이트 [,](/help/communities/sites-console.md)커뮤니티 사이트 템플릿 [,](/help/communities/sites.md)커뮤니티 그룹 템플릿 [및](/help/communities/tools-groups.md)커뮤니티 기능 [을 만들기 위한 콘솔](/help/communities/functions.md) ,은 작성 환경에서만 사용할 수 있습니다.
-
 
 ## 커뮤니티 기능 콘솔 {#community-functions-console}
 
@@ -40,7 +39,7 @@ ht-degree: 7%
 
 ## 사전 빌드 함수 {#pre-built-functions}
 
-다음은 AEM Communities과 함께 제공된 기능에 대한 간략한 설명입니다. 각 기능에는 커뮤니티 사이트 템플릿에 손쉽게 통합되는 기능에 연결된 커뮤니티 구성 요소가 포함된 하나 이상의 AEM 페이지가 포함되어 [있습니다](/help/communities/sites.md).
+다음은 AEM Communities과 함께 제공되는 기능에 대한 간략한 설명입니다. 각 기능에는 커뮤니티 사이트 템플릿에 손쉽게 통합되는 기능에 연결된 커뮤니티 구성 요소가 포함된 하나 이상의 AEM 페이지가 포함되어 [있습니다](/help/communities/sites.md).
 
 커뮤니티 사이트 템플릿은 로그인, 사용자 프로필, 알림, 메시지, 사이트 메뉴, 검색, 테마 및 브랜딩 기능을 포함한 커뮤니티 사이트의 구조를 제공합니다.
 
@@ -60,7 +59,7 @@ ht-degree: 7%
 
 * **URL**
 
-   (*필수*) URI를 생성하는 데 사용되는 이름입니다. 이 이름은 AEM 및 JCR에서 지정한 [이름 지정 규칙을](/help/sites-developing/naming-conventions.md) 준수해야 합니다.
+   (*필수*) URI를 생성하는 데 사용되는 이름입니다. 이 이름은 AEM 및 JCR에서 [지정한 이름 지정 규칙을](/help/sites-developing/naming-conventions.md) 준수해야 합니다.
 
 예를 들어, 시작 자습서 [](/help/communities/getting-started.md) 에 따라 만든 사이트를 사용하는 경우
 
@@ -87,7 +86,7 @@ ht-degree: 7%
 
 * **&quot;내 활동&quot; 보기 표시**
 
-   이 옵션을 선택하면 활동 페이지에는 현재 구성원이 커뮤니티 내에서 생성한 활동을 기준으로 하는 탭이 포함됩니다. 기본값이 선택됩니다.
+   이 옵션을 선택하면 활동 페이지에 현재 구성원이 커뮤니티 내에서 생성한 활동을 기준으로 하는 탭이 포함됩니다. 기본값이 선택됩니다.
 
 * **&quot;모든 활동&quot; 보기 표시**
 
@@ -234,7 +233,6 @@ assignments 함수는 [커뮤니티 사이트를 정의하는 기본 기능입�
 >
 >페이지 함수 [](#page-function)등 다른 모든 함수를 먼저 포함하여 나열해야 합니다.
 
-
 그룹 기능은 커뮤니티 구성원이 게시 환경의 커뮤니티 사이트 내에서 하위 커뮤니티를 만드는 기능을 제공합니다.
 
 그룹 기능이 [커뮤니티 사이트 템플릿에](/help/communities/sites-console.md#groupmanagement) 포함되는 [설정에](/help/communities/sites.md)따라 그룹은 공개 또는 비공개 그룹일 수 있으며, 커뮤니티 그룹이 실제로 생성될 때(예: 게시 환경)에서 템플릿을 선택할 수 있도록 하나 이상의 커뮤니티 그룹 템플릿을 구성할 수 있습니다. 커뮤니티 [그룹 템플릿은](/help/communities/tools-groups.md) 포럼 및 달력과 같이 그룹 페이지에 대해 만든 커뮤니티 기능을 지정합니다.
@@ -292,7 +290,7 @@ assignments 함수는 [커뮤니티 사이트를 정의하는 기본 기능입�
 
 leaderboard 함수는 하나의 [리더보드 구성 요소가 있는 페이지입니다](/help/communities/enabling-leaderboard.md).
 
-**참고**: Leaderboard 기능을 포함하는 커뮤니티 템플릿에서 커뮤니티 사이트를 만든 *후* Leaderboard 구성 요소를 추가로 구성해야 합니다. 커뮤니티 사이트에 대한 [점수 및 배지](/help/communities/enabling-leaderboard.md#rules-tab)구성에 따라 달라지는 리더보드 구성 요소의 [규칙을](/help/communities/implementing-scoring.md) 지정합니다.
+**참고**:Leaderboard 기능을 포함하는 커뮤니티 템플릿에서 커뮤니티 사이트를 만든 *후* Leaderboard 구성 요소를 추가로 구성해야 합니다. 커뮤니티 사이트에 대한 [점수 및 배지](/help/communities/enabling-leaderboard.md#rules-tab)구성에 따라 달라지는 리더보드 구성 요소의 [규칙을](/help/communities/implementing-scoring.md) 지정합니다.
 
 템플릿에 추가하면 기본 제목 및 URL 이름과 템플릿의 기본 표시 설정을 지정하는 다음 대화 상자가 열립니다.
 
@@ -317,7 +315,7 @@ leaderboard 함수는 하나의 [리더보드 구성 요소가 있는 페이지�
 
 ### 페이지 기능 {#page-function}
 
-페이지 함수는 커뮤니티 사이트의 기능에 연결된 빈 페이지를 커뮤니티 사이트에 추가합니다. 로그인, 메뉴, 알림, 메시지, 테마 및 브랜딩. 컨텐츠는 [표준 AEM 작성 모드를 사용하여 페이지에 추가됩니다](/help/sites-authoring/editing-content.md).
+페이지 함수는 커뮤니티 사이트의 기능에 연결된 빈 페이지를 커뮤니티 사이트에 추가합니다.로그인, 메뉴, 알림, 메시지, 테마 및 브랜딩. 컨텐츠는 [표준 AEM 작성 모드를 사용하여 페이지에 추가됩니다](/help/sites-authoring/editing-content.md).
 
 템플릿에 추가되면 [제목 및 URL 설정만 구성됩니다](#title-and-url-settings).
 
@@ -401,7 +399,7 @@ QnA 함수는 태그 지정, 파일 업로드, [팔로잉, 자체 편집, 투표
 
 ### 구성 요소 구성 {#configuring-components}
 
-커뮤니티 함수는 AEM Blueprint의 Live Copy로 구현되며, 세부 사항은 [다중 사이트 관리자 아래에 문서화됩니다](/help/sites-administering/msm.md).
+커뮤니티 기능은 AEM Blueprint의 Live Copy로 구현되며 세부 사항은 [Multi Site Manager에 설명되어 있습니다](/help/sites-administering/msm.md).
 
 페이지 컨텐츠를 제작할 뿐만 아니라 구성 요소를 구성할 수도 있습니다.
 
