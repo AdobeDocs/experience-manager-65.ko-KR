@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: 3da113e88784def54e0a94e280bf1a965de015ed
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 2%
@@ -62,7 +62,6 @@ Communities 구성 요소와의 상호 작용은 다음과 같은 경우에 따�
 >일반 작성 정보는 페이지 작성에 대한 [빠른 안내서를 참조하십시오](../../help/sites-authoring/qg-page-authoring.md).
 >
 >AEM에 익숙하지 않은 경우 [기본 처리에 대한 설명서를 참조하십시오](../../help/sites-authoring/basic-handling.md).
-
 
 ### 홈페이지 {#home-page}
 
@@ -154,7 +153,7 @@ Communities 구성 요소와의 상호 작용은 다음과 같은 경우에 따�
 
 1. CRXDE Lite [찾아보기](../../help/sites-developing/developing-with-crxde-lite.md)
 
-   예: [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
+   예: [http://localhost:4502/crx/de](http://localhost:4503/crx/de)
 
 1. 구성 요소의 노드 `jcr:content` 선택
 
