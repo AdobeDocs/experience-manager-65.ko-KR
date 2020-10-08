@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -224,15 +224,14 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 >이 예는 다음과 같은 우수 사례를 따르지 않습니다.
 >
 >* 점수 규칙 이름은 전체적으로 고유해야 합니다.같은 이름으로 끝나서는 안 됩니다.
-   >  하지 *않을* 작업의 예:
-   >  /libs/settings/community/scoring/rules/site1/forums-scoring
-   >  /libs/settings/community/scoring/rules/site2/forums-scoring
-   >
-   >
-* 다양한 AEM 사이트에 사용할 고유한 배지 이미지 만들기
-
 >
-
+>  
+하지 *않을* 작업의 예:
+>
+>  /libs/settings/community/scoring/rules/site1/forums-scoring
+>  /libs/settings/community/scoring/rules/site2/forums-scoring
+>
+>* 다양한 AEM 사이트에 사용할 고유한 배지 이미지 만들기
 
 
 ### 액세스 점수 UGC {#access-scoring-ugc}
