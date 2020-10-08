@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 0%
@@ -122,7 +122,7 @@ GET(읽기) 작업 외에도 프레임워크는 끝점 패턴을 정의하여 �
 
 ### 서버측 사용자 정의 {#server-side-customizations}
 
-서버 [측 사용자 지정을](server-customize.md) 방문하여 서버 측에서 커뮤니티 구성 요소의 비즈니스 논리 및 작동 방식을 사용자 지정하는 방법에 대한 자세한 내용을 확인하십시오.
+서버 [쪽 사용자 지정을](server-customize.md) 참조하십시오.
 
 ## Handlebars JS 템플릿 언어 {#handlebars-js-templating-language}
 
@@ -183,7 +183,6 @@ AEM 6.1의 경우, 구성 요소가 추가되는 대신 동적으로 포함되�
 >[!NOTE]
 >
 >템플릿에 구성 요소를 추가하거나 포함하는 대신 페이지에 동적으로 추가하려면 구성 요소 사이드 로드 [를 참조하십시오](sideloading.md).
-
 
 ### Handlebars Helpers {#handlebars-helpers}
 
