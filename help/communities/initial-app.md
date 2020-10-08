@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: 33c3126fbba4b324941338ee4d2a418d216408cd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 2%
@@ -22,8 +22,8 @@ ht-degree: 2%
 
 이 섹션에서 다음을 만듭니다.
 
-* 예제 웹 사이트에서 컨텐츠 페이지를 만드는 데 사용할 **[템플릿입니다](#createthepagetemplate)**.
-* 웹 사이트 페이지를 렌더링하는 데 사용할 **[구성 요소 및 스크립트](#create-the-template-s-rendering-component)**.
+* 예제 웹 사이트에서 컨텐츠 페이지를 만드는 데 사용할 **[템플릿입니다](#createthepagetemplate)** .
+* 웹 사이트 페이지를 렌더링하는 데 사용할 **[구성 요소 및 스크립트](#create-the-template-s-rendering-component)** .
 
 ## 컨텐츠 템플릿 만들기 {#create-the-content-template}
 
@@ -42,7 +42,7 @@ ht-degree: 2%
    * 제목: `An SCF Sandbox Play Template`
    * 설명: `An SCF Sandbox template for play pages`
    * 리소스 유형: `an-scf-sandbox/components/playpage`
-   * 등급: &lt;기본값으로 유지>
+   * 등급:&lt;기본값으로 유지>
 
    Label은 노드 이름에 사용됩니다.
 
@@ -60,7 +60,7 @@ ht-degree: 2%
 
    패스를 추가하려면 더하기 단추 `+` 를 클릭하고 나타나는 텍스트 상자 `/content(/.&ast;)?` 에 입력합니다. 복사/붙여넣기를 사용하는 경우 앞이나 뒤에 공백이 없어야 합니다.
 
-   참고: 허용되는 경로 속성의 값은 *정규식입니다*. 표현식과 일치하는 경로가 있는 컨텐츠 페이지에서는 템플릿을 사용할 수 있습니다. 이 경우 정규 표현식은 **/content** 폴더 및 모든 하위 페이지의 경로와 일치합니다.
+   참고:허용되는 경로 속성의 값은 *정규식입니다*. 표현식과 일치하는 경로가 있는 컨텐츠 페이지에서는 템플릿을 사용할 수 있습니다. 이 경우 정규 표현식은 **/content** 폴더 경로 및 모든 하위 페이지와 일치합니다.
 
    작성자가 아래 페이지 `/content`를 만들면 사용할 수 있는 템플릿 목록에 &quot;SCF 샌드박스 페이지 템플릿&quot;이라는 `playpage` 템플릿이 나타납니다.
 
@@ -88,7 +88,7 @@ ht-degree: 2%
 
 컨텐츠를 정의하고 *재생 페이지 템플릿을* 기반으로 만들어진 페이지를 렌더링하는 구성 요소를 [만듭니다](#createthepagetemplate).
 
-1. CRXDE Lite에서 마우스 오른쪽 버튼을 클릭하고 **`/apps/an-scf-sandbox/components`** 만들기 > 구성 요소를 클릭합니다 ****.
+1. CRXDE Lite에서 마우스 오른쪽 단추 **`/apps/an-scf-sandbox/components`** 를 클릭하고 **[!UICONTROL 만들기 > 구성 요소를 클릭합니다]**.
 1. 노드 이름(레이블)을 *재생 페이지로*&#x200B;설정하면 구성 요소의 경로가
 
    `/apps/an-scf-sandbox/components/playpage`
