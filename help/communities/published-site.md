@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 1%
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트의 컨텐츠를 액세스로부터 보호하려면 다음 단계를 따르십시오.
 
-1. AEM Author 인스턴스에서 https:// hostname:port/editor.html/content/site/sitename.html으로 이동합니다.
+1. AEM 작성자 인스턴스에서 https:// hostname:port/editor.html/content/site/sitename.html으로 이동합니다.
 
    >[!NOTE]
    >
@@ -93,7 +93,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
    1. 새 쪽지를 작성하여 개인 및 그룹에 보냅니다.
 
 * [알림](/help/communities/notifications.md) 옵션은 관심 이벤트를 보고 알림 설정을 편집할 수 있는 알림 섹션으로 연결됩니다.
-* [중재 권한이 있는 경우 AEM Communities 중재 페이지로 이동합니다](/help/communities/published-site.md#moderationlink) .
+* [중재](/help/communities/published-site.md#moderationlink) 권한이 있는 경우 [AEM Communities 중재 페이지]로 이동합니다.
 
 ![adscreen](assets/adminscreen.png)
 
@@ -107,9 +107,6 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 >
 >* [커뮤니티 구성 요소](/help/communities/author-communities.md) (작성자용)
 >* [구성 요소, 기능 및 Feature Essentials](/help/communities/essentials.md) (개발자용)
-
->
-
 
 
 ### 포럼 링크 {#forum-link}
