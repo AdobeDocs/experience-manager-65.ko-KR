@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
@@ -120,7 +120,7 @@ ht-degree: 3%
 
 마법사를 사용하여 만든 커뮤니티 사이트 구조에는 선택 시 메시지 기능이 포함됩니다. 커뮤니티 사이트 콘솔 `User Management` 의 [설정을 참조하십시오](/help/communities/sites-console.md#user-management).
 
-### 샘플 코드: 메시지 수신 알림 {#sample-code-message-received-notification}
+### 샘플 코드:메시지 수신 알림 {#sample-code-message-received-notification}
 
 소셜 메시징 기능은 작업에 대한 이벤트(예: `send`예: `marking read`이벤트)를 `marking delete`발생시킵니다. 이러한 이벤트를 캡처하고 이벤트에 포함된 데이터에 대해 수행된 작업을 수행할 수 있습니다.
 
@@ -132,8 +132,8 @@ ht-degree: 3%
 1. 다음과 같은 임의 이름 `bundle node`으로 `/apps/engage/install` In을 만듭니다.
 
    * 기호 이름: `com.engage.media.social.messaging.MessagingNotification`
-   * 이름: 시작하기 자습서 메시지 알림
-   * 설명: 사용자에게 메시지를 수신할 때 이메일 알림을 전송하는 샘플 서비스
+   * 이름:시작하기 자습서 메시지 알림
+   * 설명:사용자에게 메시지를 수신할 때 이메일 알림을 전송하는 샘플 서비스
    * 패키지: `com.engage.media.social.messaging.notification`
 
 1. 다음으로 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`이동한 다음:
