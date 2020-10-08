@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 3%
@@ -123,7 +123,6 @@ ht-degree: 3%
 >[!NOTE]
 >
 >[터널 서비스를](/help/communities/deploy-communities.md#tunnel-service-on-author) 통해 게시 환경에만 존재하는 구성원 및 그룹을 선택할 수 있습니다.
-
 
 ![활성 역할](assets/site-admin.png)
 
@@ -316,7 +315,6 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 >
 >비활성화하려면 `sling:match` 속성 값을 &#39;x&#39; - `xlocalhost.4503/$` 및 **모두 저장으로 미리 끝냅니다**.
 
-
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
 #### 문제 해결:맵 저장 중 오류 발생 {#troubleshooting-error-saving-map}
@@ -340,7 +338,6 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 >[!NOTE]
 >
 >AEM에 익숙하지 않은 경우 [기본 처리](/help/sites-authoring/basic-handling.md) 및 페이지 작성에 대한 [빠른 안내서에 대한 설명서를 봅니다](/help/sites-authoring/qg-page-authoring.md).
-
 
 ### 카탈로그 추가 {#add-a-catalog}
 
