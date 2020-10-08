@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 6%
@@ -48,7 +48,6 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 >구성 요소 `Journal` 와 `Journal Sidebar` 의 제목 `Blog` 및 `Blog Sidebar`입니다.
 >
 >이제 AEM 6.0 및 이전 릴리스에서 발견된 블로그 기능이 제거됩니다. 템플릿을 기반으로 했고 작성자만 작성 환경에서 컨텐츠를 만들 수 있었습니다.
-
 
 ## 페이지에 블로그 구성 요소 추가 {#adding-blog-components-to-a-page}
 
@@ -112,8 +111,8 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 >[!NOTE]
 >
 >저널 제목은 블로그에 대한 URL을 자동으로 만드는 데 사용됩니다.
+>
 >여기에 지정하는 저널 제목에서 최대 50자(5자의 추가 고유성)가 사용되어 블로그에 대한 URL을 만듭니다.
-
 
 * **저널 설명입니다**
 
