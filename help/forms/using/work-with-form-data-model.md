@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '4162'
+source-wordcount: '4148'
 ht-degree: 0%
 
 ---
@@ -199,8 +199,10 @@ Forms 데이터 통합을 처음 사용하고 데이터 소스를 구성하거�
 
    >[!NOTE]
    >
-   > * 정적 템플릿을 사용하는 경우 다음 위치에 head.jsp를 오버레이합니다./libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
-   > * 편집 가능한 템플릿을 사용하는 경우 다음 위치에서 aftetemplatedpage.jsp를 오버레이합니다./libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
+   > * 정적 템플릿을 사용하는 경우 다음 위치에 head.jsp를 오버레이합니다.
+      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   > * 편집 가능한 템플릿을 사용하는 경우 다음 위치에서 aftetemplatedpage.jsp를 오버레이합니다.
+      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. 요청 속성 [!DNL paramMap] 에 대해 설정합니다. 예를 들어, apps 폴더의 .jsp 파일에 다음 코드를 포함합니다.
