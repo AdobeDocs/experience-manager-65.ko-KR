@@ -14,8 +14,8 @@ tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
 source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
