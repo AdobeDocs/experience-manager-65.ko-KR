@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f6aa95514a266a042c9bd1165634e30e80479ae7
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -90,7 +90,6 @@ CRXDE Lite을 사용하여 커뮤니티 사이트에 대한 clientlib을 추가�
 >[!NOTE]
 >
 >사이트가 커뮤니티 사이트가 아닌 경우 사이트에 사용 중인 클라이언트 라이브러리의 기존 또는 위치를 검색해야 합니다.
-
 
 AEM Communities [로 시작](/help/communities/getting-started.md) 예 `site-name` 를 사용하여 *참여*&#x200B;를하는 경우 검토 구성 요소를 추가하면 clientliblist가 표시되는 방식입니다.
 
