@@ -48,14 +48,14 @@ ht-degree: 100%
 >사용 가능한 활동 유형은 다음 방법으로 결정됩니다.
 
 >* Adobe Target에 연결하기 위해 AEM 측에 사용된 Adobe Target 임차인(clientcode)에서 **xt_only** 선택 사항이 활성화되면, AEM에서 XT 활동&#x200B;**만** 만들 수 있습니다.
-   >
-* Adobe Target 임차인(clientcode)에서 **xt_only** 선택 사항이 활성화되지 **않으면** AEM에서에서 XT 활동과 A/B 활동을 **모두** 만들 수 있습니다.
+>* Adobe Target 임차인(clientcode)에서 **xt_only** 선택 사항이 활성화되지 **않으면** AEM에서에서 XT 활동과 A/B 활동을 **모두** 만들 수 있습니다.
 
 **추가 참고:** **xt_only** 선택 사항은 특정 Target 임차인(clientcode)에 적용되는 설정이며, Adobe Target에서 직접 수정하는 것만 가능합니다. 이 선택 사항은 AEM에서 활성하거나 비활성화할 수 없습니다.
 
 >[!CAUTION]
-일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호해야 합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스만 액세스할 수 있어야 합니다.
-자세한 내용은 [Adobe Target과 통합하기 위한 전제 조건](/help/sites-administering/target-requirements.md#securingtheactivitysettings)을 참조하십시오.
+>
+>일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호해야 합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스만 액세스할 수 있어야 합니다.
+>자세한 내용은 [Adobe Target과 통합하기 위한 전제 조건](/help/sites-administering/target-requirements.md#securingtheactivitysettings)을 참조하십시오.
 
 ## 활동 콘솔을 사용한 브랜드 만들기 {#creating-a-brand-using-the-activities-console}
 
@@ -89,8 +89,9 @@ ht-degree: 100%
 * **목표 지표:** 타깃팅 엔진으로 Adobe Target이 선택되면 활동에 성공 지표를 추가할 수 있습니다. 성공 지표 1개가 필요합니다.
 
 >[!NOTE]
-Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아니라 타깃팅된 컨텐츠 편집기에서 새 Adobe Target 활동을 ***만들어야*** 합니다.
-그러나 콘솔에서 기존의 Adobe Target 활동을 편집할 수는 있습니다.
+>
+>Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아니라 타깃팅된 컨텐츠 편집기에서 새 Adobe Target 활동을 ***만들어야*** 합니다.
+>그러나 콘솔에서 기존의 Adobe Target 활동을 편집할 수는 있습니다.
 
 활동을 추가하려면 다음을 수행하십시오.
 
@@ -134,14 +135,16 @@ Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아
 1. **저장**&#x200B;을 클릭하거나 탭합니다.
 
    >[!NOTE]
-   활동을 만든 후에는 이를 사용할 수 있도록 게시해야 합니다.
+   >
+   >활동을 만든 후에는 이를 사용할 수 있도록 게시해야 합니다.
 
 ## 활동 게시 및 게시 취소 {#publishing-and-unpublishing-activities}
 
 활동을 게시하여 사용할 수 있도록 해야 합니다. 반대로 활동의 게시를 취소하여 활동을 사용할 수 없게 할 수도 있습니다.
 
 >[!NOTE]
-활동의 게시를 취소할 때 페이지를 새로 고치지 않으면 활동의 상태가 변경되지 않습니다.
+>
+>활동의 게시를 취소할 때 페이지를 새로 고치지 않으면 활동의 상태가 변경되지 않습니다.
 
 활동을 게시하거나 게시 취소하려면 다음을 수행하십시오.
 
@@ -221,7 +224,8 @@ AEM이 활동을 Adobe Target과 동기화할 때 AEM은 `thirdPartyId`라는 �
 동기화 문제를 방지하려면 항상 활동에 고유한 이름을 사용하십시오. 활동이 동기화에 실패하는 경우, 해당 캠페인이 사용되고 있지 않다면 동일한 이름을 사용하는 Adobe Target 캠페인을 삭제할 수 있습니다.
 
 >[!NOTE]
-Adobe Target에서 캠페인을 만들 때 각 캠페인에 `thirdPartyId t`라는 속성을 지정하게 됩니다. Adobe Target에서 이 캠페인을 삭제해도 `thirdPartyId`는 삭제되지 않습니다. `thirdPartyId`는 다른 유형의 캠페인(AB, XT)에 대해 다시 사용할 수 없으며 수동으로 제거할 수 없습니다. 이러한 문제를 방지하려면 각 캠페인에 고유한 이름을 지정하십시오. 따라서 캠페인 이름은 다른 캠페인 유형에서 다시 사용할 수 없습니다.
-동일한 캠페인 유형에서 동일한 이름을 사용하는 경우 기존 캠페인을 덮어쓰게 됩니다.
-동기화 중에 &quot;Request Failed. `thirdPartyId` already exists&quot;(요청이 실패했습니다. thirdPartyId가 이미 있습니다)라는 오류가 발생하는 경우, 캠페인 이름을 변경하고 다시 동기화하십시오.
+>
+>Adobe Target에서 캠페인을 만들 때 각 캠페인에 `thirdPartyId t`라는 속성을 지정하게 됩니다. Adobe Target에서 이 캠페인을 삭제해도 `thirdPartyId`는 삭제되지 않습니다. `thirdPartyId`는 다른 유형의 캠페인(AB, XT)에 대해 다시 사용할 수 없으며 수동으로 제거할 수 없습니다. 이러한 문제를 방지하려면 각 캠페인에 고유한 이름을 지정하십시오. 따라서 캠페인 이름은 다른 캠페인 유형에서 다시 사용할 수 없습니다.
+>동일한 캠페인 유형에서 동일한 이름을 사용하는 경우 기존 캠페인을 덮어쓰게 됩니다.
+>동기화 중에 &quot;Request Failed. `thirdPartyId` already exists&quot;(요청이 실패했습니다. thirdPartyId가 이미 있습니다)라는 오류가 발생하는 경우, 캠페인 이름을 변경하고 다시 동기화하십시오.
 

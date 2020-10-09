@@ -62,7 +62,8 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 >이렇게 하지 않으면 백업이 잠재적으로 무용지물이 됩니다(최악의 경우 시나리오).
 >
 >[!NOTE]
-백업 성능에 대한 자세한 내용은 [백업 성능](/help/sites-deploying/configuring-performance.md#backup-performance) 섹션을 참조하십시오.
+>
+>백업 성능에 대한 자세한 내용은 [백업 성능](/help/sites-deploying/configuring-performance.md#backup-performance) 섹션을 참조하십시오.
 
 ### 소프트웨어 설치 백업 {#backing-up-your-software-installation}
 
@@ -74,13 +75,16 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 1. 파일 시스템 `<cq-installation-dir>` 에서 전체 백업
 
 >[!CAUTION]
-타사 응용 프로그램 서버를 작동 중인 경우 다른 위치에 추가 폴더가 있을 수 있으며 백업도 필요할 수 있습니다. 애플리케이션 서버 설치 [에 대한 자세한 내용은 Application Server와](/help/sites-deploying/application-server-install.md) 함께 AEM을 설치하는 방법을 참조하십시오. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with application server)
+>
+>타사 응용 프로그램 서버를 작동 중인 경우 다른 위치에 추가 폴더가 있을 수 있으며 백업도 필요할 수 있습니다. 애플리케이션 서버 설치 [에 대한 자세한 내용은 Application Server와](/help/sites-deploying/application-server-install.md) 함께 AEM을 설치하는 방법을 참조하십시오. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with application server)
 
 >[!CAUTION]
-파일 데이터 저장소의 증분 백업이 지원됩니다. 다른 구성 요소(예: Lucene 인덱스)에 대해 증분 백업을 사용하는 경우 삭제된 파일이 백업에서 삭제된 것으로 표시되는지 확인하십시오.
+>
+>파일 데이터 저장소의 증분 백업이 지원됩니다. 다른 구성 요소(예: Lucene 인덱스)에 대해 증분 백업을 사용하는 경우 삭제된 파일이 백업에서 삭제된 것으로 표시되는지 확인하십시오.
 
 >[!NOTE]
-디스크 미러링은 백업 메커니즘으로 사용할 수도 있습니다.
+>
+>디스크 미러링은 백업 메커니즘으로 사용할 수도 있습니다.
 
 ### 저장소 백업 {#backing-up-your-repository}
 
@@ -132,7 +136,8 @@ CRX 설명서의 [백업 및 복원](/help/sites-administering/backup-and-restor
 1. 삭제 **를** 클릭하여 프로세스를 시작합니다.
 
 >[!CAUTION]
-저장소를 복원하지 않으면 삭제된 노드를 되돌릴 수 없습니다. 구성을 관리해야 하므로 제거하기 전에 항상 연습 실행을 수행하는 것이 좋습니다.
+>
+>저장소를 복원하지 않으면 삭제된 노드를 되돌릴 수 없습니다. 구성을 관리해야 하므로 제거하기 전에 항상 연습 실행을 수행하는 것이 좋습니다.
 
 ### 콘솔 분석 {#analyzing-the-console}
 
@@ -180,7 +185,8 @@ AEM WCM은 자세한 로그를 기록합니다. 압축을 풀고 Quickstart를 �
 * 이전 로그 파일은 삭제되지 않으므로 디스크 사용을 제한하기 위해 정기적으로 이전 로그 파일을 정리해야 합니다.
 
 >[!NOTE]
-AEM 설치를 업그레이드하는 경우, AEM에서 더 이상 사용되지 않는 기존 로그 파일은 디스크에 남아 있습니다. 위험 없이 제거할 수 있습니다. 새 로그 항목은 모두 새 로그 파일에 기록됩니다.
+>
+>AEM 설치를 업그레이드하는 경우, AEM에서 더 이상 사용되지 않는 기존 로그 파일은 디스크에 남아 있습니다. 위험 없이 제거할 수 있습니다. 새 로그 항목은 모두 새 로그 파일에 기록됩니다.
 
 ### 로그 파일 찾기 {#finding-the-log-files}
 
@@ -223,7 +229,8 @@ Provides a log of all upgrade operations that runs from
 저널링 정보 개정
 
 >[!NOTE]
-ImageServer 및 s7access 로그는 **system/console/status-Bundelist **페이지에서 생성된 **Download Full **패키지에 포함되지 않습니다. 지원 목적으로 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원에 문의할 때 ImageServer 및 s7access 로그를 추가하십시오.
+>
+>ImageServer 및 s7access 로그는 **system/console/status-Bundelist **페이지에서 생성된 **Download Full **패키지에 포함되지 않습니다. 지원 목적으로 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원에 문의할 때 ImageServer 및 s7access 로그를 추가하십시오.
 
 ### 디버그 로그 수준 활성화 {#activating-the-debug-log-level}
 
@@ -232,7 +239,8 @@ ImageServer 및 s7access 로그는 **system/console/status-Bundelist **페이지
 로거에 대한 디버그 로그 수준을 활성화하려면 저장소에서 디버깅할 속성 `org.apache.sling.commons.log.level` 을 설정합니다. 예를 들어 `/libs/sling/config/org.apache.sling.commons.log.LogManager` 전역 Apache Sling 로깅 [을 구성하려면 다음을 수행하십시오](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 >[!CAUTION]
-로그 항목은 많은 로그 항목을 생성하므로 로그를 필요한 것보다 오래 디버그 로그 수준으로 두어서는 안 됩니다.
+>
+>로그 항목은 많은 로그 항목을 생성하므로 로그를 필요한 것보다 오래 디버그 로그 수준으로 두어서는 안 됩니다.
 
 디버그 파일의 한 줄은 대개 DEBUG로 시작하고 로그 수준, 설치 프로그램 작업 및 로그 메시지를 제공합니다. 예:
 
@@ -251,7 +259,8 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 ### 사용자 정의 로그 파일 만들기 {#create-a-custom-log-file}
 
 >[!NOTE]
-When working with Adobe Experience Manager there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+>
+>When working with Adobe Experience Manager there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 특정 상황에서는 다른 로그 수준의 사용자 지정 로그 파일을 만들 수 있습니다. 다음과 같은 방법으로 저장소에서 이 작업을 수행할 수 있습니다.
 
@@ -266,7 +275,8 @@ When working with Adobe Experience Manager there are several methods of managing
 
    * 유형: `sling:OsgiConfig`
    >[!NOTE]
-   기술적인 요건은 아니지만, `<*identifier*>` 고유한 것을 만드는 것이 좋다.
+   >
+   >기술적인 요건은 아니지만, `<*identifier*>` 고유한 것을 만드는 것이 좋다.
 
 1. 이 노드에서 다음 속성을 설정합니다.
 
@@ -301,33 +311,38 @@ When working with Adobe Experience Manager there are several methods of managing
 
          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
    >[!NOTE]
-   `org.apache.sling.commons.log.pattern` 은 최대 6개의 인수를 지원합니다.
+   >
+   >`org.apache.sling.commons.log.pattern` 은 최대 6개의 인수를 지원합니다.
 
    >{0} 로그 마커 `java.util.Date`{1} 유형의 타임스탬프{2} 현재 스레드의 이름{3} 로그 수준{4} 로그 메시지
 
    >로그 호출에 스택 추적 `Throwable` 이 포함된 경우 메시지에 추가됩니다.
 
    >[!CAUTION]
-   org.apache.sling.commons.log.names에는 값이 있어야 합니다.
+   >
+   >org.apache.sling.commons.log.names에는 값이 있어야 합니다.
 
    >[!NOTE]
-   로그 작성기 경로는 `crx-quickstart` 위치를 기준으로 합니다.
-   따라서 다음과 같이 지정된 로그 파일
-   `logs/thelog.log`
+   >
+   >로그 작성기 경로는 `crx-quickstart` 위치를 기준으로 합니다.
+   >따라서 다음과 같이 지정된 로그 파일
+   >`logs/thelog.log`
 
    >쓰기 대상:
-   `` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&#39;.
-   및 다음과 같이 지정된 로그 파일
-   `../logs/thelog.log`
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&#39;.
+   >및 다음과 같이 지정된 로그 파일
+   >`../logs/thelog.log`
 
    >디렉토리에 쓰기:
-   ` <*cq-installation-dir*>/logs/`
+   >` <*cq-installation-dir*>/logs/`
+
 &quot;(예: ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
 
 1. 이 단계는 새 작성기가 필요한 경우에만 필요합니다(예: 기본 작성기와 다른 구성).
 
    >[!CAUTION]
-   새 로깅 작성자 구성은 기존 기본값이 적합하지 않은 경우에만 필요합니다.
+   >
+   >새 로깅 작성자 구성은 기존 기본값이 적합하지 않은 경우에만 필요합니다.
 
    >명시적 작성기가 구성되지 않은 경우 시스템은 기본값을 기반으로 암시적 작성기를 자동으로 생성합니다.
 
@@ -339,7 +354,8 @@ When working with Adobe Experience Manager there are several methods of managing
 
    * 유형: `sling:OsgiConfig`
    >[!NOTE]
-   기술적인 요건은 아니지만, `<*identifier*>` 고유한 것을 만드는 것이 좋다.
+   >
+   >기술적인 요건은 아니지만, `<*identifier*>` 고유한 것을 만드는 것이 좋다.
 
    이 노드에서 다음 속성을 설정합니다.
 
@@ -365,9 +381,10 @@ When working with Adobe Experience Manager there are several methods of managing
 
          값: 파일 회전을 크기/날짜별로 제어하는 필요에 따라 지정합니다. 예를 들면 `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` 다음 중 하나를 설정하여 로그 파일의 회전을 제어합니다.
-   * 최대 파일 크기
-   * 시간/날짜 일정
+   >
+   >`org.apache.sling.commons.log.file.size` 다음 중 하나를 설정하여 로그 파일의 회전을 제어합니다.
+   >* 최대 파일 크기
+   >* 시간/날짜 일정
 
    를 클릭하여 새 파일을 언제 만들 것인지 지정합니다(그리고 이름 패턴에 따라 이름이 변경된 기존 파일).
    * 숫자를 사용하여 크기 제한을 지정할 수 있습니다. 크기 표시기를 지정하지 않으면 바이트 수로 사용되거나 크기 표시기( `KB`, `MB`또는 `GB` 대/소문자 무시) 중 하나를 추가할 수 있습니다.
@@ -455,10 +472,11 @@ When working with Adobe Experience Manager there are several methods of managing
    * **필요한 경우 모든 큐 항목에 대해 강제로 다시** 시도하십시오.
 
    >[!CAUTION]
-   게시 인스턴스의 역방향 복제 출력 상자에 대해 &quot;연결 테스트&quot; 링크를 사용하지 마십시오.
-   Outbox 큐에 대한 복제 테스트가 수행되는 경우 테스트 복제보다 오래된 항목은 모든 역방향 복제를 사용하여 다시 처리됩니다.
-   이러한 항목이 이미 큐에 있는 경우 다음 XPath JCR 쿼리를 통해 찾을 수 있으므로 제거해야 합니다.
-   `/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
+   >
+   >게시 인스턴스의 역방향 복제 출력 상자에 대해 &quot;연결 테스트&quot; 링크를 사용하지 마십시오.
+   >Outbox 큐에 대한 복제 테스트가 수행되는 경우 테스트 복제보다 오래된 항목은 모든 역방향 복제를 사용하여 다시 처리됩니다.
+   >이러한 항목이 이미 큐에 있는 경우 다음 XPath JCR 쿼리를 통해 찾을 수 있으므로 제거해야 합니다.
+   >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
 다시 한 번, 또는 아래에 있는 모든 복제 에이전트 `/etc/replication/author` 를 감지하는 솔루션을 개발한 다음 에이전트(, `/etc/replication/publish`)와 기본 큐( `enabled`, `disabled`, `active`)의 상태를 확인할 수 `idle``blocked`있습니다.
 
@@ -469,7 +487,8 @@ When working with Adobe Experience Manager there are several methods of managing
 최적화를 위한 정보를 수집하는 동안 사용되는 메서드를 지속적인 모니터링에 사용할 수도 있습니다.
 
 >[!NOTE]
-성능 [향상에 사용할 수 있는 특정](/help/sites-deploying/configuring-performance.md#configuring-for-performance) 구성도 확인할 수 있습니다.
+>
+>성능 [향상에 사용할 수 있는 특정](/help/sites-deploying/configuring-performance.md#configuring-for-performance) 구성도 확인할 수 있습니다.
 
 다음은 일반적인 성능 문제와 이를 찾아 대응하는 방법에 대한 제안입니다.
 
@@ -854,7 +873,8 @@ JDK 1.6부터는 도구 명령을 사용할 수 `jvisualvm` 있습니다. JDK 1.
 1. AEM 인스턴스를 시작합니다.
 
    >[!NOTE]
-   Java 5를 사용하는 경우 JVM을 시작하는 java 명령줄에 `-Dcom.sun.management.jmxremote` 인수를 추가할 수 있습니다. JMX는 Java 6에서 기본적으로 활성화되어 있습니다.
+   >
+   >Java 5를 사용하는 경우 JVM을 시작하는 java 명령줄에 `-Dcom.sun.management.jmxremote` 인수를 추가할 수 있습니다. JMX는 Java 6에서 기본적으로 활성화되어 있습니다.
 
 1. 다음 중 하나를 실행합니다.
 
@@ -1018,11 +1038,12 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 다음은 특정 성능 문제가 있는지 여부를 확인할 사항에 대한 제안 목록입니다. 목록이 완전히 포괄적인 것은 아닙니다.
 
 >[!NOTE]
-자세한 내용은 다음 문서를 참조하십시오.
-* [스레드 덤프](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
-* [메모리 문제 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
-* [내장된 프로파일러를 사용하여 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
-* [느린 프로세스 및 차단된 프로세스 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>
+>자세한 내용은 다음 문서를 참조하십시오.
+>* [스레드 덤프](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
+>* [메모리 문제 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
+>* [내장된 프로파일러를 사용하여 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
+>* [느린 프로세스 및 차단된 프로세스 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 
 
@@ -1115,5 +1136,6 @@ JVM(Java Virtual Machine)은 튜닝(특히 Java 7 이후)과 관련하여 크게
 따라서 사용 중인 메모리 양, GC 알고리즘, 실행 시간, 애플리케이션 성능에 미치는 영향을 확인할 수 있습니다. 이렇게 하지 않으면 조정은 &quot;무작위적 처리 장치&quot;에 불과합니다.
 
 >[!NOTE]
-Oracle VM의 경우 다음 정보도 있습니다.
-[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>
+>Oracle VM의 경우 다음 정보도 있습니다.
+>[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)

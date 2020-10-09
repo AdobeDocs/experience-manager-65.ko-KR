@@ -70,6 +70,7 @@ Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의
       >[!NOTE]
       >
       >기본 스토리지 구성은 이제 etc path(경로`/conf/global/settings/community/srpc/defaultconfiguration`) 대신 conf 경로(`/etc/socialconfig/srpc/defaultconfiguration`)에 저장됩니다. 예상대로 기본 [srp를](#zerodt-migration-steps) 작동하도록 하려면 마이그레이션 단계를 따라야 합니다.
+
    ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
