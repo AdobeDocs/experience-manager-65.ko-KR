@@ -3,9 +3,9 @@ title: 검색 결과를 필터링하는 패싯 검색
 description: 검색 패싯을 만들고 수정하며 사용하는 [!DNL Adobe Experience Manager]방법입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2438'
 ht-degree: 2%
 
 ---
@@ -42,19 +42,13 @@ ht-degree: 2%
    >1. 변경 사항을 저장합니다.
 
 
-1. [검색 Forms 편집] 페이지에서 [설명 선택] **[!UICONTROL 탭에서]** 기본 창으로 술어를 드래그합니다. 예를 들어 속성 설명 **[!UICONTROL 을 드래그합니다]**.
+1. [검색 [!UICONTROL 검색 Forms] 편집] 페이지에서 [설명 선택] **[!UICONTROL 탭에서]** 기본 창으로 술어를 드래그합니다. 예를 들어 속성 설명 **[!UICONTROL 을 드래그합니다]**.
 
    ![조건자를 눌러 이동하여 검색 필터를 사용자 정의합니다.](assets/drag_predicate.png)
 
    *그림:조건자를 누르고 이동하여 검색 필터를 사용자 정의합니다.*
 
-1. 설정 탭에서 설명 필드 레이블, 자리 표시자 텍스트 및 설명을 입력합니다. 조건자와 연결할 메타데이터 속성의 올바른 이름을 지정합니다.
-
-   설정 탭의 헤더 레이블은 선택한 술어의 유형을 식별합니다.
-
-   ![설정 탭을 사용하여 조건자의 필수 옵션을 제공합니다](assets/settings.png)
-
-   설정 탭을 사용하여 조건자의 필수 옵션을 제공합니다
+1. [ [!UICONTROL 설정] ] 탭에서 설명 필드 레이블, 자리 표시자 텍스트 및 설명을 입력합니다. 조건자와 연결할 메타데이터 속성의 올바른 이름을 지정합니다. 설정 탭의 헤더 레이블은 [!UICONTROL 선택한 설명] 유형을 식별합니다.
 
 1. 속성 **[!UICONTROL 이름]** 필드에서 술어와 연결할 메타데이터 속성의 유효한 이름을 지정합니다. 검색이 수행되는 이름입니다. 예를 들어, enter `jcr:content/metadata/dc:description` or `./jcr:content/metadata/dc:description`.
 
@@ -154,17 +148,9 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 1. 이 술어의 루트 태그 경로 속성을 구성하여 태그 목록에 있는 다양한 태그를 채웁니다.
 1. 지정한 모든 태그를 포함하는 자산을 검색하려면 **[!UICONTROL 모든 태그 일치 옵션]** 표시를 선택합니다.
 
-   ![태그 설명 일반 설정](assets/tags_predicate.png)
-
-   태그 설명 일반 설정
-
 1. 설명 **** 필드에 선택적 설명을 입력한 다음 완료를 **[!UICONTROL 클릭합니다]**.
 1. 검색 패널로 이동합니다. 태그 **[!UICONTROL 설명]** 이 검색 패널에 추가됩니다.
 1. 자산을 검색할 태그를 지정하거나 제안 목록에서 선택하십시오.
-
-   ![태그 이름을 입력할 때 Experience Manager 제공 제안](assets/tag-suggestion.png)
-
-   *그림:태그의 이름을 입력할 때 Experience Manager 제공 제안.*
 
 1. 지정한 **[!UICONTROL 모든]** 태그가 포함된 일치 항목을 검색하려면 모두 일치를 선택합니다.
 
