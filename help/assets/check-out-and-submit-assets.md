@@ -3,7 +3,7 @@ title: 편집할 에셋 체크 인 및 체크 아웃
 description: 편집할 에셋을 체크 아웃하고 변경 사항이 완료된 후 다시 체크 인하는 방법을 살펴봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 1%
@@ -64,5 +64,5 @@ ht-degree: 1%
 >[!MORELIKETHIS]
 >
 >* [Experience Manager 데스크탑 앱에서 체크 인 및 체크 아웃 이해](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [자산 체크 인 및 체크 아웃을 이해하는 비디오 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+>* [자산 체크 인 및 체크 아웃을 이해하는 비디오 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
