@@ -3,9 +3,9 @@ title: 자산 템플릿
 description: 자산 템플릿 [!DNL Adobe Experience Manager Assets] 과 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---
@@ -50,22 +50,16 @@ ht-degree: 1%
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
 1. 하나 이상의 INDD 템플릿을 업로드하여 미리 사용할 수 [!DNL Experience Manager] 있도록 합니다. 브로셔에 사용할 템플릿을 선택하고 다음을 **[!UICONTROL 클릭합니다]**.
-
-   ![chlimage_1-103](assets/chlimage_1-308.png)
-
 1. 브로셔에 대한 이름과 선택적 설명을 지정합니다.
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (선택 사항) **[!UICONTROL 태그를]** 클릭하고 브로셔에 대해 하나 이상의 태그를 선택합니다. 확인을 **[!UICONTROL 클릭하여]** 선택을 확인합니다.
-
-   ![chlimage_1-105](assets/chlimage_1-310.png)
-
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 새 브로셔가 만들어지는지 확인하는 대화 상자가 나타납니다. 열기 **[!UICONTROL 를]** 클릭하여 브로셔를 편집 모드로 엽니다.
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   또는 대화 상자를 닫고 시작했던 템플릿 페이지의 폴더로 이동하여 만든 브로셔를 확인합니다. 자료 유형이 카드 보기에서 축소판에 나타납니다. 예를 들어 이 경우 축소판에 브로셔 [!UICONTROL 라는] 단어가 표시됩니다.
+   또는 대화 상자를 닫고 시작했던 템플릿 페이지의 폴더로 이동하여 만든 브로셔를 확인합니다. 자료 유형이 카드 보기에서 축소판에 나타납니다. 예를 들어 이 경우 축소판에 브로셔 [!UICONTROL 라는 단어가] 표시됩니다.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
@@ -92,8 +86,6 @@ ht-degree: 1%
 
    편집 가능한 파일은 오른쪽에 표시됩니다. 에서 필드를 편집하려면 템플릿의 해당 필드 [!DNL Experience Manager Assets]에 태그가 지정되어 있어야 합니다 [!DNL InDesign]. 즉, 편집할 수 있는 것으로 표시되어야 합니다 [!DNL InDesign].
 
-   ![chlimage_1-110](assets/chlimage_1-315.png)
-
    >[!NOTE]
    >
    >배포가 템플릿으로부터 데이터 [!DNL Experience Manager] 를 추출하고 [!DNL InDesign Server] 편집할 수 있도록 하기 위해 [!DNL Experience Manager Assets] [!DNL InDesign] 와 통합되어야 합니다. 자세한 내용은 Experience Manager 에셋을 InDesign Server과 [통합을 참조하십시오](/help/assets/indesign.md).
@@ -106,11 +98,7 @@ ht-degree: 1%
 
 1. 미리 **[!UICONTROL 보기를]** 클릭하여 텍스트 변경 내용을 미리 봅니다.
 
-   ![변경 내용 보기](assets/view-changes.png)
-
-1. 이미지를 교체하려면 **[!UICONTROL 자산 파인더를 클릭합니다]**.
-
-   ![chlimage_1-113](assets/chlimage_1-318.png)
+1. 이미지를 교체하려면 **[!UICONTROL 자산 파인더]** chlimage_ ![1-113을 클릭합니다](assets/chlimage_1-318.png).
 
 1. 편집 가능한 필드 목록에서 이미지 필드를 선택한 다음 자산 선택기에서 원하는 이미지를 편집 가능한 필드로 드래그합니다.
 
@@ -121,12 +109,7 @@ ht-degree: 1%
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. 미리 **[!UICONTROL 보기를]** 클릭하여 이미지를 미리 봅니다.
-
-   ![변경 내용 보기](assets/view-changes.png)
-
 1. 다중 페이지 담보에서 특정 페이지를 편집하려면 하단에 있는 페이지 탐색기를 사용합니다.
-
-   ![페이지 탐색기](assets/page-navigator.png)
 
 1. 도구 모음 **[!UICONTROL 에서 미리]** 보기를 클릭하여 모든 변경 사항을 미리 봅니다. 완료를 **[!UICONTROL 클릭하여]** 마케팅 자료에 대한 편집 변경 내용을 저장합니다.
 
@@ -175,11 +158,7 @@ ht-degree: 1%
 
    저장소 또는 컬렉션을 [!DNL Experience Manager Assets] 탐색하고 원하는 템플릿의 위치로 이동한 다음 병합할 위치를 선택할 수 있습니다.
 
-   ![chlimage_1-124](assets/chlimage_1-329.png)
-
    다양한 필터를 적용하여 원하는 템플릿을 검색할 수 있습니다. 예를 들어 파일 유형이나 태그를 기준으로 템플릿을 검색할 수 있습니다.
-
-   ![chlimage_1-125](assets/chlimage_1-330.png)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 1. 미리 **[!UICONTROL 보기 및 순서]** 변경 화면에서 필요한 경우 템플릿을 다시 정렬하고 병합할 템플릿 선택을 미리 봅니다. 그런 다음 도구 모음 **[!UICONTROL 에서 [다음]** ]을 클릭합니다.
