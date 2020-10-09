@@ -4,10 +4,10 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '9613'
-ht-degree: 1%
+source-wordcount: '9565'
+ht-degree: 0%
 
 ---
 
@@ -508,9 +508,6 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 
 1. 자산을 클릭하여 해당 페이지를 엽니다.
 1. Experience Manager 인터페이스의 목록에서 **[!UICONTROL 표현물]** 을 선택합니다.
-
-   ![메뉴를 열고 표현물 옵션을 선택하는 왼쪽 레일](assets/renditions_menu.png)
-
 1. 표현물 **** 패널에서 자산에 대해 생성된 표현물 목록을 봅니다.
 
    ![자산 세부 사항 페이지의 변환 패널](assets/renditions_panel.png)
@@ -666,10 +663,6 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
 목록 보기 및 열 보기에서 **[!UICONTROL 선택]** 옵션은 자산 축소판 위에 포인터를 두면 표시됩니다.
 
-![목록 보기에서 자산 선택](assets/select_quick_in_listview.png)
-
-![열 보기에서 자산 선택](assets/select_quick_in_columnview.png)
-
 카드 보기에서는 **[!UICONTROL 선택]** 옵션이 빠른 작업으로 표시됩니다.
 
 ![카드 보기에서 빠른 작업 선택](assets/select_quick_action.png)
@@ -690,9 +683,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 
    * 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 편집을]** 클릭합니다.
    * 카드 **[!UICONTROL 보기에서 자산에 표시되는 편집]** 옵션을 클릭합니다.
-   * 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
-
-   ![도구 모음의 편집 옵션](assets/do-not-localize/edit_icon.png)
+   * 도구 모음 **[!UICONTROL 의]** 도구 모음 ![편집 옵션을 클릭합니다](assets/do-not-localize/edit_icon.png).
 
 1. 이미지를 자르려면 자르기 옵션 **[!UICONTROL 을]** 클릭하여 ![이미지를 자릅니다](assets/do-not-localize/crop.png).
 
@@ -751,9 +742,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 1. 다음 중 **[!UICONTROL 하나에서 주석]** 옵션을 클릭합니다.
 
    * [빠른 작업](/help/assets/managing-assets-touch-ui.md#quick-actions)
-   * 자산을 선택하거나 자산 페이지로 이동한 후 도구 모음에서
-
-   ![주석 옵션](assets/annotate-option.png)
+   * 자산을 선택하거나 자산 페이지로 이동한 후 도구 모음에서.
 
 1. 타임라인 아래쪽에 있는 **[!UICONTROL 주석]** 상자에 주석을 추가합니다. 또는, 이미지에서 영역을 마크업하고 주석 **[!UICONTROL 추가 대화 상자에 주석을]** 추가합니다.
 
@@ -768,8 +757,6 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
    >관리자가 아닌 사용자의 경우 CRXDE의 경로에서 사용자에게 읽기 권한이 있는 경우에만 제안 사항이 `/home` 표시됩니다.
 
 1. 주석을 추가한 후 **[!UICONTROL 추가를]** 클릭하여 저장합니다. 주석에 대한 알림이 Aaron에게 전송됩니다.
-
-   ![주석을 저장할 추가 단추](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -799,12 +786,7 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
 1. 자산에 대해 저장된 주석을 보려면 자산의 위치로 이동하고 자산의 자산 페이지를 엽니다.
 
 1. Experience Manager 인터페이스에서 **[!UICONTROL 타임라인을 선택합니다]**.
-
-   ![Experience Manager에서 사용할 수 있는 타임라인 옵션](assets/view-timeline.png)
-
 1. 타임라인의 **[!UICONTROL 모두]** 표시 목록에서 **[!UICONTROL 주석을]** 기준으로 결과를 필터링하려면 주석을 선택합니다.
-
-   ![타임라인에 모든 목록 표시](assets/timeline-show-all-option.png)
 
    [ **[!UICONTROL 타임라인]** ] 패널에서 주석을 클릭하여 이미지에 해당하는 주석을 봅니다.
 
@@ -833,8 +815,6 @@ CUG는 자산에 대한 액세스를 제한하는 별도의 방법입니다. 폴
    검토 상태만 인쇄하려면 타임라인에서 선택합니다.
 
 1. Click **[!UICONTROL Print]** from the toolbar.
-
-   ![툴바의 인쇄 옵션](assets/do-not-localize/print.png)
 
 1. 인쇄 대화 상자에서 PDF에 주석/검토 상태를 표시할 위치를 선택합니다. 예를 들어 인쇄된 이미지가 포함된 페이지의 오른쪽 상단에 주석/상태를 인쇄하려면 **왼쪽 위** 설정을 사용합니다. 기본적으로 선택되어 있습니다.
 
@@ -923,8 +903,6 @@ CJK(중국어, 일본어 및 한국어)로 주석을 인쇄하도록 구성할 �
 
    * 타임라인에서 **[!UICONTROL 모두]** 표시를 [!UICONTROL 클릭합니다].
    * 버전을 **[!UICONTROL 클릭합니다]**. 자산에 대해 만들어진 모든 버전은 왼쪽 사이드바에 나열됩니다.
-
-      ![ 타임라인에서 버전 선택 옵션](assets/versions_option.png)
 
    * 자산의 특정 버전을 선택하고 버전 미리 **[!UICONTROL 보기를 클릭합니다]**.
 
