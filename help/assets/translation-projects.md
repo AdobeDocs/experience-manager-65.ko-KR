@@ -3,9 +3,9 @@ title: 번역 프로젝트 만들기
 description: 에서 번역 프로젝트를 만드는 방법을 [!DNL Adobe Experience Manager]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1885'
 ht-degree: 5%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 5%
 
 언어 사본을 만들려면 사용자 인터페이스의 참조 레일에서 사용할 수 있는 다음 언어 복사 워크플로우 중 하나를 [!DNL Experience Manager] 트리거합니다.
 
-* **작성 및 번역**: 이 워크플로우에서는 번역될 자산이 번역하려는 언어의 언어 루트로 복사됩니다. 또한 선택한 옵션에 따라 프로젝트 콘솔의 자산에 대한 번역 프로젝트가 생성됩니다. 설정에 따라 번역 프로젝트를 수동으로 시작하거나 번역 프로젝트를 만드는 즉시 자동으로 실행할 수 있습니다.
+* **작성 및 번역**:이 워크플로우에서는 번역될 자산이 번역하려는 언어의 언어 루트로 복사됩니다. 또한 선택한 옵션에 따라 프로젝트 콘솔의 자산에 대한 번역 프로젝트가 생성됩니다. 설정에 따라 번역 프로젝트를 수동으로 시작하거나 번역 프로젝트를 만드는 즉시 자동으로 실행할 수 있습니다.
 
-* **언어 사본 업데이트**: 이 워크플로우를 실행하여 추가 자산 그룹을 번역하고 특정 로케일의 언어 복사본에 포함시킬 수 있습니다. 이 경우 번역된 자산은 이미 이전에 번역된 자산이 들어 있는 대상 폴더에 추가됩니다.
+* **언어 사본 업데이트**:이 워크플로우를 실행하여 추가 자산 그룹을 번역하고 특정 로케일의 언어 복사본에 포함시킬 수 있습니다. 이 경우 번역된 자산은 이미 이전에 번역된 자산이 들어 있는 대상 폴더에 추가됩니다.
 
 >[!NOTE]
 >
@@ -47,8 +47,6 @@ ht-degree: 5%
 1. 맨 아래에 있는 **[!UICONTROL 만들기]** 및 번역을 클릭합니다.
 
 1. [ **[!UICONTROL Target 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
-
-   ![대상 언어 선택](assets/target-language.png)
 
 1. 프로젝트 **[!UICONTROL 목록]** 에서 구조만 **[!UICONTROL 만들기를 선택합니다]**.
 
@@ -115,7 +113,7 @@ ht-degree: 5%
 
    ![자산 속성 페이지에서 번역된 메타데이터 보기](assets/translated-metadata-asset-properties.png)
 
-   *그림: 자산 속성 페이지의 번역된 메타데이터*
+   *그림:자산 속성 페이지의 번역된 메타데이터*
 
    >[!NOTE]
    >
@@ -132,8 +130,6 @@ ht-degree: 5%
 
 1. [ **[!UICONTROL Target 언어]** ] 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
-   ![대상 언어 선택](assets/target-language.png)
-
 1. 프로젝트 **[!UICONTROL 목록]** 에서 **[!UICONTROL 기존 번역 프로젝트에]** 추가를 선택하여 폴더에서 번역 워크플로우를 실행합니다.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -143,8 +139,6 @@ ht-degree: 5%
    >기존 번역 프로젝트에 **[!UICONTROL 추가]** 옵션을 선택하는 경우 프로젝트 설정이 기존 프로젝트의 설정과 정확히 일치하는 경우에만 번역 프로젝트가 기존 프로젝트에 추가됩니다. 그렇지 않으면 새 프로젝트가 만들어집니다.
 
 1. 기존 **[!UICONTROL 번역 프로젝트]** 목록에서 프로젝트를 선택하여 번역 자산을 추가합니다.
-
-   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 변환할 에셋이 대상 폴더에 추가됩니다. 업데이트된 폴더가 언어 사본 **[!UICONTROL 섹션 아래에]** 나열됩니다.
 
@@ -174,8 +168,6 @@ ht-degree: 5%
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
    변환 작업 시작을 알리는 메시지가 표시됩니다.
-
-   ![chlimage_1-82](assets/chlimage_1-82.png)
 
 1. 번역 작업의 상태를 보려면 **[!UICONTROL 번역 작업]** 타일 맨 아래에 있는 줄임표를 클릭합니다.
 
@@ -210,8 +202,6 @@ ht-degree: 5%
 
 1. 프로젝트 **[!UICONTROL 제목]** 필드에 프로젝트 제목을 입력합니다.
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
-
 1. 시작을 **[!UICONTROL 클릭합니다]**.
 1. 프로젝트 콘솔로 이동합니다. 번역 폴더가 프로젝트 콘솔로 복사됩니다.
 
@@ -230,8 +220,6 @@ ht-degree: 5%
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    변환 작업 시작을 알리는 메시지가 표시됩니다.
-
-   ![chlimage_1-92](assets/chlimage_1-92.png)
 
 1. 번역 작업의 상태를 보려면 **[!UICONTROL 번역 작업]** 타일 맨 아래에 있는 줄임표를 클릭합니다.
 
@@ -261,8 +249,6 @@ ht-degree: 5%
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. 기존 **[!UICONTROL 번역 프로젝트]** 목록에서 프로젝트를 선택하여 번역 자산을 추가합니다.
-
-   ![프로젝트 선택](assets/select-a-project.png)
 
 1. 시작을 **[!UICONTROL 클릭합니다]**.
 1. 나머지 절차를 완료하려면 기존 번역 프로젝트에 [추가](translation-projects.md#add-to-existing-translation-project) 9-14단계를 참조하십시오.
