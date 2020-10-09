@@ -3,10 +3,10 @@ title: 관련 자산
 description: 몇 가지 일반적인 특성을 공유하는 디지털 자산을 연결하는 방법을 알아봅니다. 또한 디지털 자산 간의 소스 파생적인 관계를 만들 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 3%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
@@ -44,20 +44,16 @@ ht-degree: 3%
    * 파생된 파일과 관련시키려면 목록에서 **[!UICONTROL 파생됨]** 을 선택합니다.
    * 자산 간의 양방향 관계를 만들려면 목록에서 **[!UICONTROL 다른]** 항목을 선택합니다.
 
-   ![chlimage_1-276](assets/chlimage_1-276.png)
-
 1. 자산 **[!UICONTROL 선택]** 화면에서 연결하려는 자산의 위치로 이동하고 선택합니다.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. 확인을 **[!UICONTROL 클릭합니다]**.
-1. Click **[!UICONTROL OK]** to close the dialog. 3단계에서 선택한 관계에 따라 관련 자산이 **[!UICONTROL 관련]** 섹션의 해당 카테고리 아래에 나열됩니다. 예를 들어, 관련된 자산이 현재 자산의 소스 파일인 경우 **[!UICONTROL 소스]**&#x200B;아래에 나열됩니다.
+1. Click **[!UICONTROL OK]** to close the dialog. 3단계에서 선택한 관계에 따라 관련 자산이 **[!UICONTROL 관련]** 섹션의 해당 카테고리 아래에 나열됩니다. 예를 들어, 관련된 자산이 현재 자산의 소스 파일인 경우 **[!UICONTROL 소스 아래에 나열됩니다]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. 자산 관계를 해제하려면 도구 모음에서 **[!UICONTROL 비연관]** 을 클릭합니다.
-
-   ![자산 연결 해제](assets/do-not-localize/link-unrelate-icon.png)
+1. 자산 관계를 해제하려면 도구 모음에서 **[!UICONTROL 비연관]** 자산 ![](assets/do-not-localize/link-unrelate-icon.png) 을 클릭합니다.
 
 1. 관계 **[!UICONTROL 제거(Remove Relations) 대화 상자에서 연관되지 않을 자산을]** 선택하고 연결 해제(Unrelate)를 **[!UICONTROL 클릭합니다]**.
 
@@ -75,13 +71,11 @@ ht-degree: 3%
 
 ![자산 속성 페이지에는 번역용으로 포함시킬 관련 자산의 소스 파일이 표시됩니다](assets/asset-properties-source-asset.png)
 
-*그림: 번역용으로 포함할 관련 자산의 소스 자산입니다.*
+*그림:번역용으로 포함할 관련 자산의 소스 자산입니다.*
 
 1. 새 번역 프로젝트 [만들기의 단계에 따라 소스 폴더의 자산을 대상 언어로](translation-projects.md#create-a-new-translation-project)변환합니다. 예를 들어 이 경우 자산을 프랑스어로 번역합니다.
 
 1. 프로젝트 [!UICONTROL 페이지에서] 번역 폴더를 엽니다.
-
-   ![chlimage_1-283](assets/chlimage_1-283.png)
 
 1. 프로젝트 타일을 클릭하여 세부 사항 페이지를 엽니다.
 
@@ -97,8 +91,4 @@ ht-degree: 3%
 
 1. 소스와 관련된 자산이 번역되었는지 확인하려면 소스 자산을 클릭합니다.
 
-   ![chlimage_1-287](assets/chlimage_1-287.png)
-
 1. 소스와 관련된 자산을 선택한 다음 자산에 **[!UICONTROL 표시를 클릭합니다]**. 번역된 관련 자산이 표시됩니다.
-
-   ![chlimage_1-288](assets/chlimage_1-288.png)
