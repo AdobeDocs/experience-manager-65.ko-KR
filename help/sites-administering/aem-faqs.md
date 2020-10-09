@@ -8,9 +8,9 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ AEM 문제 해결 및 구성 문제에 대한 답변을 알 수 있습니다.
 #### 바이너리 없는 배포를 활성화하려면 어떻게 해야 합니까? {#how-do-i-enable-binary-less-distribution}
 
 바이너리 없는 배포를 활성화하려면 공유 물방울 스토어로 배포하십시오.
-에이전트가 사용 중인 팩토리 PID() `useBinaryReferences` `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`**를 사용하여 OSGI 구성의 속성을 확인합니다.
+에이전트가 사용 중인 팩토리 PID() `useBinaryReferences` `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`** 를 사용하여 OSGI 구성의 속성을 확인합니다.
 
 #### AEM 사이트 콘솔에서 페이지 계층 구조를 탐색하는 동안 오류 메시지를 사용자 지정하려면 어떻게 합니까? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
 
@@ -77,7 +77,7 @@ Response 애플리케이션에서 AEM 컨텐츠 서비스를 사용하는 방법
 
 [1] Adobe- [Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
-[2] [Apache Sling: Sling Models](https://sling.apache.org/documentation/bundles/models.html)
+[2] [Apache Sling:Sling Models](https://sling.apache.org/documentation/bundles/models.html)
 
 #### AEM 6.4 설문 조사 팝업을 비활성화하는 방법? {#how-to-disable-aem-survey-pop-up}
 
@@ -118,7 +118,7 @@ AEM을 다시 시작할 때마다 UI나 `curl` 명령(예: 아래)을 통해 구
 
 #### AEM 6.5 인스턴스로 자산 인사이트를 구성하는 방법? {#how-to-configure-asset-insights-with-aem-instance}
 
-DTM(Adobe 활성화)을 통해 배포된 Experience Manager에 대한 자산 인사이트를 설정하고 구성하려면 AEM Assets [과 함께 자산 인사이트 설정을 참조하십시오](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
+DTM(Adobe 활성화)을 통해 배포된 Experience Manager에 대한 자산 인사이트를 설정하고 구성하려면 AEM Assets [에서 자산 인사이트 설정 방법을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 #### 관리 콘솔을 사용자 지정하는 방법 {#how-to-customize-admin-consoles}
 
