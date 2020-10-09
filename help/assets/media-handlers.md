@@ -3,7 +3,7 @@ title: 미디어 핸들러 및 워크플로우를 사용하여 자산 처리
 description: 미디어 핸들러와 워크플로우를 사용하여 디지털 자산에 대한 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 2%
@@ -446,7 +446,7 @@ package my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;tr
 
 * ImageMagick과 [Ghostscript를 사용하여 EPS](https://www.imagemagick.org/script/index.php) 및 [AI 변환](https://www.ghostscript.com/).
 * FFmpeg를 사용하여 FLV 비디오 [트랜스코딩](https://ffmpeg.org/).
-* LFM을 사용한 MP3 [인코딩](http://lame.sourceforge.net/).
+* LFM을 사용한 MP3 [인코딩](https://lame.sourceforge.io/).
 * SOX를 사용한 [오디오](http://sox.sourceforge.net/)처리
 
 >[!NOTE]
