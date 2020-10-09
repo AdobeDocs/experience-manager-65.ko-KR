@@ -3,9 +3,9 @@ title: 디지털 자산의 메타데이터를 관리할 수 있습니다 [!DNL A
 description: 메타데이터의 유형과 메타데이터를 기반으로 에셋을 자동으로 구성하고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
@@ -133,10 +133,10 @@ To change the limit, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]**
 
 파일에 메타데이터를 임베드하는 다양한 방법이 있습니다. 다양한 인코딩 표준이 지원됩니다.
 
-* XMP: 추출된 메타데이터 [!DNL Assets] 를 저장소 내에 저장하는 데 사용됩니다.
-* ID3: for audio and video files.
-* Exif: for image files.
-* 기타/레거시: 출처 [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]등
+* XMP:추출된 메타데이터 [!DNL Assets] 를 저장소 내에 저장하는 데 사용됩니다.
+* ID3:for audio and video files.
+* Exif:for image files.
+* 기타/레거시:출처 [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]등
 
 ### XMP {#xmp}
 
@@ -219,7 +219,7 @@ Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항�
 ### 인쇄 관련 메타데이터 {#print-specific-metadata}
 
 * PDF 및 PDF/X - Adobe PDF 및 타사 애플리케이션
-* PRISM - [업계 표준 메타데이터에 대한 게시 요구](https://www.prismstandard.org)사항.
+* PRISM - [업계 표준 메타데이터에 대한 게시 요구](https://www.idealliance.org/prism-metadata/)사항.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - 페이지 텍스트를 위한 XMP 메타데이터
 
