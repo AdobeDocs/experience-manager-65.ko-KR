@@ -3,7 +3,7 @@ title: ' [!DNL Assets] 통합 [!DNL InDesign Server]'
 description: 통합 방법 [!DNL Adobe Experience Manager Assets] 을 살펴보십시오 [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >IDML은 파일의 모든 내용을 렌더링하는 XML 기반 [!DNL InDesign] 포맷입니다. 압축 패키지로 저장되며 [ZIP](https://www.techterms.com/definition/zip) 압축을 사용합니다. 자세한 내용은 [InDesign 교환 형식 INX 및 IDML을 참조하십시오](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML은 파일의 모든 내용을 렌더링하는 XML 기반 [!DNL InDesign] 포맷입니다. 압축 패키지로 저장되며 [ZIP](https://www.techterms.com/definition/zip) 압축을 사용합니다. 자세한 내용은 [InDesign 교환 형식 INX 및 IDML을 참조하십시오](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
