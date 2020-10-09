@@ -1,16 +1,16 @@
 ---
-title: AEM 6.5 릴리스 노트
+title: Adobe Experience Manager 6.5 릴리스 노트
 description: AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 다룹니다.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 95%
+source-wordcount: '374'
+ht-degree: 93%
 
 ---
 
 
-# AEM 6.5 릴리스 노트
+# Adobe Experience Manager 6.5 릴리스 노트
 
 AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 다룹니다.
 
