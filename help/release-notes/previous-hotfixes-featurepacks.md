@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 이전 서비스 팩 릴리스 노�
 description: 6. [!DNL Adobe Experience Manager] 5 서비스 팩 릴리스 노트입니다.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 359eb60c0ba3845d7aa0ca58488aa945a9f45aea
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '11484'
+source-wordcount: '11487'
 ht-degree: 98%
 
 ---
@@ -1259,7 +1259,7 @@ Remove one mention of this fix.
 
 #### 자산 - 포함
 
-* [!DNL Experience Manager Assets]에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [Experience Manager Assets에 MSM을 사용하여 자산 재사용](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html)을 참조하십시오. NPR-29199: CQ-4259922용 핫픽스
+* [!DNL Experience Manager Assets]에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [Experience Manager Assets에 MSM을 사용하여 자산 재사용](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/reuse-assets-using-msm.html)을 참조하십시오. NPR-29199: CQ-4259922용 핫픽스
 
 #### 사이트 - 포함
 
