@@ -3,9 +3,9 @@ title: 자산 Digital Rights Management
 description: 라이선스가 부여된 에셋의 에셋 만료 상태 및 정보를 관리하는 방법을 [!DNL Experience Manager]알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 97d3edf155ddeabf3f39139c9079621c3627820b
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1400'
 ht-degree: 1%
 
 ---
@@ -20,10 +20,6 @@ ht-degree: 1%
 에셋 만료는 에셋에 대한 라이선스 요구 사항을 적용하는 효과적인 방법입니다. 이렇게 하면 게시된 자산이 만료될 때 게시 취소되어 라이선스 위반의 가능성을 방지할 수 있습니다. 관리자 권한이 없는 사용자는 만료된 자산을 편집, 복사, 이동, 게시 및 다운로드할 수 없습니다.
 
 콘솔에서 자산의 만료 상태를 카드 및 목록 보기 모두에서 볼 수 [!DNL Assets] 있습니다.
-
-![expired_flag_card](assets/expired_flag_card.png)
-
-*그림:카드 보기에서 카드의 플래그는 만료된 자산을 나타냅니다.*
 
 ![expired_flag_list](assets/expired_flag_list.png)
 
@@ -40,17 +36,11 @@ ht-degree: 1%
 참조 레일에서 자산의 만료 상태를 볼 수도 **[!UICONTROL 있습니다]** . 복합 자산과 참조된 하위 자산, 컬렉션 및 프로젝트 간의 자산 만료 상태 및 관계를 관리합니다.
 
 1. 참조하는 웹 페이지와 복합 자산을 보려는 자산으로 이동합니다.
-1. 자산을 선택하고 [!DNL Experience Manager] 로고를 클릭합니다.
-
-1. 메뉴에서 **[!UICONTROL 참조]** 를 선택합니다.
-
-   ![chlimage_1-146](assets/chlimage_1-146.png)
-
-   만료된 자산의 경우, 참조 레일에 **[!UICONTROL 자산 만료가 맨 위에]** 표시됩니다.
+1. 자산을 선택하고 왼쪽 레일에서 **[!UICONTROL 참조를]** 엽니다. 만료된 자산의 경우, [!UICONTROL 참조] 레일에 **[!UICONTROL 는]** 맨 위에 만료 상태자산이 만료되었음을 표시합니다.
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   자산이 만료된 하위 자산이 있는 경우 참조 레일에 **[!UICONTROL 자산이 만료된 하위 자산이 표시됩니다]**.
+   자산이 만료된 하위 자산이 있는 경우 [!UICONTROL 참조] 레일에 자산 **[!UICONTROL 이 만료된 하위 자산 상태가 표시됩니다]**.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -61,17 +51,11 @@ ht-degree: 1%
 1. 콘솔에서 도구 모음 [!DNL Assets] 의 **** 검색을 클릭하여 Omnisearch 상자를 표시합니다.
 
 1. Omnisearch 상자에 커서를 놓고 Enter 키를 눌러 검색 결과 페이지를 표시합니다.
-
-   ![chlimage_1-150](assets/chlimage_1-150.png)
-
-1. 검색 패널을 표시하려면 [!DNL Experience Manager] 로고를 클릭합니다.
-1. 만료 **[!UICONTROL 상태]** 옵션을 클릭하여 확장합니다.
+1. 왼쪽 레일에 있는 검색 패널을 엽니다. 만료 **[!UICONTROL 상태]** 옵션을 클릭하여 확장합니다.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. 만료됨을 **[!UICONTROL 선택합니다]**. 만료된 자산이 검색 결과에 표시됩니다.
-
-   ![chlimage_1-153](assets/chlimage_1-153.png)
+1. 만료됨을 **[!UICONTROL 선택합니다]**. 검색 결과를 필터링한 후 만료된 자산만 표시됩니다.
 
 만료됨 **[!UICONTROL 옵션을]** 선택하면 [!DNL Assets] 콘솔에는 복합 자산에서 참조하는 만료된 자산과 하위 자산만 표시됩니다. 만료된 하위 자산을 참조하는 복합 자산은 하위 자산이 만료되는 즉시 표시되지 않습니다. 대신, 스케줄러가 다음에 실행될 때 만료된 하위 자산을 참조한다는 것을 감지하면 [!DNL Experience Manager] 표시됩니다.
 
@@ -84,9 +68,7 @@ ht-degree: 1%
 1. 구성 [!DNL Experience Manager] 관리자를 엽니다.
 1. Adobe CQ **[!UICONTROL DAM 만료 알림을 선택합니다]**. 기본적으로 **[!UICONTROL 시간 기반 스케줄러가]** 선택되어 자산이 만료된 하위 자산이 있는지 여부를 특정 시간에 확인할 작업을 예약합니다. 작업이 완료되면, 하위 자산 및 참조된 자산이 만료된 것으로 검색 결과에 표시됩니다.
 
-   ![chlimage_1-154](assets/chlimage_1-154.png)
-
-1. 작업을 주기적으로 실행하려면 시간 기반 스케줄러 규칙 **** 필드를 지우고 시간(초) **[!UICONTROL 을]** [주기 스케줄러] 필드에서 수정합니다. 예: 예제 표현식 &#39;0 &amp;ast;&amp;ast;?&#39; 00시간에 작업을 트리거합니다.
+1. 작업을 주기적으로 실행하려면 시간 기반 스케줄러 규칙 **** 필드를 지우고 시간(초) **[!UICONTROL 을]** [주기 스케줄러] 필드에서 수정합니다. 예를 들어 예제 표현식은 작업 `0 0 0 &ast; &ast; ?` 을 00시간에 트리거합니다.
 1. 자산이 만료될 때 이메일을 **[!UICONTROL 받으려면 이메일]** 보내기를 선택합니다.
 
    >[!NOTE]
@@ -102,9 +84,6 @@ ht-degree: 1%
 콘솔은 자산에 대한 다양한 상태를 표시할 수 [!DNL Assets] 있습니다. 특정 자산의 현재 상태에 따라 카드 보기에는 상태를 설명하는 레이블이 표시됩니다(예: 만료됨, 게시됨, 승인됨, 거부됨 등).
 
 1. 사용자 [!DNL Assets] 인터페이스에서 자산을 선택합니다.
-
-   ![chlimage_1-155](assets/chlimage_1-155.png)
-
 1. Click **[!UICONTROL Publish]** from the toolbar. 도구 모음에 **게시** 가 표시되지 **[!UICONTROL 않는 경우 도구]** 모음에서 **[!UICONTROL 추가]** 를 ![클릭하고](assets/do-not-localize/publish-globe.png) 게시옵션게시 옵션을찾습니다.
 1. 메뉴에서 **[!UICONTROL 게시를]** 선택한 다음 확인 대화 상자를 닫습니다.
 1. 선택 모드를 종료합니다. 자산에 대한 게시 상태는 카드 보기의 자산 축소판 아래에 표시됩니다. 목록 보기에서 게시된 열에는 자산이 게시된 시간이 표시됩니다.
