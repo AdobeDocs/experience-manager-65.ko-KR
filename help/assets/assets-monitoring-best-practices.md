@@ -3,7 +3,7 @@ title: 배포 [!DNL Assets] 모니터링을 위한 모범 사례
 description: 배포가 배포된 후 환경 및 성능 [!DNL Adobe Experience Manager] 을 모니터링하기 위한 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 개발 단계나 고부하 상황에서 라이브 모니터링을 수행하여 환경의 성능 특성을 이해해야 합니다. 일반적으로 라이브 모니터링은 도구 모음을 사용하여 수행해야 합니다. 다음은 권장 사항입니다.
 
-* [시각적 VM](https://visualvm.java.net/):Visual VM을 사용하면 CPU 사용량, Java 메모리 사용을 비롯한 자세한 Java VM 정보를 볼 수 있습니다. 또한 배포에서 실행되는 코드를 샘플링하고 평가할 수 있습니다.
+* [시각적 VM](https://visualvm.github.io/):Visual VM을 사용하면 CPU 사용량, Java 메모리 사용을 비롯한 자세한 Java VM 정보를 볼 수 있습니다. 또한 배포에서 실행되는 코드를 샘플링하고 평가할 수 있습니다.
 * [위쪽](https://man7.org/linux/man-pages/man1/top.1.html):맨 위에는 CPU, 메모리 및 IO 사용을 비롯한 사용 통계를 표시하는 대시보드를 여는 Linux 명령입니다. 인스턴스의 상황에 대한 고급 개요를 제공합니다.
 * [위쪽](https://hisham.hm/htop/):맨 위에는 대화형 프로세스 뷰어가 있습니다. Top이 제공할 수 있는 기능 외에 자세한 CPU 및 메모리 사용량을 제공합니다. Top은 `yum install htop` 또는 을 사용하여 대부분의 Linux 시스템에 설치할 수 `apt-get install htop`있습니다.
 
