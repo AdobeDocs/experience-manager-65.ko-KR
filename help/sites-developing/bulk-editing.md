@@ -10,21 +10,21 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: d14688b17f47a2b1c11833eac10413d58276f6be
+source-git-commit: b08149e00c418319ebacec71c56472ad4e8e1089
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 7%
+ht-degree: 13%
 
 ---
 
 
-# Configuring your Page for Bulk Editing of Page Properties {#configuring-your-page-for-bulk-editing-of-page-properties}
+# 페이지 속성의 벌크 편집을 위한 페이지 구성 {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 [페이지 속성의](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) 벌크 편집을 사용하면 여러 페이지의 속성을 한 번에 편집할 수 있습니다.
 
 값이 다를 수 있으므로 페이지 속성이 기본값으로 벌크 편집용으로 활성화되지 않습니다. 설명대로 허용되어야 합니다(활성화됨). 벌크 편집에 사용할 수 있는 페이지 속성을 정의할 때는 다음과 같은 특정 의미를 고려해야 합니다.
 
-* 특정 필드는 일반적으로 고유합니다. 예: 페이지 제목. 한 값이 적용되는 경우 벌크 편집을 위해 이러한 필드를 활성화할지 여부를 결정해야 합니다.
+* 특정 필드는 일반적으로 고유합니다.예: 페이지 제목. 한 값이 적용되는 경우 벌크 편집을 위해 이러한 필드를 활성화할지 여부를 결정해야 합니다.
 * 특정 필드에는 여러 값이 있을 수 있습니다. 이 경우 렌더링할 때 의미 있는 표현이 필요합니다.
 
    예를 들어 &quot;발행물 준비&quot;를 나타내는 확인란이 있습니다. 벌크 편집(예: 준비, 검토 중, 진행 중) 전에 여러 값이 있을 수 있습니다.
@@ -36,13 +36,14 @@ ht-degree: 7%
 >* 클래식 UI에서는 사용할 수 없습니다.
 >* Live Copy의 페이지에는 사용할 수 없습니다.
 >* 동일한 리소스 유형의 페이지만 사용할 수 있습니다.
+
 >
 
 
 
 >[!NOTE]
 >
->자산에 대해서도 벌크 편집을 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 [다중 자산의 속성 편집](/help/assets/managing-multiple-assets.md)을 참조하십시오. 스키마 편집기를 사용하여 자산에 대한 벌크 메타데이터 편집기의 필드를 사용자 정의할 [수 있습니다](/help/assets/metadata-schemas.md).
+>자산에 대해서도 벌크 편집을 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 [다중 자산의 속성 편집](/help/assets/metadata.md)을 참조하십시오. 스키마 편집기를 사용하여 자산에 대한 벌크 메타데이터 편집기의 필드를 사용자 정의할 [수 있습니다](/help/assets/metadata-schemas.md).
 
 ## 필드 활성화 {#enabling-a-field}
 
@@ -56,13 +57,14 @@ ht-degree: 7%
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
+
 >
 
 
 
 필드는 페이지 구성 요소에서 사용할 수 있습니다(템플릿은&#x200B;*아님* ).
 
-1. CRXDE Lite(또는 상응하는 방법)를 사용하여 페이지 구성 요소를 엽니다.
+1. CRXDE Lite(또는 상응하는 방법)을 사용하여 페이지 구성 요소를 엽니다.
 
    예를 들어,`/apps/core/wcm/components/page/v1/page`
 
@@ -76,6 +78,7 @@ ht-degree: 7%
    * **이름**: `allowBulkEdit`
    * **유형**: `Boolean`
    * **값**: `true`
+
    예를 들어 표준 페이지 [기반 구성 요소의 경우](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
