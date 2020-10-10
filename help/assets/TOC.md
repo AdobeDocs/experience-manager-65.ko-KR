@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: 자산 안내서
+user-guide-title: Assets 안내서
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 90%
+source-wordcount: '619'
+ht-degree: 89%
 
 ---
 
 
-# 자산 안내서 {#assets}
+# Assets 안내서 {#assets}
 
 + [[!DNL Assets] 사용 안내서](home.md)
 + [Experience Manager 6.5 자산 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/release-notes/assets.html)
@@ -23,6 +23,7 @@ ht-degree: 90%
 + Experience Manager 자산 사용 {#using}
    + [자산 홈 페이지 경험](assets-home-page.md)
    + [디지털 에셋 검색](search-assets.md)
+   + [에셋 메타데이터를 사용한 작업](metadata.md)
    + [다국어 자산](multilingual-assets.md)
    + [ [!DNL Adobe Stock]  Assets에서 자산 사용](aem-assets-adobe-stock.md)
    + [3D 자산 미리 보기](previewing-3d-assets.md)
@@ -91,28 +92,24 @@ ht-degree: 90%
 + 자산 관리 {#administer}
    + [지원되는 파일 형식](assets-formats.md)
    + [검색 패싯](search-facets.md)
-   + [자산에 대한 메타데이터 관리](metadata.md)
+   + [메타데이터 개념 이해](metadata-concepts.md)
+   + [메타데이터 기능 구성](metadata-config.md)
    + [표현물로 XMP 원본에 쓰기](xmp-writeback.md)
    + [자산 링크 공유](link-sharing.md)
    + [자산 보고서](asset-reports.md)
    + [향상된 스마트 태그](enhanced-smart-tags.md)
    + [메타데이터, 이미지 및 비디오 처리 프로필](processing-profiles.md)
-   + [계단식 메타데이터](cascading-metadata.md)
    + [자산 편집기 페이지 만들기 및 구성](assets-finder-editor.md)
    + [자산 크기 조정 가이드](assets-sizing-guide.md)
-   + [메타데이터 스키마 참조](meta-ref.md)
    + [자산 번역 우수 사례](best-practices-for-translating-assets-efficiently.md)
    + [자산 성능 조정 가이드](performance-tuning-guidelines.md)
-   + [메타데이터 추가 또는 편집 방법](meta-edit.md)
    + [자산 마이그레이션 안내서](assets-migration-guide.md)
-   + [XMP 메타데이터](xmp.md)
    + [자산 네트워크 고려사항](assets-network-considerations.md)
    + [에셋 및 미디어 라이브러리](medialibrary.md)
    + [PDF 래스터라이저 사용](aem-pdf-rasterizer.md)
    + [업로드 제한 구성](configuring-asset-upload-restrictions.md)
    + [Experience Manager 및 Creative Cloud 통합](aem-cc-integration-best-practices.md)
    + [InDesign 서버와 통합](indesign.md)
-   + [메타데이터 프로필](metadata-profiles.md)
    + [자산의 디지털 권한 관리](drm.md)
    + [자산 통찰력에 데모 패키지 사용](touch-ui-using-demo-package-for-asset-insights.md)
    + [자산 파일 형식 우수 사례](assets-file-format-best-practices.md)
@@ -120,14 +117,11 @@ ht-degree: 90%
    + [Camera Raw 지원](camera-raw.md)
    + [Apache Tika를 사용하여 MIME 유형의 자산 탐지](detect-asset-mime-type-with-tika.md)
    + [이미징 코드 변환 라이브러리](imaging-transcoding-library.md)
-   + [IPTC 메타데이터 지원](iptc-support.md)
    + [메타데이터 스키마](metadata-schemas.md)
    + [컬렉션, 코드 조각 및 코드 조각 템플릿에 대한 다중 임차인](multi-tenancy.md)
    + [자산에 워터마크 지정](watermarking.md)
-   + [벌크 메타데이터 가져오기 및 내보내기](metadata-import-export.md)
    + [자산 템플릿](asset-templates.md)
    + [Creative Cloud와 폴더 공유 모범 사례](aem-cc-folder-sharing-best-practices.md)
-   + [폴더 메타데이터 스키마](folder-metadata-schema.md)
    + [스마트 태그 관리](managing-smart-tags.md)
 + 브랜드 포털 {#brandportal}
    + [Brand Portal로 Assets 구성](configure-aem-assets-with-brand-portal.md)
@@ -147,7 +141,6 @@ ht-degree: 90%
 + 자산 관리 {#managing}
    + [디지털 자산을 관리합니다](managing-assets-touch-ui.md)
    + [컬렉션 관리](managing-collections-touch-ui.md)
-   + [여러 자산 및 컬렉션 관리](managing-multiple-assets.md)
    + [스마트 컨텐츠 서비스를 사용하여 태깅 구성](config-smart-tagging.md)
    + [중복 감지 활성화](duplicate-detection.md)
    + [디지털 자산 구성](organize-assets.md)
