@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 이러한 규칙에는 메타데이터 추가, 이미지 스마트 자르기 또는 비디오 인코딩 프로필 설정이 포함될 수 있습니다. AEM에서는 세 가지 유형의 프로파일을 만들 수 있습니다. 이 유형은 다음 링크에서 자세히 다룹니다.
 
-* [메타데이터 프로필](/help/assets/metadata-profiles.md)
+* [메타데이터 프로필](/help/assets/metadata-config.md#metadata-profiles)
 * [이미지 프로필](/help/assets/image-profiles.md)
 * [비디오 프로필](/help/assets/video-profiles.md)
 
