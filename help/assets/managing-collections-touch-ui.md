@@ -4,7 +4,7 @@ description: 컬렉션 만들기, 보기, 삭제, 편집, 다운로드 등 자�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: cedefb58919d7d215040e72b4cc41159161938a8
 workflow-type: tm+mt
 source-wordcount: '2178'
 ht-degree: 0%
@@ -137,7 +137,7 @@ ht-degree: 0%
 1. 원래 스마트 컬렉션 **[!UICONTROL 을 편집된 컬렉션으로 대체하려면 덮어쓰기를]** 클릭합니다. 또는 다른 이름으로 **[!UICONTROL 저장을]** 선택하여 편집된 컬렉션을 별도로 저장합니다.
 1. 확인 대화 상자에서 **[!UICONTROL 저장을]** 클릭하여 프로세스를 완료합니다.
 
-## 컬렉션 메타데이터 보기 및 편집 {#viewing-and-editing-collection-metadata}
+## 컬렉션 메타데이터 보기 및 편집 {#view-edit-collection-metadata}
 
 컬렉션 메타데이터는 추가되는 태그를 포함하여 컬렉션에 대한 데이터로 구성됩니다.
 
