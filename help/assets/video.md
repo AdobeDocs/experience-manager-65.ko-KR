@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 1%
@@ -739,7 +739,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
 1. Near the upper-right corner of the page, click **[!UICONTROL Save.]**
 1. 비디오를 업로드할 폴더에 YouTube 게시 메타데이터 프로필을 적용합니다. 메타데이터 프로필과 비디오 프로필 세트가 모두 필요합니다.
 
-   메타데이터 [프로필](/help/assets/metadata-profiles.md) 및 [비디오 프로필을 참조하십시오](/help/assets/video-profiles.md).
+   메타데이터 [프로필](/help/assets/metadata-config.md#metadata-profiles) 및 [비디오 프로필을 참조하십시오](/help/assets/video-profiles.md).
 
 ### YouTube 채널에 비디오 게시 {#publishing-videos-to-your-youtube-channel}
 
