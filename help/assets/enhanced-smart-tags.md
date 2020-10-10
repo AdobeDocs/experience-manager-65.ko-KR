@@ -3,9 +3,9 @@ title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1587'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 �
 
 백그라운드에서 Smart Content Service는 Adobe Sensei AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
 
-스마트 콘텐츠 서비스는 Adobe I/O에서 호스팅되는 클라우드 서비스입니다. 시스템 관리자 [!DNL Adobe Experience Manager][!DNL Experience Manager] 는 배포를 Adobe I/O와 통합해야 합니다.
+스마트 콘텐츠 서비스는 Adobe I/O에서 호스팅되는 클라우드 서비스입니다.시스템 관리자 [!DNL Adobe Experience Manager][!DNL Experience Manager] 는 배포를 Adobe I/O와 통합해야 합니다.
 
 다음은 스마트 콘텐츠 서비스를 사용하는 주요 단계입니다.
 
@@ -44,6 +44,7 @@ Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 �
 
 * 조직에 대한 관리자 권한이 부여된 Adobe ID 계정이 있습니다.
 * 조직에서 스마트 콘텐츠 서비스 서비스를 사용할 수 있습니다.
+* 스마트 콘텐츠 서비스 베이스 패키지는 [!DNL Sites] 베이스 패키지 및 [!DNL Assets] Add-on에 라이선스가 부여된 배포에만 추가할 수 있습니다.
 
 ## 온보딩 {#onboarding}
 
@@ -179,3 +180,7 @@ Smart Content Service가 폴더 내의 에셋에 정기적으로 태그를 지�
 >[!NOTE]
 >
 >후속 태그 지정 주기 동안 새로 훈련된 태그로 수정된 자산만 다시 태그됩니다. 하지만 태그 지정 워크플로우에 대한 마지막 태그 지정 주기와 현재 태그 지정 주기 사이의 간격이 24시간이 넘는 경우에도 변경되지 않은 자산에 태그됩니다. 주기적인 태그 지정 워크플로우의 경우, 시간 간격이 6개월이 되면 변경되지 않은 자산에 태그가 지정됩니다.
+
+## 팁 및 제한 사항 {#tips-best-practices-limitations}
+
+* 스마트 콘텐츠 서비스 사용은 연간 최대 2백만 개의 태그 이미지로 제한됩니다. 처리 및 태그가 지정된 복제 이미지는 각각 태그 이미지로 계산됩니다.
