@@ -2,7 +2,7 @@
 title: 릴리스 노트( [!DNL Adobe Experience Manager Assets] 6.5).
 description: 6.5의 새로운 기능 및 [!DNL Adobe Experience Manager] 개선 [!DNL Assets]사항
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 95%
@@ -100,9 +100,9 @@ For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/a
 
 ## 메타데이터 개선 사항 {#metadata-enhancements}
 
-[!DNL Assets]을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다. 이제 폴더 메타데이터 스키마를 기존 폴더에 지정하거나 새 폴더를 생성할 때 지정할 수 있습니다. 자세한 내용은 [폴더 메타데이터 스키마](/help/assets/folder-metadata-schema.md)를 참조하십시오.
+[!DNL Assets]을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다. 이제 폴더 메타데이터 스키마를 기존 폴더에 지정하거나 새 폴더를 생성할 때 지정할 수 있습니다. 자세한 내용은 [폴더 메타데이터 스키마](/help/assets/metadata-config.md#folder-metadata-schema)를 참조하십시오.
 
-계단식 메타데이터를 지정할 때 형식에 수동으로 입력하는 대신 런타임 시 JSON 파일에서 선택 항목을 로드할 수 있습니다. 자세한 내용은 [계단식 메타데이터](/help/assets/cascading-metadata.md)를 참조하십시오.
+계단식 메타데이터를 지정할 때 형식에 수동으로 입력하는 대신 런타임 시 JSON 파일에서 선택 항목을 로드할 수 있습니다. For more information, see [cascading metadata](/help/assets/metadata-schemas.md#cascading-metadata).
 
 ## 보고 개선 사항 {#reporting-enhancements}
 
