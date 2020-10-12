@@ -3,9 +3,9 @@ title: '[!DNL 자산] HTTP API.'
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -307,3 +307,9 @@ curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.p
 * 200 - 확인 - 폴더가 성공적으로 삭제된 경우
 * 412 - 사전 조건 실패 - 루트 컬렉션을 찾을 수 없거나 액세스할 수 없는 경우
 * 500 - 내부 서버 오류 - 다른 오류가 발생한 경우
+
+## 팁 및 제한 사항 {#tips-best-practices-limitations}
+
+* [HTTP API는 네임스페이스의 메타데이터 속성을](#update-asset-metadata) `jcr` 업데이트합니다. 그러나 Experience Manager 사용자 인터페이스는 네임스페이스의 메타데이터 속성을 `dc` 업데이트합니다.
+
+* 자산 API가 전체 메타데이터를 반환하지 않습니다. API에서 네임스페이스는 하드 코딩되며, 네임스페이스만 반환됩니다. 전체 메타데이터가 필요한 경우 자산 경로를 확인합니다 `/jcr_content/metadata.json`.
