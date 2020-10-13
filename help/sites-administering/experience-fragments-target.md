@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 410858ee7d1b8022070445937731644724a90155
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 0%
 >6.5.3.0
 >
 >* **이제 외부라이저** 도메인을 선택할 수 있습니다.
+   >  **참고:** 외부화 도메인은 Target으로 전송된 경험 조각 컨텐츠와 관련되며 오퍼 컨텐츠 보기와 같은 메타데이터는 아닙니다.
 >
 >
 6.5.2.0:
@@ -136,7 +137,11 @@ AEM 경험 조각을 Adobe Target의 기본 작업 영역으로 내보내거나 
 
    >[!CAUTION]
    >
-   >externalizer 도메인은 선택 사항입니다. 내보낸 컨텐츠가 특정 *게시* 도메인을 가리키도록 하려면 AEM 외부 도우미가 구성됩니다. 자세한 내용은 AEM [Link Externalizer 구성을 참조하십시오](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >externalizer 도메인은 선택 사항입니다.
+   >
+   > 내보낸 컨텐츠가 특정 *게시* 도메인을 가리키도록 하려면 AEM 외부 도우미가 구성됩니다. 자세한 내용은 AEM [Link Externalizer 구성을 참조하십시오](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >
+   > 또한 Externalizer 도메인은 Target으로 전송된 경험 조각 컨텐츠와 관련되지만 오퍼 컨텐츠 보기와 같은 메타데이터는 해당되지 않습니다.
 
    예를 들어 폴더의 경우:
 
