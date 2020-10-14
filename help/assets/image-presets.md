@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '325'
 ht-degree: 14%
 
 ---
@@ -30,7 +30,11 @@ Image Presets enable assets to dynamically deliver images at different sizes, in
 
 미리 볼 때마다 이미지에 이미지 사전 설정을 적용할 수 있습니다.
 
-**Dynamic Media 이미지 사전 설정을 적용하려면**
+>[!NOTE]
+>
+>Dynamic Media - Scene7 모드에서는 이미지 자산에 대해서만 이미지 사전 설정이 지원됩니다.
+
+**다이내믹 미디어 이미지 사전 설정을 적용하려면**
 
 1. 자산을 열고 왼쪽 레일에서 드롭다운 메뉴를 누른 다음 표현물을 **[!UICONTROL 누릅니다.]**
 
