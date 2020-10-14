@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
 workflow-type: tm+mt
-source-wordcount: '3842'
+source-wordcount: '3867'
 ht-degree: 3%
 
 ---
@@ -35,6 +35,10 @@ ht-degree: 3%
 ## Understanding Dynamic Media image presets {#understanding-image-presets}
 
 매크로와 마찬가지로 이미지 사전 설정은 이름 아래에 저장된 크기 및 서식 지정 명령의 사전 정의된 모음입니다. To understand how Image Presets work, suppose your web site requires each product image to appear in different sizes, different formats, and compression rates for desktop and mobile delivery.
+
+>[!NOTE]
+>
+>Dynamic Media - Scene7 모드에서는 이미지 자산에 대해서만 이미지 사전 설정이 지원됩니다.
 
 두 개의 이미지 사전 설정을 만들 수 있습니다.하나는 데스크탑 버전의 경우 500 x 500픽셀이고 다른 하나는 모바일 버전의 경우 150 x 150픽셀입니다. 두 개의 이미지 사전 설정 `Enlarge` 을 만듭니다. 하나는 500x500픽셀의 이미지를 표시하기 위해 호출되고 다른 하나는 150 x 150픽셀의 이미지 `Thumbnail` 를 표시하기 위해 호출됩니다. AEM은 이미지 `Enlarge` 를 크기와 `Thumbnail` 크기로 확대하기 위해 이미지 사전 설정과 축소판 이미지 사전 설정의 정의를 찾습니다. 그런 다음 AEM은 각 이미지 사전 설정의 크기와 형식 사양에 맞게 이미지를 동적으로 생성합니다.
 
@@ -62,7 +66,11 @@ AEM 로고를 탭하거나 클릭하여 글로벌 탐색 콘솔에 액세스한 
 >
 >자산의 세부 정보 보기에서 표현물을 선택하면 **[!UICONTROL 다양한]** 표현물이 표시됩니다. 표시되는 이미지 사전 설정 수를 늘리거나 줄일 수 있습니다. 표시되는 [이미지 사전 설정 수 증가를 참조하십시오](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 포맷 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### 스마트 자르기, Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 포맷 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+
+>[!NOTE]
+>
+>이 항목은 다이내믹 미디어 - 하이브리드 모드에만 적용됩니다.
 
 AI, EPS 및 PDF 파일의 섭취를 지원하여 이러한 파일 포맷의 동적 변환을 생성하려는 경우, 이미지 사전 설정을 만들기 전에 다음 정보를 검토할 수 있습니다.
 
