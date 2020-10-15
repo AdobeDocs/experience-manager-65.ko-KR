@@ -3,9 +3,9 @@ title: 배포 [!DNL Assets] 모니터링을 위한 모범 사례
 description: 배포가 배포된 후 환경 및 성능 [!DNL Adobe Experience Manager] 을 모니터링하기 위한 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1668'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 1%
 * [위쪽](https://man7.org/linux/man-pages/man1/top.1.html):맨 위에는 CPU, 메모리 및 IO 사용을 비롯한 사용 통계를 표시하는 대시보드를 여는 Linux 명령입니다. 인스턴스의 상황에 대한 고급 개요를 제공합니다.
 * [위쪽](https://hisham.hm/htop/):맨 위에는 대화형 프로세스 뷰어가 있습니다. Top이 제공할 수 있는 기능 외에 자세한 CPU 및 메모리 사용량을 제공합니다. Top은 `yum install htop` 또는 을 사용하여 대부분의 Linux 시스템에 설치할 수 `apt-get install htop`있습니다.
 
-* [위쪽](https://guichaz.free.fr/iotop/):Iotop은 디스크 IO 사용을 위한 세부 대시보드입니다. 여기에는 디스크 IO를 사용하는 프로세스와 사용하는 양을 나타내는 막대와 미터가 표시됩니다. 또는 을 사용하여 대부분의 Linux 시스템에 설치할 수 `yum install iotop` 있습니다 `apt-get install iotop`.
+* 위쪽:Iotop은 디스크 IO 사용을 위한 세부 대시보드입니다. 여기에는 디스크 IO를 사용하는 프로세스와 사용하는 양을 나타내는 막대와 미터가 표시됩니다. 또는 을 사용하여 대부분의 Linux 시스템에 설치할 수 `yum install iotop` 있습니다 `apt-get install iotop`.
 
 * [위쪽](https://www.ex-parrot.com/pdw/iftop/):이 보고서는 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이 경우 이더넷을 사용하는 엔터티의 통신 채널 통계당 및 이들이 사용하는 대역폭 수치를 표시합니다. 애플리케이션은 `yum install iftop` 또는 를 사용하여 대부분의 Linux 시스템에 설치할 수 `apt-get install iftop`있습니다.
 
