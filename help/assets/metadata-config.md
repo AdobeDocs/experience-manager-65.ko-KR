@@ -3,9 +3,9 @@ title: 메타데이터 기능의 구성 및 관리
 description: 메타데이터 추가 및 관리와 [!DNL Experience Manager Assets] 관련된 구성 및 관리 기능
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '1953'
 ht-degree: 3%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 3%
 1. 도구 모음 **[!UICONTROL 에서 [메타데이터 프로필]** 삭제]를 클릭합니다.
 1. 대화 상자에서 삭제 **[!UICONTROL 를]** 클릭하여 삭제 작업을 확인합니다. 메타데이터 프로필이 목록에서 삭제됩니다.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps.
+<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
 These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
@@ -269,7 +269,6 @@ To apply a metadata profile globally, follow these steps:
 >[!MORELIKETHIS]
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
->* [여러 컬렉션의 메타데이터 속성을 편집합니다](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 >* [여러 컬렉션의 메타데이터 속성을 편집합니다](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 >* [Experience Manager 자산에서 메타데이터 가져오기 및 내보내기](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 >* [메타데이터, 이미지 및 비디오 처리 프로필](processing-profiles.md).
