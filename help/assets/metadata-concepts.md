@@ -3,7 +3,7 @@ title: 메타데이터 개념 이해
 description: 보다 손쉽게 에셋을 분류하고 구성할 수 있는 메타데이터의 요구 사항과 유형을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
 source-wordcount: '2732'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 사항�
 * 앨범 - [!DNL Adobe Photoshop Album].
 * CQ - 사용됨 [!DNL Experience Manager Assets].
 * DAM - 사용 [!DNL Experience Manager Assets].
-* DEX - [Optima SC Description 탐색기는](http://www.optimasc.com/products/dex/index.html) Windows 운영 체제용 메타데이터 및 파일 관리를 위한 도구 모음입니다.
+* DEX - [Optima SC Description 탐색기는](https://www.optimasc.com/products/dex/index.html) Windows 운영 체제용 메타데이터 및 파일 관리를 위한 도구 모음입니다.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
