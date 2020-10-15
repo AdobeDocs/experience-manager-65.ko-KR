@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: fa3d5923784a8d89e2b440412d2b88790de3e39e
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2663'
 ht-degree: 3%
 
 ---
@@ -277,10 +277,6 @@ See [Document of Record Template Configuration](#document-of-record-template-con
 
    **기록 문서** 생성 XDP 파일을 레코드 문서의 스타일 및 모양을 정의하는 기본 템플릿으로 사용하려면 이 옵션을 선택합니다. 이 옵션을 선택하면 AEM Forms 저장소에서 사용 가능한 모든 XDP 파일이 표시됩니다. 해당 파일을 선택합니다.
 
-   **[!UICONTROL XDP 파일을 레코드 문서의 스타일 및 모양을 정의하는 기본 템플릿으로 사용하려면 이 옵션을 선택합니다. 이 옵션을 선택하면 AEM Forms 저장소에서 사용 가능한 모든 XDP 파일이 표시됩니다. 해당 파일을 선택합니다.]**
-
-   **레코드 문서를 생성하려면 Forms 템플릿을 기본 템플릿으로** 선택합니다. XDP 파일을 레코드 문서의 스타일 및 모양을 정의하는 기본 템플릿으로 사용하려면 이 옵션을 선택합니다. 이 옵션을 선택하면 AEM Forms 저장소에서 사용 가능한 모든 XDP 파일이 표시됩니다. 해당 파일을 선택합니다.
-
    >[!NOTE]
    >
    >다음과 같은 경우 XFA 양식의 응용 양식 및 스키마(데이터 스키마)를 만드는 데 사용된 스키마가 동일한지 확인합니다.
@@ -380,8 +376,6 @@ See [Document of Record Template Configuration](#document-of-record-template-con
 
 * 기록 템플릿 문서에서는 리치 텍스트를 지원하지 않습니다. 따라서 정적 적응형 양식 또는 최종 사용자가 작성한 정보에 있는 모든 리치 텍스트는 기록 문서에 일반 텍스트로 표시됩니다.
 * 응용 양식의 문서 조각은 기록 문서에 나타나지 않습니다. 그러나 적응형 양식 조각이 지원됩니다.
-* 기록 문서는 인쇄 용도로만 사용됩니다.
-* XML 스키마 기반 응용 양식에 대해 생성된 레코드 문서의 콘텐츠 바인딩은 지원되지 않습니다.
 * XML 스키마 기반 응용 양식에 대해 생성된 레코드 문서의 콘텐츠 바인딩은 지원되지 않습니다.
 * 사용자가 기록 문서의 렌더링을 요청할 때 로컬라이즈된 버전의 기록 문서가 로케일에 대해 On-Demand로 만들어집니다. 기록 문서의 현지화는 적응형 양식의 현지화와 함께 이루어집니다. 기록 및 적응형 양식의 문서 로컬라이제이션에 대한 자세한 내용은 AEM [번역 워크플로우를 사용하여 적응형 양식 및 기록](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md)문서를 현지화하기를 참조하십시오.
 
