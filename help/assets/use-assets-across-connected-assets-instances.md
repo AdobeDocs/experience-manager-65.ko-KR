@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7790c9c90953e0f5c5b6be38f5d54346fb595e8f
+source-git-commit: d2bc8c7c52084a415faaf8a5b68be7dc6fc461c4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2224'
+ht-degree: 41%
 
 ---
 
@@ -33,8 +33,8 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
    |  | [!DNL Sites] cloud service | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]cloud service** | 지원됨 | 지원됨 | 지원됨 |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]AMS** | 지원됨 | 지원됨 | 지원됨 |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] AMS** | 지원됨 | 지원됨 | 지원됨 |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
 ### 지원되는 파일 형식 {#mimetypes}
 
@@ -194,3 +194,4 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * 원격 댐에서 가져온 에셋이 하나 이상의 이유로 웹 페이지에 게시되지 않을 수 있습니다. 원격 서버에 존재하지 않거나 해당 서버에 가져올 권한이 없거나 네트워크 오류가 원인일 수 있습니다. 원격 DAM에서 자산이 제거되지 않았는지 확인합니다. 적절한 권한이 있으며 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/sites-administering/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
+* 로컬 [!DNL Sites] 배포에서 원격 DAM 배포에 액세스할 수 없는 경우 사이트 간 쿠키가 허용되는지 확인하십시오. 사이트 간 쿠키가 차단된 경우 두 배포 중 [!DNL Experience Manager] 가 인증되지 않을 수 있습니다. 예를 들어, Incognito 모드 [!DNL Google Chrome] 에서는 타사 쿠키를 차단할 수 있습니다. 주소 표시줄 [!DNL Chrome]에서 &#39;눈&#39; 아이콘을 클릭하여 쿠키를 허용하거나 타사 쿠키를 [활성화하는 방법에 대한 도움말을 볼 수 있습니다](https://support.google.com/chrome/answer/95647).
