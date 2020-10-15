@@ -3,9 +3,9 @@ title: 디지털 자산의 메타데이터를 관리할 수 있습니다 [!DNL A
 description: 메타데이터의 유형과 메타데이터를 기반으로 에셋을 자동으로 구성하고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2423'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 2%
 
    ![자산의 속성을 선택하여 해당 메타데이터를 봅니다.](assets/asset-metadata.png)
 
-   *그림:자산 속성 페이지에서 메타데이터를 편집하거나[!UICONTROL 추가합니다].*
+   *그림:자산 속성 페이지에서 메타데이터를 편집하거나 [!UICONTROL 추가합니다] .*
 
 1. 필요에 따라 다양한 탭에서 메타데이터를 편집하고 완료되면 도구 모음에서 **[!UICONTROL 저장]** 을 클릭하여 변경 사항을 저장합니다. 닫기 **[!UICONTROL 를]** 클릭하여 [!DNL Assets] 웹 인터페이스로 돌아갑니다.
 
@@ -68,7 +68,7 @@ XMP의 쓰기 되돌리는 [기술 요구 사항에 설명된 플랫폼 및 파�
 * 메타데이터 속성을 일반 값으로 변경
 * 태그 추가 또는 수정
 
-메타데이터 속성 추가, 수정, 삭제 등 메타데이터 속성 페이지를 사용자 정의하려면 스키마 편집기를 사용합니다.
+메타데이터 속성 추가, 수정, 삭제 등 메타데이터 속성 페이지를 사용자 정의하려면 [스키마 편집기를 사용합니다](metadata-config.md#folder-metadata-schema).
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ XMP의 쓰기 되돌리는 [기술 요구 사항에 설명된 플랫폼 및 파�
    >[!NOTE]
    >
    >* 속성 페이지에서 자산을 선택 취소하여 자산 목록에서 제거할 수 있습니다. 자산 목록에는 기본적으로 모든 자산이 선택되어 있습니다. 목록에서 제거하는 자산에 대한 메타데이터는 업데이트되지 않습니다.
-   >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 근처의 확인란을 선택하여 자산 선택과 목록 지우기 간을 전환합니다.
+   >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 옆의 확인란을 선택하여 자산 선택과 목록 지우기 간을 전환합니다.
 
 
 1. 자산에 대해 다른 메타데이터 스키마를 선택하려면 도구 모음 **[!UICONTROL 에서]** 설정을 클릭하고 원하는 스키마를 선택합니다.
@@ -188,7 +188,7 @@ XMP의 쓰기 되돌리는 [기술 요구 사항에 설명된 플랫폼 및 파�
 
 나중에 변경한 기존 비디오 프로필이 이미 있는 폴더의 에셋을 다시 처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
 
-### 프로필 사용자 인터페이스의 폴더에 메타데이터 프로필 적용 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### 프로필 사용자 인터페이스의 폴더에 메타데이터 프로필  적용 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 단계에 따라 메타데이터 프로필을 적용합니다.
 
@@ -196,7 +196,7 @@ XMP의 쓰기 되돌리는 [기술 요구 사항에 설명된 플랫폼 및 파�
 1. 폴더 또는 여러 폴더에 적용할 메타데이터 프로필을 선택합니다.
 1. 폴더에 메타데이터 **[!UICONTROL 프로필 적용을]** 클릭하고 새로 업로드한 자산을 받기 위해 사용할 폴더 또는 폴더를 선택한 다음 완료를 **[!UICONTROL 클릭합니다]**. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-### 속성의 폴더에 메타데이터 프로필 적용 {#applying-metadata-profiles-to-folders-from-properties}
+### 속성의 폴더에 메타데이터 프로필 [!UICONTROL 적용] {#applying-metadata-profiles-to-folders-from-properties}
 
 1. 왼쪽 레일에서 **[!UICONTROL 자산을]** 클릭한 다음 메타데이터 프로필을 적용할 폴더를 탐색합니다.
 1. 폴더에서 확인 표시를 클릭하여 선택한 다음 속성 **[!UICONTROL 을 클릭합니다]**.
@@ -205,9 +205,11 @@ XMP의 쓰기 되돌리는 [기술 요구 사항에 설명된 플랫폼 및 파�
 
 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-### 전역 메타데이터 프로필 적용 {#metadata-profile-global}
+<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
 
-자세한 내용은 [구성을 참조하여 메타데이터 프로필을 전역적으로 적용하십시오](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+### Apply metadata profile globally {#metadata-profile-global}
+
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
 ### 폴더에서 메타데이터 프로필 제거 {#removing-a-metadata-profile-from-folders}
 
