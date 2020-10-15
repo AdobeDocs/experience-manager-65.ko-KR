@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.5 서비스 팩 6의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
+source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
 workflow-type: tm+mt
-source-wordcount: '2518'
-ht-degree: 68%
+source-wordcount: '2561'
+ht-degree: 67%
 
 ---
 
@@ -77,7 +77,7 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 ### 클라이언트에서 응용 양식 미리 채우기 {#prefill-merge-data-at-client}
 
 응용 양식을 미리 채울 때 서버는 데이터를 응용 양식과 병합하고 채워진 양식을 사용자에게 전달합니다. [!DNL Experience Manager Forms] 기본적으로 데이터 병합 작업은 서버에서 수행됩니다.
-이제 서버가 아니라 클라이언트에서 데이터 병합 작업을 수행하도록 [!DNL Experience Manager Forms] 서버를 구성할 수 있습니다. 적응형 양식을 프리플라이트 및 렌더링하는 데 필요한 시간이 크게 줄어듭니다.
+이제 서버 대신 클라이언트에서 데이터 병합 작업을 [!DNL Experience Manager Forms] 수행하도록 [](../../help/forms/using/prepopulate-adaptive-form-fields.md) 서버를 구성할 수 있습니다. 적응형 양식을 프리플라이트 및 렌더링하는 데 필요한 시간이 크게 줄어듭니다.
 
 ### 양방향 SSL 구현을 통해 서버에서 RESTful API와 양식 데이터 모델 통합 {#fdm-integration-rest-apis-two-way-ssl}
 
@@ -87,7 +87,7 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 
 AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함되어 있는 경우, 이러한 필드는 이제 인식되어 적응형 양식의 [!DNL Adobe Sign] 필드로 표현됩니다 [!DNL Automated Forms Conversion service]. 서명자는 적응형 양식에 서명하면서 이러한 필드를 채울 수 있습니다.
 
-### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colored-PDF-forms}
 
 색상 PDF forms [!DNL Automated Forms Conversion service] 를 응용 양식으로 변환하는 데 사용할 수 있습니다.
 
@@ -97,7 +97,7 @@ AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함되어 있는 경우, �
 
 ### 번역된 적응형 양식 페이지에 대한 캐싱 기능 강화 {#enhanced-caching-translated-adaptive-forms}
 
-이제 로케일을 URL 인수 대신 선택기로 지정할 수 있습니다. 번역된 적응형 양식을 캐시하는 데 도움이 됩니다 [!DNL Experience Manager Dispatcher].
+이제 응용 양식 URL의 인수 대신 응용 양식 URL에서 [로케일을 선택기로 지정할 수 있습니다](../../help/forms/using/supporting-new-language-localization.md). 번역된 적응형 양식을 캐시하는 데 도움이 됩니다 [!DNL Experience Manager Dispatcher]. 이전 버전에서는 번역된 응용 양식을 캐싱할 수 없었습니다. 응용 양식 URL에서 선택기로 로케일을 사용하기 위해 캐싱을 구성하는 방법에 대한 자세한 내용은 발송자에서 응용 [양식 캐시 구성을 참조하십시오](../../help/forms/using/configure-adaptive-forms-cache.md).
 
 ### 양식 데이터 모델 서비스의 출력을 변수에 저장 {#save-fdm-service-to-variable}
 
@@ -105,7 +105,9 @@ AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함되어 있는 경우, �
 
 ### 파일 첨부 구성 요소에 여러 파일 첨부 {#attach-multiple-files}
 
-이제 응용 양식의 [!UICONTROL 파일 첨부] 구성 요소에 여러 파일을 첨부할 수 있습니다.
+이제 응용 양식의 [파일 첨부](../../help/forms/using/introduction-forms-authoring.md) 구성 요소에 여러 파일을  첨부할 수 있습니다.
+
+
 
 ## 이전 Experience Manager 6.5 서비스 팩의 주요 기능 {#key-features-previous-service-packs}
 
