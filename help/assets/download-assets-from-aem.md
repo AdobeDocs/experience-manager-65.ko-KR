@@ -3,9 +3,9 @@ title: 자산 다운로드
 description: 다운로드 기능을 활성화하거나 비활성화하는 방법 [!DNL Adobe Experience Manager] 을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '866'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
    ![Experience Manager 자산에서 자산을 다운로드할 때 사용 가능한 옵션](/help/assets/assets/asset-download1.png)
 
-   *그림:다운로드 대화 상자 옵션.*
+   *그림:다운로드 대화 상자에서 사용할 수 있는 옵션.*
 
 1. 다운로드 대화 상자에서 원하는 다운로드 옵션을 선택합니다.
 
@@ -73,6 +73,7 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유
 
 >[!MORELIKETHIS]
 >
+>* [브랜드 포털을 사용하여 자산 다운로드](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [DRM 보호 에셋을 다운로드합니다](drm.md).
 >* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 에셋을 다운로드할 수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
 >* [지원되는 Adobe Creative Cloud 앱](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)내에서 Adobe 자산 링크를 사용하여 자산을 다운로드합니다.
