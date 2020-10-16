@@ -3,12 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 개발 사용 안내서
-breadcrumb-title: Developing Guide
-user-guide-description: This guide covers how to build out your AEM instance.
+breadcrumb-title: Developing 안내서
+user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 translation-type: tm+mt
 source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '835'
 ht-degree: 99%
 
 ---
