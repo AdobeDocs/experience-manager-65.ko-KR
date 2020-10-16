@@ -3,7 +3,7 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5972647d23b7e7bfd2fcd791648cb26de1fdb68
+source-git-commit: 2c3836cb7e2275c30e88e8a750eafce24a05837a
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 41%
@@ -196,4 +196,4 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 * 원격 댐에서 가져온 에셋이 하나 이상의 이유로 웹 페이지에 게시되지 않을 수 있습니다. 원격 서버에 존재하지 않거나 해당 서버에 가져올 권한이 없거나 네트워크 오류가 원인일 수 있습니다. 원격 DAM에서 자산이 제거되지 않았는지 확인합니다. 적절한 권한이 있으며 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/sites-administering/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
 * 로컬 [!DNL Sites] 배포에서 원격 DAM 배포에 액세스할 수 없는 경우 사이트 간 쿠키가 허용되는지 확인하십시오. 사이트 간 쿠키가 차단된 경우 두 배포 중 [!DNL Experience Manager] 가 인증되지 않을 수 있습니다. 예를 들어, Incognito 모드 [!DNL Google Chrome] 에서는 타사 쿠키를 차단할 수 있습니다. 브라우저에서 쿠키를 허용하려면, 주소 표시줄의 &#39;눈&#39; 아이콘을 클릭하고, [작동하지 않음] > [차단됨]으로 이동하고, 원격 DAM URL을 선택하고, 로그인 토큰 쿠키를 허용하십시오. [!DNL Chrome] 또는 타사 쿠키 [를 사용하는 방법에 대한 도움말을 참조하십시오](https://support.google.com/chrome/answer/95647).
 
-![Uncognito 모드의 Chrome에서 쿠키 오류 발생](assets/chrome-cookies-incognito-dialog.png)
+   ![Uncognito 모드의 Chrome에서 쿠키 오류 발생](assets/chrome-cookies-incognito-dialog.png)
