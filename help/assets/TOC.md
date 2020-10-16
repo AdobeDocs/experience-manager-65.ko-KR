@@ -3,13 +3,13 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Assets 안내서
-breadcrumb-title: Assets Guide
-user-guide-description: Create, manage, deliver, and optimize digital assets.
+breadcrumb-title: Assets 안내서
+user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
 translation-type: tm+mt
-source-git-commit: caaf8c99d08cd88eca7d464816111cfb9f61590c
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 82%
+source-wordcount: '585'
+ht-degree: 81%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 82%
    + [ [!DNL Adobe Stock]  Assets에서 자산 사용](aem-assets-adobe-stock.md)
    + [3D 자산 미리 보기](previewing-3d-assets.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
+   + [향상된 스마트 태그](enhanced-smart-tags.md)
    + [타임라인의 활동 스트림](activity-stream.md)
    + [자산 처리](assets-workflow.md)
    + [이미지 맵 추가](image-maps.md)
@@ -94,10 +95,11 @@ ht-degree: 82%
    + [검색 패싯](search-facets.md)
    + [메타데이터 개념 이해](metadata-concepts.md)
    + [메타데이터 기능 구성](metadata-config.md)
+   + [메타데이터 스키마](metadata-schemas.md)
    + [표현물로 XMP 원본에 쓰기](xmp-writeback.md)
    + [자산 링크 공유](link-sharing.md)
    + [자산 보고서](asset-reports.md)
-   + [향상된 스마트 태그](enhanced-smart-tags.md)
+   + [태그 지정을 위한 스마트 콘텐츠 서비스 구성](config-smart-tagging.md)
    + [메타데이터, 이미지 및 비디오 처리 프로필](processing-profiles.md)
    + [자산 편집기 페이지 만들기 및 구성](assets-finder-editor.md)
    + [자산 크기 조정 가이드](assets-sizing-guide.md)
@@ -117,13 +119,11 @@ ht-degree: 82%
    + [Camera Raw 지원](camera-raw.md)
    + [Apache Tika를 사용하여 MIME 유형의 자산 탐지](detect-asset-mime-type-with-tika.md)
    + [이미징 코드 변환 라이브러리](imaging-transcoding-library.md)
-   + [메타데이터 스키마](metadata-schemas.md)
    + [컬렉션, 코드 조각 및 코드 조각 템플릿에 대한 다중 임차인](multi-tenancy.md)
    + [자산에 워터마크 지정](watermarking.md)
    + [자산 템플릿](asset-templates.md)
    + [폴더를 [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
-   + [스마트 태그 관리](managing-smart-tags.md)
-+ 브랜드 포털 {#brandportal}
++ Brand Portal {#brandportal}
    + [구성 [!DNL Assets] 방법 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [에셋 게시 대상 [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [폴더 게시 대상 [!DNL Brand Portal]](brand-portal-publish-folder.md)
@@ -141,7 +141,6 @@ ht-degree: 82%
 + 자산 관리 {#managing}
    + [디지털 자산을 관리합니다](managing-assets-touch-ui.md)
    + [컬렉션 관리](managing-collections-touch-ui.md)
-   + [스마트 컨텐츠 서비스를 사용하여 태깅 구성](config-smart-tagging.md)
    + [중복 감지 활성화](duplicate-detection.md)
    + [디지털 자산 구성](organize-assets.md)
    + [비디오 자산 관리](managing-video-assets.md)
@@ -158,5 +157,4 @@ ht-degree: 82%
    + [조합 자산 관리](managing-linked-subassets.md)
    + [관련 자산](related-assets.md)
    + [비공개 폴더 공유](private-folder.md)
-   + [스마트 컨텐츠 서비스에 대한 교육 지침](smart-tags-training-guidelines.md)
    + [비디오 표현물](video-renditions.md)
