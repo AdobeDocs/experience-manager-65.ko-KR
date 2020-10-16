@@ -3,13 +3,13 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
 user-guide-title: AEM 6.5 관리 사용 안내서
-breadcrumb-title: Administering Guide
-user-guide-description: Learn about administering AEM.
+breadcrumb-title: 관리 안내서
+user-guide-description: AEM 관리에 대해 알아봅니다.
 translation-type: tm+mt
 source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 16%
+source-wordcount: '625'
+ht-degree: 17%
 
 ---
 
@@ -130,7 +130,7 @@ ht-degree: 16%
    + [관련 커뮤니티 문서](related-community-articles.md)
    + [Adobe Campaign Standard과 통합](campaignstandard.md)
    + [Flash 뷰어 지원 중단 알림](flash-viewers-eol.md)
-   + [제품 피드](product-feed.md)
+   + [Product Feed](product-feed.md)
    + [Adobe 다이내믹 태그 관리와 통합](dtm.md)
    + [Adobe Analytics 및 Adobe Target 선택](opt-in.md)
    + [AEM 포털 및 포틀릿](aem-as-portal.md)
