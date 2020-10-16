@@ -4,7 +4,7 @@ description: 필터 패널을 [!DNL Adobe Experience Manager] 사용하여 필�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
 source-wordcount: '5968'
 ht-degree: 1%
@@ -358,7 +358,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 1. CRXDE의 `/oak-index/damAssetLucene` 노드에서 속성을 `reindex` 로 설정합니다 `true`. 변경 사항을 저장합니다.
 1. (선택 사항) 검색 양식을 사용자 정의한 경우 노드를 `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` 다음으로 복사합니다 `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. 변경 사항을 저장합니다.
 
-관련 정보는 Experience Manager의 스마트 태그 [이해](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) 및 스마트 태그 [관리 방법을 참조하십시오](/help/assets/managing-smart-tags.md).
+관련 정보는 Experience Manager의 스마트 태그 [이해](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) 및 스마트 태그 [관리 방법을 참조하십시오](/help/assets/enhanced-smart-tags.md).
 
 >[!CAUTION]
 >
