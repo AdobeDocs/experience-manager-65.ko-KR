@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1730'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 스마트 이미징 기술은 Adobe Sensei AI 기능을 활용하고 기존의 &quot;이미지 사전 설정&quot;과 연동하여 클라이언트 브라우저 기능을 기반으로 이미지 포맷, 크기 및 품질을 자동으로 최적화하여 이미지 전달 성능을 향상시킵니다.
 
-스마트 이미징은 또한 Adobe의 최고급 프리미엄 CDN 서비스와 완벽하게 통합되는 향상된 성능 증대의 이점을 제공합니다. 이 서비스는 서버, 네트워크 및 피어링 지점 간의 최적의 인터넷 경로를 찾으며, 지연 시간이 가장 적고/또는 패킷 손실률이 인터넷의 기본 경로보다 낮습니다.
+스마트 이미징은 또한 Adobe의 최고급 프리미엄 CDN 서비스와 완벽하게 통합되는 향상된 성능을 제공합니다. 이 서비스는 서버, 네트워크 및 피어링 지점 간의 최적의 인터넷 경로를 찾으며, 지연 시간이 가장 적고/또는 패킷 손실률이 인터넷의 기본 경로보다 낮습니다.
 
 다음 이미지 자산 예는 추가된 스마트 이미징 최적화를 보여줍니다.
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 | [이미지 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80KB | 178.19KB | 44% |
 |  |  |  |  | 평균 = 51% |
 
-위와 마찬가지로 Adobe는 라이브 고객 사이트에서 7009개의 URL을 사용한 테스트를 실시했고 스마트 이미징 기능 덕분에 JPEG에 대한 파일 크기 최적화와 WebP 포맷의 PNG에 대한 파일 크기 최적화에 대해 평균 38% 더 많은 효과를 얻을 수 있었습니다.
+위와 마찬가지로 Adobe은 라이브 고객 사이트에서 7009 URL을 사용한 테스트를 실시했고 스마트 이미징 기능 덕분에 JPEG에 대한 파일 크기 최적화와 WebP 포맷의 PNG에 대한 파일 크기 최적화에 대해 평균 38% 더 많은 효과를 얻을 수 있었습니다.
 
 ## 최신 스마트 이미징의 주요 이점은 무엇입니까? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 * &quot;bfc&quot; URL 매개 변수를 사용하여 스마트 이미징을 끌 수 있습니다.
 * TTL(Time To Live) 독립적입니다. 이전에는, 스마트 이미징이 작동되려면 최소 TTL이 12시간이었다.
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 Smart Imaging에서는 파생물만 캐시되어 단일 단계 캐시 무효화 프로세스를 허용합니다.
-* 사용자 지정 헤더를 규칙 세트에 사용하는 고객(예: &quot;타이밍 [출처 허용&quot;, &quot;X-Robot&quot;, 이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html))은 이전 버전의 Smart Imaging과 달리 헤더가 차단되지 않으므로 최신 Smart Imaging의 이점을 얻을 수 있습니다.
+* 사용자 지정 헤더를 규칙 세트에 사용하는 고객(예: &quot;타이밍 [출처 허용&quot;, &quot;X-Robot&quot;, 이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html))은 이전 버전의 Smart Imaging와 달리 헤더가 차단되지 않으므로 최신 스마트 이미징의 이점을 얻을 수 있습니다.
 
 ## 스마트 이미징과 관련된 라이선스 비용이 있습니까? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -55,12 +55,12 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Dynamic Media - 하이브리드 고객은 스마트 이미징을 사용할 수 없습니다.
+>Dynamic Media - Hybrid 고객은 스마트 이미징을 사용할 수 없습니다.
 
 
 ## 스마트 이미징은 어떻게 작동합니까? {#how-does-smart-imaging-work}
 
-Smart Imaging은 Adobe Sensei를 사용하여 브라우저 기능을 기반으로 이미지를 가장 적합한 포맷, 크기 및 품질로 자동 변환합니다.
+스마트 이미징은 Adobe Sensei을 사용하여 브라우저 기능을 기반으로 이미지를 가장 최적의 형식, 크기 및 품질로 자동 변환합니다.
 
 * Chrome, Firefox, Microsoft Edge, Android 및 Opera와 같은 브라우저의 경우 WebP로 자동 변환됩니다.
 * Safari와 같은 브라우저의 경우 JPEG2000으로 자동 변환됩니다.
@@ -102,23 +102,23 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 스마트 이미징을 사용할 수 있습니까? {#am-i-eligible-to-use-smart-imaging}
 
-스마트 이미징을 사용하려면 회사의 Dynamic Media Classic 또는 AEM 계정의 Dynamic Media이 다음 요구 사항을 충족해야 합니다.
+스마트 이미징을 사용하려면 회사의 AEM용 Dynamic Media Classic 또는 Dynamic Media 계정이 다음 요구 사항을 충족해야 합니다.
 
-* 라이선스의 일부로 Adobe 번들 CDN(Content Delivery Network)을 사용하십시오.
+* Adobe 번들 CDN(Content Delivery Network)을 라이선스의 일부로 사용하십시오.
 * 일반 도메인(예:, `images.company.com` 또는 `mycompany.scene7.com`)이 아닌 전용 도메인 `s7d1.scene7.com`(예:, `s7d2.scene7.com`또는 `s7d13.scene7.com`)을 사용합니다.
 
 도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
 
 설정 **[!UICONTROL > 애플리케이션 설정 > 일반 설정을 누릅니다.]** 게시된 서버 이름 **[!UICONTROL 이라는 필드를 찾습니다.]** 현재 일반 도메인을 사용하고 있는 경우 기술 지원 티켓을 제출할 때 이 전환의 일부로 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
 
-첫 번째 사용자 지정 도메인은 Dynamic Media 라이선스를 통해 추가 비용이 들지 않습니다.
+Dynamic Media 라이선스를 통해 첫 번째 사용자 지정 도메인을 추가 비용이 들지 않습니다.
 
 ## 내 계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-스마트 이미징 사용을 요청해야 합니다. 자동으로 활성화되지 않습니다.
+스마트 이미징 사용을 요청해야 합니다.자동으로 활성화되지 않습니다.
 
-1. 기술 지원 요청 시작(이메일: `s7support@adobe.com`).
-1. 지원 요청에서 다음 정보를 제공합니다.
+1. [Admin Console을 사용하여 지원 사례를 만듭니다.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. 지원 사례에 다음 정보를 제공하십시오.
 
    1. 기본 연락처 이름, 이메일, 전화.
    1. 스마트 이미징에 사용할 수 있는 모든 도메인(예: `images.company.com` 또는 `mycompany.scene7.com`)
@@ -128,7 +128,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
       설정 **[!UICONTROL > 응용 프로그램 설정 > 일반 설정을 클릭합니다.]**
 
       게시된 서버 이름 **[!UICONTROL 이라는 필드를 찾습니다.]**
-   1. Adobe를 통해 CDN을 사용하고 있으며 직접적인 관계로 관리되지 않는지 확인합니다.
+   1. Adobe을 통해 CDN을 사용하고 있고 직접 관계로 관리하지 않는지 확인합니다.
    1. 또는 `images.company.com` 와 같은 전용 도메인을 사용하고 있는지, `mycompany.scene7.com`그리고 일반 도메인(예: `s7d1.scene7.com`, `s7d2.scene7.com`) `s7d13.scene7.com`을 사용하고 있는지확인합니다.
 
       도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
@@ -139,30 +139,30 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
    1. HTTP/2 이상에서 이 기능이 필요한지 여부를 표시합니다.
 
 1. 기술 지원에서 요청을 제출한 순서에 따라 스마트 이미징 고객 대기 목록에 추가합니다.
-1. Adobe에서 요청을 처리할 준비가 되면 지원 담당자가 타겟 날짜를 조정하고 설정하도록 연락합니다.
-1. **선택 사항**: 새로운 기능을 프로덕션으로 푸시하기 전에 스테이징에서 스마트 이미징을 테스트할 수 있습니다.
+1. Adobe이 요청을 처리할 준비가 되면 지원 담당자가 타겟 날짜를 조정하고 설정하도록 사용자에게 연락합니다.
+1. **선택 사항**:Adobe이 새로운 기능을 프로덕션으로 푸시하기 전에 스테이징에서 스마트 이미징을 테스트할 수 있습니다.
 1. 지원이 완료되면 알림 메시지가 표시됩니다.
-1. 스마트 이미징의 성능 향상을 최대화하려면 TTL(Time To Live)을 24시간 이상으로 설정하는 것이 좋습니다. TTL은 CDN이 자산을 캐시하는 기간을 정의합니다. 이 설정을 변경하려면:
+1. 스마트 이미징의 성능을 최대화하려면 Adobe에서 TTL(Time To Live)을 24시간 이상으로 설정하는 것이 좋습니다. TTL은 CDN이 자산을 캐시하는 기간을 정의합니다. 이 설정을 변경하려면:
 
    1. Dynamic Media Classic을 사용하는 경우 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버를 클릭합니다.]** 기본 **[!UICONTROL 클라이언트 캐시 시간을 라이브]** 값으로 24 이상으로 설정합니다.
-   1. Dynamic Media을 사용하는 경우 [다음 지침을 따르십시오](config-dynamic.md). 만료 **[!UICONTROL 값]** 24시간 이상을 설정합니다.
+   1. Dynamic Media를 사용하는 경우 [다음 지침을 따르십시오](config-dynamic.md). 만료 **[!UICONTROL 값]** 24시간 이상을 설정합니다.
 
 ## Smart Imaging을 사용하여 계정을 활성화할 수 있는 시기는 언제입니까? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
 요청은 대기 목록에 따라 기술 지원 센터에서 수신하는 순서대로 처리됩니다.
 
 >[!NOTE]
-Smart Imaging을 활성화하면 Adobe가 캐시를 지우므로 리드 타임이 길어질 수 있습니다. 따라서 일부 고객 전환만 지정된 시간에 처리할 수 있습니다.
+스마트 이미징을 활성화하면 Adobe이 캐시를 지우므로 리드 타임이 길어질 수 있습니다. 따라서 일부 고객 전환만 지정된 시간에 처리할 수 있습니다.
 
 ## 스마트 이미징 사용을 위해 전환할 경우 어떤 위험이 있습니까? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-고객 웹 페이지에 대한 위험은 없습니다. 그러나 Smart Imaging로의 전환은 AEM의 새 Dynamic Media Classic 또는 Dynamic Media의 새 구성으로 이동하는 것을 포함하므로 CDN의 캐시를 지웁니다.
+고객 웹 페이지에 대한 위험은 없습니다. 그러나 Smart Imaging로의 전환은 AEM에서 Dynamic Media Classic 또는 Dynamic Media의 새로운 구성으로 이동하는 것을 포함하므로 CDN의 캐시를 지웁니다.
 
-초기 전환 중에 캐시되지 않은 이미지는 캐시가 다시 빌드될 때까지 Adobe의 원본 서버에 직접 접속됩니다. 이러한 이유로 Adobe는 한 번에 몇 가지 고객 전환을 처리하여 원본 고객의 요청을 가져올 때 허용되는 성능을 유지할 계획입니다. 대부분의 고객의 경우 캐시는 ~1~2일 내에 CDN에서 완전히 다시 빌드됩니다.
+초기 전환 중에 캐시되지 않은 이미지는 캐시를 다시 빌드할 때까지 Adobe 원본 서버에 직접 도달합니다. 이러한 이유로 Adobe은 한 번에 몇 개의 고객 전환을 처리하여 원본 고객의 요청을 가져올 때 허용되는 성능이 유지되도록 할 계획입니다. 대부분의 고객의 경우 캐시는 ~1~2일 내에 CDN에서 완전히 다시 빌드됩니다.
 
 ## 스마트 이미징이 예상대로 작동하는지 확인하려면 어떻게 해야 합니까?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. 계정이 스마트 이미징으로 구성된 후 브라우저에서 Dynamic Media Classic(Scene7)/Dynamic Media 이미지 URL을 로드합니다.
+1. 스마트 이미징으로 계정이 구성되면 브라우저에서 Dynamic Media Classic(Scene7)/Dynamic Media 이미지 URL을 로드합니다.
 1. 브라우저에서 **[!UICONTROL 보기 > 개발자 > 개발자 도구를 클릭하여]** Chrome 개발자 창을 엽니다. 또는 원하는 브라우저 개발자 도구를 선택합니다.
 
 1. 개발자 도구가 열려 있을 때 캐시가 비활성화되어 있는지 확인합니다.
