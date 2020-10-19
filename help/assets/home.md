@@ -1,17 +1,17 @@
 ---
-title: 자산 안내서
+title: Assets 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
-user-guide-title: 자산 안내서
+user-guide-title: Assets 안내서
 translation-type: tm+mt
-source-git-commit: e460a23ef4df14ff494d8d1472ab234787f220d7
+source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 89%
+source-wordcount: '344'
+ht-degree: 88%
 
 ---
 
 
-# 자산 안내서
+# Assets 안내서
 
 This guide covers all [!DNL Experience Manager Assets] tasks, such as how to create, manage, deliver, and optimize digital assets.
 
@@ -22,7 +22,7 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 
 * [Experience Manager 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
 * [Experience Manager 6.5 릴리스 노트](/help/release-notes/home.md)
-* [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
+* [최근 설명서 업데이트](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6.5 안내서
