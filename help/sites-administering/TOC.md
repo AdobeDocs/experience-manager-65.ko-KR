@@ -130,7 +130,7 @@ ht-degree: 17%
    + [관련 커뮤니티 문서](related-community-articles.md)
    + [Adobe Campaign Standard과 통합](campaignstandard.md)
    + [Flash 뷰어 지원 중단 알림](flash-viewers-eol.md)
-   + [Product Feed](product-feed.md)
+   + [제품 피드](product-feed.md)
    + [Adobe 다이내믹 태그 관리와 통합](dtm.md)
    + [Adobe Analytics 및 Adobe Target 선택](opt-in.md)
    + [AEM 포털 및 포틀릿](aem-as-portal.md)
