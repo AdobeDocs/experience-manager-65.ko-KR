@@ -1,8 +1,8 @@
 ---
 title: AEM Managed Services IMS 인증 [!DNL Admin Console] 및 지원
 seo-title: AEM Managed Services IMS 인증 [!DNL Admin Console] 및 지원
-description: AEM에서 [!DNL Admin Console]을(를) 사용하는 방법을 알아봅니다.
-seo-description: AEM에서 [!DNL Admin Console]을(를) 사용하는 방법을 알아봅니다.
+description: AEM 사용 방법 [!DNL Admin Console] 을 살펴보십시오.
+seo-description: AEM 사용 방법 [!DNL Admin Console] 을 살펴보십시오.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
+source-git-commit: a71c1e87dd5f01ba2584282e0960ca27d419adb0
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1726'
 ht-degree: 12%
 
 ---
