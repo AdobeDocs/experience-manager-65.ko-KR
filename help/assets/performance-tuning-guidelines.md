@@ -4,9 +4,9 @@ description: 병목 현상을 [!DNL Experience Manager] 제거하고 성능을 �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cc61b8473fb919a963eb73c015efbc2f06197ee8
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2743'
 ht-degree: 0%
 
 ---
@@ -205,7 +205,7 @@ ImageMagick을 사용하여 [!UICONTROL 변환을 생성하기 위해 DAM 자산
 
 >[!CAUTION]
 >
->ImageMagick이 사용 가능한 모든 디스크 공간을 사용하는 경우 구성이 잘못되면 서버가 불안정해집니다. ImageMagick을 사용하여 대용량 파일을 처리하는 데 필요한 정책 변경 사항은 경험 [!DNLE관리자] 성능에 영향을 줄 수 있습니다. 자세한 내용은 ImageMagick [설치 및 구성을 참조하십시오](/help/assets/best-practices-for-imagemagick.md).
+>ImageMagick이 사용 가능한 모든 디스크 공간을 사용하는 경우 구성이 잘못되면 서버가 불안정해집니다. ImageMagick을 사용하여 대용량 파일을 처리하는 데 필요한 정책 변경 사항이 [!DNL Experience Manager] 성능에 영향을 줄 수 있습니다. 자세한 내용은 ImageMagick [설치 및 구성을 참조하십시오](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
