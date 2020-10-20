@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 149e505eb4dac0d9a56c53036ce1c6b8d16ad0f1
 workflow-type: tm+mt
 source-wordcount: '3065'
 ht-degree: 1%
@@ -136,7 +136,7 @@ AEM은 제공되는 워크플로우 단계를 통해 워크플로우 모델을 �
 >
 >워크플로우 애플리케이션을 만들고 관리할 수 있으려면 fd-administrator 그룹의 구성원이어야 합니다.
 
-1. AEM 작성 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL Forms]**> 워크플로우 애플리케이션 **[!UICONTROL 관리]** 로 이동하여 Create을 ****&#x200B;누릅니다.
+1. AEM 작성 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL Forms]** > 워크플로 응용 프로그램 **[!UICONTROL 관리]** 로 이동하고 Create을 ****&#x200B;누릅니다.
 1. 워크플로우 애플리케이션 만들기 창에서 다음 필드에 대한 입력을 제공하고 만들기를 **누릅니다**. 새 응용 프로그램이 만들어지고 [워크플로 응용 프로그램] 화면에 나열됩니다.
 
 <table>
@@ -218,7 +218,7 @@ AEM Forms 앱에서 워크플로우를 동기화, 제출 및 트리거하도록 
 
 관리자(fd-administrators 그룹의 구성원)는 사용자가 폴더에 파일(예: PDF 파일)을 배치할 때 미리 구성된 워크플로우를 실행하도록 네트워크 폴더를 구성할 수 있습니다. 워크플로우가 완료되면 결과 파일을 지정된 출력 폴더에 저장할 수 있습니다. 이러한 폴더를 [감시 폴더라고 합니다](../../forms/using/watched-folder-in-aem-forms.md). 워크플로우를 실행할 감시 폴더를 구성하려면 다음 절차를 수행하십시오.
 
-1. AEM 작성자 인스턴스의 경우 ![tools-1](assets/tools-1.png) **>**[!UICONTROL  Forms ]**> 감시 폴더구성으로 이동합니다.** 이미 구성된 감시 폴더 목록이 표시됩니다.
+1. AEM 작성자 인스턴스의 경우 ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더]**&#x200B;구성으로 이동합니다. 이미 구성된 감시 폴더 목록이 표시됩니다.
 1. 새로 **[!UICONTROL 만들기를 누릅니다]**. 필드 목록이 표시됩니다. 워크플로우에 대해 감시 폴더를 구성하려면 다음 필드에 값을 지정합니다.
 
 <table>
