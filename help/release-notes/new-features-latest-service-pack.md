@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 6의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4865d4fb666f58ea8abe9e438ea69e9272961c43
+source-git-commit: 750e3729a33718d54dca8b2514468d4a40910d4c
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 67%
@@ -81,7 +81,8 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 
 ### 양방향 SSL 구현을 통해 서버에서 RESTful API와 양식 데이터 모델 통합 {#fdm-integration-rest-apis-two-way-ssl}
 
-[!DNL Experience Manager Forms] 양식 데이터 모델은 이제 양방향 SSL이 구현된 서버의 RESTful API와 통합할 수 있습니다.
+[!DNL Experience Manager Forms] 양식 데이터 모델은 이제 양방향 SSL이 구현된 서버의 RESTful API와 [통합할 수 있습니다](../../help/forms/using/configure-data-sources.md).
+
 
 ### 자동화된 Forms 전환 서비스에서 [!DNL Adobe Sign] 텍스트 태그에 대한 지원을 추가했습니다. {#sign-integration-acroform-afcs}
 
