@@ -11,9 +11,9 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 1718aac3d39662fb35336a4db3e3403641f9529a
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ AEM 6.3에서 업그레이드하는 경우 이 마이그레이션은 필요하�
 
 >[!NOTE]
 >
->CRX2Oak Quickstart 확장 기능을 사용하여 TarMK 저장소 컨텐츠 마이그레이션을 수행하는 경우 마이그레이션 명령줄에 다음을 추가하여 **sample** content runmode를 제거할 수 있습니다.
+>CRX2Oak Quickstart 확장 기능을 사용하여 TarMK 리포지토리 컨텐츠 마이그레이션을 수행하는 경우 다음을 마이그레이션 명령줄에 추가하여 **sample** content runmode를 제거할 수 있습니다.
 >
 >* `--promote-runmode nosamplecontent`
 
@@ -118,9 +118,9 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 
 * `mongo-host` 은 MongoDB 서버 IP입니다(예: 127.0.0.1).
 
-* `mongo-port` 은 MongoDB 서버 포트입니다(예: 27017)
+* `mongo-port` 은 MongoDB 서버 포트입니다(예:27017)
 
-* `mongo-database-name` 데이터베이스의 이름을 나타냅니다(예: aem-author)
+* `mongo-database-name` 데이터베이스의 이름을 나타냅니다(예:aem-author)
 
 **다음 시나리오에 추가로 스위치가 필요할 수도 있습니다.**
 
@@ -175,6 +175,10 @@ AEM 6.3 설치에 대한 새로운 기본 `FileDataStore` 은 아니지만 외�
 ### 올바른 업그레이드 시작 명령 확인 {#determining-the-correct-upgrade-start-command}
 
 업그레이드를 실행하려면 jar 파일을 사용하여 AEM을 시작하여 인스턴스를 불러와야 합니다. 6.5로 업그레이드하려면 업그레이드 명령을 사용하여 선택할 수 있는 [레이지 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md) 시 다른 컨텐츠 조정 및 마이그레이션 옵션을 참조하십시오.
+
+>[!IMPORTANT]
+>
+>Oracle Java 11(또는 일반적으로 Java 8보다 최신 버전)을 실행하는 경우 AEM을 시작할 때 명령줄에 추가 스위치를 추가해야 합니다. 자세한 내용은 [Java 11 고려 사항을 참조하십시오](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
 시작 스크립트에서 AEM을 시작해도 업그레이드가 시작되지 않습니다. 대부분의 고객은 시작 스크립트를 사용하여 AEM을 시작하고 이 시작 스크립트를 사용자 지정하여 메모리 설정, 보안 인증서 등과 같은 환경 구성에 대한 스위치를 포함시켰습니다. 따라서 적절한 업그레이드 명령을 결정하려면 다음 절차를 수행하는 것이 좋습니다.
 
