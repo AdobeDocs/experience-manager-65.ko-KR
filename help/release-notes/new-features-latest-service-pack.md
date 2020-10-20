@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 6의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
+source-git-commit: 4865d4fb666f58ea8abe9e438ea69e9272961c43
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 67%
@@ -28,7 +28,7 @@ Adobe Experience Manager 6.5 서비스 팩은 분기별로 새로운 기능, 고
 
 ### CDN 캐시된 컨텐츠 무효화 {#invalidate-cdn-cached-content}
 
-이제 사용자 인터페이스를[!DNL  Dynamic Media] 사용하여 CDN(Content Delivery Network) 캐시된 컨텐츠를 무효화할 수 있습니다. 따라서 업데이트된 에셋은 캐시가 만료될 때까지 기다리지 않고 즉시 사용할 수 있습니다. 다음 방법으로 CDN을 무효화할 수 있습니다.
+이제 [!DNL Dynamic Media] 사용자 인터페이스를 사용하여 CDN(Content Delivery Network) 캐시된 컨텐츠를 무효화할 수 있습니다. 따라서 업데이트된 에셋은 캐시가 만료될 때까지 기다리지 않고 즉시 사용할 수 있습니다. 다음 방법으로 CDN을 무효화할 수 있습니다.
 
 * CDN 무효화 템플릿 만들기:자산 및 양식 관련 템플릿 기반 URL 선택
 
