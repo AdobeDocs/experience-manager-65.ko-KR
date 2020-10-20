@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Adobe Experience Manager] 6.5 서비스 팩 릴리스 정보.'
+title: '[!DNL Adobe Experience Manager] 6.5 서비스 팩 릴리스 노트.'
 description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Service Pack 6.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74ab94126383d53dac5f55171266c66c28757969
+source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
 workflow-type: tm+mt
-source-wordcount: '4518'
+source-wordcount: '4530'
 ht-degree: 24%
 
 ---
@@ -39,15 +39,15 @@ Adobe Experience Manager 6.5.6.0에 도입된 주요 기능 및 개선 사항은
 
 * 사용자가 축소판만 만들고 페이지 추출 및 키워드 추출 `test` 을 건너뛸 수 있도록 Dynamic Media `aiprocess` `Thumbnail``Rasterize` 의 이전 버전에서 기본 옵션을 로 업데이트하고 업데이트합니다.
 
-* 클라이언트에서 응용 양식을 미리 채웁니다.
+* [클라이언트에서 응용 양식을 미리 채웁니다](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
-* 양방향 SSL 구현을 통해 서버에서 RESTful API와 양식 데이터 모델 통합
+* [양방향 SSL 구현을 통해 서버에서 RESTful API와 양식 데이터 모델 통합](../../help/forms/using/configure-data-sources.md)
 
-* 번역된 적응형 양식 페이지에 대한 캐싱 기능이 향상되었습니다.
+* [번역된 적응형 양식 페이지에 대한 캐싱 기능이 향상되었습니다](../../help/forms/using/configure-adaptive-forms-cache.md).
 
-* 자동화된 Forms 전환 서비스에서 Adobe Sign 텍스트 태그 지원.
+* 자동화된 Forms 전환 서비스에서 [Adobe Sign 텍스트 태그 지원](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
 
-* Support to convert colored forms to adaptive forms using [!DNL Automated Forms Conversion service].
+* 색상 있는 양식을 [적응형 양식으로](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) 변환할 수 있도록 지원합니다 [!DNL Automated Forms Conversion service].
 
 * SMB 2 및 SMB 3 프로토콜 지원
 
@@ -99,7 +99,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 * 참조가 많은 페이지는 비동기식으로 이동할 수 없으며 이동 작업이 실패하는 경우가 있습니다(CQ-4297969).
 * 작성하는 동안 URL에 `/` 문자가 포함된 웹 페이지가 응답하지 않습니다. 작성하는 동안 구성 요소가 추가되면 CPU 사용이 증가하고 브라우저가 응답을 중지합니다(CQ-4295749).
 * 검색 모드에서는 유형/크기 메뉴 옵션에서 선택한 값을 내레이트하지 않습니다. 시각적 포커스가 선택한 요소에 있지 않습니다. 화면 판독기를 사용하는 사용자는 찾아보기 모드를 사용할 수 없습니다(CQ-4294993).
-* 웹 페이지를 만들 때 사용자는 컨텐츠 페이지 [!UICONTROL 템플릿을 선택할 수] 있습니다. 소셜 [!UICONTROL 미디어] 탭에서 기본 설정 XF [!UICONTROL 변형을 선택합니다]. NVDA 찾아보기 모드에서 경험 조각을 선택하려면 키보드 키를 사용할 수 없습니다(CQ-4292669).
+* 웹 페이지를 만들 때 사용자는 컨텐츠 페이지 [!UICONTROL 템플릿을 선택할 수] 있습니다. 소셜 [!UICONTROL 미디어] 탭에서 기본 설정 XF [!UICONTROL 변형을 선택합니다]. NVDA 검색 모드에서 경험 조각을 선택하려면 키보드 키를 사용할 수 없습니다(CQ-4292669).
 * handlebars 라이브러리를 더 안전한 v4.7.3(NPR-34484)으로 업데이트했습니다.
 
 ### [!DNL Assets] {#assets-6560}
@@ -152,13 +152,13 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
    ![헤더의 도움말 메뉴](assets/Help_aem_header.png)
 
-   *그림:[!UICONTROL 도움말]메뉴에서[!UICONTROL 도움말]검색*
+   *그림: [!UICONTROL 도움말] 메뉴에서 [!UICONTROL 도움말] 검색*
 
    * 잘못된 값이 사용자 [!UICONTROL 옵션 아래의 가장 대상] 필드  에 입력되고 포커스가 텍스트 필드로 올바르게 이동하는 경우 오류 메시지(NPR-33804).
 
    ![헤더의 사용자 메뉴](assets/User_aem_header.png)
 
-   *그림:[!UICONTROL 헤더의]사용자메뉴의 가장 대상 필드*
+   *그림: [!UICONTROL 헤더의] 사용자  메뉴의 가장 대상 필드*
 
 * 이제 사용자는 다음 내의 키보드를 사용하여 포커스를 변경할 수 있습니다.
 
