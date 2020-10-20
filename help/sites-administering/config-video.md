@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ HTML5 요소를 사용하려면 비디오 프로필을 정의합니다. 여기�
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
-이 대화 상자에서 비디오 구성 요소의 디자인 및 [!UICONTROL 재생], [!UICONTROL Flash]및 [!UICONTROL 고급 매개 변수]를 구성할 수도있습니다.
+이 대화 상자에서 비디오 구성 요소의 디자인 및 [!UICONTROL 재생], [!UICONTROL Flash]및 고급 매개 변수 [!UICONTROL 를 구성할 수도]있습니다.
 
 ## FFmpeg 설치 및 AEM 구성 {#install-ffmpeg}
 
@@ -45,7 +45,7 @@ Windows에 FFmpeg를 **설치하려면 다음**&#x200B;단계를 수행하십시
 
 Mac OS **X에 FFmpeg를**&#x200B;설치하려면 다음 단계를 수행하십시오.
 
-1. developer.apple.com/xcode에서 Xcode를 [설치합니다](hhttps://developer.apple.com/xcode/).
+1. developer.apple.com/xcode에서 Xcode를 [설치합니다](https://developer.apple.com/xcode/).
 1. XQuartz에 [설치할](https://www.xquartz.org) 수 있으므로 [X11을 이용할 수 있습니다](https://support.apple.com/en-us/HT201341).
 1. www.macports.org에서 MacPorts를 [설치합니다](https://www.macports.org/).
 1. 콘솔에서 실행 `sudo port install ffmpeg` 명령을 수행하고 화면 상의 지침을 따릅니다. 실행 파일의 경로가 시스템 변수에 `FFmpeg` 추가되어 있는지 `PATH` 확인합니다.
@@ -56,7 +56,7 @@ Mac OS **X에 FFmpeg를**&#x200B;설치하려면 다음 단계를 수행하십�
 1. 디렉토리에 보관하지 `/usr/local` 않습니다.
 1. 콘솔에서 실행을 참조하십시오 `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. 경로를 적절하게 변경합니다.
 
-AEM을 **구성하려면**&#x200B;다음 단계를 따르십시오.
+AEM을 **구성하려면 다음 단계를 따르십시오**.
 
 >[!NOTE]
 >
@@ -78,4 +78,4 @@ AEM을 **구성하려면**&#x200B;다음 단계를 따르십시오.
 
 >[!NOTE]
 >
->AEM 인스턴스를 업그레이드할 때 기본 기본 OOTB(기본 특별) 워크플로우 모델에 대한 변경 사항은 유지되지 않습니다. 수정된 워크플로우 모델을 편집하기 전에 복사하는 것이 좋습니다. 예를 들어 [!UICONTROL DAM 자산] 업데이트 모델의 FFmpeg 트랜스코딩 단계를 편집하기 전에 OOTB [!UICONTROL DAM 자산] 업데이트 모델을 복사하여 업그레이드 전에 존재했던 비디오 프로필 이름을 선택합니다. 그런 다음 AEM이 OOTB 모델에 대한 사용자 지정 변경 사항을 검색할 수 있도록 노드를 `/apps` 오버레이할 수 있습니다.
+>AEM 인스턴스를 업그레이드할 때 기본 기본 OOTB(기본 제공) 워크플로우 모델에 대한 변경 사항은 유지되지 않습니다. Adobe은 수정된 워크플로우 모델을 편집하기 전에 복사할 것을 권장합니다. 예를 들어 [!UICONTROL DAM 자산] 업데이트 모델의 FFmpeg 트랜스코딩 단계를 편집하기 전에 OOTB [!UICONTROL DAM 자산] 업데이트 모델을 복사하여 업그레이드 전에 존재했던 비디오 프로필 이름을 선택합니다. 그런 다음 노드를 `/apps` 오버레이하여 AEM이 OOTB 모델에 대한 사용자 지정 변경 사항을 검색할 수 있도록 할 수 있습니다.
