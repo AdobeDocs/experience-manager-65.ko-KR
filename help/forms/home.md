@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Forms 가이드
 description: 이 안내서에서는 디지털 양식을 작성, 관리, 게시 및 업데이트하는 방법을 포함하여 모든 AEM Forms 작업에 대해 다룹니다.
 seo-description: 디지털 양식 작성, 관리, 게시 및 업데이트 방법을 포함한 모든 AEM Forms 작업을 다룹니다.
 translation-type: tm+mt
-source-git-commit: 5b5937303dd543195b6c8300e6579a58e03a97d1
+source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '368'
 ht-degree: 85%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 85%
 * [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
 
-## AEM 6.5 사용 안내서
+## AEM 6.5 안내서
 
 | 사용 안내서 | 설명 |
 |--- |---|
