@@ -1,12 +1,16 @@
 ---
-source-git-commit: 2969f3b27becc7586ec1e3359cdb31f0acf88da9
+source-git-commit: f5719bed6d55aa3775d873e85e23b4de60c8de03
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '84'
-ht-degree: 0%
+source-wordcount: '170'
+ht-degree: 3%
 
 ---
 # Adobe Experience Manager 6.5 설명서
+
+| EXL-PR | EXL | 미리 보기 | 활성화 | 게시됨 | 도움말 |
+|--- |--- |--- |--- |--- |--- |
+| [![빌드 상태](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-65.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-65.en_pr-exl/lastBuild/) | [![빌드 상태](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-65.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-65.en_exl/lastBuild/lastBuild) | [미리 보기 URL](https://experienceleague.corp.adobe.com/docs/experience-manager-65/authoring/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [라이브 URL](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=en) | [작성 안내서](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Adobe Experience Manager 6.5 설명서 저장소입니다. 이 설명서는 설치, 관리, 작성 사용 및 AEM 사용자 정의 방법에 대해 설명합니다.
 
