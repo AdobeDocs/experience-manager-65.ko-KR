@@ -1,6 +1,6 @@
 ---
-title: OSGi 그룹 및 권한에 대한 AEM Forms
-seo-title: OSGi 그룹 및 권한에 대한 AEM Forms
+title: OSGi 그룹 및 특권
+seo-title: OSGi 그룹 및 특권
 description: 그룹에 사용자를 할당하여 OSGi에서 AEM Forms 관리
 seo-description: 그룹에 사용자를 할당하여 OSGi에서 AEM Forms 관리
 uuid: f269a206-356d-4cee-b449-05c5da87121a
@@ -11,7 +11,7 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dbb99875cc6f3c8810670ffe923756f7c13d4ace
+source-git-commit: 494551d3d886c1ed70d252a28b03cfa9d8e82a6a
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 1%
@@ -19,11 +19,11 @@ ht-degree: 1%
 ---
 
 
-# OSGi 그룹 및 권한에 대한 AEM Forms{#aem-forms-on-osgi-groups-and-privileges}
+# OSGi 그룹 및 특권{#aem-forms-on-osgi-groups-and-privileges}
 
 그룹을 [만들고](/help/sites-administering/user-group-ac-admin.md#group-administration) 정책 및 [사용자를](/help/sites-administering/user-group-ac-admin.md#user-administration) AEM의 그룹에 할당할 수 있습니다. 이러한 정책은 그룹의 일부인 사용자의 권한을 제어합니다.
 
-AEM [Forms Add-on 패키지를](../../forms/using/installing-configuring-aem-forms-osgi.md)설치하면 양식 사용자 및 양식 파워 유저 등 이 아티클에 언급된 그룹을 자동으로 할당할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 OSGi에서 사용자가 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
+Add- [On 패키지를](../../forms/using/installing-configuring-aem-forms-osgi.md)설치하면 양식 사용자 및 Forms-Power-user와 같이 이 문서에 언급된 그룹을 자동으로 할당할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 OSGi에서 사용자가 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
 
 <table>
  <tbody>
@@ -32,7 +32,7 @@ AEM [Forms Add-on 패키지를](../../forms/using/installing-configuring-aem-for
    <td>작업</td> 
   </tr>
   <tr>
-   <td>forms-user <sup>[1]</sup></td> 
+   <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>적응형 양식 작성, 미리 보기, 게시 및 제출</li> 
