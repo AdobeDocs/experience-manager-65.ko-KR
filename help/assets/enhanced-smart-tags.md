@@ -3,15 +3,15 @@ title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: e124025295f29d6f3999dc52467301d48bceee75
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1525'
 ht-degree: 1%
 
 ---
 
 
-# 향상된 스마트 태그 {#enhanced-smart-tags}
+# 스마트 태그 이해, 적용 및 조정 {#enhanced-smart-tags}
 
 디지털 자산을 처리하는 조직은 자산 메타데이터에 분류 제어 용어를 점점 더 사용하고 있습니다. 기본적으로 직원, 파트너 및 고객이 특정 클래스의 디지털 자산을 참조하고 검색하는 데 일반적으로 사용하는 키워드 목록이 포함되어 있습니다. 분류 제어 어휘를 사용하여 자산에 태그를 지정하면 태그 기반 검색으로 쉽게 식별하고 검색할 수 있습니다.
 
