@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.5 서비스 팩 6의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 750e3729a33718d54dca8b2514468d4a40910d4c
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 67%
@@ -194,7 +194,7 @@ AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함되어 있는 경우, �
 
 [!DNL Experience Manager Assets]에서는 다음과 같은 액세스 가능성이 개선되었습니다.
 
-* 키보드의 화살표 키를 사용하여 확대/축소된 이미지 내에서 영역을 이동할 수 있습니다. 자세한 내용은 [키보드 키만 사용하여 자산 미리 보기](../assets/managing-assets-touch-ui.md#previewing-assets)를 참조하십시오.
+* 키보드의 화살표 키를 사용하여 확대/축소된 이미지 내에서 영역을 이동할 수 있습니다. 자세한 내용은 [키보드 키만 사용하여 자산 미리 보기](../assets/manage-assets.md#previewing-assets)를 참조하십시오.
 
 * 필터 패널의 혼합 상태 확인란(중첩된 모든 확인란을 선택하지 않은 경우 첫 번째 수준의 확인란을 선택하지 않으면 나머지도 선택되지 않음)은 화면 판독기에서 읽을 수 있습니다.
 
