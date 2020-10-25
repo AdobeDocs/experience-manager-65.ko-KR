@@ -3,7 +3,7 @@ title: Adobe Creative Cloud 모범 사례와의 통합
 description: 자산 전송 워크플로우를 [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] 간소화하고 콘텐츠 전송 속도를 높일 수 있는 모범 사례
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 3%
@@ -39,7 +39,7 @@ ht-degree: 3%
 | 비즈니스 사용자는 간단하게 에셋 열기 및 사용, 변경 사항 편집 및 업로드, 데스크탑 환경 [!DNL Experience Manager]에서 새 파일 업로드 [!DNL Experience Manager] 를 간소화할 수 있습니다. 일반 통합을 사용하여 Adobe이 아닌 에셋 유형을 비롯한 모든 에셋 유형을 기본 데스크탑 애플리케이션에서 엽니다. | [Experience Manager 데스크탑 앱](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] Win 및 Mac 데스크탑에서 데스크탑 앱 사용 |
 | 마케터와 비즈니스 사용자는 내부에서 자산을 발견하고 미리 보고 라이선스를 부여받고 저장 및 관리할 수 [!DNL Adobe Stock] [!DNL Experience Manager]있습니다. 라이선스와 저장된 에셋은 더 나은 거버넌스를 위해 일부 [!DNL Adobe Stock] 메타데이터를 제공합니다. | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 웹 인터페이스 |
 
-이 문서에서는 주로 협업의 첫 두 가지 측면을 집중적으로 다룹니다. 자산의 규모에 대한 분배 및 소싱은 사용 사례로서 간단히 언급됩니다. 이러한 요구 사항에 대한 솔루션에 대해서는 Adobe 브랜드 포털 또는 자산 공유 공유의 사용을 고려하십시오. Brand Portal과 같은 대체 솔루션, [Asset Share Commons](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html)구성 요소, [링크 공유](https://adobe-marketing-cloud.github.io/asset-share-commons/) 를 기반으로 구축할 수 있는 솔루션, [Experience Manager Assets를 사용하는](/help/assets/link-sharing.md)경우 [](/help/assets/managing-assets-touch-ui.md) 특정 요구 사항에 따라 검토해야 합니다.
+이 문서에서는 주로 협업의 첫 두 가지 측면을 집중적으로 다룹니다. 자산의 규모에 대한 분배 및 소싱은 사용 사례로서 간단히 언급됩니다. 이러한 요구 사항에 대한 솔루션에 대해서는 Adobe 브랜드 포털 또는 자산 공유 공유의 사용을 고려하십시오. Brand Portal과 같은 대체 솔루션, [Asset Share Commons](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html)구성 요소, [링크 공유](https://adobe-marketing-cloud.github.io/asset-share-commons/) 를 기반으로 구축할 수 있는 솔루션, [Experience Manager Assets를 사용하는](/help/assets/link-sharing.md)경우 [](/help/assets/manage-assets.md) 특정 요구 사항에 따라 검토해야 합니다.
 
 ![Experience Manager용 Creative Cloud 연결, 사용 기능 결정](assets/creative-connections-aem.png)
 
@@ -53,13 +53,13 @@ ht-degree: 3%
 | Discover - DAM 폴더 찾아보기 | 예 | [!DNL Experience Manager] 웹 인터페이스 및 데스크탑 작업 |  |
 | Discover - DAM 컬렉션 액세스 | 예 | [!DNL Experience Manager] 웹 인터페이스 및 데스크탑 작업 |  |
 | Discover - DAM에서 자산 검색 | 예 | [!DNL Experience Manager] 웹 인터페이스 및 데스크탑 작업 |  |
-| 사용 - 자산 열기 | 예 | 예 | [웹 인터페이스](managing-assets-touch-ui.md#previewing-assets) 또는 Finder에서 열기 |
+| 사용 - 자산 열기 | 예 | 예 | [웹 인터페이스](manage-assets.md#previewing-assets) 또는 Finder에서 열기 |
 | 사용 - DAM의 에셋을 문서에 배치 | 예 - 포함 | 예 - 연결 또는 포함 | [!DNL Experience Manager] 데스크탑 앱은 로컬 파일 시스템의 파일로 자산에 액세스할 수 있도록 해줍니다. 기본 앱의 이러한 링크는 로컬 경로로 표시됩니다. |
 | 편집 - 편집을 위해 열기 | 예 - 체크아웃 작업 | 예 - 열기 작업(네트워크 공유) | [AAL에서](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 체크 아웃하면 기본적으로 사용자의 creative cloud 스토리지 계정(Creative Cloud 앱으로 동기화됨)에 자산이 저장됩니다. |
 | 편집 - DAM 외부에서 진행 중 | 예 - 데스크탑에 동기화되는 사용자의 Creative Cloud 저장소 계정에서 사용할 수 있는 자산입니다. | 예 |  |
 | 편집 - 변경 내용 업로드 | 예 - [체크 인 작업](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) (선택 사항 주석 포함) | 예 |  |
-| 업로드 - 단일 파일 | 예 - 현재 활성 문서를 업로드합니다. | 예 | [웹 인터페이스를 통해 업로드](managing-assets-touch-ui.md#uploading-assets) |
-| 업로드 - 여러 파일/계층적 폴더 구조 | 아니오 | 예 | [웹 인터페이스](managing-assets-touch-ui.md#uploading-assets) 또는 사용자 정의 스크립팅 또는 도구를 통해 업로드할 수 있습니다. |
+| 업로드 - 단일 파일 | 예 - 현재 활성 문서를 업로드합니다. | 예 | [웹 인터페이스를 통해 업로드](manage-assets.md#uploading-assets) |
+| 업로드 - 여러 파일/계층적 폴더 구조 | 아니오 | 예 | [웹 인터페이스](manage-assets.md#uploading-assets) 또는 사용자 정의 스크립팅 또는 도구를 통해 업로드할 수 있습니다. |
 | 기타 - 사용자 및 로그인 | Creative Cloud 데스크톱 응용 프로그램에 로그인한 Creative Cloud 사용자가 인식됨(SSO) | [!DNL Experience Manager] 사용자 및 자격 증명 | 두 솔루션의 사용자는 [!DNL Experience Manager] 사용자 할당량에 포함됩니다. |
 | 기타 - 네트워크 및 액세스 | 네트워크를 통해 배포하려면 사용자 데스크탑에서 [!DNL Experience Manager] 액세스 필요 | 네트워크를 통해 배포하려면 사용자 데스크탑에서 [!DNL Experience Manager] 액세스 필요 | [!DNL Adobe Asset Link] 네트워크 프록시 환경을 공유하지 않습니다. |
 | 기타 - 많은 수의 에셋 마이그레이션 | 아니오 | 아니오 | [자산 마이그레이션 안내서](assets-migration-guide.md) |
@@ -69,7 +69,7 @@ ht-degree: 3%
 * [브랜드 포털](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html) - 자산을 게시하기 위해 구성 가능한 SaaS 추가 기능 [!DNL Experience Manager Assets] 을 제공합니다.
 * 사용자 지정 솔루션은 [자산 공유 공용](https://adobe-marketing-cloud.github.io/asset-share-commons/) 코드 베이스를 기반으로 만들어집니다.
 * [!DNL Experience Manager] [링크 공유를](/help/assets/link-sharing.md) 사용하여 링크를 사용하여 자산을 임시 공유할 수 있습니다.
-* [Experience Manager 자산 웹 인터페이스](/help/assets/managing-assets-touch-ui.md) . 액세스 제어 설정 및 필요한 IT/네트워크 구성 조정을 통해 외부 [!DNL Experience Manager] 대상을 안전하게 보호하고 외부 사용자가 액세스할 수 있도록 합니다 [!DNL Experience Manager].
+* [Experience Manager 자산 웹 인터페이스](/help/assets/manage-assets.md) . 액세스 제어 설정 및 필요한 IT/네트워크 구성 조정을 통해 외부 [!DNL Experience Manager] 사용자를 위한 영역을 확보하여 이러한 외부 사용자가 액세스할 수 있도록 합니다 [!DNL Experience Manager].
 
 ## 주요 개념 및 활용 사례 {#key-concepts-and-use-cases}
 
@@ -109,7 +109,7 @@ ht-degree: 3%
 * Adobe 스톡 에셋을 저장할 때 [!DNL Experience Manager]는 이진 [!DNL Assets]이 저장소에 저장된 채로 일반이 [!DNL Experience Manager] 됩니다. 자산 [!DNL Adobe Stock] 과 관련된 일부 메타데이터는 에 저장되고, 그렇지 않으면 수집 프로세스 [!DNL Experience Manager]는 다른 파일과 동일하게 보입니다. 예를 들어 스마트 태그가 활성 상태인 경우 저장 시 이러한 자산에 태그가 추가됩니다.
 * 저장된 에셋 [!DNL Experience Manager] 은 링크가 아닌 복사본입니다 [!DNL Adobe Stock].
 
-**에서 저장한 에셋[!DNL Adobe Stock]을 사용하여 작업[!DNL Experience Manager]을[!DNL Creative Cloud]**&#x200B;수행합니다. 이 통합 [!DNL Adobe Asset Link]은 독립적이지만 이러한 자산에서 이러한 방식으로 저장된 에셋을 [!DNL Adobe Asset Link] 인식하며, 확장 [!DNL Stock] UI, [!DNL Adobe Stock] 또는에서 이러한 에셋에 추가 메타데이터 및 [!DNL Adobe Asset Link] 로고를 표시할 수 [!DNL Photoshop][!DNL Illustrator][!DNL InDesign]있습니다. 파일을 검색, 열기 등에 사용할 수 있습니다. 파일은 저장 시 일반 자산이므로 찾을 수 [!DNL Experience Manager]있습니다.
+**에서 저장한 에셋 [!DNL Adobe Stock] 을 사용하여 작업 [!DNL Experience Manager] 을[!DNL Creative Cloud]**&#x200B;수행합니다. 이 통합 [!DNL Adobe Asset Link]은 독립적이지만 이러한 자산에서 이러한 방식으로 저장된 에셋을 [!DNL Adobe Asset Link] 인식하며, 확장 [!DNL Stock] UI, [!DNL Adobe Stock] 또는에서 이러한 에셋에 추가 메타데이터 및 [!DNL Adobe Asset Link] 로고를 표시할 수 [!DNL Photoshop][!DNL Illustrator][!DNL InDesign]있습니다. 파일을 검색, 열기 등에 사용할 수 있습니다. 파일은 저장 시 일반 자산이므로 찾을 수 [!DNL Experience Manager]있습니다.
 이미 라이선스가 부여된 에셋에 액세스할 수 있을 뿐만 아니라 [!DNL Creative Cloud] 확장자가 있는 [!DNL Adobe Asset Link] 앱에서 작업하는 크리에이티브 사용자는 라이브러리 패널 [!DNL Adobe Stock] 을 사용하여 에셋을 검색하고 미리 보고 라이선스를 부여할 수 [!DNL Experience Manager][!DNL Creative Cloud] [!DNL Adobe Stock] 있습니다.
 [!DNL Assets] 라이선스를 [!DNL Adobe Stock] 구매하여 저장한 크리에이티브 라이선스 에셋은 배포 [!DNL Experience Manager] 에 액세스하는 다양한 팀이 사용할 수 있는 반면 [!DNL Experience Manager Assets] 라이브러리 패널을 [!DNL Adobe Stock] 통해 제공되는 크리에이티브 라이선스 에셋은 [!DNL Creative Cloud] [!DNL Creative Cloud] 계정 자체에서만 이용할 수 있습니다.
 
@@ -213,7 +213,7 @@ Adobe 자산 링크는 이 사용 사례에 대한 적절한 지원을 제공합
 
 #### 데스크탑에서 바로 디지털 에셋 관리 {#managing-digital-assets-directly-from-desktop}
 
-네트워크 파일 공유를 사용하여 디지털 자산을 관리하는 경우, 데스크탑 앱이 매핑한 네트워크 공유를 사용하기만 하면 [!DNL Experience Manager] 편리한 대체품으로 보일 수 있습니다. 네트워크 파일 공유 [!DNL Experience Manager] 에서 전환할 때 웹 인터페이스는 네트워크 공유(검색, 컬렉션, 메타데이터, 공동 작업, 미리 보기 등)에서 가능한 것 이상으로 풍부한 디지털 자산 관리 기능을 제공하고 [!DNL Experience Manager] 데스크탑 앱은 서버측 DAM 저장소를 데스크탑의 작업과 연결하는 편리한 링크를 제공합니다.
+네트워크 파일 공유를 사용하여 디지털 자산을 관리하는 경우, 데스크탑 앱이 매핑한 네트워크 공유를 사용하기만 하면 [!DNL Experience Manager] 편리한 대체품으로 간주될 수 있습니다. 네트워크 파일 공유 [!DNL Experience Manager] 에서 전환할 때 웹 인터페이스는 네트워크 공유(검색, 컬렉션, 메타데이터, 공동 작업, 미리 보기 등)에서 가능한 것 이상으로 풍부한 디지털 자산 관리 기능을 제공하고 [!DNL Experience Manager] 데스크탑 앱은 서버측 DAM 저장소를 데스크탑의 작업과 연결하는 편리한 링크를 제공합니다.
 
 데스크탑 [!DNL Experience Manager] 앱을 사용하여 의 네트워크 공유에서 바로 에셋을 관리하지 마십시오 [!DNL Assets]. 예를 들어 데스크탑 앱을 사용하여 여러 파일을 이동/복사하지 않아도 됩니다. [!DNL Experience Manager] 대신 [!DNL Assets] 인터페이스를 사용하여 폴더를 Finder/탐색기에서 네트워크 공유로 드래그하거나 폴더 업로드 기능을 [!DNL Assets] 사용하십시오.
 
