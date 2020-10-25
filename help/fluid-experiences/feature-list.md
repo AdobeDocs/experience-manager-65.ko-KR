@@ -2,9 +2,9 @@
 title: AEM Fluid Experiences 기능 목록
 description: Fluid Experiences 기능 목록
 index: n
-translation-type: ht
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 33abb544c5f12f7d7a44fc326f07fe9b53ebc9d3
+workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 100%
 
@@ -32,14 +32,14 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 
 |  |
 |---|
-| [컨텐츠 저장소](/help/assets/managing-assets-touch-ui.md) |
+| [컨텐츠 저장소](/help/assets/manage-assets.md) |
 | [자산 유형](/help/assets/assets-formats.md) |
 | [이미지 표현물](/help/assets/image-presets.md) |
 | [메타데이터 및 태그 관리](/help/assets/metadata.md) |
-| [검색](/help/assets/managing-assets-touch-ui.md) |
-| [컬렉션](/help/assets/managing-collections-touch-ui.md) 및 [Lightbox](/help/assets/touch-ui-light-box.md) |
+| [검색](/help/assets/manage-assets.md) |
+| [컬렉션](/help/assets/manage-assets.md) 및 [Lightbox](/help/assets/light-box.md) |
 | [프로파일](/help/assets/processing-profiles.md) |
-| [버전 제어](/help/assets/managing-assets-touch-ui.md) |
+| [버전 제어](/help/assets/manage-assets.md) |
 | [중복 감지](/help/assets/duplicate-detection.md) |
 | [스마트 태그](/help/assets/enhanced-smart-tags.md) |
 
