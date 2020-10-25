@@ -4,7 +4,7 @@ description: 필터 패널을 [!DNL Adobe Experience Manager] 사용하여 필�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5968'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 필터 **** 패널을 사용하면 파일 유형, 파일 크기, 마지막 수정 날짜, 자산 상태, 인사이트 데이터, Adobe Stock 라이선스와 같은 다양한 옵션(예측)을 기반으로 검색 결과를 필터링하여 검색 범위를 좁힐 수 있습니다. 관리자는 필터 패널을 사용자 정의하고 검색 패싯을 사용하여 검색 조건자를 추가하거나 제거할 수 있습니다. 필터 [!UICONTROL 패널의] 파일 유형 [!UICONTROL 필터에는] 혼합 상태 확인란이있습니다. 따라서 중첩된 설명(또는 형식)을 모두 선택하지 않으면 첫 번째 수준 확인란은 부분적으로 선택되어 있습니다.
 
-[!DNL Experience Manager] 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 컬렉션 [검색을 참조하십시오](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 컬렉션 [검색을 참조하십시오](/help/assets/manage-collections.md).
 
 ## 검색 인터페이스 이해 {#searchui}
 
@@ -222,7 +222,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 ### 컬렉션 검색 {#collections}
 
-[!DNL Experience Manager] 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 컬렉션 [검색을 참조하십시오](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] 검색 기능은 컬렉션 검색 및 컬렉션 내 자산 검색을 지원합니다. 컬렉션 [검색을 참조하십시오](/help/assets/manage-collections.md).
 
 ## Asset selector {#assetpicker}
 
@@ -374,7 +374,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 ### 에셋을 업로드할 때 텍스트 추출 {#extracttextupload}
 
-사용자가 PSD 또는 PDF 파일과 같은 에셋을 업로드할 때 에셋에서 텍스트를 추출하도록 구성할 수 있습니다. [!DNL Experience Manager] [!DNL Experience Manager] 추출된 텍스트를 색인화하고 추출된 텍스트를 기반으로 이러한 에셋을 검색하는 데 도움이 됩니다. 자산 [업로드를 참조하십시오](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+사용자가 PSD 또는 PDF 파일과 같은 에셋을 업로드할 때 에셋에서 텍스트를 추출하도록 구성할 수 있습니다. [!DNL Experience Manager] [!DNL Experience Manager] 추출된 텍스트를 색인화하고 추출된 텍스트를 기반으로 이러한 에셋을 검색하는 데 도움이 됩니다. 자산 [업로드를 참조하십시오](/help/assets/manage-assets.md#uploading-assets).
 
 텍스트 추출을 배포하기 위해 너무 많은 리소스가 소모되는 경우 텍스트 추출 [을 비활성화하는 것이 좋습니다](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
 
@@ -447,7 +447,7 @@ Experience Manager에서 검색된 자산으로 다음을 수행할 수 있습�
 * 자산, 폴더 및 기타 컬렉션의 정적 참조 목록입니다.
 * 검색 기준을 기반으로 컬렉션의 자산을 채우는 동적 목록(스마트 컬렉션)
 
-검색 조건에 따라 스마트 컬렉션을 만들 수 있습니다. 필터 **[!UICONTROL 패널에서]** **[!UICONTROL 파일]** 을 **[!UICONTROL 선택하고 스마트 컬렉션]**&#x200B;을 클릭합니다. 컬렉션 [관리를 참조하십시오](/help/assets/managing-collections-touch-ui.md).
+검색 조건에 따라 스마트 컬렉션을 만들 수 있습니다. 필터 **[!UICONTROL 패널에서]** **[!UICONTROL 파일]** 을 **[!UICONTROL 선택하고 스마트 컬렉션]**&#x200B;을 클릭합니다. 컬렉션 [관리를 참조하십시오](/help/assets/manage-collections.md).
 
 ## 예상치 않은 검색 결과 및 문제 해결 {#troubleshoot-unexpected-search-results-and-issues}
 
