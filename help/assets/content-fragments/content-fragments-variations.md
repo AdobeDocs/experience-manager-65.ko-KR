@@ -10,9 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
-translation-type: ht
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 100%
 
@@ -256,7 +256,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 
 ### 조각에 자산 삽입 {#inserting-assets-into-your-fragment}
 
-컨텐츠 조각 작성 프로세스를 간소화하기 위해 [자산](/help/assets/managing-assets-touch-ui.md)(이미지)을 조각에 바로 추가할 수 있습니다.
+컨텐츠 조각 작성 프로세스를 간소화하기 위해 [자산](/help/assets/manage-assets.md)(이미지)을 조각에 바로 추가할 수 있습니다.
 
 자산은 형식을 지정하지 않고 조각의 단락 시퀀스에 추가됩니다. [페이지에서 조각을 사용/참조](/help/sites-authoring/content-fragments.md)할 때 형식을 지정할 수 있습니다.
 
@@ -363,7 +363,7 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
 >
 >동기화는 **여러 줄 텍스트** 데이터 유형에서만 작동합니다.
 >
->*변형의 변경 내용을&#x200B;**마스터&#x200B;***에 전송하는 선택은 할 수 없습니다.
+>*변형의 변경 내용을&#x200B;**마스터***에 전송하는 선택은 할 수 없습니다.
 
 1. 조각 편집기에서 컨텐츠 조각을 엽니다. **마스터**&#x200B;가 편집되었는지 확인합니다.
 1. 특정 변형을 선택한 후, 다음 중 하나에서 적절한 동기화 작업을 선택합니다.
