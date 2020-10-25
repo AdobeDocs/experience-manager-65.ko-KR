@@ -10,9 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
-translation-type: ht
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 >
 >[시각적 자산(예: 이미지)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)을 조각 및/또는 페이지에 추가하는 다양한 방법이 있습니다.
 
-연결하려면 먼저 [미디어 자산을 컬렉션에 추가](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection)해야 합니다. 이 작업이 완료되면 다음 작업을 수행할 수 있습니다.
+연결하려면 먼저 [미디어 자산을 컬렉션에 추가](/help/assets/manage-collections.md#adding-assets-to-a-collection)해야 합니다. 이 작업이 완료되면 다음 작업을 수행할 수 있습니다.
 
 1. 조각을 열고 사이드 패널에서 **관련 컨텐츠**&#x200B;를 선택합니다.
 
