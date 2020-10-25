@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->자산 사용자 인터페이스에 대한 자세한 내용은 터치 UI를 사용하여 [자산 관리를 참조하십시오](/help/assets/managing-assets-touch-ui.md).
+>자산 사용자 인터페이스에 대한 자세한 내용은 터치 UI를 사용하여 [자산 관리를 참조하십시오](/help/assets/manage-assets.md).
 
 ## 빠른 시작:혼합 미디어 집합 {#quick-start-mixed-media-sets}
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
    혼합 [미디어 집합을 웹 페이지에 연결](/help/assets/linking-urls-to-yourwebapplication.md) 및 [비디오 또는 이미지 뷰어 포함을 참조하십시오](/help/assets/embed-code.md).
 
-필요한 경우 혼합 미디어 [세트를 편집할 수 있습니다](#editing-mixed-media-sets). 또한 혼합 미디어 집합 속성을 보고 수정할 [수도 있습니다](/help/assets/managing-assets-touch-ui.md#editing-properties).
+필요한 경우 혼합 미디어 [세트를 편집할 수 있습니다](#editing-mixed-media-sets). 또한 혼합 미디어 집합 속성을 보고 수정할 [수도 있습니다](/help/assets/manage-assets.md#editing-properties).
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ ht-degree: 1%
 
 ## 혼합 미디어 세트 편집 {#editing-mixed-media-sets}
 
-Assets의 자산처럼 사용자 인터페이스에서 직접 혼합 미디어 세트의 자산 [에 대해 다양한 편집 작업을 수행할 수 있습니다](/help/assets/managing-assets-touch-ui.md). 혼합 미디어 세트에서 다음 작업을 수행할 수도 있습니다.
+Assets의 자산처럼 사용자 인터페이스에서 직접 혼합 미디어 세트의 자산 [에 대해 다양한 편집 작업을 수행할 수 있습니다](/help/assets/manage-assets.md). 혼합 미디어 세트에서 다음 작업을 수행할 수도 있습니다.
 
 * 혼합 미디어 세트에 자산을 추가합니다.
 * 혼합 미디어 세트에서 자산 순서를 변경합니다.
