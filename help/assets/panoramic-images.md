@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
@@ -37,7 +37,7 @@ CRXDE Lite의 기본 종횡비 설정(2의 경우)은 다음과 같이 재정의
 
 종횡비와 키워드 기준은 모두 자산 세부 사항 페이지와 WCM 구성 요소의 파노라마 자산에 `Panoramic Media` 적용됩니다.
 
-파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 자산 [업로드를 참조하십시오](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 자산 [업로드를 참조하십시오](/help/assets/manage-assets.md#uploading-assets).
 
 ## Dynamic Media Classic 구성(Scene7) {#configuring-dynamic-media-classic-scene}
 
