@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '3064'
+ht-degree: 96%
 
 ---
 
@@ -30,11 +33,11 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 >[!NOTE]
 >
->If your page and/or template has been appropriately set up, then you can use [responsive layout](/help/sites-authoring/responsive-layout.md) when editing.
+>페이지 및/또는 템플릿이 적절하게 설정된 경우 편집할 때 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md)을 사용할 수 있습니다.
 
 >[!NOTE]
 >
->When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewingpagestouchoptimizedui) if you want to navigate using the links in your content.
+>**편집** 모드에서는 컨텐츠에 링크가 표시되지만 **액세스할 수 없습니다**. 컨텐츠의 링크를 사용하여 탐색하려면 [미리 보기 모드](#previewingpagestouchoptimizedui)를 사용하십시오.
 
 ## 페이지 도구 모음 {#page-toolbar}
 
@@ -94,9 +97,9 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ### 상태 알림 {#status-notification}
 
-If a page is part of a [workflow](/help/sites-authoring/workflows.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
+페이지가 [워크플로우](/help/sites-authoring/workflows.md) 또는 다중 워크플로우의 일부인 경우 페이지를 편집할 때 화면 맨 위에 있는 알림 표시줄에 이 정보가 표시됩니다.
 
-![screen_shot_2018-03-22at11739](assets/screen_shot_2018-03-22at111739.png)
+![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -104,13 +107,13 @@ If a page is part of a [workflow](/help/sites-authoring/workflows.md) or multipl
 
 알림은 페이지에 대해 실행 중인 워크플로우를 나열합니다. 사용자가 현재 워크플로우 단계에 참여 중인 경우 옵션은 [워크플로우 상태](/help/sites-authoring/workflows-participating.md)에 영향을 주며 워크플로우에 대한 자세한 정보는 다음과 같이 확인할 수 있습니다.
 
-* **완료** - 전체 **작업 항목 대화 상자를 엽니다**
+* **완료** - **전체 작업 항목 대화 상자** 열기
 
-* **위임** - 전체 **작업 항목 대화 상자를 엽니다**
+* **위임** - 전체 작업 항목 **대화 상자를** 엽니다
 
-* **세부 사항** 보기 - **워크플로우의 세부** 사항 창을 엽니다.
+* **세부 사항 보기** - 워크플로우의 **세부 사항** 창을 엽니다.
 
-Completing and delegating workflow steps via the notification bar works as it does when [participating in workflows](/help/sites-authoring/workflows-participating.md) from the Notification inbox.
+알림 표시줄을 통해 워크플로우 단계를 완료하고 위임하는 것은 알림 받은 편지함에서 [워크플로우에 참여](/help/sites-authoring/workflows-participating.md)할 때와 같은 방식입니다.
 
 페이지에 여러 개의 워크플로우가 있는 경우 알림 오른쪽 끝에 화살표 단추와 함께 워크플로우 개수가 표시되어 워크플로우를 스크롤할 수 있습니다.
 
@@ -134,8 +137,8 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)를 사용하여 새 구성 요소를 추가할 수 있습니다. [구성 요소 자리 표시자](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다:
 
-1. 페이지가 [**편집&#x200B;**모드](/help/sites-authoring/author-environment-tools.md#page-modes)인지 확인합니다.
-1. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)를 엽니다 .
+1. 페이지가 [**편집** 모드](/help/sites-authoring/author-environment-tools.md#page-modes)인지 확인합니다.
+1. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)를 엽니다.
 1. 필요한 구성 요소를 [필요한 위치](#component-placeholder)로 드래그합니다.
 
 1. 구성 요소를 [편집합니다.](#editmovecopypastedelete)
@@ -148,13 +151,15 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 단락 시스템의 **구성 요소를 여기로 드래그하십시오.** 상자를 사용하여 새 구성 요소를 추가할 수 있습니다.
 
-1. 페이지가 [**편집&#x200B;**모드](/help/sites-authoring/author-environment-tools.md#page-modes)인지 확인합니다.
+1. 페이지가 [**편집** 모드](/help/sites-authoring/author-environment-tools.md#page-modes)인지 확인합니다.
 1. 단락 시스템에서 새 구성 요소를 선택하고 추가하는 두 가지 방법이 있습니다.
 
    * 기존 구성 요소의 도구 모음 또는 **구성 요소를 여기로 드래그하십시오.** 상자에서 **구성 요소 삽입** 옵션(+)을 선택합니다.
+
    ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
 
-   * If you are on a desktop device you can double-click on the **Drag components here** box.
+   * 데스크탑 장치를 사용하는 경우 **구성 요소를 여기로 드래그하십시오.** 상자를 두 번 클릭합니다.
+
    필수 구성 요소를 선택할 수 있는 **새 구성 요소 삽입** 대화 상자가 열립니다.
 
    ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
@@ -163,7 +168,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 ### 자산 브라우저를 사용하여 구성 요소 삽입 {#inserting-a-component-using-the-assets-browser}
 
-[자산 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다 . 이렇게 하면 적절한 유형의 새 구성 요소가 자동으로 만들어집니다(자산이 들어 있음).
+[자산 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. 이렇게 하면 적절한 유형의 새 구성 요소가 자동으로 만들어집니다(자산이 들어 있음).
 
 이것은 다음 자산 유형에 대해 유효합니다(일부는 페이지/단락 시스템에 따라 다릅니다.).
 
@@ -202,7 +207,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 위의 자산 유형 중 하나를 끌어 구성 요소를 만들려면,
 
-1. 페이지가 [**편집&#x200B;**모드](/help/sites-authoring/author-environment-tools.md#page-modes)인지 확인합니다.
+1. 페이지가 [**편집** 모드](/help/sites-authoring/author-environment-tools.md#page-modes)인지 확인합니다.
 1. [자산 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser)를 엽니다.
 1. 필요한 자산을 필요한 위치로 끕니다. [구성 요소 자리 표시자](#component-placeholder)는 구성 요소가 위치할 곳을 보여 줍니다.
 
@@ -214,7 +219,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 >
 >모바일 장치에서 자산 브라우저가 전체 화면을 채웁니다. 자산을 드래그하면 브라우저가 닫히고 자산을 배치할 수 있도록 페이지가 다시 표시됩니다.
 
-자산을 검색할 때 자산을 빠르게 변경해야 하는 경우, 자산의 이름 옆에 있는 편집 아이콘을 클릭하여 [자산 편집기](/help/assets/managing-assets-touch-ui.md)를 브라우저에서 직접 시작할 수 있습니다.
+자산을 검색할 때 자산을 빠르게 변경해야 하는 경우, 자산의 이름 옆에 있는 편집 아이콘을 클릭하여 [자산 편집기](/help/assets/manage-assets.md)를 브라우저에서 직접 시작할 수 있습니다.
 
 ![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
 
@@ -228,13 +233,13 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 * **편집**
 
-   [구성 요소 유형에](/help/sites-authoring/default-components.md) 따라 구성 요소의 컨텐츠를 [편집할 수 있습니다](#edit-content). 종종 도구 모음이 제공됩니다.
+   [편집 구성 요소 유형에 따라](/help/sites-authoring/default-components.md) [구성 요소의 컨텐츠를 편집](#edit-content)할 수 있게 됩니다. 종종 도구 모음이 제공됩니다.
 
    ![](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **구성**
 
-   [구성 요소 유형에](/help/sites-authoring/default-components.md) 따라 구성 요소의 속성을 편집하고 구성할 수 있습니다. 종종 대화 상자가 열립니다.
+   [구성 요소 유형에 따라](/help/sites-authoring/default-components.md) 구성 요소의 속성을 편집 및 구성할 수 있게 됩니다. 종종 대화 상자가 열립니다.
 
    ![](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -269,6 +274,7 @@ Completing and delegating workflow steps via the notification bar works as it do
    * 같은 페이지나 다른 페이지에 붙여넣을 수 있습니다.
    * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣게 됩니다.
    * 클립보드에 컨텐츠가 있는 경우에만 붙여넣기 작업이 표시됩니다.
+
    ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
    >[!NOTE]
@@ -303,12 +309,12 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 구성 요소에서 컨텐츠를 추가 및/또는 편집하는 방법에는 두 가지가 있습니다.
 
-* [편집하려면 구성 요소 대화 상자](#component-edit-dialog)를 엽니다 .
+* [편집하려면 구성 요소 대화 상자](#component-edit-dialog)를 엽니다.
 * 자산 브라우저에서 [자산을 끌어다 놓아](#draganddropintocomponent) 컨텐츠를 바로 추가합니다.
 
 ### 구성 요소 편집 대화 상자 {#component-edit-dialog}
 
-[구성 요소 도구 모음의 [편집](연필) 아이콘](#edit-configure-copy-cut-delete-paste)을 사용하여 컨텐츠를 편집할 구성 요소를 열 수 있습니다.
+[구성 요소 도구 모음의 편집(연필) 아이콘](#edit-configure-copy-cut-delete-paste)을 사용하여 컨텐츠를 편집할 구성 요소를 열 수 있습니다.
 
 정확한 편집 옵션은 구성 요소에 따라 다릅니다. 일부 구성 요소의 경우 [모든 작업이 전체 화면 모드에서만 사용](#edit-content-full-screen-mode)할 수 있습니다. 예:
 
@@ -382,11 +388,11 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 구성 요소를 조정하기 위해 편집에서 [레이아웃 모드](/help/sites-authoring/responsive-layout.md)로 반복적으로 전환하는 대신 해당 구성 요소의 레이아웃을 변경하려는 구성 요소에 대해 **레이아웃** 작업을 선택하면 [편집 모드]를 벗어나지 않고 시간을 절약할 수 있습니다.
 
-1. When in **Edit** mode of the sites console, selecting a component reveals the component&#39;s toolbar.
+1. Sites 콘솔의 **편집** 모드에 있는 경우 구성 요소를 선택하면 구성 요소의 도구 모음이 표시됩니다.
 
    ![screen_shot_2018-03-22at133756](assets/screen_shot_2018-03-22at133756.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   **레이아웃** 작업을 클릭하거나 탭하여 구성 요소의 레이아웃을 조정합니다.
 
    ![](do-not-localize/chlimage_1-21.png)
 
@@ -395,17 +401,18 @@ Completing and delegating workflow steps via the notification bar works as it do
    * 구성 요소 표시의 크기 조정 핸들이 표시됩니다.
    * 에뮬레이터 도구 모음이 화면 맨 위에 표시됩니다.
    * 표준 편집 작업 대신 레이아웃 작업이 구성 요소 도구 모음에 표시됩니다.
+
    ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
 
-   You can now modify the layout of the component as you would in [layout mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+   [레이아웃 모드](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)에서처럼 구성 요소의 레이아웃을 수정할 수 있습니다.
 
-1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. 구성 요소의 도구 모음이 일반적인 편집 상태로 돌아갑니다.
+1. 필요한 레이아웃 변경을 만든 후 구성 요소 작업 메뉴에서 **닫기** 단추를 클릭하여 구성 요소 레이아웃 수정을 중지할 수 있습니다. 구성 요소의 도구 모음이 일반적인 편집 상태로 돌아갑니다.
 
    ![](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
->레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어, 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 클릭하면 에뮬레이터 도구 모음이 사라지면서 레이아웃 도구 모음이 아닌 표준 편집 도구 모음이 새로 선택한 구성 요소와 크기 조정 핸들에 대해 표시됩니다.
+>레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 클릭하면 에뮬레이터 도구 모음이 사라질 뿐 아니라 새로 선택한 구성 요소와 크기 조정 핸들에 대한 표준 편집 도구 모음(레이아웃 도구 모음이 아님)이 표시됩니다.
 >
 >여러 구성 요소에 영향을 미치는 페이지의 전체 레이아웃을 편집해야 하는 경우 [레이아웃 모드](/help/sites-authoring/responsive-layout.md)로 전환하십시오.
 
@@ -478,7 +485,8 @@ If the page is based on a [static template](/help/sites-authoring/templates.md#e
 >
 >* 컨텐츠에 있는 링크는 볼 수는 있지만 편집 모드에서 액세스할 수는 없습니다.
 >* 링크를 사용하여 탐색하려는 경우 미리 보기 옵션 중 하나를 사용합니다.
->* Use the [keyboard shortcut](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` to switch between preview and the last selected mode.
+>* [키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M`을 사용하여 미리 보기와 마지막에 선택한 모드 간에 전환할 수 있습니다.
+
 >
 
 
@@ -513,6 +521,7 @@ AEM에서는 다른 사람이 컨텐츠를 수정할 수 없도록 페이지를 
 
    1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
    1. 잠금 아이콘을 선택합니다.
+
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **페이지 편집기**
@@ -532,7 +541,7 @@ AEM에서는 다른 사람이 컨텐츠를 수정할 수 없도록 페이지를 
 
 ## 페이지 잠금 해제 {#unlocking-a-page}
 
-Unlocking a page is very similar to [locking the page](#locking-a-page). Once the page is locked the lock options are replaced by unlock actions.
+페이지 잠금을 해제하는 것은 [페이지 잠금](#locking-a-page)과 매우 유사해서, 페이지가 잠기면 잠금 옵션이 잠금 해제 동작으로 대체됩니다.
 
 [페이지 정보] 메뉴에 **잠금 해제**&#x200B;가 옵션으로 표시되며 [사이트 콘솔]의 잠금 아이콘은 **잠금 해제** 아이콘으로 바뀝니다.
 
@@ -546,7 +555,7 @@ Unlocking a page is very similar to [locking the page](#locking-a-page). Once th
 
 ## 페이지 편집 실행 취소 및 재실행 {#undoing-and-redoing-page-edits}
 
-다음 아이콘을 사용하여 작업을 실행 취소하거나 재실행할 수 있습니다. 이 아이콘들은 경우에 따라 도구 모음에도 표시됩니다.
+다음 아이콘을 사용하여 작업을 실행 취소하거나 재실행할 수 있습니다. 이 아이콘들은 때에 따라 도구 모음에도 표시됩니다.
 
 ![](do-not-localize/screen_shot_2018-03-23at093614.png)
 
@@ -579,6 +588,7 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 >* 실행 취소를 사용한 후 페이지를 편집하지 않은 경우 작업을 재실행합니다.
 >* 최대 20개의 편집 작업 실행을 취소합니다(기본 설정).
 >* 실행 취소 및 재실행용 [키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)를 사용합니다.
+
 >
 
 
