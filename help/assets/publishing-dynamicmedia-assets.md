@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: 7a1da89805799f392f4397b1582bcc83d9bc67de
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -44,7 +44,7 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 
 
 
-세트 또는 자산 게시에 대한 자세한 내용은 자산 [게시를 참조하십시오.](managing-assets-touch-ui.md)
+세트 또는 자산 게시에 대한 자세한 내용은 자산 [게시를 참조하십시오.](manage-assets.md)
 
 ## 다이내믹 미디어 자산의 HTTP/2 전달 {#http-delivery-of-dynamic-media-assets}
 
