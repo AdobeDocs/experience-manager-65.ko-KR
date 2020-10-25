@@ -10,14 +10,17 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '3013'
+ht-degree: 69%
 
 ---
 
 
 # 크리에이티브 프로젝트 및 PIM 통합{#creative-project-and-pim-integration}
 
-마케터 또는 크리에이티브 전문가인 경우 AEM(Adobe Experience Manager)의 크리에이티브 프로젝트 툴을 사용하여 조직 내에서 전자 상거래 관련 제품 사진 및 관련 크리에이티브 프로세스를 관리할 수 있습니다.
+마케터 또는 크리에이티브 전문가라면 Adobe Experience Manager(AEM)의 크리에이티브 프로젝트 툴을 사용하여 조직 내에서 전자 상거래 관련 제품 사진 및 관련 크리에이티브 프로세스를 관리할 수 있습니다.
 
 특히, 크리에이티브 프로젝트를 사용하여 사진 촬영 워크플로우에서 다음과 같은 작업을 간소화할 수 있습니다.
 
@@ -109,7 +112,7 @@ source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
 
 * **작업 목록**
 
-작업 카드에는 프로젝트의 전체 진행 상태가 표시됩니다. 프로젝트에 관련 작업이 있는 경우에만 프로젝트 세부 사항 페이지에 표시됩니다. 작업 카드는 완료된 작업 수를 기준으로 프로젝트의 현재 완료 상태를 표시합니다. 향후 작업은 포함되지 않습니다.
+작업 카드에는 프로젝트의 전반적인 진행 상태가 표시됩니다. 프로젝트에 관련 작업이 있는 경우에만 프로젝트 세부 사항 페이지에 표시됩니다. 작업 카드는 완료된 작업 수를 기준으로 프로젝트의 현재 완료 상태를 표시합니다. 향후 작업은 포함되지 않습니다.
 
 작업 카드는 다음 세부 사항을 제공합니다.
 
@@ -153,6 +156,7 @@ source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
    * 제품 사진 촬영 수정
    * 사진 촬영 검토
    * 프로덕션으로 이동
+
    Perform a similar procedure to configure the tasks in the **Product Photo Shoot (Commerce Integration) workflow**.
 
 이 섹션에서는 제품 정보 관리를 크리에이티브 프로젝트에 통합하는 방법을 설명합니다.
@@ -219,6 +223,7 @@ source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
    * 제품 계층 구조에 해당하는 자산이 워크플로우 제목과 동일한 이름을 갖는 폴더에 작성됩니다.
    * 자산의 메타데이터는 사진사가 이미지를 제공하기 전에도 자산 콘솔을 사용하여 편집 가능합니다.
    * 사진사가 제공하는 이미지를 저장하는 사진 촬영 폴더가 생성됩니다. 사진 촬영 폴더에는 촬영 목록의 각 제품 항목에 대한 하위 폴더가 포함되어 있습니다.
+
    커머스 통합이 없는 제품 사진 촬영 워크플로우의 경우, 촬영 목록 업로드가 첫 번째 작업입니다. **촬영 목록 업로드**&#x200B;를 탭/클릭하여 **shotlist.csv** 파일을 업로드합니다. CSV 파일에는 제품 ID가 있어야 합니다. 다른 필드는 선택적입니다. 이를 사용하여 자산을 제품에 매핑할 수 있습니다.
 
 ### 촬영 목록 업로드 작업 {#upload-shot-list-task}
@@ -344,7 +349,7 @@ The name of images to be uploaded should begin with **&quot;&lt;productId>_&quot
 
 ## DAM 자산 메타데이터 보기 {#viewing-dam-asset-metadata}
 
-승인 후, 자산은 해당 제품에 연결됩니다. 이제 승인된 자산의 [속성 페이지](/help/assets/managing-assets-touch-ui.md#editing-properties)에는 추가 **제품 데이터**(연결된 제품 정보) 탭이 있습니다. 이 탭에는 제품 세부 사항, SKU 번호 및 자산을 연결하는 기타 제품 관련 세부 사항이 표시됩니다. **편집** 아이콘을 탭/클릭하여 자산 속성을 업데이트합니다. 제품 관련 정보는 읽기 전용으로 유지됩니다.
+승인 후, 자산은 해당 제품에 연결됩니다. 이제 승인된 자산의 [속성 페이지](/help/assets/manage-assets.md#editing-properties)에는 추가 **제품 데이터**(연결된 제품 정보) 탭이 있습니다. 이 탭에는 제품 세부 사항, SKU 번호 및 자산을 연결하는 기타 제품 관련 세부 사항이 표시됩니다. **편집** 아이콘을 탭/클릭하여 자산 속성을 업데이트합니다. 제품 관련 정보는 읽기 전용으로 유지됩니다.
 
 나타나는 링크를 탭/클릭하여 자산이 연관된 제품 콘솔의 각 제품 세부 사항 페이지로 이동합니다.
 
@@ -359,7 +364,7 @@ The name of images to be uploaded should begin with **&quot;&lt;productId>_&quot
    ![chlimage_1-163](assets/chlimage_1-163a.png)
 
 1. Open the **Role Based Task** step.
-1. **작업** 탭에서 **작업** 목록에 표시할 작업의이름을 제공합니다. 역할에 작업을 할당하고 기본 우선 순위를 설정하고 설명을 제공하고 작업의 기한을 지정할 수도 있습니다.
+1. **작업** 탭에서 **작업** 목록에 표시할 작업의이름을 제공합니다. 역할에 작업을 지정하고, 기본 우선 순위를 설정하고, 설명을 제공하고, 작업의 기한 시간을 지정할 수도 있습니다.
 
    ![chlimage_1-164](assets/chlimage_1-164a.png)
 
