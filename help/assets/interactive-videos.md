@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '6050'
 ht-degree: 0%
@@ -236,14 +236,14 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
 
 비디오 및 축소판 에셋을 이미 업로드한 경우 비디오에 [인터랙션 추가](#adding-interactivity-to-your-video)작업을 진행합니다.
 
-잘못된 비디오 또는 이미지를 업로드하거나 업로드된 비디오 또는 더 이상 필요하지 않은 이미지를 삭제하려는 경우 자산 [삭제를 참조하십시오](/help/assets/managing-assets-touch-ui.md#deleting-assets).
+잘못된 비디오 또는 이미지를 업로드하거나 업로드된 비디오 또는 더 이상 필요하지 않은 이미지를 삭제하려는 경우 자산 [삭제를 참조하십시오](/help/assets/manage-assets.md#deleting-assets).
 
 비디오 및 관련 축소판 에셋을 업로드하려면
 
 1. 비디오 및 관련 축소판 에셋을 원하는 폴더 또는 폴더에 업로드합니다.
 
-   See [Uploading assets](/help/assets/managing-assets-touch-ui.md).
-FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help/assets/managing-assets-touch-ui.md).
+   See [Uploading assets](/help/assets/manage-assets.md).
+FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help/assets/manage-assets.md).
 
    이제 비디오에 인터랙티브한 요소를 추가할 수 있습니다.
 
