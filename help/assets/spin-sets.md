@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->자산 사용자 인터페이스에 대한 자세한 내용은 터치 UI를 사용하여 [자산 관리를 참조하십시오](/help/assets/managing-assets-touch-ui.md).
+>자산 사용자 인터페이스에 대한 자세한 내용은 터치 UI를 사용하여 [자산 관리를 참조하십시오](/help/assets/manage-assets.md).
 
 ## 빠른 시작:스핀 세트 {#quick-start-spin-sets}
 
@@ -77,13 +77,13 @@ ht-degree: 0%
 
    회전 [집합을 웹 페이지에 연결](/help/assets/linking-urls-to-yourwebapplication.md) 및 [비디오 또는 이미지 뷰어 포함을 참조하십시오](/help/assets/embed-code.md).
 
-필요한 경우 스핀 세트를 [편집할 수 있습니다](#editing-spin-sets). 또한 스핀 세트 속성을 보고 수정할 [수 있습니다](/help/assets/managing-assets-touch-ui.md#editing-properties).
+필요한 경우 스핀 세트를 [편집할 수 있습니다](#editing-spin-sets). 또한 스핀 세트 속성을 보고 수정할 [수 있습니다](/help/assets/manage-assets.md#editing-properties).
 
 ## 스핀 세트에 대한 자산 업로드 {#uploading-assets-for-spin-sets}
 
 1차원 스핀 세트의 경우 최소 8-12개의 샷과 2차원 스핀 세트의 경우 16-24개의 샷이 필요합니다. 항목이 회전하고 뒤집어지고 있다는 인상을 주기 위해 샷을 정기적으로 촬영해야 합니다. 예를 들어 1차원 회전 집합에 12개의 샷이 있는 경우 각 샷에 대해 30도(360/12)를 회전합니다.
 
-AEM Assets의 다른 자산을 [업로드하는 것처럼 스핀 세트에 대한 이미지를 업로드할 수 있습니다](/help/assets/managing-assets-touch-ui.md).
+AEM Assets의 다른 자산을 [업로드하는 것처럼 스핀 세트에 대한 이미지를 업로드할 수 있습니다](/help/assets/manage-assets.md).
 
 ### 스핀 세트에 대한 이미지 캡처에 대한 지침 {#guidelines-for-shooting-spin-set-images}
 
