@@ -3,7 +3,7 @@ title: 디지털 자산의 메타데이터를 관리할 수 있습니다 [!DNL A
 description: 메타데이터의 유형과 메타데이터를 기반으로 에셋을 자동으로 구성하고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: e49fa8ec19411648841b19bad4b8c1e0efcc1dc1
 workflow-type: tm+mt
 source-wordcount: '2423'
 ht-degree: 2%
@@ -163,7 +163,7 @@ XMP의 쓰기 되돌리는 [기술 요구 사항에 설명된 플랫폼 및 파�
 
 ## 컬렉션의 메타데이터 편집 {#collections-metadata}
 
-자세한 내용은 컬렉션 메타데이터 [보기 및 편집](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) 및 여러 컬렉션의 메타데이터 [를 일괄](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)편집을 참조하십시오.
+자세한 내용은 컬렉션 메타데이터 [보기 및 편집](/help/assets/manage-collections.md#view-edit-collection-metadata) 및 여러 컬렉션의 메타데이터 [를 일괄](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk)편집을 참조하십시오.
 
 ## 폴더에 메타데이터 프로필 적용 {#applying-a-metadata-profile-to-folders}
 
@@ -242,7 +242,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 >[!MORELIKETHIS]
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
->* [여러 컬렉션의 메타데이터 속성 편집](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [여러 컬렉션의 메타데이터 속성 편집](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Experience Manager 에셋에서 메타데이터 가져오기 및 내보내기](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
