@@ -10,9 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
 docset: aem65
-translation-type: ht
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 1. **자산** 콘솔에서 컨텐츠 조각의 위치로 이동합니다.
 1. 다음 중 하나를 선택합니다.
 
-   * [**속성 보기&#x200B;**를 선택하여 대화 상자를 엽니다](/help/assets/managing-assets-touch-ui.md#editing-properties). 볼 수도 있도록 열리면 편집할 수도 있습니다.
+   * [**속성 보기**&#x200B;를 선택하여 대화 상자를 엽니다](/help/assets/manage-assets.md#editing-properties). 볼 수도 있도록 열리면 편집할 수도 있습니다.
    * [편집할 컨텐츠 조각](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)을 연 후 사이드 패널에서 **메타데이터**&#x200B;를 선택합니다.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
