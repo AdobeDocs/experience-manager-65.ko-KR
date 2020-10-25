@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5944'
 ht-degree: 1%
@@ -237,7 +237,7 @@ Dynamic Media에서 처리해야 하는 자산 유형을 정의하고 고급 자
 * Adobe Illustrator 파일(.AI) 또는 Adobe Photoshop Encapsulated Postscript 파일(.EPS)을 래스터화합니다.
 * 참고:비디오 프로필 및 이미징 프로필을 사용하여 각각 비디오와 이미지 처리를 정의할 수 있습니다.
 
-[자산 업로드](/help/assets/managing-assets-touch-ui.md#uploading-assets)를 참조하십시오.
+[자산 업로드](/help/assets/manage-assets.md#uploading-assets)를 참조하십시오.
 
 **자산 처리를 구성하려면**
 
@@ -428,7 +428,7 @@ spin-01-01
 
    프로비전 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
-1. 페이지 상단 근처의 내비게이션 막대에서 **[!UICONTROL 설정]>[!UICONTROL 애플리케이션 설정]>[!UICONTROL 배치 세트][!UICONTROL >]**&#x200B;배치 설정 사전 설정설정을 클릭합니다.
+1. 페이지 상단 근처의 내비게이션 막대에서 **[!UICONTROL 설정] > [!UICONTROL 애플리케이션 설정] > [!UICONTROL 배치 세트][!UICONTROL >]**&#x200B;배치 설정 사전 설정설정을 클릭합니다.
 
    [ **[!UICONTROL 세부 사항]**] 페이지의 오른쪽 위 모서리에 설정된 [양식 보기]가 기본 보기입니다.
 
