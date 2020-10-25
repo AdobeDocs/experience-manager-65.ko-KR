@@ -6,7 +6,7 @@ user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 81%
@@ -113,7 +113,7 @@ ht-degree: 81%
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] 통합](aem-cc-integration-best-practices.md)
    + [통합 [!DNL InDesign Server]](indesign.md)
    + [자산의 디지털 권한 관리](drm.md)
-   + [자산 통찰력에 데모 패키지 사용](touch-ui-using-demo-package-for-asset-insights.md)
+   + [자산 통찰력에 데모 패키지 사용](use-demo-package-for-asset-insights.md)
    + [자산 파일 형식 우수 사례](assets-file-format-best-practices.md)
    + [자산 모니터링 우수 사례](assets-monitoring-best-practices.md)
    + [Camera Raw 지원](camera-raw.md)
@@ -139,21 +139,21 @@ ht-degree: 81%
    + [컨텐츠 조각 - Markdown](content-fragments/content-fragments-markdown.md)
    + [컨텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md)
 + 자산 관리 {#managing}
-   + [디지털 자산을 관리합니다](managing-assets-touch-ui.md)
-   + [컬렉션 관리](managing-collections-touch-ui.md)
+   + [디지털 자산을 관리합니다](manage-assets.md)
+   + [컬렉션 관리](manage-collections.md)
    + [중복 감지 활성화](duplicate-detection.md)
    + [디지털 자산 구성](organize-assets.md)
    + [비디오 자산 관리](managing-video-assets.md)
    + [번역 프로젝트 만들기](translation-projects.md)
    + [자산 번역 준비](preparing-assets-for-translation.md)
    + [Experience Manager에서 자산 다운로드](download-assets-from-aem.md)
-   + [Lightbox](touch-ui-light-box.md)
-   + [자산 통찰력](touch-ui-asset-insights.md)
-   + [DTM을 통해 자산 통찰력 활성화](touch-ui-using-dtm-for-asset-insights.md)
-   + [자산 통찰력 구성](touch-ui-configuring-asset-insights.md)
+   + [Lightbox](light-box.md)
+   + [자산 통찰력](asset-insights.md)
+   + [DTM을 통해 자산 통찰력 활성화](use-dtm-for-asset-insights.md)
+   + [자산 통찰력 구성](configure-asset-insights.md)
    + [자산 체크인 및 체크아웃](check-out-and-submit-assets.md)
    + [폴더에 번역 클라우드 서비스 적용](transition-cloud-services.md)
-   + [웹 페이지에 페이지 추적기 및 포함 코드 사용](touch-ui-using-page-tracker.md)
+   + [웹 페이지에 페이지 추적기 및 포함 코드 사용](use-page-tracker.md)
    + [조합 자산 관리](managing-linked-subassets.md)
    + [관련 자산](related-assets.md)
    + [비공개 폴더 공유](private-folder.md)
