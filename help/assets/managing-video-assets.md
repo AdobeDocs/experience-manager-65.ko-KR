@@ -3,7 +3,7 @@ title: 비디오 자산 관리
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및 게시할 수 있습니다 [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager Assets] 에서는 확장 MP4를 사용하여 비디오 자산에 대한 미리 보기를 생성합니다. 자산의 형식이 MP4가 아닌 경우 FFmpeg 팩을 설치하여 미리 보기를 생성합니다. FFmpeg는 OGG 및 MP4 유형의 비디오 변환을 만듭니다. 사용자 인터페이스에서 변환을 미리 볼 수 [!DNL Assets] 있습니다.
 
 1. 디지털 자산 폴더 또는 하위 폴더에서 디지털 자산을 추가할 위치로 이동합니다.
-1. 자산을 업로드하려면 도구 모음에서 **[!UICONTROL 만들기를]** 클릭하고 **[!UICONTROL 파일을 선택합니다]**. 또는 사용자 인터페이스에서 파일을 드래그합니다. 자세한 내용은 [자산](managing-assets-touch-ui.md#uploading-assets) 업로드를 참조하십시오.
+1. 자산을 업로드하려면 도구 모음에서 **[!UICONTROL 만들기를]** 클릭하고 **[!UICONTROL 파일을 선택합니다]**. 또는 사용자 인터페이스에서 파일을 드래그합니다. 자세한 내용은 [자산](manage-assets.md#uploading-assets) 업로드를 참조하십시오.
 1. 카드 보기에서 비디오를 미리 보려면 비디오 자산에서 **[!UICONTROL 재생]** 옵션 ![](assets/do-not-localize/play.png) 옵션을 클릭합니다. 카드 보기에서만 비디오를 일시 중지하거나 재생할 수 있습니다. [ [!UICONTROL 재생] ] 및 [!UICONTROL [일시 정지] ] 옵션은 목록 보기에서 사용할 수 없습니다.
 
 1. 자산 세부 사항 페이지에서 비디오를 미리 보려면 카드에서 **[!UICONTROL 편집을]** 클릭합니다. 비디오가 브라우저의 기본 비디오 플레이어에서 재생됩니다. 비디오를 재생, 일시 정지, 볼륨 조절 및 전체 화면으로 확대/축소할 수 있습니다.
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager 자산에서 디지털 자산 관리](/help/assets/managing-assets-touch-ui.md)
->* [Experience Manager 자산의 컬렉션 관리](/help/assets/managing-collections-touch-ui.md)
+>* [Experience Manager 자산에서 디지털 자산 관리](/help/assets/manage-assets.md)
+>* [Experience Manager 자산의 컬렉션 관리](/help/assets/manage-collections.md)
 >* [다이내믹 미디어 비디오 설명서](/help/assets/video.md).
 
