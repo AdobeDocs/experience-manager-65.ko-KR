@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '2204'
 ht-degree: 0%
@@ -133,7 +133,7 @@ AEM 소스 버전의 AEM 저작 환경에 대한 모든 사용자 지정을 식�
 
 ### 기존 자산에 대한 자산 ID 생성 {#generating-asset-ids-for-existing-assets}
 
-기존 자산에 대한 자산 ID를 생성하려면 AEM 인스턴스를 업그레이드하여 AEM 6.5를 실행할 때 자산을 업그레이드하십시오. 자산 통찰력 기능을 사용하려면 이 [기능이 필요합니다](/help/assets/touch-ui-asset-insights.md). 자세한 내용은 포함 코드 [추가를 참조하십시오](/help/assets/touch-ui-using-page-tracker.md#add-embed-code).
+기존 자산에 대한 자산 ID를 생성하려면 AEM 인스턴스를 업그레이드하여 AEM 6.5를 실행할 때 자산을 업그레이드하십시오. 자산 통찰력 기능을 사용하려면 이 [기능이 필요합니다](/help/assets/asset-insights.md). 자세한 내용은 포함 코드 [추가를 참조하십시오](/help/assets/use-page-tracker.md#add-embed-code).
 
 자산을 업그레이드하려면 JMX 콘솔에서 자산 ID 연결 패키지를 구성합니다. 저장소의 자산 수에 따라 시간이 오래 `migrateAllAssets` 걸릴 수 있습니다. 우리의 내부 시험은 TarMK에 있는 125,000개의 자산을 약 한 시간 동안 측정합니다.
 
