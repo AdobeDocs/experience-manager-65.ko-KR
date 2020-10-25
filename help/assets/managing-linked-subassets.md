@@ -3,7 +3,7 @@ title: 참조 및 여러 페이지로 복합 자산 관리
 description: 디지털 자산에 대한 참조를 만드는 방법을 [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]살펴보십시오. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 여러 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 1. Experience Manager 데스크탑 앱 [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)을 사용하여 로컬 파일 시스템에서 디지털 자산을 가져옵니다. 참조할 자산의 파일 시스템 위치로 이동합니다.
 1. 로컬 폴더의 자산을 [!DNL Illustrator] 파일로 드래그합니다.
 
-1. 마운트된 드라이브에 [!DNL Illustrator] 파일을 저장하거나 [저장소에](/help/assets/managing-assets-touch-ui.md#uploading-assets) 업로드할 [!DNL Experience Manager] 수있습니다.
+1. 마운트된 드라이브에 [!DNL Illustrator] 파일을 저장하거나 [저장소에](/help/assets/manage-assets.md#uploading-assets) 업로드할 [!DNL Experience Manager] 수있습니다.
 
 1. 워크플로우가 완료되면 자산의 자산 세부 사항 페이지로 이동합니다. 기존 디지털 자산에 대한 참조는 참조 열 **[!UICONTROL 의 종속성]** 아래에 **[!UICONTROL 나열됩니다]** .
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
-1. 파일 [!DNL Photoshop] 을 마운트된 드라이브에 저장하거나 [저장소에](/help/assets/managing-assets-touch-ui.md#uploading-assets) 업로드할 [!DNL Experience Manager] 수있습니다.
+1. 파일 [!DNL Photoshop] 을 마운트된 드라이브에 저장하거나 [저장소에](/help/assets/manage-assets.md#uploading-assets) 업로드할 [!DNL Experience Manager] 수있습니다.
 1. 워크플로우가 완료되면 기존 [!DNL Experience Manager] 자산에 대한 참조가 자산 세부 사항 페이지에 나열됩니다.
 
    참조된 자산을 보려면 자산 세부 사항 페이지에서 [레일을](/help/sites-authoring/basic-handling.md#rail-selector) 닫습니다.
