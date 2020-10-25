@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 translation-type: tm+mt
-source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 13%
@@ -22,7 +22,7 @@ ht-degree: 13%
 
 미리 볼 때 이미지 사전 설정(이미지에만 해당) 또는 뷰어 사전 설정(비디오 및 이미지용)을 적용할 수도 있습니다. 두 자산을 모두 적용할 수는 없습니다. 뷰어 [사전 설정 적용](/help/assets/viewer-presets.md) 및 [이미지 사전 설정 적용을 참조하십시오](/help/assets/image-sets.md).
 
-자산 관리에 대한 일반 정보는 터치 UI로 자산 [관리에서 찾을 수 있습니다](/help/assets/managing-assets-touch-ui.md).
+자산 관리에 대한 일반 정보는 터치 UI로 자산 [관리에서 찾을 수 있습니다](/help/assets/manage-assets.md).
 
 다음 항목에서는 다이내믹 미디어 자산을 관리하는 데 필요한 작업에 대해 설명합니다.
 
