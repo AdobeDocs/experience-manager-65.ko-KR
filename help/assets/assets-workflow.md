@@ -3,7 +3,7 @@ title: 워크플로우를 사용하여 자산 처리
 description: 자산 처리를 사용하여 형식을 변환하고, 변환을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ![일부 기본 워크플로우](assets/aem-default-workflows.png)
 
-*그림:일부 기본 워크플로우는 에서 사용할 수 있습니다[!DNL Experience Manager].*
+*그림:일부 기본 워크플로우는 에서 사용할 수 있습니다 [!DNL Experience Manager].*
 
 ## Apply workflows to process assets {#applying-workflows-to-assets}
 
@@ -84,7 +84,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 
 ## 컬렉션에 워크플로우 적용 {#applying-a-workflow-to-a-collection}
 
-컬렉션에 워크플로우 [적용을 참조하십시오](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+컬렉션에 워크플로우 [적용을 참조하십시오](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
 
 ## 조건부로 자산을 처리하는 워크플로우 자동 시작 {#auto-execute-workflow-on-some-assets}
 
