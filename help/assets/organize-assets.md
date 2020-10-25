@@ -3,7 +3,7 @@ title: 디지털 자산 구성
 description: Experience Manager을 사용하여 디지털 에셋, 이미지, 파일, 폴더 등을 구성할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 2%
@@ -19,7 +19,7 @@ Microsoft Office 및 PDF 문서의 모든 디지털 에셋, 메타데이터 및 
 
 ## 폴더에서 에셋 구성 {#organize-using-folders}
 
-자산을 구성하는 가장 기본적인 방법은 이러한 자산을 폴더에 저장하는 것입니다. 로컬 파일 시스템의 폴더에 파일을 구성하는 것과 유사합니다. 폴더를 만들고 관리하는 방법에 대한 자세한 내용은 자산 [관리를 참조하십시오](managing-assets-touch-ui.md). 파일 및 폴더의 이름 지정 방법, 하위 폴더 정렬 방법 및 이러한 폴더 내의 파일을 처리하는 방법은 해당 자산이 처리되는 방식에 큰 영향을 줄 수 있습니다. 일관되고 적합한 파일 및 폴더 이름 지정 전략을 사용하고 좋은 메타데이터 방법을 사용하여 디지털 에셋 저장소를 최대한 활용할 수 있습니다.
+자산을 구성하는 가장 기본적인 방법은 이러한 자산을 폴더에 저장하는 것입니다. 로컬 파일 시스템의 폴더에 파일을 구성하는 것과 유사합니다. 폴더를 만들고 관리하는 방법에 대한 자세한 내용은 자산 [관리를 참조하십시오](manage-assets.md). 파일 및 폴더의 이름 지정 방법, 하위 폴더 정렬 방법 및 이러한 폴더 내의 파일을 처리하는 방법은 해당 자산이 처리되는 방식에 큰 영향을 줄 수 있습니다. 일관되고 적합한 파일 및 폴더 이름 지정 전략을 사용하고 좋은 메타데이터 방법을 사용하여 디지털 에셋 저장소를 최대한 활용할 수 있습니다.
 
 * 대부분의 경우 디지털 에셋 저장소는 항상 늘어나고 있습니다. 따라서 컨텐츠 작성 주기 초반에 메타데이터 사용, 폴더 구조 및 파일 이름 지정을 공식화하는 것이 중요합니다.
 * 디지털 자산에 대해 일관된 저장소 구조를 적용하는 경우에만 폴더를 사용하십시오. 이러한 일관성은 프로세스를 향상시키고 자산을 보다 효율적으로 관리하는 데 도움이 됩니다. 예를 들어, 다음 유형의 폴더에 배치된 자산은 적절한 [프로필을 사용하여 자산 처리에 사용할 수 있도록 도와줄 수 있습니다](processing-profiles.md).
@@ -53,7 +53,7 @@ Microsoft Office 및 PDF 문서의 모든 디지털 에셋, 메타데이터 및 
 
 의 에셋 컬렉션 [!DNL Experience Manager Assets]을 사용하면 사용자 간에 에셋을 만들고 편집하고 공유하는 기능을 간소화할 수 있습니다. 자산, 폴더 및 컬렉션의 정적 참조 목록이 포함된 컬렉션뿐만 아니라 검색 기준에 따라 자산을 가져오는 컬렉션을 포함하여 사용하는 방법에 따라 여러 유형의 컬렉션을 만듭니다.  또한 다른 위치의 자산으로 컬렉션을 만들고 액세스, 보기 및 편집 권한이 다른 여러 사용자와 공유할 수 있습니다.
 
-자세한 내용은 컬렉션 [관리를 참조하십시오.](managing-collections-touch-ui.md)
+자세한 내용은 컬렉션 [관리를 참조하십시오.](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
