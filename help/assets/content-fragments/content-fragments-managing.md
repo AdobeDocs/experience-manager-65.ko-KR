@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 99%
@@ -120,7 +120,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->이러한 작업 중 대부분은 [자산](/help/assets/managing-assets-touch-ui.md) 및/또는 [AEM 데스크톱 앱에 대한 표준 작업](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)입니다.
+>이러한 작업 중 대부분은 [자산](/help/assets/manage-assets.md) 및/또는 [AEM 데스크톱 앱에 대한 표준 작업](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)입니다.
 
 ## 조각 편집기 열기 {#opening-the-fragment-editor}
 
@@ -233,7 +233,7 @@ ht-degree: 99%
 
 ## 컨텐츠 조각에 대한 타임라인 {#timeline-for-content-fragments}
 
-표준 옵션뿐만 아니라 [타임라인](/help/assets/managing-assets-touch-ui.md#timeline)도 컨텐츠 조각과 관련된 정보와 작업을 모두 제공합니다.
+표준 옵션뿐만 아니라 [타임라인](/help/assets/manage-assets.md#timeline)도 컨텐츠 조각과 관련된 정보와 작업을 모두 제공합니다.
 
 * 버전, 댓글 및 주석에 대한 정보 보기
 * 버전에 대한 작업
