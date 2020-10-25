@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 1%
@@ -70,7 +70,7 @@ ht-degree: 1%
       * 비디오의 소스 비디오 및 인코딩된 표현물과 관련 축소판을 봅니다.
          [비디오](managing-video-assets.md#upload-and-preview-video-assets) 미리 보기 또는 [자산 미리 보기](previewing-assets.md)
          [비디오 변환 보기](video-renditions.md)
-         [비디오 변환 관리](managing-assets-touch-ui.md#managing-renditions)
+         [비디오 변환 관리](manage-assets.md#managing-renditions)
 
       * [뷰어 사전 설정 관리](managing-viewer-presets.md)
       * [자산 게시](publishing-dynamicmedia-assets.md)
@@ -80,16 +80,16 @@ ht-degree: 1%
          [비디오 변환 속성 보기](video-renditions.md)
 
       * 제목, 설명 및 태그, 사용자 정의 메타데이터 필드 등과 같은 비디오 속성을 편집합니다.
-         [비디오 속성 편집](managing-assets-touch-ui.md#editing-properties)
+         [비디오 속성 편집](manage-assets.md#editing-properties)
 
       * [디지털 자산에 대한 메타데이터 관리](metadata.md)
       * [메타데이터 스키마](metadata-schemas.md)
    * 비디오 검토, 승인 및 주석 달기, 버전 관리
 
-      * [비디오에 주석 달기](managing-video-assets.md#annotate-video-assets) 또는 [자산에 주석 달기](managing-assets-touch-ui.md#annotating)
+      * [비디오에 주석 달기](managing-video-assets.md#annotate-video-assets) 또는 [자산에 주석 달기](manage-assets.md#annotating)
 
-      * [버전 만들기](managing-assets-touch-ui.md#asset-versioning)
-      * [자산에 워크플로우 적용](assets-workflow.md) 또는 [자산에서 워크플로우 시작을 참조하십시오.](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+      * [버전 만들기](manage-assets.md#asset-versioning)
+      * [자산에 워크플로우 적용](assets-workflow.md) 또는 [자산에서 워크플로우 시작을 참조하십시오.](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [폴더 에셋 검토](bulk-approval.md)
       * [프로젝트](../sites-authoring/projects.md)
@@ -1164,7 +1164,7 @@ WebVTT [를 참조하십시오.웹 비디오 텍스트 트랙 형식](https://de
    일반적으로 장 VTT 파일의 이름을 비디오 파일과 동일한 이름으로 지정하고 장에 추가하려고 합니다. 기존 웹 컨텐츠 관리 시스템을 사용하여 비디오 URL의 생성을 자동화하는 데 도움이 됩니다.
 1. AEM에서 WebVTT 장 파일을 업로드합니다.
 
-   [자산 업로드](/help/assets/managing-assets-touch-ui.md#uploading-assets)를 참조하십시오.
+   [자산 업로드](/help/assets/manage-assets.md#uploading-assets)를 참조하십시오.
 
 1. 다음 중 하나를 수행하십시오.
 
