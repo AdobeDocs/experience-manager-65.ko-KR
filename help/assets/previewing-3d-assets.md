@@ -4,7 +4,7 @@ description: 3D 자산을 미리 보는 방법 살펴보기
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 11%
@@ -30,10 +30,10 @@ Adobe Experience Manager은 작성 프로세스의 일환으로 3D 자산의 업
 | GLTF | GL 전송 형식 | model/gltf+json | 아래의 **참고** 자료를 참조하십시오. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
 | STL | 입체사진 | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | 섭취 전용 지원; 미리 보기를 사용할 수 없습니다. |
-| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | 섭취 전용 지원; 미리 보기를 사용할 수 없습니다. |
+| DN | Adobe Dimension | model/x-adobe-dn | 섭취 전용 지원;미리 보기를 사용할 수 없습니다. |
+| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | 섭취 전용 지원;미리 보기를 사용할 수 없습니다. |
 
-**참고**: 자료가 gLTF 모델의 미리 보기에서 렌더링되지 않을 경우 이름이 적절하게 지정되고 모델과 동일한 루트 폴더의 `textures` 폴더에 있는지 확인합니다. 이 폴더는 다음과 같습니다.
+**참고**:자료가 gLTF 모델의 미리 보기에서 렌더링되지 않을 경우 이름이 적절하게 지정되고 모델과 동일한 루트 폴더의 `textures` 폴더에 있는지 확인합니다. 이 폴더는 다음과 같습니다.
 
     에셋(폴더)
     model.
@@ -51,8 +51,8 @@ Adobe Experience Manager은 작성 프로세스의 일환으로 3D 자산의 업
 **AEM에서 3D 자산을 미리 보려면**
 
 1. 3D 자산을 AEM에 업로드했는지 확인합니다.
-3D 미리 [보기](#supported-3d-previewing-assets) 및 자산 [업로드에 지원되는 형식을 참조하십시오](/help/assets/managing-assets-touch-ui.md#uploading-assets).
-1. AEM의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 >파일을 탭합니다.]**
+3D 미리 [보기](#supported-3d-previewing-assets) 및 자산 [업로드에 지원되는 형식을 참조하십시오](/help/assets/manage-assets.md#uploading-assets).
+1. AEM의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 >파일을 누릅니다.]**
 
    ![탐색 페이지](/help/assets/assets-dm/navigation-assets.png)
 
@@ -67,17 +67,17 @@ Adobe Experience Manager은 작성 프로세스의 일환으로 3D 자산의 업
    _자산 세부 사항 보기 페이지에서 3D 자산의 대화형 미리 보기_
 1. 3D 자산에 대한 자산 세부 사항 보기 페이지에서 다음 중 하나를 수행합니다.
    * **카메라**&#x200B;회전 - 3D 장면 및 개체 주위를 따라 보기를 선회할 수 있습니다.
-      * _마우스_: 마우스 왼쪽 단추를 클릭하고 드래그합니다.
-      * _터치 스크린_: 한 손가락으로 누르고 드래그하십시오.
+      * _마우스_:마우스 왼쪽 단추를 클릭하고 드래그합니다.
+      * _터치 스크린_:한 손가락으로 누르고 드래그하십시오.
    * **카메라**&#x200B;이동 - 보기를 왼쪽, 오른쪽, 위쪽 또는 아래로 패닝합니다.
-      * _마우스_: 마우스 오른쪽 단추를 클릭하고 드래그합니다.
-      * _터치 스크린_: 두 손가락을 누른 상태에서 드래그합니다.
+      * _마우스_:마우스 오른쪽 단추를 클릭하고 드래그합니다.
+      * _터치 스크린_:두 손가락을 누른 상태에서 드래그합니다.
    * **카메라**&#x200B;확대 - 3D 장면 영역 안팎으로 카메라를 확대/축소할 수 있습니다.
-      * _마우스_: 스크롤 휠입니다.
-      * _터치 스크린_: 두 손가락으로 집어요.
+      * _마우스_:스크롤 휠입니다.
+      * _터치 스크린_:두 손가락으로 집어요.
    * **카메라**&#x200B;다시 입력 - 3D 장면의 개체 지점으로 카메라를 다시 입력합니다.
-      * _마우스_: 두 번 클릭합니다.
-      * _터치 스크린_: 두 번 누릅니다.
+      * _마우스_:두 번 클릭합니다.
+      * _터치 스크린_:두 번 누릅니다.
    * **재설정**- 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 눌러 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정은 카메라를 더 가깝게 또는 멀리 이동하여 에셋을 전체적으로 적절한 보기 크기로 표시합니다.
    * **전체 화면 모드**- 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래에 있는 전체 화면 아이콘을 누릅니다.
 
