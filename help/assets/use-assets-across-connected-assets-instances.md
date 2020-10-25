@@ -3,7 +3,7 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2c3836cb7e2275c30e88e8a750eafce24a05837a
+source-git-commit: 2fe2b5fcaff2b2f2402f0bc638a0df2afd335b31
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 41%
@@ -159,7 +159,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 ## Limitations and best practices {#tips-and-limitations}
 
-* 자산 사용에 대한 통찰력을 얻으려면 인스턴스에서 [자산 인사이트](/help/assets/touch-ui-asset-insights.md) 기능을 [!DNL Sites] 구성합니다.
+* 자산 사용에 대한 통찰력을 얻으려면 인스턴스에서 [자산 인사이트](/help/assets/asset-insights.md) 기능을 [!DNL Sites] 구성합니다.
 
 ### 권한 및 에셋 관리 {#permissions-and-managing-assets}
 
