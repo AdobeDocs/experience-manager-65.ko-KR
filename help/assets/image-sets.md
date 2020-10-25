@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2076'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->자산 사용자 인터페이스에 대한 자세한 내용은 터치 UI를 사용하여 [자산 관리를 참조하십시오](/help/assets/managing-assets-touch-ui.md).
+>자산 사용자 인터페이스에 대한 자세한 내용은 터치 UI를 사용하여 [자산 관리를 참조하십시오](/help/assets/manage-assets.md).
 
 ## 빠른 시작:이미지 세트 {#quick-start-image-sets}
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
    이미지 [세트를 웹 페이지에 연결](/help/assets/linking-urls-to-yourwebapplication.md) 및 [비디오 또는 이미지 뷰어 포함을 참조하십시오](/help/assets/embed-code.md).
 
-이미지 세트를 편집하려면 이미지 세트 [편집을 참조하십시오.](#editing-image-sets) 또한 [이미지 세트 속성을 보고 편집할 수도 있습니다](/help/assets/managing-assets-touch-ui.md#editing-properties).
+이미지 세트를 편집하려면 이미지 세트 [편집을 참조하십시오.](#editing-image-sets) 또한 [이미지 세트 속성을 보고 편집할 수도 있습니다](/help/assets/manage-assets.md#editing-properties).
 
 세트를 만드는 데 문제가 있는 경우 다이내믹 미디어 문제 해결 - Scene7 모드에서 [이미지 및 세트를 참조하십시오](/help/assets/troubleshoot-dms7.md#images-and-sets).
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 먼저 이미지 세트에 대한 이미지를 업로드합니다. 이미지 세트 뷰어에서 이미지를 확대/축소할 수 있으므로 이미지를 선택할 때 확대/축소를 고려합니다. 이미지의 크기가 가장 큰 경우 2000픽셀 이상이어야 합니다. 이미지 세트는 많은 이미지 파일 포맷을 지원하지만 손실 없는 TIFF, PNG 및 EPS 이미지가 권장됩니다.
 
-Assets의 다른 자산을 [업로드하듯이 이미지 세트에 대한 이미지를 업로드할 수 있습니다](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Assets의 다른 자산을 [업로드하듯이 이미지 세트에 대한 이미지를 업로드할 수 있습니다](/help/assets/manage-assets.md#uploading-assets).
 
 ### 업로드할 이미지 세트 자산 준비 {#preparing-image-set-assets-for-upload}
 
