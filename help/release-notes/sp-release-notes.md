@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
 source-wordcount: '4530'
 ht-degree: 24%
@@ -248,7 +248,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 ### 사용자 인터페이스 {#ui-6560}
 
 * 오프로드 브라우저 인터페이스에는 일부 작업 항목이 표시되지 않습니다(NPR-34308).
-* 구성 브라우저 인터페이스에 모든 구성이 표시되지 않습니다(NPR-33644).
+* 구성 [브라우저](/help/sites-administering/configurations.md) 인터페이스에 모든 구성이 표시되지 않습니다(NPR-33644).
 * 가장 `Esc` 가장할 사용자를 검색할 때 키를 누르면 사용자 목록 대신 **[!UICONTROL 사용자]** 대화 상자가 닫힙니다(NPR-34084).
 
 ### 통합 {#integrations-6560}
