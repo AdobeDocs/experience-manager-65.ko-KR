@@ -9,11 +9,11 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
-translation-type: ht
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+workflow-type: tm+mt
 source-wordcount: '745'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 컨텐츠 조각 모델을 활성화하려면 필요한 단계가 있습니다.
 
-* 구성 관리자에서 컨텐츠 조각 모델을 사용할 수 있도록 설정
+* Enable the use of content fragment models in the [Configuration Browser](/help/sites-administering/configurations.md)
 * 자산 폴더에 구성 적용
 
 ### 구성 관리자에서 컨텐츠 조각 모델을 사용할 수 있도록 설정 {#enable-content-fragment-models-in-configuration-manager}
@@ -105,9 +105,8 @@ ht-degree: 100%
    ![cfm-6420-13](assets/cfm-6420-13.png)
 
    >[!NOTE]
-   >
-   >데이터 유형 **여러 줄 텍스트**&#x200B;의 경우 **기본 유형**&#x200B;을 다음 중 하나로 정의할 수 있습니다.
-   >* **리치 텍스트**
+   데이터 유형 **여러 줄 텍스트**&#x200B;의 경우 **기본 유형**&#x200B;을 다음 중 하나로 정의할 수 있습니다.
+   * **리치 텍스트**
 
    * **Markdown**
 
@@ -129,8 +128,7 @@ ht-degree: 100%
 ## 컨텐츠 조각 모델 삭제 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->컨텐츠 조각 모델을 삭제하면 종속된 조각이 영향을 받을 수 있습니다.
+컨텐츠 조각 모델을 삭제하면 종속된 조각이 영향을 받을 수 있습니다.
 
 컨텐츠 조각 모델을 삭제하려면
 
@@ -140,8 +138,7 @@ ht-degree: 100%
 1. 모델을 선택한 후 도구 모음에서 **삭제**&#x200B;를 클릭합니다.
 
    >[!NOTE]
-   >
-   >참조되는 모델의 경우 경고가 표시됩니다. 적절하게 조치하십시오.
+   참조되는 모델의 경우 경고가 표시됩니다. 적절하게 조치하십시오.
 
 ## 컨텐츠 조각 모델 게시 {#publishing-a-content-fragment-model}
 
@@ -155,6 +152,5 @@ ht-degree: 100%
 1. 모델을 선택한 후 도구 모음에서 **게시**&#x200B;를 클릭합니다.
 
    >[!NOTE]
-   >
-   >모델이 아직 게시되지 않은 컨텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
+   모델이 아직 게시되지 않은 컨텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
 
