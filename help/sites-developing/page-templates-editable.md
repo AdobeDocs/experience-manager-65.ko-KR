@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3954178cc660368a2b374bbb4d05d93d7309d4eb
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3218'
 ht-degree: 8%
 
 ---
@@ -51,13 +51,13 @@ ht-degree: 8%
 >[!NOTE]
 >
 >다음 자습서는 새 프로젝트에서 편집 가능한 페이지 템플릿을 설정하는 데에도 유용합니다.
->[AEM Sites 시작하기 파트 2 - 기본 페이지 및 템플릿 만들기](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[AEM Sites 파트 2 시작하기 - 기본 페이지 및 템플릿 만들기](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Creating a New Template {#creating-a-new-template}
 
 편집 가능한 템플릿 만들기는 기본적으로 템플릿 작성자가 [템플릿 콘솔 및 템플릿 편집기를](/help/sites-authoring/templates.md) 사용하여 수행됩니다. 이 섹션에서는 이 프로세스에 대한 개요를 설명하고 기술 수준에서 발생하는 사항에 대한 설명을 제공합니다.
 
-AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대한 자세한 내용은 [lazybones를 사용하여 AEM 프로젝트 만들기를 참조하십시오](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
+AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대한 자세한 내용은 Lazybones를 [사용하여 AEM 프로젝트 만들기를 참조하십시오](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
 
 편집 가능 템플릿을 새로 만들 때 다음을 수행합니다.
 
@@ -180,7 +180,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
 ## CRXDE Lite 사용 {#using-crxde-lite}
 
-1. 인스턴스에 대해 프로그래밍 방식으로 또는 CRXDE Lite를 사용하여 새 폴더(/conf 아래)를 만들 수 있습니다.
+1. 인스턴스에 대해 프로그래밍 방식으로 또는 CRXDE Lite을 사용하여 새 폴더(/conf 아래)를 만들 수 있습니다.
 
    다음 구조를 사용해야 합니다.
 
@@ -201,7 +201,7 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 
    * 유형: `String`
 
-   * 값: 템플릿 콘솔에 표시할 제목(폴더에 대해) **입니다** .
+   * 값:템플릿 콘솔에 표시할 제목(폴더에 대해) **입니다** .
 
 1. 표준 작성 권한 및 권한 *외에* (예: `content-authors`) 이제 그룹을 할당하고 작성자가 새 폴더에 템플릿을 만들 수 있도록 필요한 액세스 권한(ACL)을 정의해야 합니다.
 
@@ -218,14 +218,16 @@ AEM 프로젝트에서 편집 가능한 템플릿을 사용하는 방법에 대�
 1. **만들기**&#x200B;를 클릭합니다.
 1. 구성 **만들기** 대화 상자에서 다음 필드를 구성해야 합니다.
 
-   * **제목**: 구성 폴더의 제목을 제공합니다.
-   * **편집 가능한 템플릿**: 이 폴더 내에서 편집 가능한 템플릿을 허용하는 확인 표시
+   * **제목**:구성 폴더의 제목을 제공합니다.
+   * **편집 가능한 템플릿**:이 폴더 내에서 편집 가능한 템플릿을 허용하는 확인 표시
 
 1. **만들기**&#x200B;를 클릭합니다
 
 >[!NOTE]
 >
 >이 폴더 내에 템플릿을 만들려면 구성 브라우저에서 전역 폴더를 편집하고 **편집 가능한 템플릿** 옵션을 활성화할 수 있지만 이는 권장되지 않습니다.
+>
+>See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 ### ACL 및 그룹 {#acls-and-groups}
 
@@ -235,7 +237,7 @@ We.Retail 참조 구현의 [템플릿](/help/sites-developing/we-retail.md) 폴�
 
 #### 템플릿 작성자 그룹 {#the-template-authors-group}
 
-이 `template-authors` 그룹은 템플릿에 대한 액세스를 관리하는 데 사용되는 그룹이며 AEM과 표준으로 제공되지만 비어 있습니다. 프로젝트/사이트의 그룹에 사용자를 추가해야 합니다.
+이 `template-authors` 그룹은 템플릿에 대한 액세스를 관리하는 데 사용되고 AEM에서 표준으로 제공되지만 비어 있습니다. 프로젝트/사이트의 그룹에 사용자를 추가해야 합니다.
 
 >[!CAUTION]
 >
@@ -278,7 +280,7 @@ We.Retail 참조 구현의 [템플릿](/help/sites-developing/we-retail.md) 폴�
   <tr>
    <td>익명 웹 사용자</td>
    <td>read</td>
-   <td>익명 웹 사용자는 페이지를 렌더링하는 동안 정책을 읽어야 합니다.</td>
+   <td>페이지를 렌더링하는 동안 익명 웹 사용자가 정책을 읽어야 합니다.</td>
   </tr>
   <tr>
    <td>컨텐츠 작성자</td>
@@ -338,7 +340,7 @@ We.Retail 참조 구현의 [템플릿](/help/sites-developing/we-retail.md) 폴�
   <tr>
    <td>익명의 웹 사용자</td>
    <td>read</td>
-   <td>익명 웹 사용자는 페이지를 렌더링하는 동안 정책을 읽어야 합니다.</td>
+   <td>페이지를 렌더링하는 동안 익명 웹 사용자가 정책을 읽어야 합니다.</td>
   </tr>
   <tr>
    <td>컨텐츠 작성자</td>
@@ -374,7 +376,7 @@ We.Retail 참조 구현의 [템플릿](/help/sites-developing/we-retail.md) 폴�
    * 템플릿 편집기에서 허용되는 구성 요소를 정의하는 루트 노드의 정책입니다.
    * 템플릿 유형에서 응답형 그리드에 대한 중단점을 정의하고 모바일 에뮬레이터를 설정하는 것이 좋습니다. 구성은 개별 템플릿에서도 정의할 수 있으므로 선택 사항입니다( [템플릿 유형 및 모바일 장치 그룹 참조](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
 
-* AEM에서는 HTML5 페이지 및 적응형 양식 페이지와 같은 간단한 유형의 기본 템플릿 유형을 제공합니다.
+* AEM에서는 HTML5 페이지 및 적응형 양식 페이지와 같은 간단한 템플릿 유형을 제공합니다.
 
    * 추가적인 예는 [We.Retail 샘플 컨텐츠의 일부로](/help/sites-developing/we-retail.md) 제공됩니다.
 
@@ -426,7 +428,7 @@ We.Retail 참조 구현의 [템플릿](/help/sites-developing/we-retail.md) 폴�
 다른 템플릿의 기초로 사용할 수 있는 템플릿을 만든 경우 이 템플릿을 템플릿 유형으로 복사할 수 있습니다.
 
 1. 여기에 [설명된 대로 편집 가능한 템플릿과 마찬가지로 템플릿](/help/sites-authoring/templates.md#creating-a-new-template-template-author)을 만듭니다. 이 템플릿은 템플릿 유형의 기초가 됩니다.
-1. CRXDE Lite를 사용하여 새로 만든 템플릿을 노드에서 `templates` 템플릿 폴더 아래의 `template-types` 노드로 [복사합니다](/help/sites-developing/page-templates-editable.md#template-folders).
+1. CRXDE Lite을 사용하여 새로 만든 템플릿을 노드에서 `templates` 템플릿 폴더 아래의 `template-types` 노드로 [복사합니다](/help/sites-developing/page-templates-editable.md#template-folders).
 1. 템플릿 폴더 아래의 `templates` 노드에서 [템플릿을 삭제합니다](/help/sites-developing/page-templates-editable.md#template-folders).
 1. 노드 아래에 있는 템플릿 복사본에서 모든 `template-types` 및 `cq:template` 속성을 `cq:templateType` `jcr:content` 삭제합니다.
 
@@ -576,13 +578,13 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
       * 속성을 정의합니다.
 
-         * 이름: status
-         * 유형: 문자열
+         * 이름:status
+         * 유형:문자열
          * 값: `enabled`
 
 1. **허용된 템플릿**
 
-   * [하위 분기의 적절한 페이지 또는 루트 페이지의 **페이지 속성&#x200B;**](/help/sites-authoring/templates.md#allowing-a-template-author)에서 허용된 템플릿 경로를 정의합니다.
+   * [하위 분기의 적절한 페이지 또는 루트 페이지의 **페이지 속성**](/help/sites-authoring/templates.md#allowing-a-template-author) 에서 허용된 템플릿 경로를 정의합니다.
    * 속성을 설정합니다.
       `cq:allowedTemplates`
 On the 
@@ -600,7 +602,7 @@ On the
 * 템플릿 및 템플릿 유형에 들어 있는 정보에 대한 참조가 있습니다. 이렇게 하려면 속성이 있는 `jcr:content` 노드가 필요합니다.
 
    * `cq:template`
-실제 템플릿에 대한 동적 참조를 제공합니다. 템플릿 변경 사항이 실제 페이지에 반영되도록 합니다.
+실제 템플릿에 대한 동적 참조를 제공합니다.템플릿 변경 사항이 실제 페이지에 반영되도록 합니다.
 
    * `cq:templateType`
 템플릿 유형에 대한 참조를 제공합니다.
@@ -628,7 +630,7 @@ On the
    * 페이지 구성 요소는 템플릿의 `structure/jcr:content` 트리를 페이지의 `jcr:content` 트리와 병합합니다.
 
    * 페이지 구성 요소는 작성자가 편집 가능한 것으로 표시된 템플릿 구조의 노드(및 하위)만 편집할 수 있도록 허용합니다.
-   * 페이지에서 구성 요소를 렌더링할 때 해당 구성 요소의 상대 경로는 `jcr:content` 노드에서 가져옵니다. 그러면 템플릿의 노드 아래에 있는 동일한 `policies/jcr:content` 경로가 검색됩니다.
+   * 페이지에서 구성 요소를 렌더링할 때 해당 구성 요소의 상대 경로는 `jcr:content` 노드에서 가져옵니다.그러면 템플릿의 노드 아래에 있는 동일한 `policies/jcr:content` 경로가 검색됩니다.
 
       * 이 노드의 `cq:policy` 속성은 실제 컨텐트 정책을 가리킵니다(예: 해당 구성 요소에 대한 디자인 구성 보유).
 
