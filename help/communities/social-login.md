@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2803'
 ht-degree: 1%
 
 ---
@@ -109,6 +109,8 @@ Facebook 애플리케이션을 만들려면 https://developers.facebook.com/apps
 1. 도구 **[!UICONTROL >]** 일반 ******[!UICONTROL >]**&#x200B;구성 브라우저로 이동합니다. 컨텍스트를 선택하고 속성을 편집합니다. 아직 활성화되지 않은 경우 클라우드 구성을 활성화합니다.
 
    ![config-properties](assets/config-propertiespng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. **Facebook 클라우드 서비스 구성 만들기/** 편집을 참조하십시오.
 
@@ -259,6 +261,8 @@ Twitter 애플리케이션 관리의 권한 섹션에서 다음을 수행합니�
 1. 도구 **[!UICONTROL >]** 일반 ******[!UICONTROL >]**&#x200B;구성 브라우저로 이동합니다. 컨텍스트를 선택하고 속성을 편집합니다. 아직 활성화되지 않은 경우 클라우드 구성을 활성화합니다.
 
    ![twitterconfigpropping](assets/twitterconfigproppng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. Twitter 클라우드 서비스 구성 만들기/편집을 참조하십시오.
 
@@ -459,7 +463,7 @@ Facebook 또는 Twitter 앱에 대해 생성된 인스턴스를 찾으려면 다
 
 작성자 인스턴스에서 관리자 권한으로 로그인됨:
 
-1. 전역 탐색에서:도구, **CRX/[DE Lite를 선택합니다](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. 전역 탐색에서:도구, **CRX/ [DE Lite를 선택합니다](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. ntBaseLucene 사본에 ntBaseLucene-oauth라는 이름의 인덱스를 만듭니다.
 
    * Under node `/oak:index`
