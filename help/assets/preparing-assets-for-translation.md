@@ -3,7 +3,7 @@ title: 자산 번역 준비
 description: 언어 루트 폴더를 만들어 번역용 에셋을 준비함으로써 다국어 에셋을 지원합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 1d3e908eafa1cdcbc6ef557da509f12cdd9418cc
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 3%
@@ -21,16 +21,16 @@ ht-degree: 3%
 
 자산을 처음 추가하는 언어 사본은 기본 언어입니다. 기본 언어는 다른 언어로 번역되는 소스입니다. 샘플 폴더 계층 구조에는 여러 언어 루트가 포함되어 있습니다.
 
-```
- /content
-  /- dam
-   |- en
-   |- fr
-   |- de
-   |- es
-   |- it
-   |- ja
-   |- zh
+```shell
+/content
+    /- dam
+        |- en
+        |- fr
+        |- de
+        |- es
+        |- it
+        |- ja
+        |- zh
 ```
 
 다음 단계를 수행하여 자산을 번역할 준비를 합니다.
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 언어 루트를 만들려면 폴더를 만들고 이름 속성 값으로 ISO 언어 코드를 사용합니다. 언어 루트를 만든 후 언어 루트 내의 모든 수준에서 언어 사본을 만들 수 있습니다.
 
-예를 들어 샘플 계층의 이탈리아어 언어 사본의 루트 페이지는 이름 속성 `it` 으로 되어 있습니다. Name 속성은 저장소의 자산 노드의 이름으로 사용되므로 자산의 경로를 결정합니다. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
+예를 들어 샘플 계층의 이탈리아어 언어 사본의 루트 페이지는 이름 속성 `it` 으로 되어 있습니다. Name 속성은 저장소의 자산 노드의 이름으로 사용되므로 자산의 경로를 결정합니다.(`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
 1. 콘솔에서 [!DNL Assets] 만들기를 **[!UICONTROL 클릭하고]** 메뉴에서 폴더 **** 를선택합니다.
 
