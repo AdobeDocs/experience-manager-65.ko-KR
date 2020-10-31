@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: 0d5ee29141c897284f3f298d921f4f8528216f8f
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -50,7 +50,7 @@ AEM에 업로드된 360개의 비디오 에셋은 일반 비디오 에셋과 유
 **360 비디오 뷰어와 함께 사용할 에셋을 업로드하려면:**
 
 1. 360 비디오 자산 전용 폴더를 만들었습니다.
-1. [응용 비디오 프로필을 폴더에 적용합니다](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+1. [응용 비디오 프로필을 폴더에 적용합니다.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
 
    360개의 비디오 컨텐츠를 렌더링하면 소스 비디오 해상도와 인코딩된 변환 해상도에 대한 요구 사항이 360이 아닌 표준 비디오 컨텐츠보다 높습니다.
 
@@ -96,8 +96,8 @@ AEM에 업로드된 360개의 비디오 에셋은 일반 비디오 에셋과 유
 
 360 비디오가 마음에 들면 게시할 수 있습니다.
 
-See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
-See [Linking URLs to your web application](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
+See [Embedding the Video or Image Viewer on a Web Page.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
+웹 [응용 프로그램에 URL 연결을 참조하십시오](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 
 **360개의 비디오를 미리 보려면**
