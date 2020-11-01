@@ -1,8 +1,7 @@
 ---
 title: DocConverter 서비스 Java API QuickStart(SOAP)
 seo-title: DocConverter 서비스 Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: DocConverter 서비스 Java API QuickStart(SOAP)
 uuid: a02e13a5-4557-4c8a-a4be-e8d017127128
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -22,17 +21,17 @@ ht-degree: 0%
 
 DocConverter 서비스에서 Java API 빠른 시작(SOAP)을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF/A 호환성 확인](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 PDF/A 호환성 확인](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 문서를 PDF/A 문서로 변환](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 문서를 PDF/A 문서로 변환](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 문서를 PDF/A 문서로 변환 {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 문서를 PDF/A 문서로 변환 {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
 다음 Java 코드 예제에서는 Loan.pdf라는 PDF 문서 *를 LoanArchive.pdf라는 PDF* 파일로 저장한 PDF/ *A 문서로 변환합니다*. (문서 [를 PDF/A 문서로 변환을 참조하십시오](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
@@ -135,7 +134,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF/A 호환성 확인 {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF/A 호환성 확인 {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
 다음 Java 코드 예제에서는 입력 PDF 문서가 PDF/A 규격인지 확인합니다. DocConverter 서비스로 전달되는 입력 PDF 문서의 이름은 *LoanArchive.pdf입니다*. 유효성 검사 결과는 *ValidationResults.xml이라는 XML 파일에 기록됩니다*. 자세한 내용은 [프로그래밍 방식으로 PDF/A 규정 준수 여부 결정을 참조하십시오](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).
 
