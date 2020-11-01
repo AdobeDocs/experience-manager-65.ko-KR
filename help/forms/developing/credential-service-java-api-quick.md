@@ -1,8 +1,7 @@
 ---
 title: 자격 증명 서비스 Java API QuickStart(SOAP)
 seo-title: 자격 증명 서비스 Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 자격 증명 서비스 Java API QuickStart(SOAP)
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -22,9 +21,9 @@ ht-degree: 0%
 
 자격 증명 서비스에서 Java API 빠른 시작(SOAP)을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 자격 증명 가져오기](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 자격 증명 가져오기](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 자격 증명 삭제](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 자격 증명 삭제](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
@@ -36,7 +35,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 >
 >웹 서비스를 사용하여 자격 증명 서비스 작업을 수행할 수 없습니다.
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 자격 증명 가져오기 {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 자격 증명 가져오기 {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
 다음 코드 예제에서는 cred.p12 *라는 파일을 기반으로 자격 증명을 가져옵니다*. 자격 증명을 가져오는 데 사용되는 별칭 값입니다 `Secure`. (Trust [Manager API를 사용하여 자격 증명 가져오기를 참조하십시오](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
@@ -137,7 +136,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 자격 증명 삭제 {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 자격 증명 삭제 {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
 다음 코드 예제에서는 별칭 값 *보안을 기반으로 자격 증명을 삭제합니다*. (Trust [Manager API를 사용하여 자격 증명 삭제를 참조하십시오](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
