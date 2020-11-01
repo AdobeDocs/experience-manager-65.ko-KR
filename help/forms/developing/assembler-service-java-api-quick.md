@@ -1,8 +1,7 @@
 ---
 title: 어셈블러 서비스 Java API QuickStart(SOAP)
 seo-title: 어셈블러 서비스 Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 어셈블러 서비스 Java API QuickStart(SOAP)
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -22,35 +21,35 @@ ht-degree: 0%
 
 Assembler 서비스에서 Java API 빠른 시작(SOAP)을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 분리](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 분리](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 암호화된 PDF 문서 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 암호화된 PDF 문서 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 Bates 번호 매기기를 사용하여 PDF 문서 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 Bates 번호 매기기를 사용하여 PDF 문서 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 비대화형 PDF 문서 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 비대화형 PDF 문서 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 문서가 PDF/A 규격인지 확인](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 문서가 PDF/A 규격인지 확인](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 DCX 문서 유효성 검사](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 DCX 문서 유효성 검사](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 책갈피를 사용하여 PDF 문서 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 책갈피를 사용하여 PDF 문서 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 DCX 문서를 동적으로 만들기](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 DCX 문서를 동적으로 만들기](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 포트폴리오 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 PDF Portfolio 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 여러 XDP 조각 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 여러 XDP 조각 취합](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오.](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>AEM Forms과 함께 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오.](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 취합 {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 취합 {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
 다음 Java 코드 예제는 map.pdf *및* directions.pdf라는 두 개의 PDF 소스 문서를 하나의 PDF ** 문서로 병합합니다. 단일 PDF 문서의 이름은 *AssemblerResultPDF.pdf입니다*. DCX 문서의 이름은 *shell.xml입니다*. 자세한 내용은 [프로그래밍 방식으로 PDF 문서 조합을 참조하십시오](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents).
 
@@ -194,7 +193,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 분리 {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 분리 {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
 다음 Java 코드 예제에서는 AssemblerResultPDF.pdf라는 PDF 문서를 *분해합니다*. DCX 문서의 이름은 *shell_disassemble.xml입니다*. 분해된 각 PDF 문서의 이름이 지정됩니다 `ResultPDF[Number].pdf`. 즉, 첫 번째로 분해된 PDF 문서의 이름은 *ResultPDF1.pdf입니다.* 이 코드 예제에서 사용되는 *shell_disassemble.xml* DDX 문서에 대한 자세한 내용은 프로그래밍 [방식으로 PDF 문서](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)정리 을 참조하십시오.
 
@@ -333,7 +332,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 암호화된 PDF 문서 취합 {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 암호화된 PDF 문서 취합 {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
 
 다음 Java 코드 예제에서는 암호로 암호화된 PDF 문서를 어셈블합니다. 비보안 PDF 문서의 이름은 *Loan.pdf입니다*. DDX 문서의 이름은 *shell_Encrypt.xml입니다*. 암호화된 PDF 문서의 이름은 *AssemblerEncryptedPDF.pdf입니다*. 자세한 내용은 [암호화된 PDF 문서](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents)정리 참조
 
@@ -456,7 +455,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 Bates 번호 매기기를 사용하여 PDF 문서 취합 {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 Bates 번호 매기기를 사용하여 PDF 문서 취합 {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
 
 다음 Java 코드 예제에서는 고유한 페이지 식별자(bates 번호 매기기)를 사용하여 PDF 문서를 작성합니다. DCX 문서의 이름은 *shell_Bates.xml입니다*. 어셈블러 서비스에서 반환되는 PDF 문서는 AssemblerResultBatesPDF.pdf라는 PDF 파일 *로 저장됩니다*. (Bates [번호 매기기를 사용하여 문서 정리](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering)참조)
 
@@ -614,7 +613,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 비대화형 PDF 문서 취합 {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 비대화형 PDF 문서 취합 {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
 
 다음 Java 코드 예제에서는 비대화형 PDF 문서를 조합합니다. Assembler 서비스로 전달되는 대화형 PDF 문서의 이름은 *Loan.pdf입니다*. DDX 문서의 이름은 *shell_XFA.xml입니다*. 비대화형 PDF 문서는 AssembleNonInteractivePDF.pdf라는 PDF 파일 *로 저장됩니다*. ( [비대화형 PDF 문서 조합 참조](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents))
 
@@ -738,7 +737,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 문서가 PDF/A 규격인지 확인 {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 문서가 PDF/A 규격인지 확인 {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
 다음 Java 코드 예제에서는 입력 PDF 문서가 PDF/A 규격인지 확인합니다. 어셈블러 서비스로 전달되는 입력 PDF 문서의 이름은 *Loan.pdf입니다*. DDX 문서의 이름은 shell_PDFA.xml입니다. 어셈블러 서비스에서 반환되는 XML 문서이며 입력 PDF 문서가 PDF/A 규격인지 여부를 지정하는 XML 문서입니다. 이 코드 예제에 사용되는 *shell_PDFA.xml* DDX 문서에 대한 자세한 내용은 [문서가 PDF/A- 규격](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant)여부 확인을 참조하십시오.
 
@@ -884,7 +883,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 DCX 문서 유효성 검사 {#quick-start-soap-mode-validating-ddx-documents-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 DCX 문서 유효성 검사 {#quick-start-soap-mode-validating-ddx-documents-using-the-java-api}
 
 다음 Java 코드 예제에서는 bookmarkDDX.xml이라는 파일을 기반으로 DCX *문서의 유효성을 검사합니다*. DDX [문서 유효성 검사를 참조하십시오](/help/forms/developing/assembling-pdf-documents.md#validating-ddx-documents).
 
@@ -1015,7 +1014,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 책갈피를 사용하여 PDF 문서 취합 {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 책갈피를 사용하여 PDF 문서 취합 {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}
 
 다음 Java 코드 예제에서는 책갈피가 포함된 PDF 문서를 작성합니다. DCX 문서의 이름은 bookmarkDDX.xml *입니다*. PDF 문서에 추가할 책갈피를 설명하는 책갈피 XML 문서의 이름입니다. 결과 PDF 문서가 AssemblerResultBookmarks.pdf라는 PDF 파일로 저장됩니다. (책갈피를 [사용하여 PDF 문서 조합 참조](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks))
 
@@ -1185,12 +1184,12 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 DCX 문서를 동적으로 만들기 {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 DCX 문서를 동적으로 만들기 {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
 
 다음 Java 코드 예제에서는 PDF 문서를 분해하는 DDX 문서를 동적으로 만듭니다. 입력 PDF 문서의 각 레벨 1 책갈피에 대해 새 PDF 문서가 만들어집니다. 이 코드 예에는 두 개의 사용자 정의 메서드가 포함되어 있습니다.
 
-* `createDDX`: 어셈블러 서비스로 전송되는 DDC 문서를 나타내는 개체를 만듭니다. `org.w3c.dom.Document` 이 사용자 정의 메서드는 `org.w3c.dom.Document` 개체를 반환합니다.
-* `convertDDX`: 개체를 `org.w3c.dom.Document` 개체로 `com.adobe.idp.Document` 변환합니다. 이 메서드는 `org.w3c.dom.Document` 개체를 입력 매개 변수로 받아들이고 개체를 `com.adobe.idp.Document` 반환합니다.
+* `createDDX`:어셈블러 서비스로 전송되는 DDC 문서를 나타내는 개체를 만듭니다. `org.w3c.dom.Document` 이 사용자 정의 메서드는 `org.w3c.dom.Document` 개체를 반환합니다.
+* `convertDDX`:개체를 `org.w3c.dom.Document` 개체로 `com.adobe.idp.Document` 변환합니다. 이 메서드는 `org.w3c.dom.Document` 개체를 입력 매개 변수로 받아들이고 개체를 `com.adobe.idp.Document` 반환합니다.
 
    이 두 방법 모두 이 빠른 시작 시 호출됩니다. (DDX 문서 [동적으로 만들기를 참조하십시오](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)&quot;
 
@@ -1381,9 +1380,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 포트폴리오 취합 {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF Portfolio 취합 {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-다음 Java 코드 예제에서는 PDF 포트폴리오를 만듭니다. PDF 포트폴리오는 AssemblerResultPortfolio.pdf라는 *PDF 파일로 저장됩니다*. (PDF 포트폴리오 [취합 참조](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
+다음 Java 코드 예제에서는 PDF 포트폴리오를 만듭니다. PDF 포트폴리오는 AssemblerResultPortfolio.pdf라는 *PDF 파일로 저장됩니다*. 자세한 내용은 [PDF Portfolio](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)정리 참조
 
 ```java
  /*
@@ -1532,7 +1531,7 @@ public class AssemblePDFWithDynamicDDXSOAP {
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 여러 XDP 조각 취합 {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 여러 XDP 조각 취합 {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
 
 다음 Java 코드 예제에서는 다음 XDP 파일을 기반으로 하는 XDP 조각을 어셈블합니다. *tac018_template_crrolled.xdp*, *tc018_contact.xdp*&#x200B;및* tuc018_patient.xdp* 모든 조각을 포함하는 어셈블된 XDP 문서는 AssemblerResultXDP.xdp라는 XDP 파일 *로 저장됩니다*. (여러 [XDP 조각 조합을 참조하십시오](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
@@ -1685,13 +1684,13 @@ public class AssemblePDFWithDynamicDDXSOAP {
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 교정 {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 교정 {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
 다음 코드 예제에서는 PDF 문서를 `PDFUtility`
 
 >[!NOTE]
 >
->`PDFUtility` Acrobat을 사용하여 교정으로 표시된 PDF만 교정할 수 있습니다.
+>`PDFUtility` acrobat을 사용하여 교정으로 표시된 PDF만 교정할 수 있습니다.
 
 ```java
 /*
