@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4803'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Carousel 배너를 통해 마케터는 인터랙티브한 회전 프로모션 �
    * [AEM](/help/assets/adding-dynamic-media-assets-to-pages.md) 의 웹 사이트에 회전판 배너 추가 AEM Sites 고객인 경우, 인터랙티브 미디어 구성 요소를 사용하여 AEM의 페이지에 바로 회전판 세트를 추가할 수 있습니다.
 
 
-회전판 세트를 편집해야 하는 경우 회전판 세트 [편집을 참조하십시오.](#editing-carousel-sets) 또한 회전판 세트 속성을 보고 편집할 [수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties).
+회전판 세트를 편집해야 하는 경우 회전판 세트 [편집을 참조하십시오.](#editing-carousel-sets) 또한 회전판 세트 속성을 보고 편집할 [수 있습니다](manage-assets.md#editing-properties).
 
 ## 핫스팟 및 이미지 맵 변수 식별 {#identifying-hotspot-and-image-map-variables}
 
