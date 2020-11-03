@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2072'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->자산 사용자 인터페이스에 대한 자세한 내용은 터치 UI를 사용하여 [자산 관리를 참조하십시오](/help/assets/manage-assets.md).
+>자산 사용자 인터페이스에 대한 자세한 내용은 자산 [관리를 참조하십시오](/help/assets/manage-assets.md).
 
 ## 빠른 시작:이미지 세트 {#quick-start-image-sets}
 
