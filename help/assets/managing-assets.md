@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 13%
+source-wordcount: '114'
+ht-degree: 14%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 13%
 
 미리 볼 때 이미지 사전 설정(이미지에만 해당) 또는 뷰어 사전 설정(비디오 및 이미지용)을 적용할 수도 있습니다. 두 자산을 모두 적용할 수는 없습니다. 뷰어 [사전 설정 적용](/help/assets/viewer-presets.md) 및 [이미지 사전 설정 적용을 참조하십시오](/help/assets/image-sets.md).
 
-자산 관리에 대한 일반 정보는 터치 UI로 자산 [관리에서 찾을 수 있습니다](/help/assets/manage-assets.md).
+자산 관리에 대한 일반 정보는 자산 [관리에서 찾을 수 있습니다](/help/assets/manage-assets.md).
 
 다음 항목에서는 다이내믹 미디어 자산을 관리하는 데 필요한 작업에 대해 설명합니다.
 
@@ -30,4 +30,3 @@ ht-degree: 13%
 * [Dynamic Media 자산 미리 보기](/help/assets/previewing-assets.md)
 * [다이내믹 미디어 자산 게시](/help/assets/publishing-dynamicmedia-assets.md)
 * [선택기를 사용한 작업](/help/assets/working-with-selectors.md)
-
