@@ -1,9 +1,9 @@
 ---
-title: '[!DNL 자산] HTTP API.'
+title: '[!DNL Assets] HTTP API.'
 description: HTTP API를 사용하여 디지털 에셋을 작성, 읽기, 업데이트, 삭제 및 관리할 수 있습니다 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 1%
@@ -183,7 +183,7 @@ HTTP [!DNL Assets] API에는 다음 기능이 포함되어 있습니다.
 
 ### 네임스페이스 간 메타데이터 업데이트 `dc` `jcr` 동기화 {#sync-metadata-between-namespaces}
 
-API 메서드는 네임스페이스의 메타데이터 속성을 `jcr` 업데이트합니다. Touch-UI를 사용하여 수행한 업데이트는 네임스페이스의 메타데이터 속성을 `dc` 변경합니다. 메타데이터 값을 `dc` 및 `jcr` 네임스페이스 간에 동기화하려면 워크플로우를 만들고 자산 편집 시 워크플로우를 실행하도록 Experience Manager을 구성할 수 있습니다. ECMA 스크립트를 사용하여 필요한 메타데이터 속성을 동기화합니다. 다음 샘플 스크립트는 `dc:title` 와 사이에 제목 문자열을 동기화합니다 `jcr:title`.
+API 메서드는 네임스페이스의 메타데이터 속성을 `jcr` 업데이트합니다. 사용자 인터페이스를 사용하여 수행한 업데이트는 네임스페이스의 메타데이터 속성을 `dc` 변경합니다. 메타데이터 값을 `dc` 및 `jcr` 네임스페이스 간에 동기화하려면 워크플로우를 만들고 자산 편집 시 워크플로우를 실행하도록 Experience Manager을 구성할 수 있습니다. ECMA 스크립트를 사용하여 필요한 메타데이터 속성을 동기화합니다. 다음 샘플 스크립트는 `dc:title` 와 사이에 제목 문자열을 동기화합니다 `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
