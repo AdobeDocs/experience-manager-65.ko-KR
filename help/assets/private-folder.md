@@ -3,9 +3,9 @@ title: 자산을 공유할 비공개 폴더
 description: 비공개 폴더를 만들고 다른 사용자와 [!DNL Adobe Experience Manager Assets] 공유하고 다양한 권한을 할당하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '572'
 ht-degree: 1%
 
 ---
@@ -47,11 +47,11 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >폴더를 공유하는 사용자에게 편집기, 소유자 또는 뷰어와 같은 다양한 역할을 할당할 수 있습니다. 사용자에게 소유자 역할을 할당하는 경우 해당 사용자는 폴더에 대한 편집기 권한을 갖습니다. 또한 사용자는 다른 사람과 폴더를 공유할 수 있습니다. 편집기 역할을 할당하는 경우 사용자는 비공개 폴더의 자산을 편집할 수 있습니다. 뷰어 역할을 할당하면 사용자는 비공개 폴더의 에셋만 볼 수 있습니다.
+   >폴더를 공유하는 사용자 `Editor`, `Owner`또는 `Viewer` 와 같은 다양한 역할을 할당할 수 있습니다. 사용자에게 `Owner` 역할을 할당하는 경우 해당 사용자는 폴더에 대한 `Editor` 권한이 있습니다. 또한 사용자는 다른 사람과 폴더를 공유할 수 있습니다. 역할을 할당하면 `Editor` 사용자는 비공개 폴더의 자산을 편집할 수 있습니다. 뷰어 역할을 할당하면 사용자는 비공개 폴더의 에셋만 볼 수 있습니다.
 
    >[!NOTE]
    >
-   >비공개 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다. 따라서 관리자는 비공개 폴더에서 모든 소유자 구성원을 제거할 수 없습니다. 그러나 개인 폴더에서 기존 소유자(및 관리자 자체)를 제거하려면 관리자가 다른 사용자를 소유자로 추가해야 합니다.
+   >비공개 폴더에는 역할을 가진 구성원이 하나 이상 `Owner` 있습니다. 따라서 관리자는 비공개 폴더에서 모든 소유자 구성원을 제거할 수 없습니다. 그러나 개인 폴더에서 기존 소유자(및 관리자 자체)를 제거하려면 관리자가 다른 사용자를 소유자로 추가해야 합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 지정한 역할에 따라 사용자가 로그인할 때 개인 폴더에 대한 권한 세트가 할당됩니다 [!DNL Assets].
 1. 확인을 **[!UICONTROL 클릭하여]** 확인 메시지를 닫습니다.
@@ -59,7 +59,7 @@ ht-degree: 1%
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. 알림을 클릭하여 알림 목록을 엽니다.
+1. 알림 [!UICONTROL 을] 클릭하여 알림 목록을 엽니다.
 
    ![알림 목록](assets/Assets-Notification.png)
 
@@ -83,4 +83,4 @@ ht-degree: 1%
 >
 >사용자 인터페이스에서 위의 방법을 사용하여 폴더를 삭제하면 연결된 사용자 그룹도 삭제됩니다.
 >
->그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 작성자 인스턴스( `clean``http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`)의 JMX의 방법을 사용하여 저장소에서 정리할 수 있습니다.
+>그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 작성자 인스턴스( `clean``http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`)의 JMX의 방법을 사용하여 저장소에서 제거할 수 있습니다.
