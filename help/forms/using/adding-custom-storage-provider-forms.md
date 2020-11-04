@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 615b0db6da0986d7a74c42ec0d0e14bad7ede168
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,10 @@ public interface DraftDataService {
     public byte[] getAttachment (String attachmentID) throws FormsPortalException;
 }
 ```
+
+>[!NOTE]
+>
+>초안 ID 필드 길이에 대한 최소 값은 26자입니다. Adobe에서는 초안 ID 길이를 26자 이상으로 설정하는 것이 좋습니다.
 
 ## 데이터 서비스 제출 {#submission-data-service}
 
@@ -184,7 +188,7 @@ public interface SubmitDataService {
 }
 ```
 
-양식 포털은 UUID(Universal Unique Identifier) 개념을 사용하여 모든 초안 및 제출 양식에 대한 고유 ID를 생성합니다. 고유한 ID를 생성할 수도 있습니다. FPKeyGeneratorService 인터페이스를 구현하고, 해당 메서드를 재정의하고, 사용자 지정 논리를 개발하여 모든 초안 및 제출된 양식에 대해 사용자 지정 고유 ID를 생성할 수 있습니다. 또한 0보다 높은 사용자 지정 ID 생성 구현의 서비스 등급을 설정합니다. 기본 구현 대신 사용자 지정 구현이 사용됩니다.
+Forms 포털은 UUID(Universal Unique identifier) 개념을 사용하여 모든 초안 및 제출 양식에 대해 고유한 ID를 생성합니다. 고유한 ID를 생성할 수도 있습니다. FPKeyGeneratorService 인터페이스를 구현하고, 해당 메서드를 재정의하고, 사용자 지정 논리를 개발하여 모든 초안 및 제출된 양식에 대해 사용자 지정 고유 ID를 생성할 수 있습니다. 또한 0보다 높은 사용자 지정 ID 생성 구현의 서비스 등급을 설정합니다. 기본 구현 대신 사용자 지정 구현이 사용됩니다.
 
 ```java
 public interface FPKeyGeneratorService {
