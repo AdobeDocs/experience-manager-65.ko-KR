@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+source-git-commit: 0a082d3cff66b82ef6de551a735a16a001446a1e
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 1%
@@ -22,10 +22,10 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->`JAR` AEM `WAR` 의 파일 유형은 이러한 포맷은 Adobe의 지원 수준을 충족하기 위해 품질 보증을 받고 있습니다.
+>`JAR` aem `WAR` 의 파일 유형은 이러한 포맷은 Adobe의 지원 수준을 충족하기 위해 품질 보증을 받고 있습니다.
 
 
-이 섹션에서는 응용 프로그램 서버와 함께 Adobe Experience Manager(AEM)을 설치하는 방법을 설명합니다. 개별 응용 프로그램 서버에 [제공되는 특정 지원 수준을 확인하려면 지원되는 Platform](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) 섹션을 참조하십시오.
+이 섹션에서는 응용 프로그램 서버와 함께 Adobe Experience Manager(AEM)을 설치하는 방법을 설명합니다. 개별 응용 프로그램 서버에 대해 [제공되는 특정 지원 수준을 확인하려면 지원되는 플랫폼](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) 섹션을 참조하십시오.
 
 다음 응용 프로그램 서버의 설치 단계는 다음과 같습니다.
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->WAR 배포에서 Dynamic Media을 사용하는 경우 [다이내믹 미디어 설명서를 참조하십시오](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>WAR 배포에서 Dynamic Media를 사용하는 경우 [다이내믹 미디어 설명서를 참조하십시오](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## 일반 설명 {#general-description}
 
@@ -57,11 +57,11 @@ AEM은 단일 전쟁 파일로 배포됩니다.
 
 다음과 같이 기본 동작을 변경할 수 있습니다.
 
-* run mode : 배포하기 전에 AEM `sling.run.modes` war 파일의 `WEB-INF/web.xml` 파일에 매개 변수를 구성합니다.
+* run mode :배포하기 전에 AEM `sling.run.modes` war 파일의 `WEB-INF/web.xml` 파일에 매개 변수를 구성합니다.
 
-* sling.home: 배포하기 전에 AEM `sling.home` war 파일의 `WEB-INF/web.xml`파일에 매개 변수 구성
+* sling.home:배포하기 전에 AEM `sling.home` war 파일의 `WEB-INF/web.xml`파일에 매개 변수 구성
 
-* 컨텍스트 루트: AEM war 파일 이름 변경
+* 컨텍스트 루트:aem war 파일 이름 변경
 
 #### 게시 설치 {#publish-installation}
 
@@ -88,8 +88,8 @@ AEM은 단일 전쟁 파일로 배포됩니다.
 1. sling.home 매개 변수를 다른 경로로 변경합니다(절대 및 상대 경로 가능).
 1. 게시 인스턴스에 대해 게시하도록 sling.run.modes를 변경합니다.
 1. web.xml 파일을 반환합니다.
-1. 전쟁 파일의 이름을 변경하여 이름이 다르게 지정합니다. 예: 한 이름은 aemauthor.war로, 다른 이름은 aempublish.war로 변경합니다.
-1. 더 높은 메모리 설정(예: 기본 AEM 인스턴스의 경우: -Xmx3072m
+1. 전쟁 파일의 이름을 변경하여 이름이 다르게 지정합니다.예: 한 이름은 aemauthor.war로, 다른 이름은 aempublish.war로 변경합니다.
+1. 더 높은 메모리 설정(예: 기본 AEM 인스턴스의 경우:-Xmx3072m
 1. 두 웹 애플리케이션을 배포합니다.
 1. 배포 후 두 웹 응용 프로그램을 중지합니다.
 1. author 및 publish 인스턴스는 sling.properties 파일에서 property felix.service.urlhandlhandlers=false가 false로 설정되도록 합니다(기본값은 true로 설정됨).
@@ -105,7 +105,7 @@ AEM은 단일 전쟁 파일로 배포됩니다.
 
 * 기본 인증 헤더가 통과하도록 허용:
 
-   * AEM이 사용자를 인증하도록 하는 한 가지 방법은 WebSphere 서버의 전역 관리 보안을 비활성화하는 것입니다. 보안 -> 글로벌 보안으로 이동하고 관리 보안 활성화 확인란의 선택을 취소하고 서버를 저장하고 다시 시작합니다.
+   * AEM이 사용자를 인증하도록 하는 한 가지 방법은 WebSphere 서버의 전역 관리 보안을 비활성화하는 것입니다.보안 -> 글로벌 보안으로 이동하고 관리 보안 활성화 확인란의 선택을 취소하고 서버를 저장하고 다시 시작합니다.
 
 *  설정`"JAVA_OPTS= -Xmx2048m"`
 * 컨텍스트 루트 = / 를 사용하여 AEM을 설치하려면 먼저 기존 기본 웹 애플리케이션의 컨텍스트 루트를 변경해야 합니다
@@ -136,7 +136,7 @@ conf 파일에 메모리 인수를 설정합니다(예: `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-AEM 웹 응용 프로그램을 설치하기 위해 deployment-scanner를 사용하는 경우 인스턴스의 xml 파일(예: `deployment-timeout,` 다음)에 해당 `deployment-tiimeout` `configuration/standalone.xml)`속성 세트를 늘리는 것이 좋습니다.
+aem 웹 응용 프로그램을 설치하기 위해 deployment-scanner를 사용하는 경우 인스턴스의 xml 파일(예: `deployment-timeout,` 다음)에 해당 `deployment-timeout` `configuration/standalone.xml)`속성 세트를 늘리는 것이 좋습니다.
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -173,7 +173,7 @@ AEM 웹 응용 프로그램을 설치하기 위해 deployment-scanner를 사용�
 
 * AEM war 파일 다운로드
 * AEM war 파일을 ${myDomain}/packages/cq 폴더에 넣습니다.
-* 필요한 경우 구성 `WEB-INF/web.xml` 을 만듭니다(일반 설명에서 위 참조).
+* 구성 필요 `WEB-INF/web.xml` 가 있는 경우 설정(일반 설명 참조)
 
    * 파일 압축 `WEB-INF/web.xml`해제
    * 게시할 sling.run.modes 매개 변수 변경
@@ -247,7 +247,7 @@ AEM 웹 응용 프로그램을 설치하기 위해 deployment-scanner를 사용�
       * repack web.xml 파일
    * 루트 웹 앱으로 배포하려는 경우 AEM war 파일의 이름을 ROOT.war로 변경하고, 컨텍스트 루트로 aemauthor를 만들려면 이 파일의 이름을 aemauthor.war로 변경합니다
    * tomcat의 webapps 폴더에 복사
-   * AEM이 설치될 때까지 대기
+   * aem이 설치될 때까지 대기
 
 
 ## 문제 해결 {#troubleshooting}
