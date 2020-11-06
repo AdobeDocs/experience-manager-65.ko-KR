@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
+source-git-commit: 141a1783f275c0b3587ebc374bde19a21e107409
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -97,7 +97,7 @@ AEM Assets의 프로필 사용과 관련된 중요한 개념은 폴더에 할당
 **재처리 워크플로우의 일괄 처리 크기를 선택적으로 조정하려면**
 
 1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]** 를 클릭하여 글로벌 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** (망치) 아이콘 > **[!UICONTROL 워크플로우>모델을 클릭합니다.]**
-1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다.자산 재처리를 참조하십시오.]**
+1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다.자산 재처리를 참조하십시오]**.
 
    ![Scene7이 포함된 워크플로우 모델 페이지:카드 보기에서 선택한 자산 재처리 워크플로우](/help/assets/assets-dm/reprocess-assets7.png)
 
@@ -117,9 +117,9 @@ AEM Assets의 프로필 사용과 관련된 중요한 개념은 폴더에 할당
 
    ![속성 대화 상자](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Scene7에 **[!UICONTROL 일괄 업로드 - 단계 속성]** 대화 상자의 오른쪽 맨 위에서 완료를 **[!UICONTROL 클릭합니다.]**
+1. Scene7에 **[!UICONTROL 일괄 업로드 - 단계 속성]** 대화 상자의 오른쪽 맨 위에서 완료를 **[!UICONTROL 클릭합니다]**.
 
-1. Scene7의 오른쪽 위 모서리에:자산 재처리 워크플로우 모델 페이지에서 동기화를 **[!UICONTROL 클릭합니다.]** 동기화된 ****&#x200B;워크플로우 런타임 모델이 성공적으로 동기화되고 폴더의 에셋을 재처리할 준비가 됩니다.
+1. Scene7의 오른쪽 위 모서리에:자산 재처리 워크플로우 모델 페이지에서 동기화를 **[!UICONTROL 클릭합니다]**. 동기화된 ****&#x200B;워크플로우 런타임 모델이 성공적으로 동기화되고 폴더의 에셋을 재처리할 준비가 됩니다.
 
    ![워크플로우 모델 동기화](/help/assets/assets-dm/reprocess-assets1.png)
 
