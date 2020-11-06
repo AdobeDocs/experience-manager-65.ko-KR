@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
+source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '2085'
 ht-degree: 1%
 
 ---
@@ -60,11 +60,23 @@ ht-degree: 1%
 
 ## 스마트 이미징은 어떻게 작동합니까? {#how-does-smart-imaging-work}
 
-스마트 이미징은 Adobe Sensei을 사용하여 브라우저 기능을 기반으로 이미지를 가장 최적의 형식, 크기 및 품질로 자동 변환합니다.
+소비자가 이미지를 요청할 때 사용자 특성을 확인하고 사용 중인 브라우저를 기반으로 적절한 이미지 형식으로 변환합니다. 이러한 형식 변환은 시각적 품질을 저하시키지 않는 방식으로 수행됩니다. 스마트 이미징은 브라우저 기능을 기반으로 이미지를 다른 포맷으로 자동으로 변환해 줍니다.
 
-* Chrome, Firefox, Microsoft Edge, Android 및 Opera와 같은 브라우저의 경우 WebP로 자동 변환됩니다.
-* Safari와 같은 브라우저의 경우 JPEG2000으로 자동 변환됩니다.
-* Internet Explorer 9+와 같은 브라우저의 경우 JPEG로 자동 변환됩니다.
+* 다음 브라우저를 위해 WebP로 자동 변환:
+   * Chrome
+   * Firefox
+   * Microsoft Edge
+   * Safari 14.0 +
+      * iOS 14.0 이상 및 macOS BigSur 이상인 Safari 14만 해당
+   * Android
+   * Opera
+* 다음에 대한 기존 브라우저 지원:
+
+   | 브라우저 | 브라우저/OS 버전 | 형식 |
+   | --- | --- | --- |
+   | Safari | iOS 14.0 이전 버전 | JPEG2000 |
+   | Edge | 18 이전 버전 | JPEGXR |
+   | Internet Explorer | 9+ | JPEGXR |
 * 이러한 형식을 지원하지 않는 브라우저의 경우 원래 요청한 이미지 형식이 제공됩니다.
 
 원본 이미지 크기가 스마트 이미징에서 만드는 크기보다 작은 경우 원본 이미지가 제공됩니다.
@@ -90,11 +102,15 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## URL, 이미지 사전 설정을 변경하거나 Smart Imaging을 위해 내 사이트에 새로운 코드를 배포해야 합니까? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-아니오. 스마트 이미징은 기존 이미지 URL 및 이미지 사전 설정과 완벽하게 호환됩니다. 또한 Smart Imaging은 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 이 모든 것은 자동으로 처리됩니다.
+기존 사용자 지정 도메인에서 스마트 이미징을 구성하는 경우 스마트 이미징은 기존 이미지 URL 및 이미지 사전 설정과 원활하게 작동합니다. 또한 Smart Imaging은 사용자의 브라우저를 감지하기 위해 웹 사이트에 코드를 추가할 필요가 없습니다. 이 모든 것은 자동으로 처리됩니다.
 
-<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+Smart Imaging을 사용하도록 새 사용자 지정 도메인을 구성해야 하는 경우 이 사용자 지정 도메인을 반영하도록 URL을 업데이트해야 합니다.
 
 또한 스마트 이미징을 사용할 수 [있습니까?를 참조하십시오.](#am-i-eligible-to-use-smart-imaging) to understand for Smart Imaging.
+
+<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
+
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 ## 스마트 이미징은 HTTPS를 사용합니까? HTTP/2는 어떻습니까? {#does-smart-imaging-working-with-https-how-about-http}
 
@@ -177,6 +193,34 @@ Dynamic Media 라이선스를 통해 첫 번째 사용자 지정 도메인을 �
 일부 이미지는 변환되지 않습니다. 스마트 이미징에서는 성능 향상을 위해 변환이 필요한지 여부를 결정합니다. 경우에 따라 성능 증가가 예상되지 않거나 형식이 JPEG 또는 PNG가 아닌 이미지는 변환되지 않습니다.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
+
+## 성능이 향상되는지 어떻게 알 수 있습니까? 스마트 이미징의 이점을 주목하는 방법이 있습니까? {#performance-gain}
+
+**스마트 이미징 헤더 정보**
+
+스마트 이미징 헤더 값은 현재 비 캐시 요청이 제공되는 경우에만 작동합니다. 이 작업은 현재 캐시 호환성을 유지하고 캐시를 통해 이미지를 제공할 때 계산하지 않아도 됩니다.
+
+스마트 이미징 헤더를 사용하려면 요청에`cache=off`수정자를 추가해야 합니다. Dynamic Media[Image Serving and Rendering API의 캐시를 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html).
+
+사용 예 `cache=off` (일러스트레이션 전용):
+
+`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
+
+이러한 요청을 사용한 후 응답 헤더 섹션에서 헤더를 볼 수 `-x-adobe-smart-imaging` 있습니다. 강조 표시된 다음 스크린샷을 `-x-adobe-smart-imaging` 참조하십시오.
+
+![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
+
+이 헤더 값은 다음을 나타냅니다.
+
+* 스마트 이미징이 회사에서 작동합니다.
+* 양수 값(>=0)은 변환이 성공한 것을 나타냅니다. 이 경우 새 이미지(webP here)가 반환됩니다.
+* 음수 값(&lt;0)은 변환이 실패했음을 나타냅니다. 이 경우 원래 요청된 이미지가 반환됩니다(지정되지 않은 경우 기본적으로 JPEG).
+* 값은 요청한 이미지와 새 이미지 간의 바이트 차이를 나타냅니다. 이 경우 저장된 바이트는 75048이며 한 이미지의 경우 약 75KB입니다. 
+   * 음수 값은 요청한 이미지가 새 이미지보다 작음을 나타냅니다. 음수 크기 차이는 표시되지만 제공된 이미지는 원래 요청된 이미지만 표시됩니다
+
+**스마트 이미징 헤더 사용 시기**
+
+Smart Imaging Response Headers는 디버깅 용도로만 사용하거나 스마트 이미징의 이점만 강조 표시할 수 있습니다. 일반적인 시나리오`cache=off`에서 사용하면 로드 시간에 상당한 영향을 줄 수 있습니다.
 
 ## 요청에 따라 스마트 이미징을 끌 수 있습니까? {#turning-off-smart-imaging}
 
