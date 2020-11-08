@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3904'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,10 @@ Adobe Sign과 AEM Forms의 통합 지원:
    1. 적응형 양식의 **이름** 및 **제목을** 지정합니다.
 
    1. AEM Forms으로 Adobe Sign을 구성하는 동안 만들어진 [구성 컨테이너를](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) 선택합니다.
+
+      >[!NOTE]
+      >
+      >이 필드에서 선택한 구성 컨테이너에 구성된 **[!UICONTROL Adobe Sign Cloud Service]** 드롭다운 목록에는 클라우드 서비스가 표시됩니다. [Adobe Sign **[!UICONTROL 사용] 옵션을 선택하면]** 적응형 양식 속성의 **[!UICONTROL 전자 서명]** 섹션에서 **[!UICONTROL Adobe Sign Cloud Service]** 드롭다운 목록을 사용할 수있습니다.
 
 1. 양식 **[!UICONTROL 모델]** 탭에서 다음 옵션 중 하나를 선택합니다.
 
