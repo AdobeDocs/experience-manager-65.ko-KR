@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
+source-git-commit: 5a3045b89ba6bb32482926ea8d2c5533e5394d9a
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '1816'
 ht-degree: 1%
 
 ---
@@ -193,34 +193,6 @@ Dynamic Media 라이선스를 통해 첫 번째 사용자 지정 도메인을 �
 일부 이미지는 변환되지 않습니다. 스마트 이미징에서는 성능 향상을 위해 변환이 필요한지 여부를 결정합니다. 경우에 따라 성능 증가가 예상되지 않거나 형식이 JPEG 또는 PNG가 아닌 이미지는 변환되지 않습니다.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
-
-## 성능이 향상되는지 어떻게 알 수 있습니까? 스마트 이미징의 이점을 주목하는 방법이 있습니까? {#performance-gain}
-
-**스마트 이미징 헤더 정보**
-
-스마트 이미징 헤더 값은 현재 비 캐시 요청이 제공되는 경우에만 작동합니다. 이 작업은 현재 캐시 호환성을 유지하고 캐시를 통해 이미지를 제공할 때 계산하지 않아도 됩니다.
-
-스마트 이미징 헤더를 사용하려면 요청에`cache=off`수정자를 추가해야 합니다. Dynamic Media[Image Serving and Rendering API의 캐시를 참조하십시오](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html).
-
-사용 예 `cache=off` (일러스트레이션 전용):
-
-`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
-
-이러한 요청을 사용한 후 응답 헤더 섹션에서 헤더를 볼 수 `-x-adobe-smart-imaging` 있습니다. 강조 표시된 다음 스크린샷을 `-x-adobe-smart-imaging` 참조하십시오.
-
-![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
-
-이 헤더 값은 다음을 나타냅니다.
-
-* 스마트 이미징이 회사에서 작동합니다.
-* 양수 값(>=0)은 변환이 성공한 것을 나타냅니다. 이 경우 새 이미지(webP here)가 반환됩니다.
-* 음수 값(&lt;0)은 변환이 실패했음을 나타냅니다. 이 경우 원래 요청된 이미지가 반환됩니다(지정되지 않은 경우 기본적으로 JPEG).
-* 값은 요청한 이미지와 새 이미지 간의 바이트 차이를 나타냅니다. 이 경우 저장된 바이트는 75048이며 한 이미지의 경우 약 75KB입니다. 
-   * 음수 값은 요청한 이미지가 새 이미지보다 작음을 나타냅니다. 음수 크기 차이는 표시되지만 제공된 이미지는 원래 요청된 이미지만 표시됩니다
-
-**스마트 이미징 헤더 사용 시기**
-
-Smart Imaging Response Headers는 디버깅 용도로만 사용하거나 스마트 이미징의 이점만 강조 표시할 수 있습니다. 일반적인 시나리오`cache=off`에서 사용하면 로드 시간에 상당한 영향을 줄 수 있습니다.
 
 ## 요청에 따라 스마트 이미징을 끌 수 있습니까? {#turning-off-smart-imaging}
 
