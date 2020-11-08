@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 648b9601445a46b6a2734d5a47545c0439b9c283
+source-git-commit: ee527712b4d7f6ebf9ef2996de1405f6f9c3d335
 workflow-type: tm+mt
 source-wordcount: '5964'
 ht-degree: 1%
@@ -73,7 +73,7 @@ AEM Dynamic Media를 6.3 또는 6.4 또는 6.5(이제 가동 중지 시간 없�
 
 ## Cloud Services에서 다이내믹 미디어 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
-**Dynamic Media를 구성하기 전**:Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 Dynamic Media Classic에 [로그인해야](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 암호를 변경할 수 있습니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
+**Dynamic Media** 구성 전 - Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 암호를 변경하려면 Dynamic Media Classic에 [로그인해야](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 합니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
