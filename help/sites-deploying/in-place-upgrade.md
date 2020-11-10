@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1718aac3d39662fb35336a4db3e3403641f9529a
+source-git-commit: b8a532f45f531f36e04ff4b5f0cc2c9e729668bb
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 0%
@@ -168,7 +168,7 @@ AEM 6.3 설치에 대한 새로운 기본 `FileDataStore` 은 아니지만 외�
 
 1. 이전 버전의 S3 커넥터와 `crx-quickstart/install` 연관된 항아리 밑을 제거합니다.
 
-1. https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/에서 1.8.x S3 커넥터의 최신 릴리스를 [다운로드합니다.](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/에서 1.10.x S3 커넥터의 최신 릴리스를 [다운로드합니다.](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 
 1. 패키지를 임시 폴더에 추출하고 폴더의 내용 `jcr_root/libs/system/install` 을 `crx-quickstart/install` 복사합니다.
 
