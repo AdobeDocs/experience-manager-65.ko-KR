@@ -3,10 +3,10 @@ title: 타임라인 보기에서 디지털 자산의 활동 스트림
 description: 이 문서에서는 타임라인에 있는 자산에 대한 활동 로그를 표시하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 11%
+source-wordcount: '213'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 11%
 * 거부
 * 이동
 
-타임라인에 표시할 작업 로그는 로그 파일이 저장되는 CRX의 위치 `/var/audit/com.day.cq.dam/content/dam` 에서 가져옵니다. 또한, 타임라인 활동은 Adobe 에셋 링크 [!DNL Experience Manager] 또는 [Experience Manager 데스크탑 앱을](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 통해 새로운 에셋이 업로드되거나 기존 에셋이 수정 및 체크 인될 때 기록됩니다 [](https://docs.adobe.com/content/help/ko-KR/experience-manager-desktop-app/using/release-notes.html).
+타임라인에 표시할 작업 로그는 로그 파일이 저장되는 CRX의 위치 `/var/audit/com.day.cq.dam/content/dam` 에서 가져옵니다. 또한, 타임라인 활동은 Adobe 에셋 링크 [!DNL Experience Manager] 또는 [Experience Manager 데스크탑 앱을](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html) 통해 새로운 에셋이 업로드되거나 기존 에셋이 수정 및 체크 인될 때 기록됩니다 [](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
