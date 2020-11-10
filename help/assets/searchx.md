@@ -3,9 +3,9 @@ title: 검색 기능 확장.
 description: 기본값 [!DNL Adobe Experience Manager Assets] 을 벗어나는 검색 기능을 확장합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '838'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->6.4부터 클래식 UI는 더 이상 사용되지 않습니다. [!DNL Experience Manager] 자세한 내용은 [더 이상 사용되지 않는 기능 및 제거된 기능을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe은 터치 지원 UI를 사용하는 것이 좋습니다. 사용자 정의에 대해서는 [검색 패싯을 참조하십시오](/help/assets/search-facets.md).
+>6.4부터 클래식 UI는 더 이상 사용되지 않습니다. [!DNL Experience Manager] 자세한 내용은 [더 이상 사용되지 않는 기능 및 제거된 기능을 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe은 터치 지원 UI를 사용하는 것이 좋습니다. 사용자 정의에 대해서는 [검색 패싯을 참조하십시오](/help/assets/search-facets.md).
 
 ## 오버레이 {#overlaying}
 
