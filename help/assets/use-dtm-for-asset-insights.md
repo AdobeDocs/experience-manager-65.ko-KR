@@ -3,10 +3,10 @@ title: DTM을 통해 자산 통찰력 활성화
 description: Adobe DTM(다이내믹 태그 관리)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d13381d961f7663366b041168da369c0b01c9336
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '671'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
 
 >[!CAUTION]
 >
->Adobe DTM은 Adobe Experience Platform Launch에게 더 이상 사용되지 않으며 곧 [수명이 다될 것입니다](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe에서는 자산 통찰력에 론치를 [사용하는 것이 좋습니다](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM은 더 이상 사용되지 [!DNL Adobe Experience Platform Launch] 않으며 곧 [수명이](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)끝납니다. Adobe은 자산 통찰력 [ [!DNL Launch] 을 사용할 것을 권장합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 다음 단계를 수행하여 DTM을 통해 자산 통찰력을 활성화합니다.
 
@@ -31,7 +31,7 @@ Adobe 다이내믹 태그 관리는 디지털 마케팅 툴을 활성화하는 �
 
    * 웹 **[!UICONTROL 속성]** 탭을 선택한 다음 속성 **[!UICONTROL 추가를 클릭합니다]**.
 
-   * 필드를 적절히 업데이트하고 속성 **[!UICONTROL 만들기를 클릭합니다]**. 설명서를 [참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * 필드를 적절히 업데이트하고 속성 **[!UICONTROL 만들기를 클릭합니다]**. 설명서를 [참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![웹 속성 편집](assets/Create-edit-web-property.png)
 
