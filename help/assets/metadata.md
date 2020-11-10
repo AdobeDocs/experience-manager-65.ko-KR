@@ -3,9 +3,9 @@ title: 디지털 자산의 메타데이터를 관리할 수 있습니다 [!DNL A
 description: 메타데이터의 유형과 메타데이터를 기반으로 에셋을 자동으로 구성하고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e49fa8ec19411648841b19bad4b8c1e0efcc1dc1
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2421'
 ht-degree: 2%
 
 ---
@@ -88,7 +88,7 @@ XMP의 쓰기 되돌리는 [기술 요구 사항에 설명된 플랫폼 및 파�
    >[!NOTE]
    >
    >* 속성 페이지에서 자산을 선택 취소하여 자산 목록에서 제거할 수 있습니다. 자산 목록에는 기본적으로 모든 자산이 선택되어 있습니다. 목록에서 제거하는 자산에 대한 메타데이터는 업데이트되지 않습니다.
-   >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 옆의 확인란을 선택하여 자산 선택과 목록 지우기 간을 전환합니다.
+   >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 근처의 확인란을 선택하여 자산 선택과 목록 지우기 간을 전환합니다.
 
 
 1. 자산에 대해 다른 메타데이터 스키마를 선택하려면 도구 모음 **[!UICONTROL 에서]** 설정을 클릭하고 원하는 스키마를 선택합니다.
@@ -243,7 +243,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
 >* [여러 컬렉션의 메타데이터 속성 편집](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Experience Manager 에셋에서 메타데이터 가져오기 및 내보내기](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Experience Manager 에셋에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
