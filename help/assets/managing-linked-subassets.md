@@ -3,9 +3,9 @@ title: 참조 및 여러 페이지로 복합 자산 관리
 description: 디지털 자산에 대한 참조를 만드는 방법을 [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]살펴보십시오. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 여러 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 파일 내에서 기존 디지털 자산을 참조할 수 [!DNL Adobe Illustrator] 있습니다.
 
-1. Experience Manager 데스크탑 앱 [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)을 사용하여 로컬 파일 시스템에서 디지털 자산을 가져옵니다. 참조할 자산의 파일 시스템 위치로 이동합니다.
+1. 데스크탑 앱 [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)을 사용하여 로컬 파일 시스템에서 디지털 자산을 가져옵니다. 참조할 자산의 파일 시스템 위치로 이동합니다.
 1. 로컬 폴더의 자산을 [!DNL Illustrator] 파일로 드래그합니다.
 
 1. 마운트된 드라이브에 [!DNL Illustrator] 파일을 저장하거나 [저장소에](/help/assets/manage-assets.md#uploading-assets) 업로드할 [!DNL Experience Manager] 수있습니다.
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ## 디지털 자산을 참조로 추가 [!DNL Adobe Photoshop] {#refps}
 
-1. 데스크탑 [!DNL Experience Manager] 앱을 사용하여 액세스할 수 [!DNL Experience Manager Assets]있습니다. 로컬 파일 시스템에 에셋을 다운로드하고 표시합니다. 연결 [!UICONTROL 가져오기 기능을] 사용합니다 [!DNL Adobe Photoshop]. 데스크탑 앱에 [에셋 가져오기를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
+1. 데스크탑 [!DNL Experience Manager] 앱을 사용하여 액세스할 수 [!DNL Experience Manager Assets]있습니다. 로컬 파일 시스템에 에셋을 다운로드하고 표시합니다. 연결 [!UICONTROL 가져오기 기능을] 사용합니다 [!DNL Adobe Photoshop]. 데스크탑 앱에 [에셋 가져오기를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
@@ -119,7 +119,7 @@ Microsoft Word 문서 전용으로, **[!UICONTROL DAM Parse Word 문서 워크�
 
 도구 모음, 왼쪽 레일 및 페이지 뷰어 컨트롤에서 다음 옵션을 사용할 수 있습니다.
 
-* **[!UICONTROL 데스크톱]** 작업을 클릭하여 [!DNL Experience Manager] 데스크탑 앱을 사용하여 특정 하위 자산을 열거나 표시합니다. 데스크톱 앱을 사용하는 경우 [데스크톱 작업](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) 구성 방법을 [!DNL Experience Manager] 참조하십시오.
+* **[!UICONTROL 데스크톱]** 작업을 클릭하여 [!DNL Experience Manager] 데스크탑 앱을 사용하여 특정 하위 자산을 열거나 표시합니다. 데스크톱 앱을 사용하는 경우 [데스크톱 작업](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) 구성 방법을 [!DNL Experience Manager] 참조하십시오.
 
 * **[!UICONTROL 속성]** 옵션을 선택하면 [!UICONTROL 특정 하위 자산의 속성] 페이지가 열립니다.
 
@@ -135,8 +135,8 @@ Microsoft Word 문서 전용으로, **[!UICONTROL DAM Parse Word 문서 워크�
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager 데스크탑 앱 사용](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
->* [Adobe Experience Manager에서 데스크톱 작업 구성](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Adobe Experience Manager 데스크탑 앱 사용](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Adobe Experience Manager에서 데스크톱 작업 구성](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Adobe Photoshop에서 연결된 고급 개체 만들기](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Adobe InDesign에 그래픽 배치](https://helpx.adobe.com/indesign/using/placing-graphics.html)
 
