@@ -4,7 +4,7 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c59726cc1e6656f16a237aac703f37f3f38a87f9
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '9565'
 ht-degree: 0%
@@ -879,7 +879,7 @@ CJK(중국어, 일본어 및 한국어)로 주석을 인쇄하도록 구성할 �
 * 동일한 위치에 있는 동일한 파일 이름으로 자산을 업로드합니다. 새 자산이거나 동일한 자산의 수정된 버전일 수 있습니다.
 * 에서 이미지 [!DNL Experience Manager] 를 편집하고 변경 내용을 저장합니다.
 * 자산의 메타데이터를 편집합니다.
-* 데스크탑 [!DNL Experience Manager] 앱을 사용하여 기존 자산을 체크 아웃하고 편집하고 변경 사항을 [업로드할 수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* 데스크탑 [!DNL Experience Manager] 앱을 사용하여 기존 자산을 체크 아웃하고 편집하고 변경 사항을 [업로드할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
 
 워크플로우를 통해 자동 버전 관리를 활성화할 수도 있습니다. 자산에 대한 버전을 만들면 메타데이터 및 표현물이 버전과 함께 저장됩니다. 변환은 업로드된 JPEG 파일의 PNG 변환과 같은 이미지의 대체 요소가 렌더링됩니다.
 
