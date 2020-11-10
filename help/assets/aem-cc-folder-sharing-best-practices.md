@@ -3,9 +3,9 @@ title: 모범 [!DNL Adobe Creative Cloud] 사례에 대한 폴더 공유
 description: adobe creative cloud( [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] CC) 사용자와 폴더를 교환하도록 구성합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->폴더 [!DNL Experience Manager] 공유 기능 [!DNL Creative Cloud] 은 더 이상 사용되지 않습니다. Adobe은 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [Experience Manager 데스크탑 앱과 같은 최신 기능을 사용하는 것이 좋습니다](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Experience Manager 및 [Creative Cloud 통합 모범 사례에 대한 자세한 내용을 살펴보십시오](/help/assets/aem-cc-integration-best-practices.md).
+>폴더 [!DNL Experience Manager] 공유 기능 [!DNL Creative Cloud] 은 더 이상 사용되지 않습니다. Adobe은 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [Experience Manager 데스크탑 앱과 같은 최신 기능을 사용하는 것이 좋습니다](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Experience Manager 및 [Creative Cloud 통합 모범 사례에 대한 자세한 내용을 살펴보십시오](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] 사용자가 앱 사용자와 폴더 [!DNL Assets] 를 공유할 수 있도록 구성할 수 있으므로, [!DNL Adobe Creative Cloud] 자산 서비스에서 공유 폴더로 사용할 수 [!DNL Adobe Creative Cloud] 있습니다. 이 기능을 사용하여 크리에이티브 팀과 [!DNL Assets] 사용자 간에 파일을 교환할 수 있습니다. 특히 크리에이티브 사용자가 배포에 액세스할 수 없는 경우(기업 네트워크에 [!DNL Assets] 있지 않음).
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 통합에는 다음 요소가 포함됩니다.
 
 * **[!DNL Experience Manager Assets]** 엔터프라이즈 네트워크에 배포(관리 서비스 또는 온프레미스):폴더 공유가 여기에서 시작됩니다.
-* **[!DNL Adobe Marketing Cloud Assets]핵심 서비스**:서비스 [!DNL Experience Manager] 와 [!DNL Creative Cloud] 스토리지 서비스의 중간 역할을 합니다. 통합을 사용하는 조직의 관리자는 Marketing Cloud 조직과 배포 간에 신뢰 관계를 설정해야 [!DNL Assets] 합니다. 또한 [사용자는 추가 보안을 위해 폴더를 공유할 수 있도록 승인된 Creative Cloud 협력자](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)목록을 [!DNL Assets] 정의합니다.
+* **[!DNL Adobe Marketing Cloud Assets]핵심 서비스**:서비스 [!DNL Experience Manager] 와 [!DNL Creative Cloud] 스토리지 서비스의 중간 역할을 합니다. 통합을 사용하는 조직의 관리자는 Marketing Cloud 조직과 배포 간에 신뢰 관계를 설정해야 [!DNL Assets] 합니다. 또한 [사용자는 추가 보안을 위해 폴더를 공유할 수 있도록 승인된 Creative Cloud 협력자](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html)목록을 [!DNL Assets] 정의합니다.
 
 * **[!DNL Creative Cloud]에셋 웹 서비스** (저장소 및 [!DNL Creative Cloud] 파일 웹 UI):여기에서 폴더를 공유한 특정 Creative Cloud 앱 사용자는 초대를 수락할 수 있으며 Creative Cloud 계정 저장소의 폴더를 볼 수 있습니다. [!DNL Assets]
 * **Creative Cloud 데스크탑 앱**:(선택 사항) 자산 저장소와 동기화를 통해 크리에이티브 사용자의 데스크탑에서 공유 폴더/파일에 직접 액세스할 수 [!DNL Creative Cloud] 있습니다.
@@ -67,7 +67,7 @@ ht-degree: 0%
 * **단방향 공유를 위한 개별 폴더:** 최종 자산을 파일에서 파일 [!DNL Assets] 로 공유하고, [!DNL Creative Cloud] 바로 크리에이티브한 에셋을 파일에서 파일로 다시 공유하려면 별도의 폴더를 사용해야 [!DNL Creative Cloud] 합니다 [!DNL Assets]. 이러한 폴더에 대한 적절한 명명 규칙과 함께, 이 규칙을 사용하면 [!DNL Assets] 및 사용자 모두 이해하기 쉬운 작업 환경을 만들 수 [!DNL Creative Cloud] 있습니다.
 * **공유 폴더의 WIP 방지:** 진행 중인 작업에 공유 폴더를 사용할 수 없습니다. 파일을 자주 변경해야 하는 작업을 수행하려면 Creative Cloud 파일의 별도의 폴더를 사용하십시오.
 * **공유 폴더 외부에서 새 작업 시작:** 새 디자인(크리에이티브 파일)은 Creative Cloud 파일의 별도의 WIP 폴더에서 시작해야 하며, 사용자와 공유할 준비가 되었으면 공유 폴더로 이동하거나 저장해야 합니다. [!DNL Assets]
-* **공유 구조 간소화:** 더욱 관리가 용이한 운영 체제를 원한다면 공유 구조를 단순화하는 것이 좋습니다. 모든 크리에이티브 사용자와 공유하는 대신 [!DNL Assets] 폴더는 크리에이티브 디렉터나 팀 관리자와 같은 팀 담당자만 공유해야 합니다. 크리에이티브 팀의 관리자는 최종 자산을 받고, 작업 지정을 결정한 다음, 디자이너가 WIP 자산에 대한 자신의 Creative Cloud 계정에서 작업을 하게 합니다. Creative Cloud 공동 작업 기능을 사용하여 작업을 조정하고, 언제든지 공유할 수 있는 에셋을 선택하여 크리에이티브한 공유 폴더 [!DNL Assets] 에 가져올 수 있습니다.
+* **공유 구조 간소화:** 더욱 관리가 용이한 운영 체제를 원한다면 공유 구조를 단순화하는 것이 좋습니다. 모든 크리에이티브 사용자와 공유하는 대신 [!DNL Assets] 폴더는 크리에이티브 디렉터나 팀 관리자와 같은 팀 담당자만 공유해야 합니다. 크리에이티브 팀의 관리자는 최종 자산을 받고, 작업 지정을 결정한 다음, 디자이너가 WIP 자산에 대한 자신의 Creative Cloud 계정에서 작업을 하도록 합니다. Creative Cloud 공동 작업 기능을 사용하여 작업을 조정하고, 언제든지 공유할 수 있는 에셋을 선택하여 크리에이티브한 공유 폴더 [!DNL Assets] 에 가져올 수 있습니다.
 
 다음 다이어그램은 기존 최종 자산을 기반으로 새 디자인을 만들기 위한 예제 구성을 보여줍니다 [!DNL Assets].
 
