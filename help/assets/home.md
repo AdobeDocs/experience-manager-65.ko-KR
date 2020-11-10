@@ -3,10 +3,10 @@ title: Assets 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
 user-guide-title: Assets 안내서
 translation-type: tm+mt
-source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 88%
+source-wordcount: '330'
+ht-degree: 77%
 
 ---
 
@@ -22,7 +22,7 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 
 * [Experience Manager 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
 * [Experience Manager 6.5 릴리스 노트](/help/release-notes/home.md)
-* [최근 설명서 업데이트](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [최근 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6.5 안내서
@@ -35,12 +35,12 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 | [관리 안내서](/help/sites-administering/home.md) | Adobe Experience Manager 관리 방법을 이해합니다. |
 | [작성 안내서](/help/sites-authoring/home.md) | 이 안내서에서는 Experience Manager의 작성 개념을 설명합니다. |
 | [클래식 UI 작성 안내서](/help/sites-classic-ui-authoring/home.md) | 이 안내서에서는 클래식 사용자 인터페이스에서 Experience Manager의 작성 개념을 설명합니다. |
-| [Screens 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html) | 동적이고 대화형 디지털 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다. |
+| [Screens 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | 동적이고 대화형 디지털 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다. |
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 Experience Manager의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | Experience Manager 배포를 구축하는 방법을 살펴보십시오. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 Experience Manager 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
-| [Experience Manager Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 [!DNL Livefyre]와 공유하는 방법을 보여 줍니다. |
+| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 [!DNL Livefyre]와 공유하는 방법을 보여 줍니다. |
 
 ## Key [!DNL Experience Manager] resources
 
@@ -48,7 +48,7 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 * [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Experience Manager 자산 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
-* [Dispatcher 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
-* [코어 구성 요소 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
+* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
