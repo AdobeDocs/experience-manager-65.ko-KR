@@ -3,9 +3,9 @@ title: 비디오 자산 관리
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및 게시할 수 있습니다 [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 구성 외에도 다음 구성을 변경하여 큰 자산을 업로드합니다. [!DNL Assets]
 
 * 토큰 만료 시간을 늘립니다. 웹 콘솔의 [!UICONTROL Adobe] Granite CSRF Servlet()을 참조하십시오 `https://[aem_server]:[port]/system/console/configMgr`. 자세한 내용은 [CSRF 보호를 참조하십시오](/help/sites-developing/csrf-protection.md).
-* Dispatcher 구성 `receiveTimeout` 의 크기를 늘립니다. 자세한 내용은 [Experience Manager 디스패처 구성을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
+* Dispatcher 구성 `receiveTimeout` 의 크기를 늘립니다. 자세한 내용은 [Experience Manager 디스패처 구성을 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
