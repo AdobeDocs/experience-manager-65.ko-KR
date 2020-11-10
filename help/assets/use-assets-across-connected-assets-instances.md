@@ -3,9 +3,9 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: 원격 배포에서 사용할 수 있는 자산을 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2fe2b5fcaff2b2f2402f0bc638a0df2afd335b31
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2246'
 ht-degree: 41%
 
 ---
@@ -28,7 +28,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자는 각 배포 시 적절한 사용자 그룹의 일부입니다.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] 는 Cloud Service [!DNL Experience Manager] 로 작동합니다. 자세한 내용은 Experience Manager의 [연결된 자산 기능을 Cloud Service으로 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. [!DNL Experience Manager] 6.5 [!DNL Assets] 는 Cloud Service [!DNL Experience Manager] 로 작동합니다. 자세한 내용은 Experience Manager의 [연결된 자산 기능을 Cloud Service으로 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] cloud service | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
@@ -40,7 +40,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 작성자는 Content Finder에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용합니다. 문서는 구성 요소 및 `Download` 이미지에 `Image` 추가됩니다. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. 지원되는 형식은 다음과 같습니다.
 
-* **이미지 형식**:이미지 구성 요소에서 [지원하는](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 형식입니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
+* **이미지 형식**:이미지 구성 요소에서 [지원하는](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) 형식입니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
 * **문서 포맷**:지원되는 [문서 형식을 참조하십시오](assets-formats.md#supported-document-formats).
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
@@ -192,7 +192,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 일반적인 오류 시나리오에 대한 문제를 해결하려면 다음 단계를 수행하십시오.
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
+* If you are unable to search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * 원격 댐에서 가져온 에셋이 하나 이상의 이유로 웹 페이지에 게시되지 않을 수 있습니다. 원격 서버에 존재하지 않거나 해당 서버에 가져올 권한이 없거나 네트워크 오류가 원인일 수 있습니다. 원격 DAM에서 자산이 제거되지 않았는지 확인합니다. 적절한 권한이 있으며 사전 요구 사항을 충족하는지 확인합니다. 자산을 페이지에 추가하고 다시 게시합니다. [비동기 작업 목록](/help/sites-administering/asynchronous-jobs.md)에서 자산 가져오기 오류를 확인합니다.
 * 로컬 [!DNL Sites] 배포에서 원격 DAM 배포에 액세스할 수 없는 경우 사이트 간 쿠키가 허용되는지 확인하십시오. 사이트 간 쿠키가 차단된 경우 두 배포 중 [!DNL Experience Manager] 가 인증되지 않을 수 있습니다. 예를 들어, Incognito 모드 [!DNL Google Chrome] 에서는 타사 쿠키를 차단할 수 있습니다. 브라우저에서 쿠키를 허용하려면, 주소 표시줄의 &#39;눈&#39; 아이콘을 클릭하고, [작동하지 않음] > [차단됨]으로 이동하고, 원격 DAM URL을 선택하고, 로그인 토큰 쿠키를 허용하십시오. [!DNL Chrome] 또는 타사 쿠키 [를 사용하는 방법에 대한 도움말을 참조하십시오](https://support.google.com/chrome/answer/95647).
 
