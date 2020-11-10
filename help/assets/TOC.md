@@ -7,10 +7,10 @@ user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 81%
+source-wordcount: '583'
+ht-degree: 80%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 81%
 # Assets 안내서 {#assets}
 
 + [[!DNL Assets] 사용 안내서](home.md)
-+ [[!DNL Experience Manager] 6.5 자산 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/release-notes/assets.html)
++ [[!DNL Experience Manager] 6.5 자산 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [DAM 정보](assets.md)
 + [자산에 대한 우수 사례](best-practices-for-assets.md)
 + Experience Manager 자산 사용 {#using}
