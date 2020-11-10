@@ -3,9 +3,9 @@ title: 스마트 콘텐츠 서비스를 사용하여 자산 태그 지정 구성
 description: 스마트 콘텐츠 서비스를 사용하여 스마트 태그 지정 및 고급 스마트 태그 [!DNL Adobe Experience Manager]기능을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2179'
 ht-degree: 17%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 17%
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* 최신 [Experience Manager 서비스 팩을 설치합니다](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* 최신 [Experience Manager 서비스 팩을 설치합니다](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Adobe 개발자 콘솔과 통합 {#integrate-adobe-io}
 
@@ -114,7 +114,7 @@ Smart Content Service API를 사용하려면 Adobe Console에서 통합을 만�
 
 1. **[!UICONTROL 제품 프로필 선택]** 페이지에서 **[!UICONTROL 스마트 컨텐츠 서비스]**&#x200B;를 선택합니다. **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다.
 
-   페이지에 구성에 대한 자세한 정보가 표시됩니다. 스마트 태그를 구성하려면 클라우드 구성의 [!UICONTROL 자산 스마트 태깅 서비스 설정] 에 이러한 값을 복사하고 [!DNL Experience Manager] 추가하려면 이 페이지를 열어 두십시오.
+   페이지에 구성에 대한 자세한 정보가 표시됩니다. 스마트 태그를 구성하려면 클라우드 구성의 [!UICONTROL 자산 스마트 태그 지정 서비스 설정] 에서 이러한 값을 복사하고 [!DNL Experience Manager] 추가하려면 이 페이지를 열어 두십시오.
 
    ![개요 탭에서 통합에 제공된 정보를 검토할 수 있습니다.](assets/integration_details.png)
 
@@ -281,12 +281,12 @@ Workflow 콘솔에서 필요할 때마다 스마트 콘텐츠 서비스를 교�
 
    * 이미지의 미묘한 차이를 인식하지 못함 예를 들어, 슬림형 셔츠는 일반 셔츠가 들어 있는 것과 같습니다.
    * 이미지의 작은 패턴/부분을 기반으로 태그를 식별할 수 없음 예를 들어 T-셔츠의 로고
-   * 태깅은 에서 지원되는 로케일에서 [!DNL Experience Manager] 지원됩니다. 언어 목록은 [스마트 콘텐츠 서비스 릴리스 노트를 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+   * 태깅은 에서 지원되는 로케일에서 [!DNL Experience Manager] 지원됩니다. 언어 목록은 [스마트 콘텐츠 서비스 릴리스 노트를 참조하십시오](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
 * 스마트 태그가 있는 자산을 검색하려면(일반 또는 향상된) Omnisearch(전체 텍스트 검색)를 [!DNL Assets] 사용하십시오. 스마트 태그에는 별도의 검색 조건자가 없습니다.
 
 >[!MORELIKETHIS]
 >
 >* [스마트 태그 교육 개요 및 방법](enhanced-smart-tags.md)
->* [스마트 태그 구성 방법에 대한 비디오 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
+>* [스마트 태그에 대한 비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 
