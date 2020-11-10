@@ -3,9 +3,9 @@ title: 자산 다운로드
 description: 다운로드 기능을 활성화하거나 비활성화하는 방법 [!DNL Adobe Experience Manager] 을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '856'
 ht-degree: 3%
 
 ---
@@ -67,14 +67,14 @@ DAM에서 에셋을 다운로드할 수 있도록 하려면 에셋 공유 공유
 
 자산 다운로드 요청을 차단하도록 발송자 구성을 업데이트하여 `Asset Download Servlet` [!DNL Experience Manager] 게시 인스턴스에서 이 요청을 비활성화할 수 있습니다. OSGi 콘솔을 통해 서블릿을 수동으로 비활성화할 수도 있습니다.
 
-1. 발송자 구성을 통해 자산 다운로드 요청을 차단하려면 구성을 편집하고 `dispatcher.any` 필터 섹션 [](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)에 규칙을 추가하십시오. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. 발송자 구성을 통해 자산 다운로드 요청을 차단하려면 구성을 편집하고 `dispatcher.any` 필터 섹션 [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)에 규칙을 추가하십시오. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. 게시 인스턴스에서 OSGi 구성 요소를 비활성화하려면 의 OSGi 콘솔에 액세스합니다 `http://[aem_server]:[port]/system/console/components`. 위치를 찾아 비활성화 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` 를 클릭합니다 ****.
 
 >[!MORELIKETHIS]
 >
->* [브랜드 포털을 사용하여 자산 다운로드](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [브랜드 포털을 사용하여 자산 다운로드](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [DRM 보호 에셋을 다운로드합니다](drm.md).
->* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 에셋을 다운로드할 수 있습니다](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
+>* [Win 또는 Mac 데스크탑에서 Experience Manager 데스크탑 앱을 사용하여 에셋을 다운로드할 수 있습니다](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
 >* [지원되는 Adobe Creative Cloud 앱](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)내에서 Adobe 자산 링크를 사용하여 자산을 다운로드합니다.
 
