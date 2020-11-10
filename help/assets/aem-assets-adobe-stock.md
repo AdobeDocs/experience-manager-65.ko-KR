@@ -3,9 +3,9 @@ title: Manage [!DNL Adobe Stock] assets
 description: 내부에서 자산을 검색, 가져오기, 라이선스 부여 및 [!DNL Adobe Stock] 관리할 수 있습니다 [!DNL Adobe Experience Manager]. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1080'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 전제 조건 {#prerequisites}
 
-통합을 위해서는 [엔터프라이즈 Adobe Stock 플랜이 필요합니다](https://stockenterprise.adobe.com/).
+통합을 위해서는 [ [!DNL Adobe Stock] 엔터프라이즈 플랜이 필요합니다](https://stockenterprise.adobe.com/).
 
 ## 통합 [!DNL Experience Manager] 및 [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->구성이 여러 개 [!DNL Adobe Stock] 있는 경우 [사용자 환경 설정] 패널에서 원하는 구성을 선택합니다. Experience Manager 홈 페이지에서 패널에 액세스하려면 사용자 아이콘을 클릭한 다음 **[!UICONTROL 사용자 환경 설정]** > **[!UICONTROL 스톡 구성]**)을 클릭합니다.
+>여러 [!DNL Adobe Stock] 구성이 있는 경우 [사용자 환경 설정] 패널에서 원하는 구성을 [!UICONTROL 선택합니다] . 홈 [!DNL Experience Manager] 페이지에서 패널에 액세스하려면 사용자 아이콘을 클릭한 다음 **[!UICONTROL 사용자 환경 설정]** > **[!UICONTROL 스톡 구성을 클릭합니다]**.
 
 ## 자산 사용 및 [!DNL Adobe Stock] 관리 [!DNL Experience Manager] {#usemanage}
 
@@ -60,9 +60,9 @@ ht-degree: 3%
 
 에셋에 라이선스가 부여되면 일반적인 에셋처럼 사용하고 관리할 수 [!DNL Adobe Stock] [!DNL Experience Manager]있습니다. 에서 [!DNL Experience Manager]사용자는 자산을 검색하고 미리 볼 수 있습니다.자산 복사 및 게시;자산을 공유할 수 [!DNL Brand Portal]있습니다.데스크탑 앱을 통해 에셋 액세스 및 [!DNL Experience Manager] 사용다양한 기능을 사용할 수 있습니다.
 
-![Adobe Experience Manager 작업 영역에서 Adobe Stock 에셋 검색 및 결과 필터링](assets/adobe-stock-search-results-workspace.png)
+![작업 공간에서 [!DNL Adobe Stock] 자산 검색 및 결과 [!DNL Adobe Experience Manager] 필터링](assets/adobe-stock-search-results-workspace.png)
 
-*그림:인터페이스에서 자산[!DNL Adobe Stock]을 검색하고 결과를 필터링합니다[!DNL Experience Manager].*
+*그림:인터페이스에서 자산 [!DNL Adobe Stock] 을 검색하고 결과를 필터링합니다 [!DNL Experience Manager] .*
 
 **A.** ID가 제공되는 자산과 유사한 [!DNL Adobe Stock] 자산을 검색합니다. **B.** 선택한 모양 또는 방향과 일치하는 에셋을 검색합니다. **C.** C. **D.** Open 또는 **D.** 지원되는 자산 유형 중 하나를 검색하십시오. [!DNL Experience Manager] 라이센스와 선택한 자산을 창 **에 저장합니다.** 워터마크 [!DNL Experience Manager] 가 있는 F.Save 자산을 저장합니다.F.E **의 워터마크E와 함께 저장합니다.G는 선택한 자산이 비슷한 웹 사이트의 자산을 탐색합니다.** [!DNL Adobe Stock] **** [!DNL Adobe Stock] **** **** 선택한 웹 사이트에서 선택한 자산을 축소합니다.H. 검색 결과 - 카드 보기 및 카드 목록 보기 간 J.Switch
 
@@ -80,9 +80,9 @@ ht-degree: 3%
 >
 >검색된 자산 [!DNL Adobe Stock] [!DNL Experience Manager]은 [!DNL Adobe Stock] 에셋은 사용자가 에셋 [!DNL Experience Manager] 또는 [라이선스를](/help/assets/aem-assets-adobe-stock.md#saveassets) 저장하고 에셋을 저장한 후에만 보관됩니다 [](/help/assets/aem-assets-adobe-stock.md#licenseassets). 이미 저장된 에셋이 [!DNL Experience Manager] 표시되고 강조 표시되므로 쉽게 참조하고 액세스할 수 있습니다. 또한, [!DNL Stock] 자산은 소스를 나타내는 일부 추가 메타데이터와 함께 저장됩니다 [!DNL Stock].
 
-![Experience Manager의 검색 필터 및 검색 결과에서 강조 표시된 Adobe Stock 에셋](assets/aem-search-filters2.jpg)
+![검색 결과에서 검색 필터 [!DNL Experience Manager] 와 강조 표시된 [!DNL Adobe Stock] 자산](assets/aem-search-filters2.jpg)
 
-*그림:검색 결과에서 필터[!DNL Experience Manager]와 강조 표시된[!DNL Adobe Stock]에셋을 검색합니다.*
+*그림:검색 결과에서 필터 [!DNL Experience Manager] 와 강조 표시된 [!DNL Adobe Stock] 에셋을 검색합니다.*
 
 ### 필요한 자산 저장 및 보기 {#saveassets}
 
@@ -98,9 +98,9 @@ ht-degree: 3%
 
 사용자는 기업 계획의 할당량을 사용하여 [!DNL Adobe Stock] 자산에 대한 라이선스를 부여할 수 [!DNL Adobe Stock] 있습니다. 에셋에 라이선스를 부여하면 워터마크 없이 저장되며 에서 검색하고 사용할 수 있습니다 [!DNL Experience Manager Assets].
 
-![Experience Manager 자산에 Adobe Stock 에셋의 라이선스를 부여하고 저장하는 대화 상자](assets/aem-stock_licenseandsave.jpg)
+![에셋에 라이선스를 부여하고 저장할 수 있는 대화 [!DNL Adobe Stock] 상자 [!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg)
 
-*그림:에셋에 라이선스를 부여하고 저장할 수 있는 대화[!DNL Adobe Stock]상자[!DNL Experience Manager Assets].*
+*그림:에셋에 라이선스를 부여하고 저장할 수 있는 대화 [!DNL Adobe Stock] 상자 [!DNL Experience Manager Assets].*
 
 ### 메타데이터 및 자산 속성 액세스 {#access-metadata-and-asset-properties}
 
@@ -122,7 +122,7 @@ ht-degree: 3%
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager 자산에 Adobe Stock 에셋을 사용하는 방법에 대한 비디오 자습서](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [Adobe Stock 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [Adobe Stock FAQ](https://helpx.adobe.com/stock/faq.html)
+>* [에셋을 [!DNL Adobe Stock] 사용하는 방법에 대한 비디오 자습서 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/stock/faq.html)
 
