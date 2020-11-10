@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 9ba00322588326df6fbcc02bdfba88491d39c289
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -92,8 +92,13 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 
 >[!NOTE]
 >
 >**속성 이름 예**
->
 >표시된 모든 속성 이름(예: **0050** 및 **0170**)은 기존 디스패처 내에 맞게 조정되어야 합니다.모든 구성 파일.
+
+
+>[!CAUTION]
+>
+>Dispatcher를 사용하여 [액세스를 제한할 때](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) 추가적인 고려 사항은 Dispatcher 보안 체크리스트를 참조하십시오. 또한 AEM 설치에 대한 자세한 보안 정보는 [AEM Security](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) Checklist를 참조하십시오.
+
 
 다음 항목은 특히 모든 거부 항목 뒤에 /filter 섹션 끝에 추가해야 합니다.
 
