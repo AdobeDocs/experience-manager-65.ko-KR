@@ -3,9 +3,9 @@ title: 메타데이터 기능의 구성 및 관리
 description: 메타데이터 추가 및 관리와 [!DNL Experience Manager Assets] 관련된 구성 및 관리 기능
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1951'
 ht-degree: 3%
 
 ---
@@ -270,7 +270,7 @@ To apply a metadata profile globally, follow these steps:
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
 >* [여러 컬렉션의 메타데이터 속성을 편집합니다](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Experience Manager 자산에서 메타데이터 가져오기 및 내보내기](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Experience Manager 자산에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 >* [메타데이터, 이미지 및 비디오 처리 프로필](processing-profiles.md).
 >* [처리 프로필을 사용하도록 디지털 자산을 구성하는 우수 사례](/help/assets/organize-assets.md).
 >* [XMP writeback](/help/assets/xmp-writeback.md).
