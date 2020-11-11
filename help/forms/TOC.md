@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성하고 관리하며 게시하고 업데이트합니다.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3716'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 2%
       + [데이터 캡처 기능 설치 및 구성](using/installing-configuring-aem-forms-osgi.md)
       + [OSGi에서 Forms 중심의 워크플로우 설치 및 구성](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [대화형 통신 설치 및 구성](using/installing-configuring-intreactive-communication-correspondence-management.md)
-      + [자동화된 Forms 변환 서비스 설치 및 구성](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+      + [automated forms conversion 서비스 설치 및 구성](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + JEE에 AEM Forms 설치 {#jee-installation}
       + [JEE에서 AEM 양식에 대해 지원되는 플랫폼](using/aem-forms-jee-supported-platforms.md)
       + [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
@@ -193,6 +193,7 @@ ht-degree: 2%
    + [인쇄 채널 및 웹 채널](using/web-channel-print-channel.md)
    + [대화형 통신 구성 속성](using/interactive-communication-configuration-properties.md)
    + [다양한 인터랙티브한 커뮤니케이션 생성](using/generate-multiple-interactive-communication-using-batch-api.md)
+   + [레이아웃 모드를 사용하여 구성 요소 크기 조정](using/resize-using-layout-mode-interactive-communication.md)
 + 워크플로우 {#workflows}
    + [OSGi의 Forms 중심 워크플로우](using/aem-forms-workflow.md)
    + [OSGi의 Forms 중심 워크플로우 - 단계 참조](using/aem-forms-workflow-step-reference.md)
