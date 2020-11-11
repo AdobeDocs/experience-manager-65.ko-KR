@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: d510decba9b2af23bab54c78779f98a36a6172d4
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Pattern Detector를 사용한 업그레이드 복잡성 평가{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+# Pattern Detector를 사용한 업그레이드 복잡성 평가
 
 ## 개요 {#overview}
 
@@ -43,9 +43,10 @@ Pattern Detector는 AEM 6.5 업그레이드를 대상으로 하는 6.1부터 6.5
 >* 감지 속도 증가
 >* 중요한 비즈니스 인스턴스 속도 저하 방지
 
-
->동시에 사용자 애플리케이션, 컨텐츠 및 구성 영역 **에서 프로덕션 환경과** 가장 가까운 스테이징 환경에서 실행하는 것이 좋습니다.
 >
+>
+동시에 사용자 애플리케이션, 컨텐츠 및 구성 영역 **에서 프로덕션 환경과** 가장 가까운 스테이징 환경에서 실행하는 것이 좋습니다.
+
 여러 가지 방법을 사용하여 패턴 탐지기 출력을 확인할 수 있습니다.
 
 * **Felix Inventory 콘솔을 통해 다음을 수행할 수 있습니다.**
@@ -56,7 +57,6 @@ Pattern Detector는 AEM 6.5 업그레이드를 대상으로 하는 6.1부터 6.5
    ![스크린샷-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **반응형 텍스트 기반 또는 일반 JSON 인터페이스를 통해**
-
 * **각 줄에 별도의 JSON 문서를 생성하는 인터랙티브한 JSON 라인 인터페이스를 통해 **이 제공됩니다.
 
 이러한 방법 모두 아래에 자세히 설명되어 있습니다.
@@ -211,7 +211,8 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 ```
 
 >[!NOTE]
-말림 출력 전체를 파일에 저장한 다음 정보 유형을 통해 처리하거나 필터링하는 것이 좋습니다. `jq` `grep`
+>
+>말림 출력 전체를 파일에 저장한 다음 정보 유형을 통해 처리하거나 필터링하는 것이 좋습니다. `jq` `grep`
 
 ## 감지 범위 {#scope}
 
@@ -224,5 +225,5 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 * rep:사용자 노드 호환성(OAuth 구성 컨텍스트)
 
 >[!NOTE]
-Pattern Detector는 업그레이드에 대한 경고를 정확히 예측하려고 합니다. 하지만 일부 시나리오에서 잘못된 긍지를 생성할 수 있습니다.
-
+>
+>Pattern Detector는 업그레이드에 대한 경고를 정확히 예측하려고 합니다. 하지만 일부 시나리오에서 잘못된 긍지를 생성할 수 있습니다.
