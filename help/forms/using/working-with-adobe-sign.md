@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
+source-git-commit: 11f3e2f7cb742340388bc9421a3ea8f25deabec5
 workflow-type: tm+mt
-source-wordcount: '3904'
+source-wordcount: '3949'
 ht-degree: 0%
 
 ---
@@ -163,6 +163,8 @@ AEM Forms 인스턴스에 대해 여러 Adobe Sign 서비스를 구성할 수 �
 1. 이미 구성된 Adobe Sign Cloud Services 목록에서 클라우드 서비스를 선택합니다.
 
    Adobe Sign **Cloud Service** 목록이 비어 있는 경우 AEM Forms [와 함께 Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md) 구성 아티클을 따라 서비스를 구성합니다.
+
+   드롭다운에는 도구 > Cloud Services `global` > **[!UICONTROL Adobe Sign의]** 폴더에 있는 클라우드 서비스가 **[!UICONTROL 나열됩니다]**. 또한 드롭다운에는 적응형 양식을 만들 때 [ **[!UICONTROL 구성 컨테이너]** ] 필드에서 선택하는 폴더에 있는 클라우드 서비스도 나열됩니다.
 
 1. 서명자가 서명할 수 있음 **대화 상자에서 서명** 순서를 선택합니다. Adobe Sign 가수들은 임의의 순서대로 **적응형** 양식에 서명할 수 있습니다. 즉, 다른 서명자의 다음 또 **는 동시에** 서명할 수 있습니다.
 
