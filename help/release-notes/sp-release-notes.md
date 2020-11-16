@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b23b66e9d57742f6771bc4b26753a47b334e06bc
+source-git-commit: c4e602a208fa5f66e79a5705a7f1f2f844fb23b5
 workflow-type: tm+mt
-source-wordcount: '4557'
+source-wordcount: '4574'
 ht-degree: 23%
 
 ---
@@ -49,7 +49,7 @@ Adobe Experience Manager 6.5.6.0에 도입된 주요 기능 및 개선 사항은
 
 * [번역된 적응형 양식 페이지에 대한 캐싱 기능이 향상되었습니다](../../help/forms/using/configure-adaptive-forms-cache.md).
 
-* 자동화된 Forms 전환 서비스에서 [Adobe Sign 텍스트 태그 지원](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
+* automated forms conversion 서비스에서 [Adobe Sign 텍스트 태그 지원](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
 
 * 색상 있는 양식을 [적응형 양식으로](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) 변환할 수 있도록 지원합니다 [!DNL Automated Forms Conversion service].
 
@@ -227,7 +227,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
    * `ExcludeFromAVS` 옵션이 제공되지 않습니다(CQ-4298401).
 
-* 이미지 프로필을 여러 종횡비(예: 11)가 있는 폴더에 추가할 때 스마트 자르기 기능이 실패하므로 오류가 발생합니다(NPR-34082).
+* 이미지 프로필을 여러 종횡비(예: 11)가 있는 폴더에 추가할 때 스마트 자르기 기능이 오류로 인해 실패합니다. (NPR-34082)
 
 * DAM 자산 업데이트 워크플로우는 사용자가 Dynamic Media Scene7으로 구성된 [!UICONTROL 도구] 의 워크플로우 [!UICONTROL 탭] 에서 [!UICONTROL 워크플로우][!DNL Adobe Experience Manager] 페이지에서아래로 스크롤할 때트리거됩니다(CQ-429727).
 
@@ -258,6 +258,12 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 ### 통합 {#integrations-6560}
 
 * 이름이 긴 활동은 [!DNL Adobe Target] (NPR-34254)와 동기화되지 않습니다.
+
+* 새 Adobe 시작 구성을 만드는 동안 속성을 선택하면 다음 오류 메시지가 표시됩니다(NPR-33947).
+
+   ```javascript
+   GET http://hostname:Port/libs/cq/dtm-reactor/content/configurations/createcloudconfigwizard/jcr:content/body/items/form/items/wizard/items/general/items/fixedcolumns/items/container/items/general/items/property/data.html?query=&start=0&end=25&imsConfigurationId=Adobe%20Launch&companyId=&_charset_=utf-8 400 (Bad Request)
+   ```
 
 ### 번역 프로젝트 {#translation-6560}
 
