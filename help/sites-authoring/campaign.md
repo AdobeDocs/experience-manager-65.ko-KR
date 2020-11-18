@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 translation-type: tm+mt
-source-git-commit: 6853306d217809e05dbef4968c75bfef9d048f1c
+source-git-commit: 69226ffeb79e0b425b28456cbc64192432863f5d
+workflow-type: tm+mt
+source-wordcount: '2780'
+ht-degree: 77%
 
 ---
 
@@ -91,7 +94,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
    ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 1. 드롭다운 목록에서 Adobe Campaign 인스턴스와 일치하는 구성을 선택하고 **저장**&#x200B;을 클릭하여 확인합니다.
-1. ** Adobe Campaign** 탭을 클릭하여 이메일이 적용된 템플릿을 볼 수 있습니다. 다른 템플릿을 선택하려면 편집하는 동안 이메일 내에서 템플릿에 액세스할 수 있습니다.
+1. **Adobe Campaign** 탭을 클릭하여 이메일이 적용된 템플릿을 볼 수 있습니다. 다른 템플릿을 선택하려면 편집하는 동안 이메일 내에서 템플릿에 액세스할 수 있습니다.
 
    If you would like to apply a specific email delivery template (from Adobe Campaign), other than the default mail template, in **Properties**, select the **Adobe Campaign** tab. 관련된 Adobe Campaign 인스턴스에 이메일 게재 템플릿의 내부 이름을 입력합니다.
 
@@ -148,8 +151,8 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 
 컨텐츠를 편집할 때 다음을 삽입할 수 있습니다.
 
-* Adobe Campaign 컨텍스트 필드. 이러한 필드는 수신자의 데이터(예: 이름, 성 또는 대상 차원의 데이터)에 따라 적용될 텍스트 내에 삽입할 수 있는 필드입니다.
-* Adobe Campaign 개인화 블록. 브랜드 로고 또는 미러 페이지에 대한 링크와 같이 수신자의 데이터와 관련되지 않은 사전 정의된 컨텐츠 블록입니다.
+* Adobe Campaign 컨텍스트 필드. 이러한 필드는 텍스트 내에 삽입할 수 있는 필드로, 수신자 데이터(예: 이름, 성 또는 대상 차원의 데이터)에 따라 조정됩니다.
+* Adobe Campaign 개인화 블록. 브랜드 로고 또는 미러 페이지에 대한 링크와 같은 수신자 데이터와 관련이 없는 사전 정의된 컨텐츠 블록입니다.
 
 캠페인 구성 요소에 대한 전체 설명을 보려면 [Adobe Campaign 구성 요소](/help/sites-authoring/adobe-campaign-components.md)를 참조하십시오.
 
@@ -157,6 +160,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 >
 >* Adobe Campaign **프로필** 타깃팅 차원의 필드만 고려됩니다.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. 편집하는 동안 이메일에서 직접 액세스할 수 있습니다.
+
 >
 
 
@@ -177,6 +181,7 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
    >
    >* 사용 가능한 컨텍스트 필드는 Adobe Campaign의 **프로필** 타깃팅 차원에 해당합니다.
    >* See [Linking an AEM page to an Adobe Campaign email](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
+
    >
    >**Adobe Campaign Classic:**
    >
@@ -259,11 +264,11 @@ Adobe Campaign Standard에서는 AEM에서 만든 컨텐츠를 복구하고 다�
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
-뉴스레터가 여러 게재에 연결된 경우 연결된 게재 수가 표시됩니다(모든 ID가 표시되는 것은 아님).
+뉴스레터가 여러 게재에 연결된 경우 연결된 게재 수입니다(모든 ID가 표시되는 것은 아님).
 
 AEM에서 만든 페이지를 Adobe Campaign의 이메일에 연결하려면:
 
-1. AEM 특정 이메일 템플릿을 기준으로 새 이메일을 만듭니다. Refer to [Creating emails in Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) for more information.
+1. AEM 특정 이메일 템플릿을 기준으로 새 이메일을 만듭니다. Refer to [Creating emails in Adobe Campaign Standard](https://helpx.adobe.com/kr/campaign/standard/channels/using/creating-an-email.html) for more information.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -286,6 +291,7 @@ AEM에서 만든 페이지를 Adobe Campaign의 이메일에 연결하려면:
    * AEM의 컨텐츠 승인 상태 컨텐츠가 승인되지 않으면 컨텐츠를 동기화할 수 있지만 게재를 전송하기 전에 승인해야 합니다. 그러나 증명 전송 또는 미리 보기 테스트와 같은 특정 작업을 실행할 수 있습니다.
    * 컨텐츠의 마지막 수정 날짜
    * 게재에 이미 연결된 컨텐츠
+
    >[!NOTE]
    기본적으로 게재와 이미 동기화된 컨텐츠는 숨겨집니다. 그러나 이러한 컨텐츠를 표시하고 사용할 수 있습니다. 예를 들어 컨텐츠를 여러 게재에 대한 템플릿으로 사용하려는 경우가 여기에 해당합니다.
 
@@ -315,9 +321,8 @@ AEM에서, 뉴스레터가 단일 게재에 연결된 경우 게재 코드가 �
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
-뉴스레터가 여러 게재에 연결된 경우 연결된 게재 수가 표시됩니다(모든 ID가 표시되는 것은 아님).
-
->[!NOTE]
+뉴스레터가 여러 게재에 연결된 경우 연결된 게재 수입니다(모든 ID가 표시되는 것은 아님).
+[!NOTE]
 워크플로우 단계 **Adobe Campaign에 게시**&#x200B;는 AEM 6.1에서 더 이상 사용되지 않습니다. 이 단계는 AEM 6.0과 Adobe Campaign 통합의 일부로 제공되었으며 더 이상 필요하지 않습니다.
 
 AEM에서 만든 컨텐츠를 Adobe Campaign의 게재와 동기화하려면:
@@ -341,6 +346,7 @@ AEM에서 만든 컨텐츠를 Adobe Campaign의 게재와 동기화하려면:
    * AEM의 컨텐츠 승인 상태 컨텐츠가 승인되지 않으면 컨텐츠를 동기화할 수 있지만 게재를 전송하기 전에 승인해야 합니다. 그러나 BAT 전송 또는 미리 보기 테스트와 같은 특정 작업을 실행할 수 있습니다.
    * 컨텐츠의 마지막 수정 날짜입니다.
    * 게재에 이미 연결된 컨텐츠
+
    >[!NOTE]
    기본적으로 게재와 이미 동기화된 컨텐츠는 숨겨집니다. 그러나 이러한 컨텐츠를 표시하고 사용할 수 있습니다. 예를 들어 컨텐츠를 여러 게재에 대한 템플릿으로 사용하려는 경우가 여기에 해당합니다.
 
