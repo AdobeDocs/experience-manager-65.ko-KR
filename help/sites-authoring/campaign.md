@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 translation-type: tm+mt
-source-git-commit: 69226ffeb79e0b425b28456cbc64192432863f5d
+source-git-commit: 8e663a3c11523796a2bad15e9c088e484f2b573b
 workflow-type: tm+mt
 source-wordcount: '2780'
 ht-degree: 77%
@@ -53,7 +53,6 @@ AEM에서 Adobe Campaign 컨텐츠를 만들 때 모든 기능에 액세스하�
 >[!NOTE]
 >
 >When adding email templates, be sure to add them under **/content/campaigns** to make them available.
-
 
 #### 새 이메일 컨텐츠 만들기 {#creating-new-email-content-1}
 
@@ -160,9 +159,6 @@ Adobe Campaign과 통합하려면 페이지에 Adobe Campaign 클라우드 서�
 >
 >* Adobe Campaign **프로필** 타깃팅 차원의 필드만 고려됩니다.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. 편집하는 동안 이메일에서 직접 액세스할 수 있습니다.
-
->
-
 
 
 개인화를 삽입하려면:
