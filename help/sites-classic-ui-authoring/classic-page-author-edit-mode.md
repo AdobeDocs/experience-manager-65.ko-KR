@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bec587e3722c4c2e5aebd2579a2a7acbf807587a
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '6169'
+ht-degree: 97%
 
 ---
 
@@ -98,13 +101,13 @@ You can select a component and drag it to the required location on your page and
 * **이미지**
 
    * **이미지**
-컨텐츠 파인더에서 이미지를 끌어 놓거나 클릭하여 이미지를 로드할 수 있는 찾아보기 창을 엽니다. 이미지가 로드되면 이미지를 자르거나, 회전하거나, 삭제할 수 있습니다. 이미지를 확대/축소하려면 이미지 아래에서 [확인] 및 [취소] 단추 위에 있는 슬라이드 막대를 사용합니다.
+컨텐츠 파인더에서 이미지를 끌어 놓거나 클릭하여 이미지를 로드할 수 있는 찾아보기 창을 엽니다. 이미지가 로드되면 이미지를 자르거나, 회전하거나, 삭제할 수 있습니다. 이미지를 확대/축소하려면 이미지 아래에서 확인 및 취소 단추 위에 있는 슬라이드 막대를 사용합니다.
 
    * **자르기**
 이미지를 자릅니다. 테두리를 끌어서 이미지를 자릅니다.
 
    * **회전**
-[회전]을 계속 클릭하여 이미지를 원하는 대로 회전합니다.
+회전을 계속 클릭하여 이미지를 원하는 대로 회전합니다.
 
    * **지우기**
 현재 이미지를 제거합니다.
@@ -166,11 +169,12 @@ You can select a component and drag it to the required location on your page and
 수동으로 또는 선택기를 사용하여 경로를 지정하십시오. 현재 페이지를 상위 페이지로 사용하려면 비워 두십시오.
       * **고정 목록 옵션**
 
-         * **페이지**&#x200B;페이지 목록을 선택합니다.항목을 더 `+` 추가하고 위쪽/아래쪽 단추를 사용하여 순서를 조정합니다.
+         * **페이지**&#x200B;페이지 목록을 선택합니다.사용 
+`+` 항목을 더 추가하고 위쪽/아래쪽 단추를 추가하여 순서를 조정합니다.
       * **검색 옵션**
 
          * **시작 위치**
- 시작 경로를 수동으로 또는 선택기를 사용하여 입력합니다.
+시작 경로를 수동으로 또는 선택기를 사용하여 입력합니다.
 
          * **검색 쿼리**
 일반 텍스트 검색 쿼리를 입력할 수 있습니다.
@@ -179,7 +183,8 @@ You can select a component and drag it to the required location on your page and
          * **Querybuilder 설명 표기법**
 QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있습니다. 예를 들어 &quot;fulltext=Marketing&quot;을 입력하면 컨텐츠에 &quot;Marketing&quot;이 포함된 모든 페이지를 회전판에 표시할 수 있습니다.
 쿼리 표현식 및 추가적인 예에 대한 전체 논의는 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)를 참조하십시오.
-   * **정렬 기준**&#x200B;드롭다운 메뉴에서 `jcr:title``jcr:created`, `cq:lastModified`또는 `cq:template` 을 선택합니다.
+   * **정렬 기준**&#x200B;선택 
+`jcr:title`, `jcr:created``cq:lastModified`또는 드롭다운 `cq:template` 메뉴에서 다운로드할 수 있습니다.
 
    * **제한**
 회전판에서 사용할 최대 항목 수로서, 선택 사항입니다.
@@ -189,7 +194,7 @@ QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있
 
 
 >[!NOTE]
-AEM DAM에 있는 디지털 자산을 표시하는 Adobe Experience Manager용의 사용자 지정 회전판 구성 요소를 만들 수 있습니다. 자세한 내용은 [Adobe Experience Manager용 사용자 지정 회전판 구성 요소 만들기](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html)를 참조하십시오.
+AEM DAM에 있는 디지털 자산을 표시하는 Adobe Experience Manager용의 사용자 지정 회전판 구성 요소를 만들 수 있습니다. 자세한 내용은 [Adobe Experience Manager용 사용자 지정 회전판 구성 요소 만들기](https://helpx.adobe.com/kr/experience-manager/using/custom-carousel-components.html)를 참조하십시오.
 
 ### Chart {#chart}
 
@@ -216,10 +221,10 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 다음은 결과 막대 차트의 앞에 오는 차트 데이터의 예입니다.
 
-![chlimage_1-6](assets/chlimage_1-6.png)![dc_chart_use](assets/dc_chart_use.png)
+![chlimage_1-6](assets/chlimage_1-6.png) ![dc_chart_use](assets/dc_chart_use.png)
 
 >[!NOTE]
-AEM JCR에 있는 데이터를 표시하는 사용자 지정 AEM 차트 컨트롤을 만들 수 있습니다. 자세한 내용은 [차트에 Adobe Experience Manager 데이터 표시](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html)를 참조하십시오.
+AEM JCR에 있는 데이터를 표시하는 사용자 지정 AEM 차트 컨트롤을 만들 수 있습니다. 자세한 내용은 [차트에 Adobe Experience Manager 데이터 표시](https://helpx.adobe.com/kr/experience-manager/using/displaying-experience-manager-data-chart.html)를 참조하십시오.
 
 ### 콘텐츠 조각 {#content-fragment}
 
@@ -331,8 +336,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 >[!NOTE]
 Internet Explorer에서는 업로드의 진행 상태를 모니터링할 수 없습니다.
 Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;을 클릭한 다음, 이미지를 다시 열어 업로드한 파일을 미리 보기에서 확인하고 수정할 수 있습니다(예: 자르기).
-
->See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
+AEM에 사용되는 HTML5 기능에 대한 자세한 내용은 [인증된 플랫폼](/help/release-notes/release-notes.md#certifiedplatforms) 섹션을 참조하십시오.
 
 이미지가 로드되면 다음 항목을 구성할 수 있습니다.
 
@@ -346,7 +350,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
 * **회전**
 
-   이미지를 회전하려면 [회전]을 선택합니다. 이미지가 원하는 방향으로 회전할 때까지 반복적으로 사용합니다.
+   이미지를 회전하려면 회전을 선택합니다. 이미지가 원하는 방향으로 회전할 때까지 반복적으로 사용합니다.
 
 * **지우기**
 
@@ -366,7 +370,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
 * **링크 대상**
 
-   웹 사이트 내의 자산 또는 다른 페이지에 대한 링크를 만듭니다.
+   웹 사이트 내의 자산 또는 다른 페이지로 이동하는 링크를 만듭니다.
 
 * **설명**
 
@@ -399,8 +403,8 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
       * **하위 페이지 옵션**
 
-         * **(상위 페이지)의 하위**
-수동으로 또는 선택기를 사용하여 경로를 지정합니다.현재 페이지를 상위 페이지로 사용하려면 비워 두십시오.
+         * **하위**(상위 페이지)
+수동으로 또는 선택기를 사용하여 경로를 지정합니다. 현재 페이지를 상위 페이지로 사용하려면 비워 두십시오.
       * **고정 목록 옵션**
 
          * **페이지**
@@ -410,7 +414,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
          * **시작 위치**
 
-            수동으로 또는 선택기를 사용하여 시작 경로를 입력합니다.
+            시작 경로를 수동으로 또는 선택기를 사용하여 입력 시작 위치.
 
          * **검색 쿼리**
 
@@ -424,7 +428,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
             쿼리 표현식 및 추가적인 예에 대한 전체 논의는 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)를 참조하십시오.
       * **태그**
 
-         Specify the **Parent page**, **Tags/Keywords** and your required match criteria.
+         **상위 페이지**, **태그/키워드**&#x200B;및 필요한 일치 기준을 지정합니다.
    * **다음으로 표시**
 
       항목을 나열할 방법입니다. 링크, 티저 및 뉴스를 포함합니다.
@@ -466,7 +470,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
    * 섹션 레이블
 
-      입력 필드에 대한 안내 텍스트입니다.
+      입력 필드에 대한 시작 텍스트입니다.
 
    * 사용자 이름 레이블
 
@@ -482,7 +486,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
    * 리디렉션 대상
 
-      사용자가 로그인하면 열려야 하는 웹 사이트의 페이지를 지정할 수 있습니다.
+      웹 사이트에서 사용자가 로그인한 경우 열려야 하는 페이지를 지정할 수 있습니다.
 
 * 이미 로그인됨
 
@@ -500,11 +504,11 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
    * **링크**
 
-      주문 상태를 표시할 페이지(제품)를 지정합니다.
+      주문 상태를 표시해야 하는 페이지(제품)를 지정합니다.
 
    * **유형 / 크기**
 
-      제공된 선택 항목 중에서 선택합니다.
+      제공된 선택 사항에서 선택합니다.
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -548,7 +552,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
    * **노드 유형**
 
-      If the search is to be restricted to specific node type list them here; for example, `cq:Page`.
+      검색을 특정 노드 유형으로 제한하려면 여기에 나열합니다. 예: `cq:Page`
 
    * **검색할 경로**
 
@@ -609,7 +613,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
 ![dc_sitemap_use](assets/dc_sitemap_use.png)
 
-필요한 경우 다음을 구성할 수 있습니다.
+ 필요할 경우 다음을 구성할 수 있습니다.
 
 * **Sitemap**
 
@@ -627,7 +631,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
    * **새 슬라이드**
 
-      You can specify a selection of slides using the **Add** (and **Remove**) buttons.
+      **추가**(및 **제거**) 단추를 사용하여 일련의 슬라이드를 지정할 수 있습니다.
 
    * **제목**
 
@@ -637,7 +641,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
    * **크기**
 
-      폭과 높이를 픽셀 단위로 지정합니다.
+      너비 및 높이를 픽셀 단위로 지정합니다.
 
 그러면 Slideshow 구성 요소는 다음 슬라이드로 전환하기 전에 짧은 시간 동안 각 이미지를 순서대로 반복하여 표시합니다.
 
@@ -646,7 +650,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### 표 {#table}
 
 >[!NOTE]
-**표** 구성 요소는 **[텍스트](#text)**구성 요소처럼[리치 텍스트 편집기](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)를 기반으로 합니다.
+**표** 구성 요소는 **[텍스트](#text)** 구성 요소처럼 [리치 텍스트 편집기](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)를 기반으로 합니다.
 표를 **텍스트** 구성 요소로도 만들 수 있지만 표에는 **표** 구성 요소를 사용하는 것이 좋습니다.
 
 **표** 구성 요소는 표를 만들고, 채우고, 형식을 지정할 수 있도록 미리 구성되어 있습니다. 이 대화 상자를 사용하면 표를 구성하고 다음 방법 중 하나를 사용하여 컨텐츠를 만들 수 있습니다.
@@ -666,10 +670,10 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
 ![dc_tagclouduse](assets/dc_tagclouduse.png)
 
-태그 글라우드 구성 요소 구성 시 다음과 같은 사항을 지정할 수 있습니다.
+태그 클라우드 구성 요소 구성 시 다음과 같은 사항을 지정할 수 있습니다.
 
 * **표시할 태그**
-표시할 태그들을 가져올 위치. 모든 하위 태그 또는 모든 태그가 있는 페이지에서 선택하십시오.
+표시할 태그를 가져올 위치. 모든 하위 태그 또는 모든 태그가 있는 페이지에서 선택하십시오.
 
 * **페이지**
 참조할 페이지를 선택합니다.
@@ -682,7 +686,7 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### 텍스트 {#text}
 
 >[!NOTE]
-**텍스트** 구성 요소는 [](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)표&#x200B;**[구성 요소처럼 리치 텍스트 편집기](#table)**를 기반으로 합니다.
+**텍스트** 구성 요소는 [](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)표&#x200B;**[구성 요소처럼 리치 텍스트 편집기](#table)**&#x200B;를 기반으로 합니다.
 표를 **텍스트** 구성 요소로도 만들 수 있지만 표에는 **표** 구성 요소를 사용하는 것이 좋습니다.
 
 텍스트 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)로 제공된 기능과 함께 WYSIWYG 편집기를 사용하여 텍스트 블록을 입력할 수 있습니다. 여러 가지 아이콘을 사용하여 글꼴 특성, 정렬, 링크, 목록 및 들여쓰기 등의 텍스트 서식을 지정할 수 있습니다.
@@ -708,15 +712,15 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 
 텍스트 및 이미지 구성 요소는 텍스트 블록과 이미지를 추가합니다. 텍스트와 이미지를 별도로 추가하고 편집할 수도 있습니다. 자세한 내용은 [텍스트](#text) 및 [이미지](#image) 구성 요소를 참조하십시오.
 
-![chlimage_1-12](assets/chlimage_1-12.png) chlimage_ ![1-13](assets/chlimage_1-13.png)
+![chlimage_1-12](assets/chlimage_1-12.png) ![chlimage_1-13](assets/chlimage_1-13.png)
 
 다음을 구성할 수 있습니다.
 
-* **구성 요소 스타일** (**스타일**)
+* **구성 요소 스타일**(**스타일**)
 
    이미지를 왼쪽 또는 오른쪽으로 정렬할 수 있습니다. 기본값은 **왼쪽** 정렬로서 이미지를 왼쪽에 맞춥니다.
 
-* **이미지 속성** (**고급 이미지 속성**)
+* **이미지 속성**(**고급 이미지 속성**)
 
    다음을 지정할 수 있습니다.
 
@@ -785,17 +789,17 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
    * **비디오 자산**
 
-      비디오 자산을 업로드하거나 놓습니다.
+      비디오 자산을 업로드하거나 삭제합니다.
 
    * **크기**
 
-      &#39;크기&#39; 옆의 상자에 비디오의 원래 크기(픽셀 단위 폭 x 높이)가 나타납니다(위 그림 참조). 비디오의 원래 크기를 변경하려는 경우 여기에 너비와 높이를 직접 입력합니다. **확인**&#x200B;을 클릭하여 대화 상자를 닫습니다.
+      크기 옆의 상자에 비디오의 원래 크기(픽셀 단위 폭 x 높이)가 나타납니다(위 그림 참조). 비디오의 원래 크기를 변경하려는 경우 여기에 너비와 높이를 직접 입력합니다. **확인**&#x200B;을 클릭하여 대화 상자를 닫습니다.
 
 >[!NOTE]
 지원되는 형식은 다음과 같습니다.
 * `.mp4`
 * `Ogg`
-* `FLV` (Flash 비디오)
+* `FLV`(Flash 비디오)
 
 
 
@@ -912,25 +916,25 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
 
    * **필수**
 
-      양식 구성 요소 유형에 따라 다르지만 이 필드 또는 이 필드의 특정 부분이 필수임을 나타내는 클릭 상자를 하나 이상 제공합니다.
+      이 항목은 양식 구성 요소 유형에 따라 다르지만, 이 필드나 이 필드의 특정 부분이 필수임을 나타내는 클릭 상자를 하나 이상 제공합니다.
 
    * **필수 메시지**
 
-      사용자에게 이 필드가 필수임을 알리는 메시지;필수 필드도 별표로 표시됩니다.
+      이 필드가 필수임을 사용자에게 알려주는 메시지입니다. 필수 필드는 별표로 표시되기도 합니다.
 
    * **제한**
 
-      선택 가능한 제한 사항은 양식 구성 요소 유형에 따라 다릅니다.
+      선택할 수 있는 제한 사항은 양식 구성 요소 유형에 따라 다릅니다.
 
    * **제한 메시지**
 
-      사용자에게 필요한 사항을 알려주는 메시지입니다.
+      사용자에게 필수인 항목을 알려주는 메시지입니다.
 
 * **스타일링**
 
    * **크기**
 
-      행 및 열.
+      행 및 열 단위입니다.
 
    * **너비**
 
@@ -970,7 +974,7 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
 
       * **계정 요청**
       * **컨텐츠 만들기**
-      * **리드 만들기///**
+      * **리드 만들기**
       * **계정 만들기 및 업데이트**
       * **이메일 서비스: 가입자 만들기 및 목록에 추가**
       * **이메일 서비스: 자동 응답자 이메일 보내기**
@@ -1018,7 +1022,7 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **작업 구성**
 
-      The options available in **Action Configuration** are dependent on the **Action Type** selected:
+      **작업 구성**&#x200B;에서 사용할 수 있는 옵션은 선택한 **작업 유형**&#x200B;에 따라 달라집니다.
 
       * **계정 요청**
 
@@ -1040,16 +1044,16 @@ The content path for any content that the form dumps. Enter a path that ends wit
 
          * **렌더링**
 
-            목록에서 필요한 옵션을 선택합니다.
+            목록에서 필요한 언어를 선택합니다.
 
          * **리소스 유형**
 
-            설정된 경우, 각 주석에 `sling:resourceType`
+            설정된 경우 각 주석에 `sling:resourceType`으로 추가됩니다.
 
          * **보기 선택기**
-      * **리드 만들기///**
+      * **리드 만들기**
 
-         * **리드가 이 목록에 추가됨**
+         * **리드가 이 목록에 추가됩니다.**
 필요한 리드 목록을 지정합니다.
       * **계정 만들기 및 업데이트**
 
@@ -1067,7 +1071,7 @@ The content path for any content that the form dumps. Enter a path that ends wit
 
          * **데이터 보기...**
 
-            양식 결과에 대한 정보를 Bulk Editor에서 액세스하려면 이 단추를 클릭합니다. From here, you can export the information to a `.tsv` (tab-separated) file (for use, for example, in an Excel spreadsheet).
+            양식 결과에 대한 정보를 Bulk Editor에서 액세스하려면 이 단추를 클릭합니다. 여기에서 정보를 `.tsv`(탭으로 구분) 파일로 내보낼 수 있습니다(예를 들면 Excel 스프레드시트에서 사용하기 위해).
       * **메일**
 
          * **시작**
@@ -1096,17 +1100,17 @@ The content path for any content that the form dumps. Enter a path that ends wit
             암호를 변경할 때 사용하는 페이지입니다.
       * **콘텐츠 저장**
 
-         * **컨텐트 경로**
+         * **컨텐츠 경로**
 
-            양식에 포함된 내용을 저장할 컨텐트 경로입니다. Enter a path that ends with a slash `/`. 즉, 양식을 게시할 때마다 지정된 위치에 새 노드가 만들어집니다(예: /).
+            양식에 포함된 내용을 저장할 컨텐츠 경로입니다. 슬래시 `/`로 끝나는 경로를 입력합니다. 즉, 양식을 게시할 때마다 지정된 위치에 새 노드가 만들어집니다(예: /).
             `/forms/feedback/`
 
          * **데이터 보기...**
 
-            양식 결과에 대한 정보를 Bulk Editor에서 액세스하려면 이 단추를 클릭합니다. 여기에서 정보를 .tsv(탭으로 구분) 파일로 내보낼 수 있습니다(예: Excel 스프레드시트에서 사용).
+            양식 결과에 대한 정보를 Bulk Editor에서 액세스하려면 이 단추를 클릭합니다. 여기에서 정보를 .tsv(탭으로 구분) 파일로 내보낼 수 있습니다(예를 들면 Excel 스프레드시트에서 사용하기 위해).
       * **업로드로 콘텐츠 저장**
 
-         여기에는 컨텐츠 저장과 동일한 옵션이 **있습니다**.
+         여기에 **컨텐츠 저장**&#x200B;과 동일한 옵션이 있습니다.
 
       * **가입자 가입 해제**
 
@@ -1197,7 +1201,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 선택 가능한 값 범위를 사용하여 드롭다운 목록을 구성할 수 있습니다.
 
-![dc_form_dropddownlistuse](assets/dc_form_dropdownlistuse.png)
+![dc_form_dropdownlistuse](assets/dc_form_dropdownlistuse.png)
 
 목록에 표시할 제목과 항목을 지정할 수 있습니다. + 및 - 단추를 사용하여 목록 항목을 추가하거나 제거하고 위쪽 및 아래쪽 화살표로 위치를 지정할 수 있습니다. 사용자가 목록에서 여러 항목을 선택하도록 허용할지 여부와, 처음 목록을 열 때 자동으로 선택되어야 하는 항목이 있다면 이러한 항목(초기값)을 지정할 수 있습니다.
 
@@ -1212,7 +1216,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ![dc_form_fileupload](assets/dc_form_fileupload.png)
 
 >[!NOTE]
-사용자 지정 업로드 구성 요소를 만들어 파일을 Sling 서블릿에 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html)를 참조하십시오.
+사용자 지정 업로드 구성 요소를 만들어 파일을 Sling 서블릿에 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://helpx.adobe.com/kr/experience-manager/using/uploading-files-aem1.html)를 참조하십시오.
 
 ### 숨김 필드 {#hidden-field}
 
@@ -1313,8 +1317,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### Workflow Submit Button(s) {#workflow-submit-button-s}
+### 워크플로우 제출 단추 {#workflow-submit-button-s}
 
-워크플로우에서 사용할 제출 단추를 만들 수 있도록 해줍니다.///
+워크플로우에서 사용할 제출 단추를 만들 수 있도록 해줍니다.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
