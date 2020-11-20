@@ -11,7 +11,10 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '2854'
+ht-degree: 82%
 
 ---
 
@@ -22,9 +25,9 @@ Adobe Campaign과 통합하면 뉴스레터와 양식을 사용하여 작업할 
 
 >[!CAUTION]
 >
->AEM 이메일 구성 요소는 더 이상 사용되지 않습니다. 콘텐츠와 스타일을 결합하는 이메일의 특성으로 인해 AEM에서 제공하는 이메일 구성 요소는 프로젝트에 필요한 구성 요소에 사용자 정의 스타일을 구현해야 하기 때문에 고객에게 제한된 재사용이 되었습니다.
+>AEM 이메일 구성 요소는 더 이상 사용되지 않습니다. 컨텐츠와 스타일을 결합하는 이메일의 특성상 AEM에서 제공하는 이메일 구성 요소는 프로젝트에 필요한 구성 요소에 사용자 정의 스타일을 구현해야 하므로 고객에게 즉시 재사용이 제한됩니다.
 >
->이메일 구성 요소는 프로젝트 수준에서 구현될 수 있으며, 더 이상 사용되지 않는 AEM 이메일 구성 요소는 이러한 기능을 구현하는 방법을 설명합니다. 그러나 이러한 사용되지 않는 구성 요소는 프로젝트에서 사용할 수 없습니다.
+>이메일 구성 요소는 프로젝트 수준에서 구현될 수 있으며, 가치가 떨어진 AEM 이메일 구성 요소는 이를 구현하는 방법을 보여줍니다. 그러나 이러한 사용되지 않는 구성 요소는 프로젝트에서 사용할 수 없습니다.
 
 ## Adobe Campaign 뉴스레터 구성 요소 {#adobe-campaign-newsletter-components}
 
@@ -89,9 +92,9 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 >[!NOTE]
 >
 >즉석 편집기에서는 편집할 때 이미지의 원래 크기와 종횡비를 사용합니다. 높이 및 너비 속성을 지정할 수도 있습니다. 속성에 정의된 모든 크기와 종횡비는 편집 변경 사항을 저장할 때 적용됩니다.
-
->사용자 인스턴스에 따라 최소 및 최대 제한 사항은 [페이지의 디자인](/help/sites-developing/designer.md)에 의해 적용될 수도 있습니다. 이러한 제한 사항은 프로젝트 구현 중 개발됩니다.
 >
+>사용자 인스턴스에 따라 최소 및 최대 제한 사항은 [페이지의 디자인](/help/sites-developing/designer.md)에 의해 적용될 수도 있습니다. 이러한 제한 사항은 프로젝트 구현 중 개발됩니다.
+
 맵 및 확대/축소와 같은 몇 가지 추가 옵션은 전체 화면 편집 모드에서 사용할 수 있습니다.
 
 ![](do-not-localize/chlimage_1-11.png)
@@ -105,7 +108,7 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 자르기를 선택하여 이미지를 자릅니다. 마우스를 사용하여 이미지를 자를 수 있습니다.
 
 * **회전**
-이미지를 회전하려면 [회전]을 선택합니다. 이미지가 원하는 방향으로 회전할 때까지 반복적으로 사용합니다.
+이미지를 회전하려면 회전을 선택합니다. 이미지가 원하는 방향으로 회전할 때까지 반복적으로 사용합니다.
 
 * **지우기**
 현재 이미지를 제거합니다.
@@ -128,8 +131,10 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 이미지의 높이와 너비를 설정합니다.
 
 >[!NOTE]
-**고급** 탭에서 **대체 텍스트** 필드에 정보를 입력해야 합니다. 그렇지 않으면, 이미지를 저장할 수 없으며 다음 오류 메시지가 표시됩니다.
-`Validation failed. Verify the values of the marked fields.`
+>
+>**고급** 탭에서 **대체 텍스트** 필드에 정보를 입력해야 합니다. 그렇지 않으면, 이미지를 저장할 수 없으며 다음 오류 메시지가 표시됩니다.
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 다음 예는 이미지(캠페인) 구성 요소가 표시되는 것을 보여줍니다.
@@ -146,13 +151,16 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 * **링크 도구 설명** 링크 사용 방법에 대한 추가 정보를 추가합니다.
 
-* **링크 유형** 드롭다운 목록에서 **사용자 지정 URL**&#x200B;과 **응용 문서** 중에 선택하십시오. 이 필드는 반드시 입력해야 합니다. [사용자 지정 URL]을 선택하는 경우 링크 URL을 제공할 수 있습니다. [응용 문서]를 선택하는 경우 문서 경로를 제공할 수 있습니다.
+* **LinkType**&#x200B;드롭다운 목록에서 
+**사용자 지정 URL** 및 **응용 문서**. 이 필드는 반드시 입력해야 합니다. [사용자 지정 URL]을 선택하는 경우 링크 URL을 제공할 수 있습니다. [응용 문서]를 선택하는 경우 문서 경로를 제공할 수 있습니다.
 
 * **추가 URL 매개 변수** 추가적인 URL 매개 변수를 추가합니다. 여러 항목을 추가하려면 [항목 추가]를 클릭하십시오.
 
 >[!NOTE]
-You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
-`Validation failed. Verify the values of the marked fields.`
+>
+>You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 다음 예는 링크(캠페인) 구성 요소가 표시되는 것을 보여줍니다.
@@ -161,7 +169,7 @@ You must enter information in the **Link Type** field in the **URL Info** tab, o
 
 ### Scene7 이미지 템플릿(캠페인) {#scene-image-template-campaign}
 
-[Scene7 이미지](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 템플릿은 레이어로 구성된 이미지 파일로, 컨텐츠 및 속성이 가변성을 위해 매개 변수화할 수 있습니다. **이미지 템플릿** 구성 요소를 사용하면 뉴스레터 내에서 Scene7 템플릿을 사용하고 템플릿 매개 변수의 값을 변경할 수 있습니다. 또한 매개 변수 내에서 Adobe Campaign 메타데이터 변수를 사용하여 각 사용자가 개인화된 방식으로 이미지를 경험하도록 할 수 있습니다.
+[Scene7 이미지 템플릿은](https://help.adobe.com/ko_KR/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 레이어로 구성된 이미지 파일로, 컨텐츠와 속성을 가변성 있게 매개 변수화할 수 있습니다. **이미지 템플릿** 구성 요소를 사용하면 뉴스레터 내에서 Scene7 템플릿을 사용하고 템플릿 매개 변수의 값을 변경할 수 있습니다. 또한 매개 변수 내에서 Adobe Campaign 메타데이터 변수를 사용하여 각 사용자가 개인화된 방식으로 이미지를 경험하도록 할 수 있습니다.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -223,8 +231,10 @@ Content Finder에서 이미지를 드래그하거나 클릭하여 이미지를 �
 이미지의 높이와 너비를 설정합니다.
 
 >[!NOTE]
-**고급** 탭의 **대체 텍스트** 필드는 반드시 입력해야 합니다. 그렇지 않으면, 구성 요소를 저장할 수 없으며 다음 오류 메시지가 표시됩니다.
-`Validation failed. Verify the values of the marked fields.`
+>
+>**고급** 탭의 **대체 텍스트** 필드는 반드시 입력해야 합니다. 그렇지 않으면, 구성 요소를 저장할 수 없으며 다음 오류 메시지가 표시됩니다.
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 다음 예는 텍스트 및 이미지(캠페인) 구성 요소가 표시되는 것을 보여줍니다.
@@ -242,15 +252,19 @@ The Text &amp; Personalization (Campaign) component lets you enter a text block 
 즉석 편집기에서는 텍스트를 추가하고, 양쪽 맞춤을 변경하고, 링크를 추가 또는 제거하고, 컨텍스트 필드나 개인화 블록을 추가하고, 전체 화면 모드로 전환할 수 있습니다. 텍스트/개인화 추가 작업이 완료되면 확인 표시를 선택하여 변경 사항을 저장하십시오(취소하려면 또는 x 선택). See [Inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) for more information.
 
 >[!NOTE]
-* 사용 가능한 개인화 필드는 뉴스레터가 연결된 Adobe Campaign 템플릿의 종류에 따라 달라집니다.
-* ContextHub에서 가상 사용자를 선택하면 개인화 필드는 선택된 프로필의 데이터로 자동 교체됩니다.
+>
+>* 사용 가능한 개인화 필드는 뉴스레터가 연결된 Adobe Campaign 템플릿의 종류에 따라 달라집니다.
+>* ContextHub에서 가상 사용자를 선택하면 개인화 필드는 선택된 프로필의 데이터로 자동 교체됩니다.
 
+>
+>
 [개인화 삽입](/help/sites-authoring/campaign.md#inserting-personalization)을 참조하십시오.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
 >[!NOTE]
-**nms:seedMember** 스키마나 그 확장 중 하나에서 정의된 필드만 고려됩니다. **nms:seedMember**&#x200B;에 연결된 표의 특성은 사용할 수 없습니다.
+>
+>**nms:seedMember** 스키마나 그 확장 중 하나에서 정의된 필드만 고려됩니다. **nms:seedMember**&#x200B;에 연결된 표의 특성은 사용할 수 없습니다.
 
 ## Adobe Campaign 양식 구성 요소 {#adobe-campaign-form-components}
 
@@ -299,7 +313,7 @@ When you open a form that is configured to integrate with Adobe Campaign, you se
   </tr>
   <tr>
    <td><p>숫자 필드(캠페인)</p> </td>
-   <td><p>숫자(바이트, short, long, double)</p> </td>
+   <td><p>숫자(바이트, 짧은, 긴, double)</p> </td>
    <td><p>연령</p> </td>
   </tr>
   <tr>
@@ -372,10 +386,10 @@ Adobe Campaign 구성 요소에는 모든 구성 요소(암호화된 기본 키�
 
 [대부분의 Adobe Campaign 구성 요소에 공통인 설정](#settings-common-to-most-components) 외에 다음 내용을 구성할 수 있습니다.
 
-* **제한 - 제한** 드롭다운없음 **또는 날짜** 중 하나를 선택하여 **날짜 제한을 추가하거나 제한을 추가하지 않을 수 있습니다** . 날짜를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 날짜 형식이어야 합니다.
+* **제한 - 제한** 드롭다운 - 없음 **** 또는 **날짜 -를 선택하여** 날짜 제한을 추가하거나 제한을 추가하지 않을 수 있습니다. 날짜를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 날짜 형식이어야 합니다.
 
 * **제한 메시지** 또한, 사용자가 응답의 형식을 적절하게 지정하는 방법을 알도록 제한 메시지를 추가할 수도 있습니다.
-* **스타일** - 너비 **+** 및 **** 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 조정합니다.
+* **스타일링 - 너비** **+** 및 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 **조정합니다** .
 
 다음 예는 날짜 필드(캠페인) 구성 요소가 조정된 너비로 표시되는 것을 보여줍니다.
 
@@ -423,10 +437,10 @@ Adobe Campaign 프로필 데이터를 표시 및 수정하는 각 양식은 암�
 
 [대부분의 Adobe Campaign 구성 요소에 공통인 설정](#settings-common-to-most-components) 외에 다음 내용을 구성할 수 있습니다.
 
-* **제한 - 제한** 드롭다운없음 **또는 숫자** 중 하나를 선택하여 숫자 또는 **제한을** 추가할 수 있습니다. 숫자를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 숫자여야 합니다.
+* **제한 - 제한** 드롭다운 - 없음 **** 또는 **숫자 -를 선택하여** 숫자 또는 제한을 추가하거나 제한을 추가하지 않을 수 있습니다. 숫자를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 숫자여야 합니다.
 
 * **제한 메시지** 또한, 사용자가 응답의 형식을 적절하게 지정하는 방법을 알도록 제한 메시지를 추가할 수도 있습니다.
-* **스타일** - 너비 **+** 및 **** 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 조정합니다.
+* **스타일링 - 너비** **+** 및 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 **조정합니다** .
 
 다음 예는 숫자 필드(캠페인) 구성 요소가 구성된 너비로 표시되는 것을 보여줍니다.
 
@@ -451,7 +465,8 @@ Adobe Campaign 프로필과 연결된 가입을 수정하려면 **가입 확인 
 이 구성 요소를 양식에 추가하면 모든 사용 가능한 가입이 확인란으로 표시되고 사용자가 원하는 가입을 선택할 수 있습니다. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
 
 >[!NOTE]
-이 구성 요소는 사용자가 이미 가입했거나 가입을 해지한 서비스를 확인하지는 않습니다.
+>
+>이 구성 요소는 사용자가 이미 가입했거나 가입을 해지한 서비스를 확인하지는 않습니다.
 
 가입 확인 목록(캠페인) 구성 요소에서 [대부분의 Adobe Campaign 구성 요소에 공통인 설정을 구성](#settings-common-to-most-components)할 수 있습니다. (이 구성 요소에 사용할 수 있는 Adobe Campaign 구성이 없습니다.)
 
@@ -465,10 +480,10 @@ Adobe Campaign 프로필과 연결된 가입을 수정하려면 **가입 확인 
 
 [대부분의 Adobe Campaign 구성 요소에 공통인 설정](#settings-common-to-most-components) 외에 다음 내용을 구성할 수 있습니다.
 
-* **제한 - 제한** 드롭다운없음, **이메일** 또는 이름 **(모음 제외)을 선택하여 이메일 주소, 이름 또는 제한 조건 없이****** 제한을 추가할 수 있습니다. 이메일을 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 이메일 주소여야 합니다. 이름을 선택하는 경우 이름이어야 합니다(모음 기호는 허용되지 않음).
+* **제한 - 제한** 드롭다운 **없음,** 이메일 **또**&#x200B;는 **이름** (모음 기호 없음)을 선택하여 이메일 주소, 이름또는 제한 조건 없음을 추가할 수 있습니다. 이메일을 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 이메일 주소여야 합니다. 이름을 선택하는 경우 이름이어야 합니다(모음 기호는 허용되지 않음).
 
 * **제한 메시지** 또한, 사용자가 응답의 형식을 적절하게 지정하는 방법을 알도록 제한 메시지를 추가할 수도 있습니다.
-* **스타일** - 너비 **+** 및 **** 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 조정합니다.
+* **스타일링 - 너비** **+** 및 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 **조정합니다** .
 
 다음 예는 텍스트 필드(캠페인) 구성 요소가 표시되는 것을 보여줍니다.
 
