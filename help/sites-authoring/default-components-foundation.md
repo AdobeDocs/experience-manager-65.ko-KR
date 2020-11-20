@@ -13,7 +13,7 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 071f4a292343f0ad52ca3700c95bf60f03c307cc
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '7287'
 ht-degree: 99%
@@ -199,7 +199,7 @@ ht-degree: 99%
 수동으로 또는 선택기를 사용하여 경로를 지정하십시오. 현재 페이지를 상위 페이지로 사용하려면 비워 두십시오.
       * **고정 목록 옵션**
 
-         * **페이지**&#x200B;페이지 목록을 선택합니다. 사용 
+         * **페이지**&#x200B;페이지 목록을 선택합니다.사용 
 `+` 항목을 더 추가하고 위쪽/아래쪽 단추를 추가하여 순서를 조정합니다.
       * **검색 옵션**
 
@@ -394,17 +394,19 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 >[!NOTE]
 >
 >즉석 편집기에서는 편집할 때 이미지의 원래 크기와 종횡비를 사용합니다. 높이 및 너비 속성을 지정할 수도 있습니다. 속성에 정의된 모든 크기와 종횡비는 편집 변경 사항을 저장할 때 적용됩니다.
-
->사용자 인스턴스에 따라 최소 및 최대 제한 사항은 [페이지의 디자인](/help/sites-developing/designer.md)에 의해 적용될 수도 있습니다. 이러한 제한 사항은 프로젝트 구현 중 개발됩니다.
 >
+>사용자 인스턴스에 따라 최소 및 최대 제한 사항은 [페이지의 디자인](/help/sites-developing/designer.md)에 의해 적용될 수도 있습니다. 이러한 제한 사항은 프로젝트 구현 중 개발됩니다.
+
 맵 및 확대/축소와 같은 몇 가지 추가 옵션은 전체 화면 편집 모드에서 사용할 수 있습니다.
 
 ![](do-not-localize/chlimage_1-16.png)
 
 >[!NOTE]
-Internet Explorer에서는 업로드의 진행 상태를 모니터링할 수 없습니다.
-Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;을 클릭한 다음, 이미지를 다시 열어 업로드한 파일을 미리 보기에서 확인하고 수정할 수 있습니다(예: 자르기).
-
+>
+>Internet Explorer에서는 업로드의 진행 상태를 모니터링할 수 없습니다.
+>
+>Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;을 클릭한 다음, 이미지를 다시 열어 업로드한 파일을 미리 보기에서 확인하고 수정할 수 있습니다(예: 자르기).
+>
 >AEM에 사용되는 HTML5 기능에 대한 자세한 내용은 [인증된 플랫폼](/help/release-notes/release-notes.md#certifiedplatforms) 섹션을 참조하십시오.
 
 이미지가 로드되면 다음 항목을 구성할 수 있습니다.
@@ -446,7 +448,8 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
    이미지의 높이와 폭을 설정합니다.
 
 >[!NOTE]
-일부 옵션은 전체 화면 편집기에서만 사용할 수 있습니다.
+>
+>일부 옵션은 전체 화면 편집기에서만 사용할 수 있습니다.
 
 최종 이미지( **제목**&#x200B;과 **설명**&#x200B;포함)는 다음과 같이 표시될 수 있습니다.
 
@@ -459,12 +462,14 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
 >[!NOTE]
-이 구성 요소는 [HTL(HTML Template Language)](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)을 사용하여 구현되었습니다.
+>
+>이 구성 요소는 [HTL(HTML Template Language)](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)을 사용하여 구현되었습니다.
 
 ### 목록 {#list}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [목록 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/list.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [목록 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/list.html)를 대신 활용할 것을 권장합니다.
 
 목록 구성 요소로 목록을 표시할 검색 기준을 구성할 수 있습니다.
 
@@ -537,7 +542,8 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### 로그인 {#login}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 사용자 이름과 암호 필드를 제공합니다.
 
@@ -594,7 +600,8 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### 참조 {#reference}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [컨텐츠 조각 코어 구성 요소](https://docs.adobe.com/content/help/kr/experience-manager-core-components/using/components/content-fragment-component.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [컨텐츠 조각 코어 구성 요소](https://docs.adobe.com/content/help/kr/experience-manager-core-components/using/components/content-fragment-component.html)를 대신 활용할 것을 권장합니다.
 
 **참조** 구성 요소로 현재 인스턴스 내에서 AEM 웹 사이트의 다른 페이지에 있는 텍스트를 참조할 수 있습니다. 그러면 참조된 단락의 컨텐츠가 현재 페이지에 있었던 것처럼 표시됩니다. 소스 단락이 변경되면 컨텐츠가 업데이트됩니다. 이 경우 페이지를 새로 고쳐야 할 수 있습니다.
 
@@ -627,7 +634,8 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### 검색 {#searching}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [빠른 검색 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/quick-search.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [빠른 검색 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/quick-search.html)를 대신 활용할 것을 권장합니다.
 
 검색 구성 요소는 페이지에 검색 기능을 추가합니다.
 
@@ -695,7 +703,8 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### Sitemap {#sitemap}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. [탐색](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/navigation.html), [언어 탐색](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/language-navigation.html) 및 [탐색 표시 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/breadcrumb.html)를 대신 활용하는 것이 좋습니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. [탐색](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/navigation.html), [언어 탐색](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/language-navigation.html) 및 [탐색 표시 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/breadcrumb.html)를 대신 활용하는 것이 좋습니다.
 
 기본 설정을 사용할 경우 현재 웹 사이트의 모든 페이지(활성 링크)를 나열하는 자동 사이트 맵 목록입니다. 예를 들어 추출은 다음과 같이 표시됩니다.
 
@@ -712,7 +721,8 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### Slideshow {#slideshow}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [회전 메뉴 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [회전 메뉴 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)를 대신 활용할 것을 권장합니다.
 
 이 구성 요소는 일련의 이미지를 순서대로 로드하여 페이지에 표시합니다. 이미지를 추가 또는 제거하고 각 이미지에 제목을 지정할 수 있습니다. 고급 설정에서 표시 영역의 크기를 지정할 수도 있습니다.
 
@@ -741,10 +751,12 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### 표 {#table}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
 
 >[!NOTE]
-**표** 기초 구성 요소는 **[텍스트](#text)**기초 구성 요소처럼[리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)를 기반으로 합니다.
+>
+>**표** 기초 구성 요소는 **[텍스트](#text)** 기초 구성 요소처럼 [리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)를 기반으로 합니다.
 
 **표** 구성 요소는 표를 만들고, 채우고, 형식을 지정할 수 있도록 미리 구성되어 있습니다. 이 대화 상자를 사용하면 표를 구성하고 다음 방법 중 하나를 사용하여 컨텐츠를 만들 수 있습니다.
 
@@ -788,10 +800,12 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### 텍스트 {#text}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
 
 >[!NOTE]
-**텍스트** 기초 구성 요소는 [표](/help/sites-authoring/rich-text-editor.md) 기초 구성 요소처럼 **리치 텍스트 편집기**&#x200B;를 기반으로 합니다.
+>
+>**텍스트** 기초 구성 요소는 [표](/help/sites-authoring/rich-text-editor.md) 기초 구성 요소처럼 **리치 텍스트 편집기**&#x200B;를 기반으로 합니다.
 
 텍스트 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)로 제공된 기능과 함께 WYSIWYG 편집기를 사용하여 텍스트 블록을 입력할 수 있습니다. 여러 가지 아이콘을 사용하여 글꼴 특성, 정렬, 링크, 목록 및 들여쓰기 등의 텍스트 서식을 지정할 수 있습니다.
 
@@ -815,7 +829,8 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### 텍스트 및 이미지 {#text-image}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [이미지](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 및 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [이미지](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 및 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
 
 텍스트 및 이미지 구성 요소는 텍스트 블록과 이미지를 추가합니다. 텍스트와 이미지를 별도로 추가하고 편집할 수도 있습니다. 자세한 내용은 [텍스트](#text) 및 [이미지](#image) 구성 요소를 참조하십시오.
 
@@ -862,7 +877,8 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### 제목 {#title}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [제목 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/list.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [제목 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/list.html)를 대신 활용할 것을 권장합니다.
 
 제목 구성 요소의 기능은 다음과 같습니다.
 
@@ -890,7 +906,8 @@ Internet Explorer 사용자는 이미지를 업로드하고 **확인**&#x200B;�
 ### 비디오 {#video}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 **비디오** 구성 요소를 사용하면 사전 정의된 &quot;특별&quot; 비디오 요소를 페이지에 가져올 수 있습니다.
 
@@ -909,10 +926,12 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
       크기 옆의 상자에 비디오의 원래 크기(픽셀 단위 폭 x 높이)가 나타납니다(위 그림 참조). 비디오의 원래 크기를 변경하려는 경우 여기에 너비와 높이를 직접 입력합니다. **확인**&#x200B;을 클릭하여 대화 상자를 닫습니다.
 
 >[!NOTE]
-지원되는 형식은 다음과 같습니다.
-* `.mp4`
-* `Ogg`
-* `FLV`(Flash 비디오)
+>
+>지원되는 형식은 다음과 같습니다.
+>
+>* `.mp4`
+>* `Ogg`
+>* `FLV`(Flash 비디오)
 
 
 ## 열 {#columns}
@@ -944,12 +963,14 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 ## 양식 {#form}
 
 >[!CAUTION]
-구성 요소의 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>구성 요소의 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 양식 구성 요소는 방문자가 입력하여 전송하는 양식을 만드는 데 사용됩니다. 양식 및 양식 구성 요소는 사용자 피드백(예: 고객 만족도 질문) 및 사용자 정보(예: 사용자 등록)을 비롯한 정보를 수집하는 데 사용할 수 있습니다.
 
 >[!NOTE]
-AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home.md)을 참조하십시오.
+>
+>AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home.md)을 참조하십시오.
 
 양식은 여러 가지 구성 요소로 이루어집니다.
 
@@ -970,7 +991,8 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
 ![dc_form](assets/dc_form.png)
 
 >[!NOTE]
-양식의 개발 및 사용자 지정에 대한 자세한 내용은 [양식 개발 페이지](/help/sites-developing/developing-forms.md)에서 확인할 수 있습니다.여기에는 작업 추가, 제한, 필드 미리 로드 및 스크립트를 사용한 수행할 서비스 호출이 포함됩니다.
+>
+>양식의 개발 및 사용자 지정에 대한 자세한 내용은 [양식 개발 페이지](/help/sites-developing/developing-forms.md)에서 확인할 수 있습니다.여기에는 작업 추가, 제한, 필드 미리 로드 및 스크립트를 사용한 수행할 서비스 호출이 포함됩니다.
 
 ### (많은) 양식 구성 요소에 공통되는 설정{#settings-common-to-many-form-components}
 
@@ -995,7 +1017,8 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
    필드의 크기 및 스타일을 지정합니다.
 
 >[!NOTE]
-표시되는 필드는 개별 구성 요소에 따라 상당히 다릅니다.
+>
+>표시되는 필드는 개별 구성 요소에 따라 상당히 다릅니다.
 
 다음 탭에서는 필요한 매개 변수를 제공합니다. 필요한 매개 변수는 개별 구성 요소 유형에 따라 달라질 수 있지만 다음을 포함합니다.
 
@@ -1060,7 +1083,8 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
 ### 양식(구성 요소) {#form-component}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 컨테이너 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-container.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 컨테이너 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-container.html)를 대신 활용할 것을 권장합니다.
 
 양식 구성 요소는 **양식 시작** 및 **양식 끝** 요소를 사용하여 양식의 시작과 끝을 정의합니다. 이러한 단락이 항상 쌍을 이루어야 양식이 올바르게 정의됩니다.
 
@@ -1069,7 +1093,8 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
 양식의 시작과 끝 사이에 사용자를 위한 실제 입력 필드를 정의하는 양식 구성 요소를 추가할 수 있습니다.
 
 >[!NOTE]
-기초 구성 요소 양식 구성 요소는 다른 기초 구성 요소 양식 구성 요소(예: 단추, 텍스트, 숨김 등)의 사용만 지원합니다. 기초 구성 요소 양식 없이 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 양식 구성 요소를 사용할 수 없으며, 반대의 경우도 마찬가지입니다.
+>
+>기초 구성 요소 양식 구성 요소는 다른 기초 구성 요소 양식 구성 요소(예: 단추, 텍스트, 숨김 등)의 사용만 지원합니다. 기초 구성 요소 양식 없이 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 양식 구성 요소를 사용할 수 없으며, 반대의 경우도 마찬가지입니다.
 
 #### 양식 시작 {#start-of-form}
 
@@ -1286,7 +1311,8 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
 ### 계정 이름 {#account-name}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-text.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-text.html)를 대신 활용할 것을 권장합니다.
 
 사용자가 계정 이름을 입력할 수 있습니다.
 
@@ -1295,7 +1321,8 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
 ### 주소 {#address}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-text.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-text.html)를 대신 활용할 것을 권장합니다.
 
 다음과 같은 형식의 국제 주소 필드를 추가할 수 있습니다.
 
@@ -1306,7 +1333,8 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
 ### Captcha {#captcha}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을 입력하도록 요청합니다. 이 문자열은 새로 고칠 때마다 변경됩니다.
 
@@ -1317,7 +1345,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 확인란 그룹 {#checkbox-group}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 옵션 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-options.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 옵션 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-options.html)를 대신 활용할 것을 권장합니다.
 
 확인란을 사용하여 동시에 선택 가능한 하나 이상의 확인란으로 구성된 목록을 만들 수 있습니다.
 
@@ -1326,13 +1355,16 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 제목, 설명 및 요소 이름을 포함하여 다양한 매개 변수를 지정할 수 있습니다. + 및 - 단추를 사용하여 항목을 추가하거나 제거하고 위쪽 및 아래쪽 화살표로 위치를 지정할 수 있습니다.
 
 >[!NOTE]
-**항목 로드 경로**&#x200B;를 사용하여 값을 포함하는 확인란 그룹 목록을 미리 로드할 수 있습니다.
-[여러 값이 있는 양식 필드 미리 로드](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values)를 참조하십시오.
+>
+>**항목 로드 경로**&#x200B;를 사용하여 값을 포함하는 확인란 그룹 목록을 미리 로드할 수 있습니다.
+>
+>[여러 값이 있는 양식 필드 미리 로드](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values)를 참조하십시오.
 
 ### 신용 카드 세부 사항 {#credit-card-details}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 신용 카드 세부 사항을 입력하는 데 필요한 필드를 제공할 수 있도록 해줍니다. 허용된 카드 유형과 필요한 정보(예: 보안 카드)를 지정하도록 구성할 수 있습니다.
 
@@ -1341,7 +1373,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 드롭다운 목록 {#dropdown-list}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 옵션 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-options.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 옵션 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-options.html)를 대신 활용할 것을 권장합니다.
 
 선택 가능한 값 범위를 사용하여 드롭다운 목록을 구성할 수 있습니다.
 
@@ -1350,38 +1383,46 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 목록에 표시할 제목과 항목을 지정할 수 있습니다. + 및 - 단추를 사용하여 목록 항목을 추가하거나 제거하고 위쪽 및 아래쪽 화살표로 위치를 지정할 수 있습니다. 사용자가 목록에서 여러 항목을 선택하도록 허용할지 여부와, 처음 목록을 열 때 자동으로 선택되어야 하는 항목이 있다면 이러한 항목(초기값)을 지정할 수 있습니다.
 
 >[!NOTE]
-**항목 로드 경로**&#x200B;를 사용하여 값을 포함하는 드롭다운 목록을 미리 로드할 수 있습니다.
-[여러 값이 있는 양식 필드 미리 로드](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values)를 참조하십시오.
+>
+>**항목 로드 경로**&#x200B;를 사용하여 값을 포함하는 드롭다운 목록을 미리 로드할 수 있습니다.
+>
+>[여러 값이 있는 양식 필드 미리 로드](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values)를 참조하십시오.
 
 ### 파일 업로드 {#file-upload}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 파일 업로드 구성 요소는 사용자가 파일을 선택하여 업로드하는 메커니즘을 제공합니다.
 
 ![dc_form_fileupload](assets/dc_form_fileupload.png)
 
 >[!NOTE]
-사용자 지정 업로드 구성 요소를 만들어 파일을 Sling 서블릿에 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://helpx.adobe.com/kr/experience-manager/using/uploading-files-aem1.html)를 참조하십시오.
+>
+>사용자 지정 업로드 구성 요소를 만들어 파일을 Sling 서블릿에 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://helpx.adobe.com/kr/experience-manager/using/uploading-files-aem1.html)를 참조하십시오.
 
 ### 숨김 필드 {#hidden-field}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 숨김 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-hidden.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 숨김 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-hidden.html)를 대신 활용할 것을 권장합니다.
 
 이 구성 요소로 숨김 필드를 만들어 다양한 용도로 사용할 수 있습니다. 예를 들어 양식을 제출한 후 작업을 수행해야 할 때, 또는 사후 처리에서 데이터를 숨겨야 할 때가 있습니다.
 
 ![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
-양식의 다른 필드 값에 따라 특정 양식 구성 요소를 표시하거나 숨기도록 양식을 사용자 지정할 수도 있습니다. 양식 필드의 표시 여부를 변경하는 방법은 해당 필드가 특정한 조건에서만 필요한 경우에 유용합니다.
-[양식 구성 요소 표시 및 숨기기](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components)를 참조하십시오.
+>
+>양식의 다른 필드 값에 따라 특정 양식 구성 요소를 표시하거나 숨기도록 양식을 사용자 지정할 수도 있습니다. 양식 필드의 표시 여부를 변경하는 방법은 해당 필드가 특정한 조건에서만 필요한 경우에 유용합니다.
+>
+>[양식 구성 요소 표시 및 숨기기](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components)를 참조하십시오.
 
 ### 이미지 단추 {#image-button}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 단추 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-button.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 단추 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-button.html)를 대신 활용할 것을 권장합니다.
 
 이미지 단추로 이미지 및 텍스트를 직접 입력하여 단추를 만들 수 있습니다.
 
@@ -1390,7 +1431,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 이미지 업로드 {#image-upload}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 이미지 업로드 구성 요소는 사용자가 이미지 파일을 선택하여 업로드하는 메커니즘을 제공합니다.
 
@@ -1399,7 +1441,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 링크 필드 {#link-field}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 링크 필드는 사용자가 URL을 지정할 수 있도록 합니다.
 
@@ -1410,7 +1453,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 암호 필드 {#password-field}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 사용자가 암호를 입력할 수 있도록 하는 데 사용됩니다.
 
@@ -1419,7 +1463,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 암호 재설정 {#password-reset}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 이 구성 요소는 사용자에게 다음과 같은 두 필드를 제공합니다.
 
@@ -1433,7 +1478,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 라디오 그룹 {#radio-group}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 옵션 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-options.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 옵션 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-options.html)를 대신 활용할 것을 권장합니다.
 
 라디오 그룹은 한 번에 하나만 선택할 수 있는 하나 이상의 라디오 확인란 목록을 제공합니다.
 
@@ -1442,13 +1488,16 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ![dc_form_radiogroupuse](assets/dc_form_radiogroupuse.png)
 
 >[!NOTE]
-**항목 로드 경로**&#x200B;를 사용하여 값을 포함하는 라디오 그룹을 미리 로드할 수 있습니다.
-[여러 값이 있는 양식 필드 미리 로드](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values)를 참조하십시오.
+>
+>**항목 로드 경로**&#x200B;를 사용하여 값을 포함하는 라디오 그룹을 미리 로드할 수 있습니다.
+>
+>[여러 값이 있는 양식 필드 미리 로드](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values)를 참조하십시오.
 
 ### 전송 단추 {#submit-button}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 단추 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-button.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 단추 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-button.html)를 대신 활용할 것을 권장합니다.
 
 이 구성 요소로 다음과 같은 기본 텍스트를 갖는 전송 단추를 만들 수 있습니다.
 
@@ -1461,7 +1510,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 태그 필드 {#tags-field}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 이 필드에서 태그를 선택할 수 있습니다.
 
@@ -1487,7 +1537,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 텍스트 필드 {#text-field}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-text.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-text.html)를 대신 활용할 것을 권장합니다.
 
 표준 텍스트 필드를 필요한 크기로 구성하고 안내 메시지를 직접 입력할 수 있습니다.
 
@@ -1496,7 +1547,8 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 ### 워크플로우 제출 단추 {#workflow-submit-button-s}
 
 >[!CAUTION]
-이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 단추 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-button.html)를 대신 활용할 것을 권장합니다.
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 단추 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-button.html)를 대신 활용할 것을 권장합니다.
 
 워크플로우에서 사용할 제출 단추를 만들 수 있도록 해줍니다.
 
