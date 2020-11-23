@@ -1,5 +1,5 @@
 ---
-ttitle: Administering generic eCommerce
+title: 일반 e커머스 관리
 seo-title: 일반 e커머스 관리
 description: AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는 방법을 제공합니다.
 seo-description: AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는 방법을 제공합니다.
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 06d6696a5493f0e166e400bcd9a379b7be062c1e
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3011'
 ht-degree: 5%
 
 ---
@@ -80,7 +80,7 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
 
    * **소스**
 
-      가져올 파일; 브라우저를 사용하여 파일을 선택할 수 있습니다.
+      가져올 파일;브라우저를 사용하여 파일을 선택할 수 있습니다.
 
    * **증분 가져오기**
 
@@ -120,7 +120,7 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
 
    * **상거래 공급자**
 
-      상거래 [제공업체](/help/sites-administering/concepts.md#commerce-providers)가져오기 기본 Geometrixx.
+      상거래 [제공업체](/help/sites-administering/concepts.md#commerce-providers)가져오기기본 Geometrixx.
 
    * **소스 파일**
 
@@ -350,8 +350,8 @@ CRXDE Lite을 사용하여 기존 단면화를 수정하거나 새 단면화를 
 Search &amp; Promote 통합을 통해 다음을 수행할 수 있습니다.
 
 * 기본 저장소 구조 및 커머스 플랫폼과는 별도로 eCommerce API를 사용합니다.
-* Search &amp; Promote의 색인 커넥터 기능을 활용하여 제품 피드를 XML 형식으로 제공합니다.
-* Search &amp; Promote의 원격 제어 기능을 활용하여 제품 피드의 on-demand 또는 예약된 요청을 수행할 수 있습니다.
+* search &amp; promote의 색인 커넥터 기능을 활용하여 제품 피드를 XML 형식으로 제공합니다.
+* search &amp; promote의 원격 제어 기능을 활용하여 제품 피드의 on-demand 또는 예약된 요청을 수행할 수 있습니다.
 * 클라우드 서비스 구성으로 구성된 다양한 Search &amp; Promote 계정에 대한 피드 생성
 
 자세한 내용은 [제품 피드를 참조하십시오](/help/sites-administering/product-feed.md).
@@ -502,14 +502,14 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 
    예를 들어, **태그/키워드** 필드를 열고 활동을 선택한 다음 Geometrixx-Outdoors 섹션에서 수영을 선택합니다.
 
-1. 확인을 **클릭하여** 속성을 저장합니다. 샘플 제품은 블루프린트 페이지의 **제품 선택 기준** 아래에 표시됩니다.
+1. 확인을 **클릭하여** 속성을 저장합니다.샘플 제품은 블루프린트 페이지의 **제품 선택 기준** 아래에 표시됩니다.
 1. 롤아웃 변경 **사항...을 클릭하고,**&#x200B;롤아웃 페이지 및 모든 하위 페이지를 **선택한 다음**&#x200B;다음 **과** 롤아웃을 ****&#x200B;클릭합니다. 롤아웃이 성공적으로 완료되면 **상태** 표시기가 녹색으로 표시됩니다.
-1. 이제 닫기를 **클릭하고** 새 카탈로그 섹션을 확인할 수 있습니다. 예를 들어 on 및 under:
+1. 이제 닫기를 **클릭하고** 새 카탈로그 섹션을 확인할 수 있습니다.예를 들어 on 및 under:
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
 
-1. Blueprint 페이지에서 Edit **Blueprint** 를 클릭하고 **속성** 대화 상자에서 **생성된 페이지** 탭을엽니다. 배너 목록 필드에서 표시할 이미지를 선택합니다. 예를 들면 `summer.jpg`
-1. 확인을 **클릭하여** 속성을 저장합니다. 배너 정보는 블루프린트 페이지의 **제품 선택 기준** 아래에 표시됩니다.
+1. Blueprint 페이지에서 Edit **Blueprint** 를 클릭하고 **속성** 대화 상자에서 **생성된 페이지** 탭을엽니다. 배너 목록 필드에서 표시할 이미지를 선택합니다.예를 들면 `summer.jpg`
+1. 확인을 **클릭하여** 속성을 저장합니다.배너 정보는 블루프린트 페이지의 **제품 선택 기준** 아래에 표시됩니다.
 1. 이 새로운 변경 사항을 롤아웃합니다.
 
 ### 카탈로그 롤아웃 {#rolling-out-a-catalog}
@@ -647,7 +647,7 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 >
 >즉시 사용 가능한 AEM에는 반품, 주문 상태 업데이트, 이행, 포장 명세서 생성 등 주문과 관련된 표준 기능에 필요한 작업이 없습니다. 주로 기술 미리 보기용입니다.
 >
->AEM의 일반적인 주문 관리는 기본적입니다. 마법사에서 사용할 수 있는 필드는 Scaffold에 따라 다릅니다.
+>AEM의 일반적인 주문 관리는 기본적입니다.마법사에서 사용할 수 있는 필드는 Scaffold에 따라 다릅니다.
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >사용자 지정된 스캐폴드를 만드는 경우 주문 정보를 더 저장할 수 있습니다.
