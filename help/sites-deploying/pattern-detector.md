@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d510decba9b2af23bab54c78779f98a36a6172d4
+source-git-commit: ba7ac70858b7b2fd610d63355a22a69c3a7586e3
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ## 설정 방법 {#how-to-set-up}
 
-Pattern Detector는 AEM 6.5 업그레이드를 대상으로 하는 6.1부터 6.5까지 모든 소스 AEM 버전에서 작동하는 [하나의 패키지로](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) 별도로 출시됩니다. 패키지 관리자를 사용하여 설치할 수 [있습니다](/help/sites-administering/package-manager.md).
+Pattern Detector는 AEM 6.5 업그레이드를 대상으로 하는 6.1부터 6.5까지 모든 소스 AEM 버전에서 작동하는 [하나의 패키지로](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) 별도로 출시됩니다. 패키지 관리자를 사용하여 설치할 수 [있습니다](/help/sites-administering/package-manager.md).
 
 ## 사용 방법 {#how-to-use}
 
