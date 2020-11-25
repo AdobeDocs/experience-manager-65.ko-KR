@@ -3,10 +3,10 @@ title: 지원되는 파일 포맷 및 MIME 유형
 description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c2c0f38d0c8e403264db05064d4423ef46880d9a
+source-git-commit: 83c5e92c55f374cc0a8f8bf0f4af3333893f4a59
 workflow-type: tm+mt
-source-wordcount: '1634'
-ht-degree: 9%
+source-wordcount: '1615'
+ht-degree: 10%
 
 ---
 
@@ -237,7 +237,7 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## 기타 지원되는 포맷 {#other-supported-formats}
 
-스토리지, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리와 같은 일반적인 DAM 기능은 많은 파일 포맷에서 [!DNL Dynamic Media] 지원됩니다. 몇 가지 특정 파일 포맷에 대한 기능에 대한 적용 방법은 아래에 설명되어 있습니다.
+다음은 몇 가지 특정 파일 포맷에 대한 일반적인 DAM 기능의 적용 가능성을 설명한 것입니다.
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
