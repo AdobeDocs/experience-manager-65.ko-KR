@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
 workflow-type: tm+mt
-source-wordcount: '2760'
+source-wordcount: '2743'
 ht-degree: 3%
 
 ---
@@ -123,7 +123,11 @@ Adobe Marketing Cloud의 [보고서 세트 관리자를](https://docs.adobe.com/
 
 새 보고서 세트를 사용하는 경우 **새 보고서 세트에** 4개의 evar 및 6개의 이벤트 변수만 있을 수 있으며, Communities에는 11개의 evar 및 7개의 이벤트 변수가 필요합니다.
 
-기존 **보고서 세트를**&#x200B;사용하는 경우 커뮤니티 사이트에 대한 Analytics 프레임워크를 활성화하기 전에 변수 매핑을 [](#modifying-analytics-variable-mapping) 수정해야 할 수 있습니다. 커뮤니티 전용 변수에 대한 우려 사항은 계정 담당자에게 문의하십시오.
+기존 **보고서 세트를**&#x200B;사용하는 경우 커뮤니티 사이트에 대한 Analytics 프레임워크를 활성화하기 전에 변수 매핑을 [](#modifying-analytics-variable-mapping) 수정해야 할 수 있습니다.
+
+<!--
+Contact your account representative for any concerns regarding the variables dedicated to Communities.
+-->
 
 >[!CAUTION]
 >
@@ -241,7 +245,6 @@ Adobe Marketing Cloud의 [보고서 세트 관리자를](https://docs.adobe.com/
 
       * 항목에 선행 공백이 없는지 확인합니다.
       * 다른 데이터 센터를 사용해 보십시오.
-      * 계정 담당자에게 문의하십시오.
 
 * 확인을 **선택합니다**.
 
