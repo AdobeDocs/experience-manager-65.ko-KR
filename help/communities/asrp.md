@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
+source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '827'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ SRP 옵션 [및 권장 토폴로지](/help/communities/working-with-srp.md#chara
 
 ASRP를 사용하려면 추가 라이선스가 필요합니다.
 
-UGC용 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 다음을 확인하십시오.
+UGC용 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 계정 담당자에게 다음 사항을 문의하십시오.
 
 * 데이터 센터 URL(ASRP 끝점의 주소)
 * 소비자 키
