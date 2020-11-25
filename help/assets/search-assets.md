@@ -4,9 +4,9 @@ description: 필터 패널을 [!DNL Adobe Experience Manager] 사용하여 필�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 752f8a305f689a9aa1377533108d28c714da8afd
+source-git-commit: f5aa1d31f3b31e29073937e044c8fbac27138c4d
 workflow-type: tm+mt
-source-wordcount: '5776'
+source-wordcount: '5769'
 ht-degree: 1%
 
 ---
@@ -411,9 +411,9 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 ### 검색 결과 정렬 {#sort}
 
-검색 결과를 정렬하여 필요한 에셋을 보다 신속하게 검색할 수 있습니다. 목록 보기에서 검색 결과를 정렬할 수 있으며 필터 **[[!UICONTROL 패널에서]](#searchui)** 파일 **[!UICONTROL 을 선택한 경우에만]** 정렬할 수있습니다. [!DNL Assets] 서버측 정렬을 사용하여 폴더 또는 검색 쿼리의 결과 내의 모든 자산(wherever)을 빠르게 정렬합니다. 서버측 정렬은 클라이언트측 정렬보다 빠르고 정확한 결과를 제공합니다.
+검색 결과를 정렬하여 필요한 에셋을 보다 신속하게 검색할 수 있습니다. 필터 패널에서 **[[!UICONTROL 파일]](#searchui)** 을 선택한 경우에만 검색 결과를 **[!UICONTROL 정렬할 수]** 있습니다. [!DNL Assets] 서버측 정렬을 사용하여 폴더 또는 검색 쿼리의 결과 내의 모든 자산(wherever)을 빠르게 정렬합니다. 서버측 정렬은 클라이언트측 정렬보다 빠르고 정확한 결과를 제공합니다.
 
-목록 보기에서는 임의의 폴더에서 자산을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, Dimension, 크기, 등급, 사용, (날짜) 생성됨, (날짜) 수정됨, (날짜) 게시됨, 워크플로우 및 체크 아웃과 같은 열에서 작동합니다.
+모든 폴더에서 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, Dimension, 크기, 등급, 사용, (날짜) 생성됨, (날짜) 수정됨, (날짜) 게시됨, 워크플로우 및 체크 아웃과 같은 열에서 작동합니다.
 
 정렬 기능에 대한 제한 사항은 [제한 사항을 참조하십시오](#limitations).
 
