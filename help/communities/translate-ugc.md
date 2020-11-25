@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ UGC의 번역을 통해 사이트 방문자와 회원은 언어 장벽을 제거
 
 ## 기본 번역 서비스 {#the-default-translation-service}
 
-AEM Communities은 여러 언어로 [기본 번역 서비스를](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) [](../../help/sites-administering/tc-msconf.md) 제공하는 시험버전 라이선스와 함께 제공됩니다.
+AEM Communities에는 여러 언어로 [기본 번역](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) [](../../help/sites-administering/tc-msconf.md) 서비스를 이용할 수 있는 시험버전 라이선스가 포함되어 있습니다.
 
 커뮤니티 사이트 [를](sites-console.md)만들 때 TRANSLATION `Allow Machine Translation` 하위 패널에서 [선택하면 기본 번역 서비스가](sites-console.md#translation) 활성화됩니다.
 
