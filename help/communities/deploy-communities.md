@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1898'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 설치 검사 목록 {#installation-checklist}
 
-**AEM[플랫폼](/help/sites-deploying/deploy.md#what-is-aem)**
+**AEM [플랫폼](/help/sites-deploying/deploy.md#what-is-aem)**
 
 * 최신 [AEM 6.5 업데이트 설치](#aem64updates)
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 * [암호화 키 복제](#replicate-the-crypto-key)
 * 세계화를 지원하는 경우 자동 번역 [을](/help/sites-administering/translation.md)설정합니다(개발을 위해 샘플 설정이 제공됨).
 
-**커뮤니티[기능](/help/communities/overview.md)**
+**커뮤니티 [기능](/help/communities/overview.md)**
 
 * 게시 팜을 [배포하는](/help/sites-deploying/recommended-deploys.md#tarmk-farm)경우 기본 게시자 [식별](#primary-publisher)
 
@@ -89,7 +89,7 @@ ht-degree: 1%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.5 Communities GA는 Communities 패키지와 함께 제공됩니다. AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities)업데이트에 대한 자세한 내용은 [AEM 6.5 릴리스 노트를 참조하십시오](/help/release-notes/release-notes.md#communities-release-notes.html).
+AEM 6.5 Communities GA에는 커뮤니티 패키지가 포함됩니다. AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities)업데이트에 대한 자세한 내용은 [AEM 6.5 릴리스 노트를 참조하십시오](/help/release-notes/release-notes.md#communities-release-notes.html).
 
 ### AEM 6.5 업데이트 {#aem-updates}
 
@@ -122,7 +122,7 @@ MySQL 커넥터를 별도로 구하고 설치해야 합니다.
    * 예: https://localhost:4502/system/console/bundles
    * 선택 **`Install/Update`**
    * 찾아보기...를 클릭하여 다운로드한 ZIP 보관에서 추출한 번들을 선택합니다.
-   * MySQLcom *용 Oracle Corporation의 JDBC 드라이버가 활성 상태인지 확인하고 활성 상태가 아니면 시작(또는 로그 확인)* 하십시오.
+   * MySQLcom.mysql.jdbc용 *Oracle Corporation의 JDBC 드라이버가 활성 상태인지 확인하고 활성 상태가 아니면 시작(또는 로그 검사)* (해당)
 
 1. JDBC가 구성된 후 기존 배포에 설치하는 경우 웹 콘솔에서 JDBC 구성을 다시 저장하여 JDBC를 새 커넥터에 다시 바인딩합니다.
    * 예: https://localhost:4502/system/console/configMgr
