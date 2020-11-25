@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.5 서비스 팩 7의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2704'
 ht-degree: 59%
 
 ---
@@ -32,9 +32,9 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* 사용자는 카드 및 열 보기에서 디지털 자산을 정렬할 수 있습니다.
+* [!DNL Assets] 다양한 액세서빌러티 기능을 [!DNL Dynamic Media] 제공합니다. 향상된 기능은 키보드 탐색, 화면 판독기 사용, 보조 기술(AT)을 사용할 수 있도록 해주는 유사한 개선 사항과 관련이 있습니다. 향상된 [[!DNL Assets] 기능](/help/release-notes/sp-release-notes.md#assets-6570) 및 [[!DNL Dynamic Media] 향상된 기능을](/help/release-notes/sp-release-notes.md#dynamic-media-6570)참조하십시오.
 
-* [!DNL Assets] 다양한 액세서빌러티 기능을 [!DNL Dynamic Media] 제공합니다. 향상된 기능은 키보드 탐색, 화면 판독기 사용, 보조 기술(AT)을 사용할 수 있도록 해주는 유사한 개선 사항과 관련이 있습니다. 향상된 [자산](/help/release-notes/sp-release-notes.md#assets-6570) 및 [[!DNL Dynamic Media] 개선 사항을 참조하십시오](/help/release-notes/sp-release-notes.md#dynamic-media-6570). <!-- TBD: Add link to a11y article after go-live. Adding RN link for now. -->
+* 사용자는 카드 및 열 보기에서 디지털 자산을 정렬할 수 있습니다.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
