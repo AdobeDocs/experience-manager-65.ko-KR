@@ -1,6 +1,6 @@
 ---
-title: ASRP - Adobe Storage Resource Provider
-seo-title: ASRP - Adobe Storage Resource Provider
+title: ASRP - Adobe 저장소 리소스 공급자
+seo-title: ASRP - Adobe 저장소 리소스 공급자
 description: 관계형 데이터베이스를 공용 스토어로 사용하도록 AEM Communities 설정
 seo-description: 관계형 데이터베이스를 공용 스토어로 사용하도록 AEM Communities 설정
 uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
@@ -11,19 +11,19 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
 
 
-# ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
+# ASRP - Adobe 저장소 리소스 공급자 {#asrp-adobe-storage-resource-provider}
 
 ## ASRP 정보 {#about-asrp}
 
-ASRP를 공용 스토어로 사용하도록 AEM Communities을 구성한 경우 동기화나 복제 없이도 모든 작성자 및 게시 인스턴스에서 UGC(사용자 생성 컨텐츠)에 액세스할 수 있습니다.
+AEM Communities이 ASRP를 공용 스토어로 사용하도록 구성된 경우 동기화나 복제 없이도 모든 작성자 및 게시 인스턴스에서 사용자 생성 컨텐츠(UGC)에 액세스할 수 있습니다.
 
 SRP 옵션 [및 권장 토폴로지](/help/communities/working-with-srp.md#characteristics-of-srp-options) 의 [특성을 참조하십시오](/help/communities/topologies.md).
 
@@ -31,7 +31,7 @@ SRP 옵션 [및 권장 토폴로지](/help/communities/working-with-srp.md#chara
 
 ASRP를 사용하려면 추가 라이선스가 필요합니다.
 
-UGC용 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 계정 담당자에게 다음 사항을 문의하십시오.
+UGC용 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 다음을 확인하십시오.
 
 * 데이터 센터 URL(ASRP 끝점의 주소)
 * 소비자 키
@@ -46,7 +46,7 @@ UGC용 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 계�
 
 스토리지 [구성 콘솔에서는](/help/communities/srp-config.md) 사용할 SRP 구현을 식별하는 기본 스토리지 구성을 선택할 수 있습니다.
 
-**AEM Author 인스턴스:**
+**AEM 작성자 인스턴스의 경우:**
 
 * 글로벌 탐색에서 **[!UICONTROL 도구 > 커뮤니티 > 스토리지 구성]** 으로 이동하고 **[!UICONTROL Adobe ASRP(Storage Resource Provider)를 선택합니다]**.
 
@@ -54,10 +54,10 @@ UGC용 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 계�
 
 다음은 제공 프로세스에서 얻은 정보입니다.
 
-* **데이터 센터 URL**: 풀다운을 통해 계정 담당자가 식별하는 프로덕션 데이터 센터를 선택합니다.
-* **기본 보고서 세트**: 기본 보고서 세트의 이름을 입력합니다.
-* **소비자 키**: 소비자 키를 입력합니다.
-* **비밀**: 암호를 입력합니다.
+* **데이터 센터 URL**:풀다운을 통해 계정 담당자가 식별하는 프로덕션 데이터 센터를 선택합니다.
+* **기본 보고서 세트**:기본 보고서 세트의 이름을 입력합니다.
+* **소비자 키**:소비자 키를 입력합니다.
+* **비밀**:암호를 입력합니다.
 * **제출**&#x200B;을 선택합니다.
 
 게시 인스턴스 준비:
@@ -95,11 +95,11 @@ ASRP 끝점의 인증이 성공하려면 호스팅된 AEM Communities을 실행�
 
 게시 환경에서 동일한 구성을 사용할 수 있도록 하려면:
 
-AEM Author 인스턴스:
+AEM 작성자 인스턴스의 경우:
 
 * 주 메뉴에서 **[!UICONTROL 도구 > 작업 > 복제로 이동합니다]**.
 * 트리 **활성화 선택**
-* **시작 경로**: 찾아보기 `/etc/socialconfig/srpc/`
+* **시작 경로**:찾아보기 `/etc/socialconfig/srpc/`
 * 수정된 **항목만 선택 취소**
 * 활성화 **선택**
 
@@ -109,7 +109,7 @@ AEM Author 인스턴스:
 >
 >게시된 커뮤니티 사이트에서 ASRP를 활성화하면 온-프레미스 스토리지와 클라우드 스토리지 간에 데이터가 동기화되지 않으므로 [JCR에](/help/communities/jsrp.md) 이미 저장된 UGC가 더 이상 표시되지 않습니다.
 
-**`AEM Communities Extension`** 이전에는 AEM 6.0 소셜 커뮤니티에서 클라우드 서비스로 도입되었습니다. AEM 6.1 Communities에서는 클라우드 구성이 필요하지 않으므로 [스토리지 구성 콘솔에서 ASRP를 선택하면 됩니다](/help/communities/srp-config.md).
+**`AEM Communities Extension`** 이전에는 AEM 6.0 소셜 커뮤니티에서 클라우드 서비스로 도입되었습니다. AEM 6.1 Communities의 경우 클라우드 구성이 필요하지 않으므로 [스토리지 구성 콘솔에서 ASRP를 선택하면 됩니다](/help/communities/srp-config.md).
 
 새로운 스토리지 구조로 인해 소셜 커뮤니티에서 Communities로 업그레이드할 때 [업그레이드](/help/communities/upgrade.md#adobe-cloud-storage) 지침을 따라야 합니다.
 
@@ -124,17 +124,17 @@ AEM Author 인스턴스:
 
 ### 업그레이드 후 UGC가 사라짐 {#ugc-disappears-after-upgrade}
 
-기존 AEM 6.0 소셜 커뮤니티 사이트에서 업그레이드하는 경우 [업그레이드 지침을](/help/communities/upgrade.md#adobe-cloud-storage)따르십시오. 그렇지 않으면 UGC가 손실된 것으로 나타납니다.
+기존 AEM 6.0 소셜 커뮤니티 사이트에서 업그레이드하는 경우 [업그레이드 지침을](/help/communities/upgrade.md#adobe-cloud-storage)따르십시오. 그렇지 않으면 UGC가 손실됩니다.
 
 ### 인증 오류 {#authentication-errors}
 
 데이터 센터 URL에 대해 인증 오류를 수신하는 경우 AEM error.log에 오래된 타임스탬프에 대한 메시지가 포함된 경우 시간 동기화가 발생하는지 확인합니다.
 
-NTP( [Network Time Protocol)와](https://www.ntp.org/) 같은 도구를 사용하여 모든 AEM 작성자 서버 및 게시 시간을 동기화합니다.
+NTP( [Network Time Protocol)와](https://www.ntp.org/) 같은 툴을 사용하여 모든 AEM 작성자 및 게시 서버를 동기화할 수 있습니다.
 
 ### 새 컨텐츠가 검색에 표시되지 않음 {#new-content-does-not-appear-in-searches}
 
-Adobe 클라우드 스토리지 인프라는 *궁극적인 일관성을* 사용하여 확장 및 성능 목표를 달성합니다. 따라서 새 컨텐츠를 즉시 사용할 수 없으며 검색 결과에 표시되는 데 몇 초가 걸립니다.
+Adobe 클라우드 스토리지 인프라는 *궁극적으로는 정합성을* 사용하여 확장 및 성능 목표를 달성합니다. 따라서 새 컨텐츠를 즉시 사용할 수 없으며 검색 결과에 표시되는 데 몇 초가 걸립니다.
 
 최종 일관성에 영향을 주는 간격을 모니터링하지만 새 컨텐츠가 검색에 표시되려면 몇 초 이상 걸리는 경우 계정 담당자에게 문의하십시오.
 
@@ -142,7 +142,7 @@ Adobe 클라우드 스토리지 인프라는 *궁극적인 일관성을* 사용�
 
 저장소 옵션의 구성을 확인하여 ASRP가 기본 공급자로 구성되었는지 확인하십시오. 기본적으로 저장소 리소스 공급자는 ASRP가 아니라 JSRP입니다.
 
-모든 작성 및 AEM 인스턴스에서 저장소 구성 콘솔을 다시 방문하거나 AEM 저장소를 확인합니다.
+모든 작성 및 게시 AEM 인스턴스에서 스토리지 구성 콘솔을 다시 방문하거나 AEM 저장소를 확인합니다.
 
 JCR에서 if/etc/socialconfig [](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
