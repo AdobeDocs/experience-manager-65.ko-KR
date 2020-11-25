@@ -7,10 +7,10 @@ user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
 translation-type: tm+mt
-source-git-commit: caf5737a05a312308f817ac24a3800965d2c2555
+source-git-commit: 3443fe49e7eacbdacf7d21077f920d38b34daeae
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 80%
+source-wordcount: '588'
+ht-degree: 79%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 80%
    + [Dynamic Media 구성 - Scene7 모드](config-dms7.md)
    + [Dynamic Media 구성 - 하이브리드 모드](config-dynamic.md)
    + [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)
+   + [액세스 가능성 기능 [!DNL Dynamic Media]](accessibility-dm.md)
    + [Dynamic Media - 하이브리드 모드에서 Dynamic Media - S7 모드로 마이그레이션](migrate-from-hybrid-to-dms7.md)
    + [Dynamic Media 자산 관리](managing-assets.md)
    + [이미지 품질 최적화 우수 사례](best-practices-for-optimizing-the-quality-of-your-images.md)
