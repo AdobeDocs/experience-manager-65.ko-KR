@@ -3,9 +3,9 @@ title: 지원되는 파일 포맷 및 MIME 유형
 description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: c2c0f38d0c8e403264db05064d4423ef46880d9a
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1634'
 ht-degree: 9%
 
 ---
@@ -30,18 +30,18 @@ ht-degree: 9%
 | 형식 | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | 편집 | 메타데이터 원본에 쓰기 | 인사이트 |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PGM | ✓ | ✓ |  |  |  |  | ✓ |
-| PBM | ✓ | ✓ |  |  |  |  | ✓ |
-| PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD ‡ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
-| PICT |  |  |  |  |  |  | ✓ |
-| PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| PNM | ✓ | ✓ | − | − | − | − | ✓ |
+| PGM | ✓ | ✓ | − | − | − | − | ✓ |
+| PBM | ✓ | ✓ | − | − | − | − | ✓ |
+| PPM | ✓ | ✓ | − | − | − | − | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | − | ✓ | − |
+| PICT | − | − | − | − | − | − | ✓ |
+| PSB | ✓ | ✓ | ✓ | ✓ | − | − | − |
 
 병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함됩니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
@@ -53,10 +53,10 @@ ht-degree: 9%
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ |  |  |  |  |
-| PSD ‡ | ✓ |  |  |  |  |
+| BMP | ✓ | − | − | − | − |
+| PSD ‡ | ✓ | − | − | − | − |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ |  |  |  |  |
+| PICT | ✓ | − | − | − | − |
 
 병합된 ‡ 이미지는 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함됩니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
@@ -78,12 +78,12 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | − | − |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ | − | ✓ | − |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
 
 ## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
@@ -144,32 +144,32 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 | 형식 | 저장 용량 | [메타데이터 관리](metadata.md) | 전체 텍스트<br> 추출 | [메타데이터 추출](metadata.md) | 축소판<br> 생성 | [하위 자산 추출](managing-linked-subassets.md) | [메타데이터 원본에 쓰기](xmp-writeback.md) | [연결된 자산](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
-| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
-| ODT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| DOC | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| ODT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| RTF | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| TXT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| XLS | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
-| ODS | ✓ | ✓ | ✓ |  |  |  |  |  |
-| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| ODP | ✓ | ✓ | ✓ |  |  |  |  |  |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
-| PS | ✓ | ✓ |  |  |  |  |  |  |
-| QXP | ✓ | ✓ |  |  |  |  |  |  |
-| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
+| HTML | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| RTF | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| TXT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| XLS | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| ODS | ✓ | ✓ | ✓ | − | − | − | − | − |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| ODP | ✓ | ✓ | ✓ | − | − | − | − | − |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| PS | ✓ | ✓ | − | − | − | − | − | − |
+| QXP | ✓ | ✓ | − | − | − | − | − | − |
+| EPUB | ✓ | ✓ | − | ✓ | ✓ | − | − | − |
 
 ## Dynamic Media에서 지원되는 문서 포맷 {#supported-document-formats-dynamic-media}
 
 | 형식 | 업로드<br> (입력 형식) | 이미지<br> 사전 설정<br> 만들기<br> (출력 형식) | 동적<br> 변환 미리<br> 보기 | 동적<br> 표현물<br> 전달 | 동적<br> 변환<br> 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ |  |  |  |  |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
 
 위의 기능 외에 다음을 고려하십시오.
 
@@ -183,45 +183,45 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 |  | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | FFmpeg 트랜스코딩 |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | − | * |
-| MIDI | ✓ | ✓ |  | − | * |
-| 3GP | ✓ | ✓ |  | − | * |
+| AAC | ✓ | ✓ | − | − | * |
+| MIDI | ✓ | ✓ | − | − | * |
+| 3GP | ✓ | ✓ | − | − | * |
 | MP3 | ✓ | ✓ | ✓ | − | * |
-| MPG | ✓ | ✓ |  | − | * |
-| OGA | ✓ | ✓ |  | − | * |
-| OGG | ✓ | ✓ |  | − | * |
-| RA | ✓ | ✓ |  | − | * |
-| WAV | ✓ | ✓ |  | − | * |
-| WMA | ✓ | ✓ |  | − | * |
-| DVI | ✓ | ✓ |  | * | * |
-| FLV | ✓ | ✓ |  | * | * |
-| M4V | ✓ | ✓ |  | * | * |
-| MPEG | ✓ | ✓ |  | * | * |
-| OGV | ✓ | ✓ |  | * | * |
-| MOV | ✓ | ✓ |  | * | * |
-| WMV | ✓ | ✓ |  | * | * |
-| SWF | ✓ | ✓ |  |  |  |
+| MPG | ✓ | ✓ | − | − | * |
+| OGA | ✓ | ✓ | − | − | * |
+| OGG | ✓ | ✓ | − | − | * |
+| RA | ✓ | ✓ | − | − | * |
+| WAV | ✓ | ✓ | − | − | * |
+| WMA | ✓ | ✓ | − | − | * |
+| DVI | ✓ | ✓ | − | * | * |
+| FLV | ✓ | ✓ | − | * | * |
+| M4V | ✓ | ✓ | − | * | * |
+| MPEG | ✓ | ✓ | − | * | * |
+| OGV | ✓ | ✓ | − | * | * |
+| MOV | ✓ | ✓ | − | * | * |
+| WMV | ✓ | ✓ | − | * | * |
+| SWF | ✓ | ✓ | − | − | − |
 
 ## Dynamic Media에서 트랜스코딩에 지원되는 입력 비디오 포맷 {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | 비디오 파일 확장자 | 컨테이너 | 권장 비디오 코덱스 | 지원되지 않는 비디오 코덱입니다. |
 |---|---|---|---|
-| MP4 | MPEG-4 | H264/AVC(모든 프로필) |  |
+| MP4 | MPEG-4 | H264/AVC(모든 프로필) | − |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV(DV25), Apple PhotoJPEG, Sorenson, Avid DNHD, Avid AVR | Apple Intermediate, Apple Animation |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF(벡터 애니메이션 파일) |
 | WMV | Windows Media 9 | WMV3(v9), WMV2(v8), WMV1(v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen(MSS2), Microsoft Photo Story(WVP2) |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
-| M4V | Apple iTunes | H264/AVC |  |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
+| M4V | Apple iTunes | H264/AVC | − |
 | AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV(DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3(IV30), MJPEG, Microsoft Video 1(MS-CRAM) |
-| WebM | WebM | Google VP8 |  |
-| OGV, OGG | Ogg | Theora, VP3, Dirac |  |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro |  |
-| MTS | AVCHD | H264/AVC |  |
-| MKV | 마트로스카 | H264/AVC |  |
-| R3D, RM | Red Raw 비디오 | MJPEG 2000 |  |
+| WebM | WebM | Google VP8 | − |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
+| MTS | AVCHD | H264/AVC | − |
+| MKV | 마트로스카 | H264/AVC | − |
+| R3D, RM | Red Raw 비디오 | MJPEG 2000 | − |
 | RAM, RM | RealVideo | 지원되지 않음 | Real G2(RV20), Real 8(RV30), Real 10(RV40) |
-| FLAC | 기본 Flac | 무손실 오디오 코덱입니다. |  |
-| MJ2 | 모션 JPEG 2000 | 모션 JPEG 2000 코덱입니다. |  |
+| FLAC | 기본 Flac | 무손실 오디오 코덱입니다. | − |
+| MJ2 | 모션 JPEG 2000 | 모션 JPEG 2000 코덱입니다. | − |
 
 ## 지원되는 아카이브 포맷 {#supported-archive-formats}
 
@@ -229,23 +229,23 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | ZIP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## 기타 지원되는 포맷 {#other-supported-formats}
 
-기타 몇 가지 파일 포맷에 대한 일반적인 DAM 워크플로우의 적용 방법은 아래 표에 설명되어 있습니다. Dynamic Media Delivery를 제외한 저장소, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리와 같은 일반적인 DAM 기능이 모든 파일에 대해 지원됩니다.
+스토리지, 버전 관리, ACL, 워크플로우, 게시 및 메타데이터 관리와 같은 일반적인 DAM 기능은 많은 파일 포맷에서 [!DNL Dynamic Media] 지원됩니다. 몇 가지 특정 파일 포맷에 대한 기능에 대한 적용 방법은 아래에 설명되어 있습니다.
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로우 | 게시 | 액세스 제어 | 다이내믹 미디어 전달 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript(고유한 배달 도메인으로 구성된 경우) |  |  |  |  |  | ✓ |
+| JavaScript(고유한 배달 도메인으로 구성된 경우) | − | − | − | − | − | ✓ |
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -313,6 +313,6 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 >[!MORELIKETHIS]
 >
->* [MIME 유형 기반 자산/Scene7 업로드 작업 매개 변수 지원을 활성화합니다](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [MIME 유형 기반 자산 및 Dynamic Media Classic 업로드 작업 매개 변수 지원을 활성화합니다](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 >* [업로드 작업 매개 변수 지원을 위해 MIME 형식 기반 구성을 참조하십시오](config-dynamic.md).
 
