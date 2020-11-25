@@ -3,9 +3,9 @@ title: 액세스 가능성 [!DNL Experience Manager Assets]
 description: 액세서빌러티 기능이 장애가 [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] 있는 사용자에게 어떤 도움이 되는지 살펴보십시오.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 00f5a6194c8c29d358f362441c155c9c2a52cac7
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1919'
 ht-degree: 2%
 
 ---
@@ -42,8 +42,7 @@ Possible topics to cover in this article are below.
 
 준수 수준에 대한 세부 정보가 있는 보고서를 읽으려면 접근성 준수 [보고서](https://www.adobe.com/accessibility/compliance.html) (ACR) 페이지를 참조하십시오.
 
-<!-- TBD: Add link after release.
-To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](/). -->
+액세스 가능성 [!DNL Dynamic Media] 을 확인하려면 액세스 [가능성 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)을 참조하십시오.
 
 ## 보조 기술 {#at-support}
 
@@ -224,7 +223,8 @@ CRUD 작업, 자산 다운로드, 메타데이터 추가 등과 같은 다양한
 
 >[!MORELIKETHIS]
 >
->* [각 릴리스에서 수행한 개선 사항 릴리스 노트입니다](/help/release-notes/new-features-latest-service-pack.md).
+>* [액세스 가능성 기능을 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)참조하십시오.
+>* [각 서비스 팩 릴리스에서 수행한 개선 사항에 대한 릴리스 노트입니다](/help/release-notes/new-features-latest-service-pack.md).
 >* [[!DNL Adobe Experience Manager] 접근성 안내](/help/managing/web-accessibility.md).
 >* [Adobe 솔루션에 대한 적합성 보고서(ACR) 및 VPAT 목록](https://www.adobe.com/accessibility/compliance.html)
 
