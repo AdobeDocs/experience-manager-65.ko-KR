@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3796'
 ht-degree: 21%
 
 ---
@@ -139,7 +139,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 [!DNL Adobe Experience Manager] 6.5.7.0에서는 [!DNL Assets] 다음 문제를 해결하고 다음 개선 사항을 제공합니다.
 
-* 다음 개선 사항은 액세스 가능성을 위해 수행됩니다 [!DNL Experience Manager Assets].
+* 이 릴리스의 액세스 가능성 [!DNL Experience Manager Assets] 에 대해 다음 개선 사항이 수행됩니다. 자세한 내용은 [액세스 가능성 기능을 참조하십시오 [!DNL Assets]](/help/assets/accessibility.md).
 
    * 키보드를 사용하여 타임라인을 탐색할 때 `Esc` 키는 초점을 [!UICONTROL 잃지 않고 모두] 표시 옵션을 축소할 수 있습니다(CQ-4293598).
    * 키보드 탭 키를 사용하여 탐색할 때 추가된 태그에서 마지막 태그를 제거한 후 태그 필드가 포커스를 유지합니다(NPR-35109).
@@ -193,7 +193,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 #### [!DNL Dynamic Media] {#dynamic-media-6570}
 
-* 다음 주요 개선 사항은 액세스 가능성 [!DNL Dynamic Media] 에 대해 수행됩니다(CQ-4290306). 자세한 내용은 액세스 가능성 기능을 참조하십시오 [!DNL Dynamic Media].  <!-- TBD: link to DM content post GA -->
+* 다음 개선 사항은 액세스 가능성 [!DNL Dynamic Media] 에 대해 수행됩니다(CQ-4290306). 자세한 내용은 [액세스 가능성 기능을 참조하십시오 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
    * 화면 판독기(JAWS, 내레이터)는 [임베드 크기] 메뉴 옵션에 있는 메뉴 항목의 이름, 역할 및 상태를 나레이션합니다(CQ-4290927).
    * 사용자는 `Tab` 키를 사용하여 이메일 링크 대화 상자를 탐색할 수 있습니다(CQ-4290926).
