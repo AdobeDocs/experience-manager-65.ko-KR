@@ -3,7 +3,7 @@ title: 디지털 자산의 메타데이터를 관리할 수 있습니다 [!DNL A
 description: 메타데이터의 유형과 메타데이터를 기반으로 에셋을 자동으로 구성하고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 처리하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: d070f5dca569dfb90d3034b74c2940fd68d8ceab
 workflow-type: tm+mt
 source-wordcount: '2421'
 ht-degree: 2%
@@ -112,7 +112,7 @@ XMP의 쓰기 되돌리는 [기술 요구 사항에 설명된 플랫폼 및 파�
 1. 사용자 [!DNL Assets] 인터페이스로 이동하고 도구 모음에서 **[!UICONTROL 만들기를]** 클릭합니다.
 1. 메뉴에서 **[!UICONTROL 메타데이터를 선택합니다]**.
 1. 메타데이터 **[!UICONTROL 가져오기]** 페이지에서 파일 **[!UICONTROL 선택을 클릭합니다]**. 메타데이터가 있는 CSV 파일을 선택합니다.
-1. 다음 매개 변수를 지정합니다. 메타데이터 가져오기-sample-file.csv의 샘플 CSV 파일을 [참조하십시오](assets/metadata-import-sample-file.csv).
+1. 다음 매개 변수를 지정합니다. 메타데이터 가져오기-sample-file.csv의 샘플 CSV 파일을 [참조하십시오](/help/assets/assets/metadata-import-sample-file.csv).
 
    | 메타데이터 가져오기 매개 변수 | 설명 |
    |:---|:---|
