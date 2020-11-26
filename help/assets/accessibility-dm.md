@@ -1,13 +1,13 @@
 ---
-title: 액세스 가능성 [!DNL Dynamic Media]
+title: 다이내믹 미디어의 접근성
 description: 다이내믹 미디어 및 다이내믹 미디어 뷰어의 액세스 가능성에 대해 알아봅니다.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 383f84b1a984683b3e2ce60f1a3f2191749a1561
+source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
