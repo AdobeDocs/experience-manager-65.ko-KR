@@ -3,10 +3,10 @@ title: 지원되는 파일 포맷 및 MIME 유형
 description: 파일 형식 및 MIME 유형은 [!DNL Assets] and [!DNL Dynamic Media] 지원되며 각 형식에 지원되는 기능입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 83c5e92c55f374cc0a8f8bf0f4af3333893f4a59
+source-git-commit: eaff176bf3ffc197607b8eb39b15c1e945927f8e
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 10%
+source-wordcount: '1639'
+ht-degree: 9%
 
 ---
 
@@ -246,6 +246,10 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript(고유한 배달 도메인으로 구성된 경우) | − | − | − | − | − | ✓ |
+
+>[!NOTE]
+>
+>JavaScript 파일 업로드 및 배치는 안전하거나 안전하지 않을 수 있습니다. 필요한 경우 오버레이를 사용하여 사용자가 JS 파일을 업로드하지 못하도록 할 수 있습니다.
 
 ## Supported MIME types {#supported-mime-types}
 
