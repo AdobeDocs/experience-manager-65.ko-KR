@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0389508f7870dd2ce6ed7bfc5fb8a9bc88fedffb
+source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3789'
 ht-degree: 21%
 
 ---
@@ -145,7 +145,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
    * 키보드 탭 키를 사용하여 탐색할 때 추가된 태그에서 마지막 태그를 제거한 후 태그 필드가 포커스를 유지합니다(NPR-35109).
    * [!DNL Experience Manager] 이제 구성 요소에는 화면 판독기에서 사용할 이름, 역할 및 값에 대한 적절한 정보가 포함되어 있습니다(NPR-34255).
    * 유형/크기 콤보 상자, 링크 콤보 상자, 언어 콤보 상자 또는 텍스트 편집 상자를 삭제하면 키보드 포커스가 다음 또는 이전 사용자 인터페이스 요소 또는 보다 관련 있는 사용자 인터페이스 요소(CQ-4293585)로 돌아갑니다.
-   * 포인터를 다양한 옵션 위에 놓으면 선택 및 다운로드와 같은 팁이 나타납니다. 마우스로 인해 표시되는 컨텐츠로 인해 화면 확대를 사용하는 사용자는 파일 축소판을 보기 어려울 수 있습니다. 이제 `Escape` 키를 사용하여 옵션을 제거한 후 포커스를 유지할 수 있습니다(CQ-4293554).
+   * 포인터를 옵션 위에 놓으면 선택 및 다운로드와 같은 팁이 나타납니다. 화면 돋보기를 사용하는 사용자는 이러한 팁 때문에 파일 축소판을 볼 수 없습니다. 이제 키를 사용하여 옵션을 제거한 후 포커스를 유지할 수 `Escape` 있습니다. (CQ-4293554).
    * 페이지에 있는 그리드에서 격자 셀을 선택하면 포커스가 화면에 나타나는 작업 막대로 이동합니다(CQ-4282127).
    * 홈 페이지의 모든 솔루션에 대한 링크에 대한 시각적 단서(밑줄 및 V자 아이콘)가 표시되므로 시각적인 사용자는 일반 텍스트와 링크 간 [!DNL Experience Manager] 을 차별화할 수 있습니다(CQ-4282072).
 
