@@ -17,7 +17,7 @@ ht-degree: 5%
 ---
 
 
-# XDP 기반의 적응형 양식의 XFA 지원{#xfa-support-in-xdp-based-adaptive-forms}
+# XDP 기반 응용 양식의 XFA 지원{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## 소개 {#introduction}
 
@@ -31,7 +31,7 @@ XDP 파일을 기반으로 응용 양식이 만들어지면 속성, 이벤트 �
 
 이 문서에서는 적응형 양식에서 지원되는 XFA 이벤트, 속성 및 유효성 검사를 나열하고 이를 응용 양식에서 무시하는 방법에 대해 설명합니다.
 
-## 응용 양식의 지원되는 XFA 요소 및 해당 매핑 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
+## 응용 양식 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}에서 지원되는 XFA 요소 및 해당 매핑
 
 ### 필드 {#fields}
 
@@ -125,23 +125,23 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
    <td><p>적응형 양식의 활성화된 속성에 매핑됩니다. 액세스 표현식을 사용하여 무시할 수 있습니다.</p> </td>
   </tr>
   <tr>
-   <td><p>접근성: 역할 </p> </td>
+   <td><p>접근성:역할 </p> </td>
    <td><p>적응형 양식의 역할 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>접근성: speakPriority </p> </td>
+   <td><p>접근성:speakPriority </p> </td>
    <td><p>적응형 양식의 speakPriority 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>접근성: speakText</p> </td>
+   <td><p>접근성:speakText</p> </td>
    <td><p>적응형 양식의 사용자 지정 액세스 가능성 텍스트에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>접근성: toolTip </p> </td>
+   <td><p>접근성:toolTip </p> </td>
    <td><p>응용 양식의 짧은 설명 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>캡션<em> (모든 필드 유형)</em></p> </td>
+   <td><p>caption<em> (모든 필드 유형)</em></p> </td>
    <td><p>적응형 양식의 제목 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
@@ -149,11 +149,11 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
    <td><p>적응형 양식의 표시 패턴에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em> (모든 필드 유형)</em></p> </td>
+   <td><p>rawValue<em>(모든 필드 유형)</em></p> </td>
    <td><p>응용 양식의 값 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>항목<em> (목록 상자, 확인란)</em></p> </td>
+   <td><p>items<em> (목록 상자, 확인란)</em></p> </td>
    <td><p>적응형 양식의 옵션 속성에 매핑됩니다. 옵션 표현식을 사용하여 무시할 수 있습니다.</p> </td>
   </tr>
   <tr>
@@ -161,11 +161,11 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
    <td><p>응용 양식의 최대 문자 허용 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>여러 줄<em> (텍스트 필드)</em></p> </td>
+   <td><p>multiline<em> (텍스트 필드)</em></p> </td>
    <td><p>응용 양식의 여러 줄 허용 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>frcDigit<em> (숫자 필드, 십진수 필드)</em></p> </td>
+   <td><p>fracDigit<em> (숫자 필드, 십진수 필드)</em></p> </td>
    <td><p>적응형 양식의 프레임 숫자 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
@@ -174,7 +174,7 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
   </tr>
   <tr>
    <td><p>multiSelect<em> (목록 상자)</em></p> </td>
-   <td><p>Allows multiple selection property in adaptive form.</p> </td>
+   <td><p>응용 형식으로 여러 선택 속성 허용에 매핑됩니다.</p> </td>
   </tr>
  </tbody>
 </table>
