@@ -11,13 +11,13 @@ ht-degree: 2%
 ---
 
 
-# Use demo package for Asset Insights {#using-demo-package-for-asset-insights}
+# 자산 인사이트 {#using-demo-package-for-asset-insights}에 데모 패키지 사용
 
 데모 패키지를 사용하면 Adobe 자산 인사이트를 통해 샘플 웹 페이지에서 데이터를 캡처하고 인사이트를 생성할 수 있습니다.
 
-## [!DNL Use Experience Manager Assets] 샘플 웹 페이지를 통한 인사이트  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] 샘플 웹 페이지를 통한 인사이트   {#using-aem-assets-insights-with-sample-web-page}
 
-1. 자산 인사이트 구성의 지침에 따라 자산 [인사이트를 구성합니다](configure-asset-insights.md).
+1. [자산 인사이트 구성](configure-asset-insights.md)의 지침에 따라 자산 인사이트를 구성합니다.
 1. 아래에서 샘플 에셋 패키지를 다운로드하고 CRXDE 패키지 관리자에서 패키지를 설치합니다.
 
    [파일 가져오기](assets/insightsdemo.zip)
@@ -34,4 +34,4 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >외부 웹 페이지는 [!DNL Experience Manager] 그 자체일 수 있습니다.
+   >외부 웹 페이지는 [!DNL Experience Manager] 자체에 있을 수 있습니다.
