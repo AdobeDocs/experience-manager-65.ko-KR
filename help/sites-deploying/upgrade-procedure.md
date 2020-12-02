@@ -34,9 +34,9 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다
 >The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
 -->
 
-## TarMK Author Tier {#tarmk-author-tier}
+## TarMK 작성자 계층 {#tarmk-author-tier}
 
-### 토폴로지 시작 {#starting-topology}
+### 토폴로지 시작 중 {#starting-topology}
 
 이 섹션에 대해 가정된 토폴로지는 Cold Standby를 사용하여 TarMK에서 실행되는 작성자 서버로 구성됩니다. 복제는 작성자 서버에서 TarMK 게시 팜으로 수행됩니다. 여기에 설명된 것은 아니지만 오프로드를 사용하는 배포에 이 접근 방법을 활용할 수도 있습니다. 작성 인스턴스에서 복제 에이전트를 비활성화한 후 다시 활성화하기 전에 새 버전에서 오프로드 인스턴스를 업그레이드하거나 다시 빌드해야 합니다.
 
@@ -52,14 +52,14 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다
 
 1. 작성자의 복제 에이전트 비활성화
 
-1. 업그레이드 [전 유지 관리 작업을 실행합니다](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
+1. [사전 업그레이드 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 실행합니다.
 
 ### 업그레이드 실행 {#upgrade-execution}
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
-1. 업그레이드 [실행](/help/sites-deploying/in-place-upgrade.md)
-1. 필요한 *경우 디스패처 모듈 업데이트*
+1. [즉석 업그레이드](/help/sites-deploying/in-place-upgrade.md) 실행
+1. 필요한 경우 디스패처 모듈 *을 업데이트합니다.*
 
 1. QA에서 업그레이드 확인
 
@@ -75,7 +75,7 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다
 
 1. 대기 인스턴스를 시작합니다.
 
-### 실패할 경우(롤백) {#if-unsuccessful-rollback}
+### 실패 시(롤백) {#if-unsuccessful-rollback}
 
 ![롤백](assets/rollback.jpg)
 
@@ -85,7 +85,7 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다
 
 ## MongoMK 작성자 클러스터 {#mongomk-author-cluster}
 
-### 토폴로지 시작 {#starting-topology-1}
+### 토폴로지 시작 중 {#starting-topology-1}
 
 이 섹션에 대해 가정된 토폴로지는 두 개 이상의 MongoMK 데이터베이스가 지원하는 두 개 이상의 AEM 작성자 인스턴스가 있는 MongoMK 작성자 클러스터로 구성됩니다. 모든 작성자 인스턴스는 데이터 저장소를 공유합니다. 이러한 단계는 S3 및 파일 데이터 저장소 모두에 적용됩니다. 복제는 작성자 서버에서 TarMK 게시 팜으로 수행됩니다.
 
@@ -99,18 +99,18 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다
 1. 백업을 위해 데이터 저장소 복제
 1. 하나의 AEM 작성자 인스턴스만 제외하고 모든 AEM 작성자 중지
 1. 복제본 세트, 기본 Mongo 인스턴스에서 MongoDB 노드를 하나만 제외하고 모두 제거
-1. 단일 멤버 복제본 세트를 반영하도록 주 작성자의 `DocumentNodeStoreService.cfg` 파일을 업데이트합니다.
+1. 단일 멤버 복제본 세트를 반영하도록 기본 작성자의 `DocumentNodeStoreService.cfg` 파일을 업데이트합니다.
 1. 기본 작성자가 올바르게 다시 시작되도록 다시 시작합니다.
 1. 기본 작성자의 복제 에이전트 비활성화
-1. 기본 작성자 인스턴스에서 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) 실행
+1. 기본 작성자 인스턴스에서 [사전 업그레이드 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 실행합니다.
 1. 필요한 경우 기본 Mongo 인스턴스의 MongoDB를 WiredTiger와 함께 버전 3.2로 업그레이드하십시오
 
 ### 업그레이드 실행 {#Upgrade-execution-1}
 
 ![mongo-execution](assets/mongo-execution.jpg)
 
-1. 기본 작성자 [에서 업그레이드](/help/sites-deploying/in-place-upgrade.md) 실행
-1. 필요한 *경우 Dispatcher 또는 웹 모듈 업데이트*
+1. 기본 작성자에서 [즉석 업그레이드](/help/sites-deploying/in-place-upgrade.md)를 실행합니다
+1. 필요한 경우 Dispatcher 또는 웹 모듈 *을(를) 업데이트합니다.*
 1. QA에서 업그레이드 확인
 
 ### 성공한 경우 {#if-successful-1}
@@ -121,13 +121,13 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다
 
 1. 클러스터에서 제거된 MongoDB 노드를 다시 빌드합니다.
 
-1. 전체 복제본 세트를 반영하도록 `DocumentNodeStoreService.cfg` 파일 업데이트
+1. 전체 복제본 세트를 반영하도록 `DocumentNodeStoreService.cfg` 파일을 업데이트합니다.
 
 1. 작성자 인스턴스를 한 번에 하나씩 다시 시작합니다.
 
 1. 복제된 데이터 저장소를 제거합니다.
 
-### 실패할 경우(롤백)  {#if-unsuccessful-rollback-2}
+### 실패 시(롤백) {#if-unsuccessful-rollback-2}
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
@@ -145,9 +145,9 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다
 
 1. 업그레이드된 작성자 인스턴스, Mongo 노드 및 데이터 저장소를 정리합니다.
 
-## TarMK Publish Farm {#tarmk-publish-farm}
+## TarMK 게시 팜 {#tarmk-publish-farm}
 
-### TarMK Publish Farm {#tarmk-publish-farm-1}
+### TarMK 게시 팜 {#tarmk-publish-farm-1}
 
 이 섹션에 대해 가정된 토폴로지는 로드 밸런서에 의해 다시 시작되는 Dispatcher에 의해 앞에 있는 두 개의 TarMK 게시 인스턴스로 구성됩니다. 복제는 작성자 서버에서 TarMK 게시 팜으로 수행됩니다.
 
@@ -158,9 +158,9 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
 1. 로드 밸런서에서 게시 2 인스턴스에 대한 트래픽 중지
-1. 게시 2에서 [업그레이드 전 유지](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) 관리 실행
-1. 게시 2 [에서 업그레이드](/help/sites-deploying/in-place-upgrade.md) 실행
-1. 필요한 *경우 Dispatcher 또는 웹 모듈 업데이트*
+1. 게시 2에서 [사전 업그레이드 유지 관리](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) 실행
+1. 게시 2에서 [즉석 업그레이드](/help/sites-deploying/in-place-upgrade.md)를 실행합니다.
+1. 필요한 경우 Dispatcher 또는 웹 모듈 *을(를) 업데이트합니다.*
 1. Dispatcher 캐시 플러시
 1. QA는 Dispatcher를 통해 방화벽 뒤에서 게시 2를 검증합니다.
 1. 종료 게시 2
@@ -175,12 +175,12 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다
 1. 게시 1에 대한 트래픽 중지
 1. 게시 1 인스턴스 중지
 1. 게시 1 인스턴스를 게시 2 복사본으로 바꾸기
-1. 필요한 *경우 Dispatcher 또는 웹 모듈 업데이트*
+1. 필요한 경우 Dispatcher 또는 웹 모듈 *을(를) 업데이트합니다.*
 1. 게시 1에 대한 발송자 캐시 플러시
 1. 게시 1 시작
 1. QA는 Dispatcher를 통해 방화벽 뒤에서 게시 1을 검증합니다.
 
-### 실패할 경우(롤백) {#if-unsuccessful-rollback-1}
+### 실패 시(롤백) {#if-unsuccessful-rollback-1}
 
 ![pub_rollback](assets/pub_rollback.jpg)
 
@@ -197,7 +197,7 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 다
 1. QA는 공개 URL에서 최종 유효성 검사를 수행합니다.
 1. 작성 환경에서 복제 에이전트 사용
 1. 컨텐츠 작성 다시 시작
-1. 업그레이드 [후 확인을 수행합니다](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
+1. [업그레이드 후 검사](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)를 수행합니다.
 
 ![final](assets/final.jpg)
 
