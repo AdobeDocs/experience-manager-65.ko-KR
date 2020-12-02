@@ -85,7 +85,7 @@ ht-degree: 90%
 
    이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
 
-   For example, if the Vanity URL is set to `welcome`to the page identified by the path `/v1.0/startpage`for the website `http://example.com,` then `http://example.com/welcome`would be the vanity URL of `http://example.com/content/v1.0/startpage`
+   예를 들어 별칭 URL이 웹 사이트 `http://example.com,`에 대해 `/v1.0/startpage`경로로 식별되는 페이지로 `welcome`으로 설정된 경우 `http://example.com/welcome`은 `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
 
    >[!CAUTION]
    >
@@ -96,7 +96,7 @@ ht-degree: 90%
    >* 기존 페이지로 설정하면 안 됩니다.
 
 
-   별칭 URL에 대한 액세스를 사용하도록 Dispatcher를 구성해야 합니다. 자세한 [내용은 별칭 URL에](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) 대한 액세스 활성화를 참조하십시오.
+   별칭 URL에 대한 액세스를 사용하도록 Dispatcher를 구성해야 합니다. 자세한 내용은 [별칭 URL에 대한 액세스 활성화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
 
 * **별칭 URL 리디렉션**
 
@@ -130,7 +130,7 @@ ht-degree: 90%
    >
    >예를 들어 `/content/we-retail/spanish` 노드에 대해 `latin-lang`이라는 별칭을 정의하면, 이 페이지는 `/content/we-retail/latin-language`를 통해 액세스할 수 있습니다.
    >
-   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
+   >자세한 내용은 SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md#localized-page-names)에서 지역화된 페이지 이름을 참조하십시오.[
 
 * **&lt;*경로*>에서 상속됨**
 
@@ -154,7 +154,7 @@ ht-degree: 90%
 
    >[!CAUTION]
    >
-   >The **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. If page permissions are configured using deprecated CUG configurations, based on the presence of `cq:cugEnabled` property, a warning message will be shown under **Authentication Requirement** and the option will not be editable, nor will the [Permissions](/help/sites-authoring/editing-page-properties.md#permissions) be editable.
+   >**[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 `granite:AuthenticationRequired` 믹싱이 있는 상태를 기반으로 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성에 따라 경고 메시지가 **인증 요구 사항** 아래에 표시되고 이 옵션은 편집할 수 없으며 [권한](/help/sites-authoring/editing-page-properties.md#permissions)을 편집할 수 없습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
@@ -229,14 +229,14 @@ ht-degree: 90%
    * [유효 권한](/help/sites-administering/user-group-ac-admin.md) 보기
    >[!CAUTION]
    >
-   >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
+   >**Permissions** 탭에서는 `granite:AuthenticationRequired` 믹싱이 있는 상태를 기반으로 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
 
    >[!NOTE]
    >
-   >[권한] 탭에서는 비어 있는 CGU 그룹 생성을 허용하지 않으며, 모든 사용자에 대한 액세스를 거부하는 간단한 방법으로 유용할 수 있습니다. 이를 위해서는 CRX 탐색기를 사용해야 합니다. See the document [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
+   >[권한] 탭에서는 비어 있는 CGU 그룹 생성을 허용하지 않으며, 모든 사용자에 대한 액세스를 거부하는 간단한 방법으로 유용할 수 있습니다. 이를 위해서는 CRX 탐색기를 사용해야 합니다. 자세한 내용은 [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md) 문서를 참조하십시오.
 
 ### 블루프린트 {#blueprint}
 
@@ -244,13 +244,13 @@ ht-degree: 90%
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 [블루프린트] 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### Live Copy {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Livecopy**
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 Live Copy 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### 사이트 구조 {#site-structure}
+### 사이트 구조  {#site-structure}
 
 * **등록 페이지**, **오프라인 페이지** 등과 같이 사이트 전체 기능을 제공하는 페이지에 대한 링크를 제공합니다.
 
@@ -298,7 +298,7 @@ ht-degree: 90%
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. 다음 단추들은 도구 모음의 오른쪽에서도 사용할 수 있습니다.
+1. **속성 열기**&#x200B;를 선택하면 해당 탭별로 정렬된 속성을 편집할 수 있는 대화 상자가 열립니다. 다음 단추들은 도구 모음의 오른쪽에서도 사용할 수 있습니다.
 
    * **취소**
    * **저장 및 닫기**
