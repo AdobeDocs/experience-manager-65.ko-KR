@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 0%
 
 ---
 
 
-# 끝점 추가, 활성화, 수정 또는 제거 {#adding-enabling-modifying-or-removing-endpoints}
+# 끝점 {#adding-enabling-modifying-or-removing-endpoints}을(를) 추가, 활성화, 수정 또는 제거하는 중
 
-## 서비스에 끝점 추가 {#add-an-endpoint-to-a-service}
+## 서비스 {#add-an-endpoint-to-a-service}에 끝점 추가
 
 끝점은 서비스에만 추가할 수 있습니다. 끝점은 단독으로 존재할 수 없습니다.서비스와 연결되어 있어야 합니다.
 
@@ -40,16 +43,16 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. 추가를 클릭합니다.
 
-## 끝점 활성화 또는 비활성화 {#enable-or-disable-an-endpoint}
+## 끝점 {#enable-or-disable-an-endpoint} 활성화 또는 비활성화
 
-기본적으로 새 끝점은 자동으로 활성화됩니다. 그러나 종단점을 비활성화한 경우 종단점이 작동되도록 설정해야 합니다.
+기본적으로 새 끝점은 자동으로 활성화됩니다. 그러나 종단점을 비활성화한 경우 종단점이 작동하도록 설정해야 합니다.
 
-서비스에 문제가 발생하면 연결된 끝점을 비활성화하여 문제를 더 잘 해결하십시오. 정기적인 시스템 유지 관리 또는 서비스 업그레이드 시 끝점을 비활성화할 수도 있습니다.
+서비스에 문제가 발생하면 연결된 끝점을 비활성화하여 문제를 더 잘 해결하십시오. 정기적인 시스템 유지 관리 동안 또는 서비스를 업그레이드할 때 끝점을 비활성화할 수도 있습니다.
 
 1. 관리 콘솔에서 서비스 > 응용 프로그램 및 서비스 > 끝점 관리를 클릭합니다.
-1. 끝점 관리 페이지에서 끝점을 활성화하거나 비활성화하려면 확인란을 선택하고 활성화 또는 비활성화를 클릭합니다.
+1. 끝점 관리 페이지에서 끝점을 활성화 또는 비활성화하려면 확인란을 선택하고 활성화 또는 비활성화를 클릭합니다.
 
-## 끝점 수정 {#modify-an-endpoint}
+## 끝점 {#modify-an-endpoint} 수정
 
 >[!NOTE]
 >
@@ -65,9 +68,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. 변경 내용을 저장하려면 업데이트를 클릭합니다.
 
-서비스를 선택한 다음 끝점 탭을 클릭하여 서비스 관리 페이지에서 이 작업을 수행할 수도 있습니다.
+서비스를 선택한 다음 엔드포인트 탭을 클릭하여 서비스 관리 페이지에서 이 작업을 수행할 수도 있습니다.
 
-## 끝점 제거 {#remove-an-endpoint}
+## 끝점 {#remove-an-endpoint} 제거
 
 1. 관리 콘솔에서 서비스 > 응용 프로그램 및 서비스 > 끝점 관리를 클릭합니다.
 1. 끝점 관리 페이지에서 제거할 끝점의 확인란을 선택하고 제거를 클릭합니다. 끝점이 더 이상 표시되지 않습니다.
