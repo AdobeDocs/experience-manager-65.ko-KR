@@ -12,6 +12,9 @@ discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 95%
 
 ---
 
@@ -35,12 +38,12 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Click or tap **Create** and then **Create** **Brand**.
+1. **만들기**&#x200B;를 클릭하거나 누른 다음 **만들기** **브랜드**&#x200B;를 누릅니다.
 1. 브랜드 템플릿을 선택하고 **다음**&#x200B;을 클릭하거나 탭합니다.
 1. 오퍼 콘솔과 활동 콘솔에 표시할 브랜드의 제목을 입력합니다. 원할 경우, 브랜드와 연결할 태그를 하나 이상 입력하거나 선택합니다.
 1. **만들기**&#x200B;를 클릭하거나 탭합니다.
 
-## 오퍼 라이브러리에 폴더 추가 {#add-a-folder-to-an-offer-library}
+## 오퍼 라이브러리에 폴더 추가  {#add-a-folder-to-an-offer-library}
 
 브랜드의 오퍼 라이브러리에 오퍼를 체계적으로 구성하고 저장할 폴더를 추가하십시오. 브랜드나 다른 폴더 아래에 폴더를 만들 수 있습니다.
 
@@ -49,14 +52,14 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
    ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
-1. Select **Folder** and click **Next**.
+1. **폴더**&#x200B;를 선택하고 **다음**&#x200B;을 클릭합니다.
 1. 오퍼 라이브러리에 표시할 폴더의 제목을 입력하고 태그를 입력하거나 선택합니다.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
 1. **만들기**&#x200B;를 클릭하거나 탭합니다.
 
-## 오퍼 라이브러리에 오퍼 추가 {#add-an-offer-to-an-offer-library}
+## 오퍼 라이브러리에 오퍼 추가  {#add-an-offer-to-an-offer-library}
 
 브랜드의 경험에 추가할 수 있도록 브랜드의 오퍼 라이브러리에 오퍼를 추가하십시오. 오퍼를 추가할 때 제목을 입력합니다. 더 잘 검색할 수 있도록 오퍼를 하나 이상의 태그와 연결할 수도 있습니다.
 
@@ -69,7 +72,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
 1. **오퍼 페이지** 템플릿을 선택한 다음, **다음**&#x200B;을 클릭하거나 탭합니다.
 1. 오퍼에 사용할 제목을 입력하고 원할 경우 오퍼와 연결할 태그를 하나 이상 선택하거나 입력한 다음, **만들기**&#x200B;를 클릭하거나 탭합니다.
-1. In the confirmation dialog box, to open the offer for editing click or tap **Open Page**.
+1. 확인 대화 상자에서 편집용 오퍼를 열려면 **페이지 열기**&#x200B;를 클릭하거나 탭합니다.
 
 ## 오퍼 편집 {#editing-an-offer}
 
@@ -80,7 +83,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 1. 오퍼 콘솔에서 오퍼 옆에 있는 아이콘을 탭하거나 클릭하고 **편집**&#x200B;을 클릭하거나 탭합니다.
 1. 오퍼에 구성 요소를 추가하고 구성 요소 컨텐츠를 평소대로 편집합니다.
 
-## 오퍼 삭제 {#deleting-an-offer}
+## 오퍼 삭제  {#deleting-an-offer}
 
 더 이상 필요하지 않은 오퍼는 삭제하십시오. 경험에 사용된 오퍼에 대해 삭제를 시도하면 삭제할 것인지 확인하는 메시지가 표시됩니다. 확인하면 오퍼가 삭제되고 경험에서도 제거됩니다.
 
@@ -96,7 +99,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
    * 오퍼를 삭제하고 경험에서도 제거하려면 **강제 삭제**&#x200B;를 클릭하거나 탭하십시오.
    * 오퍼를 유지하려면 **취소**&#x200B;를 클릭하거나 탭하십시오.
 
-## 오퍼 검색 {#searching-for-offers}
+## 오퍼 검색  {#searching-for-offers}
 
 제목과 일치하는 키워드를 사용하여 임의 브랜드의 오퍼를 검색하십시오.
 
