@@ -12,6 +12,9 @@ discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 87%
 
 ---
 
@@ -43,11 +46,13 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 >
 >* [와일드카드](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [부울 연산자](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+
    >
    >
 * [정규 표현식](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [필드 그룹화](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [증폭](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+
 >
 
 
@@ -76,7 +81,8 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    * 바꿀 단어를 정의합니다.
    * 대/소문자를 구분하여 검색할지를 지정합니다.
    * 단어 단위로만 찾을지 아니면 부분 문자열도 찾을지를 지정합니다.
-   Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
+
+   **미리 보기**&#x200B;를 클릭하면 용어가 검색된 위치가 나열됩니다.바꿀 특정 인스턴스를 선택하거나 취소할 수 있습니다.
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -89,7 +95,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 * `jcr:text`
 * `text`
 
-The scope can be changed using the Apache Felix Web Management Console (for example, at `https://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` and configure the scope as required.
+Apache Felix 웹 관리 콘솔(예: `https://localhost:4502/system/console/configMgr`)을 사용하여 범위를 변경할 수 있습니다. `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)`을 선택하고 필요에 따라 범위를 구성합니다.
 
 >[!NOTE]
 >
