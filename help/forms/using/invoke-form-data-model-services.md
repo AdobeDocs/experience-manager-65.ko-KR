@@ -16,23 +16,23 @@ ht-degree: 0%
 ---
 
 
-# 적응형 양식에서 양식 데이터 모델 서비스를 호출하는 API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# 적응형 양식 {#api-to-invoke-form-data-model-service-from-adaptive-forms}에서 양식 데이터 모델 서비스를 호출하는 API
 
 ## 개요 {#overview}
 
-양식 작성자는 AEM Forms을 사용하여 적응형 양식 필드 내에서 양식 데이터 모델에 구성된 서비스를 호출하여 양식 채우기 환경을 더 단순화하고 향상시킬 수 있습니다. 데이터 모델 서비스를 호출하려면 시각적 편집기에서 규칙을 만들거나 `guidelib.dataIntegrationUtils.executeOperation` 규칙 편집기의 코드 편집기에서 [API를 사용하여 JavaScript를 지정할 수 있습니다](/help/forms/using/rule-editor.md).
+양식 작성자는 적응형 양식 필드 내에서 양식 데이터 모델에 구성된 서비스를 호출하여 양식 작성 환경을 더욱 간소화하고 향상시킬 수 있습니다. 데이터 모델 서비스를 호출하려면 시각적인 편집기에서 규칙을 만들거나 [규칙 편집기](/help/forms/using/rule-editor.md)의 코드 편집기에서 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 JavaScript를 지정할 수 있습니다.
 
-이 문서에서는 API를 사용하여 서비스를 호출하는 `guidelib.dataIntegrationUtils.executeOperation` JavaScript를 작성하는 데 중점을 둡니다.
+이 문서에서는 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 서비스를 호출하는 JavaScript를 작성하는 데 중점을 둡니다.
 
-## API 사용 {#using-the-api}
+## API {#using-the-api} 사용
 
-API는 응용 양식 필드 내에서 서비스를 호출합니다. `guidelib.dataIntegrationUtils.executeOperation` API 구문은 다음과 같습니다.
+`guidelib.dataIntegrationUtils.executeOperation` API는 적응형 양식 필드 내에서 서비스를 호출합니다. API 구문은 다음과 같습니다.
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-API의 구조는 `guidelib.dataIntegrationUtils.executeOperation` 서비스 작업에 대한 세부 사항을 지정합니다. 구조의 구문은 다음과 같습니다.
+`guidelib.dataIntegrationUtils.executeOperation` API의 구조는 서비스 작업에 대한 세부 사항을 지정합니다. 구조의 구문은 다음과 같습니다.
 
 ```javascript
 var operationInfo = {
@@ -76,7 +76,7 @@ API 구조는 서비스 작업에 대해 다음과 같은 세부 사항을 지�
   </tr>
   <tr>
    <td><code>Outputs</code></td>
-   <td>하나 이상의 양식 객체를 서비스 작업에서 출력 값으로 매핑하여 양식 필드 채우기<br /> </td>
+   <td>하나 이상의 양식 개체를 서비스 작업의 출력 값에 매핑하여 양식 필드 채우기<br /> </td>
   </tr>
   <tr>
    <td><code>success</code></td>
@@ -89,11 +89,11 @@ API 구조는 서비스 작업에 대해 다음과 같은 세부 사항을 지�
  </tbody>
 </table>
 
-## 서비스를 호출하는 샘플 스크립트 {#sample-script-to-invoke-a-service}
+## 서비스 {#sample-script-to-invoke-a-service}을 호출하는 샘플 스크립트
 
-다음 샘플 스크립트에서는 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 양식 데이터 모델에 구성된 `getAccountById` 서비스 작업을 `employeeAccount` 호출합니다.
+다음 샘플 스크립트에서는 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 `employeeAccount` 양식 데이터 모델에 구성된 `getAccountById` 서비스 작업을 호출합니다.
 
-공정 `getAccountById` 은 인수 입력으로 `employeeID` 양식 필드의 값을 `empId` 가져와서 해당 사원의 사원명, 계정 번호 및 계정 잔액을 반환합니다. 출력 값은 지정된 양식 필드에 채워집니다. 예를 들어, 인수 `name` 의 값은 양식 요소 `fullName` 에서 채워지고 양식 요소의 `accountNumber` 인수에 대한 값이 `account` 채워집니다.
+`getAccountById` 작업은 `employeeID` 양식 필드의 값을 `empId` 인수에 대한 입력으로 가져와서 해당 직원의 직원 이름, 계정 번호 및 계정 잔액을 반환합니다. 출력 값은 지정된 양식 필드에 채워집니다. 예를 들어 `name` 인수의 값은 `fullName` 양식 요소에 채워지고 `account` 양식 요소의 `accountNumber` 인수에 대한 값이 채워집니다.
 
 ```javascript
 var operationInfo = {
@@ -111,25 +111,25 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
 
-## 콜백 함수에서 API 사용 {#using-the-api-callback}
+## 콜백 함수 {#using-the-api-callback}에서 API 사용
 
-콜백 함수와 함께 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 양식 데이터 모델 서비스를 호출할 수도 있습니다. API 구문은 다음과 같습니다.
+콜백 함수가 있는 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 양식 데이터 모델 서비스를 호출할 수도 있습니다. API 구문은 다음과 같습니다.
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
-콜백 함수에는 `success` 및 `failure` 콜백 함수가 있을 수 있습니다.
+호출 백 함수에는 `success` 및 `failure` 콜백 함수가 있을 수 있습니다.
 
 ### 성공 및 실패 콜백 함수가 있는 샘플 스크립트 {#callback-function-success-failure}
 
-다음 샘플 스크립트에서는 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 양식 데이터 모델에 구성된 `GETOrder` 서비스 작업을 `employeeOrder` 호출합니다.
+다음 샘플 스크립트에서는 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 `employeeOrder` 양식 데이터 모델에 구성된 `GETOrder` 서비스 작업을 호출합니다.
 
-이 `GETOrder` 작업은 `Order ID` 양식 필드의 값을 인수용 입력으로 가져와서 콜백 함수에서 주문 수량 값을 `orderId` `success` 반환합니다.  콜백 `success` 함수에서 주문 수량을 반환하지 않으면 `failure` 콜백 함수에 `Error occured` 메시지가 표시됩니다.
+`GETOrder` 작업은 `Order ID` 양식 필드의 값을 `orderId` 인수에 대한 입력으로 가져와서 `success` 콜백 함수에 주문 수량 값을 반환합니다.  `success` 콜백 함수가 주문 수량을 반환하지 않으면 `failure` 콜백 함수에는 `Error occured` 메시지가 표시됩니다.
 
 >[!NOTE]
 >
-> 콜백 함수를 사용하는 경우 `success` 출력 값이 지정된 양식 필드에 채워지지 않습니다.
+> `success` 콜백 함수를 사용하는 경우 출력 값이 지정된 양식 필드에 채워지지 않습니다.
 
 ```javascript
 var operationInfo = {
