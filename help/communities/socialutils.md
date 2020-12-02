@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # SocialUtils 리팩토링 {#socialutils-refactoring}
 
-## SocialUtils 패키지 가치 하락 {#socialutils-package-deprecated}
+## SocialUtils 패키지 사용 안 함 {#socialutils-package-deprecated}
 
-패키지는 AEM 6.1에서 더 이상 사용되지 `com.adobe.cq.social.ugcbase.SocialUtils` 않습니다.
+`com.adobe.cq.social.ugcbase.SocialUtils` 패키지는 AEM 6.1에서 더 이상 사용되지 않습니다.
 
-다음 표에는 메서드 대신 사용할 메서드가 `SocialUtils` 나와 있습니다.
+다음 표에는 `SocialUtils` 메서드 대신 사용할 메서드가 나와 있습니다.
 
-## SocialResourceUtilities 패키지  {#socialresourceutilities-package}
+## SocialResourceUtilities 패키지 {#socialresourceutilities-package}
 
 | com.adobe.cq.sosocial.srp.utilities.api.SocialResourceUtilities의 메서드 |
 |---|
@@ -44,13 +44,13 @@ ht-degree: 0%
 | 문자열 UGCoResourcePath(문자열 ugcPath) | 메서드 서명이 변경되었습니다. |
 | 문자열 UGCoResourcePath(문자열 ugcPath, ResourceResolver) | 새 항목 |
 
-| utilities.resource.api.SocialResourceUtilities의 `com.adobe.cq.social.`메서드 |
+| `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities의 메서드 |
 |---|
 | SocialResourceProvider getSocialResourceProvider(리소스) | SocialResourceProvider getConfiguredProvider(리소스 리소스) 대체 |
 
 ## SCFUtiilities 패키지 {#scfutilities-package}
 
-| utilities.scf.api. `com.adobe.cq.social.`SCFUtilites의 메서드 |
+| `com.adobe.cq.social.`utilities.scf.api.SCFUtilites의 메서드 |
 |---|
 | 문자열 getAvatar(UserProperties userProperties) |
 | String getAvatar(UserProperties userProperties, int size) |
@@ -60,7 +60,7 @@ ht-degree: 0%
 | 문자열 getSocialProfileURL(문자열 사용자 이름, 리소스 확인자, 페이지 페이지) |
 | UserProperties getUserProperties(ResourceResolver, String userId) |
 
-## For Internal Use Only {#for-internal-use-only}
+## 내부용으로만 {#for-internal-use-only}
 
 | boolean canAddNode(세션, 문자열 경로) |
 |---|
@@ -79,7 +79,7 @@ ht-degree: 0%
 | boolean mayPost(ResourceResolver, Resource resource resource) |
 | 문자열 prepareUserGeneratedContent(ResourceResolver, String path) |
 
-## 메서드를 더 이상 사용할 수 없음 {#methods-no-longer-available}
+## 더 이상 사용할 수 없는 메서드 {#methods-no-longer-available}
 
 | 노드 createNode(ResourceResolver, String path, String nodeType) |
 |---|
