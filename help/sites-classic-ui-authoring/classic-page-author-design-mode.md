@@ -12,6 +12,9 @@ discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 93%
 
 ---
 
@@ -47,7 +50,7 @@ AEM 인스턴스가 바로 설치되면 사이드 킥에서 즉시 구성 요소
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Click **Edit** on the Paragraph system (**Design of par**).
+1. 단락 시스템에서 **편집**(**단락 디자인**)을 클릭합니다.
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -71,7 +74,7 @@ AEM 인스턴스가 바로 설치되면 사이드 킥에서 즉시 구성 요소
 
 1. 구성 요소의 디자인을 구성할 수 있습니다.
 
-   For example, if you click **Edit** on the Image component (**Design of image**) you can configure the component specific parameters:
+   예를 들어 이미지 구성 요소(**이미지 디자인**)에서 **편집**&#x200B;을 클릭하면 구성 요소별 매개 변수를 구성할 수 있습니다.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
