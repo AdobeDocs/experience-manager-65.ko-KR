@@ -27,8 +27,8 @@ ht-degree: 5%
 
 이 문서에서는 다음 사항에 대해 설명합니다.
 
-* 페이지 `Comments` 에 추가.
-* 구성 요소의 구성 `Comments` 설정.
+* 페이지에 `Comments`을(를) 추가하는 중입니다.
+* `Comments` 구성 요소에 대한 구성 설정.
 
 >[!NOTE]
 >
@@ -42,17 +42,17 @@ ht-degree: 5%
 
 사용자가 주석을 달 수 있는 기능과 관련된 위치 또는 페이지 하단에 있는 위치와 같이 페이지에 드래그합니다.
 
-필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](/help/communities/basics.md).
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 방문하십시오.
 
-필요한 [클라이언트측 라이브러리가](/help/communities/essentials-comments.md#essentials-for-client-side) 포함된 경우 구성 요소가 표시되는 `Comments` 방식입니다.
+[필수 클라이언트측 라이브러리](/help/communities/essentials-comments.md#essentials-for-client-side)가 포함된 경우 이 방법으로 `Comments` 구성 요소가 표시됩니다.
 
 ![comments-component](assets/comments-component.png)
 
 >[!NOTE]
 >
->한 페이지에 하나의 `Comments` 구성 요소만 있을 수 있습니다. 블로그, 일정, 포럼, QnA 및 검토와 같은 여러 커뮤니티 기능에는 이미 댓글이 포함되어 있습니다.
+>페이지에 하나의 `Comments` 구성 요소만 있을 수 있습니다. 블로그, 일정, 포럼, QnA 및 검토와 같은 여러 커뮤니티 기능에는 이미 댓글이 포함되어 있습니다.
 
-### 주석 구성 {#configuring-comments}
+### 댓글 구성 {#configuring-comments}
 
 액세스할 배치된 `Comments` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
@@ -62,7 +62,7 @@ ht-degree: 5%
 
 #### 댓글 탭 {#comments-tab}
 
-댓글 **탭** 아래에서 방문자가 댓글을 입력하는 방법을 지정합니다.
+**댓글** 탭에서 방문자가 댓글을 입력하는 방법을 지정합니다.
 
 * **답글 허용**
 
@@ -106,7 +106,7 @@ ht-degree: 5%
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
-사용자 중재 **탭** 아래에서 게시된 댓글이 관리되는 방식을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+**사용자 중재** 탭에서 게시된 댓글이 관리되는 방식을 지정합니다. 자세한 내용은 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
 
 * **사전 관리**
 
@@ -142,45 +142,45 @@ ht-degree: 5%
 
 * **플래그 지정 제한**
 
-   댓글이 공개 보기에서 숨겨지기 전에 플래그가 달린 횟수를 입력합니다. 이 숫자는 중재 임계값보다 **크거나 같아야 합니다**. 기본값은 5입니다.
+   댓글이 공개 보기에서 숨겨지기 전에 플래그가 달린 횟수를 입력합니다. 이 숫자는 **중재 임계값**&#x200B;보다 크거나 같아야 합니다. 기본값은 5입니다.
 
 #### 정렬 설정 탭 {#sort-settings-tab}
 
-정렬 설정 **탭** 아래에서, 표시할 때 게시된 댓글이 정렬되는 방식을 지정합니다.
+**정렬 설정** 탭에서 게시된 댓글이 표시될 때 정렬되는 방법을 지정합니다.
 
 * **정렬 필드**
 
-   아래로 끌어 하나 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`또는 `Most Liked`.
+   아래로 당기면 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` 또는 `Most Liked` 중 하나를 선택합니다.
 
 * **정렬 순서**
 
-   또는 중 하나를 선택하려면 아래로 `Ascending` 당기십시오 `Descending`.
+   아래로 당기면 `Ascending` 또는 `Descending` 중 하나를 선택합니다.
 
-### 사용자 지정 댓글 유형으로 변경 {#changing-to-a-custom-comment-type}
+### 사용자 지정 댓글 유형 {#changing-to-a-custom-comment-type}으로 변경
 
 주석 리소스 유형을 변경하면 댓글 시스템에서 더 이상 기본값을 사용하여 주석 인스턴스를 생성하지 않고 개발자가 사용자 정의(확장)한 주석을 생성합니다.
 
-사용자 지정 리소스 유형이 알려지면 [디자인 모드를](/help/sites-authoring/default-components-designmode.md) `Comments` 입력하고 배치된 구성 요소를 두 번 클릭하여 추가 탭이 있는 대화 상자를 엽니다.
+사용자 지정 리소스 유형이 알려지면 [디자인 모드](/help/sites-authoring/default-components-designmode.md)를 입력하고 배치된 `Comments` 구성 요소를 두 번 클릭하여 추가 탭이 있는 대화 상자를 엽니다.
 
-리소스 **유형** 탭에서 구성 요소의 새 인스턴스에 대한 사용자 지정 resourceType을 `Comments or Voting` 지정합니다.
+**리소스 유형** 탭에서 `Comments or Voting` 구성 요소의 새 인스턴스에 대한 사용자 지정 resourceType을 지정합니다.
 
 ![resource-type](assets/resource-type.png)
 
 * **댓글 리소스 유형**
 
-   /apps의 확장 구성 요소(단일 주석)의 resourceType으로 `comment` 이동합니다. 예, `/apps/social/commons/components/hbs/comments/comment`
+   /apps의 확장 `comment` 구성 요소(단일 주석)의 resourceType으로 이동합니다. 예, `/apps/social/commons/components/hbs/comments/comment`
 
    이 리소스는 방문자가 댓글을 게시할 때 생성된 UGC의 resourceType을 식별합니다.
 
 * **투표 리소스 유형**
 
-   /apps의 확장 구성 `voting` 요소의 resourceType으로 이동합니다. 예, `/apps/social/components/hbs/voting`
+   /apps에서 확장 `voting` 구성 요소의 resourceType으로 이동합니다. 예, `/apps/social/components/hbs/voting`
 
    이 리소스는 방문자가 투표를 게시할 때 생성된 UGC의 리소스 유형을 식별합니다.
 
 * **주석 시스템 리소스 유형**
 
-   /apps에서 확장 `comments`구성 요소(댓글 시스템)의 resourceType으로 이동합니다. 페이지 템플릿에 리소스(주석 노드)로 페이지에 추가되지 않고 기본 스크립트에 주석 시스템이 [동적으로](/help/communities/scf.md#add-or-include-a-communities-component) 포함되지 않는 한 비워 둡니다. 자세한 내용은 [{{include}} 헬퍼에 대한 정보를 참조하십시오](/help/communities/handlebars-helpers.md#include).
+   /apps에서 확장 `comments`구성 요소(주석 시스템)의 resourceType으로 이동합니다. 페이지 템플릿 [이(가) 리소스(주석 노드)로 페이지에 추가되지 않고 기본 스크립트에 있는 댓글 시스템을 동적으로 포함하지 않는 한 비워 둡니다. ](/help/communities/scf.md#add-or-include-a-communities-component) [{{include}} helper](/help/communities/handlebars-helpers.md#include)에 대한 자세한 내용을 참조하십시오.
 
 ### 사이트 방문자 경험 {#site-visitor-experience}
 
@@ -203,8 +203,8 @@ ht-degree: 5%
 
 ### 추가 정보 {#additional-information}
 
-개발자를 위한 주석 필수 [사항](/help/communities/essentials-comments.md) 페이지에는 자세한 정보가 나와 있습니다.
+개발자를 위한 [Comments Essentials](/help/communities/essentials-comments.md) 페이지에 자세한 정보가 있을 수 있습니다.
 
-게시된 댓글의 중재를 보려면 사용자 생성 [컨텐트 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+게시된 댓글의 중재를 보려면 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
 
-게시된 댓글의 번역에 대해서는 사용자 생성 컨텐츠 [번역을 참조하십시오](/help/communities/translate-ugc.md).
+게시된 댓글의 번역에 대해서는 [사용자 생성 콘텐츠 번역](/help/communities/translate-ugc.md)을 참조하십시오.
