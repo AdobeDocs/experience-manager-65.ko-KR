@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 99%
 
 ---
 
@@ -49,11 +52,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 * 웹 사이트 콘솔의 **상태** 열은 페이지가 언제 워크플로우에 있는지를 나타냅니다.
 
-   ![워크플로 상태-1](assets/workflowstatus-1.png)
+   ![workflstatus-1](assets/workflowstatus-1.png)
 
 * 사용자나 사용자가 속한 그룹이 워크플로우의 일부인 작업 항목을 지정받으면 이 작업 항목이 사용자의 AEM 워크플로우 받은 편지함에 표시됩니다.
 
-   ![워크플로우받은 편지함](assets/workflowinbox.png)
+   ![워크플로 받은 편지함](assets/workflowinbox.png)
 
 ### 참가자 단계 완료 {#completing-a-participant-step}
 
@@ -68,7 +71,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. **확인**&#x200B;을 클릭하여 작업을 확인합니다.
 
-### 참가자 단계 위임 {#delegating-a-participant-step}
+### 참가자 단계 위임  {#delegating-a-participant-step}
 
 다음 절차를 사용하여 작업 항목을 위임하십시오.
 
@@ -79,7 +82,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. **확인**&#x200B;을 클릭하여 작업을 확인합니다.
 
-### 참가자 단계에서 뒤로 이동 수행 {#performing-step-back-on-a-participant-step}
+### 참가자 단계에서 뒤로 이동 수행  {#performing-step-back-on-a-participant-step}
 
 다음 절차를 사용하여 뒤 단계로 이동하십시오.
 
