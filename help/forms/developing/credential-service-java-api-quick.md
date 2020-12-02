@@ -29,15 +29,15 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 FormsServer를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 FormsServer를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
 >[!NOTE]
 >
 >웹 서비스를 사용하여 자격 증명 서비스 작업을 수행할 수 없습니다.
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 자격 증명 가져오기 {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-importing-credentials-using-the-java-api}를 사용하여 자격 증명 가져오기
 
-다음 코드 예제에서는 cred.p12 *라는 파일을 기반으로 자격 증명을 가져옵니다*. 자격 증명을 가져오는 데 사용되는 별칭 값입니다 `Secure`. (Trust [Manager API를 사용하여 자격 증명 가져오기를 참조하십시오](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+다음 코드 예제에서는 *cred.p12* 파일을 기반으로 자격 증명을 가져옵니다. 자격 증명을 가져오는 데 사용되는 별칭 값은 `Secure`입니다. (Trust Manager API[를 사용하여 자격 증명 가져오기를 참조하십시오.)](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
 ```java
  /*
@@ -136,9 +136,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 자격 증명 삭제 {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}를 사용하여 자격 증명 삭제
 
-다음 코드 예제에서는 별칭 값 *보안을 기반으로 자격 증명을 삭제합니다*. (Trust [Manager API를 사용하여 자격 증명 삭제를 참조하십시오](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+다음 코드 예제에서는 별칭 값 *secure*&#x200B;를 기반으로 하는 자격 증명을 삭제합니다. (Trust Manager API[를 사용하여 자격 증명 삭제를 참조하십시오.)](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
 ```java
  /*
