@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
 
 # 시스템 정보 서비스 API {#system-information-service-apis}
 
-시스템 정보 서비스는 정보를 검색할 REST API 세트를 제공합니다. 다음 표에서는 API에 대한 자세한 정보를 제공합니다.
+시스템 정보 서비스는 정보를 검색할 수 있는 REST API 세트를 제공합니다. 다음 표에서는 API에 대한 자세한 정보를 제공합니다.
 
 <table>
  <thead>
@@ -31,7 +34,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties'</p></td>
-   <td><p>이 API는 <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties Java API의</a> 래퍼입니다. 현재 작업 환경의 구성을 검색합니다. </p></td>
+   <td><p>이 API는 <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API의 래퍼입니다. 현재 작업 환경의 구성을 검색합니다. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -51,7 +54,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
   <tr>
    <td><p>SystemInfo.services</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.services</p></td>
-   <td><p>AEM Forms 서비스의 상태 및 구성 매개 변수를 검색합니다.</p></td>
+   <td><p>AEM 양식 서비스의 상태 및 구성 매개 변수를 검색합니다.</p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.vitalDetails</p></td>
@@ -68,13 +71,13 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
      <li><p>CustomerFontDir</p></li>
      <li><p>GlobalDocumentStorageRootDir</p></li>
      <li><p>DefaultDocumentMaxInlineSize</p></li>
-     <li><p>DefaultDocumentDisposeTimeout</p></li>
+     <li><p>DefaultDocumentDispositionTimeout</p></li>
      <li><p>EnableDocumentDBStorage</p></li>
      <li><p>GlobalDocumentStorageUseNetworkShare</p></li>
      <li><p>FIPS 사용</p></li>
-     <li><p>WSDL 활성화</p></li>
+     <li><p>EnableWSDL</p></li>
      <li><p>DataServicesConfigFile </p></li>
-     <li><p>RDS 활성화</p></li>
+     <li><p>RDS 사용</p></li>
     </ul><p></p></td>
   </tr>
   <tr>
@@ -94,7 +97,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
   </tr>
   <tr>
    <td><p>SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
-   <td><p>https://'[server]:[port]:[port]'/rest/services/ SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
+   <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
    <td><p>활성 스레드의 카운트 및 스택 추적을 검색합니다. 다음 매개 변수를 사용합니다.</p>
     <ul>
      <li><p>iterations= [n]:반복 횟수를 지정합니다. n을 숫자로 바꿉니다. </p></li>
