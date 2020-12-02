@@ -12,6 +12,9 @@ discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 96%
 
 ---
 
@@ -52,6 +55,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
    * 최상위 수준 소스 페이지는 **프로덕션**&#x200B;이라고 합니다.
 
       * 소스 페이지를 여러 개의(독립된) 분기에서 가져올 수 있습니다.
+
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
 * 론치 구성 편집:
@@ -79,12 +83,14 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
    * 소스 페이지 변경 사항은 론치 카피(상속을 통해, 즉 Live Copy로 설정된 경우)에서 자동으로 구현됩니다.
    * 론치 카피에 대한 변경은 이 자동 업데이트 또는 소스 페이지를 중단하지 않고 수행할 수 있습니다.
+
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 * [중첩 론치 만들기](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - 론치 내 론치:
 
    * 소스는 기존 론치입니다.
    * 어떤 타겟으로든 [중첩 론치를 홍보](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch)할 수 있습니다. 이 타겟은 상위 론치나 최상위 수준 소스 페이지(프로덕션)일 수 있습니다.
+
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
    >[!CAUTION]
@@ -93,7 +99,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>론치를 만들고 편집하려면 기본 그룹 `content-authors`과 같이 `/content/launches`에 대한 액세스 권한이 필요합니다.
 >
 >문제가 발생하면 시스템 관리자에게 문의하십시오.
 
@@ -103,7 +109,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
 * **도구** 콘솔: **도구**, **사이트**, **론치**.
 
-* Or directly with [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* 또는 [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)과 직접 연결
 
 ## 참조의 론치(사이트 콘솔) {#launches-in-references-sites-console}
 
