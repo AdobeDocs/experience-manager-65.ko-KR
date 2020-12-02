@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Adobe Experience Manager 데이터 보호 및 데이터 개인 정보 보호 규정 준비 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager 데이터 보호 및 데이터 개인 정보 보호 규정 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->개인정보 보호 문제에 대한 Adobe의 응답과 Adobe 고객으로서 귀하에게 어떤 의미를 갖는지에 대한 자세한 내용은 [Adobe 개인정보 보호 센터를 참조하십시오](https://www.adobe.com/privacy.html).
+>개인정보 보호 문제에 대한 Adobe의 응답과 Adobe 고객으로서 귀하에게 어떤 의미를 갖는지에 대한 자세한 내용은 [Adobe 개인 정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 Adobe은 고객 개인 정보 관리자 또는 AEM 관리자가 데이터 보호 및 데이터 개인 정보 보호 요청을 처리하고 adobe 고객이 이러한 규정을 준수할 수 있도록 도와주는 설명서 및 절차(가능한 경우 API와 함께)를 제공합니다. 문서화된 절차를 통해 고객은 수동으로 또는 외부 포털 또는 서비스에서 API로 전화하여 규정 요청을 실행할 수 있습니다.
 
@@ -39,7 +39,7 @@ Adobe은 고객 개인 정보 관리자 또는 AEM 관리자가 데이터 보호
 >
 >다른 Adobe 온디맨드 서비스의 데이터와 관련 개인 정보 보호 요청은 해당 서비스에 대해 조치를 취해야 합니다.
 >
->자세한 내용은 [Adobe 개인정보 보호 센터를 참조하십시오](https://www.adobe.com/privacy.html).
+>자세한 내용은 [Adobe 개인 정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 ## 소개 {#introduction}
 
@@ -87,31 +87,31 @@ Adobe은 Adobe Experience Manager에 대한 액세스, 삭제 및 옵트아웃 �
 
 ![데이터 보호 및 개인 정보 보호](assets/data-protection-and-privacy-01.png)
 
-## Adobe Experience Manager 및 규제 준비 {#aem-and-regulatory-readiness}
+## Adobe Experience Manager 및 규정 준비 {#aem-and-regulatory-readiness}
 
 AEM의 제품 영역에 대한 규정 문서는 아래 섹션을 참조하십시오.
 
 ## AEM 기반 정보 {#aem-foundation}
 
-AEM [Foundation의 데이터 보호 및 개인 정보 보호 요청 처리를 참조하십시오](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+AEM Foundation에 대한 [데이터 보호 및 개인 정보 보호 요청 처리를 참조하십시오](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
-## 총 사용 통계 컬렉션에 동의 {#aem-opting-into-aggregate-usage-statistics-collection}
+## AEM 집계 사용 통계 컬렉션 {#aem-opting-into-aggregate-usage-statistics-collection} 선택
 
-집계된 [사용 통계 수집을 참조하십시오](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+[집계된 사용 통계 수집](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)을 참조하십시오.
 
 ## AEM Sites {#aem-sites}
 
-자세한 내용은 [AEM Sites - 데이터 보호 및 개인 정보 보호 준비를 참조하십시오.](/help/sites-administering/gdpr-compliance-sites.md)
+[AEM Sites - 데이터 보호 및 개인 정보 보호 준비를 참조하십시오.](/help/sites-administering/gdpr-compliance-sites.md)
 
 ## AEM Commerce {#aem-commerce}
 
-AEM [Commerce - 데이터 보호 및 개인 정보 보호 준비를 참조하십시오](/help/sites-administering/gdpr-compliance-commerce.md).
+[AEM Commerce - 데이터 보호 및 개인 정보 보호 준비](/help/sites-administering/gdpr-compliance-commerce.md)를 참조하십시오.
 
 ## AEM Mobile {#aem-mobile}
 
-자세한 내용은 [AEM Mobile - 데이터 보호 및 개인 정보 보호 준비를 참조하십시오](/help/mobile/aem-mobile-gdpr-compliance.md).
+[AEM Mobile - 데이터 보호 및 개인 정보 보호 준비](/help/mobile/aem-mobile-gdpr-compliance.md)를 참조하십시오.
 
-## ADOBE TARGET 및 Adobe Analytics과 AEM 통합 {#aem-integration-with-adobe-target-adobe-analytics}
+## ADOBE TARGET 및 Adobe Analytics과의 AEM 통합 {#aem-integration-with-adobe-target-adobe-analytics}
 
 이러한 Adobe Experience Manager 통합은 데이터 보호 및 개인 정보 보호(예: GDPR 또는 CPA) 지원 서비스와 통합됩니다. Adobe Target 또는 Adobe Analytics의 개인 데이터는 통합 관련 AEM에 저장되지 않습니다.
 자세한 내용은 다음을 참조하십시오.
@@ -122,7 +122,7 @@ AEM [Commerce - 데이터 보호 및 개인 정보 보호 준비를 참조하십
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities은 데이터 주체에게 데이터 이식성, 액세스 권한 및 [바로 이용 가능한 API를 통해 잊혀질 권리를 부여했습니다](/help/communities/user-ugc-management-service.md). 이러한 API를 사용하면 사용자 생성 컨텐츠의 벌크 삭제 및 일괄 내보내기를 수행할 수 있으며 권한이 있는 ID를 통해 식별된 사용자 계정을 비활성화할 수 있습니다. 그러나 사용자 계정의 영구 삭제는 CRXDE Lite의 사용자 노드를 삭제하여 시스템에서 손쉽게 옵트아웃할 필요가 있음을 해결합니다.
+AEM Communities은 데이터 주체에게 자신의 데이터 이식성, 액세스 권한 및 바로 사용 가능한 API[를 통해 잊혀질 권리를 부여했습니다. ](/help/communities/user-ugc-management-service.md) 이러한 API를 사용하면 사용자 생성 컨텐츠의 벌크 삭제 및 일괄 내보내기를 수행할 수 있으며 권한이 있는 ID를 통해 식별된 사용자 계정을 비활성화할 수 있습니다. 그러나 사용자 계정의 영구 삭제는 CRXDE Lite의 사용자 노드를 삭제하여 시스템에서 손쉽게 옵트아웃할 필요가 있음을 해결합니다.
 
 또한, AEM Communities은 권한 있는 구성원이 사용자의 기부와 세부 사항을 찾아 삭제할 수 있는 벌크 중재 콘솔로 인해 개인 정보를 디자인하는 방식으로 개인 정보를 제공합니다. 멤버 관리 콘솔에서는 기고자를 금지하는 지점으로 제한할 수 있습니다. 또한 데이터 대상이 작성된 기여도를 삭제할 수 있도록 허용합니다.
 
