@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e916f70549197ac9f95443e972401a78735b0560
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Dynamic Media Classic 비디오 구성 요소에 대해 다음 형식이 지원�
 
 이러한 질문에 대한 답변이 하나 또는 둘 다 &quot;예&quot;인 경우, 비디오를 Adobe DAM에 바로 업로드하십시오. 두 질문에 대한 답변이 모두 &quot;아니요&quot;이면 비디오를 Dynamic Media Classic에 직접 업로드하십시오. 각 시나리오에 대한 워크플로우는 다음 섹션에 설명되어 있습니다.
 
-#### Adobe Assets에 직접 비디오를 업로드하는 경우 {#if-you-are-uploading-your-video-directly-to-adobe-assets}
+#### Adobe Assets에 직접 비디오를 업로드하는 경우  {#if-you-are-uploading-your-video-directly-to-adobe-assets}
 
 자산에 대한 워크플로우 또는 버전 관리가 필요한 경우 먼저 Adobe Assets로 업로드해야 합니다. 다음은 권장되는 워크플로우입니다.
 
@@ -141,7 +141,7 @@ Dynamic Media Classic 비디오 구성 요소를 사용하는 것이 Dynamic Med
 | 확장성 | 예 | 예(Dynamic Media Classic 뷰어 SDK 사용) |
 | 모바일 비디오 | 예 | 예 |
 
-### 설정 {#setting-up}
+### 설정  {#setting-up}
 
 #### 비디오 프로필 만들기 {#creating-video-profiles}
 
@@ -168,7 +168,7 @@ Dynamic Media Classic 클라우드 구성에서 선택한 Dynamic Media Classic 
 
    비디오 구성 요소에서 사용하기 위해 클라우드 구성에서 선택한 모든 인코딩 사전 설정에 대해 이 단계를 반복하십시오.
 
-#### 디자인 구성 {#configuring-design}
+#### 디자인 구성  {#configuring-design}
 
 기본 비디오 구성 요소는 비디오 소스 목록을 작성하는 데 사용할 비디오 프로필에 대해 알아야 합니다. 비디오 구성 요소 디자인 대화 상자를 열고 새 비디오 프로필을 사용하기 위한 구성 요소 디자인을 구성해야 합니다.
 
@@ -183,7 +183,7 @@ Dynamic Media Classic 클라우드 구성에서 선택한 Dynamic Media Classic 
 1. 기본 비디오 구성 요소의 디자인 대화 상자를 열고 **[!UICONTROL 프로필]** 탭으로 변경합니다. 그런 다음 곧바로 사용할 수 있는 프로필을 삭제하고 새로운 Dynamic Media Classic 비디오 프로필을 추가합니다. 렌더링 시, 디자인 대화 상자의 프로필 목록 순서대로 비디오 소스 요소의 순서가 정의됩니다.
 1. HTML5를 지원하지 않는 브라우저의 경우 비디오 구성 요소를 사용하여 Flash 폴백을 구성할 수 있습니다. 비디오 구성 요소의 디자인 대화 상자를 열고 **[!UICONTROL Flash]** 탭으로 변경합니다. Flash Player 설정을 구성하고 Flash Player에 대한 폴백 프로필을 지정합니다.
 
-#### 확인 목록 {#checklist}
+#### 확인 목록  {#checklist}
 
 1. Dynamic Media Classic(Scene7) 클라우드 구성을 만듭니다. 비디오 인코딩 사전 설정이 지정되어 있고 Importer가 실행 중인지 확인합니다.
 1. 클라우드 구성에서 선택한 각 비디오 인코딩 사전 설정에 대해 Dynamic Media Classic 비디오 프로필을 만듭니다.
