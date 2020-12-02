@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 초안 및 제출 구성 요소를 위한 사용자 정의 저장소 {#custom-storage-for-drafts-and-submissions-component}
+# 초안 및 제출 구성 요소에 대한 사용자 지정 저장소 {#custom-storage-for-drafts-and-submissions-component}
 
 ## 개요 {#overview}
 
@@ -27,14 +27,14 @@ AEM Forms을 사용하면 양식을 초안으로 저장할 수 있습니다. 초
 
 ## 전제 조건  {#prerequisites}
 
-* 양식 [포털 구성 요소 활성화](/help/forms/using/enabling-forms-portal-components.md)
-* [양식 포털 페이지 만들기](/help/forms/using/creating-form-portal-page.md)
-* 양식 [포털에 적응형 양식 사용](/help/forms/using/draft-submission-component.md)
-* 사용자 [정의 스토리지에 대한 구현 세부 정보 알아보기](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* [양식 포털 구성 요소](/help/forms/using/enabling-forms-portal-components.md) 활성화
+* [양식 포털 페이지](/help/forms/using/creating-form-portal-page.md) 만들기
+* 양식 포털용 [적응형 양식 사용](/help/forms/using/draft-submission-component.md)
+* 사용자 지정 저장소의 [구현 세부 정보 학습](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## 초안 데이터 서비스 {#draft-data-service}
 
-초안의 사용자 데이터 저장소를 사용자 정의하려면 인터페이스의 모든 방법을 구현해야 `DraftDataService` 합니다. 다음 샘플 코드는 메서드 및 인수를 설명합니다.
+초안의 사용자 데이터 저장소를 사용자 정의하려면 `DraftDataService` 인터페이스의 모든 방법을 구현해야 합니다. 다음 샘플 코드는 메서드 및 인수를 설명합니다.
 
 ```java
 /**
@@ -101,9 +101,9 @@ public interface DraftDataService {
 >
 >초안 ID 필드 길이에 대한 최소 값은 26자입니다. Adobe에서는 초안 ID 길이를 26자 이상으로 설정하는 것이 좋습니다.
 
-## 데이터 서비스 제출 {#submission-data-service}
+## 제출 데이터 서비스 {#submission-data-service}
 
-제출용 사용자 데이터의 저장을 사용자 지정하려면 `SubmitDataService` 인터페이스 모든 방법을 구현해야 합니다. 다음 샘플 코드는 메서드 및 인수를 설명합니다.
+제출용 사용자 데이터 저장소를 사용자 정의하려면 `SubmitDataService` 인터페이스의 모든 방법을 구현해야 합니다. 다음 샘플 코드는 메서드 및 인수를 설명합니다.
 
 ```java
 /**
