@@ -102,7 +102,7 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
 * 실행을 위한 신규 검토 및 승인 워크플로우, 승인된 실행 페이지만 프로모션할 수 있는 기능
 * 프로모션 단계](/help/sites-authoring/launches-promoting.md#promoting-launch-pages) 직후 [실행]을 삭제할 수 있도록 선택하기 위해 UI에 옵션 추가[
 
-## 컨텐츠 타깃팅 및 시뮬레이션 {#content-targeting-simulation}
+## 컨텐츠 타깃팅 및 시뮬레이션  {#content-targeting-simulation}
 
 * ContextHub 데이터 계층 및 클라이언트측 규칙 엔진 JavaScript가 기본적으로 jQuery 3을 사용하도록 업데이트되었습니다.
 
