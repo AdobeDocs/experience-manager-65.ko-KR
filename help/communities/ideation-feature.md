@@ -32,10 +32,10 @@ ht-degree: 9%
 
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
-* AEM 사이트에 아이디어 기능 추가
+* AEM 사이트에 관념화 기능 추가
 * 아이디어 구성 요소에 대한 구성 설정.
 
-### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
+### 페이지에 관념화 추가 {#adding-a-ideation-to-a-page}
 
 작성 모드에서 페이지에 `Ideation` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여
 
@@ -43,9 +43,9 @@ ht-degree: 9%
 
 아이디어를 표현할 수 있는 페이지에 드래그합니다.
 
-필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](/help/communities/basics.md).
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 방문하십시오.
 
-필요한 [클라이언트측 라이브러리가](/help/communities/ideation.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Ideation` 방식입니다.
+[필수 클라이언트측 라이브러리](/help/communities/ideation.md#essentials-for-client-side)가 포함될 때 다음과 같이 `Ideation` 구성 요소가 표시됩니다.
 
 ![아이디어](assets/ideation.png)
 
@@ -59,7 +59,7 @@ ht-degree: 9%
 
 #### 설정 탭 {#settings-tab}
 
-설정 **[!UICONTROL 탭]** 아래에서 아이디어 및 주석 설정을 지정합니다.
+**[!UICONTROL 설정]** 탭에서 아이디어 및 댓글에 대한 설정을 지정합니다.
 
 * **첨부 파일 썸네일 허용**
 * **최대 첨부 파일 썸네일 크기**
@@ -93,7 +93,7 @@ ht-degree: 9%
 
 * **태깅 허용**
 
-   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다(태그 **[!UICONTROL 필드]** 탭 참조). 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다(**[!UICONTROL 태그 필드]** 탭 참조). 기본값은 선택 취소입니다.
 
 * **파일 업로드 허용**
 
@@ -101,11 +101,11 @@ ht-degree: 9%
 
 * **최대 파일 크기**
 
-   선택한 경우에만 `Allow File Uploads` 관련됨 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
+   `Allow File Uploads`이(가) 선택된 경우에만 해당됩니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
 
 * **허용되는 파일 유형**
 
-   선택한 경우에만 `Allow File Uploads` 관련됨 &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   `Allow File Uploads`이(가) 선택된 경우에만 해당됩니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **이미지 첨부 파일 최대 크기**
 
@@ -125,11 +125,11 @@ ht-degree: 9%
 
 * **다음 허용**
 
-   이 확인란을 선택하면 구성원에게 새 게시물에 대한 [알림을 받을](/help/communities/notifications.md) 수 있는 아이디어 게시물에 대해 다음 기능을 포함합니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 멤버는 새 게시물의 [notified](/help/communities/notifications.md)이 될 수 있는 아이디어 게시물에 다음 기능을 포함합니다. 기본값은 선택 취소입니다.
 
 * **이메일 구독 허용**
 
-   이 확인란을 선택하면 구성원이 이메일([구독](/help/communities/subscriptions.md))로 새 게시물에 대한 알림을 받을 수 있습니다. 확인 및 `Allow Following` 이메일 구성 [](/help/communities/email.md)필요 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 이메일([구독](/help/communities/subscriptions.md))으로 새 게시물에 대한 알림을 받을 수 있습니다. `Allow Following`을(를) 확인해야 하고 [전자 메일을 구성하여](/help/communities/email.md)합니다. 기본값은 선택 취소입니다.
 
 * **투표 허용**
 
@@ -137,13 +137,13 @@ ht-degree: 9%
 
 * **배지 표시**
 
-   이 확인란을 선택하면 획득 [배지가](/help/communities/implementing-scoring.md) 표시되고 멤버의 아이디어가 할당됩니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 획득 후 [badges](/help/communities/implementing-scoring.md)에 구성원의 아이디어를 표시합니다. 기본값은 선택 취소입니다.
 
 * **목록 페이지에 대한 답글을 받지 않음**
 
 * **특별 포함된 컨텐츠 허용**
 
-   이 확인란을 선택하면 해당 아이디어를 [주요 컨텐츠로 식별할 수 있습니다](/help/communities/featured.md). 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 아이디어를 [주요 컨텐츠](/help/communities/featured.md)로 식별할 수 있습니다. 기본값은 선택 취소입니다.
 
 * **언급 활성화**
 * **최대 언급 수**
@@ -151,7 +151,7 @@ ht-degree: 9%
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
-사용자 중재 **[!UICONTROL 탭]** 아래에서 게시된 아이디어와 댓글(사용자가 생성한 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+**[!UICONTROL 사용자 중재]** 탭에서 게시된 아이디어와 댓글(사용자가 생성한 콘텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
 
 * **게시물 거부**
 
@@ -183,23 +183,23 @@ ht-degree: 9%
 
 #### 태그 필드 탭 {#tag-field-tab}
 
-[ **[!UICONTROL 태그] 필드]** 탭 아래에서 **[!UICONTROL 설정]** 탭 아래에서 허용되는 경우 적용할 수 있는 태그는 선택한 네임스페이스에 따라제한됩니다.
+**[!UICONTROL 태그 필드]** 탭 아래에서 **[!UICONTROL 설정]** 탭에서 허용되는 경우 적용할 수 있는 태그는 선택한 네임스페이스에 따라 제한됩니다.
 
 * **허용되는 네임스페이스**
 
-   설정 탭 아래 `Allow Tagging` 에서 **[!UICONTROL 선택되어 있는 경우]** 관련 적용할 수 있는 태그는 확인된 네임스페이스 범주 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값은 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
+   **[!UICONTROL 설정]** 탭 아래에서 `Allow Tagging`이(가) 선택된 경우 관련 적용할 수 있는 태그는 확인된 네임스페이스 범주 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값은 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
 
 * **제안 한도**
 
-   포럼에 게시하기 위해 회원에게 제안으로 표시할 태그의 수를 입력합니다. 값이 **-1이면** 제한이 없습니다. 기본값은 0입니다.
+   포럼에 게시하기 위해 회원에게 제안으로 표시할 태그의 수를 입력합니다. **-1**&#x200B;의 값은 제한이 없음을 의미합니다. 기본값은 0입니다.
 
 #### 정렬 설정 탭 {#sort-settings-tab}
 
-정렬 설정 **[!UICONTROL 탭]** 아래에서, 표시할 때 게시된 댓글이 정렬되는 방식을 지정합니다.
+**[!UICONTROL 정렬 설정]** 탭에서 게시된 댓글이 표시될 때 정렬되는 방법을 지정합니다.
 
 * **정렬 기준**
 
-   허용되는 모든 정렬 선택 사항 확인: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 기본값은 `Newest, Oldest, Last Updated`입니다.
+   허용되는 모든 정렬 선택 사항 확인:`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 기본값은 `Newest, Oldest, Last Updated`입니다.
 
 * **기본값으로 설정**
 
@@ -207,11 +207,11 @@ ht-degree: 9%
 
 * **분석 정렬에 대한 시간 옵션 선택**
 
-   아래로 끌어 하나를 선택합니다 `All, Last 24 Hours, Last 7 Days, Last 30 Days`. 기본값은 `All`입니다.
+   아래로 끌어 `All, Last 24 Hours, Last 7 Days, Last 30 Days` 중 하나를 선택합니다. 기본값은 `All`입니다.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
-### 아이디어 만들기 {#creating-idea}
+### 아이디어 {#creating-idea} 만들기
 
 모든 커뮤니티 기능과 마찬가지로, 로그인하지 않은 경우 사이트 방문자는 의견과 투표/좋아요 등을 통해 아이디어를 읽고 다른 의견만 볼 수 있습니다.
 
@@ -221,24 +221,24 @@ ht-degree: 9%
 
 아이디어를 제출하기 전에 멤버가 초안을 저장할 수 있습니다.
 
-단추를 선택하면 `Save as Draft` 초안이 저장됩니다.
+`Save as Draft` 단추를 선택하면 초안이 저장됩니다.
 
 ![아이디어 저장](assets/save-idea.png)
 
-탭에서 저장된 초안을 볼 때 `My Drafts` 편집 모드 `Read More` 를 다시 입력하려면 선택합니다.
+`My Drafts` 탭에서 저장된 초안을 볼 때 `Read More`을 선택하여 편집 모드를 다시 시작합니다.
 
 ![edit-idea](assets/edit-idea.png)
 
-#### 피드백 제공 {#providing-feedback}
+#### 피드백 제공 중 {#providing-feedback}
 
-아이디어가 게시되면 다른 구성원은 로그인하여 아이디어를 열고 ( `Read More`) 아이디어를 좋아하여 투표 수에 추가하고 의견을 추가할 수 있습니다.
+아이디어가 게시되면 다른 멤버가 로그인하여 아이디어( `Read More`)를 열고 아이디어를 좋아하여 투표 수에 추가하고 의견을 추가할 수 있습니다.
 
 ![피드백](assets/feedback-idea.png)
 
 ### 추가 정보 {#additional-information}
 
-개발자를 위한 Ideation Essentials [페이지에](/help/communities/ideation.md) 대한 자세한 내용이 나와 있습니다.
+개발자를 위한 [Ideation Essentials](/help/communities/ideation.md) 페이지에서 자세한 내용을 확인할 수 있습니다.
 
-게시된 항목 및 댓글에 대한 중재는 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+게시된 항목 및 댓글에 대한 중재를 보려면 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
 
-게시된 항목 및 댓글에 태그를 지정하려면 사용자 생성 컨텐츠 [태그 지정을 참조하십시오](/help/communities/tag-ugc.md).
+게시된 항목 및 댓글에 태그를 지정하려면 [사용자 생성 콘텐츠 태그 지정](/help/communities/tag-ugc.md)을 참조하십시오.
