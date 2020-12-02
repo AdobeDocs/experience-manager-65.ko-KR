@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+workflow-type: tm+mt
+source-wordcount: '301'
+ht-degree: 83%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
 
 ## 자산 {#assets}
 
-Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
+다이내믹 미디어 기능 및 Dynamic Media Classic 통합을 포함한 자산 관련 우수 사례는 다음 항목에 설명되어 있습니다.
 
 <table>
  <tbody>
