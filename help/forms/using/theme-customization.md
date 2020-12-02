@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 테마 맞춤화 {#theme-customization}
+# 테마 사용자 지정 {#theme-customization}
 
-HTML 코드 및 CSS 파일을 사용자 지정하여 고유한 조직별 모양과 느낌을 AEM Forms 앱에 제공할 수 있습니다. 예를 들어 작업의 배경색 및 높이나 시작점을 변경할 수 있습니다. 다음 예제에서는 변경 지침을 제공합니다.
+HTML 코드 및 CSS 파일을 사용자 지정하여 별도의 조직별 모양과 느낌을 AEM Forms 앱에 제공할 수 있습니다. 예를 들어 작업의 배경색 및 높이나 시작점을 변경할 수 있습니다. 다음 예제에서는 변경 지침을 제공합니다.
 
 * 설명 대신 표시 지침
 * 표시 경로 수
@@ -30,17 +30,17 @@ HTML 코드 및 CSS 파일을 사용자 지정하여 고유한 조직별 모양�
 
 1. 프로젝트를 엽니다.
 
-   * iOS의 경우 Xcode `Capture.xcodeproj` 에서 열기
+   * iOS의 경우 Xcode에서 `Capture.xcodeproj`을(를) 엽니다.
    * Android의 경우 Eclipse에서 Android 프로젝트를 엽니다.
-   * Windows의 경우 Visual Studio `MWSWindows.sln` 에서 엽니다.
+   * Windows의 경우 Visual Studio에서 `MWSWindows.sln`을 엽니다.
 
 1. 템플릿 폴더로 이동합니다.
 
-   * Xcode에서 **Capture > www > Mobile > js > runtime > templates** 폴더로 이동합니다.
-   * Eclipse에서 **자산 > www > 모바일 > js > 런타임 > 템플릿** 폴더로 이동합니다.
-   * Visual Studio에서 MWSWwindows > **www > Mobile > js > 런타임 > 템플릿** 폴더로 이동합니다.
+   * Xcode에서 **캡처 > www > 모바일 > js > 런타임 > templates** 폴더로 이동합니다.
+   * Eclipse에서 **자산 > www > 모바일 > js > 런타임 > templates** 폴더로 이동합니다.
+   * Visual Studio에서 **MWSWindows > www > Smooth > js > runtime > templates** 폴더로 이동합니다.
 
-1. Open the `template.html` file for editing.
+1. 편집할 `template.html` 파일을 엽니다.
 1. 다음 문자열을 찾습니다.
 
    ```jsp
@@ -51,9 +51,9 @@ HTML 코드 및 CSS 파일을 사용자 지정하여 고유한 조직별 모양�
                  <%} else
    ```
 
-   다음으로 `<%`교체합니다.
+   `<%`으로 대체합니다.
 
-1. 파일에서 다음 코드를 `template.html` 찾습니다.
+1. `template.html` 파일에서 다음 코드를 찾습니다.
 
    ```jsp
    <ul id="task_menu_list">
@@ -75,12 +75,12 @@ HTML 코드 및 CSS 파일을 사용자 지정하여 고유한 조직별 모양�
 
 1. css 폴더로 이동합니다.
 
-   * Xcode에서 **Capture > www > Mobile > css로 이동합니다**.
-   * Eclipse에서 **자산 > www > 모바일 > css로 이동합니다**.
-   * Visual Studio에서 MWSWindows **> www > 모바일 > css로 이동합니다**.
+   * Xcode에서 **캡처 > www > 모바일 > css**&#x200B;로 이동합니다.
+   * Eclipse에서 **자산 > www > 모바일 > css**&#x200B;로 이동합니다.
+   * Visual Studio에서 **MWSWindows > www > Smooth > css**&#x200B;로 이동합니다.
 
-1. Open the `_style.css` file for editing.
-1. 배경 이미지의 경우 로 `#323232` 변경합니다 `#fff`.
+1. 편집할 `_style.css` 파일을 엽니다.
+1. 배경 이미지의 경우 `#323232`을 `#fff`으로 변경합니다.
 1. 변경 내용을 저장하고 `_style.css` 파일을 닫습니다.
 1. AEM Forms 앱을 엽니다.
 
