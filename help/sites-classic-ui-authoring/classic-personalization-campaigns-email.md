@@ -12,6 +12,9 @@ discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 96%
 
 ---
 
@@ -62,13 +65,13 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
 
    ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
 
-1. **만들기**&#x200B;를 클릭합니다. 
+1. **만들기**&#x200B;를 클릭합니다.
 
 1. 새 대화 상자가 즉시 열립니다. 여기에서 뉴스레터의 속성을 입력할 수 있습니다.
 
    **기본 수신자 목록**&#x200B;은 뉴스레터의 터치포인트를 구성하므로 필수 필드입니다(목록에 대한 자세한 내용은 [목록 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) 참조).
 
-   ![mcm_newnewsletterdialog](assets/mcm_newnewsletterdialog.png)
+   ![mcm_newnewnewsletterdialog](assets/mcm_newnewsletterdialog.png)
 
    * **발송자 이름**: 뉴스레터 발송자로 표시되는 이름입니다.
 
@@ -130,7 +133,7 @@ Newsletter를 개인화하고 결과를 시뮬레이션하는 방법은 다음�
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>뉴스레터를 발송하기 전에 `https://localhost:4502/system/console/configMgr`에서 Day CQ Link Externalizer에 대한 OSGi 구성을 확인하십시오.
 >
 >기본적으로 이 매개 변수의 값은 `localhost:4502`이며 인스턴스 실행을 위한 포트가 바뀌면 작업을 완료할 수 없습니다.
 
@@ -218,7 +221,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `https://localhost:4502/system/console/configMgr`.
+>뉴스레터를 발송하기 전에 `https://localhost:4502/system/console/configMgr`에서 Day CQ Link Externalizer에 대한 OSGi 구성을 확인하십시오.
 >
 >기본적으로 이 매개 변수의 값은 `localhost:4502`이며 인스턴스 실행을 위한 포트가 바뀌면 작업을 완료할 수 없습니다.
 
@@ -226,7 +229,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 >
 >뉴스레터를 게시 인스턴스에 먼저 게시하지 않았거나 게시 인스턴스를 사용할 수 없는 경우에 이메일 공급자를 업데이트하거나, 플라이트 테스트를 수행하거나, 뉴스레터를 전송하는 경우 이러한 작업이 실패합니다. 뉴스레터를 게시하고 게시 인스턴스가 작동되어 실행 중인지 확인하십시오.
 
-### 캠페인에서 뉴스레터 보내기 {#sending-newsletters-from-a-campaign}
+### 캠페인에서 뉴스레터 보내기  {#sending-newsletters-from-a-campaign}
 
 캠페인 내에서 뉴스레터를 발송하는 방법은 다음과 같습니다.
 
@@ -253,7 +256,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
    >
    >Newsletter가 정상적으로 수신되었는지 확인할 수 있도록 수신자에 자신을 포함하십시오.
 
-### 목록에서 Newsletter 보내기 {#sending-newsletters-from-a-list}
+### 목록에서 Newsletter 보내기  {#sending-newsletters-from-a-list}
 
 목록에서 뉴스레터를 발송하는 방법은 다음과 같습니다.
 
@@ -283,7 +286,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 
 이 섹션에서는 뉴스레터에 가입하는 방법을 설명합니다.
 
-### 뉴스레터 가입 {#subscribing-to-a-newsletter-1}
+### 뉴스레터 가입  {#subscribing-to-a-newsletter-1}
 
 Newsletter에 가입하는 방법은 다음과 같습니다. Geometrixx 웹 사이트를 예로 들겠습니다.
 
