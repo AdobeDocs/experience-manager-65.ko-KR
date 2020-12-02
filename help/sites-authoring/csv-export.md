@@ -10,8 +10,11 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +43,7 @@ source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
    * 번역
       * 번역됨
    * 분석
-      * 페이지 조회수
+      * 페이지 보기 수
       * 고유 방문자 수
       * 페이지 시간
 * 깊이
