@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# [!DNL AEM Forms] 데이터 통합 {#aem-forms-data-integration}
+# [!DNL AEM Forms] 데이터 통합  {#aem-forms-data-integration}
 
 ![](do-not-localize/data-integeration.png)
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 * 적응형 양식 규칙을 사용하여 데이터 소스 서비스/작업 호출
 * 제출된 적응형 양식 데이터를 데이터 소스에 쓰기
 
-## 데이터 통합 시작하기 {#get-started-with-data-integration}
+## 데이터 통합 시작 {#get-started-with-data-integration}
 
 데이터 통합을 구현하는 첫 번째 단계는 적응형 양식 및 인터랙티브한 커뮤니케이션 사용 사례에서 활용할 정보를 저장하는 데이터 소스를 식별하고 구성하는 것입니다. 그런 다음 하나 이상의 데이터 소스에서 데이터 모델 개체, 속성 및 서비스를 사용하는 양식 데이터 모델을 만듭니다. 적응형 양식 필드 또는 인터랙티브한 커뮤니케이션의 자리 표시자가 각 데이터 소스 속성에 바인딩되는 양식 데이터 모델을 기반으로 적응형 양식 및 인터랙티브한 커뮤니케이션을 만들 수 있습니다.
 
