@@ -12,6 +12,9 @@ discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +44,7 @@ source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 * 워크플로우
 * 모드
 * 스캐폴딩
-* ClientContext
+* Client Context
 * 웹 사이트
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
@@ -76,6 +79,7 @@ source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
    * 이동 도구 모음(사이드킥)에서 구성 요소를 드래그하여 새 단락을 삽입합니다.
    * 기존 단락을 마우스 오른쪽 단추로 클릭하고 **새로 만들기...**&#x200B;를 클릭하여 새 구성 요소 삽입 도구 모음을 엽니다. 구성 요소를 선택하고 **확인**&#x200B;을 클릭합니다.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. 사이드 킥과 **새 구성 요소 삽입** 도구 모음에는 모두 사용 가능한 구성 요소(단락 유형)의 목록이 있습니다. 이 목록은 여러 부분으로 나뉘어 있으며(예: 일반, 열, 등) 필요에 따라 확장할 수 있습니다.
@@ -84,7 +88,7 @@ source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 1. 페이지에 필요한 구성 요소를 삽입합니다. 그런 다음 단락을 두 번 클릭하면 단락을 구성하고 컨텐츠를 추가할 수 있는 창이 열립니다.
 
-### 컨텐츠 파인더를 사용하여 구성 요소 삽입 {#inserting-a-component-using-the-content-finder}
+### 컨텐츠 파인더를 사용하여 구성 요소 삽입  {#inserting-a-component-using-the-content-finder}
 
 [컨텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. 이렇게 하면 자산이 포함된 적절한 유형의 새 구성 요소가 자동으로 만들어집니다.
 
@@ -103,7 +107,7 @@ source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 위의 자산 유형 중 하나를 끌어 구성 요소를 만들려면,
 
-1. 페이지가 [**편집&#x200B;**모드](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)인지 확인합니다.
+1. 페이지가 [**편집** 모드](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)인지 확인합니다.
 1. [컨텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)를 엽니다.
 1. 필요한 자산을 필요한 위치로 끕니다. [구성 요소 자리 표시자](#componentplaceholder)는 구성 요소가 위치할 곳을 보여 줍니다.
 
@@ -111,7 +115,7 @@ source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 1. 필요할 경우 구성 요소를 [편집](#editmovecopypastedelete)합니다.
 
-## 구성 요소(컨텐츠 및 속성) 편집 {#editing-a-component-content-and-properties}
+## 구성 요소(컨텐츠 및 속성) 편집  {#editing-a-component-content-and-properties}
 
 기존 단락을 편집하려면 다음 중 하나를 수행합니다.
 
@@ -134,7 +138,7 @@ source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
 1. 단락을 새 위치에 드래그합니다. 단락을 이동할 수 있는 위치를 녹색 확인 표시로 나타냅니다. 단락을 원하는 위치에 놓습니다.
-1. 단락이 이동됩니다.
+1. 단락이 이동됩니다:
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
@@ -185,9 +189,11 @@ source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
    구성 요소가 live copy 또는 launch의 일부일 경우, 자물쇠 아이콘으로 표시됩니다. 자물쇠를 클릭하여 상속을 취소할 수 있습니다.
 
    * 구성 요소를 선택하면 자물쇠 아이콘이 표시됩니다. 예:
+
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
    * 이 자물쇠는 구성 요소들의 대화 상자에도 표시됩니다. 예:
+
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. **상속된 단락 시스템**
@@ -200,7 +206,7 @@ source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 [주석](/help/sites-classic-ui-authoring/classic-page-author-annotations.md)을 사용하면 다른 작성자가 컨텐츠에 대한 피드백을 제공할 수 있습니다. 검토 및 유효성 검사 목적으로 종종 사용됩니다.
 
-## 페이지 미리 보기 {#previewing-pages}
+## 페이지 미리 보기  {#previewing-pages}
 
 페이지 미리 보기에 중요한 사이드 킥의 하단 경계에는 두 가지 아이콘이 있습니다.
 
@@ -220,7 +226,7 @@ source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 ## 찾기 및 바꾸기 {#find-replace}
 
-동일한 구문을 대량으로 편집하는 경우 **[찾기 및 바꾸기](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**메뉴 옵션을 사용하여 웹 사이트 섹션 내에서 문자열을 반복하여 찾거나 바꿀 수 있습니다.
+동일한 구문을 대량으로 편집하는 경우 **[찾기 및 바꾸기](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** 메뉴 옵션을 사용하여 웹 사이트 섹션 내에서 문자열을 반복하여 찾거나 바꿀 수 있습니다.
 
 ## 페이지 잠금 {#locking-a-page}
 
@@ -282,6 +288,7 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 >* 실행 취소를 사용한 후 페이지를 편집하지 않은 경우 작업을 재실행합니다.
 >* 최대 20개의 편집 작업 실행을 취소합니다(기본 설정).
 >* 실행 취소 및 재실행용 [키보드 단축키](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)를 사용할 수도 있습니다.
+
 >
 
 
