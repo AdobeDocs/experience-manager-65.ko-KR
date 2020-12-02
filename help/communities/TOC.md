@@ -14,10 +14,10 @@ ht-degree: 11%
 ---
 
 
-# Adobe Experience Manager 6.5 Communities Guide {#communities}
+# Adobe Experience Manager 6.5 커뮤니티 안내서 {#communities}
 
 + [Communities 안내서](home.md)
-+ Introduction to AEM Communities {#introduction}
++ AEM Communities 소개 {#introduction}
    + [커뮤니티 사이트](administer-landing.md)
    + [AEM Communities 개요](overview.md)
    + [AEM Communities 릴리스 노트](/help/release-notes/communities-release-notes.md)
@@ -31,7 +31,7 @@ ht-degree: 11%
    + [[MOCK] Author a New Community Site for Enablement](enablement-create-site.md)
    + [활성 리소스 만들기 및 할당](resource.md)
    + [게시된 활성 사이트 경험](enablement-published-site.md)
-+ 배포 {#deploy}
++ {#deploy} 배포
    + [커뮤니티 배포](deploy-communities.md)
    + [AEM 6.5 Communities로 업그레이드](upgrade.md)
    + [커뮤니티를 위한 권장 토폴로지](topologies.md)
