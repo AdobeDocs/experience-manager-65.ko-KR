@@ -25,28 +25,28 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
 도움이 되도록 우수 사례는 다음과 같습니다.
 
-* 이러한 우수 사례를 통해 진행 상황을 추적하고 모니터링할 수 있는 [인터랙티브한 체크리스트](/help/managing/best-practices-checklist.md) .
+* 이러한 우수 사례로 진행 상태를 추적하고 모니터링할 수 있는 [대화형 검사 목록](/help/managing/best-practices-checklist.md)입니다.
 
    * 단계, 이정표 및 페르소나에 따라 입력 및 결과물을 정의합니다.
    * 진행 상황과 프로젝트 상태를 나타내는 자동 개요(품질, 상태 및 완벽성)를 제공합니다.
 
-* 문서(체크리스트 [에 따라](/help/managing/best-practices-checklist.md),
+* 설명서는 [checklist](/help/managing/best-practices-checklist.md)에 직접 근거하여 다음과 같은 세부 사항을 설명합니다.
 
-   * [프로젝트 하트비트](#projectheartbeat) 분석.
-   * [역할별 상태](#status-by-role) 개요.
+   * [프로젝트 ](#projectheartbeat) 하트비트분석
+   * [상태별 ](#status-by-role) 개요
    * [단계 및 이정표](#phases-and-milestones).
-   * [주요 페르소나](#persona) 및 모든(관련) 단계에서 해당
-   * 필수 [문서](/help/managing/best-practices-glossary.md) 및 [산출물의 용어집](#required-documents-and-deliverables).
+   * [각 ](#persona) 단계에서 핵심 인력 및 참여
+   * [필수 문서 및 산출물](#required-documents-and-deliverables)의 [용어집](/help/managing/best-practices-glossary.md)입니다.
 
-* [특정 영역에 대한 더 자세한 정보를 제공하는 참조](/help/managing/best-practices-further-reference.md) 자료
+* [특정 ](/help/managing/best-practices-further-reference.md) 영역에 대한 자세한 내용을 제공하는 추가 참조 자료입니다.
 
 ## 프로젝트 하트비트 대시보드 {#project-heartbeat-dashboard}
 
-프로젝트 **하트비트** 워크시트는 프로젝트의 중요 지표에 대한 그래픽 개요를 제공합니다.
+**프로젝트 하트비트** 워크시트는 프로젝트에 대한 중요한 지표의 그래픽 개요를 제공합니다.
 
 * **위상 품질**
 
-   * 프로젝트 전체의 [필수 문서 및 산출물의](#required-documents-and-deliverables) 품질을 나타냅니다.
+   * 프로젝트 전체에서 [필수 문서 및 산출물](#required-documents-and-deliverables)의 품질을 나타냅니다.
 
 * **위상 상태**
 
@@ -58,13 +58,13 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
 ## 역할별 상태 {#status-by-role}
 
-역할별 **상태** 워크시트는 상태 [**,**&#x200B;품질 **및 완전성** 을 Facebook의 CovernishPublish 및 PersonaPersentical에 대한 상세 분류 ****](#projectheartbeat) **[](#phases-and-milestones)** **[](#persona)**&#x200B;를 보여줍니다.
+**역할별 상태** 워크시트는 [**상태**, **품질** 및 **완성](#phases-and-milestones)**&#x200B;과 **[페르소나](#persona)**&#x200B;의 세부 분류를 보여줍니다.**](#projectheartbeat)**[
 
 ## 단계 및 마일스톤 {#phases-and-milestones}
 
 프로젝트 계획은 서로 다른 상위 단계로 분류됩니다.
 
-각 단계에는 고유의 이정표가 포함됩니다. 각 [페르소나](#persona) (또는 역할)에 대해 정의된 산출물을 만드는 데 필요한 문서와 함께 관련 이정표가 나열됩니다.
+각 단계에는 고유의 이정표가 포함됩니다. 각 [persona](#persona)(또는 역할)에 대해 정의된 산출물을 만드는 데 필요한 문서와 함께 관련 이정표가 나열됩니다.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
 ![projectphans_fourphans](assets/projectphases_fourphases.png)
 
-#### Milestones {#milestones}
+#### 마일스톤 {#milestones}
 
 * **유효성 검사**
 
@@ -124,7 +124,7 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
 프로젝트를 계획하면 준비가 통합됩니다. 여기에는 명확한 커뮤니케이션과 엄격한 검토를 통해 진행 상황을 측정할 수 있는 구체적인 작업으로 구성된 정의된 로드맵으로 목표 및 기대를 전환해야 합니다.
 
-#### Milestones {#milestones-1}
+#### 마일스톤 {#milestones-1}
 
 * **인도**
 
@@ -162,7 +162,7 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
 개발을 계획하는 것은 필요한 지식을 가진 팀이 견고한 디자인을 기반으로 프로젝트를 설계하는 데 중요합니다.
 
-#### Milestones {#milestones-2}
+#### 마일스톤 {#milestones-2}
 
 * **개발 팀 인력 및 교육**
 
@@ -182,16 +182,16 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
    시스템 아키텍처는 시스템의 개념적 관점을 정의합니다.포함(기타 정보 포함):
 
-   * [모든 필수 환경을 위한 시스템 구조](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
+   * [모든 ](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 필수 환경을 위한 시스템 구조
    * 하위 시스템
    * 타사 시스템
    * 인터페이스;하드웨어, 소프트웨어 및 인간 상호 작용
-   * 각 환경에 적합한 서버기술 [요구 사항](/help/sites-deploying/technical-requirements.md) 및 [하드웨어 크기 조정 지침을 참조하십시오.](/help/managing/hardware-sizing-guidelines.md)
+   * 각 환경에 적합한 서버[기술 요구 사항](/help/sites-deploying/technical-requirements.md) 및 [하드웨어 크기 조정 지침 참조](/help/managing/hardware-sizing-guidelines.md)
 
    * 각 환경에 대한 프로세스예: 배포 및 유지 관리 요구 사항
    * 유지 관리 활동(데이터 저장소 GC, TarPM 최적화 등)
-   * [발송자](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html) 캐싱
-   * [클러스터링](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 게시/작성자 공유
+   * [Dispatcher ](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html) 캐싱
+   * [클러스터링](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 게시/Authorshare
    * 클라이언트측 성능(JS 미니화, 오목, css 스프라이트, 총 http 요청 수 등)
 
 * **애플리케이션 아키텍처**
@@ -217,12 +217,12 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
    시스템 통합에서는 다음을 계획(구현)해야 합니다.
 
-   * 모든 하위 시스템과 [솔루션 통합](/help/sites-administering/integration.md) 방식을 결합하여 하나의 일관된 시스템으로 운영
+   * 모든 하위 시스템과 [솔루션 통합](/help/sites-administering/integration.md)이(가) 하나의 일관된 시스템으로 작동하는 방식을 취합
    * 타사 시스템을 통합하는 방법타사 시스템이 다운된 경우 오프라인/온라인, 클라이언트측/브라우저 측 또는 폴러버 처리와 같은 특별한 고려 사항과 함께
 
 * **테스트 개념**
 
-   개발을 시작하기 전에 프로젝트의 모든 [테스트](/help/sites-developing/planning.md) 요구 사항에 대한 심층적이고 포괄적인 개념을 구성해야 합니다.
+   개발을 시작하기 전에 프로젝트에 대한 모든 [testing](/help/sites-developing/planning.md) 요구 사항에 대한 심도 있고 포괄적인 개념을 구성해야 합니다.
 
    여기에는 다음이 포함되어야 합니다(그 중).
 
@@ -242,13 +242,13 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
    개발 전에 배포, 릴리스, 테스트 및 보고서 문제에 필요한 모든 지원 프로세스를 적시에 설정해야 합니다.
 
-   Adobe 지원 [포털을 참조하십시오](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html).
+   [Adobe 지원 포털](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)도 참조하십시오.
 
-### 운영 계획 및 운영 {#operations-planning-and-operations}
+### 작업 계획 및 작업 {#operations-planning-and-operations}
 
 이와 유사하게 프로젝트 수명 주기의 모든 단계에서 필요한 환경을 유지하도록 작업을 적절하게 계획해야 합니다. 또한 유지 관리를 위한 적절한 프로세스가 필요합니다.
 
-#### Milestones {#milestones-3}
+#### 마일스톤 {#milestones-3}
 
 * **권한**
 
@@ -256,13 +256,13 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
    예:
 
-   * 각 역할(예: 그룹)에 대한 `read`/ 액세스 `write` 정의가 있는 역할 목록
+   * 각 역할(`read`/ `write` 액세스 정의가 있는 그룹) 목록
 
-   * 게시 환경에 영향을 주는 권한 사용 정의예를 들면 `replicate`
+   * 게시 환경에 영향을 주는 권한 사용 정의예를 들어 `replicate`
    * 최소한의 권한을 가진 사용자의 경우 워크플로우를 정의해야 합니다
-   * 그룹의 `editor` 사용자는 `admin` 권한이 없거나 그룹의 일부가 되어서는 안 `administrators` 됩니다
+   * `editor` 그룹의 사용자는 `admin` 권한을 가지고 있거나 `administrators` 그룹의 일부가 될 수 없습니다
 
-   For more information, see [User Administration and Security](/help/sites-administering/security.md).
+   자세한 내용은 [사용자 관리 및 보안](/help/sites-administering/security.md)을 참조하십시오.
 
 * **모니터링 및 유지 관리**
 
@@ -271,7 +271,7 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
    * 모니터링해야 하는 사항
    * 유지 관리 작업;일반 및 특수 경우
 
-   자세한 내용은 [모니터링 및 유지](/help/sites-deploying/monitoring-and-maintaining.md) 관리도 참조하십시오.
+   자세한 내용은 [모니터링 및 유지 관리](/help/sites-deploying/monitoring-and-maintaining.md)를 참조하십시오.
 
 * **마이그레이션**
 
@@ -285,7 +285,7 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
 개발은 단순한 코딩 이상의 것이 필요한 중요한 단계입니다.
 
-#### Milestones {#milestones-4}
+#### 마일스톤 {#milestones-4}
 
 * **개발 환경**
 
@@ -325,16 +325,16 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
    * 배포 대상
    * 타사 소프트웨어 통합/종속성
    * 보안 설정
-   * 프로덕션 설정에서 [어려운 일 테스트를](/help/sites-developing/tough-day.md) 실행하여 확인된 기준 성능
-   * 성능 테스트 요구 사항품질 보증 [모범 사례 보기](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * 프로덕션 설정에서 [Touch Day 테스트](/help/sites-developing/tough-day.md)를 실행하여 확인한 기준 성능
+   * 성능 테스트 요구 사항[품질 보증을 위한 우수 사례 보기](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **통합**
 
-   다음과 같은 시스템 및 [솔루션 통합의](/help/sites-administering/integration.md)모든 측면을 계획, 문서 및 테스트
+   다음과 같은 시스템 및 [솔루션 통합](/help/sites-administering/integration.md)의 모든 측면을 계획, 문서 및 테스트합니다.
 
    * 자동화된 테스트 전략
-   * 애플리케이션을 개발에서 테스트, 제작 과정으로 [이동하는 자동화된 프로세스](/help/managing/enterprise-devops.md#code-movement)
-   * 컨텐츠를 제작에서 테스트 및 개발까지 [이동하는 자동화된 프로세스](/help/managing/enterprise-devops.md#content-movement)
+   * 프로세스를 [개발에서 테스트로 전환한 다음 제작](/help/managing/enterprise-devops.md#code-movement)으로 자동
+   * 자동화된 프로세스를 [프로덕션에서 테스트 및 개발으로 컨텐츠 이동](/help/managing/enterprise-devops.md#content-movement)
 
 * **마이그레이션**
 
@@ -357,7 +357,7 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
 ### 성능 및 테스트 {#performance-and-testing}
 
-새로운 애플리케이션이 출시되면 기능과 [성능](/help/sites-deploying/configuring-performance.md)모두를 위해 엄격한 테스트를 거쳐야 합니다.
+새 응용 프로그램을 사용할 수 있게 되면 기능 및 [performance](/help/sites-deploying/configuring-performance.md) 모두에 대해 엄격한 테스트를 거쳐야 합니다.
 
 >[!NOTE]
 >
@@ -365,7 +365,7 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 >
 >프로젝트 관리자는 결과에 미치는 영향을 평가하고 적절한 조치를 결정해야 한다.
 
-#### Milestones {#milestones-5}
+#### 마일스톤 {#milestones-5}
 
 * **최종 사용자 수락 테스트**
 
@@ -394,7 +394,7 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
 새로운 애플리케이션의 롤아웃을 원활하게 하려면 신중한 계획이 필요합니다. 여기에는 높은 수준의 보안 확인, 모든 잠재 사용자를 대상으로 트레이닝하는 것, 모든 문제가 해결되었다는 것을 확인하는 여러 가지 연습 달기가 포함됩니다.
 
-#### Milestones {#milestones-6}
+#### 마일스톤 {#milestones-6}
 
 * **준비**
 
@@ -404,7 +404,7 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
    모든 관련 직원이 교육을 받았는지 확인하십시오.
 
-   강좌 카탈로그에서 [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) 를 참조하십시오.
+   강좌 카탈로그에서 [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)을 참조하십시오.
 
 * **관리자 교육**
 
@@ -430,13 +430,13 @@ Adobe Experience Manager(AEM) 구현을 위한 프로젝트를 관리하려면 �
 
    솔루션의 보안을 보장하기 위해 광범위한 보안 테스트를 실시하여 특정 침투 테스트를 수행합니다.
 
-   자세한 내용은 [보안 체크리스트를](/help/sites-administering/security-checklist.md) 참조하십시오.
+   자세한 내용은 [보안 검사 목록](/help/sites-administering/security-checklist.md)을 참조하십시오.
 
 ### Go Live {#go-live}
 
 Go Live를 가능한 한 부드럽게 하기를 원하는 경우 마지막 단계에서도 클린 실행을 위한 계획이 필요합니다.
 
-#### Milestones {#milestones-7}
+#### 마일스톤 {#milestones-7}
 
 * **준비**
 
@@ -466,9 +466,9 @@ Go Live를 가능한 한 부드럽게 하기를 원하는 경우 마지막 단�
 
 체크리스트는 개인별로 설계되었습니다. 이러한 역할은 프로젝트 라이프사이클에 중요한 역할을 합니다.
 
-또한 특정 작업에 관련된 [다른](#other-persona) 사람이 있습니다.
+또한 특정 작업에 관련된 일부 [기타 persona](#other-persona)도 있습니다.
 
-### 프로젝트 후원사 {#project-sponsor}
+### 프로젝트 스폰서 {#project-sponsor}
 
 프로젝트 후원사는 다음과 같습니다.
 
@@ -488,7 +488,7 @@ Go Live를 가능한 한 부드럽게 하기를 원하는 경우 마지막 단�
 * 해당 예산을 기준으로 프로젝트를 정의하고 리소스를 관리할 책임이 있습니다.
 * 프로젝트에 관련된 모든 사용자를 위한 주요 커뮤니케이션 점입니다.
 
-### 건축가 {#architect}
+### 아키텍트 {#architect}
 
 솔루션 설계자:
 
@@ -577,31 +577,31 @@ Go Live를 가능한 한 부드럽게 하기를 원하는 경우 마지막 단�
 
    * 웹 사이트 컨텐츠를 만들고 유지 관리하는 데 시스템을 사용하는 사람입니다.
 
-## 필수 문서 및 자료 {#required-documents-and-deliverables}
+## 필수 문서 및 산출물 {#required-documents-and-deliverables}
 
-각 이정표에 대한 **필수 문서** 및 **산출물** 이 체크목록에 포함되어 있습니다.
+각 이정표에 대한 **필수 문서** 및 **결과물**&#x200B;에 대한 체크리스트가 포함됩니다.
 
 * 이들 사이에는 1:1의 관계가 없다.예를 들어, 필수 문서 그룹으로 인해 하나의 결과물이 산출될 수 있습니다.
 * 하나의 페르소나에서 산출할 수 있는 문서는 동일한 이정표 동안 다른 참가자에 대한 필수 문서일 수 있습니다.
 
 ### 필수 문서 {#required-documents}
 
-자료 **를** 작성할 때 적절한 사람이 필요한 문서입니다.
+**필수 문서**&#x200B;는 결과물을 작성할 때 적절한 사람이 필요합니다.
 
-각 필수 **문서에** 대해 페르소나는 다음을 나타내야 합니다.
+각 **필수 문서**&#x200B;에 대해 다음 내용이 표시되어야 합니다.
 
 * **Y/N**:수신되었는지 여부.
 * **1-3**:받은 문서의 품질 표시.
 
-### 결과물 {#deliverables}
+### 산출물 {#deliverables}
 
 각 이정표에 대해 해당 페르소나는 특정 문서를 제공하고 특정 이정표에 대한 책임을 실현합니다.
 
-각 산출물에 **대해** 페르소나는 다음을 나타내야 합니다.
+각 **결과물**&#x200B;에 대해 페르소나는 다음을 나타내야 합니다.
 
 * **Y/N**:완료했는지 여부
 
-결과물은 현재 또는 이후 **이정표에** 대해 필수 문서로 사용되는 경우가 많습니다.
+결과물은 종종 현재 또는 이후 이정표에 대해 **필수 문서**&#x200B;로 사용됩니다.
 
 ## 관련 우수 사례 {#related-best-practices}
 
@@ -612,14 +612,15 @@ Go Live를 가능한 한 부드럽게 하기를 원하는 경우 마지막 단�
    * [엔터프라이즈 개발 운영](/help/managing/enterprise-devops.md)
    * [SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md)
    * [AEM 및 웹 접근성 지침](/help/managing/web-accessibility.md)
-   * [일반 데이터 보호 규정](/help/managing/data-protection-and-privacy.md)* [모범 사례 배포 및 유지 관리](/help/sites-deploying/best-practices.md)
+   * [일반 데이터 보호 규정](/help/managing/data-protection-and-privacy.md)*  [모범 사례 배포 및 유지 관리](/help/sites-deploying/best-practices.md)
 * [관리 우수 사례](/help/sites-administering/administer-best-practices.md)
 * [개발 우수 사례](/help/sites-developing/best-practices.md)
 * [작성 우수 사례](/help/sites-authoring/best-practices.md)
 
 ## 주요 설명서 영역 {#key-documentation-areas}
 
-* AEM 설명서추가로, AEM 설명서의 다음 섹션에서는 특정 관심 사항에 대해 설명합니다(하지만 이 목록은 일부 제외).
+* AEM 설명서
+또한 AEM 문서의 다음 섹션에 특히 관심이 있습니다(하지만 이 목록은 일부 아님).
 
    * [보안](/help/sites-developing/security.md)
    * [권장 배포](/help/sites-deploying/recommended-deploys.md)
@@ -633,5 +634,5 @@ Go Live를 가능한 한 부드럽게 하기를 원하는 경우 마지막 단�
 
 * 관련 설명서
 
-   * Adobe Experience Cloud - Adobe Experience Cloud [를 위한 계획](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
+   * Adobe Experience Cloud - [Adobe Experience Cloud 계획](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
 
