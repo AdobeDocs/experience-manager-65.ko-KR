@@ -19,9 +19,9 @@ ht-degree: 12%
 ---
 
 
-# Assignments Essentials {#assignments-essentials}
+# 할당 필수 {#assignments-essentials}
 
-역량 강화 커뮤니티 [](/help/communities/overview.md#enablement-community) 사이트의 할당 기능 작업에 필요한 필수 정보에 대해 자세히 알아보십시오.
+[enablement community](/help/communities/overview.md#enablement-community) sites의 할당 기능을 사용하여 작업하는 데 반드시 필요한 정보에 대해 읽어 봅니다.
 
 할당 기능은 활성 리소스 및 학습 경로를 활성 커뮤니티 구성원에게 지정하는 기능입니다.
 
@@ -39,7 +39,7 @@ ht-degree: 12%
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.enabltumbs.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.lear닝경로</td>
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.lear닝경로</td>
   </tr>
   <tr>
    <td> <strong>템플릿</strong></td>
@@ -51,7 +51,7 @@ ht-degree: 12%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>할당 <a href="/help/communities/assignments.md">기능 보기</a></td>
+   <td><a href="/help/communities/assignments.md">할당 기능</a>을 참조하십시오.</td>
   </tr>
  </tbody>
 </table>
@@ -86,7 +86,7 @@ ht-degree: 12%
 
 ### 지정 기능 {#assignments-function}
 
-Assignments 함수를 포함하는 커뮤니티 사이트 구조 [에 구성된](/help/communities/functions.md#assignments-function)` [assignments](/help/communities/assignments.md)` 구성 요소가 포함됩니다.
+[Assignments 함수](/help/communities/functions.md#assignments-function)가 포함된 커뮤니티 사이트 구조에는 구성된 ` [assignments](/help/communities/assignments.md)` 구성 요소가 포함됩니다.
 
 ### 참조 API {#reference-apis}
 
@@ -94,5 +94,5 @@ Assignments 함수를 포함하는 커뮤니티 사이트 구조 [에 구성된]
 
 * [보고 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [보고 Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [보고 분석 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 
