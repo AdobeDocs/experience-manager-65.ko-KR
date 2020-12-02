@@ -20,13 +20,13 @@ ht-degree: 1%
 
 # 컨텍스트 내 중재 {#in-context-moderation}
 
-AEM Communities의 경우 커뮤니티 컨텐츠가 게시된 게시된 페이지에서 직접 관리자와 신뢰할 수 있는 커뮤니티 구성원이 중재를 수행할 수 있습니다.
+AEM Communities의 경우 커뮤니티 컨텐츠가 게시된 게시된 페이지에서 관리자 및 신뢰할 수 있는 커뮤니티 구성원이 직접 중재할 수 있습니다.
 
-중재 콘솔을 [](moderation.md)사용할 때 컨텐츠에 대해 표시되는 정보에는 게시된 페이지에 대한 링크가 포함되어 있으므로 컨텍스트 내 중재 시 사용 가능한 추가 중재 작업에 액세스할 수 있습니다.
+[중재 콘솔](moderation.md)을 사용할 때 컨텐츠에 대해 표시되는 정보에는 게시된 페이지에 대한 링크가 포함되어 있으므로 컨텍스트 내에서 중재할 때 사용할 수 있는 추가 중재 작업에 액세스할 수 있습니다.
 
 ## 중재 작업 {#moderation-actions}
 
-중재 작업에 대한 설명은 중재 [개요를 참조하십시오](moderate-ugc.md#moderation-actions).
+[중재 작업](moderate-ugc.md#moderation-actions)에 대한 설명은 중재 개요를 참조하십시오.
 
 ## 중재 UI {#moderation-ui}
 
@@ -40,15 +40,15 @@ AEM Communities의 경우 커뮤니티 컨텐츠가 게시된 게시된 페이�
 
 ## 예 {#example}
 
-AEM Communities [시작하기](http://localhost:4503/content/sites/engage/en.html) 시 만든 Geometrixx Engage [](getting-started.md)사이트를 사용하면 포럼의 스레드를 신속하게 설정하여 게시 환경에서 다양한 중재 활동을 경험할 수 있습니다(아래 참조).
+[AEM Communities 시작](getting-started.md)에 생성된 [Geometrixx 참여](http://localhost:4503/content/sites/engage/en.html) 사이트를 사용하면 다음과 같이 게시 환경에서 다양한 중재 활동을 경험할 수 있는 포럼의 스레드를 신속하게 설정할 수 있습니다.
 
 Aaron McDonald씨(aaron.mcdonald@mailinator.com)은 사이트를 만들 때 커뮤니티 참여-중재자 그룹에 추가하여 신뢰할 수 있는 커뮤니티 구성원으로 식별되었습니다.
 
-Rebekah Larsen(rebekah.larsen@trashymail.com)은 [구성원 콘솔을 사용하여 커뮤니티 참여-구성원 그룹의 구성원으로 추가할 수 있습니다](members.md).
+Rebekah Larsen(rebekah.larsen@trashymail.com)은 [구성원 콘솔](members.md)을 사용하여 community-engage-members 그룹의 구성원으로 추가할 수 있습니다.
 
-커뮤니티 사용자 그룹에 대한 자세한 내용은 사용자 및 사용자 그룹 [관리를 참조하십시오](users.md).
+커뮤니티 사용자 그룹에 대한 자세한 내용은 [사용자 및 사용자 그룹 관리](users.md)를 참조하십시오.
 
-### 포럼 게시물 만들기 {#create-the-forum-posts}
+### 포럼 게시물 {#create-the-forum-posts} 만들기
 
 * Rebekah Larsen으로 로그인(rebekah.larsen@trashymail.com)
 
@@ -97,9 +97,9 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)은 [구성원 콘솔을 사용하�
 
 ### 새 멤버(#4) {#new-member}
 
-작성자의 경우 관리자로 로그인하고 구성원 콘솔을 사용하여 커뮤니티 참여-구성원 그룹의 새 구성원으로 Boyd Larsen(boyd.larsen@dodgit.com)을 추가한 다음 [로그아웃하십시오](members.md).
+작성자의 경우 관리자로 로그인하고 [구성원 콘솔](members.md)을 사용하여 커뮤니티 참여-구성원 그룹의 새 구성원으로 Boyd Larsen(boyd.larsen@dodgit.com)을 추가한 다음 로그아웃하십시오.
 
-게시 시 Boyd Larsen으로 로그인하고 을 선택하여 스레드 `Forum`에 액세스한 다음 `Read more` Hummingbird 게시물에 액세스합니다.
+게시 시 Boyd Larsen으로 로그인하고 `Forum`을 선택한 다음 Hummingbird 게시물에 대해 `Read more`을 선택하여 스레드를 액세스합니다.
 
 알림:
 
@@ -113,7 +113,7 @@ Andrew가 게시한 컨텐츠에 플래그를 지정하려면 보이드가 플�
 
 ![community-forum-member](assets/community-forum-member.png)
 
-### Administrator (#3) {#administrator}
+### 관리자(#3) {#administrator}
 
 관리자로 로그인하고 포럼을 선택한 다음 게시물에 대해 자세히 읽기를 선택하여 스레드에 액세스합니다.
 
@@ -124,9 +124,9 @@ Andrew가 게시한 컨텐츠에 플래그를 지정하려면 보이드가 플�
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-게시 환경에서 [중재 콘솔에](moderation.md) 액세스하려면 관리 메뉴 항목을 선택합니다.
+게시 환경에서 [중재 콘솔](moderation.md)에 액세스하려면 관리 메뉴 항목을 선택합니다.
 
-관리자의 경우 Geometrixx Engage 커뮤니티 사이트의 컨텐츠만이 아니라 모든 중재 가능한 컨텐츠가 표시됩니다.
+관리자의 경우 Geometrixx 참여 커뮤니티 사이트의 컨텐츠만이 아니라 모든 중재 가능한 컨텐츠가 표시됩니다.
 
 검색 필터는 열기나 닫기를 전환하는 사이드 패널입니다.
 
@@ -147,11 +147,11 @@ Andrew가 게시한 컨텐츠에 플래그를 지정하려면 보이드가 플�
 
 ![커뮤니티 포럼-중재자](assets/community-forum-moderator.png)
 
-게시 환경에서 [중재 콘솔에](moderation.md) 액세스하려면 관리 메뉴 항목을 선택합니다.
+게시 환경에서 [중재 콘솔](moderation.md)에 액세스하려면 관리 메뉴 항목을 선택합니다.
 
-커뮤니티 중재자의 경우 Geometrixx Engage 커뮤니티 사이트의 중재 가능한 컨텐츠만 표시됩니다.
+커뮤니티 중재자의 경우 Geometrixx 참여 커뮤니티 사이트의 중재 가능한 컨텐츠만 표시됩니다.
 
-커뮤니티 중재자에게는 관리자와 동일한 옵션이 있습니다(이미지가 검색 사이드바가 닫혀 있음). 그러나 다른 AEM 콘솔에 액세스할 수는 없습니다.
+커뮤니티 중재자는 관리자와 동일한 옵션을 사용합니다(검색 사이드바가 닫혀 있는 이미지). 그러나 다른 AEM 콘솔에 액세스할 수는 없습니다.
 
 로그아웃.
 
