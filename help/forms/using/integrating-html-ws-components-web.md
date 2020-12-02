@@ -18,12 +18,12 @@ ht-degree: 0%
 ---
 
 
-# 웹 애플리케이션에서 AEM Forms 작업 영역 구성 요소 통합 {#integrating-aem-forms-workspace-components-in-web-applications}
+# 웹 응용 프로그램에서 AEM Forms 작업 영역 구성 요소 통합 {#integrating-aem-forms-workspace-components-in-web-applications}
 
-자체 웹 애플리케이션에서 AEM Forms 작업 영역 [구성](/help/forms/using/description-reusable-components.md) 요소를 사용할 수 있습니다. 다음 샘플 구현에서는 CRX™ 인스턴스에 설치된 AEM Forms 작업 공간 개발 패키지의 구성 요소를 사용하여 웹 애플리케이션을 만듭니다. 특정 요구 사항에 맞게 아래 솔루션을 사용자 정의합니다. 샘플 구현은 웹 포털 `UserInfo`에서 `FilterList`및 `TaskList`구성 요소를 재사용합니다.
+자신의 웹 응용 프로그램에서 AEM Forms 작업 영역 [components](/help/forms/using/description-reusable-components.md)을 사용할 수 있습니다. 다음 샘플 구현에서는 CRX™ 인스턴스에 설치된 AEM Forms 작업 공간 개발 패키지의 구성 요소를 사용하여 웹 애플리케이션을 만듭니다. 특정 요구 사항에 맞게 아래 솔루션을 사용자 정의합니다. 샘플 구현에서는 웹 포털 내에 `UserInfo`, `FilterList` 및 `TaskList`구성 요소를 다시 사용합니다.
 
-1. 의 CRXDE Lite 환경에 로그인합니다 `https://'[server]:[port]'/lc/crx/de/`. AEM Forms 작업 공간 개발 패키지가 설치되어 있는지 확인합니다.
-1. 패스를 만듭니다 `/apps/sampleApplication/wscomponents`.
+1. `https://'[server]:[port]'/lc/crx/de/`에 CRXDE Lite 환경에 로그인합니다. AEM Forms 작업 공간 개발 패키지가 설치되어 있는지 확인합니다.
+1. 경로 `/apps/sampleApplication/wscomponents`을(를) 만듭니다.
 1. css, images, js/libs, js/runtime 및 js/registry.js 복사
 
    * 변환 전: `/libs/ws`
@@ -43,9 +43,9 @@ ht-degree: 0%
        });
    ```
 
-1. /content 아래에 이름 및 유형별로 노드 `sampleApplication` 를 만듭니다 `nt:unstructured`. 이 노드의 속성에서 문자열 및 값 `sling:resourceType` 의 유형을 추가합니다 `sampleApplication`. 이 노드의 액세스 제어 목록에서 jcr:읽기 권한을 `PERM_WORKSPACE_USER` 허용하는 항목을 추가합니다. 또한 액세스 제어 목록에 jcr: `/apps/sampleApplication` 읽기 권한을 `PERM_WORKSPACE_USER` 허용하는 항목을 추가합니다.
-1. 템플릿 값 `/apps/sampleApplication/wscomponents/js/registry.js` 에 대한 경로 `/lc/libs/ws/` `/lc/apps/sampleApplication/wscomponents/` 업데이트
-1. 포털 홈 페이지 JSP 파일 `/apps/sampleApplication/GET.jsp`에서 다음 코드를 추가하여 포털 내에 필요한 구성 요소를 포함합니다.
+1. /content by name `sampleApplication` 아래에 노드를 만들고 `nt:unstructured`을 입력합니다. 이 노드의 속성에서 String 형식의 `sling:resourceType` 및 값 `sampleApplication`을 추가합니다. 이 노드의 액세스 제어 목록에서 jcr:read 권한을 허용하는 `PERM_WORKSPACE_USER`에 대한 항목을 추가합니다. 또한 `/apps/sampleApplication`의 액세스 제어 목록에서 jcr:read 권한을 허용하는 `PERM_WORKSPACE_USER`에 대한 항목을 추가합니다.
+1. `/apps/sampleApplication/wscomponents/js/registry.js`에서 템플릿 값의 경로를 `/lc/libs/ws/`에서 `/lc/apps/sampleApplication/wscomponents/`로 업데이트합니다.
+1. 포털 홈 페이지 JSP 파일(`/apps/sampleApplication/GET.jsp`)에서 다음 코드를 추가하여 포털 내에 필요한 구성 요소를 포함합니다.
 
    ```jsp
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
@@ -82,7 +82,7 @@ ht-degree: 0%
    });
    ```
 
-1. 포털 CSS를 수정하여 포털에서 필요한 구성 요소의 레이아웃, 배치 및 스타일을 구성합니다. 예를 들어 이 포털에서 userInfo 구성 요소를 잘 볼 수 있도록 배경색을 검은색으로 유지하고자 합니다. 다음과 같이 배경색을 변경하여 이를 수행할 수 `/apps/sampleApplication/wscomponents/css/style.css` 있습니다.
+1. 포털 CSS를 수정하여 포털에서 필요한 구성 요소의 레이아웃, 배치 및 스타일을 구성합니다. 예를 들어 이 포털에서 userInfo 구성 요소를 잘 볼 수 있도록 배경색을 검은색으로 유지하고자 합니다. 다음과 같이 `/apps/sampleApplication/wscomponents/css/style.css`의 배경색을 변경하여 이 작업을 수행할 수 있습니다.
 
    ```css
    body {
