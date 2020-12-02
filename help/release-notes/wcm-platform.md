@@ -1,6 +1,6 @@
 ---
 title: AEM Foundation 및 리포지토리
-description: Adobe Experience Manager 플랫폼 및 저장소에 대한 릴리스 노트입니다.
+description: Adobe Experience Manager 플랫폼 및 보관소에 대한 릴리스 노트입니다.
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
@@ -10,18 +10,18 @@ ht-degree: 49%
 ---
 
 
-# AEM Foundation and repository {#aem-foundation-repository}
+# AEM Foundation 및 리포지토리 {#aem-foundation-repository}
 
 ## 변경 사항 목록 {#list-of-changes}
 
 ### 저장소 {#repository}
 
 * Adobe Experience Manager 6.5의 Foundation은 OSGi 기반 프레임워크(Apache Sling 및 Apache Felix)의 업데이트된 버전과 Java 컨텐츠 리포지토리인 Apache Jackrabbit Oak 1.10.2에 구축됩니다.
-* 수정된 문제에 대한 개요는 [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) 및 [Apache Jackrabbit Oak Jira v. 1.10.2를 참조하십시오](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
+* 수정된 문제에 대한 개요는 [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) 및 [Apache Jackrabbit Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt)를 참조하십시오.
 
 >[!CAUTION]
 >
->AEM 6.3에는 리포지토리 마이그레이션이 필요하므로 Oak Segment Tar의 새 버전이 표시됩니다. 이전 버전의 TarMK에서 업그레이드하거나 다른 유형의 지속성 중에서 새 세그먼트 Tar를 전환하려는 경우 이 단계는 필수입니다. For more information on what the benefits of the new Segment Tar are, see the [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>AEM 6.3에는 리포지토리 마이그레이션이 필요하므로 Oak Segment Tar의 새 버전이 표시됩니다. 이전 버전의 TarMK에서 업그레이드하거나 다른 유형의 지속성 중에서 새 세그먼트 Tar를 전환하려는 경우 이 단계는 필수입니다. 새 세그먼트 타르의 이점에 대한 자세한 내용은 [Oak 세그먼트 Tar로 마이그레이션 FAQ](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar)을 참조하십시오.
 
 ### Java 지원 {#java-support}
 
@@ -35,7 +35,7 @@ ht-degree: 49%
 
 ### 프로젝트 및 워크플로우 {#projects-and-workflows}
 
-* New Workflow Model editor introduced in 6.4 has been improved to include more operations like Copy and Publish, Variable support in Workflow steps and enhanced `OR` and `AND` splits.
+* 6.4에 도입된 새로운 워크플로우 모델 편집기는 복사 및 게시, 워크플로우 단계의 변수 지원, 향상된 `OR` 및 `AND` 분할 등의 추가 작업을 포함하도록 개선되었습니다.
 
 ### 검색 {#searching}
 
@@ -58,14 +58,14 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 >[!CAUTION]
 >
->Adobe은 클래식 UI를 더 이상 개선하지 않습니다. Experience Manager 6.5에는 이전 버전과의 호환성을 위한 클래식 UI가 포함되어 있습니다. Classic UI remains fully supported while being deprecated [Read more](/help/sites-deploying/ui-recommendations.md).
+>Adobe은 클래식 UI를 더 이상 개선하지 않습니다. Experience Manager 6.5에는 이전 버전과의 호환성을 위한 클래식 UI가 포함되어 있습니다. 클래식 UI는 [더 보기](/help/sites-deploying/ui-recommendations.md)에서 더 이상 사용하지 않는 동안 완전히 지원됩니다.
 
 ### 업그레이드 {#upgrade}
 
 * 업그레이드 절차는 대부분 6.5에서 동일하게 유지됩니다.
 * 6.4에는 이전 버전과의 호환성 , 업그레이드 복잡성 평가 및 지속 가능 업그레이드 기능이 지속적으로 도입되었습니다. 필요한 경우 이러한 영역에 대해 버전별 업데이트가 진행되었습니다.
 * Pattern Detector 패키지가 단순화되었으며 사용 가능한 소스 버전에 대한 6.5로의 업그레이드를 평가하는 패키지가 한 가지 있습니다.
-* 업그레이드 절차에 대한 자세한 내용은 [업그레이드 설명서를 참조하십시오](/help/sites-deploying/upgrade.md).
+* 업그레이드 절차에 대한 자세한 내용은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
 
 ### 웹 서버 {#web-server}
 
