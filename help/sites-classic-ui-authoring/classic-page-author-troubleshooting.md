@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    * 다음과 같이 다양한 가능성이 있습니다.
    * 페이지가 올바로 복제되었는지 확인합니다. 페이지 상태를 확인하고, 필요할 경우 복제 큐의 상태도 확인합니다.
    * 로컬 브라우저의 캐시를 지우고 다시 페이지에 액세스합니다.
-   * Add `?` to the end of the page URL. For example:
+   * 페이지 URL의 끝에 `?`를 추가합니다. 예:
 
       `http://localhost:4502/sites.html/content?`
 
@@ -68,7 +71,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 * **문제:**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * **찾기 및 바꾸기** 옵션을 사용할 때 페이지에서 `find` 용어의 일부 인스턴스가 바뀌지 않을 수 있습니다.
 
 * **이유**:
 
