@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager용 액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성)
 description: AEM을 사용하여 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '13956'
 ht-degree: 100%
 
@@ -65,13 +65,13 @@ ht-degree: 100%
 
 유용한 추가 이점은 텍스트 대체 요소를 통해 텍스트가 아닌 컨텐츠를 검색 엔진 기술로 색인화할 수 있다는 것입니다.
 
-#### 충족 방법 - 텍스트가 아닌 컨텐츠(1.1.1) {#how-to-meet-non-text-content}
+#### 충족 방법 - 텍스트가 아닌 컨텐츠(1.1.1)  {#how-to-meet-non-text-content}
 
-정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 작업은 **대체 텍스트** 필드에서 수행할 수 있습니다. 예를 들어 핵심 구성 요소 **[이미지](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)**를 참조하십시오.
+정적 그래픽의 경우, 기본 요건은 그래픽에 대해 동등한 텍스트 대체 요소를 제공하는 것입니다. 이 작업은 **대체 텍스트** 필드에서 수행할 수 있습니다. 예를 들어 핵심 구성 요소 **[이미지](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)**&#x200B;를 참조하십시오.
 
 >[!NOTE]
 >
->전체 구성 요소에 대해 **[레이블](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)**필드(**액세서빌러티&#x200B;**탭)가 있더라도**회전 슬라이드&#x200B;**등의 바로 사용 가능한 일부 핵심 구성 요소는 개별 이미지에 대체 텍스트 설명을 추가하기 위해**[대체 텍스트](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** 필드를 제공하지 않습니다.
+>전체 구성 요소에 대해 **[레이블](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)** 필드(**액세서빌러티** 탭)가 있더라도 **회전 슬라이드** 등의 바로 사용 가능한 일부 핵심 구성 요소는 개별 이미지에 대체 텍스트 설명을 추가하기 위해 **[대체 텍스트](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** 필드를 제공하지 않습니다.
 >
 >AEM 인스턴스에 대해 이러한 구성 요소의 버전을 구현하는 경우 작성자가 컨텐츠에 해당 설명을 추가할 수 있게 하려면 개발팀이 `alt`[ 특성을 지원하도록 해당 구성 요소를 구성해야 할 것입니다(추가 HTML 요소 및 특성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -114,7 +114,7 @@ W3C에서는 다음과 같이 많은 방법을 제안합니다. 이러한 각각
 >
 >배경과 전경 텍스트 간에는 적절한 수준의 대비가 있어야 합니다. 이에 대해서는 [대비(최소)(1.4.3)](#contrast-minimum)에서 더 자세히 설명합니다.
 
-#### 추가 정보 - 텍스트가 아닌 컨텐츠(1.1.1) {#more-information-non-text-content}
+#### 추가 정보 - 텍스트가 아닌 컨텐츠(1.1.1)  {#more-information-non-text-content}
 
 * [성공 기준 이해 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [성공 기준을 충족하는 방법 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
@@ -124,7 +124,7 @@ W3C에서는 다음과 같이 많은 방법을 제안합니다. 이러한 각각
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
 -->
 
-### 시간 기반 미디어(1.2) {#time-based-media}
+### 시간 기반 미디어(1.2)  {#time-based-media}
 
 [지침 1.2 시간 기반 미디어: 시간 기반 미디어에 대한 대체 요소를 제공합니다.](https://www.w3.org/TR/WCAG/#time-based-media)
 
@@ -248,7 +248,7 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 * 레벨 AA
 * 캡션(라이브): 동기화된 미디어에 있는 모든 라이브 오디오 컨텐츠에 대해 캡션이 제공됩니다.
 
-#### 목적 - 캡션(라이브)(1.2.4) {#purpose-captions-live}
+#### 목적 - 캡션(라이브)(1.2.4)  {#purpose-captions-live}
 
 이 성공 기준이 웹캐스트와 같은 라이브 프레젠테이션을 다루는 경우를 제외하면 이 성공 기준은 소리를 아예 들을 수 없거나 청각 장애가 있는 사람이 경험하는 액세서빌러티 장벽을 해결한다는 점에서 [캡션(사전 녹음된)](#captions-prerecorded)과 동일합니다.
 
@@ -286,7 +286,7 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 * [성공 기준 이해 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [성공 기준을 충족하는 방법 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### 적응성(1.3) {#adaptable}
+### 적응성(1.3)  {#adaptable}
 
 [지침 1.3 적응성: 정보나 구조의 손상 없이 다양한 방식으로 보여줄 수 있는 컨텐츠(예: 간단한 레이아웃)를 만드십시오.](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -302,7 +302,7 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 * 레벨 A
 * 정보 및 관계: 프레젠테이션을 통해 전달된 정보, 구조 및 관계는 프로그래밍 방식으로 결정되거나 텍스트에서 사용할 수 있습니다.
 
-#### 목적 - 정보 및 관계(1.3.1) {#purpose-info-and-relationships}
+#### 목적 - 정보 및 관계(1.3.1)  {#purpose-info-and-relationships}
 
 장애를 가진 사람이 사용하는 많은 보조 기술은 컨텐츠를 효과적으로 표시하거나 *이해*&#x200B;하기 위해 구조적 정보에 의존합니다. 이러한 구조적 정보는 페이지 머리글, 표 행 및 열 머리글과 목록 유형의 형식을 취할 수 있습니다. 예를 들어, 스크린 리더를 사용하는 사용자는 머리글에서 머리글까지 페이지를 탐색할 수 있습니다. 하지만 페이지 컨텐츠가 기본 HTML이 아니라 시각적 스타일링을 통해서만 구조를 갖는 것으로 나타나면, 보조 기술에 사용할 수 있는 구조적 정보가 없어서 더 쉬운 탐색을 지원하는 것으로 기능이 제한됩니다.
 
@@ -357,6 +357,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
       >
       >* `<b>` 대상 `<strong>`
       >* `<i>` 대상 `<em>`
+
       >
       >이러한 요소는 효과가 동일하지만 `<strong>`과 `<em>`이 의미상 올바른 html이므로 더 많이 사용합니다. 개발팀은 프로젝트 인스턴스를 개발할 때 `<strong>`과 `<em>`(`<b>`와 `<i>` 대신)을 사용하도록 RTE를 구성할 수 있습니다.
 
@@ -432,7 +433,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 * 레벨 A
 * 감각 특성: 컨텐츠를 이해하고 작동시키기 위해 제공된 지침은 모양, 크기, 시각적 위치, 방향 또는 소리와 같은 구성 요소의 감각 특성에만 전적으로 의지하지는 않습니다.
 
-#### 목적 - 감각 특성(1.3.3) {#purpose-sensory-characteristics}
+#### 목적 - 감각 특성(1.3.3)  {#purpose-sensory-characteristics}
 
 디자이너는 정보를 표현할 때 색상, 모양, 텍스트 스타일 또는 컨텐츠의 절대적 또는 상대적 위치와 같은 시각적 디자인 기능에 초점을 맞추는 경우가 많습니다. 이러한 기능은 정보를 전달하는 데 매우 강력한 디자인 기술일 수 있지만(인지적 액세서빌러티 요구 사항이 있는 시력이 정상인 사용자의 전체 액세서빌러티를 향상시킬 수 있음), 시각 장애가 있는 사람은 위치, 색상 또는 모양과 같은 속성을 시각적으로 식별해야 하는 정보에 액세스하지 못할 수 있습니다.
 
@@ -442,7 +443,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 >
 >색상에 대한 대체 요소와 관련된 요구 사항을 알려면 [색상 사용](#use-of-color)을 참조하십시오.
 
-#### 충족하는 방법 - 감각 특성(1.3.3) {#how-to-meet-sensory-characteristics}
+#### 충족하는 방법 - 감각 특성(1.3.3)  {#how-to-meet-sensory-characteristics}
 
 페이지 컨텐츠의 시각적 특성에 의존하는 모든 정보가 대체 형식으로도 제공되도록 하십시오.
 
@@ -453,12 +454,12 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 >
 >수사적 용어의 사용이 비시각적 컨텍스트에서 의미를 갖는다는 것을 알고 있다면 이러한 용어를 사용할 수 있습니다. 예를 들어, *위*&#x200B;와 *아래*&#x200B;는 각각 특정 컨텐츠 항목의 앞 컨텐츠와 뒤 컨텐츠를 의미하므로 일반적으로 사용할 수 있으며, 이는 컨텐츠을 큰 소리로 말할 때에도 여전히 적용됩니다.
 
-#### 추가 정보 - 감각 특성(1.3.3) {#more-information-sensory-characteristics}
+#### 추가 정보 - 감각 특성(1.3.3)  {#more-information-sensory-characteristics}
 
 * [성공 기준 이해 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [성공 기준을 충족하는 방법 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### 구별 가능성(1.4) {#distinguishable}
+### 구별 가능성(1.4)  {#distinguishable}
 
 [지침 1.4 구별 가능성: 배경에서 전경을 구별하는 것을 포함하여 사용자가 컨텐츠를 더 쉽게 보고 들을 수 있도록 하십시오.](https://www.w3.org/TR/WCAG/#distinguishable)
 
@@ -472,7 +473,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 >
 >이 성공 기준에서는 색상 지각에 대해 자세히 설명합니다. 색상 및 다른 시각 표현 코딩에 대한 프로그래밍 방식 액세스를 포함하여 지각의 다른 형식은 [적응성(1.3)](#adaptable)에서 다룹니다.
 
-#### 목적 - 색상 사용(1.4.1) {#purpose-use-of-color}
+#### 목적 - 색상 사용(1.4.1)  {#purpose-use-of-color}
 
 색상은 분명히 웹 페이지의 미적 호소력을 향상하는 효과적 방법이며 정보를 전달하는 데에도 유용합니다. 하지만 실명에서부터 특정 색상을 구별하지 못하는 색약에 이르기까지 다양한 시각 장애가 있습니다. 따라서 색상 코딩은 정보를 제공하는 데 있어 믿을 수 있는 방법이 아닙니다.
 
@@ -544,7 +545,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 >
 >순전히 장식 목적으로 사용된 텍스트는 이 성공 기준에서 제외되었습니다.
 
-#### 충족하는 방법 - 대비(최소)(1.4.3) {#how-to-meet-contrast-minimum}
+#### 충족하는 방법 - 대비(최소)(1.4.3)  {#how-to-meet-contrast-minimum}
 
 텍스트가 배경과 충분히 대비되는지 확인하십시오. 대비율은 해당 텍스트의 크기와 스타일에 따라 달라집니다.
 
@@ -573,7 +574,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 
 권장 대비 수준을 충족시킬 수 없는 경우 해당 페이지의 대체, 상응 버전(색상 대비 문제가 없는 페이지)에 대한 링크를 제공하거나, 사용자가 자신의 요구 사항에 맞춰 페이지 색상 구성표의 대비를 조정할 수 있도록 해야 합니다.
 
-#### 추가 정보 - 대비(최소)(1.4.3) {#more-information-contrast-minimum}
+#### 추가 정보 - 대비(최소)(1.4.3)  {#more-information-contrast-minimum}
 
 * [성공 기준 이해 1.4.3](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [성공 기준을 충족하는 방법 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
@@ -609,20 +610,20 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 >
 >로고(로고나 브랜드 이름에 속하는 텍스트)는 필수로 간주됩니다.
 
-#### 목적 - 텍스트 이미지(1.4.5) {#purpose-images-of-text}
+#### 목적 - 텍스트 이미지(1.4.5)  {#purpose-images-of-text}
 
 텍스트 이미지는 특별한 스타일의 텍스트를 선호하는 경우 많이 사용됩니다. 예를 들어, 로고나 다른 소스(예: 종이 문서의 스캔)에서 생성된 텍스트가 여기에 해당합니다. 하지만 HTML로 표시되거나 CSS를 사용하여 스타일링된 텍스트와 비교하면, 텍스트 이미지는 시각 장애나 읽기에 어려움이 있는 사람에게 필요할 수 있는 크기나 모양 변경 면에서 유연성이 부족합니다.
 
-#### 충족하는 방법 - 텍스트 이미지(1.4.5) {#how-to-meet-images-of-text}
+#### 충족하는 방법 - 텍스트 이미지(1.4.5)  {#how-to-meet-images-of-text}
 
 텍스트 이미지를 사용해야 하는 경우 텍스트를 사용자 지정이 가능한 방식으로 사용할 수 있도록 CSS를 사용하여 텍스트 이미지를 HTML에서 상응하는 텍스트로 바꾸십시오. 이러한 방법에 대한 예를 보려면 [C30: CSS를 사용하여 텍스트를 텍스트 이미지로 바꾸기 및 전환할 사용자 인터페이스 컨트롤 제공](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30)을 참조하십시오.
 
-#### 추가 정보 - 텍스트 이미지(1.4.5) {#more-information-images-of-text}
+#### 추가 정보 - 텍스트 이미지(1.4.5)  {#more-information-images-of-text}
 
 * [성공 기준 이해 1.4.5](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
 * [성공 기준을 충족하는 방법 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
 
-## 원칙 2: 작동 가능 {#principle-operable}
+## 원칙 2: 작동 가능  {#principle-operable}
 
 [원칙 2: 작동 가능 - 사용자 인터페이스 구성 요소와 탐색 기능은 작동 가능해야 합니다.](https://www.w3.org/TR/WCAG/#operable)
 
@@ -712,11 +713,11 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 1. 주기적으로 소프트웨어에 의해 업데이트되거나, 사용자 에이전트에게 스트리밍되는 컨텐츠는 일시 중지의 시작과 프레젠테이션 재개 간에 생성되었거나 받은 정보를 보존하거나 제공할 필요가 없습니다. 왜냐하면 기술적으로 가능하지 않을 수도 있고 많은 경우 그래야 한다고 오해할 수도 있습니다.
 1. 미리 로드된 단계나 유사한 상황의 일부로서 발생하는 애니메이션은 모든 사용자에 대해 해당 단계 중에 상호 작용이 발생할 수 없는 경우와 진행 상태를 나타내지 않음으로써 사용자를 혼동시키거나 컨텐츠가 동결되었거나 손상되었다고 생각하게 하는 경우 극히 중요하다고 간주할 수 있습니다.
 
-#### 목적 - 일시 중지, 중지, 숨기기(2.2.2) {#purpose-pause-stop-hide}
+#### 목적 - 일시 중지, 중지, 숨기기(2.2.2)  {#purpose-pause-stop-hide}
 
 특정 사용자에게는 움직이는 컨텐츠가 주의를 분산시키거나 물리적으로 고통스러워 페이지의 다른 부분에 집중하기 어렵게 할 수 있습니다. 움직이는 텍스트를 따라잡는 데 힘든 사람들에게는 읽기 어려운 것으로 나타날 수도 있습니다.
 
-#### 충족하는 방법 - 일시 중지, 중지, 숨기기(2.2.2) {#how-to-meet-pause-stop-hide}
+#### 충족하는 방법 - 일시 중지, 중지, 숨기기(2.2.2)  {#how-to-meet-pause-stop-hide}
 
 컨텐츠의 특성에 따라 이동하거나, 발광하거나, 깜박이는 컨텐츠가 들어 있는 웹 페이지를 만들 때 다음의 제안을 하나 이상 적용할 수 있습니다.
 
@@ -749,7 +750,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 
 때에 따라 발광하는 컨텐츠가 감광성 발작을 초래할 수 있습니다. 이 성공 기준은 이와 같은 사용자가 발광하는 컨텐츠에 대한 걱정 없이 모든 컨텐츠에 액세스하여 경험할 수 있도록 해줍니다.
 
-#### 충족하는 방법 - 세 번 발광 또는 임계값 미만(2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
+#### 충족하는 방법 - 세 번 발광 또는 임계값 미만(2.3.1)  {#how-to-meet-three-flashes-or-below-threshold}
 
 다음 기술이 적용되었는지 확인하는 조치를 취해야 합니다.
 
@@ -792,11 +793,11 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 * 레벨 A
 * 제목이 있는 페이지: 웹 페이지에는 주제나 목적을 설명하는 제목이 있습니다.
 
-#### 목적 - 제목이 있는 페이지(2.4.2) {#purpose-page-titled}
+#### 목적 - 제목이 있는 페이지(2.4.2)  {#purpose-page-titled}
 
 이 성공 기준은 특정 장애에 상관없이, 페이지를 완전히 읽지 않아도 모든 사람이 웹 페이지의 컨텐츠를 빨리 파악하는 데 도움이 됩니다. 페이지 제목은 탭에 표시되어 빨리 찾을 수 있으므로 특히 여러 개의 웹 페이지가 브라우저 탭으로 열려 있을 때 유용합니다.
 
-#### 충족하는 방법 - 제목이 있는 페이지(2.4.2) {#how-to-meet-page-titled}
+#### 충족하는 방법 - 제목이 있는 페이지(2.4.2)  {#how-to-meet-page-titled}
 
 새 HTML 페이지를 AEM에서 만들 때 페이지 제목을 지정할 수 있습니다. 컨텐츠가 실제로 방문자의 필요와 관련이 있는지 여부를 방문자가 신속히 파악할 수 있게 특히 고유한 측면에서 제목이 페이지의 컨텐츠와 목적을 적절히 설명하도록 하십시오.
 
@@ -832,7 +833,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 * 레벨 A
 * 링크 목적(컨텍스트 내): 링크의 목적이 일반적으로 사용자에게 모호한 경우를 제외하고, 각 링크의 목적은 링크 텍스트 자체에서 또는 프로그래밍 방식으로 결정된 링크 컨텍스트와 함께 링크 텍스트에서 결정할 수 있습니다.
 
-#### 목적 - 링크 목적(컨텍스트 내)(2.4.4) {#purpose-link-purpose-in-context}
+#### 목적 - 링크 목적(컨텍스트 내)(2.4.4)  {#purpose-link-purpose-in-context}
 
 장애에 상관없이 모든 사용자에 대해, 적절한 링크 텍스트를 통해 링크의 방향을 명확히 나타내는 것이 매우 중요합니다. 이것은 사용자가 실제로 링크를 따라갈 것인지 여부를 결정하는 데 도움이 됩니다. 의미 있는 링크 텍스트는 대상 페이지의 기능을 더 명확하게 표시하므로 보이는 사용자의 경우, 한 페이지에 여러 개의 링크가 있으면 의미 있는 링크 텍스트가 매우 유용합니다(특히 페이지에 텍스트가 많을 경우). 하나의 페이지에 있는 모든 링크의 목록을 생성할 수 있는 일부 보조 기술 사용자는 링크 텍스트가 고유하고 유용한 정보일 경우 컨텍스트에서 벗어난 링크 텍스트를 더 쉽게 이해할 수 있습니다. 하지만, 인지 장애가 있는 시력이 정상인 사용자는 링크를 통해 어디로 이동되는지 정확히 설명할 만큼 충분한 정보를 제공하지 않는다면 혼란스러울 수 있습니다.
 
@@ -960,21 +961,21 @@ John Smith’s publications
 
 [원칙 3: 이해 가능 - 사용자 인터페이스의 정보 및 작업은 이해가 가능해야 합니다.](https://www.w3.org/TR/WCAG/#understandable)
 
-### 텍스트 컨텐츠를 읽기 가능하고 이해 가능하도록 만들기(3.1) {#make-text-content-readable-and-understandable}
+### 텍스트 컨텐츠를 읽기 가능하고 이해 가능하도록 만들기(3.1)  {#make-text-content-readable-and-understandable}
 
 [지침 3.1 읽기 가능: 텍스트 컨텐츠를 읽기 가능하고 이해 가능하도록 만들기](https://www.w3.org/TR/WCAG/#readable)
 
-### 페이지 언어(3.1.1) {#language-of-page}
+### 페이지 언어(3.1.1)  {#language-of-page}
 
 * 성공 기준 3.1.1
 * 레벨 A
 * 페이지 언어: 각 웹 페이지의 기본 인간 언어는 프로그래밍 방식으로 결정될 수 있습니다.
 
-#### 목적 - 페이지 언어(3.1.1) {#purpose-language-of-page}
+#### 목적 - 페이지 언어(3.1.1)  {#purpose-language-of-page}
 
 이 성공 기준의 목적은 텍스트 및 기타 언어적 컨텐츠를 올바로 렌더링하도록 하는 것입니다. 스크린 리더 사용자의 경우, 이렇게 하면 컨텐츠를 올바로 발음하면서도 시각적 브라우저에는 특정 문자 집합이 올바로 표시될 가능성이 커집니다.
 
-#### 충족하는 방법 - 페이지 언어(3.1.1) {#how-to-meet-language-of-page}
+#### 충족하는 방법 - 페이지 언어(3.1.1)  {#how-to-meet-language-of-page}
 
 이 성공 기준을 충족하기 위해 페이지의 상단에 있는 `<html>` 요소 내에서 `lang` 특성을 사용하여 웹 페이지의 기본 언어를 식별할 수 있습니다. 예:
 
@@ -996,13 +997,13 @@ AEM에서 페이지의 기본 언어는 페이지를 만들 때 설정되지만,
 * [충족하는 방법 - 성공 기준 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * 코드는 ISO 639-1을 기반으로 합니다. 각 언어에 대한 더 확장된 코드 목록은 [W3 Schools 사이트](https://www.w3schools.com/tags/ref_language_codes.asp)에서 찾을 수 있습니다.
 
-### 부분 언어(3.1.2)  {#language-of-parts}
+### 부분 언어(3.1.2)   {#language-of-parts}
 
 * 성공 기준 3.1.2
 * 레벨 AA
 * 부분 언어: 컨텐츠에 있는 각 구절 또는 구의 인간 언어는 적절한 이름, 기술적 용어, 정확히 가늠할 수 없는 언어의 단어 및 바로 둘러싼 텍스트의 토착어 부분이 된 단어나 구를 제외하고, 프로그래밍 방식으로 결정될 수 있습니다.
 
-#### 목적 - 부분 언어(3.1.2) {#purpose-language-of-parts}
+#### 목적 - 부분 언어(3.1.2)  {#purpose-language-of-parts}
 
 이 성공 기준의 목적은 한 페이지에 여러 언어로 된 컨텐츠가 들어 있는(예를 들어, 인용구나 흔하지 않은 외래어로 인해) 웹 페이지에 적용된다는 점을 제외하면 [페이지 언어](#language-of-page)성공 기준과 유사합니다.
 
@@ -1012,7 +1013,7 @@ AEM에서 페이지의 기본 언어는 페이지를 만들 때 설정되지만,
 * 특수 문자가 있거나 페이지 수준에서 식별된 기본 언어가 아닌 단어를 발음하는 화면 판독기입니다.
 * 컨텐츠를 한 언어에서 다른 언어로 올바르게 번역할 수 있는 Google 번역과 같은 번역 도구
 
-#### 충족하는 방법 - 부분 언어(3.1.2) {#how-to-meet-language-of-parts}
+#### 충족하는 방법 - 부분 언어(3.1.2)  {#how-to-meet-language-of-parts}
 
 `lang` 속성을 사용하여 변경 사항을 컨텐츠의 언어로 식별할 수 있습니다. 예를 들어, 독일어(ISO 639-1 코드 &quot;de&quot;) 인용구를 다음과 같이 표시할 수 있습니다.
 
@@ -1180,7 +1181,7 @@ AEM에서 페이지의 기본 언어는 페이지를 만들 때 설정되지만,
 * 레벨 A
 * 레이블 또는 지침: 컨텐츠에 사용자 입력이 필요할 때에는 레이블이나 지침이 제공됩니다.
 
-#### 목적 - 레이블 또는 지침(3.3.2) {#purpose-labels-or-instructions}
+#### 목적 - 레이블 또는 지침(3.3.2)  {#purpose-labels-or-instructions}
 
 양식을 완료하는 데 도움이 되도록 지침을 제공하는 것은 인터페이스 유용성 면에서 좋은 관행의 기본적인 부분입니다. 이렇게 하면 특히 양식의 레이아웃과 특정 양식 필드에 제공할 데이터의 종류를 이해하는 데 어려움이 있을 수 있는, 시각 또는 인지 장애가 있는 사용자에게 도움이 됩니다.
 
@@ -1217,7 +1218,7 @@ WKND 프로젝트에서 **라디오 그룹**&#x200B;과 같은 관련 컨트롤 
 
 기능이 매우 제한된 간단한 양식에서는 `Submit` 단추에 적절히 레이블을 지정하면 이것이 인접 필드(예: `Search`)에 대한 레이블로 작동할 수 있습니다. 이는 레이블 텍스트를 배치할 공간을 찾는 것이 어려운 상황에서 유용합니다.
 
-#### 추가 정보 - 레이블 또는 지침(3.3.2) {#more-information-labels-or-instructions}
+#### 추가 정보 - 레이블 또는 지침(3.3.2)  {#more-information-labels-or-instructions}
 
 * [성공 기준 이해 3.3.2](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 * [충족하는 방법 - 성공 기준 3.3.2](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
