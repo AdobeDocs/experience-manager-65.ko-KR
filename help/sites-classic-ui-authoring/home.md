@@ -3,9 +3,9 @@ title: AEM 6.5 클래식 UI 작성 사용 안내서
 seo-title: AEM 6.5 클래식 UI 작성 사용 안내서
 description: '이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다. '
 seo-description: '클래식 UI에서 AEM의 작성 개념을 다룹니다. '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 100%
 
