@@ -13,7 +13,7 @@ ht-degree: 13%
 ---
 
 
-# AEM 6.5 User Guide {#user-guide}
+# AEM 6.5 사용 안내서 {#user-guide}
 
 + [AEM 6.5 사용 안내서 허브](home.md)
 + 사용자 안내서 및 리소스{#user-guides}
