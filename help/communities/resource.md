@@ -20,21 +20,21 @@ ht-degree: 7%
 
 # 활성 리소스 만들기 및 할당 {#create-and-assign-enablement-resources}
 
-## 활성 리소스 추가 {#add-an-enablement-resource}
+## 활성 리소스 {#add-an-enablement-resource} 추가
 
 새 커뮤니티 사이트에 활성 리소스를 추가하려면:
 
 * 작성자 인스턴스에서 시스템 관리자로 로그인합니다.
    * 예: [http://localhost:4502/](http://localhost:4503/)
-* 전역 탐색에서 **[!UICONTROL 커뮤니티]** > **[!UICONTROL 리소스를 선택합니다.]**
+* 전역 탐색에서 **[!UICONTROL 커뮤니티]** > **[!UICONTROL 리소스]**&#x200B;를 선택합니다.
 
    ![리소스](assets/resources.png)
 
    ![enablement-resource](assets/enablement-resource.png)
 * 활성 리소스를 추가할 커뮤니티 사이트를 선택합니다.
-   * [ **[!UICONTROL 활성 자습서]를 선택합니다]**.
-* 메뉴에서 만들기를 **[!UICONTROL 선택합니다]**.
-* 리소스를 **[!UICONTROL 선택합니다]**.
+   * **[!UICONTROL 지원 자습서]**&#x200B;를 선택합니다.
+* 메뉴에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
+* **[!UICONTROL 리소스]**&#x200B;를 선택합니다.
 
 ![create-resource](assets/create-enablement-resource.png)
 
@@ -46,7 +46,7 @@ ht-degree: 7%
 
    선택한 커뮤니티 사이트의 이름으로 설정합니다.활성 자습서
 
-* **[!UICONTROL 리소스 이름(&amp;M);ast;]**
+* **[!UICONTROL 리소스 이름(&amp;A);]**
 
    스키 레슨 1
 
@@ -56,7 +56,7 @@ ht-degree: 7%
 
 * **[!UICONTROL 카탈로그에 표시]**
 
-   켜짐으로 **설정합니다**.
+   **On**&#x200B;으로 설정합니다.
 
 * **[!UICONTROL 설명]**
 
@@ -74,7 +74,7 @@ ht-degree: 7%
 
 여러 리소스를 선택할 수 있는 것처럼 보이지만 하나만 허용됩니다.
 
-소스를 식별하여 리소스 선택 프로세스를 시작하려면 오른쪽 위 모서리 `'+' icon`에서 을 선택합니다.
+소스를 식별하여 리소스를 선택하는 프로세스를 시작하려면 오른쪽 위 모서리에서 `'+' icon`을 선택합니다.
 
 ![add-content](assets/add-content.png)
 
@@ -94,13 +94,13 @@ ht-degree: 7%
 
 * **[!UICONTROL 기한]**
 
-   *(선택 사항)* 할당을 완료해야 하는 날짜를 선택할 수 있습니다.
+   *(선택 사항)* 배정을 완료해야 하는 날짜를 선택할 수 있습니다.
 
 * **[!UICONTROL 리소스 작성자]**
 
    *(선택 사항)* 비워 둡니다.
 
-* **[!UICONTROL 리소스 연락처(&amp;M);ast;]**
+* **[!UICONTROL 리소스 연락처(&amp;A);]**
 
    *(필수)* 풀다운 메뉴를 사용하여 멤버를 선택합니다 `Quinn Harper`.
 
@@ -108,7 +108,7 @@ ht-degree: 7%
 
    *(선택 사항)* 비워 둡니다.
 
-   **참고**:사용자나 그룹이 표시되지 않으면 그룹에 추가되었는지, `Community Enable Members` 그리고 게시 인스턴스에 *저장되었는지* 확인하십시오.
+   **참고**:사용자나 그룹이 표시되지 않을 경우  `Community Enable Members` 그룹에 추가되었는지 확인하고 게시 인스턴스 ** 를 저장하십시오.
 
    ![enablement-settings](assets/enablement-settings.png)
 
@@ -130,23 +130,23 @@ ht-degree: 7%
 
 활성 리소스의 새 버전을 업로드하려면 새 리소스를 만든 다음 기존 버전에서 구성원 등록을 취소하고 새 버전에 등록하는 것이 좋습니다.
 
-### 리소스 게시 {#publish-the-resource}
+### 리소스 {#publish-the-resource} 게시
 
 등록자가 할당된 강좌를 볼 수 있으려면 먼저 게시되어야 합니다.
 
-* 월드 `Publish` 아이콘 선택
+* `Publish` 월드 아이콘을 선택합니다.
 
 정품 인증은 성공 메시지로 확인합니다.
 
 ![publish-resource](assets/publish-resource.png)
 
-## 두 번째 활성 리소스 추가 {#add-a-second-enablement-resource}
+## 두 번째 활성 리소스 {#add-a-second-enablement-resource} 추가
 
 위 단계를 반복하여 학습 경로를 만들 두 번째 관련 활성 리소스를 만들고 게시합니다.
 
 ![add-resource](assets/add-resource.png)
 
-**두 번째 리소스를 게시합니다** .
+**두** 번째 리소스를 게시합니다.
 
 리소스 목록에 있는 활성 자습서로 돌아갑니다.
 
@@ -154,16 +154,16 @@ ht-degree: 7%
 
 ![refresh-resource](assets/refresh-resource.png)
 
-## 학습 경로 추가 {#add-a-learning-path}
+## 학습 경로 {#add-a-learning-path} 추가
 
 학습 경로는 강좌를 구성하는 활성 리소스의 논리적 그룹입니다.
 
 * 리소스 콘솔에서 `+ Create`
-* 학습 **[!UICONTROL 경로 선택]**
+* **[!UICONTROL 학습 경로]**&#x200B;를 선택합니다.
 
 ![add-learning-path](assets/add-learning-path.png)
 
-기본 **[!UICONTROL 정보를 추가합니다]**.
+**[!UICONTROL 기본 정보]**&#x200B;를 추가합니다.
 
 * **[!UICONTROL 학습 경로 이름]**
 
@@ -191,9 +191,9 @@ ht-degree: 7%
 
 리소스 추가 패널에서 다음을 수행합니다.
 
-* 학습 경로 `+ Add Resources` 에 추가할 2개의 스키 세션 리소스를 선택하려면 선택합니다.
+* 학습 경로에 추가할 2개의 스키 세션 리소스를 선택하려면 `+ Add Resources`을 선택합니다.
 
-   참고:게시된 **리소스만** 선택할 수 있습니다.
+   참고:**게시된** 리소스만 선택할 수 있습니다.
 
 >[!NOTE]
 >
@@ -211,9 +211,9 @@ ht-degree: 7%
 
 * **[!UICONTROL 할당자 추가]**
 
-   풀다운 메뉴를 사용하여 구성원 및 `Community Ski Class` `Riley Taylor` `Sidney Croft.`
+   풀다운 메뉴를 사용하여 `Community Ski Class` 그룹(멤버 `Riley Taylor` 및 `Sidney Croft.` 포함)을 선택합니다.
 
-* **[!UICONTROL 학습 경로 연락처&amp;ast;]**
+* **[!UICONTROL 학습 경로 연락처(&amp;A);]**
 
    *(필수)* 풀다운 메뉴를 사용하여 멤버를 선택합니다 `Quinn Harper`.
 
@@ -223,5 +223,5 @@ ht-degree: 7%
 
 학습 경로를 성공적으로 만들면 새로 만든 학습 경로를 선택한 상태로 리소스 콘솔로 돌아갑니다. 이 콘솔에서 학습자를 게시, 추가 및 다른 설정을 변경할 수 있습니다.
 
-**학습 경로를 게시합니다** .
+**학습** 경로를 게시합니다.
 
