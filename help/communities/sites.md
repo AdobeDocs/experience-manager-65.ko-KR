@@ -24,25 +24,25 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->작성 환경에서만 사용할 수 있는 [커뮤니티 사이트](sites-console.md), [커뮤니티 사이트 템플릿](sites.md), [커뮤니티 그룹 템플릿](tools-groups.md) 및 [커뮤니티 기능](functions.md) 의 콘솔입니다.
+>[커뮤니티 사이트](sites-console.md), [커뮤니티 사이트 템플릿](sites.md), [커뮤니티 그룹 템플릿](tools-groups.md) 및 [커뮤니티 기능](functions.md)을 만드는 콘솔은 작성 환경에서만 사용할 수 있습니다.
 
 ## 사이트 템플릿 콘솔 {#site-templates-console}
 
 작성 환경에서 커뮤니티 사이트 콘솔에 도달하려면 다음을 수행하십시오.
 
-* 전역 탐색에서: **[!UICONTROL 도구 > 커뮤니티 > 사이트 템플릿]**
+* 전역 탐색에서:**[!UICONTROL 도구 > 커뮤니티 > 사이트 템플릿]**
 
-이 콘솔에는 [커뮤니티 사이트를](sites-console.md) 만들 수 있는 템플릿이 표시되며 새 사이트 템플릿을 만들 수 있습니다.
+이 콘솔에는 [커뮤니티 사이트](sites-console.md)를 만들 수 있고 새 사이트 템플릿을 만들 수 있는 템플릿이 표시됩니다.
 
 ![site-template](assets/site-template.png)
 
 ## 사이트 템플릿 작성 {#create-site-template}
 
-새 사이트 템플릿 만들기를 시작하려면 을 선택합니다 `Create`.
+새 사이트 템플릿 만들기를 시작하려면 `Create`을 선택합니다.
 
 그러면 3개의 하위 패널이 포함된 사이트 편집기 패널이 표시됩니다.
 
-### Basic info {#basic-info}
+### 기본 정보 {#basic-info}
 
 ![site-template-basicinfo](assets/site-template-basicinfo.png)
 
@@ -72,7 +72,7 @@ ht-degree: 4%
 
 커뮤니티 기능을 추가하려면 사이트 메뉴 링크가 표시되어야 하는 순서대로 오른쪽에서 왼쪽으로 드래그합니다. 사이트를 만드는 동안 스타일이 템플릿에 적용됩니다.
 
-예를 들어 홈 페이지를 원하는 경우 라이브러리에서 페이지 함수를 드래그하여 템플릿 빌더 아래에 놓습니다. 그러면 페이지 구성 대화 상자가 열립니다. 구성 대화 상자에 대한 자세한 내용은 [함수 콘솔을](functions.md) 참조하십시오.
+예를 들어 홈 페이지를 원하는 경우 라이브러리에서 페이지 함수를 드래그하여 템플릿 빌더 아래에 놓습니다. 그러면 페이지 구성 대화 상자가 열립니다. 구성 대화 상자에 대한 자세한 내용은 [functions console](functions.md)을 참조하십시오.
 
 이 템플릿을 기반으로 한 커뮤니티 사이트에서 원하는 다른 커뮤니티 기능을 계속 드래그 앤 드롭합니다.
 
@@ -80,9 +80,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->그룹 함수는 사이트 구조의 *첫 번째* 함수이거나 유일한 ** 함수여야 합니다.
+>그룹 함수는 *이 아닌*&#x200B;이어야 하며 사이트 구조에서 유일한&#x200B;*함수여야 합니다.*
 >
->페이지 함수 [](functions.md#page-function)등 다른 모든 함수를 먼저 포함하여 나열해야 합니다.
+>[page function](functions.md#page-function)과 같은 다른 모든 함수가 먼저 포함되고 나열되어야 합니다.
 
 ![사이트 편집기](assets/site-editor.png)
 
@@ -92,7 +92,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Groups 함수는 사이트 구조의 *첫 번째* 함수이거나 유일한 ** 함수여야 합니다.
+>Groups 함수는 *이 아닌*&#x200B;이어야 하며 사이트 구조에서 유일한&#x200B;*함수여야 합니다.*
 
 ![사이트 함수](assets/site-functions.png)
 
@@ -102,6 +102,6 @@ ht-degree: 4%
 
 ## 사이트 템플릿 편집{#edit-site-template}
 
-기본 [사이트 템플릿 콘솔에서](#site-templates-console)사이트 템플릿을 볼 때 편집할 기존 사이트 템플릿을 선택할 수 있습니다.
+기본 [사이트 템플릿 콘솔](#site-templates-console)에서 사이트 템플릿을 볼 때 편집할 기존 사이트 템플릿을 선택할 수 있습니다.
 
-이 프로세스는 사이트 템플릿 [을 만드는 것과 동일한 패널을 제공합니다](#create-site-template).
+이 프로세스는 사이트 템플릿](#create-site-template)을 만드는 것과 동일한 패널을 제공합니다.[
