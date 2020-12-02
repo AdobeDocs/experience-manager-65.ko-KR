@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# SRP - 커뮤니티 컨텐츠 스토리지 {#srp-community-content-storage}
+# SRP - 커뮤니티 콘텐츠 저장소 {#srp-community-content-storage}
 
 ## 소개 {#introduction}
 
@@ -27,21 +27,21 @@ AEM Communities 6.1부터 UGC(사용자 생성 컨텐츠)는 SRP(스토리지 �
 
 이전 릴리스와 달리 AEM 인스턴스 간에 UGC를 역방향/앞으로 복제할 수는 없습니다. 대신 SRP는 JSRP를 제외하고 모든 작성자 및 게시 인스턴스의 CRUD(작성, 읽기, 업데이트 및 삭제) 작업을 위해 UGC에 직접 액세스할 수 있도록 합니다.
 
-다음은 각 SRP 옵션 [의](#characteristics-of-srp-options)특성입니다. 이는 적절한 SRP와 [기본 배포를 선택할 때 의사 결정 프로세스에 필요한 중요한 정보입니다](/help/communities/topologies.md).
+다음은 각 SRP 옵션](#characteristics-of-srp-options)의 [특성입니다. 이 특성은 적절한 SRP와 [기본 배포](/help/communities/topologies.md)를 선택할 때 의사 결정 프로세스에 필요한 중요한 정보입니다.
 
-UGC 사용에 대한 자세한 내용은 [스토리지 리소스 공급자 개요를 참조하십시오](/help/communities/srp.md).
+UGC 사용에 대한 자세한 내용은 [스토리지 리소스 공급자 개요](/help/communities/srp.md)를 참조하십시오.
 
 >[!NOTE]
 >
->SRP는 커뮤니티 컨텐츠에만 적용됩니다. 사이트 컨텐츠의 저장 위치([노드 저장소](/help/sites-deploying/data-store-config.md))에는 영향을 주지 않으며 AEM 인스턴스 간 사용자 등록, 사용자 프로필 및 사용자 그룹의 보안 처리에 영향을 주지 않습니다(사용자 데이터 [관리 참조](#managing-user-data)).
+>SRP는 커뮤니티 컨텐츠에만 적용됩니다. 사이트 컨텐츠가 저장된 위치([노드 스토어](/help/sites-deploying/data-store-config.md))에 영향을 주지 않으며 AEM 인스턴스 간 사용자 등록, 사용자 프로필 및 사용자 그룹의 보안 처리에 영향을 주지 않습니다([사용자 데이터 관리](#managing-user-data) 참조).
 
 >[!CAUTION]
 >
->AEM 6.1의 경우 [UGC는 결코 복제되지 않습니다](#ugc-never-replicated).
+>AEM 6.1부터 [UGC는 결코 복제되지 않습니다](#ugc-never-replicated).
 >
->배포에 기본 JSRP 토폴로지 같은 일반 스토어 [가](/help/communities/topologies.md#jsrp) 포함되지 않으면 UGC는 입력한 AEM 게시 또는 작성자 인스턴스에서만 표시됩니다. 토폴로지에 게시 클러스터가 포함된 경우에만 UGC가 모든 게시 인스턴스에 표시됩니다.
+>배포에 기본 [JSRP](/help/communities/topologies.md#jsrp) 토폴로지 같은 일반 저장소가 포함되어 있지 않으면 UGC는 입력한 AEM 게시 또는 작성자 인스턴스에서만 표시됩니다. 토폴로지에 게시 클러스터가 포함된 경우에만 UGC가 모든 게시 인스턴스에 표시됩니다.
 
-## SRP 옵션 특성 {#characteristics-of-srp-options}
+## SRP 옵션 {#characteristics-of-srp-options} 특성
 
 [ASRP - Adobe 저장소 리소스 공급자](/help/communities/asrp.md)
 
@@ -105,9 +105,9 @@ JSRP:
 * 중재는 게시 환경에서만 수행됩니다(작성자와 게시 간에 역방향/전달 복제 메커니즘이 없음).
 * 개발, 데모 및 트레이닝에 가장 적합합니다.
 
-## SRP 구성 {#configuring-srp}
+## SRP {#configuring-srp} 구성
 
-기본 스토리지 옵션 지정은 기본 배포에 따라 [스토리지 구성 콘솔을 통해 수행됩니다](/help/communities/srp-config.md).
+기본 배포에 따라 기본 저장소 옵션 지정은 [스토리지 구성 콘솔](/help/communities/srp-config.md)을 통해 수행됩니다.
 
 각 옵션에 대한 구성 세부 사항은 다음을 참조하십시오.
 
@@ -120,7 +120,7 @@ JSRP:
 
 ## 추가 정보 {#additional-information}
 
-### UGC 복제 안 함 {#ugc-never-replicated}
+### UGC가 복제되지 않음 {#ugc-never-replicated}
 
 작성 환경에서 작성자는 페이지 컨텐츠를 만들어 게시 환경에 복제합니다. 페이지에 댓글, 검토, 포럼, 블로그 또는 QnA와 같은 인터랙티브한 AEM Communities 기능이 포함되어 있는 경우, 게시 인스턴스에서 멤버(로그인된 사이트 방문자)의 상호 작용으로 인해 게시 환경에 입력된 사용자 생성 컨텐츠(UGC)가 나타납니다.
 
@@ -132,12 +132,12 @@ AEM Communities 6.1부터 위에 설명된 바와 같이 UGC용 공유 스토리
 
 ### 사용자 데이터 관리 {#managing-user-data}
 
-CommunitIes에 대한 관심 [*은 사용자*, *사용자 그룹*&#x200B;및 *사용자 프로필입니다*](/help/communities/users.md). 게시 환경에서 생성 및 업데이트되는 이 사용자 관련 데이터는 토폴로지가 [게시 팜일 때 다른 게시 인스턴스에서 사용할 수 있어야 합니다](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
+CommunitIes에 대한 관심 사항은 [*users*, *사용자 그룹* 및 *사용자 프로필*](/help/communities/users.md)&#x200B;입니다. 게시 환경에서 만들고 업데이트한 이 사용자 관련 데이터는 토폴로지가 [publish farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm)인 경우 다른 게시 인스턴스에서 사용할 수 있어야 합니다.
 
-AEM Communities 6.1부터 사용자 관련 데이터는 복제 대신 Sling 배포를 사용하여 동기화됩니다. 자세한 내용은 [사용자 동기화를 참조하십시오](/help/communities/sync.md).
+AEM Communities 6.1부터 사용자 관련 데이터는 복제 대신 Sling 배포를 사용하여 동기화됩니다. 자세한 내용은 [사용자 동기화](/help/communities/sync.md)를 참조하십시오.
 
-### Upgrading to AEM Communities 6.5 {#upgrading-to-aem-communities}
+### AEM Communities 6.5 {#upgrading-to-aem-communities}로 업그레이드
 
 AEM 6.5 Communities로 업그레이드할 때 기존 UGC를 보존해야 하는 경우 AEM 5.6.1 또는 AEM 6.0 커뮤니티에서 Adobe on-demand 스토리지 또는 UGC의 온-프레미스 스토리지를 사용하는지 여부에 따라 단계를 수행해야 합니다.
 
-자세한 내용은 AEM Communities [6.5로 업그레이드를 참조하십시오](/help/communities/upgrade.md).
+자세한 내용은 [AEM Communities 6.5](/help/communities/upgrade.md)로 업그레이드를 참조하십시오.
