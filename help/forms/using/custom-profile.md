@@ -17,15 +17,15 @@ ht-degree: 0%
 ---
 
 
-# HTML5 양식에 대한 사용자 정의 프로필 만들기 {#creating-a-custom-profile-for-html-forms}
+# HTML5 양식 {#creating-a-custom-profile-for-html-forms}에 대한 사용자 지정 프로필 만들기
 
-프로필은 Apache Sling의 리소스 [노드입니다](https://sling.apache.org/). HTML5 양식 변환 서비스의 사용자 정의 버전을 나타냅니다. HTML5 양식 변환 서비스를 사용하여 HTML5 양식의 모양, 동작 및 상호 작용을 사용자 정의할 수 있습니다. 프로필 노드는 JCR 저장소의 `/content` 폴더에 있습니다. 노드를 폴더 또는 폴더의 하위 폴더 바로 아래에 `/content` 배치할 수 `/content` 있습니다.
+프로필은 [Apache Sling](https://sling.apache.org/)의 리소스 노드입니다. HTML5 양식 변환 서비스의 사용자 정의 버전을 나타냅니다. HTML5 양식 변환 서비스를 사용하여 HTML5 양식의 모양, 동작 및 상호 작용을 사용자 정의할 수 있습니다. 프로필 노드는 JCR 저장소의 `/content` 폴더에 있습니다. 노드를 `/content` 폴더 또는 `/content` 폴더의 하위 폴더 바로 아래에 배치할 수 있습니다.
 
-프로필 노드에는 sling:resourceSuperType **속성이** 있으며 기본값은 xfforms/profile **입니다**. 노드에 대한 렌더링 스크립트는 /libs/xfaforms/profile에 있습니다.
+프로필 노드에는 **sling:resourceSuperType** 속성이 있으며 기본값은 **xfaforms/profile**&#x200B;입니다. 노드에 대한 렌더링 스크립트는 /libs/xfaforms/profile에 있습니다.
 
-Sling 스크립트는 JSP 스크립트입니다. 이러한 JSP 스크립트는 요청된 양식과 필요한 JS/CSS 가공물을 위한 HTML을 취합하기 위한 컨테이너 역할을 합니다. 이러한 슬링 스크립트를 프로필 렌더러 **스크립트라고도 합니다**. 프로필 렌더러는 Forms OSGi 서비스를 호출하여 요청된 양식을 렌더링합니다.
+Sling 스크립트는 JSP 스크립트입니다. 이러한 JSP 스크립트는 요청된 양식과 필요한 JS/CSS 가공물을 위한 HTML을 취합하기 위한 컨테이너 역할을 합니다. 이러한 Sling 스크립트를 **프로필 렌더러 스크립트**&#x200B;라고도 합니다. 프로필 렌더러는 요청된 양식을 렌더링하기 위해 Forms OSGi 서비스를 호출합니다.
 
-프로필 스크립트는 GET 및 POST 요청용 html.jsp 및 html.POST.jsp에 있습니다. 하나 이상의 파일을 복사 및 수정하여 사용자 정의 파일을 무효화하고 추가할 수 있습니다. 제자리에서 변경하지 마십시오. 패치 업데이트는 이러한 변경 사항을 덮어씁니다.
+프로필 스크립트는 GET 및 POST 요청에 대해 html.jsp 및 html.POST.jsp에 있습니다. 하나 이상의 파일을 복사 및 수정하여 사용자 정의 파일을 무효화하고 추가할 수 있습니다. 제자리에서 변경하지 마십시오. 패치 업데이트는 이러한 변경 사항을 덮어씁니다.
 
 프로필에는 다양한 모듈이 포함되어 있습니다. 모듈은 formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp 및 footer.jsp입니다.
 
@@ -53,34 +53,34 @@ formBody.jsp 모듈은 XFA 양식의 HTML 표현을 위한 것입니다.
 
 footer.jsp 모듈은 비어 있습니다. 사용자 상호 작용에만 사용되는 스크립트를 추가할 수 있습니다.
 
-## 사용자 지정 프로필 만들기 {#creating-custom-profiles}
+## 사용자 지정 프로필 {#creating-custom-profiles} 만들기
 
 사용자 지정 프로필을 만들려면 다음 단계를 수행하십시오.
 
-### 프로필 노드 만들기 {#create-profile-node}
+### 프로필 노드 {#create-profile-node} 만들기
 
-1. URL의 CRX DE 인터페이스로 이동합니다. `https://'[server]:[port]'/crx/de` 관리자 자격 증명을 사용하여 인터페이스에 로그인합니다.
+1. URL의 CRX DE 인터페이스로 이동합니다.`https://'[server]:[port]'/crx/de` 관리자 자격 증명을 사용하여 인터페이스에 로그인합니다.
 
-1. 왼쪽 창에서 위치/content/ *exfforms/profiles로 이동합니다*.
+1. 왼쪽 창에서 */content/xfaforms/profiles* 위치로 이동합니다.
 
-1. 노드 기본값을 복사하고 이름을&#x200B;*삭제한 다른 폴더(*/content/profiles *)에 노드를 붙여*&#x200B;넣습니다.
+1. 노드 기본값을 복사하고, 이름이 *hrform*&#x200B;인 다른 폴더(*/content/profiles*)에 노드를 붙여 넣습니다.
 
-1. 새 노드를 *선택하고*&#x200B;문자열 속성을 추가합니다. *sling:resourceType* with value: *연하/데모*.
+1. 새 노드 *hrform*&#x200B;을 선택하고 문자열 속성을 추가합니다.*sling:resourceType* 값:*hrform/demo*.
 
 1. 도구 모음 메뉴에서 모두 저장을 클릭하여 변경 사항을 저장합니다.
 
-### 프로필 렌더러 스크립트 만들기 {#create-the-profile-renderer-script}
+### 프로필 렌더러 스크립트 {#create-the-profile-renderer-script} 만들기
 
 사용자 정의 프로파일을 만든 후 이 프로필에 렌더링 정보를 추가합니다. 새 프로필에 대한 요청을 수신할 때 CRX는 JSP 페이지가 렌더링될 /apps 폴더가 있는지 확인합니다. /apps 폴더에 JSP 페이지를 만듭니다.
 
 1. 왼쪽 창에서 `/apps` 폴더로 이동합니다.
-1. 폴더를 마우스 오른쪽 단추로 클릭하고 이름 `/apps` 이 있는 폴더를 만들도록 선택합니다 ****.
-1. 폴더 **를** 통해 demo라는 폴더를 **만듭니다**.
-1. 모두 **저장** 단추를 클릭합니다.
-1. 노드 `/libs/xfaforms/profile/html.jsp` html.jsp **로 이동하여 복사합니다**.
-1. 같은 이름의 **html.jsp** 노드를 위에 만든 `/apps/hrform/demo` 폴더에 붙여넣고 **저장을** 클릭합니다 ****.
+1. `/apps` 폴더를 마우스 오른쪽 단추로 클릭하고 이름이 **hrform**&#x200B;인 폴더를 만들도록 선택합니다.
+1. **hrform** 폴더에 **demo**&#x200B;라는 폴더를 만듭니다.
+1. **모두 저장** 단추를 클릭합니다.
+1. `/libs/xfaforms/profile/html.jsp`으로 이동하고 **html.jsp** 노드를 복사합니다.
+1. **html.jsp** 노드를 같은 이름의 위에 만든 `/apps/hrform/demo` 폴더에 붙여 넣고 **저장**&#x200B;을 클릭합니다.****
 1. 프로필 스크립트의 다른 구성 요소가 있는 경우 1-6단계에 따라 구성 요소를 /apps/hrform/demo 폴더에 복사합니다.
 
-1. 프로필이 만들어졌는지 확인하려면 URL을 엽니다 `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
+1. 프로필이 만들어졌는지 확인하려면 URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`을 엽니다.
 
-양식을 확인하려면 [로컬 파일](/help/forms/using/get-xdp-pdf-documents-aem.md) 시스템에서 AEM Forms으로 양식을 [가져오고 AEM 서버 작성자 인스턴스에서 양식을](/help/forms/using/previewing-forms.md) 미리 봅니다.
+양식을 확인하려면 [로컬 파일 시스템에서 AEM Forms으로 양식](/help/forms/using/get-xdp-pdf-documents-aem.md)을 가져오고 AEM 서버 작성자 인스턴스에서 양식](/help/forms/using/previewing-forms.md)을 미리 봅니다.[
