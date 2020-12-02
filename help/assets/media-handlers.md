@@ -15,17 +15,17 @@ ht-degree: 2%
 
 [!DNL Adobe Experience Manager Assets] 자산 처리를 위한 기본 워크플로우 및 미디어 핸들러 세트가 함께 제공됩니다. 워크플로우는 자산에서 실행할 작업을 정의한 다음 축소판 생성 또는 메타데이터 추출 등 미디어 핸들러에 특정 작업을 위임합니다.
 
-특정 MIME 유형의 자산이 업로드될 때 워크플로우를 자동으로 실행하도록 구성할 수 있습니다. 처리 단계는 일련의 [!DNL Assets] 미디어 핸들러에서 정의됩니다. [!DNL Experience Manager] 는 일부 [내장 핸들러를 제공하며,](#default-media-handlers) 추가적인 핸들러는 프로세스를 [명령줄 도구로 위임하여 사용자](#creating-a-new-media-handler) 정의 [개발](#command-line-based-media-handler)또는 정의할 수있습니다.
+특정 MIME 유형의 자산이 업로드될 때 워크플로우를 자동으로 실행하도록 구성할 수 있습니다. 처리 단계는 일련의 [!DNL Assets] 미디어 핸들러에서 정의됩니다. [!DNL Experience Manager] 는 일부  [내장 핸들러를 제공하며, 추가 핸들러는 사용자 지정 ](#default-media-handlers) 개발 또는 프로세스를  [명령줄 도구로 위임하여 ](#creating-a-new-media-handler) 정의할 수  [있습니다](#command-line-based-media-handler).
 
-미디어 핸들러는 자산에 대해 특정 작업을 수행하는 [!DNL Assets] 서비스입니다. 예를 들어 MP3 오디오 파일을 업로드하면 작업 과정 [!DNL Experience Manager]에서 메타데이터를 추출하고 축소판을 생성하는 MP3 핸들러를 트리거합니다. 미디어 핸들러는 일반적으로 워크플로우와 함께 사용됩니다. 대부분의 일반 MIME 형식은 내부에서 지원됩니다 [!DNL Experience Manager]. 워크플로우의 확장/생성, 미디어 핸들러를 확장/만들거나 미디어 핸들러를 비활성화/활성화하여 자산에 대해 특정 작업을 수행할 수 있습니다.
+미디어 핸들러는 자산에 대해 특정 작업을 수행하는 [!DNL Assets]의 서비스입니다. 예를 들어 MP3 오디오 파일이 [!DNL Experience Manager]에 업로드되면 워크플로우는 메타데이터를 추출하고 축소판을 생성하는 MP3 핸들러를 트리거합니다. 미디어 핸들러는 일반적으로 워크플로우와 함께 사용됩니다. 대부분의 일반적인 MIME 유형은 [!DNL Experience Manager] 내에서 지원됩니다. 워크플로우의 확장/생성, 미디어 핸들러를 확장/만들거나 미디어 핸들러를 비활성화/활성화하여 자산에 대해 특정 작업을 수행할 수 있습니다.
 
 >[!NOTE]
 >
->지원되는 [자산 형식](assets-formats.md) 페이지 [!DNL Assets] 에서 지원되는 모든 형식 및 각 형식에 대해 지원되는 기능에 대한 설명을 참조하십시오.
+>[!DNL Assets]에서 지원하는 모든 형식 및 각 형식에 지원되는 기능에 대한 설명은 [자산 지원 형식](assets-formats.md) 페이지를 참조하십시오.
 
 ## 기본 미디어 핸들러 {#default-media-handlers}
 
-다음 미디어 핸들러는 내부에서 사용할 수 [!DNL Assets] 있으며 가장 일반적인 MIME 형식을 처리합니다.
+다음 미디어 핸들러는 [!DNL Assets] 내에서 사용할 수 있으며 가장 일반적인 MIME 형식을 처리합니다.
 
 <!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
 -->
@@ -38,7 +38,7 @@ ht-degree: 2%
 | [!UICONTROL Mp3Handler] | `com.day.cq.dam.handler.standard.mp3.Mp3Handler` | audio/mpeg |
 | [!UICONTROL ZipHandler] | `com.day.cq.dam.handler.standard.zip.ZipHandler` | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | `com.day.cq.dam.handler.standard.pict.PictHandler` | 이미지/그림 |
-| [!UICONTROL StandardImageHandler] | `com.day.cq.dam.core.impl.handler.StandardImageHandler` | <ul><li>image/gif </li><li> image/png </li> <li>애플리케이션/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
+| [!UICONTROL StandardImageHandler] | `com.day.cq.dam.core.impl.handler.StandardImageHandler` | <ul><li>image/gif </li><li> image/png </li> <li>애플리케이션/photoshop </li> <li>이미지/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
 | [!UICONTROL MSOfficeHandler] | `com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler` | application/msword |
 | [!UICONTROL MSPowerPointHandler] | `com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler` | application/vnd.ms-powerpoint |
 | [!UICONTROL OpenOfficeHandler] | `com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler` | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
@@ -52,42 +52,42 @@ ht-degree: 2%
 
 활성 미디어 핸들러를 보려면
 
-1. In your browser, navigate to `http://localhost:4502/system/console/components`.
+1. 브라우저에서 `http://localhost:4502/system/console/components`으로 이동합니다.
 1. 클릭 `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. 모든 활성 미디어 핸들러가 있는 목록이 표시됩니다. 예:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## 워크플로우의 미디어 핸들러를 사용하여 에셋에 대한 작업 수행 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## 워크플로우의 미디어 핸들러를 사용하여 자산 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets} 작업에 대해 수행
 
 미디어 핸들러는 일반적으로 워크플로우와 함께 사용되는 서비스입니다.
 
-[!DNL Experience Manager] 자산 처리를 위한 몇 가지 기본 워크플로우가 있습니다. 이를 보려면 워크플로우 콘솔을 열고 모델 **[!UICONTROL 탭을]** 클릭합니다.다음으로 시작하는 워크플로우 제목 [!DNL Assets] 은 자산별 제목입니다.
+[!DNL Experience Manager] 자산 처리를 위한 몇 가지 기본 워크플로우가 있습니다. 이를 보려면 워크플로우 콘솔을 열고 **[!UICONTROL 모델]** 탭을 클릭합니다.[!DNL Assets]로 시작하는 워크플로우 제목은 자산별 제목입니다.
 
 기존 워크플로우를 확장할 수 있으며 특정 요구 사항에 따라 자산을 처리하기 위해 새로운 워크플로우를 만들 수 있습니다.
 
-다음 예에서는 PDF 문서를 제외한 모든 자산에 대해 하위 자산이 생성되도록 **[!UICONTROL AEM Assets 동기화]** 작업 과정을 향상시키는 방법을 보여 줍니다.
+다음 예에서는 PDF 문서를 제외한 모든 자산에 대해 하위 자산이 생성되도록 **[!UICONTROL AEM Assets 동기화]** 워크플로우를 향상시키는 방법을 보여줍니다.
 
-### 미디어 처리기 비활성화 또는 활성화 {#disabling-enabling-a-media-handler}
+### 미디어 핸들러 {#disabling-enabling-a-media-handler} 비활성화 또는 활성화
 
 미디어 핸들러는 Apache Felix 웹 관리 콘솔을 통해 비활성화하거나 활성화할 수 있습니다. 미디어 핸들러가 비활성화되면 해당 작업이 자산에 대해 수행되지 않습니다.
 
 미디어 핸들러를 활성화/비활성화하려면:
 
-1. In your browser, navigate to `https://<host>:<port>/system/console/components`.
-1. 미디어 **[!UICONTROL 처리기 이름 옆에 있는 비활성화를]** 클릭합니다. 예: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
+1. 브라우저에서 `https://<host>:<port>/system/console/components`으로 이동합니다.
+1. 미디어 처리기 이름 옆에 있는 **[!UICONTROL 비활성화]**&#x200B;를 클릭합니다. 예: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. 페이지를 새로 고칩니다.비활성화되었음을 나타내는 아이콘이 미디어 처리기 옆에 표시됩니다.
-1. 미디어 핸들러를 활성화하려면 미디어 핸들러의 이름 **[!UICONTROL 옆에]** 있는 활성화를 클릭합니다.
+1. 미디어 핸들러를 활성화하려면 미디어 핸들러의 이름 옆에 있는 **[!UICONTROL 활성화]**&#x200B;를 클릭합니다.
 
-### 새 미디어 처리기 만들기 {#creating-a-new-media-handler}
+### 새 미디어 핸들러 {#creating-a-new-media-handler} 만들기
 
 새 미디어 유형을 지원하거나 자산에서 특정 작업을 실행하려면 새 미디어 핸들러를 만들어야 합니다. 이 섹션에서는 진행 방법에 대해 설명합니다.
 
-#### 중요한 클래스 및 인터페이스 {#important-classes-and-interfaces}
+#### 중요 클래스 및 인터페이스 {#important-classes-and-interfaces}
 
-구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 합리적인 기본 동작을 제공하는 제공된 추상적인 구현에서 상속하는 것입니다.수업 `com.day.cq.dam.core.AbstractAssetHandler` .
+구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 합리적인 기본 동작을 제공하는 제공된 추상적인 구현에서 상속하는 것입니다.`com.day.cq.dam.core.AbstractAssetHandler` 클래스
 
-이 클래스는 추상 서비스 설명자를 이미 제공합니다. 따라서 이 클래스에서 상속하고 maven-sling-plugin을 사용하는 경우 inherit 플래그를 로 설정해야 합니다 `true`.
+이 클래스는 추상 서비스 설명자를 이미 제공합니다. 따라서 이 클래스에서 상속하고 maven-sling-plugin을 사용하는 경우 inherit 플래그를 `true`으로 설정해야 합니다.
 
 다음 방법을 구현합니다.
 
@@ -126,42 +126,42 @@ package my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;tr
 * `com.day.cq.dam.core.AbstractAssetHandler` class:이 클래스는 다른 모든 자산 처리기 구현의 기초로 사용되고 일반적으로 사용되는 기능을 제공합니다.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:이 클래스는 다른 모든 에셋 처리기 구현의 기초로 사용되고, 일반적으로 사용되는 기능뿐만 아니라 하위 에셋 추출을 위한 일반적인 기능을 제공합니다.
 
-#### 예:특정 텍스트 처리기 만들기 {#example-create-a-specific-text-handler}
+#### 예:특정 텍스트 처리기 {#example-create-a-specific-text-handler} 만들기
 
 이 섹션에서는 워터마크가 있는 축소판을 생성하는 특정 텍스트 핸들러를 만듭니다.
 
 다음과 같이 진행합니다.
 
-플러그인을 사용하여 Eclipse를 [설치 및 설정하고](../sites-developing/dev-tools.md) 프로젝트에 필요한 종속성을 설정하려면 개발 도구 [!DNL Maven] [!DNL Maven] 를 참조하십시오.
+[!DNL Maven] 플러그인으로 Eclipse를 설치하고 설정하고 설정하고 [!DNL Maven] 프로젝트에 필요한 종속성을 설정하려면 [개발 도구](../sites-developing/dev-tools.md)를 참조하십시오.
 
-다음 절차를 수행한 후 TXT 파일을 업로드하면 파일의 메타데이터 [!DNL Experience Manager]가 추출되고 워터마크가 있는 2개의 축소판이 생성됩니다.
+다음 절차를 수행한 후 TXT 파일을 [!DNL Experience Manager]에 업로드하면 파일의 메타데이터가 추출되고 워터마크가 있는 2개의 축소판이 생성됩니다.
 
-1. Eclipse에서 `myBundle` [!DNL Maven] 프로젝트 제작:
+1. Eclipse에서 `myBundle` [!DNL Maven] 프로젝트를 만듭니다.
 
-   1. 메뉴 모음에서 **[!UICONTROL 파일]** > 새로 **[!UICONTROL 만들기]** > **[!UICONTROL 기타]**&#x200B;를클릭합니다.
-   1. 대화 상자에서 [!DNL Maven] 폴더를 확장하고 프로젝트를 선택한 다음 [!DNL Maven] 다음을 **[!UICONTROL 클릭합니다]**.
-   1. 간단한 프로젝트 만들기 상자와 기본 작업 공간 위치 사용 상자를 선택한 다음 **[!UICONTROL 다음을 클릭합니다]**.
-   1. 프로젝트 [!DNL Maven] 정의:
+   1. 메뉴 모음에서 **[!UICONTROL 파일]** > **[!UICONTROL 새로 만들기]** > **[!UICONTROL 기타]**&#x200B;을 클릭합니다.
+   1. 대화 상자에서 [!DNL Maven] 폴더를 확장하고 [!DNL Maven] 프로젝트를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+   1. 간단한 프로젝트 만들기 상자와 기본 작업 공간 위치 사용 상자를 선택한 다음 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+   1. [!DNL Maven] 프로젝트를 정의합니다.
 
-      * 그룹 ID: `com.day.cq5.myhandler`.
+      * 그룹 ID:`com.day.cq5.myhandler`.
       * 아티팩트 ID:myBundle.
-      * 이름:내 [!DNL Experience Manager] 번들
-      * 설명:이건 제 [!DNL Experience Manager] 묶음이에요.
-   1. 마침을 **[!UICONTROL 클릭합니다]**.
+      * 이름:내 [!DNL Experience Manager] 번들.
+      * 설명:이것은 내 [!DNL Experience Manager] 번들입니다.
+   1. **[!UICONTROL 마침]**&#x200B;을 클릭합니다.
 
 
-1. 컴파일러를 [!DNL Java] 버전 1.5로 설정합니다.
+1. [!DNL Java] 컴파일러를 버전 1.5로 설정합니다.
 
-   1. 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 속성 `myBundle` 을 선택합니다 .
-   1. Java [!UICONTROL Compiler를] 선택하고 다음 속성을 1.5로 설정합니다.
+   1. `myBundle` 프로젝트를 마우스 오른쪽 단추로 클릭하고 [!UICONTROL 속성]을 선택합니다.
+   1. [!UICONTROL Java Compiler]를 선택하고 다음 속성을 1.5로 설정합니다.
 
       * 컴파일러 준수 수준
       * 생성된 .class 파일 호환성
       * 소스 호환성
-   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 대화 상자 창에서 **[!UICONTROL 예를 클릭합니다]**.
+   1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 대화 상자 창에서 **[!UICONTROL 예]**&#x200B;를 클릭합니다.
 
 
-1. 파일의 코드를 `pom.xml` 다음 코드로 바꿉니다.
+1. `pom.xml` 파일의 코드를 다음 코드로 바꿉니다.
 
    ```xml
    <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
@@ -278,16 +278,16 @@ package my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;tr
     </dependencies>
    ```
 
-1. 다음 아래에 클래스 `com.day.cq5.myhandler` 가 포함된 패키지 [!DNL Java] 를 만듭니다 `myBundle/src/main/java`
+1. `myBundle/src/main/java` 아래의 [!DNL Java] 클래스를 포함하는 패키지 `com.day.cq5.myhandler`을 만듭니다.
 
-   1. myBundle 아래에서 마우스 오른쪽 버튼을 클릭하고 새로 만들기, 패키지 순으로 선택합니다. `src/main/java`
-   1. 이름을 지정하고 마침 `com.day.cq5.myhandler` 을 클릭합니다.
+   1. myBundle 아래에서 `src/main/java`을 마우스 오른쪽 단추로 클릭하고 새로 만들기, 패키지 순으로 선택합니다.
+   1. 이름을 `com.day.cq5.myhandler`으로 지정하고 [마침]을 클릭합니다.
 
-1. 클래스를 [!DNL Java] 만듭니다 `MyHandler`.
+1. [!DNL Java] 클래스 `MyHandler`를 만듭니다.
 
-   1. 에서 [!DNL Eclipse]패키지 `myBundle/src/main/java`를 마우스 오른쪽 단추로 `com.day.cq5.myhandler` 클릭합니다. 새로 [!UICONTROL 만들기], [!UICONTROL 클래스]순으로 선택합니다.
-   1. 대화 상자 창에서 클래스 이름을 지정하고 [!DNL Java] 마침을 `MyHandler` 클릭합니다 . [!DNL Eclipse] 파일을 만들고 엽니다 `MyHandler.java`.
-   1. 에서 기존 코드를 다음으로 `MyHandler.java` 바꾼 다음 변경 내용을 저장합니다.
+   1. [!DNL Eclipse]의 `myBundle/src/main/java`에서 `com.day.cq5.myhandler` 패키지를 마우스 오른쪽 단추로 클릭합니다. [!UICONTROL 새로 만들기]를 선택한 다음 [!UICONTROL 클래스]를 선택합니다.
+   1. 대화 상자 창에서 [!DNL Java] 클래스 `MyHandler`의 이름을 지정하고 [!UICONTROL Finish]를 클릭합니다. [!DNL Eclipse] 파일을 만들고 엽니다 `MyHandler.java`.
+   1. `MyHandler.java`에서 기존 코드를 다음으로 바꾼 다음 변경 내용을 저장합니다.
 
    ```java
    package com.day.cq5.myhandler;
@@ -429,99 +429,99 @@ package my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;tr
    }
    ```
 
-1. 클래스를 [!DNL Java] 컴파일하고 번들을 만듭니다.
+1. [!DNL Java] 클래스를 컴파일하고 번들을 만듭니다.
 
-   1. 프로젝트를 마우스 오른쪽 단추로 클릭하고 다른 이름으로 `myBundle` 실행 **[!UICONTROL ,]**&#x200B;마비시켜 ****&#x200B;주세요.
-   1. 번들 `myBundle-0.0.1-SNAPSHOT.jar` (컴파일된 클래스 포함)은 아래에서 만들어집니다 `myBundle/target`.
+   1. `myBundle` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL Run As]**&#x200B;를 선택한 다음 **[!UICONTROL Maven Install]**&#x200B;을 선택합니다.
+   1. `myBundle-0.0.1-SNAPSHOT.jar` 번들(컴파일된 클래스 포함)이 `myBundle/target` 아래에 만들어집니다.
 
-1. CRX 탐색기에서 아래에 새 노드를 만듭니다 `/apps/myApp`. 이름 = `install`, 유형 = `nt:folder`.
-1. 번들을 `myBundle-0.0.1-SNAPSHOT.jar` 복사하여 WebDAV와 `/apps/myApp/install` 같이 아래에 저장합니다. 이제 새 텍스트 핸들러가 활성 상태입니다 [!DNL Experience Manager].
-1. 브라우저에서 [!UICONTROL Apache Felix 웹 관리 콘솔을 엽니다]. 구성 [!UICONTROL 요소] 탭을 선택하고 기본 텍스트 핸들러를 비활성화합니다 `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. CRX 탐색기에서 `/apps/myApp` 아래에 새 노드를 만듭니다. 이름 = `install`, 유형 = `nt:folder`.
+1. 번들 `myBundle-0.0.1-SNAPSHOT.jar`을 복사하고 `/apps/myApp/install` 아래에 저장합니다(예: WebDAV). 이제 새 텍스트 핸들러가 [!DNL Experience Manager]에서 활성 상태입니다.
+1. 브라우저에서 [!UICONTROL Apache Felix 웹 관리 콘솔]을 엽니다. [!UICONTROL 구성 요소] 탭을 선택하고 기본 텍스트 핸들러 `com.day.cq.dam.core.impl.handler.TextHandler`를 비활성화합니다.
 
 ## 명령줄 기반 미디어 처리기 {#command-line-based-media-handler}
 
-[!DNL Experience Manager] 워크플로우 내에서 명령줄 도구를 실행하여 자산(예:)을 변환하고 자산에 새 변환을 추가할 수 [!DNL ImageMagick]있습니다. 서버를 호스팅하는 디스크에 명령줄 도구를 설치하고 워크플로우에 프로세스 단계를 추가하고 구성해야 [!DNL Experience Manager] 합니다. 호출된 프로세스 `CommandLineProcess`는 특정 MIME 유형에 따라 필터링하고 새 변환에 따라 여러 축소판을 만들 수도 있습니다.
+[!DNL Experience Manager] 워크플로우 내에서 명령줄 도구를 실행하여 자산(예:)을 변환하고 자산에 새 변환을 추가할 수  [!DNL ImageMagick]있습니다. [!DNL Experience Manager] 서버를 호스팅하는 디스크에 명령줄 도구를 설치하고 워크플로우에 프로세스 단계를 추가하고 구성해야 합니다. 호출된 프로세스(`CommandLineProcess`)는 특정 MIME 유형에 따라 필터링하고 새 변환에 따라 여러 축소판을 만들 수도 있습니다.
 
-다음 변환은 다음 내에서 자동으로 실행 및 저장할 수 있습니다 [!DNL Assets].
+다음 변환은 [!DNL Assets] 내에서 자동으로 실행 및 저장할 수 있습니다.
 
-* ImageMagick과 [Ghostscript를 사용하여 EPS](https://www.imagemagick.org/script/index.php) 및 [AI 변환](https://www.ghostscript.com/).
-* FFmpeg를 사용하여 FLV 비디오 [트랜스코딩](https://ffmpeg.org/).
-* LFM을 사용한 MP3 [인코딩](https://lame.sourceforge.io/).
-* SOX를 사용한 [오디오](https://sox.sourceforge.net/)처리
+* [ImageMagick](https://www.imagemagick.org/script/index.php) 및 [Ghostscript](https://www.ghostscript.com/)를 사용하는 EPS 및 AI 변환.
+* [FFmpeg](https://ffmpeg.org/)를 사용하여 FLV 비디오 트랜스코딩
+* [LANG](https://lame.sourceforge.io/)을(를) 사용한 MP3 인코딩
+* [SOX](https://sox.sourceforge.net/)을(를) 사용한 오디오 처리.
 
 >[!NOTE]
 >
->Windows가 아닌 시스템에서 FFmpeg 도구는 파일 이름에 작은 따옴표(&#39;)가 있는 비디오 자산에 대한 변환을 생성하는 동안 오류를 반환합니다. 비디오 파일 이름에 작은 따옴표가 포함된 경우 업로드하기 전에 이 견적을 제거합니다 [!DNL Experience Manager].
+>Windows가 아닌 시스템에서 FFmpeg 도구는 파일 이름에 작은 따옴표(&#39;)가 있는 비디오 자산에 대한 변환을 생성하는 동안 오류를 반환합니다. 비디오 파일 이름에 단일 견적이 포함된 경우 [!DNL Experience Manager]에 업로드하기 전에 해당 견적을 제거합니다.
 
-이 `CommandLineProcess` 프로세스는 나열된 순서대로 다음 작업을 수행합니다.
+`CommandLineProcess` 프로세스는 나열된 순서대로 다음 작업을 수행합니다.
 
 * 지정된 경우 특정 MIME 유형에 따라 파일을 필터링합니다.
-* 서버를 호스팅하는 디스크에 임시 디렉토리를 [!DNL Experience Manager] 만듭니다.
+* [!DNL Experience Manager] 서버를 호스팅하는 디스크에 임시 디렉터리를 만듭니다.
 * 원본 파일을 임시 디렉토리로 스트리밍합니다.
-* 단계의 인수로 정의된 명령을 실행합니다. 명령을 실행하는 사용자의 권한이 있는 임시 디렉터리 내에서 실행 중입니다 [!DNL Experience Manager].
+* 단계의 인수로 정의된 명령을 실행합니다. [!DNL Experience Manager]을(를) 실행하는 사용자의 권한이 있는 임시 디렉터리 내에서 명령이 실행되고 있습니다.
 * 결과를 다시 [!DNL Experience Manager] 서버의 변환 폴더로 스트리밍합니다.
 * 임시 디렉토리를 삭제합니다.
 * 지정된 경우 이러한 변환에 따라 축소판을 만듭니다. 축소판의 수와 크기는 단계의 인수로 정의됩니다.
 
-### 예제 [!DNL ImageMagick] {#an-example-using-imagemagick}
+### [!DNL ImageMagick] {#an-example-using-imagemagick} 사용 예
 
-다음 예에서는 miMIME e형 GIF 또는 TIFF가 포함된 자산을 서버에 추가할 때마다 원본 `/content/dam` [!DNL Experience Manager] 의 역진행 이미지가 3개의 추가 축소판(140x100, 48x48 및 10x250)과 함께 작성되도록 명령줄 프로세스 단계를 설정하는 방법을 보여 줍니다.
+다음 예에서는 miMIME e-type GIF 또는 TIFF가 있는 자산이 [!DNL Experience Manager] 서버의 `/content/dam`에 추가될 때마다 역진행 이미지가 3개의 추가 축소판(140x100, 48x48 및 10x25)과 함께 작성되도록 명령줄 프로세스 단계를 설정하는 방법을 보여 줍니다 0).
 
-이렇게 하려면 을 사용하십시오 [!DNL ImageMagick]. [!DNL ImageMagick] 은 비트맵 이미지를 작성, 편집 및 구성하는 데 사용되는 무료 명령줄 소프트웨어입니다.
+이렇게 하려면 [!DNL ImageMagick]을 사용하십시오. [!DNL ImageMagick] 은 비트맵 이미지를 작성, 편집 및 구성하는 데 사용되는 무료 명령줄 소프트웨어입니다.
 
-서버 [!DNL ImageMagick] 를 호스팅하는 디스크에 [!DNL Experience Manager] 설치:
+[!DNL Experience Manager] 서버를 호스팅하는 디스크에 [!DNL ImageMagick]을(를) 설치합니다.
 
-1. 설치 [!DNL ImageMagick]:ImageMagick [설명서를 참조하십시오](https://www.imagemagick.org/script/download.php).
+1. [!DNL ImageMagick] 설치:[ImageMagick documentation](https://www.imagemagick.org/script/download.php)을 참조하십시오.
 1. 명령줄에서 변환을 실행할 수 있도록 도구를 설정합니다.
-1. 도구가 제대로 설치되었는지 확인하려면 명령줄에서 다음 명령 `convert -h` 을 실행하십시오.
+1. 도구가 제대로 설치되었는지 확인하려면 명령줄에서 `convert -h` 명령을 실행하십시오.
 
    변환 도구의 가능한 모든 옵션이 포함된 도움말 화면이 표시됩니다.
 
    >[!NOTE]
    >
-   >일부 버전의 Windows에서는 변환 명령이 [!DNL Windows] 설치의 일부인 기본 변환 유틸리티와 충돌하므로 실행되지 않을 수도 있습니다. 이 경우 이미지 파일을 축소판으로 변환하는 데 사용되는 [!DNL ImageMagick] 소프트웨어의 전체 경로가 언급됩니다. 예, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
+   >일부 버전의 Windows에서는 변환 명령이 [!DNL Windows] 설치의 일부인 기본 변환 유틸리티와 충돌하므로 실행되지 않을 수도 있습니다. 이 경우 이미지 파일을 축소판으로 변환하는 데 사용되는 [!DNL ImageMagick] 소프트웨어의 전체 경로를 언급합니다. 예, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. 도구가 제대로 실행되는지 확인하려면 작업 디렉토리에 JPG 이미지를 추가하고 명령줄에 명령 변환 `<image-name>.jpg -flip <image-name>-flipped.jpg` 을 실행합니다. 역진행 이미지가 디렉토리에 추가됩니다. 그런 다음 명령줄 프로세스 단계를 **[!UICONTROL DAM 자산 업데이트 워크플로우에]** 추가합니다.
-1. 워크플로우 **[!UICONTROL 콘솔로]** 이동합니다.
-1. 모델 **[!UICONTROL 탭]** 에서 **[!UICONTROL DAM 자산 업데이트]** 모델을편집합니다.
-1. 웹 [!UICONTROL 지원 변환] 단계 **[!UICONTROL 의 인수를]** 다음으로 변경합니다. `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.
+1. 도구가 제대로 실행되는지 확인하려면 작업 디렉토리에 JPG 이미지를 추가하고 명령줄에 `<image-name>.jpg -flip <image-name>-flipped.jpg` 변환 명령을 실행합니다. 역진행 이미지가 디렉토리에 추가됩니다. 그런 다음 명령줄 프로세스 단계를 **[!UICONTROL DAM 자산 업데이트]** 워크플로우에 추가합니다.
+1. **[!UICONTROL Workflow]** 콘솔로 이동합니다.
+1. **[!UICONTROL 모델]** 탭에서 **[!UICONTROL DAM 자산 업데이트]** 모델을 편집합니다.
+1. **[!UICONTROL 웹이 활성화된 변환]** 단계의 [!UICONTROL 인수]을 다음으로 변경합니다.`mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.
 1. 워크플로우를 저장합니다.
 
-수정된 워크플로우를 테스트하려면 자산을 추가합니다 `/content/dam`.
+수정된 작업 흐름을 테스트하려면 `/content/dam`에 자산을 추가하십시오.
 
-1. 파일 시스템에서 원하는 TIFF 이미지를 가져올 수 있습니다. WebDAV를 사용하여 이름을 `myImage.tiff` 변경하여 `/content/dam`복사할 수 있습니다.
-1. 예를 들어 **[!UICONTROL CQ5 DAM]** 콘솔로 이동합니다 `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
-1. 에셋 myImage.tiff **[!UICONTROL 를 열고]** 역진행 이미지와 3개의 축소판이 만들어졌는지 확인합니다.
+1. 파일 시스템에서 원하는 TIFF 이미지를 가져올 수 있습니다. WebDAV를 사용하여 이름을 `myImage.tiff`으로 변경하고 `/content/dam`에 복사합니다.
+1. **[!UICONTROL CQ5 DAM]** 콘솔로 이동합니다(예: `http://localhost:4502/libs/wcm/core/content/damadmin.html`).
+1. 에셋 **[!UICONTROL myImage.tiff]**&#x200B;을 열고 역진행 이미지와 3개의 축소판이 만들어졌는지 확인합니다.
 
-#### CommandLineProcess 프로세스 단계 구성 {#configuring-the-commandlineprocess-process-step}
+#### CommandLineProcess 프로세스 단계 {#configuring-the-commandlineprocess-process-step} 구성
 
-이 섹션에서는 CommandLineProcess의 [!UICONTROL 프로세스 인수를] 설정하는 방법을 [!UICONTROL 설명합니다].
+이 섹션에서는 [!UICONTROL CommandLineProcess]의 [!UICONTROL 프로세스 인수]를 설정하는 방법을 설명합니다.
 
-쉼표로 [!UICONTROL 프로세스 인수] 값을 구분하고 공백으로 시작하지 마십시오.
+[!UICONTROL 프로세스 인수]의 값을 쉼표로 구분하고 공백으로 시작하지 마십시오.
 
 | 인수 형식 | 설명 |
 |---|---|
 | mime:&lt;mime-type> | 선택적 인수입니다. 자산이 인수 중 하나와 동일한 MIME 형식을 갖는 경우 프로세스가 적용됩니다. <br>여러 MIME 형식을 정의할 수 있습니다. |
 | tn:&lt;width>:&lt;height> | 선택적 인수입니다. 인수에 정의된 치수로 축소판을 만듭니다. <br>여러 축소판을 정의할 수 있습니다. |
-| cmd:&lt;command> | 실행되는 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 하나의 명령만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다<br>`${filename}`.입력 파일의 이름(예: original.jpg) <br> `${file}`:입력 파일의 전체 경로 이름(예: `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`:입력 파일의 디렉토리(예: `/tmp/cqdam0816.tmp` 다음 <br>`${basename}`)입력 파일의 확장자가 없는 이름(예: 원본 <br>`${extension}`:JPG와 같은 입력 파일의 확장입니다. |
+| cmd:&lt;command> | 실행되는 명령을 정의합니다. 구문은 명령줄 도구에 따라 다릅니다. 하나의 명령만 정의할 수 있습니다. <br>다음 변수를 사용하여 명령을 만들 수 있습니다<br>`${filename}`.입력 파일의 이름(예: original.jpg)  <br> `${file}`:입력 파일의 전체 경로 이름(예:  `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`:입력 파일의 디렉토리입니다(예:  `/tmp/cqdam0816.tmp` <br>`${basename}`).입력 파일의 확장자가 없는 이름(예: 원본  <br>`${extension}`:JPG와 같은 입력 파일의 확장입니다. |
 
-예를 들어, 서버 [!DNL ImageMagick] 를 호스팅하는 디스크에 설치되어 있고 CommandLineProcess [!DNL Experience Manager] 를 구현으로 사용하여 프로세스 단계를 만드는 경우 [!UICONTROL 다음 값을] 프로세스 인수로 [!UICONTROL 지정합니다].
+예를 들어 [!DNL ImageMagick]이(가) [!DNL Experience Manager] 서버를 호스팅하는 디스크에 설치되어 있고 [!UICONTROL CommandLineProcess]를 구현으로 사용하여 프로세스 단계를 만드는 경우 [!UICONTROL 프로세스 인수]로 다음 값을 만듭니다.
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-그런 다음 워크플로우가 실행되면 이 단계는 원래 이미지 `image/gif` 를 뒤집거나 원래 이미지 `mime:image/tiff` `mime-types`를 만든 에셋에만 적용되며 JPG로 변환하여 크기가 작은 세 개의 축소판을 만듭니다.140x100, 48x48 및 10x250.
+그런 다음 워크플로우가 실행되면 이 단계는 `image/gif` 또는 `mime:image/tiff`가 `mime-types`인 에셋에만 적용되며, 전환된 원본 이미지가 JPG로 만들어지고 크기가 다음 세 개의 축소판이 만들어집니다.140x100, 48x48 및 10x250.
 
-다음 [!UICONTROL 프로세스 인수를] 사용하여 세 개의 표준 축소판을 만들 수 있습니다 [!DNL ImageMagick].
+[!DNL ImageMagick]를 사용하여 세 개의 표준 축소판을 만들려면 다음 [!UICONTROL Process 인수]을 사용하십시오.
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-다음 [!UICONTROL 프로세스 인수를] 사용하여 웹이 활성화된 변환을 만듭니다 [!DNL ImageMagick].
+다음 [!UICONTROL 프로세스 인수]를 사용하여 [!DNL ImageMagick]를 사용하여 웹이 활성화된 변환을 만듭니다.
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
 >[!NOTE]
 >
->CommandLineProcess [!UICONTROL 단계는 자산의] 자산(유형의 노드) 또는 하위 요소에만 적용됩니다 `dam:Asset`.
+>[!UICONTROL CommandLineProcess] 단계는 자산의 자산(`dam:Asset` 유형의 노드) 또는 하위 항목에만 적용됩니다.
 
 >[!MORELIKETHIS]
 >
