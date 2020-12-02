@@ -1,6 +1,6 @@
 ---
-title: 경험 조각
-seo-title: 경험 조각
+title: 경험 구성요소
+seo-title: 경험 구성요소
 description: 'null'
 seo-description: 'null'
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
@@ -12,6 +12,9 @@ discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5c88d9cfdd6238961aa46d36ebc1206a5d0507e0
+workflow-type: tm+mt
+source-wordcount: '1397'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +37,7 @@ source-git-commit: 5c88d9cfdd6238961aa46d36ebc1206a5d0507e0
 경험 조각을 사용할 수 있습니다.
 
 * 작성자가 페이지의 일부(경험 조각)를 재사용하려는 경우 해당 조각을 복사하여 붙여넣어야 합니다. 이러한 복사/붙여넣기 경험을 생성하고 유지 관리하는 데는 시간이 오래 걸리고 사용자 오류가 발생합니다. 경험 조각은 복사/붙여넣기가 필요하지 않습니다.
-* 헤드리스 CMS 사용 사례를 지원하기 위해 작성자는 작성용으로만 AEM을 사용하려고 하지만 고객에게 전달하기 위한 것은 아닙니다. 타사 시스템/터치포인트는 이러한 경험을 소모한 다음 최종 사용자에게 전달합니다.
+* 경험 조각을 사용하여 헤드리스 CMS 사용 사례를 지원할 수 있습니다. 작성자는 작성에만 AEM을 사용하고 고객에게 전달하는 데에는 사용하지 않습니다. 타사 시스템/터치포인트는 이러한 경험을 소모한 다음 최종 사용자에게 전달합니다.
 
 >[!NOTE]
 >
@@ -69,51 +72,51 @@ source-git-commit: 5c88d9cfdd6238961aa46d36ebc1206a5d0507e0
 ## 경험 조각 구성 {#organizing-your-experience-fragments}
 
 권장 사항:
-* 폴더를 사용하여 경험 조각 구성,
+* 폴더를 사용하여 경험 조각 구성하는 것이 좋습니다,
 
-* [이러한 폴더에](#configure-allowed-templates-folder)허용된 템플릿을 구성합니다.
+* [이러한 폴더에 허용된 템플릿을 구성합니다](#configure-allowed-templates-folder).
 
 폴더를 만들면 다음 작업을 수행할 수 있습니다.
 
-* 경험 조각에 의미 있는 구조를 만듭니다.예를 들어 분류에 따라
+* 경험 조각에 의미 있는 구조를 만들 수 있습니다(예: 분류에 따라).
 
    >[!NOTE]
-   경험 조각의 구조를 사이트의 페이지 구조에 정렬할 필요는 없습니다.
+   경험 조각의 구조를 사이트의 페이지 구조에 일치시킬 필요는 없습니다.
 
-* [폴더 수준에서 허용되는 템플릿 할당](#configure-allowed-templates-folder)
+* [폴더 수준에서 허용된 템플릿을 할당할 수 있습니다](#configure-allowed-templates-folder).
 
    >[!NOTE]
    [템플릿 편집기](/help/sites-authoring/templates.md)를 사용하여 나만의 템플릿을 생성할 수 있습니다.
 
-WKND 프로젝트는 몇 가지 경험 조각을 그에 따라 `Contributors`구성합니다. 사용된 구조는 다중 사이트 관리(언어 사본 포함)와 같은 다른 기능을 사용할 수 있는 방법도 보여줍니다.
+WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화합니다. 사용된 구조는 다중 사이트 관리(언어 사본 포함)와 같은 다른 기능을 사용할 방법도 보여줍니다.
 
 다음을 참조하십시오.
 
 `http://localhost:4502/aem/experience-fragments.html/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master`
 
-![경험 조각에 대한 폴더](/help/sites-authoring/assets/xf-folders.png)
+![경험 조각용 폴더](/help/sites-authoring/assets/xf-folders.png)
 
-## 경험 조각에 대한 폴더 만들기 및 구성 {#creating-and-configuring-a-folder-for-your-experience-fragments}
+## 경험 조각용 폴더 만들기 및 구성 {#creating-and-configuring-a-folder-for-your-experience-fragments}
 
-경험 조각에 대한 폴더를 만들고 구성하려면 다음을 수행하는 것이 좋습니다.
+경험 조각용 폴더를 만들고 구성하려면 다음 작업을 수행하는 것이 좋습니다.
 
-1. [폴더를](/help/sites-authoring/managing-pages.md#creating-a-new-folder)만듭니다.
+1. [폴더를 만듭니다](/help/sites-authoring/managing-pages.md#creating-a-new-folder).
 
-1. [해당 폴더에](#configure-allowed-templates-folder)대해 허용되는 경험 조각 템플릿을 구성합니다.
+1. [해당 폴더에 대해 허용되는 경험 조각 템플릿을 구성합니다](#configure-allowed-templates-folder).
 
 >[!NOTE]
-인스턴스에 [대해 허용되는 템플릿을 구성할 수도 있지만 업그레이드 시](#configure-allowed-templates-instance)값을 덮어쓸 수 있으므로 이 방법은 **권장되지** 않습니다.
+[인스턴스에 대해 허용되는 템플릿](#configure-allowed-templates-instance)을 구성할 수도 있지만 업그레이드 시 값을 덮어쓸 수 있으므로 이 방법은 권장되지 **않습니다**.
 
 ### 폴더에 대해 허용되는 템플릿 구성 {#configure-allowed-templates-folder}
 
 >[!NOTE]
-업그레이드 시 값을 덮어쓰지 않으므로 허용된 **템플릿을**&#x200B;지정하는 데 권장되는 방법입니다.
+이 방법은 업그레이드 시 값을 덮어쓰지 않으므로 **허용된 템플릿**&#x200B;을 지정하는 데 권장됩니다.
 
 1. 필수 **경험 조각** 폴더로 이동합니다.
 
-1. 폴더를 선택한 다음 속성을 **선택합니다**.
+1. 폴더를 선택한 다음, **속성**&#x200B;을 선택합니다.
 
-1. 허용된 템플릿 필드에서 필요한 템플릿을 검색할 정규 **표현식을 지정합니다** .
+1. **허용된 템플릿** 필드에서 필요한 템플릿을 검색할 정규 표현식을 지정합니다.
 
    예:
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
@@ -126,15 +129,15 @@ WKND 프로젝트는 몇 가지 경험 조각을 그에 따라 `Contributors`구
    >[!NOTE]
    자세한 내용은 [경험 조각용 템플릿](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments)을 참조하십시오.
 
-1. 저장 **및 닫기를 선택합니다**.
+1. **저장 후 닫기**&#x200B;를 선택합니다.
 
 ### 인스턴스에 대해 허용되는 템플릿 구성 {#configure-allowed-templates-instance}
 
 >[!CAUTION]
-지정된 템플릿은 업그레이드 시 **덮어쓸 수 있으므로 이** 방법으로 허용된 템플릿을 변경하지 않는 것이 좋습니다.
-이 대화 상자는 정보 용도로만 사용하십시오.
+지정된 템플릿은 업그레이드 시 덮어쓸 수 있으므로 이 방법으로 **허용된 템플릿**&#x200B;을 변경하지 않는 것이 좋습니다.
+이 대화 상자는 정보용으만 사용하십시오.
 
-1. Navigate to the required **Experience Fragments** console.
+1. 필요한 **경험 조각** 콘솔로 이동합니다.
 
 1. **구성 옵션**&#x200B;을 선택합니다.
 
@@ -153,15 +156,15 @@ WKND 프로젝트는 몇 가지 경험 조각을 그에 따라 `Contributors`구
 
 경험 조각을 생성하려면 다음을 수행하십시오.
 
-1. [전역 탐색]에서 [경험 조각]를 선택합니다.
+1. 전역 탐색에서 경험 조각을 선택합니다.
 
    ![xf-01](assets/xf-01.png)
 
-1. 필요한 폴더로 이동하고 만들기를 **선택합니다**.
+1. 필요한 폴더로 이동하고 **만들기**&#x200B;를 선택합니다.
 
    ![xf-02](assets/xf-02.png)
 
-1. 경험 **조각을** 선택하여 경험 조각 **만들기 마법사를** 엽니다.
+1. **경험 조각**&#x200B;을 선택하여 **경험 조각 만들기** 마법사를 엽니다.
 
    필요한 **템플릿**&#x200B;을 선택하고 **다음**&#x200B;을 선택합니다.
 
@@ -194,7 +197,7 @@ WKND 프로젝트는 몇 가지 경험 조각을 그에 따라 `Contributors`구
 
    ![xf-05](assets/xf-05.png)
 
-1. 구성 요소 도구 모음에서 **[구성](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**을 선택합니다.
+1. 구성 요소 도구 모음에서 **[구성](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**&#x200B;을 선택합니다.
 1. **자산**&#x200B;을 추가하고 필요에 따라 **속성**&#x200B;을 정의합니다.
 1. **완료**(틱 아이콘)로 정의를 확인합니다.
 1. 필요에 따라 구성 요소를 더 추가합니다.
@@ -220,6 +223,7 @@ WKND 프로젝트는 몇 가지 경험 조각을 그에 따라 `Contributors`구
    * **이름**(비워 두면 제목에서 파생됨)
    * **설명**
    * **변형 태그**
+
    ![xf-06](assets/xf-06.png)
 
 1. **완료**(틱 아이콘)로 확인하면 새 변형이 패널에 표시됩니다.
@@ -232,7 +236,7 @@ WKND 프로젝트는 몇 가지 경험 조각을 그에 따라 `Contributors`구
 
 1. 편집할 페이지를 엽니다.
 
-   For example: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   예:[https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. 구성 요소 브라우저에서 페이지 단락 시스템으로 구성 요소를 끌어 와서 경험 조각 구성 요소의 인스턴스를 생성합니다.
 
@@ -242,6 +246,7 @@ WKND 프로젝트는 몇 가지 경험 조각을 그에 따라 `Contributors`구
 
    * 자산 브라우저에서 필요한 조각을 구성 요소에 끌어다 놓기
    * 구성 요소 도구 모음에서 **구성**&#x200B;을 선택하고 사용할 조각을 지정한 다음 **완료**(틱)로 확인
+
    ![xf-09](assets/xf-09.png)
 
    >[!NOTE]
@@ -300,8 +305,8 @@ WKND 프로젝트는 몇 가지 경험 조각을 그에 따라 `Contributors`구
    속성은 여러 탭에서 사용할 수 있습니다.
 
    >[!CAUTION]
-   이러한 탭은 경험 조각 콘솔에서 **속성을** 열면 표시됩니다.
-   경험 **조각을** 편집할 때 속성을 열면 해당 페이지 [속성이](/help/sites-authoring/editing-page-properties.md) 표시됩니다.
+   이러한 탭은 경험 조각 콘솔에서 **속성**&#x200B;을 열면 표시됩니다.
+   경험 조각을 편집할 때 **속성을 열면** 해당 [페이지 속성](/help/sites-authoring/editing-page-properties.md)이 표시됩니다.
 
    ![ef-05](assets/ef-05.png)
 
@@ -333,14 +338,14 @@ WKND 프로젝트는 몇 가지 경험 조각을 그에 따라 `Contributors`구
 
 
 
-## 일반 HTML 렌디션 {#the-plain-html-rendition}
+## 일반 HTML 표현물 {#the-plain-html-rendition}
 
-Using the `.plain.` selector in the URL, you can access the plain HTML rendition from the browser.
+URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 표현물에 액세스할 수 있습니다.
 
 >[!NOTE]
 브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 타사 웹 앱, 사용자 지정 모바일 구현)이 URL만 사용하여 경험 조각의 컨텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/sites-developing/experience-fragments.md#the-plain-html-rendition)
 
-## 경험 조각 내보내기 {#exporting-experience-fragments}
+## 경험 조각 내보내기  {#exporting-experience-fragments}
 
 기본적으로 경험 조각은 HTML 형식으로 제공됩니다. 이는 AEM과 타사 채널에서 모두 동일하게 사용할 수 있습니다.
 
