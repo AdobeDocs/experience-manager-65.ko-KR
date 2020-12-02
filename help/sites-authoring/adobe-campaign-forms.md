@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 translation-type: tm+mt
 source-git-commit: 2451f4994a18b1566ea0efddbefcaa5bb8e41c99
+workflow-type: tm+mt
+source-wordcount: '1306'
+ht-degree: 73%
 
 ---
 
@@ -43,7 +46,7 @@ Adobe Campaign에 사용하는 세 가지 유형의 양식을 기본적으로 �
 
 Adobe Campaign에 사용되는 양식을 작성하려면 먼저 AEM 애플리케이션에서 다른 템플릿을 사용할 수 있도록 해야 합니다.
 
-To do this, see the [Templates documentation](/help/sites-developing/templates.md#template-availability).
+이렇게 하려면 [템플릿 설명서](/help/sites-developing/templates.md#template-availability)를 참조하십시오.
 
 ## 양식 만들기 {#creating-a-form}
 
@@ -55,13 +58,13 @@ To do this, see the [Templates documentation](/help/sites-developing/templates.m
 
 
 1. AEM의 [사이트]에서 새 페이지를 만들 위치로 이동합니다.
-1. Create a page and select **Adobe Campaign Classic Profile** or **Adobe Campaign Standard Profile** and click **Next**.
+1. 페이지를 만들고 **Adobe Campaign Classic 프로필**&#x200B;이나&#x200B;**Adobe Campaign Standard 프로필**&#x200B;을 선택하고 **다음**&#x200B;을 클릭합니다.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
 
    >[!NOTE]
    >
-   >If the desired template is not available, see [Template Availability](/help/sites-developing/templates.md#template-availability).
+   >원하는 템플릿을 사용할 수 없는 경우 [템플릿 가용성](/help/sites-developing/templates.md#template-availability)을 참조하십시오.
 
 1. **이름** 필드에 페이지 이름을 추가합니다. 올바른 JCR 이름이어야 합니다.
 1. **제목** 필드에 제목을 입력하고 **만들기**&#x200B;를 클릭합니다.
@@ -69,7 +72,7 @@ To do this, see the [Templates documentation](/help/sites-developing/templates.m
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
-1. 페이지의 **양식 시작** 구성 요소에서 양식 유형(**가입, 가입 해지**&#x200B;또는 **프로필 저장**)을 선택합니다. 유형은 양식당 하나만 있어야 합니다. You can now [edit the form&#39;s content](#editing-form-content).
+1. 페이지의 **양식 시작** 구성 요소에서 양식 유형(**가입, 가입 해지**&#x200B;또는 **프로필 저장**)을 선택합니다. 유형은 양식당 하나만 있어야 합니다. 이제 [양식의 내용](#editing-form-content)을 편집할 수 있습니다.
 
 ## 양식 컨텐츠 편집 {#editing-form-content}
 
@@ -77,33 +80,33 @@ Adobe Campaign 전용 양식에는 특정 구성 요소가 있습니다. 이러�
 
 >[!NOTE]
 >
->If the desired template is not available, see [Making a template available](/help/sites-authoring/adobe-campaign.md).
+>원하는 템플릿을 사용할 수 없는 경우 [템플릿 사용 가능](/help/sites-authoring/adobe-campaign.md)을 참조하십시오.
 
-이 섹션에서는 Adobe Campaign을 연결하는 특정 링크에 대해서만 자세히 설명합니다. For more information on a more general overview of how to use forms in Adobe Experience Manager, see [Editmode components](/help/sites-authoring/default-components-foundation.md).
+이 섹션에서는 Adobe Campaign을 연결하는 특정 링크에 대해서만 자세히 설명합니다. Adobe Experience Manager에서 양식 사용 방법에 대한 보다 일반적인 개요에 대한 자세한 내용은 [Editmode 구성 요소](/help/sites-authoring/default-components-foundation.md)를 참조하십시오.
 
 1. **속성 열기**&#x200B;를 선택한 다음, 클라우드 서비스에서 Adobe Campaign 구성을 추가하고 변경 사항을 저장하는 확인란을 선택합니다.
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 
-1. On the page, in the **Form Start** component, click the Configuration icon.
+1. 페이지의 **양식 시작** 구성 요소에서 구성 아이콘을 클릭합니다.
 
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
-1. Click the **Advanced** tab and select the type of form it is - **Subscribe, Unsubscribe,** or **Save Profile** and click **OK.** 유형은 양식당 하나만 있어야 합니다.
+1. **고급** 탭을 클릭하고 양식 유형 **구독, 구독 취소,** 또는 **프로필 저장**&#x200B;을 선택하고 **확인을 클릭합니다.** 유형은 양식당 하나만 있어야 합니다.
 
    * **Adobe Campaign: 프로필 저장**: Adobe Campaign(기본값)에서 수신자를 생성하거나 업데이트할 수 있습니다.
    * **Adobe Campaign: 서비스에 가입**: Adobe Campaign에서 수신자의 가입을 관리할 수 있습니다.
    * **Adobe Campaign: 서비스 가입 해지**: Adobe Campaign에서 수신자의 가입을 취소할 수 있습니다.
 
 1. 각 양식에 **암호화된 기본 키** 구성 요소가 있어야 합니다. 이 구성 요소는 Adobe Campaign 프로필의 암호화된 기본 키를 허용하는 데 사용할 URL 매개 변수를 정의합니다. 구성 요소에서 해당 구성 요소만 표시되도록 Adobe Campaign을 선택합니다.
-1. Drag the component **Encrypted Primary Key** to the form (anywhere) and click or tap the **Configuration** icon. **Adobe Campaign** 탭에서 URL 매개 변수의 이름을 지정하십시오. 확인 표시를 클릭하거나 탭하여 변경 사항을 저장합니다.
+1. 구성 요소 **암호화된 기본 키**&#x200B;를 양식(아무 데나)으로 드래그하고 **구성** 아이콘을 클릭하거나 탭합니다. **Adobe Campaign** 탭에서 URL 매개 변수의 이름을 지정하십시오. 확인 표시를 클릭하거나 탭하여 변경 사항을 저장합니다.
 
    이 양식에 연결하도록 생성된 링크는 이 URL 매개 변수를 사용하고 이 매개 변수를 Adobe Campaign 프로필의 암호화된 기본 키에 지정해야 합니다. 암호화된 기본 키는 올바르게 URL(퍼센트)로 인코딩되어야 합니다.
 
    ![chlimage_1-47](assets/chlimage_1-47a.png)
 
 1. 텍스트 필드, 날짜 필드, 확인란 필드, 선택 사항 필드 등과 같이, 필요에 따라 양식에 구성 요소를 추가합니다. 각 구성 요소에 대한 자세한 내용은 [Adobe Campaign 양식 구성 요소](/help/sites-authoring/adobe-campaign-components.md)를 참조하십시오.
-1. 구성 아이콘을 클릭하여 구성 요소를 엽니다. For example, in **Text Field (Campaign)** component, change the title and text.
+1. 구성 아이콘을 클릭하여 구성 요소를 엽니다. 예를 들어 **텍스트 필드(캠페인)** 구성 요소에서 제목과 텍스트를 변경합니다.
 
    **Adobe Campaign**&#x200B;을 클릭하여 양식 필드를 Adobe Campaign 메타데이터 변수에 매핑하십시오. 양식을 제출하면 매핑된 필드가 Adobe Campaign에서 업데이트됩니다. 일치하는 유형의 필드만 변수 선택기에서 사용할 수 있습니다(예: 텍스트 필드용 문자열 변수).
 
@@ -111,7 +114,7 @@ Adobe Campaign 전용 양식에는 특정 구성 요소가 있습니다. 이러�
 
    >[!NOTE]
    >
-   >You can add/remove fields that are displayed in the recipient table by following the instructions here: [https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
+   >아래 지침에 따라 수신자 표에 표시되는 필드를 추가/제거할 수 있습니다.[https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
 
 1. **페이지 게시**&#x200B;를 클릭합니다. 사이트에서 페이지가 활성화됩니다. AEM 게시 인스턴스로 이동하여 이것을 확인할 수 있습니다. [양식을 테스트](#testing-a-form)할 수도 있습니다.
 
@@ -119,26 +122,26 @@ Adobe Campaign 전용 양식에는 특정 구성 요소가 있습니다. 이러�
    >
    >게시 시 양식을 사용하려면 클라우드 서비스의 익명 사용자에게 읽기 권한을 제공해야 합니다. 그러나 익명 사용자에게 읽기 권한을 제공하는 데 따르는 잠재적인 보안 문제를 알고 있어야 합니다. 그리고 디스패처를 구성하는 등의 작업으로 이러한 문제를 반드시 방지하도록 하십시오.
 
-## 양식 테스트 {#testing-a-form}
+## 양식 테스트  {#testing-a-form}
 
 양식을 작성하고 양식 컨텐츠를 편집한 후 양식이 예상대로 작동하는지 수동으로 테스트할 수 있습니다.
 
 >[!NOTE]
 >
->You must have an **Encryted Primary Key** component on each form. 구성 요소에서 해당 구성 요소만 표시되도록 Adobe Campaign을 선택합니다.
+>각 양식에 **암호화된 기본 키** 구성 요소가 있어야 합니다. 구성 요소에서 해당 구성 요소만 표시되도록 Adobe Campaign을 선택합니다.
 >
 >이 절차에서는 epk(암호화된 기본 키) 번호를 수동으로 입력하지만 실제로는 사용자가 뉴스레터 내에서 이 페이지에 연결하는 링크를 가져오게 됩니다(프로필을 가입 해지하든지, 가입하든지 또는 업데이트하든지 간에). epk는 사용자를 기반으로 자동으로 업데이트됩니다.
 >
->To create that link, you use the variable **Main resource identifier**(Adobe Campaign Standard) or **Encrypted identifier** (Adobe Campaign Classic) (for example, in a **Text &amp; Personalization (Campaign)** component), which links to the epk in Adobe Campaign.
+>이 링크를 만들려면 Adobe Campaign의 epk에 연결하는 변수 **주 리소스 식별자**(Adobe Campaign Standard) 또는 **암호화된 식별자**(Adobe Campaign Classic)(예: **텍스트 및 개인화(캠페인)** 구성 요소)를 사용합니다.
 
 이렇게 하려면 Adobe Campaign 프로필의 EPK를 수동으로 가져온 다음, URL에 추가해야 합니다.
 
 1. Adobe Campaign 프로필의 암호화된 기본 키(EPK)를 가져오려면 다음을 수행하십시오.
 
-   * In Adobe Campaign Standard - Navigate to **Profiles and Audiences** > **Profiles**, which lists the existing profiles. Make sure the table displays the **Main Resource Identifier** field in a column (This can be configured by clicking/tapping **Configure list**). 원하는 프로필의 기본 리소스 ID를 복사하십시오.
-   * In Adobe Campaign Classic, go to **Profiles and Targets** >  **Recipients**, which lists the existing profiles. Make sure the table displays the **Encrypted identifier** field in a column (This can be configured by right-clicking on an entry and selecting **Configure list...**). 원하는 프로필의 암호화된 ID를 복사하십시오.
+   * Adobe Campaign Standard - 기존 프로필이 나열된 **프로필 및 대상** > **프로필**&#x200B;으로 이동합니다. 테이블에 열에 **주 리소스 식별자** 필드가 표시되는지 확인하십시오. (이 필드는 **목록 구성**&#x200B;을 클릭/탭하여 구성할 수 있습니다.) 원하는 프로필의 기본 리소스 ID를 복사하십시오.
+   * Adobe Campaign Classic에서 기존 프로필을 나열하는 **프로필 및 Target** > **수신자**&#x200B;로 이동합니다. 테이블에 열에 **암호화된 식별자** 필드가 표시되는지 확인하십시오(항목을 마우스 오른쪽 단추로 클릭하고 **목록 구성...을 선택하여 이 필드를 구성할 수 있습니다.**). 원하는 프로필의 암호화된 ID를 복사하십시오.
 
-1. In AEM, open the form page on the publish instance and append the EPK from step 1 as a URL parameter: use the same name that you previously defined in the EPK component when authoring the form (for example: `?epk=...`)
+1. AEM에서 게시 인스턴스의 양식 페이지를 열고 1단계에서 EPK를 URL 매개 변수로 추가합니다.양식을 작성할 때 이전에 EPK 구성 요소에서 정의한 것과 동일한 이름을 사용합니다(예:`?epk=...`)
 1. 이제 연결된 Adobe Campaign 프로필과 연결된 데이터와 가입을 수정하는 데 이 양식을 사용할 수 있습니다. 일부 필드를 수정하고 양식을 제출한 후 적절한 데이터가 업데이트된 것을 Adobe Campaign 내에서 확인할 수 있습니다.
 
 양식의 유효성이 검증되면 Adobe Campaign 데이터베이스의 데이터가 업데이트됩니다.
