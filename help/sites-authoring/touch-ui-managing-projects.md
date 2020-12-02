@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 translation-type: tm+mt
 source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 78%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and **/home/groups**.
+>프로젝트 제작, 작업/워크플로우 생성, 팀 보기 및 관리와 같은 프로젝트 기능을 사용하는 동안 프로젝트의 사용자가 다른 사용자/그룹을 보려면 해당 사용자는 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 액세스 권한이 있어야 합니다. 이를 구현하는 가장 쉬운 방법은 **projects-users** 그룹에 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 액세스 권한을 제공하는 것입니다.
 
 ## 프로젝트 만들기 {#creating-a-project}
 
@@ -49,11 +52,11 @@ source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
 프로젝트 작성 절차는 프로젝트 간에 동일합니다. 프로젝트 유형 간의 차이에는 사용 가능한 [사용자 역할](/help/sites-authoring/projects.md)과 [워크플로우](/help/sites-authoring/projects-with-workflows.md)가 포함됩니다.  새 프로젝트를 작성하려면 다음을 수행하십시오.
 
 1. **프로젝트**&#x200B;에서 **만들기**&#x200B;를 탭/클릭하여 **프로젝트 만들기** 마법사를 엽니다.
-1. 템플릿을 선택합니다. Out of the box, Simple Project, Media Project, [Translation Project](/help/sites-administering/tc-manage.md), and [Product Photo Shoot Product](/help/sites-authoring/managing-product-information.md) are available and click **Next**.
+1. 템플릿을 선택합니다. 즉시 제공되는 단순 프로젝트, 미디어 프로젝트, [번역 프로젝트](/help/sites-administering/tc-manage.md) 및 [제품 사진 촬영 제품](/help/sites-authoring/managing-product-information.md)을(를) 사용할 수 있으며 **다음**&#x200B;을 클릭합니다.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. 사용자와 사용자가 속한 그룹을 추가하거나 삭제할 수도 있습니다. 또한 **고급**&#x200B;을 클릭하여 URL에 사용된 이름을 추가합니다.
+1. **제목** 및 **설명**&#x200B;을 정의하고 필요한 경우 **축소판** 이미지를 추가합니다. 사용자와 사용자가 속한 그룹을 추가하거나 삭제할 수도 있습니다. 또한 **고급**&#x200B;을 클릭하여 URL에 사용된 이름을 추가합니다.
 
    ![chlimage_1-257](assets/chlimage_1-257.png)
 
@@ -74,7 +77,7 @@ source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
    >
    >프로젝트와 연결할 수 있는 프로젝트 타일은 [프로젝트 타일](/help/sites-authoring/projects.md#project-tiles)에 자세히 설명되어 있습니다.
 
-1. **만들기**&#x200B;를 탭/클릭합니다. 리소스가 프로젝트에 연결되어 있으므로 지금부터 프로젝트에서 리소스에 액세스할 수 있습니다.
+1. **만들기**&#x200B;를 탭/클릭합니다. 리소스는 프로젝트에 연결되어 있으므로 이제부터 프로젝트에서 리소스에 액세스할 수 있습니다.
 
 ### 프로젝트 또는 리소스 링크 삭제 {#deleting-a-project-or-resource-link}
 
@@ -100,7 +103,7 @@ source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
 
 타일에 항목을 추가하려면 다음을 수행하십시오.
 
-1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+1. **프로젝트**&#x200B;에서 프로젝트로 이동하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
 
    ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -124,19 +127,19 @@ source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
 
 ## 프로젝트 통계 보기 {#viewing-project-statistics}
 
-프로젝트 통계를 보려면 **프로젝트** 콘솔에서 **통계 보기 표시**&#x200B;를 클릭하십시오. 각 프로젝트에 대한 완료 수준이 표시됩니다. Click **Show Statistics View** again to go to the **Projects** console.
+프로젝트 통계를 보려면 **프로젝트** 콘솔에서 **통계 보기 표시**&#x200B;를 클릭하십시오. 각 프로젝트에 대한 완료 수준이 표시됩니다. **통계 보기 표시**&#x200B;를 다시 클릭하여 **프로젝트** 콘솔로 이동합니다.
 
 ![chlimage_1-263](assets/chlimage_1-263.png)
 
 ### 프로젝트 타임라인 보기 {#viewing-a-project-timeline}
 
-프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. 자산은 왼쪽 창에 표시됩니다. Click/tap **Timeline** to return to the **Projects** console.
+프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 **타임라인**&#x200B;을 클릭/탭한 다음 선택 모드를 시작하고 프로젝트를 선택합니다. 자산은 왼쪽 창에 표시됩니다. **타임라인**&#x200B;을 클릭/탭하여 **프로젝트** 콘솔로 돌아갑니다.
 
 ![chlimage_1-264](assets/chlimage_1-264.png)
 
 ### 활성/비활성 프로젝트 보기 {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. 아이콘 옆에 확인 표시가 있으면 활성 프로젝트를 표시 중입니다.
+활성 프로젝트와 비활성 프로젝트 간에 전환하려면 **프로젝트** 콘솔에서 **활성 프로젝트 전환**&#x200B;을 클릭합니다. 아이콘 옆에 확인 표시가 있으면 활성 프로젝트를 표시 중입니다.
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
@@ -155,7 +158,7 @@ To toggle between your active and inactive projects, in the **Projects** console
    >[!NOTE]
    프로젝트 타일이 아직 프로젝트에 없을 경우 이 타일을 추가해야 할 수 있습니다. [타일 추가](#adding-items-to-a-tile)를 참조하십시오.
 
-1. Tap/click **Edit**.
+1. **편집**&#x200B;을 탭/클릭합니다.
 1. 선택기를 **활성**&#x200B;에서 **비활성**(또는 그 반대)으로 변경합니다.
 
    ![chlimage_1-267](assets/chlimage_1-267.png)
