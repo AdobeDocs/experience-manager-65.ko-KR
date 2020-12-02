@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 52cb99353ae33c8097b6b5bd29f6c040df30b42d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 100%
 
