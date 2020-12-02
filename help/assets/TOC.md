@@ -87,7 +87,7 @@ ht-degree: 79%
    + [사용자 정의 및 확장 [!DNL Assets]](extending-assets.md)
    + [미디어 핸들러 및 워크플로우를 사용하여 자산 처리](media-handlers.md)
    + [검색 기능 확장](searchx.md)
-   + [설치 및 [!DNL ImageMagick] 구성 [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [설치 및  [!DNL ImageMagick] 구성 [!DNL Assets]](best-practices-for-imagemagick.md)
    + [자산과 활동 스트림 통합](extending-activity-stream.md)
    + [자산 편집기 확장](asseteditorx.md)
    + [[!DNL Assets] HTTP API](mac-api-assets.md)
@@ -127,7 +127,7 @@ ht-degree: 79%
    + [자산 템플릿](asset-templates.md)
    + [폴더를 [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
-   + [구성 [!DNL Assets] 방법 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [구성  [!DNL Assets] 방법 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [에셋 게시 대상 [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [폴더 게시 대상 [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [컬렉션 게시 대상 [!DNL Brand Portal]](brand-portal-publish-collection.md)
