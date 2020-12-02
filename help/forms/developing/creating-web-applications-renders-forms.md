@@ -19,15 +19,15 @@ ht-degree: 0%
 ---
 
 
-# Forms을 렌더링하는 웹 애플리케이션 만들기 {#creating-web-applications-thatrenders-forms}
+# Forms {#creating-web-applications-thatrenders-forms}을(를) 렌더링하는 웹 응용 프로그램 만들기
 
-## Forms을 렌더링하는 웹 애플리케이션 만들기 {#creating-web-applications-that-renders-forms}
+## Forms {#creating-web-applications-that-renders-forms}을(를) 렌더링하는 웹 응용 프로그램 만들기
 
 Java 서블릿을 사용하여 Forms 서비스를 호출하고 양식을 렌더링하는 웹 기반 응용 프로그램을 만들 수 있습니다. Java™ 서블릿을 사용하면 프로세스의 반환 값을 클라이언트 웹 브라우저에 작성할 수 있다는 이점이 있습니다. 즉, Java 서블릿을 양식을 반환하는 Forms 서비스와 클라이언트 웹 브라우저 간의 링크로 사용할 수 있습니다.
 
 >[!NOTE]
 >
->이 섹션에서는 Forms 서비스를 호출하고 조각을 기반으로 양식을 렌더링하는 Java 서블릿을 사용하는 웹 기반 응용 프로그램을 만드는 방법에 대해 설명합니다. (조각에 [따라 Forms 렌더링을 참조하십시오](/help/forms/developing/rendering-forms-based-fragments.md).)
+>이 섹션에서는 Forms 서비스를 호출하고 조각을 기반으로 양식을 렌더링하는 Java 서블릿을 사용하는 웹 기반 응용 프로그램을 만드는 방법에 대해 설명합니다. ([조각에 따라 Forms 렌더링](/help/forms/developing/rendering-forms-based-fragments.md)을 참조하십시오.)
 
 Java 서블릿을 사용하여 고객이 데이터를 보고 양식에 입력할 수 있도록 클라이언트 웹 브라우저에 양식을 작성할 수 있습니다. 양식에 데이터를 채우고 나면 웹 사용자가 양식에 있는 제출 단추를 클릭하여 데이터를 검색하고 처리할 수 있는 Java 서블릿으로 정보를 다시 보냅니다. 예를 들어 데이터를 다른 프로세스로 전송할 수 있습니다.
 
@@ -45,27 +45,27 @@ Java 서블릿을 사용하여 고객이 데이터를 보고 양식에 입력할
 
 >[!NOTE]
 >
->조각을 기반으로 양식 디자인을 만드는 방법에 대한 자세한 내용은 [Forms 디자이너를 참조하십시오](https://www.adobe.com/go/learn_aemforms_designer_63).
+>조각을 기반으로 양식 디자인을 만드는 방법에 대한 자세한 내용은 [Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63)를 참조하십시오.
 
 **샘플 파일**
 
 이 섹션에서는 다음 위치에 위치할 수 있는 샘플 파일을 사용합니다.
 
-&lt;*Forms 디자이너 설치 디렉토리*>/Samples/Forms/Purchase Order/Form Fragments
+&lt;>Forms 디자이너 설치 디렉토리&#x200B;*>/Samples/Forms/Purchase Order/Form Fragments*
 
-여기서 &lt;*install directory*>는 설치 경로입니다. 클라이언트 응용 프로그램의 목적으로 Purchase Order Dynamic.xdp 파일이 이 설치 위치에서 복사되어 Applications/FormsApplication이라는 Forms 응용 프로그램에 *배포되었습니다*. Purchase Order Dynamic.xdp 파일은 FormsFolder라는 폴더에 있습니다. 마찬가지로 다음 그림과 같이 조각이라는 폴더에 조각이 배치됩니다.
+여기서 &lt;*install directory*>는 설치 경로입니다. 클라이언트 응용 프로그램의 목적으로 Purchase Order Dynamic.xdp 파일이 이 설치 위치에서 복사되어 *Applications/FormsApplication*&#x200B;이라는 Forms 응용 프로그램에 배포되었습니다. Purchase Order Dynamic.xdp 파일은 FormsFolder라는 폴더에 있습니다. 마찬가지로 다음 그림과 같이 조각이라는 폴더에 조각이 배치됩니다.
 
 ![cw_cw_fragmentsrepository](assets/cw_cw_fragmentsrepository.png)
 
-Purchase Order Dynamic.xdp 양식 디자인에 액세스하려면 양식 이름 `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` (메서드에 전달된 첫 번째 매개 변수)과 컨텐츠 루트 URI 값 `renderPDFForm` `repository:///` 으로 지정합니다.
+Purchase Order Dynamic.xdp 양식 디자인에 액세스하려면 양식 이름(`renderPDFForm` 메서드에 전달된 첫 번째 매개 변수)으로 `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp`, 컨텐츠 루트 URI 값으로 `repository:///`를 지정합니다.
 
-웹 응용 프로그램에서 사용하는 XML 데이터 파일이 데이터 폴더에서 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 `C:\Adobe`속하는 파일 시스템으로 이동되었습니다. 파일 이름은 Purchase Order *Canada.xml* 및 Purchase Order *US.xml입니다*.
+웹 응용 프로그램에서 사용하는 XML 데이터 파일이 데이터 폴더에서 `C:\Adobe`(AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 속하는 파일 시스템)으로 이동되었습니다. 파일 이름은 구매 주문서 *Canada.xml* 및 구매 주문서 *US.xml*&#x200B;입니다.
 
 >[!NOTE]
 >
->워크벤치를 사용하여 Forms 애플리케이션을 만드는 방법에 대한 자세한 내용은 [워크벤치 도움말을 참조하십시오](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>워크벤치를 사용하여 Forms 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [워크벤치 도움말](https://www.adobe.com/go/learn_aemforms_workbench_63)을 참조하십시오.
 
-### 단계 요약 {#summary-of-steps}
+### {#summary-of-steps} 단계 요약
 
 조각을 기반으로 양식을 렌더링하는 웹 기반 응용 프로그램을 만들려면 다음 단계를 수행하십시오.
 
@@ -82,7 +82,7 @@ Purchase Order Dynamic.xdp 양식 디자인에 액세스하려면 양식 이름 
 
 ### 웹 프로젝트 만들기 {#creating-a-web-project}
 
-Forms 서비스를 호출할 수 있는 Java 서블릿을 포함하는 웹 응용 프로그램을 만드는 첫 번째 단계는 새 웹 프로젝트를 만드는 것입니다. 이 문서가 기반으로 하는 Java IDE는 Eclipse 3.3입니다. Eclipse IDE를 사용하여 웹 프로젝트를 만들고 필요한 JAR 파일을 프로젝트에 추가합니다. 마지막으로 프로젝트에 index.html *과 Java 서블릿이라는 HTML* 페이지를 추가합니다.
+Forms 서비스를 호출할 수 있는 Java 서블릿을 포함하는 웹 응용 프로그램을 만드는 첫 번째 단계는 새 웹 프로젝트를 만드는 것입니다. 이 문서가 기반으로 하는 Java IDE는 Eclipse 3.3입니다. Eclipse IDE를 사용하여 웹 프로젝트를 만들고 필요한 JAR 파일을 프로젝트에 추가합니다. 마지막으로 *index.html*&#x200B;이라는 HTML 페이지와 Java 서블릿을 프로젝트에 추가합니다.
 
 다음 목록은 웹 프로젝트에 추가해야 하는 JAR 파일을 지정합니다.
 
@@ -91,39 +91,39 @@ Forms 서비스를 호출할 수 있는 Java 서블릿을 포함하는 웹 응�
 * adobe-usermanager-client.jar
 * adobe-utilities.jar
 
-이러한 JAR 파일의 위치는 AEM Forms Java 라이브러리 파일 [포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 JAR 파일의 위치에 대해서는 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
 
 **웹 프로젝트를 만들려면**
 
-1. Eclipse를 시작하고 **파일** > **새 프로젝트를 클릭합니다**.
-1. 새 프로젝트 **대화** 상자에서 **웹** > **동적 웹 프로젝트**&#x200B;를선택합니다.
-1. 프로젝트 이름 `FragmentsWebApplication` 을 입력한 다음 마침을 **클릭합니다**.
+1. Eclipse를 시작하고 **파일** > **새 프로젝트**&#x200B;를 클릭합니다.
+1. **새 프로젝트** 대화 상자에서 **웹** > **동적 웹 프로젝트**&#x200B;를 선택합니다.
+1. 프로젝트 이름에 `FragmentsWebApplication`을 입력한 다음 **Finish**&#x200B;를 클릭합니다.
 
 **프로젝트에 필요한 JAR 파일을 추가하려면:**
 
-1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 속성 `FragmentsWebApplication` 을 선택합니다 ****.
-1. Java **빌드 경로를** 클릭한 다음 **라이브러리** 탭을 클릭합니다.
-1. 외부 JAR **추가** 버튼을 클릭하고 포함할 JAR 파일을 찾습니다.
+1. 프로젝트 탐색기 창에서 `FragmentsWebApplication` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**&#x200B;을 선택합니다.
+1. **Java 빌드 경로**&#x200B;를 클릭한 다음 **라이브러리** 탭을 클릭합니다.
+1. **외부 JAR 추가** 단추를 클릭하고 포함할 JAR 파일을 찾습니다.
 
 **프로젝트에 Java 서블릿을 추가하려면:**
 
-1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 `FragmentsWebApplication` 새로 만들기 **>** 기타 **를 선택합니다**.
-1. 웹 **폴더를** 확장하고 서블릿을 **선택한**&#x200B;다음 **을 클릭합니다**.
-1. 서블릿 만들기 대화 상자에서 서블릿 이름 `RenderFormFragment` 을 입력한 다음 **마침을 클릭합니다**.
+1. 프로젝트 탐색기 창에서 `FragmentsWebApplication` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **새로 만들기** > **기타**&#x200B;을 선택합니다.
+1. **웹** 폴더를 확장하고 **서블릿**&#x200B;을 선택한 다음 **다음**&#x200B;을 클릭합니다.
+1. 서블릿 만들기 대화 상자에서 서블릿의 이름에 `RenderFormFragment`을 입력한 다음 **마침**&#x200B;을 클릭합니다.
 
 **프로젝트에 HTML 페이지를 추가하려면:**
 
-1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 `FragmentsWebApplication` 새로 만들기 **>** 기타 **를 선택합니다**.
-1. **웹** 폴더를 확장하고 **HTML을**&#x200B;선택한 다음 **다음을**&#x200B;클릭합니다.
-1. 새 HTML 대화 상자에서 파일 이름 `index.html` 을 입력한 다음 마침을 **클릭합니다**.
+1. 프로젝트 탐색기 창에서 `FragmentsWebApplication` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **새로 만들기** > **기타**&#x200B;을 선택합니다.
+1. **웹** 폴더를 확장하고 **HTML**&#x200B;을 선택한 다음 **다음**&#x200B;을 클릭합니다.
+1. 새 HTML 대화 상자에서 파일 이름에 `index.html`을 입력한 다음 **마침**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
->Java 서블릿을 호출하는 HTML 페이지 만들기에 대한 자세한 내용은 웹 페이지 `RenderFormFragment` 만들기를 참조하십시오 [](/help/forms/developing/rendering-forms.md#creating-the-web-page).
+>`RenderFormFragment` Java 서블릿을 호출하는 HTML 페이지 만들기에 대한 자세한 내용은 [웹 페이지 만들기](/help/forms/developing/rendering-forms.md#creating-the-web-page)를 참조하십시오.
 
-### 서블릿에 대한 Java 응용 프로그램 논리 생성 {#creating-java-application-logic-for-the-servlet}
+### 서블릿 {#creating-java-application-logic-for-the-servlet}에 대한 Java 응용 프로그램 논리 생성
 
-Java 서블릿 내에서 Forms 서비스를 호출하는 Java 애플리케이션 로직을 생성합니다. 다음 코드는 Java 서블릿의 구문을 `RenderFormFragment` 보여 줍니다.
+Java 서블릿 내에서 Forms 서비스를 호출하는 Java 애플리케이션 로직을 생성합니다. 다음 코드는 `RenderFormFragment` Java 서블릿의 구문을 보여 줍니다.
 
 ```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
@@ -138,35 +138,35 @@ Java 서블릿 내에서 Forms 서비스를 호출하는 Java 애플리케이션
              }
 ```
 
-일반적으로 클라이언트 코드는 Java 서블릿이나 메서드 내에 배치되지 `doGet` 않습니다 `doPost` . 보다 나은 프로그래밍 방법은 이 코드를 별도의 클래스 내에 배치하고, 메서드(또는 메서드) 내에서 클래스를 인스턴스화하고, 적절한 메서드를 호출하는 `doPost` `doGet` 것입니다. 그러나 코드 간결성의 경우 이 섹션의 코드 예제는 최소로 유지되며 코드 예제는 `doPost` 메서드에 배치됩니다.
+일반적으로 클라이언트 코드는 Java 서블릿의 `doGet` 또는 `doPost` 메서드 내에 삽입하지 않습니다. 보다 나은 프로그래밍 방법은 이 코드를 별도의 클래스 내에 배치하고 `doPost` 메서드(또는 `doGet` 메서드) 내에서 클래스를 인스턴스화하고 적절한 메서드를 호출하는 것입니다. 그러나 코드 간결성의 경우 이 섹션의 코드 예제는 최소로 유지되며 코드 예제는 `doPost` 메서드에 배치됩니다.
 
 Forms 서비스 API를 사용하여 조각을 기반으로 양식을 렌더링하려면 다음 작업을 수행하십시오.
 
-1. Java 프로젝트의 클래스 경로에 adobe-forms-client.jar와 같은 클라이언트 JAR 파일을 포함합니다. 이러한 파일의 위치에 대한 자세한 내용은 AEM Forms Java 라이브러리 파일 [포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. HTML 양식에서 전송된 라디오 단추 값을 검색하고 미국 또는 캐나다 데이터를 사용할지 여부를 지정합니다. American이 제출되면 Purchase Order US.xml `com.adobe.idp.Document` 에 있는 데이터를 *저장하는 URL을 만듭니다*. 마찬가지로 캐나다인 경우 Purchase Order Canada.xml `com.adobe.idp.Document` 파일에 있는 데이터를 저장하는 ** 파일을 만듭니다.
-1. 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
-1. 생성자를 사용하여 개체를 `FormsServiceClient` 만들고 개체를 `ServiceClientFactory` 전달합니다.
-1. 생성자를 사용하여 URI 값을 저장하는 `URLSpec` 객체를 만듭니다.
-1. 객체의 `URLSpec` `setApplicationWebRoot` 메서드를 호출하고 응용 프로그램의 웹 루트를 나타내는 문자열 값을 전달합니다.
-1. 개체의 `URLSpec` `setContentRootURI` 메서드를 호출하고 콘텐츠 루트 URI 값을 지정하는 문자열 값을 전달합니다. 양식 디자인과 조각이 컨텐츠 루트 URI에 있는지 확인합니다. 그렇지 않을 경우 Forms 서비스는 예외를 throw합니다. AEM Forms 리포지토리를 참조하려면 을 지정합니다 `repository://`.
-1. 개체의 `URLSpec` 메서드를 `setTargetURL` 호출하고 양식 데이터가 게시된 위치에 대상 URL 값을 지정하는 문자열 값을 전달합니다. 양식 디자인에서 대상 URL을 정의하는 경우 빈 문자열을 전달할 수 있습니다. 계산을 수행하기 위해 양식이 전송되는 URL을 지정할 수도 있습니다.
-1. 개체의 `FormsServiceClient` 메서드를 `renderPDFForm` 호출하고 다음 값을 전달합니다.
+1. Java 프로젝트의 클래스 경로에 adobe-forms-client.jar와 같은 클라이언트 JAR 파일을 포함합니다. 이러한 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
+1. HTML 양식에서 전송된 라디오 단추 값을 검색하고 미국 또는 캐나다 데이터를 사용할지 여부를 지정합니다. American이 제출되면 *Purchase Order US.xml*&#x200B;에 있는 데이터를 저장하는 `com.adobe.idp.Document`을 만듭니다. 마찬가지로 캐나다인 경우 *Purchase Order Canada.xml* 파일에 있는 데이터를 저장하는 `com.adobe.idp.Document`을 만듭니다.
+1. 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. ([연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.)
+1. 생성자를 사용하여 `FormsServiceClient` 개체를 만들고 `ServiceClientFactory` 개체를 전달합니다.
+1. 생성자를 사용하여 URI 값을 저장하는 `URLSpec` 개체를 만듭니다.
+1. `URLSpec` 개체의 `setApplicationWebRoot` 메서드를 호출하고 응용 프로그램의 웹 루트를 나타내는 문자열 값을 전달합니다.
+1. `URLSpec` 개체의 `setContentRootURI` 메서드를 호출하고 콘텐츠 루트 URI 값을 지정하는 문자열 값을 전달합니다. 양식 디자인과 조각이 컨텐츠 루트 URI에 있는지 확인합니다. 그렇지 않을 경우 Forms 서비스는 예외를 throw합니다. AEM Forms 리포지토리를 참조하려면 `repository://`을 지정합니다.
+1. `URLSpec` 개체의 `setTargetURL` 메서드를 호출하고 양식 데이터가 게시된 위치에 대상 URL 값을 지정하는 문자열 값을 전달합니다. 양식 디자인에서 대상 URL을 정의하는 경우 빈 문자열을 전달할 수 있습니다. 계산을 수행하기 위해 양식이 전송되는 URL을 지정할 수도 있습니다.
+1. `FormsServiceClient` 개체의 `renderPDFForm` 메서드를 호출하고 다음 값을 전달합니다.
 
    * 파일 이름 확장자를 포함하여 양식 디자인 이름을 지정하는 문자열 값.
    * 양식과 병합할 데이터가 포함된 `com.adobe.idp.Document` 개체(2단계에서 생성됨).
-   * 런타임 옵션을 저장하는 `PDFFormRenderSpec` 개체입니다. 자세한 내용은 [AEM Forms API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * 런타임 옵션을 저장하는 `PDFFormRenderSpec` 개체입니다. 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)를 참조하십시오.
    * 조각을 기반으로 양식을 렌더링하는 데 필요한 URI 값이 포함된 `URLSpec` 개체
-   * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 선택 매개 변수이며 양식에 파일을 첨부하지 않으려는 `null` 경우 지정할 수 있습니다.
+   * 첨부 파일을 저장하는 `java.util.HashMap` 개체입니다. 이 매개 변수는 선택 사항이며, 양식에 파일을 첨부하지 않으려는 경우 `null`을 지정할 수 있습니다.
 
-   이 `renderPDFForm` 메서드는 클라이언트 웹 브라우저에 작성해야 하는 양식 데이터 스트림을 포함하는 `FormsResult` 개체를 반환합니다.
+   `renderPDFForm` 메서드는 클라이언트 웹 브라우저에 작성해야 하는 양식 데이터 스트림을 포함하는 `FormsResult` 개체를 반환합니다.
 
-1. 개체 &#39;s 메서드 `com.adobe.idp.Document` 를 호출하여 개체를 `FormsResult` 만듭니다 `getOutputContent` .
-1. 해당 메서드를 호출하여 개체의 `com.adobe.idp.Document` 콘텐츠 유형을 `getContentType` 가져옵니다.
-1. 해당 메서드를 호출하고 개체의 컨텐트 유형을 전달하여 `javax.servlet.http.HttpServletResponse` 개체의 컨텐트 유형을 `setContentType` `com.adobe.idp.Document` 설정합니다.
-1. 개체의 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `javax.servlet.ServletOutputStream` 개체를 `javax.servlet.http.HttpServletResponse` `getOutputStream` 만듭니다.
-1. 개체 `java.io.InputStream` 의 메서드를 호출하여 `com.adobe.idp.Document` 개체를 `getInputStream` 만듭니다.
-1. 바이트 배열을 만들면 `InputStream` 개체의 `read`메서드를 호출하고 바이트 배열을 인수로 전달하여 양식 데이터 스트림으로 이 변수를 채웁니다.
-1. 개체의 `javax.servlet.ServletOutputStream` 메서드를 `write` 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 보냅니다. 바이트 배열을 `write` 메서드로 전달합니다.
+1. `FormsResult` 개체 &#39;s `getOutputContent` 메서드를 호출하여 `com.adobe.idp.Document` 개체를 만듭니다.
+1. `getContentType` 메서드를 호출하여 `com.adobe.idp.Document` 개체의 콘텐츠 유형을 가져옵니다.
+1. `setContentType` 메서드를 호출하고 `com.adobe.idp.Document` 개체의 콘텐츠 형식을 전달하여 `javax.servlet.http.HttpServletResponse` 개체의 콘텐츠 형식을 설정합니다.
+1. `javax.servlet.http.HttpServletResponse` 개체의 `getOutputStream` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `javax.servlet.ServletOutputStream` 개체를 만듭니다.
+1. `com.adobe.idp.Document` 개체의 `getInputStream` 메서드를 호출하여 `java.io.InputStream` 개체를 만듭니다.
+1. 바이트 배열을 만들면 `InputStream` 개체의 `read` 메서드를 호출하고 바이트 배열을 인수로 전달하여 양식 데이터 스트림으로 이 배열을 채웁니다.
+1. 양식 데이터 스트림을 클라이언트 웹 브라우저에 보내려면 `javax.servlet.ServletOutputStream` 개체의 `write` 메서드를 호출합니다. 바이트 배열을 `write` 메서드에 전달합니다.
 
 다음 코드 예는 Forms 서비스를 호출하고 조각을 기반으로 양식을 렌더링하는 Java 서블릿을 나타냅니다.
 
@@ -305,7 +305,7 @@ Forms 서비스 API를 사용하여 조각을 기반으로 양식을 렌더링�
  }
 ```
 
-### 웹 페이지 만들기 {#creating-the-web-page}
+### 웹 페이지 {#creating-the-web-page} 만들기
 
 index.html 웹 페이지는 Java 서블릿에 대한 시작 지점을 제공하고 Forms 서비스를 호출합니다. 이 웹 페이지는 두 개의 라디오 버튼과 제출 단추가 포함된 기본 HTML 양식입니다. 라디오 단추 이름은 라디오입니다. 사용자가 전송 단추를 클릭하면 양식 데이터가 `RenderFormFragment` Java 서블릿에 게시됩니다.
 
@@ -329,7 +329,7 @@ Java 서블릿은 다음 Java 코드를 사용하여 HTML 페이지에서 게시
              }
 ```
 
-다음 HTML 코드는 개발 환경을 설정하는 동안 만들어진 index.html 파일에 있습니다. 웹 프로젝트 [만들기를 참조하십시오](/help/forms/developing/rendering-forms.md#creating-a-web-project).
+다음 HTML 코드는 개발 환경을 설정하는 동안 만들어진 index.html 파일에 있습니다. ([웹 프로젝트 만들기](/help/forms/developing/rendering-forms.md#creating-a-web-project)를 참조하십시오.)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -371,25 +371,25 @@ Java 서블릿은 다음 Java 코드를 사용하여 HTML 페이지에서 게시
  </html>
 ```
 
-### 웹 애플리케이션 패키징 {#packaging-the-web-application}
+### 웹 응용 프로그램 패키징 {#packaging-the-web-application}
 
 Forms 서비스를 호출하는 Java 서블릿을 배포하려면 웹 응용 프로그램을 WAR 파일로 패키지합니다. 구성 요소의 비즈니스 로직이 의존하는 외부 JAR 파일도 WAR 파일에 포함되어 있는지 확인합니다(예: adobe-livecycle-client.jar 및 adobe-forms-client.jar).
 
 **웹 응용 프로그램을 WAR 파일로 패키지하는 방법은 다음과 같습니다.**
 
-1. 프로젝트 **탐색기** 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 내보내기 `FragmentsWebApplication` > **WAR 파일** 을 **선택합니다**.
-1. 웹 **모듈** 텍스트 상자에 Java 프로젝트 `FragmentsWebApplication` 의 이름을 입력합니다.
-1. [ **대상** ] 텍스트 상자 `FragmentsWebApplication.war`**에서 파일 이름**&#x200B;을 입력하고 WAR 파일의 위치를 지정한 다음 [마침]을 클릭합니다.
+1. **프로젝트 탐색기** 창에서 `FragmentsWebApplication` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **내보내기** > **WAR 파일**&#x200B;을 선택합니다.
+1. **웹 모듈** 텍스트 상자에 Java 프로젝트의 이름에 `FragmentsWebApplication`를 입력합니다.
+1. **대상** 텍스트 상자에 `FragmentsWebApplication.war`**를**&#x200B;파일 이름에 입력하고 WAR 파일의 위치를 지정한 다음 마침을 클릭합니다.
 
-### J2EE 응용 프로그램 서버에 WAR 파일 배포 {#deploying-the-war-file-to-the-j2ee-application-server}
+### J2EE 응용 프로그램 서버 {#deploying-the-war-file-to-the-j2ee-application-server}에 WAR 파일 배포
 
 WAR 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 배포할 수 있습니다. WAR 파일이 배포된 후 웹 브라우저를 사용하여 HTML 웹 페이지에 액세스할 수 있습니다.
 
 **WAR 파일을 J2EE 응용 프로그램 서버에 배포하려면**
 
-* 내보내기 경로에서 로 WAR 파일을 복사합니다 `[Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\all\deploy`.
+* 내보내기 경로에서 `[Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\all\deploy`(으)로 WAR 파일을 복사합니다.
 
-### 웹 애플리케이션 테스트 {#testing-your-web-application}
+### 웹 응용 프로그램 테스트 {#testing-your-web-application}
 
 웹 애플리케이션을 배포한 후 웹 브라우저를 사용하여 테스트할 수 있습니다. AEM Forms을 호스팅하는 것과 동일한 컴퓨터를 사용하고 있다고 가정할 경우 다음 URL을 지정할 수 있습니다.
 
