@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# WebLogic Server용 SSL 구성 {#configuring-ssl-for-weblogic-server}
+# WebLogic Server {#configuring-ssl-for-weblogic-server}에 대한 SSL 구성
 
 WebLogic Server에서 SSL을 구성하려면 인증에 SSL 자격 증명이 필요합니다. Java 키 도구를 사용하여 다음 작업을 수행하여 자격 증명을 만들 수 있습니다.
 
@@ -27,7 +27,7 @@ WebLogic Server에서 SSL을 구성하려면 인증에 SSL 자격 증명이 필�
 
 그런 다음 만든 사용자 지정 ID 키 스토어 및 사용자 지정 트러스트 키 저장소를 사용하도록 WebLogic을 구성합니다. 또한 키 저장소 파일을 만드는 데 사용되는 고유 이름에 WebLogic을 호스팅하는 컴퓨터의 이름이 포함되어 있지 않으므로 WebLogic 호스트 이름 확인 기능을 비활성화합니다.
 
-## WebLogic Server에서 사용할 SSL 자격 증명 만들기 {#creating-an-ssl-credential-for-use-on-weblogic-server}
+## WebLogic Server {#creating-an-ssl-credential-for-use-on-weblogic-server}에서 사용할 SSL 자격 증명 만들기
 
 keytool 명령은 일반적으로 Java jre/bin 디렉토리에 있으며 다음 표에 나열된 여러 옵션 및 옵션 값을 포함해야 합니다.
 
@@ -59,8 +59,8 @@ keytool 명령은 일반적으로 Java jre/bin 디렉토리에 있으며 다음 
    <td><p>키 저장소 파일의 위치와 이름입니다.</p><p>위치에 파일의 절대 경로가 포함될 수 있습니다. 또는 keytool 명령을 입력한 명령 프롬프트에서 현재 디렉토리를 기준으로 할 수 있습니다.</p></td>
    <td>
     <ul>
-     <li><p>사용자 지정 ID 키 스토어: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[server name]</i><code>/ads-ssl.jks</code></p></li>
-     <li><p>사용자 지정 트러스트 키 저장소: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[server name]</i><code>/ads-ca.jks</code></p></li>
+     <li><p>사용자 지정 ID 키 스토어:<code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[server name]</i><code>/ads-ssl.jks</code></p></li>
+     <li><p>사용자 지정 트러스트 키 저장소:<code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[server name]</i><code>/ads-ca.jks</code></p></li>
     </ul></td>
   </tr>
   <tr>
@@ -71,7 +71,7 @@ keytool 명령은 일반적으로 Java jre/bin 디렉토리에 있으며 다음 
   <tr>
    <td><p>-validity</p></td>
    <td><p>인증서가 유효한 것으로 간주되는 일 수입니다.</p></td>
-   <td><p>3650</p><p>회사 정책에 따라 다른 값을 사용할 수 있습니다.</p></td>
+   <td><p>3650년</p><p>회사 정책에 따라 다른 값을 사용할 수 있습니다.</p></td>
   </tr>
   <tr>
    <td><p>-storepass</p></td>
@@ -85,7 +85,7 @@ keytool 명령은 일반적으로 Java jre/bin 디렉토리에 있으며 다음 
   <tr>
    <td><p>-keypass</p></td>
    <td><p>키 쌍의 개인 키를 보호하는 암호입니다.</p></td>
-   <td><p>옵션에 사용한 것과 동일한 암호를 <code>-storepass</code> 사용하십시오. 키 암호는 6자 이상이어야 합니다.</p></td>
+   <td><p><code>-storepass</code> 옵션에 사용한 것과 동일한 암호를 사용하십시오. 키 암호는 6자 이상이어야 합니다.</p></td>
   </tr>
   <tr>
    <td><p>-dname</p></td>
@@ -105,16 +105,16 @@ keytool 명령은 일반적으로 Java jre/bin 디렉토리에 있으며 다음 
 
 keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 keytool.html 파일을 참조하십시오.
 
-## 사용자 지정 ID 및 트러스트 키 저장소 만들기 {#create-the-custom-identity-and-trust-keystores}
+## 사용자 지정 ID 및 트러스트 키 저장소 {#create-the-custom-identity-and-trust-keystores} 만들기
 
-1. 명령 프롬프트에서 appserverdomain *[/adobe/]* server 이름으로&#x200B;*[이동합니다]*.
+1. 명령 프롬프트에서 *[appserverdomain]*/adobe/*[서버 이름]*&#x200B;으로 이동합니다.
 1. 다음 명령을 입력합니다.
 
    `[JAVA_HOME]/bin/keytool -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass store_password -keypass key_password -dname "CN=Hostname, OU=Group Name, O=Company Name, L=City Name, S=State,C=Country Code`
 
    >[!NOTE]
    >
-   >JDK가 설치되어 `[JAVA_HOME]`*있는 디렉토리로 대체하고 기울임꼴로 표시된 텍스트를 사용자 환경에 해당하는 값으로 바꿉니다.*
+   >`[JAVA_HOME]`*을(를) JDK가 설치된 디렉토리로 바꾸고 기울임꼴로 된 텍스트를 환경에 해당하는 값으로 바꿉니다.*
 
    예:
 
@@ -122,7 +122,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
-   &quot;ads-credentials.jks&quot;라는 사용자 지정 ID 키 저장소 파일은 appserverdomain [/adobe/]server name[] 디렉토리에 만들어집니다.
+   &quot;ads-credentials.jks&quot;라는 사용자 지정 ID 키 저장소 파일은 [appserverdomain]/adobe/[서버 이름] 디렉터리에 만들어집니다.
 
 1. 다음 명령을 입력하여 ads-credentials keystore에서 인증서를 추출합니다.
 
@@ -134,7 +134,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
 
    >[!NOTE]
    >
-   >JDK `[JAVA_HOME]` 가 설치된 디렉터리로 바꾸고 `store`*_* *를 사용자 지정 ID 키 저장소 `password`의 암호로 바꿉니다.*
+   >`[JAVA_HOME]`을(를) JDK가 설치된 디렉터리로 바꾸고 `store`*_* `password`*를 사용자 지정 ID 키 저장소의 암호로 바꿉니다.*
 
    예:
 
@@ -142,7 +142,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
-   &quot;ads-ca.cer&quot;라는 인증서 파일은 appserverdomain [/adobe/]server name [**] 디렉토리에 만들어집니다.
+   &quot;ads-ca.cer&quot;라는 인증서 파일은 [appserverdomain]/adobe/[*서버 이름*] 디렉터리에 만들어집니다.
 
 1. 응용 프로그램 서버와 보안 통신이 필요한 호스트 컴퓨터에 ads-ca.cer 파일을 복사합니다.
 1. 다음 명령을 입력하여 새 키 저장소 파일(사용자 지정 트러스트 키 저장소)에 인증서를 삽입합니다.
@@ -151,7 +151,7 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
 
    >[!NOTE]
    >
-   >JDK `[JAVA_HOME]` 가 설치된 디렉터리로 교체하고, 고유한 암호 `store`*로* _and `password` _ `key`** Facebook을 `password` *바꿉니다.*
+   >`[JAVA_HOME]`을(를) JDK가 설치된 디렉터리로 바꾸고 `store`*_* `password` 및 `key`*_* `password` *을(를) 자신의 암호로 바꿉니다.*
 
    예:
 
@@ -159,28 +159,28 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-&quot;ads-ca.jks&quot;라는 사용자 지정 트러스트 키 저장소 파일이 appserverdomain [/adobe/&#39;server&#39; 디렉터리에]만들어집니다.
+&quot;ads-ca.jks&quot;라는 사용자 지정 트러스트 키 저장소 파일이 [appserverdomain]/adobe/&#39;server&#39; 디렉터리에 만들어집니다.
 
 만든 사용자 지정 ID 키 스토어 및 사용자 지정 트러스트 키 저장소를 사용하도록 WebLogic을 구성합니다. 또한 키 저장소 파일을 만드는 데 사용되는 고유 이름에 WebLogic Server를 호스팅하는 컴퓨터의 이름이 포함되어 있지 않으므로 WebLogic 호스트 이름 확인 기능을 비활성화합니다.
 
-## SSL을 사용하도록 WebLogic 구성 {#configure-weblogic-to-use-ssl}
+## SSL {#configure-weblogic-to-use-ssl}을 사용하도록 WebLogic 구성
 
 1. 웹 브라우저의 URL 행에 `https://`*[호스트 이름&#x200B;]*`:7001/console`을 입력하여 WebLogic Server 관리 콘솔을 시작합니다.
-1. 환경의 도메인 구성에서 **서버 > &#39;서버&#39; > 구성 > 일반을 선택합니다**.
-1. [일반]의 [구성]에서 [ **수신 포트 사용** ] 및 [ **SSL 수신** 포트 사용 가능]이 선택되었는지확인합니다. 활성화되지 않은 경우 다음을 수행합니다.
+1. 환경의 도메인 구성에서 **서버 > &#39;서버&#39; > 구성 > 일반**&#x200B;을 선택합니다.
+1. [일반]의 구성에서 **수신 포트 활성화** 및 **SSL 수신 포트 활성화**&#x200B;가 선택되어 있는지 확인합니다. 활성화되지 않은 경우 다음을 수행합니다.
 
-   1. 변경 센터에서 **잠금 및 편집을** 클릭하여 선택 및 값을 수정합니다.
-   1. [ **수신 포트 사용** ] 및 [ **SSL 수신 포트 사용** ] 확인란을 선택합니다.
+   1. 변경 센터에서 **잠금 및 편집**&#x200B;을 클릭하여 선택 및 값을 수정합니다.
+   1. **수신 포트 활성화** 및 **SSL 수신 포트 활성화** 확인란을 선택합니다.
 
 1. 이 서버가 관리 대상 서버인 경우 수신 포트를 사용하지 않은 포트 값(예: 8001)으로 변경하고 SSL 수신 포트를 사용하지 않는 포트 값(예: 8002)으로 변경합니다. 독립형 서버에서 기본 SSL 포트는 7002입니다.
-1. 릴리스 **구성을 클릭합니다**.
-1. 환경의 도메인 구성에서 **서버 > 관리 서버&#x200B;[*> 구성*]> 일반을 클릭합니다**.
-1. [일반]의 [구성]에서 [ **키 저장소]를 선택합니다**.
-1. 변경 센터에서 **잠금 및 편집을** 클릭하여 선택 및 값을 수정합니다.
-1. 변경 **을** 클릭하여 키워드 스토어 목록을 드롭다운 목록으로 가져오고 사용자 지정 ID 및 **사용자 지정 신뢰를 선택합니다**.
+1. **릴리스 구성**&#x200B;을 클릭합니다.
+1. 환경 아래의 도메인 구성에서 **서버 > [*관리 서버*] > 구성 > 일반**&#x200B;을 클릭합니다.
+1. [일반]의 [구성]에서 **Keystores**&#x200B;를 선택합니다.
+1. 변경 센터에서 **잠금 및 편집**&#x200B;을 클릭하여 선택 및 값을 수정합니다.
+1. **변경**&#x200B;을 클릭하여 키워드 스토어 목록을 드롭다운 목록으로 가져오고 **사용자 지정 ID 및 사용자 지정 트러스트**&#x200B;를 선택합니다.
 1. ID 아래에서 다음 값을 지정합니다.
 
-   **사용자 지정 ID 키 스토어**: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks에서 *[appserverdomain] *는 실제 경로이며 *[서버 이름은]* 응용 프로그램 서버의 이름입니다.
+   **사용자 지정 ID 키 스토어**: *[appserverdomain]*/adobe/*[server name]* /ads-credentials.jks에서 *[appserverdomain] *은 실제 경로이고  *[서버]* 이름은 응용 프로그램 서버의 이름입니다.
 
    **사용자 지정 ID 키 저장소 유형**:JKS
 
@@ -188,13 +188,13 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
 
 1. [신뢰] 아래에서 다음 값을 지정합니다.
 
-   **사용자 지정 Trust Keystore 파일 이름**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, where `*[appserverdomain]*` is actual path
+   **사용자 지정 Trust Keystore 파일 이름**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, where  `*[appserverdomain]*` is actual path
 
    **사용자 지정 트러스트 키 저장소 유형**:JKS
 
    **사용자 지정 Trust Keystore 비밀번호 구문**: *mypassword* (사용자 지정 신뢰 키 암호)
 
-1. [일반]의 [구성]에서 **SSL을 선택합니다**.
+1. [일반]의 [구성]에서 **SSL**&#x200B;을 선택합니다.
 1. 기본적으로 Keystore는 ID 및 신뢰 위치에 대해 선택됩니다. 없는 경우 키 스토어로 변경합니다.
 1. ID 아래에서 다음 값을 지정합니다.
 
@@ -202,9 +202,9 @@ keytool 명령 사용에 대한 자세한 내용은 JDK 설명서에 포함된 k
 
    **암호**: *mypassword*
 
-1. 릴리스 **구성을 클릭합니다**.
+1. **릴리스 구성**&#x200B;을 클릭합니다.
 
-## 호스트 이름 확인 기능 비활성화 {#disable-the-hostname-verification-feature}
+## 호스트 이름 확인 기능 {#disable-the-hostname-verification-feature} 비활성화
 
 1. 구성 탭에서 SSL을 클릭합니다.
 1. 고급 아래의 호스트 이름 확인 목록에서 없음을 선택합니다.
