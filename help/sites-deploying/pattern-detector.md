@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ## 설정 방법 {#how-to-set-up}
 
-Pattern Detector는 AEM 6.5 업그레이드를 대상으로 하는 6.1부터 6.5까지 모든 소스 AEM 버전에서 작동하는 [하나의 패키지로](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) 별도로 출시됩니다. 패키지 관리자를 사용하여 설치할 수 [있습니다](/help/sites-administering/package-manager.md).
+패턴 탐지기는 AEM 6.5 업그레이드를 대상으로 하는 모든 소스 AEM 버전에서 작동하는 [하나의 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65)로 별도로 출시됩니다. [패키지 관리자](/help/sites-administering/package-manager.md)를 사용하여 설치할 수 있습니다.
 
 ## 사용 방법 {#how-to-use}
 
@@ -45,14 +45,14 @@ Pattern Detector는 AEM 6.5 업그레이드를 대상으로 하는 6.1부터 6.5
 
 >
 >
-동시에 사용자 애플리케이션, 컨텐츠 및 구성 영역 **에서 프로덕션 환경과** 가장 가까운 스테이징 환경에서 실행하는 것이 좋습니다.
+동시에 사용자 응용 프로그램, 콘텐트 및 구성 영역의 프로덕션 환경에 가능한 한 가까운 **을 스테이징 환경에서 실행하는 것이 좋습니다.**
 
 여러 가지 방법을 사용하여 패턴 탐지기 출력을 확인할 수 있습니다.
 
 * **Felix Inventory 콘솔을 통해 다음을 수행할 수 있습니다.**
 
-1. https://serveraddress:serverport/system/console/configMgr에서 AEM 웹 콘솔로 *이동*
-1. 아래 **이미지와 같이 상태 - 패턴 탐지기** 를 선택합니다.
+1. *https://serveraddress:serverport/system/console/configMgr*&#x200B;에서 AEM 웹 콘솔로 이동
+1. 아래 이미지에 표시된 대로 **상태 - 패턴 탐지기**&#x200B;를 선택합니다.
 
    ![스크린샷-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
@@ -86,7 +86,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-진행 상태는 다음 명령을 사용하여 필터링할 수 `grep` 있습니다.
+진행 상태는 `grep` 명령을 사용하여 필터링할 수 있습니다.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -102,7 +102,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 
 ## JSON 인터페이스 처리 {#handling-the-json-interface}
 
-마찬가지로 JSON도 [jq 도구를](https://stedolan.github.io/jq/) 사용하여 게시되는 즉시 처리할 수 있습니다.
+마찬가지로 JSON은 게시되는 즉시 [jq tool](https://stedolan.github.io/jq/)을 사용하여 처리할 수 있습니다.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -212,7 +212,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 
 >[!NOTE]
 >
->말림 출력 전체를 파일에 저장한 다음 정보 유형을 통해 처리하거나 필터링하는 것이 좋습니다. `jq` `grep`
+>전체 출력의 말림 효과를 파일에 저장한 다음 `jq` 또는 `grep`을 통해 처리하여 정보 유형을 필터링하는 것이 좋습니다.
 
 ## 감지 범위 {#scope}
 
