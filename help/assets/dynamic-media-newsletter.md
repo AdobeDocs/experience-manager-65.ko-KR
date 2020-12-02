@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # ![Dynamic Media 뉴스레터 로고](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-Adobe Experience League의 월별 Dynamic Media 뉴스레터는 Dynamic Media 및 Dynamic Media Classic을 사용하여 바로 가치 구현을 시작할 수 있도록 고안되었습니다.
+Experience League의 월별 다이내믹 미디어 뉴스레터는 Dynamic Media 및 Dynamic Media Classic을 빠르게 사용할 수 있도록 설계되어 바로 가치 구현을 시작할 수 있습니다.
 
 이 원스톱 스토어 뉴스레터에서 사용 방법 비디오, 솔루션 개요 및 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 솔루션의 주요 기능과 기능에 대한 소개와 같은 중요한 지식 구축 리소스를 살펴볼 수 있습니다.
 
 ## 영감 얻기 최신 정보
 
-[Dynamic Media Newsletter를 받은 편지함에서 매월 수신하려면 등록하십시오](https://www.adobe.com/subscription/dynamic-media-newsletter.html) .
+[Dynamic ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) Media Newsletter를 매월 받은 편지함에서 수신합니다.
 
 ## Dynamic Media 뉴스레터 문제가 누락되었습니까?
 
@@ -53,7 +53,7 @@ Adobe Experience League의 월별 Dynamic Media 뉴스레터는 Dynamic Media �
 
    >[!IMPORTANT]
    >
-   >Adobe는 Dynamic Media 뉴스레터를 수신하려는 사람에게만 발송하고 있는지 확인합니다. 이 문제 이후 뉴스레터를 계속 수신하려면 [여기에서 등록하십시오](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
+   >Adobe는 Dynamic Media 뉴스레터를 수신하려는 사람에게만 발송하고 있는지 확인합니다. 이 문제 이후 뉴스레터를 계속 수신하려면 [여기](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)에 등록하십시오.
 
 * **[2020년 2월, 발행물 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -115,7 +115,7 @@ Adobe Experience League의 월별 Dynamic Media 뉴스레터는 Dynamic Media �
 
    * Dynamic Media로 업그레이드하는 경우에만 사용할 수 있는 중요한 기능을 살펴보십시오.
    * Adobe Experience Manager 자산 및 다이내믹 미디어를 빠르게 익힐 수 있도록 고안된 웨비나 시리즈에 대해 살펴보십시오.
-   * Adobe Experience League의 Dynamic Media를 활용하여 고객 여정의 가치를 창출하십시오.
+   * Experience League의 다이내믹 미디어를 통해 가치를 창출할 수 있는 여행
    * 방문자가 리치 미디어와 어떻게 상호 작용하는지 분석할 수 있는 이번 9월 이후의 강력한 통합 기능을 미리 만나보십시오.
    * Dynamic Media 기술 지원의 귀재인 PieterJan Pieper를 만나보십시오.
 
@@ -136,7 +136,7 @@ Adobe Experience League의 월별 Dynamic Media 뉴스레터는 Dynamic Media �
    이 문제:
 
    * AEM Assets에서 Dynamic Media로 업그레이드하는 방법을 강조하는 비디오를 즐겨 보십시오.
-   * Experience League의 주요 방법 비디오를 시청하십시오.
+   * Experience League에서 제공하는 주요 사용 방법 비디오를 시청하십시오.
    * 예정된 Adobe 인사이더 투어에 대한 자세한 내용을 살펴보십시오.
    * 디지털 자산이 불법 복제되지 않도록 보호하는 방법을 살펴보십시오.
    * AI 기반의 이미지를 위한 스마트 자르기 기능을 살펴보십시오.
@@ -147,7 +147,7 @@ Adobe Experience League의 월별 Dynamic Media 뉴스레터는 Dynamic Media �
    이 문제:
 
    * 블로그 게시물에서 Dynamic Media Classic의 숨겨진 10가지 주요 기능을 살펴볼 수 있습니다.
-   * Experience League의 주요 방법 비디오를 시청하십시오.
+   * Experience League에서 제공하는 주요 사용 방법 비디오를 시청하십시오.
    * 예정된 Adobe 인사이더 투어에 대해 자세히 알아보십시오.
    * 3부로 구성된 블로그 시리즈를 읽고 리치 미디어 전략을 업데이트하십시오.
    * AI 기반의 비디오 스마트 자르기에 대한 자세한 내용을 살펴보십시오.
