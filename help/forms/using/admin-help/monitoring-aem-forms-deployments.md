@@ -20,16 +20,16 @@ ht-degree: 0%
 
 # AEM 양식 배포 모니터링 {#monitoring-aem-forms-deployments}
 
-시스템 수준과 내부 수준 모두에서 AEM 양식 배포를 모니터링할 수 있습니다. HP OpenView, IBM Tivoli, CA UniCenter와 같은 전문가 관리 도구와 *JConsole이라는 타사 JMX 모니터를 사용하여 Java 활동을* 특별히 모니터링할 수 있습니다. 모니터링 전략을 구현하면 AEM 양식 배포의 가용성, 안정성 및 성능이 향상됩니다.
+시스템 수준과 내부 수준 모두에서 AEM 양식 배포를 모니터링할 수 있습니다. HP OpenView, IBM Tivoli, CA UniCenter와 같은 전문가 관리 도구와 *JConsole*&#x200B;이라는 타사 JMX 모니터를 사용하여 Java 활동을 구체적으로 모니터링할 수 있습니다. 모니터링 전략을 구현하면 AEM 양식 배포의 가용성, 안정성 및 성능이 향상됩니다.
 
-AEM 양식 배포 모니터링에 대한 자세한 내용은 AEM [양식 배포 모니터링을 위한 기술 안내서를 참조하십시오](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
+AEM 양식 배포 모니터링에 대한 자세한 내용은 AEM 양식 배포 모니터링에 대한 기술 안내서[를 참조하십시오.](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf)
 
-## MBeans를 사용한 모니터링 {#monitoring-using-mbeans}
+## MBeans {#monitoring-using-mbeans}를 사용한 모니터링
 
-AEM Forms에서는 탐색 및 통계 정보를 제공하는 두 개의 등록된 MBean을 제공합니다. 통합 및 검사를 위해 지원되는 유일한 MBean:
+AEM 양식은 탐색 및 통계 정보를 제공하는 두 개의 등록된 MBean을 제공합니다. 통합 및 검사를 위해 지원되는 유일한 MBean:
 
 * **서비스 통계:** 이 MBean은 서비스 이름 및 해당 버전에 대한 정보를 제공합니다.
-* **공정 통계:** 이 MBean은 모든 양식 서버 서비스의 통계를 제공합니다. 여기에서 관리자는 호출 시간, 오류 수 등과 같은 특정 서비스에 대한 정보를 얻을 수 있습니다.
+* **작업 통계:** 이 MBean은 모든 양식 서버의 서비스 통계를 제공합니다. 여기에서 관리자는 호출 시간, 오류 수 등과 같은 특정 서비스에 대한 정보를 얻을 수 있습니다.
 
 ### ServiceStatisticsMbean 공용 인터페이스 {#servicestatisticmbean-public-interfaces}
 
@@ -41,7 +41,7 @@ AEM Forms에서는 탐색 및 통계 정보를 제공하는 두 개의 등록된
  public int getMinorVersion();
 ```
 
-### 작업 통계일반 공용 인터페이스 {#operationstatisticmbean-public-interfaces}
+### 작업 통계Mbean 공용 인터페이스 {#operationstatisticmbean-public-interfaces}
 
 테스트 목적으로 다음과 같은 OperationStatistic MBean의 공용 인터페이스에 액세스할 수 있습니다.
 
@@ -71,13 +71,13 @@ AEM Forms에서는 탐색 및 통계 정보를 제공하는 두 개의 등록된
 
 ### MBean 트리 및 작업 통계 {#mbean-tree-operation-statistics}
 
-JMX 콘솔(JConsole)을 사용하여 작업 통계 MBean의 통계를 사용할 수 있습니다. 이러한 통계는 MBean의 속성이며 다음 계층 트리 아래에서 탐색할 수 있습니다.
+JMX 콘솔(JConsole)을 사용하여 작업 통계 MBean의 통계를 사용할 수 있습니다. 이러한 통계는 MBean의 특성이며 다음 계층 트리 아래에서 탐색할 수 있습니다.
 
 **MBean 트리**
 
 **Adobe 도메인 이름:** 응용 프로그램 서버에 따라 다릅니다. 응용 프로그램 서버가 도메인을 정의하지 않는 경우 기본값은 adobe.com입니다.
 
-**서비스 유형:** AdobeService는 모든 서비스를 나열하는 데 사용되는 이름입니다.
+**ServiceType:** AdobeService는 모든 서비스를 나열하는 데 사용되는 이름입니다.
 
 **AdobeServiceName:** 서비스 이름 또는 서비스 ID.
 
@@ -85,27 +85,27 @@ JMX 콘솔(JConsole)을 사용하여 작업 통계 MBean의 통계를 사용할 
 
 **작업 통계**
 
-**호출 시간:** 메서드를 실행하는 데 걸리는 시간입니다. 여기에는 요청이 직렬화되고 클라이언트에서 서버로 전송되며 역직렬화되는 시간이 포함되지 않습니다.
+**호출 시간:** 메서드를 실행하는 데 걸린 시간입니다. 여기에는 요청이 직렬화되고 클라이언트에서 서버로 전송되며 역직렬화되는 시간이 포함되지 않습니다.
 
 **호출 수:** 서비스를 호출한 횟수입니다.
 
 **평균 호출 시간:** 서버가 시작된 이후 실행된 모든 호출의 평균 시간입니다.
 
-**최대 호출 시간:** 서버가 시작된 이후 실행된 최장 호출의 지속 기간입니다.
+**최대 호출 시간:** 서버가 시작된 이후 실행된 가장 긴 호출의 기간입니다.
 
 **최소 호출 시간:** 서버가 시작된 이후 실행된 가장 짧은 호출의 지속 시간입니다.
 
-**예외 수:** 실패의 원인이 된 호출 수입니다.
+**예외 수:** 실패로 연결된 호출의 수입니다.
 
 **예외 메시지:** 마지막으로 발생한 예외의 오류 메시지입니다.
 
 **마지막 샘플링 날짜 시간:** 마지막 호출 날짜입니다.
 
-**시간 단위:** 기본값은 밀리초드입니다.
+**시간 단위:** 기본값은 밀리초 단위입니다.
 
 JMX 모니터링을 활성화하려면 일반적으로 응용 프로그램 서버에 몇 가지 구성이 필요합니다. 자세한 내용은 응용 프로그램 서버 설명서를 참조하십시오.
 
-### 열린 JMX 액세스를 설정하는 방법의 예 {#examples-of-how-to-set-up-open-jmx-access}
+### 열려 있는 JMX 액세스 {#examples-of-how-to-set-up-open-jmx-access}을 설정하는 방법의 예
 
 **JBoss 4.0.3/4.2.0 - JVM 시작 구성**
 
@@ -120,7 +120,7 @@ JConsole에서 MBeans를 보려면 JBoss 애플리케이션 서버의 JVM 시작
 
 **WebLogic 9.2 /10 - JVM 시작 구성**
 
-1. 아래에 있는 startWebLogic.bat 파일을 편집합니다 `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
+1. `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin` 아래에 있는 startWebLogic.bat 파일을 편집합니다.
 1. JAVA_OPTS 줄을 찾아 다음을 추가합니다.
 
    ```shell
