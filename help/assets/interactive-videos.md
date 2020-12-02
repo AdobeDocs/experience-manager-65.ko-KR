@@ -23,11 +23,11 @@ ht-degree: 0%
 
 비디오가 끝나면 클릭유도하기 위해 모든 오퍼에 대한 시각적 요약이 표시됩니다. 고객은 원하는 항목을 더 이용할 수 있습니다. 고객의 참여와 전환율을 높이는 실행 가능한 특정 경험
 
-대화형 [이미지도 참조하십시오](/help/assets/interactive-images.md).
+[대화형 이미지](/help/assets/interactive-images.md)도 참조하십시오.
 
-## 인터랙티브한 비디오 활용 {#interactive-video-in-action}
+## 대화형 비디오 실행 중 {#interactive-video-in-action}
 
-인터랙티브한 쇼퍼블 비디오를 직접 보려면 [라이브 데모를](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)클릭하고 페이지에서 **[!UICONTROL 쇼퍼블 미디어]** 머리글로 스크롤한 다음 쇼퍼블 비디오를 클릭합니다.
+인터랙티브한 쇼퍼블 비디오를 직접 보려면 [라이브 데모](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)를 클릭하고 페이지에서 **[!UICONTROL 쇼퍼블 미디어]** 머리글로 스크롤한 다음 쇼퍼블 비디오를 클릭합니다.
 
 * 재생하는 동안 제품이 비디오에 사용되므로 동일한 제품이 오른쪽에 축소판 이미지로 나타납니다.
 
@@ -35,15 +35,15 @@ ht-degree: 0%
 
 <!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
-![인터랙티브한 쇼퍼블 비디오](assets/chlimage_1-126.png) 프레임 *을 인터랙티브한 쇼퍼블 비디오에서 캡처하는 비디오 프레임*
+![인터랙티브한 쇼퍼블 ](assets/chlimage_1-126.png) *비디오에서 얻은 프레임인터랙티브한 쇼퍼블 비디오에서 촬영한 비디오 프레임*
 
 >[!NOTE]
 >
->사용자가 축소판 이미지를 클릭할 때 웹 페이지를 시작하는 대화형 비디오를 만드는 경우 일부 장치에서 팝업 웹 페이지가 열리지 않습니다. 이러한 경우 장치에서 팝업 차단기 설정을 변경해야 합니다. 예를 들어 Apple iPhone 6에서 **[!UICONTROL 설정]** > **Safari** > **블록 팝업**&#x200B;을 누른 다음 컨트롤을 **[!UICONTROL Off로]**&#x200B;이동합니다. 이제 대화형 비디오를 재생하고 축소판을 클릭하면 팝업을 열할지 묻는 메시지가 표시됩니다. 수락하면 웹 페이지가 열립니다.
+>사용자가 축소판 이미지를 클릭할 때 웹 페이지를 시작하는 대화형 비디오를 만드는 경우 일부 장치에서 팝업 웹 페이지가 열리지 않습니다. 이러한 경우 장치에서 팝업 차단기 설정을 변경해야 합니다. 예를 들어 Apple iPhone 6에서 **[!UICONTROL 설정]** > **Safari** > **블록 팝업**&#x200B;을 누른 다음 컨트롤을 **[!UICONTROL 오프]**&#x200B;로 밀십시오. 이제 대화형 비디오를 재생하고 축소판을 클릭하면 팝업을 열할지 묻는 메시지가 표시됩니다. 수락하면 웹 페이지가 열립니다.
 
-### 인터랙티브한 비디오 제작 방법 보기 {#watch-how-interactive-videos-are-created}
+### 대화형 비디오가 만들어지는 방법 보기 {#watch-how-interactive-videos-are-created}
 
-인터랙티브한 비디오가 만들어지는 [방법에 대한 7분 30초 분량의 연습을](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) 시청하십시오 [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
+[대화형 비디오를 만드는 방법에 대한 7분 30초 연습을 시청하십시오](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).
 (비디오 연습은 Assets on Demand로 브랜딩되지만 원칙과 단계는 AEM Assets의 대화형 비디오에 계속 적용됩니다.)
 
 ### Adobe 고객 성공 웨비나 {#adobe-customer-success-webinar}
@@ -53,15 +53,15 @@ ht-degree: 0%
 >[!NOTE]
 [AEM Assets에서 인터랙티브한 비디오, 링크 공유 및 YouTube 공유 사용](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
-## 빠른 시작:인터랙티브 비디오 {#quick-start-interactive-videos}
+## 빠른 시작:대화형 비디오 {#quick-start-interactive-videos}
 
 다음 단계별 워크플로우 설명은 Dynamic Media에서 인터랙티브한 비디오를 빠르게 시작하고 실행하는 데 도움이 되도록 만들어졌습니다.
 
-빠른 시작 작업 **의 일부** 내에서 예제 머리글을 찾습니다. 여기에는 아직 인터랙티브한 요소가 추가되지 *않은* 이 시작 데모 웹 페이지를 기반으로 하는 간단한 자습서가 포함되어 있습니다.
+빠른 시작 작업 중 일부 내에서 **예제** 머리글을 찾습니다. 여기에는 *이(가) 아직 여기에 인터랙션 요소를 추가하지 않은 이 시작 데모 웹 페이지를 기반으로 하는 간단한 자습서가 포함되어 있습니다.*
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
 
-예제 **** 도움말은 웹 사이트에서 대화형 비디오를 통합하는 단계를 보여 주는 도움말입니다.
+자체 웹 사이트에서 대화형 비디오를 통합하는 단계를 보여주는 **Examples** 도움말입니다.
 
 마지막 예제 섹션에서 튜토리얼을 완료하면 완벽하게 통합된 대화형 비디오가 포함된 최종 데모 웹 페이지는 다음과 같이 표시됩니다.
 
@@ -69,33 +69,35 @@ ht-degree: 0%
 
 인터랙티브한 비디오 단계:
 
-1. **(선택 사항) Quickview 변수** 식별 - 기존 Quickview 구현에서 사용하는 동적 변수를 식별하여 시작합니다. 인터랙티브한 비디오를 만들 때 이 변수를 사용하여 제품 축소판을 해당 제품 Quickview에 매핑합니다. Quickview 변수 [식별을 참조하십시오(선택 사항)](#optional-identifying-quickview-variables).
+1. **(선택 사항) Quickview 변수**  식별 - 기존 Quickview 구현에서 사용되는 동적 변수를 식별하여 시작합니다. 인터랙티브한 비디오를 만들 때 이 변수를 사용하여 제품 축소판을 해당 제품 Quickview에 매핑합니다. [(선택 사항) Quickview 변수 확인](#optional-identifying-quickview-variables)을 참조하십시오.
    *이 단계는 다음 내용이 모두 참인 경우에만 필요합니다*.・ 빠른 보기를 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
-・ AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 *사용하지 않습니다* . AEM Assets [의 e커머스 개념을 참조하십시오](/help/sites-administering/concepts.md).
+・ AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* AEM Assets](/help/sites-administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
 
-1. **(선택 사항) 대화형 비디오 뷰어 사전 설정** 만들기 - 비디오 스크러버 및 대화형 축소판과 같은 플레이어를 구성하는 다양한 구성 요소의 모양과 동작을 사용자 정의합니다.
-바로 사용 가능한 대화형 비디오 뷰어 사전 설정을 사용하거나 `Shoppable_Video_Light` 대신 대화형 비디오 뷰어 사전 설정을 사용하려는 경우에는 자신의 대화형 비디오 뷰어 사전 설정을 만들 필요 `Shoppable_Video_Dark` 가 없습니다.
-새 뷰어 [사전 설정](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) 만들기(선택 사항) 및 대화형 뷰어 사전 설정 [을 만들기 위한 특수 고려 사항을 참조하십시오](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
+1. **(선택 사항) 대화형 비디오 뷰어 사전 설정**  만들기 - 비디오 스크러버 및 대화형 축소판과 같은 플레이어를 구성하는 다양한 구성 요소의 모양과 동작을 사용자 정의합니다.
+기본 대화형 비디오 뷰어 사전 설정 `Shoppable_Video_Light` 또는 `Shoppable_Video_Dark`을 대신 사용하려는 경우에는 자신의 대화형 비디오 뷰어 사전 설정을 만들 필요가 없습니다.
+[새 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)(선택 사항) 및 [대화형 뷰어 사전 설정 만들기 위한 특수 고려 사항](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset)을 참조하십시오.
 
-1. **비디오 및 관련 이미지 자산** 업로드 - 대화형으로 만들 비디오 및 관련 이미지를 업로드합니다.
-비디오 [및 관련 축소판 에셋 업로드를 참조하십시오](#uploading-a-video-and-its-associated-thumbnail-assets).
+1. **비디오 및 관련 이미지 자산**  업로드 - 대화형으로 만들 비디오 및 관련 이미지를 업로드합니다.
+[비디오 및 관련 축소판 에셋 업로드](#uploading-a-video-and-its-associated-thumbnail-assets)를 참조하십시오.
 
-1. **비디오에** 인터랙션 추가 - 비디오에 하나 이상의 시간 세그먼트를 추가합니다. 그런 다음 해당 시간 세그먼트 내에 이미지 축소판을 연결합니다. 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 각 이미지 축소판을 할당합니다.
+1. **비디오에**  인터랙션 추가 - 비디오에 하나 이상의 시간 세그먼트를 추가합니다. 그런 다음 해당 시간 세그먼트 내에 이미지 축소판을 연결합니다. 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 각 이미지 축소판을 할당합니다.
 (인터랙티브 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법이 지원되지 않습니다.)
-인터랙티브한 비디오 에셋을 게시하여 마무리합니다. 게시를 사용하면 웹 사이트 랜딩 페이지에 최종적으로 복사하고 적용할 포함 코드 또는 URL이 만들어집니다.비디오에 [대화형 작업 추가를 참조하십시오](#adding-interactivity-to-your-video).
-자산 [게시를 참조하십시오](/help/assets/publishing-dynamicmedia-assets.md).
+인터랙티브한 비디오 에셋을 게시하여 마무리합니다. 게시를 사용하면 나중에 복사하고 웹 사이트 랜딩 페이지에 적용할 포함 코드 또는 URL이 만들어집니다.비디오[에 대화형 작업 추가 를 참조하십시오.
+](#adding-interactivity-to-your-video)
+[자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-1. **AEM에서 웹 사이트 또는 웹 사이트에 대화형 비디오 추가** AEM Sites, AEM eCommerce 또는 둘 다를 사용하는 경우, 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 비디오를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
-포함 코드 또는 URL을 사용하여 인터랙티브한 비디오를 웹 사이트 경험과 통합할 수 있습니다. 웹 사이트 [와 대화형 비디오 통합을 참조하십시오](#integrating-an-interactive-video-with-your-website).
-타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. 기존 [Quickview와 대화형 비디오 통합을 참조하십시오](#integrating-an-interactive-video-with-an-existing-quickview).
+1. **AEMI를 사용하는 경우, AEM Sites, AEM eCommerce 또는**
+두 가지 모두를 사용하여 웹 사이트 또는 웹 사이트에 대화형 비디오를 추가하거나, 대화형 미디어 구성 요소를 페이지로 드래그하여 AEM의 웹 페이지에 직접 대화형 비디오를 추가할 수 있습니다. [페이지에 다이내믹 미디어 자산 추가를 참조하십시오.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+포함 코드 또는 URL을 사용하여 인터랙티브한 비디오를 웹 사이트 경험과 통합할 수 있습니다. [웹 사이트와 대화형 비디오 통합](#integrating-an-interactive-video-with-your-website)을 참조하십시오.
+타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. [기존 Quickview](#integrating-an-interactive-video-with-an-existing-quickview)와 대화형 비디오 통합을 참조하십시오.
    [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-## (선택 사항) Quickview 변수 확인 {#optional-identifying-quickview-variables}
+## (선택 사항) Quickview 변수 {#optional-identifying-quickview-variables} 확인
 
 >[!NOTE]
 이 작업은 다음과 같은 경우에만 필요합니다.
 * Quickviews로 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
-* AEM 구현에서는 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 전자 상거래 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다* . AEM Assets [의 e커머스 개념을 참조하십시오](/help/sites-administering/concepts.md).
+* AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* AEM Assets](/help/sites-administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
 
 AEM 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -118,15 +120,15 @@ AEM 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다
 
 일반적으로 전문적인 디버깅 도구를 사용할 필요가 없습니다. 최신 웹 브라우저에는 적절한 작업을 수행하는 웹 관리자가 포함되어 있습니다. 다음은 웹 관리자를 포함하는 웹 브라우저의 몇 가지 예입니다.
 
-* Google Chrome에서 나가는 모든 HTTP 요청을 보려면 **F12** (Windows) 또는 **Command+Options+I** (Mac)를 눌러 개발자 도구 패널을 연 다음 **네트워크** 탭을 클릭합니다.
+* Google Chrome에서 나가는 HTTP 요청을 모두 보려면 **F12**(Windows) 또는 **Command+Options+I**(Mac)을 눌러 개발자 도구 패널을 연 다음 **Network** 탭을 클릭합니다.
 
-* Firefox에서는 **F12** (Windows) 또는 **Command+Option+I** (Mac)를 눌러 Firebug 플러그인을 활성화하고 해당 **`[Net]`** 탭을 사용하거나 내장된 검사기 도구 및 네트워크 탭을 사용할 수 있습니다.
+* Firefox에서는 **F12**(Windows) 또는 **Command+Option+I**(Mac)을 눌러 Firebug 플러그인을 활성화하고 **`[Net]`** 탭을 사용하거나 내장된 검사기 도구 및 해당 네트워크 탭을 사용할 수 있습니다.
 
-* Internet Explorer에서 **F12를 눌러 디버거 도구를 활성화합니다**.
+* Internet Explorer에서 **F12**&#x200B;을 눌러 디버거 도구를 활성화합니다.
 
 브라우저에서 네트워크 모니터링이 켜지면 페이지의 빠른 보기를 트리거합니다.
 
-이제 네트워크 로그에서 Quickview Ajax URL을 찾아 기록된 URL을 복사하여 이후 분석을 수행합니다. Quickview를 트리거하는 대부분의 경우 서버로 전송되는 요청이 많습니다. 일반적으로 빠른 보기 Ajax URL은 목록의 첫 번째 URL 중 하나입니다. 복잡한 쿼리 문자열 부분이나 경로가 있으며 응답 MIME 유형은 `text/html`, `text/xml`또는 `text/javascript`입니다.
+이제 네트워크 로그에서 Quickview Ajax URL을 찾아 기록된 URL을 복사하여 이후 분석을 수행합니다. Quickview를 트리거하는 대부분의 경우 서버로 전송되는 요청이 많습니다. 일반적으로 빠른 보기 Ajax URL은 목록의 첫 번째 URL 중 하나입니다. 복잡한 쿼리 문자열 부분이나 경로가 있으며 응답 MIME 형식은 `text/html`, `text/xml` 또는 `text/javascript`입니다.
 
 이 과정 중에는 제품 카테고리 및 유형이 다른 웹 사이트의 여러 영역을 방문하는 것이 중요합니다. Quickview URL에는 지정된 웹 사이트 카테고리에 공통인 부분이 있을 수 있지만 웹 사이트의 다른 영역을 방문하는 경우에만 변경될 수 있습니다.
 
@@ -146,7 +148,7 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>URL에 있는 유일한 변수 부분은 <code>productId=</code> 쿼리 문자열 매개 변수의 값이며 SKU 값입니다. 따라서, 축소판에서는, <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>등의 값으로 채워진 SKU 필드만 <strong><code>1081492</code></strong><strong><code>1898294</code></strong>필요합니다.</p> </td>
+    </ul> <p>URL에 있는 유일한 변수 부분은 <code>productId=</code> 쿼리 문자열 매개 변수의 값이며 SKU 값입니다. 따라서 축소판에는 <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong> 등의 값으로 채워진 SKU 필드만 필요합니다.</p> </td>
   </tr>
   <tr>
     <td><p>URL 경로에 있는 단일 SKU입니다.</p> </td>
@@ -155,7 +157,7 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>변수 부분은 경로의 마지막 부분에 있으며 AEM 축소판의 SKU 값이 됩니다. <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+    </ul> <p>변수 부분은 경로의 마지막 부분에 있으며 AEM 축소판의 SKU 값이 됩니다.<strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>쿼리 문자열에서 SKU 및 카테고리 ID.</p> </td>
@@ -164,11 +166,11 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>이 경우 URL에 서로 다른 두 부분이 있습니다. SKU는 매개 변수에 저장되고 카테고리 ID는 매개 변수에 <code>prodId</code> <code>category=</code> 저장됩니다.</p> <p>이와 같이 축소판 정의는 쌍입니다. 즉, SKU 값과 <code>categoryId</code> 결과 쌍은 다음과 같습니다.</p>
+    </ul> <p>이 경우 URL에 서로 다른 두 부분이 있습니다. SKU는 <code>prodId</code> 매개 변수에 저장되고 범주 ID는 <code>category=</code> 매개 변수에 저장됩니다.</p> <p>이와 같이 축소판 정의는 쌍입니다. 즉, SKU 값과 <code>categoryId</code>이라는 추가 변수입니다. 결과 쌍은 다음과 같습니다.</p>
     <ul>
-      <li>SKU <code>305466</code> <code>categoryId</code> 는 <code>1100004</code></li>
-      <li>SKU <code>310181</code> <code>categoryId</code> 는 <code>1100004</code></li>
-      <li>SKU <code>308706</code> <code>categoryId</code> 는 <code>1740148</code></li>
+      <li>SKU는 <code>305466</code>이고 <code>categoryId</code>은 <code>1100004</code></li>
+      <li>SKU는 <code>310181</code>이고 <code>categoryId</code>은 <code>1100004</code></li>
+      <li>SKU는 <code>308706</code>이고 <code>categoryId</code>은 <code>1740148</code></li>
     </ul> <p> </p> </td>
   </tr>
   </tbody>
@@ -212,13 +214,13 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
 
 `/datafeed/$categoryId$-$SKU$.json`
 
-이러한 분석을 바탕으로 축소판에 다음 두 가지 변수를 사용할 수 있다고 결론을 내리게 됩니다. `categoryId` 및 `SKU`.
+이러한 분석을 바탕으로 축소판에 다음 두 가지 변수를 사용할 수 있다고 결론을 내리게 됩니다.`categoryId` 및 `SKU`.
 
 이제 비디오 및 관련 축소판 에셋을 업로드할 준비가 되었습니다.
 
-## (선택 사항) 대화형 비디오 뷰어 사전 설정 만들기 {#optional-creating-an-interactive-video-viewer-preset}
+## (선택 사항) 대화형 비디오 뷰어 사전 설정 {#optional-creating-an-interactive-video-viewer-preset} 만들기
 
-기본 대화형 비디오 뷰어 사전 설정 유형 `Shoppable_Video_dark` 또는 다음 유형을 사용하려는 경우 이 작업을 건너뛰고 다음 작업으로 계속 진행할 수 있습니다 `Shoppable_Video_light`.
+기본 기본 대화형 비디오 뷰어 사전 설정 유형 `Shoppable_Video_dark` 또는 `Shoppable_Video_light` 중 하나를 사용하려는 경우 이 작업을 건너뛰고 다음 작업으로 계속 진행할 수 있습니다.
 
 작성 환경에서 축소판을 클릭하면 빠른 보기 대화 상자의 미리 보기가 나타납니다.
 
@@ -230,30 +232,30 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
 
 뷰어 사전 설정을 저장하면 [뷰어 사전 설정] 페이지에서 해당 상태가 자동으로 **On **으로 설정됩니다. 이 상태는 다이내믹 미디어 구성 요소에서 볼 수 있고 비디오가 포함된 비디오를 미리 볼 때마다 표시됨을 의미합니다. 또한 새 뷰어 사전 설정을 수동으로 게시해야 합니다.
 
-자신만의 [대화형 비디오 뷰어](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) 사전 설정을 만들려면 새 뷰어 사전 설정 만들기를 참조하십시오.
+자신의 대화형 비디오 뷰어 사전 설정을 만들려면 [새 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)를 참조하십시오.
 
 ## 비디오 및 관련 축소판 에셋 업로드 {#uploading-a-video-and-its-associated-thumbnail-assets}
 
-비디오 및 축소판 에셋을 이미 업로드한 경우 비디오에 [인터랙션 추가](#adding-interactivity-to-your-video)작업을 진행합니다.
+비디오 및 축소판 에셋을 이미 업로드한 경우 [비디오에 대화형 작업 추가](#adding-interactivity-to-your-video)로 진행합니다.
 
-잘못된 비디오 또는 이미지를 업로드하거나 업로드된 비디오 또는 더 이상 필요하지 않은 이미지를 삭제하려는 경우 자산 [삭제를 참조하십시오](/help/assets/manage-assets.md#deleting-assets).
+잘못된 비디오 또는 이미지를 업로드했거나, 업로드된 비디오나 더 이상 필요하지 않은 이미지를 삭제하려는 경우 [자산 삭제](/help/assets/manage-assets.md#deleting-assets)를 참조하십시오.
 
 비디오 및 관련 축소판 에셋을 업로드하려면
 
 1. 비디오 및 관련 축소판 에셋을 원하는 폴더 또는 폴더에 업로드합니다.
 
-   See [Uploading assets](/help/assets/manage-assets.md).
-FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help/assets/manage-assets.md).
+   [자산 업로드](/help/assets/manage-assets.md)를 참조하십시오.
+[FTP 작업 예약을 사용하여 자산 업로드](/help/assets/manage-assets.md)를 참조하십시오.
 
    이제 비디오에 인터랙티브한 요소를 추가할 수 있습니다.
 
-## 비디오에 인터랙티브한 요소 추가 {#adding-interactivity-to-your-video}
+## 비디오 {#adding-interactivity-to-your-video}에 인터랙티브한 요소 추가
 
 [대화형 비디오 만들기] 페이지의 즉석 시각적인 편집기를 사용하여 비디오에 타임라인 세그먼트를 추가합니다.
 
 타임라인 세그먼트를 추가하면 각 세그먼트 내에 축소판 이미지를 추가할 수 있습니다. 추가한 각 축소판에 대해 작업을 적용합니다. 예를 들어 축소판에 Quickview를 적용하거나 하이퍼링크 또는 경험 조각을 지정할 수 있습니다.
 
-경험 [조각을 참조하십시오](/help/sites-authoring/experience-fragments.md).
+[경험 조각](/help/sites-authoring/experience-fragments.md)을 참조하십시오.
 
 >[!NOTE]
 뷰어를 경험 조각에 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.
@@ -270,23 +272,23 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
 1. 자산 보기에서 업로드한 비디오로 이동하여 대화형으로 만들 비디오로 이동합니다.
 1. 다음 중 하나를 수행하십시오.
 
-   * 이미지를 마우스로 가리킨 다음 **[!UICONTROL 선택]** (확인 표시 아이콘)을 누릅니다. 도구 모음에서 **[!UICONTROL 편집을 누릅니다.]**
+   * 이미지를 마우스로 가리킨 다음 **[!UICONTROL 선택]**(확인 표시 아이콘)을 누릅니다. 도구 모음에서 **[!UICONTROL 편집을 누릅니다.]**
 
-   * 이미지를 마우스로 가리킨 다음 **[!UICONTROL 추가 작업]** (세 점 아이콘) **[!UICONTROL > 편집을 누릅니다.]**
+   * 이미지를 마우스로 가리킨 다음 **[!UICONTROL 추가 작업]**(세 개의 점 아이콘) **[!UICONTROL 편집을 누릅니다.]**
 
    * 이미지를 눌러 세부 사항 보기 페이지에서 엽니다. 도구 모음에서 **[!UICONTROL 편집을 누릅니다.]**
 
 1. 대화형 비디오 만들기 페이지에서 다음 중 하나를 수행합니다.
 
-   * [ **[!UICONTROL 재생]** ] 단추를 눌러 비디오 재생을 시작합니다. 강조 표시하려는 특정 제품, 서비스 또는 세부 사항이 표시되면 도구 모음에서 **[!UICONTROL 세그먼트]** 추가를 누릅니다. 비디오 끝까지 반복합니다.
+   * **[!UICONTROL 재생]** 단추를 눌러 비디오 재생을 시작합니다. 강조 표시할 특정 제품, 서비스 또는 세부 사항이 표시되는 경우 도구 모음에서 **[!UICONTROL 세그먼트 추가]**&#x200B;를 누릅니다. 비디오 끝까지 반복합니다.
 
       추가한 각 세그먼트에 대해 하나 이상의 축소판 이미지를 할당한 다음 해당 축소판을 Quickview 제품 페이지에 연결하여 고객이 구매하거나 웹 페이지에 자세한 내용을 볼 수 있습니다.
 
-   * [ **[!UICONTROL 재생]** ] 단추를 눌러 비디오 재생을 시작합니다. 강조할 특정 제품, 서비스 또는 세부 사항이 표시되면 일시 중지를 **[!UICONTROL 누릅니다.]** 세그먼트 **[!UICONTROL 추가를 누릅니다.]**
+   * **[!UICONTROL 재생]** 단추를 눌러 비디오 재생을 시작합니다. 강조 표시할 특정 제품, 서비스 또는 세부 사항이 표시되면 **[!UICONTROL 일시 중지를 누릅니다.]** 세그먼트  **[!UICONTROL 추가를 누릅니다.]**
 
       비디오 끝에 도달할 때까지 세그먼트를 추가할 시간대의 지점에서 비디오를 계속 재생하고 일시 정지합니다.
 
-1. (선택 사항) **[!UICONTROL 타임라인 배율 슬라이더의]** 막대를 왼쪽으로 드래그하면 확대 또는 축소되어 추가한 세그먼트의 세부 사항 정도를 제어할 수 있습니다.
+1. (선택 사항) **[!UICONTROL 타임라인 배율 슬라이더]** 왼쪽에 있는 막대를 드래그하여 확대 또는 축소하여 추가한 세그먼트의 세부 사항 정도를 제어합니다.
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
@@ -308,7 +310,7 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
         </tr>
         <tr>
         <td>1 ~ 2분</td>
-        <td>20 seconds<br /> </td>
+        <td>20초<br /> </td>
         </tr>
         <tr>
         <td>30-60초</td>
@@ -361,14 +363,14 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
 
    * 세그먼트를 삭제하려면
 
-      타임라인에 있는 마지막 세그먼트를 선택한 다음 도구 모음에서 세그먼트 **[!UICONTROL 삭제를 누릅니다.]** 두 개 이상의 세그먼트를 선택하면 세그먼트 삭제 기능이 비활성화됩니다.
+      타임라인에 있는 마지막 세그먼트를 선택한 다음 도구 모음에서 **[!UICONTROL 세그먼트 삭제를 누릅니다.]** 두 개 이상의 세그먼트를 선택하면 세그먼트 삭제 기능이 비활성화됩니다.
 
-      마지막 세그먼트만 삭제할 수 있습니다. 예를 들어 타임라인에서 모든 세그먼트를 삭제하려면 항상 마지막 세그먼트를 선택한 다음 세그먼트 **[!UICONTROL 삭제를 탭해야 합니다.]**
+      마지막 세그먼트만 삭제할 수 있습니다. 예를 들어 타임라인에서 모든 세그먼트를 삭제하려면 항상 마지막 세그먼트를 선택한 다음 **[!UICONTROL 세그먼트 삭제를 누릅니다.]**
 
 
 1. 하나 이상의 축소판 이미지를 연결할 시간 세그먼트를 선택합니다.
-1. 비디오 오른쪽에 있는 **[!UICONTROL 콘텐츠]** 탭을 누릅니다.
-1. 콘텐츠 탭에서 자산 **[!UICONTROL 선택을]**&#x200B;누른 다음 비디오에 사용할 모든 이미지 자산을 찾아 선택합니다. 선택한 자산이 [콘텐트] 탭의 [자산 선택기] 패널에 추가됩니다.
+1. 비디오 오른쪽의 **[!UICONTROL 콘텐츠]** 탭을 누릅니다.
+1. 콘텐츠 탭에서 **[!UICONTROL 자산 선택]**&#x200B;을 누른 다음 비디오에 사용할 이미지 자산을 모두 찾아 선택합니다. 선택한 자산이 [콘텐트] 탭의 [자산 선택기] 패널에 추가됩니다.
 
 1. 콘텐츠 탭 아래의 자산 선택기에서 다음 중 하나를 수행합니다.
 
@@ -383,7 +385,7 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
         <td><p>다음 중 하나를 수행합니다.</p>
           <ul>
           <li>자산 선택기 패널에서 확인 표시가 있는 이미지를 눌러 선택 취소합니다. 이미지 자산이 타임라인 세그먼트에서 제거됩니다.<br /> </li>
-          <li>선택한 타임라인 세그먼트에서 이미지를 누른 다음 도구 모음에서 제품 <strong>삭제를 누릅니다</strong>.</li>
+          <li>선택한 타임라인 세그먼트에서 이미지를 누른 다음 도구 모음에서 <strong>제품 삭제</strong>를 누릅니다.</li>
           </ul> </td>
         </tr>
       </tbody>
@@ -393,26 +395,26 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
 
    자산 선택기 패널에서 이미지를 누르면 선택한 타임라인 세그먼트에 해당 이미지가 추가됩니다.
 
-1. 타임라인 세그먼트 중 하나에서 단일 축소판 이미지를 선택한 다음 작업 **[!UICONTROL 탭을]** 누릅니다.
+1. 타임라인 세그먼트 중 하나에서 단일 축소판 이미지를 선택한 다음 **[!UICONTROL 작업]** 탭을 누릅니다.
 1. 다음 중 하나를 수행합니다.
    <table> 
     <tbody> 
       <tr> 
       <td>선택한 축소판 이미지를 빠른 뷰와 연결하려면</td> 
-      <td><p>작업 유형에서 빠른 보기를 <strong>누릅니다</strong>.</p> <p>AEM Sites 및 전자 상거래 고객인 경우:</p> 
+      <td><p>작업 유형에서 <strong>Quickview</strong>를 누릅니다.</p> <p>AEM Sites 및 전자 상거래 고객인 경우:</p> 
        <ul> 
        <li>SKU 값 텍스트 필드는 사용자가 제공하는 각각의 고유 제품 또는 서비스에 대한 고유 식별자인 선택한 제품의 SKU(Stock Keeping Unit)로 미리 채워집니다. 이미지가 AEM Commerce의 제품과 연결되면 자동으로 채워집니다.</li> 
        <li>미리 채워진 SKU가 잘못된 경우 제품 선택기 아이콘(확대경)을 탭하거나 클릭하여 제품 선택 페이지를 엽니다. 사용할 제품을 누르거나 클릭한 다음 페이지의 오른쪽 상단에 있는 확인 표시를 눌러 대화형 비디오 편집기로 돌아갑니다.</li> 
-       </ul> <p> AEM Sites 또는 전자 상거래 고객이 <em>아닌</em> 경우</p> 
+       </ul> <p> AEM Sites 또는 전자 상거래 고객이 아닌 <em>인 경우</em></p> 
        <ul> 
-       <li>핫스팟 <a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">변수 식별을 참조하십시오</a>. 이러한 변수를 정의해야 합니다. </li> 
+       <li><a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">핫스팟 변수 식별</a>을 참조하십시오. 이러한 변수를 정의해야 합니다. </li> 
        <li>기본적으로 이 SKU 필드는 확장자 없이 이미지 자산의 파일 이름을 사용합니다. SKU를 기반으로 파일에 대한 표준 이름 지정 규칙을 따르는 경우 일반적으로 추가적인 편집 작업이 필요하지 않습니다. </li> 
        <li>그렇지 않은 경우 기본값을 편집하고 올바른 SKU 값을 입력합니다. SKU 값 텍스트 필드에 제공하는 각 개별 제품 또는 서비스에 대한 고유 식별자인 제품의 SKU(Stock Keeping Unit)를 입력합니다. 입력된 SKU 값은 시스템이 탭된 이미지를 특정 SKU의 Quickview와 연결할 수 있도록 Quickview 템플릿의 변수 부분을 자동으로 채웁니다.</li> 
-       </ul> <p>(선택 사항) Quickview 내에 제품을 추가로 식별하기 위해 사용해야 하는 다른 변수가 있으면 일반 변수 <strong>추가를 누릅니다</strong>. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어, 는 추가된 변수 <code>category=Womens</code> 입니다.</p> <p> </p> </td> 
+       </ul> <p>(선택 사항) Quickview 내에 제품을 추가로 식별하기 위해 사용해야 하는 다른 변수가 있으면 <strong>일반 변수 추가</strong>를 누릅니다. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 <code>category=Womens</code>은 추가된 변수입니다.</p> <p> </p> </td> 
       </tr> 
       <tr> 
       <td>선택한 축소판 이미지를 하이퍼링크로 연결하려면</td> 
-      <td><p>작업 유형에서 <strong>하이퍼링크를</strong>누른 다음 다음 중 하나를 수행합니다.</p> 
+      <td><p>작업 유형에서 <strong>하이퍼링크</strong>를 누른 다음 다음 중 하나를 수행합니다.</p> 
        <ul> 
        <li>AEM Sites 고객인 경우 사이트 선택기 아이콘(폴더)을 눌러 웹 페이지로 이동합니다. 인터랙티브한 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.</li> 
        <li>독립 실행형 Dynamic Media 고객인 경우 HREF 텍스트 필드에 연결된 웹 페이지의 전체 URL 경로를 지정합니다.</li> 
@@ -420,24 +422,24 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
       </tr> 
       <tr> 
       <td>선택한 축소판 이미지를 경험 조각과 연결하려면</td> 
-      <td><p>작업 유형에서 <strong>경험 조각을</strong>탭한 다음 다음을 수행합니다.<p> 
+      <td><p>작업 유형에서 <strong>경험 조각</strong>을 탭한 다음 다음을 수행합니다.<p> 
        <ul> 
-       <li>AEM Sites 고객인 경우 검색 아이콘(확대경)을 탭하거나 클릭하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 탭하거나 클릭한 다음 페이지 <strong>의 오른쪽 위 모서리 </strong>에서 선택을 탭하여 이전 페이지의 작업 패널로 돌아갑니다.<br /> 경험 <a href="/help/sites-authoring/experience-fragments.md">조각을 참조하십시오</a>.</li> 
+       <li>AEM Sites 고객인 경우 검색 아이콘(확대경)을 탭하거나 클릭하여 경험 조각 페이지를 엽니다. 사용할 경험 조각을 탭하거나 클릭한 다음 페이지의 오른쪽 위 모서리에 있는 <strong>선택 </strong>을 탭하여 이전 페이지의 [작업] 패널로 돌아갑니다.<br /> 경험  <a href="/help/sites-authoring/experience-fragments.md">조각을 참조하십시오</a>.</li> 
       </ul> 
        <ul> 
        <li>비디오에 표시될 경험 조각의 폭과 높이를 지정합니다.</li>
-       </ul><strong>참고</strong>:뷰어를 경험 조각에 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.</p></tr>&lt; 
+       </ul><strong>참고</strong>:뷰어를 경험 조각에 포함할 때는 대화형 비디오의 소셜 미디어 공유 도구가 지원되지 않습니다. 이 문제를 해결하려면 소셜 미디어 공유 도구가 없는 뷰어 사전 설정을 사용하거나 만들 수 있습니다. 이러한 뷰어 사전 설정을 사용하면 경험 조각에 성공적으로 포함할 수 있습니다.</p></tr>&lt;&gt; 
       <tr> 
       <td>축소판 이미지에 이미 할당된 작업을 편집하려면</td> 
-      <td>타임라인 세그먼트 내에서 텍스트 레이블 오른쪽에 체인 링크가 있는 축소판 이미지를 누릅니다. 체인 링크는 작업이 할당되었음을 나타냅니다. 작업 <strong>탭을</strong> 눌러 변경합니다.</td> 
+      <td>타임라인 세그먼트 내에서 텍스트 레이블 오른쪽에 체인 링크가 있는 축소판 이미지를 누릅니다. 체인 링크는 작업이 할당되었음을 나타냅니다. <strong>작업</strong> 탭을 눌러 변경합니다.</td> 
       </tr> 
       <tr> 
       <td>축소판 이미지의 텍스트 레이블을 변경하려면</td> 
-      <td><p>기본적으로 텍스트 레이블은 축소판 이미지의 <code>Title</code> 메타데이터 필드를 사용합니다. 이 <code>Title</code> 가 없으면 축소판 이미지의 파일 이름이 대신 사용되지만 확장명이 없습니다.</p> <p>축소판 이미지의 텍스트 레이블을 변경하려면 표시되는 이미지 자산 바로 아래의 <strong>작업 </strong>탭 아래에서 원하는 텍스트를 입력합니다. 아래 그림을 참조하십시오.</p> <p>새 텍스트 레이블은 비디오 플레이어 자체와 타임라인 세그먼트에 표시되는 축소판 텍스트에서만 사용됩니다. 레이블 변경은 축소판 이미지의 제목 메타데이터 필드 및 해당 파일 이름에 영향을 주지 않습니다.</p> </td> 
+      <td><p>기본적으로 텍스트 레이블은 축소판 이미지의 <code>Title</code> 메타데이터 필드를 사용합니다. <code>Title</code>이(가) 없는 경우 축소판 이미지의 파일 이름이 대신 사용되지만 확장명이 없습니다.</p> <p>축소판 이미지의 텍스트 레이블을 변경하려면 <strong>작업 </strong> 탭의 표시되는 이미지 자산 바로 아래에 원하는 텍스트를 입력합니다. 아래 그림을 참조하십시오.</p> <p>새 텍스트 레이블은 비디오 플레이어 자체와 타임라인 세그먼트에 표시되는 축소판 텍스트에서만 사용됩니다. 레이블 변경은 축소판 이미지의 제목 메타데이터 필드 및 해당 파일 이름에 영향을 주지 않습니다.</p> </td> 
       </tr> 
       <tr> 
       <td>변경한 내용을 되돌리려면</td> 
-      <td>페이지의 오른쪽 위 모서리 근처에 있는 <strong>실행 취소</strong> 또는 <strong>재실행을 누릅니다</strong>.</td> 
+      <td>페이지의 오른쪽 위 모서리 근처에 있는 <strong>실행 취소</strong> 또는 <strong>재실행</strong>을 탭합니다.</td> 
       </tr> 
     </tbody> 
    </table>
@@ -453,60 +455,60 @@ FTP [작업 예약을 사용하여 자산 업로드를 참조하십시오](/help
 
 1. (선택 사항) 다음 중 하나를 수행합니다.
 
-   * **[!UICONTROL 세그먼트]** 병합 - 인접한 두 세그먼트(제품 축소판이 지정되거나 지정되지 않음)를 하나의 세그먼트로 결합할 수 있습니다.
+   * **[!UICONTROL 세그먼트]**  병합 - 인접한 두 세그먼트(제품 축소판이 지정되거나 지정되지 않음)를 하나의 세그먼트로 결합할 수 있습니다.
 
       타임라인에서 하나로 병합할 두 개 이상의 인접한 세그먼트를 누릅니다. 아래 그림에서 선택한 두 개의 세그먼트에 파란색 타원 드래그 핸들이 없습니다.
 
-      도구 **[!UICONTROL 모음에서 세그먼트]** 병합을 누릅니다.
+      도구 모음에서 **[!UICONTROL 세그먼트 병합]**&#x200B;을 누릅니다.
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
    선택한 5초 세그먼트 2개를 10초 세그먼트로 병합합니다.
 
-   * **[!UICONTROL 세그먼트 분할]** - 단일 세그먼트를 두 개의 동일한 타임 세그먼트로 나눌 수 있습니다. 세그먼트에 이미 지정된 제품 축소판이 있는 경우 축소판이 왼쪽 세그먼트로 결합됩니다.
+   * **[!UICONTROL 세그먼트 분할]**  - 단일 세그먼트를 두 개의 동일한 시간 세그먼트로 나눌 수 있습니다. 세그먼트에 이미 지정된 제품 축소판이 있는 경우 축소판이 왼쪽 세그먼트로 결합됩니다.
 
-      타임라인에서 반으로 나눌 세그먼트를 누른 다음 도구 모음에서 **[!UICONTROL 세그먼트]** 분할을 누릅니다.
+      타임라인에서 반으로 나눌 세그먼트를 누른 다음 도구 모음에서 **[!UICONTROL 세그먼트 분할]**&#x200B;을 누릅니다.
 
-      두 개 이상의 세그먼트를 선택하면 세그먼트 분할 **[!UICONTROL 기능이]** 비활성화됩니다.
+      두 개 이상의 세그먼트를 선택하면 **[!UICONTROL 세그먼트 분할]** 기능이 비활성화됩니다.
    ![chlimage_1-135](assets/chlimage_1-135.png)
 
    선택한 10초 세그먼트를 5초의 두 세그먼트로 분할합니다.
 
-1. [대화형 비디오 **[!UICONTROL 만들기]** ] 페이지의 오른쪽 위 모서리 근처에 비디오에 사용된 현재 선택된 뷰어 사전 설정의 이름이 표시됩니다. 이름을 눌러 다른 뷰어 사전 설정을 선택합니다.
+1. **[!UICONTROL 대화형 비디오 만들기]** 페이지의 오른쪽 위 모서리 근처에 비디오에 사용된 현재 선택된 뷰어 사전 설정의 이름이 표시됩니다. 이름을 눌러 다른 뷰어 사전 설정을 선택합니다.
 
-   예를 들어 뷰어 사전 설정을 사용하면 비디오와 인접한 흰색 표시 영역을 사용하여 비디오를 재생할 수 있습니다. `Shoppable_Video_light` 표시 영역은 재생 중에 클릭 가능한 축소판 이미지가 표시되는 영역입니다. 뷰어 `Shoppable_Video_dark` 사전 설정을 사용하면 비디오와 인접한 검은색 표시 영역을 사용하여 비디오를 재생할 수 있습니다.
+   예를 들어 `Shoppable_Video_light` 뷰어 사전 설정을 사용하면 비디오와 인접한 흰색 표시 영역을 사용하여 비디오를 재생할 수 있습니다. 표시 영역은 재생 중에 클릭 가능한 축소판 이미지가 표시되는 영역입니다. `Shoppable_Video_dark` 뷰어 사전 설정을 사용하면 비디오와 인접한 검은색 표시 영역을 사용하여 비디오를 재생할 수 있습니다.
 
    직접 대화형 비디오 뷰어 사전 설정을 만든 경우 선택할 수 있는 사전 설정 목록에서도 이 사전 설정이 표시됩니다.
 
-   완료되면 저장을 **[!UICONTROL 누릅니다.]**
+   완료되면 **[!UICONTROL 저장을 누릅니다.]**
 
    >[!NOTE]
-   인터랙티브한 비디오를 저장하면 관련 `.vtt` 파일이 자동으로 저장됩니다. 이 `.vtt` 파일은 자산의 루트에 있는 `_VTT` 폴더에 **[!UICONTROL 저장됩니다.]** 인터랙티브한 비디오가 웹 사이트에서 제대로 재생되려면 파일과 폴더가 필요합니다. 따라서 폴더 또는 해당 컨텐츠를 이동, 편집 또는 삭제하지 마십시오 `_VTT` .
+   대화형 비디오를 저장할 때 연결된 `.vtt` 파일이 해당 비디오와 함께 자동으로 저장됩니다. `.vtt` 파일은 **[!UICONTROL Assets 루트에 있는 `_VTT` 폴더에 저장됩니다.]** 인터랙티브한 비디오가 웹 사이트에서 제대로 재생되려면 파일과 폴더가 필요합니다. 따라서 `_VTT` 폴더 또는 해당 컨텐츠를 이동, 편집 또는 삭제하지 마십시오.
 
 1. 인터랙티브한 비디오를 게시합니다. 게시를 사용하면 웹 사이트 경험에 최종적으로 복사하고 붙여넣을 내장 코드 또는 URL이 만들어집니다.
 
    Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 사용하십시오.하이퍼링크된 웹 페이지에 인터랙티브한 요소를 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
 
-   자산 [게시를 참조하십시오](publishing-dynamicmedia-assets.md).
+   [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
    >[!NOTE]
    Quickview를 사용하여 쇼퍼블 비디오를 게시하려면 상거래 영역에서 각 비디오의 관련 이미지 에셋을 별도로 게시해야 합니다.
 
-   타임라인 세그먼트를 추가하고 대화형 비디오를 게시하면 기존 웹 사이트 랜딩 페이지에 추가할 수 있습니다. 웹 사이트 [와 대화형 비디오 통합을 참조하십시오.](#integrating-an-interactive-video-with-your-website)
+   타임라인 세그먼트를 추가하고 대화형 비디오를 게시하면 기존 웹 사이트 랜딩 페이지에 추가할 수 있습니다. [웹 사이트와 대화형 비디오 통합을 참조하십시오.](#integrating-an-interactive-video-with-your-website)
 
-## 인터랙티브한 비디오 에셋 게시 {#publishing-interactive-video-assets}
+## 대화형 비디오 자산 게시 {#publishing-interactive-video-assets}
 
-대화형 비디오 [자산을 게시하는 방법에 대한 자세한 내용은 자산](/help/assets/publishing-dynamicmedia-assets.md) 게시를 참조하십시오.
+대화형 비디오 자산을 게시하는 방법에 대한 자세한 내용은 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md)을 참조하십시오.
 
-## 웹 사이트와 인터랙티브한 비디오 통합 {#integrating-an-interactive-video-with-your-website}
+## 웹 사이트 {#integrating-an-interactive-video-with-your-website}와 대화형 비디오 통합
 
 비디오를 업로드하고 타임라인 세그먼트를 추가하고 대화형 비디오를 게시한 후 이제 기존 웹 사이트에 추가할 준비가 되었습니다.
 
-AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 대화형 비디오를 추가할 수 있습니다. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+AEM Sites 고객인 경우 대화형 미디어 구성 요소를 페이지로 드래그하여 대화형 비디오를 추가할 수 있습니다. [페이지에 다이내믹 미디어 자산 추가를 참조하십시오.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 독립 실행형 AEM Assets 고객인 경우 이 섹션에 설명된 대로 웹 사이트에 대화형 비디오를 수동으로 추가할 수 있습니다.
 
 1. 게시된 대화형 비디오의 포함 코드 또는 URL을 복사합니다.
-See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
+웹 페이지에 [비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
 Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 사용하십시오.하이퍼링크된 웹 페이지에 인터랙티브한 요소를 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 AEM Sites 페이지에 대한 링크가 있는 경우에는 연결 URL 기반 방법을 사용할 수 없습니다.
 
 1. 대상의 웹 페이지 코드에서 정적 비디오가 있는 위치를 식별합니다.
@@ -554,7 +556,7 @@ Quickviews에서 인터랙티브한 기능을 추가한 경우 포함 코드만 
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
 
-## 기존 Quickview와 대화형 비디오 통합 {#integrating-an-interactive-video-with-an-existing-quickview}
+## 대화형 비디오를 기존 Quickview {#integrating-an-interactive-video-with-an-existing-quickview}과 통합
 
 >[!NOTE]
 이 작업은 사용자가 독립 실행형 AEM Assets 고객인 경우에만 적용됩니다.
@@ -632,7 +634,7 @@ AEM에서 반환되는 포함 코드에는 이미 사용 가능한 이벤트 핸
 
 따라서 위의 강조 표시된 코드 조각에 대한 주석을 해제하고 더미 처리기 본문을 특정 웹 페이지에 맞는 코드로 바꾸는 것으로만 필요합니다.
 
-표준 포함 코드에는 두 개의 기본 콜백 핸들러가 있습니다. `quickViewActivate` 및 `initComplete`. 뷰어에서 축소판을 클릭하면 `quickViewActivate` 처리기가 트리거됩니다. 뷰어를 Quickview 활성화 로직과 통합하려면 이 플러그인을 사용하십시오. 이 `initComplete` 처리기는 뷰어가 페이지에 로드될 때 한 번만 트리거합니다. 이 처리기는 웹 페이지 DOM에서 빠른 보기 대화 상자 위치를 조정하는 데 사용됩니다.
+표준 포함 코드에는 두 개의 기본 콜백 핸들러가 있습니다.`quickViewActivate` 및 `initComplete`. 뷰어에서 축소판을 클릭하면 `quickViewActivate` 핸들러가 트리거됩니다. 뷰어를 Quickview 활성화 로직과 통합하려면 이 플러그인을 사용하십시오. `initComplete` 핸들러는 뷰어가 페이지로 로드될 때 한 번만 트리거합니다. 이 처리기는 웹 페이지 DOM에서 빠른 보기 대화 상자 위치를 조정하는 데 사용됩니다.
 
 Quickview URL을 구성하는 프로세스는 이 주제의 앞부분에서 다루는 축소판 변수를 확인하는 프로세스와 반대됩니다. 이전에 식별한 빠른 보기 URL 예를 사용하면 각 케이스에서 빠른 보기 URL이 구성되는 방식을 확인할 수 있습니다.
 
@@ -673,7 +675,7 @@ Quickview URL을 트리거하고 Quickview 패널을 활성화하는 마지막 �
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
-다음과 같이 핸들러로 전달되는 `quickViewActivate` 개체 `categoryId` 에서 사용할 수 있는 필드 `sku` 및 `inData` 필드를 사용하여 핸들러 내에서 이 URL을 손쉽게 재구성할 수 있습니다.
+다음과 같이 뷰어의 코드를 통해 핸들러로 전달되는 `inData` 개체에서 사용할 수 있는 `quickViewActivate` 핸들러 내에 이 URL을 쉽게 재구성할 수 있습니다.`sku``categoryId`
 
 ```xml
 var sku=inData.sku;
@@ -681,7 +683,7 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-데모 웹 사이트에서 간단한 함수 호출을 사용하여 빠른 보기 대화 상자를 `loadQuickView()` 트리거합니다. 이 함수는 Quickview 데이터 URL인 하나의 인수만 사용합니다. 따라서 인터랙티브한 비디오를 통합하는 데 필요한 마지막 단계는 다음 코드 줄을 `quickViewActivate` 핸들러에 추가하는 것입니다.
+데모 웹 사이트에서 간단한 `loadQuickView()` 함수 호출을 사용하여 빠른 보기 대화 상자를 트리거합니다. 이 함수는 Quickview 데이터 URL인 하나의 인수만 사용합니다. 따라서 대화형 비디오를 통합하는 데 필요한 마지막 단계는 다음 코드 줄을 `quickViewActivate` 처리기에 추가하는 것입니다.
 
 ```xml
 loadQuickView(quickViewUrl);
@@ -694,11 +696,11 @@ var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInner
 var inner_container = document.getElementById(sdkContainerId);
 ```
 
-여기서 `inner_container` 는 뷰어에서 관리하는 `DIV` 요소에 대한 참조입니다. 대화 상자가 그 하위 대화 상자가 되길 `DIV`원합니다.
+여기서 `inner_container`은 뷰어가 관리하는 `DIV` 요소에 대한 참조입니다. 대화 상자가 해당 `DIV`의 자식으로 되길 바랍니다.
 
 실제 모달 대화 상자 요소를 찾아 위의 컨테이너에 첨부하는 단계는 대/소문자를 구분합니다. 또한 필요한 Quickview 구현에 익숙한 프런트 엔드 개발자로부터 도움을 받을 수 있습니다.
 
-샘플 웹 사이트의 경우 빠른 보기 모달 대화 상자는 문서에 직접 연결된 quickview-modal ID `DIV` 로 구현됩니다 `BODY`. 따라서 대화 상자를 뷰어의 컨테이너로 이동하는 코드는 다음과 같이 간단합니다.
+샘플 웹 사이트의 경우 빠른 보기 모달 대화 상자가 문서 `BODY`에 직접 연결된 `DIV`으로 구현됩니다. 따라서 대화 상자를 뷰어의 컨테이너로 이동하는 코드는 다음과 같이 간단합니다.
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -755,4 +757,4 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 ## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
-See [Using Quickviews to create custom pop-ups](/help/assets/custom-pop-ups.md).
+[빠른 보기를 사용하여 사용자 정의 팝업](/help/assets/custom-pop-ups.md)을 참조하십시오.
