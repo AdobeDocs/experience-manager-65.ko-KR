@@ -21,7 +21,7 @@ ht-degree: 5%
 
 이 문서에서는 Windows 및 Macintosh 운영 체제용 응용 양식 편집기, 테마 편집기, 컨텐츠 브라우저 및 통신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
 
-## 적응형 양식 편집기 {#adaptiveformeditor}
+## 응용 양식 편집기 {#adaptiveformeditor}
 
 | **작업** | **Windows에서 바로 가기** | **Mac OS에서 바로 가기** |
 |---|---|---|
@@ -71,7 +71,7 @@ ht-degree: 5%
 >
 >Mac OS에서 Ctrl 및 Command 키를 모두 사용하여 &#39;&amp;ast;로 표시된 단축키를 사용할 수 있습니다.
 
-## 컨텐츠 브라우저  {#contentbrowser}
+## 콘텐츠 브라우저 {#contentbrowser}
 
 | **작업** | **Windows에서 바로 가기** | **Mac OS에서 바로 가기** |
 |---|---|---|
@@ -82,17 +82,17 @@ ht-degree: 5%
 | Forms 개체 트리에서 다음 항목 선택 | 아래쪽 화살표 | 아래쪽 화살표 |
 | Forms 개체 트리에서 이전 항목 선택 | 위쪽 화살표 | 위쪽 화살표 |
 
-[1] Windows의 경우 Ctrl + 오른쪽 화살표, Mac OS의 경우 Command + 오른쪽 화살표 교체\
-[2] Windows의 경우 Ctrl + 왼쪽 화살표, Mac OS의 경우 Command + 왼쪽 화살표 교체
+[1] 은 Windows의 경우 Ctrl + 오른쪽 화살표, Mac OS의 경우 Command + 오른쪽 화살표를 대체합니다.\
+[2] 는 Windows의 경우 Ctrl + 왼쪽 화살표, Mac OS의 경우 Command + 왼쪽 화살표를 대체합니다.
 
 ## 서신 관리 {#correspondence-management}
 
 이 섹션에는 통신 관리 텍스트 편집기에서 사용할 수 있는 다양한 키보드 및 액세서빌러티 단축키가 나열됩니다. 다음과 같은 시기에 이러한 단축키를 사용할 수 있습니다.
 
-* 텍스트 [에셋 만들기 또는](texts-interactive-communications.md) 편집
-* 통신 내용을 만들 때 관련 편집 아이콘( ![edittextmodule](assets/edittextmodule.png))을 탭한 후 텍스트 모듈 [을 편집합니다](/help/forms/using/create-correspondence.md).
+* [Text](texts-interactive-communications.md) 자산 만들기 또는 편집
+* [통신](/help/forms/using/create-correspondence.md)을 만들 때 관련 편집 아이콘( ![edittextmodule](assets/edittextmodule.png))을 탭한 후 텍스트 모듈을 편집합니다.
 
-### 텍스트 선택 및 커서 주위 이동 {#text-selection-and-moving-the-cursor-around}
+### 텍스트 선택 및 커서 이동 {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
@@ -198,7 +198,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>커서를 시작 위치로 이동</p> </td> 
-   <td><p>하나씩</p> </td> 
+   <td><p>Ctrl+홈</p> </td> 
    <td>Command+위쪽 화살표</td> 
   </tr>
   <tr>
@@ -242,7 +242,7 @@ ht-degree: 5%
  </tbody>
 </table>
 
-### 작업 실행 취소 및 다시 실행 {#undo-and-redo-actions}
+### 실행 취소 및 다시 실행 작업 {#undo-and-redo-actions}
 
 <table> 
  <tbody>
@@ -264,7 +264,7 @@ ht-degree: 5%
  </tbody>
 </table>
 
-### 글꼴 크기 변경 {#changing-font-size}
+### 글꼴 크기 {#changing-font-size} 변경
 
 <table> 
  <tbody>
@@ -286,7 +286,7 @@ ht-degree: 5%
  </tbody>
 </table>
 
-### 단어 삭제 {#deleting-a-word}
+### 단어 {#deleting-a-word} 삭제
 
 <table> 
  <tbody>
@@ -308,7 +308,7 @@ ht-degree: 5%
  </tbody>
 </table>
 
-### 복사 및 붙여넣기 {#copy-and-paste}
+### {#copy-and-paste} 복사 및 붙여넣기
 
 <table> 
  <tbody>
