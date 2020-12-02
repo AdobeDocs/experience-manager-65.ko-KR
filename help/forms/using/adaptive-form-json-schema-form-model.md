@@ -26,13 +26,13 @@ JSON 스키마를 양식 모델로 사용하여 적응형 양식을 작성하려
 * [응용 양식 만들기](../../forms/using/creating-adaptive-form.md)
 * [JSON 스키마](https://json-schema.org/)
 
-## JSON 스키마를 양식 모델로 사용  {#using-a-json-schema-as-form-model}
+## JSON 스키마를 양식 모델 {#using-a-json-schema-as-form-model}으로 사용
 
-AEM Forms은 기존 JSON 스키마를 양식 모델로 사용하여 적응형 양식 작성을 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 사용하는 JSON 스키마는 [v4 사양과 호환되어야 합니다](https://json-schema.org/draft-04/schema).
+AEM Forms은 기존 JSON 스키마를 양식 모델로 사용하여 적응형 양식 작성을 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 사용하는 JSON 스키마는 [v4 사양](https://json-schema.org/draft-04/schema)과 호환되어야 합니다.
 
 JSON 스키마 사용의 주요 기능은 다음과 같습니다.
 
-* JSON의 구조는 적응형 양식의 작성 모드의 컨텐츠 파인더 탭에 트리로 표시됩니다. JSON 계층 구조에서 적응형 양식으로 요소를 드래그하여 추가할 수 있습니다.
+* JSON의 구조는 적응형 양식의 작성 모드에서 컨텐츠 파인더 탭에 트리로 표시됩니다. JSON 계층 구조에서 적응형 양식으로 요소를 드래그하여 추가할 수 있습니다.
 * 관련 스키마를 준수하는 JSON을 사용하여 양식을 미리 채울 수 있습니다.
 * 제출 시 사용자가 입력한 데이터가 관련 스키마에 맞는 JSON으로 제출됩니다.
 
@@ -82,23 +82,23 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
     </ul> </td>
   </tr>
   <tr>
-   <td><p>{</p> <p>"type" : "string",</p> <p>}</p> </td>
+   <td><p>{</p> <p>"type" :"string",</p> <p>}</p> </td>
    <td><br /> <br /> 텍스트 필드<br /> <br /> <br /> </td>
   </tr>
   <tr>
    <td>number property<br /> </td>
-   <td>하위 유형이 부동 항목으로 설정된 숫자 필드<br /> </td>
+   <td>하위 유형이 부동<br />으로 설정된 숫자 필드 </td>
   </tr>
   <tr>
    <td>정수 속성<br /> </td>
-   <td>하위 유형이 정수로 설정된 숫자 필드<br /> </td>
+   <td>하위 유형이 정수<br />로 설정된 숫자 필드 </td>
   </tr>
   <tr>
    <td>boolean 속성<br /> </td>
    <td>전환<br /> </td>
   </tr>
   <tr>
-   <td>object property<br /> </td>
+   <td>object 속성<br /> </td>
    <td>패널<br /> </td>
   </tr>
   <tr>
@@ -337,9 +337,9 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 
 위의 예에서는 고객 레코드를 정의합니다. 각 고객은 배송 및 청구 주소를 모두 갖습니다. 두 주소의 구조는 동일하며, 주소는 주소, 시/도, 주가 있으므로 주소를 중복하지 않는 것이 좋습니다. 또한 나중에 변경할 수 있도록 필드를 추가하거나 삭제할 수 있습니다.
 
-## JSON 스키마 정의의 사전 구성 필드 {#pre-configuring-fields-in-json-schema-definition}
+## JSON 스키마 정의 {#pre-configuring-fields-in-json-schema-definition}의 사전 구성 필드
 
-aem:afProperties **속성을 사용하여** 사용자 지정 적응형 양식 구성 요소에 매핑하도록 JSON 스키마 필드를 미리 구성할 수 있습니다. 다음은 예입니다.
+**aem:afProperties** 속성을 사용하여 사용자 지정 적응형 양식 구성 요소에 매핑하도록 JSON 스키마 필드를 미리 구성할 수 있습니다. 다음은 예입니다.
 
 ```json
 {
@@ -359,9 +359,9 @@ aem:afProperties **속성을 사용하여** 사용자 지정 적응형 양식 �
 }
 ```
 
-## 양식 개체에 대한 스크립트 또는 표현식 구성  {#configure-scripts-or-expressions-for-form-objects}
+## 양식 개체 {#configure-scripts-or-expressions-for-form-objects}에 대한 스크립트 또는 표현식 구성
 
-JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript 표현식이며 적응형 양식 스크립팅 모델 API를 사용합니다. 양식 개체를 미리 구성하여 양식 이벤트의 식을 [평가할](../../forms/using/adaptive-form-expressions.md) 수 있습니다.
+JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript 표현식이며 적응형 양식 스크립팅 모델 API를 사용합니다. 양식 이벤트의 식[을 평가하도록 양식 개체를 미리 구성할 수 있습니다.](../../forms/using/adaptive-form-expressions.md)
 
 aem:afproperties 속성을 사용하여 적응형 양식 구성 요소에 대한 적응형 양식 표현식 또는 스크립트를 미리 구성합니다. 예를 들어, 초기화 이벤트가 트리거되면 아래 코드는 전화 필드의 값을 설정하고 값을 로그에 인쇄합니다.
 
@@ -381,13 +381,13 @@ aem:afproperties 속성을 사용하여 적응형 양식 구성 요소에 대한
 }
 ```
 
-양식 개체에 대한 스크립트나 표현식을 구성하려면 [양식 파워](/help/forms/using/forms-groups-privileges-tasks.md) 사용자 그룹의 구성원이어야 합니다. 아래 표는 적응형 양식 구성 요소에 대해 지원되는 모든 스크립트 이벤트를 나열합니다.
+양식 개체에 대한 스크립트나 식을 구성하려면 [forms-power-user 그룹](/help/forms/using/forms-groups-privileges-tasks.md)의 구성원이어야 합니다. 아래 표는 적응형 양식 구성 요소에 대해 지원되는 모든 스크립트 이벤트를 나열합니다.
 
 <table>
  <tbody>
   <tr>
    <th><strong></strong>Component \ Event</th>
-   <th>initialize <br /> </th>
+   <th><br /> 초기화 </th>
    <td>연산</td>
    <td>가시성</td>
    <td>유효성 검사</td>
@@ -586,11 +586,11 @@ aem:afproperties 속성을 사용하여 적응형 양식 구성 요소에 대한
  </tbody>
 </table>
 
-JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트의 필드를 숨기고 값 커밋 이벤트에 대한 다른 필드의 값을 구성하는 중입니다. 스크립트 이벤트에 대한 표현식을 만드는 방법에 대한 자세한 내용은 [응용 양식 표현식을 참조하십시오](../../forms/using/adaptive-form-expressions.md).
+JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트의 필드를 숨기고 값 커밋 이벤트에 대한 다른 필드의 값을 구성하는 중입니다. 스크립트 이벤트에 대한 표현식을 만드는 방법에 대한 자세한 내용은 [응용 양식 표현식](../../forms/using/adaptive-form-expressions.md)을 참조하십시오.
 
 다음은 앞서 언급한 예제의 샘플 JSON 코드입니다.
 
-### 초기화 이벤트 시 필드 숨기기 {#hiding-a-field-on-initialize-event}
+### 초기화 이벤트 {#hiding-a-field-on-initialize-event} 시 필드 숨기기
 
 ```json
 "name": {
@@ -603,7 +603,7 @@ JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트의 �
 }
 ```
 
-#### 값 커밋 이벤트의 다른 필드 값 구성 {#configure-value-of-another-field-on-value-commit-event}
+#### 값 커밋 이벤트 {#configure-value-of-another-field-on-value-commit-event}에서 다른 필드의 값 구성
 
 ```json
 "Income": {
@@ -627,7 +627,7 @@ JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트의 �
 }
 ```
 
-## 응용 양식 구성 요소에 사용할 수 있는 값 제한 {#limit-acceptable-values-for-an-adaptive-form-component}
+## 응용 양식 구성 요소 {#limit-acceptable-values-for-an-adaptive-form-component}에 사용할 수 있는 값 제한
 
 적응형 양식 구성 요소에 허용되는 값을 제한하기 위해 다음 제한 사항을 JSON 스키마 요소에 추가할 수 있습니다.
 
@@ -725,7 +725,7 @@ JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트의 �
  </tbody>
 </table>
 
-## 지원되지 않는 구문  {#non-supported-constructs}
+## 지원되지 않는 구문 {#non-supported-constructs}
 
 적응형 양식은 다음 JSON 스키마 구문을 지원하지 않습니다.
 
@@ -740,7 +740,7 @@ JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트의 �
 
 반복 가능한 하위 양식에서는 전체 하위 양식을 사용해야 합니다. 선택적 필드만 원하는 경우 전체 구조를 사용하고 원하지 않는 필드를 삭제합니다.
 
-**Content Finder에는 구조가 매우 복잡합니다. 특정 요소를 찾으려면 어떻게 해야 합니까?**
+**Content Finder에는 구조가 매우 복잡합니다. 특정 요소를 어떻게 찾을 수 있습니까?**
 
 두 가지 옵션이 있습니다.
 
