@@ -39,7 +39,7 @@ ht-degree: 20%
    + [Oak 인덱스 문제 해결](troubleshooting-oak-indexes.md)
    + [집계된 사용 통계 수집 선택](opt-in-aggregated-usage-statistics.md)
    + [문제 해결](troubleshooting.md)
-+ AEM 구성 {#configuring}
++ AEM {#configuring} 구성
    + [기본 구성 개념](configuring.md)
    + [로깅](configure-logging.md)
    + [OSGi 구성](configuring-osgi.md)
@@ -62,7 +62,7 @@ ht-degree: 20%
    + [자산 성과 가이드](assets-performance-sizing.md)
    + [구성 방법 문서](ht-deploy.md)
    + [웹 콘솔 구성](configuring-web-console.md)
-+ Upgrading to AEM 6.5 {#upgrading}
++ AEM 6.5 {#upgrading}로 업그레이드
    + [AEM 6.5로 업그레이드](upgrade.md)
    + [업그레이드 계획](upgrade-planning.md)
    + [Pattern Detector를 사용한 업그레이드 복잡성 평가](pattern-detector.md)
