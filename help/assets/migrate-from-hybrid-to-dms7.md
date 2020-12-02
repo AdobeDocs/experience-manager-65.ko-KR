@@ -6,8 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f466193a259d9e8869d7f79eafda1be20869e4af
+workflow-type: tm+mt
+source-wordcount: '512'
+ht-degree: 100%
 
 ---
 
