@@ -23,7 +23,7 @@ ht-degree: 12%
 
 ## 전제 조건 {#pre-requisites}
 
-AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). 설치를 시작하기 전에 위에서 설명한 재배포 가능 런타임 패키지가 설치되어 있는지 확인하십시오.
+AEM Forms 디자이너 설치 관리자는 [Visual C++ 재배포 가능 런타임 패키지 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) 및 [Visual C++ 재배포 가능 런타임 패키지 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package)의 32비트 버전이 필요합니다. 설치를 시작하기 전에 위에서 설명한 재배포 가능 런타임 패키지가 설치되어 있는지 확인하십시오.
 
 ## 디자이너 설치 {#install-designer}
 
