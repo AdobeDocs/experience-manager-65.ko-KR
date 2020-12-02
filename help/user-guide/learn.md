@@ -12,11 +12,11 @@ ht-degree: 29%
 ---
 
 
-# Learn About AEM 6.5 Capabilities {#learn-about-aem-64-capabilities}
+# AEM 6.5 기능에 대한 자세한 내용 {#learn-about-aem-64-capabilities}
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites은 Adobe Experience Manager의 컨텐츠 관리 시스템으로 웹 사이트, 모바일 사이트 및 온사이트 화면에서 디지털 경험을 제작, 관리 및 전달하여 글로벌로 제공할 수 있으며 개인적으로는 연관성 있고 매력적인 경험을 제공할 수 있습니다. [새로운 비디오 기능 튜토리얼에 대해 자세히](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) 살펴보거나 [자세히 살펴보십시오.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+AEM Sites은 Adobe Experience Manager의 컨텐츠 관리 시스템으로 웹 사이트, 모바일 사이트 및 온사이트 화면에서 디지털 경험을 제작, 관리 및 전달하여 글로벌로 제공할 수 있으며 개인적으로는 연관성 있고 매력적인 경험을 제공할 수 있습니다. [새로운 비디오 기능 튜토리얼](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) 을 자세히  [살펴보거나 살펴보십시오.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
 ## AEM Assets {#aem-assets}
 
@@ -47,8 +47,8 @@ Screens는 다양한 유형의 화면을 포함하는 다이내믹하고 인터�
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre는 웹에서 공유되는 모든 것을 활용할 수 있는 완전히 새로운 Adobe Experience Manager 기능으로, 고유한 사이트에 고품질의 신선한 콘텐츠를 끊임없이 제작할 수 있습니다. [자세한](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) 내용을 살펴보거나 [안내서로 바로 이동할 수 있습니다.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre는 웹에서 공유되는 모든 것을 활용할 수 있는 완전히 새로운 Adobe Experience Manager 기능으로, 고유한 사이트에 고품질의 신선한 콘텐츠를 끊임없이 제작할 수 있습니다. [자세한 내용](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) 을 살펴보거나  [안내서로 바로 이동할 수 있습니다.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
 ## AEM 기반 정보 {#aem-foundation}
 
-Adobe [Adobe Experience Manager 6.5 기반](/help/sites-deploying/home.md) 및 관리 서비스 배포 모델에 대한 자세한 내용을 살펴보거나 이 릴리스의 기능에 대한 [새로운 비디오 소개를 살펴보십시오.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+[Adobe Experience Manager 6.5 foundation](/help/sites-deploying/home.md) 및 Adobe 관리 서비스 배포 모델에 대해 자세히 알아보거나 [이 릴리스의 기능에 대한 새로운 비디오 소개를 참조하십시오.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
