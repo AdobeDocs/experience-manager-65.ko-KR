@@ -1,6 +1,6 @@
 ---
-title: Forms Service API 빠른 시작
-seo-title: Forms Service API 빠른 시작
+title: Forms 서비스 API 빠른 시작
+seo-title: Forms 서비스 API 빠른 시작
 description: 'null'
 seo-description: 'null'
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
@@ -18,51 +18,51 @@ ht-degree: 0%
 ---
 
 
-# Forms Service API 빠른 시작 {#forms-service-api-quick-starts}
+# Forms 서비스 API 빠른 시작 {#forms-service-api-quick-starts}
 
-양식 서비스에서 다음 빠른 시작을 사용할 수 있습니다.
+다음 빠른 시작을 Forms 서비스에 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 인터랙티브한 PDF 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 인터랙티브한 PDF 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 클라이언트에서 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 클라이언트에서 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 조각을 기반으로 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 조각을 기반으로 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 권한 지원 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 권한 지원 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 HTML 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 HTML 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 사용자 정의 도구 모음을 사용하여 HTML 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 사용자 정의 도구 모음을 사용하여 HTML 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 XML로 제출된 PDF forms 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 XML로 제출된 PDF forms 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 PDF로 제출된 PDF forms 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 PDF로 제출된 PDF forms 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 XML로 제출된 HTML 양식 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 XML로 제출된 HTML 양식 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 제출된 XML 데이터를 사용하여 PDF 문서 작성](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 제출된 XML 데이터를 사용하여 PDF 문서 작성](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 양식에 플로우 가능한 레이아웃 미리 채우기](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 Forms을 플로우 가능한 레이아웃으로 미리 채우기](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 계산 스크립트가 포함된 양식 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 계산 스크립트가 포함된 양식 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 성능 최적화](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 성능 최적화](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용한 값별 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용한 값별 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 Forms 서비스에 문서 전달](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 Forms 서비스에 문서 전달](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿으로 구현됩니다. AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->v로 프로그래밍에 있는 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하고 있는 양식 서버를 기반으로 하며, Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>v로 프로그래밍에 있는 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하고 있는 양식 서버를 기반으로 하며, Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
-**팁**: Adobe 개발자 웹 사이트에는 Forms 서비스를 호출하고 양식을 렌더링하는 ASP.NET 응용 프로그램을 만드는 방법에 대해 설명하는 다음 문서가 포함되어 있습니다. 양식 [렌더링 ASP.NET 응용 프로그램 만들기를 참조하십시오](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
+**팁**:Adobe 개발자 웹 사이트에는 Forms 서비스를 호출하고 양식을 렌더링하는 ASP.NET 응용 프로그램을 만드는 방법에 대해 설명하는 다음 문서가 포함되어 있습니다. [양식 렌더링 ASP.NET 응용 프로그램 만들기](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)를 참조하십시오.
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 인터랙티브한 PDF 양식 렌더링 {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}를 사용하여 대화형 PDF 양식 렌더링
 
-다음 코드 예제에서는 Loan.xdp라는 인터랙티브한 PDF 양식을 *클라이언트* 웹 브라우저에 렌더링합니다. 파일이 양식에 첨부됩니다. 양식 디자인이 응용 프로그램의 일부이며 컨텐츠 루트 URI 값을 사용하여 참조됩니다 `repository:///`. (대화형 [PDF forms 렌더링을 참조하십시오](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
+다음 코드 예제에서는 *Loan.xdp*&#x200B;라는 대화형 PDF 양식을 클라이언트 웹 브라우저에 렌더링합니다. 파일이 양식에 첨부됩니다. 양식 디자인이 응용 프로그램의 일부이며 컨텐츠 루트 URI 값 `repository:///`을(를) 사용하여 참조됩니다. ([대화형 PDF forms 렌더링](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)을 참조하십시오.)
 
 ```java
  /*
@@ -202,9 +202,9 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 클라이언트에서 양식 렌더링 {#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api}
+## 빠른 시작(SOAP 모드):클라이언트에서 Java API {#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api}를 사용하여 양식 렌더링
 
-다음 코드 예제에서는 Forms 서비스 Java API를 사용하여 *클라이언트에서 Loan.xdp* 라는 양식을 렌더링합니다. 양식 디자인이 응용 프로그램의 일부이며 컨텐츠 루트 URI 값을 사용하여 참조됩니다 `repository:///`. 클라이언트 [에서 양식 렌더링을 참조하십시오](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).
+다음 코드 예는 Forms 서비스 Java API를 사용하여 클라이언트에서 *Loan.xdp*&#x200B;라는 양식을 렌더링합니다. 양식 디자인이 응용 프로그램의 일부이며 컨텐츠 루트 URI 값 `repository:///`을(를) 사용하여 참조됩니다. (클라이언트[에서 Forms 렌더링 참조)](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client)
 
 ```java
  /*
@@ -335,9 +335,9 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 안내서 렌더링(더 이상 사용되지 않음) {#quick-start-soap-mode-rendering-a-guide-deprecated-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-a-guide-deprecated-using-the-java-api}를 사용하여 안내서 렌더링(더 이상 사용되지 않음)
 
-다음 코드 예제에서는 TLALifeClaim.xdp라는 *안내선* (더 이상 사용되지 않음)을 클라이언트 웹 브라우저에 렌더링합니다.
+다음 코드 예제는 *TLALifeClaim.xdp*&#x200B;라는 이름의 안내서를 클라이언트 웹 브라우저에 렌더링합니다.
 
 ```java
  /*
@@ -471,9 +471,9 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 조각을 기반으로 양식 렌더링 {#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api}를 사용하여 조각을 기반으로 양식 렌더링
 
-다음 코드 예제에서는 조각을 기반으로 하는 양식을 렌더링합니다. 양식 디자인의 이름은 *PurchaseOrderDynamic.xdp* 이며 AEM Forms 저장소에 있습니다(XDP 파일은 저장소의 FormsFolder라는 폴더에 저장됨). 또한 POFragment 양식 참조에서 참조되는 조각도 저장소에 있어야 합니다. 조각 기반 [양식 렌더링을 참조하십시오](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).
+다음 코드 예제에서는 조각을 기반으로 하는 양식을 렌더링합니다. 양식 디자인의 이름은 *PurchaseOrderDynamic.xdp*&#x200B;이며 AEM Forms 저장소에 있습니다. XDP 파일은 저장소의 FormsFolder라는 폴더에 저장됩니다. 또한 POFragment 양식 참조에서 참조되는 조각도 저장소에 있어야 합니다. ([조각에 따라 Forms 렌더링](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments)을 참조하십시오.)
 
 ```java
  /*
@@ -604,9 +604,9 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 권한 지원 양식 렌더링 {#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api}를 사용하여 권한 지원 양식 렌더링
 
-다음 코드 예제에서는 권한이 활성화된 양식을 클라이언트 웹 브라우저에 렌더링합니다. 이 코드 예제의 사용 권한 세트를 사용하면 사용자가 양식에 주석을 추가하고 양식 데이터를 저장할 수 있습니다. (권한 [사용 양식 렌더링을 참조하십시오](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms).)
+다음 코드 예제에서는 권한이 활성화된 양식을 클라이언트 웹 브라우저에 렌더링합니다. 이 코드 예제의 사용 권한 세트를 사용하면 사용자가 양식에 주석을 추가하고 양식 데이터를 저장할 수 있습니다. ([렌더링 권한 사용 Forms](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms)을 참조하십시오.)
 
 ```java
  /*
@@ -741,9 +741,9 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 HTML 양식 렌더링 {#quick-start-soap-mode-rendering-an-html-form-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-an-html-form-using-the-java-api}를 사용하여 HTML 양식 렌더링
 
-다음 코드 예제에서는 Forms 서비스 Java API를 사용하여 HTML 양식을 렌더링합니다. 도구 모음이 HTML 양식과 두 개의 첨부 파일에 추가됩니다. 또한 사용자 에이전트 값은 `HttpServletRequest` 객체로부터 얻습니다. 양식 [렌더링을 HTML로 참조하십시오](/help/forms/developing/rendering-forms.md#rendering-forms-as-html).
+다음 코드 예제에서는 Forms 서비스 Java API를 사용하여 HTML 양식을 렌더링합니다. 도구 모음이 HTML 양식과 두 개의 첨부 파일에 추가됩니다. 또한 사용자 에이전트 값은 `HttpServletRequest` 개체에서 가져옵니다. (HTML[으로 Forms 렌더링 참조)](/help/forms/developing/rendering-forms.md#rendering-forms-as-html)
 
 ```java
  /*
@@ -902,9 +902,9 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 CSS 파일을 사용하는 HTML 양식 렌더링 {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}를 사용하여 CSS 파일을 사용하는 HTML 양식 렌더링
 
-다음 코드 예제에서는 Forms 서비스 클라이언트 API를 사용하여 HTML 양식을 렌더링합니다. 참조되는 사용자 지정 CSS 파일의 이름은 *custom.css입니다*. (사용자 [지정 CSS 파일을 사용하여 HTML 양식 렌더링을 참조하십시오](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files).)
+다음 코드 예제에서는 Forms 서비스 클라이언트 API를 사용하여 HTML 양식을 렌더링합니다. 참조되는 사용자 지정 CSS 파일의 이름은 *custom.css*&#x200B;입니다. (사용자 지정 CSS 파일을 사용하여 HTML Forms 렌더링[을 참조하십시오.)](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files)
 
 ```java
  /*
@@ -1057,9 +1057,9 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 사용자 정의 도구 모음을 사용하여 HTML 양식 렌더링 {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api}를 사용하여 사용자 정의 도구 모음을 사용하여 HTML 양식 렌더링
 
-다음 코드 예제에서는 툴바가 프랑스어로 표시된 HTML 양식을 렌더링합니다. fscmenu.xml의 위치는 C:\Adobe 입니다(이 폴더는 AEM Forms을 호스팅하는 서버에 있어야 함). 로케일 값은 입니다 `fr_FR`. 사용자 정의 도구 모음을 사용하여 HTML 양식을 렌더링하는 방법에 대해 설명하는 섹션은 이 빠른 시작 부분에 사용되는 fscmenu.xml 파일의 구문을 보여줍니다. (사용자 [지정 도구 모음을 사용하여 HTML 양식 렌더링을 참조하십시오](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
+다음 코드 예제에서는 툴바가 프랑스어로 표시된 HTML 양식을 렌더링합니다. fscmenu.xml의 위치는 C:\Adobe (이 폴더는 AEM Forms을 호스팅하는 서버에 있어야 함)입니다. 로케일 값은 `fr_FR`입니다. 사용자 정의 도구 모음을 사용하여 HTML 양식을 렌더링하는 방법에 대해 설명하는 섹션은 이 빠른 시작 부분에 사용되는 fscmenu.xml 파일의 구문을 보여줍니다. (사용자 지정 도구 모음[을(를) 사용하여 HTML Forms 렌더링 참조)](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars)
 
 ```java
  /*
@@ -1213,9 +1213,9 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 XML로 제출된 PDF forms 처리 {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}를 사용하여 XML로 제출된 PDF forms 처리
 
-다음 코드 예제에서는 XML로 전송된 양식을 처리합니다. 메서드에 전달된 콘텐츠 형식 값은 `processFormSubmission` 입니다 `CONTENT_TYPE=text/xml`. 이름이, `mortgageAmount`및 `lastName`인 필드에 해당하는 값이 `firstName` 표시됩니다. 이 빠른 시작 `getNodeText` 에 이름이 지정된 사용자 정의 메서드가 사용됩니다. 노드 이름을 지정하는 `org.w3c.dom.Document` 인스턴스 및 문자열 값을 수락합니다. 이 메서드는 노드의 값을 나타내는 문자열 값을 반환합니다. (제출된 [양식 처리를 참조하십시오](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
+다음 코드 예제에서는 XML로 전송된 양식을 처리합니다. `processFormSubmission` 메서드에 전달된 콘텐츠 형식 값은 `CONTENT_TYPE=text/xml`입니다. `mortgageAmount`, `lastName` 및 `firstName`이라는 필드에 해당하는 값이 표시됩니다. 이 빠른 시작 시 `getNodeText`이라는 사용자 정의 메서드가 사용됩니다. 노드 이름을 지정하는 문자열 값과 `org.w3c.dom.Document` 인스턴스를 수락합니다. 이 메서드는 노드의 값을 나타내는 문자열 값을 반환합니다. ([제출된 Forms 처리](/help/forms/developing/rendering-forms.md#handling-submitted-forms)를 참조하십시오.)
 
 ```java
  /*
@@ -1380,11 +1380,11 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
 
 >[!NOTE]
 >
->동일한 애플리케이션에서 `com.adobe.idp.Document` 객체와 객체 `org.w3c.dom.Document` 를 사용할 경우 완벽한 자격을 얻을 수 있습니다 `org.w3c.dom.Document`.
+>동일한 응용 프로그램에서 `com.adobe.idp.Document` 개체와 `org.w3c.dom.Document`을(를) 사용하는 경우 `org.w3c.dom.Document`의 자격을 모두 만족하십시오.
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF로 제출된 PDF forms 처리 {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}를 사용하여 PDF로 제출된 PDF forms 처리
 
-다음 코드 예제에서는 PDF 데이터로 제출된 양식을 처리합니다. 메서드에 전달된 콘텐츠 형식 값은 `processFormSubmission` 입니다 `CONTENT_TYPE=application/pdf`. 제출된 양식이 *tempPDF.pdf라는 PDF 파일로 저장됩니다*. 또한 양식이 PDF로 제출되므로 첨부 파일을 검색할 수 있습니다. 모든 파일 첨부 파일은 JPEG 파일로 저장됩니다. (제출된 [양식 처리를 참조하십시오](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
+다음 코드 예제에서는 PDF 데이터로 제출된 양식을 처리합니다. `processFormSubmission` 메서드에 전달된 콘텐츠 형식 값은 `CONTENT_TYPE=application/pdf`입니다. 제출된 양식이 *tempPDF.pdf*&#x200B;라는 PDF 파일로 저장됩니다. 또한 양식이 PDF로 제출되므로 첨부 파일을 검색할 수 있습니다. 모든 파일 첨부 파일은 JPEG 파일로 저장됩니다. ([제출된 Forms 처리](/help/forms/developing/rendering-forms.md#handling-submitted-forms)를 참조하십시오.)
 
 ```java
  /*
@@ -1532,9 +1532,9 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 XML로 제출된 HTML 양식 처리 {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}를 사용하여 XML로 제출된 HTML 양식 처리
 
-다음 코드 예제에서는 XML 데이터로 전송된 HTML 양식을 처리합니다. 메서드에 전달된 컨텐츠 유형 값 `processFormSubmission` 은 `CONTENT_TYPE=application/x-www-form-urlencoded`입니다. `mortgageAmount`, 및 라는 필드에 해당하는 값 `lastName``firstName` 이 표시됩니다. 이 빠른 시작 `getNodeText` 에 이름이 지정된 사용자 정의 메서드가 사용됩니다. 노드 이름을 지정하는 `org.w3c.dom.Document` 인스턴스 및 문자열 값을 수락합니다. 이 메서드는 노드의 값을 나타내는 문자열 값을 반환합니다. (제출된 [양식 처리를 참조하십시오](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
+다음 코드 예제에서는 XML 데이터로 전송된 HTML 양식을 처리합니다. `processFormSubmission` 메서드에 전달된 컨텐츠 유형 값은 `CONTENT_TYPE=application/x-www-form-urlencoded`입니다. `mortgageAmount`, `lastName` 및 `firstName`이라는 필드에 해당하는 값이 표시됩니다. 이 빠른 시작 시 `getNodeText`이라는 사용자 정의 메서드가 사용됩니다. 노드 이름을 지정하는 문자열 값과 `org.w3c.dom.Document` 인스턴스를 수락합니다. 이 메서드는 노드의 값을 나타내는 문자열 값을 반환합니다. ([제출된 Forms 처리](/help/forms/developing/rendering-forms.md#handling-submitted-forms)를 참조하십시오.)
 
 ```java
  /*
@@ -1692,9 +1692,9 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 제출된 XML 데이터를 사용하여 PDF 문서 작성 {#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api}를 사용하여 제출된 XML 데이터를 사용하여 PDF 문서 만들기
 
-다음 Java 코드 예제에서는 XML로 전송된 양식 데이터를 처리합니다. 양식 데이터는 양식 API를 사용하여 양식 제출 시 검색되고 출력 서비스로 전송됩니다. 양식 데이터와 양식 디자인을 사용하여 비대화형 PDF 문서를 만듭니다. 비대화형 PDF 문서는 이름이 명명된 콘텐츠 서비스(더 이상 사용되지 않음) 노드에 저장됩니다 `/Company Home/Test Directory`. 양식 이름이 동적으로 만들어집니다. 즉, 사용자의 이름과 성은 PDF 파일의 이름을 지정하는 데 사용됩니다. 새 컨텐츠의 리소스 식별자는 클라이언트 웹 브라우저에 작성됩니다. ( [제출된 XML 데이터를 사용하여 PDF 문서 만들기를 참조하십시오](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data).)
+다음 Java 코드 예제에서는 XML로 전송된 양식 데이터를 처리합니다. 양식 데이터는 Forms API를 사용하여 양식 제출 시 검색되고 출력 서비스로 전송됩니다. 양식 데이터와 양식 디자인을 사용하여 비대화형 PDF 문서를 만듭니다. 비대화형 PDF 문서는 `/Company Home/Test Directory`이라는 컨텐츠 서비스 노드에 저장됩니다. 양식 이름이 동적으로 만들어집니다. 즉, 사용자의 이름과 성은 PDF 파일의 이름을 지정하는 데 사용됩니다. 새 컨텐츠의 리소스 식별자는 클라이언트 웹 브라우저에 작성됩니다. ([제출된 XML 데이터를 사용하여 PDF 문서 만들기](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data)를 참조하십시오.)
 
 ```java
  /*
@@ -1964,15 +1964,15 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서블릿
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 양식에 플로우 가능한 레이아웃 미리 채우기 {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}를 사용하여 Forms을 플로우 가능한 레이아웃으로 미리 채우기
 
 다음 코드 예제에서는 양식을 동적 데이터 소스로 미리 채웁니다. 즉, 데이터 소스는 런타임 시 생성되며 XML 파일에 포함되어 있지 않거나 디자인 시간 동안 만들어지지 않습니다. 이 코드 예에는 세 가지 사용자 정의 메서드가 포함되어 있습니다.
 
-* `createDataSource`: 양식을 채울 때 사용되는 데이터 소스를 나타내는 `org.w3c.dom.Document` 개체를 만듭니다. 이 사용자 정의 메서드는 `org.w3c.dom.Document` 개체를 반환합니다.
-* `convertDataSource`: 개체를 `org.w3c.dom.Document` 개체로 `com.adobe.idp.Document` 변환합니다. 이 메서드는 `org.w3c.dom.Document` 개체를 입력 매개 변수로 받아들이고 개체를 `com.adobe.idp.Document` 반환합니다.
-* `renderPOForm`: Forms 서비스 Java API를 사용하여 동적 구매 발주 양식을 렌더링합니다. 이 `com.adobe.idp.Document` 메서드에서 반환된 개체는 `convertDataSource` 양식을 채울 때 사용됩니다.
+* `createDataSource`:양식을 채울 때 사용되는 데이터 소스를 나타내는  `org.w3c.dom.Document` 개체를 만듭니다. 이 사용자 정의 메서드는 `org.w3c.dom.Document` 개체를 반환합니다.
+* `convertDataSource`:개체를  `org.w3c.dom.Document` 개체로  `com.adobe.idp.Document` 변환합니다. 이 메서드는 `org.w3c.dom.Document` 개체를 입력 매개 변수로 받아들이고 `com.adobe.idp.Document` 개체를 반환합니다.
+* `renderPOForm`:Forms 서비스 Java API를 사용하여 동적 구매 발주 양식을 렌더링합니다. `convertDataSource` 메서드에서 반환된 `com.adobe.idp.Document` 개체는 양식을 채울 때 사용됩니다.
 
-   이러한 모든 메서드는 Java 서블릿의 메서드 내에서 `doPost` 호출됩니다. ( [순서별 레이아웃으로 양식 미리 채우기](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts)참조)
+   이러한 모든 메서드는 Java 서블릿의 `doPost` 메서드 내에서 호출됩니다. ([Forms을 플로우 가능한 레이아웃으로 미리 채우기](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts)를 참조하십시오.)
 
 ```java
 /*
@@ -2249,9 +2249,9 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
 }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 계산 스크립트가 포함된 양식 처리 {#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api}를 사용하여 계산 스크립트가 포함된 양식 처리
 
-다음 코드 예제에서는 계산 스크립트가 포함된 양식을 처리하고 결과를 클라이언트 웹 브라우저에 다시 기록합니다. 양식 데이터 [계산을 참조하십시오](/help/forms/developing/rendering-forms.md#calculating-form-data).
+다음 코드 예제에서는 계산 스크립트가 포함된 양식을 처리하고 결과를 클라이언트 웹 브라우저에 다시 기록합니다. ([양식 데이터 계산](/help/forms/developing/rendering-forms.md#calculating-form-data)을 참조하십시오.)
 
 ```java
  /*
@@ -2367,9 +2367,9 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 성능 최적화 {#quick-start-soap-mode-optimizing-performance-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-optimizing-performance-using-the-java-api}를 사용하여 성능 최적화
 
-다음 코드 예제에서는 캐싱, 독립형 및 선형화된 옵션을 설정하여 성능을 최적화합니다. 선형화된 파일은 웹상에서 전달하도록 최적화되어 있습니다. (양식 [서비스의 성능 최적화를 참조하십시오](/help/forms/developing/rendering-forms.md#optimizing-the-performance-of-the-forms-service).)
+다음 코드 예제에서는 캐싱, 독립형 및 선형화된 옵션을 설정하여 성능을 최적화합니다. 선형화된 파일은 웹상에서 전달하도록 최적화되어 있습니다. ([Forms 서비스의 성능 최적화](/help/forms/developing/rendering-forms.md#optimizing-the-performance-of-the-forms-service)를 참조하십시오.)
 
 ```java
  /*
@@ -2495,9 +2495,9 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용한 값별 렌더링 {#quick-start-soap-mode-rendering-by-value-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-by-value-using-the-java-api}를 사용하여 값별 렌더링
 
-다음 Java 빠른 시작을 사용하면 *Loan.xdp라는 양식 디자인을 기반으로 하는 대화형 PDF 양식을 값별로 렌더링할* 수 있습니다. 양식 디자인이 inputXDP라는 `com.adobe.idp.Document` 개체를 채우는 데 *사용됩니다*. 자세한 내용은 [값별 양식 렌더링을 참조하십시오](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).
+다음 Java 빠른 시작은 값별로 *Loan.xdp*&#x200B;라는 양식 디자인을 기반으로 하는 대화형 PDF 양식을 렌더링합니다. 양식 디자인은 *inputXDP*&#x200B;라는 이름의 `com.adobe.idp.Document` 개체를 채우는 데 사용됩니다. (값[으로 Forms 렌더링 참조)](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
 
 ```java
  /*
@@ -2622,9 +2622,9 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
  }
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 Forms 서비스에 문서 전달 {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api}를 사용하여 Forms 서비스에 문서 전달
 
-다음 Java 빠른 시작은 콘텐츠 서비스에서 Loan.xdp 파일을 검색합니다(더 이상 사용되지 않음). 이 XDP 파일은 공간에 있습니다 `/Company Home/Form Designs`. XDP 파일은 `com.adobe.idp.Document` 인스턴스에서 반환됩니다. 이 `com.adobe.idp.Document` 인스턴스가 양식 서비스로 전달됩니다. 대화형 양식은 클라이언트 웹 브라우저에 작성됩니다. (Forms [Service에 문서 전달을 참조하십시오](/help/forms/developing/passing-documents-forms-service.md).)
+다음 Java 빠른 시작은 콘텐츠 서비스에서 Loan.xdp 파일을 검색합니다(더 이상 사용되지 않음). 이 XDP 파일은 `/Company Home/Form Designs` 공간에 있습니다. XDP 파일이 `com.adobe.idp.Document` 인스턴스에서 반환됩니다. `com.adobe.idp.Document` 인스턴스가 Forms 서비스로 전달됩니다. 대화형 양식은 클라이언트 웹 브라우저에 작성됩니다. ([Forms 서비스에 문서 전달](/help/forms/developing/passing-documents-forms-service.md)을 참조하십시오.)
 
 ```java
  /*
