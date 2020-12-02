@@ -35,9 +35,9 @@ ht-degree: 9%
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
 * AEM 사이트에 포럼 기능 추가
-* 구성 요소의 구성 `Forum` 설정.
+* `Forum` 구성 요소에 대한 구성 설정.
 
-### Adding a Forum to a Page {#adding-a-forum-to-a-page}
+### 페이지에 포럼 추가 {#adding-a-forum-to-a-page}
 
 작성 모드에서 페이지에 `Forum` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여
 
@@ -45,13 +45,13 @@ ht-degree: 9%
 
 포럼이 표시되어야 하는 페이지에 드래그합니다.
 
-필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](/help/communities/basics.md).
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 방문하십시오.
 
-필요한 [클라이언트측 라이브러리가](/help/communities/essentials-forum.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Forum` 방식입니다.
+[필수 클라이언트측 라이브러리](/help/communities/essentials-forum.md#essentials-for-client-side)가 포함될 때 다음과 같이 `Forum` 구성 요소가 표시됩니다.
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-### 포럼 구성 {#configuring-a-forum}
+### 포럼 {#configuring-a-forum} 구성
 
 액세스할 배치된 `Forum` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
@@ -61,7 +61,7 @@ ht-degree: 9%
 
 #### 설정 탭 {#settings-tab}
 
-설정 **탭** 아래에서 토픽과 답글에 대한 설정을 지정합니다.
+**설정** 탭에서 항목 및 답글에 대한 설정을 지정합니다.
 
 * **첨부 파일 썸네일 허용**
 
@@ -94,7 +94,7 @@ ht-degree: 9%
 
 * **태깅 허용**
 
-   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다(태그 **필드** 탭 참조). 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다(**태그 필드** 탭 참조). 기본값은 선택 취소입니다.
 
 * **파일 업로드 허용**
 
@@ -102,7 +102,7 @@ ht-degree: 9%
 
 * **다음 허용**
 
-   이 확인란을 선택하면 구성원에게 새 게시물에 대한 [알림을 받을](/help/communities/notifications.md) 수 있는 포럼 게시물에 대해 다음 기능을 포함합니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 멤버가 새 게시물의 [알림](/help/communities/notifications.md)이 될 수 있는 포럼 게시물에 다음 기능을 포함시키십시오. 기본값은 선택 취소입니다.
 
 * **고정 허용**
 
@@ -110,21 +110,22 @@ ht-degree: 9%
 
 * **특별 포함된 컨텐츠 허용**
 
-   이 확인란을 선택하면 해당 아이디어를 [주요 컨텐츠로 식별할 수 있습니다](/help/communities/featured.md). 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 아이디어를 [주요 컨텐츠](/help/communities/featured.md)로 식별할 수 있습니다. 기본값은 선택 취소입니다.
 
 * **이메일 구독 허용**
 
-   이 확인란을 선택하면 구성원이 이메일([구독](/help/communities/subscriptions.md))로 새 게시물에 대한 알림을 받을 수 있습니다. 확인 및 `Allow Following` 이메일 구성 [](/help/communities/email.md)필요 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 이메일([구독](/help/communities/subscriptions.md))으로 새 게시물에 대한 알림을 받을 수 있습니다. `Allow Following`을(를) 확인해야 하고 [전자 메일을 구성하여](/help/communities/email.md)합니다. 기본값은 선택 취소입니다.
 
 * **최대 파일 크기**
 
-   선택한 경우에만 `Allow File Uploads` 관련됨 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
+   `Allow File Uploads`이(가) 선택된 경우에만 해당됩니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
 
 * **허용되는 파일 유형**
 
-   선택한 경우에만 `Allow File Uploads` 관련됨 &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   `Allow File Uploads`이(가) 선택된 경우에만 해당됩니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
-* **최대 첨부 이미지 파일 크기**&#x200B;는 파일 업로드 허용이 선택된 경우에만 해당됩니다. 업로드된 이미지 파일의 최대 바이트 수입니다. 기본값은 2097152(2Mb)입니다.
+* **최대 첨부 이미지 파일**
+크기파일 업로드 허용이 선택된 경우에만 관련이 있습니다. 업로드된 이미지 파일의 최대 바이트 수입니다. 기본값은 2097152(2Mb)입니다.
 
 * **스레드된 회신 허용**
 
@@ -144,7 +145,7 @@ ht-degree: 9%
 
 * **배지 표시**
 
-   이 확인란을 선택하면 획득 [배지와 지정된](/help/communities/implementing-scoring.md) 멤버의 블로그 항목이 표시됩니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 획득 후 구성원의 블로그 항목이 포함된 [badges](/help/communities/implementing-scoring.md)를 지정합니다. 기본값은 선택 취소입니다.
 
 * **권한이 있는 구성원 허용**
 
@@ -172,11 +173,11 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->토픽에 대한 주석 `AllowThreaded Replies` 을 확인하고 `Allow users to Delete Comments and Topics` 활성화해야 할 수도 있습니다.
+>주제에 대한 의견을 활성화하려면 `AllowThreaded Replies` 및 `Allow users to Delete Comments and Topics` 모두를 확인해야 합니다.
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
-사용자 중재 **탭** 아래에서 게시된 토픽과 답글(사용자가 생성한 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+**사용자 중재** 탭에서 게시된 항목 및 답글(사용자가 생성한 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
 
 * **게시물 거부**
 
@@ -212,11 +213,11 @@ ht-degree: 9%
 
 #### 태그 필드 탭 {#tag-field-tab}
 
-[ **태그] 필드** 탭 아래에서 **설정** 탭 아래에서 허용되는 경우 적용할 수 있는 태그는 선택한 네임스페이스에 따라제한됩니다.
+**태그 필드** 탭 아래에서 **설정** 탭에서 허용되는 경우 적용할 수 있는 태그는 선택한 네임스페이스에 따라 제한됩니다.
 
 * **허용되는 네임스페이스**
 
-   설정 탭 아래 `Allow Tagging` 에서 **선택되어 있는 경우** 관련 적용할 수 있는 태그는 확인된 네임스페이스 범주 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값은 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
+   **설정** 탭 아래에서 `Allow Tagging`이(가) 선택된 경우 관련 적용할 수 있는 태그는 확인된 네임스페이스 범주 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값은 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
 
 * **제안 한도**
 
@@ -224,7 +225,7 @@ ht-degree: 9%
 
 #### 번역 탭 {#translation-tab}
 
-번역 **탭** 아래에서 커뮤니티 사이트에 대한 번역이 활성화되면 전체 토픽이나 선택한 게시물을 번역하도록 번역을 설정할 수 있습니다.
+**번역** 탭에서 커뮤니티 사이트에 대한 번역이 활성화되면 전체 토픽이나 선택한 게시물을 번역하도록 번역을 설정할 수 있습니다.
 
 * **모두 번역**
 
@@ -232,11 +233,11 @@ ht-degree: 9%
 
 #### 정렬 설정 탭 {#sort-settings-tab}
 
-정렬 설정 **탭** 아래에서, 표시할 때 게시된 댓글이 정렬되는 방식을 지정합니다.
+**정렬 설정** 탭에서 게시된 댓글이 표시될 때 정렬되는 방법을 지정합니다.
 
 * **정렬 기준**
 
-   허용되는 모든 정렬 선택 사항 확인: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 기본값은 `Newest, Oldest, Last Updated`입니다.
+   허용되는 모든 정렬 선택 사항 확인:`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 기본값은 `Newest, Oldest, Last Updated`입니다.
 
 * **기본값으로 설정**
 
@@ -244,16 +245,16 @@ ht-degree: 9%
 
 * **분석 정렬에 대한 시간 옵션 선택**
 
-   풀다운하여 다음 옵션 중 하나를 선택합니다. `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
+   풀다운하여 다음 옵션 중 하나를 선택합니다.`All, Last 24 Hours, Last 7 Days, Last 30 Days`.
 
    기본값은 `All`입니다.
 
 ### 추가 정보 {#additional-information}
 
-개발자를 위한 [포럼 필수](/help/communities/essentials-forum.md) 사항 페이지에서 자세한 내용을 확인할 수 있습니다.
+개발자를 위한 [포럼 필수 패키지](/help/communities/essentials-forum.md) 페이지에서 자세한 내용을 확인할 수 있습니다.
 
-게시된 항목 및 댓글에 대한 중재는 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+게시된 항목 및 댓글에 대한 중재를 보려면 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
 
-게시된 항목 및 댓글에 태그를 지정하려면 사용자 생성 컨텐츠 [태그 지정을 참조하십시오](/help/communities/tag-ugc.md).
+게시된 항목 및 댓글에 태그를 지정하려면 [사용자 생성 콘텐츠 태그 지정](/help/communities/tag-ugc.md)을 참조하십시오.
 
-게시된 항목 및 댓글에 대한 번역에 대해서는 사용자 생성 [컨텐츠 번역을 참조하십시오](/help/communities/translate-ugc.md).
+게시된 항목 및 댓글에 대한 번역은 [사용자 생성 콘텐츠 번역](/help/communities/translate-ugc.md)을 참조하십시오.
