@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +41,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 |  | `Esc` | 동일한 수준의 페이지 목록 위로 이동합니다. |
 | 콘솔 | `?` | 키보드 단축키 도움말 |
 |  | `/` | [검색](/help/sites-authoring/search.md) 호출 |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-authoring/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | 보려는 [레일 선택기 옵션](/help/sites-authoring/basic-handling.md#rail-selector)을 전환합니다. |
 |  | ` | 레일 숨기기 |
 |  | `e` | 편집 |
 |  | `p` | 속성 |
