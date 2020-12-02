@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# API를 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-apis}
+# API {#invoking-aem-forms-using-apis}를 사용하여 AEM Forms 호출
 
 Adobe Experience Manager Forms은 공유 인프라에서 작동하는 서비스로 구성된 J2EE 기반 기업 소프트웨어입니다. 서비스 작업은 일반적으로 문서를 사용하거나 생성합니다. AEM Forms을 사용하면 양식 워크플로우와 전자 양식, 문서 보안 및 문서 생성 기능을 통합적이고 일관된 서비스 세트에 통합할 수 있습니다. 이러한 서비스는 방화벽 내외부에서 액세스할 수 있습니다.
 
