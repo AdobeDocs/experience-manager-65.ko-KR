@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 구성 요소 사이드로딩 {#component-sideloading}
+# 구성 요소 사이드로드 {#component-sideloading}
 
 ## 개요 {#overview}
 
@@ -34,7 +34,7 @@ SCF 구성 요소를 동적으로 추가하는 단계는 다음과 같습니다.
 
 1. [DOM에 구성 요소 추가](#dynamically-add-component-to-dom)
 
-1. [다음 두 가지 방법 중 하나를 사용하여 구성 요소를](#sideload-by-invoking-scf) 사이드 로드합니다.
+1. [다음 두 가지 방법 중 ](#sideload-by-invoking-scf) 하나를 사용하여 구성 요소를 사이드 로드합니다.
 
 * [동적 포함](#dynamic-inclusion)
    * 동적으로 추가된 모든 구성 요소 부스트링
@@ -43,9 +43,9 @@ SCF 구성 요소를 동적으로 추가하는 단계는 다음과 같습니다.
 
 >[!NOTE]
 >
->기존 리소스 [의 사이드로드는 지원되지](scf.md#add-or-include-a-communities-component) 않습니다.
+>기존 리소스[가 아닌 리소스의 사이드로드 기능은 지원되지 않습니다.](scf.md#add-or-include-a-communities-component)
 
-## DOM에 구성 요소 동적으로 추가 {#dynamically-add-component-to-dom}
+## DOM {#dynamically-add-component-to-dom}에 구성 요소 동적으로 추가
 
 구성 요소가 동적으로 포함되어 있는지 또는 동적으로 로드되어 있는지 여부는 먼저 DOM에 추가해야 합니다.
 
@@ -72,7 +72,7 @@ SCF 구성 요소를 추가할 때 가장 많이 사용하는 태그는 DIV 태�
 </div>
 ```
 
-## SCF를 호출하여 사이드로드 {#sideload-by-invoking-scf}
+## SCF {#sideload-by-invoking-scf}을(를) 호출하여 사이드로드
 
 ### 동적 포함 {#dynamic-inclusion}
 
@@ -90,4 +90,4 @@ DOM에 있는 모든 SCF 구성 요소를 부트스트래핑하는 대신 이 Ja
 
 `SCF.addComponent(document.getElementById(*someId*));`
 
-위치 `someId` 는 `data-component-id` 속성의 값입니다.
+여기서 `someId`은 `data-component-id` 속성의 값입니다.
