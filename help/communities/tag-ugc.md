@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# 사용자 생성 컨텐츠 태그 지정 {#tagging-user-generated-content}
+# 사용자 생성 콘텐츠 태깅 {#tagging-user-generated-content}
 
 ## 개요 {#overview}
 
@@ -40,11 +40,11 @@ ht-degree: 3%
 
 ## 태그 관리 {#administering-tags}
 
-태그 [네임스페이스](../../help/sites-administering/tags.md#tagging-console) 및 택소노미를 만들고 관리하기 위한 태그 관리를 참조하십시오.
+태그 네임스페이스 및 택소노미를 만들고 관리하려면 [태그 관리](../../help/sites-administering/tags.md#tagging-console)를 참조하십시오.
 
-개발자 정보는 [Tag](tag.md) Essentials를 참조하십시오.
+개발자 정보는 [Tag Essentials](tag.md)를 참조하십시오.
 
-적용된 태그를 [사용하여 게시된 UGC를 쉽게 검색할 수 있도록 페이지에 소셜 태그](tagcloud.md) 클라우드 구성 요소를 추가하려면 소셜 태그 클라우드 사용을 참조하십시오.
+페이지에 소셜 태그 클라우드 구성 요소를 추가하여 적용된 태그를 사용하여 게시된 UGC를 쉽게 검색할 수 있도록 하려면 [소셜 태그 클라우드 사용](tagcloud.md)을 참조하십시오.
 
 ### 태그 권한 {#tag-permissions}
 
@@ -52,9 +52,9 @@ ht-degree: 3%
 
 태그가 게시 환경의 UGC에 적용되므로 커뮤니티 구성원이 적용할 태그를 선택할 수 있도록 읽기 권한을 활성화해야 합니다.
 
-태그 [권한 설정을 참조하십시오](../../help/sites-administering/tags.md#setting-tag-permissions).
+[태그 권한 설정](../../help/sites-administering/tags.md#setting-tag-permissions)을 참조하십시오.
 
-다음은 관리자가 그룹에 대한 읽기 권한을 적용할 때 CRXDE에 표시되는 방식 `/etc/tag/discussions` 입니다 `Community Engage Members`.
+다음은 관리자가 그룹 `Community Engage Members`에 대한 읽기 권한을 `/etc/tag/discussions`에 적용할 때 CRXDE에 표시되는 방식입니다.
 
 ![tag-permissions](assets/tag-permissions.png)
 
