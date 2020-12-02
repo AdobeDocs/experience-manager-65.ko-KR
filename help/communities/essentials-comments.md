@@ -34,11 +34,11 @@ ht-degree: 3%
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
-   <td>예 - <i>디자인 </i>모드에서 속성을 편집할 수 있습니다.</td>
+   <td>예 - 속성은 <i>design </i>모드에서 편집할 수 있습니다.</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs를</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.vocting</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.voting</td>
   </tr>
   <tr>
    <td> <strong>템플릿</strong></td>
@@ -50,7 +50,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td> 주석 <a href="comments.md">사용을 참조하십시오.</a></td>
+   <td> <a href="comments.md">주석 사용</a>을 참조하십시오.</td>
   </tr>
  </tbody>
 </table>
@@ -86,19 +86,19 @@ ht-degree: 3%
 
 * [서버측 사용자 정의](server-customize.md)
 
-### 게시된 주석 액세스(UGC) {#accessing-posted-comments-ugc}
+### 게시된 댓글 액세스(UGC) {#accessing-posted-comments-ugc}
 
 중재의 표준 방법 중 하나를 사용하여 UGC를 중재해야 합니다.
-사용자 [생성 컨텐츠 중재를 참조하십시오](moderate-ugc.md).
+[사용자 생성 콘텐츠 중재](moderate-ugc.md)를 참조하십시오.
 
-AEM 6.1 Communities의 경우, UGC용 [공용 스토어](working-with-srp.md) 사용에는 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 상관없이 UGC에 대한 프로그래머틱 액세스가 포함됩니다.
+AEM 6.1 커뮤니티의 경우, UGC용 [일반 스토어](working-with-srp.md)를 사용하면 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 상관없이 프로그래머틱 방식으로 UGC에 액세스할 수 있습니다.
 
-**저장소의 UGC의 위치와 형식은 경고**&#x200B;없이 변경될 수 있습니다.
+**저장소의 UGC의 위치와 형식은 경고** 없이 변경될 수 있습니다.
 
 다음을 참조하십시오.
 
-* [스토리지 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
+* [스토리지 리소스 공급자 개요](srp.md)  - 소개 및 저장소 사용 개요
 * [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 방법 및 예
-* [SRP를 사용하여 UGC](accessing-ugc-with-srp.md) 액세스 - 코딩 가이드라인.
-* [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑합니다.
+* [SRP](accessing-ugc-with-srp.md)  - 코딩 가이드라인을 사용하여 UGC 액세스
+* [SocialUtils 리팩토링](socialutils.md)  - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑합니다.
 
