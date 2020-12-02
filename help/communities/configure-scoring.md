@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# 점수 및 배지 필수 {#scoring-and-badges-essentials}
+# 점수 지정 및 배지 필수 {#scoring-and-badges-essentials}
 
 AEM Communities 채점 및 배지 기능을 사용하면 커뮤니티 구성원을 식별하고 보상할 수 있습니다.
 
@@ -29,19 +29,19 @@ AEM Communities 채점 및 배지 기능을 사용하면 커뮤니티 구성원�
 
 이 페이지에는 추가 기술 세부 사항이 포함되어 있습니다.
 
-* 배지 [를 이미지 또는 텍스트로](#displaying-badges) 표시하는 방법
-* 광범위한 [디버그 로깅을 설정하는 방법](#debug-log-for-scoring-and-badging)
-* 점수 지정 및 배지 [와](#ugc-for-scoring-and-badging) 관련된 UGC에 액세스하는 방법
+* [배지](#displaying-badges)를 이미지 또는 텍스트로 표시하는 방법
+* 광범위한 [디버그 로깅(a1/>)을 설정하는 방법](#debug-log-for-scoring-and-badging)
+* 점수 지정 및 배지 지정과 관련된 UGC[에 액세스하는 방법](#ugc-for-scoring-and-badging)
 
 >[!CAUTION]
 >
 >CRXDE Lite에 표시되는 구현 구조는 변경될 수 있습니다.
 
-## 배지 표시 {#displaying-badges}
+## 배지 표시 중 {#displaying-badges}
 
 HBS 템플릿의 클라이언트 쪽에서 배지가 텍스트 또는 이미지로 표시되는지 여부.
 
-예를 들어 다음 `this.isAssigned` 에서 검색 `/libs/social/forum/components/hbs/topic/list-item.hbs`:
+예를 들어 `/libs/social/forum/components/hbs/topic/list-item.hbs`에서 `this.isAssigned`을 검색합니다.
 
 ```
 {{#each author.badges}}
@@ -73,28 +73,28 @@ true인 경우 isAssigned는 역할에 대해 배지가 지정되었음을 나�
 
 false인 경우, [할당]은 획득 점수에 대해 배지가 부여되었음을 나타내고 배지는 이미지로 표시되어야 합니다.
 
-이 비헤이비어에 대한 모든 변경 사항은 사용자 지정된 스크립트(재정의 또는 오버레이)로 이루어져야 합니다. 클라이언트측 [사용자 지정을 참조하십시오](/help/communities/client-customize.md).
+이 비헤이비어에 대한 모든 변경 사항은 사용자 지정된 스크립트(재정의 또는 오버레이)로 이루어져야 합니다. [클라이언트측 사용자 지정](/help/communities/client-customize.md)을 참조하십시오.
 
-## 점수 지정 및 배지 로그 디버그 {#debug-log-for-scoring-and-badging}
+## 점수 지정 및 배지 오류 로그 {#debug-log-for-scoring-and-badging}
 
 점수 지정 및 배지 디버깅에 도움이 되도록 사용자 지정 로그 파일을 설정할 수 있습니다. 이 기능에 문제가 발생하는 경우 이 로그 파일의 내용을 고객 지원에 제공할 수 있습니다.
 
-자세한 지침은 사용자 [정의 로그 파일 만들기를 참조하십시오](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+자세한 지침은 [사용자 지정 로그 파일 만들기](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file)를 참조하십시오.
 
 슬링 로그 파일을 신속하게 설정하려면:
 
-1. 예를 들어 **Adobe Experience Manager 웹 콘솔 로그 지원**&#x200B;액세스
+1. **Adobe Experience Manager 웹 콘솔 로그 지원**&#x200B;에 액세스
 
    * https://localhost:4502/system/console/slinglog
 
-1. 새 로거 **추가 선택**
+1. **새 로거 추가** 선택
 
-   1. 로그 수준 `DEBUG` 에 대해 **선택**
+   1. **로그 수준**&#x200B;에 대해 `DEBUG`을 선택합니다.
 
-   1. 로그 파일 이름 **을**&#x200B;입력합니다.
+   1. **로그 파일**&#x200B;의 이름을 입력합니다.
 
       * logs/scoring-debug.log
-   1. Logger **** (클래스) 항목 2개 입력( `+` 아이콘 사용)
+   1. **로거**(클래스) 항목 두 개 입력(`+` 아이콘 사용)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
@@ -108,29 +108,29 @@ false인 경우, [할당]은 획득 점수에 대해 배지가 부여되었음�
 
 * 웹 콘솔에서
 
-   * 상태 **메뉴** 아래
-   * 로그 **파일 선택**
-   * 로그 파일 이름(예: `scoring-debug`
+   * **상태** 메뉴 아래
+   * **로그 파일**&#x200B;을 선택합니다.
+   * 로그 파일 이름(예: `scoring-debug`) 검색
 
 * 서버의 로컬 디스크에
 
-   * 로그 파일은 &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log에 있습니다.
+   * 로그 파일은 &lt;*server-install-dir*/crx-quickstart/logs/&lt;*log-file-name*.log에 있습니다.
 
    * 예, `.../crx-quickstart/logs/scoring-debug.log`
 
 ![점수 매기기](assets/scoring-log.png)
 
-## 점수 지정 및 배지 지정 {#ugc-for-scoring-and-badging}
+## 점수 및 배지 {#ugc-for-scoring-and-badging}에 대한 UGC
 
-선택한 SRP가 JSRP 또는 MSRP일 때 점수 및 배지 지정과 관련된 UGC를 볼 수 있지만 ASRP는 볼 수 없습니다. (이러한 용어에 익숙하지 않은 경우 [커뮤니티 컨텐츠 저장소](/help/communities/working-with-srp.md) 및 [저장소 리소스 공급자 개요를 참조하십시오](/help/communities/srp.md).)
+선택한 SRP가 JSRP 또는 MSRP일 때 점수 및 배지 지정과 관련된 UGC를 볼 수 있지만 ASRP는 볼 수 없습니다. (이러한 용어에 익숙하지 않은 경우 [커뮤니티 컨텐츠 저장소](/help/communities/working-with-srp.md) 및 [저장소 리소스 공급자 개요](/help/communities/srp.md)를 참조하십시오.)
 
-점수 및 배지 데이터에 액세스하기 위한 설명은 [CRXDE Lite을 사용하여 UGC에 쉽게 액세스할 수 있기 때문에 JSRP를 사용합니다](/help/sites-developing/developing-with-crxde-lite.md).
+점수 및 배지 데이터에 액세스하기 위한 설명은 JSRP를 사용합니다. UGC는 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)을 사용하여 쉽게 액세스할 수 있습니다.
 
 **작성자의 JSRP**:작성 환경에서 테스트하면 작성 환경에서만 표시되는 UGC가 만들어집니다.
 
-**게시**&#x200B;시 JSRP:마찬가지로 게시 환경에서 테스트하는 경우 게시 인스턴스에 대한 관리 권한이 있는 CRXDE Lite에 액세스해야 합니다. 게시 인스턴스가 [프로덕션 모드](/help/sites-administering/production-ready.md) (nosamplecontent runmode)에서 실행 중인 경우 CRXDE Lite을 [활성화해야 합니다](/help/sites-administering/enabling-crxde-lite.md).
+**게시** 시 JSRP:마찬가지로 게시 환경에서 테스트하는 경우 게시 인스턴스에 대한 관리 권한이 있는 CRXDE Lite에 액세스해야 합니다. 게시 인스턴스가 [프로덕션 모드](/help/sites-administering/production-ready.md)(nosamplecontent runmode)에서 실행 중이면 [CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md)을 활성화해야 합니다.
 
-JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr/`.
+JSRP에서 UGC의 기본 위치는 `/content/usergenerated/asi/jcr/`입니다.
 
 ### 점수 지정 및 배지 API {#scoring-and-badging-apis}
 
@@ -139,17 +139,17 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 * [com.adobe.cq.sosocial.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.sosocial.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-설치된 기능 팩에 대한 최신 Javadocs는 Adobe 저장소의 개발자가 사용할 수 있습니다. 커뮤니티에 대한 [Maven 사용을 참조하십시오.Javadocs](/help/communities/maven.md#javadocs).
+설치된 기능 팩에 대한 최신 Javadocs는 Adobe 저장소의 개발자가 사용할 수 있습니다. [커뮤니티에 대한 Maven 사용을 참조하십시오.Javadocs](/help/communities/maven.md#javadocs).
 
-**저장소의 UGC의 위치와 형식은 경고**&#x200B;없이 변경될 수 있습니다.
+**저장소의 UGC의 위치와 형식은 경고** 없이 변경될 수 있습니다.
 
-### 예제 설정 {#example-setup}
+### 설치 예 {#example-setup}
 
 저장소 데이터의 스크린샷은 두 개의 다른 AEM 사이트에서 포럼에 대한 점수 지정 및 배지 설정으로부터 나옵니다.
 
-1. 고유 ID가 *있는* AEM 사이트(마법사를 사용하여 만든 커뮤니티 사이트):
+1. 고유한 ID가 있는 AEM 사이트 *입니다(마법사를 사용하여 만든 커뮤니티 사이트).*
 
-   * 시작하기 자습서(참여) 사이트 사용( [시작하기 자습서)](/help/communities/getting-started.md)
+   * 시작 자습서(참여) 사이트 사용[](/help/communities/getting-started.md)
    * 포럼 페이지 노드 찾기
 
       `/content/sites/engage/en/forum/jcr:content`
@@ -178,9 +178,9 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
    * 사용자가 로그인하고 포럼 항목을 만들며 브론즈 배지를 수여합니다
 
 
-1. 고유 ID가 *없는* AEM 사이트:
+1. 고유 ID가 없는 AEM 사이트 *입니다.*
 
-   * 커뮤니티 구성 [요소 안내서 사용](/help/communities/components-guide.md)
+   * [커뮤니티 구성 요소 안내서 사용](/help/communities/components-guide.md)
    * 포럼 페이지 노드 찾기
 
       `/content/community-components/en/forum/jcr:content`
@@ -226,7 +226,7 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 >* 점수 규칙 이름은 전체적으로 고유해야 합니다.같은 이름으로 끝나서는 안 됩니다.
 >
 >  
-하지 *않을* 작업의 예:
+*이(가) 아닌*&#x200B;의 예:
 >
 >  /libs/settings/community/scoring/rules/site1/forums-scoring
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
@@ -236,29 +236,29 @@ JSRP에 대한 UGC의 기본 위치는 입니다 `/content/usergenerated/asi/jcr
 
 ### 액세스 점수 UGC {#access-scoring-ugc}
 
-API [를 사용하는 것이](#scoring-and-badging-apis) 좋습니다.
+[APIs](#scoring-and-badging-apis)를 사용하는 것이 좋습니다.
 
 이 예제에 JSRP를 사용하면 점수가 포함된 기본 폴더는 조사 목적으로
 
 * `/content/usergenerated/asi/jcr/scoring`
 
-의 하위 노드 `scoring` 는 점수 지정 규칙 이름입니다. 따라서 서버의 점수 지정 규칙 이름은 전역적으로 고유하도록 하는 것이 좋습니다.
+`scoring`의 하위 노드는 점수 지정 규칙 이름입니다. 따라서 서버의 점수 지정 규칙 이름은 전역적으로 고유하도록 하는 것이 좋습니다.
 
-Geometrixx 참여 사이트의 경우 사용자 및 점수는 점수 규칙 이름, 커뮤니티 사이트의 사이트 ID(), 고유 ID 및 사용자 ID로 구성된 경로에 있습니다. `engage-ba81p`
+Geometrixx 참여 사이트의 경우 사용자 및 점수는 점수 규칙 이름, 커뮤니티 사이트의 사이트 ID( `engage-ba81p`), 고유 ID 및 사용자 ID로 구성된 경로에 있습니다.
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-커뮤니티 구성 요소 안내서 사이트의 경우 사용자 및 점수는 점수 지정 규칙 이름, 기본 id(), 고유 id 및 사용자 id로 구성된 경로에 있습니다. `default-site`
+커뮤니티 구성 요소 안내서 사이트의 경우 사용자 및 점수는 점수 규칙 이름, 기본 ID( `default-site`), 고유 ID 및 사용자 ID로 구성된 경로에 있습니다.
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-점수는 직접 값만 포함하거나 atomicCounter를 간접적으로 참조할 수 `scoreValue_tl` 있는 속성에 저장됩니다.
+점수는 `scoreValue_tl` 속성에 저장됩니다. 이 속성에는 값이 직접 포함되거나 atomicCounter를 간접적으로 참조할 수 있습니다.
 
 ![access-scoring-ugc](assets/access-scoring-ugc.png)
 
-### 배지 UGC 액세스 {#access-badging-ugc}
+### 배지 UGC {#access-badging-ugc}에 액세스
 
-API [를 사용하는 것이](#scoring-and-badging-apis) 좋습니다.
+[APIs](#scoring-and-badging-apis)를 사용하는 것이 좋습니다.
 
 예를 들어, JSRP를 사용하면 할당되거나 수여된 배지에 대한 정보가 포함된 기본 폴더가 조사됩니다
 
@@ -268,11 +268,11 @@ API [를 사용하는 것이](#scoring-and-badging-apis) 좋습니다.
 
 * `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
-#### 수상 배지 {#awarded-badge}
+#### 수여된 배지 {#awarded-badge}
 
 ![수상-배지-ugc](assets/access-badging-ugc.png)
 
-#### 지정된 배지 {#assigned-badge}
+#### 할당된 배지 {#assigned-badge}
 
 ![assigned-badge](assets/assigned-badge.png)
 
@@ -280,6 +280,6 @@ API [를 사용하는 것이](#scoring-and-badging-apis) 좋습니다.
 
 포인트를 기준으로 정렬된 멤버 목록을 표시하려면 다음을 수행하십시오.
 
-* [커뮤니티 사이트 또는 그룹 템플릿에 포함하기 위한 리드 보드 함수](/help/communities/functions.md#leaderboard-function) .
-* [페이지 작성을 위한 Leaderboard 함수의 주요 구성 요소인](/help/communities/enabling-leaderboard.md)Leaderboard 구성 요소입니다.
+* [커뮤니티 ](/help/communities/functions.md#leaderboard-function) 사이트 또는 그룹 템플릿에 포함할 리드 보드 기능
+* [페이지 작성을 위한 Leaderboard 함수의 주요 구성 요소인](/help/communities/enabling-leaderboard.md) Leaderboard 구성 요소입니다.
 
