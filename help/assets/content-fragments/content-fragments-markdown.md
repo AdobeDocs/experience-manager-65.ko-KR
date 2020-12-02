@@ -1,6 +1,6 @@
 ---
 title: Markdown
-seo-title: Markdown
+seo-title: 마크다운
 description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
 seo-description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
 uuid: afcbf82f-3a75-4491-9172-706188db65bb
@@ -10,9 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 100%
 
@@ -99,7 +99,7 @@ ht-degree: 100%
 
 구문은
 
-* 느낌표(!)를 포함합니다.
+* 느낌표(!)를 포함합니다.;
 * 뒤에 이미지의 대체 특성 텍스트를 포함하는 대괄호 세트가 옵니다.
 * 뒤에 이미지의 URL 또는 경로를 포함하는 괄호 세트와, 큰따옴표나 작은따옴표로 묶인 선택적 제목 특성이 있습니다.
 
