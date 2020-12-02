@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# HSM을 사용하여 문서에 디지털 서명 또는 인증 {#use-hsm-to-digitally-sign-or-certify-documents}
+# HSM을 사용하여 문서 {#use-hsm-to-digitally-sign-or-certify-documents} 디지털 서명 또는 인증
 
 HSM(Hardware Security Module) 및 에셋은 디지털 키를 안전하게 관리, 처리 및 저장할 수 있도록 설계된 전용, 견고하고 위변조가 불가능한 컴퓨팅 디바이스입니다. 이러한 장치는 컴퓨터나 네트워크 서버에 직접 연결됩니다.
 
@@ -29,9 +29,9 @@ Adobe Experience Manager Forms은 HSM 또는 전자 코너에 저장된 자격 �
 1. AEM Web Console에서 HSM 또는 네트워크 디바이스에 대한 별칭을 생성합니다.
 1. DocAssurance 서비스 API를 사용하여 장치에 저장된 디지털 키로 문서에 서명하거나 인증을 수행합니다.
 
-## AEM Forms을 사용하여 HSM 또는 네트워크 장치를 구성하기 전에 {#configurehsmetoken}
+## AEM Forms {#configurehsmetoken}을(를) 사용하여 HSM 또는 네트워크 장치를 구성하기 전에
 
-* Install [AEM Forms add-on](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) package.
+* [AEM Forms 추가 기능](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 패키지를 설치합니다.
 * AEM 서버와 동일한 컴퓨터에 HSM 또는 네트워크 클라이언트 소프트웨어를 설치하고 구성합니다. 클라이언트 소프트웨어는 HSM 및 네트워크 디바이스와 통신해야 합니다.
 * (Microsoft Windows 전용) JAVA_HOME_32 환경 변수를 설정하여 32비트 버전의 Java 8 Development Kit(JDK 8)가 설치된 디렉토리를 가리킵니다. 디렉토리의 기본 경로는 C:\Program Files(x86)\Java\jdk&lt;version>입니다.
 * (OSGi의 AEM Forms 전용) 트러스트 저장소에 루트 인증서를 설치합니다. 서명된 PDF를 확인해야 함
@@ -40,17 +40,17 @@ Adobe Experience Manager Forms은 HSM 또는 전자 코너에 저장된 자격 �
 >
 >Microsoft Windows에서는 32비트 LunaSA 또는 EToken 클라이언트만 지원됩니다.
 
-## DocAssurance 서비스 활성화 {#configuredocassurance}
+## DocAssurance 서비스 {#configuredocassurance} 사용
 
 기본적으로 DocAssurance 서비스는 활성화되지 않습니다. 서비스를 활성화하려면 다음 단계를 수행합니다.
 
 1. AEM Forms 환경의 작성자 인스턴스를 중지합니다.
 
-1. 편집할 [AEM_root\crx-quickstart\conf\sling.properties]파일을 엽니다.
+1. 편집을 위해 [AEM_root]\crx-quickstart\conf\sling.properties 파일을 엽니다.
 
    >[!NOTE]
    >
-   >AEM_root [\crx-quickstart\bin\start.bat]파일을 사용하여 AEM 인스턴스를 시작한 다음 [AEM_root]\crx-quickstart\sling.properties 파일을 열어 편집할 수 있습니다.
+   >AEM 인스턴스를 시작하기 위해 [AEM_root]\crx-quickstart\bin\start.bat 파일을 사용한 경우 편집하기 위해 [AEM_root]\crx-quickstart\sling.properties 파일을 엽니다.
 
 1. sling.properties 파일에 다음 속성을 추가하거나 바꿉니다.
 
@@ -63,29 +63,29 @@ Adobe Experience Manager Forms은 HSM 또는 전자 코너에 저장된 자격 �
 1. sling.properties 파일을 저장하고 닫습니다.
 1. AEM 인스턴스를 다시 시작합니다.
 
-## Reader 확장 인증서 설정 {#set-up-certificates-for-reader-extensions}
+## Reader 확장 인증서 {#set-up-certificates-for-reader-extensions} 설정
 
 인증서를 설정하려면 다음 단계를 수행하십시오.
 
 1. AEM 작성자 인스턴스에 관리자로 로그인합니다.
 
-1. 전역 탐색 막대에서&#x200B;**Adobe Experience Manager을** 클릭합니다. 도구 **> 보안** **** > **사용자로**&#x200B;이동합니다.
-1. 사용자 계정의 **이름** 필드를 클릭합니다. 사용자 **설정 편집** 페이지가 열립니다.
-1. AEM 작성자 인스턴스에서 인증서는 KeyStore에 상주합니다. 이전에 KeyStore를 만들지 않은 경우 KeyStore **만들기를** 클릭하고 KeyStore에 대한 새 암호를 설정합니다. 서버에 이미 KeyStore가 있는 경우 이 단계를 건너뜁니다.
+1. 전역 탐색 막대에서 **Adobe Experience Manager**&#x200B;을 클릭합니다. **도구** > **보안** > **사용자**&#x200B;로 이동합니다.
+1. 사용자 계정의 **name** 필드를 클릭합니다. **사용자 설정 편집** 페이지가 열립니다.
+1. AEM 작성자 인스턴스에서 인증서는 KeyStore에 상주합니다. 이전에 KeyStore를 만들지 않은 경우 **Create KeyStore**&#x200B;를 클릭하고 KeyStore에 대한 새 암호를 설정합니다. 서버에 이미 KeyStore가 있는 경우 이 단계를 건너뜁니다.
 
-1. 사용자 **설정 편집** 페이지에서 **키 저장소 관리를 클릭합니다**.
+1. **사용자 설정 편집** 페이지에서 **키 저장소 관리**&#x200B;를 클릭합니다.
 
-1. KeyStore 관리 대화 상자에서 키 저장소 파일 **에서 개인 키 추가 옵션을 확장하고 별칭을** 제공합니다. 별칭은 Reader 확장 작업을 수행하는 데 사용됩니다.
-1. 인증서 파일을 업로드하려면 **키 저장소 파일** 선택을 클릭하고 `.pfx` 파일을 업로드합니다.
-1. 인증서와 관련된 **키 저장소 암호**,**개인 키 암호**&#x200B;및 **개인 키** 별칭을 각 필드에 추가합니다. 제출을 **클릭합니다**.
-
-   >[!NOTE]
-   >
-   >인증서의&#x200B;**개인 키 별칭을** 결정하려면 Java 키 도구 명령을 사용합니다. `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+1. KeyStore 관리 대화 상자에서 키 저장소 파일&#x200B;**옵션에서**&#x200B;개인 키 추가 옵션을 확장하고 별칭을 제공합니다. 별칭은 Reader 확장 작업을 수행하는 데 사용됩니다.
+1. 인증서 파일을 업로드하려면 **키 저장소 파일**&#x200B;을 선택하고 `.pfx` 파일을 업로드합니다.
+1. 인증서에 연결된 **키 저장소 암호**,**개인 키 암호** 및 **개인 키 별칭**&#x200B;을 각 필드에 추가합니다. **제출**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >
-   >[ **키 저장소 암호** 및 **개인 키 암호** ] 필드에서 인증서 파일과 함께 제공된 암호를 지정합니다.
+   >인증서의 P **개인 키 별칭**&#x200B;을(를) 결정하려면 Java keytool 명령을 사용할 수 있습니다.`keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+
+   >[!NOTE]
+   >
+   >**키 저장소 암호** 및 **개인 키 암호** 필드에서 인증서 파일과 함께 제공된 암호를 지정합니다.
 
 >[!NOTE]
 >
@@ -95,12 +95,12 @@ Adobe Experience Manager Forms은 HSM 또는 전자 코너에 저장된 자격 �
 >
 >프로덕션 환경으로 이동하는 경우 평가 자격 증명을 프로덕션 자격 증명으로 바꿉니다. 만료된 또는 평가 자격 증명을 업데이트하기 전에 이전 Reader 확장 자격 증명을 삭제해야 합니다.
 
-## 장치의 별칭 만들기 {#configuredeviceinaemconsole}
+## 장치 {#configuredeviceinaemconsole}에 대한 별칭 만들기
 
 별칭에는 HSM 또는 프로토콜에 필요한 모든 매개 변수가 포함되어 있습니다. eSign 또는 Digital Signatures에서 사용하는 각 HSM 또는 전자 인증 인증에 대한 별칭을 생성하려면 아래 지침을 수행하십시오.
 
 1. AEM 콘솔을 엽니다. AEM 콘솔의 기본 URL은 https://&lt;host>:&lt;port>/system/console/configMgr입니다.
-1. HSM **Credentials Configuration Service를** 열고 다음 필드에 값을 지정합니다.
+1. **HSM 자격 증명 구성 서비스**&#x200B;를 열고 다음 필드에 값을 지정합니다.
 
    * **자격 증명 별칭**:별칭을 식별하는 데 사용되는 문자열을 지정합니다. 이 값은 서명 필드 작업과 같은 일부 디지털 서명 작업의 속성으로 사용됩니다.
    * **DLL 경로**:서버에 있는 HSM 또는 클라이언트 라이브러리의 정규화된 경로를 지정합니다. 예: C:\Program Files\LunaSA\cryptoki.dll. 클러스터된 환경에서 이 경로는 클러스터의 모든 서버에 대해 동일해야 합니다.
@@ -415,4 +415,4 @@ AEM 6.0 Form 또는 AEM 6.1 Forms에서 업그레이드했고 이전 버전에�
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-DocAssurance 서비스의 API 및 샘플 코드에 대한 자세한 내용은 프로그램 [으로 AEM Document Services 사용을 참조하십시오](/help/forms/using/aem-document-services-programmatically.md).
+DocAssurance 서비스의 API 및 샘플 코드에 대한 자세한 내용은 [AEM Document Services 프로그램 사용](/help/forms/using/aem-document-services-programmatically.md)을 참조하십시오.
