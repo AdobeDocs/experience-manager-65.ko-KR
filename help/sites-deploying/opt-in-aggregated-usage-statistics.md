@@ -1,6 +1,6 @@
 ---
-title: 집계된 사용 통계 컬렉션 선택
-seo-title: 집계된 사용 통계 컬렉션 선택
+title: 집계된 사용 통계 수집 선택
+seo-title: 집계된 사용 통계 수집 선택
 description: 집계된 사용 통계를 선택하는 방법을 알아봅니다.
 seo-description: 집계된 사용 통계를 선택하는 방법을 알아봅니다.
 uuid: 8bd0b870-4bea-42e1-8179-e900164591b6
@@ -12,6 +12,9 @@ discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 0%
 
 ---
 
@@ -20,58 +23,58 @@ source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
 
 ## 소개 {#introduction}
 
-AEM과 상호 작용하는 방법에 대한 Adobe 통계를 전송하여 Adobe Marketing Cloud를 개선할 수 있습니다. 이 정보에는 회사의 사이트 방문자에 대한 데이터가 포함되어 있지 않으며 Adobe가 사용자 경험을 제공, 지원 및 개선하는 데에만 사용됩니다.
+AEM과 상호 작용하는 방법에 대한 Adobe 통계를 보내 Adobe Marketing Cloud을 개선할 수 있습니다. 이 정보에는 회사의 사이트 방문자에 대한 데이터가 포함되지 않으며 사용자 경험을 Adobe으로 제공, 지원 및 향상시키는 데에만 사용됩니다.
 
 터치 UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수 있습니다.
 
 >[!NOTE]
 >
->다양한 데이터 보호 및 개인 정보 보호 규정이 있습니다.GDPR과 CPA와 같은 GDPR 및 AEM Sites는 고객의 데이터 보호 및 개인 정보 보호 규정 준수 의무를 지원할 준비가 되었습니다. 이 페이지에서는 고객에게 집계된 사용 통계 수집을 옵트인(또는 수신)하는 절차를 안내합니다.
+>다양한 데이터 보호 및 개인 정보 보호 규정이 있습니다.여기에는 GDPR 및 CPA와 같은 정보가 포함됩니다. AEM Sites은 고객의 데이터 보호 및 개인 정보 보호 규정 준수 의무를 지원할 준비가 되었습니다. 이 페이지에서는 고객에게 집계된 사용 통계 수집을 옵트인(또는 옵트아웃)하는 절차를 안내합니다.
 >
->자세한 내용은 Adobe의 개인 정보 [보호 센터를 참조하십시오](https://www.adobe.com/privacy.html).
+>자세한 내용은 [Adobe 개인 정보 보호 센터](https://www.adobe.com/privacy.html)를 참조하십시오.
 
 >[!NOTE]
 >
->웹 콘솔을 사용하거나 AEM 옵트인 화면에서 [옵트인](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) 옵션을 선택하지 않으면 언제든지 옵트아웃할 수 있습니다.
+>또한 [웹 콘솔](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console)을 사용하거나 AEM 옵트인 화면에서 옵트인 옵션을 선택하지 않으면 언제든지 옵트아웃할 수 있습니다.
 
-## 터치 UI를 사용하여 옵트인 {#opt-in-by-using-the-touch-ui}
+## 터치 UI {#opt-in-by-using-the-touch-ui}을(를) 사용하여 옵트인합니다.
 
-AEM을 처음 시작할 때 다음과 같이 Touch UI를 사용하여 옵트인할 수 있습니다.
+AEM을 처음 시작할 때 다음과 같이 Touch UI를 사용하여 옵트인을 할 수 있습니다.
 
-1. AEM 탐색 화면에서 받은 편지함( **벨** ) 아이콘을 클릭합니다.
+1. AEM 탐색 화면에서 **받은 편지함** (bell) 아이콘을 클릭합니다.
 
-   ![usage_statiscentasavigationscreen](assets/usage_statisticsnavigationscreen.png)
+   ![usage_staticssanavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
-1. 드롭다운 목록에서 &quot;집계된 사용 통계&#x200B;**수집 활성화&quot;를 클릭합니다**.
+1. 드롭다운 목록에서 &quot;**집계된 사용 통계 수집 활성화**&quot;를 클릭합니다.
 
-   ![usage_statiscentasavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
+   ![usage_statiscenavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 
-1. 옵트인 화면에서 &quot;집계된 사용 통계&#x200B;**수집 허용**&quot;을 선택합니다.
+1. 옵트인 화면에서 &quot;**집계된 사용 통계 수집 허용**&quot;을 선택합니다.
 
-   ![usage_statisticsoft-inscreen](assets/usage_statisticsopt-inscreen.png)
+   ![usage_staticsoft-inscreen](assets/usage_statisticsopt-inscreen.png)
 
-1. &quot;완료&quot;**를**&#x200B;클릭합니다.
+1. &quot;**완료**&quot;를 클릭합니다.
 
-## 웹 콘솔을 사용하여 옵트인 {#opt-in-by-using-the-web-console}
+## 웹 콘솔 {#opt-in-by-using-the-web-console}을(를) 사용하여 옵트인
 
 다음과 같이 웹 콘솔을 사용하여 옵트인(또는 옵트아웃)할 수 있습니다.
 
-1. AEM 탐색 화면에서 도구를 클릭한 **다음** 작업을 **클릭합니다**.
+1. AEM 탐색 화면에서 **도구**&#x200B;를 클릭한 다음 **작업**&#x200B;을 클릭합니다.
 
    ![usage_staticsopsdashboard](assets/usage_statisticsopsdashboard.png)
 
-1. 작업 창에서 웹 **콘솔을 클릭합니다**.
+1. 작업 창에서 **웹 콘솔**&#x200B;을 클릭합니다.
 
    ![usage_staticswebconsole](assets/usage_statisticswebconsole.png)
 
-1. &quot;집계된 사용 통계&#x200B;**수집&quot;을**&#x200B;검색합니다.
-1. Click the **Edit** icon.
+1. &quot;**집계된 사용 통계 컬렉션**&quot;을 검색합니다.
+1. **편집** 아이콘을 클릭합니다.
 
-   ![usage_staticscscollection편집](assets/usage_statisticscollectionedit.png)
+   ![usage_staticsclectionedit](assets/usage_statisticscollectionedit.png)
 
-1. 활성화 **확인란을** 선택합니다. 또는 사용 통계 수집을 옵트아웃하려는 경우 확인란을 선택 취소할 수 있습니다.
+1. **활성화됨** 확인란을 선택합니다. 또는 사용 통계 수집을 옵트아웃하려는 경우 확인란을 선택 취소할 수 있습니다.
 
-   ![usage_statiscselect](assets/usage_statisticsselect.png)
+   ![usage_staticssselect](assets/usage_statisticsselect.png)
 
 1. **저장**&#x200B;을 클릭합니다.
 
