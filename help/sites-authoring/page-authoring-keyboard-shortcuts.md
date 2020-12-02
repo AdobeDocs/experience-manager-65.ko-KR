@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 91%
 
 ---
 
@@ -27,21 +30,21 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 | 위치 | 단축키 | 설명 |
 |---|---|---|
-| 모든 편집 창 모드 | `Ctrl-Shift-m` | Toggle between **Preview** and the currently selected [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (e.g. **Edit**, **Layout**, etc)* |
+| 임의 편집 창 모드 | `Ctrl-Shift-m` | **미리 보기**&#x200B;와 현재 선택한 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)</a>(예: **편집**, **레이아웃** 등) 간을 전환합니다.* |
 | **편집** 모드 | `Ctrl-z` | [마지막 변경 내용을 실행 취소합니다](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [마지막 변경 내용을 재실행합니다](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 여러 단락을 선택합니다 |
-|  | `Ctrl-c` | 선택한 단락 복사 |
-|  | `Ctrl-x` | 선택한 단락을 잘라냅니다. 단락은 붙여넣을 때까지 UI에서 사라지지 않습니다. |
-|  | `Ctrl-v` | 이전에 잘라내거나 복사한 단락 붙여넣기 |
-|  | `Ctrl-Backspace` | 선택한 단락 삭제 |
+|  | `Ctrl-c` | 선택한 단락을 복사합니다. |
+|  | `Ctrl-x` | 선택한 단락을 잘라냅니다. 잘라낸 단락은 붙여넣기 전까지 UI에서 사라지지 않습니다. |
+|  | `Ctrl-v` | 이전에 잘라내거나 복사한 단락을 붙여넣습니다. |
+|  | `Ctrl-Backspace` | 선택한 단락을 삭제합니다. |
 | **편집** 모드 - 리치 텍스트 편집기 | `Ctrl-b` | 굵게 |
 |  | `Ctrl-I` | 기울임체 |
 |  | `Ctrl-u` | 밑줄 |
 
 >[!NOTE]
 >
->&amp;ast; Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. 이 단축키를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
+>&amp;ast;사용자가 미리 보기 모드에서 페이지와 상호 작용하기 시작하면 `Ctrl-Shift-m` 단축키를 더 이상 사용할 수 없습니다. 이 단축키를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
 
 데스크톱 사용자는 [콘솔](/help/sites-authoring/keyboard-shortcuts.md)을 사용하여 다양한 키보드 단축키를 사용할 수 있습니다.
 
