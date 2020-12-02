@@ -13,9 +13,9 @@ ht-degree: 77%
 
 # Assets 안내서
 
-This guide covers all [!DNL Experience Manager Assets] tasks, such as how to create, manage, deliver, and optimize digital assets.
+이 안내서에서는 디지털 자산을 만들고, 관리하고, 제공하고, 최적화하는 방법과 같은 모든 [!DNL Experience Manager Assets] 작업을 다룹니다.
 
-## Key [!DNL Experience Manager] articles
+## [!DNL Experience Manager] 아티클 키
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
@@ -42,7 +42,7 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 [!DNL Livefyre]와 공유하는 방법을 보여 줍니다. |
 
-## Key [!DNL Experience Manager] resources
+## 키 [!DNL Experience Manager] 리소스
 
 * [Experience Manager 비디오 튜토리얼](https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
