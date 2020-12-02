@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 인터랙티브 커뮤니케이션 및 문자에서 인라인 조건 및 반복{#inline-condition-and-repeat-in-interactive-communications-and-letters}
+# 인라인 조건 및 대화형 통신 및 문자{#inline-condition-and-repeat-in-interactive-communications-and-letters}에서 반복
 
 ## 인라인 조건 {#inline-conditions}
 
@@ -32,15 +32,15 @@ AEM Forms을 사용하면 텍스트 모듈의 인라인 조건을 사용하여 �
 * [통신 관리 개요](/help/forms/using/cm-overview.md)
 * [인터랙티브 커뮤니케이션의 텍스트](../../forms/using/texts-interactive-communications.md)
 
-### 예:규칙을 사용하여 인터랙티브 커뮤니케이션에서 인라인 텍스트 조건부 지정 {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
+### 예:규칙을 사용하여 대화형 통신 {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}에서 인라인 텍스트 조건부 지정
 
 Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조건부 지정하려면 해당 텍스트 문서 조각에서 규칙을 생성할 수 있습니다. 다음 예제는 무료 전화 번호를 대화형 통신 미국 수신자에게만 표시하는 규칙을 사용합니다.
 
-자세한 내용은 Interactive Communications에서 텍스트 [에서 텍스트로 규칙 만들기를 참조하십시오](../../forms/using/texts-interactive-communications.md).
+자세한 내용은 [Interactive Communications의 텍스트 문자 규칙 만들기](../../forms/using/texts-interactive-communications.md)를 참조하십시오.
 
 대화형 통신 및 에이전트에 텍스트 조각을 포함하면 에이전트 UI를 사용하여 대화형 통신을 준비하면 받는 사람에 대한 (양식 데이터 모델) 데이터가 평가되고 텍스트는 미국의 수신자에게만 표시됩니다.
 
-### 예:편지에 인라인 조건을 사용하여 적절한 주소 렌더링  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
+### 예:문자에서 인라인 조건을 사용하여 해당 주소 {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address} 렌더링
 
 해당 텍스트 모듈에 인라인 조건을 삽입하여 문자에 인라인 조건을 삽입할 수 있습니다. 다음 예에서는 두 가지 조건을 사용하여 DD 요소 성별을 기준으로 적절한 주소인 Sir 또는 Ma&#39;am을 평가하고 표시합니다. 유사한 단계를 사용하여 다른 조건을 만들 수 있습니다.
 
@@ -48,7 +48,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
 >
 >기존 에셋에 이전 조건/반복 표현식(6.2 SP1 CFP 4 이전)이 포함되어 있는 경우 에셋에는 이전 조건 구문이 표시되고 반복됩니다. 하지만, 이전 상태/반복은 작동합니다. 새 표현식과 이전 조건/반복 표현식은 이전 표현식과 새 조건/반복 표현식의 중첩된 혼합을 만들기 위해 서로 호환됩니다.
 
-1. 관련 텍스트 모듈에서 조건을 지정할 텍스트 부분을 선택하고 조건을 **누릅니다**.
+1. 관련 텍스트 모듈에서 조건을 정의할 텍스트 부분을 선택하고 **조건**&#x200B;을 누릅니다.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -58,7 +58,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
 
    >[!NOTE]
    >
-   >비어 있거나 잘못된 조건부 식은 저장할 수 없습니다. 표현식을 저장하려면 안에 유효한 조건식이 있어야 `${}` 합니다.
+   >비어 있거나 잘못된 조건부 식은 저장할 수 없습니다. 식을 저장하려면 `${}` 내에 유효한 조건식이 있어야 합니다.
 
 1. 선택한/조건부 텍스트가 편지에 나타나는지 여부를 평가하는 조건을 구성한 다음 확인 표시를 눌러 표현식을 저장합니다.
 
@@ -68,13 +68,13 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
    ${DD_creditcard_Gender=="Male"}
    ```
 
-   표현식 만들기에 대한 자세한 내용은 **표현식 빌더에서 표현식 빌더를** 사용하여 표현식 및 원격 함수 [만들기를 참조하십시오](../../forms/using/expression-builder.md). 식에 지정된 값은 데이터 사전의 요소에 대해 지원되어야 합니다. 자세한 내용은 [데이터 사전을 참조하십시오](../../forms/using/data-dictionary.md).
+   표현식 만들기에 대한 자세한 내용은 **Expression Builder[에서 표현식 빌더**&#x200B;을 사용하여 표현식 및 원격 함수 만들기를 참조하십시오. ](../../forms/using/expression-builder.md) 식에 지정된 값은 데이터 사전의 요소에 대해 지원되어야 합니다. 자세한 내용은 [데이터 사전](../../forms/using/data-dictionary.md)을 참조하십시오.
 
    조건이 삽입되면 조건 왼쪽에 있는 핸들 위로 마우스를 가져가면 조건을 볼 수 있습니다. 핸들을 눌러 조건의 팝업 메뉴를 보고 조건을 편집하거나 제거할 수 있습니다.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
-1. 텍스트를 선택하여 유사한 조건을 삽입합니다 `Ma'am`.
+1. 텍스트 `Ma'am`을 선택하여 유사한 조건을 삽입합니다.
 
    ```javascript
    ${DD_creditcard_Gender == "Female"}
@@ -85,7 +85,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
    * 샘플 데이터가 있는 문자를 미리 보는 동안 관련 데이터 사전을 기반으로 만들어진 샘플 XML 데이터 파일입니다.
    * 관련 데이터 사전에 첨부된 XML 데이터 파일입니다.
 
-   자세한 내용은 [데이터 사전을 참조하십시오](../../forms/using/data-dictionary.md).
+   자세한 내용은 [데이터 사전](../../forms/using/data-dictionary.md)을 참조하십시오.
 
    ![5_letter 출력](assets/5_letteroutput.png)
 
@@ -95,7 +95,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
 
 또한 반복 구배 내에서 규칙/조건을 지정하여 대화형 통신/서신에 렌더링되는 정보/항목을 조건화할 수 있습니다.
 
-### 예:Interactive Communication에서 반복 사용을 사용하여 신용 카드 거래 목록 서식, 구조 및 표시 {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### 예:대화형 통신에서 반복을 사용하여 신용 카드 거래 목록 형식 지정, 구조 및 표시{#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 다음 예에서는 반복 사용을 사용하여 인터랙티브 커뮤니케이션에서 신용 카드 거래를 구조화하고 렌더링하는 단계를 보여 줍니다.
 
@@ -139,7 +139,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
 
    ![screen_shot_2018-03-09at15516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
-### 예:서신의 반복 사용을 통해 신용 카드 거래 목록 서식, 구조 및 표시 {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### 예:신용카드의 거래 목록 형식 지정, 구조 및 표시에 반복 사용 {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 다음 예에서는 반복적인 방법으로 신용 카드 거래를 구조화하고 렌더링하는 단계를 제공합니다. 유사한 단계를 사용하여 다른 시나리오에서 반복을 사용할 수 있습니다.
 
@@ -172,7 +172,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. 반복을 **누릅니다**. 빈 인라인 조건이 있는 반복 대화 상자가 나타납니다.
+1. **반복**&#x200B;을 누릅니다. 빈 인라인 조건이 있는 반복 대화 상자가 나타납니다.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
@@ -182,7 +182,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   그렇지 않으면 정보(여기서 트랜잭션)를 선택적으로 렌더링할 필요가 없으면 대화 상자에서 다음을 삭제하여 조건을 비워 둡니다. `${}`. 반복 표현식 저장은 반복 표현식 창이 비어 있거나(반복이 필요하지 않은 경우 ${} 없이) 반복할 수 있는 유효한 조건이 포함되어 있을 때 활성화됩니다.
+   그렇지 않으면 정보(여기서 트랜잭션)를 선택적으로 렌더링할 필요가 없으면 대화 상자에서 다음을 삭제하여 조건을 비워 둡니다.`${}`. 반복 표현식 저장은 반복 표현식 창이 비어 있거나(반복이 필요하지 않은 경우 ${} 없이) 반복할 수 있는 유효한 조건이 포함되어 있을 때 활성화됩니다.
 
 1. 동적 텍스트의 서식을 지정할 구분 기호를 선택하고 체크 표시를 눌러 저장합니다.
 
@@ -202,7 +202,7 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
    * 샘플 데이터가 있는 문자를 미리 보는 동안 관련 데이터 사전을 기반으로 만들어진 샘플 XML 데이터 파일입니다.
    * 관련 데이터 사전에 첨부된 XML 데이터 파일입니다.
 
-   자세한 내용은 [데이터 사전을 참조하십시오](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
+   자세한 내용은 [데이터 사전](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html)을 참조하십시오.
 
    ![6_repeatutputpreview](assets/6_repeatoutputpreview.png)
 
@@ -212,9 +212,9 @@ Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조
    >
    >관련 텍스트 모듈을 만들거나 편집하는 동안에만 조건을 삽입하고 반복할 수 있습니다. 문자를 미리 보는 동안 텍스트 모듈을 편집할 수는 있지만 조건을 삽입하거나 반복할 수는 없습니다.
 
-## 인라인 조건 및 반복 사용 - 일부 사용 사례  {#using-inline-condition-and-repeat-some-use-cases}
+## 인라인 조건 및 반복 사용 - 일부 사용 사례 {#using-inline-condition-and-repeat-some-use-cases}
 
-### 조건 내에서 반복 {#repeat-within-condition}
+### 조건 {#repeat-within-condition} 내에서 반복
 
 조건 내에서 반복을 사용해야 할 수도 있습니다. 통신 관리를 사용하면 인라인 조건 구문 내에서 반복을 사용할 수 있습니다.
 
