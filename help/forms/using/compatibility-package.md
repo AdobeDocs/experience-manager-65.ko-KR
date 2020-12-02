@@ -23,33 +23,33 @@ ht-degree: 6%
 
 ## 개요 {#overview}
 
-인터랙티브한 커뮤니케이션은 AEM Forms 6.5에서 고객 커뮤니케이션을 만드는 데 기본적으로 권장되는 접근 방식입니다. AEM Forms 6.5에서 문자를 계속 사용하려면 최신 [AEMFD 호환성 패키지를 설치해야 합니다](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html).
+인터랙티브한 커뮤니케이션은 AEM Forms 6.5에서 고객 커뮤니케이션을 만드는 데 기본적으로 권장되는 접근 방식입니다. AEM Forms 6.5에서 문자를 계속 사용하려면 최신 [AEMFD 호환성 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)을(를) 설치해야 합니다.
 
-또한 AEMFD 호환성 패키지를 사용하면 AEM Forms 6.5의 AEM Forms 6.4, 6.3 및 6.2에서 제공하는 다음 에셋을 [사용할 수 있습니다.](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+또한 AEMFD 호환성 패키지를 사용하면 AEM Forms 6.5의 AEM Forms 6.4, 6.3 및 6.2에서 다음 에셋을 [사용할 수 있습니다.](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * 문서 조각
 * 편지
 * 데이터 사전
 * 응용 양식 더 이상 사용되지 않는 템플릿 및 페이지
 
-자세한 내용은 [호환성 패키지를 설치하여 AEM Forms 6.5와 호환되는 자산을 참조하십시오](../../forms/using/compatibility-package.md#assetsmadecompatible).
+자세한 내용은 호환성 패키지[를 설치하여 AEM Forms 6.5와 호환되는 에셋을 참조하십시오.](../../forms/using/compatibility-package.md#assetsmadecompatible)
 
-## AEM Forms 6.5에서 AEM Forms 6.4, 6.3 및 6.2 에셋 지원 추가 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## AEM Forms 6.5에서 AEM Forms 6.4, 6.3 및 6.2 자산에 대한 지원 추가 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 업그레이드를 수행한 후 다음을 수행하여 AEMFD 호환성 패키지를 설치하고 자산을 6.5와 호환되도록 하십시오.
 
-AEM [호환성 패키지가](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 미리 설치되어 있는지 확인합니다.
+[AEM 호환성 패키지](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)이(가) 미리 설치되어 있는지 확인합니다.
 
-1. 최신 6.5 [호환성 패키지를 설치합니다](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html).
+1. 최신 6.5 [호환성 패키지](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)를 설치합니다.
 
-   패키지 업로드 및 설치에 대한 자세한 내용은 패키지 [를 사용한 작업 방법을 참조하십시오](/help/sites-administering/package-manager.md).
+   패키지 업로드 및 설치에 대한 자세한 내용은 [패키지 사용 방법](/help/sites-administering/package-manager.md)을 참조하십시오.
 
 1. 로그가 안정되면 서버를 다시 시작합니다.
 1. 마이그레이션 유틸리티를 사용하여 에셋을 6.5와 호환되게 합니다.
 
-   자세한 내용은 [마이그레이션 유틸리티를 참조하십시오](../../forms/using/migration-utility.md).
+   자세한 내용은 [마이그레이션 유틸리티](../../forms/using/migration-utility.md)를 참조하십시오.
 
-## 호환성 패키지를 설치하여 AEM Forms 6.5와 호환되는 에셋 {#assetsmadecompatible}
+## 호환성 패키지 {#assetsmadecompatible}을(를) 설치하여 AEM Forms 6.5와 호환되는 에셋
 
 호환성 패키지를 설치하여 AEM Forms 6.5와 호환되는 다음 에셋 및 템플릿을 만들 수 있습니다.
 
