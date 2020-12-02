@@ -12,6 +12,9 @@ discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 80%
 
 ---
 
@@ -47,6 +50,7 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
       * 왼쪽/오른쪽 화살표를 사용하여 다양한 워크플로우의 상태 정보를 탐색할 수 있습니다.
       * 실제 숫자를 클릭/탭하여 적용 가능한 모든 워크플로우가 있는 드롭다운 목록을 연 다음, 상태 표시줄에 표시할 워크플로우를 선택할 수 있습니다.
+
    ![wf-59](assets/wf-59.png)
 
    >[!NOTE]
@@ -76,30 +80,30 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 * [타임라인](#completing-a-participant-step-timeline)
 * [워크플로우를 열어 세부 사항을 볼](#opening-a-workflow-item-to-view-details-and-take-actions) 때
 
-#### 참가자 단계 완료 - 받은 편지함 {#completing-a-participant-step-inbox}
+#### 참가자 단계 완료 - 받은 편지함  {#completing-a-participant-step-inbox}
 
 다음 절차를 사용하여 작업 항목을 완료하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
-1. Select **Complete** from the toolbar.
-1. **작업 항목 완료** 대화 상자가 열립니다. Select the **Next Step** from the drop down selector and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. 도구 모음에서 **완료**&#x200B;를 선택합니다.
+1. **작업 항목 완료** 대화 상자가 열립니다. 드롭다운 선택기에서 **다음 단계**&#x200B;를 선택하고 필요한 경우 **주석**&#x200B;을 추가합니다.
+1. **OK**&#x200B;을 사용하여 단계를 완료하거나 **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
 #### 참가자 단계 완료 - 페이지 편집기 {#completing-a-participant-step-page-editor}
 
 다음 절차를 사용하여 작업 항목을 완료하십시오.
 
 1. [편집할 페이지](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing)를 엽니다.
-1. Select **Complete** from the status bar at the top.
-1. **작업 항목 완료** 대화 상자가 열립니다. Select the **Next Step** from the drop down selector and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. 맨 위의 상태 표시줄에서 **완료**&#x200B;를 선택합니다.
+1. **작업 항목 완료** 대화 상자가 열립니다. 드롭다운 선택기에서 **다음 단계**&#x200B;를 선택하고 필요한 경우 **주석**&#x200B;을 추가합니다.
+1. **OK**&#x200B;을 사용하여 단계를 완료하거나 **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
 #### 참가자 단계 완료 - 타임라인 {#completing-a-participant-step-timeline}
 
 타임라인을 사용하여 단계를 완료하고 진행할 수도 있습니다.
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page):
+1. 필요한 페이지를 선택하고 **타임라인**&#x200B;을 엽니다(또는 **타임라인**&#x200B;을 열고 페이지를 선택합니다.).
 
    ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
@@ -113,7 +117,7 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
 1. **고급**&#x200B;을 선택하여 작업을 확인합니다.
 
-### 참가자 단계 위임 {#delegating-a-participant-step}
+### 참가자 단계 위임  {#delegating-a-participant-step}
 
 하나의 단계가 사용자에게 지정되었지만 어떠한 이유로 작업을 수행할 수 없는 경우, 다른 사용자 또는 그룹에 해당 단계를 위임할 수 있습니다.
 
@@ -135,30 +139,30 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 * [타임라인](#delegating-a-participant-step-timeline)
 * [워크플로우를 열어 세부 사항을 볼](#opening-a-workflow-item-to-view-details-and-take-actions) 때
 
-#### 참가자 단계 위임 - 받은 편지함 {#delegating-a-participant-step-inbox}
+#### 참가자 단계 위임 - 받은 편지함  {#delegating-a-participant-step-inbox}
 
 다음 절차를 사용하여 작업 항목을 위임하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
-1. Select **Delegate** from the toolbar.
-1. 대화 상자가 열립니다. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. 도구 모음에서 **위임**&#x200B;을 선택합니다.
+1. 대화 상자가 열립니다. 드롭다운 선택기에서 **사용자**&#x200B;를 지정하고 필요한 경우 **주석**&#x200B;을 추가합니다.
+1. **OK**&#x200B;을 사용하여 단계를 완료하거나 **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
 #### 참가자 단계 위임 - 페이지 편집기 {#delegating-a-participant-step-page-editor}
 
 다음 절차를 사용하여 작업 항목을 위임하십시오.
 
 1. [편집할 페이지](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing)를 엽니다.
-1. Select **Delegate** from the status bar at the top.
-1. 대화 상자가 열립니다. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. 맨 위의 상태 표시줄에서 **위임**&#x200B;을 선택합니다.
+1. 대화 상자가 열립니다. 드롭다운 선택기에서 **사용자**&#x200B;를 지정하고 필요한 경우 **주석**&#x200B;을 추가합니다.
+1. **OK**&#x200B;을 사용하여 단계를 완료하거나 **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
 #### 참가자 단계 위임 - 타임라인 {#delegating-a-participant-step-timeline}
 
 타임라인을 사용하여 단계를 위임 및/또는 지정할 수도 있습니다.
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page).
+1. 필요한 페이지를 선택하고 **타임라인**&#x200B;을 엽니다(또는 **타임라인**&#x200B;을 열고 페이지를 선택합니다.).
 1. 경고 배너를 클릭/탭하여 사용 가능한 작업을 표시합니다. **할당자 변경**&#x200B;을 선택하십시오.
 
    ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
@@ -167,7 +171,7 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
    ![screen-shot_2019-03-05at121025](assets/screen-shot_2019-03-05at121025.png)
 
-1. Select **Assign** to confirm the action.
+1. **할당**&#x200B;을 선택하여 작업을 확인합니다.
 
 ### 참가자 단계에서 뒤로 이동 수행 {#performing-step-back-on-a-participant-step}
 
@@ -185,31 +189,31 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 * [타임라인](#performing-step-back-on-a-participant-step-timeline)
 * [워크플로우를 열어 세부 사항을 볼](#opening-a-workflow-item-to-view-details-and-take-actions) 때
 
-#### 참가자 단계에서 뒤로 이동 수행 - 받은 편지함 {#performing-step-back-on-a-participant-step-inbox}
+#### 참가자 단계에서 뒤로 이동 수행 - 받은 편지함  {#performing-step-back-on-a-participant-step-inbox}
 
 다음 절차를 사용하여 뒤 단계로 이동하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
-1. Select **Step Back** to open the dialog.
+1. **뒤로 이동**&#x200B;을 선택하여 대화 상자를 엽니다.
 
 1. **이전 단계**&#x200B;를 지정하고 필요한 경우 **주석**&#x200B;을 추가합니다.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. **OK**&#x200B;을 사용하여 단계를 완료하거나 **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
 #### 참가자 단계에서 뒤로 이동 수행 - 페이지 편집기 {#performing-step-back-on-a-participant-step-page-editor}
 
 다음 절차를 사용하여 뒤 단계로 이동하십시오.
 
 1. [편집할 페이지](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing)를 엽니다.
-1. Select **Step Back** from the status bar at the top.
+1. 맨 위의 상태 표시줄에서 **뒤로**&#x200B;를 선택합니다.
 1. **이전 단계**&#x200B;를 지정하고 필요한 경우 **주석**&#x200B;을 추가합니다.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. **OK**&#x200B;을 사용하여 단계를 완료하거나 **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
 #### 참가자 단계에서 뒤로 이동 수행 - 타임라인 {#performing-step-back-on-a-participant-step-timeline}
 
 타임라인을 사용하여 이전 단계로 롤백(뒤로 이동)할 수도 있습니다.
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page).
+1. 필요한 페이지를 선택하고 **타임라인**&#x200B;을 엽니다(또는 **타임라인**&#x200B;을 열고 페이지를 선택합니다.).
 1. 경고 배너를 클릭/탭하여 사용 가능한 작업을 표시합니다. **롤백**&#x200B;을 선택하십시오.
 
    ![screen-shot_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
@@ -218,7 +222,7 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
    ![screen-shot_2019-03-05at121158](assets/screen-shot_2019-03-05at121158.png)
 
-1. Select **Roll back** to confirm the action.
+1. **롤백**&#x200B;을 선택하여 작업을 확인합니다.
 
 ### 워크플로우 항목을 열어 세부 사항 확인(및 작업 수행) {#opening-a-workflow-item-to-view-details-and-take-actions}
 
@@ -230,7 +234,7 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
    ![wf-72](assets/wf-72.png)
 
-* **워크플로우 정보** 탭:
+* **워크플로우** 정보 탭:
 
    ![wf-73](assets/wf-73.png)
 
@@ -247,36 +251,36 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 * [받은 편지함](#performing-step-back-on-a-participant-step-inbox)
 * [페이지 편집기](#performing-step-back-on-a-participant-step-page-editor)
 
-#### 워크플로우 세부 사항 열기 - 받은 편지함 {#opening-workflow-details-inbox}
+#### 워크플로우 세부 사항 열기 - 받은 편지함  {#opening-workflow-details-inbox}
 
 워크플로우 항목을 열고 세부 사항을 보려면 다음을 수행하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
-1. Select **Open** to open the information tabs.
+1. **열기**&#x200B;를 선택하여 정보 탭을 엽니다.
 
 1. 필요할 경우 적절한 작업을 선택하고 세부 사항을 제공한 후 **확인**&#x200B;을 클릭하여 적용합니다(확인하지 않으려면 **취소**&#x200B;를 클릭합니다.).
-1. Use **Save** or **Cancel** to exit.
+1. **저장** 또는 **취소**&#x200B;를 사용하여 종료합니다.
 
 #### 워크플로우 세부 사항 열기 - 페이지 편집기 {#opening-workflow-details-page-editor}
 
 워크플로우 항목을 열고 세부 사항을 보려면 다음을 수행하십시오.
 
 1. [편집할 페이지](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing)를 엽니다.
-1. Select **View Details** from the status bar to open the information tabs.
+1. 상태 표시줄에서 **세부 사항 보기**&#x200B;를 선택하여 정보 탭을 엽니다.
 
 1. 필요할 경우 적절한 작업을 선택하고 세부 사항을 제공한 후 **확인**&#x200B;을 클릭하여 적용합니다(확인하지 않으려면 **취소**&#x200B;를 클릭합니다.).
-1. Use **Save** or **Cancel** to exit.
+1. **저장** 또는 **취소**&#x200B;를 사용하여 종료합니다.
 
-### Viewing the Workflow Payload (Multiple Resources) {#viewing-the-workflow-payload-multiple-resources}
+### 워크플로우 페이로드(여러 리소스) 보기 {#viewing-the-workflow-payload-multiple-resources}
 
 워크플로우 인스턴스와 연결된 페이로드에 대한 세부 사항을 볼 수 있습니다. 처음에 패키지에 있는 리소스가 표시된 다음, 드릴다운하여 개별 페이지를 표시할 수 있습니다.
 
 워크플로우 인스턴스의 페이로드 및 리소스를 보려면 다음을 수행하십시오.
 
-1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**을 엽니다.
+1. **[AEM 받은 편지함](/help/sites-authoring/inbox.md)**&#x200B;을 엽니다.
 1. 작업을 수행할 워크플로우 항목을 선택합니다(썸네일 탭/클릭).
-1. Select **View Payload** from the toolbar to open the dialog.
+1. 도구 모음에서 **페이로드 보기**&#x200B;를 선택하여 대화 상자를 엽니다.
 
    워크플로우 패키지는 단순히 저장소 내 경로에 대한 포인터 컬렉션이므로 여기에 항목을 추가/제거/수정하여 워크플로우 패키지에서 참조되는 내용을 조정할 수 있습니다. **리소스 정의** 구성 요소를 사용하여 새 항목을 추가하십시오.
 
