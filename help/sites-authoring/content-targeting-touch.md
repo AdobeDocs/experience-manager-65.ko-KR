@@ -135,11 +135,11 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
    >
    >작업 중인 활동을 변경하려면 **뒤로**&#x200B;를 클릭하거나 탭하십시오.
 
-## 만들기: 경험 작성 {#create-authoring-the-experiences}
+## 만들기: 경험 작성  {#create-authoring-the-experiences}
 
 컨텐츠 타깃팅의 만들기 단계에는 경험 생성이 포함됩니다. 이 단계 동안 활동의 경험을 생성하거나 삭제하고 각 경험에 오퍼를 추가할 수 있습니다.
 
-### 타깃팅 모드에서 경험 오퍼 보기 {#seeing-experience-offers-in-targeting-mode}
+### 타깃팅 모드에서 경험 오퍼 보기  {#seeing-experience-offers-in-targeting-mode}
 
 [타깃팅 프로세스를 시작](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)했으면 경험을 선택하여 해당 경험을 위해 제공된 오퍼를 확인하십시오. 경험을 선택하면 페이지에 있는 타깃팅된 구성 요소가 해당 경험에 대한 오퍼를 표시하도록 변경됩니다.
 
@@ -181,14 +181,14 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 
 [타깃팅 프로세스](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)의 만들기 단계를 사용하면 경험을 추가하거나 제거할 수 있습니다. 또한 경험을 복제하고 이름을 변경할 수도 있습니다.
 
-#### 타깃팅 모드를 사용한 경험 추가 {#adding-experiences-using-targeting-mode}
+#### 타깃팅 모드를 사용한 경험 추가  {#adding-experiences-using-targeting-mode}
 
 경험을 추가하려면 다음을 수행하십시오.
 
 1. 경험을 추가하려면 **대상자** 창에서 기존 경험 아래에 나타나는 **+** **경험 타깃팅 추가**&#x200B;를 클릭하거나 탭합니다.
 1. 대상을 선택합니다. 기본적으로 해당 이름은 경험의 이름입니다. 원하는 경우 다른 이름을 입력할 수 있습니다. **확인**&#x200B;을 클릭하거나 탭하십시오.
 
-#### 타깃팅 모드를 사용한 경험 제거 {#removing-experiences-using-targeting-mode}
+#### 타깃팅 모드를 사용한 경험 제거  {#removing-experiences-using-targeting-mode}
 
 경험을 삭제하려면 다음을 수행하십시오.
 
@@ -198,7 +198,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 
 1. **삭제**&#x200B;를 클릭합니다. 
 
-#### 타깃팅 모드를 사용한 경험 이름 변경 {#renaming-experiences-using-targeting-mode}
+#### 타깃팅 모드를 사용한 경험 이름 변경  {#renaming-experiences-using-targeting-mode}
 
 타깃팅 모드를 사용하여 경험의 이름을 변경하려면 다음을 수행하십시오.
 
@@ -214,7 +214,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 1. **대상자 편집**&#x200B;을 클릭하고 새 대상자를 선택합니다.
 1. **확인**&#x200B;을 클릭합니다.
 
-#### 타깃팅 모드를 사용한 경험 복제 {#duplicating-experiences-using-targeting-mode}
+#### 타깃팅 모드를 사용한 경험 복제  {#duplicating-experiences-using-targeting-mode}
 
 타깃팅 모드를 사용하여 경험을 복사하려면 다음을 수행하십시오.
 
@@ -222,7 +222,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 1. **복제**&#x200B;를 클릭하고 대상자를 선택합니다.
 1. 원하는 경우 경험의 이름을 변경하고 **확인**&#x200B;을 클릭합니다.
 
-### 타깃팅 모드를 사용한 오퍼 생성 {#creating-offers-using-targeting-mode}
+### 타깃팅 모드를 사용한 오퍼 생성  {#creating-offers-using-targeting-mode}
 
 경험을 위한 오퍼를 생성할 구성 요소를 타깃팅하십시오. 타깃팅된 구성 요소는 경험을 위한 오퍼로 사용되는 컨텐츠를 제공합니다.
 
@@ -240,7 +240,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 * [라이브러리 오퍼를 사용자 지정 오퍼로 변환합니다](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library).
 * [라이브러리 오퍼를 열고 컨텐츠를 편집합니다](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer).
 
-#### 기존 구성 요소를 타깃팅하여 기본 오퍼 생성 {#creating-a-default-offer-by-targeting-an-existing-component}
+#### 기존 구성 요소를 타깃팅하여 기본 오퍼 생성  {#creating-a-default-offer-by-targeting-an-existing-component}
 
 페이지에서 구성 요소를 타깃팅하여 활동의 기본값 경험을 위한 오퍼로 사용하십시오. 구성 요소를 타깃팅하면 이 구성 요소는 타겟 구성 요소에 포함되고 해당 컨텐츠는 기본값 경험을 위한 오퍼가 됩니다.
 
@@ -297,7 +297,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
    >
    >
    >관리자는 **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**&#x200B;에서 이 구성을 설정해야 하는지 결정할 수 있습니다.
-   >사용자가 위치를 입력하도록 하려면 **위치 강제 적용** 확인란을 선택하십시오.
+   사용자가 위치를 입력하도록 하려면 **위치 강제 적용** 확인란을 선택하십시오.
 
 1. 오퍼를 생성할 경험을 선택합니다.
 1. 다음과 같이 오퍼를 생성합니다.
@@ -305,7 +305,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
    * 기본값 경험의 경우 구성 요소를 타깃팅된 드롭 영역으로 드래그하고 구성 요소 속성을 평소대로 편집하여 오퍼를 위한 컨텐츠를 작성합니다.
    * 기본값이 아닌 경험의 경우 [사용자 지정 오퍼를 추가](#adding-a-custom-offer)하거나 [라이브러리 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)합니다.
 
-#### 사용자 지정 오퍼 추가 {#adding-a-custom-offer}
+#### 사용자 지정 오퍼 추가  {#adding-a-custom-offer}
 
 타깃팅 모드에서 타깃팅된 구성 요소의 컨텐츠를 작성하여 오퍼를 생성할 수 있습니다. 사용자 지정 오퍼를 생성하는 경우 이 오퍼는 단일 경험에 대한 오퍼로 사용됩니다.
 
@@ -326,7 +326,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 
 1. 구성 요소의 컨텐츠를 편집합니다.
 
-#### 오퍼 라이브러리의 오퍼 추가 {#adding-an-offer-from-an-offer-library}
+#### 오퍼 라이브러리의 오퍼 추가  {#adding-an-offer-from-an-offer-library}
 
 [오퍼 라이브러리](/help/sites-authoring/offerlib.md)의 오퍼를 경험에 추가할 수 있습니다. 현재 타깃팅하는 브랜드의 라이브러리에 있는 오퍼를 추가할 수 있습니다.
 
@@ -376,7 +376,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 
 1. 오퍼에 사용할 이름을 입력하고 오퍼를 추가할 라이브러리를 선택한 다음, 확인 표시 아이콘을 클릭하거나 탭합니다.
 
-#### 라이브러리 오퍼를 사용자 지정 라이브러리로 변환 {#converting-a-library-offer-to-a-custom-library}
+#### 라이브러리 오퍼를 사용자 지정 라이브러리로 변환  {#converting-a-library-offer-to-a-custom-library}
 
 다른 경험에 있는 오퍼는 변경하지 않고 라이브러리 오퍼를 사용자 지정 오퍼로 변환하여 현재 경험을 위한 오퍼를 변경할 수 있습니다.
 
@@ -385,7 +385,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 
    ![](do-not-localize/chlimage_1-5.png)
 
-#### 라이브러리 오퍼 편집 {#editing-a-library-offer}
+#### 라이브러리 오퍼 편집  {#editing-a-library-offer}
 
 오퍼를 편집하려면 타깃팅됨 모드의 경험에서 라이브러리 오퍼를 여십시오. 변경한 내용이 오퍼를 사용하는 모든 경험에 표시됩니다.
 
@@ -399,7 +399,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 
 [타깃팅 프로세스](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)의 타겟 단계에는 만들기 단계에서 작업에 사용한 경험과 대상을 매핑하는 작업이 포함됩니다. 타겟 페이지에는 각 경험이 타깃팅하는 대상이 표시됩니다. 각 경험의 대상을 지정하거나 변경할 수 있습니다. Adobe Target을 사용하는 경우 대상에 대한 트래픽 비율을 특정 경험으로 타깃팅할 수 있도록 해주는 A/B 테스트를 생성할 수도 있습니다.
 
-### AEM 타깃팅 또는 Adobe Target(경험 타깃팅)을 사용하는 경우... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### AEM 타깃팅 또는 Adobe Target(경험 타깃팅)을 사용하는 경우...  {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 대상자가 매핑 다이어그램의 왼쪽에 표시되고 경험이 오른쪽에 표시됩니다.
 
@@ -413,7 +413,7 @@ AEM의 타깃팅 모드를 사용하여 타깃팅된 컨텐츠를 작성하십�
 
 ![](do-not-localize/chlimage_1-6.png)
 
-### 경험을 대상(AEM 또는 Adobe Target)과 연결 {#associating-experiences-with-audiences-aem-or-adobe-target}
+### 경험을 대상(AEM 또는 Adobe Target)과 연결  {#associating-experiences-with-audiences-aem-or-adobe-target}
 
 AEM 타깃팅(또는 Adobe Target 경험 타깃팅)을 사용할 때 경험을 대상과 연결하려면 다음 절차를 사용하십시오.
 
@@ -421,7 +421,7 @@ AEM 타깃팅(또는 Adobe Target 경험 타깃팅)을 사용할 때 경험을 �
 1. (선택 사항) **편집**&#x200B;을 클릭하거나 탭한 다음, 키워드를 입력하여 원하는 세그먼트를 검색합니다.
 1. 대상 목록에서 대상을 선택하고 **확인**&#x200B;을 클릭하거나 탭합니다.
 
-### A/B 테스트(Adobe Target)를 사용하는 경우... {#if-you-are-using-a-b-testing-adobe-target}
+### A/B 테스트(Adobe Target)를 사용하는 경우...  {#if-you-are-using-a-b-testing-adobe-target}
 
 A/B 테스트 활동이 있는 경우, 대상은 왼쪽에 있고, 각 경험이 표시되는 비율은 가운데에 있으며, 경험은 오른쪽에 있습니다.
 
@@ -437,7 +437,7 @@ A/B 테스트 활동이 있는 경우, 대상은 왼쪽에 있고, 각 경험이
 1. 대상 트래픽이 각 경험으로 라우팅되는 방법을 구성하려면 비율(%)을 입력하십시오. 합계는 100이어야 합니다.
 1. (선택 사항) 경험 이름 옆의 드롭다운 메뉴를 클릭하여 경험 이름을 편집합니다.
 
-## 목표 및 설정: 활동 및 설정 목표 구성 {#goals-settings-configuring-the-activity-and-setting-goals}
+## 목표 및 설정: 활동 및 설정 목표 구성  {#goals-settings-configuring-the-activity-and-setting-goals}
 
 [타깃팅 프로세스](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)의 목표 및 설정 단계에는 브랜드 활동의 행동을 구성하는 작업이 포함되어 있습니다. 활동의 시작 및 종료 시점과 활동 우선 순위를 지정하십시오. 또한 목표도 추적합니다. 특히, 활동과 관련하여 측정할 항목을 결정할 수 있습니다.
 
@@ -532,7 +532,7 @@ A/B 테스트 활동이 있는 경우, 대상은 왼쪽에 있고, 각 경험이
 
 성공 지표에 대한 자세한 내용은 [Adobe Target 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
-### 설정 구성(AEM 타깃팅) {#configuring-settings-aem-targeting}
+### 설정 구성(AEM 타깃팅)  {#configuring-settings-aem-targeting}
 
 AEM 타깃팅을 사용할 경우 설정을 구성하려면 다음을 수행하십시오.
 
@@ -548,7 +548,7 @@ AEM 타깃팅을 사용할 경우 설정을 구성하려면 다음을 수행하�
 
 1. 활동의 우선 순위를 지정하려면 슬라이더를 사용하여 **낮음**, **일반** 또는 **높음**&#x200B;을 선택합니다.
 
-### 목표 및 설정 구성(Adobe Target) {#configuring-goals-settings-adobe-target}
+### 목표 및 설정 구성(Adobe Target)  {#configuring-goals-settings-adobe-target}
 
 Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음을 수행하십시오.
 
@@ -569,38 +569,35 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음을 
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. **목표 지표** 영역의 **기본 목표** 아래에서 추적하려는 성공 지표(전환, 수입, 참여)를 선택하고 지표를 측정하는 방법(또는 목표에 도달했음을 나타내기 위해 대상자가 취하는 조치)을 입력합니다. 이전 표에서 목표 지표의 정의를 참조하고 성공 지표에 대해 [Adobe Target 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
+1. **목표 지표** 영역의 **기본 목표** 아래에서 추적하려는 성공 지표(전환, 수입, 참여)를 선택하고 지표를 측정하는 방법(또는 목표에 도달했음을 나타내기 위해 대상자가 취하는 조치)을 입력합니다. 이전 표에서 목표 지표의 정의를 참조하고 성공 지표에 대해 [Adobe Target 설명서](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
    오른쪽 위 모서리에 있는 세 개의 점을 클릭하고 **이름 변경**&#x200B;을 선택하여 목표의 이름을 변경할 수 있습니다.
 
    모든 필드를 지워야 하는 경우 오른쪽 위 모서리에 있는 세 개의 점을 클릭하고 **모든 필드 지우기**&#x200B;를 선택하십시오.
 
-   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. 이전 표에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서](https://docs.adobe.com/content/help/ko-KR/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
+   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. 이전 표에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
    >[!NOTE]
-   >
-   >정의된 목표가 하나 이상 있어야 합니다.
+   정의된 목표가 하나 이상 있어야 합니다.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
-   >
-   >지표에 누락된 정보가 있으면 빨간색 선이 지표를 둘러쌉니다.
+   지표에 누락된 정보가 있으면 빨간색 선이 지표를 둘러쌉니다.
 
 1. 성공 지표를 더 구성하려면 **새 지표 추가**&#x200B;를 클릭합니다.
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
    >[!NOTE]
-   >
-   >세 개의 점을 클릭하거나 탭하고 **삭제**&#x200B;를 클릭하거나 탭하여 목표를 추가로 제거할 수 있습니다. AEM을 사용하려면 정의된 목표가 하나 이상 있어야 합니다.
+   세 개의 점을 클릭하거나 탭하고 **삭제**&#x200B;를 클릭하거나 탭하여 목표를 추가로 제거할 수 있습니다. AEM을 사용하려면 정의된 목표가 하나 이상 있어야 합니다.
 
 1. 성공 지표를 카운트하는 방법을 추가로 제어하려면 **고급 설정**&#x200B;을 클릭하거나 탭하여 고급 설정에 액세스하십시오.
 1. **저장**&#x200B;을 클릭합니다.
 
 구성 후에는 Adobe Target을 사용하는(경험 또는 A/B 테스트 타깃팅) [활동의 성과를 볼](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test) 수 있습니다. 또한 A/B 테스트 타깃팅을 사용하는 경우에는 [우승자를 전환](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)할 수 있습니다.
 
-## 경험 시뮬레이션 {#simulating-an-experience}
+## 경험 시뮬레이션  {#simulating-an-experience}
 
 방문자의 경험을 시뮬레이션하여 페이지 컨텐츠가 타깃팅된 컨텐츠의 디자인에 따라 예상대로 표시되는지 확인하십시오. 시뮬레이션 시 다른 사용자 프로필을 로드하고 해당 사용자에 대한 타깃팅된 컨텐츠를 확인하십시오.
 
@@ -615,8 +612,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음을 
 프로필을 로드할 때 페이지에 예기치 않은 컨텐츠가 나타나면 이 목록에 있는 각 항목의 구성을 확인하십시오.
 
 >[!NOTE]
->
->A/B 테스트를 사용하는 경우에는 시뮬레이션할 때 경험이 트래픽 비율을 기반으로 표시됩니다. 이것은 Adobe Target에 의해 제어되므로 이로 인해 작성자가 예상하지 못한 결과가 발생할 수 있습니다. (작성자 활동은 시뮬레이션 중에 재평가를 허용하는 특정 설정과 동기화됩니다.) 작성자가 트래픽 설정에 따라 다른 경험을 보려면 새로 고침을 해야 할 수 있습니다.
+A/B 테스트를 사용하는 경우에는 시뮬레이션할 때 경험이 트래픽 비율을 기반으로 표시됩니다. 이것은 Adobe Target에 의해 제어되므로 이로 인해 작성자가 예상하지 못한 결과가 발생할 수 있습니다. (작성자 활동은 시뮬레이션 중에 재평가를 허용하는 특정 설정과 동기화됩니다.) 작성자가 트래픽 설정에 따라 다른 경험을 보려면 새로 고침을 해야 할 수 있습니다.
 
 방문자의 경험을 시뮬레이션하려면 다음 도구를 사용하십시오.
 
@@ -636,7 +632,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음을 
 
 1. 표시되는 오퍼에 변경 작업을 수행하려면 타깃팅 모드로 전환합니다. 시뮬레이션 활동을 선택한 상태에서 미리 보기 모드에서 구성한 컨텍스트에 대한 오퍼를 편집하십시오.
 
-## 타겟 구성 요소 선택 사항 구성 {#configuring-target-component-options}
+## 타겟 구성 요소 선택 사항 구성  {#configuring-target-component-options}
 
 다음 두 가지 방법 중 하나로 구성 요소의 선택 사항에 액세스하여 타겟 구성 요소를 사용자 지정할 수 있습니다.
 
@@ -709,8 +705,7 @@ Adobe Target을 엔진으로 선택하는 경우:
 </table>
 
 >[!NOTE]
->
->구성 요소를 선택하여 이것을 타깃팅이 가능하도록 만들면 AEM도 이 구성 요소를 교체하고 Adobe Target 구성 요소를 주입합니다. (Adobe Target 구성 요소는 수동으로 페이지에 추가할 때에만 사용되는 것이 아니라, 기존 구성 요소를 타깃팅할 때에도 사용됩니다.)
+구성 요소를 선택하여 이것을 타깃팅이 가능하도록 만들면 AEM도 이 구성 요소를 교체하고 Adobe Target 구성 요소를 주입합니다. (Adobe Target 구성 요소는 수동으로 페이지에 추가할 때에만 사용되는 것이 아니라, 기존 구성 요소를 타깃팅할 때에도 사용됩니다.)
 
 Client Context(클라이언트측)를 엔진으로 선택하는 경우:
 
