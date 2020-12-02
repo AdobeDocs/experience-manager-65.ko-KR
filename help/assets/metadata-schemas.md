@@ -1,5 +1,5 @@
 ---
-title: '메타데이터 속성 페이지의 레이아웃을 정의하는 메타데이터 스키마 [!DNL Adobe Experience Manager Assets]. '
+title: '메타데이터 속성 페이지의 레이아웃을 정의하는 메타데이터 스키마( [!DNL Adobe Experience Manager Assets]). '
 description: 메타데이터 스키마는 속성 페이지의 레이아웃과 자산에 대해 표시되는 메타데이터 속성을 정의합니다. 사용자 정의 메타데이터 스키마를 만들고 메타데이터 스키마를 편집하며 자산에 메타데이터 스키마를 적용하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
@@ -15,72 +15,72 @@ ht-degree: 2%
 
 조직은 에셋 검색, 사용, 상호 운용성 등을 향상시키는 메타데이터 모델을 제공합니다. 메타데이터 기반의 워크플로우와 프로세스를 유지하기 위해 매우 안전한 메타데이터 애플리케이션을 구축할 수 있습니다. 조직 전체의 메타데이터 전략 및 표준을 준수하려면 DAM 사용자가 정렬하는 데 도움이 되는 메타데이터 스키마를 사용할 수 있습니다. [!DNL Adobe Experience Manager] 메타데이터 스키마를 생성, 유지 관리 및 적용할 수 있는 간편하고 유연한 방법을 제공합니다.
 
-in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보에 대한 특정 필드가 포함됩니다. 또한 사용자에게 친숙한 방식으로 메타데이터 필드를 표시하는 레이아웃 정보도 포함되어 있습니다. 메타데이터 속성에는 제목, 설명, MIME 유형, 태그 등이 포함됩니다. 메타데이터 스키마 Forms  편집기를 사용하여 기존 스키마를 수정하거나 사용자 정의 메타데이터 스키마를 추가할 수 있습니다.
+[!DNL Adobe Experience Manager Assets]에서 스키마에는 채울 특정 정보에 대한 특정 필드가 포함됩니다. 또한 사용자에게 친숙한 방식으로 메타데이터 필드를 표시하는 레이아웃 정보도 포함되어 있습니다. 메타데이터 속성에는 제목, 설명, MIME 유형, 태그 등이 포함됩니다. [!UICONTROL 메타데이터 스키마 Forms] 편집기를 사용하여 기존 스키마를 수정하거나 사용자 지정 메타데이터 스키마를 추가할 수 있습니다.
 
 자산에 대한 속성 페이지를 보고 편집하려면 다음 단계를 따르십시오.
 
-1. 카드 보기에서 자산 타일의 빠른 작업 **[!UICONTROL 에서 속성]** 보기 옵션을 클릭합니다. 또는 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 속성]** ![](assets/do-not-localize/info-circle-icon.png) 보기속성을클릭합니다.
+1. 카드 보기에서 자산 타일의 빠른 작업 중 **[!UICONTROL 속성 보기]** 옵션을 클릭합니다. 또는 자산을 선택한 다음 도구 모음에서 **[!UICONTROL 속성]** ![속성 보기](assets/do-not-localize/info-circle-icon.png)를 클릭합니다.
 
-1. 사용 가능한 탭에서 다양한 편집 가능한 메타데이터 속성을 편집할 수 있습니다. 하지만 속성 페이지의 [!UICONTROL 기본] 탭에서 자산 유형 [!UICONTROL 을] 수정할 수는 없습니다.
+1. 사용 가능한 탭에서 다양한 편집 가능한 메타데이터 속성을 편집할 수 있습니다. 하지만 속성 페이지의 [!UICONTROL 기본] 탭에서 자산 [!UICONTROL Type]을 수정할 수는 없습니다.
 
    ![자산 속성의 기본 탭. 여기서 자산 유형은 변경할 수 없습니다.](assets/asset-properties-basic-tab.png)
 
-*그림:자산 속성의 기본 탭.*
+*그림:자산 속성의 기본 탭 .*
 
-자산에 대한 MIME 형식을 수정하려면 사용자 지정 메타데이터 스키마 양식을 사용하거나 기존 양식을 수정하십시오. 자세한 [내용은 메타데이터 스키마 Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) 편집을 참조하십시오. MIME 유형의 메타데이터 스키마를 수정하는 경우 자산 및 모든 하위 유형에 대한 속성 페이지 레이아웃이 수정됩니다. 예를 들어 jpeg 스키마를 `default/image` 수정하면 MIME 형식의 자산에 대한 메타데이터 레이아웃(자산 속성)만 수정됩니다 `image/jpeg`. 그러나 기본 스키마를 편집하는 경우 변경 사항은 모든 유형의 자산에 대한 메타데이터 레이아웃을 수정합니다.
+자산에 대한 MIME 형식을 수정하려면 사용자 지정 메타데이터 스키마 양식을 사용하거나 기존 양식을 수정하십시오. 자세한 내용은 [메타데이터 스키마 Forms 편집](/help/assets/metadata-schemas.md#edit-metadata-schema-forms)을 참조하십시오. MIME 유형의 메타데이터 스키마를 수정하는 경우 자산 및 모든 하위 유형에 대한 속성 페이지 레이아웃이 수정됩니다. 예를 들어 `default/image` 아래에서 jpeg 스키마를 수정하면 MIME 유형이 `image/jpeg`인 자산에 대한 메타데이터 레이아웃(자산 속성)만 수정됩니다. 그러나 기본 스키마를 편집하는 경우 변경 사항은 모든 유형의 자산에 대한 메타데이터 레이아웃을 수정합니다.
 
-## Metadata Schema forms {#default-metadata-schema-forms}
+## 메타데이터 스키마 양식 {#default-metadata-schema-forms}
 
-양식이나 템플릿 목록을 보려면 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL > 자산]** > **[!UICONTROL 메타데이터 스키마]** 로 **[!UICONTROL 이동합니다]**.
+양식 또는 템플릿 목록을 보려면 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다.
 
 [!DNL Experience Manager] 에는 다음 메타데이터 스키마 양식 템플릿이 제공됩니다.
 
 | 템플릿 |  | 설명 |
 |---|---|---|
 | [!UICONTROL 기본값] |  | 자산에 대한 기본 메타데이터 스키마 양식입니다. |
-|  | 다음 하위 양식은 [!UICONTROL 기본] 양식의 속성을 상속합니다. |  |
+|  | 다음 하위 양식은 [!UICONTROL default] 양식의 속성을 상속합니다. |  |
 |  | <ul><li>[!UICONTROL dm_video]</li></ul> | 다이내믹 미디어 비디오에 대한 스키마 양식입니다. |
-|  | <ul><li>[!UICONTROL 이미지]</li></ul> | 및 같은 MIME 형식의 이미지에 대한 스키마 양식 `image/jpeg` 을 참조하십시오 `image/png`. <br> 이미지 [!UICONTROL 양식에는 다음과 같은 하위] 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]:하위 유형 jpeg가 있는 자산에 대한 스키마 [!UICONTROL 양식입니다].</li> <li>[!UICONTROL tiff]:하위 유형 TIFF가 있는 자산의 스키마 양식입니다.</li></ul> |
-|  | <ul><li>[!UICONTROL 응용 프로그램]</li></ul> | 및 같은 MIME 형식의 자산에 대한 스키마 양식 `application/pdf``application/zip`. <br>[!UICONTROL pdf]:하위 유형 PDF가 있는 자산에 대한 스키마 양식입니다. |
-|  | <ul><li>[!UICONTROL 비디오]</li></ul> | 및 같은 MIME 형식의 비디오 자산에 대한 스키마 양식 `video/avi``video/mp4`. |
+|  | <ul><li>[!UICONTROL 이미지]</li></ul> | `image/jpeg` 및 `image/png`과 같은 MIME 유형의 이미지에 대한 스키마 양식입니다. <br> 이미지   양식에는 다음과 같은 하위 양식 템플릿이 있습니다. <ul><li> [!UICONTROL jpeg]:하위 유형 jpeg가 있는 자산에 대한 스키마  [!UICONTROL 양식입니다].</li> <li>[!UICONTROL tiff]:하위 유형 TIFF가 있는 자산의 스키마 양식입니다.</li></ul> |
+|  | <ul><li>[!UICONTROL 응용 프로그램]</li></ul> | MIME 형식이 `application/pdf` 및 `application/zip`인 자산에 대한 스키마 양식입니다. <br>[!UICONTROL pdf]:하위 유형 PDF가 있는 자산에 대한 스키마 양식입니다. |
+|  | <ul><li>[!UICONTROL 비디오]</li></ul> | MIME 형식이 `video/avi` 및 `video/mp4`인 비디오 자산에 대한 스키마 양식입니다. |
 | [!UICONTROL 컬렉션] |  | 컬렉션에 대한 스키마 양식입니다. |
 | [!UICONTROL contentfragment] |  | [콘텐츠 조각에 대한 스키마 양식입니다](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL 양식] |  | 이 스키마 양식은 [Adobe Experience Manager Forms](/help/forms/home.md)와 관련이 있습니다. |
+| [!UICONTROL 양식] |  | 이 스키마 양식은 [Adobe Experience Manager Forms](/help/forms/home.md)과 관련이 있습니다. |
 | [!UICONTROL ugc_contentfragment] |  | 사용자가 생성한 콘텐츠 조각 및 소셜 미디어의 Experience Manager에 통합된 자산에 대한 스키마 양식입니다. |
 
 >[!NOTE]
 >
 >스키마 양식의 하위 양식을 보려면 스키마 양식 이름을 클릭합니다.
 
-## 메타데이터 스키마 양식 추가 {#add-a-metadata-schema-form}
+## 메타데이터 스키마 양식 {#add-a-metadata-schema-form} 추가
 
 메타데이터 스키마 양식을 추가하려면 다음 단계를 따르십시오.
 
-1. 사용자 지정 템플릿을 목록에 추가하려면 도구 모음에서 **[!UICONTROL 만들기를]** 클릭합니다.
+1. 사용자 지정 템플릿을 목록에 추가하려면 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    >[!NOTE]
    >
-   >편집되지 않은 템플릿과 함께 잠금 기호가 표시됩니다. 템플릿을 사용자 지정하면 잠금이 ![잠기지 않습니다](assets/do-not-localize/lock_closed_icon.svg).
+   >편집되지 않은 템플릿과 함께 잠금 기호가 표시됩니다. 템플릿을 사용자 지정하면 ![잠금 ](assets/do-not-localize/lock_closed_icon.svg)이 잠겨 있지 않습니다.
 
-1. 대화 상자에서 스키마 양식의 제목을 입력하고 **[!UICONTROL 만들기를]** 클릭하여 양식 작성 프로세스를 완료합니다.
+1. 대화 상자에서 스키마 양식의 제목을 입력하고 **[!UICONTROL 만들기]**&#x200B;를 클릭하여 양식 작성 프로세스를 완료합니다.
 
 ## 메타데이터 스키마 양식 편집 {#edit-metadata-schema-forms}
 
 새로 추가되거나 기존 메타데이터 스키마 양식을 편집할 수 있습니다. 메타데이터 스키마 양식에는 탭 내의 탭 및 양식 항목이 포함됩니다. 이러한 양식 항목을 CRX 저장소의 메타데이터 노드 내의 필드에 매핑/구성할 수 있습니다. 메타데이터 스키마 양식에 탭 또는 양식 항목을 추가할 수 있습니다. 상위에서 파생된 탭 및 양식 항목은 잠긴 상태입니다. 하위 수준에서 변경할 수 없습니다.
 
-1. 메타데이터 [!UICONTROL 스키마 Forms] 페이지에서 양식을 선택하고 도구 모음에서 **[!UICONTROL 편집을]** 클릭합니다.
+1. [!UICONTROL 메타데이터 스키마 Forms] 페이지에서 양식을 선택하고 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 
-1. 메타데이터 스키마 **[!UICONTROL 양식 편집기]** 페이지에서 메타데이터 양식을 사용자 정의합니다. 필요한 구성 요소를 **[!UICONTROL 양식]** 작성 탭에서 탭 중 하나로 드래그합니다.
+1. **[!UICONTROL 메타데이터 스키마 양식 편집기]** 페이지에서 메타데이터 양식을 사용자 정의합니다. 필요한 구성 요소를 **[!UICONTROL 빌드 양식]** 탭에서 탭 중 하나로 드래그합니다.
 
    ![자산 속성 사용자 지정을 위한 메타데이터 스키마 편집기](assets/metadata-schema-editor.png)
 
-   *그림:사용 가능한 탭이 있는[!UICONTROL 메타데이터 스키마 양식 편집기]페이지.*
+   *그림:사용 가능한 탭이 있는  [!UICONTROL 메타데이터 스키마 ] 양식 편집기 페이지.*
 
-1. 구성 요소를 구성하려면 구성 요소를 선택하고 설정 **[!UICONTROL 탭에서 해당 속성을]** 수정합니다.
+1. 구성 요소를 구성하려면 구성 요소를 선택하고 **[!UICONTROL 설정]** 탭에서 해당 속성을 수정합니다.
 
-### 양식 [!UICONTROL 작성 탭 내의] 구성 요소 {#components-within-the-build-form-tab}
+### [!UICONTROL 빌드 양식] 탭 {#components-within-the-build-form-tab} 내의 구성 요소
 
-양식 **[!UICONTROL 작성]** 탭에는 스키마 양식에서 사용하는 양식 항목이 나열됩니다. [ **[!UICONTROL 설정]** ] 탭에서는 [양식 **[!UICONTROL 작성] 탭에서 선택하는 각 항목의 속성을]** 제공합니다. 다음 표에는 양식 작성 탭에서 사용할 수 있는 양식 **[!UICONTROL 항목이]** 나열됩니다.
+**[!UICONTROL 빌드 양식]** 탭에는 스키마 양식에서 사용하는 양식 항목이 나열됩니다. **[!UICONTROL 설정]** 탭은 **[!UICONTROL 빌드 양식]** 탭에서 선택한 각 항목의 특성을 제공합니다. 다음 표에는 **[!UICONTROL 빌드 양식]** 탭에서 사용할 수 있는 양식 항목이 나열되어 있습니다.
 
 | 구성 요소 이름 | 설명 |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
@@ -99,13 +99,13 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 | [!UICONTROL 자산 등급] | 자산 등급을 위한 표시 옵션에 추가합니다. |
 | [!UICONTROL 상황에 맞는 메타데이터] | 자산의 속성 페이지에서 다른 메타데이터 탭의 표시를 제어하는 데 추가합니다. |
 
-#### 메타데이터 구성 요소 편집 {#edit-the-metadata-component}
+#### 메타데이터 구성 요소 {#edit-the-metadata-component} 편집
 
-양식에서 메타데이터 구성 요소의 속성을 편집하려면 구성 요소를 클릭하여 **[!UICONTROL 설정]** 탭에서 다음 속성의 전체 또는 하위 집합을 편집합니다.
+양식에서 메타데이터 구성 요소의 속성을 편집하려면 구성 요소를 클릭하여 **[!UICONTROL 설정]** 탭에서 다음 속성의 일부 또는 전체를 편집합니다.
 
 **필드 레이블**:자산의 속성 페이지에 표시되는 메타데이터 속성의 이름입니다.
 
-**속성에 매핑**:이 속성은 자산 노드가 CRX 저장소에 저장되는 자산 노드의 상대 경로를 지정합니다. 경로 `./` 가 자산의 노드 아래에 있음을 나타내기 위해 시작합니다.
+**속성에 매핑**:이 속성은 자산 노드가 CRX 저장소에 저장되는 자산 노드의 상대 경로를 지정합니다. 경로가 자산의 노드 아래에 있음을 나타내기 위해 `./`으로 시작합니다.
 
 다음은 이 속성에 유효한 값입니다.
 
@@ -123,13 +123,13 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 * **선택 사항**:이 속성을 사용하여 목록에서 선택 사항을 지정합니다.
 * **설명** :이 속성을 사용하여 메타데이터 구성 요소에 대한 짧은 설명을 추가합니다.
 * **클래스**:속성이 연결된 객체 클래스입니다.
-* **삭제**:스키마 [!UICONTROL 양식에서] 구성 요소를 삭제하려면 삭제를 클릭합니다.
+* **삭제**:스키마   양식에서 구성 요소를 삭제하려면 삭제를 클릭합니다.
 
 >[!NOTE]
 >
->숨김 [!UICONTROL 필드] 구성 요소에는 이러한 속성이 포함되어 있지 않습니다. 대신 속성 이름, 값, 필드 레이블 및 설명과 같은 속성을 포함합니다. 숨김 필드 구성 요소의 값은 자산을 저장할 때마다 POST 매개 변수로 전송됩니다. 자산에 대한 메타데이터로 저장되지 않습니다.
+>[!UICONTROL 숨김 필드] 구성 요소에는 이러한 특성이 없습니다. 대신 속성 이름, 값, 필드 레이블 및 설명과 같은 속성을 포함합니다. 숨김 필드 구성 요소의 값은 자산을 저장할 때마다 POST 매개 변수로 전송됩니다. 자산에 대한 메타데이터로 저장되지 않습니다.
 
-필수 **[!UICONTROL 옵션을]** 선택하면 필수 메타데이터가 없는 자산을 검색할 수 있습니다. 필터 **** 패널에서 **[!UICONTROL 메타데이터 유효성 검사]** 설명 **[!UICONTROL 을 확장하고]** 잘못된옵션을선택합니다. 검색 결과에는 스키마 양식을 통해 구성한 필수 메타데이터가 누락된 에셋이 표시됩니다.
+**[!UICONTROL 필수]** 옵션을 선택하면 필수 메타데이터가 없는 자산을 검색할 수 있습니다. **[!UICONTROL 필터]** 패널에서 **[!UICONTROL 메타데이터 유효성 검사]** 조건자를 확장하고 **[!UICONTROL 잘못된]** 옵션을 선택합니다. 검색 결과에는 스키마 양식을 통해 구성한 필수 메타데이터가 누락된 에셋이 표시됩니다.
 
 ![필터 패널의 메타데이터 유효성 검사 조건자에서 선택한 옵션](assets/invalid-metadata-predicate.png)
 
@@ -143,17 +143,17 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 
 *그림:자산 속성 페이지의 컨텍스트 메타데이터*
 
-### JSON 파일에서 속성 지정 {#specify-properties-in-json-file}
+### JSON 파일 {#specify-properties-in-json-file}에 속성 지정
 
-[ **[!UICONTROL 설정]** ] 탭에서 옵션에 대한 속성을 지정하는 대신 해당 키-값 쌍을 지정하여 JSON 파일에서 옵션을 정의할 수 있습니다. JSON 경로 **[!UICONTROL 필드에 JSON 파일 경로를]** 지정합니다.
+**[!UICONTROL 설정]** 탭에서 옵션에 대한 속성을 지정하는 대신 해당 키-값 쌍을 지정하여 JSON 파일에서 옵션을 정의할 수 있습니다. **[!UICONTROL JSON 경로]** 필드에 JSON 파일의 경로를 지정합니다.
 
-#### 스키마 양식에서 탭 추가 또는 삭제 {#adding-deleting-a-tab-in-the-schema-form}
+#### {#adding-deleting-a-tab-in-the-schema-form} 스키마 양식의 탭 추가 또는 삭제
 
-스키마 편집기를 사용하면 탭을 추가하거나 삭제할 수 있습니다. 기본 스키마 양식에는 **[!UICONTROL 기본]**, **[!UICONTROL 고급]** , **[!UICONTROL IPTC]****[!UICONTROL 및]** IPTC 확장탭이포함됩니다.
+스키마 편집기를 사용하면 탭을 추가하거나 삭제할 수 있습니다. 기본 스키마 양식에는 **[!UICONTROL Basic]**, **[!UICONTROL Advanced]**, **[!UICONTROL IPTC]** 및 **[!UICONTROL IPTC 확장]** 탭이 포함됩니다.
 
 ![메타데이터 스키마 양식의 기본 탭](assets/metadata-schema-form-tabs.png)
 
-스키마 양식 `+` 에 탭을 추가하려면 클릭합니다. 기본적으로 새 탭에 이름이 지정됩니다 `Unnamed-1`. 설정 탭에서 이름을 수정할 수 **[!UICONTROL 있습니다]** . 탭 `X` 을 삭제하려면 클릭합니다.
+`+`을 클릭하여 스키마 양식에 탭을 추가합니다. 기본적으로 새 탭의 이름은 `Unnamed-1`입니다. **[!UICONTROL 설정]** 탭에서 이름을 수정할 수 있습니다. 탭을 삭제하려면 `X`을 클릭합니다.
 
 ![메타데이터 스키마 편집기를 사용하여 탭 추가 또는 삭제](assets/metadata-schema-form-new-tab.png)
 
@@ -176,7 +176,7 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 * 다른 필드에 지정된 값을 기반으로 특정 필드에 대해 표시되는 변경 옵션
 * 다른 필드에 지정된 값을 기준으로 특정 필드에 기본 메타데이터 값을 설정합니다.
 
-### CSS 메타데이터 구성 [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+### [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}에서 계단식 메타데이터 구성
 
 선택한 자산의 유형에 따라 CSS 메타데이터를 표시하려는 시나리오를 생각해 보십시오. 몇 가지 예
 
@@ -185,26 +185,26 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 
 선택한 자산 유형에 관계없이 저작권 정보를 필수 필드로 표시합니다.
 
-1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL >]** 자산 **[!UICONTROL >]** 메타데이터 스키마 **[!UICONTROL 로]**&#x200B;이동합니다.
-1. 스키마 **[!UICONTROL Forms]** 페이지에서 스키마 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]** 을 클릭하여 스키마를 편집합니다.
+1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다.
+1. **[!UICONTROL 스키마 Forms]** 페이지에서 스키마 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 스키마를 편집합니다.
 
    ![select_form](assets/select_form.png)
 
-1. (선택 사항) 메타데이터 스키마 편집기에서 조건화할 새 필드를 만듭니다. [설정] 탭에서 이름 및 **[!UICONTROL 속성 경로를]** 지정합니다.
+1. (선택 사항) 메타데이터 스키마 편집기에서 조건화할 새 필드를 만듭니다. **[!UICONTROL 설정]** 탭에서 이름 및 속성 경로를 지정합니다.
 
-   새 탭을 만들려면 탭 `+` 을 클릭하여 추가한 다음 메타데이터 필드를 추가합니다.
+   새 탭을 만들려면 `+`을 클릭하여 탭을 추가한 다음 메타데이터 필드를 추가합니다.
 
    ![add_tab](assets/add_tab.png)
 
-1. 자산 유형에 대한 드롭다운 필드를 추가합니다. [설정] 탭에서 이름 및 **[!UICONTROL 속성 경로를]** 지정합니다. 선택적 설명을 추가합니다.
+1. 자산 유형에 대한 드롭다운 필드를 추가합니다. **[!UICONTROL 설정]** 탭에서 이름 및 속성 경로를 지정합니다. 선택적 설명을 추가합니다.
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. 키-값 쌍은 양식 사용자에게 제공되는 옵션입니다. 키-값 쌍을 수동으로 또는 JSON 파일에서 제공할 수 있습니다.
 
-   * 값을 수동으로 지정하려면 [수동으로 **[!UICONTROL 추가]**]를 선택하고 [선택 **[!UICONTROL 추가]** ]를 클릭하고 옵션 텍스트 및 값을 지정합니다. 예를 들어 비디오, PDF, Word 및 이미지 자산 유형을 지정합니다.
+   * 값을 수동으로 지정하려면 **[!UICONTROL 수동으로 추가]**&#x200B;를 선택하고 **[!UICONTROL 선택 추가]**&#x200B;를 클릭하고 옵션 텍스트와 값을 지정합니다. 예를 들어 비디오, PDF, Word 및 이미지 자산 유형을 지정합니다.
 
-   * JSON 파일에서 값을 동적으로 가져오려면 [JSON 경로를 **[!UICONTROL 통해 추가]** ]를 선택하고 JSON 파일의 경로를 제공합니다. [!DNL Experience Manager] 양식이 사용자에게 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
+   * JSON 파일에서 값을 동적으로 가져오려면 **[!UICONTROL JSON 경로 추가]**&#x200B;를 선택하고 JSON 파일의 경로를 제공하십시오. [!DNL Experience Manager] 양식이 사용자에게 표시될 때 실시간으로 키-값 쌍을 가져옵니다.
 
    두 옵션은 함께 사용할 수 없습니다. JSON 파일에서 옵션을 가져와 수동으로 편집할 수는 없습니다.
 
@@ -224,12 +224,12 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 
    ![video_dependent_fields](assets/video_dependent_fields.png)
 
-1. 자산 유형 필드와 기타 필드 간에 종속성을 만들려면 종속 필드를 선택하고 **[!UICONTROL 규칙]** 탭을 엽니다.
+1. 자산 유형 필드와 다른 필드 간에 종속성을 만들려면 종속 필드를 선택하고 **[!UICONTROL 규칙]** 탭을 엽니다.
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 요구 **[!UICONTROL 사항에서]**&#x200B;새 규칙 **[!UICONTROL 에 따라 필수 옵션을]** 선택합니다.
-1. 규칙 **[!UICONTROL 추가를]** 클릭하고 **[!UICONTROL 자산 유형]** 필드를 선택하여 종속성을 만듭니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 **[!UICONTROL 비디오를 선택합니다]**. Click **[!UICONTROL Done]** to save the changes.
+1. **[!UICONTROL 요구 사항]**&#x200B;에서 새 규칙&#x200B;]**옵션을 기준으로**[!UICONTROL &#x200B;필수 옵션을 선택합니다.
+1. **[!UICONTROL 규칙 추가]**&#x200B;를 클릭하고 **[!UICONTROL 자산 유형]** 필드를 선택하여 종속성을 만듭니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 **[!UICONTROL 비디오]**&#x200B;를 선택합니다. **[!UICONTROL 완료]**&#x200B;를 클릭하여 변경 내용을 저장합니다.
 
    ![define_rule](assets/define_rule.png)
 
@@ -237,9 +237,9 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
    >
    >수동으로 사전 정의된 값이 있는 드롭다운을 규칙과 함께 사용할 수 있습니다. 구성된 JSON 경로가 있는 드롭다운 메뉴는 사전 정의된 값을 사용하여 조건을 적용하는 규칙과 함께 사용할 수 없습니다. 런타임 시 JSON에서 값이 로드되는 경우 사전 정의된 규칙을 적용할 수 없습니다.
 
-1. 가시성 **[!UICONTROL 에서]**&#x200B;새 규칙 **[!UICONTROL 에 따라 표시 옵션을]** 선택합니다.
+1. **[!UICONTROL 가시성]**&#x200B;에서 새 규칙&#x200B;]**옵션에 따라**[!UICONTROL &#x200B;표시됨을 선택합니다.
 
-1. 규칙 **[!UICONTROL 추가를]** 클릭하고 **[!UICONTROL 자산 유형]** 필드를 선택하여 종속성을 만듭니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 **[!UICONTROL 비디오를 선택합니다]**. Click **[!UICONTROL Done]** to save the changes.
+1. **[!UICONTROL 규칙 추가]**&#x200B;를 클릭하고 **[!UICONTROL 자산 유형]** 필드를 선택하여 종속성을 만듭니다. 종속성을 만들 필드 값도 선택합니다. 이 경우 **[!UICONTROL 비디오]**&#x200B;를 선택합니다. **[!UICONTROL 완료]**&#x200B;를 클릭하여 변경 내용을 저장합니다.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -249,10 +249,10 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 
    >[!NOTE]
    >
-   >요구 사항 **[!UICONTROL 조건]** 및 가시성 **** 조건을 서로 독립적으로 적용할 수 있습니다.
+   >**[!UICONTROL 요구 사항]** 조건 및 **[!UICONTROL 가시성]** 조건을 서로 독립적으로 적용할 수 있습니다.
 
 1. 마찬가지로, 자산 유형 필드의 비디오 값과 코덱과 지속 시간과 같은 기타 필드 간에 종속성을 만듭니다.
-1. 자산 유형 [!UICONTROL 필드 및] 페이지 수 및 작성자와 같은 필드(예: [!UICONTROL 문서 자산] 및 Word)에서 문서 자산(PDF와 Word) 간 종속성을 만들려면 단계를 [!UICONTROL 반복합니다].
+1. [!UICONTROL 자산 유형] 필드와 [!UICONTROL 페이지 수] 및 [!UICONTROL 작성자]와 같은 필드 간에 종속성을 만들려면 단계를 반복합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 메타데이터 스키마를 폴더에 적용합니다.
 
 1. 메타데이터 스키마를 적용한 폴더로 이동하고 자산의 속성 페이지를 엽니다. 자산 유형 필드에서 선택한 내용에 따라 관련 CSS 메타데이터 필드가 표시됩니다.
@@ -265,7 +265,7 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 
    *그림:문서에 대한 CSS 메타데이터*
 
-## 메타데이터 스키마 양식 삭제 {#delete-metadata-schema-forms}
+## 메타데이터 스키마 양식 {#delete-metadata-schema-forms} 삭제
 
 [!DNL Experience Manager] 사용자 정의 스키마 양식만 삭제할 수 있습니다. 기본 스키마 양식/템플릿을 삭제할 수 없습니다. 그러나 이러한 양식에서 사용자 정의 변경 사항을 삭제할 수 있습니다.
 
@@ -273,28 +273,28 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 
 >[!NOTE]
 >
->* 기본 양식에 대한 사용자 지정 변경 사항을 삭제하면 잠금 ![잠금이 양식](assets/do-not-localize/lock_closed_icon.svg) 앞에 다시 나타납니다. 양식은 기본 상태로 되돌려졌음을 나타냅니다.
->* 기본 메타데이터 스키마 양식은 삭제할 수 없습니다 [!DNL Assets].
+>* 기본 양식에 대한 사용자 지정 변경 내용을 삭제하면 잠금 ![잠금 닫힘](assets/do-not-localize/lock_closed_icon.svg)이 양식 앞에 다시 나타납니다. 양식은 기본 상태로 되돌려졌음을 나타냅니다.
+>* [!DNL Assets]에서 기본 메타데이터 스키마 양식을 삭제할 수 없습니다.
 
 
 ## MIME 형식의 스키마 양식 {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] 기본적으로 다양한 MIME 유형에 대한 기본 양식을 제공합니다. 그러나 다양한 MIME 형식의 자산에 대해 사용자 지정 양식을 추가할 수 있습니다.
 
-### MIME 유형에 새 양식 추가 {#add-new-forms-for-mime-types}
+### MIME 형식의 새 양식 추가 {#add-new-forms-for-mime-types}
 
-적절한 양식 유형 아래에서 양식을 만듭니다. 예를 들어 하위 유형에 대한 템플릿을 추가하려면 &quot;이미지&quot; 양식 아래에 양식을 `image/png` 만듭니다. 스키마 양식의 제목은 하위 유형 이름입니다. 이 경우 제목은 입니다 `png`.
+적절한 양식 유형 아래에서 양식을 만듭니다. 예를 들어 `image/png` 하위 유형에 대한 템플릿을 추가하려면 &quot;image&quot; 양식 아래에 양식을 만듭니다. 스키마 양식의 제목은 하위 유형 이름입니다. 이 경우 제목은 `png`입니다.
 
-#### 다양한 MIME 유형에 기존 스키마 템플릿 사용 {#use-an-existing-schema-template-for-various-mime-types}
+#### 다양한 MIME 유형 {#use-an-existing-schema-template-for-various-mime-types}에 기존 스키마 템플릿 사용
 
-기존 템플릿을 다른 MIME 유형에 사용할 수 있습니다. 예를 들어 MIME 형식의 자산에 `image/jpeg` 양식을 사용하십시오 `image/png`.
+기존 템플릿을 다른 MIME 유형에 사용할 수 있습니다. 예를 들어 MIME 유형 `image/png`의 자산에 대해 `image/jpeg` 양식을 사용하십시오.
 
-이 경우 CRX 저장소의 노드 `/etc/dam/metadataeditor/mimetypemappings` 를 만듭니다. 노드의 이름을 지정하고 다음 속성을 정의합니다.
+이 경우 CRX 저장소의 `/etc/dam/metadataeditor/mimetypemappings`에 노드를 만듭니다. 노드의 이름을 지정하고 다음 속성을 정의합니다.
 
 | 이름 | 설명 | 유형 | 값 |
 |------|-------------|------|-------|
 | `exposedmimetype` | 매핑할 기존 양식의 이름 | `String` | `image/jpeg` |
-| `mimetypes` | 특성에 정의된 양식을 사용하는 MIME 형식 `exposedmimetype` 목록 | `String` | `image/png` |
+| `mimetypes` | `exposedmimetype` 특성에 정의된 양식을 사용하는 MIME 형식 목록 | `String` | `image/png` |
 
 [!DNL Assets] 다음 MIME 형식과 스키마 양식을 매핑합니다.
 
@@ -314,7 +314,7 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 
 ## 메타데이터 스키마에 대한 액세스 권한 부여 {#grant-access-to-metadata-schemas}
 
-메타데이터 스키마 기능은 관리자만 사용할 수 있습니다. 하지만 관리자는 일부 권한을 수정하여 비관리자에게 액세스할 수 있습니다. 관리자가 아닌 사용자가 폴더에 대한 권한을 만들고, 수정하고, 삭제할 수 있도록 `/conf` 합니다.
+메타데이터 스키마 기능은 관리자만 사용할 수 있습니다. 하지만 관리자는 일부 권한을 수정하여 비관리자에게 액세스할 수 있습니다. 관리자가 아닌 사용자가 `/conf` 폴더에 대한 권한을 만들고, 수정하고, 삭제합니다.
 
 ## 폴더별 메타데이터 적용 {#apply-folder-specific-metadata}
 
@@ -328,26 +328,26 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 
 하위 폴더에 다른 스키마를 적용할 수 있습니다. 하위 폴더 내의 에셋은 바로 가기 하위 폴더의 메타데이터 스키마를 상속합니다. 하위 폴더 수준에 스키마나 동일한 스키마가 적용되지 않으면 해당 에셋은 상위 폴더에서 스키마를 상속합니다.
 
-1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL > 자산]** **[!UICONTROL >]** 메타데이터 스키마 **[!UICONTROL 로 이동합니다]**. 메타데이터 **[!UICONTROL 스키마 Forms]** 페이지가 표시됩니다.
-1. 양식 앞에 있는 확인란(예: 기본 메타데이터 양식)을 선택하고 **[!UICONTROL 복사를]** 클릭하고 사용자 지정 양식으로 저장합니다. 예를 들어 양식의 사용자 지정 이름을 지정합니다 `my_default`. 또는 사용자 지정 양식을 만들 수 있습니다.
+1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지가 표시됩니다.
+1. 양식 앞에 있는 확인란(예: 기본 메타데이터 양식)을 선택하고 **[!UICONTROL 복사]**&#x200B;를 클릭하고 사용자 지정 양식으로 저장합니다. 양식의 사용자 지정 이름(예: `my_default`)을 지정합니다. 또는 사용자 지정 양식을 만들 수 있습니다.
 
-1. 메타데이터 **[!UICONTROL 스키마 Forms]** 페이지에서 `my_default` 양식을 선택한 다음 **[!UICONTROL 편집을 클릭합니다]**.
+1. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지에서 `my_default` 양식을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 
-1. [ **[!UICONTROL 메타데이터 스키마 편집기]** ] 페이지에서 스키마 양식에 텍스트 필드를 추가합니다. 예를 들어 레이블 카테고리와 함께 필드를 **[!UICONTROL 추가합니다]**.
+1. **[!UICONTROL 메타데이터 스키마 편집기]** 페이지에서 스키마 양식에 텍스트 필드를 추가합니다. 예를 들어 레이블이 **[!UICONTROL Category]**&#x200B;인 필드를 추가합니다.
 
    ![메타데이터 스키마 양식 편집기에 추가된 텍스트 필드](assets/text-field-metadata-schema-editor.png)
 
    *그림:메타데이터 스키마 양식 편집기에 텍스트 필드가 추가되었습니다.*
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [ **[!UICONTROL 메타데이터 스키마 Forms]** ] 페이지에 나열됩니다.
-1. 도구 모음 **[!UICONTROL 에서]** 폴더에 적용을 클릭하여 사용자 지정 메타데이터를 폴더에 적용합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 **[!UICONTROL 메타데이터 스키마 Forms]** 페이지에 나열됩니다.
+1. 사용자 지정 메타데이터를 폴더에 적용하려면 도구 모음에서 **[!UICONTROL 폴더에 적용]**&#x200B;을 클릭합니다.
 
-1. 수정된 스키마를 적용할 폴더를 선택한 다음 적용을 **[!UICONTROL 클릭합니다]**.
+1. 수정된 스키마를 적용할 폴더를 선택한 다음 **[!UICONTROL 적용]**&#x200B;을 클릭합니다.
 
    ![메타데이터 스키마를 적용할 폴더 선택](assets/metadata-schema-select-folder.png)
 
-1. 폴더에 다른 메타데이터 스키마가 적용된 경우 기존 메타데이터 스키마를 덮어쓸지 묻는 메시지가 나타납니다. 덮어쓰기를 **클릭합니다**.
-1. 확인 **을** 클릭하여 성공 메시지를 닫습니다.
+1. 폴더에 다른 메타데이터 스키마가 적용된 경우 기존 메타데이터 스키마를 덮어쓸지 묻는 메시지가 나타납니다. **덮어쓰기**&#x200B;를 클릭합니다.
+1. **OK**&#x200B;을 클릭하여 성공 메시지를 닫습니다.
 1. 수정된 메타데이터 스키마를 적용한 폴더로 이동합니다.
 
 ## 필수 메타데이터 정의 {#define-mandatory-metadata}
@@ -356,24 +356,24 @@ in [!DNL Adobe Experience Manager Assets], 스키마에는 채울 특정 정보�
 
 >[!NOTE]
 >
->메타데이터 필드는 다른 필드의 값을 기준으로 필수로 정의할 수 있습니다. 카드 보기에서는 이러한 필수 메타데이터 필드에 대한 누락된 메타데이터에 대한 경고 메시지를 표시하지 [!DNL Experience Manager] 않습니다.
+>메타데이터 필드는 다른 필드의 값을 기준으로 필수로 정의할 수 있습니다. 카드 보기에서는 이러한 필수 메타데이터 필드에 대한 누락된 메타데이터에 대한 경고 메시지가 표시되지 않습니다.[!DNL Experience Manager]
 
-1. 인터페이스에서 [!DNL Experience Manager] 도구 **[!UICONTROL > 자산]** **[!UICONTROL >]** 메타데이터 스키마 **[!UICONTROL 로 이동합니다]**. 메타데이터 **[!UICONTROL 스키마 Forms]** 페이지가 표시됩니다.
-1. 기본 메타데이터 양식을 사용자 지정 양식으로 저장합니다. 예를 들어 다른 이름으로 저장합니다 `my_default`.
+1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;로 이동합니다. **[!UICONTROL 메타데이터 스키마 Forms]** 페이지가 표시됩니다.
+1. 기본 메타데이터 양식을 사용자 지정 양식으로 저장합니다. 예를 들어 `my_default`으로 저장합니다.
 
-1. 사용자 지정 양식을 편집합니다. 필수 필드를 추가합니다. 예를 들어 카테고리 **** 필드를 추가하고 필드를 필수 필드로 만듭니다.
+1. 사용자 지정 양식을 편집합니다. 필수 필드를 추가합니다. 예를 들어 **[!UICONTROL 범주]** 필드를 추가하고 필드를 필수 필드로 만듭니다.
 
    ![메타데이터 스키마 양식 편집기의 규칙 탭에서 필수를 선택하여 메타데이터 양식에 필수 필드 추가](assets/mandatory-field-metadata-schema-editor.png)
 
    *그림:메타데이터 스키마 양식 편집기의 필수 필드입니다.*
 
-1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 [ **[!UICONTROL 메타데이터 스키마 Forms]** ] 페이지에 나열됩니다. 양식을 선택한 다음 도구 모음 **[!UICONTROL 에서 폴더에]** 적용을 클릭하여 사용자 지정 메타데이터를 폴더에 적용합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 수정된 양식이 **[!UICONTROL 메타데이터 스키마 Forms]** 페이지에 나열됩니다. 양식을 선택한 다음 도구 모음에서 **[!UICONTROL 폴더에 적용]**&#x200B;을 클릭하여 사용자 지정 메타데이터를 폴더에 적용합니다.
 
 1. 사용자 지정 양식에 추가한 필수 필드에 대한 메타데이터가 없는 일부 자산을 폴더로 이동하고 업로드합니다. 필수 필드에 대한 누락된 메타데이터에 대한 메시지가 자산의 카드 보기에 표시됩니다.
 
    ![폴더에 자산 업로드 시 자산 카드 보기에서 필수 메타데이터가 누락되는 메시지](assets/metadata-missing-info-card-view.png)
 
-1. (선택 사항) 액세스 `https://[aem_server]:[port]/system/console/components/`. 기본적으로 비활성화된 구성 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 요소를 구성하고 활성화합니다. 자산에 대한 메타데이터의 유효성을 [!DNL Experience Manager] 확인하는 빈도를 설정합니다. 이 구성은 자산의 속성 `hasValidMetadata` 을 `jcr:content` 추가합니다. [!DNL Experience Manager] 이 속성을 사용하여 검색 결과의 잘못된 자산을 필터링합니다. 확인 후 자산을 추가하는 경우, 자산은 다음 예약된 확인 `hasValidMetadata` 이 될 때까지 로 플래그되지 않습니다. 따라서 다음 예약 확인 후 까지 유효하지 않은 메타데이터의 검색 필터에 자산이 표시되지 않습니다.
+1. (선택 사항) `https://[aem_server]:[port]/system/console/components/`에 액세스합니다. 기본적으로 비활성화된 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 구성 요소를 구성하고 활성화합니다. 자산에 대한 메타데이터의 유효성을 확인하는 빈도를 설정합니다. [!DNL Experience Manager] 이 구성은 자산의 `jcr:content`에 속성 `hasValidMetadata`을 추가합니다. [!DNL Experience Manager] 이 속성을 사용하여 검색 결과의 잘못된 자산을 필터링합니다. 확인 후 자산을 추가하는 경우, 자산은 다음 예약된 확인 때까지 `hasValidMetadata`으로 플래그되지 않습니다. 따라서 다음 예약 확인 후 까지 유효하지 않은 메타데이터의 검색 필터에 자산이 표시되지 않습니다.
 
    >[!CAUTION]
    >
