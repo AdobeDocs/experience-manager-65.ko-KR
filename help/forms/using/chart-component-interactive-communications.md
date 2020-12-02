@@ -18,23 +18,23 @@ ht-degree: 1%
 ---
 
 
-# 인터랙티브 커뮤니케이션에서 차트 사용{#using-charts-in-interactive-communications}
+# Interactive Communications에서 차트 사용{#using-charts-in-interactive-communications}
 
 차트나 그래프는 데이터를 시각적으로 나타냅니다. 이는 많은 양의 정보를 이해하기 쉬운 시각적 포맷으로 요약해 놓아, 인터랙티브 커뮤니케이션의 수신자가 복잡한 데이터를 보다 시각화, 해석 및 분석할 수 있도록 한다.
 
-대화형 통신을 생성하는 동안 차트를 추가하여 Interactive Communication의 양식 데이터 모델에서 2차원 데이터를 시각적으로 나타낼 수 있습니다. 차트 구성 요소를 사용하면 다음 유형의 차트를 추가하고 구성할 수 있습니다. 파이, 열, 도넛, 막대, 라인, 선 및 점, 점, 영역 및 Quadrant입니다.
+대화형 통신을 생성하는 동안 차트를 추가하여 Interactive Communication의 양식 데이터 모델에서 2차원 데이터를 시각적으로 나타낼 수 있습니다. 차트 구성 요소를 사용하면 다음 유형의 차트를 추가하고 구성할 수 있습니다.파이, 열, 도넛, 막대, 라인, 선 및 점, 점, 영역 및 Quadrant입니다.
 
-## 대화형 통신에서 차트 추가 및 구성 {#add-and-configure-chart-in-an-interactive-communication}
+## 대화형 통신 {#add-and-configure-chart-in-an-interactive-communication}에서 차트 추가 및 구성
 
 대화형 통신에서 차트를 추가하고 구성하려면 다음 단계를 수행하십시오.
 
-1. 대화형 **통신** 사이드 킥에서 구성 요소를 누릅니다.
-1. 차트 **구성 요소를** 다음 구성 요소 중 하나로 드래그하여 놓습니다.
+1. 대화형 통신 사이드 킥에서 **구성 요소**&#x200B;를 누릅니다.
+1. **차트** 구성 요소를 다음 구성 요소 중 하나로 드래그하여 놓습니다.
 
-   * 인쇄 채널: Target 영역 또는 이미지 필드
-   * 웹 채널: 패널 또는 Target 영역
+   * 인쇄 채널:Target 영역 또는 이미지 필드
+   * 웹 채널:패널 또는 Target 영역
 
-1. Interactive Communication Editor에서 차트 구성 요소를 누르고 구성 요소 도구 모음 **[!UICONTROL 에서 구성(]** configure_ ![icon](assets/configure_icon.png))을 선택합니다.
+1. 대화형 통신 편집기에서 차트 구성 요소를 누르고 구성 요소 도구 모음에서 **[!UICONTROL 구성(]** ![configure_icon](assets/configure_icon.png))을 선택합니다.
 
    차트 등록 정보가 왼쪽 창에 표시됩니다.
 
@@ -42,20 +42,20 @@ ht-degree: 1%
 
    인쇄 채널에서 라인 유형 차트의 기본 속성
 
-   ![웹 채널에서 라인 유형 차트의 기본 속성](assets/chart_properties_web_new.png)
+   ![웹 채널의 라인 유형 차트의 기본 속성](assets/chart_properties_web_new.png)
 
-   웹 채널에서 라인 유형 차트의 기본 속성
+   웹 채널의 라인 유형 차트의 기본 속성
 
-1. 채널 유형에 따라 [차트 속성을](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) 구성합니다.
-1. (인쇄 채널만 해당) **[!UICONTROL 에이전트]**&#x200B;설정에서 에이전트가 이 차트를 반드시 사용해야 하는지 지정합니다. [에이전트 **[!UICONTROL 가 이 차트]** 사용 필수] 옵션을 선택하지 않은 경우 에이전트는 [에이전트 UI의 [ **[!UICONTROL 콘텐트] 탭에서 차트에 대한 눈 아이콘]** 을 탭하여 차트를 표시하거나 숨길 수 있습니다.
+1. 채널 유형에 따라 [차트 속성](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties)을 구성합니다.
+1. (인쇄 채널만 해당) **[!UICONTROL 에이전트 설정]**&#x200B;에서 에이전트가 이 차트를 반드시 사용해야 하는지 지정합니다. **[!UICONTROL t는 에이전트가 이 차트 사용]** 옵션을 선택하지 않으면 에이전트는 에이전트 UI의 **[!UICONTROL 콘텐트]** 탭에서 차트에 대한 눈 아이콘을 탭하여 차트를 표시하거나 숨길 수 있습니다.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. done_icon ![을 눌러](assets/done_icon.png) 차트 속성을 저장합니다.
+1. 차트 속성을 저장하려면 ![done_icon](assets/done_icon.png)을 누릅니다.
 
-   미리 **[!UICONTROL 보기를]** 눌러 차트와 연관된 모양과 데이터를 봅니다. 편집 **[!UICONTROL 을]** 눌러 차트의 속성을 재구성합니다.
+   **[!UICONTROL 미리 보기]**&#x200B;를 눌러 차트와 연관된 모양과 데이터를 봅니다. **[!UICONTROL 편집]**&#x200B;을 눌러 차트의 속성을 다시 구성합니다.
 
-## 차트 속성 구성 {#configure-chart-properties}
+## 차트 속성 {#configure-chart-properties} 구성
 
 인쇄 및 웹 채널용 차트를 만드는 동안 다음 속성을 구성합니다.
 
@@ -153,7 +153,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>툴팁</td>
-   <td><p>웹 채널의 차트에 있는 데이터 포인트 위에 도구 설명이 표시되는 형식입니다. 기본값은 ${x}(${y})입니다. 차트 유형에 따라 차트의 포인트, 막대 또는 슬라이스에 마우스를 가리키면 변수 ${x}와 ${y}(은)가 X축 및 Y축에 해당하는 값으로 동적으로 대체되고 툴팁에 표시됩니다.</p> <p>도구 설명을 비활성화하려면 도구 설명 <span class="uicontrol">필드를</code> 비워둡니다. 이 옵션은 라인 및 영역 차트에 적용할 수 없습니다. 예를 들어 <a href="#chartoutputprintweb">예제 1을 참조하십시오. 인쇄 및 웹으로 차트 출력</a>.</code></p> </td>
+   <td><p>웹 채널의 차트에 있는 데이터 포인트 위에 도구 설명이 표시되는 형식입니다. 기본값은 ${x}(${y})입니다. 차트 유형에 따라 차트의 포인트, 막대 또는 슬라이스에 마우스를 가리키면 변수 ${x}와 ${y}(은)가 X축 및 Y축에 해당하는 값으로 동적으로 대체되고 툴팁에 표시됩니다.</p> <p>도구 설명을 비활성화하려면 <span class="uicontrol">도구 설명</code> 필드를 비워 두십시오. 이 옵션은 라인 및 영역 차트에 적용할 수 없습니다. 예를 들어 <a href="#chartoutputprintweb">예제 1을 참조하십시오.인쇄 및 웹</a>의 차트 출력.</code></p> </td>
    <td>웹</td>
   </tr>
   <tr>
@@ -162,18 +162,18 @@ ht-degree: 1%
     <ul>
      <li><strong>범례 표시: </strong>활성화되면 파이 또는 도넛 차트에 대한 범례를 표시합니다.</li>
      <li><strong>범례 위치: </strong>차트에 대한 범례 위치를 지정합니다. 사용 가능한 옵션은 오른쪽, 왼쪽, 위쪽 및 아래입니다. 인쇄 채널에서 오른쪽 범례를 사용하는 것이 좋습니다.</li>
-     <li><strong>내부 반경</strong>: 도넛형 차트는 차트에 있는 내부 원의 반경(픽셀 단위)을 지정할 수 있습니다.</li>
-     <li><strong>선 색상</strong>: 라인, 라인 및 포인트, 영역 차트에 사용할 수 있으며 차트의 라인 색상을 지정합니다.</li>
-     <li><strong>포인트 색상</strong>: 차트의 포인트 색상을 지정할 수 있는 점 및 선 및 점 차트에 사용할 수 있습니다.<br /> </li>
-     <li><strong>영역 색상</strong>: 영역 차트에서 차트의 선 아래 영역에 대한 색상을 지정할 수 있습니다.</li>
-     <li><strong>참조점 &gt; 바인딩 유형: </strong>Quadrant 차트에서 참조점의 바인딩 유형을<strong> </strong>지정할 수 있습니다. 정적 텍스트 또는 데이터 모델 개체 속성을 사용하여 참조점의 값을 정의합니다.</li>
-     <li><strong>참조점(Reference Point) &gt; X축(X-axis): </strong>바인딩 유형 드롭다운 목록에서 정적 <span class="uicontrol">을</code> 선택하여 참조점의 X축 값을 지정하는 경우 Quadrant 차트에 사용할 수 있습니다.</code></li>
-     <li><strong>참조점(Reference Point) &gt; Y축(Y-axis): </strong>바인딩 유형 드롭다운 목록에서 정적 <span class="uicontrol">을</code> 선택하여 참조점의 Y축 값을 지정하는 경우 Quadrant 차트에 사용할 수 있습니다.</code></li>
-     <li><strong>참조 점 &gt; 계열에 대한 데이터 모델 개체: </strong>바인딩 유형 드롭다운 목록에서 <span class="uicontrol">데이터 모델 객체</code> (Data Model Object)를 선택하는 경우 여러 시리즈 Quadrant 차트에서 사용할 수 있습니다. 참조 점에 대한 시리즈를 식별하는 양식 데이터 모델 개체 속성을 정의합니다. </code></li>
-     <li><strong>참조 점 &gt; 계열에 대한 데이터 모델 객체 값: </strong>바인딩 유형 드롭다운 목록에서 <span class="uicontrol">데이터 모델 객체</code> (Data Model Object)를 선택하는 경우 여러 시리즈 Quadrant 차트에서 사용할 수 있습니다. 계열에 대한 양식 데이터 모델 개체 속성 및 이 필드에 정의된 값을 사용하여 참조점에 대한 시리즈를 식별합니다.</code></li>
-     <li><strong>참조 점(Reference Point) &gt; 참조 점에 대한 데이터 모델 개체(Data Model Object): </strong>바인딩 유형 드롭다운 목록에서 <span class="uicontrol">데이터 모델 객체</code> 를 선택하는 경우 Quadrant 차트에 사용할 수 있습니다. X축 및 Y축에 표시된 속성의 동위 관계인 양식 데이터 모델 개체 속성을 정의합니다. 또한 여러 계열에 대해 해당 계열에 대해 정의된 데이터 모델 개체 속성의 하위 엔티티인 데이터 모델 개체 속성을 정의합니다.</code></li>
-     <li><strong>참조 점(Reference Point) &gt; 참조 점에 대한 데이터 모델 개체 값(Data Model Object Value): </strong>바인딩 유형 드롭다운 목록에서 <span class="uicontrol">데이터 모델 객체</code> 를 선택하는 경우 Quadrant 차트에 사용할 수 있습니다. 참조 점에 양식 데이터 모델 객체 등록 정보와 이 필드에 정의된 값을 사용하여 차트의 참조 지점을 식별합니다.<br /> <strong>Quadrant 레이블 &gt; 왼쪽 상단:</strong> 왼쪽 위 사분면에 대한 이름을 지정하는 Quadrant 차트에 사용할 수 있습니다.</code></li>
-     <li><strong>Quadrant 레이블 &gt; 오른쪽 상단:</strong> Quadrant 차트에서 Top Right Quadrant의 이름을 지정할 수 있습니다.</li>
+     <li><strong>내부 반경</strong>:도넛형 차트는 차트에 있는 내부 원의 반경(픽셀 단위)을 지정할 수 있습니다.</li>
+     <li><strong>선 색상</strong>:라인, 라인 및 포인트, 영역 차트에 사용할 수 있으며 차트의 라인 색상을 지정합니다.</li>
+     <li><strong>포인트 색상</strong>:차트의 포인트 색상을 지정할 수 있는 점 및 선 및 점 차트에 사용할 수 있습니다.<br /> </li>
+     <li><strong>영역 색상</strong>:영역 차트에서 차트의 선 아래 영역에 대한 색상을 지정할 수 있습니다.</li>
+     <li><strong>참조점 &gt; 바인딩 유형: </strong>Quadrant 차트에서 참조 지점<strong> </strong>의 바인딩 유형을 지정할 수 있습니다. 정적 텍스트 또는 데이터 모델 개체 속성을 사용하여 참조점의 값을 정의합니다.</li>
+     <li><strong>참조점(Reference Point) &gt; X축(X-axis): </strong>바인딩 유형 드롭다운 목록 <span class="uicontrol"></code> 에서 통계를 선택하여 참조점에 대한 X축 값을 지정하는 경우 Quadrant 차트에 사용할 수 있습니다.</code></li>
+     <li><strong>참조점(Reference Point) &gt; Y축(Y-axis): </strong>바인딩 유형 드롭다운 목록 <span class="uicontrol"></code> 에서 아티클을 선택하여 참조 점에 대한 Y축 값을 지정하는 경우 Quadrant 차트에 사용할 수 있습니다.</code></li>
+     <li><strong>참조 점 &gt; 계열에 대한 데이터 모델 개체: </strong>바인딩 유형 드롭다운 목록에서  <span class="uicontrol">데이터 모델 </code> 개체를 선택하는 경우 여러 시리즈 Quadrant 차트에서 사용할 수 있습니다. 참조 점에 대한 시리즈를 식별하는 양식 데이터 모델 개체 속성을 정의합니다. </code></li>
+     <li><strong>참조 점 &gt; 계열에 대한 데이터 모델 객체 값: </strong>바인딩 유형 드롭다운 목록에서  <span class="uicontrol">데이터 모델 </code> 개체를 선택하는 경우 여러 시리즈 Quadrant 차트에서 사용할 수 있습니다. 계열에 대한 양식 데이터 모델 개체 속성 및 이 필드에 정의된 값을 사용하여 참조점에 대한 시리즈를 식별합니다.</code></li>
+     <li><strong>참조 점(Reference Point) &gt; 참조 점에 대한 데이터 모델 개체(Data Model Object): </strong>바인딩 유형 드롭다운 목록에서  <span class="uicontrol">데이터 모델 </code> 개체를 선택하는 경우 Quadrant 차트에 사용할 수 있습니다. X축 및 Y축에 표시된 속성의 동위 관계인 양식 데이터 모델 개체 속성을 정의합니다. 또한 여러 계열에 대해 해당 계열에 대해 정의된 데이터 모델 개체 속성의 하위 엔티티인 데이터 모델 개체 속성을 정의합니다.</code></li>
+     <li><strong>참조 점(Reference Point) &gt; 참조 점에 대한 데이터 모델 개체 값(Data Model Object Value): </strong>바인딩 유형 드롭다운 목록에서  <span class="uicontrol">데이터 모델 </code> 개체를 선택하는 경우 Quadrant 차트에 사용할 수 있습니다. 참조 점에 양식 데이터 모델 객체 등록 정보와 이 필드에 정의된 값을 사용하여 차트의 참조 지점을 식별합니다.<br /> <strong>Quadrant Labels &gt; Top Left: Top </strong> Left Quadrant의 이름을 지정하는 Quadrant 차트에 사용할 수 있습니다.</code></li>
+     <li><strong>Quadrant Labels &gt; Top Right: Top Right Quadrant</strong> 의 이름을 지정하는 Quadrant 차트에 사용할 수 있습니다.</li>
      <li><strong>Quadrant 레이블 &gt; 오른쪽 아래: </strong>Quadrant 차트에서 오른쪽 하단에 대한 이름을 지정할 수 있습니다.</li>
      <li><strong>Quadrant 레이블 &gt; 왼쪽 아래: </strong>왼쪽 하단 사분면에 대한 이름을 지정하는 Quadrant 차트에 사용할 수 있습니다.</li>
     </ul> </td>
@@ -182,35 +182,35 @@ ht-degree: 1%
  </tbody>
 </table>
 
-## 차트에 함수 사용 {#use-functions-in-chart}
+## 차트 {#use-functions-in-chart}에 함수 사용
 
 통계적 함수를 사용하여 차트에서 플로팅할 소스 데이터의 값을 계산하도록 차트를 구성할 수 있습니다. 차트에 함수를 적용하면 양식 데이터 모델에서 직접 제공하지 않는 데이터를 플롯할 수 있습니다.
 
 ![차트의 기능](assets/functions_charts_new.png)
 
-차트 구성 요소에는 일부 내장 기능이 포함되어 있지만, [사용자 지정 기능을](#customfunctionsweb) 작성하여 웹 채널의 차트 구성에서 사용할 수 있도록 만들 수 있습니다.
+차트 구성 요소에는 일부 내장 함수가 포함되어 있지만, [사용자 지정 함수](#customfunctionsweb)를 작성하여 웹 채널의 차트 구성에서 사용할 수 있도록 만들 수 있습니다.
 
 차트 구성 요소에서는 기본적으로 다음 기능을 사용할 수 있습니다.
 
-**평균(평균)** 다른 축에 있는 주어진 값에 대한 X 또는 Y축에 있는 값의 평균을 반환합니다.
+**평균(평균)** 다른 축에 있는 주어진 값에 대한 X 또는 Y 축에 있는 값의 평균을 반환합니다.
 
 **합계** X축이나 Y축에 있는 다른 축에 있는 주어진 값에 대한 모든 값의 합계를 반환합니다.
 
 **최대값** X축이나 Y축에 있는 값의 최대값을 다른 축에 반환합니다.
 
-**주파수** 지정된 값이 다른 축에 있는 X 또는 Y 축에 있는 값의 수를 반환합니다.
+**주파수** 다른 축에 있는 주어진 값에 대해 X 또는 Y축에 있는 값의 수를 반환합니다.
 
-**범위** X 또는 Y 축에 있는 값의 최대값과 최소값 간의 차이를 다른 축에 반환합니다.
+**범위** X 또는 Y축에 있는 값의 최대값과 최소값 간의 차이를 다른 축에 반환합니다.
 
 **중간값이** 다른 축에 있는 주어진 값에 대해 X축 또는 Y축에 있는 높은 값과 낮은 값을 분리하는 값을 반환합니다.
 
-**최소값은** X축이나 Y축에 있는 값의 최소값을 다른 축에 반환합니다.
+**최소값** 이 다른 축에 있는 주어진 값에 대한 X 또는 Y 축에 있는 값의 최소값을 반환합니다.
 
 **모드** X축이나 Y축에 나타나는 값이 다른 축에 있는 지정된 값으로 반환됩니다.
 
-자세한 내용은 [예제 2를 참조하십시오. 라인 차트의 합계 및 빈도 함수](#applicationsumfrequency)적용
+자세한 내용은 [예제 2를 참조하십시오.라인 차트](#applicationsumfrequency)에서 합계 및 빈도 함수 적용.
 
-### 웹 채널의 사용자 정의 함수 {#customfunctionsweb}
+### 웹 채널 {#customfunctionsweb}의 사용자 지정 함수
 
 차트의 기본 기능을 사용하는 것 외에도 JavaScript™에서 사용자 정의 함수를 작성하여 웹 채널의 차트 구성 요소의 함수 목록에서 사용할 수 있도록 할 수 있습니다.
 
@@ -228,55 +228,55 @@ Multiply(valueArray, category) {
 
 사용자 지정 함수를 작성했으면 다음을 수행하여 차트 구성에서 사용할 수 있도록 합니다.
 
-1. 관련 대화형 통신과 연결된 클라이언트 라이브러리에 사용자 지정 함수를 추가합니다. 자세한 내용은 [제출 작업](/help/forms/using/configuring-submit-actions.md) 구성 및 [클라이언트측 라이브러리 사용을 참조하십시오](/help/sites-developing/clientlibs.md).
+1. 관련 대화형 통신과 연결된 클라이언트 라이브러리에 사용자 지정 함수를 추가합니다. 자세한 내용은 [제출 작업 ](/help/forms/using/configuring-submit-actions.md) 및 [클라이언트측 라이브러리 사용](/help/sites-developing/clientlibs.md)을 참조하십시오.
 
 1. 함수 드롭다운에 사용자 지정 함수를 표시하려면 CRXDe Lite에서 다음 속성을 사용하여 앱 폴더에 `nt:unstructured` 노드를 만듭니다.
 
-   * 값을 사용하여 속성 `guideComponentType` 을 추가합니다 `fd/af/reducer`. (mandatory)
+   * `fd/af/reducer` 값으로 `guideComponentType` 속성을 추가합니다. (mandatory)
 
-   * 사용자 지정 JavaScript™ 함수 `value` 의 정규화된 이름에 속성을 추가합니다. (필수) 값을 곱과 같은 사용자 지정 함수의 이름으로 설정합니다.
-   * 함수 드롭다운 `jcr:description` 에 표시되는 사용자 지정 함수의 이름으로 표시할 값과 함께 속성을 추가합니다. 예: 곱하기 ****.
+   * 사용자 지정 JavaScript™ 함수의 정규화된 이름에 속성 `value`을 추가합니다. (필수) 값을 곱과 같은 사용자 지정 함수의 이름으로 설정합니다.
+   * 함수 드롭다운에 표시되는 사용자 지정 함수의 이름으로 표시할 값과 함께 `jcr:description` 속성을 추가합니다. 예: **곱하기**.
 
-   * 사용자 지정 함수 `qtip` 에 대한 간단한 설명이 될 값을 갖는 속성을 추가합니다. 함수 드롭다운 목록에서 함수 이름 위에 마우스를 올려 놓으면 **도구** 설명이 표시됩니다.
+   * 사용자 지정 함수에 대한 간단한 설명이 될 값이 있는 `qtip` 속성을 추가합니다. 마우스 포인터를 **함수** 드롭다운 목록에서 함수 이름 위로 가져가면 도구 설명으로 나타납니다.
 
-1. 모두 **저장을** 클릭하여 구성을 저장합니다.
+1. **모두 저장**&#x200B;을 클릭하여 구성을 저장합니다.
 
 이제 이 함수를 차트에서 사용할 수 있습니다.
 
-## 예 1: 인쇄 및 웹으로 차트 출력 {#chartoutputprintweb}
+## 예 1:인쇄 및 웹의 차트 출력 {#chartoutputprintweb}
 
 기본 탭에서 차트 유형, 데이터가 들어 있는 소스 양식 데이터 모델 속성, 차트의 X축 및 Y축에 플로팅되는 레이블 및 선택적으로 통계적 함수를 정의하여 차트에 플로팅할 값을 계산합니다.
 
 인터랙티브 커뮤니케이션을 사용하여 생성된 카드 문의 도움을 받아 기본 속성에 필요한 최소 정보를 자세히 이해하겠습니다. 명세서에서 서로 다른 비용의 양을 나타내는 차트를 생성하고자 한다고 가정합니다. 인터랙티브 커뮤니케이션의 인쇄 및 웹 출력에 대해 다양한 유형의 차트를 사용하고자 합니다.
 
-### 인쇄용 열 차트 {#columnchartprint}
+### 인쇄 {#columnchartprint} 열 차트
 
 이를 수행하려면 다음 속성을 지정합니다.
 
-* **[!UICONTROL 이름]** - 차트의 이름을 지정합니다.
-* **[!UICONTROL 차트 유형]** - **드롭다운** 목록에서 열을 선택합니다.
-* **[!UICONTROL 제목]** - X축에 대한 비용 유형 및 Y축에 대한 거래 금액을 지정합니다.
-* **[!UICONTROL 데이터 모델 객체]** - 데이터 모델 객체 속성을 선택하여 X축(비용 유형) 및 Y축(트랜잭션 금액)에 대한 데이터 바인딩을 생성합니다.
+* **[!UICONTROL 이름]**  - 차트의 이름을 지정합니다.
+* **[!UICONTROL 차트 유형]**  -  **** 드롭다운 목록에서 열을 선택합니다.
+* **[!UICONTROL 제목]**  - X축에 대한 비용 유형 및 Y축에 대한 거래 금액을 지정합니다.
+* **[!UICONTROL 데이터 모델 객체]**  - 데이터 모델 객체 속성을 선택하여 X축(비용 유형) 및 Y축(트랜잭션 금액)에 대한 데이터 바인딩을 생성합니다.
 
 ![인터랙티브 커뮤니케이션의 인쇄 채널의 열 차트](assets/sample_chart_print_column_new.png)
 
 인터랙티브 커뮤니케이션의 인쇄 채널의 열 차트
 
-### 웹용 도넛형 차트 {#donutchartweb}
+### 웹 {#donutchartweb} 도넛형 차트
 
 이를 수행하려면 다음 속성을 지정합니다.
 
-* **[!UICONTROL 이름]** - 차트의 이름을 지정합니다.
-* **[!UICONTROL 차트 유형]** - **[!UICONTROL 드롭다운]** 목록에서 도넛을 선택합니다.
-* **[!UICONTROL 데이터 모델 객체]** - 데이터 모델 객체 속성을 선택하여 X축(비용 유형) 및 Y축(트랜잭션 금액)에 대한 데이터 바인딩을 생성합니다.
-* **[!UICONTROL 내부 반경]** - 차트의 내부 원의 반경(픽셀 단위)을 지정하려면 내부 반경 값을 150으로 지정합니다.
-* **[!UICONTROL 도구 설명]** - ${x}(${y}) 기본 형식을 사용하여 도구 설명을 표시합니다. 도구 설명이 다음과 같이 표시됩니다. 비용 유형(거래 금액). 예: 비트코인 직불금(1000).
+* **[!UICONTROL 이름]**  - 차트의 이름을 지정합니다.
+* **[!UICONTROL 차트 유형]**  -  **** 드롭다운 목록에서 도넛을 선택합니다.
+* **[!UICONTROL 데이터 모델 객체]**  - 데이터 모델 객체 속성을 선택하여 X축(비용 유형) 및 Y축(트랜잭션 금액)에 대한 데이터 바인딩을 생성합니다.
+* **[!UICONTROL 내부 반경]**  - 내부 원의 반경(픽셀 단위)을 지정하려면 내부 반경 값을 150으로 지정합니다.
+* **[!UICONTROL 도구 설명]**  - ${x}(${y}) 기본 형식을 사용하여 도구 설명을 표시합니다. 도구 설명이 다음과 같이 표시됩니다.비용 유형(거래 금액). 예:비트코인 직불금(1000).
 
 ![인터랙티브 커뮤니케이션의 웹 채널에서 도넛형 차트](assets/sample_chart_web_new.png)
 
 인터랙티브 커뮤니케이션의 웹 채널에서 도넛형 차트
 
-## 예 2: 라인 차트의 합계 및 빈도 함수 적용 {#applicationsumfrequency}
+## 예 2:라인 차트 {#applicationsumfrequency}에서 합계 및 빈도 함수 적용
 
 차트에 함수를 적용하면 양식 데이터 모델에서 직접 제공하지 않는 데이터를 플롯할 수 있습니다. 이 예에서는 신용카드 명세서 예제를 사용하여 Sum 및 Frequency 함수를 차트에 적용하는 방법을 파악했습니다.
 
@@ -298,23 +298,23 @@ Sum 함수는 동일한 데이터 속성의 여러 인스턴스에 대해 합계
 
 ![라인 차트 빈도](assets/line_chart_web_functions_frequency_new.png)
 
-## 예 3: 웹의 Multi-series Quadrant 차트 {#example-multi-series-quadrant-chart-in-web}
+## 예 3:웹의 다중 시리즈 Quadrant 차트 {#example-multi-series-quadrant-chart-in-web}
 
 이 차트는 특정 날짜 범위에서 수행된 거래의 금액을 그래프로 표시합니다. Quadrant 차트는 차트 영역을 네 개의 레이블이 지정된 섹션으로 나누는 기능을 제공합니다. 문자는 X축 및 Y축에 정적 참조점을 사용합니다. 여러 시리즈 기능을 사용하여 은행 이름에 따라 데이터를 구분합니다.
 
 이를 수행하려면 다음 속성을 지정합니다.
 
 * **이름:** 차트의 이름을 지정합니다.
-* **차트 유형:** 드롭다운 **목록에서 Quadrant** 를 선택합니다.
+* **차트 유형:** 드롭다운  **** 목록에서 Quadrant를 선택합니다.
 
-* 여러 시리즈 **확인란을** 선택합니다.
-* **데이터 모델 개체**: 계열에 대한 데이터 모델 개체 속성을 지정합니다. 은행 이름에 대한 데이터 모델 개체 속성은 X축 및 Y축에 표시되는 데이터 모델 개체 속성의 상위 속성입니다.
-* **데이터 모델 개체:** 데이터 모델 객체 속성을 선택하여 X축(트랜잭션 날짜) 및 Y축(트랜잭션 금액)에 대한 데이터 바인딩을 생성합니다.
-* 참조 **점** 섹션에서 **바인딩** 유형으로 정적을 선택합니다.
+* **여러 시리즈** 확인란을 선택합니다.
+* **데이터 모델 개체**:계열에 대한 데이터 모델 개체 속성을 지정합니다. 은행 이름에 대한 데이터 모델 개체 속성은 X축 및 Y축에 표시되는 데이터 모델 개체 속성의 상위 속성입니다.
+* **데이터 모델 객체:** 데이터 모델 객체 속성을 선택하여 X축(트랜잭션 날짜) 및 Y축(트랜잭션 금액)에 대한 데이터 바인딩을 생성합니다.
+* **참조점** 섹션에서 바인딩 유형으로 **정적**&#x200B;을 선택합니다.
 
 * X축 및 Y축 참조 점의 값을 지정합니다.
 * 왼쪽 위, 오른쪽 위, 오른쪽 아래 및 왼쪽 아래 사분기에 대한 사분면 레이블을 지정합니다.
-* 은행명에 대한 색상 코드를 표시하려면 범례 **표시** 확인란을 선택합니다.
+* 은행 이름에 대한 색상 코드를 표시하려면 **범례 표시** 확인란을 선택합니다.
 
 ![Quadrant 차트](assets/charts_quadrant_example_new.png)
 
