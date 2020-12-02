@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 자습서:간단한 인터랙티브 커뮤니케이션 제작 {#tutorial-create-your-first-interactive-communication}
+# 자습서:첫 번째 대화형 통신 {#tutorial-create-your-first-interactive-communication} 만들기
 
 간단한 인터랙티브 커뮤니케이션 제작
 
@@ -37,7 +37,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 인터랙티브한 커뮤니케이션 제작
 * 인터랙티브 커뮤니케이션 테스트 및 게시
 
-## Use case {#use-case}
+## 사용 사례 {#use-case}
 
 고객 여정은 사용 사례를 익히는 것으로 시작됩니다.
 
@@ -50,11 +50,11 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 ## 전제 조건 {#prerequisites}
 
 * AEM 작성자 인스턴스를 설정합니다.
-* 작성자 인스턴스에 [AEM Forms Add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) 설치
+* 작성자 인스턴스에 [AEM Forms 추가 기능 설치](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 * MYSQL 데이터베이스 설정
-* 데이터베이스 공급자로부터 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예는 MySQL 데이터베이스를 기반으로 하며 Oracle의 [MySQL JDBC 데이터베이스 드라이버를 사용합니다](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* 데이터베이스 공급자로부터 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예는 MySQL 데이터베이스를 기반으로 하며 Oracle의 [MySQL JDBC 데이터베이스 드라이버](https://dev.mysql.com/downloads/connector/j/5.1.html)를 사용합니다.
 
-## 1단계:인터랙티브 커뮤니케이션 계획 {#step-plan-the-interactive-communication}
+## 1단계:대화형 통신 계획 {#step-plan-the-interactive-communication}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -72,11 +72,11 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
-## Step 2: Create form data model {#step-create-form-data-model}
+## 2단계:양식 데이터 모델 {#step-create-form-data-model} 만들기
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-양식 데이터 모델을 사용하면 인터랙티브 커뮤니케이션을 서로 다른 데이터 소스에 연결할 수 있습니다. 예를 들어 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스를 제공합니다. 양식 데이터 모델은 연결된 데이터 소스에서 사용할 수 있는 비즈니스 엔티티 및 서비스의 통합된 데이터 표현 스키마입니다. 대화형 통신과 함께 양식 데이터 모델을 사용하여 연결된 데이터 소스에서 데이터를 검색할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합을 참조하십시오](/help/forms/using/data-integration.md).
+양식 데이터 모델을 사용하면 인터랙티브 커뮤니케이션을 서로 다른 데이터 소스에 연결할 수 있습니다. 예를 들어 AEM 사용자 프로필, RESTful 웹 서비스, SOAP 기반 웹 서비스, OData 서비스 및 관계형 데이터베이스를 제공합니다. 양식 데이터 모델은 연결된 데이터 소스에서 사용할 수 있는 비즈니스 엔티티 및 서비스의 통합된 데이터 표현 스키마입니다. 대화형 통신과 함께 양식 데이터 모델을 사용하여 연결된 데이터 소스에서 데이터를 검색할 수 있습니다. 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합](/help/forms/using/data-integration.md)을 참조하십시오.
 
 **목표:**
 
@@ -123,7 +123,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
-## 5단계:인터랙티브한 커뮤니케이션 제작 {#step-create-an-interactive-communication}
+## 5단계:대화형 통신 {#step-create-an-interactive-communication} 만들기
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
@@ -142,7 +142,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
-## 6단계:인터랙티브한 커뮤니케이션 테스트 {#step-test-your-interactive-communication}
+## 6단계:대화형 통신 테스트 {#step-test-your-interactive-communication}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
@@ -154,7 +154,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 테스트 케이스 만들기
 * 테스트 케이스 실행
 
-## 7단계:인터랙티브 커뮤니케이션 게시 {#step-publish-your-interactive-communication}
+## 7단계:대화형 통신 게시 {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
