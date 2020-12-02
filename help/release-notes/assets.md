@@ -1,6 +1,6 @@
 ---
-title: 릴리스 노트( [!DNL Adobe Experience Manager Assets] 6.5).
-description: 6.5의 새로운 기능 및 [!DNL Adobe Experience Manager] 개선 [!DNL Assets]사항
+title: '릴리스 노트: [!DNL Adobe Experience Manager Assets] 6.5.'
+description: ' [!DNL Adobe Experience Manager] 6.5 [!DNL Assets]의 새로운 기능 및 개선 사항.'
 translation-type: tm+mt
 source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
@@ -10,9 +10,9 @@ ht-degree: 95%
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] 릴리스 노트 {#aem-assets-release-notes}
+# [!DNL Adobe Experience Manager Assets] 릴리스 노트  {#aem-assets-release-notes}
 
-Here are the key features and highlights of the [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] release.
+다음은 [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] 릴리스의 주요 기능과 주요 기능입니다.
 
 ## [!DNL Adobe Creative Cloud] 및 광고 워크플로우와 통합{#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -34,15 +34,15 @@ Here are the key features and highlights of the [!DNL Adobe Experience Manager] 
 
 [!DNL Adobe Stock] 서비스는 디자이너와 기업의 모든 광고 프로젝트를 위해 고품질로 큐레이팅된 로열티가 없는 수백만 장의 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산에 대한 액세스를 제공합니다.
 
-For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
+자세한 내용은 Experience Manager 자산에 Adobe Stock 자산 사용](/help/assets/aem-assets-adobe-stock.md)을 참조하십시오.[
 
 ![Experience Manager Assets 내에서 Adobe Stock 이미지 및 라이선스 미리 보기](assets/stock_image_preview_license_options.png)
 
-*그림:[!DNL Experience Manager Assets]내의[!DNL Adobe Stock]이미지 및 라이선스 미리 보기.*
+*그림: [!DNL Experience Manager Assets] 내의 [!DNL Adobe Stock] 이미지 및 라이선스 미리 보기.*
 
 ![Experience Manager에서 라이선스가 있는 Adobe Stock 이미지 검색 및 필터링](assets/aem-search-filters2.jpg)
 
-*그림:[!DNL Adobe Stock]에서 라이선스가 부여된* 이미지 검색 및 필터링.[!DNL Experience Manager]
+*그림: [!DNL Adobe Stock]에서 라이선스가 부여된* 이미지 검색 및 필터링.[!DNL Experience Manager]
 
 ### [!DNL Adobe InDesign]에서 동적 참조 {#dynamic-references-in-indesign}
 
@@ -62,7 +62,7 @@ For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/a
 
 ![다른 [!DNL Experience Manager] 배포의 [!DNL Sites] 페이지에 있는 [!DNL Experience Manager] 배포의 자산을 드래그합니다.](assets/connected-assets-drag-and-drop-only.gif)
 
-*그림: 다른[!DNL Experience Manager]배포의[!DNL Sites]페이지에 있는[!DNL Experience Manager]배포의 자산을 드래그합니다.*
+*그림: 다른 [!DNL Experience Manager] 배포의 [!DNL Sites] 페이지에 있는 [!DNL Experience Manager] 배포의 자산을 드래그합니다.*
 
 ## Dynamic Media {#dynamic-media}
 
@@ -70,11 +70,11 @@ For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/a
 
 새 [!DNL Dynamic Media] 기능에 대한 자세한 내용은 [Dynamic Media 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/release-notes/s7rn2017.html)를 참조하십시오.
 
-### 360 video support {#video-support}
+### 360 비디오 지원 {#video-support}
 
 최첨단 뷰어를 통해 [!DNL Experience Manager]에서 Video 360 파일을 직접 관리하여 데스크탑, 모바일 및 VR 헤드셋에 VR 경험을 제공할 수 있습니다. 자세한 내용은 [Video 360 사용하기](/help/assets/360-video.md)를 참조하십시오.
 
-### Custom video thumbnails {#custom-video-thumbnails}
+### 사용자 정의 비디오 축소판 {#custom-video-thumbnails}
 
 비디오 자체 또는 DAM에 저장된 기타 컨텐츠의 프레임을 사용하여 비디오 자산의 썸네일을 사용자 지정할 수 있습니다. 자세한 내용은 [비디오 썸네일 정보](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode)를 참조하십시오.
 
@@ -102,7 +102,7 @@ For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/a
 
 [!DNL Assets]을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다. 이제 폴더 메타데이터 스키마를 기존 폴더에 지정하거나 새 폴더를 생성할 때 지정할 수 있습니다. 자세한 내용은 [폴더 메타데이터 스키마](/help/assets/metadata-config.md#folder-metadata-schema)를 참조하십시오.
 
-계단식 메타데이터를 지정할 때 형식에 수동으로 입력하는 대신 런타임 시 JSON 파일에서 선택 항목을 로드할 수 있습니다. For more information, see [cascading metadata](/help/assets/metadata-schemas.md#cascading-metadata).
+계단식 메타데이터를 지정할 때 형식에 수동으로 입력하는 대신 런타임 시 JSON 파일에서 선택 항목을 로드할 수 있습니다. 자세한 내용은 [계단식 메타데이터](/help/assets/metadata-schemas.md#cascading-metadata)를 참조하십시오.
 
 ## 보고 개선 사항 {#reporting-enhancements}
 
