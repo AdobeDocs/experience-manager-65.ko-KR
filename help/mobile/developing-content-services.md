@@ -43,7 +43,7 @@ AEM 관리 콘텐츠와 콘텐츠를 사용하는 모바일 앱 간에 추상적
 >
 >콘텐츠 서비스를 시작하기 전에 콘텐츠 서비스 플래그를 활성화해야 합니다. 앱에서 모델을 만들고 관리하려면 구성 브라우저에서 데이터 모델을 활성화해야 합니다.
 >
->자세한 내용은 **[콘텐츠 서비스](/help/mobile/developing-content-services.md)** 관리 [및](/help/sites-administering/configurations.md) 구성 브라우저설명서를 참조하십시오.
+>자세한 내용은 **[콘텐츠 서비스 관리](/help/mobile/developing-content-services.md)** 및 [구성 브라우저](/help/sites-administering/configurations.md) 설명서를 참조하십시오.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
