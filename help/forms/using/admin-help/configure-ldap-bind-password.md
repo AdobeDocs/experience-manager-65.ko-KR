@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# LDAP 바인딩 암호 구성{#configure-the-ldap-bind-password}
+# LDAP 바인딩 암호{#configure-the-ldap-bind-password} 구성
 
 보안 위험을 방지하기 위해 내보낸 구성 파일(config.xml)의 바인딩 암호 필드가 구성되지 않았습니다. 구성 파일을 다른 시스템으로 가져오기 전에 이 암호를 구성해야 합니다. 이 비밀번호는 데이터베이스에 저장된 기존 비밀번호를 무시합니다. null 암호는 null이 아닌 기존 암호 값을 덮어쓰지 않습니다.
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 구성 파일 가져오기 및 내보내기를 클릭합니다.
 1. 현재 구성 설정을 파일로 내보내려면 내보내기를 클릭하고 구성 파일을 다른 위치에 저장합니다.
-1. 파일에서 `Domains` > 도메인 이름 *[> >]* > `DirectoryConfigs` 노드를 `LDAPGroupConfig` 찾습니다. 다음은 한 예입니다.
+1. 파일에서 `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` 노드를 찾습니다. 다음은 한 예입니다.
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -37,9 +37,9 @@ ht-degree: 0%
         </map>
    ```
 
-   값을 `bindpassword` 입력하고 변경 내용을 저장합니다.
+   `bindpassword` 값을 입력하고 변경 내용을 저장합니다.
 
-1. 파일에서 > `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` 노드를 찾습니다. 다음은 한 예입니다.
+1. 파일에서 `Domains` > *[도메인 이름]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` 노드를 찾습니다. 다음은 한 예입니다.
 
    ```xml
     <node name="LDAPUserConfig">
@@ -52,7 +52,7 @@ ht-degree: 0%
         </map>
    ```
 
-   값을 `bindpassword` 입력하고 변경 내용을 저장합니다.
+   `bindpassword` 값을 입력하고 변경 내용을 저장합니다.
 
 1. 업데이트된 파일을 가져오려면 사용자 관리에서 구성 > 구성 파일 가져오기 및 내보내기를 클릭합니다.
 1. 찾아보기를 클릭하여 파일을 찾고 가져오기를 클릭한 다음 확인을 클릭합니다.
