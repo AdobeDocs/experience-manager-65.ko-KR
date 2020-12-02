@@ -19,7 +19,7 @@ ht-degree: 5%
 ---
 
 
-# 일반 e커머스 관리 {#administering-generic-ecommerce}
+# 일반 전자 상거래 관리 {#administering-generic-ecommerce}
 
 AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는 방법을 제공합니다(외부 전자 상거래 엔진 사용과는 반대). 여기에는 다음이 포함됩니다.
 
@@ -43,7 +43,7 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
 >
 >다음 절차는 제품 및 제품 변형 모두에 적용됩니다.
 
-제품을 만들기 전에 Scaffold를 정의해야 [합니다](/help/sites-authoring/scaffolding.md). 제품 정의에 필요한 필드와 편집 방법을 지정합니다.
+제품을 만들기 전에 [scaffold](/help/sites-authoring/scaffolding.md)을 정의해야 합니다. 제품 정의에 필요한 필드와 편집 방법을 지정합니다.
 
 각 고유 제품 유형에 스캐폴드가 필요합니다. 적절한 스캐폴드는 다음 방법 중 하나로 제품과 연결됩니다.
 
@@ -62,13 +62,13 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
 >
 >추가 설정 없이 아무 곳에서나 새 제품 정의를 만들 수 있습니다.
 
-### Importing Products {#importing-products}
+### 제품 {#importing-products} 가져오기
 
 #### 제품 가져오기 - 터치에 적합한 UI {#importing-products-touch-optimized-ui}
 
-1. 상거래 **를 통해** 제품 **콘솔로**&#x200B;이동합니다.
-1. 제품 **콘솔을** 사용하면 필요한 위치로 이동합니다.
-1. 제품 **가져오기** 아이콘을 사용하여 마법사를 엽니다.
+1. **Commerce**&#x200B;을 통해 **Products** 콘솔로 이동합니다.
+1. **제품** 콘솔을 사용하여 필요한 위치로 이동합니다.
+1. **제품 가져오기** 아이콘을 사용하여 마법사를 엽니다.
 
    ![chlimage_1-1](do-not-localize/chlimage_1-13.png)
 
@@ -76,7 +76,7 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
 
    * **가져오기**
 
-      기본적으로 특정 [상거래 공급자에](/help/sites-administering/concepts.md#commerce-providers)대한 가져오기 기능입니다 `Geometrixx`.
+      기본적으로 특정 [커머스 공급자](/help/sites-administering/concepts.md#commerce-providers)에 대한 가져오기 기능입니다.`Geometrixx`
 
    * **소스**
 
@@ -91,7 +91,7 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
    >
    >필요에 따라 사용자 지정된 가져오기를 정의할 수 있습니다.
 
-1. 제품 **을** 가져오려면 다음을 선택합니다. 수행된 작업에 대한 로그가 표시됩니다.
+1. **다음**&#x200B;을 선택하여 제품을 가져옵니다. 수행된 작업의 로그가 표시됩니다.
 
    >[!NOTE]
    >
@@ -99,14 +99,14 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
 
    >[!NOTE]
    >
-   >Next **및** Back을 **반복적으로** 사용하면 제품 정의를 반복적으로 가져올 수 있습니다. 그러나 동일한 SKU가 있으므로 저장소에 있는 정보를 덮어씁니다.
+   >**Next** 및 **Back**&#x200B;을 반복적으로 사용하는 경우 제품 정의를 반복적으로 가져옵니다. 그러나 동일한 SKU가 있으므로 저장소에 있는 정보를 덮어씁니다.
 
-1. 완료를 **선택하여** 마법사를 닫습니다.
+1. **완료**&#x200B;를 선택하여 마법사를 닫습니다.
 
 #### 제품 가져오기 - 클래식 UI {#importing-products-classic-ui}
 
-1. 도구 **콘솔을 사용하여** 상거래 **폴더를** 엽니다.
-1. 두 번 클릭하여 **제품 가져오기를 엽니다**.
+1. **도구** 콘솔을 사용하여 **Commerce** 폴더를 엽니다.
+1. **제품 가져오기**&#x200B;를 두 번 클릭하여 엽니다.
 
    ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
@@ -120,7 +120,7 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
 
    * **상거래 공급자**
 
-      상거래 [제공업체](/help/sites-administering/concepts.md#commerce-providers)가져오기기본 Geometrixx.
+      [커머스 공급자](/help/sites-administering/concepts.md#commerce-providers);기본 Geometrixx.
 
    * **소스 파일**
 
@@ -130,35 +130,35 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
 
       전체 가져오기 대신 증분 가져오기인지 여부를 나타냅니다.
 
-1. 제품 **가져오기를 클릭합니다**.
+1. **제품 가져오기**&#x200B;를 클릭합니다.
 
-### 제품 정보 만들기 {#creating-product-information}
+### 제품 정보 {#creating-product-information} 만들기
 
 >[!NOTE]
 >
->Geometrixx-Outdoors 제품 세트는 기본적으로 관리되므로 표준 제품 관리는 기본적입니다. 제품 Scaffolding을 [기반으로](/help/sites-authoring/scaffolding.md)복잡하므로 고유한 제품 Scaffolding을 사용하면 보다 정교한 편집 작업을 수행할 수 있습니다.
+>Geometrixx-Outdoors 제품 세트는 기본적으로 관리되므로 표준 제품 관리는 기본적입니다. 제품 [Scaffolding](/help/sites-authoring/scaffolding.md)을 기반으로 하기 때문에 자체 제품 스캐폴딩을 사용하면 보다 정교하게 편집할 수 있습니다.
 
 #### 제품 정보 만들기 - 터치에 적합한 UI {#creating-product-information-touch-optimized-ui}
 
-1. 제품 **콘솔** 사용(커머스 **를**&#x200B;통해)은 필요한 위치로 이동합니다.
-1. 만들기 **** 아이콘을 사용하여 구조 및 위치에 따라 다음 중 하나를 선택합니다.
+1. **Products** 콘솔(**Commerce**&#x200B;을 통해)을 사용하여 필요한 위치로 이동합니다.
+1. **만들기** 아이콘을 사용하여 구조 및 위치에 따라 다음 중 하나를 선택합니다.
 
    * **제품 만들기**
    * **제품 변형 만들기**
 
    ![chlimage_1-14](do-not-localize/chlimage_1-14.png)
 
-1. 마법사가 열립니다. 기본 **및** **제품 탭** 을 사용하여 [새 제품 또는 제품 변형에 대한](/help/sites-administering/concepts.md#product-attributes) 제품 속성을입력합니다.
+1. 마법사가 열립니다. **Basic** 및 **제품 탭**&#x200B;을 사용하여 새 제품 또는 제품 변형에 대해 [제품 특성](/help/sites-administering/concepts.md#product-attributes)을 입력합니다.
 
    >[!NOTE]
    >
-   >**제목** 및 **SKU는** 제품 또는 변형을 만드는 데 필요한 최소 요구 사항입니다.
+   >**제품** 또는  **** 변형을 만드는 데 필요한 최소 요구 사항입니다.
 
-1. Select **Create** to save the information.
+1. **만들기**&#x200B;를 선택하여 정보를 저장합니다.
 
 >[!NOTE]
 >
->다양한 색상 및/또는 크기로 제공되는 제품이 많습니다. 기본 제품 및 관련 제품 변형에 대한 정보는 **제품** 콘솔에서 관리할 수 있습니다.
+>다양한 색상 및/또는 크기로 제공되는 제품이 많습니다. 기본 제품 및 관련 제품 변형에 대한 정보는 모두 **Products** 콘솔에서 관리할 수 있습니다.
 >
 >제품 및 해당 변형은 트리 구조로 저장되고 제품 정보는 맨 위에 표시되고 변형이 아래에 표시됩니다(이 구조는 UI에 의해 적용됨).
 
@@ -170,27 +170,27 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
 >
 >`/etc/commerce/products/...`
 >
->이것은 기본적으로 디스패처에 의해 차단되므로 [필요에 따라](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html을 참조하십시오.)구성합니다.
+>즉, 기본적으로 [dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html을 참조하십시오.)에 의해 차단되므로 필요에 따라 구성합니다.
 
 #### 제품 정보 편집 - 터치에 적합한 UI {#editing-product-information-touch-optimized-ui}
 
-1. 제품 **콘솔** 사용(커머스 **를 통해**)은 제품 정보로 이동합니다.
+1. **Products** 콘솔(**Commerce**&#x200B;을 통해)을 사용하여 제품 정보를 탐색합니다.
 1. 다음 중 하나 사용:
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   제품 데이터 **보기 아이콘을** 선택합니다.
+   **제품 데이터 보기** 아이콘을 선택합니다.
 
    ![chlimage_1-3](do-not-localize/chlimage_1-15.png)
 
-1. 제품 [속성이](/help/sites-administering/concepts.md#product-attributes) 표시됩니다. 편집 **및** **완료를** 사용하여 변경합니다.
+1. [제품 특성](/help/sites-administering/concepts.md#product-attributes)이 표시됩니다. **편집** 및 **Done**&#x200B;을 사용하여 변경합니다.
 
 ### 제품 참조 표시 {#showing-product-references}
 
-#### Showing Product References - Touch-optimized UI {#showing-product-references-touch-optimized-ui}
+#### 제품 참조 표시 - 터치에 적합한 UI {#showing-product-references-touch-optimized-ui}
 
-1. 제품 **콘솔** 사용(커머스 **를 통해**)은 제품 정보로 이동합니다.
+1. **Products** 콘솔(**Commerce**&#x200B;을 통해)을 사용하여 제품 정보를 탐색합니다.
 1. 아이콘을 사용하여 참조에 대한 보조 레일을 엽니다.
 
    ![chlimage_1-4](do-not-localize/chlimage_1-16.png)
@@ -207,9 +207,9 @@ AEM 범용 솔루션은 저장소 내에 있는 상거래 정보를 관리하는
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
-### Search for Products {#search-for-products}
+### 제품 검색 {#search-for-products}
 
-1. 상거래 **를 통해** 제품 **콘솔로**&#x200B;이동합니다.
+1. **Commerce**&#x200B;을 통해 **Products** 콘솔로 이동합니다.
 1. 아이콘을 사용하여 검색에 대한 보조 레일을 엽니다.
 
    ![](do-not-localize/chlimage_1-17.png)
@@ -228,12 +228,12 @@ CRXDE Lite을 사용하여 기존 단면화를 수정하거나 새 단면화를 
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
-1. 제품 검색 페이지에 표시되는 크기 등을 수정할 수 있습니다. 노드를 `sizegroup` 클릭합니다.
-1. 노드를 `items` 클릭한 다음 `propertypredicate` 노드를 클릭합니다.
-1. 를 수정할 수 있습니다 `propertyValues`. 예를 들어 XS 또는 XXL을 추가하거나 크기를 제거할 수 있습니다.
-1. 모두 **저장을** 클릭하고 제품 검색 페이지로 이동합니다. 변경 사항이 나타납니다.
+1. 제품 검색 페이지에 표시되는 크기 등을 수정할 수 있습니다. `sizegroup` 노드를 클릭합니다.
+1. `items` 노드를 클릭한 다음 `propertypredicate` 노드를 클릭합니다.
+1. `propertyValues`을 수정할 수 있습니다. 예를 들어 XS 또는 XXL을 추가하거나 크기를 제거할 수 있습니다.
+1. **모두 저장**&#x200B;을 클릭하고 제품 검색 페이지로 이동합니다. 변경 사항이 나타납니다.
 
-### 여러 자산 {#multiple-assets}
+### 다중 자산 {#multiple-assets}
 
 제품 구성 요소에 여러 자산을 추가한 다음 제품 페이지에 표시할 자산을 지정할 수 있습니다.
 
@@ -241,41 +241,41 @@ CRXDE Lite을 사용하여 기존 단면화를 수정하거나 새 단면화를 
 >
 >여러 자산과 관련된 모든 작업은 터치에 적합한 UI로 수행됩니다.
 
-#### 여러 자산 추가 {#adding-multiple-assets}
+#### 여러 자산 {#adding-multiple-assets} 추가
 
-1. 상거래 **를 통해** 제품 **콘솔로**&#x200B;이동합니다.
-1. 제품 **콘솔을** 사용하여 필요한 제품으로 이동합니다.
+1. **Commerce**&#x200B;을 통해 **Products** 콘솔로 이동합니다.
+1. **제품** 콘솔을 사용하여 필요한 제품으로 이동합니다.
 
    >[!NOTE]
    >
    >변형 수준이 아니라 제품 수준에 있어야 합니다.
 
-1. 선택 모드 또는 빠른 작업 **으로 제품 데이터** 보기 아이콘을 탭/클릭합니다.
+1. 선택 모드 또는 빠른 작업을 사용하여 **제품 데이터 보기** 아이콘을 탭/클릭합니다.
 1. 편집 아이콘을 탭/클릭합니다.
-1. 아래로 스크롤하여 **추가합니다**.
+1. **추가**&#x200B;로 스크롤합니다.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. 추가를 탭/ **클릭합니다**. 새 자산 자리 표시자가 나타납니다.
+1. **추가**&#x200B;를 탭/클릭합니다. 새 자산 자리 표시자가 나타납니다.
 1. **변경 **을 탭/클릭하면 자산을 선택할 수 있는 대화 상자가 열립니다.
 1. 추가할 자산을 선택합니다.
 
    >[!NOTE]
    >
-   >선택할 수 있는 자산은 [자산입니다](https://helpx.adobe.com/experience-manager/aem-previous-versions.html#assets).
+   >선택할 수 있는 자산은 [Assets](https://helpx.adobe.com/experience-manager/aem-previous-versions.html#assets)입니다.
 
 1. 완료 아이콘을 탭/클릭합니다.
 
 이제 두 개의 에셋이 제품 구성 요소에 저장됩니다. 제품 페이지에 표시할 항목을 구성할 수 있습니다. 카테고리 시스템에서 작동합니다. 먼저 개별 자산에 범주를 추가해야 합니다.
 
-1. 제품 데이터 **보기를 탭/클릭합니다**.
-1. 자산 아래에 **자산 카테고리** (예: 및)를 `cat1` 입력합니다 `cat2`.
+1. **제품 데이터 보기**&#x200B;를 탭/클릭합니다.
+1. 자산 아래에 **자산 범주**&#x200B;를 입력합니다(예: `cat1` 및 `cat2`).
 
    >[!NOTE]
    >
    >카테고리에 태그를 사용할 수도 있습니다.
 
-1. 완료 아이콘을 탭/클릭합니다. 이제 변경 내용을 [롤아웃해야](#rolling-out-a-catalog) 합니다.
+1. 완료 아이콘을 탭/클릭합니다. 이제 [롤아웃](#rolling-out-a-catalog)해야 합니다.
 
 이제 제품 구성 요소의 자산에 카테고리가 있습니다. 다음 세 가지 수준으로 표시될 카테고리를 구성할 수 있습니다.
 
@@ -300,28 +300,28 @@ CRXDE Lite을 사용하여 기존 단면화를 수정하거나 새 단면화를 
 #### 제품 페이지 {#product-page}
 
 1. 제품 페이지로 이동합니다.
-1. **제품 구성 요소를 편집합니다** .
-1. 선택한 **이미지 카테고리를** 입력합니다(예 `cat1` :).
-1. 완료를 탭/ **클릭합니다**. 페이지가 새로 고쳐지고 올바른 자산이 표시되어야 합니다.
+1. **제품 구성** 요소를 편집합니다.
+1. 선택한 **이미지 범주**&#x200B;를 입력합니다(예: `cat1`).
+1. **Done**&#x200B;을 탭/클릭합니다. 페이지가 새로 고쳐지고 올바른 자산이 표시되어야 합니다.
 
 #### 카탈로그  {#catalog}
 
 1. 카탈로그를 탐색합니다.
-1. 속성 보기를 탭/ **클릭합니다**.
-1. Tap/click **Edit**.
-1. 자산 **탭을 탭/클릭합니다** .
-1. 필요한 **제품 자산 범주를 입력합니다**.
-1. 완료를 탭/ **클릭합니다**.
-1. [변경 사항을 롤아웃합니다](#rolling-out-a-catalog) .
+1. **속성 보기**&#x200B;를 탭/클릭합니다.
+1. **편집**&#x200B;을 탭/클릭합니다.
+1. **자산** 탭을 탭/클릭합니다.
+1. 필요한 **제품 자산 범주**&#x200B;를 입력합니다.
+1. **Done**&#x200B;을 탭/클릭합니다.
+1. [변경 ](#rolling-out-a-catalog) 사항을 롤아웃합니다.
 
 #### 제품 콘솔 {#products-console}
 
-1. 제품 **콘솔을** 사용하여 필요한 제품으로 이동합니다.
-1. 제품 데이터 **보기를 탭/클릭합니다**.
-1. Tap/click **Edit**.
-1. 기본 **자산 범주를 입력합니다**.
-1. 완료를 탭/ **클릭합니다**.
-1. [변경 사항을 롤아웃합니다](#rolling-out-a-catalog) .
+1. **제품** 콘솔을 사용하여 필요한 제품으로 이동합니다.
+1. **제품 데이터 보기**&#x200B;를 탭/클릭합니다.
+1. **편집**&#x200B;을 탭/클릭합니다.
+1. **기본 자산 범주**&#x200B;를 입력합니다.
+1. **Done**&#x200B;을 탭/클릭합니다.
+1. [변경 ](#rolling-out-a-catalog) 사항을 롤아웃합니다.
 
 ### 제품 정보 게시/게시 취소 {#publishing-unpublishing-product-information}
 
@@ -333,19 +333,19 @@ CRXDE Lite을 사용하여 기존 단면화를 수정하거나 새 단면화를 
 >
 >AEM에서는 제품 데이터에서 직접 퍼블리싱도 지원합니다.
 
-1. 제품 **콘솔** 사용(커머스 **를 통해**)은 제품 정보로 이동합니다.
+1. **Products** 콘솔(**Commerce**&#x200B;을 통해)을 사용하여 제품 정보를 탐색합니다.
 1. 다음 중 하나 사용:
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   필요에 따라 **게시** 또는 게시 **취소** 아이콘을 선택합니다.
+   필요에 따라 **게시** 또는 **게시 취소** 아이콘을 선택합니다.
 
    ![chlimage_1-6](do-not-localize/chlimage_1-18.png) ![chlimage_1-7](do-not-localize/chlimage_1-19.png)
 
    제품 정보는 적절히 게시되거나 게시되지 않습니다.
 
-### Product Feed {#product-feed}
+### 제품 피드 {#product-feed}
 
 Search &amp; Promote 통합을 통해 다음을 수행할 수 있습니다.
 
@@ -354,9 +354,9 @@ Search &amp; Promote 통합을 통해 다음을 수행할 수 있습니다.
 * search &amp; promote의 원격 제어 기능을 활용하여 제품 피드의 on-demand 또는 예약된 요청을 수행할 수 있습니다.
 * 클라우드 서비스 구성으로 구성된 다양한 Search &amp; Promote 계정에 대한 피드 생성
 
-자세한 내용은 [제품 피드를 참조하십시오](/help/sites-administering/product-feed.md).
+자세한 내용은 [제품 피드](/help/sites-administering/product-feed.md)를 참조하십시오.
 
-### 제품 업데이트용 이벤트 처리기 {#event-handler-for-product-updates}
+### 제품 업데이트 {#event-handler-for-product-updates}에 대한 이벤트 핸들러
 
 제품이 추가, 수정 또는 삭제되고 제품 페이지가 추가, 수정 또는 삭제될 때 이벤트를 기록하는 이벤트 처리기가 있습니다. 다음과 같은 OSGi 이벤트가 있습니다.
 
@@ -367,15 +367,15 @@ Search &amp; Promote 통합을 통해 다음을 수행할 수 있습니다.
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_MODIFIED`
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_DELETED`
 
-이벤트의 경우 `PRODUCT_*` 경로는 기본 제품을 가리킵니다 `/etc/commerce/products`. 이벤트의 경우 경로 `PRODUCT_PAGE_*` 는 `cq:Page` 노드를 가리킵니다.
+`PRODUCT_*` 이벤트의 경우 경로는 `/etc/commerce/products`의 기본 제품을 가리킵니다. `PRODUCT_PAGE_*` 이벤트의 경우 경로는 `cq:Page` 노드를 가리킵니다.
 
-OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니다. 예를 들면 다음과 같습니다.
+OSGI 이벤트( `/system/console/events`)의 웹 콘솔에서 볼 수 있습니다. 예를 들면 다음과 같습니다.
 
 ![](do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
->AEM에서 [이벤트 처리를 참조하십시오](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)에서 [이벤트 처리를 읽습니다. [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
 
 ### 장바구니에 추가 링크가 있는 이미지 {#image-with-add-to-cart-links}
 
@@ -385,7 +385,7 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 
 1. 구성 요소를 추가할 페이지로 이동합니다.
 1. 페이지에서 구성 요소를 드래그하여 놓습니다.
-1. 자산 브라우저에서 구성 요소의 이미지를 [끌어다 놓습니다](/help/sites-authoring/author-environment-tools.md#assets-browser).
+1. [자산 브라우저](/help/sites-authoring/author-environment-tools.md#assets-browser)에서 구성 요소의 이미지를 끌어다 놓습니다.
 1. 다음을 수행할 수 있습니다.
 
    * 구성 요소를 클릭한 다음 편집 아이콘을 클릭합니다
@@ -405,7 +405,7 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 
 1. 필요에 따라 모양을 수정 및 이동합니다.
 1. 모양을 클릭합니다.
-1. 찾아보기 아이콘을 클릭하면 자산 [선택기가 열립니다](../assets/search-assets.md#assetpicker).
+1. 찾아보기 아이콘을 클릭하면 [자산 선택기](../assets/search-assets.md#assetpicker)가 열립니다.
 
    >[!NOTE]
    >
@@ -418,8 +418,8 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 
    ![](do-not-localize/chlimage_1-22.png)
 
-1. Switch to [preview](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) mode.
-1. + 핫스팟을 클릭합니다. 입력한 제품의 크기와 수량을 선택할 수 있는 대화 상자가 **열립니다**.
+1. [preview](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) 모드로 전환합니다.
+1. + 핫스팟을 클릭합니다. **경로**&#x200B;에 입력한 제품의 크기와 수량을 선택할 수 있는 대화 상자가 열립니다.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -427,7 +427,7 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 1. 장바구니에 추가 단추를 클릭합니다. 대화 상자가 닫힙니다.
 1. 장바구니로 이동합니다. 제품이 여기에 있어야 합니다.
 
-#### Configuration Options {#configuration-options}
+#### 구성 옵션 {#configuration-options}
 
 핫스팟을 클릭할 때 대화 상자가 표시되는 방식을 구성할 수 있습니다.
 
@@ -435,11 +435,11 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
-1. 아래로 스크롤. 장바구니에 **추가 탭이** 있습니다.
+1. 아래로 스크롤. **ADD TO CART** 탭이 있습니다.
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-1. 장바구니에 **추가를 클릭합니다**. 사용할 수 있는 구성 옵션에는 3가지가 있습니다.
+1. **장바구니에 추가**&#x200B;를 클릭합니다. 사용할 수 있는 구성 옵션에는 3가지가 있습니다.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -463,53 +463,53 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 
    ![](do-not-localize/chlimage_1-23.png)
 
-1. From the list select **Create Catalog**, the Create Catalog wizard will open.
+1. 목록에서 **카탈로그 만들기**&#x200B;를 선택하면 카탈로그 만들기 마법사가 열립니다.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
 1. 필요한 카탈로그 블루프린트로 이동합니다.
-1. 선택 **단추를 탭/클릭하고** 필요한 카탈로그 블루프린트를 탭/클릭합니다.
-1. Tap/click **Next**.
+1. **선택** 단추를 탭/클릭하고 필요한 카탈로그 블루프린트를 탭/클릭합니다.
+1. **다음**&#x200B;을 탭/클릭합니다.
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. 제목 **과** 이름을 **입력합니다**.
-1. 만들기 단추를 탭/ **클릭합니다** . 카탈로그가 생성되고 대화 상자가 열립니다.
+1. **제목**&#x200B;과 **이름**&#x200B;을 입력합니다.
+1. **만들기** 단추를 탭/클릭합니다. 카탈로그가 생성되고 대화 상자가 열립니다.
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
-1. 완료 **단추를** 탭/클릭하면 카탈로그를 볼 수 있는 사이트 콘솔로 돌아갑니다.
+1. **완료** 단추를 탭/클릭하면 카탈로그를 볼 수 있는 사이트 콘솔로 돌아갑니다.
 
-   [카탈로그 **열기** ] 단추를 탭/클릭하여 카탈로그를 엽니다(예: `http://localhost:4502/editor.html/content/test-catalog.html`).
+   **카탈로그 열기** 단추를 탭/클릭하면 카탈로그가 열립니다(예: `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### 카탈로그 생성 - 클래식 UI {#generating-a-catalog-classic-ui}
 
 >[!NOTE]
 >
->카탈로그는 [제품 데이터를 참조합니다](#products-and-product-variants).
+>카탈로그는 [제품 데이터](#products-and-product-variants)를 참조합니다.
 
-1. 웹 **사이트** 콘솔을 사용하여 **카탈로그 블루프린트를**&#x200B;탐색한 다음 기본 카탈로그를 선택합니다.
+1. **웹 사이트** 콘솔을 사용하여 **카탈로그 블루프린트**&#x200B;와 기본 카탈로그를 차례로 탐색합니다.
 
    예:
 
    `http://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
 
-1. 섹션 **블루프린트 템플릿을 사용하여 새 페이지를** 만듭니다.
+1. **섹션 블루프린트** 템플릿을 사용하여 새 페이지를 만듭니다.
 
    예, `Swimwear`.
 
-1. 새 `Swimwear` 페이지를 연 다음 **블루프린트** 편집을 클릭하여 **속성** 대화 상자를 열고 제품 **선택 사항을 설정할 수** 있습니다.
+1. 새 `Swimwear` 페이지를 연 다음 **블루프린트 편집**&#x200B;을 클릭하여 **속성** 대화 상자를 엽니다. 이 대화 상자에서 **제품** 선택을 설정할 수 있습니다.
 
-   예를 들어, **태그/키워드** 필드를 열고 활동을 선택한 다음 Geometrixx-Outdoors 섹션에서 수영을 선택합니다.
+   예를 들어 **태그/키워드** 필드를 열어 활동을 선택한 다음 Geometrixx-Outdoors 섹션에서 수영을 선택합니다.
 
-1. 확인을 **클릭하여** 속성을 저장합니다.샘플 제품은 블루프린트 페이지의 **제품 선택 기준** 아래에 표시됩니다.
-1. 롤아웃 변경 **사항...을 클릭하고,**&#x200B;롤아웃 페이지 및 모든 하위 페이지를 **선택한 다음**&#x200B;다음 **과** 롤아웃을 ****&#x200B;클릭합니다. 롤아웃이 성공적으로 완료되면 **상태** 표시기가 녹색으로 표시됩니다.
-1. 이제 닫기를 **클릭하고** 새 카탈로그 섹션을 확인할 수 있습니다.예를 들어 on 및 under:
+1. 속성을 저장하려면 **OK**&#x200B;을 클릭합니다.예제 제품은 블루프린트 페이지의 **제품 선택 기준**&#x200B;에 표시됩니다.
+1. **롤아웃 변경...을 클릭합니다.**&#x200B;에서 **롤아웃 페이지와 모든 하위 페이지**&#x200B;를 선택한 다음 **다음**&#x200B;을 클릭한 다음 **롤아웃**&#x200B;을 클릭합니다. 롤아웃이 성공적으로 완료되면 **상태** 표시기가 녹색으로 표시됩니다.
+1. 이제 **닫기**&#x200B;를 클릭하고 새 카탈로그 섹션을 확인할 수 있습니다.예를 들어 on 및 under:
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
 
-1. Blueprint 페이지에서 Edit **Blueprint** 를 클릭하고 **속성** 대화 상자에서 **생성된 페이지** 탭을엽니다. 배너 목록 필드에서 표시할 이미지를 선택합니다.예를 들면 `summer.jpg`
-1. 확인을 **클릭하여** 속성을 저장합니다.배너 정보는 블루프린트 페이지의 **제품 선택 기준** 아래에 표시됩니다.
+1. 블루프린트 페이지에서 **블루프린트 편집**&#x200B;을 다시 클릭하고 **속성** 대화 상자에서 **생성된 페이지** 탭을 엽니다. 배너 목록 필드에서 표시할 이미지를 선택합니다.예를 들어 `summer.jpg`
+1. 속성을 저장하려면 **OK**&#x200B;을 클릭합니다.배너 정보는 블루프린트 페이지의 **제품 선택 기준**&#x200B;에 표시됩니다.
 1. 이 새로운 변경 사항을 롤아웃합니다.
 
 ### 카탈로그 롤아웃 {#rolling-out-a-catalog}
@@ -518,19 +518,19 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 
 카탈로그를 롤아웃하려면
 
-1. 상거래를 통해 **카탈로그** 콘솔로 **이동합니다**.
+1. **상거래**&#x200B;를 통해 **카탈로그** 콘솔로 이동합니다.
 1. 롤아웃할 카탈로그로 이동합니다.
 1. 다음 중 하나 사용:
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   롤아웃 변경 **아이콘을** 선택합니다.
+   **롤아웃 변경 내용** 아이콘을 선택합니다.
 
    ![](do-not-localize/chlimage_1-24.png)
 
-1. 마법사에서 필요에 따라 롤아웃을 설정한 다음 롤아웃 변경 사항 **을 탭/클릭합니다**.
-1. 대화 상자가 열립니다. 프로세스가 완료되면 **완료를** 탭/클릭합니다.
+1. 마법사에서 필요에 따라 롤아웃을 설정한 다음 **롤아웃 변경 내용**&#x200B;을 탭/클릭합니다.
+1. 대화 상자가 열립니다. 프로세스가 완료되면 **Done**&#x200B;을 탭/클릭합니다.
 
 #### 카탈로그 롤아웃 - 클래식 UI {#rolling-out-a-catalog-classic-ui}
 
@@ -540,37 +540,37 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 
    `http://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
 
-1. 롤아웃 변경 **사항...을 클릭합니다.**
+1. **롤아웃 변경...을 클릭합니다.**
 1. 필요에 따라 롤아웃을 설정합니다.
-1. 롤아웃을 **클릭합니다**.
+1. **롤아웃**&#x200B;을 클릭합니다.
 
 ### 블루프린트 가져오기 {#blueprint-importer}
 
 #### 블루프린트 가져오기 - 터치에 적합한 UI {#blueprint-importer-touch-optimized-ui}
 
-1. 상거래를 통해 **카탈로그** 콘솔로 **이동합니다**.
+1. **상거래**&#x200B;를 통해 **카탈로그** 콘솔로 이동합니다.
 1. 카탈로그 블루프린트를 가져올 위치로 이동합니다.
-1. Import Blueprint **아이콘을 탭/클릭합니다** .
+1. **Import Blueprint** 아이콘을 탭/클릭합니다.
 
    ![](do-not-localize/chlimage_1-13.png)
 
-1. 마법사에서 필요에 따라 소스를 선택하고 다음을 탭/ **클릭합니다**.
+1. 마법사에서 필요에 따라 소스를 선택하고 **다음**&#x200B;을 탭/클릭합니다.
 
    ![chlimage_1-340](assets/chlimage_1-102.png)
 
-1. 가져오기가 **완료되면 완료를** 탭/클릭합니다.
+1. 가져오기가 끝나면 **완료**&#x200B;를 탭/클릭합니다.
 
 #### 블루프린트 가져오기 - 클래식 UI {#blueprint-importer-classic-ui}
 
-1. 도구 **콘솔을 사용하여** 상거래 **로 이동합니다**.
+1. **도구** 콘솔을 사용하여 **커머스**&#x200B;로 이동합니다.
 
    예:
 
    `http://localhost:4502/miscadmin#/etc/commerce`
 
-1. 카탈로그 **블루인쇄 가져오기를 엽니다**.
+1. **카탈로그 블루인쇄 가져오기**&#x200B;를 엽니다.
 1. 필요에 따라 가져오기를 설정합니다.
-1. 카탈로그 **블루프린트 가져오기를 클릭합니다**.
+1. **카탈로그 블루프린트 가져오기**&#x200B;를 클릭합니다.
 
 ## 프로모션 {#promotions}
 
@@ -580,23 +580,23 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 
 >[!NOTE]
 >
->다음 예제는 [캠페인에서](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)직접 열린 프로모션을 다루며 이는 바우처에 사용됩니다.
+>다음 예제는 [campaign](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)에서 직접 개최되는 프로모션을 포함하며, 이것은 바우처에 사용됩니다.
 >
->프로모션은 캠페인 내 [경험에](/help/sites-authoring/personalization.md) 포함될 수도 있습니다.
+>프로모션은 캠페인 내에서 [experience](/help/sites-authoring/personalization.md)에 있을 수도 있습니다.
 >
->자세한 내용은 프로모션 및 [바우처를 참조하십시오](#promotions-and-vouchers).
+>자세한 내용은 [홍보 및 바우처](#promotions-and-vouchers)를 참조하십시오.
 
-1. 작성자 인스턴스의 **웹** 사이트 콘솔을 엽니다.
-1. 왼쪽 창에서 필요한 **캠페인을 선택합니다**.
-1. 새로 만들기 **를**&#x200B;클릭하고 **프로모션** 템플릿을 **선택한 다음 새 할인권** 에 대한 제목 **및** 이름(필요한 경우)을 지정합니다.
+1. 작성자 인스턴스의 **웹 사이트** 콘솔을 엽니다.
+1. 왼쪽 창에서 필요한 **캠페인**&#x200B;을 선택합니다.
+1. **새로 만들기**&#x200B;를 클릭하고 **프로모션** 템플릿을 선택한 다음 새 바우처에 대해 **제목**(및 필요한 경우 **이름**&#x200B;을 지정합니다.
 1. **만들기**&#x200B;를 클릭합니다. 오른쪽 창에 새 프로모션 페이지가 표시됩니다.
 
-1. 다음 방법 **으로 속성을** 편집합니다.
+1. 다음 방법 중 하나를 사용하여 **속성**&#x200B;을 편집합니다.
 
    * 페이지를 연 다음 편집 단추를 클릭하여 속성 대화 상자를 엽니다
-   * 웹 사이트 콘솔에서 페이지를 선택한 다음 컨텍스트 메뉴(일반적으로 오른쪽 마우스 단추)를 사용하여 속성...을 선택하고 **속성 대화 상자를** 엽니다.
+   * 웹 사이트 콘솔에서 페이지를 선택한 다음 컨텍스트 메뉴(일반적으로 오른쪽 마우스 단추)를 사용하여 **속성...을 선택합니다.** 속성 대화 상자 열기
 
-   필요에 따라 **프로모션 유형**, **할인 유형**, **할인 가격** 및 기타 필드를지정합니다.
+   **프로모션 유형**, **할인 유형**, **할인 값** 및 필요한 기타 필드를 지정합니다.
 
 1. **확인**&#x200B;을 클릭하여 저장합니다.
 
@@ -604,21 +604,21 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 
 ## 바우처 {#vouchers}
 
-### 바우처 만들기 {#creating-a-voucher}
+### 바우처 {#creating-a-voucher} 만들기
 
 #### 바우처 만들기 - 클래식 UI {#creating-a-voucher-classic-ui}
 
-1. 작성자 인스턴스의 **웹** 사이트 콘솔을 엽니다.
-1. 왼쪽 창에서 필요한 **캠페인을 선택합니다**.
-1. [새로 만들기] **를**&#x200B;클릭하고 **바우처** 템플릿을 **선택한 다음 새 할인권** 에 대한 제목 **및** 이름(필요한 경우)을 지정합니다.
+1. 작성자 인스턴스의 **웹 사이트** 콘솔을 엽니다.
+1. 왼쪽 창에서 필요한 **캠페인**&#x200B;을 선택합니다.
+1. **새로 만들기**&#x200B;를 클릭하고 **바우처** 템플릿을 선택한 다음 새 바우처에 대해 **제목**(필요한 경우 **이름**&#x200B;을 지정합니다.
 1. **만들기**&#x200B;를 클릭합니다. 오른쪽 창에 새 바우처 페이지가 표시됩니다.
 
-1. 두 번 클릭하여 새 바우처 페이지를 연 다음 **편집을** 클릭하여 필요에 따라 정보를 구성합니다.
+1. 두 번 클릭하여 새 바우처 페이지를 연 다음 **편집**&#x200B;을 클릭하여 필요에 따라 정보를 구성합니다.
 1. **확인**&#x200B;을 클릭하여 저장합니다.
 
 1. 이제 바우처를 활성화할 수 있으므로 구매자는 게시 인스턴스의 장바구니에서 사용할 수 있습니다.
 
-### 바우처 제거 {#removing-vouchers}
+### 바우처 {#removing-vouchers} 제거
 
 #### 바우처 제거 - 클래식 UI {#removing-vouchers-classic-ui}
 
@@ -627,17 +627,17 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 * 바우처 비활성화 - 작성 환경에서 사용할 수 있으므로 나중에 다시 활성화할 수 있습니다.
 * 완전히 삭제하세요.
 
-두 작업 모두 웹 사이트 **콘솔에서 수행할** 수 있습니다.
+두 작업 모두 **웹 사이트** 콘솔에서 수행할 수 있습니다.
 
 ### 바우처 수정 {#modifying-vouchers}
 
 #### 바우처 수정 - 클래식 UI {#modifying-vouchers-classic-ui}
 
-바우처 또는 판촉 행사의 속성을 변경하려면 **웹 사이트** 콘솔에서 바우처를 두 번 클릭하고 **편집을 클릭합니다**. 저장한 후에는 변경 사항이 게시 인스턴스로 푸시되도록 활성화해야 합니다.
+바우처나 프로모션의 속성을 변경하려면 **웹 사이트** 콘솔에서 바우처를 두 번 클릭하고 **편집**&#x200B;을 클릭합니다. 저장한 후에는 변경 사항이 게시 인스턴스로 푸시되도록 활성화해야 합니다.
 
-### 장바구니에 바우처 추가 {#adding-vouchers-to-a-cart}
+### 장바구니 {#adding-vouchers-to-a-cart}에 바우처 추가
 
-사용자가 장바구니에 바우처를 추가할 수 있도록 기본 제공 **바우처** 구성 요소(커머스 카테고리)를 사용할 수 있습니다. 장바구니가 표시되는 페이지와 동일한 페이지에 추가해야 합니다(필수 사항은 아님). 바우처 구성 요소는 사용자가 바우처 코드를 입력할 수 있는 양식일 뿐 아니라 실제로 적용된 바우처의 목록과 할인율을 보여주는 장바구니 구성 요소입니다.
+사용자가 장바구니에 바우처를 추가할 수 있도록 기본 제공 **바우처** 구성 요소(상거래 카테고리)를 사용할 수 있습니다. 장바구니가 표시되는 페이지와 동일한 페이지에 추가해야 합니다(필수 사항은 아님). 바우처 구성 요소는 사용자가 바우처 코드를 입력할 수 있는 양식일 뿐 아니라 실제로 적용된 바우처의 목록과 할인율을 보여주는 장바구니 구성 요소입니다.
 
 데모 사이트(Geometrixx Outdoors - 영어)에서는 장바구니 페이지의 실제 장바구니 아래에 바우처 양식을 볼 수 있습니다.
 
@@ -658,32 +658,32 @@ OSGI 이벤트()의 웹 콘솔에서 볼 수 `/system/console/events`있습니�
 >
 >고객 주문 정보는 해당 홈 디렉토리에 저장되며 해당 계정에 대한 주문 내역에 노출됩니다. 이 정보는 나머지 홈 디렉토리와 함께 게시됩니다.
 
-### 주문 정보 생성 {#creating-order-information}
+### 주문 정보 만들기 {#creating-order-information}
 
 #### 주문 정보 만들기 - 터치에 적합한 UI {#creating-order-information-touch-optimized-ui}
 
-1. 주문 **콘솔을** 사용하면 필요한 위치로 이동합니다.
-1. 만들기 **아이콘을 사용하여** 순서 **만들기를 선택합니다**.
+1. **주문** 콘솔을 사용하여 필요한 위치로 이동합니다.
+1. **만들기** 아이콘을 사용하여 **주문 만들기**&#x200B;를 선택합니다.
 
    ![](do-not-localize/chlimage_1-14.png)
 
-1. 마법사가 열립니다. 기본, **컨텐트**, **지불**&#x200B;및 **이행** 탭 **을 사용하여 새 주문** [](/help/sites-administering/concepts.md#order-information)에 대한정보를 입력합니다.
+1. 마법사가 열립니다. **Basic**, **Content**, **Payment** 및 **Fulfillment** 탭을 사용하여 새 주문](/help/sites-administering/concepts.md#order-information)에 대한 [정보를 입력합니다.
 
-1. Select **Create** to save the information.
+1. **만들기**&#x200B;를 선택하여 정보를 저장합니다.
 
 ### 주문 정보 편집 {#editing-order-information}
 
 #### 주문 정보 편집 - 터치에 적합한 UI {#editing-order-information-touch-optimized-ui}
 
-1. 주문 **콘솔을** 사용하면 주문으로 이동합니다.
+1. **주문** 콘솔을 사용하여 주문으로 이동합니다.
 1. 다음 중 하나 사용:
 
    * [빠른 작업](/help/sites-authoring/basic-handling.md#quick-actions)
    * [선택 모드](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   주문 데이터 **보기 아이콘을** 선택합니다.
+   **주문 데이터 보기** 아이콘을 선택합니다.
 
    ![](do-not-localize/chlimage_1-15.png)
 
-1. 주문 [정보가](/help/sites-administering/concepts.md#order-information) 표시됩니다. 편집 **및** **완료를** 사용하여 변경합니다.
+1. [주문 정보](/help/sites-administering/concepts.md#order-information)가 표시됩니다. **편집** 및 **Done**&#x200B;을 사용하여 변경합니다.
 
