@@ -22,19 +22,19 @@ ht-degree: 0%
 
 양식 데이터 통합 서비스에서 다음 빠른 시작을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 가져오기](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 양식 데이터 가져오기](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 내보내기](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 양식 데이터 내보내기](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 가져오기 {#quick-start-soap-mode-importing-form-data-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-importing-form-data-using-the-java-api}를 사용하여 양식 데이터 가져오기
 
-다음 Java 코드 예제에서는 데이터를 PDF 양식으로 가져옵니다. 데이터는 Loan_data.xml이라는 XML 파일 *에* 있으며 PDF 양식은 *ResultLoanForm.pdf라는 PDF 파일로 저장됩니다*. 양식 [데이터 가져오기를 참조하십시오](/help/forms/developing/importing-exporting-data.md#importing-form-data).
+다음 Java 코드 예제에서는 데이터를 PDF 양식으로 가져옵니다. 데이터는 *Loan_data.xml*&#x200B;이라는 XML 파일에 있으며 PDF 양식은 *ResultLoanForm.pdf*&#x200B;이라는 PDF 파일로 저장됩니다. ([양식 데이터 가져오기](/help/forms/developing/importing-exporting-data.md#importing-form-data)를 참조하십시오.)
 
 ```java
  /*
@@ -134,9 +134,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 내보내기 {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}를 사용하여 양식 데이터 내보내기
 
-다음 Java 코드 예제에서는 PDF 양식의 데이터를 내보냅니다. 양식 데이터는 *Loan_data.xml이라는 XML 파일로 저장됩니다*. 양식 데이터 [내보내기를 참조하십시오](/help/forms/developing/importing-exporting-data.md#exporting-form-data).
+다음 Java 코드 예제에서는 PDF 양식의 데이터를 내보냅니다. 양식 데이터는 *Loan_data.xml*&#x200B;이라는 XML 파일로 저장됩니다. ([양식 데이터 내보내기](/help/forms/developing/importing-exporting-data.md#exporting-form-data)를 참조하십시오.)
 
 ```java
  /*
