@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # HTML5 양식 디버깅 {#debugging-html-forms}
 
-이 문서에는 몇 가지 문제 해결 시나리오가 포함되어 있습니다. 각 시나리오에 대해 문제를 해결하는 일부 단계가 제공됩니다. 다음 단계에 따라 문제가 지속되면 로거를 구성하여 로그를 가져와 오류/경고를 확인하십시오. HTML5 양식 로깅에 대한 자세한 내용은 HTML5 [양식에 대한 로그 생성을 참조하십시오](/help/forms/using/enable-logs.md).
+이 문서에는 몇 가지 문제 해결 시나리오가 포함되어 있습니다. 각 시나리오에 대해 문제를 해결하는 일부 단계가 제공됩니다. 다음 단계에 따라 문제가 지속되면 로거를 구성하여 로그를 가져와 오류/경고를 확인하십시오. HTML5 양식 로깅에 대한 자세한 내용은 [HTML5 양식에 대한 로그 생성](/help/forms/using/enable-logs.md)을 참조하십시오.
 
-## 문제: 양식을 렌더링할 때 org.apache.sling.api.SlingException 예외 페이지가 나타납니다 {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
+## 문제:양식을 렌더링할 때 org.apache.sling.api.SlingException 페이지 {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}이 표시됩니다.
 
-예외 세부 정보에서 **발생한 단어를 검색합니다**.
+예외 세부 정보에서 **에 의해 발생하는 단어**&#x200B;을 검색합니다.
 
 가능한 이유는 URL에 있는 하나 이상의 매개 변수가 잘못되었기 때문입니다.
 
@@ -46,7 +46,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>템플릿과 병합된 데이터 파일의 절대 경로입니다.<br /> 참고: 경로는 데이터 파일의 절대 경로를 정의합니다.</td>
+   <td>템플릿과 병합된 데이터 파일의 절대 경로입니다.<br /> 참고:경로는 데이터 파일의 절대 경로를 정의합니다.</td>
   </tr>
   <tr>
    <td>데이터</td>
@@ -55,9 +55,9 @@ ht-degree: 0%
  </tbody>
 </table>
 
-## 문제: 양식을 렌더링할 수 없습니다(오류 메시지가 표시됨). {#problem-unable-to-render-form}
+## 문제:양식을 렌더링할 수 없습니다(오류 메시지가 표시됨) {#problem-unable-to-render-form}
 
-1. 지정한 매개 변수가 올바른지 확인하십시오. 매개 변수에 대한 자세한 내용은 매개 변수 [렌더링을 참조하십시오](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
+1. 지정한 매개 변수가 올바른지 확인하십시오. 매개 변수에 대한 자세한 내용은 [매개 변수 렌더링](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page)을 참조하십시오.
 1. CRX 패키지 관리자(https://&lt;server>:&lt;port>/crx/packmgr/index.jsp)에 로그인하고 다음 패키지가 올바르게 설치되었는지 확인합니다.
 
    * adobe-lc-forms-content-pkg-&lt;버전>.zip
@@ -79,9 +79,9 @@ ht-degree: 0%
 
    (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
-## 문제: 스타일이 없는 양식 렌더링 {#problem-form-renders-without-styles}
+## 문제:양식 렌더링(스타일 {#problem-form-renders-without-styles} 없음)
 
-1. 브라우저에서 개발자 **도구를 엽니다**. profile.css를 사용할 수 있는지 확인합니다.
+1. 브라우저에서 **개발자 도구**&#x200B;를 엽니다. profile.css를 사용할 수 있는지 확인합니다.
 1. profile.css 파일을 사용할 수 없는 경우 https://&lt;server>:&lt;port>/crx/de에서 CRX DE에 로그인합니다.
 1. 왼쪽의 폴더 계층 구조에서 /etc/clientlibs/fd/xfaforms/로 이동합니다. 폴더에 나열된 css.txt 파일을 엽니다.
 
@@ -104,27 +104,27 @@ ht-degree: 0%
 
 1. 언급된 파일을 사용할 수 없는 경우 adobe-lc-forms-runtime-pkg-&lt;버전>.zip 패키지를 다시 설치하십시오.
 
-### 문제: 예기치 않은 오류가 발생했습니다. {#problem-unexpected-error-encountered}
+### 문제:예기치 않은 오류가 발생했습니다. {#problem-unexpected-error-encountered}
 
-1. 양식 URL에서 쿼리 매개 변수 debugClientLibs를 추가하고 해당 값을 true로 설정합니다(예: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. 양식 URL에서 쿼리 매개 변수 debugClientLibs를 추가하고 해당 값을 true로 설정합니다(예:https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. 크롬과 같은 데스크탑 브라우저에서 개발자 도구 -> 콘솔로 이동합니다.
-1. 로그를 열어 오류 유형을 확인합니다. 로그에 대한 자세한 내용은 [HTML5 양식의 로그를 참조하십시오](/help/forms/using/enable-logs.md).
+1. 로그를 열어 오류 유형을 확인합니다. 로그에 대한 자세한 내용은 [HTML5 양식 로그](/help/forms/using/enable-logs.md)를 참조하십시오.
 1. 개발자 도구 -> 콘솔로 이동합니다. 스택 추적을 사용하여 오류를 일으키는 코드를 찾습니다. 오류를 디버그하여 문제를 해결합니다.
 
    >[!NOTE]
    >
    >스크립팅에 실패하는 경우 양식의 PDF 변환 중에도 동일한 문제가 발생하는지 확인하십시오. 예: 양식 스크립팅 논리에 문제가 있습니다.
 
-## 문제: 양식을 제출할 수 없습니다. {#problem-unable-to-submit-the-form}
+## 문제:{#problem-unable-to-submit-the-form} 양식을 제출할 수 없습니다.
 
 1. AEM 서버에 액세스할 수 있는 권한이 있고 서버에 연결되어 있는지 확인합니다.
 1. submitUrl 매개 변수가 올바른지 확인하십시오.
-1. 디버그 옵션을 [1-a5-b5-c5](/help/forms/using/enable-logs.md) 로 사용하여 HTML5 양식의 ****&#x200B;로그 파일에 나와 있는 클라이언트 측 로그를 활성화합니다. 양식을 렌더링하고 [전송]을 클릭합니다. 브라우저 디버그 콘솔을 열고 오류가 있는지 확인합니다.
-1. HTML5 양식의 로그 [에서 언급한 대로 서버 로그를 찾습니다](/help/forms/using/enable-logs.md). 제출하는 동안 서버 로그에 오류가 있는지 확인하십시오.
+1. 디버그 옵션을 **1-a5-b5-c5**&#x200B;로 사용하여 [HTML5 양식에 대한 로그](/help/forms/using/enable-logs.md)에 명시된 대로 클라이언트 측 로그를 활성화합니다. 양식을 렌더링하고 [전송]을 클릭합니다. 브라우저 디버그 콘솔을 열고 오류가 있는지 확인합니다.
+1. [HTML5 양식에 대한 로그](/help/forms/using/enable-logs.md)에 명시된 대로 서버 로그를 찾습니다. 제출하는 동안 서버 로그에 오류가 있는지 확인하십시오.
 
-## 문제: 지역화된 오류 메시지가 표시되지 않음 {#problem-localized-error-messages-do-not-display}
+## 문제:지역화된 오류 메시지에 {#problem-localized-error-messages-do-not-display}이(가) 표시되지 않습니다.
 
-1. 데스크톱 브라우저에서 추가 쿼리 매개 변수 **debugClientLibs=true** 로 양식을 렌더링한 다음 개발자 도구 -> 리소스로 이동하여 파일 I18N.css를 확인합니다.
+1. 데스크톱 브라우저에서 추가 쿼리 매개 변수 **debugClientLibs=true**&#x200B;로 양식을 렌더링한 다음 개발자 도구 -> 리소스로 이동하여 파일 I18N.css를 확인합니다.
 1. 파일을 사용할 수 없는 경우 https://&lt;server>:&lt;port>/crx/de에서 CRX DE에 로그인합니다.
 1. 왼쪽의 폴더 계층 구조에서 /libs/fd/xfaforms/clientlibs/I18N으로 이동하여 다음 파일 및 폴더가 있는지 확인합니다.
 
@@ -146,11 +146,11 @@ ht-degree: 0%
    ../LogMessages.js
    ```
 
-## 문제: 이미지가 표시되지 않음 {#problem-image-not-showing-up}
+## 문제:이미지가 {#problem-image-not-showing-up}에 표시되지 않음
 
 1. 이미지 URL이 올바른지 확인하십시오.
 1. 브라우저가 이 유형의 이미지를 지원하는지 확인하십시오.
-1. 예외 세부 정보에서 **발생한 단어를 검색합니다**.
+1. 예외 세부 정보에서 **에 의해 발생하는 단어**&#x200B;을 검색합니다.
 
    가능한 이유는 URL에 있는 하나 이상의 매개 변수가 잘못되었기 때문입니다.
 
@@ -173,7 +173,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>템플릿과 병합된 데이터 파일의 절대 경로입니다.<br /> 참고: 경로는 데이터 파일의 절대 경로를 정의합니다.</td>
+   <td>템플릿과 병합된 데이터 파일의 절대 경로입니다.<br /> 참고:경로는 데이터 파일의 절대 경로를 정의합니다.</td>
   </tr>
   <tr>
    <td>데이터</td>
