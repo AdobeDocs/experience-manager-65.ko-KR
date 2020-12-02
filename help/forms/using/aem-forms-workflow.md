@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# OSGi의 Forms 중심 워크플로우{#forms-centric-workflow-on-osgi}
+# OSGi{#forms-centric-workflow-on-osgi}의 Forms 중심 워크플로우
 
 ![](do-not-localize/header.png)
 
@@ -25,40 +25,40 @@ ht-degree: 1%
 
 내부 및 외부 고객을 위한 검토 및 승인 워크플로우와 함께 대규모 조직과 기업은 반복적인 작업을 수행합니다. 예를 들어 PDF 문서를 다른 포맷으로 변환할 수 있습니다. 수동으로 작업을 수행하면 많은 시간과 리소스가 소요됩니다. 또한 기업은 사전 정의된 포맷으로 나중에 사용할 수 있도록 문서에 디지털 서명을 하고 양식 데이터를 보관해야 하는 법적 요건을 갖추고 있습니다.
 
-## OSGi에서 Forms 중심의 워크플로우 소개 {#introduction-to-forms-centric-workflow-on-osgi}
+## OSGi {#introduction-to-forms-centric-workflow-on-osgi}에서 Forms 중심의 워크플로우 소개
 
 AEM 워크플로우를 사용하여 적응형 양식 기반 워크플로우를 신속하게 구축할 수 있습니다. 이러한 워크플로우를 검토 및 승인, 업무 프로세스 흐름, 문서 서비스 시작, Adobe Sign 서명 워크플로우와 통합 및 유사한 작업에 사용할 수 있습니다. 예를 들어 신용 카드 신청 처리, 직원의 승인 워크플로우 종료, 양식을 PDF 문서로 저장 또한 이러한 워크플로우는 조직 내에서나 네트워크 방화벽에서 사용할 수 있습니다.
 
 OSGi의 Forms 중심 워크플로우를 사용하면 JEE 스택에 프로세스 관리 기능을 완전히 설치하지 않고도 OSGi 스택에서 다양한 작업을 위한 워크플로우를 신속하게 구축 및 배포할 수 있습니다. 워크플로우 개발 및 관리는 익숙한 AEM Workflow 및 AEM Inbox 기능을 사용합니다. 워크플로우는 다양한 소프트웨어 시스템, 네트워크, 부서 및 조직을 아우르는 실제 업무 프로세스를 자동화하는 기반이 됩니다.
 
-설정되면, 이러한 워크플로우를 수동으로 트리거하여 정의된 프로세스를 완료하거나 사용자가 양식 또는 [통신사 관리](/help/forms/using/cm-overview.md) 편지를 제출할 때 프로그래밍 방식으로 실행할 수 있습니다. 향상된 AEM 워크플로우 기능을 제공하는 AEM Forms은 서로 다른 두 가지 기능을 제공합니다. 배포 전략의 일부로 사용자에게 적합한 솔루션을 결정해야 합니다. JEE에서 OSGi 및 프로세스 관리에 대한 Forms 중심 AEM 워크플로우 [비교](capabilities-osgi-jee-workflows.md) 보기 또한 배포 토폴로지의 경우 AEM Forms [용 아키텍처 및 배포 토폴로지를 참조하십시오](/help/forms/using/aem-forms-architecture-deployment.md).
+설정되면 사용자가 양식 또는 [메일 관리](/help/forms/using/cm-overview.md) 문자를 제출할 때 이러한 워크플로우를 수동으로 트리거하여 정의된 프로세스를 완료하거나 프로그래밍 방식으로 실행할 수 있습니다. 향상된 AEM 워크플로우 기능을 제공하는 AEM Forms은 서로 다른 두 가지 기능을 제공합니다. 배포 전략의 일부로 사용자에게 적합한 솔루션을 결정해야 합니다. OSGi 및 JEE의 프로세스 관리에 대한 Forms 중심 AEM 워크플로우의 [비교](capabilities-osgi-jee-workflows.md)를 참조하십시오. 또한 배포 토폴로지의 경우, [AEM Forms용 아키텍처 및 배포 토폴로지](/help/forms/using/aem-forms-architecture-deployment.md)를 참조하십시오.
 
-OSGi의 Forms 중심 워크플로우는 [AEM 받은 편지함을 확대하고 AEM Workflow 편집기가 AEM Forms 중심 워크플로우에 대한 지원을 추가하는 추가 구성 요소(단계)를 제공합니다](/help/sites-authoring/inbox.md) . 확장된 AEM 받은 편지함은 [AEM Forms 작업 공간과 유사한 기능을 제공합니다](introduction-html-workspace.md). 인간 중심 워크플로우(승인, 검토 등)를 관리할 수 있을 뿐만 아니라 AEM 워크플로우를 사용하여 [문서 서비스](/help/sites-developing/workflows-step-ref.md)관련 작업(예: PDF 생성)과 전자 서명(Adobe Sign) 문서를 자동화할 수 있습니다.
+OSGi의 Forms 중심 워크플로우는 [AEM 받은 편지함](/help/sites-authoring/inbox.md)을 확장하고 AEM 워크플로우 편집기에 AEM Forms 중심 워크플로우에 대한 지원을 추가할 수 있는 추가 구성 요소(단계)를 제공합니다. 확장된 AEM 받은 편지함은 [AEM Forms 작업 공간](introduction-html-workspace.md)과 유사한 기능을 가지고 있습니다. 인간 중심 워크플로우(승인, 검토 등)를 관리할 수 있을 뿐만 아니라 AEM 워크플로우를 사용하여 [문서 서비스](/help/sites-developing/workflows-step-ref.md) 관련 작업(예: PDF 생성)과 전자 서명(Adobe Sign) 문서를 자동화할 수 있습니다.
 
-모든 AEM Forms 워크플로우 단계에서는 변수 사용을 지원합니다. 변수를 사용하면 워크플로우 단계를 통해 런타임 시 메타데이터를 저장하고 전달할 수 있습니다. 다양한 유형의 데이터를 저장하기 위해 다양한 유형의 변수를 만들 수 있습니다. 같은 형식의 관련 데이터의 여러 인스턴스를 저장하기 위해 변수 컬렉션(배열)을 만들 수도 있습니다. 일반적으로, 보유 중인 값을 기반으로 하거나 나중에 프로세스에서 필요한 정보를 저장하기 위해 필요한 경우 변수 또는 변수 모음을 사용합니다. 이러한 Forms 중심 워크플로우 구성 요소(단계)에서 변수 사용에 대한 자세한 내용은 OSGi의 [Forms 중심 워크플로우 - 단계 참조를 참조하십시오](../../forms/using/aem-forms-workflow-step-reference.md). 변수 만들기 및 관리에 대한 자세한 내용은 AEM 워크플로우 [의 변수를 참조하십시오](../../forms/using/variable-in-aem-workflows.md).
+모든 AEM Forms 워크플로우 단계에서는 변수 사용을 지원합니다. 변수를 사용하면 워크플로우 단계를 통해 런타임 시 메타데이터를 저장하고 전달할 수 있습니다. 다양한 유형의 데이터를 저장하기 위해 다양한 유형의 변수를 만들 수 있습니다. 같은 형식의 관련 데이터의 여러 인스턴스를 저장하기 위해 변수 컬렉션(배열)을 만들 수도 있습니다. 일반적으로, 보유 중인 값을 기반으로 하거나 나중에 프로세스에서 필요한 정보를 저장하기 위해 필요한 경우 변수 또는 변수 모음을 사용합니다. 이러한 Forms 중심 워크플로우 구성 요소의 변수 사용에 대한 자세한 내용은 OSGi의 [Forms 중심 워크플로우 - 단계 참조](../../forms/using/aem-forms-workflow-step-reference.md)를 참조하십시오. 변수 만들기 및 관리에 대한 자세한 내용은 AEM 작업 과정의 [변수](../../forms/using/variable-in-aem-workflows.md)를 참조하십시오.
 
 다음 다이어그램은 OSGi에서 Forms 중심의 워크플로우를 작성, 실행 및 모니터링하는 엔드 투 엔드 절차를 설명합니다.
 
 ![aem-forms-workflow 소개](assets/introduction-to-aem-forms-workflow.jpg)
 
-## Before you start {#before-you-start}
+## {#before-you-start}을(를) 시작하기 전에
 
 * 워크플로우는 실제 비즈니스 프로세스를 나타냅니다. 실제 비즈니스 프로세스와 비즈니스 프로세스 참가자 목록을 준비합니다. 또한 워크플로우를 만들기 전에 부수적 자료(적응형 양식, PDF 문서 등)를 준비할 수 있습니다.
 * 워크플로우는 여러 단계를 가질 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시되며 작업 과정의 진행 상황을 보고하는 데 도움이 됩니다. 비즈니스 프로세스를 논리적 단계로 나눌 수 있습니다.
-* AEM 워크플로우의 할당 작업 단계를 구성하여 사용자 또는 할당자에게 이메일 알림을 전송할 수 있습니다. 따라서 이메일 알림 [을 활성화합니다](#configure-email-service).
-* 또한 워크플로우에서는 디지털 서명에 Adobe 서명을 사용할 수 있습니다. 워크플로우에서 Adobe Sign을 사용하려는 경우 워크플로우에서 사용하기 전에 AEM Forms [에](../../forms/using/adobe-sign-integration-adaptive-forms.md) 대해 Adobe Sign을 구성합니다.
+* AEM 워크플로우의 할당 작업 단계를 구성하여 사용자 또는 할당자에게 이메일 알림을 전송할 수 있습니다. 따라서 [이메일 알림 활성화](#configure-email-service).
+* 또한 워크플로우에서는 디지털 서명에 Adobe 서명을 사용할 수 있습니다. 워크플로우에서 Adobe Sign을 사용할 계획인 경우 워크플로우에서를 사용하기 전에 [AEM Forms에 대한 Adobe Sign 구성](../../forms/using/adobe-sign-integration-adaptive-forms.md)을 참조하십시오.
 
-## Create a workflow model {#create-a-workflow-model}
+## 워크플로우 모델 {#create-a-workflow-model} 만들기
 
-워크플로우 모델은 비즈니스 프로세스의 로직과 흐름으로 구성됩니다. 일련의 단계로 구성됩니다. 이러한 단계는 AEM 구성 요소입니다. 필요한 경우 매개 변수 및 스크립트로 워크플로우 단계를 확장하여 더 많은 기능과 컨트롤을 제공할 수 있습니다. AEM Forms은 즉시 사용 가능한 AEM 단계 외에도 몇 가지 단계를 제공합니다. AEM 및 AEM Forms 단계의 자세한 목록은 [AEM Workflow 단계 참조](/help/sites-developing/workflows-step-ref.md) 및 [Forms 중심의 OSGi - 단계 참조](../../forms/using/aem-forms-workflow.md)워크플로우를 참조하십시오.
+워크플로우 모델은 비즈니스 프로세스의 로직과 흐름으로 구성됩니다. 일련의 단계로 구성됩니다. 이러한 단계는 AEM 구성 요소입니다. 필요한 경우 매개 변수 및 스크립트로 워크플로우 단계를 확장하여 더 많은 기능과 컨트롤을 제공할 수 있습니다. AEM Forms은 즉시 사용 가능한 AEM 단계 외에도 몇 가지 단계를 제공합니다. AEM 및 AEM Forms 단계의 자세한 목록은 [AEM Workflow 단계 참조](/help/sites-developing/workflows-step-ref.md) 및 OSGi의 [Forms 중심 작업 흐름](../../forms/using/aem-forms-workflow.md)을 참조하십시오.
 
-AEM은 제공되는 워크플로우 단계를 통해 워크플로우 모델을 만드는 직관적인 유저 인터페이스를 제공합니다. 워크플로우 모델을 만드는 단계별 지침은 워크플로우 모델 [만들기를 참조하십시오](/help/sites-developing/workflows-models.md). 다음 예에서는 승인 및 검토 워크플로우에 대한 워크플로우 모델을 만드는 단계별 지침을 제공합니다.
+AEM은 제공되는 워크플로우 단계를 통해 워크플로우 모델을 만드는 직관적인 유저 인터페이스를 제공합니다. 워크플로우 모델을 만드는 단계별 지침은 [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md)를 참조하십시오. 다음 예에서는 승인 및 검토 워크플로우에 대한 워크플로우 모델을 만드는 단계별 지침을 제공합니다.
 
 >[!NOTE]
 >
 >워크플로우 모델을 만들거나 편집하려면 워크플로우 편집기 그룹의 구성원이어야 합니다.
 
-### 승인 및 검토 워크플로우용 모델 만들기 {#create-a-model-for-an-approval-and-review-workflow}
+### 승인 및 검토 작업 과정 {#create-a-model-for-an-approval-and-review-workflow} 모델 만들기
 
 승인 및 검토 워크플로우는 의사 결정을 위해 사람의 개입이 필요한 작업을 위한 것입니다. 다음 예에서는 프런트 오피스 은행 에이전트가 작성할 대출 신청 워크플로우 모델을 생성합니다. 신청이 완료되면 승인을 위해 전송됩니다. 이후 승인된 신청서는 Adobe Sign을 사용하여 전자 서명을 신청한 사람에게 보내진다.
 
@@ -69,32 +69,32 @@ AEM은 제공되는 워크플로우 단계를 통해 워크플로우 모델을 �
 [파일 가져오기](assets/example-mortgage-loan-application.zip)
 
 1. 워크플로우 모델 콘솔을 엽니다. 기본 URL은 `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
-1. Select **Create**, then **Create Model**. 워크플로우 모델 추가 대화 상자가 나타납니다.
-1. 제목 **및** 이름 **을** 입력합니다(선택 사항). 예를 들어 모기지 애플리케이션입니다. **Done**&#x200B;을 누릅니다.
-1. 새로 만든 워크플로우 모델을 선택하고 편집을 **누릅니다**. 이제 워크플로우 단계를 추가하여 비즈니스 로직을 구축할 수 있습니다. 워크플로우 모델을 처음 만들면 다음과 같은 내용이 포함됩니다.
+1. **만들기**&#x200B;를 선택한 다음 **모델 만들기**&#x200B;를 선택합니다. 워크플로우 모델 추가 대화 상자가 나타납니다.
+1. **제목** 및 **이름**(선택 사항)을 입력합니다. 예를 들어 모기지 애플리케이션입니다. **Done**&#x200B;을 누릅니다.
+1. 새로 만든 워크플로우 모델을 선택하고 **편집**&#x200B;을 누릅니다. 이제 워크플로우 단계를 추가하여 비즈니스 로직을 구축할 수 있습니다. 워크플로우 모델을 처음 만들면 다음과 같은 내용이 포함됩니다.
 
    * 단계:흐름 시작 및 흐름 끝. 이러한 단계는 워크플로우의 시작과 끝을 나타냅니다. 이러한 단계는 필수이며 편집하거나 제거할 수 없습니다.
    * 1단계라는 이름의 참가자 단계 예입니다. 이 단계는 작업 항목을 관리 사용자에게 할당하도록 구성되었습니다. 이 단계를 제거합니다.
 
 1. 이메일 알림을 활성화합니다. OSGi에서 Forms 중심의 워크플로우를 구성하여 사용자 또는 담당자에게 이메일 알림을 보낼 수 있습니다. 이메일 알림을 활성화하려면 다음 구성을 수행하십시오.
 
-   1. 의 AEM 구성 관리자로 이동합니다 `https://[server]:[port]/system/console/configMgr`.
-   1. 일 **[!UICONTROL CQ 메일 서비스]** 구성을 엽니다. SMTP **[!UICONTROL 서버 호스트 이름]**, **[!UICONTROL SMTP 서버 포트]** 및 **[!UICONTROL &quot;보낸 사람&quot; 주소]** 필드 값을지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
-   1. Day **[!UICONTROL CQ Link Externalizer 구성을]** 엽니다. 도메인 **** 필드에서 로컬, 작성자 및 게시 인스턴스의 실제 호스트 이름/IP 주소 및 포트 번호를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+   1. `https://[server]:[port]/system/console/configMgr`의 AEM 구성 관리자로 이동합니다.
+   1. **[!UICONTROL 일 CQ 메일 서비스]** 구성을 엽니다. **[!UICONTROL SMTP 서버 호스트 이름]**, **[!UICONTROL SMTP 서버 포트,]** 및 **[!UICONTROL &quot;보낸 사람&quot; 주소]** 필드에 대한 값을 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+   1. **[!UICONTROL 일 CQ 링크 외부라이저]** 구성을 엽니다. **[!UICONTROL 도메인]** 필드에서 로컬, 작성자 및 게시 인스턴스의 실제 호스트 이름/IP 주소 및 포트 번호를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 1. 워크플로우 단계 만들기 워크플로우는 여러 단계를 가질 수 있습니다. 이러한 단계는 AEM 받은 편지함에 표시되고 워크플로우의 진행 상황을 보고합니다.
 
-   스테이지를 정의하려면 ![정보 원](assets/info-circle.png) 아이콘을 눌러 워크플로우 모델 속성을 열고 **단계** 탭을 열고 워크플로우 모델에 대한 단계를 추가한 다음 **저장 및 닫기를**&#x200B;누릅니다. 예를 들어 담보 대출 응용 프로그램에 대해 단계를 만듭니다.대출 요청, 대출 요청 상태, 서명 문서 및 대출 문서 서명
+   스테이지를 정의하려면 ![info-circle](assets/info-circle.png) 아이콘을 눌러 워크플로우 모델 속성을 열고 **스테이지** 탭을 열고 워크플로우 모델에 대한 단계를 추가한 다음 **저장 및 닫기**&#x200B;를 누릅니다. 예를 들어 담보 대출 응용 프로그램에 대해 단계를 만듭니다.대출 요청, 대출 요청 상태, 서명 문서 및 대출 문서 서명
 
-1. 작업 **단계 지정** 브라우저를 워크플로우 모델로 드래그하여 놓습니다. 모델의 첫 번째 단계로 만듭니다.
+1. 작업&#x200B;**단계 브라우저를 작업 모델에 드래그하여 놓습니다.** 모델의 첫 번째 단계로 만듭니다.
 
    작업 지정 구성 요소는 워크플로우에서 만든 작업을 사용자나 그룹에 할당합니다. 작업을 할당하는 동시에 구성 요소를 사용하여 작업에 적응형 양식 또는 비대화형 PDF를 지정할 수 있습니다. 적응형 양식은 사용자의 입력을 받아들이는 데 필요하며 비대화형 PDF 또는 읽기 전용 적응형 양식은 검토 전용 워크플로우에 사용됩니다.
 
-   이 단계를 사용하여 작업의 동작을 제어할 수도 있습니다. 예를 들어 자동 기록 문서를 만드는 경우 특정 사용자 또는 그룹에 작업을 지정하고, 제출된 데이터의 경로, 미리 채울 데이터 경로 및 기본 작업을 지정합니다. 작업 할당 단계의 옵션에 대한 자세한 내용은 OSGi - 단계 참조 [문서의](../../forms/using/aem-forms-workflow.md) Forms 중심 워크플로우를 참조하십시오.
+   이 단계를 사용하여 작업의 동작을 제어할 수도 있습니다. 예를 들어 자동 기록 문서를 만드는 경우 특정 사용자 또는 그룹에 작업을 지정하고, 제출된 데이터의 경로, 미리 채울 데이터 경로 및 기본 작업을 지정합니다. 작업 할당 단계의 옵션에 대한 자세한 내용은 OSGi의 [Forms 중심 워크플로우 - 단계 참조](../../forms/using/aem-forms-workflow.md) 문서를 참조하십시오.
 
    ![workflow-editor](assets/workflow-editor.png)
 
-   저당 응용 프로그램 예제의 경우 작업 지정 단계를 구성하여 읽기 전용 응용 양식을 사용하고 작업이 완료되면 PDF 문서를 표시합니다. 또한 대출 요청을 승인할 수 있는 사용자 그룹에 대해 선택합니다. 작업 **탭에서** 제출 **옵션을** 비활성화합니다. 문자열 데이터 **유형의 actionTaken** 변수를 만들고 변수를 경로 변수로 **지정합니다**. 예: actionTaken. 또한 승인 및 거부 경로를 추가합니다. 경로는 AEM 받은 편지함에 별도의 작업(단추)으로 표시됩니다. 워크플로우는 사용자가 누르는 작업(단추)을 기반으로 분기를 선택합니다.
+   저당 응용 프로그램 예제의 경우 작업 지정 단계를 구성하여 읽기 전용 응용 양식을 사용하고 작업이 완료되면 PDF 문서를 표시합니다. 또한 대출 요청을 승인할 수 있는 사용자 그룹에 대해 선택합니다. **작업** 탭에서 **제출** 옵션을 비활성화합니다. 문자열 데이터 유형의 **actionTaken** 변수를 만들고 변수를 **Route 변수**&#x200B;로 지정합니다. 예: actionTaken. 또한 승인 및 거부 경로를 추가합니다. 경로는 AEM 받은 편지함에 별도의 작업(단추)으로 표시됩니다. 워크플로우는 사용자가 누르는 작업(단추)을 기반으로 분기를 선택합니다.
 
    섹션 시작 부분에서 다운로드할 수 있는 예제 패키지를 가져올 수 있습니다. 여기에는 담보 대출 응용 프로그램과 같이 구성된 할당 작업 단계의 모든 필드 전체 값 세트가 포함됩니다.
 
@@ -106,29 +106,29 @@ AEM은 제공되는 워크플로우 단계를 통해 워크플로우 모델을 �
 
    **분기 1에 대한 라우팅 표현식**
 
-   사용자가 AEM 받은 편지함 **에서** 승인을 누르면 분기 1이 활성화됩니다.
+   사용자가 AEM 받은 편지함에서 **승인**&#x200B;을 누르면 분기 1이 활성화됩니다.
 
    ![OR 분할 예](assets/orsplit_branch1_active_new.png)
 
    **분기 2에 대한 라우팅 표현식**
 
-   사용자가 AEM 받은 편지함 **에서 거부를** 누르면 분기 2가 활성화됩니다.
+   사용자가 AEM 받은 편지함에서 **거부**&#x200B;를 누르면 분기 2가 활성화됩니다.
 
    ![OR 분할 예](assets/orsplit_branch2_active_new.png)
 
-   변수를 사용한 라우팅 표현식 만들기에 대한 자세한 내용은 AEM Forms 워크플로우의 [변수를 참조하십시오](../../forms/using/variable-in-aem-workflows.md).
+   변수를 사용하여 라우팅 표현식을 만드는 방법에 대한 자세한 내용은 AEM Forms 워크플로우의 [변수를 참조하십시오.](../../forms/using/variable-in-aem-workflows.md).
 
 1. 다른 워크플로우 단계를 추가하여 비즈니스 로직을 구성합니다.
 
-   담보 대출 예의 경우 아래 이미지에 표시된 대로 기록 생성 문서, 두 개의 작업 단계 지정 및 서명 문서 단계를 모델의 분기 1에 추가합니다. 한 가지 태스크 단계 **는 서명한 대출 문서를 신청자에게 표시하고 보내는 것이며, 다른 지정 태스크 구성 요소는 서명된 문서** 를 표시하는 **것입니다**. 또한, 분기 2에 작업 구성 요소를 할당합니다. 사용자가 AEM 받은 편지함에서 거부를 누르면 활성화됩니다.
+   담보 대출 예의 경우 아래 이미지에 표시된 대로 기록 생성 문서, 두 개의 작업 단계 지정 및 서명 문서 단계를 모델의 분기 1에 추가합니다. 한 가지 할당 작업 단계는 서명한 대출 문서를 신청자에게 표시하고 보낼 **이고 다른 할당 작업 구성 요소는**&#x200B;로 서명된 문서를 표시하는 것입니다&#x200B;**.** 또한, 분기 2에 작업 구성 요소를 할당합니다. 사용자가 AEM 받은 편지함에서 거부를 누르면 활성화됩니다.
 
    할당 작업 단계의 모든 필드, 기록 단계 문서 및 담보 대출 응용 프로그램과 같이 구성된 문서 단계의 전체 값 세트에 대해 이 섹션 시작 부분에서 다운로드할 수 있는 예제 패키지를 가져옵니다.
 
-   워크플로우 모델이 준비되었습니다. 다양한 방법으로 워크플로우를 실행할 수 있습니다. 자세한 내용은 [OSGi에서 Forms 중심의 워크플로우 시작을 참조하십시오](#launch).
+   워크플로우 모델이 준비되었습니다. 다양한 방법으로 워크플로우를 실행할 수 있습니다. 자세한 내용은 [OSGi](#launch)에서 Forms 중심의 워크플로우 시작을 참조하십시오.
 
    ![workflow-editor-modition](assets/workflow-editor-mortgage.png)
 
-## Forms 중심의 워크플로우 애플리케이션 만들기 {#create-a-forms-centric-workflow-application}
+## Forms 중심 워크플로우 응용 프로그램 만들기 {#create-a-forms-centric-workflow-application}
 
 애플리케이션은 워크플로우와 연관된 적응형 양식입니다. 응용 프로그램이 받은 편지함을 통해 제출되면 연결된 작업 흐름을 시작합니다. AEM 받은 편지함 및 AEM Forms 앱에서 Forms 워크플로우를 애플리케이션으로 사용하려면 다음을 수행하여 워크플로우 애플리케이션을 만듭니다.
 
@@ -136,8 +136,8 @@ AEM은 제공되는 워크플로우 단계를 통해 워크플로우 모델을 �
 >
 >워크플로우 애플리케이션을 만들고 관리할 수 있으려면 fd-administrator 그룹의 구성원이어야 합니다.
 
-1. AEM 작성 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL Forms]** > 워크플로 응용 프로그램 **[!UICONTROL 관리]** 로 이동하고 Create을 ****&#x200B;누릅니다.
-1. 워크플로우 애플리케이션 만들기 창에서 다음 필드에 대한 입력을 제공하고 만들기를 **누릅니다**. 새 응용 프로그램이 만들어지고 [워크플로 응용 프로그램] 화면에 나열됩니다.
+1. AEM 작성자 인스턴스의 경우 ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Manage Workflow 응용 프로그램]**&#x200B;으로 이동하고 **[!UICONTROL 만들기]**&#x200B;를 누릅니다.
+1. 워크플로우 응용 프로그램 만들기 창에서 다음 필드에 대한 입력을 제공하고 **만들기**&#x200B;를 누릅니다. 새 응용 프로그램이 만들어지고 [워크플로 응용 프로그램] 화면에 나열됩니다.
 
 <table>
  <tbody>
@@ -147,7 +147,7 @@ AEM은 제공되는 워크플로우 단계를 통해 워크플로우 모델을 �
   </tr>
   <tr>
    <td>제목</td>
-   <td>제목은 AEM 받은 편지함에 표시되며 사용자가 애플리케이션을 선택하는 데 도움이 됩니다. 설명적으로 보관하십시오. 예를 들어, 저축 계정 응용 프로그램 열기.<br /> </td>
+   <td>제목은 AEM 받은 편지함에 표시되며 사용자가 애플리케이션을 선택하는 데 도움이 됩니다. 설명적으로 보관하십시오. 예를 들어, 저축 계정의 응용 프로그램을 여는 중입니다.<br /> </td>
   </tr>
   <tr>
    <td>이름 </td>
@@ -167,11 +167,11 @@ AEM은 제공되는 워크플로우 단계를 통해 워크플로우 모델을 �
   </tr>
   <tr>
    <td>미리 채우기 서비스</td>
-   <td>적응형 양식의 <a href="../../forms/using/prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">자동</a> 채우기 서비스를 선택합니다.<br /> </td>
+   <td>적응형 양식의 <a href="../../forms/using/prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">프리플라이트 서비스</a>를 선택하십시오.<br /> </td>
   </tr>
   <tr>
    <td>워크플로우 모델</td>
-   <td>응용 프로그램의 <a href="../../forms/using/aem-forms-workflow.md#create-a-workflow-model">워크플로우 모델을</a> 선택합니다. 워크플로우 모델은 비즈니스 프로세스의 로직과 흐름으로 구성됩니다. </td>
+   <td>응용 프로그램에 대해 <a href="../../forms/using/aem-forms-workflow.md#create-a-workflow-model">워크플로우 모델</a>을 선택합니다. 워크플로우 모델은 비즈니스 프로세스의 로직과 흐름으로 구성됩니다. </td>
   </tr>
   <tr>
    <td>데이터 파일 경로</td>
@@ -188,7 +188,7 @@ AEM은 제공되는 워크플로우 단계를 통해 워크플로우 모델을 �
  </tbody>
 </table>
 
-## OSGi에서 Forms 중심의 워크플로우 시작 {#launch}
+## OSGi {#launch}에서 Forms 중심 워크플로우 시작
 
 다음을 통해 Forms 중심 워크플로우를 실행하거나 트리거할 수 있습니다.
 
@@ -202,24 +202,24 @@ AEM은 제공되는 워크플로우 단계를 통해 워크플로우 모델을 �
 
 ### AEM 받은 편지함에서 응용 프로그램 제출 {#inbox}
 
-만든 워크플로우 응용 프로그램은 받은 편지함에서 응용 프로그램으로 사용할 수 있습니다. 워크플로우 사용자 그룹의 구성원인 사용자는 연관된 워크플로우를 트리거하는 애플리케이션을 작성하고 제출할 수 있습니다. AEM 받은 편지함을 사용하여 응용 프로그램을 제출하고 작업을 관리하는 방법에 대한 자세한 내용은 AEM 받은 편지함에서 [Forms 응용 프로그램 및 작업 관리를 참조하십시오](../../forms/using/manage-applications-inbox.md).
+만든 워크플로우 응용 프로그램은 받은 편지함에서 응용 프로그램으로 사용할 수 있습니다. 워크플로우 사용자 그룹의 구성원인 사용자는 연관된 워크플로우를 트리거하는 애플리케이션을 작성하고 제출할 수 있습니다. AEM 받은 편지함을 사용하여 응용 프로그램을 제출하고 작업을 관리하는 방법에 대한 자세한 내용은 AEM 받은 편지함의 Forms 응용 프로그램 및 작업 관리](../../forms/using/manage-applications-inbox.md)를 참조하십시오.[
 
-### AEM Forms 앱에서 애플리케이션 제출 {#afa}
+### AEM Forms 앱에서 응용 프로그램 제출 {#afa}
 
-AEM Forms 앱은 AEM Forms 서버와 동기화되므로 계정에서 양식 데이터, 작업, 워크플로우 애플리케이션 및 저장된 정보(초안/템플릿)를 변경할 수 있습니다. 자세한 내용은 [AEM Forms 앱](/help/forms/using/aem-forms-app.md) 및 관련 문서를 참조하십시오.
+AEM Forms 앱은 AEM Forms 서버와 동기화되므로 계정에서 양식 데이터, 작업, 워크플로우 애플리케이션 및 저장된 정보(초안/템플릿)를 변경할 수 있습니다. 자세한 내용은 [AEM Forms 앱](/help/forms/using/aem-forms-app.md) 및 관련 아티클을 참조하십시오.
 
-### 응용 양식 제출 {#af}
+### 응용 양식 {#af} 제출
 
-적응형 양식의 제출 작업을 구성하여 적응형 양식의 제출 시 워크플로우를 시작할 수 있습니다. 적응형 양식은 **AEM Workflow** 제출 작업을 호출하여 적응형 양식 제출 시 워크플로우를 시작할 수 있도록 합니다. 제출 작업에 대한 자세한 내용은 제출 작업 [구성을 참조하십시오](../../forms/using/configuring-submit-actions.md). AEM Forms 앱을 통해 적응형 양식을 제출하려면 적응형 양식 속성에서 AEM Forms 앱과 동기화를 활성화합니다.
+적응형 양식의 제출 작업을 구성하여 적응형 양식의 제출 시 워크플로우를 시작할 수 있습니다. 응용 양식은 응용 양식 제출 시 워크플로우를 시작하기 위해 **AEM Workflow** 제출 작업을 불러옵니다. 제출 작업에 대한 자세한 내용은 [제출 작업 구성](../../forms/using/configuring-submit-actions.md)을 참조하십시오. AEM Forms 앱을 통해 적응형 양식을 제출하려면 적응형 양식 속성에서 AEM Forms 앱과 동기화를 활성화합니다.
 
-AEM Forms 앱에서 워크플로우를 동기화, 제출 및 트리거하도록 적응형 양식을 구성할 수 있습니다. 자세한 내용은 양식 [작업을 참조하십시오](/help/forms/using/working-with-form.md).
+AEM Forms 앱에서 워크플로우를 동기화, 제출 및 트리거하도록 적응형 양식을 구성할 수 있습니다. 자세한 내용은 [양식 작업](/help/forms/using/working-with-form.md)을 참조하십시오.
 
 ### 감시 폴더 사용 {#watched}
 
-관리자(fd-administrators 그룹의 구성원)는 사용자가 폴더에 파일(예: PDF 파일)을 배치할 때 미리 구성된 워크플로우를 실행하도록 네트워크 폴더를 구성할 수 있습니다. 워크플로우가 완료되면 결과 파일을 지정된 출력 폴더에 저장할 수 있습니다. 이러한 폴더를 [감시 폴더라고 합니다](../../forms/using/watched-folder-in-aem-forms.md). 워크플로우를 실행할 감시 폴더를 구성하려면 다음 절차를 수행하십시오.
+관리자(fd-administrators 그룹의 구성원)는 사용자가 폴더에 파일(예: PDF 파일)을 배치할 때 미리 구성된 워크플로우를 실행하도록 네트워크 폴더를 구성할 수 있습니다. 워크플로우가 완료되면 결과 파일을 지정된 출력 폴더에 저장할 수 있습니다. 이러한 폴더는 [감시 폴더](../../forms/using/watched-folder-in-aem-forms.md)라고 합니다. 워크플로우를 실행할 감시 폴더를 구성하려면 다음 절차를 수행하십시오.
 
-1. AEM 작성자 인스턴스의 경우 ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더]**&#x200B;구성으로 이동합니다. 이미 구성된 감시 폴더 목록이 표시됩니다.
-1. 새로 **[!UICONTROL 만들기를 누릅니다]**. 필드 목록이 표시됩니다. 워크플로우에 대해 감시 폴더를 구성하려면 다음 필드에 값을 지정합니다.
+1. AEM 작성자 인스턴스의 경우 ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL 감시 폴더 구성]**&#x200B;으로 이동합니다. 이미 구성된 감시 폴더 목록이 표시됩니다.
+1. **[!UICONTROL 새로 만들기]**&#x200B;를 누릅니다. 필드 목록이 표시됩니다. 워크플로우에 대해 감시 폴더를 구성하려면 다음 필드에 값을 지정합니다.
 
 <table>
  <tbody>
@@ -237,41 +237,41 @@ AEM Forms 앱에서 워크플로우를 동기화, 제출 및 트리거하도록 
   </tr>
   <tr>
    <td><span class="uicontrol">사용 중인 파일 처리</code></td>
-   <td>워크플로우 <span class="uicontrol"></code>옵션을 선택합니다. </code></td>
+   <td><span class="uicontrol">워크플로우 </code>옵션을 선택합니다. </code></td>
   </tr>
   <tr>
    <td><span class="uicontrol">워크플로우 모델</code></td>
-   <td>Select a workflow model.<br /> </td>
+   <td>워크플로우 모델을 선택합니다.<br /> </td>
   </tr>
   <tr>
    <td><span class="uicontrol">출력 파일 패턴</code></td>
-   <td>출력 파일 및 디렉토리의 디렉토리 구조를 지정합니다. 출력 파일 및 디렉토리에 대한 <a href="/help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">패턴을 지정할 수도 있습니다</a>.</td>
+   <td>출력 파일 및 디렉토리의 디렉토리 구조를 지정합니다. 출력 파일 및 디렉토리</a>에 대해 <a href="/help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">패턴을 지정할 수도 있습니다.</a></td>
   </tr>
  </tbody>
 </table>
 
-1. 고급을 **누릅니다**. 다음 필드에 값을 지정하고 만들기를 **누릅니다**. 감시 폴더는 워크플로우를 시작하도록 구성됩니다. 이제 감시 폴더의 입력 디렉토리에 파일이 배치되면 지정된 워크플로우가 트리거됩니다.
+1. **고급**&#x200B;을 누릅니다. 다음 필드의 값을 지정하고 **만들기**&#x200B;를 누릅니다. 감시 폴더는 워크플로우를 시작하도록 구성됩니다. 이제 감시 폴더의 입력 디렉토리에 파일이 배치되면 지정된 워크플로우가 트리거됩니다.
 
    | 필드 | 설명 |
    |---|---|
    | 페이로드 매퍼 필터  | 감시 폴더를 만들면 crx-repository에 폴더 구조가 만들어집니다. 폴더 구조는 워크플로우에 대한 페이로드 역할을 할 수 있습니다. AEM Workflow를 매핑하여 시청 폴더 구조에서 입력을 허용하는 스크립트를 작성할 수 있습니다. 즉시 구현이 가능하며 페이로드 매퍼 필터에 나열됩니다. 사용자 지정 구현이 없는 경우 기본 구현을 선택합니다. |
 
-   고급 탭에는 더 많은 필드가 포함되어 있습니다. 이러한 필드 대부분은 기본값을 포함합니다. 모든 필드에 대한 자세한 내용은 감시 폴더 [만들기 또는 구성 문서를](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) 참조하십시오.
+   고급 탭에는 더 많은 필드가 포함되어 있습니다. 이러한 필드 대부분은 기본값을 포함합니다. 모든 필드에 대한 자세한 내용은 [감시 폴더 만들기 또는 구성](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) 문서를 참조하십시오.
 
-### 대화형 통신 또는 서신 제출 {#letter}
+### 대화형 통신 또는 문자 {#letter} 제출
 
-OSGi에서 인터랙티브한 커뮤니케이션이나 편지를 제출하는 경우 Forms 중심의 워크플로우를 연결하고 실행할 수 있습니다. 통신 관리 워크플로우에서는 인터랙티브한 커뮤니케이션과 문자를 사후 처리하는 데 사용됩니다. 예를 들어, 이메일로 전송, 인쇄, 팩스 전송 또는 최종 글자로 보관합니다. 자세한 내용은 대화형 통신 및 문자 [게시 처리를 참조하십시오](../../forms/using/submit-letter-topostprocess.md).
+OSGi에서 인터랙티브한 커뮤니케이션이나 편지를 제출하는 경우 Forms 중심의 워크플로우를 연결하고 실행할 수 있습니다. 통신 관리 워크플로우에서는 인터랙티브한 커뮤니케이션과 문자를 사후 처리하는 데 사용됩니다. 예를 들어, 이메일로 전송, 인쇄, 팩스 전송 또는 최종 글자로 보관합니다. 자세한 내용은 [대화형 통신 및 문자 게시 처리를 참조하십시오](../../forms/using/submit-letter-topostprocess.md).
 
 ## 추가 구성 {#additional-configurations}
 
-### 이메일 서비스 구성 {#configure-email-service}
+### 이메일 서비스 {#configure-email-service} 구성
 
 AEM Workflows의 작업 할당 및 이메일 보내기 단계를 사용하여 이메일을 보낼 수 있습니다. 이메일 서버 및 이메일을 전송하는 데 필요한 기타 구성을 지정하려면 다음 단계를 수행하십시오.
 
-1. 의 AEM 구성 관리자로 이동합니다 `https://[server]:[port]/system/console/configMgr`.
-1. 일 **[!UICONTROL CQ 메일 서비스]** 구성을 엽니다. SMTP **[!UICONTROL 서버 호스트 이름]**, **[!UICONTROL SMTP 서버 포트]** 및 **[!UICONTROL &quot;보낸 사람&quot; 주소]** 필드 값을지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
-1. Day **[!UICONTROL CQ Link Externalizer 구성을]** 엽니다. 도메인 **** 필드에서 로컬, 작성자 및 게시 인스턴스의 실제 호스트 이름/IP 주소 및 포트 번호를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. `https://[server]:[port]/system/console/configMgr`의 AEM 구성 관리자로 이동합니다.
+1. **[!UICONTROL 일 CQ 메일 서비스]** 구성을 엽니다. **[!UICONTROL SMTP 서버 호스트 이름]**, **[!UICONTROL SMTP 서버 포트,]** 및 **[!UICONTROL &quot;보낸 사람&quot; 주소]** 필드에 대한 값을 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 일 CQ 링크 외부라이저]** 구성을 엽니다. **[!UICONTROL 도메인]** 필드에서 로컬, 작성자 및 게시 인스턴스의 실제 호스트 이름/IP 주소 및 포트 번호를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-### 워크플로우 인스턴스 제거 {#purge-workflow-instances}
+### 워크플로 인스턴스 제거 {#purge-workflow-instances}
 
-워크플로우 인스턴스 수를 최소화하면 워크플로우 엔진의 성능이 향상되므로 저장소에서 완료된 워크플로우 인스턴스 또는 실행 중인 워크플로우 인스턴스를 정기적으로 제거할 수 있습니다. 자세한 내용은 워크플로우 인스턴스 [제거를](/help/sites-administering/workflows-administering.md#regular) 참조하십시오.
+워크플로우 인스턴스 수를 최소화하면 워크플로우 엔진의 성능이 향상되므로 저장소에서 완료된 워크플로우 인스턴스 또는 실행 중인 워크플로우 인스턴스를 정기적으로 제거할 수 있습니다. 자세한 내용은 워크플로우 인스턴스의 [일반 삭제](/help/sites-administering/workflows-administering.md#regular) 워크플로 인스턴스 제거를 참조하십시오.
