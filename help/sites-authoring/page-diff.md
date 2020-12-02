@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: eb9a4792f4d64f98805919f00bb62193a6a7dafc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ ht-degree: 100%
 >
 >번역에서는 모든 것이 변경되어 강조 표시가 아무런 소용이 없으므로 언어 사본을 비교할 때에는 강조 표시가 비활성화됩니다.
 
-### 전체 화면 및 종료 {#fullscreen-and-exiting}
+### 전체 화면 및 종료  {#fullscreen-and-exiting}
 
 특정 컨텐츠에 집중할 수 있도록 병렬 비교의 어느 &quot;한 쪽&quot;에 대한 전체 화면 아이콘을 클릭하여 전체 브라우저 창으로 확대할 수 있습니다.
 
