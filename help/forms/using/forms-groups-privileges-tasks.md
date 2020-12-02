@@ -19,11 +19,11 @@ ht-degree: 1%
 ---
 
 
-# OSGi 그룹 및 특권{#aem-forms-on-osgi-groups-and-privileges}
+# OSGi 그룹 및 권한에 대한 AEM Forms{#aem-forms-on-osgi-groups-and-privileges}
 
-그룹을 [만들고](/help/sites-administering/user-group-ac-admin.md#group-administration) 정책 및 [사용자를](/help/sites-administering/user-group-ac-admin.md#user-administration) AEM의 그룹에 할당할 수 있습니다. 이러한 정책은 그룹의 일부인 사용자의 권한을 제어합니다.
+[그룹](/help/sites-administering/user-group-ac-admin.md#group-administration)을 만들고 정책 및 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration)를 AEM의 그룹에 할당할 수 있습니다. 이러한 정책은 그룹의 일부인 사용자의 권한을 제어합니다.
 
-Add- [On 패키지를](../../forms/using/installing-configuring-aem-forms-osgi.md)설치하면 양식 사용자 및 Forms-Power-user와 같이 이 문서에 언급된 그룹을 자동으로 할당할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 OSGi에서 사용자가 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
+[AEM Forms Add-on 패키지](../../forms/using/installing-configuring-aem-forms-osgi.md)를 설치하면 양식 사용자 및 forms-power-user와 같이 이 아티클에 언급된 그룹을 자동으로 할당할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 OSGi에서 사용자가 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
 
 <table>
  <tbody>
@@ -94,7 +94,7 @@ Add- [On 패키지를](../../forms/using/installing-configuring-aem-forms-osgi.m
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>AEM 받은 편지함 애플리케이션<br /> 사용 <strong>참고: </strong>AEM 받은 편지함에서 Interactive Communications Agent UI에 액세스하려면 cm-agent-users 및 workflow-users 그룹 할당이 있어야 합니다.</li> 
+     <li>AEM 받은 편지함 응용 프로그램 사용<br /> <strong>참고:</strong>AEM 받은 편지함에서 Interactive Communications Agent UI에 액세스하려면 cm-agent-users 및 workflow-users 그룹 할당이 있어야 합니다.</li> 
      <li>워크플로우 인스턴스 관리</li> 
     </ul> </td> 
   </tr>
