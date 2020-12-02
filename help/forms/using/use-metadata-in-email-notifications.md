@@ -16,9 +16,9 @@ ht-degree: 1%
 ---
 
 
-# 이메일 알림의 메타데이터 사용 {#use-metadata-in-an-email-notification}
+# 이메일 알림에 메타데이터 사용 {#use-metadata-in-an-email-notification}
 
-작업 지정 단계를 사용하여 작업을 만들고 사용자 또는 그룹에 지정할 수 있습니다. 작업이 사용자 또는 그룹에 할당되면 정의된 사용자 또는 정의된 그룹의 각 구성원에게 이메일 알림이 전송됩니다. 일반적인 [이메일 알림은 할당된 작업의 링크](../../forms/using/use-custom-email-template-assign-task-step.md) 및 작업과 관련된 정보를 포함합니다.
+작업 지정 단계를 사용하여 작업을 만들고 사용자 또는 그룹에 지정할 수 있습니다. 작업이 사용자 또는 그룹에 할당되면 정의된 사용자 또는 정의된 그룹의 각 구성원에게 이메일 알림이 전송됩니다. 일반적인 [이메일 알림](../../forms/using/use-custom-email-template-assign-task-step.md)에는 할당된 작업의 링크와 작업과 관련된 정보가 포함되어 있습니다.
 
 이메일 템플릿의 메타데이터를 사용하여 이메일 알림의 정보를 동적으로 채울 수 있습니다. 예를 들어, 다음 이메일 알림의 제목, 설명, 기한, 우선순위, 워크플로우 및 마지막 날짜 값은 런타임 시(이메일 알림이 생성될 때) 동적으로 선택됩니다.
 
@@ -97,9 +97,9 @@ message=<html><body>\n\
 </html>\n\
 ```
 
-## 이메일 알림에서 시스템 생성 메타데이터 사용 {#using-system-generated-metadata-in-an-email-notification}
+## 이메일 알림 {#using-system-generated-metadata-in-an-email-notification}에서 시스템 생성 메타데이터 사용
 
-AEM Forms 응용 프로그램은 즉시 여러 메타데이터 변수(키-값 쌍)를 제공합니다. 이메일 템플릿에서 이러한 변수를 사용할 수 있습니다. 변수의 값은 관련 양식 응용 프로그램을 기반으로 합니다. 다음 표에는 특별히 제공되는 모든 메타데이터 변수가 나와 있습니다.
+AEM Forms 애플리케이션은 즉시 여러 메타데이터 변수(키-값 쌍)를 제공합니다. 이메일 템플릿에서 이러한 변수를 사용할 수 있습니다. 변수의 값은 관련 양식 응용 프로그램을 기반으로 합니다. 다음 표에는 특별히 제공되는 모든 메타데이터 변수가 나와 있습니다.
 
 <table>
  <tbody> 
@@ -154,7 +154,7 @@ AEM Forms 응용 프로그램은 즉시 여러 메타데이터 변수(키-값 �
 
 이메일 알림에서 사용자 지정 메타데이터를 사용할 수도 있습니다. 사용자 지정 메타데이터에는 시스템에서 생성된 메타데이터뿐만 아니라 정보도 포함되어 있습니다. 예를 들어 데이터베이스에서 검색된 정책 세부 사항을 예로 들 수 있습니다. ECMAScript 또는 OSGi 번들을 사용하여 crx-repository에 사용자 지정 메타데이터를 추가할 수 있습니다.
 
-### ECMAScript를 사용하여 사용자 정의 메타데이터 추가  {#use-ecmascript-to-add-custom-metadata}
+### ECMAScript를 사용하여 사용자 지정 메타데이터 {#use-ecmascript-to-add-custom-metadata} 추가
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) 는 스크립팅 언어입니다. 클라이언트 측 스크립팅 및 서버 응용 프로그램에 사용됩니다. ECMAScript를 사용하여 이메일 템플릿에 대한 사용자 정의 메타데이터를 추가하려면 다음 단계를 수행하십시오.
 
@@ -178,7 +178,7 @@ AEM Forms 응용 프로그램은 즉시 여러 메타데이터 변수(키-값 �
    }
    ```
 
-1. 모두 저장을 클릭합니다. 이제 스크립트를 AEM 워크플로우 모델에서 선택할 수 있습니다.
+1. 모두 저장을 클릭합니다. 이제 이 스크립트를 AEM 워크플로우 모델에서 선택할 수 있습니다.
 
    ![할당 작업 메타데이터](assets/assigntask-metadata.png)
 
@@ -186,8 +186,8 @@ AEM Forms 응용 프로그램은 즉시 여러 메타데이터 변수(키-값 �
 
    제목을 지정하지 않으면 사용자 지정 메타데이터 필드에 ECMAScript 파일의 전체 경로가 표시됩니다. 다음 단계를 수행하여 스크립트의 의미 있는 제목을 지정합니다.
 
-   1. 스크립트 노드를 확장하고 **[!UICONTROL jcr:content]** 노드를 마우스 오른쪽 버튼으로 클릭한 다음 **[!UICONTROL 믹스를 클릭합니다]**.
-   1. 혼합 편집 대화 상자에 mix:title을 입력하고 **+를 클릭합니다**.
+   1. 스크립트 노드를 확장하고 **[!UICONTROL jcr:content]** 노드를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL Mixins]**&#x200B;을 클릭합니다.
+   1. [혼합 편집] 대화 상자에 mix:title을 입력하고 **+**&#x200B;을 클릭합니다.
    1. 다음 값을 갖는 속성을 추가합니다.
 
       | 이름 | jcr:title |
@@ -195,11 +195,11 @@ AEM Forms 응용 프로그램은 즉시 여러 메타데이터 변수(키-값 �
       | 유형 | 문자열 |
       | 값 | 스크립트 제목을 지정합니다. 예를 들어, 정책 보유자에 대한 사용자 지정 메타데이터입니다. 지정된 값이 지정 작업 단계에 표시됩니다. |
 
-### OSGi 번들 및 Java 인터페이스를 사용하여 사용자 지정 메타데이터 추가 {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### OSGi 번들 및 Java 인터페이스를 사용하여 사용자 지정 메타데이터 {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata} 추가
 
 WorkitemUserMetadataService Java 인터페이스를 사용하여 이메일 템플릿에 대한 사용자 지정 메타데이터를 추가할 수 있습니다. WorkitemUserMetadataService Java 인터페이스를 사용하는 OSGi 번들을 만들어 AEM Forms 서버에 배포할 수 있습니다. 이렇게 하면 작업 지정 단계에서 메타데이터를 선택할 수 있습니다.
 
-Java 인터페이스를 사용하여 OSGi 번들을 만들려면 OSGi 번들 프로젝트에 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) jar 및 [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 파일을 외부 종속성으로 추가합니다. Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
+Java 인터페이스를 사용하여 OSGi 번들을 만들려면 OSGi 번들 프로젝트에 대한 외부 종속성으로 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) jar 및 [granite jar jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 파일을 추가합니다. Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
 
 1. Eclipse IDE 열기 파일 > 새 프로젝트로 이동합니다.
 
@@ -249,6 +249,6 @@ Java 인터페이스를 사용하여 OSGi 번들을 만들려면 OSGi 번들 프
 
    `mvn clean install`
 
-1. AEM Forms 서버에 번들을 업로드합니다. AEM Package Manager를 사용하여 AEM Forms 서버로 번들을 가져올 수 있습니다.
+1. AEM Forms 서버에 번들을 업로드합니다. AEM 패키지 관리자를 사용하여 번들을 AEM Forms 서버로 가져올 수 있습니다.
 
 번들을 가져온 후 작업 지정 단계에서 메타데이터를 선택하고 이메일 템플릿을 사용할 수 있습니다.
