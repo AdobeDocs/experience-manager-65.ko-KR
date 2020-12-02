@@ -66,7 +66,7 @@ ht-degree: 99%
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 제목 및 설명을 사용하여 링크를 정의할 수 있습니다.
 
@@ -113,7 +113,7 @@ ht-degree: 99%
 | **뷰포트 너비 범위(픽셀)** | **이미지 너비(픽셀)** | **JPEG 품질** | **타깃 장치 유형** |
 |---|---|---|---|
 | 너비 &lt;= 319 | 320 | 낮음 |  |
-| 너비 = 320 | 320 | 중간 | 휴대 전화(세로) |
+| 너비 = 320 | 320년 | 중간 | 휴대 전화(세로) |
 | 320 &lt; 너비 &lt; 481 | 480 | 중간 | 휴대 전화(가로) |
 | 480 &lt; 너비 &lt; 769 | 476 | 높음 | 태블릿(세로) |
 | 768 &lt; 너비 &lt; 1025 | 620 | 높음 | 태블릿(가로) |
@@ -199,7 +199,8 @@ ht-degree: 99%
 수동으로 또는 선택기를 사용하여 경로를 지정하십시오. 현재 페이지를 상위 페이지로 사용하려면 비워 두십시오.
       * **고정 목록 옵션**
 
-         * **페이지**&#x200B;페이지 목록을 선택합니다.사용 
+         * ****
+페이지페이지 목록을 선택합니다.사용 
 `+` 항목을 더 추가하고 위쪽/아래쪽 단추를 추가하여 순서를 조정합니다.
       * **검색 옵션**
 
@@ -213,8 +214,9 @@ ht-degree: 99%
          * **Querybuilder 설명 표기법**
 QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있습니다. 예를 들어 &quot;fulltext=Marketing&quot;을 입력하면 컨텐츠에 &quot;Marketing&quot;이 포함된 모든 페이지를 회전판에 표시할 수 있습니다.
 쿼리 표현식 및 추가적인 예에 대한 전체 논의는 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)를 참조하십시오.
-   * **정렬 기준**&#x200B;선택 
-`jcr:title`, `jcr:created``cq:lastModified`또는 드롭다운 `cq:template` 메뉴에서 다운로드할 수 있습니다.
+   * **정렬**
+기준 선택 
+`jcr:title`,  `jcr:created` `cq:lastModified` 또는 드롭다운 메뉴 `cq:template` 에서 다운로드할 수 있습니다.
 
    * **제한**
 회전판에서 사용할 최대 항목 수로서, 선택 사항입니다.
@@ -227,11 +229,11 @@ QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있
 >
 >AEM DAM에 있는 디지털 자산을 표시하는 Adobe Experience Manager용의 사용자 지정 회전판 구성 요소를 만들 수 있습니다. 자세한 내용은 [Adobe Experience Manager용 사용자 지정 회전판 구성 요소 만들기](https://helpx.adobe.com/kr/experience-manager/using/custom-carousel-components.html)를 참조하십시오.
 
-### Chart {#chart}
+### Chart  {#chart}
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 차트 구성 요소로 막대, 라인 또는 파이 차트를 추가할 수 있습니다. 입력한 데이터를 바탕으로 AEM에서 차트를 만듭니다. 데이터 탭에 데이터를 직접 입력하거나 스프레드시트를 복사하여 붙여넣을 수 있습니다.
 
@@ -274,7 +276,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 디자인 패키지를 포함하는 zip 파일을 업로드할 수 있도록 해줍니다.
 
@@ -282,7 +284,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 다운로드 구성 요소는 선택한 웹 페이지에 특정 파일을 다운로드할 수 있는 링크를 만듭니다. 컨텐츠 파인더에서 자산을 드래그하거나 파일을 업로드할 수 있습니다.
 
@@ -302,7 +304,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 외부 애플리케이션 통합 구성 요소(**외부**)는 iframe을 사용하여 외부 애플리케이션을 AEM 페이지에 포함할 수 있도록 해줍니다.
 
@@ -333,7 +335,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 파인더에서 Flash 자산을 드래그하거나 대화 상자를 사용할 수 있습니다.
 
@@ -377,7 +379,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [이미지 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [이미지 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)를 대신 활용할 것을 권장합니다.
 
 이미지 구성 요소는 지정된 매개 변수에 따라 이미지와 추가 텍스트를 표시합니다.
 
@@ -543,7 +545,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 사용자 이름과 암호 필드를 제공합니다.
 
@@ -601,7 +603,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [컨텐츠 조각 코어 구성 요소](https://docs.adobe.com/content/help/kr/experience-manager-core-components/using/components/content-fragment-component.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [컨텐츠 조각 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)를 대신 활용할 것을 권장합니다.
 
 **참조** 구성 요소로 현재 인스턴스 내에서 AEM 웹 사이트의 다른 페이지에 있는 텍스트를 참조할 수 있습니다. 그러면 참조된 단락의 컨텐츠가 현재 페이지에 있었던 것처럼 표시됩니다. 소스 단락이 변경되면 컨텐츠가 업데이트됩니다. 이 경우 페이지를 새로 고쳐야 할 수 있습니다.
 
@@ -718,11 +720,11 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
       나열을 시작할 경로입니다.
 
-### Slideshow {#slideshow}
+### Slideshow  {#slideshow}
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [회전 메뉴 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/carousel.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [회전 메뉴 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)를 대신 활용할 것을 권장합니다.
 
 이 구성 요소는 일련의 이미지를 순서대로 로드하여 페이지에 표시합니다. 이미지를 추가 또는 제거하고 각 이미지에 제목을 지정할 수 있습니다. 고급 설정에서 표시 영역의 크기를 지정할 수도 있습니다.
 
@@ -801,7 +803,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
 
 >[!NOTE]
 >
@@ -830,7 +832,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [이미지](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/image.html) 및 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [이미지](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) 및 [텍스트 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html)를 대신 활용할 것을 권장합니다.
 
 텍스트 및 이미지 구성 요소는 텍스트 블록과 이미지를 추가합니다. 텍스트와 이미지를 별도로 추가하고 편집할 수도 있습니다. 자세한 내용은 [텍스트](#text) 및 [이미지](#image) 구성 요소를 참조하십시오.
 
@@ -878,7 +880,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [제목 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/list.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [제목 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html)를 대신 활용할 것을 권장합니다.
 
 제목 구성 요소의 기능은 다음과 같습니다.
 
@@ -907,7 +909,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 **비디오** 구성 요소를 사용하면 사전 정의된 &quot;특별&quot; 비디오 요소를 페이지에 가져올 수 있습니다.
 
@@ -964,7 +966,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
 >[!CAUTION]
 >
->구성 요소의 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>구성 요소의 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 양식 구성 요소는 방문자가 입력하여 전송하는 양식을 만드는 데 사용됩니다. 양식 및 양식 구성 요소는 사용자 피드백(예: 고객 만족도 질문) 및 사용자 정보(예: 사용자 등록)을 비롯한 정보를 수집하는 데 사용할 수 있습니다.
 
@@ -1080,7 +1082,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
    * **CSS**
 
-### 양식(구성 요소) {#form-component}
+### 양식(구성 요소)  {#form-component}
 
 >[!CAUTION]
 >
@@ -1094,7 +1096,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
 >[!NOTE]
 >
->기초 구성 요소 양식 구성 요소는 다른 기초 구성 요소 양식 구성 요소(예: 단추, 텍스트, 숨김 등)의 사용만 지원합니다. 기초 구성 요소 양식 없이 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 양식 구성 요소를 사용할 수 없으며, 반대의 경우도 마찬가지입니다.
+>기초 구성 요소 양식 구성 요소는 다른 기초 구성 요소 양식 구성 요소(예: 단추, 텍스트, 숨김 등)의 사용만 지원합니다. 기초 구성 요소 양식 없이 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) 양식 구성 요소를 사용할 수 없으며, 반대의 경우도 마찬가지입니다.
 
 #### 양식 시작 {#start-of-form}
 
@@ -1322,7 +1324,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-text.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 텍스트 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html)를 대신 활용할 것을 권장합니다.
 
 다음과 같은 형식의 국제 주소 필드를 추가할 수 있습니다.
 
@@ -1330,11 +1332,11 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
 구성 요소는 즉시 사용할 수 있도록 구성되지만 필요한 경우 구성을 변경할 수 있습니다. 예를 들어, 주소의 개별 요소에 대해 제한 사항을 추가할 수 있습니다. 필드를 비워 두면 기본 설정이 사용됩니다.
 
-### Captcha {#captcha}
+### Captcha  {#captcha}
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을 입력하도록 요청합니다. 이 문자열은 새로 고칠 때마다 변경됩니다.
 
@@ -1342,7 +1344,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 이 구성 요소의 다양한 매개 변수를 구성할 수 있습니다. 예를 들어 Captcha 문자열을 잘못 입력한 경우에 표시할 메시지를 구성할 수 있습니다.
 
-### 확인란 그룹 {#checkbox-group}
+### 확인란 그룹  {#checkbox-group}
 
 >[!CAUTION]
 >
@@ -1364,7 +1366,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 신용 카드 세부 사항을 입력하는 데 필요한 필드를 제공할 수 있도록 해줍니다. 허용된 카드 유형과 필요한 정보(예: 보안 카드)를 지정하도록 구성할 수 있습니다.
 
@@ -1374,7 +1376,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 옵션 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-options.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 옵션 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html)를 대신 활용할 것을 권장합니다.
 
 선택 가능한 값 범위를 사용하여 드롭다운 목록을 구성할 수 있습니다.
 
@@ -1392,7 +1394,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 파일 업로드 구성 요소는 사용자가 파일을 선택하여 업로드하는 메커니즘을 제공합니다.
 
@@ -1402,7 +1404,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 >
 >사용자 지정 업로드 구성 요소를 만들어 파일을 Sling 서블릿에 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://helpx.adobe.com/kr/experience-manager/using/uploading-files-aem1.html)를 참조하십시오.
 
-### 숨김 필드 {#hidden-field}
+### 숨김 필드  {#hidden-field}
 
 >[!CAUTION]
 >
@@ -1432,7 +1434,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 이미지 업로드 구성 요소는 사용자가 이미지 파일을 선택하여 업로드하는 메커니즘을 제공합니다.
 
@@ -1442,7 +1444,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 링크 필드는 사용자가 URL을 지정할 수 있도록 합니다.
 
@@ -1450,11 +1452,11 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 달력 이벤트 양식에서 이벤트의 URL/링크 필드로 가장 일반적으로 사용됩니다.
 
-### 암호 필드 {#password-field}
+### 암호 필드  {#password-field}
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 사용자가 암호를 입력할 수 있도록 하는 데 사용됩니다.
 
@@ -1464,7 +1466,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 이 구성 요소는 사용자에게 다음과 같은 두 필드를 제공합니다.
 
@@ -1479,7 +1481,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 옵션 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-options.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 옵션 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html)를 대신 활용할 것을 권장합니다.
 
 라디오 그룹은 한 번에 하나만 선택할 수 있는 하나 이상의 라디오 확인란 목록을 제공합니다.
 
@@ -1497,7 +1499,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 단추 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-button.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 단추 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html)를 대신 활용할 것을 권장합니다.
 
 이 구성 요소로 다음과 같은 기본 텍스트를 갖는 전송 단추를 만들 수 있습니다.
 
@@ -1511,7 +1513,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)를 대신 활용할 것을 권장합니다.
 
 이 필드에서 태그를 선택할 수 있습니다.
 
@@ -1538,7 +1540,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 텍스트 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-text.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 텍스트 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html)를 대신 활용할 것을 권장합니다.
 
 표준 텍스트 필드를 필요한 크기로 구성하고 안내 메시지를 직접 입력할 수 있습니다.
 
@@ -1548,7 +1550,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 단추 코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/components/forms/form-button.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe는 [양식 단추 코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html)를 대신 활용할 것을 권장합니다.
 
 워크플로우에서 사용할 제출 단추를 만들 수 있도록 해줍니다.
 
