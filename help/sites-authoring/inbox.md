@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
 
@@ -49,6 +49,7 @@ ht-degree: 100%
 >* [프로젝트 - 작업 중](/help/sites-authoring/task-content.md)
 >* [워크플로우](/help/sites-authoring/workflows.md)
 >* [양식](/help/forms/home.md)
+
 >
 
 
