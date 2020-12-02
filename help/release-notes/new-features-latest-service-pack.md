@@ -18,21 +18,21 @@ ht-degree: 59%
 
 [!DNL Adobe Experience Manager] 6.5 서비스 팩은 분기별로 새로운 기능, 고객의 요청에 따라 향상된 기능, 성능, 안정성 및 보안 개선 사항을 제공합니다. 분기별 출시되어 새로운 기능과 혁신적인 기능에 쉽게 액세스하고 그러한 기능을 채택할 수 있습니다.
 
-This article highlights the features included in the latest 6.5 Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and the [key AEM releases since the last service pack](#key-releases-since-last-sp) release.
+이 문서에서는 최신 6.5 서비스 팩, 이전 6.5 서비스 팩](#key-features-previous-service-packs)에 포함된 [주요 기능 및 마지막 서비스 팩](#key-releases-since-last-sp) 릴리스 이후 [주요 AEM 릴리스에 포함된 기능에 대해 설명합니다.
 
 ## Adobe [!DNL Experience Manager Sites] {#aem-sites}
 
 ### 롤아웃에 사용할 수 있는 Live Copy 페이지 정렬 {#sort-livecopy-pages}
 
-이제 [!UICONTROL 이름], 최종 수정 날짜 [!UICONTROL 및]마지막 롤아웃 날짜 [!UICONTROL 속성을 사용하여 롤아웃에 사용할 수 있는 Live Copy 페이지를 정렬할 수] 있습니다. 페이지의 [!UICONTROL 마지막 롤아웃] 날짜는 이 릴리스에서 도입된 새 속성입니다.
+이제 [!UICONTROL 이름], [!UICONTROL 최종 수정 날짜] 및 [!UICONTROL 마지막 롤아웃 날짜] 속성을 사용하여 롤아웃에 사용할 수 있는 Live Copy 페이지를 정렬할 수 있습니다. 페이지의 [!UICONTROL 마지막 롤아웃 날짜]는 이 릴리스에서 도입된 새 속성입니다.
 
-### 페이지 이동 가능 여부 및 비동기 작업으로 MSM 롤아웃 {#page-moves-msm-asynchronous}
+### 페이지 이동 가능 여부 및 비동기 작업 {#page-moves-msm-asynchronous}으로 MSM 롤아웃
 
 이제 페이지 이동 및 MSM 롤아웃을 비동기 작업으로 수행하여 런타임 성능에 대한 영향을 줄일 수 있습니다. 작업을 즉시 또는 나중에 실행할 수 있도록 예약할 수 있습니다. 연결된 작업 및 프로세스 단계의 상태가 콘솔에 표시되어 대규모 MSM 롤아웃을 모니터링하는 데 유용합니다.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* [!DNL Assets] 다양한 액세서빌러티 기능을 [!DNL Dynamic Media] 제공합니다. 향상된 기능은 키보드 탐색, 화면 판독기 사용, 보조 기술(AT)을 사용할 수 있도록 해주는 유사한 개선 사항과 관련이 있습니다. 향상된 [[!DNL Assets] 기능](/help/release-notes/sp-release-notes.md#assets-6570) 및 [[!DNL Dynamic Media] 향상된 기능을](/help/release-notes/sp-release-notes.md#dynamic-media-6570)참조하십시오.
+* [!DNL Assets] 다양한 액세서빌러티 기능을  [!DNL Dynamic Media] 제공합니다. 향상된 기능은 키보드 탐색, 화면 판독기 사용, 보조 기술(AT)을 사용할 수 있도록 해주는 유사한 개선 사항과 관련이 있습니다. [[!DNL Assets] enhancements](/help/release-notes/sp-release-notes.md#assets-6570) 및 [[!DNL Dynamic Media] enhancements](/help/release-notes/sp-release-notes.md#dynamic-media-6570)을 참조하십시오.
 
 * 사용자는 카드 및 열 보기에서 디지털 자산을 정렬할 수 있습니다.
 
@@ -40,17 +40,17 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] 추가 패키지는 예약된 서비스 팩 릴리스 후 일주일 후에 [!DNL Experience Manager] 제공됩니다. [!DNL Experience Manager] 6.5 서비스 팩 7(6.5.7.0)은 2020년 11월 26일에 릴리스될 예정입니다.
+>[!DNL Experience Manager Forms] 추가 패키지는 예약된  [!DNL Experience Manager] 서비스 팩 릴리스 후 일주일 후에 사용할 수 있습니다. [!DNL Experience Manager] 6.5 서비스 팩 7(6.5.7.0)은 2020년 11월 26일에 릴리스될 예정입니다.
 
-## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
+## 이전 [!DNL Experience Manager] 6.5 서비스 팩 {#key-features-previous-service-packs}의 주요 기능
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
-#### 비동기 모드에서 페이지 이동 작업 가용성(6.5.6.0) {#page-move-asynchronous}
+#### 비동기 모드(6.5.6.0)에서의 페이지 이동 작업 가용성 {#page-move-asynchronous}
 
 이제 페이지 이동 작업을 비동기 모드에서 사용할 수 있습니다. 즉각적인 실행 이외에도 페이지 이동 작업을 예약하여 나중에 실행할 수도 있습니다.
 
-#### Accessibility improvements (6.5.5.0) {#accessibility-sites}
+#### 접근성 개선(6.5.5.0) {#accessibility-sites}
 
 * 텍스트 정보를 추가하여 오류 보고 개선.
 
@@ -66,9 +66,9 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 * 향상된 화면 판독기 지원.
 
-#### Other key enhancements (6.5.5.0) {#other-enhancements-sites}
+#### 기타 주요 개선 사항(6.5.5.0) {#other-enhancements-sites}
 
-* CRXDE Lite에 대한 익명의 액세스는 보안을 강화하도록 허용되지 않습니다. 대신 사용자에게 로그인 화면이 표시됩니다. See [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+* CRXDE Lite에 대한 익명의 액세스는 보안을 강화하도록 허용되지 않습니다. 대신 사용자에게 로그인 화면이 표시됩니다. [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)을 사용하여 개발을 참조하십시오.
 
 * 페이지 트리를 복사하거나 붙여넣을 때 이제 루트 페이지를 붙여넣거나 루트 페이지를 트리의 하위 페이지와 함께 붙여넣을 수 있습니다.
 
@@ -96,23 +96,23 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 #### 액세스 가능성 개선(6.5.6.0) {#accessibility-assets-6560}
 
-* **키보드 탐색**&#x200B;중에 향상된 유저 인터페이스 초점(예: 초점:
+* **키보드 탐색** 중에 향상된 유저 인터페이스 초점(예: 초점:
 
-   * `x` 아이콘을 [!UICONTROL 타임라인에] 있는 자산의 버전 미리 보기 대화 [!UICONTROL 상자에]표시합니다.
+   * `x` 아이콘을  [!UICONTROL 타임라인에 ] 있는 자산의 버전 미리 보기 대화 상자 [!UICONTROL 에 추가했습니다].
 
    * 실행 가능한 사용자 인터페이스 옵션.
 
-   * [링크 [!UICONTROL 공유] ] 대화 상자의 이메일 필드 및 폴더 속성 [!UICONTROL 의 [권한] ] 탭에서 폐쇄된 사용자 그룹을 추가할 수 있는 [!UICONTROL 필드]가 있습니다.
+   * [!UICONTROL 링크 공유] 대화 상자의 이메일 필드 및 [!UICONTROL 속성] 폴더의 [!UICONTROL 권한] 탭에서 닫힌 사용자 그룹을 추가하는 필드
 
 * **키보드 키를 사용한 향상된 기능**
 
    사용자는 키보드 키를 사용하여 화면 판독기의 검색 모드에서 메타데이터 스키마 양식 편집기의 컨트롤을 드래그할 수 있습니다.
 
-* **다음과 같은 이유로 화면 판독기 사용자를**&#x200B;위한 향상된 유용성
+* **다음과 같은 이유로 화면 판독기 사용자를** 위한 향상된 유용성
 
    * 화면 판독기는 비디오 및 오디오 플레이어의 용도를 발표합니다.
 
-   * 화면 판독기는 자산 속성에서 [!UICONTROL 태그 선택 대화] 상자를 사용하여 선택한 태그를 제거하기 위한 사용자 인터페이스 옵션 [!UICONTROL 의 목적을 알려줍니다].
+   * 화면 판독기는 [!UICONTROL 속성]의 [!UICONTROL 태그 선택 대화 상자]를 사용하여 선택한 태그를 제거하기 위한 사용자 인터페이스 옵션의 용도를 알립니다.
 
    * 화면 판독기는 표의 행 머리글과 행 항목을 발표하므로 사용자는 동일한 행에 속하는 항목을 알 수 있습니다.
 
@@ -120,11 +120,11 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
    * 화면 판독기는 검색 필터 패널의 옵션을 확장 가능한 아코디언으로 발표합니다.
 
-#### 기타 개선 사항( [!DNL Assets] 6.5.6.0) {#other-enhancements-assets-6560}
+#### [!DNL Assets](6.5.6.0)의 기타 개선 사항 {#other-enhancements-assets-6560}
 
-* 이제 폴더(비공개 및 비공개 아님)와 연관된 사용자 그룹이 해당 폴더를 [삭제할 때 저장소에서 제거됩니다](/help/assets/private-folder.md#delete-private-folder). 그러나 JMX를 사용하여 저장소에서 기존의 중복, 고아, 사용하지 않음 및 자동 생성된 사용자 그룹을 제거할 수 있습니다.
+* 이제 폴더(비공개 및 비비공개)와 연결된 사용자 그룹이 [해당 폴더](/help/assets/private-folder.md#delete-private-folder)의 삭제에서 저장소에서 제거됩니다. 그러나 JMX를 사용하여 저장소에서 기존의 중복, 고아, 사용하지 않음 및 자동 생성된 사용자 그룹을 제거할 수 있습니다.
 
-#### Accessibility enhancements in [!DNL Assets] (6.5.5.0) {#assets-accessibility}
+#### [!DNL Assets](6.5.5.0)의 액세서빌러티 개선 사항 {#assets-accessibility}
 
 이제 WCAG(Web Content Accessibility Guidelines)를 준수하여 [!DNL Experience Manager Assets]에 더 쉽게 액세스할 수 있습니다. 다음이 개선되어 액세스 가능성이 향상되었습니다.
 
@@ -136,11 +136,11 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
    ![등급 아이콘의 대비 향상](assets/star-rating-icons.png)
 
-#### Enhanced exception handling (6.5.5.0) {#exception-handling}
+#### 향상된 예외 처리(6.5.5.0) {#exception-handling}
 
 [!DNL Assets] 사용자 인터페이스 흐름의 예외 처리가 향상되었습니다. 자산에 차원에 대한 유형이 없는 경우, 관찰된 예외가 로그 파일에 기록됩니다.
 
-#### Support for 3D assets in [!DNL Dynamic Media] (6.5.5.0) {#support-for-3d}
+#### [!DNL Dynamic Media](6.5.5.0)의 3D 자산 지원 {#support-for-3d}
 
 [!DNL Dynamic Media]의 3D 이미지 지원을 통해 고객은 웹 페이지 및 애플리케이션에 3D 컨텐츠를 게시하고 추가할 수 있습니다. 지원에는 다음이 포함됩니다.
 
@@ -167,9 +167,9 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 * 날짜 및 시간 형식 제약 조건은 사용자가 키보드를 사용하여 날짜를 올바른 형식으로 입력할 수 있도록 날짜 필드의 필드 레이블에 제공됩니다.
 예, `On Time (MM-DD-YYYY HH:mm)`. 여기서 MM은 두 자리 형식의 월, YYYY는 연도, DD는 두 자리 형식의 날짜, HH는 24시간 군대 형식의 시간, mm은 분입니다.
 
-* 선택한 태그(기호)를 제거하는 옵션과 선택한 태그의`X` 수를 화면 판독기에서 알려줍니다.
+* 화면 판독기는 선택한 태그(`X` 기호)를 제거하는 옵션과 선택한 태그의 수를 발표합니다.
 
-#### 목록 보기의 자산 만들기 날짜에 대한 정렬 가능한 열(6.5.3.0) {#sortable-date-created-column}
+#### 목록 보기의 자산의 만든 날짜에 대한 정렬 가능한 열(6.5.3.0) {#sortable-date-created-column}
 
 자산의 만든 날짜에 대한 정렬 가능한 새 열이 DAM 목록 보기 및 목록 보기의 자산 검색 결과에 추가됩니다.
 
@@ -191,9 +191,9 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 * 전체 자산 URL 추가
 
-#### 선택적으로 자산 게시 [!DNL Experience Manager] 및 [!DNL Dynamic Media] (6.5.6.0) {#selective-publishing}
+#### [!DNL Experience Manager] 및 [!DNL Dynamic Media](6.5.6.0)에 자산의 선택적 게시 {#selective-publishing}
 
-이제 자산을 선택적으로 게시 또는 게시 취소할지 또는 [!DNL Experience Manager] 빠른 게시 [!DNL Dynamic Media] 또는 게시 [!UICONTROL 관리 마법사를] 사용하여 게시  또는 게시를 취소할 수있습니다. 폴더 수준에서 `Publish` 또는 `Unpublish` 모드를 설정할 수도 있습니다.
+이제 [!UICONTROL 빠른 게시] 또는 [!UICONTROL 게시 관리] 마법사를 사용하여 자산을 선택적으로 [!DNL Experience Manager] 또는 [!DNL Dynamic Media]에 게시 또는 게시 취소하도록 선택할 수 있습니다. 폴더 수준에서 `Publish` 또는 `Unpublish` 모드를 설정할 수도 있습니다.
 
 #### Dynamic Media용 스마트 이미징 {#smart-imaging}
 
@@ -207,54 +207,54 @@ This article highlights the features included in the latest 6.5 Service Pack, [k
 
 #### 클라이언트에서 응용 양식을 미리 채우기(6.5.6.0) {#prefill-merge-data-at-client}
 
-응용 양식을 미리 채울 때 서버는 데이터를 응용 양식과 병합하고 채워진 양식을 사용자에게 전달합니다. [!DNL Experience Manager Forms] 기본적으로 데이터 병합 작업은 서버에서 수행됩니다.
-이제 서버 대신 클라이언트에서 데이터 병합 작업을 [!DNL Experience Manager Forms] 수행하도록 [](../../help/forms/using/prepopulate-adaptive-form-fields.md) 서버를 구성할 수 있습니다. 적응형 양식을 프리플라이트 및 렌더링하는 데 필요한 시간이 크게 줄어듭니다.
+응용 양식을 미리 채울 때 [!DNL Experience Manager Forms] 서버는 데이터를 응용 양식과 병합하고 채워진 양식을 사용자에게 전달합니다. 기본적으로 데이터 병합 작업은 서버에서 수행됩니다.
+이제 [!DNL Experience Manager Forms] 서버를 [로 구성하여 서버 대신 클라이언트](../../help/forms/using/prepopulate-adaptive-form-fields.md)에서 데이터 병합 작업을 수행할 수 있습니다. 적응형 양식을 프리플라이트 및 렌더링하는 데 필요한 시간이 크게 줄어듭니다.
 
-#### 양방향 SSL 구현을 사용하는 서버에서 RESTful API와 양식 데이터 모델 통합(6.5.6.0) {#fdm-integration-rest-apis-two-way-ssl}
+#### 양방향 SSL 구현(6.5.6.0) {#fdm-integration-rest-apis-two-way-ssl}을 사용하는 서버에서 RESTful API와 양식 데이터 모델 통합
 
-[!DNL Experience Manager Forms] 양식 데이터 모델은 이제 양방향 SSL이 구현된 서버의 RESTful API와 [통합할 수 있습니다](../../help/forms/using/configure-data-sources.md).
+[!DNL Experience Manager Forms] 양식 데이터 모델은 이제 양방향 SSL이 구현된 서버의 RESTful API와  [통합할 수 있습니다](../../help/forms/using/configure-data-sources.md).
 
-#### automated forms conversion 서비스에서 [!DNL Adobe Sign] 텍스트 태그에 대한 지원을 추가했습니다(6.5.6.0). {#sign-integration-acroform-afcs}
+#### automated forms conversion 서비스에서 [!DNL Adobe Sign] 텍스트 태그에 대한 지원을 추가했습니다(6.5.6.0) {#sign-integration-acroform-afcs}.
 
-AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함되어 있는 경우, 이러한 필드는 이제 인식되어 적응형 양식의 [!DNL Adobe Sign] 필드로 표현됩니다 [!DNL Automated Forms Conversion service]. 서명자는 적응형 양식에 서명하면서 이러한 필드를 채울 수 있습니다.
+AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함되어 있는 경우 이러한 필드는 이제 인식되어 [!DNL Automated Forms Conversion service]를 사용하여 변환된 응용 양식의 [!DNL Adobe Sign] 필드로 표시됩니다. 서명자는 적응형 양식에 서명하면서 이러한 필드를 채울 수 있습니다.
 
-#### Support to convert colored PDF forms to adaptive forms (6.5.6.0) {#colored-PDF-forms}
+#### 컬러 PDF forms을 적응형 양식(6.5.6.0)으로 변환하는 지원 {#colored-PDF-forms}
 
-색상 PDF forms [!DNL Automated Forms Conversion service] 를 응용 양식으로 변환하는 데 사용할 수 있습니다.
+[!DNL Automated Forms Conversion service]을(를) 사용하여 컬러 PDF forms을 응용 양식으로 변환할 수 있습니다.
 
 #### SMB 2 및 SMB 3 프로토콜 지원(6.5.6.0) {#smb-support}
 
 [!DNL Experience Manager Forms] 이제 SMB 2 및 SMB 3 프로토콜을 지원합니다.
 
-#### 번역된 적응형 양식 페이지에 대한 향상된 캐싱(6.5.6.0) {#enhanced-caching-translated-adaptive-forms}
+#### 번역된 적응형 양식 페이지에 대한 캐싱 기능(6.5.6.0) {#enhanced-caching-translated-adaptive-forms}
 
-이제 응용 양식 URL의 인수 대신 응용 양식 URL에서 [로케일을 선택기로 지정할 수 있습니다](../../help/forms/using/supporting-new-language-localization.md). 번역된 적응형 양식을 캐시하는 데 도움이 됩니다 [!DNL Experience Manager Dispatcher]. 이전 버전에서는 번역된 응용 양식을 캐싱할 수 없었습니다. 응용 양식 URL에서 선택기로 로케일을 사용하기 위해 캐싱을 구성하는 방법에 대한 자세한 내용은 발송자에서 응용 [양식 캐시 구성을 참조하십시오](../../help/forms/using/configure-adaptive-forms-cache.md).
+이제 적응형 양식 URL](../../help/forms/using/supporting-new-language-localization.md)의 인수 대신 응용 양식 URL에서 선택기로 [로케일을 지정할 수 있습니다. 이 기능은 [!DNL Experience Manager Dispatcher]에서 번역된 적응형 양식을 캐시하는 데 도움이 됩니다. 이전 버전에서는 번역된 응용 양식을 캐싱할 수 없었습니다. 응용 양식 URL에서 선택기로 로케일을 사용하기 위해 캐싱을 구성하는 방법에 대한 자세한 내용은 [디스패처](../../help/forms/using/configure-adaptive-forms-cache.md)에서 응용 양식 캐시 구성을 참조하십시오.
 
-#### 양식 데이터 모델 서비스 출력을 변수에 저장(6.5.6.0) {#save-fdm-service-to-variable}
+#### 양식 데이터 모델 서비스의 출력을 변수(6.5.6.0)로 {#save-fdm-service-to-variable} 저장
 
 양식 데이터 모델을 사용하면 양식 데이터 모델 서비스의 출력을 변수에 저장할 수 있습니다. [!DNL Experience Manager Forms] 이제 양식 데이터 모델 서비스의 유형을 변수 유형에 자동으로 매핑합니다.
 
-#### 파일 첨부 구성 요소에 여러 파일 첨부(6.5.6.0) {#attach-multiple-files}
+#### 첨부 파일 구성 요소(6.5.6.0)에 여러 파일 첨부 {#attach-multiple-files}
 
-이제 응용 양식의 [파일 첨부](../../help/forms/using/introduction-forms-authoring.md) 구성 요소에 여러 파일을  첨부할 수 있습니다.
+이제 응용 양식의 ](../../help/forms/using/introduction-forms-authoring.md)파일 첨부[!UICONTROL  구성 요소에 여러 파일[을 첨부할 수 있습니다.]
 
-#### Customize the Adobe Experience Manager Inbox columns (6.5.5.0) {#customize-aem-inbox-columns}
+#### Adobe Experience Manager 받은 편지함 열(6.5.5.0) {#customize-aem-inbox-columns} 사용자 지정
 
-[!DNL Experience Manager] 받은 편지함을 사용자 지정하여 열의 기본 제목을 변경하고, 열의 위치를 다시 정렬하며, 워크플로우의 데이터를 기반으로 추가 열을 표시할 수 있습니다. 또는 `administrators` 또는 `workflow-administrators` 그룹의 구성원은 열을 사용자 지정할 수 있습니다. 자세한 내용은 관리 [컨트롤을 참조하십시오](../sites-authoring/inbox.md#inbox-admin-control).
+[!DNL Experience Manager] 받은 편지함을 사용자 지정하여 열의 기본 제목을 변경하고, 열의 위치를 다시 정렬하며, 워크플로우의 데이터를 기반으로 추가 열을 표시할 수 있습니다. 또는 `administrators` 또는 `workflow-administrators` 그룹의 구성원은 열을 사용자 지정할 수 있습니다. 자세한 내용은 [관리 컨트롤](../sites-authoring/inbox.md#inbox-admin-control)을 참조하십시오.
 
 ![Experience Manager 받은 편지함 열 사용자 지정](assets/customize-columns.gif)
 
-#### Save Interactive Communications as a draft (6.5.5.0) {#save-as-draft}
+#### 대화형 통신을 초안(6.5.5.0)으로 저장 {#save-as-draft}
 
-에이전트 UI를 사용하여 각 대화형 커뮤니케이션에 대해 하나 이상의 초안을 저장하고 나중에 초안을 검색하여 계속 작업할 수 있습니다. 각 초안의 다른 이름을 지정하여 해당 초안을 식별할 수 있습니다. 자세한 내용은 Interactive Communications [를 초안으로 저장을 참조하십시오](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
+에이전트 UI를 사용하여 각 대화형 커뮤니케이션에 대해 하나 이상의 초안을 저장하고 나중에 초안을 검색하여 계속 작업할 수 있습니다. 각 초안의 다른 이름을 지정하여 해당 초안을 식별할 수 있습니다. 자세한 내용은 [대화형 통신을 초안](../forms/using/prepare-send-interactive-communication.md#save-as-draft)으로 저장을 참조하십시오.
 
 ![초안으로 저장](assets/save-as-draft.gif)
 
-#### [!DNL Oracle WebLogic] 응용 프로그램 서버 지원(6.5.5.0) {#weblogic-support}
+#### [!DNL Oracle WebLogic] 응용 프로그램 서버 지원(6.5.5.0)  {#weblogic-support}
 
 Adobe Experience Manager Forms에 JEE에서 Adobe Experience Manager Forms에 대한 [!DNL Oracle WebLogic 12] 지원이 추가되었습니다. 이전 버전에서 업그레이드하거나 [!DNL Oracle WebLogic] 12.2.1.4 이상의 JEE 서버에서 새 Experience Manager 6.5 Forms를 설정할 수 있습니다. 이후에 버전이 약간 변경되었으며, 여기서 12.2.1.x의 x는 버전 번호로 대체됩니다.
 
-#### Accessibility improvements (6.5.5.0) {#accessibility-improvements}
+#### 접근성 개선(6.5.5.0) {#accessibility-improvements}
 
 Adobe Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었습니다.
 
@@ -264,11 +264,11 @@ Adobe Experience Manager Forms는 다음과 같은 액세스 가능성이 개선
 
 * 적응형 양식에 필수 필드가 있으면 ARIA 액세스 가능성 스키마의 해당 필드에 대해 필수 속성이 `True`로 설정됩니다.
 
-#### X-509 certificate-based authentication for SOAP-based web services in form data model (6.5.5.0) {#x509-based-authentication-soap}
+#### 양식 데이터 모델(6.5.5.0)의 SOAP 기반 웹 서비스에 대한 X-509 인증서 기반 인증 {#x509-based-authentication-soap}
 
-이제 양식 데이터 모델은 SOAP 웹 서비스를 데이터 소스로 사용하면서 X-509 인증서 기반 인증을 지원합니다. 자세한 내용은 [SOAP 웹 서비스 구성을 참조하십시오](../forms/using/configure-data-sources.md#configure-soap-web-services).
+이제 양식 데이터 모델은 SOAP 웹 서비스를 데이터 소스로 사용하면서 X-509 인증서 기반 인증을 지원합니다. 자세한 내용은 [SOAP 웹 서비스 구성](../forms/using/configure-data-sources.md#configure-soap-web-services)을 참조하십시오.
 
-#### Other key improvements (6.5.5.0) {#other-improvements}
+#### 기타 주요 개선 사항(6.5.5.0) {#other-improvements}
 
 * JEE Document Security의 Experience Manager 6.5 Forms는 이제 [!DNL Apache Struts 2]를 기반으로 합니다.
 
@@ -312,12 +312,12 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 
 받은 편지함 항목을 다른 사용자와 공유할 수 있습니다. 다른 사용자가 받은 편지함 항목에 액세스할 수 있게 되면 해당 사용자는 소유권을 주장하고 공유 항목에 적절한 작업을 수행할 수 있습니다. 마찬가지로 다른 사용자의 받은 편지함 항목에 대한 액세스를 요청할 수 있습니다. [사용자의 받은 편지함 항목 공유 및 액세스 요청](../forms/using/configure-shared-queues-osgi.md)을 참조하십시오.
 
-#### Configure the out-of-office settings for Inbox items of an Experience Manager Forms user (6.5.3.0) {#configure-out-of-office}
+#### Experience Manager Forms 사용자의 받은 편지함 항목에 대한 부재 중 설정 구성(6.5.3.0) {#configure-out-of-office}
 
 부재 예정인 경우 해당 기간 동안 자신에게 할당된 항목에 대한 처리 방법을 지정할 수 있습니다.
 부재 설정을 적용할 시작 날짜 및 시간, 종료 날짜 및 시간을 지정할 수 있습니다. 모든 항목을 받을 기본 사람을 설정할 수 있습니다. [부재 설정 구성](../forms/using/configure-out-of-office-settings.md)을 참조하십시오.
 
-#### Generate multiple interactive communications using Batch API for Experience Manager Forms (6.5.3.0) {#generate-multiple-ic}
+#### Experience Manager Forms용 일괄 처리 API(6.5.3.0) {#generate-multiple-ic}를 사용하여 인터랙티브한 여러 커뮤니케이션 생성
 
 배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들면 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다. [AEM Forms용 배치 API를 사용하여 여러 대화형 커뮤니케이션 생성](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)을 참조하십시오.
 
@@ -325,7 +325,7 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 
 2020년 9월 3일부터 2020년 11월 26일까지 Adobe은 서비스 팩 및 누적 수정 팩 외에 다음 내용을 발표했습니다.
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes) and [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
+* [!DNL Adobe Experience Manager] as a Cloud Service  [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes)  and  [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
 
 * [[!DNL Experience Manager] 데스크탑 앱 2.0(2.0.3.2)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
@@ -338,6 +338,6 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] 6.5 설명서](../user-guide/home.md)
->* [6.5용 [!DNL Adobe Experience Manager] 일반 릴리스 노트](release-notes.md)
+>* [6.5용 [!DNL Adobe Experience Manager]  일반 릴리스 노트](release-notes.md)
 >* [ [!DNL Adobe Experience Manager] 6.5용 서비스 팩 릴리스 노트](sp-release-notes.md)
 
