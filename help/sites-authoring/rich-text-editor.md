@@ -8,9 +8,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 100%
 
