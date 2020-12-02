@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# HTML5 양식에 대한 스크립팅 지원 {#scripting-support-for-html-forms}
+# HTML5 양식 {#scripting-support-for-html-forms}에 대한 스크립팅 지원
 
 HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음과 같습니다.
 
@@ -37,7 +37,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
    <td><p>드롭다운 및 목록 상자에 대해 작동하지 않습니다. <code>PrevText </code>다음 경우 제대로 작동하지 않습니다.</p>
     <ul>
      <li>iPad의 숫자 필드에 특수 문자 키(예: $, (,), &amp;, @ 등)를 입력할 때 </li>
-     <li>날짜 필드(달력을 통해 날짜가 입력되는 경우)에 대해 설명합니다.<br /> </li>
+     <li>날짜 필드(달력을 통해 날짜가 입력되는 경우)에 대해.<br /> </li>
     </ul> <p>스크립트를 통한 값 설정은 지원되지 않습니다.</p> </td>
   </tr>
   <tr>
@@ -48,7 +48,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   <tr>
    <td><code>newtext</code></td>
    <td>사용자 작업에 대한 응답으로 필드가 변경된 후 필드의 내용을 지정합니다.</td>
-   <td><p>다음 경우 속성이 <code>newText</code> 제대로 작동하지 않습니다.</p>
+   <td><p>다음 경우 <code>newText</code> 속성이 제대로 작동하지 않습니다.</p>
     <ul>
      <li>텍스트 선택 바꾸기</li>
      <li>텍스트 삭제, 복사 및 붙여넣기 작업</li>
@@ -97,7 +97,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   <tr>
    <td><code>apptype</code></td>
    <td>호스트의 응용 프로그램 유형을 반환합니다. 클라이언트 응용 프로그램에만 사용할 수 있습니다.</td>
-   <td>반환 <code>HTML 5</code>.</td>
+   <td><code>HTML 5</code>을 반환합니다.</td>
   </tr>
   <tr>
    <td><code>name</code></td>
@@ -204,17 +204,17 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   <tr>
    <td><code>formattedValue</code></td>
    <td>이 필드의 서식 지정된 값을 지정합니다.</td>
-   <td>스크립트 <code>formattedValue</code> 를 통한 설정이 지원되지 않습니다.</td>
+   <td>스크립트를 통한 <code>formattedValue</code> 설정은 지원되지 않습니다.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>이 필드의 편집 값을 지정합니다.</td>
-   <td>스크립트 <code>editValue </code>를 통한 설정이 지원되지 않습니다.</td>
+   <td>스크립트 통과 <code>editValue </code>을(를) 설정할 수 없습니다.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>이 필드에 대한 형식 유효성 검사 메시지 문자열을 지정합니다.</td>
-   <td>스크립트 <code>formatMessage </code>를 통한 설정이 지원되지 않습니다.</td>
+   <td>스크립트 통과 <code>formatMessage </code>을(를) 설정할 수 없습니다.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -339,7 +339,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   <tr>
    <td>parentSubform</td>
    <td>이 필드의 상위 하위 폼(페이지)을 지정합니다.</td>
-   <td>첫째 비스코핑 상위 하위 양식을 반환하는 대신 항상 상위 하위 양식을 반환합니다.<br /> </td>
+   <td>첫째 비스코핑 상위 하위 폼을 반환하는 대신 항상 상위 하위 폼을 반환합니다.<br /> </td>
   </tr>
   <tr>
    <td>selectedIndex</td>
@@ -398,7 +398,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
 
 | 속성 | 설명 | 예외 |
 |---|---|---|
-| NA | NA | NA |
+| NA | 북미 | 북미 |
 
 ## 하위 폼 {#subform}
 
@@ -493,7 +493,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
 |---|---|
 | target | 데이터가 제출되는 URL. 이 속성을 생략하면 XFA 처리 응용 프로그램이 구성 개체에서 제품별 정보에 액세스하는 것과 같은 제품별 기술을 사용하여 URI를 얻습니다. |
 
-## 트리 {#tree}
+## tree {#tree}
 
 <table>
  <tbody>
@@ -544,7 +544,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
  </tbody>
 </table>
 
-## 하위 형식 집합 {#subformset}
+## subformset {#subformset}
 
 | 속성 | 설명 | 예외 |
 |---|---|---|
@@ -583,7 +583,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
  </tbody>
 </table>
 
-## 채우기 {#fill}
+## fill {#fill}
 
 <table>
  <tbody>
@@ -604,7 +604,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
  </tbody>
 </table>
 
-## linear {#linear}
+## 선형 {#linear}
 
 <table>
  <tbody>
@@ -636,13 +636,13 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   </tr>
   <tr>
    <td>edge</td>
-   <td>Edge 개체는 테두리 또는 직사각형의 호, 선 또는 측면을 설명합니다.<br /> </td>
+   <td>가장자리 개체는 테두리 또는 직사각형의 호, 선 또는 한 면을 설명합니다.<br /> </td>
    <td>색상, 상한 등의 속성은 지원되지 않습니다.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-## 패턴 {#pattern}
+## pattern {#pattern}
 
 <table>
  <tbody>
@@ -663,7 +663,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
  </tbody>
 </table>
 
-## radial {#radial}
+## 방사형 {#radial}
 
 <table>
  <tbody>
@@ -716,11 +716,11 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   </tr>
   <tr>
    <td>ui</td>
-   <td>ui 개체는 양식 개체의 사용자 인터페이스 설명을 포함합니다.<br /> </td>
+   <td>ui 개체에 양식 개체의 사용자 인터페이스 설명이 포함됩니다.<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>캡션</td>
    <td>캡션 개체는 양식 디자인 개체와 관련된 설명 레이블을 설명합니다.</td>
    <td> </td>
   </tr>
@@ -736,13 +736,13 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   </tr>
   <tr>
    <td>정렬 단추</td>
-   <td>값 객체에는 데이터 컨텐츠의 단일 단위가 포함됩니다.<br /> </td>
+   <td>값 개체에 데이터 콘텐츠의 단일 단위가 포함됩니다.<br /> </td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-## 코너 {#corner}
+## corner {#corner}
 
 <table>
  <tbody>
@@ -775,7 +775,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   <tr>
    <td>국경</td>
    <td>테두리 개체는 주위의 checkButton 개체에 대해 설명합니다. </td>
-   <td>변경 사항은 모델에 반영되며 스크립팅에 사용할 수 있지만 HTML 요소와 동기화되지 않습니다. 따라서 변경 사항이 UI에 반영되지 않습니다.<br /> </td>
+   <td>변경 사항은 모델에 반영되며 스크립팅에 사용할 수 있지만 HTML 요소와 동기화되지 않습니다. 따라서 변경 내용이 UI에 반영되지 않습니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -854,7 +854,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
  </tbody>
 </table>
 
-## rectangle {#rectangle}
+## 직사각형 {#rectangle}
 
 <table>
  <tbody>
@@ -865,7 +865,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   </tr>
   <tr>
    <td>edge</td>
-   <td>Edge 개체는 테두리 또는 직사각형의 호, 선 또는 측면을 설명합니다.<br /> </td>
+   <td>가장자리 개체는 테두리 또는 직사각형의 호, 선 또는 한 면을 설명합니다.<br /> </td>
    <td>색상, 상한 등의 속성은 지원되지 않습니다.</td>
   </tr>
  </tbody>
@@ -882,13 +882,13 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   </tr>
   <tr>
    <td>국경</td>
-   <td>테두리 개체는 개체 주위의 테두리에 대해 설명합니다.<br /> </td>
+   <td>테두리 개체는 개체를 둘러싼 테두리에 대해 설명합니다.<br /> </td>
    <td>없음</td>
   </tr>
  </tbody>
 </table>
 
-## excluslGroup {#exclgroup}
+## excelGroup {#exclgroup}
 
 <table>
  <tbody>
@@ -948,7 +948,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
    <td>없음</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>캡션</td>
    <td>캡션 개체는 양식 디자인 개체와 관련된 설명 레이블을 설명합니다.<br /> </td>
    <td>없음</td>
   </tr>
@@ -1000,7 +1000,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
  </tbody>
 </table>
 
-## 호 {#arc}
+## arc {#arc}
 
 <table>
  <tbody>
@@ -1011,7 +1011,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   </tr>
   <tr>
    <td>edge</td>
-   <td>Edge 개체는 테두리 또는 직사각형의 호, 선 또는 측면을 설명합니다.<br /> </td>
+   <td>가장자리 개체는 테두리 또는 직사각형의 호, 선 또는 한 면을 설명합니다.<br /> </td>
    <td>색상, 상한 등의 속성은 지원되지 않습니다. </td>
   </tr>
  </tbody>
@@ -1028,7 +1028,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
   </tr>
   <tr>
    <td>edge</td>
-   <td>Edge 개체는 테두리 또는 직사각형의 호, 선 또는 측면을 설명합니다.<br /> </td>
+   <td>가장자리 개체는 테두리 또는 직사각형의 호, 선 또는 한 면을 설명합니다.<br /> </td>
    <td>색상, 상한 등의 속성은 지원되지 않습니다. </td>
   </tr>
  </tbody>
@@ -1115,7 +1115,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 방법은 다음
 
 FormCalc는 전자 양식 중심의 로직과 계산 루트를 만들기 위한 XFA 전용 언어입니다. FormCalculation은 강력한 빌드 함수 집합을 제공합니다.
 
-### FormCalc 지원 함수 {#formcalc-supported-functions}
+### FormCalc 지원되는 함수 {#formcalc-supported-functions}
 
 ### FormCalc 표현식 지원 {#formcalc-expression-support}
 
@@ -1158,12 +1158,12 @@ FormCalc는 전자 양식 중심의 로직과 계산 루트를 만들기 위한 
   <tr>
    <td>대상</td>
    <td><br type="_moz" /> </td>
-   <td>for i = 100 down 1 do <br /> s = s + i endfor</td>
+   <td>for i = 100 download to 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>for each</td>
    <td><br type="_moz" /> </td>
-   <td>(1, 2, 3)의 각 i에 대해 s = s + i endfor <br /></td>
+   <td>(1, 2, 3) <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>함수 선언</td>
@@ -1273,7 +1273,7 @@ FormCalc는 전자 양식 중심의 로직과 계산 루트를 만들기 위한 
   <tr>
    <td>app.execDialog()</td>
    <td>사용자에게 모달 대화 상자를 표시합니다. 호스트 응용 프로그램을 직접 다시 사용하려면 먼저 사용자가 모달 대화 상자를 닫아야 합니다.</td>
-   <td>아무 작업도 수행되지 않습니다.<br /> </td>
+   <td>작업이 수행되지 않습니다.<br /> </td>
   </tr>
   <tr>
    <td>app.launchURL()</td>
@@ -1298,7 +1298,7 @@ FormCalc는 전자 양식 중심의 로직과 계산 루트를 만들기 위한 
   <tr>
    <td>app.clearTimeOut()</td>
    <td>이전에 등록한 시간 초과 간격을 취소합니다. 이러한 간격은 처음에 setTimeOut으로 설정됩니다.</td>
-   <td>HTML5 양식에서는 API가 제대로 작동하지 않습니다.<br /> </td>
+   <td>HTML5 양식에서 API가 올바르게 작동하지 않습니다.<br /> </td>
   </tr>
   <tr>
    <td>app.eval()</td>
@@ -1307,13 +1307,13 @@ FormCalc는 전자 양식 중심의 로직과 계산 루트를 만들기 위한 
   </tr>
   <tr>
    <td>app.activeDocs</td>
-   <td>각 활성 문서에 대한 Doc 개체를 포함하는 배열입니다. 활성 문서가 없으면 activeDocs는 아무 것도 반환하지 않습니다. 즉, 핵심 JavaScript의 d = new Array(0)와 동일한 비헤이비어가 있습니다.</td>
+   <td>각 활성 문서에 대한 Doc 개체를 포함하는 배열입니다. 활성 문서가 없으면 activeDocs는 아무 것도 반환하지 않습니다.즉, 핵심 JavaScript의 d = new Array(0)와 동일한 비헤이비어가 있습니다.</td>
    <td>HTMl5 양식에 대한 빈 배열을 반환합니다.</td>
   </tr>
   <tr>
    <td>app.calculate</td>
    <td>true(기본값)인 경우 계산을 수행할 수 있습니다. false이면 계산이 허용되지 않습니다.</td>
-   <td>HTMl5 양식에 대해서는 항상 true입니다.</td>
+   <td>HTMl5 Forms의 경우 항상 true입니다.</td>
   </tr>
   <tr>
    <td>app.constants</td>
@@ -1332,7 +1332,7 @@ FormCalc는 전자 양식 중심의 로직과 계산 루트를 만들기 위한 
   </tr>
   <tr>
    <td>app.language</td>
-   <td>실행 중인 Acrobat 뷰어의 언어</td>
+   <td>실행 중인 Acrobat 뷰어의 언어입니다.</td>
    <td>HTMl5 양식의 경우 항상 "ENU"</td>
   </tr>
  </tbody>
@@ -1353,4 +1353,4 @@ FormCalc는 전자 양식 중심의 로직과 계산 루트를 만들기 위한 
 
 >[!NOTE]
 >
->HTML5 양식은 클라이언트측(브라우저)에서 렌더링됩니다. 서버측 스크립트 대신 클라이언트측 **유효성 검사** 및 **계산** 스크립트를 사용하는 것이 좋습니다.
+>HTML5 양식은 클라이언트측(브라우저)에서 렌더링됩니다. 서버측 스크립트 대신 클라이언트 측 **validate** 및 **계산** 스크립트를 사용하는 것이 좋습니다.
