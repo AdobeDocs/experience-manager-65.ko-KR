@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM Forms 프로세스 이해 {#understanding-aem-forms-processes}
 
-일반적인 사용 사례는 하나의 문서에서 작동하는 AEM Forms 서비스 세트입니다. 워크벤치를 사용하여 프로세스를 생성하여 서비스 컨테이너에 요청을 전송할 수 있습니다. 프로세스는 자동화하는 비즈니스 프로세스를 나타냅니다. 프로세스 만들기에 대한 자세한 내용은 워크벤치 [사용을 참조하십시오](https://www.adobe.com/go/learn_aemforms_workbench_63).
+일반적인 사용 사례는 하나의 문서에서 작동하는 AEM Forms 서비스 세트입니다. 워크벤치를 사용하여 프로세스를 생성하여 서비스 컨테이너에 요청을 전송할 수 있습니다. 프로세스는 자동화하는 비즈니스 프로세스를 나타냅니다. 프로세스 만들기에 대한 자세한 내용은 Workbench[ 사용을 참조하십시오.](https://www.adobe.com/go/learn_aemforms_workbench_63)
 
 프로세스가 활성화되면 서비스가 되고 다른 서비스처럼 호출할 수 있습니다. 암호화 서비스와 같은 표준 서비스와 프로세스에서 시작된 서비스 간의 한 가지 차이점은 암호화 서비스에는 여러 작업을 수행하는 하나의 작업이 있다는 것입니다. 반면 표준 서비스에는 여러 가지 기능이 있다. 각 작업은 일반적으로 문서에 정책을 적용하거나 문서 암호화와 같은 하나의 작업을 수행합니다.
 
@@ -41,41 +41,41 @@ ht-degree: 0%
 
 **단기 체류 프로세스 예**
 
-다음 그림은 MyApplication/EncryptDocument라는 짧은 *프로세스 예입니다*.
+다음 그림은 *MyApplication/EncryptDocument*&#x200B;라는 짧은 기간의 프로세스의 예입니다.
 
 >[!NOTE]
 >
->이 프로세스는 기존 AEM Forms 프로세스를 기반으로 하지 않습니다. 이 프로세스를 호출하는 방법에 대해 설명하는 코드 예제를 따라 워크벤치를 `MyApplication/EncryptDocument` 사용하는 프로세스를 만듭니다. (워크벤치 [사용을 참조하십시오](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>이 프로세스는 기존 AEM Forms 프로세스를 기반으로 하지 않습니다. 이 프로세스를 호출하는 방법에 대해 설명하는 코드 예제를 따라 워크벤치를 사용하여 `MyApplication/EncryptDocument` 프로세스를 만드십시오. ([Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63) 사용 참조)
 
 이 단기 프로세스가 호출되면 다음 작업을 수행합니다.
 
 1. 프로세스로 전달된 보안되지 않은 PDF 문서를 입력 값으로 가져옵니다.
-1. 암호로 PDF 문서를 암호화합니다. 이 프로세스에 대한 입력 매개 변수의 이름 `inDoc` 과 데이터 유형은 문서입니다.
-1. 암호로 암호화된 PDF 문서를 로컬 파일 시스템에 PDF 파일로 저장합니다. 이 프로세스에서는 암호화된 PDF 문서를 출력 값으로 반환합니다. 이 프로세스에 대한 출력 매개 변수의 이름 `outDoc` 과 데이터 유형은 문서입니다.
+1. 암호로 PDF 문서를 암호화합니다. 이 프로세스에 대한 입력 매개 변수의 이름은 `inDoc`이고 데이터 유형은 문서입니다.
+1. 암호로 암호화된 PDF 문서를 로컬 파일 시스템에 PDF 파일로 저장합니다. 이 프로세스에서는 암호화된 PDF 문서를 출력 값으로 반환합니다. 이 프로세스에 대한 출력 매개 변수의 이름은 `outDoc`이고 데이터 유형은 문서입니다.
 
-   이 프로세스는 호출된 동일한 실행 스레드에서 동기식으로 완료됩니다. 이 짧은 기간의 프로세스 이름 `MyApplication/EncryptDocument`과 작업은 `invoke`입니다.
+   이 프로세스는 호출된 동일한 실행 스레드에서 동기식으로 완료됩니다. 이 짧은 기간의 프로세스 이름은 `MyApplication/EncryptDocument`이고 작업은 `invoke`입니다.
 
    >[!NOTE]
    >
-   >일반적으로 단기 프로세스는 3개 이상의 작업으로 구성됩니다. 워크벤치를 사용하여 프로세스를 생성합니다. (워크벤치 [사용을 참조하십시오](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+   >일반적으로 단기 프로세스는 3개 이상의 작업으로 구성됩니다. 워크벤치를 사용하여 프로세스를 생성합니다. ([Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63) 사용 참조)
 
    *AEM*&#x200B;형식으로 프로그래밍이 짧은 프로세스를 프로그래밍 방식으로 호출할 수 있는 다음 방법에 대해 설명합니다.
 
-   * [AEM Forms Remoting을 사용하여 안전하지 않은 문서를 전달하여 단기](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) 프로세스 호출(Flex 응용 프로그램 사용)
+   * [AEM Forms Remoting을 사용하여 안전하지 않은 문서를 전달하여 단기](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)  프로세스 호출(Flex 응용 프로그램 사용)
    * [호출 API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java 호출 API)를 사용하여 짧은 기간 프로세스 호출
-   * [Base64 인코딩을 사용하여](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) AEM Forms 호출(웹 서비스 예제)
-   * [MTOM을 사용하여](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) AEM Forms 호출(웹 서비스 예제)
-   * [SwaRef를 사용하여](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) AEM Forms 호출(웹 서비스 예제)
-   * [HTTP를 통해 BLOB 데이터를 사용하여 AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) 호출(웹 서비스 예)
-   * [DIME를 사용하여](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) AEM Forms 호출(웹 서비스 예제)
+   * [Base64 인코딩을 사용하여](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)  AEM Forms 호출(웹 서비스 예제)
+   * [MTOM을 사용하여](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)  AEM Forms 호출(웹 서비스 예제)
+   * [SwaRef를 사용하여](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)  AEM Forms 호출(웹 서비스 예제)
+   * [HTTP를 통해 BLOB 데이터를 사용하여 AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)  호출(웹 서비스 예)
+   * [DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (웹 서비스 예)를 사용하여 AEM Forms 호출
    * [REST를 사용하여 MyApplication/EncryptDocument 프로세스 호출](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **긴 기간의 프로세스 예**
 
 다음 그림은 오랜 기간의 프로세스를 보여주는 예입니다.
 
-이 프로세스는 신청인이 대출 양식을 제출할 때 발생합니다. 대출 담당 직원이 대출 요청을 승인하거나 거부하기 전에는 그 과정이 완료되지 않습니다. 이 긴 프로세스의 이름은 *FirstAppSolution/PreLoanProcess* 이며 작업은 입니다 `invoke_Async`. 이 프로세스는 비동기적으로 호출되어야 합니다. 프로그래밍 방식으로 이러한 긴 수명 프로세스를 호출하는 방법에 대한 자세한 내용은 인간 중심 [장기 체류 프로세스 호출을 참조하십시오](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+이 프로세스는 신청인이 대출 양식을 제출할 때 발생합니다. 대출 담당 직원이 대출 요청을 승인하거나 거부하기 전에는 그 과정이 완료되지 않습니다. 이 긴 프로세스 이름은 *FirstAppSolution/PreLoanProcess*&#x200B;이며 해당 작업은 `invoke_Async`입니다. 이 프로세스는 비동기적으로 호출되어야 합니다. 프로그래밍 방식으로 이러한 긴 수명 프로세스를 호출하는 방법에 대한 자세한 내용은 [인간 중심의 긴 수명 프로세스 호출](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)을 참조하십시오.
 
 >[!NOTE]
 >
->이 프로세스는 첫 번째 AEM Forms 응용 프로그램 만들기에 지정된 자습서 [에 따라 만들 수 있습니다](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
+>이 프로세스는 [첫 번째 AEM Forms 응용 프로그램 만들기](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)에 지정된 자습서를 따라 만들 수 있습니다.
