@@ -1,8 +1,8 @@
 ---
 title: 경로 작업에 사용되는 이미지 사용자 정의
 seo-title: 경로 작업에 사용되는 이미지 사용자 정의
-description: LiveCycle AEM Forms 작업 영역의 라우트 작업에 사용되는 이미지를 사용자 지정하는 방법
-seo-description: LiveCycle AEM Forms 작업 영역의 라우트 작업에 사용되는 이미지를 사용자 지정하는 방법
+description: LiveCycle AEM Forms 작업 영역의 경로 작업에 사용되는 이미지를 사용자 지정하는 방법
+seo-description: LiveCycle AEM Forms 작업 영역의 경로 작업에 사용되는 이미지를 사용자 지정하는 방법
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -17,21 +17,21 @@ ht-degree: 0%
 ---
 
 
-# 경로 작업에 사용되는 이미지 사용자 정의 {#customize-images-used-in-route-actions}
+# 경로 작업 {#customize-images-used-in-route-actions}에 사용되는 이미지 사용자 정의
 
-경로 작업에 사용되는 이미지를 사용자 정의하려면 사용자 정의 [의 일반 단계에 설명된 단계에](/help/forms/using/generic-steps-html-workspace-customization.md) 따라 이 문서에 설명된 단계를 수행하십시오.
+경로 작업에 사용되는 이미지를 사용자 정의하려면 [사용자 정의 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md)에 설명된 단계에 따라 이 문서에 설명된 단계를 수행하십시오.
 
-## 경로 작업을 위한 이미지 {#images-for-route-actions}
+## 경로 작업 {#images-for-route-actions}에 대한 이미지
 
 1. 새로운 경로 작업에 대해 다음 위치에 CSS에서 이미지를 정의하는 스타일을 추가합니다.
 
    `/apps/ws/css/newStyle.css`
 
-   예: 아래와 `myStyle1`같이 새 스타일을 추가하고 WebDAV 클라이언트를 사용하여 이미지 파일 `myStyleIcon1.png` 을 `/apps/ws/image`s 폴더에 업로드합니다.
+   예:아래와 같이 `myStyle1`이라는 새 스타일을 추가하고 WebDAV 클라이언트를 사용하여 이미지 파일 `myStyleIcon1.png`을 `/apps/ws/image`s 폴더에 업로드합니다.
 
    >[!NOTE]
    >
-   >WebDAV 액세스에 대한 자세한 내용은 https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html을 [참조하십시오](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >WebDAV 액세스에 대한 자세한 내용은 [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html)을 참조하십시오.
 
    >[!NOTE]
    >
@@ -47,11 +47,11 @@ ht-degree: 0%
 
 ## 작업 목록 작업 팝업 {#task-list-task-action-popup}
 
-1. 작업 목록 작업 팝업을 만듭니다. AEM Forms 작업 공간 코드 [작성을 참조하십시오](introduction-customizing-html-workspace.md#building-html-workspace-code). 개발 패키지를 사용해야 합니다.
+1. 작업 목록 작업 팝업을 만듭니다. [AEM Forms 작업 공간 코드 작성](introduction-customizing-html-workspace.md#building-html-workspace-code)을 참조하십시오. 개발 패키지를 사용해야 합니다.
 
-1. 복사 `/libs/ws/js/runtime/templates/task.html` 를 `/apps/ws/js/runtime/templates/task.html`참조하십시오.
+1. `/libs/ws/js/runtime/templates/task.html`을(를) `/apps/ws/js/runtime/templates/task.html`에 복사합니다.
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 같은 경우 다음 코드를 수정합니다 `/apps/ws/js/runtime/templates/task.html`.
+1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 같은 경우 `/apps/ws/js/runtime/templates/task.html`에서 다음 코드를 수정하십시오.
 
    ```jsp
    <%if(routeList == null){%>
@@ -81,7 +81,7 @@ ht-degree: 0%
                <%}%>
    ```
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 다른 경우 다음 코드를 수정하십시오 `/apps/ws/js/runtime/templates/task.html`. 그러면 서블릿 조건 스택을 추가하여 스타일을 경로 작업 이름과 매핑합니다. `if-else`
+1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 다른 경우 `/apps/ws/js/runtime/templates/task.html`에서 다음 코드를 수정하십시오. 그러면 `if-else` 서블릿 조건 스택을 추가하여 스타일을 경로 작업 이름과 매핑합니다.
 
 ```jsp
 <%if(routeList == null){%>
@@ -119,9 +119,9 @@ To
 
 ## 작업 세부 정보 작업 팝업 {#task-details-task-action-popup}
 
-1. 복사 `/libs/ws/js/runtime/templates/taskdetails.html` 를 `/apps/ws/js/runtime/templates/taskdetails.html`참조하십시오.
+1. `/libs/ws/js/runtime/templates/taskdetails.html`을(를) `/apps/ws/js/runtime/templates/taskdetails.html`에 복사합니다.
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 같은 경우 다음 코드를 수정합니다 `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 같은 경우 `/apps/ws/js/runtime/templates/taskdetails.html`에서 다음 코드를 수정하십시오.
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -141,7 +141,7 @@ To
                        <%}%>
    ```
 
-1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 다른 경우 다음 코드를 수정하십시오 `/apps/ws/js/runtime/templates/taskdetails.html`. 그러면 루트 작업 이름과 스타일을 매핑하기 위해 `if-else` 서블릿 조건 스택이 추가됩니다.
+1. CSS 스타일의 이름이 서버에서 오는 경로 작업 이름과 다른 경우 `/apps/ws/js/runtime/templates/taskdetails.html`에서 다음 코드를 수정하십시오. 루트 작업 이름에 스타일을 매핑하기 위해 `if-else` 서블릿 조건 스택을 추가합니다.
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -169,7 +169,7 @@ To
                <%}%>
    ```
 
-1. 편집을 위해 열고 다음 텍스트를 찾습니다. `/apps/ws/js/registry.js`
+1. 편집할 `/apps/ws/js/registry.js`을(를) 열고 다음 텍스트를 찾습니다.
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. 텍스트를 다음으로 바꿉니다.
