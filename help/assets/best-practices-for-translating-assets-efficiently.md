@@ -13,9 +13,9 @@ ht-degree: 3%
 
 # 자산 번역 우수 사례 {#best-practices-for-translating-assets-efficiently}
 
-[!DNL Adobe Experience Manager Assets] 다국어 워크플로우를 지원하므로 디지털 자산에 대한 바이너리, 메타데이터 및 태그를 여러 개의 로캘로 변환하고 번역된 에셋을 관리할 수 있습니다. 자세한 내용은 다국어 [자산을 참조하십시오](multilingual-assets.md).
+[!DNL Adobe Experience Manager Assets] 다국어 워크플로우를 지원하므로 디지털 자산에 대한 바이너리, 메타데이터 및 태그를 여러 개의 로캘로 변환하고 번역된 에셋을 관리할 수 있습니다. 자세한 내용은 [다국어 자산](multilingual-assets.md)을 참조하십시오.
 
-번역 워크플로우를 실행하기 전에 다양한 번역 버전이 동기화되도록 자산을 효율적으로 관리할 수 있도록 자산의 [언어 사본을](preparing-assets-for-translation.md) 만드십시오.
+번역 워크플로우를 실행하기 전에 다른 번역 버전이 동기화되도록 자산을 효율적으로 관리하기 위해 자산의 [언어 사본](preparing-assets-for-translation.md)을 만듭니다.
 
 자산 또는 자산 그룹의 언어 사본은 유사한 컨텐츠 계층 구조를 가진 언어 동기(또는 동일 언어의 자산 버전)입니다.
 
@@ -42,9 +42,9 @@ ht-degree: 3%
    >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
 -->
 
-1. 마지막으로 [!UICONTROL 수정한 날짜] 설정 워크플로우를 활성화합니다.
+1. [!UICONTROL 마지막으로 수정한 날짜 설정] 워크플로우를 활성화합니다.
 
-   DAM [!UICONTROL 메타 데이터 쓰기] 작업 과정은 자산의 마지막 수정 날짜를 구성합니다. 2단계에서 이 워크플로우를 비활성화하므로 [!DNL Assets] 더 이상 마지막으로 수정한 자산의 날짜를 최신 상태로 유지할 수 없습니다. 따라서 마지막으로 *수정한 날짜* 설정 워크플로우를 활성화하여 마지막으로 수정한 자산의 날짜가 최신 상태인지 확인합니다. 마지막으로 수정한 날짜가 지난 자산은 오류를 초래할 수 있습니다.
+   [!UICONTROL DAM MetaData Writeback] 워크플로우는 자산의 마지막 수정 날짜를 구성합니다. 2단계에서 이 워크플로를 비활성화했으므로 [!DNL Assets]은(는) 더 이상 마지막으로 수정한 자산의 날짜를 최신 상태로 유지할 수 없습니다. 따라서 *마지막으로 수정한 날짜 설정* 워크플로우를 활성화하여 마지막으로 수정한 자산의 날짜가 최신 상태인지 확인합니다. 마지막으로 수정한 날짜가 지난 자산은 오류를 초래할 수 있습니다.
 
-1. [자산 이진 파일 변환을 중지하도록 번역 통합 프레임워크를](/help/sites-administering/tc-tic.md) 구성합니다. 자산 **[!UICONTROL 탭 아래의 자산]** 번역 옵션 [!UICONTROL 을 선택] 해제하여 자산 이진 파일의 번역을 중지합니다.
-1. 다국어 자산 워크플로우를 사용하여 자산 메타데이터/ [태그를 번역할 수 있습니다](multilingual-assets.md).
+1. [자산 이진 파일 ](/help/sites-administering/tc-tic.md) 변환을 중지하도록 번역 통합 프레임워크를 구성합니다. [!UICONTROL 자산] 탭에서 **[!UICONTROL 자산 번역]** 옵션을 선택 취소하여 자산 바이너리의 번역을 중지합니다.
+1. [다국어 자산 워크플로우](multilingual-assets.md)를 사용하여 자산 메타데이터/태그를 변환합니다.
