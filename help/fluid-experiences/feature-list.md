@@ -88,4 +88,4 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 * [모바일 앱 개발](https://docs.adobe.com/content/help/ko-KR/experience-manager-64/mobile/developing/developing-content-services.html)
 * [타사 액세스에 대한 FAQ](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
 * [어디에서나 Fluid Experiences](https://helpx.adobe.com/kr/experience-manager/using/using-sling-apis.html)
-* [Sling API 사용](https://helpx.adobe.com/kr/experience-manager/using/using-sling-apis.html)
+* [Sling API 사용](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
