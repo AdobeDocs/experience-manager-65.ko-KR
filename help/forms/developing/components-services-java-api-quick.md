@@ -43,15 +43,15 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM 양식을 사용한 프로그래밍에서 빠른 시작은 JBoss 및 Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 Unix와 같은 다른 운영 체제를 사용하는 경우에는 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
 >[!NOTE]
 >
->사용자 지정 구성 요소가 있고 SOAP 또는 EJB 프로토콜을 사용하여 동일한 로컬 서버에서 DSC를 호출하고 이러한 요청은 업그레이드 후 작동되지 않는 경우, in-VM([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)) 호출 전략을 사용하십시오. 기본 ServiceClientFactory에서 VM 내 DSC 호출 메서드를 사용하고 SOAP 또는 EJB 프로토콜을 사용하여 ServiceClientFactory를 만들지 마십시오.
+>사용자 지정 구성 요소가 있고 SOAP 또는 EJB 프로토콜을 사용하여 동일한 로컬 서버에서 DSC를 호출하고 이러한 요청은 업그레이드 후 작동되지 않는 경우 VM([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)) 호출 전략을 사용하십시오. 기본 ServiceClientFactory에서 VM 내 DSC 호출 메서드를 사용하고 SOAP 또는 EJB 프로토콜을 사용하여 ServiceClientFactory를 만들지 마십시오.
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 구성 요소 배포 {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}를 사용하여 구성 요소 배포
 
-다음 Java 예는 *adobe-emailSample-dsc.jar라는 JAR 파일을 기반으로 하는 구성 요소를 배포합니다*.
+다음 Java 예는 *adobe-emailSample-dsc.jar*&#x200B;이라는 JAR 파일을 기반으로 하는 구성 요소를 배포합니다.
 
 ```java
  /* 
@@ -151,9 +151,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 서비스의 실행 컨텍스트 설정 {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}를 사용하여 서비스의 실행 컨텍스트 설정
 
-다음 Java 코드 예제에서는 Run-As Invoker 실행 컨텍스트를 EncryptDocument라는 예제 서비스로 *설정합니다*.
+다음 Java 코드 예제에서는 Run-As Invoker 실행 컨텍스트를 *EncryptDocument*&#x200B;이라는 예제 서비스로 설정합니다.
 
 ```java
  /* 
@@ -243,7 +243,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 서비스 보안 비활성화 {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-disabling-service-security-using-the-java-api}를 사용하여 서비스 보안을 비활성화하는 중
 
 다음 Java 코드 예제에서는 EncryptDocument 서비스 예와 이 서비스(값 설정 및 암호화 서비스)에서 호출되는 서비스의 보안을 비활성화합니다.
 
@@ -356,9 +356,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 서비스 시작 {#quick-start-soap-mode-starting-a-service-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-starting-a-service-using-the-java-api}를 사용하여 서비스 시작
 
-다음 Java 코드 예제에서는 SendEmailService라는 서비스를 *시작합니다*.
+다음 Java 코드 예제에서는 *SendEmailService*&#x200B;라는 서비스를 시작합니다.
 
 ```java
  package com.adobe.sample.servicemanager; 
@@ -414,7 +414,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 서비스 구성 값 수정 {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}를 사용하여 서비스 구성 값 수정
 
 다음 Java 예는 SendEmail 서비스에 속하는 구성 값을 수정합니다.
 
@@ -526,7 +526,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API를 사용하여 구성 요소 제거 {#quick-start-soap-mode-removing-components-using-the-java-api}
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-components-using-the-java-api}를 사용하여 구성 요소 제거
 
 다음 Java 코드 예제에서는 Java API를 사용하여 구성 요소를 제거합니다.
 
