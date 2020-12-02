@@ -35,7 +35,7 @@ HTML5 양식은 HTML5 형식으로 양식을 렌더링합니다. 결과 출력�
 
 Apache는 HTTP 또는 AJP 프로토콜을 사용하여 JBoss와 통신할 수 있습니다.
 
-1. APACHE_HOME/conf/httpd.conf 파일에서 다음 모듈 구성의 주석을 *해제합니다* .
+1. *APACHE_HOME/conf/httpd.conf* 파일에서 다음 모듈 구성의 주석을 해제합니다.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -49,7 +49,7 @@ Apache는 HTTP 또는 AJP 프로토콜을 사용하여 JBoss와 통신할 수 �
 
 1. JBoss의 포트 8080에서 프록시를 구성합니다.
 
-   APACHE_HOME/conf/httpd.conf 구성 파일에 다음 구성을 ** 추가합니다.
+   *APACHE_HOME/conf/httpd.conf* 구성 파일에 다음 구성을 추가합니다.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -60,14 +60,14 @@ Apache는 HTTP 또는 AJP 프로토콜을 사용하여 JBoss와 통신할 수 �
    >
    >프록시를 사용하는 경우 다음 구성 변경 사항이 필요합니다.
    >
-   >* 액세스: *https://&lt;server>:&lt;port>/system/console/configMgr*
+   >* 액세스:*https://&lt;server>:&lt;port>/system/console/configMgr*
    * Apache Sling 레퍼러 필터의 구성 편집
    * 호스트 허용에서 프록시 서버의 항목을 추가합니다
 
 
 1. 압축 사용.
 
-   APACHE_HOME/conf/httpd.conf 구성 파일에 다음 구성을 ** 추가합니다.
+   *APACHE_HOME/conf/httpd.conf* 구성 파일에 다음 구성을 추가합니다.
 
    ```xml
    <Location /content/xfaforms>
