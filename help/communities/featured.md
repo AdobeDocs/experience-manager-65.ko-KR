@@ -37,9 +37,9 @@ ht-degree: 6%
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
 * 커뮤니티 사이트에 주요 컨텐츠 추가
-* 구성 요소의 구성 `Featured Content` 설정.
+* `Featured Content` 구성 요소에 대한 구성 설정.
 
-## 페이지에 주요 컨텐츠 추가 {#adding-featured-content-to-a-page}
+## 페이지 {#adding-featured-content-to-a-page}에 주요 컨텐츠 추가
 
 작성 모드에서 페이지에 `Featured Content` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여
 
@@ -47,13 +47,13 @@ ht-degree: 6%
 
 주요 컨텐츠가 표시될 페이지에 드래그합니다.
 
-필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](basics.md).
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](basics.md)을 방문하십시오.
 
-필요한 [클라이언트측 라이브러리가](essentials-featured.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Featured Content` 방식입니다.
+[필수 클라이언트측 라이브러리](essentials-featured.md#essentials-for-client-side)가 포함될 때 다음과 같이 `Featured Content` 구성 요소가 표시됩니다.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-## 주요 컨텐츠 구성 {#configuring-featured-content}
+## 특별 컨텐츠 구성 {#configuring-featured-content}
 
 액세스할 배치된 `Featured Content` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
@@ -63,11 +63,11 @@ ht-degree: 6%
 
 ### 설정 탭 {#settings-tab}
 
-설정 **[!UICONTROL 탭]** 아래에서 기능할 컨텐츠를 확인합니다.
+**[!UICONTROL 설정]** 탭에서 기능할 컨텐트를 식별합니다.
 
 * **[!UICONTROL 표시 이름]**
 
-   주요 컨텐츠 목록의 제목입니다. 예 `Featured Questions` 를 `Featured Ideas`참조하십시오. 기본값은 비어 있는 `Featured Content` 경우입니다.
+   주요 컨텐츠 목록의 제목입니다. 예: `Featured Questions` 또는 `Featured Ideas`. 기본값은 `Featured Content`입니다(비워 두면).
 
 * **[!UICONTROL 특별 포함된 컨텐츠의 위치]**
 
@@ -85,9 +85,9 @@ ht-degree: 6%
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-피쳐로 플래그가 지정되면 동작 플래그가 바뀝니다 `Unfeature`.
+피쳐로 플래그가 지정되면 동작 플래그가 `Unfeature`이 됩니다.
 
-구성 요소를 포함하는 페이지에 `Featured Content` 이제 이 게시물이 포함됩니다.
+이제 `Featured Content` 구성 요소를 포함하는 페이지에 이 게시물이 포함됩니다.
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -95,6 +95,6 @@ ht-degree: 6%
 
 ## 추가 정보 {#additional-information}
 
-개발자를 위한 주요 컨텐츠 [페이지에](essentials-featured.md) 대한 자세한 내용이 나와 있습니다.
+개발자를 위한 [주요 콘텐츠](essentials-featured.md) 페이지에 자세한 내용이 나와 있습니다.
 
-컨텐츠에 특별 플래그를 지정하려면 사용자 생성 컨텐츠 [중재를 참조하십시오](moderate-ugc.md).
+컨텐트에 특별 플래그를 지정하려면 [사용자 생성 콘텐츠 중재](moderate-ugc.md)를 참조하십시오.
