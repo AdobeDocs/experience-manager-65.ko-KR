@@ -77,13 +77,13 @@ JSP 기반 솔루션과 Javascript API는 Scene7 DHTML 뷰어 플랫폼에서만
 
    코드에 &quot;sj_deviceDetect.js&quot;가 포함되어 있는 JS를 찾습니다.
 
-   다음은 새로운 JS 장치 감지 코드로 대체되었습니다. [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers) .
+   다음은 새로운 JS 장치 감지 코드로 대체되었습니다.[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers).
 
 **대체 뷰어 플랫폼이란 무엇입니까?**
 
 DHTML을 대체할 수 있는 곳은 Scene7 HTML5 뷰어 플랫폼으로, 두 가지 모두로 구성됩니다.
 
-* 기본 확대/축소, 플라이아웃 확대/축소, 이미지 세트, 견본 집합, 다차원 회전 및 혼합 미디어 등 다양한 뷰어 유형에서 모바일에 최적화된 상호 작용을 제공하는 HTML5 기본 뷰어입니다. 이러한 뷰어의 최신 예는 다음을 참조하십시오. [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
+* 기본 확대/축소, 플라이아웃 확대/축소, 이미지 세트, 견본 집합, 다차원 회전 및 혼합 미디어 등 다양한 뷰어 유형에서 모바일에 최적화된 상호 작용을 제공하는 HTML5 기본 뷰어입니다. 이러한 뷰어의 최신 예는 다음을 참조하십시오.[https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
 * HTML5 지원 사이트 및 디바이스(예: iOS 및 Android)에 대한 Adobe Scene7 뷰어를 광범위한 사용자 정의할 수 있는 HTML5 뷰어 SDK를 사용하면 뷰어의 모양과 인터랙션을 브랜딩할 수 있는 유연성과 창의성을 최대한 향상시킬 수 있습니다. 재사용 가능한 성능 최적화 구성 요소의 이점은 뷰어 개발 비용을 줄이고 사용자 정의 개발을 가속화합니다.
 
 **HTML5 뷰어 플랫폼은 언제 DHTML 뷰어 플랫폼에서 전환해야 하는 기능을 갖게 됩니까?**
@@ -92,7 +92,7 @@ Scene7은 2011년 가을 버전 5.5를 출시하여 첫 번째 HTML5 뷰어 SDK�
 
 HTML5 뷰어 플랫폼을 통해 뷰어 요구 사항을 충족할 수 있는지 확인하려면 다음 설명서를 참조하십시오.
 
-[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (특별 뷰어 기능 및 사용자 정의 기능)
+[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (기본 뷰어 기능 및 사용자 정의 기능)
 
 [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) (SDK API 설명서에 액세스하려면)
 
@@ -102,10 +102,10 @@ HTML5 뷰어 SDK가 사용자의 요구 사항을 충족하는지 여부를 아�
 
 뷰어를 HTML5 플랫폼으로 전환하기 위해 Scene7은 다음 옵션을 제공합니다.
 
-1. Scene7의 기본 HTML5 뷰어 중 하나를 사용하십시오. HTML5 뷰어는 여기에서 찾을 수 있습니다. [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
-1. SPS 응용 프로그램 설정 아래에 기본 HTML5 뷰어 중 하나를 구성합니다. 이를 통해 뷰어 크기, 전환, 확대/축소 동작 등과 같은 특정 동작을 사용자 정의할 수 있습니다. [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
-1. CSS를 수정하여 단추 아트워크, 배치, 투명도, 배경색 등과 같은 시각 디자인을 변경하여 Scene7의 기본 HTML5 뷰어의 모양과 느낌을 사용자 요구에 맞게 변경할 수 있습니다. [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
-1. 여기에서 다운로드할 수 있는 SDK를 사용하여 처음부터 사용자 정의 HTML5 뷰어를 만듭니다. [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). 전문 서비스를 통해 사용자 정의 뷰어를 만들거나 웹 개발 팀에서 직접 만들 수 있습니다.
+1. Scene7의 기본 HTML5 뷰어 중 하나를 사용하십시오. HTML5 뷰어는 여기에서 찾을 수 있습니다.[https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
+1. SPS 응용 프로그램 설정 아래에 기본 HTML5 뷰어 중 하나를 구성합니다. 이를 통해 뷰어 크기, 전환, 확대/축소 동작 등과 같은 특정 동작을 사용자 정의할 수 있습니다.[https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
+1. CSS를 수정하여 단추 아트워크, 배치, 투명도, 배경색 등과 같은 시각 디자인을 변경하여 Scene7의 기본 HTML5 뷰어의 모양과 느낌을 사용자 요구에 맞게 변경할 수 있습니다.[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
+1. 여기에서 다운로드할 수 있는 SDK를 사용하여 처음부터 사용자 정의 HTML5 뷰어를 만듭니다.[https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). 전문 서비스를 통해 사용자 정의 뷰어를 만들거나 웹 개발 팀에서 직접 만들 수 있습니다.
 
 **HTML5를 지원하지 않는 브라우저는 어떻게 됩니까?**
 
@@ -131,4 +131,4 @@ DHTML 기반 뷰어를 사용하여 프로덕션에서 여전히 라이브할 �
 
 **자세한 내용은 누구에게 연락해야 합니까?**
 
-이 FAQ가 귀하의 모든 질문에 답변하지 않은 경우 Admin Console을 [사용하여 지원 사례를](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 만들거나 Adobe 계정 관리자에게 문의하십시오.
+이 FAQ가 귀하의 모든 질문에 답변하지 않은 경우, [Admin Console을 사용하여 지원 사례](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)를 만들거나 Adobe 계정 관리자에게 문의하십시오.
