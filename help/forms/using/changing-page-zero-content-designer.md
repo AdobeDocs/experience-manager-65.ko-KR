@@ -17,23 +17,23 @@ ht-degree: 1%
 ---
 
 
-# 디자이너에서 페이지 제로 컨텐츠 변경 {#changing-page-zero-content-in-designer}
+# 디자이너 {#changing-page-zero-content-in-designer}에서 페이지 제로 컨텐츠 변경
 
-기본 PDF 뷰어(예: 기본 PDF 뷰어)가 PDF/XFA 양식의 내용을 읽을 수 없을 때 기본적으로 페이지 [!DNL Chrome] 제로 컨텐츠가 [!DNL Firefox]표시됩니다. 기본 페이지 제로 메시지는 아래에 나와 있습니다.
+페이지 제로 컨텐츠는 [!DNL Chrome] 또는 [!DNL Firefox]의 기본 PDF 뷰어와 같이 Adobe PDF 이외의 뷰어가 PDF/XFA 양식의 내용을 읽을 수 없을 때 기본적으로 표시됩니다. 기본 페이지 제로 메시지는 아래에 나와 있습니다.
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
 [!DNL AEM Forms] 디자이너 버전을 사용하면 페이지 0에 표시되는 메시지를 변경할 수 있습니다. 페이지 제로 메시지를 변경하려면 다음 단계를 수행하십시오.
 
-1. Designer 버전이 설치되어 있는지 [!DNL AEM Forms] 확인합니다. 디자이너의 정보 화면에서 버전을 확인할 수 있습니다.
+1. [!DNL AEM Forms] 버전의 Designer가 설치되어 있는지 확인합니다. 디자이너의 정보 화면에서 버전을 확인할 수 있습니다.
 
 1. 페이지 제로 컨텐츠를 변경할 양식을 엽니다.
 
-1. 파일 **[!UICONTROL >]** 양식 속성을 클릭합니다 ****.
+1. **[!UICONTROL 파일]** > **[!UICONTROL 양식 속성]**&#x200B;을 클릭합니다.
 
-1. 양식 [!UICONTROL 속성] 대화 상자에서 ![더하기](assets/plus.png) (더하기 아이콘)를 클릭하여 사용자 지정 속성을 추가합니다.
+1. [!UICONTROL 양식 속성] 대화 상자에서 ![plus](assets/plus.png)(더하기 아이콘)을 클릭하여 사용자 지정 속성을 추가합니다.
 
-1. 속성 이름으로 **_pagezerocontent** 를 지정합니다.
+1. 속성 이름으로 **_pagezerocontent**&#x200B;을 지정합니다.
 1. 새 페이지 제로 메시지를 리치 텍스트 형식으로 값으로 추가합니다. 예:
 
 
