@@ -21,11 +21,11 @@ ht-degree: 79%
 
 # 프로젝트{#projects}
 
-프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 공통되는 공유 환경을 사용하면 프로젝트 관리가 쉬워집니다. 프로젝트와 연결할 수 있는 리소스 유형은 AEM에서 타일이라고 합니다. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 공통되는 공유 환경을 사용하면 프로젝트 관리가 쉬워집니다. 프로젝트와 연결할 수 있는 리소스 유형은 AEM에서 타일이라고 합니다. 타일에는 [프로젝트 타일에 자세히 설명된 대로 프로젝트 및 팀 정보, 자산, 워크플로우 및 기타 유형의 정보가 포함될 수 있습니다.](#project-tiles)
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and**/home/groups**.
+>프로젝트 제작, 작업/워크플로우 생성, 팀 보기 및 관리와 같은 프로젝트 기능을 사용하는 동안 프로젝트의 사용자가 다른 사용자/그룹을 보려면 해당 사용자는 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 액세스 권한이 있어야 합니다. 이를 구현하는 가장 쉬운 방법은 **projects-users** 그룹에 **/home/users** 및**/home/groups**에 대한 읽기 액세스 권한을 제공하는 것입니다.
 
 사용자라면, 다음을 수행할 수 있습니다.
 
@@ -88,7 +88,7 @@ ht-degree: 79%
 
 **컬렉션 추가**&#x200B;를 클릭하고 목록에서 적절한 컬렉션을 선택하여 컬렉션을 추가하십시오.
 
-### 경험 {#experiences}
+### 경험  {#experiences}
 
 **경험** 타일에서는 모바일 앱, 웹 사이트 또는 발행을 프로젝트에 추가할 수 있습니다.
 
@@ -126,7 +126,7 @@ ht-degree: 79%
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. 번역 작업 목록에는 자산 메타데이터 및 태그에 대한 항목도 표시됩니다. 이 항목들은 자산의 메타데이터와 태그도 번역됨을 나타냅니다.
+번역 워크플로우에서 자산을 보려면 **번역 작업** 카드의 하단에 있는 줄임표를 클릭합니다. 번역 작업 목록에는 자산 메타데이터 및 태그에 대한 항목도 표시됩니다. 이 항목들은 자산의 메타데이터와 태그도 번역됨을 나타냅니다.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -148,7 +148,7 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 이 워크플로우는 [랜딩 페이지 만들기 워크플로우](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)에 설명되어 있습니다.
 
-### 이메일 {#emails}
+### 이메일  {#emails}
 
 이메일에 대한 요청을 관리하는 데 도움이 되는 **이메일** 타일은 이메일 요청 워크플로우를 시작합니다.
 
@@ -174,7 +174,7 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 ### 작업 {#tasks}
 
-작업을 사용하면 워크플로우를 포함하여 프로젝트 관련 작업의 상태를 모니터링할 수 있습니다. Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
+작업을 사용하면 워크플로우를 포함하여 프로젝트 관련 작업의 상태를 모니터링할 수 있습니다. 작업은 [작업](/help/sites-authoring/task-content.md)에서 자세히 다룹니다.
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -184,12 +184,12 @@ AEM은 다음과 같은 세 가지 서로 다른 템플릿을 제공합니다.
 
 * 간단한 프로젝트 - 다른 카테고리에 맞지 않는 모든 프로젝트에 대한 참조 샘플입니다(모두 포함). 여기에는 세 개의 기본 역할(소유자, 편집자 및 옵저버)과 네 개의 워크플로우(프로젝트 승인, 론치 요청, 랜딩 페이지 요청 및 이메일 요청)가 포함됩니다.
 * 미디어 프로젝트 - 미디어 관련 활동을 위한 참조 샘플 프로젝트입니다. 여기에는 몇 가지의 미디어 관련 프로젝트 역할(사진사, 편집자, 카피라이터, 디자이너, 소유자 및 옵저버)이 포함되며, 또한 미디어 컨텐츠와 관련된 두 가지 워크플로우인 사본 요청(텍스트 요청 및 검토용) 및 제품 사진 촬영(제품 관련 사진 관리용)이 포함되어 있습니다.
-* [제품 사진 촬영 프로젝트](/help/sites-authoring/managing-product-information.md) - eCommerce 관련 제품 사진을 관리하기 위한 참조 샘플입니다. 여기에는 사진 작가, 편집자, 사진 수정자, 소유자, 크리에이티브 디렉터, 소셜 미디어 마케터, 마케팅 관리자, 검토자 및 옵저버 역할이 포함됩니다.
+* [제품 사진 촬영 프로젝트](/help/sites-authoring/managing-product-information.md)  - eCommerce 관련 제품 사진을 관리하기 위한 참조 샘플입니다. 여기에는 사진 작가, 편집자, 사진 수정자, 소유자, 크리에이티브 디렉터, 소셜 미디어 마케터, 마케팅 관리자, 검토자 및 옵저버 역할이 포함됩니다.
 * [번역 프로젝트](/help/sites-administering/translation.md) - 번역 관련 활동을 관리하기 위한 참조 샘플입니다. 여기에는 세 개의 기본 역할(소유자, 편집자 및 옵저버)이 포함됩니다. 또한 워크플로우 사용자 인터페이스에서 액세스하는 두 개의 워크플로우도 포함됩니다.
 
 선택하는 템플릿에 따라, 특히 사용자 역할 및 워크플로우와 관련하여 사용할 수 있는 선택 사항들이 다릅니다.
 
-## 프로젝트의 사용자 역할 {#user-roles-in-a-project}
+## 프로젝트의 사용자 역할  {#user-roles-in-a-project}
 
 다양한 사용자 역할이 프로젝트 템플릿에서 설정되며 다음의 두 가지 기본 이유로 사용됩니다.
 
