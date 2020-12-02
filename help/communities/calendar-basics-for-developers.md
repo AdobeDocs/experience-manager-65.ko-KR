@@ -49,7 +49,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>달력 <a href="calendar.md">사용 참조</a></td>
+   <td><a href="calendar.md">달력 사용</a> 참조</td>
   </tr>
  </tbody>
 </table>
@@ -66,18 +66,18 @@ ht-degree: 2%
 
 ### 달력 기능 {#calendar-function}
 
-달력 기능을 포함하는 커뮤니티 사이트 구조에는 구성 [구성](functions.md#calendar-function) 요소가 `calendar` 포함됩니다. Calendar 함수는 [권한이 있는 구성원 사용자 그룹 식별을 지원합니다](users.md#privileged-members-group).
+[Calendar 함수](functions.md#calendar-function)을 포함하는 커뮤니티 사이트 구조에는 구성된 `calendar` 구성 요소가 있습니다. Calendar 함수는 [권한이 있는 구성원 사용자 그룹](users.md#privileged-members-group)을 식별하는 것을 지원합니다.
 
-### 달력 게시물(UGC) 액세스 {#accessing-calendar-posts-ugc}
+### 달력 게시물(UGC) {#accessing-calendar-posts-ugc} 액세스
 
-AEM 6.1 Communities의 경우, UGC용 [공용 스토어](working-with-srp.md) 사용에는 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 상관없이 UGC에 대한 프로그래머틱 액세스가 포함됩니다.
+AEM 6.1 커뮤니티의 경우, UGC용 [일반 스토어](working-with-srp.md)를 사용하면 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 상관없이 프로그래머틱 방식으로 UGC에 액세스할 수 있습니다.
 
-**저장소의 UGC의 위치와 형식은 경고**&#x200B;없이 변경될 수 있습니다.
+**저장소의 UGC의 위치와 형식은 경고** 없이 변경될 수 있습니다.
 
 다음을 참조하십시오.
 
-* [스토리지 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
-* [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 방법 및 예제
-* [SRP를 사용하여 UGC](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
-* [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑
+* [스토리지 리소스 공급자 개요](srp.md)  - 소개 및 저장소 사용 개요
+* [SRP 및 UGC Essentials](srp-and-ugc.md)  - SRP 유틸리티 방법 및 예제
+* [SRP](accessing-ugc-with-srp.md)  코딩 가이드라인을 사용하여 UGC 액세스
+* [SocialUtils 리팩토링](socialutils.md)  - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑
 
