@@ -18,15 +18,15 @@ ht-degree: 2%
 ---
 
 
-# SRP용 솔루션 구성 {#solr-configuration-for-srp}
+# SRP {#solr-configuration-for-srp}에 대한 솔루션 구성
 
 ## AEM 플랫폼용 솔루션 {#solr-for-aem-platform}
 
-Apache [Solr](https://lucene.apache.org/solr/) 설치는 다른 컬렉션을 사용하여 [노드 스토어](../../help/sites-deploying/data-store-config.md) (Oak)와 [공용 스토어](working-with-srp.md) (SRP) 간에 공유할 수 있습니다.
+[Apache Solr](https://lucene.apache.org/solr/) 설치는 다른 컬렉션을 사용하여 [노드 스토어](../../help/sites-deploying/data-store-config.md)(Oak)와 [일반 스토어](working-with-srp.md)(SRP) 사이에 공유할 수 있습니다.
 
 Oak 및 SRP 컬렉션이 모두 집중적으로 사용되는 경우 성능상의 이유로 두 번째 솔러를 설치할 수 있습니다.
 
-프로덕션 환경의 경우 [SolrCloud 모드는](#solrcloud-mode) 독립 실행형 모드를 통한 향상된 성능(단일 로컬 솔루션 설정)을 제공합니다.
+제작 환경의 경우, [SolrCloud 모드](#solrcloud-mode)는 단일 로컬 솔루션 설정(독립 실행형 모드)에 비해 성능이 개선되었습니다.
 
 ### 요구 사항 {#requirements}
 
@@ -48,7 +48,7 @@ Apache Solr 다운로드 및 설치:
 
 ## SolrCloud 모드 {#solrcloud-mode}
 
-[프로덕션 환경에서 SolrCloud](https://cwiki.apache.org/confluence/display/solr/SolrCloud) 모드를 사용하는 것이 좋습니다. SolrCloud 모드에서 실행 중인 경우 MLS(Multilingual Search)를 설치하기 전에 SolrCloud를 설치하고 구성해야 합니다.
+[프로덕션 ](https://cwiki.apache.org/confluence/display/solr/SolrCloud) 환경에서는 SolrCloud 모드를 사용하는 것이 좋습니다. SolrCloud 모드에서 실행 중인 경우 MLS(Multilingual Search)를 설치하기 전에 SolrCloud를 설치하고 구성해야 합니다.
 
 SolrCloud 지침에 따라 설치하는 것이 좋습니다.
 
@@ -67,37 +67,42 @@ JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CM
 
 SolrCloud 모드에서 실행되는 경우 MLS 설치 전에 다음 SolrCloud 설정 명령에 대한 사용 및 지식이 필요합니다.
 
-#### 1. ZooKeeper에 구성 업로드 {#upload-a-configuration-to-zookeeper}
+#### 1. 구성을 ZooKeeper {#upload-a-configuration-to-zookeeper}에 업로드
 
-참조:[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
+참조:
+[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
 
-사용:sh/scripts/cloud-scripts/zkcli.sh \
+사용:
+sh/scripts/cloud-scripts/zkcli.sh \
 -cmd uconfig \
 -zkhost *server:port* \
 -confname *myconfig-name *\
--solrhome *solr-home-path* \
+-solhome *solr-home-path* \
 -confdir *config-dir*
 
-#### 2. 컬렉션 만들기 {#create-a-collection}
+#### 2. 컬렉션 {#create-a-collection} 만들기
 
-참조:[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+참조:
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 사용량:
 ./bin/solr create \
 -c *mycollection-name*\
 -d *config-dir* \
 -n *myconfig-name* \
--p *포트*\
--s *수량* \
+-p *port*\
+-s *number-of-shards* \
 -rf *복제본 수*
 
-#### 3. 컬렉션을 구성 세트에 연결 {#link-a-collection-to-a-configuration-set}
+#### 3. 컬렉션을 구성 세트 {#link-a-collection-to-a-configuration-set}에 연결
 
 컬렉션을 ZooKeeper에 이미 업로드한 구성에 연결합니다.
 
-참조:[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
+참조:
+[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
 
-사용:sh/scripts/cloud-scripts/zkcli.sh \
+사용:
+sh/scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
 -zkhost *server:port* \
 -collection *mycollection-name* \
@@ -137,13 +142,13 @@ AEM 커뮤니티용 MLS는 표준 MLS 또는 고급 MLS로 사용할 수 있습�
 | 핀란드어 | 라트비아어 | 태국어 |
 | 프랑스어 | 리투아니아어 | 터키어 |
 
-#### AEM 6.1 솔루션 검색, 표준 MLS 및 고급 MLS 비교 {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### AEM 6.1 솔루션 검색, 표준 MLS 및 고급 MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls} 비교
 
 **참고**:AEM 6.1은 AEM 6.1 Communities FP3 및 이전 버전을 의미합니다.
 
 ![compare-solr-mls](assets/compare-solr-mls.png)
 
-### 표준 MLS 설치 {#installing-standard-mls}
+### 표준 MLS {#installing-standard-mls} 설치
 
 SRP 컬렉션(MSRP 또는 DSRP)의 경우 표준 MLS(Multilingual Search)를 지원하려면 Solr의 구성 파일 두 개를 수정해야 합니다.
 
@@ -158,7 +163,7 @@ Solr 5.x용 표준 MLS 파일(schema.xml, solrconfig.xml)
 
 **참고**:Solr 파일은 msrp/ 폴더에 저장되지만 DSRP용이기도 합니다(변경할 필요 없음).
 
-**다운로드 지침**:또는 `solrX` 으로 `solr4` 를 적절하게 `solr5` 교체합니다.
+**다운로드 지침**: `solrX` 또는  `solr4` 적절한  `solr5` 것으로 대체합니다.
 
 1. CRXDE|Lite를 사용하여 다음을 찾습니다.
 
@@ -167,8 +172,8 @@ Solr 5.x용 표준 MLS 파일(schema.xml, solrconfig.xml)
 
 1. Solr가 배포된 로컬 서버에 다운로드합니다.
 
-   * 노드의 `jcr:content` 속성을 `jcr:data` 찾습니다.
-   * 다운로드를 `view` 시작하려면 선택합니다.
+   * `jcr:content` 노드의 `jcr:data` 속성을 찾습니다.
+   * `view`을 선택하여 다운로드를 시작합니다.
    * 파일이 적절한 이름 및 인코딩(UTF8)으로 저장되었는지 확인합니다.
 
 1. 독립 실행형 또는 SolrCloud 모드에 대한 설치 지침을 따릅니다.
@@ -178,20 +183,20 @@ Solr 5.x용 표준 MLS 파일(schema.xml, solrconfig.xml)
 1. SolrCloud 모드에서 Solr를 설치하고 구성합니다.
 1. 새 구성 준비:
 
-   1. 다음과 같은 new-config-dir*을 만듭니다. `solr-install-dir*/myconfig/`
+   1. `solr-install-dir*/myconfig/` 같은 new-config-dir*을 만듭니다.
 
-   1. 기존 Solr 구성 디렉토리의 내용을 *new-config-dir에 복사합니다.*
+   1. 기존 Solr 구성 디렉터리의 내용을 *new-config-dir*&#x200B;에 복사합니다.
 
-      * Solr4:copy `solr-install-dir/example/solr/collection1/conf/`
-      * Solr5:copy `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
-   1. 다운로드한 **schema.xml** 및 **solrconfig.xml** 을 *new-config-dir* 에 복사하여 기존 파일을 덮어씁니다.
+      * Solr4:`solr-install-dir/example/solr/collection1/conf/` 복사
+      * Solr5:`solr-install-dir/server/solr/configsets/data_driven_schema_configs/` 복사
+   1. 다운로드한 **schema.xml** 및 **solrconfig.xml**&#x200B;을 *new-config-dir*&#x200B;에 복사하여 기존 파일을 덮어씁니다.
 
 
-1. [새 구성을 ZooKeeper에](#upload-a-configuration-to-zookeeper) 업로드합니다.
-1. [공유 수, 복제본 수, 구성 이름 등 필요한 매개 변수를 지정하는 컬렉션을](#create-a-collection) 만듭니다.
-1. 컬렉션을 만드는 동안 구성 이름이 *제공되지 않은 경우 이 새로 만든 컬렉션을 ZooKeeper에 업로드된 구성과 [연결합니다](#link-a-collection-to-a-configuration-set) .
+1. [새 ](#upload-a-configuration-to-zookeeper) 구성을 ZooKeeper에 업로드합니다.
+1. [공유 수, 복제본 수, 구성 이름 등 필요한 매개 변수를 지정하는 ](#create-a-collection) 컬렉션을 생성합니다.
+1. 컬렉션을 만드는 동안 구성 이름이 *제공되지 않은 경우 [이 새로 만든 컬렉션](#link-a-collection-to-a-configuration-set)과 ZooKeeper에 업로드된 구성을 연결합니다.
 
-1. MSRP의 경우 새 [설치가 아닌 경우](msrp.md#msrp-reindex-tool)MSRP 다시 색인 도구를 실행하십시오.
+1. MSRP의 경우 새 설치가 아닌 경우 [MSRP 다시 색인 도구](msrp.md#msrp-reindex-tool)를 실행합니다.
 
 #### 독립형 모드 - 표준 MLS {#standalone-mode-standard-mls}
 
@@ -201,21 +206,21 @@ Solr 5.x용 표준 MLS 파일(schema.xml, solrconfig.xml)
    * `./bin/solr start`
    * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
 
-1. 다음과 같은 Solr 구성 **디렉토리에 있는** schema.xml 및 solrconfig.xml **** 백업
+1. 다음과 같이 Solr 구성 디렉토리에 있는 **schema.xml** 및 **solrconfig.xml**&#x200B;을 백업합니다.
 
-   * Solr4: `solr-install-dir/example/solr/collection1/conf/`
-   * Solr5용으로 제작: `solr-install-dir/server/solr/collection1/conf/`
+   * Solr4:`solr-install-dir/example/solr/collection1/conf/`
+   * Solr5용으로 제작:`solr-install-dir/server/solr/collection1/conf/`
 
-1. 다운로드한 **schema.xml** 및 **solrconfig.xml** 을 동일한 디렉토리로 복사합니다.
+1. 다운로드한 **schema.xml** 및 **solrconfig.xml**&#x200B;을 동일한 디렉토리로 복사합니다.
 
 1. 솔루션을 다시 시작합니다.
-1. MSRP의 경우 새 [설치가 아닌 경우](#msrpreindextool)MSRP 다시 색인 도구를 실행하십시오.
+1. MSRP의 경우 새 설치가 아닌 경우 [MSRP 다시 색인 도구](#msrpreindextool)를 실행합니다.
 
-### 고급 MLS 설치 {#installing-advanced-mls}
+### 고급 MLS {#installing-advanced-mls} 설치
 
 SRP 컬렉션(MSRP 또는 DSRP)에서 고급 MLS를 지원하려면 사용자 정의 스키마 및 솔루션 구성 외에 새로운 솔루션 플러그인이 필요합니다. 모든 필수 항목은 다운로드 가능한 zip 파일로 패키지됩니다. 또한 Solaris가 독립 실행형 모드로 배포될 때 사용할 수 있도록 설치 스크립트가 포함됩니다.
 
-고급 MLS 패키지를 얻으려면 설명서의 배포 섹션에서 [AEM](deploy-communities.md#aem-advanced-mls) Advanced MLS를 참조하십시오.
+고급 MLS 패키지를 얻으려면 설명서의 배포 섹션에서 [AEM 고급 MLS](deploy-communities.md#aem-advanced-mls)을 참조하십시오.
 
 SolrCloud 또는 독립형 모드 설치를 시작하려면 다음을 수행하십시오.
 
@@ -237,29 +242,29 @@ SolrCloud 또는 독립형 모드 설치를 시작하려면 다음을 수행하�
 
 1. 새 구성 준비:
 
-   1. new-config- *dir 만들기*
+   1. *new-config-dir* 만들기
 
       * 예: `solr-install-dir/myconfig/`
-      * 하위 폴더 `stopwords/` 및 `lang/`
-   1. 기존 Solr config dir의 내용을 *new-config-dir에 복사합니다.*
+      * 하위 폴더 `stopwords/` 및 `lang/` 만들기
+   1. 기존 Solr config dir의 내용을 *new-config-dir*&#x200B;에 복사합니다.
 
-      * Solr4:복사 `solr-install-dir/example/solr/collection1/conf/`
-      * Solr5:복사 `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
-   1. 압축을 푼 **schema.xml** 및 **solrconfig.xml** 을 *new-config-dir* 에 복사하여 기존 파일을 덮어씁니다.
-   1. Solr5:복사 `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` 위치 `new-config-dir/lang/`
-   1. 압축을 푼 **stopwords/** 폴더를 *new-config-dir* 에 복사합니다. `new-config-dir/stopwords/*.txt`
+      * Solr4:`solr-install-dir/example/solr/collection1/conf/` 복사
+      * Solr5:`solr-install-dir/server/solr/configsets/data_driven_schema_configs/` 복사
+   1. 압축을 푼 **schema.xml** 및 **solrconfig.xml**&#x200B;을 *new-config-dir*&#x200B;에 복사하여 기존 파일을 덮어씁니다.
+   1. Solr5:`solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt`을(를) `new-config-dir/lang/`에 복사
+   1. 압축을 푼 **stopwords/** 폴더를 *new-config-dir*&#x200B;에 복사하여 `new-config-dir/stopwords/*.txt`
 
 
 
-1. [새 구성](#upload-a-configuration-to-zookeeper) 업로드를 동물원은
-1. 새 **프로필/** 폴더 복사..
+1. [새 ](#upload-a-configuration-to-zookeeper) 구성을 ZooKeeper에 업로드
+1. 새 **profiles/** 폴더를 복사합니다..
 
    * Solr4:각 노드의 리소스/폴더에 복사
    * Solr5:각 Solr 설치의 server/resources/ 폴더에 복사합니다. 모든 노드가 동일한 Solr 설치 디렉토리에 있는 경우 이 단계는 한 번만 수행됩니다.
 
 1. SolrCloud에 있는 각 노드의 solr-home 디렉토리(solr.xml 포함)에 **lib/** 폴더를 만듭니다. 다음 위치의 jar를 각 노드의 새로운 lib/ 폴더로 복사합니다.
 
-   * **고급 MLS 패키지에서 추출된 extra-libs/**
+   * **고급 MLS 패키지에서** 추출된 extra libs/
    * *solr-install-dir/contribute/extraction/lib/*.jar
    * *solr-install-dir/dist/solr-cell*.jar
    * *solr-install-dir/contribute/clustering/lib/*.jar
@@ -271,10 +276,10 @@ SolrCloud 또는 독립형 모드 설치를 시작하려면 다음을 수행하�
    * *solr-install-dir/contribute/analysis-extras/lib/*.jar
    * *solr-install-dir/contribute/analysis-extras/lucene-libs/*.jar
 
-1. [공유 수, 복제본 수, 구성 이름 등 필요한 매개 변수를 지정하는 컬렉션을](#create-a-collection) 만듭니다.
-1. 컬렉션을 만드는 동안 구성 이름을 *제공하지* 않은 경우 새로 만든 이 컬렉션을 ZooKeeper에 업로드된 구성과 [연결합니다](#link-a-collection-to-a-configuration-set) .
+1. [공유 수, 복제본 수, 구성 이름 등 필요한 매개 변수를 지정하는 ](#create-a-collection) 컬렉션을 생성합니다.
+1. 컬렉션을 만드는 동안 구성 이름이 *제공되지 않으면 [이(가) 새로 만든 컬렉션](#link-a-collection-to-a-configuration-set)을 ZooKeeper에 업로드된 구성과 연결합니다.*
 
-1. MSRP의 경우 새 [설치가 아닌 경우](#msrpreindextool)MSRP 다시 색인 도구를 실행하십시오.
+1. MSRP의 경우 새 설치가 아닌 경우 [MSRP 다시 색인 도구](#msrpreindextool)를 실행합니다.
 
 #### 독립형 모드 - 고급 MLS {#standalone-mode-advanced-mls}
 
@@ -288,7 +293,8 @@ SolrCloud 또는 독립형 모드 설치를 시작하려면 다음을 수행하�
    * `./bin/solr start`
    * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
 
-* 설치 스크립트를 실행합니다.설치 [-v 4|5][-d] solrhome []-c 컬렉션 경로:
+* 설치 스크립트를 실행합니다.[-v 4|5] [-d solrhome] [-c collectionpath] 설치
+where:
 
    * -d solhome
 
@@ -320,10 +326,10 @@ SolrCloud 또는 독립형 모드 설치를 시작하려면 다음을 수행하�
 
 ### solrconfig.xml 정보 {#about-solrconfig-xml}
 
-solrconfig.xml **** 파일은 자동 커밋 간격 및 검색 가시성을 제어하며 테스트 및 조정이 필요합니다.
+**solrconfig.xml** 파일은 자동 커밋 간격 및 검색 가시성을 제어하며 테스트 및 조정이 필요합니다.
 
 `<autoCommit>`:기본적으로 안정적인 저장소에 대한 하드 커밋인 자동 커밋 간격은 15초로 설정됩니다. 검색 가시성은 기본적으로 사전 커밋 색인을 사용합니다.
 
-커밋으로 인한 변경 사항을 반영하도록 업데이트된 색인을 사용하도록 검색을 변경하려면 포함된 내용을 true `openSearcher` 로 변경합니다.
+커밋으로 인한 변경 사항을 반영하도록 업데이트된 색인을 사용하도록 검색을 변경하려면 포함된 `openSearcher`을 true로 변경합니다.
 
-`autoSoftCommit`:&#39;soft&#39; 커밋을 사용하면 변경 내용이 표시되고(색인이 업데이트됨) 변경 사항이 안정된 저장소(하드 커밋)에 동기화되지는 않습니다. 그 결과 성능이 개선되었습니다. 기본적으로 포함 항목 `autoSoftCommit` 이 -1로 설정되어 있으면 비활성화되어 `maxTime` 있습니다.
+`autoSoftCommit`:&#39;soft&#39; 커밋을 사용하면 변경 내용이 표시되고(색인이 업데이트됨) 변경 사항이 안정된 저장소(하드 커밋)에 동기화되지는 않습니다. 그 결과 성능이 개선되었습니다. 기본적으로 `autoSoftCommit`은(는) 포함된 `maxTime`이(가) -1로 설정된 상태에서 비활성화됩니다.
