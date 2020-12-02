@@ -10,45 +10,48 @@ topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 5%
 
 ---
 
 
-# 통신 관리:문제 해결 {#correspondence-management-troubleshooting}
+# 통신 관리:{#correspondence-management-troubleshooting} 문제 해결
 
-## 편지 저장 시 오류 {#errors-when-saving-a-letter}
+## 문자 {#errors-when-saving-a-letter} 저장 시 오류
 
 ### 문제 {#issue}
 
-문자를 저장할 때 표시되는 오류 중 하나:
+편지를 저장할 때 표시되는 오류 중 하나:
 
 * 텍스트 모듈에 데이터 바인딩이 없습니다.
 * 다음에 필요한 속성 정보를 제공하십시오
 
 ### 이유 {#reason}
 
-이러한 오류는 다음 중 하나로 인해 발생할 수 있습니다.
+다음 중 하나로 인해 이러한 오류가 발생할 수 있습니다.
 
-* 데이터 사전은 해당 서신에 바인딩되지만 서버에 없습니다.
-* 데이터 사전은 문자에 바인딩되지만 이름에 밑줄(_)이 있습니다.
+* 데이터 사전은 편자에 바인딩되지만 서버에 없습니다.
+* 데이터 사전은 이 글자에 바인딩되지만 이름에 밑줄(_)이 있습니다.
 
 ### 해결 방법 {#workaround}
 
-문자에서 사용 중인 데이터 사전이 서버에 있고 이름에 밑줄(_)이 없는지 확인합니다.
+문자에서 사용 중인 데이터 사전이 서버에 있으며 이름에 밑줄(_)이 없는지 확인합니다.
 
-## 편지 미리 보기 오류 {#error-when-previewing-a-letter}
+## 문자 {#error-when-previewing-a-letter}을(를) 미리 볼 때 오류가 발생했습니다.
 
 ### 문제 {#issue-1}
 
-문자를 미리 보는 동안 &quot;Error in loading letter:XML 입력에서 에셋을 가져올 수 없음&quot;은 문자의 이전에 게시 취소된 텍스트 에셋이 게시된 경우에도 표시됩니다.
+문자를 미리 보는 동안 &quot;Error in loading letter:XML 입력에서 에셋을 가져올 수 없음&quot;은 이전에 게시되지 않은 텍스트 에셋이 게시된 경우에도 나타납니다.
 
 ### 해결 방법 {#workaround-1}
 
-다음 단계를 사용하여 게시 인스턴스의 편지 캐시를 재설정한 다음 편지 보기를 다시 시도하십시오.
+다음 단계를 사용하여 게시 인스턴스의 문자 캐시를 재설정한 다음 편지 보기를 다시 시도하십시오.
 
-1. 관리자로 **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** 이동하여 로그인합니다.
-1. 통신 **관리 구성을 선택합니다**.
-1. 통신 **관리 구성에서**&#x200B;편지 **캐시 사용을 비활성화한**&#x200B;다음 저장을 클릭합니다&#x200B;**.**
-1. 편지 **캐시 활성화를** 활성화한 다음 저장을 **클릭합니다**.
+1. **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`**&#x200B;으로 이동하고 관리자로 로그인합니다.
+1. **통신 관리 구성**&#x200B;을 선택합니다.
+1. **통신 관리 구성**&#x200B;에서 **편지 캐시 사용**&#x200B;을 비활성화한 다음 **저장을 클릭합니다.**
+1. **문자 캐시 활성화**&#x200B;를 활성화한 다음 **저장**&#x200B;을 클릭합니다.
 1. 편지 보기를 다시 시도하십시오.
 
