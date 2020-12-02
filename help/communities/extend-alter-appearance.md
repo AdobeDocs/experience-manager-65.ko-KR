@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# 모양 변경(HBS) {#alter-the-appearance-hbs}
+# 모양(HBS) {#alter-the-appearance-hbs} 변경
 
 이제 응용 프로그램 디렉터리(/apps)의 사용자 지정 주석 시스템에 대한 구성 요소가 제대로 사용되고, resourceSuperType이 기본 주석 시스템 및 등록된 사용자 지정 모델/보기를 참조하므로 구현을 수정할 수 있습니다.
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 ## HBS 스크립트 수정 {#modify-the-hbs-scripts}
 
-CRXDE Lite [사용](/help/sites-developing/developing-with-crxde-lite.md):
+[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 사용:
 
-* Open [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs) 열기
 
    * 댓글 게시물에 대한 아바타가 포함된 태그에 주석 추가(~ 줄 21):
 
@@ -43,7 +43,7 @@ CRXDE Lite [사용](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* Open [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs) 열기
 
    * 다음 주석 항목에 대한 아바타가 포함된 태그에 주석 추가(~ 줄 44):
 
@@ -53,9 +53,9 @@ CRXDE Lite [사용](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* 모두 **저장 선택**
+* **모두 저장** 선택
 
-### 사용자 정의 앱 복제 {#replicate-custom-app}
+### 사용자 지정 앱 {#replicate-custom-app} 복제
 
 애플리케이션을 수정한 후에는 사용자 지정 구성 요소를 다시 복제해야 합니다.
 
@@ -63,15 +63,15 @@ CRXDE Lite [사용](/help/sites-developing/developing-with-crxde-lite.md):
 
 * 주 메뉴에서
 
-   * 도구 **[!UICONTROL > 작업]** **** > **[!UICONTROL 복제를]**&#x200B;선택합니다.
-   * 트리 **[!UICONTROL 활성화를 선택합니다]**.
-   * 설정 `Start Path` 을 `/apps/custom`참조하십시오.
-   * [ **[!UICONTROL 수정된 항목만]을 선택 취소합니다]**.
-   * 활성화 **[!UICONTROL 단추를]** 선택합니다.
+   * **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**&#x200B;를 선택합니다.
+   * **[!UICONTROL 트리 활성화]**&#x200B;를 선택합니다.
+   * `Start Path`을(를) `/apps/custom`(으)로 설정합니다.
+   * **[!UICONTROL 수정된 항목만]**&#x200B;을 선택 취소합니다.
+   * **[!UICONTROL 활성화]** 단추를 선택합니다.
 
-### 게시된 샘플 페이지에서 수정된 주석 보기 {#view-modified-comment-on-published-sample-page}
+### 게시된 샘플 페이지에 대한 수정된 댓글 보기 {#view-modified-comment-on-published-sample-page}
 
-[동일한 사용자로 로그인되어 있는 게시 인스턴스에서 경험을](/help/communities/extend-sample-page.md#publish-sample-page) 계속 진행하면 이제 아바타를 제거하기 위한 수정 사항을 보기 위해 게시 환경에서 페이지를 새로 고칠 수 있습니다.
+[동일한 사용자로 로그인한 게시 인스턴스에서 ](/help/communities/extend-sample-page.md#publish-sample-page) 경험을 계속 진행하면 이제 컨텐츠 환경에서 페이지를 새로 고쳐 아바타를 제거하는 수정 사항을 볼 수 있습니다.
 
 ![view-modified-content](assets/view-modified-content.png)
 
