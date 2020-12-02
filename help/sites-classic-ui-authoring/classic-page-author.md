@@ -1,8 +1,8 @@
 ---
 title: 페이지 작성
 seo-title: 페이지 작성
-description: AEM을 사용하여 작성하는 방법에 대한 두 가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 작성 페이지에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(고급)
-seo-description: AEM을 사용하여 작성하는 방법에 대한 두 가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 작성 페이지에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(고급)
+description: AEM을 사용하여 작성하는 방법에는 두 가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 페이지 작성에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(고급)
+seo-description: AEM을 사용하여 작성하는 방법에는 두 가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 페이지 작성에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(고급)
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 78%
 
 ---
 
 
 # 페이지 작성{#authoring-pages}
 
-다음은 AEM을 사용하여 작성하는 방법에 대한 개요를 제공합니다.
+다음은 AEM을 사용한 작성에 대한 개요를 제공합니다.
 
 * [작성을 위한 첫 번째 단계](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - 새 작성자를 위한 소개
 
@@ -38,9 +41,10 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 * **즉석 편집**
 텍스트 및 이미지 구성 요소는 대화 상자를 열거나 명시적 저장 작업을 수행하지 않고도 웹 페이지에서 바로 편집할 수 있습니다.
 
-* **[사이드 킥](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**편집 가능한 페이지에 나타나는 부동 &quot;검사기&quot; 창. 여기서는 새 구성 요소를 페이지로 드래그하고 페이지별 작업을 실행할 수 있습니다.
+* **[사이드 킥](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)** 편집 가능한 페이지에 나타나는 부동 &quot;검사기&quot; 창. 여기서는 새 구성 요소를 페이지로 드래그하고 페이지별 작업을 실행할 수 있습니다.
 
-* **[컨텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**작성 가능한 각 페이지 왼쪽의 컨텐츠 파인더에서는 디지털 자산(다른 이미지, Flash 요소 및 문서 등), 다른 페이지 및 단락 등, 다양한 자산에 빠르게 액세스할 수 있습니다. 이러한 항목을 페이지로 드래그하여 자산을 배치하거나 다른 페이지에 대한 링크를 만드는 등의 작업을 할 수 있습니다.
+* **[컨텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)** 
+작성 가능한 각 페이지 왼쪽의 컨텐츠 파인더에서는 디지털 자산(다른 이미지, Flash 요소 및 문서 등), 다른 페이지 및 단락 등, 다양한 자산에 빠르게 액세스할 수 있습니다. 이러한 항목을 페이지로 드래그하여 자산을 배치하거나 다른 페이지에 대한 링크를 만드는 등의 작업을 할 수 있습니다.
 
 * **컨텍스트 메뉴** 
 화면상의 요소 대부분(예: 페이지의 단락)은 마우스 오른쪽 단추로 클릭하면 해당 작업 옵션이 있는 컨텍스트 메뉴가 표시됩니다.
