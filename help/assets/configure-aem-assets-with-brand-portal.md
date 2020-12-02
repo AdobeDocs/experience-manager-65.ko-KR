@@ -119,17 +119,17 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. **도구** ![도구](assets/do-not-localize/tools.png) 패널에서 **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다.
 
-1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. 기본적으로 **인증서** 탭이 열립니다.
+1. Adobe IMS 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL Adobe IMS. 기술 계정 구성]** 페이지로 리디렉션됩니다. 기본적으로 **인증서** 탭이 열립니다.
 
-1. **[!UICONTROL 클라우드 솔루션 드롭다운 목록에서 Adobe 브랜드 포털]** 을 **** 선택합니다.
+1. **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Adobe 브랜드 포털]**&#x200B;을 선택합니다.
 
-1. 새 인증서 **[!UICONTROL 만들기]** 확인란을 선택하고 공개 키에 **대한 별칭을** 지정합니다. 별칭은 공개 키 이름 역할을 합니다.
+1. **[!UICONTROL 새 인증서 만들기]** 확인란을 선택하고 공개 키에 대해 **별칭**&#x200B;을 지정합니다. 별칭은 공개 키 이름 역할을 합니다.
 
-1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. Then, click **[!UICONTROL OK]** to generate the public key.
+1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 그런 다음 **[!UICONTROL OK]**&#x200B;을 클릭하여 공개 키를 생성합니다.
 
    ![인증서 만들기](assets/ims-config2.png)
 
-1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (.crt) file on your machine.
+1. **[!UICONTROL 공개 키 다운로드]** 아이콘을 클릭하고 컴퓨터에 공개 키(.crt) 파일을 저장합니다.
 
    공개 키는 나중에 브랜드 포털 테넌트에 대한 API를 구성하고 Adobe 개발자 콘솔에서 서비스 계정 자격 증명을 생성하는 데 사용됩니다.
 
@@ -137,7 +137,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   [ **계정** ] 탭에서 Adobe 개발자 콘솔에서 생성된 서비스 계정 자격 증명이 필요한 Adobe IMS 계정이 만들어집니다. 우선은 이 페이지를 열어 두십시오.
+   **계정** 탭에서 Adobe 개발자 콘솔에서 생성된 서비스 계정 자격 증명이 필요한 Adobe IMS 계정이 만들어집니다. 우선은 이 페이지를 열어 두십시오.
 
    새 탭을 열고 [Adobe 개발자 콘솔에 서비스 계정(JWT) 연결을 만들어](#createnewintegration) IMS 계정을 구성하기 위한 자격 증명과 JWT 페이로드를 가져옵니다.
 
@@ -158,21 +158,21 @@ Adobe 개발자 콘솔에서 프로젝트 및 API는 브랜드 포털 테넌트(
 
    **[!UICONTROL 프로젝트 편집]**&#x200B;을 클릭하여 **[!UICONTROL 프로젝트 제목]** 및 **[!UICONTROL 설명]**&#x200B;을 업데이트하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
+1. **[!UICONTROL 프로젝트 개요]** 탭에서 **[!UICONTROL API 추가]**&#x200B;를 클릭합니다.
 
-1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL AEM Brand Portal]** and click **[!UICONTROL Next]**.
+1. **[!UICONTROL API 창 추가]**&#x200B;에서 **[!UICONTROL AEM 브랜드 포털]**&#x200B;을 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
    AEM Brand Portal 서비스에 대한 액세스 권한이 있는지 확인합니다.
 
-1. In the **[!UICONTROL Configure API]** window, click **[!UICONTROL Upload your public key]**. Then, click **[!UICONTROL Select a File]** and upload the public key (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section.
+1. **[!UICONTROL API 구성]** 창에서 **[!UICONTROL 공개 키 업로드]**&#x200B;를 클릭합니다. 그런 다음 **[!UICONTROL 파일]**&#x200B;을 선택하고 [공개 인증서](#public-certificate) 받기 섹션에서 다운로드한 공개 키(.crt 파일)를 업로드합니다.
 
    **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
    ![공개 키 업로드](assets/service-account3.png)
 
-1. Verify the public key and click **[!UICONTROL Next]**.
+1. 공개 키를 확인하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. 기본 **[!UICONTROL 제품 프로필로 Assets 브랜드 포털]** 을 선택하고 구성된 API **[!UICONTROL 저장을 클릭합니다]**.
+1. **[!UICONTROL 자산 브랜드 포털]**&#x200B;을 기본 제품 프로필로 선택하고 **[!UICONTROL 구성된 API]**&#x200B;를 클릭합니다.
 
    <!-- 
    In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
@@ -180,7 +180,7 @@ Adobe 개발자 콘솔에서 프로젝트 및 API는 브랜드 포털 테넌트(
 
    ![제품 프로필 선택](assets/service-account4.png)
 
-1. API가 구성되면 API 개요 페이지로 리디렉션됩니다. From the left navigation under **[!UICONTROL Credentials]**, click on the **[!UICONTROL Service Account (JWT)]** option.
+1. API가 구성되면 API 개요 페이지로 리디렉션됩니다. **[!UICONTROL 자격 증명]** 아래의 왼쪽 탐색 메뉴에서 **[!UICONTROL 서비스 계정(JWT)]** 옵션을 클릭합니다.
 
    >[!NOTE]
    >
@@ -192,9 +192,9 @@ Adobe 개발자 콘솔에서 프로젝트 및 API는 브랜드 포털 테넌트(
 
    ![서비스 계정 자격 증명](assets/service-account5.png)
 
-1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information.
+1. **[!UICONTROL JWT]** 탭으로 이동하여 **[!UICONTROL JWT 페이로드]** 정보를 복사합니다.
 
-You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in AEM Assets.
+이제 클라이언트 ID(API 키), 클라이언트 암호 및 JWT 페이로드를 AEM Assets에서 [IMS 계정](#create-ims-account-configuration)을(를) 구성합니다.
 
 <!--
 ### Create Adobe I/O integration {#createnewintegration}
@@ -249,13 +249,13 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
 
 IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
-1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. You kept the page open while [obtaining the public certificate](#public-certificate).
+1. IMS 구성을 열고 **[!UICONTROL 계정]** 탭으로 이동합니다. 공용 인증서](#public-certificate)를 받는 동안 페이지를 열어 두었습니다.[
 
 1. IMS 계정에 대한 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
 
-   In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).
+   **[!UICONTROL 인증 서버]** 필드에서 URL을 지정합니다.[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).
 
-   Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
+   [서비스 계정(JWT) 연결](#createnewintegration)을 만드는 동안 복사한 **[!UICONTROL API 키]** 필드, **[!UICONTROL 클라이언트 암호]** 및 **[!UICONTROL 페이로드]**(JWT 페이로드)에 클라이언트 ID를 지정합니다.
 
    **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -263,7 +263,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
    ![IMS 계정 구성](assets/create-new-integration6.png)
 
-1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
+1. IMS 계정 구성을 선택하고 **[!UICONTROL 상태 확인]**&#x200B;을 클릭합니다.
 
    대화 상자에서 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 구성이 성공하면 *토큰이 성공적으로 검색되었습니다.*&#x200B;라는 메시지가 나타납니다.
 
@@ -289,7 +289,7 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
 
    [IMS 계정을 구성](#create-ims-account-configuration)하는 동안 만든 IMS 구성을 선택합니다.
 
-   In the **[!UICONTROL Service URL]** field, specify your Brand Portal tenant (organization) URL.
+   **[!UICONTROL 서비스 URL]** 필드에서 브랜드 포털 테넌트(조직) URL을 지정합니다.
 
    ![](assets/create-cloud-service.png)
 
@@ -321,11 +321,11 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
    >
    >복제 에이전트가 동시에 작동하여 작업 분포를 동일하게 공유하므로 게시 속도가 원래 속도보다 4배 더 빨라집니다. 클라우드 서비스가 구성된 후에는 여러 자산의 병렬 게시를 활성화하기 위해 기본적으로 활성화된 복제 에이전트를 활성화하는 데 추가 구성이 필요하지 않습니다.
 
-1. To verify the connection between AEM Assets and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
+1. AEM Assets과 브랜드 포털 간의 연결을 확인하려면 **[!UICONTROL 연결 테스트]** 아이콘을 클릭합니다.
 
    ![](assets/test-integration4.png)
 
-   테스트 패키지가 *성공적으로 배달된다는 메시지가 나타납니다*.
+   *테스트 패키지가*&#x200B;에 성공적으로 배달되었다는 메시지가 나타납니다.
 
    ![](assets/test-integration5.png)
 
@@ -336,18 +336,18 @@ IMS 계정을 구성하려면 다음 단계를 수행하십시오.
    >
    >자산(실행 중인 큐)의 복제가 실패할 수 있으므로 복제 에이전트를 비활성화하지 마십시오.
    >
-   >시간 초과 오류를 방지하도록 네 개의 복제 에이전트가 모두 구성되어 있는지 확인합니다. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >시간 초과 오류를 방지하도록 네 개의 복제 에이전트가 모두 구성되어 있는지 확인합니다. 브랜드 포털](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout)에 동시 게시되는 문제 해결을 참조하십시오.[
 
 이제 다음을 수행할 수 있습니다.
 
 * [AEM Assets에서 Brand Portal에 자산 게시](../assets/brand-portal-publish-assets.md)
-* [브랜드 포털에서 AEM Assets으로 자산 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - 브랜드 포털에서 자산 소싱
+* [브랜드 포털에서 AEM Assets](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - 브랜드 포털의 자산 소싱으로 자산 게시
 * [AEM Assets의 폴더를 Brand Portal에 게시](../assets/brand-portal-publish-folder.md)
 * [AEM Assets의 컬렉션을 Brand Portal에 게시](../assets/brand-portal-publish-collection.md)
-* [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [태그를 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [태그를 Brand Portal에 게시](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-See [Brand Portal documentation](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html) for more information.
+자세한 내용은 [브랜드 포털 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/home.html)를 참조하십시오.
 
 
 ## 구성 업그레이드 {#upgrade-integration-65}
@@ -382,13 +382,13 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/ko-KR/exper
 * 브랜드 포털 클라우드 서비스 삭제
 * MAC 사용자 삭제
 
-1. AEM Assets 작성자 인스턴스에 로그인하고 CRX Lite를 관리자로 엽니다. 기본 URL은 `http://localhost:4502/crx/de/index.jsp`.
+1. AEM Assets 작성자 인스턴스에 로그인하고 CRX Lite를 관리자로 엽니다. 기본 URL은  `http://localhost:4502/crx/de/index.jsp`.
 
 1. `/etc/replications/agents.author`로 이동하고 Brand Portal 임차인의 4개 복제 에이전트를 모두 삭제합니다.
 
    ![](assets/delete-replication-agent.png)
 
-1. Navigate to `/etc/cloudservices/mediaportal` and delete the Brand Portal cloud service configuration.
+1. `/etc/cloudservices/mediaportal`으로 이동하고 브랜드 포털 클라우드 서비스 구성을 삭제합니다.
 
    ![](assets/delete-cloud-service.png)
 
@@ -397,7 +397,7 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/ko-KR/exper
    ![](assets/delete-mac-user.png)
 
 
-이제 AEM 6.5 작성자 인스턴스의 Adobe 개발자 콘솔을 통해 구성을 [만들](#configure-new-integration-65) 수 있습니다.
+이제 AEM 6.5 작성자 인스턴스의 Adobe 개발자 콘솔을 통해 [구성](#configure-new-integration-65)을 만들 수 있습니다.
 
 
 
