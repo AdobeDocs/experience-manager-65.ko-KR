@@ -27,9 +27,9 @@ ht-degree: 0%
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
-## 사용자 데이터 및 데이터 저장소 {#user-data-and-data-stores}
+## 사용자 데이터 및 데이터는 {#user-data-and-data-stores} 저장
 
-사용자 관리는 사용자 데이터를 My Sql, Oracle, MS SQL Server 및 IBM DB2와 같은 데이터베이스에 저장합니다. 또한 AEM 작성자의 Forms 애플리케이션에서 한 번 이상 로그인한 사용자는 AEM 저장소에 `https://'[server]:[port]'lc`생성됩니다. 따라서 사용자 관리는 다음 데이터 저장소에 저장됩니다.
+사용자 관리는 사용자 데이터를 내 SQL, Oracle, MS SQL Server 및 IBM DB2와 같은 데이터베이스에 저장합니다. 또한 AEM 작성자 `https://'[server]:[port]'lc`에 있는 Forms 애플리케이션에서 최소 한 번 이상 로그인한 사용자는 AEM 저장소에 생성됩니다. 따라서 사용자 관리는 다음 데이터 저장소에 저장됩니다.
 
 * 데이터베이스
 * AEM 저장소
@@ -81,16 +81,16 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code> (Oracle 및 MS SQL 데이터베이스)</p> </td>
-   <td>주체에 해당하는 이전 및 새 속성 값을 저장합니다.<br /> </td>
+   <td>주체에 해당하는 이전 및 새 특성 값을 저장합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ### AEM 저장소 {#aem-repository}
 
-최소 한 번 이상 Forms 애플리케이션에 액세스한 사용자를 위한 사용자 관리 데이터도 AEM `https://'[server]:[port]'lc` 저장소에 저장됩니다.
+`https://'[server]:[port]'lc` 아래의 Forms 응용 프로그램에 적어도 한 번 액세스한 사용자의 사용자 관리 데이터도 AEM 저장소에 저장됩니다.
 
-## 사용자 데이터 액세스 및 삭제 {#access-and-delete-user-data}
+## 사용자 데이터 {#access-and-delete-user-data} 액세스 및 삭제
 
 사용자 관리 데이터베이스 및 AEM 저장소의 사용자에 대한 사용자 관리 데이터에 액세스하고 내보낼 수 있으며, 필요한 경우 영구적으로 삭제할 수 있습니다.
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 사용자 관리 데이터베이스에서 사용자 데이터를 내보내거나 삭제하려면 데이터베이스 클라이언트를 사용하여 데이터베이스에 연결하고 사용자의 일부 PII를 기반으로 사용자 ID를 찾아야 합니다. 예를 들어 로그인 ID를 사용하여 사용자의 주체 ID를 검색하려면 데이터베이스에서 다음 `select` 명령을 실행합니다.
 
-이 `select` 명령에서 `<user_login_id>` 을 검색할 주체 ID가 있는 사용자의 로그인 ID로 바꿉니다.
+`select` 명령에서 `<user_login_id>`을(를) 검색하려는 사용자 ID의 로그인 ID로 바꿉니다.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -108,22 +108,22 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 #### 사용자 데이터 내보내기 {#export-user-data}
 
-다음 데이터베이스 명령을 실행하여 데이터베이스 테이블에서 주체 ID에 대한 사용자 관리 데이터를 내보냅니다. 명령에서 `select` 데이터를 내보내려는 사용자의 주체 ID `<principal_id>` 로 대체합니다.
+다음 데이터베이스 명령을 실행하여 데이터베이스 테이블에서 주체 ID에 대한 사용자 관리 데이터를 내보냅니다. `select` 명령에서 `<principal_id>`을(를) 데이터를 내보낼 사용자의 주체 ID로 바꿉니다.
 
 >[!NOTE]
 >
->다음 명령은 My SQL 및 IBM DB2 데이터베이스의 데이터베이스 테이블 이름을 사용합니다. Oracle 및 MS SQL 데이터베이스에서 이러한 명령을 실행할 때 명령에서 다음 테이블 이름을 바꿉니다.
+>다음 명령은 My SQL 및 IBM DB2 데이터베이스의 데이터베이스 테이블 이름을 사용합니다. oracle 및 MS SQL 데이터베이스에서 이러한 명령을 실행할 때 명령에서 다음 테이블 이름을 바꿉니다.
 >
->* Replace `EdcPrincipalLocalAccountEntity` with `EdcPrincipalLocalAccount`
+>* `EdcPrincipalLocalAccountEntity`을(를) `EdcPrincipalLocalAccount`(으)로 바꾸기
    >
    >
-* Replace `EdcPrincipalEmailAliasEntity` with `EdcPrincipalEmailAliasEn`
+* `EdcPrincipalEmailAliasEntity`을(를) `EdcPrincipalEmailAliasEn`(으)로 바꾸기
    >
    >
-* Replace `EdcPrincipalMappingEntity` with `EdcPrincipalMappingEntit`
+* `EdcPrincipalMappingEntity`을(를) `EdcPrincipalMappingEntit`(으)로 바꾸기
    >
    >
-* Replace `EdcPrincipalGrpCtmntEntity` with `EdcPrincipalGrpCtmntEnti`
+* `EdcPrincipalGrpCtmntEntity`을(를) `EdcPrincipalGrpCtmntEnti`(으)로 바꾸기
 
 >
 
@@ -147,13 +147,13 @@ Select * from EdcPrincipalGrpCtmntEntity where refchildprincipalid in (Select id
 Select * from EdcPrincipalEntity where id='<principal_id>';
 ```
 
-#### 사용자 데이터 삭제 {#delete-user-data}
+#### 사용자 데이터 {#delete-user-data} 삭제
 
 데이터베이스 테이블에서 주체 ID에 대한 사용자 관리 데이터를 삭제하려면 다음을 수행합니다.
 
-1. 사용자 데이터 [삭제에 설명된 대로 해당되는 경우 AEM 저장소에서 사용자 데이터를 삭제합니다](/help/forms/using/user-management-handling-user-data.md#delete-aem).
+1. [사용자 데이터 삭제](/help/forms/using/user-management-handling-user-data.md#delete-aem)에 설명된 대로 해당되는 경우 AEM 저장소에서 사용자 데이터를 삭제합니다.
 1. AEM Forms 서버를 종료합니다.
-1. 다음 데이터베이스 명령을 실행하여 데이터베이스 테이블에서 주체 ID에 대한 사용자 관리 데이터를 삭제합니다. 명령에서 `Delete` 데이터를 삭제할 사용자의 주체 ID `<principal_id>` 로 대체합니다.
+1. 다음 데이터베이스 명령을 실행하여 데이터베이스 테이블에서 주체 ID에 대한 사용자 관리 데이터를 삭제합니다. `Delete` 명령에서 `<principal_id>`을(를) 삭제할 데이터의 사용자 주체 ID로 바꿉니다.
 
    ```sql
    Delete from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (select id from EdcPrincipalEntity where id='<principal_id>'));
@@ -179,16 +179,16 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 Forms JEE 사용자는 적어도 한 번은 AEM Forms 작성자 인스턴스에 액세스한 경우 AEM 보관소에 데이터를 보관합니다. AEM 저장소에서 사용자 데이터에 액세스하고 삭제할 수 있습니다.
 
-#### 사용자 데이터 액세스 {#access-user-data}
+#### 사용자 데이터 {#access-user-data} 액세스
 
-AEM 저장소에서 만든 사용자를 보려면 AEM 관리자 자격 증명 `https://'[server]:[port]'/lc/useradmin` 으로 로그인합니다. 및 URL `server` `port` 에 있는 항목은 AEM 작성자 인스턴스의 것입니다. 여기에서 사용자 이름을 가진 사용자를 검색할 수 있습니다. 사용자를 두 번 클릭하여 사용자의 속성, 권한 및 그룹과 같은 정보를 봅니다. 사용자의 `Path` 속성은 AEM 리포지토리에서 생성된 사용자 노드의 경로를 지정합니다.
+AEM 저장소에서 만든 사용자를 보려면 AEM 관리자 자격 증명을 사용하여 `https://'[server]:[port]'/lc/useradmin`에 로그인합니다. URL의 `server` 및 `port`은 AEM 작성자 인스턴스의 URL입니다. 여기에서 사용자 이름을 가진 사용자를 검색할 수 있습니다. 사용자를 두 번 클릭하여 사용자의 속성, 권한 및 그룹과 같은 정보를 봅니다. 사용자의 `Path` 속성은 AEM 리포지토리에서 생성된 사용자 노드의 경로를 지정합니다.
 
-#### 사용자 데이터 삭제 {#delete-aem}
+#### 사용자 데이터 {#delete-aem} 삭제
 
 사용자를 삭제하려면
 
-1. AEM 관리자 자격 증명 `https://'[server]:[port]'/lc/useradmin` 으로 이동합니다.
-1. 사용자를 검색하고 사용자 이름을 두 번 클릭하여 사용자 속성을 엽니다. 속성을 `Path` 복사합니다.
-1. AEM CRX DELite로 이동하여 사용자 경로를 `https://'[server]:[port]'/lc/crx/de/index.jsp` 탐색하거나 검색합니다.
-1. 경로를 삭제하고 [모두 **[!UICONTROL 저장]]** 을 클릭하여 AEM 저장소에서 사용자를 영구적으로 삭제합니다.
+1. AEM 관리자 자격 증명을 사용하여 `https://'[server]:[port]'/lc/useradmin`으로 이동합니다.
+1. 사용자를 검색하고 사용자 이름을 두 번 클릭하여 사용자 속성을 엽니다. `Path` 속성을 복사합니다.
+1. `https://'[server]:[port]'/lc/crx/de/index.jsp`의 AEM CRX DELite로 이동하여 사용자 경로를 탐색하거나 검색합니다.
+1. 경로를 삭제하고 **[!UICONTROL 모두 저장]**&#x200B;을 클릭하여 AEM 저장소에서 사용자를 영구적으로 삭제합니다.
 
