@@ -57,7 +57,7 @@ ContextHub와 Client Context에서 *세그먼트*&#x200B;라고 하는 대상�
 
 ContextHub을 사용하여 세그먼트를 만드는 방법에 대한 자세히 알려면 ](/help/sites-administering/segmentation.md)ContextHub을 사용한 세그멘테이션 구성[ 설명서를 참조하십시오.
 
-## 대상 콘솔을 사용하여 Adobe Target 대상 만들기 {#creating-an-adobe-target-audience-using-the-audience-console}
+## 대상 콘솔을 사용하여 Adobe Target 대상 만들기  {#creating-an-adobe-target-audience-using-the-audience-console}
 
 대상 콘솔을 사용하여 AEM에서 바로 Adobe Target 대상을 만들 수 있습니다.
 
@@ -86,7 +86,7 @@ Adobe Target 대상자를 만들려면 다음을 수행하십시오.
 1. 대상에 사용할 이름을 입력하고 **저장**&#x200B;을 탭하거나 클릭합니다.
 1. **저장**&#x200B;을 탭하거나 클릭합니다. 대상이 대상 목록에 표시됩니다.
 
-### 속성 및 해당 선택 사항 {#attributes-and-their-options}
+### 속성 및 해당 선택 사항  {#attributes-and-their-options}
 
 다음 각 속성에 대해 타깃팅 규칙을 만들 수 있습니다.
 
