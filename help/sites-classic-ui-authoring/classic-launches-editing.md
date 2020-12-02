@@ -12,6 +12,9 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 100%
 
 ---
 
@@ -47,6 +50,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
       * **제목**
       * **활성 날짜**: 론치 날짜와 같습니다.
       * **프로덕션 준비**
+
       이 필드들의 목적과 상호 작용에 대해 알려면 [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
 
    * **이미지** 탭에서 이미지 파일을 업로드할 수 있습니다.
