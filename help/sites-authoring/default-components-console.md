@@ -12,6 +12,9 @@ discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 100%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
 
 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색하고 각 구성 요소에 대한 주요 정보를 볼 수 있습니다.
 
-It can be accessed from **Tools ->** **General ->** **Components**. 콘솔에서 카드 및 목록 보기를 사용할 수 있습니다. 구성 요소에 대한 트리 구조가 없으므로 열 보기를 사용할 수 없습니다.
+**도구 ->** **일반 ->** **구성 요소**&#x200B;에서 액세스할 수 있습니다. 콘솔에서 카드 및 목록 보기를 사용할 수 있습니다. 구성 요소에 대한 트리 구조가 없으므로 열 보기를 사용할 수 없습니다.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
 >[!NOTE]
 >
->[구성 요소 콘솔]은 시스템의 모든 구성 요소를 표시합니다. The [Component Browser](/help/sites-authoring/author-environment-tools.md#components-browser) shows components that are available to authors and hides any component groups that begin with a period ( `.`).
+>[구성 요소 콘솔]은 시스템의 모든 구성 요소를 표시합니다. [구성 요소 브라우저](/help/sites-authoring/author-environment-tools.md#components-browser)는 작성자가 사용할 수 있는 구성 요소를 표시하며 마침표(`.`)로 시작하는 모든 구성 요소 그룹을 숨깁니다.
 
 ## 검색 {#searching}
 
@@ -53,7 +56,7 @@ It can be accessed from **Tools ->** **General ->** **Components**. 콘솔에서
       * [리소스 슈퍼 유형]을 클릭하면 해당 구성 요소로 이동합니다.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >`/apps`는 런타임 시 편집할 수 없으므로 구성 요소 콘솔은 읽기 전용입니다.
 
 * **정책**
 
