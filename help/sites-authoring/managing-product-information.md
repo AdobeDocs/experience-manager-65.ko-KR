@@ -48,7 +48,7 @@ ht-degree: 69%
 
 ## 제품 사진 촬영 프로젝트 만들기 {#create-a-product-photo-shoot-project}
 
-1. In the **Projects** console, tap/click **Create** and then choose **Create Project** from the list.
+1. **프로젝트** 콘솔에서 **만들기**&#x200B;를 탭/클릭한 다음 목록에서 **프로젝트 만들기**&#x200B;를 선택합니다.
 
    ![chlimage_1-132](assets/chlimage_1-132a.png)
 
@@ -61,7 +61,7 @@ ht-degree: 69%
    ![chlimage_1-134](assets/chlimage_1-134a.png)
 
 1. **만들기**&#x200B;를 탭/클릭합니다. 프로젝트가 작성되었음을 알리는 확인 메시지가 표시됩니다.
-1. Tap/click **Done** to return to the **Projects** console. Alternatively, tap/click **Open** to view the assets within the photoshoot project.
+1. **Done**&#x200B;을 탭/클릭하여 **Projects** 콘솔로 돌아갑니다. 또는 **열기**&#x200B;를 탭/클릭하여 사진 촬영 프로젝트 내의 자산을 봅니다.
 
 ## 제품 사진 촬영 프로젝트에서 작업 시작 {#starting-work-in-a-product-photo-shoot-project}
 
@@ -102,7 +102,7 @@ ht-degree: 69%
 * 프로젝트 워크플로우 시작: 제품 사진 촬영을 시작하는 방법을 설명합니다.
 * 워크플로우 작업 세부 사항: 워크플로우에서 사용 가능한 작업의 세부 사항을 제공합니다.
 
-## 프로젝트 진행 상태 추적 {#tracking-project-progress}
+## 프로젝트 진행 상태 추적  {#tracking-project-progress}
 
 프로젝트 내의 활성/완료된 작업을 모니터링하여 프로젝트의 진행 상태를 추적할 수 있습니다.
 
@@ -112,7 +112,7 @@ ht-degree: 69%
 
 * **작업 목록**
 
-작업 카드에는 프로젝트의 전반적인 진행 상태가 표시됩니다. 프로젝트에 관련 작업이 있는 경우에만 프로젝트 세부 사항 페이지에 표시됩니다. 작업 카드는 완료된 작업 수를 기준으로 프로젝트의 현재 완료 상태를 표시합니다. 향후 작업은 포함되지 않습니다.
+작업 카드는 프로젝트의 전반적인 진행 상황을 나타냅니다. 프로젝트에 관련 작업이 있는 경우에만 프로젝트 세부 사항 페이지에 표시됩니다. 작업 카드는 완료된 작업 수를 기준으로 프로젝트의 현재 완료 상태를 표시합니다. 향후 작업은 포함되지 않습니다.
 
 작업 카드는 다음 세부 사항을 제공합니다.
 
@@ -131,12 +131,12 @@ ht-degree: 69%
 
 **제품 사진 촬영** 워크플로우를 구성하려면:
 
-1. Navigate to **Tools** > **Workflows**, and then tap the **Models** tile to open the **Workflow Models** page.
-1. Select the **Product Photo Shoot** workflow, and the tap the **Edit** icon from the toolbar to open it in edit mode.
+1. **도구** > **워크플로우**&#x200B;로 이동한 다음 **모델** 타일을 눌러 **워크플로우 모델** 페이지를 엽니다.
+1. **제품 사진 촬영** 워크플로우를 선택하고 도구 모음에서 **편집** 아이콘을 눌러 편집 모드에서 엽니다.
 
    ![chlimage_1-138](assets/chlimage_1-138a.png)
 
-1. In the **Product Photo Shoot Workflow** page, open a project task. 예를 들어 **촬영 목록 업로드** 작업을 엽니다.
+1. **제품 사진 촬영 워크플로우** 페이지에서 프로젝트 작업을 엽니다. 예를 들어 **촬영 목록 업로드** 작업을 엽니다.
 
    ![chlimage_1-139](assets/chlimage_1-139a.png)
 
@@ -157,14 +157,14 @@ ht-degree: 69%
    * 사진 촬영 검토
    * 프로덕션으로 이동
 
-   Perform a similar procedure to configure the tasks in the **Product Photo Shoot (Commerce Integration) workflow**.
+   유사한 절차를 수행하여 **제품 사진 촬영(커머스 통합) 워크플로우**&#x200B;에서 작업을 구성합니다.
 
 이 섹션에서는 제품 정보 관리를 크리에이티브 프로젝트에 통합하는 방법을 설명합니다.
 
-## 프로젝트 워크플로우 시작 {#starting-a-project-workflow}
+## 프로젝트 워크플로우 시작  {#starting-a-project-workflow}
 
-1. Navigate to a Product Photo Shoot project, and tap/click the **Add Work** icon on the **Workflows** card.
-1. **제품 사진 촬영(커머스 통합)** 워크플로우 카드를 선택하여 제품 사진 촬영(커머스 통합) 워크플로우를 시작합니다. If the product information isn&#39;t available under /etc/commerce, select the **Product Photo Shoot** workflow and start the Product Photo Shoot workflow.
+1. 제품 사진 촬영 프로젝트로 이동하고 **워크플로우** 카드에서 **작업 추가** 아이콘을 탭/클릭합니다.
+1. **제품 사진 촬영(커머스 통합)** 워크플로우 카드를 선택하여 제품 사진 촬영(커머스 통합) 워크플로우를 시작합니다. 제품 정보를 /etc/commerce 아래에서 사용할 수 없는 경우 **제품 사진 촬영** 워크플로우를 선택하고 제품 사진 촬영 워크플로우를 시작합니다.
 
    ![chlimage_1-140](assets/chlimage_1-140a.png)
 
@@ -181,15 +181,15 @@ ht-degree: 69%
 
 사진 촬영 워크플로우에는 다음과 같은 여러 작업이 포함됩니다. 각 작업은 작업에 대해 정의된 구성을 기준으로 사용자 그룹에 지정됩니다.
 
-#### 촬영 목록 만들기 작업 {#create-shot-list-task}
+#### 촬영 목록 만들기 작업  {#create-shot-list-task}
 
 **촬영 목록 만들기** 작업을 사용하면 프로젝트 소유자가 이미지가 필요한 제품을 선택할 수 있습니다. 사용자가 선택한 옵션에 따라, 기본 제품 정보를 포함하는 CSV 파일이 생성됩니다.
 
-1. In the project folder, tap/click the ellipses in the [Tasks Card](#tracking-project-progress) to view the task item in the workflow.
+1. 프로젝트 폴더에서 [작업 카드](#tracking-project-progress)의 줄임표를 탭/클릭하여 워크플로우의 작업 항목을 봅니다.
 
    ![chlimage_1-143](assets/chlimage_1-143a.png)
 
-1. Select the **Create Shot List** task, and then tap/click the **Open** icon from the toolbar.
+1. **촬영 목록 만들기** 작업을 선택한 다음 도구 모음에서 **열기** 아이콘을 탭/클릭합니다.
 
    ![chlimage_1-144](assets/chlimage_1-144a.png)
 
@@ -201,8 +201,8 @@ ht-degree: 69%
 
    ![chlimage_1-146](assets/chlimage_1-146a.png)
 
-1. Tap/click the **Add To Shotlist** icon to create a CSV file that contains a list of all such products. 선택한 제품에 대해 촬영 목록이 생성되었음을 확인하는 메시지가 표시됩니다. **닫기**&#x200B;를 클릭하여 워크플로우를 완료합니다.
-1. 촬영 목록을 만들면 **촬영 목록 보기** 링크가 표시됩니다. To add more products to the shot list, tap/click **Add to Shot List**. 이 경우 데이터가 처음에 생성된 촬영 목록에 추가됩니다.
+1. **촬영 목록에 추가** 아이콘을 탭/클릭하여 모든 해당 제품의 목록이 포함된 CSV 파일을 만듭니다. 선택한 제품에 대해 촬영 목록이 생성되었음을 확인하는 메시지가 표시됩니다. **닫기**&#x200B;를 클릭하여 워크플로우를 완료합니다.
+1. 촬영 목록을 만들면 **촬영 목록 보기** 링크가 표시됩니다. 촬영 목록에 제품을 더 추가하려면 **촬영 목록에 추가**&#x200B;를 탭/클릭합니다. 이 경우 데이터가 처음에 생성된 촬영 목록에 추가됩니다.
 
    ![chlimage_1-147](assets/chlimage_1-147a.png)
 
@@ -210,13 +210,13 @@ ht-degree: 69%
 
    ![chlimage_1-148](assets/chlimage_1-148a.png)
 
-   기존 데이터를 편집하거나 새 데이터를 추가하려면 도구 모음에서 **편집**&#x200B;을 탭/클릭합니다. Only the **Product **and **Description** fields are editable.
+   기존 데이터를 편집하거나 새 데이터를 추가하려면 도구 모음에서 **편집**&#x200B;을 탭/클릭합니다. **Product **및 **Description** 필드만 편집할 수 있습니다.
 
    ![chlimage_1-149](assets/chlimage_1-149a.png)
 
-   After you update the file, tap/click **Save** on toolbar to save the file.
+   파일을 업데이트한 후 도구 모음에서 **저장**&#x200B;을 탭/클릭하여 파일을 저장합니다.
 
-1. After adding the products, tap/click the **Complete** icon on the **Create Shot List **task details page to mark the task as completed. 선택적 주석을 추가할 수 있습니다.
+1. 제품을 추가한 후 **촬영 목록 만들기 **작업 세부 정보 페이지에서 **완료** 아이콘을 탭/클릭하여 작업을 완료됨으로 표시합니다. 선택적 주석을 추가할 수 있습니다.
 
    작업이 완료되면 프로젝트 내에서 다음 변경 사항이 적용됩니다.
 
@@ -226,7 +226,7 @@ ht-degree: 69%
 
    커머스 통합이 없는 제품 사진 촬영 워크플로우의 경우, 촬영 목록 업로드가 첫 번째 작업입니다. **촬영 목록 업로드**&#x200B;를 탭/클릭하여 **shotlist.csv** 파일을 업로드합니다. CSV 파일에는 제품 ID가 있어야 합니다. 다른 필드는 선택적입니다. 이를 사용하여 자산을 제품에 매핑할 수 있습니다.
 
-### 촬영 목록 업로드 작업 {#upload-shot-list-task}
+### 촬영 목록 업로드 작업  {#upload-shot-list-task}
 
 이 작업은 제품 사진 촬영 워크플로우의 일부입니다. AEM에서 제품 정보를 사용할 수 없는 경우 이 작업을 수행합니다. 이 경우, 이미지 자산이 필요한 CSV 파일에 제품 목록을 업로드합니다. CSV 파일의 세부 사항을 기준으로 이미지 자산을 제품에 매핑합니다.
 
@@ -238,52 +238,52 @@ ht-degree: 69%
 
 >[!NOTE]
 >
->The name of images to be uploaded should start with &quot;**&lt;ProductId>_&quot;** where Product ID is referenced from the **Id** field in the *shotlist.csv* file. For example, for a product in the shot list with **Id 397122**, you can upload files with names **397122_highcontrast.jpg**, **397122_lowlight.png**, and so on.
+>업로드할 이미지의 이름은 &quot;**&lt;ProductId>_&quot;**&#x200B;로 시작해야 합니다. 여기서 제품 ID는 *shotlist.csv* 파일의 **필드에서 참조됩니다.** 예를 들어 **Id 397122**&#x200B;이 있는 촬영 목록의 제품의 경우 이름이 **397122_highcontrast.jpg**, **39712_lowlight.png**&#x200B;인 파일을 업로드할 수 있습니다.
 
-1. In the project folder, tap/click the ellipses in the [Tasks Card](#tracking-project-progress) to view the list of tasks in the workflow.
-1. Select the **Upload Shot List** task, and then tap/click the **Open** icon from the toolbar.
+1. 프로젝트 폴더에서 [작업 카드](#tracking-project-progress)의 줄임표를 탭/클릭하여 워크플로우의 작업 목록을 봅니다.
+1. **촬영 목록 업로드** 작업을 선택한 다음 도구 모음에서 **열기** 아이콘을 탭/클릭합니다.
 
    ![chlimage_1-150](assets/chlimage_1-150a.png)
 
-1. Review the task details and then tap/click the **Upload Shot List** button.
+1. 작업 세부 사항을 검토한 다음 **촬영 목록 업로드** 단추를 탭/클릭합니다.
 
    ![chlimage_1-151](assets/chlimage_1-151a.png)
 
-1. Tap/click the **Upload Shot List** button to upload the CSV file with filename shotlist.csv. 이 워크플로우는 이 파일을 다음 작업의 제품 데이터를 추출하는 데 사용할 소스로 인식합니다.
-1. 제품 정보가 포함된 CSV 파일을 적절한 형식으로 업로드합니다. The **View Uploaded Assets** link appears under the card after the CSV file is uploaded.
+1. **촬영 목록 업로드** 단추를 탭/클릭하여 파일 이름이 shotlist.csv인 CSV 파일을 업로드합니다. 이 워크플로우는 이 파일을 다음 작업의 제품 데이터를 추출하는 데 사용할 소스로 인식합니다.
+1. 제품 정보가 포함된 CSV 파일을 적절한 형식으로 업로드합니다. CSV 파일이 업로드된 후 카드 아래에 **업로드된 자산 보기** 링크가 나타납니다.
 
    ![chlimage_1-152](assets/chlimage_1-152a.png)
 
-   Click the **Complete** icon to complete the task.
+   **완료** 아이콘을 클릭하여 작업을 완료합니다.
 
-1. Tap/click the **Complete** icon to complete the task.
+1. **완료** 아이콘을 탭/클릭하여 작업을 완료합니다.
 
 ### 사진 촬영 업로드 작업 {#upload-photo-shoot-task}
 
-If you are an Editor, you can upload shots for the products listed in the **shotlist.csv** file that is created or uploaded in the previous task.
+편집자는 이전 작업에서 생성되거나 업로드된 **shotlist.csv** 파일에 나열된 제품에 대한 샷을 업로드할 수 있습니다.
 
-The name of images to be uploaded should begin with **&quot;&lt;productId>_&quot;** where Product ID is referenced from the **Id** field in the **shotlist.csv** file. 예를 들어, 촬영 목록에서 **ID가 397122**&#x200B;인 제품의 경우 이름이 **397122_highcontrast.jpg**,**397122_lowlight.png** 등인 파일을 업로드할 수 있습니다.
+업로드할 이미지의 이름은 **&quot;&lt;productId>_&quot;**&#x200B;로 시작해야 합니다. 여기서 제품 ID는 **shotlist.csv** 파일의 **필드에서 참조됩니다.** 예를 들어, 촬영 목록에서 **ID가 397122**&#x200B;인 제품의 경우 이름이 **397122_highcontrast.jpg**,**397122_lowlight.png** 등인 파일을 업로드할 수 있습니다.
 
 이미지를 직접 업로드하거나 이미지가 포함된 ZIP 파일을 업로드할 수 있습니다. 해당 이름에 따라, 이미지는 **사진 촬영** 폴더 내의 각 제품 폴더에 배치됩니다.
 
-1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
-1. Select the **Upload Photo Shoot** task, and then tap/click the **Open** icon from the toolbar.
+1. 프로젝트 폴더에서 [작업 카드](#tracking-project-progress)의 줄임표를 탭/클릭하여 워크플로우의 작업 항목을 봅니다.
+1. **사진 촬영 업로드** 작업을 선택한 다음 도구 모음에서 **열기** 아이콘을 탭/클릭합니다.
 
    ![chlimage_1-153](assets/chlimage_1-153a.png)
 
-1. Tap/click **Upload Photo Shoot** and upload the photo shoot images.
+1. **사진 촬영 업로드**&#x200B;를 탭/클릭하고 사진 촬영 이미지를 업로드합니다.
 1. 도구 모음에서 **완료** 아이콘을 탭/클릭하여 작업을 완료합니다.
 
-### 사진 촬영 수정 작업 {#retouch-photo-shoot-task}
+### 사진 촬영 수정 작업  {#retouch-photo-shoot-task}
 
 편집 권한이 있는 경우 사진 촬영 수정 작업을 수행하여 사진 촬영 폴더에 업로드된 이미지를 편집합니다.
 
-1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
-1. Select the **Retouch Photo Shoot** task, and then tap/click the **Open** icon from the toolbar.
+1. 프로젝트 폴더에서 [작업 카드](#tracking-project-progress)의 줄임표를 탭/클릭하여 워크플로우의 작업 항목을 봅니다.
+1. **사진 촬영 수정** 작업을 선택한 다음 도구 모음에서 **열기** 아이콘을 탭/클릭합니다.
 
    ![chlimage_1-154](assets/chlimage_1-154a.png)
 
-1. Tap/click the **View Uploaded Assets** link in the **Retouch Photo Shoot** page to browse the uploaded images.
+1. 업로드된 이미지를 찾으려면 **사진 촬영 수정** 페이지에서 **업로드된 자산 보기** 링크를 탭/클릭합니다.
 
    ![chlimage_1-155](assets/chlimage_1-155a.png)
 
@@ -297,12 +297,12 @@ The name of images to be uploaded should begin with **&quot;&lt;productId>_&quot
 
 이 작업에서는 사진사가 업로드한 사진 촬영 이미지를 검토하고, 이미지를 사용 승인 상태로 표시합니다.
 
-1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
-1. Select the **Review &amp; Approve** task, and then tap/click the **Open** icon from the toolbar.
+1. 프로젝트 폴더에서 [작업 카드](#tracking-project-progress)의 줄임표를 탭/클릭하여 워크플로우의 작업 항목을 봅니다.
+1. **검토 및 승인** 작업을 선택한 다음 도구 모음에서 **열기** 아이콘을 탭/클릭합니다.
 
    ![chlimage_1-157](assets/chlimage_1-157a.png)
 
-1. In the **Review &amp; Approve** page, assign the review task to role, for example Reviewers, and then tap/click **Review **to start reviewing the uploaded product images.
+1. **검토 및 승인** 페이지에서 검토 작업을 역할(예: 검토자)에 지정한 다음 **검토*를 탭/클릭하여 업로드된 제품 이미지 검토를 시작합니다.
 
    ![chlimage_1-158](assets/chlimage_1-158a.png)
 
@@ -326,12 +326,12 @@ The name of images to be uploaded should begin with **&quot;&lt;productId>_&quot
 >[!NOTE]
 제품 사진 촬영 워크플로우(커머스 통합 없음)에서 승인된 이미지는 제품과 연관이 없습니다.
 
-### 프로덕션으로 이동 작업 {#move-to-production-task}
+### 프로덕션으로 이동 작업  {#move-to-production-task}
 
 이 작업은 승인된 자산을 프로덕션 준비 폴더로 이동하여 사용 가능하게 만듭니다.
 
-1. Under the project folder, tap/click the ellipses in the [Task Card](#tracking-project-progress) to view the task item in the workflow.
-1. Select the **Move to Production** task, and then tap/click the **Open** icon from the toolbar.
+1. 프로젝트 폴더에서 [작업 카드](#tracking-project-progress)의 줄임표를 탭/클릭하여 워크플로우의 작업 항목을 봅니다.
+1. **프로덕션으로 이동** 작업을 선택한 다음 도구 모음에서 **열기** 아이콘을 탭/클릭합니다.
 
    ![chlimage_1-160](assets/chlimage_1-160a.png)
 
@@ -339,31 +339,31 @@ The name of images to be uploaded should begin with **&quot;&lt;productId>_&quot
 
    ![chlimage_1-161](assets/chlimage_1-161a.png)
 
-1. Enter the path of the production-ready folder in the **Move To** field.
+1. **이동 위치** 필드에 프로덕션 준비 폴더의 경로를 입력합니다.
 
    ![chlimage_1-162](assets/chlimage_1-162a.png)
 
-   Tap/click **Move to Production**. 확인 메시지를 닫습니다. 자산은 지정된 경로로 이동되고, 폴더 계층 구조를 기준으로 각 제품의 승인된 자산에 대한 스핀 세트가 자동으로 생성됩니다.
+   **프로덕션**&#x200B;으로 이동을 탭/클릭합니다. 확인 메시지를 닫습니다. 자산은 지정된 경로로 이동되고, 폴더 계층 구조를 기준으로 각 제품의 승인된 자산에 대한 스핀 세트가 자동으로 생성됩니다.
 
 1. 도구 모음에서 **완료** 아이콘을 탭/클릭합니다. 마지막 단계가 완료로 표시되면 워크플로우가 완료됩니다.
 
-## DAM 자산 메타데이터 보기 {#viewing-dam-asset-metadata}
+## DAM 자산 메타데이터 보기  {#viewing-dam-asset-metadata}
 
 승인 후, 자산은 해당 제품에 연결됩니다. 이제 승인된 자산의 [속성 페이지](/help/assets/manage-assets.md#editing-properties)에는 추가 **제품 데이터**(연결된 제품 정보) 탭이 있습니다. 이 탭에는 제품 세부 사항, SKU 번호 및 자산을 연결하는 기타 제품 관련 세부 사항이 표시됩니다. **편집** 아이콘을 탭/클릭하여 자산 속성을 업데이트합니다. 제품 관련 정보는 읽기 전용으로 유지됩니다.
 
 나타나는 링크를 탭/클릭하여 자산이 연관된 제품 콘솔의 각 제품 세부 사항 페이지로 이동합니다.
 
-## 프로젝트 사진 촬영 워크플로우 사용자 지정 {#customizing-the-project-photo-shoot-workflows}
+## 프로젝트 사진 촬영 워크플로우 사용자 지정  {#customizing-the-project-photo-shoot-workflows}
 
 요구사항에 따라 프로젝트 사진 촬영 워크플로우를 사용자 지정할 수 있습니다. 이 작업은 프로젝트 내의 변수 값을 설정하기 위해 수행하는 선택적인 역할 기반 작업입니다. 나중에 구성된 값을 사용하여 결정을 내릴 수 있습니다.
 
-1. Click/tap the AEM logo, and then navigate to **Tools** > **Workflow** > **Models** to open the Workflow Models page.
+1. AEM 로고를 클릭/탭한 다음 **도구** > **워크플로우** > **모델**&#x200B;으로 이동하여 워크플로우 모델 페이지를 엽니다.
 1. **제품 사진 촬영(커머스 통합)** 워크플로우 또는 **제품 사진 촬영** 워크플로우를 선택하고 도구 모음에서 **편집**&#x200B;을 클릭/탭하여 편집 모드에서 워크플로우를 엽니다.
 1. 사이드 킥에서 **프로젝트** 작업을 열고 **역할 기반 프로젝트 작업 만들기** 단계를 워크플로우로 끌어옵니다.
 
    ![chlimage_1-163](assets/chlimage_1-163a.png)
 
-1. Open the **Role Based Task** step.
+1. **역할 기반 작업** 단계를 엽니다.
 1. **작업** 탭에서 **작업** 목록에 표시할 작업의이름을 제공합니다. 역할에 작업을 지정하고, 기본 우선 순위를 설정하고, 설명을 제공하고, 작업의 기한 시간을 지정할 수도 있습니다.
 
    ![chlimage_1-164](assets/chlimage_1-164a.png)
@@ -372,12 +372,12 @@ The name of images to be uploaded should begin with **&quot;&lt;productId>_&quot
 
    ![chlimage_1-165](assets/chlimage_1-165a.png)
 
-1. After adding the options click **OK** to add the changes to the step.
+1. 옵션을 추가한 후 **확인**&#x200B;을 클릭하여 단계에 변경 사항을 추가합니다.
 
    >[!NOTE]
-   Tapping/clicking **OK** does not save the changes in the workflow. To save changes in the workflow, tap/click **Save**.
+   **OK**&#x200B;을 탭/클릭해도 워크플로우의 변경 내용이 저장되지 않습니다. 워크플로우에 변경 내용을 저장하려면 **저장**&#x200B;을 탭/클릭합니다.
 
-1. Open the **Workflow** tasks from side kick, and add a **Goto** task.
+1. 사이드 킥에서 **Workflow** 작업을 열고 **Goto** 작업을 추가합니다.
 1. **이동** 작업을 열고 **프로세스** 탭을 탭/클릭합니다.
 1. **스크립트** 상자에 다음 코드를 지정합니다.
 
@@ -402,17 +402,17 @@ The name of images to be uploaded should begin with **&quot;&lt;productId>_&quot
 ```
 
 >[!NOTE]
-For details around scripting in workflow steps, see [Defining a Rule for an OR Split](/help/sites-developing/workflows-models.md).
+워크플로우 단계의 스크립팅에 대한 자세한 내용은 [OR 분할](/help/sites-developing/workflows-models.md)에 대한 규칙 정의를 참조하십시오.
 
 ![chlimage_1-166](assets/chlimage_1-166a.png)
 
-1. Tap/click **OK**.
+1. **OK**&#x200B;을 탭/클릭합니다.
 
-1. Tap/click **Save** to save the workflow.
+1. **저장**&#x200B;을 탭/클릭하여 워크플로우를 저장합니다.
 
    ![chlimage_1-167](assets/chlimage_1-167a.png)
 
-1. A new Project owner acceptance task now comes up after the [Move to Production task](#move-to-production-task) is completed and is assigned to the owner.
+1. 이제 [프로덕션으로 이동 작업](#move-to-production-task)이(가) 완료되고 소유자에게 할당된 후 새 프로젝트 소유자 수락 작업이 표시됩니다.
 
    소유자 역할의 사용자는 작업을 완료하고 주석 팝업의 목록에서 동작(워크플로우 단계 구성에 추가된 동작 목록에 포함됨)을 선택할 수 있습니다.
 
@@ -421,5 +421,5 @@ For details around scripting in workflow steps, see [Defining a Rule for an OR S
    적절한 옵션을 선택하고 **완료**&#x200B;를 클릭하여 워크플로우에서 **이동 단계**&#x200B;를 실행합니다.
 
 >[!NOTE]
-When you start a server, the Project task list servlet caches the mappings between task types and URLs defined under `/libs/cq/core/content/projects/tasktypes`. You can then perform the usual overlay and add custom task types by placing them under `/apps/cq/core/content/projects/tasktypes`.
+서버를 시작할 때 프로젝트 작업 목록 서블릿은 작업 유형과 `/libs/cq/core/content/projects/tasktypes`에 정의된 URL 간의 매핑을 캐시합니다. 그런 다음 일반적인 오버레이를 수행하고 사용자 지정 작업 유형을 `/apps/cq/core/content/projects/tasktypes` 아래에 배치하여 추가할 수 있습니다.
 
