@@ -28,7 +28,7 @@ ht-degree: 2%
    + [인터랙티브 커뮤니케이션 소개](using/interactive-communications-overview.md)
    + [양식 관리 소개](using/introduction-managing-forms.md)
    + [자동 양식 전환 서비스 소개](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
-   + 자습서:간단한 적응형 양식 만들기 {#create-first-adaptive-form}
+   + 자습서:첫 번째 응용 양식 {#create-first-adaptive-form} 만들기
       + [자습서:간단한 적응형 양식 만들기](using/create-your-first-adaptive-form.md)
       + [자습서:적응형 양식 만들기](using/create-adaptive-form.md)
       + [자습서:양식 데이터 모델 만들기](using/create-form-data-model.md)
@@ -36,7 +36,7 @@ ht-degree: 2%
       + [자습서:적응형 양식 스타일 지정](using/style-your-adaptive-form.md)
       + [자습서:적응형 양식 게시](/help/forms/using/publish-your-adaptive-form.md)
       + [자습서:적응형 양식 테스트](/help/forms/using/testing-your-adaptive-form.md)
-   + 자습서:간단한 인터랙티브 커뮤니케이션 제작 {#create-first-interactive-communication}
+   + 자습서:첫 번째 대화형 통신 만들기 {#create-first-interactive-communication}
       + [자습서:간단한 인터랙티브 커뮤니케이션 제작](using/create-your-first-interactive-communication.md)
       + [자습서:인터랙티브 커뮤니케이션 계획](using/planning-interactive-communications.md)
       + [자습서:양식 데이터 모델 만들기](using/create-form-data-model0.md)
@@ -53,10 +53,10 @@ ht-degree: 2%
       + [참조 테마](using/reference-themes.md)
       + [참조 문자 템플릿](using/reference-cm-layout-templates.md)
       + [We.Finance 참조 사이트의 홈 모기지 워크플로에 대해 Microsoft Dynamics 365 구성](using/ms-dynamics-configuration-home-mortgage.md)
-+ AEM Forms 설치 및 구성 {#install-aem-forms}
++ AEM Forms {#install-aem-forms} 설치 및 구성
    + [AEM Forms을 위한 건축 및 배포 토폴로지](using/aem-forms-architecture-deployment.md)
    + [AEM Forms 설치에 대한 지속성 유형 선택](using/choosing-persistence-type-for-aem-forms.md)
-   + Install AEM Forms on OSGi {#osgi-installation}
+   + OSGi {#osgi-installation}에 AEM Forms 설치
       + [OSGi 기반의 AEM 양식에 대해 지원되는 플랫폼](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
       + [문서 서비스 설치 및 구성](using/install-configure-document-services.md)
       + [데이터 캡처 기능 설치 및 구성](using/installing-configuring-aem-forms-osgi.md)
@@ -86,13 +86,13 @@ ht-degree: 2%
       + [Adobe LiveCycle과 AEM Forms 연결](using/aem-livecycle-connector.md)
       + [JEE 프로세스에서 AEM Forms에 양식 데이터를 제출하도록 AEM Forms 구성](using/submit-form-data-livecycle-process.md)
       + [AEM FORMS용 AEM 데스크탑 앱](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-+ 업그레이드 AEM Forms {#upgrade-aem-forms}
++ AEM Forms 업그레이드 {#upgrade-aem-forms}
    + [사용 가능한 업그레이드 경로](using/upgrade.md)
-   + OSGi에서 AEM Forms 업그레이드 {#aem-forms-osgi-upgrade}
+   + OSGi {#aem-forms-osgi-upgrade}에서 AEM Forms 업그레이드
       + [OSGi 기반의 AEM 6.5 양식으로 업그레이드](using/upgrade-forms-osgi.md)
       + [호환성 패키지 설치](using/compatibility-package.md)
       + [AEM Forms 에셋 및 문서 마이그레이션](using/migration-utility.md)
-   + JEE에서 AEM Forms 업그레이드 {#aem-forms-jee-upgrade}
+   + JEE {#aem-forms-jee-upgrade}에서 AEM Forms 업그레이드
       + [AEM Forms 업그레이드 준비](http://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
       + [업그레이드 확인 목록 및 계획](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
       + [JEE에서 AEM 6.5 양식으로 업그레이드](using/upgrade-forms-jee.md)
@@ -110,7 +110,7 @@ ht-degree: 2%
    + [AEM Forms에서 XDP 및 PDF 문서 받기](using/get-xdp-pdf-documents-aem.md)
    + [AEM Forms으로 자산 가져오기 및 내보내기](using/import-export-forms-templates.md)
    + [적응형 양식 로컬라이제이션을 위한 새로운 로케일 지원](using/supporting-new-language-localization.md)
-   + 사용자 데이터 처리 {#handling-user-data}
+   + 사용자 데이터 {#handling-user-data} 처리
       + [OSGi 기반의 워크플로우](using/forms-workflow-osgi-handling-user-data.md)
       + [Forms 사용자 관리](using/user-management-handling-user-data.md)
       + [Forms JEE 워크플로우](using/forms-workflow-jee-handling-user-data.md)
@@ -130,7 +130,7 @@ ht-degree: 2%
    + [양식 데이터 모델 만들기](using/create-form-data-models.md)
    + [양식 데이터 모델을 사용한 작업](using/work-with-form-data-model.md)
    + [양식 데이터 모델 사용](using/using-form-data-model.md)
-+ 적응형 Forms - 기본 제작 {#adaptive-forms-basic-authoring}
++ 응용 Forms - 기본 작성 {#adaptive-forms-basic-authoring}
    + [적응형 양식 작업을 위한 우수 사례](using/adaptive-forms-best-practices.md)
    + [응용 양식 만들기](using/creating-adaptive-form.md)
    + [적응형 양식 조각](using/adaptive-form-fragments.md)
@@ -156,7 +156,7 @@ ht-degree: 2%
    + [제출 검토자와 양식 연결](using/adding-reviewers-form.md)
    + [양식 필드에 대한 컨텍스트 내 도움말 작성](using/authoring-in-field-help.md)
    + [레이아웃 모드를 사용하여 구성 요소 크기 조정](/help/forms/using/resize-using-layout-mode.md)
-+ 적응형 Forms - 고급 저작 {#adaptive-forms-advanced-authoring}
++ 응용 Forms - 고급 작성 {#adaptive-forms-advanced-authoring}
    + [JSON 스키마를 사용하여 적응형 양식 만들기](using/adaptive-form-json-schema-form-model.md)
    + [XML 스키마를 사용하여 적응형 양식 만들기](using/adaptive-form-xml-schema-form-model.md)
    + [적응형 양식에서 Adobe Sign 사용](using/working-with-adobe-sign.md)
@@ -251,7 +251,7 @@ ht-degree: 2%
    + [AEM 양식 작업 영역을 Microsoft Office SharePoint Server와 통합](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [할 일 목록 작업](using/todo-lists.md)
    + [AEM Forms 작업 공간에 대한 문제 해결 지침](using/troubleshooting-guidelines-html-workspace.md)
-+ AEM Forms app {#aem-forms-app}
++ AEM Forms 앱 {#aem-forms-app}
    + [AEM Forms 앱 소개](using/aem-forms-app.md)
    + [AEM Forms 앱용 환경 설정](using/setup-environment-mobile-workspace.md)
    + [Xcode 프로젝트 설정 및 iOS 앱 빌드](using/setup-xcode-project-build-installer.md)
@@ -305,7 +305,7 @@ ht-degree: 2%
    + [HTML5 양식 디버깅](using/debug.md)
    + [HTML5 양식에 대한 스크립팅 지원](using/scripting-support.md)
    + [AEM Forms 양식 세트](using/formset-in-aem-forms.md)
-+ 편지 및 통신사 {#letters-correspondences}
++ 문자 및 통신사 {#letters-correspondences}
    + [통신 관리 개요](using/cm-overview.md)
    + [레이아웃 디자인](using/layout-design-details.md)
    + [데이터 사전](using/data-dictionary.md)
@@ -329,7 +329,7 @@ ht-degree: 2%
    + [인터랙티브 커뮤니케이션 및 문자에서 인라인 조건 및 반복](using/cm-inline-condition.md)
    + [문서 단편](using/lists.md)
    + [통신 관리 구성 속성](using/cm-configuration-properties.md)
-+ Experience Cloud 솔루션과 AEM Forms 통합 {#integrate-aem-forms-with-experience-cloud-solutions}
++ AEM Forms을 Experience Cloud 솔루션 {#integrate-aem-forms-with-experience-cloud-solutions}과 통합
    + [AEM Forms에서 타깃팅된 경험 제작](/help/forms/using/experience-targeting-forms.md)
    + [양식의 효과 측정 및 전환 향상](using/measure-improve-performance-forms-documents.md)
    + [분석 및 보고서 구성](using/configure-analytics-forms-documents.md)
@@ -380,7 +380,7 @@ ht-degree: 2%
    + [디자이너 스크립팅 참조](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
    + [디자이너 양식계산 참조](http://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [HTML5 양식에 문지르기 서명 사용](using/scribble-signature.md)
-+ AEM Forms 사용자 정의 {#customize-aem-forms}
++ AEM Forms {#customize-aem-forms} 사용자 지정
    + [적응형 및 HTML5 양식을 위한 모양 프레임워크](using/introduction-widgets.md)
    + [사용자 지정 응용 양식 템플릿 만들기](using/custom-adaptive-forms-templates.md)
    + [적응형 양식의 사용자 정의 레이아웃 구성 요소 만들기](using/custom-layout-components-forms.md)
@@ -400,7 +400,7 @@ ht-degree: 2%
    + [트랜잭션 보고서 보기 및 이해](using/viewing-and-understanding-transaction-reports.md)
    + [거래 보고서 청구 가능한 API](using/transaction-reports-billable-apis.md)
    + [사용자 지정 구현에 대한 거래 기록](using/record-transaction-custom-implementation.md)
-+ JEE의 AEM Forms 관리자 도움말 {#administrator-help}
++ JEE {#administrator-help}의 AEM Forms 관리자 도움말
    + 시작하기 {#get-started}
       + [일반 AEM Forms 설정](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [배포용 라이선스 유형 업데이트](/help/forms/using/admin-help/update-license-type-deployment.md)
@@ -429,7 +429,7 @@ ht-degree: 2%
       + [그룹 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-groups.md)
       + [사용자 또는 그룹 검색](/help/forms/using/admin-help/search-user-or-group.md)
       + [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md)
-   + 컨텐츠 관리 시스템에 연결 {#connect-content-management-system}
+   + 콘텐츠 관리 시스템 {#connect-content-management-system}에 연결
       + [EMC Documentum용 커넥터 구성](/help/forms/using/admin-help/configuring-connector-emc-documentum.md)
       + [IBM FileNet용 커넥터 구성](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
       + [IBM Content Manager용 커넥터 구성](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
@@ -476,7 +476,7 @@ ht-degree: 2%
       + [대체 글꼴 구성](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [PDF 내보내기 변환 설정 수정](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
       + [PDF Generator를 사용하여 파일 변환](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
-   + SSL 구성 {#configure-ssl}
+   + SSL {#configure-ssl} 구성
       + [SSL 구성 개요](/help/forms/using/admin-help/overview-6.md)
       + [JBoss 응용 프로그램 서버에 대한 SSL 구성](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
       + [Windows Vista에서 SSL 구성](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
@@ -492,7 +492,7 @@ ht-degree: 2%
       + [Document Security 웹 페이지 사용](/help/forms/using/admin-help/using-document-security-web-pages.md)
       + [정책 집합 만들기 및 관리](/help/forms/using/admin-help/creating-policy-sets.md)
       + [사용자로 등록](/help/forms/using/admin-help/registering-as-a-user.md)
-   + Forms 구성 {#configure-forms}
+   + Forms {#configure-forms} 구성
       + [양식 구성 기본 사항](/help/forms/using/admin-help/overview-7.md)
       + [국제화 옵션 설정](/help/forms/using/admin-help/setting-internationalization-options.md)
       + [Forms에 대한 캐싱 구성](/help/forms/using/admin-help/configuring-caching-forms.md)
@@ -511,7 +511,7 @@ ht-degree: 2%
       + [포함할 글꼴 지정](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [보안 설정 지정](/help/forms/using/admin-help/specify-security-settings.md)
       + [문자 집합 변경](/help/forms/using/admin-help/change-character-set.md)
-   + 양식 워크플로우 구성{#configure-forms-workflow}
+   + 양식 작업 과정 구성{#configure-forms-workflow}
       + [관리 및 프로세스 용어 정보](/help/forms/using/admin-help/administration-process-terminology.md)
       + [프로세스 관리](/help/forms/using/admin-help/processes.md)
       + [비즈니스 달력 구성](/help/forms/using/admin-help/configuring-business-calendars.md)
@@ -522,7 +522,7 @@ ht-degree: 2%
       + [중단된 작업 및 분기 사용](/help/forms/using/admin-help/stalled-operations-branches.md)
       + [공유 큐 구성](/help/forms/using/admin-help/configuring-shared-queues.md)
       + [작업](/help/forms/using/admin-help/tasks.md)
-   + 작업 공간 구성 {#configure-workspace}
+   + 작업 공간 {#configure-workspace} 구성
       + [작업 공간 개요](/help/forms/using/admin-help/overview-10.md)
       + [전역 설정 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-global-settings.md)
       + [하루 메시지 설정](/help/forms/using/admin-help/setting-message-day.md)
@@ -540,9 +540,9 @@ ht-degree: 2%
       + [AEM 양식 배포 모니터링](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
       + [작업 관리자 및 제한](/help/forms/using/admin-help/manager-throttling.md)
       + [유지 관리 모드에서 AEM 양식 실행](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
-   + AEM 양식 데이터베이스 유지 관리 {#maintain-aem-forms-database}
+   + AEM 양식 데이터베이스 유지 관리{#maintain-aem-forms-database}
       + [DB2 데이터베이스:매주 프로세스 실행](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
-      + [Oracle 데이터베이스 최대 열린 커서 임계값](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
+      + [Oracle 데이터베이스 최대 열기 커서 임계값](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
       + [IBM DB2 데이터베이스:유지 관리를 위한 명령 실행](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
       + [프로세스 데이터 제거](/help/forms/using/admin-help/purging-process-data.md)
       + [Microsoft SQL Server 데이터베이스:구성 세부 조정](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
@@ -585,13 +585,13 @@ ht-degree: 2%
    + [적응형 Forms에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
    + [어셈블러 서비스 및 DDC 참조](http://www.adobe.com/go/learn_aemforms_ddxRef_65)
    + [워크벤치 도움말](http://www.adobe.com/go/learn_aemforms_workbench_65)
-   + JEE에서 AEM Forms을 사용한 프로그래밍 {#programming-aem-forms-jee}
-      + JEE에서 AEM Forms을 사용한 프로그래밍 소개 {#introduction-programming-aem-forms-jee}
+   + JEE {#programming-aem-forms-jee}에서 AEM Forms과 프로그래밍
+      + JEE {#introduction-programming-aem-forms-jee}에서 AEM Forms와의 프로그래밍 소개
          + [Java API QuickStart 소개](developing/introducing-java-api-soap-quick.md)
          + [API를 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-apis.md)
          + [AEM Forms 프로세스 이해](developing/aem-forms-processes.md)
          + [서비스 컨테이너](developing/service-container.md)
-      + AEM Forms용 SPI 개발 {#developing-spis-aem-forms}
+      + AEM Forms {#developing-spis-aem-forms}용 SPI 개발
          + [외부 사용자 초대 처리기 만들기](developing/creating-invite-external-users-handler.md)
       + Java API 빠른 시작 - 코드 예 {#java-api-quick-start-code-examples}
          + [Application Manager 클라이언트 JavaAPI 빠른 시작(SOAP)](developing/application-manager-client-java-api.md)
@@ -621,7 +621,7 @@ ht-degree: 2%
          + [작업 관리자 서비스 Java API 빠른 시작(SOAP)](developing/task-manager-service-java-api.md)
          + [사용자 관리자 Java API 빠른 시작(SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP 유틸리티 서비스 Java APIQ빠른 시작(SOAP)](developing/xmp-utilities-service-java-api.md)
-      + API를 사용하여 JEE에서 AEM Forms 호출 {#invoking-aem-forms-jee-apis}
+      + API {#invoking-aem-forms-jee-apis}를 사용하여 JEE에서 AEM Forms 호출
          + [REST 요청을 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-rest.md)
          + [웹 서비스를 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-web.md)
          + [Remoting을 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-remoting.md)
