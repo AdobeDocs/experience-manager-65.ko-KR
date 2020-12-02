@@ -3,9 +3,9 @@ title: AEM 6.5 작성 사용 안내서
 seo-title: AEM 6.5 작성 사용 안내서
 description: '이 안내서에서는 AEM의 작성 개념을 설명합니다. '
 seo-description: 'AEM에서의 작성에 대한 개념들을 설명합니다. '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
 
