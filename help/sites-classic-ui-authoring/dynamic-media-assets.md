@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 
