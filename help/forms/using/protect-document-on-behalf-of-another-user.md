@@ -14,18 +14,18 @@ ht-degree: 0%
 ---
 
 
-# 다른 사용자를 대신하여 문서 Protect {#protect-a-document-on-behalf-of-another-user}
+# Protect 다른 사용자를 대신하여 문서{#protect-a-document-on-behalf-of-another-user}
 
 AEM Forms Document Security Java SDK는 API를 제공하여 문서 편집 권한을 획득하지 않고도 사용자 계정에서 다른 사용자를 대신하여 문서를 보호할 수 있도록 합니다. API는 워크플로우 프로세스에서 사용하거나 프로그래밍 방식으로 문서 서비스로 사용할 수 있습니다. 새로운 API는 다음과 같습니다.
 
-* **protectDocument** API를 사용하여
+* **문서** 보호문서 API를 사용하여 문서 대신 문서에 정책 적용
 
    다른 사용자 계정. 정책을 적용하는 데 사용된 사용자 계정의 권한은 문서를 보호하는 것으로 제한됩니다. 문서를 열고 볼 수 있는 권한을 획득하지 않습니다. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale 로케일, boolean bExactMatchForNames)
 
-* **createLicense** CreateLicense API를 사용하여 다른 사용자 계정을 대신하여 정책에 대한 라이선스를 만듭니다. PublishLicenseDTO createLicense(문자열 policyId, String documentName, boolean logSecureDocEvent)
-* **protectDocumentWithCoverPageProtectDocumentWithCoverPage API를 사용하여** 정책을 적용하고 다른 사용자를 대신하여 표지 페이지를 문서에 추가합니다. 정책을 적용하는 데 사용된 사용자 계정의 권한은 문서를 보호하는 것으로 제한됩니다. 문서를 열고 볼 수 있는 권한을 획득하지 않습니다. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
+* **create** LicenseCreateLicense API를 사용하여 다른 사용자 계정을 대신하여 정책에 대한 라이센스를 만듭니다. PublishLicenseDTO createLicense(문자열 policyId, String documentName, boolean logSecureDocEvent)
+* **protectDocumentWithCoverPageProtectDocumentWithCoverPage API를 사용하여 정책을 적용하고 다른 사용자를 대신하여 표지 페이지를 문서에 추가합니다.** 정책을 적용하는 데 사용된 사용자 계정의 권한은 문서를 보호하는 것으로 제한됩니다. 문서를 열고 볼 수 있는 권한을 획득하지 않습니다. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
 
-## API를 사용하여 다른 사용자를 대신하여 문서 보호 {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
+## API를 사용하여 다른 사용자를 대신하여 문서 보호{#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 
 문서를 편집할 수 있는 권한을 획득하지 않고 다른 사용자를 대신하여 문서를 보호하려면 다음 단계를 수행하십시오.
 
