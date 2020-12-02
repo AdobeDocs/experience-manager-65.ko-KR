@@ -1,6 +1,6 @@
 ---
 title: Touch UI 기능 상태
-description: 터치 지원 UI [!DNL Adobe Experience Manager] 에 대한 릴리스 노트입니다.
+description: ' [!DNL Adobe Experience Manager] 터치 지원 UI에만 적용되는 릴리스 노트입니다.'
 translation-type: tm+mt
 source-git-commit: d938f52766154b68df2f6db2c8c49a0ad97e7e6d
 workflow-type: tm+mt
@@ -12,15 +12,15 @@ ht-degree: 15%
 
 # Touch UI 기능 상태 {#touch-ui-feature-status}
 
-AEM 6.4 이상 버전 [클래식 UI는 더 이상 사용되지 않습니다](../release-notes/deprecated-removed-features.md). Adobe은 클래식 UI를 추가로 향상시키지 않으며 사용자는 터치 지원 UI에서 사용할 수 있는 강력한 새로운 기능을 활용할 것을 권장합니다.
+AEM 6.4부터 [클래식 UI는 더 이상 사용되지 않습니다](../release-notes/deprecated-removed-features.md). Adobe은 클래식 UI를 추가로 향상시키지 않으며 사용자는 터치 지원 UI에서 사용할 수 있는 강력한 새로운 기능을 활용할 것을 권장합니다.
 
-버전 6.0부터 AEM은 &quot;터치 지원 UI&quot;라고 하는 새로운 사용자 인터페이스(이하 &quot;터치 UI&quot;라고 함)를 도입하여 전체 Adobe 사용자 인터페이스 지침 [!DNL Adobe Experience Cloud] 에 맞게 조정되었습니다. 거의 기능 패리티가 달성되어, 이것은 &quot;클래식 UI&quot;라고 하는 레거시 데스크톱 기반 인터페이스를 사용하는 AEM의 표준 UI가 되었습니다.
+버전 6.0부터 AEM은 [!DNL Adobe Experience Cloud]과(와) 전체 Adobe 사용자 인터페이스 가이드라인에 맞춰 &quot;터치 지원 UI&quot;라는 새로운 사용자 인터페이스를 도입했습니다. 거의 기능 패리티가 달성되어, 이것은 &quot;클래식 UI&quot;라고 하는 레거시 데스크톱 기반 인터페이스를 사용하는 AEM의 표준 UI가 되었습니다.
 
 대부분의 기능이 터치 지원 UI에 있지만 아직 완전하지 않은 기능이 있으며 향후 릴리스에 추가될 예정입니다.
 
 다음 목록은 AEM 6.5에서 구현된 기능의 현재 상태를 보여줍니다.
 
-AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 고객을 위한 [사용자 인터페이스 권장 사항을 참조하십시오](/help/sites-deploying/ui-recommendations.md).
+AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 [고객을 위한 사용자 인터페이스 권장 사항](/help/sites-deploying/ui-recommendations.md)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -32,19 +32,19 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 고객을 위
 
 ## 범례 {#legend}
 
-* **완료**: 이 기능은 터치 지원 UI에서 완전히 사용할 수 있습니다.
-* **대부분**: 이 기능은 대부분 터치 지원 UI에서 사용할 수 있습니다.
-* **누락**: 터치 활성화 UI에 이 기능이 없으면 클래식 UI를 사용하여 이 작업을 수행해야 합니다.
-* **교체**: 이 기능은 다르게 작동하는 새로운 구현으로 대체되었습니다.
-* **제거됨**: 이 기능은 터치 지원 UI에 더 이상 존재하지 않으며 바뀌지 않습니다.
+* **완료**:이 기능은 터치 지원 UI에서 완전히 사용할 수 있습니다.
+* **대부분**:이 기능은 대부분 터치 지원 UI에서 사용할 수 있습니다.
+* **누락**:터치 활성화 UI에 이 기능이 없으면 클래식 UI를 사용하여 이 작업을 수행해야 합니다.
+* **교체**:이 기능은 다르게 작동하는 새로운 구현으로 대체되었습니다.
+* **제거됨**:이 기능은 터치 지원 UI에 더 이상 존재하지 않으며 바뀌지 않습니다.
 
-## 기능 상태: 사이트 관리 {#feature-status-sites-admin}
+## 기능 상태:사이트 관리자 {#feature-status-sites-admin}
 
 클래식 UI 사이트 관리자(`/siteadmin`)의 기능 목록과 터치 지원 UI(`/sites.html`)의 상태입니다.
 
 | 기능 | 상태 | 주석 |
 |--- |--- |--- |
-| 사이트 계층 탐색 | 완료 | AEM 6.4에서는 [컨텐츠 트리 보기를 도입했습니다](/help/sites-authoring/basic-handling.md#content-tree). |
+| 사이트 계층 탐색 | 완료 | AEM 6.4는 [컨텐츠 트리 보기](/help/sites-authoring/basic-handling.md#content-tree)를 도입했습니다. |
 | 워크플로우 시작 | 완료 |  |
 | 새 페이지 만들기 | 완료 |  |
 | 새 사이트 만들기 | 완료 |  |
@@ -76,9 +76,9 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 고객을 위
 | 알림 받은 편지함(JCR 이벤트) | 누락 | 클래식 UI 사용. 다른 구현으로 대체됩니다. |
 | 참조 | 완료 | AEM 6.5에 추가된 들어오는 페이지 링크의 표시. |
 
-## 기능 상태: 페이지 편집기 {#feature-status-page-editor}
+## 기능 상태:페이지 편집기 {#feature-status-page-editor}
 
-클래식 UI 페이지 편집기(`/cf#`)의 기능 목록과 터치 활성화 상태(`/editor.html`)입니다.
+클래식 UI 페이지 편집기(`/cf#`)의 기능 목록과 터치 지원(`/editor.html`)의 상태입니다.
 
 | 기능 | 상태 | 주석 |
 |--- |--- |--- |
@@ -90,11 +90,11 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 고객을 위
 | Forms 편집 | 완료 |  |
 | 오퍼 편집 | 완료 |  |
 | 워크플로우 모델 편집 | 완료 |  |
-| 모드: 편집 및 미리 보기 | 완료 |  |
+| 모드:편집 및 미리 보기 | 완료 |  |
 | 반응형 미리 보기 | 완료 |  |
-| 모드: 디자인 편집 | 완료 |  |
-| 모드: Scaffolding | 완료 |  |
-| 모드: Live Copy 상태 | 완료 |  |
+| 모드:디자인 편집 | 완료 |  |
+| 모드:Scaffolding | 완료 |  |
+| 모드:Live Copy 상태 | 완료 |  |
 | 주석 추가 | 완료 |  |
 | 속성 편집 | 완료 |  |
 | 롤아웃 페이지 | 완료 |  |
@@ -103,18 +103,18 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 고객을 위
 | 페이지 잠금/잠금 해제 | 완료 |  |
 | 페이지 게시 | 완료 |  |
 | 페이지 게시 취소 | 완료 |  |
-| 페이지 복사 | 제거됨 | 사이트 관리자를 사용하여 페이지 [를 복사합니다](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
-| 페이지 이동 | 제거됨 | 사이트 관리자를 사용하여 [페이지를 이동할 수 있습니다](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
-| 페이지 삭제 | 제거됨 | 사이트 관리자를 사용하여 페이지를 [삭제합니다](/help/sites-authoring/managing-pages.md#deleting-a-page). |
-| 참조 표시 | 제거됨 | 사이트 관리자를 사용하여 [자세한 참조 목록을 봅니다](/help/sites-authoring/author-environment-tools.md#references). |
-| 감사 로그 | 제거됨 | 사이트 관리자를 사용하고 [활동 레일을 엽니다](/help/sites-authoring/author-environment-tools.md#events-timeline). |
-| 버전 만들기 | 제거됨 | 사이트 관리자를 사용하여 새 버전 [을 만듭니다](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
-| 버전 복원 | 제거됨 | 사이트 관리자를 사용하여 [버전을 복원합니다](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
-| 시작 전환 | 제거됨 | 사이트 관리자를 사용하여 론치 [를 전환할 수 있습니다](/help/sites-authoring/launches-promoting.md). |
-| 페이지 번역 | 제거됨 | 사이트 관리자를 사용하여 번역 프로젝트에 [페이지를 추가합니다](/help/sites-administering/tc-manage.md). |
+| 페이지 복사 | 제거됨 | 사이트 관리자를 사용하여 [페이지](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page)를 복사합니다. |
+| 페이지 이동 | 제거됨 | 사이트 관리자를 사용하여 [페이지 이동](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) |
+| 페이지 삭제 | 제거됨 | 사이트 관리자를 사용하여 [페이지 삭제](/help/sites-authoring/managing-pages.md#deleting-a-page) |
+| 참조 표시 | 제거됨 | 사이트 관리자를 사용하여 [자세한 참조 목록](/help/sites-authoring/author-environment-tools.md#references)을 봅니다. |
+| 감사 로그 | 제거됨 | 사이트 관리자 및 [열기 활동 레일](/help/sites-authoring/author-environment-tools.md#events-timeline)을 사용하십시오. |
+| 버전 만들기 | 제거됨 | 사이트 관리자를 사용하여 [새 버전](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version)을 만듭니다. |
+| 버전 복원 | 제거됨 | 사이트 관리자를 사용하여 버전[을 복원합니다.](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version) |
+| 시작 전환 | 제거됨 | 사이트 관리자를 사용하여 시작](/help/sites-authoring/launches-promoting.md) 간을 [전환합니다. |
+| 페이지 번역 | 제거됨 | 사이트 관리자를 사용하여 번역 프로젝트[에 페이지를 추가합니다.](/help/sites-administering/tc-manage.md) |
 | 타임워프(날짜/시간 선택 및 검색 사이트 선택) | 완료 |  |
 | 권한 설정 | 완료 |  |
-| 클라이언트 컨텍스트 UI | 대체됨 | 앞으로 [ContextHub](/help/sites-authoring/ch-previewing.md) UI를 사용합니다. |
+| 클라이언트 컨텍스트 UI | 대체됨 | 앞으로 [ContextHub](/help/sites-authoring/ch-previewing.md) UI를 사용하십시오. |
 | 다양한 미디어 유형에 대한 컨텐츠 파인더 | 완료 |  |
 | 구성 요소 목록 | 완료 |  |
 | 구성 요소 복사 및 붙여넣기 | 완료 |  |
@@ -123,43 +123,43 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 고객을 위
 | 구성 요소 자리 표시자로 컨텐츠 드래그 | 완료 |  |
 | 구성 요소 자동 생성 기능을 사용하여 컨텐츠를 parsys 자리 표시자로 직접 드래그 | 완료 |  |
 
-## 기능 상태: 텍스트, 표 및 이미지 편집기 {#feature-status-text-table-and-image-editors}
+## 기능 상태:텍스트, 표 및 이미지 편집기 {#feature-status-text-table-and-image-editors}
 
 클래식 UI 텍스트, 표 및 이미지 편집기의 기능 목록과 터치 지원 UI의 상태입니다.
 
 | 기능 | 상태 | 주석 |
 |--- |--- |--- |
 | 리치 텍스트 편집기 | 완료 | Usable in-place, in dialog, in full screen. |
-| RTE 플러그인 활성화/비활성화 | 완료 | 템플릿 편집기를 사용하여 [수행할 수 있습니다](/help/sites-authoring/templates.md). |
+| RTE 플러그인 활성화/비활성화 | 완료 | [템플릿 편집기](/help/sites-authoring/templates.md)를 사용하여 수행할 수 있습니다. |
 | 일반 텍스트에 RTE 사용 | 완료 |  |
-| RTE 플러그인: 링크 및 연결 | 완료 |  |
-| RTE 플러그인: 문자 맵 | 완료 |  |
-| RTE 플러그인: 복사/붙여넣기 | 완료 |  |
-| RTE 플러그인: Microsoft Word에서 붙여넣기 | 완료 |  |
-| RTE 플러그인: 찾기 및 바꾸기 | 완료 |  |
-| RTE 플러그인: 텍스트 형식(굵게, ...) | 완료 |  |
-| RTE 플러그인: 하위 및 위 첨자 | 완료 |  |
-| RTE 플러그인: 양쪽 맞춤 | 완료 |  |
-| RTE 플러그인: 목록(글머리 기호/번호) | 완료 |  |
-| RTE 플러그인: 단락 서식 | 완료 |  |
-| RTE 플러그인: 텍스트 스타일 | 완료 |  |
-| RTE 플러그인: 소스 편집기(HTML 편집) | 완료 | 대화 상자 및 전체 화면에서만 사용할 수 있습니다. |
-| RTE 플러그인: 맞춤법 검사기 | 완료 |  |
-| RTE 플러그인: 표(포함된 테이블 편집기) | 완료 |  |
-| RTE 플러그인: 실행 취소/다시 실행 | 완료 |  |
-| RTE 플러그인: 인라인 이미지 허용 | 완료 |  |
+| RTE 플러그인:링크 및 연결 | 완료 |  |
+| RTE 플러그인:문자 맵 | 완료 |  |
+| RTE 플러그인:복사/붙여넣기 | 완료 |  |
+| RTE 플러그인:Microsoft Word에서 붙여넣기 | 완료 |  |
+| RTE 플러그인:찾기 및 바꾸기 | 완료 |  |
+| RTE 플러그인:텍스트 형식(굵게, ...) | 완료 |  |
+| RTE 플러그인:하위 및 위 첨자 | 완료 |  |
+| RTE 플러그인:양쪽 맞춤 | 완료 |  |
+| RTE 플러그인:목록(글머리 기호/번호) | 완료 |  |
+| RTE 플러그인:단락 서식 | 완료 |  |
+| RTE 플러그인:텍스트 스타일 | 완료 |  |
+| RTE 플러그인:소스 편집기(HTML 편집) | 완료 | 대화 상자 및 전체 화면에서만 사용할 수 있습니다. |
+| RTE 플러그인:맞춤법 검사기 | 완료 |  |
+| RTE 플러그인:표(포함된 테이블 편집기) | 완료 |  |
+| RTE 플러그인:실행 취소/다시 실행 | 완료 |  |
+| RTE 플러그인:인라인 이미지 허용 | 완료 |  |
 | 테이블 편집기 | 완료 | Usable in-place, in dialog, in full screen. |
 | 표 셀로 이미지 드래그 | 완료 | 사용 가능한 인라인 |
 | 이미지 편집기 | 완료 | Usable in-place, in dialog, in full screen. |
-| IPE 플러그인 활성화/비활성화 | 완료 | AEM 6.3은 템플릿 편집기에서 [UI를 도입했습니다](/help/sites-authoring/templates.md). |
-| IPE 플러그인: 자르기 | 완료 |  |
-| IPE 플러그인: 플립 | 완료 |  |
-| IPE 플러그인: 실행 취소/다시 실행 | 완료 |  |
-| IPE 플러그인: 이미지 맵 | 완료 |  |
-| IPE 플러그인: 회전 | 완료 |  |
-| IPE 플러그인: 확대/축소 | 완료 |  |
+| IPE 플러그인 활성화/비활성화 | 완료 | AEM 6.3은 [템플릿 편집기](/help/sites-authoring/templates.md)에서 UI를 도입했습니다. |
+| IPE 플러그인:자르기 | 완료 |  |
+| IPE 플러그인:플립 | 완료 |  |
+| IPE 플러그인:실행 취소/다시 실행 | 완료 |  |
+| IPE 플러그인:이미지 맵 | 완료 |  |
+| IPE 플러그인:회전 | 완료 |  |
+| IPE 플러그인:확대/축소 | 완료 |  |
 
-## 기능 상태: 툴 {#feature-status-tools}
+## 기능 상태:도구 {#feature-status-tools}
 
 클래식 UI에 있는 다양한 도구 목록과 터치 지원 UI의 상태입니다.
 
@@ -167,13 +167,13 @@ AEM 6.5로 업그레이드하는 고객을 위한 권장 사항은 고객을 위
 |--- |--- |--- |
 | 작업 관리 | 대체됨 | 6.0 프로젝트 및 작업 소개 |
 | Workflow 받은 편지함 | 완료 |  |
-| 페이지 템플릿 구성(`/etc/workflow/wcm/templates.html`)으로 워크플로우 | 누락 | 클래식 UI 사용. |
+| 페이지 템플릿 구성 워크플로(`/etc/workflow/wcm/templates.html`) | 누락 | 클래식 UI 사용. |
 | 관리자 UI 태그 지정 | 완료 |  |
 | MSM/블루프린트 제어 센터 | 완료 |  |
 | Blueprint Manager UI | 완료 |  |
 | 롤아웃 구성 UI | 누락 | 클래식 UI 사용. |
 | 사용자, 그룹 및 권한 UI | 대부분 완료 | 고급 권한 편집의 경우 클래식 UI를 사용합니다. |
-| 삭제 버전(`/etc/versioning/purge.html`) | 누락 | 클래식 UI 사용. |
+| 버전 제거(`/etc/versioning/purge.html`) | 누락 | 클래식 UI 사용. |
 | 외부 링크 확인 (`/etc/linkchecker.html`) | 누락 | 클래식 UI 사용. |
 | 벌크 편집기(`/etc/importers/bulkeditor.html`) | 누락 | 클래식 UI 사용. |
 | 축소판을 업로드하여 추가 또는 덮어쓰기 | 누락 | 클래식 UI 사용. |
