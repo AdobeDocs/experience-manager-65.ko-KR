@@ -123,7 +123,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 
    1. **서비스 루트** 필드의 값을 입력합니다. Dynamics 인스턴스로 이동하여 **개발자 리소스**&#x200B;로 이동하여 서비스 루트 필드에 대한 값을 확인합니다. 예: https://&lt;테넌트 이름>/api/data/v9.1/
 
-   1. Replace the default values in the **Client Id**(also referred to as **Application ID**), **Client Secret**, **OAuth URL**, **Refresh Token URL**, **Access Token URL**, and **Resource** fields with values from your Microsoft Dynamics service configuration. 양식 데이터 모델로 Microsoft Dynamics를 구성하려면 **리소스** 필드에 동적 인스턴스 URL을 지정해야 합니다. 서비스 루트 URL을 사용하여 동적 인스턴스 URL을 파생합니다. 예: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. **클라이언트 ID**(예: **응용 프로그램 ID**), **클라이언트 암호**, **OAuth URL**, **새로 고침 토큰 URL**, &lt;a11의 기본값을 대체합니다. 0/>액세스 토큰 URL **및**&#x200B;리소스&#x200B;**필드에 Microsoft Dynamics 서비스 구성의 값이 있습니다.** 양식 데이터 모델로 Microsoft Dynamics를 구성하려면 **리소스** 필드에 동적 인스턴스 URL을 지정해야 합니다. 서비스 루트 URL을 사용하여 동적 인스턴스 URL을 파생합니다. 예: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Microsoft Dynamics의 인증 프로세스를 위해 **인증 범위** 필드에 **openid**&#x200B;을 지정합니다.
 
