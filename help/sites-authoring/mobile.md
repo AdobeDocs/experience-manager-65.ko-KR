@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 89%
 
 ---
 
@@ -23,16 +26,16 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
+>기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. ([다른 채널용 Live Copy 만들기](/help/sites-administering/msm-livecopy.md)를 참조하십시오.)
 >
->AEM 개발자는 새 장치 그룹을 만들 수 있습니다. (See [Creating Device Group Filters](/help/sites-developing/groupfilters.md).)
+>AEM 개발자는 새 장치 그룹을 만들 수 있습니다. ([장치 그룹 필터 만들기](/help/sites-developing/groupfilters.md)를 참조하십시오.)
 
 다음 절차를 사용하여 모바일 페이지를 작성하십시오.
 
-1. From global navigation open the **Sites** console.
-1. Open the page **We.Retail** -> **United States** -> **English**.
+1. 전역 탐색에서 **Sites** 콘솔을 엽니다.
+1. **We.Retail** -> **미국** -> **영어** 페이지를 엽니다.
 
-1. Switch to **Preview** mode.
+1. **미리 보기** 모드로 전환합니다.
 1. 페이지 맨 위에서 장치 아이콘을 클릭하여 원하는 에뮬레이터로 전환합니다.
 1. 구성 요소 브라우저에 있는 구성 요소를 페이지에 드래그하여 놓습니다.
 
