@@ -33,10 +33,10 @@ Adobe은 이 문서의 다음 정보에 따라 플랫폼에서 Adobe Experience 
 
 Adobe Experience Manager 설치를 위한 최소 요구 사항:
 
-* 설치된 Java Platform, Standard Edition JDK 또는 기타 지원되는 [Java 가상 시스템](#java-virtual-machines)
+* 설치된 Java Platform, Standard Edition JDK 또는 기타 지원 [Java Virtual Machines](#java-virtual-machines)
 * Experience Manager 빠른 시작 파일(독립 실행형 JAR 또는 웹 애플리케이션 배포 WAR)
 
-### 최소 크기 요구 사항 {#minimum-sizing-requirements}
+### 최소 크기 지정 요구 사항 {#minimum-sizing-requirements}
 
 Adobe Experience Manager 실행을 위한 최소 요구 사항:
 
@@ -45,14 +45,14 @@ Adobe Experience Manager 실행을 위한 최소 요구 사항:
 
 >[!NOTE]
 >
->* 디지털 자산 사용 사례에는 더 많은 기본 메모리가 필요합니다. 자세한 내용은 [배포 및 유지 관리를](/help/sites-deploying/deploy.md#default-local-install) 참조하십시오.
->* [AEM Forms 추가](/help/forms/using/installing-configuring-aem-forms-osgi.md) 패키지의 경우 15GB의 임시 공간이 필요합니다.
+>* 디지털 자산 사용 사례에는 더 많은 기본 메모리가 필요합니다. 자세한 내용은 [배포 및 유지 관리](/help/sites-deploying/deploy.md#default-local-install)를 참조하십시오.
+>* [AEM Forms Add-](/help/forms/using/installing-configuring-aem-forms-osgi.md) On 패키지의 경우 15GB의 임시 공간이 필요합니다.
 
 >
 
 
 
-자세한 내용은 [하드웨어 크기 조정 지침을 참조하십시오](/help/managing/hardware-sizing-guidelines.md).
+자세한 내용은 [하드웨어 크기 조정 지침](/help/managing/hardware-sizing-guidelines.md)을 참조하십시오.
 
 ### 지원 수준 {#support-levels}
 
@@ -87,7 +87,7 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
-### Java 가상 시스템 {#java-virtual-machines}
+### Java 가상 컴퓨터 {#java-virtual-machines}
 
 응용 프로그램을 실행하려면 Java Virtual Machine이 필요하며, JDK(Java Development Kit) 배포에서 제공됩니다.
 
@@ -134,12 +134,12 @@ Adobe Experience Manager은 다음 버전의 Java 가상 시스템으로 작동�
  </tbody>
 </table>
 
-1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10, and Java 12 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). 프로덕션 환경에서 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다.
+1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle이 출시한 LTS가 아닌 버전입니다([Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html) 참조). 프로덕션 환경에서 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다.
 
 1. IBM JRE는 WebSphere Application Server와 함께 지원됩니다.
-1. 공개 업데이트 종료 이후 LTS 릴리스의 모든 유지 관리 업데이트를 비롯한 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술을 사용하는 모든 AEM 고객을 위해 Adobe에서 직접 지원됩니다. 자세한 내용은 [Adobe Experience Manager Q&amp;A에 대한 Oracle Java 지원을](assets/adobe-oracle-java-license-agreement.pdf) 참조하십시오.
+1. 공개 업데이트가 종료된 이후에도 LTS 릴리스의 모든 유지 관리 업데이트를 비롯한 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술을 사용하는 모든 AEM 고객을 위해 Adobe에서 직접 지원됩니다. 자세한 내용은 Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf)에 대한 [Oracle Java 지원을 참조하십시오.
 
-### 스토리지 및 지속성 {#storage-persistence}
+### 저장 및 지속성 {#storage-persistence}
 
 Adobe Experience Manager 저장소를 배포하는 다양한 옵션이 있습니다. 지원되는 기술 및 스토리지 옵션은 다음 목록을 참조하십시오.
 
@@ -147,10 +147,10 @@ Adobe Experience Manager 저장소를 배포하는 다양한 옵션이 있습니
 |---|---|---|
 | **TAR 파일이 있는 파일 시스템** `[1]` | 저장소 | A:지원됨 |
 | **데이터 저장소가 있는 파일 시스템** `[1]` | 이진 파일 | A:지원됨 |
-| 파일 시스템의 TAR 파일에 바이너리 저장 `[1]` | 이진 파일 | Z:프로덕션에서 지원되지 않음 |
+| 파일 시스템 `[1]`의 TAR 파일에 바이너리 저장 | 이진 파일 | Z:프로덕션에서 지원되지 않음 |
 | Amazon S3 | 이진 파일 | A:지원됨 |
 | Microsoft Azure Blob 저장소 | 이진 파일 | A:지원됨 |
-| MongoDB Enterprise 4.0 | 저장소 | A:지원됨 `[2, 3]` |
+| MongoDB Enterprise 4.0 | 저장소 | A:지원되는 `[2, 3]` |
 | MongoDB Enterprise 3.6 | 저장소 | Z:지원되지 않음 |
 | MongoDB Enterprise 3.4 | 저장소 | Z:지원되지 않음 |
 | IBM DB2 10.5 | 저장소 및 Forms 데이터베이스 | R:제한된 지원 `[4]` |
@@ -166,13 +166,13 @@ Adobe Experience Manager 저장소를 배포하는 다양한 옵션이 있습니
 
 >[!NOTE]
 >
->AEM Communities [기능에](/help/communities/deploy-communities.md) 대한 자세한 내용은 커뮤니티 배포를 참조하십시오.
+>AEM Communities 기능에 대한 자세한 내용은 [커뮤니티 배포](/help/communities/deploy-communities.md)를 참조하십시오.
 
 >[!NOTE]
 >
->MongoDB는 타사 소프트웨어이며 AEM 라이선스 패키지에 포함되어 있지 않습니다. 자세한 내용은 MongoDB [라이선스 정책](https://www.mongodb.org/about/licensing/) 페이지를 참조하십시오.
+>MongoDB는 타사 소프트웨어이며 AEM 라이선스 패키지에 포함되어 있지 않습니다. 자세한 내용은 [MongoDB 라이선스 정책](https://www.mongodb.org/about/licensing/) 페이지를 참조하십시오.
 >
->MongoDB를 사용하여 AEM 배포를 최대한 활용하려면 MongoDB Enterprise 버전의 라이선스를 라이선싱하여 전문가 지원을 받을 것을 권장합니다. 자세한 [내용은 권장 배포를](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) 참조하십시오.
+>MongoDB를 사용하여 AEM 배포를 최대한 활용하려면 MongoDB Enterprise 버전의 라이선스를 라이선싱하여 전문가 지원을 받을 것을 권장합니다. 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk)를 참조하십시오.
 >
 >라이센스에는 표준 복제본 세트가 포함되어 있으며, 이는 작성자 또는 게시 배포에 사용할 수 있는 1개의 기본 인스턴스와 2개의 보조 인스턴스로 구성됩니다.
 >
@@ -180,7 +180,7 @@ Adobe Experience Manager 저장소를 배포하는 다양한 옵션이 있습니
 >
 >Adobe 고객 지원 센터는 AEM에서 MongoDB 사용과 관련된 자격 있는 문제를 지원합니다.
 >
->자세한 내용은 Adobe Experience Manager용 [MongoDB 페이지를 참조하십시오](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+>자세한 내용은 Adobe Experience Manager용 [MongoDB 페이지](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -200,11 +200,11 @@ Adobe Experience Manager은 독립 실행형 서버(quickstart JAR 파일)로 �
 |---|---|
 | **Quickstart 내장된 Servlet Engine(Jetty 9.4)** | A:지원됨 |
 | Oracle WebLogic Server 12.2(12cR2) | Z:지원되지 않음 |
-| 웹 프로필 7.0 및 IBM JRE 1.8이 포함된 IBM WebSphere Application Server Continuous Delivery(LibertyProfile) | R:새로운 계약에 대한 제한된 지원 `[2]` |
-| IBM WebSphere Application Server 9.0 및 IBM JRE 1.8 | R:새로운 계약에 대한 제한된 지원 `[1]` `[2]` |
-| Apache Tomcat 8.5.x | R:새로운 계약에 대한 제한된 지원 `[2]` |
+| 웹 프로필 7.0 및 IBM JRE 1.8이 포함된 IBM WebSphere Application Server Continuous Delivery(LibertyProfile) | R:새 계약에 대한 제한된 지원 `[2]` |
+| IBM WebSphere Application Server 9.0 및 IBM JRE 1.8 | R:새 계약에 대한 제한된 지원 `[1]` `[2]` |
+| Apache Tomcat 8.5.x | R:새 계약에 대한 제한된 지원 `[2]` |
 | JBoss 애플리케이션 서버가 있는 JBoss EAP 7.2.x | Z:지원되지 않음 |
-| JBoss 응용 프로그램 서버가 있는 JBoss EAP 7.1.4 | R:새로운 계약에 대한 제한된 지원 `[1]` `[2]` |
+| JBoss 응용 프로그램 서버가 있는 JBoss EAP 7.1.4 | R:새 계약에 대한 제한된 지원 `[1]` `[2]` |
 | JBoss 애플리케이션 서버가 있는 JBoss EAP 7.0.x | Z:지원되지 않음 |
 
 1. AEM Forms과 함께 배포하는 경우 권장됩니다.
@@ -216,16 +216,16 @@ Adobe Experience Manager은 프로덕션 환경에서 다음과 같은 서버 �
 
 | **플랫폼** | **지원 수준** |
 |---|---|
-| **Linux, Red Hat 배포 기반** | A:지원됨 `[1]` `[3]` |
-| Linux, Debian 배포 기반 우분투 | A:지원됨 `[2]` |
+| **Linux, Red Hat 배포 기반** | A:지원되는 `[1]` `[3]` |
+| Linux, Debian 배포 기반 우분투 | A:지원되는 `[2]` |
 | Linux, SUSE 배포 기반 | A:지원됨 |
 | Microsoft Windows Server 2019 `[4]` | R:새로운 계약에 대한 제한된 지원 |
-| Microsoft Windows Server 2016 `[4]` | R:새로운 계약에 대한 제한된 지원 `[5]` |
+| Microsoft Windows Server 2016 `[4]` | R:새 계약에 대한 제한된 지원 `[5]` |
 | Microsoft Windows Server 2012 R2 | Z:지원되지 않음 |
 | Oracle Solaris 11 | Z:지원되지 않음 |
 | IBM AIX 7.2 | Z:지원되지 않음 |
 
-1. Linux 커널 2.6, 3.x 및 4.x에는 Red Hat Enterprise Linux, CentOS, Oracle Linux, Amazon Linux 등 Red Hat 배포에서 파생되는 제품이 포함되어 있습니다. AEM Forms 추가 기능은 CentOS 7 및 Red Hat Enterprise Linux 7에서만 지원됩니다.
+1. Linux Kernel 2.6, 3.x 및 4.x에는 Red Hat Enterprise Linux, CentOS, Oracle Linux, Amazon Linux 등 Red Hat 배포판에서의 파생물이 포함됩니다. AEM Forms 추가 기능은 CentOS 7 및 Red Hat Enterprise Linux 7에서만 지원됩니다.
 1. AEM Forms은 Ubuntu 16.04에서만 지원됩니다.
 1. Adobe Managed Services에서 지원되는 Linux 배포
 1. Microsoft Windows 제작 배포는 6.5로 업그레이드하고 제작 과정 이외의 다른 사용자도 사용할 수 있습니다. 새로운 배포는 AEM Sites 및 자산에 대한 요청 시 가능합니다.
@@ -235,7 +235,7 @@ Adobe Experience Manager은 프로덕션 환경에서 다음과 같은 서버 �
 
 Adobe Experience Manager은 Microsoft Azure 및 Amazon 웹 서비스(AWS)와 같은 클라우드 컴퓨팅 환경의 가상 컴퓨터에서 이 페이지에 나열된 기술 요구 사항을 준수하고 Adobe 표준 지원 약관에 따라 실행됩니다.
 
-Adobe은 Azure 또는 AWS에 AEM을 배포하기 위해 Adobe Managed Services를 사용하는 것이 좋습니다. Adobe Managed Services는 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포 및 운영하는 경험과 기술을 전문가에게 제공합니다. Adobe [Managed Services에 대한 추가 설명서를 참조하십시오](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+Adobe은 Azure 또는 AWS에 AEM을 배포하기 위해 Adobe Managed Services를 사용하는 것이 좋습니다. Adobe Managed Services는 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포 및 운영하는 경험과 기술을 전문가에게 제공합니다. Adobe Managed Services[에 대한 추가 설명서를 참조하십시오.](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)
 
 Azure 또는 AWS 또는 기타 클라우드 컴퓨팅 환경에 AEM을 배포하는 다른 모든 경우 Adobe의 지원이 이 페이지에 나열된 기술 사양에 따라 가상 컴퓨팅 환경에 포함됩니다. 클라우드 서비스가 Azure Blob 스토리지 또는 AWS S3와 같이 이 페이지에 나열된 기술 요구 사항의 일부로 특별히 지원되지 않는 한, 이러한 클라우드 환경에서 실행되는 AEM과 관련된 보고된 문제는 클라우드 컴퓨팅 환경 관련 클라우드 서비스와 독립적으로 재생산되어야 합니다.
 
@@ -329,7 +329,7 @@ AEM 사용자 인터페이스는 더 큰 스크린(일반적으로 노트북 및
  </tbody>
 </table>
 
-1. Firefox ESR(Extended Support Release) [이 릴리스에 대한 자세한 내용은 mozilla.org를 참조하십시오.](https://www.mozilla.org/en-US/firefox/organizations/faq/)
+1. Firefox [의 ESR(Extended Support Release)에 대한 자세한 내용을 mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
 1. Apple iPad 지원
 
 ### 지원되는 웹 사이트 브라우저 {#supported-browsers-for-websites}
@@ -348,7 +348,7 @@ Microsoft Windows 7+와 SSL을 통해 보안이 유지되지 않는 AEM 인스�
 
 1. 2개 이상의 값을 사용하여 이 하위 키에 BasicAuthLevel 레지스트리 항목을 추가합니다.
 
-Windows에서 WebDav 클라이언트의 응답을 향상시키려면 [Microsoft 지원 KB 2445570을 참조하십시오.](https://support.microsoft.com/kb/2445570)
+Windows에서 WebDav 클라이언트의 응답을 향상시키려면 [Microsoft 지원 KB 2445570](https://support.microsoft.com/kb/2445570)을 참조하십시오.
 
 ## 추가 플랫폼 노트 {#additional-platform-notes}
 
@@ -362,25 +362,29 @@ Adobe Experience Manager(인스턴스, 발송자)의 모든 요소는 IPv4 및 I
 
 즉, IP 주소를 지정해야 할 경우 다음 중에서 선택할 수 있습니다.
 
-* 예를 들어 IPv6 주소 `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* IPv6 주소
+예: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* 예를 들어 IPv4 주소 `https://123.1.1.4:4502`
+* IPv4 주소
+예: `https://123.1.1.4:4502`
 
-* 예를 들어, `https://www.yourserver.com:4502`
+* 서버 이름
+예를 들어 `https://www.yourserver.com:4502`
 
-* IPv4 및 IPv6 네트워크 설치에 대한 기본 대/소문자 `localhost` 가 해석됩니다(예: `https://localhost:4502`
+* `localhost`의 기본 대/소문자 구분은 IPv4 및 IPv6 네트워크 설치에 대해 해석됩니다.
+예를 들어 `https://localhost:4502`
 
-### AEM Dynamic Media Add-on 요구 사항 {#requirements-for-aem-dynamic-media-add-on}
+### AEM Dynamic Media Add-on {#requirements-for-aem-dynamic-media-add-on} 요구 사항
 
-AEM Dynamic Media는 기본적으로 비활성화됩니다. 다이내믹 미디어 [를 활성화하려면 여기를 참조하십시오](/help/assets/config-dynamic.md#enabling-dynamic-media).
+AEM Dynamic Media는 기본적으로 비활성화됩니다. [다이내믹 미디어 활성화](/help/assets/config-dynamic.md#enabling-dynamic-media)를 보려면 여기를 참조하십시오.
 
 Dynamic Media가 활성화되면 다음과 같은 추가 기술 요구 사항이 적용됩니다.
 
 >[!NOTE]
 >
->이러한 시스템 요구 사항은 **다이내믹 미디어 - 하이브리드 모드를 사용하는 경우에만** 적용됩니다.다이내믹 미디어 - 하이브리드 모드에는 포함된 이미지 서버가 있으며, 이는 특정 운영 체제에서만 인증됩니다.
+>이러한 시스템 요구 사항 **만 동적 미디어 - 하이브리드 모드를 사용하는 경우 적용다이내믹 미디어 - 하이브리드 모드에는 포함된 이미지 서버가 있으며, 이는 특정 운영 체제에서만 인증됩니다.**
 >
->동적 미디어 - Scene7 모드(즉, **dynamicmedia_scene7** 런모드)를 실행하는 다이내믹 미디어 고객의 경우 추가 시스템 요구 사항이 없습니다.aem과 동일한 시스템 요구 사항만 해당합니다. 다이내믹 미디어 - Scene7 모드 아키텍처는 AEM에 임베드된 서비스가 아니라 클라우드 기반 이미지 서비스를 사용합니다.
+>동적 미디어 - Scene7 모드(즉, **dynamicmedia_scene7** 실행 모드)를 실행하는 다이내믹 미디어 고객의 경우 추가 시스템 요구 사항이 없습니다.aem과 동일한 시스템 요구 사항만 해당합니다. 다이내믹 미디어 - Scene7 모드 아키텍처는 AEM에 임베드된 서비스가 아니라 클라우드 기반 이미지 서비스를 사용합니다.
 
 #### 하드웨어 {#hardware}
 
@@ -400,11 +404,11 @@ Linux에서 Dynamic Media를 사용하는 경우 다음 전제 조건을 충족�
 
 >[!NOTE]
 >
->LC_CTYPE이 같지 않도록 로케일이 설정된 경우 다이내믹 미디어 `en_US.UTF-8`가 작동하지 않습니다. 명령 프롬프트에서 해당 값이 &quot;locale&quot;이라는 유형을 확인합니다. 이 값을 설정하지 않은 경우 AEM을 실행하기 전에 &quot;export LC_CTYPE=&quot;를 입력하여 LC_CTYPE 환경 변수를 빈 문자열로 설정합니다.
+>LC_CTYPE이 `en_US.UTF-8`과(와) 같지 않도록 로케일이 설정된 경우 동적 미디어가 작동하지 않습니다. 명령 프롬프트에서 해당 값이 &quot;locale&quot;이라는 유형을 확인합니다. 이 값을 설정하지 않은 경우 AEM을 실행하기 전에 &quot;export LC_CTYPE=&quot;를 입력하여 LC_CTYPE 환경 변수를 빈 문자열로 설정합니다.
 
 >[!NOTE]
 >
->**SELinux 비활성화:** 이미지 제공은 SELinux가 켜진 상태에서 작동하지 않습니다. 이 옵션은 기본적으로 활성화되어 있습니다. 이 문제를 해결하려면 **/etc/seleclinux/config** 파일을 편집하고 SELinux 값을 다음 위치에서 변경하십시오.
+>**SELinux:** 이미지 제공 기능이 SELinux를 켜는 경우 작동하지 않습니다. 이 옵션은 기본적으로 활성화되어 있습니다. 이 문제를 해결하려면 **/etc/seleclinux/config** 파일을 편집하고 SELinux 값을 다음 위치에서 변경하십시오.
 >
 >`SELINUX=enforcing` **끝** `SELINUX=disabled`
 
@@ -414,11 +418,11 @@ Linux에서 Dynamic Media를 사용하는 경우 다음 전제 조건을 충족�
 >
 >다중 노드 구문은 다른 노드가 소진되기 전에 하나 이상의 노드에서 메모리를 소진할 수 있습니다. 메모리 소모가 발생하는 경우 커널은 사용 가능한 메모리가 있어도 프로세스를 종료하기로 결정할 수 있습니다(예: 이미지 서버 또는 플랫폼 서버).
 >
->따라서 Adobe은 시스템을 실행 중인 경우 커널이 이러한 프로세스를 죽이는 것을 방지하기 위해 **numa=off** boot 옵션을 사용하여 NUMA를 끄는 것이 좋습니다.
+>따라서 Adobe은 시스템을 실행 중인 경우 커널이 이러한 프로세스를 죽이는 것을 방지하기 위해 **numa=off** 부트 옵션을 사용하여 NUMA를 끄는 것이 좋습니다.
 
 >[!NOTE]
 >
->**서버 호스트 이름은 다음 문제를 해결해야 합니다.** 서버의 호스트 이름이 IP 주소로 확인되는지 확인하십시오. 그렇지 않을 경우 정규화된 호스트 이름과 IP 주소를 **/etc/hosts에 추가하십시오**.
+>**서버 호스트 이름이** 해결되어야 합니다.서버의 호스트 이름이 IP 주소로 확인되는지 확인하십시오. 그렇지 않을 경우 정규화된 호스트 이름과 IP 주소를 **/etc/hosts**&#x200B;에 추가하십시오.
 >
 >`<ip address> <fully qualified hostname>`
 
@@ -431,15 +435,15 @@ Windows에서 Dynamic Media를 사용하려면 x64 및 x86용 Microsoft Visual S
 
 Windows x64의 경우:
 
-* https://www.microsoft.com/en-us/download/details.aspx?id=13523에서 Microsoft Visual Studio 2010 재배포 가능 버전을 [다운로드하십시오.](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
-* https://www.microsoft.com/en-us/download/details.aspx?id=40784에서 Microsoft Visual Studio 2013 재배포 가능 버전을 [다운로드하십시오.](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* https://www.microsoft.com/en-us/download/details.aspx?id=48145에서 Microsoft Visual Studio 2015 재배포 가능 버전을 [다운로드하십시오.](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/en-us/download/details.aspx?id=13523)에서 Microsoft Visual Studio 2010 재배포 가능 버전을 다운로드하십시오.
+* [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)에서 Microsoft Visual Studio 2013 재배포 가능 버전을 다운로드하십시오.
+* [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)에서 Microsoft Visual Studio 2015 재배포 가능 버전을 다운로드하십시오.
 
 Windows x86의 경우:
 
-* https://www.microsoft.com/en-in/download/details.aspx?id=5555에서 Microsoft Visual Studio 2010 재배포 가능 버전을 [다운로드하십시오.](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
-* https://www.microsoft.com/en-in/download/details.aspx?id=40769에서 Microsoft Visual Studio 2013 재배포 가능 버전을 [다운로드하십시오.](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* https://www.microsoft.com/en-us/download/details.aspx?id=52685에서 Microsoft Visual Studio 2015 재배포 가능 버전을 [다운로드하십시오.](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)에서 Microsoft Visual Studio 2010 재배포 가능 버전을 다운로드하십시오.
+* [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)에서 Microsoft Visual Studio 2013 재배포 가능 버전을 다운로드하십시오.
+* [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)에서 Microsoft Visual Studio 2015 재배포 가능 버전을 다운로드하십시오.
 
 #### MacOS {#macos}
 
@@ -455,7 +459,7 @@ Windows x86의 경우:
    <th><p><strong>PDF로 변환 지원 포맷</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 클래식 트랙</a> 최신 버전</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic </a> tracklatest 버전</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
   </tr>
   <tr>
@@ -491,12 +495,12 @@ Windows x86의 경우:
 >
 >추가:
 >
->* PDF Generator를 변환하려면 32비트 버전의 [Acrobat 2017 클래식 트랙 버전 17.011.30078 이상이](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 필요합니다.
+>* PDF Generator를 사용하려면 32비트 버전의 [Acrobat 2017 클래식 트랙 버전 17.011.30078 이상](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)이 필요합니다.
 >* PDF Generator는 변환에 필요한 32비트 Microsoft Office Professional Plus 및 기타 소프트웨어만 지원합니다.
 >* PDF Generator는 Microsoft Office 365를 지원하지 않습니다.
 >* OpenOffice용 PDF Generator 변환은 Windows 및 Linux에서만 지원됩니다.
 >* OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
->* Acrobat 버전은 PDF Generator 기능을 사용하도록 AEM Forms에 번들로 포함되어 있습니다. 번들로 제공되는 버전은 AEM Forms 라이선스 기간 동안 AEM Forms PDF Generator와 함께 사용할 수 있는 AEM Forms에서만 프로그램 방식으로 액세스해야 합니다. 자세한 내용은 배포(온프레미스[또는](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) Managed Services [](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))에 따라 AEM Forms 제품 설명을 참조하십시오.&quot;
+>* Acrobat 버전은 PDF Generator 기능을 사용하도록 AEM Forms에 번들로 포함되어 있습니다. 번들로 제공되는 버전은 AEM Forms 라이선스 기간 동안 AEM Forms PDF Generator와 함께 사용할 수 있는 AEM Forms에서만 프로그램 방식으로 액세스해야 합니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명을 참조하십시오([온-프레미스](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 
    >
    >
@@ -512,13 +516,13 @@ XMP 쓰기가 지원되고 다음 플랫폼 및 파일 포맷에 대해 활성�
 
 * **운영 체제:**
 
-   * Linux(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원). 32비트 클라이언트 라이브러리를 설치하는 단계는 64비트 RedHat Linux에서 XMP 추출 및 [다시 쓰기를 활성화하는 방법을 참조하십시오](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+   * Linux(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원). 32비트 클라이언트 라이브러리를 설치하는 단계는 64비트 RedHat Linux[에서 XMP 추출 및 다시 쓰기를 활성화하는 방법을 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)
 
    * Windows Server
    * Mac OS X(64비트)
 
 * **파일 형식**:JPEG, PNG, TIFF, PDF, INDD, AI 및 EPS.
 
-### Linux에서 메타데이터가 많은 에셋을 처리하기 위한 AEM Assets 요구 사항 {#assetsonlinux}
+### Linux {#assetsonlinux}에서 메타데이터가 많은 에셋을 처리하기 위한 AEM Assets 요구 사항
 
-XMPFilesProcessor 프로세스를 사용하려면 라이브러리 GLIBC_2.14가 필요합니다. GLIBC_2.14를 포함하는 Linux 커널(예: Linux 커널 버전 3.1.x)을 사용합니다.PSD 파일과 같은 많은 양의 메타데이터가 포함된 에셋 처리 성능이 향상됩니다. 이전 버전의 GLIBC를 사용하면 로그에 오류가 발생합니다 `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+XMPFilesProcessor 프로세스를 사용하려면 라이브러리 GLIBC_2.14가 필요합니다. GLIBC_2.14를 포함하는 Linux 커널(예: Linux 커널 버전 3.1.x)을 사용합니다.PSD 파일과 같은 많은 양의 메타데이터가 포함된 에셋 처리 성능이 향상됩니다. 이전 버전의 GLIBC를 사용하면 `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`으로 시작하는 로그에 오류가 발생합니다.
