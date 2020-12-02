@@ -22,18 +22,18 @@ ht-degree: 1%
 
 **XMP 유틸리티 서비스 정보**
 
-PDF 문서에는 메타데이터가 포함되어 있는데, 메타데이터는 텍스트 및 그래픽과 같이 문서의 내용과 구분되는 정보에 해당합니다. Adobe XMP(Extensible Metadata Platform)은 문서 메타데이터를 처리하기 위한 표준입니다.
+PDF 문서에는 메타데이터가 포함되어 있는데, 메타데이터는 텍스트 및 그래픽과 같이 문서의 내용과 구분되는 정보에 해당합니다. Adobe Extensible Metadata Platform(XMP)은 문서 메타데이터를 처리하기 위한 표준입니다.
 
 XMP 유틸리티 서비스는 PDF 문서에서 XMP 메타데이터를 검색 및 저장하고 XMP 메타데이터를 PDF 문서로 가져올 수 있습니다.
 
-XMP 유틸리티 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
+XMP 유틸리티 서비스를 사용하여 이러한 작업을 수행할 수 있습니다.
 
-* 메타데이터를 PDF 문서로 가져올 수 있습니다. (PDF [문서로 메타데이터 가져오기를 참조하십시오](xmp-utilities.md#importing-metadata-into-pdf-documents).)
-* PDF 문서에서 메타데이터 내보내기 (PDF [문서에서 메타데이터 내보내기를 참조하십시오](xmp-utilities.md#exporting-metadata-from-pdf-documents).)
+* 메타데이터를 PDF 문서로 가져올 수 있습니다. (PDF 문서로 메타데이터 가져오기[를 참조하십시오.)](xmp-utilities.md#importing-metadata-into-pdf-documents)
+* PDF 문서에서 메타데이터 내보내기 (PDF 문서에서 메타데이터 내보내기[를 참조하십시오.)](xmp-utilities.md#exporting-metadata-from-pdf-documents)
 
 >[!NOTE]
 >
->XMP 유틸리티 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>XMP 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
 ## PDF 문서로 메타데이터 가져오기 {#importing-metadata-into-pdf-documents}
 
@@ -41,7 +41,7 @@ XMP 유틸리티 Java 및 웹 서비스 API를 사용하여 프로그래밍 방�
 
 ![ww_metadatadialog](assets/ww_ww_metadatadialog.png)
 
-메타데이터를 프로그래밍 방식으로 PDF 문서로 가져오려면 메타데이터 값을 지정하는 기존 XML 문서를 사용하거나 유형의 개체를 사용할 수 있습니다 `XMPUtilityMetadata`. (AEM Forms [API 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
+메타데이터를 프로그래밍 방식으로 PDF 문서로 가져오려면 메타데이터 값을 지정하는 기존 XML 문서를 사용하거나 `XMPUtilityMetadata` 유형의 개체를 사용할 수 있습니다. ([AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)를 참조하십시오.)
 
 >[!NOTE]
 >
@@ -114,9 +114,9 @@ XMP 유틸리티 Java 및 웹 서비스 API를 사용하여 프로그래밍 방�
 
 >[!NOTE]
 >
->XMP 유틸리티 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>XMP 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
-### 단계 요약 {#summary-of-steps}
+### {#summary-of-steps} 단계 요약
 
 XMP 메타데이터를 PDF 문서로 가져오려면 다음 단계를 수행하십시오.
 
@@ -130,7 +130,7 @@ XMP 메타데이터를 PDF 문서로 가져오려면 다음 단계를 수행하�
 
 **XMPUplatyService 클라이언트 만들기**
 
-프로그래밍 방식으로 XMP 유틸리티 작업을 수행하려면 먼저 XMPUplatyService 클라이언트를 만들어야 합니다. Java API를 사용하면 `XMPUtilityServiceClient` 개체를 만들어 이러한 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 개체를 사용하여 이러한 작업을 수행할 수 `XMPUtilityServiceService` 있습니다.
+XMP 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 XMPUplatyService 클라이언트를 만들어야 합니다. Java API를 사용하면 `XMPUtilityServiceClient` 개체를 만들어 이 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `XMPUtilityServiceService` 개체를 사용하여 이 작업을 수행할 수 있습니다.
 
 **XMP 메타데이터 가져오기 작업 호출**
 
@@ -146,7 +146,7 @@ XMP 메타데이터를 PDF 문서로 가져오려면 다음 단계를 수행하�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Java API를 사용하여 XMP 메타데이터 가져오기 {#import-xmp-metadata-using-the-java-api}
+### Java API {#import-xmp-metadata-using-the-java-api}를 사용하여 XMP 메타데이터 가져오기
 
 XMP 유틸리티 API(Java)를 사용하여 XMP 메타데이터를 가져옵니다.
 
@@ -156,27 +156,27 @@ XMP 유틸리티 API(Java)를 사용하여 XMP 메타데이터를 가져옵니�
 
    >[!NOTE]
    >
-   >adobe-pdfility-client.jar 파일에는 XMP 유틸리티 서비스를 프로그래밍 방식으로 호출할 수 있는 클래스가 포함되어 있습니다.
+   >adobe-pdftenity-client.jar 파일에는 XMP 유틸리티 서비스를 프로그래밍 방식으로 호출할 수 있는 클래스가 포함되어 있습니다.
 
 1. XMPUplatyService 클라이언트 만들기
 
-   해당 생성자를 사용하여 `XMPUtilityServiceClient` 객체를 만들고 연결 속성이 포함된 `ServiceClientFactory` 객체를 전달합니다.
+   생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `XMPUtilityServiceClient` 개체를 만듭니다.
 
 1. XMP 메타데이터 가져오기 작업 호출
 
-   XMP 메타데이터를 수정하려면 `XMPUtilityServiceClient` 개체의 `importMetadata` 메서드나 해당 `importXMP` 메서드를 호출합니다.
+   XMP 메타데이터를 수정하려면 `XMPUtilityServiceClient` 개체의 `importMetadata` 메서드 또는 해당 `importXMP` 메서드를 호출합니다.
 
-   메서드를 사용하는 경우 `importMetadata` 다음 값을 전달합니다.
+   `importMetadata` 메서드를 사용하는 경우 다음 값을 전달합니다.
 
-   * PDF 파일을 나타내는 `com.adobe.idp.Document` 개체입니다.
-   * 가져올 메타데이터가 포함된 `XMPUtilityMetadata` 개체입니다.
+   * PDF 파일을 나타내는 `com.adobe.idp.Document` 개체
+   * 가져올 메타데이터를 포함하는 `XMPUtilityMetadata` 개체입니다.
 
-   메서드를 사용하는 경우 `importXMP` 다음 값을 전달합니다.
+   `importXMP` 메서드를 사용하는 경우 다음 값을 전달합니다.
 
-   * PDF 파일을 나타내는 `com.adobe.idp.Document` 개체입니다.
-   * 가져올 메타데이터를 포함하는 XML 파일을 나타내는 `com.adobe.idp.Document` 개체입니다.
+   * PDF 파일을 나타내는 `com.adobe.idp.Document` 개체
+   * 가져올 메타데이터가 포함된 XML 파일을 나타내는 `com.adobe.idp.Document` 개체
 
-   두 경우 모두 반환된 값은 새로 가져온 메타데이터가 있는 PDF 파일을 나타내는 `com.adobe.idp.Document` 오브젝트입니다. 그런 다음 이 개체를 디스크에 저장할 수 있습니다.
+   두 경우 모두 반환된 값은 새로 가져온 메타데이터가 있는 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체입니다. 그런 다음 이 개체를 디스크에 저장할 수 있습니다.
 
 **참고 항목**
 
@@ -186,14 +186,14 @@ XMP 유틸리티 API(Java)를 사용하여 XMP 메타데이터를 가져옵니�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API를 사용하여 XMP 메타데이터 가져오기 {#importing-xmp-metadata-using-the-web-service-api}
+### 웹 서비스 API {#importing-xmp-metadata-using-the-web-service-api}를 사용하여 XMP 메타데이터 가져오기
 
 XMP 유틸리티 웹 서비스 API를 사용하여 프로그래밍 방식으로 XMP 메타데이터를 가져오려면 다음 작업을 수행하십시오.
 
 1. 프로젝트 파일 포함
 
-   * XMP 유틸리티 서비스 WSDL 파일을 사용하는 Microsoft .NET 클라이언트 어셈블리를 만듭니다. (Base64 [인코딩을 사용하여 AEM Forms 호출을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Microsoft .NET 클라이언트 어셈블리를 참조하십시오. ( [Base64 인코딩을 사용하는 .NET 클라이언트 어셈블리 만들기를 참조하십시오](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
+   * XMP 유틸리티 서비스 WSDL 파일을 사용하는 Microsoft .NET 클라이언트 어셈블리를 만듭니다. (Base64 인코딩[을 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+   * Microsoft .NET 클라이언트 어셈블리를 참조하십시오. (Base64 인코딩[을 사용하는 .NET 클라이언트 어셈블리 만들기를 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
 1. XMPUplatyService 클라이언트 만들기
 
@@ -201,19 +201,19 @@ XMP 유틸리티 웹 서비스 API를 사용하여 프로그래밍 방식으로 
 
 1. XMP 메타데이터 가져오기 작업 호출
 
-   XMP 메타데이터를 수정하려면 `XMPUtilityServiceService` 개체의 `importMetadata` 메서드나 해당 `importXMP` 메서드를 호출합니다.
+   XMP 메타데이터를 수정하려면 `XMPUtilityServiceService` 개체의 `importMetadata` 메서드 또는 해당 `importXMP` 메서드를 호출합니다.
 
-   메서드를 사용하는 경우 `importMetadata` 다음 값을 전달합니다.
+   `importMetadata` 메서드를 사용하는 경우 다음 값을 전달합니다.
 
-   * PDF 파일을 나타내는 `BLOB` 개체입니다.
-   * 가져올 메타데이터가 포함된 `XMPUtilityMetadata` 개체입니다.
+   * PDF 파일을 나타내는 `BLOB` 개체
+   * 가져올 메타데이터를 포함하는 `XMPUtilityMetadata` 개체입니다.
 
-   메서드를 사용하는 경우 `importXMP` 다음 값을 전달합니다.
+   `importXMP` 메서드를 사용하는 경우 다음 값을 전달합니다.
 
-   * PDF 파일을 나타내는 `BLOB` 개체입니다.
-   * 가져올 메타데이터를 포함하는 XML 파일을 나타내는 `BLOB` 개체입니다.
+   * PDF 파일을 나타내는 `BLOB` 개체
+   * 가져올 메타데이터가 포함된 XML 파일을 나타내는 `BLOB` 개체
 
-   두 경우 모두 반환된 값은 새로 가져온 메타데이터가 있는 PDF 파일을 나타내는 `BLOB` 오브젝트입니다. 그런 다음 이 개체를 디스크에 저장할 수 있습니다.
+   두 경우 모두 반환된 값은 새로 가져온 메타데이터가 있는 PDF 파일을 나타내는 `BLOB` 개체입니다. 그런 다음 이 개체를 디스크에 저장할 수 있습니다.
 
 **참고 항목**
 
@@ -231,15 +231,15 @@ XMP 유틸리티 Java 및 웹 서비스 API를 사용하여 프로그래밍 방�
 
 >[!NOTE]
 >
->XMP 유틸리티 서비스에 대한 자세한 내용은 AEM Forms에 대한 [서비스 참조를 참조하십시오](https://www.adobe.com/go/learn_aemforms_services_63).
+>XMP 유틸리티 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
-### 단계 요약 {#summary_of_steps-1}
+### {#summary_of_steps-1} 단계 요약
 
 PDF 문서에서 XMP 메타데이터를 내보내려면 다음 단계를 수행하십시오.
 
 1. 프로젝트 파일 포함
 1. XMPUplatyService 클라이언트를 만듭니다.
-1. XMP 메타데이터 내보내기 작업을 불러옵니다.
+1. XMP 메타데이터 내보내기 작업을 호출합니다.
 
 **프로젝트 파일 포함**
 
@@ -247,7 +247,7 @@ PDF 문서에서 XMP 메타데이터를 내보내려면 다음 단계를 수행�
 
 **XMPUplatyService 클라이언트 만들기**
 
-프로그래밍 방식으로 XMP 유틸리티 작업을 수행하려면 먼저 XMPUplatyService 클라이언트를 만들어야 합니다. Java AP를 사용하면 `XMPUtilityServiceClient` 개체를 만들어 이러한 작업을 수행할 수 있습니다. 웹 서비스 API를 사용하면 `XMPUtilityServiceService` 개체를 사용하여 수행할 수 있습니다.
+XMP 유틸리티 작업을 프로그래밍 방식으로 수행하려면 먼저 XMPUplatyService 클라이언트를 만들어야 합니다. Java AP를 사용하면 `XMPUtilityServiceClient` 개체를 만들면 됩니다. 웹 서비스 API를 사용하는 경우 `XMPUtilityServiceService` 개체를 사용하여 수행됩니다.
 
 **XMP 메타데이터 내보내기 작업 호출**
 
@@ -263,7 +263,7 @@ PDF 문서에서 XMP 메타데이터를 내보내려면 다음 단계를 수행�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Java API를 사용하여 XMP 메타데이터 내보내기 {#export-xmp-metadata-using-the-java-api}
+### Java API {#export-xmp-metadata-using-the-java-api}를 사용하여 XMP 메타데이터 내보내기
 
 XMP 유틸리티 API(Java)를 사용하여 XMP 메타데이터를 내보냅니다.
 
@@ -273,17 +273,17 @@ XMP 유틸리티 API(Java)를 사용하여 XMP 메타데이터를 내보냅니�
 
    >[!NOTE]
    >
-   >adobe-pdfility-client.jar 파일에는 XMP 유틸리티 서비스를 프로그래밍 방식으로 호출할 수 있는 클래스가 포함되어 있습니다.
+   >adobe-pdftenity-client.jar 파일에는 XMP 유틸리티 서비스를 프로그래밍 방식으로 호출할 수 있는 클래스가 포함되어 있습니다.
 
 1. XMPUplatyService 클라이언트 만들기
 
-   해당 생성자를 사용하여 `XMPUtilityServiceClient` 객체를 만들고 연결 속성이 포함된 `ServiceClientFactory` 객체를 전달합니다.
+   생성자를 사용하고 연결 속성이 포함된 `ServiceClientFactory` 개체를 전달하여 `XMPUtilityServiceClient` 개체를 만듭니다.
 
 1. XMP 메타데이터 가져오기 작업 호출
 
-   XMP 메타데이터를 검사하려면 `XMPUtilityServiceClient` 개체의 `exportMetadata` 메서드를 호출하고 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체를 전달합니다. 이 메서드는 검색된 메타데이터가 포함된 `XMPUtilityMetadata` 개체를 반환합니다.
+   XMP 메타데이터를 검사하려면 `XMPUtilityServiceClient` 개체의 `exportMetadata` 메서드를 호출하고 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체를 전달합니다. 이 메서드는 검색된 메타데이터를 포함하는 `XMPUtilityMetadata` 개체를 반환합니다.
 
-   XMP 메타데이터를 검색하고 저장하려면 `XMPUtilityServiceClient` 개체의 `exportXMP` 메서드를 호출하고 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체를 전달합니다. 이 메서드는 검색된 메타데이터가 포함된 `com.adobe.idp.Document` 개체를 반환하며, 이 개체는 나중에 디스크에 XML 파일로 저장할 수 있습니다.
+   XMP 메타데이터를 검색하고 저장하려면 `XMPUtilityServiceClient` 개체의 `exportXMP` 메서드를 호출하고 PDF 파일을 나타내는 `com.adobe.idp.Document` 개체를 전달합니다. 이 메서드는 검색한 메타데이터가 들어 있는 `com.adobe.idp.Document` 개체를 반환하며, 이 개체는 나중에 디스크에 XML 파일로 저장할 수 있습니다.
 
 **참고 항목**
 
@@ -293,7 +293,7 @@ XMP 유틸리티 API(Java)를 사용하여 XMP 메타데이터를 내보냅니�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API를 사용하여 XMP 메타데이터 내보내기 {#export-xmp-metadata-using-the-web-service-api}
+### 웹 서비스 API {#export-xmp-metadata-using-the-web-service-api}를 사용하여 XMP 메타데이터 내보내기
 
 XMP 유틸리티 API(웹 서비스)를 사용하여 XMP 메타데이터를 내보낼 수 있습니다.
 
@@ -308,9 +308,9 @@ XMP 유틸리티 API(웹 서비스)를 사용하여 XMP 메타데이터를 내�
 
 1. XMP 메타데이터 가져오기 작업 호출
 
-   XMP 메타데이터를 검사하려면 `XMPUtilityServiceClient` 개체의 `exportMetadata` 메서드를 호출하고 PDF 파일을 나타내는 `BLOB` 개체를 전달합니다. 이 메서드는 검색된 메타데이터가 포함된 `XMPUtilityMetadata` 개체를 반환합니다.
+   XMP 메타데이터를 검사하려면 `XMPUtilityServiceClient` 개체의 `exportMetadata` 메서드를 호출하고 PDF 파일을 나타내는 `BLOB` 개체를 전달합니다. 이 메서드는 검색된 메타데이터를 포함하는 `XMPUtilityMetadata` 개체를 반환합니다.
 
-   XMP 메타데이터를 검색하고 저장하려면 `XMPUtilityServiceClient` 개체의 `exportXMP` 메서드를 호출하고 PDF 파일을 나타내는 `BLOB` 개체를 전달합니다. 이 메서드는 검색된 메타데이터가 포함된 `BLOB` 개체를 반환하며, 이 개체는 나중에 디스크에 XML 파일로 저장할 수 있습니다.
+   XMP 메타데이터를 검색하고 저장하려면 `XMPUtilityServiceClient` 개체의 `exportXMP` 메서드를 호출하고 PDF 파일을 나타내는 `BLOB` 개체를 전달합니다. 이 메서드는 검색한 메타데이터가 들어 있는 `BLOB` 개체를 반환하며, 이 개체는 나중에 디스크에 XML 파일로 저장할 수 있습니다.
 
 **참고 항목**
 
