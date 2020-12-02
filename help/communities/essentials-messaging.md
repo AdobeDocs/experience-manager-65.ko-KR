@@ -19,7 +19,7 @@ ht-degree: 3%
 ---
 
 
-# 메시징 필수 {#messaging-essentials}
+# 메시징 필수{#messaging-essentials}
 
 이 페이지에서는 메시징 구성 요소를 사용하여 웹 사이트에 메시징 기능을 포함하는 작업에 대한 세부 사항을 문서화합니다.
 
@@ -47,7 +47,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong>속성</strong></td>
-   <td>메시징 <a href="/help/communities/configure-messaging.md" target="_blank">구성을 참조하십시오.</a></td>
+   <td><a href="/help/communities/configure-messaging.md" target="_blank">메시지 구성</a>을 참조하십시오.</td>
   </tr>
   <tr>
    <td><strong>관리 구성</strong></td>
@@ -80,7 +80,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong>속성</strong></td>
-   <td>메시징 <a href="/help/communities/configure-messaging.md" target="_blank">구성을 참조하십시오.</a></td>
+   <td><a href="/help/communities/configure-messaging.md" target="_blank">메시지 구성</a>을 참조하십시오.</td>
   </tr>
   <tr>
    <td><strong>관리 구성</strong></td>
@@ -89,19 +89,19 @@ ht-degree: 3%
  </tbody>
 </table>
 
-클라이언트측 [사용자 지정 참조](/help/communities/client-customize.md)
+[클라이언트측 사용자 지정](/help/communities/client-customize.md)도 참조하십시오.
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
 * [메시징 구성](/help/communities/configure-messaging.md)
-* [SCF 구성 요소용](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) 메시징 클라이언트 API
-* [서비스에 대한](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) 메시지 API
+* [SCF 구성 ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) 요소용 메시징 클라이언트 API
+* [서비스에 ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) 대한 메시지 API
 * [메시지 끝점](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [서버측 사용자 정의](/help/communities/server-customize.md)
 
 >[!CAUTION]
 >
->String 매개 변수는 다음 MessageBuilder 메서드에 대해 후행 슬래시 &quot;/&quot;를 포함할 *수* 없습니다.
+>String 매개 변수는 다음 MessageBuilder 메서드에 대해 뒤에 오는 슬래시 &quot;/&quot;를 포함하지 않아야 합니다.**
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
@@ -118,34 +118,34 @@ ht-degree: 3%
 
 ### 커뮤니티 사이트 {#community-site}
 
-마법사를 사용하여 만든 커뮤니티 사이트 구조에는 선택 시 메시지 기능이 포함됩니다. 커뮤니티 사이트 콘솔 `User Management` 의 [설정을 참조하십시오](/help/communities/sites-console.md#user-management).
+마법사를 사용하여 만든 커뮤니티 사이트 구조에는 선택 시 메시지 기능이 포함됩니다. [커뮤니티 사이트 콘솔](/help/communities/sites-console.md#user-management)의 `User Management` 설정을 참조하십시오.
 
 ### 샘플 코드:메시지 수신 알림 {#sample-code-message-received-notification}
 
-소셜 메시징 기능은 작업에 대한 이벤트(예: `send`예: `marking read`이벤트)를 `marking delete`발생시킵니다. 이러한 이벤트를 캡처하고 이벤트에 포함된 데이터에 대해 수행된 작업을 수행할 수 있습니다.
+소셜 메시징 기능은 작업(예: `send`, `marking read`, `marking delete`)에 대한 이벤트를 던집니다. 이러한 이벤트를 캡처하고 이벤트에 포함된 데이터에 대해 수행된 작업을 수행할 수 있습니다.
 
-다음 예제는 이벤트를 수신하고 해당 이벤트를 사용하여 모든 메시지 수신자에게 이메일을 전송하는 이벤트 핸들러의 `message sent` `Day CQ Mail Service`예입니다.
+다음 예제는 `message sent` 이벤트를 수신하고 `Day CQ Mail Service`를 사용하여 모든 메시지 수신자에게 이메일을 전송하는 이벤트 핸들러의 경우입니다.
 
 서버측 샘플 스크립트를 사용하려면 개발 환경과 OSGi 번들을 빌드하는 기능이 필요합니다.
 
-1. 관리자로 로그인합니다 ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
-1. 다음과 같은 임의 이름 `bundle node`으로 `/apps/engage/install` In을 만듭니다.
+1. ` [CRXDE|Lite](https://localhost:4502/crx/de)`에 관리자로 로그인합니다.
+1. 다음과 같은 임의 이름으로 `/apps/engage/install`에 `bundle node`을 만듭니다.
 
    * 기호 이름: `com.engage.media.social.messaging.MessagingNotification`
    * 이름:시작하기 자습서 메시지 알림
    * 설명:사용자에게 메시지를 수신할 때 이메일 알림을 전송하는 샘플 서비스
    * 패키지: `com.engage.media.social.messaging.notification`
 
-1. 다음으로 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`이동한 다음:
+1. `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`으로 이동한 다음:
 
    1. 자동으로 생성된 `Activator.java` 클래스를 삭제합니다.
-   1. 클래스를 만듭니다 `MessageEventHandler.java`.
-   1. 아래 코드를 복사하여 에 붙여넣습니다 `MessageEventHandler.java`.
+   1. 클래스 `MessageEventHandler.java`을(를) 만듭니다.
+   1. 아래 코드를 복사하여 `MessageEventHandler.java`에 붙여 넣습니다.
 
-1. 모두 **저장을 클릭합니다**.
-1. 코드 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`에 기록된 대로 모든 가져오기 문을 탐색하고 `MessageEventHandler.java` 추가합니다.
+1. **모두 저장**&#x200B;을 클릭합니다.
+1. `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`으로 이동하고 `MessageEventHandler.java` 코드에 기록된 대로 모든 가져오기 문을 추가합니다.
 1. 번들 제작
-1. OSGi `Day CQ Mail Service`서비스가 구성되어 있는지 확인합니다.
+1. `Day CQ Mail Service`OSGi 서비스가 구성되어 있는지 확인합니다.
 1. 데모 사용자로 로그인하고 다른 사용자에게 이메일을 보냅니다.
 1. 받는 사람이 새 메시지에 대한 이메일을 수신합니다.
 
