@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 100%
 
@@ -24,9 +24,11 @@ ht-degree: 100%
 >[!NOTE]
 >
 >* 이 페이지는 AEM 작성 환경을 사용할 때 기본 처리에 대한 개요를 알 수 있도록 설계되었습니다. **사이트** 콘솔을 기본으로 사용합니다.
->
->* 몇 가지 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
+   >
+   >
+* 몇 가지 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
 >* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-authoring/keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
+
 >
 
 
@@ -75,8 +77,8 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 전역 탐색에는 다음과 같은 두 개의 패널이 있으며 화면의 왼쪽 여백에 아이콘으로 표시됩니다.
 
-* **[탐색](/help/sites-authoring/basic-handling.md#navigation-panel)**- 나침반으로 표시되며,
-* **[도구](/help/sites-authoring/basic-handling.md#tools-panel)**- 망치로 표시됨
+* **[탐색](/help/sites-authoring/basic-handling.md#navigation-panel)** - 나침반으로 표시되며, 
+* **[도구](/help/sites-authoring/basic-handling.md#tools-panel)** - 망치로 표시됨
 
 이러한 패널에서 사용 가능한 옵션은 아래에 설명되어 있습니다.
 
@@ -86,7 +88,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ![bh-01](assets/bh-01.png)
 
-콘솔 및 컨텐츠를 탐색할 때 브라우저 탭의 제목이 위치를 반영하도록 업데이트됩니다.
+콘솔 및 컨텐츠를 탐색할 때 브라우저 탭의 제목이 현재 위치를 반영하도록 업데이트됩니다.
 
 탐색에서 사용할 수 있는 콘솔은 다음과 같습니다.
 
@@ -251,7 +253,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
    모든 콘솔에 처음 액세스할 때 [제품 탐색 개요](/help/sites-authoring/basic-handling.md#product-navigation)와 마찬가지로 이 개요를 탐색합니다.
 
-   [**페이지 정보&#x200B;**메뉴에서**&#x200B;도움말&#x200B;**](/help/sites-authoring/author-environment-tools.md#accessing-help)을 선택하여 언제든지 이 페이지를 다시 볼 수 있습니다.
+   [**페이지 정보** 메뉴에서 **도움말**](/help/sites-authoring/author-environment-tools.md#accessing-help)&#x200B;을 선택하여 언제든지 이 페이지를 다시 볼 수 있습니다.
 
 * **도구 콘솔**
 
@@ -293,7 +295,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 >
 >사용할 수 있는 개별 아이콘은 적절한 콘솔/기능/시나리오와 관련하여 문서화되어 있습니다.
 
-## 빠른 작업 {#quick-actions}
+## 빠른 작업  {#quick-actions}
 
 [카드 보기](#cardviewquickactions)에서는 특정 작업을 빠른 작업 아이콘으로 사용할 수 있을 뿐 아니라 도구 모음에 표시할 수도 있습니다. 빠른 작업 아이콘은 한 번에 단일 항목에 사용할 수 있으며 사전 선택할 필요가 없습니다.
 
@@ -316,7 +318,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 >
 >기본적으로 AEM Assets은 보기의 썸네일로 UI에 있는 자산의 원본 표현물을 표시하지 않습니다. 관리자인 경우, 오버레이를 사용하여 AEM Assets을 구성한 뒤 원본 표현물을 썸네일로 표시할 수 있습니다.
 
-### 리소스 선택 {#selecting-resources}
+### 리소스 선택  {#selecting-resources}
 
 특정 리소스를 선택하는 방법은 보기 및 장치 조합에 따라 다릅니다.
 
