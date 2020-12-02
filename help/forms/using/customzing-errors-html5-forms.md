@@ -16,9 +16,9 @@ ht-degree: 0%
 ---
 
 
-# HTML5 양식에 대한 오류 메시지 사용자 정의 {#customizing-error-messages-for-html-forms}
+# HTML5 양식 {#customizing-error-messages-for-html-forms}에 대한 오류 메시지 사용자 지정
 
-HTML5 양식에서 즉시 오류 메시지와 경고에는 고정된 위치와 모양(글꼴 및 색상)이 있고, 오류가 선택된 필드에만 표시되고 오류가 하나만 표시됩니다.
+HTML5 양식에서는 기본적으로 오류 메시지와 경고에는 고정된 위치와 모양(글꼴 및 색상)이 있고, 오류가 선택된 필드에만 표시되고 오류가 하나만 표시됩니다.
 
 이 문서에서는 HTML5 양식 오류 메시지를
 
@@ -38,8 +38,8 @@ HTML5 양식에서 즉시 오류 메시지와 경고에는 고정된 위치와 �
 
 오류 메시지의 위치를 사용자 정의하려면 각 오류 및 경고 필드에 &lt;div> 태그를 추가하고 왼쪽 또는 오른쪽에 &lt;div> 태그를 배치하고 &lt;div> 태그에 css 스타일을 적용합니다. 자세한 단계는 아래 나열된 절차를 참조하십시오.
 
-1. 폴더를 `CustomErrorManager-1.0-SNAPSHOT`탐색하고 `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` 폴더를 엽니다.
-1. Open the `customErrorManager.js` file for editing. 파일의 `markError` 함수에는 다음 매개 변수가 사용됩니다.
+1. `CustomErrorManager-1.0-SNAPSHOT`폴더로 이동하고 `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` 폴더를 엽니다.
+1. 편집할 `customErrorManager.js` 파일을 엽니다. 파일의 `markError` 함수에는 다음 매개 변수가 사용됩니다.
 
    |  |  |
    |---|---|
@@ -77,7 +77,7 @@ HTML5 양식에서 즉시 오류 메시지와 경고에는 고정된 위치와 �
    ```
 
 1. 파일을 저장하고 닫습니다.
-1. 폴더로 `CustomErrorManager-1.0-SNAPSHOT` 이동하여 jcr_root 및 META-INF 폴더의 아카이브를 만듭니다. 아카이브 이름을 CustomErrorManager-1.0-SNAPSHOT.zip으로 변경합니다.
+1. `CustomErrorManager-1.0-SNAPSHOT` 폴더로 이동하여 jcr_root 및 META-INF 폴더의 아카이브를 만듭니다. 아카이브 이름을 CustomErrorManager-1.0-SNAPSHOT.zip으로 변경합니다.
 1. 패키지 관리자를 사용하여 패키지를 업로드하고 설치합니다.
 
 ## 여러 필드에 대한 오류 메시지 표시  {#display-error-messages-for-multiple-fields-nbsp}
@@ -120,9 +120,9 @@ HTML5 양식에서 즉시 오류 메시지와 경고에는 고정된 위치와 �
 
 ## 새 프로필로 양식을 렌더링합니다.  {#render-the-form-with-the-new-profile-nbsp}
 
-기본적으로 html5 양식은 기본 프로필을 사용합니다. https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
+기본적으로 html5 양식은 기본 프로필을 사용합니다.https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
 
-사용자 지정 오류 메시지가 있는 양식을 보려면 오류 프로필로 양식을 렌더링합니다. https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
+사용자 지정 오류 메시지가 있는 양식을 보려면 오류 프로필로 양식을 렌더링합니다.https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
 
 >[!NOTE]
 >
