@@ -1,8 +1,8 @@
 ---
 title: API를 사용하여 웹 페이지에 양식 목록 작성
 seo-title: API를 사용하여 웹 페이지에 양식 목록 작성
-description: Forms Manager를 프로그래밍 방식으로 쿼리하여 필터링된 양식 목록을 검색하고 웹 페이지에 표시할 수 있습니다.
-seo-description: Forms Manager를 프로그래밍 방식으로 쿼리하여 필터링된 양식 목록을 검색하고 웹 페이지에 표시할 수 있습니다.
+description: Creative Cloud Manager를 통해 필터링된 양식 목록을 검색하고 웹 페이지에 표시할 수 있습니다.
+seo-description: Creative Cloud Manager를 통해 필터링된 양식 목록을 검색하고 웹 페이지에 표시할 수 있습니다.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -17,13 +17,13 @@ ht-degree: 1%
 ---
 
 
-# API를 사용하여 웹 페이지에 양식 목록 작성 {#listing-forms-on-a-web-page-using-apis}
+# API {#listing-forms-on-a-web-page-using-apis}를 사용하여 웹 페이지에 양식 나열
 
-AEM Forms은 웹 개발자가 검색 기준을 충족하는 양식 세트를 쿼리하고 검색하는 데 사용할 수 있는 REST 기반 검색 API를 제공합니다. API를 사용하여 다양한 필터를 기반으로 양식을 검색할 수 있습니다. 응답 개체에는 양식 특성, 속성 및 양식의 끝점이 포함됩니다.
+AEM Forms은 웹 개발자가 검색 조건을 충족하는 일련의 양식을 쿼리하고 검색하는 데 사용할 수 있는 REST 기반 검색 API를 제공합니다. API를 사용하여 다양한 필터를 기반으로 양식을 검색할 수 있습니다. 응답 개체에는 양식 특성, 속성 및 양식의 끝점이 포함됩니다.
 
-REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매개 변수를 사용하여 서버에 GET 요청 `https://'[server]:[port]'/libs/fd/fm/content/manage.json` 을 보내십시오.
+REST API를 사용하여 양식을 검색하려면 아래에 설명된 쿼리 매개 변수와 함께 `https://'[server]:[port]'/libs/fd/fm/content/manage.json`의 서버에 GET 요청을 보냅니다.
 
-## Query parameters {#query-parameters}
+## 쿼리 매개 변수 {#query-parameters}
 
 <table>
  <tbody>
@@ -32,14 +32,14 @@ REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매�
    <td><strong>설명<br /> </strong></td>
   </tr>
   <tr>
-   <td>함수<br /> </td>
-   <td><p>호출할 함수를 지정합니다. 양식을 검색하려면 <code>func </code>속성 값을 로 설정합니다 <code>searchForms</code>.</p> <p>예, <code class="code">
+   <td>func<br /> </td>
+   <td><p>호출할 함수를 지정합니다. 양식을 검색하려면 <code>func </code>속성 값을 <code>searchForms</code>로 설정합니다.</p> <p>예, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong>참고:</strong> <em>이 매개 변수는 필수입니다.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>참고: </strong> <em>이 매개 변수는 필수입니다.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>양식을 검색할 응용 프로그램 경로를 지정합니다. 기본적으로 appPath 속성은 루트 노드 수준에서 사용할 수 있는 모든 애플리케이션을 검색합니다.<br /> </p> <p>단일 검색 쿼리에 여러 응용 프로그램 경로를 지정할 수 있습니다. 파이프(|) 문자로 여러 경로를 구분합니다. </p> </td>
+   <td><p>양식을 검색할 응용 프로그램 경로를 지정합니다. 기본적으로 appPath 속성은 루트 노드 수준에서 사용할 수 있는 모든 응용 프로그램을 검색합니다.<br /> </p> <p>단일 검색 쿼리에 여러 응용 프로그램 경로를 지정할 수 있습니다. 파이프(|) 문자로 여러 경로를 구분합니다. </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
@@ -50,12 +50,12 @@ REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매�
     </ul> </td>
   </tr>
   <tr>
-   <td>관계<br /> </td>
+   <td>relation<br /> </td>
    <td>검색 결과와 함께 가져올 관련 자산을 지정합니다. 다음 옵션 중 하나를 선택하여 관련 자산을 가져올 수 있습니다.
     <ul>
-     <li><strong>NO_RELATION</strong>: 관련 자산을 가져오지 마십시오.</li>
-     <li><strong>즉시</strong>: 검색 결과와 직접 관련된 자산을 가져옵니다.</li>
-     <li><strong>모두</strong>: 직간접적으로 관련 자산을 가져옵니다.</li>
+     <li><strong>NO_RELATION</strong>:관련 자산을 가져오지 마십시오.</li>
+     <li><strong>즉시</strong>:검색 결과와 직접 관련된 자산을 가져옵니다.</li>
+     <li><strong>모두</strong>:직간접적으로 관련 자산을 가져옵니다.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -78,9 +78,9 @@ REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매�
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>위의 예에서 </p>
     <ul>
-     <li><strong>이름</strong>: 검색할 속성의 이름을 지정합니다.</li>
-     <li><strong>값</strong>: 검색할 속성의 값을 지정합니다.</li>
-     <li><strong>연산자</strong>: 검색하는 동안 적용할 연산자를 지정합니다. 다음 연산자가 지원됩니다.
+     <li><strong>이름</strong>:검색할 속성의 이름을 지정합니다.</li>
+     <li><strong>값</strong>:검색할 속성의 값을 지정합니다.</li>
+     <li><strong>연산자</strong>:검색하는 동안 적용할 연산자를 지정합니다. 다음 연산자가 지원됩니다.
       <ul>
        <li>EQ - 같음 </li>
        <li>NEQ - 같지 않음</li>
@@ -94,11 +94,11 @@ REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매�
        <li>ENDSWITH - B가 A의 끝 부분인 경우 A는 B로 끝납니다.</li>
        <li>LIKE - LIKE 연산자를 구현합니다.</li>
        <li>AND - 여러 문 결합</li>
-      </ul> <p><strong>참고:</strong> <em>GT, LT, GTEQ 및 LTEQ 연산자는 LONG, DOUBLE 및 DATE와 같은 선형 유형의 속성에 적용됩니다.</em></p> </li>
+      </ul> <p><strong>참고: </strong> <em>GT, LT, GTEQ 및 LTEQ 연산자는 LONG, DOUBLE 및 DATE와 같은 선형 유형의 속성에 적용됩니다.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td>주문<br /> </td>
+   <td>orderings<br /> </td>
    <td><p>검색 결과의 주문 기준을 지정합니다. 기준은 JSON 형식으로 정의됩니다. 둘 이상의 필드에서 검색 결과를 정렬할 수 있습니다. 쿼리가 표시되면 결과가 순서대로 정렬됩니다.</p> <p>예,</p> <p>제목 속성별로 정렬된 쿼리 결과를 오름차순으로 검색하려면 다음 매개 변수를 추가합니다. </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
@@ -106,8 +106,8 @@ REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매�
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>이름</strong>: 검색 결과를 정렬하는 데 사용할 속성의 이름을 지정합니다.</li>
-     <li><strong>기준</strong>: 결과의 순서를 지정합니다. order 속성은 다음 값을 허용합니다.
+     <li><strong>이름</strong>:검색 결과를 정렬하는 데 사용할 속성의 이름을 지정합니다.</li>
+     <li><strong>기준</strong>:결과의 순서를 지정합니다. order 속성은 다음 값을 허용합니다.
       <ul>
        <li>ASC - ASC를 사용하여 결과를 오름차순으로 정렬합니다.<br /> </li>
        <li>DES - DES를 사용하여 결과를 내림차순으로 정렬합니다.</li>
@@ -116,7 +116,7 @@ REST API를 사용하여 양식을 검색하려면 아래 설명된 쿼리 매�
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>이진 내용을 검색할지 여부를 지정합니다. 이 <code>includeXdp</code> 속성은 유형, <code>FORM</code>및 <code>PDFFORM</code>의 자산에 적용할 수 <code>PRINTFORM</code>있습니다.</td>
+   <td>이진 내용을 검색할지 여부를 지정합니다. <code>includeXdp</code> 속성은 <code>FORM</code>, <code>PDFFORM</code> 및 <code>PRINTFORM</code> 유형의 자산에 적용할 수 있습니다.</td>
   </tr>
   <tr>
    <td>assetType</td>
