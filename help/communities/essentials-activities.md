@@ -25,17 +25,17 @@ ht-degree: 1%
 
 팔로우하는 기능은 커뮤니티 회원이 관심 있는 게시물이나 다른 커뮤니티 구성원을 따를 때 다른 일련의 활동을 추가합니다.
 
-모든 [커뮤니티 사이트에는](/help/communities/overview.md#communitiessites) 동일한 방식으로 멤버 활동을 표시하는 서명된 멤버의 사용자 프로필 페이지가 포함됩니다.
+모든 [커뮤니티 사이트](/help/communities/overview.md#communitiessites)에는 멤버 활동을 동일한 방식으로 표시하는 서명된 구성원의 사용자 프로필 페이지가 포함됩니다.
 
 ## 개념 {#concepts}
 
-활동 스트림 ** 은 회원이 수행한 최근 활동 또는 포럼 주제 또는 블로그와 같은 컨텐츠 단일 스레드에서 최근 활동 목록입니다.
+*활동 스트림*&#x200B;은 회원이 수행한 최근 활동 목록 또는 포럼 주제 또는 블로그와 같은 컨텐츠 단일 스레드에서 최근 활동 목록입니다.
 
 멤버는 다른 개인 또는 컨텐츠를 팔로우하여 활동 스트림을 팔로우할 수 있습니다.
 
-뉴스 *피드는* 멤버가 뒤에 오는 활동 스트림의 병합입니다.
+*뉴스 피드*&#x200B;는 구성원이 뒤에 오는 활동 스트림의 병합입니다.
 
-소셜 그래프 *[](/help/communities/essentials-socialgraph.md)*는 한 멤버의 다음 관계를 다른 멤버에게 캡처합니다.
+*[소셜 그래프](/help/communities/essentials-socialgraph.md)*&#x200B;는 한 구성원의 다음 관계를 다른 구성원과의 관계로 캡처합니다.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -63,7 +63,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>활동 <a href="/help/communities/activities.md">스트림 기능 보기</a></td>
+   <td><a href="/help/communities/activities.md">활동 스트림 기능</a>을 참조하십시오.</td>
   </tr>
  </tbody>
 </table>
@@ -80,4 +80,4 @@ ht-degree: 1%
 
 ### 활동 스트림 기능 {#activity-stream-function}
 
-활동 스트림 함수를 포함하는 [커뮤니티 사이트](/help/communities/functions.md#activity-stream-function)구조에는 구성된 `activity streams` 구성 요소가 포함됩니다.
+[활동 스트림 함수](/help/communities/functions.md#activity-stream-function)를 포함하는 커뮤니티 사이트 구조에는 구성된 `activity streams` 구성 요소가 포함됩니다.
