@@ -1,8 +1,8 @@
 ---
-title: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 부인
-seo-title: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 부인
-description: SharePoint Connector 라이선스, 저작권 고지 사항 및 부인 고지 사항에 대해 자세히 알아보십시오.
-seo-description: SharePoint Connector 라이선스, 저작권 고지 사항 및 부인 고지 사항에 대해 자세히 알아보십시오.
+title: SharePoint Connector 라이센스, 저작권 고지 사항 및 부인
+seo-title: SharePoint Connector 라이센스, 저작권 고지 사항 및 부인
+description: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책 고지 사항에 대해 알아보십시오.
+seo-description: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책 고지 사항에 대해 알아보십시오.
 uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,34 +12,37 @@ discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 10%
 
 ---
 
 
 # SharePoint 커넥터 라이센스, 저작권 고지 사항 및 부인{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-이 섹션에는 MS SharePoint용 Day JCR Connector와 관련하여 명시적으로 기재해야 하는 모든 라이선스, 저작권 고지 사항 및 면책 사항이 나와 있습니다.
+이 섹션에는 MS SharePoint용 JCR Connector와 관련하여 명시적으로 기재해야 하는 모든 라이선스, 저작권 고지 사항 및 면책 사항이 나와 있습니다.
 
 ## 커넥터 타사 라이브러리 개요 {#overview-of-connector-rd-party-libraries}
 
-다음 표에는 SharePoint Connector 핵심 라이브러리 내에서 사용된 타사 라이브러리와 이러한 라이브러리의 라이선스, 저작권 고지 사항 또는 부인 등이 나와 있습니다.
+다음 표에는 SharePoint Connector 핵심 라이브러리 내에서 사용된 타사 라이브러리와 함께 이러한 라이선스와 저작권 고지 사항 또는 면책 사항이 나와 있습니다.
 
 | 라이브러리 | 라이센스 유형 |
 |---|---|
 | 주석 | [Apache](#apache) |
-| axiom-api | [Apache](#apache) |
+| axiom api | [Apache](#apache) |
 | 축성 | [Apache](#apache) |
-| 축리 | [Apache](#apache) |
-| axis2-adb | [Apache](#apache) |
+| 경리 | [Apache](#apache) |
+| axis2 xua | [Apache](#apache) |
 | 축2 커널 | [Apache](#apache) |
 | Backport-util-concurrent | 공용 도메인 |
 | commons codec | [Apache](#apache) |
-| 공유물 컬렉션 | [Apache](#apache) |
+| 공유자 컬렉션 | [Apache](#apache) |
 | commons-fileupload | [Apache](#apache) |
 | commons-httpclient | [Apache](#apache) |
-| commons | [Apache](#apache) |
+| 커미오 | [Apache](#apache) |
 | 커먼랑 | [Apache](#apache) |
-| 동시 사용 | [동시](#concurrent) (공용 도메인) |
+| 동시 | [동시](#concurrent) (공용 도메인) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -50,7 +53,7 @@ source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
 | jaxen | BSD |
 | log4j | [Apache](#apache) |
 | lucene-core | [Apache](#apache) |
-| nethiry | [Apache](#apache) |
+| nethi | [Apache](#apache) |
 | slf4j-api | [SLF4J.ORG](#slf-j-org) |
 | slf4j-jdk14 | [SLF4J.ORG](#slf-j-org) |
 | stax-api | [Apache](#apache) |
@@ -58,12 +61,12 @@ source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (공개 도메인 및 W3C 소프트웨어 라이선스의 일부 포함) |
+| xml-apis | [Apache](#apache) (Public Domain 및 W3C 소프트웨어 라이선스가 적용되는 부분 포함) |
 | XmlSchema | [Apache](#apache) |
 
 ## CRX 타사 라이브러리 개요 {#overview-of-crx-rd-party-libraries}
 
-다음 표에는 CRX에서 사용되는 타사 라이브러리와 해당 라이브러리의 라이선스, 저작권 고지 사항 또는 부인 등이 나와 있습니다.
+다음 표에는 CRX에서 사용되는 타사 라이브러리와 이러한 라이브러리 및 인증 관련 라이선스, 저작권 고지 사항 또는 고지 사항이 나와 있습니다.
 
 <table>
  <colgroup>
@@ -96,7 +99,7 @@ source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
   </tr>
   <tr>
    <td>concurrent-1.3.4.jar</td>
-   <td><a href="#concurrent">동시 사용</a></td>
+   <td><a href="#concurrent">동시</a></td>
   </tr>
   <tr>
    <td>derby-10.1.2.1.jar</td>
@@ -155,7 +158,7 @@ source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
 
 ## CQSE 타사 라이브러리 개요 {#overview-of-cqse-rd-party-libraries}
 
-다음 표에는 Ancement Servlet Engine에서 사용되는 타사 라이브러리와 이러한 라이브러리 내용이 적용되는 라이센스, 저작권 고지 사항 또는 부인 부인과 함께 나열되어 있습니다.
+다음 표에는 Cookie Servlet Engine에서 사용되는 타사 라이브러리와 이러한 라이센스, 저작권 고지 사항 또는 고지 사항이 포함되어 있습니다.
 
 <table>
  <colgroup>
@@ -196,7 +199,7 @@ source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
    <td><a href="#apache">Sun 포틀릿</a></td>
   </tr>
   <tr>
-   <td>serveretapi-2.3.jar</td>
+   <td>serverlet api-2.3.jar</td>
    <td><a href="#sun-servlet">Sun Servlet</a></td>
   </tr>
   <tr>
@@ -424,7 +427,7 @@ source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
      limitations under the License.
 ```
 
-## 동시 사용 {#concurrent}
+## 동시 {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -436,7 +439,7 @@ source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
      <a href="https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
 ```
 
-## Day JCR {#day-jcr}
+## 일 JCR {#day-jcr}
 
 ```xml
      Day Management AG ("Licensor") is willing to license this
@@ -964,7 +967,7 @@ source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
      (LFI#134403/Form ID#011801)
 ```
 
-## Sun Servlet {#sun-servlet}
+## Sun 서블릿 {#sun-servlet}
 
 ```xml
      Java(TM) Servlet API Specification ("Specification")
