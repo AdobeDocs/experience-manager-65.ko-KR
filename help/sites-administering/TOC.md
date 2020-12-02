@@ -149,7 +149,7 @@ ht-degree: 17%
    + [Adobe Marketing Cloud과 통합](marketing-cloud.md)
    + [Adobe Target과 통합 수동 구성](target-configuring.md)
    + [Adobe Target과 통합을 위한 전제 조건](target-requirements.md)
-   + [Adobe I/O를 사용하는 Adobe Target과 통합](integration-ims-adobe-io.md)
+   + [Adobe I/O을 사용한 Adobe Target 통합](integration-ims-adobe-io.md)
    + [Adobe 분류](adobeanalytics-classifications.md)
    + [Adobe Search &amp; Promote과 통합](search-and-promote.md)
    + [솔루션 통합](integration.md)
