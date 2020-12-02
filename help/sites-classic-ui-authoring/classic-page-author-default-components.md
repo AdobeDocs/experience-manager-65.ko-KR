@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +35,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 * [페이지 작성용 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Components used for creating standard page content are primarily contained in the groups **General**, **Columns** and **Forms**.
+   표준 페이지 컨텐츠를 만드는 데 사용되는 구성 요소는 기본적으로 **일반**, **열** 및 **Forms** 그룹에 포함되어 있습니다.
 
 * [eCommerce](/help/sites-administering/ecommerce.md)
 
