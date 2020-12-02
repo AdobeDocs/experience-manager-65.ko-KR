@@ -20,21 +20,21 @@ ht-degree: 3%
 
 # 검토 및 검토 요약 사용(표시) {#using-reviews-and-reviews-summary-display}
 
-구성 요소 `Reviews` 는 사용할 준비가 된 [댓글](comments.md) 및 [등급](rating.md) 구성 요소의 합성입니다.
+`Reviews` 구성 요소는 사용할 준비가 된 [Comments](comments.md) 및 [Rating](rating.md) 구성 요소의 합성입니다.
 
-구성 요소 `Reviews Summary (Display)` 는 사이트의 다른 곳에 표시할 구성 요소의 활성 또는 닫힌 인스턴스에 대한 `Reviews` 요약을 제공합니다.
+`Reviews Summary (Display)` 구성 요소는 사이트의 다른 곳에 표시하기 위해 `Reviews` 구성 요소의 활성 또는 닫힌 인스턴스에 대한 요약을 제공합니다.
 
 >[!NOTE]
 >
 >검토의 익명 게시는 지원되지 않습니다. 사이트 방문자는 등록(회원이 되기)하고 로그인해야 참여합니다. 로그인한 방문자는 언제든지 검토를 업데이트할 수 있습니다.
 
-## Adding a Review to a Page {#adding-a-review-to-a-page}
+## 페이지 {#adding-a-review-to-a-page}에 검토 추가
 
-작성 모드에서 페이지에 구성 `Reviews` `Communities / Reviews` 요소를 추가하려면 구성 요소 브라우저를 사용하여 구성 요소를 찾아 페이지(예: 사용자가 검토할 기능에 상대적인 위치)에 놓습니다.
+작성 모드에서 페이지에 `Reviews` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 `Communities / Reviews`을(를) 찾아 페이지(예: 사용자가 검토할 기능에 대한 상대적 위치)에 놓습니다.
 
-필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](basics.md).
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](basics.md)을 방문하십시오.
 
-[필요한 클라이언트측 라이브러리가](reviews-basics.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Reviews` 방식입니다.
+[필수 클라이언트측 라이브러리](reviews-basics.md#essentials-for-client-side)가 포함될 때 이 방법으로 `Reviews` 구성 요소가 표시됩니다.
 
 ![제작 검토](assets/create-review.png)
 
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 ![configure-new](assets/configure-new.png)
 
-허용된 등급 **[!UICONTROL 탭]** 아래에서 구성원에게 표시할 전체 등급 목록을 지정합니다. 첫 번째 등급은 구성 요소에 대한 평균 등급을 제공하는 등급이므로 전체/일반 등급이어야 `Review Summary (Display)` 합니다. 기본 구성에 있는 다음 두 평점의 제목은 &quot;1차 하위 등급&quot; 또는 &quot;2차 하위 등급&quot;이 아닌 다른 것으로 지정됩니다.
+**[!UICONTROL 허용된 등급]** 탭에서 구성원에게 표시할 전체 등급 목록을 지정합니다. 첫 번째 평점은 전체/일반 평점이어야 합니다. 이는 `Review Summary (Display)` 구성 요소에 대한 평균 등급을 제공하는 평가이기 때문입니다. 기본 구성에 있는 다음 두 평점의 제목은 &quot;1차 하위 등급&quot; 또는 &quot;2차 하위 등급&quot;이 아닌 다른 것으로 지정됩니다.
 
 ![허용 등급](assets/configure-review1.png)
 
@@ -54,9 +54,9 @@ ht-degree: 3%
 
    위쪽 화살표, 아래쪽 화살표 및 삭제 단추를 사용하여 표시되는 선택 항목을 수정합니다.
 
-   항목 **[!UICONTROL 추가를]** 클릭하여 다른 등급 선택을 추가합니다.
+   다른 등급 선택을 추가하려면 **[!UICONTROL 항목 추가]**&#x200B;를 클릭합니다.
 
-[ **[!UICONTROL 필수 등급]** ] 탭 아래에서 등급을 매길 **[!UICONTROL 필요가 있는 허용된 등급]** 목록에서 항목을 다시 입력합니다. 허용된 등급 탭에서만 항목이 지정된 경우, 회원이 제출할 때 표시가 없는 상태로 둘 수 있습니다.
+**[!UICONTROL 필수 등급]** 탭에서 등급을 지정해야 하는 **[!UICONTROL 허용된 등급]**&#x200B;의 목록에서 항목을 다시 입력합니다. 허용된 등급 탭에서만 항목이 지정된 경우, 회원이 제출할 때 표시가 없는 상태로 둘 수 있습니다.
 
 웹 사이트에서 필요한 등급은 별표로 표시됩니다. 항목이 필수 항목이고 표시되지 않은 채로 있으면, 회원에게 메시지가 표시되고 필요한 등급을 모두 표시할 때까지 제출이 거부됩니다.
 
@@ -68,13 +68,13 @@ ht-degree: 3%
 
    위쪽 화살표, 아래쪽 화살표 및 삭제 단추를 사용하여 표시되는 선택 항목을 수정합니다.
 
-   항목 **[!UICONTROL 추가를]** 클릭하여 다른 응답 선택을 추가합니다.
+   **[!UICONTROL 항목 추가]**&#x200B;를 클릭하여 다른 응답 선택을 추가합니다.
 
 >[!NOTE]
 >
->허용된 등급 **[!UICONTROL 탭에 지정되지 않은]** 필수 등급 **** 탭에 항목이 입력되는 경우등급 지정 항목에 포함되지 않습니다.
+>**[!UICONTROL 허용되는 등급]** 탭에 지정되지 않은 **[!UICONTROL 필수 등급]** 탭에 항목이 입력되는 경우 등급 지정 항목에 포함되지 않습니다.
 
-검토 **[!UICONTROL 탭]** 아래에서 검토 처리 방법을 지정합니다.
+**[!UICONTROL 검토]** 탭에서 검토 처리 방법을 지정합니다.
 
 ![리뷰 수](assets/configure-review3.png)
 
@@ -92,7 +92,7 @@ ht-degree: 3%
 
 * **최대 파일 크기**
 
-   파일 업로드 **[!UICONTROL 허용이 선택된 경우에만]** 관련성이 있습니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 10MB입니다.
+   **[!UICONTROL 파일 업로드 허용]**&#x200B;이 선택된 경우에만 관련성이 있습니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 10MB입니다.
 
 * **[!UICONTROL 최대 메시지 길이]**
 
@@ -100,7 +100,7 @@ ht-degree: 3%
 
 * **[!UICONTROL 허용되는 파일 유형]**
 
-   파일 업로드 **[!UICONTROL 허용이 선택된 경우에만]** 관련성이 있습니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 형식을 지정하는 경우 지정하지 않은 파일 유형은 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   **[!UICONTROL 파일 업로드 허용]**&#x200B;이 선택된 경우에만 관련성이 있습니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 형식을 지정하는 경우 지정하지 않은 파일 유형은 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **[!UICONTROL 리치 텍스트 편집기]**
 
@@ -110,7 +110,7 @@ ht-degree: 3%
 
    이 확인란을 선택하면 항목에 투표 기능을 포함합니다. 기본값은 선택 취소입니다.
 
-사용자 중재 **[!UICONTROL 탭]** 아래에서 게시된 검토 관리 방법을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](moderate-ugc.md).
+**[!UICONTROL 사용자 중재]** 탭에서 게시된 검토 관리 방법을 지정합니다. 자세한 내용은 [사용자 생성 콘텐츠 중재](moderate-ugc.md)를 참조하십시오.
 
 ![user-moderation](assets/configure-review4.png)
 
@@ -148,9 +148,9 @@ ht-degree: 3%
 
 * **[!UICONTROL 플래그 지정 제한]**
 
-   공개 보기에서 검토가 숨겨지기 전에 검토에 플래그를 지정해야 하는 횟수를 입력합니다. 이 숫자는 중재 임계값보다 **[!UICONTROL 크거나 같아야 합니다]**. 기본값은 5입니다.
+   공개 보기에서 검토가 숨겨지기 전에 검토에 플래그를 지정해야 하는 횟수를 입력합니다. 이 숫자는 **[!UICONTROL 중재 임계값]**&#x200B;보다 크거나 같아야 합니다. 기본값은 5입니다.
 
-### 페이지에 검토 요약(표시) 추가 {#adding-a-review-summary-display-to-a-page}
+### 페이지 {#adding-a-review-summary-display-to-a-page}에 검토 요약(표시) 추가
 
 작성 모드에서 페이지에 `Reviews Summary (Display)` 구성 요소를 추가하려면 구성 요소를 찾습니다
 
@@ -158,9 +158,9 @@ ht-degree: 3%
 
 활성 검토 또는 닫힌 검토 요약을 표시할 페이지로 드래그하여 놓습니다.
 
-필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](basics.md).
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](basics.md)을 방문하십시오.
 
-[필요한 클라이언트측 라이브러리가](reviews-basics.md#essentials-for-client-side) 포함되어 있으면 `Reviews Summary (Display)`구성 요소가 표시되는 방식입니다.
+[필수 클라이언트측 라이브러리](reviews-basics.md#essentials-for-client-side)가 포함될 때 `Reviews Summary (Display)`구성 요소가 표시되는 방식입니다.
 
 ![검토 요약](assets/configure-review5.png)
 
@@ -174,13 +174,13 @@ ht-degree: 3%
 
 ![configure](assets/configure-new.png)
 
-검토 **[!UICONTROL 요약 탭]** 아래
+**[!UICONTROL 검토 요약]** 탭 아래
 
 ![검토 요약](assets/configure-review6.png)
 
 * `Review Path`
 
-   요약할 구성 `reviews`요소의 배치된 인스턴스를 입력하거나 탐색합니다. 예를 들어, [Geometrixx 참여 사이트의 웹 페이지에 추가된 경우](getting-started.md) 경로는 다음과 같습니다.
+   요약할 `reviews`구성 요소의 배치된 인스턴스를 입력하거나 찾아봅니다. 예를 들어 [Geometrixx 참여 사이트의 웹 페이지에 추가된 경우](getting-started.md) 경로는 다음과 같습니다.
 
    `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -188,15 +188,15 @@ ht-degree: 3%
 
    이 확인란을 선택하면 요약되는 검토에 각 별 등급 중 몇 개가 있는지 나타내는 막대 그래프가 표시됩니다. 기본값은 선택 취소입니다.
 
-### 사용자 지정 검토 유형으로 변경 {#changing-to-a-custom-review-type}
+### 사용자 지정 검토 유형 {#changing-to-a-custom-review-type}으로 변경
 
 검토 구성 요소는 댓글 시스템을 사용합니다.
 
 주석 리소스 유형을 변경하면 댓글 시스템은 더 이상 기본값을 사용하는 댓글의 인스턴스를 생성하지 않고 개발자가 사용자 정의(확장)한 댓글의 인스턴스가 생성됩니다.
 
-사용자 지정 리소스 유형이 알려지면 [디자인 모드를](../../help/sites-authoring/default-components-designmode.md) `Comments` 입력하고 배치된 구성 요소를 두 번 클릭하여 추가 탭이 있는 대화 상자를 엽니다.
+사용자 지정 리소스 유형이 알려지면 [디자인 모드](../../help/sites-authoring/default-components-designmode.md)를 입력하고 배치된 `Comments` 구성 요소를 두 번 클릭하여 추가 탭이 있는 대화 상자를 엽니다.
 
-리소스 **[!UICONTROL 유형]** 탭에서 구성 요소의 새 인스턴스에 대한 사용자 지정 resourceType을 `Comments or Voting` 지정합니다.
+**[!UICONTROL 리소스 유형]** 탭에서 `Comments or Voting` 구성 요소의 새 인스턴스에 대한 사용자 지정 resourceType을 지정합니다.
 
 ![댓글 투표](assets/configure-review7.png)
 
@@ -208,13 +208,13 @@ ht-degree: 3%
 
 * **[!UICONTROL 투표 리소스 유형]**
 
-   /apps에서 확장 `voting`구성 요소의 resourceType으로 이동합니다. 예, `/apps/social/components/hbs/voting`.
+   /apps의 확장 `voting`구성 요소의 resourceType으로 이동합니다. 예, `/apps/social/components/hbs/voting`.
 
    이 리소스는 방문자가 투표를 게시할 때 생성된 UGC의 리소스 유형을 식별합니다.
 
 * **[!UICONTROL 주석 시스템 리소스 유형]**
 
-   /apps에서 확장 `comments`구성 요소(댓글 시스템)의 resourceType으로 이동합니다. 페이지 템플릿에 리소스(주석 노드)로 페이지에 추가되지 않고 기본 스크립트에 주석 시스템이 [동적으로](scf.md#add-or-include-a-communities-component) 포함되지 않는 한 비워 둡니다. 자세한 내용은 [{{include}} 헬퍼에 대한 정보를 참조하십시오](handlebars-helpers.md#include).
+   /apps에서 확장 `comments`구성 요소(주석 시스템)의 resourceType으로 이동합니다. 페이지 템플릿 [이(가) 리소스(주석 노드)로 페이지에 추가되지 않고 기본 스크립트에 있는 댓글 시스템을 동적으로 포함하지 않는 한 비워 둡니다. ](scf.md#add-or-include-a-communities-component) [{{include}} helper](handlebars-helpers.md#include)에 대한 자세한 내용을 참조하십시오.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
@@ -239,8 +239,8 @@ ht-degree: 3%
 
 ## 추가 정보 {#additional-information}
 
-개발자를 위한 기본 사항 [검토](reviews-basics.md) 페이지에서 자세한 내용을 확인할 수 있습니다.
+개발자를 위한 [Review Essentials](reviews-basics.md) 페이지에 자세한 정보가 있을 수 있습니다.
 
-게시된 댓글의 중재를 보려면 사용자 생성 [컨텐트 중재를 참조하십시오](moderate-ugc.md).
+게시된 댓글의 중재를 보려면 [사용자 생성 콘텐츠 중재](moderate-ugc.md)를 참조하십시오.
 
-게시된 댓글의 번역에 대해서는 사용자 생성 컨텐츠 [번역을 참조하십시오](translate-ugc.md).
+게시된 댓글의 번역에 대해서는 [사용자 생성 콘텐츠 번역](translate-ugc.md)을 참조하십시오.
