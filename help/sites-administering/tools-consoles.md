@@ -12,13 +12,16 @@ discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 translation-type: tm+mt
 source-git-commit: d366e9f9a1c44ff4866907e83432ab2b1438bbb3
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 44%
 
 ---
 
 
 # 도구 콘솔{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. 현재 사용 중인 UI에 **따라** 두 가지 버전의 도구 콘솔이 있습니다.
+**도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구에 액세스할 수 있습니다. 현재 사용 중인 UI에 따라 **도구** 콘솔의 두 가지 버전이 있습니다.
 
 * [도구 - 터치에 적합한 UI](#tools-touch-optimized-ui)
 * [도구 - 클래식 UI](#tools-classic-ui)
@@ -27,11 +30,11 @@ The **Tools** consoles provide access to a number of specialized tools that help
 
 >[!NOTE]
 >
->이러한 콘솔은 전역 탐색의 도구 [패널에서 액세스할 수 있습니다](/help/sites-authoring/basic-handling.md#tools-panel).
+>이러한 콘솔은 [글로벌 탐색의 도구 패널](/help/sites-authoring/basic-handling.md#tools-panel)에서 액세스할 수 있습니다.
 
 >[!NOTE]
 >
->UI의 카드에 각 옵션의 용도에 대한 세부 정보가 제공되므로 이 표에서는 트리의 기능 위치에 대한 빠른 참조를 제공합니다.
+>UI의 카드에 각 옵션의 용도에 대한 세부 정보가 제공되므로 이 표에서는 트리 내의 기능 위치에 대한 빠른 참조를 제공합니다.
 
 <table>
  <tbody>
@@ -177,7 +180,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>AEM용 데스크톱 도구<br /> </td>
+   <td>AEM용 데스크탑 도구<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -189,7 +192,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>컨텐츠 조각 모델<br /> </td>
+   <td>콘텐츠 조각 모델<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -372,15 +375,15 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>MSM 제어 센터</td>
-   <td>중앙에서 여러 사이트 관리</td>
+   <td>여러 사이트를 중앙에서 관리</td>
   </tr>
   <tr>
    <td>클라이언트 컨텍스트 구성<br /> </td>
-   <td>Client Context는 동적으로 어셈블된 사용자 데이터 컬렉션을 나타냅니다. 기본 및 Marketing Cloud 구성은 여기에 있습니다.<br /> </td>
+   <td>Client Context는 사용자 데이터의 동적으로 어셈블된 컬렉션을 나타냅니다. 기본 및 Marketing Cloud 구성은 여기에 있습니다.<br /> </td>
   </tr>
   <tr>
-   <td>클라우드 서비스 구성<br /> </td>
-   <td>Adobe Marketing Cloud와 통합과 관련된 구성을 보유합니다.</td>
+   <td>Cloud Services 구성<br /> </td>
+   <td>Adobe Marketing Cloud과 통합과 관련된 구성을 보유합니다.</td>
   </tr>
   <tr>
    <td>클라우드 설정<br /> </td>
@@ -396,7 +399,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>대시보드</td>
-   <td>보고 대시보드를 만들 수 있습니다.이러한 기능을 사용하면 통합 데이터를 표시하는 페이지를 정의할 수 있습니다.</td>
+   <td>보고 대시보드를 만들 수 있습니다.이러한 기능을 사용하면 통합 데이터를 표시하는 페이지를 정의하는 사용자 정의 가능한 방법을 제공합니다.</td>
   </tr>
   <tr>
    <td>사용자 지정 설명서</td>
@@ -408,7 +411,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>양식 제출</td>
-   <td>받은 양식 제출 목록을 보관합니다.</td>
+   <td>수신한 양식 목록을 포함합니다.</td>
   </tr>
   <tr>
    <td>가져오기 도구 </td>
@@ -424,7 +427,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>패키지</td>
-   <td>AEM WCM용으로 로드된 패키지를 표시하는 패키지 관리자에 대한 대체 링크입니다. CRX의 패키지 관리자에 표시된 정보와 유사합니다.</td>
+   <td>AEM WCM용으로 로드된 패키지를 표시하는 패키지 관리자의 대체 링크입니다. CRX의 패키지 관리자에 표시된 정보와 유사합니다.</td>
   </tr>
   <tr>
    <td>복제 - 복제 에이전트</td>
@@ -432,7 +435,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>보고서</td>
-   <td>AEM에서는 사용자 지정된 보고서 범위를 제공하며, 사용자 지정 보고서를 만들거나 직접 개발할 수 있습니다.</td>
+   <td>AEM은 사용자 정의된 다양한 보고서를 제공하며, 사용자 지정 보고서를 만들거나 자신만의 보고서를 개발할 수 있습니다.</td>
   </tr>
   <tr>
    <td>기본 페이지 스캐폴딩</td>
@@ -444,10 +447,10 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>세그멘테이션</td>
-   <td>사이트 방문자가 갖는 관심사와 목표는 매우 다양합니다. 이러한 목표를 이해하고 방문자의 기대를 충족할 수 있어야 온라인 마케팅의 성공이 보장됩니다. Segmentation helps to achieve this by analyzing and characterizing a visitor's details.<br /> </td>
+   <td>사이트 방문자가 갖는 관심사와 목표는 매우 다양합니다. 이러한 목표를 이해하고 방문자의 기대를 충족할 수 있어야 온라인 마케팅의 성공이 보장됩니다. 세그멘테이션은 방문자의 세부 사항을 분석 및 특정하여 이를 실현하는 데 도움이 됩니다.<br /> </td>
   </tr>
   <tr>
-   <td>테넌트</td>
+   <td>세입자</td>
    <td>이 항목과 관련된 활성 기능이 없습니다.</td>
   </tr>
   <tr>
@@ -455,12 +458,12 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>이 항목과 관련된 활성 기능이 없습니다.</td>
   </tr>
   <tr>
-   <td>버전 관리 - 버전 삭제</td>
-   <td>필요에 따라 페이지 버전을 제거할 수 있습니다.</td>
+   <td>버전 관리 - 삭제 버전</td>
+   <td>필요에 따라 페이지 버전을 삭제할 수 있습니다.</td>
   </tr>
   <tr>
    <td>워크플로우</td>
-   <td>워크플로우는 편집 프로세스를 지원하는 페이지 또는 디지털 자산에 대한 일련의 작업을 제어합니다.</td>
+   <td>워크플로우는 모든 편집 프로세스를 지원하는 페이지 또는 디지털 자산에 대한 일련의 작업을 제어합니다.</td>
   </tr>
  </tbody>
 </table>
