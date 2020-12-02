@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '2906'
+ht-degree: 89%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 타깃팅된 컨텐츠에 대한 다중 사이트 지원은 즉시 사용할 수 있으며, MSM을 통해 관리하는 마스터 페이지의 타깃팅된 컨텐츠를 로컬 Live Copy에 푸시하거나 이러한 컨텐츠의 전역 및 로컬 수정 사항을 관리할 수 있도록 해줍니다.
 
-You manage this in an **Area**. 사이트는 다른 사이트에서 사용되는 타깃팅된 컨텐츠(활동, 경험 및 오퍼)를 구분하고 사이트 상속과 함께 타깃팅된 컨텐츠의 상속을 생성하고 관리하는 MSM 기반 메커니즘을 제공합니다. 따라서 6.2 이전 AEM에서와 달리 타깃팅된 컨텐츠를 상속된 사이트에서 다시 만들 필요가 없습니다.
+**영역**&#x200B;에서 관리합니다. 사이트는 다른 사이트에서 사용되는 타깃팅된 컨텐츠(활동, 경험 및 오퍼)를 구분하고 사이트 상속과 함께 타깃팅된 컨텐츠의 상속을 생성하고 관리하는 MSM 기반 메커니즘을 제공합니다. 따라서 6.2 이전 AEM에서와 달리 타깃팅된 컨텐츠를 상속된 사이트에서 다시 만들 필요가 없습니다.
 
 영역에서는 해당 영역에 연결된 활동만 Live Copy에 푸시됩니다. 기본적으로 [마스터 영역]이 선택됩니다. 추가 영역을 만든 후 만들어진 영역을 사이트나 페이지에 연결하여 푸시되는 타깃팅된 컨텐츠를 가리킬 수 있습니다.
 
@@ -54,11 +57,12 @@ You manage this in an **Area**. 사이트는 다른 사이트에서 사용되는
 >
 >* 롤아웃이나 Live Copy를 사용하는 경우 MSM 라이센스가 있어야 합니다.
 >* Adobe Target에 대한 동기화를 사용하는 경우 Adobe Target 라이센스가 있어야 합니다.
+
 >
 
 
 
-## 사용 사례 {#use-cases}
+## 사용 사례  {#use-cases}
 
 사용 사례에 따라 다양한 방법으로 타깃팅된 컨텐츠에 대한 다중 사이트 지원을 설정할 수 있습니다. 이 섹션에서는 이 지원이 어떻게 하나의 브랜드에 이론적으로 실행되는지를 설명합니다. 또한 [예: 지역을 기반으로 하는 컨텐츠 타깃팅](#example-targeting-content-based-on-geography)에서는 여러 사이트에서 컨텐츠를 타깃팅하는 실세계 적용을 확인할 수 있습니다.
 
@@ -66,7 +70,7 @@ You manage this in an **Area**. 사이트는 다른 사이트에서 사용되는
 
 타깃팅된 컨텐츠에 대한 다중 사이트 지원 시 다음 컨텐츠 세트 중 하나가 있는 두 개(또는 이상) 사이트가 있고 이 사이트들이 **하나**&#x200B;의 브랜드를 사용하는 경우가 있을 수 있습니다.
 
-* 완전히 *분리된* 타깃팅된 컨텐츠 세트 - 사이트에 있는 타깃팅된 컨텐츠를 편집해도 다른 사이트에 영향을 주지 않습니다. 개별 영역에 연결하는 사이트는 자체 구성 영역에 읽고 씁니다. 예:
+* 완전히 *분리된* 타깃팅된 컨텐츠 세트 - 사이트에 있는 타깃팅된 컨텐츠를 편집해도 다른 사이트에 영향을 주지 않습니다. 개별 영역에 연결하는 사이트는 구성된 영역에 읽고 씁니다. 예:
 
    * 사이트 A는 영역 X에 연결합니다.
    * 사이트 B는 영역 Y에 연결합니다.
@@ -76,7 +80,7 @@ You manage this in an **Area**. 사이트는 다른 사이트에서 사용되는
    * 사이트 A는 영역 X에 연결합니다.
    * 사이트 B는 영역 X에 연결합니다.
 
-* A distinct set of targeted content *inherited* from another site via MSM - Content can be unidirectionally rolled out from master to live copy. 예:
+* MSM을 통해 다른 사이트에서 상속된 타깃팅된 컨텐츠 *의 개별 세트 - 컨텐츠는 마스터에서 Live Copy로 단방향 롤아웃될 수 있습니다.* 예:
 
    * 사이트 A는 영역 X에 연결합니다.
    * 사이트 B는 영역 Y(영역 X의 Live Copy)에 연결합니다.
@@ -87,7 +91,7 @@ You manage this in an **Area**. 사이트는 다른 사이트에서 사용되는
 
 >[!NOTE]
 >
->For a more technical look at this feature, see [How Multisite Management for Targeted Content is Structured](/help/sites-authoring/technical-multisite-targeted.md).
+>이 기능에 대한 자세한 내용은 [타깃팅된 컨텐츠에 대한 다중 사이트 관리가 구조화된 방식](/help/sites-authoring/technical-multisite-targeted.md)을 참조하십시오.
 
 ## 예: 지역을 기반으로 하는 컨텐츠 타깃팅 {#example-targeting-content-based-on-geography}
 
@@ -128,7 +132,7 @@ You manage this in an **Area**. 사이트는 다른 사이트에서 사용되는
 
 >[!NOTE]
 >
->For a more technical look at this feature, see [How Multisite Management for Targeted Content is Structured](/help/sites-authoring/technical-multisite-targeted.md).
+>이 기능에 대한 자세한 내용은 [타깃팅된 컨텐츠에 대한 다중 사이트 관리가 구조화된 방식](/help/sites-authoring/technical-multisite-targeted.md)을 참조하십시오.
 
 ### 새 영역 만들기와 새 영역을 Live Copy로 만들기 비교 {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
@@ -151,7 +155,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 * 사이트 C가 상속된 영역에 연결합니다. 이 영역은 마스터 영역의 Live Copy입니다. - 영역을 Live Copy로 만듭니다. 여기서 Live Copy는 마스터 영역을 기반으로 만듭니다. 상속된 영역은 롤아웃 시 마스터 영역에서 활동을 상속받습니다.
 * 사이트 D가 사이트 D만의 분리된 영역에 연결합니다. - 영역을 만듭니다. 여기에서는 아직 정의된 활동이 없는 완전히 새로운 영역을 만듭니다. 분리된 영역은 다른 사이트와 활동을 공유하지 않습니다.
 
-## 새 영역 만들기 {#creating-new-areas}
+## 새 영역 만들기  {#creating-new-areas}
 
 영역은 활동 및 오퍼를 포괄할 수 있습니다. 둘 중 하나(예: 활동)에서 영역을 만들면 다른 하나(예: 오퍼)에서도 이 영역을 사용할 수 있습니다.
 
@@ -161,7 +165,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
 새 영역을 만들려면 다음을 수행하십시오.
 
-1. Navigate to **Personalization** > **Activities** or **Offers** or and then to your brand.
+1. **개인화** > **활동** 또는 **오퍼**&#x200B;로 이동한 다음 브랜드로 이동합니다.
 1. **영역 만들기**&#x200B;를 탭하거나 클릭합니다.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
@@ -180,7 +184,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
 영역을 Live Copy로 만들려면 다음을 수행하십시오.
 
-1. Navigate to **Personalization** > **Activities** or **Offers** and then to your brand.
+1. **개인화** > **활동** 또는 **오퍼**&#x200B;로 이동한 다음 브랜드로 이동합니다.
 1. **영역을 Live Copy로 만들기**&#x200B;를 탭하거나 클릭합니다.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
@@ -201,7 +205,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
    >[!NOTE]
    >
-   >When a page is rolled out to a Live Copy and the area configured for the Blueprint page is also the Blueprint for the area configured for the Pages Live Copy, the LiveAction **personalizationContentRollout** triggers a synchronous subRollout, which is part of the **Standard rollout config**.
+   >페이지가 Live Copy로 롤아웃되고 블루프린트 페이지에 대해 구성된 영역도 페이지 Live Copy에 대해 구성된 영역에 대한 블루프린트일 때, LiveAction **personalizationContentRollout**&#x200B;은(는) **표준 롤아웃 구성**&#x200B;의 일부인 동기 subRollout을 트리거합니다.
 
 1. **만들기**&#x200B;를 탭하거나 클릭합니다.
 
@@ -217,7 +221,7 @@ AEM에서 이렇게 하려면 다음을 수행합니다.
 
 >[!NOTE]
 >
->Pages or sites that reference the same area are using the *same* shared set of activities, experiences, and offers. 여러 사이트에서 공유하는 활동, 경험 또는 오퍼를 편집하는 것은 모든 사이트에 영향을 줍니다.
+>동일한 영역을 참조하는 페이지나 사이트는 동일한 *활동, 경험 및 오퍼의 공유 집합을 사용하고 있습니다.* 여러 사이트에서 공유하는 활동, 경험 또는 오퍼를 편집하는 것은 모든 사이트에 영향을 줍니다.
 
 사이트를 영역에 연결하려면 다음을 수행하십시오.
 
@@ -246,11 +250,12 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 >
 >* 활동에서는 Live Copy만 일시 중단하거나 분리할 수 있습니다.
 >* 상속된 활동을 확장하기 위해 Live Copy를 일시 중단하거나 분리할 필요는 없습니다. 항상 해당 활동에 대한 **새** 로컬 경험과 오퍼를 만들 수 있습니다. 기존 활동을 수정하려면 상속을 일시 중단해야 합니다.
+
 >
 
 
 
-### 상속 일시 중단 {#suspending-inheritance}
+### 상속 일시 중단  {#suspending-inheritance}
 
 활동에서 타깃팅된 컨텐츠의 상속을 일시 중단하거나 분리하려면 다음을 수행하십시오.
 
@@ -260,9 +265,10 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 
    1. 대상과 같은 활동의 요소를 선택합니다. AEM에 Live Copy 일시 중단을 확인하는 상자가 자동으로 표시됩니다. (타깃팅 프로세스에서 임의의 요소를 탭하거나 클릭하여 Live Copy를 일시 중단할 수 있습니다.)
    1. 도구 모음의 드롭다운 메뉴에서 **Live Copy 일시 중단**&#x200B;을 선택합니다.
+
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Tap or click **Suspend** to suspend the activity. 일시 중단된 활동은 빨간색으로 표시됩니다.
+1. **일시 중단**&#x200B;을 탭하거나 클릭하여 활동을 일시 중단합니다. 일시 중단된 활동은 빨간색으로 표시됩니다.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -283,21 +289,21 @@ Live Copy를 일시 중단하면 상속이 일시적으로 중단되지만 나�
 
 활동에서 타깃팅된 컨텐츠의 상속을 복원하려면 다음을 수행하십시오.
 
-1. Navigate to the page where you want to restore inheritance and tap or click **Targeting** in the mode drop-down menu.
+1. 상속을 복원할 페이지로 이동하고 모드 드롭다운 메뉴에서 **타깃팅**&#x200B;을 탭하거나 클릭합니다.
 1. **타깃팅 시작**&#x200B;을 탭하거나 클릭합니다.
-1. Select **Resume Live Copy** from the drop-down menu in the toolbar.
+1. 도구 모음의 드롭다운 메뉴에서 **Live Copy 다시 시작**&#x200B;을 선택합니다.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
 
 1. **다시 시작**&#x200B;을 탭하거나 클릭하여 Live Copy 상속을 다시 시작할 것임을 확인합니다. 상속을 다시 시작하는 경우 현재 활동에 대한 수정 사항은 모두 잃게 됩니다.
 
-## 영역 삭제 {#deleting-areas}
+## 영역 삭제  {#deleting-areas}
 
 영역을 삭제하면 해당 영역의 모든 활동이 삭제됩니다. AEM에서는 영역을 삭제하기 전에 경고를 표시합니다. 사이트가 연결된 영역을 삭제하면 이 브랜드에 대한 매핑이 자동으로 마스터 영역에 다시 매핑됩니다.
 
 영역을 삭제하려면 다음을 수행하십시오.
 
-1. Navigate to **Personalization** > **Activities** or **Offers** and then your brand.
+1. **개인화** > **활동** 또는 **오퍼**&#x200B;로 이동한 다음 브랜드로 이동합니다.
 1. 삭제할 영역 옆에 있는 아이콘을 탭하거나 클릭합니다.
 1. **삭제**&#x200B;를 탭하거나 클릭하고 영역을 삭제할 것임을 확인합니다.
 
