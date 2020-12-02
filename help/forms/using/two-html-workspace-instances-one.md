@@ -1,6 +1,6 @@
 ---
-title: 하나의 서버에서 두 개의 AEM Forms 작업 영역 인스턴스 호스팅
-seo-title: 하나의 서버에서 두 개의 AEM Forms 작업 영역 인스턴스 호스팅
+title: 하나의 서버에 두 개의 AEM Forms 작업 영역 인스턴스 호스팅
+seo-title: 하나의 서버에 두 개의 AEM Forms 작업 영역 인스턴스 호스팅
 description: LC 관리자가 다른 URL을 통해 액세스할 수 있는 단일 서버에서 두 개의 인스턴스를 호스팅하도록 HTML WS를 사용자 지정하는 방법
 seo-description: LC 관리자가 다른 URL을 통해 액세스할 수 있는 단일 서버에서 두 개의 인스턴스를 호스팅하도록 HTML WS를 사용자 지정하는 방법
 uuid: 0584f512-6b92-4418-b71c-93605cfa1927
@@ -17,20 +17,20 @@ ht-degree: 0%
 ---
 
 
-# 하나의 서버에서 두 개의 AEM Forms 작업 영역 인스턴스 호스팅 {#hosting-two-aem-forms-workspace-instances-on-one-server}
+# 하나의 서버에 두 개의 AEM Forms 작업 영역 인스턴스 호스팅 {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
-기본 AEM Forms 설치 및 설정을 통해 서버에서 하나의 AEM Forms 작업 영역만 사용할 수 있습니다. 그러나 단일 AEM Forms 서버에 두 개의 서로 다른 AEM Forms 작업 영역 인스턴스를 호스팅해야 할 수 있습니다. 두 인스턴스는 다른 URL로 액세스할 수 있습니다.
+AEM Forms의 기본 설치 및 설정을 통해 서버에서 하나의 AEM Forms 작업 영역만 사용할 수 있습니다. 그러나 단일 AEM Forms 서버에 두 개의 서로 다른 AEM Forms 작업 영역 인스턴스를 호스팅해야 할 수도 있습니다. 두 인스턴스는 다른 URL로 액세스할 수 있습니다.
 
-AEM Forms 관리자는 작업 영역을 사용자 지정하여 두 개의 서로 다른 URL을 만들고 두 개의 작업 영역을 동일한 서버에서 사용할 수 있도록 합니다. 이 사용자 지정 아티클에서는 두 작업 영역에 액세스할 수 `https://'[server]:[port]'/lc/ws` 있는 `https://'[server]:[port]':/lc/ws2`것으로 가정합니다.
+AEM Forms 관리자는 작업 영역을 사용자 지정하여 두 개의 서로 다른 URL을 만들고 두 개의 작업 영역을 동일한 서버에서 사용할 수 있도록 합니다. 이 사용자 지정 아티클에서는 두 작업 영역이 `https://'[server]:[port]'/lc/ws` 및 `https://'[server]:[port]':/lc/ws2`에서 액세스할 수 있다고 가정합니다.
 
 다음 단계에 따라 AEM Forms 작업 영역을 구성합니다.
 
-1. 서버에 AEM Forms 작업 영역의 개발 패키지를 설치합니다. 개발 [패키지](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)생성 지침을 참조하십시오.
-1. 관리자로 CRXDE Lite에 로그인하고 액세스할 수 있습니다 `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. /content에 노드를 복사하고 /content에 붙여넣습니다. 노드 이름을 ws2로 변경합니다. 모두 **[!UICONTROL 저장을 클릭합니다]**. 이 노드의 속성에서 값을 ws2 `sling:resourceType` 로 변경합니다. 모두 **[!UICONTROL 저장을 클릭합니다]**.
+1. 서버에 AEM Forms 작업 영역의 개발 패키지를 설치합니다. 만들기 지침은 [개발 패키지](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)을 참조하십시오.
+1. `https://'[server]:[port]'/lc/crx/de/index.jsp`에 액세스하여 관리자로 CRXDE Lite에 로그인합니다.
+1. /content에 노드를 복사하고 /content에 붙여넣습니다. 노드 이름을 ws2로 변경합니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다. 이 노드의 속성에서 `sling:resourceType`의 값을 ws2로 변경합니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
-1. /libs에서 폴더를 복사하고 /apps에 붙여넣습니다. 폴더 이름을 ws2로 변경합니다. 모두 **[!UICONTROL 저장을 클릭합니다]**.
-1. 에서 `GET.jsp` 다음 `/apps/ws2`코드를 변경합니다. 다음 항목 바꾸기
+1. /libs에서 폴더를 복사하고 /apps에 붙여넣습니다. 폴더 이름을 ws2로 변경합니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
+1. `/apps/ws2`의 `GET.jsp`에서 다음 코드를 변경합니다. 다음 항목 바꾸기
 
    ```html
    <html lang="en">
@@ -54,7 +54,7 @@ AEM Forms 관리자는 작업 영역을 사용자 지정하여 두 개의 서로
        <meta http-equiv="refresh" content="0;URL='/lc/apps/ws2/index.html'" />
    ```
 
-1. 에서 템플릿 `registry.js` 의 경로를 `/apps/ws2/js`변경하여 템플릿을 참조합니다 `/apps/ws2/js/runtime/templates`. 다음 코드 바꾸기
+1. `/apps/ws2/js`의 `registry.js`에서 템플릿의 경로를 변경하여 `/apps/ws2/js/runtime/templates`에 있는 템플릿을 참조합니다. 다음 코드 바꾸기
 
    ```css
    "tasklist" : {
@@ -82,16 +82,16 @@ AEM Forms 관리자는 작업 영역을 사용자 지정하여 두 개의 서로
    }
    ```
 
-1. 및 `userinfo.js` 에서 문자열 `/apps/ws2/js/runtime/models` 을 다음으로 `/apps/ws2/js/runtime/views``/lc/content/ws` `lc/content/ws2`변경합니다.
+1. `/apps/ws2/js/runtime/models` 및 `/apps/ws2/js/runtime/views`의 `userinfo.js`에서 문자열 `/lc/content/ws`을 `lc/content/ws2`로 변경합니다.
 
-1. 에서 `/apps/ws2/js/runtime/services/service.js`함수의 경로를 `getLocalizationData` 다음으로 변경합니다 `/lc/apps/ws2/Locale.html`.
+1. `/apps/ws2/js/runtime/services/service.js`에서 `getLocalizationData` 함수의 경로를 `/lc/apps/ws2/Locale.html`로 변경합니다.
 
-1. 새 작업 공간 `pdf.html` 을 참조하려면 의 경로를 `pdf.html` 변경합니다 `/apps/ws2/js/runtime/views/forms/pdftaskform.js`.
+1. 새 작업 영역의 `pdf.html`을 참조하려면 `/apps/ws2/js/runtime/views/forms/pdftaskform.js`에서 `pdf.html`의 경로를 변경합니다.
 
-1. 새 작업 공간 `pdf.html` 을 참조하려면 의 경로 `pdf.html` 와 `WsNextAdapter.swf` , `startprocess.html`및 에서 `taskdetails.html`경로 `processinstancehistory.html` 를 `/apps/ws2/js/runtime/templates`변경합니다.
+1. 새 작업 영역의 `pdf.html`을 참조하려면 `startprocess.html`, `taskdetails.html` 및 `/apps/ws2/js/runtime/templates`의 `pdf.html` 및 `WsNextAdapter.swf`의 경로를 변경합니다.`processinstancehistory.html`
 
-1. 폴더 `/etc/map/ws` 를 복사하여 다음 위치에 붙여넣습니다 `/etc/map`. 새 폴더의 이름을 ws2로 변경합니다. 모두 저장을 클릭합니다.
+1. `/etc/map/ws` 폴더를 복사하고 `/etc/map`에 붙여 넣습니다. 새 폴더의 이름을 ws2로 변경합니다. 모두 저장을 클릭합니다.
 
-1. 속성 `ws2`에서 값을 `sling:redirect` 로 `content/ws2`변경합니다.
+1. `ws2`의 속성에서 `sling:redirect`의 값을 `content/ws2`로 변경합니다.
 
-1. 의 값 `sling:match` 을 `^[^/\||]/[^/\||]/ws2$`변경합니다.
+1. `sling:match`의 값을 `^[^/\||]/[^/\||]/ws2$`로 변경합니다.
