@@ -27,9 +27,9 @@ Forms 중심의 AEM 워크플로우를 통해 실제 Forms 중심의 비즈니�
 * 감시 폴더 사용
 * 대화형 통신 또는 서신 제출
 
-Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSGi에서 [Forms 중심의 워크플로우를 참조하십시오](/help/forms/using/aem-forms-workflow.md).
+Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSGi[의 Forms 중심 워크플로우를 참조하십시오.](/help/forms/using/aem-forms-workflow.md)
 
-## 사용자 데이터 및 데이터 저장소 {#user-data-and-data-stores}
+## 사용자 데이터 및 데이터는 {#user-data-and-data-stores} 저장
 
 워크플로우가 트리거되면 워크플로우 인스턴스에 대해 페이로드가 자동으로 생성됩니다. 각 워크플로우 인스턴스에는 고유한 인스턴스 ID 및 관련 페이로드 ID가 할당됩니다. 페이로드에는 워크플로우 인스턴스와 연관된 사용자 및 양식 데이터의 저장소 위치가 포함됩니다. 또한 워크플로우 인스턴스에 대한 초안 및 내역 데이터도 AEM 저장소에 저장됩니다.
 
@@ -47,7 +47,7 @@ Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSG
    <td><b>AEM 6.3 [!DNL Forms]</b></td>
   </tr>
   <tr>
-   <td><strong>워크플로우 <br /> 인스턴스</strong></td>
+   <td><strong>워크플로 <br /> 인스턴스</strong></td>
    <td>/var/workflow/instances/[server_id]/&lt;date&gt;/[workflow-instance]/</td>
    <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td>
   </tr>
@@ -69,7 +69,7 @@ Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSG
  </tbody>
 </table>
 
-## 사용자 데이터 액세스 및 삭제 {#access-and-delete-user-data}
+## 사용자 데이터 {#access-and-delete-user-data} 액세스 및 삭제
 
 저장소의 워크플로우 인스턴스에서 사용자 데이터에 액세스하고 삭제할 수 있습니다. 이를 위해서는 사용자와 연결된 워크플로우 인스턴스의 인스턴스 ID를 알고 있어야 합니다. 워크플로우 인스턴스를 시작한 사용자 또는 워크플로우 인스턴스의 현재 할당자인 사용자의 사용자 이름을 사용하여 워크플로우 인스턴스의 인스턴스 ID를 찾을 수 있습니다.
 
@@ -78,13 +78,13 @@ Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSG
 * **감시 폴더를 통해 트리거된 워크플로우**:워크플로우가 감시 폴더에 의해 트리거되는 경우 해당 이니시에이터를 사용하여 워크플로우 인스턴스를 식별할 수 없습니다. 이 경우 사용자 정보는 저장된 데이터로 인코딩됩니다.
 * **게시 AEM 인스턴스에서 시작된 워크플로우**:AEM 게시 인스턴스에서 응용 양식, 인터랙티브 커뮤니케이션 또는 문자를 전송할 때 서비스 사용자를 사용하여 모든 워크플로우 인스턴스가 생성됩니다. 이 경우 로그인한 사용자의 사용자 이름이 워크플로우 인스턴스 데이터에서 캡처되지 않습니다.
 
-### 사용자 데이터 액세스 {#access}
+### 사용자 데이터 {#access} 액세스
 
 워크플로우 인스턴스에 대해 저장된 사용자 데이터를 식별하고 액세스하려면 다음 단계를 수행하십시오.
 
-1. AEM 작성자 인스턴스의 경우 도구 > 쿼리 `https://'[server]:[port]'/crx/de` 로 **[!UICONTROL 이동합니다]**.
+1. AEM 작성자 인스턴스의 경우 `https://'[server]:[port]'/crx/de`으로 이동하고 **[!UICONTROL 도구 > 쿼리]**&#x200B;로 이동합니다.
 
-   유형 **[!UICONTROL 드롭다운에서]** SQL2 **[!UICONTROL 를]** 선택합니다.
+   **[!UICONTROL 유형]** 드롭다운에서 **[!UICONTROL SQL2]**&#x200B;을 선택합니다.
 
 1. 사용 가능한 정보에 따라 다음 쿼리 중 하나를 실행합니다.
 
@@ -98,7 +98,7 @@ Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSG
 
    쿼리는 지정된 워크플로우 개시자 또는 현재 워크플로우 할당자에 대한 모든 워크플로우 인스턴스의 위치를 반환합니다.
 
-   예를 들어 다음 쿼리는 워크플로우 초기자가 있는 노드에서 두 개의 워크플로우 인스턴스 경로를 `/var/workflow/instances` 반환합니다 `srose`.
+   예를 들어 다음 쿼리는 워크플로 이니시에이터가 `srose`인 `/var/workflow/instances` 노드에서 두 개의 워크플로우 인스턴스 경로를 반환합니다.
 
    ![workflow-instance](assets/workflow-instance.png)
 
@@ -106,7 +106,7 @@ Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSG
 
    ![상태](assets/status.png)
 
-1. 워크플로우 인스턴스 노드에서 탐색합니다 `data/payload/`. 이 `path` 속성은 워크플로우 인스턴스의 페이로드 경로를 저장합니다. 페이로드에 저장된 데이터에 액세스하는 경로로 이동할 수 있습니다.
+1. 워크플로우 인스턴스 노드에서 `data/payload/`으로 이동합니다. `path` 속성은 워크플로우 인스턴스의 페이로드 경로를 저장합니다. 페이로드에 저장된 데이터에 액세스하는 경로로 이동할 수 있습니다.
 
    ![payload-path](assets/payload-path.png)
 
@@ -122,31 +122,31 @@ Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSG
 
    >[!NOTE]
    >
-   >또한 AEM [!DNL Forms] 앱은 오프라인 모드로 데이터를 저장합니다. 워크플로우 인스턴스의 데이터는 개별 장치에 로컬로 저장되고 앱이 서버와 동기화될 때 [!DNL Forms] 서버에 제출될 수 있습니다.
+   >AEM [!DNL Forms] 앱은 오프라인 모드에도 데이터를 저장합니다. 워크플로우 인스턴스의 데이터는 개별 장치에 로컬로 저장되고 앱이 서버와 동기화될 때 [!DNL Forms] 서버에 제출될 수 있습니다.
 
-### 사용자 데이터 삭제 {#delete-user-data}
+### 사용자 데이터 {#delete-user-data} 삭제
 
 다음 단계를 수행하여 워크플로우 인스턴스에서 사용자 데이터를 삭제하려면 AEM 관리자여야 합니다.
 
-1. 사용자 데이터 [에](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) 액세스하려면 다음 지침을 따르십시오.
+1. [사용자 데이터](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access)의 지침에 따라 다음 내용을 참고하십시오.
 
    * 사용자와 연결된 워크플로우 인스턴스에 대한 경로
    * 워크플로우 인스턴스의 상태
    * 워크플로우 인스턴스에 대한 페이로드 경로
    * 워크플로우 인스턴스에 대한 초안 및 작업 내역 경로
 
-1. RUNNING, SUSPENDED **또는 ST퀴드****상태의 워크플로우 인스턴스에 대해 다음 단계를**&#x200B;수행합니다 **** .
+1. **RUNNING**, **SUSPENDED** 또는 **ST퀴한** 상태의 워크플로우 인스턴스에 대해 이 단계를 수행합니다.
 
-   1. 관리자 자격 증명 `https://'[server]:[port]'/aem/start.html` 으로 이동하여 로그인합니다.
-   1. 도구 **[!UICONTROL > 워크플로우 > 인스턴스로 이동합니다]**.
-   1. 사용자에 대한 관련 워크플로우 인스턴스를 선택하고 **[!UICONTROL 종료를]** 탭하여 실행 중인 인스턴스를 종료합니다.
+   1. `https://'[server]:[port]'/aem/start.html`으로 이동하고 관리자 자격 증명으로 로그인합니다.
+   1. **[!UICONTROL 도구 > 워크플로> 인스턴스]**&#x200B;로 이동합니다.
+   1. 사용자에 대한 관련 워크플로우 인스턴스를 선택하고 **[!UICONTROL 종료]**&#x200B;를 눌러 실행 중인 인스턴스를 종료합니다.
 
-      워크플로우 인스턴스 작업에 대한 자세한 내용은 워크플로우 인스턴스 [관리를 참조하십시오](/help/sites-administering/workflows-administering.md).
+      워크플로우 인스턴스 작업에 대한 자세한 내용은 [워크플로우 인스턴스 관리](/help/sites-administering/workflows-administering.md)를 참조하십시오.
 
-1. 콘솔로 [!DNL CRXDE Lite] 이동하고 워크플로우 인스턴스의 페이로드 경로로 이동한 후 `payload` 노드를 삭제합니다.
+1. [!DNL CRXDE Lite] 콘솔로 이동하고 워크플로우 인스턴스의 페이로드 경로로 이동한 다음 `payload` 노드를 삭제합니다.
 1. 워크플로우 인스턴스의 초안 경로로 이동하고 `draft` 노드를 삭제합니다.
 1. 워크플로우 인스턴스의 작업 내역 경로로 이동하고 `history` 노드를 삭제합니다.
-1. 워크플로우 인스턴스의 워크플로우 인스턴스 경로로 이동하고 워크플로우의 `[workflow-instance-ID]` 노드를 삭제합니다.
+1. 워크플로우 인스턴스의 워크플로우 인스턴스 경로로 이동하고 워크플로우에 대한 `[workflow-instance-ID]` 노드를 삭제합니다.
 
    >[!NOTE]
    >
