@@ -16,17 +16,17 @@ ht-degree: 0%
 ---
 
 
-# 자습서:적응형 양식 필드에 규칙 적용 {#tutorial-apply-rules-to-adaptive-form-fields}
+# 자습서:적응형 양식 필드 {#tutorial-apply-rules-to-adaptive-form-fields}에 규칙 적용
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
 
-이 자습서는 첫 번째 적응형 양식 [만들기 시리즈의 한 단계입니다](/help/forms/using/create-your-first-adaptive-form.md) . Adobe은 전체 자습서 사용 사례를 이해하고, 실행하고, 시연하기 위해 연재 순서에서 시리즈 다음에 나오는 것이 좋습니다.
+이 자습서는 [첫 번째 적응형 양식 만들기](/help/forms/using/create-your-first-adaptive-form.md) 시리즈의 한 단계입니다. Adobe은 전체 자습서 사용 사례를 이해하고, 실행하고, 시연하기 위해 연재 순서에서 시리즈 다음에 나오는 것이 좋습니다.
 
-## 자습서 정보 {#about-the-tutorial}
+## 자습서 {#about-the-tutorial} 정보
 
 규칙을 사용하여 적응형 양식에 인터랙션, 비즈니스 논리 및 스마트 유효성 검사를 추가할 수 있습니다. 적응형 양식에는 내장된 규칙 편집기가 있습니다. 규칙 편집기는 가이드 투어와 유사한 드래그 앤 드롭 기능을 제공합니다. 드래그 앤 드롭 방법은 규칙을 만드는 데 가장 빠르고 쉬운 방법입니다. 또한 규칙 편집기에서는 코딩 기술을 테스트하거나 규칙을 한 단계 끌어올리는 데 관심이 있는 사용자가 코드 창을 제공합니다.
 
-적응형 Forms 규칙 편집기에서 규칙 [편집기에 대해 자세히 알아볼 수 있습니다](/help/forms/using/rule-editor.md).
+규칙 편집기에 대한 자세한 내용은 [적응형 Forms 규칙 편집기](/help/forms/using/rule-editor.md)에서 참조할 수 있습니다.
 
 튜토리얼이 종료될 때까지 다음과 같은 규칙을 만드는 방법을 학습합니다.
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 자습서의 각 섹션 끝에 있는 인터랙티브한 GIF 이미지는 작성 중인 양식의 기능을 신속하게 확인하고 확인하는 데 도움이 됩니다.
 
-## 1단계:데이터베이스에서 고객 레코드 검색 {#retrieve-customer-record}
+## 1단계:데이터베이스 {#retrieve-customer-record}에서 고객 레코드 검색
 
-양식 데이터 모델 [만들기 아티클에 따라 양식 데이터 모델을](/help/forms/using/create-form-data-model.md) 만들었습니다. 이제 규칙 편집기를 사용하여 Forms 데이터 모델 서비스를 호출하여 정보를 검색하고 데이터베이스에 추가할 수 있습니다.
+양식 데이터 모델 만들기[ 아티클을 따라 양식 데이터 모델을 만들었습니다. ](/help/forms/using/create-form-data-model.md) 이제 규칙 편집기를 사용하여 Forms 데이터 모델 서비스를 호출하여 정보를 검색하고 데이터베이스에 추가할 수 있습니다.
 
 모든 고객에게 고유한 고객 ID 번호가 할당되어 데이터베이스에서 관련 고객 데이터를 식별할 수 있습니다. 아래 절차에서는 고객 ID를 사용하여 데이터베이스에서 정보를 검색합니다.
 
@@ -46,81 +46,81 @@ ht-degree: 0%
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. 고객 **[!UICONTROL ID]** 필드를 누르고 규칙 **[!UICONTROL 편집]** 아이콘을 누릅니다. 규칙 편집기 창이 열립니다.
-1. 규칙을 추가하려면 **[!UICONTROL + 만들기]** 아이콘을 누릅니다. 시각적 편집기를 엽니다.
+1. **[!UICONTROL 고객 ID]** 필드를 누르고 **[!UICONTROL 규칙 편집]** 아이콘을 누릅니다. 규칙 편집기 창이 열립니다.
+1. **[!UICONTROL + 만들기]** 아이콘을 눌러 규칙을 추가합니다. 시각적 편집기를 엽니다.
 
-   시각적 편집기에서 기본적으로 **[!UICONTROL WHEN]** 문이 선택됩니다. 또한, 규칙 편집기를 실행한 양식 객체(이 경우 **[!UICONTROL 고객 ID]**)는 **[!UICONTROL WHEN]** 문에 지정됩니다.
+   시각적 편집기에서 기본적으로 **[!UICONTROL WHEN]** 문이 선택됩니다. 또한, 규칙 편집기를 실행한 양식 개체(이 경우 **[!UICONTROL 고객 ID]**)는 **[!UICONTROL WHEN]** 문에 지정됩니다.
 
-1. 상태 **[!UICONTROL 선택]** 드롭다운을 누르고 **[!UICONTROL 변경됨을 선택합니다]**.
+1. **[!UICONTROL 상태 선택]** 드롭다운을 누르고 **[!UICONTROL 가 변경됨]**&#x200B;을 선택합니다.
 
    ![사용자 지정](assets/whencustomeridischanged.png)
 
-1. THEN **** 문 **[!UICONTROL 의 작업]** 선택 **[!UICONTROL 드롭다운에서 서비스]** 호출을선택합니다.
-1. 선택 **[!UICONTROL 드롭다운에서 배송 주소]** 서비스 **[!UICONTROL 검색을]** 선택합니다.
-1. 양식 개체 탭에서 **[!UICONTROL 고객 ID]** 필드를 **[!UICONTROL 드롭 개체로 드래그하여 놓거나 입력]** 상자 **[!UICONTROL 에서 여기]** 필드를선택하십시오.
+1. **[!UICONTROL THEN]** 문에서 **[!UICONTROL Select Action]** 드롭다운에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 선택]** 드롭다운에서 **[!UICONTROL 배송 주소 검색]** 서비스를 선택합니다.
+1. 양식 개체 탭의 **[!UICONTROL 고객 ID]** 필드를 **[!UICONTROL 드롭 개체로 드래그하여 놓거나**[!UICONTROL  INPUT ]**상자에서 여기]** 필드를 선택하십시오.
 
    ![dropbjectstoinputfield-retrieval데이터](assets/dropobjectstoinputfield-retrievedata.png)
 
-1. 양식 개체 탭의 **[!UICONTROL 고객 ID, 이름, 배송 주소, 상태 및 우편 번호]** 필드를 **[!UICONTROL 드롭 개체로 드래그하여 놓거나]** 출력 **[!UICONTROL 상자에서]** 여기필드를 선택하십시오.
+1. 양식 개체 탭의 **[!UICONTROL 드롭 개체로**[!UICONTROL &#x200B;고객 ID, 이름, 배송 주소, 주 및 우편번호&#x200B;]**필드를 드래그하여 놓거나**[!UICONTROL  OUTPUT ]**상자에서 여기]** 필드를 선택하십시오.
 
    ![dropbjectstoutpfield-retrieval데이터](assets/dropobjectstooutputfield-retrievedata.png)
 
-   완료를 **[!UICONTROL 눌러]** 규칙을 저장합니다. 규칙 편집기 창에서 **[!UICONTROL 닫기를 누릅니다]**.
+   **[!UICONTROL Done]**&#x200B;을 눌러 규칙을 저장합니다. 규칙 편집기 창에서 **[!UICONTROL 닫기]**&#x200B;를 누릅니다.
 
-1. 적응형 양식을 미리 봅니다. 고객 ID 필드에 **[!UICONTROL ID를]** 입력합니다. 이제 양식에서 데이터베이스에서 고객 세부 사항을 검색할 수 있습니다.
+1. 적응형 양식을 미리 봅니다. **[!UICONTROL 고객 ID]** 필드에 ID를 입력합니다. 이제 양식에서 데이터베이스에서 고객 세부 사항을 검색할 수 있습니다.
 
    ![검색 정보](assets/retrieve-information.gif)
 
-## 2단계:데이터베이스에 업데이트된 고객 주소 추가 {#updated-customer-address}
+## 2단계:업데이트된 고객 주소를 데이터베이스 {#updated-customer-address}에 추가합니다.
 
 데이터베이스에서 고객 세부 정보를 검색한 후 배송 주소, 상태 및 우편 번호를 업데이트할 수 있습니다. 아래의 절차에서는 데이터 모델 양식 서비스를 호출하여 고객 정보를 데이터베이스로 업데이트합니다.
 
-1. 제출 **[!UICONTROL 필드를]** 선택하고 규칙 **[!UICONTROL 편집]** 아이콘을 누릅니다. 규칙 편집기 창이 열립니다.
-1. 제출 **[!UICONTROL - 규칙을]** 클릭하고 **[!UICONTROL 편집]** 아이콘을누릅니다. 전송 규칙을 편집하는 옵션이 나타납니다.
+1. **[!UICONTROL 제출]** 필드를 선택하고 **[!UICONTROL 규칙 편집]** 아이콘을 누릅니다. 규칙 편집기 창이 열립니다.
+1. **[!UICONTROL 제출 -]** 규칙을 선택하고 **[!UICONTROL 편집]** 아이콘을 누릅니다. 전송 규칙을 편집하는 옵션이 나타납니다.
 
    ![제출 규칙](assets/submit-rule.png)
 
-   WHEN(WHEN) 옵션에서 **[!UICONTROL 제출]** 및 **[!UICONTROL 클릭]** 옵션이 이미 선택되어 있습니다.
+   WHEN 옵션에서 **[!UICONTROL Submit]** 및 **[!UICONTROL 을(를) 클릭한 옵션이 이미 선택되어 있습니다.]**
 
    ![submit-is-click](assets/submit-is-clicked.png)
 
-1. THEN **[!UICONTROL 옵션]** 에서 **[!UICONTROL + 문 추가]** 옵션을 누릅니다. 작업 **[!UICONTROL 선택]** 드롭다운에서 서비스 **[!UICONTROL 호출]** 을선택합니다.
-1. 선택 **[!UICONTROL 드롭다운에서 배송 주소]** 서비스 **** 업데이트를선택합니다.
+1. **[!UICONTROL THEN]** 옵션에서 **[!UICONTROL + 문 추가]** 옵션을 누릅니다. **[!UICONTROL 작업 선택]** 드롭다운에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 선택]** 드롭다운에서 **[!UICONTROL 배송 주소 업데이트]** 서비스를 선택합니다.
 
    ![update-shipping-address](assets/update-shipping-address.png)
 
    ![dropbjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. [ **[!UICONTROL 양식 객체]** ] 탭에서 [ [!UICONTROL 배송 주소, 상태 및 우편 번호] ] 필드를 [ **[!UICONTROL 양식 객체] 탭에서 [배달]** ] 필드 **[!UICONTROL 로 드래그하여 놓거나 [객체 삭제]의 해당]** 객체 또는 [INPUT] 상자에 있는 여기를선택 필드에 해당하는 [사용자 정의 정보] .ships 속성(예: 사용자 정의 세부 정보 .shippingAddress)으로드롭합니다. 테이블 이름(예: 이 사용 사례의 사용자 지정 세부 사항)이 접두사로 추가된 모든 필드는 업데이트 서비스에 대한 입력 데이터로 사용됩니다. 이러한 필드에 제공된 모든 컨텐츠는 데이터 소스에서 업데이트됩니다.
+1. **[!UICONTROL Drop 개체의 [!UICONTROL Form 개체] 탭에서**[!UICONTROL &#x200B;배송 주소, 상태 및 우편 번호&#x200B;]**필드를 &lt;a1/>/>INPUT]** INPUT&lt;a7/>에 있는 &lt;a2/>양식 개체&lt;a3/> 탭의 해당 표 이름 .property로 드래그하여 놓거나 **[!UICONTROL INPUT&lt;a7/> 상자.]** 테이블 이름(예: 이 사용 사례의 사용자 지정 세부 사항)이 접두사로 추가된 모든 필드는 업데이트 서비스에 대한 입력 데이터로 사용됩니다. 이러한 필드에 제공된 모든 컨텐츠는 데이터 소스에서 업데이트됩니다.
 
    >[!NOTE]
    >
-   >이름 및 **[!UICONTROL 고객 ID]** 필드를 해당 tabename.property(예: customerdetails.name)로 드래그하여 **** 놓지 마십시오. 실수로 고객의 이름과 ID를 업데이트하지 않는 데 도움이 됩니다.
+   >**[!UICONTROL Name]** 및 **[!UICONTROL 고객 ID]** 필드를 해당 tabename.property(예: customerdetails.name)로 드래그하여 놓지 마십시오. 실수로 고객의 이름과 ID를 업데이트하지 않는 데 도움이 됩니다.
 
-1. 양식 개체 **[!UICONTROL 탭]** 의 [!UICONTROL 고객 ID] 필드를 입력 **[!UICONTROL 상자]** 의 id 필드로드래그하여놓습니다. 사전 고정된 태블릿 이름(예: 이 사용 사례의 사용자 지정 세부 사항)이 없는 필드는 업데이트 서비스에 대한 검색 매개 변수로 사용됩니다. 이 **[!UICONTROL 사용 사례의 id]** 필드는 **사용자 지정 세부 정보** 테이블의 레코드를 고유하게 식별합니다.
-1. 완료를 **[!UICONTROL 눌러]** 규칙을 저장합니다. 규칙 편집기 창에서 **[!UICONTROL 닫기를 누릅니다]**.
+1. [!UICONTROL 양식 개체] 탭의 **[!UICONTROL 고객 ID]** 필드를 **[!UICONTROL INPUT]** 상자의 id 필드로 드래그하여 놓습니다. 사전 고정된 태블릿 이름(예: 이 사용 사례의 사용자 지정 세부 사항)이 없는 필드는 업데이트 서비스에 대한 검색 매개 변수로 사용됩니다. 이 사용 사례의 **[!UICONTROL id]** 필드는 **customerdetails** 테이블의 레코드를 고유하게 식별합니다.
+1. **[!UICONTROL Done]**&#x200B;을 눌러 규칙을 저장합니다. 규칙 편집기 창에서 **[!UICONTROL 닫기]**&#x200B;를 누릅니다.
 1. 적응형 양식을 미리 봅니다. 고객의 세부 정보를 검색하고 배송 주소를 업데이트한 다음 양식을 제출합니다. 동일한 고객의 세부 사항을 다시 검색하면 업데이트된 배송 주소가 표시됩니다.
 
-## 3단계:(보너스 섹션) 코드 편집기를 사용하여 유효성 검사를 실행하고 오류 메시지를 표시합니다. {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
+## 3단계:(보너스 섹션) 코드 편집기를 사용하여 유효성 검사를 실행하고 오류 메시지 {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages} 표시
 
 양식에 입력된 데이터가 올바른지, 잘못된 데이터의 경우 오류 메시지가 표시되는지 확인하려면 양식에서 유효성 검사를 실행해야 합니다. 예를 들어, 존재하지 않는 고객 ID를 양식에 입력한 경우 오류 메시지가 표시됩니다.
 
 적응형 양식은 여러 구성 요소에 내장된 유효성 검사 기능(예: 이메일 및 숫자 필드)을 제공하므로 일반적인 사용 사례에 사용할 수 있습니다. 예를 들어, 고급 사용 사례에는 규칙 편집기를 사용하여 데이터베이스가 0(0) 레코드(레코드 없음)를 반환할 때 오류 메시지를 표시합니다.
 
-다음 절차에서는 양식에 입력한 고객 ID가 데이터베이스에 없는 경우 오류 메시지를 표시하는 규칙을 만드는 방법을 보여 줍니다. 또한 규칙은 포커스를 가져와서 **[!UICONTROL 고객 ID]** 필드를 재설정합니다. 이 규칙 [은 양식 데이터 모델 서비스의 dataIntegrationUtils API를 사용하여](/help/forms/using/invoke-form-data-model-services.md) 고객 ID가 데이터베이스에 있는지 확인합니다.
+다음 절차에서는 양식에 입력한 고객 ID가 데이터베이스에 없는 경우 오류 메시지를 표시하는 규칙을 만드는 방법을 보여 줍니다. 또한 규칙은 포커스를 가져와서 **[!UICONTROL 고객 ID]** 필드를 재설정합니다. 이 규칙은 데이터 모델 서비스](/help/forms/using/invoke-form-data-model-services.md)의 dataIntegrationUtils API를 사용하여 고객 ID가 데이터베이스에 있는지 확인합니다.[
 
-1. 고객 **[!UICONTROL ID]** 필드를 누르고 `Edit Rules` 아이콘을 누릅니다. 규칙 [!UICONTROL 편집기] 창이 열립니다.
-1. 규칙을 추가하려면 **[!UICONTROL + 만들기]** 아이콘을 누릅니다. 시각적 편집기를 엽니다.
+1. **[!UICONTROL 고객 ID]** 필드를 누르고 `Edit Rules` 아이콘을 누릅니다. [!UICONTROL 규칙 편집기] 창이 열립니다.
+1. **[!UICONTROL + 만들기]** 아이콘을 눌러 규칙을 추가합니다. 시각적 편집기를 엽니다.
 
-   시각적 편집기에서 기본적으로 **[!UICONTROL WHEN]** 문이 선택됩니다. 또한, 규칙 편집기를 실행한 양식 객체(이 경우 **[!UICONTROL 고객 ID]**)는 **[!UICONTROL WHEN]** 문에 지정됩니다.
+   시각적 편집기에서 기본적으로 **[!UICONTROL WHEN]** 문이 선택됩니다. 또한, 규칙 편집기를 실행한 양식 개체(이 경우 **[!UICONTROL 고객 ID]**)는 **[!UICONTROL WHEN]** 문에 지정됩니다.
 
-1. 상태 **[!UICONTROL 선택]** 드롭다운을 누르고 **[!UICONTROL 변경됨을 선택합니다]**.
+1. **[!UICONTROL 상태 선택]** 드롭다운을 누르고 **[!UICONTROL 가 변경됨]**&#x200B;을 선택합니다.
 
    ![사용자 지정](assets/whencustomeridischanged.png)
 
-   THEN **** 문 **[!UICONTROL 의 작업]** 선택 **[!UICONTROL 드롭다운에서 서비스]** 호출을선택합니다.
+   **[!UICONTROL THEN]** 문에서 **[!UICONTROL Select Action]** 드롭다운에서 **[!UICONTROL 호출 서비스]**&#x200B;를 선택합니다.
 
-1. 시각적 **[!UICONTROL 편집기에서]** 코드 **[!UICONTROL 편집기로]**&#x200B;전환합니다. 창 오른쪽에 스위치 컨트롤이 있습니다. 코드 편집기가 열리고 다음과 유사한 코드가 표시됩니다.
+1. **[!UICONTROL Visual Editor]**&#x200B;에서 **[!UICONTROL 코드 편집기]**&#x200B;로 전환합니다. 창 오른쪽에 스위치 컨트롤이 있습니다. 코드 편집기가 열리고 다음과 유사한 코드가 표시됩니다.
 
    ![코드 편집기](assets/code-editor.png)
 
@@ -132,7 +132,7 @@ ht-degree: 0%
    };
    ```
 
-1. 섹션을 `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` 다음 코드로 바꿉니다.
+1. `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` 섹션을 다음 코드로 바꿉니다.
 
    ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
