@@ -12,6 +12,9 @@ discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '3381'
+ht-degree: 84%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
 
 >[!CAUTION]
 >
->Because the Design Importer requires access to `/apps`, it will not work in containerized cloud environments where `/apps` is immutable.
+>디자인 가져오기는 `/apps`에 대한 액세스 권한이 필요하므로 `/apps`이(가) 변경할 수 없는 포함하는 클라우드 환경에서 작동하지 않습니다.
 
 ## 랜딩 페이지란 무엇입니까? {#what-are-landing-pages}
 
@@ -60,7 +63,7 @@ AEM의 샘플 랜딩 페이지는 다음과 같은 모양입니다.
 
 ### 모바일 랜딩 페이지 {#mobile-landing-pages}
 
-랜딩 페이지에는 페이지의 모바일 버전도 있을 수 있습니다. To have a separate mobile version of the landing page the import design has to have two html files: *index.htm(l)* and *mobile.index.htm(l)*.
+랜딩 페이지에는 페이지의 모바일 버전도 있을 수 있습니다. 랜딩 페이지의 모바일 버전을 별도로 만들려면 가져오기 디자인에는 두 개의 html 파일이 있어야 합니다.*index.htm(l)* 및 *mobile.index.htm(l)*
 
 랜딩 페이지 가져오기 절차는 일반 랜딩 페이지의 절차와 동일하며, 랜딩 페이지 디자인에는 모바일 랜딩 페이지에 해당하는 추가 html 파일이 있습니다. 이 html 파일에도 데스크톱 랜딩 페이지 html처럼 `div`인 canvas `id=cqcanvas`가 있어야 하며, 이것은 데스크톱 랜딩 페이지에 대해 설명된 모든 편집 가능한 구성 요소를 지원합니다.
 
@@ -72,7 +75,7 @@ AEM의 샘플 랜딩 페이지는 다음과 같은 모양입니다.
 >
 >모바일 랜딩 페이지는 데스크톱 랜딩 페이지가 삭제되거나 비활성화되는 경우 데스크톱 랜딩 페이지와 함께 삭제되거나/비활성화됩니다.
 
-## 랜딩 페이지 구성 요소 {#landing-page-components}
+## 랜딩 페이지 구성 요소  {#landing-page-components}
 
 가져오는 HTML 부분들을 AEM 내에서 편집할 수 있게 하려면, 랜딩 페이지 HTML 내의 컨텐츠를 직접 AEM 구성 요소에 매핑하면 됩니다. 디자인 가져오기는 기본값당 다음 구성 요소를 인식합니다.
 
@@ -136,20 +139,20 @@ AEM의 샘플 랜딩 페이지는 다음과 같은 모양입니다.
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
-**레이블** 사용자가 보는 텍스트입니다. 서식은 리치 텍스트 편집기로 수정할 수 있습니다.
+**레이블** 사용자에게 표시되는 텍스트입니다. 서식은 리치 텍스트 편집기로 수정할 수 있습니다.
 
-**타겟** URL 사용자가 텍스트를 클릭할 경우 방문하려는 URI를 입력합니다.
+**Target** URL사용자가 텍스트를 클릭할 경우 방문할 URI를 입력합니다.
 
-**렌더링 옵션** 렌더링 옵션에 대해 설명합니다. 다음 중에서 선택할 수 있습니다.
+**렌더링** 옵션렌더링 옵션에 대해 설명합니다. 다음 중에서 선택할 수 있습니다.
 
 * 새 브라우저 창에 페이지를 로드합니다.
 * 페이지를 현재 창에서 로드합니다.
 * 상위 프레임에 페이지를 로드합니다.
 * 모든 프레임을 취소하고 전체 브라우저 창에서 페이지를 로드합니다.
 
-**CSS** 스타일 탭에서 CSS 스타일 시트의 경로를 입력합니다.
+**스타일 탭** 에서 CSS 스타일 시트 경로를 입력합니다.
 
-**ID** 스타일 탭에서 구성 요소의 ID를 입력하여 고유하게 식별합니다.
+**스타일 탭** 에서 구성 요소의 ID를 입력하여 고유하게 식별합니다.
 
 다음은 클릭스루 링크의 예입니다.
 
@@ -161,20 +164,20 @@ AEM의 샘플 랜딩 페이지는 다음과 같은 모양입니다.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-**레이블** 사용자가 그래픽에 표시되는 텍스트입니다. 서식은 리치 텍스트 편집기로 수정할 수 있습니다.
+**레이블** 그래픽에 표시되는 텍스트입니다. 서식은 리치 텍스트 편집기로 수정할 수 있습니다.
 
-**타겟** URL 사용자가 이미지를 클릭할 경우 방문하려는 URI를 입력합니다.
+**Target** URL사용자가 이미지를 클릭할 경우 방문할 URI를 입력합니다.
 
-**렌더링 옵션** 렌더링 옵션에 대해 설명합니다. 다음 중에서 선택할 수 있습니다.
+**렌더링** 옵션렌더링 옵션에 대해 설명합니다. 다음 중에서 선택할 수 있습니다.
 
 * 새 브라우저 창에 페이지를 로드합니다.
 * 페이지를 현재 창에서 로드합니다.
 * 상위 프레임에 페이지를 로드합니다.
 * 모든 프레임을 취소하고 전체 브라우저 창에서 페이지를 로드합니다.
 
-**CSS** 스타일 탭에서 CSS 스타일 시트의 경로를 입력합니다.
+**스타일 탭** 에서 CSS 스타일 시트 경로를 입력합니다.
 
-**ID** 스타일 탭에서 구성 요소의 ID를 입력하여 고유하게 식별합니다.
+**스타일 탭** 에서 구성 요소의 ID를 입력하여 고유하게 식별합니다.
 
 다음은 그래픽 링크의 예입니다.
 
@@ -199,7 +202,7 @@ CTA 리드 양식은 여러 가지 구성 요소로 이루어집니다.
 * **프로필 구성 요소**
 프로필 구성 요소는 Social Collaboration에 사용되는 방문자 프로필 및 방문자별 개인화가 필요한 기타 영역과 관련됩니다.
 
-The preceding shows an example form; it is comprised of the **Lead Form** component (start and end), with **First Name** and **Email Id** fields used for input and a **Submit** field
+앞의 내용은 예제 양식을 보여 줍니다.**리드 양식** 구성 요소(시작 및 끝)로 구성됩니다. 여기에는 **첫 번째 이름** 및 **이메일 ID** 필드와 **제출** 필드가 사용됩니다.
 
 사이드킥에서, CTA 리드 양식에 다음 구성 요소를 사용할 수 있습니다.
 
@@ -241,11 +244,11 @@ The preceding shows an example form; it is comprised of the **Lead Form** compon
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
 
-**생년월일** 사용자는 생년월일 정보를 입력할 수 있습니다.
+**생년월일** 은 생년월일 정보를 입력할 수 있습니다.
 
 ![chlimage_1-37](assets/chlimage_1-37.png)
 
-**이메일** ID 사용자가 이메일 주소(ID)를 입력할 수 있습니다.
+**이메일** ID사용자가 이메일 주소(ID)를 입력할 수 있습니다.
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -257,15 +260,15 @@ The preceding shows an example form; it is comprised of the **Lead Form** compon
 
 ![chlimage_1-40](assets/chlimage_1-40.png)
 
-**성** 사용자가 성 정보를 입력할 수 있습니다.
+**성** 이름 사용자가 성 정보를 입력할 수 있습니다.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-**리드 양식** 이 구성 요소를 추가하여 랜딩 페이지에 리드 양식을 추가합니다. 리드 양식에는 자동으로 리드 양식 시작 및 리드 양식 끝 필드가 포함됩니다. 그 사이에 이 섹션에 설명된 리드 양식 구성 요소를 추가합니다.
+**리드** 양식이 구성 요소를 추가하여 랜딩 페이지에 리드 양식을 추가합니다. 리드 양식에는 자동으로 리드 양식 시작 및 리드 양식 끝 필드가 포함됩니다. 그 사이에 이 섹션에 설명된 리드 양식 구성 요소를 추가합니다.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-The Lead Form component defines both the start and end of a form using the **Form Start** and **Form End** elements. 이러한 단락이 항상 쌍을 이루어야 양식이 올바르게 정의됩니다.
+리드 양식 구성 요소는 **양식 시작** 및 **양식 끝** 요소를 사용하여 양식의 시작과 끝을 정의합니다. 이러한 단락이 항상 쌍을 이루어야 양식이 올바르게 정의됩니다.
 
 리드 양식을 추가한 후에는 해당 막대에서 **편집**&#x200B;을 클릭하여 양식의 시작이나 양식의 끝을 구성할 수 있습니다.
 
@@ -282,7 +285,7 @@ The Lead Form component defines both the start and end of a form using the **For
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-**게시물 옵션** 다음 게시물 옵션을 사용할 수 있습니다.
+**게시물** 옵션다음 게시물 옵션을 사용할 수 있습니다.
 
 * 리드 만들기
 * 이메일 서비스: 가입자를 만들고 목록에 추가합니다. ExactTarget과 같은 이메일 서비스 공급자를 사용하는 경우 사용합니다.
@@ -290,15 +293,15 @@ The Lead Form component defines both the start and end of a form using the **For
 * 이메일 서비스:목록에서 사용자 가입 해지 - ExactTarget과 같은 이메일 서비스 공급자를 사용하는 경우 사용합니다.
 * 사용자 가입 해지
 
-**양식 식별자** 양식 식별자는 리드 양식을 고유하게 식별합니다. 단일 페이지에 여러 개의 양식이 있는 경우 양식 식별자를 사용하십시오. 양식마다 각기 다른 식별자가 있어야 합니다.
+**양식** 식별자양식 식별자는 리드 양식을 고유하게 식별합니다. 단일 페이지에 여러 개의 양식이 있는 경우 양식 식별자를 사용하십시오. 양식마다 각기 다른 식별자가 있어야 합니다.
 
 **로드 경로** 사전 정의된 값을 리드 양식 필드에 로드하는 데 사용되는 노드 속성의 경로입니다.
 
 저장소의 노드에 대한 경로를 지정하는 선택적 필드입니다. 이 노드의 속성이 필드 이름과 일치하면 양식의 해당 필드에 이러한 속성의 값이 미리 로드됩니다. 일치하는 속성이 없으면 필드에 기본값이 포함됩니다.
 
-**클라이언트 유효성** 이 양식에 대해 클라이언트 유효성 검사가 필수인지 여부를 나타냅니다(서버 유효성 검사 항상 수행). 이 작업은 양식 Captcha 구성 요소와 함께 수행할 수 있습니다.
+**클라이언트** 유효성 검사이 양식에 대해 클라이언트 유효성 검사가 필수인지 여부를 지정합니다(서버 유효성 검사 항상 수행). 이 작업은 Forms Captcha 구성 요소와 함께 수행할 수 있습니다.
 
-**유효성 검사 리소스** 유형 개별 필드가 아닌 전체 리드 양식의 유효성을 검사하려는 경우 양식 유효성 검사 리소스 유형을 정의합니다.
+**유효성 검사 리소스** 유형개별 필드가 아닌 전체 리드 양식의 유효성을 검사하려는 경우 양식 유효성 검사 리소스 유형을 정의합니다.
 
 전체 양식의 유효성을 검사하는 경우 다음 중 하나를 포함해야 합니다.
 
@@ -308,7 +311,7 @@ The Lead Form component defines both the start and end of a form using the **For
 * 서버 쪽의 유효성 검사용 스크립트:
    ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-**작업 구성** 게시물 옵션의 선택에 따라 작업 구성이 변경됩니다. 예를 들어, 리드 만들기를 선택하면 리드를 어떤 목록에 추가할지 구성할 수 있습니다.
+**작업 구성** 게시 옵션에서 선택한 내용에 따라, 작업 구성이 변경됩니다. 예를 들어, 리드 만들기를 선택하면 리드를 어떤 목록에 추가할지 구성할 수 있습니다.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -338,13 +341,13 @@ The Lead Form component defines both the start and end of a form using the **For
 1. [가져올 HTML을 준비합니다.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. 디자인 패키지를 가져옵니다.
 
-### 디자인 가져오기 사용 {#use-of-the-design-importer}
+### 디자인 가져오기 사용  {#use-of-the-design-importer}
 
-페이지 가져오기에 HTML 준비, 확인 및 페이지 테스트가 포함되므로 랜딩 페이지 가져오기는 관리자 작업으로 사용됩니다. As an admin, the users performing the import need read, write, create, and delete permissions on `/apps`. 사용자에게 이러한 권한이 없으면 가져오기에 실패합니다.
+페이지 가져오기에 HTML 준비, 확인 및 페이지 테스트가 포함되므로 랜딩 페이지 가져오기는 관리자 작업으로 사용됩니다. 관리자는 가져오기를 수행하는 사용자가 `/apps`에 대한 권한을 읽고, 쓰고, 만들고, 삭제해야 합니다. 사용자에게 이러한 권한이 없으면 가져오기에 실패합니다.
 
 >[!NOTE]
 >
->Because the design importer is intended as an admin tool requiring read, write, create, and delete permissions on `/apps`, Adobe does not recommend using the design importer in production.
+>디자인 가져오기는 `/apps`에 대한 읽기, 쓰기, 만들기 및 삭제 권한이 필요한 관리 도구이므로 Adobe은 제작 시 디자인 가져오기를 사용하지 않는 것이 좋습니다.
 
 Adobe는 스테이징 인스턴스에서 디자인 가져오기 프로그램을 사용하는 것이 좋습니다. 스테이징 인스턴스에서는 프로덕션 인스턴스에 코드 배포를 담당하는 개발자가 가져오기를 테스트하고 유효성을 검증할 수 있습니다.
 
@@ -354,7 +357,7 @@ Adobe는 스테이징 인스턴스에서 디자인 가져오기 프로그램을 
 
 >[!NOTE]
 >
->By default, an Importer Page can only be created under campaigns, but you can also overlay this template in order to create a landing page under `/content/mysite`.
+>기본적으로 Importer 페이지는 캠페인 아래에서만 만들 수 있지만 `/content/mysite` 아래에 랜딩 페이지를 만들기 위해 이 템플릿을 오버레이할 수도 있습니다.
 
 새 랜딩 페이지를 만들려면:
 
@@ -371,7 +374,7 @@ Adobe는 스테이징 인스턴스에서 디자인 가져오기 프로그램을 
 
 디자인 패키지를 가져오기 전에 HTML을 준비해야 합니다. 자세한 내용은 [디자인 Importer 확장 및 구성](/help/sites-administering/extending-the-design-importer-for-landingpages.md)을 참조하십시오.
 
-### 디자인 패키지 가져오기 {#importing-the-design-package}
+### 디자인 패키지 가져오기  {#importing-the-design-package}
 
 Importer 페이지가 만들어지면 디자인 패키지를 여기에 가져올 수 있습니다. 디자인 패키지 만들기와 권장 구조에 대한 자세한 내용은 [디자인 Importer 확장 및 구성](/help/sites-administering/extending-the-design-importer-for-landingpages.md)을 참조하십시오.
 
@@ -382,7 +385,7 @@ Importer 페이지가 만들어지면 디자인 패키지를 여기에 가져올
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
 1. 디자인 패키지를 드롭 상자에 드래그하여 놓습니다. 패키지를 드래그할 때 화살표의 방향이 바뀝니다.
-1. 드래그하여 놓은 결과, Importer 페이지 대신에 랜딩 페이지가 표시됩니다. HTML 랜딩 페이지를 가져왔습니다.
+1. 드래그하여 놓은 결과, Importer 페이지 대신에 랜딩 페이지가 표시됩니다. HTML 랜딩 페이지를 성공적으로 가져왔습니다.
 
    ![chlimage_1-2-1](assets/chlimage_1-2-1.png)
 
@@ -420,13 +423,13 @@ zip 파일을 다운로드하면 특정 랜딩 페이지로 가져온 zip을 기
 
 가져온 디자인 패키지를 다운로드하려면 랜딩 페이지 도구 모음에서 **Zip 다운로드**&#x200B;를 클릭하십시오.
 
-### 가져오기 정보 보기 {#viewing-import-information}
+### 가져오기 정보 보기  {#viewing-import-information}
 
 언제든지 일반 사용자 인터페이스에서 랜딩 페이지의 맨 위에 있는 파란색 느낌표를 클릭하여 마지막 가져오기에 대한 정보를 볼 수 있습니다.
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-가져온 디자인 패키지에 문제가 있을 경우, 예를 들어, 패키지 내에 없는 이미지/스크립트를 참조하는 경우 디자인 가져오기는 이와 같은 문제를 목록 양식으로 표시합니다. 문제 목록을 보려면, 일반 사용자 인터페이스에서 랜딩 페이지 도구 모음에 있는 문제 링크를 클릭합니다. In the following image, clicking on **Issues** link opens the Import Issues window.
+가져온 디자인 패키지에 문제가 있을 경우, 예를 들어, 패키지 내에 없는 이미지/스크립트를 참조하는 경우 디자인 가져오기는 이와 같은 문제를 목록 양식으로 표시합니다. 문제 목록을 보려면, 일반 사용자 인터페이스에서 랜딩 페이지 도구 모음에 있는 문제 링크를 클릭합니다. 다음 이미지에서 **문제** 링크를 클릭하면 가져오기 문제 창이 열립니다.
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -434,7 +437,7 @@ zip 파일을 다운로드하면 특정 랜딩 페이지로 가져온 zip을 기
 
 랜딩 페이지 디자인 패키지를 변경한 후 다시 가져오려면 클래식 사용자 인터페이스에서 랜딩 페이지의 맨 위에 있는 **지우기**&#x200B;를 클릭하거나 터치에 적합한 사용자 인터페이스에서 설정 메뉴에 있는 [지우기]를 클릭하여 랜딩 페이지를 &quot;지울&quot; 수 있습니다. 이렇게 하면 가져온 랜딩 페이지가 삭제되고 빈 Importer 페이지가 만들어집니다.
 
-랜딩 페이지를 지울 때 컨텐츠 변경 사항을 제거할 수 있습니다. If you click **No**, then the content changes are preserved, that is, the structure under `jcr:content/importer`is preserved and only the importer page component and the resources in `etc/design` are removed. Whereas, if you click **Yes**, the `jcr:content/importer` is also removed.
+랜딩 페이지를 지울 때 컨텐츠 변경 사항을 제거할 수 있습니다. **No**&#x200B;를 클릭하면 컨텐츠 변경 사항이 유지됩니다. 즉, `jcr:content/importer`의 구조는 유지되고 Importer 페이지 구성 요소와 `etc/design`의 리소스만 제거됩니다. 반면에 **Yes**&#x200B;를 클릭하면 `jcr:content/importer`도 제거됩니다.
 
 >[!NOTE]
 >
@@ -450,13 +453,13 @@ zip 파일을 다운로드하면 특정 랜딩 페이지로 가져온 zip을 기
 >
 >랜딩 페이지에 있는 구성 요소를 편집할 수 없을 경우에는 [HTML 파일을 수정](/help/sites-administering/extending-the-design-importer-for-landingpages.md)한 후 zip 파일을 다시 가져와야 합니다. 이것은 가져오기 동안 편집할 수 없는 부분이 AEM 구성 요소로 전환되었다는 것을 의미합니다.
 
-### 랜딩 페이지 삭제 {#deleting-a-landing-page}
+### 랜딩 페이지 삭제  {#deleting-a-landing-page}
 
 랜딩 페이지를 삭제하는 것은 일반 AEM 페이지를 삭제하는 것과 같습니다.
 
 유일한 예외 사항은 데스크톱 랜딩 페이지를 삭제할 때에는 해당 모바일 랜딩 페이지(있을 경우)도 삭제되며, 그 반대의 경우는 일어나지 않습니다.
 
-### 랜딩 페이지 게시 {#publishing-a-landing-page}
+### 랜딩 페이지 게시  {#publishing-a-landing-page}
 
 일반 페이지를 게시하는 것처럼 랜딩 페이지와 모든 해당 종속성을 게시할 수 있습니다.
 
