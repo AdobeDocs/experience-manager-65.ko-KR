@@ -24,12 +24,12 @@ ht-degree: 1%
 
 MSM은 컨텐츠 배포를 자동화하기 위한 구성 가능한 프레임워크입니다. 구현에는 웹 사이트의 주요 부분과 조직 및 지역에 걸쳐 이루어지는 경우가 많습니다. 따라서 웹 사이트를 계획하는 만큼 MSM 구현을 계획하는 것이 좋습니다.
 
-* 구현을 시작하기 전에 구조 및 **콘텐츠 흐름을** 신중하게 계획합니다.
+* 구현을 시작하기 전에 **계획 구조와 콘텐츠 흐름**&#x200B;을 신중하게 사용하십시오.
 * **필요한 만큼 사용자 요구에 맞게 변경할 수 있습니다.** MSM은 높은 수준의 사용자 지정(예: 롤아웃 구성)을 지원하는 반면 웹 사이트의 성능, 안정성 및 업그레이드 가능성 면에서 일반적으로 가장 좋은 방법은 사용자 지정을 최소화하는 것입니다.
-* 초기 **거버넌스** 모델을 설정하고 그에 따라 사용자를 교육하여 성공을 보장합니다. 관리 측면에서 볼 때 가장 좋은 방법은 로컬 컨텐츠 제작자가 다른 로컬 사용자와 해당 Live Copy에 컨텐츠를 할당/연결하는 권한을 **최소화하** 는 것입니다. 이는 비관리, 연쇄 상속이 MSM 구조의 복잡성을 크게 증가시키고 성능과 안정성을 손상시킬 수 있기 때문입니다.
+* **거버넌스** 모델을 일찍 설정하고 이에 따라 사용자를 교육하여 성공을 보장합니다. 관리 측면에서 볼 때 가장 좋은 방법은 로컬 컨텐츠 제작자가 다른 로컬 사용자와 해당 Live Copy에 컨텐츠를 할당/연결할 수 있는 권한을 **최소화하는 것입니다.** 이는 비관리, 연쇄 상속이 MSM 구조의 복잡성을 크게 증가시키고 성능과 안정성을 손상시킬 수 있기 때문입니다.
 
-* 구조, 콘텐츠 흐름, 자동화 및 거버넌스에 대한 계획이 수립되면 실시간 구현을 시작하기 전에 시스템의 **프로토타입을 작성하고 철저히**&#x200B;테스트할 수 있습니다.
-* MSM을 사용하여 컨텐츠 자동화를 계획하고 구현하는 **Adobe 컨설팅 및 선도적인 시스템 통합업체는** 심도 있는 경험을 가지고 있으므로 MSM 프로젝트 및 전체 구현 전반에서 시작할 수 있습니다.
+* 구조, 콘텐츠 흐름, 자동화 및 거버넌스에 대한 계획이 있는 경우, 실시간 구현을 시작하기 전에 **프로토타입을 작성하고 시스템**&#x200B;을 철저히 테스트합니다.
+* **Adobe 컨설팅 및 선도적인 시스템 통합업체**&#x200B;는 MSM을 사용하여 컨텐츠 자동화를 계획하고 구현하는 경험이 있기 때문에 MSM 프로젝트 및 전체 구현 전반에서 시작할 수 있습니다.
 
 >[!NOTE]
 >
@@ -44,10 +44,10 @@ MSM은 컨텐츠 배포를 자동화하기 위한 구성 가능한 프레임워�
 
 >[!NOTE]
 >
->참조 구성 요소 [를](/help/sites-authoring/default-components-foundation.md#reference) 사용하여 단일 페이지 또는 단락을 재사용할 수도 있습니다. 그러나 다음 사항에 주의하십시오.
+>[참조 구성 요소](/help/sites-authoring/default-components-foundation.md#reference)를 사용하여 단일 페이지 또는 단락을 재사용할 수도 있습니다. 그러나 다음 사항에 주의하십시오.
 >
 >* MSM은 보다 유연하며 동기화할 컨텐츠와 시기를 세밀하게 제어할 수 있습니다.
->* [이제 기본 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 대신 핵심 구성 요소를 권장합니다.
+>* [이제 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 기본 구성 요소를 기본 구성 요소보다 권장합니다.
 
 >
 
@@ -55,12 +55,12 @@ MSM은 컨텐츠 배포를 자동화하기 위한 구성 가능한 프레임워�
 
 ## Live Copy 소스 및 블루프린트 구성 {#live-copy-sources-and-blueprint-configurations}
 
-Live Copy는 [일반 페이지](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) 또는 [블루프린트 구성을 사용하여 만들 수 있습니다](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). 두 가지 모두 유효한 사용 사례입니다.
+Live Copy는 [일반 페이지](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) 또는 [블루프린트 구성](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)을 사용하여 만들 수 있습니다. 두 가지 모두 유효한 사용 사례입니다.
 
 블루프린트 구성을 사용하면 다음과 같은 이점이 있습니다.
 
-* 작성자가 블루프린트에서 **롤아웃** 옵션을 사용할 수 있도록 허용 - 이 블루프린트에서 상속되는 Live Copy에 수정 내용을 푸시할 수 있습니다.
-* 작성자가 사이트 **만들기를 사용하도록 허용**;따라서 사용자는 손쉽게 언어를 선택하고 live copy의 구조를 구성할 수 있습니다.
+* 작성자가 이 블루프린트에서 상속되는 Live Copy에 수정 내용을 푸시하기 위해 블루프린트에서 **롤아웃** 옵션을 사용할 수 있도록 합니다.
+* 작성자가 **사이트 만들기**;를 사용하도록 허용따라서 사용자는 손쉽게 언어를 선택하고 live copy의 구조를 구성할 수 있습니다.
 * 블루프린트와 관련된 Live Copy에 대한 기본 롤아웃 구성을 정의합니다.
 
 블루프린트 구성이 참조되지 않는 경우 롤아웃은 Live Copy 자체에서만 시작할 수 있으므로 기본적으로 소스에서 컨텐츠를 가져올 수 있습니다.
@@ -80,25 +80,25 @@ Live Copy를 사용하여 새 사이트를 만들 때 전체 MSM 기능 세트�
 
 >[!NOTE]
 >
->구성 요소 `cq:isContainer` 에 속성을 추가하여 컨테이너로 지정합니다.
+>구성 요소에 속성 `cq:isContainer`을 추가하여 컨테이너로 지정합니다.
 
 ## 사이트 만들기 {#create-site}
 
 AEM에는 Live Copy를 만드는 두 가지 주요 방법이 있습니다.
 
-* When [creating a Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
+* [Live Copy 만들기](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
    이 방법은 보다 일반적인 방법으로 간주되므로 모든 페이지에서 Live Copy를 만들 수 있습니다. Live Copy의 컨텐츠 구조는 소스와 정확하게 일치합니다.
 
-* 사이트 [를 만들 때](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
+* [사이트](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)를 만드는 경우
 
    이 방법은 주로 다국어 구조를 갖춘 웹 사이트를 제작하는 보다 전문화된 방법입니다.
 
 사이트를 만들 때 고려해야 할 몇 가지 사항은 다음과 같습니다.
 
-* 새 사이트를 만들려면 [블루프린트 구성이 필요합니다](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* 새 사이트를 만들려면 [블루프린트 구성](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations)이 필요합니다.
 * 새 사이트에서 언어 경로를 선택할 수 있도록 하려면 해당 언어 루트가 블루프린트(소스)에 있어야 합니다.
-* Live Copy로 [새 사이트](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (만들기 **,**&#x200B;사이트 **사용**)를 만들면 이 Live Copy의 처음 두 단계 *는*&#x200B;약식 Live Copy입니다. 페이지의 자식은 라이브 관계에 속해 있지 않지만, 트리거와 일치하는 라이브 관계가 발견되면 롤아웃이 여전히 아래로 내려갑니다.
+* [새 사이트가 Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)(**Create**&#x200B;을 사용한 다음 **사이트** 사용)으로 만들어지면 이 Live Copy의 처음 두 수준이 *얕은*&#x200B;입니다. 페이지의 자식은 라이브 관계에 속해 있지 않지만, 트리거와 일치하는 라이브 관계가 발견되면 롤아웃이 여전히 아래로 내려갑니다.
 
    다음을 피하는 데 도움이 됩니다.
 
@@ -112,7 +112,7 @@ MSM은 다음 두 가지 방법으로 다국어 웹 사이트 제작을 지원�
 
 * 언어 마스터를 만들 때
 
-   * MSM 자체에서 컨텐츠 번역 **을**&#x200B;제공하지 않지만 타사 변환 커넥터와 통합할 수 있습니다. 참고:
+   * MSM 자체에서 **은 내용 번역**&#x200B;을 제공하지 않지만, 타사 번역 커넥터와 통합할 수 있습니다. 참고:
 
       * MSM에서는 페이지 및/또는 구성 요소 수준에서 상속을 취소할 수 있습니다. 이렇게 하면 다음 롤아웃 시 번역된 컨텐츠(Live Copy의 블루프린트에서 아직 번역되지 않은 컨텐츠로)를 덮어쓰는 것을 방지할 수 있습니다.
       * 일부 타사 번역 커넥터는 MSM 상속의 이러한 관리를 자동화합니다.
@@ -125,17 +125,17 @@ MSM은 다음 두 가지 방법으로 다국어 웹 사이트 제작을 지원�
 
    * 예를 들어, 프랑스어 마스터에서 프랑스/프랑스어, 캐나다/프랑스어, 스위스/프랑스어 등 국가별 사이트에 이르기까지 모든 언어 관련 사이트를 만들 수 있습니다.
 
-자세한 내용은 다국어 [사이트의 컨텐츠 번역](/help/sites-administering/translation.md) 및 [번역 우수 사례를 참조하십시오](/help/sites-administering/tc-bp.md).
+자세한 내용은 [다국어 사이트의 컨텐츠 번역](/help/sites-administering/translation.md) 및 [번역 우수 사례](/help/sites-administering/tc-bp.md)를 참조하십시오.
 
 ## 구조 변경 및 롤아웃 {#structure-changes-and-rollouts}
 
 블루프린트/소스 트리에서 컨텐츠 구조를 수정하면 Live Copy에 다르게 반영됩니다. 이것은 수정 유형에 따라 다릅니다.
 
-* **블루프린트에서 새 페이지를 만들면** 표준 롤아웃 구성으로 롤아웃 후 해당 페이지가 Live Copy에 생성됩니다.
+* **블루프린트에서 새 페이지** 를 만들면 표준 롤아웃 구성으로 롤아웃 후 해당 페이지가 Live Copy에 생성됩니다.
 
-* **블루프린트에서 페이지를 삭제하면** 표준 롤아웃 구성으로 롤아웃 후 해당 페이지가 Live Copy에서 삭제됩니다.
+* **블루프린트의 페이지** 를 삭제하면 표준 롤아웃 구성으로 롤아웃 후 해당 페이지가 Live Copy에서 삭제됩니다.
 
-* **블루프린트의 페이지를 이동하면** 표준 롤아웃 구성을 사용하여 롤아웃 후 해당 페이지가 Live Copy로 이동되지 **않습니다** .
+* **표준** 롤아웃 구성을  **** 사용하여 롤아웃 후 Live Copy에서 이동하는 블루프린트의 페이지 이동은 해당 페이지에서 발생하지 않습니다.
 
    * 이러한 비헤이비어의 원인은 페이지 이동이 암시적으로 페이지 삭제를 포함하기 때문입니다. 게시에서 페이지를 삭제하면 해당 컨텐츠가 자동으로 비활성화되므로 게시에서는 예기치 않은 동작이 발생할 수 있습니다. 링크, 책갈피 및 기타 같은 관련 항목에도 노크 효과를 적용할 수 있습니다.
    * Live Copy 페이지의 컨텐츠 상속은 블루프린트에서 소스의 새 위치를 반영하도록 업데이트됩니다.
@@ -143,7 +143,7 @@ MSM은 다음 두 가지 방법으로 다국어 웹 사이트 제작을 지원�
 
 >[!NOTE]
 >
->이 작업은 롤아웃 [시 트리거에서만 작동합니다](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
+>이 작업은 [롤아웃 시 트리거](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers)에서만 작동합니다.
 
 * 사용자 지정 롤아웃 구성 만들기:
 
@@ -167,20 +167,20 @@ MSM은 다음 두 가지 방법으로 다국어 웹 사이트 제작을 지원�
          그러면 Live Copy에서 컨텐츠가 삭제되거나 게시에서 비활성화되지 않습니다.
 
 
-## 롤아웃 사용자 정의 {#customizing-rollouts}
+## 역할 사용자 지정 {#customizing-rollouts}
 
-MSM 롤아웃 구성은 사용자 지정이 가능합니다. 롤아웃을 자동화하면 결과가 매우 달라질 수 있습니다. 모범 사례로서, 다음 *과 같이 매우* 신중하게 계획해야 합니다.
+MSM 롤아웃 구성은 사용자 지정이 가능합니다. 롤아웃을 자동화하면 결과가 매우 달라질 수 있습니다. 가장 좋은 방법은 *very*&#x200B;를 신중하게 계획하는 것입니다. 예:
 
-* 자동 롤아웃;예를 들어 onModify [트리거를 사용할 경우](#onmodify),
-* 사용자 [지정 노드 유형/속성](#node-types-properties),
+* 자동 롤아웃;예를 들어 [onModify 트리거](#onmodify)와 함께
+* [노드 유형/속성](#node-types-properties),
 * 후속 워크플로우 시작,
 * 및/또는 롤아웃의 일부로 컨텐츠 활성화.
 
 ### onModify {#onmodify}
 
-롤아웃 트리거 [를 사용할](/help/sites-administering/msm-sync.md#rollout-triggers) 때 `onModify` 다음 사항을 고려해야 합니다.
+[rollout trigger](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify`을(를) 사용할 때는 다음 사항을 고려해야 합니다.
 
-* 트리거를 사용하여 롤아웃을 자동화하면 `onModify` 모든 ** 페이지 수정 후 롤아웃을 트리거하므로 제작 성능에 부정적인 영향을 줄 수 있습니다.
+* `onModify` 트리거를 사용하여 롤아웃을 자동화하면 *모든* 페이지 수정 후 롤아웃을 트리거하므로 제작 성능에 부정적인 영향을 줄 수 있습니다.
 
 * 롤아웃 결과는 다음과 같이 예상된 결과와 다를 수 있습니다.
 
@@ -189,13 +189,13 @@ MSM 롤아웃 구성은 사용자 지정이 가능합니다. 롤아웃을 자동
 
 * 이러한 롤아웃 구성을 사용하면 동일한 리소스의 동시 업데이트가 발생하는 경우 커밋 충돌이 발생할 수 있습니다.
 
-따라서 자동 롤아웃 초기화 기능으로 인해 잠재적인 성능 문제가 *더 큰* 경우에만 트리거를 사용하는 것이 좋습니다 `onModify` .
+따라서 자동 롤아웃 시작 기능의 이점이 잠재적인 성능 문제를 초과하는 경우 *만* 트리거를 사용하는 것이 좋습니다.`onModify`
 
 ### 노드 유형/속성 {#node-types-properties}
 
 다음 사항을 기억하십시오.
 
-* 롤아웃 작업을 사용자 지정하는 것 외에도 MSM을 사용하면 롤아웃되는 노드 속성을 사용자 지정할 수 있습니다. MSM [OSGi 구성을 사용하면 노드 유형이](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) 소스에서 Live Copy로 복사되지 않도록 제외할 수 있습니다.
+* 롤아웃 작업을 사용자 지정하는 것 외에도 MSM을 사용하면 롤아웃되는 노드 속성을 사용자 지정할 수 있습니다. [MSM OSGi 구성을 사용하면 노드 유형](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization)이 소스에서 Live Copy로 복사되지 않도록 제외할 수 있습니다.
 
 ## 추가 정보 {#further-information}
 
