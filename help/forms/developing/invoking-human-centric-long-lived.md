@@ -18,19 +18,19 @@ ht-degree: 0%
 ---
 
 
-# 인간 중심의 오랜 프로세스 호출 {#invoking-human-centric-long-lived-processes}
+# 인간 중심의 장기 체류 프로세스 호출 {#invoking-human-centric-long-lived-processes}
 
 다음과 같은 클라이언트 애플리케이션을 사용하여 Workbench에서 만든 인간 중심의 긴 수명 프로세스를 프로그래밍 방식으로 호출할 수 있습니다.
 
-* 호출 API를 사용하는 Java 웹 기반 클라이언트 응용 프로그램. ( [Java API를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-java.md)(/help/forms/developing/invoking-aem-forms-using-java.md#calling-aem-forms-using-the-java-api)을 참조하십시오.)
-* 웹 서비스를 사용하는 ASP.NET 응용 프로그램입니다. (웹 서비스를 [사용하여 AEM Forms 호출을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
-* Remoting을 사용하는 Flex를 사용하여 구축한 클라이언트 애플리케이션 (AEM Forms [호출을 사용하여(AEM 양식에서 더 이상 사용되지 않음) AEM Forms Remoting을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+* 호출 API를 사용하는 Java 웹 기반 클라이언트 응용 프로그램. (Java API[를 사용하여 AEM Forms 호출(/help/forms/developing/invoking-aem-forms-using-java.md#calling-aem-forms-using-the-java-api)을 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-java.md)
+* 웹 서비스를 사용하는 ASP.NET 응용 프로그램입니다. ([웹 서비스를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)을 참조하십시오.)
+* Remoting을 사용하는 Flex으로 빌드된 클라이언트 응용 프로그램입니다. ([다음 명령을 사용하여 AEM Forms 호출(AEM 양식에서 더 이상 사용되지 않음) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)을 참조하십시오.)
 
-호출되는 긴 프로세스 이름은 *FirstAppSolution/PreLoanProcess입니다*. 첫 번째 AEM Forms 응용 프로그램 만들기에 지정된 자습서 [에 따라 이 프로세스를 만들 수 있습니다](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
+호출되는 긴 프로세스 이름은 *FirstAppSolution/PreLoanProcess*&#x200B;입니다. 이 프로세스는 [첫 번째 AEM Forms 응용 프로그램 만들기](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)에 지정된 자습서를 따라 만들 수 있습니다.
 
-인간 중심 프로세스에는 사용자가 작업 공간을 사용하여 응답할 수 있는 작업이 포함됩니다. 예를 들어 워크벤치를 사용하여 은행 관리자가 대출 신청을 승인하거나 거부할 수 있는 프로세스를 생성할 수 있습니다. 다음 그림은 FirstAppSolution/ *PreLoanProcess 프로세스를 보여줍니다*.
+인간 중심 프로세스에는 사용자가 작업 공간을 사용하여 응답할 수 있는 작업이 포함됩니다. 예를 들어 워크벤치를 사용하여 은행 관리자가 대출 신청을 승인하거나 거부할 수 있는 프로세스를 생성할 수 있습니다. 다음 그림은 *FirstAppSolution/PreLoanProcess* 프로세스를 보여줍니다.
 
-FirstAppSolution/ *PreLoanProcess* 프로세스는 데이터 유형이 XML인 *formData라는 입력 매개 변수를* 허용합니다. XML 데이터는 PreLoanForm.xdp라는 양식 디자인과 *병합됩니다*. 다음 그림은 대출 신청을 승인하거나 거부할 사용자에게 지정된 작업을 나타내는 양식입니다. 사용자는 작업 공간을 사용하여 응용 프로그램을 승인하거나 거부합니다. Workspace 사용자는 다음 그림에 표시된 승인 버튼을 클릭하여 대출 요청을 승인할 수 있습니다. 마찬가지로 사용자는 거부 버튼을 클릭하여 대출 요청을 거부할 수 있습니다.
+*FirstAppSolution/PreLoanProcess* 프로세스에서는 데이터 유형이 XML인 *formData*&#x200B;이라는 입력 매개 변수를 수락합니다. XML 데이터는 *PreLoanForm.xdp*&#x200B;라는 양식 디자인과 병합됩니다. 다음 그림은 대출 신청을 승인하거나 거부할 사용자에게 지정된 작업을 나타내는 양식입니다. 사용자는 작업 공간을 사용하여 응용 프로그램을 승인하거나 거부합니다. Workspace 사용자는 다음 그림에 표시된 승인 버튼을 클릭하여 대출 요청을 승인할 수 있습니다. 마찬가지로 사용자는 거부 버튼을 클릭하여 대출 요청을 거부할 수 있습니다.
 
 긴 수명 프로세스는 비동기적으로 호출되며 다음 요인으로 인해 동기적으로 호출할 수 없습니다.
 
@@ -38,13 +38,13 @@ FirstAppSolution/ *PreLoanProcess* 프로세스는 데이터 유형이 XML인 *f
 * 프로세스는 조직의 경계를 확장할 수 있습니다.
 * 프로세스를 완료하려면 외부 입력이 필요합니다. 예를 들어 사무실 밖에 있는 관리자에게 양식이 전송되는 상황을 고려해 보십시오. 이 경우 관리자가 양식을 반환하고 채울 때까지 프로세스가 완료되지 않습니다.
 
-긴 프로세스가 호출되면 AEM Forms은 레코드 만들기의 일부로 호출 식별자 값을 만듭니다. 이 레코드는 긴 프로세스 상태를 추적하고 AEM Forms 데이터베이스에 저장됩니다. 호출 식별자 값을 사용하여 긴 프로세스 상태를 추적할 수 있습니다. 또한 프로세스 호출 식별자 값을 사용하여 실행 중인 프로세스 인스턴스 종료와 같은 프로세스 관리자 작업을 수행할 수 있습니다.
+긴 프로세스가 호출되면, AEM Forms은 레코드 만들기의 일부로 호출 식별자 값을 만듭니다. 이 기록은 장기간 프로세스 상태를 추적하고 AEM Forms 데이터베이스에 저장됩니다. 호출 식별자 값을 사용하여 긴 프로세스 상태를 추적할 수 있습니다. 또한 프로세스 호출 식별자 값을 사용하여 실행 중인 프로세스 인스턴스 종료와 같은 프로세스 관리자 작업을 수행할 수 있습니다.
 
 >[!NOTE]
 >
 >AEM Forms은 짧은 기간 프로세스를 호출할 때 호출 식별자 값 또는 레코드를 만들지 않습니다.
 
-신청자가 XML 데이터로 표시되는 응용 프로그램을 제출할 때 이 `FirstAppSolution/PreLoanProcess` 프로세스가 호출됩니다. 입력 프로세스 변수의 이름 `formData` 은 XML이고 해당 데이터 유형은 XML입니다. 이 토론의 목적을 위해 다음 XML 데이터가 `FirstAppSolution/PreLoanProcess` 프로세스에 입력되는 것으로 사용된다고 가정합니다.
+신청인이 XML 데이터로 표현되는 응용 프로그램을 제출할 때 `FirstAppSolution/PreLoanProcess` 프로세스가 호출됩니다. 입력 프로세스 변수의 이름은 `formData`이고 데이터 유형은 XML입니다. 이 토론의 목적으로 다음 XML 데이터가 `FirstAppSolution/PreLoanProcess` 프로세스에 입력되는 것으로 사용된다고 가정합니다.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8"?>
@@ -56,9 +56,9 @@ FirstAppSolution/ *PreLoanProcess* 프로세스는 데이터 유형이 XML인 *f
  </LoanApp>
 ```
 
-프로세스에 전달된 XML 데이터는 프로세스에서 사용되는 양식에 있는 필드와 일치해야 합니다. 그렇지 않으면 데이터가 양식 내에 표시되지 않습니다. 프로세스를 호출하는 모든 응용 프로그램은 이 XML 데이터 소스를 `FirstAppSolution/PreLoanProcess` 전달해야 합니다. 인간 중심 장기 *프로세스* 호출에서 생성된 애플리케이션은 사용자가 웹 클라이언트에 입력한 값에서 XML 데이터 소스를 동적으로 생성합니다.
+프로세스에 전달된 XML 데이터는 프로세스에서 사용되는 양식에 있는 필드와 일치해야 합니다. 그렇지 않으면 데이터가 양식 내에 표시되지 않습니다. `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 모든 응용 프로그램은 이 XML 데이터 소스를 전달해야 합니다. *인간 중심의 장수명 프로세스 호출*&#x200B;에서 만든 응용 프로그램은 사용자가 웹 클라이언트에 입력한 값에서 XML 데이터 소스를 동적으로 만듭니다.
 
-클라이언트 응용 프로그램을 사용하여 필요한 XML 데이터를 *FirstAppSolution/PreLoanProcess* 프로세스를 전송할 수 있습니다. 긴 프로세스는 호출 식별자 값을 반환 값으로 반환합니다. 다음 그림은 긴 수명 프로세스를 호출하는 클라이언트 응용 프로그램을 보여 줍니다. 클라이언트 응용 프로그램은 XML 데이터를 보내고 호출 식별자 값을 나타내는 문자열 값을 반환합니다.
+클라이언트 응용 프로그램을 사용하여 필요한 XML 데이터를 처리하는 *FirstAppSolution/PreLoanProcess*&#x200B;를 보낼 수 있습니다. 긴 프로세스는 호출 식별자 값을 반환 값으로 반환합니다. 다음 그림은 긴 수명 프로세스를 호출하는 클라이언트 응용 프로그램을 보여 줍니다. 클라이언트 응용 프로그램은 XML 데이터를 보내고 호출 식별자 값을 나타내는 문자열 값을 반환합니다.
 
 **참고 항목**
 
@@ -66,39 +66,39 @@ FirstAppSolution/ *PreLoanProcess* 프로세스는 데이터 유형이 XML인 *f
 
 [인간 중심의 오랜 프로세스를 호출하는 ASP.NET 웹 응용 프로그램 만들기](invoking-human-centric-long-lived.md#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process)
 
-[인간 중심의 오랜 프로세스를 불러일으키는 Flex를 사용하여 구축한 클라이언트 애플리케이션 제작](invoking-human-centric-long-lived.md#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process)
+[인간 중심의 오랜 프로세스를 불러일으키는 Flex으로 구축된 클라이언트 애플리케이션 만들기](invoking-human-centric-long-lived.md#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process)
 
-## 인간 중심의 오랜 프로세스를 불러일으키는 Java 웹 애플리케이션 제작 {#creating-a-java-web-application-that-invokes-a-human-centric-long-lived-process}
+## 인간 중심의 오랜 프로세스를 불러오는 Java 웹 애플리케이션 만들기 {#creating-a-java-web-application-that-invokes-a-human-centric-long-lived-process}
 
-Java 서블릿을 사용하여 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 웹 기반 응용 프로그램을 생성할 수 있습니다. Java 서블릿에서 이 프로세스를 호출하려면 Java 서블릿 내 호출 API를 사용하십시오. (Java [API를 사용하여 AEM Forms 호출을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api).)
+Java 서블릿을 사용하여 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 웹 기반 응용 프로그램을 만들 수 있습니다. Java 서블릿에서 이 프로세스를 호출하려면 Java 서블릿 내 호출 API를 사용하십시오. (Java API[를 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
 다음 그림은 이름, 전화(또는 이메일) 및 금액 값을 게시하는 웹 기반 클라이언트 응용 프로그램을 보여줍니다. 이 값은 사용자가 [응용 프로그램 제출] 단추를 클릭하면 Java 서블릿으로 전송됩니다.
 
 Java 서블릿은 다음 작업을 수행합니다.
 
 * HTML 페이지에서 Java 서블릿으로 게시된 값을 검색합니다.
-* XML 데이터 소스를 동적으로 만들어 *FirstAppSolution/PreRoanProcess* 프로세스에 전달합니다. 이름, 전화(또는 이메일) 및 금액 값은 XML 데이터 소스에 지정됩니다.
+* XML 데이터 소스를 동적으로 만들어 *FirstAppSolution/PreLoanProcess* 프로세스에 전달합니다. 이름, 전화(또는 이메일) 및 금액 값은 XML 데이터 소스에 지정됩니다.
 * AEM Forms 호출 API를 사용하여 *FirstAppSolution/PreLoanProcess* 프로세스를 호출합니다.
 * 클라이언트 웹 브라우저에 호출 식별자 값을 반환합니다.
 
-### 단계 요약 {#summary-of-steps}
+### {#summary-of-steps} 단계 요약
 
-프로세스를 호출하는 Java 웹 기반 응용 프로그램을 만들려면 `FirstAppSolution/PreLoanProcess` 다음 단계를 수행하십시오.
+`FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 Java 웹 기반 응용 프로그램을 만들려면 다음 단계를 수행하십시오.
 
-1. [웹 프로젝트](invoking-human-centric-long-lived.md#create-a-web-project)만들기
+1. [웹 프로젝트](invoking-human-centric-long-lived.md#create-a-web-project) 만들기
 1. [서블릿에 대한 Java 애플리케이션 로직을 생성합니다](invoking-human-centric-long-lived.md#create-java-application-logic-for-the-servlet).
 1. [웹 응용 프로그램의 웹 페이지 만들기](invoking-human-centric-long-lived.md#create-the-web-page-for-the-web-application)
 1. [웹 응용 프로그램을 WAR 파일로 패키지합니다](invoking-human-centric-long-lived.md#package-the-web-application-to-a-war-file).
-1. [AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 WAR 파일을 배포합니다](invoking-human-centric-long-lived.md#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms).
-1. [웹 애플리케이션](invoking-human-centric-long-lived.md#test-your-web-application)테스트
+1. [WAR 파일을 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 배포합니다](invoking-human-centric-long-lived.md#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms).
+1. [웹 애플리케이션](invoking-human-centric-long-lived.md#test-your-web-application) 테스트
 
 >[!NOTE]
 >
 >이러한 단계 중 일부는 AEM Forms이 배포된 J2EE 애플리케이션에 따라 달라집니다. 예를 들어 WAR 파일을 배포하는 데 사용하는 방법은 사용 중인 J2EE 응용 프로그램 서버에 따라 다릅니다. AEM Forms이 JBoss®에 배포된다고 가정합니다.
 
-### 웹 프로젝트 만들기 {#create-a-web-project}
+### 웹 프로젝트 {#create-a-web-project} 만들기
 
-웹 애플리케이션을 만드는 첫 번째 단계는 웹 프로젝트를 만드는 것입니다. 이 문서가 기반으로 하는 Java IDE는 Eclipse 3.3입니다. Eclipse IDE를 사용하여 웹 프로젝트를 만들고 필요한 JAR 파일을 프로젝트에 추가합니다. 프로젝트에 index.html *과 Java 서블릿이라는* HTML 페이지를 추가합니다.
+웹 애플리케이션을 만드는 첫 번째 단계는 웹 프로젝트를 만드는 것입니다. 이 문서가 기반으로 하는 Java IDE는 Eclipse 3.3입니다. Eclipse IDE를 사용하여 웹 프로젝트를 만들고 필요한 JAR 파일을 프로젝트에 추가합니다. 프로젝트에 *index.html*&#x200B;이라는 HTML 페이지와 Java 서블릿을 추가합니다.
 
 다음 목록은 웹 프로젝트에 포함할 JAR 파일을 지정합니다.
 
@@ -106,43 +106,43 @@ Java 서블릿은 다음 작업을 수행합니다.
 * adobe-usermanager-client.jar
 * J2EE.jar
 
-이러한 JAR 파일의 위치는 AEM Forms Java 라이브러리 파일 [포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+이러한 JAR 파일의 위치에 대해서는 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
 
 >[!NOTE]
 >
->J2EE.jar 파일은 Java 서블릿에 사용되는 데이터 유형을 정의합니다. AEM Forms이 배포된 J2EE 응용 프로그램 서버에서 이 JAR 파일을 가져올 수 있습니다.
+>J2EE.jar 파일은 Java 서블릿에 사용되는 데이터 유형을 정의합니다. 이 JAR 파일은 AEM Forms이 배포된 J2EE 응용 프로그램 서버에서 얻을 수 있습니다.
 
 **웹 프로젝트 만들기**
 
-1. Eclipse를 시작하고 **파일** > **새 프로젝트를 클릭합니다**.
-1. 새 프로젝트 **대화** 상자에서 **웹** > **동적 웹 프로젝트**&#x200B;를선택합니다.
-1. 프로젝트 이름 `InvokePreLoanProcess` 을 입력한 다음 마침을 **클릭합니다**.
+1. Eclipse를 시작하고 **파일** > **새 프로젝트**&#x200B;를 클릭합니다.
+1. **새 프로젝트** 대화 상자에서 **웹** > **동적 웹 프로젝트**&#x200B;를 선택합니다.
+1. 프로젝트 이름에 `InvokePreLoanProcess`을 입력한 다음 **Finish**&#x200B;를 클릭합니다.
 
 **프로젝트에 필요한 JAR 파일 추가**
 
-1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 속성 `InvokePreLoanProcess` 을 선택합니다 ****.
-1. Java **빌드 경로를** 클릭한 다음 **라이브러리** 탭을 클릭합니다.
-1. 외부 JAR **추가** 버튼을 클릭하고 포함할 JAR 파일을 찾습니다.
+1. 프로젝트 탐색기 창에서 `InvokePreLoanProcess` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **속성**&#x200B;을 선택합니다.
+1. **Java 빌드 경로**&#x200B;를 클릭한 다음 **라이브러리** 탭을 클릭합니다.
+1. **외부 JAR 추가** 단추를 클릭하고 포함할 JAR 파일을 찾습니다.
 
 **프로젝트에 Java 서블릿 추가**
 
-1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 `InvokePreLoanProcess` 새로 만들기 **>** 기타 **를 선택합니다**.
-1. 웹 **폴더를** 확장하고 서블릿을 **선택한**&#x200B;다음 **을 클릭합니다**.
-1. 서블릿 만들기 대화 상자에서 서블릿 이름 `SubmitXML` 을 입력한 다음 **마침을 클릭합니다**.
+1. 프로젝트 탐색기 창에서 `InvokePreLoanProcess` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **새로 만들기** > **기타**&#x200B;을 선택합니다.
+1. **웹** 폴더를 확장하고 **서블릿**&#x200B;을 선택한 다음 **다음**&#x200B;을 클릭합니다.
+1. 서블릿 만들기 대화 상자에서 서블릿의 이름에 `SubmitXML`을 입력한 다음 **마침**&#x200B;을 클릭합니다.
 
 **프로젝트에 HTML 페이지 추가**
 
-1. 프로젝트 탐색기 창에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 `InvokePreLoanProcess` 새로 만들기 **>** 기타 **를 선택합니다**.
-1. **웹** 폴더를 확장하고 **HTML을**&#x200B;선택한 다음 **다음을**&#x200B;클릭합니다.
-1. 새 HTML 대화 상자에서 파일 이름 `index.html` 을 입력한 다음 마침을 **클릭합니다**.
+1. 프로젝트 탐색기 창에서 `InvokePreLoanProcess` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **새로 만들기** > **기타**&#x200B;을 선택합니다.
+1. **웹** 폴더를 확장하고 **HTML**&#x200B;을 선택한 다음 **다음**&#x200B;을 클릭합니다.
+1. 새 HTML 대화 상자에서 파일 이름에 `index.html`을 입력한 다음 **마침**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
->SubmitXML Java 서블릿을 호출하는 HTML 컨텐츠를 만드는 방법에 대한 자세한 내용은 웹 응용 [프로그램의 웹 페이지 만들기를 참조하십시오](invoking-human-centric-long-lived.md#create-the-web-page-for-the-web-application).
+>SubmitXML Java 서블릿을 호출하는 HTML 컨텐츠를 만드는 방법에 대한 자세한 내용은 [웹 응용 프로그램](invoking-human-centric-long-lived.md#create-the-web-page-for-the-web-application)에 대한 웹 페이지 만들기를 참조하십시오.
 
-### 서블릿에 대한 Java 응용 프로그램 논리 생성 {#create-java-application-logic-for-the-servlet}
+### 서블릿 {#create-java-application-logic-for-the-servlet}에 대한 Java 응용 프로그램 논리 만들기
 
-Java 서블릿 내에서 프로세스를 호출하는 `FirstAppSolution/PreLoanProcess` Java 애플리케이션 로직을 생성합니다. 다음 코드는 Java 서블릿의 구문을 `SubmitXML` 보여 줍니다.
+Java 서블릿 내에서 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 Java 애플리케이션 로직을 생성합니다. 다음 코드는 `SubmitXML` Java 서블릿의 구문을 보여 줍니다.
 
 ```java
      public class SubmitXML extends HttpServlet implements Servlet {
@@ -157,16 +157,16 @@ Java 서블릿 내에서 프로세스를 호출하는 `FirstAppSolution/PreLoanP
              }
 ```
 
-일반적으로 클라이언트 코드는 Java 서블릿이나 메서드 내에 배치되지 `doGet` 않습니다 `doPost` . 더 좋은 프로그래밍 방법은 이 코드를 별도의 클래스 내에 넣는 것입니다. 그런 다음 메서드(또는 메서드) 내에서 `doPost` 클래스를 `doGet` 인스턴스화하고 적절한 메서드를 호출합니다. 그러나 코드 간결성의 경우 코드 예제는 최소로 유지되며 `doPost` 메서드에 배치됩니다.
+일반적으로 클라이언트 코드는 Java 서블릿의 `doGet` 또는 `doPost` 메서드 내에 삽입하지 않습니다. 더 좋은 프로그래밍 방법은 이 코드를 별도의 클래스 내에 넣는 것입니다. 그런 다음 `doPost` 메서드(또는 `doGet` 메서드) 내에서 클래스를 인스턴스화하고 적절한 메서드를 호출합니다. 그러나 코드 간결성의 경우 코드 예제는 최소로 유지되며 `doPost` 메서드에 배치됩니다.
 
 호출 API를 사용하여 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하려면 다음 작업을 수행하십시오.
 
-1. Java 프로젝트의 클래스 경로에 adobe-livecycle-client.jar와 같은 클라이언트 JAR 파일을 포함합니다. 이러한 파일의 위치에 대한 자세한 내용은 AEM Forms Java 라이브러리 파일 [포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. HTML 페이지에서 제출한 이름, 전화 및 금액 값을 검색합니다. 이러한 값을 사용하여 프로세스에 전송되는 XML 데이터 소스를 동적으로 만들 수 `FirstAppSolution/PreLoanProcess` 있습니다. 클래스를 사용하여 XML 데이터 소스 `org.w3c.dom` 를 만들 수 있습니다(이 응용 프로그램 논리는 다음 코드 예제에서 표시됨).
-1. 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. 연결 [속성 설정을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
-1. 생성자를 사용하여 개체를 `ServiceClient` 만들고 개체를 `ServiceClientFactory` 전달합니다. 객체를 사용하면 서비스 작업을 호출할 수 `ServiceClient` 있습니다. 호출 요청 찾기, 전달 및 라우팅 등의 작업을 처리합니다.
+1. Java 프로젝트의 클래스 경로에 adobe-livecycle-client.jar와 같은 클라이언트 JAR 파일을 포함합니다. 이러한 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
+1. HTML 페이지에서 제출한 이름, 전화 및 금액 값을 검색합니다. 이 값을 사용하여 `FirstAppSolution/PreLoanProcess` 프로세스로 전송되는 XML 데이터 소스를 동적으로 만듭니다. `org.w3c.dom` 클래스를 사용하여 XML 데이터 소스를 만들 수 있습니다(이 응용 프로그램 로직은 다음 코드 예제에서 표시됨).
+1. 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다. ([연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.)
+1. 생성자를 사용하여 `ServiceClient` 개체를 만들고 `ServiceClientFactory` 개체를 전달합니다. `ServiceClient` 개체를 사용하면 서비스 작업을 호출할 수 있습니다. 호출 요청 찾기, 전달 및 라우팅 등의 작업을 처리합니다.
 1. 생성자를 사용하여 `java.util.HashMap` 개체를 만듭니다.
-1. 각 입력 매개 변수에 대해 `java.util.HashMap` 개체의 `put` 메서드를 호출하여 오래 지속되는 프로세스로 전달합니다. 프로세스의 입력 매개변수 이름을 지정해야 합니다. 이 `FirstAppSolution/PreLoanProcess` 프로세스에는 유형 `XML` (이름)의 입력 매개 변수가 하나만 필요하므로 메서드를 한 번만 `formData``put` 호출하면 됩니다.
+1. 각 입력 매개 변수에 대해 `java.util.HashMap` 개체의 `put` 메서드를 호출하여 긴 기간 프로세스를 전달합니다. 프로세스의 입력 매개변수 이름을 지정해야 합니다. `FirstAppSolution/PreLoanProcess` 프로세스에는 `XML` 유형(이름 `formData`)의 입력 매개 변수가 하나만 필요하므로 `put` 메서드를 한 번만 호출하면 됩니다.
 
    ```java
     //Get the XML to pass to the FirstAppSolution/PreLoanProcess process
@@ -177,19 +177,19 @@ Java 서블릿 내에서 프로세스를 호출하는 `FirstAppSolution/PreLoanP
     params.put("formData", inXML);
    ```
 
-1. 개체의 메서드를 호출하고 다음 값을 전달하여 `InvocationRequest` 개체를 `ServiceClientFactory` `createInvocationRequest` 만듭니다.
+1. `ServiceClientFactory` 개체의 `createInvocationRequest` 메서드를 호출하고 다음 값을 전달하여 `InvocationRequest` 개체를 만듭니다.
 
-   * 호출할 긴 프로세스 이름을 지정하는 문자열 값. 프로세스를 `FirstAppSolution/PreLoanProcess` 호출하려면 을 지정합니다 `FirstAppSolution/PreLoanProcess`.
-   * 프로세스 작업 이름을 나타내는 문자열 값입니다. 긴 프로세스 작업의 이름입니다 `invoke`.
-   * 서비스 작업에 필요한 매개 변수 값이 포함된 `java.util.HashMap` 개체입니다.
-   * 비동기 요청을 만드는 부울 값 `false`(이 값은 긴 프로세스를 호출하는 데 적용 가능)입니다.
+   * 호출할 긴 프로세스 이름을 지정하는 문자열 값. `FirstAppSolution/PreLoanProcess` 프로세스를 호출하려면 `FirstAppSolution/PreLoanProcess`을 지정합니다.
+   * 프로세스 작업 이름을 나타내는 문자열 값입니다. 긴 프로세스 작업의 이름은 `invoke`입니다.
+   * 서비스 작업에 필요한 매개 변수 값을 포함하는 `java.util.HashMap` 개체입니다.
+   * 비동기 요청을 만드는 `false`을 지정하는 부울 값(이 값은 긴 프로세스를 호출하는 데 적용 가능)
 
    >[!NOTE]
    >
    >*value true를 createInvocationRequest 메서드의 네 번째 매개 변수로 전달하여 단기 프로세스를 호출할 수 있습니다. true 값을 전달하면 동기 요청이 만들어집니다.*
 
-1. 개체의 메서드를 호출하고 개체를 전달하여 호출 요청을 AEM Forms으로 `ServiceClient` `invoke` `InvocationRequest` 보냅니다. 이 `invoke` 메서드는 `InvocationReponse` 개체를 반환합니다.
-1. 긴 프로세스는 호출 식별 값을 나타내는 문자열 값을 반환합니다. 개체의 메서드를 호출하여 이 값 `InvocationReponse` 을 `getInvocationId` 검색합니다.
+1. `ServiceClient` 개체의 `invoke` 메서드를 호출하고 `InvocationRequest` 개체를 전달하여 호출 요청을 AEM Forms으로 보냅니다. `invoke` 메서드는 `InvocationReponse` 개체를 반환합니다.
+1. 긴 프로세스는 호출 식별 값을 나타내는 문자열 값을 반환합니다. `InvocationReponse` 개체의 `getInvocationId` 메서드를 호출하여 이 값을 검색합니다.
 
    ```java
     //Send the invocation request to the long-lived process and
@@ -198,11 +198,11 @@ Java 서블릿 내에서 프로세스를 호출하는 `FirstAppSolution/PreLoanP
     String invocationId = lcResponse.getInvocationId();
    ```
 
-1. 클라이언트 웹 브라우저에 호출 식별 값을 씁니다. 인스턴스를 사용하여 이 값을 클라이언트 웹 브라우저에 작성할 수 `java.io.PrintWriter` 있습니다.
+1. 클라이언트 웹 브라우저에 호출 식별 값을 씁니다. `java.io.PrintWriter` 인스턴스를 사용하여 이 값을 클라이언트 웹 브라우저에 작성할 수 있습니다.
 
-### 빠른 시작: 호출 API를 사용하여 긴 프로세스 호출 {#quick-start-invoking-a-long-lived-process-using-the-invocation-api}
+### 빠른 시작:호출 API {#quick-start-invoking-a-long-lived-process-using-the-invocation-api}를 사용하여 긴 프로세스 호출
 
-다음 Java 코드 예는 프로세스를 호출하는 Java 서블릿을 `FirstAppSolution/PreLoanProcess` 나타냅니다.
+다음 Java 코드 예는 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 Java 서블릿을 나타냅니다.
 
 ```java
  /*
@@ -357,9 +357,9 @@ Java 서블릿 내에서 프로세스를 호출하는 `FirstAppSolution/PreLoanP
          }
 ```
 
-### 웹 응용 프로그램의 웹 페이지 만들기 {#create-the-web-page-for-the-web-application}
+### 웹 응용 프로그램 {#create-the-web-page-for-the-web-application} 웹 페이지를 만듭니다.
 
-index.html *웹 페이지는* `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 Java 서블릿의 시작 지점을 제공합니다. 이 웹 페이지는 HTML 양식과 제출 단추가 포함된 기본 HTML 양식입니다. 사용자가 전송 단추를 클릭하면 양식 데이터가 `SubmitXML` Java 서블릿에 게시됩니다.
+*index.html* 웹 페이지는 `FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 Java 서블릿의 시작 지점을 제공합니다. 이 웹 페이지는 HTML 양식과 제출 단추가 포함된 기본 HTML 양식입니다. 사용자가 전송 단추를 클릭하면 양식 데이터가 `SubmitXML` Java 서블릿에 게시됩니다.
 
 Java 서블릿은 다음 Java 코드를 사용하여 HTML 페이지에서 게시되는 데이터를 캡처합니다.
 
@@ -370,7 +370,7 @@ Java 서블릿은 다음 Java 코드를 사용하여 HTML 페이지에서 게시
  String amount = request.getParameter("amount");
 ```
 
-다음 HTML 코드는 개발 환경을 설정하는 동안 만들어진 index.html 파일을 나타냅니다. 웹 프로젝트 [만들기를 참조하십시오](invoking-human-centric-long-lived.md#create-a-web-project).
+다음 HTML 코드는 개발 환경을 설정하는 동안 만들어진 index.html 파일을 나타냅니다. ([웹 프로젝트 만들기](invoking-human-centric-long-lived.md#create-a-web-project)를 참조하십시오.)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
@@ -417,9 +417,9 @@ Java 서블릿은 다음 Java 코드를 사용하여 HTML 페이지에서 게시
  </html>
 ```
 
-### 웹 응용 프로그램을 WAR 파일로 패키지 {#package-the-web-application-to-a-war-file}
+### 웹 응용 프로그램을 WAR 파일 {#package-the-web-application-to-a-war-file}에 패키징
 
-프로세스를 호출하는 Java 서블릿을 `FirstAppSolution/PreLoanProcess` 배포하려면 웹 응용 프로그램을 WAR 파일로 패키지합니다. 구성 요소의 비즈니스 로직이 의존하는 외부 JAR 파일도 WAR 파일에 포함되어 있는지 확인합니다(예: adobe-livecycle-client.jar 및 adobe-usermanager-client.jar).
+`FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 Java 서블릿을 배포하려면 웹 응용 프로그램을 WAR 파일로 패키지하십시오. 구성 요소의 비즈니스 로직이 의존하는 외부 JAR 파일도 WAR 파일에 포함되어 있는지 확인합니다(예: adobe-livecycle-client.jar 및 adobe-usermanager-client.jar).
 
 다음 그림은 WAR 파일로 패키지된 Eclipse 프로젝트의 컨텐츠를 보여줍니다.
 
@@ -429,21 +429,21 @@ Java 서블릿은 다음 Java 코드를 사용하여 HTML 페이지에서 게시
 
 **웹 응용 프로그램을 WAR 파일로 패키지합니다.**
 
-1. 프로젝트 **탐색기** 창에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 내보내기 `InvokePreLoanProcess` > **WAR 파일** 을 **선택합니다**.
-1. 웹 **모듈** 텍스트 상자에 Java 프로젝트 `InvokePreLoanProcess` 의 이름을 입력합니다.
-1. [ **대상** ] 텍스트 상자에 파일 이름 `PreLoanProcess.war`**을 입력하고 WAR 파일 위치&#x200B;**를 지정한 다음 [마침]을 클릭합니다.
+1. **프로젝트 탐색기** 창에서 `InvokePreLoanProcess` 프로젝트를 마우스 오른쪽 단추로 클릭하고 **내보내기** > **WAR 파일**&#x200B;을 선택합니다.
+1. **웹 모듈** 텍스트 상자에 Java 프로젝트의 이름에 `InvokePreLoanProcess`를 입력합니다.
+1. **대상** 텍스트 상자에 `PreLoanProcess.war`**의 파일 이름을 입력하고 WAR 파일의 위치를 지정한 다음 마침을 클릭합니다.**
 
-### AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 WAR 파일 배포 {#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms}
+### WAR 파일을 AEM Forms {#deploy-the-war-file-to-the-j2ee-application-server-hosting-aem-forms}을(를) 호스팅하는 J2EE 응용 프로그램 서버에 배포
 
-AEM Forms이 배포된 J2EE 응용 프로그램 서버에 WAR 파일을 배포합니다. WAR 파일을 J2EE 응용 프로그램 서버에 배포하려면 내보내기 경로에서 WAR 파일을 로 복사하십시오 `[AEM Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy`.
+WAR 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 배포합니다. WAR 파일을 J2EE 응용 프로그램 서버에 배포하려면 내보내기 경로에서 `[AEM Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\lc_turnkey\deploy`로 WAR 파일을 복사합니다.
 
 >[!NOTE]
 >
->AEM Forms이 JBoss에 배포되지 않은 경우 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버에 따라 WAR 파일을 배포해야 합니다.
+>aem forms이 JBoss에 배포되지 않은 경우 AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버를 준수하는 WAR 파일을 배포해야 합니다.
 
-### 웹 애플리케이션 테스트 {#test-your-web-application}
+### 웹 응용 프로그램 테스트 {#test-your-web-application}
 
-웹 애플리케이션을 배포한 후 웹 브라우저를 사용하여 테스트할 수 있습니다. AEM Forms을 호스팅하는 동일한 컴퓨터를 사용하고 있다고 가정할 경우 다음 URL을 지정할 수 있습니다.
+웹 애플리케이션을 배포한 후 웹 브라우저를 사용하여 테스트할 수 있습니다. AEM Forms을 호스팅하는 것과 동일한 컴퓨터를 사용하고 있다고 가정할 경우 다음 URL을 지정할 수 있습니다.
 
 * http://localhost:8080/PreLoanProcess/index.html
 
@@ -453,11 +453,11 @@ AEM Forms이 배포된 J2EE 응용 프로그램 서버에 WAR 파일을 배포�
 >
 >Java 응용 프로그램이 프로세스를 호출했는지 확인하려면 Workspace를 시작하고 대출을 수락합니다.
 
-## 인간 중심의 오랜 프로세스를 호출하는 ASP.NET 웹 응용 프로그램 만들기 {#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process}
+## 인간 중심의 긴 수명 프로세스를 호출하는 ASP.NET 웹 응용 프로그램 만들기 {#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process}
 
-프로세스를 호출하는 ASP.NET 응용 프로그램을 만들 수 `FirstAppSolution/PreLoanProcess` 있습니다. ASP.NET 응용 프로그램에서 이 프로세스를 호출하려면 웹 서비스를 사용하십시오. (웹 서비스를 [사용하여 AEM Forms 호출을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+`FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 ASP.NET 응용 프로그램을 만들 수 있습니다. ASP.NET 응용 프로그램에서 이 프로세스를 호출하려면 웹 서비스를 사용하십시오. (웹 서비스[를 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
 
-다음 그림은 최종 사용자의 데이터를 가져오는 ASP.NET 클라이언트 응용 프로그램을 보여줍니다. 데이터는 XML 데이터 소스에 삽입되어 사용자가 [응용 프로그램 제출] 단추를 클릭하면 `FirstAppSolution/PreLoanProcess` 프로세스로 전송됩니다.
+다음 그림은 최종 사용자의 데이터를 가져오는 ASP.NET 클라이언트 응용 프로그램을 보여줍니다. 데이터는 XML 데이터 소스에 삽입되고 사용자가 [응용 프로그램 제출] 단추를 클릭하면 `FirstAppSolution/PreLoanProcess` 프로세스로 전송됩니다.
 
 프로세스가 호출되면 호출 식별자 값이 표시됩니다. 호출 식별자 값은 긴 기간 프로세스의 상태를 추적하는 레코드의 일부로 만들어집니다.
 
@@ -468,7 +468,7 @@ ASP.NET 응용 프로그램은 다음 작업을 수행합니다.
 * 웹 서비스를 사용하여* FirstAppSolution/PreLoanProcess *프로세스를 호출합니다.
 * 호출 식별자 값 및 오래 지속된 작업의 상태를 클라이언트 웹 브라우저에 반환합니다.
 
-### 단계 요약 {#summary_of_steps-1}
+### {#summary_of_steps-1} 단계 요약
 
 FirstAppSolution/PreLoanProcess 프로세스를 호출할 수 있는 ASP.NET 응용 프로그램을 만들려면 다음 단계를 수행하십시오.
 
@@ -476,49 +476,49 @@ FirstAppSolution/PreLoanProcess 프로세스를 호출할 수 있는 ASP.NET 응
 1. [FirstAppSolution/PreLoanProcess를 호출하는 ASP 페이지를 만듭니다](invoking-human-centric-long-lived.md#create-an-asp-page-that-invokes-firstappsolution-preloanprocess).
 1. [ASP.NET 응용 프로그램을 실행합니다](invoking-human-centric-long-lived.md#run-the-asp-net-application).
 
-### ASP.NET 웹 응용 프로그램 만들기 {#create-an-asp-net-web-application}
+### ASP.NET 웹 응용 프로그램 {#create-an-asp-net-web-application} 만들기
 
-Microsoft .NET C# ASP.NET 웹 응용 프로그램을 만듭니다. 다음 그림은 InvokePreLoanProcess라는 ASP.NET 프로젝트 *의 내용을 보여줍니다*.
+Microsoft .NET C# ASP.NET 웹 응용 프로그램을 만듭니다. 다음 그림은 *InvokePreLoanProcess*&#x200B;라는 ASP.NET 프로젝트의 내용을 보여줍니다.
 
-서비스 참조 아래에 두 개의 항목이 있습니다. 첫 번째 항목의 이름은* JobManager*입니다. 이 참조를 사용하면 ASP.NET 응용 프로그램에서 작업 관리자 서비스를 호출할 수 있습니다. 이 서비스는 장기 프로세스 상태에 대한 정보를 반환합니다. 예를 들어 현재 프로세스가 실행 중인 경우 이 서비스는 현재 실행 중인 프로세스를 지정하는 숫자 값을 반환합니다. 두 번째 참조의 이름은&#x200B;*PreLoanProcess입니다*. 이 서비스 참조는* FirstAppSolution/PreLoanProcess *프로세스에 대한 참조를 나타냅니다. 서비스 참조를 만들면 AEM Forms 서비스와 관련된 데이터 유형을 .NET 프로젝트 내에서 사용할 수 있습니다.
+서비스 참조 아래에 두 개의 항목이 있습니다. 첫 번째 항목의 이름은* JobManager*입니다. 이 참조를 사용하면 ASP.NET 응용 프로그램에서 작업 관리자 서비스를 호출할 수 있습니다. 이 서비스는 장기 프로세스 상태에 대한 정보를 반환합니다. 예를 들어 현재 프로세스가 실행 중인 경우 이 서비스는 현재 실행 중인 프로세스를 지정하는 숫자 값을 반환합니다. 두 번째 참조의 이름은&#x200B;*PreLoanProcess*&#x200B;입니다. 이 서비스 참조는* FirstAppSolution/PreLoanProcess *프로세스에 대한 참조를 나타냅니다. 서비스 참조를 만들면, AEM Forms 서비스와 관련된 데이터 유형을 .NET 프로젝트 내에서 사용할 수 있습니다.
 
 **ASP.NET 프로젝트 만들기:**
 
 1. Microsoft Visual Studio 2008을 시작합니다.
-1. [ **파일** ] 메뉴에서 **새로**&#x200B;만들기, **웹 사이트**&#x200B;를선택합니다.
-1. [ **템플릿** ] 목록에서 **ASP.NET 웹 사이트를 선택합니다**.
-1. 위치 **상자에서** 프로젝트 위치를 선택합니다. 프로젝트의 이름을 InvokePreLoanProcess *로 지정합니다*.
-1. 언어 **상자에서** Visual C#
+1. **파일** 메뉴에서 **새로 만들기**, **웹 사이트**&#x200B;를 선택합니다.
+1. **템플릿** 목록에서 **ASP.NET 웹 사이트**&#x200B;를 선택합니다.
+1. **위치** 상자에서 프로젝트의 위치를 선택합니다. 프로젝트 이름을 *InvokePreLoanProcess*&#x200B;로 지정합니다.
+1. **언어** 상자에서 Visual C#
 1. 확인을 클릭합니다.
 
 **서비스 참조 추가:**
 
-1. 프로젝트 메뉴에서 서비스 참조 **추가를 선택합니다**.
-1. 주소 **대화** 상자에서 작업 관리자 서비스에 대한 WSDL을 지정합니다.
+1. 프로젝트 메뉴에서 **서비스 참조 추가**&#x200B;를 선택합니다.
+1. **주소** 대화 상자에서 작업 관리자 서비스에 대한 WSDL을 지정합니다.
 
    ```java
     https://hiro-xp:8080/soap/services/JobManager?WSDL&lc_version=9.0.1
    ```
 
-1. 네임스페이스 필드에 입력합니다 `JobManager`.
-1. **이동을**&#x200B;클릭한 다음 확인을 클릭합니다&#x200B;****.
-1. [ **프로젝트** ] 메뉴에서 서비스 참조 **추가를 선택합니다**.
-1. 주소 **대화** 상자에서 WSDL을 FirstAppSolution/PreLoanProcess 프로세스로 지정합니다.
+1. 네임스페이스 필드에 `JobManager`을 입력합니다.
+1. **이동**&#x200B;을 클릭한 다음 **확인**&#x200B;을 클릭합니다.
+1. **프로젝트** 메뉴에서 **서비스 참조 추가**&#x200B;를 선택합니다.
+1. **주소** 대화 상자에서 WSDL을 FirstAppSolution/PreLoanProcess 프로세스로 지정합니다.
 
    ```java
     https://hiro-xp:8080/soap/services/FirstAppSolution/PreLoanProcess?WSDL&lc_version=9.0.1
    ```
 
-1. 네임스페이스 필드에 입력합니다 `PreLoanProcess`.
-1. **이동을**&#x200B;클릭한 다음 확인을 클릭합니다&#x200B;****.
+1. 네임스페이스 필드에 `PreLoanProcess`을 입력합니다.
+1. **이동**&#x200B;을 클릭한 다음 **확인**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
->AEM Forms `hiro-xp` 를 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 대체합니다. 이 `lc_version` 옵션은 MTOM과 같은 AEM Forms 기능을 사용할 수 있도록 합니다. 이 `lc_version`옵션을 지정하지 않으면 MTOM을 사용하여 AEM Forms을 호출할 수 없습니다. MTOM을 [사용하여 AEM Forms 호출을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
+>`hiro-xp`을(를) AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 대체합니다. `lc_version` 옵션은 MTOM과 같은 AEM Forms 기능을 사용할 수 있도록 합니다. `lc_version`옵션을 지정하지 않으면 MTOM을 사용하여 AEM Forms을 호출할 수 없습니다. (MTOM[을 사용하여 AEM Forms 호출 참조).](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-### FirstAppSolution/PreLoanProcess를 호출하는 ASP 페이지 만들기 {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}
+### FirstAppSolution/PreLoanProcess {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}를 호출하는 ASP 페이지를 만듭니다.
 
-ASP.NET 프로젝트 내에서 HTML 페이지를 대출 신청자에게 표시하는 책임이 있는 웹 양식(ASPX 파일)을 추가합니다. 웹 양식은 파생된 클래스를 기반으로 합니다 `System.Web.UI.Page`. 호출하는 C# 응용 프로그램 논리 `FirstAppSolution/PreLoanProcess` 는 `Button1_Click` 메서드에 있습니다(이 단추는 응용 프로그램 제출 단추를 나타냅니다).
+ASP.NET 프로젝트 내에서 HTML 페이지를 대출 신청자에게 표시하는 책임이 있는 웹 양식(ASPX 파일)을 추가합니다. 웹 양식은 `System.Web.UI.Page`에서 파생된 클래스를 기반으로 합니다. `FirstAppSolution/PreLoanProcess`을(를) 호출하는 C# 응용 프로그램 로직은 `Button1_Click` 메서드에 있습니다(이 단추는 응용 프로그램 제출 단추를 나타냅니다).
 
 다음 그림에서는 ASP.NET 응용 프로그램을 보여 줍니다
 
@@ -545,7 +545,7 @@ ASP.NET 프로젝트 내에서 HTML 페이지를 대출 신청자에게 표시�
    <td><p>대출 금액을 지정합니다.</p></td>
   </tr>
   <tr>
-   <td><p>Button1</p></td>
+   <td><p>단추 1</p></td>
    <td><p>응용 프로그램 제출 단추를 나타냅니다.</p></td>
   </tr>
   <tr>
@@ -559,9 +559,9 @@ ASP.NET 프로젝트 내에서 HTML 페이지를 대출 신청자에게 표시�
  </tbody>
 </table>
 
-ASP.NET 응용 프로그램의 일부인 응용 프로그램 논리는 프로세스에 전달할 XML 데이터 소스를 동적으로 만들어야 `FirstAppSolution/PreLoanProcess` 합니다. HTML 페이지에 입력한 값은 XML 데이터 소스 내에 지정해야 합니다. 이러한 데이터 값은 작업 공간에서 양식을 볼 때 폼으로 병합됩니다. 네임스페이스에 있는 클래스 `System.Xml` 는 XML 데이터 소스를 만드는 데 사용됩니다.
+ASP.NET 응용 프로그램의 일부인 응용 프로그램 논리는 동적으로 XML 데이터 소스를 만들어 `FirstAppSolution/PreLoanProcess` 프로세스에 전달해야 합니다. HTML 페이지에 입력한 값은 XML 데이터 소스 내에 지정해야 합니다. 이러한 데이터 값은 작업 공간에서 양식을 볼 때 폼으로 병합됩니다. `System.Xml` 네임스페이스에 있는 클래스는 XML 데이터 소스를 만드는 데 사용됩니다.
 
-ASP.NET 응용 프로그램의 XML 데이터가 필요한 프로세스를 호출하면 XML 데이터 형식을 사용할 수 있습니다. 즉, 프로세스에 인스턴스를 전달할 수 `System.Xml.XmlDocument` 없습니다. 프로세스에 전달할 이 XML 인스턴스의 정규화된 이름은 입니다 `InvokePreLoanProcess.PreLoanProcess.XML`. 인스턴스를 `System.Xml.XmlDocument` 로 변환합니다 `InvokePreLoanProcess.PreLoanProcess.XML`. 다음 코드를 사용하여 이 작업을 수행할 수 있습니다.
+ASP.NET 응용 프로그램의 XML 데이터가 필요한 프로세스를 호출하면 XML 데이터 형식을 사용할 수 있습니다. 즉, 프로세스에 `System.Xml.XmlDocument` 인스턴스를 전달할 수 없습니다. 프로세스에 전달할 이 XML 인스턴스의 정규화된 이름은 `InvokePreLoanProcess.PreLoanProcess.XML`입니다. `System.Xml.XmlDocument` 인스턴스를 `InvokePreLoanProcess.PreLoanProcess.XML`로 변환합니다. 다음 코드를 사용하여 이 작업을 수행할 수 있습니다.
 
 ```java
  //Create the XML to pass to the FirstAppSolution/PreLoanProcess process
@@ -576,29 +576,29 @@ ASP.NET 응용 프로그램의 XML 데이터가 필요한 프로세스를 호출
  inXML.document = sw.ToString();
 ```
 
-프로세스를 호출하는 ASP 페이지를 만들려면 `FirstAppSolution/PreLoanProcess` 메서드에서 다음 작업을 `Button1_Click` 수행하십시오.
+`FirstAppSolution/PreLoanProcess` 프로세스를 호출하는 ASP 페이지를 만들려면 `Button1_Click` 메서드에서 다음 작업을 수행하십시오.
 
 1. 기본 생성자를 사용하여 `FirstAppSolution_PreLoanProcessClient` 개체를 만듭니다.
-1. 생성자를 사용하여 `FirstAppSolution_PreLoanProcessClient.Endpoint.Address` 개체를 `System.ServiceModel.EndpointAddress` 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스 및 인코딩 유형으로 전달합니다.
+1. `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `FirstAppSolution_PreLoanProcessClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스 및 인코딩 유형으로 전달합니다.
 
    ```java
     https://hiro-xp:8080/soap/services/FirstAppSolution/PreLoanProcess?blob=mtom
    ```
 
-   속성을 사용할 필요는 `lc_version` 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 그러나 반드시 지정해야 합니다 `?blob=mtom`.
+   `lc_version` 특성을 사용할 필요는 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다. 그러나 `?blob=mtom`을(를) 지정해야 합니다.
 
    >[!NOTE]
    >
-   >AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소 `hiro-xp`*로 바꿉니다. *
+   >AEM Forms을 호스팅하는 J2EE 응용 프로그램 서버의 IP 주소로 `hiro-xp`*를 교체합니다.*
 
-1. 데이터 `System.ServiceModel.BasicHttpBinding` 멤버의 값을 가져와 개체를 `FirstAppSolution_PreLoanProcessClient.Endpoint.Binding` 만듭니다. 반환 값을 다음으로 캐스팅합니다 `BasicHttpBinding`.
-1. 개체의 `System.ServiceModel.BasicHttpBinding` 데이터 `MessageEncoding` 멤버를 로 설정합니다 `WSMessageEncoding.Mtom`. 이 값을 사용하면 MTOM이 사용됩니다.
+1. `FirstAppSolution_PreLoanProcessClient.Endpoint.Binding` 데이터 멤버의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`으로 캐스팅합니다.
+1. `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 데이터 멤버를 `WSMessageEncoding.Mtom`로 설정합니다. 이 값을 사용하면 MTOM이 사용됩니다.
 1. 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-   * AEM 양식 사용자 이름을 데이터 멤버에 할당합니다 `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.UserName`.
-   * 해당 암호 값을 데이터 멤버에 할당합니다 `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.Password`.
-   * 데이터 멤버 `HttpClientCredentialType.Basic` 에 상수 값을 지정합니다 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * 데이터 멤버 `BasicHttpSecurityMode.TransportCredentialOnly` 에 상수 값을 지정합니다 `BasicHttpBindingSecurity.Security.Mode`.
+   * AEM 양식 사용자 이름을 데이터 멤버 `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.UserName`에 지정합니다.
+   * 해당 암호 값을 데이터 멤버 `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.Password`에 할당합니다.
+   * 상수 값 `HttpClientCredentialType.Basic`을 데이터 멤버 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+   * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을 데이터 멤버 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
    다음 코드 예는 이러한 작업을 보여줍니다.
 
@@ -615,20 +615,20 @@ ASP.NET 응용 프로그램의 XML 데이터가 필요한 프로세스를 호출
     b.ReaderQuotas.MaxArrayLength = 2000000;
    ```
 
-1. 사용자가 웹 페이지에 입력한 이름, 전화 및 금액 값을 검색합니다. 이러한 값을 사용하여 프로세스에 전송되는 XML 데이터 소스를 동적으로 만들 수 `FirstAppSolution/PreLoanProcess` 있습니다. 프로세스에 전달할 XML 데이터 소스를 `System.Xml.XmlDocument` 나타내는 코드를 만듭니다(이 응용 프로그램 논리는 다음 코드 예제에서 표시됨).
-1. 인스턴스를 변환할 `System.Xml.XmlDocument` 수 `InvokePreLoanProcess.PreLoanProcess.XML` 있습니다(이 애플리케이션 로직은 다음 코드 예제에서 표시됨).
-1. 개체의 `FirstAppSolution/PreLoanProcess` 메서드를 호출하여 `FirstAppSolution_PreLoanProcessClient` 프로세스를 `invoke_Async` 호출합니다. 이 메서드는 긴 기간 프로세스의 호출 식별자 값을 나타내는 문자열 값을 반환합니다.
-1. is 생성자를 사용하여 `JobManagerClient` 만듭니다. (작업 관리자 서비스에 대한 서비스 참조를 설정했는지 확인하십시오.)
-1. 1-5단계를 반복합니다. 2단계에 대해 다음 URL을 지정합니다. `https://hiro-xp:8080/soap/services/JobManager?blob=mtom`.
+1. 사용자가 웹 페이지에 입력한 이름, 전화 및 금액 값을 검색합니다. 이 값을 사용하여 `FirstAppSolution/PreLoanProcess` 프로세스로 전송되는 XML 데이터 소스를 동적으로 만듭니다. 프로세스에 전달할 XML 데이터 소스를 나타내는 `System.Xml.XmlDocument`을 만듭니다(이 응용 프로그램 논리는 다음 코드 예제에서 표시됨).
+1. `System.Xml.XmlDocument` 인스턴스를 `InvokePreLoanProcess.PreLoanProcess.XML`(이 응용 프로그램 논리는 다음 코드 예제에 표시됨)으로 변환합니다.
+1. `FirstAppSolution_PreLoanProcessClient` 개체의 `invoke_Async` 메서드를 호출하여 `FirstAppSolution/PreLoanProcess` 프로세스를 호출합니다. 이 메서드는 긴 기간 프로세스의 호출 식별자 값을 나타내는 문자열 값을 반환합니다.
+1. is 생성자를 사용하여 `JobManagerClient`을 만듭니다. (작업 관리자 서비스에 대한 서비스 참조를 설정했는지 확인하십시오.)
+1. 1-5단계를 반복합니다. 2단계에 대해 다음 URL을 지정합니다.`https://hiro-xp:8080/soap/services/JobManager?blob=mtom`.
 1. 생성자를 사용하여 `JobId` 개체를 만듭니다.
-1. 개체의 `JobId` 데이터 `id` 멤버를 `FirstAppSolution_PreLoanProcessClient` 개체 메서드의 반환 값으로 `invoke_Async` 설정합니다.
-1. 객체의 데이터 멤버 `value` 에 true를 `JobId` 할당합니다 `persistent` .
-1. 개체 `JobStatus` 의 메서드를 호출하고 `JobManagerService` `getStatus` `JobId` 개체를 전달하여 개체를 만듭니다.
-1. 개체 데이터 멤버의 값을 검색하여 상태 값 `JobStatus` 을 `statusCode` 가져옵니다.
-1. 필드에 호출 식별자 값을 `LabelJobID.Text` 지정합니다.
-1. 필드에 상태 값을 `LabelStatus.Text` 지정합니다.
+1. `JobId` 개체의 `id` 데이터 멤버를 `FirstAppSolution_PreLoanProcessClient` 개체의 `invoke_Async` 메서드의 반환 값으로 설정합니다.
+1. `value` true를 `JobId` 개체의 `persistent` 데이터 멤버에 할당합니다.
+1. `JobManagerService` 개체의 `getStatus` 메서드를 호출하고 `JobId` 개체를 전달하여 `JobStatus` 개체를 만듭니다.
+1. `JobStatus` 개체의 `statusCode` 데이터 멤버의 값을 검색하여 상태 값을 가져옵니다.
+1. 호출 식별자 값을 `LabelJobID.Text` 필드에 할당합니다.
+1. 상태 값을 `LabelStatus.Text` 필드에 지정합니다.
 
-### 빠른 시작: 웹 서비스 API를 사용하여 긴 기간 프로세스 호출 {#quick-start-invoking-a-long-lived-process-using-the-web-service-api}
+### 빠른 시작:웹 서비스 API {#quick-start-invoking-a-long-lived-process-using-the-web-service-api}를 사용하여 긴 프로세스 호출
 
 다음 C# 코드 예제에서는 `FirstAppSolution/PreLoanProcess`프로세스를 호출합니다.
 
@@ -817,9 +817,9 @@ ASP.NET 응용 프로그램의 XML 데이터가 필요한 프로세스를 호출
 >
 >getJobDescription 사용자 정의 메서드에 있는 값은 작업 관리자 서비스에서 반환한 값에 해당합니다.
 
-### ASP.NET 응용 프로그램 실행 {#run-the-asp-net-application}
+### ASP.NET 응용 프로그램 {#run-the-asp-net-application} 실행
 
-ASP.NET 응용 프로그램을 컴파일하고 배포한 후 웹 브라우저를 사용하여 실행할 수 있습니다. ASP.NET 프로젝트의 이름이 *InvokePreLoanProcess라고 가정할*&#x200B;경우 웹 브라우저 내에서 다음 URL을 지정합니다.
+ASP.NET 응용 프로그램을 컴파일하고 배포한 후 웹 브라우저를 사용하여 실행할 수 있습니다. ASP.NET 프로젝트의 이름이 *InvokePreLoanProcess*&#x200B;라고 가정할 경우 웹 브라우저 내에서 다음 URL을 지정합니다.
 
 *http://localhost:1629/InvokePreLoanProcess/*Default.aspx
 
@@ -829,31 +829,31 @@ ASP.NET 응용 프로그램을 컴파일하고 배포한 후 웹 브라우저를
 >
 >ASP.NET 응용 프로그램이 프로세스를 호출했는지 확인하려면 Workspace를 시작하고 대출을 수락합니다.
 
-## 인간 중심의 오랜 프로세스를 불러일으키는 Flex를 사용하여 구축한 클라이언트 애플리케이션 제작 {#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process}
+## 인간 중심의 오랜 프로세스를 불러일으키는 Flex으로 구축된 클라이언트 애플리케이션 만들기 {#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process}
 
-Flex로 제작한 클라이언트 애플리케이션을 제작하여 *FirstAppSolution/PreLoanProcess 프로세스를 호출할 수* 있습니다. 이 응용 프로그램은 Remoting을 사용하여 *FirstAppSolution/PreLoanProcess 프로세스를* 호출합니다. (AEM Forms [호출을 사용하여(AEM 양식에서 더 이상 사용되지 않음) AEM Forms Remoting을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Flex으로 빌드한 클라이언트 응용 프로그램을 만들어 *FirstAppSolution/PreLoanProcess* 프로세스를 호출할 수 있습니다. 이 응용 프로그램은 Remoting을 사용하여 *FirstAppSolution/PreLoanProcess* 프로세스를 호출합니다. ([다음 명령을 사용하여 AEM Forms 호출(AEM 양식에서 더 이상 사용되지 않음) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)을 참조하십시오.)
 
-다음 그림은 최종 사용자의 데이터를 수집하는 Flex를 사용하여 구축한 클라이언트 애플리케이션을 보여줍니다. 데이터는 XML 데이터 소스에 삽입되어 프로세스로 전송됩니다.
+다음 그림은 최종 사용자의 데이터를 수집하는 Flex으로 구축된 클라이언트 응용 프로그램을 보여줍니다. 데이터는 XML 데이터 소스에 삽입되어 프로세스로 전송됩니다.
 
 프로세스가 호출되면 호출 식별자 값이 표시됩니다. 호출 식별자 값은 긴 기간 프로세스의 상태를 추적하는 레코드의 일부로 만들어집니다.
 
-Flex로 구축한 클라이언트 애플리케이션은 다음 작업을 수행합니다.
+Flex으로 구축된 클라이언트 응용 프로그램은 다음 작업을 수행합니다.
 
 * 사용자가 웹 페이지에 입력한 값을 검색합니다.
-* FirstAppSolution/PreLoanProcess 프로세스에 전달되는 *XML 데이터 소스를 동적으로* 만듭니다. 세 개의 값은 XML 데이터 소스에 지정됩니다.
+* *FirstAppSolution/PreLoanProcess* 프로세스에 전달되는 XML 데이터 소스를 동적으로 만듭니다. 세 개의 값은 XML 데이터 소스에 지정됩니다.
 * Remoting을 사용하여 *FirstAppSolution/PreLoanProcess* 프로세스를 호출합니다.
 * 긴 기간 프로세스의 호출 식별자 값을 반환합니다.
 
-### 단계 요약 {#summary_of_steps-2}
+### {#summary_of_steps-2} 단계 요약
 
-FirstAppSolution/PreLoanProcess 프로세스를 호출할 수 있는 Flex를 사용하여 구축한 클라이언트 애플리케이션을 만들려면 다음 단계를 수행하십시오.
+FirstAppSolution/PreLoanProcess 프로세스를 호출할 수 있는 Flex으로 빌드된 클라이언트 응용 프로그램을 만들려면 다음 단계를 수행하십시오.
 
-1. 새로운 Flex 프로젝트 시작
-1. 프로젝트의 클래스 경로에 adobe-remoting-provider.swc 파일을 포함합니다. AEM Forms Flex [라이브러리 파일 포함을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).
-1. ActionScript 또는 MXML을 통해 `mx:RemoteObject` 인스턴스를 만듭니다. (mx: [RemoteObject 인스턴스 만들기 참조](/help/forms/developing/invoking-aem-forms-using-remoting.md))
-1. AEM Forms과 통신하고 인스턴스에 연결할 인스턴스를 `ChannelSet` `mx:RemoteObject` 설정합니다. AEM Forms [에 채널 만들기를 참조하십시오](/help/forms/developing/invoking-aem-forms-using-remoting.md).
-1. 사용자 식별자 값 및 암호를 지정하려면 ChannelSet의 `login` 메서드 또는 서비스 `setCredentials` 메서드를 호출합니다. (Single [Sign-On 사용을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-remoting.md#using-single-sign-on).)
-1. XML 인스턴스를 만들어 프로세스에 `FirstAppSolution/PreLoanProcess` 전달할 XML 데이터 소스를 만듭니다. 이 응용 프로그램 논리는 다음 코드 예제에서 볼 수 있습니다.
+1. 새 Flex 프로젝트를 시작합니다.
+1. 프로젝트의 클래스 경로에 adobe-remoting-provider.swc 파일을 포함합니다. ([AEM Forms Flex 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)을 참조하십시오.)
+1. ActionScript 또는 MXML을 통해 `mx:RemoteObject` 인스턴스를 만듭니다. ([mx:RemoteObject 인스턴스 만들기](/help/forms/developing/invoking-aem-forms-using-remoting.md) 참조)
+1. AEM Forms과 통신하도록 `ChannelSet` 인스턴스를 설정하고 `mx:RemoteObject` 인스턴스에 연결합니다. ([AEM Forms에 채널 만들기](/help/forms/developing/invoking-aem-forms-using-remoting.md)를 참조하십시오.)
+1. 사용자 식별자 값과 암호를 지정하려면 ChannelSet의 `login` 메서드 또는 서비스의 `setCredentials` 메서드를 호출합니다. ([단일 사인온 사용](/help/forms/developing/invoking-aem-forms-using-remoting.md#using-single-sign-on)을 참조하십시오.)
+1. XML 인스턴스를 만들어 `FirstAppSolution/PreLoanProcess` 프로세스에 전달할 XML 데이터 소스를 만듭니다. 이 응용 프로그램 논리는 다음 코드 예제에서 볼 수 있습니다.
 1. 생성자를 사용하여 Object 유형의 개체를 만듭니다. 다음 코드와 같이 프로세스의 입력 매개 변수의 이름을 지정하여 객체에 XML을 할당합니다.
 
    ```csharp
@@ -863,7 +863,7 @@ FirstAppSolution/PreLoanProcess 프로세스를 호출할 수 있는 Flex를 사
     params["formData"]=xml;
    ```
 
-1. 인스턴스의 `FirstAppSolution/PreLoanProcess` 메서드를 호출하여 `mx:RemoteObject` 프로세스를 `invoke_Async` 호출합니다. 입력 매개 변수 `Object` 가 포함된 항목을 전달합니다. (입력 값 [전달을 참조하십시오](/help/forms/developing/invoking-aem-forms-using-remoting.md).)
+1. `mx:RemoteObject` 인스턴스의 `invoke_Async` 메서드를 호출하여 `FirstAppSolution/PreLoanProcess` 프로세스를 호출합니다. 입력 매개 변수가 포함된 `Object`을 전달합니다. ([입력 값 전달](/help/forms/developing/invoking-aem-forms-using-remoting.md)을 참조하십시오.)
 1. 다음 코드와 같이 긴 기간 프로세스에서 반환되는 호출 식별 값을 검색합니다.
 
    ```csharp
@@ -875,7 +875,7 @@ FirstAppSolution/PreLoanProcess 프로세스를 호출할 수 있는 Flex를 사
     }
    ```
 
-### Remoting을 사용하여 오래 지속된 프로세스 호출 {#invoking-a-long-lived-process-using-remoting}
+### Remoting {#invoking-a-long-lived-process-using-remoting}을(를) 사용하여 긴 프로세스 호출
 
 다음 Flex 코드 예제에서는 `FirstAppSolution/PreLoanProcess` 프로세스를 호출합니다.
 
