@@ -13,6 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '775'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +35,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
 >[!CAUTION]
 >
->단일 론치를 동시에 홍보할 수 없습니다. This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 대해 두 개의 홍보 작업이 동시에 실행되면 `Launch could not be promoted` 오류가 발생할 수 있습니다(로그에 충돌 오류와 함께).
 
 >[!CAUTION]
 >
@@ -46,6 +49,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 >
 >* [중첩된 론치 홍보](#promoting-a-nested-launch)에서는 구조에 둘 이상의 론치가 있는 경우를 설명합니다.
 >* [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)에서는 자동 홍보 및 게시에 대한 세부 정보를 제공합니다.
+
 >
 
 
@@ -56,7 +60,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 
    * **사이트** 콘솔:
 
-      1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). 모든 참조가 표시됩니다.
+      1. [참조 레일](/help/sites-authoring/author-environment-tools.md#showingpagereferences)을 열고 [선택 모드](/help/sites-authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다(또는 참조 레일을 선택하여 여는 경우 순서는 중요하지 않습니다). 모든 참조가 표시됩니다.
 
       1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
@@ -78,6 +82,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
       * **수정된 페이지 홍보**
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
+
    예를 들어, 수정된 페이지만 홍보하도록 선택하는 경우:
 
    ![launches-pd-06](assets/launches-pd-06.png)
@@ -103,7 +108,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 >
 >이 마법사는 단일 및 [중첩 론치](#promoting-a-nested-launch)에 사용할 수 있습니다.
 
-## 중첩 론치 홍보 {#promoting-a-nested-launch}
+## 중첩 론치 홍보  {#promoting-a-nested-launch}
 
 중첩 론치를 만든 후에는 루트 소스(프로덕션)를 포함하는 모든 소스에 다시 홍보할 수 있습니다.
 
@@ -125,6 +130,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
       * **수정된 페이지 홍보**
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
+
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. **다음**&#x200B;을 선택합니다.
