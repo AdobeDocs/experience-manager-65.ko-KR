@@ -82,13 +82,14 @@ ht-degree: 2%
 
 1. 이제 사용 중인 뷰어에서 Quickview 사용 방법을 알아야 합니다.
 
-   이를 위해 뷰어는 호출된 핸들러를 사용합니다 `QuickViewActive`.
+   이를 위해 뷰어는 `QuickViewActive`이라는 핸들러를 사용합니다.
 
-   **예**&#x200B;대화형 이미지에 대해 웹 페이지에 다음과 같은 샘플 포함 코드를 사용한다고 가정해 보십시오.
+   **예**
+웹 페이지에서 다음 샘플 포함 코드를 인터랙티브한 이미지에 사용한다고 가정해 봅시다.
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
-   핸들러는 다음과 같이 뷰어에 로드됩니다. `setHandlers`
+   처리기가 `setHandlers`을(를) 사용하여 뷰어에 로드됩니다.
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
@@ -105,16 +106,17 @@ ht-degree: 2%
    })
    ```
 
-   다음 페이지에서 방법에 대한 자세한 `setHandlers()` 내용을 살펴보십시오.
+   다음 위치에서 `setHandlers()` 메서드에 대해 자세히 알아보십시오.
 
-   * 대화형 이미지 뷰어: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * 대화형 비디오 뷰어: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * 대화형 이미지 뷰어:[https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * 대화형 비디오 뷰어:[https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 이제 핸들러를 구성해야 `quickViewActivate` 합니다.
+1. 이제 `quickViewActivate` 처리기를 구성해야 합니다.
 
-   핸들러는 뷰어에서 `quickViewActivate` 빠른 보기를 제어합니다. 처리기에는 Quickview에서 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 샘플 함수 호출과 Quickview에서 설정된 SKU 변수에 대한 매핑을 `loadQuickView` 제공합니다.
+   `quickViewActivate` 핸들러는 뷰어의 빠른 보기를 제어합니다. 처리기에는 Quickview에서 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 Quickview에서 설정된 SKU 변수에 대한 매핑과 샘플 `loadQuickView` 함수 호출을 제공합니다.
 
-   **변수 매핑**&#x200B;웹 페이지에서 사용할 변수를 Quickview에 포함된 SKU 값 및 일반 변수에 매핑합니다.
+   **변수**
+매핑웹 페이지에서 사용할 변수를 Quickview에 포함된 SKU 값 및 일반 변수에 매핑합니다.
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -129,25 +131,26 @@ ht-degree: 2%
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **함수 호출**&#x200B;이 처리기에는 Quickview가 작동하도록 함수 호출이 필요합니다. 이 함수는 호스트 페이지에서 액세스할 수 있다고 가정합니다. 포함 코드는 샘플 함수 호출을 제공합니다.
+   **함수**
+호출핸들러는 Quickview가 작동하도록 함수 호출을 필요로 합니다. 이 함수는 호스트 페이지에서 액세스할 수 있다고 가정합니다. 포함 코드는 샘플 함수 호출을 제공합니다.
 
    `loadQuickView(sku)`
 
-   샘플 함수 호출에서는 함수가 존재하며 액세스할 수 있다고 `loadQuickView()` 가정합니다.
+   샘플 함수 호출에서는 함수 `loadQuickView()`이(가) 존재하며 액세스할 수 있다고 가정합니다.
 
-   다음 페이지에서 방법에 대한 자세한 `quickViewActivate` 내용을 살펴보십시오.
+   다음 위치에서 `quickViewActivate` 메서드에 대해 자세히 알아보십시오.
 
-   * 대화형 이미지 뷰어: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-   * 대화형 비디오 뷰어: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-   * 대화형 비디오 뷰어에서 대화형 데이터 지원: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+   * 대화형 이미지 뷰어:[https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * 대화형 비디오 뷰어:[https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * 대화형 비디오 뷰어에서 대화형 데이터 지원:[https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. 다음을 수행합니다.
 
    * 포함 코드의 setHandlers 섹션의 주석을 해제합니다.
    * Quickview에 포함된 추가 변수를 매핑합니다.
 
-      * 추가 변수를 추가하는 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트합니다.
-   * 뷰어 외부에 간단한 `loadQuickView` () 함수를 만듭니다.
+      * 추가 변수를 추가하는 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트하십시오.
+   * 뷰어 외부에 있는 페이지에 간단한 `loadQuickView`() 함수를 만듭니다.
 
       예를 들어, 다음은 sku의 값을 브라우저 콘솔에 기록합니다.
 
@@ -163,8 +166,8 @@ ht-degree: 2%
 
 
 
-1. 이제 함수를 사용하여 빠른 보기에서 간단한 팝업을 호출할 수 있습니다. 다음 예에서는 팝업에 대해 a `DIV` 를 사용합니다.
-1. 다음과 같은 방법 `DIV` 으로 팝업 스타일을 지정합니다. 원하는 대로 자신만의 스타일을 추가할 수 있습니다.
+1. 이제 함수를 사용하여 빠른 보기에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 팝업에 `DIV`을 사용합니다.
+1. 다음 방법으로 팝업 `DIV`의 스타일을 지정합니다. 원하는 대로 자신만의 스타일을 추가할 수 있습니다.
 
    ```xml
    <style type="text/css">
@@ -176,7 +179,7 @@ ht-degree: 2%
    </style>
    ```
 
-1. HTML 페이지 본문 `DIV` 에 팝업을 배치합니다.
+1. HTML 페이지의 본문에 팝업 `DIV`을 배치합니다.
 
    요소 중 하나는 사용자가 빠른 보기를 호출할 때 sku 값으로 업데이트되는 ID로 설정됩니다. 이 예제에는 팝업이 표시된 후 다시 팝업을 숨길 수 있는 간단한 단추도 포함되어 있습니다.
 
@@ -189,7 +192,7 @@ ht-degree: 2%
    </div>
    ```
 
-1. 팝업에서 sku 값을 업데이트하는 함수 추가; 5단계에서 만든 간단한 함수를 교체하여 팝업을 표시합니다. 를 사용하여 다음을 수행할 수 있습니다.
+1. 팝업에서 sku 값을 업데이트하는 함수 추가;5단계에서 만든 간단한 함수를 교체하여 팝업을 표시합니다. 를 사용하여 다음을 수행할 수 있습니다.
 
    ```xml
    <script type="text/javascript">
@@ -200,23 +203,23 @@ ht-degree: 2%
    </script>
    ```
 
-1. 테스트 HTML 페이지를 웹 서버에 업로드하고 엽니다. 사용자가 빠른 보기를 불러오면 뷰어에 팝업 `DIV` 이 표시됩니다.
+1. 테스트 HTML 페이지를 웹 서버에 업로드하고 엽니다. 사용자가 Quickview를 불러오면 뷰어에 팝업 `DIV`이 표시됩니다.
 1. **전체 화면 모드로 사용자 정의 팝업을 표시하는 방법**
 
    대화형 비디오 뷰어와 같은 일부 뷰어는 전체 화면 모드로 표시됩니다. 그러나 이전 단계에 설명된 대로 팝업을 사용하면 전체 화면 모드에서 뷰어 뒤에 표시됩니다.
 
-   표준 모드와 전체 화면 모드 모두에서 팝업을 표시하려면 해당 팝업을 뷰어 컨테이너에 첨부합니다. 이를 위해 두 번째 처리기 메서드를 사용할 수 있습니다 `initComplete`.
+   표준 모드와 전체 화면 모드 모두에서 팝업을 표시하려면 해당 팝업을 뷰어 컨테이너에 첨부합니다. 이를 위해서는 두 번째 처리기 메서드인 `initComplete`을 사용할 수 있습니다.
 
-   뷰어가 `initComplete` 초기화되면 핸더가 호출됩니다.
+   뷰어가 초기화된 후 `initComplete` 하더가 호출됩니다.
 
    ```xml
    "initComplete":function() { code block }
    ```
 
-   다음 페이지에서 방법에 대한 자세한 `init()` 내용을 살펴보십시오.
+   다음 위치에서 `init()` 메서드에 대해 자세히 알아보십시오.
 
-   * 대화형 이미지 뷰어: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
-   * 대화형 비디오 뷰어: [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
+   * 대화형 이미지 뷰어:[https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * 대화형 비디오 뷰어:[https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. 이전 단계에 설명된 팝업을 뷰어에 첨부하려면 다음 코드를 사용하십시오.
 
@@ -260,9 +263,10 @@ ht-degree: 2%
 
    `*viewerInstance.*init()`
 
-   **예**&#x200B;이 예에서는 대화형 이미지 뷰어를 사용합니다.
+   **예**
+이 예에서는 대화형 이미지 뷰어를 사용합니다.
 
    `s7interactiveimageviewer.init()`
 
-   뷰어를 호스트 페이지에 포함시킨 후 뷰어를 사용하여 호출하기 전에 뷰어 인스턴스가 만들어지고 처리기가 로드되는지 확인하십시오 `init()`.
+   뷰어를 호스트 페이지에 포함시킨 후에는 뷰어 인스턴스가 만들어지고 처리기가 로드되어야 뷰어가 `init()`을 사용하여 호출됩니다.
 
