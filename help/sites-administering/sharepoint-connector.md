@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# SharePoint 커넥터{#sharepoint-connector}
+# SharePoint Connector{#sharepoint-connector}
 
 이 문서에는 Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 Adobe JCR Connector에 대한 자세한 내용이 포함되어 있습니다.
 
@@ -37,7 +37,7 @@ SharePoint 커넥터는 다음과 같은 기본 기능을 지원합니다.
 >
 >SharePoint Connector는 AEM 6.1 서비스 팩 2에서도 지원됩니다. 커넥터가 더 이상 가상 저장소 마운트를 지원하지 않으므로 마운트할 수 없습니다. Java API를 사용하여 Sharepoint 저장소에 액세스하려면 프로젝트에서 Sharepoint 커넥터의 JCR 리포지토리 구현을 사용하십시오.
 >
->SharePoint 서버 및 관련 IT 인프라의 설치, 구성, 관리 및 IT 작업은 이 문서의 범위를 벗어납니다. 이러한 항목에 대한 자세한 내용은 [SharePoint의](https://www.microsoft.com/sharepoint) 공급업체 설명서를 참조하십시오. 커넥터에는 인프라의 이러한 부분이 적절하게 설치, 구성 및 작동되어야 합니다.
+>SharePoint 서버 및 관련 IT 인프라의 설치, 구성, 관리 및 IT 작업은 이 문서의 범위를 벗어납니다. 이러한 항목에 대한 자세한 내용은 [SharePoint](https://www.microsoft.com/sharepoint)의 공급업체 설명서를 참조하십시오. 커넥터에는 인프라의 이러한 부분이 적절하게 설치, 구성 및 작동되어야 합니다.
 
 
 ## 시작하기 {#getting-started}
@@ -46,15 +46,16 @@ SharePoint 커넥터는 다음과 같은 기본 기능을 지원합니다.
 
 * Java 7이 설치되어 있는지 확인합니다.
 * 소프트웨어 배포에서 커넥터 패키지 배포 파일을 다운로드합니다.
-* 올바른 *license.properties* 파일을 *cq-quickstart-6.4.0.jar* 파일이 포함된 디렉토리로 복사합니다.
+* 유효한 *license.properties* 파일을 *cq-quickstart-6.4.0.jar* 파일이 포함된 디렉토리로 복사합니다.
 
 * .jar 파일을 두 번 클릭/탭하여 AEM을 시작하거나 명령줄에서 시작합니다.
 * 패키지 관리자에서 커넥터 패키지를 설치합니다.
 * 커넥터 옵션을 구성합니다.
 
-## SharePoint 커넥터 설치 {#installing-sharepoint-connector}
+## SharePoint 커넥터 {#installing-sharepoint-connector} 설치
 
-커넥터는 설치가 간편한 컨텐츠 패키지입니다. 패키지 관리자를 사용하여 패키지를 설치한 다음 SharePoint 서버 URL 및 기타 구성 옵션을 설정합니다. AEM 저장소에서 SharePoint 내용을 사용할 수 있습니다.
+커넥터는 설치가 간편한 컨텐츠 패키지입니다. 패키지 관리자를 사용하여 패키지를 설치한 다음 SharePoint 서버 URL을 설정합니다
+및 기타 구성 옵션. AEM 저장소에서 SharePoint 내용을 사용할 수 있습니다.
 
 ### 설치 요구 사항 {#installation-requirements}
 
@@ -66,7 +67,7 @@ SharePoint 커넥터는 다음과 같은 기본 기능을 지원합니다.
 * CRX 및 SharePoint 리포지토리에 대한 사용자 자격 증명 및 권한
 * [지원되는 플랫폼](#supported-platforms)
 
-SharePoint 커넥터를 [소프트웨어 배포에서 다운로드할 수 있습니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
+SharePoint 커넥터를 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673)에서 다운로드할 수 있습니다.
 
 ### 지원되는 플랫폼 {#supported-platforms}
 
@@ -85,25 +86,25 @@ SharePoint 커넥터를 [소프트웨어 배포에서 다운로드할 수 있습
 
 >[!NOTE]
 >
->커넥터는 Microsoft에서 공식적으로 지원하는 구성만 지원합니다. MOSS [2010](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) 및 [MOSS 2013](https://technet.microsoft.com/en-us/library/cc262485.aspx) 시스템 요구 사항을 참조하십시오.
+>커넥터는 Microsoft에서 공식적으로 지원하는 구성만 지원합니다. [MOSS 2010](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) 및 [MOSS 2013](https://technet.microsoft.com/en-us/library/cc262485.aspx) 시스템 요구 사항을 참조하십시오.
 
 ### 표준 설치 {#standard-installation}
 
-소프트웨어 배포는 제품 기능, 예제 및 핫픽스를 배포하는 데 사용됩니다. 자세한 내용은 [소프트웨어 배포 설명서를 참조하십시오](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
+소프트웨어 배포는 제품 기능, 예제 및 핫픽스를 배포하는 데 사용됩니다. 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution)를 참조하십시오.
 
 
-#### AEM과 통합 {#integrating-with-aem}
+#### AEM {#integrating-with-aem}과 통합
 
 커넥터 컨텐츠 패키지를 설치하려면
 
 1. Adobe 지원 티켓을 열어 커넥터 기능을 요청합니다.
 1. 패키지를 다운로드할 수 있을 때 다운로드한 다음 AEM 인스턴스용 패키지 관리자를 엽니다.
-1. 패키지 설명 **페이지에서** 설치를 탭/클릭합니다.
-1. 패키지 **설치** 대화 상자에서 설치를 탭/ **클릭합니다**.
+1. 패키지 설명 페이지에서 **설치**&#x200B;를 탭/클릭합니다.
+1. **패키지 설치** 대화 상자에서 **설치**&#x200B;를 탭/클릭합니다.
 
    **참고**:관리자로 로그인되어 있는지 확인합니다.
 
-1. 패키지가 설치되면 닫기를 탭/ **클릭합니다**.
+1. 패키지가 설치되면 **닫기**&#x200B;를 탭/클릭합니다.
 
 ## SharePoint 커넥터 구성 {#configuring-sharepoint-connector}
 
@@ -115,11 +116,11 @@ SharePoint 저장소 JCR을 준수하도록 SharePoint 서버 URL을 설정합�
 
 SharePoint 서버의 URL 및 고급 옵션을 설정하려면 다음 단계를 수행하십시오.
 
-1. OSGi 관리 콘솔로 이동합니다. [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
-1. Day JCR **Connector for Microsoft Sharepoint 번들을** 검색합니다.
+1. OSGi 관리 콘솔로 이동합니다.[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. Microsoft Sharepoint용 **일 JCR 커넥터** 번들을 검색합니다.
 1. 구성 값을 편집합니다.
-1. SharePoint Server URL을 [작업 영역]의 값으로 **설정합니다**.
-1. Tap/click **Save**.
+1. SharePoint Server URL을 **Workspaces**&#x200B;의 값으로 설정합니다.
+1. **저장**&#x200B;을 탭/클릭합니다.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -127,16 +128,19 @@ SharePoint 서버의 URL 및 고급 옵션을 설정하려면 다음 단계를 �
 
 기본적으로 커넥터는 단일 JCR 작업 영역을 노출합니다. 이 작업 영역에 의해 노출되는 SharePoint 서버는 &#39;Sharepoint Server URL&#39; 구성 매개 변수를 통해 설정됩니다.
 
-또한 커넥터를 여러 작업 영역에 맞게 구성할 수 있습니다. 이 경우 각 작업 영역은 작업 영역을 통해 노출되는 각 SharePoint 서버의 URL과 연결됩니다. 작업 영역을 추가하려면 작업 영역 매개 변수에 작업 영역 정의를 추가합니다. 작업 공간 정의 형식은 다음과 같습니다.`<name>`= `<url>` where`<name>` is the name of JCR workspace and`<url>` is the URL of the SharePoint server for that workspace.
+또한 커넥터를 여러 작업 영역에 맞게 구성할 수 있습니다. 이 경우 각 작업 영역은 작업 영역을 통해 노출되는 각 SharePoint 서버의 URL과 연결됩니다. 작업 영역을 추가하려면 작업 영역 매개 변수에 작업 영역 정의를 추가합니다. 작업 공간 정의 형식은 다음과 같습니다.
+`<name>`= `<url>` 여기서
+`<name>`는 JCR 작업 영역의 이름입니다.
+`<url>`은 해당 작업 영역에 대한 SharePoint 서버의 URL입니다.
 
-AEM에서 위 구성 단계와는 한 단계 더 떨어져 있습니다. &#39;com.day.cq.da **m.cq-dam-jcr-connectors&#39; 번들을 허용 목록**&#x200B;합니다.
+AEM에서 위 구성 단계와는 한 단계 더 떨어져 있습니다. &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39; 번들을 허용 목록합니다.
 
 AEM에서 번들을 허용 목록하려면 다음 단계를 수행하십시오.
 
 1. OSGi 관리 콘솔로 이동합니다.http://localhost:4502/system/console/configMgr.
 1. &quot;Apache Sling 로그인 관리 화이트 리스트&quot; 서비스를 검색합니다.
-1. 허용 **목록 무시를 선택합니다**.
-1. 화이트리스트 번들 `com.day.cq.dam.cq-dam-jcr-connectors` 기본값 추가
+1. **허용 목록 무시**&#x200B;를 선택합니다.
+1. 화이트 리스트 번들 기본값에 `com.day.cq.dam.cq-dam-jcr-connectors` 추가
 1. 저장을 클릭합니다.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
@@ -145,9 +149,9 @@ AEM에서 번들을 허용 목록하려면 다음 단계를 수행하십시오.
 >
 >여러 작업 영역을 구성하는 경우 기본 작업 공간 이름 매개 변수에서 기본 작업 영역의 이름을 지정합니다.
 
-인증 관련 매개 변수에 대한 자세한 내용은 [인증을 참조하십시오](/help/sites-administering/sharepoint-connector.md#configuring-authentication).
+인증 관련 매개 변수에 대한 자세한 내용은 [인증](/help/sites-administering/sharepoint-connector.md#configuring-authentication)을 참조하십시오.
 
-### Sharepoint 설정 확인 {#verifying-the-sharepoint-setup}
+### Sharepoint 설정 확인 중 {#verifying-the-sharepoint-setup}
 
 커넥터를 구성한 후 다음을 확인합니다.
 
@@ -159,7 +163,7 @@ AEM에서 번들을 허용 목록하려면 다음 단계를 수행하십시오.
 
 SharePoint 자산을 AEM과 동기화하려면 다음 단계를 수행하십시오.
 
-1. OSGi 관리 콘솔로 이동합니다. [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. OSGi 관리 콘솔로 이동합니다.[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. &quot;기본 DAMAssetSynchronization&quot; 서비스를 검색합니다.
 1. 구성 값을 편집합니다.
 1. SharePoint 사이트에서 액세스할 수 있는 사용자의 사용자 이름과 해당 암호를 설정합니다.
@@ -167,13 +171,13 @@ SharePoint 자산을 AEM과 동기화하려면 다음 단계를 수행하십시�
 
 기본적으로 비활성화된 DAM 동기화 서비스를 활성화합니다.
 
-1. OSGi 웹 콘솔 구성 요소로 이동합니다. [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
+1. OSGi 웹 콘솔 구성 요소로 이동합니다.[http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
 1. &quot;com.day.cq.dam.jcrconnectors.impl.AssetSynchronizationService&quot;를 검색합니다.
 1. 활성화를 클릭합니다.
 
 필요에 따라 다른 동기화 주기 간의 동기화 지연을 구성할 수 있습니다.
 
-1. OSGi 관리 콘솔로 이동합니다. [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+1. OSGi 관리 콘솔로 이동합니다.[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 1. &quot;DAY CQ DAM JCR Connector Asset Synchronization Service&quot;를 검색합니다.
 1. 구성 값을 편집합니다.
 1. 동기화 기간(초)의 값을 설정합니다.
@@ -200,7 +204,7 @@ Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 AEM JCR Co
 
 **Forms 기반 인증 구성**
 
-이동: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+이동:[http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 1. OSGI -> 구성을 클릭합니다.
 1. &quot;Day JCR Connector for Microsoft Sharepoint&quot; 검색
@@ -210,12 +214,12 @@ Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 AEM JCR Co
 
 **기본 인증 구성(Windows)**
 
-1. [토큰 인증](#disable-token-authentication)비활성화
-1. http://localhost:4502/system/console/bundles으로 [이동합니다](http://localhost:4502/system/console/bundles).
+1. [토큰 인증](#disable-token-authentication) 비활성화
+1. [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)으로 이동합니다.
 1. OSGI > 구성을 클릭합니다.
-1. Microsoft Sharepoint **용 Day JCR Connector를 검색합니다**.
+1. Microsoft Sharepoint용 **일 JCR Connector**&#x200B;를 검색합니다.
 1. 클릭 `Edit the configuration values`.
-1. Sharepoint 연결 팩터리의 값을 로 설정합니다 `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
+1. Sharepoint 연결 팩터리의 값을 `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`으로 설정합니다.
 1. **저장**&#x200B;을 클릭합니다.
 
 AEM 및 SharePoint 모두에서 인증된 사용자만 커넥터를 통해 SharePoint 컨텐츠에 액세스할 수 있습니다.
@@ -228,7 +232,7 @@ AEM에서 사용자를 만들려면
 1. 도구를 클릭합니다.
 1. 보안을 클릭합니다.
 1. 사용자를 클릭합니다.
-1. 사용자 **만들기를 클릭합니다**.
+1. **사용자 만들기**&#x200B;를 클릭합니다.
 1. 사용자 ID(SharePoint에 액세스할 수 있는 사용자 이름)를 제공합니다.
 1. 해당 암호를 입력합니다.
 1. 녹색 눈금 기호를 클릭하여 사용자를 만듭니다.
@@ -238,30 +242,30 @@ AEM에서 사용자를 만들려면
 1. 그룹 관리로 이동합니다.
 1. &#39;a&#39; 노드를 클릭합니다.
 1. &#39;관리자&#39;를 클릭합니다.
-1. [찾아보기] 단추 앞에 있는 텍스트 상자에 위에 만든 사용자 ID를 **입력합니다** .
+1. **찾아보기** 단추 앞의 텍스트 상자에 위에 만든 사용자 ID를 입력합니다.
 1. 사용자를 관리 그룹에 추가하려면 녹색 눈금 기호를 클릭합니다.
 
 ### 토큰 인증 비활성화 {#disable-token-authentication}
 
-1. 패키지를 다운로드하여 설치합니다 `basic auth`. `zip` 소프트웨어 배포.
+1. `basic auth` 패키지를 다운로드하고 설치합니다. `zip` 소프트웨어 배포.
 
 1. 빠른 시작을 닫습니다.
-1. \crx-quickstart\repository\repository.xml 파일을 *엽니다*.
-1. 태그 찾기 `<LoginModule class="com.day.crx.core.CRXLoginModule"> ... </LoginModule>.`
-1. 4단계에서 언급한 태그 `<param name="disableTokenAuth" value="true"/>` 내에 태그를 삽입합니다.
+1. *\crx-quickstart\repository\repository.xml* 파일을 엽니다.
+1. `<LoginModule class="com.day.crx.core.CRXLoginModule"> ... </LoginModule>.` 태그 찾기
+1. 4단계에서 언급한 태그 내에 `<param name="disableTokenAuth" value="true"/>` 태그를 삽입합니다.
 1. xml 파일을 저장하고 닫습니다.
 1. QuickStart를 다시 시작하고 자격 증명으로 로그인합니다.
 
 #### SharePoint 서버의 다른 인증 방법 지원 {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-표준 버전에서 커넥터는 표준 IIS **Windows** 인증(기본) 및 Forms 기반 인증(토큰 기반)을 지원합니다. 확장 메커니즘을 통해 [다른 인증 방법을](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) 지원할 수 있습니다.
+표준 버전에서 커넥터는 표준 IIS **Windows** 인증(기본) 및 Forms 기반 인증(토큰 기반)을 지원합니다. 확장 메커니즘을 통해 [기타 인증 메서드](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2)를 지원할 수 있습니다.
 
 다음 단계에서는 표준 인증을 확장하여 SharePoint 서버의 다양한 인증 방법을 지원하는 지침을 제공합니다.
 
-1. 특정 인증 프로세스 `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` 의 클라이언트 측면을 처리하도록 구현합니다.
-1. 구현을 `SharepointConnectionFactory` 조각 호스트가 있는 조각 번들로 설치합니다 `com.day.crx.spi.crx2sharepoint-bundle`.
+1. 특정 인증 프로세스의 클라이언트 측면을 처리하려면 `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory`을 구현합니다.
+1. `SharepointConnectionFactory` 구현을 조각 호스트 `com.day.crx.spi.crx2sharepoint-bundle`이 있는 조각 번들로 설치합니다.
 
-   Maven을 사용하는 경우 프로젝트의 요구 사항에 맞게 다음 구성 `maven-bundle-plugin` 을 조정합니다.
+   Maven을 사용하는 경우 프로젝트의 요구 사항에 따라 `maven-bundle-plugin`의 다음 구성을 조정합니다.
 
    ```xml
               <plugin>
@@ -282,7 +286,7 @@ AEM에서 사용자를 만들려면
               </plugin>
    ```
 
-1. 커넥터 구성에 `SharepointConnectionFactory` 구현을 등록합니다. 커넥터의 구성 창에서 **고급 옵션을 클릭합니다**. Sharepoint **연결 팩토리** 필드에 구현 이름을 지정합니다 `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`.
+1. 커넥터 구성에 `SharepointConnectionFactory` 구현을 등록합니다. 커넥터의 구성 창에서 **고급 옵션**&#x200B;을 클릭합니다. **Sharepoint Connection Factory** 필드에 구현 `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`의 이름을 지정합니다.
 
 1. 커넥터를 다시 시작합니다.
 
