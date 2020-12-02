@@ -12,6 +12,9 @@ discoiquuid: 7f378b94-5233-4358-8d93-a7b3386df00b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+workflow-type: tm+mt
+source-wordcount: '1252'
+ht-degree: 90%
 
 ---
 
@@ -24,27 +27,27 @@ source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
 >
 >티저 구성 요소는 AEM 6.2에서 더 이상 사용되지 않습니다. 대신 [Target 구성 요소](/help/sites-authoring/content-targeting-touch.md)를 사용하십시오.
 
-* **브랜드 페이지는** 웹 사이트의 캠페인 섹션에 저장됩니다. 브랜드에는 개별 캠페인이 포함되어 있습니다.
-* **캠페인 페이지는** 웹 사이트의 캠페인 섹션에 저장됩니다. 각 캠페인에는 개별 페이지가 있고, 개별 페이지에 티저 정의가 있습니다. 또한 컨테이너 또는 개요 페이지는 개별 티저 페이지에 대한 특정 정보 및 통계를 포함합니다.
+* **브랜드** 페이지는 웹 사이트의 캠페인 섹션에 저장됩니다. 브랜드에는 개별 캠페인이 포함되어 있습니다.
+* **캠페인** 페이지는 웹 사이트의 캠페인 섹션에 저장됩니다. 각 캠페인에는 개별 페이지가 있고, 개별 페이지에 티저 정의가 있습니다. 또한 컨테이너 또는 개요 페이지는 개별 티저 페이지에 대한 특정 정보 및 통계를 포함합니다.
 
 AEM의 티저는 여러 부분으로 구성됩니다.
 
-* **티저 페이지는** 해당 캠페인 페이지 아래에 저장되고 각 특정 캠페인에 사용할 수 있는 티저 단락의 정의를 포함합니다. 이러한 정의는 티저 단락을 표시할 때 사용되며 컨텐츠 변형, 변형을 선택하는 데 사용할 세그먼트 및 증폭 인수를 포함합니다.
-* **티저 구성 요소**&#x200B;는 기본적으로 제공되며 컨텐츠 페이지에 특정 티저 단락의 인스턴스를 만들 수 있게 합니다. 사이드킥에서 티저 구성 요소를 드래그한 다음 티저 정의를 지정하여 티저 단락을 직접 만들 수 있습니다. **** 참고:Teaser 구성 요소는 AEM 6.2에서 더 이상 사용되지 않습니다.Target 구성 [요소를](/help/sites-authoring/content-targeting-touch.md) 대신 사용하십시오.
+* **Teaser** 페이지는 해당 캠페인 페이지에 저장되고 각 특정 캠페인에 사용할 수 있는 Teaser 단락의 정의를 포함합니다. 이러한 정의는 티저 단락을 표시할 때 사용되며 컨텐츠 변형, 변형을 선택하는 데 사용할 세그먼트 및 증폭 인수를 포함합니다.
+* **티저 구성 요소**&#x200B;는 기본적으로 제공되며 컨텐츠 페이지에 특정 티저 단락의 인스턴스를 만들 수 있게 합니다. 사이드킥에서 티저 구성 요소를 드래그한 다음 티저 정의를 지정하여 티저 단락을 직접 만들 수 있습니다. **참고: 티저 구성 요소** 는 AEM 6.2에서 더 이상 사용되지 않습니다. 대신  [Target 구성 ](/help/sites-authoring/content-targeting-touch.md) 요소를 사용하십시오.
 * **티저 단락**&#x200B;은 컨텐츠 페이지에 포함된 티저의 실제 인스턴스입니다. 이 단락은 특정 방문자 세그먼트를 관심사에 맞는 컨텐츠로 유도합니다.
 * 특정 방문자 세그먼트를 위한 맞춤 캠페인 컨텐츠를 포함하는 페이지입니다. 일반적으로 티저 단락은 방문자를 이러한 페이지로 유도합니다.
 
 ## 전략 {#strategies}
 
-When adding a teaser paragraph to a page you need to define the **Strategy**.
+페이지에 Teaser 단락을 추가할 때는 **Strategy**&#x200B;를 정의해야 합니다.
 
 이는 여러 티저에 지정된 세그먼트가 모두 성공적으로 해결되어 선택이 가능해질 수 있기 때문입니다. 이러한 경우에 **전략**&#x200B;에 지정된 추가 기준을 통해 표시할 티저가 선택됩니다.
 
 * **Clickstream 점수**: 방문자의 클라이언트 컨텍스트(방문자가 각 태그가 포함된 페이지를 몇 번 클릭했는지 표시)에 포함된 태그 및 관련 태그 조회수를 기준으로 합니다. 티저 페이지에 정의된 태그의 조회수가 비교됩니다.
-* **임의**, &quot;임의&quot; 선택페이지에 대해 생성된 무작위 인수를 사용합니다. [클라이언트 컨텍스트에서](/help/sites-administering/client-context.md)볼 수 있습니다.
-* **먼저** 해결된 세그먼트 목록에서 이 순서는 캠페인 컨테이너 페이지에 포함된 티저 순서와 같습니다.
+* **임의**, &quot;임의&quot; 선택을 위한 경우;페이지에 대해 생성된 무작위 인수를 사용합니다. 클라이언트 컨텍스트에서 확인할 수  [있습니다](/help/sites-administering/client-context.md).
+* **해결된** 세그먼트 목록을 먼저 확인하십시오. 이 순서는 캠페인 컨테이너 페이지에 포함된 티저 순서와 같습니다.
 
-The [Boost Factor](/help/sites-administering/campaign-segmentation.md#boost-factor) of the segment also has an impact on the selection. 이 인수는 세그먼트 정의에 추가되어 상대적인 선택 가능성을 높이거나 낮추는 가중치입니다.
+세그먼트의 [증폭 인수](/help/sites-administering/campaign-segmentation.md#boost-factor)도 선택에 영향을 줍니다. 이 인수는 세그먼트 정의에 추가되어 상대적인 선택 가능성을 높이거나 낮추는 가중치입니다.
 
 다양한 선택 기준의 처리와 상호 관계를 알기 쉽게 예제로 설명하겠습니다. 이 방법을 티저가 의도한 대상에게 도달하는지 확인하는 데 사용할 수도 있습니다.
 
@@ -71,18 +74,18 @@ The [Boost Factor](/help/sites-administering/campaign-segmentation.md#boost-fact
   </tr>
   <tr>
    <td>C1</td>
-   <td>T1</td>
+   <td>T3</td>
    <td>S1, S2</td>
    <td>비즈니스, 마케팅</td>
   </tr>
   <tr>
-   <td>C1</td>
+   <td>C3</td>
    <td>T2 </td>
    <td>S1</td>
    <td><br /> </td>
   </tr>
   <tr>
-   <td>C1 </td>
+   <td>C3 </td>
    <td>T3</td>
    <td>, S3, S4</td>
    <td><br /> </td>
@@ -100,7 +103,7 @@ The [Boost Factor](/help/sites-administering/campaign-segmentation.md#boost-fact
    <td>마케팅</td>
   </tr>
   <tr>
-   <td>C1 </td>
+   <td>C3 </td>
    <td>T6</td>
    <td>S6</td>
    <td>비즈니스<br /> </td>
@@ -110,7 +113,7 @@ The [Boost Factor](/help/sites-administering/campaign-segmentation.md#boost-fact
 
 다음과 같은 방문자에게 적용합니다.
 
-* **S1**, **S2** 및 **S6** 문제 해결 성공
+* **S1**,  **S2** 와  **S6** 을 성공적으로해결
 
 * **마케팅** 태그의 조회수 3회
 * **비즈니스** 태그의 조회수 6회
@@ -144,7 +147,7 @@ The [Boost Factor](/help/sites-administering/campaign-segmentation.md#boost-fact
    <td>9</td>
   </tr>
   <tr>
-   <td>C1</td>
+   <td>C3</td>
    <td>T2 </td>
    <td>S1</td>
    <td><br /> </td>
@@ -153,7 +156,7 @@ The [Boost Factor](/help/sites-administering/campaign-segmentation.md#boost-fact
    <td><br /> </td>
   </tr>
   <tr>
-   <td>C1 </td>
+   <td>C3 </td>
    <td>T3</td>
    <td>, S3, S4</td>
    <td><br /> </td>
@@ -162,7 +165,7 @@ The [Boost Factor](/help/sites-administering/campaign-segmentation.md#boost-fact
    <td><br /> </td>
   </tr>
   <tr>
-   <td>C1 </td>
+   <td>C3 </td>
    <td>T4</td>
    <td>, S2, S5</td>
    <td><br /> </td>
@@ -171,21 +174,21 @@ The [Boost Factor](/help/sites-administering/campaign-segmentation.md#boost-fact
    <td><br /> </td>
   </tr>
   <tr>
-   <td>C1 </td>
+   <td>C3 </td>
    <td>T5</td>
    <td>S1, S2, S6</td>
    <td>마케팅</td>
    <td>예</td>
-   <td>100</td>
+   <td>100년</td>
    <td>3</td>
   </tr>
   <tr>
-   <td>C1 </td>
+   <td>C3 </td>
    <td>T6</td>
    <td>S6</td>
    <td>비즈니스</td>
    <td>예</td>
-   <td>100</td>
+   <td>100년</td>
    <td>6 </td>
   </tr>
  </tbody>
@@ -245,7 +248,7 @@ The [Boost Factor](/help/sites-administering/campaign-segmentation.md#boost-fact
 
    * **캠페인 경로** 개별 티저 페이지를 포함하는 캠페인 페이지의 경로이며, 세그먼트에 따라 표시되는 티저가 정확히 결정됩니다.
 
-   * **[전략](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**여러 세그먼트가 성공적으로 해결된 경우에 사용할 선택 방법입니다.
+   * **[전략](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)** 여러 세그먼트가 성공적으로 해결된 경우에 사용할 선택 방법입니다.
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
 1. **확인**&#x200B;을 클릭하여 저장합니다. 티저에 대해 설정한 세그먼트와 현재 로그인된 사용자의 프로필에 따라, 적절한 컨텐츠가 표시됩니다.
