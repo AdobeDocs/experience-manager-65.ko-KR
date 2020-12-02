@@ -8,6 +8,9 @@ discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 7bf6657a8fd7677ab15e0f91324a065b684e2f92
+workflow-type: tm+mt
+source-wordcount: '1801'
+ht-degree: 77%
 
 ---
 
@@ -54,7 +57,7 @@ WYSIWYG 편집 대화 상자는 광범위한 기능을 제공합니다.
 
 ## 리치 텍스트 편집기의 기능 {#features-of-the-rich-text-editor}
 
-The Rich Text Editor provides a range of featues, these [depend on the configuration](/help/sites-administering/rich-text-editor.md) of the individual component. The features are available for both the touch-optimized and classic UI.
+리치 텍스트 편집기는 다양한 기능을 제공합니다. 이러한 [은 개별 구성 요소의 구성](/help/sites-administering/rich-text-editor.md)에 따라 다릅니다.이 기능은 터치에 적합한 UI와 클래식 UI 모두에서 사용할 수 있습니다.
 
 ### 기본 문자 형식 {#basic-character-formats}
 
@@ -72,9 +75,9 @@ The Rich Text Editor provides a range of featues, these [depend on the configura
 
 모든 형식은 전환 가능하므로 다시 선택하면 형식이 제거됩니다.
 
-### 사전 정의된 스타일 및 형식 {#predefined-styles-and-formats}
+### 사전 정의된 스타일 및 형식  {#predefined-styles-and-formats}
 
-![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylespard](assets/cq55_rte_stylesparagraph.png)
 
 설치 환경에 사전 정의된 스타일과 형식이 포함될 수 있습니다. **[!UICONTROL 스타일]** 및 **[!UICONTROL 서식]** 드롭다운 상자의 스타일과 서식을 선택한 텍스트에 적용할 수 있습니다.
 
@@ -94,7 +97,7 @@ The Rich Text Editor provides a range of featues, these [depend on the configura
 >
 >스타일이 적용된 텍스트를 다시 선택하면 아이콘이 비활성화되므로 주의하시기 바랍니다.
 
-### 잘라내기, 복사, 붙여넣기 {#cut-copy-paste}
+### 잘라내기, 복사, 붙여넣기  {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
@@ -102,12 +105,12 @@ The Rich Text Editor provides a range of featues, these [depend on the configura
 
 * 잘라내기(Ctrl-X)
 * 복사(Ctrl-C)
-* Paste
-This is the default paste mechanism (Ctrl-V) for the component; when installed out-of-the-box this is configured to be [!UICONTROL Paste from Word].
+* 붙여넣기
+구성 요소의 기본 붙여넣기 메커니즘(Ctrl-V)입니다.기본적으로 설치되면 [!UICONTROL Word]에서 붙여넣기로 구성됩니다.
 
 * 텍스트로 붙여넣기:스타일과 서식을 모두 제거하고 일반 텍스트만 붙여넣습니다.
 
-* Word에서 붙여넣기:이렇게 하면 컨텐츠가 HTML로 붙여넣고 필요한 서식을 다시 지정합니다.
+* Word에서 붙여넣기:이렇게 하면 컨텐츠가 HTML로 붙여집니다(일부 필요한 서식 다시 지정).
 
 ### 실행 취소, 재실행 {#undo-redo}
 
@@ -167,19 +170,19 @@ AEM은 현재 구성 요소의 마지막 50개 작업 기록을 시간 순서대
 
 * URI에 직접 입력
 * 사이트 맵을 사용하여 웹 사이트 내의 페이지 선택
-* Enter the URI, then append the target anchor; e.g. `www.TargetUri.org#AnchorName`
-* Enter an anchor only (to reference &quot;the current page&quot;); For example, `#anchor`
+* URI를 입력한 다음 대상 앵커를 추가합니다.예:`www.TargetUri.org#AnchorName`
+* 기준만 입력(&quot;현재 페이지&quot;를 참조하려면);예: `#anchor`
 * Content Finder에서 페이지를 검색한 다음 페이지 아이콘을 하이퍼링크 대화 상자로 드래그하여 놓기
 
 >[!NOTE]
 >
->URI 앞에 설치 환경에 구성된 프로토콜을 추가할 수도 있습니다. In a standard installation these are `https://`, `ftp://`, and `mailto:`. 설치 환경에 구성되지 않은 프로토콜은 거부되며 오류로 표시됩니다.
+>URI 앞에 설치 환경에 구성된 프로토콜을 추가할 수도 있습니다. 표준 설치에서는 `https://`, `ftp://` 및 `mailto:`입니다. 설치 환경에 구성되지 않은 프로토콜은 거부되며 오류로 표시됩니다.
 
 링크를 끊으려면 링크 텍스트 안에 커서를 두고 [!UICONTROL 링크 해제] 아이콘을 클릭합니다.
 
 ![](do-not-localize/chlimage_1-10.png)
 
-### 앵커 {#anchors}
+### 앵커  {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -247,7 +250,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
    >[!NOTE]
    >
-   >Although tables are available in the RTE, it is recommended to use the **Table** component when creating tables.
+   >RTE에서는 표를 사용할 수 있지만 표를 만들 때는 **Table** 구성 요소를 사용하는 것이 좋습니다.
 
 **텍스트** 및 **표** 구성 요소 모두 표 안에서 컨텍스트 메뉴(일반적으로 마우스 오른쪽 단추)를 클릭하여 표 기능을 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
@@ -289,11 +292,11 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 >[!NOTE]
 >
->너비와 높이와 같은 일부 셀 속성은 픽셀 또는 백분율로 정의할 수 있습니다.
+>폭 및 높이와 같은 일부 셀 속성은 픽셀 또는 백분율로 정의할 수 있습니다.
 
 >[!CAUTION]
 >
->표의 너비를 정의하는 것이 좋습니다.
+>Adobe에서는 표의 너비를 정의하는 것이 좋습니다.
 
 #### 셀 속성 {#cell-properties}
 
@@ -306,9 +309,9 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 * **너비**
 * **높이**
 * **수평 정렬** - 왼쪽, 가운데 또는 오른쪽
-* **수직 정렬** - 위쪽, 중간, 아래쪽 또는 기준선
-* **셀 유형**- 데이터 또는 헤더
-* **** 적용 대상:단일 셀, 전체 행, 전체 열
+* **세로 정렬**  - 위쪽, 중간, 아래쪽 또는 기준선
+* **셀 유형** - 데이터 또는 헤더
+* **적용 대상:** 단일 셀, 전체 행, 전체 열
 
 #### 행 추가 또는 삭제 {#add-or-delete-rows}
 
@@ -318,7 +321,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 현재 행을 삭제할 수도 있습니다.
 
-#### 열 추가 또는 삭제 {#add-or-delete-columns}
+#### 열 추가 또는 삭제  {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
@@ -326,7 +329,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 현재 열을 삭제할 수도 있습니다.
 
-#### 전체 행 또는 열 선택 {#selecting-entire-rows-or-columns}
+#### 전체 행 또는 열 선택  {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -334,12 +337,12 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 #### 셀 병합 {#merge-cells}
 
-![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) cq55_ ![rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * 셀 그룹을 선택한 경우 여러 셀을 하나로 병합할 수 있습니다.
 * 셀을 하나만 선택한 경우 오른쪽이나 아래쪽에 있는 셀과 병합할 수 있습니다.
 
-#### 셀 분할 {#split-cells}
+#### 셀 분할  {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
@@ -348,7 +351,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 * 셀을 가로로 분할하면 현재 열에서 현재 셀 오른쪽에 새로운 셀이 생성됩니다.
 * 셀을 세로로 분할하면 현재 행에서 현재 셀 아래에 새로운 셀이 생성됩니다.
 
-#### 중첩된 표 만들기 {#creating-nested-tables}
+#### 중첩된 표 만들기  {#creating-nested-tables}
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -366,7 +369,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 ![cq55_rte_removecable](assets/cq55_rte_removetable.png)
 
-텍스트 구성 요소 내에서 표를 제거하려면 이 옵션을 **[!UICONTROL 사용합니다]** .
+**[!UICONTROL Text]** 구성 요소 내에서 표를 제거하려면 옵션을 사용합니다.
 
 ### 특수 문자 {#special-characters}
 
@@ -378,7 +381,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 문자를 마우스로 가리키면 확대된 버전이 표시되고, 클릭하면 텍스트의 현재 위치에 문자가 삽입됩니다.
 
-### 소스 편집 모드 {#source-editing-mode}
+### 소스 편집 모드  {#source-editing-mode}
 
 ![](do-not-localize/cq55_rte_sourceedit.png)
 
