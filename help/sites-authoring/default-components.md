@@ -1,8 +1,8 @@
 ---
 title: 구성 요소
 seo-title: 구성 요소
-description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다.
-seo-description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다.
+description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다
+seo-description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +41,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 * [컨텐츠 편집 - 전체 화면 모드](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-For further information about adding components to a page see the article [Editing Page Content](/help/sites-authoring/editing-content.md).
+페이지에 구성 요소를 추가하는 방법에 대한 자세한 내용은 [페이지 컨텐츠 편집](/help/sites-authoring/editing-content.md) 문서를 참조하십시오.
 구성 요소는 구성 요소 그룹이라는 다양한 카테고리에 따라 정렬됩니다. 그러한 구성 요소 그룹의 예는 다음과 같습니다.
 
 * **We.Retail**: [We.Retail 참조 구현](/help/sites-developing/we-retail.md)에서 사용할 수 있게 프록시된 코어 구성 요소를 포함합니다.
@@ -55,16 +58,16 @@ For further information about adding components to a page see the article [Editi
 
 다음 페이지에서는 구성 요소에 대한 일부 추가 중요한 정보에 대한 링크를 제공합니다.
 
-* [코어 구성 요소](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) - 페이지를 작성하는 데 필요한 코어 구성 요소는 컨텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
+* [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) - 페이지를 작성하는 데 필요한 코어 구성 요소는 컨텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
-* [커뮤니티](/help/communities/author-communities.md) - 구성 요소는 웹 사이트에 포럼 및 댓글과 같은 대화형 기능을 제공합니다. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
+* [커뮤니티](/help/communities/author-communities.md) - 구성 요소는 웹 사이트에 포럼 및 댓글과 같은 대화형 기능을 제공합니다. 이러한 구성 요소 중 대부분은 [커뮤니티 사이트](/help/communities/overview.md)가 생성될 때 포함됩니다.
 
-* [eCommerce](/help/sites-administering/ecommerce.md) - AEM 내의 eCommerce 기능에도 다양한 구성 요소가 포함되어 있습니다.실제 사용은 사용되는 상거래 엔진에 따라 달라질 수 있습니다.
+* [eCommerce](/help/sites-administering/ecommerce.md)  - AEM 내의 eCommerce 기능에도 다양한 구성 요소가 포함되어 있습니다.실제 사용은 사용되는 상거래 엔진에 따라 달라질 수 있습니다.
 
 ### 구성 요소 구성 {#configuring-components}
 
 작성자가 표준 설치에서 액세스할 수 있는 구성 요소 외에도 다양한 기타 구성 요소를 사용할 수 있습니다.
 
-* If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-authoring/templates.md) enable/disable these and edit parameters for specific components.
+* 페이지가 권장되는 편집 가능한 현대적 템플릿을 기반으로 하는 경우 [템플릿을 편집](/help/sites-authoring/templates.md)하여 특정 구성 요소에 대해 이러한 템플릿을 활성화/비활성화하고 매개 변수를 편집할 수 있습니다.
 * 페이지가 정적 템플릿을 기반으로 하는 경우 [디자인 모드](/help/sites-authoring/default-components-designmode.md#enable-disable-components)를 사용하여 특정 구성 요소에 대해 이러한 페이지를 활성화/비활성화하고 매개 변수를 편집할 수 있습니다.
 
