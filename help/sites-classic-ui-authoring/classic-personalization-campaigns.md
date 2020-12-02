@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 94%
 
 ---
 
@@ -34,11 +37,16 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 캠페인 관리는 다음과 같은 다양한 요소로 구성되어 있습니다.
 
 * **브랜드**
-In AEM, brands are the top level unit and form a collection of **Campaigns**.
+AEM에서 브랜드는 최상위 단위이며 
+**캠페인**.
 
-* **캠페인** 캠페인은 개별 **경험**&#x200B;의 컬렉션입니다.
+* **캠페인**
+캠페인은 개별 
+**경험**.
 
-* **경험** 핵심 컨텐츠는 **터치포인트**&#x200B;에서 방문자에게 제공되는 다양한 경험을 형성합니다. 다음과 같은 몇 가지 유형의 경험을 사용할 수 있습니다.
+* **경험**
+집중된 컨텐츠는 
+**터치포인트**. 다음과 같은 몇 가지 유형의 경험을 사용할 수 있습니다.
 
    * **Teaser**
       [Teaser 페이지/단락](#teasers)은 특정 방문자 **세그먼트**&#x200B;를 그들의 관심사에 초점을 맞춘 컨텐트로 유도하는 데 사용됩니다.
@@ -47,6 +55,7 @@ In AEM, brands are the top level unit and form a collection of **Campaigns**.
 
       * 방문자가 선택할 수 있는 다양한 옵션을 제공합니다.
       * 특정 방문자 세그먼트를 기반으로 하나의 티저 단락만 표시합니다. 예를 들어 방문자 연령에 따라 티저 단락이 표시될 수 있습니다.
+
       일반적으로 티저 페이지는 특정 기간 동안만 일시적으로 작동하며, 기간이 지나면 다음 티저 페이지로 대체됩니다.
 
    * **뉴스레터**
