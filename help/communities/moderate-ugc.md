@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# 커뮤니티 콘텐츠 중재 {#moderating-community-content}
+# 커뮤니티 콘텐츠 중재{#moderating-community-content}
 
 ## 개요 {#overview}
 
@@ -40,7 +40,7 @@ UGC를 중재하는 것은 긍정적 기여도를 인정하고 부정적인 것(
 
 * [일괄 중재 콘솔](moderation.md)
 
-   중재 콘솔은 공개 환경의 관리자 및 [커뮤니티 중재자와](/help/communities/users.md) 작성자 환경의 관리자가 액세스할 수 있습니다. 이는 커뮤니티 콘텐츠가 [일반 스토어에 저장되어 있을 때 가능합니다](/help/communities/working-with-srp.md).
+   중재 콘솔은 관리자와 공용 환경의 [커뮤니티 중재자](/help/communities/users.md)뿐만 아니라 작성 환경의 관리자가 액세스할 수 있습니다. 이는 커뮤니티 콘텐츠가 [일반 스토어](/help/communities/working-with-srp.md)에 저장되어 있는 경우에 가능합니다.
 
 * [컨텍스트 내 중재](in-context.md)
 
@@ -52,11 +52,11 @@ UGC를 중재하는 것은 긍정적 기여도를 인정하고 부정적인 것(
 
 * `Admin`
 
-   커뮤니티 관리자 [그룹의 구성원인](users.md) 사용자입니다.
+   [community-administrators](users.md) 그룹의 구성원인 사용자
 
 * `Moderator`
 
-   커뮤니티 중재자 [그룹(](users.md#publishenvironmentusersandgroups) 중재자 권한 [](in-context.md#moderatorpermissions)포함)의 구성원입니다.
+   [커뮤니티 중재자](users.md#publishenvironmentusersandgroups) 그룹의 구성원으로서 [중재자 권한](in-context.md#moderatorpermissions)이 있습니다.
 
 * `Creator`
 
@@ -79,7 +79,7 @@ UGC를 중재하는 것은 긍정적 기여도를 인정하고 부정적인 것(
    <td><strong>작성자</strong></td>
    <td><strong>구성원</strong></td>
    <td><strong>방문자</strong></td>
-   <td><strong>이벤트가<br /> 트리거됨</strong></td>
+   <td><strong>이벤트<br /> 트리거됨</strong></td>
    <td><strong>사전 조정</strong></td>
   </tr>
   <tr>
@@ -113,7 +113,7 @@ UGC를 중재하는 것은 긍정적 기여도를 인정하고 부정적인 것(
    <td> </td>
   </tr>
   <tr>
-   <td><strong>닫기/다시<br /> 열기</strong></td>
+   <td><strong>닫기/<br /> 다시 열기</strong></td>
    <td>X</td>
    <td>X</td>
    <td> </td>
@@ -123,7 +123,7 @@ UGC를 중재하는 것은 긍정적 기여도를 인정하고 부정적인 것(
    <td>X<br /> </td>
   </tr>
   <tr>
-   <td><strong>플래그 지정/<br /> 플래그 해제</strong></td>
+   <td><strong>플래그/<br /> 플래그 해제</strong></td>
    <td>X</td>
    <td>X</td>
    <td> </td>
@@ -145,7 +145,7 @@ UGC를 중재하는 것은 긍정적 기여도를 인정하고 부정적인 것(
  </tbody>
 </table>
 
-### 편집/삭제 {#edit-delete}
+### 편집 / 삭제 {#edit-delete}
 
 게시물이 만들어지면 작성자, 관리자 또는 커뮤니티 중재자가 게시물을 편집하거나 삭제할 수 있습니다.
 
@@ -165,13 +165,13 @@ UGC가 삭제되면 저장소에서 제거되고 복구할 수 없습니다.
 
 ![pasugc](assets/pasteugc.png)
 
-![pasteugc1](assets/pasteugc1.png)
+![pasugc1](assets/pasteugc1.png)
 
 ### 거부 {#deny}
 
 중재자는 UGC가 게시된 사이트에 계속 표시되도록 허용하지 않을 수 있습니다. 관리자 및 커뮤니티 중재자에게는 게시물을 계속 사용할 수 있으며 스팸으로 주석을 달 수 있습니다.
 
-### 닫기/다시 열기 {#close-reopen}
+### {#close-reopen} 닫기/다시 열기
 
 닫기 동작은 전체 대화 스레드(포럼 주제 또는 초기 주석)에 적용되며 이후의 모든 게시물 또는 답글이 포함됩니다.
 
@@ -181,7 +181,7 @@ UGC가 삭제되면 저장소에서 제거되고 복구할 수 없습니다.
 
 닫기/다시 열기 작업은 관리자 또는 커뮤니티 중재자가 수행할 수 있습니다.
 
-### 플래그 지정/플래그 해제 {#flag-unflag}
+### 플래그 / 플래그 해제 {#flag-unflag}
 
 플래그 지정은 컨텐츠 작성자를 제외한 모든 로그인한 구성원이 게시물의 컨텐츠에 문제가 있음을 나타내는 수단입니다. 플래그가 지정되면 동일한 구성원이 컨텐츠에 플래그를 해제할 수 있는 플래그 해제 아이콘이 표시됩니다.
 
@@ -197,11 +197,13 @@ UGC가 삭제되면 저장소에서 제거되고 복구할 수 없습니다.
 
 ### 사전 중재 {#premoderation}
 
-UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시물은 게시된 사이트에 표시되지 않습니다. 커뮤니티 사이트를 만드는 동안 [컨텐츠가 미리 중재됨](/help/communities/sites-console.md)상자를 [선택하면](sites-console.md#moderation) 전체 사이트에 대한 사전 조정을 사용할 수 있습니다. 구성 요소를 페이지에 배치하면 편집을 지원하는 구성 요소를 편집 대화 상자의 설정을 사용하여 사전 중재하도록 구성할 수 있습니다.
+UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시물은 게시된 사이트에 표시되지 않습니다. [커뮤니티 사이트](/help/communities/sites-console.md)를 만드는 동안 [컨텐츠가 프리중재됨](sites-console.md#moderation)을 선택하면 전체 사이트에 대한 사전 중재를 활성화합니다. 구성 요소를 페이지에 배치하면 편집을 지원하는 구성 요소를 편집 대화 상자의 설정을 사용하여 사전 중재하도록 구성할 수 있습니다.
 
-* [사용자 중재](comments.md) > [사전 중재](reviews.md)**** 의 주석 **[!UICONTROL 및]**&#x200B;검토.
+* [](comments.md) 사용자 중재  [](reviews.md)
+>  **[!UICONTROL 사전 중재]** 에서  **[!UICONTROL 주석]** 및검토.
 
-* [포럼](/help/communities/forum.md)아이디어 [, QN,](/help/communities/ideation-feature.md)일정 [은 SettingsSettings의](/help/communities/working-with-qna.md)A, and calendar [](/help/communities/calendar.md)**** ****> FacebookModeratedInDesign.
+* [포럼](/help/communities/forum.md),  [아이디어](/help/communities/ideation-feature.md),  [qnA 및 ](/help/communities/working-with-qna.md)Arin Settings [](/help/communities/calendar.md)
+ ****   ****&#x200B;조정Facebook을 참조하십시오.
 
 ### 스팸 감지 {#spam-detection}
 
@@ -209,7 +211,7 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시물
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-그러나 기본 스팸 단어를 사용자 정의하거나 확장하려면 [오버레이](/help/communities/overlay-comments.md)방식으로 기본 스팸 단어 구조를 따라 /apps 디렉토리에 단어 세트를 만듭니다.
+그러나 기본 스팸 단어를 사용자 정의하거나 확장하려면 [overlay](/help/communities/overlay-comments.md)을 통해 기본 스팸 단어 구조에 따라 /apps 디렉토리에 단어 집합을 만듭니다.
 
 스팸 단어가 포함된 모든 컨텐츠 유형(예: 블로그, 포럼 및 댓글)에 걸쳐 사용자가 생성한 게시물은 게시물 위의 &quot;이 게시물이 스팸으로 분류됨&quot;이라는 텍스트로 표시됩니다.
 
@@ -219,10 +221,10 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시물
 
 스팸 감지 엔진을 활성화하려면 다음 단계를 수행하십시오.
 
-1. 로 이동하여 [웹](https://localhost:4502/system/console/configMgr)콘솔을 엽니다 `/system/console/configMgr`.
+1. `/system/console/configMgr`으로 이동하여 [웹 콘솔](https://localhost:4502/system/console/configMgr)을 엽니다.
 
-1. AEM Communities **자동 중재** 구성을 찾아 편집합니다.
-1. SpamProcess **[!UICONTROL 항목을]** 추가합니다.
+1. **AEM Communities 자동 중재** 구성을 찾아 편집합니다.
+1. **[!UICONTROL SpamProcess]** 항목을 추가합니다.
 
 ![주파](assets/spamprocess.png)
 
@@ -232,9 +234,9 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시물
 
 ### 감정 {#sentiment}
 
-감정은 게시물(UGC)에 있는 긍정 및 부정 키워드([감시단어](#configuringwatchwords))의 수를 기반으로 계산됩니다.
+감정은 게시물(UGC)에 있는 긍정적 및 부정적 키워드([watchwords](#configuringwatchwords))의 수를 기반으로 계산됩니다.
 
-센티멘트 분석은 사전 구성된 규칙 세트를 사용하고 UGC의 센티멘트를 계산합니다. 기본 규칙은 다음 위치에 있습니다. `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+센티멘트 분석은 사전 구성된 규칙 세트를 사용하고 UGC의 센티멘트를 계산합니다. 기본 규칙은 다음 위치에 있습니다.`/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
 규칙이 생성하는 값은 1(모두 음수, 긍정적인 단어 없음)부터 10(모두 양수, 음수가 없음)까지입니다. 감정 값 5는 중립 센티멘트이며 기본값입니다.
 
@@ -249,25 +251,25 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시물
 
 분석하면 센티멘트가 UGC와 함께 저장됩니다.
 
-벌크 중재 콘솔에서 [](/help/communities/moderation.md)센티멘트가 부정, 중립 또는 긍정적인지 여부를 기준으로 UGC를 필터링하고 볼 수 있습니다.
+[벌크 중재 콘솔](/help/communities/moderation.md)에서 센티멘트가 부정, 중립 또는 긍정인지 여부를 기준으로 UGC를 필터링하고 볼 수 있습니다.
 
 #### Watchwords {#watchwords}
 
-AEM 커뮤니티는 *센티멘트를 평가하는 프로세스의 한 단계로서 워치워드 분석기를* 제공합니다 [](#sentiment). 감시자가 제공하는 센티멘트 값에 대한 기여도는 게시된 컨텐츠에 사용된 네거티브 및 긍정적인 감시어와 금지된 단어를 비교한 것입니다.
+AEM communities는 [센티멘트](#sentiment)를 평가하는 프로세스의 한 단계로 *watchword analyzer*&#x200B;를 제공합니다. 감시자가 제공하는 센티멘트 값에 대한 기여도는 게시된 컨텐츠에 사용된 네거티브 및 긍정적인 감시어와 금지된 단어를 비교한 것입니다.
 
-#### 센티멘트 및 감시자 구성 {#configure-sentiment-and-watchwords}
+#### 감정 및 감시자 {#configure-sentiment-and-watchwords} 구성
 
 센티멘트 규칙일 수 있으므로 긍정 및 부정 감시자 목록을 사용자 지정할 수 있습니다.
 
-기본 감시어 목록은 기본값과 유사하거나 단어 목록으로 OSGi 서비스를 구성하여 기본값을 대체하여 응답성의 노드 속성으로 입력할 수 `sentimentprocess.name` 있습니다.
+기본 감시어 목록은 기본값과 유사하거나 단어 목록으로 OSGi 서비스 `sentimentprocess.name`을 구성하여 기본값을 재정의하여 응답의 노드의 속성으로 입력할 수 있습니다.
 
-센티멘트 프로세스.name **** 은 사용자 지정 센티멘트 규칙의 위치를 참조하도록 수정할 수도 있습니다.
+**센티멘트프로세스.name**&#x200B;도 사용자 지정 센티멘트 규칙의 위치를 참조하도록 수정할 수 있습니다.
 
 센티멘트 및 감시어를 구성하려면:
 
 * 관리자로 작성자 인스턴스에 로그인합니다.
-* 웹 [콘솔을 엽니다](https://localhost:4502/system/console/configMgr).
-* 위치 `sentimentprocess.name`확인
+* [웹 콘솔](https://localhost:4502/system/console/configMgr)을 엽니다.
+* `sentimentprocess.name`을(를) 찾습니다.
 * 편집 모드에서 열 구성을 선택합니다.
 
 ![센티멘트프로세스](assets/sentimentprocess.png)
@@ -282,19 +284,19 @@ AEM 커뮤니티는 *센티멘트를 평가하는 프로세스의 한 단계로�
 
 * **감시 단어 노드에 대한 명시적 경로**
 
-   기본 경계 단어를 지정하는 기본 `positive` 및 `negative` 속성이 포함된 노드의 저장소 위치입니다. 기본값은 `/libs/settings/community/watchwords/default`입니다.
+   기본 감시어를 지정하는 기본 `positive` 및 `negative` 속성이 포함된 노드의 저장소 위치입니다. 기본값은 `/libs/settings/community/watchwords/default`입니다.
 
 * **감정 규칙**
 
-   긍정 및 부정 감시자를 기반으로 센티멘트를 계산하기 위한 규칙의 저장소 위치입니다. 기본값은 `/libs/cq/workflow/components/workflow/social/sentiments/rules` 입니다(하지만 더 이상 관련된 워크플로가 없습니다.).
+   긍정 및 부정 감시자를 기반으로 센티멘트를 계산하기 위한 규칙의 저장소 위치입니다. 기본값은 `/libs/cq/workflow/components/workflow/social/sentiments/rules`입니다. 그러나 더 이상 관련된 워크플로가 없습니다.
 
-기본 감시자에 대한 사용자 정의 항목(설정된 경우)의 예 `Explicit Path to Watchwords Node` 는 다음과 같습니다 `/libs/settings/community/watchwords/default`.
+`Explicit Path to Watchwords Node`이(가) `/libs/settings/community/watchwords/default`으로 설정된 경우 기본 감시자에 대한 사용자 지정 항목의 예는 다음과 같습니다.
 
 ![crxde](assets/crxde.png)
 
 ### 중재자 권한 {#moderator-permissions}
 
-동일한 리소스에 지정된 경우 다음 권한을 통칭하여 `moderator permissions`다음과 같습니다.
+동일한 리소스에 할당된 다음 권한을 통칭하여 `moderator permissions`이라고 합니다.
 
 * `Read`
 * `Modify`
