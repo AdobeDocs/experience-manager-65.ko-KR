@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 85%
 
 ---
 
@@ -23,5 +26,5 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Although there is a Scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes) available, the maintenance and creation of scaffolds as well as creating new pages from scaffolds is done in the classic UI. 자세한 내용은 클래식 UI 작성 설명서의 [스캐폴딩](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)을 참조하십시오.
+>사용할 수 있는 스캐폴딩 [mode](/help/sites-authoring/author-environment-tools.md#page-modes)이 있지만 스캐폴드에서 새 페이지를 만드는 것은 물론 스캐폴드의 유지 관리 및 생성도 클래식 UI에서 수행됩니다. 자세한 내용은 클래식 UI 작성 설명서의 [스캐폴딩](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)을 참조하십시오.
 
