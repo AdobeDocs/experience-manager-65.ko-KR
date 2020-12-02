@@ -1,8 +1,8 @@
 ---
 title: 캡슐화된 토큰 지원
 seo-title: 캡슐화된 토큰 지원
-description: AEM의 캡슐화된 토큰 지원에 대해 알아봅니다.
-seo-description: AEM의 캡슐화된 토큰 지원에 대해 알아봅니다.
+description: AEM의 캡슐화된 토큰 지원에 대해 자세히 알아보십시오.
+seo-description: AEM의 캡슐화된 토큰 지원에 대해 자세히 알아보십시오.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -36,11 +36,11 @@ ht-degree: 0%
 
 게시 인스턴스를 사용할 수 없게 되는 경우 해당 인스턴스에서 인증된 모든 사용자는 세션을 잃게 됩니다. 인증 쿠키의 유효성을 검사하려면 저장소 액세스가 필요하기 때문입니다.
 
-## 캡슐화된 토큰을 사용한 상태 비저장 인증 {#stateless-authentication-with-the-encapsulated-token}
+## 캡슐화된 토큰 {#stateless-authentication-with-the-encapsulated-token}이 있는 상태 비저장 인증
 
-수평 확장성을 위한 솔루션은 AEM의 새로운 EPS(Encapsulated Token) 지원을 사용하여 상태 비저장 인증입니다.
+수평 확장성을 위한 솔루션은 AEM의 새로운 EPS(Encapsulated Token) 지원을 통해 상태 비저장 인증입니다.
 
-캡슐화된 토큰은 저장소에 액세스하지 않고 AEM이 인증 정보를 오프라인으로 안전하게 만들고 확인할 수 있도록 하는 암호화 기능입니다. 이렇게 하면 모든 게시 인스턴스에서 고정 연결을 사용하지 않고도 인증 요청이 발생할 수 있습니다. 또한 모든 인증 요청에 대해 저장소에 액세스할 필요가 없으므로 인증 성능을 향상시킬 수 있습니다.
+캡슐화된 토큰은 저장소에 액세스하지 않고 AEM에서 인증 정보를 오프라인으로 안전하게 만들고 확인할 수 있는 암호화 기능입니다. 이렇게 하면 모든 게시 인스턴스에서 고정 연결을 사용하지 않고도 인증 요청이 발생할 수 있습니다. 또한 모든 인증 요청에 대해 저장소에 액세스할 필요가 없으므로 인증 성능을 향상시킬 수 있습니다.
 
 MongoMK 작성자 및 TarMK 게시 인스턴스가 있는 지리적으로 분산된 배포에서 이러한 작업이 어떻게 이루어지는지 확인할 수 있습니다.
 
@@ -61,26 +61,27 @@ MongoMK 작성자 및 TarMK 게시 인스턴스가 있는 지리적으로 분산
 >* 고정 세션이 활성화되어 있거나
    >
    >
-* 동기화가 시작되면 사용자가 이미 AEM에서 만들어집니다. 즉, 핸들러가 동기화 프로세스 동안 사용자를 **만드는** 상황에서는 캡슐화된 토큰이 지원되지 않습니다.
+* 동기화가 시작되면 사용자가 이미 AEM에서 만들어집니다. 즉, 동기화 프로세스 중에 핸들러 **create** 사용자가 있는 경우 캡슐화된 토큰이 지원되지 않습니다.
 
 
 캡슐화된 토큰을 구성할 때 고려해야 할 몇 가지 사항이 있습니다.
 
-1. 암호화 관련 때문에 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3부터는 주요 자료가 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 이 점을 염두에 두고, 키를 복제하는 가장 좋은 방법은 키를 복제할 대상 인스턴스의 파일 시스템에서 소스 인스턴스의 파일 시스템으로 키를 복사하는 것입니다. 아래의 &quot;HMAC 키 복제&quot;에서 자세한 내용을 참조하십시오.
+1. 암호화 관련 때문에 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3 이후 주요 자료가 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 이 점을 염두에 두고, 키를 복제하는 가장 좋은 방법은 키를 복제할 대상 인스턴스의 파일 시스템에서 소스 인스턴스의 파일 시스템으로 키를 복사하는 것입니다. 아래의 &quot;HMAC 키 복제&quot;에서 자세한 내용을 참조하십시오.
 1. 캡슐화된 토큰을 활성화해야 합니다. 이 작업은 웹 콘솔을 통해 수행할 수 있습니다.
 
-### HMAC 키 복제 {#replicating-the-hmac-key}
+### HMAC 키 {#replicating-the-hmac-key} 복제
 
-HMAC 키가 저장소에 있는 이진 속성 `/etc/key` 으로 나타납니다. 옆에 있는 **보기** 링크를 눌러 별도로 다운로드할 수 있습니다.
+HMAC 키가 저장소의 `/etc/key`의 바이너리 속성으로 표시됩니다. 다음 링크를 눌러 별도로 다운로드할 수 있습니다.****
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 인스턴스 간에 키를 복제하려면 다음을 수행해야 합니다.
 
-1. 복사할 주요 자료가 포함된 작성자 인스턴스인 AEM 인스턴스에 액세스합니다.
+1. 복사할 주요 자료가 들어 있는 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스합니다.
 1. 로컬 파일 시스템에서 `com.adobe.granite.crypto.file` 번들을 찾습니다. 예를 들어 이 경로 아래에서 다음을 수행합니다.
 
    * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
+
    각 폴더 내의 `bundle.info` 파일은 번들 이름을 식별합니다.
 
 1. 데이터 폴더로 이동합니다. 예:
@@ -93,15 +94,15 @@ HMAC 키가 저장소에 있는 이진 속성 `/etc/key` 으로 나타납니다.
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. 이전에 복사한 두 파일을 붙여 넣습니다.
-1. [대상 인스턴스가 이미 실행 중인 경우 Crypto](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) 번들을 새로 고칩니다.
+1. [대상 인스턴스가 이미 실행 중인 ](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) 경우 Crypto Bundleone을 새로 고칩니다.
 
-1. 키를 복제할 모든 인스턴스에 대해 위의 단계를 반복합니다.
+1. 키를 복제할 모든 인스턴스에 대해 위 단계를 반복합니다.
 
-#### 캡슐화된 토큰 활성화 {#enabling-the-encapsulated-token}
+#### 캡슐화된 토큰 {#enabling-the-encapsulated-token} 활성화
 
 HMAC 키가 복제되면 웹 콘솔을 통해 캡슐화된 토큰을 활성화할 수 있습니다.
 
-1. 브라우저에서 `https://serveraddress:port/system/console/configMgr`
-1. Day CRX Token **Authentication Handler라는 항목을 찾아** 클릭합니다.
-1. 다음 창에서 캡슐화된 토큰 지원 **활성화** 상자에 확인 표시를 하고 저장을 **누릅니다**.
+1. 브라우저를 `https://serveraddress:port/system/console/configMgr`으로 가리킵니다.
+1. **일 CRX 토큰 인증 처리기**&#x200B;이라는 항목을 찾아 클릭합니다.
+1. 다음 창에서 캡슐화된 토큰 지원 활성화&#x200B;**상자에 확인 표시를 하고**&#x200B;저장&#x200B;**을 누릅니다.**
 
