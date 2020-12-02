@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 웹 페이지에 페이지 추적기 및 포함 코드 사용 {#using-page-tracker-and-embed-code-in-web-pages}
 
-페이지 추적기는 Adobe Analytics이 이러한 웹 사이트의 사용 데이터를 캡처할 수 있도록 타사 웹 사이트의 코드에 포함하는 JavaScript 코드 [!DNL Adobe Experience Manager Assets] 입니다.
+페이지 추적기는 Adobe Analytics이 이러한 웹 사이트의 [!DNL Adobe Experience Manager Assets]과(와) 관련된 사용 데이터를 캡처할 수 있도록 타사 웹 사이트의 코드에 포함하는 JavaScript 코드입니다.
 
 클릭 등과 같은 자산을 위한 이벤트를 캡처하려면 타사 웹 사이트의 코드에 포함 코드를 포함시켜야 합니다.
 
@@ -59,7 +59,7 @@ ht-degree: 5%
 </html>
 ```
 
-## 페이지 추적기 코드 추가 {#adding-page-tracker-code}
+## 페이지 추적기 코드 {#adding-page-tracker-code} 추가
 
 웹 사이트 코드의 머리글 섹션 내에 페이지 추적기 코드를 추가합니다. 다음 코드 조각은 샘플 웹 페이지에 포함된 페이지 추적기 코드를 표시합니다.
 
@@ -79,7 +79,7 @@ ht-degree: 5%
  </head>
 ```
 
-## 포함 코드 추가 {#add-embed-code}
+## 포함 코드 {#add-embed-code} 추가
 
 웹 사이트 코드의 본문 내에 포함 코드를 추가합니다. 다음 코드 조각은 샘플 웹 페이지에 포함된 포함 코드를 표시합니다.
 
