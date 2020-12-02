@@ -3,9 +3,9 @@ title: AEM 6.5 관리 사용 안내서
 seo-title: AEM 6.5 관리 사용 안내서
 description: AEM 관리
 seo-description: AEM 관리
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 100%
 
