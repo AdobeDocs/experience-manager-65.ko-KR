@@ -19,12 +19,12 @@ ht-degree: 2%
 
 
 
-# 게시된 사이트 경험 {#experience-the-published-site}
+# 게시된 사이트 {#experience-the-published-site} 경험
 
 
 **[활성 리소스 ⇐ 만들기 및 할당](resource.md)**
 
-## 게시 시 새 사이트 찾아보기 {#browse-to-new-site-on-publish}
+## 게시 {#browse-to-new-site-on-publish}의 새 사이트 찾아보기
 
 새롭게 만들어진 커뮤니티 사이트, 역량 강화 리소스 및 학습 경로가 게시되었으므로 지원 자습서 사이트를 경험할 수 있습니다.
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 * 작성자 URL = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
 * 게시 URL = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-기본 [홈 페이지가 설정된](enablement-create-site.md#changethedefaulthomepage)경우 http://localhost:4503/에서 [](http://localhost:4503/) 사이트를탐색하면 됩니다.
+[기본 홈 페이지가](enablement-create-site.md#changethedefaulthomepage)으로 설정된 경우 [http://localhost:4503/](http://localhost:4503/)으로 이동하여 사이트를 실행해야 합니다.
 
 게시된 사이트에 처음 도착할 때 사이트 방문자는 일반적으로 로그인하지 않고 익명으로 방문됩니다.
 
@@ -41,21 +41,21 @@ ht-degree: 2%
 
 ![enablement-login](assets/enablement-login.png)
 
-## 익명의 사이트 방문자 {#anonymous-site-visitor}
+## 익명 사이트 방문자 {#anonymous-site-visitor}
 
 익명의 사이트 방문자는 이 비공개 활성 커뮤니티 사이트에 대한 로그인 페이지가 즉시 표시됩니다. Facebook 또는 Twitter에 직접 등록하거나 로그인할 수 있는 옵션은 없습니다.
 
-이 홈 페이지에는 다음 4개의 메뉴 항목이 표시됩니다. `Assignments, Ski Catalog, What's New` 로그인하지 `Discussions`않으면 연결할 수 없습니다.
+이 홈 페이지에는 다음 4개의 메뉴 항목이 표시됩니다.`Assignments, Ski Catalog, What's New` 및 `Discussions`이지만 로그인하지 않으면 연결할 수 없습니다.
 
 >[!NOTE]
 >
 >사이트 방문자가 직접 등록하지 않아도 활성 사이트에 대한 익명 액세스 권한을 부여할 수 있습니다.
 >
->활성 리소스가 로 설정되어 `show in catalog` 있는 `allow anonymous access`경우 익명 사이트 방문자가 카탈로그의 리소스를 볼 수 있습니다.
+>활성 리소스가 `show in catalog` 및 `allow anonymous access`으로 설정된 경우 익명 사이트 방문자가 카탈로그에서 리소스를 볼 수 있습니다.
 
-### JCR에서 익명 액세스 차단 {#prevent-anonymous-access-on-jcr}
+### JCR {#prevent-anonymous-access-on-jcr}에서 익명 액세스 금지
 
-알려진 제한은 사이트 컨텐츠에 대해 익명 액세스를 **[!UICONTROL 허용하지만 jcr 컨텐츠 및 json을 통해 커뮤니티 사이트 컨텐츠를 익명의 방문자에게 노출시킵니다]** . 그러나 이 동작은 해결 방법으로 Sling 제한을 사용하여 제어할 수 있습니다.
+알려진 제한은 사이트의 컨텐츠에 대해 **[!UICONTROL 익명 액세스]**&#x200B;가 비활성화되어 있지만 jcr 컨텐츠 및 json을 통해 커뮤니티 사이트 컨텐츠를 익명의 방문자에게 노출합니다. 그러나 이 동작은 해결 방법으로 Sling 제한을 사용하여 제어할 수 있습니다.
 
 jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트의 컨텐츠를 액세스로부터 보호하려면 다음 단계를 따르십시오.
 
@@ -65,21 +65,21 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
    >
    >현지화된 사이트로 이동하지 마십시오.
 
-1. 페이지 **[!UICONTROL 속성으로 이동합니다]**.
+1. **[!UICONTROL 페이지 속성]**&#x200B;으로 이동합니다.
 
    ![page-properties](assets/page-properties.png)
 
-1. 고급 **[!UICONTROL 탭으로]** 이동합니다.
-1. Enable **[!UICONTROL Authentication Requirement]**.
+1. **[!UICONTROL 고급]** 탭으로 이동합니다.
+1. **[!UICONTROL 인증 요구 사항]**&#x200B;을 활성화합니다.
 
    ![사이트 인증](assets/site-authentication.png)
 
 1. 로그인 페이지의 경로를 추가합니다. 예, `/content/......./GetStarted`.
 1. 페이지를 게시합니다.
 
-## 등록된 회원 {#enrolled-member}
+## 등록된 멤버 {#enrolled-member}
 
-이 경험 `Riley Taylor` 은커뮤니티 Ski ClassGroup의 멤버십을 통해 `Sidney Croft` 사용자 [에게 만들어 할당되고](enablement-setup.md#publishcreateenablementmembers) , 사용자에게 [](resource.md#settings) ** ** 스키 레슨 학습 경로에 할당됩니다.
+이 경험은 `Riley Taylor` 및 `Sidney Croft` 사용자가 [created](enablement-setup.md#publishcreateenablementmembers) 및 [할당된 &lt;a4/>사용자가 *커뮤니티 스키 클래스* 그룹의 멤버십을 통해 *스키 레슨* 학습 경로에 의존합니다.](resource.md#settings)
 
 다음으로 로그인
 
@@ -108,13 +108,13 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 ![chlimage_1-435](assets/chlimage_1-435.png)
 
-[ *스키 강의* ]를 선택하면 학습 경로에 의해 참조된 두 가지 활성 리소스가 표시됩니다.
+*Ski Lessons*&#x200B;를 선택하면 학습 경로에서 참조하는 두 가지 활성 리소스가 표시됩니다.
 
 ![chlimage_1-436](assets/chlimage_1-436.png)
 
-[ *스키 수업 1]을* 선택하면 활성 리소스의 세부 사항 페이지가 열립니다.
+*스키 레슨 1*&#x200B;을 선택하면 활성 리소스의 세부 정보 페이지가 열립니다.
 
-세부 사항 페이지에서 구성원은 학습, 강의 [평가](rating.md) , [댓글](comments.md)추가 등의 작업을 수행할 수 있습니다. 모든 멤버 활동이 사이트의 새로운 기능 섹션에 반영됩니다.
+세부 정보 페이지에서 구성원은 학습 내용을 [rate](rating.md)하고 [comments](comments.md)을(를) 추가할 수 있습니다. 모든 멤버 활동이 사이트의 새로운 기능 섹션에 반영됩니다.
 
 활성 리소스와의 상호 작용은 작성 환경에서 액세스할 수 있는 보고서 섹션에 표시됩니다.
 
@@ -122,7 +122,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 ### 스키 카탈로그 {#ski-catalog}
 
-[스키 카탈로그] 페이지는 네임스페이스의 태그가 지정된 활성 리소스 `Tutorial` 카탈로그입니다. 두 *스키 수업* 리소스에는 `Skiing` 태그가 지정되어 있으므로 다른 태그도 `All` 선택되어 `Tutorial: Sports / Skiing` 있으면 아무 것도 표시되지 않습니다.
+[스키 카탈로그] 페이지는 `Tutorial` 네임스페이스의 태그가 지정된 활성 리소스 카탈로그입니다. 두 *스키 레슨* 리소스에 `Skiing` 태그가 지정되어 있으므로 `All` 또는 `Tutorial: Sports / Skiing` 이외의 태그를 선택한 경우 아무 것도 표시되지 않습니다.
 
 멤버가 직접 또는 학습 경로를 통해 활성 리소스를 할당받지 않은 경우 카탈로그 내에 있는 활성 리소스와 상호 작용하고 댓글 및 평가를 통해 피드백을 제공할 수 있습니다.
 
@@ -130,9 +130,9 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 ### 토론 {#discussions}
 
-활성 리소스에 대한 등급 및 주석 달기(사용[시](enablement-create-site.md#step33asettings)) `Enablement Tutorial` 외에 만들어진 커뮤니티 사이트 템플릿에는 [포럼 함수](functions.md#forum-function) (제목)가 `Discussions)`포함됩니다.
+지원 리소스([이(가) 활성화된 경우) 등급 및 주석 달기 외에 `Enablement Tutorial`이(가) 만들어진 커뮤니티 사이트 템플릿에는 [포럼 함수](functions.md#forum-function)(title is `Discussions)`)가 포함됩니다.](enablement-create-site.md#step33asettings)
 
-링크를 `Discussions`선택하고 항목을 게시합니다.
+`Discussions`링크를 선택하고 항목을 게시합니다.
 
 로그아웃 후 Sidney Croft(시드니 / 암호)로 로그인하고 질문에 응답하고 이 주제를 따르십시오.
 
@@ -142,22 +142,22 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 ### 새로운 기능 {#what-s-new}
 
-메뉴 `What's New` 항목은 이 커뮤니티 사이트 구조에서 [활동 스트림 기능에](functions.md#activity-stream-function) 주어진 제목입니다.
+`What's New` 메뉴 항목은 이 커뮤니티 사이트 구조에서 [활동 스트림 함수](functions.md#activity-stream-function)에 지정된 제목입니다.
 
-여전히 Sidney로 로그인되어 있는 경우, 활동을 표시할 `What's New` 링크를 선택합니다.
+여전히 Sidney로 로그인하고 `What's New` 링크를 선택하여 활동을 표시합니다.
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
 ## 신뢰할 수 있는 커뮤니티 구성원 {#trusted-community-member}
 
-이 경험 ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` 은 중재자 [및](enablement-create-site.md#moderation) 리소스 연락처 [역할을 할당받았다고 가정합니다](resource.md#settings).
+이 경험에서는 ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)`이(가) [중재자](enablement-create-site.md#moderation) 및 [리소스 연락처](resource.md#settings)의 역할을 할당받았다고 가정합니다.
 
 다음으로 로그인
 
 * `Username: quinn`
 * `Password: password`
 
-로그인하면 새로운 메뉴 항목이 있는데, 이 메뉴 항목 `Administration`은 멤버가 중재자 역할을 했기 때문에 나타납니다.
+로그인하면 중재자 역할을 받았으므로 새 메뉴 항목 `Administration`이 나타납니다.
 
 ![chlimage_1-441](assets/chlimage_1-441.png)
 
@@ -165,7 +165,7 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 ### 관리 {#administration}
 
-두 명의 학습자의 활동 `Riley Taylor` 과 `Sidney Croft`함께 중재 콘솔에 액세스할 수 있는 `Administration` 링크를 선택하면, 퀸은 [벌크 중재 콘솔을 사용하여 게시물을 중재할](moderation.md) 수 있습니다.
+두 수강생 `Riley Taylor` 및 `Sidney Croft`의 활동이 있습니다. 중재 콘솔에 액세스하기 위해 `Administration` 링크를 선택하면, 퀸은 [벌크 중재 콘솔](moderation.md)을 사용하여 게시물을 중재할 수 있습니다.
 
 사이드 패널 아이콘을 선택하면 커뮤니티 컨텐츠를 검색하는 데 사용되는 필터가 열립니다.
 
@@ -173,16 +173,16 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 ![chlimage_1-442](assets/chlimage_1-442.png)
 
-## 작성자에 대한 보고서 {#reports-on-author}
+## 작성자 {#reports-on-author}에 대한 보고서
 
 수강생 및 역량 강화 리소스에 대한 보고에 액세스하는 방법에는 두 가지가 있습니다.
 
-작성자의 경우 **커뮤니티,[리소스 콘솔](resources.md)**, 활성 리소스가 관리되는 위치로 이동하고, 커뮤니티 사이트를 선택하면
+작성자의 경우 **커뮤니티, [리소스 콘솔](resources.md)**&#x200B;으로 이동하여 활성 리소스를 관리하고 커뮤니티 사이트를 선택하면
 
 * 모든 지원 리소스 및 학습 경로
 * 특정 역량 강화 리소스 또는 학습 경로
 
-커뮤니티, **보고서[콘솔](reports.md)**&#x200B;로 이동하고 다음을 따라 보고서를 생성합니다.
+**커뮤니티, [보고서 콘솔](reports.md)**&#x200B;으로 이동하고 다음 내용에 따라 보고서를 생성합니다.
 
 * 역량 강화 리소스 및 학습 경로 지정
 * 특정 기간 동안 커뮤니티 사이트에 게시물 게시
@@ -204,23 +204,23 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 게시 중인 리소스와 약간의 활동 및 상호 작용이 있으면 작성자에 대한 보고서를 보는 것이 유용할 것입니다.
 
 * 작성자의 경우 관리자 권한으로 로그인합니다.
-* 주 메뉴에서 **[!UICONTROL 커뮤니티]** > 리소스 **[!UICONTROL 로 이동합니다]**.
-* 사이트를 `Enablement Tutorial` 선택합니다.
-* 모든 리소스의 요약 `Report` 아이콘을 선택합니다.
+* 주 메뉴에서 **[!UICONTROL 커뮤니티]** > **[!UICONTROL 리소스]**&#x200B;로 이동합니다.
+* `Enablement Tutorial` 사이트를 선택합니다.
+* 모든 리소스의 요약을 보려면 `Report` 아이콘을 선택합니다.
 * 리소스를 선택한 다음 해당 리소스에 대한 보고서의 `Report` 아이콘을 선택합니다.
 
 나타나는 데 1~12시간이 걸릴 수 있는 Adobe Analytics의 데이터를 표시하기에는 너무 이른 것 같습니다. 그러나 기본 SCORM 보고는 이미 사용할 수 있습니다.
 
-#### 스키 레슨 리소스 보고서 {#ski-lessons-resource-report}
+#### 스키 수업 리소스 보고서 {#ski-lessons-resource-report}
 
 ![chlimage_1-443](assets/chlimage_1-443.png)
 
 #### 스키 강의 사용자 보고서 {#ski-lessons-user-report}
 
-* 커뮤니티 **[!UICONTROL > 리소스 선택]**
+* **[!UICONTROL 커뮤니티 > 리소스]**&#x200B;를 선택합니다.
 
-* 카드 열기 `Enablement Tutorial`
-* 카드 열기 `Ski Lessons`
+* 카드 `Enablement Tutorial` 열기
+* 카드 `Ski Lessons` 열기
 * 선택 `Report > User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
@@ -229,35 +229,35 @@ jcr 컨텐츠 및 json을 통해 익명의 사용자가 커뮤니티 사이트�
 
 보고서 콘솔에서는
 
-* **모든 활성 커뮤니티 사이트에 대한 할당**
+* **모든** 활성 커뮤니티 사이트에 대한 할당
 * **모든** 커뮤니티 사이트 보기
-* **모든 커뮤니티 사이트에 대한 게시물**
+* **모든** 커뮤니티 사이트의 게시물
 
 할당에 대한 보고서의 경우:
 
 * 작성자의 경우 관리자 권한으로 로그인합니다.
-* 커뮤니티 **[!UICONTROL > 보고서]** **** > **[!UICONTROL 할당 보고서]**&#x200B;로이동합니다.
-* 풀다운 메뉴 **[!UICONTROL 에서]** 사이트를 선택합니다(선택 `Enablement Tutorial`).
+* **[!UICONTROL 커뮤니티]** > **[!UICONTROL 보고서]** > **[!UICONTROL 할당 보고서]**&#x200B;로 이동합니다.
+* 풀다운 메뉴에서 **[!UICONTROL 사이트]**&#x200B;를 선택합니다(`Enablement Tutorial` 선택).
 
-* 그룹 **[!UICONTROL 선택]** (선택 `Community Ski Class`)
+* **[!UICONTROL 그룹]**&#x200B;을 선택합니다(`Community Ski Class` 선택).
 
-* 할당 **[!UICONTROL 선택]** (선택 `Ski Lessons`)
+* **[!UICONTROL 할당]** 선택(`Ski Lessons` 선택)
 
-* 생성 **[!UICONTROL 선택]**
+* **[!UICONTROL 생성]**&#x200B;을 선택합니다.
 
 ![chlimage_1-445](assets/chlimage_1-445.png)
 
 보기에 대한 보고서의 경우:
 
 * 작성자의 경우 관리자 권한으로 로그인합니다.
-* 커뮤니티 > **[!UICONTROL 보고서]** **** > **[!UICONTROL 보기]**&#x200B;보고서로이동합니다.
-* 풀다운 메뉴 **에서** 사이트를 선택합니다(선택 `Enablement Tutorial`).
+* **[!UICONTROL 커뮤니티]** > **[!UICONTROL 보고서]** > **[!UICONTROL 보기 보고서]**&#x200B;로 이동합니다.
+* 풀다운 메뉴에서 **사이트**&#x200B;를 선택합니다(`Enablement Tutorial` 선택).
 
-* [ **[!UICONTROL 콘텐트 유형]** ]을 선택합니다(선택 `all`).
+* **[!UICONTROL 콘텐트 유형]**(`all` 선택)을 선택합니다.
 
-* 날짜 **[!UICONTROL 범위를]** 선택합니다(선택 `Last 7 days`).
+* **[!UICONTROL 날짜 범위]**(`Last 7 days` 선택)를 선택합니다.
 
-* 생성을 **[!UICONTROL 선택합니다]**.
+* **[!UICONTROL 생성]**&#x200B;을 선택합니다.
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 
