@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 드롭다운 목록을 동적으로 채우는 절차 {#procedure-to-dynamically-populate-drop-down-lists}
 
-국가 **드롭다운 목록에서 선택한 값을 기준으로** 상태 **드롭다운 목록을 채울 시나리오를** 생각해보십시오. [ **국가** ] 드롭다운 목록에서 호주를 선택하면 **주** 드롭다운 목록에 호주 내의 상태가 표시됩니다. 다음 절차에서는 이 작업을 수행하는 방법에 대해 설명합니다.
+**국가** 드롭다운 목록에서 선택한 값을 기준으로 **상태** 드롭다운 목록을 채울 시나리오를 생각해 보십시오. **국가** 드롭다운 목록에서 호주를 선택하면 **주** 드롭다운 목록에 호주 내의 상태가 표시됩니다. 다음 절차에서는 이 작업을 수행하는 방법에 대해 설명합니다.
 
 1. 다음 모듈로 프로젝트를 만듭니다.
 
@@ -147,7 +147,7 @@ ht-degree: 0%
    }
    ```
 
-1. 앱의 특정 폴더 계층 아래에 드롭다운 노드를 만듭니다(예: /apps/myfolder/demo 아래에 노드 만들기). 노드에 대한 매개 `sling:resourceType` 변수가 서블릿이 가리키는 매개 변수와 동일한지 확인합니다(/apps/populated ropdown).
+1. 앱의 특정 폴더 계층 아래에 드롭다운 노드를 만듭니다(예: /apps/myfolder/demo 아래에 노드 만들기). 노드의 `sling:resourceType` 매개 변수가 서블릿이 가리키는 매개 변수와 동일한지 확인합니다(/apps/populedropdown).
 
    ![드롭다운 노드 만들기](assets/dropdown-node.png)
 
@@ -156,7 +156,7 @@ ht-degree: 0%
 
    국가 목록에 표시할 국가 이름을 추가합니다. 상태 목록에서 국가 목록에 있는 국가의 이름을 기준으로 스크립트를 추가하여 채웁니다.
 
-   ![국가 이름](assets/country-dropdown.png) ![추가](assets/state-dropdown.png) 시/도 이름 ![을 채우는 스크립트 추가](assets/2dropdowns.png)
+   ![국가 ](assets/country-dropdown.png) ![이름 추가상태 이름](assets/state-dropdown.png) ![을 채우는 스크립트 추가국가 및 상태 드롭다운 목록을 추가하여](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(
