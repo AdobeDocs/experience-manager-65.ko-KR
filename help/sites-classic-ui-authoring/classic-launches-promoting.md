@@ -12,6 +12,9 @@ discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 92%
 
 ---
 
@@ -31,8 +34,8 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
 1. 사이드 킥의 **페이지** 탭에서 **론치 홍보**&#x200B;를 클릭합니다.
 1. 승격할 페이지를 지정합니다.
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
-   * To also promote the child pages of the current page, select **Include Sub Pages**.
+   * (기본값) 현재 페이지만 홍보하려면 **프로덕션 버전으로 페이지 변경 사항 승격**&#x200B;을 선택합니다.
+   * 현재 페이지의 하위 페이지도 홍보하려면 **하위 페이지 포함**&#x200B;을 선택합니다.
    * 론치에 있는 모든 페이지를 홍보하려면, **프로덕션 버전에 대한 전체 출시 홍보**&#x200B;를 선택합니다.
 
 1. 프로덕션 페이지를 워크플로우 패키지에 추가하려면, **워크플로우 패키지에 추가**&#x200B;를 선택한 다음 해당 워크플로우를 선택합니다.
