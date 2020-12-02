@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 참조 테마{#reference-themes}
 
-[테마를](../../forms/using/themes.md) 사용하면 CSS에 대한 깊은 지식 없이도 양식의 스타일을 지정할 수 있습니다. 기본 테마 외에도 AEM-FORMS-REFERENCE-THEMES [패키지를 설치하여 다음 테마를 얻을 수](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) 있습니다.
+[CSS](../../forms/using/themes.md) 에 대한 깊은 지식 없이도 양식의 스타일을 지정할 수 있습니다. 기본 테마 외에도 [AEM-FORMS.-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) 패키지를 설치하여 다음 테마를 얻을 수 있습니다.
 
 * 베릴
 * 경영진
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 이 패키지에 포함된 테마는 반응형이며, 이러한 테마의 스타일링은 모바일 및 데스크탑 디스플레이에 대해 정의됩니다. 다양한 디바이스에서 최신 버전의 브라우저는 이러한 테마 중 하나로 적용된 양식을 간편하게 렌더링할 수 있습니다.
 
-패키지 설치에 대한 자세한 내용은 패키지 [를 사용한 작업 방법을 참조하십시오](/help/sites-administering/package-manager.md).
+패키지 설치에 대한 자세한 내용은 [패키지 사용 방법](/help/sites-administering/package-manager.md)을 참조하십시오.
 
-## 베릴 {#beryl}
+## Beryl {#beryl}
 
 버릴 테마는 We.Gov 응용 양식에 의해 사용되고 배경 이미지, 투명도 및 크고 평평한 아이콘의 사용을 강조합니다. 아래 스크린샷에서는 Beryl 테마가 어떻게 생겼으며, 양식의 스타일을 향상시키는 방법을 확인할 수 있습니다.
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 ](assets/beryl-1.png)-->
 
-## 경영진 {#exec}
+## 실행 {#exec}
 
 실행 테마는 단색 배경 채우기를 피하고 양식 구성 요소를 강조합니다. 구성 요소를 선택하고 클릭하면 글꼴 색상이 변경됩니다. 기본 캔버스 테마와 비교하여 선택한 탭의 텍스트 글꼴 색상이 진한 파란색으로 바뀝니다. 내비게이션 및 제출 단추가 Beryl 테마와 어떻게 다른지 확인하십시오.
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 ](assets/tranquil-1.png)-->
 
-## 울트라마린 {#ultramarine}
+## Ultramarine {#ultramarine}
 
 Ultramarine 테마는 짙은 파란색 음영을 사용하여 탭, 패널, 텍스트 상자 및 버튼과 같은 구성 요소를 강조 표시합니다.
 
