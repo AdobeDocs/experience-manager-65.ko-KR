@@ -18,21 +18,21 @@ ht-degree: 3%
 ---
 
 
-# Rich Text Editor Essentials {#rich-text-editor-essentials}
+# 리치 텍스트 편집기 필수 {#rich-text-editor-essentials}
 
 ## 개요 {#overview}
 
 RTE(Rich Text Editor)에서는 마크업을 사용하여 텍스트를 입력할 수 있습니다.
 
-커뮤니티 구성 요소의 경우 작성 환경의 [리치 텍스트 편집기와 유사하지만 게시 환경에](../../help/sites-authoring/rich-text-editor.md)입력된 텍스트에 영향을 줍니다.
+커뮤니티 구성 요소의 경우 작성 환경](../../help/sites-authoring/rich-text-editor.md)의 [리치 텍스트 편집기와 유사하지만 게시 환경에 입력된 텍스트에 영향을 줍니다.
 
 ![rich-text-editor](assets/rich-text-editor.png)
 
-## 리치 텍스트 편집기 활성화 {#enabling-rich-text-editor}
+## 리치 텍스트 편집기 사용 {#enabling-rich-text-editor}
 
-사용자가 생성한 콘텐츠(UGC)를 허용하는 커뮤니티 구성 요소를 활성화하여 RTE를 허용할 수 있습니다. 구성 요소가 페이지에 추가되었는지 또는 [함수](functions.md)내에 포함되었는지에 따라, 기본적으로 RTE가 활성화되어 있거나 활성화되지 않을 수 있습니다.
+사용자가 생성한 콘텐츠(UGC)를 허용하는 커뮤니티 구성 요소를 활성화하여 RTE를 허용할 수 있습니다. 구성 요소가 페이지에 추가되었는지 또는 [function](functions.md) 내에 포함되었는지에 따라, RTE는 기본적으로 활성화되거나 활성화되지 않을 수 있습니다.
 
-활성화되지 않은 경우 [작성자 편집 모드를](sites-console.md#authoring-site-content)입력하고 편집할 구성 요소를 선택한 다음 `Rich Text Editor` 확인란을 선택하면 됩니다.
+활성화되지 않은 경우 [작성자 편집 모드](sites-console.md#authoring-site-content)를 입력하고 편집할 구성 요소를 선택한 다음 `Rich Text Editor` 확인란을 선택하면 됩니다.
 
 RTE는 다음 커뮤니티 구성 요소에 사용할 수 있습니다.
 
@@ -45,11 +45,11 @@ RTE는 다음 커뮤니티 구성 요소에 사용할 수 있습니다.
 * [QnA](working-with-qna.md)
 * [검토](reviews.md)
 
-## 사용자 정의 {#customization}
+## 사용자 지정 {#customization}
 
-리치 텍스트 편집기의 사용자 지정은 구현 기준이 [CKEditor에 있으므로 가능합니다](https://www.ckeditor.com/).
+구현이 [CKEditor](https://www.ckeditor.com/)를 기반으로 하므로 리치 텍스트 편집기를 사용자 지정할 수 있습니다.
 
-Communities 구성 요소에 대한 현재 구성은 In `cq.social.  scf   clientlib`에 있으며
+Communities 구성 요소의 현재 구성은`cq.social.  scf   clientlib`
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
@@ -57,13 +57,13 @@ Communities 구성 요소에 대한 현재 구성은 In `cq.social.  scf   clien
 
 ### 사용자 정의 예:인라인 링크 {#example-customization-inline-links}
 
-보안 문제로 인해 하이퍼링크 옵션은 기본적으로 구성원에게 제공되는 리치 텍스트 아이콘 집합에 포함되지 않습니다. UGC에서 방어가 허용되면 재난에 대한 대응 능력이 광범위하다.
+보안 문제로 인해 하이퍼링크 옵션은 기본적으로 구성원에게 제공되는 리치 텍스트 아이콘 집합에 포함되지 않습니다. UGC에서 방어가 허용될 때 재난에 대한 능력은 광범위하다.
 
 도구 모음에 하이퍼링크 옵션을 추가하려면:
 
-* &quot;&quot;라는 도구 모음 `links`추가
+* &quot; `links`&quot;이라는 도구 모음 추가
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* 모두 **[!UICONTROL 저장 선택]**
+* **[!UICONTROL 모두 저장]** 선택
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 
