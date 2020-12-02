@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >사용자 이미지의 지원되는 종횡비는 1:1입니다.
 
-1. 다음 단계에서 언급한 세부 사항을 사용하여 DSC를 만듭니다. 자세한 내용은 AEM Forms을 사용한 프로그래밍 [안내서의 &#39;AEM Forms용 구성 요소 개발&#39; 항목을](https://www.adobe.com/go/learn_aemforms_programming_63) 참조하십시오.
+1. 다음 단계에서 언급한 세부 사항을 사용하여 DSC를 만듭니다. 자세한 내용은 [AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63)과 함께 프로그래밍 안내서의 &#39;AEM Forms용 구성 요소 개발&#39; 항목을 참조하십시오.
 1. DSC에서 AEM Forms 사용자의 이미지 URL을 가져오기 위해 getCurrentUserImageUrl 및 getUserImageUrl 메서드를 노출하는 새 SPI를 정의합니다. 다음은 샘플 Java™ 코드 조각입니다.
 
    ```java
@@ -84,5 +84,5 @@ ht-degree: 0%
    </component>
    ```
 
-1. 워크벤치를 통해 DSC를 배포합니다. 서비스를 다시 `ProcessManagementClientSessionService` 시작합니다.
+1. 워크벤치를 통해 DSC를 배포합니다. `ProcessManagementClientSessionService` 서비스를 다시 시작합니다.
 1. 브라우저를 새로 고치거나 로그아웃/사용자와 다시 로그인해야 할 수도 있습니다.
