@@ -12,6 +12,9 @@ discoiquuid: 968b9131-ccdf-4856-b504-bc1a44974980
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 86%
 
 ---
 
@@ -32,12 +35,12 @@ AEM 관리자가 활성화한 경우에만 Search&amp;Promote 기능을 사용�
 <table>
  <tbody>
   <tr>
-   <th>Search&amp;Promote 구성 요소</th>
+   <th>Search &amp; Promote 구성 요소</th>
    <th>설명</th>
   </tr>
   <tr>
    <td>배너</td>
-   <td>배너 광고를 표시합니다. Banners are selected based on data gathered through Search&amp;Promote.<br /> </td>
+   <td>배너 광고를 표시합니다. 배너는 Search &amp; Promote을 통해 수집된 데이터를 기반으로 선택됩니다.<br /> </td>
   </tr>
   <tr>
    <td>탐색 표시</td>
@@ -45,7 +48,7 @@ AEM 관리자가 활성화한 경우에만 Search&amp;Promote 기능을 사용�
   </tr>
   <tr>
    <td>확인란 목록-패싯</td>
-   <td>검색 결과 필터링을 위한 패싯을 선택하기 위한 확인란 목록입니다.</td>
+   <td>검색 결과 필터링을 위한 패싯을 선택하는 확인란 목록입니다.</td>
   </tr>
   <tr>
    <td>드롭다운 패싯</td>
@@ -91,9 +94,9 @@ WCM 웹 사이트 콘솔을 사용하여 검색 결과를 표시할 페이지를
 
 ### 패싯을 사용한 결과 필터링 활성화 {#enabling-the-filtering-of-results-by-facets}
 
-사용자가 패싯으로 검색 결과를 필터링하는 것이 가능하도록 할 수 있습니다. The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components enable users to select one or more facets for filtering. 이러한 구성 요소를 사용할 경우에는 **탐색 표시** 구성 요소도 포함해야 합니다. 탐색 표시는 사용되는 현재 필터를 표시합니다.
+사용자가 패싯으로 검색 결과를 필터링하는 것이 가능하도록 할 수 있습니다. **확인란 목록 패싯**, **드롭다운 패싯** 및 **링크 목록 패싯** 구성 요소를 사용하면 사용자는 필터링할 패싯을 하나 이상 선택할 수 있습니다. 이러한 구성 요소를 사용할 경우에는 **탐색 표시** 구성 요소도 포함해야 합니다. 탐색 표시는 사용되는 현재 필터를 표시합니다.
 
-The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** components each have the following properties that you configure in **Edit** mode:
+**확인란 목록 패싯**, **드롭다운 패싯** 및 **링크 목록 패싯** 구성 요소에는 각각 **편집** 모드에서 구성하는 다음 속성이 있습니다.
 
 * **패싯 이름**: 필터에 사용되는 패싯의 이름입니다.
 
@@ -107,26 +110,26 @@ The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** compone
 
 드롭다운 목록은 모든 검색 결과와 연결된 패싯으로 채워집니다. 드롭다운 목록에서 항목을 선택하면 업데이트된 결과 세트가 있는 페이지가 다시 로드됩니다. 드롭다운 목록의 항목은 고객이 언제든지 패싯에서 패싯으로 전환할 수 있도록 변경되지 않습니다.
 
-![sandpdropdowndepartment](assets/sandpdropdowndepartment.png)
+![sandpdroddowndepartment](assets/sandpdropdowndepartment.png)
 
 **링크 목록 패싯** 구성 요소를 사용하면 고객이 여러 패싯 구성원 또는 패싯 아래에 분류된 항목에 대한 포커스를 점진적으로 좁힐 수 있습니다.
 
 패싯 구성원은 링크 목록으로 나타납니다. 각 링크의 텍스트는 현재 검색 결과와 연결된 패싯 구성원의 이름입니다. 고객이 패싯 링크를 클릭하면 페이지가 다시 로드되고 일부 검색 결과가 나타납니다. 링크 목록이 업데이트되므로 그에 따라 더 좁은 포커스를 사용할 수 있습니다.
 
-![sandplinklistcomp](assets/sandplinklistcomp.png)
+![샌드플라inklistcomp](assets/sandplinklistcomp.png)
 
 목록에 있는 링크는 다른 유형의 Search&amp;Promote 구성 요소에서 필터가 적용되어도 변경됩니다. 여러 유형의 필터 구성 요소를 사용하면 효과적인 필터 조합을 제공할 수 있습니다.
 
 **탐색 표시** 구성 요소를 사용하면 고객이 현재 검색 결과에 적용된 필터를 적용된 순서대로 볼 수 있습니다. 고객은 탐색 표시의 항목을 클릭하여 해당 필터 조합으로 되돌릴 수 있습니다.
 
-![sandbreadcrumcomp](assets/sandpbreadcrumbcomp.png)
+![샌드프브레드크럼컴포지션](assets/sandpbreadcrumbcomp.png)
 
 편집 모드에서 탐색 표시에 대해 다음 속성을 구성하여 구성 요소의 모습을 사용자 지정할 수 있습니다.
 
 * 구분 기호: 각 탐색 표시 사이의 구분 기호로 작동할 문자 또는 문자열을 정의하십시오. [구분 기호] 필드는 문자열을 입력으로 허용합니다. 기본 설정은 &quot;>&quot;(따옴표 제외)입니다.
 * 후행 구분 기호: 탐색 표시의 끝에 표시할 문자 또는 문자열을 정의하십시오. [후행 구분 기호] 필드는 문자열을 입력으로 허용합니다. 기본 설정은 *공백*(즉, 탐색 표시 행의 끝에 아무 것도 표시되지 않음)입니다.
 
-### 검색 상자 추가 {#adding-search-boxes}
+### 검색 상자 추가  {#adding-search-boxes}
 
 검색 구성 요소를 사용하면 고객이 키워드 검색을 수행할 수 있습니다. 검색에 액세스 권한을 제공할 각 페이지에 [검색] 구성 요소를 추가하십시오.
 
@@ -139,7 +142,7 @@ The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** compone
 
 ### 배너 추가 {#adding-banners}
 
-배너 구성 요소는 고객의 Search&amp;Promote 검색에 따라 배너 광고를 표시합니다. Search&amp;Replace 서버의 논리는 표시할 배너를 결정합니다. 예를 들어, 청바지에 대해 검색하면 패션 관련 배너가 표시될 수 있습니다. 남성용품 부서에 대한 필터링은 배너 선택 범위를 더 좁힐 수 있습니다.
+배너 구성 요소는 고객의 Search &amp; Promote 검색에 따라 배너 광고를 표시합니다. Search&amp;Replace 서버의 논리는 표시할 배너를 결정합니다. 예를 들어, 청바지에 대해 검색하면 패션 관련 배너가 표시될 수 있습니다. 남성용품 부서에 대한 필터링은 배너 선택 범위를 더 좁힐 수 있습니다.
 
 [배너] 구성 요소는 [배너 영역]이라는 하나의 구성 가능한 속성을 제공합니다. 편집 모드에서 속성 값 중 하나를 선택하여 배너가 표시되는 방식을 지정하십시오. Search&amp;Promote 서비스는 선택할 수 있는 값 목록을 결정합니다.
 
@@ -147,4 +150,4 @@ The **Checkbox List Facet**, **Dropdown Facet**, and **Link List Facet** compone
 
 이 다이어그램은 아래의 완전히 작동하는 Search&amp;Promote 검색 결과 페이지를 만들기 위해 페이지에 추가되는 구성 요소를 보여줍니다.
 
-![1328213789109](assets/1328213789109.png) 샌드페이지 ![예제](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![의 샌드페이지 예](assets/sandppageexample.png)
