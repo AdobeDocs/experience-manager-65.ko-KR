@@ -32,9 +32,9 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
 
 대금 청구 API는 렌더링된 문서의 페이지 수, 문서 또는 양식의 길이 또는 최종 형식을 설명하지 않습니다. 거래 보고서는 트랜잭션을 두 가지 범주로 나눕니다.렌더링된 문서 및 Forms 전송.
 
-* **Forms 제출:** 데이터를 AEM Forms으로 만든 모든 유형의 양식에서 전송하고 데이터를 데이터 저장소 또는 데이터베이스에 제출하는 경우는 양식 제출으로 간주됩니다. 예를 들어, 적응형 양식 제출, HTML5 양식, PDF forms 및 양식 세트는 제출된 양식으로 간주됩니다. 양식 세트의 각 양식은 제출로 간주됩니다. 예를 들어, 양식 세트에 5개의 양식이 있는 경우, 양식 세트가 제출되면 트랜잭션 보고 서비스는 양식을 5개의 제출물로 계산합니다.
+* **Forms 전송:** 데이터가 AEM Forms으로 만든 모든 유형의 양식에서 전송되고 데이터가 데이터 저장소 또는 데이터베이스에 제출되면 양식 제출으로 간주됩니다. 예를 들어, 적응형 양식 제출, HTML5 양식, PDF forms 및 양식 세트는 제출된 양식으로 간주됩니다. 양식 세트의 각 양식은 제출로 간주됩니다. 예를 들어, 양식 세트에 5개의 양식이 있는 경우, 양식 세트가 제출되면 트랜잭션 보고 서비스는 양식을 5개의 제출물로 계산합니다.
 
-* **렌더링된 문서:** 문서 서비스에 대해 청구 가능한 문서 서비스 API를 사용하거나 문서 간에 문서를 변환하여 템플릿과 데이터를 결합하고, 문서에 디지털 서명 또는 인증하는 방식으로 문서를 생성하거나, 문서를 문서 렌더링으로 처리합니다.
+* **렌더링된 문서:** 템플릿 및 데이터를 결합하거나, 문서에 디지털 서명 또는 인증을 하거나, 문서 서비스에 대해 청구 가능한 문서 서비스 API를 사용하거나, 한 형식에서 다른 형식으로 문서를 변환하면 문서 렌더링으로 설명됩니다.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
 
 ## 청구 가능한 Document Services API {#billable-document-services-apis}
 
-### PDF 서비스 생성 {#generate-pdf-service}
+### PDF 서비스 {#generate-pdf-service} 생성
 
 <table>
  <tbody>
@@ -134,7 +134,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
  </tbody>
 </table>
 
-### 기록 서비스 문서(DoR 서비스) {#document-of-record-service-dor-service}
+### 레코드 서비스 문서(DoR 서비스) {#document-of-record-service-dor-service}
 
 <table>
  <tbody>
@@ -179,7 +179,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>데이터와 템플릿을 병합하여 일련의 PDF 문서를 만듭니다.</td>
    <td>처리된 문서</td>
-   <td> generatePDFOutputBatch API는 양식 템플릿을 레코드와 결합하고 PDF를 생성합니다. 일괄 레코드를 처리할 때 트랜잭션 보고 서비스는 각 레코드를 별도의 PDF 변환으로 계산합니다. <br> getGenerateManyFiles <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">플래그를 사용하여 여러 변환을</a> 단일 PDF 파일로 결합할 수 있습니다. 플래그 상태와 관계없이 서비스는 각 레코드를 별도의 PDF 변환으로 계산합니다. </td>
+   <td> generatePDFOutputBatch API는 양식 템플릿을 레코드와 결합하고 PDF를 생성합니다. 일괄 레코드를 처리할 때 트랜잭션 보고 서비스는 각 레코드를 별도의 PDF 변환으로 계산합니다. <br> getGenerateManyFilesflag를  <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"></a> 사용하여 여러 변환을 단일 PDF 파일로 결합할 수 있습니다. 플래그 상태와 관계없이 서비스는 각 레코드를 별도의 PDF 변환으로 계산합니다. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
@@ -197,7 +197,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>XDP 및 PDF 문서 집합을 PS(PostScript), PCL(프린터 명령 언어) 및 ZPL 파일 형식 세트로 변환합니다. </td>
    <td>처리된 문서</td>
-   <td> generatePDFOutputBatch API는 양식 템플릿을 레코드와 결합하고 PDF를 생성합니다. 일괄 레코드를 처리할 때 트랜잭션 보고 서비스는 각 레코드를 별도의 PDF 변환으로 계산합니다. <br> getGenerateManyFiles <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">플래그를 사용하여 여러 변환을</a> 단일 PDF 파일로 결합할 수 있습니다. 플래그 상태와 관계없이 서비스는 각 레코드를 별도의 PDF 변환으로 계산합니다. </td>
+   <td> generatePDFOutputBatch API는 양식 템플릿을 레코드와 결합하고 PDF를 생성합니다. 일괄 레코드를 처리할 때 트랜잭션 보고 서비스는 각 레코드를 별도의 PDF 변환으로 계산합니다. <br> getGenerateManyFilesflag를  <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--"></a> 사용하여 여러 변환을 단일 PDF 파일로 결합할 수 있습니다. 플래그 상태와 관계없이 서비스는 각 레코드를 별도의 PDF 변환으로 계산합니다. </td>
   </tr>
  </tbody>
 </table>
@@ -252,7 +252,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
  </tbody>
 </table>
 
-### 바코드 Forms 서비스 {#barcoded-forms-service}
+### 바르코드된 Forms 서비스 {#barcoded-forms-service}
 
 <table>
  <tbody>
@@ -283,7 +283,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">호출</a></td>
-   <td>지정된 DDX 문서를 실행하고 결과 문서를 포함하는 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> 개체를 반환합니다. </td>
+   <td>지정된 DCX 문서를 실행하고 결과 문서가 들어 있는 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> 개체를 반환합니다. </td>
    <td>처리된 문서</td>
    <td>다음 작업은 트랜잭션으로 계산되지 않습니다.
     <ul>
@@ -293,7 +293,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">호출</a></td>
-   <td>지정된 DDX 문서를 실행하고 결과 문서를 포함하는 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> 개체를 반환합니다. </td>
+   <td>지정된 DCX 문서를 실행하고 결과 문서가 들어 있는 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> 개체를 반환합니다. </td>
    <td>처리된 문서</td>
    <td>PDF 생성기, Forms 및 출력 서비스가 지원하는 모든 입력 파일 포맷, 어셈블러 서비스는 이러한 모든 포맷을 출력 파일 포맷으로 지원합니다. </td>
   </tr>
@@ -315,7 +315,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
 
 
 
-### PDF 유틸리티 서비스  {#pdf-utility-service}
+### PDF 유틸리티 서비스 {#pdf-utility-service}
 
 <table>
  <tbody>
@@ -336,7 +336,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
 
 ## 청구 가능한 데이터 캡처 API {#billable-data-capture-apis}
 
-적응형 양식, HTML5 Forms 및 양식 세트의 모든 제출 이벤트는 트랜잭션으로 간주됩니다. 기본적으로 PDF 양식 제출은 거래로 간주되지 않습니다. 제공된 [트랜잭션 레코더 API를](record-transaction-custom-implementation.md) 사용하여 PDF forms 제출을 트랜잭션으로 기록합니다.
+적응형 양식, HTML5 Forms 및 양식 세트의 모든 제출 이벤트는 트랜잭션으로 간주됩니다. 기본적으로 PDF 양식 제출은 거래로 간주되지 않습니다. 제공된 [트랜잭션 레코더 API](record-transaction-custom-implementation.md)를 사용하여 PDF forms 제출을 트랜잭션으로 기록합니다.
 
 ### 적응형 양식 {#adaptive-forms}
 
@@ -403,7 +403,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링을 위한 여러 
  </tbody>
 </table>
 
-## OSGi API에 대한 청구 가능한 인터랙티브 커뮤니케이션 및 양식 중심의 AEM 워크플로우 {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+## OSGi API에서 청구 가능한 인터랙티브 커뮤니케이션 및 양식 중심의 AEM 워크플로우{#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
 OSGi에서 양식 중심의 AEM 워크플로우의 작업 및 문서 서비스 단계를 지정하고 인터랙티브한 커뮤니케이션의 모든 변환을 지정하며 트랜잭션으로 간주합니다. 작성자 인스턴스에서 대화형 통신을 미리 보고 에이전트 UI를 사용하여 게시 인스턴스에서 미리 보는 것은 트랜잭션으로 간주되지 않습니다. 워크플로우 단계가 트랜잭션을 처리하고 워크플로우가 완료되지 않으면 트랜잭션 수가 취소되지 않습니다.
 
@@ -428,7 +428,7 @@ OSGi에서 양식 중심의 AEM 워크플로우의 작업 및 문서 서비스 �
  </tbody>
 </table>
 
-### Interactive Communication - Print Channel {#interactive-communication-print-channel}
+### 대화형 통신 - 인쇄 채널 {#interactive-communication-print-channel}
 
 <table>
  <tbody>
@@ -449,7 +449,7 @@ OSGi에서 양식 중심의 AEM 워크플로우의 작업 및 문서 서비스 �
  </tbody>
 </table>
 
-### OSGi 기반의 양식 중심의 AEM 워크플로우  {#form-centric-aem-workflows-on-osgi}
+### OSGi {#form-centric-aem-workflows-on-osgi}의 양식 중심의 AEM 워크플로우
 
 <table>
  <tbody>
@@ -478,9 +478,9 @@ OSGi에서 양식 중심의 AEM 워크플로우의 작업 및 문서 서비스 �
  </tbody>
 </table>
 
-## 사용자 지정 코드에 대한 트랜잭션으로 청구 가능한 API 기록 {#recording-billable-apis-as-transactions-for-custom-code}
+## 사용자 지정 코드 {#recording-billable-apis-as-transactions-for-custom-code}에 대한 트랜잭션으로 청구 가능한 API 기록
 
-PDF 양식 제출, 에이전트 UI를 사용하여 인터랙티브한 커뮤니케이션 미리 보기, 비표준 양식 제출 사용 및 사용자 정의 구현과 같은 작업은 트랜잭션으로 간주되지 않습니다. AEM Forms은 거래와 같은 작업을 기록하는 API를 제공합니다. 사용자 지정 구현에서 API를 호출하여 트랜잭션을 [기록할 수 있습니다](/help/forms/using/record-transaction-custom-implementation.md).
+PDF 양식 제출, 에이전트 UI를 사용하여 인터랙티브한 커뮤니케이션 미리 보기, 비표준 양식 제출 사용 및 사용자 정의 구현과 같은 작업은 트랜잭션으로 간주되지 않습니다. AEM Forms은 거래와 같은 작업을 기록하는 API를 제공합니다. 사용자 지정 구현에서 API를 호출하여 [거래](/help/forms/using/record-transaction-custom-implementation.md)를 기록할 수 있습니다.
 
 ## 관련 문서 {#related-articles}
 
