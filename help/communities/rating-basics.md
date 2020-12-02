@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 translation-type: tm+mt
 source-git-commit: b7318370c45f37a7faf5434b2de3f145b8d64bce
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 1%
 
 ---
 
 
 # 등급 필수 {#rating-essentials}
 
-집계 [](tally.md) 하위 클래스인 등급 구성 요소를 사용하면 커뮤니티 구성원이 웹 사이트의 기능을 평가할 수 있습니다.
+등급 구성 요소인 [집계](tally.md) 하위 클래스를 사용하면 커뮤니티 구성원이 웹 사이트의 기능을 평가할 수 있습니다.
 
 동일한 페이지에 투표 구성 요소의 여러 인스턴스를 배치할 수 있습니다.각 인스턴스는 고유한 `tally name` 속성으로 구성해야 합니다.
 
-등급 게시는 지원되지 않습니다. 사이트 방문자가 한 번만 등급에 참여하려면 등록하고 로그인해야 합니다. 로그인한 방문자(회원)는 언제든지 등급을 변경할 수 있습니다.
+등급의 익명 게시는 지원되지 않습니다. 사이트 방문자는 한 번만 등급에 참여하려면 등록 및 로그인해야 합니다. 로그인한 방문자(구성원)는 언제든지 등급을 변경할 수 있습니다.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -29,11 +32,11 @@ source-git-commit: b7318370c45f37a7faf5434b2de3f145b8d64bce
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td> social/tally/components/hbs/rating</td>
+   <td> 소셜/총계/구성 요소/hbs/등급</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
-   <td>예 - <i>디자인 </i>모드에서 속성을 편집할 수 있습니다.</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
+   <td>예 - 속성은 <i>design </i>모드에서 편집할 수 있습니다.</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs를</strong></a></td>
@@ -49,34 +52,34 @@ source-git-commit: b7318370c45f37a7faf5434b2de3f145b8d64bce
   </tr>
   <tr>
    <td><strong>속성</strong></td>
-   <td><p>등급 <a href="rating.md">사용 참조</a></p> </td>
+   <td><p><a href="rating.md">등급 사용</a>을 참조하십시오.</p> </td>
   </tr>
  </tbody>
 </table>
 
-* [클라이언트측 사용자 정의](client-customize.md)
+* [클라이언트측 사용자 지정](client-customize.md)
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Tally API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [총계 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [총점](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [서버측 사용자 정의](server-customize.md)
 
-### 게시된 등급(UGC) 액세스 {#accessing-posted-ratings-ugc}
+### 게시된 등급(UGC) {#accessing-posted-ratings-ugc} 액세스
 
-UGC는 중재에 대한 표준 방법 중 하나를 사용하여 중재해야 합니다.
-사용자 [생성 컨텐츠 중재를 참조하십시오](moderate-ugc.md).
+중재의 표준 방법 중 하나를 사용하여 UGC를 중재해야 합니다.
+[사용자 생성 콘텐츠 중재](moderate-ugc.md)를 참조하십시오.
 
-AEM 6.1 Communities의 경우, UGC용 [공용 스토어를](working-with-srp.md) 사용하면 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 상관없이 프로그래머틱 방식으로 UGC에 액세스할 수 있습니다.
+AEM 6.1 커뮤니티의 경우, UGC용 [일반 스토어](working-with-srp.md)를 사용하면 선택한 스토리지 옵션(예: ASRP, MSRP 또는 JSRP)에 상관없이 프로그래머틱 방식으로 UGC에 액세스할 수 있습니다.
 
-**저장소에서 UGC의 위치와 형식은 경고**&#x200B;없이 변경될 수 있습니다.
+**저장소의 UGC의 위치와 형식은 경고** 없이 변경될 수 있습니다.
 
 다음을 참조하십시오.
 
-* [스토리지 자원 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
+* [스토리지 리소스 공급자 개요](srp.md)  - 소개 및 저장소 사용 개요
 * [SRP 및 UGC Essentials](srp-and-ugc.md) - SRP 유틸리티 방법 및 예
-* [SRP를 사용하여 UGC에](accessing-ugc-with-srp.md) 액세스 - 코딩 지침
-* [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑합니다.
+* [SRP](accessing-ugc-with-srp.md)  코딩 가이드라인을 사용하여 UGC 액세스
+* [SocialUtils 리팩토링](socialutils.md)  - 유틸리티 메서드를 현재 SRP 유틸리티 메서드로 매핑하지 않습니다.
 
