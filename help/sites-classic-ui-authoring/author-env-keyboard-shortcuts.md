@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 100%
 
 ---
 
@@ -27,6 +30,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
    >
    >
 * Mac: **Cmd****를 클릭한 채**&#x200B;필수 구성 요소를 클릭합니다.
+
 >
 
 
