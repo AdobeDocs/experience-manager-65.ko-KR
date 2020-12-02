@@ -21,21 +21,21 @@ ht-degree: 0%
 
 # HTML5 양식에 사용자 정의 모양 만들기{#create-custom-appearances-in-html-forms}
 
-사용자 정의 위젯을 모바일 Forms에 연결할 수 있습니다. 기존 jQuery 위젯을 확장하거나 모양 프레임워크를 사용하여 사용자 정의 위젯을 개발할 수 있습니다. XFA 엔진은 다양한 위젯을 사용합니다. 자세한 내용은 적응형 및 HTML5 양식의 [모양 프레임워크를](/help/forms/using/introduction-widgets.md) 참조하십시오.
+사용자 정의 위젯을 모바일 Forms에 연결할 수 있습니다. 기존 jQuery 위젯을 확장하거나 모양 프레임워크를 사용하여 사용자 정의 위젯을 개발할 수 있습니다. XFA 엔진은 다양한 위젯을 사용합니다. 자세한 내용은 [적응형 및 HTML5 양식에 대한 모양 프레임워크](/help/forms/using/introduction-widgets.md)를 참조하십시오.
 
 ![기본 및 사용자 정의 위젯의 예](assets/custom-widgets.jpg)
 
 기본 및 사용자 정의 위젯의 예
 
-## HTML5 양식과 사용자 정의 위젯 통합 {#integrating-custom-widgets-with-html-forms}
+## 사용자 정의 위젯을 HTML5 양식 {#integrating-custom-widgets-with-html-forms}과 통합
 
 ### 프로필 만들기  {#create-a-profile-nbsp}
 
-프로파일을 만들거나 기존 프로파일을 선택하여 사용자 정의 위젯을 추가할 수 있습니다. 프로필 만들기에 대한 자세한 내용은 사용자 지정 프로필 [만들기를 참조하십시오](/help/forms/using/custom-profile.md).
+프로파일을 만들거나 기존 프로파일을 선택하여 사용자 정의 위젯을 추가할 수 있습니다. 프로필 만들기에 대한 자세한 내용은 [사용자 지정 프로필 만들기](/help/forms/using/custom-profile.md)를 참조하십시오.
 
-### 위젯 만들기 {#create-a-widget}
+### 위젯 {#create-a-widget} 만들기
 
-HTML5 양식은 새로운 위젯을 만들기 위해 확장할 수 있는 위젯 프레임워크의 구현을 제공합니다. 구현은 새 위젯을 작성하기 위해 확장할 수 있는 jQuery 위젯 *abstractWidget* 입니다. 새 위젯은 아래 표시된 함수를 확장/덮어쓰기해야만 작동할 수 있습니다.
+HTML5 양식은 새로운 위젯을 만들기 위해 확장할 수 있는 위젯 프레임워크의 구현을 제공합니다. 구현은 새 위젯을 작성하기 위해 확장할 수 있는 jQuery 위젯 *abstractWidget*&#x200B;입니다. 새 위젯은 아래 표시된 함수를 확장/덮어쓰기해야만 작동할 수 있습니다.
 
 <table>
  <tbody>
@@ -70,7 +70,7 @@ HTML5 양식은 새로운 위젯을 만들기 위해 확장할 수 있는 위젯
  </tbody>
 </table>
 
-위에서 만든 프로필에 위젯을 만들려면 재정의된 함수와 새로 추가된 함수를 포함하는 JavaScript 파일의 참조를 포함합니다. 예를 들어 *sliderNumericFieldWidget은* 숫자 필드에 대한 위젯입니다. 헤더 섹션의 프로필에서 위젯을 사용하려면 다음 줄을 포함합니다.
+위에서 만든 프로필에 위젯을 만들려면 재정의된 함수와 새로 추가된 함수를 포함하는 JavaScript 파일의 참조를 포함합니다. 예를 들어 *sliderNumericFieldWidget*&#x200B;은 숫자 필드에 대한 위젯입니다. 헤더 섹션의 프로필에서 위젯을 사용하려면 다음 줄을 포함합니다.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -78,7 +78,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### XFA 스크립팅 엔진을 사용하여 사용자 정의 위젯 등록  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-사용자 정의 위젯 코드가 준비되면 Form Bridge용 `registerConfig`API를 사용하여 스크립팅 엔진에 위젯을 [등록합니다](/help/forms/using/form-bridge-apis.md). widgetConfigObject가 입력으로 사용됩니다.
+사용자 정의 위젯 코드가 준비되면 [Form Bridge](/help/forms/using/form-bridge-apis.md)에 `registerConfig`API를 사용하여 스크립트 엔진에 위젯을 등록합니다. widgetConfigObject가 입력으로 사용됩니다.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
