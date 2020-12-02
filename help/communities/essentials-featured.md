@@ -18,7 +18,7 @@ ht-degree: 5%
 ---
 
 
-# 주요 컨텐츠 필수  {#featured-content-essentials}
+# 주요 콘텐츠 필수{#featured-content-essentials}
 
 이 페이지에서는 주요 컨텐츠 작업에 필요한 필수 정보를 제공합니다.
 
@@ -51,7 +51,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>주요 <a href="featured.md">콘텐츠 보기</a></td>
+   <td><a href="featured.md">주요 컨텐츠</a>를 참조하십시오.</td>
   </tr>
  </tbody>
 </table>
@@ -60,4 +60,4 @@ ht-degree: 5%
 
 ### 파일 라이브러리 기능 {#file-library-function}
 
-주요 컨텐츠 기능을 포함하는 커뮤니티 사이트 구조에는 구성된 [구성](functions.md#featured-content-function)요소가 `featured content` 포함됩니다.
+[주요 컨텐츠 함수](functions.md#featured-content-function)를 포함하는 커뮤니티 사이트 구조에는 구성된 `featured content` 구성 요소가 포함됩니다.
