@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 65%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
 
 ## 자산 {#assets}
 
-Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
+다이내믹 미디어 기능 및 Dynamic Media Classic 통합을 포함한 자산 관련 우수 사례는 다음 항목에 설명되어 있습니다.
 
 <table>
  <tbody>
@@ -52,7 +55,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대
   <tr>
    <td>동적 이미징</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">동적 이미징 우수 사례</a></td>
-   <td><p>Dynamic Media 기능을 사용하거나 Dynamic Media Classic과 통합하는 경우 최상의 결과를 위해 이미지를 선명하게 하는 방법과 이미지 품질을 최적화하는 최상의 방법을 설명합니다. </p> </td>
+   <td><p>Dynamic Media 기능을 사용하거나 Dynamic Media Classic과 통합하는 경우 최상의 결과를 위해 이미지를 선명하게 하는 방법 및 이미지 품질을 최적화하는 최상의 방법을 설명합니다. </p> </td>
   </tr>
   <tr>
    <td>다언어 자산</td>
@@ -66,10 +69,10 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대
 
 웹 사이트 컨텐츠 관리 및 작성에는 다음과 같은 몇 가지 우수 사례가 요약되어 있습니다.
 
-작성:작성 [환경 및 도구](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - 페이지 작성 방법에 대한 개요를 제공합니다.
+작성:[작성 환경 및 도구](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - 페이지를 작성하는 방법에 대한 개요를 제공합니다.
 
 ## 양식 {#forms}
 
-적응형 양식:적응형 양식 [작업을 위한](/help/forms/using/adaptive-forms-best-practices.md) 우수 사례 - 적응형 양식 설정, 작성 및 사용자 지정에 대한 우수 사례를 설명합니다.
+적응형 양식:[적응형 양식 작업 우수 사례](/help/forms/using/adaptive-forms-best-practices.md) - 적응형 양식 설정, 작성 및 사용자 지정에 대한 우수 사례를 설명합니다.
 
-HTML5 forms: [Best practices for designing HTML5 forms](/help/forms/using/best-practices-for-html5-forms.md) - Describes best practices for working on layout and design of HTML5 forms.
+HTML5 양식:[HTML5 양식 디자인 모범 사례](/help/forms/using/best-practices-for-html5-forms.md) - HTML5 양식의 레이아웃 및 디자인 작업을 위한 우수 사례를 설명합니다.
