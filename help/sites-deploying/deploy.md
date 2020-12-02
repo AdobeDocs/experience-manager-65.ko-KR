@@ -63,7 +63,7 @@ ht-degree: 7%
 
 ## 기본 개념 {#basic-concepts}
 
-### What is AEM? {#what-is-aem}
+### AEM 소개{#what-is-aem}
 
 Adobe Experience Manager는 웹 사이트 및 관련 서비스를 구축, 관리 및 배포하는 웹 기반 클라이언트 서버 시스템입니다. 여러 가지 인프라 수준 및 애플리케이션 수준의 기능을 통합된 단일 패키지에 결합합니다.
 
@@ -85,7 +85,7 @@ Adobe Experience Manager는 웹 사이트 및 관련 서비스를 구축, 관리
 
 마지막으로, 고객은 이러한 인프라와 애플리케이션 수준의 기본 요소를 사용하여 고유한 애플리케이션을 구축하여 맞춤형 솔루션을 제작할 수 있습니다.
 
-AEM 서버는 **Java 기반이며** 해당 플랫폼을 지원하는 대부분의 운영 체제에서 실행됩니다. AEM과의 모든 클라이언트 상호 작용은 **웹 브라우저를 통해 이루어집니다**.
+AEM 서버는 **Java 기반**&#x200B;이며 해당 플랫폼을 지원하는 대부분의 운영 체제에서 실행됩니다. AEM과의 모든 클라이언트 상호 작용은 **웹 브라우저**&#x200B;를 통해 수행됩니다.
 
 ### 일반적인 배포 시나리오 {#typical-deployment-scenarios}
 
@@ -106,59 +106,59 @@ AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 �
 
 * **Managed Services - Adobe Experience Manager의 클라우드 관리자**:AEM 배포 및 관리
 
-### On-premise {#on-premise}
+### 온-프레미스 {#on-premise}
 
-회사 환경의 서버에 AEM을 설치할 수 있습니다. 일반적인 설치 인스턴스는 다음과 같습니다.개발, 테스트 및 게시 환경. AEM 소프트웨어를 로컬에 설치하는 [방법에 대한 자세한 내용은 시작하기](/help/sites-deploying/deploy.md#getting%20started) 섹션을 참조하십시오.
+회사 환경의 서버에 AEM을 설치할 수 있습니다. 일반적인 설치 인스턴스는 다음과 같습니다.개발, 테스트 및 게시 환경. AEM 소프트웨어를 로컬로 설치하는 방법에 대한 자세한 내용은 [시작하기](/help/sites-deploying/deploy.md#getting%20started) 섹션을 참조하십시오.
 
-일반적인 사내 배포에 대한 자세한 내용은 권장 [배포를 참조하십시오](/help/sites-deploying/recommended-deploys.md).
+일반적인 온-프레미스 배포에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md)를 참조하십시오.
 
-### Cloud Manager를 사용하는 Managed Services {#managed-services-using-cloud-manager}
+### 클라우드 관리자를 사용하는 Managed Services {#managed-services-using-cloud-manager}
 
 AEM Managed Services은 디지털 경험 관리를 위한 완벽한 솔루션입니다. 사내 배포의 모든 제어, 보안 및 사용자 정의 이점을 유지하면서 클라우드에서 경험 전달 솔루션의 이점을 제공합니다. AEM Managed Services을 사용하면 클라우드에 배포하거나 Adobe의 모범 사례 및 지원을 활용하여 보다 신속하게 시작할 수 있습니다. 조직 및 비즈니스 사용자는 짧은 시간에 고객의 참여를 유도하고 시장 점유율을 높이며 IT에 대한 부담을 줄이면서 혁신적인 마케팅 캠페인 개발에 집중할 수 있습니다.
 
 AEM Managed Services 고객은 다음과 같은 이점을 누릴 수 있습니다.
 
-**출시 시간 단축:** 기업은 Adobe Managed Services의 유연한 클라우드 인프라를 사용하여 성공적인 디지털 경험을 신속하게 계획, 실행 및 최적화할 수 있습니다. Adobe은 추가 자본, 하드웨어 또는 소프트웨어 없이도 클라우드 아키텍처를 관리하며 Adobe의 고객 성공 엔지니어는 백엔드 앱과 go-live 모범 사례에 연결하기 위한 AEM 아키텍처, 프로비저닝, 맞춤화 작업을 지원합니다.
+**시장 출시 시간 단축:** 조직은 Adobe Managed Services의 유연한 클라우드 인프라스트럭처를 사용하여 성공적인 디지털 경험을 신속하게 계획, 실행 및 최적화할 수 있습니다. Adobe은 추가 자본, 하드웨어 또는 소프트웨어 없이도 클라우드 아키텍처를 관리하며 Adobe의 고객 성공 엔지니어는 백엔드 앱과 go-live 모범 사례에 연결하기 위한 AEM 아키텍처, 프로비저닝, 맞춤화 작업을 지원합니다.
 
-**향상된 성능:** 99.5%, 99.9%, 99.95%, 99.99% 및 99.99%의 서비스 가용성 옵션을 통해 비즈니스를 위한 안정적인 디지털 경험을 제공합니다. 또한 자동 백업 및 다중 모드 재해 복구 모델을 통해 안정성과 비상시 관리를 보장할 수 있습니다.
+**고성능의** 성능: 99.5%, 99.9%, 99.95% 및 99.99%의 서비스 가용성 옵션을 통해 비즈니스를 위한 안정적인 디지털 경험을 제공합니다. 또한 자동 백업 및 다중 모드 재해 복구 모델을 통해 안정성과 비상시 관리를 보장할 수 있습니다.
 
-**최적화된 IT 비용:** 조직은 사전 대처 방식의 능동적인 지도와 전문 지식을 통해 최신 버전의 AEM을 최신 상태로 유지할 수 있습니다. Adobe Platinum 유지 관리 및 지원은 AMS Enterprise/Basic의 새로운 배포에 자동으로 포함되며 조직은 중요한 애플리케이션을 유지 관리할 수 있도록 기술적 전문 지식과 운영 경험을 제공합니다. 무료 기본 분석 또는 Target 기능은 특히 분석 및 개인화에 대한 요구 사항이 제한적인 중간 규모 조직의 경우 추가적인 가치를 제공합니다.
+**최적화된 IT 비용:** 사전 대처 방식의 적극적인 지도와 전문성을 통해 조직은 최신 버전의 AEM을 최신 상태로 유지할 수 있습니다. Adobe Platinum 유지 관리 및 지원은 AMS Enterprise/Basic의 새로운 배포에 자동으로 포함되며 조직은 중요한 애플리케이션을 유지 관리할 수 있도록 기술적 전문 지식과 운영 경험을 제공합니다. 무료 기본 분석 또는 Target 기능은 특히 분석 및 개인화에 대한 요구 사항이 제한적인 중간 규모 조직의 경우 추가적인 가치를 제공합니다.
 
-**최고 보안:** 고객 애플리케이션을 방화벽 시스템 내부 또는 가상 비공개 클라우드 내에 제한된 액세스 시설에 호스팅하여 엔터프라이즈급 물리적, 네트워크 및 데이터 보안을 보장합니다. 강력한 데이터 스토리지 암호화, 안티바이러스 및 데이터 격리 기능을 갖춘 싱글 테넌트 방식의 가상 시스템이 포함되어 있습니다.
+**최고 보안:** 고객 애플리케이션을 제한된 액세스 시설, 방화벽 시스템 내부 또는 가상 비공개 클라우드 내부에 호스팅하여 엔터프라이즈급 물리적, 네트워크 및 데이터 보안을 보장합니다. 강력한 데이터 스토리지 암호화, 안티바이러스 및 데이터 격리 기능을 갖춘 싱글 테넌트 방식의 가상 시스템이 포함되어 있습니다.
 
 **클라우드 관리자**:Adobe Experience Manager Managed Services 솔루션의 일부인 Cloud Manager는 조직에서 클라우드에서 Adobe Experience Manager을 자체 관리할 수 있는 셀프 서비스 포털입니다. IT 팀 및 구현 파트너가 성능이나 보안을 훼손하지 않고도 사용자 정의 또는 업데이트 전달 시간을 단축할 수 있는 최첨단 지속적인 통합 및 CI/CD(연속 전달) 파이프라인이 포함되어 있습니다. Cloud Manager는 Adobe Managed Service 고객에게만 제공됩니다.
 
-Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manager 사용 안내서를 참조하십시오**](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
+Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**클라우드 관리자 사용자 안내서**](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)를 참조하십시오.
 
 ## 시작하기 {#getting-started}
 
 ### 전제 조건 {#prerequisites}
 
-프로덕션 인스턴스는 일반적으로 공식적으로 지원되는 OS를 실행하는 전용 시스템에서 실행되지만( [기술 요구](/help/sites-deploying/technical-requirements.md)사항 참조) Experience Manager 서버는 [**Java Standard Edition 8을**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)지원하는 모든 시스템에서 실제로 실행됩니다.
+프로덕션 인스턴스는 일반적으로 공식적으로 지원되는 OS를 실행하는 전용 시스템에서 실행되지만([기술 요구 사항](/help/sites-deploying/technical-requirements.md) 참조), Experience Manager 서버는 실제로 [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)을 지원하는 모든 시스템에서 실행됩니다.
 
 익숙해지거나 AEM에서 개발할 목적으로 Apple OS X 또는 Microsoft Windows 또는 Linux의 데스크탑 버전을 실행하는 로컬 시스템에 설치된 인스턴스를 사용하는 것은 매우 일반적입니다.
 
-클라이언트측에서는 AEM이 데스크탑 및 운영 체제 모두에서 모든 최신 브라우저(**Microsoft Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **** Safari8+)와 연동됩니다. 자세한 내용은 [지원되는 클라이언트 플랫폼을](/help/sites-deploying/technical-requirements.md#supported-client-platforms) 참조하십시오.
+클라이언트측에서 AEM은 데스크탑 및 태블릿 운영 모두에서 최신 버전의 모든 브라우저(**Microsoft Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **8+)와 함께 작동합니다 시스템.** 자세한 내용은 [지원되는 클라이언트 플랫폼](/help/sites-deploying/technical-requirements.md#supported-client-platforms)을 참조하십시오.
 
-### 소프트웨어 다운로드 {#getting-the-software}
+### 소프트웨어 {#getting-the-software} 가져오기
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website**](https://licensing.adobe.com/). Business partners can request download access from [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
+유효한 유지 관리 및 지원 계약을 보유한 고객은 코드가 포함된 메일 알림을 받았어야 하며, [**Adobe 라이선스 웹 사이트**](https://licensing.adobe.com/)에서 AEM을 다운로드할 수 있습니다. 비즈니스 파트너는 [**spphelp@adobe.com**](mailto:spphelp@adobe.com)&#x200B;에서 다운로드 액세스 권한을 요청할 수 있습니다.
 
 AEM 소프트웨어 패키지는
 
-* **cq-quickstart-6.5.0.jar:** 설치 및 실행에 필요한 모든 것이 포함된 독립형 실행 *jar* 파일.
+* **cq-quickstart-6.5.0.jar:** 설치 및 실행에 필요한 모든 것을 포함하는 독립 실행형 실행  ** 자르 파일입니다.
 
-* **cq-quickstart-6.5.0.war:** 타사 응용 프로그램 서버에 배포하기 위한 *전쟁* 파일입니다.
+* **cq-quickstart-6.5.0.war:** 타사  ** 응용 프로그램 서버에서 배포하기 위한 경고 파일입니다.
 
-다음 섹션에서는 **독립형 설치에 대해 설명합니다**. 응용 프로그램 서버에 AEM을 설치하는 방법에 대한 자세한 내용은 [Application Server 설치를 참조하십시오](/help/sites-deploying/application-server-install.md).
+다음 섹션에서는 **독립형 설치**&#x200B;에 대해 설명합니다. 응용 프로그램 서버에서 AEM 설치에 대한 자세한 내용은 [Application Server 설치](/help/sites-deploying/application-server-install.md)를 참조하십시오.
 
 ### 기본 로컬 설치 {#default-local-install}
 
 1. 로컬 컴퓨터에 설치 디렉토리를 만듭니다. 예:
 
-   UNIX 설치 위치: **/opt/aem**
+   UNIX 설치 위치:**/opt/aem**
 
-   Windows 설치 위치: **`C:\Program Files\aem`**
+   Windows 설치 위치:**`C:\Program Files\aem`**
 
    또한 데스크탑에 있는 폴더에 샘플 인스턴스를 설치하는 것이 일반적입니다. 어떤 경우든 이 위치를 일반적으로 다음과 같이 나타낼 것입니다.
 
@@ -174,7 +174,7 @@ AEM 소프트웨어 패키지는
        license.properties
    ```
 
-   파일을 제공하지 않으면 AEM에서 시작 시 브라우저를 `license.properties` 시작 **** 화면으로 리디렉션하고 라이센스 키를 입력할 수 있습니다. 아직 라이센스 키가 없는 경우 Adobe에서 유효한 라이센스 키를 요청해야 합니다.
+   `license.properties` 파일을 제공하지 않으면 AEM에서는 시작 시 브라우저를 **시작** 화면으로 리디렉션하고 여기서 라이센스 키를 입력할 수 있습니다. 아직 라이센스 키가 없는 경우 Adobe에서 유효한 라이센스 키를 요청해야 합니다.
 
 1. GUI 환경에서 인스턴스를 시작하려면 **`cq-quickstart-6.5.0.jar`** 파일을 두 번 클릭합니다.
 
@@ -192,19 +192,19 @@ AEM 소프트웨어 패키지는
 
 AEM에서 jar 파일의 압축을 풀고, 직접 설치하고, 시작하는 데 몇 분이 소요됩니다. 위의 절차는 다음과 같습니다.
 
-* aem **작성자** 인스턴스
-* localhost에서 **실행**
+* **AEM author** 인스턴스
+* **localhost**&#x200B;에서 실행
 * 포트 **4502**
 
 인스턴스에 액세스하려면 브라우저가 다음을 수행해야 합니다.
 
 **`https://localhost:4502`**
 
-작성자 인스턴스의 결과는 **게시 인스턴스에 연결되도록 자동으로** 구성됩니다 **`localhost:4503`**.
+작성자 인스턴스의 결과는 **의 게시 인스턴스**&#x200B;에 연결되도록 자동으로 구성됩니다.**`localhost:4503`**
 
 ### 작성자 및 게시 설치 {#author-and-publish-installs}
 
-기본 설치( **작성자** 인스턴스 **`localhost:4502`**)는 처음 실행하기 전에 파일 이름을 변경하여 변경할 `jar` 수 있습니다. 이름 지정 패턴은 다음과 같습니다.
+**`localhost:4502`**&#x200B;의 기본 설치(**author** 인스턴스)는 처음 실행하기 전에 `jar` 파일의 이름을 변경하여 변경할 수 있습니다. 이름 지정 패턴은 다음과 같습니다.
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
@@ -212,13 +212,13 @@ AEM에서 jar 파일의 압축을 풀고, 직접 설치하고, 시작하는 데 
 
 **`cq-author-p4502.jar`**
 
-이렇게 실행하면 작성자 인스턴스가 실행 중인 상태가 됩니다 **`localhost:4502`**.
+그리고 실행하면 작성자 인스턴스가 **`localhost:4502`**&#x200B;에서 실행됩니다.
 
 마찬가지로 파일 이름 바꾸기 및 실행
 
 **`cq-publish-p4503.jar`**
 
-이 실행되면 게시 인스턴스가 실행됩니다 **`localhost:4503`**.
+게시 인스턴스가 **`localhost:4503`**&#x200B;에서 실행됩니다.
 
 예를 들어
 
@@ -231,9 +231,9 @@ AEM에서 jar 파일의 압축을 풀고, 직접 설치하고, 시작하는 데 
 * [사용자 지정 독립형 설치](/help/sites-deploying/custom-standalone-install.md)
 * [실행 모드](/help/sites-deploying/configure-runmodes.md)
 
-### 설치 디렉토리 압축 해제 {#unpacked-install-directory}
+### 설치 디렉터리 {#unpacked-install-directory} 압축 해제
 
-quickstart jar가 처음 실행되면, 라는 새로운 하위 디렉토리 아래에 있는 동일한 디렉토리에 자동으로 압축이 풀립니다 `crx-quickstart`. 다음과 같이 끝나야 합니다.
+quickstart jar가 처음 실행되면 `crx-quickstart`이라는 새로운 하위 디렉토리 아래에 있는 동일한 디렉토리에 자동으로 압축이 풀립니다. 다음과 같이 끝나야 합니다.
 
 ```xml
 <aem-install>/
@@ -263,15 +263,15 @@ quickstart jar가 처음 실행되면, 라는 새로운 하위 디렉토리 아�
 
 >[!NOTE]
 >
->심링크 사용 시 symlink 관련 [문제를 살펴보십시오](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
+>symlinks를 사용하는 경우 symlink](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html)과(와) 관련된 [문제를 확인하십시오.
 
 ### 시작 및 중지 {#starting-and-stopping}
 
 AEM의 압축을 풀고 처음 시작한 경우 설치 디렉토리에서 jar 파일을 두 번 클릭하기만 하면 인스턴스가 다시 시작되지 않습니다.
 
-GUI에서 인스턴스를 중지하려면 데스크탑 애플리케이션 창에서 **켜기/끄기** 스위치를 클릭하면 됩니다.
+GUI에서 인스턴스를 중지하려면 데스크탑 애플리케이션 창에서 **on/off** 스위치를 클릭하면 됩니다.
 
-명령줄에서 AEM을 중지하고 시작할 수도 있습니다. 인스턴스를 처음 설치했다고 가정할 경우 **명령줄 스크립트가** 여기에 있습니다.
+명령줄에서 AEM을 중지하고 시작할 수도 있습니다. 인스턴스를 처음 설치했다고 가정할 경우 **명령줄 스크립트**&#x200B;는 다음 위치에 있습니다.
 
 **`<aem-install>/crx-quickstart/bin/`**
 
@@ -282,7 +282,7 @@ GUI에서 인스턴스를 중지하려면 데스크탑 애플리케이션 창에
 * **`status`**:인스턴스의 상태를 보고합니다.
 * **`quickstart`**:필요한 경우 시작 정보를 구성하는 데 사용됩니다.
 
-Windows용 동등한 **`bat`** 파일도 있습니다. 자세한 내용은 다음을 참조하십시오.
+Windows용 **`bat`** 파일도 마찬가지입니다. 자세한 내용은 다음을 참조하십시오.
 
 * [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
 
@@ -320,4 +320,4 @@ AEM은 웹 브라우저를 적절한 페이지(일반적으로 로그인 페이�
 * [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
 * [성능 지침](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 시작하기](/help/mobile/getting-started-aem-mobile.md)
-* [AEM Screens 소개](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [AEM Screens 소개](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
