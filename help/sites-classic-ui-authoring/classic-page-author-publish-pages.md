@@ -12,6 +12,9 @@ discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1069'
+ht-degree: 80%
 
 ---
 
@@ -29,11 +32,11 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 >게시와 관련된 특정 용어는 헷갈릴 수 있습니다.
 >
 >* **게시/게시 취소**
-   >  게시 환경에서 컨텐츠를 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업에 대한 기본 용어입니다.
+   >  이 용어는 컨텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
    >
    >
 * **활성화/비활성화**
-   >  이러한 용어는 게시/게시 취소와 동의어입니다.
+   >  게시/게시 취소와 동의어입니다.
    >
    >
 * **복제**
@@ -48,6 +51,7 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 >
 >* 게시할 요청을 적절한 사람에게 알리도록 워크플로우가 트리거됩니다.
 >* 이를 알리는 메시지가 잠깐 동안 표시됩니다.
+
 >
 
 
@@ -70,7 +74,7 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 1. 웹 사이트 콘솔에서 활성화할 페이지를 선택합니다.
 1. 상단 메뉴 또는 선택한 페이지 항목의 드롭다운 메뉴에서 **활성화**&#x200B;를 선택합니다.
 
-   페이지의 컨텐츠와 모든 하위 페이지를 활성화하려면 [**도구&#x200B;**콘솔](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite)을 사용합니다.
+   페이지의 컨텐츠와 모든 하위 페이지를 활성화하려면 [**도구** 콘솔](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite)을 사용합니다.
 
    ![screen_shot_2012-02-08at13817pm](assets/screen_shot_2012-02-08at13817pm.png)
 
@@ -118,7 +122,7 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 나중에 활성화를 예약하려면
 
 1. 웹 사이트 콘솔에서 **활성화** 메뉴로 이동하고 **나중에 활성화**&#x200B;를 선택합니다.
-1. In the dialog that opens you provide the date and time for activation and click **OK**. This creates a version of the page that is activated at the specified time.
+1. 대화 상자가 열리면 활성화 날짜와 시간을 지정하고 **확인**&#x200B;을 클릭합니다.이렇게 하면 지정된 시간에 활성화되는 페이지 버전이 만들어집니다.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
@@ -126,13 +130,13 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
 이 활성화/비활성화를 취소하려면 [워크플로우 콘솔](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd)로 가서 해당 워크플로우를 종료합니다.
 
-### 나중에 비활성화 {#deactivate-later}
+### 나중에 비활성화  {#deactivate-later}
 
-나중에 비활성화를 예약하려면
+나중에 비활성화하도록 예약하려면
 
-1. In the Website console, go to the **Deactivate** menu, and select **Deactivate later**.
+1. 웹 사이트 콘솔에서 **비활성화** 메뉴로 이동하고 **나중에 비활성화**&#x200B;를 선택합니다.
 
-1. In the dialog that opens you provide the date and time for deactivation and click **OK**.
+1. 대화 상자가 열리면 비활성화 날짜 및 시간을 지정하고 **확인**&#x200B;을 클릭합니다.
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
@@ -140,7 +144,7 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
 이 비활성화를 취소하려면 [워크플로우 콘솔](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd)로 가서 해당 워크플로우를 종료합니다.
 
-## 예약된 활성화/비활성화(설정/해제 시간) {#scheduled-activation-deactivation-on-off-time}
+## 예약된 활성화/비활성화(설정/해제 시간)  {#scheduled-activation-deactivation-on-off-time}
 
 **페이지 속성**&#x200B;에 정의할 수 있는 **설정 시간** 및 [해제 시간](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)을 사용하여 페이지를 게시/게시 취소할 시간을 예약할 수 있습니다.
 
@@ -148,21 +152,21 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
 [웹 사이트 콘솔](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)에서 상태를 볼 수 있습니다. 색상은 게시 상태를 가리킵니다.
 
-## 웹 사이트의 전체 섹션(트리) 활성화 {#activating-a-complete-section-tree-of-your-website}
+## 웹 사이트의 전체 섹션(트리) 활성화  {#activating-a-complete-section-tree-of-your-website}
 
 **웹 사이트** 탭에서 개별 페이지를 활성화할 수 있습니다. 동일한 루트 페이지 아래에서 수많은 컨텐츠 페이지를 입력하거나 업데이트한 경우 전체 트리를 한 번에 활성화하면 더욱 편리할 수 있습니다. 연습 실행을 통해 활성화를 에뮬레이션하여 활성화될 페이지를 강조할 수도 있습니다.
 
-1. Open the **Tools** console by selecting it from the **Welcome** page and then double-click **Replication** to open the console ( `https://localhost:4502/etc/replication.html`).
+1. **도구** 콘솔을 **시작** 페이지에서 선택한 다음 **복제**&#x200B;를 두 번 클릭하여 콘솔을 엽니다( `https://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. **복제** 콘솔에서 **트리 활성화**&#x200B;를 클릭합니다.
 
-   The following window ( `https://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
+   다음 창( `https://localhost:4502/etc/replication/treeactivation.html`)이 표시됩니다.
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Enter the **Start Path**. This specifies the path to the root of the section you want to activate (publish). This page and all pages underneath are considered for activation (or used in the emulation if a Dry Run is selected).
+1. **시작 경로**&#x200B;를 입력합니다.활성화(게시)할 섹션의 루트 경로를 지정합니다. 이 페이지와 모든 하위 페이지가 활성화 대상으로 선택되거나 연습 실행을 선택한 경우 에뮬레이션에 사용됩니다.
 1. 필요한 선택 기준을 활성화합니다.
 
    * **수정된 항목만**: 수정된 페이지만 활성화합니다.
@@ -171,6 +175,6 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
 1. 수행할 작업을 선택합니다.
 
-   1. Select **Dry Run** if you want to check which pages *would* be activated. This is only an emulation, no pages will be activated.
+   1. *활성화될 페이지*&#x200B;를 확인하려면 **연습 실행**&#x200B;을 선택합니다.단순히 에뮬레이션일 뿐 페이지가 활성화되지 않습니다.
 
-   1. Select **Activate** if you want to activate the pages.
+   1. 페이지를 활성화하려면 **활성화**&#x200B;를 선택합니다.
