@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-SRP(Storage Resource Provider) 및 UGC(User-Generated Content)와의 관계에 익숙하지 않은 경우 [Community Content Storage](working-with-srp.md) and [Storage Resource Provider Overview를 참조하십시오](srp.md).
+SRP(Storage Resource Provider) 및 UGC(User-Generated Content)와의 관계에 익숙하지 않은 경우 [Community Content Storage](working-with-srp.md) 및 [Storage Resource Provider Overview](srp.md)을 방문하십시오.
 
 설명서의 이 섹션에서는 SRP 및 UGC에 대한 몇 가지 필수 정보를 제공합니다.
 
@@ -38,15 +38,15 @@ SRP API는 추상 클래스가 아니라 인터페이스입니다. 새 릴리스
 
 SRP API를 사용하는 방법은 SocialResourceUtilities 패키지에 있는 유틸리티와 같이 제공된 유틸리티를 통해 제공됩니다.
 
-AEM 6.0 이전 버전에서 업그레이드하는 경우 오픈 소스 도구를 사용할 수 있는 모든 SRP에 대해 UGC를 마이그레이션해야 합니다. See [Upgrading to AEM Communities 6.3](upgrade.md).
+AEM 6.0 이전 버전에서 업그레이드하는 경우 오픈 소스 도구를 사용할 수 있는 모든 SRP에 대해 UGC를 마이그레이션해야 합니다. [AEM Communities 6.3](upgrade.md)으로 업그레이드를 참조하십시오.
 
 >[!NOTE]
 >
 >이전에는 UGC에 액세스하기 위한 유틸리티가 더 이상 존재하지 않는 SocialUtils 패키지에서 발견되었습니다.
 >
->대체 유틸리티에 대해서는 SocialUtils [리팩토링을 참조하십시오](socialutils.md).
+>대체 유틸리티에 대해서는 [SocialUtils 리팩토링](socialutils.md)을 참조하십시오.
 
-## UGC에 액세스하기 위한 유틸리티 방법 {#utility-method-to-access-ugc}
+## UGC {#utility-method-to-access-ugc}에 액세스하는 유틸리티 메서드
 
 UGC에 액세스하려면 SRP의 UGC에 액세스하기 위한 경로를 반환하고 SocialUtils 패키지에 있는 더 이상 사용되지 않는 방법을 대체하는 SocialResourceUtilities 패키지의 메서드를 사용하십시오.
 
@@ -65,13 +65,13 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 }
 ```
 
-다른 SocialUtils 교체에는 SocialUtils [리팩토링을 참조하십시오](socialutils.md).
+다른 SocialUtils 대체에 대해서는 [SocialUtils 리팩토링](socialutils.md)을 참조하십시오.
 
-코딩 지침을 보려면 SRP를 [사용하여 UGC 액세스를 참조하십시오](accessing-ugc-with-srp.md).
+코딩 지침을 보려면 [SRP](accessing-ugc-with-srp.md)로 UGC 액세스를 참조하십시오.
 
 >[!CAUTION]
 >
->경로 resourceToUGCtoragePath()가 반환하는 것은 *ACL 확인에 적합하지* 않습니다 [](srp.md#for-access-control-acls).
+>경로 resourceToUGCStoragePath()가 반환하는 경우 [ACL 검사](srp.md#for-access-control-acls)에 적합하지 않은 *입니다.*
 
 ## ACL에 액세스하는 유틸리티 메서드 {#utility-method-to-access-acls}
 
@@ -98,38 +98,38 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->resourceToACLPath()가 반환하는 경로는 UGC *자체에 액세스하는 데 적합하지* 않습니다 [](#utility-method-to-access-acls) .
+>resourceToACLPath()가 반환하는 경로는 UGC](#utility-method-to-access-acls) 자체에 액세스하는 데 적합한 *이 아닌*&#x200B;입니다.[
 
-## UGC 관련 스토리지 위치 {#ugc-related-storage-locations}
+## UGC 관련 저장소 위치 {#ugc-related-storage-locations}
 
-JSRP 또는 MSRP를 사용하여 개발하는 경우 스토리지 위치에 대한 다음 설명은 도움이 될 수 있습니다. 현재 ASRP([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) 및 MSRP(MongoDB 도구)용 UI이므로 ASRP에 저장된 UGC에 액세스할 수 있는 UI가 없습니다.
+JSRP 또는 MSRP를 사용하여 개발하는 경우 스토리지 위치에 대한 다음 설명은 도움이 될 수 있습니다. 현재 ASRP([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) 및 MSRP(MongoDB 도구)에 대한 UGC에 저장된 UI에 액세스할 수 있는 UI가 없습니다.
 
 **구성 요소 위치**
 
 멤버가 게시 환경에서 UGC에 입장하면 AEM 사이트의 일부로 구성 요소와 상호 작용합니다.
 
-이러한 구성 요소의 예는 [커뮤니티 구성 요소 안내서](http://localhost:4502/content/community-components/en/comments.html) 사이트에 있는 주석 구성 요소입니다 [](components-guide.md) . 로컬 저장소의 주석 노드에 대한 경로는 다음과 같습니다.
+이러한 구성 요소의 예는 [커뮤니티 구성 요소 안내서](components-guide.md) 사이트에 있는 [댓글 구성 요소](http://localhost:4502/content/community-components/en/comments.html)입니다. 로컬 저장소의 주석 노드에 대한 경로는 다음과 같습니다.
 
-* Component path = `/content/community-components/en/comments/jcr:content/content/includable/comments`
+* 구성 요소 경로 = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **그림자 노드 위치**
 
-또한 UGC를 만들면 필요한 ACL이 적용되는 [그림자](srp.md#about-shadow-nodes-in-jcr) 노드가 만들어집니다. 로컬 저장소의 해당 그림자 노드에 대한 경로는 구성 요소 경로에 대한 그림자 노드 루트 경로를 미리 대기한 결과입니다.
+또한 UGC를 만들면 필요한 ACL이 적용되는 [그림자 노드](srp.md#about-shadow-nodes-in-jcr)가 만들어집니다. 로컬 저장소의 해당 그림자 노드에 대한 경로는 구성 요소 경로에 대한 그림자 노드 루트 경로를 미리 대기한 결과입니다.
 
 * 루트 경로 = `/content/usergenerated`
 * 주석 그림자 노드 = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **UGC 위치**
 
-UGC는 두 위치 모두에서 생성되므로 SRP API를 호출하는 [유틸리티 방법을](#utility-method-to-access-ugc) 사용해서만 액세스해야 합니다.
+UGC는 두 위치 모두에서 생성되므로 SRP API를 호출하는 [유틸리티 메서드](#utility-method-to-access-ugc)를 사용해서만 액세스해야 합니다.
 
 * 루트 경로 = `/content/usergenerated/asi/srp-choice`
 * JSRP용 UGC 노드 = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*JSRP의 경우* UGC 노드는 *입력된 AEM 인스턴스(작성자 또는 게시)에만* 존재합니다. 게시 인스턴스에 입력하는 경우 작성자의 중재 콘솔에서 중재를 사용할 수 없습니다.
+*JSRP의 경우 UGC 노드는*  ** 입력된 AEM 인스턴스(작성자 또는 게시)에만 있습니다. 게시 인스턴스에 입력하는 경우 작성자의 중재 콘솔에서 중재를 사용할 수 없습니다.
 
 ## 관련 정보 {#related-information}
 
-* [스토리지 리소스 공급자 개요](srp.md) - 소개 및 저장소 사용 개요
-* [SRP를 사용하여 UGC](accessing-ugc-with-srp.md) 액세스 - 코딩 가이드라인.
-* [SocialUtils 리팩토링](socialutils.md) - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑합니다.
+* [스토리지 리소스 공급자 개요](srp.md)  - 소개 및 저장소 사용 개요
+* [SRP](accessing-ugc-with-srp.md)  - 코딩 가이드라인을 사용하여 UGC 액세스
+* [SocialUtils 리팩토링](socialutils.md)  - 사용되지 않는 유틸리티 메서드를 현재 SRP 유틸리티 메서드에 매핑합니다.
