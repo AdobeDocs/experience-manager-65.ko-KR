@@ -16,14 +16,14 @@ ht-degree: 0%
 ---
 
 
-# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
+# 다이내믹 미디어 자산 게시 {#publishing-dynamic-media-assets}
 
-이미 업로드한 자산을 선택하고 게시 또는 **[!UICONTROL 빠른 게시를 탭하여 Dynamic Media]** 자산을 **[!UICONTROL 게시합니다.]** Dynamic Media 에셋이 게시된 후에는 URL을 통해 웹 페이지에 포함하거나 페이지에 코드를 포함시켜 사용할 수 있습니다.
+이미 업로드한 자산을 선택하고 **[!UICONTROL 게시]** 또는 **[!UICONTROL 빠른 게시를 눌러 Dynamic Media 자산을 게시합니다.]** Dynamic Media 에셋이 게시된 후에는 URL을 통해 웹 페이지에 포함하거나 페이지에 코드를 포함시켜 사용할 수 있습니다.
 
-또한 사용자가 개입하지 않고도 업로드한 자산을 즉시 게시할 수 있습니다. See [Configuring Dynamic Media - Scene7 mode.](config-dms7.md)
-또는 폴더 수준에서 선택적 게시를 사용하여 서로 배타적인 Dynamic Media 또는 AEM에 선택적으로 **[!UICONTROL 에셋을 게시할]** 수 있습니다. 동적 [미디어에서 선택적 게시 작업을 참조하십시오.](/help/assets/selective-publishing.md)
+또한 사용자가 개입하지 않고도 업로드한 자산을 즉시 게시할 수 있습니다. [다이내믹 미디어 구성 - Scene7 모드를 참조하십시오.](config-dms7.md)
+또는 폴더 수준에서 선택적 게시 **[!UICONTROL 를 사용하여 선택적으로 Dynamic Media 또는 AEM에 에셋을 게시할 수]** 있습니다. [동적 미디어에서 선택적 게시 작업을 참조하십시오.](/help/assets/selective-publishing.md)
 
-[ **[!UICONTROL 카드 보기]**]에서 자산 이름 바로 아래에, 게시되었음을 나타내는 작은 둥근 모양 아이콘이 날짜와 시간 왼쪽에 표시됩니다. 목록 보기 **[!UICONTROL 에서]**&#x200B;게시된 **** 열은 게시되었거나 게시되지 않은 자산을 나타냅니다.
+**[!UICONTROL 카드 보기]**&#x200B;에서 작은 둥근 아이콘이 자산 이름 바로 아래에 나타나고 게시되었음을 나타내는 날짜와 시간 왼쪽에 나타납니다. **[!UICONTROL 목록 보기]**&#x200B;에서 **[!UICONTROL 게시된]** 열은 게시되었거나 게시되지 않은 자산을 나타냅니다.
 
 >[!NOTE]
 >
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 비디오 에셋을 인코딩한 후 즉시 게시하려면 인코딩이 완전히 완료되었는지 확인하십시오. 비디오를 인코딩하는 동안 시스템에서 비디오 처리 워크플로가 진행 중임을 알 수 있습니다. 비디오 인코딩이 완료되면 비디오 변환을 미리 볼 수 있어야 합니다. 이때 게시 오류를 발생시키지 않고 비디오를 게시할 수 있습니다.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+[웹 응용 프로그램에 URL 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
 
-See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed-code.md)
+웹 페이지에 [다이내믹 미디어 비디오 또는 이미지 뷰어 포함 참조](embed-code.md)
 
 >[!NOTE]
 >
@@ -44,10 +44,10 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 
 
 
-세트 또는 자산 게시에 대한 자세한 내용은 자산 [게시를 참조하십시오.](manage-assets.md)
+세트 또는 자산 게시에 대한 자세한 내용은 [자산 게시를 참조하십시오.](manage-assets.md)
 
-## 다이내믹 미디어 자산의 HTTP/2 전달 {#http-delivery-of-dynamic-media-assets}
+## 다이내믹 미디어 자산의 HTTP/2 배달 {#http-delivery-of-dynamic-media-assets}
 
 AEM은 이제 HTTP/2를 통해 모든 다이내믹 미디어 컨텐츠(이미지 및 비디오)의 배달을 지원합니다. 즉, 이미지나 비디오에 대해 게시된 URL 또는 포함 코드는 호스팅된 자산을 허용하는 모든 응용 프로그램과 통합할 수 있습니다. 그런 다음 게시된 자산은 HTTP/2 프로토콜을 통해 전달됩니다. 이 전달 방법은 브라우저와 서버의 통신 방식을 개선하여 모든 Dynamic Media 자산의 응답 및 로드 시간을 향상시킵니다.
 
-자세한 내용은 FAQ [의 HTTP/2 제공을](/help/sites-administering/scene7-http2faq.md) 참조하십시오.
+자세한 내용은 FAQ](/help/sites-administering/scene7-http2faq.md)에 대한 [HTTP/2 제공을 참조하십시오.
