@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 1%
 
 ---
 
@@ -19,21 +22,21 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Trust Store Management를 사용하여 CRL(인증서 해지 목록)을 가져오고 편집 및 삭제할 수 있습니다. Base64 및 DER 인코딩 인증서 해지 목록이 지원됩니다.
 
-## CRL 가져오기 {#import-a-crl}
+## CRL {#import-a-crl} 가져오기
 
-1. 관리 콘솔에서 설정 > 트러스트 저장소 관리 > 인증서 해지 목록을 클릭한 다음 가져오기를 클릭합니다.
+1. 관리 콘솔에서 설정 > Trust Store 관리 > 인증서 해지 목록을 클릭한 다음 가져오기를 클릭합니다.
 1. 별칭 상자에 CRL의 식별자를 입력합니다.
 1. 찾아보기를 클릭하여 CRL을 찾은 다음 확인을 클릭합니다.
 
-## CRL 내보내기 {#export-a-crl}
+## CRL {#export-a-crl} 내보내기
 
-1. 관리 콘솔에서 설정 > 트러스트 저장소 관리 > 인증서 해지 목록을 클릭합니다.
+1. 관리 콘솔에서 설정 > 신뢰 저장소 관리 > 인증서 해지 목록을 클릭합니다.
 1. 내보낼 CRL의 별칭 이름을 클릭한 다음 내보내기를 클릭합니다.
 1. 지침에 따라 CRL을 내보냅니다. CRL은 Base64 인코딩으로 내보내집니다.
 1. 확인을 클릭합니다.
 
-## CRL 삭제 {#delete-a-crl}
+## CRL {#delete-a-crl} 삭제
 
-1. 관리 콘솔에서 설정 > 트러스트 저장소 관리 > 인증서 해지 목록을 클릭합니다.
-1. 삭제할 CRL의 확인란을 선택하고 삭제를 클릭한 다음 확인을 클릭합니다.
+1. 관리 콘솔에서 설정 > 신뢰 저장소 관리 > 인증서 해지 목록을 클릭합니다.
+1. 삭제할 CRL에 대한 확인란을 선택하고 삭제를 클릭한 다음 확인을 클릭합니다.
 
