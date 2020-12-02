@@ -21,15 +21,15 @@ ht-degree: 3%
 
 # 중재 콘솔 {#moderation-console}
 
-AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정된 신뢰할 수 있는 커뮤니티 구성원)가 만든 환경과 게시 환경 모두에서 커뮤니티 콘텐츠 [](/help/communities/moderate-ugc.md) 를 일괄 중재할 수 있습니다.
+AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정된 신뢰할 수 있는 커뮤니티 구성원)가 커뮤니티 콘텐츠[의 일괄 중재를 작성자 및 게시 환경 모두에서 사용할 수 있습니다.](/help/communities/moderate-ugc.md)
 
-관리자 및 커뮤니티 중재자는 게시 환경 [에서 상황에 맞는 중재를](/help/communities/in-context.md) 수행할 수도 있습니다.
+관리자 및 커뮤니티 중재자는 게시 환경에서 [in-context 중재](/help/communities/in-context.md)도 수행할 수 있습니다.
 
-모든 [커뮤니티 사이트의](/help/communities/sites-console.md) 기능은 관리자 권한으로 로그인한 사용자가 사용할 수 있는 `Administration` 메뉴 항목입니다. 이 `Administration` 링크를 통해 중재 콘솔에 액세스할 수 있습니다.
+모든 [커뮤니티 사이트](/help/communities/sites-console.md)의 기능은 관리자 권한으로 로그인한 사용자가 사용할 수 있는 `Administration` 메뉴 항목입니다. `Administration` 링크는 중재 콘솔에 대한 액세스를 제공합니다.
 
 중재 콘솔에서 관리자 및 커뮤니티 중재자는 중재할 권한이 있는 모든 사용자 생성 콘텐츠(UGC)에 액세스할 수 있습니다. 여러 사이트를 중재할 수 있도록 허용된 경우 모든 사이트의 게시물을 보거나 선택한 커뮤니티 사이트별로 필터링할 수 있습니다.
 
-자세한 내용은 사용자 및 사용자 그룹 [관리를 참조하십시오](/help/communities/users.md).
+자세한 내용은 [사용자 및 사용자 그룹 관리](/help/communities/users.md)를 참조하십시오.
 
 중재 콘솔에서는 다음을 지원합니다.
 
@@ -38,7 +38,7 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 * UGC 세부 사항 보기.
 * UGC 작성자 세부 사항 보기.
 
-관리자 또는 함께 로그인한 경우에만 중재 작업을 수행할 수 ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`있습니다.
+관리자로 로그인하거나 ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`이(가) 있는 구성원만 중재 작업을 수행할 수 있습니다.
 
 ## 게시 환경 액세스 {#publish-environment-access}
 
@@ -54,13 +54,13 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 작성 환경에서 중재 콘솔에 도달하려면
 
-* 전역 탐색에서 **[!UICONTROL 커뮤니티]** > **[!UICONTROL 중재를 선택합니다]**.
+* 전역 탐색에서 **[!UICONTROL 커뮤니티]** > **[!UICONTROL 중재]**&#x200B;를 선택합니다.
 
-관리자로 로그인하거나 [중재자 권한이 있는](/help/communities/in-context.md#identifyingtrustedmembers)구성원으로만 중재 작업을 수행할 수 있습니다. 표시된 유일한 커뮤니티 컨텐츠는 로그인한 구성원이 중재할 수 있다는 것입니다.
+관리자로 로그인하거나 [중재자 권한](/help/communities/in-context.md#identifyingtrustedmembers)을(를) 가진 구성원으로서 로그인하는 경우에만 중재 작업을 수행할 수 있습니다. 표시된 유일한 커뮤니티 컨텐츠는 로그인한 구성원이 중재할 수 있다는 것입니다.
 
 >[!NOTE]
 >
->선택한 SRP가 공용 스토어를 구현하는 경우에만 게시 환경의 UGC가 작성자에게만 표시됩니다. 예를 들어 기본적으로 JSRP는 작성자 및 게시를 위한 일반적인 스토어가 아닙니다. 커뮤니티 [컨텐츠 저장소를 참조하십시오](/help/communities/working-with-srp.md).
+>선택한 SRP가 공용 스토어를 구현하는 경우에만 게시 환경의 UGC가 작성자에게만 표시됩니다. 예를 들어 기본적으로 JSRP는 작성자 및 게시를 위한 일반적인 스토어가 아닙니다. [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md)를 참조하십시오.
 
 ![moderationconsole 작성자](assets/moderationconsoleauthor.png)
 
@@ -72,21 +72,23 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 * **[도구 모음](#toolbar)**
 * **[컨텐츠 영역](#content-area)**
 
-### Top Navigation Bar {#top-navigation-bar}
+### 위쪽 탐색 막대 {#top-navigation-bar}
 
-상단 내비게이션 막대는 모든 콘솔에 대해 일정합니다. 자세한 내용은 [기본 처리를 참조하십시오](/help/sites-authoring/basic-handling.md).
+상단 내비게이션 막대는 모든 콘솔에 대해 일정합니다. 자세한 내용은 [기본 처리](/help/sites-authoring/basic-handling.md)를 참조하십시오.
 
 ### 도구 모음 {#toolbar}
 
 위쪽 내비게이션 막대 아래에 있는 도구 모음은 왼쪽에 다음과 같은 전환 스위치를 제공합니다.
 
-* [필터 레일에](/help/communities/moderation.md#filterrail)는 컨텐츠를 필터링할 속성을 선택할 수 있는 레일이 열립니다.
+* [필터 ](/help/communities/moderation.md#filterrail)
+레일에서는 컨텐츠를 필터링할 속성을 선택할 수 있는 레일을 엽니다.
 
 위쪽 내비게이션 막대 아래에 있는 도구 모음은 왼쪽에 다음과 같은 전환 스위치를 제공합니다.
 
 ![토글스마녀들](assets/toggleswitch.png)
 
-[필터 레일에](/help/communities/moderation.md#filterrail)는 검색을 선택하면 레일이 열리고 컨텐츠를 필터링할 속성을 선택할 수 있습니다.
+[필터 ](/help/communities/moderation.md#filterrail)
+레일에서는 검색을 선택하면 컨텐츠를 필터링할 속성을 선택할 수 있는 레일을 엽니다.
 
 ![필레](assets/filterrail.png)
 
@@ -100,13 +102,13 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 * 게시물의 위치입니다.
 * 게시되었을 때
 * 게시물에 대한 답글 수입니다.
-* [게시물과 연관된 감정](/help/communities/moderate-ugc.md#sentiment)
+* [게시물과 ](/help/communities/moderate-ugc.md#sentiment) 연결된 센티멘트
 * 승인되면 확인 표시가 표시됩니다.
 * 첨부 파일이 있는 경우 페이퍼클립이 표시됩니다.
 
 >[!NOTE]
 > 
->콘텐트 영역에는 *무한 스크롤이*&#x200B;적용되어 있으므로 콘텐츠의 끝에 도달할 때까지 계속 스크롤할 수 있습니다. 도구 모음은 스크롤하는 동안에도 컨텐츠 영역 위에 고정되고 보이는 위치에 남아 있습니다.
+>콘텐트 영역에는 *무한 스크롤*&#x200B;이(가) 있습니다. 즉, 컨텐츠의 끝에 도달할 때까지 계속 스크롤할 수 있습니다. 도구 모음은 스크롤하는 동안에도 컨텐츠 영역 위에 고정되고 보이는 위치에 남아 있습니다.
 
 ### 필터 레일 {#ootbfilters}
 
@@ -114,11 +116,11 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 사이드 패널 아이콘이 필터 레일을 엽니다. 컨텐츠 영역의 왼쪽에 표시되는 필터 레일은 서로 다른 필터를 제공하므로 각 필터는 컨텐츠 영역에 나타나는 참조된 UGC에 즉시 영향을 줍니다.
 
-각 카테고리 내의 필터는 **OR**&#x200B;이 함께 사용되고, 다른 카테고리의 필터는 **AND**&#x200B;이함께 사용됩니다.
+각 카테고리 내의 필터는 **OR**&#39;d이고, 다른 카테고리의 필터는 **AND**&#x200B;입니다.
 
-예를 들어 **질문** 및 **답변**&#x200B;을 모두 **선택하면** 질문 *과* 는AnswerAnswerAnswerInEvent ****&#x200B;와 같은 내용이 표시됩니다.
+예를 들어 **질문**&#x200B;과 **답변**&#x200B;을 모두 선택하면 **질문** *또는* 및 **대답**&#x200B;인 컨텐츠가 표시됩니다.
 
-그러나 **질문** 및 **보류**&#x200B;중인 **경우** 질문이며 보류 중인 ****&#x200B;인 컨텐츠만표시됩니다.
+그러나 **질문** 및 **보류 중**&#x200B;을 선택하면 **질문**&#x200B;이고 **대기 중**&#x200B;인 컨텐츠만 표시됩니다.
 
 >[!NOTE]
 >
@@ -148,7 +150,7 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 >[!NOTE]
 >
->관리자가 벌크 중재 콘솔에 액세스하면 Geometrixx 샘플과 같이 [사이트 생성 마법사로](/help/communities/sites-console.md)만들어지지 않은 사이트를 비롯하여 UGC에 대한 모든 참조가 표시됩니다.
+>관리자가 벌크 중재 콘솔에 액세스하면 Geometrixx 샘플과 같이 [사이트 만들기 마법사](/help/communities/sites-console.md)로 만들지 않은 사이트를 비롯하여 UGC에 대한 모든 참조가 표시됩니다.
 >
 >신뢰할 수 있는 커뮤니티 구성원이 게시 시 벌크 중재 콘솔에 액세스하면 멤버가 중재할 수 있는 커뮤니티 사이트에 대해 생성된 UGC에 대한 참조만 표시되며 사이트 필터로 필터링할 수 있습니다.
 
@@ -177,8 +179,8 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 필터링할 추가 리소스를 추가하려면:
 
 * 작성자 인스턴스에 관리자로 로그인합니다.
-* 웹 [콘솔을 엽니다](https://localhost:4502/system/console/configMgr).
-* 위치 `AEM Communities Moderation Dashboard Filters`확인
+* [웹 콘솔](https://localhost:4502/system/console/configMgr)을 엽니다.
+* `AEM Communities Moderation Dashboard Filters`을(를) 찾습니다.
 * 편집 모드에서 열 구성을 선택합니다.
 * 필터링할 구성 요소의 리소스 유형을 입력합니다.
 
@@ -190,7 +192,7 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 * 저장을 선택합니다.
 * 커뮤니티 - 중재 콘솔을 새로 고칩니다.
 
-그 결과 필터 그룹 `Voting` 아래에 대해 새로운 선택 가능한 `Content Type` 필터가 됩니다.
+결과는 `Content Type` 필터 그룹 아래의 `Voting`에 대해 선택 가능한 새로운 필터입니다.
 
 해당 필터가 선택되면 대시보드 컨텐츠에 입력한 리소스 유형과 일치하는 UGC가 표시됩니다.
 
@@ -208,7 +210,7 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 플래그를 지정하면 플래그 지정되거나 숨겨진 게시물에 표시된 참조된 UGC가 제한됩니다.
 
-한 컨텐츠의 플래그가 지정되면 해당 단일 컨텐츠에 플래그를 해제할 때까지 플래그 지정된 상태로 남아 있습니다. 단, **플래그** 단추를 다시 선택합니다. 중요 또는 후속 조치와 같은 플래그 지정은 없습니다.
+한 컨텐츠의 플래그가 지정되면 해당 단일 컨텐트의 플래그를 해제할 때까지 **플래그** 단추를 다시 한 번 선택하여 플래그가 지정됩니다. 중요 또는 후속 조치와 같은 플래그 지정은 없습니다.
 
 ![플래그](assets/flagging.png)
 
@@ -226,52 +228,52 @@ AEM Communities에서 관리자 및 커뮤니티 중재자(중재자로 지정�
 
 #### 감정 {#sentiment}
 
-[센티멘트는](/help/communities/moderate-ugc.md#sentiment) 긍정, 부정 또는 중립적인 센티멘트 값이 있는 게시물에 표시된 참조된 UGC를 제한합니다.
+[센티멘트는 ](/help/communities/moderate-ugc.md#sentiment) 긍정, 부정 또는 중립적인 센티멘트 값이 있는 게시물에 표시된 참조된 UGC를 제한합니다.
 
 ![감정](assets/sentiment.png)
 
-## Custom Filters {#custom-filters}
+## 사용자 지정 필터 {#custom-filters}
 
-필터 레일의 기본 필터 외에도 [메타데이터에](/help/communities/moderation.md#ootbfilters)대한 추가 사용자 지정 필터를 중재 UI에 추가할 수 있습니다. 개발자는 Github의 샘플 코드를 사용하여 기존 중재 UI 필터를 확장할 수 있습니다.
+[필터 레일](/help/communities/moderation.md#ootbfilters)의 기본 필터 이외에 메타데이터에 대한 추가 사용자 지정 필터를 중재 UI에 추가할 수 있습니다. 개발자는 Github의 샘플 코드를 사용하여 기존 중재 UI 필터를 확장할 수 있습니다.
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) 태그 필터를 구현하여 특정 태그가 사용자 생성 컨텐츠에 적용되는지 여부를 기준으로 UGC 목록을 필터링합니다. 샘플 코드를 따라 기타 유사한 UGC 메타데이터 필드에 대한 분석 필터를 만들 수 있습니다.
+Github의 [샘플 프로젝트](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter)는 태그 필터를 구현하여 특정 태그가 사용자 생성 컨텐츠에 적용되는지 여부를 기준으로 UGC 목록을 필터링합니다. 샘플 코드를 따라 기타 유사한 UGC 메타데이터 필드에 대한 분석 필터를 만들 수 있습니다.
 
 태그 필터 샘플을 설치하려면:
 
 1. AEM 작성자([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) 인스턴스 및 AEM 게시([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) 인스턴스에서 패키지 관리자를 엽니다.
-1. Github 코드 `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` 에서 패키지를 빌드하고 동일한 패키지를 설치하고 활성화합니다.
-1. AEM 작성자() 인스턴스 및 AEM 게시() 인스턴스에서 번들 콘솔을 `https://[aem-author]:4502/system/console/bundles``https://[aem-publish]:4503/system/console/bundles`엽니다.
-1. Github ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` 에서 패키지를 빌드하고 동일한 패키지를 설치하고 활성화합니다.
-1. AEM 작성자( **https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets** ) 및 AEM 게시([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facet](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)[](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) 인스턴스로 이동합니다.
-1. 권한이 있는 기술 사용자 **커뮤니티-유틸리티** 리더 `jcr:read` 추가
+1. Github 코드에서 패키지 `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip`을(를) 빌드하고 동일한 패키지를 설치하고 활성화합니다.
+1. AEM 작성자( `https://[aem-author]:4502/system/console/bundles`) 인스턴스 및 AEM 게시( `https://[aem-publish]:4503/system/console/bundles`) 인스턴스에서 번들 콘솔을 엽니다.
+1. Github에서 패키지 ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`을(를) 빌드하고 동일한 패키지를 설치하고 활성화합니다.
+1. AEM 작성자(**https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets**) 및 AEM 게시([https://#aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) 인스턴스로 이동합니다.[](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)
+1. `jcr:read` 권한이 있는 기술 사용자 **communities-utility-reader**&#x200B;을(를) 추가합니다.
 
 기존 커뮤니티 사이트에 사용자 지정 필터를 표시하려면 다음을 수행하십시오.
 
-1. 기존 중재 페이지 `Clientlibs` 의 편집 `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
+1. 기존 중재 페이지 `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`의 `Clientlibs` 편집
 
-   * 새 범주 추가 `cq.social.hbs.moderation.v2.`
+   * 새 카테고리 `cq.social.hbs.moderation.v2.` 추가
 
 1. 다음으로 이동:`/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
-   * 새 구성 요소로 설정 `sling:resourceType = social/moderation/v2/filters.`
+   * 새 구성 요소 `sling:resourceType = social/moderation/v2/filters.`으로 설정
 
 1. 이동 `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
 
-   * 새 구성 요소로 설정합니다 `sling:resourceType = social/moderation/v2/modcontainer`.
+   * 새 구성 요소 `sling:resourceType = social/moderation/v2/modcontainer`으로 설정합니다.
 
 ## 중재 작업 {#moderation-actions}
 
-[컨텐츠 영역에 있는 하나 이상의 선택 사항이나 컨텐츠 세부 사항을 볼 때 중재 작업을](/help/communities/moderate-ugc.md#moderation-actions) 수행할 수 있습니다.
+[컨텐츠 ](/help/communities/moderate-ugc.md#moderation-actions) 영역에서 선택한 하나 이상의 사항이나 컨텐츠 세부 사항을 볼 때 중재 작업이 수행됩니다.
 
-게시물을 일괄적으로 중재하려면 컨텐츠 영역에서 게시물의 선택(![선택](assets/selecticon.png)) 아이콘을 클릭하여 마우스(데스크탑)로 마우스를 위에 놓거나 게시물(모바일)에서 손가락을 누른 상태로 게시물을 클릭합니다. 이렇게 하면 다중 선택 모드로 전환되고 이후 게시물을 클릭하여 일괄 중재할 수 있습니다. 도구 모음에 표시된 단추를 사용하여 선택한 게시물에 대해 중재 작업을 수행합니다. 모든 작업이 확인 메시지를 표시합니다.
+게시물을 일괄적으로 중재하려면 컨텐츠 영역에서 게시물의 선택(![선택 아이콘](assets/selecticon.png)) 아이콘을 클릭하여 마우스(데스크탑)로 게시물 위에 마우스를 올려 놓거나 게시물(모바일)에서 손가락을 누른 상태로 나타납니다. 이렇게 하면 다중 선택 모드로 전환되고 이후 게시물을 클릭하여 일괄 중재할 수 있습니다. 도구 모음에 표시된 단추를 사용하여 선택한 게시물에 대해 중재 작업을 수행합니다. 모든 작업이 확인 메시지를 표시합니다.
 
 컨텐츠 영역의 단일 게시물을 중재하려면 마우스(데스크톱)로 마우스를 가져가거나 게시물(모바일)에서 손가락을 누른 상태에서 해당 단추가 게시물에 나타납니다. 단일 컨텐츠 세부 정보로 작업하는 경우 삭제 작업만 확인 메시지를 표시합니다.
 
 ### 여러 게시물 중재 {#moderating-multiple-posts}
 
-게시물의 아이콘을 클릭하여 일괄 선택 모드 `Select` 를 입력합니다.
+게시물의 `Select` 아이콘을 클릭하여 벌크 선택 모드로 들어갑니다.
 
 ![select-icon](assets/select-icon.png)
 
@@ -287,7 +289,7 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 
 ![불순물](assets/bulkmoderate.png)
 
-### 단일 게시물 중재 {#moderating-a-single-post}
+### 단일 게시물 중재{#moderating-a-single-post}
 
 단일 선택 모드에서 다음을 수행할 수 있습니다.
 
@@ -298,7 +300,7 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 * [거부](#deny)
 * [삭제](#delete)
 * [닫기](#close)
-* 중재 [내역 보기](#moderation-history)
+* [중재 내역 보기](#moderation-history)
 * [세부 사항 보기](#viewdetails)
 
 중재 작업 아이콘 위의 카드 보기에 표시되는 내용은 게시물의 텍스트이고 아래는 데이터를 나타냅니다.
@@ -326,7 +328,7 @@ Github의 [샘플 프로젝트는](https://github.com/Adobe-Marketing-Cloud/aem-
 
 ![거부](assets/deny.png)
 
-중재 **거부** 동작은 중재된 컨텐츠에만 사용할 수 있으며, 다중 선택 모드를 제외한 중재되지 않은 컨텐츠에는 나타나지 않습니다.
+**거부** 중재 동작은 중재된 컨텐츠에만 사용할 수 있으며, 다중 선택 모드를 제외한 중재되지 않은 컨텐츠에는 나타나지 않습니다.
 
 중재되지 않은 컨텐츠는 항상 승인됩니다.
 
