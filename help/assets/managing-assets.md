@@ -16,13 +16,13 @@ ht-degree: 14%
 ---
 
 
-# About managing Dynamic Media assets {#managing-assets}
+# Dynamic Media 자산 관리 정보 {#managing-assets}
 
 업로드 후 Dynamic Media 자산, 이미지, 비디오 및 대화형 자산을 관리하는 데에는 미리 보기, 다운로드 또는 게시 등 많은 작업이 포함됩니다.
 
-미리 볼 때 이미지 사전 설정(이미지에만 해당) 또는 뷰어 사전 설정(비디오 및 이미지용)을 적용할 수도 있습니다. 두 자산을 모두 적용할 수는 없습니다. 뷰어 [사전 설정 적용](/help/assets/viewer-presets.md) 및 [이미지 사전 설정 적용을 참조하십시오](/help/assets/image-sets.md).
+미리 볼 때 이미지 사전 설정(이미지에만 해당) 또는 뷰어 사전 설정(비디오 및 이미지용)을 적용할 수도 있습니다. 두 자산을 모두 적용할 수는 없습니다. [뷰어 사전 설정 적용](/help/assets/viewer-presets.md) 및 [이미지 사전 설정 적용](/help/assets/image-sets.md)을 참조하십시오.
 
-자산 관리에 대한 일반 정보는 자산 [관리에서 찾을 수 있습니다](/help/assets/manage-assets.md).
+자산 관리에 대한 일반 정보는 [자산 관리](/help/assets/manage-assets.md)에서 찾을 수 있습니다.
 
 다음 항목에서는 다이내믹 미디어 자산을 관리하는 데 필요한 작업에 대해 설명합니다.
 
