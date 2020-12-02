@@ -1,8 +1,8 @@
 ---
-title: AEM 6.5 Forms로 업그레이드
-seo-title: AEM 6.5 Forms로 업그레이드
-description: AEM 6.3 양식 및 AEM 6.4 양식에서 AEM 6.5 양식으로 직접 업그레이드할 수 있습니다.
-seo-description: AEM 6.3 양식 및 AEM 6.4 양식에서 AEM 6.5 양식으로 직접 업그레이드할 수 있습니다.
+title: AEM 6.5 Forms으로 업그레이드
+seo-title: AEM 6.5 Forms으로 업그레이드
+description: AEM 6.3 Forms 및 AEM 6.4 Forms에서 AEM 6.5 Forms으로 바로 업그레이드할 수 있습니다.
+seo-description: AEM 6.3 Forms 및 AEM 6.4 Forms에서 AEM 6.5 Forms으로 바로 업그레이드할 수 있습니다.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
 content-type: reference
 topic-tags: installing
@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# AEM 6.5 Forms로 업그레이드{#upgrade-to-aem-forms}
+# AEM 6.5 Forms으로 업그레이드{#upgrade-to-aem-forms}
 
-AEM 6.5 양식에는 양식과 통신의 작성, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다. AEM 6.5 양식의 새로운 기능과 개선 사항에 대해 자세히 알아보려면 [새로운 기능 요약 문서를 참조하십시오](../../forms/using/whats-new.md).
+AEM 6.5 Forms에는 양식과 통신의 제작, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다. AEM 6.5 Forms의 모든 새로운 기능 및 개선 사항에 대한 자세한 내용은 [새로운 기능 요약 문서](../../forms/using/whats-new.md)를 참조하십시오.
 
-기존 LiveCycle 또는 AEM Forms 설치를 업그레이드하여 기존 데이터, 프로세스 및 자산을 그대로 유지하면서 AEM 6.5 Forms에서 제공하는 새로운 기능과 향상된 기능을 얻을 수 있습니다. 업그레이드 시 프로세스의 메타데이터와 상태도 유지됩니다. 업그레이드를 시작할 업그레이드 경로를 선택할 수 있습니다.
+기존 LiveCycle 또는 AEM Forms 설치를 업그레이드하면 기존 데이터, 프로세스 및 자산을 그대로 유지하면서 AEM 6.5 Forms에서 제공되는 새로운 기능과 향상된 기능을 얻을 수 있습니다. 업그레이드 시 프로세스의 메타데이터와 상태도 유지됩니다. 업그레이드를 시작할 업그레이드 경로를 선택할 수 있습니다.
 
 다음 다이어그램은 OSGi에서 AEM Forms에 사용할 수 있는 업그레이드 경로를 보여줍니다.
 
@@ -30,32 +30,32 @@ AEM 6.5 양식에는 양식과 통신의 작성, 관리 및 사용자 경험을 
 
 다음 위치에서 직접 업그레이드를 수행할 수 있습니다.
 
-* OSGi에서 AEM 6.3 양식
-* OSGi에서 AEM 6.4 양식
+* AEM 6.3 Forms(OSGi)
+* AEM 6.4 Forms(OSGi)
 
 또한
 
-* OSGi에서 AEM 6.0 양식
-* OSGi에서 AEM 6.1 양식
-* OSGi에서 AEM 6.2 양식
+* AEM 6.0 Forms(OSGi)
+* AEM 6.1 Forms(OSGi)
+* AEM 6.2 Forms(OSGi)
 
-다음 다이어그램은 JEE AEM Forms에 사용할 수 있는 업그레이드 경로를 보여줍니다.
+다음 다이어그램은 JEE에서 AEM Forms에 사용할 수 있는 업그레이드 경로를 보여줍니다.
 
 ![](do-not-localize/jee-upgrade-6-5.png)
 
 다음 위치에서 직접 업그레이드를 수행할 수 있습니다.
 
-* JEE에 대한 AEM 6.3 양식
-* JEE에 대한 AEM 6.4 양식
+* AEM 6.3 Forms(JEE)
+* AEM 6.4 Forms(JEE)
 
 또한
 
 * LiveCycle ES2
 * LiveCycle ES3
 * LiveCycle ES4 SP1
-* JEE에서 AEM 6.0 양식
-* JEE에 대한 AEM 6.1 양식
-* JEE에 대한 AEM 6.2 양식
+* AEM 6.0 Forms(JEE)
+* AEM 6.1 Forms(JEE)
+* AEM 6.2 Forms(JEE)
 
 <!--
 [Work in Progress]
