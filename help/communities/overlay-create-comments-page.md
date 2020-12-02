@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# 댓글 만들기 페이지 {#create-comments-page}
+# 댓글 페이지 {#create-comments-page} 만들기
 
-**[오버레이 ⇐ 댓글 구성 요소](overlay-comments.md)[생성 노드 =](overlay-create-nodes.md)**
+**[Overlay Comments Component](overlay-comments.md) [Create Nodes =](overlay-create-nodes.md)**
 
 ## 댓글 페이지 {#comments-page}
 
-커뮤니티 [구성 요소 안내서는](components-guide.md) 댓글 구성 요소의 오버레이를 쉽게 경험할 수 있는 기능을 제공합니다.
+[커뮤니티 구성 요소 안내서](components-guide.md)에서는 댓글 구성 요소의 오버레이를 쉽게 경험할 수 있는 기능을 제공합니다.
 
 작성자 인스턴스의 페이지 보기:
 
@@ -32,4 +32,4 @@ ht-degree: 1%
 
 ![주석](assets/comments.png)
 
-**[오버레이 ⇐ 댓글 구성 요소](overlay-comments.md)[생성 노드 =](overlay-create-nodes.md)**
+**[Overlay Comments Component](overlay-comments.md) [Create Nodes =](overlay-create-nodes.md)**
