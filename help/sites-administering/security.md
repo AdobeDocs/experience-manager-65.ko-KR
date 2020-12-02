@@ -23,7 +23,7 @@ ht-degree: 2%
 
 이 장에서는 사용자 인증을 구성 및 유지 관리하는 방법에 대해 설명하고 AEM에서 인증 및 인증이 작동하는 방식에 대한 이론을 설명합니다.
 
-## AEM의 사용자 및 그룹 {#users-and-groups-in-aem}
+## AEM {#users-and-groups-in-aem}의 사용자 및 그룹
 
 이 섹션에서는 사용자 관리 개념을 쉽게 유지 관리할 수 있도록 지원하기 위해 다양한 개체 및 관련 개념을 자세히 설명합니다.
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 기획 및 깔끔한 구조를 통해 그룹을 사용하면 구조를 반영할 수 있으므로 명확한 개요와 업데이트를 위한 효율적인 메커니즘을 얻을 수 있습니다.
 
-### Built-in Users and Groups {#built-in-users-and-groups}
+### 기본 제공 사용자 및 그룹 {#built-in-users-and-groups}
 
 AEM WCM은 다수의 사용자 및 그룹을 설치합니다. 설치 후 보안 콘솔에 처음 액세스할 때 표시됩니다.
 
@@ -55,7 +55,7 @@ AEM WCM은 다수의 사용자 및 그룹을 설치합니다. 설치 후 보안 
 * 짧은 설명
 * 필요한 변경에 대한 권장 사항
 
-*모든 기본 암호를* 변경하십시오(특정 상황에서 계정 자체를 삭제하지 않는 경우).
+*모든 기본 암호를*  변경하십시오(특정 상황에서 계정 자체를 삭제하지 않는 경우).
 
 <table>
  <tbody>
@@ -139,7 +139,7 @@ AEM WCM은 다수의 사용자 및 그룹을 설치합니다. 설치 후 보안 
  </tbody>
 </table>
 
-## AEM의 권한 {#permissions-in-aem}
+## AEM {#permissions-in-aem}의 권한
 
 AEM은 ACL을 사용하여 사용자나 그룹이 어떤 작업을 수행할 수 있는지, 그리고 해당 작업을 수행할 수 있는 위치를 결정합니다.
 
@@ -147,13 +147,13 @@ AEM은 ACL을 사용하여 사용자나 그룹이 어떤 작업을 수행할 수
 
 권한은 리소스에 대해 작업을 수행할 수 있는 사용자를 정의합니다. 권한은 [액세스 제어](#access-control-lists-and-how-they-are-evaluated) 평가의 결과입니다.
 
-개별 AEM 작업의 확인란을 선택하거나 선택 취소하여 해당 사용자에게 부여되거나 거부된 권한을 변경할 수 [있습니다](security.md#actions). 확인 표시는 작업이 허용됨을 나타냅니다. 확인 표시가 없으면 작업이 거부되었음을 나타냅니다.
+개별 AEM [actions](security.md#actions)의 확인란을 선택하거나 취소하여 해당 사용자에게 부여되거나 거부된 권한을 변경할 수 있습니다. 확인 표시는 작업이 허용됨을 나타냅니다. 확인 표시가 없으면 작업이 거부되었음을 나타냅니다.
 
 격자에 체크 표시가 있는 경우 AEM 내의 어느 위치(즉, 어느 경로)에서 사용자가 어떤 권한을 가지고 있는지를 나타냅니다.
 
 ### 작업 {#actions}
 
-페이지(리소스)에서 작업을 수행할 수 있습니다. 계층의 각 페이지에 대해 해당 페이지에서 사용자가 수행할 수 있는 작업을 지정할 수 있습니다. [권한을](#permissions-and-acls) 사용하면 작업을 허용하거나 거부할 수 있습니다.
+페이지(리소스)에서 작업을 수행할 수 있습니다. 계층의 각 페이지에 대해 해당 페이지에서 사용자가 수행할 수 있는 작업을 지정할 수 있습니다. [작업](#permissions-and-acls) 을 허용하거나 거부할 수 있는 권한이 있습니다.
 
 <table>
  <tbody>
@@ -178,7 +178,7 @@ AEM은 ACL을 사용하여 사용자나 그룹이 어떤 작업을 수행할 수
    <td><p>사용자는 다음을 수행할 수 있습니다.</p>
     <ul>
      <li>새 페이지 또는 하위 페이지를 만듭니다.</li>
-    </ul> <p>수정 <strong>이</strong> 거부되는 경우 jcr:content 및 그 하위 노드의 만들기가 페이지 수정으로 간주되므로 아래의 하위 트리가 구체적으로 제외됩니다. jcr:content 하위 노드를 정의하는 노드에만 적용됩니다.</p> </td>
+    </ul> <p><strong>modify</strong>이 거부되는 경우 jcr:content 및 그 하위 노드의 생성이 페이지 수정으로 간주되기 때문에 아래의 하위 트리가 구체적으로 제외됩니다. jcr:content 하위 노드를 정의하는 노드에만 적용됩니다.</p> </td>
   </tr>
   <tr>
    <td>삭제</td>
@@ -186,7 +186,7 @@ AEM은 ACL을 사용하여 사용자나 그룹이 어떤 작업을 수행할 수
     <ul>
      <li>페이지 또는 하위 페이지에서 기존 단락을 삭제합니다.</li>
      <li>페이지 또는 하위 페이지를 삭제합니다.</li>
-    </ul> <p>jcr:content <strong>를 제거하면</strong> 수정 사항이 거부되는 경우, jcr:content를 제거하는 것으로 컨텐츠 하위 트리가 특별히 제외되고 하위 노드는 페이지 수정으로 간주됩니다. jcr:content 하위 노드를 정의하는 노드에만 적용됩니다.</p> </td>
+    </ul> <p><strong>modify</strong>이(가) 거부되면 jcr:content를 제거하는 것으로 구체적으로 제외되고 하위 노드가 페이지 수정으로 간주됩니다. jcr:content 하위 노드를 정의하는 노드에만 적용됩니다.</p> </td>
   </tr>
   <tr>
    <td>ACL 읽기</td>
@@ -205,7 +205,7 @@ AEM은 ACL을 사용하여 사용자나 그룹이 어떤 작업을 수행할 수
 
 >[!NOTE]
 >
->AEM은 컬렉션에 역할 할당(소유자, 편집기, 뷰어)을 위한 사용자 그룹을 자동으로 [생성합니다](/help/assets/manage-collections.md). 그러나 이러한 그룹에 대해 ACL을 수동으로 추가하면 AEM에서 보안 취약점이 발생할 수 있습니다. ACL을 수동으로 추가하지 않는 것이 좋습니다.
+>AEM은 [컬렉션](/help/assets/manage-collections.md)에서 역할 할당(소유자, 편집기, 뷰어)을 위한 사용자 그룹을 자동으로 생성합니다. 그러나 이러한 그룹에 대해 ACL을 수동으로 추가하면 AEM에서 보안 취약점이 발생할 수 있습니다. ACL을 수동으로 추가하지 않는 것이 좋습니다.
 
 ### 액세스 제어 목록 및 평가 방법 {#access-control-lists-and-how-they-are-evaluated}
 
@@ -219,12 +219,12 @@ AEM WCM은 ACL(액세스 제어 목록)을 사용하여 다양한 페이지에 �
 >
 >`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`:누구나 읽을 수 있습니다.
 >`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`:누구나 읽을 수 있습니다.
->`/home/users/geometrixx-outdoors`:모든 사용자가 `*/profile*`
+>`/home/users/geometrixx-outdoors`:모든 사용자가 `*/profile*` 및
 >`*/social/relationships/following/*`.
 >
->사용자 지정 응용 프로그램은 `*/social/relationships/friend/*` 또는 `*/social/relationships/pending-following/*`과 같은 다른 관계에 대한 액세스를 설정할 수 있습니다.
+>사용자 지정 응용 프로그램은 `*/social/relationships/friend/*` 또는 `*/social/relationships/pending-following/*` 같은 다른 관계에 대한 액세스를 설정할 수 있습니다.
 >
->커뮤니티별 ACL을 만들면 해당 커뮤니티에 참여하는 구성원에게 추가 권한이 부여될 수 있습니다. 예를 들어, 사용자가 또는 에서 커뮤니티에 참여할 때의 경우가 `/content/geometrixx-outdoors/en/community/hiking` 될 수 `/content/geometrixx-outdoors/en/community/winter-sports`있습니다.
+>커뮤니티별 ACL을 만들면 해당 커뮤니티에 참여하는 구성원에게 추가 권한이 부여될 수 있습니다. 예를 들어 사용자가 `/content/geometrixx-outdoors/en/community/hiking` 또는 `/content/geometrixx-outdoors/en/community/winter-sports`에서 커뮤니티에 참여할 때의 경우일 수 있습니다.
 
 ### 권한 상태 {#permission-states}
 
@@ -232,9 +232,9 @@ AEM WCM은 ACL(액세스 제어 목록)을 사용하여 다양한 페이지에 �
 >
 >CQ 5.3 사용자의 경우:
 >
->이전 CQ 버전과 달리, **작성** 및 **삭제는** 사용자가 페이지를 수정해야 하는 경우 더 이상 부여되지 않습니다. 대신, 사용자가 기존 페이지에서 구성 요소를 작성, 수정 또는 삭제할 수 있도록 하려는 경우에만 **수정** 작업을 부여합니다.
+>이전 CQ 버전과 달리, 사용자가 페이지를 수정해야 하는 경우 **create** 및 **delete**&#x200B;은(는) 더 이상 부여되지 않습니다. 대신, 사용자가 기존 페이지에서 구성 요소를 만들거나, 수정하거나, 삭제할 수 있도록 하려는 경우에만 **modify** 작업을 부여합니다.
 >
->이전 버전과의 호환성을 위해 작업에 대한 테스트는 **jcr:content** 를 정의하는 노드에 대한 특별한 처리를 고려하지 않습니다.
+>이전 버전과의 호환성을 위해 작업의 테스트는 **jcr:content**&#x200B;을 정의하는 노드에 대한 특별한 처리를 고려하지 않습니다.
 
 | **작업** | **설명** |
 |---|---|
@@ -292,9 +292,9 @@ AEM WCM은 ACL(액세스 제어 목록)을 사용하여 다양한 페이지에 �
 
    [거부]를 사용하면 권한이 예상 순서와 다른 순서로 적용되는 경우 예기치 않은 결과가 발생할 수 있습니다. 사용자가 둘 이상의 그룹에 속한 경우, 한 그룹의 Deny 문은 다른 그룹의 Allow 문을 취소하거나 그 반대로 취소할 수 있습니다. 이러한 경우 개요를 유지하기가 어렵고 예상치 못한 결과가 발생할 수 있지만 할당 허용으로 인해 충돌이 발생하지 않습니다.
 
-   Adobe은 우수 사례 보기를 거부하지 않고 [허용으로 작업하는 것이 좋습니다](#best-practices).
+   Adobe은 [거부]가 아닌 [허용]으로 작업하는 것이 좋습니다. [우수 사례](#best-practices)를 참조하십시오.
 
-두 권한을 수정하기 전에 해당 권한이 어떻게 작동하는지 알고 서로 연계해야 합니다. AEM WCM이 액세스 권한 [](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) 및 액세스 제어 목록 설정에 대한 예를 평가하는 방법을 설명하는 CRX 설명서를 참조하십시오.
+두 권한을 수정하기 전에 해당 권한이 어떻게 작동하는지 알고 서로 연계해야 합니다. AEM WCM [이 액세스 권한](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)을 평가하는 방법과 액세스 제어 목록 설정에 대한 예를 보려면 CRX 설명서를 참조하십시오.
 
 ### 권한 {#permissions}
 
@@ -310,9 +310,9 @@ AEM WCM은 ACL(액세스 제어 목록)을 사용하여 다양한 페이지에 �
 
 AEM은 격자 보기와 함께 지정된 경로에서 선택한 사용자/그룹에 대한 자세한 권한 보기를 제공합니다. 세부 사항 보기에서는 추가 정보를 제공합니다.
 
-정보를 보는 것 외에도, 그룹의 현재 사용자나 그룹을 포함하거나 제외할 수도 있습니다. 권한 [을 추가하는 동안 사용자 또는 그룹 추가를 참조하십시오](#adding-users-or-groups-while-adding-permissions). 여기에서 변경한 내용은 세부 보기의 상단 부분에 즉시 반영됩니다.
+정보를 보는 것 외에도, 그룹의 현재 사용자나 그룹을 포함하거나 제외할 수도 있습니다. 권한 추가 중 [사용자 또는 그룹 추가](#adding-users-or-groups-while-adding-permissions)를 참조하십시오. 여기에서 변경한 내용은 세부 보기의 상단 부분에 즉시 반영됩니다.
 
-세부 사항 보기에 액세스하려면 **권한** 탭에서 선택한 그룹/사용자 **** 및 경로의 세부 사항을 클릭합니다.
+세부 사항 보기에 액세스하려면 **권한** 탭에서 선택한 그룹/사용자 및 경로에 대해 **세부 사항**&#x200B;을 클릭합니다.
 
 ![권한 세부 정보](assets/permissiondetails.png)
 
@@ -340,9 +340,9 @@ AEM은 격자 보기와 함께 지정된 경로에서 선택한 사용자/그룹
  </tbody>
 </table>
 
-### 다른 사용자 사칭 {#impersonating-another-user}
+### 다른 사용자 {#impersonating-another-user} 가장하기
 
-With the [Impersonate functionality](/help/sites-authoring/user-properties.md#user-settings) a user can work on behalf of another user.
+[가장 기능](/help/sites-authoring/user-properties.md#user-settings)을 사용하면 사용자는 다른 사용자를 대신하여 작업할 수 있습니다.
 
 즉, 사용자 계정은 자신의 계정으로 작동할 수 있는 다른 계정을 지정할 수 있습니다. 즉, user-B가 user-A를 가장할 수 있는 경우 user-B는 user-A의 전체 계정 세부 정보를 사용하여 조치를 취할 수 있습니다.
 
@@ -350,9 +350,9 @@ With the [Impersonate functionality](/help/sites-authoring/user-properties.md#us
 
 >[!NOTE]
 >
->관리자가 아닌 사용자에 대해 가장하는 것이 작동하려면 해당 경로에서 사용자-B의 READ 권한이 있어야 `/home/users` 합니다.
+>관리자가 아닌 사용자에 대해 가장하는 것이 작동하려면, 가장자(위의 경우 user-B)가 `/home/users` 경로에서 READ 권한이 있어야 합니다.
 >
->이를 실현하는 방법에 대한 자세한 내용은 AEM [에서 권한을 참조하십시오](/help/sites-administering/security.md#permissions-in-aem).
+>이를 실현하는 방법에 대한 자세한 내용은 AEM](/help/sites-administering/security.md#permissions-in-aem)의 [권한을 참조하십시오.
 
 >[!CAUTION]
 >
@@ -376,7 +376,7 @@ With the [Impersonate functionality](/help/sites-authoring/user-properties.md#us
 | *테스트* | 테스트 설치를 사용하여 다양한 사용자와 그룹 간의 관계를 파악하고 이에 대한 연습을 수행합니다. |
 | *기본 사용자/그룹* | 보안 문제를 방지하기 위해 설치 후 항상 기본 사용자 및 그룹을 즉시 업데이트합니다. |
 
-## Managing Users and Groups {#managing-users-and-groups}
+## 사용자 및 그룹 관리 {#managing-users-and-groups}
 
 사용자에게는 시스템에 요청을 하는 시스템과 외부 시스템을 사용하는 사람들이 포함됩니다.
 
@@ -384,7 +384,7 @@ With the [Impersonate functionality](/help/sites-authoring/user-properties.md#us
 
 둘 다 보안 콘솔 내의 사용자 관리 기능을 사용하여 구성할 수 있습니다.
 
-### 보안 콘솔을 사용하여 사용자 관리 액세스 {#accessing-user-administration-with-the-security-console}
+### 보안 콘솔 {#accessing-user-administration-with-the-security-console}을(를) 사용하여 사용자 관리 액세스
 
 보안 콘솔을 사용하여 모든 사용자, 그룹 및 연관된 권한에 액세스합니다. 이 섹션에 설명된 모든 절차가 이 창에서 수행됩니다.
 
@@ -394,7 +394,7 @@ AEM WCM 보안에 액세스하려면 다음 중 하나를 수행합니다.
 
 ![](do-not-localize/wcmtoolbar.png)
 
-* 로 바로 `https://<server>:<port>/useradmin`이동합니다. AEM에 관리자로 로그인해야 합니다.
+* `https://<server>:<port>/useradmin`으로 바로 이동합니다. AEM에 관리자로 로그인해야 합니다.
 
 다음 창이 표시됩니다.
 
@@ -410,77 +410,77 @@ AEM WCM 보안에 액세스하려면 다음 중 하나를 수행합니다.
 
 | 탭 | 설명 |
 |--- |--- |
-| 필터 상자 | 나열된 사용자 및/또는 그룹을 필터링하는 메커니즘입니다. 사용자 [및 그룹 필터링을 참조하십시오](#filtering-users-and-groups). |
-| 사용자 숨김 | 나열된 모든 사용자를 숨겨 그룹만 남기는 전환 스위치입니다. 사용자 [및 그룹 숨기기를 참조하십시오](#hiding-users-and-groups). |
-| 그룹 숨기기 | 나열된 모든 그룹을 숨겨 사용자만 남기는 전환 스위치입니다. 사용자 [및 그룹 숨기기를 참조하십시오](#hiding-users-and-groups). |
-| 편집 | 사용자 또는 그룹을 만들고 삭제할 수 있을 뿐만 아니라 활성화 및 비활성화할 수 있는 메뉴입니다. 사용자 [및 그룹](#creating-users-and-groups) 만들기 및 [사용자 및 그룹 삭제를 참조하십시오](#deleting-users-and-groups). |
-| 속성 | 이메일 정보, 설명 및 이름 정보를 포함할 수 있는 사용자 또는 그룹에 대한 정보를 나열합니다. 사용자의 암호를 변경할 수도 있습니다. 사용자 및 그룹 [만들기](#creating-users-and-groups), 사용자 및 그룹 속성 [](#modifying-user-and-group-properties) 수정 및 사용자 암호 [변경을 참조하십시오](#changing-a-user-password). |
-| 그룹 | 선택한 사용자 또는 그룹이 속한 모든 그룹을 나열합니다. 선택한 사용자나 그룹을 추가 그룹에 할당하거나 그룹에서 제거할 수 있습니다. 그룹을 [참조하십시오](#adding-users-or-groups-to-a-group). |
-| 구성원 | 그룹에만 사용할 수 있습니다. 특정 그룹의 구성원을 나열합니다. 구성원을 [참조하십시오](#members-adding-users-or-groups-to-a-group). |
-| 권한 | 사용자나 그룹에 권한을 할당할 수 있습니다. 다음을 제어할 수 있습니다.<ul><li>특정 페이지/노드와 관련된 권한 권한 [설정을 참조하십시오](#setting-permissions). </li><li>페이지 만들기 및 삭제 및 계층 수정과 관련된 권한??페이지를 만들고 삭제할 수 있는 계층 구조 수정과 같은 권한을 [할당할](#settingprivileges)수 있도록 해줍니다.</li><li>경로에 따라 [복제 권한](#setting-replication-privileges) (일반적으로 작성자에서 게시까지의 권한)과 관련된 권한입니다.</li></ul> |
-| 가장한 사람 | 다른 사용자가 계정을 가장할 수 있습니다. 사용자가 다른 사용자를 대신하여 행동해야 할 때 유용합니다. 사용자 [사칭을 참조하십시오](#impersonating-another-user). |
-| 환경 설정 | 그룹 또는 사용자의 [환경 설정을 설정합니다](#setting-user-and-group-preferences). 예를 들어, 언어 환경 설정. |
+| 필터 상자 | 나열된 사용자 및/또는 그룹을 필터링하는 메커니즘입니다. [사용자 및 그룹 필터링](#filtering-users-and-groups)을 참조하십시오. |
+| 사용자 숨김 | 나열된 모든 사용자를 숨겨 그룹만 남기는 전환 스위치입니다. [사용자 및 그룹 숨기기](#hiding-users-and-groups)를 참조하십시오. |
+| 그룹 숨기기 | 나열된 모든 그룹을 숨겨 사용자만 남기는 전환 스위치입니다. [사용자 및 그룹 숨기기](#hiding-users-and-groups)를 참조하십시오. |
+| 편집 | 사용자 또는 그룹을 만들고 삭제할 수 있을 뿐만 아니라 활성화 및 비활성화할 수 있는 메뉴입니다. [사용자 및 그룹 만들기](#creating-users-and-groups) 및 [사용자 및 그룹 삭제](#deleting-users-and-groups)를 참조하십시오. |
+| 속성 | 이메일 정보, 설명 및 이름 정보를 포함할 수 있는 사용자 또는 그룹에 대한 정보를 나열합니다. 사용자의 암호를 변경할 수도 있습니다. [사용자 및 그룹 만들기](#creating-users-and-groups), [사용자 및 그룹 속성 수정](#modifying-user-and-group-properties) 및 [사용자 암호 변경](#changing-a-user-password)을 참조하십시오. |
+| 그룹 | 선택한 사용자 또는 그룹이 속한 모든 그룹을 나열합니다. 선택한 사용자나 그룹을 추가 그룹에 할당하거나 그룹에서 제거할 수 있습니다. [그룹](#adding-users-or-groups-to-a-group)을 참조하십시오. |
+| 구성원 | 그룹에만 사용할 수 있습니다. 특정 그룹의 구성원을 나열합니다. [멤버](#members-adding-users-or-groups-to-a-group)를 참조하십시오. |
+| 권한 | 사용자나 그룹에 권한을 할당할 수 있습니다. 다음을 제어할 수 있습니다.<ul><li>특정 페이지/노드와 관련된 권한 [권한 설정](#setting-permissions)을 참조하십시오. </li><li>페이지 만들기 및 삭제 및 계층 수정과 관련된 권한??[페이지 생성 및 삭제를 허용하는 계층 수정과 같은 권한](#settingprivileges)을 할당할 수 있도록 해줍니다.</li><li>경로에 따라 [복제 권한](#setting-replication-privileges)과 관련된 권한(일반적으로 작성자에서 게시까지의)입니다.</li></ul> |
+| 가장한 사람 | 다른 사용자가 계정을 가장할 수 있습니다. 사용자가 다른 사용자를 대신하여 행동해야 할 때 유용합니다. [사용자 가장하기](#impersonating-another-user)를 참조하십시오. |
+| 환경 설정 | 그룹 또는 사용자](#setting-user-and-group-preferences)에 대한 [기본 설정을 설정합니다. 예를 들어, 언어 환경 설정. |
 
-### Filtering Users and Groups {#filtering-users-and-groups}
+### 사용자 및 그룹 필터링 {#filtering-users-and-groups}
 
-표현식과 일치하지 않는 모든 사용자와 그룹을 숨기는 필터 표현식을 입력하여 목록을 필터링할 수 있습니다. [사용자 [숨기기] 및 [그룹 숨기기] 단추를 사용하여 사용자와 그룹을 숨길 수도](#hiding-users-and-groups) 있습니다.
+표현식과 일치하지 않는 모든 사용자와 그룹을 숨기는 필터 표현식을 입력하여 목록을 필터링할 수 있습니다. [사용자 숨기기 및 그룹 숨기기](#hiding-users-and-groups) 단추를 사용하여 사용자와 그룹을 숨길 수도 있습니다.
 
 사용자 또는 그룹을 필터링하려면
 
-1. 왼쪽 트리 목록에서 제공된 공간에 필터 표현식을 입력합니다. 예를 들어 관리자를 **입력하면** 이 문자열이 포함된 모든 사용자와 그룹이 표시됩니다.
+1. 왼쪽 트리 목록에서 제공된 공간에 필터 표현식을 입력합니다. 예를 들어 **admin**&#x200B;을 입력하면 이 문자열을 포함하는 모든 사용자와 그룹이 표시됩니다.
 1. 목록을 필터링하려면 확대경을 클릭합니다.
 
    ![cqsecurityfilter](assets/cqsecurityfilter.png)
 
-1. 모든 필터를 제거하려면 **x** 를 클릭합니다.
+1. 모든 필터를 제거하려면 **x**&#x200B;을 클릭합니다.
 
-### Hiding Users and Groups {#hiding-users-and-groups}
+### 사용자 및 그룹 숨기기 {#hiding-users-and-groups}
 
-사용자 또는 그룹을 숨기는 것은 시스템의 모든 사용자 및 그룹 목록을 필터링하는 또 다른 방법입니다. 두 가지 전환 메커니즘이 있습니다. [사용자 숨기기]를 클릭하면 모든 사용자가 표시되지 않고 [그룹 숨기기]를 클릭하면 모든 그룹이 보기에서 숨겨집니다. 사용자와 그룹을 동시에 숨길 수는 없습니다. 필터 표현식을 사용하여 목록을 필터링하려면 사용자 및 그룹 [필터링을 참조하십시오](#filtering-users-and-groups).
+사용자 또는 그룹을 숨기는 것은 시스템의 모든 사용자 및 그룹 목록을 필터링하는 또 다른 방법입니다. 두 가지 전환 메커니즘이 있습니다. [사용자 숨기기]를 클릭하면 모든 사용자가 표시되지 않고 [그룹 숨기기]를 클릭하면 모든 그룹이 보기에서 숨겨집니다. 사용자와 그룹을 동시에 숨길 수는 없습니다. 필터 식을 사용하여 목록을 필터링하려면 [사용자 및 그룹 필터링](#filtering-users-and-groups)을 참조하십시오.
 
 사용자 및 그룹을 숨기려면
 
-1. [ **보안** 콘솔]에서 **사용자** 숨기기 또는 그룹 **숨기기를**&#x200B;클릭합니다. 선택한 단추가 강조 표시되어 나타납니다.
+1. **보안** 콘솔에서 **사용자 숨기기** 또는 **그룹 숨기기**&#x200B;를 클릭합니다. 선택한 단추가 강조 표시되어 나타납니다.
 
    ![cqsecurityhideusers](assets/cqsecurityhideusers.png)
 
 1. 사용자나 그룹이 다시 나타나도록 하려면 해당 단추를 다시 클릭합니다.
 
-### Creating Users and Groups {#creating-users-and-groups}
+### 사용자 및 그룹 만들기 {#creating-users-and-groups}
 
 새 사용자 또는 그룹을 만들려면:
 
-1. 보안 **콘솔** 트리 목록에서 **편집을** 클릭한 다음 **사용자** 만들기 **또는 그룹**&#x200B;만들기를클릭합니다.
+1. **보안** 콘솔 트리 목록에서 **편집**&#x200B;을 클릭한 다음 **사용자 만들기** 또는 **그룹 만들기**&#x200B;를 클릭합니다.
 
    ![cqseruiteditcontextmenu](assets/cqseruityeditcontextmenu.png)
 
 1. 사용자를 만들지 또는 그룹을 만들고 있는지에 따라 필요한 세부 사항을 입력합니다.
 
-   * [사용자 **만들기]를** 선택하면 로그인 ID, 이름과 이름, 이메일 주소 및 암호를 입력합니다. 기본적으로 AEM은 성의 첫 번째 문자를 기준으로 경로를 만들지만 다른 경로를 선택할 수 있습니다.
+   * **사용자 만들기를 선택하면 로그인 ID, 이름, 이메일 주소 및 암호를 입력합니다.** 기본적으로 AEM은 성의 첫 번째 문자를 기준으로 경로를 만들지만 다른 경로를 선택할 수 있습니다.
 
    ![createuserdialog](assets/createuserdialog.png)
 
-   * 그룹 만들기 **를**&#x200B;선택하면 그룹 ID와 선택적 설명을 입력합니다.
+   * **그룹 만들기**&#x200B;를 선택하면 그룹 ID와 선택적 설명을 입력합니다.
 
    ![creategroupdialog](assets/creategroupdialog.png)
 
 1. **만들기**&#x200B;를 클릭합니다. 만든 사용자 또는 그룹이 트리 목록에 나타납니다.
 
-### Deleting Users and Groups {#deleting-users-and-groups}
+### 사용자 및 그룹 삭제 {#deleting-users-and-groups}
 
 사용자 또는 그룹을 삭제하려면
 
-1. 보안 **** 콘솔에서 삭제할 사용자나 그룹을 선택합니다. 여러 항목을 삭제하려면 Shift 키를 누른 상태로 클릭하거나 Ctrl 키를 누른 상태로 클릭하여 선택합니다.
-1. 편집 **을** 클릭한 다음 삭제를 선택합니다. AEM WCM에서 사용자 또는 그룹을 삭제할지 여부를 묻습니다.
-1. 확인을 **클릭하여** 확인하거나 취소를 클릭하여 작업을 취소합니다.
+1. **보안** 콘솔에서 삭제할 사용자나 그룹을 선택합니다. 여러 항목을 삭제하려면 Shift 키를 누른 상태로 클릭하거나 Ctrl 키를 누른 상태로 클릭하여 선택합니다.
+1. **편집,**&#x200B;을 클릭한 다음 삭제를 선택합니다. AEM WCM에서 사용자 또는 그룹을 삭제할지 여부를 묻습니다.
+1. **확인**&#x200B;을 클릭하여 작업을 확인하거나 취소를 클릭하여 작업을 취소합니다.
 
 ### 사용자 및 그룹 속성 수정 {#modifying-user-and-group-properties}
 
 사용자 및 그룹 속성을 수정하려면:
 
-1. 보안 **** 콘솔에서 수정할 사용자 또는 그룹 이름을 두 번 클릭합니다.
+1. **보안** 콘솔에서 수정할 사용자나 그룹 이름을 두 번 클릭합니다.
 
-1. [ **속성** ] 탭을 클릭하고 필요한 사항을 변경한 후 [저장]을 **클릭합니다**.
+1. **속성** 탭을 클릭하고 필요한 사항을 변경한 후 **저장**&#x200B;을 클릭합니다.
 
    ![cqsecurityuserprops](assets/cqsecurityuserprops.png)
 
@@ -488,26 +488,26 @@ AEM WCM 보안에 액세스하려면 다음 중 하나를 수행합니다.
 >
 >사용자 속성의 아래쪽에 사용자 경로가 표시됩니다. 수정할 수 없습니다.
 
-### 사용자 암호 변경 {#changing-a-user-password}
+### 사용자 암호 {#changing-a-user-password} 변경
 
 사용자 암호를 수정하려면 다음 절차를 따르십시오.
 
 >[!NOTE]
 >
->보안 콘솔을 사용하여 관리 암호를 변경할 수 없습니다. 관리자 계정의 암호를 변경하려면 [ [사용자] 콘솔](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) (Granite Operations)을 사용합니다.
+>보안 콘솔을 사용하여 관리 암호를 변경할 수 없습니다. 관리자 계정의 암호를 변경하려면 [Granite Operations]에서 제공하는 [사용자 콘솔](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user)을 사용하십시오.
 >
 >JEE에서 AEM Forms을 사용하는 경우, 아래 지침에 따라 암호를 변경하려면 JEE 관리 콘솔(/adminui)에서 AEM Forms을 사용하십시오.
 
-1. 보안 **** 콘솔에서 암호를 변경할 사용자 이름을 두 번 클릭합니다.
-1. 속성 **탭을** 클릭합니다(아직 활성화되지 않은 경우).
-1. 암호 **설정을 클릭합니다**. 암호를 변경할 수 있는 암호 설정 창이 열립니다.
+1. **보안** 콘솔에서 암호를 변경할 사용자 이름을 두 번 클릭합니다.
+1. **속성** 탭(아직 활성화되지 않은 경우)을 클릭합니다.
+1. **암호 설정**&#x200B;을 클릭합니다. 암호를 변경할 수 있는 암호 설정 창이 열립니다.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
 
 1. 새 암호를 두 번 입력하십시오.명확한 텍스트로 표시되지 않기 때문에 확인을 위한 것이므로 일치하지 않으면 오류가 표시됩니다.
-1. 설정 **을** 클릭하여 계정의 새 암호를 활성화합니다.
+1. 계정의 새 암호를 활성화하려면 **설정**&#x200B;을 클릭합니다.
 
-### 그룹에 사용자 또는 그룹 추가 {#adding-users-or-groups-to-a-group}
+### 그룹 {#adding-users-or-groups-to-a-group}에 사용자 또는 그룹 추가
 
 AEM에서는 기존 그룹에 사용자나 그룹을 추가하는 세 가지 방법을 제공합니다.
 
@@ -515,46 +515,46 @@ AEM에서는 기존 그룹에 사용자나 그룹을 추가하는 세 가지 방
 * 멤버인 경우 그룹에 구성원을 추가할 수 있습니다.
 * 권한 작업을 할 때 그룹에 구성원을 추가할 수 있습니다.
 
-### 그룹 - 그룹에 사용자 또는 그룹 추가 {#groups-adding-users-or-groups-to-a-group}
+### 그룹 - 그룹 {#groups-adding-users-or-groups-to-a-group}에 사용자 또는 그룹 추가
 
-그룹 **** 탭에는 현재 계정이 속하는 그룹이 표시됩니다. 선택한 계정을 그룹에 추가할 수 있습니다.
+**그룹** 탭에는 현재 계정이 속하는 그룹이 표시됩니다. 선택한 계정을 그룹에 추가할 수 있습니다.
 
 1. 그룹에 할당할 계정(사용자 또는 그룹)의 이름을 두 번 클릭합니다.
-1. Click the **Groups** tab. 계정이 이미 속해 있는 그룹 목록이 표시됩니다.
-1. 트리 목록에서 계정에 추가할 그룹 이름을 클릭하고 그룹 **창으로** 드래그합니다. 여러 사용자를 추가하려면 Shift 키를 누른 상태에서 클릭하거나 Control 키를 누른 상태에서 해당 이름을 클릭하고 드래그합니다.
+1. **그룹** 탭을 클릭합니다. 계정이 이미 속해 있는 그룹 목록이 표시됩니다.
+1. 트리 목록에서 계정에 추가할 그룹 이름을 클릭하고 **그룹** 창으로 드래그합니다. 여러 사용자를 추가하려면 Shift 키를 누른 상태에서 클릭하거나 Control 키를 누른 상태에서 해당 이름을 클릭하고 드래그합니다.
 
    ![cqsecurityadusertogroup](assets/cqsecurityaddusertogroup.png)
 
-1. Click **Save** to save your changes.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
-### 구성원 - 그룹에 사용자 또는 그룹 추가 {#members-adding-users-or-groups-to-a-group}
+### 구성원 - 그룹 {#members-adding-users-or-groups-to-a-group}에 사용자 또는 그룹 추가
 
-[ **구성원** ] 탭은 그룹에 대해서만 작동하며 현재 그룹에 속한 사용자와 그룹을 보여줍니다. 이 변수를 사용하여 그룹에 계정을 추가할 수 있습니다.
+**구성원** 탭은 그룹에 대해서만 작동하며 현재 그룹에 속한 사용자와 그룹을 보여줍니다. 이 변수를 사용하여 그룹에 계정을 추가할 수 있습니다.
 
 1. 구성원을 추가할 그룹의 이름을 두 번 클릭합니다.
-1. Click the **Members** tab. 이 그룹에 이미 속한 구성원 목록이 표시됩니다.
-1. 트리 목록에서 그룹에 추가할 구성원의 이름을 클릭하고 **구성원** 창으로 끕니다. 여러 사용자를 추가하려면 Shift 키를 누른 상태에서 클릭하거나 Control 키를 누른 상태에서 해당 이름을 클릭하고 드래그합니다.
+1. **구성원** 탭을 클릭합니다. 이 그룹에 이미 속한 구성원 목록이 표시됩니다.
+1. 트리 목록에서 그룹에 추가할 구성원의 이름을 클릭하고 **구성원** 창으로 드래그합니다. 여러 사용자를 추가하려면 Shift 키를 누른 상태에서 클릭하거나 Control 키를 누른 상태에서 해당 이름을 클릭하고 드래그합니다.
 
    ![cqsecurityaduserasmember](assets/cqsecurityadduserasmember.png)
 
-1. Click **Save** to save your changes.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
-### 권한을 추가하는 동안 사용자 또는 그룹 추가 {#adding-users-or-groups-while-adding-permissions}
+### {#adding-users-or-groups-while-adding-permissions} 권한을 추가하는 동안 사용자 또는 그룹 추가
 
 특정 경로의 그룹에 구성원을 추가하려면:
 
 1. 사용자를 추가할 그룹 또는 사용자의 이름을 두 번 클릭합니다.
 
-1. Click the **Permissions** tab.
+1. **권한** 탭을 클릭합니다.
 
-1. 권한을 추가할 경로로 이동하고 세부 정보를 **클릭합니다**. 세부 정보 창의 하단부는 해당 페이지에 대한 권한이 있는 사용자에 대한 정보를 제공합니다.
+1. 권한을 추가할 경로로 이동하고 **세부 사항**&#x200B;을 클릭합니다. 세부 정보 창의 하단부는 해당 페이지에 대한 권한이 있는 사용자에 대한 정보를 제공합니다.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-1. 해당 경로에 대한 사용 권한을 **부여할 멤버의** 멤버 열에서 확인란을 선택합니다. 권한을 제거할 구성원의 확인란을 선택 취소합니다. 변경한 셀에 빨간색 삼각형이 나타납니다.
+1. 해당 경로에 대한 권한을 부여하려는 구성원의 **멤버** 열에서 확인란을 선택합니다. 권한을 제거할 구성원의 확인란을 선택 취소합니다. 변경한 셀에 빨간색 삼각형이 나타납니다.
 1. **확인**&#x200B;을 클릭하여 변경 사항을 저장합니다.
 
-### 그룹에서 사용자 또는 그룹 제거 {#removing-users-or-groups-from-groups}
+### {#removing-users-or-groups-from-groups} 그룹에서 사용자 또는 그룹 제거
 
 AEM에서는 그룹에서 사용자나 그룹을 제거하는 세 가지 방법을 제공합니다.
 
@@ -562,56 +562,56 @@ AEM에서는 그룹에서 사용자나 그룹을 제거하는 세 가지 방법�
 * 구성원 프로필에 있는 경우 그룹에서 구성원을 제거할 수 있습니다.
 * 권한 작업을 할 때 그룹에서 구성원을 제거할 수 있습니다.
 
-### 그룹 - 그룹에서 사용자 또는 그룹 제거 {#groups-removing-users-or-groups-from-groups}
+### 그룹 - {#groups-removing-users-or-groups-from-groups} 그룹에서 사용자 또는 그룹 제거
 
 그룹에서 사용자 또는 그룹 계정을 제거하려면 다음을 수행합니다.
 
 1. 그룹에서 제거할 그룹 또는 사용자 계정의 이름을 두 번 클릭합니다.
-1. Click the **Groups** tab. 선택한 계정이 속한 그룹을 볼 수 있습니다.
-1. [ **그룹** ] 창에서 그룹에서 제거할 사용자나 그룹의 이름을 클릭하고 [ **제거]를 클릭합니다**. 여러 계정을 제거하려면 Shift 키를 누른 상태에서 클릭하거나 Ctrl 키를 누른 상태에서 해당 이름을 클릭하고 **제거를**&#x200B;클릭합니다.
+1. **그룹** 탭을 클릭합니다. 선택한 계정이 속한 그룹을 볼 수 있습니다.
+1. **그룹** 창에서 그룹에서 제거할 사용자나 그룹의 이름을 클릭하고 **제거**&#x200B;를 클릭합니다. 여러 계정을 제거하려면 Shift 키를 누른 채 해당 이름을 클릭하거나 Ctrl 키를 누른 채 **제거**&#x200B;를 클릭합니다.
 
    ![cqsecurityremoveuserfmgrp](assets/cqsecurityremoveuserfromgrp.png)
 
-1. Click **Save** to save your changes.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
-### 구성원 - 그룹에서 사용자 또는 그룹 제거 {#members-removing-users-or-groups-from-groups}
+### 구성원 - {#members-removing-users-or-groups-from-groups} 그룹에서 사용자 또는 그룹 제거
 
 그룹에서 계정을 제거하려면:
 
 1. 구성원을 제거할 그룹 이름을 두 번 클릭합니다.
-1. Click the **Members** tab. 이 그룹에 이미 속한 구성원 목록이 표시됩니다.
-1. [ **구성원** ] 창에서 그룹에서 제거할 구성원의 이름을 클릭하고 [ **제거]를 클릭합니다**. 여러 사용자를 제거하려면 Shift 키를 누른 채 해당 이름을 클릭하거나 Ctrl 키를 누른 상태로 클릭한 다음 **제거를 클릭합니다**.
+1. **구성원** 탭을 클릭합니다. 이 그룹에 이미 속한 구성원 목록이 표시됩니다.
+1. **구성원** 창에서 그룹에서 제거할 구성원의 이름을 클릭하고 **제거**&#x200B;를 클릭합니다. 여러 사용자를 제거하려면 Shift 키를 누른 채 해당 이름을 클릭하거나 Ctrl 키를 누른 상태로 클릭하고 **제거**&#x200B;를 클릭합니다.
 
    ![cqsecurityremovemember](assets/cqsecurityremovemember.png)
 
-1. Click **Save** to save your changes.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
-### 권한을 추가하는 동안 사용자 또는 그룹 제거 {#removing-users-or-groups-while-adding-permissions}
+### {#removing-users-or-groups-while-adding-permissions} 권한을 추가하는 동안 사용자 또는 그룹 제거
 
 특정 경로의 그룹에서 구성원을 제거하려면:
 
 1. 사용자를 제거할 그룹 또는 사용자의 이름을 두 번 클릭합니다.
 
-1. Click the **Permissions** tab.
+1. **권한** 탭을 클릭합니다.
 
-1. 권한을 제거할 경로로 이동하고 **세부 정보를 클릭합니다**. 세부 정보 창의 하단부는 해당 페이지에 대한 권한이 있는 사용자에 대한 정보를 제공합니다.
+1. 권한을 제거할 경로로 이동하고 **세부 사항**&#x200B;을 클릭합니다. 세부 정보 창의 하단부는 해당 페이지에 대한 권한이 있는 사용자에 대한 정보를 제공합니다.
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
-1. 해당 경로에 대한 사용 권한을 **부여할 멤버의** 멤버 열에서 확인란을 선택합니다. 권한을 제거할 구성원의 확인란을 선택 취소합니다. 변경한 셀에 빨간색 삼각형이 나타납니다.
+1. 해당 경로에 대한 권한을 부여하려는 구성원의 **멤버** 열에서 확인란을 선택합니다. 권한을 제거할 구성원의 확인란을 선택 취소합니다. 변경한 셀에 빨간색 삼각형이 나타납니다.
 1. **확인**&#x200B;을 클릭하여 변경 사항을 저장합니다.
 
 ### 사용자 동기화 {#user-synchronization}
 
-배포가 [게시 팜인](/help/sites-deploying/recommended-deploys.md#tarmk-farm)경우 모든 게시 노드 간에 사용자와 그룹을 동기화해야 합니다.
+배포가 [게시 팜](/help/sites-deploying/recommended-deploys.md#tarmk-farm)인 경우 사용자 및 그룹을 모든 게시 노드 간에 동기화해야 합니다.
 
-사용자 동기화 및 활성화 방법에 대한 자세한 내용은 [사용자 동기화를 참조하십시오](/help/sites-administering/sync.md).
+사용자 동기화 및 활성화 방법에 대한 자세한 내용은 [사용자 동기화](/help/sites-administering/sync.md)를 참조하십시오.
 
 ## 권한 관리 {#managing-permissions}
 
 >[!NOTE]
 >
->Adobe에서 권한 관리에 대한 새로운 터치 UI 기반 기본 보기를 도입했습니다. 사용 방법에 대한 자세한 내용은 [이 페이지를 참조하십시오](/help/sites-administering/touch-ui-principal-view.md).
+>Adobe에서 권한 관리에 대한 새로운 터치 UI 기반 기본 보기를 도입했습니다. 사용 방법에 대한 자세한 내용은 [이 페이지](/help/sites-administering/touch-ui-principal-view.md)를 참조하십시오.
 
 이 섹션에서는 복제 권한을 포함하여 권한을 설정하는 방법에 대해 설명합니다.
 
@@ -621,15 +621,15 @@ AEM에서는 그룹에서 사용자나 그룹을 제거하는 세 가지 방법�
 
 권한을 추가, 수정 또는 삭제하려면 다음을 수행하십시오.
 
-1. 보안 **** 콘솔에서 노드에 대한 권한을 설정하거나 [검색할 사용자 또는 그룹의 이름을 두 번 클릭합니다](#searching-for-nodes).
+1. **보안** 콘솔에서, 또는 [노드 검색](#searching-for-nodes)에 대한 권한을 설정할 사용자 또는 그룹의 이름을 두 번 클릭합니다.
 
-1. Click the **Permissions** tab.
+1. **권한** 탭을 클릭합니다.
 
    ![cquserpermissions](assets/cquserpermissions.png)
 
-1. 트리 그리드에서 확인란을 선택하여 선택한 사용자나 그룹이 작업을 수행하거나 선택한 사용자나 그룹이 작업을 수행하지 못하도록 확인란을 선택 취소합니다. 자세한 내용을 보려면 **세부 정보를 클릭하십시오**.
+1. 트리 그리드에서 확인란을 선택하여 선택한 사용자나 그룹이 작업을 수행하거나 선택한 사용자나 그룹이 작업을 수행하지 못하도록 확인란을 선택 취소합니다. 자세한 내용을 보려면 **세부 정보**&#x200B;를 클릭하십시오.
 
-1. When finished, click **Save**.
+1. 완료되면 **저장**&#x200B;을 클릭합니다.
 
 ### 복제 권한 설정 {#setting-replication-privileges}
 
@@ -639,7 +639,7 @@ AEM에서는 그룹에서 사용자나 그룹을 제거하는 세 가지 방법�
 >
 >* 그룹에 적용된 모든 복제 권한은 해당 그룹의 모든 사용자에게 적용됩니다.
 >* 사용자의 복제 권한은 그룹의 복제 권한에 우선합니다.
->* 복제 허용 권한이 거부 복제 권한보다 우선 순위가 높습니다. 자세한 [내용은 AEM의](#permissions-in-aem) 권한을 참조하십시오.
+>* 복제 허용 권한이 거부 복제 권한보다 우선 순위가 높습니다. 자세한 내용은 AEM](#permissions-in-aem)의 [권한을 참조하십시오.
 
 >
 
@@ -647,16 +647,16 @@ AEM에서는 그룹에서 사용자나 그룹을 제거하는 세 가지 방법�
 
 복제 권한을 설정하려면
 
-1. 목록에서 사용자나 그룹을 선택하고 두 번 클릭하여 연 다음 **권한을 클릭합니다**.
-1. 그리드에서 사용자에게 복제 권한을 부여하거나 노드를 [검색할 경로로 이동합니다.](#searching-for-nodes)
+1. 목록에서 사용자나 그룹을 선택하고 두 번 클릭하여 연 다음 **권한**&#x200B;을 클릭합니다.
+1. 그리드에서 사용자에게 복제 권한을 부여하거나 [노드 검색 경로로 이동합니다.](#searching-for-nodes)
 
-1. 선택한 경로의 **복제** 열에서 해당 사용자나 그룹에 대한 복제 권한을 추가하려면 확인란을 선택하거나 확인란을 선택 취소하여 복제 권한을 제거합니다. AEM은 아직 저장되지 않은 변경 사항을 수행한 아무 곳에서나 빨간색 삼각형을 표시합니다.
+1. 선택한 경로의 **복제** 열에서 확인란을 선택하여 해당 사용자나 그룹에 대한 복제 권한을 추가하거나 확인란을 선택 취소하여 복제 권한을 제거합니다. AEM은 아직 저장되지 않은 변경 사항을 수행한 아무 곳에서나 빨간색 삼각형을 표시합니다.
 
    ![cquserreplicatepermissions](assets/cquserreplicatepermissions.png)
 
-1. Click **Save** to save your changes.
+1. **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
-### 노드 검색 {#searching-for-nodes}
+### 노드 {#searching-for-nodes} 검색
 
 권한을 추가하거나 제거할 때 노드를 찾거나 검색할 수 있습니다.
 
@@ -680,11 +680,11 @@ AEM에서는 그룹에서 사용자나 그룹을 제거하는 세 가지 방법�
 
 경로 또는 전체 텍스트에 대해 검색을 수행하려면:
 
-1. 보안 콘솔에서 사용자 또는 그룹을 선택한 다음 권한 **탭을** 클릭합니다.
+1. 보안 콘솔에서 사용자 또는 그룹을 선택한 다음 **권한** 탭을 클릭합니다.
 
 1. 검색 상자에 검색할 용어를 입력합니다.
 
-### 사용자 사칭 {#impersonating-users}
+### 사용자 가장하기 {#impersonating-users}
 
 현재 사용자를 가장할 수 있는 사용자를 하나 이상 지정할 수 있습니다. 즉, 계정 설정을 현재 사용자의 설정으로 전환하고 이 사용자를 대신하여 작업할 수 있습니다.
 
@@ -698,7 +698,7 @@ AEM에서는 그룹에서 사용자나 그룹을 제거하는 세 가지 방법�
 기존 사용자를 가장하려면
 
 1. 트리 목록에서 다른 사용자를 가장 지정할 사람의 이름을 선택합니다. 두 번 클릭하여 엽니다.
-1. Click the **Impersonators** tab.
+1. **가장자** 탭을 클릭합니다.
 1. 선택한 사용자를 가장할 수 있는 사용자를 클릭합니다. 목록에서 가장 가장할 사용자를 가장 창으로 끕니다. 이름이 목록에 나타납니다.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
@@ -710,11 +710,11 @@ AEM에서는 그룹에서 사용자나 그룹을 제거하는 세 가지 방법�
 언어, 창 관리 및 도구 모음 환경 설정을 포함하여 사용자 및 그룹 환경 설정을 설정하려면 다음을 수행하십시오.
 
 1. 왼쪽 트리에서 기본 설정을 변경할 사용자나 그룹을 선택합니다. 여러 사용자나 그룹을 선택하려면 Ctrl 키를 누른 채 선택하거나 Shift 키를 누른 상태에서 선택 항목을 클릭합니다.
-1. Click the **Preferences** tab.
+1. **Preferences** 탭을 클릭합니다.
 
    ![cqsecuritypreferences](assets/cqsecuritypreferences.png)
 
-1. 그룹 또는 사용자 환경 설정을 필요에 따라 변경하고 완료되면 **저장을** 클릭합니다.
+1. 그룹 또는 사용자 환경 설정에 필요한 대로 변경하고 완료되면 **저장**&#x200B;을 클릭합니다.
 
 ### 다른 사용자를 관리할 권한이 있는 사용자 또는 관리자 설정 {#setting-users-or-administrators-to-have-the-privilege-to-manage-other-users}
 
@@ -724,23 +724,23 @@ AEM에서는 그룹에서 사용자나 그룹을 제거하는 세 가지 방법�
 
    ![cqsecurityadmembertoadmin](assets/cqsecurityaddmembertoadmin.png)
 
-1. 사용자의 **권한** 탭에서 &quot;/&quot;로 이동하고 복제 열에서 &quot;/&quot;에서 복제를 허용하는 확인란을 선택하고 **저장을 클릭합니다**.
+1. 사용자의 **권한** 탭에서 &quot;/&quot;로 이동하고 복제 열에서 &quot;/&quot;에서 복제를 허용하는 확인란을 선택하고 **저장**&#x200B;을 클릭합니다.
 
    ![cqsecurityreplicatepermissions](assets/cqsecurityreplicatepermissions.png)
 
    이제 선택한 사용자가 사용자를 비활성화, 활성화, 삭제 및 만들 수 있습니다.
 
-### 프로젝트 수준에 대한 권한 확장 {#extending-privileges-on-a-project-level}
+### 프로젝트 수준 {#extending-privileges-on-a-project-level}에 대한 권한 확장
 
 애플리케이션별 권한을 구현하려는 경우 다음 정보에서는 사용자 지정 권한을 구현하기 위해 알아야 하는 내용과 CQ 전체에서 권한을 적용하는 방법에 대해 설명합니다.
 
-계층 수정 권한은 jcr-권한의 조합으로 제공됩니다. 복제 권한 이름 **은 저장/평가된 crx:** 복제이며 jcr 저장소의 다른 권한과 함께 이름이 지정됩니다. 그러나 jcr 수준에는 적용되지 않습니다.
+계층 수정 권한은 jcr-권한의 조합으로 제공됩니다. 복제 권한 이름은 jcr 저장소의 다른 권한과 함께 저장/평가되는 **crx:replicate**&#x200B;입니다. 그러나 jcr 수준에는 적용되지 않습니다.
 
-사용자 지정 권한의 정의 및 등록은 버전 2.4의 [Jackrabbit API](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) 에 공식적으로 포함되어 있습니다( [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)참조). 추가 사용에는 [JSR 283](https://jcp.org/en/jsr/detail?id=283) (제16조)에 의해 정의된 것과 같은 JCR 액세스 제어 관리가 포함됩니다. 또한 Jackrabbit API는 두 개의 확장을 정의합니다.
+사용자 지정 권한에 대한 정의 및 등록은 버전 2.4의 [Jackrabbit API](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html)에 공식적으로 포함되어 있습니다([JCR-2887](https://issues.apache.org/jira/browse/JCR-2887) 참조). 추가 사용에는 [JSR 283](https://jcp.org/en/jsr/detail?id=283)(제16조)에 의해 정의된 것과 같은 JCR 액세스 제어 관리가 포함됩니다. 또한 Jackrabbit API는 두 개의 확장을 정의합니다.
 
-권한 등록 메커니즘은 **저장소 구성 아래의 UI에 반영됩니다**.
+권한 등록 메커니즘은 **저장소 구성**&#x200B;의 UI에 반영됩니다.
 
-새(사용자 정의) 권한 등록은 저장소 수준(JCR:ac mgt api에서 &#39;absPath&#39; 매개 변수로 &#39;null&#39;을 전달하면 자세한 내용은 jsr 333을 참조하십시오.) 기본적으로 **관리자** 및 모든 관리자 구성원은 해당 권한이 부여됩니다.
+새(사용자 정의) 권한 등록은 저장소 수준(JCR:ac mgt api에서 &#39;absPath&#39; 매개 변수로 &#39;null&#39;을 전달하면 자세한 내용은 jsr 333을 참조하십시오.) 기본적으로 **admin** 및 모든 관리자 구성원에게 해당 권한이 부여됩니다.
 
 >[!NOTE]
 >
