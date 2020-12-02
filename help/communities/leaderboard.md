@@ -22,9 +22,9 @@ ht-degree: 5%
 
 이 페이지에서는 리더보드 기능 작업에 필요한 정보를 제공합니다.
 
-페이지에 리더보드 구성 요소를 포함하기 전에 [커뮤니티 점수 및 배지를 구성해야 합니다](implementing-scoring.md).
+페이지에 리더보드 구성 요소를 포함하기 전에 [커뮤니티 점수 및 배지](implementing-scoring.md)를 구성해야 합니다.
 
-점수 [지정 및 배지 필수 요점을 참조하십시오](configure-scoring.md).
+[점수 지정 및 배지 필수 항목](configure-scoring.md)을 참조하십시오.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -52,7 +52,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td>리드 <a href="enabling-leaderboard.md">보드 기능 보기</a></td>
+   <td><a href="enabling-leaderboard.md">리드 보드 기능</a>을 참조하십시오.</td>
   </tr>
  </tbody>
 </table>
@@ -61,4 +61,4 @@ ht-degree: 5%
 
 ### 파일 라이브러리 기능 {#file-library-function}
 
-Leaderboard 함수를 포함하는 [커뮤니티 사이트](functions.md#leaderboard-function)구조에는 구성된 `leaderboard` 구성 요소가 포함됩니다.
+[Leaderboard 함수](functions.md#leaderboard-function)가 포함된 커뮤니티 사이트 구조에는 구성된 `leaderboard` 구성 요소가 포함됩니다.
