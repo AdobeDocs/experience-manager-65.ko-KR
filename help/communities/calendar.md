@@ -28,9 +28,9 @@ ht-degree: 6%
 설명서의 이 섹션에서는
 
 * AEM 사이트에 달력 기능 추가
-* 구성 요소에 대한 `Calendar` 구성 설정
+* `Calendar` 구성 요소에 대한 구성 설정
 
-## Adding a Calendar to a Page {#adding-a-calendar-to-a-page}
+## 일정 추가{#adding-a-calendar-to-a-page}
 
 작성 모드에서 페이지에 `Calendar` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여
 
@@ -38,13 +38,13 @@ ht-degree: 6%
 
 사용자가 검토할 기능에 관련된 위치와 같이 페이지에 드래그합니다.
 
-필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](/help/communities/basics.md).
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 방문하십시오.
 
-[필요한 클라이언트측 라이브러리가](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `Calendar` 방식입니다.
+[필수 클라이언트측 라이브러리](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side)가 포함될 때 이 방법으로 `Calendar` 구성 요소가 표시됩니다.
 
 ![calendar-component](assets/calendar-component.png)
 
-### 달력 구성 {#configuring-calendar}
+### 일정 {#configuring-calendar} 구성
 
 액세스할 배치된 `Calendar` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
@@ -54,7 +54,7 @@ ht-degree: 6%
 
 #### 설정 탭 {#settings-tab}
 
-[ **설정** ] 탭에서 태그를 달력 항목에 적용할지 여부를 지정합니다.
+**설정** 탭에서 태그를 달력 항목에 적용할지 여부를 지정합니다.
 
 * **페이지당 이벤트 수**
 
@@ -74,7 +74,7 @@ ht-degree: 6%
 
 * **태깅 허용**
 
-   이 확인란을 선택하면 구성원이 게시한 이벤트에 태그 레이블을 추가할 수 있습니다(태그 **필드** 탭 참조). 기본값은 선택되어 있습니다.
+   이 확인란을 선택하면 구성원이 게시한 이벤트에 태그 레이블을 추가할 수 있습니다(태그 필드&#x200B;**탭 참조).** 기본값은 선택되어 있습니다.
 
 * **파일 업로드 허용**
 
@@ -86,11 +86,11 @@ ht-degree: 6%
 
 * **최대 파일 크기**
 
-   선택한 경우에만 `Allow File Uploads` 관련됨 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
+   `Allow File Uploads`이(가) 선택된 경우에만 해당됩니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
 
 * **허용되는 파일 유형**
 
-   선택한 경우에만 `Allow File Uploads` 관련됨 &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   `Allow File Uploads`이(가) 선택된 경우에만 해당됩니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형을 업로드할 수 없습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **이미지 첨부 파일 최대 크기**
 
@@ -122,9 +122,9 @@ ht-degree: 6%
 
 * **특별 포함된 컨텐츠 허용**
 
-   이 확인란을 선택하면 해당 아이디어를 [주요 컨텐츠로 식별할 수 있습니다](/help/communities/featured.md). 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 아이디어를 [주요 컨텐츠](/help/communities/featured.md)로 식별할 수 있습니다. 기본값은 선택 취소입니다.
 
-사용자 중재 **탭** 아래에서 게시된 토픽과 답글(사용자가 생성한 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+**사용자 중재** 탭에서 게시된 항목 및 답글(사용자가 생성한 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
@@ -158,11 +158,11 @@ ht-degree: 6%
 
 #### 태그 필드 탭 {#tag-field-tab}
 
-[ **태그] 필드** 탭 아래에서 **설정** 탭 아래에서 허용되는 경우 적용할 수 있는 태그는 선택한 네임스페이스에 따라제한됩니다.
+**태그 필드** 탭 아래에서 **설정** 탭에서 허용되는 경우 적용할 수 있는 태그는 선택한 네임스페이스에 따라 제한됩니다.
 
 * **허용되는 네임스페이스**
 
-   설정 탭 아래 `Allow Tagging` 에서 **선택되어 있는 경우** 관련 적용할 수 있는 태그는 확인된 네임스페이스 범주 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값은 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
+   **설정** 탭 아래에서 `Allow Tagging`이(가) 선택된 경우 관련 적용할 수 있는 태그는 확인된 네임스페이스 범주 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값은 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
 
 * **제안 한도**
 
@@ -170,11 +170,11 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->태그 [관리를](/help/sites-administering/tags.md) 방문하여 새 태그 네임스페이스(분류 체계)를 추가하는 방법을 알아보십시오.
+>[태그 관리](/help/sites-administering/tags.md)를 방문하여 새 태그 네임스페이스(분류 체계)를 추가하는 방법을 알아보십시오.
 
 #### 번역 탭 {#translation-tab}
 
-번역 **탭** 아래에서 커뮤니티 사이트에 대한 번역이 활성화되면 특정 게시물 대신 전체 스레드(이벤트 및 댓글)를 번역하도록 번역을 설정할 수 있습니다.
+**번역** 탭에서 커뮤니티 사이트에 대한 번역이 활성화되면 특정 게시물 대신 전체 스레드(이벤트 및 댓글)를 번역하도록 번역을 설정할 수 있습니다.
 
 * **모두 번역**
 
@@ -190,13 +190,13 @@ ht-degree: 6%
 
 ### 중재자 및 관리자 {#moderators-and-administrators}
 
-로그인한 사용자에게 중재자 또는 관리자 권한이 있는 경우 이벤트에 게시된 모든 달력 이벤트 및 댓글에 대해 [중재 작업](/help/communities/moderate-ugc.md) (구성 요소의 구성에서 허용하는 경우)을 수행할 수 있습니다.
+로그인한 사용자에게 중재자 또는 관리자 권한이 있는 경우 이벤트에 게시된 모든 달력 이벤트 및 댓글에 대해 [중재 작업](/help/communities/moderate-ugc.md)(구성 요소의 구성에 의해 허용되는 경우)을 수행할 수 있습니다.
 
 ![중재자 보기](assets/moderators-view.png)
 
 #### 구성원 {#members}
 
-로그인한 사용자가 커뮤니티 구성원 또는 [권한](/help/communities/users.md#privileged-members-group) 멤버인 경우(구성에 따라) 새 달력 이벤트 `New Event` 를 만들고 게시할 수 있습니다.
+로그인한 사용자가 커뮤니티 멤버이거나 [권한이 있는 구성원](/help/communities/users.md#privileged-members-group)(구성에 따라)인 경우 `New Event`를 선택하여 새 달력 이벤트를 만들고 게시할 수 있습니다.
 
 구체적으로 다음을 수행할 수 있습니다.
 
@@ -218,10 +218,10 @@ ht-degree: 6%
 
 ## 추가 정보 {#additional-information}
 
-개발자를 위한 [달력 필수](/help/communities/calendar-basics-for-developers.md) 페이지에서 자세한 내용을 확인할 수 있습니다.
+개발자를 위한 [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) 페이지에서 자세한 내용을 확인할 수 있습니다.
 
-달력 이벤트 및 댓글을 중재하려면 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+달력 이벤트 및 댓글을 중재하려면 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
 
-달력 이벤트 및 댓글에 태그를 지정하려면 사용자 생성 컨텐츠 [태그 지정을 참조하십시오](/help/communities/tag-ugc.md).
+달력 이벤트 및 댓글에 태깅하려면 [사용자 생성 컨텐츠 태그 지정](/help/communities/tag-ugc.md)을 참조하십시오.
 
-달력 이벤트 및 댓글을 번역하려면 사용자 생성 컨텐츠 [변환을 참조하십시오](/help/communities/translate-ugc.md).
+달력 이벤트 및 댓글을 번역하려면 [사용자 생성 콘텐츠 번역](/help/communities/translate-ugc.md)을 참조하십시오.
