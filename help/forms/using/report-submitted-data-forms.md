@@ -17,19 +17,19 @@ ht-degree: 4%
 ---
 
 
-# 양식 포털에서 제출된 양식을 사용한 작업 API {#apis-to-work-with-submitted-forms-on-forms-portal}
+# 양식 포털 {#apis-to-work-with-submitted-forms-on-forms-portal}에서 제출된 양식을 사용하여 작업하는 API
 
 AEM Forms은 양식 포털을 통해 제출된 양식 데이터를 쿼리하는 데 사용할 수 있는 API를 제공합니다. 또한 이 문서에 설명된 API를 사용하여 의견을 게시하거나 제출된 양식의 속성을 업데이트할 수 있습니다.
 
 >[!NOTE]
 >
->API를 호출하는 사용자는 제출 검토자를 양식에 연결 [에 설명된 대로 검토자 그룹에 추가해야 합니다](/help/forms/using/adding-reviewers-form.md).
+>API를 호출하는 사용자는 [제출 검토자를 양식](/help/forms/using/adding-reviewers-form.md)에 연결하는 설명에 따라 검토자 그룹에 추가해야 합니다.
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 모든 자격 조건을 갖춘 양식 목록을 반환합니다.
 
-### URL parameters {#url-parameters}
+### URL 매개 변수 {#url-parameters}
 
 이 API에는 추가 매개 변수가 필요하지 않습니다.
 
@@ -63,7 +63,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 
 제출된 모든 양식의 세부 정보를 반환합니다. 그러나 URL 매개 변수를 사용하여 결과를 제한할 수 있습니다.
 
-### URL parameters {#url-parameters-1}
+### URL 매개 변수 {#url-parameters-1}
 
 요청 URL에 다음 매개 변수를 지정합니다.
 
@@ -79,27 +79,27 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>offset</code> (옵션)</td>
-   <td>결과 세트의 인덱스의 시작점을 지정합니다. The default value is <strong>0</strong>.</td>
+   <td>결과 세트의 인덱스의 시작점을 지정합니다. 기본값은 <strong>0</strong>입니다.</td>
   </tr>
   <tr>
    <td><code>limit</code> (옵션)</td>
-   <td>결과 수를 제한합니다. The default value is <strong>30</strong>.</td>
+   <td>결과 수를 제한합니다. 기본값은 <strong>30</strong>입니다.</td>
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (옵션)</td>
-   <td>결과 정렬 속성을 지정합니다. 기본값은 <strong>jcr:lastModified</strong>로, 마지막 수정 시간을 기준으로 결과를 정렬합니다.</td>
+   <td>결과 정렬 속성을 지정합니다. 기본값은 <strong>jcr:lastModified</strong>입니다. 이 값은 마지막으로 수정한 시간을 기준으로 결과를 정렬합니다.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (옵션)</td>
-   <td>결과 정렬 순서를 지정합니다. 기본값은 결과를 내림차순으로 정렬하는 <strong>desc</strong>입니다. 결과를 오름차순 <code>asc</code> 으로 정렬하도록 지정할 수 있습니다.</td>
+   <td>결과 정렬 순서를 지정합니다. 기본값은 결과를 내림차순으로 정렬하는 <strong>desc</strong>입니다. 결과를 오름차순으로 정렬하려면 <code>asc</code>을 지정할 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (옵션)</td>
-   <td>결과에 포함할 양식 속성의 쉼표로 구분된 목록을 지정합니다. 기본 속성은 다음과 같습니다.<br /><code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>결과에 포함할 양식 속성의 쉼표로 구분된 목록을 지정합니다. 기본 속성은 다음과 같습니다.<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (옵션)</td>
-   <td>양식 속성에서 지정된 값을 검색하고 일치하는 값이 있는 양식을 반환합니다. The default value is <strong>""</strong>.</td>
+   <td>양식 속성에서 지정된 값을 검색하고 일치하는 값이 있는 양식을 반환합니다. 기본값은 <strong>"</strong>입니다.</td>
   </tr>
  </tbody>
 </table>
@@ -133,7 +133,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 
 지정된 제출 인스턴스에 주석을 추가합니다.
 
-### URL parameters {#url-parameters-2}
+### URL 매개 변수 {#url-parameters-2}
 
 요청 URL에 다음 매개 변수를 지정합니다.
 
@@ -164,7 +164,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 
 지정된 제출 인스턴스에 게시된 모든 댓글을 반환합니다.
 
-### URL parameters {#url-parameters-3}
+### URL 매개 변수 {#url-parameters-3}
 
 요청 URL에 다음 매개 변수를 지정합니다.
 
@@ -202,7 +202,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 
 지정된 제출된 양식 인스턴스의 지정된 속성 값을 업데이트합니다.
 
-### URL parameters {#url-parameters-4}
+### URL 매개 변수 {#url-parameters-4}
 
 요청 URL에 다음 매개 변수를 지정합니다.
 
