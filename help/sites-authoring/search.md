@@ -12,6 +12,9 @@ discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +41,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>검색 레일이 표시될 때마다 핫키 `/`(슬래시)를 사용하여 검색을 호출할 수 있습니다.
 
 ## 검색 및 필터 {#search-and-filter}
 
@@ -71,6 +74,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    * 검색 디렉토리
    * 태그
    * 검색 기준(예: 수정한 날짜, 게시 상태, Live Copy 상태).
+
    >[!NOTE]
    >
    >검색 기준은 다음과 같이 다양할 수 있습니다.
@@ -83,7 +87,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 
-1. 검색어를 추가할 수도 있습니다.
+1. 검색어를 추가할 수도 있습니다:
 
    ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
 
