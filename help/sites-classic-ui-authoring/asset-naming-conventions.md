@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 55e66c66-0120-4ed4-94c5-d65a434bb59b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 90%
 
 ---
 
 
 # 자산에 대한 이름 지정 규칙 testing{#naming-conventions-for-assets-testing}
 
-Nodes in the repository are subject to naming conventions of the [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). 그러나 Adobe Experience Manager는 자산 노드의 이름에 대한 추가적인 규칙을 적용합니다.
+저장소의 노드는 [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository)의 이름 지정 규칙을 따릅니다. 그러나 Adobe Experience Manager는 자산 노드의 이름에 대한 추가적인 규칙을 적용합니다.
 
 ## 클래식 UI {#classic-ui}
 
