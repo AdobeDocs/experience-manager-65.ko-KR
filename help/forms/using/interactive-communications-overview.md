@@ -17,7 +17,7 @@ ht-degree: 5%
 ---
 
 
-# 인터랙티브 커뮤니케이션 개요 {#interactive-communications-overview}
+# 대화형 통신 개요 {#interactive-communications-overview}
 
 이 문서에서는 개요, 샘플 사용 사례, 제작 워크플로우 및 인터랙티브 커뮤니케이션과 서신 간의 차이점을 다룹니다.
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공지, 마케팅 이메일, 청구서 및 환영 키트와 같은 안전하고 개인화된 인터랙티브한 통신의 작성, 수집 및 전달을 중앙 집중화하여 관리합니다.
 
-## 주요 기능 {#key-capabilities}
+## 키 기능 {#key-capabilities}
 
 인터랙티브 커뮤니케이션의 주요 기능은 다음과 같습니다.
 
@@ -36,19 +36,19 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 * 에이전트 사용자 인터페이스는 인터랙티브 커뮤니케이션의 인쇄 및 웹 미리 보기를 표시합니다.
 * 구성 요소를 드래그하여 놓아 인쇄 및 웹 채널을 신속하게 제작
 
-## Interactive Communication creation  {#interactive-communication-creation}
+## 대화형 통신 만들기 {#interactive-communication-creation}
 
 ![interactive_communication-01](assets/interactive_communication-01.jpg)
 
 ### 워크플로우 {#workflow}
 
-인터랙티브 커뮤니케이션을 만들려면 [대화형 커뮤니케이션을 위한 기본](#buildingblocks) 요소를 준비한 다음 다음 다음 단계를 완료하십시오.
+대화형 통신을 만들려면 대화형 통신에 사용할 [구성 블록](#buildingblocks)을 준비시킨 다음 다음 단계를 완료하십시오.
 
-1. 대화형 통신 [을 만들도록 선택합니다](/help/forms/using/create-interactive-communication.md).
+1. [대화형 통신 만들기](/help/forms/using/create-interactive-communication.md)를 선택합니다.
 
-1. 양식 [데이터 모델](/help/forms/using/data-integration.md), 자동 완성 서비스, [인쇄 및 웹 채널 템플릿을 지정합니다](/help/forms/using/web-channel-print-channel.md). 인쇄 채널에서 웹 채널을 생성하도록 선택할 수 있습니다.
+1. [양식 데이터 모델](/help/forms/using/data-integration.md), 자동 완성 서비스, [인쇄 및 웹 채널 템플릿](/help/forms/using/web-channel-print-channel.md)을 지정합니다. 인쇄 채널에서 웹 채널을 생성하도록 선택할 수 있습니다.
 
-1. 필요한 경우 [드래그 앤 드롭 인터페이스를](/help/forms/using/introduction-interactive-communication-authoring.md)사용하여 문서 조각, 이미지, 구성 요소를 인쇄 및 인터랙티브 커뮤니케이션의 웹 채널에 추가합니다.
+1. [드래그 앤 드롭 인터페이스](/help/forms/using/introduction-interactive-communication-authoring.md)를 사용하여 필요에 따라 문서 조각, 이미지, 구성 요소를 인쇄 및 대화형 통신의 웹 채널에 추가합니다.
 1. 다음과 같이 삽입된 구성 요소의 속성을 구성합니다.
 
    1. [이미지](/help/forms/using/create-interactive-communication.md#step2)
@@ -57,7 +57,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
    1. [문서 조각](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. 인쇄 및 웹 채널을 미리 보고 필요한 경우 대화형 통신을 편집합니다.
-1. 에이전트는 에이전트 UI를 사용하여 수신자/게시물 프로세스로 보내기 위한 [대화형](/help/forms/using/prepare-send-interactive-communication.md) 통신을 준비합니다.
+1. 에이전트는 에이전트 UI를 사용하여 [Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md)을 준비하여 수신자/게시물 프로세스로 보냅니다.
 
 ### 빌딩 블록 {#buildingblocks}
 
@@ -67,11 +67,11 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 * [인쇄 및 웹 채널 템플릿](/help/forms/using/web-channel-print-channel.md)
 * [문서 조각](/help/forms/using/document-fragments.md)
 * 이미지
-* [웹](/help/forms/using/themes.md) 채널을 위한 테마
+* [웹 ](/help/forms/using/themes.md) 채널의 테마
 
-## 인터랙티브한 커뮤니케이션과 커뮤니케이션 관리 {#interactive-communications-vs-correspondence-management}
+## Interactive Communications Vs Communications Management {#interactive-communications-vs-correspondence-management}
 
-인터랙티브한 커뮤니케이션은 고객 커뮤니케이션을 제작하는 데 기본적으로 권장됩니다. AEM 6.3 Forms 및 AEM 6.2 Forms에서 만든 문자를 계속 사용하려면 호환성 패키지를 [설치해야 합니다](/help/forms/using/compatibility-package.md). 다음은 인터랙티브 커뮤니케이션과 서신의 기능을 비교한 것입니다.
+인터랙티브한 커뮤니케이션은 고객 커뮤니케이션을 제작하는 데 기본적으로 권장됩니다. AEM 6.3 Forms 및 AEM 6.2 Forms에서 만든 문자를 계속 사용하려면 [호환성 패키지](/help/forms/using/compatibility-package.md)를 설치해야 합니다. 다음은 인터랙티브 커뮤니케이션과 서신의 기능을 비교한 것입니다.
 
 <table>
  <tbody>
