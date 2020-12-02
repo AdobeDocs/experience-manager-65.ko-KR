@@ -3,9 +3,9 @@ title: AEM 6.5 기능 사용 안내서
 seo-title: AEM 6.5 기능 사용 안내서
 description: AEM 6.5의 필수 기능에 대한 개요
 seo-description: AEM 6.5의 필수 기능에 대한 개요
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 100%
 
