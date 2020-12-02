@@ -12,52 +12,52 @@ docset: aem65
 translation-type: tm+mt
 source-git-commit: ade3747ba608164a792a62097b82c55626245891
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1022'
+ht-degree: 1%
 
 ---
 
 
-# 적응형 양식 캐시 구성 {#configure-adaptive-forms-cache}
+# 응용 양식 캐시 구성 {#configure-adaptive-forms-cache}
 
 캐시는 데이터 액세스 시간을 단축하고 지연을 줄이며 입출력 속도를 향상시키는 메커니즘입니다. 적응형 양식 캐시는 사전 작성된 데이터를 저장하지 않고 적응형 양식의 HTML 컨텐츠 및 JSON 구조만 저장합니다. 클라이언트에서 응용 양식을 렌더링하는 데 필요한 시간을 줄이는 데 도움이 됩니다. 적응형 양식을 위해 설계되었습니다.
 
-## 작성 및 게시 인스턴스에서 적응형 양식 캐시 구성 {#configure-adaptive-forms-caching-at-author-and-publish-instances}
+## 작성자 및 게시 인스턴스 {#configure-adaptive-forms-caching-at-author-and-publish-instances}에 적응형 양식 캐시 구성
 
-1. 의 AEM 웹 콘솔 구성 관리자로 이동합니다 `https://[server]:[port]/system/console/configMgr`.
-1. [응용 **[!UICONTROL 양식] 및 [대화형 통신 웹 채널 구성]을]** 클릭하여 구성 값을 편집합니다.
-1. 구성 값 [!UICONTROL 편집] 대화 상자에서 AEM [!DNL Forms] 서버의 인스턴스가 캐싱할 수 있는 최대 양식 또는 문서 수를 응용 Forms **[!UICONTROL 수 필드에]** 지정합니다. 기본값은 100입니다.
+1. AEM 웹 콘솔 구성 관리자(`https://[server]:[port]/system/console/configMgr`)로 이동합니다.
+1. **[!UICONTROL 응용 양식 및 대화형 통신 웹 채널 구성]**&#x200B;을 클릭하여 구성 값을 편집합니다.
+1. [!UICONTROL 구성 값 편집] 대화 상자에서 AEM [!DNL Forms] 서버의 인스턴스가 **[!UICONTROL 응용 Forms 수]** 필드에 캐싱할 수 있는 최대 양식 또는 문서 수를 지정합니다. 기본값은 100입니다.
 
    >[!NOTE]
    >
-   >캐시를 비활성화하려면 [응용 Forms 수] 필드의 값을 **0으로 설정합니다**. 캐시가 재설정되고 캐시 구성을 비활성화하거나 변경하면 모든 양식과 문서가 캐시에서 제거됩니다.
+   >캐시를 비활성화하려면 [응용 Forms 수] 필드의 값을 **0**&#x200B;으로 설정합니다. 캐시가 재설정되고 캐시 구성을 비활성화하거나 변경하면 모든 양식과 문서가 캐시에서 제거됩니다.
 
    ![적응형 양식 HTML 캐시를 위한 구성 대화 상자](assets/cache-configuration-edit.png)
 
-1. Click **[!UICONTROL Save]** to save the configuration.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭하여 구성을 저장합니다.
 
 캐시 응용 양식 및 관련 자산을 사용하도록 환경이 구성되어 있습니다.
 
 
-## (선택 사항) 발송자에서 응용 양식 캐시 구성 {#configure-the-cache}
+## (선택 사항) 디스패처 {#configure-the-cache}에서 응용 양식 캐시를 구성합니다.
 
 또한 추가 성능 향상을 위해 발송자에서 적응형 양식 캐싱을 구성할 수도 있습니다.
 
 ### 전제 조건 {#pre-requisites}
 
-* 클라이언트에서 데이터 [병합 또는 자동](prepopulate-adaptive-form-fields.md#prefill-at-client) 채우기 옵션을 활성화합니다. 이렇게 하면 미리 채워진 양식의 각 인스턴스에 대한 고유 데이터를 병합하는 데 도움이 됩니다.
-* [모든 게시 인스턴스에 대해 flush 에이전트를 활성화합니다](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance). 적응형 양식의 캐싱 성능이 향상됩니다. 플러시 에이전트의 기본 URL은 입니다 `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
+* [클라이언트](prepopulate-adaptive-form-fields.md#prefill-at-client)에서 데이터 병합 또는 자동 완성 옵션을 활성화합니다. 이렇게 하면 미리 채워진 양식의 각 인스턴스에 대한 고유 데이터를 병합하는 데 도움이 됩니다.
+* [모든 게시 인스턴스에 대해 flush 에이전트를 활성화합니다](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance). 적응형 양식의 캐싱 성능이 향상됩니다. 플러시 에이전트의 기본 URL은 `http://[server]:[port]]/etc/replication/agents.publish/flush.html`입니다.
 
-### 발송자에서 응용 양식을 캐싱하기 위한 고려 사항 {#considerations}
+### 디스패처 {#considerations}에서 응용 양식을 캐싱하기 위한 고려 사항
 
-* 적응형 양식 캐시를 사용하는 경우 AEM [!DNL Dispatcher] 을 사용하여 적응형 양식의 클라이언트 라이브러리(CSS 및 JavaScript)를 캐시합니다.
+* 응용 양식 캐시를 사용할 때는 AEM [!DNL Dispatcher]을 사용하여 응용 양식의 클라이언트 라이브러리(CSS 및 JavaScript)를 캐시합니다.
 * 사용자 지정 구성 요소를 개발하는 동안, 개발에 사용되는 서버에서 응용 양식 캐시를 사용하지 않도록 설정합니다.
-* 확장자가 없는 URL은 캐시되지 않습니다. 예를 들어 패턴 패턴이`/content/forms/[folder-structure]/[form-name].html` 있는 URL은 캐시되고 캐싱은 패턴이 있는 URL을 무시합니다 `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. 따라서 URL과 익스텐션을 함께 사용하면 캐싱의 이점을 활용할 수 있습니다.
+* 확장자가 없는 URL은 캐시되지 않습니다. 예를 들어 패턴 패턴`/content/forms/[folder-structure]/[form-name].html`이 있는 URL은 캐시되고 캐싱은 패턴 `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`이 있는 URL은 무시됩니다. 따라서 URL과 익스텐션을 함께 사용하면 캐싱의 이점을 활용할 수 있습니다.
 * 지역화된 적응형 양식에 대한 고려 사항:
-   * URL 형식 `http://host:port/content/forms/af/<afName>.<locale>.html` 을 사용하여 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
-   * [형식이 있는 URL에 대한 브라우저 로케일](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) 사용을 비활성화합니다 `http://host:port/content/forms/af/<adaptivefName>.html`.
-   * URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을 사용하고 **[!UICONTROL 구성 관리자에서 브라우저 로케일]** 사용을 비활성화하면 현지화되지 않은 응용 양식 버전이 제공됩니다. 지역화되지 않은 언어는 적응형 양식을 개발하는 동안 사용되는 언어입니다. 브라우저에 대해 구성된 로케일(브라우저 로케일)은 고려되지 않으며, 지역화되지 않은 버전의 응용 양식이 제공됩니다.
-   * URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을 사용하고 구성 관리자에서 **[!UICONTROL 브라우저 로케일]** 사용을 활성화하면 현지화된 버전의 응용 양식이 제공됩니다(사용 가능한 경우). 현지화된 적응형 양식의 언어는 브라우저(브라우저 로케일)에 대해 구성된 로케일을 기반으로 합니다. 응용 양식의 첫 번째 [인스턴스만 캐싱할 수 있습니다]. 인스턴스에서 문제가 발생하지 않도록 하려면 문제 [해결을 참조하십시오](#only-first-insatnce-of-adptive-forms-is-cached).
+   * URL 형식 `http://host:port/content/forms/af/<afName>.<locale>.html`을(를) 사용하여 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` 대신 지역화된 적응형 양식의 버전을 요청합니다
+   * [형식이 있는 URL에 대한 브라우저 ](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) 로컬 사용을 비활성화합니다 `http://host:port/content/forms/af/<adaptivefName>.html`.
+   * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html` 및 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용할 수 없는 경우 지역화되지 않은 응용 양식 버전이 제공됩니다. 지역화되지 않은 언어는 적응형 양식을 개발하는 동안 사용되는 언어입니다. 브라우저에 대해 구성된 로케일(브라우저 로케일)은 고려되지 않으며, 지역화되지 않은 버전의 응용 양식이 제공됩니다.
+   * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html` 및 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;이(가) 활성화되면 현지화된 버전의 적응형 양식이 제공됩니다(사용 가능한 경우). 현지화된 적응형 양식의 언어는 브라우저(브라우저 로케일)에 대해 구성된 로케일을 기반으로 합니다. 응용 양식[의 첫 번째 인스턴스만 캐싱할 수 있습니다. ] 인스턴스에서 문제가 발생하지 않도록 하려면 [문제 해결](#only-first-insatnce-of-adptive-forms-is-cached)을 참조하십시오.
 
 ### 발송자에서 캐싱 사용
 
@@ -129,11 +129,11 @@ ht-degree: 0%
       }
    ```
 
-AEM 환경은 적응형 양식을 캐시하도록 구성되어 있습니다. 모든 유형의 적응형 양식을 캐시합니다. 캐시된 페이지를 전달하기 전에 페이지에 대한 사용자 액세스 권한을 확인해야 하는 요구 사항이 있는 경우 [보안 컨텐츠 캐싱을 참조하십시오](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+AEM 환경은 적응형 양식을 캐시하도록 구성되어 있습니다. 모든 유형의 적응형 양식을 캐시합니다. 캐시된 페이지를 전달하기 전에 페이지에 대한 사용자 액세스 권한을 확인해야 하는 요구 사항이 있는 경우 [보안 컨텐츠 캐싱](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html)을 참조하십시오.
 
 ## 문제 해결 {#troubleshooting}
 
-### 이미지나 비디오가 포함된 일부 응용 양식이 발송자 캐시에서 자동으로 무효화되지 않습니다. {#videos-or-images-not-auto-invalidated}
+### 이미지나 비디오가 포함된 일부 응용 양식이 발송자 캐시 {#videos-or-images-not-auto-invalidated}에서 자동으로 무효화되지 않습니다.
 
 #### 문제 {#issue1}
 
@@ -143,7 +143,7 @@ AEM 환경은 적응형 양식을 캐시하도록 구성되어 있습니다. 모
 
 이미지와 비디오를 게시한 후 이러한 자산을 참조하는 적응형 양식을 명시적으로 게시 취소하고 게시합니다.
 
-### 컨텐츠 조각 또는 경험 조각을 포함하는 일부 응용 양식이 발송자 캐시에서 자동으로 무효화되지 않습니다. {#content-or-experience-fragment-not-auto-invalidated}
+### 컨텐츠 조각 또는 경험 조각을 포함하는 일부 응용 양식이 발송자 캐시 {#content-or-experience-fragment-not-auto-invalidated}에서 자동으로 무효화되지 않습니다.
 
 #### 문제 {#issue2}
 
@@ -153,11 +153,11 @@ AEM 환경은 적응형 양식을 캐시하도록 구성되어 있습니다. 모
 
 업데이트된 컨텐츠 조각 또는 경험 조각을 게시한 후 명시적으로 게시를 취소하고 이러한 자산을 사용하는 적응형 양식을 게시합니다.
 
-### 응용 양식의 첫 번째 인스턴스만 캐시됩니다{#only-first-insatnce-of-adptive-forms-is-cached}
+### 응용 양식의 첫 번째 인스턴스만 캐시됨{#only-first-insatnce-of-adptive-forms-is-cached}
 
 #### 문제 {#issue3}
 
-응용 양식 URL에 현지화 정보가 없고 구성 관리자의 **[!UICONTROL 브라우저 로케일]** 사용이 활성화되면 현지화된 버전의 응용 양식이 제공되고 응용 양식의 첫 번째 인스턴스만 캐시되어 모든 후속 사용자에게 전달됩니다.
+응용 양식 URL에 현지화 정보가 없고, 구성 관리자의 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;이 활성화되어 있으면, 현지화된 버전의 응용 양식이 제공되며 응용 양식의 첫 번째 인스턴스만 캐시되어 모든 후속 사용자에게 전달됩니다.
 
 #### 솔루션 {#Solution3}
 
