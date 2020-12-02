@@ -31,9 +31,9 @@ ht-degree: 97%
 >
 >사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 지정했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
 
-The components are available when [editing a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) from the **Components** tab of the sidekick and the **Insert New Component** selector (when you double-click in the **Drag components or assets here** area).
+구성 요소는 사이드 킥의 **구성 요소** 탭 및 **새 구성 요소 삽입** 선택기에서 페이지](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)을(를) 편집할 때 사용할 수 있습니다(**구성 요소 또는 자산을 여기로 드래그하십시오** 영역).[
 
-You can select a component and drag it to the required location on your page and then [Edit Content and Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
+구성 요소를 선택하고 페이지에서 필요한 위치로 드래그한 다음 [콘텐츠 및 속성 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)을 선택합니다.
 
 구성 요소는 다음을 포함하여(페이지 작성용) 다양한 카테고리(구성 요소 그룹)에 따라 정렬됩니다.
 
@@ -88,7 +88,7 @@ You can select a component and drag it to the required location on your page and
 | 뷰포트 너비 범위(픽셀) | 이미지 너비(픽셀) | JPEG 품질 | 타깃 장치 유형 |
 |---|---|---|---|
 | 너비 &lt;= 319 | 320 | 낮음 |  |
-| 너비 = 320 | 320 | 중간 | 휴대폰(세로) |
+| 너비 = 320 | 320년 | 중간 | 휴대폰(세로) |
 | 320 &lt; 너비 &lt; 481 | 480 | 중간 | 휴대폰(가로) |
 | 480 &lt; 너비 &lt; 769 | 476 | 높음 | 태블릿(세로) |
 | 768 &lt; 너비 &lt; 1025 | 620 | 높음 | 태블릿(가로) |
@@ -169,7 +169,8 @@ You can select a component and drag it to the required location on your page and
 수동으로 또는 선택기를 사용하여 경로를 지정하십시오. 현재 페이지를 상위 페이지로 사용하려면 비워 두십시오.
       * **고정 목록 옵션**
 
-         * **페이지**&#x200B;페이지 목록을 선택합니다.사용 
+         * ****
+페이지페이지 목록을 선택합니다.사용 
 `+` 항목을 더 추가하고 위쪽/아래쪽 단추를 추가하여 순서를 조정합니다.
       * **검색 옵션**
 
@@ -183,8 +184,9 @@ You can select a component and drag it to the required location on your page and
          * **Querybuilder 설명 표기법**
 QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있습니다. 예를 들어 &quot;fulltext=Marketing&quot;을 입력하면 컨텐츠에 &quot;Marketing&quot;이 포함된 모든 페이지를 회전판에 표시할 수 있습니다.
 쿼리 표현식 및 추가적인 예에 대한 전체 논의는 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)를 참조하십시오.
-   * **정렬 기준**&#x200B;선택 
-`jcr:title`, `jcr:created``cq:lastModified`또는 드롭다운 `cq:template` 메뉴에서 다운로드할 수 있습니다.
+   * **정렬**
+기준 선택 
+`jcr:title`,  `jcr:created` `cq:lastModified` 또는 드롭다운 메뉴 `cq:template` 에서 다운로드할 수 있습니다.
 
    * **제한**
 회전판에서 사용할 최대 항목 수로서, 선택 사항입니다.
@@ -196,7 +198,7 @@ QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있
 >[!NOTE]
 AEM DAM에 있는 디지털 자산을 표시하는 Adobe Experience Manager용의 사용자 지정 회전판 구성 요소를 만들 수 있습니다. 자세한 내용은 [Adobe Experience Manager용 사용자 지정 회전판 구성 요소 만들기](https://helpx.adobe.com/kr/experience-manager/using/custom-carousel-components.html)를 참조하십시오.
 
-### Chart {#chart}
+### Chart  {#chart}
 
 차트 구성 요소로 막대, 라인 또는 파이 차트를 추가할 수 있습니다. 입력한 데이터를 바탕으로 AEM에서 차트를 만듭니다. 데이터 탭에 데이터를 직접 입력하거나 스프레드시트를 복사하여 붙여넣을 수 있습니다.
 
@@ -621,7 +623,7 @@ AEM에 사용되는 HTML5 기능에 대한 자세한 내용은 [인증된 플랫
 
       나열을 시작할 경로입니다.
 
-### Slideshow {#slideshow}
+### Slideshow  {#slideshow}
 
 이 구성 요소는 일련의 이미지를 순서대로 로드하여 페이지에 표시합니다. 이미지를 추가 또는 제거하고 각 이미지에 제목을 지정할 수 있습니다. 고급 설정에서 표시 영역의 크기를 지정할 수도 있습니다.
 
@@ -942,7 +944,7 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
 
    * **CSS**
 
-### 양식(구성 요소) {#form-component}
+### 양식(구성 요소)  {#form-component}
 
 양식 구성 요소는 **양식 시작** 및 **양식 끝** 요소를 사용하여 양식의 시작과 끝을 정의합니다. 이러한 단락이 항상 쌍을 이루어야 양식이 올바르게 정의됩니다.
 
@@ -1030,8 +1032,8 @@ AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home
 새 계정을 만들 때 사용되는 페이지입니다.
       * **컨텐츠 만들기**
 
-         * Content Path
-The content path for any content that the form dumps. Enter a path that ends with a slash `/`. The slash means that for each form port, a new node is created at the given location; for example:
+         * 컨텐츠 경로
+양식에 포함된 내용을 저장할 컨텐츠 경로입니다.슬래시 `/`로 끝나는 경로를 입력합니다.즉, 양식을 게시할 때마다 지정된 위치에 새 노드가 만들어집니다.예를 들면 다음과 같습니다.
             `/forms/feedback/`
 
          * **유형**
@@ -1171,7 +1173,7 @@ The content path for any content that the form dumps. Enter a path that ends wit
 
 구성 요소는 즉시 사용할 수 있도록 구성되지만 필요한 경우 구성을 변경할 수 있습니다. 예를 들어, 주소의 개별 요소에 대해 제한 사항을 추가할 수 있습니다. 필드를 비워 두면 기본 설정이 사용됩니다.
 
-### Captcha {#captcha}
+### Captcha  {#captcha}
 
 Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을 입력하도록 요청합니다. 이 문자열은 새로 고칠 때마다 변경됩니다.
 
@@ -1179,7 +1181,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 이 구성 요소의 다양한 매개 변수를 구성할 수 있습니다. 예를 들어 Captcha 문자열을 잘못 입력한 경우에 표시할 메시지를 구성할 수 있습니다.
 
-### 확인란 그룹 {#checkbox-group}
+### 확인란 그룹  {#checkbox-group}
 
 확인란을 사용하여 동시에 선택 가능한 하나 이상의 확인란으로 구성된 목록을 만들 수 있습니다.
 
@@ -1218,7 +1220,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 >[!NOTE]
 사용자 지정 업로드 구성 요소를 만들어 파일을 Sling 서블릿에 업로드할 수 있습니다. 자세한 내용은 [Adobe Experience Manager에 파일 업로드](https://helpx.adobe.com/kr/experience-manager/using/uploading-files-aem1.html)를 참조하십시오.
 
-### 숨김 필드 {#hidden-field}
+### 숨김 필드  {#hidden-field}
 
 이 구성 요소로 숨김 필드를 만들어 다양한 용도로 사용할 수 있습니다. 예를 들어 양식을 제출한 후 작업을 수행해야 할 때, 또는 사후 처리에서 데이터를 숨겨야 할 때가 있습니다.
 
@@ -1248,7 +1250,7 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 
 달력 이벤트 양식에서 이벤트의 URL/링크 필드로 가장 일반적으로 사용됩니다.
 
-### 암호 필드 {#password-field}
+### 암호 필드  {#password-field}
 
 사용자가 암호를 입력할 수 있도록 하는 데 사용됩니다.
 
