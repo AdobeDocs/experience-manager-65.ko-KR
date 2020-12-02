@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 100%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
    * 다음과 같이 다양한 가능성이 있습니다.
    * 페이지가 올바로 복제되었는지 확인합니다. 페이지 상태를 확인하고, 필요할 경우 복제 큐의 상태도 확인합니다.
    * 로컬 브라우저의 캐시를 지우고 다시 페이지에 액세스합니다.
-   * Add `?` to the end of the page URL. For example:
+   * 페이지 URL의 끝에 `?`를 추가합니다. 예:
 
       * `http://localhost:4502/sites.html/content?`
       * 이렇게 하면 페이지가 AEM에서 바로 요청되고 디스패처가 무시됩니다. 업데이트된 페이지가 표시되면, 이것은 디스패처 캐시를 지우라는 의미입니다.
