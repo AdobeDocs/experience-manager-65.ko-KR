@@ -288,7 +288,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 예를 들어 해당하는 경우 **페이지 정보** 옵션도 표시됩니다.
 
 * [출시 홍보](/help/sites-authoring/launches-promoting.md): 페이지가 출시되었을 경우
-* [관리자가 이 옵션을](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) [활성화한 경우 클래식 UI에서 열기](/help/sites-administering/enable-classic-ui-editor.md)
+* [클래식 ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) UI에서 열기관리자가 이 옵션을  [활성화한 경우](/help/sites-administering/enable-classic-ui-editor.md)
 
 또한 **페이지 정보**&#x200B;는 해당하는 경우 분석 및 권장 사항에 대한 액세스 권한을 제공할 수 있습니다.
 
@@ -332,7 +332,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 작성할 때, 다른 페이지나 리소스에 대한 링크를 정의하거나 이미지를 선택할 때와 같이 다른 리소스를 선택해야 하는 경우가 있습니다. 경로를 쉽게 선택할 수 있도록 [경로 필드](/help/sites-authoring/author-environment-tools.md#path-fields)가 자동 완성 기능을 제공하고 [경로 브라우저](/help/sites-authoring/author-environment-tools.md#path-browser)가 보다 강력하게 선택할 수 있도록 지원합니다.
 
-### 경로 필드 {#path-fields}
+### 경로 필드  {#path-fields}
 
 여기에 사용되는 예제는 이미지 구성 요소입니다. 구성 요소 사용 및 편집에 대한 자세한 내용은 [페이지 작성 구성 요소](/help/sites-authoring/default-components.md)를 참조하십시오.
 
