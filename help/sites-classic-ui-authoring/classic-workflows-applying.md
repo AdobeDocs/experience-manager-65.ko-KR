@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 워크플로우는 웹 사이트 콘솔에서, 또는 페이지 편집 시에는 사이드 킥에서 시작할 수 있습니다.
 
-The **Status** column in the **Websites** console indicates whether a workflow has been applied to a page:
+**웹 사이트** 콘솔의 **상태** 열은 워크플로우가 페이지에 적용되었는지 여부를 나타냅니다.
 
 ![워크플로 상태](assets/workflowstatus.png)
 
@@ -46,14 +49,14 @@ The **Status** column in the **Websites** console indicates whether a workflow h
 1. 페이지 목록에서 페이지를 선택한 다음 [워크플로우]를 클릭합니다.
 1. [워크플로우 시작] 대화 상자에서 적용할 워크플로우를 선택합니다. 원할 경우, 주석과 제목을 입력하십시오. 그런 다음 [시작]을 클릭합니다.
 
-### 사이드 킥을 사용한 워크플로우 시작 {#starting-a-workflow-using-sidekick}
+### 사이드 킥을 사용한 워크플로우 시작  {#starting-a-workflow-using-sidekick}
 
 1. 웹 사이트 콘솔을 엽니다.
 1. 필요한 페이지를 엽니다.
 1. 사이드 킥에서 [워크플로우] 탭을 선택합니다.
-1. Expand the **Workflow** dialog, allowing you to select the **Workflow** and optionally enter **Workflow Title** and **Comment**.
+1. **워크플로우** 대화 상자를 확장하여 **워크플로우**&#x200B;을 선택하고 선택적으로 **워크플로우 제목** 및 **주석**&#x200B;을 입력합니다.
 
-   ![워크플로우시작사이드킥으로](assets/workflowstartsidekick.png)
+   ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
 1. **워크플로우 시작**&#x200B;을 클릭하여 구성한 속성과 현재 페이지를 페이로드로 사용하여 새 워크플로우 인스턴스를 시작합니다. 이제 워크플로우가 실행 중입니다.
 
