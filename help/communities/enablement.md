@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
-활성 기능은 [활성 커뮤니티를 만드는 기능을 제공합니다](overview.md#enablement-community).
+활성 기능은 [활성 커뮤니티](overview.md#enablement-community)를 만드는 기능을 제공합니다.
 
 * 이 기능을 사용하려면 프로덕션 환경에서 사용할 추가 라이선스가 필요합니다.
 
@@ -40,19 +40,19 @@ ht-degree: 1%
 
 * **FFmpeg**
 
-   FFmpeg는 오디오 및 비디오를 변환하고 스트리밍하기 위한 솔루션이며, 설치할 때 [비디오 에셋을 제대로 트랜스코딩하는 데 사용됩니다](../../help/sites-authoring/default-components-foundation.md#video). 활성 커뮤니티의 경우, 작성자 환경에서 업로드된 리소스에 대한 메타데이터를 입수하고 리소스를 나열할 때 표시할 축소판을 생성하는 데 사용됩니다.
+   FFmpeg는 오디오 및 비디오를 변환하고 스트리밍하기 위한 솔루션이며, 설치되면 [비디오 에셋](../../help/sites-authoring/default-components-foundation.md#video)의 적절한 트랜스코딩에 사용됩니다. 활성 커뮤니티의 경우, 작성자 환경에서 업로드된 리소스에 대한 메타데이터를 입수하고 리소스를 나열할 때 표시할 축소판을 생성하는 데 사용됩니다.
 
 설정:
 
 * **커뮤니티 관리자**
 
-   활성 커뮤니티의 경우 `Community Enablement Managers` 사용자 그룹의 구성원만 `Community Site Enablement Manager`의 역할을 할당할 수 있으며, 해당 권한은 게시 환경의 컨텐츠 작성, 할당 및 구성원 관리를 포함할 수 있습니다.
+   활성 커뮤니티의 경우, `Community Enablement Managers` 사용자 그룹의 구성원만 `Community Site Enablement Manager`의 역할에 할당될 수 있으며, 이 그룹의 권한은 게시 환경의 컨텐츠 생성, 할당 및 멤버 관리를 포함할 수 있습니다.
 
 옵션 구성:
 
 * **Adobe Analytics**
 
-   Adobe Analytics와의 통합에는 포괄적인 보고 기능이 추가되고 Analytics에 비디오 하트비트 추가를 지원합니다.
+   Adobe Analytics와의 통합은 포괄적인 보고 기능을 추가하고 Analytics에 비디오 하트비트 추가를 지원합니다.
 
 * **Dispatcher**
 
@@ -66,14 +66,14 @@ ht-degree: 1%
 
 1. **[MySQL용 JDBC 드라이버 설치](deploy-communities.md#jdbc-driver-for-mysql)**
 
-   웹 콘솔 사용(번들): *http://localhost:4502/system/console/bundles*
+   웹 콘솔 사용(번들):*http://localhost:4502/system/console/bundles*
 
-   SCORM 패키지를 설치하기 *전에* 설치
+   SCORM 패키지를 설치하기 전에 *을(를) 설치합니다.*
 
 1. **[SCORM 패키지 설치](deploy-communities.md#scorm-package)**
 
 
-   패키지 관리자 사용: *http://localhost:4502/crx/packmgr/*
+   패키지 관리자 사용:*http://localhost:4502/crx/packmgr/*
 
 **모든 서버에서:**
 
@@ -93,21 +93,21 @@ ht-degree: 1%
 
 1. **[JDBC 접속 풀 구성](mysql.md#configure-jdbc-connections)**
 
-   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
+   웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
 
 1. **[SCORM 엔진 서비스 구성](mysql.md#aem-communities-scormengine-service)**
 
-   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
+   웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
 
 1. **[CSRF 필터 구성](mysql.md#adobe-granite-csrf-filter)**
 
-   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
+   웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
 
 **작성 인스턴스에서:**
 
-1. (*선택*&#x200B;사항) **[Analytics 서비스 구성](analytics.md)**
+1. (*선택적*) **[Analytics 서비스 구성](analytics.md)**
 
-   도구, 배포, Cloud Service 콘솔 사용: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   도구, 배포, Cloud Services 콘솔 사용:*http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[FFmpeg 구성](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
@@ -115,11 +115,11 @@ ht-degree: 1%
 
 1. **[터널 서비스 사용](deploy-communities.md#tunnel-service-on-author)**
 
-   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
+   웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
 
 1. **[커뮤니티 관리자 만들기](users.md#creating-community-members)**
 
-   작성 환경의 경우 클래식-UI 보안 콘솔을 사용하십시오. *http://localhost:4502/useradmin*
+   작성 환경의 경우 클래식-UI 보안 콘솔을 사용하십시오.*http://localhost:4502/useradmin*
 
    경로 = /home/users/community로 사용자 만들기
 
@@ -130,4 +130,4 @@ ht-degree: 1%
 
 ## Dispatcher {#dispatcher}
 
-배포에 [AEM의 Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)가 포함되어 있는 경우 지원 기능이 제대로 작동하도록 하려면 `clientheader` 및 `filter` 섹션을 수정해야 합니다. 커뮤니티에 [대한 Dispatcher 구성을 참조하십시오](dispatcher.md#enablement).
+배포에 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)이(가) 포함되어 있는 경우 지원 기능이 제대로 작동하려면 `clientheader` 및 `filter` 섹션을 수정해야 합니다. [Dispatcher for Communities](dispatcher.md#enablement)을(를) 참조하십시오.
