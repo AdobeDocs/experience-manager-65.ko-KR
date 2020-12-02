@@ -107,9 +107,9 @@ ht-degree: 96%
 
 알림은 페이지에 대해 실행 중인 워크플로우를 나열합니다. 사용자가 현재 워크플로우 단계에 참여 중인 경우 옵션은 [워크플로우 상태](/help/sites-authoring/workflows-participating.md)에 영향을 주며 워크플로우에 대한 자세한 정보는 다음과 같이 확인할 수 있습니다.
 
-* **완료** - **전체 작업 항목 대화 상자** 열기
+* **완료**  -  **전체 작업 항목** 대화 상자 열기
 
-* **위임** - 전체 작업 항목 **대화 상자를** 엽니다
+* **위임**  - 전체 작업 항목  **대화** 상자를 엽니다.
 
 * **세부 사항 보기** - 워크플로우의 **세부 사항** 창을 엽니다.
 
@@ -312,7 +312,7 @@ ht-degree: 96%
 * [편집하려면 구성 요소 대화 상자](#component-edit-dialog)를 엽니다.
 * 자산 브라우저에서 [자산을 끌어다 놓아](#draganddropintocomponent) 컨텐츠를 바로 추가합니다.
 
-### 구성 요소 편집 대화 상자 {#component-edit-dialog}
+### 구성 요소 편집 대화 상자  {#component-edit-dialog}
 
 [구성 요소 도구 모음의 편집(연필) 아이콘](#edit-configure-copy-cut-delete-paste)을 사용하여 컨텐츠를 편집할 구성 요소를 열 수 있습니다.
 
@@ -355,7 +355,7 @@ ht-degree: 96%
 | 비디오 | Flash |
 | 콘텐츠 조각 | 컨텐츠 조각 |
 
-## (컨텐츠) 편집 전체 화면 모드 {#edit-content-full-screen-mode}
+## (컨텐츠) 편집 전체 화면 모드  {#edit-content-full-screen-mode}
 
 모든 구성 요소에 대해 다음 아이콘으로 전체 화면 모드에 액세스(및 액세스 종료)할 수 있습니다.
 
@@ -454,11 +454,11 @@ ht-degree: 96%
 
 페이지가 [편집 가능한 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 [페이지 정보 메뉴](/help/sites-authoring/author-environment-tools.md#page-information)에서 **템플릿 편집**&#x200B;을 선택하여 [템플릿 편집기](/help/sites-authoring/templates.md#editing-templates-template-authors)로 간편하게 전환할 수 있습니다.
 
-If the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates), you can switch to [Design mode](/help/sites-authoring/default-components-designmode.md) using the [page mode selector](/help/sites-authoring/author-environment-tools.md#page-modes) on the toolbar to enable/disable components for use on the page.
+페이지가 [정적 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 도구 모음의 [페이지 모드 선택기](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용하여 [디자인 모드](/help/sites-authoring/default-components-designmode.md)으로 전환하여 페이지에서 사용할 구성 요소를 활성화/비활성화할 수 있습니다.
 
 [열 보기](/help/sites-authoring/basic-handling.md#column-view) 또는 [목록 보기](/help/sites-authoring/basic-handling.md#list-view) 페이지를 선택할 때 페이지가 기반으로 하는 템플릿을 쉽게 확인할 수 있습니다.
 
-## Live Copy 상태 {#live-copy-status}
+## Live Copy 상태  {#live-copy-status}
 
 [Live Copy 상태 페이지 모드](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용하면 live copy 상태와 상속되었거나 상속되지 않은 구성 요소에 대한 간단한 개요를 알 수 있습니다.
 
@@ -473,7 +473,7 @@ If the page is based on a [static template](/help/sites-authoring/templates.md#e
 
 [주석](/help/sites-authoring/annotations.md)을 사용하면 검토자와 다른 작성자가 컨텐츠에 대한 피드백을 제공할 수 있습니다. 검토 및 유효성 검사 목적으로도 종종 사용됩니다.
 
-## 페이지 미리 보기 {#previewing-pages}
+## 페이지 미리 보기  {#previewing-pages}
 
 페이지를 미리 볼 수 있는 두 가지 옵션이 있습니다.
 
@@ -563,7 +563,7 @@ AEM에서는 다른 사람이 컨텐츠를 수정할 수 없도록 페이지를 
 >
 >[키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z`를 사용하여 페이지 편집 작업을 취소할 수 있습니다.
 >
->The keyboard shortcut `Ctrl-Y` is also availalbe to redo page edit actions.
+>키보드 단축키 `Ctrl-Y`를 사용하여 페이지 편집 작업을 다시 실행할 수도 있습니다.
 
 >[!NOTE]
 >
