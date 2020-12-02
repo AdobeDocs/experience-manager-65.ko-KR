@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Microsoft SQL Server 데이터베이스:구성 세부 조정 {#microsoft-sql-server-database-fine-tuning-the-configuration}
+# Microsoft SQL Server 데이터베이스:구성 {#microsoft-sql-server-database-fine-tuning-the-configuration} 세부 조정
 
-Microsoft SQL Server를 사용할 때는 기본 구성 설정을 변경해야 합니다. Oracle Enterprise Manager에서 로컬 서버를 마우스 오른쪽 단추로 눌러 등록 정보 대화 상자에 액세스합니다.
+Microsoft SQL Server를 사용할 때는 기본 구성 설정을 변경해야 합니다. Oracle Enterprise Manager에서 로컬 서버를 마우스 오른쪽 단추로 눌러 속성 대화 상자에 액세스합니다.
 
 ## 메모리 설정 {#memory-settings}
 
