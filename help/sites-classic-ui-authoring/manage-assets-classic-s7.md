@@ -130,7 +130,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
    >
    >자산이 Scene7 동기화 폴더에 없고 현재 페이지에 연관된 Scene7 클라우드 구성이 없는 경우 업로드가 실패합니다.
 
-## Scene7 구성 요소 {#scene-components}
+## Scene7 구성 요소  {#scene-components}
 
 다음 Scene7 구성 요소를 AEM에서 사용할 수 있습니다.
 
@@ -156,7 +156,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
 이 중요 변경 사항에 대한 자세한 내용은 [Flash 뷰어 지원 종료 FAQ](https://docs.adobe.com/content/docs/kr/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html)를 참조하십시오.
 
-### 페이지에 Scene7 구성 요소 추가 {#adding-a-scene-component-to-a-page}
+### 페이지에 Scene7 구성 요소 추가  {#adding-a-scene-component-to-a-page}
 
 페이지에 Scene7 구성 요소를 추가하는 것은 아무 페이지에나 구성 요소를 추가하는 것과 같습니다. Scene7 구성 요소는 다음 절에서 자세히 설명합니다.
 
@@ -174,7 +174,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
 1. 필요에 따라 구성 요소를 편집하고 **확인**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
-### 응답형 웹 사이트에 대화형 보기 환경 추가 {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### 응답형 웹 사이트에 대화형 보기 환경 추가  {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 자산이 응답형으로 디자인되어 자산이 표시되는 위치에 따라 조정됩니다. 응답형 디자인을 통해 여러 장치에 동일한 자산을 효과적으로 표시할 수 있습니다.
 
@@ -193,7 +193,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
 1. 뷰어가 그에 따라 크기가 조정되는지와 모든 상호 작용이 데스크톱, 태블릿 및 모바일에 최적화되어 있는지 확인합니다.
 
-### 모든 Scene7 구성 요소에 공통되는 설정 {#settings-common-to-all-scene-components}
+### 모든 Scene7 구성 요소에 공통되는 설정  {#settings-common-to-all-scene-components}
 
 구성 옵션은 다르지만 모든 Scene7 구성 요소에는 다음과 같은 공통점이 있습니다.
 
@@ -337,9 +337,9 @@ Scene7 컨텐츠 브라우저를 사용하면 AEM에서 직접 Scene7의 컨텐�
 >* [보안 미리 보기가 활성화](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)되면 Scene7의 게시된 자산 및 게시되지 않은 자산이 모두 Scene7 컨텐츠 브라우저에 표시됩니다.
 >* **Scene7** 또는 **S7** 아이콘이 컨텐츠 브라우저에 옵션으로 표시되지 않는 경우 [AEM에서 작동하도록 Scene7을 구성](/help/sites-administering/scene7.md)해야 합니다.
 >* 비디오의 경우 Scene7 컨텐츠 브라우저는 다음을 지원합니다.
->   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
->   * 단일 MP4 비디오
->   * 단일 F4V 동영상
+   >   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
+   >   * 단일 MP4 비디오
+   >   * 단일 F4V 동영상
 
 
 ### 컨텐츠 찾아보기 {#browsing-content-in-the-classic-ui}
@@ -361,6 +361,7 @@ Scene7 컨텐츠 브라우저를 사용하면 AEM에서 직접 Scene7의 컨텐�
 >* 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
 >* 단일 MP4 비디오
 >* 단일 F4V 동영상
+
 >
 
 
@@ -400,9 +401,10 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 >[!NOTE]
 >
 >* 클래식 UI에서 **Flash** 및 **FXG**&#x200B;를 검색할 수도 있습니다. 현재는 터치에 적합한 UI에서 이러한 항목을 필터링할 수 없습니다.
->
->* 비디오를 검색할 때 단일 표현물을 검색합니다. 결과는 원래 표현물(*.mp4만 해당) 및 인코딩된 표현물을 반환합니다.
->* 응용 비디오 세트를 검색할 때 폴더 및 모든 하위 폴더가 검색되지만, 검색에 키워드를 추가한 경우에만 해당됩니다. 키워드를 추가하지 않은 경우 AEM이 하위 폴더를 검색하지 않습니다.
+   >
+   >
+* 비디오를 검색할 때 단일 표현물을 검색합니다. 결과는 원래 표현물(*.mp4만 해당) 및 인코딩된 표현물을 반환합니다.
+* 응용 비디오 세트를 검색할 때 폴더 및 모든 하위 폴더가 검색되지만, 검색에 키워드를 추가한 경우에만 해당됩니다. 키워드를 추가하지 않은 경우 AEM이 하위 폴더를 검색하지 않습니다.
 
 
 
