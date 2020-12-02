@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1215'
+ht-degree: 94%
 
 ---
 
@@ -24,6 +27,7 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
    >
 * 일부 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
 >* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
+
 >
 
 
@@ -56,7 +60,7 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
   </tr>
   <tr>
    <td><strong>론치</strong></td>
-   <td>이것은 <a href="/help/sites-classic-ui-authoring/classic-launches.md">launch</a>를 관리하는 데 도움이 됩니다. 향후 하나 이상의 활성화된 웹 페이지 릴리스에 필요한 컨텐츠를 개발할 수 있도록 해줍니다.<br /> 참고 <i>사항:터치 활성화 UI에서는 참조 레일과 함께 사이트 콘솔에서 동일한 기능의 상당 부분을 사용할 수 있습니다.</i> <i>필요한 경우 [도구] 콘솔에서 이 콘솔을 사용할 수 있습니다. [작업]을 선택하고 [론치]를 선택하면 됩니다.</i></td>
+   <td>이것은 <a href="/help/sites-classic-ui-authoring/classic-launches.md">launch</a>를 관리하는 데 도움이 됩니다. 향후 하나 이상의 활성화된 웹 페이지 릴리스에 필요한 컨텐츠를 개발할 수 있도록 해줍니다.<br /> <i>참고:터치 지원 UI에서는 참조 레일과 함께 사이트 콘솔에서 동일한 기능의 상당 부분을 사용할 수 있습니다.</i> <i>필요한 경우 [도구] 콘솔에서 이 콘솔을 사용할 수 있습니다. [작업]을 선택하고 [론치]를 선택하면 됩니다.</i></td>
   </tr>
   <tr>
    <td><strong>받은 편지함 </strong></td>
@@ -89,7 +93,7 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
 
 * 왼쪽 창
 
-   이렇게 하면 웹 사이트의 트리 구조와 해당 웹 사이트 내의 페이지가 표시됩니다.
+   웹 사이트의 트리 구조와 이러한 웹 사이트 내의 페이지가 표시됩니다.
 
    프로젝트, Blueprint 및 자산 등 다른 측면이나 AEM에 대한 정보도 표시됩니다.
 
@@ -160,7 +164,7 @@ source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
    <td><strong>설명</strong></td>
   </tr>
   <tr>
-   <td>축소판</td>
+   <td>썸네일</td>
    <td>페이지 썸네일이 표시됩니다.</td>
   </tr>
   <tr>
