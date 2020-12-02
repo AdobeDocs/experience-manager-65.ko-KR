@@ -28,9 +28,9 @@ ht-degree: 8%
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
 * AEM 사이트에 파일 라이브러리 기능 추가
-* 구성 요소의 구성 `File Library` 설정.
+* `File Library` 구성 요소에 대한 구성 설정.
 
-### 페이지에 파일 라이브러리 추가 {#adding-a-file-library-to-a-page}
+### 페이지 {#adding-a-file-library-to-a-page}에 파일 라이브러리 추가
 
 작성 모드에서 페이지에 `File Library` 구성 요소를 추가하려면 구성 요소를 찾습니다.
 
@@ -38,9 +38,9 @@ ht-degree: 8%
 
 페이지로 드래그하여 놓습니다.
 
-필요한 정보를 보려면 커뮤니티 구성 요소 [기본 사항을 방문하십시오](/help/communities/basics.md).
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 방문하십시오.
 
-필요한 [클라이언트측 라이브러리가](/help/communities/essentials-file-library.md#essentials-for-client-side) 포함되어 있으면 구성 요소가 표시되는 `File Library` 방식입니다.
+[필수 클라이언트측 라이브러리](/help/communities/essentials-file-library.md#essentials-for-client-side)가 포함될 때 다음과 같이 `File Library` 구성 요소가 표시됩니다.
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
@@ -54,7 +54,7 @@ ht-degree: 8%
 
 #### 댓글 탭 {#comments-tab}
 
-[ **주석** ] 탭에서 업로드한 파일에 대한 댓글이 표시되는 여부와 방법을 지정합니다.
+**댓글** 탭에서 업로드된 파일에 대한 댓글이 표시되는 여부와 방법을 지정합니다.
 
 * **파일에 대한 주석 허용**
 
@@ -62,7 +62,7 @@ ht-degree: 8%
 
 * **페이지당 댓글**
 
-   표시된 답글 수와 페이지당 표시되는 댓글 수를 제한합니다. 기본값은 **10입니다**.
+   표시된 답글 수와 페이지당 표시되는 댓글 수를 제한합니다. 기본값은 **10**&#x200B;입니다.
 
 * **최대 파일 크기**
 
@@ -74,7 +74,7 @@ ht-degree: 8%
 
 * **허용되는 파일 유형**
 
-   &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 유형을 지정하면 지정되지 않은 파일 유형이 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
+   &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf. 파일 형식을 지정하는 경우 지정하지 않은 파일 유형은 허용되지 않습니다. 모든 파일 유형이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **리치 텍스트 편집기**
 
@@ -102,7 +102,7 @@ ht-degree: 8%
 
 * **다음 허용**
 
-   이 확인란을 선택하면 구성원이 새 게시물에 대해 [알림을 받을](/help/communities/notifications.md) 수 있는 블로그 아티클에 다음 기능을 포함합니다. 기본값은 선택 취소입니다.
+   이 확인란을 선택하면 구성원이 새 게시물의 [notified](/help/communities/notifications.md)이 될 수 있는 블로그 아티클에 다음 기능을 포함합니다. 기본값은 선택 취소입니다.
 
 * **언급 활성화**
 
@@ -122,7 +122,7 @@ ht-degree: 8%
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
-사용자 중재 **탭** 아래에서 댓글이 허용되는 경우 댓글의 중재를 구성합니다.
+**사용자 중재** 탭에서 댓글이 허용되는 경우 댓글의 중재를 구성합니다.
 
 * **사전 관리**
 
@@ -130,7 +130,7 @@ ht-degree: 8%
 
 * **댓글 삭제**
 
-   이 확인란을 선택하면 댓글을 게시한 방문자에게 댓글을 삭제할 수 있는 기능이 제공됩니다. 기본값은 선택되어 있습니다.
+   이 확인란을 선택하면 댓글을 게시한 방문자에게 댓글을 삭제하는 기능이 제공됩니다. 기본값은 선택되어 있습니다.
 
 * **댓글 거부**
 
@@ -158,7 +158,7 @@ ht-degree: 8%
 
 * **플래그 지정 제한**
 
-   댓글이 공개 보기에서 숨겨지기 전에 플래그가 달린 횟수를 입력합니다. 이 숫자는 중재 임계값보다 **크거나 같아야 합니다**. 기본값은 5입니다.
+   댓글이 공개 보기에서 숨겨지기 전에 플래그가 달린 횟수를 입력합니다. 이 숫자는 **중재 임계값**&#x200B;보다 크거나 같아야 합니다. 기본값은 5입니다.
 
 ### 정렬 설정 탭 {#sort-settings-tab}
 
@@ -168,8 +168,8 @@ ht-degree: 8%
 
 ### 추가 정보 {#additional-information}
 
-개발자를 위한 [파일 라이브러리 필수](/help/communities/essentials-file-library.md) 사항 페이지에서 자세한 내용을 확인할 수 있습니다.
+개발자를 위한 [File Library Essentials](/help/communities/essentials-file-library.md) 페이지에서 자세한 정보를 찾을 수 있습니다.
 
-게시된 항목 및 댓글에 대한 중재는 사용자 생성 [컨텐츠 중재를 참조하십시오](/help/communities/moderate-ugc.md).
+게시된 항목 및 댓글에 대한 중재를 보려면 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
 
-게시된 항목 및 댓글에 태그를 지정하려면 사용자 생성 컨텐츠 [태그 지정을 참조하십시오](/help/communities/tag-ugc.md).
+게시된 항목 및 댓글에 태그를 지정하려면 [사용자 생성 콘텐츠 태그 지정](/help/communities/tag-ugc.md)을 참조하십시오.
