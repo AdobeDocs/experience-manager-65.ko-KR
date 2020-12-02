@@ -25,23 +25,23 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->계속하기 전에 AEM 내에 **재생 가능한 비디오가** 업로드되었는지 확인하십시오.
+>계속하기 전에 AEM 내에 **재생 가능한 비디오**&#x200B;가 업로드되었는지 확인하십시오.
 >
->비디오가 페이지에서 재생되도록 하려면 AEM에서 비디오 파일을 트랜스코딩하는 방법에 대한 자세한 내용은 **[이 자습서를](/help/sites-authoring/default-components-foundation.md#video)** 참조하십시오.
+>비디오가 페이지에서 재생되도록 하려면 AEM에서 비디오 파일을 트랜스코딩하는 방법에 대한 자세한 내용은 **[이 자습서](/help/sites-authoring/default-components-foundation.md#video)**&#x200B;를 참조하십시오.
 
 다음 절차를 사용하여 각 방법을 사용하여 비디오 추적에 대한 프레임워크를 설정합니다.
 
 >[!NOTE]
 >
->새 구현의 경우 비디오 추적에 기존 옵션을 사용하지 **않는** 것이 좋습니다. 마일스톤 **메서드를 대신** 사용하십시오.
+>새 구현의 경우 **비디오 추적에 기존 옵션을 사용하지 않는 것이 좋습니다.** **마일스톤** 메서드를 대신 사용하십시오.
 
 ## 일반적인 단계 {#common-steps}
 
-1. 사이드 킥에서 **비디오 구성 요소** 를 드래그하고 재생 가능한 **비디오를 구성 요소의 에셋으로** 추가하여 웹 페이지를 설정합니다
+1. 사이드 킥에서 **비디오 구성 요소**&#x200B;을 드래그하고 구성 요소에 대한 재생 가능한 **비디오를 자산**&#x200B;으로 추가하여 웹 페이지를 설정합니다
 
-1. [Adobe Analytics 구성 및 프레임워크](/help/sites-administering/adobeanalytics.md)만들기
+1. [Adobe Analytics 구성 및 프레임워크](/help/sites-administering/adobeanalytics.md) 만들기
 
-   * 다음 섹션의 예에서는 프레임워크에 대한 구성 및 **비디오에 my-sc-configuration** 이름을 **사용합니다** .
+   * 다음에 나오는 섹션의 예에서는 구성에 **my-sc-configuration** 이름 및 프레임워크에 대해 **videofw**&#x200B;을 사용합니다.
 
 1. 프레임워크 페이지에서 RSID를 선택하고 사용을 모두 설정합니다. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. 사이드 킥의 일반 구성 요소 카테고리에서 비디오 구성 요소를 프레임워크로 드래그합니다.
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 1. 추적 방법을 선택하면 CQ 변수 목록이 그에 따라 변경됩니다. 다음에 나오는 섹션을 사용하여 구성 요소를 추가로 구성하고 CQ 변수를 Adobe Analytics 속성과 매핑하는 방법에 대해 알아보십시오.
 
-## Milestones {#milestones}
+## 마일스톤 {#milestones}
 
 마일스톤(Milestones) 메서드는 비디오에 대한 가장 많은 정보를 추적하고, 사용자 지정이 가능하며 구성하기가 쉽습니다.
 
@@ -82,7 +82,7 @@ XX 접미사는 이정표를 정의하는 트랙 오프셋입니다. 예를 들�
   </tr>
   <tr>
    <td>eventdata.videoName </td>
-   <td>이 변수에 매핑된 변수에는 DAM에서 설정된 경우 비디오의 <strong>사용자</strong> 친화적인<strong>이름(</strong>제목)이 포함됩니다.이 설정을 설정하지 않으면 비디오의 <strong>파일 이름이</strong> 대신 전송됩니다. 비디오를 재생하기 시작할 때 한 번만 전송했습니다.</td>
+   <td>이 변수에 매핑된 변수에는 DAM에 설정된 경우 비디오의 <strong>사용자 친화적인</strong> 이름(<strong>제목</strong>)이 포함됩니다.이 설정을 설정하지 않으면 비디오의 <strong>파일 이름</strong>이 대신 전송됩니다. 비디오를 재생하기 시작할 때 한 번만 전송했습니다.</td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -110,11 +110,11 @@ XX 접미사는 이정표를 정의하는 트랙 오프셋입니다. 예를 들�
   </tr>
   <tr>
    <td>eventdata.events.milestoneX </td>
-   <td>주어진 이정표가 통과되면 X는 이정표가 트리거되는 두 번째 시점을 나타냅니다.<br /> </td>
+   <td>주어진 이정표가 통과되면 X는 이정표가 트리거되는 두 번째 시점을 나타냅니다(<br />). </td>
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>모든 이정표에 전송;보통 "비디오"로 전송된 Adobe Analytics 호출에서 pev3로 표시됩니다.<br /> </td>
+   <td>모든 이정표에 전송;는 보통 "video"<br />으로 전송된 Adobe Analytics 호출에서 pev3로 표시됩니다. </td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -129,7 +129,7 @@ XX 접미사는 이정표를 정의하는 트랙 오프셋입니다. 예를 들�
 
 >[!NOTE]
 >
->DAM에서 편집할 비디오를 열고 **제목** 메타데이터 필드를 원하는 이름으로 설정하여 비디오의 사용자 친화적인 **** 이름을 설정할 수 있습니다.
+>DAM에서 편집할 비디오를 열고 **제목** 메타데이터 필드를 원하는 이름으로 설정하여 비디오의 **사용자 친화적인** 이름을 설정할 수 있습니다.
 
 1. 추적 방법으로 마일스톤을 선택한 후 오프셋 추적 상자에 쉼표로 구분된 추적 오프셋 목록을 초 단위로 입력합니다. 예를 들어 다음 값은 비디오가 시작된 후 4, 8, 16, 20 및 28초에 마일스톤을 정의합니다.
 
@@ -137,14 +137,14 @@ XX 접미사는 이정표를 정의하는 트랙 오프셋입니다. 예를 들�
    4,8,16,20,24
    ```
 
-   오프셋 값은 0보다 큰 정수여야 합니다. The default value is `10,25,50,75`.
+   오프셋 값은 0보다 큰 정수여야 합니다. 기본값은 `10,25,50,75`입니다.
 
 1. CQ 변수를 Adobe Analytics 속성에 매핑하려면 구성 요소의 CQ 변수 옆에 있는 ContentFinder에서 Adobe Analytics 속성을 드래그합니다.
 
-   매핑 최적화에 대한 자세한 내용은 Adobe Analytics에서 [비디오 측정](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) 안내서를 참조하십시오.
+   매핑 최적화에 대한 자세한 내용은 Adobe Analytics에서 [비디오 측정](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) 가이드를 참조하십시오.
 
-1. [페이지에 프레임워크를](/help/sites-administering/adobeanalytics.md) 추가합니다.
-1. 미리 보기 모드에서 설정을 **테스트하려면**&#x200B;비디오를 재생하여 Adobe Analytics 호출이 트리거되도록 합니다.
+1. [페이지에 ](/help/sites-administering/adobeanalytics.md) 프레임워크를 추가합니다.
+1. **미리 보기 모드**&#x200B;에서 설정을 테스트하려면 비디오를 재생하여 Adobe Analytics 호출이 트리거되도록 합니다.
 
 4,8,16,20 및 24의 추적 오프셋을 사용하여 이정표 추적에 적용되는 Adobe Analytics 추적 데이터 예와 CQ 변수에 대한 다음 매핑을 사용합니다.
 
@@ -229,7 +229,7 @@ XX 접미사는 이정표를 정의하는 트랙 오프셋입니다. 예를 들�
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*다음 값이 들어 있는 Adobe Analytics에&#x200B;**처음**호출되는 값입니다.*
+*이 값은 다음 값을 포함하는 Adobe Analytics에&#x200B;**처음**호출되는 값입니다.*
 
 * *eventdata.a.media.name,*
 * *prop2-4, contentType(비디오) 및 세그먼트(1:O:1-4)를 포함하는 eVar2 및 eVar3과 함께 사용*
@@ -250,7 +250,7 @@ XX 접미사는 이정표를 정의하는 트랙 오프셋입니다. 예를 들�
 비레거시 마일스톤 메서드는 마일스톤이 트랙 길이의 백분율을 사용하여 정의된다는 점을 제외하고 마일스톤 메서드와 비슷합니다. 일반적인 것은 다음과 같습니다.
 
 * 비디오 재생이 이정표를 통과하면 페이지에서 이벤트를 추적하기 위해 Adobe Analytics을 호출합니다.
-* Adobe Analytics 속성을 사용한 매핑을 위해 정의된 CQ 변수의 [정적](#cqvars) 세트입니다.
+* Adobe Analytics 속성을 사용한 매핑을 위해 정의된 CQ 변수](#cqvars)의 [정적 집합.
 * 정의한 각 이정표에 대해, 구성 요소는 Adobe Analytics 속성에 매핑할 수 있는 CQ 변수를 만듭니다.
 
 이러한 CQ 변수의 이름은 다음 형식을 사용합니다.
@@ -276,14 +276,14 @@ eventdata.events.milestoneXX
 
 1. CQ 변수를 Adobe Analytics 속성에 매핑하려면 구성 요소의 CQ 변수 옆에 있는 ContentFinder에서 Adobe Analytics 속성을 드래그합니다.
 
-   매핑 최적화에 대한 자세한 내용은 Adobe Analytics에서 [비디오 측정](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) 안내서를 참조하십시오.
+   매핑 최적화에 대한 자세한 내용은 Adobe Analytics에서 [비디오 측정](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) 가이드를 참조하십시오.
 
-1. [페이지에 프레임워크를](/help/sites-administering/adobeanalytics.md) 추가합니다.
-1. 미리 보기 모드에서 설정을 **테스트하려면**&#x200B;비디오를 재생하여 Adobe Analytics 호출이 트리거되도록 합니다.
+1. [페이지에 ](/help/sites-administering/adobeanalytics.md) 프레임워크를 추가합니다.
+1. **미리 보기 모드**&#x200B;에서 설정을 테스트하려면 비디오를 재생하여 Adobe Analytics 호출이 트리거되도록 합니다.
 
-## 이전 이정표 {#legacy-milestones}
+## 레거시 마일스톤 {#legacy-milestones}
 
-이 메서드는 *추적 오프셋* 필드에 지정된 마일스톤이 비디오 내의 설정 지점 대신 백분율이라는 점에서 마일스톤 메서드와 유사합니다.
+이 메서드는 비디오 내의 설정 지점 대신 *추적 오프셋* 필드에 지정된 마일스톤이 백분율이라는 점에서 마일스톤 메서드와 비슷합니다.
 
 >[!NOTE]
 >
@@ -299,7 +299,7 @@ eventdata.events.milestoneXX
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>이 변수에 매핑된 변수에는 DAM에서 설정된 경우 비디오의 <strong>사용자</strong> 친화적인<strong>이름(</strong>제목)이 포함됩니다.제목을 설정하지 않으면 비디오의 <strong>파일 이름이</strong> 대신 전송됩니다. 비디오를 재생하기 시작할 때 한 번만 전송했습니다.<br /> </td>
+   <td>이 변수에 매핑된 변수에는 DAM에 설정된 경우 비디오의 <strong>사용자 친화적인</strong> 이름(<strong>제목</strong>)이 포함됩니다.제목을 설정하지 않으면 비디오의 <strong>파일 이름</strong>이 대신 전송됩니다. 비디오 재생 시작 시 한 번만 전송되었습니다.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -314,29 +314,29 @@ eventdata.events.milestoneXX
 
 >[!NOTE]
 >
->DAM에서 편집할 비디오를 열고 **제목** 메타데이터 필드를 원하는 이름으로 설정하여 비디오의 사용자 친화적인 **** 이름을 설정할 수 있습니다. 또한 완료되면 변경 내용을 저장해야 합니다.
+>DAM에서 편집할 비디오를 열고 **제목** 메타데이터 필드를 원하는 이름으로 설정하여 비디오의 **사용자 친화적인** 이름을 설정할 수 있습니다. 또한 완료되면 변경 내용을 저장해야 합니다.
 
 1. 이러한 변수를 prop 1에서 3까지 매핑
 
-   호출에서 **나머지 관련 정보** 는 **pev3라는** 하나의 **변수로**&#x200B;연결됩니다.
+   호출에서 나머지 관련 정보&#x200B;**는** a4/>pev3 **이라는 이름의 하나** 변수로 연결됩니다.****
 
-   **제공된 예제를 사용하여 Adobe Analytics에 대한 샘플 호출** 기능은 DigitalPulse Debugger에서 볼 때 다음과 같아야 합니다.
+   **제공된 예제를 사용하여 Adobe Analytics에** 대한 샘플 호출은 DigitalPulse Debugger에서 볼 때 다음과 같이 표시됩니다.
 
-   ![lmilestones1](assets/lmilestones1.png)
+   ![마일스톤1](assets/lmilestones1.png)
 
-   *호출에서&#x200B;**전송된 pev3**변수에는 다음 정보가 포함됩니다.*
+   *호출에서 전송된&#x200B;**pev3**변수는 다음 정보를 포함합니다.*
 
-   * *이름* - 비디오 파일의 이름(*film.avi*)
+   * *이름*  - 비디오 파일의 이름(*film.avi*)
 
-   * *길이* - 비디오 파일의 길이(초)(*100*)
+   * *길이*  - 비디오 파일의 길이(초)(*100*)
 
-   * *플레이어 이름* - 비디오 파일을 재생하는 데 사용되는 비디오 플레이어(*HTML5 비디오*)
+   * *플레이어 이름*  - 비디오 파일을 재생하는 데 사용되는 비디오 플레이어(*HTML5 비디오*)
 
-   * *총 재생* 시간(초) - 비디오가 재생된 총 시간(*25*)
+   * *총 재생*  시간(초) - 비디오가 재생된 총 시간(*25*)
 
-   * *시작 타임스탬프* - 비디오 재생이 시작된 시기를 식별하는 타임스탬프(*1331035567*)
+   * *시작 타임스탬프*  - 비디오 재생이 시작된 시기를 식별하는 타임스탬프(*1331035567*)
 
-   * *재생 세션* - 재생 세션의 세부 정보입니다. 이 필드는 사용자가 비디오와 상호 작용한 방법을 나타냅니다. 여기에는 비디오 재생을 시작한 위치, 비디오 슬라이더를 사용하여 비디오를 진행했는지 여부, 비디오 재생을 중단한 위치(*L10E24S58L58 - 비디오가 초 단위로 중지됨) 등의 데이터가 포함될 수 있습니다. 25 of section L10, then 건너뜁니다. 48*)
+   * *재생 세션*  - 재생 세션의 세부 정보입니다. 이 필드는 사용자가 비디오와 상호 작용한 방법을 나타냅니다. 여기에는 비디오 재생을 시작한 위치, 비디오 슬라이더를 사용하여 비디오를 진행했는지 여부, 비디오 재생을 중단한 위치(*L10E24S58L58 - 비디오 재생 시간(초)과 같은 데이터가 포함될 수 있습니다. 25 of section L10, then 건너뜁니다. 48*)
 
 ## 이전 초 {#legacy-seconds}
 
@@ -355,7 +355,7 @@ eventdata.events.milestoneXX
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>이 변수에 매핑된 변수에는 DAM에서 설정된 경우 비디오의 <strong>사용자</strong> 친화적인<strong>이름(</strong>제목)이 포함됩니다.제목을 설정하지 않으면 비디오의 <strong>파일 이름이</strong> 대신 전송됩니다. 비디오를 재생하기 시작할 때 한 번만 전송했습니다.<br /> </td>
+   <td>이 변수에 매핑된 변수에는 DAM에 설정된 경우 비디오의 <strong>사용자 친화적인</strong> 이름(<strong>제목</strong>)이 포함됩니다.제목을 설정하지 않으면 비디오의 <strong>파일 이름</strong>이 대신 전송됩니다. 비디오 재생 시작 시 한 번만 전송되었습니다.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -370,17 +370,17 @@ eventdata.events.milestoneXX
 
 >[!NOTE]
 >
->DAM에서 편집할 비디오를 열고 **제목** 메타데이터 필드를 원하는 이름으로 설정하여 비디오의 사용자 친화적인 **** 이름을 설정할 수 있습니다. 또한 완료되면 변경 내용을 저장해야 합니다.
+>DAM에서 편집할 비디오를 열고 **제목** 메타데이터 필드를 원하는 이름으로 설정하여 비디오의 **사용자 친화적인** 이름을 설정할 수 있습니다. 또한 완료되면 변경 내용을 저장해야 합니다.
 
 1. 이러한 변수를 prop1, prop2 및 prop3에 매핑
 
-   호출에서 **나머지 관련 정보** 는 **pev3라는** 하나의 **변수로**&#x200B;전송됩니다.
+   호출에서 나머지 관련 정보&#x200B;**은** a3/>라는 이름의 하나&#x200B;**변수로 전송됩니다.** pev3 **.**
 
    제공된 예제를 사용하여 Adobe Analytics에 대한 호출은 DigitalPulse Debugger에서 볼 때 다음과 같아야 합니다.
 
    ![lseconds](assets/lseconds.png)
 
-   *이 호출은 위의 레거시 마일스톤 호출과 유사합니다. 여기에&#x200B;**[제공된 pev3에 대한 정보를 참조하십시오](/help/sites-administering/adobeanalytics.md)**.*
+   *이 호출은 위의 레거시 마일스톤 호출과 유사합니다.](/help/sites-administering/adobeanalytics.md)**에 제공된 pev3**[에 대한 정보를 참조하십시오.*
 
 **이 자습서에 사용된 참조:**
 
