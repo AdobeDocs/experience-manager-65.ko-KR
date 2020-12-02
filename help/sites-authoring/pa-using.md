@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 translation-type: tm+mt
 source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
 
 페이지 분석 데이터는 사이트 콘솔의 [목록 보기](/help/sites-authoring/basic-handling.md#list-view)에 표시됩니다. 페이지가 목록 형식으로 표시되면 기본적으로 다음 열을 사용할 수 있습니다.
 
-* 페이지 조회수
+* 페이지 보기 수
 * 고유 방문자 수
 * 페이지 시간
 
@@ -61,7 +64,7 @@ analytics-administrators 사용자 그룹의 구성원은 작성자가 추가 An
 >
 >페이지 트리에 다른 Adobe Analytics 클라우드 구성과 연관된 하위가 있는 경우 페이지에 사용 가능한 데이터 열을 구성할 수 없습니다.
 
-1. In List View, use the view selectors (right of toolbar), select **View Settings** and then **Add Custom Analytics Data**.
+1. 목록 보기에서 보기 선택기(도구 모음의 오른쪽)를 사용하고 **설정 보기**&#x200B;를 선택한 다음 **사용자 지정 분석 데이터 추가**&#x200B;를 선택합니다.
 
    ![aa-15](assets/aa-15.png)
 
@@ -73,14 +76,14 @@ analytics-administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 ### 사이트에서 컨텐츠 인사이트 열기 {#opening-content-insights-from-sites}
 
-Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites console to further investigate page effectiveness.
+사이트 콘솔에서 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md)를 열어 페이지 효과를 자세히 조사합니다.
 
 1. 사이트 콘솔에서 컨텐츠 인사이트를 보려는 페이지를 선택합니다.
 1. 도구 모음에서 [분석 및 권장 사항] 아이콘을 클릭합니다.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## 페이지 편집기에서 볼 수 있는 Analytics(활동 맵) {#analytics-visible-from-the-page-editor-activity-map}
+## 페이지 편집기에서 볼 수 있는 Analytics(활동 맵)  {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
