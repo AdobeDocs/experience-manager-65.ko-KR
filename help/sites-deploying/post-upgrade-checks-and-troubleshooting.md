@@ -181,7 +181,7 @@ CRX2에서 Oak로 데이터 마이그레이션은 CQ 5.4를 기반으로 소스 
 
 `/apps` 업그레이드 `/libs` 를 통해 원활하게 처리되지만 업그레이드  `/etc` 후 변경 사항을 수동으로 복원해야  `/var/upgrade/PreUpgradeBackup` 할 수 있습니다. 수동으로 병합해야 하는 컨텐츠는 이 위치를 확인하십시오.
 
-### error.log 및 upgrade.log {#analyzing-the-error.log-and-upgrade.log} 분석
+### error.log 및 upgrade.log 분석{#analyzing-the-error.log-and-upgrade.log}
 
 대부분의 경우 문제의 원인을 찾기 위해 로그에 오류가 있는지 확인해야 합니다. 그러나 업그레이드 시 이전 번들이 제대로 업그레이드되지 않을 수 있으므로 종속성 문제를 모니터링해야 합니다.
 
