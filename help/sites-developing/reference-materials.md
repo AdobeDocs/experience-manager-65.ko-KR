@@ -20,7 +20,7 @@ ht-degree: 2%
 ---
 
 
-# API 가이드 {#api-guides}
+# API 안내서 {#api-guides}
 
 Adobe Experience Manager(AEM)은 애플리케이션 개발 및 AEM 확장을 위한 여러 API를 제공합니다. 다음 목록은 AEM에서 지원하는 API에 대한 설명서를 제공합니다.
 
@@ -32,7 +32,7 @@ Adobe Experience Manager(AEM)은 애플리케이션 개발 및 AEM 확장을 위
 * [UI 테스트 프레임워크 JavaScript API 참조](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
 * [편집기 코어 JavaScript API 참조](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
-AEM SPA(단일 페이지 애플리케이션) 편집기 SDK 프레임워크 JavaScript API 참조:
+AEM 단일 페이지 애플리케이션(SPA) 편집기 SDK 프레임워크 JavaScript API 참조:
 
 * [구성 요소 매핑](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [페이지 모델 관리자](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
@@ -45,11 +45,11 @@ AEM 전달 및 컨텐츠 관리 API:
 
    * [JSON 내보내기](/help/sites-developing/json-exporter.md)
    * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
-   * 자세한 내용은 [개발 사용자 안내서의 구성 요소 섹션을](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) 참조하십시오.
+   * 자세한 내용은 개발 사용자 안내서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js)의 [구성 요소 섹션을 참조하십시오.
 
-* **자산**:자산 HTTP API를 사용하면 이진, 메타데이터, 변환 및 주석을 비롯한 자산에 대한 CRUD(Create-Read-Update-delete) 작업을 수행할 수 있습니다. AEM Assets [HTTP API 참조](/help/assets/mac-api-assets.md)
+* **자산**:자산 HTTP API를 사용하면 이진, 메타데이터, 변환 및 주석을 비롯한 자산에 대한 CRUD(Create-Read-Update-delete) 작업을 수행할 수 있습니다. [AEM Assets HTTP API](/help/assets/mac-api-assets.md)를 참조하십시오.
 
-* **컨텐츠 조각** (CF): [자산 HTTP API](/help/assets/assets-api-content-fragments.md) 및 [AEM Assets API의 CF 지원 - 컨텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* **컨텐츠 조각** (CF): [자산 HTTP ](/help/assets/assets-api-content-fragments.md) API 및  [AEM Assets API의 CF 지원 - 컨텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 
 다음 외부 리소스는 참조용입니다.
 
