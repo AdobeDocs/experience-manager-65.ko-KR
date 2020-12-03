@@ -4,10 +4,10 @@ description: '릴리스 노트: [!DNL Adobe Experience Manager] 6.5 서비스 �
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
+source-git-commit: c92efd64662e831c8771a8f35701f4e9ed788645
 workflow-type: tm+mt
-source-wordcount: '3789'
-ht-degree: 21%
+source-wordcount: '4201'
+ht-degree: 19%
 
 ---
 
@@ -38,6 +38,16 @@ ht-degree: 21%
 * 사용자는 카드 및 열 보기에서 디지털 자산을 정렬할 수 있습니다.
 
 * [!DNL Assets] 다양한 액세서빌러티 기능을  [!DNL Dynamic Media] 제공합니다. 향상된 기능은 키보드 탐색, 화면 판독기 사용 및 유사한 보조 기술(AT)을 사용할 수 있도록 하는 것과 관련이 있습니다. [[!DNL Assets] enhancements](#assets-6570) 및 [[!DNL Dynamic Media] enhancements](#dynamic-media-6570)을 참조하십시오.
+
+* 성능 최적화를 위한 양식 데이터 모델 HTTP 클라이언트 구성
+
+* 레이아웃 모드의 각 구성 요소에 대한 재설정 옵션 가용성
+
+* [!DNL Experience Manager] 6.5 서비스 팩 7 Forms은 다음과 같은 성능을 향상시켜 줍니다.
+
+   * 적응형 양식을 제출할 때 서버의 필드 값 유효성을 확인합니다.
+
+   * [!DNL Automated Forms Conversion service]을(를) 사용하여 PDF 양식을 적응형 양식으로 변환
 
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.22.5으로 업데이트되었습니다.
 
@@ -299,6 +309,48 @@ ht-degree: 21%
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] 은 예약된  [!DNL Experience Manager] 서비스 팩 릴리스 날짜 이후 1주일 후에 추가 기능 패키지를 출시합니다.
+
+**적응형 양식**
+
+* [!DNL Experience Manager] 서비스 팩 6(NPR-35126)을 적용한 후 클래식 UI를 사용하여 응용 양식을 편집할 수 없습니다.
+
+* PDF를 적응형 양식으로 변환하는 경우 탭 형식의 레이아웃에서 양식 데이터 모델을 사용하여 중첩된 패널의 값을 설정할 수 없습니다. 또한 코드 편집기를 사용하여 정적 배열에서 라디오 단추 그룹의 값을 동적으로 설정할 때 문제가 발생합니다(NPR-35062).
+
+* 적응형 양식의 텍스트 필드 구성 요소에 일본어 문자를 입력하면 최대 35자 제한(NPR-35039)보다 많은 문자를 지정할 수 있습니다.
+
+* 적응형 양식에는 양식을 제출한 후 표시되는 **[!UICONTROL 감사]** 페이지에 `owner` 및 `status`과 같은 원치 않는 매개 변수가 표시됩니다(NPR-34989).
+
+* [!UICONTROL 첨부 파일] 구성 요소에 대한 [!UICONTROL 파일 선택] 대화 상자에는 지원되지 않는 파일 유형과 선택 시 응용 양식 제출 중 오류가 발생합니다(NPR-34970).
+
+* 양식 앞에 텍스트를 포함하는 [!DNL Experience Manager Sites] 페이지에 적응형 양식을 삽입하면 커서 포커스가 양식 앞의 텍스트 대신 폼으로 바로 이동합니다(NPR-34947).
+
+*  6.2 데이터 XML 파일을 사용하여 적응형 양식을 미리  [!DNL Experience Manager] 채우기 위한 [데이터 옵션]을 사용하여 미리 보기하면 올바르게 작동하지 않습니다(NPR-35087).
+
+* 적응형 양식의 데이터 사전을 업데이트할 때 양식이 캐시된 값을 반환하는 응용 양식으로 변환되지 않습니다(NPR-34845).
+
+* 조각이 캐시 무효화로 인해 응용 양식으로 로드되는 데 시간이 더 오래 걸립니다(NPR-34567).
+
+* 적응형 양식의 화면 판독기에 탭 탐색을 올바르게 사용할 수 없습니다(NPR-34544).
+
+**서신 관리**
+
+* 부동 유형을 포함하는 숫자 데이터와 함께 XML 태그의 값을 초안으로 저장할 수 없습니다(NPR-35050).
+
+* ES3에서 자산을 마이그레이션할 때 자산은 두 가지 비편집 기본 조건(NPR-34972)을 포함합니다.
+
+* 문자로 데이터 사전을 편집할 때 [!UICONTROL Lented Content] 섹션에는 유용한 정보 대신 회전하는 직사각형이 표시됩니다(NPR-34853).
+
+**대화형 통신**
+
+* [!DNL Forms] 추가 기능 패키지를 설치한 후 사용할 수 있는 대화형 커뮤니케이션의 롤아웃 구성 이름은 표준 롤아웃 구성 이름(NPR-34976)을 복제합니다.
+
+**문서 보안**
+
+* 새 문서 보안 정책을 저장할 때 Experience Manager Forms은 `Relative validity period is required` 오류 메시지를 표시합니다(NPR-34679).
+
+* 새 문서 보안 정책을 저장할 때 Experience Manager Forms은 `Invalid filed value.Numeric value is required` 오류 메시지를 표시합니다(NPR-34678).
+
+* Document Security에서 PDF 2.0 문서를 보호할 수 없습니다(CQ-4305851).
 
 보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html)를 참조하십시오.
 
