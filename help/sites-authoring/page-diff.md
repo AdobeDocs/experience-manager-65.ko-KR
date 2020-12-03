@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb9a4792f4d64f98805919f00bb62193a6a7dafc
+source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 100%
+source-wordcount: '579'
+ht-degree: 97%
 
 ---
 
@@ -61,10 +61,6 @@ ht-degree: 100%
 
 * 연한 녹색 - 추가된 구성 요소
 * 분홍색 - 제거된 구성 요소
-* 파란색 - 변경된 구성 요소
-* 파란색 - 이동된 구성 요소
-
-참고: 변경된 구성 요소 색상과 이동된 구성 요소 색상이 동일합니다.
 
 **HTML 변경 사항**
 
@@ -96,9 +92,7 @@ ht-degree: 100%
 페이지 비교 시 차이점이 예상대로 감지되지 않을 수 있습니다.
 
 * 버전과 론치를 비교할 때, 탐색 표시, 메뉴, 제품 목록 또는 로고(컨텐츠를 렌더링하기 위해 사이트 구조에 의존하는 구성 요소)와 같은 동적 구성 요소는 고려되지 않습니다.
-* 버전 비교 시 액세스 제어 정책 및 Live Copy 관계는 다시 만들어지지 않습니다.
-* alt, title 또는 src 속성의 수정과 같이 이미지에 변경 사항이 생기면 변경되는 대로 파란색으로 강조 표시됩니다. 그러나 일부 경우에는 이미지에 src 속성의 Base64 표현이 있으며, 두 이미지가 동일하게 보이는데도 비교 시에는 src 특성 비교로 인해 다르게 표시됩니다.
-* 비교 시 이미지 회전은 감지할 수 없습니다.
+* 버전의 경우 비교 시 액세스 제어 정책 및 Live Copy 관계는 다시 만들어지지 않습니다.
 * 페이지가 이동되면 이동 전에 만든 버전으로 더 이상 다른 작업을 수행할 수 없습니다.
 
    * 차이에 문제가 발생한 경우 페이지에 대한 [타임라인](/help/sites-authoring/basic-handling.md#timeline)에서 페이지가 이동되었는지 확인합니다.
