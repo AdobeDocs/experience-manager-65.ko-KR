@@ -1,8 +1,8 @@
 ---
 title: JMX 콘솔과 서비스 통합
 seo-title: JMX 콘솔과 서비스 통합
-description: 서비스 특성 및 작업을 노출하여 MBeans를 만들어 배포하여 JMX 콘솔을 사용하여 서비스를 관리하여 관리 작업을 수행할 수 있도록 합니다.
-seo-description: 서비스 특성 및 작업을 노출하여 MBeans를 만들어 배포하여 JMX 콘솔을 사용하여 서비스를 관리하여 관리 작업을 수행할 수 있도록 합니다.
+description: 서비스 속성 및 작업을 노출하여 MMBeans를 만들어 배포하여 JMX 콘솔을 사용하여 서비스를 관리하여 관리 작업을 수행할 수 있도록 합니다
+seo-description: 서비스 속성 및 작업을 노출하여 MMBeans를 만들어 배포하여 JMX 콘솔을 사용하여 서비스를 관리하여 관리 작업을 수행할 수 있도록 합니다
 uuid: 4a489a24-af10-4505-8333-aafc0c81dd3e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,59 +12,62 @@ discoiquuid: 83c590e0-2e6c-4499-a6ea-216e4c7bc43c
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '1689'
+ht-degree: 1%
 
 ---
 
 
 # JMX 콘솔과 서비스 통합{#integrating-services-with-the-jmx-console}
 
-MBeans를 만들어 배포하여 JMX 콘솔을 사용하여 서비스를 관리합니다. 서비스 속성 및 작업을 노출하여 관리 작업을 수행할 수 있습니다.
+MBean을 만들어 배포하여 JMX 콘솔을 사용하여 서비스를 관리합니다. 서비스 속성 및 작업을 노출하여 관리 작업을 수행할 수 있습니다.
 
-JMX 콘솔 사용에 대한 자세한 내용은 JMX 콘솔을 [사용하여 서버 리소스 모니터링을 참조하십시오](/help/sites-administering/jmx-console.md).
+JMX 콘솔 사용에 대한 자세한 내용은 [JMX 콘솔을 사용하여 서버 리소스 모니터링](/help/sites-administering/jmx-console.md)을 참조하십시오.
 
-## Felix 및 CQ5의 JMX Framework {#the-jmx-framework-in-felix-and-cq}
+## Felix 및 CQ5의 JMX 프레임워크 {#the-jmx-framework-in-felix-and-cq}
 
-Apache Felix 플랫폼에서 OSGi 서비스로 MBeans를 배포합니다. MBean 서비스가 OSGi 서비스 레지스트리에 등록되면 Aries JMX 화이트보드 모듈은 MBean 서버에 MBean을 자동으로 등록합니다. 그런 다음 공개 특성 및 작업을 표시하는 JMX 콘솔에서 MBean을 사용할 수 있습니다.
+Apache Felix 플랫폼에서 OSGi 서비스로 MBeans를 배포합니다. MBean 서비스가 OSGi 서비스 레지스트리에 등록되면 Aries JMX 화이트보드 모듈은 MBean 서버에 MBean을 자동으로 등록합니다. 그러면 공개 속성과 작업을 표시하는 JMX 콘솔에서 MBean을 사용할 수 있습니다.
 
 ![jmxwhiteboard](assets/jmxwhiteboard.png)
 
-## CQ5 및 CRX용 MBeans 만들기 {#creating-mbeans-for-cq-and-crx}
+## CQ5 및 CRX {#creating-mbeans-for-cq-and-crx}용 MBeans 만들기
 
-CQ5 또는 CRX 리소스를 관리하기 위해 만드는 MBeans는 javax.management.DynamicMBean 인터페이스를 기반으로 합니다. JMX를 만들려면 JMX 사양에 명시된 일반적인 디자인 패턴을 따릅니다.
+CQ5 또는 CRX 리소스를 관리하기 위해 만드는 MBean은 javax.management.DynamicMBean 인터페이스를 기반으로 합니다. JMX를 만들려면 JMX 사양에 나와 있는 일반적인 디자인 패턴을 따릅니다.
 
-* get, set, is 메서드를 비롯한 관리 인터페이스를 만들고 속성을 정의하는 방법과 작업을 정의하는 방법을 제공합니다.
+* get, set, is 메서드를 비롯한 관리 인터페이스를 만들고 속성을 정의하는 방법과 작업을 정의하는 기타 방법을 지정합니다.
 * 구현 클래스를 만듭니다. 이 클래스는 DynamicMBean을 구현하거나 DynamicMBean의 구현 클래스를 확장해야 합니다.
-* 표준 이름 지정 규칙을 따라 구현 클래스의 이름이 MBean 접미사를 가진 인터페이스 이름이 되도록 하십시오.
+* 표준 명명 규칙에 따라 구현 클래스의 이름이 MBean 접미사를 가진 인터페이스 이름이어야 합니다.
 
 인터페이스는 관리 인터페이스를 정의하는 것 외에도 OSGi 서비스 인터페이스를 정의합니다. 구현 클래스는 OSGi 서비스를 구현합니다.
 
-### 주석을 사용하여 MBean 정보 제공 {#using-annotations-to-provide-mbean-information}
+### 주석을 사용하여 MBean 정보 {#using-annotations-to-provide-mbean-information} 제공
 
-com. [adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 패키지는 JMX 콘솔에 MBean 메타데이터를 쉽게 제공하기 위한 여러 주석 및 클래스를 제공합니다. MBean의 MBeanInfo 개체에 정보를 직접 추가하는 대신 이러한 주석과 클래스를 사용하십시오.
+[com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 패키지는 JMX 콘솔에 MBean 메타데이터를 쉽게 제공하기 위한 여러 개의 주석과 클래스를 제공합니다. MBean의 MBeanInfo 개체에 정보를 직접 추가하는 대신 이러한 주석과 클래스를 사용하십시오.
 
 **주석**
 
-관리 인터페이스에 주석을 추가하여 MBean 메타데이터를 지정합니다. 배포된 각 구현 클래스에 대한 정보가 JMX 콘솔에 표시됩니다. 다음 주석을 사용할 수 있습니다(자세한 내용은 [com.adobe.granite.jmx.annotation JavaDocs 참조](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)).
+관리 인터페이스에 주석을 추가하여 MBean 메타데이터를 지정합니다. 배포된 각 구현 클래스에 대한 정보가 JMX 콘솔에 표시됩니다. 다음 주석을 사용할 수 있습니다(자세한 내용은 [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 참조).
 
-* **** 설명:MBean 클래스 또는 메서드에 대한 설명을 제공합니다. 클래스 선언에서 이 설명이 MBean의 JMX 콘솔 페이지에 나타납니다. 메서드에 이 설명을 사용하면 해당 속성이나 작업에 대해 텍스트 위로 마우스를 올려 놓습니다.
-* **** 효과:메서드의 영향 유효한 매개 변수 값은 [javax.management.MBeanOperationInfo에 의해 정의된 필드입니다](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
+* **설명:** MBean 클래스 또는 메서드에 대한 설명을 제공합니다. 클래스 선언에서 사용되면 MBean의 JMX 콘솔 페이지에 설명이 나타납니다. 메서드에서 사용할 경우 설명서는 해당 속성이나 작업에 대해 호버 텍스트로 표시됩니다.
+* **영향:** 방법의 영향. 유효한 매개 변수 값은 [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html)에 의해 정의된 필드입니다.
 
-* **** 이름:작업 매개 변수에 대해 표시할 이름을 지정합니다. 이 주석을 사용하여 인터페이스에 사용되는 메서드 매개 변수의 실제 이름을 재정의합니다.
-* **** OpenTypeInfo:JMX 콘솔에서 복합 데이터 또는 테이블 형식 데이터를 나타내는 데 사용할 클래스를 지정합니다. Open MBeans와 함께 사용
-* **** TabularTypeInfo:표 형식의 데이터를 나타내는 데 사용되는 클래스에 주석을 추가하는 데 사용됩니다.
+* **이름:** 작업 매개 변수에 대해 표시할 이름을 지정합니다. 이 주석을 사용하여 인터페이스에 사용되는 메서드 매개 변수의 실제 이름을 재정의합니다.
+* **OpenTypeInfo:** JMX 콘솔에서 복합 데이터 또는 테이블 형식 데이터를 나타내는 데 사용할 클래스를 지정합니다. Open MBean과 함께 사용
+* **TabularTypeInfo:** 표 형식의 데이터를 나타내는 데 사용되는 클래스에 주석을 답니다.
 
 **클래스**
 
 인터페이스에 추가하는 주석을 사용하는 동적 MBeans를 만들기 위한 클래스가 제공됩니다.
 
-* **** AnnotatedStandardMBean:JMX 콘솔에 주석 메타데이터를 자동으로 제공하는 javax.management.StandardMBean 클래스의 하위 클래스입니다.
-* **** OpenAnnotatedStandardMBean:OpenTypeInfo 주석을 사용하는 Open Mbeans를 만들기 위한 AnnotatedStandardMBean 클래스의 하위 클래스입니다.
+* **AnnotatedStandardMBean:** 주석 메타데이터가 포함된 JMX 콘솔을 자동으로 제공하는 javax.management.StandardMBean 클래스의 하위 클래스입니다.
+* **OpenAnnotatedStandardMBean:** OpenTypeInfo 주석을 사용하는 Open Mbeans를 만들기 위한 AnnotatedStandardMBean 클래스의 하위 클래스입니다.
 
-### MBeans 개발 {#developing-mbeans}
+### MBeans {#developing-mbeans} 개발
 
-일반적으로 MBean은 관리할 OSGi 서비스의 반영입니다. Felix 플랫폼에서는 다른 Java 서버 플랫폼에 배포할 때처럼 MBean을 만듭니다. 주요 차이점은 주석을 사용하여 MBean 정보를 지정할 수 있다는 것입니다.
+일반적으로 MBean은 관리할 OSGi 서비스의 반영입니다. Felix 플랫폼에서 다른 Java 서버 플랫폼에 배포할 때와 마찬가지로 MBean을 만듭니다. 주요 차이점은 주석을 사용하여 MBean 정보를 지정할 수 있다는 것입니다.
 
-* 관리 인터페이스:getter, setter 및 is 메서드를 사용하여 속성을 정의합니다. 다른 공개 방법을 사용하여 작업을 정의합니다. 주석을 사용하여 BeanInfo 개체에 대한 메타데이터를 제공합니다.
+* 관리 인터페이스:getter, setter 및 is 메서드를 사용하여 속성을 정의합니다. 다른 공용 메서드를 사용하여 작업을 정의합니다. 주석을 사용하여 BeanInfo 개체의 메타데이터를 제공합니다.
 * MBean 클래스:관리 인터페이스를 구현합니다. 인터페이스에서 주석을 처리하도록 AnnotatedStandardMBean 클래스를 확장합니다.
 
 다음 예제 MBean은 CRX 저장소에 대한 정보를 제공합니다. 이 인터페이스는 설명 주석을 사용하여 JMX 콘솔에 대한 정보를 제공합니다.
@@ -131,21 +134,21 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 ![jmxdescription](assets/jmxdescription.png)
 
-### MBeans 등록 {#registering-mbeans}
+### MBeans {#registering-mbeans} 등록
 
 MBeans를 OSGi 서비스로 등록하면 MBean 서버에 자동으로 등록됩니다. CQ5에 MBean을 설치하려면 번들에 포함시키고 다른 OSGi 서비스와 마찬가지로 MBean 서비스를 내보냅니다.
 
-OSGi 관련 메타데이터 외에 MBean 서버에 MBean 등록을 위해 Aries JMX 화이트보드 모듈에 필요한 메타데이터를 제공해야 합니다.
+OSGi 관련 메타데이터 외에도 Aries JMX 화이트보드 모듈에서 MBean을 MBean에 등록하는 데 필요한 메타데이터를 제공해야 합니다.
 
-* **** DynamicMBean 인터페이스의 이름:MBean 서비스가 `javax.management.DynamicMBea`n 인터페이스를 구현함을 선언합니다. 이 선언은 Aries JMX 화이트보드 모듈에 서비스가 MBean 서비스임을 알립니다.
+* **DynamicMBean 인터페이스의 이름:** MBean 서비스가  `javax.management.DynamicMBea`n 인터페이스를 구현한다고 선언합니다. 이 선언에서는 서비스가 MBean 서비스임을 Aries JMX 화이트보드 모듈에 알립니다.
 
-* **** MBean 도메인 및 키 속성:Felix에서는 MBean의 OSGi 서비스의 속성으로 이 정보를 제공합니다. 이는 `javax.management.ObjectName` 개체의 MBean 서버에 일반적으로 제공하는 것과 동일한 정보입니다.
+* **MBean 도메인 및 키 속성:** On Felix는 MBean의 OSGi 서비스의 속성으로 이 정보를 제공합니다. 이는 일반적으로 `javax.management.ObjectName` 개체의 MBean 서버에 제공하는 것과 동일한 정보입니다.
 
-MBean이 단일 서비스의 반영인 경우 단일 MBean 서비스 인스턴스만 필요합니다. 이 경우 Felix SCR Maven 플러그인을 사용하는 경우 MBean 구현 클래스에 Apache Felix Service Component Runtime(SCR 파섹) 주석을 사용하여 JMX 관련 메타 데이터를 지정할 수 있습니다. 여러 MBean 인스턴스를 인스턴스화하려면 MBean의 OSGi 서비스의 해당 등록을 수행하는 다른 클래스를 만들 수 있습니다. 이 경우 런타임 시 JMX 관련 메타데이터가 생성됩니다.
+단일 서비스의 MBean이 반영된 경우 단일 MBean 서비스 인스턴스만 필요합니다. 이 경우 Felix SCR Maven 플러그인을 사용하는 경우 MBean 구현 클래스에 Apache Felix Service Component Runtime(SCR) 주석을 사용하여 JMX 관련 메타 데이터를 지정할 수 있습니다. 여러 MBean 인스턴스를 인스턴스화하기 위해 MBean의 OSGi 서비스 등록을 수행하는 다른 클래스를 만들 수 있습니다. 이 경우 JMX 관련 메타데이터는 런타임에 생성됩니다.
 
 **단일 MBean**
 
-디자인 시 모든 속성과 작업을 정의할 수 있는 MBean 구현 클래스의 SCR 주석을 사용하여 배포할 수 있습니다. 다음 예에서, `value` 주석의 `Service` 속성은 서비스가 `DynamicMBean` 인터페이스를 구현한다고 선언합니다. 주석의 `name` 속성은 `Property` JMX 도메인 및 키 속성을 지정합니다.
+디자인 시 모든 속성과 작업을 정의할 수 있는 MBean 구현 클래스의 SCR 주석을 사용하여 배포할 수 있습니다. 다음 예에서 `Service` 주석의 `value` 속성은 서비스가 `DynamicMBean` 인터페이스를 구현한다고 선언합니다. `Property` 주석의 `name` 속성은 JMX 도메인 및 키 속성을 지정합니다.
 
 #### SCR 주석이 있는 MBean 구현 클래스 {#mbean-implementation-class-with-scr-annotations}
 
@@ -187,7 +190,7 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 **여러 MBean 서비스 인스턴스**
 
-관리 서비스의 여러 인스턴스를 관리하려면 해당 MBean 서비스의 여러 인스턴스를 만듭니다. 또한 관리 인스턴스가 시작되거나 중지될 때 MBean 서비스 인스턴스를 만들거나 제거해야 합니다. MBean 관리자 클래스를 만들어 런타임에 MBean 서비스를 인스턴스화하고 서비스 라이프사이클을 관리할 수 있습니다.
+관리되는 서비스의 여러 인스턴스를 관리하려면 해당 MBean 서비스의 여러 인스턴스를 만듭니다. 또한 관리 인스턴스가 시작되거나 중지될 때 MBean 서비스 인스턴스를 만들거나 제거해야 합니다. MBean 관리자 클래스를 생성하여 런타임에 MBean 서비스를 인스턴스화하고 서비스 라이프사이클을 관리할 수 있습니다.
 
 BundleContext를 사용하여 MBean을 OSGi 서비스로 등록합니다. BundleContext.registerService 메서드의 인수로 사용하는 Dictionary 개체에 JMX 관련 정보를 포함합니다.
 
@@ -207,31 +210,31 @@ ServiceRegistration serviceregistration =
 
 MBean 서비스 관리자는 서비스 구성을 저장소에 저장할 때 유용합니다. 관리자는 서비스 정보를 검색하고 이를 사용하여 해당 MBean을 구성하고 만들 수 있습니다. 관리자 클래스는 저장소 변경 이벤트를 수신하고 그에 따라 MBean 서비스를 업데이트할 수도 있습니다.
 
-## 예:JMX를 사용한 워크플로우 모델 모니터링 {#example-monitoring-workflow-models-using-jmx}
+## 예:JMX {#example-monitoring-workflow-models-using-jmx}을(를) 사용하여 워크플로우 모델 모니터링
 
-이 예제의 MBean은 저장소에 저장된 CQ5 워크플로우 모델에 대한 정보를 제공합니다. MBean 관리자 클래스는 저장소에 저장되어 런타임 시 OSGi 서비스를 등록하는 워크플로 모델을 기반으로 MBean을 만듭니다. 이 예는 다음 멤버를 포함하는 단일 번들로 구성됩니다.
+이 예제의 MBean은 저장소에 저장된 CQ5 Workflow 모델에 대한 정보를 제공합니다. MBean 관리자 클래스는 저장소에 저장되고 런타임 시 OSGi 서비스를 등록하는 Workflow 모델을 기반으로 MBean을 만듭니다. 이 예는 다음 멤버를 포함하는 단일 번들로 구성됩니다.
 
-* WorkflowMBean:관리 인터페이스.
+* WorkflowMBean:관리 인터페이스
 * WorkflowMBeanImpl:MBean 구현 클래스입니다.
 * WorkflowMBeanManager:MBean 관리자 클래스의 인터페이스입니다.
 * WorkflowMBeanManagerImpl:MBean 관리자의 구현 클래스입니다.
 
-**** 참고:간단하게 볼 때 이 예제의 코드는 로깅(logging)을 수행하거나 throw된 예외에 반응하지 않습니다.
+**참고:** 단순하게 이 예제의 코드는 throw된 예외에 대해 로깅을 수행하거나 응답하지 않습니다.
 
-WorkflowMBeanManagerImpl에는 구성 요소 활성화 방법이 포함되어 있습니다. 구성 요소가 활성화되면 메서드는 다음 작업을 수행합니다.
+WorkflowMBeanManagerImpl에는 구성 요소 활성화 방법이 포함되어 있습니다. 구성 요소가 활성화되면 다음 작업을 수행합니다.
 
-* 번들에 대한 BundleContext를 가져옵니다.
+* 번들의 BundleContext를 가져옵니다.
 * 저장소를 쿼리하여 기존 워크플로우 모델의 경로를 가져옵니다.
-* 각 워크플로우 모델에 대한 MBeans를 만듭니다.
+* 각 Workflow 모델에 대해 MBeans를 만듭니다.
 * OSGi 서비스 레지스트리에 MBeans를 등록합니다.
 
-MBean 메타데이터는 com.adobe.example 도메인, workflow_model 유형 및 속성은 워크플로우 모델 구성 노드의 경로인 JMX 콘솔에 나타납니다.
+MBean 메타데이터는 com.adobe.example 도메인, workflow_model 유형 및 속성은 워크플로우 모델 구성 노드의 경로입니다.
 
 ![jmxworkflowmbean](assets/jmxworkflowmbean.png)
 
 ### 예제 MBean {#the-example-mbean}
 
-이 예에서는 MBean 인터페이스와 `com.day.cq.workflow.model.WorkflowModel` 인터페이스에 반사 가능한 구현이 필요합니다. MBean은 매우 간단하므로 디자인의 구성 및 배포 측면에만 집중할 수 있습니다. MBean은 단일 속성인 모델 이름을 표시합니다.
+이 예에서는 `com.day.cq.workflow.model.WorkflowModel` 인터페이스에 반사 가능한 MBean 인터페이스와 구현이 필요합니다. MBean은 매우 간단하므로 디자인의 구성 및 배포 측면에 중점을 둘 수 있습니다. MBean은 단일 속성인 모델 이름을 표시합니다.
 
 #### WorkflowMBean 인터페이스 {#workflowmbean-interface}
 
@@ -279,9 +282,9 @@ public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements Workflo
 
 WorkflowMBeanManager 서비스에는 WorkflowMBean 서비스를 만드는 구성 요소 활성화 방법이 포함되어 있습니다. 서비스 구현에는 다음 방법이 포함됩니다.
 
-* 활성화:구성 요소 활성화기입니다. WorkflowModel 구성 노드를 읽을 JCR 세션을 만듭니다. 모델 구성이 저장되는 루트 노드는 정적 필드에 정의됩니다. 구성 노드의 이름은 정적 필드에도 정의됩니다. 이 메서드는 노드 모델 경로를 가져오고 모델 WorkflowMBeans를 만드는 다른 메서드를 호출합니다.
-* getModelIds:루트 노드 아래의 저장소를 순회하고 각 모델 노드의 경로를 검색합니다.
-* makeMBean:모델 경로를 사용하여 WorkflowModel 개체를 만들고 WorkflowMBean을 만들어 OSGi 서비스를 등록합니다.
+* 활성화:구성 요소 활성화기입니다. WorkflowModel 구성 노드를 읽을 수 있는 JCR 세션을 만듭니다. 모델 구성이 저장되는 루트 노드는 정적 필드에 정의됩니다. 구성 노드의 이름은 정적 필드에서도 정의됩니다. 이 메서드는 노드 모델 경로를 가져오고 모델 WorkflowMBans를 만드는 다른 메서드를 호출합니다.
+* getModelIds:루트 노드 아래의 저장소를 탐색하고 각 모델 노드의 경로를 검색합니다.
+* makeMBean:모델 경로를 사용하여 WorkflowModel 개체를 만들고 WorkflowMBean을 만들고 해당 OSGi 서비스를 등록합니다.
 
 >[!NOTE]
 >
@@ -423,19 +426,19 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 }
 ```
 
-### 예제 MBean의 POM 파일 {#the-pom-file-for-the-example-mbean}
+### 예제 MBean {#the-pom-file-for-the-example-mbean}에 대한 POM 파일
 
-편의를 위해 다음 XML 코드를 복사하여 프로젝트 pom.xml 파일에 붙여넣어 구성 요소 번들을 빌드할 수 있습니다. POM 파섹
+다음 XML 코드를 복사하여 프로젝트 pom.xml 파일에 붙여넣어 구성 요소 번들을 빌드할 수 있습니다. POM은 몇 가지 필수 플러그인 및 종속성을 참조합니다.
 
 **플러그인:**
 
-* Apache Maven Compiler Plugin:소스 코드에서 Java 클래스를 컴파일합니다.
-* Apache Felix Maven Bundle Plugin:번들 및 매니페스트를 만듭니다.
+* Apache Maven Compiler 플러그인:소스 코드에서 Java 클래스를 컴파일합니다.
+* Apache Felix Maven Bundle 플러그인:번들 및 매니페스트 만들기
 * Apache Felix Maven SCR Plugin:구성 요소 설명자 파일을 만들고 서비스 구성 요소 매니페스트 헤더를 구성합니다.
 
-**** 참고:작성 시 Eclipse용 maven scr 플러그인은 m2e 플러그인과 호환되지 않습니다. (Felix [버그 3170을](https://issues.apache.org/jira/browse/FELIX-3170)참조하십시오.) Eclipse IDE를 사용하려면 Maven을 설치하고 명령줄 인터페이스를 사용하여 빌드를 수행합니다.
+**참고: 작성** 시, 마비판 scr 플러그인은 Eclipse용 m2e 플러그인과 호환되지 않습니다. ([펠릭스 버그 3170](https://issues.apache.org/jira/browse/FELIX-3170)을 참조하십시오.) Eclipse IDE를 사용하려면 Maven을 설치하고 명령줄 인터페이스를 사용하여 빌드를 수행합니다.
 
-#### POM 파일 예 {#example-pom-file}
+#### 예 POM 파일 {#example-pom-file}
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -546,7 +549,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 </project>
 ```
 
-공개 Adobe 저장소를 사용하려면 다음 프로필을 즐겨찾기 설정 파일에 추가합니다.
+공개 Adobe 리포지토리를 사용하려면 다음 프로필을 사용자 개인 설정 파일에 추가합니다.
 
 #### Maven 프로필 {#maven-profile}
 
