@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 730a690bcbf5935ca00ed69c27ce108cb2664c22
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '398'
 ht-degree: 4%
 
 ---
@@ -53,13 +53,13 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 1. **Apache Sling Simple WebDAV Access to repository** ( `org.apache.sling.jcr.webdav`) 번들은 **author** 인스턴스에서만 사용할 수 있습니다.
 
 1. 새로 만든 사용자는 첫 번째 로그인 시 암호를 변경해야 합니다. 관리 사용자에게는 적용되지 않습니다.
-1. **Apache** Java Script Handler에 대해 디버그 정보  **생성을 사용할 수 없습니다**.
+1. **Apache** Sling Java Script Handler에 대해 디버그 정보  **생성을 사용할 수 없습니다**.
 
 1. **매핑된** 컨텐츠 및  **디버그 정보 생성** 은  **Apache Sling JSP 스크립트 핸들러에 대해 비활성화되어 있습니다**.
 
 1. **일 CQ WCM 필터**&#x200B;는 **author**&#x200B;의 `edit` 및 **게시** 인스턴스의 `disabled`로 설정됩니다.
 
-1. **[Adobe [Granite HTML 라이브러리 관리자]는** 다음 설정으로 구성됩니다.
+1. **Adobe Granite HTML 라이브러리 관리자**&#x200B;는 다음 설정으로 구성됩니다.
 
    1. **축소:** `enabled`
    1. **디버그:** `disabled`
