@@ -17,30 +17,30 @@ ht-degree: 1%
 ---
 
 
-# ContextHub 구성 {#configuring-contexthub}
+# ContextHub {#configuring-contexthub} 구성
 
-ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크입니다. ContextHub에 대한 자세한 내용은 [개발자 설명서를 참조하십시오](/help/sites-developing/contexthub.md). ContextHub는 [터치 UI에서 클라이언트 컨텍스트를](/help/sites-administering/client-context.md) 대체합니다.
+ContextHub는 컨텍스트 데이터를 저장, 조작 및 표시하기 위한 프레임워크입니다. ContextHub에 대한 자세한 내용은 [개발자 설명서](/help/sites-developing/contexthub.md)를 참조하십시오. ContextHub은 터치 UI에서 [Client Context](/help/sites-administering/client-context.md)을 대체합니다.
 
-ContextHub [도구](/help/sites-developing/contexthub.md) 모음을 구성하여 미리 보기 모드에 나타나는지, ContextHub 저장소를 만들고, 터치에 적합한 UI를 사용하여 UI 모듈을 추가할 수 있도록 합니다.
+[ContextHub](/help/sites-developing/contexthub.md) 도구 모음을 구성하여 미리 보기 모드에 나타나는지, ContextHub 스토어를 만들고, 터치에 적합한 UI를 사용하여 UI 모듈을 추가할 수 있습니다.
 
-## ContextHub 비활성화 {#disabling-contexthub}
+## ContextHub {#disabling-contexthub} 비활성화
 
 기본적으로 AEM 설치에서는 ContextHub가 활성화됩니다. ContextHub를 비활성화하여 js/css를 로드하거나 초기화할 수 없습니다. ContextHub를 비활성화할 수 있는 두 가지 옵션이 있습니다.
 
-* ContextHub 구성을 편집하고 ContextHub 비활성화 옵션을 **선택합니다.**
+* ContextHub 구성을 편집하고 **ContextHub 비활성화** 옵션을 선택합니다.
 
-   1. 레일에서 **도구 > 사이트 > ContextHub를 클릭하거나 탭합니다**
-   1. 기본 구성 컨테이너를 **클릭하거나 탭합니다.**
-   1. ContextHub **구성을** 선택하고 선택한 요소 **편집을 클릭하거나 탭합니다.**
-   1. ContextHub **비활성화를 클릭하거나 탭하고** 저장을 클릭하거나 **탭합니다**
+   1. 레일에서 **도구 > 사이트 > ContextHub**&#x200B;를 클릭하거나 탭합니다.
+   1. 기본 **구성 컨테이너**&#x200B;를 클릭하거나 탭합니다.
+   1. **ContextHub 구성**&#x200B;을 선택하고 **선택한 요소 편집**&#x200B;을 클릭하거나 탭합니다.
+   1. **ContextHub 비활성화**&#x200B;을 클릭하거나 탭하고 **저장**&#x200B;을 클릭하거나 탭합니다.
 
 또는
 
-* CRXDE Lite을 사용하여 속성 `disabled` **** 을 `/libs/settings/cloudsettings`
+* CRXDE Lite을 사용하여 `disabled` 속성을 `/libs/settings/cloudsettings` 아래의 **true**&#x200B;로 설정합니다.
 
 >[!NOTE]
 >
->[AEM 6.4의 저장소 재조정](/help/sites-deploying/repository-restructuring.md) 때문에 ContextHub 구성 위치가 다음 `/etc/cloudsettings` 으로 변경되었습니다.
+>[AEM 6.4의 저장소 재조정](/help/sites-deploying/repository-restructuring.md) 으로 인해 ContextHub 구성 위치가 다음 `/etc/cloudsettings` 으로 변경되었습니다.
 >
 > * `/libs/settings/cloudsettings`
 > * `/conf/global/settings/cloudsettings`
@@ -49,12 +49,12 @@ ContextHub [도구](/help/sites-developing/contexthub.md) 모음을 구성하여
 
 ## ContextHub UI 표시 및 숨기기 {#showing-and-hiding-the-contexthub-ui}
 
-[MOCK] Configure the Adobe Granite ContextHub OSGi service to show or hide the [ContextHub UI](/help/sites-authoring/ch-previewing.md) on your pages. 이 서비스의 PID는 `com.adobe.granite.contexthub.impl.ContextHubImpl.`
+페이지에서 [ContextHub UI](/help/sites-authoring/ch-previewing.md)을 표시하거나 숨기도록 Adobe Granite ContextHub OSGi 서비스를 구성합니다. 이 서비스의 PID는 `com.adobe.granite.contexthub.impl.ContextHubImpl.`입니다.
 
-서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 저장소의 [JCR 노드를 사용할 수 있습니다](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)을 사용하거나 [JCR 노드를 리포지토리에서 사용할 수 있습니다.](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
-* **웹 콘솔:** UI를 표시하려면 UI 표시 속성을 선택합니다. UI를 숨기려면 UI 숨기기 속성을 지우십시오.
-* **JCR 노드:** UI를 표시하려면 부울 `com.adobe.granite.contexthub.show_ui` 속성을 로 설정합니다 `true`. UI를 숨기려면 속성을 로 설정합니다 `false`.
+* **웹 콘솔:** UI를 표시하려면 [UI 표시] 속성을 선택합니다. UI를 숨기려면 UI 숨기기 속성을 지우십시오.
+* **JCR 노드:** UI를 표시하려면 부울  `com.adobe.granite.contexthub.show_ui` 속성을 로 설정합니다 `true`. UI를 숨기려면 속성을 `false`으로 설정합니다.
 
 ContextHub UI를 표시할 때는 AEM 작성자 인스턴스의 페이지에만 나타납니다. UI는 게시 인스턴스의 페이지에 표시되지 않습니다.
 
@@ -69,9 +69,9 @@ UI 모드는 도구 모음의 왼쪽에 일련의 아이콘으로 표시됩니�
 
 ![chlimage_1-319](assets/chlimage_1-319.png)
 
-아이콘은 [Coral UI 아이콘 라이브러리의 참조입니다](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
+아이콘은 [Coral UI 아이콘 라이브러리](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)의 참조입니다.
 
-### UI 모드 추가 {#adding-a-ui-mode}
+### UI 모드 {#adding-a-ui-mode} 추가
 
 관련 ContextHub 모듈을 그룹화하는 UI 모드를 추가합니다. UI 모드를 만들 때 ContextHub 도구 모음에 표시되는 제목과 아이콘을 제공합니다.
 
@@ -85,16 +85,16 @@ UI 모드는 도구 모음의 왼쪽에 일련의 아이콘으로 표시됩니�
 1. 다음 속성에 대한 값을 제공합니다.
 
    * UI 모드 제목:UI 모드를 식별하는 제목
-   * 모드 아이콘:예를 들어 [Coral UI 아이콘에](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) 사용할 선택기 `coral-Icon--user`
+   * 모드 아이콘:사용할 [Coral UI 아이콘](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)에 대한 선택기(예: `coral-Icon--user`)
    * 활성화됨:ContextHub 도구 모음에 UI 모드를 표시하려면 선택합니다.
 
 1. 저장을 클릭하거나 탭합니다.
 
-### UI 모듈 추가 {#adding-a-ui-module}
+### UI 모듈 {#adding-a-ui-module} 추가
 
 페이지 컨텐츠를 미리 보기 위해 ContextHub 도구 모음에 표시되도록 UI 모드에 ContextHub UI 모듈을 추가합니다. UI 모듈을 추가하면 ContextHub에 등록된 모듈 유형의 인스턴스를 만드는 것입니다. UI 모듈을 추가하려면 관련 모듈 유형의 이름을 알아야 합니다.
 
-AEM에서는 UI 모듈을 기반으로 하는 몇 가지 샘플 UI 모듈 유형뿐만 아니라 기본 UI 모듈 유형을 제공합니다. 다음 표에서는 각 항목에 대한 간단한 설명을 제공합니다. 사용자 지정 UI 모듈 개발에 대한 자세한 내용은 ContextHub [UI 모듈 만들기를 참조하십시오](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
+AEM에서는 UI 모듈을 기반으로 하는 몇 가지 샘플 UI 모듈 유형뿐만 아니라 기본 UI 모듈 유형을 제공합니다. 다음 표에서는 각 항목에 대한 간단한 설명을 제공합니다. 사용자 지정 UI 모듈 개발에 대한 자세한 내용은 [ContextHub UI 모듈 만들기](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)를 참조하십시오.
 
 UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 세부 구성이 포함됩니다. JSON 형식으로 세부 구성을 제공합니다. 표의 [모듈 유형] 열은 각 UI 모듈 유형에 필요한 JSON 코드에 대한 정보에 대한 링크를 제공합니다.
 
@@ -126,17 +126,17 @@ UI 모듈 속성에는 모듈별 속성에 대한 값을 제공할 수 있는 �
 1. (선택 사항) 기본 저장소 구성을 무시하려면 JSON 개체를 입력하여 UI 모듈을 구성합니다.
 1. 저장을 클릭하거나 탭합니다.
 
-## ContextHub 저장소 만들기 {#creating-a-contexthub-store}
+## ContextHub 저장소 {#creating-a-contexthub-store} 만들기
 
-사용자 데이터를 유지하고 필요에 따라 데이터에 액세스하는 Context Hub 저장소를 만듭니다. ContextHub 저장소는 등록된 스토어 후보자를 기반으로 합니다. 스토어를 만들 때 스토어 후보가 등록된 storeType의 값이 필요합니다. (사용자 [지정 스토어 후보자 만들기를 참조하십시오](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).)
+사용자 데이터를 유지하고 필요에 따라 데이터에 액세스하는 Context Hub 저장소를 만듭니다. ContextHub 저장소는 등록된 스토어 후보자를 기반으로 합니다. 스토어를 만들 때 스토어 후보가 등록된 storeType의 값이 필요합니다. (사용자 지정 스토어 후보자 만들기[를 참조하십시오.)](/help/sites-developing/ch-extend.md#creating-custom-store-candidates)
 
 ### 자세한 저장소 구성 {#detailed-store-configuration}
 
-스토어를 구성할 때 [세부 사항 구성] 속성을 사용하면 스토어별 속성에 대한 값을 제공할 수 있습니다. 값은 스토어 함수의 매개 변수 `config` 를 기반으로 `init` 합니다. 따라서 이 값과 값의 형식을 제공해야 하는지 여부는 스토어에 따라 다릅니다.
+스토어를 구성할 때 [세부 사항 구성] 속성을 사용하면 스토어별 속성에 대한 값을 제공할 수 있습니다. 이 값은 스토어 `init` 함수의 `config` 매개 변수를 기반으로 합니다. 따라서 이 값과 값의 형식을 제공해야 하는지 여부는 스토어에 따라 다릅니다.
 
 세부 구성 속성 값은 JSON 형식의 `config` 개체입니다.
 
-### Sample Store Candidates {#sample-store-candidates}
+### 샘플 스토어 후보자 {#sample-store-candidates}
 
 AEM에서는 스토어를 기반으로 다음과 같은 샘플 스토어 지원자를 제공합니다.
 
@@ -162,18 +162,18 @@ AEM에서는 스토어를 기반으로 다음과 같은 샘플 스토어 지원�
 1. 기본 구성 속성에 대한 값을 제공한 다음 다음을 클릭하거나 탭합니다.
 
    * **구성 제목:** 스토어를 식별하는 제목
-   * **스토어 유형:** 스토어를 기반으로 할 스토어 후보의 storeType 속성 값
+   * **스토어 유형: 스토어** 의 기반이 되는 스토어 대상의 storeType 속성 값
    * **필수:** 선택
-   * **활성화됨:** 스토어를 활성화하려면 선택
+   * **활성화됨:** 스토어를 활성화하려면 선택합니다.
 
 1. (선택 사항) 기본 저장소 구성을 무시하려면 JSON(Detail Configuration) 상자에 JSON 개체를 입력합니다.
 1. 저장을 클릭하거나 탭합니다.
 
-## 예:JSONP 서비스 사용  {#example-using-a-jsonp-service}
+## 예:JSONP 서비스 {#example-using-a-jsonp-service} 사용
 
 이 예에서는 스토어를 구성하고 UI 모듈에 데이터를 표시하는 방법을 보여 줍니다. 이 예에서는 jsontest.com 사이트의 MD5 서비스가 스토어의 데이터 소스로 사용됩니다. 서비스는 지정된 문자열의 MD5 해시 코드를 JSON 형식으로 반환합니다.
 
-서비스 호출에 대한 데이터를 저장하도록 contexthub.generic-jsonp 스토어가 구성됩니다 `https://md5.jsontest.com/?text=%22text%20to%20md5%22`. 서비스는 UI 모듈에 표시되는 다음 데이터를 반환합니다.
+서비스 호출 `https://md5.jsontest.com/?text=%22text%20to%20md5%22`에 대한 데이터를 저장하도록 contexthub.generic-jsonp 스토어가 구성됩니다. 서비스는 UI 모듈에 표시되는 다음 데이터를 반환합니다.
 
 ```xml
 {
@@ -182,16 +182,16 @@ AEM에서는 스토어를 기반으로 다음과 같은 샘플 스토어 지원�
 }
 ```
 
-### Contexthub.generic-jsonp 스토어 만들기 {#creating-a-contexthub-generic-jsonp-store}
+### contexthub.generic-jsonp 스토어 {#creating-a-contexthub-generic-jsonp-store} 만들기
 
 contexthub.generic-jsonp 샘플 저장소 후보를 사용하면 JSON 데이터를 반환하는 JSONP 서비스 또는 웹 서비스에서 데이터를 검색할 수 있습니다. 이 스토어 지원자의 경우 스토어 구성을 사용하여 사용할 JSONP 서비스에 대한 세부 정보를 제공합니다.
 
-Javascript 클래스의 [init](/help/sites-developing/contexthub-api.md#init-name-config) 함수는 `ContextHub.Store.JSONPStore` 이 저장소 후보를 초기화하는 `config` 개체를 정의합니다. 이 `config` 개체에는 JSONP 서비스에 대한 세부 정보가 포함된 `service` 개체가 포함되어 있습니다. 스토어를 구성하려면 JSON 형식의 `service` 개체를 [세부 구성] 속성의 값으로 제공해야 합니다.
+`ContextHub.Store.JSONPStore` Javascript 클래스의 [init](/help/sites-developing/contexthub-api.md#init-name-config) 함수는 이 저장소 후보를 초기화하는 `config` 개체를 정의합니다. `config` 개체에는 JSONP 서비스에 대한 세부 정보가 포함된 `service` 개체가 포함되어 있습니다. 스토어를 구성하려면 `service` 개체를 JSON 형식으로 [세부 구성] 속성 값으로 제공해야 합니다.
 
-jsontest.com 사이트의 MD5 서비스에서 데이터를 저장하려면 다음 속성을 사용하여 [ContextHub 저장소](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) 만들기에서 절차를 사용하십시오.
+jsontest.com 사이트의 MD5 서비스에서 데이터를 저장하려면 다음 속성을 사용하여 [Creating a ContextHub Store](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store)의 절차를 사용하십시오.
 
 * **구성 제목:** md5
-* **스토어 유형:** contexthub.generic-jsonp
+* **저장소 유형:** contexthub.generic-jsonp
 * **필수:** 선택
 * **활성화됨:** 선택
 * **세부 정보 구성(JSON):**
@@ -212,13 +212,13 @@ jsontest.com 사이트의 MD5 서비스에서 데이터를 저장하려면 다�
     }
    ```
 
-### md5 데이터용 UI 모듈 추가 {#adding-a-ui-module-for-the-md-data}
+### md5 데이터의 UI 모듈 추가 {#adding-a-ui-module-for-the-md-data}
 
 UI 모듈을 ContextHub 도구 모음에 추가하여 예제 md5 저장소에 저장된 데이터를 표시합니다. 이 예에서 contexthub.base 모듈은 다음 UI 모듈을 생성하는 데 사용됩니다.
 
 ![chlimage_1-323](assets/chlimage_1-323.png)
 
-UI 모듈 [추가의](#adding-a-ui-module) 절차를 사용하여 샘플 개인 UI 모드와 같은 기존 UI 모드에 UI 모듈을 추가합니다. UI 모듈의 경우 다음 속성 값을 사용하십시오.
+[UI 모듈 추가](#adding-a-ui-module)의 절차를 사용하여 샘플 UI 모드와 같은 기존 UI 모드에 UI 모듈을 추가합니다. UI 모듈의 경우 다음 속성 값을 사용하십시오.
 
 * **UI 모듈 제목:** MD5
 * **모듈 유형:** contexthub.base
@@ -234,29 +234,29 @@ UI 모듈 [추가의](#adding-a-ui-module) 절차를 사용하여 샘플 개인 
    }
    ```
 
-## ContextHub 디버깅 {#debugging-contexthub}
+## ContextHub {#debugging-contexthub} 디버깅
 
 ContextHub에 대한 디버깅 모드를 활성화하여 문제 해결을 허용할 수 있습니다. 디버그 모드는 ContextHub 구성 또는 CRXDE를 통해 활성화할 수 있습니다.
 
-### 구성을 통해 {#via-the-configuration}
+### 구성 {#via-the-configuration} 사용
 
-ContextHub 구성을 편집하고 디버그 옵션을 **선택합니다.**
+ContextHub 구성을 편집하고 **디버그** 옵션을 선택합니다.
 
-1. 레일에서 **도구 > 사이트 > ContextHub를 클릭하거나 탭합니다**
-1. 기본 구성 컨테이너를 **클릭하거나 탭합니다.**
-1. ContextHub **구성을** 선택하고 선택한 요소 **편집을 클릭하거나 탭합니다.**
-1. 디버그를 클릭하거나 **탭하고** 저장을 클릭하거나 **탭합니다**
+1. 레일에서 **도구 > 사이트 > ContextHub**&#x200B;를 클릭하거나 탭합니다.
+1. 기본 **구성 컨테이너**&#x200B;를 클릭하거나 탭합니다.
+1. **ContextHub 구성**&#x200B;을 선택하고 **선택한 요소 편집**&#x200B;을 클릭하거나 탭합니다.
+1. **디버그**&#x200B;를 클릭하거나 탭하고 **저장**&#x200B;을 클릭하거나 탭합니다.
 
-### CRXDE를 통해 {#via-crxde}
+### CRXDE {#via-crxde}을 통해
 
-CRXDE Lite을 사용하여 다음 `debug` 에서 속성을 **true로** 설정합니다.
+CRXDE Lite을 사용하여 속성 `debug`을 다음 아래에 **true**&#x200B;로 설정합니다.
 
 * `/conf/global/settings/cloudsettings` 또는
 * `/conf/<tenant>/settings/cloudsettings`
 
 >[!NOTE]
 >
->ContextHub 구성이 여전히 이전 경로 아래에 있는 경우, 이 구성 `debug property` 을 설정하는 위치는 입니다 `/libs/settings/cloudsettings/legacy/contexthub`.
+>ContextHub 구성이 여전히 이전 경로 아래에 있는 경우 `debug property`을(를) 설정할 위치는 `/libs/settings/cloudsettings/legacy/contexthub`입니다.
 
 ### 자동 모드 {#silent-mode}
 
@@ -264,28 +264,28 @@ CRXDE Lite을 사용하여 다음 `debug` 에서 속성을 **true로** 설정합
 
 디버그 정보를 전혀 원하지 않는 게시 인스턴스에 유용합니다. 전역 설정이므로 OSGi를 통해 활성화됩니다.
 
-1. 다음 위치에서 **Adobe Experience Manager 웹 콘솔 구성을** 엽니다. `http://<host>:<port>/system/console/configMgr`
-1. Granite ContextHub **Adobe 검색**
-1. 구성 **Adobe [Granite ContextHub]를** 클릭하여 해당 속성을 편집합니다.
-1. 자동 모드 옵션을 **선택하고** 저장을 **클릭합니다**
+1. **Adobe Experience Manager 웹 콘솔 구성**&#x200B;을 `http://<host>:<port>/system/console/configMgr`에서 엽니다.
+1. **Adobe Granite ContextHub** 검색
+1. **Adobe Granite ContextHub** 구성을 클릭하여 해당 속성을 편집합니다.
+1. **자동 모드** 옵션을 선택하고 **저장**&#x200B;을 클릭합니다.
 
-## 업그레이드 후 ContextHub 구성 복구 {#recovering-contexthub-configurations-after-upgrading}
+## {#recovering-contexthub-configurations-after-upgrading} 업그레이드 후 ContextHub 구성 복구
 
-AEM [로](/help/sites-deploying/upgrade.md) 업그레이드하면 ContextHub 구성이 백업되어 안전한 위치에 저장됩니다. 업그레이드 중에 기본 ContextHub 구성이 설치되고 기존 구성이 교체됩니다. 수행한 변경 사항이나 추가 사항을 보존하려면 백업이 필요합니다.
+[AEM](/help/sites-deploying/upgrade.md)으로 업그레이드가 수행되면 ContextHub 구성이 백업되어 안전한 위치에 저장됩니다. 업그레이드 중에 기본 ContextHub 구성이 설치되고 기존 구성이 교체됩니다. 수행한 변경 사항이나 추가 사항을 보존하려면 백업이 필요합니다.
 
-ContextHub 구성은 다음 노드 아래의 폴더 `contexthub` 에 저장됩니다.
+ContextHub 구성은 다음 노드 아래의 `contexthub`이라는 폴더에 저장됩니다.
 
 * `/conf/global/settings/cloudsettings`
 * `/conf/<tenant>/settings/cloudsettings`
 
-업그레이드 후 백업은 이름이 다음과 같은 노드 `contexthub` 아래에 있는 폴더에 저장됩니다.
+업그레이드 후 백업은 이름이 다음과 같은 노드 아래 `contexthub`인 폴더에 저장됩니다.
 
 `/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` 또는
 `/conf/<tenant>/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx`
 
 노드 이름의 `yyyymmdd` 부분은 업그레이드가 수행된 날짜입니다.
 
-ContextHub 구성을 복구하려면 CRXDE Lite을 사용하여 저장 장치, UI 모드 및 UI 모듈을 나타내는 노드를 노드 아래에서 `default-pre-upgrade_yyyymmdd_xxxxxx` 아래로 복사합니다.
+ContextHub 구성을 복구하려면 CRXDE Lite을 사용하여 저장소, UI 모드 및 UI 모듈을 나타내는 노드를 `default-pre-upgrade_yyyymmdd_xxxxxx` 노드 아래의 노드로 복사합니다.
 
 * `/conf/global/settings/cloudsettings` 또는
 * `/conf/<tenant>/settings/cloudsettings`
