@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # ContextHub Javascript API 참조{#contexthub-javascript-api-reference}
 
-ContextHub 구성 요소가 페이지에 추가되면 스크립트에서 [ContextHub Javascript API를 사용할 수 있습니다](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
+ContextHub Javascript API는 [ContextHub 구성 요소가 페이지](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component)에 추가된 경우 스크립트에서 사용할 수 있습니다.
 
 ## ContextHub 상수 {#contexthub-constants}
 
@@ -28,7 +28,7 @@ ContextHub Javascript API가 정의하는 상수 값.
 
 ### 이벤트 상수 {#event-constants}
 
-다음 표에는 ContextHub 저장소에 대해 발생하는 이름 이벤트가 나열되어 있습니다. ContextHub. [Utils.Eventing도 참조하십시오](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing).
+다음 표에는 ContextHub 저장소에 대해 발생하는 이름 이벤트가 나열되어 있습니다. [ContextHub.Utils.Events](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing)도 참조하십시오.
 
 | 상수 | 설명 | 값 |
 |---|---|---|
@@ -102,7 +102,7 @@ var geoloc = allStores.geolocation
 
 **매개 변수**
 
-* **name:** 스토어가 등록된 이름입니다.
+* **이름:** 스토어가 등록된 이름입니다.
 
 **반환**
 
@@ -150,9 +150,9 @@ ContextHub 저장소의 기본 클래스입니다.
 
 ### 속성(ContextHub.Store.Core) {#properties-contexthub-store-core}
 
-#### eventing {#eventing}
+#### 이벤트 {#eventing}
 
-ContextHub. [Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) 개체입니다. 이벤트를 저장하기 위해 바인딩 함수에 이 개체를 사용합니다. 기본값 및 초기화에 대한 자세한 내용은 [init(name,config)를 참조하십시오](/help/sites-developing/contexthub-api.md#init-name-config).
+[ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) 개체. 이벤트를 저장하기 위해 바인딩 함수에 이 개체를 사용합니다. 기본값 및 초기화에 대한 자세한 내용은 [init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config)을 참조하십시오.
 
 #### 이름 {#name}
 
@@ -160,13 +160,13 @@ ContextHub. [Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub
 
 #### 지속성 {#persistence}
 
-ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 자세한 내용은 `[init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config).`
+ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 자세한 내용은 `[init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config).`을 참조하십시오.
 
 ### 함수(ContextHub.Store.Core) {#functions-contexthub-store-core}
 
 #### addAllItems(tree, options) {#addallitems-tree-options}
 
-데이터 개체 또는 배열을 저장소 데이터와 병합합니다. 객체 또는 배열의 각 키/값 쌍이 스토어(함수를 통해)에 `setItem` 추가됩니다.
+데이터 개체 또는 배열을 저장소 데이터와 병합합니다. 개체나 배열의 각 키/값 쌍이 스토어에 추가됩니다(A0/> 함수를 통해).`setItem`
 
 * **개체:** 키는 속성 이름입니다.
 * **배열:** 키는 배열 색인입니다.
@@ -175,15 +175,15 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 **매개 변수**
 
-* **트리:** (개체 또는 배열) 저장소에 추가할 데이터입니다.
-* **옵션:** (객체) setItem 함수에 전달되는 옵션 객체입니다. 자세한 내용은 setItem의 `options` 매개 [변수(key,value,options)를 참조하십시오](/help/sites-developing/contexthub-api.md#setitem-key-value-options).
+* **tree:** (개체 또는 배열) 저장소에 추가할 데이터입니다.
+* **options:** (객체) setItem 함수에 전달되는 옵션 객체입니다. 자세한 내용은 [setItem(key,value,options)](/help/sites-developing/contexthub-api.md#setitem-key-value-options)의 `options` 매개 변수를 참조하십시오.
 
 **반환**
 
-값 `boolean` :
+`boolean` 값:
 
-* 값 `true` 은 데이터 개체가 저장되었음을 나타냅니다.
-* 값 `false` 은 데이터 저장소가 변경되지 않음을 나타냅니다.
+* `true` 값은 데이터 개체가 저장되었음을 나타냅니다.
+* `false` 값은 데이터 저장소가 변경되지 않음을 나타냅니다.
 
 #### addReference(key, anotherKey) {#addreference-key-anotherkey}
 
@@ -191,16 +191,16 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 **매개 변수**
 
-* **key:** 참조하는 키 `anotherKey`.
+* **키:** 참조하는 키 `anotherKey`.
 
-* **다른 키:** 이 키는 에서 참조되는 키 `key`입니다.
+* **다른 키:** 이 키를 참조하는  `key`키
 
 **반환**
 
-값 `boolean` :
+`boolean` 값:
 
-* 의 값은 참조가 추가되었음을 `true` 나타냅니다.
-* 의 값은 참조가 추가되지 않았음을 `false` 나타냅니다.
+* `true` 값은 참조가 추가되었음을 나타냅니다.
+* `false`의 값은 추가된 참조가 없음을 나타냅니다.
 
 #### announceReady() {#announcereadiness}
 
@@ -216,7 +216,7 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 **매개 변수**
 
-* **key:** (문자열) 값을 반환할 키.
+* **key:** (문자열) 값을 반환할 키
 
 **반환**
 
@@ -228,11 +228,11 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 **매개 변수**
 
-* **includeInternals:** 값은 내부적으로 사용한 키를 결과에 `true` 포함합니다. 이러한 키는 밑줄(&quot;_&quot;) 문자로 시작합니다. The default value is `false`.
+* **includeInternals:** 값은 내부적으로 사용되는 키를 결과에  `true` 포함합니다. 이러한 키는 밑줄(&quot;_&quot;) 문자로 시작합니다. 기본값은 `false`입니다.
 
 **반환**
 
-키 이름(값)의 `string` 배열.
+키 이름의 배열( `string` 값).
 
 #### getReferences() {#getreferences}
 
@@ -242,9 +242,9 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 참조 키에 대한 인덱스로 참조하는 키를 사용하는 배열:
 
-* 참조하는 키는 함수의 매개 변수 `key` 와 `addReference` 일치합니다.
+* 참조하는 키는 `addReference` 함수의 `key` 매개 변수와 일치합니다.
 
-* 참조된 키는 `anotherKey` 함수의 매개 변수 `addReference` 와 일치합니다.
+* 참조된 키는 `addReference` 함수의 `anotherKey` 매개 변수와 일치합니다.
 
 #### getTree(includeInternals) {#gettree-includeinternals}
 
@@ -252,7 +252,7 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 **매개 변수**
 
-* `includeInternals:` 값은 내부적으로 사용한 키/값 쌍을 결과에 `true` 포함합니다. 이 데이터의 키는 밑줄(&quot;_&quot;) 문자로 시작합니다. The default value is `false`.
+* `includeInternals:` 값은 내부적으로  `true` 사용되는 키/값 쌍을 결과에 포함합니다. 이 데이터의 키는 밑줄(&quot;_&quot;) 문자로 시작합니다. 기본값은 `false`입니다.
 
 **반환**
 
@@ -264,17 +264,17 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 * 저장소 데이터를 빈 개체로 설정합니다.
 * 빈 개체에 대한 스토어 참조를 설정합니다.
-* eventChannel은 data:*name*, 여기서 *이름은 스토어* 이름입니다.
+* eventChannel은 data:*name*&#x200B;입니다. 여기서 *name*&#x200B;은 스토어 이름입니다.
 
-* storeDataKey는 /store/*name*, 여기서 *이름은* 스토어 이름입니다.
+* storeDataKey는 /store/*name*&#x200B;이고 여기서 *name*&#x200B;은 스토어 이름입니다.
 
 **매개 변수**
 
-* **name:** 스토어의 이름입니다.
+* **이름:** 스토어의 이름입니다.
 * **config:** 구성 속성을 포함하는 개체:
 
    * eventDeferring:기본값은 32입니다.
-   * 이벤트:이 [저장소의 ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) 개체. 기본값은 ContextHub.events 개체가 사용하는 것입니다.
+   * 이벤트:이 스토어에 대한 [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) 개체. 기본값은 ContextHub.events 개체가 사용하는 것입니다.
    * 지속성:이 저장소에 대한 ContextHub.Utils.Persistence 개체입니다. 기본값은 ContextHub.persistence 개체입니다.
 
 #### isEventingPaused() {#iseventingpaused}
@@ -296,23 +296,23 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 저장소에서 키/값 쌍을 제거합니다.
 
-키가 제거되면 이 함수는 이벤트를 `data` 트리거합니다. 이벤트 데이터에는 스토어 이름, 제거된 키 이름, 제거된 값, 키에 대한 새 값(null) 및 &quot;제거&quot;의 작업 유형이 포함됩니다.
+키가 제거되면 이 함수는 `data` 이벤트를 트리거합니다. 이벤트 데이터에는 스토어 이름, 제거된 키 이름, 제거된 값, 키에 대한 새 값(null) 및 &quot;제거&quot;의 작업 유형이 포함됩니다.
 
-선택적으로, 이벤트 트리거를 방지할 수 `data` 있습니다.
+원할 경우, `data` 이벤트의 트리거를 방지할 수 있습니다.
 
 **매개 변수**
 
 * **key:** (문자열) 제거할 키의 이름입니다.
-* **옵션:** (개체) 옵션 객체입니다. 다음 개체 속성이 유효합니다.
+* **options:** (객체) 옵션 객체입니다. 다음 개체 속성이 유효합니다.
 
-   * silent:값 `true` 은 이벤트를 트리거하지 `data` 않습니다. The default value is `false`.
+   * silent:`true`의 값은 `data` 이벤트를 트리거하지 않습니다. 기본값은 `false`입니다.
 
 **반환**
 
-값 `boolean` :
+`boolean` 값:
 
-* 값 `true` 은 키/값 쌍이 제거되었음을 나타냅니다.
-* 의 값은 키가 저장소에서 없으므로 데이터 저장소가 변경되지 않음을 `false` 나타냅니다.
+* `true` 값은 키/값 쌍이 제거되었음을 나타냅니다.
+* `false` 값은 키가 저장소에서 없으므로 데이터 저장소가 변경되지 않음을 나타냅니다.
 
 #### removeReference(key) {#removereference-key}
 
@@ -320,14 +320,14 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 **매개 변수**
 
-* **key:** 제거할 주요 참조입니다. 이 매개 변수는 함수의 매개 변수 `key` 에 `addReference` 해당합니다.
+* **key:** 제거할 키 참조입니다. 이 매개 변수는 `addReference` 함수의 `key` 매개 변수와 일치합니다.
 
 **반환**
 
-값 `boolean` :
+`boolean` 값:
 
-* 의 값은 참조가 제거되었음을 `true` 나타냅니다.
-* 의 값은 키가 유효하지 않고 스토어가 변경되지 않았음을 `false` 나타냅니다.
+* `true` 값은 참조가 제거되었음을 나타냅니다.
+* `false` 값은 키가 유효하지 않고 스토어가 변경되지 않았음을 나타냅니다.
 
 #### reset(keepRemainingData) {#reset-keepremainingdata}
 
@@ -337,7 +337,7 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 **매개 변수**
 
-* **keepRemainingData:** (부울) true 값을 사용하면 초기 데이터가 아닌 데이터가 지속됩니다. false 값을 지정하면 초기값을 제외한 모든 데이터가 제거됩니다.
+* **keepRemainingData:** (부울) true 값을 사용하면 비초기 데이터가 지속됩니다. false 값을 지정하면 초기값을 제외한 모든 데이터가 제거됩니다.
 
 스토어의 지속적인 데이터의 초기 값을 재설정합니다. 선택적으로 저장소에서 다른 모든 데이터를 제거할 수 있습니다. 스토어가 재설정되는 동안 이 스토어에 대한 이벤트가 일시 중지되었습니다. 이 함수는 값을 반환하지 않습니다.
 
@@ -353,13 +353,13 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 **매개 변수**
 
-* **key:** (문자열) 참조를 확인할 키입니다. 이 `key` 매개 변수는 함수 `key` 매개 변수와 `addReference` 일치합니다.
+* **key:** (문자열) 참조를 확인할 키입니다. 이 `key` 매개 변수는 `addReference` 함수의 `key` 매개 변수와 일치합니다.
 
-* **재시도:** (번호) 사용할 이터레이션의 수입니다.
+* **retry:** (숫자) 사용할 반복 수입니다.
 
 **반환**
 
-참조된 키를 나타내는 `string` 값입니다. 참조가 확인되지 않으면 매개 변수의 값이 `key` 반환됩니다.
+참조된 키를 나타내는 `string` 값. 참조가 확인되지 않으면 `key` 매개 변수의 값이 반환됩니다.
 
 #### resumeEventing() {#resumeeventing}
 
@@ -369,33 +369,33 @@ ContextHub.Utils.Persistence 개체입니다. 기본값 및 초기화에 대한 
 
 키/값 쌍을 스토어에 추가합니다.
 
-키에 대한 값이 현재 키에 저장된 값과 다른 경우에만 `data` 이벤트를 트리거합니다. 선택적으로 이벤트 트리거를 방지할 수 `data` 있습니다.
+키의 값이 현재 키에 저장된 값과 다른 경우에만 `data` 이벤트를 트리거합니다. 선택적으로 `data` 이벤트의 트리거를 방지할 수 있습니다.
 
-이벤트 데이터에는 스토어 이름, 키, 이전 값, 새 값 및 작업 유형이 포함됩니다 `set`.
+이벤트 데이터에는 스토어 이름, 키, 이전 값, 새 값, 작업 유형 `set`이 포함됩니다.
 
 **매개 변수**
 
 * **key:** (문자열) 키의 이름입니다.
-* **옵션:** (개체) 옵션 객체입니다. 다음 개체 속성이 유효합니다.
+* **options:** (객체) 옵션 객체입니다. 다음 개체 속성이 유효합니다.
 
-   * silent:값 `true` 은 이벤트를 트리거하지 `data` 않습니다. The default value is `false`.
+   * silent:`true`의 값은 `data` 이벤트를 트리거하지 않습니다. 기본값은 `false`입니다.
 
 * **value:** (개체) 키와 연결할 값입니다.
 
 **반환**
 
-값 `boolean` :
+`boolean` 값:
 
-* 값 `true` 은 데이터 개체가 저장되었음을 나타냅니다.
-* 값 `false` 은 데이터 저장소가 변경되지 않음을 나타냅니다.
+* `true` 값은 데이터 개체가 저장되었음을 나타냅니다.
+* `false` 값은 데이터 저장소가 변경되지 않음을 나타냅니다.
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-JSON 데이터가 포함된 스토어. 데이터는 외부 JSONP 서비스에서 검색되거나 JSON 데이터를 반환하는 서비스에서 선택적으로 검색됩니다. 이 클래스의 인스턴스를 만들 때 [ 함수를 사용하여 서비스 `init`](/help/sites-developing/contexthub-api.md#init-name-config) 세부 사항을 지정합니다.
+JSON 데이터가 포함된 스토어. 데이터는 외부 JSONP 서비스에서 검색되거나 JSON 데이터를 반환하는 서비스에서 선택적으로 검색됩니다. 이 클래스의 인스턴스를 만들 때 [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) 함수를 사용하여 서비스 세부 사항을 지정합니다.
 
 저장소는 메모리 내 지속(Javascript 변수)을 사용합니다. 저장 데이터는 페이지의 라이프타임 동안에만 사용할 수 있습니다.
 
-ContextHub.Store.JSONPStore는 [ContextHub.Store.Core를](/help/sites-developing/contexthub-api.md#contexthub-store-core) 확장하고 해당 클래스의 함수를 상속합니다.
+ContextHub.Store.JSONPStore는 [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core)을(를) 확장하고 해당 클래스의 함수를 상속합니다.
 
 ### 함수(ContextHub.Store.JSONPStore) {#functions-contexthub-store-jsonpstore}
 
@@ -405,7 +405,7 @@ ContextHub.Store.JSONPStore는 [ContextHub.Store.Core를](/help/sites-developing
 
 **매개 변수**
 
-* **serviceConfig:** 다음 속성을 포함하는 개체:
+* **serviceConfig:** 다음 속성을 포함하는 개체입니다.
 
    * 호스트:(문자열) 서버 이름 또는 IP 주소입니다.
    * jsonp:(부울) true 값은 서비스가 JSONP 서비스임을 나타내고, 그렇지 않으면 false를 나타냅니다. true이면 {callback:&quot;ContextHub.Callback.*service.params 개체에 Object.name*} 개체가 추가됩니다.
@@ -418,7 +418,7 @@ ContextHub.Store.JSONPStore는 [ContextHub.Store.Core를](/help/sites-developing
       * true:https://
       * false:https://
 
-* **override:** (부울). 의 값 `true` 으로 인해 기존 서비스 구성이 의 속성으로 대체됩니다 `serviceConfig`. 의 값 `false` 으로 인해 기존 서비스 구성 속성이 의 속성과 병합됩니다 `serviceConfig`.
+* **override:** (부울). `true` 값이 있으면 기존 서비스 구성이 `serviceConfig`의 속성으로 대체됩니다. `false` 값이 있으면 기존 서비스 구성 속성이 `serviceConfig`의 속성과 병합됩니다.
 
 #### getRawResponse() {#getrawresponse}
 
@@ -436,15 +436,15 @@ JSONP 서비스에 대한 마지막 호출 이후에 캐시되는 원시 응답�
 
 다음 속성을 갖는 개체:
 
-* **호스트:** (문자열) 서버 이름 또는 IP 주소입니다.
-* **jsonp:** (부울) true 값은 서비스가 JSONP 서비스임을 나타내고, 그렇지 않으면 false를 나타냅니다. true이면 {callback:&quot;ContextHub.Callback.*service.params 개체에 Object.name*} 개체가 추가됩니다.
+* **host:** (문자열) 서버 이름 또는 IP 주소입니다.
+* **jsonp:** (부울) 값이 true이면 서비스가 JSONP 서비스이고, 그렇지 않으면 false입니다. true이면 {callback:&quot;ContextHub.Callback.*service.params 개체에 Object.name*} 개체가 추가됩니다.
 
-* **params:** (개체) 개체 속성으로 표시되는 URL 매개 변수. 매개 변수 이름은 속성 이름이고 매개 변수 값은 속성 값입니다.
-* **경로:** (문자열) 서비스의 경로입니다.
-* **포트:** (번호) 서비스의 포트 번호입니다.
-* **보안:** (문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
+* **params:** (개체) 개체 속성으로 표시되는 URL 매개 변수 매개 변수 이름은 속성 이름이고 매개 변수 값은 속성 값입니다.
+* **path:** (문자열) 서비스의 경로입니다.
+* **port:** (번호) 서비스의 포트 번호입니다.
+* **secure:** (문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
 
-   * auto: //
+   * 자동://
    * true:https://
    * false:https://
 
@@ -454,11 +454,11 @@ JSONP 서비스의 URL을 검색합니다.
 
 **매개 변수**
 
-* **해결:** (부울) URL에 해결된 매개 변수를 포함할지 여부를 결정합니다. 매개 변수 `true` 를 확인하며 그렇지 `false` 않습니다.
+* **resolve:** (부울) URL에 해결된 매개 변수를 포함할지 여부를 결정합니다. `true`의 값은 매개 변수를 확인하지만 `false`은(는) 그렇지 않습니다.
 
 **반환**
 
-서비스 URL을 나타내는 `string` 값입니다.
+서비스 URL을 나타내는 `string` 값.
 
 #### init(name, config) {#init-name-config-1}
 
@@ -467,7 +467,7 @@ contextHub.Store.JSONPStore 개체를 초기화합니다.
 **매개 변수**
 
 * **name:** (문자열) 저장소의 이름입니다.
-* **config:** (객체) 서비스 속성을 포함하는 객체입니다. JSONPStore 개체는 개체의 속성을 사용하여 JSONP 서비스의 URL을 구성합니다. `service`
+* **config:** (Object) 서비스 속성을 포함하는 개체입니다. JSONPStore 개체는 `service` 개체의 속성을 사용하여 JSONP 서비스의 URL을 구성합니다.
 
    * eventDeferring:32.
    * 이벤트:이 저장소에 대한 ContextHub.Utils.Eventing 개체. 기본값은 `ContextHub.eventing` 개체입니다.
@@ -475,28 +475,28 @@ contextHub.Store.JSONPStore 개체를 초기화합니다.
    * service:(개체)
 
       * 호스트:(문자열) 서버 이름 또는 IP 주소입니다.
-      * jsonp:(부울) true 값은 서비스가 JSONP 서비스임을 나타내고, 그렇지 않으면 false를 나타냅니다. true이면 `{callback: "ContextHub.Callbacks.*Object.name*}`개체가 에 추가됩니다 `service.params`.
+      * jsonp:(부울) true 값은 서비스가 JSONP 서비스임을 나타내고, 그렇지 않으면 false를 나타냅니다. true이면 `{callback: "ContextHub.Callbacks.*Object.name*}`개체가 `service.params`에 추가됩니다.
       * params:(개체) 개체 속성으로 표시되는 URL 매개 변수. 매개 변수 이름과 값은 각각 개체 속성 이름과 값입니다.
       * 경로:(문자열) 서비스의 경로입니다.
       * 포트:(번호) 서비스의 포트 번호입니다.
       * 보안:(문자열 또는 부울) 서비스 URL에 사용할 프로토콜을 결정합니다.
 
-         * auto: //
+         * 자동://
          * true:https://
          * false:https://
       * timeout:(숫자) JSONP 서비스가 시간이 초과되기 전에 응답할 때까지 대기할 시간(밀리초)입니다.
-      * ttl:JSONP 서비스에 대한 호출 사이에 전달되는 최소 시간(밀리초)입니다. (queryService [함수](/help/sites-developing/contexthub-api.md#queryservice-reload) 참조).
+      * ttl:JSONP 서비스에 대한 호출 사이에 전달되는 최소 시간(밀리초)입니다. ([queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) 함수 참조).
 
 
 #### queryService(다시 로드) {#queryservice-reload}
 
-원격 JSONP 서비스를 쿼리하고 응답을 캐시합니다. 이 함수에 대한 이전 호출 이후의 시간이 값보다 작으면 서비스가 호출되지 않고 캐시된 응답이 변경되지 않습니다. `config.service.ttl` 원하는 경우 서비스를 강제로 호출할 수 있습니다. 이 `config.service.ttl`속성은 [init](/help/sites-developing/contexthub-api.md#init-name-config) 함수를 호출하여 스토어 초기화를 수행할 때 설정됩니다.
+원격 JSONP 서비스를 쿼리하고 응답을 캐시합니다. 이 함수에 대한 이전 호출 이후의 시간이 `config.service.ttl` 값보다 작으면 서비스가 호출되지 않고 캐시된 응답이 변경되지 않습니다. 원하는 경우 서비스를 강제로 호출할 수 있습니다. `config.service.ttl`속성은 [init](/help/sites-developing/contexthub-api.md#init-name-config) 함수를 호출하여 스토어를 초기화할 때 설정됩니다.
 
 쿼리가 끝나면 준비 이벤트를 트리거합니다. JSONP 서비스 URL이 설정되지 않은 경우 이 함수는 아무 것도 수행하지 않습니다.
 
 **매개 변수**
 
-* **다시 로드:** (부울) true 값을 사용하면 캐시된 응답을 제거하고 JSONP 서비스를 강제로 호출합니다.
+* **reload:** (부울) true 값을 사용하면 캐시된 응답을 제거하고 JSONP 서비스를 강제로 호출합니다.
 
 #### 재설정 {#reset}
 
@@ -506,23 +506,23 @@ contextHub.Store.JSONPStore 개체를 초기화합니다.
 
 **매개 변수**
 
-* **keepRemainingData:** (부울) true 값을 사용하면 초기 데이터가 아닌 데이터가 지속됩니다. false 값을 지정하면 초기값을 제외한 모든 데이터가 제거됩니다.
+* **keepRemainingData:** (부울) true 값을 사용하면 비초기 데이터가 지속됩니다. false 값을 지정하면 초기값을 제외한 모든 데이터가 제거됩니다.
 
 #### resolveParameter(f) {#resolveparameter-f}
 
 지정된 매개 변수를 확인합니다.
 
-## ContextHub.Store.PersistentJSONPStore {#contexthub-store-persistedjsonpstore}
+## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-ContextHub.Store.PersistentJSONPStore가 [ContextHub.Store.JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore) 를 확장하여 해당 클래스의 모든 함수를 상속합니다. 그러나 JSONP 서비스에서 검색한 데이터는 ContextHub 지속성 구성에 따라 유지됩니다. 지속성 모드 [를 참조하십시오](/help/sites-developing/ch-adding.md#persistence-modes).
+ContextHub.Store.PersistedJSONPStore가 [ContextHub.Store.JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore)을(를) 확장하므로 이 클래스는 해당 클래스의 모든 기능을 상속합니다. 그러나 JSONP 서비스에서 검색한 데이터는 ContextHub 지속성 구성에 따라 유지됩니다. ([지속성 모드](/help/sites-developing/ch-adding.md#persistence-modes)를 참조하십시오.)
 
-## ContextHub.Store.PersistentStore {#contexthub-store-persistedstore}
+## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-ContextHub.Store.PersistedStore는 [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) 를 확장하여 해당 클래스의 모든 기능을 상속합니다. 이 저장소의 데이터는 ContextHub 지속성 구성에 따라 유지됩니다.
+ContextHub.Store.PersistedStore는 [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core)을(를) 확장하여 해당 클래스의 모든 기능을 상속합니다. 이 저장소의 데이터는 ContextHub 지속성 구성에 따라 유지됩니다.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-ContextHub.Store.SessionStore는 [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) 를 확장하여 해당 클래스의 모든 기능을 상속합니다. 이 저장소의 데이터는 메모리 내 지속(Javascript 개체)을 사용하여 지속됩니다.
+ContextHub.Store.SessionStore는 [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core)을(를) 확장하여 해당 클래스의 모든 기능을 상속합니다. 이 저장소의 데이터는 메모리 내 지속(Javascript 개체)을 사용하여 지속됩니다.
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -532,13 +532,13 @@ UI 모듈 및 UI 모듈 렌더러를 관리합니다.
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-ContextHub에 UI 모듈 렌더러를 등록합니다. 렌더러가 등록되면 UI 모듈을 [만드는 데 사용할 수 있습니다](ch-configuring.md#adding-a-ui-module). 사용자 정의 UI 모듈 렌더러를 [만들려면 이 함수를](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) ContextHub.UI.BaseModuleRenderer를 확장할 때 사용합니다.
+ContextHub에 UI 모듈 렌더러를 등록합니다. 렌더러가 등록되면 [UI 모듈 만들기](ch-configuring.md#adding-a-ui-module)에 사용할 수 있습니다. 사용자 지정 UI 모듈 렌더러를 만들려면 [extending ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)인 경우 이 함수를 사용하십시오.
 
 **매개 변수**
 
 * **moduleType:** (문자열) UI 모듈 렌더러의 식별자입니다. 렌더러가 지정된 값을 사용하여 이미 등록되어 있는 경우 이 렌더러가 등록되기 전에 기존 렌더러가 등록되지 않습니다.
-* **렌더러:** (문자열) UI 모듈을 렌더링하는 클래스의 이름입니다.
-* **dontRender:** (부울) 렌더러 `true` 가 등록된 후 ContextHub UI가 렌더링되지 않도록 설정합니다. The default value is `false`.
+* **renderer:** (문자열) UI 모듈을 렌더링하는 클래스의 이름입니다.
+* **dontRender:** (부울) 렌더러가  `true` 등록된 후 ContextHub UI가 렌더링되지 않도록 설정합니다. 기본값은 `false`입니다.
 
 **예**
 
@@ -560,11 +560,11 @@ ContextHub.UI.registerRenderer('contexthub.browserinfo', new SurferinfoRenderer(
 
 **매개 변수**
 
-* **key:** 테스트할 쿠키의 키가 포함된 `String` 것입니다.
+* **키:** 테스트  `String` 중인 쿠키의 키가 포함된 키
 
 **반환**
 
-true 값은 쿠키가 존재함을 나타냅니다. `boolean`
+true의 `boolean` 값은 쿠키가 존재함을 나타냅니다.
 
 **예**
 
@@ -580,7 +580,7 @@ if (ContextHub.Utils.Cookie.exists("name")) {
 
 **매개 변수**
 
-* (선택 사항) **필터:** 쿠키 키 일치에 대한 기준입니다. 모든 쿠키를 반환하려면 값을 지정하지 마십시오. 지원되는 유형은 다음과 같습니다.
+* (선택 사항) **필터:** 쿠키 키 일치 기준. 모든 쿠키를 반환하려면 값을 지정하지 마십시오. 지원되는 유형은 다음과 같습니다.
 
    * 문자열:문자열은 쿠키 키와 비교됩니다.
    * 배열:배열의 각 항목은 필터입니다.
@@ -603,11 +603,11 @@ ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 
 **매개 변수**
 
-* **key:** 값이 필요한 쿠키의 키.
+* **키:** 값이 필요한 쿠키의 키
 
 **반환**
 
-쿠키 값 또는 키에 대한 쿠키를 찾을 수 `null` 없는 경우.
+쿠키 값 또는 키에 대한 쿠키를 찾을 수 없는 경우 `null`
 
 **예**
 
@@ -621,12 +621,12 @@ ContextHub.Utils.Cookie.getItem("name");
 
 **매개 변수**
 
-* **필터:** 쿠키 키 일치에 대한 기준입니다. 지원되는 유형은 다음과 같습니다.
+* **필터:** 쿠키 키 일치를 위한 기준. 지원되는 유형은 다음과 같습니다.
 
    * 문자열:문자열은 쿠키 키와 비교됩니다.
    * 배열:배열의 각 항목은 필터입니다.
    * RegExp 객체:개체의 테스트 기능은 쿠키 키와 일치하는 데 사용됩니다.
-   * 함수:일치에 대한 쿠키 키를 테스트하는 함수입니다. 이 함수는 쿠키 키를 매개 변수로 가져와서 테스트가 일치하는지 확인하는 `true` 경우 반환해야 합니다.
+   * 함수:일치에 대한 쿠키 키를 테스트하는 함수입니다. 이 함수는 쿠키 키를 매개 변수로 가져와서 테스트가 일치를 확인하면 `true`을 반환해야 합니다.
 
 **반환**
 
@@ -644,9 +644,9 @@ ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 
 **매개 변수**
 
-* **key:** 제거할 쿠키의 키를 나타내는 `String` 값입니다.
+* **키:** 제거할  `String` 쿠키의 키를 나타내는 값입니다.
 
-* **옵션:** 쿠키 속성을 구성하기 위한 속성 값이 포함된 개체입니다. 자세한 내용은 ` [setItem](/help/sites-developing/contexthub-api.md#setitem-key-value-options)` 함수를 참조하십시오. 이 `expires` 속성은 아무런 효과가 없습니다.
+* **options:** 쿠키 속성을 구성하기 위한 속성 값을 포함하는 오브젝트입니다. 자세한 내용은 ` [setItem](/help/sites-developing/contexthub-api.md#setitem-key-value-options)` 함수를 참조하십시오. `expires` 속성은 영향을 주지 않습니다.
 
 **반환**
 
@@ -664,13 +664,13 @@ ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 
 **매개 변수**
 
-* **key:** 쿠키의 키가 포함된 문자열.
-* **value:** 쿠키 값을 포함하는 문자열.
-* **옵션:** (선택 사항) 쿠키 속성을 구성하는 다음 속성을 포함하는 개체입니다.
+* **키:** 쿠키의 키를 포함하는 문자열.
+* **값:** 쿠키 값을 포함하는 문자열.
+* **options:** (선택 사항) 쿠키 속성을 구성하는 다음 속성을 포함하는 개체입니다.
 
-   * 만료:쿠키가 만료되는 시기를 지정하는 `date` 또는 `number` 값. 날짜 값은 만료의 절대 시간을 지정합니다. 숫자(일 단위)는 만료 시간을 현재 시간 + 수로 설정합니다. The default value is `undefined`.
-   * 보안:쿠키의 `boolean` `Secure` 속성을 지정하는 값. The default value is `false`.
-   * 경로:쿠키의 `String` `Path` 속성으로 사용할 값. The default value is `undefined`.
+   * 만료:쿠키가 만료되는 시기를 지정하는 `date` 또는 `number` 값. 날짜 값은 만료의 절대 시간을 지정합니다. 숫자(일 단위)는 만료 시간을 현재 시간 + 수로 설정합니다. 기본값은 `undefined`입니다.
+   * 보안:쿠키의 `Secure` 특성을 지정하는 `boolean` 값. 기본값은 `false`입니다.
+   * 경로:쿠키의 `Path` 특성으로 사용할 `String` 값. 기본값은 `undefined`입니다.
 
 **반환**
 
@@ -693,9 +693,9 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 **매개 변수**
 
-* **필터:** 함수 호출에서 사용할 `filter` `[getKeys](/help/sites-developing/contexthub-api.md#getkeys-filter)` 인수입니다.
+* **filter:** 함수  `filter` 호출에 사용할  `[getKeys](/help/sites-developing/contexthub-api.md#getkeys-filter)` 인수입니다.
 
-* **옵션:** 함수 호출에서 사용할 `options` `[removeItem](/help/sites-developing/contexthub-api.md#removeitem-key-options)` 인수입니다.
+* **options:** 함수  `options` 호출에 사용할  `[removeItem](/help/sites-developing/contexthub-api.md#removeitem-key-options)` 인수입니다.
 
 **반환**
 
@@ -703,19 +703,19 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
-함수를 ContextHub 저장소 이벤트에 바인딩하고 바인딩 해제할 수 있습니다. 스토어의 이벤트 속성을 사용하여 스토어의 ContextHub.Utils.Eventing [개체에](/help/sites-developing/contexthub-api.md#eventing) 액세스합니다.
+함수를 ContextHub 저장소 이벤트에 바인딩하고 바인딩 해제할 수 있습니다. 스토어의 [events](/help/sites-developing/contexthub-api.md#eventing) 속성을 사용하여 스토어의 ContextHub.Utils.Eventing 개체에 액세스합니다.
 
 ### 함수(ContextHub.Utils.Eventing) {#functions-contexthub-utils-eventing}
 
-#### off(name, selector {#off-name-selector}
+#### off(name, selector) {#off-name-selector}
 
 이벤트에서 함수를 바인딩하지 않습니다.
 
 **매개 변수**
 
-* **name:** 함수의 바인딩을 해제할 이벤트의 [이름입니다](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) .
+* **이름:** 함수 [의 바인딩을 해제할 ](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) 이벤트의 이름입니다.
 
-* **selector:** 바인딩을 식별하는 선택기입니다. on `selector` 및 [한 번](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) 함수 [에 대한 매개 변수를](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) 참조하십시오.
+* **selector:** 바인딩을 식별하는 선택기입니다. ([on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) 및 [once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) 함수의 `selector` 매개 변수를 참조하십시오.)
 
 **반환**
 
@@ -727,21 +727,21 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 **매개 변수**
 
-* **name:** (문자열) 함수를 바인딩하는 이벤트의 [이름입니다](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) .
+* **name:** (문자열) 함수를 바인딩하는  [이벤트의 ](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) 이름입니다.
 
 * **handler:** (함수) 이벤트에 바인딩할 함수입니다.
-* **selector:** (문자열) 바인딩의 고유 식별자입니다. 바인딩을 제거하기 위해 함수를 사용하려는 경우 바인딩을 식별하려면 선택기가 `off` 필요합니다.
+* **selector:** (문자열) 바인딩의 고유 식별자입니다. 바인딩 제거 시 `off` 함수를 사용하려면 바인딩이 선택기가 필요합니다.
 
-* **triggerForPastEvents:** (부울) 과거 발생한 이벤트에 대해 핸들러를 실행할지 여부를 나타냅니다. 이전 이벤트에 대한 핸들러를 호출하는 `true` 값입니다. 미래의 이벤트를 위해 핸더를 호출하는 값 `false` . The default value is `true`.
+* **triggerForPastEvents:** (부울) 과거에 발생한 이벤트에 대해 핸들러를 실행할지 여부를 나타냅니다. `true`의 값은 이전 이벤트에 대한 핸들러를 호출합니다. `false`의 값은 이후 이벤트에 대한 핸더를 호출합니다. 기본값은 `true`입니다.
 
 **반환**
 
-이 `triggerForPastEvents` 인수는 `true``boolean` 과거 이벤트 발생 여부를 나타내는 값을 반환합니다.
+`triggerForPastEvents` 인수가 `true`이면 이 함수는 이벤트가 과거에 발생했는지 여부를 나타내는 `boolean` 값을 반환합니다.
 
 * `true`:이전에 발생한 이벤트로 핸들러가 호출됩니다.
 * `false`:그 사건은 과거에 일어나지 않았다.
 
-이 `triggerForPastEvents` `false`경우 이 함수는 값을 반환하지 않습니다.
+`triggerForPastEvents`이 `false`이면 이 함수는 값을 반환하지 않습니다.
 
 **예**
 
@@ -769,21 +769,21 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 **매개 변수**
 
-* **name:** (문자열) 함수를 바인딩하는 이벤트의 [이름입니다](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) .
+* **name:** (문자열) 함수를 바인딩하는  [이벤트의 ](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) 이름입니다.
 
 * **handler:** (함수) 이벤트에 바인딩할 함수입니다.
-* **selector:** (문자열) 바인딩의 고유 식별자입니다. 바인딩을 제거하기 위해 함수를 사용하려는 경우 바인딩을 식별하려면 선택기가 `off` 필요합니다.
+* **selector:** (문자열) 바인딩의 고유 식별자입니다. 바인딩 제거 시 `off` 함수를 사용하려면 바인딩이 선택기가 필요합니다.
 
-* **triggerForPastEvents:** (부울) 과거 발생한 이벤트에 대해 핸들러를 실행할지 여부를 나타냅니다. 이전 이벤트에 대한 핸들러를 호출하는 `true` 값입니다. 미래의 이벤트를 위해 핸더를 호출하는 값 `false` . The default value is `true`.
+* **triggerForPastEvents:** (부울) 과거에 발생한 이벤트에 대해 핸들러를 실행할지 여부를 나타냅니다. `true`의 값은 이전 이벤트에 대한 핸들러를 호출합니다. `false`의 값은 이후 이벤트에 대한 핸더를 호출합니다. 기본값은 `true`입니다.
 
 **반환**
 
-이 `triggerForPastEvents` 인수는 `true``boolean` 과거 이벤트 발생 여부를 나타내는 값을 반환합니다.
+`triggerForPastEvents` 인수가 `true`이면 이 함수는 이벤트가 과거에 발생했는지 여부를 나타내는 `boolean` 값을 반환합니다.
 
 * `true`:이전에 발생한 이벤트로 핸들러가 호출됩니다.
 * `false`:그 사건은 과거에 일어나지 않았다.
 
-이 `triggerForPastEvents` `false`경우 이 함수는 값을 반환하지 않습니다.
+`triggerForPastEvents`이 `false`이면 이 함수는 값을 반환하지 않습니다.
 
 ## ContextHub.Utils.inheritance {#contexthub-utils-inheritance}
 
@@ -798,7 +798,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 **매개 변수**
 
 * **child:** (개체) 상속되는 개체입니다.
-* **parent:** (개체) 상속되는 속성과 메서드를 정의하는 개체입니다.
+* **parent:** (Object) 상속되는 속성과 메서드를 정의하는 개체입니다.
 
 ## ContextHub.Utils.JSON {#contexthub-utils-json}
 
@@ -812,7 +812,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 **매개 변수**
 
-* **data:** JSON 형식의 문자열 값입니다.
+* **data:** JSON 형식의 문자열 값.
 
 **반환**
 
@@ -820,7 +820,7 @@ Javascript 개체.
 
 **예**
 
-코드는 다음 개체를 `ContextHub.Utils.JSON.parse("{'city':'Basel','country':'Switzerland','population':'173330'}");` 반환합니다.
+`ContextHub.Utils.JSON.parse("{'city':'Basel','country':'Switzerland','population':'173330'}");` 코드는 다음 개체를 반환합니다.
 
 ```
 Object {
@@ -836,15 +836,15 @@ Javascript 값과 개체를 JSON 형식의 문자열 값으로 정리합니다.
 
 **매개 변수**
 
-* **data:** 직렬화할 값 또는 개체. 이 함수는 부울, 배열, 숫자, 문자열 및 날짜 값을 지원합니다.
+* **data:** serialize할 값 또는 개체입니다. 이 함수는 부울, 배열, 숫자, 문자열 및 날짜 값을 지원합니다.
 
 **반환**
 
-직렬화된 문자열 값입니다. R 값 `data` `egExp` 이 R이면 이 함수는 빈 개체를 반환합니다. 함수 `data` 는 반환합니다 `undefined`.
+직렬화된 문자열 값입니다. `data`이 R `egExp` 값이면 이 함수는 빈 개체를 반환합니다. `data`이(가) 함수이면 `undefined`을 반환합니다.
 
 **예**
 
-다음 코드는 `"{'city':'Basel','country':'Switzerland','population':'173330'}":`
+다음 코드는 `"{'city':'Basel','country':'Switzerland','population':'173330'}":`을(를) 반환합니다.
 
 ```
 ContextHub.Utils.JSON.stringify({
@@ -867,7 +867,7 @@ ContextHub.Utils.JSON.stringify({
 **매개 변수**
 
 * **트리:** 복사되는 개체입니다.
-* **secondTree:** 개체의 복사본과 병합되는 `tree` 개체입니다.
+* **secondTree:** 개체 복사본과 병합되는  `tree` 개체입니다.
 
 **반환**
 
@@ -892,11 +892,11 @@ ContextHub.Utils.JSON.stringify({
 **매개 변수**
 
 * **트리:** 데이터 개체입니다.
-* **key:** 검색할 값의 키
+* **키:** 검색할 값의 키
 
 **반환**
 
-키와 일치하는 값. 키에 자식 키가 있으면 이 함수는 복잡한 개체를 반환합니다. 키 값 유형이 이면 `undefined`이 `null` 반환됩니다.
+키와 일치하는 값. 키에 자식 키가 있으면 이 함수는 복잡한 개체를 반환합니다. 키의 값 유형이 `undefined`이면 `null`이 반환됩니다.
 
 **예**
 
@@ -916,7 +916,7 @@ myObject {
   }
 ```
 
-다음 예제 코드는 값을 반환합니다 `260`.
+다음 예제 코드는 값 `260`을 반환합니다.
 
 ```
 ContextHub.Utils.JSON.tree.getItem(myObject, "/user/location/details/elevation");
@@ -948,9 +948,9 @@ Object {
 
 **매개 변수**
 
-* **트리:** 데이터 트리의 키를 검색할 객체입니다.
-* **parent:** (선택 사항) 하위 항목의 키를 검색할 데이터 트리의 항목 키
-* **주문:** (선택 사항) 반환된 키의 정렬 순서를 결정하는 함수입니다. ( [Mozilla 개발자 네트워크에서 Array.prototype.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) 를 참조하십시오.)
+* **트리:** 데이터 트리의 키를 검색할 개체입니다.
+* **상위:** (선택 사항) 하위 항목의 키를 검색할 데이터 트리의 항목 키
+* **order:** (선택 사항) 반환된 키의 정렬 순서를 결정하는 함수입니다. (Mozilla 개발자 네트워크의 [Array.prototype.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)을 참조하십시오.)
 
 **반환**
 
@@ -977,7 +977,7 @@ myObject {
 }
 ```
 
-스크립트는 다음 배열을 `ContextHub.Utils.JSON.tree.getKeys(myObject);` 반환합니다.
+`ContextHub.Utils.JSON.tree.getKeys(myObject);` 스크립트는 다음 배열을 반환합니다.
 
 ```
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1042,15 +1042,15 @@ myObject {
 
 결과 배열을 사용하여 사용 가능한 키를 만듭니다.  **매개 변수**
 
-* **key:** 문서의 기밀 정보 `string` 를 가릴 수 있습니다.
+* **키:** 문서의 기밀 정보 `string` 를 가릴 수 있습니다.
 
 **반환**
 
-각 문자열이 슬래시로 구분된 부분 `string` `key` 의 값들의 배열. 정리된 키를 나타냅니다. 문서의 기밀 정보 가리기 배열 길이가 0이면 이 함수는 반환합니다 `null`.
+각 문자열이 슬래시로 구분된 `key`의 부분인 `string` 값의 배열. 정리된 키를 나타냅니다. 정리된 배열 길이가 0이면 이 함수는 `null`을 반환합니다.
 
 **예**
 
-다음 코드에서는 문자열을 정리하여 배열 `["this", "is", "a", "path"]`을 만든 다음, 배열 `"/this/is/a/path"` 에서 키를 생성합니다.
+다음 코드에서는 문자열을 정리하여 `["this", "is", "a", "path"]` 배열을 만든 다음 배열에서 `"/this/is/a/path"` 키를 생성합니다.
 
 ```
 var key = " / this////is/a/path ";
@@ -1060,17 +1060,17 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 #### setItem(tree, key, value) {#setitem-tree-key-value}
 
-개체 사본의 데이터 트리에 키/값 쌍을 추가합니다. 데이터 트리에 대한 자세한 내용은 [지속성을 참조하십시오](/help/sites-developing/contexthub.md#persistence).
+개체 사본의 데이터 트리에 키/값 쌍을 추가합니다. 데이터 트리에 대한 자세한 내용은 [지속성](/help/sites-developing/contexthub.md#persistence)을 참조하십시오.
 
 **매개 변수**
 
 * 트리:데이터 개체입니다.
-* key:추가하려는 값과 연결할 키 키는 데이터 트리에 있는 항목의 경로입니다. 이 기능 `ContextHub.Utils.JSON.tree.sanitize` 은 키를 추가하기 전에 키의 기밀 정보를 가리기 위해 호출합니다.
+* key:추가하려는 값과 연결할 키 키는 데이터 트리에 있는 항목의 경로입니다. 이 함수는 `ContextHub.Utils.JSON.tree.sanitize`을 호출하여 키를 추가하기 전에 문서의 기밀 정보를 정리합니다.
 * value:데이터 트리에 추가할 값입니다.
 
 **반환**
 
-/ 쌍이 포함된 `tree` 개체의 `key``value` 복사본.
+`key`/ `value` 쌍을 포함하는 `tree` 개체의 복사본.
 
 **예**
 
@@ -1109,19 +1109,19 @@ myObject 개체의 값은 다음과 같습니다.
 
 **매개 변수**
 
-* **storeType:** (문자열) 저장소 유형의 이름입니다. 함수의 매개 변수 `storeType` 를 [ 참조하십시오 `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) .
+* **storeType:** (문자열) 저장소 유형의 이름입니다. [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) 함수의 `storeType` 매개 변수를 참조하십시오.
 
 **반환**
 
 스토어 유형의 객체입니다. 객체 속성은 스토어 유형 이름이고 속성 값은 등록된 스토어 후보자들의 배열입니다.
 
-#### getStoreFromAccounts(storeType) {#getstorefromcandidates-storetype}
+#### getStoreFromAcquisies(storeType) {#getstorefromcandidates-storetype}
 
 등록된 지원자의 스토어 유형을 반환합니다. 동일한 이름의 스토어 유형이 두 개 이상 등록되면 이 함수는 우선 순위가 가장 높은 스토어 유형을 반환합니다.
 
 **매개 변수**
 
-* storeType:(문자열) 스토어 후보자의 이름입니다. 함수의 매개 변수 `storeType` 를 [ 참조하십시오 `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) .
+* storeType:(문자열) 스토어 후보자의 이름입니다. [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) 함수의 `storeType` 매개 변수를 참조하십시오.
 
 **반환**
 
@@ -1133,7 +1133,7 @@ myObject 개체의 값은 다음과 같습니다.
 
 **반환**
 
-각 문자열이 저장소 후보가 등록된 스토어 유형인 문자열 값의 배열. 함수의 매개 변수 `storeType` 를 [ 참조하십시오 `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) .
+각 문자열이 저장소 후보가 등록된 스토어 유형인 문자열 값의 배열. [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) 함수의 `storeType` 매개 변수를 참조하십시오.
 
 #### registerStoreCandier(store, storeType, priority, applies) {#registerstorecandidate-store-storetype-priority-applies}
 
@@ -1143,10 +1143,10 @@ myObject 개체의 값은 다음과 같습니다.
 
 **매개 변수**
 
-* **store:** (개체) 스토어 후보로 등록할 스토어 오브젝트입니다.
+* **store:** (개체) 저장소 후보로 등록할 스토어 오브젝트입니다.
 * **storeType:** (문자열) 스토어 후보자의 이름입니다. 이 값은 스토어 대상의 인스턴스를 만들 때 필요합니다.
-* **우선 순위:** (번호) 스토어 후보자의 우선 순위입니다.
-* **적용:** (함수) 현재 환경에서 스토어의 응용 프로그램을 평가하는 호출 함수입니다. 스토어를 적용할 수 `true` 있는 경우 함수가 반환되어야 하며, 그렇지 않은 경우 함수를 반환해야 `false` 합니다. 기본값은 true를 반환하는 함수입니다. `function() {return true;}`
+* **priority:** (숫자) 스토어 후보자의 우선 순위입니다.
+* **apples:** (함수) 현재 환경에서 스토어의 응용 프로그램을 평가하는 호출되는 함수입니다. 스토어를 적용할 수 있는 경우 함수는 `true`을 반환하고 그렇지 않은 경우 `false`를 반환해야 합니다. 기본값은 true를 반환하는 함수입니다.`function() {return true;}`
 
 **예**
 
