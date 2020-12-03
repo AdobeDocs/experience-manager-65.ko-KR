@@ -20,12 +20,12 @@ ht-degree: 9%
 
 # 사용자 지정 노드 유형{#custom-node-types}
 
-AEM은 Sling을 기반으로 하고 JCR 리포지토리를 사용하기 때문에 두 가지 모두에서 제공되는 노드 유형을 사용할 수 있습니다.
+AEM은 Sling을 기반으로 하며 JCR 저장소를 사용하기 때문에 두 가지 모두에서 제공되는 노드 유형을 사용할 수 있습니다.
 
 * [JCR 노드 유형](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling 노드 유형](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-여기에 더해서 AEM에서는 다양한 사용자 지정 노드 유형을 제공합니다.
+여기에 더해서 AEM은 사용자 지정 노드 유형 범위를 제공합니다.
 
 ## 감사 {#audit}
 
@@ -80,7 +80,7 @@ AEM은 Sling을 기반으로 하고 JCR 리포지토리를 사용하기 때문�
 
 **설명**
 
-노드의 노드 유형을 `commentattachment` 정의합니다.
+`commentattachment` 노드의 노드 유형을 정의합니다.
 
 **정의**
 
@@ -166,7 +166,7 @@ WCM에서 사용하는 최소 속성을 갖는 페이지 컨텐츠의 기본 노
 * `@prop jcr:description` - 이 페이지의 설명입니다.
 * `@prop cq:template` - 페이지를 만드는 데 사용되는 템플릿의 경로입니다.
 * `@prop cq:allowedTemplates` - 허용되는 템플릿에 대한 경로를 결정하는 데 사용되는 정규 표현식 목록입니다.
-* `@prop pageTitle` - 일반적으로 `<title>` 태그에 표시되는 제목입니다.
+* `@prop pageTitle` - 일반적으로  `<title>` 태그에 표시되는 제목입니다.
 * `@prop navTitle` - 일반적으로 탐색에 사용되는 제목입니다.
 * `@prop hideInNav` - 탐색에서 페이지를 표시할지 여부를 지정합니다.
 * `@prop onTime` - 이 페이지가 유효한 시간입니다.
@@ -237,18 +237,18 @@ CQ 구성 요소를 정의합니다.
 * `@prop dialogPath` - 기본 대화 상자 경로(대화 상자 대체)
 * `@node design_dialog` - 디자인 대화 상자
 * `@prop cq:cellName` - 디자인 셀의 이름입니다.
-* `@prop cq:isContainer` - 컨테이너 구성 요소인지 여부를 나타냅니다. 이로 인해 하위 구성 요소의 셀 이름이 경로 이름 대신 사용됩니다. 예를 들어, 컨테이너 구성 요소 `parsys` 는 컨테이너 구성 요소입니다. 이 값이 정의되지 않은 경우 확인 작업은 `cq:childEditConfig`
-* `@prop cq:noDecoration` - true이면 이 구성 요소를 포함할 때 데코레이션 `div` 태그가 표시되지 않습니다.
+* `@prop cq:isContainer` - 컨테이너 구성 요소인지 여부를 나타냅니다. 이로 인해 하위 구성 요소의 셀 이름이 경로 이름 대신 사용됩니다. 예를 들어 `parsys`은 컨테이너 구성 요소입니다. 이 값이 정의되지 않은 경우 검사가 `cq:childEditConfig`의 존재를 기반으로 수행됩니다.
+* `@prop cq:noDecoration` - true이면 이 구성 요소를 포함할 때 데코레이션  `div` 태그가 표시되지 않습니다.
 * `@node cq:editConfig` - 편집 막대의 매개 변수를 정의하는 구성
 * `@node cq:childEditConfig` - 하위 구성 요소에서 상속되는 편집 구성
-* `@node cq:htmlTag` - 구성 요소를 포함할 때 &quot;주변&quot; `div` 태그에 추가되는 추가 태그 속성을 정의합니다.
+* `@node cq:htmlTag` - 구성 요소를 포함할 때 &quot;주변&quot;  `div` 태그에 추가되는 추가 태그 속성을 정의합니다.
 * `@node icon.png`- 특성 아이콘이 있는 파일입니다.
 * `@node thumbnail.png` - 고유한 축소판 이미지를 포함하는 파일입니다.
 * `@prop allowedParents` - 정규 표현식 패턴으로 상위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
 * `@prop allowedChildren` - 정규 표현식 패턴으로 하위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
 * `@node virtual` - 구성 요소 드래그 앤 드롭에 사용되는 가상 구성 요소를 반영하는 하위 노드를 포함합니다.
 * `@prop componentGroup` - 구성 요소 드래그 앤 드롭에 사용되는 구성 요소 그룹의 이름입니다.
-* `@node cq:infoProviders` - Contains subnodes, wheach has a property `className` that references to a a a `PageInfoProvider`.
+* `@node cq:infoProviders` - 하위 노드를 포함합니다. 각 노드에는  `className` 속성을 참조하는 속성이  `PageInfoProvider`있습니다.
 
 **정의**
 
@@ -302,7 +302,7 @@ CQ 구성 요소를 혼합 유형으로 정의합니다.
 * `@prop cq:actions`- 작업 목록(막대 단추 또는 메뉴 항목 편집)
 * `@node cq:actionConfigs` - 편집 막대 또는 메뉴 항목을 위한 위젯 구성
 * `@prop cq:emptyText` - 시각적 컨텐츠가 없는 경우 표시할 텍스트입니다.
-* `@node cq:dropTargets` - 노드 `{@link cq:DropTargetConfig}` 수집.
+* `@node cq:dropTargets` -  `{@link cq:DropTargetConfig}` 노드 수집
 
 **정의**
 
@@ -321,7 +321,7 @@ CQ 구성 요소를 혼합 유형으로 정의합니다.
 
 구성 요소의 한 드롭 대상을 구성합니다. 이 노드의 이름은 드래그 앤 드롭에 ID로 사용됩니다.
 
-* `@prop accept` - 이 드롭 대상에서 허용되는 MIME 유형 목록; 예: `["image/*"]`
+* `@prop accept` - 이 드롭 대상에서 허용되는 MIME 유형 목록;예:  `["image/*"]`
 * `@prop groups` - 소스를 허용하는 드래그 앤 드롭 그룹 목록
 * `@prop propertyName` - 참조를 저장하는 데 사용되는 속성의 이름입니다.
 
@@ -449,7 +449,7 @@ DAM 자산을 나타내는 축소판입니다.
 
 **설명**
 
-`cq:attributes` 는 ContentBus 버전 태그의 노드 유형입니다. 이 노드에는 일련의 속성만 있습니다. 이 세 가지 중에서 미리 정의된 &quot;created&quot;, &quot;csd&quot; 및 &quot;timestampe&quot;입니다.
+`cq:attributes` 는 ContentBus 버전 태그의 노드 유형입니다. 이 노드에는 일련의 속성만 있습니다.이 세 가지 중에서 미리 정의된 &quot;created&quot;, &quot;csd&quot; 및 &quot;timestampe&quot;입니다.
 
 * `@prop created (long) mandatory copy` - 버전 정보 작성의 타임스탬프, 일반적으로 이전 버전을 체크 인하거나 페이지를 만든 시간입니다.
 * `@prop csd (string) mandatory copy` - csd 표준 속성, 페이지 노드의 cq:csd 속성 사본
@@ -468,9 +468,9 @@ DAM 자산을 나타내는 축소판입니다.
 
 **설명**
 
-노드 유형은 ContentBus 컨텐츠 페이지에 대한 속성 및 하위 노드 정의를 `cq:contentPage` 포함합니다. 이 혼합 유형이 유형 노드에 추가되는 경우에만 노드가 ContentBus 컨텐츠 페이지 `cq:page`가 됩니다.
+노드 유형 `cq:contentPage`에는 ContentBus 컨텐츠 페이지에 대한 속성 및 하위 노드 정의가 포함되어 있습니다. 이 혼합 유형이 `cq:page` 유형의 노드에 추가되는 경우에만 노드가 ContentBus 컨텐츠 페이지가 됩니다.
 
-a의 항목은 다음과 `cq:Cq4ContentPage` 같습니다.
+`cq:Cq4ContentPage`의 항목은 다음과 같습니다.
 
 * `@prop cq:csd` - 페이지의 ContentBus CSD.
 * `@node cq:content` - 페이지의 컨텐츠. 페이지 노드가 &quot;컨텐트 없는 기존&quot; 또는 &quot;삭제됨&quot; 상태인 경우에는 이 하위 노드가 존재하지 않습니다.
@@ -533,7 +533,7 @@ a의 항목은 다음과 `cq:Cq4ContentPage` 같습니다.
 
 ## 메일러 {#mailer}
 
-### cq:mailMessage {#cq-mailermessage}
+### cq:maniatorMessage {#cq-mailermessage}
 
 **설명**
 
@@ -585,7 +585,7 @@ LiveSync 믹스를 정의합니다. 노드가 기본 소스(제어) 노드 및 L
 
 LiveSyncCancelled 믹스를 정의합니다. 부모 중 한 명으로 인해 LiveRelationship에 포함될 수 있는 Live Copy(제어된) 노드의 LiveSync 동작을 취소합니다.
 
-* `@prop cq:isCancelledForChildren` - LiveSync를 취소할지 여부를 정의합니다. 또한 어린이들.
+* `@prop cq:isCancelledForChildren` - LiveSync를 취소할지 여부를 정의합니다.또한 어린이들.
 
 **정의**
 
@@ -634,7 +634,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 ## 플랫폼 {#platform}
 
-### cq:Console {#cq-console}
+### cq:콘솔 {#cq-console}
 
 **설명**
 
@@ -657,7 +657,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 * `@prop cq:lastPublishedBy`- 페이지를 마지막으로 게시한 사용자(더 이상 사용되지 않음)
 * `@prop cq:lastReplicated` - 페이지가 마지막으로 복제된 날짜입니다.
 * `@prop cq:lastReplicatedBy` - 페이지를 마지막으로 복제한 사용자입니다.
-* `@prop cq:lastReplicationAction` - 복제 작업: 활성화 또는 비활성화
+* `@prop cq:lastReplicationAction` - 복제 작업:활성화 또는 비활성화
 * `@prop cq:lastReplicationStatus` - 복제 상태(더 이상 사용되지 않음).
 
 **정의**
@@ -819,7 +819,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **설명**
 
-사용자가 수정할 수 있는 하위 노드를 `cq:userContent` 추가합니다. 각 사용자는 일반적으로 혼합이 있는 자체 하위 `cq:userContent/<userid>` 노드를 갖게 됩니다 `cq:UserTaggable`.
+사용자가 수정할 수 있는 `cq:userContent` 하위 노드를 추가합니다. 각 사용자는 일반적으로 mixin `cq:UserTaggable`이(가) 있는 자체 `cq:userContent/<userid>` 하위 노드를 갖게 됩니다.
 
 **정의**
 
@@ -907,7 +907,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 * `[cq:Dialog] > cq:Widget orderable`
 
-### cq:패널 {#cq-panel}
+### cq:Panel {#cq-panel}
 
 **설명**
 
@@ -925,7 +925,7 @@ AEM 5.4의 경우 목록 끝에 추가합니다.
 
 **정의**
 
-* &#39;[cq:TabPanel] > cq:Panel possible&quot;
+* &#39;[cq:TabPanel] > cq:Panel 주문할 수 있습니다.&quot;
    * `- activeTab (long)`
 
 ### cq:필드 {#cq-field}
