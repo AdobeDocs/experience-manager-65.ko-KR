@@ -4,10 +4,10 @@ description: '릴리스 노트: [!DNL Adobe Experience Manager] 6.5 서비스 �
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c92efd64662e831c8771a8f35701f4e9ed788645
+source-git-commit: 69dbfeab855f70167eead24f3d411df4c82a0050
 workflow-type: tm+mt
-source-wordcount: '4201'
-ht-degree: 19%
+source-wordcount: '4243'
+ht-degree: 20%
 
 ---
 
@@ -309,6 +309,10 @@ ht-degree: 19%
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] 은 예약된  [!DNL Experience Manager] 서비스 팩 릴리스 날짜 이후 1주일 후에 추가 기능 패키지를 출시합니다.
+
+>[!NOTE]
+>
+>[!DNL Experience Manager] 서비스 팩에는 [!DNL Forms] 수정 사항이 포함되어 있지 않습니다. 이러한 수정 사항은 별도의 [!DNL Forms] 추가 기능 패키지를 사용하여 전달됩니다. 또한, JEE의 [!DNL Experience Manager Forms]에 대한 수정 사항이 포함된 누적 설치 프로그램이 릴리스됩니다. 자세한 내용은 [AEM Forms 추가 기능 설치](#install-aem-forms-add-on-package) 및 [AEM Forms JEE 설치](#install-aem-forms-jee-installer)를 참조하십시오.
 
 **적응형 양식**
 
