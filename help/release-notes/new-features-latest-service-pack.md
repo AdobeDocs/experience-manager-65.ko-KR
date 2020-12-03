@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.5 서비스 팩 7의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
+source-git-commit: 55ef8af25887a59d9d13275645c1ec20f0c49380
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 59%
+source-wordcount: '2807'
+ht-degree: 56%
 
 ---
 
@@ -40,7 +40,23 @@ ht-degree: 59%
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] 추가 패키지는 예약된  [!DNL Experience Manager] 서비스 팩 릴리스 후 일주일 후에 사용할 수 있습니다. [!DNL Experience Manager] 6.5 서비스 팩 7(6.5.7.0)은 2020년 11월 26일에 릴리스될 예정입니다.
+>[!DNL Experience Manager Forms] 추가 패키지는 예약된  [!DNL Experience Manager] 서비스 팩 릴리스 후 일주일 후에 사용할 수 있습니다.
+
+### 성능 개선 {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 서비스 팩 7 Forms은 다음과 같은 성능을 향상시켜 줍니다.
+
+* 적응형 양식을 제출할 때 서버의 필드 값 유효성을 확인합니다.
+
+* [!DNL Automated Forms Conversion service]을(를) 사용하여 PDF 양식을 적응형 양식으로 변환
+
+### 성능 최적화를 위한 양식 데이터 모델 HTTP 클라이언트 구성 {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] 이제 데이터 소스로 RESTful 웹 서비스와 통합할 때 양식 데이터 모델에 성능 최적화를 위한 HTTP 클라이언트 구성이 포함됩니다.
+
+### 레이아웃 모드 {#reset-option-layout-mode}의 각 구성 요소에 대한 재설정 옵션 가용성
+
+이제 응용 양식의 레이아웃 모드에서 각 구성 요소에 대해 재설정 옵션을 사용할 수 있습니다. 패널의 여러 열 레이아웃을 정의할 때 이 기능을 사용하여 패널 내의 개별 구성 요소를 재설정할 수 있습니다.
 
 ## 이전 [!DNL Experience Manager] 6.5 서비스 팩 {#key-features-previous-service-packs}의 주요 기능
 
