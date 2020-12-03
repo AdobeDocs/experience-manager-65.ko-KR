@@ -1,8 +1,8 @@
 ---
 title: 보고서 개발
 seo-title: 보고서 개발
-description: AEM에서는 보고 프레임워크를 기반으로 표준 보고서를 선택할 수 있습니다.
-seo-description: AEM에서는 보고 프레임워크를 기반으로 표준 보고서를 선택할 수 있습니다.
+description: AEM은 보고 프레임워크를 기반으로 표준 보고서를 선택합니다.
+seo-description: AEM은 보고 프레임워크를 기반으로 표준 보고서를 선택합니다.
 uuid: 1b406d15-bd77-4531-84c0-377dbff5cab2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
 source-git-commit: ea6da2b75cce4052211fb8f0793f1f380eb85a20
+workflow-type: tm+mt
+source-wordcount: '5252'
+ht-degree: 0%
 
 ---
 
 
 # 보고서 개발{#developing-reports}
 
-AEM에서는 대부분의 [표준 보고서를](/help/sites-administering/reporting.md) 보고 프레임워크를 기반으로 합니다.
+AEM에서는 보고 프레임워크를 기반으로 하는 [표준 보고서](/help/sites-administering/reporting.md)를 선택합니다.
 
-프레임워크를 사용하여 이러한 표준 보고서를 확장하거나 완전히 새로운 보고서를 개발할 수 있습니다. 보고 프레임워크는 기존 CQ5 개념 및 원칙과 긴밀하게 통합되어 있으므로 개발자는 기존의 CQ5 지식을 보고서 개발을 위한 발판으로 사용할 수 있습니다.
+프레임워크를 사용하여 이러한 표준 보고서를 확장하거나 완전히 새로운 보고서를 개발할 수 있습니다. 보고 프레임워크는 기존 CQ5 개념 및 원칙과 긴밀하게 통합되어 있으므로 개발자는 CQ5에 대한 기존 지식을 보고서 개발을 위한 발판으로 사용할 수 있습니다.
 
-AEM과 함께 제공된 표준 보고서의 경우:
+AEM과 함께 제공되는 표준 보고서의 경우:
 
-* 이러한 보고서는 보고 프레임워크를 기반으로 구축됩니다.
+* 이러한 보고서는 보고 프레임워크를 기반으로 합니다.
 
    * [구성 요소 보고서](/help/sites-administering/reporting.md#component-report)
    * [페이지 활동 보고서](/help/sites-administering/reporting.md#page-activity-report)
@@ -38,42 +41,43 @@ AEM과 함께 제공된 표준 보고서의 경우:
 
 >[!NOTE]
 >
->자습서 [Creating Your Own Report - An Example](#creating-your-own-report-an-example) 또한 아래 원칙 중 몇 개를 사용할 수 있는지 보여줍니다.
+>자습서 [Creating Your Own Report - An Example](#creating-your-own-report-an-example)에서는 아래 원칙 중 몇 개를 사용할 수 있는지 보여줍니다.
 >
->표준 보고서를 참조하여 다른 구현 예를 볼 수도 있습니다.
+>표준 보고서를 참조하여 다른 구현 예제를 볼 수도 있습니다.
 
 >[!NOTE]
 >
 >다음 표기법 아래의 예와 정의에서 사용됩니다.
 >
->* 각 줄은 다음과 같은 노드 또는 속성을 정의합니다.
+>* 각 라인은 다음과 같은 노드 또는 속성을 정의합니다.
    >
    >  
 * `N:<name> [<nodeType>]`
    >
    >     
-   의 이름과 노드 `<*name*>` 유형이 있는 노드에 대해 `<*nodeType*>`*설명합니다.*
+   `<*name*>`의 이름과 `<*nodeType*>`*의 노드 유형이 있는 노드에 대해 설명합니다.*
    >
    >  
 * `P:<name> [<propertyType]`
    >
    >     
-   의 이름과 속성 유형을 `<*name*>` 사용하여 속성을 `<*propertyType*>`설명합니다.
+   `<*name*>`의 이름과 `<*propertyType*>`의 속성 유형을 가진 속성을 설명합니다.
    >
    >  
 * `P:<name> = <value>`
    >
    >     
-   의 값으로 설정해야 `<name>` 하는 속성을 `<value>`설명합니다.
+   `<value>`의 값으로 설정해야 하는 속성 `<name>`에 대해 설명합니다.
    >
    >
 * 들여쓰기는 노드 간의 계층 종속성을 보여줍니다.
->* 항목 구분| 가능한 항목 목록을 나타냅니다.예를 들어 유형 또는 이름은 다음과 같습니다.
+>* 항목 구분 | 가능한 항목의 목록을 나타냅니다.예를 들어, 유형 또는 이름은 다음과 같습니다.
+
 >
 >  
-예를 들어 `String|String[]` 속성은 String 또는 String일 수 있음을 의미합니다[].
+예:`String|String[]`은 속성이 String 또는 String[]일 수 있음을 의미합니다.
 >
->* `[]` 배열을 나타냅니다.쿼리 정의에서와 마찬가지로[] 문자열 또는 노드 [배열과 같이](#query-definition).
+>* `[]` 배열을 나타냅니다.예: [] 쿼리 정의에서와 같이  [문자열 또는 노드 배열](#query-definition).
 >
 >
 별도로 명시되어 있지 않는 한 기본 유형은 다음과 같습니다.
@@ -82,16 +86,16 @@ AEM과 함께 제공된 표준 보고서의 경우:
 >* 속성 - `String`
 
 
-## Reporting Framework {#reporting-framework}
+## 보고 프레임워크 {#reporting-framework}
 
-보고 프레임워크는 다음 원칙을 기반으로 합니다.
+보고 프레임워크는 다음 원칙에 따라 작동합니다.
 
-* CQ5 QueryBuilder에서 실행하는 쿼리에서 반환되는 결과 집합을 기반으로 합니다.
+* CQ5 QueryBuilder에서 실행하는 쿼리에서 반환된 결과 집합을 기반으로 합니다.
 * 결과 세트는 보고서에 표시되는 데이터를 정의합니다. 결과 세트의 각 행은 보고서의 표 형식 보기에 있는 행에 해당합니다.
-* 결과 세트에서 실행할 수 있는 작업은 RDBMS 개념과 유사합니다.주로 *그룹화* 및 *집계를*&#x200B;수행합니다.
+* 결과 세트에서 실행할 수 있는 작업은 RDBMS 개념과 비슷합니다.주로 *grouping* 및 *aggregation*&#x200B;입니다.
 
 * 대부분의 데이터 검색 및 처리는 서버측에서 수행됩니다.
-* 클라이언트는 사전 처리된 데이터를 표시하는 전적인 책임을 집니다. 작은 처리 작업(예: 셀 컨텐츠에 링크 만들기)만 클라이언트측에서 실행됩니다.
+* 클라이언트는 사전 처리된 데이터를 표시하는 전적인 책임을 집니다. 간단한 처리 작업(예: 셀 컨텐츠에서 링크 만들기)만 클라이언트측에서 실행됩니다.
 
 보고 프레임워크(표준 보고서의 구조로 표시됨)에서는 처리 큐에서 제공하는 다음 기본 구성 요소를 사용합니다.
 
@@ -102,13 +106,13 @@ AEM과 함께 제공된 표준 보고서의 경우:
 보고서 페이지:
 
 * 표준 CQ5 페이지입니다.
-* 보고서에 [대해 구성된](#report-template)표준 CQ5 템플릿을 기반으로 합니다.
+* 보고서](#report-template)에 대해 구성된 [표준 CQ5 템플릿을 기반으로 합니다.
 
-### 보고서 기준 {#report-base}
+### 보고서 베이스 {#report-base}
 
-구성 요소는 [ `reportbase`](#report-base-component) 다음과 같이 모든 보고서의 기초를 형성합니다.
+[ `reportbase` 구성 요소](#report-base-component)는 다음과 같은 보고서의 기초가 됩니다.
 
-* 데이터의 기본 결과 집합을 전달하는 [쿼리의](#the-query-and-data-retrieval) 정의를 보유합니다.
+* 데이터의 기본 결과 집합을 전달하는 [쿼리](#the-query-and-data-retrieval)의 정의를 보유합니다.
 
 * 보고서에 추가된 모든 열( `columnbase`)을 포함하는 수정된 단락 시스템입니다.
 * 사용 가능한 차트 유형과 현재 활성 차트 유형을 정의합니다.
@@ -116,19 +120,19 @@ AEM과 함께 제공된 표준 보고서의 경우:
 
 ### 열 기준 {#column-base}
 
-각 열은 다음과 같은 구성 요소의 [ `columnbase`](#column-base-component) 인스턴스입니다.
+각 열은 다음과 같은 [ `columnbase` 구성 요소](#column-base-component)의 인스턴스입니다.
 
-* 각 보고서의 parsys ( `reportbase`)에서 사용되는 단락입니다.
-* 기본 [결과 집합에](#the-query-and-data-retrieval)대한 링크를 정의합니다.즉, 이 결과 집합 내에서 참조된 특정 데이터와 처리 방법을 정의합니다.
-* 추가 정의 보유;사용할 수 있는 집계 및 필터와 같은 모든 기본값을 사용합니다.
+* 해당 보고서의 parsys( `reportbase`)에서 사용되는 단락입니다.
+* [기본 결과 집합](#the-query-and-data-retrieval);에 대한 링크를 정의합니다.즉, 이 결과 집합 내에서 참조되는 특정 데이터와 처리 방법을 정의합니다.
+* 추가 정의 보유사용할 수 있는 집계 및 필터와 같이 모든 기본값을 사용합니다.
 
 ### 쿼리 및 데이터 검색 {#the-query-and-data-retrieval}
 
 쿼리:
 
-* 구성 요소의 일부로 정의됩니다 [ `reportbase`](#report-base) .
-* CQ QueryBuilder [를 기반으로 합니다](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
-* 보고서의 기초로 사용되는 데이터를 검색합니다. 결과 집합(테이블)의 각 행은 쿼리에서 반환되는 대로 노드에 연결됩니다. 그런 다음 [개별 열에](#column-base-component) 대한 특정 정보가 이 데이터 세트에서 추출됩니다.
+* [ `reportbase`](#report-base) 구성 요소의 일부로 정의됩니다.
+* 은 [CQ QueryBuilder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)를 기반으로 합니다.
+* 보고서의 기초로 사용되는 데이터를 검색합니다. 결과 집합(테이블)의 각 행은 쿼리에 의해 반환되는 노드에 연결됩니다. 그런 다음 이 데이터 세트에서 [개별 열](#column-base-component)에 대한 특정 정보가 추출됩니다.
 
 * 일반적으로 다음 항목으로 구성됩니다.
 
@@ -136,92 +140,92 @@ AEM과 함께 제공된 표준 보고서의 경우:
 
       검색할 저장소의 하위 트리를 지정합니다.
 
-      성능 영향을 최소화하려면 쿼리를 저장소의 특정 하위 트리로 제한하는 것이 좋습니다(시도). 루트 경로는 [보고서 템플릿에](#report-template) 사전 정의되거나 구성(편집) 대화 상자에서 [](#configuration-dialog)사용자가 설정할 수 있습니다.
+      성능 영향을 최소화하려면 쿼리를 저장소의 특정 하위 트리로 제한하는 것이 좋습니다(시도). 루트 경로는 [보고서 템플릿](#report-template)에서 사전 정의되거나 [구성(편집) 대화 상자](#configuration-dialog)에서 사용자가 설정할 수 있습니다.
 
-   * [하나 이상의 기준을](#query-definition)참조하십시오.
+   * [하나 이상의 기준](#query-definition).
 
-      이러한 항목은 (초기) 결과 집합을 만들기 위해 적용됩니다.여기에는 노드 유형에 대한 제한이나 속성 제약 조건이 포함됩니다.
+      이러한 항목은 (초기) 결과 집합을 만들기 위해 적용됩니다.여기에는 노드 유형에 대한 제한이나 속성 제한이 포함됩니다.
 
 **여기에서 중요한 점은 쿼리의 결과 세트에서 반환되는 각 단일 노드가 보고서에서 단일 행을 생성하는 데 사용된다는 것입니다(따라서 1:1 관계).**
 
-개발자는 보고서에 대해 정의된 쿼리가 해당 보고서에 적합한 노드 집합을 반환하도록 해야 합니다. 그러나 노드 자체에서 필요한 정보를 모두 보유할 필요는 없습니다. 부모 및/또는 하위 노드에서도 파생될 수 있습니다. 예를 들어 사용자 보고서에 사용된 쿼리는 [노드](/help/sites-administering/reporting.md#user-report) 유형(이 경우 `rep:user`)을 기준으로 노드를 선택합니다. 그러나 이 보고서의 대부분의 열은 이러한 노드에서 직접 데이터를 가져오지 않고 하위 노드에서 데이터를 가져옵니다 `profile`.
+개발자는 보고서에 대해 정의된 쿼리가 해당 보고서에 적합한 노드 집합을 반환하도록 해야 합니다. 하지만 노드 자체에서 필요한 정보를 모두 보유할 필요는 없으며 부모 및/또는 하위 노드에서도 파생될 수 있습니다. 예를 들어 [사용자 보고서](/help/sites-administering/reporting.md#user-report)에 사용되는 쿼리는 노드 유형을 기준으로 노드를 선택합니다(이 경우 `rep:user`). 그러나 이 보고서의 대부분의 열은 이러한 노드에서 직접 데이터를 가져가지 않고 하위 노드 `profile`에서 데이터를 가져옵니다.
 
 ### 처리 큐 {#processing-queue}
 
-이 [쿼리는](#the-query-and-data-retrieval) 보고서에서 행으로 표시될 데이터 집합을 반환합니다. 결과 집합의 각 행은 [몇 가지 단계로](#phases-of-the-processing-queue)처리되고, 보고서에 표시하기 위해 클라이언트로 전송됩니다(서버측).
+[쿼리](#the-query-and-data-retrieval)는 보고서의 행으로 표시할 데이터 결과 집합을 반환합니다. 결과 세트의 각 행은 보고서에 표시하기 위해 클라이언트로 전송되기 전에([여러 단계](#phases-of-the-processing-queue)에) 처리됩니다.
 
 이를 통해 다음을 수행할 수 있습니다.
 
-* 기본 결과 집합에서 값을 추출하고 추출합니다.
+* 기본 결과 세트에서 값 추출 및 파생됩니다.
 
-   예를 들어 두 속성 값 간의 차이를 계산하여 두 속성 값을 단일 값으로 처리할 수 있습니다.
+   예를 들어 두 속성 간의 차이를 계산하여 두 속성 값을 단일 값으로 처리할 수 있습니다.
 
-* 추출된 값 해결;다양한 방법으로 수행할 수 있습니다.
+* 추출된 값 해결이것은 다양한 방법으로 이루어질 수 있다.
 
    예를 들어, 경로를 제목에 매핑할 수 있습니다(각 *jcr:title* 속성의 보다 사람이 읽을 수 있는 내용).
 
 * 다양한 지점에서 필터 적용
 * 필요한 경우 복합 값 만들기
 
-   예를 들어, 사용자에게 표시되는 텍스트로 구성된 경우 정렬에 사용할 값과 링크를 만드는 데 사용되는 추가 URL(클라이언트측)이 있습니다.
+   예를 들어, 사용자에게 표시되는 텍스트로 구성된 경우, 정렬에 사용할 값과 링크를 만드는 데 사용되는 추가 URL(클라이언트 쪽)이 여기에 해당합니다.
 
-#### 처리 큐 워크플로우 {#workflow-of-the-processing-queue}
+#### 처리 큐 {#workflow-of-the-processing-queue} 워크플로
 
 다음 워크플로우는 처리 큐를 나타냅니다.
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
-#### 처리 큐의 단계 {#phases-of-the-processing-queue}
+#### 처리 큐 단계 {#phases-of-the-processing-queue}
 
 자세한 단계 및 요소는 다음과 같습니다.
 
-1. 값 추출기를 사용하여 [초기 쿼리(reportbase)](#query-definition) 에서 반환된 결과를 기본 결과 세트로 변환합니다.
+1. [초기 쿼리(reportbase)](#query-definition)에서 반환된 결과를 값 추출기를 사용하여 기본 결과 세트로 변환합니다.
 
-   값 추출기는 [열 유형에](#column-specific-definitions)따라 자동으로 선택됩니다. 기본 JCR 쿼리에서 값을 읽고 이 JCR에서 결과 집합을 만드는 데 사용됩니다.이후 추가 처리가 적용될 수 있습니다. 예를 들어, `diff` 유형의 경우 값 extractor는 두 개의 속성을 읽고 결과 세트에 추가되는 단일 값을 계산합니다. 값 추출기를 구성할 수 없습니다.
+   값 추출기는 [열 유형](#column-specific-definitions)에 따라 자동으로 선택됩니다. 기본 JCR 쿼리에서 값을 읽고 이러한 JCR 쿼리에서 결과 집합을 만드는 데 사용됩니다.이후 처리를 적용할 수 있습니다. 예를 들어 `diff` 유형의 경우 값 extractor는 두 개의 속성을 읽고 결과 세트에 추가되는 단일 값을 계산합니다. 값 추출기를 구성할 수 없습니다.
 
-1. 원시 데이터를 포함하는 초기 결과 세트에 대해 [초기 필터링](#column-specific-definitions) (*원시* 단계)이 적용됩니다.
+1. 원시 데이터를 포함하는 해당 초기 결과 세트에 대해 [초기 필터링](#column-specific-definitions)(*raw* 단계)이 적용됩니다.
 
-1. 값은 [미리 처리됩니다](#processing-queue).를 *적용* 단계에 대해 정의된 대로
+1. 값은 [사전 처리된](#processing-queue);입니다.as defined for the *apply* phase.
 
-1. [필터링](#column-specific-definitions) ( *사전 처리* 단계에 지정)은 사전 처리된 값에 대해 실행됩니다.
+1. [필터링](#column-specific-definitions) (사전 처리 단계에  ** 지정됨)이 사전 처리된 값에 대해 실행됩니다.
 
-1. 값이 해결되었습니다.에 [정의된 해결 프로그램에](#processing-queue)따라
-1. [해결된](#column-specific-definitions) 값에 대해 필터링( *해결된* 단계에 지정됨)이 실행됩니다.
+1. 값이 해결되었습니다.[정의된 해결 프로그램](#processing-queue)에 따라).
+1. [해결된 값에 대해 필터링](#column-specific-definitions) (해결 단계에  ** 지정됨)이 실행됩니다.
 
-1. 데이터는 [그룹화되고 집계됩니다](#column-specific-definitions).
+1. 데이터는 [그룹화되고 집계된](#column-specific-definitions)입니다.
 1. 배열 데이터는 (문자열 기반) 목록으로 변환하여 결정됩니다.
 
    다중 값 결과를 표시할 수 있는 목록으로 변환하는 암시적 단계입니다.다중 값 JCR 속성을 기반으로 하는 (집계되지 않은) 셀 값에 필요합니다.
 
-1. 값이 다시 [미리 처리되었습니다](#processing-queue).as defined for the *afterApply* phase.
+1. 값이 다시 [사전 처리된](#processing-queue);as defined for the *afterApply* phase.
 
 1. 데이터가 정렬됩니다.
 1. 처리된 데이터가 클라이언트로 전송됩니다.
 
 >[!NOTE]
 >
->기본 데이터 결과 집합을 반환하는 초기 쿼리는 `reportbase` 구성 요소에 정의됩니다.
+>기준 데이터 결과 집합을 반환하는 초기 쿼리는 `reportbase` 구성 요소에 정의됩니다.
 >
 >처리 큐의 다른 요소는 `columnbase` 구성 요소에 정의됩니다.
 
 ## 보고서 구성 및 구성 {#report-construction-and-configuration}
 
-보고서를 구성하고 구성하는 데 필요한 사항은 다음과 같습니다.
+보고서를 만들고 구성하는 데 필요한 사항은 다음과 같습니다.
 
 * 보고서 구성 요소의 정의를 위한 [위치](#location-of-report-components)
-* 구성 [ `reportbase` 요소](#report-base-component)
-* 하나 이상의 [ 구성 `columnbase` 요소](#column-base-component)
+* [ `reportbase` 구성 요소](#report-base-component)
+* 하나 이상의 [ `columnbase` 구성 요소](#column-base-component)
 * [페이지 구성 요소](#page-component)
-* 보고서 [디자인](#report-design)
-* 보고서 [템플릿](#report-template)
+* [보고서 디자인](#report-design)
+* [보고서 템플릿](#report-template)
 
 ### 보고서 구성 요소 위치 {#location-of-report-components}
 
-기본 보고 구성 요소는 아래에 `/libs/cq/reporting/components`있습니다.
+기본 보고 구성 요소는 `/libs/cq/reporting/components` 아래에 있습니다.
 
-그러나 이러한 노드를 업데이트하지 말고 `/apps/cq/reporting/components` 또는 적절한 경우 자체 구성 요소 노드를 만드는 것이 좋습니다 `/apps/<yourProject>/reports/components`.
+그러나 이러한 노드를 업데이트하지 말고 `/apps/cq/reporting/components` 또는 보다 적절한 `/apps/<yourProject>/reports/components` 아래에 자체 구성 요소 노드를 만드는 것이 좋습니다.
 
-위치(예):
+여기서(예):
 
 ```
 N:apps
@@ -230,7 +234,7 @@ N:apps
             N:components [sling:Folder]
 ```
 
-이 아래에서 보고서의 루트를 만들고 이 아래에서 보고서 기본 구성 요소와 열 기본 구성 요소를 만듭니다.
+여기에서는 보고서의 루트를 만들고 여기에서는 보고서 기본 구성 요소와 열 기본 구성 요소를 만듭니다.
 
 ```
 N:apps
@@ -244,19 +248,19 @@ N:apps
 
 ### 페이지 구성 요소 {#page-component}
 
-보고서 페이지는 `sling:resourceType` 의 속성을 사용해야 합니다 `/libs/cq/reporting/components/reportpage`.
+보고서 페이지는 `/libs/cq/reporting/components/reportpage`의 `sling:resourceType`을 사용해야 합니다.
 
 사용자 지정된 페이지 구성 요소는 필요하지 않습니다(대부분의 경우).
 
 ## 보고서 기본 구성 요소 {#report-base-component}
 
-각 보고서 유형에는 파생된 컨테이너 구성 요소가 있어야 `/libs/cq/reporting/components/reportbase`합니다.
+각 보고서 유형에는 `/libs/cq/reporting/components/reportbase`에서 파생된 컨테이너 구성 요소가 필요합니다.
 
 이 구성 요소는 보고서의 컨테이너 역할을 하며 다음에 대한 정보를 제공합니다.
 
-* 쿼리 [정의입니다](#query-definition).
-* 보고서 구성을 위한 [(선택 사항) 대화](#configuration-dialog) 상자
-* 보고서에 [통합된](#chart-definitions) 모든 차트.
+* [쿼리 정의](#query-definition)입니다.
+* 보고서 구성을 위한 [(선택 사항) 대화 상자](#configuration-dialog)입니다.
+* 보고서에 통합된 [Charts](#chart-definitions)입니다.
 
 ```
 N:<reportname> [cq:Component]
@@ -283,7 +287,7 @@ N:queryBuilder
 
 * `propertyConstraints`
 
-   특정 값이 있는 특정 속성을 갖는 노드로 결과 집합을 제한하는 데 사용할 수 있습니다. 여러 제약 조건이 지정된 경우 노드는 모든 제약 조건(AND 작업)을 충족해야 합니다.
+   특정 값이 있는 특정 속성을 갖는 노드로 결과 집합을 제한하는 데 사용할 수 있습니다. 여러 제약 조건이 지정된 경우 노드가 모든 제약 조건(AND 작업)을 충족해야 합니다.
 
    예:
 
@@ -299,7 +303,7 @@ N:queryBuilder
     ]
    ```
 
-   사용자가 마지막으로 수정한 모든 `textimage` 구성 요소를 `admin` 반환합니다.
+   `admin` 사용자가 마지막으로 수정한 모든 `textimage` 구성 요소를 반환합니다.
 
 * `nodeTypes`
 
@@ -307,7 +311,7 @@ N:queryBuilder
 
 * `mandatoryProperties`
 
-   결과 집합을 지정된 *모든* 속성이 있는 노드로 제한하는 데 사용할 수 있습니다. 속성 값은 고려되지 않습니다.
+   결과 집합을 지정된 속성의 *모두*&#x200B;가 있는 노드로 제한하는 데 사용할 수 있습니다. 속성 값은 고려되지 않습니다.
 
 모두 선택 사항이며 필요에 따라 결합할 수 있지만 둘 중 적어도 하나를 정의해야 합니다.
 
@@ -336,61 +340,61 @@ N:charting
 
    * `active`
 
-      여러 설정을 정의할 수 있으므로 이 설정을 사용하여 현재 활성화된 설정을 정의할 수 있습니다. 노드 배열로 정의됩니다(이러한 노드에 대한 필수 이름 지정 규칙은 없지만, 표준 보고서에서는 종종 `0`, `1`.. `x`), each has the following property:
+      여러 설정을 정의할 수 있으므로 이 설정을 사용하여 현재 활성 상태인 설정을 정의할 수 있습니다. 노드 배열로 정의됩니다(이러한 노드에 대한 필수 명명 규칙은 없지만, 표준 보고서에서는 종종 `0`, `1`을 사용합니다. `x`), each have the following property:
 
       * `id`
 
-         활성 차트에 대한 ID. 차트 중 하나의 ID와 일치해야 합니다 `definitions`.
+         활성 차트에 대한 ID. 이 값은 차트 `definitions` 중 하나의 ID와 일치해야 합니다.
 
 * `definitions`
 
-   보고서에 사용할 수 있는 차트 유형을 정의합니다. 사용할 `definitions` 항목은 `active` 설정으로 지정됩니다.
+   보고서에 사용할 수 있는 차트 유형을 정의합니다. 사용할 `definitions`은 `active` 설정으로 지정됩니다.
 
-   이 정의는 노드 배열을 사용하여 지정됩니다(종종 이름이 `0`, `1`.. `x`), 각 속성
+   노드 배열을 사용하여 정의를 지정합니다(종종 이름이 `0`, `1`).. `x`), each have the following properties:
 
    * `id`
 
-      차트 ID.
+      차트 식별
 
    * `type`
 
-      사용할 수 있는 차트 유형입니다. 다음 중에서 선택:
+      사용할 수 있는 차트 유형입니다. 다음 중에서 선택합니다.
 
       * `pie`
-파이 차트. 현재 데이터에서만 생성됩니다.
+파이 차트입니다. 현재 데이터에서만 생성됩니다.
 
       * `lineseries`
-일련의 선(실제 스냅샷을 나타내는 연결 점). 내역 데이터에서만 생성됩니다.
+일련의 선(실제 스냅샷을 나타내는 연결 점). 이전 데이터에서만 생성됩니다.
    * 차트 유형에 따라 추가 속성을 사용할 수 있습니다.
 
-      * 차트 유형의 경우 `pie`:
+      * 차트 유형 `pie`의 경우:
 
          * `maxRadius` ( `Double/Long`)
 
-            파이 차트에 허용되는 최대 반경;따라서 범례 없이 차트에 허용되는 최대 크기입니다. 정의된 경우 `fixedRadius` 무시됩니다.
+            파이 차트에 허용되는 최대 반경;따라서 차트에 허용되는 최대 크기(범례 없음)입니다. `fixedRadius`이(가) 정의된 경우 무시됩니다.
 
          * `minRadius` ( `Double/Long`)
 
-            파이 차트에 허용되는 최소 반경입니다. 정의된 경우 `fixedRadius` 무시됩니다.
+            파이 차트에 허용되는 최소 반지입니다. `fixedRadius`이(가) 정의된 경우 무시됩니다.
 
-         * `fixedRadius` ( `Double/Long`)파이 차트의 고정 반경을 정의합니다.
-      * 차트 유형의 경우 [`lineseries`](/help/sites-administering/reporting.md#display-limits):
+         * `fixedRadius` ( `Double/Long`) 파이 차트의 고정 반경을 정의합니다.
+      * 차트 유형 [`lineseries`](/help/sites-administering/reporting.md#display-limits)의 경우:
 
          * `totals` ( `Boolean`)
 
-            합계가 표시된 추가 라인이 **표시되어야** 하는 경우 true
+            **Total**을 표시하는 추가 라인이 표시되어야 하는 경우 true입니다.
 기본값: `false`
 
          * `series` ( `Long`)
 
             표시할 라인/시리즈 수입니다.
-default: `9` (최대 허용)
+default:`9`(허용되는 최대)
 
          * `hoverLimit` ( `Long`)
 
-            사용자가 차트 범례에서 특정 값 또는 해당 레이블을 마우스로 가리키면 팝업을 표시할 수 있는 각 가로 행에 표시된 점의 누적 스냅샷 수(예:
+            사용자가 차트 범례에서 고유한 값 또는 해당 레이블을 마우스로 가리킬 때 팝업을 표시할 팝업을 나타내는 각 가로 행에 표시되는 집계된 최대 스냅샷 수입니다.
 
-            default:( `35` 즉, 35개 이상의 고유한 값이 현재 차트 설정에 적용되는 경우 팝업이 전혀 표시되지 않습니다.)
+            default:`35`(즉, 현재 차트 설정에 35개 이상의 고유한 값이 적용되는 경우 팝업이 표시되지 않습니다.)
 
             동시에 표시할 수 있는 팝업은 10개로 제한됩니다(범례 텍스트 위에 마우스를 올려 놓으면 여러 팝업이 표시될 수 있음).
 
@@ -398,9 +402,9 @@ default: `9` (최대 허용)
 
 ### 구성 대화 상자 {#configuration-dialog}
 
-모든 보고서에는 구성 대화 상자가 있어 사용자가 보고서에 대한 다양한 매개 변수를 지정할 수 있습니다. 이 대화 상자는 보고서 페이지가 **열려** 있을 때 편집 단추를 통해 액세스할 수 있습니다.
+모든 보고서에는 사용자가 보고서에 대한 다양한 매개 변수를 지정할 수 있는 구성 대화 상자가 있을 수 있습니다. 이 대화 상자는 보고서 페이지가 열릴 때 **편집** 단추를 통해 액세스할 수 있습니다.
 
-이 대화 상자는 표준 CQ [대화 상자이며](/help/sites-developing/components-basics.md#dialogs) 이와 같이 구성할 수 있습니다( [자세한 내용은 CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) 참조).
+이 대화 상자는 표준 CQ [dialog](/help/sites-developing/components-basics.md#dialogs)이며, 이와 같이 구성할 수 있습니다(자세한 내용은 [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) 참조).
 
 예제 대화 상자의 모양은 다음과 같습니다.
 
@@ -441,7 +445,7 @@ default: `9` (최대 허용)
 </jcr:root>
 ```
 
-미리 구성된 여러 구성 요소가 제공됩니다.이러한 속성은 다음 값을 갖는 `xtype` 속성을 사용하여 대화 상자에서 참조할 수 있습니다. `cqinclude`
+미리 구성된 여러 구성 요소가 제공됩니다.이 값은 `cqinclude` 값이 있는 `xtype` 속성을 사용하여 대화 상자에서 참조할 수 있습니다.
 
 * **`title`**
 
@@ -453,7 +457,7 @@ default: `9` (최대 허용)
 
    `/libs/cq/reporting/components/commons/description`
 
-   보고서 설명을 정의하는 텍스트 영역입니다.
+   텍스트 영역을 사용하여 보고서 설명을 정의합니다.
 
 * **`processing`**
 
@@ -465,11 +469,11 @@ default: `9` (최대 허용)
 
    `/libs/cq/reporting/components/commons/scheduling`
 
-   내역 차트에 대한 스냅샷을 예약하기 위한 선택기입니다.
+   내역 차트에 대한 스냅샷을 예약하는 선택기.
 
 >[!NOTE]
 >
->참조된 구성 요소는 `.infinity.json` 접미사를 사용하여 포함되어야 합니다(위의 예 참조).
+>참조된 구성 요소는 `.infinity.json` 접미사를 사용하여 포함되어야 합니다(위 예 참조).
 
 ### 루트 경로 {#root-path}
 
@@ -477,26 +481,26 @@ default: `9` (최대 허용)
 
 * **`rootPath`**
 
-   이렇게 하면 보고서가 저장소의 특정 섹션(트리 또는 하위 트리)으로 제한되며, 이는 성능 최적화를 위해 권장됩니다. 루트 경로는 각 보고서 페이지의 `rootPath` 노드 `report` 속성에 의해 지정됩니다(페이지 작성 시 템플릿에서 가져옴).
+   이 옵션은 보고서를 저장소의 특정 섹션(트리 또는 하위 트리)으로 제한하며, 이는 성능 최적화를 위해 권장됩니다. 루트 경로는 각 보고서 페이지의 `report` 노드의 `rootPath` 속성에 의해 지정됩니다(페이지 생성 시 템플릿에서).
 
-   다음 방법으로 지정할 수 있습니다.
+   다음을 통해 지정할 수 있습니다.
 
-   * 고정 값 또는 구성 대화 상자의 기본값으로 [보고서 템플릿](#report-template) .
+   * [보고서 템플릿](#report-template)(고정 값 또는 구성 대화 상자의 기본값으로).
    * 사용자(이 매개 변수 사용)
 
 ## 열 기본 구성 요소 {#column-base-component}
 
-각 열 유형에는 파생된 구성 요소가 필요합니다. `/libs/cq/reporting/components/columnbase`
+각 열 유형에는 `/libs/cq/reporting/components/columnbase`에서 파생된 구성 요소가 필요합니다.
 
-열 구성 요소는 다음 조합을 정의합니다.
+열 구성 요소는 다음과 같은 조합을 정의합니다.
 
-* 열 [특정 쿼리](#column-specific-query) 구성
-* 해상도 [및 사전 처리](#resolvers-and-preprocessing).
-* 열 [특정](#column-specific-definitions) 정의(필터 및 합계 등) `definitions` 하위 노드).
+* [열 특정 쿼리](#column-specific-query) 구성
+* [해상도 및 사전 처리](#resolvers-and-preprocessing)입니다.
+* [열 특정 정의](#column-specific-definitions)(필터 및 집계와 같은)`definitions` 하위 노드).
 * [열 기본값](#column-default-values).
-* 클라이언트 [필터를](#client-filter) 사용하여 서버에서 반환된 데이터에서 표시할 정보를 추출합니다.
-* 또한 열 구성 요소는 적절한 인스턴스를 제공해야 합니다 `cq:editConfig`. 를 클릭하여 필요한 [이벤트와 작업을](#events-and-actions) 정의합니다.
-* [일반 열에](#generic-columns)대한 구성
+* [클라이언트 필터](#client-filter)는 서버에서 반환된 데이터에서 표시할 정보를 추출합니다.
+* 또한 열 구성 요소는 `cq:editConfig`의 적절한 인스턴스를 제공해야 합니다. [이벤트 및 작업](#events-and-actions)을 정의해야 합니다.
+* [일반 열](#generic-columns)에 대한 구성.
 
 ```
 N:<columnname> [cq:Component]
@@ -522,11 +526,11 @@ N:<columnname> [cq:Component]
       N:aggregates [cq:WidgetCollection] // Column Specific Definitions
 ```
 
-새 [보고서 정의를 참조하십시오](#defining-your-new-report).
+[새 보고서 정의](#defining-your-new-report)도 참조하십시오.
 
 ### 열 특정 쿼리 {#column-specific-query}
 
-개별 열에 사용할 특정 데이터 추출( [보고서 데이터 결과 집합에서](#the-query-and-data-retrieval))을 정의합니다.
+개별 열에 사용할 특정 데이터 추출([보고서 데이터 결과 세트](#the-query-and-data-retrieval))을 정의합니다.
 
 ```xml
 N:definitions
@@ -541,32 +545,32 @@ N:definitions
 
    실제 셀 값을 계산하는 데 사용할 속성을 정의합니다.
 
-   속성이 String으로 정의된[] 경우 여러 속성을 차례로 스캔하여 실제 값을 찾습니다.
+   속성이 String[]으로 정의된 경우 여러 속성이 스캔되어 실제 값을 찾습니다.
 
-   예를 들어,
+   예를 들어 다음과 같은 경우입니다.
 
    `property = [ "jcr:lastModified", "jcr:created" ]`
 
-   해당 값 추출기(여기에서 제어 중)는 다음과 같이 됩니다.
+   해당 값 추출기(여기에서 제어)는 다음과 같이 됩니다.
 
    * 사용할 수 있는 jcr:lastModified 속성이 있는지 확인하고 있는 경우 사용하십시오.
    * 사용할 수 있는 jcr:lastModified 속성이 없으면 jcr:created의 내용이 대신 사용됩니다.
 
 * `subPath`
 
-   쿼리가 반환하는 노드에 결과가 없으면 `subPath` 속성이 실제로 있는 위치를 정의합니다.
+   쿼리가 반환하는 노드에 결과가 없으면 `subPath`은 속성이 실제로 있는 위치를 정의합니다.
 
 * `secondaryProperty`
 
-   실제 셀 값을 계산하는 데 사용해야 하는 두 번째 속성을 정의합니다.이것은 특정 열 유형(비교 및 정렬 가능)에만 사용됩니다.
+   실제 셀 값을 계산하는 데 사용해야 하는 두 번째 속성을 정의합니다.특정 열 유형(diff 및 정렬 가능)에만 사용됩니다.
 
    예를 들어 워크플로우 인스턴스 보고서의 경우 지정된 속성을 사용하여 시작 시간과 종료 시간 사이의 시간 차이(밀리초)의 실제 값을 저장합니다.
 
 * `secondarySubPath`
 
-   가 사용될 때 subPath와 `secondaryProperty` 유사합니다.
+   `secondaryProperty`이(가) 사용되는 경우 subPath와 유사합니다.
 
-대부분의 경우, `property` 사용할 수 있습니다.
+대부분의 경우 `property`만 사용됩니다.
 
 ### 클라이언트 필터 {#client-filter}
 
@@ -574,7 +578,7 @@ N:definitions
 
 >[!NOTE]
 >
->이 필터는 전체 서버측 처리가 적용된 후 클라이언트측에서 실행됩니다.
+>이 필터는 전체 서버측 처리가 적용된 후 clientside로 실행됩니다.
 
 ```xml
 N:definitions
@@ -584,10 +588,10 @@ N:definitions
 
 `clientFilter` 는 다음과 같은 JavaScript 함수로 정의됩니다.
 
-* 입력 시 하나의 매개 변수를 받습니다.서버에서 반환된 데이터(완전히 미리 처리됨)
-* 출력에서 필터링된(처리된) 값을 반환합니다.입력 정보에서 추출되거나 파생된 데이터
+* 을 입력하면 하나의 매개 변수를 받습니다.서버에서 반환된 데이터(완전히 미리 처리됨)
+* 출력에서 필터링된(처리된) 값을 반환합니다.입력 정보에서 추출 또는 파생된 데이터
 
-다음 예제에서는 구성 요소 경로에서 해당 페이지 경로를 추출합니다.
+다음 예에서는 구성 요소 경로에서 해당 페이지 경로를 추출합니다.
 
 ```
 function(v) {
@@ -601,7 +605,7 @@ function(v) {
 
 ### 해상도 및 사전 처리 {#resolvers-and-preprocessing}
 
-처리 [큐는](#processing-queue) 다양한 해상도를 정의하고 사전 처리를 구성합니다.
+[처리 큐](#processing-queue)는 다양한 해상도를 정의하고 사전 처리를 구성합니다.
 
 ```xml
 N:definitions
@@ -619,79 +623,79 @@ N:definitions
 
    * `const`
 
-      값을 다른 값에 매핑;예를 들어, 등가 값과 같은 상수를 확인하는 데 사용됩니다 `en` `English`.
+      값을 다른 값으로 매핑;예를 들어, 이 값은 `en`과 같은 상수를 해당 값 `English`으로 확인하는 데 사용됩니다.
 
    * `default`
 
-      기본 해결 프로그램. 이 확인기는 실제로 아무 것도 해결하지 않는 더미 확인기입니다.
+      기본 확인자. 이 확인기는 실제로 아무 것도 해결하지 않는 더미 확인기입니다.
 
    * `page`
 
-      해당 페이지의 경로에 대한 경로 값을 확인합니다.보다 정확하게 해당 `jcr:content` 노드에 연결합니다. 예를 들어 `/content/.../page/jcr:content/par/xyz` is resolved to `/content/.../page/jcr:content`.
+      적절한 페이지의 경로에 대한 경로 값을 확인합니다.보다 정확하게 해당 `jcr:content` 노드에 연결합니다. 예를 들어 `/content/.../page/jcr:content/par/xyz`은(는) `/content/.../page/jcr:content`으로 확인됩니다.
 
    * `path`
 
-      필요에 따라 하위 경로를 추가하고 처리된 경로에서 노드의 속성(정의된 대로)에서 실제 값을 가져와 경로 값을 `resolverConfig`확인합니다. 예를 들어, 속성 컨텐츠로 `path` 페이지 경로를 `/content/.../page/jcr:content` `jcr:title` 확인할 수 있으므로 페이지 경로가 페이지 제목으로 확인됩니다.
+      선택적으로 하위 경로를 첨부하고 처리된 경로에서 노드의 속성(예: `resolverConfig`)에서 실제 값을 가져와 경로 값을 확인합니다. 예를 들어 `/content/.../page/jcr:content`의 `path`을 `jcr:title` 속성의 컨텐츠로 해결할 수 있습니다. 이는 페이지 경로가 페이지 제목으로 확인됨을 의미합니다.
 
    * `pathextension`
 
-      경로를 미리 대기시키고 해결된 경로에서 노드의 속성에서 실제 값을 가져와 값을 확인합니다. 예를 들어, 언어 설명에 국가 코드를 확인하기 위해 속성에서 값을 가져오는 등의 경로 앞에 값을 `de` 추가할 `/libs/wcm/core/resources/languages`수 `language``de` `German`있습니다.
+      경로를 미리 보류 중이고 해결된 경로의 노드 속성에서 실제 값을 가져와 값을 확인합니다. 예를 들어, `de` 값은 `/libs/wcm/core/resources/languages` 속성 `language`의 값을 사용하여 언어 코드 `de`을 언어 설명 `German`으로 해결하는 경로 앞에 포함될 수 있습니다.
 
 * `resolverConfig`
 
-   해결 프로그램에 대한 정의를 제공합니다.사용 가능한 옵션은 `resolver` 선택한 항목에 따라 다릅니다.
+   해결 프로그램에 대한 정의를 제공합니다.사용 가능한 옵션은 선택한 `resolver`에 따라 다릅니다.
 
    * `const`
 
       속성을 사용하여 확인할 상수를 지정합니다. 속성 이름은 확인할 상수를 정의합니다.속성의 값은 해결된 값을 정의합니다.
 
-      예를 들어 Name= **및 Value**&#x200B;의 `1` 속성은 **1에서**`=One` One으로확인됩니다.
+      예를 들어 **Name**= `1` 및 **Value** `=One`의 속성은 1을 1로 확인합니다.
 
    * `default`
 
-      사용할 수 있는 구성이 없습니다.
+      사용 가능한 구성이 없습니다.
 
    * `page`
 
       * `propertyName` (옵션)
 
-         값을 확인하는 데 사용할 속성의 이름을 정의합니다. 지정하지 않으면 *jcr:title* (페이지 제목)의 기본값이 사용됩니다.해결 프로그램의 경우, 이 `page` 방법은 먼저 경로가 페이지 경로로 확인된 다음 페이지 제목으로 해결됨을 의미합니다.
+         값을 확인하는 데 사용할 속성의 이름을 정의합니다. 지정하지 않으면 *jcr:title*(페이지 제목)의 기본값이 사용됩니다.`page` 확인자의 경우, 이 용어는 처음 경로가 페이지 경로로 확인되고 페이지 제목으로 더 나아가 확인됨을 의미합니다.
    * `path`
 
       * `propertyName` (옵션)
 
-         값을 확인하는 데 사용할 속성의 이름을 지정합니다. 지정하지 않으면 의 기본값이 `jcr:title` 사용됩니다.
+         값을 확인하는 데 사용할 속성의 이름을 지정합니다. 지정하지 않으면 `jcr:title`의 기본값이 사용됩니다.
 
       * `subPath` (옵션)
 
-         이 속성을 사용하여 값을 확인하기 전에 경로에 추가할 접미사를 지정할 수 있습니다.
+         이 속성을 사용하여 값이 확인되기 전에 경로에 추가할 접미사를 지정할 수 있습니다.
    * `pathextension`
 
       * `path` (mandatory)
 
          프리펜드할 경로를 정의합니다.
 
-      * `propertyName` (mandatory)
+      * `propertyName` (필수)
 
          실제 값이 있는 해결된 경로에서 속성을 정의합니다.
 
-      * `i18n` (선택 사항;type Boolean)
+      * `i18n` (선택 사항;부울 유형)
 
-         해결된 값이 *국제화되어야* 하는지(예: CQ5 [의 국제화 서비스](/help/sites-administering/tc-manage.md)사용)를 결정합니다.
+         해결된 값이 *국제화된*&#x200B;이어야 하는지 여부를 결정합니다(예: [CQ5의 국제화 서비스](/help/sites-administering/tc-manage.md) 사용).
 
 
 
 * `preprocessing`
 
-   사전 처리는 선택 사항이며 처리 단계에 바인딩(별도)하여 *적용* 또는 *적용할*&#x200B;수 있습니다.
+   사전 처리는 선택 사항이며 처리 단계 *apply* 또는 *applyAfter*&#x200B;에 바인딩(별도)할 수 있습니다.
 
    * `apply`
 
-      초기 사전 처리 단계(처리 큐[](#processing-queue)표현에 있는 3단계).
+      초기 사전 처리 단계([단계 3(처리 큐 표현)](#processing-queue)).
 
    * `applyAfter`
 
-      사전 처리 후 적용(처리 큐[](#processing-queue)표시에서 9단계).
+      사전 처리 후 적용([단계 9(처리 큐 표현](#processing-queue)).
 
 #### 해상도 {#resolvers}
 
@@ -699,9 +703,9 @@ N:definitions
 
 **Const**
 
-다음은 문자열의 관련 값을 `VersionCreated` 해결합니다 `New version created`.
+다음은 `VersionCreated`의 관련 값을 문자열 `New version created`로 해결합니다.
 
-See `/libs/cq/reporting/components/auditreport/typecol/definitions/data`.
+`/libs/cq/reporting/components/auditreport/typecol/definitions/data`을(를) 참조하십시오.
 
 ```xml
 N:data
@@ -712,9 +716,9 @@ N:data
 
 **페이지**
 
-해당 페이지의 jcr:content(child) 노드에서 jcr:description 속성에 대한 경로 값을 확인합니다.
+해당 페이지의 jcr:content (child) 노드에서 jcr:description 속성에 대한 경로 값을 확인합니다.
 
-See `/libs/cq/reporting/components/compreport/pagecol/definitions/data`.
+`/libs/cq/reporting/components/compreport/pagecol/definitions/data`을(를) 참조하십시오.
 
 ```xml
 N:data
@@ -725,9 +729,9 @@ N:data
 
 **경로**
 
-다음은 `/content/.../page` 속성 `jcr:title` 컨텐츠의 경로를 해결합니다. 이는 페이지 경로가 페이지 제목으로 확인됨을 의미합니다.
+다음은 `/content/.../page`의 경로를 `jcr:title` 속성의 컨텐츠로 해결합니다. 이는 페이지 경로가 페이지 제목으로 확인됨을 의미합니다.
 
-See `/libs/cq/reporting/components/auditreport/pagecol/definitions/data`.
+`/libs/cq/reporting/components/auditreport/pagecol/definitions/data`을(를) 참조하십시오.
 
 ```xml
 N:data
@@ -739,9 +743,9 @@ N:data
 
 **경로 확장**
 
-다음 예제에서는 경로 확장자를 `de` 가진 값을 `/libs/wcm/core/resources/languages`앞에 추가한 다음 속성 값을 `language`가져와 국가 코드를 언어 `de` 설명에 `German`연결합니다.
+다음은 경로 확장명이 `/libs/wcm/core/resources/languages`인 값 `de`인 다음 속성 `language`의 값을 가져와 국가 코드 `de`을 언어 설명 `German`으로 확인합니다.
 
-See `/libs/cq/reporting/components/userreport/languagecol/definitions/data`.
+`/libs/cq/reporting/components/userreport/languagecol/definitions/data`을(를) 참조하십시오.
 
 ```xml
 N:data
@@ -751,27 +755,28 @@ N:data
         P:propertyName="language"
 ```
 
-#### 사전 처리 {#preprocessing}
+#### {#preprocessing} 사전 처리
 
-정의는 다음 중 하나에 적용할 수 `preprocessing` 있습니다.
+`preprocessing` 정의는 다음 중 하나에 적용할 수 있습니다.
 
 * 원본 값:
 
-   원래 값에 대한 사전 처리 정의는 `apply` 및/또는 `applyAfter` 직접 지정됩니다.
+   원래 값에 대한 사전 처리 정의는 `apply` 및/또는 `applyAfter`에 직접 지정됩니다.
 
 * 집계된 상태의 값:
 
    필요한 경우 각 집계에 대해 별도의 정의를 제공할 수 있습니다.
 
-   집계된 값에 대한 명시적 사전 처리를 지정하려면 사전 처리 정의는 각 `aggregated` 하위 노드( `apply/aggregated`, `applyAfter/aggregated`)에 상주해야 합니다. 개별 집계에 대한 명시적 사전 처리가 필요한 경우 사전 처리 정의는 각 집계의 이름을 가진 하위 노드에 있습니다(예: `apply/aggregated/min/max` 또는 기타 집계).
+   집계된 값에 대한 명시적 사전 처리를 지정하려면 사전 처리 정의는 각 `aggregated` 하위 노드( `apply/aggregated`, `applyAfter/aggregated`)에 상주해야 합니다. 개별 집계에 대한 명시적 사전 처리가 필요한 경우 사전 처리 정의는 각 집적(예: `apply/aggregated/min/max` 또는 기타 집계)의 이름이 있는 하위 노드에 있습니다.
 
 사전 처리 중에 사용할 다음 중 하나를 지정할 수 있습니다.
 
-* [찾기 및 바꾸기 패턴을](#preprocessing-find-and-replace-patterns)찾으면 지정된 패턴(정규 표현식으로 정의됨)이 다른 패턴으로 바뀝니다.예를 들어 원본의 하위 문자열을 추출하는 데 사용할 수 있습니다.
+* [패턴 찾기 및 ](#preprocessing-find-and-replace-patterns)
+바꾸기패턴을 찾으면 지정된 패턴(정규 표현식으로 정의됨)이 다른 패턴으로 바뀝니다.예를 들어 원본 파일의 하위 문자열을 추출하는 데 사용할 수 있습니다.
 
 * [데이터 유형 포맷](#preprocessing-data-type-formatters)
 
-   숫자 값을 상대 문자열로 변환합니다.예를 들어, &quot;1시간의 시간 차이를 나타내는 값&quot;은 `1:24PM (1 hour ago)`같은 문자열로 확인됩니다.
+   숫자 값을 상대 문자열로 변환합니다.예를 들어, &quot;1시간의 시간 차이를 나타내는 값&quot;은 `1:24PM (1 hour ago)`과 같은 문자열로 확인됩니다.
 
 예:
 
@@ -788,7 +793,7 @@ N:definitions
 
 #### 사전 처리 - 패턴 찾기 및 바꾸기 {#preprocessing-find-and-replace-patterns}
 
-사전 처리에서는 `pattern` ( [정규 표현식](https://en.wikipedia.org/wiki/Regular_expression) 또는 regex로 정의됨)을 지정하고 `replace` 패턴으로 대체할 수 있습니다.
+전처리를 위해 `pattern`([정규 표현식](https://en.wikipedia.org/wiki/Regular_expression) 또는 regex로 정의됨)을 지정한 다음 `replace` 패턴으로 대체할 수 있습니다.
 
 * `pattern`
 
@@ -796,27 +801,27 @@ N:definitions
 
 * `replace`
 
-   원래 문자열을 대체하기 위해 사용할 문자열 또는 문자열 표현입니다. 보통 표현식으로 찾은 문자열의 하위 문자열을 나타내는 경우가 `pattern`있습니다.
+   원래 문자열의 대체 항목으로 사용될 문자열 또는 문자열 표현. 정규식 `pattern`에 의해 위치한 문자열의 하위 문자열을 나타내는 경우가 많습니다.
 
-예제 대체는 다음과 같이 분류할 수 있습니다.
+예제 교체:
 
-* 다음 두 속성이 `definitions/data/preprocessing/apply` 있는 노드의 경우:
+* 다음 두 속성이 있는 `definitions/data/preprocessing/apply` 노드의 경우:
 
    * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
-   * `replace`: `$1`
+   * `replace`:  `$1`
 
-* 다음으로 도착하는 문자열:
+* 다음과 같은 문자열 도착:
 
    * `/content/geometrixx/en/services/jcr:content/par/text`
 
 * 4개의 섹션으로 분할됩니다.
 
-   * `$1` - `(.*)` - `/content/geometrixx/en/services`
-   * `$2` - `(/jcr:content)` - `/jcr:content`
-   * `$3` - `(/|$)` - `/`
-   * `$4` - `(.*)` - `par/text`
+   * `$1` -  `(.*)` -  `/content/geometrixx/en/services`
+   * `$2` -  `(/jcr:content)` -  `/jcr:content`
+   * `$3` -  `(/|$)` -  `/`
+   * `$4` -  `(.*)` -  `par/text`
 
-* 다음으로 표시되는 문자열로 `$1`대체되었습니다.
+* 그리고 `$1`로 표시된 문자열로 대체되었습니다.
 
    * `/content/geometrixx/en/services`
 
@@ -824,7 +829,7 @@ N:definitions
 
 이러한 형식은 숫자 값을 상대 문자열로 변환합니다.
 
-예를 들어, 이 값은 `min`및 `avg` 집계를 허용하는 시간 열에 사용할 수 `max` 있습니다. 따라서 `min`/ `avg`/ `max` 집계는 *시간 차이* (예:) `10 days ago`데이터 형식이 필요합니다. 이 경우 `datedelta` 형식이 `min`/ `avg`/ `max` 집계된 값에 적용됩니다. 집계를 사용할 수도 `count` 있는 경우, 형식자가 필요하지 않으며 원래 값도 필요하지 않습니다.
+예를 들어 `min`, `avg` 및 `max` 집계를 허용하는 시간 열에 이 값을 사용할 수 있습니다. `min`/ `avg`/ `max` 집계는 *시간 차이*(예:`10 days ago`), 데이터 형식이 필요합니다. 이에 대해 `datedelta` 포맷터가 `min`/ `avg`/ `max` 집계된 값에 적용됩니다. 또한 `count` 집계를 사용할 수 있으면 포맷터가 필요하지 않으며 원본 값도 필요하지 않습니다.
 
 현재 사용 가능한 데이터 유형 형식은 다음과 같습니다.
 
@@ -834,9 +839,9 @@ N:definitions
 
    * `duration`
 
-      지속 시간은 정의된 두 날짜 사이의 시간 범위입니다. 예를 들어, 1시간이 걸린 워크플로우 작업의 시작 및 종료(2/13/11 1:23h부터 시작, 1시간 후 2/13/11 1 12:23h로 종료).
+      지속 시간은 정의된 두 날짜 사이의 시간 범위입니다. 예를 들어, 1시간이 걸린 워크플로우 작업의 시작 및 종료(2013년 2월 13일 11시 23분부터 시작 1시간 후 2시 13분 12시 23분에 종료).
 
-      숫자 값(밀리초로 해석됨)을 기간 문자열로 변환합니다.예를 들어 `30000` 형식은 * `30s`.*
+      숫자 값(밀리초)을 기간 문자열로 변환합니다.예를 들어 `30000`의 형식은 * `30s`*입니다.
 
    * `datedelta`
 
@@ -844,7 +849,7 @@ N:definitions
 
       숫자 값(일 단위 시간 차이로 해석됨)을 상대 날짜 문자열로 변환합니다. 예를 들어 1의 형식은 1일 전입니다.
 
-다음 예제에서는 `datedelta` 및 `min` `max` 집계의 서식을 정의합니다.
+다음 예제에서는 `min` 및 `max` 집계에 대한 `datedelta` 형식을 정의합니다.
 
 ```xml
 N:definitions
@@ -860,7 +865,7 @@ N:definitions
 
 ### 열 특정 정의 {#column-specific-definitions}
 
-열 특정 정의는 해당 열에 사용할 수 있는 필터 및 집계를 정의합니다.
+열 특정 정의는 해당 열에 사용할 수 있는 필터와 합계를 정의합니다.
 
 ```xml
 N:definitions
@@ -892,27 +897,27 @@ N:definitions
    * `diff`
    * `timeslot`
 
-      합계에 필요한 날짜의 일부를 추출하는 데 사용됩니다(예: 매년 집계된 데이터를 얻기 위해 연도별 그룹).
+      합계에 필요한 날짜의 일부를 추출하는 데 사용됩니다(예: 매년 그룹화하여 매년 집계되는 데이터를 가져옵니다.).
 
    * `sortable`
 
-      정렬 및 표시하기 위해 서로 다른 값(다른 속성에서 가져옴)을 사용하는 값에 사용됩니다.
-   또한 위의 모든 값은 다중 값으로 정의할 수 있습니다.예를 들어 `string[]` 문자열 배열을 정의합니다.
+      정렬 및 표시하기 위해 서로 다른 값(다른 속성에서 가져온 값)을 사용하는 값에 사용됩니다.
+   게다가 위의 모든 값은 다중 값으로 정의할 수 있습니다.예를 들어 `string[]`은 문자열 배열을 정의합니다.
 
-   값 추출기가 열 유형으로 선택됩니다. 열 유형에 값 추출기를 사용할 수 있으면 이 추출기가 사용됩니다. 그렇지 않으면 기본값 추출기가 사용됩니다.
+   값 추출기가 열 유형으로 선택됩니다. 열 유형에 값 추출기를 사용할 수 있는 경우 이 추출기가 사용됩니다. 그렇지 않으면 기본 값 추출기가 사용됩니다.
 
-   유형은 매개 변수를 사용할 수 있습니다(선택 사항). 예를 들어 `timeslot:year` 날짜 필드에서 연도를 추출합니다. 매개 변수가 있는 유형:
+   유형은 매개 변수를 가져올 수 있습니다(선택 사항). 예를 들어 `timeslot:year`은 날짜 필드에서 연도를 추출합니다. 매개 변수를 사용하는 유형:
 
-   * `timeslot` - 값은 해당 상수와 비교할 수 `java.utils.Calendar`있습니다.
+   * `timeslot` - 값은 해당 상수와 비교할 수  `java.utils.Calendar`있습니다.
 
       * `timeslot:year` - `Calendar.YEAR`
-      * `timeslot:month-of-year` - `Calendar.MONTH`
-      * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
-      * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
-      * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
-      * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
-      * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
-      * `timeslot:minute-of-hour` - `Calendar.MINUTE`
+      * `timeslot:month-of-year` -  `Calendar.MONTH`
+      * `timeslot:week-of-year` -  `Calendar.WEEK_OF_YEAR`
+      * `timeslot:day-of-month` -  `Calendar.DAY_OF_MONTH`
+      * `timeslot:day-of-week` -  `Calendar.DAY_OF_WEEK`
+      * `timeslot:day-of-year` -  `Calendar.DAY_OF_YEAR`
+      * `timeslot:hour-of-day` -  `Calendar.HOUR_OF_DAY`
+      * `timeslot:minute-of-hour` -  `Calendar.MINUTE`
 
 
 * `groupable`
@@ -953,11 +958,11 @@ N:definitions
 
 * `aggregates`
 
-   합계 정의.
+   집계 정의를 참조하십시오.
 
    * `text`
 
-      집계의 텍스트 이름입니다. 을 지정하지 `text` 않으면 집계의 기본 설명을 사용합니다.예를 들어, `minimum` 는 `min` 집계에 사용됩니다.
+      집계의 텍스트 이름입니다. `text`이(가) 지정되지 않은 경우 이 계산서에 대한 기본 설명이 사용됩니다.예를 들어 `minimum`은 `min` 집계에 사용됩니다.
 
    * `type`
 
@@ -973,7 +978,7 @@ N:definitions
 
       * `min`
 
-         최소값을 제공합니다.
+         최소 값을 제공합니다.
 
       * `max`
 
@@ -1006,13 +1011,13 @@ N:defaults
 
 * `aggregate`
 
-   유효한 `aggregate` 값은 `type` 아래의 값과 같습니다( `aggregates` 열 특정 정의(정의 - 필터/ [집계)](#column-specific-definitions) 참조).
+   유효한 `aggregate` 값은 `aggregates` 아래의 `type`와 동일합니다( [열 특정 정의(정의 - 필터 / 집계)](#column-specific-definitions) 참조).
 
 ### 이벤트 및 작업 {#events-and-actions}
 
-구성 편집은 리스너가 감지하는 데 필요한 이벤트와 이러한 이벤트가 발생한 후 적용할 작업을 정의합니다. 배경 정보는 구성 요소 개발 [소개를](/help/sites-developing/components.md) 참조하십시오.
+구성 편집은 리스너가 감지하고 이러한 이벤트가 발생한 후 적용할 작업을 정의하는 데 필요한 이벤트를 정의합니다. 배경 정보는 [구성 요소 개발 소개](/help/sites-developing/components.md)를 참조하십시오.
 
-다음 값을 정의하여 필요한 모든 작업이 준비되도록 해야 합니다.
+필요한 모든 작업을 수행할 수 있도록 다음 값을 정의해야 합니다.
 
 ```xml
 N:cq:editConfig [cq:EditConfig]
@@ -1030,33 +1035,33 @@ N:cq:editConfig [cq:EditConfig]
 
 ### 일반 열 {#generic-columns}
 
-일반 열은 (대부분의 경우) 열 정의가 구성 요소 노드가 아닌 열 노드의 인스턴스에 저장되는 확장입니다.
+일반 열은 (대부분) 열 정의가 구성 요소 노드가 아니라 열 노드의 인스턴스에 저장되는 확장자입니다.
 
-개별 일반 구성 요소에 대해 사용자 정의하는 (표준) 대화 상자를 사용합니다. 이 대화 상자에서는 보고서 사용자가 메뉴 옵션 열 속성을 사용하여 보고서 페이지에서 일반 열의 열 속성을 정의할 **수 있습니다.**.
+개별 일반 구성 요소에 대해 사용자 정의하는 (표준) 대화 상자를 사용합니다. 이 대화 상자에서는 보고서 사용자가 메뉴 옵션 **열 속성을 사용하여 보고서 페이지에 있는 일반 열의 열 속성을 정의할 수 있습니다..**).
 
-예를 들면 사용자 **보고서의** 일반 **열입니다**.을 참조하십시오 `/libs/cq/reporting/components/userreport/genericcol`.
+예: **사용자 보고서**&#x200B;의 **일반** 열`/libs/cq/reporting/components/userreport/genericcol`를 참조하십시오.
 
-열을 일반으로 만들려면
+열을 일반 열로 만들려면
 
-* 열 `type` 노드의 `definition` 속성을 로 설정합니다 `generic`.
+* 열의 `definition` 노드의 `type` 속성을 `generic`로 설정합니다.
 
-   See `/libs/cq/reporting/components/userreport/genericcol/definitions`
+   `/libs/cq/reporting/components/userreport/genericcol/definitions` 참조
 
 * 열의 `definition` 노드 아래에 (표준) 대화 상자 정의를 지정합니다.
 
-   See `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
+   `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog` 참조
 
    * 대화 상자의 필드는 해당 구성 요소 속성(경로 포함)과 동일한 이름을 참조해야 합니다.
 
-      예를 들어, 대화 상자를 통해 일반 열의 유형을 구성할 수 있도록 하려면 이름이 `./definitions/type`있는 필드를 사용합니다.
+      예를 들어 대화 상자를 통해 일반 열의 유형을 구성할 경우 이름이 `./definitions/type`인 필드를 사용하십시오.
 
-   * UI/대화 상자를 사용하여 정의된 속성이 `columnbase` 구성 요소에 정의된 속성보다 우선합니다.
+   * UI/대화 상자를 사용하여 정의된 속성은 `columnbase` 구성 요소에 정의된 속성보다 우선합니다.
 
 * 구성 편집을 정의합니다.
 
-   See `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
+   `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig` 참조
 
-* 표준 AEM 방법론을 사용하여 (추가) 열 속성을 정의합니다.
+* 표준 AEM 방법을 사용하여 열 속성을 정의합니다.
 
    구성 요소와 열 인스턴스 모두에 정의된 속성의 경우 열 인스턴스의 값이 우선합니다.
 
@@ -1065,29 +1070,30 @@ N:cq:editConfig [cq:EditConfig]
    * `jcr:title` - 열 이름
    * `definitions/aggregates` - 집계
    * `definitions/filters` - 필터
-   * `definitions/type`- 열의 유형(선택기/콤보 상자 또는 숨김 필드를 사용하여 대화 상자에 정의되어야 함)
-   * `definitions/data/resolver` 및 `definitions/data/resolverConfig` ( `definitions/data/preprocessing` 또는 `.../clientFilter`아님) - 해결 프로그램 및 구성
+   * `definitions/type`- 열 유형(선택기/콤보 상자 또는 숨김 필드를 사용하여 대화 상자에 정의되어야 함)
+   * `definitions/data/resolver` 및  `definitions/data/resolverConfig` ( `definitions/data/preprocessing` 또는  `.../clientFilter`아님) - 확인자 및 구성
    * `definitions/queryBuilder` - 쿼리 빌더 구성
    * `defaults/aggregate` - 기본 집계
-   사용자 보고서에서 일반 열의 새 인스턴스의 경우 **대화 상자로** 정의된 속성은 다음 아래에 유지됩니다.
+
+   **사용자 보고서**&#x200B;에 있는 일반 열의 새 인스턴스의 경우 대화 상자로 정의된 속성은 다음 아래에 유지됩니다.
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
 
 ## 보고서 디자인 {#report-design}
 
-디자인은 보고서를 만들 수 있는 열 유형을 정의합니다. 또한 열이 추가되는 단락 시스템을 정의합니다.
+디자인은 보고서를 만들 수 있는 열 유형을 정의합니다. 또한 열이 추가되는 단락 시스템도 정의합니다.
 
-각 보고서마다 개별 디자인을 만드는 것이 좋습니다. 이를 통해 완벽한 유연성을 얻을 수 있습니다. 새 [보고서 정의를 참조하십시오](#defining-your-new-report).
+각 보고서마다 개별 디자인을 만드는 것이 좋습니다. 완벽한 유연성을 보장합니다. [새 보고서 정의](#defining-your-new-report)도 참조하십시오.
 
-기본 보고 구성 요소는 아래에 `/etc/designs/reports`있습니다.
+기본 보고 구성 요소는 `/etc/designs/reports` 아래에 있습니다.
 
 보고서 위치는 구성 요소를 찾은 위치에 따라 달라질 수 있습니다.
 
-* `/etc/designs/reports/<yourReport>` 보고서가 `/apps/cq/reporting`
+* `/etc/designs/reports/<yourReport>` 보고서가  `/apps/cq/reporting`
 
-* `/etc/designs/<yourProject>/reports/<*yourReport*>` for reports using `/apps/<yourProject>/reports` pattern
+* `/etc/designs/<yourProject>/reports/<*yourReport*>` for reports using  `/apps/<yourProject>/reports` pattern
 
-필수 디자인 속성은 다음 항목에 `jcr:content/reportpage/report/columns` 등록됩니다(예: `/etc/designs/reports/<reportName>/jcr:content/reportpage/report/columns`).
+필요한 디자인 속성은 `jcr:content/reportpage/report/columns`(예: `/etc/designs/reports/<reportName>/jcr:content/reportpage/report/columns`)에 등록되어 있습니다.
 
 * `components`
 
@@ -1095,9 +1101,9 @@ N:cq:editConfig [cq:EditConfig]
 
 * `sling:resourceType`
 
-   값이 있는 `cq/reporting/components/repparsys`속성입니다.
+   값이 `cq/reporting/components/repparsys`인 속성입니다.
 
-구성 요소 보고서의 디자인에서 가져온 디자인 조각 예는 다음과 같습니다.
+디자인 조각(구성 요소 보고서의 디자인에서 가져옴)은 다음과 같습니다.
 
 ```xml
 <!-- ... -->
@@ -1127,18 +1133,18 @@ N:cq:editConfig [cq:EditConfig]
 
 >[!NOTE]
 >
->보고서를 만들 때 기본 열을 자동으로 만들 수 있습니다. 이러한 항목은 템플릿에 지정됩니다.
+>보고서를 만들 때 기본 열을 자동으로 만들 수 있습니다. 템플릿에 지정되어 있습니다.
 
 ## 보고서 템플릿 {#report-template}
 
-각 보고서 유형은 템플릿을 제공해야 합니다. 표준 CQ [템플릿이며](/help/sites-developing/templates.md) 이와 같이 구성할 수 있습니다.
+각 보고서 유형은 템플릿을 제공해야 합니다. 표준 [CQ 템플릿](/help/sites-developing/templates.md)이며 이와 같이 구성할 수 있습니다.
 
 템플릿은 다음을 수행해야 합니다.
 
-* 다음으로 `sling:resourceType` 설정 `cq/reporting/components/reportpage`
+* `sling:resourceType`을(를) `cq/reporting/components/reportpage`(으)로 설정
 
 * 사용할 디자인을 가리킵니다.
-* 속성을 통해 컨테이너( `report` ) 구성 요소를 참조하는 `reportbase``sling:resourceType` 자식 노드를 만듭니다.
+* `sling:resourceType` 속성을 통해 컨테이너( `reportbase`) 구성 요소를 참조하는 `report` 하위 노드 만들기
 
 구성 요소 보고서 템플릿에서 가져온 예제 템플릿 조각:
 
@@ -1171,11 +1177,11 @@ N:cq:editConfig [cq:EditConfig]
 <!-- .. -->
 ```
 
-기본 보고 템플릿은 아래에서 `/libs/cq/reporting/templates`보관됩니다.
+기본 보고 템플릿은 `/libs/cq/reporting/templates` 아래에 있습니다.
 
-그러나 이러한 노드를 업데이트하지 말고 `/apps/cq/reporting/templates` 또는 적절한 경우 자체 구성 요소 노드를 만드는 것이 좋습니다 `/apps/<yourProject>/reports/templates`.
+그러나 이러한 노드를 업데이트하지 말고 `/apps/cq/reporting/templates` 또는 보다 적절한 `/apps/<yourProject>/reports/templates` 아래에 자체 구성 요소 노드를 만드는 것이 좋습니다.
 
-예(보고서 구성 요소의 [위치 참조](#location-of-report-components)):
+예([보고서 구성 요소 위치](#location-of-report-components) 참조)인 경우:
 
 ```xml
 N:apps
@@ -1207,7 +1213,7 @@ N:apps
 1. 보고서 템플릿의 루트입니다.
 1. 보고서 템플릿입니다.
 
-다음 예에서는 저장소 내의 모든 OSGi 구성을 나열하는 보고서를 정의합니다.예: `sling:OsgiConfig` 노드의 모든 인스턴스.
+다음 예제는 저장소 내의 모든 OSGi 구성을 나열하는 보고서를 정의합니다.예: `sling:OsgiConfig` 노드의 모든 인스턴스.
 
 >[!NOTE]
 >
@@ -1215,7 +1221,7 @@ N:apps
 
 1. 새 보고서의 루트 노드를 만듭니다.
 
-   예를 들어, under `/apps/cq/reporting/components/osgireport`.
+   예를 들어 `/apps/cq/reporting/components/osgireport` 아래에 있습니다.
 
    ```xml
    N:cq [nt:folder]
@@ -1224,7 +1230,7 @@ N:apps
                N:osgireport [sling:Folder]
    ```
 
-1. 보고서 베이스를 정의합니다. 예를 들어 `osgireport[cq:Component]` 아래에서 `/apps/cq/reporting/components/osgireport`볼 수 있습니다.
+1. 보고서 베이스를 정의합니다. 예: `/apps/cq/reporting/components/osgireport` 아래의 `osgireport[cq:Component]`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1270,13 +1276,13 @@ N:apps
                P:nodeTypes [String[]] = "sling:OsgiConfig"
    ```
 
-   이렇게 하면 다음과 같은 보고서 기본 구성 요소가 정의됩니다.
+   여기에는 다음과 같은 보고서 기본 구성 요소가 정의됩니다.
 
-   * 모든 유형의 노드 검색 `sling:OsgiConfig`
-   * 모두 `pie` 및 `lineseries` 차트 표시
+   * `sling:OsgiConfig` 유형의 모든 노드를 검색합니다.
+   * `pie` 및 `lineseries` 차트 모두 표시
    * 사용자가 보고서를 구성할 수 있는 대화 상자를 제공합니다.
 
-1. 첫 번째 열(열 기준) 구성 요소를 정의합니다. 예를 들어 `bundlecol[cq:Component]` 아래에서 `/apps/cq/reporting/components/osgireport`볼 수 있습니다.
+1. 첫 번째 열(열 기준) 구성 요소를 정의합니다. 예: `/apps/cq/reporting/components/osgireport` 아래의 `bundlecol[cq:Component]`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1304,17 +1310,18 @@ N:apps
                    P:property [String] = "jcr:path"
    ```
 
-   이렇게 하면 다음과 같은 열 기본 구성 요소가 정의됩니다.
+   다음과 같은 열 기본 구성 요소를 정의합니다.
 
-   * 서버에서 받은 값을 검색하고 반환합니다.이 경우 `jcr:path` 모든 `sling:OsgiConfig` 노드에 대한 속성
-   * 를 사용하여 `count` 집계
-   * 그룹화할 수 없음
-   * 에는 제목 `Bundle` (표 내의 열 제목)이 있습니다.
-   * 가 사이드 킥에 있음 `OSGi Report`
+   * 서버에서 수신하는 값을 검색하고 반환합니다.이 경우 모든 `sling:OsgiConfig` 노드에 대한 속성 `jcr:path`
+   * `count` 집계
+   * 그룹화할 수 없습니다.
+   * 에는 제목 `Bundle`(테이블 내의 열 제목)이 있습니다.
+   * 은(는) 사이드 킥그룹 `OSGi Report`에 있습니다.
    * 지정된 이벤트 새로 고침
+
    >[!NOTE]
    >
-   >이 예에서는 `N:data` 및 `P:clientFilter`에 대한 정의가 없습니다. 이것은 서버에서 받은 값이 1:1로 반환되기 때문입니다. 이는 기본 동작입니다.
+   >이 예제에는 `N:data` 및 `P:clientFilter`에 대한 정의가 없습니다. 이것은 서버에서 받은 값이 1:1 단위로 반환되기 때문에 기본 동작입니다.
    >
    >이는 정의와 동일합니다.
    >
@@ -1324,9 +1331,9 @@ N:apps
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
    >
-   >이 함수는 단순히 받은 값을 반환합니다.
+   >여기서 함수는 단순히 받은 값을 반환합니다.
 
-1. 보고서 디자인을 정의합니다. 예를 들어 `osgireport[cq:Page]` 아래에서 `/etc/designs/reports`볼 수 있습니다.
+1. 보고서 디자인을 정의합니다. 예: `/etc/designs/reports` 아래의 `osgireport[cq:Page]`.
 
    ```xml
    N:osgireport [cq:Page]
@@ -1342,7 +1349,7 @@ N:apps
 
 1. 새 보고서 템플릿의 루트 노드를 만듭니다.
 
-   예를 들어, under `/apps/cq/reporting/templates/osgireport`.
+   예를 들어 `/apps/cq/reporting/templates/osgireport` 아래에 있습니다.
 
    ```xml
    N:cq [nt:folder]
@@ -1351,7 +1358,7 @@ N:apps
                N:osgireport [cq:Template]
    ```
 
-1. 보고서 템플릿을 정의합니다. 예를 들어 `osgireport[cq:Template]` 아래에서 `/apps/cq/reporting/templates`볼 수 있습니다.
+1. 보고서 템플릿을 정의합니다. 예: `/apps/cq/reporting/templates` 아래의 `osgireport[cq:Template]`.
 
    ```xml
    N:osgireport [cq:Template]
@@ -1369,9 +1376,9 @@ N:apps
        N:thumbnail.png [nt:file]
    ```
 
-   이렇게 하면 다음과 같은 템플릿이 정의됩니다.
+   다음과 같은 템플릿을 정의합니다.
 
-   * 결과 보고서의 `allowedPaths` 정의 - 위의 경우 `/etc/reports`
+   * 결과 보고서에 대한 `allowedPaths`을 정의합니다. 위의 경우 `/etc/reports` 아래의 아무 곳에나 있습니다.
    * 템플릿에 대한 제목 및 설명을 제공합니다.
    * 템플릿 목록에서 사용할 축소판 이미지를 제공합니다. 이 노드의 전체 정의는 위에 나열되지 않습니다. 기존 보고서에서 thumbnail.png 인스턴스를 복사하는 것이 가장 쉽습니다.
 
@@ -1379,16 +1386,16 @@ N:apps
 
 이제 새 보고서의 인스턴스를 만들 수 있습니다.
 
-1. Open the **Tools** console.
+1. **도구** 콘솔을 엽니다.
 
-1. 왼쪽 **창에서** 보고서를 선택합니다.
-1. 그런 다음 **새로 만들기...** 를 클릭합니다. 제목 **및** 이름을 **정의하고**&#x200B;템플릿 목록에서 새 보고서 유형( **OSGi 보고서 템플릿**)을 선택한 다음 생성 **을**&#x200B;클릭합니다.
-1. 새 보고서 인스턴스가 목록에 나타납니다. 이 아이콘을 두 번 클릭하여 엽니다.
-1. 사이드킥에서 구성 요소(예: **OSGi** 보고서 **그룹의 번들** )를 [드래그하여 첫 번째 열을 만들고 보고서 정의를](/help/sites-administering/reporting.md#the-basics-of-report-customization)시작합니다.
+1. 왼쪽 창에서 **보고서**&#x200B;를 선택합니다.
+1. 그런 다음 **새로 만들기...도구 모음에서**. **제목** 및 **이름**&#x200B;을 정의하고 템플릿 목록에서 새 보고서 유형(**OSGi 보고서 템플릿**)을 선택한 다음 **만들기**&#x200B;를 클릭합니다.
+1. 새 보고서 인스턴스가 목록에 나타납니다. 열려면 이 아이콘을 두 번 클릭합니다.
+1. 사이드 킥에서 구성 요소(예: **OSGi 보고서** 그룹의 **번들**)를 드래그하여 첫 번째 열을 만들고 [보고서 정의](/help/sites-administering/reporting.md#the-basics-of-report-customization)를 시작합니다.
 
    >[!NOTE]
    >
-   >이 예제에 그룹화할 수 있는 열이 없으므로 차트를 사용할 수 없습니다. 차트를 보려면 다음을 `groupable` 설정합니다 `true`.
+   >이 예제에 그룹화할 수 있는 열이 없으므로 차트를 사용할 수 없습니다. 차트를 보려면 `groupable`을 `true`으로 설정합니다.
    >
    >
    ```
@@ -1398,48 +1405,49 @@ N:apps
    > P:groupable [Boolean] = true
    >```
 
-## 보고서 프레임워크 서비스 구성 {#configuring-the-report-framework-services}
+## 보고서 프레임워크 서비스 {#configuring-the-report-framework-services} 구성
 
 이 섹션에서는 보고서 프레임워크를 구현하는 OSGi 서비스에 대한 고급 구성 옵션에 대해 설명합니다.
 
-웹 콘솔의 구성 메뉴를 사용하여 볼 수 있습니다(예: `http://localhost:4502/system/console/configMgr`). When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+웹 콘솔의 구성 메뉴를 사용하여 볼 수 있습니다(예: `http://localhost:4502/system/console/configMgr`). AEM을 사용하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다.자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성을 참조하십시오.
 
 ### 기본 서비스(일 CQ 보고 구성) {#basic-service-day-cq-reporting-configuration}
 
-* **표준 시간대는** 생성되는 시간대 내역 데이터를 정의합니다. 이것은 내역 차트가 전세계 각 사용자에 대해 동일한 데이터를 표시하는지 확인하기 위한 것입니다.
-* **로케일은** 내역 데이터에 대한 시간대와 함께 사용할 **로케일을** 정의합니다. 로케일은 일부 로케일별 달력 설정(예: 주의 첫날이 일요일인지 월요일인지)을 결정하는 데 사용됩니다.
+* **Timezonedefines** the timezone history data is created for. 이것은 이전 차트가 전세계 각 사용자에 대해 동일한 데이터를 표시하는지 확인하기 위한 것입니다.
+* **현지어** 는 내역 데이터를 위해 Timezonefor **** 과 함께 사용할 로케일을 정의합니다. 로케일은 일부 로케일별 달력 설정(예: 주의 첫날이 일요일인지 월요일인지)을 결정하는 데 사용됩니다.
 
-* **스냅샷 경로는** 내역 차트에 대한 스냅샷이 저장되는 루트 경로를 정의합니다.
-* **보고서** 경로는 보고서가 있는 경로를 정의합니다. 이 기능은 스냅샷 서비스에서 실제로 스냅샷을 찍을 보고서를 결정하는 데 사용됩니다.
-* **일별 스냅샷은** 일별 스냅샷을 촬영하는 시간을 정의합니다. 지정된 시간은 서버의 로컬 시간대입니다.
-* **시간별 스냅숏은** 시간별 스냅숏을 만들 때 각 시간의 분을 정의합니다.
-* **행(최대)** 은 각 스냅샷에 대해 저장되는 최대 행 수를 정의합니다. 이 값은 합리적으로 선택해야 합니다.너무 높으면 저장소 크기에 영향을 주고, 너무 낮으면 내역 데이터를 처리하는 방식 때문에 데이터가 정확하지 않을 수 있습니다.
-* **허위 데이터**(활성화된 경우)는 `fakedata` 선택기를 사용하여 허위 내역 데이터를 만들 수 있습니다.비활성화된 경우 `fakedata` 선택기를 사용하면 예외가 발생합니다.
+* **스냅샷** 경로는 내역 차트에 대한 스냅샷이 저장되는 루트 경로를 정의합니다.
+* **보고서** 경로는 보고서가 있는 경로를 정의합니다. 스냅샷 서비스가 이 보고서를 사용하여 실제로 스냅샷을 만들 보고서를 결정합니다.
+* **일별** 스냅샷은 일별 스냅샷을 촬영하는 시간을 정의합니다. 지정된 시간은 서버의 로컬 시간대에 있습니다.
+* **시간별** 스냅샷은 시간별 스냅샷을 촬영하는 각 시간의 분을 정의합니다.
+* **행(최대)은 각 스냅샷에 대해 저장되는 최대 행 수를** 정의합니다. 이 값은 합리적으로 선택해야 합니다.너무 높으면 저장소 크기에 영향을 주고, 너무 낮으면 내역 데이터가 처리되는 방식 때문에 데이터가 정확하지 않을 수 있습니다.
+* **허위 데이터**, 활성화된 경우  `fakedata` 선택기를 사용하여 허위 내역 데이터를 만들 수 있습니다.비활성화되면  `fakedata` 선택기를 사용하면 예외가 발생합니다.
 
-   데이터가 가짜이므로 테스트 및 디버깅 용도로만 ** 사용해야 합니다.
+   데이터가 가짜이므로 테스트 및 디버깅 목적으로만 *만 사용해야 합니다.*
 
-   선택기를 `fakedata` 사용하면 보고서가 암시적으로 완료되므로 모든 기존 데이터가 손실됩니다.데이터를 수동으로 복원할 수 있지만 시간이 많이 소요될 수 있습니다.
+   `fakedata` 선택기를 사용하면 암시적으로 보고서가 완료되므로 기존의 모든 데이터가 손실됩니다.데이터는 수동으로 복원할 수 있지만 시간이 많이 걸릴 수 있습니다.
 
-* **스냅샷 사용자는** 스냅샷 찍기에 사용할 수 있는 선택적 사용자를 정의합니다.
+* **스냅샷** 사용자는 스냅샷을 생성하는 데 사용할 수 있는 선택적 사용자를 정의합니다.
 
-   기본적으로 보고서를 완료한 사용자에 대해 스냅숏이 만들어집니다. 계정이 복제되지 않아 이 사용자가 존재하지 않는 게시 시스템과 같은 경우에 대신 사용되는 대체 사용자를 지정하려고 할 수 있습니다.
+   기본적으로 보고서를 완료한 사용자에 대해 스냅샷이 생성됩니다. 대신 사용되는 대체 사용자를 지정하려고 하는 게시 시스템(예: 계정이 복제되지 않아 이 사용자가 존재하지 않는 게시 시스템)에서 있을 수 있습니다.
 
    또한 사용자를 지정하면 보안 위험이 발생할 수 있습니다.
 
-* **스냅샷 사용자를**&#x200B;적용합니다. 활성화된 경우 스냅샷 사용자 아래에 지정된 사용자와 함께 모든 스냅샷을 *만듭니다*. 제대로 처리되지 않으면 심각한 보안 문제가 발생할 수 있습니다.
+* **스냅샷 사용자** 적용(활성화된 경우 스냅샷 사용자 *아래에 지정된 사용자가 모든 스냅샷을 촬영합니다*. 제대로 처리되지 않으면 심각한 보안 문제가 발생할 수 있습니다.
 
 ### 캐시 설정(일 CQ 보고 캐시) {#cache-settings-day-cq-reporting-cache}
 
-* **활성화를** 사용하면 보고서 데이터 캐시를 활성화하거나 비활성화할 수 있습니다. 보고서 캐시를 활성화하면 여러 요청 동안 보고서 데이터가 메모리에 유지됩니다. 이로 인해 성능이 향상될 수 있지만 메모리 사용량이 더 늘어날 수 있으며, 극심한 경우 메모리 부족 현상이 발생할 수 있습니다.
-* **TTL은** 보고서 데이터가 캐시되는 시간(초)을 정의합니다. 숫자가 높을수록 성능이 향상되지만 기간 내에 데이터가 변경될 경우 부정확한 데이터를 반환할 수도 있습니다.
-* **최대 항목은** 언제든지 캐싱할 최대 보고서 수를 정의합니다.
+* **보고서 데이터** 의 캐시를 활성화하거나 비활성화할 수 있습니다. 보고서 캐시를 활성화하면 여러 요청 동안 보고서 데이터가 메모리에 유지됩니다. 이는 성능을 높일 수 있지만 메모리 사용량이 더 증가하고, 극단적인 경우 메모리 부족 문제가 발생할 수 있습니다.
+* **TTL** 보고서 데이터가 캐시되는 시간(초)을 정의합니다. 숫자가 높을수록 성능이 향상되지만 기간 내에 데이터가 변경되면 부정확한 데이터를 반환할 수도 있습니다.
+* **최대** 항목은 언제든지 캐시할 최대 보고서 수를 정의합니다.
 
 >[!NOTE]
 >
->보고서 데이터는 사용자 및 언어별로 다를 수 있습니다. 따라서 보고서 데이터는 보고서, 사용자 및 언어별로 캐시됩니다. 즉, 최대 항목 **값이** `2` 실제로 다음 중 하나에 대한 데이터를 캐시합니다.
+>보고서 데이터는 사용자 및 언어별로 다를 수 있습니다. 따라서 보고서 데이터는 보고서, 사용자 및 언어별로 캐시됩니다. 즉, **Max entries** 값이 실제로 다음 중 하나에 대한 데이터를 캐시합니다.`2`
 >
 >* 언어 설정이 다른 두 사용자에 대한 보고서 1개
->* 사용자 1명과 보고서 2개
+>* 1명의 사용자 및 2개의 보고서
+
 >
 
 
