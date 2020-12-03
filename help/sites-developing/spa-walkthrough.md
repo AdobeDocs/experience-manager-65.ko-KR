@@ -1,8 +1,8 @@
 ---
 title: SPA 소개 및 연습
 seo-title: SPA 소개 및 연습
-description: 이 문서에서는 SPA의 개념을 소개하고 저작 시 기본 SPA 애플리케이션을 사용하는 방법을 단계별로 살펴봅니다. 이 애플리케이션은 AEM SPA 편집기와 어떻게 관련되어 있는지 보여줍니다.
-seo-description: 이 문서에서는 SPA의 개념을 소개하고 저작 시 기본 SPA 애플리케이션을 사용하는 방법을 단계별로 살펴봅니다. 이 애플리케이션은 AEM SPA 편집기와 어떻게 관련되어 있는지 보여줍니다.
+description: 이 문서에서는 SPA의 개념을 소개하고 저작 시 기본 SPA 응용 프로그램을 사용하여 기본 SPA 편집기와 관련된 방법을 설명합니다.
+seo-description: 이 문서에서는 SPA의 개념을 소개하고 저작 시 기본 SPA 응용 프로그램을 사용하여 기본 SPA 편집기와 관련된 방법을 설명합니다.
 uuid: 4b0a9e53-3892-4d60-8bd3-7ff740d2f137
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -21,21 +21,21 @@ ht-degree: 4%
 
 # SPA 소개 및 연습{#spa-introduction-and-walkthrough}
 
-단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크를 사용하여 사이트를 구축할 수 있어야 하며, 작성자는 이러한 프레임워크를 사용하여 구축한 사이트에 AEM의 컨텐츠를 완벽하게 편집하고자 합니다.
+단일 페이지 애플리케이션(SPA)을 통해 웹 사이트 사용자에게 매력적인 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 구축하고자 하며, 작성자는 이러한 프레임워크를 사용하여 구축한 사이트에 대해 AEM 내에서 컨텐츠를 완벽하게 편집하고자 합니다.
 
-SPA Editor는 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합니다. 저작 시 기본 SPA 애플리케이션을 사용하는 방법을 살펴보고 기본 AEM SPA Editor와 어떻게 관련되어 있는지 살펴봅니다.
+SPA Editor는 AEM에서 SPA을 지원하는 포괄적인 솔루션을 제공합니다. 이 문서에서는 저작을 위해 기본 SPA 응용 프로그램을 사용하는 과정을 소개하고 기본 AEM SPA 편집기와 관련된 방법을 설명합니다.
 
 >[!NOTE]
 >
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: 반응 또는 각도)이 필요한 프로젝트에 권장되는 솔루션입니다.
+>SPA 편집기는 SPA 프레임워크 기반 클라이언트측 렌더링(예: 반응 또는 각도)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 ## 소개 {#introduction}
 
 ### 아티클 목표 {#article-objective}
 
-이 문서에서는 간단한 SPA 애플리케이션을 사용하여 기본적인 컨텐츠 편집을 시연함으로써 SPA 편집기의 연습을 안내하기 전에 SPA의 기본 개념을 소개합니다. 그런 다음 페이지 구성, SPA 애플리케이션이 AEM SPA Editor와 관련 및 상호 작용하는지 자세히 살펴봅니다.
+이 문서에서는 간단한 SPA 애플리케이션을 사용하여 기본적인 컨텐츠 편집을 시연함으로써 SPA 편집기의 연습을 안내하기 전에 SPA의 기본 개념을 소개합니다. 그런 다음 페이지 구성, SPA 응용 프로그램이 AEM SPA 편집기와 관련 및 상호 작용하는 방법을 자세히 다룹니다.
 
-이 소개 및 연습의 목적은 AEM 개발자에게 SPA가 연관성이 높은 이유, 일반적으로 작동하는 방식, AEM SPA Editor에서 SPA를 처리하는 방식, 표준 AEM 애플리케이션과 어떻게 다른지 시연하는 것입니다.
+이 소개 및 연습의 목적은 AEM 개발자에게 SPA이 관련이 있는 이유, 일반적으로 작동하는 방식, AEM SPA 편집기로 SPA을 처리하는 방법 및 표준 AEM 애플리케이션과 어떻게 다른지 시연하는 것입니다.
 
 이 연습은 표준 AEM 기능과 샘플 We.Retail Journal 앱을 기반으로 합니다. 다음 요구 사항을 충족해야 합니다.
 
@@ -44,21 +44,21 @@ SPA Editor는 AEM 내의 SPA를 지원하는 포괄적인 솔루션을 제공합
 
 >[!CAUTION]
 >
->이 문서에서는 데모용으로만 [We.Retail Journal 앱을](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) 사용합니다. 어떤 프로젝트 작업에도 사용해서는 안 됩니다.
+>이 문서에서는 데모용으로만 [We.Retail 저널 앱](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)을 사용합니다. 어떤 프로젝트 작업에도 사용해서는 안 됩니다.
 >
->모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)(React or Angular)을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 프로젝트 전형(Pretype)을 활용해야 합니다.
+>모든 AEM 프로젝트는 React 또는 Angular를 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Tranype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
 
-### 스파란? {#what-is-a-spa}
+### SPA 소개{#what-is-a-spa}
 
-단일 페이지 애플리케이션(SPA)은 클라이언트 측에서 렌더링되고 주로 Javascript를 기반으로 하며 데이터를 로드하고 페이지를 동적으로 업데이트하는 Ajax 호출에 의존한다는 점에서 기존 페이지와 다릅니다. 대부분의 또는 모든 컨텐츠는 페이지와의 사용자 상호 작용에 따라 필요에 따라 비동기적으로 로드된 추가 리소스를 포함한 단일 페이지 로드에서 한 번 검색됩니다.
+단일 페이지 애플리케이션(SPA)은 클라이언트 측에서 렌더링되고 주로 Javascript가 사용된다는 점에서 일반적인 페이지와 다릅니다. Ajax 호출에서 데이터를 로드하고 페이지를 동적으로 업데이트하는 것입니다. 대부분의 또는 모든 컨텐츠는 페이지와의 사용자 상호 작용에 따라 필요에 따라 비동기적으로 로드된 추가 리소스를 포함한 단일 페이지 로드에서 한 번 검색됩니다.
 
 이를 통해 페이지 새로 고침이 필요하지 않으며, 사용자에게 매끄럽고 빠르며 기본 앱 경험과 같은 경험을 제공합니다.
 
-AEM SPA Editor를 사용하면 프런트 엔드 개발자는 AEM 사이트에 통합할 수 있는 SPA를 만들 수 있으므로 컨텐츠 작성자는 다른 AEM 컨텐츠과 마찬가지로 SPA 컨텐츠를 손쉽게 편집할 수 있습니다.
+AEM SPA Editor를 사용하면 프런트 엔드 개발자는 AEM 사이트에 통합할 수 있는 SPA을 제작할 수 있으므로 컨텐츠 작성자는 다른 AEM 컨텐츠과 같이 SPA 컨텐츠를 손쉽게 편집할 수 있습니다.
 
-### 왜 스파죠? {#why-a-spa}
+### SPA을 사용해야 하는 이유{#why-a-spa}
 
-SPA는 기본 애플리케이션과 유사하게 더욱 빠르고 유연하게 작동함으로써 웹 페이지 방문자뿐만 아니라 SPA의 작동 방식에 따른 마케터 및 개발자에게도 매우 매력적인 경험을 제공할 수 있습니다.
+SPA은 기본 애플리케이션과 유사하게 더욱 빨라지고 유연해졌으며 웹 페이지 방문자뿐만 아니라 SPA 작업 방식의 특성상 마케터 및 개발자에게도 매력적인 경험을 제공합니다.
 
 ![screen_shot_2018-08-20at135550](assets/screen_shot_2018-08-20at135550.png)
 
@@ -77,27 +77,27 @@ SPA는 기본 애플리케이션과 유사하게 더욱 빠르고 유연하게 �
 * 개발자는 컨텐츠와 프레젠테이션에 대한 우려 사항을 명확하게 구분하길 원합니다.
 * 시스템을 깔끔하게 분리하면 독립적인 프런트 엔드 개발을 허용할 뿐만 아니라 확장 가능해집니다.
 
-### 온천은 어떻게 작동합니까? {#how-does-a-spa-work}
+### SPA 작동 방식{#how-does-a-spa-work}
 
-SPA의 주요 아이디어는 서버 호출로 인한 지연을 최소화하여 SPA가 기본 애플리케이션의 응답성에 접근할 수 있도록 서버에 대한 호출과 의존도를 줄이는 것입니다.
+SPA의 기본 아이디어는 서버 호출로 인한 지연을 최소화하기 위해 서버에 대한 호출과 의존성이 감소하여 SPA이 기본 애플리케이션의 응답성에 접근한다는 것입니다.
 
 기존의 순차적 웹 페이지에서는 바로 페이지에 필요한 데이터만 로드됩니다. 즉, 방문자가 다른 페이지로 이동할 때 추가 리소스를 위해 서버가 호출됩니다. 방문자가 페이지의 요소와 상호 작용하므로 추가 호출이 필요할 수 있습니다. 이 여러 호출은 페이지가 방문자의 요청을 따라잡아야 하므로 지연이나 지연을 일으킬 수 있습니다.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
-보다 유동적인 경험을 위해 방문자가 모바일, 기본 앱에서 기대하는 것에 접근하는 SPA는 방문자를 위해 필요한 모든 데이터를 첫 번째 로드에서 로드합니다. 처음에는 시간이 조금 더 걸릴 수 있지만 이 경우 추가 서버 호출이 필요하지 않습니다.
+보다 유동적인 경험을 위해 SPA은 방문자가 모바일, 기본 앱에서 기대하는 것에 접근하며 첫 번째 로드 시 방문자에 필요한 모든 데이터를 로드합니다. 처음에는 시간이 조금 더 걸릴 수 있지만 이 경우 추가 서버 호출이 필요하지 않습니다.
 
 클라이언트 쪽에서 렌더링하면 페이지 요소가 더 빠르게 반응하며 방문자가 페이지와의 상호 작용은 즉시 발생합니다. 필요한 추가 데이터는 페이지 속도를 최대화하기 위해 비동기식으로 호출됩니다.
 
 >[!NOTE]
 >
->AEM에서 SPA가 작동하는 방법에 대한 자세한 내용은 AEM에서 SPA [시작하기 문서를 참조하십시오](/help/sites-developing/spa-getting-started-react.md).
+>AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 /a0/>AEM에서 SPA 시작[ 문서를 참조하십시오.](/help/sites-developing/spa-getting-started-react.md)
 >
->SPA Editor의 디자인, 아키텍처 및 기술 워크플로우에 대한 자세한 내용은 [SPA Editor 개요를 참조하십시오](/help/sites-developing/spa-overview.md).
+>SPA Editor의 디자인, 아키텍처 및 기술 작업 과정에 대한 자세한 내용은 문서 [SPA Editor Overview](/help/sites-developing/spa-overview.md)를 참조하십시오.
 
-## SPA를 사용한 컨텐츠 편집 경험 {#content-editing-experience-with-spa}
+## SPA {#content-editing-experience-with-spa}의 컨텐츠 편집 경험
 
-AEM SPA 편집기를 활용할 수 있도록 SPA를 구축하면 컨텐츠 작성자는 컨텐츠를 편집하고 제작할 때 아무런 차이도 느끼지 않습니다. 공통 AEM 기능을 사용할 수 있으며 작성자의 워크플로우를 변경할 필요가 없습니다.
+SPA SPA Editor를 활용할 수 있도록 AEM이 구축되면 컨텐츠 작성자는 컨텐츠를 편집하고 만들 때 아무런 차이도 느끼지 않습니다. 공통 AEM 기능을 사용할 수 있으며 작성자의 워크플로우를 변경할 필요가 없습니다.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ AEM SPA 편집기를 활용할 수 있도록 SPA를 구축하면 컨텐츠 작�
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
    >[!NOTE]
-   >즉석 텍스트 편집기 및 SPA에 대한 자세한 [내용은 SPA Editor](spa-overview.md#requirements-limitations) Overview를 참조하십시오.
+   >즉석 텍스트 편집기 및 SPA에 대한 자세한 내용은 [SPA 편집기 개요](spa-overview.md#requirements-limitations)를 참조하십시오.
 
 1. 자산 브라우저를 사용하여 새 이미지를 이미지 구성 요소로 드래그하여 놓습니다.
 
@@ -135,21 +135,21 @@ AEM SPA 편집기를 활용할 수 있도록 SPA를 구축하면 컨텐츠 작�
 
    ![screen_shot_2018-06-07at143732](assets/screen_shot_2018-06-07at143732.png)
 
-페이지에서 추가 구성 요소를 드래그 앤 드롭하거나 구성 요소를 재배치하고 레이아웃을 수정하는 등 SPA가 아닌 다른 애플리케이션에서처럼 추가 작성 도구가 지원됩니다.
+페이지에서 추가 구성 요소를 드래그 앤 드롭하거나 구성 요소를 재배치하고 레이아웃을 수정하는 등 SPA이 아닌 다른 애플리케이션에서와 마찬가지로 추가 작성 도구가 지원됩니다.
 
 >[!NOTE]
 >
->SPA 편집기는 응용 프로그램의 DOM을 수정하지 않습니다. SPA 자체에서 DOM을 책임집니다.
+>SPA 편집기는 응용 프로그램의 DOM을 수정하지 않습니다. SPA 자체도 DOM을 책임집니다.
 >
->이 방법을 확인하려면 SPA Apps 및 AEM [SPA Editor의 다음 섹션으로 계속하십시오](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor).
+>이 문서의 작동 방식을 확인하려면 [SPA Apps 및 AEM SPA 편집기](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)의 다음 섹션으로 계속하십시오.
 
 ## SPA 앱 및 AEM SPA 편집기 {#spa-apps-and-the-aem-spa-editor}
 
-SPA가 최종 사용자를 위해 동작하는 방식을 경험하고 SPA 페이지를 검사하면 AEM의 SPA Editor에서 SAP 앱이 작동하는 방식을 더 잘 이해할 수 있습니다.
+SPA이 최종 사용자에 대해 동작하고 SPA 페이지를 검사하는 방법을 경험하면 AEM의 SPA 편집기와 SAP 앱이 작동하는 방식을 더 잘 이해할 수 있습니다.
 
-### SPA 애플리케이션 사용 {#using-an-spa-application}
+### SPA 응용 프로그램 사용 {#using-an-spa-application}
 
-1. We.Retail 저널 응용 프로그램을 게시 서버에 로드하거나 페이지 편집기의 페이지 정보 **메뉴** 에서 [게시됨으로 보기] 옵션 **을** 사용합니다.
+1. We.Retail 저널 응용 프로그램을 게시 서버에 로드하거나 페이지 편집기의 **페이지 정보** 메뉴에서 **게시됨으로 보기** 옵션을 사용하여 로드합니다.
 
    `/content/we-retail-journal/react.html`
 
@@ -167,15 +167,15 @@ SPA가 최종 사용자를 위해 동작하는 방식을 경험하고 SPA 페이
 
    앱에서 페이지로 이동할 때 트래픽이 거의 없습니다. 페이지가 다시 로드되지 않고 새 이미지만 요청됩니다.
 
-   SPA는 클라이언트 측에서 컨텐츠와 라우팅을 완전히 관리합니다.
+   SPA은 클라이언트 쪽에서 컨텐츠와 라우팅을 완전히 관리합니다.
 
 하위 페이지를 탐색할 때 페이지가 다시 로드되지 않으면 어떻게 로드됩니까?
 
-다음 섹션인 [SPA 애플리케이션](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application)로딩 에서는 SPA 로딩 역학 및 컨텐츠를 동기적으로 그리고 비동기적으로 로딩하는 방법에 대해 자세히 살펴봅니다.
+다음 섹션인 [SPA 응용 프로그램 로드](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application)에서는 SPA을 로드하는 역학 및 컨텐트를 동기적으로 그리고 비동기적으로 로드하는 방법에 대해 자세히 알아봅니다.
 
-### SPA 응용 프로그램 로드 {#loading-an-spa-application}
+### SPA 응용 프로그램 로드 중 {#loading-an-spa-application}
 
-1. 아직 로드되지 않은 경우, We.Retail 저널 애플리케이션을 게시 서버에 로드하거나 페이지 편집기의 **페이지 정보** 메뉴 **에서 게시됨으로** 보기 옵션을 사용하여로드합니다.
+1. 아직 로드되지 않은 경우 We.Retail 저널 애플리케이션을 게시 서버에 로드하거나 페이지 편집기의 **페이지 정보** 메뉴에서 **게시됨으로 보기** 옵션을 사용하여 로드합니다.
 
    `/content/we-retail-journal/react.html`
 
@@ -208,7 +208,7 @@ SPA가 최종 사용자를 위해 동작하는 방식을 경험하고 SPA 페이
    </html>
    ```
 
-   페이지의 본문 내에 콘텐츠가 없습니다. 주로 스타일 시트 및 React 스크립트에 대한 호출로 구성됩니다 `we-retail-journal-react.js`.
+   페이지의 본문 내에 콘텐츠가 없습니다. This is primary made of stylesheets and a call to a React script, `we-retail-journal-react.js`.
 
    React 스크립트는 이 애플리케이션의 기본 드라이버이며 모든 컨텐츠를 렌더링할 책임이 있습니다.
 
@@ -222,13 +222,13 @@ SPA가 최종 사용자를 위해 동작하는 방식을 경험하고 SPA 페이
 
    ![screen_shot_2018-06-07at152155](assets/screen_shot_2018-06-07at152155.png)
 
-1. 새 탭 `react.model.json` 에서 을 로드합니다.
+1. 새 탭에서 `react.model.json`을 로드합니다.
 
    `/content/we-retail-journal/react.model.json`
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   AEM SPA Editor는 [AEM Content Services](/help/assets/content-fragments/content-fragments.md) 를 활용하여 페이지의 전체 컨텐츠를 JSON 모델로 전달합니다.
+   AEM SPA 편집기는 [AEM 컨텐츠 서비스](/help/assets/content-fragments/content-fragments.md)를 활용하여 페이지의 전체 컨텐츠를 JSON 모델로 전달합니다.
 
    Sling Models는 특정 인터페이스를 구현하여 SPA에 필요한 정보를 제공합니다. JSON 데이터의 배달은 각 구성 요소(페이지, 단락, 구성 요소 등)에 하향 위임됩니다.
 
@@ -236,7 +236,7 @@ SPA가 최종 사용자를 위해 동작하는 방식을 경험하고 SPA 페이
 
 1. 또한 모델은 동기적으로 로드되도록 페이지를 함께 그룹화하여 필요한 페이지 다시 로드 횟수를 줄일 수 있습니다.
 
-   We.Retail 저널의 예에서, `home``blog`, 및 `aboutus` 페이지는 방문자가 일반적으로 모든 페이지를 방문하기 때문에 동기적으로 로드됩니다. 그러나 방문자가 `weather` 페이지를 방문할 가능성이 적기 때문에 페이지를 비동기식으로 로드합니다.
+   We.Retail 저널의 예에서 방문자가 모든 페이지를 일반적으로 방문하기 때문에 `home`, `blog` 및 `aboutus` 페이지가 동기식으로 로드됩니다. 그러나 방문자가 페이지를 방문할 가능성이 적기 때문에 `weather` 페이지는 비동기식으로 로드됩니다.
 
    이 동작은 필수 사항이 아니며 완전히 정의할 수 있습니다.
 
@@ -244,25 +244,25 @@ SPA가 최종 사용자를 위해 동작하는 방식을 경험하고 SPA 페이
 
 1. 동작의 이러한 차이를 보려면 페이지를 다시 로드하고 검사기의 네트워크 활동을 지웁니다. 페이지 메뉴에서 블로그 및 Adobe 정보 페이지로 이동하여 보고된 네트워크 활동이 없음을 확인하십시오.
 
-   날씨 페이지로 이동하여 비동기식으로 호출되는지 `weather.model.json` 확인합니다.
+   날씨 페이지로 이동하여 `weather.model.json`이(가) 비동기식으로 호출되는지 확인하십시오.
 
    ![screen_shot_2018-06-07at155738](assets/screen_shot_2018-06-07at155738.png)
 
-### SPA 편집기와의 인터랙션 {#interaction-with-the-spa-editor}
+### SPA 편집기와의 상호 작용 {#interaction-with-the-spa-editor}
 
 샘플 We.Retail 저널 애플리케이션을 사용하면 앱이 어떻게 동작하며 게시 시 로드되는지 명확히 알 수 있습니다. JSON 컨텐츠 전달과 리소스 비동기 로딩에 대한 컨텐츠 서비스를 활용할 수 있습니다.
 
-또한 컨텐츠 작성자의 경우 SPA 편집기를 사용한 컨텐츠 제작은 AEM 내에서 원활하게 이루어집니다.
+또한 컨텐츠 작성자의 경우 SPA 편집기를 사용한 컨텐츠 제작은 AEM 내에서 매끄럽게 이루어집니다.
 
-다음 섹션에서는 SPA Editor가 SPA 내의 구성 요소를 AEM 구성 요소에 연결하여 이러한 완벽한 편집 환경을 제공할 수 있는 계약을 살펴봅니다.
+다음 섹션에서는 SPA Editor가 SPA 구성 요소 내의 구성 요소를 AEM 구성 요소와 연계하여 이러한 매끄러운 편집 환경을 구현할 수 있는 계약을 살펴봅니다.
 
-1. 편집기에서 We.Retail 저널 애플리케이션을 로드하고 미리 보기 **모드로** 전환합니다.
+1. 편집기에서 We.Retail 저널 애플리케이션을 로드하고 **미리 보기** 모드로 전환합니다.
 
    `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
 1. 브라우저의 내장된 개발자 도구를 사용하여 페이지의 컨텐츠를 검사합니다. 선택 도구를 사용하여 페이지에서 편집 가능한 구성 요소를 선택하고 요소 세부 사항을 봅니다.
 
-   구성 요소에는 새 데이터 속성이 있습니다 `data-cq-data-path`.
+   구성 요소에 새 데이터 속성 `data-cq-data-path`이(가) 있습니다.
 
    ![screen_shot_2018-06-08at095124](assets/screen_shot_2018-06-08at095124.png)
 
@@ -272,21 +272,21 @@ SPA가 최종 사용자를 위해 동작하는 방식을 경험하고 SPA 페이
 
    이 경로를 사용하면 각 구성 요소의 편집 컨텍스트 구성 개체를 검색하고 연결할 수 있습니다.
 
-   편집자가 SPA 내에서 이 구성 요소를 편집 가능한 구성 요소로 인식하기 위해 필요한 유일한 마크업 속성입니다. SPA Editor는 이 속성을 기반으로 구성 요소와 연관된 편집 가능한 구성을 판단하여 올바른 프레임, 도구 모음 등을 파악합니다. 가 로드되었습니다.
+   이것은 편집자가 이것을 SPA 내에서 편집 가능한 구성 요소로 인식하기 위해 필요한 유일한 마크업 속성입니다. 이 속성을 기반으로 SPA 편집기는 구성 요소와 연관된 편집 가능한 구성을 판단하여 올바른 프레임, 도구 모음 등을 확인합니다. 가 로드되었습니다.
 
    자리 표시자를 표시하거나 자산을 드래그하여 놓는 기능을 위해 일부 특정 클래스 이름도 추가되었습니다.
 
    >[!NOTE]
    >
-   >AEM의 서버측 렌더링된 페이지에서 편집 가능한 각 구성 요소에 대해 삽입된 `cq` 요소가 있는 동작이 변경되었습니다.
+   >AEM의 서버측 렌더링된 페이지에서 편집 가능한 각 구성 요소에 대해 `cq` 요소가 삽입된 동작이 변경되었습니다.
    >
    >
-   >SPA에서 이 방법을 사용하면 사용자 정의 요소를 주입할 필요가 없으며 추가 데이터 속성만 적용되므로 프런트 엔드 개발자는 마크업을 더욱 간소화할 수 있습니다.
+   >SPA에서 이 방법을 사용하면 사용자 지정 요소를 주입할 필요가 없으며 추가 데이터 속성만 의존하므로 프런트 엔드 개발자에게 마크업이 더 간단해집니다.
 
 ## 다음 단계 {#next-steps}
 
-AEM의 SPA 편집 경험과 SPA Editor와 SPA SPA SPA가 어떻게 구성되어 있는지 자세히 살펴보십시오.
+이제 AEM의 SPA 편집 경험과 SPA과 SPA 편집기의 상관관계를 이해하면 SPA의 제작 방식을 보다 심층적으로 이해할 수 있습니다.
 
-* [AEM에서](/help/sites-developing/spa-getting-started-react.md) SPA를 시작하기(Getting Started with SPA)는 AEM의 SPA Editor에서 작동하는 기본 SPA를 어떻게 구축하는지 보여줍니다
-* [SPA Editor 개요](/help/sites-developing/spa-overview.md) 는 AEM과 SPA 간의 커뮤니케이션 모델에 대해 더 자세히 설명합니다.
-* [AEM용](/help/sites-developing/spa-architecture.md) SPA를 개발하는 방법에서는 프런트 엔드 개발자가 AEM용 SPA를 개발하는 방법뿐만 아니라 SPA가 AEM 아키텍처와 어떻게 연동되는지 설명합니다.
+* [AEM에서 SPA 시작하기](/help/sites-developing/spa-getting-started-react.md) 는 AEM에서 SPA 편집기로 작동하는 기본 SPA을 구성하는 방법을 보여줍니다
+* [SPA 편집기 ](/help/sites-developing/spa-overview.md) 오버뷰에서는 AEM과 SPA 간의 통신 모델에 대해 더 자세히 살펴봅니다.
+* [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) 에서는 프런트 엔드 개발자가 AEM용 SPA을 개발하는 방법뿐만 아니라 SPA과 AEM 아키텍처와 상호 작용하는 방법을 설명합니다.
