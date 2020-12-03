@@ -26,7 +26,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: 반응 또는 각도)이 필요한 프로젝트에 권장되는 솔루션입니다.
+>SPA 편집기는 SPA 프레임워크 기반 클라이언트측 렌더링(예: 반응 또는 각도)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 * [구성 요소 매핑](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [페이지 모델 관리자](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
