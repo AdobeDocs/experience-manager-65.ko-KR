@@ -3,9 +3,9 @@ title: 자산 사용 및 공유에 대한 보고서
 description: 디지털 자산의 사용, 활동 및 공유를 이해하는 데 도움이 되는  [!DNL Adobe Experience Manager Assets] 의 자산에 대한 보고서입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 6016cefa9456d8f142347ff197b61b1614d55ab9
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1131'
 ht-degree: 2%
 
 ---
@@ -152,3 +152,11 @@ ht-degree: 2%
 1. **[!UICONTROL DAM 보고서 삭제 서비스]** 구성을 엽니다.
 1. `scheduler.expression.name` 필드에서 제거 서비스의 빈도(시간 간격)를 지정합니다. 보고서에 대한 연령 및 수량 임계값을 구성할 수도 있습니다.
 1. 변경 사항을 저장합니다.
+
+## 문제 해결 정보, 팁 및 제한 사항 {#best-practices-and-limitations}
+
+* 보고서의 일부 보고서나 숫자를 사용할 수 없거나 예상한 대로 사용할 수 없는 경우 [!UICONTROL 일 CQ DAM 이벤트 레코더] 서비스가 활성화되어 있는지 확인하십시오.
+
+* 더 이상 필요하지 않은 보고서를 제거합니다. DAM 보고서 삭제 서비스의 구성 옵션을 사용하여 보고서를 삭제할 기준을 구성합니다.
+
+* 디스크 사용량 보고서가 생성되지 않고 [!DNL Dynamic Media]을 사용하고 있는 경우 모든 자산이 올바르게 진행되는지 확인하십시오. 해결하려면 자산을 재처리한 후 보고서를 다시 생성합니다.
