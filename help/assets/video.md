@@ -29,7 +29,7 @@ ht-degree: 1%
 >
 >Dynamic Media에서 비디오를 사용하여 작업하기 전에 AEM 관리자가 다이내믹 미디어 - Scene7 모드 또는 다이내믹 미디어 - 하이브리드 모드에서 Dynamic Media Cloud Services을 이미 사용하고 구성했는지 확인하십시오.
 >
->* 동적 미디어 구성 - Scene7 모드 및 [다이내믹 미디어 문제 해결 - Scene7 모드에서 [다이내믹 미디어 Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)을 참조하십시오.](/help/assets/troubleshoot-dms7.md)
+>* 다이내믹 [미디어 구성 - Scene7 모드](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) 및 다이내믹 미디어 문제 [해결 - Scene7 모드에서 다이내믹 미디어 Cloud Services 구성을 참조하십시오.](/help/assets/troubleshoot-dms7.md)
    >
    >
 * 동적 미디어 구성 - 하이브리드 모드에서 [다이내믹 미디어 Cloud Services 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
