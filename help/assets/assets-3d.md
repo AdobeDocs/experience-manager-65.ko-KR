@@ -53,7 +53,7 @@ Dynamic Media는 다음 3D 형식을 지원합니다.
 
 Dynamic Media에서 3D 자산으로 작업하기 전에 AEM 관리자가 Dynamic Media - Scene7 모드에서 Dynamic Media Cloud Services을 이미 사용하고 구성했는지 확인하십시오.
 
-동적 미디어 구성 - Scene7 모드 및 [다이내믹 미디어 문제 해결 - Scene7 모드에서 [다이내믹 미디어 Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)을 참조하십시오.](/help/assets/troubleshoot-dms7.md)
+다이내믹 [미디어 구성 - Scene7 모드](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) 및 다이내믹 미디어 문제 [해결 - Scene7 모드에서 다이내믹 미디어 Cloud Services 구성을 참조하십시오.](/help/assets/troubleshoot-dms7.md)
 
 1. **3D 자산 업로드**
 
