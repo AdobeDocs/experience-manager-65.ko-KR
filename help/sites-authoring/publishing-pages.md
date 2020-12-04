@@ -195,7 +195,7 @@ ht-degree: 89%
 
    >[!NOTE]
    >
-   >**워크플로우** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 자세한 내용은 게시 권한에 대한 [이전 참고 사항 및 [워크플로우에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)을 참조하십시오.](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd)
+   >**워크플로우** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 자세한 내용은 게시 권한에 대한 [이전 참고 사항 및](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) [워크플로우에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)을 참조하십시오.
 
    참조는 트리거된 워크플로우 및 지정된 옵션별로 그룹화되어 다음 작업을 수행할 수 있습니다.
 
