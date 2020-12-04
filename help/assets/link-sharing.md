@@ -3,9 +3,9 @@ title: 링크를 사용하여 에셋 공유
 description: 자산, 폴더 및 컬렉션을 URL로 공유합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f6da1c69ea3b3c3f07e8ac10fd8e1e9c7208158
+source-git-commit: e36d08c9ea89e840aecde79ffdd911372c0c54ee
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1056'
 ht-degree: 1%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 1%
    >
    >조직의 구성원이 아닌 사용자의 이메일 ID를 입력하면 [!UICONTROL 외부 사용자]라는 단어 앞에 사용자의 이메일 ID가 붙습니다.
 
-1. **[!UICONTROL 제목]** 필드에 제목 줄을 입력합니다.
+1. **[!UICONTROL 제목]** 상자에 공유할 자산의 제목을 입력합니다.
 
-1. **[!UICONTROL 메시지]** 필드에 선택적 메시지를 입력합니다.
+1. **[!UICONTROL 메시지]** 상자에 선택적 메시지를 입력합니다.
 
 1. **[!UICONTROL 만료]** 필드에서 링크가 작동하지 않을 만료 날짜 및 시간을 지정합니다. 기본적으로 만료 날짜는 링크를 공유하는 날짜로부터 1주일 동안 설정됩니다.
 
@@ -69,9 +69,9 @@ ht-degree: 1%
 
 1. **[!UICONTROL 공유]**&#x200B;를 클릭합니다. 링크가 이메일을 통해 사용자와 공유되고 있음을 확인하는 메시지가 나타납니다.
 
-1. 공유 자산을 보려면 사용자에게 전송되는 이메일의 링크를 클릭합니다. 공유 자산이 **[!UICONTROL Adobe Marketing Cloud]** 페이지에 표시됩니다.
+1. 공유 자산을 보려면 사용자에게 전송되는 이메일의 링크를 클릭합니다. 공유 자산이 [!UICONTROL Adobe Marketing Cloud] 페이지에 표시됩니다.
 
-   ![chlimage_1-260](assets/chlimage_1-545.png)
+   ![Adobe Marketing Cloud에서 공유 에셋 사용 가능](assets/chlimage_1-545.png)
 
 1. 자산의 미리 보기를 생성하려면 공유 자산을 클릭합니다. 미리 보기를 닫고 **[!UICONTROL Marketing Cloud]** 페이지로 돌아가려면 도구 모음에서 **[!UICONTROL 뒤로]**&#x200B;를 클릭합니다. 폴더를 공유한 경우 상위 폴더&#x200B;**[!UICONTROL 를 클릭하여 상위 폴더로 돌아갑니다.]**
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 1. 공유 자산을 다운로드하려면 도구 모음에서 **[!UICONTROL 선택]**&#x200B;을 클릭하고 자산을 클릭한 다음 도구 모음에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
-   ![chlimage_1-262](assets/chlimage_1-547.png)
+   ![공유 자산을 다운로드하는 도구 모음 옵션](assets/chlimage_1-547.png)
 
 1. 링크로 공유한 자산을 보려면 [!DNL Assets] 사용자 인터페이스로 이동하고 [!DNL Experience Manager] 로고를 클릭합니다. **[!UICONTROL 내비게이션]**&#x200B;을 선택합니다. 탐색 창에서 **[!UICONTROL 공유 링크]**&#x200B;를 선택하여 공유 에셋 목록을 표시합니다.
 
