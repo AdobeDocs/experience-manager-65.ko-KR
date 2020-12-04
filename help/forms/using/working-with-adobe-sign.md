@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 11f3e2f7cb742340388bc9421a3ea8f25deabec5
+source-git-commit: 4abfda568fc15f225510c79635387142aefddc72
 workflow-type: tm+mt
 source-wordcount: '3949'
 ht-degree: 0%
@@ -215,7 +215,8 @@ AEM Forms 인스턴스에 대해 여러 Adobe Sign 서비스를 구성할 수 �
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. -->
+>Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+-->
 
 양식 서명 환경을 경험해 보십시오. 양식을 미리 보고 서명 환경을 확인할 수 있습니다. 게시된 양식에서는 서명자가 이메일을 통해 서명을 받기 위한 양식을 수신하면 Adobe Sign 블록 필드가 표시됩니다. 이러한 경험을 폼 없는 서명 경험이라고도 합니다. 첫 번째 서명자에 대해 양식 서명 환경을 구성할 수도 있습니다. 자세한 내용은 [양식 서명 경험 만들기](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience)를 참조하십시오.
 
