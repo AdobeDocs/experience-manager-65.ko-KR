@@ -1,11 +1,11 @@
 ---
 title: PDF 래스터라이저를 사용하여 변환 생성
-description: ' [!DNL Adobe Experience Manager]의 Adobe PDF 래스터라이저 라이브러리를 사용하여 고품질 축소판과 변환을 생성합니다.'
+description: Adobe PDF 래스터라이저 라이브러리를 사용하여 고품질 축소판과 변환을 생성할 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b68311d593730d1c441b863967b15e6481758267
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 0%
 
 # PDF 래스터라이저 프로그램 사용 {#using-pdf-rasterizer}
 
-콘텐트가 많이 사용되는 대용량 PDF 또는 AI 파일을 [!DNL Adobe Experience Manager Assets]에 업로드하면 기본 변환에서 정확한 출력을 생성하지 못할 수 있습니다. Adobe의 PDF 래스터라이저 라이브러리는 기본 라이브러리의 출력 결과와 비교하여 보다 안정적이고 정확한 출력물을 생성할 수 있습니다. Adobe에서는 다음 시나리오에 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
+콘텐트를 많이 사용하는 PDF 또는 AI 파일을 [!DNL Adobe Experience Manager Assets]에 업로드하면 기본 라이브러리에서 정확한 출력을 생성하지 못할 수 있습니다. Adobe의 PDF 래스터라이저 라이브러리는 기본 라이브러리의 출력 결과와 비교하여 보다 안정적이고 정확한 출력물을 생성할 수 있습니다. Adobe에서는 다음 시나리오에 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
+
+Adobe은 다음과 같은 경우 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
 * 컨텐츠가 많은 AI 파일 또는 PDF 파일
 * 기본적으로 생성되지 않는 축소판이 포함된 AI 파일 및 PDF 파일
@@ -47,14 +49,12 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 
 1. **[!UICONTROL PDF 래스터라이저 처리기]** 단계에 대해 다음 인수를 구성합니다.
 
    * MIME 형식:`application/pdf` 또는 `application/postscript`
-   * 명령: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
+   * 명령: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * 축소판 크기 추가:319:319, 140:100, 48:48. 필요한 경우 사용자 정의 축소판 구성을 추가합니다.
 
    `PDFRasterizer` 명령의 명령줄 인수에는 다음이 포함될 수 있습니다.
 
    * `-d`:텍스트, 벡터 아트워크 및 이미지의 매끄러운 렌더링을 가능하게 하는 플래그. 고품질의 이미지를 만들 수 있습니다. 그러나 이 매개 변수를 포함하면 명령이 느리게 실행되고 이미지 크기가 커집니다.
-
-   * `-p`:페이지 번호. 기본값은 모든 페이지입니다. 모든 페이지를 표시하려면 `*`을(를) 사용하십시오.
 
    * `-s`:최대 이미지 크기(높이 또는 너비). 각 페이지에 대해 DPI로 변환됩니다. 페이지 크기가 다른 경우 각 페이지의 크기가 서로 다를 수 있습니다. 기본값은 실제 페이지 크기입니다.
 
@@ -66,7 +66,6 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 
 
 
 1. 중간 변환을 삭제하려면 **[!UICONTROL 생성된 변환 삭제]**&#x200B;를 선택합니다.
-
 1. PDF 래스터라이저가 웹 변환을 생성하도록 하려면 **[!UICONTROL 웹 변환 생성]**&#x200B;을 선택합니다.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
@@ -76,23 +75,17 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. 워크플로우를 저장합니다.
-
 1. PDF 래스터라이저가 PDF 라이브러리가 있는 PDF 페이지를 처리할 수 있도록 하려면 [!UICONTROL Workflow] 콘솔에서 **[!UICONTROL DAM Process Subasset]** 모델을 엽니다.
-
 1. 사이드 패널에서 **[!UICONTROL Create Web-Enabled Image Rendition]** 단계의 PDF 래스터라이저 처리기 단계를 드래그합니다.
-
 1. **[!UICONTROL PDF 래스터라이저 처리기]** 단계에 대해 다음 인수를 구성합니다.
 
    * MIME 형식:`application/pdf` 또는 `application/postscript`
-
-   * 명령: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
+   * 명령: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * 축소판 크기 추가:`319:319`, `140:100`, `48:48`. 필요에 따라 사용자 정의 축소판 구성을 추가합니다.
 
    `PDFRasterizer` 명령의 명령줄 인수에는 다음이 포함될 수 있습니다.
 
    * `-d`:텍스트, 벡터 아트워크 및 이미지의 매끄러운 렌더링을 가능하게 하는 플래그. 고품질의 이미지를 만들 수 있습니다. 그러나 이 매개 변수를 포함하면 명령이 느리게 실행되고 이미지 크기가 커집니다.
-
-   * `-p`:페이지 번호. 기본값은 모든 페이지입니다. `*` 는 모든 페이지를 나타냅니다.
 
    * `-s`:최대 이미지 크기(높이 또는 너비). 각 페이지에 대해 DPI로 변환됩니다. 페이지 크기가 다른 경우 각 페이지의 크기가 서로 다를 수 있습니다. 기본값은 실제 페이지 크기입니다.
 
@@ -113,4 +106,4 @@ PDF 래스터라이저를 사용하여 생성된 축소판 및 미리 보기는 
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. 워크플로우를 저장합니다.
-1. PDF 또는 AI 파일을 [!DNL Experience Manager Assets]에 업로드합니다. PDF 래스터라이저는 파일의 축소판과 웹 변환을 생성합니다.
+1. PDF 파일 또는 AI 파일을 [!DNL Experience Manager Assets]에 업로드합니다. PDF 래스터라이저는 파일의 축소판과 웹 변환을 생성합니다.
