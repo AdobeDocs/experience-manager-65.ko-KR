@@ -4,9 +4,9 @@ description: 필터 패널을 사용하여 [!DNL Adobe Experience Manager] 에�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f5aa1d31f3b31e29073937e044c8fbac27138c4d
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '5769'
+source-wordcount: '5767'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
 | [제한 ](#limitations) 사항 및  [팁](#tips) |  |  |
 | [일러스트레이션 예제](#samples) |  |  |
 
-[!DNL Experience Manager] 웹 인터페이스 상단에 있는 Omnisearch 필드를 사용하여 자산을 검색합니다. ]**Assets**[!UICONTROL  > ]**Files**[!UICONTROL &#x200B;로 이동하고 맨 위 막대에서 [!DNL Experience Manager]search_icon![을 클릭하고 검색 키워드를 입력한 다음 Return 키를 누릅니다. ](assets/do-not-localize/search_icon.png) 또는 키워드 단축키 `/`(슬래시)를 사용하여 Omnisearch 필드를 엽니다. `Location:Assets` 는 검색을 DAM 자산으로 제한하도록 미리 선택되어 있습니다. [!DNL Experience Manager] 검색 키워드를 입력하기 시작할 때 제안을 제공합니다.
+[!DNL Experience Manager] 웹 인터페이스 상단에 있는 Omnisearch 필드를 사용하여 자산을 검색합니다. ]**자산**[!UICONTROL  > ]**파일**[!UICONTROL &#x200B;로 이동하고 맨 위 막대에서 [!DNL Experience Manager]search_icon![을 클릭하고 검색 키워드를 입력한 다음 ](assets/do-not-localize/search_icon.png)을 선택합니다. `Return` 또는 키워드 단축키 `/`(슬래시)를 사용하여 Omnisearch 필드를 엽니다. `Location:Assets` 는 검색을 DAM 자산으로 제한하도록 미리 선택되어 있습니다. [!DNL Experience Manager] 검색 키워드를 입력하기 시작할 때 제안을 제공합니다.
 
 **[!UICONTROL 필터]** 패널을 사용하여 자산, 폴더, 태그 및 메타데이터를 검색합니다. 파일 유형, 파일 크기, 마지막 수정 날짜, 자산 상태, 인사이트 데이터, Adobe Stock 라이선스와 같은 다양한 옵션(예측 가능)을 기반으로 검색 결과를 필터링할 수 있습니다. 필터 패널을 사용자 정의하고 [검색 패싯](/help/assets/search-facets.md)을 사용하여 검색 예측자를 추가 또는 제거할 수 있습니다. [!UICONTROL 필터] 패널의 [!UICONTROL 파일 유형] 필터에는 혼합 상태 확인란이 있습니다. 따라서 중첩된 설명(또는 형식)을 모두 선택하지 않으면 첫 번째 수준 확인란은 부분적으로 선택되어 있습니다.
 
@@ -259,7 +259,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 * 검색 쿼리에 선행 공백을 입력하지 마십시오. 그렇지 않으면 검색이 작동하지 않습니다.
 * [!DNL Experience Manager] 검색된 결과에서 자산의 속성을 선택한 다음 검색을 취소한 후에도 검색어를 계속 표시할 수 있습니다.  <!-- (CQ-4273540) -->
 * 폴더 또는 파일 및 폴더를 검색할 때 어떤 매개 변수에서든 검색 결과를 정렬할 수 없습니다.
-* Omnisearch 막대에 입력하지 않고 Return 키를 누르면 [!DNL Experience Manager]이 폴더가 아닌 파일 전용 목록을 반환합니다. 키워드를 사용하지 않고 폴더를 특히 검색하는 경우 [!DNL Experience Manager]은 결과를 반환하지 않습니다.
+* Omnisearch 막대에 입력하지 않고 `Return`을 선택하면 폴더가 아닌 파일 목록만 반환됩니다. [!DNL Experience Manager] 키워드를 사용하지 않고 폴더를 특히 검색하는 경우 [!DNL Experience Manager]은 결과를 반환하지 않습니다.
 
 시각적 검색 또는 유사성 검색에는 다음과 같은 제한이 있습니다.
 
