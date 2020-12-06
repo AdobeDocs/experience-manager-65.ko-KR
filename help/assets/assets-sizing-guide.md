@@ -3,9 +3,9 @@ title: '[!DNL Assets] 크기 조정 가이드'
 description: 배포 [!DNL Adobe Experience Manager Assets]에 필요한 인프라와 리소스를 예상하기 위한 효율적인 지표를 결정하는 우수 사례입니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 1. 시스템에 로드될 자산의 크기와 수를 결정합니다.
 1. [!DNL Experience Manager]에 업로드할 자산의 대표 샘플을 가져옵니다. 예를 들어 PSD, JPG, AI 및 PDF 파일을 시스템에 로드하려는 경우 각 파일 포맷의 여러 샘플 이미지가 필요합니다. 또한 이러한 샘플은 이미지의 다양한 파일 크기와 복잡함을 나타냅니다.
 1. 사용할 변환을 정의합니다.
-1. [!DNL ImageMagick] 또는 [!DNL Adobe Creative Cloud] 응용 프로그램을 사용하여 [!DNL Experience Manager]에서 변환을 만듭니다. 사용자가 지정하는 변환 외에도 기본 변환을 만듭니다. Scene7을 구현하는 사용자의 경우 IC 바이너리를 사용하여 Experience Manager에 저장될 PTIFF 변환을 생성할 수 있습니다.
+1. [!DNL ImageMagick] 또는 [!DNL Adobe Creative Cloud] 응용 프로그램을 사용하여 [!DNL Experience Manager]에서 변환을 만듭니다. 사용자가 지정하는 변환 외에도 기본 변환을 만듭니다. 다이내믹 미디어를 구현하는 사용자의 경우 IC 바이너리를 사용하여 Experience Manager에 저장될 PTIFF 변환을 생성할 수 있습니다.
 1. 하위 자산을 사용하려면 적절한 파일 유형에 맞게 하위 자산을 생성합니다.
 1. 출력 이미지, 변환 및 하위 자산의 크기를 원본 이미지와 비교합니다. 시스템이 로드되면 예상 성장 요인을 생성할 수 있습니다. 예를 들어 1GB의 자산을 처리한 후 크기가 3GB인 표현물과 하위 자산을 생성하는 경우, 표현물 증가 요소는 3입니다.
 1. 시스템에서 자산 버전을 유지할 최대 시간을 결정합니다.
