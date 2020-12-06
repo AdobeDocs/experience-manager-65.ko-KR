@@ -1,14 +1,14 @@
 ---
 title: 다이내믹 미디어 설정
-description: 다이내믹 미디어를 설정하려면 다이내믹 미디어를 구성하고 이미지 및 뷰어 사전 설정을 관리해야 합니다
+description: Dynamic Media를 설정하려면 Dynamic Media를 구성하고 이미지 및 뷰어 사전 설정을 관리해야 합니다.
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '254'
 ht-degree: 14%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->이 설명서는 AEM에 직접 통합된 Dynamic Media 기능에 대해 설명합니다. AEM에 통합된 Dynamic Media Classic(이전의 Scene7)을 사용하는 경우 [Dynamic Media Classic 통합 문서](/help/sites-administering/scene7.md)를 참조하십시오.
+>이 설명서는 AEM에 직접 통합된 Dynamic Media 기능에 대해 설명합니다. AEM에 통합된 Dynamic Media Classic을 사용하는 경우 [Dynamic Media Classic 통합 문서](/help/sites-administering/scene7.md)를 참조하십시오.
 >
 >Dynamic Media Classic과 함께 통합된 AEM을 사용하고 싶은 경우 [이중 사용 시나리오](/help/sites-administering/scene7.md#dual-use-scenario)를 참조하십시오.
 
