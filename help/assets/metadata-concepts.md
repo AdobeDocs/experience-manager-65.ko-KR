@@ -3,9 +3,9 @@ title: 메타데이터 개념 이해
 description: 보다 손쉽게 에셋을 분류하고 구성할 수 있는 메타데이터의 요구 사항과 유형을 살펴볼 수 있습니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2731'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,7 @@ DCMES 외에도 Dublin Core Initiative에서 만든 기타 메타데이터 요�
 | 설명 | 자산에 대한 자세한 정보입니다. |
 | format | 자산의 파일 형식, 실제 미디어 또는 크기입니다. [!DNL Experience Manager] 을  `dc:format` 사용하여 자산의 MIME 형식을 나타냅니다. |
 | 식별자 | 자산에 대한 고유한 참조입니다. |
-| 언어 | 자산의 언어(예: 영어). |
+| 언어 | 자산의 언어(예: 영어의 경우 `en`). |
 | 게시자 | 자산을 사용할 수 있도록 만드는 담당자 또는 회사 |
 | 관계 | 관련 자산. |
 | 권리 | 이 자산에 대한 권한이 있는 사람에 대한 정보입니다. |
@@ -271,7 +271,7 @@ XMP에서는 텍스트 속성에 `xml:lang` 속성을 추가하여 텍스트 언
 
 [!DNL Adobe Experience Manager Assets]은 [!DNL Adobe Bridge] 및 기타 [!DNL Adobe Creative Cloud] 앱을 통해 자산에 추가된 IPTC 메타데이터, 크리에이티브 등급 및 키워드를 지원하는 방법을 알아봅니다.
 
-[!DNL Adobe Experience Manager Assets] 은 자산을 설명하는 데 널리 사용되는 IPTC 메타데이터 표준을 지원합니다. 이러한 방식으로 [!DNL Assets]은 사진 작가, 크리에이티브 에이전시, 라이브러리, 박물관 등을 비롯한 다양한 파티의 이미지를 더욱 잘 받아들여줍니다.
+[!DNL Adobe Experience Manager Assets] 은 자산을 설명하는 데 널리 사용되는 IPTC 메타데이터 표준을 지원합니다. 이러한 방식으로 [!DNL Assets]은 사진 작가, 크리에이티브 에이전시, 라이브러리, 박물관 등을 비롯한 다양한 파티의 이미지 수락을 향상시켜 줍니다.
 
 자산에 대한 기본 메타데이터 스키마는 IPTC 코어 및 IPTC 확장 메타데이터 스키마를 통합하여 포괄적인 메타데이터 속성을 정의하므로 사용자가 이미지에 표시된 사람, 위치 및 제품에 대한 정확하고 안정적인 데이터를 추가할 수 있습니다. 또한 이미지 만들기와 관련된 날짜, 이름 및 식별자, 권한 정보를 표현하는 유연한 방법을 지원합니다.
 
