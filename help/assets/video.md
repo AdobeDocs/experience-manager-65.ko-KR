@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '11828'
+source-wordcount: '11812'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 >
 >Dynamic Media에서 비디오를 사용하여 작업하기 전에 AEM 관리자가 다이내믹 미디어 - Scene7 모드 또는 다이내믹 미디어 - 하이브리드 모드에서 Dynamic Media Cloud Services을 이미 사용하고 구성했는지 확인하십시오.
 >
->* 다이내믹 [미디어 구성 - Scene7 모드](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) 및 다이내믹 미디어 문제 [해결 - Scene7 모드에서 다이내믹 미디어 Cloud Services 구성을 참조하십시오.](/help/assets/troubleshoot-dms7.md)
+>* 동적 미디어 구성 - Scene7 모드 및 [다이내믹 미디어 문제 해결 - Scene7 모드에서 [다이내믹 미디어 Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)을 참조하십시오.](/help/assets/troubleshoot-dms7.md)
    >
    >
 * 동적 미디어 구성 - 하이브리드 모드에서 [다이내믹 미디어 Cloud Services 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
@@ -146,7 +146,7 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry, Windows �
 * 비디오 에셋을 효율적으로 관리할 수 있는 완벽한 메타데이터 지원을 통해 비디오를 구성, 검색 및 검색할 수 있습니다.
 * 응용 비디오 세트를 웹뿐만 아니라 iPhone, iPad, Android, Blackberry 및 Windows 폰을 비롯한 데스크탑 및 모바일 장치에 제공합니다.
 
-적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Scene7 뷰어 참조 안내서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)를 참조하십시오.
+적응형 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [다이내믹 미디어 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video)를 참조하십시오.
 
 Dynamic Media는 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다.[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
 
@@ -162,7 +162,7 @@ Dynamic Media는 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 [동적 비디오 재생](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) 샘플을 참조하십시오.
 
-Adobe Scene7 뷰어 참조 안내서에서 [AEM Assets 및 Dynamic Media Classic용 뷰어](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) 및 AEM 자산에 대한 뷰어](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)를 참조하십시오.[
+또한 [AEM Assets 및 Dynamic Media Classic용 뷰어](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) 및 AEM 자산에 대한 뷰어](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)를 참조하십시오.[
 
 ## 모범 사례:HTML5 비디오 뷰어 {#best-practice-using-the-html-video-viewer} 사용
 
@@ -174,7 +174,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하고 내장된 재생을 제공하며 브라우저 기능에 따라 적응형 및 점진적 스트리밍을 사용하는 단일 플레이어로 통합함으로써 리치 미디어 컨텐츠의 범위를 데스크탑 및 모바일 사용자 모두로 확대하고 간소화된 비디오 경험을 제공할 수 있습니다.
 
-Adobe Scene7 뷰어 참조 안내서의 [HTML5 뷰어 정보](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)도 참조하십시오.
+[HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)도 참조하십시오.
 
 ### HTML5 비디오 뷰어 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}를 사용하여 데스크톱 컴퓨터와 모바일 장치에서 비디오 재생
 
@@ -191,7 +191,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 점진적 비디오는 사용자의 데스크탑 시스템 또는 모바일 장치에 로컬로 비디오를 다운로드하여 저장합니다.
 
-다음 표에서는 Scene7 비디오 뷰어를 사용하는 데스크탑 컴퓨터와 모바일 장치에서 비디오의 장치, 브라우저 및 재생 방법에 대해 설명합니다.
+다음 표에서는 Dynamic Media 비디오 뷰어를 사용하는 데스크탑 컴퓨터 및 모바일 장치에서 비디오의 장치, 브라우저 및 재생 방법에 대해 설명합니다.
 
 <table>
  <tbody>
@@ -402,7 +402,7 @@ VBR과 CBR을 선택하는 경우 미디어 파일에 VBR을 사용하는 것이
 
 | 비디오 유형 | 너비 x 높이 | 폭 비율 | 높이 비율 |
 |--- |--- |--- |--- |
-| 소스 | 1920x1080 | 1 | 3 |
+| 소스 | 1920x1080 | 1 | 1 |
 | 인코딩됨 | 960 x 540 | 2 | 2 |
 | 인코딩됨 | 640 x 360 | 3 | 3 |
 | 인코딩됨 | 480 x 270 | 4 | 4 |
@@ -1005,9 +1005,9 @@ YouTube에서 비디오를 제거하기 위해 비디오를 게시 취소하려�
 
 Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 정의 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 Scene7 HTML5 뷰어 SDK를 기반으로 자체 비디오 뷰어를 만든 경우, 다음 단계에 따라 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서로 전송하도록 하십시오.
 
-Scene7 뷰어 참조 및 Scene7 HTML5 뷰어 SDK를 사용하여 고유한 비디오 뷰어를 만듭니다.
+다이내믹 미디어 뷰어 참조 및 Scene7 HTML5 뷰어 SDK를 사용하여 고유한 비디오 뷰어를 만듭니다.
 
-[Scene7 뷰어 참조 안내서](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
+[다이내믹 미디어 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
 
 <!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
