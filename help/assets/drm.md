@@ -3,9 +3,9 @@ title: 자산 Digital Rights Management
 description: ' [!DNL Experience Manager]에서 라이선스가 부여된 자산에 대한 자산 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97d3edf155ddeabf3f39139c9079621c3627820b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1398'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 자산 만료 {#asset-expiration}
 
-에셋 만료는 에셋에 대한 라이선스 요구 사항을 적용하는 효과적인 방법입니다. 또한 게시된 자산이 만료될 때 게시 취소되어 라이선스 위반의 가능성을 확인합니다. 관리자 권한이 없는 사용자는 만료된 자산을 편집, 복사, 이동, 게시 및 다운로드할 수 없습니다.
+에셋 만료는 에셋에 대한 라이선스 요구 사항을 적용하는 효과적인 방법입니다. 이렇게 하면 게시된 자산이 만료될 때 게시 취소되어 라이선스 위반의 가능성을 방지할 수 있습니다. 관리자 권한이 없는 사용자는 만료된 자산을 편집, 복사, 이동, 게시 및 다운로드할 수 없습니다.
 
 카드 및 목록 보기 모두에서 [!DNL Assets] 콘솔에서 자산의 만료 상태를 볼 수 있습니다.
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 1. [!DNL Assets] 콘솔에서 도구 모음에서 **[!UICONTROL 검색]**&#x200B;을 클릭하여 Omnisearch 상자를 표시합니다.
 
-1. Omnisearch 상자에 커서를 놓고 Enter 키를 눌러 검색 결과 페이지를 표시합니다.
+1. Omnisearch 상자에 커서를 두고 `Enter` 키를 선택하여 검색 결과 페이지를 표시합니다.
 1. 왼쪽 레일에 있는 검색 패널을 엽니다. **[!UICONTROL 만료 상태]** 옵션을 클릭하여 확장합니다.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -110,7 +110,7 @@ ht-degree: 1%
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
 1. 상태를 기준으로 자산을 검색하려면 **[!UICONTROL 검색]** ![검색 옵션](assets/do-not-localize/search_icon.png)을 클릭하여 Omnisearch 막대를 표시합니다.
-1. Return 키를 누르고 [!DNL Experience Manager]을 클릭하여 검색 패널을 표시합니다.
+1. `Return`을 선택하고 [!DNL Experience Manager]을 클릭하여 검색 패널을 표시합니다.
 1. 검색 패널에서 **[!UICONTROL 게시 상태]**&#x200B;를 클릭하고 **[!UICONTROL 게시된]**&#x200B;을 선택하여 [!DNL Assets]에서 게시된 자산을 검색합니다.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
