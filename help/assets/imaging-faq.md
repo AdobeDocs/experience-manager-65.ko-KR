@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 5a3045b89ba6bb32482926ea8d2c5533e5394d9a
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1820'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ## 스마트 이미징과 관련된 라이선스 비용이 있습니까?{#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-아니오. 스마트 이미징은 Dynamic Media Classic(Scene7) 또는 AEM Dynamic Media(On Prem, AMS 및 AEM을 Cloud Service으로)의 기존 라이선스에 포함되어 있습니다.
+아니오. 스마트 이미징은 Dynamic Media Classic 또는 Dynamic Media(On Prem, AMS 및 AEM을 Cloud Service으로)의 기존 라이선스에 포함되어 있습니다.
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Dynamic Media 라이선스를 통해 첫 번째 사용자 지정 도메인을 �
 
 ## 스마트 이미징이 예상대로 작동하는지 확인하려면 어떻게 해야 합니까? {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. 스마트 이미징으로 계정이 구성되면 브라우저에서 Dynamic Media Classic(Scene7)/Dynamic Media 이미지 URL을 로드합니다.
+1. 스마트 이미징으로 계정이 구성되면 브라우저에서 Dynamic Media Classic 또는 Adobe Experience Manager - Dynamic Media 이미지 URL을 로드합니다.
 1. 브라우저에서 **[!UICONTROL 보기 > 개발자 > 개발자 도구]**&#x200B;를 클릭하여 크롬 개발자 창을 엽니다. 또는 원하는 브라우저 개발자 도구를 선택합니다.
 
 1. 개발자 도구가 열려 있을 때 캐시가 비활성화되어 있는지 확인합니다.
