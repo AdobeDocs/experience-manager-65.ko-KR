@@ -4,9 +4,9 @@ description: 병목 현상을 제거하고 성능을 최적화하기 위해  [!D
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc61b8473fb919a963eb73c015efbc2f06197ee8
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2744'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ accessKey=<snip>
 
 ## 네트워크 최적화 {#network-optimization}
 
-Adobe은 많은 회사가 HTTP 트래픽을 탐지하는 방화벽을 가지고 있기 때문에 파일 업로드 및 손상에 부정적인 영향을 줄 수 있습니다. 대용량 파일 업로드의 경우 WiFi 네트워크에 대한 유선 연결이 신속히 포화되도록 합니다. 네트워크 병목 현상을 식별하는 방법에 대한 지침은 [자산 크기 조정 안내서](/help/assets/assets-sizing-guide.md)를 참조하십시오. 네트워크 토폴로지를 분석하여 네트워크 성능을 평가하려면 [자산 네트워크 고려 사항](/help/assets/assets-network-considerations.md)을 참조하십시오.
+Adobe은 많은 회사가 HTTP 트래픽을 탐지하는 방화벽을 가지고 있기 때문에 파일 업로드 및 손상에 부정적인 영향을 줄 수 있습니다. 대용량 파일 업로드의 경우 WiFi 네트워크에 대한 유선 연결이 빠르게 포화상태에 도달하는지 확인합니다. 네트워크 병목 현상을 식별하는 방법에 대한 지침은 [자산 크기 조정 안내서](/help/assets/assets-sizing-guide.md)를 참조하십시오. 네트워크 토폴로지를 분석하여 네트워크 성능을 평가하려면 [자산 네트워크 고려 사항](/help/assets/assets-network-considerations.md)을 참조하십시오.
 
 기본적으로 네트워크 최적화 전략은 사용 가능한 대역폭과 [!DNL Experience Manager] 인스턴스의 로드에 따라 달라집니다. 방화벽 또는 프록시를 비롯한 일반적인 구성 옵션을 통해 네트워크 성능을 향상시킬 수 있습니다. 다음은 기억해야 할 몇 가지 핵심 사항입니다.
 
@@ -164,7 +164,7 @@ Adobe은 많은 회사가 HTTP 트래픽을 탐지하는 방화벽을 가지고 
 
 ### DAM 자산 업데이트 구성 {#dam-update-asset-configuration}
 
-[!UICONTROL DAM 자산 업데이트] 워크플로우에는 Scene7 PTIFF 생성 및 [!DNL Adobe InDesign Server] 통합과 같은 작업에 대해 구성된 전체 단계 세트가 포함되어 있습니다. 그러나 대부분의 사용자는 이러한 단계를 여러 번 수행하지 않아도 됩니다. Adobe에서는 [!UICONTROL DAM 자산 업데이트] 워크플로우 모델의 사용자 지정 복사본을 만들고 불필요한 단계를 제거하는 것이 좋습니다. 이 경우 새 모델을 가리키도록 [!UICONTROL DAM 자산 업데이트]용 릴리스를 업데이트합니다.
+[!UICONTROL DAM 자산 업데이트] 워크플로우에는 Dynamic Media PTIFF 생성 및 [!DNL Adobe InDesign Server] 통합과 같은 작업에 대해 구성된 전체 단계 세트가 포함되어 있습니다. 그러나 대부분의 사용자는 이러한 단계를 여러 번 수행하지 않아도 됩니다. Adobe에서는 [!UICONTROL DAM 자산 업데이트] 워크플로우 모델의 사용자 지정 복사본을 만들고 불필요한 단계를 제거하는 것이 좋습니다. 이 경우 새 모델을 가리키도록 [!UICONTROL DAM 자산 업데이트]용 릴리스를 업데이트합니다.
 
 [!UICONTROL DAM 자산 업데이트] 워크플로우를 집중적으로 실행하면 파일 데이터베이스의 크기가 크게 증가할 수 있습니다. Adobe에서 수행한 실험 결과를 통해 약 5500개의 워크플로가 8시간 이내에 수행되는 경우 데이터 저장소 크기가 약 400GB까지 증가할 수 있음을 알 수 있습니다.
 
@@ -180,7 +180,7 @@ Adobe은 많은 회사가 HTTP 트래픽을 탐지하는 방화벽을 가지고 
 
 많은 사이트 고객은 이미지 크기가 조정되고 이미지가 요청될 때 이미지가 잘리는 이미지 서블릿을 구현하므로 게시 인스턴스에 추가 로드를 적용합니다. 그러나 이러한 이미지를 캐시하는 한 이러한 문제를 해결할 수 있습니다.
 
-또 다른 방법은 Scene7 기술을 사용하여 이미지 조작을 완전히 포기하는 것입니다. 또한, [!DNL Experience Manager] 인프라에서 변환 생성 책임을 인계받는 브랜드 포털뿐만 아니라 전체 게시 계층도 배포할 수 있습니다.
+대체 방법은 다이내믹 미디어 기술을 사용하여 이미지 조작을 전적으로 수행하는 것입니다. 또한, [!DNL Experience Manager] 인프라에서 변환 생성 책임을 인계받는 브랜드 포털뿐만 아니라 전체 게시 계층도 배포할 수 있습니다.
 
 #### ImageMagick {#imagemagick}
 
