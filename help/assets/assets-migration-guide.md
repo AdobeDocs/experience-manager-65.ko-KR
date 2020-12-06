@@ -3,9 +3,9 @@ title: 일괄 에셋 마이그레이션
 description: 자산을 [!DNL Adobe Experience Manager]으로 가져오고, 메타데이터를 적용하고, 변환을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 >
 이 소프트웨어는 오픈 소스이며 [Apache v2 License](https://adobe-consulting-services.github.io/pages/license.html)에 의해 보호를 받습니다. 질문하거나 문제를 보고하려면 ACS AEM 도구](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) 및 [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues)에 대한 해당 [GitHub 문제를 방문하십시오.
 
-## [!DNL Experience Manager] (으)로 마이그레이션{#migrating-to-aem}
+## [!DNL Experience Manager] {#migrating-to-aem}(으)로 마이그레이션
 
 자산을 [!DNL Experience Manager]으로 마이그레이션하려면 여러 단계가 필요하며 단계적 프로세스로 확인해야 합니다. 마이그레이션 단계는 다음과 같습니다.
 
@@ -79,7 +79,7 @@ https를 통해 푸싱하는 접근 방식을 사용하는 두 가지 주요 단
 
 ### 변환 처리 {#processing-renditions}
 
-자산을 시스템에 로드한 후, 메타데이터를 추출하고 변환을 생성하려면 [!UICONTROL DAM 자산 업데이트] 워크플로우를 통해 자산을 처리해야 합니다. 이 단계를 수행하기 전에 요구 사항에 맞게 [!UICONTROL DAM 자산 업데이트] 워크플로우를 복제하고 수정해야 합니다. 즉시 사용 가능한 워크플로우에는 Scene7 PTIFF 생성 또는 [!DNL InDesign Server] 통합 등 사용자에게 필요하지 않은 여러 단계가 포함되어 있습니다.
+자산을 시스템에 로드한 후, 메타데이터를 추출하고 변환을 생성하려면 [!UICONTROL DAM 자산 업데이트] 워크플로우를 통해 자산을 처리해야 합니다. 이 단계를 수행하기 전에 요구 사항에 맞게 [!UICONTROL DAM 자산 업데이트] 워크플로우를 복제하고 수정해야 합니다. 기본 작업 과정에는 Dynamic Media PTIFF 생성 또는 [!DNL InDesign Server] 통합 등 사용자에게 필요하지 않은 여러 단계가 포함되어 있습니다.
 
 필요에 따라 워크플로우를 구성한 후에는 두 가지 옵션을 사용하여 워크플로우를 실행합니다.
 
