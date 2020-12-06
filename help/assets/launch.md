@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
 source-wordcount: '6623'
 ht-degree: 1%
@@ -227,7 +227,7 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
    * 핵심 Adobe 실행 확장 프로그램의 키 인쇄 이벤트를 트리거로 사용합니다.
    * **[!UICONTROL ZoomScale]** 데이터 요소의 값을 Adobe Analytics으로 보냅니다.
 
-이제 최종 사용자가 두 명의 뷰어와 함께 웹 페이지를 로드한다고 가정합니다. *viewer1*&#x200B;에서는 50% 크기로 확대됩니다.그런 다음 *viewer2*&#x200B;에서 25% 크기로 확대됩니다. *viewer1*&#x200B;에서는 이미지를 주위에 이동하고 마지막으로 키보드에서 키를 누릅니다.
+이제 최종 사용자가 두 명의 뷰어와 함께 웹 페이지를 로드한다고 가정합니다. *viewer1*&#x200B;에서는 50% 크기로 확대됩니다.그런 다음 *viewer2*&#x200B;에서 25% 크기로 확대됩니다. *viewer1*&#x200B;에서는 이미지를 주위에 이동하고 마지막으로 키보드에서 키를 선택합니다.
 
 최종 사용자의 활동은 Adobe Analytics에 대해 다음과 같은 두 개의 추적 호출을 만듭니다.
 
