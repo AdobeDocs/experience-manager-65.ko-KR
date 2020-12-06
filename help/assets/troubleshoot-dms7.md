@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 문제 해결 - Scene7 모드
-description: Scene7 실행 모드에서 다이내믹 미디어 문제 해결.
+description: Scene7 모드에서 실행 중인 다이내믹 미디어 문제 해결
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1285'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 * 모든 AEM 6.4 CFP(Cumulative Fix Pack)가 먼저 *에 설치되고* 사용 가능한 Dynamic Media Feature Pack이 설치되어 있습니다.
 * 옵션 기능 팩 18912가 설치되어 있습니다.
 
-   이 선택적 기능 팩은 FTP 지원을 위한 것이거나 Dynamic Media Classic(Scene7)에서 Dynamic Media로 자산을 마이그레이션하는 경우입니다.
+   이 선택적 기능 팩은 FTP 지원을 위한 것이거나 Dynamic Media Classic에서 Dynamic Media로 자산을 마이그레이션하는 경우입니다.
 
 * Cloud Services 사용자 인터페이스로 이동하고 제공된 계정이 **[!UICONTROL 사용 가능한 구성 아래에 표시되는지 확인합니다.]**
 * `Dynamic Media Asset Activation (scene7)` 복제 에이전트가 활성화되어 있는지 확인합니다.
