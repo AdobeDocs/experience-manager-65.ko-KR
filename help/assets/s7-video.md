@@ -8,9 +8,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1586'
 ht-degree: 62%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 62%
 
 # 비디오 {#video}
 
-자산은 Dynamic Media Classic(Scene7)으로 자동 인코딩하기 위해 자산에 직접 비디오를 업로드하고 페이지 작성을 위해 자산에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 비디오 자산 관리를 제공합니다.
+자산은 Dynamic Media Classic으로 자동 인코딩을 위해 자산으로 비디오를 직접 업로드하고, 페이지 작성을 위해 자산에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
 
 Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비디오의 범위를 확장합니다(자동 장치 및 대역폭 검색).
 
 * **[!UICONTROL Scene7 비디오]** 구성 요소는 장치 및 대역폭 검색을 자동으로 수행하여 데스크톱, 태블릿 및 모바일에서 올바른 형식 및 올바른 품질의 비디오를 재생합니다.
-* 자산 - 단일 비디오 자산만이 아닌 응용 비디오 세트를 포함할 수 있습니다. 응용 비디오 세트는 여러 화면에서 비디오를 원활하게 재생하는 데 필요한 모든 비디오 표현물을 위한 컨테이너입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크톱, iOS, Android, Blackberry 및 Windows 모바일 장치를 포함하는 여러 화면에서 응용 비디오 스트리밍을 위해 S7 비디오 구성 요소와 함께 응용 비디오 세트를 사용합니다. 자세한 내용은 [응용 비디오 세트에 대한 Scene7 설명서](https://help.adobe.com/ko_KR/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html)를 참조하십시오.
+* 자산 - 단일 비디오 자산만이 아닌 응용 비디오 세트를 포함할 수 있습니다. 응용 비디오 세트는 여러 화면에서 비디오를 원활하게 재생하는 데 필요한 모든 비디오 표현물을 위한 컨테이너입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크톱, iOS, Android, Blackberry 및 Windows 모바일 장치를 포함하는 여러 화면에서 응용 비디오 스트리밍을 위해 S7 비디오 구성 요소와 함께 응용 비디오 세트를 사용합니다.
 
 ## FFMPEG 및 Dynamic Media Classic 정보 {#about-ffmpeg-and-scene}
 
@@ -60,11 +60,11 @@ Scene7 비디오 구성 요소에 대해 다음 형식이 지원됩니다.
 1. AEM에서 컨텐츠 파인더의 **[!UICONTROL 동영상]** 탭에서 WCM의 비디오 자산에 액세스합니다.
 1. **[!UICONTROL Scene7 비디오]** 또는 **[!UICONTROL 기본 비디오]** 구성 요소로 작성합니다.
 
-### 비디오를 Scene7으로 업로드하는 경우 {#if-you-are-uploading-your-video-to-scene}
+### Dynamic Media Classic에 비디오를 업로드하는 경우 {#if-you-are-uploading-your-video-to-scene}
 
 자산에 대해 워크플로우 또는 버전 관리가 필요하지 않은 경우 자산을 Scene7으로 업로드해야 합니다. 다음은 권장되는 워크플로우입니다.
 
-1. Dynamic Media Classic에서 [Scene7에 대한 예약된 FTP 업로드 및 인코딩(시스템 자동화)](https://help.adobe.com/ko_KR/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html)을 설정합니다.
+1. Dynamic Media Classic에서 [Scene7에 대한 예약된 FTP 업로드 및 인코딩(시스템 자동화)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp)을 설정합니다.
 1. AEM에서 컨텐츠 파인더의 **[!UICONTROL Scene7]** 탭에서 WCM의 비디오 자산에 액세스합니다.
 1. **[!UICONTROL Scene7 비디오]** 구성 요소로 작성합니다.
 
@@ -85,7 +85,7 @@ Scene7 비디오 구성 요소에 대해 다음 형식이 지원됩니다.
 
    >[!NOTE]
    >
-   >비디오 사전 설정의 의미에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://help.adobe.com/ko_KR/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html)를 참조하십시오.
+   >비디오 사전 설정의 의미에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)를 참조하십시오.
    >
    >범용 사전 설정을 구성할 때 응용 비디오 설정을 선택하거나 **[!UICONTROL 응용 비디오 인코딩]** 옵션을 선택하는 것이 좋습니다.
 
