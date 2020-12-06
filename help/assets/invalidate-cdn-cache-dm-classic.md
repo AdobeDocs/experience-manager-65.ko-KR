@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Dynamic Media Classic(Scene7)의 [캐시 개요를 참조하십시오.](https://
    템플릿에 `<ID>`만 포함되어 있으면 동적 미디어가 `https://<server>/is/image`에 채워집니다. 여기서 `<server>`는 일반 설정에 정의된 게시 서버 이름이고 &lt;ID>는 무효화할 에셋이 됩니다.
 
 1. 페이지의 오른쪽 아래 모서리에서 **[!UICONTROL 닫기를 클릭합니다.]**
-1. Dynamic Media Classic(Scene7) UI에서 하나 이상의 자산을 선택한 다음 **[!UICONTROL 파일 > CDN 무효화를 클릭합니다.]** 작성한 템플릿 및 선택한 자산에서 생성된 하나 이상의 URL 목록이 표시됩니다. 응용 프로그램 일반 설정 아래의 &quot;게시된 서버 이름&quot; 아래에 나열된 서버 URL을 사용합니다.
+1. Dynamic Media Classic 사용자 인터페이스에서 하나 이상의 자산을 선택한 다음 **[!UICONTROL 파일 > CDN 무효화를 클릭합니다.]** 작성한 템플릿 및 선택한 자산에서 생성된 하나 이상의 URL 목록이 표시됩니다. 응용 프로그램 일반 설정 아래의 &quot;게시된 서버 이름&quot; 아래에 나열된 서버 URL을 사용합니다.
 
    예를 들어, 이전 단계에서 CDN 무효화 템플릿이 설정된 경우 이름이 `Backpack_B`인 단일 이미지 자산 이미지를 선택했다고 가정합니다. **[!UICONTROL 파일 > CDN 무효화]**&#x200B;를 클릭하면 CDN 무효화 사용자 인터페이스에 다음 URL이 생성됩니다.
 
