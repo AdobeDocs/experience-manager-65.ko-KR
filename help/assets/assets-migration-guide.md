@@ -33,7 +33,7 @@ ht-degree: 0%
 >
 이 소프트웨어는 오픈 소스이며 [Apache v2 License](https://adobe-consulting-services.github.io/pages/license.html)에 의해 보호를 받습니다. 질문하거나 문제를 보고하려면 ACS AEM 도구](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) 및 [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues)에 대한 해당 [GitHub 문제를 방문하십시오.
 
-## [!DNL Experience Manager] {#migrating-to-aem}(으)로 마이그레이션
+## [!DNL Experience Manager] (으)로 마이그레이션{#migrating-to-aem}
 
 자산을 [!DNL Experience Manager]으로 마이그레이션하려면 여러 단계가 필요하며 단계적 프로세스로 확인해야 합니다. 마이그레이션 단계는 다음과 같습니다.
 
