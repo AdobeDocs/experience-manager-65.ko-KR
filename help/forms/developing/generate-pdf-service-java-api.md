@@ -20,23 +20,23 @@ ht-degree: 0%
 
 # PDF 서비스 Java API 빠른 시작(SOAP) {#generate-pdf-service-java-api-quickstart-soap} 생성
 
-SOAP(Java API Quick Start)는 PDF 생성 서비스에서 사용할 수 있습니다.
+SOAP(Java API Quick Start)는 PDF 생성 서비스에 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 Microsoft Word 문서를 PDF 문서로 변환](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 HTML 내용을 PDF 문서로 변환](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API(SOAP 모드)를 사용하여 PDF 문서를 RTF 파일로 변환](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
+[빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서를 RTF 파일로 변환(SOAP 모드)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms과 함께 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM Forms을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms Server를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}를 사용하여 Microsoft Word 문서를 PDF 문서로 변환
 
-다음 코드 예제에서는 *Loan.doc*&#x200B;이라는 Word 파일을 *Loan.pdf*&#x200B;이라는 PDF 문서로 변환합니다. ([Word 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents)을 참조하십시오.)
+다음 코드 예제에서는 *Loan.doc*&#x200B;이라는 Word 파일을 *Loan.pdf*&#x200B;라는 PDF 문서로 변환합니다. ([Word 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents) 참조)
 
 ```java
  /*
@@ -150,7 +150,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}를 사용하여 HTML 내용을 PDF 문서로 변환
 
-다음 Java 코드 예는 https://www.adobe.com에 있는 HTML 내용을 *AdobeHTML.pdf*&#x200B;라는 PDF 문서로 변환합니다. (HTML 문서를 PDF 문서로 변환[을(를) 참조하십시오.)](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
+다음 Java 코드 예제에서는 https://www.adobe.com에 있는 HTML 컨텐츠를 *AdobeHTML.pdf*&#x200B;라는 PDF 문서로 변환합니다. ([HTML 문서를 PDF 문서로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents) 참조)
 
 ```java
  /*
@@ -254,9 +254,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API(SOAP 모드) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}를 사용하여 PDF 문서를 RTF 파일로 변환
+## 빠른 시작(SOAP 모드):Java API(SOAP 모드) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}을 사용하여 PDF 문서를 RTF 파일로 변환
 
-다음 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *Loan.rtf*&#x200B;라는 RTF 문서로 변환합니다. ([PDF 문서를 이미지가 아닌 형식으로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats)을 참조하십시오.)
+다음 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *Loan.rtf*&#x200B;라는 RTF 문서로 변환합니다. ([PDF 문서를 이미지가 아닌 형식으로 변환](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats) 참조)
 
 ```java
  /*
