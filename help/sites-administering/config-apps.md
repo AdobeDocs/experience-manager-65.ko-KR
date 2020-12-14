@@ -1,8 +1,8 @@
 ---
 title: AEM 앱에 대한 구성
 seo-title: AEM 앱에 대한 구성
-description: AEM 앱을 구성하는 방법을 알아봅니다.
-seo-description: AEM 앱을 구성하는 방법을 알아봅니다.
+description: AEM 앱 구성 방법을 알아봅니다.
+seo-description: AEM 앱 구성 방법을 알아봅니다.
 uuid: ab9acd93-da7f-4bb7-8d26-224044899068
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -30,9 +30,9 @@ Adobe Experience Manager 앱은 OTA(Air)를 통해 애플리케이션의 컨텐�
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * 관리자로 로그인합니다.
 * **구성** 메뉴에서 다음을 선택합니다.*Apache Sling 레퍼러 필터*
-* 비어 있거나 누락된 레퍼러 헤더를 허용하려면 빈 허용 필드를 선택합니다.
+* 비어 있거나 누락된 레퍼러 헤더를 허용하려면 [비어 있는 항목 허용] 필드를 선택합니다.
 * **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
-자세한 내용은 [OSGI 구성 설정](/help/sites-deploying/osgi-configuration-settings.md) 및 [보안 검사 목록 - 크로스 사이트 요청 위조 문제](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery)를 참조하십시오.
+자세한 내용은 [OSGI 구성 설정](/help/sites-deploying/osgi-configuration-settings.md) 및 [보안 검사 목록 - 사이트 간 요청 위조 문제](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery)를 참조하십시오.
