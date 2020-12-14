@@ -1,8 +1,8 @@
 ---
 title: 소셜 그래프 필수
 seo-title: 소셜 그래프 필수
-description: 구성 요소 및 다음 구성 요소 개요
-seo-description: 구성 요소 및 다음 구성 요소 개요
+description: 구성 요소 따라하기 및 다음 구성 요소 개요
+seo-description: 구성 요소 따라하기 및 다음 구성 요소 개요
 uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -18,13 +18,13 @@ ht-degree: 3%
 ---
 
 
-# 소셜 그래프 필수 {#social-graph-essentials}
+# 소셜 그래프 필수 항목 {#social-graph-essentials}
 
-Community 회원이 [activities](essentials-activities.md)를 팔로우하고 따라갈 수 있는 기능은 다음 두 구성 요소를 통해 설정됩니다.
+다음 두 구성 요소를 통해 [활동](essentials-activities.md)을 따르고 따를 수 있는 커뮤니티 멤버가 설정됩니다.
 
 `following` 구성 요소는 다른 리소스와 연결되어 있어야 하며 이 연결은 이미 [커뮤니티 사이트](overview.md#communitiessites)의 기존 커뮤니티 구성원 및 기능에 대해 설정되어 있습니다.
 
-`following` 구성 요소에는 현재 멤버 다음에 있거나 현재 구성원이 뒤에 오는 멤버가 나열됩니다. 구성원 간의 관계에 대한 이 소셜 그래프는 커뮤니티 사이트에 대해 설정된 사용자 프로필에 포함됩니다.
+`following` 구성 요소에는 현재 구성원을 팔로우하거나 현재 구성원이 뒤에 오는 멤버가 나열됩니다. 구성원 간의 관계에 대한 이 소셜 그래프는 커뮤니티 사이트에 대해 설정된 사용자 프로필에 포함됩니다.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -37,7 +37,7 @@ Community 회원이 [activities](essentials-activities.md)를 팔로우하고 �
    <td>social/socialgraph/components/hbs/relations</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
    <td>아니오</td>
   </tr>
   <tr>
@@ -65,9 +65,9 @@ Community 회원이 [activities](essentials-activities.md)를 팔로우하고 �
      <li>값:<br />
       <ul>
        <li><i>참  </i>-  <code>following</code> 구성 요소에는 현재 로그인한 구성원이 있는 구성원이 나열됩니다 <code>follows</code></li>
-       <li><i>False  </i>-  <code>following</code> 구성 요소에는 현재 로그인한 구성원 <code>follow </code>이 나열됩니다</li>
+       <li><i>False  </i>-  <code>following</code> 구성 요소에는  <code>follow </code>현재 로그인한 구성원이 있는 구성원이 나열됩니다</li>
       </ul> </li>
-    </ul> <p>속성이 없는 경우 기본값은 <i>true</i>입니다. 현재 작성 모드에서 편집 대화 상자를 사용하여 이 속성을 설정할 수 없습니다. 이 속성은 <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>를 사용하여 <code>following </code>노드 인스턴스에 추가해야 합니다.</p> </td>
+    </ul> <p>속성이 없는 경우 기본값은 <i>true</i>입니다. 현재 작성 모드에서 편집 대화 상자를 사용하여 이 속성을 설정할 수 없습니다. 속성은 <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>를 사용하여 <code>following </code>노드 인스턴스에 추가해야 합니다.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -76,7 +76,7 @@ Community 회원이 [activities](essentials-activities.md)를 팔로우하고 �
 
 | **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
-| [**포함 가능**](scf.md#add-or-include-a-communities-component) | 아니오 |
+| [**includable**](scf.md#add-or-include-a-communities-component) | 아니오 |
 | **템플릿** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
 | **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
