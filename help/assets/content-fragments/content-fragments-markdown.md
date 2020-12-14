@@ -1,6 +1,6 @@
 ---
 title: Markdown
-seo-title: 마크다운
+seo-title: Markdown
 description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
 seo-description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
 uuid: afcbf82f-3a75-4491-9172-706188db65bb
