@@ -31,9 +31,9 @@ ht-degree: 97%
 >
 >사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 지정했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
 
-구성 요소는 사이드 킥의 **구성 요소** 탭 및 **새 구성 요소 삽입** 선택기에서 페이지](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)을(를) 편집할 때 사용할 수 있습니다(**구성 요소 또는 자산을 여기로 드래그하십시오** 영역).[
+구성 요소는 [사이드 킥의 **구성 요소** 탭 및 **새 구성 요소 삽입** 선택기에서 페이지](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)을 편집할 때 사용할 수 있습니다(**구성 요소 또는 자산을 여기로 드래그하십시오** 영역).
 
-구성 요소를 선택하고 페이지에서 필요한 위치로 드래그한 다음 [콘텐츠 및 속성 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)을 선택합니다.
+구성 요소를 선택하고 페이지에서 필요한 위치로 드래그한 다음 [컨텐트 및 속성 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
 구성 요소는 다음을 포함하여(페이지 작성용) 다양한 카테고리(구성 요소 그룹)에 따라 정렬됩니다.
 
@@ -186,7 +186,7 @@ QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있
 쿼리 표현식 및 추가적인 예에 대한 전체 논의는 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)를 참조하십시오.
    * **정렬**
 기준 선택 
-`jcr:title`,  `jcr:created` `cq:lastModified` 또는 드롭다운 메뉴 `cq:template` 에서 다운로드할 수 있습니다.
+`jcr:title`,  `jcr:created`또는  `cq:lastModified`드롭다운 메뉴 `cq:template` 에서 선택합니다.
 
    * **제한**
 회전판에서 사용할 최대 항목 수로서, 선택 사항입니다.
@@ -836,7 +836,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 양식 구성 요소는 방문자가 입력하여 전송하는 양식을 만드는 데 사용됩니다. 양식 및 양식 구성 요소는 사용자 피드백(예: 고객 만족도 질문) 및 사용자 정보(예: 사용자 등록)을 비롯한 정보를 수집하는 데 사용할 수 있습니다.
 
 >[!NOTE]
-AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home.md)을 참조하십시오.
+AEM Forms에 대한 자세한 내용은 [AEM Forms 도움말](/help/forms/home.md)을 참조하십시오.
 
 양식은 여러 가지 구성 요소로 이루어집니다.
 
