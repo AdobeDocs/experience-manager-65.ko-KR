@@ -20,71 +20,71 @@ ht-degree: 0%
 
 # SocialUtils 리팩토링 {#socialutils-refactoring}
 
-## SocialUtils 패키지 사용 안 함 {#socialutils-package-deprecated}
+## SocialUtils 패키지 가치 하락 {#socialutils-package-deprecated}
 
 `com.adobe.cq.social.ugcbase.SocialUtils` 패키지는 AEM 6.1에서 더 이상 사용되지 않습니다.
 
-다음 표에는 `SocialUtils` 메서드 대신 사용할 메서드가 나와 있습니다.
+다음 표는 `SocialUtils` 메서드 대신 사용할 메서드를 나열합니다.
 
 ## SocialResourceUtilities 패키지 {#socialresourceutilities-package}
 
 | com.adobe.cq.sosocial.srp.utilities.api.SocialResourceUtilities의 메서드 |
 |---|
 | Boolean checkPermission(ResourceResolver, String path, String action) |  |
-| SocialResourceProvider getSocialResourceProvider(리소스) |  |
+| SocialResourceProvider getSocialResourceProvider(리소스 리소스) |  |
 | SocialResourceConfiguration getStorageConfig(리소스) |  |
 | 리소스 getUGCResource(Resource userResource) |  |
 | 리소스 getUGCResource(Resource userResource, ResourceResolverFactory rrf) | 새 항목 |
 | 리소스 getUGCResource(Resource userResource, ResourceResolverFactory rrf, String resourceTypeHint) | 새 항목 |
 | 리소스 getUGCResource(Resource userResource, String resourceTypeHint) |  |
-| boolean hasModeratePermissions(리소스) |  |
-| 문자열 resourceToACLPath(리소스) |  |
-| 문자열 resourceToUGCtoragePath(리소스) | 문자열 resourceToUGCPath(리소스 리소스) 대체 |
+| boolean hasDeratePermissions(리소스 리소스) |  |
+| String resourceToACLPath(Resource) |  |
+| String resourceToUGCtoragePath(리소스) | 문자열 resourceToUGCPath(Resource) 대체 |
 | 문자열 UGCoResourcePath(리소스) |  |
-| 문자열 UGCoResourcePath(문자열 ugcPath) | 메서드 서명이 변경되었습니다. |
-| 문자열 UGCoResourcePath(문자열 ugcPath, ResourceResolver) | 새 항목 |
+| 문자열 UGCoResourcePath(String ugcPath) | 메서드 서명이 변경되었습니다. |
+| 문자열 UGCoResourcePath(String ugcPath, ResourceResolver) | 새 항목 |
 
 | `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities의 메서드 |
 |---|
-| SocialResourceProvider getSocialResourceProvider(리소스) | SocialResourceProvider getConfiguredProvider(리소스 리소스) 대체 |
+| SocialResourceProvider getSocialResourceProvider(리소스 리소스) | SocialResourceProvider getConfiguredProvider(Resource 리소스) 교체 |
 
-## SCFUtiilities 패키지 {#scfutilities-package}
+## SCFUtifications 패키지 {#scfutilities-package}
 
 | `com.adobe.cq.social.`utilities.scf.api.SCFUtilites의 메서드 |
 |---|
-| 문자열 getAvatar(UserProperties userProperties) |
+| String getAvatar(UserProperties userProperties) |
 | String getAvatar(UserProperties userProperties, int size) |
 | String getAvatar(UserProperties userProperties, String absoluteDefaultAvatar) |
 | String getAvatar(UserProperties userProperties, String absoluteDefaultAvatar, SocialUtils.AVATAR_SIZE) |
-| 페이지 getContainingPage(리소스) |
-| 문자열 getSocialProfileURL(문자열 사용자 이름, 리소스 확인자, 페이지 페이지) |
+| 페이지 getContainingPage(리소스 리소스) |
+| String getSocialProfileURL(문자열 사용자 이름, ResourceResolver, Page 페이지) |
 | UserProperties getUserProperties(ResourceResolver, String userId) |
 
 ## 내부용으로만 {#for-internal-use-only}
 
-| boolean canAddNode(세션, 문자열 경로) |
+| boolean canAddNode(세션 세션, 문자열 경로) |
 |---|
 | 문자열 createUniqueNameHint(문자열 메시지) |
 | 문자열 createUniqueNameHint(문자열 메시지, int numRandomChars) |
 | 문자열 generateRandomString(int length) |
 | SocialResourceConfiguration getDefaultStorageConfig() |
-| 페이지 getPage(문자열 경로, 리소스 확인자) |
-| 문자열 getPagePath(리소스) |
+| 페이지 getPage(문자열 경로, ResourceResolver) |
+| String getPagePath(리소스 리소스) |
 | String getPagePath(문자열 경로) |
-| String getResourceTypeForIncludedResource(리소스 구성 요소, 문자열 defaultResourceType, String designPropertyName) |
-| String getResourceTypeFromDesign(리소스 리소스, 문자열 styleProperty, 문자열 defaultValue) |
-| boolean isResourceOwner(리소스) |
-| 문자열 mapUGCPath(리소스) |
-| 문자열 mapUGCPath(문자열 ugcPath, ResourceResolver) |
-| boolean mayPost(ResourceResolver, Resource resource resource) |
-| 문자열 prepareUserGeneratedContent(ResourceResolver, String path) |
+| String getResourceTypeForIncludedResource(Resource 구성 요소, String defaultResourceType, String designPropertyName) |
+| String getResourceTypeFromDesign(Resource resource, String styleProperty, String defaultValue) |
+| boolean isResourceOwner(리소스 리소스) |
+| 문자열 mapUGCPath(리소스 리소스) |
+| 문자열 mapUGCPath(String ugcPath, ResourceResolver) |
+| boolean mayPost(ResourceResolver 확인자, 리소스 리소스) |
+| 문자열 prepareUserGeneratedContent(ResourceResolver, String 경로) |
 
-## 더 이상 사용할 수 없는 메서드 {#methods-no-longer-available}
+## 메서드를 더 이상 사용할 수 없음 {#methods-no-longer-available}
 
-| 노드 createNode(ResourceResolver, String path, String nodeType) |
+| 노드 createNode(ResourceResolver resolver, String path, String nodeType) |
 |---|
-| 리소스 getResourceAtPath(ResourceResolver, 문자열 경로) |
-| 리소스 getResourceAtPath(ResourceResolver, 문자열 경로, 문자열 resourceType) |
+| 리소스 getResourceAtPath(ResourceResolver, String 경로) |
+| 리소스 getResourceAtPath(ResourceResolver, String 경로, String resourceType) |
 | 구성 getStorageCloudServiceConfig(리소스) |
 | TranslationManager getTranslationManager() |
 | TranslationSaveQueue getTranslationSaveQueue() |
