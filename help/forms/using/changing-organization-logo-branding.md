@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # 브랜딩 {#changing-the-organization-logo-for-branding} 조직의 로고 변경
 
-조직 로고는 AEM Forms 작업 영역의 왼쪽 위 모서리에 표시됩니다. 로고를 업데이트하려면 [AEM Forms 작업 공간 사용자 정의](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization)의 일반 단계를 수행한 다음 단계를 수행합니다.
+조직 로고는 AEM Forms 작업 영역의 왼쪽 위 모서리에 표시됩니다. 로고를 업데이트하려면 AEM Forms 작업 영역 사용자 정의](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization)의 [일반 단계를 수행한 다음 다음 단계를 수행합니다.
 
-1. 로고를 만들고 파일의 이름을 `NewWorkspace.png`으로 지정합니다. WebDAV 클라이언트를 사용하여 이미지 파일을 /apps/ws/images 폴더에 배치합니다.
+1. 로고를 만들고 파일의 이름을 `NewWorkspace.png`으로 지정합니다. WebDAV 클라이언트를 사용하여 /apps/ws/images 폴더에 이미지 파일을 배치합니다.
 
    >[!NOTE]
    >
