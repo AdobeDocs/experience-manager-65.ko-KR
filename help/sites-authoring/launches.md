@@ -109,7 +109,7 @@ ht-degree: 96%
 
 * **도구** 콘솔: **도구**, **사이트**, **론치**.
 
-* 또는 [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)과 직접 연결
+* 또는 [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)로 직접
 
 ## 참조의 론치(사이트 콘솔) {#launches-in-references-sites-console}
 
@@ -117,8 +117,8 @@ ht-degree: 96%
 1. **참조** 레일을 열고 소스 페이지를 선택합니다.
 1. **론치**&#x200B;를 선택합니다. 그러면 기존 론치가 나열됩니다.
 
-   ![screen-shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
+   ![screen_shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. 적절한 론치를 탭/클릭합니다. 가능한 작업 목록이 표시됩니다.
 
-   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![screen_shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
