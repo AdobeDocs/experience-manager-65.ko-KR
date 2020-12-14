@@ -22,8 +22,8 @@ ht-degree: 0%
 
 PDF Generator는 Microsoft Excel, Microsoft PowerPoint 및 Microsoft Word 파일에서 PDF/A 호환 파일을 작성할 수 있도록 지원합니다.
 
-1. 관리 콘솔에서 서비스 > PDF 생성기 > 파일 유형 설정을 클릭합니다.
-1. 새로 만들기를 클릭하거나 기존 파일 유형 설정을 선택합니다.
+1. 관리 콘솔에서 서비스 > PDF Generator > 파일 유형 설정을 클릭합니다.
+1. [새로 만들기]를 클릭하거나 기존 파일 유형 설정을 선택합니다.
 1. Microsoft Excel, Microsoft PowerPoint 또는 Microsoft Word를 클릭한 다음 PDF/A-1a 호환 파일 만들기를 선택하고 변경 내용을 저장합니다.
 1. 기본 응용 프로그램(예: Microsoft Word)에서 Adobe PDF > 변환 설정 변경을 클릭한 다음 PDF/A-1b를 선택합니다.
 
