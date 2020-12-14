@@ -1,8 +1,8 @@
 ---
-title: ToDo 목록에 추가 데이터 표시
-seo-title: ToDo 목록에 추가 데이터 표시
-description: LiveCycle AEM Forms 작업 영역의 할 일 목록 표시를 사용자 지정하여 기본 정보 외에 더 많은 정보를 표시하는 방법
-seo-description: LiveCycle AEM Forms 작업 영역의 할 일 목록 표시를 사용자 지정하여 기본 정보 외에 더 많은 정보를 표시하는 방법
+title: 할 일 목록에 추가 데이터 표시
+seo-title: 할 일 목록에 추가 데이터 표시
+description: LiveCycle 작업 영역의 할 일 목록 표시를 사용자 정의하여 기본 정보 외에 자세한 정보를 표시할 수 있습니다.
+seo-description: LiveCycle 작업 영역의 할 일 목록 표시를 사용자 정의하여 기본 정보 외에 자세한 정보를 표시할 수 있습니다.
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# ToDo 목록에 추가 데이터 표시{#displaying-additional-data-in-todo-list}
+# ToDo 목록{#displaying-additional-data-in-todo-list}에 추가 데이터 표시
 
-기본적으로 AEM Forms 작업 공간 할 일 목록에는 작업 표시 이름과 설명이 표시됩니다. 그러나 작성 날짜, 마감 날짜 등 다른 정보를 추가할 수는 있습니다. 아이콘을 추가하고 표시 스타일을 변경할 수도 있습니다.
+기본적으로 AEM Forms 작업 영역 할 일 목록에는 작업 표시 이름과 설명이 표시됩니다. 그러나 작성 날짜, 마감 날짜 등 다른 정보를 추가할 수 있습니다. 아이콘을 추가하고 표시 스타일을 변경할 수도 있습니다.
 
 ![기본 구성을 보여주는 HTML 작업 영역 할 일 탭 보기](assets/html-todo-list.png)
 
@@ -28,16 +28,16 @@ ht-degree: 0%
 
 ## {#what-can-be-added}을(를) 추가할 수 있는 항목
 
-서버에서 보낸 `task.json`에 사용할 수 있는 정보를 추가할 수 있습니다. 정보를 일반 텍스트로 추가하거나 스타일을 사용하여 정보의 형식을 지정할 수 있습니다.
+서버에서 보낸 `task.json`에서 사용할 수 있는 정보를 추가할 수 있습니다. 정보를 일반 텍스트로 추가하거나 스타일을 사용하여 정보의 형식을 지정할 수 있습니다.
 
-JSON 개체 설명에 대한 자세한 내용은 [이](/help/forms/using/html-workspace-json-object-description.md) 아티클을 참조하십시오.
+JSON 개체 설명에 대한 자세한 내용은 [이](/help/forms/using/html-workspace-json-object-description.md) 문서를 참조하십시오.
 
 ## 작업 {#displaying-information-on-a-task}에 대한 정보 표시
 
-1. AEM Forms 작업 공간 사용자 지정](../../forms/using/generic-steps-html-workspace-customization.md)에 대한 [일반 단계를 따릅니다.
+1. AEM Forms 작업 영역 사용자 지정](../../forms/using/generic-steps-html-workspace-customization.md)에 대한 [일반 단계를 따릅니다.
 1. 작업에 대한 추가 정보를 표시하려면 해당 키-값 쌍을 `translation.json` 작업 블록 내에 추가해야 합니다.
 
-   예를 들어 영어용 `/apps/ws/locales/en-US/translation.json` 변경:
+   예를 들어, 영어용 `/apps/ws/locales/en-US/translation.json` 변경:
 
    ```json
    "task" : {
@@ -138,7 +138,7 @@ JSON 개체 설명에 대한 자세한 내용은 [이](/help/forms/using/html-wo
 
 ## HTML 템플릿 {#adding-entry-in-the-html-template}에 항목 추가
 
-마지막으로, 작업에 추가할 각 속성에 대한 개발 패키지의 항목을 포함해야 합니다. 하나를 생성하려면 AEM Forms 작업 공간 코드 작성을 참조하십시오.
+마지막으로, 작업에 추가할 각 속성에 대한 개발 패키지에 항목을 포함해야 합니다. 하나를 만들려면 AEM Forms 작업 공간 코드 작성을 참조하십시오.
 
 1. 복사 `task.html`:
 
