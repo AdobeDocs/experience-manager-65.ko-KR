@@ -35,7 +35,7 @@ ht-degree: 93%
 
 >[!CAUTION]
 >
->단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 대해 두 개의 홍보 작업이 동시에 실행되면 `Launch could not be promoted` 오류가 발생할 수 있습니다(로그에 충돌 오류와 함께).
+>단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 대해 동시에 두 개의 홍보 작업을 수행하면 오류 `Launch could not be promoted`(로그의 충돌 오류와 함께)가 발생할 수 있습니다.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ ht-degree: 93%
 
    * **사이트** 콘솔:
 
-      1. [참조 레일](/help/sites-authoring/author-environment-tools.md#showingpagereferences)을 열고 [선택 모드](/help/sites-authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다(또는 참조 레일을 선택하여 여는 경우 순서는 중요하지 않습니다). 모든 참조가 표시됩니다.
+      1. [참조 레일](/help/sites-authoring/author-environment-tools.md#showingpagereferences)을 열고 [선택 모드](/help/sites-authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 또는 참조 레일을 선택하고 열면 순서는 중요하지 않습니다. 모든 참조가 표시됩니다.
 
       1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
