@@ -1,8 +1,8 @@
 ---
 title: 사용자 지정 클라우드 서비스 만들기
 seo-title: 사용자 지정 클라우드 서비스 만들기
-description: 기본 Cloud Services 세트는 사용자 정의 Cloud Service 유형으로 확장할 수 있습니다
-seo-description: 기본 Cloud Services 세트는 사용자 정의 Cloud Service 유형으로 확장할 수 있습니다
+description: 기본 Cloud Services 세트는 사용자 정의 Cloud Service 유형으로 확장할 수 있습니다.
+seo-description: 기본 Cloud Services 세트는 사용자 정의 Cloud Service 유형으로 확장할 수 있습니다.
 uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,11 +20,11 @@ ht-degree: 15%
 
 # 사용자 지정 클라우드 서비스 만들기{#creating-a-custom-cloud-service}
 
-기본 Cloud Services 세트는 사용자 정의 Cloud Service 유형으로 확장할 수 있습니다. 이렇게 하면 구조화된 방식으로 페이지에 사용자 지정 마크업을 삽입할 수 있습니다. 이는 주로 Google Analytics, Chartbeat 등과 같은 타사 분석 제공업체에서 사용됩니다. Cloud Services은 상위 페이지에서 하위 페이지로 상속되며 모든 수준에서 상속을 나눌 수 있습니다.
+기본 Cloud Services 세트는 사용자 정의 Cloud Service 유형으로 확장할 수 있습니다. 이렇게 하면 사용자 지정 마크업을 구조화된 방식으로 페이지에 삽입할 수 있습니다. 이는 주로 Google Analytics, Chartbeat 등과 같은 제3자 분석 제공자에게 사용됩니다. Cloud Services은 상위 페이지에서 하위 페이지로 상속되며 모든 수준에서 상속을 나눌 수 있습니다.
 
 >[!NOTE]
 >
->새 Cloud Service을 만들기 위한 이 단계별 안내서는 Google Analytics을 사용하는 예입니다. 사용 사례에는 모든 것이 적용되지 않을 수도 있습니다.
+>새 Cloud Service을 만들기 위한 이 단계별 안내서는 Google Analytics을 사용하는 예입니다. 모든 것이 사용 사례에 적용되지 않을 수 있습니다.
 
 1. CRXDE Lite에서 `/apps` 아래에 새 노드를 만듭니다.
 
@@ -47,7 +47,7 @@ ht-degree: 15%
    * **유형**: `sling:Folder`
 
 
-1. `/apps/acs/analytics/components`을(를) 마우스 오른쪽 단추로 클릭합니다. **만들기...를 선택합니다.** 뒤에 **구성 요소 만들기..** 다음을 지정할 수 있는 대화 상자
+1. `/apps/acs/analytics/components`을(를) 마우스 오른쪽 단추로 클릭합니다. **만들기...를 선택합니다.** 뒤에 **구성 요소 만들기...** 대화 상자가 열리면 다음을 지정할 수 있습니다.
 
    * **레이블**: `googleanalyticspage`
    * **제목**: `Google Analytics Page`
@@ -142,16 +142,16 @@ ht-degree: 15%
       * **유형**: `String`
       * **값**:  `textfield`
 
-1. `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp`을 `/apps/acs/analytics/components/googleanalyticspage/body.jsp`에 복사하고 34행에서 `libs`를 `apps`으로 변경하고 79행에서 전체 경로를 스크립트 참조로 만듭니다.
+1. `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp`을 `/apps/acs/analytics/components/googleanalyticspage/body.jsp`에 복사하고 34행에서 `libs`를 `apps`으로 변경하고 79행에서 스크립트 참조를 전체 경로 지정으로 만듭니다.
 1. `/apps/acs/analytics/templates/` 아래에 새 템플릿을 만듭니다.
 
-   * with **Resource Type** = `acs/analytics/components/googleanalyticspage`
-   * with **Label** = `googleanalytics`
-   * with **Title**= `Google Analytics Configuration`
+   * **리소스 유형** = `acs/analytics/components/googleanalyticspage` 포함
+   * **Label** = `googleanalytics` 포함
+   * **제목**= `Google Analytics Configuration` 포함
    * with **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
    * with **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
-   * with **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (템플릿 노드에서 jcr:content 노드가 아님)
-   * with **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (jcr:content)
+   * with **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage`(템플릿 노드에서 jcr:content 노드가 아님)
+   * with **cq:designPath** = `/etc/designs/cloudservices/googleanalytics`(jcr:content)
 
 1. 새 구성 요소 만들기:`/apps/acs/analytics/components/googleanalytics`.
 
@@ -196,7 +196,7 @@ ht-degree: 15%
 
    구성 속성을 기반으로 사용자 지정 마크업을 출력해야 합니다.
 
-1. `http://localhost:4502/miscadmin#/etc/cloudservices`으로 이동하고 새 페이지를 만듭니다.
+1. `http://localhost:4502/miscadmin#/etc/cloudservices`으로 이동하여 새 페이지를 만듭니다.
 
    * **제목**: `Google Analytics`
    * **이름**: `googleanalytics`
