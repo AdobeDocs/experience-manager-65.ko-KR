@@ -1,8 +1,8 @@
 ---
 title: 프로젝트 관리
 seo-title: 프로젝트 관리
-description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
-seo-description: 프로젝트를 사용하면 리소스를 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
+description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 리소스들을 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
+seo-description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 리소스들을 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
 workflow-type: tm+mt
 source-wordcount: '1057'
-ht-degree: 78%
+ht-degree: 84%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 78%
 
 >[!CAUTION]
 >
->프로젝트 제작, 작업/워크플로우 생성, 팀 보기 및 관리와 같은 프로젝트 기능을 사용하는 동안 프로젝트의 사용자가 다른 사용자/그룹을 보려면 해당 사용자는 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 액세스 권한이 있어야 합니다. 이를 구현하는 가장 쉬운 방법은 **projects-users** 그룹에 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 액세스 권한을 제공하는 것입니다.
+>프로젝트 만들기, 작업/워크플로우 만들기, 팀 보기 및 관리와 같은 프로젝트 기능을 사용하는 동안 프로젝트의 사용자가 다른 사용자/그룹을 보려면 해당 사용자는 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 액세스 권한이 있어야 합니다. 이를 구현하는 가장 쉬운 방법은 **projects-users** 그룹에 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 권한을 제공하는 것입니다.
 
 ## 프로젝트 만들기 {#creating-a-project}
 
@@ -52,7 +52,7 @@ ht-degree: 78%
 프로젝트 작성 절차는 프로젝트 간에 동일합니다. 프로젝트 유형 간의 차이에는 사용 가능한 [사용자 역할](/help/sites-authoring/projects.md)과 [워크플로우](/help/sites-authoring/projects-with-workflows.md)가 포함됩니다.  새 프로젝트를 작성하려면 다음을 수행하십시오.
 
 1. **프로젝트**&#x200B;에서 **만들기**&#x200B;를 탭/클릭하여 **프로젝트 만들기** 마법사를 엽니다.
-1. 템플릿을 선택합니다. 즉시 제공되는 단순 프로젝트, 미디어 프로젝트, [번역 프로젝트](/help/sites-administering/tc-manage.md) 및 [제품 사진 촬영 제품](/help/sites-authoring/managing-product-information.md)을(를) 사용할 수 있으며 **다음**&#x200B;을 클릭합니다.
+1. 템플릿을 선택합니다. 미리 정의된 단순 프로젝트, 미디어 프로젝트, [번역 프로젝트](/help/sites-administering/tc-manage.md) 및 [제품 사진 촬영 프로젝트](/help/sites-authoring/managing-product-information.md)를 사용할 수 있습니다. **다음**&#x200B;을 클릭하십시오.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -77,7 +77,7 @@ ht-degree: 78%
    >
    >프로젝트와 연결할 수 있는 프로젝트 타일은 [프로젝트 타일](/help/sites-authoring/projects.md#project-tiles)에 자세히 설명되어 있습니다.
 
-1. **만들기**&#x200B;를 탭/클릭합니다. 리소스는 프로젝트에 연결되어 있으므로 이제부터 프로젝트에서 리소스에 액세스할 수 있습니다.
+1. **만들기**&#x200B;를 탭/클릭합니다. 리소스는 프로젝트에 연결되며, 이제부터 프로젝트에서 이 리소스에 액세스할 수 있습니다.
 
 ### 프로젝트 또는 리소스 링크 삭제 {#deleting-a-project-or-resource-link}
 
@@ -103,7 +103,7 @@ ht-degree: 78%
 
 타일에 항목을 추가하려면 다음을 수행하십시오.
 
-1. **프로젝트**&#x200B;에서 프로젝트로 이동하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
+1. **프로젝트**&#x200B;에서 프로젝트를 탐색하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
 
    ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -133,7 +133,7 @@ ht-degree: 78%
 
 ### 프로젝트 타임라인 보기 {#viewing-a-project-timeline}
 
-프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 **타임라인**&#x200B;을 클릭/탭한 다음 선택 모드를 시작하고 프로젝트를 선택합니다. 자산은 왼쪽 창에 표시됩니다. **타임라인**&#x200B;을 클릭/탭하여 **프로젝트** 콘솔로 돌아갑니다.
+프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 **타임라인**&#x200B;을 클릭/탭한 다음 선택 모드를 시작하고 프로젝트를 선택합니다. 자산은 왼쪽 창에 표시됩니다. **프로젝트** 콘솔로 돌아가려면 **타임라인**&#x200B;을 클릭/탭합니다.
 
 ![chlimage_1-264](assets/chlimage_1-264.png)
 
