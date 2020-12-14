@@ -20,11 +20,11 @@ ht-degree: 6%
 
 ## 관리 문제 해결 {#administering}
 
-[AEM에서 관리 문제 해결을 위한 이 안내서 및 팁을 참조하십시오.](/help/sites-administering/troubleshoot.md)
+[AEM에서 관리 문제를 해결하기 위한 이 안내서와 팁을 참조하십시오.](/help/sites-administering/troubleshoot.md)
 
-## AEM 로그 문제 해결{#logs}
+## AEM 로그 문제 해결 {#logs}
 
-[AEM 로그 문제 해결에 대한 이 안내서 및 팁을 참조하십시오.](/help/sites-administering/troubleshooting.md)
+[AEM 로그 문제 해결에 대한 이 안내서와 팁을 참조하십시오.](/help/sites-administering/troubleshooting.md)
 
 ## 복제 문제 해결 {#replication}
 
