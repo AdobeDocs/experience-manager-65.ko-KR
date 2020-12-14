@@ -143,7 +143,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 * 이름
 * 경로
 * 자산 유형(예: 이미지, 원고, 문서, 비디오, 페이지, 단락, 제품)
-* 방향(세로, 가로, 정사각형) 및 스타일(색상, 단색, 회색 음영)과 같은 자산 특성
+* 방향(세로, 가로, 정사각형) 및 스타일(색상, 단색, 회색)과 같은 자산 특성
 
    * 특정 자산 유형에만 사용할 수 있음
 
@@ -248,7 +248,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 * [제품 페이지에 대한 참조](/help/sites-administering/generic.md#showing-product-references)(커머스 - 제품 콘솔에서 사용 가능)
 * [론치](/help/sites-authoring/launches.md): 관련 론치에 대한 액세스 권한 제공
 * [](/help/sites-administering/msm.md)LiveCopy: 선택한 리소스를 기반으로 하는 모든 LiveCopy 경로 표시 
-* [Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions
+* [세부](/help/sites-administering/msm-best-practices.md) 사항과 다양한 작업을 제공하는 블루프린트
 * [언어 사본](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel): 세부 사항 및 여러 작업 제공
 
 예를 들어 참조 구성 요소 내에서 끊어진 참조를 수정할 수 있습니다.
@@ -288,7 +288,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 예를 들어 해당하는 경우 **페이지 정보** 옵션도 표시됩니다.
 
 * [출시 홍보](/help/sites-authoring/launches-promoting.md): 페이지가 출시되었을 경우
-* [클래식 ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) UI에서 열기관리자가 이 옵션을  [활성화한 경우](/help/sites-administering/enable-classic-ui-editor.md)
+* [클래식 ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) UI에서 열기관리자가 이  [옵션을 활성화한 경우](/help/sites-administering/enable-classic-ui-editor.md)
 
 또한 **페이지 정보**&#x200B;는 해당하는 경우 분석 및 권장 사항에 대한 액세스 권한을 제공할 수 있습니다.
 
