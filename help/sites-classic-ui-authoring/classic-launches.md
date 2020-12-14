@@ -26,9 +26,9 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->론치의 기본 이론은 표준 작성 설명서의 [론치](/help/sites-authoring/launches.md)에서 자세히 설명합니다.
+>론치의 이면에 있는 이론은 표준 작성 문서의 [론치](/help/sites-authoring/launches.md)에서 자세히 설명합니다.
 >
->클래식 UI에서 론치를 사용하는 것과 관련된 정보는 [론치 만들기](/help/sites-classic-ui-authoring/classic-launches-creating.md), [론치 편집](/help/sites-classic-ui-authoring/classic-launches-editing.md) 및 [론치 홍보](/help/sites-classic-ui-authoring/classic-launches-promoting.md)와 함께 다음 문서에서 찾을 수 있습니다.
+>클래식 UI에서 론치를 사용하는 것과 관련된 정보는 [론치 만들기](/help/sites-classic-ui-authoring/classic-launches-creating.md), [론치 편집](/help/sites-classic-ui-authoring/classic-launches-editing.md) 및 [론치 홍보](/help/sites-classic-ui-authoring/classic-launches-promoting.md)와 함께 다음 설명서에서 확인할 수 있습니다.
 
 >[!CAUTION]
 >
