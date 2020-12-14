@@ -1,8 +1,8 @@
 ---
 title: AEM 문제 해결
 seo-title: AEM 문제 해결
-description: AEM 문제 해결에 대해 알아봅니다.
-seo-description: AEM 문제 해결에 대해 알아봅니다.
+description: AEM 관련 문제 해결에 대해 알아봅니다.
+seo-description: AEM 관련 문제 해결에 대해 알아봅니다.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -51,7 +51,7 @@ ht-degree: 12%
   </tr>
   <tr>
    <td><p>시스템 관리자</p> </td>
-   <td><p>AEM CM 빠른 시작을 두 번 클릭하면 AEM 시작 화면이 브라우저에 표시되지 않습니다.</p> </td>
+   <td><p>AEM CM Quickstart를 두 번 클릭하면 AEM 시작 화면이 브라우저에 표시되지 않습니다.</p> </td>
   </tr>
   <tr>
    <td><p>시스템 관리자</p> <p>관리자 사용자</p> </td>
@@ -76,12 +76,12 @@ ht-degree: 12%
 
 ### 스레드 덤프 만들기 {#making-a-thread-dump}
 
-스레드 덤프는 현재 활성 상태인 모든 Java 스레드의 목록입니다. AEM이 제대로 응답하지 않으면 스레드 덤프가 교착 상태 또는 기타 문제를 식별하는 데 도움이 될 수 있습니다.
+스레드 덤프는 현재 활성 상태인 모든 Java 스레드 목록입니다. AEM이 제대로 응답하지 않으면 스레드 덤프가 교착 상태 또는 기타 문제를 식별하는 데 도움이 될 수 있습니다.
 
-### Sling 스레드 덤퍼 {#using-sling-thread-dumper} 사용
+### Sling 스레드 덤퍼 사용 {#using-sling-thread-dumper}
 
-1. **AEM 웹 콘솔**;을 엽니다.예: `https://localhost:4502/system/console/`.
-1. **스레드**&#x200B;를 **상태** 탭에서 선택합니다.
+1. **AEM 웹 콘솔**;예: `https://localhost:4502/system/console/`.
+1. **상태** 탭에서 **스레드**&#x200B;를 선택합니다.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -107,24 +107,24 @@ ht-degree: 12%
 
 ### 닫히지 않은 JCR 세션 {#checking-for-unclosed-jcr-sessions} 확인
 
-AEM WCM용 기능이 개발되면 JCR 세션을 열 수 있습니다(데이터베이스 연결 여는 것과 비교할 수 있음). 열린 세션이 닫히지 않으면 다음과 같은 증상이 발생할 수 있습니다.
+AEM WCM에 대한 기능이 개발되면 JCR 세션을 열 수 있습니다(데이터베이스 연결 여는 것과 비교할 수 있음). 열린 세션이 닫히지 않으면 시스템에서 다음과 같은 증상이 나타날 수 있습니다.
 
-* 시스템 속도가 느려집니다.
+* 시스템이 느립니다.
 * CacheManager가 많이 표시됩니다.resize로그 파일의 모든 항목;다음 숫자(size=&lt;x>)는 캐시 수를 보여주며 각 세션은 여러 개의 캐시를 엽니다.
-* 시스템의 메모리 부족(심각도에 따라 몇 시간, 일 또는 몇 주 후)이 종종 발생합니다.
+* 때때로 시스템의 메모리가 부족합니다(심각도에 따라 몇 시간, 일 또는 몇 주 후).
 
 닫히지 않은 세션을 분석하고 세션을 닫지 않는 코드를 찾으려면 기술 자료 문서 [닫히지 않은 세션 분석](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html)을 참조하십시오.
 
 ### Adobe Experience Manager 웹 콘솔 사용 {#using-the-adobe-experience-manager-web-console}
 
-OSGi 번들의 상태는 또한 가능한 문제의 조기 표시를 줄 수 있다.
+OSGi 번들의 상태는 또한 가능한 문제를 조기에 나타낼 수 있다.
 
-1. **AEM 웹 콘솔**;을 엽니다.예: `https://localhost:4502/system/console/`.
+1. **AEM 웹 콘솔**;예: `https://localhost:4502/system/console/`.
 1. **OSGI** 탭에서 **번들**&#x200B;을 선택합니다.
 1. 확인:
 
-   * 번들 상태. 비활성 또는 충족되지 않은 경우 번들을 중지하고 다시 시작하십시오. 문제가 계속되면 다른 방법을 사용하여 더 자세히 조사해야 할 수도 있습니다.
-   * 번들 중 하나라도 누락된 종속성이 있는지 여부. 이러한 세부 사항은 링크인 개별 번들 이름을 클릭하여 확인할 수 있습니다(다음 예에는 문제가 없음).
+   * 번들의 상태입니다. 비활성 또는 충족되지 않은 경우 번들을 중지하고 다시 시작하십시오. 문제가 지속되는 경우 다른 방법을 사용하여 추가로 조사해야 할 수 있습니다.
+   * 번들 중 어느 것에도 종속성이 없는지 여부. 이러한 세부 사항은 링크인 개별 번들 이름을 클릭하여 확인할 수 있습니다(다음 예에는 문제가 없음).
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)
 
