@@ -29,21 +29,21 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 * [AEM Communities 개요](/help/communities/overview.md)
 * [AEM Communities 시작하기](/help/communities/getting-started.md)
-* [활성화를 위한 AEM Communities 시작하기](/help/communities/getting-started-enablement.md)
+* [AEM Communities for Enablement 시작하기](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
->작성 환경에 익숙하지 않은 경우, [기본 처리](/help/sites-authoring/basic-handling.md)에 대한 설명서와 페이지 작성에 대한 [빠른 안내서에 대한 문서를 확인하십시오](/help/sites-authoring/qg-page-authoring.md).
+>작성 환경에 익숙하지 않은 경우 [기본 처리](/help/sites-authoring/basic-handling.md)에 대한 설명서와 페이지 작성 안내서 ](/help/sites-authoring/qg-page-authoring.md)에 대한 [빠른 안내서를 봅니다.
 
 ## 사용 가능한 커뮤니티 구성 요소 {#available-communities-components}
 
-다음 표는 구성 요소 브라우저(사이드 킥됨)에서 활성화하면 작성자가 볼 수 있는 커뮤니티 구성 요소를 보여 줍니다.
+다음 표는 구성 요소 브라우저(사이드 킥됨)에서 활성화하면 작성자가 볼 수 있는 커뮤니티 구성 요소를 나열합니다.
 
 대화형 [커뮤니티 구성 요소 안내서](/help/communities/components-guide.md)도 참조하십시오.
 
 >[!NOTE]
 >
->커뮤니티 구성 요소를 사용하여 작성하는 데 필요한 정보가 포함되어 있으므로 [커뮤니티 구성 요소 기초](/help/communities/basics.md)를 읽어 보십시오.
+>커뮤니티 구성 요소로 작성하는 데 필요한 정보가 포함되어 있으므로 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 읽으십시오.
 
 | **구성 요소 제목** | **기능** |
 |---|---|
@@ -80,13 +80,13 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 >[!NOTE]
 >
->투표 구성 요소는 더 이상 사용할 수 없으며 Experience Manager Communities에서 지원됩니다.
+>투표 구성 요소는 더 이상 사용할 수 없고 Experience Manager 커뮤니티 내에서 지원됩니다.
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
-* 권장 배포에 대해 알려면 [커뮤니티 배포](/help/communities/deploy-communities.md)를 방문하십시오.
+* 권장 배포에 대해 알려면 [커뮤니티 배포](/help/communities/deploy-communities.md)를 참조하십시오.
 
-* 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시지 구성에 대해 알려면 [커뮤니티 사이트 관리](/help/communities/administer-landing.md)를 방문하십시오.
+* 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시지 구성에 대해 알려면 [커뮤니티 사이트 관리](/help/communities/administer-landing.md)를 참조하십시오.
 
 * SCF(소셜 구성 요소 프레임워크)에 대해 알아보고 커뮤니티 구성 요소 및 기능을 사용자 지정하려면 [커뮤니티 개발](/help/communities/communities.md)을 방문하십시오.
 
