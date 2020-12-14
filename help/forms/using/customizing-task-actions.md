@@ -1,8 +1,8 @@
 ---
 title: 작업 작업 사용자 지정
 seo-title: 작업 작업 사용자 지정
-description: 작업 작업의 모양을 사용자 정의하고, 작업에 이미지만 사용하고, 경로 작업에 사용되는 이미지를 사용자 지정할 수 있습니다.
-seo-description: 작업 작업의 모양을 사용자 정의하고, 작업에 이미지만 사용하고, 경로 작업에 사용되는 이미지를 사용자 지정할 수 있습니다.
+description: 작업 작업의 모양을 사용자 정의하고, 작업에 이미지만 사용하고, 경로 작업에 사용되는 이미지를 사용자 정의할 수 있습니다.
+seo-description: 작업 작업의 모양을 사용자 정의하고, 작업에 이미지만 사용하고, 경로 작업에 사용되는 이미지를 사용자 정의할 수 있습니다.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 작업 작업 사용자 지정 {#customizing-task-actions}
 
-AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수 있습니다. 작업 작업을 사용자 정의하기 전에 AEM Forms 작업 영역 사용자 지정을 위한 [일반 단계에 나열된 단계를 따라야 합니다](/help/forms/using/generic-steps-html-workspace-customization.md).
+AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수 있습니다. 작업 작업을 사용자 지정하기 전에 AEM Forms 작업 영역 사용자 지정](/help/forms/using/generic-steps-html-workspace-customization.md)에 대한 [일반 단계에 나열된 단계를 따라야 합니다.
 
 ## 텍스트 스타일 사용자 지정 {#customizing-text-style}
 
@@ -134,13 +134,13 @@ AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수
 
 ## 작업 {#showing-only-images-for-actions}에 대한 이미지만 표시
 
-작업에 사용할 이미지만 표시하려면 경로 작업에 사용되는 이미지를 사용자 정의합니다. 자세한 내용은 [경로 작업 이미지](/help/forms/using/images-route-actions.md)를 참조하십시오.
+동작에 대한 이미지만 표시하려면 경로 작업에 사용되는 이미지를 사용자 정의합니다. 자세한 내용은 [경로 작업 이미지](/help/forms/using/images-route-actions.md)를 참조하십시오.
 
 ### 작업 목록 작업 팝업 메뉴 {#task-list-task-action-nbsp-pop-up-menu}
 
-1. AEM Forms 작업 공간 작업 목록 작업 팝업 메뉴의 항목을 사용자 정의하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 공간 코드 작성을 참조하십시오.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. AEM Forms 작업 영역 작업 목록 작업 팝업 메뉴의 항목을 사용자 정의하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 영역 코드 작성을 참조하십시오.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-1. /libs/ws/js/runtime/templates/task.html을 `/apps/ws/js/runtime/templates/task.html`에 복사해서 다음 코드 조각을 바꿉니다.
+1. /libs/ws/js/runtime/templates/task.html을 `/apps/ws/js/runtime/templates/task.html`에 복사하여 다음 코드 조각을 바꿉니다.
 
    ```html
    // Orignal code
@@ -213,7 +213,7 @@ AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수
        </div>
    ```
 
-1. 앵커 태그에 할당된 고정 너비를 `/apps/ws/css/newStyle.css` 파일에서 제거합니다.
+1. `/apps/ws/css/newStyle.css` 파일에서 앵커 태그에 할당된 고정 너비를 제거합니다.
 
    ```css
    .task .taskActionsPopUp ul{
@@ -268,7 +268,7 @@ AEM Forms 작업 영역을 사용하면 작업 작업을 사용자 정의할 수
 세부 정보 작업 팝업 메뉴를 사용자 정의하려면 다음 단계를 수행합니다.
 
 * /libs/ws/js/runtime/templates/taskdetails.html 파일을 `/apps/ws/js/runtime/templates/` 폴더에 복사합니다.
-* 텍스트 대신 앵커 태그 내에 아이콘 태그를 캡슐화합니다. 예를 들어, 아래에 나열된 *새 코드*&#x200B;는 앵커 태그 내에 아이콘 태그를 캡슐화합니다.
+* 텍스트 대신 앵커 태그 내에 아이콘 태그를 캡슐화합니다. 예를 들어 아래에 나열된 *새 코드*&#x200B;는 앵커 태그 내에 icon 태그를 캡슐화합니다.
 
 ```html
 // Original code
