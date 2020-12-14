@@ -26,27 +26,27 @@ ht-degree: 5%
 
    * SCF 샌드박스 - 사이트의 영어 버전에 대한 기본 페이지입니다.
 
-   * SCF 재생 - 재생할 주 페이지의 하위 페이지입니다.
+   * SCF 재생 - 재생할 기본 페이지의 하위 페이지입니다.
 
-이 자습서는 [언어 사본](../../help/sites-administering/tc-prep.md)에 대해 다루지는 않지만, 루트 페이지가 HTML 헤더를 통해 사용자에 대한 기본 언어 탐지를 구현하고 해당 언어에 대한 적절한 기본 페이지로 리디렉션할 수 있도록 디자인되었습니다. 이 규칙은 페이지의 노드 이름에 2자로 된 국가 코드를 사용합니다(예: 영어의 경우 &quot;en&quot;, 프랑스어의 경우 &quot;fr&quot; 등).
+이 자습서는 [언어 사본](../../help/sites-administering/tc-prep.md)에 대한 내용은 아니지만 루트 페이지가 HTML 헤더를 통해 사용자에 대한 기본 언어를 감지하고 해당 언어에 대한 적절한 기본 페이지로 리디렉션할 수 있도록 디자인되었습니다. 이 규칙은 페이지의 노드 이름에 2자로 된 국가 코드를 사용합니다(예: 영어의 경우 &quot;en&quot;, 프랑스어의 경우 &quot;fr&quot;).
 
 ## 첫 번째 페이지 만들기 {#create-first-pages}
 
 이제 [페이지 템플릿](initial-app.md#createthepagetemplate)이 있으므로 /content 디렉토리에 웹 사이트의 루트 페이지를 설정할 수 있습니다.
 
-1. 표준 UI는 현재 사이트를 만드는 청사진을 제공합니다. 이 튜토리얼은 간단한 사이트를 만들기 때문에 클래식 UI가 유용합니다.
+1. 표준 UI는 현재 사이트 만들기에 대한 청사진을 제공합니다. 이 자습서는 간단한 사이트를 만드는 것이므로 클래식 UI가 유용합니다.
 
-   클래식 UI로 전환하려면 전역 탐색을 선택하고 프로젝트 아이콘 오른쪽에 마우스를 놓습니다. 표시되는 *클래식 UI로 전환* 아이콘을 선택합니다.
+   클래식 UI로 전환하려면 글로벌 탐색을 선택하고 프로젝트 아이콘 오른쪽에 마우스를 놓습니다. 나타나는 *클래식 UI로 전환* 아이콘을 선택합니다.
 
-   ![클래식 UI](assets/classic-ui.png)
+   ![클래식 ui](assets/classic-ui.png)
 
-   클래식 UI로 전환하는 기능은 관리자가 [사용하도록 설정해야 합니다](../../help/sites-administering/enable-classic-ui.md).
+   클래식 UI로 전환하는 기능은 [관리자가 활성화해야 합니다](../../help/sites-administering/enable-classic-ui.md).
 
 1. [클래식 UI 시작 페이지](http://localhost:4502/welcome.html)에서 **[!UICONTROL 웹 사이트]**&#x200B;를 선택합니다.
 
    ![classic-ui-website](assets/classic-ui-website.png)
 
-   또는 [/siteadmin.](http://localhost:4502/siteadmin)으로 이동하여 웹 사이트에 대한 클래식 UI에 직접 액세스하십시오.
+   또는 [/siteadmin](http://localhost:4502/siteadmin)으로 이동하여 웹 사이트에 대한 클래식 UI에 직접 액세스합니다.
 
 1. 탐색기 창에서 **[!UICONTROL 웹 사이트]**&#x200B;를 선택한 다음 도구 모음에서 **[!UICONTROL 새로 만들기]** > **[!UICONTROL 새 페이지]**&#x200B;를 선택합니다.
 
@@ -66,14 +66,14 @@ ht-degree: 5%
    * **[!UICONTROL SCF 샌드박스 재생 템플릿]**&#x200B;을 선택합니다.
    * **[!UICONTROL 만들기]**&#x200B;를 클릭합니다
 
-1. 탐색기 창에서 방금 만든 페이지 `/Websites/SCF Sandbox Site/SCF Sandbox`을 선택하고 **[!UICONTROL 새로 만들기]** > **[!UICONTROL 새 페이지]**&#x200B;를 클릭합니다
+1. 탐색기 창에서 방금 만든 페이지 `/Websites/SCF Sandbox Site/SCF Sandbox`을 선택하고 **[!UICONTROL 새로 만들기]** > **[!UICONTROL 새 페이지]**&#x200B;를 클릭합니다.
 
    * 제목: `SCF Play`
    * 이름: `play`
    * **[!UICONTROL SCF 샌드박스 재생 템플릿]**&#x200B;을 선택합니다.
    * **[!UICONTROL 만들기]**&#x200B;를 클릭합니다
 
-1. 이제 웹 사이트가 웹 사이트 콘솔에 표시되는 방식입니다. 탐색기 창에서 선택한 항목의 하위 페이지가 관리될 수 있는 오른쪽 창에 표시됩니다.
+1. 이제 웹 사이트가 웹 사이트 콘솔에 표시되는 방식을 살펴봅니다. 탐색기 창에서 선택한 항목의 하위 페이지가 관리될 수 있는 오른쪽 창에 표시됩니다.
 
    ![classic-ui-website-page](assets/classic-ui-website-page.png)
 
@@ -87,7 +87,7 @@ ht-degree: 5%
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-가 정의되었습니다. 이 변수는 `currentDesign.getPath()`을(를) 사용하여 스크립트에서 디자인 에셋을 참조하는 선택적 기능을 제공합니다. 예
+가 정의되었습니다. 이 변수는 `currentDesign.getPath()`을(를) 사용하여 스크립트에서 디자인 에셋을 참조하는 선택 사항을 제공합니다. 예
 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
@@ -96,7 +96,7 @@ ht-degree: 5%
    * 유형: `String`
    * 값: `/etc/designs/an-scf-sandbox`
 
-* 녹색 `[+] Add`을 클릭합니다.
+* 녹색 `[+] Add`
 
 응답은 다음과 같이 표시됩니다.
 
@@ -108,4 +108,4 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->`cq:designPath`의 사용은 선택 사항이며, SCF 구성 요소가 [clientlibs](develop-app.md#includeclientlibsintemplate)를 사용하여 JS와 CSS를 관리할 때 기본적으로 필요한 [clientlibs&lt;a2/>와 관련이 없습니다.](client-customize.md#clientlibs-for-scf)
+>`cq:designPath`의 사용은 선택 사항이며, [clientlibs](develop-app.md#includeclientlibsintemplate)의 사용과 관련이 없습니다. SCF 구성 요소가 [clientlibs](client-customize.md#clientlibs-for-scf)를 사용하여 JS와 CSS를 관리할 때 기본적으로 필요합니다.
