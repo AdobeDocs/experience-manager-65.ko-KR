@@ -22,17 +22,17 @@ ht-degree: 1%
 
 ## 전제 조건 {#prerequisite}
 
-사용자 정의 레이아웃을 만들거나 사용할 수 있는 레이아웃에 대한 지식입니다. [패널 레이아웃 변경](../../forms/using/layout-capabilities-adaptive-forms.md)을 참조하십시오.
+사용자 정의 레이아웃을 제작/사용할 수 있는 레이아웃에 대한 지식입니다. [패널 레이아웃 변경](../../forms/using/layout-capabilities-adaptive-forms.md)을 참조하십시오.
 
 ## 응용 양식 패널 레이아웃 구성 요소 {#adaptive-form-panel-layout-component}
 
-응용 양식 패널 레이아웃 구성 요소는 사용자 인터페이스를 기준으로 패널에서 응용 양식 구성 요소를 배치하는 방법을 제어합니다.
+응용 양식 패널 레이아웃 구성 요소는 사용자 인터페이스를 기준으로 패널에 적응형 양식 구성 요소를 배치하는 방식을 제어합니다.
 
 ## 사용자 정의 패널 레이아웃 만들기 {#creating-a-custom-panel-layout}
 
 1. `/crx/de` 위치로 이동합니다.
 1. `/libs/fd/af/layouts/panel` 위치(예: `tabbedPanelLayout`)에서 `/apps`(예: `/apps/af-custom-layout`)로 패널 레이아웃을 복사합니다.
-1. 복사한 레이아웃의 이름을 `customPanelLayout`으로 변경합니다. 노드 `qtip` 및 `jcr:description`의 속성을 변경합니다. 예를 들어 `Custom layout - Toggle tabs`으로 변경합니다.
+1. 복사한 레이아웃의 이름을 `customPanelLayout`에 변경합니다. `qtip` 및 `jcr:description` 노드의 속성을 변경합니다. 예를 들어 `Custom layout - Toggle tabs`으로 변경합니다.
 
 qtip
 
@@ -40,10 +40,10 @@ qtip
 
 >[!NOTE]
 >
->속성 `guideComponentType`을 값 `fd/af/layouts/panel`으로 설정하면 레이아웃이 패널 레이아웃으로 결정됩니다.
+>`guideComponentType` 속성을 `fd/af/layouts/panel` 값으로 설정하면 레이아웃이 패널 레이아웃임을 결정합니다.
 
-1. 새 레이아웃 아래의 `tabbedPanelLayout.jsp` 파일의 이름을 customPanelLayout.jsp로 변경합니다.
-1. 새 스타일과 비헤이비어를 도입하려면 `etc` 노드 아래에 클라이언트 라이브러리를 만듭니다. 예를 들어 /etc/af-custom-layout-clientlib 위치에서 node client-library를 만듭니다. 노드에 categories property af.panel.custom이 있도록 합니다. 여기에는 다음과 같은 .css 및 .js 파일이 있습니다.
+1. 새 레이아웃 아래의 `tabbedPanelLayout.jsp` 파일의 이름을 customPanelLayout.jsp로 바꿉니다.
+1. 새 스타일과 비헤이비어를 도입하려면 `etc` 노드 아래에 클라이언트 라이브러리를 만듭니다. 예를 들어 /etc/af-custom-layout-clientlib 위치에서 node client-library를 만듭니다. 노드에 categories 속성 af.panel.custom이 있도록 합니다. 여기에는 다음과 같은 .css 및 .js 파일이 있습니다.
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -115,7 +115,7 @@ qtip
    });
    ```
 
-1. 모양과 동작을 향상시키려면 `client library`을(를) 포함할 수 있습니다.
+1. 모양과 비헤이비어를 향상시키기 위해 `client library`을(를) 포함할 수 있습니다.
 
    또한 .jsp 파일에 포함된 스크립트의 경로를 업데이트합니다. 예를 들어 `customPanelLayout.jsp` 파일을 다음과 같이 업데이트합니다.
 
@@ -204,7 +204,7 @@ qtip
 
 1. 작성 모드에서 응용 양식을 엽니다. 정의한 패널 레이아웃이 패널 레이아웃을 구성하기 위한 목록에 추가됩니다.
 
-   ![사용자 정의 패널 레이아웃이 패널 레이아웃 ](assets/auth-layt.png) ![목록에 표시사용자 정의 패널 ](assets/s1.png) ![레이아웃을 사용하여 응용 양식의 스크린샷 사용자 정의 레이아웃의 전환 기능을 보여 주는 스크린샷](assets/s2.png)
+   ![사용자 정의 패널 레이아웃이 패널 레이아웃 ](assets/auth-layt.png) ![목록에 표시사용자 정의 패널 ](assets/s1.png) ![레이아웃을 사용하여 응용 양식의 스크린샷사용자 정의 레이아웃의 전환 기능을 보여 주는 스크린샷](assets/s2.png)
 
 사용자 정의 패널 레이아웃용 샘플 ZIP 및 이를 사용하는 적응형 양식입니다.
 
