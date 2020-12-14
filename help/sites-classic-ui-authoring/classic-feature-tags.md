@@ -44,7 +44,7 @@ ht-degree: 88%
 
 작성 환경에서 작성자는 페이지 속성에 액세스하고 **태그/키워드** 필드에 하나 이상의 태그를 입력하여 태그를 적용할 수 있습니다.
 
-[사전 정의된 태그](/help/sites-administering/tags.md)를 적용하려면 **페이지 속성** 창에서 `Tags/Keywords` 필드 풀다운을 사용하여 페이지에 대해 허용되는 태그 목록에서 선택합니다. **표준 태그** 탭은 기본 네임스페이스이므로 택소노법에 접두사가 없는 `namespace-string:`입니다.
+[사전 정의된 태그](/help/sites-administering/tags.md)를 적용하려면 **페이지 속성** 창에서 `Tags/Keywords` 필드 풀다운을 사용하여 페이지에 대해 허용되는 태그 목록에서 선택합니다. **표준 태그** 탭은 기본 네임스페이스이므로 택소노법에 `namespace-string:` 접두사가 없습니다.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
