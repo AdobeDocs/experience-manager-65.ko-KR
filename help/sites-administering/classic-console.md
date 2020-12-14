@@ -1,8 +1,8 @@
 ---
 title: 클래식 UI 태깅 콘솔
 seo-title: 클래식 UI 태깅 콘솔
-description: 클래식 UI 태깅 콘솔에 대해 알아봅니다.
-seo-description: 클래식 UI 태깅 콘솔에 대해 알아봅니다.
+description: 클래식 UI 태그 지정 콘솔에 대해 알아봅니다.
+seo-description: 클래식 UI 태그 지정 콘솔에 대해 알아봅니다.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -21,11 +21,11 @@ ht-degree: 37%
 
 # 클래식 UI 태깅 콘솔{#classic-ui-tagging-console}
 
-이 섹션은 클래식 UI 태깅 콘솔용입니다.
+이 섹션은 클래식 UI 태깅 콘솔에 해당합니다.
 
-터치에 적합한 UI 태깅 콘솔은 [여기](/help/sites-administering/tags.md#tagging-console)입니다.
+터치에 적합한 UI 태그 지정 콘솔은 [여기](/help/sites-administering/tags.md#tagging-console)입니다.
 
-클래식 UI 태깅 콘솔에 액세스하려면:
+클래식 UI 태그 지정 콘솔에 액세스하려면:
 
 * 작성자
 * 관리자 권한으로 로그인
@@ -86,7 +86,7 @@ ht-degree: 37%
 
 ## 태그 활성화 및 비활성화 {#activating-and-deactivating-tags}
 
-1. 오른쪽 창에서 활성화(게시)하거나 비활성화(게시 취소)할 네임스페이스 또는 태그를 선택합니다.
+1. 오른쪽 창에서 활성화(게시) 또는 비활성화(게시 취소)할 네임스페이스 또는 태그를 선택합니다.
 1. 필요에 따라 **활성화** 또는 **비활성화**&#x200B;를 클릭합니다.
 
 ## 목록 - 태그 참조 위치 표시  {#list-showing-where-tags-are-referenced}
@@ -114,7 +114,7 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->작성자는 태그를 이동하거나 태그 ID의 이름을 변경할 수 없습니다. 필요한 경우 작성자는 [태그 제목](#editing-tags)만 변경해야 합니다.
+>작성자는 태그를 이동하거나 태그 ID의 이름을 바꿀 수 없습니다. 필요한 경우 작성자는 [태그 제목](#editing-tags)만 변경해야 합니다.
 
 ## 태그 병합 {#merging-tags}
 
@@ -143,14 +143,14 @@ ht-degree: 37%
 
 ## 여러 언어로 태그 관리  {#managing-tags-in-different-languages}
 
-태그의 선택적 `title`속성은 여러 언어로 번역될 수 있습니다. 그런 다음 사용자 언어 또는 페이지 언어에 따라 `titles` 태그를 표시할 수 있습니다.
+태그의 선택적 `title`속성은 여러 언어로 변환할 수 있습니다. 그런 다음 사용자 언어 또는 페이지 언어에 따라 `titles` 태그를 표시할 수 있습니다.
 
 ### 여러 언어로 태그 제목 정의 {#defining-tag-titles-in-multiple-languages}
 
-다음 절차에서는 태그 **Animals**&#x200B;의 `title`을 영어, 독일어 및 프랑스어로 변환하는 방법을 보여 줍니다.
+다음 절차에서는 **Animals** 태그의 `title`을 영어, 독일어 및 프랑스어로 변환하는 방법을 보여 줍니다.
 
 1. **Tagging** 콘솔로 이동합니다.
-1. **태그** > **Stock Photography** 아래의 **Animals** 태그를 편집합니다.
+1. **태그** > **스톡 사진** 아래의 **Animals** 태그를 편집합니다.
 1. 다음 언어로 번역을 추가합니다.
 
    * **영어**: Animals
@@ -163,17 +163,17 @@ ht-degree: 37%
 
 ![](assets/edit_tag.png)
 
-Tagging 콘솔은 사용자 언어 설정을 사용하므로 Animal 태그의 경우 사용자 속성에서 언어를 프랑스어로 설정하는 사용자에 대해 &#39;Animaux&#39;가 표시됩니다.
+Tagging 콘솔에서는 사용자 언어 설정을 사용하므로 사용자 속성에서 언어를 프랑스어로 설정하는 사용자에 대해 Animal 태그가 &#39;Animaux&#39;로 표시됩니다.
 
-대화 상자에 새 언어를 추가하려면 **개발자를 위한 태그 지정** 섹션의 [태그 편집 대화 상자](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog)에 새 언어 추가 섹션을 참조하십시오.
+대화 상자에 새 언어를 추가하려면 **개발자를 위한 태그 지정** 섹션의 [태그 편집 대화 상자에 새 언어 추가](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) 섹션을 참조하십시오.
 
-### 페이지 속성에 태그 제목 표시{#displaying-tag-titles-in-page-properties-in-a-specified-language}
+### 지정된 언어 {#displaying-tag-titles-in-page-properties-in-a-specified-language}의 페이지 속성에 태그 제목 표시
 
-기본적으로 페이지 속성의 태그 `titles`은 페이지 언어로 표시됩니다. 페이지 속성의 태그 대화 상자에는 다른 언어로 태그 `titles`의 표시를 활성화하는 언어 필드가 있습니다. 다음 절차에서는 태그 `titles`을 프랑스어로 표시하는 방법을 설명합니다.
+기본적으로 페이지 속성의 태그 `titles`은 페이지 언어로 표시됩니다. 페이지 속성의 태그 대화 상자에는 태그 `titles`을 다른 언어로 표시할 수 있는 언어 필드가 있습니다. 다음 절차에서는 `titles` 태그를 프랑스어로 표시하는 방법을 설명합니다.
 
-1. 프랑스어 번역을 **Tags** > **Stock Photography** 아래에 **Animals**&#x200B;에 추가하려면 이전 섹션을 참조하십시오.
+1. 이전 섹션을 참조하여 **태그** > **스톡 사진** 아래의 **Animals**&#x200B;에 프랑스어 번역을 추가합니다.
 1. **Geometrixx** 사이트의 English 분기에서 **Products** 페이지의 페이지 속성을 엽니다.
-1. **태그/키워드** 대화 상자([태그/키워드] 표시 영역의 오른쪽에 있는 풀다운 메뉴 선택)를 열고 오른쪽 하단에 있는 풀다운 메뉴에서 **프랑스어** 언어를 선택합니다.
+1. 태그/키워드 표시 영역의 오른쪽에 있는 풀다운 메뉴를 선택하여 **태그/키워드** 대화 상자를 열고 오른쪽 하단에 있는 풀다운 메뉴에서 **프랑스어** 언어를 선택합니다.
 1. **Stock Photography** 탭을 선택할 수 있을 때까지 왼쪽 화살표를 사용하여 스크롤합니다.
 
    **Animals**(**Animaux**) 태그를 선택하고 대화 상자 외부를 선택하여 닫고 태그를 페이지 속성에 추가합니다.
@@ -182,8 +182,8 @@ Tagging 콘솔은 사용자 언어 설정을 사용하므로 Animal 태그의 �
 
 기본적으로 페이지 속성 대화 상자에는 페이지 언어에 따라 태그 `titles`이 표시됩니다.
 
-일반적으로 페이지 언어가 사용 가능한 경우 페이지 언어에서 태그 언어를 가져옵니다. [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side)을 다른 경우에 사용하는 경우(예: 양식 또는 대화 상자), 태그 언어는 컨텍스트에 따라 다릅니다.
+일반적으로 페이지 언어를 사용할 수 있는 경우 페이지 언어에서 태그 언어를 가져옵니다. [ `tag` 위젯](/help/sites-developing/building.md#tagging-on-the-client-side)을(를) 다른 경우에 사용할 경우(예: 양식 또는 대화 상자) 태그 언어는 컨텍스트에 따라 다릅니다.
 
 >[!NOTE]
 >
->표준 페이지 구성 요소의 태그 클라우드 및 메타 키워드는 사용 가능한 경우 페이지 언어를 기준으로 지역화된 태그 `titles`을 사용합니다.
+>표준 페이지 구성 요소의 태그 클라우드 및 메타 키워드는 가능한 경우 페이지 언어를 기준으로 지역화된 태그 `titles`을 사용합니다.
