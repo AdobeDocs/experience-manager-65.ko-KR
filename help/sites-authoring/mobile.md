@@ -26,7 +26,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. ([다른 채널용 Live Copy 만들기](/help/sites-administering/msm-livecopy.md)를 참조하십시오.)
+>기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. ([다른 채널에 대한 Live Copy 만들기](/help/sites-administering/msm-livecopy.md)를 참조하십시오.)
 >
 >AEM 개발자는 새 장치 그룹을 만들 수 있습니다. ([장치 그룹 필터 만들기](/help/sites-developing/groupfilters.md)를 참조하십시오.)
 
@@ -41,7 +41,7 @@ ht-degree: 89%
 
 페이지 모습은 다음과 유사합니다.
 
-![mobileipadu](assets/mobileipademu.png)
+![mobileipadum](assets/mobileipademu.png)
 
 >[!NOTE]
 >
