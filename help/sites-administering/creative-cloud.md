@@ -1,8 +1,8 @@
 ---
 title: Adobe Creative Cloud과 폴더 공유
 seo-title: Adobe Creative Cloud과 폴더 공유
-description: Adobe Creative Cloud와의 폴더 공유에 대한 자세한 내용
-seo-description: Adobe Creative Cloud와의 폴더 공유에 대한 자세한 내용
+description: Adobe Creative Cloud와의 폴더 공유에 대해 자세히 알아보기
+seo-description: Adobe Creative Cloud와의 폴더 공유에 대해 자세히 알아보기
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -23,9 +23,9 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->AEM-Creative Cloud 폴더 공유 기능은 더 이상 사용되지 않습니다. 고객은 [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크탑 앱](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html)과 같은 최신 기능을 사용하는 것이 좋습니다. [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md)에서 자세한 내용을 살펴보십시오.
+>AEM-Creative Cloud 폴더 공유 기능은 더 이상 사용되지 않습니다. 고객은 [Adobe 에셋 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크탑 앱](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html)과 같은 최신 기능을 사용해야 합니다. [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md)에서 자세한 내용을 살펴보십시오.
 
-Adobe Experience Manager(AEM) 자산을 사용하여 자산이 들어 있는 폴더를 Adobe Creative Cloud 사용자와 공유할 수 있습니다. Adobe Creative Cloud과 자산을 공유할 수 있도록 Adobe Marketing Cloud을 구성하는 방법에 대한 자세한 내용은 [자산-Creative Cloud 통합 구성](/help/sites-administering/configure-assets-cc-integration.md)을 참조하십시오.
+Adobe Experience Manager (AEM) 자산을 사용하여 에셋이 포함된 폴더를 Adobe Creative Cloud 사용자와 공유할 수 있습니다. Adobe Creative Cloud과 자산을 공유할 수 있도록 Adobe Marketing Cloud을 구성하는 방법에 대한 자세한 내용은 [자산 Creative Cloud 통합 구성](/help/sites-administering/configure-assets-cc-integration.md)을 참조하십시오.
 
 1. 자산 콘솔에서 Creative Cloud과 공유할 폴더를 선택합니다.
 
