@@ -1,8 +1,8 @@
 ---
-title: AEM Forms 작업 영역에서 사용되는 API
-seo-title: AEM Forms 작업 영역에서 사용되는 API
-description: 사용자 정의 및 자동화를 위해 노출되는 LiveCycle AEM Forms 작업 영역의 공개 Java 및 JavaScript API 및 메서드
-seo-description: 사용자 정의 및 자동화를 위해 노출되는 LiveCycle AEM Forms 작업 영역의 공개 Java 및 JavaScript API 및 메서드
+title: AEM Forms 작업 영역에 사용되는 API
+seo-title: AEM Forms 작업 영역에 사용되는 API
+description: 사용자 정의 및 자동화를 위해 노출되는 LiveCycle AEM Forms 작업 영역의 공개 Java 및 JavaScript API 및 메서드.
+seo-description: 사용자 정의 및 자동화를 위해 노출되는 LiveCycle AEM Forms 작업 영역의 공개 Java 및 JavaScript API 및 메서드.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms 작업 공간 {#apis-used-in-aem-forms-workspace}에 사용되는 API
+# AEM Forms 작업 영역 {#apis-used-in-aem-forms-workspace}에 사용된 API
 
 다음 API는 AEM Forms 작업 영역에서 사용됩니다.
 
@@ -33,13 +33,13 @@ ht-degree: 0%
    <td>getGroups</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getGroups</td>
-   <td>그룹을 검색합니다. 지정된 그룹이 없으면 모든 그룹의 목록을 반환하고, 지정된 이름을 가진 그룹을 반환합니다.</td>
+   <td>그룹을 검색합니다. 지정하지 않은 경우 모든 그룹의 목록을 반환하고 지정된 이름의 그룹을 반환합니다.</td>
   </tr>
   <tr>
    <td>getUsersAndGroups</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getUsersAndGroups</td>
-   <td>사용자 및 그룹을 검색합니다. 아무 것도 지정하지 않은 경우 모든 사용자 및 그룹의 목록을 반환하고, 지정된 이름의 사용자 및 그룹을 반환합니다.</td>
+   <td>사용자 및 그룹을 검색합니다. 지정된 것이 없으면 모든 사용자 및 그룹의 목록을 반환하고 지정된 이름의 사용자 및 그룹을 반환합니다.</td>
   </tr>
   <tr>
    <td>prepareForSubmit</td>
@@ -51,7 +51,7 @@ ht-degree: 0%
    <td>submitTask</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>제출</td>
-   <td>작업과 연관된 문서 객체를 제출하고 동시에 프로세스를 실행합니다.</td>
+   <td>작업과 연관된 문서 객체를 제출합니다(그리고 차례로 프로세스를 제출).</td>
   </tr>
   <tr>
    <td>getRootEndpointCategories</td>
@@ -63,7 +63,7 @@ ht-degree: 0%
    <td>getDirectChildCategories</td>
    <td>ProcessManagementStartpointService</td>
    <td>getDirectChildCategories2</td>
-   <td>카테고리에 대해 모든 직계 아이들을 페치합니다.</td>
+   <td>카테고리에 대한 모든 직계 아이들을 가져옵니다.</td>
   </tr>
   <tr>
    <td>getAllStartpoints</td>
@@ -75,13 +75,13 @@ ht-degree: 0%
    <td>invokeStartpoint</td>
    <td>ProcessManagementStartpointService</td>
    <td>invokeStartpoint</td>
-   <td>그러면 시작점이 호출되고 시작점에 해당하는 새 작업이 만들어집니다</td>
+   <td>그러면 시작점이 호출되고 시작점에 해당하는 새 작업이 만들어집니다.</td>
   </tr>
   <tr>
    <td>getAllTasks</td>
    <td>ProcessManagementTaskService</td>
    <td>getAllActionableTasks</td>
-   <td>이 플러그인은 로그인된 사용자를 위해 생성, 전달 또는 협의된, 저장, 할당, 할당, 저장된 모든 작업을 가져옵니다.</td>
+   <td>로그인된 사용자를 위해 생성, 전달, 검토, 저장, 할당, 할당, 할당 및 저장된 모든 작업을 가져옵니다.</td>
   </tr>
   <tr>
    <td>getTask</td>
@@ -93,7 +93,7 @@ ht-degree: 0%
    <td>renderTask</td>
    <td>ProcessManagementTaskService</td>
    <td>render</td>
-   <td>양식 url, 양식 유형, 필요한 경우 데이터 url 등 양식을 렌더링하는 데 필요한 정보를 렌더링하고 반환합니다.</td>
+   <td>필요한 경우 작업을 렌더링하고 양식 URL, 양식 유형, 데이터 URL 등의 양식을 렌더링하는 데 필요한 정보를 반환합니다.</td>
   </tr>
   <tr>
    <td>submitWithPriorData</td>
@@ -144,9 +144,9 @@ ht-degree: 0%
    <td>작업을 다른 사용자에게 전달합니다.</td>
   </tr>
   <tr>
-   <td>문의</td>
+   <td>consulting</td>
    <td>ProcessManagementTaskService</td>
-   <td>문의</td>
+   <td>consulting</td>
    <td>다른 사용자와 작업을 협의합니다.</td>
   </tr>
   <tr>
@@ -165,7 +165,7 @@ ht-degree: 0%
    <td>잠금</td>
    <td>ProcessManagementTaskService</td>
    <td>잠금</td>
-   <td>공유 시 다른 사용자가 작업을 잠그고 작업을 요청할 수 없습니다.</td>
+   <td>공유 시 작업이 잠기고 다른 사용자가 작업을 요청할 수 없습니다.</td>
   </tr>
   <tr>
    <td>거부</td>
@@ -183,7 +183,7 @@ ht-degree: 0%
    <td>setVisibility</td>
    <td>ProcessManagementTaskService</td>
    <td>setVisibility</td>
-   <td>작업의 가시성을 설정합니다. 가시성이 false로 설정된 경우 나중에 작업이 표시되지 않습니다.</td>
+   <td>작업의 가시성을 설정합니다. 가시성이 false로 설정된 경우 작업이 나중에 표시되지 않습니다.</td>
   </tr>
   <tr>
    <td>getUsers</td>
@@ -258,9 +258,9 @@ ht-degree: 0%
    <td>모든 프로세스 목록을 반환합니다.</td>
   </tr>
   <tr>
-   <td>getParticipatedProcesses</td>
+   <td>getParticipantProcesses</td>
    <td>ProcessManagementProcessService</td>
-   <td>getParticipatedProcesses</td>
+   <td>getParticipantProcesses</td>
    <td>로그인한 사용자가 참여한 모든 프로세스 이름 목록이 반환됩니다.</td>
   </tr>
   <tr>
@@ -279,7 +279,7 @@ ht-degree: 0%
    <td>getPendingTasksForProcessInstance</td>
    <td>ProcessManagementQueryService</td>
    <td>getPendingTasksForProcessInstance</td>
-   <td>프로세스 인스턴스에 대한 보류 중인 작업을 가져옵니다.</td>
+   <td>프로세스 인스턴스에 대해 보류 중인 작업을 가져옵니다.</td>
   </tr>
   <tr>
    <td>getTasksForProcessInstance</td>
@@ -297,19 +297,19 @@ ht-degree: 0%
    <td>getTemplate</td>
    <td>ProcessManagementQueryService</td>
    <td>getTemplate</td>
-   <td>검색 템플릿의 컨텐츠를 반환합니다.</td>
+   <td>검색 템플릿의 콘텐츠를 반환합니다.</td>
   </tr>
   <tr>
    <td>findTasksJson<br /> </td>
    <td>ProcessManagementQueryService</td>
    <td>findTasksJson</td>
-   <td>검색 템플릿의 모든 조건을 만족하는 모든 작업을 검색하고 반환합니다.</td>
+   <td>검색 템플릿의 모든 조건을 충족하는 모든 작업을 검색하고 반환합니다.</td>
   </tr>
   <tr>
    <td>getAssignmentsForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentsForTask</td>
-   <td>작업에 대한 모든 과제를 가져옵니다. 예: - 사용자가 작업을 다른 사용자와 전달하거나 협의하는 경우 작업에 대한 할당입니다.</td>
+   <td>작업에 대한 모든 과제를 가져옵니다. 예: :- 사용자가 작업을 다른 사용자와 전달 또는 협의하는 경우 작업에 대한 할당입니다.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>
@@ -327,7 +327,7 @@ ht-degree: 0%
    <td>getTasksForDirectReports</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getTasksForDirectReports</td>
-   <td>로그인 관리자의 직접 보고서 작업을 모두 반환합니다.</td>
+   <td>로그인한 관리자의 직접 보고서에 있는 모든 작업을 반환합니다.</td>
   </tr>
   <tr>
    <td>getTaskOfDirectReport<br /> </td>
@@ -339,7 +339,7 @@ ht-degree: 0%
    <td>forwardTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>forwardTaskOfDirectReport</td>
-   <td>다른 사용자에게 직접 보고서 작업을 전달합니다.</td>
+   <td>다른 사용자에게 직접 보고서의 작업을 전달합니다.</td>
   </tr>
   <tr>
    <td>rejectTaskOfDirectReport</td>
@@ -390,16 +390,16 @@ ht-degree: 0%
    <td>작업에 대한 메모를 서버에 업로드합니다.</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer(html 템플릿에서 직접 호출하기도 함)<br /> </td>
+   <td>uploadRMAToServer(html 템플릿에서도 직접 호출됨)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
    <td>작업에 대한 첨부 파일을 서버에 업로드합니다.</td>
   </tr>
   <tr>
-   <td>getImageURL(html 템플릿에서 직접 호출하기도 함)</td>
+   <td>getImageURL(html 템플릿에서도 직접 호출됨)</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>getImage</td>
-   <td>프로세스를 위한 이미지를 가져옵니다.</td>
+   <td>프로세스에 사용할 이미지를 가져옵니다.</td>
   </tr>
  </tbody>
 </table>
