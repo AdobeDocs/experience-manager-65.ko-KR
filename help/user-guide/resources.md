@@ -25,7 +25,7 @@ ht-degree: 15%
 
 ## 클래스 및 인증 {#classes-and-certification}
 
-[직접 및 가상 강의 서비스를 통해 학습의 범위를 확장할 수 있습니다.](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)
+[직접 또는 가상 강의 제공을 통해 학습의 범위를 확장할 수 있습니다.](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)
 
 ## GDPR 준비 완료 {#gdpr-readiness}
 
@@ -33,4 +33,4 @@ ht-degree: 15%
 
 ## Experience League {#experience-leauge}
 
-[Experience League에서 AEM용 학습 리소스를 볼 수 있습니다.](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#dashboard)
+[Experience League에서 AEM용 학습 리소스를 봅니다.](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#dashboard)
