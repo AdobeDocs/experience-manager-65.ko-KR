@@ -1,8 +1,8 @@
 ---
 title: AEM 구성 요소 개발 - 코드 샘플
 seo-title: AEM 구성 요소 개발 - 코드 샘플
-description: 이 섹션에서는 AEM용 구성 요소를 만드는 방법에 대한 몇 가지 예를 제공합니다.
-seo-description: 이 섹션에서는 AEM용 구성 요소를 만드는 방법에 대한 몇 가지 예를 제공합니다.
+description: 이 섹션에서는 AEM용 구성 요소를 직접 만드는 방법에 대한 몇 가지 예를 제공합니다.
+seo-description: 이 섹션에서는 AEM용 구성 요소를 직접 만드는 방법에 대한 몇 가지 예를 제공합니다.
 uuid: 764b5dad-d3bb-48c6-9e93-9dc4e3f623db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -21,21 +21,21 @@ ht-degree: 11%
 
 # AEM 구성 요소 개발 - 코드 샘플{#developing-aem-components-code-samples}
 
-이 섹션에서는 AEM용 구성 요소를 만드는 방법에 대한 몇 가지 예를 제공합니다.
+이 섹션에서는 AEM용 구성 요소를 직접 만드는 방법에 대한 몇 가지 예를 제공합니다.
 
 기본 개념을 보려면 다음을 참조하십시오.
 
 * [AEM 구성 요소 - 기본 사항](/help/sites-developing/components-basics.md)
 * [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)
 
-클래식 UI에 대한 자세한 내용은 클래식 UI의 [AEM 구성 요소를 참조하십시오.](/help/sites-developing/developing-components-classic.md)
+클래식 UI에 대한 자세한 내용은 클래식 UI[AEM 구성 요소를 참조하십시오.](/help/sites-developing/developing-components-classic.md)
 
 >[!NOTE]
 >
->AEM은 구성 요소를 분석, 테스트 및 디버깅하는 데 도움이 되도록 다음을 제공합니다.
+>구성 요소를 분석, 테스트 및 디버깅하는 데 도움이 되도록 AEM에서는 다음을 제공합니다.
 >
 >* [개발자 모드](/help/sites-developing/developer-mode.md)
->* a [Hobbes.js 라이브러리](/help/sites-developing/hobbes.md)를 기반으로 테스트 자동화를 위한 프레임워크
+>* Hobes.js 라이브러리](/help/sites-developing/hobbes.md)에 기반한 테스트 자동화를 위한 [프레임워크
 
 >
 
@@ -47,8 +47,8 @@ GITHUB에 대한 코드
 
 GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
-* [GitHub에서 aem-authoring-dialog-fields-customization project 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
-* 프로젝트를 ZIP 파일[으로 다운로드합니다.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip)
+* [GitHub에서 aem-authoring-dialog-fields-customization 프로젝트 열기](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip)(으)로 다운로드합니다.
 
 >[!NOTE]
 >
@@ -66,5 +66,5 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 표준 컨텐츠 조각 구성 요소를 확장하여 기능을 추가할 수 있습니다.
 
-자세한 내용은 [콘텐츠 조각 사용자 지정 및 확장](/help/sites-developing/customizing-content-fragments.md)에 있습니다.
+자세한 내용은 [컨텐츠 조각 사용자 지정 및 확장](/help/sites-developing/customizing-content-fragments.md)에 있습니다.
 
