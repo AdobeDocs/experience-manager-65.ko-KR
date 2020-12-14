@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 86%
+ht-degree: 88%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 86%
 * 소스 페이지의 하위 페이지는 기본적으로 론치에 포함됩니다. 원할 경우 소스 페이지만 사용할 수 있습니다.
 * 기본적으로, [Live Copy](/help/sites-administering/msm.md)는 소스 페이지 변경에 따라 자동으로 론치 페이지를 업데이트합니다. 정적 복사본을 만들어 자동 변경을 방지하도록 지정할 수 있습니다.
 
-필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. 그러나 **론치 날짜**&#x200B;는 **프로덕션 준비** 플래그와 조합하여 작동합니다([론치 구성 편집](/help/sites-classic-ui-authoring/classic-launches-editing.md#editing-a-launch-configuration) 참조).작업이 실제로 자동으로 수행되도록 하려면 둘 다 설정해야 합니다.
+필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. 그러나 **시작 날짜**&#x200B;는 **프로덕션 준비** 플래그와 조합으로만 작동합니다([론치 구성 편집](/help/sites-classic-ui-authoring/classic-launches-editing.md#editing-a-launch-configuration) 참조).작업이 실제로 자동으로 수행되도록 하려면 둘 다 설정해야 합니다.
 
 ## 론치 만들기 {#creating-a-launch}
 
