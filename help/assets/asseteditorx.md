@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # 자산 편집기 확장 {#extending-asset-editor}
 
-자산 편집기는 사용자가 메타데이터, 축소판, 제목 및 태그와 같은 에셋 측면을 편집할 수 있도록 자산 공유를 통해 찾은 에셋을 클릭할 때 열리는 페이지입니다.
+에셋 편집기는 에셋 공유를 통해 찾은 에셋을 클릭하면 열리는 페이지로, 사용자는 메타데이터, 축소판, 제목 및 태그와 같은 에셋 측면을 편집할 수 있습니다.
 
-사전 정의된 편집 구성 요소를 사용하는 편집기의 구성은 [자산 편집기 페이지 만들기 및 구성에서 다룹니다.](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)
+사전 정의된 편집 구성 요소를 사용하는 편집기의 구성은 [자산 편집기 페이지 만들기 및 구성](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)에서 다룹니다.
 
 기존 편집기 구성 요소를 사용하는 것 외에도 [!DNL Adobe Experience Manager] 개발자는 자체 구성 요소를 만들 수도 있습니다.
 
@@ -29,17 +29,17 @@ ht-degree: 1%
 
 ### Clientlib {#configuring-clientlib} 구성
 
-[!DNL Assets] components use an extension of the WCM edit clientlib. clientlibs는 일반적으로 `init.jsp`에 로드됩니다.
+[!DNL Assets] 구성 요소는 WCM 편집 clientlib의 확장명을 사용합니다. clientlibs는 일반적으로 `init.jsp`에 로드됩니다.
 
-기본 clientlib 로딩(코어의 `init.jsp`)과 비교할 때 [!DNL Assets] 템플릿에는 다음이 있어야 합니다.
+기본 clientlib 로드(코어의 `init.jsp`)와 비교할 때 [!DNL Assets] 템플릿에는 다음이 포함되어야 합니다.
 
 * 템플릿에는 `cq.wcm.edit` 대신 `cq.dam.edit` clientlib이 포함되어야 합니다.
 
-* clientlib은 조건자, 작업 및 렌즈를 렌더링할 수 있도록 비활성화된 WCM 모드(예: **publish**&#x200B;에 로드됨)에도 포함되어야 합니다.
+* clientlib은 예측, 작업 및 렌즈를 렌더링할 수 있도록 비활성화된 WCM 모드(예: **publish**&#x200B;에 로드됨)에도 포함되어야 합니다.
 
 대부분의 경우 기존 샘플 `init.jsp`(`/apps/geometrixx/components/asseteditor/init.jsp`)을 복사하는 것은 이러한 요구 사항을 충족해야 합니다.
 
-### JS 작업 {#configuring-js-actions} 구성
+### JS 작업 구성 {#configuring-js-actions}
 
 [!DNL Assets] 구성 요소 중 일부는 `component.js`에 정의된 JS 함수를 필요로 합니다. 이 파일을 구성 요소 디렉토리에 복사하고 연결합니다.
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-이 샘플은 `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)에 이 JavaScript 소스를 로드합니다.
+이 샘플은 이 JavaScript 소스를 `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)에 로드합니다.
 
 ### 추가 스타일 시트 {#additional-style-sheets}
 
@@ -59,11 +59,11 @@ ht-degree: 1%
 
 ### Geometrixx 스타일 시트 {#geometrixx-style-sheet}
 
-샘플 페이지 구성 요소에서는 모든 선택기가 `static.css`(`/etc/designs/geometrixx/static.css`)의 `.asseteditor`으로 시작되어야 합니다. 모범 사례:모든 `.asseteditor` 선택기를 스타일 시트로 복사하고 원하는 대로 규칙을 조정합니다.
+샘플 페이지 구성 요소를 사용하려면 모든 선택기가 `static.css`(`/etc/designs/geometrixx/static.css`)의 `.asseteditor`으로 시작해야 합니다. 모범 사례:모든 `.asseteditor` 선택기를 스타일 시트에 복사하고 원하는 대로 규칙을 조정합니다.
 
-### FormChooser:마지막으로 로드한 리소스를 위한 조정 {#formchooser-adjustments-for-eventually-loaded-resources}
+### FormChooser:마지막으로 로드한 리소스에 대한 조정 {#formchooser-adjustments-for-eventually-loaded-resources}
 
-자산 편집기에서는 양식 선택기를 사용하여 동일한 양식 페이지에서 자산의 URL에 양식 선택기 및 양식의 경로를 추가하면 리소스를 편집할 수 있습니다(이 경우 자산).
+자산 편집기는 양식 선택기와 양식의 경로를 자산의 URL에 추가하면 동일한 양식 페이지에서 리소스를 편집할 수 있는 양식 선택기를 사용합니다.
 
 예:
 
@@ -72,9 +72,9 @@ ht-degree: 1%
 
 `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)의 샘플 핸들은 다음을 수행합니다.
 
-* 자산이 로드되었는지 또는 일반 양식이 표시되어야 하는지 감지합니다.
-* 자산이 로드되면 parsys는 일반 양식 페이지에서만 편집할 수 있으므로 WCM 모드를 비활성화합니다.
-* 자산이 로드되면 양식 페이지의 자산 대신 해당 제목이 사용됩니다.
+* 자산이 로드되었는지 또는 일반 양식이 표시되어야 하는지 여부를 검색합니다.
+* 자산이 로드되면 parsys는 일반 양식 페이지에서만 편집할 수 있으므로 WCM 모드를 비활성화할 수 있습니다.
+* 에셋이 로드되면 양식 페이지의 에셋 대신 해당 제목을 사용합니다.
 
 ```javascript
  List<Resource> resources = FormsHelper.getFormEditResources(slingRequest);
@@ -122,10 +122,10 @@ HTML 부분에서 이전 제목 세트(자산 또는 페이지 제목)를 사용
 
 ## 간단한 양식 필드 구성 요소 {#creating-a-simple-form-field-component} 만들기
 
-이 예에서는 로드된 자산의 메타데이터를 표시하고 표시하는 구성 요소를 만드는 방법을 설명합니다.
+이 예에서는 로드된 자산의 메타데이터를 표시하고 표시하는 구성 요소를 작성하는 방법에 대해 설명합니다.
 
 1. 프로젝트 디렉토리에 구성 요소 폴더를 만듭니다(예: `/apps/geometrixx/components/samplemeta`).
-1. 다음 코드 조각에 `content.xml`을(를) 추가합니다.
+1. 다음 코드 조각과 함께 `content.xml`을 추가합니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -137,7 +137,7 @@ HTML 부분에서 이전 제목 세트(자산 또는 페이지 제목)를 사용
        componentGroup="Asset Editor"/>
    ```
 
-1. 다음 코드 조각에 `samplemeta.jsp`을(를) 추가합니다.
+1. 다음 코드 조각과 함께 `samplemeta.jsp`을 추가합니다.
 
    ```javascript
    <%--
@@ -195,28 +195,28 @@ HTML 부분에서 이전 제목 세트(자산 또는 페이지 제목)를 사용
    </div>
    ```
 
-1. 구성 요소를 사용할 수 있게 하려면 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하도록 하려면 CRXDE Lite에서 기본 유형 `cq:EditConfig`의 노드 `cq:editConfig`을 추가합니다. 단락을 제거할 수 있도록 단일 값이 `DELETE`인 다중 값 속성 `cq:actions`을 추가합니다.
+1. 구성 요소를 사용할 수 있게 하려면 해당 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하도록 하려면 CRXDE Lite에서 기본 유형 `cq:EditConfig`의 노드 `cq:editConfig`을(를) 추가합니다. 단락을 제거할 수 있도록 단일 값이 `DELETE`인 다중 값 속성 `cq:actions`을 추가합니다.
 
-1. 브라우저로 이동하고 샘플 페이지(예: `asseteditor.html`)에서 디자인 모드로 전환하고 단락 시스템에 대한 새 구성 요소를 활성화합니다.
+1. 브라우저로 이동하고 샘플 페이지(예: `asseteditor.html`)에서 디자인 모드로 전환하고 단락 시스템에 대해 새 구성 요소를 활성화합니다.
 
-1. **편집** 모드에서 새 구성 요소(예: **샘플 메타데이터**)는 이제 사이드킥에서 사용할 수 있습니다(**자산 편집기** 그룹에 있음). 구성 요소를 삽입합니다. 메타데이터를 저장하려면 메타데이터 양식에 메타데이터를 추가해야 합니다.
+1. **편집** 모드에서 이제 새 구성 요소(예: **샘플 메타데이터**)를 사이드킥에서 사용할 수 있습니다(**자산 편집기** 그룹에 있음). 구성 요소를 삽입합니다. 메타데이터를 저장하려면 메타데이터 양식에 메타데이터를 추가해야 합니다.
 
 ## 메타데이터 옵션 수정 {#modifying-metadata-options}
 
-[메타데이터 형식](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)에서 사용할 수 있는 네임스페이스를 수정할 수 있습니다.
+[메타데이터 양식](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)에서 사용할 수 있는 네임스페이스를 수정할 수 있습니다.
 
 현재 사용 가능한 메타데이터는 `/libs/dam/options/metadata`에 정의되어 있습니다.
 
 * 이 디렉터리 내의 첫 번째 수준에 네임스페이스가 포함되어 있습니다.
 * 각 네임스페이스 내의 항목은 로컬 부품 항목의 결과와 같은 메타데이터를 나타냅니다.
-* 메타데이터 내용에는 형식 및 다중 값 옵션에 대한 정보가 포함됩니다.
+* 메타데이터 내용에는 유형 및 다중 값 옵션에 대한 정보가 포함됩니다.
 
 옵션은 `/apps/dam/options/metadata`에서 덮어쓸 수 있습니다.
 
-1. `/libs`에서 `/apps`로 디렉토리를 복사합니다.
+1. `/libs`에서 `/apps`(으)로 디렉토리를 복사합니다.
 
 1. 항목을 제거, 수정 또는 추가합니다.
 
 >[!NOTE]
 >
->새 네임스페이스를 추가하는 경우 저장소/CRX에 등록해야 합니다. 그렇지 않으면 메타데이터 양식을 제출하면 오류가 발생합니다.
+>새 네임스페이스를 추가하는 경우에는 저장소/CRX에 등록해야 합니다. 그렇지 않으면 메타데이터 양식을 제출하면 오류가 발생합니다.
