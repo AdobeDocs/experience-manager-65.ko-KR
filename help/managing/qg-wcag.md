@@ -12,7 +12,7 @@ ht-degree: 99%
 
 # WCAG 2.1에 대한 빠른 안내서{#quick-guide-to-wcag}
 
-Adobe Experience Manager(AEM)은 웹 컨텐츠 접근성 가이드라인의 준수를 극대화하기 위해 개발되었습니다.
+AEM(Adobe Experience Manager)은 웹 컨텐츠 액세서빌러티 지침 준수를 극대화할 수 있도록 개발되었습니다.
 
 [웹 컨텐츠 액세스 가능성 지침(WCAG) 버전 2.1](https://www.w3.org/TR/WCAG/)은 [World Wide Web Consortium(W3C)](https://www.w3.org/)에서 [Web Accessibility Initiative(WAI)](https://www.w3.org/WAI/)에 따라 작성한 국제 공인 지침입니다.
 
