@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '2150'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
@@ -31,15 +31,15 @@ ht-degree: 70%
 
 ## 새로운 기능 {#what-s-new}
 
-[!DNL Adobe Experience Manager] 6.5는  [!DNL Adobe Experience Manager] 6.4 코드 베이스에 대한 업그레이드 릴리스입니다. 새롭고 향상된 기능, 주요 고객 수정 사항, 우선 순위가 높은 고객 개선 사항 및 제품 안정화를 위한 일반적인 버그 수정을 제공합니다. 또한 SP4까지 제공되는 [!DNL Adobe Experience Manager] 6.4 서비스 팩 릴리스도 포함되어 있습니다.
+[!DNL Adobe Experience Manager] 6.5는  [!DNL Adobe Experience Manager] 6.4 코드 베이스에 대한 업그레이드 릴리스입니다. 새롭고 향상된 기능, 주요 고객 수정 사항, 우선 순위가 높은 고객 개선 사항 및 제품 안정화를 위한 일반적인 버그 수정을 제공합니다. 또한 SP4까지 [!DNL Adobe Experience Manager] 6.4 서비스 팩 릴리스를 포함합니다.
 
-아래 목록은 개요를 제공하며, 그 다음 페이지에는 전체 세부 정보가 나열됩니다.
+아래 목록은 개요를 제공하며, 다음 페이지에는 전체 세부 정보가 나열됩니다.
 
 ### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
 [AEM Foundation](/help/release-notes/wcm-platform.md)의 전체 변경 목록입니다.
 
-OSGi 기반 프레임워크(Apache Sling 및 Apache Felix)의 업데이트된 버전과 Java Content Repository를 기반으로 한 [!DNL Adobe Experience Manager] 6.5 빌드 플랫폼:Apache Jackrabbit Oak 1.10.2.
+[!DNL Adobe Experience Manager] 6.5 빌드의 플랫폼은 업데이트된 버전의 OSGi 기반 프레임워크(Apache Sling 및 Apache Felix)와 Java Content Repository를 기반으로 합니다.아파치 잭래빗 오크 1.10.2.
 
 빠른 시작은 Eclipse Jetty 9.4.15를 서블릿 엔진으로 사용합니다.
 
@@ -47,11 +47,11 @@ OSGi 기반 프레임워크(Apache Sling 및 Apache Felix)의 업데이트된 �
 
 * Java 8에 대한 기존 지원과 함께 Java 11을 새롭게 지원.
 * 최적의 성능을 위해 기본 GC 값을 다른 값으로 대체합니다. 자세한 내용은 [설치 및 업데이트](/help/sites-deploying/custom-standalone-install.md) 섹션을 참조하십시오.
-* Java 11 및 Java 8 유지 관리 업데이트는 Oracle에서 공개적으로 사용할 수 없는 경우 AEM 관련 프로젝트의 고객 사용을 위해 Adobe에 의해 배포됩니다.
+* Java 11 및 Java 8 유지 관리 업데이트는 Adobe에서 공개적으로 사용할 수 없는 경우 AEM 관련 프로젝트에서 고객이 사용하도록 Oracle에 의해 배포됩니다.
 
 #### Java 개발 {#java-development}
 
-* 지금은 Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)의 두 버전인 [이 있으며, 사용 중단으로 표시되지 않은 공용 인터페이스를 사용하는 권장 버전뿐만 아니라 사용 중단으로 표시된 인터페이스를 포함하는 버전이 있습니다.
+* 이제 Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)의 두 버전인 [이 있으며, 사용 중단으로 표시되지 않은 공용 인터페이스를 사용하는 권장 버전뿐만 아니라 사용 중단으로 표시된 인터페이스를 포함하는 버전이 있습니다.
 
 #### 사용자 인터페이스 {#user-interface}
 
@@ -59,18 +59,18 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 * 사용자 및 그룹에 대한 새 권한 관리 UI.
 * 이제 열 보기는 화면에 표시되는 항목만 로드하고 사용자가 스크롤을 시작할 때만 추가로 로드됩니다. 목록 보기 및 카드 보기는 6.0 이후부터 이미 해당 기능이 적용되었습니다(6.4에서 강화됨)..
-* 이제 열 보기에는 페이지/자산에 대한 워크플로우 상태가 해당됩니다(해당되는 경우).
-* [모두 선택](/help/sites-authoring/basic-handling.md#select-all) 동작은 동일한 폴더에 있는 모든 페이지/자산과 함께 작업을 빠르게 실행하는 방법입니다.
+* 이제 열 보기에는 해당하는 경우 페이지/자산에 대한 워크플로우 상태가 포함됩니다.
+* [모두 선택](/help/sites-authoring/basic-handling.md#select-all) 작업은 동일한 폴더에 있는 모든 페이지/자산을 포함하는 작업을 빠르게 실행하는 방법입니다.
 * [모두 선택](/help/sites-authoring/basic-handling.md#select-all) 조치는 로드된 페이지/자산이 아니라 모든 페이지/자산에 대해 조치를 시도합니다. 일괄 작업을 처리하도록 작업이 업그레이드되지 않은 경우 경고 대화 상자가 표시됩니다.
 
 >[!CAUTION]
 >
->Adobe는 향후 클래식 UI를 개선할 계획이 없습니다. AEM 6.5에는 클래식 UI가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 클래식 UI는 더 이상 사용하지 않는 동안 완전히 지원됩니다.[자세히 보기](/help/sites-deploying/ui-recommendations.md).
+>Adobe는 향후 클래식 UI를 개선할 계획이 없습니다. AEM 6.5에는 클래식 UI가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 클래식 UI는 더 이상 사용하지 않을 때 완전히 지원된다는 점을 참고하십시오.[자세히 보기](/help/sites-deploying/ui-recommendations.md).
 
 #### 검색 및 인덱싱 {#indexing-and-search}
 
 * Oak에서의 검색이 이제 동적 패싯을 지원합니다. 예를 들어 자산 검색의 필터 레일은 예상 결과 양을 보여줍니다.
-* QueryBuilder가 동적 패싯으로 결과를 제공하도록 확장되었습니다.
+* 동적 패싯이 있는 결과를 제공하도록 QueryBuilder가 확장되었습니다.
 
 #### 업그레이드 {#upgrade}
 
@@ -91,7 +91,7 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 AEM 6.4 SP2의 일부로 처음 출시되었으며, AEM 6.5에서는 SPA 지원이 다음과 같은 기능을 제공합니다.
 
 * 템플릿 편집기를 사용하여 SPA의 AEM 편집 가능 부분을 편집 및 구성합니다.
-* 멀티사이트 관리를 사용하여 국가, 프랜차이즈 또는 라벨이 지정된 SPA 경험 제작
+* 다중 사이트 관리를 사용하여 국가, 프랜차이즈 또는 화이트 레이블 SPA 경험을 생성합니다.
 
 #### 헤드리스 컨텐츠 관리 {#headless-content-management}
 
@@ -126,7 +126,7 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 
 ### [!DNL Experience Manager Assets] {#experience-manager-assets}
 
-[AEM 6.5 자산 릴리스 정보](/help/release-notes/assets.md)의 전체 변경 내용 목록.
+[AEM 6.5 에셋 릴리스 정보](/help/release-notes/assets.md)의 전체 변경 내용 목록.
 
 AEM 6.5에서는 AEM 사용자, DAM 역할 및 연관된 광고 및 마케팅 역할의 생산성을 향상시키기 위해 다음과 같은 기능과 개선 사항이 도입되었습니다.
 
@@ -170,7 +170,7 @@ AEM 6.5 Forms에는 여러 가지 새로운 기능과 개선 사항이 제공됩
 * 적응형 양식 및 인터랙티브 통신 테이블 분류
 * 양식 데이터 모델에서 입력 데이터 검증 자동화
 
-새로운 기능 및 향상된 설명서 리소스에 대한 자세한 내용은 AEM 6.5 Forms](/help/forms/using/whats-new.md)의 [새로운 기능 및 개선 사항에 대한 요약을 참조하십시오.
+새로운 기능 및 향상된 설명서 리소스에 대한 자세한 내용은 [AEM 6.5 Forms](/help/forms/using/whats-new.md)의 새로운 기능 및 개선 사항에 대한 요약을 참조하십시오.
 
 ### [!DNL Experience Manager Communities] {#communitiesreleasenotes}
 
@@ -178,14 +178,14 @@ AEM 6.5는 Communities에 새로운 기능 및 개선 사항을 추가합니다.
 
 * 사용자 생성 컨텐츠를 작성하는 동안 등록된 멤버 태그 지정(@mention)이 지원됩니다.
 * 구성원 그룹에 대한 직접적인 대량 메시지 작성이 지원됩니다.
-* 대량 조정 UI에서 사용자 지정 필터가 개발 및 추가됩니다. 태그별 필터링을 시연하는 [샘플 프로젝트](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter)를 유사한 사용자 정의 필터를 개발하기 위한 기초로 사용할 수 있습니다.
+* 대량 조정 UI에서 사용자 지정 필터가 개발 및 추가됩니다. 태그별 필터링을 시연하는 [샘플 프로젝트](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter)는 유사한 사용자 정의 필터를 개발하기 위한 기초로 사용할 수 있습니다.
 * 향상된 대량 조정 UI와 함께 새 목록 보기가 제공됩니다.
 * 단일 커뮤니티 관리자 대신 다른 커뮤니티 사이트 및 중첩 그룹에 대한 별도의 관리자를 지정할 수 있습니다.
 * AEM 6.5 Communities의 지원 기능은 [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) 엔진을 지원합니다.
 * 액세스 가능성 개선을 위해 지원 구성 요소에서 키보드 탐색을 지원합니다.
 * MSRP 및 DSRP를 설정하는 중 Apache Solr 7.0이 지원됩니다.
 
-변경 사항의 자세한 목록은 [AEM 6.5 커뮤니티 릴리스 노트](/help/release-notes/communities-release-notes.md)를 참조하십시오.
+변경 사항에 대한 자세한 목록은 [AEM 6.5 커뮤니티 릴리스 노트](/help/release-notes/communities-release-notes.md)를 참조하십시오.
 
 ### [!DNL Experience Manager Livefyre] {#experience-manager-livefyre}
 
@@ -195,7 +195,7 @@ Livefyre를 AEM 6.5 인스턴스와 통합할 수 있습니다. AEM[과 Livefyre
 
 Adobe는 고객 중심 개발 모델을 사용하여 고객이 사양, 개발 및 테스트 중에 개발 프로세스의 모든 단계에 기여할 수 있도록 합니다. 이 프로세스에 참여하신 모든 고객과 파트너에게 감사의 인사를 드립니다.
 
-Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 순위 지정 및 추적을 위한 절차와 프로세스를 마련했습니다. [Adobe Marketing Cloud 지원 포털](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)이 Adobe 개선 및 결함 추적 시스템과 통합되었습니다. 고객 문의는 가능한 경우 고객 지원 센터에서 식별 및 해결합니다. R&amp;D로 에스컬레이션하면 모든 고객 정보가 캡처되고 우선 순위 지정 및 보고용으로 사용됩니다. 개발 시에는 유료 지원, 보증 문제 및 고객이 지불하는 개선 사항에 대한 우선 순위가 지정됩니다.
+Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 순위 지정 및 추적을 위한 절차와 프로세스를 마련했습니다. [Adobe Marketing Cloud 지원 포털](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)은 Adobe 개선 및 결함 추적 시스템과 통합됩니다. 고객 문의는 가능한 경우 고객 지원 센터에서 식별 및 해결합니다. R&amp;D로 에스컬레이션하면 모든 고객 정보가 캡처되고 우선 순위 지정 및 보고용으로 사용됩니다. 개발 시에는 유료 지원, 보증 문제 및 고객 유료 향상 기능이 우선 제공됩니다.
 
 이러한 우선 순위 지정 프로세스를 통해 750가지 이상의 고객 중심 변경 사항이 AEM 6.5에서 수정되었습니다.
 
@@ -239,7 +239,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 **양식**
 
 * ](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)AEM Forms 기능 패키지[
-* [AEM Forms OSGi 클라이언트 SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
+* [AEM Forms OSGi Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
 
 ## 언어 {#languages}
 
@@ -266,11 +266,11 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
-지원되는 플랫폼의 지원 수준(예: [AEM 6.5 기술 요구 사항](/help/sites-deploying/technical-requirements.md)에서 지원 수준 포함)의 전체 지표를 찾을 수 있습니다.
+지원 수준을 포함한 지원되는 플랫폼의 전체 매트릭스를 [AEM 6.5 기술 요구 사항](/help/sites-deploying/technical-requirements.md)에서 확인하십시오.
 
 >[!NOTE]
 >
->Oracle은 Oracle Java SE 제품의 LTS(Long Term Support) 모델로 전환했습니다. Java 9 및 10은 Oracle이 출시한 LTS가 아닙니다.[Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html)을 참조하십시오. Adobe은 프로덕션에서 AEM만 실행할 수 있는 Java의 LTS 릴리스를 지원합니다. Java 11은 AEM 6.5와 함께 사용할 수 있는 권장 버전입니다.
+>Oracle은 Oracle Java SE 제품에 대한 LTS(Long Term Support) 모델로 옮겨졌습니다. Java 9 및 10은 Oracle에서 제공하는 비LTS 릴리스입니다.[Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html)을 참조하십시오. Adobe은 프로덕션에서 AEM만 실행할 수 있도록 Java의 LTS 릴리스를 지원합니다. Java 11은 AEM 6.5와 함께 사용하는 데 권장되는 버전입니다.
 
 ## 더 이상 사용되지 않는 및 제거된 기능 {#deprecated-and-removed-features}
 
@@ -284,10 +284,10 @@ Adobe는 제품 기능을 지속적으로 평가하고 시간이 흘러도 더�
 
 ### 제품 다운로드 및 지원(제한됨 사이트)  {#product-download-and-support-restricted-sites}
 
-다음 사이트는 고객에게만 제공됩니다. 액세스가 필요한 고객의 경우 Adobe 계정 관리자에게 문의하십시오.
+다음 사이트는 고객만 사용할 수 있습니다. 액세스가 필요한 고객의 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/).
 
-* [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)의 추가 기능을 위한 제품 업데이트, 패치 및 패키지
+* [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 추가 기능을 위한 제품 업데이트, 패치 및 패키지.
 
 * [Admin Console을 통한 고객 지원](https://adminconsole.adobe.com/). 자세한 내용은 [새 Adobe 고객 지원 경험](https://docs.adobe.com/content/help/ko-KR/customer-one/using/home.html)을 참조하십시오.
