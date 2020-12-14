@@ -21,7 +21,7 @@ ht-degree: 85%
 
 # 페이지에 워크플로우 적용{#applying-workflows-to-pages}
 
-작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다.두 개 이상의 워크플로우를 적용할 수도 있습니다.
+작성 시 워크플로우를 호출하여 페이지에서 작업을 수행할 수 있습니다.또한 두 개 이상의 워크플로우를 적용할 수도 있습니다.
 
 워크플로우를 적용할 때에는 다음 정보를 지정합니다.
 
@@ -77,7 +77,7 @@ ht-degree: 85%
 
 **타임라인**&#x200B;에서는 선택한 리소스에 적용할 워크플로우를 시작할 수 있습니다.
 
-1. [리소스를 ](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) 선택하고  [타임라인](/help/sites-authoring/basic-handling.md#timeline) 을 엽니다(또는 타임라인을 연 다음 리소스 선택).
+1. [리소스를 ](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) 선택하고  [타임라인](/help/sites-authoring/basic-handling.md#timeline) 을 엽니다(또는 타임라인을 연 다음 리소스를 선택합니다.).
 1. 주석 필드 옆에 있는 화살촉 모양을 사용하여 **워크플로우 시작**&#x200B;을 표시할 수 있습니다.
 
    ![screen-shot_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
@@ -118,7 +118,7 @@ ht-degree: 85%
 
 1. **범위** 단계에서 다음 내용을 선택할 수 있습니다.
 
-   * **콘텐츠** 추가:  [경로 탐색](/help/sites-authoring/author-environment-tools.md#path-browser) 을 열고 추가 리소스를 선택합니다.브라우저에서는 선택을 클릭/ **** 탭하여 워크플로우 인스턴스에 컨텐츠를 추가합니다.
+   * **컨텐츠** 추가에서  [경로 탐색](/help/sites-authoring/author-environment-tools.md#path-browser) 을 열고 추가 리소스를 선택합니다.브라우저에서는 선택을 클릭/ **** 탭하여 워크플로우 인스턴스에 컨텐츠를 추가합니다.
 
    * 추가 작업을 보기 위한 기존 리소스:
 
