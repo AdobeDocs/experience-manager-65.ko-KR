@@ -26,14 +26,14 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. ([다른 채널용 Live Copy 만들기](/help/sites-administering/msm-livecopy.md)를 참조하십시오.)
+>기존 표준 사이트를 기반으로 모바일 사이트를 만들려면 표준 사이트의 Live Copy를 만드십시오. ([다른 채널에 대한 Live Copy 만들기](/help/sites-administering/msm-livecopy.md)를 참조하십시오.)
 >
 >AEM 개발자는 새 장치 그룹을 만들 수 있습니다. ([장치 그룹 필터 만들기 참조.](/help/sites-developing/groupfilters.md))
 
 다음 절차를 사용하여 모바일 페이지를 작성하십시오.
 
 1. 브라우저에서 **Siteadmin** 콘솔로 이동합니다.
-1. **Products** 페이지를 **웹 사이트** > **Geometrixx 모바일 데모 사이트** **영어**&#x200B;에서 엽니다.
+1. **웹 사이트** > **Geometrixx 모바일 데모 사이트**> **영어** 아래의 &lt;a0/>제품&#x200B;**페이지를 엽니다.**
 
 1. 다른 에뮬레이터로 전환합니다. 다음 방법 중 하나를 사용합니다.
 
@@ -45,9 +45,9 @@ ht-degree: 84%
 
 페이지가 다음과 같이 표시됩니다.
 
-![mobileipadu](assets/mobileipademu.png)
+![mobileipadum](assets/mobileipademu.png)
 
 >[!NOTE]
 >
->모바일 장치에서 작성 인스턴스의 페이지를 요청하면 에뮬레이터가 비활성화됩니다. 그런 다음 터치가 활성화된 UI를 사용하여 작성할 수 있습니다.
+>모바일 장치에서 작성 인스턴스의 페이지를 요청하면 에뮬레이터가 비활성화됩니다. 그런 다음 터치가 활성화된 UI를 사용하여 작성을 수행할 수 있습니다.
 
