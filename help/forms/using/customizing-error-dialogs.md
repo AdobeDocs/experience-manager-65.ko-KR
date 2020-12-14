@@ -17,11 +17,11 @@ ht-degree: 4%
 ---
 
 
-# 오류 대화 상자 {#customizing-error-dialogs} 사용자 지정
+# 오류 대화 상자 {#customizing-error-dialogs} 사용자 정의
 
-AEM Forms 작업 영역에서 오류 대화 상자를 사용자 정의할 수 있습니다. 오류 대화 상자를 사용자 정의하려면 [AEM Forms 작업 영역 사용자 지정](/help/forms/using/generic-steps-html-workspace-customization.md)에 대한 일반 단계를 수행합니다.
+AEM Forms 작업 영역에서 오류 대화 상자를 사용자 정의할 수 있습니다. 오류 대화 상자를 사용자 정의하려면 [AEM Forms 작업 영역 사용자 정의](/help/forms/using/generic-steps-html-workspace-customization.md)에 대한 일반 단계를 수행합니다.
 
-## 텍스트 사용자 지정 {#customizing-text}
+## 텍스트 {#customizing-text} 사용자 정의
 
 1. `/apps/ws/locales/en-US/translation.json` 파일에서 `wserror` 값을 사용자 지정된 값으로 변경합니다. 예:
 
@@ -53,7 +53,7 @@ AEM Forms 작업 영역에서 오류 대화 상자를 사용자 정의할 수 �
 
 ## CSS {#customizing-css} 사용자 지정
 
-1. `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가하여 대화 상자, 헤더, 컨텐츠 영역, 발-막대, 발-막대 버튼 및 기타 자료를 업데이트할 수 있습니다.
+1. `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가하여 대화 상자, 머리글, 컨텐츠 영역, 피트 막대, 발-표시줄 단추 및 기타 자료를 업데이트할 수 있습니다.
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -188,7 +188,7 @@ AEM Forms 작업 영역에서 오류 대화 상자를 사용자 정의할 수 �
    }
    ```
 
-1. 발 막대 단추 범위의 경우 합성 목록에서 `.error-dialog` 및 `.foot-bar` 단추 범위를 분리합니다. 이 변경 사항을 적용하려면 newStyle.css 파일에 다음을 추가하십시오.
+1. 피트 막대 단추 범위의 경우 합성 목록에서 `.error-dialog` 및 `.foot-bar` 단추 범위를 구분합니다. 이렇게 변경하려면 newStyle.css 파일에 다음 내용을 추가하십시오.
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
