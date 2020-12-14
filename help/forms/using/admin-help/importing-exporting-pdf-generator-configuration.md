@@ -1,8 +1,8 @@
 ---
 title: PDF Generator 구성 파일 가져오기 및 내보내기
 seo-title: PDF Generator 구성 파일 가져오기 및 내보내기
-description: PDF Generator 구성 파일을 가져오고 내보내는 방법을 살펴봅니다.
-seo-description: PDF Generator 구성 파일을 가져오고 내보내는 방법을 살펴봅니다.
+description: PDF Generator 구성 파일을 가져오고 내보내는 방법을 알아봅니다.
+seo-description: PDF Generator 구성 파일을 가져오고 내보내는 방법을 알아봅니다.
 uuid: 3367253b-d222-4c5f-9455-a1810d96112e
 contentOwner: admin
 content-type: reference
@@ -20,19 +20,19 @@ ht-degree: 0%
 
 # PDF Generator 구성 파일 가져오기 및 내보내기 {#importing-and-exporting-pdf-generator-configuration-files}
 
-구성 파일에는 PDF, 파일 유형, 보안 설정 등 PDF Generator 변환 정보가 포함되어 있습니다.
+구성 파일에는 PDF, 파일 유형 및 보안 설정을 비롯한 PDF Generator 변환 정보가 포함되어 있습니다.
 
 >[!NOTE]
 >
->사용자 정의 native2pdfconfig.xml 파일을 가져오면 PDF Generator 시간 제한 설정을 변경할 수 없습니다. 이 파일의 시간 초과 설정은 정보 제공용으로만 사용되며 현재 설정은 PDF Generator로 표시됩니다. 시간 초과 설정을 변경하려면 [AEM 양식 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_63)의 &quot;PDF Generator 성능 매개 변수 설정&quot;을 참조하십시오.
+>사용자 정의 native2pdfconfig.xml 파일을 가져오면 PDF Generator 시간 초과 설정을 변경할 수 없습니다. 이 파일의 시간 초과 설정은 정보 제공용으로만 사용되며 PDF Generator의 현재 설정을 표시합니다. 시간 초과 설정을 변경하려면 [AEM 양식 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_63)의 &quot;PDF Generator 성능 매개 변수 설정&quot;을 참조하십시오.
 
 ## 현재 구성 파일 {#export-your-current-configuration-file} 내보내기
 
-1. 관리 콘솔에서 서비스 > PDF Generator > 구성 파일 > 구성 내보내기를 클릭합니다.
-1. 설정을 내보내려면 해당 옵션을 선택합니다.
+1. 관리 콘솔에서 서비스 > PDF Generator > 구성 파일 > 내보내기 구성을 클릭합니다.
+1. 설정을 내보내려면 적절한 옵션을 선택합니다.
 
-   * 지정된 모든 설정을 내보내려면 [전체 구성 다운로드]를 선택합니다.
-   * 하나의 Adobe PDF 설정, 보안 설정 또는 파일 형식 설정만 내보내려면 [최소 구성 다운로드]를 선택합니다.
+   * 명명된 모든 설정을 내보내려면 [전체 구성 다운로드]를 선택합니다.
+   * Adobe PDF 설정, 보안 설정 또는 파일 유형 설정을 하나만 내보내려면 [최소 구성 다운로드]를 선택합니다.
 
       최소 구성을 내보내는 경우 내보낼 Adobe PDF, 보안 및 파일 유형 설정을 선택합니다.
 
@@ -42,25 +42,25 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->가져온 파일의 정보에 따라 시스템이 다시 구성됩니다.
+>가져온 파일의 정보를 기반으로 시스템이 다시 구성됩니다.
 
 1. 관리 콘솔에서 서비스 > PDF Generator > 구성 파일 > 구성 가져오기를 클릭합니다.
 1. 기존 구성 파일 가져오기를 선택합니다.
 1. 구성 파일 상자에서 파일 위치를 지정하려면 찾아보기를 클릭하여 파일을 찾아 선택한 다음 **가져오기**&#x200B;를 클릭합니다.
 
-## AutoCAD 파일 내의 모든 레이어 변환 {#convert-all-layers-within-autocad-files}
+## AutoCAD 파일 {#convert-all-layers-within-autocad-files} 내의 모든 레이어 변환
 
 기본적으로 PDF Generator는 파일 내의 모든 레이어 대신 AutoCAD 파일의 기본 레이어만 PDF로 변환합니다. 모든 레이어를 변환하려면 다음 절차를 따르십시오.
 
-1. 관리 콘솔에서 서비스 > PDF Generator > 구성 파일 > 구성 내보내기를 클릭합니다.
-1. 전체 구성 다운로드를 선택하고 다운로드를 클릭합니다.
-1. 텍스트 편집기에서 다운로드한 파일을 열고 `PDFMaker` 태그 내의 `AutoCAD` 태그 아래에서 텍스트 `convertAllPages="true"`를 추가합니다.
+1. 관리 콘솔에서 서비스 > PDF Generator > 구성 파일 > 내보내기 구성을 클릭합니다.
+1. [전체 구성 다운로드]를 선택하고 [다운로드]를 클릭합니다.
+1. 텍스트 편집기에서 다운로드한 파일을 열고 `PDFMaker` 태그 내의 `AutoCAD` 태그 아래에 `convertAllPages="true"` 텍스트를 추가합니다.
 1. 관리 콘솔에서 서비스 > PDF Generator > 구성 파일 > 구성 가져오기를 클릭합니다.
 1. [기존 구성 파일 가져오기]를 선택하고 업데이트된 파일을 지정한 다음 [가져오기]를 클릭합니다.
 
-   수정된 구성 파일을 사용하여 변환되는 모든 AutoCAD 파일은 모든 레이어를 변환하게 됩니다.
+   수정된 구성 파일을 사용하여 변환되는 모든 AutoCAD 파일에는 모든 레이어가 변환됩니다.
 
-## 구성을 PDF Generator {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}(으)로 설치한 원본 설정으로 재설정합니다.
+## 구성을 PDF Generator {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}(으)로 설치한 원래 설정으로 재설정합니다.
 
 1. 관리 콘솔에서 서비스 > PDF Generator > 구성 파일 > 구성 가져오기를 클릭합니다.
 1. [기본 설정으로 구성 재설정]을 선택하고 [가져오기]를 클릭합니다.
