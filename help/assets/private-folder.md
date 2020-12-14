@@ -13,19 +13,19 @@ ht-degree: 1%
 
 # [!DNL Adobe Experience Manager Assets] {#private-folder}의 비공개 폴더
 
-사용자가 사용할 수 있는 [!DNL Adobe Experience Manager Assets] 사용자 인터페이스에서 비공개 폴더를 만들 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라, 사용자는 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
+사용자가 사용할 수 있는 [!DNL Adobe Experience Manager Assets] 사용자 인터페이스에서 비공개 폴더를 만들 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라 폴더 내의 자산을 보거나 자산을 편집하는 등 다양한 작업을 폴더에 수행할 수 있습니다.
 
 >[!NOTE]
 >
 >비공개 폴더에는 소유자 역할을 가진 구성원이 하나 이상 있습니다.
 
-## 비공개 폴더 생성 및 공유 {#create-share-private-folder}
+## 비공개 폴더 만들기 및 공유 {#create-share-private-folder}
 
 비공개 폴더를 만들고 공유하려면:
 
-1. [!DNL Assets] 콘솔의 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭한 다음 메뉴에서 **[!UICONTROL 폴더]**&#x200B;를 선택합니다.
+1. [!DNL Assets] 콘솔에서 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭한 다음 메뉴에서 **[!UICONTROL 폴더]**&#x200B;를 선택합니다.
 
-   ![에셋 폴더 만들기](assets/Create-folder.png)
+   ![자산 폴더 만들기](assets/Create-folder.png)
 
 1. **[!UICONTROL 폴더 만들기]** 대화 상자에서 폴더의 제목과 이름(선택 사항)을 입력하고 **[!UICONTROL 비공개]** 옵션을 선택합니다.
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. 다른 사용자와 폴더를 공유하고 사용자에게 할당 권한을 공유하려면 폴더를 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
+1. 다른 사용자와 폴더를 공유하고 다른 사용자에게 할당 권한을 할당하려면 폴더를 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 
    ![정보 옵션](assets/do-not-localize/info-circle-icon.png)
 
@@ -41,13 +41,13 @@ ht-degree: 1%
    >
    >폴더를 공유하기 전에는 다른 사용자가 해당 폴더를 볼 수 없습니다.
 
-1. **[!UICONTROL 폴더 속성]** 페이지에서 **[!UICONTROL 사용자 추가]** 목록에서 사용자를 선택하고 개인 폴더에서 사용자에게 역할을 지정하고 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 폴더 속성]** 페이지의 **[!UICONTROL 사용자 추가]** 목록에서 사용자를 선택하고 개인 폴더의 사용자에게 역할을 할당하고 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 
    >[!NOTE]
    >
-   >폴더를 공유하는 사용자에게 `Editor`, `Owner` 또는 `Viewer`와 같은 다양한 역할을 할당할 수 있습니다. 사용자에게 `Owner` 역할을 지정하는 경우 해당 사용자는 폴더에 대해 `Editor` 권한을 가집니다. 또한 사용자는 다른 사람과 폴더를 공유할 수 있습니다. `Editor` 역할을 할당하는 경우 사용자는 비공개 폴더의 자산을 편집할 수 있습니다. 뷰어 역할을 할당하면 사용자는 비공개 폴더의 에셋만 볼 수 있습니다.
+   >폴더를 공유하는 사용자에게 `Editor`, `Owner` 또는 `Viewer`와 같은 다양한 역할을 할당할 수 있습니다. 사용자에게 `Owner` 역할을 할당하면 해당 사용자에게 폴더에 대한 `Editor` 권한이 있습니다. 또한 사용자는 다른 사람과 폴더를 공유할 수 있습니다. `Editor` 역할을 할당하면 사용자는 비공개 폴더의 자산을 편집할 수 있습니다. 뷰어 역할을 할당하면 사용자는 비공개 폴더의 에셋만 볼 수 있습니다.
 
    >[!NOTE]
    >
@@ -63,11 +63,11 @@ ht-degree: 1%
 
    ![알림 목록](assets/Assets-Notification.png)
 
-1. 관리자가 공유하는 비공개 폴더의 항목을 클릭하여 폴더를 엽니다.
+1. 관리자가 공유한 비공개 폴더의 항목을 클릭하여 폴더를 엽니다.
 
 >[!NOTE]
 >
->비공개 폴더를 만들려면 비공개 폴더를 만들 상위 폴더에서 [액세스 제어 권한](/help/sites-administering/security.md#permissions-in-aem)을 읽고 수정해야 합니다. 관리자가 아닌 경우 기본적으로 `/content/dam`에 대해 이러한 권한이 활성화되지 않습니다. 이 경우 비공개 폴더를 만들기 전에 먼저 사용자 ID/그룹에 대해 이러한 권한을 얻습니다.
+>비공개 폴더를 만들려면 비공개 폴더를 만들 상위 폴더에 대해 [액세스 제어 권한](/help/sites-administering/security.md#permissions-in-aem)을 읽고 수정해야 합니다. 관리자가 아닌 경우 기본적으로 `/content/dam`에서 이러한 권한이 활성화되어 있지 않습니다. 이 경우 비공개 폴더를 만들기 전에 먼저 사용자 ID/그룹에 대해 이러한 권한을 얻습니다.
 
 ## 비공개 폴더 삭제 {#delete-private-folder}
 
@@ -77,10 +77,10 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->CRXDE Lite에서 비공개 폴더를 삭제하면 중복된 사용자 그룹이 저장소에 남아 있게 됩니다.
+>CRXDE Lite에서 비공개 폴더를 삭제하면 중복 사용자 그룹이 저장소에 남게 됩니다.
 
 >[!NOTE]
 >
->사용자 인터페이스에서 위의 방법을 사용하여 폴더를 삭제하면 연결된 사용자 그룹도 삭제됩니다.
+>사용자 인터페이스에서 위의 메서드를 사용하여 폴더를 삭제하면 연결된 사용자 그룹도 삭제됩니다.
 >
->그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 작성자 인스턴스의 JMX에서 `clean` 메서드를 사용하여 저장소에서 제거할 수 있습니다(`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>그러나 기존 중복, 사용하지 않음 및 자동 생성된 사용자 그룹은 작성자 인스턴스(`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`)의 JMX에서 `clean` 메서드를 사용하여 저장소에서 제거할 수 있습니다.
