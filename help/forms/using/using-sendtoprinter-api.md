@@ -1,8 +1,8 @@
 ---
 title: sendToPrinter API 사용
 seo-title: sendToPrinter API 사용
-description: sendToPrinter 서비스를 사용하여 문서를 프린터로 보냅니다.
-seo-description: sendToPrinter 서비스를 사용하여 문서를 프린터로 보냅니다.
+description: sendToPrinter 서비스를 사용하여 문서를 프린터로 전송합니다.
+seo-description: sendToPrinter 서비스를 사용하여 문서를 프린터로 전송합니다.
 uuid: c6a3fe8d-ec19-4350-b4a6-4c3d1971b501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -21,7 +21,7 @@ ht-degree: 13%
 
 ## 개요 {#overview}
 
-AEM Forms에서는 SendToPrinter 서비스를 사용하여 문서를 프린터로 전송할 수 있습니다. SendToPrinter 서비스는 다음과 같은 인쇄 액세스 메커니즘을 지원합니다.
+AEM Forms에서는 SendToPrinter 서비스를 사용하여 문서를 프린터로 보낼 수 있습니다. SendToPrinter 서비스는 다음과 같은 인쇄 액세스 메커니즘을 지원합니다.
 
 * **직접 액세스 가능한 프린터** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
@@ -46,29 +46,29 @@ AEM Forms에서는 SendToPrinter 서비스를 사용하여 문서를 프린터�
 |--- |--- |--- |--- |
 | SharedPrinter | 임의 | 비어 있음 | 예외:필수 인수 sPrinterName은 비워 둘 수 없습니다. |
 | SharedPrinter | 임의 | 잘못됨 | 프린터를 찾을 수 없다는 예외가 있습니다. |
-| SharedPrinter | 임의 | 유효 | 성공적인 인쇄 작업 |
-| LPD | 비어 있음 | 임의 | 필수 인수 sPrintServerUri를 비워 둘 수 없다는 예외를 제외하고, |
-| LPD | 잘못됨 | 비어 있음 | 필수 인수 sPrinterName을 비워 둘 수 없다는 예외를 나타냅니다. |
-| LPD | 잘못됨 | 비어 있지 않음 | sPrintServerUri를 찾을 수 없다는 예외 |
+| SharedPrinter | 임의 | 유효 | 인쇄 작업에 성공했습니다. |
+| LPD | 비어 있음 | 임의 | 필수 인수 sPrintServerUri를 비워 둘 수 없다는 예외 |
+| LPD | 잘못됨 | 비어 있음 | 필수 인수 sPrinterName을 비워둘 수 없다는 예외 |
+| LPD | 잘못됨 | 비어 있지 않음 | sPrintServerUri를 찾을 수 없다는 예외 사항이 있습니다. |
 | LPD | 유효 | 잘못됨 | 프린터를 찾을 수 없다는 예외 사항. |
 | LPD | 유효 | 유효 | 성공적인 인쇄 작업 |
-| CUPS | 비어 있음 | 임의 | 필수 인수 sPrintServerUri를 비워 둘 수 없다는 예외를 제외하고, |
+| CUPS | 비어 있음 | 임의 | 필수 인수 sPrintServerUri를 비워 둘 수 없다는 예외 |
 | 컵 | 잘못됨 | 임의 | 프린터를 찾을 수 없다는 예외 사항. |
-| 컵 | 유효 | 임의 | 성공적인 인쇄 작업 |
-| DirectIP | 비어 있음 | 임의 | 필수 인수 sPrintServerUri를 비워 둘 수 없다는 예외를 제외하고, |
+| 컵 | 유효 | 임의 | 인쇄 작업에 성공했습니다. |
+| DirectIP | 비어 있음 | 임의 | 필수 인수 sPrintServerUri를 비워 둘 수 없다는 예외 |
 | DirectIP | 잘못됨 | 임의 | 프린터를 찾을 수 없다는 예외 사항. |
-| DirectIP | 유효 | 임의 | 성공적인 인쇄 작업 |
-| CIFS | 유효 | 비어 있음 | 성공적인 인쇄 작업 |
+| DirectIP | 유효 | 임의 | 인쇄 작업에 성공했습니다. |
+| CIFS | 유효 | 비어 있음 | 인쇄 작업에 성공했습니다. |
 | CIFS | 잘못됨 | 임의 | CIFS를 사용하여 인쇄하는 동안 알 수 없는 오류가 발생했습니다. |
-| CIFS | 비어 있음 | 임의 | 필수 인수 sPrintServerUri를 비워 둘 수 없다는 예외를 제외하고, |
+| CIFS | 비어 있음 | 임의 | 필수 인수 sPrintServerUri를 비워 둘 수 없다는 예외 |
 
 ## 인증 지원 {#authentication-support}
 
-인증은 CIFS 인쇄에만 지원됩니다. 인증하려면 PrinterSpec에 사용자 이름/암호/도메인을 입력합니다. 다음 단계를 수행하여 AEM Granite CyprtoSupport Service를 사용하여 암호를 암호화할 수 있습니다.
+인증은 CIFS 인쇄에만 지원됩니다. 인증하려면 PrinterSpec에 사용자 이름/암호/도메인을 입력합니다. 다음 단계를 수행하여 AEM Granite CyprtoSupport 서비스를 사용하여 암호를 암호화할 수 있습니다.
 
 1. https://&lt;server>:&lt;port>/system/console로 이동합니다.
 
 1. **[!UICONTROL Main]** > **[!UICONTROL Crypto 지원]**&#x200B;으로 이동합니다.
 
-1. 일반 텍스트를 입력하고 **[!UICONTROL Protect]**&#x200B;을 클릭합니다.
+1. 일부 일반 텍스트를 입력하고 **[!UICONTROL Protect]**&#x200B;을 클릭합니다.
 
