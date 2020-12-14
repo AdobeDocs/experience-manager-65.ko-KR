@@ -17,16 +17,16 @@ ht-degree: 4%
 ---
 
 
-# Android 스튜디오 프로젝트를 설정하고 Android 앱 {#set-up-the-android-studio-project-and-build-the-android-app} 빌드
+# Android studio 프로젝트를 설정하고 Android 앱 {#set-up-the-android-studio-project-and-build-the-android-app} 빌드
 
-이 문서는 AEM Forms 앱 6.3.1.1 이상 버전을 빌드하기 위한 것입니다. AEM Forms 앱 6.3의 소스 코드의 소스 코드에서 앱을 빌드하려면 [Eclipse 프로젝트 설정 및 Android™ 앱](/help/forms/using/setup-eclipse-project-build-installer.md) 빌드를 참조하십시오.
+이 문서는 AEM Forms 앱 6.3.1.1 이상 버전을 빌드하기 위한 것입니다. AEM Forms App 6.3의 소스 코드의 소스 코드에서 앱을 빌드하려면 [Eclipse 프로젝트 설정 및 Android™ 앱](/help/forms/using/setup-eclipse-project-build-installer.md) 빌드를 참조하십시오.
 
-AEM Forms은 AEM Forms 앱의 전체 소스 코드를 제공합니다. 소스에는 사용자 정의 AEM Forms 앱을 빌드하는 모든 구성 요소가 포함되어 있습니다. 소스 코드 아카이브 `adobe-lc-mobileworkspace-src-<version>.zip`은 소프트웨어 배포에서 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 패키지의 일부입니다.
+AEM Forms은 AEM Forms 앱의 전체 소스 코드를 제공합니다. 소스에는 사용자 정의 AEM Forms 앱을 빌드하는 모든 구성 요소가 포함되어 있습니다. 소스 코드 아카이브 `adobe-lc-mobileworkspace-src-<version>.zip`은 소프트웨어 배포 시 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 패키지의 일부입니다.
 
 AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
 1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
-1. 헤더 메뉴에서 사용할 수 있는 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 누릅니다.
+1. 머리글 메뉴에서 사용할 수 있는 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 필터]** 섹션에서 다음을 수행합니다.
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을 선택합니다.
    2. 패키지의 버전과 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
@@ -36,11 +36,11 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
 다음 이미지는 `adobe-lc-mobileworkspace-src-<version>.zip`의 추출된 내용을 표시합니다.
 
-![압축을 푼 Android™ 소스의 컨텐츠](assets/mws-content-1.png)
+![압축된 Android™ 소스의 추출된 컨텐츠](assets/mws-content-1.png)
 
 다음 이미지는 `src`폴더에 있는 `android`폴더의 디렉토리 구조를 표시합니다.
 
-![src의 android 폴더의 디렉토리 구조](assets/android-folder.png)
+![src에 있는 android 폴더의 디렉토리 구조](assets/android-folder.png)
 
 ## 표준 AEM Forms 앱 {#set-up-the-xcode-project} 빌드
 
@@ -56,9 +56,9 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
    >[!NOTE]
    >
-   >Windows®의 경우 Android 프로젝트를 시스템 드라이브에 유지하는 것이 좋습니다.
+   >Windows®의 경우 시스템 드라이브에 android 프로젝트를 보관하는 것이 좋습니다.
 
-1. 다음 디렉토리에서 아카이브를 추출합니다.
+1. 다음 디렉토리에 아카이브를 추출합니다.
 
    **MAC 사용자의 경우**:  `[User_Home]/Projects/[your-project]`
 
@@ -70,11 +70,11 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
 1. Android™ Studio를 실행합니다.
 
-   **MAC 사용자의 경우**:폴더에 있는  `local.properties` 파일을  `[User_Home]/Projects/[your-project]/android` 업데이트하고  `sdk.dir` 변수를 바탕  `SDK` 화면의위치에 지정합니다.
+   **MAC 사용자의 경우**:폴더에  `local.properties` 있는 파일을  `[User_Home]/Projects/[your-project]/android` 업데이트하고 변수를 바탕 `sdk.dir` 에 있는  `SDK` 위치로 지정합니다.
 
-   **Windows® 사용자의 경우**:폴더에 있는  `local.properties` 파일을  `%HOMEPATH%\Projects\[your-project]\android` 업데이트하고  `sdk.dir` 변수를 바탕  `SDK` 화면의위치에 지정합니다.
+   **Windows® 사용자의 경우**:폴더에  `local.properties` 있는 파일을  `%HOMEPATH%\Projects\[your-project]\android` 업데이트하고 변수를 바탕 `sdk.dir` 에 있는  `SDK` 위치로 지정합니다.
 
-1. **[!UICONTROL 마침]**&#x200B;을 클릭하여 프로젝트를 빌드합니다.
+1. **[!UICONTROL 완료]**&#x200B;를 클릭하여 프로젝트를 빌드합니다.
 
    ADT 프로젝트 탐색기에서 프로젝트를 사용할 수 있습니다.
 
@@ -87,21 +87,21 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
    **Windows® 사용자의 경우:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
-1. 프로젝트를 가져오면 Android™ 플러그인 그레이더를 업데이트하는 옵션이 있는 팝업이 나타납니다. 요구 사항에 따라 적절한 단추를 클릭합니다.
+1. 프로젝트를 가져오면 Android™ 플러그인 그레이드를 업데이트하는 옵션이 있는 팝업이 표시됩니다. 요구 사항에 따라 적절한 단추를 클릭합니다.
 
-   ![dumeindesign forvehishal](assets/dontremindmeagainforthisproject.png)
+   ![dontremindemagahonvehisproject](assets/dontremindmeagainforthisproject.png)
 
 1. 성공적인 점진적 빌드가 완료되면 다음 화면이 나타납니다. 해당 장치 또는 에뮬레이터를 시스템과 연결하고 **[!UICONTROL Android™ 실행]**&#x200B;을 클릭합니다.
 
-   ![gradleconsole](assets/gradleconsole.png)
+   ![gradeconsole](assets/gradleconsole.png)
 
-1. Android™ Studio에는 연결된 장치 및 사용 가능한 에뮬레이터가 표시됩니다. 응용 프로그램을 실행할 장치를 선택한 다음 **확인**&#x200B;을 클릭합니다.
+1. Android™ Studio에는 연결된 장치와 사용 가능한 에뮬레이터가 표시됩니다. 응용 프로그램을 실행할 장치를 선택한 다음 **확인**&#x200B;을 클릭합니다.
 
    ![connecteddevice](assets/connecteddevice.png)
 
 프로젝트를 빌드한 후 Android™ Debug Bridge 또는 Android™ Studio를 사용하여 앱을 설치하도록 선택할 수 있습니다.
 
-### Android™ Debug Bridge {#andriod-debug-bridge} 사용
+### Android™ Debug Bridge 사용 {#andriod-debug-bridge}
 
 다음 명령을 사용하여 [Android™ Debug Bridge](https://developer.android.com/tools/help/adb.html)를 통해 Android™ 장치에 응용 프로그램을 설치할 수 있습니다.
 
