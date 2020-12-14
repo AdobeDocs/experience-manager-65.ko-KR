@@ -71,7 +71,7 @@ ht-degree: 96%
 
    **기본 수신자 목록**&#x200B;은 뉴스레터의 터치포인트를 구성하므로 필수 필드입니다(목록에 대한 자세한 내용은 [목록 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) 참조).
 
-   ![mcm_newnewnewsletterdialog](assets/mcm_newnewsletterdialog.png)
+   ![mcm_newnewsletterdialog](assets/mcm_newnewsletterdialog.png)
 
    * **발송자 이름**: 뉴스레터 발송자로 표시되는 이름입니다.
 
@@ -133,7 +133,7 @@ Newsletter를 개인화하고 결과를 시뮬레이션하는 방법은 다음�
 
 >[!NOTE]
 >
->뉴스레터를 발송하기 전에 `https://localhost:4502/system/console/configMgr`에서 Day CQ Link Externalizer에 대한 OSGi 구성을 확인하십시오.
+>뉴스레터를 보내기 전에 `https://localhost:4502/system/console/configMgr`에서 OSGi 구성의 Day CQ Link Externalizer를 확인하십시오.
 >
 >기본적으로 이 매개 변수의 값은 `localhost:4502`이며 인스턴스 실행을 위한 포트가 바뀌면 작업을 완료할 수 없습니다.
 
@@ -221,7 +221,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 
 >[!NOTE]
 >
->뉴스레터를 발송하기 전에 `https://localhost:4502/system/console/configMgr`에서 Day CQ Link Externalizer에 대한 OSGi 구성을 확인하십시오.
+>뉴스레터를 보내기 전에 `https://localhost:4502/system/console/configMgr`에서 OSGi 구성의 Day CQ Link Externalizer를 확인하십시오.
 >
 >기본적으로 이 매개 변수의 값은 `localhost:4502`이며 인스턴스 실행을 위한 포트가 바뀌면 작업을 완료할 수 없습니다.
 
