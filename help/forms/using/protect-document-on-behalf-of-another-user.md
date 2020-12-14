@@ -1,7 +1,7 @@
 ---
-title: 다른 사용자를 대신하여 문서 Protect
-seo-title: 다른 사용자를 대신하여 문서 Protect
-description: 다른 사용자를 대신하여 문서 Protect
+title: Protect 다른 사용자를 대신하여 문서 작성
+seo-title: Protect 다른 사용자를 대신하여 문서 작성
+description: Protect 다른 사용자를 대신하여 문서 작성
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
@@ -14,27 +14,27 @@ ht-degree: 0%
 ---
 
 
-# Protect 다른 사용자를 대신하여 문서{#protect-a-document-on-behalf-of-another-user}
+# Protect 다른 사용자를 대신하여 문서 {#protect-a-document-on-behalf-of-another-user}
 
-AEM Forms Document Security Java SDK는 API를 제공하여 문서 편집 권한을 획득하지 않고도 사용자 계정에서 다른 사용자를 대신하여 문서를 보호할 수 있도록 합니다. API는 워크플로우 프로세스에서 사용하거나 프로그래밍 방식으로 문서 서비스로 사용할 수 있습니다. 새로운 API는 다음과 같습니다.
+AEM Forms Document Security Java SDK는 API를 제공하여 문서 편집 권한을 달성하지 않고도 사용자 계정이 다른 사용자를 대신하여 문서를 보호할 수 있도록 합니다. API는 워크플로우 프로세스에서 사용하거나 프로그래밍 방식으로 문서 서비스로 사용할 수 있습니다. 새로운 API는 다음과 같습니다.
 
 * **문서** 보호문서 API를 사용하여 문서 대신 문서에 정책 적용
 
-   다른 사용자 계정. 정책을 적용하는 데 사용된 사용자 계정의 권한은 문서를 보호하는 것으로 제한됩니다. 문서를 열고 볼 수 있는 권한을 획득하지 않습니다. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale 로케일, boolean bExactMatchForNames)
+   다른 사용자 계정. 정책을 적용하는 데 사용된 사용자 계정의 권한은 문서를 보호하는 데 제한된 상태로 유지됩니다. 문서를 열고 볼 수 있는 권한이 부여되지 않습니다. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale 로케일, 부울 bExactMatchForNames)
 
-* **create** LicenseCreateLicense API를 사용하여 다른 사용자 계정을 대신하여 정책에 대한 라이센스를 만듭니다. PublishLicenseDTO createLicense(문자열 policyId, String documentName, boolean logSecureDocEvent)
-* **protectDocumentWithCoverPageProtectDocumentWithCoverPage API를 사용하여 정책을 적용하고 다른 사용자를 대신하여 표지 페이지를 문서에 추가합니다.** 정책을 적용하는 데 사용된 사용자 계정의 권한은 문서를 보호하는 것으로 제한됩니다. 문서를 열고 볼 수 있는 권한을 획득하지 않습니다. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
+* **createLicense** CreateLicense API를 사용하여 다른 사용자 계정을 대신하여 정책에 대한 라이선스를 만듭니다. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
+* **protectDocumentWithCoverPageProtectDocumentWithCoverPage API를 사용하여 정책을 적용하고 다른 사용자를 대신하여 문서에 표지 페이지를 추가합니다.** 정책을 적용하는 데 사용된 사용자 계정의 권한은 문서를 보호하는 데 제한된 상태로 유지됩니다. 문서를 열고 볼 수 있는 권한은 없습니다. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
 
-## API를 사용하여 다른 사용자를 대신하여 문서 보호{#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
+## API를 사용하여 다른 사용자 {#using-the-apis-to-protect-a-document-on-behalf-of-another-user} 대신 문서를 보호합니다.
 
-문서를 편집할 수 있는 권한을 획득하지 않고 다른 사용자를 대신하여 문서를 보호하려면 다음 단계를 수행하십시오.
+문서를 편집할 수 있는 권한을 달성하지 않고 다른 사용자를 대신하여 문서를 보호하려면 다음 단계를 수행하십시오.
 
 1. 정책 세트를 만듭니다. 예: PolicySet1.
 1. 새로 만든 정책 세트에 정책을 만듭니다. 예: PolicySet1의 Policy1.
-1. 역할 Rights Management 최종 사용자가 있는 사용자를 만듭니다. 예: User1. Policy1을 사용하여 보호된 문서를 새로 만든 사용자에게 볼 수 있는 권한을 제공합니다.
+1. 역할 Rights Management 최종 사용자가 있는 사용자를 만듭니다. 예: User1. 새로 만든 사용자에게 정책1을 사용하여 보호된 문서를 볼 수 있는 권한을 제공합니다.
 1. 새 역할을 만듭니다. 예: Role1. 새로 만든 역할에 서비스 호출 권한을 제공합니다. 새로 만든 역할이 있는 사용자를 만듭니다. 예를 들어 User2.User2 또는 관리자를 사용하여 SDK 연결을 만들고 protectDocument 서비스를 호출할 수 있습니다.
 
-   이제 다음 샘플 코드를 실행하여 문서를 보호하는 사용자에게 문서를 편집할 수 있는 권한을 제공하지 않고도 문서를 보호할 수 있습니다.
+   이제 다음 샘플 코드를 실행하여 문서를 보호하는 사용자에게 문서를 편집할 수 있는 권한을 제공하지 않고 문서를 보호할 수 있습니다.
 
    ```java
    import java.io.File;
