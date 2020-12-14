@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 자산 인사이트 {#using-demo-package-for-asset-insights}에 데모 패키지 사용
 
-데모 패키지를 사용하면 Adobe 자산 인사이트를 통해 샘플 웹 페이지에서 데이터를 캡처하고 인사이트를 생성할 수 있습니다.
+데모 패키지를 사용하여 Adobe 자산 인사이트를 사용하여 샘플 웹 페이지에서 데이터를 캡처하고 통찰력을 생성할 수 있습니다.
 
 ## [!DNL Use Experience Manager Assets] 샘플 웹 페이지를 통한 인사이트   {#using-aem-assets-insights-with-sample-web-page}
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
    [파일 가져오기](assets/insightsdemo.zip)
 
-1. 아래에서 샘플 웹 페이지가 포함된 ZIP 파일을 다운로드하고 로컬 파일 시스템에서 압축을 해제합니다.
+1. 아래에서 샘플 웹 페이지가 포함된 ZIP 파일을 다운로드하여 로컬 파일 시스템에 추출합니다.
 
    [파일 가져오기](assets/demosite.zip)
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 
    >[!CAUTION]
    >
-   >웹 페이지는 localhost 서버에서 자산을 로드하도록 구성되었습니다. 서버가 다른 곳에서 실행 중인 경우 웹 페이지의 HTML 컨텐츠에서 서버 주소를 localhost에서 서버 주소로 변경합니다.
+   >웹 페이지는 localhost 서버에서 자산을 로드하도록 구성되었습니다. 서버가 실행되고 있는 경우 웹 페이지의 HTML 내용에 있는 localhost에서 서버 주소로 서버 주소를 변경합니다.
 
    >[!NOTE]
    >
