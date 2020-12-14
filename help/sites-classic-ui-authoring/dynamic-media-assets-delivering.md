@@ -20,7 +20,7 @@ ht-degree: 84%
 
 # Dynamic Media 자산 제공{#delivering-dynamic-media-assets}
 
-비디오와 이미지 모두 Dynamic Media 자산을 제공하는 방법은 웹 사이트를 구현하는 방법에 따라 다릅니다.
+비디오와 이미지 모두 Dynamic Media 자산을 제공하는 방법은 웹 사이트 구현 방법에 따라 다릅니다.
 
 Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 
