@@ -1,8 +1,8 @@
 ---
 title: 페이지 작성
 seo-title: 페이지 작성
-description: AEM을 사용하여 작성하는 방법에는 두 가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 페이지 작성에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(고급)
-seo-description: AEM을 사용하여 작성하는 방법에는 두 가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 페이지 작성에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(고급)
+description: AEM으로 작성하는 방법에 대한 2가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 작성 페이지에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(높은 수준)입니다.
+seo-description: AEM으로 작성하는 방법에 대한 2가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 작성 페이지에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(높은 수준)입니다.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,7 +20,7 @@ ht-degree: 78%
 
 # 페이지 작성{#authoring-pages}
 
-다음은 AEM을 사용한 작성에 대한 개요를 제공합니다.
+다음은 AEM으로 작성하는 방법에 대한 개요를 제공합니다.
 
 * [작성을 위한 첫 번째 단계](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - 새 작성자를 위한 소개
 
