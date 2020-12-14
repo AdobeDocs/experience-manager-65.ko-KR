@@ -1,8 +1,8 @@
 ---
 title: PDF Generator 백업 제한 사항
 seo-title: PDF Generator 백업 제한 사항
-description: PDF Generator 백업 제한 사항에 대해 자세히 알아보십시오.
-seo-description: PDF Generator 백업 제한 사항에 대해 자세히 알아보십시오.
+description: PDF Generator 백업 제한에 대한 자세한 내용을 살펴볼 수 있습니다.
+seo-description: PDF Generator 백업 제한에 대한 자세한 내용을 살펴볼 수 있습니다.
 uuid: 9537ffde-4396-46d1-81ea-edcd25923ffb
 contentOwner: admin
 content-type: reference
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 # PDF Generator 백업 제한 사항 {#pdf-generator-backup-limitations}
 
-PDF Generator에서 파일을 변환하는 데 사용하는 임시 디렉토리는 백업할 수 없습니다. PDF Generator는 특정 시간 간격으로 임시 디렉토리의 컨텐츠를 검토하고 지우므로 서비스가 제대로 복구되더라도 데이터가 손실될 수 있습니다.
+PDF Generator에서 파일을 변환하는 데 사용하는 임시 디렉토리는 백업할 수 없습니다. PDF Generator는 설정된 간격으로 임시 디렉토리의 컨텐츠를 검토하고 지우므로 서비스가 제대로 복구되더라도 데이터가 손실될 수 있습니다.
