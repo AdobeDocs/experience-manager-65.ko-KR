@@ -1,8 +1,8 @@
 ---
 title: 인증서 취소 목록 관리
 seo-title: 인증서 취소 목록 관리
-description: 인증서 해지 목록을 관리하는 방법을 알아봅니다.
-seo-description: 인증서 해지 목록을 관리하는 방법을 알아봅니다.
+description: 인증서 해지 목록을 관리하는 방법에 대해 알아봅니다.
+seo-description: 인증서 해지 목록을 관리하는 방법에 대해 알아봅니다.
 uuid: d8c4b64c-a273-4f5d-8b71-f6ea455c0f0a
 contentOwner: admin
 content-type: reference
@@ -24,7 +24,7 @@ Trust Store Management를 사용하여 CRL(인증서 해지 목록)을 가져오
 
 ## CRL {#import-a-crl} 가져오기
 
-1. 관리 콘솔에서 설정 > Trust Store 관리 > 인증서 해지 목록을 클릭한 다음 가져오기를 클릭합니다.
+1. 관리 콘솔에서 설정 > 신뢰 저장소 관리 > 인증서 해지 목록을 클릭한 다음 가져오기를 클릭합니다.
 1. 별칭 상자에 CRL의 식별자를 입력합니다.
 1. 찾아보기를 클릭하여 CRL을 찾은 다음 확인을 클릭합니다.
 
