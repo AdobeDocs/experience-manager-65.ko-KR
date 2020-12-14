@@ -23,7 +23,7 @@ ht-degree: 7%
 
 기본적으로 편집기에서 클래식 UI로 전환하는 기능이 비활성화됩니다.
 
-**페이지 정보** 메뉴의 클래식 UI에서 열기&#x200B;**옵션을 다시 활성화하려면 다음 단계를 수행합니다.**
+**페이지 정보** 메뉴의 **클래식 UI에서 열기** 옵션을 다시 활성화하려면 다음 단계를 수행합니다.
 
 1. CRXDE Lite을 사용하여 다음 노드를 찾습니다.
 
@@ -37,9 +37,9 @@ ht-degree: 7%
 
    * **경로**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **오버레이 위치**: `/apps/`
-   * **일치 노드 유형**:active(확인란 선택)
+   * **노드 유형 일치**:active(확인란 선택)
 
-1. 다음과 같은 다중 값 텍스트 속성을 오버레이된 노드에 추가합니다.
+1. 다음 다중 값 텍스트 속성을 오버레이된 노드에 추가합니다.
 
    `sling:hideProperties = ["granite:hidden"]`
 
