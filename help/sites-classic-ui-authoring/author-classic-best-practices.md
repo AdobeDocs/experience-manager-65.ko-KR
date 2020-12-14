@@ -38,7 +38,7 @@ ht-degree: 65%
 
 ## 자산 {#assets}
 
-다이내믹 미디어 기능 및 Dynamic Media Classic 통합을 포함한 자산 관련 우수 사례는 다음 항목에 설명되어 있습니다.
+Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
 
 <table>
  <tbody>
@@ -73,6 +73,6 @@ ht-degree: 65%
 
 ## 양식 {#forms}
 
-적응형 양식:[적응형 양식 작업 우수 사례](/help/forms/using/adaptive-forms-best-practices.md) - 적응형 양식 설정, 작성 및 사용자 지정에 대한 우수 사례를 설명합니다.
+적응형 양식:[적응형 양식 작업에 대한 우수 사례](/help/forms/using/adaptive-forms-best-practices.md) - 적응형 양식 설정, 작성 및 사용자 지정에 대한 우수 사례를 설명합니다.
 
-HTML5 양식:[HTML5 양식 디자인 모범 사례](/help/forms/using/best-practices-for-html5-forms.md) - HTML5 양식의 레이아웃 및 디자인 작업을 위한 우수 사례를 설명합니다.
+HTML5 양식:[HTML5 양식 디자인 모범 사례](/help/forms/using/best-practices-for-html5-forms.md) - HTML5 양식의 레이아웃 및 디자인 작업에 대한 우수 사례를 설명합니다.
