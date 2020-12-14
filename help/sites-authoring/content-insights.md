@@ -2,7 +2,7 @@
 title: 컨텐츠 인사이트
 seo-title: 컨텐츠 인사이트
 description: 컨텐츠 인사이트는 웹 분석 및 SEO 추천을 사용하여 페이지 성능에 대한 정보를 제공합니다.
-seo-description: 컨텐츠 인사이트 웹 분석 및 SEO 권장 사항을 사용하여 페이지 성능에 대한 정보를 제공합니다.
+seo-description: 컨텐츠 인사이트 웹 분석 및 SEO 추천을 사용하여 페이지 성능에 대한 정보를 제공합니다.
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
