@@ -18,7 +18,7 @@ ht-degree: 90%
 ---
 
 
-# 자산에 대한 이름 지정 규칙 testing{#naming-conventions-for-assets-testing}
+# 자산에 대한 이름 지정 규칙 테스트{#naming-conventions-for-assets-testing}
 
 저장소의 노드는 [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository)의 이름 지정 규칙을 따릅니다. 그러나 Adobe Experience Manager는 자산 노드의 이름에 대한 추가적인 규칙을 적용합니다.
 
