@@ -30,11 +30,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms Server를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-importing-form-data-using-the-java-api}를 사용하여 양식 데이터 가져오기
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-importing-form-data-using-the-java-api}을(를) 사용하여 양식 데이터 가져오기
 
-다음 Java 코드 예제에서는 데이터를 PDF 양식으로 가져옵니다. 데이터는 *Loan_data.xml*&#x200B;이라는 XML 파일에 있으며 PDF 양식은 *ResultLoanForm.pdf*&#x200B;이라는 PDF 파일로 저장됩니다. ([양식 데이터 가져오기](/help/forms/developing/importing-exporting-data.md#importing-form-data)를 참조하십시오.)
+다음 Java 코드 예제에서는 데이터를 PDF 양식으로 가져옵니다. 데이터는 *Loan_data.xml*&#x200B;이라는 XML 파일에 있으며 PDF 양식은 *ResultLoanForm.pdf*&#x200B;라는 PDF 파일로 저장됩니다. ([양식 데이터 가져오기](/help/forms/developing/importing-exporting-data.md#importing-form-data)를 참조하십시오.)
 
 ```java
  /*
