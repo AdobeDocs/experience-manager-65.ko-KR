@@ -1,8 +1,8 @@
 ---
-title: 사용자 정의 응용 양식 테마 만들기
-seo-title: 사용자 정의 응용 양식 테마 만들기
-description: 응용 양식 테마는 적응형 양식의 스타일(모양 및 느낌)을 정의하는 데 사용하는 AEM 클라이언트 라이브러리입니다. 맞춤형 적응형 양식 테마를 제작하는 방법을 살펴보십시오.
-seo-description: 응용 양식 테마는 적응형 양식의 스타일(모양 및 느낌)을 정의하는 데 사용하는 AEM 클라이언트 라이브러리입니다. 맞춤형 적응형 양식 테마를 제작하는 방법을 살펴보십시오.
+title: 사용자 정의 적응형 양식 테마 만들기
+seo-title: 사용자 정의 적응형 양식 테마 만들기
+description: 적응형 양식 테마는 적응형 양식의 스타일(모양 및 느낌)을 정의하는 데 사용하는 AEM 클라이언트 라이브러리입니다. 사용자 정의 적응형 양식 테마를 만드는 방법을 알아봅니다.
+seo-description: 적응형 양식 테마는 적응형 양식의 스타일(모양 및 느낌)을 정의하는 데 사용하는 AEM 클라이언트 라이브러리입니다. 사용자 정의 적응형 양식 테마를 만드는 방법을 알아봅니다.
 uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
 content-type: reference
 topic-tags: customization
@@ -17,19 +17,19 @@ ht-degree: 0%
 ---
 
 
-# 사용자 지정 응용 양식 테마 만들기 {#creating-custom-adaptive-form-themes}
+# 사용자 정의 응용 양식 테마 만들기 {#creating-custom-adaptive-form-themes}
 
 >[!CAUTION]
 >
->AEM Forms은 응용 양식 [테마](/help/forms/using/themes.md)을 만들고 수정하는 [테마 편집기](/help/forms/using/themes.md) 기능을 제공합니다. [테마 편집기](/help/forms/using/themes.md)가 없는 버전에서 업그레이드했으며 Less/CSS 파일(사전 테마 편집기 방법)을 사용하여 만든 테마에 대한 기존 투자를 받은 경우에만 이 문서에 나열된 단계를 수행하십시오.
+>AEM Forms은 응용 양식 [테마](/help/forms/using/themes.md)을 만들고 수정하는 [테마 편집기](/help/forms/using/themes.md) 기능을 제공합니다. [테마 편집기](/help/forms/using/themes.md)가 없는 버전에서 업그레이드했으며 Less/CSS 파일(사전 테마 편집기 방법)을 사용하여 만든 테마에 대한 기존 투자가 있는 경우에만 이 문서에 나열된 단계를 수행하십시오.
 
 ## 전제 조건 {#prerequisites}
 
 * LESS(Leaner CSS) 프레임워크에 대한 지식
 * Adobe Experience Manager에서 클라이언트 라이브러리를 만드는 방법
-* [만드는 테마를 ](/help/forms/using/custom-adaptive-forms-templates.md) 사용하기 위한 응용 양식 템플릿 만들기
+* [만든 테마를 ](/help/forms/using/custom-adaptive-forms-templates.md) 사용하기 위한 응용 양식 템플릿 만들기
 
-## 응용 양식 테마 {#adaptive-form-theme}
+## 적응형 양식 테마 {#adaptive-form-theme}
 
 **적응형 양식 테마**&#x200B;는 적응형 양식의 스타일(모양과 느낌)을 정의하는 데 사용하는 AEM 클라이언트 라이브러리입니다.
 
@@ -43,12 +43,12 @@ ht-degree: 0%
 >
 >다음 절차는 노드, 속성 및 폴더와 같은 AEM 객체의 샘플 이름을 사용하여 설명합니다.
 >
->이름을 사용하여 이러한 단계를 수행하는 경우 결과 템플릿이 다음 스냅샷과 유사하게 나타납니다.
+>이름을 사용하여 이러한 단계를 수행하면 결과 템플릿이 다음 스냅샷과 유사하게 나타납니다.
 
 ![포리스트 테마 응용 양식 ](assets/thumbnail.png)
 **스냅샷 그림:** *포리스트 테마 샘플*
 
-1. `/apps`노드 아래에 `cq:ClientLibraryFolder` 유형의 노드를 만듭니다.
+1. `/apps` 노드 아래에 `cq:ClientLibraryFolder` 유형의 노드를 만듭니다.
 
    예를 들어 다음 노드를 만듭니다.
 
@@ -60,11 +60,11 @@ ht-degree: 0%
 
    ![CRX 저장소 스냅샷](assets/3-2.png)
 
-1. 1단계에서 만든 노드에 `less` 및 `css` 파일과 `css.txt` 파일을 두 개 추가합니다.
+1. 1단계에서 만든 노드에 `less` 및 `css` 폴더 2개와 `css.txt` 파일을 추가합니다.
 
-   * `less` 폴더:.css 스타일을 관리하는 데 사용되는  `less` 변수 `less`   `less mixins` 를 정의하는 변수 파일을 포함합니다.
+   * `less` 폴더:변수를 정의하는  `less` 변수  `less` 및 .css 스타일을 관리하는 데  `less mixins` 사용되는 변수 파일을 포함합니다.
 
-      이 폴더는 `less` 변수 파일, `less` mixin 파일, `less` mixins 및 변수를 사용하여 스타일을 정의하는 파일로 구성됩니다. 이렇게 적은 파일은 모두 styles.less로 가져옵니다.
+      이 폴더는 믹서와 변수를 사용하여 스타일을 정의하는 `less` 변수 파일, `less` mixin 파일, `less` 파일로 구성됩니다. 이러한 모든 파일을 styles.less로 가져옵니다.
 
    * `css`폴더:테마에 사용할 정적 스타일을 정의하는 .css 파일이 포함되어 있습니다.
 
@@ -75,17 +75,17 @@ ht-degree: 0%
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
-   적응형 양식은 다음에 정의된 타사 변수를 제공합니다.
+   적응형 양식은 다음에 정의된 제3자 변수를 제공합니다.
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   적응형 양식에서 제공되는 더 적은 수의 변수를 사용하거나, 이러한 변수를 재정의하거나, 더 적은 변수를 새로 만들 수 있습니다.
+   적응형 양식에서 제공되는 더 적은 변수를 사용하거나, 이러한 변수를 재정의하거나, 더 적은 새 변수를 만들 수 있습니다.
 
    >[!NOTE]
    >
    >덜 이전의 프로세서를 가져오는 동안 import 문에서 파일의 상대 경로를 지정합니다.
 
-   변수 대체 샘플:
+   변수 재정의 샘플:
 
    ```css
    @button-background-color: rgb(19, 102, 44);
@@ -95,7 +95,7 @@ ht-degree: 0%
    @button-font-color: #ffffff;
    ```
 
-   `less`변수 무시
+   `less`변수를 재정의하려면:
 
    1. 기본 적응형 양식 변수 가져오기:
 
@@ -110,13 +110,13 @@ ht-degree: 0%
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **파일 혼합** 감소: 변수를 인수로 받아들이는 함수를 정의할 수 있습니다. 이러한 함수의 출력은 결과 스타일입니다. 이러한 혼합을 다른 스타일 내에서 사용하여 CSS 스타일을 반복하지 않도록 합니다.
+   **파일 혼합 감소: 변수를 인수로** 허용하는 함수를 정의할 수 있습니다. 이러한 함수의 출력은 결과 스타일입니다. CSS 스타일을 반복하지 않도록 서로 다른 스타일 내에서 이러한 혼합을 사용합니다.
 
    적응형 양식은 다음에 정의된 OOTB 믹스를 제공합니다.
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 
-   적응형 양식은 다음에 정의된 타사 믹스도 제공합니다.
+   적응형 양식은 다음에 정의된 제3자 혼합도 제공합니다.
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
 
@@ -136,11 +136,11 @@ ht-degree: 0%
    }
    ```
 
-   **Styles.less File: 이 파일** 을 사용하여 클라이언트 라이브러리에서 사용해야 하는 모든 파일(변수, 혼합, 스타일)을 포함합니다.
+   **Styles.less File:** 이 파일을 사용하여 클라이언트 라이브러리에 사용해야 하는 모든 파일(변수, 혼합, 스타일)을 포함할 수 있습니다.
 
    다음 샘플 `styles.less` 파일에서 import 문을 임의의 순서대로 배치할 수 있습니다.
 
-   다음 .less 파일을 가져오는 문은 필수입니다.
+   다음 .less 파일을 가져오는 명령문은 필수입니다.
 
    * `globalvariables.less`
    * `layoutvariables.less`
@@ -197,7 +197,7 @@ ht-degree: 0%
    >
    >styles.less 파일은 필수가 아닙니다. 즉, 사용자 정의 스타일, 변수 또는 혼합을 정의하지 않은 경우 이 파일을 만들 필요가 없습니다.
    >
-   >그러나 css.txt 파일에서 style.less 파일을 만들지 않으면 다음 줄의 주석을 해제해야 합니다.
+   >그러나 style.less 파일을 만들지 않으면 css.txt 파일에서 다음 줄의 주석을 해제해야 합니다.
    >
    >**`#base=less`**
    >
@@ -205,11 +205,11 @@ ht-degree: 0%
    >
    >**`styles.less`**
 
-## 응용 양식 {#to-use-a-theme-in-an-adaptive-form}에서 테마를 사용하려면
+## 적응형 양식 {#to-use-a-theme-in-an-adaptive-form}에서 테마를 사용하려면
 
-적응형 양식 테마를 만든 후 다음 단계를 수행하여 이 테마를 적응형 양식으로 사용합니다.
+적응형 양식 테마를 만든 후 다음 단계를 수행하여 적응형 양식으로 이 테마를 사용합니다.
 
-1. 응용 양식 테마](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) 섹션을 만들기 위해 [에서 만든 테마를 포함하려면 `cq:Component` 유형의 사용자 지정 페이지를 만듭니다.
+1. [에서 만든 테마를 포함시켜 적응형 양식 테마](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) 섹션을 만들려면 `cq:Component` 유형의 사용자 지정 페이지를 만듭니다.
 
    예, `/apps/myAfCustomizations/myAfPages/forestPage`
 
@@ -217,9 +217,9 @@ ht-degree: 0%
 
       ![CRX 저장소 스냅샷](assets/1-2.png)
 
-   1. 페이지에서 테마를 사용하려면 overriding file library.jsp를 노드에 추가해야 합니다.
+   1. 페이지에서 테마를 사용하려면 override file library.jsp를 노드에 추가해야 합니다.
 
-      그런 다음 이 아티클의 적응형 양식 테마 섹션을 만들려면
+      그런 다음 이 아티클의 적응형 양식 테마 섹션을 만들려면 [만들기]에서 만든 테마를 가져옵니다.
 
       다음 샘플 코드 조각은 `af.theme.forest` 테마를 가져옵니다.
 
@@ -228,11 +228,11 @@ ht-degree: 0%
       <cq:includeClientLib categories="af.theme.forest"/>
       ```
 
-   1. **선택 사항**:사용자 지정 페이지에서 필요에 따라 header.jsp, footer.jsp 및 body.jsp를 재정의합니다.
+   1. **옵션**:사용자 지정 페이지에서 필요에 따라 header.jsp, footer.jsp 및 body.jsp를 재정의합니다.
 
-1. 사용자 지정 템플릿 만들기(예:`/apps/myAfCustomizations/myAfTemplates/forestTemplate`)이 해당 jcr:content가 이전 단계에서 만든 사용자 지정 페이지를 가리킵니다(예:`myAfCustomizations/myAfPages/forestPage)`.
+1. 사용자 정의 템플릿을 만듭니다(예:jcr:content가 이전 단계에서 만든 사용자 정의 페이지를 가리키는 `/apps/myAfCustomizations/myAfTemplates/forestTemplate`)(예:`myAfCustomizations/myAfPages/forestPage)`.
 
    ![CRX 저장소 스냅샷](assets/2-1.png)
 
-1. 이전 단계에서 만든 템플릿을 사용하여 적응형 양식을 만듭니다. 적응형 양식의 모양과 느낌은 이 문서의 적응형 양식 테마 섹션을 만들려면
+1. 이전 단계에서 만든 템플릿을 사용하여 적응형 양식을 만듭니다. 적응형 양식의 모양과 느낌은 이 아티클의 적응형 양식 테마 섹션을 만들려면
 
