@@ -26,44 +26,44 @@ ht-degree: 1%
 이 기능을 사용하면 사용 중인 패턴을 감지하여 기존 AEM 인스턴스에서 업그레이드 가능성을 확인할 수 있습니다.
 
 1. 특정 규칙을 위반하고 업그레이드로 인해 영향을 받거나 덮어쓸 영역에서 수행됩니다
-1. AEM 6.x 기능 또는 AEM 6.5에서 역호환이 되지 않고 업그레이드 후 중단될 가능성이 있는 API를 사용하십시오.
+1. AEM 6.x 기능 또는 AEM 6.5에서 역호환하지 않고 업그레이드 후 중단될 수 있는 API를 사용하십시오.
 
 이는 AEM 6.5로 업그레이드하는 데 관련된 개발 작업의 평가 역할을 할 수 있습니다.
 
 ## 설정 방법 {#how-to-set-up}
 
-패턴 탐지기는 AEM 6.5 업그레이드를 대상으로 하는 모든 소스 AEM 버전에서 작동하는 [하나의 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65)로 별도로 출시됩니다. [패키지 관리자](/help/sites-administering/package-manager.md)를 사용하여 설치할 수 있습니다.
+Pattern Detector는 AEM 6.5 업그레이드를 대상으로 6.1에서 6.5까지 모든 소스 AEM 버전에서 작동하는 [하나의 패키지로 별도로 릴리스됩니다. ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) [패키지 관리자](/help/sites-administering/package-manager.md)를 사용하여 설치할 수 있습니다.
 
 ## 사용 방법 {#how-to-use}
 
 >[!NOTE]
 >
->패턴 탐지기는 로컬 개발 인스턴스를 비롯한 모든 환경에서 실행할 수 있습니다. 그러나 다음 작업을 수행하려면:
+>Pattern Detector는 로컬 개발 인스턴스를 비롯한 모든 환경에서 실행할 수 있습니다. 그러나 다음 작업을 수행하려면:
 >
->* 감지 속도 증가
+>* 감지 비율 증가
 >* 중요한 비즈니스 인스턴스 속도 저하 방지
 
 >
 >
-동시에 사용자 응용 프로그램, 콘텐트 및 구성 영역의 프로덕션 환경에 가능한 한 가까운 **을 스테이징 환경에서 실행하는 것이 좋습니다.**
+동시에 사용자 응용 프로그램, 콘텐트 및 구성 영역의 프로덕션 환경에 가능한 한 가까운 **스테이징 환경에서**&#x200B;을 실행하는 것이 좋습니다.
 
 여러 가지 방법을 사용하여 패턴 탐지기 출력을 확인할 수 있습니다.
 
 * **Felix Inventory 콘솔을 통해 다음을 수행할 수 있습니다.**
 
-1. *https://serveraddress:serverport/system/console/configMgr*&#x200B;에서 AEM 웹 콘솔로 이동
+1. *https://serveraddress:serverport/system/console/configMgr*&#x200B;로 이동하여 AEM 웹 콘솔로 이동합니다.
 1. 아래 이미지에 표시된 대로 **상태 - 패턴 탐지기**&#x200B;를 선택합니다.
 
-   ![스크린샷-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
+   ![스크린샷 2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **반응형 텍스트 기반 또는 일반 JSON 인터페이스를 통해**
-* **각 줄에 별도의 JSON 문서를 생성하는 인터랙티브한 JSON 라인 인터페이스를 통해 **이 제공됩니다.
+* **각 행에 별도의 JSON 문서를 생성하는 인터랙티브한 JSON 라인 인터페이스를 통해 **.
 
 이러한 방법 모두 아래에 자세히 설명되어 있습니다.
 
 ## 반응형 인터페이스 {#reactive-interface}
 
-반응형 인터페이스를 사용하면 의심스러운 점이 발견되면 즉시 위반 보고서를 처리할 수 있습니다.
+반응형 인터페이스를 사용하면 의심이 감지되는 즉시 위반 보고서를 처리할 수 있습니다.
 
 출력은 현재 2개의 URL에서 사용할 수 있습니다.
 
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 ## 일반 텍스트 인터페이스 처리 {#handling-the-plain-text-interface}
 
-출력물의 정보는 일련의 이벤트 항목으로 지정됩니다. 두 개의 채널이 있습니다. 하나는 게시 위반이고 다른 하나는 현재 진행 상황을 게시하는 채널입니다.
+출력에서 표시되는 정보는 일련의 이벤트 항목으로 지정됩니다. 위반 게시에 사용되는 채널과 현재 진행 상황을 게시하는 데 사용되는 두 개의 채널이 있습니다.
 
 다음 명령을 사용하여 얻을 수 있습니다.
 
@@ -92,7 +92,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
 ```
 
-다음 결과를 초래합니다.
+다음 결과를 가져옵니다.
 
 ```
 2018-02-13T14:19:26.909+01:00 [PROGRESS] emitted=127731/52 MB patterns (from=6.5), analysed=45780/16 MB items, found=0 suspicions so far in period=PT5.005S (throughput=34667 items/sec)
@@ -100,9 +100,9 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## JSON 인터페이스 처리 {#handling-the-json-interface}
+## JSON 인터페이스 {#handling-the-json-interface} 처리
 
-마찬가지로 JSON은 게시되는 즉시 [jq tool](https://stedolan.github.io/jq/)을 사용하여 처리할 수 있습니다.
+마찬가지로 JSON은 게시되는 즉시 [jq 도구](https://stedolan.github.io/jq/)를 사용하여 처리할 수 있습니다.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -127,7 +127,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 }
 ```
 
-진행 상황은 5초에 한 번씩 보고되며, 의심이 표시된 메시지 이외의 다른 메시지는 제외하여 받아들일 수 있다:
+진행 상태는 5초마다 보고되며, 의심이 아닌 다른 메시지를 제외하여 제기할 수 있습니다.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == false)'
@@ -212,11 +212,11 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 
 >[!NOTE]
 >
->전체 출력의 말림 효과를 파일에 저장한 다음 `jq` 또는 `grep`을 통해 처리하여 정보 유형을 필터링하는 것이 좋습니다.
+>말림 출력 전체를 파일에 저장한 다음 `jq` 또는 `grep`을 통해 처리하여 정보 유형을 필터링하는 것이 좋습니다.
 
 ## 감지 범위 {#scope}
 
-현재 패턴 탐지기 기능을 통해 다음을 확인할 수 있습니다.
+현재 패턴 탐지기 기능을 사용하여 다음을 확인할 수 있습니다.
 
 * OSGi 번들 내보내기 및 가져오기 불일치
 * 리소스 유형 및 슈퍼 유형(검색 경로 컨텐츠 오버레이 포함) 초과 사용
@@ -226,4 +226,4 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 
 >[!NOTE]
 >
->Pattern Detector는 업그레이드에 대한 경고를 정확히 예측하려고 합니다. 하지만 일부 시나리오에서 잘못된 긍지를 생성할 수 있습니다.
+>Pattern Detector는 업그레이드에 대한 경고를 정확하게 예측하려고 합니다. 하지만 일부 시나리오에서 잘못된 긍지를 생성할 수 있습니다.
