@@ -216,7 +216,7 @@ QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있
 쿼리 표현식 및 추가적인 예에 대한 전체 논의는 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)를 참조하십시오.
    * **정렬**
 기준 선택 
-`jcr:title`,  `jcr:created` `cq:lastModified` 또는 드롭다운 메뉴 `cq:template` 에서 다운로드할 수 있습니다.
+`jcr:title`,  `jcr:created`또는  `cq:lastModified`드롭다운 메뉴 `cq:template` 에서 선택합니다.
 
    * **제한**
 회전판에서 사용할 최대 항목 수로서, 선택 사항입니다.
@@ -972,7 +972,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
 >[!NOTE]
 >
->AEM 양식에 대한 자세한 내용은 [AEM 양식 도움말](/help/forms/home.md)을 참조하십시오.
+>AEM Forms에 대한 자세한 내용은 [AEM Forms 도움말](/help/forms/home.md)을 참조하십시오.
 
 양식은 여러 가지 구성 요소로 이루어집니다.
 
