@@ -26,5 +26,5 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->사용할 수 있는 스캐폴딩 [mode](/help/sites-authoring/author-environment-tools.md#page-modes)이 있지만 스캐폴드에서 새 페이지를 만드는 것은 물론 스캐폴드의 유지 관리 및 생성도 클래식 UI에서 수행됩니다. 자세한 내용은 클래식 UI 작성 설명서의 [스캐폴딩](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)을 참조하십시오.
+>사용할 수 있는 스캐폴딩 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)이 있지만 스캐폴드에서 새 페이지를 만드는 것은 물론 스캐폴드의 유지 관리 및 작성도 클래식 UI에서 수행됩니다. 자세한 내용은 클래식 UI 작성 설명서의 [스캐폴딩](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)을 참조하십시오.
 
