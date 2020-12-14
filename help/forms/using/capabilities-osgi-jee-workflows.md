@@ -15,7 +15,7 @@ ht-degree: 22%
 
 ## AEM 받은 편지함 및 HTML 작업 영역 {#aem-inbox-and-html-workspace}
 
-AEM Inbox를 사용하여 OSGi에서 Forms 중심의 AEM 워크플로우를 실행하고 모니터링할 수 있습니다. 반면에 HTML 작업 영역을 사용하면 AEM Forms JEE 워크플로우를 실행하고 모니터링할 수 있습니다. 다음 표는 OSGi의 Forms 중심 AEM 워크플로우용 AEM 받은 편지함에서 그리고 AEM Forms JEE 워크플로우용 HTML 작업 공간에서 사용할 수 있는 다양한 중요한 작업을 파악하는 데 도움이 됩니다.
+AEM 받은 편지함을 사용하여 OSGi에서 Forms 중심의 AEM 워크플로우를 실행하고 모니터링할 수 있습니다. 반면에 HTML 작업 영역을 사용하면 AEM Forms JEE 작업 과정을 실행하고 모니터링할 수 있습니다. 다음 표는 OSGi의 Forms 중심 AEM 워크플로우에서 AEM 받은 편지함에서 사용할 수 있는 중요한 작업과 AEM Forms JEE 워크플로우용 HTML 작업 공간에서 사용할 수 있는 다양한 작업을 파악하는 데 도움이 됩니다.
 
 <table>
  <tbody>
@@ -75,7 +75,7 @@ AEM Inbox를 사용하여 OSGi에서 Forms 중심의 AEM 워크플로우를 실�
    <td>지원되지 않음</td>
   </tr>
   <tr>
-   <td>큐(공유 개인 큐, 대기열에서 청구 작업)</td>
+   <td>큐(공유 개인 큐, 큐에서 요청 작업)</td>
    <td>지원됨</td>
    <td>지원됨</td>
   </tr>
@@ -99,7 +99,7 @@ AEM Inbox를 사용하여 OSGi에서 Forms 중심의 AEM 워크플로우를 실�
 
 ## OSGi 및 AEM Forms JEE 워크플로우의 양식 중심의 AEM 워크플로우 {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-OSGi 및 AEM Forms JEE 워크플로우(JEE 프로세스 관리의 AEM Forms)의 양식 중심의 AEM 워크플로우는 서로 다른 기능을 제공합니다. 다음 표는 JEE 워크플로우에서 OSGi 및 AEM Forms의 양식 중심 AEM 워크플로우에서 사용할 수 있는 중요한 기능을 파악하는 데 도움이 됩니다.
+OSGi 및 AEM Forms JEE 워크플로우(AEM Forms on JEE Process Management)의 양식 중심의 AEM 워크플로우에는 서로 다른 기능이 있습니다. 다음 표는 JEE 워크플로우에서 OSGi 및 AEM Forms의 양식 중심 AEM 워크플로우에서 사용할 수 있는 중요한 기능을 이해하는 데 도움이 됩니다.
 
 <table>
  <tbody>
@@ -129,17 +129,17 @@ OSGi 및 AEM Forms JEE 워크플로우(JEE 프로세스 관리의 AEM Forms)의 
    <td>지원됨<br /> </td>
   </tr>
   <tr>
-   <td>작업 우선 순위 정의</td>
+   <td>작업 우선순위 정의</td>
    <td>지원됨</td>
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>기한 후 작업 시간 단축</td>
+   <td>기한 후 작업 시간 초과</td>
    <td>지원됨</td>
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>워크플로우 내의 루프</td>
+   <td>워크플로우 내 루프</td>
    <td>지원됨</td>
    <td>지원됨</td>
   </tr>
@@ -174,7 +174,7 @@ OSGi 및 AEM Forms JEE 워크플로우(JEE 프로세스 관리의 AEM Forms)의 
    <td>지원됨 [4]</td>
   </tr>
   <tr>
-   <td>통신 관리와의 통합</td>
+   <td>통신 관리와 통합</td>
    <td>지원됨</td>
    <td>지원됨</td>
   </tr>
@@ -189,7 +189,7 @@ OSGi 및 AEM Forms JEE 워크플로우(JEE 프로세스 관리의 AEM Forms)의 
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>OR, AND 분할</td>
+   <td>OR 및 분할</td>
    <td>지원됨</td>
    <td>지원됨</td>
   </tr>
@@ -199,7 +199,7 @@ OSGi 및 AEM Forms JEE 워크플로우(JEE 프로세스 관리의 AEM Forms)의 
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>워크플로우가 끝날 때 이메일 보내기</td>
+   <td>워크플로우가 끝나면 이메일 보내기</td>
    <td>지원되는 <sup>[7]</sup></td>
    <td>지원됨</td>
   </tr>
@@ -299,7 +299,7 @@ OSGi 및 AEM Forms JEE 워크플로우(JEE 프로세스 관리의 AEM Forms)의 
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>시작 지점 카테고리</td>
+   <td>시작 지점 범주</td>
    <td>지원되지 않음 </td>
    <td>지원됨 </td>
   </tr>
@@ -334,7 +334,7 @@ OSGi 및 AEM Forms JEE 워크플로우(JEE 프로세스 관리의 AEM Forms)의 
    <td>지원됨<br /> </td>
   </tr>
   <tr>
-   <td>타사 애플리케이션과의 통합</td>
+   <td>타사 애플리케이션과 통합</td>
    <td>지원되지 않음 <sup>[6]</sup></td>
    <td>지원됨</td>
   </tr>
@@ -344,17 +344,17 @@ OSGi 및 AEM Forms JEE 워크플로우(JEE 프로세스 관리의 AEM Forms)의 
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>미리 알림 이메일</td>
+   <td>알림 이메일</td>
    <td>지원되지 않음</td>
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>작업 시간 초과에서 제목 변경</td>
+   <td>작업 시간 제한 시 제목 변경</td>
    <td>지원되지 않음</td>
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>작업 위임 및 작업 클레임에 대한 이메일</td>
+   <td>작업 위임 및 작업 요청에 대한 이메일</td>
    <td>지원되지 않음</td>
    <td>지원됨</td>
   </tr>
@@ -364,7 +364,7 @@ OSGi 및 AEM Forms JEE 워크플로우(JEE 프로세스 관리의 AEM Forms)의 
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>XSLT 변환</td>
+   <td>XSLT 변형</td>
    <td>지원되지 않음</td>
    <td>지원됨</td>
   </tr>
@@ -389,17 +389,17 @@ OSGi 및 AEM Forms JEE 워크플로우(JEE 프로세스 관리의 AEM Forms)의 
 1. OSGi에서 양식 중심의 AEM 워크플로우를 사용하여 적응형 양식에 서명할 수 있습니다. OSGi 기반의 양식 중심의 AEM 워크플로우는 양식 서명을 지원합니다. [양식 서명](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) 환경은 지원되지 않습니다.
 
 1. AEM Forms JEE 워크플로우를 실행하고 모니터링하려면 AEM Forms OSGi 및 HTML 작업 영역에서 양식 중심 워크플로우를 실행하고 모니터링하려면 AEM 받은 편지함에 액세스해야 합니다.
-1. 기본 AEM Forms 문서 서비스는 JEE 워크플로우에서 OSGi 및 AEM Forms의 양식 중심 AEM 워크플로우 모두에 사용할 수 있습니다. AEM Workflow는 OSGi 및 AEM Forms JEE(프로세스 관리) 워크플로우에서 양식 중심의 AEM 워크플로우에 기본 문서 서비스를 사용합니다.
+1. 기본 AEM Forms 다큐멘트 서비스는 JEE 워크플로우에서 OSGi 및 AEM Forms의 양식 중심 AEM 워크플로우에 모두 제공됩니다. AEM Workflow는 OSGi 및 AEM Forms JEE(프로세스 관리) 워크플로우에서 양식 중심의 AEM 워크플로우에 기본 문서 서비스를 사용합니다.
 1. AEM Forms JEE 워크플로우는 적응형 양식만 렌더링할 수 있습니다. 응용 양식을 PDF 문서로 렌더링하는 것은 지원하지 않습니다.
-1. AEM forms JEE 워크플로우에는 Adobe Sign에 대한 별도의 단계가 없습니다. AEM 양식 JEE 워크플로우에서 Adobe Sign이 활성화된 적응형 양식이 필요합니다. 자세한 내용은 [Adobe Sign 설명서](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)를 참조하십시오.
+1. AEM 양식 JEE 워크플로우에는 Adobe Sign에 대한 별도의 단계가 없습니다. AEM 양식 JEE 워크플로우에서 Adobe Sign 지원 적응형 양식이 필요합니다. 자세한 내용은 [Adobe Sign 설명서](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)를 참조하십시오.
 1. [양식 데이터 모델 서비스 호출](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) 단계를 사용하여 웹 서비스 서비스를 호출하고 타사 응용 프로그램에서 데이터를 게시하거나 검색할 수 있습니다.
 1. [이메일 보내기](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) 단계를 사용하여 이메일을 보낼 수 있습니다.
 
 ## AEM 받은 편지함과 AEM Forms 앱 기능 간의 차이점 {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Forms 중심 워크플로우를 실행하는 중요한 방법 중 두 가지는 [AEM 받은 편지함](../../forms/using/manage-applications-inbox.md) 및 AEM Forms 앱을 사용하고 있습니다. 하지만 AEM 받은 편지함과 AEM Forms 앱의 기능은 다르다. AEM 받은 편지함은 [Forms 중심 워크플로우](../../forms/using/aem-forms-workflow.md)에서만 작동하지만 AEM Forms 앱은 Forms 중심 워크플로우와 프로세스 관리에서 모두 작동합니다.
+Forms 중심 워크플로우를 실행하는 중요한 방법 중 두 가지는 [AEM 받은 편지함](../../forms/using/manage-applications-inbox.md) 및 AEM Forms 앱을 사용하는 것입니다. 그러나 AEM 받은 편지함과 AEM Forms 앱의 기능은 다릅니다. AEM 받은 편지함은 [Forms 중심 워크플로우](../../forms/using/aem-forms-workflow.md)에서만 작동하지만 AEM Forms 앱은 Forms 중심 워크플로우와 프로세스 관리에서 모두 작동합니다.
 
-다음 표에는 AEM Inbox 및 AEM Forms 앱의 기능이 나와 있습니다.
+다음 표에는 AEM 받은 편지함 및 AEM Forms 앱의 기능이 나와 있습니다.
 
 <table>
  <tbody>
