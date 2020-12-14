@@ -1,8 +1,8 @@
 ---
-title: SharePoint Connector 라이센스, 저작권 고지 사항 및 부인
-seo-title: SharePoint Connector 라이센스, 저작권 고지 사항 및 부인
-description: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책 고지 사항에 대해 알아보십시오.
-seo-description: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책 고지 사항에 대해 알아보십시오.
+title: SharePoint Connector 라이선스, 저작권 고지 사항 및 부인
+seo-title: SharePoint Connector 라이선스, 저작권 고지 사항 및 부인
+description: SharePoint Connector 라이선스, 저작권 고지 사항 및 면책에 대해 자세히 알아보십시오.
+seo-description: SharePoint Connector 라이선스, 저작권 고지 사항 및 면책에 대해 자세히 알아보십시오.
 uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -19,28 +19,28 @@ ht-degree: 10%
 ---
 
 
-# SharePoint 커넥터 라이센스, 저작권 고지 사항 및 부인{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# SharePoint Connector 라이선스, 저작권 고지 사항 및 부인{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-이 섹션에는 MS SharePoint용 JCR Connector와 관련하여 명시적으로 기재해야 하는 모든 라이선스, 저작권 고지 사항 및 면책 사항이 나와 있습니다.
+이 섹션에는 모든 라이선스, 저작권 고지 사항 및 MS SharePoint용 Day JCR Connector와 관련하여 명시적으로 기재해야 하는 면책 사항이 표시됩니다.
 
 ## 커넥터 타사 라이브러리 개요 {#overview-of-connector-rd-party-libraries}
 
-다음 표에는 SharePoint Connector 핵심 라이브러리 내에서 사용된 타사 라이브러리와 함께 이러한 라이선스와 저작권 고지 사항 또는 면책 사항이 나와 있습니다.
+다음 표는 SharePoint Connector 핵심 라이브러리 내에서 사용된 제 3자 라이브러리(라이선스, 저작권 고지 사항 또는 고지 사항)와 함께 이러한 라이브러리를 제공합니다.
 
 | 라이브러리 | 라이센스 유형 |
 |---|---|
 | 주석 | [Apache](#apache) |
 | axiom api | [Apache](#apache) |
 | 축성 | [Apache](#apache) |
-| 경리 | [Apache](#apache) |
+| 축성 | [Apache](#apache) |
 | axis2 xua | [Apache](#apache) |
 | 축2 커널 | [Apache](#apache) |
 | Backport-util-concurrent | 공용 도메인 |
 | commons codec | [Apache](#apache) |
-| 공유자 컬렉션 | [Apache](#apache) |
+| commons 컬렉션 | [Apache](#apache) |
 | commons-fileupload | [Apache](#apache) |
 | commons-httpclient | [Apache](#apache) |
-| 커미오 | [Apache](#apache) |
+| 커먼즈 | [Apache](#apache) |
 | 커먼랑 | [Apache](#apache) |
 | 동시 | [동시](#concurrent) (공용 도메인) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
@@ -48,8 +48,8 @@ ht-degree: 10%
 | httpcore | [Apache](#apache) |
 | jackrabbit-jcr2spi | [Apache](#apache) |
 | jackrabbit-jcr-commons | [Apache](#apache) |
-| Jackrabbit-spi | [Apache](#apache) |
-| 잭래빗 | [Apache](#apache) |
+| jackrabbit-spi-commons | [Apache](#apache) |
+| jackrabbit spi | [Apache](#apache) |
 | jaxen | BSD |
 | log4j | [Apache](#apache) |
 | lucene-core | [Apache](#apache) |
@@ -61,12 +61,12 @@ ht-degree: 10%
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (Public Domain 및 W3C 소프트웨어 라이선스가 적용되는 부분 포함) |
+| xml-apis | [Apache](#apache) (Public Domain 및 W3C 소프트웨어 라이선스가 적용되는 일부 포함) |
 | XmlSchema | [Apache](#apache) |
 
 ## CRX 타사 라이브러리 개요 {#overview-of-crx-rd-party-libraries}
 
-다음 표에는 CRX에서 사용되는 타사 라이브러리와 이러한 라이브러리 및 인증 관련 라이선스, 저작권 고지 사항 또는 고지 사항이 나와 있습니다.
+다음 표는 CRX에서 사용되는 제3자 라이브러리 및 라이선스, 저작권 고지 사항 또는 고지 사항과 함께 해당 라이브러리를 나열합니다.
 
 <table>
  <colgroup>
@@ -99,7 +99,7 @@ ht-degree: 10%
   </tr>
   <tr>
    <td>concurrent-1.3.4.jar</td>
-   <td><a href="#concurrent">동시</a></td>
+   <td><a href="#concurrent">동시 사용</a></td>
   </tr>
   <tr>
    <td>derby-10.1.2.1.jar</td>
@@ -115,7 +115,7 @@ ht-degree: 10%
   </tr>
   <tr>
    <td>jcr-1.0.jar</td>
-   <td><a href="#day-jcr">Day JCR</a></td>
+   <td><a href="#day-jcr">일 JCR</a></td>
   </tr>
   <tr>
    <td>jdom-1.0.jar</td>
@@ -158,7 +158,7 @@ ht-degree: 10%
 
 ## CQSE 타사 라이브러리 개요 {#overview-of-cqse-rd-party-libraries}
 
-다음 표에는 Cookie Servlet Engine에서 사용되는 타사 라이브러리와 이러한 라이센스, 저작권 고지 사항 또는 고지 사항이 포함되어 있습니다.
+다음 표에는 Cookie Servlet Engine에서 사용되는 제3자 라이브러리가 적용되는 라이센스, 저작권 고지 사항 또는 부인과 함께 나열됩니다.
 
 <table>
  <colgroup>
@@ -196,10 +196,10 @@ ht-degree: 10%
   </tr>
   <tr>
    <td>portlet-api-1.0.jar</td>
-   <td><a href="#apache">Sun 포틀릿</a></td>
+   <td><a href="#apache">Sun Portlet</a></td>
   </tr>
   <tr>
-   <td>serverlet api-2.3.jar</td>
+   <td>servletapi-2.3.jar</td>
    <td><a href="#sun-servlet">Sun Servlet</a></td>
   </tr>
   <tr>
@@ -568,7 +568,7 @@ ht-degree: 10%
      implementations, and test suites thereof.
 ```
 
-## 극초음속 SQL 그룹 {#hypersonic-sql-group}
+## 극초음파 SQL 그룹 {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -967,7 +967,7 @@ ht-degree: 10%
      (LFI#134403/Form ID#011801)
 ```
 
-## Sun 서블릿 {#sun-servlet}
+## Sun Servlet {#sun-servlet}
 
 ```xml
      Java(TM) Servlet API Specification ("Specification")
