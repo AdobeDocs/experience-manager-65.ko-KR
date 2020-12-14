@@ -1,6 +1,6 @@
 ---
-title: 타사 서비스와 통합
-seo-title: 타사 서비스와 통합
+title: 제3자 서비스와 통합
+seo-title: 제3자 서비스와 통합
 description: AEM과 타사 서비스를 통합하는 방법을 알아봅니다.
 seo-description: AEM과 타사 서비스를 통합하는 방법을 알아봅니다.
 uuid: bfafd00b-46bc-4af2-b3e8-874afb1ed697
@@ -20,14 +20,14 @@ ht-degree: 11%
 
 # 타사 서비스와 통합{#integrating-with-third-party-services}
 
-AEM을 사용하면 다음과 같은 Adobe이 아닌 제품과 즉시 통합할 수 있습니다.
+AEM을 사용하면 다음과 같은 Adobe 이외 제품과 즉시 통합할 수 있습니다.
 
 * Amazon SNS 연결 - Amazon 웹 서비스
-* BrightEdge Content Optimizer - 검색에 최적화된 컨텐츠
+* BrightEdge Content Optimizer - 검색을 위해 최적화된 컨텐츠
 * ExactTarget - 이메일 마케팅
 * Facebook Connect - 소셜 네트워킹
 * 범용 분석 조각 - 분석
-* Microsoft Translator 또는 기타 기계 번역 공급자
+* Microsoft Translator 또는 기타 컴퓨터 번역 공급자
 * 푸시 연결 - 앱 - 푸시 알림
 * Salesforce - 세일즈 및 CRM 소프트웨어
 * Silverpop Engage - 마케팅 자동화, 이메일, 모바일 및 소셜
@@ -46,11 +46,11 @@ AEM 사이트와 Salesforce 통합에 대한 자세한 내용은 [Salesforce와 
 
 >[!NOTE]
 >
->Silverpop Engage와 통합되어 제공되지 않습니다. AEM을 Silverpop Engage와 통합하려면 [패키지 공유에서 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content)을 다운로드하십시오.
+>즉시 사용 가능한 Silverpop Engage 통합 기능은 제공되지 않습니다. AEM을 Silverpop Engage와 통합하려면 [패키지 공유에서 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content) 패키지를 다운로드합니다.
 
 Silverpop Engage는 마케팅 자동화, 이메일, 모바일 및 소셜을 제공합니다.
 
-AEM 사이트와 ExactTarget 통합에 대한 자세한 내용은 [Silverpop Engage와 통합](/help/sites-administering/silverpop.md)을 참조하십시오.
+AEM 사이트 및 ExactTarget 통합에 대한 자세한 내용은 [Silverpop Engage와 통합](/help/sites-administering/silverpop.md)을 참조하십시오.
 
 ## ExactTarget {#integrating-with-exacttarget}과 통합
 
@@ -64,6 +64,6 @@ AEM 사이트와 ExactTarget 통합에 대한 자세한 내용은 [Configuring E
 
 자세한 내용은 [소셜 로그인](/help/communities/social-login.md)을 참조하십시오.
 
-## 다른 공급자와의 통합 {#integrating-with-other-providers}
+## 다른 공급자와 통합 {#integrating-with-other-providers}
 
 AEM에서는 [범용 분석 조각](/help/sites-administering/external-providers.md)
