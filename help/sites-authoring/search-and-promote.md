@@ -18,7 +18,7 @@ ht-degree: 79%
 ---
 
 
-# 페이지에 Search &amp; Promote 기능 추가{#adding-search-promote-features-to-your-page}
+# 페이지{#adding-search-promote-features-to-your-page}에 Search &amp; Promote 기능 추가
 
 웹 사이트에서 Search&amp;Promote 기능을 통합하려면 Search&amp;Promote 구성 요소를 사용하여 페이지에 다음 기능을 추가하십시오.
 
