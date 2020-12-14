@@ -139,7 +139,7 @@ ht-degree: 99%
    + [AEM Repo Tool](aem-repo-tool.md)
 + 개인화{#personlization}
    + [ContextHub](contexthub.md)
-   + [컨텍스트 허브 구성](ch-configuring.md)
+   + [Context Hub 구성](ch-configuring.md)
    + [페이지에 ContextHub 추가 및 저장소 액세스](ch-adding.md)
    + [ContextHub 확장](ch-extend.md)
    + [샘플 ContextHub 저장소 후보](ch-samplestores.md)
