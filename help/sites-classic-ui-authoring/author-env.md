@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 82%
+ht-degree: 87%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->다음 문서는 클래식 UI에 중점을 둡니다. 터치가 활성화된 최신 UI에서의 작성에 대한 자세한 내용은 [표준 작성 설명서](/help/assets/assets.md)를 참조하십시오.
+>다음 문서는 클래식 UI에 중점을 둡니다. 터치가 활성화된 최신 UI에서 작성하는 방법에 대한 자세한 내용은 [표준 작성 설명서](/help/assets/assets.md)를 참조하십시오.
 
 작성 환경을 통해 다음과 관련된 작업을 수행할 수 있습니다.
 
 * [작성](/help/sites-authoring/author.md) ( [페이지 ](/help/sites-authoring/qg-page-authoring.md) 작성 및 자산  [관리 포함](/help/assets/assets.md))
 
-* [웹 ](/help/sites-administering/administer-best-practices.md) 사이트에서 컨텐츠를 생성하고 유지 관리할 때 필요한 작업 관리
+* 웹 사이트에서 컨텐츠를 생성하고 유지 관리할 때 필요한 작업 [관리](/help/sites-administering/administer-best-practices.md)
 
 이를 달성하기 위해 두 가지 그래픽 사용자 인터페이스가 제공되며, 이 인터페이스는 최신 브라우저를 통해 액세스할 수 있습니다.
 
