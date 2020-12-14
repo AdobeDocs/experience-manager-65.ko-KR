@@ -24,15 +24,15 @@ ht-degree: 16%
 
 ## {#trying-it-out} 밖에서 시도
 
-1. 언어 마스터 분기의 경험 섹션에서 북극 검색 페이지를 편집합니다.
+1. 언어 마스터 분기의 경험 섹션에서 북극 서핑 페이지를 편집합니다.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. 웹 사이트 방문자에게 렌더링되는 대로 페이지를 보려면 **미리 보기**&#x200B;로 전환하십시오. 아티클 *노르데인의 알로하 주령*&#x200B;으로 스크롤합니다.
+1. **미리 보기**&#x200B;로 전환하여 웹 사이트 방문자에게 렌더링되는 대로 페이지를 확인합니다. 문서 *노르기타 노르웨이의 알로하 주령*&#x200B;의 내용으로 스크롤합니다.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
-1. 브라우저 창의 크기를 조정하고 레이아웃이 크기 조정에 따라 동적으로 조정되는 것을 확인할 수 있습니다.
+1. 브라우저 창의 크기를 조정할 수 있고 레이아웃이 크기 조정에 맞게 동적으로 조정될 때 확인할 수 있습니다.
 
    ![chlimage_1-179](assets/chlimage_1-179.png)
 
@@ -42,10 +42,10 @@ ht-degree: 16%
 
    ![chlimage_1-180](assets/chlimage_1-180.png)
 
-1. 구성 요소의 크기 조정 핸들을 잡고 드래그하면 크기 조정을 지원하기 위해 레이아웃 격자가 자동으로 표시됩니다.
+1. 구성 요소의 크기 조정 핸들을 클릭하고 드래그하면 크기를 조정할 수 있도록 레이아웃 격자가 자동으로 표시됩니다.
 
    ![chlimage_1-181](assets/chlimage_1-181.png)
 
 ## 추가 정보 {#further-information}
 
-자세한 내용은 작성 문서 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) 또는 관리자 문서 [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-administering/configuring-responsive-layout.md)을 참조하십시오.
+자세한 내용은 제작 문서 [응답형 레이아웃](/help/sites-authoring/responsive-layout.md) 또는 관리자 문서 [레이아웃 컨테이너 및 레이아웃 모드 구성](/help/sites-administering/configuring-responsive-layout.md)을 참조하십시오.
