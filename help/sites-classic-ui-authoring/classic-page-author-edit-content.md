@@ -61,7 +61,7 @@ ht-degree: 99%
 
 * [페이지 속성 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
-* [scaffolding](/help/sites-authoring/scaffolding.md)
+* [스캐폴딩](/help/sites-authoring/scaffolding.md)
 
 * [클라이언트 컨텍스트](/help/sites-administering/client-context.md)
 
@@ -298,7 +298,7 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 * 단락 추가, 편집, 삭제 및 이동
 * 단락 내용 즉석 편집
 * 페이지 내 항목 복사, 잘라내기 및 붙여넣기
-* 페이지 간에 항목 복사, 잘라내기 및 붙여넣기
+* 페이지 간 항목 복사, 잘라내기 및 붙여넣기
 * 파일 및 이미지 추가, 삭제 및 변경
 * 주석 및 스케치 추가, 삭제 및 변경
 * 스캐폴드 변경
