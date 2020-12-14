@@ -18,10 +18,10 @@ ht-degree: 0%
 ---
 
 
-# 샌드박스 컨텐츠 개발 {#develop-sandbox-content}
+# 샌드박스 내용 개발 {#develop-sandbox-content}
 
 **[Clientlibs 추가](add-clientlibs.md)**
 
-이 시점에서 참조할 수 있도록 [We-Retail 커뮤니티](../../help/sites-developing/we-retail.md), [커뮤니티 구성 요소 안내서](components-guide.md) 및 [feature essentials](essentials.md)를 사용하여 샌드박스의 커뮤니티 기능을 탐색할 수 있습니다.
+이때 참조용으로 [We-Retail 커뮤니티](../../help/sites-developing/we-retail.md), [커뮤니티 구성 요소 안내서](components-guide.md) 및 [feature essentials](essentials.md)를 사용하는 샌드박스의 커뮤니티 기능을 탐색할 수 있습니다.
 
 
