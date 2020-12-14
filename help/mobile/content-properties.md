@@ -1,6 +1,6 @@
 ---
-title: 컨텐트 속성 및 노드
-seo-title: 컨텐트 속성 및 노드
+title: 컨텐츠 속성 및 노드
+seo-title: 컨텐츠 속성 및 노드
 description: 컨텐츠 속성 및 노드에 대해 알려면 이 페이지를 따르십시오.
 seo-description: 컨텐츠 속성 및 노드에 대해 알려면 이 페이지를 따르십시오.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
@@ -22,11 +22,11 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: 응답)이 필요한 프로젝트에서는 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: 응답)이 필요한 프로젝트에는 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
 
 아티클, 배너 및 컬렉션은 AEM에서 cq:Pages로 표시됩니다.
 
-이러한 속성은 Adobe Experience Manager(AEM) Mobile On-Demand Services 메타데이터 및 통합 지원 속성을 나타내는 다음과 같은 몇 가지 다른 속성과 함께 모든 cq:Page에서 발견되는 동일한 공통 속성을 공유합니다.
+이러한 속성은 Adobe Experience Manager(AEM) Mobile On-Demand Services 메타데이터 및 통합 지원 속성을 나타내는 다른 몇 개 외에 모든 cq:Page에 있는 동일한 공통 속성을 공유합니다.
 
 다음 표에서는 컨텐츠 속성과 노드에 대해 설명합니다.
 
@@ -34,11 +34,11 @@ ht-degree: 20%
 
 | **속성 이름** | **유형** | **기본값 또는 예상 값** | **설명** |
 |---|---|---|---|
-| dps-id | 문자열 |  | aem mobile에 할당되어 AEM에 보관되며 AEM Mobile에 업로드되거나 AEM Mobile에 가져오는 경우 |
+| dps-id | 문자열 |  | aem mobile에 할당되어 AEM에 저장되고 AEM Mobile에 한 번 업로드되거나 AEM Mobile에서 가져오는 |
 | dps-resourceType | 문자열 | dps:Article | dps:Banner | dps:Collection | 엔티티 유형 속성 |
-| dps-version | 문자열 |  | aem mobile 엔티티 버전(전체 aemm-id 내에 포함됨) |
+| dps 버전 | 문자열 |  | aem mobile 엔티티 버전(전체 aemm-id에 포함됨) |
 | dps-lastSynchronized | 날짜 |  | aem mobile에서 AEM으로 마지막 동기화/가져오기 날짜 |
-| dps-lastUploaded | 날짜 |  | aem에서 AEM Mobile으로 마지막 업로드 날짜 |
+| dps-lastUploaded | 날짜 |  | aem에서 AEM Mobile으로 마지막으로 업로드한 날짜 |
 | dps-lastUploadedBy | 문자열:userid |  | aem에서 AEM Mobile으로 마지막 업로드 요청을 수행한 id 사용자 |
 
 ## 코어 메타데이터 속성 {#core-metadata-properties}
@@ -62,7 +62,7 @@ ht-degree: 20%
 | dps-author | 문자열 |  |
 | dps-authorURL | 문자열 |  |
 | dps-hideFromBrowsePage | 부울 |  |
-| dps-access | 문자열 | {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;}에서 ProtectedAccess |
+| dps 액세스 | 문자열 | {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;}에서 ProtectedAccess 이용 |
 | **Social** |  |  |
 | dps-socialShareURL | 문자열 |  |
 | dps-articleText | 문자열 |  |
