@@ -1,8 +1,8 @@
 ---
 title: 프로그래밍 방식으로 AEM JCR에 액세스하는 방법
 seo-title: 프로그래밍 방식으로 AEM JCR에 액세스하는 방법
-description: Adobe Marketing Cloud의 일부인 AEM 저장소 내에 있는 노드와 속성을 프로그래밍 방식으로 수정할 수 있습니다
-seo-description: Adobe Marketing Cloud의 일부인 AEM 저장소 내에 있는 노드와 속성을 프로그래밍 방식으로 수정할 수 있습니다
+description: Adobe Marketing Cloud의 일부인 AEM 저장소 내에 있는 노드 및 속성을 프로그래밍 방식으로 수정할 수 있습니다
+seo-description: Adobe Marketing Cloud의 일부인 AEM 저장소 내에 있는 노드 및 속성을 프로그래밍 방식으로 수정할 수 있습니다
 uuid: 2051d03f-430a-4cae-8f6d-e5bc727d733f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -24,7 +24,7 @@ Adobe Marketing Cloud의 일부인 Adobe CQ 저장소 내에 있는 노드와 �
 
 >[!NOTE]
 >
->이 개발 아티클은 외부 Java 응용 프로그램에서 Adobe CQ JCR을 수정합니다. 반면 JCR API를 사용하여 OSGi 번들 내에서 JCR을 수정할 수 있습니다. 자세한 내용은 Java 컨텐츠 저장소의 [CQ 데이터 지속](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html)을 참조하십시오.
+>이 개발 문서는 외부 Java 응용 프로그램에서 Adobe CQ JCR을 수정합니다. 반대로 JCR API를 사용하여 OSGi 번들 내에서 JCR을 수정할 수 있습니다. 자세한 내용은 Java Content Repository](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html)에서 [CQ 데이터 지속을 참조하십시오.
 
 >[!NOTE]
 >
@@ -32,11 +32,11 @@ Adobe Marketing Cloud의 일부인 Adobe CQ 저장소 내에 있는 노드와 �
 
 >[!NOTE]
 >
->JCR 쿼리 API를 사용하여 Adobe CQ JCR을 쿼리하는 방법을 알아보려면 [JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)를 사용하여 Adobe Experience Manager 데이터 쿼리를 참조하십시오.
+>JCR 쿼리 API를 사용하여 Adobe CQ JCR을 쿼리하는 방법을 알아보려면 [JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)을 사용하여 Adobe Experience Manager 데이터 쿼리를 참조하십시오.
 
 ## 저장소 인스턴스 {#create-a-repository-instance} 만들기
 
-저장소에 연결하고 연결을 설정하는 방법은 다르지만 이 개발 아티클에서는 `org.apache.jackrabbit.commons.JcrUtils` 클래스에 속하는 정적 메서드를 사용합니다. 메서드 이름은 `getRepository`입니다. 이 메서드는 Adobe CQ 서버의 URL을 나타내는 문자열 매개 변수를 사용합니다. 예 `http://localhost:4503/crx/server`.
+저장소에 연결하고 연결을 설정하는 방법은 다르지만 이 개발 아티클은 `org.apache.jackrabbit.commons.JcrUtils` 클래스에 속하는 정적 메서드를 사용합니다. 메서드 이름은 `getRepository`입니다. 이 메서드는 Adobe CQ 서버의 URL을 나타내는 문자열 매개 변수를 사용합니다. 예 `http://localhost:4503/crx/server`.
 
 `getRepository`메서드는 다음 코드 예제와 같이 `Repository`인스턴스를 반환합니다.
 
@@ -47,14 +47,14 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## 세션 인스턴스 {#create-a-session-instance} 만들기
 
-`Repository`인스턴스는 CRX 저장소를 나타냅니다. `Repository`인스턴스를 사용하여 보관소와 함께 세션을 설정합니다. 세션을 만들려면 `Repository`인스턴스의 `login` 메서드를 호출하고 `javax.jcr.SimpleCredentials` 개체를 전달합니다. `login`메서드는 `javax.jcr.Session` 인스턴스를 반환합니다.
+`Repository`인스턴스는 CRX 저장소를 나타냅니다. `Repository`인스턴스를 사용하여 리포지토리와 함께 세션을 설정합니다. 세션을 만들려면 `Repository`인스턴스의 `login` 메서드를 호출하고 `javax.jcr.SimpleCredentials` 개체를 전달합니다. `login`메서드는 `javax.jcr.Session` 인스턴스를 반환합니다.
 
-생성자를 사용하여 `SimpleCredentials`개체를 만들고 다음 문자열 값을 전달합니다.
+해당 생성자를 사용하고 다음 문자열 값을 전달하여 `SimpleCredentials` 객체를 만듭니다.
 
 * 사용자 이름;
 * 해당 암호
 
-두 번째 매개 변수를 전달할 때 String 개체의 `toCharArray`메서드를 호출합니다. 다음 코드는 `javax.jcr.Sessioninstance`을 반환하는 `login` 메서드를 호출하는 방법을 보여 줍니다.
+두 번째 매개 변수를 전달할 때 String 객체의 `toCharArray`메서드를 호출합니다. 다음 코드는 `javax.jcr.Sessioninstance`을(를) 반환하는 `login` 메서드를 호출하는 방법을 보여 줍니다.
 
 ```java
 //Create a Session instance
@@ -63,7 +63,7 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## 노드 인스턴스 {#create-a-node-instance} 만들기
 
-`Session`인스턴스를 사용하여 `javax.jcr.Node` 인스턴스를 만듭니다. `Node`인스턴스를 사용하면 노드 작업을 수행할 수 있습니다. 예를 들어 새 노드를 만들 수 있습니다. 루트 노드를 나타내는 노드를 만들려면 다음 코드 행에 표시된 대로 `Session`인스턴스의 `getRootNode` 메서드를 호출합니다.
+`Session`인스턴스를 사용하여 `javax.jcr.Node` 인스턴스를 만듭니다. `Node`인스턴스를 사용하여 노드 작업을 수행할 수 있습니다. 예를 들어 새 노드를 만들 수 있습니다. 루트 노드를 나타내는 노드를 만들려면 다음 코드 행에 표시된 대로 `Session` 인스턴스의 `getRootNode` 메서드를 호출합니다.
 
 ```java
 //Create a Node
@@ -80,7 +80,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## 노드 값 검색 {#retrieve-node-values}
 
-노드 및 해당 값을 검색하려면 `Node`인스턴스의 `getNode` 메서드를 호출하고 정규화된 경로를 나타내는 문자열 값을 노드에 전달합니다. 이전 코드 예제에서 만들어진 노드 구조를 고려하십시오. 날짜 노드를 검색하려면 다음 코드와 같이 adobe/day를 지정합니다.
+노드 및 해당 값을 검색하려면 `Node` 인스턴스의 `getNode` 메서드를 호출하고 정규화된 경로를 노드에 나타내는 문자열 값을 전달합니다. 이전 코드 예제에서 만들어진 노드 구조를 고려합니다. day 노드를 검색하려면 다음 코드와 같이 adobe/day를 지정합니다.
 
 ```java
 // Retrieve content
@@ -89,9 +89,9 @@ System.out.println(node.getPath());
 System.out.println(node.getProperty("message").getString());
 ```
 
-## Adobe CQ 저장소의 노드 만들기 {#create-nodes-in-the-adobe-cq-repository}
+## Adobe CQ Repository {#create-nodes-in-the-adobe-cq-repository}에 노드 만들기
 
-다음 Java 코드 예는 Adobe CQ에 연결하고, `Session`인스턴스를 만들고, 새 노드를 추가하는 Java 클래스를 나타냅니다. 노드에는 데이터 값이 할당되고, 그 다음에 노드의 값과 경로가 콘솔에 기록됩니다. 세션 작업이 완료되면 반드시 로그아웃하십시오.
+다음 Java 코드 예는 Adobe CQ에 연결하고, `Session`인스턴스를 만들고, 새 노드를 추가하는 Java 클래스를 나타냅니다. 노드에는 데이터 값이 할당되고 그 다음으로 노드의 값과 경로가 콘솔에 기록됩니다. 세션 작업이 완료되면 반드시 로그아웃하십시오.
 
 ```java
 /*
@@ -143,7 +143,7 @@ try {
 }
 ```
 
-전체 코드 예를 실행하고 노드를 만든 후 다음 그림과 같이 **[!UICONTROL CRXDE Lite]**&#x200B;에서 새 노드를 볼 수 있습니다.
+전체 코드 예제를 실행하고 노드를 만든 후 다음 그림과 같이 **[!UICONTROL CRXDE Lite]**&#x200B;에서 새 노드를 볼 수 있습니다.
 
 ![chlimage_1-68](assets/chlimage_1-68a.png)
 
