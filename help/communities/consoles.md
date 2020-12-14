@@ -26,17 +26,17 @@ ht-degree: 2%
 * 사이트 내에 중첩된 [그룹 추가](groups.md)
 * [커뮤니티 사이트 템플릿 관리](sites.md)
 * [커뮤니티 구성원 관리](members.md)
-* [중재 ](moderate-ugc.md) 사용자 생성 콘텐츠(UGC)
+* [사용자 ](moderate-ugc.md) 생성 콘텐츠 중재(UGC)
 * [사용자 지정 배지 만들기](badges.md)
 * UGC](srp-config.md)에 대한 [기본 저장소 구성
 
-작성 및 게시 환경에서 공유되는 공용 스토어로 [UGC 스토리지](working-with-srp.md)가 구성되면 작성자 및 게시 환경 모두에서 사용할 수 있는 [중재 콘솔](moderation.md)은(는) UGC의 단일 인스턴스에서 작동합니다.
+작성 및 게시 환경에서 공유되는 공용 스토어로 [UGC 스토리지](working-with-srp.md)가 구성되면 작성 환경과 게시 환경 모두에서 사용할 수 있는 [중재 콘솔](moderation.md)은(는) UGC의 단일 인스턴스에서 작동합니다.
 
 작성 환경에서 관리자 권한으로 로그인한 후에는 탐색 및 도구 콘솔에서 `Communities` 콘솔을 사용할 수 있습니다.
 
 >[!NOTE]
 >
->게시 환경에서 로그인한 구성원이 적절한 권한을 가질 때 [커뮤니티 사이트](sites-console.md)에 `Administration` 메뉴 항목이 표시됩니다.
+>게시 환경에서 로그인한 구성원이 적절한 권한을 갖는 경우 [커뮤니티 사이트](sites-console.md)에 `Administration` 메뉴 항목이 표시됩니다.
 
 ## 전역 탐색 패널 {#global-navigation-panel}
 
@@ -47,25 +47,25 @@ ht-degree: 2%
 
 ## 탐색 콘솔 {#navigation-console}
 
-다양한 커뮤니티 콘솔에 액세스하려면 전역 탐색에서 **탐색, 커뮤니티**&#x200B;을 선택합니다.
+다양한 커뮤니티 콘솔에 액세스하려면 글로벌 탐색에서 **탐색, 커뮤니티**&#x200B;을 선택합니다.
 
 ![커뮤니티](assets/communities.png)
 
 * [사이트](sites-console.md)
 
-   사이트 콘솔은 커뮤니티 사이트와 해당 [groups](groups.md)를 만들고 관리할 목적으로 작성 환경에서 액세스할 수 있습니다.
+   사이트 콘솔은 커뮤니티 사이트와 [groups](groups.md)를 만들고 관리할 목적으로 작성 환경에서 액세스할 수 있습니다.
 
 * [중재](moderation.md)
 
-   중재 콘솔은 UGC 및 작성 환경에서 일괄 중재합니다. 게시 환경에서 하나 이상의 커뮤니티 사이트에 대해 [커뮤니티 중재자](users.md#publishenvironmentusersandgroups)의 역할을 할당받은 커뮤니티 구성원에게 유사한 벌크 중재 콘솔에 액세스할 수 있습니다.
+   중재 콘솔은 UGC 및 작성 환경에서 일괄 중재하는 것입니다. 하나 이상의 커뮤니티 사이트에 대해 [커뮤니티 중재자](users.md#publishenvironmentusersandgroups) 역할이 할당된 커뮤니티 구성원에게 비슷한 일괄 중재 콘솔에 액세스할 수 있습니다.
 
 * [구성원, 그룹](members.md)
 
-   구성원 및 그룹 콘솔은 작성 환경에서 게시 환경에 있는 커뮤니티 구성원 및 구성원 그룹을 관리하기 위한 것입니다.
+   구성원 및 그룹 콘솔은 작성 환경의 게시 환경에 있는 커뮤니티 구성원 및 구성원 그룹을 관리하는 데 사용됩니다.
 
 * [보고서](reports.md)
 
-   보고서 콘솔은 커뮤니티 사이트에 [이 활성화된 Adobe Analytics](sites-console.md#analytics)이 있을 때 할당, 페이지 보기 및 게시된 컨텐츠(UGC)에 대한 보고서가 생성될 수 있는 곳입니다. 콘솔은 작성 환경에서만 사용할 수 있습니다.
+   보고서 콘솔은 커뮤니티 사이트에 [활성화된 Adobe Analytics](sites-console.md#analytics)이 있는 경우 할당, 페이지 보기 및 게시된 컨텐트(UGC)에 대한 보고서가 생성될 수 있는 곳입니다. 콘솔은 작성 환경에서만 사용할 수 있습니다.
 
 * [리소스](resources.md)
 
