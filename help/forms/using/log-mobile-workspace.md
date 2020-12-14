@@ -18,18 +18,18 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms 앱에 로그인{#logging-in-to-aem-forms-app}
+# AEM Forms 앱 로그인{#logging-in-to-aem-forms-app}
 
 AEM Forms 앱을 시작할 때 먼저 로그인 자격 증명과 AEM Forms 서버 URL을 제공해야 합니다.
 
 ## 앱 {#to-start-the-app} 시작
 
-1. 모바일 장치에서 AEM Forms 앱 아이콘을 누릅니다.
+1. 모바일 디바이스에서 AEM Forms 앱 아이콘을 누릅니다.
 1. 앱에 로그인하려면 사용자 이름, 암호 및 AEM Forms 서버 URL을 입력합니다.
 
    >[!NOTE]
    >
-   >모바일 앱에서 입력한 모든 AEM Forms 서버 URL을 캐시합니다.
+   >모바일 앱은 입력한 모든 AEM Forms 서버 URL을 캐시합니다.
    >
    >    * 서버 URL 목록을 표시하려면 [서버 URL] 텍스트 상자의 오른쪽 모서리에 있는 목록 화살표를 클릭합니다.
    >    * 앱을 통해 로그인할 AEM Forms 서버 URL을 선택할 수 있습니다.
@@ -39,4 +39,4 @@ AEM Forms 앱을 시작할 때 먼저 로그인 자격 증명과 AEM Forms 서�
 
 >[!NOTE]
 >
->오프라인 모드에서는 마지막으로 로그인한 사용자만 앱에 로그인할 수 있습니다.
+>오프라인 모드에서 마지막으로 로그인한 사용자만 앱에 로그인할 수 있습니다.
