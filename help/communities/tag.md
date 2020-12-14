@@ -18,9 +18,9 @@ ht-degree: 3%
 ---
 
 
-# Tag Essentials {#tag-essentials}
+# 태그 필수 항목 {#tag-essentials}
 
-AEM Communities 구성 요소가 태그 지정이 활성화되면 커뮤니티 구성원은 게시 환경에서 게시하는 컨텐츠에 태그를 지정할 수 있습니다.
+AEM Communities 구성 요소가 태그 지정이 활성화되어 있으면 커뮤니티 구성원은 게시 환경에서 게시하는 컨텐츠에 태그를 지정할 수 있습니다.
 
 게시 환경에 적용된 태그의 기본 인프라는 페이지 및 자산과 같은 작성 환경의 컨텐츠에 적용되는 태그와 동일합니다.
 
@@ -30,9 +30,9 @@ AEM Communities 구성 요소가 태그 지정이 활성화되면 커뮤니티 �
 
 * 게시 환경에서 UGC에 적용된 태그를 강조 표시하기 위해 페이지에 `social tag cloud` 구성 요소를 추가하는 방법에 대한 작성자의 자세한 내용은 [소셜 태그 클라우드 사용](tagcloud.md)을 참조하십시오.
 
-* 카탈로그의 태그 지정 리소스에 대한 자세한 내용은 [태깅 지원 리소스](tag-resources.md)를 참조하십시오.
+* 카탈로그의 리소스 태그 지정에 대한 자세한 내용은 [태깅 지원 리소스](tag-resources.md)를 참조하십시오.
 
-[커뮤니티 사이트](sites-console.md#tagging) 또는 다음 기능 중 하나를 구성할 때 UGC에 대한 태깅이 활성화될 수 있습니다.
+[커뮤니티 사이트](sites-console.md#tagging) 또는 다음 기능 중 하나를 구성할 때 UGC 태깅을 활성화할 수 있습니다.
 
 * [블로그](blog-feature.md)
 * [달력](calendar.md)
@@ -51,7 +51,7 @@ AEM Communities 구성 요소가 태그 지정이 활성화되면 커뮤니티 �
    <td>social/commons/components/hbs/tagcloud</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
    <td>아니오</td>
   </tr>
   <tr>
@@ -85,6 +85,6 @@ AEM Communities 구성 요소가 태그 지정이 활성화되면 커뮤니티 �
 
 ## 태그 검색 {#tag-searching}
 
-[기능 팩 1](deploy-communities.md#latestfeaturepack)(FP1)의 태그 제목](../../help/sites-developing/framework.md#tag-characteristics)을 사용하여 태그 검색이 수행됩니다.[
+[기능 팩 1](deploy-communities.md#latestfeaturepack)(FP1)부터 [태그 제목](../../help/sites-developing/framework.md#tag-characteristics)을 사용하여 태그 검색이 수행됩니다.
 
-FP1 이전에 [태그 id](../../help/sites-developing/framework.md#tagid)를 사용하여 검색이 수행되었습니다.
+FP1 이전에는 [태그 id](../../help/sites-developing/framework.md#tagid)를 사용하여 검색이 수행되었습니다.
