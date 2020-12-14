@@ -63,7 +63,7 @@ ht-degree: 83%
 
 세션 설정에 의해 무시될 수 있습니다.
 
-## 현재 세션을 위해 클래식 UI로 전환  {#switching-to-classic-ui-for-the-current-session}
+## 현재 세션을 위해 클래식 UI로 전환 {#switching-to-classic-ui-for-the-current-session}
 
 터치 지원 UI 사용 시 데스크톱 사용자는 클래식(데스크톱 전용) UI로 되돌릴 수 있습니다. 현재 세션에 대한 클래식 UI로 전환하는 방법에는 몇 가지가 있습니다.
 
@@ -113,7 +113,7 @@ ht-degree: 83%
 
 * 페이지 작성 시:
 
-   * URL에서 `cf#`을 사용하여 페이지에 액세스할 때 클래식 편집기를 사용할 수 밖에 없습니다. 예:
+   * URL에서 `cf#`을 사용하여 페이지에 액세스할 때는 클래식 편집기를 사용할 수 밖에 없습니다. 예:
       `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * URL에서 `/editor.html`을 사용하거나 터치 장치를 사용할 때는 터치 지원 편집기를 사용할 수 밖에 없습니다. 예:
