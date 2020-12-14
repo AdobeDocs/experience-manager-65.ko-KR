@@ -24,7 +24,7 @@ ht-degree: 13%
 >
 >이 페이지에서는 기존 UI에 대해 다룹니다.
 >
->표준 터치 지원 UI에 대한 자세한 내용은 [콘솔 사용자 지정을 참조하십시오.](/help/sites-developing/customizing-consoles-touch.md)
+>터치가 활성화된 표준 UI에 대한 자세한 내용은 [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md)을 참조하십시오.
 
 시작 콘솔은 AEM 내의 다양한 콘솔 및 기능에 대한 링크 목록을 제공합니다.
 
@@ -73,11 +73,11 @@ ht-degree: 13%
 
 ![cq_welcomeescreensidebar](assets/cq_welcomescreensidebar.png)
 
-이러한 링크는 다음 경로 아래에 있는 노드에 대한 읽기 액세스 권한이 있는 *과*&#x200B;을 기반으로 합니다.
+이러한 링크는 다음 경로 아래의 노드에 대한 읽기 액세스 및 *과(와)* 있는 상태를 기반으로 합니다.
 
 `/libs/cq/core/content/welcome`
 
-기본적으로 세 개의 섹션(약간 간격)이 제공됩니다.
+기본적으로 3개의 섹션(약간 간격)이 제공됩니다.
 
 <table>
  <tbody>
@@ -162,7 +162,7 @@ ht-degree: 13%
 
 #### 사이드바 링크가 {#configuring-whether-sidebar-links-are-visible}에 표시되는지 구성
 
-링크를 나타내는 노드에 대한 읽기 액세스를 제거하여 특정 사용자나 그룹에서 링크를 숨길 수 있습니다.
+링크를 나타내는 노드에 대한 읽기 액세스를 제거하여 특정 사용자 또는 그룹에서 링크를 숨길 수 있습니다.
 
 * 리소스 - 액세스 권한 제거:
 
@@ -192,7 +192,7 @@ ht-degree: 13%
 
 `/libs/cq/core/components/welcome/welcome.jsp`에서는 [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html)로 구성되며, 이 함수는 속성이 있는 노드에서 쿼리를 실행합니다.
 
-* `jcr:mixinTypes` 값 사용:  `cq:Console`
+* `jcr:mixinTypes` 값을 사용하여 다음을 수행합니다.  `cq:Console`
 
 >[!NOTE]
 >
@@ -204,13 +204,13 @@ ht-degree: 13%
 
 
 
-`cq:Console` mixin이 있는 노드에서 사용자 또는 그룹에 읽기 권한이 없는 경우 해당 노드가 `ConsoleUtil` 검색으로 검색되지 않으므로 콘솔에 표시되지 않습니다.
+사용자 또는 그룹에 `cq:Console` 믹싱이 있는 노드에 대한 읽기 권한이 없는 경우 해당 노드가 `ConsoleUtil` 검색에 의해 검색되지 않으므로 콘솔에 표시되지 않습니다.
 
 ### 사용자 지정 항목 {#adding-a-custom-item} 추가
 
 [링크 선택 메커니즘](#link-selection-mechanism)을 사용하여 자신의 사용자 지정 항목을 링크 목록에 추가할 수 있습니다.
 
-위젯 또는 리소스에 `cq:Console` 혼합을 추가하여 사용자 지정 항목을 목록에 추가합니다. 이 작업은 속성을 정의하여 수행됩니다.
+위젯 또는 리소스에 `cq:Console` 믹싱을 추가하여 사용자 정의 항목을 목록에 추가합니다. 이 작업은 속성을 정의하여 수행합니다.
 
-* `jcr:mixinTypes` 값 사용:  `cq:Console`
+* `jcr:mixinTypes` 값을 사용하여 다음을 수행합니다.  `cq:Console`
 
