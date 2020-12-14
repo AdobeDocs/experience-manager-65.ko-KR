@@ -29,11 +29,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms Server를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}를 사용하여 문서를 PDF/A 문서로 변환
 
-다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *LoanArchive.pdf*&#x200B;라는 PDF 파일로 저장한 PDF/A 문서로 변환합니다. ([문서를 PDF/A 문서로 변환](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents)을 참조하십시오.)
+다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *LoanArchive.pdf*&#x200B;라는 PDF 파일로 저장한 PDF/A 문서로 변환합니다. ([문서를 PDF/A 문서로 변환](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents) 참조)
 
 ```java
  /*
@@ -134,7 +134,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}를 사용하여 PDF/A 호환성 확인
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}을(를) 사용하여 PDF/A 호환성 확인
 
 다음 Java 코드 예제에서는 입력 PDF 문서가 PDF/A 규격인지 확인합니다. DocConverter 서비스로 전달되는 입력 PDF 문서의 이름은 *LoanArchive.pdf*&#x200B;입니다. 유효성 검사 결과는 *ValidationResults.xml*&#x200B;이라는 XML 파일에 기록됩니다. ([프로그래밍 방식으로 PDF/A 호환성 결정](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)을 참조하십시오.)
 
