@@ -1,8 +1,8 @@
 ---
-title: XDP 기반의 적응형 양식의 XFA 지원
-seo-title: XDP 기반의 적응형 양식의 XFA 지원
-description: 지원되는 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 응용 양식에 나열합니다.
-seo-description: 지원되는 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 응용 양식에 나열합니다.
+title: XDP 기반 적응형 양식의 XFA 지원
+seo-title: XDP 기반 적응형 양식의 XFA 지원
+description: 응용 양식에 지원되는 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 나열합니다.
+seo-description: 응용 양식에 지원되는 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 나열합니다.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -17,31 +17,31 @@ ht-degree: 5%
 ---
 
 
-# XDP 기반 응용 양식의 XFA 지원{#xfa-support-in-xdp-based-adaptive-forms}
+# XDP 기반 적응형 양식의 XFA 지원{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## 소개 {#introduction}
 
-적응형 양식은 XDP 파일에 정의된 다양한 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 지원합니다.
+적응형 양식은 XDP 파일에 정의된 다음과 같은 다양한 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 지원합니다.
 
 * XDP 파일의 이벤트에 정의된 스크립트 실행
 * XDP 파일의 필드에 대한 기본값 및 행동 속성을 캡처합니다.
 * XDP 파일에 정의된 유효성 검사 스크립트 실행
 
-XDP 파일을 기반으로 응용 양식이 만들어지면 속성, 이벤트 및 유효성 검사가 양식 작성 UI에서 자동으로 채워집니다. 그러나 양식 작성자는 이러한 요소 중 일부를 재정의하여 대체 경험을 만들 수 있습니다.
+XDP 파일을 기반으로 응용 양식이 작성되면 속성, 이벤트 및 유효성 검사가 양식 작성 UI에서 자동으로 채워집니다. 그러나 양식 작성자는 이러한 요소 중 일부를 재정의하여 대체 경험을 만들 수 있습니다.
 
-이 문서에서는 적응형 양식에서 지원되는 XFA 이벤트, 속성 및 유효성 검사를 나열하고 이를 응용 양식에서 무시하는 방법에 대해 설명합니다.
+이 문서에서는 적응형 양식에서 지원되는 XFA 이벤트, 속성 및 유효성 검사를 나열하고 이를 적응형 양식에서 재정의하는 방법에 대해 설명합니다.
 
-## 응용 양식 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}에서 지원되는 XFA 요소 및 해당 매핑
+## 지원되는 XFA 요소 및 응용 양식 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}의 해당 매핑
 
 ### 필드 {#fields}
 
-XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적응형 양식으로 드래그하여 놓을 수 있습니다. 다음 표에는 XFA 필드가 적응형 양식 필드에 매핑되는 방법이 나와 있습니다.
+XDP 파일을 사용하여 적응형 양식을 만드는 경우 XFA 필드를 적응형 양식으로 드래그하여 놓을 수 있습니다. 다음 표에는 XFA 필드가 적응형 양식 필드에 매핑되는 방법이 나와 있습니다.
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>XFA 필드 또는 컨테이너</strong></p> </td>
-   <td><p><strong>해당 응용 양식 구성 요소</strong></p> </td>
+   <td><p><strong>해당 적응형 양식 구성 요소</strong></p> </td>
   </tr>
   <tr>
    <td><p>단추 </p> </td>
@@ -68,7 +68,7 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
    <td><p>숫자 상자</p> </td>
   </tr>
   <tr>
-   <td><p>십진수 필드</p> </td>
+   <td><p>소수점</p> </td>
    <td><p>숫자 상자</p> </td>
   </tr>
   <tr>
@@ -96,7 +96,7 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
    <td><p>패널</p> </td>
   </tr>
   <tr>
-   <td><p>하위 폼 집합 </p> </td>
+   <td><p>하위 폼 세트 </p> </td>
    <td><p>패널</p> </td>
   </tr>
  </tbody>
@@ -104,7 +104,7 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
 
 ### 속성 {#properties}
 
-다음 표에서는 XDP 파일에 정의된 다양한 XFA 스크립트가 적응형 양식으로 작동하는 방식을 캡처합니다.
+다음 표는 XDP 파일에 정의된 다양한 XFA 스크립트가 적응형 양식에서 작동하는 방식을 캡처합니다.
 
 <table>
  <tbody>
@@ -117,12 +117,12 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
    <td><p>적응형 양식의 Bind 참조(bindRef) 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>존재 </p> </td>
-   <td><p>적응형 양식의 보이는 속성에 매핑됩니다. 가시성 표현식을 사용하여 무시할 수 있습니다.</p> </td>
+   <td><p>presence </p> </td>
+   <td><p>적응형 양식의 보이는 속성에 매핑됩니다. 가시성 표현식을 사용하여 이를 재정의할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><p>access </p> </td>
-   <td><p>적응형 양식의 활성화된 속성에 매핑됩니다. 액세스 표현식을 사용하여 무시할 수 있습니다.</p> </td>
+   <td><p>적응형 양식의 활성화된 속성에 매핑됩니다. Access 식을 사용하여 재정의할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><p>접근성:역할 </p> </td>
@@ -138,50 +138,50 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
   </tr>
   <tr>
    <td><p>접근성:toolTip </p> </td>
-   <td><p>응용 양식의 짧은 설명 속성에 매핑됩니다.</p> </td>
+   <td><p>적응형 양식의 짧은 설명 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>caption<em> (모든 필드 유형)</em></p> </td>
+   <td><p>caption<em>(모든 필드 유형)</em></p> </td>
    <td><p>적응형 양식의 제목 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em> (모든 필드 유형)</em></p> </td>
+   <td><p>displayFormat<em>(모든 필드 유형)</em></p> </td>
    <td><p>적응형 양식의 표시 패턴에 매핑됩니다.</p> </td>
   </tr>
   <tr>
    <td><p>rawValue<em>(모든 필드 유형)</em></p> </td>
-   <td><p>응용 양식의 값 속성에 매핑됩니다.</p> </td>
+   <td><p>적응형 양식의 값 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (목록 상자, 확인란)</em></p> </td>
-   <td><p>적응형 양식의 옵션 속성에 매핑됩니다. 옵션 표현식을 사용하여 무시할 수 있습니다.</p> </td>
+   <td><p>항목<em>(목록 상자, 확인란)</em></p> </td>
+   <td><p>적응형 양식의 옵션 속성에 매핑됩니다. 옵션 표현식을 사용하여 재정의할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><p>maxChar<em> (텍스트 필드)</em></p> </td>
-   <td><p>응용 양식의 최대 문자 허용 속성에 매핑됩니다.</p> </td>
+   <td><p>응용 형식으로 허용되는 최대 문자 수 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
    <td><p>multiline<em> (텍스트 필드)</em></p> </td>
-   <td><p>응용 양식의 여러 줄 허용 속성에 매핑됩니다.</p> </td>
+   <td><p>적응형 양식의 여러 줄 허용 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (숫자 필드, 십진수 필드)</em></p> </td>
+   <td><p>frcDigit<em>(숫자 필드, 소수 필드)</em></p> </td>
    <td><p>적응형 양식의 프레임 숫자 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> (숫자 필드, 십진수 필드)</em></p> </td>
+   <td><p>leadDigit<em> (숫자 필드, 소수 필드)</em></p> </td>
    <td><p>적응형 양식의 리드 숫자 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
    <td><p>multiSelect<em> (목록 상자)</em></p> </td>
-   <td><p>응용 형식으로 여러 선택 속성 허용에 매핑됩니다.</p> </td>
+   <td><p>응용 양식의 여러 선택 허용 속성에 매핑됩니다.</p> </td>
   </tr>
  </tbody>
 </table>
 
 ### 스크립트 {#scripts}
 
-다음 표에서는 XDP 파일에 정의된 다양한 XFA 스크립트가 적응형 양식에서 작동하는 방식을 캡처합니다.
+다음 표는 XDP 파일에 정의된 다양한 XFA 스크립트가 적응형 양식에서 작동하는 방식을 캡처합니다.
 
 <table>
  <tbody>
@@ -199,7 +199,7 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
   </tr>
   <tr>
    <td><p>유효성 검사 </p> </td>
-   <td><p>응용 형식으로 유효성 검사 식에 매핑됩니다.</p> </td>
+   <td><p>적응형 양식의 유효성 검사 식에 매핑됩니다.</p> </td>
   </tr>
   <tr>
    <td><p>validationState </p> </td>
@@ -236,7 +236,7 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
  <tbody>
   <tr>
    <td><p><strong>XFA 유효성 검사</strong></p> </td>
-   <td><p><strong>응용 양식의 해당 유효성 검사</strong></p> </td>
+   <td><p><strong>적응형 양식의 해당 유효성 검사</strong></p> </td>
   </tr>
   <tr>
    <td><p>유효성 검사 패턴(formatTest)</p> </td>
@@ -252,7 +252,7 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
   </tr>
   <tr>
    <td><p>빈 메시지(nullTestMessage) </p> </td>
-   <td><p>mandatoryMessage</p> </td>
+   <td><p>manualMessage</p> </td>
   </tr>
   <tr>
    <td><p>스크립트 유효성 검사(scriptTest)</p> </td>
@@ -267,5 +267,5 @@ XDP 파일을 사용하여 적응형 양식을 만든 경우 XFA 필드를 적�
 
 >[!NOTE]
 >
->응용 양식 라디오 단추 및 XFA 확인 단추에 바인딩되는 확인란 그룹에 대한 필수 속성을 재정의할 수 없습니다.
+>응용 양식 라디오 단추 및 XFA 확인 단추에 바인딩된 확인란 그룹에 대한 필수 속성은 재정의할 수 없습니다.
 
