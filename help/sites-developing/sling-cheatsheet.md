@@ -20,6 +20,6 @@ ht-degree: 16%
 
 # Sling 커닝 페이퍼{#sling-cheatsheet}
 
-![Apache Sling 스크립트 해상도 이해.](assets/sling-cheatsheet-01.png)
+![Apache Sling 스크립트 해상도 이해](assets/sling-cheatsheet-01.png)
 
-![SlingPostServlet 사용 - POST 요청에 대한 기본 처리기입니다.거의 모든 것을 할 수 있습니다.](assets/sling-cheatsheet-02.png)
+![SlingPostServlet 사용 - POST 요청에 대한 기본 처리기입니다.그것은 거의 모든 것을 할 수 있다.](assets/sling-cheatsheet-02.png)
