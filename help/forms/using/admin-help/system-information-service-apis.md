@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 시스템 정보 서비스 API {#system-information-service-apis}
 
-시스템 정보 서비스는 정보를 검색할 수 있는 REST API 세트를 제공합니다. 다음 표에서는 API에 대한 자세한 정보를 제공합니다.
+시스템 정보 서비스는 정보를 검색할 REST API 세트를 제공합니다. 다음 표에서는 API에 대한 자세한 정보를 제공합니다.
 
 <table>
  <thead>
@@ -77,7 +77,7 @@ ht-degree: 0%
      <li><p>FIPS 사용</p></li>
      <li><p>EnableWSDL</p></li>
      <li><p>DataServicesConfigFile </p></li>
-     <li><p>RDS 사용</p></li>
+     <li><p>RDS 활성화</p></li>
     </ul><p></p></td>
   </tr>
   <tr>
@@ -100,14 +100,14 @@ ht-degree: 0%
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
    <td><p>활성 스레드의 카운트 및 스택 추적을 검색합니다. 다음 매개 변수를 사용합니다.</p>
     <ul>
-     <li><p>iterations= [n]:반복 횟수를 지정합니다. n을 숫자로 바꿉니다. </p></li>
+     <li><p>반복= [n]:반복 횟수를 지정합니다. n을 숫자로 바꿉니다. </p></li>
      <li><p>지연= [n]:다음 반복을 시작하기 전에 대기할 시간(밀리초)을 지정합니다. </p></li>
     </ul><p></p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>이 API는 모든 시스템 정보 서비스 API의 래퍼입니다. 내부적으로 모든 시스템 정보 API를 실행하고 정보를 zip 형식으로 다운로드합니다. </p><p><i><strong>참고</strong>:SystemInfo.info는 활성 스레드의 카운트 및 스택 추적을 제공하지 않습니다. </i></p></td>
+   <td><p>이 API는 모든 시스템 정보 서비스 API의 래퍼입니다. 내부적으로 모든 시스템 정보 API를 실행하고 zip 형식의 정보를 다운로드합니다. </p><p><i><strong>참고</strong>:SystemInfo.info는 활성 스레드의 카운트 및 스택 추적을 제공하지 않습니다. </i></p></td>
   </tr>
  </tbody>
 </table>
