@@ -20,7 +20,7 @@ ht-degree: 9%
 
 # 재사용 가능한 구성 요소 {#description-of-reusable-components} 설명
 
-AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/folder-structure.md)로 구성된 [재사용 가능한](/help/forms/using/integrating-html-ws-components-web.md) 구성 요소로 구성됩니다. 각 구성 요소에는 폴더 구조에 지정된 위치에 모델, 보기 및 템플릿 파일이 있고, 다른 구성 요소 파일에 대한 JavaScript™ 종속성, 구성 요소가 수집한 이벤트 및 AEM Forms 작업 공간에서 이러한 이벤트를 트리거하는 JavaScript 개체가 있습니다. 구성 요소 파일 이름 및 종속성이 있는 재사용 가능한 구성 요소의 전체 목록은 여기에 나와 있습니다.
+AEM Forms 작업 영역은 CRX™의 특정 [폴더 구조](/help/forms/using/folder-structure.md)로 구성된 [재사용 가능한](/help/forms/using/integrating-html-ws-components-web.md) 구성 요소로 구성됩니다. 각 구성 요소에는 폴더 구조에 지정된 위치에 모델, 보기 및 템플릿 파일, 다른 구성 요소 파일에 대한 JavaScript™ 종속성, 구성 요소가 수집한 이벤트 및 AEM Forms 작업 공간에서 이러한 이벤트를 트리거하는 JavaScript 객체가 있습니다. 구성 파일 이름 및 종속성이 있는 재사용 가능한 구성 요소의 전체 목록은 여기에 나와 있습니다.
 
 ## 작업 목록 {#tasklist}
 
@@ -69,7 +69,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
 
 >[!NOTE]
 >
->사용자 지정 응용 프로그램에서 이 구성 요소에 대해 filterSelected 이벤트를 트리거하는 경우 이 구성 요소는 AEM Forms 작업 영역과 독립적으로 사용할 수 있습니다.
+>사용자 지정 애플리케이션에서 이 구성 요소에 대해 filterSelected 이벤트를 트리거하는 경우 이 구성 요소는 AEM Forms 작업 영역과 별도로 사용할 수 있습니다.
 
 ## 작업 {#task}
 
@@ -112,9 +112,9 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
 
 >[!NOTE]
 >
->작업 공간 호출 fetchTaskList 모델의 작업 함수를 호출하여 이 구성 요소에 대한 작업 모델을 만듭니다.
+>작업 공간 호출은 이 구성 요소에 대한 작업 모델을 만들기 위해 TaskList 모델의 fetchTasks 함수를 호출합니다.
 
-## FilterList {#filterlist}
+## 필터 목록 {#filterlist}
 
 <table>
  <tbody>
@@ -132,11 +132,11 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p></td>
@@ -145,7 +145,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
      <li><p>가져오기 - 작업 목록 모델 </p></li>
      <li><p>제거 - 작업 목록 모델 </p></li>
      <li><p>updateQueue - tasklist 모델 </p></li>
-     <li><p>새로 고친 큐 - 작업 목록 모델 </p></li>
+     <li><p>refreshQueue - tasklist 모델 </p></li>
      <li><p>filterSelected - tasklist 모델</p></li>
     </ul></td>
   </tr>
@@ -166,7 +166,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
@@ -180,8 +180,8 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
     </ul> </td>
   </tr>
   <tr>
-   <td><p>경청된 이벤트</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>이벤트가 경청됨</p> </td>
+   <td><p>NA</p> </td>
   </tr>
  </tbody>
 </table>
@@ -204,11 +204,11 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p></td>
@@ -217,7 +217,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
      <li><p>가져오기 - 작업 목록 모델 </p></li>
      <li><p>제거 - 작업 목록 모델 </p></li>
      <li><p>updateQueue - tasklist 모델 </p></li>
-     <li><p>teamQueuesFetted - tasklist 모델 </p></li>
+     <li><p>teamQueuesConcepted - tasklist 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -229,7 +229,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
  <tbody>
   <tr>
    <td><p>모델</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>보기</p> </td>
@@ -241,7 +241,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
@@ -256,8 +256,8 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
     </ul> </td>
   </tr>
   <tr>
-   <td><p>경청된 이벤트</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>이벤트가 경청됨</p> </td>
+   <td><p>NA</p> </td>
   </tr>
  </tbody>
 </table>
@@ -291,11 +291,11 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td>
     <ul>
      <li><p>processinstancehistory.html</p> </li>
-     <li><p>양식 렌더링 유틸리티</p> </li>
-     <li><p>노트 유틸리티</p> </li>
-     <li><p>첨부 유틸리티</p> </li>
+     <li><p>formrendering utility</p> </li>
+     <li><p>메모 유틸리티</p> </li>
+     <li><p>첨부 파일 유틸리티</p> </li>
      <li><p>작업 유틸리티</p> </li>
-     <li><p>역사 유틸리티</p> </li>
+     <li><p>작업 내역 유틸리티</p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -309,14 +309,14 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
      <li><p>중단된 - 작업 모델</p> </li>
      <li><p>잠금 해제 - 작업 모델</p> </li>
      <li><p>잠김 - 작업 모델</p> </li>
-     <li><p>클레임 - 작업 모델</p> </li>
+     <li><p>claim - 작업 모델</p> </li>
      <li><p>변경:작업 선택 - 작업 목록 모델</p> </li>
      <li><p>change:formUrl - 작업 모델</p> </li>
-     <li>attachmentURLFstaged - 작업 모델</li>
+     <li>attachmentURLFlocked - 작업 모델</li>
     </ul>
     <ul>
      <li>newAttachment - 작업 모델</li>
-     <li><p>taskHistoryFetted - 작업 모델</p> </li>
+     <li><p>taskHistoryConcepted - 작업 모델</p> </li>
      <li>prepareForSubmitComplete - 작업 모델</li>
      <li><p>submitComplete - 작업 모델</p> </li>
     </ul> </td>
@@ -348,7 +348,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td><p>JS 종속성</p></td>
    <td>
     <ul>
-     <li><p>favoritecategoryfactory 모델</p></li>
+     <li><p>favoritecoryfactory 모델</p></li>
      <li><p>allcategoryfactory 모델</p></li>
     </ul></td>
   </tr>
@@ -356,7 +356,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
-     <li><p>allStartpointsFatted - categorylist model </p></li>
+     <li><p>allStartpointsConcepted - categorylist model </p></li>
      <li><p>add - categorylist model </p></li>
     </ul></td>
   </tr>
@@ -365,7 +365,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
 
 >[!NOTE]
 >
->이 구성 요소는 StartPointList, StartPoint 및 Task와 같은 일부 다른 구성 요소의 모델 클래스를 사용합니다. 이러한 종속성 외에도 CategoryList를 독립적으로 사용할 수 있습니다.
+>이 구성 요소는 StartPointList, StartPoint 및 Task와 같은 다른 구성 요소의 모델 클래스를 사용합니다. 이러한 종속성 외에도 CategoryList를 독립적으로 사용할 수 있습니다.
 
 ## 카테고리 {#category}
 
@@ -385,7 +385,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
@@ -425,14 +425,14 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
    <td>
     <ul>
      <li><p>범주 모델</p></li>
-     <li><p>favoritecategoryfactory 모델</p></li>
+     <li><p>favoritecoryfactory 모델</p></li>
      <li><p>allcategoryfactory 모델</p></li>
      <li><p>시작 지점 보기</p></li>
      <li><p>시작점 목록 모델</p></li>
@@ -448,7 +448,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td>
     <ul>
      <li><p>범주:선택됨 - 범주목록 모델 </p></li>
-     <li><p>allStartpointsFatted - categorylist model </p></li>
+     <li><p>allStartpointsConcepted - categorylist model </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -456,9 +456,9 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
 
 >[!NOTE]
 >
->StartPointList 및 CategoryList 구성 요소는 모델 클래스를 공유하므로 이 구성 요소는 후자에 따라 달라집니다. 카테고리 목록은 카테고리의 시작 지점이 표시되는 정보에 액세스합니다. StartPointList를 독립적으로 사용하려면 CategoryList에서 이벤트 트리거를 시뮬레이션합니다.
+>StartPointList 및 CategoryList 구성 요소는 모델 클래스를 공유하므로 모델 클래스는 후자에 따라 달라집니다. CategoryList는 카테고리의 시작 지점이 표시되는 정보에 액세스합니다. StartPointList를 독립적으로 사용하려면 CategoryList에서 이벤트 트리거를 시뮬레이션합니다.
 
-## StartPoint {#startpoint}
+## 시작 지점 {#startpoint}
 
 <table>
  <tbody>
@@ -476,7 +476,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
@@ -489,7 +489,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
  </tbody>
 </table>
 
-## StartProcess {#startprocess}
+## 시작 프로세스 {#startprocess}
 
 <table>
  <tbody>
@@ -518,11 +518,11 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td>
     <ul>
      <li><p>범주 모델</p> </li>
-     <li><p>favoritecategoryfactory 모델</p> </li>
+     <li><p>favoritecoryfactory 모델</p> </li>
      <li><p>allcategoryfactory 모델</p> </li>
-     <li><p>양식 렌더링 유틸리티</p> </li>
-     <li><p>노트 유틸리티</p> </li>
-     <li><p>첨부 유틸리티</p> </li>
+     <li><p>formrendering utility</p> </li>
+     <li><p>메모 유틸리티</p> </li>
+     <li><p>첨부 파일 유틸리티</p> </li>
      <li><p>작업 유틸리티</p> </li>
     </ul> </td>
   </tr>
@@ -531,18 +531,18 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td>
     <ul>
      <li><p>범주:선택됨 - 범주목록 모델</p> </li>
-     <li><p>change:invokedTask - startpointlist model</p> </li>
+     <li><p>change:includedTask - startpointlist model</p> </li>
      <li><p>change:formUrl - 작업 모델</p> </li>
      <li><p>시작점:선택됨 - 시작점 목록 모델</p> </li>
      <li><p>전달 - 작업 모델</p> </li>
      <li><p>중단된 - 작업 모델</p> </li>
      <li><p>잠금 해제 - 작업 모델</p> </li>
      <li><p>잠김 - 작업 모델</p> </li>
-     <li>attachmentURLFstaged - 작업 모델</li>
+     <li>attachmentURLFlocked - 작업 모델</li>
      <li>newAttachment - 작업 모델</li>
      <li>prepareForSubmitComplete - 작업 모델 </li>
      <li><p>submitComplete - 작업 모델</p> </li>
-     <li><p>allStartpointsFatted - categorylist model</p> </li>
+     <li><p>allStartpointsConcepted - categorylist model</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -570,7 +570,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
@@ -580,9 +580,9 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
-     <li><p>add - processnamelist model </p></li>
-     <li><p>가져오기:프로세스 이름 - 프로세서 이름 목록 모델 </p></li>
-     <li><p>변경 - 처리자 모델 </p></li>
+     <li><p>add - processnamelist 모델 </p></li>
+     <li><p>가져오기:처리 이름 - 처리 이름 목록 모델 </p></li>
+     <li><p>변경 - 프로세서 이름 목록 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -590,9 +590,9 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
 
 >[!NOTE]
 >
->ProcessNameList는 다른 구성 요소에 종속되지 않습니다. 하지만 내부적으로 다른 구성 요소에 따라 결정되는 ProcessInstanceList 모델 클래스에 따라 다릅니다. 따라서 ProcessNameList는 ProcessInstanceList, ProcessInstance, TaskList, Teamtask 및 Task와 같은 많은 모델 클래스를 사용합니다. 이러한 종속성 외에도 ProcessNameList를 독립적으로 사용할 수 있습니다.
+>ProcessNameList는 다른 구성 요소에 종속되지 않습니다. 하지만 내부적으로 다른 구성 요소에 따라 달라지는 ProcessInstanceList 모델 클래스에 따라 달라집니다. 따라서 ProcessNameList는 ProcessInstanceList, ProcessInstance, TaskList, Teamtask 및 Task와 같은 많은 모델 클래스를 사용합니다. 이러한 종속성 외에도 ProcessNameList를 독립적으로 사용할 수 있습니다.
 
-## ProcessName {#processname}
+## 프로세스 이름 {#processname}
 
 <table>
  <tbody>
@@ -602,7 +602,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>보기</p></td>
-   <td><p>processname(processnamelist.js에서)</p></td>
+   <td><p>processname(processname.js에서)</p></td>
   </tr>
   <tr>
    <td><p>템플릿</p></td>
@@ -610,11 +610,11 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
-   <td><p>처리 기관 셀리스트 모델</p></td>
+   <td><p>처리(instancelist) 모델</p></td>
   </tr>
   <tr>
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p></td>
@@ -641,7 +641,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
@@ -652,7 +652,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td>
     <ul>
      <li><p>처리 이름:선택됨 - 처리 이름 모델 </p></li>
-     <li><p>처리 이름:instancepreceded - processnamelist 모델 </p></li>
+     <li><p>처리 이름:instancenespeconeded - 처리 이름 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -660,7 +660,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
 
 >[!NOTE]
 >
->ProcessInstanceList에서는 인스턴스를 가져오고 표시하기 위한 프로세스 이름을 나타내는 ProcessNameList의 이벤트가 필요합니다. ProcessInstanceList를 독립적으로 사용하려면 이벤트 트리거를 별도로 시뮬레이트합니다.
+>ProcessInstanceList는 인스턴스를 가져오고 표시하기 위한 프로세스 이름을 나타내는 ProcessNameList의 이벤트가 필요합니다. ProcessInstanceList를 독립적으로 사용하려면 이벤트 트리거를 별도로 시뮬레이트합니다.
 
 ## ProcessInstance {#processinstance}
 
@@ -672,7 +672,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>보기</p></td>
-   <td><p>processnamelist.js 내부의 이름</p></td>
+   <td><p>processname alist.js 내의 프로세스 이름</p></td>
   </tr>
   <tr>
    <td><p>템플릿</p></td>
@@ -680,7 +680,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
@@ -711,14 +711,14 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
    <td>
     <ul>
      <li><p>처리 모델</p></li>
-     <li><p>역사 유틸리티</p></li>
+     <li><p>작업 내역 유틸리티</p></li>
     </ul></td>
   </tr>
   <tr>
@@ -726,8 +726,8 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td>
     <ul>
      <li><p>처리 이름:선택됨 - 처리 이름 모델 </p></li>
-     <li><p>처리 인스턴스:선택됨 - 처리자 모델 </p></li>
-     <li><p>tasksBraced - 처리 인스턴스 모델 </p></li>
+     <li><p>처리 인스턴스:선택됨 - 처리기팔레트 모델 </p></li>
+     <li><p>tasksPected - 처리 인스턴스 모델 </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -735,9 +735,9 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
 
 >[!NOTE]
 >
->ProcessInstanceHistory에서는 ProcessInstanceList의 이벤트가 예상 프로세스 인스턴스의 내역을 표시해야 합니다. 이 종속성 외에도 구성 요소를 독립적으로 사용할 수 있습니다.
+>ProcessInstanceHistory는 프로세스 인스턴스의 내역을 표시할 프로세스를 나타내는 ProcessInstanceList의 이벤트를 필요로 합니다. 이 종속성 외에도 구성 요소를 독립적으로 사용할 수 있습니다.
 
-## OoutOffice {#outofoffice}
+## OoofOffice {#outofoffice}
 
 <table>
  <tbody>
@@ -765,9 +765,9 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p> </td>
    <td>
     <ul>
-     <li><p>outOfOfficeSettingsFatived - otofoffice 모델</p> </li>
-     <li><p>outOfOfficeSettingsSaved - Office 모델</p> </li>
-     <li><p>processesFessed - Outlook 모델</p> </li>
+     <li><p>outOfOfficeSettingsConcted - Otofoffice 모델</p> </li>
+     <li><p>outOfOfficeSettingsSaved - Otofoffice 모델</p> </li>
+     <li><p>processesConcepted - Otofoffice 모델</p> </li>
      <li><p>principalSelected - principalsearch view</p> </li>
     </ul> </td>
   </tr>
@@ -776,7 +776,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
 
 >[!NOTE]
 >
->OutOffice는 독립적으로 사용할 수 있습니다.
+>OofOffice는 독립적으로 사용할 수 있습니다.
 
 ## ShareQueue {#sharequeue}
 
@@ -808,9 +808,9 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
     <ul>
      <li><p>queueAccessGranted - 공유 큐 모델</p> </li>
      <li><p>queueAccessRequested - 공유 큐 모델</p> </li>
-     <li><p>grantedUsersContried - 공유 큐 모델</p> </li>
-     <li>accessibleUsersContried - 공유 큐 모델</li>
-     <li><p>queueAccessRevoted - 공유 큐 모델</p> </li>
+     <li><p>grantedUsersConceed - sharequeue 모델</p> </li>
+     <li>accessibleUsersConcepted - sharequeue 모델</li>
+     <li><p>queueAccessRevoected - 공유 큐 모델</p> </li>
      <li><p>queueAccessRemoved - 공유 큐 모델</p> </li>
      <li><p>principalSelected - principalsearch view</p> </li>
     </ul> </td>
@@ -840,17 +840,17 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p></td>
    <td>
     <ul>
-     <li><p>환경 설정 - 설정 모델 </p></li>
+     <li><p>preferencesBraced - 설정 모델 </p></li>
      <li><p>settingUpdated - 설정 모델 </p></li>
     </ul></td>
   </tr>
@@ -879,15 +879,15 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
-   <td><p>경청된 이벤트</p></td>
-   <td><p>북미</p></td>
+   <td><p>이벤트가 경청됨</p></td>
+   <td><p>NA</p></td>
   </tr>
  </tbody>
 </table>
@@ -914,19 +914,19 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p> </td>
    <td>
     <ul>
-     <li>userImageUrlFetted - userinfo 모델</li>
-     <li>sessionUpdated - userinfo 모델 <br /> </li>
-     <li>sessionExpired - userinfo 모델 </li>
+     <li>userImageUrlConcepted - userinfo 모델</li>
+     <li>sessionRelated - userinfo 모델 <br /> </li>
+     <li>sessionExpired - 사용자 정보 모델 </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -954,11 +954,11 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>JS 종속성</p></td>
-   <td><p>북미</p></td>
+   <td><p>NA</p></td>
   </tr>
   <tr>
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p></td>
@@ -967,7 +967,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
  </tbody>
 </table>
 
-## UserSearch {#usersearch}
+## 사용자 검색 {#usersearch}
 
 <table>
  <tbody>
@@ -985,18 +985,18 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p> </td>
    <td>
     <ul>
-     <li>principalSearch - principalsearch model</li>
-     <li>outOfOfficeInfoFetted - usersearch model</li>
+     <li>principalSearch - principalsearch 모델</li>
+     <li>outOfOfficeInfoConcepted - 사용자 검색 모델</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -1020,15 +1020,15 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p> </td>
-   <td><p>templateBraced- searchtemplate model</p> </td>
+   <td><p>templateContated- searchtemplate 모델</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1051,7 +1051,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
@@ -1082,7 +1082,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>구성 요소 필요</p> </td>
-   <td><p>북미</p> </td>
+   <td><p>NA</p> </td>
   </tr>
   <tr>
    <td><p>JS 종속성</p> </td>
@@ -1090,7 +1090,7 @@ AEM Forms 작업 공간은 CRX™의 특정 [폴더 구조](/help/forms/using/fo
   </tr>
   <tr>
    <td><p>경청된 이벤트(이벤트 이름 - 트리거)</p> </td>
-   <td><p>searchTemplate:selected - searchtemplate model</p> </td>
+   <td><p>searchTemplate:selected - 검색 템플릿 모델</p> </td>
   </tr>
  </tbody>
 </table>
