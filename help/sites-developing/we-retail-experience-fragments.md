@@ -26,7 +26,7 @@ We.Retail에서 경험 조각 시험 사용
 
 작성자는 컨텐츠를 복사하여 붙여넣을 필요 없이 페이지의 일부(경험 조각)를 다시 사용할 수 있습니다.
 
-이를 통해 헤드리스 콘텐츠 관리 시스템(CMS) 사용 사례를 지원합니다. 작성자는 AEM을 작성용으로만 사용하지만 고객에게 전달하기 위한 것은 아닙니다. 그런 다음 타사 시스템/터치포인트를 통해 해당 경험을 소비한 다음 최종 사용자에게 전달할 수 있습니다.
+이를 통해 헤드리스 콘텐츠 관리 시스템(CMS) 사용 사례를 지원합니다. 작성자는 AEM을 작성용으로만 사용하지만 고객에게 전달할 수는 없습니다. 그러면 제3자 시스템/접점이 해당 경험을 소비한 다음 최종 사용자에게 제공할 수 있습니다.
 
 >[!NOTE]
 >
@@ -41,11 +41,11 @@ We.Retail에서 경험 조각 시험 사용
 
 ## We.Retail에서 경험 조각을 만드는 위치 {#where-to-create-experience-fragments-in-we-retail}
 
-전역 탐색에서 **경험 조각**&#x200B;을 선택합니다. 여기서 [create](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) and [edit](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) your Experience Fragments 및 관련 [variations](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)를 구성합니다.
+전역 탐색에서 **경험 조각**&#x200B;을 선택합니다. 여기서 [만들기](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) 및 [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment)경험 조각 및 관련 [변형](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)을 구성합니다.
 
 ## We.Retail에서 경험 조각을 사용하는 위치 {#where-to-use-experience-fragments-in-we-retail}
 
-전역 탐색의 **사이트**&#x200B;의 [모든 페이지](/help/sites-authoring/editing-content.md)에서 [경험 조각](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment)을 사용할 수 있습니다.
+전역 탐색의 **사이트**&#x200B;에 있는 [모든 페이지](/help/sites-authoring/editing-content.md)에서 [경험 조각](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment)을 사용할 수 있습니다.
 
 ## 추가 정보 {#further-information}
 
