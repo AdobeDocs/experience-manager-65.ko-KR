@@ -1,8 +1,8 @@
 ---
 title: SEO 및 URL 관리 우수 사례
 seo-title: SEO 및 URL 관리 우수 사례
-description: AEM 구현에서 SEO 모범 사례 및 권장 사항에 대해 알아봅니다.
-seo-description: AEM 구현에서 SEO 모범 사례 및 권장 사항에 대해 알아봅니다.
+description: AEM 구현에서 이러한 사항을 구현하기 위한 SEO 모범 사례 및 권장 사항에 대해 알아봅니다.
+seo-description: AEM 구현에서 이러한 사항을 구현하기 위한 SEO 모범 사례 및 권장 사항에 대해 알아봅니다.
 uuid: 943e76c4-bd88-4b52-bb43-db375eb89d23
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 # SEO 및 URL 관리 우수 사례{#seo-and-url-management-best-practices}
 
-SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 그 결과 SEO의 우려는 많은 AEM 프로젝트에서 다뤄져야 한다.
+SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 SEO 문제는 많은 AEM 프로젝트에서 해결해야 합니다.
 
 이 문서에서는 먼저 AEM 구현에서 이를 잘 수행하기 위한 [SEO 우수 사례](#seo-best-practices) 및 권장 사항에 대해 설명합니다. 그런 다음 첫 번째 섹션에서 제기한 보다 [복잡한 구현 절차](#aem-configurations) 중 일부를 자세히 살펴봅니다.
 
