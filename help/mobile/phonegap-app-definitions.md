@@ -1,8 +1,8 @@
 ---
 title: 앱 정의
 seo-title: 앱 정의
-description: 앱에 적합한 공간 및 기타 구성을 식별하는 방법으로 앱 정의에 대해 알려면 이 페이지를 따르십시오. 앱 정의를 사용하면 앱을 다시 컴파일하지 않고도 공간을 추가할 수 있습니다.
-seo-description: 앱에 적합한 공간 및 기타 구성을 식별하는 방법으로 앱 정의에 대해 알려면 이 페이지를 따르십시오. 앱 정의를 사용하면 앱을 다시 컴파일하지 않고도 공간을 추가할 수 있습니다.
+description: 앱에 적합한 공간과 기타 구성을 식별하는 방법으로 앱 정의에 대해 알려면 이 페이지를 따르십시오. 앱 정의를 사용하면 앱을 다시 컴파일하지 않고도 공간을 추가할 수 있습니다.
+seo-description: 앱에 적합한 공간과 기타 구성을 식별하는 방법으로 앱 정의에 대해 알려면 이 페이지를 따르십시오. 앱 정의를 사용하면 앱을 다시 컴파일하지 않고도 공간을 추가할 수 있습니다.
 uuid: bdb4063b-1597-47e2-96d4-c4cc7c78c3d7
 contentOwner: User
 content-type: reference
@@ -22,15 +22,15 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: 응답)이 필요한 프로젝트에서는 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: 응답)이 필요한 프로젝트에는 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
 
-앱 정의는 앱에 적합한 공백과 기타 구성을 식별하는 방법입니다. 앱 정의를 사용하면 앱을 다시 컴파일하지 않고도 공간을 추가할 수 있습니다. 앱 정의가 업데이트되어 새로운 공간에 대한 정보가 포함됩니다.
+앱 정의는 앱에 적합한 공간과 기타 구성을 식별하는 방법입니다. 앱 정의를 사용하면 앱을 다시 컴파일하지 않고도 공간을 추가할 수 있습니다. 앱 정의가 업데이트되며 새 공간에 대한 정보가 포함됩니다.
 
 >[!NOTE]
 >
 >앱 정의는 앱에 연결되어 있으므로 AEM Mobile 앱 콘솔에서 앱을 만들어야 합니다.
 
-## 새 앱 정의 {#creating-a-new-app-definition} 만들기
+## 새 앱 정의 만들기 {#creating-a-new-app-definition}
 
 1. AEM 탐색 콘솔에서 **Mobile**&#x200B;을 선택합니다.
 
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 1. **Mobile**&#x200B;에서 **Apps**&#x200B;을 선택하고 **만들기를 클릭합니다.**
 
-   **App**&#x200B;을 선택하고 세부 정보를 입력하여 새 앱을 만듭니다.
+   **앱**&#x200B;을 선택하고 세부 정보를 입력하여 새 앱을 만듭니다.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
@@ -54,6 +54,6 @@ ht-degree: 4%
 
 관리자 및 개발자의 역할 및 책임을 살펴보려면 아래 리소스를 참조하십시오.
 
-* [AEM을 사용한 Adobe PhoneGap 엔터프라이즈용 개발](/help/mobile/developing-in-phonegap.md)
-* [AEM과 Adobe PhoneGap 엔터프라이즈를 위한 컨텐츠 관리](/help/mobile/administer-phonegap.md)
+* [AEM을 사용하여 Adobe PhoneGap Enterprise를 위한 개발](/help/mobile/developing-in-phonegap.md)
+* [AEM에서 Adobe PhoneGap Enterprise용 컨텐츠 관리](/help/mobile/administer-phonegap.md)
 
