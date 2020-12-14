@@ -30,7 +30,7 @@ ht-degree: 98%
 
 컨텐츠 조각 모델을 활성화하려면 필요한 단계가 있습니다.
 
-* [구성 브라우저](/help/sites-administering/configurations.md)에서 컨텐츠 조각 모델을 사용하도록 설정합니다.
+* [구성 브라우저](/help/sites-administering/configurations.md)에서 컨텐츠 조각 모델을 사용할 수 있습니다.
 * 자산 폴더에 구성 적용
 
 ### 구성 관리자에서 컨텐츠 조각 모델을 사용할 수 있도록 설정 {#enable-content-fragment-models-in-configuration-manager}
