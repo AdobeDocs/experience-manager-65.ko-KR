@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 workflow-type: tm+mt
 source-wordcount: '1935'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 91%
     /...
 ```
 
-이 구조는 웹 사이트 콘솔에서 볼 수 있으며, 트리 구조](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15)에서 탐색하는 데 사용할 수 있습니다.[
+이 구조는 웹 사이트 콘솔에서 볼 수 있으며 트리 구조](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15)를 통해 [탐색할 때 사용할 수 있습니다.
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -89,9 +89,9 @@ ht-degree: 91%
    * URI를 생성하는 데 사용됩니다.
    * 이 필드에 대한 사용자 입력은 선택 사항입니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
 
-AEM은 새 페이지를 만들 때 AEM 및 JCR에서 지정한 규칙](/help/sites-developing/naming-conventions.md)에 따라 페이지 이름을 확인합니다.[
+새 페이지를 만들 때 AEM은 AEM 및 JCR에서 지정한 규칙](/help/sites-developing/naming-conventions.md)에 따라 페이지 이름을 확인합니다.[
 
-구현 및 허용되는 문자 목록은 UI에 따라 약간 다르지만(터치 지원 UI에 대해 더 광범위함) 허용되는 최소 문자는 다음과 같습니다.
+구현 및 허용되는 문자 목록은 UI에 따라 약간 다르지만(터치 지원 UI에 대해 더 광범위함) 허용된 최소 문자 수는 다음과 같습니다.
 
 * &#39;a&#39; - &#39;z&#39;
 * &#39;A&#39; - &#39;Z&#39;
@@ -108,7 +108,7 @@ AEM은 새 페이지를 만들 때 AEM 및 JCR에서 지정한 규칙](/help/sit
 | 제목 | 파생되는 이름 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;jcs+ | sc---c-.html |
+| SC%&amp;&amp;ast;jc+ | sc---c-.html |
 
 #### 이름 {#name}
 
@@ -152,7 +152,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 제공되
 * 비디오
 * 더 많음
 
-페이지를 만들고 열면 [사이드 킥이나](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)에서 사용할 수 있는 ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)구성 요소를 사용하여 [컨텐트를 추가할 수 있습니다.
+페이지를 만들고 열면 [사이드킥의 ](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)에서 사용할 수 있는 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)를 사용하여 [컨텐츠를 추가할 수 있습니다.
 
 ## 페이지 관리 {#managing-pages}
 
@@ -198,7 +198,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 제공되
 
    >[!NOTE]
    >
-   >기존 페이지를 편집 중일 때 페이지를 만들 수도 있습니다. 사이드 킥의 **페이지** 탭에서 **하위 페이지 만들기 **를 사용하면 편집되는 페이지 바로 아래에 새 페이지가 만들어집니다.
+   >기존 페이지를 편집 중일 때 페이지를 만들 수도 있습니다. **하위 페이지 만들기 **를 사용하여 사이드 킥의 **페이지** 탭에서 편집할 페이지 바로 아래에 새 페이지를 만듭니다.
 
 ### 편집할 페이지 열기 {#opening-a-page-for-editing}
 
@@ -332,7 +332,7 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지에 대한 내부 링�
 >폴더도 새 폴더 이름을 지정할 때 [페이지 이름 지정 규칙](#page-naming-conventions)을 따릅니다.
 
 1. **웹 사이트** 콘솔을 열고 필요한 위치로 이동합니다.
-1. **새로 만들기...** 메뉴( **새로 만들기... 옆의 화살표를 클릭합니다.**)에서 **새 폴더...를 선택합니다.**.
+1. **새로 만들기...** 메뉴(**새로 만들기...** 옆의 화살표 클릭)에서 **새 폴더...**&#x200B;를 선택합니다.
 1. **폴더 만들기** 대화 상자가 열립니다. 여기에서 **이름** 및 **제목**&#x200B;을 입력할 수 있습니다.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
