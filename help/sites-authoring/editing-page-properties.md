@@ -85,7 +85,7 @@ ht-degree: 90%
 
    이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
 
-   예를 들어 별칭 URL이 웹 사이트 `http://example.com,`에 대해 `/v1.0/startpage`경로로 식별되는 페이지로 `welcome`으로 설정된 경우 `http://example.com/welcome`은 `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
+   예를 들어 별칭 URL이 웹 사이트 `http://example.com,` 경로의 `/v1.0/startpage`로 식별되는 페이지로 `welcome`으로 설정된 경우 `http://example.com/welcome`은 `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
 
    >[!CAUTION]
    >
@@ -96,7 +96,7 @@ ht-degree: 90%
    >* 기존 페이지로 설정하면 안 됩니다.
 
 
-   별칭 URL에 대한 액세스를 사용하도록 Dispatcher를 구성해야 합니다. 자세한 내용은 [별칭 URL에 대한 액세스 활성화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
+   또한 별칭 URL에 대한 액세스를 허용하도록 Dispatcher를 구성해야 합니다. 자세한 내용은 [별칭 URL에 대한 액세스 활성화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
 
 * **별칭 URL 리디렉션**
 
@@ -130,7 +130,7 @@ ht-degree: 90%
    >
    >예를 들어 `/content/we-retail/spanish` 노드에 대해 `latin-lang`이라는 별칭을 정의하면, 이 페이지는 `/content/we-retail/latin-language`를 통해 액세스할 수 있습니다.
    >
-   >자세한 내용은 SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md#localized-page-names)에서 지역화된 페이지 이름을 참조하십시오.[
+   >자세한 내용은 SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md#localized-page-names)에 있는 현지화된 페이지 이름을 참조하십시오.[
 
 * **&lt;*경로*>에서 상속됨**
 
@@ -154,7 +154,7 @@ ht-degree: 90%
 
    >[!CAUTION]
    >
-   >**[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 `granite:AuthenticationRequired` 믹싱이 있는 상태를 기반으로 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성에 따라 경고 메시지가 **인증 요구 사항** 아래에 표시되고 이 옵션은 편집할 수 없으며 [권한](/help/sites-authoring/editing-page-properties.md#permissions)을 편집할 수 없습니다.
+   >**[권한](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 `granite:AuthenticationRequired` 믹싱이 있는 경우 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성한 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 **인증 요구 사항** 아래에 표시되고 이 옵션은 편집할 수 없으며 [권한](/help/sites-authoring/editing-page-properties.md#permissions)을 편집할 수 없습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
@@ -229,7 +229,7 @@ ht-degree: 90%
    * [유효 권한](/help/sites-administering/user-group-ac-admin.md) 보기
    >[!CAUTION]
    >
-   >**Permissions** 탭에서는 `granite:AuthenticationRequired` 믹싱이 있는 상태를 기반으로 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
+   >**권한** 탭에서는 `granite:AuthenticationRequired` 믹싱이 있는 경우 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
