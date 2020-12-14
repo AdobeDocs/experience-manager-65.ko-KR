@@ -19,15 +19,15 @@ ht-degree: 0%
 ---
 
 
-# 오버레이 커뮤니티 구성 요소 {#overlay-communities-components}
+# 커뮤니티 구성 요소 오버레이 {#overlay-communities-components}
 
-기본 구성 요소를 오버레이하는 [의 의도는 구성 요소에 대한 모든 상대 참조에 대해 구성 요소의 모양 또는 동작을 전역적으로 변경하는 것입니다. ](/help/communities/client-customize.md#overlays) /libs 폴더에서 검색하기 전에 /apps 폴더로 확인하는 슬링의 특성에 의존합니다. 따라서 구성 요소의 경로는 /apps 폴더에 있지 않고 /libs 폴더에 있다는 점을 제외하고 기본 구성 요소의 경로와 동일합니다.
+기본 구성 요소를 오버레이하는 의도는 구성 요소에 대한 모든 상대 참조에 대해 구성 요소의 모양 또는 동작을 전역적으로 변경하는 것입니다. [](/help/communities/client-customize.md#overlays) /libs 폴더에서 검색하기 전에 /apps 폴더로 확인하려면 sling의 특성에 의존합니다. 따라서 구성 요소의 경로는 /apps 폴더에 있지 않고 /libs 폴더에 있다는 점을 제외하고 기본 구성 요소의 경로와 동일합니다.
 
 ## 예 {#example}
 
 **오버레이 주석 구성 요소**
 
-주석 기능을 수정하면 댓글에 대한 아바타가 더 이상 표시되지 않도록 주석 헤더를 변경하여 웹 사이트의 디자인과 일치한다고 가정합니다. 아바타를 숨기는 방법은 CSS를 사용하거나, 여기에 설명된 대로, 아바타가 포함된 HTML이 클라이언트에 전송되지 않도록 앱 폴더에 header.jsp를 오버레이하는 것입니다.
+주석 기능을 수정하여 주석 헤더를 변경하여 주석 관련 아바타를 더 이상 표시하지 않도록 한다고 가정합니다. 아바타를 숨기는 방법은 CSS를 사용하거나, 여기에 설명된 대로, 아바타가 포함된 HTML이 클라이언트에 전송되지 않도록 앱 폴더에 header.jsp를 오버레이합니다.
 
 주석을 오버레이하려면 다음을 수행해야 합니다.
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 
 **오버레이 알림 이메일**
 
-이메일 알림의 메시지를 사용자 정의하려는 경우 [오버레이](/help/communities/client-customize.md#overlays)에서 **/libs/settings/community/templates/email/html**&#x200B;의 템플릿을 사용할 수 있다고 가정합니다.
+이메일 알림의 메시지를 사용자 정의하려는 경우 [오버레이하는 경우 ](/help/communities/client-customize.md#overlays)이 **/libs/settings/community/templates/email/html**&#x200B;의 템플릿을 사용하여 이렇게 할 수 있습니다.
 
-예를 들어 언급 이메일 알림을 수정하려면(ugc가 생성된 특정 커뮤니티 구성 요소의 경우) **@mentions** 지원을 활성화한 구성 요소의 템플릿에 동사 **mention**&#x200B;에 대한 **if** 조건을 추가합니다.
+예를 들어 언급 이메일 알림을 수정하려면(ugc가 생성된 특정 커뮤니티 구성 요소에 대해) **@mentions** 지원을 활성화한 구성 요소의 템플릿에 동사 **언급**&#x200B;에 대한 **if** 조건을 추가합니다.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -47,4 +47,4 @@ ht-degree: 0%
 {{/equals}}\
 ```
 
-블로그 댓글에 있는 @mention에 대한 이메일 알림 템플릿을 수정하려면 다음 위치에서 기본 템플릿을 활용하십시오.`/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+블로그 주석에서 @mention에 대한 이메일 알림 템플릿을 수정하려면 다음 위치에 있는 템플릿 외부에 두십시오.`/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
