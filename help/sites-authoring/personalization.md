@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 80%
+ht-degree: 84%
 
 ---
 
@@ -36,7 +36,7 @@ AEM은 타깃팅된 컨텐츠를 작성하고 개인화된 환경을 제공하�
 
 활동은 또한 페이지에서 사용하는 [타깃팅 엔진](/help/sites-authoring/personalization.md#targeting-engine)을 식별합니다.
 
-브랜드를 위한 활동을 만들고 관리하려면 [활동 콘솔](/help/sites-authoring/activitylib.md)을 사용하십시오. [타깃팅된 콘텐츠](/help/sites-authoring/content-targeting-touch.md)를 작성하면서 활동을 만들 수도 있습니다.
+브랜드를 위한 활동을 만들고 관리하려면 [활동 콘솔](/help/sites-authoring/activitylib.md)을 사용하십시오. [타깃팅된 컨텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 때 활동을 만들 수도 있습니다.
 
 ## 경험 {#experiences}
 
@@ -71,4 +71,4 @@ Adobe Target 타깃팅 엔진을 사용하면 페이지 방문에서 수집된 �
 * 이 타깃팅 엔진을 사용하는 경우, Adobe Target에서 가져오는 세그먼트를 사용하여 경험의 대상을 정의합니다.
 * Adobe Target 엔진을 사용하는 활동은 [Target에 동기화](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)됩니다.
 
-이 엔진은 Adobe Target](/help/sites-administering/opt-in.md)과 통합될 때 사용할 수 있습니다.[
+[이(가) Adobe Target](/help/sites-administering/opt-in.md)에 통합된 경우 이 엔진을 사용할 수 있습니다.
