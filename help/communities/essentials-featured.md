@@ -34,7 +34,7 @@ ht-degree: 5%
    <td>social/commons/components/hbs/features</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
    <td>아니오</td>
   </tr>
   <tr>
@@ -51,7 +51,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td><a href="featured.md">주요 컨텐츠</a>를 참조하십시오.</td>
+   <td><a href="featured.md">주요 컨텐트</a>를 참조하십시오.</td>
   </tr>
  </tbody>
 </table>
@@ -60,4 +60,4 @@ ht-degree: 5%
 
 ### 파일 라이브러리 기능 {#file-library-function}
 
-[주요 컨텐츠 함수](functions.md#featured-content-function)를 포함하는 커뮤니티 사이트 구조에는 구성된 `featured content` 구성 요소가 포함됩니다.
+[주요 컨텐츠 함수](functions.md#featured-content-function)를 포함하는 커뮤니티 사이트 구조에는 구성된 `featured content` 구성 요소가 포함되어 있습니다.
