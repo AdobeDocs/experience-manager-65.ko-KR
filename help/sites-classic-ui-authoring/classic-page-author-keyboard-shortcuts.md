@@ -24,7 +24,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 >[!NOTE]
 >
->다음 테이블에서 **단축키** 열의 키 조합의 경우 macOS에서는 Ctrl 및 Command 키가 모두 작동합니다.
+>다음 표에서 **단축키** 열의 키 조합에 대해 Ctrl 키와 Command 키가 macOS에서 모두 작동합니다.
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   </tr>
   <tr>
    <td>편집 모드</td>
-   <td>URL에 다음 접미사를 설정합니다.<br /> <code>?debugClientLibs=true</code><br /><br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>URL에 다음 접미어를 설정합니다.<br /> <code>?debugClientLibs=true</code><br /> 다음 접미어를 사용합니다.<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>페이지 로드 시간 통계를 확인합니다.</td>
   </tr>
  </tbody>
