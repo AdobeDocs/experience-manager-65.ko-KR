@@ -53,7 +53,7 @@ ht-degree: 99%
 >다양한 리소스에 주석을 달 수 있습니다.
 >
 >* [자산에 주석 추가](/help/assets/manage-assets.md#annotating)
->* [비디오 자산에 주석 달기](/help/assets/managing-video-assets.md#annotate-video-assets)
+>* [비디오 자산에 주석 추가](/help/assets/managing-video-assets.md#annotate-video-assets)
 
 >
 
