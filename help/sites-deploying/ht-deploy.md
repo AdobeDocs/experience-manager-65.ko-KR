@@ -27,5 +27,5 @@ ht-degree: 0%
 
 * [성능 조정 팁](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 * [시작 화면에서 기능을 제거하는 방법](/help/sites-developing/customizing-the-welcome-console.md)
-* [위치 추적 기능 해제 방법](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
+* [위치 추적기 기능 끄기 방법](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
 
