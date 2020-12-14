@@ -1,8 +1,8 @@
 ---
-title: Acrobat Reader DC 확장 기능에 사용할 시간 초과 값 설정
-seo-title: Acrobat Reader DC 확장 기능에 사용할 시간 초과 값 설정
-description: Acrobat Reader DC 익스텐션에서 사용할 수 있는 시간 초과 값을 설정하는 방법을 알아봅니다.
-seo-description: Acrobat Reader DC 익스텐션에서 사용할 수 있는 시간 초과 값을 설정하는 방법을 알아봅니다.
+title: Acrobat Reader DC 익스텐션에 사용할 시간 초과 값 설정
+seo-title: Acrobat Reader DC 익스텐션에 사용할 시간 초과 값 설정
+description: Acrobat Reader DC 익스텐션에서 사용할 수 있도록 시간 초과 값을 설정하는 방법을 알아봅니다.
+seo-description: Acrobat Reader DC 익스텐션에서 사용할 수 있도록 시간 초과 값을 설정하는 방법을 알아봅니다.
 uuid: d6d072a0-0a30-417a-98b1-df8b4ff8f911
 contentOwner: admin
 content-type: reference
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Acrobat Reader DC 확장 {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}에 사용할 시간 초과 값을 설정합니다.
+# Acrobat Reader DC 확장 {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}에 사용할 시간 초과 값 설정
 
-Acrobat Reader DC 확장 프로그램에서 많은 PDF 파일을 작업할 때 다음 제한 시간 값이 적절하게 설정되어야 작업이 시간 초과와 실패를 방지할 수 있습니다.
+Acrobat Reader DC Extension에서 많은 PDF 파일을 작업할 때 다음 시간 제한 값이 적절하게 설정되어 작업이 시간 초과와 실패를 방지할 수 있습니다.
 
 **문서 처리 시간 초과**
 
