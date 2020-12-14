@@ -19,19 +19,19 @@ ht-degree: 0%
 ---
 
 
-# AEM 6.4{#rdbms-support-in-aem}의 RDBMS 지원
+# AEM 6.4에서 RDBMS 지원{#rdbms-support-in-aem}
 
 ## 개요 {#overview}
 
-AEM에서 관계형 데이터베이스 지속성 지원은 문서 마이크로커널을 사용하여 구현됩니다. 문서 마이크로커널은 MongoDB 지속성을 구현하는 데에도 사용되는 기준입니다.
+AEM에서 관계형 데이터베이스 지속성 지원은 Document Microkernel을 사용하여 구현됩니다. 문서 마이크로커널은 MongoDB 지속성을 구현하는 데에도 사용되는 기본입니다.
 
-Mongo Java API를 기반으로 하는 Java API로 구성됩니다. BlobStore API의 구현도 제공됩니다. 기본적으로 블로브는 데이터베이스에 저장됩니다.
+Mongo Java API를 기반으로 하는 Java API로 구성됩니다. BlobStore API 구현도 제공됩니다. 기본적으로 블로브는 데이터베이스에 저장됩니다.
 
 구현 세부 정보에 대한 자세한 내용은 [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) 및 [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) 설명서를 참조하십시오.
 
 >[!NOTE]
 >
->**PostgreSQL 9.4**&#x200B;에 대한 지원도 제공되지만 데모 용도로만 제공됩니다. 프로덕션 환경에서는 사용할 수 없습니다.
+>**PostgreSQL 9.4**&#x200B;에 대한 지원도 제공되지만 데모 용도로만 제공됩니다. 제작 환경에서는 사용할 수 없습니다.
 
 ## 지원되는 데이터베이스 {#supported-databases}
 
@@ -43,18 +43,18 @@ AEM의 관계형 데이터베이스 지원 수준에 대한 자세한 내용은 
 
 이를 수행하려면 AEM으로 데이터 소스를 구성해야 합니다. 이 작업은 `org.apache.sling.datasource.DataSourceFactory.config` 파일을 통해 수행됩니다. 로컬 구성 내의 OSGi 번들로 각 데이터베이스의 JDBC 드라이버를 별도로 제공해야 합니다.
 
-JDBC 드라이버용 OSGi 번들을 만드는 단계는 Apache Sling 웹 사이트에서 이 [documentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle)을 참조하십시오.
+JDBC 드라이버용 OSGi 번들을 만드는 방법에 대한 자세한 내용은 Apache Sling 웹 사이트에서 이 [documentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle)을 참조하십시오.
 
-번들이 준비되면 아래 단계에 따라 AEM에 RDB 지속성을 구성합니다.
+번들이 적절히 준비되면 아래 단계를 수행하여 RDB 지속성을 사용하여 AEM을 구성합니다.
 
-1. 데이터베이스 데몬이 시작되었고 AEM에서 사용할 활성 데이터베이스가 있는지 확인하십시오.
+1. 데이터베이스 데몬이 시작되었고 AEM에 사용할 활성 데이터베이스가 있는지 확인합니다.
 1. AEM 6.3 jar를 설치 디렉토리로 복사합니다.
-1. 설치 디렉토리에 `crx-quickstart\install`이라는 폴더를 만듭니다.
-1. `crx-quickstart\install` 디렉터리에 다음 이름으로 구성 파일을 만들어 문서 노드 저장소를 구성합니다.
+1. 설치 디렉토리에 `crx-quickstart\install`라는 폴더를 만듭니다.
+1. `crx-quickstart\install` 디렉터리에 다음 이름의 구성 파일을 만들어 문서 노드 저장소를 구성합니다.
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
-1. `crx-quickstart\install` 폴더에 다음 이름으로 다른 구성 파일을 생성하여 데이터 소스 및 JDBC 매개변수를 구성합니다.
+1. `crx-quickstart\install` 폴더에 다음 이름으로 다른 구성 파일을 만들어 데이터 소스 및 JDBC 매개 변수를 구성합니다.
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
    >[!NOTE]
@@ -75,21 +75,21 @@ JDBC 드라이버용 OSGi 번들을 만드는 단계는 Apache Sling 웹 사이�
 
 ## 데이터 소스 구성 옵션 {#data-source-configuration-options}
 
-`org.apache.sling.datasource.DataSourceFactory-oak.config` OSGi 구성은 AEM 및 데이터베이스 지속성 계층 간의 통신에 필요한 매개 변수를 구성하는 데 사용됩니다.
+`org.apache.sling.datasource.DataSourceFactory-oak.config` OSGi 구성은 AEM 및 데이터베이스 지속성 레이어 간의 통신에 필요한 매개 변수를 구성하는 데 사용됩니다.
 
 다음 구성 옵션을 사용할 수 있습니다.
 
-* `datasource.name:` 데이터 원본 이름입니다. 기본값은 `oak`입니다.
+* `datasource.name:` 데이터 소스 이름입니다. 기본값은 `oak`입니다.
 
-* `url:` JDBC에 사용해야 하는 데이터베이스의 URL 문자열. 각 데이터베이스 유형에는 고유한 URL 문자열 형식이 있습니다. 자세한 내용은 아래 [URL 문자열 형식](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats)을 참조하십시오.
+* `url:` JDBC에 사용해야 하는 데이터베이스의 URL 문자열입니다. 각 데이터베이스 유형에는 고유한 URL 문자열 형식이 있습니다. 자세한 내용은 아래 [URL 문자열 형식](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats)을 참조하십시오.
 
-* `driverClassName:` JDBC 드라이버 클래스 이름입니다. 사용할 데이터베이스와 그 뒤에 연결되는 드라이버에 따라 다릅니다. 다음은 AEM에서 지원하는 모든 데이터베이스의 클래스 이름입니다.
+* `driverClassName:` JDBC 드라이버 클래스 이름입니다. 사용하려는 데이터베이스와 그 후 해당 데이터베이스에 연결하는 데 필요한 드라이버에 따라 다릅니다. 다음은 AEM에서 지원하는 모든 데이터베이스의 클래스 이름입니다.
 
    * `org.postgresql.Driver` for PostgreSQL;
-   * `com.ibm.db2.jcc.DB2Driver` for DB2;
-   * `oracle.jdbc.OracleDriver` oracle
+   * `com.ibm.db2.jcc.DB2Driver` DB2;
+   * `oracle.jdbc.OracleDriver` oracle용
    * `com.mysql.jdbc.Driver` for MySQL and MariaDB (실험적);
-   * c `om.microsoft.sqlserver.jdbc.SQLServerDriver`(시험적).
+   * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` for Microsoft SQL Server(시험적)
 
 * `username:` 데이터베이스가 실행되는 사용자 이름입니다.
 
@@ -100,14 +100,14 @@ JDBC 드라이버용 OSGi 번들을 만드는 단계는 Apache Sling 웹 사이�
 사용해야 하는 데이터베이스 유형에 따라 데이터 소스 구성에서 다른 URL 문자열 형식이 사용됩니다. 다음은 AEM에서 현재 지원하는 데이터베이스의 형식 목록입니다.
 
 * `jdbc:postgresql:databasename` for PostgreSQL;
-* `jdbc:db2://localhost:port/databasename` for DB2;
-* `jdbc:oracle:thin:localhost:port:SID` oracle
+* `jdbc:db2://localhost:port/databasename` DB2;
+* `jdbc:oracle:thin:localhost:port:SID` oracle용
 * `jdbc:mysql://localhost:3306/databasename` for MySQL and MariaDB (실험적);
-* `jdbc:sqlserver://localhost:1453;databaseName=name` for Microsoft SQL Server (실험적).
+* `jdbc:sqlserver://localhost:1453;databaseName=name` for Microsoft SQL Server(시험적).
 
 ## 알려진 제한 사항 {#known-limitations}
 
-단일 데이터베이스가 있는 여러 AEM 인스턴스의 동시 사용은 RDBMS 지속성에서 지원되지만 동시 설치는 지원되지 않습니다.
+단일 데이터베이스가 있는 여러 AEM 인스턴스를 동시에 사용하는 것은 RDBMS 지속성에서 지원되지만 동시 설치는 지원되지 않습니다.
 
-이 문제를 해결하려면 먼저 단일 멤버와 함께 설치를 실행하고 설치를 마친 후 다른 멤버를 추가해야 합니다.
+이 문제를 해결하려면 먼저 단일 구성원을 사용하여 설치를 실행하고 설치를 마친 후 다른 구성원을 추가하십시오.
 
