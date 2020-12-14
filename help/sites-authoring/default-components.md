@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -60,9 +60,9 @@ ht-degree: 92%
 
 * [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) - 페이지를 작성하는 데 필요한 코어 구성 요소는 컨텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
-* [커뮤니티](/help/communities/author-communities.md) - 구성 요소는 웹 사이트에 포럼 및 댓글과 같은 대화형 기능을 제공합니다. 이러한 구성 요소 중 대부분은 [커뮤니티 사이트](/help/communities/overview.md)가 생성될 때 포함됩니다.
+* [커뮤니티](/help/communities/author-communities.md) - 구성 요소는 웹 사이트에 포럼 및 댓글과 같은 대화형 기능을 제공합니다. 이러한 구성 요소 중 대다수는 [커뮤니티 사이트](/help/communities/overview.md)가 생성될 때 포함됩니다.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)  - AEM 내의 eCommerce 기능에도 다양한 구성 요소가 포함되어 있습니다.실제 사용은 사용되는 상거래 엔진에 따라 달라질 수 있습니다.
+* [eCommerce](/help/sites-administering/ecommerce.md) - AEM 내의 eCommerce 기능에도 다양한 구성 요소가 포함되어 있습니다. 사용되는 상거래 엔진에 따라 실제 사용 내용이 달라질 수 있습니다.
 
 ### 구성 요소 구성 {#configuring-components}
 
