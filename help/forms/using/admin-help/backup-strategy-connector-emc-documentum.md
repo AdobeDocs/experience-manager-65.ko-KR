@@ -1,8 +1,8 @@
 ---
 title: EMC Documentum 사용자를 위한 Connector 백업 전략
 seo-title: EMC Documentum 사용자를 위한 Connector 백업 전략
-description: EMC Documentum 사용자를 위한 Connector 백업 전략을 만드는 방법을 확인하십시오.
-seo-description: EMC Documentum 사용자를 위한 Connector 백업 전략을 만드는 방법을 확인하십시오.
+description: Connector for EMC Documentum 사용자를 위한 백업 전략을 만드는 방법을 확인하십시오.
+seo-description: Connector for EMC Documentum 사용자를 위한 백업 전략을 만드는 방법을 확인하십시오.
 uuid: 5d8a0476-5231-4e1d-96c4-ae3df68e09f0
 contentOwner: admin
 content-type: reference
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # EMC Documentum 사용자를 위한 Connector 백업 전략 {#backup-strategy-for-connector-for-emc-documentum-users}
 
-이 장에 나와 있는 지침과 함께 EMC Documentum용 Connector를 설치한 경우 백업 및 복구 전략에는 각 ECM 시스템이 설치되어 있는 컴퓨터를 백업(또는 복구)해야 합니다. (ECM Documentum 설명서를 참조하십시오.)
+이 장에 나와 있는 지침 외에 Connector for EMC Documentum이 설치되어 있는 경우 백업 및 복구 전략에는 각 ECM 시스템이 설치된 컴퓨터를 백업(또는 복구)해야 합니다. (ECM Documentum 설명서를 참조하십시오.)
 
 ECM 저장소를 사용하고 다음 작업을 수행하여 AEM 양식 환경을 백업합니다.
 
