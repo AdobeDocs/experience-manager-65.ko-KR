@@ -145,7 +145,7 @@ ht-degree: 89%
 
    계속하려면 **다음**&#x200B;을 클릭하십시오.
 
-1. 게시 관리 마법사의 다음 단계인 **범위**&#x200B;에서 하위 페이지 포함, 참조 포함 등과 같이 게시/게시 취소 범위를 정의할 수 있습니다.
+1. 게시 관리 마법사의 다음 단계인 **범위**&#x200B;에서 하위 페이지를 포함하거나 참조를 포함하는 것과 같이 게시/게시 취소 범위를 정의할 수 있습니다.
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -179,9 +179,9 @@ ht-degree: 89%
 
    ![pp-04](assets/pp-04.png)
 
-   **게시된 참조** 대화 상자에는 선택한 콘텐트에 대한 참조가 표시됩니다. 기본적으로 모든 항목이 선택되어 있고 게시/게시 취소되지만 선택을 해제하여 취소하면 작업에 포함되지 않습니다.
+   **게시된 참조** 대화 상자에는 선택한 콘텐츠에 대한 참조가 표시됩니다. 기본적으로 모든 항목이 선택되어 있고 게시/게시 취소되지만 선택을 해제하여 취소하면 작업에 포함되지 않습니다.
 
-   **Done**&#x200B;을 클릭하여 변경 내용을 저장하거나 **취소**&#x200B;를 클릭하여 선택을 취소하고 마법사로 돌아갑니다.
+   **완료**&#x200B;를 클릭하여 변경 내용을 저장하거나 **취소**&#x200B;를 클릭하여 선택 사항을 취소하고 마법사로 돌아갑니다.
 
    마법사로 돌아가면 **참조** 열이 업데이트되어 게시되거나 게시되지 않을 참조에 대한 선택을 반영합니다.
 
@@ -195,7 +195,7 @@ ht-degree: 89%
 
    >[!NOTE]
    >
-   >**워크플로우** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 자세한 내용은 게시 권한에 대한 [이전 참고 사항 및](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) [워크플로우에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)을 참조하십시오.
+   >**워크플로우** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 자세한 내용은 게시 권한에 관한 [이 페이지의 이전 참고 사항 및 [워크플로우 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)을 참조하십시오.](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd)
 
    참조는 트리거된 워크플로우 및 지정된 옵션별로 그룹화되어 다음 작업을 수행할 수 있습니다.
 
@@ -262,7 +262,7 @@ ht-degree: 89%
 
    **게시된 참조** 옵션을 통해 게시되는 참조 자료도 검토할 수 있습니다.
 
-1. [게시 관리 마법사를 ](#manage-publication) 정규식으로 계속 진행하여 트리 게시 또는 게시 취소를 완료합니다.
+1. [게시 관리 마법사를 정규식으로 ](#manage-publication) 진행하여 트리 게시 또는 게시 취소를 완료합니다.
 
 ## 게시 상태 확인 {#determining-publication-status}
 
