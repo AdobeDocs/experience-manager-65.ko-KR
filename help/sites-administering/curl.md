@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: 4eb5f1c4aa6631d2570279eb1d4bf17a928e3b9f
+source-git-commit: f8abdd7ed0212d5ee0602e2573c184203f22d4a4
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 관리자는 종종 모든 시스템 내에서 일반적인 작업을 자동화하거나 간소화해야 합니다. 예를 들어 AEM에서는 사용자 관리, 패키지 설치 및 OSGi 번들 관리가 일반적으로 수행해야 하는 작업입니다.
 
-AEM이 빌드되는 Sling 프레임워크의 RESTful 특성 때문에 대부분의 작업을 URL 호출로 줄일 수 있습니다. cURL은 이러한 URL 호출을 실행하는 데 사용할 수 있으며 AEM 관리자에게 유용한 도구가 될 수 있습니다.
+AEM이 빌드되는 Sling 프레임워크의 RESTful 특성 때문에 대부분의 작업은 URL 호출을 사용하여 수행할 수 있습니다. cURL은 이러한 URL 호출을 실행하는 데 사용할 수 있으며 AEM 관리자에게 유용한 도구가 될 수 있습니다.
 
 ## cURL {#what-is-curl}이란 무엇입니까?
 
@@ -206,7 +206,7 @@ curl -u <user>:<password> -Fmembership=contributor -Fmembership=testgroup http:/
 #### 사용자 {#delete-a-user} 삭제
 
 ```shell
-curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser 
+curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser
 ```
 
 #### {#delete-a-group} 그룹 삭제
