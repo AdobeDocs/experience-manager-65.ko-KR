@@ -52,7 +52,7 @@ ht-degree: 99%
 
 * 웹 사이트 콘솔의 **상태** 열은 페이지가 언제 워크플로우에 있는지를 나타냅니다.
 
-   ![workflstatus-1](assets/workflowstatus-1.png)
+   ![워크플로 상태-1](assets/workflowstatus-1.png)
 
 * 사용자나 사용자가 속한 그룹이 워크플로우의 일부인 작업 항목을 지정받으면 이 작업 항목이 사용자의 AEM 워크플로우 받은 편지함에 표시됩니다.
 
