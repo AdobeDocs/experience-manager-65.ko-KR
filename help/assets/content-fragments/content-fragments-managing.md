@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 관리
 seo-title: 컨텐츠 조각 관리
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
-seo-description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
+seo-description: 컨텐츠 조각은 자산으로 저장되므로 주로 자산 콘솔에서 관리됩니다.
 uuid: 675e1a6b-2583-488f-bbb4-210daed3e1b0
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -176,7 +176,7 @@ ht-degree: 99%
 
    >[!CAUTION]
    >
-   >컨텐츠 조각을 편집하려면 해당 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 필요합니다. [ 문제가 발생하면 시스템 관리자에게 문의하십시오.
+   >컨텐츠 조각을 편집하려면 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 필요합니다. 문제가 발생하면 시스템 관리자에게 문의하십시오.
 
    >[!NOTE]
    >
