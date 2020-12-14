@@ -49,6 +49,7 @@ ht-degree: 100%
 >* [프로젝트 - 작업 중](/help/sites-authoring/task-content.md)
 >* [워크플로우](/help/sites-authoring/workflows.md)
 >* [양식](/help/forms/home.md)
+
 >
 
 
@@ -267,7 +268,6 @@ AEM 알림 받은 편지함 열기
    * **고급**
 
       * **이름**
-
    >[!NOTE]
    >
    >자세한 내용은 [프로젝트 만들기](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project)를 참조하십시오.
