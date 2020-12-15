@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: 6693baecb1345c30385eb04caeb03960925f46c3
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 2%
+source-wordcount: '746'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +80,7 @@ MySQL Workbench는 스키마 및 초기 데이터를 설치하는 SQL 스크립�
 
 MySQL Workbench를 처음 실행하면, 다른 용도로 이미 사용 중인 경우를 제외하고, 어떠한 연결도 아직 표시되지 않습니다.
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![myqlconnection](assets/mysqlconnection.png)
 
 ### 새 연결 설정 {#new-connection-settings}
 
@@ -105,13 +105,13 @@ MySQL Workbench를 처음 실행하면, 다른 용도로 이미 사용 중인 �
 
 #### 새 커뮤니티 연결 {#new-communities-connection}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![community-connection](assets/community-connection.png)
 
 ## 데이터베이스 설정 {#database-setup}
 
 데이터베이스를 설치하려면 커뮤니티 연결을 엽니다.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![install-database](assets/install-database.png)
 
 ### SQL 스크립트 {#obtain-the-sql-script} 가져오기
 
@@ -124,9 +124,9 @@ SQL 스크립트는 AEM 저장소에서 가져옵니다.
 1. /libs/social/config/datastore/dsrp/schema 폴더를 선택합니다.
 1. 다운로드 `init-schema.sql`
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![database-schema-crxde](assets/database-schema-crxde.png)
 
-스키마를 다운로드하는 방법 중 하나는
+스키마를 다운로드하는 방법 중 하나는 다음과 같습니다.
 
 * sql 파일에 대해 `jcr:content` 노드를 선택합니다.
 * `jcr:data` 속성 값은 보기 링크입니다.
@@ -143,10 +143,10 @@ SQL 스크립트는 AEM 저장소에서 가져옵니다.
 
 MySQL Workbench에서
 
-* 파일 풀다운 메뉴에서
-* 다운로드한 `init_schema.sql`
+* 파일 풀다운 메뉴에서 **[!UICONTROL SQL 스크립트 열기]** 옵션을 선택합니다.
+* 다운로드한 `init_schema.sql` 스크립트 선택
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![select-sql-script](assets/select-sql-script.png)
 
 #### 2단계:SQL 스크립트 실행 {#step-execute-sql-script}
 
@@ -154,13 +154,13 @@ MySQL Workbench에서
 
 다음 이미지에서 `init_schema.sql` 파일을 실행할 준비가 되었습니다.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![execute-sql-script](assets/execute-sql-script.png)
 
 #### 새로 고침 {#refresh}
 
 스크립트가 실행되면 새 데이터베이스를 보려면 `Navigator`의 `SCHEMAS` 섹션을 새로 고쳐야 합니다. &#39;SCHEMAS&#39; 오른쪽에 새로 고침 아이콘을 사용합니다.
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![새로 고침-스키마](assets/refresh-schema.png)
 
 ## JDBC 연결 구성 {#configure-jdbc-connection}
 
@@ -179,7 +179,7 @@ AEM과 다른 서버에서 MySQL을 실행하는 경우 JDBC 커넥터의 &#39;l
 * `Day Commons JDBC Connections Pool` 찾기
 * `+` 아이콘을 선택하여 새 연결 구성을 만듭니다.
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 
 * 다음 값을 입력합니다.
 
