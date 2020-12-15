@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 11%
+ht-degree: 9%
 
 ---
 
@@ -44,15 +44,15 @@ ht-degree: 11%
 
 커뮤니티 사이트의 페이지에 처음 배치하면 구성 요소가 표시되는 방식입니다.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![리더보드](assets/leaderboard.png)
 
 ### 리드 보드 구성 {#configuring-leaderboard}
 
 액세스할 배치된 `Leaderboard` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![configure-leaderboard](assets/configure-leaderboard.png)
 
 #### 설정 탭 {#settings-tab}
 
@@ -120,7 +120,7 @@ ht-degree: 11%
    * 배지 규칙 = `/libs/settings/community/badging/rules//reference-badging`
    * 표시 제한 = `10`
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![참가자 리더보드](assets/participants-leaderboard.png)
 
 ### 예:전문가 리더보드 {#example-experts-leaderboard}
 
@@ -143,7 +143,7 @@ ht-degree: 11%
    * 배지 규칙 = `/libs/settings/community/badging/rules/adv-forums-badging`
    * 표시 제한 = `10`
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![전문가 리더보드](assets/experts-leaderboard.png)
 
 ### 추가 정보 {#additional-information}
 
