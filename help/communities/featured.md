@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '349'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -51,15 +51,15 @@ ht-degree: 6%
 
 [필수 클라이언트측 라이브러리](essentials-featured.md#essentials-for-client-side)가 포함될 때 `Featured Content` 구성 요소가 표시되는 방식입니다.
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![기능 컨텐츠](assets/featuredcontent.png)
 
 ## 주요 컨텐츠 구성 {#configuring-featured-content}
 
 액세스할 배치된 `Featured Content` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![featured content1](assets/featuredcontent1.png)
 
 ### 설정 탭 {#settings-tab}
 
@@ -83,13 +83,13 @@ ht-degree: 6%
 
 중재자가 게시한 컨텐츠를 보면, 새 `Feature` 플래그를 포함하는 컨텍스트 내 중재 플래그에 액세스할 수 있습니다.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![site-visitor-experience](assets/site-visitor-experience.png)
 
 피쳐로 플래그가 지정되면 모션 플래그는 `Unfeature`이 됩니다.
 
 이제 `Featured Content` 구성 요소가 포함된 페이지에 이 게시물이 포함됩니다.
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![site-visitor-experience1](assets/site-visitor-experience1.png)
 
 `Read More` 은 실제 게시물에 대한 링크입니다.
 
