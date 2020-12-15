@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 871c42ee000eb250c1c6159d9a0c752e8ed4d7b8
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 9%
@@ -49,13 +49,13 @@ ht-degree: 9%
 
 [필수 클라이언트측 라이브러리](/help/communities/essentials-forum.md#essentials-for-client-side)가 포함될 때 `Forum` 구성 요소가 표시되는 방식입니다.
 
-![chlimage_1-60](assets/chlimage_1-60.png)
+![forum-component](assets/forum-component.png)
 
 ### 포럼 {#configuring-a-forum} 구성
 
 액세스할 배치된 `Forum` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-61](assets/chlimage_1-61.png)
+![configure-new](assets/configure-new.png)
 
 ![forum-config](assets/forum-config.png)
 
