@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
+source-git-commit: 0e1ac02879ff09ab0e78d043450ef7114c868417
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 1%
@@ -222,7 +222,7 @@ AEM Communities에서 공용 저장소는 사용자가 생성한 콘텐츠(UGC)�
 
 따라서 **모든 보조 게시 인스턴스**&#x200B;의 구성을 편집하여 **`Primary Publisher`** 확인란의 선택을 취소해야 합니다.
 
-![chlimage_1-411](assets/chlimage_1-411.png)
+![기본 게시자](assets/primary-publisher.png)
 
 게시 팜에 있는 다른(보조) 게시 인스턴스의 경우:
 
@@ -266,11 +266,11 @@ AEM Communities에서 공용 저장소는 사용자가 생성한 콘텐츠(UGC)�
 
 #### 기본 에이전트(게시) {#default-agent-publish}
 
-![chlimage_1-412](assets/chlimage_1-412.png)
+![default-agent-publish](assets/default-agent-publish.png)
 
 #### 역방향 복제 에이전트(반대로 게시) {#reverse-replication-agent-publish-reverse}
 
-![chlimage_1-413](assets/chlimage_1-413.png)
+![역방향 복제 에이전트](assets/reverse-replication-agent.png)
 
 ### 작성자 {#tunnel-service-on-author}의 터널 서비스
 
@@ -293,7 +293,7 @@ AEM Communities에서 공용 저장소는 사용자가 생성한 콘텐츠(UGC)�
 * **enable** 상자를 선택합니다.
 * **저장**&#x200B;을 선택합니다
 
-   ![chlimage_1-414](assets/chlimage_1-414.png)
+   ![터널 서비스](assets/tunnel-service.png)
 
 ### 암호화 키 {#replicate-the-crypto-key} 복제
 
@@ -353,7 +353,7 @@ AEM 6.2 및 이전 버전의 경우와 같이 저장소에 주요 자료를 저�
 
 * [Granite Crypto 번들 새로 고침](#refresh-the-granite-crypto-bundle)
 
-   ![chlimage_1-415](assets/chlimage_1-415.png)
+   ![복제 저장소](assets/replicare-repository.png)
 
 #### Granite Crypto 번들 {#refresh-the-granite-crypto-bundle} 새로 고침
 
@@ -364,7 +364,7 @@ AEM 6.2 및 이전 버전의 경우와 같이 저장소에 주요 자료를 저�
 * `Adobe Granite Crypto Support` 번들(com.adobe.granite.crypto)을 찾습니다.
 * **새로 고침** 선택
 
-   ![chlimage_1-416](assets/chlimage_1-416.png)
+   ![granite crypto](assets/granite-crypto.png)
 
 * 잠시 후 **성공** 대화 상자가 나타나야 합니다.
    `Operation completed successfully.`
