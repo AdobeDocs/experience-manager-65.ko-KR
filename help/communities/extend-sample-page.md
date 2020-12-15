@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+source-git-commit: d38395b8f845686492a26329bb732a41f79c85c4
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 주석을 렌더링하고 제대로 작동하는 데 필요한 3개의 클라이언트 라이브러리를 확인합니다. 확장 댓글이 참조되고 [확장된 댓글 클라이언트 라이브러리](/help/communities/extend-create-components.md#create-a-client-library-folder)( `apps.custom.comments`)가 참조되는 곳에 포함되어야 합니다.
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![comments-component1](assets/comments-component1.png)
 
 ### {#add-custom-comments-to-a-page} 페이지에 사용자 지정 주석 추가
 
@@ -45,17 +45,17 @@ ht-degree: 1%
 
 #### 샘플 페이지 {#comments-clientlibs-on-sample-page}의 댓글 클라이언트
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![comments-clientlibs-crxde](assets/comments-clientlibs-crxde.png)
 
 #### 작성자:샘플 페이지 {#author-alt-comment-on-sample-page}의 대체 주석
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![alt-comment](assets/alt-comment.png)
 
 #### 작성자:샘플 페이지 주석 노드 {#author-sample-page-comments-node}
 
 `/content/sites/sample/en/jcr:content/content/primary/comments`에서 샘플 페이지에 대한 주석 노드의 속성을 보면 CRXDE에서 resourceType을 확인할 수 있습니다.
 
-![chlimage_1-50](assets/chlimage_1-50.png)
+![verify-comment-crxde](assets/verify-comment-crxde.png)
 
 #### 게시 샘플 페이지 {#publish-sample-page}
 
@@ -67,8 +67,8 @@ ht-degree: 1%
 
 aaron.mcdonald@mailinator.com댓글을 게시합니다.
 
-![chlimage_1-51](assets/chlimage_1-51.png)
+![publish-alt-comment](assets/publish-alt-comment.png)
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![publish-alt-comment1](assets/publish-alt-comment1.png)
 
 확장 구성 요소가 기본 모양으로 올바르게 작동하므로 이제 모양을 수정할 때가 되었습니다.
