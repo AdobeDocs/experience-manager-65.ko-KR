@@ -2,9 +2,9 @@
 title: Live Copy 만들기 및 동기화
 description: Live Copy를 만들고 동기화하는 방법을 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
+source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
 workflow-type: tm+mt
-source-wordcount: '4115'
+source-wordcount: '4114'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 2%
 1. [도구 메뉴](/help/sites-authoring/basic-handling.md#global-navigation) 로  **** 이동한 다음 사이트 메뉴를  **** 선택합니다.
 1. **Blueprint**&#x200B;을 선택하여 **블루프린트 구성** 콘솔을 엽니다.
 
-   ![chlimage_1-209](assets/chlimage_1-209.png)
+   ![chlimage_1-209](assets/blueprint-configurations.png)
 
 1. **만들기**&#x200B;를 선택합니다.
 1. 블루프린트 템플릿을 선택한 다음 **다음**&#x200B;을 선택합니다.
@@ -66,14 +66,12 @@ ht-degree: 2%
 1. [도구 메뉴](/help/sites-authoring/basic-handling.md#global-navigation) 로  **** 이동한 다음 사이트 메뉴를  **** 선택합니다.
 1. **Blueprint**&#x200B;을 선택하여 **블루프린트 구성** 콘솔을 엽니다.
 
-   ![chlimage_1-210](assets/chlimage_1-210.png)
+   ![chlimage_1-210](assets/blueprint-configurations.png)
 
 1. 필요한 블루프린트 구성을 선택합니다. 해당 작업은 도구 모음에서 사용할 수 있게 됩니다.
 
    * **속성**;이 구성 속성을 보고 편집할 수 있습니다.
    * **삭제**
-
-   ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Live Copy 생성 {#creating-a-live-copy}
 
@@ -154,7 +152,7 @@ Live Copy에서 일부 언어 분기 또는 장을 생략하면 나중에 추가
 1. **사이트** 콘솔에서 **만들기**&#x200B;를 선택하고 드롭다운 선택기에서 **사이트**&#x200B;를 선택합니다.
 1. Live Copy의 소스로 사용할 블루프린트 구성을 선택하고 **다음**&#x200B;으로 진행합니다.
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![chlimage_1-216](assets/blueprint-configuration-select.png)
 
 1. Live Copy에 사용할 블루프린트 사이트의 언어를 지정하려면 **초기 언어** 선택기를 사용합니다.
 
