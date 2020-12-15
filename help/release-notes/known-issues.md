@@ -2,10 +2,10 @@
 title: 알려진 문제
 description: Adobe Experience Manager 6.5의 알려진 문제에 관한 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: f72101dadaa8d5d12f2f9a636548b18386b79b0a
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 81%
+source-wordcount: '593'
+ht-degree: 78%
 
 ---
 
@@ -80,3 +80,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    이 속성으로 런타임 폴더 아래의 클라이언트 라이브러리가 프록시에 액세스할 수 있습니다. (CQ-4268679)
 
 * AEM Forms가 시작되면 `SAX Security Manager could not be setup`라는 경고가 나타납니다.
+* Adobe Acrobat Reader 버전 20.10.00을 실행하는 Apple iOS 또는 iPadOS에서 AEM Forms Document Security로 보호된 PDF를 열 때.
