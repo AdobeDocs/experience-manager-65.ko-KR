@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 7f1ae2d4ab361bc039c1098daa0ef944ec9df639
 workflow-type: tm+mt
-source-wordcount: '6722'
+source-wordcount: '6648'
 ht-degree: 2%
 
 ---
 
 
-# 성능 최적화{#performance-optimization}
+# 성능 최적화 {#performance-optimization}
 
 >[!NOTE]
 >
@@ -43,15 +43,12 @@ ht-degree: 2%
 >[!NOTE]
 >
 >* 성능 최적화를 구성한 후 [Hard Day](/help/sites-developing/tough-day.md)의 절차를 따라 무거운 부하의 환경을 테스트합니다.
->* [성능 조정 팁](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)도 참조하십시오.
-
->
-
+>* [성능 조정 팁도 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
 
 ## 성능 최적화 방법론 {#performance-optimization-methodology}
 
-CQ 프로젝트에 대한 성능 최적화 방법론은 처음부터 성능 문제를 방지하기 위해 따를 수 있는 매우 간단한 5가지 규칙으로 요약할 수 있습니다.
+AEM 프로젝트에 대한 성능 최적화 방법론은 처음부터 성능 문제를 방지하기 위해 따를 수 있는 매우 간단한 5가지 규칙으로 요약할 수 있습니다.
 
 1. [최적화 계획](#planning-for-optimization)
 1. [현실 시뮬레이션](#simulate-reality)
@@ -117,8 +114,8 @@ CQ 프로젝트에 대한 성능 최적화 방법론은 처음부터 성능 문�
 
 * 게시 시 측정됨(제작 환경과 관련된 오버헤드는 없음)
 * 서버에서 측정됨(네트워크 오버헤드 없음)
-* 캐시되지 않음(CQ 출력 캐시 없음, Dispatcher 캐시 없음)
-* 의존 관계가 많은 복잡한 항목(HTML, JS, PDF, ...)에만 해당됩니다.
+* 캐시되지 않음(AEM 출력 캐시 없음, Dispatcher 캐시 없음)
+* 종속성이 많은 복잡한 항목만(HTML, JS, PDF, ...)
 * 시스템에 다른 로드 없음
 
 성능 문제에 자주 영향을 주는 문제가 있습니다. 이러한 주요 회전은 다음과 같습니다.
@@ -132,9 +129,9 @@ JVM 및 OS 레벨 조정은 일반적으로 성능이 크게 향상되지 않으
 
 평소의 성능 최적화 운동 중 가장 친한 친구는 다음과 같습니다.
 
-* `request.log`
+*  `request.log`
 * 구성 요소 기반 시간 설정
-* 마지막으로 java 프로파일러가 아닙니다.
+* 마지막으로 자바 프로파일러(Java profiler)가 아닙니다.
 
 ### 디지털 자산을 로드하고 편집할 때의 성능 {#performance-when-loading-and-editing-digital-assets}
 
@@ -151,7 +148,7 @@ JVM 및 OS 레벨 조정은 일반적으로 성능이 크게 향상되지 않으
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-* 편집이 이루어지는 기간(일반적으로 작업일의 길이와 국제 작업의 경우 더 많음).
+* 편집할 기간(일반적으로 작업일의 길이, 국제 작업의 경우 더 많음).
 * 업로드된 이미지의 평균 크기(및 이미지당 생성된 표현물의 크기)(MB)입니다.
 * 평균 데이터 전송률을 결정합니다.
 
@@ -161,7 +158,7 @@ JVM 및 OS 레벨 조정은 일반적으로 성능이 크게 향상되지 않으
 
 ## 성능 모니터링 {#performance-monitoring}
 
-성능(또는 그 부족)은 사용자가 가장 먼저 인식하는 것 중 하나이며, 사용자 인터페이스가 있는 애플리케이션과 마찬가지로 성능이 중요한 요소입니다. CQ 설치 성능을 최적화하려면 인스턴스와 해당 동작의 다양한 특성을 모니터링해야 합니다.
+성능(또는 그 부족)은 사용자가 가장 먼저 인식하는 것 중 하나이며, 사용자 인터페이스가 있는 애플리케이션과 마찬가지로 성능이 중요한 요소입니다. AEM 설치 성능을 최적화하려면 인스턴스와 해당 비헤이비어의 다양한 속성을 모니터링해야 합니다.
 
 성능 모니터링 수행 방법에 대한 자세한 내용은 [성능 모니터링](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)을 참조하십시오.
 
@@ -169,15 +166,14 @@ JVM 및 OS 레벨 조정은 일반적으로 성능이 크게 향상되지 않으
 
 기본 시작점은 시스템이 정상일 때 잘 알고 있다는 것입니다. 환경이 제대로 작동할 때 어떻게 보이고 동작하는지 모르면 성능이 저하될 때 이 문제를 찾기는 어려울 수 있다. 즉, 시스템이 매끄럽게 실행될 때 시스템을 조사하면서 성능 정보 수집이 진행 중인 작업인지 확인해야 합니다. 그러면 성능이 저하될 경우 비교를 위한 기반을 제공할 수 있습니다.
 
-다음 다이어그램은 CQ 컨텐츠 요청에 사용할 수 있는 경로와, 성능에 영향을 줄 수 있는 여러 요소의 수를 보여 줍니다.
+다음 다이어그램은 AEM 컨텐츠 요청에 사용할 수 있는 경로와 성능에 영향을 줄 수 있는 여러 요소의 수를 보여 줍니다.
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-성능은 볼륨과 용량 간의 균형 또한 제공합니다.
+성능은 볼륨과 용량 간의 균형 측면이기도 합니다.
 
-**볼륨** 시스템에서 처리 및 배달되는 출력물의 양입니다.
-
-**용량** 볼륨을 전달하는 시스템의 기능입니다.
+* **볼륨**  - 시스템에서 처리 및 전달되는 출력물입니다.
+* **용량**  - 볼륨을 전달하는 시스템의 능력입니다.
 
 이 도표는 웹 체인 전체의 다양한 위치에 나타낼 수 있습니다.
 
@@ -206,7 +202,7 @@ JVM 및 OS 레벨 조정은 일반적으로 성능이 크게 향상되지 않으
 
 ## 성능 구성 {#configuring-for-performance}
 
-CQ(및/또는 기본 CRX)의 특정 측면을 성능을 최적화하기 위해 구성할 수 있습니다. 다음은 가능성과 제안입니다. 변경하기 전에 해당 기능을 사용하는지, 아니면 어떻게 사용하는지 확인해야 합니다.
+AEM(및/또는 기본 저장소)의 특정 측면을 성능 최적화를 위해 구성할 수 있습니다. 다음은 가능성과 제안입니다. 변경하기 전에 해당 기능을 사용하는지, 아니면 어떻게 사용하는지 확인해야 합니다.
 
 >[!NOTE]
 >
@@ -223,26 +219,28 @@ AEM 6.0부터 Adobe Experience Manager은 Oak 기반 저장소 아키텍처를 �
 
 ### 동시 워크플로 처리 {#concurrent-workflow-processing}
 
-동시에 실행 중인 워크플로우 프로세스의 수를 제한하여 성능을 향상시킵니다. 기본적으로 워크플로우 엔진은 Java VM에 사용할 수 있는 프로세서만큼 여러 개의 워크플로우를 동시에 처리합니다. 작업 과정 단계에 많은 양의 처리 리소스(RAM 또는 CPU)가 필요한 경우 이러한 워크플로우 중 여러 가지를 동시에 실행하면 사용 가능한 서버 리소스에 높은 수요가 발생할 수 있습니다.
+동시에 실행 중인 워크플로우 프로세스의 수를 제한하여 성능을 향상시킵니다. 기본적으로 워크플로우 엔진은 Java VM에 사용할 수 있는 프로세서만큼 여러 개의 워크플로우를 동시에 처리합니다. 작업 과정 단계에서 많은 양의 처리 리소스(RAM 또는 CPU)가 필요할 경우 이러한 워크플로우 중 여러 가지를 동시에 실행하면 사용 가능한 서버 리소스에 대한 높은 수요가 발생할 수 있습니다.
 
 예를 들어 이미지(또는 일반적으로 DAM 자산)가 업로드되면 워크플로우에서 이미지를 DAM으로 자동으로 가져옵니다. 이미지는 고해상도로 종종 처리되므로 수백 MB의 힙을 손쉽게 사용할 수 있습니다. 이러한 이미지를 동시에 처리하면 메모리 하위 시스템 및 가비지 수집기에 높은 로드가 발생합니다.
 
 워크플로 엔진은 작업 항목 처리를 처리하고 예약하기 위해 Apache Sling 작업 대기열을 사용합니다. 다음 작업 큐 서비스는 처리 워크플로 작업을 위해 Apache Sling 작업 큐 구성 서비스 팩터리에서 기본적으로 만들어졌습니다.
 
 * Granite Workflow Queue:DAM 자산을 처리하는 것과 같은 대부분의 워크플로우 단계는 Granite Workflow Queue 서비스를 사용합니다.
-* Granite Workflow 외부 프로세스 작업 큐:이 서비스는 일반적으로 외부 시스템에 연결하고 결과를 폴링하는 데 사용되는 특별한 외부 워크플로우 단계에 사용됩니다. 예를 들어 InDesign 미디어 추출 프로세스 단계는 외부 프로세스로 구현됩니다. 워크플로 엔진은 폴링을 처리하기 위해 외부 큐를 사용합니다. ([com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html) 참조)
+* Granite Workflow 외부 프로세스 작업 큐:이 서비스는 일반적으로 외부 시스템에 연결하고 결과를 폴링하는 데 사용되는 특수 외부 워크플로우 단계에 사용됩니다. 예를 들어 InDesign 미디어 추출 프로세스 단계는 외부 프로세스로 구현됩니다. 워크플로 엔진은 폴링을 처리하기 위해 외부 큐를 사용합니다. ([com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html) 참조)
 
 동시에 실행 중인 워크플로 프로세스의 최대 수를 제한하도록 이 서비스를 구성합니다.
 
-**참고:** 특정 워크플로우 모델에 대한 작업 큐를 만들지 않으면 이러한 작업 대기열을 구성하면 모든 워크플로우에 영향을 줍니다(아래 [의 특정 워크플로우 모델에 대한 대기열 ](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) 구성 참조).
+>[!NOTE]
+>
+>특정 워크플로우 모델에 대한 작업 큐를 만들지 않으면 이러한 작업 대기열을 구성하면 모든 워크플로우에 영향을 줍니다(아래 [특정 워크플로우 모델에 대한 대기열 구성](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) 참조).
 
-**저장소의 구성**
+#### {#configuration-in-the-repo} 저장소의 구성
 
 sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)을 사용하여 서비스 [를 구성하는 경우 기존 서비스의 PID를 찾아야 합니다. 예:org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
 
-queue.maxparallel이라는 속성을 구성해야 합니다.
+`queue.maxparallel` 속성을 구성해야 합니다.
 
-**웹 콘솔의 구성**
+#### 웹 콘솔 {#configuration-in-the-web-console}의 구성
 
 웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)을 사용하여 이러한 서비스 [를 구성하려면 Apache Sling 작업 큐 구성 서비스 팩토리 아래에서 기존 구성 항목을 찾습니다.
 
@@ -254,30 +252,30 @@ queue.maxparallel이라는 속성을 구성해야 합니다.
 
 워크플로우 모델이 실행되면 특정 주제에 대한 Sling 작업이 만들어집니다. 기본적으로 이 항목은 일반 Granite Workflow Queue 또는 Granite Workflow 외부 프로세스 작업 큐에 대해 구성된 항목과 일치합니다.
 
-* com/adobe/granite/workflow/job&amp;ast;
-* com/adobe/granite/workflow/external/job&amp;ast;
+* `com/adobe/granite/workflow/job*`
+* `com/adobe/granite/workflow/external/job*`
 
-워크플로우 모델이 생성하는 실제 작업 항목에는 모델별 접미사를 포함합니다. 예를 들어 [!UICONTROL DAM 자산 업데이트] 워크플로우 모델은 다음 항목으로 작업을 생성합니다.
+워크플로우 모델이 생성하는 실제 작업 항목에는 모델별 접미사 사용이 포함됩니다. 예를 들어 **DAM 자산 업데이트** 워크플로우 모델은 다음 항목으로 작업을 생성합니다.
 
-com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
+`com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
 
 따라서 워크플로우 모델의 작업 항목과 일치하는 항목에 대한 작업 큐를 만들 수 있습니다. 대기열의 성능 관련 속성을 구성하면 대기열 항목과 일치하는 작업을 생성하는 워크플로우 모델에만 영향을 줍니다.
 
-다음 절차에서는 [!UICONTROL DAM 자산 업데이트] 작업 과정을 예로 사용하여 워크플로우에 대한 작업 큐를 만듭니다.
+다음 절차에서는 **DAM 자산 업데이트** 작업 과정을 예로 사용하여 워크플로우에 대한 작업 큐를 만듭니다.
 
-1. 주제 통계가 생성되도록 작업 대기열을 만들 워크플로우 모델을 실행합니다. 예를 들어 이미지를 자산에 추가하여 [!UICONTROL DAM 자산 업데이트] 작업 과정을 실행합니다.
-1. Sling 작업 콘솔을 엽니다. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
+1. 주제 통계가 생성되도록 작업 대기열을 만들 워크플로우 모델을 실행합니다. 예를 들어 이미지를 자산에 추가하여 **DAM 자산 업데이트** 작업 과정을 실행합니다.
+1. Sling 작업 콘솔(`https://<host>:<port>/system/console/slingevent`)을 엽니다.
 1. 콘솔에서 워크플로우 관련 항목을 알아봅니다. DAM Update Asset의 경우 다음 항목을 찾을 수 있습니다.
 
-   * com/adobe/granite/workflow/external/job/etc/workflow/models/dam/update_asset/jcr_content/model
-   * com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
-   * com/adobe/granite/workflow/job/etc/workflow/models/dam-xmp-writeback/jcr_content/model
+   * `com/adobe/granite/workflow/external/job/etc/workflow/models/dam/update_asset/jcr_content/model`
+   * `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
+   * `com/adobe/granite/workflow/job/etc/workflow/models/dam-xmp-writeback/jcr_content/model`
 
 1. 각 항목에 대해 하나의 작업 큐를 만듭니다. 작업 큐를 만들려면 Apache Sling 작업 큐 팩토리 서비스에 대한 팩토리 구성을 만듭니다.
 
    팩토리 구성은 작업 과정 작업의 항목과 일치한다는 점을 제외하고 [동시 워크플로 처리](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)에 설명된 [화강암 워크플로 큐]와 유사합니다.
 
-### CQ5 DAM 자산 동기화 서비스 {#cq-dam-asset-synchronization-service}
+### AEM DAM 자산 동기화 서비스 {#cq-dam-asset-synchronization-service}
 
 `AssetSynchronizationService`은 마운트된 저장소(LiveLink, Documentum 등)의 자산을 동기화하는 데 사용됩니다. 기본적으로 300초(5분)마다 정기적으로 확인되므로 마운트된 저장소를 사용하지 않으면 이 서비스를 비활성화할 수 있습니다.
 
@@ -292,16 +290,16 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 추가 고려 사항은 다음과 같습니다.
 
-* 게시 시 &quot;진행 중인 작업&quot;과 &quot;최종&quot;의 구분
+* 게시 시 &quot;진행 중인 작업&quot;과 &quot;최종&quot; 구분
 * 작성자의 내부 사용자를 외부 방문자/게시물의 사용자와 구분(예: 에이전트, 보도 담당자, 고객, 학생 등)
 
 ## 품질 보증 우수 사례 {#best-practices-for-quality-assurance}
 
 게시 환경에 가장 중요한 것은 성능입니다. 따라서 프로젝트를 구현하는 동안 게시 환경에 대해 수행하는 성능 테스트를 신중하게 계획하고 분석해야 합니다.
 
-이 섹션에서는 *publish* 환경에서 성능 테스트를 위해 테스트 개념을 정의하는 것과 관련된 문제에 대한 표준화된 개요를 제공하기 위해 마련되었습니다. 이는 주로 QA 엔지니어, 프로젝트 관리자 및 시스템 관리자에게 도움이 됩니다.
+이 섹션에서는 *publish* 환경에서 성능 테스트를 위한 테스트 개념을 정의하는 것과 관련된 문제에 대한 표준화된 개요를 제공하기 위해 마련되었습니다. 이는 주로 QA 엔지니어, 프로젝트 관리자 및 시스템 관리자에게 도움이 됩니다.
 
-다음은 *게시* 환경에서 CQ 응용 프로그램의 성능 테스트에 대한 표준 접근 방식을 설명합니다. 여기에는 다음 5단계가 포함됩니다.
+다음은 *게시* 환경에서 AEM 응용 프로그램의 성능 테스트에 대한 표준화된 접근 방식을 설명합니다. 여기에는 다음 5단계가 포함됩니다.
 
 * [지식 확인](#verification-of-knowledge)
 * [범위 정의](#scope-definition)
@@ -336,8 +334,8 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 게시 시 성능 테스트의 범위에 초점을 맞추려면 다음을 정의하는 것이 좋습니다.
 
-* 가장 중요한 비즈니스 활용 사례
-* 가장 중요한 기술 활용 사례
+* 가장 중요한 비즈니스 사용 사례
+* 가장 중요한 기술 사용 사례
 
 사용 사례는 사용자별로 다르지만 관리하기 쉬운 수(예: 5~10 사이)로 제한되어야 합니다.
 
@@ -362,14 +360,14 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 다음 원칙을 기반으로 합니다.
 
-**구성 요소 중단점**
+#### 구성 요소 중단점 {#component-breakpoints}
 
 * 각 구성 요소에는 성능과 관련된 특정 중단점이 있습니다. 즉, 특정 지점에 도달할 때까지 구성 요소의 성능이 향상될 수 있으며 그 후 성능이 빠르게 저하됩니다.
 * 응용 프로그램의 전체 개요를 보려면 먼저 구성 요소를 확인하여 각 중단점에 도달하는 시기를 결정해야 합니다.
 * 중단점을 찾기 위해 일정 기간 동안 로드를 증가시키는 로드 테스트를 수행할 수 있습니다. 이 로드 및 구성 요소의 응답을 모니터링하면 구성 요소의 중단점에 도달할 때 특정 성능 동작이 발생합니다. 이 포인트는 동시 사용자 수(구성 요소가 이 KPI에 민감한 경우) 와 함께 초당 동시 트랜잭션 수로 적격할 수 있습니다.
 * 이러한 정보는 개선 사항의 벤치마크 역할을 할 수 있으며, 사용 중인 측정값의 효율성을 표시하고, 테스트 시나리오를 정의하는 데 도움이 됩니다.
 
-**거래**
+#### 트랜잭션 {#transactions}
 
 * 트랜잭션 용어는 페이지 자체 및 모든 후속 호출을 포함하여 전체 웹 페이지의 요청을 나타내는 데 사용됩니다.페이지 요청, 모든 AJAX 호출, 이미지 및 기타 개체 등&#x200B;**드릴다운 요청**
 * 각 요청을 완전히 분석하기 위해 호출 스택의 각 요소를 표시한 다음 각 요청에 대한 평균 처리 시간을 합산할 수 있습니다.
@@ -388,7 +386,7 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 두 경우 모두 미리 정의된 사용자 수가 시스템을 사용하는 경우 예상되는 초당 트랜잭션 수를 정의할 수 있습니다.
 
-| 구성 요소 | 테스트 유형 | #사용자 | Tx/초(예상) | Tx/초(테스트됨) | 설명 |
+| 구성 요소 | 테스트 유형 | 아니오. 사용자 수 | Tx/초(예상) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 홈 페이지 단일 사용자 | 평균 | 1 | 1 |  |  |
 |  | 피크 | 1 | 3 |  |  |
@@ -399,7 +397,7 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 구성 요소를 조합하여 테스트하면 애플리케이션 비헤이비어가 더 자세히 반영됩니다. 다시 평균과 최고점 조건을 테스트해야 합니다.
 
-| 시나리오 | 구성 요소 | #사용자 | Tx/초(예상) | Tx/초(테스트됨) | 설명 |
+| 시나리오 | 구성 요소 | 아니오. 사용자 수 | Tx/초(예상) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 혼합 평균 | 홈 페이지 | 10 | 1 |  |  |
 |  | 검색 | 10 | 1 |  |  |
@@ -416,7 +414,7 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 웹 사이트를 제공한 후 처음 며칠 동안 관심 수준이 높아지기를 예상할 수 있습니다. 이것은 테스트한 최대 값보다 더 클 수 있습니다. 시스템이 이 상황에 맞게 지원할 수 있도록 Go Live 시나리오를 테스트하는 것이 좋습니다.
 
-| 시나리오 | 테스트 유형 | #사용자 | Tx/초(예상) | Tx/초(테스트됨) | 설명 |
+| 시나리오 | 테스트 유형 | 아니오. 사용자 수 | Tx/초(예상) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 라이브 피크 | 홈 페이지 | 200 | 20년 |  |  |
 |  | 검색 | 100년 | 10 |  |  |
@@ -429,11 +427,11 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 또한 시스템이 정확하고 적절하게 반응하도록 오류 시나리오를 테스트해야 합니다. 오류 자체를 처리하는 방법뿐만 아니라 성능에 미치는 영향도 있습니다. 예:
 
 * 사용자가 검색 상자에 잘못된 검색어를 입력하려고 하면 어떻게 됩니까?
-* 검색어가 너무 일반적이어서 너무 많은 수의 결과를 반환하는 경우 발생하는 사항
+* 검색어가 너무 일반적이어서 너무 많은 수의 결과를 반환하는 경우
 
 이러한 테스트를 고안할 때, 모든 시나리오가 정기적으로 발생하는 것은 아니라는 것을 기억해야 한다. 하지만, 그들이 전체 시스템에 미치는 영향은 중요하다.
 
-| 오류 시나리오 | 오류 유형 | #사용자 | Tx/초(예상) | Tx/초(테스트됨) | 설명 |
+| 오류 시나리오 | 오류 유형 | 아니오. 사용자 수 | Tx/초(예상) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 검색 구성 요소 오버로드 | 전역 와일드카드 검색(별표) | 10 | 1 |  | 승_only &amp;ast;&amp;ast;&amp;ast;검색됩니다. |
 |  | 중지 단어 | 20년 | 2 |  | 중지 단어 검색 |
@@ -444,7 +442,7 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 특정 문제는 지속적으로 시스템이 실행된 후에만 발생합니다.그것은 시간 혹은 심지어 날들이다. 지구력 시험은 필요한 기간 동안 일정한 평균 부하를 테스트하는 데 사용됩니다. 그런 다음 성능 저하를 분석할 수 있습니다.
 
-| 시나리오 | 테스트 유형 | #사용자 | Tx/초(예상) | Tx/초(테스트됨) | 설명 |
+| 시나리오 | 테스트 유형 | 아니오. 사용자 수 | Tx/초(예상) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
 | 지구력 테스트(72시간) | 홈 페이지 | 10 | 1 |  |  |
 |  | 검색 | 10 | 1 |  |  |
@@ -454,7 +452,7 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 ### 최적화 {#optimization}
 
-구현 후 단계에서 성능 목표를 충족하거나 극대화하기 위해 애플리케이션을 최적화해야 합니다.
+구현 후 단계에서 성능 목표를 충족하거나 최대화하기 위해 애플리케이션을 최적화해야 합니다.
 
 최적화를 테스트하여 다음을 확인해야 합니다.
 
@@ -474,14 +472,14 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 ### 보고 {#reporting}
 
-진행 중인 보고는 모든 사람들이 그 상황을 알 수 있도록 하는 것이 필요합니다.앞에서 설명한 색상 코딩과 같이 아키텍처 맵을 여기에 사용할 수 있습니다.
+이전에 색상 코딩에 대해 언급했듯이 현재 상태를 모든 사람에게 알려주는 지속적인 보고가 필요합니다. 아키텍처 맵은 여기에 사용할 수 있습니다.
 
 모든 테스트가 완료되면 다음을 보고할 수 있습니다.
 
-* 중요한 오류가 발생했습니다.
+* 발생한 중요한 오류
 * 더 이상의 조사가 필요할 중요하지 않은 문제
-* 테스트 중에 발생한 가정
-* 테스트에서 발생하는 모든 권장 사항
+* 테스트 중에 발생한 모든 가정
+* 테스트에서 발생할 수 있는 모든 권장 사항
 
 ## Dispatcher {#optimizing-performance-when-using-the-dispatcher} 사용 시 성능 최적화
 
@@ -556,7 +554,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 >[!NOTE]
 >
->이 URL은 gallery.html과 동일한 페이지 및 동일한 템플릿을 호출합니다. 템플릿 정의에서 페이지를 렌더링하는 스크립트를 지정하거나 모든 페이지에 동일한 스크립트를 사용할 수 있습니다.
+>이 URL은 `gallery.html`과 동일한 페이지와 동일한 템플릿을 호출합니다. 템플릿 정의에서 페이지를 렌더링하는 스크립트를 지정하거나 모든 페이지에 동일한 스크립트를 사용할 수 있습니다.
 
 #### URL {#customize-by-url}로 사용자 지정
 
@@ -574,7 +572,7 @@ www.myCompany.com/news/main.large.html
 >
 >대부분의 레이아웃 측면에서는 스타일 시트 및/또는 클라이언트측 스크립트를 사용할 수도 있습니다. 이러한 기능은 일반적으로 캐싱 작업에서 매우 잘 작동합니다.
 >
->다음과 같은 URL을 사용할 수 있는 인쇄 버전에도 유용합니다.&quot;
+>다음과 같은 URL을 사용할 수 있는 인쇄 버전에도 유용합니다.
 >
 >`www.myCompany.com/news/main.print.html`
 >
@@ -589,7 +587,7 @@ www.myCompany.com/news/main.large.html
 
    `<page file name>.<image file name>`
 
-예를 들어 myPage.html 페이지의 제목을 myPage.title.gif 파일에 저장할 수 있습니다. 페이지가 업데이트되면 이 파일은 자동으로 삭제되므로 페이지 제목의 변경 사항은 캐시에 자동으로 반영됩니다.
+예를 들어 `myPage.html` 페이지의 제목을 `file myPage.title.gif`에 저장할 수 있습니다. 페이지가 업데이트되면 이 파일은 자동으로 삭제되므로 페이지 제목의 변경 사항은 캐시에 자동으로 반영됩니다.
 
 >[!NOTE]
 >
@@ -609,23 +607,24 @@ www.myCompany.com/news/main.large.html
 
 #### 개인화 {#personalization}
 
-Dispatcher는 개인화된 데이터를 캐시할 수 없으므로 개인화를 필요한 위치로 제한하는 것이 좋습니다. 이유를 설명하기 위해:
+개인화는 필요한 위치로 제한하는 것이 좋습니다. 이유를 설명하기 위해:
 
 * 자유롭게 사용자 정의 가능한 시작 페이지를 사용하는 경우 사용자가 페이지를 요청할 때마다 해당 페이지를 구성해야 합니다.
 * 반면, 10개의 서로 다른 시작 페이지를 제공하는 경우 각 시작 페이지를 캐시하여 성능을 향상시킬 수 있습니다.
 
->[!NOTE]
->
->제목 표시줄에 사용자 이름을 넣는 등 각 페이지를 개인화하면 페이지를 캐시할 수 없으므로 성능에 큰 영향을 줄 수 있습니다.
->
->그러나 이 작업을 수행해야 하는 경우 다음을 수행할 수 있습니다.
->
->* iFrame을 사용하여 페이지를 모든 사용자에게 동일한 하나의 부분으로 분할하고 사용자의 모든 페이지에 대해 동일한 한 부분으로 분할할 수 있습니다. 그런 다음 이 두 부품을 캐싱할 수 있습니다.
->* 클라이언트측 JavaScript를 사용하여 개인화된 정보를 표시할 수 있습니다. 그러나 사용자가 JavaScript를 끄는 경우 페이지가 여전히 올바로 표시되는지 확인해야 합니다.
+>[!TIP]
+>Dispatcher 캐시 구성에 대한 자세한 내용은 [AEM Dispatcher Cache Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) 및 [보호된 컨텐트 캐싱 섹션을 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
 
+제목 표시줄에 사용자 이름을 넣는 등 각 페이지를 개인화하면 성능에 영향을 줄 수 있습니다.
+
+>[!TIP]
+>보안 콘텐츠를 캐싱하는 방법은 Dispatcher 안내서의 [보안 컨텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html)을 참조하십시오.
+
+제한적 컨텐츠와 공개 컨텐츠를 한 페이지에서 믹싱하는 것과 관련하여 Dispatcher의 서버측 포함을 활용하는 전략이나 브라우저에서 Ajax를 통해 클라이언트측 포함을 고려할 수 있습니다.
+
+>[!TIP]
 >
-
-
+>혼합된 공개 및 제한된 내용을 처리하려면 [Sling 동적 포함 설정을 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### 고정 연결 {#sticky-connections}
 
@@ -635,12 +634,12 @@ Dispatcher는 개인화된 데이터를 캐시할 수 없으므로 개인화를 
 
 브라우저에서 파일 유형을 결정하는 방법에는 두 가지가 있습니다.
 
-1. 확장(예:.html, .gif, .jpg 등)
+1. 확장(예:`.html`, `.gif`, `.jpg` 등)
 1. 서버가 파일과 함께 보내는 MIME-유형입니다.
 
 대부분의 파일에 대해 MIME 유형은 파일 확장명에 암시되어 있습니다. i.e.:
 
-1. 확장(예:.html, .gif, .jpg 등)
+1. 확장(예:`.html`, `.gif`, `.jpg` 등)
 1. 서버가 파일과 함께 보내는 MIME-유형입니다.
 
 파일 이름에 확장자가 없으면 일반 텍스트로 표시됩니다.
@@ -650,11 +649,11 @@ Dispatcher 버전 4.1.11에서는 응답 헤더를 캐시할 수 있습니다. D
 파일이 제대로 캐시되는지 확인하려면 다음 지침을 따르십시오.
 
 * 파일의 확장자가 항상 적절한지 확인합니다.
-* download.jsp?file=2214와 같은 URL이 있는 일반 파일 서버 스크립트를 사용하지 마십시오. 파일 사양을 포함하는 URL을 사용하도록 스크립트를 다시 작성합니다.이전 예제의 경우 download.2214.pdf가 됩니다.
+* `download.jsp?file=2214`과 같은 URL이 있는 일반 파일 서버 스크립트를 사용하지 마십시오. 파일 사양을 포함하는 URL을 사용하도록 스크립트를 다시 작성합니다. 이전 예제의 경우 이것은 `download.2214.pdf`입니다.
 
 ## 백업 성능 {#backup-performance}
 
-이 섹션에서는 CQ 백업 성능 및 백업 작업이 애플리케이션 성능에 미치는 영향을 평가하는 데 사용되는 일련의 벤치마크를 제공합니다. CQ 백업은 실행하는 동안 시스템에 상당한 로드를 표시하며, 이러한 효과를 수정하려고 하는 백업 지연 설정의 효과뿐만 아니라 이를 측정합니다. 이 목표는 실제 구성과 운영 데이터의 수량에 대한 예상 백업 성능에 대한 참조 데이터를 제공하고, 계획된 시스템의 백업 시간을 측정하는 방법에 대한 지침을 제공하는 것입니다.
+이 섹션에서는 AEM 백업 성능 및 백업 작업이 애플리케이션 성능에 미치는 영향을 평가하는 데 사용되는 일련의 벤치마크를 제공합니다. AEM 백업이 실행되는 동안 시스템에 상당한 로드를 표시하므로, 이러한 효과를 수정하려는 백업 지연 설정의 효과뿐만 아니라 이러한 효과를 측정합니다. 이 목표는 실제 구성과 운영 데이터의 수량에 대한 예상 백업 성능에 대한 참조 데이터를 제공하고, 계획된 시스템의 백업 시간을 측정하는 방법에 대한 지침을 제공하는 것입니다.
 
 ### 참조 환경 {#reference-environment}
 
@@ -667,72 +666,43 @@ Dispatcher 버전 4.1.11에서는 응답 헤더를 캐시할 수 있습니다. D
 * 하드웨어 RAID 컨트롤러;RAID0+5 어레이의 드라이브 8개
 * VMware 이미지 CPU x 2 Intel Xeon E5540 @ 2.53GHz
 * RedHat Linux 2.6.18-194.el5;Java 1.6.0_29
-* CQ 5.5 GM을 실행하는 단일 작성자 인스턴스입니다.
+* 단일 작성자 인스턴스
 
 이 서버의 디스크 하위 시스템은 제작 서버에서 사용할 수 있는 고성능 RAID 구성을 나타내는 매우 빠른 속도입니다. 백업 성능은 디스크 성능에 영향을 줄 수 있으며 이 환경의 결과는 매우 빠른 RAID 구성에 대한 성능을 반영합니다. VMWare 이미지는 RAID 어레이에 물리적으로 로컬 디스크 스토리지에 있는 단일 대용량 디스크 볼륨을 갖도록 구성되어 있습니다.
 
-CQ 구성은 모든 운영 체제 및 CQ 소프트웨어와 함께 저장소 및 데이터 저장소를 동일한 논리 볼륨에 배치합니다. 백업의 대상 디렉토리는 이 논리 파일 시스템에도 있습니다.
+AEM 구성은 모든 운영 체제와 AEM 소프트웨어와 함께 저장소 및 데이터 저장소를 동일한 논리 볼륨에 배치합니다. 백업의 대상 디렉토리는 이 논리 파일 시스템에도 있습니다.
 
 #### 데이터 볼륨 {#data-volumes}
 
 다음 표는 백업 벤치마크에서 사용되는 데이터 볼륨의 크기를 보여 줍니다. 초기 기준 컨텐츠가 먼저 설치된 다음, 백업된 컨텐츠의 크기를 늘리기 위해 알려진 추가 데이터 양이 추가됩니다. 컨텐츠의 큰 증가 및 하루 단위로 생성할 수 있는 내용을 나타내기 위해 특정 증분으로 백업을 만듭니다. 컨텐츠(페이지, 이미지, 태그)의 배포는 실제 제작 에셋 구성을 기반으로 대략 이루어집니다. 페이지, 이미지 및 태그는 최대 800개의 하위 페이지로 제한됩니다. 각 페이지에는 제목, Flash, 텍스트/이미지, 비디오, 슬라이드쇼, 양식, 표, 클라우드 및 회전판 구성 요소가 포함됩니다. 이미지는 37kB부터 594kB까지 크기가 다양한 400개의 고유한 파일 풀에서 업로드됩니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>컨텐트</strong></td>
-   <td><strong>노드</strong></td>
-   <td><strong>페이지</strong></td>
-   <td><strong>이미지</strong></td>
-   <td><strong>태그</strong></td>
-  </tr>
-  <tr>
-   <td>기본 설치</td>
-   <td>69,610</td>
-   <td>562년</td>
-   <td>256년</td>
-   <td>237년</td>
-  </tr>
-  <tr>
-   <td>증분 백업을 위한 작은 컨텐츠</td>
-   <td><br type="_moz" /> </td>
-   <td>+100</td>
-   <td>+2</td>
-   <td>+2</td>
-  </tr>
-  <tr>
-   <td>전체 백업용 대용량 컨텐츠</td>
-   <td><br type="_moz" /> </td>
-   <td>+10,000</td>
-   <td>+100</td>
-   <td>+100</td>
-  </tr>
- </tbody>
-</table>
+|콘텐츠|노드|페이지|이미지|태그|
+||—|—|—|—||
+|기본 설치|69 610|562|256|237|
+|증분 백업을 위한 작은 내용||+100|+2|+2|
+|전체 백업용 큰 내용||+10 000|+100|+100|+100|
 
 백업 벤치마크는 각 반복에 추가 컨텐츠 세트를 추가하여 반복됩니다.
 
 #### 벤치마크 시나리오 {#benchmark-scenarios}
 
-백업 벤치마크에는 다음과 같은 두 가지 주요 시나리오가 포함되어 있습니다.시스템이 상당한 애플리케이션 로드에서 백업되고 시스템이 유휴 상태일 때 백업이 수행됩니다. 일반적으로 CQ 시스템이 가능한 유휴 상태일 때 백업을 수행해야 하지만 시스템이 로드될 때 백업을 실행해야 하는 경우가 있습니다.
+백업 벤치마크에는 다음과 같은 두 가지 주요 시나리오가 포함되어 있습니다.시스템이 상당한 애플리케이션 로드에서 백업되고 시스템이 유휴 상태일 때 백업이 수행됩니다. AEM이 가능한 유휴 상태일 때 백업을 수행해야 하지만 시스템이 로드될 때 백업을 실행해야 하는 경우가 있습니다.
 
-**유휴** 상태 백업은 CQ에서 다른 작업을 수행하지 않고 수행됩니다.
+* **유휴 상태**  - AEM에서 다른 작업을 수행하지 않고 백업이 수행됩니다.
+* **Load** - Backups는 시스템이 온라인 프로세스에서 80% 로드가 적은 동안 수행됩니다. 로드가 미치는 영향을 보기 위해 백업 지연이 다양한 방식을 적용했습니다.
 
-**LoadBackups** 는 시스템이 온라인 프로세스에서 80% 로드되는 동안 수행됩니다. 로드가 미치는 영향을 보기 위해 백업 지연이 다양한 방식을 적용했습니다.
-
-결과 백업의 백업 시간 및 크기는 CQ 서버 로그에서 가져옵니다. 일반적으로 CQ가 유휴 상태일 때(예: 밤중일 경우) 백업을 비정기적으로 예약하는 것이 좋습니다. 이 시나리오는 권장 접근 방식을 나타냅니다.
+백업 시간 및 결과 백업 크기는 AEM 서버 로그에서 가져옵니다. 일반적으로 AEM이 유휴 상태일 때(예: 한밤중) 백업을 비정기적으로 예약하는 것이 좋습니다. 이 시나리오는 권장 접근 방식을 나타냅니다.
 
 Load는 페이지 탐색 및 쿼리에서 나오는 대부분의 로드를 갖는 페이지 만들기/삭제, 탐색 및 쿼리로 구성됩니다. 너무 많은 페이지를 추가 및 제거하면 작업 영역 크기가 지속적으로 증가하고 백업 작업이 완료되지 않습니다. 스크립트가 사용할 로드의 분배는 75% 페이지 순회, 24%의 쿼리 및 1%의 페이지 작성입니다(중첩된 하위 페이지가 없는 단일 수준). 유휴 시스템의 초당 최대 평균 트랜잭션은 4개의 동시 스레드로 달성되며, 이는 백업 로드 중에 테스트를 수행할 때 사용됩니다.
 
 백업 성능에 대한 로드 영향은 이 애플리케이션 로드 여부와 상관없이 성능에 대한 차이에 의해 예측할 수 있습니다. 애플리케이션 처리량에 대한 백업의 영향은 동시 백업이 진행 중인 경우와 없는 경우, 그리고 다른 &quot;백업 지연&quot; 설정으로 작동하는 백업과 동시에 시간당 트랜잭션 처리 시간을 비교하여 찾을 수 있습니다.
 
-**지연** 설정여러 시나리오에 대해 10ms(기본값), 1ms 및 0ms 값을 사용하여 백업 지연 설정을 변경하여 이 설정이 백업 성능에 어떤 영향을 주는지 살펴봅니다.
-
-**백업** 유형모든 백업은 zip을 작성하지 않고 백업 디렉토리에 만들어진 저장소의 외부 백업이었습니다. 단, tar 명령이 직접 사용된 경우를 비교할 때는 한 번 였습니다. 증분 백업을 zip 파일로 만들 수 없거나 이전 전체 백업이 zip 파일인 경우 백업 디렉토리 방법이 프로덕션 환경에서 가장 자주 사용됩니다.
+* **지연 설정**  - 여러 가지 시나리오의 경우 10ms(기본값), 1ms 및 0ms 값을 사용하여 백업 지연 설정을 변경하여 이 설정이 백업 성능에 어떤 영향을 주는지 살펴봅니다.
+* **백업 유형**  - 모든 백업은 zip을 작성하지 않고 백업 디렉토리에 만들어진 저장소의 외부 백업이었습니다. 단, tar 명령을 직접 사용한 경우를 비교할 때는 한 번 였습니다. 증분 백업을 zip 파일로 만들 수 없거나 이전 전체 백업이 zip 파일인 경우 백업 디렉토리 방법이 프로덕션 환경에서 가장 자주 사용됩니다.
 
 ### 결과 요약 {#summary-of-results}
 
-#### 백업 시간 및 실행 시간 {#backup-time-and-troughput}
+#### 백업 시간 및 처리량 {#backup-time-and-throughput}
 
 이러한 벤치마크의 주요 결과는 백업 유형이 데이터의 전체 양과 같은 기능으로서 백업 시간이 어떻게 달라지는지를 보여줍니다. 다음 차트는 전체 페이지 수의 함수로 기본 백업 구성을 사용하여 얻은 백업 시간을 보여줍니다.
 
@@ -751,7 +721,7 @@ Load는 페이지 탐색 및 쿼리에서 나오는 대부분의 로드를 갖�
 백업 지연 매개 변수가 제공되어 백업이 운영 워크로드를 방해할 수 있는 범위를 제한합니다. 이 매개 변수는 파일별로 백업 작업에 사용되는 대기 시간(밀리초 단위)을 지정합니다. 전체 효과는 영향을 받는 파일의 크기에 따라 부분적으로 달라집니다. 백업 성능을 MB/초 단위로 측정하면 백업 지연의 효과를 비교할 수 있습니다.
 
 * 정규 애플리케이션 로드와 동시에 백업을 실행하면 일반 로드 처리량에 부정적인 영향을 줍니다.
-* 그 영향은 약간일 수도 있고, 약 5%일 수도 있고, 매우 중요할 수도 있으며, 처리량이 75%나 감소할 수도 있으며, 이는 무엇보다도 애플리케이션에 따라 달라질 수 있습니다.
+* 그 영향은 경미하거나(약 5%) 매우 중요할 수 있으며, 처리량이 75%나 감소했으며, 이는 무엇보다도 애플리케이션에 따라 달라질 수 있습니다.
 * 백업은 CPU에서 부하가 많지 않으므로 CPU를 많이 사용하는 운영 워크로드는 입출력이 많은 작업보다 백업의 영향을 덜 받습니다.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
@@ -764,4 +734,3 @@ Load는 페이지 탐색 및 쿼리에서 나오는 대부분의 로드를 갖�
 
 * [관리 - 백업 및 복원](/help/sites-administering/backup-and-restore.md)
 * [관리 - 용량 및 볼륨](/help/managing/best-practices-further-reference.md#capacity-and-volume)
-
