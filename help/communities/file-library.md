@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+source-git-commit: cdbe098ada0b6c50952284f92cc2063435034a38
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 8%
@@ -42,15 +42,15 @@ ht-degree: 8%
 
 [필수 클라이언트측 라이브러리](/help/communities/essentials-file-library.md#essentials-for-client-side)가 포함될 때 `File Library` 구성 요소가 표시되는 방식입니다.
 
-![chlimage_1-430](assets/chlimage_1-430.png)
+![file-library1](assets/file-library1.png)
 
 ### 파일 라이브러리 구성 {#configuring-file-library}
 
 액세스할 배치된 `File Library` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
 
-![chlimage_1-431](assets/chlimage_1-431.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-432](assets/chlimage_1-432.png)
+![file-library2](assets/file-library2.png)
 
 #### 주석 탭 {#comments-tab}
 
