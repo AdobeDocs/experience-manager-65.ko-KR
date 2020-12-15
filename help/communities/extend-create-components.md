@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 418e7fad2d990f1a7cb3b69ab4c290ca1b7075ba
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 4%
 1. **[!UICONTROL 삭제]** 선택
 1. **[!UICONTROL 모두 저장]** 선택
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![create-component](assets/create-component.png)
 
 ### 하위 주석 구성 요소 {#create-the-child-comment-component} 만들기
 
@@ -83,7 +83,7 @@ ht-degree: 4%
 1. `/apps/custom/components/comments` 노드로 이동합니다.
 1. 노드를 마우스 오른쪽 단추로 클릭합니다.
 
-   * **[!UICONTROL 만들기] > **[!UICONTROL 구성 요소...를 선택합니다.]**
+   * **[!UICONTROL 만들기]** > **[!UICONTROL 구성 요소...를 선택합니다.]**
 
       * **레이블**: *주석*
       * **제목**: *대체 주석*
@@ -102,9 +102,9 @@ ht-degree: 4%
 1. **[!UICONTROL 삭제]** 선택
 1. **[!UICONTROL 모두 저장]** 선택
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![create-child-component](assets/create-child-component.png)
 
-![chlimage_1-72](assets/chlimage_1-72.png)
+![create-component-crxde](assets/create-component-crxde.png)
 
 ### 기본 HBS 스크립트 복사 및 수정 {#copy-and-modify-the-default-hbs-scripts}
 
@@ -168,7 +168,7 @@ ht-degree: 4%
 * `js.txt`의 컨텐츠로 &#39;customcomments system.js&#39;를 입력합니다.
 * **[!UICONTROL 모두 저장]** 선택
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![comments-clientlibs](assets/comments-clientlibs.png)
 
 ## SCF 모델 등록 및 보기 {#register-the-scf-model-view}
 
@@ -200,7 +200,7 @@ SCF 구성 요소를 확장(재정의)할 때 resourceType은 다릅니다(오�
 
 게시 환경에서 확장 구성 요소를 경험하려면 사용자 지정 구성 요소를 복제해야 합니다.
 
-한 가지 방법은
+한 가지 방법은 다음과 같습니다.
 
 * 전역 탐색에서
 
