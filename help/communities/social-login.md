@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 6d0ff6ae47688ba7f0e071bad40808fb3466246f
 workflow-type: tm+mt
 source-wordcount: '2803'
 ht-degree: 1%
@@ -391,13 +391,13 @@ AEM Communities 구성은 [Adobe Granite OAuth 응용 프로그램 및 Provider]
 * 편집할 구성을 열려면 선택합니다.
 * **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-![chlimage_1-489](assets/chlimage_1-489.png)
+![granoauth](assets/graniteoauth.png)
 
 >[!CAUTION]
 >
 >인증 핸들러를 *Adobe Granite OAuth 응용 프로그램 및 공급자*&#x200B;의 Facebook 또는 Twitter 인스턴스와 혼동하지 않도록 주의하십시오.
 
-![chlimage_1-490](assets/chlimage_1-490.png)
+![granitoauth1](assets/graniteoauth1.png)
 
 ### Adobe Granite OAuth 응용 프로그램 및 공급자 {#adobe-granite-oauth-application-and-provider}
 
@@ -414,7 +414,7 @@ Facebook 또는 Twitter 앱에 대해 만든 인스턴스를 찾으려면:
 
    * **[!UICONTROL 클라이언트 ID]**&#x200B;이 **[!UICONTROL 앱 ID]**&#x200B;와 일치하는 인스턴스를 찾습니다.
 
-      ![chlimage_1-491](assets/chlimage_1-491.png)
+      ![granitoauth2](assets/graniteoauth2.png)
 
       다음 속성을 제외하고 구성의 다른 속성은 변경하지 않은 상태로 두십시오.
 
@@ -493,7 +493,7 @@ Facebook 또는 Twitter 앱에 대해 만든 인스턴스를 찾으려면:
 
 * **name** `oauthid-123`의 경우 *123*&#x200B;을 ***App ID*** 또는 Twitter ***Consumer (API)*** **클라이언트 ID** 값으로 바꿉니다. [Adobe Granite OAuth 응용 프로그램 및 공급자](social-login.md#adobe-granite-oauth-application-and-provider) 구성에서.
 
-   ![chlimage_1-492](assets/chlimage_1-492.png)
+   ![granitoauth-crxde](assets/graniteoauth-crxde.png)
 
 자세한 정보 및 도구는 [Oak 쿼리 및 색인](../../help/sites-deploying/queries-and-indexing.md)을 참조하십시오.
 
