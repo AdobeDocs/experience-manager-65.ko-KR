@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 871c42ee000eb250c1c6159d9a0c752e8ed4d7b8
 workflow-type: tm+mt
 source-wordcount: '1093'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -217,7 +217,7 @@ AEM과 다른 서버에서 MySQL을 실행하는 경우 ScormEngine 서비스의
 * `AEM Communities ScormEngine Service` 찾기
 * 편집 아이콘 선택
 
-   ![chlimage_1-337](assets/chlimage_1-337.png)
+   ![scrom 엔진](assets/scrom-engine.png)
 
 * 다음 매개 변수 값이 [JDBC 연결](#configurejdbcconnectionspool) 구성과 일치하는지 확인합니다.
    * **[!UICONTROL JDBC 연결 URI]**: `jdbc:mysql://localhost:3306/ScormEngineDB` ** SCORMEngineDB는 SQL 스크립트의 기본 데이터베이스 이름입니다.
