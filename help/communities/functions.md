@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3133f712be1380ae98e18e63c9598d760d2e7595
+source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
 workflow-type: tm+mt
 source-wordcount: '2458'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 7%
 
 #### 구성 기능 세부 사항 {#configuration-function-details}
 
-![chlimage_1-380](assets/chlimage_1-380.png)
+![title-url-details](assets/title-url-details.png)
 
 * **제목**
 
@@ -70,7 +70,7 @@ ht-degree: 7%
 
 페이지의 메뉴 링크가 다음과 같이 표시됩니다.
 
-![chlimage_1-381](assets/chlimage_1-381.png)
+![참여 페이지](assets/engage-page.png)
 
 ### 활동 스트림 기능 {#activity-stream-function}
 
@@ -80,7 +80,7 @@ ht-degree: 7%
 
 #### 구성 기능 세부 사항 {#configuration-function-details-1}
 
-![chlimage_1-382](assets/chlimage_1-382.png)
+![함수 세부 정보](assets/function-details.png)
 
 * [제목 및 URL 설정](#title-and-url-settings)
 
@@ -110,7 +110,7 @@ assignments 함수는 지원](/help/communities/overview.md#enablement-community
 
 템플릿에 추가하면 다음 대화 상자가 열립니다.
 
-![chlimage_1-383](assets/chlimage_1-383.png)
+![blog-component](assets/blog-component.png)
 
 * [제목 및 URL 설정](#title-and-url-settings)
 
@@ -136,7 +136,7 @@ assignments 함수는 지원](/help/communities/overview.md#enablement-community
 
 템플릿에 추가하면 다음 대화 상자가 열립니다.
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![달력 세부 사항](assets/calendar-details.png)
 
 * [제목 및 URL 설정](#title-and-url-settings)
 
@@ -201,7 +201,7 @@ assignments 함수는 지원](/help/communities/overview.md#enablement-community
 
 #### 구성 기능 세부 사항 {#configuration-function-details-2}
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![forum-component1](assets/forum-component1.png)
 
 * [제목 및 URL 설정](#title-and-url-settings)
 
@@ -243,7 +243,7 @@ assignments 함수는 지원](/help/communities/overview.md#enablement-community
 
 템플릿에 추가하면 다음 대화 상자가 열립니다.
 
-![chlimage_1-386](assets/chlimage_1-386.png)
+![group-template-config](assets/group-template-config.png)
 
 * [제목 및 URL 설정](#title-and-url-settings)
 
@@ -266,7 +266,7 @@ assignments 함수는 지원](/help/communities/overview.md#enablement-community
 
 템플릿에 추가하면 기본 제목 및 URL 이름과 템플릿의 기본 표시 설정을 지정하는 다음 대화 상자가 열립니다.
 
-![chlimage_1-387](assets/chlimage_1-387.png)
+![관념화 함수](assets/ideation-function.png)
 
 * [제목 및 URL 설정](#title-and-url-settings)
 
