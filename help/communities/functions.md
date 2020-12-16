@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
+source-git-commit: 94a5a8d99d052d7bcf01f237dc2b73157a2f11c2
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 6%
@@ -294,7 +294,7 @@ leaderboard 함수는 [리더보드 구성 요소](/help/communities/enabling-le
 
 템플릿에 추가하면 기본 제목 및 URL 이름과 템플릿의 기본 표시 설정을 지정하는 다음 대화 상자가 열립니다.
 
-![chlimage_1-388](assets/chlimage_1-388.png)
+![leaderboard dialog](assets/leaderboard-dialog.png)
 
 * [제목 및 URL 설정](#title-and-url-settings)
 
@@ -325,7 +325,7 @@ QnA 함수는 태그 지정, 파일 업로드, 팔로잉, 자체 편집, 투표 
 
 템플릿에 추가하면 권한이 있는 구성원에게 제한을 허용합니다.
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![qna-dialog](assets/qna-dialog.png)
 
 * [제목 및 URL 설정](#title-and-url-settings)
 
@@ -353,11 +353,11 @@ QnA 함수는 태그 지정, 파일 업로드, 팔로잉, 자체 편집, 투표 
 
 커뮤니티 함수 콘솔 상단에 있는 `Create Community Function` 아이콘을 선택하면 커뮤니티 기능을 만들 수 있습니다. 동일한 AEM Blueprint를 기반으로 하는 여러 함수를 만든 다음 작성자 편집 모드에서 열어 고유하게 사용자 정의할 수 있습니다.
 
-![chlimage_1-390](assets/chlimage_1-390.png)
+![create-community-function](assets/create-community-function.png)
 
 ### 커뮤니티 기능 이름 {#community-function-name}
 
-![chlimage_1-391](assets/chlimage_1-391.png)
+![function-name](assets/function-name.png)
 
 커뮤니티 기능 이름 패널에서 이름, 설명 및 함수의 활성화 또는 비활성화 여부가 구성됩니다.
 
@@ -375,7 +375,7 @@ QnA 함수는 태그 지정, 파일 업로드, 팔로잉, 자체 편집, 투표 
 
 ### AEM 블루프린트 {#aem-blueprint}
 
-![chlimage_1-392](assets/chlimage_1-392.png)
+![aem 블루프린트](assets/aem-blueprint.png)
 
 `AEM Blueprint` 패널에서 커뮤니티 함수의 기본 구현인 블루프린트를 선택할 수 있습니다.
 
@@ -387,13 +387,13 @@ QnA 함수는 태그 지정, 파일 업로드, 팔로잉, 자체 편집, 투표 
 
 ### 썸네일 {#thumbnail}
 
-![chlimage_1-393](assets/chlimage_1-393.png)
+![funtion-thumbnail](assets/funtion-thumbnail.png)
 
 축소판 패널에서 이미지를 업로드하여 [커뮤니티 기능 콘솔](#community-functions-console)에 표시할 수 있습니다.
 
 ## 커뮤니티 기능 열기 {#open-community-function}
 
-![chlimage_1-394](assets/chlimage_1-394.png)
+![open-function](assets/open-function.png)
 
 페이지 컨텐츠를 작성하고 기능 구성 요소의 구성을 수정할 수 있는 작성자 편집 모드를 입력하려면 `Open Community Function` 아이콘을 선택합니다.
 
@@ -409,6 +409,6 @@ QnA 함수는 태그 지정, 파일 업로드, 팔로잉, 자체 편집, 투표 
 
 ## 커뮤니티 기능 편집 {#edit-community-function}
 
-![chlimage_1-395](assets/chlimage_1-395.png)
+![편집 함수](assets/edit-function.png)
 
 `Edit Community Function` 아이콘을 선택하여 [커뮤니티 함수](#create-community-function)와 동일한 패널을 사용하여 함수의 속성을 편집합니다(함수 활성화 또는 비활성화 포함).
