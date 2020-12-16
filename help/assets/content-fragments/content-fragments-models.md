@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 932601c849b3a1ddd196e6570a9cf05710cd3e6a
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 98%
+source-wordcount: '753'
+ht-degree: 96%
 
 ---
 
@@ -37,8 +37,12 @@ ht-degree: 98%
 
 [새 컨텐츠 조각 모델을 생성](#creating-a-content-fragment-model)하려면 먼저 구성 관리자를 사용하여 컨텐츠 조각 모델을 활성화&#x200B;**해야 합니다**.
 
+>[!CAUTION]
+>
+>하위 구성(구성 내에 중첩된 구성)은 컨텐츠 조각에서 사용할 수 없습니다.
+
 1. **도구**, **일반**&#x200B;으로 이동한 후 **Configuration Browser**&#x200B;를 엽니다.
-1. 웹 사이트에 적합한 위치를 선택합니다.
+
 1. **만들기**&#x200B;를 사용하여 대화 상자를 열고 여기에서
 
    1. **제목**&#x200B;을 지정합니다.
@@ -47,6 +51,8 @@ ht-degree: 98%
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. **만들기**&#x200B;를 선택하여 정의를 저장합니다.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### 자산 폴더에 구성 적용 {#apply-the-configuration-to-your-assets-folder}
 
