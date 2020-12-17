@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c863e438df45fd54c29c1b99114eea07aaeb6162
+source-git-commit: 303841896717448947aa48ece7ae86519a5450d5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '502'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ AEM 6.5에서는 모든 기능이 이전 버전과의 호환성을 고려하여 
 
 ## 설정 방법 {#how-to-set-up}
 
-AEM 6.3 호환성 패키지는 이 [link](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63)의 패키지 관리자를 사용하여 패키지로 설치할 수 있습니다.
+AEM 6.3 호환성 패키지는 패키지 관리자를 사용하여 패키지로 설치할 수 있습니다. 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63) 사이트에서 [AEM 6.3 호환성 패키지를 다운로드할 수 있습니다.
 
 호환성 패키지가 설치되면 아래 표시된 것처럼 OSGI 구성에서 스위치를 사용하여 라우팅을 활성화하거나 비활성화할 수 있습니다.
 
