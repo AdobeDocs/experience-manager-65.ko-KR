@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: e9d5a7acad04d841cbc7d62050163f3de998fab6
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 3%
@@ -70,9 +70,9 @@ ht-degree: 3%
 
 (선택 사항) 배너 이미지를 업로드하여 사이트 페이지에 표시합니다. 배너는 커뮤니티 사이트 헤더와 메뉴(탐색 링크) 사이의 브라우저의 왼쪽 가장자리에 고정됩니다. 배너 높이는 120픽셀로 잘립니다. 브라우저 폭과 120픽셀 높이에 맞게 배너의 크기를 조정할 수 없습니다.
 
-![chlimage_1-449](assets/chlimage_1-449.png)
+![site-branding1](assets/site-branding1.png)
 
-![chlimage_1](assets/chlimage_1.jpeg)
+![site-branding2](assets/site-branding2.png)
 
 **다음**&#x200B;을 선택합니다.
 
@@ -130,7 +130,7 @@ ht-degree: 3%
 
 [중재](/help/communities/sites-console.md#moderation) 사용자가 생성한 콘텐츠(UGC)에 대한 기본 전역 설정을 적용합니다.
 
-![chlimage_1-452](assets/chlimage_1-452.png)
+![moderation1](assets/moderation1.png)
 
 #### 분석 {#analytics}
 
@@ -138,7 +138,7 @@ ht-degree: 3%
 
 스크린샷에 표시된 `Communities`은 [구성 설명서의 프레임워크 예입니다.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![chlimage_1-454](assets/chlimage_1-454.png)
+![분석](assets/analytics.png)
 
 #### 번역 {#translation}
 
@@ -147,7 +147,7 @@ ht-degree: 3%
 * **기계 번역 허용** 확인
 * 기본 설정 사용
 
-![chlimage_1-456](assets/chlimage_1-456.png)
+![번역](assets/translation.png)
 
 #### 지원 {#enablement}
 
@@ -163,7 +163,7 @@ ht-degree: 3%
 * **Marketing Cloud 조직 ID**
 (선택 사항) 지원 보고에  [비디오 하트비트 분석을 포함시킬 때 필요한 Adobe Analytics ](/help/communities/analytics.md#video-heartbeat-analytics) 계정의 ID입니다.
 
-![chlimage_1-457](assets/chlimage_1-457.png)
+![역량 강화](assets/enablement.png)
 
 **다음**&#x200B;을 선택합니다.
 
@@ -171,7 +171,7 @@ ht-degree: 3%
 
 **만들기**&#x200B;를 선택합니다.
 
-![chlimage_1-458](assets/chlimage_1-458.png)
+![미리 보기](assets/preview.png)
 
 프로세스가 완료되면 커뮤니티 > 사이트 콘솔에 새 사이트에 대한 폴더가 표시됩니다.
 
@@ -218,11 +218,11 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 커뮤니티 사이트를 게시하려면 월드 아이콘을 선택합니다.
 
-![chlimage_1-465](assets/chlimage_1-465.png)
+![게시 사이트](assets/publish-site.png)
 
 그 사이트가 출판되었다는 표시가 있을 것이다.
 
-![chlimage_1-466](assets/chlimage_1-466.png)
+![사이트 게시](assets/site-published.png)
 
 ## 커뮤니티 사용자 및 사용자 그룹 {#community-users-user-groups}
 
@@ -251,7 +251,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 * **저장**&#x200B;을 선택합니다
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![edit-group-settings](assets/edit-group-settings.png)
 
 ## 게시 시 구성 {#configurations-on-publish}
 
@@ -317,13 +317,13 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 >
 >비활성화하려면 `sling:match` 속성 값을 &#39;x&#39; - `xlocalhost.4503/$` - 및 **모두 저장**&#x200B;과(와) 함께 프리펜드하면 됩니다.
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![change-default-homepage](assets/change-default-homepage.png)
 
 #### 문제 해결:맵 {#troubleshooting-error-saving-map} 저장 중 오류 발생
 
 변경 내용을 저장할 수 없는 경우 노드 이름이 `localhost.4503`이고 &#39;dot&#39; 구분 기호가 있고 &#39;콜론&#39; 구분 기호가 있는 `localhost:4503`이 아닌 `localhost`인지 확인하십시오. 이때 &lt;a2/>는 올바른 네임스페이스 접두사가 아닙니다.
 
-![chlimage_1-365](assets/chlimage_1-365.png)
+![error-map](assets/error-map.png)
 
 #### 문제 해결:{#troubleshooting-fail-to-redirect} 리디렉션 실패
 
@@ -361,11 +361,11 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 * **저장**&#x200B;을 선택합니다.
 
-![chlimage_1-299](assets/chlimage_1-299.png)
+![사이트 구조 수정](assets/modify-site-structure.png)
 
 위치 아이콘을 사용하여 카탈로그 함수를 할당 후 두 번째 위치로 이동합니다.
 
-![chlimage_1-300](assets/chlimage_1-300.png)
+![move-catalog-func](assets/move-catalog-func.png)
 
 커뮤니티 사이트에 대한 변경 내용을 저장하려면 오른쪽 위 모서리에서 **저장**&#x200B;을 선택합니다.
 
