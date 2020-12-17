@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: d0842a5994068b1e9a92cd14c1a59f1ea1a6c8b8
 workflow-type: tm+mt
-source-wordcount: '3452'
-ht-degree: 2%
+source-wordcount: '3533'
+ht-degree: 1%
 
 ---
 
@@ -287,6 +287,14 @@ newComponent (cq:Component)
 ExtJS가 있는 클래식 UI에서는 컨텐츠 구조에 지정된 위젯에 대한 리스너가 있는 것이 일반적이었습니다. 터치 지원 UI에서 동일하게 수행되는 것은 JS 리스너 코드(또는 모든 코드)가 더 이상 컨텐츠에 정의되지 않은 것과 다릅니다.
 
 콘텐츠 구조는 의미 구조를 설명합니다.기본 위젯의 특성을 의미해서는 안 됩니다(필수). 콘텐츠 구조에 JS 코드가 없으면 콘텐츠 구조를 변경하지 않고도 구현 세부 사항을 변경할 수 있습니다. 즉, 컨텐츠 구조를 건드리지 않고도 위젯 라이브러리를 변경할 수 있습니다.
+
+#### 대화 상자 {#dialog-ready}의 가용성 감지
+
+대화 상자를 사용할 수 있고 사용할 준비가 되었을 때만 실행되어야 하는 사용자 지정 JavaScript가 있는 경우 `dialog-ready` 이벤트를 수신해야 합니다.
+
+이 이벤트는 대화 상자가 로드되거나 다시 로드될 때마다 트리거되며 사용할 준비가 되어 대화 상자의 DOM에 변경(만들기/업데이트)이 있을 때마다 발생합니다.
+
+`dialog-ready` 대화 상자 내부 필드나 유사한 작업 내의 필드에 대한 사용자 지정을 수행하는 JavaScript 사용자 지정 코드를 연결하는 데 사용할 수 있습니다.
 
 ### 필드 유효성 검사 {#field-validation}
 
