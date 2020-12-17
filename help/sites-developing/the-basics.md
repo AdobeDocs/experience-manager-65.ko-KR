@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: d621a612556f0bea032444c2e07be101868b1905
+source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3386'
 ht-degree: 0%
 
 ---
@@ -162,10 +162,11 @@ Sling을 사용하면 JCR 노드에서 `sling:resourceType` 속성을 설정하�
 * 메서드(GET, POST)이 필요한 경우 HTTP 사양에 따라 대문자가 지정됩니다(예: jobs.POST.esp).
 * 다양한 스크립트 엔진이 지원됩니다.
 
-   * `.esp, .ecma`:ECMAScript(JavaScript) 페이지(서버측 실행)
-   * `.jsp`:Java 서버 페이지(서버측 실행)
-   * `.java`:Java 서블릿 컴파일러(서버측 실행)
-   * `.jst`:JavaScript 템플릿(클라이언트측 실행)
+   * HTL(HTML 템플릿 언어 - HTML을 위한 Adobe Experience Manager의 권장 서버측 템플릿 시스템):`.html`
+   * ECMAScript(JavaScript) 페이지(서버측 실행):`.esp, .ecma`
+   * Java 서버 페이지(서버측 실행):`.jsp`
+   * Java Servlet 컴파일러(서버측 실행):`.java`
+   * JavaScript 템플릿(클라이언트측 실행):`.jst`
 
 지정된 AEM 인스턴스에서 지원하는 스크립트 엔진 목록은 Felix Management Console( `http://<host>:<port>/system/console/slingscripting`)에 나열되어 있습니다.
 
