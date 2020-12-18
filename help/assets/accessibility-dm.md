@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media의 액세스 가능성
-description: Dynamic Media 및 Dynamic Media 뷰어의 액세스 가능성에 대한 자세한 내용
+description: Dynamic Media 및 Dynamic Media 뷰어의 액세스 가능성 지원에 대한 자세한 내용
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 모든 기본 [!DNL Dynamic Media] 뷰어 구성 요소는 고객의 키보드 액세스 가능성을 지원합니다.
 
-Dynamic Media 뷰어 참조 안내서의 [키보드 액세스 가능성 및 탐색](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서의 [키보드 액세스 가능성 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
 
 ## [!DNL Dynamic Media] 뷰어에서 보조 기술 지원 {#assistive-technology-support-for-dm-viewers}
 
