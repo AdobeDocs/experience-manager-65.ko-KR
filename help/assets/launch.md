@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '6623'
+source-wordcount: '6605'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Adobe Viewers 5.13의 최신 릴리스와 함께 새로운 Dynamic Media Viewers
 
 이러한 통합은 Adobe Analytics을 사용하여 웹 사이트에서 Dynamic Media 뷰어의 사용을 추적할 수 있음을 의미합니다. 동시에 Adobe 또는 제3자로부터 제공되는 기타 Launch 확장 프로그램과 함께 뷰어에서 노출되는 이벤트와 데이터를 사용할 수 있습니다.
 
-확장에 대한 자세한 내용은 Experience Platform Launch 사용 안내서의 [Adobe 확장](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/overview.html)을 참조하십시오.
+확장에 대한 자세한 내용은 Experience Platform Launch 사용 안내서의 [Adobe 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension)을 참조하십시오.
 
 **이 설명서를 읽어야 하는 사람:** 사이트 관리자, AEM 플랫폼의 개발자, 그리고 운영 부서의 개발자.
 
@@ -34,7 +34,7 @@ Adobe Viewers 5.13의 최신 릴리스와 함께 새로운 Dynamic Media Viewers
 * Dynamic Media 뷰어에 대한 Adobe 시작 통합이 AEM 작성자 노드에서 작동하지 않습니다. WCM 페이지가 게시될 때까지 추적 내용을 볼 수 없습니다.
 * Dynamic Media 뷰어에 대한 Adobe 시작 통합은 &quot;팝업&quot; 작업 모드에서 지원되지 않습니다. 여기서 [자산 세부 사항] 페이지의 &quot;URL&quot; 단추를 사용하여 뷰어 URL을 가져옵니다.
 * Adobe 시작 통합은 이전 뷰어 분석 통합과 동시에 사용할 수 없습니다(예: `config2=` 매개 변수).
-* 비디오 추적 지원은 [추적 개요](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html)에 설명된 대로 핵심 재생 추적으로만 제한됩니다. 특히 QoS, 광고, 장/세그먼트 또는 오류 추적은 지원되지 않습니다.
+* 비디오 추적 지원은 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events)에 설명된 대로 핵심 재생 추적으로만 제한됩니다. 특히 QoS, 광고, 장/세그먼트 또는 오류 추적은 지원되지 않습니다.
 * 데이터 요소에 대한 저장소 기간 구성은 *Dynamic Media 뷰어* 확장 기능을 사용하는 데이터 요소에 대해 지원되지 않습니다. 저장소 기간은 **[!UICONTROL None]**&#x200B;으로 설정해야 합니다.
 
 ### 통합 {#use-cases-for-the-integration} 사용 사례
@@ -69,7 +69,7 @@ Dynamic Media 뷰어 확장은 자동으로 데이터 요소의 값을 최신 �
 
 정의한 후에는 데이터 요소 선택기 위젯을 사용하여 데이터 요소를 Adobe 시작 UI의 다른 위치에서 사용할 수 있습니다. 특히, Dynamic Media 뷰어 추적의 목적으로 정의된 데이터 요소는 규칙의 Adobe Analytics 확장 프로그램의 변수 설정 동작에서 참조됩니다(아래 참조).
 
-자세한 내용은 Experience Platform Launch 사용 안내서의 [데이터 요소](https://docs.adobe.com/content/help/ko-KR/launch/using/reference/manage-resources/data-elements.html)를 참조하십시오.
+자세한 내용은 Experience Platform Launch 사용 안내서의 [데이터 요소](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference)를 참조하십시오.
 
 #### Adobe 시작 {#about-rules-in-adobe-launch}의 규칙 정보
 
@@ -95,7 +95,7 @@ Dynamic Media 뷰어를 추적하려면 다음 유형의 모든 유형을 사용
 
 *변수 설정* 액션 뒤에 *비콘 보내기* 작업이 와야 합니다. *비콘 보내기* 작업은 실제로 데이터를 분석 추적 서버로 보냅니다. 두 작업 모두, *변수 설정* 및 *비콘 전송*&#x200B;은 Adobe Analytics 확장 프로그램에서 가져옵니다.
 
-자세한 내용은 Experience Platform Launch 사용 안내서의 [규칙](https://docs.adobe.com/content/help/ko-KR/launch/using/reference/manage-resources/rules.html)을 참조하십시오.
+자세한 내용은 Experience Platform Launch 사용 안내서의 [규칙](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference)을 참조하십시오.
 
 #### 샘플 구성 {#sample-configuration}
 
@@ -129,7 +129,7 @@ Experience Cloud 계정이 오디오 및 비디오에 Adobe Analytics 사용을 
 
 [확장 설치 및 설정](#installing-and-setup-of-extensions)을 참조하십시오.
 
-현재 비디오 추적 지원은 [추적 개요](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html)에 설명된 대로 &quot;핵심 재생&quot; 추적으로만 제한됩니다. 특히 QoS, 광고, 장/세그먼트 또는 오류 추적은 지원되지 않습니다.
+현재 비디오 추적 지원은 [추적 개요](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events)에 설명된 대로 &quot;핵심 재생&quot; 추적으로만 제한됩니다. 특히 QoS, 광고, 장/세그먼트 또는 오류 추적은 지원되지 않습니다.
 
 ## Dynamic Media 뷰어 확장 사용 {#using-the-dynamic-media-viewers-extension}
 
@@ -153,7 +153,7 @@ AEM Sites을 사용하지 않거나 Dynamic Media 뷰어를 AEM Sites 외부의 
 
 적절한 구성을 통해 Dynamic Media 뷰어가 있는 웹 페이지에 Adobe 실행 지원을 추가할 수 있습니다.
 
-Adobe 시작 라이브러리 포함 코드를 사용하는 방법에 대한 자세한 내용은 [시작 포함 코드 추가](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html)를 참조하십시오.
+Adobe 시작 라이브러리 포함 코드를 사용하는 방법에 대한 자세한 내용은 [시작 포함 코드 추가](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch)를 참조하십시오.
 
 <!-- To be reviewed and updated:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
@@ -201,7 +201,7 @@ Dynamic Media 뷰어 확장이 제공하는 데이터 요소 유형은 **[!UICON
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-각 뷰어 유형별로 지원되는 이벤트 목록은 [Dynamic Media 뷰어 참조 안내서](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html)를 참조하십시오.특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 클릭합니다. 현재 Dynamic Media 뷰어 참조 안내서는 이벤트 인수를 문서화하지 않습니다.
+각 뷰어 유형별로 지원되는 이벤트 목록은 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)를 참조하십시오.특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 클릭합니다. 현재 Dynamic Media 뷰어 참조 안내서는 이벤트 인수를 문서화하지 않습니다.
 
 이제 Dynamic Media 뷰어 *데이터 요소*&#x200B;의 라이프사이클을 고려하겠습니다. 이러한 데이터 요소의 값은 해당 Dynamic Media 뷰어 이벤트가 페이지에서 발생한 후에 채워집니다. 예를 들어 데이터 요소가 **[!UICONTROL LOAD]** 이벤트와 그 &quot;asset&quot; 인수를 가리키는 경우, 뷰어가 처음으로 LOAD 이벤트를 실행한 후 해당 데이터 요소의 값이 유효한 데이터를 받게 됩니다. 데이터 요소가 **[!UICONTROL ZOOM]** 이벤트와 그 &quot;scale&quot; 인수를 가리키면 뷰어가 처음으로 **[!UICONTROL ZOOM]** 이벤트를 보낼 때까지 해당 데이터 요소의 값은 비어 있게 됩니다.
 
@@ -238,7 +238,7 @@ Dynamic Media 뷰어 확장이 제공하는 데이터 요소 유형은 **[!UICON
 
 어떤 경우에도 Dynamic Media 뷰어에서 파생된 데이터 요소의 값은 로컬 저장소 또는 서버에 저장되지 않습니다.대신 클라이언트측 Adobe 시작 라이브러리에만 보관됩니다. 이러한 데이터 요소의 값은 웹 페이지가 다시 로드될 때 사라집니다.
 
-일반적으로 데이터 요소 편집기는 [스토리지 기간 선택](https://docs.adobe.com/content/help/ko-KR/launch/using/reference/manage-resources/data-elements.html#create-a-data-element)을 지원합니다. 그러나 Dynamic Media 뷰어 확장을 사용하는 데이터 요소는 **[!UICONTROL 없음]**&#x200B;의 저장 시간 옵션만 지원합니다. 사용자 인터페이스에서는 다른 값을 설정할 수 있지만 이 경우에는 데이터 요소 동작이 정의되지 않습니다. 확장은 데이터 요소의 값을 직접 관리합니다.전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지하는 데이터 요소입니다.
+일반적으로 데이터 요소 편집기는 [스토리지 기간 선택](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element)을 지원합니다. 그러나 Dynamic Media 뷰어 확장을 사용하는 데이터 요소는 **[!UICONTROL 없음]**&#x200B;의 저장 시간 옵션만 지원합니다. 사용자 인터페이스에서는 다른 값을 설정할 수 있지만 이 경우에는 데이터 요소 동작이 정의되지 않습니다. 확장은 데이터 요소의 값을 직접 관리합니다.전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지하는 데이터 요소입니다.
 
 ### Dynamic Media 뷰어 확장 {#about-rules-in-the-dynamic-media-viewers-extension}의 규칙 정보
 
@@ -432,7 +432,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 * 분석 변수를 사용하여 추적 데이터를 수신할 수 있습니다.
 * Adobe Analytics 내에서 수집된 데이터를 보는 데 보고서를 사용할 수 있습니다.
 
-[분석 구현 안내서](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)도 참조하십시오.
+[분석 구현 안내서](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)도 참조하십시오.
 
 **통합을 위해 Adobe Analytics을 구성하려면 다음을 수행하십시오**.
 
@@ -450,7 +450,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
    사용할 수 있는 보고서 세트가 없는 경우, 사용자나 Adobe Analytics 관리자가 보고서 세트를 먼저 만든 후 구성을 계속 진행할 수 있습니다.
 
-   [보고서 및 보고서 세트](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) 및 [보고서 세트 만들기](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/create-report-suite.html)를 참조하십시오.
+   [보고서 및 보고서 세트](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) 및 [보고서 세트 만들기](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console)를 참조하십시오.
 
    Adobe Analytics에서 보고서 세트는 **[!UICONTROL 관리 > 보고서 세트]**&#x200B;에서 관리됩니다.
 
@@ -464,7 +464,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
    Adobe Analytics에서 지원하는 모든 유형의 변수를 사용할 수 있습니다. 변수 유형(예: 사용자 지정 트래픽 [prop], 전환 [eVar])에 대한 결정은 Analytics 구현의 특정 요구 사항에 의해 파생되어야 합니다.
 
-   [prop 및 eVar 개요](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html)를 참조하십시오.
+   [prop 및 eVar 개요](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars)를 참조하십시오.
 
    이 문서의 목적에 따라, 웹 페이지에서 작업이 발생한 후 몇 분 내에 Analytics 보고서에서 사용할 수 있기 때문에 사용자 지정 트래픽(prop) 변수만 사용됩니다.
 
@@ -512,7 +512,7 @@ Adobe 시작을 구성한 후에는 통합에 대해 다음과 같은 설정이 
 
 Adobe 론치의 속성은 모든 설정을 함께 유지하는 이름이 지정된 구성입니다. 구성 설정의 라이브러리가 생성되고 다른 환경 수준(개발, 스테이징 및 프로덕션)에 게시됩니다.
 
-[속성 만들기](https://docs.adobe.com/content/help/en/launch/using/implement/configure/create-a-property.html)를 참조하십시오.
+[론치 속성 만들기](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch)를 참조하십시오.
 
 1. Adobe 론치에서 **[!UICONTROL 새 속성]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 속성 만들기]** 대화 상자의 **[!UICONTROL 이름]** 필드에 웹 사이트의 제목과 같은 설명형 이름을 입력합니다. 예, `DynamicMediaViewersProp.`
@@ -537,7 +537,7 @@ Adobe Launch에서 사용할 수 있는 모든 확장이 **[!UICONTROL 확장 > 
 
 추가 구성은 필요하지 않으며 제안된 값에 대해 승인합니다. 완료되면 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-[Experience Cloud ID 서비스 확장](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)을 참조하십시오.
+[Experience Cloud ID 서비스 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref)을 참조하십시오.
 
 * (필수) *Adobe Analytics* 확장
 
@@ -557,7 +557,7 @@ Adobe Launch에서 사용할 수 있는 모든 확장이 **[!UICONTROL 확장 > 
 
 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-[Adobe Analytics 확장](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)을 참조하십시오.
+[Adobe Analytics 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref)을 참조하십시오.
 
 * (선택 사항;비디오 추적이 필요한 경우에만 필요) *오디오 및 비디오용 Adobe 미디어 분석* 확장
 
@@ -565,7 +565,7 @@ Adobe Launch에서 사용할 수 있는 모든 확장이 **[!UICONTROL 확장 > 
 
 다른 모든 필드는 선택 사항입니다.
 
-오디오 및 비디오 확장[에 대한 Adobe 미디어 분석을 참조하십시오.](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+오디오 및 비디오 확장[에 대한 Adobe 미디어 분석을 참조하십시오.](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#extensions-ref)
 
 * (필수) *Dynamic Media 뷰어* 확장
 
@@ -595,7 +595,7 @@ Adobe 시작 구성(설정된 속성, 확장, 규칙 및 데이터 요소 포함
 
 Adobe Launch에는 여러 개발 환경, 하나의 스테이징 환경 및 하나의 프로덕션 환경이 있을 수 있습니다. 기본적으로 AEM의 Adobe Launch Cloud 구성은 AEM 작성자 노드를 Adobe Launch의 스테이지 환경으로, AEM 게시 노드를 Adobe Launch의 프로덕션 환경에 가리킵니다. 이 정렬은 기본 AEM 설정을 사용할 경우 Adobe 시작 라이브러리를 스테이징 환경에 게시하여 AEM 작성자에서 사용한 다음 AEM 게시에서 사용할 수 있도록 프로덕션 환경에 게시해야 한다는 것을 의미합니다.
 
-Adobe 시작 환경에 대한 자세한 내용은 [환경](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html)을 참조하십시오.
+Adobe 시작 환경에 대한 자세한 내용은 [환경](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types)을 참조하십시오.
 
 라이브러리를 게시하려면 다음 2단계를 수행해야 합니다.
 
@@ -653,7 +653,7 @@ Adobe 시작 환경에 대한 자세한 내용은 [환경](https://docs.adobe.co
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Adobe 론치의 게시 프로세스에 대한 자세한 내용은 [게시](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html)을 참조하십시오.
+   Adobe 론치의 게시 프로세스에 대한 자세한 내용은 [게시](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference)을 참조하십시오.
 
 ## 통합 {#configuring-adobe-experience-manager-for-the-integration}에 대해 Adobe Experience Manager 구성
 
