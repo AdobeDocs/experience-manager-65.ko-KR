@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니
 * MIME 유형 접미사를 추가하는 중입니다. 대부분의 서비스 및 웹 사이트에는 URL에 `.jpg`을 추가하는 등 이미지 접미어가 필요합니다.
 * SEO용 URL의 폴더 경로 만들기(검색 엔진 최적화) 목적으로.
 
-   [Adobe Scene7 Publishing System이 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
+   [Adobe Dynamic Media Classic이 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
 
 * SEO(검색 엔진 최적화)를 위해 URL에 메타데이터를 추가합니다.
 
-   [Adobe Scene7 Publishing System이 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
+   [Adobe Dynamic Media Classic이 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
 
 * 다운로드를 트리거하도록 컨텐츠 처리를 설정합니다.
 * 개인화를 위해 이미지 제공 템플릿 URL을 간소화할 수 있습니다. 예를 들어 `rgb{XX,YY,ZZ}`을(를) RTF용 `\redXX\greenYY\blueZZ`으로 바꿉니다.
@@ -43,7 +43,7 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정
 >규칙 세트를 사용할 때는 주의하십시오.웹 사이트에 Dynamic Media 컨텐츠가 표시되지 않도록 방지할 수 있습니다.
 
 고유한 규칙 세트를 만드는 데 도움이 되는 샘플 규칙 세트를 사용할 수 있습니다.
-[규칙 세트 참조](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)를 참조하십시오.
+[규칙 세트 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)를 참조하십시오.
 
 모든 규칙 세트 만들기와 마찬가지로 XML 파일이 xmlvalid와 같은 XML 유효성 검사기 프로그램을 사용하여 업로드하기 전에 유효한지 확인합니다.
 [문제 해결 규칙 세트](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)도 참조하십시오.
@@ -51,9 +51,11 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정
 또한 먼저 라이브 프로덕션 환경에 영향을 주지 않는 스테이징 환경에서 규칙 세트를 테스트해야 합니다.
 프로덕션 환경과 스테이징 환경은 일반적으로 서로 다른 로그인을 필요로 합니다.
 
-* **NA 준비** 환경 로그인 페이지: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **EMEA 스테이징** 환경 로그인 페이지: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC 스테이징** 환경 로그인 페이지: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+로그인 정보](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)에 대해서는 [Adobe Dynamic Media Classic 데스크톱 응용 프로그램을 참조하십시오.
+
+<!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 규칙 세트[에서 &#39;is&#39; 이미지 대신 &#39;asset&#39; 사용을 참조하십시오.](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)
 
