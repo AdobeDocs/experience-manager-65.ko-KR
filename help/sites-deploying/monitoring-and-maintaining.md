@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9f22cb618d487a2b02dc17149d11b81a9e9e27be
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '5895'
+source-wordcount: '5891'
 ht-degree: 1%
 
 ---
@@ -203,13 +203,13 @@ AEM WCM 및 저장소에 대한 모든 액세스 요청은 여기에 등록됩�
    * `error.log`
 여기에는 다양한 수준의 오류 메시지(심각도)가 등록되어 있습니다.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 이 로그는 활성화된 경우에만  [!DNL Dynamic Media] 사용됩니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
 
    * `request.log`
 각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 이 로그는 활성화된 경우에만  [!DNL Dynamic Media] 사용됩니다. s7access 로그는 [!DNL Dynamic Media] 및 `/is/content`에서 `/is/image`에 대한 각 요청을 기록합니다.
 
    * `stderr.log`
