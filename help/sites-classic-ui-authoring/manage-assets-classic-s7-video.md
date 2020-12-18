@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1735'
 ht-degree: 100%
 
 ---
@@ -138,7 +138,7 @@ Dynamic Media Classic 비디오 구성 요소를 사용하는 것이 Dynamic Med
 | 접근 방법 | HTML5 우선 접근 방법. Flash는 HTML5 이외의 폴백에만 사용됩니다. | 대부분의 데스크톱에 포함된 Flash. HTML5는 모바일 및 태블릿에 사용됩니다. |
 | 배달 | 점진적 | 적응형 스트리밍 |
 | 추적 | 예 | 예 |
-| 확장성 | 예 | 예(Dynamic Media Classic 뷰어 SDK 사용) |
+| 확장성 | 예 | 아니오 |
 | 모바일 비디오 | 예 | 예 |
 
 ### 설정  {#setting-up}
