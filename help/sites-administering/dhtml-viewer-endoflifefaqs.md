@@ -1,134 +1,134 @@
 ---
-title: DHTML 뷰어 지원 중단 FAQ
-seo-title: DHTML 뷰어 지원 중단 FAQ
-description: 2014년 1월 31일부로 Scene7의 DHTML 뷰어 플랫폼은 공식적으로 사용이 종료됩니다. 이 알림은 FAQ에 대한 답변을 제공하므로 새로운 HTML5 뷰어 플랫폼으로 전환될 준비를 할 수 있습니다.
-seo-description: 2014년 1월 31일부로 Scene7의 DHTML 뷰어 플랫폼은 공식적으로 사용이 종료됩니다. 이 알림은 FAQ에 대한 답변을 제공하므로 새로운 HTML5 뷰어 플랫폼으로 전환될 준비를 할 수 있습니다.
-uuid: a78c03b3-6513-42e1-881f-6a9551659769
+title: DHTML 뷰어 사용 종료
+description: 2014년 1월 31일부터 DHTML 뷰어 플랫폼은 공식적으로 사용이 종료됩니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '42'
 ht-degree: 0%
 
 ---
 
 
-# DHTML 뷰어 지원 중단 FAQ{#dhtml-viewer-end-of-life-faqs}
+# DHTML 뷰어 지원 종료 {#dhtml-viewer-end-of-life}
 
-2014년 1월 31일부로 Scene7의 DHTML 뷰어 플랫폼은 공식적으로 사용이 종료됩니다. 이 알림은 FAQ에 대한 답변을 제공하므로 새로운 HTML5 뷰어 플랫폼으로 전환될 준비를 할 수 있습니다.
+2014년 1월 31일부터 DHTML 뷰어 플랫폼은 공식적으로 사용이 종료됩니다.
 
-**변경 사항은 무엇입니까?**
+지원되는 최신 뷰어에 대해서는 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
 
-2014년 1월 31일부터 Scene7은 DHTML 뷰어 플랫폼에 대한 지원이 공식적으로 종료됩니다.
+<!-- OBSOLETE CONTENT **What is the change?**
 
-**수명이 다 끝난다는 것은 무엇을 의미하는가?**
+Effective January 31, 2014, Scene7 will officially end-of-life support for the DHTML viewer platform.
 
-사용 종료란 Scene7이 더 이상 (1) DHTML 뷰어 플랫폼(2)에 향상된 기능을 추가하지 않으며, 더 이상 DHTML 뷰어 플랫폼에 대한 버그 수정을 해결하지 않으며, (3) 고객 지원 기능이 더 이상 DHTML 관련 뷰어 문제 또는 질문에 대한 문제 해결 또는 지원을 제공하지 않는다는 것을 의미합니다.
+**What does end-of-life mean?**
 
-**Scene7이 이러한 변경을 추진하는 이유는 무엇입니까?**
+End-of-life means that Scene7 will (1) no longer add any feature enhancements to the DHTML viewer platform (2) no longer address or release any bug fixes on the DHTML viewer platform and (3) customer care will no longer be troubleshooting or providing support for any DHTML-related viewer issues or questions.
 
-웹 표준은 끊임없이 진화하고 있으며 DHTML은 HTML5로 신속하게 대체되는 이전 웹 개발 기술입니다. 플랫폼으로서 DHTML의 가장 큰 제한 사항은 이제 HTML5가 크로스 브라우저를 일관되고 쉽게 지원할 수 있는 풍부한 경험을 제작할 수 없다는 것입니다. 예를 들어 다음과 같은 제한 사항에는 브라우저 간 지원이 없습니다.
+**Why is Scene7 making this change?**
 
-* 사용자 정의 커서
-* 둥근 모서리
-* 애니메이션(페이지 넘기기, 확대/축소 부드럽게 등)
-* 효과(그림자, 광선 등)
-* 완벽한 글꼴 지원
-* 플러그인 없는 비디오 재생
+Web standards are constantly evolving and DHTML is an older web development technology that is rapidly being replaced by HTML5. The biggest limitation to DHTML as a platform is that it is not capable of creating the richness of experience that HTML5 now can consistently and more easily support cross-browser. For example such limitations include lack of cross-browser support for:
 
-JSP 기반 솔루션과 Javascript API 모두 Scene7 DHTML 뷰어 플랫폼에만 해당되며 모바일 장치에서는 다중 터치 및 제스처 기능을 활용할 수 없습니다. 2011년/2012년 초에 릴리스된 DHTML 뷰어가 모바일에 맞게 최적화되었지만 유연한 SDK 구성 요소 기반 개발 프레임워크가 없기 때문에 사용자 정의 및 유지 관리가 어려웠습니다.
+* Custom cursors
+* Rounded corners
+* Animations (such as page flipping, zoom easing)
+* Effects (such as shadows, glow)
+* Complete font support
+* Plugin-less video playback
 
-DHTML에 대한 이러한 제한 사항과 HTML5를 데스크탑 및 모바일 모두에서 새로운 표준으로 부상하고 있는 업계 선두주자로서 Scene7은 HTML5 기반의 뷰어 플랫폼에 투자하기로 결정했습니다. 이러한 투자를 통해 고객은 데스크탑, iOS 및 Android 디바이스를 비롯한 다양한 화면에서 사용자에게 컨텐츠를 전달할 수 있는 풍부하고 매력적인 인터랙티브한 뷰어를 구축할 수 있는 강력한 플랫폼을 제공할 수 있습니다.
+Specific to the Scene7 DHTML viewer platform, both the JSP-based solution and the Javascript APIs were not optimized for mobile devices to take advantage of multi-touch and gesture capabilities. And even though DHTML viewers which were released in 2011/early 2012 are optimized for mobile, they were difficult to customize and maintain due to the lack of a flexible SDK component-based development framework.
 
-**뷰어가 DHTML 플랫폼을 사용하고 있는지 어떻게 알 수 있습니까?**
+Driven by these limitations on DHTML and rapid industry traction with HTML5 as an emerging standard across both desktop and mobile, Scene7 has decided to invest in an HTML5-based viewer platform. This investment will offer our customers a robust platform against which they can build richer, more engaging interactive viewers that can reach users on multiple screens including desktop, iOS and Android devices.
 
-회사에서 사용 중인 뷰어가 DHTML인지 여부를 확인하고 이러한 변경의 영향을 받으려면 다음 사항을 확인하십시오.
+**How do I know if my viewer is using the DHTML platform?**
 
-1. &quot;뷰어 기술&quot;이 &quot;DHTML&quot;로 지정된 이 표에 나열된 즉시 사용 가능한 Scene7 뷰어를 사용하고 있습니다.
+To determine if the viewer your company is using is DHTML and hence affected by this change, please check if:
 
-   [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
+1. Your company is using an out-of-box Scene7 viewer listed in this table where the "Viewer Technology" is designated as "DHTML":
 
-1. &quot;뷰어 기술&quot;이 &quot;DHTML&quot;로 지정된 이 표에서 최신 Scene7 뷰어를 기반으로 새 사전 설정으로 만들어진 뷰어를 회사에서 사용하고 있습니다.
+    [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
 
-   [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
+1. Your company is using a viewer that was created as a new preset based off an out-of-box Scene7 viewer in this table where the "Viewer Technology" is designated as "DHTML":
 
-1. 귀사에서 JSP 기반 DHTML 솔루션에서 만든 사용자 정의 뷰어를 사용하고 있습니다.
+    [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference)
+1. Your company is using a custom viewer created from the JSP-based DHTML solution:
 
-1. 회사에서 Javascript API에서 만든 사용자 정의 뷰어를 사용하고 있습니다.
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference)
+1. Your company is using a custom viewer created from the Javascript API:
 
-1. 회사에서 DHTML 다중 화면 플라이아웃 API로 만든 사용자 정의 뷰어를 사용하고 있습니다.
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer)
+1. Your company is using a custom viewer created with the DHTML multi-screen flyout API:
 
-1. 회사에서 DHTML 데스크톱 플라이아웃 API로 만든 사용자 정의 뷰어를 사용하고 있습니다.
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer)
 
-   [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer)
+1. Your company is using a custom viewer created with the DHTML desktop flyout API:
 
-1. 회사에서 DHTML 뷰어 패키지의 일부인 장치 감지 라이브러리를 사용하고 있습니다.
+    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer)
 
-   코드에 &quot;sj_deviceDetect.js&quot;가 포함되어 있는 JS를 찾습니다.
+1. Your company is using a device detection library that is part of the DHTML viewers package:
 
-   다음은 새로운 JS 장치 감지 코드로 대체되었습니다.[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers).
+   Look for JS include of "sj_deviceDetect.js" in your code.
 
-**대체 뷰어 플랫폼이란 무엇입니까?**
+   This has been replaced by new JS device detection code here: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Detecting_devices_and_browsers) .
 
-DHTML을 대체할 수 있는 방법은 다음 두 가지 모두로 구성된 Scene7 HTML5 뷰어 플랫폼입니다.
+**What is the replacement viewer platform?**
 
-* 기본 확대/축소, 플라이아웃 확대/축소, 이미지 세트, 견본 집합, 다차원 회전 및 혼합 미디어 등 다양한 뷰어 유형에서 모바일에 최적화된 상호 작용을 제공하는 HTML5 기본 뷰어. 이러한 뷰어의 최신 예는 다음을 참조하십시오.[https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
-* iOS 및 Android와 같은 HTML5 지원 사이트 및 장치에 대한 Adobe Scene7 뷰어를 광범위한 사용자 정의할 수 있는 HTML5 뷰어 SDK를 사용하면 뷰어의 모양과 인터랙션을 브랜딩할 수 있는 최고의 유연성과 창의성을 구현할 수 있습니다. 재사용할 수 있는 성능 최적화 구성 요소의 이점은 뷰어 개발 시 전반적인 비용을 절감하고 사용자 정의 개발을 가속화합니다.
+The replacement for DHTML is the Scene7 HTML5 viewer platform, consisting of both:
 
-**HTML5 뷰어 플랫폼에 DHTML 뷰어 플랫폼에서 전환해야 하는 기능이 있는 시기는 언제입니까?**
+* HTML5 out-of-box viewers featuring mobile optimized interactions across numerous viewer types including basic zoom, flyout zoom, image sets, swatch sets, multi-dimensional spin and mixed media. For full up-to-date examples of these viewers, please refer to: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
+* HTML5 viewer SDK which enables extensive customization of Adobe Scene7 viewers for HTML5 supported sites and devices (such as iOS and Android), imparting the utmost flexibility and creativity to brand the viewer appearance and interactivity. The benefit of reusable performance-optimized components lower the overall cost of viewer development and accelerate custom development.
 
-Scene7은 버전 5.5가 출시된 2011년 가을에 첫 번째 HTML5 뷰어 SDK를 출시했습니다. 그 이후로 다양한 기능을 플랫폼에 추가하고 더 많은 유형의 뷰어에 대한 지원을 확대했습니다. 대부분의 일반적인 뷰어 요구 사항의 경우 HTML5 뷰어 플랫폼에 지금 마이그레이션해야 하는 기능이 이미 포함되어 있을 수 있습니다. 분기마다 릴리스를 통해 이 뷰어 플랫폼에 지속적으로 적극적으로 투자하고 있습니다.
+**When will the HTML5 viewer platform have the features I need to transition off the DHTML viewer platform?**
 
-오늘 HTML5 뷰어 플랫폼으로 뷰어 요구 사항을 충족할 수 있는지 확인하려면 다음 설명서를 참조하십시오.
+Scene7 released the first HTML5 viewer SDK in Fall 2011 with the launch of version 5.5. Since then, we have added numerous features to the platform and extended support for more and more types of viewers. For most common viewer requirements, the HTML5 viewer platform likely already has the features you need to migrate now. And we continue to aggressively invest in this viewer platform with releases every quarter.
 
-[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (즉시 사용 가능한 뷰어 기능 및 사용자 정의 기능)
+To determine if your viewer requirements can be met today with the HTML5 viewer platform, please refer to the following documentation:
 
-[https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) (SDK API 설명서에 액세스하려면)
+[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#About_HTML5_Viewers) (for out of box viewers features and customization capabilities)
 
-HTML5 뷰어 SDK가 요구 사항을 충족하는지 확실하지 않은 경우 Adobe 전문 서비스 팀과 문의하십시오.
+[https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) (to access the SDK API documentation)
 
-**뷰어를 HTML5 플랫폼으로 전환하려면 어떻게 해야 합니까?**
+If you are still unsure about whether or not the HTML5 viewer SDK can meet your requirements, please consult with our professional services team.
 
-뷰어를 HTML5 플랫폼으로 전환하기 위해 Scene7에서는 다음 옵션을 제공합니다.
+**How do I transition my viewers over to the HTML5 platform?**
 
-1. Scene7의 기본 HTML5 뷰어 중 하나를 사용하십시오. 이러한 뷰어 중 예는 다음과 같습니다.[https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
-1. SPS 응용 프로그램 설정 아래에 즉시 사용 가능한 Scene7 HTML5 뷰어 중 하나를 구성합니다. 그러면 뷰어 크기, 전환, 확대/축소 동작 등과 같은 특정 동작을 사용자 정의할 수 있습니다.[https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
-1. CSS를 수정하여 단추 아트워크, 배치, 투명도, 배경색 등과 같은 시각 디자인을 변경함으로써 Scene7 HTML5 뷰어의 모양과 느낌을 사용자 정의합니다.[https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
-1. 여기에서 다운로드할 수 있는 SDK를 사용하여 처음부터 사용자 정의 HTML5 뷰어를 만듭니다.[https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). 전문 서비스를 통해 사용자 정의 뷰어를 만들거나 웹 개발 팀에서 직접 만들 수 있습니다.
+To transition your viewers to the HTML5 platform, Scene7 offers the following options:
 
-**HTML5를 지원하지 않는 브라우저는 어떻게 됩니까?**
+1. Use one of the Scene7 out-of-box HTML5 viewers, examples of which can be found here: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
+1. Configure one of the Scene7 out-of-box HTML5 viewers under the SPS application setup. This will allow you to customize certain behavior such as viewer size, transitions, zoom behavior, etc: [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
+1. Customize look and feel of the Scene7 out-of-box HTML5 viewers by modifying CSS to change visual design such as button artwork, placement, transparency, background colors, etc: [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
+1. Create a custom HTML5 viewer from scratch using the SDK which can be downloaded here: [https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html). You can engage with professional services to build the custom viewer or have your own web development team build it.
 
-HTML5는 다양한 모바일 디바이스와 웹 브라우저에서 지원되며 계속 매력적인 경험을 제공하고 있습니다. 현재 HTML5는 Internet Explorer 8 이하에서 지원되지 않지만 Scene7은 HTML5 뷰어 플랫폼을 혁신하여 IE 7 및 IE 8까지 지원을 확장했습니다. Scene7 HTML5 뷰어 플랫폼을 사용하면 단일 개발 플랫폼을 통해 데스크탑 및 모바일 사용자 모두의 대부분을 확보할 수 있습니다.
+**What about browsers that do not support HTML5?**
 
-HTML5 SDK 버전 2.2.1의 현재 시스템 요구 사항은 다음과 같습니다.
+HTML5 is supported across many mobile devices and web browsers, and continues to gain traction. Currently, even though HTML5 is not supported on Internet Explorer 8 or below, Scene7 has innovated our HTML5 viewer platform to extend support even to IE 7 and IE 8. With the Scene7 HTML5 viewer platform , you can reach the overwhelming majority of both desktop and mobile users with a single development platform.
 
-* Microsoft® Windows® XP 이상, Macintosh® OS X 10.6 이상
-* Firefox 17, Safari 5.1, Chrome 23, Internet Explorer 7 이상
-* iOS 3.2.2 이상
-* iPhone3 이상 및 iPad1 이상에서 인증(기본 브라우저)
-* Android OS 2.2 이상
+Current system requirements as of the HTML5 SDK version 2.2.1 are:
 
-브라우저가 HTML5 뷰어 플랫폼과 호환되는지 확인하려면 다음 예제 뷰어를 실행하십시오.
+* Microsoft® Windows® XP or later, Macintosh® OS X 10.6 or later
+* Firefox 17, Safari 5.1, Chrome 23, Internet Explorer 7 or later
+* iOS 3.2.2 or later
+* Certified on iPhone3 or later and iPad1 or later (native browsers)
+* Android OS 2.2 or later
+
+To check if your browser is compatible with our HTML5 viewer platform, launch the following example viewer:
 
 [https://s7d1.scene7.com/s7viewers/html5/flyout.html?asset=Scene7SharedAssets/Sample%20Image](https://s7d1.scene7.com/s7viewers/html5/flyout.html?asset=Scene7SharedAssets/Sample%20Image)
 
-마우스를 가져가거나 기본 이미지 위로 손가락을 드래그하여 확대된 이미지가 표시되는 경우 지원되는 브라우저/디바이스입니다.
+If you see the zoomed-in image by hovering your mouse or dragging your finger over the main image, then it is a supported browser/device.
 
-**기존 DHTML 뷰어를 사용하여 프로덕션에서 라이브하려면 어떤 옵션이 있습니까?**
+**What options do I have if I want to stay live in production with my existing DHTML viewer?**
 
-DHTML 기반 뷰어를 사용하여 제작 과정에서도 계속 라이브할 수 있지만 2014년 1월 31일 이후에는 향상된 기능, 버그 수정 및 고객 지원 기능이 없다는 점을 주목해야 합니다. 따라서 모든 고객은 더욱 강력한 HTML5 뷰어 플랫폼으로 마이그레이션해야 합니다.. 그러나 비즈니스 상황에서 EOL 날짜까지 이러한 마이그레이션이 금지되는 경우 지원되는 유지 관리 기간을 연장하기 위해 전문 서비스와 계약을 체결할 수 있습니다. 자세한 내용은 계정 관리자에게 문의하십시오.
+Although you can still be live in production with DHTML-based viewers, it is important to note that there will be no enhancements, bug fixes nor customer care after January 31, 2014. Hence, we strongly advise all customers to migrate over to our more robust HTML5 viewer platform. . However, if your business situation prevents such a migration by the EOL date, you have the option to contract with professional services to extend the supported maintenance time period. For more information, please contact your account manager.
 
-**자세한 내용은 누구에게 문의해야 합니까?**
+**Who do I contact for more information?**
 
-이 FAQ가 일부 질문에 답변하지 않은 경우 [Admin Console을 사용하여 지원 사례](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)를 만들거나 Adobe 계정 관리자에게 문의하십시오.
+If this FAQ did not answer all of your questions, please [use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) or contact your Adobe account manager.
+ -->
