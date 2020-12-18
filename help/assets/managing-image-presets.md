@@ -10,9 +10,9 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: ae3e6b1c2d3dfa63b9ea5763ebedaa57f5c7bc85
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '3866'
+source-wordcount: '3828'
 ht-degree: 3%
 
 ---
@@ -407,7 +407,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
     </ul>
     <div>
       선명하게 하기는
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">이미지 선명하게 하기</a>.
+     <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/sharpening_images.pdf">이미지 선명하게 하기</a>.
     </div> </td>
   </tr>
   <tr>
@@ -427,7 +427,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 Dynamic Media은 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">이미지 서버 프로토콜 명령 참조</a>에 정의됩니다.</p> <p>중요:API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에도 Dynamic Media은 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api">이미지 서버 프로토콜 명령 참조</a>에 정의됩니다.</p> <p>중요:API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령:<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
      <li>현지화 명령:<code>locale=</code> 및 <code>req=xlate</code></li>
@@ -444,7 +444,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 ## 이미지 수정자 {#defining-image-preset-options-with-image-modifiers}을(를) 사용하여 이미지 사전 설정 옵션 정의
 
-[기본] 및 [고급] 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 추가 옵션을 제공하는 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 Scene7 이미지 렌더링 API에 의존하며 [HTTP 프로토콜 참조](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html)에 자세히 정의됩니다.
+[기본] 및 [고급] 탭에서 사용할 수 있는 옵션 외에도 이미지 사전 설정을 정의할 때 추가 옵션을 제공하는 이미지 수정자를 정의할 수 있습니다. 이미지 렌더링은 [HTTP 프로토콜 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api)에 자세히 정의된 이미지 렌더링 API에 의존합니다.
 
 다음은 이미지 수정자로 수행할 수 있는 작업의 몇 가지 기본적인 예입니다.
 
@@ -452,7 +452,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 >
 >AEM[에서 일부 이미지 수정자를 사용할 수 없습니다.](#advanced-tab-options)
 
-* [op_invert](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_invert.html)  - 네거티브 이미지 효과에 대한 각 색상 구성 요소를 반전합니다.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api)  - 네거티브 이미지 효과에 대한 각 색상 구성 요소를 반전합니다.
 
    ```xml
    &op_invert=1
@@ -460,7 +460,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_blur.html)  - 이미지에 흐림 효과 필터를 적용합니다.
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api)  - 이미지에 흐림 효과 필터를 적용합니다.
 
    ```xml
    &op_blur=7
@@ -476,7 +476,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_op_brightness.html)  - 밝기를 줄이거나 늘립니다.
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api)  - 밝기를 줄이거나 늘립니다.
 
    ```xml
    &op_brightness=58
@@ -484,7 +484,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
    ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/http_ref/r_opac.html)  - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api)  - 이미지 불투명도를 조정합니다. 전경 불투명도를 줄일 수 있습니다.
 
    ```xml
    opac=29
