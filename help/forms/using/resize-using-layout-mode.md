@@ -2,9 +2,9 @@
 title: 레이아웃 모드를 사용하여 적응형 양식의 구성 요소 크기 조정
 description: '레이아웃 모드에서 사용할 수 있는 응답형 격자를 사용하여 구성 요소의 위치를 정의합니다. '
 translation-type: tm+mt
-source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
+source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,16 @@ ht-degree: 0%
 1. 레이아웃 모드에서 구성 요소를 탭하여 크기를 조정합니다. 응답형 격자의 시작과 끝에 파란색 점이 표시됩니다.
 1. 파란색 점을 드래그하여 놓아 응답형 격자에 있는 구성 요소의 위치를 정의합니다.
 
-   ![레이아웃 모드를 사용한 크기 조정](assets/layout_mode_resize_new_updated.png)
+   ![레이아웃 모드를 사용한 크기 조정](assets/layout_mode_resize_new_updated1.png)
 
    구성 요소를 탭한 후 표시되는 도구 모음은 다음 옵션으로 구성됩니다.
 
    * **상위:** 구성 요소의 상위 항목을 선택합니다.
    * **새 라인으로 이동:** 동일한 라인에 여러 구성 요소가 있는 경우 구성 요소를 다음 라인으로 이동합니다.
 
-   모든 크기 변경 내용을 실행 취소하고, **[!UICONTROL 중단점 레이아웃 되돌리기]**( ![중단점 되돌리기](assets/reverttopreviouslypublishedversion.png)) 옵션을 사용하여 크기가 조정된 구성 요소가 포함된 패널에 기본 레이아웃을 적용할 수 있습니다. 크기를 조정한 구성 요소의 상위 항목을 눌러 옵션을 봅니다.
+   또한 모든 크기 변경 내용을 실행 취소하고, **[!UICONTROL 중단점 레이아웃 되돌리기]**( ![중단점 되돌리기](assets/reverttopreviouslypublishedversion.png)) 옵션을 사용하여 크기가 조정된 구성 요소가 포함된 패널에 기본 레이아웃을 적용할 수 있습니다. 크기를 조정한 구성 요소의 상위 항목을 눌러 옵션을 봅니다.
+
+   구성 요소를 탭하고 **[!UICONTROL 중단점 레이아웃 되돌리기]** 옵션을 사용하여 모든 크기 변경 내용을 취소하고 구성 요소 수준에서 기본 레이아웃을 적용할 수 있습니다.
 
    >[!NOTE]
    >
