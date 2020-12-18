@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '5487'
+source-wordcount: '5485'
 ht-degree: 2%
 
 ---
@@ -571,7 +571,7 @@ Digital Asset Manager/Dynamic Media Classic 자산의 동기화에 의해 트리
 
    예, `psprocess="rasterize"&psresolution=120` .
 
-   사용할 수 있는 추가 업로드 작업 매개 변수를 보려면 [Adobe Dynamic Media Classic Image Production System API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html)을 참조하십시오.
+   사용할 수 있는 추가 업로드 작업 매개 변수를 보려면 [Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html)을 참조하십시오.
 
    >[!NOTE]
    >
