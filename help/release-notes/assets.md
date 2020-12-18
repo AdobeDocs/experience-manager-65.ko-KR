@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] 6.5의 릴리스 노트입니다.'
 description: ' [!DNL Adobe Experience Manager] 6.5 [!DNL Assets]의 새로운 기능 및 개선 사항.'
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 95%
+source-wordcount: '897'
+ht-degree: 93%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 95%
 
 [!DNL Dynamic Media]는 [!DNL Experience Manager Assets]에서 향상된 리치 미디어 작성 및 전달 기능을 제공하여 몰입 및 맞춤화된 최신 경험을 제공합니다. 고품질의 단일 마스터 자산을 업로드 및 고급 클라우드 렌더링 및 뷰어를 통해 모든 리디렉션의 조합을 제공하여 조직의 미디어 전략을 지원할 수 있습니다.
 
-새 [!DNL Dynamic Media] 기능에 대한 자세한 내용은 [Dynamic Media 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/release-notes/s7rn2017.html)를 참조하십시오.
+새 [!DNL Dynamic Media] 기능에 대한 자세한 내용은 [Dynamic Media 릴리스 노트](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html)를 참조하십시오.
 
 ### 360 비디오 지원 {#video-support}
 
@@ -80,7 +80,7 @@ ht-degree: 95%
 
 ### 액세스 가능성 개선 {#accessibility-enhancements}
 
-이제 [!DNL Dynamic Media] 뷰어에는 Aria 지원, 화면 판독기 및 대체 텍스트와 같은 향상된 액세스 가능성에 대한 지원이 포함되어 있습니다. 자세한 내용은 [Dynamic Media 뷰어 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
+이제 [!DNL Dynamic Media] 뷰어에는 Aria 지원, 화면 판독기 및 대체 텍스트와 같은 향상된 액세스 가능성에 대한 지원이 포함되어 있습니다. 자세한 내용은 [Dynamic Media 뷰어 릴리스 노트](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
 
 ## 검색 환경 개선 {#experience-enhancement-for-searching}
 
