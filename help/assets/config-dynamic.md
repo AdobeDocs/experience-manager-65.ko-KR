@@ -10,9 +10,9 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '7912'
+source-wordcount: '7835'
 ht-degree: 1%
 
 ---
@@ -910,42 +910,42 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
   <tr>
    <td>bgcolor</td>
    <td>FFFFFF</td>
-   <td><p>기본 배경색입니다. 실제 이미지 데이터를 포함하지 않는 회신 이미지의 모든 영역을 채우는 데 사용되는 RGB 값입니다.</p> <p>이미지 제공 API의 <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_bkgcolor.html">BkgColor</a>도 참조하십시오.</p> </td>
+   <td><p>기본 배경색입니다. 실제 이미지 데이터를 포함하지 않는 회신 이미지의 모든 영역을 채우는 데 사용되는 RGB 값입니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api">BkgColor</a>도 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>defaultpix</td>
    <td>300,300</td>
-   <td><p>기본 보기 크기입니다. 요청이 wid=, hei= 또는 scl=를 사용하여 명시적으로 보기 크기를 지정하지 않는 경우 서버는 응답 이미지를 이 폭 및 높이보다 작게 제한합니다.</p> <p>2개의 정수(0 이상)로 지정하고 쉼표로 구분하여 지정합니다. 폭과 높이(픽셀 단위) 두 값 중 하나 또는 둘 모두를 0으로 설정하여 제한되지 않도록 할 수 있습니다. 중첩/포함된 요청에 적용되지 않습니다.</p> <p>이미지 제공 API의 <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultpix.html">DefaultPix</a>도 참조하십시오.</p> <p>그러나 일반적으로 뷰어 사전 설정 또는 이미지 사전 설정을 사용하여 자산을 제공합니다. Defaultpix는 뷰어 사전 설정이나 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다.</p> </td>
+   <td><p>기본 보기 크기입니다. 요청이 wid=, hei= 또는 scl=를 사용하여 명시적으로 보기 크기를 지정하지 않는 경우 서버는 응답 이미지를 이 폭 및 높이보다 작게 제한합니다.</p> <p>2개의 정수(0 이상)로 지정하고 쉼표로 구분하여 지정합니다. 폭과 높이(픽셀 단위) 두 값 중 하나 또는 둘 모두를 0으로 설정하여 제한되지 않도록 할 수 있습니다. 중첩/포함된 요청에 적용되지 않습니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api">DefaultPix</a>도 참조하십시오.</p> <p>그러나 일반적으로 뷰어 사전 설정 또는 이미지 사전 설정을 사용하여 자산을 제공합니다. Defaultpix는 뷰어 사전 설정이나 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다.</p> </td>
   </tr>
   <tr>
    <td>default thumbpix</td>
    <td>100,100</td>
-   <td><p>기본 축소판 크기. 축소판 요청에 대해 attribute::DefaultPix 대신 사용됩니다(req=tmb).</p> <p>축소판 요청(req=tmb)이 wid=, hei= 또는 scl=을 사용하여 명시적으로 보기 크기를 지정하지 않는 경우 서버는 이 너비와 높이보다 큰 응답 이미지를 제한합니다.</p> <p>2개의 정수(0 이상)로 지정하고 쉼표로 구분하여 지정합니다. 폭과 높이(픽셀 단위) 두 값 중 하나 또는 둘 모두를 0으로 설정하여 제한되지 않도록 할 수 있습니다. </p> <p>중첩/포함된 요청에 적용되지 않습니다.</p> <p>이미지 제공 API의 <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">DefaultThumbPix</a>도 참조하십시오. </p> </td>
+   <td><p>기본 축소판 크기. 축소판 요청에 대해 attribute::DefaultPix 대신 사용됩니다(req=tmb).</p> <p>축소판 요청(req=tmb)이 wid=, hei= 또는 scl=을 사용하여 명시적으로 보기 크기를 지정하지 않는 경우 서버는 이 너비와 높이보다 큰 응답 이미지를 제한합니다.</p> <p>2개의 정수(0 이상)로 지정하고 쉼표로 구분하여 지정합니다. 폭과 높이(픽셀 단위) 두 값 중 하나 또는 둘 모두를 0으로 설정하여 제한되지 않도록 할 수 있습니다. </p> <p>중첩/포함된 요청에 적용되지 않습니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a>도 참조하십시오. </p> </td>
   </tr>
   <tr>
    <td>만료</td>
    <td>36000000</td>
-   <td><p>기본 클라이언트 캐시 시간을 라이브로 설정합니다. 특정 카탈로그 레코드에 유효한 카탈로그::Expiration 값이 포함되어 있지 않을 경우 기본 만료 간격을 제공합니다.</p> <p>실수, 0 이상. 응답 데이터가 생성된 이후 만료까지 남은 시간(밀리초)입니다. 응답 이미지를 항상 즉시 만료되도록 0으로 설정하면 클라이언트 캐싱을 효과적으로 사용할 수 없습니다. 기본적으로 이 값은 10시간으로 설정되며, 즉 새 이미지가 게시되는 경우 이전 이미지가 사용자의 캐시를 벗어나려면 10시간이 걸립니다. 캐시를 더 빨리 지워야 한다면 고객 지원 센터에 문의하십시오.</p> <p>이미지 제공 API의 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">만료</a>도 참조하십시오.</p> </td>
+   <td><p>기본 클라이언트 캐시 시간을 라이브로 설정합니다. 특정 카탈로그 레코드에 유효한 카탈로그::Expiration 값이 포함되어 있지 않을 경우 기본 만료 간격을 제공합니다.</p> <p>실수, 0 이상. 응답 데이터가 생성된 이후 만료까지 남은 시간(밀리초)입니다. 응답 이미지를 항상 즉시 만료되도록 0으로 설정하면 클라이언트 캐싱을 효과적으로 사용할 수 없습니다. 기본적으로 이 값은 10시간으로 설정되며, 즉 새 이미지가 게시되는 경우 이전 이미지가 사용자의 캐시를 벗어나려면 10시간이 걸립니다. 캐시를 더 빨리 지워야 한다면 고객 지원 센터에 문의하십시오.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">만료</a>도 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>jpegquality</td>
    <td>80</td>
-   <td><p>기본 JPEG 인코딩 속성입니다. JPEG 응답 이미지의 기본 속성을 지정합니다.</p> <p>정수 숫자 및 플래그. 쉼표로 구분됩니다. 첫 번째 값은 1.100 범위이며 품질을 정의합니다. 두 번째 값은 일반 동작의 경우 0이거나, JPEG 인코더에 사용되는 RGB 색도 다운샘플링을 사용하지 않도록 하려면 1일 수 있습니다.</p> <p>이미지 제공 API의 <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_jpegquality.html">JpegQuality</a>도 참조하십시오.</p> </td>
+   <td><p>기본 JPEG 인코딩 속성입니다. JPEG 응답 이미지의 기본 속성을 지정합니다.</p> <p>정수 숫자 및 플래그. 쉼표로 구분됩니다. 첫 번째 값은 1.100 범위이며 품질을 정의합니다. 두 번째 값은 일반 동작의 경우 0이거나, JPEG 인코더에 사용되는 RGB 색도 다운샘플링을 사용하지 않도록 하려면 1일 수 있습니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api">JpegQuality</a>도 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>maxpix</td>
    <td>2000,2000</td>
-   <td><p>이미지 크기 제한에 회신합니다. 클라이언트에 반환되는 최대 응답 이미지 폭과 높이입니다.</p> <p>요청 시 너비 또는 높이가 특성::MaxPix보다 큰 응답 이미지가 표시되는 경우 서버에서 오류를 반환합니다.</p> <p>이미지 제공 API의 <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_maxpix.html">MaxPix</a>도 참조하십시오.</p> </td>
+   <td><p>이미지 크기 제한에 회신합니다. 클라이언트에 반환되는 최대 응답 이미지 폭과 높이입니다.</p> <p>요청 시 너비 또는 높이가 특성::MaxPix보다 큰 응답 이미지가 표시되는 경우 서버에서 오류를 반환합니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api">MaxPix</a>도 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>resmode</td>
    <td>SHARP2</td>
-   <td><p>기본 리샘플링 모드입니다. 이미지 데이터의 크기 조정에 사용할 기본 리샘플링 및 보간 특성을 지정합니다.</p> <p>resMode=가 요청에 지정되지 않은 경우에 사용됩니다.</p> <p>허용되는 값에는 BILIN, BICUB 또는 SHARP2가 포함됩니다.</p> <p>열거형. 빌린의 경우 2로, 바이큐의 경우 3으로, 샤프2 보간 모드의 경우 4로 설정합니다. sharp2를 사용하면 최상의 결과를 얻을 수 있습니다.</p> <p>이미지 제공 API의 <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_is_cat_resmode.html">ResMode</a>도 참조하십시오.</p> </td>
+   <td><p>기본 리샘플링 모드입니다. 이미지 데이터의 크기 조정에 사용할 기본 리샘플링 및 보간 특성을 지정합니다.</p> <p>resMode=가 요청에 지정되지 않은 경우에 사용됩니다.</p> <p>허용되는 값에는 BILIN, BICUB 또는 SHARP2가 포함됩니다.</p> <p>열거형. 빌린의 경우 2로, 바이큐의 경우 3으로, 샤프2 보간 모드의 경우 4로 설정합니다. sharp2를 사용하면 최상의 결과를 얻을 수 있습니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api">ResMode</a>도 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>해상도</td>
    <td>72</td>
-   <td><p>기본 개체 해상도입니다. 특정 카탈로그 레코드에 유효한 카탈로그::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.</p> <p>0보다 큰 실수 일반적으로 인치당 픽셀로 표현되지만 미터당 픽셀 수와 같은 다른 단위로도 표현될 수 있습니다.</p> <p>이미지 제공 API의 <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_resolution.html">해상도</a>도 참조하십시오.</p> </td>
+   <td><p>기본 개체 해상도입니다. 특정 카탈로그 레코드에 유효한 카탈로그::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.</p> <p>0보다 큰 실수 일반적으로 인치당 픽셀로 표현되지만 미터당 픽셀 수와 같은 다른 단위로도 표현될 수 있습니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api">해상도</a>도 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td>축소판 사용 시간</td>
@@ -967,9 +967,9 @@ CMYK, RGB 또는 회색 출력을 사용하여 다이내믹 미디어 색상 관
 
 고급 사용 사례에서는 수동 구성 `icc=` 수정자를 사용하여 출력 색상 프로파일을 명시적으로 선택할 수 있습니다.
 
-* `icc` -  [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
+* `icc` -  [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
 
-* `iccEmbed` -  [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
+* `iccEmbed` -  [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
 표준 Adobe 색상 프로파일 세트는 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)의 [기능 팩 12445가 설치되어 있는 경우에만 사용할 수 있습니다. 모든 기능 팩과 서비스 팩은 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 사용할 수 있습니다. Feature Pack 12445는 Adobe 색상 프로파일을 제공합니다.
@@ -1015,55 +1015,55 @@ CMYK, RGB 또는 회색 출력을 사용하여 다이내믹 미디어 색상 관
    <td><strong>설명</strong></td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
    <td>문자열</td>
    <td>&lt;empty&gt;</td>
    <td>기본 RGB 색상 프로필의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
    <td>문자열</td>
    <td>&lt;empty&gt;</td>
    <td>기본 CMYK 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
    <td>문자열</td>
    <td>&lt;empty&gt;</td>
    <td>기본 회색 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
    <td>문자열</td>
    <td>&lt;empty&gt;</td>
    <td>포함된 색상 프로파일이 없는 RGB 이미지에 사용되는 기본 RGB 색상 프로필의 이름</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td>
    <td>문자열</td>
    <td>&lt;empty&gt;</td>
    <td>포함된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 CMYK 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
    <td>문자열</td>
    <td>&lt;empty&gt;</td>
    <td>포함된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 회색 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">icblackpoint보정</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">icblackpoint보정</a></td>
    <td>부울</td>
    <td>True</td>
    <td>색상 교정 중에 검은 점 보상을 수행할지 여부를 지정합니다. Adobe은 이 설정을 사용하는 것이 좋습니다.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">iccdiher</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">iccdiher</a></td>
    <td>부울</td>
    <td>False</td>
    <td>색상 교정 중에 디더링을 수행할지 여부를 지정합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
    <td>문자열</td>
    <td>상대적</td>
    <td><p>렌더링 의도를 지정합니다. 사용할 수 있는 값은 다음과 같습니다.<strong>가시 범위, 상대, 채도, 절대값. </strong><i></i>Adobe에서는  <strong>상대 </strong><i></i>를 기본값으로 권장합니다.</p> </td>
