@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 7에 대한 릴
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 69dbfeab855f70167eead24f3d411df4c82a0050
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
 source-wordcount: '4243'
 ht-degree: 20%
@@ -39,9 +39,9 @@ ht-degree: 20%
 
 * [!DNL Assets] 다양한 액세서빌러티 향상 기능을  [!DNL Dynamic Media] 제공합니다. 향상된 기능은 키보드 탐색, 화면 판독기 사용 및 유사한 보조 기술(AT)을 사용할 수 있도록 하는 것과 관련이 있습니다. [[!DNL Assets] 개선 사항](#assets-6570) 및 [[!DNL Dynamic Media] 개선 사항](#dynamic-media-6570)을 참조하십시오.
 
-* 양식 데이터 모델 HTTP 클라이언트 구성을 통해 성능을 최적화합니다.
+* [양식 데이터 모델 HTTP 클라이언트 ](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration) 구성을 통해 성능을 최적화할 수 있습니다.
 
-* 레이아웃 모드의 각 구성 요소에 대한 재설정 옵션 사용 가능
+* [레이아웃 모드에서 각 구성 요소에 대한 ](../../help/forms/using/resize-using-layout-mode.md#resize-components) 재설정 옵션 사용 가능
 
 * [!DNL Experience Manager] 6.5 서비스 팩 7 Forms은 다음 제품의 성능을 향상시킵니다.
 
