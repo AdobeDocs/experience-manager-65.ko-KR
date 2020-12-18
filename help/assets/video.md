@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f63e13486792f9975c84202b2cd3ddcf618ce0fc
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '11812'
+source-wordcount: '11277'
 ht-degree: 1%
 
 ---
@@ -1001,66 +1001,67 @@ YouTube에서 제거할 비디오를 게시 취소하려면 다음을 수행하�
 
 1. 상위 게시된 비디오를 나열하는 표에서 비디오 이름을 눌러 비디오를 재생하고 비디오의 대상자 유지(드롭다운) 보고서를 확인합니다.
 
-### Scene7 HTML5 뷰어 SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기
+<!-- OBSOLETE CONTENT ### Viewing video reports based on a video viewer that you created using the Scene7 HMTL5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 정의 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 Scene7 HTML5 뷰어 SDK를 기반으로 자체 비디오 뷰어를 만든 경우, 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서로 전송하도록 하십시오.
+If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Scene7 HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
 
-Dynamic Media 뷰어 참조 및 Scene7 HTML5 뷰어 SDK를 사용하여 고유한 비디오 뷰어를 만듭니다.
+Use the Dynamic Media Viewers Reference and the Scene7 HTML5 Viewers SDK to create your own video viewers.
 
-[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). -->
 
-<!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
+<!-- OBSOLETE CONTENT Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
 See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-Scene7 HTML5 뷰어 SDK를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 보려면:
+<!-- OBSOLETE CONTENT To view Video Reports based on a video viewer that you created using the Scene7 HTML5 Viewer SDK:
 
-1. 게시된 비디오 자산으로 이동합니다.
-1. 자산 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 뷰어를 선택합니다.]**
-1. 비디오 뷰어 사전 설정을 선택하고 포함 코드를 복사합니다.
-1. 포함 코드에서 다음 행을 찾습니다.
+1. Navigate to any published video asset.
+1. Near the upper-left corner of the asset's page, from the drop-down list, select **[!UICONTROL Viewers.]**
+1. Select any video viewer preset and copy the embed code.
+1. In the embed code, find the line with the following:
 
    `videoViewer.setParam("config2", "<value>");`
 
-   `config2` 매개 변수는 HTML5 뷰어에서 추적을 활성화합니다. 또한 비디오 보고 및 고객별 Adobe Analytics 구성에 대한 구성 정보가 포함된 회사별 사전 설정입니다.
+   The `config2` parameter enables tracking in HTML5 Viewers. It is also a company-specific preset that contains the configuration information for Video Reporting, and for customer-specific Adobe Analytics configurations.
 
-   config2 매개 변수에 대한 올바른 값은 **Embed 코드 **와 copy **URL **함수에 모두 있습니다. copy **URL **명령의 URL에서 찾을 매개 변수는 `&config2=<value>`입니다. 이 값은 거의 항상 `companypreset`이지만, 경우에 따라 `companypreset-1`, `companypreset-2` 등이 될 수도 있습니다.
+   The correct value for the config2 parameter is found in both the **Embed Code **and in the copy **URL **function. In the URL from the copy **URL **command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
 
-1. 사용자 정의 비디오 뷰어 코드에서 다음을 수행하여 뷰어 페이지에 AppMeasurementBridge .jsp를 추가합니다.
+1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
 
-   * 먼저 `&preset` 매개 변수가 필요한지 확인합니다.
-`config2` 매개 변수가 `companypreset`이면 `&preset=parameter`가 필요하지 않습니다.
-`config2`이(가) 다른 경우 사전 설정 매개 변수를 `config2` 매개 변수와 동일하게 설정합니다. 예를 들어 `config2=companypreset-2`인 경우 AppMeasurmentBridge.jsp URL에 `&param2=companypreset-2`을 추가합니다.
+    * First, determine if you need the `&preset` parameter.
+      If the `config2` parameter is `companypreset`, you do *not *need `&preset=parameter`.
+      If `config2` is anything else, set the preset parameter the same as the `config2` parameter. For example, if `config2=companypreset-2`, add `&param2=companypreset-2` to the AppMeasurmentBridge.jsp URL.
 
-   * 그런 다음 AppMeasurementBridge.jsp 스크립트를 추가합니다.
+    * Then, add the AppMeasurementBridge.jsp script:
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
-1. 다음을 수행하여 TrackingManager 구성 요소를 만듭니다.
+1. Create the TrackingManager component by doing the following:
 
-   * `s7sdk.Utils.init();`을(를) 호출한 후 다음을 추가하여 이벤트를 추적할 TrackingManager 인스턴스를 만듭니다.
+    * After calling `s7sdk.Utils.init();` create a TrackingManager instance to track events by adding the following:
       `var trackingManager = new s7sdk.TrackingManager();`
 
-   * 다음을 수행하여 구성 요소를 TrackingManager에 연결합니다.
-`s7sdk.Event.SDK_READY` 이벤트 핸들러에서 추적할 구성 요소를 TrackingManager에 연결합니다.
-예를 들어 구성 요소가 `videoPlayer`인 경우
+    * Connect components to TrackingManager by doing the following:
+      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager.
+      For example, if the component is `videoPlayer`, add
       `trackingManager.attach(videoPlayer);`
-를 클릭하여 trackingManager에 구성 요소를 첨부합니다. 한 페이지에서 여러 뷰어를 추적하려면 여러 추적 관리자 구성 요소를 사용합니다.
+      to attach the component to the trackingManager. To track multiple viewers on a page, use multiple tracking mangaer components.
 
-   * 다음을 추가하여 AppMeasurementBridge 개체를 만듭니다.
+    * Create the AppMeasurementBridge object by adding the following:
 
       ```
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
       ```
 
-   * 다음을 추가하여 추적 함수를 추가합니다.
+    * Add the tracking function by adding the following:
 
       ```
       trackingManager.setCallback(appMeasurementBridge.track,
        appMeasurementBridge);
       ```
-   appMeasurementBridge 객체에는 내장 추적 함수가 있습니다. 그러나 여러 추적 시스템 또는 기타 기능을 지원하기 위해 자체 코드를 제공할 수 있습니다.
 
-   자세한 내용은 *Scene7 HTML5 뷰어 SDK 사용자 안내서*&#x200B;에서 [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)에서 다운로드할 수 있는 *TrackingManager 구성 요소 사용*&#x200B;을 참조하십시오.
+   The appMeasurementBridge object has a built-in track function. However, you can provide your own to support multiple tracking systems or other functionality.
+
+   For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## 비디오 {#adding-captions-to-video}에 캡션 추가
 
@@ -1074,7 +1075,7 @@ Scene7 HTML5 뷰어 SDK를 사용하여 만든 비디오 뷰어를 기반으로 
 
 Dynamic Media에는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능이 있습니다. 이러한 전환은 JSON 텍스트를 숨김이지만 비디오 전체 스크립트로 웹 페이지에 포함할 수 있음을 의미합니다. 그런 다음 검색 엔진을 통해 컨텐츠를 크롤링하고 색인화하여 비디오를 보다 손쉽게 검색할 수 있게 하고 비디오 컨텐츠에 대한 추가 세부 정보를 고객에게 제공할 수 있습니다.
 
-URL에서 JSON 함수 사용에 대한 자세한 내용은 *Scene7 Image Serving API 도움말*&#x200B;의 [정적(이미지가 아님) 컨텐츠 제공](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html)을 참조하십시오.
+URL에서 JSON 함수 사용에 대한 자세한 내용은 *Dynamic Media 이미지 제공 및 렌더링 API 도움말*&#x200B;의 [정적(이미지가 아님) 컨텐츠 제공](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)을 참조하십시오.
 
 비디오에 캡션 또는 자막을 추가하려면:
 
@@ -1129,7 +1130,7 @@ URL에서 JSON 함수 사용에 대한 자세한 내용은 *Scene7 Image Serving
 >
 >사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장(chapter) 마커를 지원하지만 제3자 비디오 플레이어를 사용하는 경우에는 지원하지 않을 수 있습니다.
 
-원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 정의 비디오 뷰어를 만들고 브랜딩할 수 있습니다. 장 탐색을 사용하여 고유한 HTML5 뷰어를 만드는 방법에 대한 자세한 내용은 HTML5용 Adobe Scene7 Viewer SDK 안내서에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;수정자를 사용하여 비헤이비어 사용자 정의&quot; 머리글을 참조하십시오. Adobe Scene7 Viewer SDK는 [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)에서 다운로드할 수 있습니다.
+<!-- OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 캡션을 만드는 것과 동일한 방식으로 비디오의 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 사용 중인 WebVTT 캡션 파일과는 별도로 사용해야 합니다.캡션과 장을 하나의 WebVTT 파일로 결합할 수는 없습니다.
 
