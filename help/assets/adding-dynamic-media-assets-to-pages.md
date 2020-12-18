@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 863c3292d272ba4c80a80645262919e55870a437
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3096'
 ht-degree: 27%
 
 ---
@@ -202,8 +202,8 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 
    예를 들어 뷰어 수정자를 사용하여 다음을 수행할 수 있습니다.
 
-   * 캡션 파일을 비디오와 연결:[캡션][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * 탐색 파일을 비디오와 연결:[내비게이션][https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * 캡션 파일을 비디오와 연결:[캡션][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 탐색 파일을 비디오와 연결:[내비게이션][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
    구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 고급 설정을 편집할 수 있습니다.
 
