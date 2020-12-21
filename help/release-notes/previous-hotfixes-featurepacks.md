@@ -3,10 +3,10 @@ title: '[!DNL Adobe Experience Manager] 6.5 이전 서비스 팩 릴리스 노�
 description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩에 대한 릴리스 노트입니다.'
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 22112319b31576d542d04bdc3519795b02db356c
+source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
 workflow-type: tm+mt
-source-wordcount: '14804'
-ht-degree: 77%
+source-wordcount: '14953'
+ht-degree: 76%
 
 ---
 
@@ -95,6 +95,15 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 * 찾아보기 모드에서 NVDA는 유형/크기 메뉴 옵션에서 선택한 값을 내레이팅하지 않습니다. 시각적 포커스가 선택한 요소에 없습니다. 화면 판독기를 사용하는 사용자는 검색 모드를 사용할 수 없습니다(CQ-4294993).
 * 웹 페이지를 만들 때 사용자는 [!UICONTROL 컨텐트 페이지] 템플릿을 선택할 수 있습니다. [!UICONTROL 소셜 미디어] 탭에서 [!UICONTROL 기본 XF 변형]을 선택합니다. NVDA 검색 모드에서 경험 조각을 선택하려면 키보드 키(CQ-4292669)을 사용할 수 없습니다.
 * handlebars 라이브러리를 더 안전한 v4.7.3(NPR-34484)로 업데이트했습니다.
+* [!DNL Experience Manager Sites] 구성 요소의 다중 사이트 스크립팅 인스턴스(NPR-33925).
+* 새 폴더를 만들 때 폴더 이름 필드는 저장된 사이트 간 스크립팅(GRANITE-30094)에 취약합니다.
+* [!UICONTROL  시작] 페이지의 검색 결과와 경로 완료 템플릿은 사이트 간 스크립팅에 취약합니다(NPR-33719, NPR-33718).
+* 비정형 노드에서 이진 속성을 만들면 이진 속성 대화 상자에서 크로스 사이트 스크립팅이 발생합니다(NPR-33717).
+* CRX DE 인터페이스에서 [!UICONTROL 액세스 제어 테스트] 옵션을 사용할 때 크로스 사이트 스크립팅(NPR-33716).
+* 사용자 입력은 클라이언트에 정보를 보낼 때 다양한 구성 요소에 대해 적절히 인코딩되지 않습니다(NPR-33695).
+* Experience Manager 받은 편지함에 대한 달력 보기에서 사이트 간 스크립팅(NPR-33545).
+* `childrenlist.html`으로 끝나는 URL은 404 응답 대신 HTML 페이지를 표시합니다. 이러한 URL은 사이트 간 스크립팅(NPR-33441)에 취약합니다.
+
 
 ### [!DNL Assets] {#assets-6560}
 
@@ -281,6 +290,8 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
 * 관리 콘솔을 통해 추가된 커뮤니티 그룹의 기존 사용자는 커뮤니티 그룹 콘솔의 수정 사항에 대한 사용자 목록에서 제거됩니다(NPR-34315).
 
+* `TagFilterServlet`은 잠재적으로 민감한 데이터를 노출합니다(NPR-33868).
+
 <!--
 * Tag filters are vulnerable to sensitive information disclosure (NPR-33868).
 -->
@@ -328,6 +339,8 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 * 처음 필드 구성을 열면 속성 아이콘이 표시되지 않습니다(CQ-4296284).
 
 * 사용자는 적응형 양식을 제출할 때 `afPath`, `afSubmissionTime` 및 `signers` 등의 제출 메타데이터를 편집할 수 있습니다. 이 문제를 해결하기 위해 클라이언트측의 양식 제출 데이터에서 메타데이터 값이 제거됩니다. 사용자는 `FormSubmitInfo` 개체를 사용하여 서버에서 이러한 값을 검색할 수 있습니다(NPR-33654).
+
+* 사용자 입력은 클라이언트에 정보를 보낼 때 [!DNL Forms] 구성 요소에 대해 적절히 인코딩되지 않습니다(NPR-33611).
 
 **워크플로우**
 
