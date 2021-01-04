@@ -1,8 +1,8 @@
 ---
 title: PDF 문서 취합
 seo-title: PDF 문서 취합
-description: 'null'
-seo-description: 'null'
+description: Assembler 서비스를 사용하여 여러 PDF 문서를 하나의 PDF 문서로 취합하거나 하나의 PDF 문서를 여러 PDF 문서로 결합할 수 있습니다.
+seo-description: Assembler 서비스를 사용하여 여러 PDF 문서를 하나의 PDF 문서로 취합하거나 하나의 PDF 문서를 여러 PDF 문서로 결합할 수 있습니다.
 uuid: 0789feea-1bbc-4acd-9ad7-ddf4d05e1c68
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3dd2b0d3-6023-490a-9b17-e29cc21c1b9d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 1%
+source-wordcount: '159'
+ht-degree: 0%
 
 ---
 
