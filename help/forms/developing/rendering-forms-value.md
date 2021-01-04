@@ -1,8 +1,8 @@
 ---
 title: 값별로 Forms 렌더링
 seo-title: 값별로 Forms 렌더링
-description: 'null'
-seo-description: 'null'
+description: Forms API(Java)를 사용하여 Java API 및 웹 서비스 API를 사용하여 값을 기준으로 양식을 렌더링합니다.
+seo-description: Forms API(Java)를 사용하여 Java API 및 웹 서비스 API를 사용하여 값을 기준으로 양식을 렌더링합니다.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: 66bfd6870b4c09dc2ca1b66058e0b9e040a71507
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1848'
 ht-degree: 0%
 
 ---
