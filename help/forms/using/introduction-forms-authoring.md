@@ -10,7 +10,7 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a69e0354b5599ab555df650858f8f3200e21d2b8
+source-git-commit: f3b5b22c1d5573492867aef60457413ad5cf419f
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 3%
@@ -159,11 +159,11 @@ SchemaXML 및 JSON 스키마를 사용하는 것은 조직에서 백엔드 시�
    <td>첨부 파일 구성 요소를 사용하여 업로드된 모든 첨부 파일을 나열하는 필드를 추가합니다.</td>
   </tr>
   <tr>
-   <td>바닥글<br /> </td>
+   <td>헤더<br /> </td>
    <td>일반적으로 회사 로고, 양식의 제목 및 요약을 포함하는 페이지 헤더를 추가합니다.<br /> </td>
   </tr>
   <tr>
-   <td>헤더</td>
+   <td>바닥글</td>
    <td>일반적으로 저작권 정보와 다른 페이지에 대한 링크가 포함된 페이지 바닥글을 추가합니다. </td>
   </tr>
   <tr>
