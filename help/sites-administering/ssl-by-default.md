@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 ### 마법사와 함께 사용할 개인 키/인증서 쌍 생성 {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-아래에서 SSL 마법사에서 사용할 수 있는 DER 형식의 자체 서명 인증서를 만드는 예제를 확인할 수 있습니다.
+아래에서 SSL 마법사에서 사용할 수 있는 DER 형식의 자체 서명 인증서를 만드는 예제를 확인할 수 있습니다. 운영 체제에 따라 OpenSSL을 설치하고 OpenSSL 명령 프롬프트를 열고 개인 키/인증서를 생성할 폴더로 디렉토리를 변경합니다.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 1. 그런 다음 개인 키를 사용하여 CSR(인증서 서명 요청)을 생성합니다.
 
    ```shell
-   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj '/CN=localhost'
+   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
 1. SSL 인증서를 생성하고 개인 키로 서명합니다. 이 예에서, 다음 시점으로부터 1년이 만료됩니다.
