@@ -1,8 +1,8 @@
 ---
 title: 사용자 관리
 seo-title: 사용자 관리
-description: 'null'
-seo-description: 'null'
+description: 사용자 관리 API를 사용하여 역할, 권한 및 주체(사용자 또는 그룹이 될 수 있음)를 관리하고 사용자를 인증할 수 있는 클라이언트 애플리케이션을 만듭니다.
+seo-description: 사용자 관리 API를 사용하여 역할, 권한 및 주체(사용자 또는 그룹이 될 수 있음)를 관리하고 사용자를 인증할 수 있는 클라이언트 애플리케이션을 만듭니다.
 uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '6191'
+source-wordcount: '6243'
 ht-degree: 0%
 
 ---
