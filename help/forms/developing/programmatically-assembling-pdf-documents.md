@@ -1,8 +1,8 @@
 ---
 title: 프로그래밍 방식으로 PDF 문서 취합
 seo-title: 프로그래밍 방식으로 PDF 문서 취합
-description: 'null'
-seo-description: 'null'
+description: Assembler 서비스 API를 사용하여 Java API 및 웹 서비스 API를 사용하여 여러 PDF 문서를 하나의 PDF 문서로 결합합니다.
+seo-description: Assembler 서비스 API를 사용하여 Java API 및 웹 서비스 API를 사용하여 여러 PDF 문서를 하나의 PDF 문서로 결합합니다.
 uuid: aa3f8f39-1fbc-48d0-82ff-6caaadf125fc
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2092'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
