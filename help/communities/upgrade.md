@@ -1,8 +1,8 @@
 ---
 title: AEM 6.5 Communities로 업그레이드
 seo-title: AEM 6.5 Communities로 업그레이드
-description: 이전 버전에서 AEM 6.4 Communities로 업그레이드하는 방법
-seo-description: 이전 버전에서 AEM 6.4 Communities로 업그레이드하는 방법
+description: 이전 버전에서 AEM 6.5 Communities로 업그레이드하는 방법
+seo-description: 이전 버전에서 AEM 6.5 Communities로 업그레이드하는 방법
 uuid: 929c3892-1b3b-46a7-8e70-fa6864125911
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 2%
@@ -109,4 +109,4 @@ AEM 6.1부터는 JSP 구성 요소가 완전히 제거되었습니다. 커뮤니
 
 **2세대**:AEM 5.6.1에서 AEM 6.1까지 컬렉션 및  **** 소셜  **** 구성 요소가 혼합되어 있습니다. AEM 6.0은 새로운 [소셜 구성 요소 프레임워크](/help/communities/scf.md)(SCF) 및 AEM 6.2에 [공통 UGC 스토어](/help/communities/working-with-srp.md)를 도입했습니다. 여기서 UGC는 [스토리지 리소스 공급자](/help/communities/srp.md)(SRP)를 사용하여 액세스할 수 있습니다.
 
-**3세대**:AEM 6.2부터 UGC에 SRP for UGC를 선택해야 하는 HBS(Handlebars) 구성 요소로 SCF에 구현된  **** socialcomponent만 있습니다.
+**3세대**:AEM 6.2 버전에는 UGC에 대해 SRP를 선택해야 하는 HBS(Handlebars) 구성 요소로 SCF에 구현된  **** socialcomponents만 있습니다.
