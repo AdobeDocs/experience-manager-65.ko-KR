@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 저장소 작업
 seo-title: AEM Forms 저장소 작업
-description: 'null'
-seo-description: 'null'
+description: Java API 및 웹 서비스 API를 사용하여 폴더 생성, 쓰기, 목록 작성, 읽기, 업데이트 및 검색 리소스를 관리할 수 있도록 AEM Forms 저장소를 관리합니다. 또한 리소스 관계를 만들고 리소스를 잠그고 삭제하는 방법을 알아봅니다.
+seo-description: Java API 및 웹 서비스 API를 사용하여 폴더, 쓰기, 목록 작성, 읽기, 업데이트 리소스 및 검색 리소스를 만드는 AEM Forms 저장소를 관리합니다. 또한 리소스 관계를 만들고 리소스를 잠그고 삭제하는 방법을 알아봅니다.
 uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '9076'
+source-wordcount: '9143'
 ht-degree: 0%
 
 ---
