@@ -1,8 +1,8 @@
 ---
 title: PDF Portfolio 취합
 seo-title: PDF Portfolio 취합
-description: 'null'
-seo-description: 'null'
+description: PDF 포트폴리오를 취합하여 워드 파일, 이미지 파일, PDF 문서 등 다양한 유형의 문서를 결합할 수 있습니다. Java API 및 웹 서비스 API를 사용하여 PDF 포트폴리오를 취합할 수 있습니다.
+seo-description: PDF 포트폴리오를 취합하여 워드 파일, 이미지 파일, PDF 문서 등 다양한 유형의 문서를 결합할 수 있습니다. Java API 및 웹 서비스 API를 사용하여 PDF 포트폴리오를 취합할 수 있습니다.
 uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1851'
 ht-degree: 0%
 
 ---
