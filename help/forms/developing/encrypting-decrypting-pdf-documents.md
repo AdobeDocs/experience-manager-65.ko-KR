@@ -1,8 +1,8 @@
 ---
 title: PDF 문서 암호화 및 암호 해독
 seo-title: PDF 문서 암호화 및 암호 해독
-description: 'null'
-seo-description: 'null'
+description: 암호화 서비스를 사용하여 문서를 암호화하고 해독합니다. 암호화 서비스 작업에는 암호로 PDF 문서 암호화, 인증서로 PDF 문서 암호화, PDF 문서에서 암호 기반 암호화 제거, PDF 문서에서 인증서 기반 암호화 제거, 다른 서비스 작업을 수행할 수 있도록 PDF 문서 잠금 해제, 보안 PDF 문서의 암호화 유형 확인 등이 포함됩니다.
+seo-description: 암호화 서비스를 사용하여 문서를 암호화하고 해독합니다. 암호화 서비스 작업에는 암호로 PDF 문서 암호화, 인증서로 PDF 문서 암호화, PDF 문서에서 암호 기반 암호화 제거, PDF 문서에서 인증서 기반 암호화 제거, 다른 서비스 작업을 수행할 수 있도록 PDF 문서 잠금 해제, 보안 PDF 문서의 암호화 유형 확인 등이 포함됩니다.
 uuid: 4e4e2716-c21f-4bfe-ae7a-7e91442414ef
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '8118'
+source-wordcount: '8244'
 ht-degree: 0%
 
 ---
