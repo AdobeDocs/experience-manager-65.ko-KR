@@ -1,8 +1,8 @@
 ---
 title: 사용자 지정 CSS 파일을 사용하여 HTML Forms 렌더링
 seo-title: 사용자 지정 CSS 파일을 사용하여 HTML Forms 렌더링
-description: 'null'
-seo-description: 'null'
+description: 웹 브라우저에서 HTTP 요청에 응답하여 HTML 양식을 렌더링하려면 Forms 서비스를 사용하여 사용자 정의 CSS 파일을 참조합니다. Java API 및 웹 서비스 API를 사용하여 CSS 파일을 사용하는 HTML 양식을 렌더링할 수 있습니다.
+seo-description: 웹 브라우저에서 HTTP 요청에 응답하여 HTML 양식을 렌더링하려면 Forms 서비스를 사용하여 사용자 정의 CSS 파일을 참조합니다. Java API 및 웹 서비스 API를 사용하여 CSS 파일을 사용하는 HTML 양식을 렌더링할 수 있습니다.
 uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
-source-git-commit: fcbe1d860410e215cb7c438f94579e0b14d262a5
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
