@@ -1,8 +1,8 @@
 ---
 title: Bates 번호 매기기를 사용하여 문서 정리
 seo-title: Bates 번호 매기기를 사용하여 문서 정리
-description: 'null'
-seo-description: 'null'
+description: 'Java 및 웹 서비스 API를 사용하여 PDF 문서를 취합하려면 Bates 번호 매기기를 사용하십시오. '
+seo-description: 'Java 및 웹 서비스 API를 사용하여 PDF 문서를 취합하려면 Bates 번호 매기기를 사용하십시오. '
 uuid: 28d5faeb-6915-41a2-b6a0-78d255df024f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1927'
 ht-degree: 0%
 
 ---
