@@ -1,8 +1,8 @@
 ---
 title: PDF 유틸리티 서비스 Java APIQ빠른 시작(SOAP)
 seo-title: PDF 유틸리티 서비스 Java APIQ빠른 시작(SOAP)
-description: 'null'
-seo-description: 'null'
+description: PDF 유틸리티 서비스를 사용하여 PDF 문서를 XDP 문서로 변환하고, XDP 문서를 PDF 문서로 변환하고, PDF 문서 속성을 검색하고, PDF 문서의 저장 스타일을 설정하고, PDF 문서의 기밀 정보를 가릴 수 있습니다.
+seo-description: PDF 유틸리티 서비스를 사용하여 PDF 문서를 XDP 문서로 변환하고, XDP 문서를 PDF 문서로 변환하고, PDF 문서 속성을 검색하고, PDF 문서의 저장 스타일을 설정하고, PDF 문서의 기밀 정보를 가릴 수 있습니다.
 uuid: 96bb2bd5-b274-43d4-a664-49cc1c526b3f
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
