@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6693baecb1345c30385eb04caeb03960925f46c3
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 1%
@@ -299,7 +299,7 @@ AEM Communities에서 공용 저장소는 사용자가 생성한 콘텐츠(UGC)�
 
 모든 AEM 서버 인스턴스에서 동일한 암호화 키를 사용해야 하는 AEM Communities의 두 가지 기능이 있습니다. 이것은 [Analytics](/help/communities/analytics.md) 및 [ASRP](/help/communities/asrp.md)입니다.
 
-AEM 6.3의 경우 주요 자료가 파일 시스템에 저장되고 더 이상 저장소에 저장되지 않습니다.
+AEM 6.3부터는 주요 자료가 파일 시스템에 저장되고 더 이상 저장소에 저장되지 않습니다.
 
 작성자에서 다른 모든 인스턴스로 주요 자료를 복사하려면 다음을 수행해야 합니다.
 
