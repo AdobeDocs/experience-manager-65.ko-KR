@@ -1,8 +1,8 @@
 ---
 title: 인간 중심의 오랜 프로세스 호출
 seo-title: 인간 중심의 오랜 프로세스 호출
-description: 'null'
-seo-description: 'null'
+description: Invocation API를 사용하는 Java 웹 기반 클라이언트 응용 프로그램, 웹 서비스를 사용하는 ASP.NET 응용 프로그램 및 Remoting을 사용하는 Flex으로 빌드된 클라이언트 응용 프로그램을 사용하여 Workbench에서 만든 인간 중심의 긴 수명 프로세스를 프로그래밍 방식으로 호출할 수 있습니다.
+seo-description: Invocation API를 사용하는 Java 웹 기반 클라이언트 응용 프로그램, 웹 서비스를 사용하는 ASP.NET 응용 프로그램 및 Remoting을 사용하는 Flex으로 빌드된 클라이언트 응용 프로그램을 사용하여 Workbench에서 만든 인간 중심의 긴 수명 프로세스를 프로그래밍 방식으로 호출할 수 있습니다.
 uuid: 42269d41-a90f-4ea1-aeb9-d61337bcfa54
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '3669'
+source-wordcount: '3739'
 ht-degree: 0%
 
 ---
