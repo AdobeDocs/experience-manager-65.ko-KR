@@ -1,8 +1,8 @@
 ---
 title: 비대화형 PDF 문서 조합
 seo-title: 비대화형 PDF 문서 조합
-description: 'null'
-seo-description: 'null'
+description: 비대화형 PDF 양식을 입력으로 사용하여 Java API 및 웹 서비스 API를 사용하여 비대화형 PDF 문서를 조합합니다.
+seo-description: 비대화형 PDF 양식을 입력으로 사용하여 Java API 및 웹 서비스 API를 사용하여 비대화형 PDF 문서를 조합합니다.
 uuid: 0c7adeb4-9a3a-4ec5-ba33-c3642928d4ea
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1800'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Assembler 서비스 클라이언트를 만들고, DCX 문서를 참조하고, �
 
 **비대화형 PDF 문서 저장**
 
-단일 PDF 문서만 어셈블러 서비스에 전달되면 어셈블러 서비스는 컬렉션 개체 대신 단일 문서를 반환합니다. 즉, `invokeOneDocument` 작업을 호출하면 단일 문서가 반환됩니다. 이 섹션에서 참조되는 DDX 문서에는 비대화형 PDF 문서를 만드는 지침이 포함되어 있으므로 어셈블러 서비스는 PDF 파일로 저장할 수 있는 비대화형 PDF 문서를 반환합니다.
+하나의 PDF 문서만 Assembler 서비스로 전달되면 Assembler 서비스는 컬렉션 개체 대신 단일 문서를 반환합니다. 즉, `invokeOneDocument` 작업을 호출하면 단일 문서가 반환됩니다. 이 섹션에서 참조되는 DCX 문서에는 비대화형 PDF 문서를 만드는 지침이 포함되어 있으므로 어셈블러 서비스는 PDF 파일로 저장할 수 있는 비대화형 PDF 문서를 반환합니다.
 
 **참고 항목**
 
@@ -113,41 +113,41 @@ Assembler 서비스 클라이언트를 만들고, DCX 문서를 참조하고, �
 
 [프로그래밍 방식으로 PDF 문서 취합](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
-## Java API {#assemble-a-non-interactive-pdf-document-using-the-java-api}를 사용하여 비대화형 PDF 문서 취합
+## Java API {#assemble-a-non-interactive-pdf-document-using-the-java-api}를 사용하여 비대화형 PDF 문서 조합
 
-어셈블러 서비스 API(Java)를 사용하여 비대화형 PDF 문서를 조합합니다.
+Assembler Service API(Java)를 사용하여 비대화형 PDF 문서를 조합합니다.
 
-1. 프로젝트 파일을 포함합니다.
+1. 프로젝트 파일 포함
 
    Java 프로젝트의 클래스 경로에 adobe-assembler-client.jar 등의 클라이언트 JAR 파일을 포함합니다.
 
 1. 어셈블러 클라이언트를 만듭니다.
 
-   * 연결 속성을 포함하는 `ServiceClientFactory` 객체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 객체를 전달하여 `AssemblerServiceClient` 객체를 만듭니다.
+   * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하여 `AssemblerServiceClient` 개체를 만들고 `ServiceClientFactory` 개체를 전달합니다.
 
-1. 기존 DDX 문서를 참조합니다.
+1. 기존 DCX 문서를 참조합니다.
 
-   * 생성자를 사용하고 DCX 파일의 위치를 지정하는 문자열 값을 전달하여 DCX 문서를 나타내는 `java.io.FileInputStream` 객체를 만듭니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 객체를 전달하여 `com.adobe.idp.Document` 객체를 만듭니다.
+   * 생성자를 사용하여 DCX 문서를 나타내는 `java.io.FileInputStream` 객체를 만들고 DCX 파일의 위치를 지정하는 문자열 값을 전달합니다.
+   * 생성자를 사용하여 `com.adobe.idp.Document` 개체를 만들고 `java.io.FileInputStream` 개체를 전달합니다.
 
-1. 대화형 PDF 문서를 참조합니다.
+1. 인터랙티브한 PDF 문서를 참조합니다.
 
    * 생성자를 사용하여 대화형 PDF 문서의 위치를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
-   * `com.adobe.idp.Document` 개체를 만들고 PDF 문서가 포함된 `java.io.FileInputStream` 개체를 전달합니다. 이 `com.adobe.idp.Document` 객체는 `invokeOneDocument` 메서드에 전달됩니다.
+   * `com.adobe.idp.Document` 개체를 만들고 PDF 문서가 포함된 `java.io.FileInputStream` 개체를 전달합니다. 이 `com.adobe.idp.Document` 개체는 `invokeOneDocument` 메서드에 전달됩니다.
 
 1. 런타임 옵션을 설정합니다.
 
    * 생성자를 사용하여 런타임 옵션을 저장하는 `AssemblerOptionSpec` 객체를 만듭니다.
-   * `AssemblerOptionSpec` 객체에 속하는 메서드를 호출하여 비즈니스 요구 사항에 맞게 런타임 옵션을 설정합니다. 예를 들어 오류가 발생할 때 어셈블리 서비스에서 작업을 계속 처리하도록 지정하려면 `AssemblerOptionSpec` 객체의 `setFailOnError` 메서드를 호출하고 `false`를 전달합니다.
+   * `AssemblerOptionSpec` 개체에 속하는 메서드를 호출하여 비즈니스 요구 사항을 충족하도록 런타임 옵션을 설정합니다. 예를 들어 오류가 발생할 때 어셈블리 서비스에서 작업을 계속 처리하도록 하려면 `AssemblerOptionSpec` 개체의 `setFailOnError` 메서드를 호출하고 `false`를 전달합니다.
 
 1. PDF 문서를 조합합니다.
 
    `AssemblerServiceClient` 객체의 `invokeOneDocument` 메서드를 호출하고 다음 값을 전달합니다.
 
-   * DCX 문서를 나타내는 `com.adobe.idp.Document` 객체 이 DDX 문서에 PDF 소스 요소의 값 `inDoc`이 들어 있는지 확인합니다.
-   * 대화형 PDF 문서를 포함하는 `com.adobe.idp.Document` 개체
-   * 기본 글꼴 및 작업 로그 레벨을 포함한 런타임 옵션을 지정하는 `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` 객체
+   * DCX 문서를 나타내는 `com.adobe.idp.Document` 객체입니다. 이 DCX 문서에 PDF 소스 요소의 `inDoc` 값이 포함되어 있는지 확인합니다.
+   * 대화형 PDF 문서를 포함하는 `com.adobe.idp.Document` 개체입니다.
+   * 기본 글꼴 및 작업 로그 수준을 포함하여 런타임 옵션을 지정하는 `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` 객체입니다.
 
    `invokeOneDocument` 메서드는 비대화형 PDF 문서를 포함하는 `com.adobe.idp.Document` 개체를 반환합니다.
 
@@ -158,11 +158,11 @@ Assembler 서비스 클라이언트를 만들고, DCX 문서를 참조하고, �
 
 * &quot;빠른 시작(SOAP 모드):Java API를 사용하여 비대화형 PDF 문서 취합&quot;
 
-## 웹 서비스 API {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}를 사용하여 비대화형 PDF 문서 취합
+## 웹 서비스 API {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}를 사용하여 비대화형 PDF 문서 조합
 
-어셈블러 서비스 API(웹 서비스)를 사용하여 비대화형 PDF 문서를 조합합니다.
+Assembler Service API(웹 서비스)를 사용하여 비대화형 PDF 문서를 조합합니다.
 
-1. 프로젝트 파일을 포함합니다.
+1. 프로젝트 파일 포함
 
    MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
