@@ -1,8 +1,8 @@
 ---
 title: 호출 API 빠른 시작
 seo-title: 호출 API 빠른 시작
-description: 'null'
-seo-description: 'null'
+description: 빠른 시작을 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호출합니다.
+seo-description: 빠른 시작을 사용하여 프로그래밍 방식으로 AEM Forms 서비스를 호출합니다.
 uuid: acf67177-98a4-4c99-95a5-3086907d7c2c
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1249'
 ht-degree: 3%
 
 ---
