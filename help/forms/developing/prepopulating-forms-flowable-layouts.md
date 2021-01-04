@@ -1,8 +1,8 @@
 ---
 title: Forms에 플로우 가능한 레이아웃 미리 채우기
 seo-title: Forms에 플로우 가능한 레이아웃 미리 채우기
-description: 'null'
-seo-description: 'null'
+description: Java API 및 웹 서비스 API를 사용하여 렌더링된 양식 내에서 사용자에게 데이터를 표시하려면 양식을 플로우 가능한 레이아웃으로 미리 채웁니다.
+seo-description: Java API 및 웹 서비스 API를 사용하여 렌더링된 양식 내에서 사용자에게 데이터를 표시하려면 양식을 플로우 가능한 레이아웃으로 미리 채웁니다.
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '3489'
+source-wordcount: '3533'
 ht-degree: 0%
 
 ---
@@ -342,56 +342,56 @@ Forms API(웹 서비스)를 사용하여 플로우 가능한 레이아웃으로 
       ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
    * 양식의 정적 부분에 나타나는 각 필드에 대한 마지막 하위 단계를 반복하여 나머지 모든 요소를 헤더 요소에 추가합니다(XML 데이터 소스 다이어그램에서 이러한 필드는 섹션 A에 표시됩니다. [데이터 하위 그룹 이해](#understanding-data-subgroups) 참조).
-   * `Document` 객체의 `createElement` 메서드를 호출하여 XML 데이터 소스의 detail 요소를 만듭니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환값을 `Element`로 형 변환합니다. 그런 다음 `root` 객체의 `appendChild` 메서드를 호출하여 세부 요소를 루트 요소에 추가하고 detail 요소 객체를 인수로 전달합니다. 세부 요소에 추가되는 XML 요소는 양식의 동적 부분에 해당합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
+   * `Document` 객체의 `createElement` 메서드를 호출하여 XML 데이터 소스의 세부 사항 요소를 만듭니다. 요소의 이름을 나타내는 문자열 값을 `createElement` 메서드에 전달합니다. 반환 값을 `Element`으로 캐스팅합니다. 그런 다음 `root` 객체의 `appendChild` 메서드를 호출하여 세부 사항 요소를 루트 요소에 추가하고 detail 요소 객체를 인수로 전달합니다. 세부 사항 요소에 추가되는 XML 요소는 양식의 동적 부분에 해당합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
       ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * `Document` 객체의 `createElement` 메서드를 호출하여 detail 요소에 속하는 자식 요소를 만들고 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환값을 `Element`로 형 변환합니다. 그런 다음 `appendChild` 메서드를 호출하여 자식 요소의 값을 설정하고 `Document` 객체의 `createTextNode` 메서드를 인수로 전달합니다. 자식 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로 detail 요소의 `appendChild` 메서드를 호출하여 자식 요소를 detail 요소에 추가하고 자식 요소 객체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
+   * `Document` 객체의 `createElement` 메서드를 호출하여 세부 요소에 속하는 하위 요소를 만들고 요소의 이름을 나타내는 문자열 값을 전달합니다. 반환 값을 `Element`으로 캐스팅합니다. 그런 다음 `appendChild` 메서드를 호출하여 자식 요소의 값을 설정하고 `Document` 객체의 `createTextNode` 메서드를 인수로 전달합니다. 하위 요소의 값으로 나타나는 문자열 값을 지정합니다. 마지막으로, detail 요소의 `appendChild` 메서드를 호출하여 하위 요소를 detail 요소에 추가하고 자식 요소 객체를 인수로 전달합니다. 다음 코드 행은 이 응용 프로그램 논리를 보여 줍니다.
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * 세부 요소에 추가할 모든 XML 요소에 대해 마지막 하위 단계를 반복합니다. 구매 발주 양식을 채우는 데 사용되는 XML 데이터 소스를 제대로 만들려면 세부 요소에 다음 XML 요소를 추가해야 합니다.`txtDescription`, `numQty` 및 `numUnitPrice`.
-   * 양식을 미리 채우는 데 사용된 모든 데이터 항목에 대해 마지막 두 하위 단계를 반복합니다.
+   * 세부 요소에 추가할 모든 XML 요소에 대해 마지막 하위 단계를 반복합니다. 구매 주문서 양식을 채우는 데 사용되는 XML 데이터 소스를 올바르게 만들려면 다음 XML 요소를 세부 사항 요소에 추가해야 합니다.`txtDescription`, `numQty` 및 `numUnitPrice`.
+   * 양식을 미리 채우는 데 사용된 모든 데이터 항목에 대해 마지막 2개의 하위 단계를 반복합니다.
 
 1. XML 데이터 소스 변환
 
    * `javax.xml.transform.Transformer` 객체의 정적 `newInstance` 메서드를 호출하여 `javax.xml.transform.Transformer` 객체를 만듭니다.
    * `TransformerFactory` 객체의 `newTransformer` 메서드를 호출하여 `Transformer` 객체를 만듭니다.
    * 생성자를 사용하여 `ByteArrayOutputStream` 객체를 만듭니다.
-   * 생성자를 사용하고 1단계에서 만든 `org.w3c.dom.Document` 객체를 전달하여 `javax.xml.transform.dom.DOMSource` 객체를 만듭니다.
-   * 생성자를 사용하고 `ByteArrayOutputStream` 객체를 전달하여 `javax.xml.transform.dom.DOMSource` 객체를 만듭니다.
-   * `javax.xml.transform.Transformer` 객체의 `transform` 메서드를 호출하고 `javax.xml.transform.dom.DOMSource` 및 `javax.xml.transform.stream.StreamResult` 객체를 전달하여 Java `ByteArrayOutputStream` 객체를 채웁니다.
+   * 생성자를 사용하여 1단계에서 만든 `org.w3c.dom.Document` 개체를 전달하여 `javax.xml.transform.dom.DOMSource` 개체를 만듭니다.
+   * 생성자를 사용하여 `javax.xml.transform.dom.DOMSource` 개체를 만들고 `ByteArrayOutputStream` 개체를 전달합니다.
+   * `javax.xml.transform.Transformer` 개체의 `transform` 메서드를 호출하고 `javax.xml.transform.dom.DOMSource` 및 `javax.xml.transform.stream.StreamResult` 개체를 전달하여 Java `ByteArrayOutputStream` 개체를 채웁니다.
    * 바이트 배열을 만들고 `ByteArrayOutputStream` 객체의 크기를 바이트 배열에 할당합니다.
    * `ByteArrayOutputStream` 객체의 `toByteArray` 메서드를 호출하여 바이트 배열을 채웁니다.
-   * 생성자를 사용하여 `BLOB` 객체를 만들고 해당 `setBinaryData` 메서드를 호출한 다음 바이트 배열을 전달합니다.
+   * 생성자를 사용하여 `BLOB` 객체를 만들고 해당 `setBinaryData` 메서드를 호출하고 바이트 배열을 전달합니다.
 
 1. 미리 채워진 양식 렌더링
 
    `FormsService` 객체의 `renderPDFForm` 메서드를 호출하고 다음 값을 전달합니다.
 
-   * 파일 이름 확장자를 포함하여 양식 디자인 이름을 지정하는 문자열 값
-   * 양식과 병합할 데이터가 포함된 `BLOB` 객체입니다. 1단계와 2단계에서 만든 `BLOB` 객체를 사용해야 합니다.
-   * 런타임 옵션을 저장하는 `PDFFormRenderSpecc` 객체입니다. 자세한 내용은 [AEM Forms API 참조 설명서](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)를 참조하십시오.
-   * Forms 서비스에 필요한 URI 값이 포함된 `URLSpec` 객체
-   * 첨부 파일을 저장하는 `java.util.HashMap` 객체입니다. 이 매개 변수는 선택 사항이며 양식에 파일을 첨부하지 않으려면 `null`를 지정할 수 있습니다.
+   * 파일 이름 확장자를 포함하여 양식 디자인 이름을 지정하는 문자열 값입니다.
+   * 양식과 병합할 데이터가 포함된 `BLOB` 개체 1단계와 2단계에서 만든 `BLOB` 개체를 사용해야 합니다.
+   * 런타임 옵션을 저장하는 `PDFFormRenderSpecc` 객체입니다. 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)를 참조하십시오.
+   * Forms 서비스에 필요한 URI 값이 포함된 `URLSpec` 객체입니다.
+   * 첨부 파일을 저장하는 `java.util.HashMap` 객체입니다. 이 매개 변수는 선택 사항이며, 양식에 파일을 첨부하지 않으려면 `null`을 지정할 수 있습니다.
    * 메서드에 의해 채워지는 빈 `com.adobe.idp.services.holders.BLOBHolder` 객체입니다. 렌더링된 PDF 양식을 저장하는 데 사용됩니다.
    * 메서드에 의해 채워지는 빈 `javax.xml.rpc.holders.LongHolder` 객체입니다. 이 인수는 양식의 페이지 수를 저장합니다.
-   * 메서드에 의해 채워지는 빈 `javax.xml.rpc.holders.StringHolder` 객체입니다. 이 인수는 locale 값을 저장합니다.
+   * 메서드에 의해 채워지는 빈 `javax.xml.rpc.holders.StringHolder` 객체입니다. 이 인수는 로케일 값을 저장합니다.
    * 이 작업의 결과를 포함할 빈 `com.adobe.idp.services.holders.FormsResultHolder` 객체입니다.
 
-   `renderPDFForm` 메서드는 마지막 인수 값으로 전달된 `com.adobe.idp.services.holders.FormsResultHolder` 객체를 클라이언트 웹 브라우저에 작성해야 하는 양식 데이터 스트림으로 채웁니다.
+   `renderPDFForm` 메서드는 클라이언트 웹 브라우저에 작성해야 하는 양식 데이터 스트림으로 마지막 인수 값으로 전달되는 `com.adobe.idp.services.holders.FormsResultHolder` 객체를 채웁니다.
 
-   * `com.adobe.idp.services.holders.FormsResultHolder` 객체의 `value` 데이터 멤버 값을 가져와서 `FormResult` 객체를 만듭니다.
-   * `FormsResult` 객체의 `getOutputContent` 메서드를 호출하여 양식 데이터가 포함된 `BLOB` 객체를 만듭니다.
+   * `com.adobe.idp.services.holders.FormsResultHolder` 개체의 `value` 데이터 멤버의 값을 가져와 `FormResult` 개체를 만듭니다.
+   * `FormsResult` 개체의 `getOutputContent` 메서드를 호출하여 양식 데이터를 포함하는 `BLOB` 개체를 만듭니다.
    * `getContentType` 메서드를 호출하여 `BLOB` 객체의 내용 유형을 가져옵니다.
-   * `setContentType` 메서드를 호출하고 `BLOB` 객체의 내용 유형을 전달하여 `javax.servlet.http.HttpServletResponse` 객체의 내용 유형을 설정합니다.
-   * `javax.servlet.http.HttpServletResponse` 객체의 `getOutputStream` 메서드를 호출하여 클라이언트 웹 브라우저에 양식 데이터 스트림을 작성하는 데 사용되는 `javax.servlet.ServletOutputStream` 객체를 만듭니다.
-   * 바이트 배열을 만들어 `BLOB` 객체의 `getBinaryData` 메서드를 호출하여 채웁니다. 이 작업은 `FormsResult` 객체의 내용을 바이트 배열에 할당합니다.
+   * `setContentType` 메서드를 호출하고 `BLOB` 개체의 내용 유형을 전달하여 `javax.servlet.http.HttpServletResponse` 개체의 내용 유형을 설정합니다.
+   * `javax.servlet.http.HttpServletResponse` 개체의 `getOutputStream` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `javax.servlet.ServletOutputStream` 개체를 만듭니다.
+   * 바이트 배열을 만들고 `BLOB` 객체의 `getBinaryData` 메서드를 호출하여 채웁니다. 이 작업은 바이트 배열에 `FormsResult` 객체의 내용을 할당합니다.
    * 양식 데이터 스트림을 클라이언트 웹 브라우저에 보내려면 `javax.servlet.http.HttpServletResponse` 객체의 `write` 메서드를 호출합니다. 바이트 배열을 `write` 메서드에 전달합니다.
 
    >[!NOTE]
    >
-   >`renderPDFForm` 메서드는 마지막 인수 값으로 전달된 `com.adobe.idp.services.holders.FormsResultHolder` 객체를 클라이언트 웹 브라우저에 작성해야 하는 양식 데이터 스트림으로 채웁니다.
+   >`renderPDFForm` 메서드는 클라이언트 웹 브라우저에 작성해야 하는 양식 데이터 스트림으로 마지막 인수 값으로 전달되는 `com.adobe.idp.services.holders.FormsResultHolder` 객체를 채웁니다.
 
 **참고 항목**
 
