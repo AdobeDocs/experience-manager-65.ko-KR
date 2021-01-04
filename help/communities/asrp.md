@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
+source-git-commit: 3202866bd38779a9784e44ab470152df61c585f5
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -97,9 +97,9 @@ ASRP는 모든 작성자 및 게시 인스턴스에서 공통 스토어로 식�
 
 AEM 작성자 인스턴스에서:
 
-* 주 메뉴에서 **[!UICONTROL 도구 > 작업 > 복제]**&#x200B;로 이동합니다.
+* 주 메뉴에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 복제]**&#x200B;로 이동합니다.
 * **트리 활성화** 선택
-* **시작 경로**:찾아보기  `/etc/socialconfig/srpc/`
+* **시작 경로**:찾아보기  `/conf/global/settings/communities/srpc/`
 * **수정된 항목만 선택 취소**
 * **활성화** 선택
 
@@ -144,8 +144,8 @@ Adobe 클라우드 스토리지 인프라는 *궁극적인 일관성*&#x200B;을
 
 모든 작성 및 게시 AEM 인스턴스에서 스토리지 구성 콘솔을 다시 방문하거나 AEM 저장소를 확인합니다.
 
-JCR에서 [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)인 경우:
+JCR에서 [/conf/global/settings/communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) 노드가 포함되어 있지 않습니다. 이는 스토리지 공급자가 JSRP임을 의미합니다.
-* srpc 노드가 있고 노드 [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)을 포함하는 경우 기본 구성의 속성은 ASRP를 기본 공급자로 정의합니다.
+* [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) 노드가 포함되어 있지 않습니다. 이는 스토리지 공급자가 JSRP임을 의미합니다.
+* srpc 노드가 있고 [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) 노드를 포함하는 경우 기본 구성의 속성은 ASRP를 기본 공급자로 정의합니다.
 
