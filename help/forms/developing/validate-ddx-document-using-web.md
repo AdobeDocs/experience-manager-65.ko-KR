@@ -1,8 +1,8 @@
 ---
 title: 웹 서비스 API를 사용하여 DCX 문서 유효성 검사
 seo-title: 웹 서비스 API를 사용하여 DCX 문서 유효성 검사
-description: 'null'
-seo-description: 'null'
+description: Assembler Service API를 사용하여 DDC 문서의 유효성을 확인합니다.
+seo-description: Assembler Service API를 사용하여 DDC 문서의 유효성을 확인합니다.
 uuid: f6125746-6138-4e46-a1c4-fb24fd7399c5
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/validating_ddx_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
