@@ -1,8 +1,8 @@
 ---
 title: 작업 관리자 서비스 Java API QuickStart(SOAP)
 seo-title: 작업 관리자 서비스 Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 작업 관리자 서비스를 사용하여 작업을 할당하거나 작업을 잠그고 사용자에게 할당된 작업을 검색하고 작업에서 양식 데이터를 검색하며 양식 데이터를 수정하고 첨부 파일을 검색하고 작업 정보를 검색할 수 있습니다.
+seo-description: 작업 관리자 서비스를 사용하여 작업을 할당하거나 작업을 잠그고 사용자에게 할당된 작업을 검색하고 작업에서 양식 데이터를 검색하며 양식 데이터를 수정하고 첨부 파일을 검색하고 작업 정보를 검색할 수 있습니다.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
