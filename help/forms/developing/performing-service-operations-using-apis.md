@@ -1,8 +1,8 @@
 ---
 title: API를 사용하여 서비스 작업 수행
 seo-title: API를 사용하여 서비스 작업 수행
-description: 'null'
-seo-description: 'null'
+description: AEM Forms API를 사용하여 클라이언트 애플리케이션을 개발합니다.
+seo-description: AEM Forms API를 사용하여 클라이언트 애플리케이션을 개발합니다.
 uuid: a5697c91-d643-4265-973c-18467ca0437a
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fa1426f-f453-45c5-89b9-67038f56c70e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 1%
+source-wordcount: '189'
+ht-degree: 0%
 
 ---
 
