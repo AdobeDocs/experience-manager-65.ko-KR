@@ -1,8 +1,8 @@
 ---
 title: 서명 서비스 Java API QuickStart(SOAP)
 seo-title: 서명 서비스 Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 서명 서비스를 사용하여 PDF 문서에 서명 필드를 추가하고, 서명 필드 이름을 검색하고, 서명 필드를 수정하고, PDF 문서에 디지털 서명을 하고, XFA 기반 양식에 디지털 서명을 하고, PDF 문서를 인증하고, 디지털 서명을 확인하고, 여러 디지털 서명을 검증하고, 디지털 서명을 제거할 수 있습니다.
+seo-description: 서명 서비스를 사용하여 PDF 문서에 서명 필드를 추가하고, 서명 필드 이름을 검색하고, 서명 필드를 수정하고, PDF 문서에 디지털 서명을 하고, XFA 기반 양식에 디지털 서명을 하고, PDF 문서를 인증하고, 디지털 서명을 확인하고, 여러 디지털 서명을 검증하고, 디지털 서명을 제거할 수 있습니다.
 uuid: ae6adf23-b119-45f6-bd57-73d8d9ca8ecb
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
