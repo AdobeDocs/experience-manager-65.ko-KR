@@ -1,8 +1,8 @@
 ---
 title: JavaAPI를 사용하여 AEM Forms 호출
 seo-title: JavaAPI를 사용하여 AEM Forms 호출
-description: 'null'
-seo-description: 'null'
+description: 원격 호출을 위한 RMI 전송 프로토콜용 AEM Forms Java API, 로컬 호출을 위한 VM 전송, 원격 호출을 위한 SOAP, 사용자 이름 및 암호와 같은 다른 인증, 동기 및 비동기 호출 요청 등을 사용하십시오.
+seo-description: 원격 호출을 위한 RMI 전송 프로토콜용 AEM Forms Java API, 로컬 호출을 위한 VM 전송, 원격 호출을 위한 SOAP, 사용자 이름 및 암호와 같은 다른 인증, 동기 및 비동기 호출 요청 등을 사용하십시오.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '5410'
+source-wordcount: '5480'
 ht-degree: 0%
 
 ---
