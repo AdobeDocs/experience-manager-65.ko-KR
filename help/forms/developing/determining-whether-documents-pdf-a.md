@@ -1,8 +1,8 @@
 ---
 title: 문서가 PDF/A 규격인지 확인
 seo-title: 문서가 PDF/A 규격인지 확인
-description: 'null'
-seo-description: 'null'
+description: Assembler 서비스를 사용하여 PDF 문서가 Java API 및 웹 서비스 API를 사용하여 PDF/A 규격인지 확인합니다.
+seo-description: Assembler 서비스를 사용하여 PDF 문서가 Java API 및 웹 서비스 API를 사용하여 PDF/A 규격인지 확인합니다.
 uuid: 4e9d8c8f-2153-411b-9c4b-2d14b3c8f4bb
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2109'
 ht-degree: 0%
 
 ---
