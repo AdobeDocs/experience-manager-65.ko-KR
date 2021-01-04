@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 1%
 
 ---
@@ -110,6 +110,6 @@ Oak 마이크로케널에 대한 자세한 내용은 [권장 배포](../../help/
 
    기본적으로 사이트 컨텐츠는 노드 스토어에 저장됩니다. 자산에 대해 이진 데이터를 저장하도록 데이터 저장소를 구성할 수 있습니다. 커뮤니티의 경우 SRP를 선택하도록 공용 스토어를 구성해야 합니다.
 
-* [AEM 6.3의 스토리지 요소](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [스토리지 요소](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
    두 노드 스토리지 구현에 대해 설명합니다.Tar와 MongoDB.
