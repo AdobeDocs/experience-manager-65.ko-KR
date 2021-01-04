@@ -1,8 +1,8 @@
 ---
 title: 출력 서비스 Java API 빠른 시작(SOAP)
 seo-title: 출력 서비스 Java API 빠른 시작(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 출력 서비스 Java API 빠른 시작(SOAP)을 사용하여 PDF 문서를 만들고, 애플리케이션 XDP 파일을 기반으로 PDF 문서를 만들고, PDF/A 문서를 만들고, 문서를 출력 서비스로 전달하고, AEM Forms 저장소에 있는 문서를 출력 서비스로 전달하고, 조각에 따라 PDF 문서를 만들고, 파일로 인쇄하고, 인쇄 스트림을 네트워크 프린터로 전송하고, 여러 PDF 파일을 만들고 검색 규칙을 작성하고 PDF 문서를 변환할 수 있습니다.
+seo-description: 출력 서비스 Java API 빠른 시작(SOAP)을 사용하여 PDF 문서를 만들고, 애플리케이션 XDP 파일을 기반으로 PDF 문서를 만들고, PDF/A 문서를 만들고, 문서를 출력 서비스로 전달하고, AEM Forms 저장소에 있는 문서를 출력 서비스로 전달하고, 조각에 따라 PDF 문서를 만들고, 파일로 인쇄하고, 인쇄 스트림을 네트워크 프린터로 전송하고, 여러 PDF 파일을 만들고 검색 규칙을 작성하고 PDF 문서를 변환할 수 있습니다.
 uuid: 34cb1fc7-50a9-4db8-aed1-dbd3480d1323
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
