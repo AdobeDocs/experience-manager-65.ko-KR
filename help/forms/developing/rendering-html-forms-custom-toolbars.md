@@ -1,8 +1,8 @@
 ---
 title: CustomToolbars를 사용하여 HTML Forms 렌더링
 seo-title: CustomToolbars를 사용하여 HTML Forms 렌더링
-description: 'null'
-seo-description: 'null'
+description: Forms 서비스를 사용하여 HTML 양식으로 렌더링되는 도구 모음을 사용자 정의합니다. Java API 및 웹 서비스 API를 사용하여 사용자 정의 도구 모음을 사용하여 HTML 양식을 렌더링할 수 있습니다.
+seo-description: Forms 서비스를 사용하여 HTML 양식으로 렌더링되는 도구 모음을 사용자 정의합니다. Java API 및 웹 서비스 API를 사용하여 사용자 정의 도구 모음을 사용하여 HTML 양식을 렌더링할 수 있습니다.
 uuid: b9c9464e-ff19-4051-a39b-4ec71c512d10
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2304'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---
