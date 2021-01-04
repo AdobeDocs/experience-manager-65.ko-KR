@@ -1,8 +1,8 @@
 ---
 title: 문서에 디지털 서명 및 인증
 seo-title: 문서에 디지털 서명 및 인증
-description: 'null'
-seo-description: 'null'
+description: 서명 서비스를 사용하여 PDF 문서에 디지털 서명 필드를 추가 및 삭제하고, PDF 문서에 있는 서명 필드의 이름을 검색하고, 서명 필드를 수정하고, PDF 문서에 디지털 서명을 하고, PDF 문서를 인증하고, PDF 문서에 있는 디지털 서명을 확인하고, PDF 문서에 있는 모든 디지털 서명을 검증하고, 서명 필드에서 디지털 서명을 제거할 수 있습니다.
+seo-description: 서명 서비스를 사용하여 PDF 문서에 디지털 서명 필드를 추가 및 삭제하고, PDF 문서에 있는 서명 필드의 이름을 검색하고, 서명 필드를 수정하고, PDF 문서에 디지털 서명을 하고, PDF 문서를 인증하고, PDF 문서에 있는 디지털 서명을 확인하고, PDF 문서에 있는 모든 디지털 서명을 검증하고, 서명 필드에서 디지털 서명을 제거할 수 있습니다.
 uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '16977'
+source-wordcount: '17099'
 ht-degree: 0%
 
 ---
