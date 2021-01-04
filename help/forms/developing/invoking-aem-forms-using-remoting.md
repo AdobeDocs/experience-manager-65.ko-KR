@@ -1,8 +1,8 @@
 ---
 title: Remoting을 사용하여 AEM Forms 호출
 seo-title: Remoting을 사용하여 AEM Forms 호출
-description: 'null'
-seo-description: 'null'
+description: Remoting을 사용하여 AEM Forms 프로세스를 호출하여 Workbench에서 만든 프로세스를 호출합니다. Flex으로 빌드된 클라이언트 응용 프로그램에서 AEM Forms 프로세스를 호출할 수 있습니다.
+seo-description: Remoting을 사용하여 AEM Forms 프로세스를 호출하여 Workbench에서 만든 프로세스를 호출합니다. Flex으로 빌드된 클라이언트 응용 프로그램에서 AEM Forms 프로세스를 호출할 수 있습니다.
 uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '4593'
+source-wordcount: '4647'
 ht-degree: 0%
 
 ---
