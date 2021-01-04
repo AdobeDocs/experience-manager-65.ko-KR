@@ -1,8 +1,8 @@
 ---
 title: HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기
 seo-title: HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기
-description: 'null'
-seo-description: 'null'
+description: HTTP 토큰을 사용하여 SSO(Single Sign On) 인증을 수행하는 Flash Builder을 사용하여 클라이언트 응용 프로그램을 만듭니다. 한 번에 사용자를 인증하고 해당 인증을 사용하여 여러 AEM Forms 작업을 수행할 수 있습니다.
+seo-description: HTTP 토큰을 사용하여 SSO(Single Sign On) 인증을 수행하는 Flash Builder을 사용하여 클라이언트 응용 프로그램을 만듭니다. 한 번에 사용자를 인증하고 해당 인증을 사용하여 여러 AEM Forms 작업을 수행할 수 있습니다.
 uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
