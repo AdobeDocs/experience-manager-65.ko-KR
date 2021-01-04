@@ -1,8 +1,8 @@
 ---
 title: 문서 출력 스트림 만들기
 seo-title: 문서 출력 스트림 만들기
-description: 'null'
-seo-description: 'null'
+description: 출력 서비스를 사용하여 문서를 PDF(PDF/A 문서 포함), PostScript, 프린터 제어 언어(PCL) 및 Zebra - ZPL, Intermec - IPL, Datamax - DPL 및 TecToshiba - TPCL 레이블 포맷으로 변환합니다.
+seo-description: 출력 서비스를 사용하여 문서를 PDF(PDF/A 문서 포함), PostScript, 프린터 제어 언어(PCL) 및 Zebra - ZPL, Intermec - IPL, Datamax - DPL 및 TecToshiba - TPCL 레이블 포맷으로 변환합니다.
 uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '18972'
+source-wordcount: '19030'
 ht-degree: 0%
 
 ---
