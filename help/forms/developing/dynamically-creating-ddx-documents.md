@@ -1,8 +1,8 @@
 ---
 title: 동적으로 DCX 문서 만들기
 seo-title: 동적으로 DCX 문서 만들기
-description: 'null'
-seo-description: 'null'
+description: Java API 및 웹 서비스 API를 사용하여 동적으로 DCX 문서를 만듭니다. DCX 문서를 동적으로 만들면 런타임 동안 얻은 DCX 문서의 값을 사용할 수 있습니다.
+seo-description: Java API 및 웹 서비스 API를 사용하여 동적으로 DCX 문서를 만듭니다. DCX 문서를 동적으로 만들면 런타임 동안 얻은 DCX 문서의 값을 사용할 수 있습니다.
 uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2123'
+source-wordcount: '2185'
 ht-degree: 0%
 
 ---
