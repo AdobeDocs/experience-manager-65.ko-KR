@@ -3,10 +3,10 @@ title: ' [!DNL Assets] 과(와) 통합 [!DNL InDesign Server]'
 description: ' [!DNL Adobe Experience Manager Assets] 과(와) [!DNL Adobe InDesign Server]을(를) 통합하는 방법을 알아봅니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: a31fa2712e541dfdc7a5b08ee9b33782f190f00b
 workflow-type: tm+mt
-source-wordcount: '1559'
-ht-degree: 0%
+source-wordcount: '1578'
+ht-degree: 1%
 
 ---
 
@@ -164,15 +164,15 @@ ht-degree: 0%
 
 ### 일 CQ 링크 외부라이저 구성 {#configuring-day-cq-link-externalizer}
 
-[!DNL InDesign Server] 및 [!DNL Experience Manager]이 다른 호스트에서 실행되거나 이 두 응용 프로그램이 모두 기본 포트에서 실행되지 않으면 [!UICONTROL Day CQ Link Externalizer]를 구성하여 [!DNL InDesign Server]의 호스트 이름, 포트 및 컨텐트 경로를 설정합니다.
+[!DNL InDesign Server] 및 [!DNL Experience Manager]이(가) 다른 호스트에 있거나 이러한 응용 프로그램 중 하나 또는 둘 다 기본 포트에서 작동하지 않는 경우 [!UICONTROL Day CQ Link Externalizer]를 구성하여 [!DNL InDesign Server]의 호스트 이름, 포트 및 컨텐트 경로를 설정합니다.
 
 1. `https://[aem_server]:[port]/system/console/configMgr`에서 웹 콘솔에 액세스합니다.
-1. **[!UICONTROL Day CQ Link Externalizer]** 구성을 찾아 **[!UICONTROL 편집]**&#x200B;을 클릭하여 엽니다.
-1. [!DNL Adobe InDesign Server]의 호스트 이름과 컨텍스트 경로를 지정하고 **저장**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 일 CQ 링크 외부라이저]** 구성을 찾습니다. **[!UICONTROL 편집]**&#x200B;을 클릭하여 엽니다.
+1. 링크 외부라이저 설정을 사용하면 [!DNL Experience Manager] 배포 및 [!DNL InDesign Server]에 대한 절대 URL을 만들 수 있습니다. **[!UICONTROL 도메인]** 필드를 사용하여 호스트 이름과 [!DNL Adobe InDesign Server]의 컨텍스트 경로를 지정합니다. **저장**&#x200B;을 클릭합니다.
 
-   ![chlimage_1-97](assets/chlimage_1-290.png)
+   ![링크 외부라이저 설정](assets/link-externalizer-config.png)
 
-### [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}에 대한 병렬 작업 처리 사용
+### [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server}에 대한 병렬 작업 처리 사용
 
 이제 ID에 대해 병렬 작업 처리를 활성화할 수 있습니다. 처리할 수 있는 최대 병렬 작업 수(`x`)를 결정합니다. [!DNL InDesign Server]
 
@@ -206,7 +206,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 >
 >이렇게 하려면 IDS 작업 검색을 활성화하는 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 구성 아래의 **[!UICONTROL enable.retry.name]** 확인란을 활성화합니다.
 >
->또한 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` 구성에서 ID를 작업 핸들러 목록에서 제외하기 전에 작업 검색의 수를 결정하는 `max.errors.to.blacklist` 매개 변수에 대해 양의 값을 설정합니다.
+>또한 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` 구성에서 작업 핸들러 목록에서 ID를 제외하기 전에 작업 검색의 수를 결정하는 `max.errors.to.blacklist` 매개 변수에 대해 양의 값을 설정합니다.
 >
 >기본적으로 구성 가능한(`retry.interval.to.whitelist.name`) 시간(분) 후 IDS 워커의 유효성을 다시 검사해야 합니다. 워커가 온라인에서 검색되면 차단 목록에서 제거됩니다.
 
