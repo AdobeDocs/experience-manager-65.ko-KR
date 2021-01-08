@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 7에 대한 릴
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
+source-git-commit: fa8d8c9a001b56006f1c0a30eb5a342754e63573
 workflow-type: tm+mt
-source-wordcount: '4243'
+source-wordcount: '4227'
 ht-degree: 20%
 
 ---
@@ -351,8 +351,6 @@ ht-degree: 20%
 **문서 보안**
 
 * 새 문서 보안 정책을 저장할 때 Experience Manager Forms은 `Relative validity period is required` 오류 메시지를 표시합니다(NPR-34679).
-
-* 새 문서 보안 정책을 저장할 때 Experience Manager Forms은 `Invalid filed value.Numeric value is required` 오류 메시지를 표시합니다(NPR-34678).
 
 * Document Security에서 PDF 2.0 문서를 보호할 수 없습니다(CQ-4305851).
 
