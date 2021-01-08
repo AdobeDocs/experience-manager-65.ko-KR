@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe392c24-d01e-4d5b-9af9-9ec500adc61a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '88'
 ht-degree: 68%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 68%
 
 # Flash 뷰어 지원 중단 알림{#flash-viewers-end-of-life-notice}
 
-*2017년 1월 31일부터 Adobe Dynamic Media Classic(Scene7)이 Flash 뷰어 플랫폼에 대한 지원을 공식적으로 종료했습니다.*
+*2017년 1월 31일부터 Adobe Dynamic Media Classic(이전 Scene7)이 Flash 뷰어 플랫폼에 대한 지원을 공식적으로 종료했습니다.*
 
 *이 중요한 변경 사항에 대한 자세한 내용은 다음 FAQ 웹 사이트를 참조하십시오.*
 
