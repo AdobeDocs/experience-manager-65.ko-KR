@@ -1,6 +1,6 @@
 ---
-title: Dynamic Media Classic(Scene7)과 통합
-seo-title: Dynamic Media Classic(Scene7)과 통합
+title: Dynamic Media Classic과 통합
+seo-title: Dynamic Media Classic과 통합
 description: AEM과 Dynamic Media Classic을 통합하는 방법을 살펴보십시오.
 seo-description: AEM과 Dynamic Media Classic을 통합하는 방법을 살펴보십시오.
 uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
@@ -10,17 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '5485'
+source-wordcount: '5464'
 ht-degree: 2%
 
 ---
 
 
-# Dynamic Media Classic(Scene7){#integrating-with-dynamic-media-classic-scene}과 통합
+# Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}과 통합
 
-[Adobe Dynamic Media ](https://help.adobe.com/ko_KR/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classic은 리치 미디어 에셋을 관리, 향상, 게시 및 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄물로 전달하는 호스팅된 솔루션입니다.
+Adobe Dynamic Media Classic은 리치 미디어 에셋을 관리, 향상, 게시 및 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이와 인쇄물로 전달하는 호스팅된 솔루션입니다.
 
 Dynamic Media Classic을 사용하려면 Dynamic Media Classic 및 AEM Assets이 서로 상호 작용할 수 있도록 클라우드 구성을 구성해야 합니다. 이 문서에서는 AEM 및 Dynamic Media Classic을 구성하는 방법에 대해 설명합니다.
 
@@ -363,7 +363,7 @@ Dynamic Media Classic에 자산을 게시할 수 있도록 AEM을 구성하려�
 
 ### Dynamic Media Classic 업로드 작업 과정에 구성 가능한 시간 초과를 추가하는 중 {#adding-configurable-timeout-to-scene-upload-workflow}
 
-AEM 인스턴스가 Dynamic Media Classic(Scene7)을 통해 비디오 인코딩을 처리하도록 구성된 경우 기본적으로 업로드 작업에 대해 35분 시간 초과가 있습니다. 잠재적으로 더 오래 실행되는 비디오 인코딩 작업을 수용하려면 다음 설정을 구성할 수 있습니다.
+AEM 인스턴스가 Dynamic Media Classic을 통해 비디오 인코딩을 처리하도록 구성된 경우 기본적으로 업로드 작업에 대해 35분 시간 초과가 있습니다. 잠재적으로 더 오래 실행되는 비디오 인코딩 작업을 수용하려면 다음 설정을 구성할 수 있습니다.
 
 1. **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**&#x200B;로 이동합니다.
 
