@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 2%
+source-wordcount: '1005'
+ht-degree: 1%
 
 ---
 
@@ -72,22 +72,15 @@ AEM은 Adobe Analytics 및 Adobe Target과 통합하기 위한 간단한 옵트�
 
 자세한 내용은 [Adobe Analytics 및 Adobe Target에 선택](/help/sites-administering/opt-in.md)을 참조하십시오.
 
-## Scene7 {#integrating-with-scene}과 통합
+## Adobe Dynamic Media Classic {#integrating-with-scene}과 통합
 
-[Adobe Scene7](https://www.adobe.com/products/scene7.html) 는 다이내믹 마케팅 에셋과 풍부한 시각적 머천다이징을 웹, 모바일, 이메일, 소셜 미디어, 인터넷에 연결된 디스플레이 및 인쇄물로 게시, 관리, 향상 및 전달하기 위한 호스팅된 솔루션입니다.
+Adobe Dynamic Media Classic은 다이내믹 마케팅 에셋과 풍부한 시각적 머천다이징을 웹, 모바일, 이메일, 소셜 미디어, 인터넷에 연결된 디스플레이 및 인쇄물로 게시, 관리, 향상 및 전달하기 위한 호스팅된 솔루션입니다.
 
-AEM에서는 AEM에서 Scene7으로 디지털 자산을 직접 게시할 수 있으며 Scene7에서 AEM으로 디지털 자산을 게시할 수 있습니다.
+AEM에서는 AEM에서 Dynamic Media Classic으로 디지털 자산을 직접 게시할 수 있으며, Dynamic Media Classic에서 AEM으로 디지털 자산을 게시할 수 있습니다.
 
-또한 다양한 뷰어에서 Scene7에 게시된 AEM 자산을 볼 수 있습니다.
+또한 Dynamic Media Classic에 게시된 AEM 에셋은 기본 확대/축소 및 비디오와 같은 다양한 뷰어에서 볼 수 있습니다.
 
-* 기본 확대/축소
-* DHTML 플라이아웃 확대/축소
-* Flash 플라이아웃 확대/축소
-* 비디오
-* Flash 템플릿
-* 이미지 템플릿
-
-AEM과 Scene7의 통합 방법에 대한 자세한 내용은 [Scene7 설명서](/help/sites-administering/scene7.md)와 통합을 참조하십시오.
+AEM과 Dynamic Media Classic의 통합 방법에 대한 자세한 내용은 [Dynamic Media Classic과 통합](/help/sites-administering/scene7.md) 설명서를 참조하십시오.
 
 ## Adobe 다이내믹 태그 관리 {#integrating-with-adobe-dynamic-tag-management}와 통합
 
