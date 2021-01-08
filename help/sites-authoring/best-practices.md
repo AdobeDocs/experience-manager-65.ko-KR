@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
-source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 83%
+source-wordcount: '302'
+ht-degree: 72%
 
 ---
 
@@ -55,7 +55,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대
   <tr>
    <td>동적 이미징</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">동적 이미징 우수 사례</a></td>
-   <td><p>Dynamic Media 기능을 사용하거나 Scene7과 통합하는 경우, 최상의 결과를 위해 이미지를 선명하게 하는 방법 및 이미지 품질을 최적화하는 최선의 방법을 설명합니다. </p> </td>
+   <td><p>Dynamic Media 기능을 사용하거나 Dynamic Media Classic과 통합하는 경우 최상의 결과를 위해 이미지를 선명하게 하는 방법 및 이미지 품질을 최적화하는 최상의 방법을 설명합니다. </p> </td>
   </tr>
   <tr>
    <td>다언어 자산</td>
