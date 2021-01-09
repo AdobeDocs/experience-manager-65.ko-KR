@@ -2,9 +2,9 @@
 title: 레이아웃 모드를 사용하여 적응형 양식의 구성 요소 크기 조정
 description: '레이아웃 모드에서 사용할 수 있는 응답형 격자를 사용하여 구성 요소의 위치를 정의합니다. '
 translation-type: tm+mt
-source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
+source-git-commit: 923c31bf67c7ad480ef3c3a1e312b4bd841bac6d
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,11 @@ ht-degree: 0%
 
    구성 요소를 탭한 후 표시되는 도구 모음은 다음 옵션으로 구성됩니다.
 
-   * **상위:** 구성 요소의 상위 항목을 선택합니다.
-   * **새 라인으로 이동:** 동일한 라인에 여러 구성 요소가 있는 경우 구성 요소를 다음 라인으로 이동합니다.
+   * **[!UICONTROL 상위]**:구성 요소의 상위 항목을 선택합니다.
+   * **[!UICONTROL 중단점 레이아웃 되돌리기]**:모든 크기 변경 내용을 실행 취소하고 기본 레이아웃을 구성 요소에 적용합니다.
+   * **[!UICONTROL 새 라인으로 이동]**:동일한 라인 내에 여러 구성 요소가 있는 경우 구성 요소를 다음 줄로 이동합니다.
 
-   또한 모든 크기 변경 내용을 실행 취소하고, **[!UICONTROL 중단점 레이아웃 되돌리기]**( ![중단점 되돌리기](assets/reverttopreviouslypublishedversion.png)) 옵션을 사용하여 크기가 조정된 구성 요소가 포함된 패널에 기본 레이아웃을 적용할 수 있습니다. 크기를 조정한 구성 요소의 상위 항목을 눌러 옵션을 봅니다.
-
-   구성 요소를 탭하고 **[!UICONTROL 중단점 레이아웃 되돌리기]** 옵션을 사용하여 모든 크기 변경 내용을 취소하고 구성 요소 수준에서 기본 레이아웃을 적용할 수 있습니다.
+   또한 패널 수준에서 **[!UICONTROL 중단점 레이아웃 되돌리기]**( ![중단점 되돌리기](assets/reverttopreviouslypublishedversion.png)) 옵션을 사용하여 모든 크기 조정 변경을 취소할 수도 있습니다.
 
    >[!NOTE]
    >
