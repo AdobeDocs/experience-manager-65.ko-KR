@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
+source-git-commit: c451948c43004d084bc3fce7a2c6ad99381f1ea8
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,9 @@ AEM [!DNL Forms]과 함께 [!DNL Adobe Sign]을 사용하려면 AEM Cloud 서비
 
    데이터베이스 공유 값을 수정할 수 있습니다. 데이터베이스 공유에 대한 새 값을 사용할 수 있도록 서버를 다시 시작합니다.
 
+   >[!NOTE]
+   작성 및 게시 인스턴스 구성이 동일한 공유 부분을 가리키는지 확인합니다. 하나의 조직에 대해 여러 Adobe Sign 구성을 만드는 경우 모든 구성에 동일한 샤드를 사용하는지 확인하십시오.
+
 1. 8단계에서 입력한 **클라이언트 ID**(응용 프로그램 ID라고도 함) 및 **클라이언트 암호**&#x200B;를 지정합니다. 서명을 위해 보낸 해당 [!DNL Adobe Sign] 문서에 적응형 양식에 첨부된 파일을 첨부하려면 **[!UICONTROL 첨부 파일에도 Adobe Sign 사용 옵션을 선택합니다.]**
 
    **[!UICONTROL Adobe Sign에 연결]**&#x200B;을 탭합니다. 자격 증명을 입력하라는 메시지가 표시되면 [!DNL Adobe Sign] 응용 프로그램을 만드는 동안 사용된 계정의 사용자 이름과 암호를 입력합니다.
@@ -98,7 +101,7 @@ AEM [!DNL Forms]과 함께 [!DNL Adobe Sign]을 사용하려면 AEM Cloud 서비
 1. 구성을 게시합니다.
 1. 해당 게시 인스턴스에 대해 동일한 구성을 만들려면 [replication](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html)을 사용합니다.
 
-이제 [!DNL Adobe Sign]은(는) AEM [!DNL Forms]과 통합되어 적응형 양식에 사용할 수 있습니다. 응용 양식[에서 Adobe Sign 서비스를 사용하려면 응용 양식 속성에서 위에 만든 구성 컨테이너를 지정합니다.](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)
+이제 [!DNL Adobe Sign]은(는) AEM [!DNL Forms]과 통합되어 적응형 양식에 사용할 수 있습니다. 응용 양식](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)에서 Adobe Sign 서비스를 사용하려면 응용 양식 속성에서 위에 만든 구성 컨테이너를 지정합니다.[
 
 
 
