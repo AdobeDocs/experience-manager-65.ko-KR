@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
+source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 0%
+source-wordcount: '500'
+ht-degree: 1%
 
 ---
 
@@ -23,6 +23,14 @@ ht-degree: 0%
 [비디오 구성 요소](/help/sites-authoring/default-components-foundation.md#video)를 사용하면 사전 정의된 OTB(특별) 비디오 자산을 페이지에 배치할 수 있습니다.
 
 변환이 올바르게 수행되려면 관리자가 FFmpeg를 별도로 설치합니다. [FFmpeg 설치 및 AEM](#install-ffmpeg) 구성을 참조하십시오. 또한 관리자는 HTML5 요소와 함께 사용하기 위해 [비디오 프로필](#configure-video-profiles)을 구성합니다.
+
+>[!CAUTION]
+>
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소 포함 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html)를 대신 활용할 것을 권장합니다.
+
+>[!CAUTION]
+>
+>이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
 
 ## 비디오 프로필 {#configure-video-profiles} 구성
 
