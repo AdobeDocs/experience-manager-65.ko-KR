@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8adbf52b29cf6e548bf14df57bc12b44821c9def
+source-git-commit: 17d70e532ab5d825dd4dc0ea4c891c5b7cb8d345
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3443'
 ht-degree: 3%
 
 ---
@@ -114,7 +114,7 @@ AEM의 표준 설치에 포함되어 있는 웹 소매용 웹 사이트를 사�
 에이전트작성자에서 게시로 복제하는 데 사용됩니다.
 
 * Dispatcher Flush
-이것은 Dispatcher 캐시를 관리하는 데 사용됩니다. 자세한 내용은 제작 환경[ 및 ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment)게시 인스턴스[에서 발송자 캐시를 무효화하기를 참조하십시오.](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)
+이것은 Dispatcher 캐시를 관리하는 데 사용됩니다. 자세한 내용은 제작 환경](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) 및 [게시 인스턴스](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)에서 발송자 캐시를 무효화하기를 참조하십시오.[
 
 * [역방향 ](#reverse-replication-publish-to-author)
 복제게시에서 작성자로 복제하는 데 사용됩니다. 역 복제는 포럼, 블로그 및 댓글과 같은 커뮤니티 기능에는 사용되지 않습니다. 보낼 편지함이 활성화되지 않아 실제로 비활성화됩니다. 역방향 복제를 사용하려면 사용자 지정 구성이 필요합니다.
@@ -593,19 +593,3 @@ CRXDE Lite을 사용하여 복제 에이전트의 다양한 매개 변수를 구
 ## 추가 리소스 {#additional-resources}
 
 문제 해결에 대한 자세한 내용은 [복제 문제 해결](/help/sites-deploying/troubleshoot-rep.md) 페이지를 참조하십시오.
-
-자세한 내용은 Adobe에 복제에 관련된 일련의 기술 자료 아티클이 있습니다.
-
-[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationListener.](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/replication-stuck.htmlhttps://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5htmlhttps://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueueshtmlhttps://helpx.adobe.com/experience-manager/kb/ACLReplicationhtmlhttps://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replicationhtmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html..](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)
