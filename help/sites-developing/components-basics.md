@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 0a6f50457efda42a9d496c0c9202cb7d7b8f6eb9
+source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
 source-wordcount: '4974'
 ht-degree: 2%
@@ -224,7 +224,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며, 주요 고려 사항�
    * 권장되는 색상은 rgb(112, 112, 112) > #707070
    * 표준 구성 요소 아이콘의 배경은 투명합니다.
    * `.png` 및 `.svg` 파일만 지원됩니다.
-   * 예를 들어 Eclipse 플러그인을 통해 파일 시스템에서 가져올 경우 파일 이름을 `_cq_icon.png` 또는 `_cq_icon.svg`로 esactap해야 합니다.
+   * 예를 들어 Eclipse 플러그인을 통해 파일 시스템에서 가져올 경우 파일 이름을 `_cq_icon.png` 또는 `_cq_icon.svg`로 이스케이프해야 합니다.
    * `.png` 둘 다 있는  `.svg` 경우 선례를 받습니다.
 
 구성 요소에 위의 속성( `cq:icon`, `abbreviation`, `cq:icon.png` 또는 `cq:icon.svg`)이 없는 경우:
