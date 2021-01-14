@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 741ba6f6ef3270414c0ddabb1a1d02d5c436b7d9
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 내용 처리 필터는 SVG 파일에 대한 XSS 공격에 대한 보안 기능입니다.
 
-설치가 완료되면 필터는 모든 자산에 대한 액세스를 차단합니다. 예를 들어 온라인으로 pdf를 볼 수 없었습니다. 이 섹션에서는 필요에 따라 필터를 구성하는 방법에 대해 설명합니다.
+설치가 완료되면 필터는 모든 자산에 대한 액세스를 차단합니다. 예를 들어 온라인으로 PDF를 볼 수 없습니다. 이 섹션에서는 필요에 따라 필터를 구성하는 방법에 대해 설명합니다.
 
 ## 내용 처리 필터 구성 {#configure-content-disposition-filter}
 
