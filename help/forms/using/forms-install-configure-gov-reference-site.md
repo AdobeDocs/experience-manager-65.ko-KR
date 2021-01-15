@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '4742'
+source-wordcount: '4743'
 ht-degree: 2%
 
 ---
@@ -465,7 +465,7 @@ AEM Forms Analytics 데이터는 오프라인 상태이거나 `we-gov-forms.ui.a
 
 Adobe Forms을 사용하여 AEM Forms을 설치하고 구성하려면 전환 도구 사용자가 다음을 가져야 합니다.
 
-1. Adobe IO 액세스.
+1. Adobe I/O 이용.
 
 1. Adobe Forms 전환 서비스와의 통합을 만들 수 있는 권한.
 
