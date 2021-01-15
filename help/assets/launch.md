@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 71e827dc17fd1c36230cb8d26b68d7f41c584e60
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '6605'
+source-wordcount: '6596'
 ht-degree: 1%
 
 ---
@@ -41,11 +41,11 @@ Adobe Viewers 5.13의 최신 릴리스와 함께 새로운 Dynamic Media Viewers
 
 Adobe Launch와의 통합을 위한 주요 사용 사례는 AEM Assets과 AEM Sites을 모두 사용하는 고객입니다. 이러한 시나리오에서 AEM 작성자 노드와 Adobe Launch 간의 표준 통합을 설정한 다음 사이트 인스턴스를 Adobe 시작 속성과 연결할 수 있습니다. 이후에는 사이트 페이지에 추가된 모든 Dynamic Media WCM 구성 요소가 뷰어의 데이터 및 이벤트를 추적합니다.
 
-AEM Sites[에서 Dynamic Media 뷰어 추적 정보를 참조하십시오.](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)
+AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)에서 Dynamic Media 뷰어 추적 정보를 참조하십시오.[
 
 통합이 지원하는 보조 사용 사례는 AEM Assets 전용 또는 Dynamic Media Classic을 사용하는 고객입니다. 이러한 경우 뷰어용 포함 코드를 입수하여 웹 사이트 페이지에 추가합니다. 그런 다음 Adobe Launch에서 Adobe Launch 라이브러리 제작 URL을 가져와 웹 페이지 코드에 수동으로 추가합니다.
 
-포함 코드[를 사용하여 Dynamic Media 뷰어 추적 정보를 참조하십시오.](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode)
+포함 코드](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode)를 사용하여 Dynamic Media 뷰어 추적 정보를 참조하십시오.[
 
 ## 통합 {#how-data-and-event-tracking-works-in-the-integration}에서 데이터 및 이벤트 추적이 작동하는 방식
 
@@ -418,7 +418,7 @@ Dynamic Media 뷰어 확장 기능을 사용하면 Dynamic Media 뷰어의 이�
 
 또한 이 통합 솔루션이 AEM Sites과 함께 사용되는 경우 다음 구성도 수행해야 합니다.
 
-* Adobe I/O 콘솔 - Adobe 론치에 대한 통합이 만들어집니다.
+* [!DNL Adobe I/O] 콘솔 - Adobe 론치에 대한 통합이 생성됩니다.
 * AEM 작성자 노드 - IMS 구성 및 Adobe Launch 클라우드 구성
 
 구성의 일부로 Adobe Analytics 및 Adobe Launch가 이미 활성화된 Adobe Experience Cloud의 회사에 대한 액세스 권한이 있어야 합니다.
@@ -476,45 +476,45 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
    ![image2019-6-26_23-6-59](assets/image2019-6-26_23-6-59.png)
 
-1. 변수 목록 하단에서 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. 변수 목록 맨 아래에서 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ### 보고서 {#setting-up-a-report} 설정
 
-1. 일반적으로, Adobe Analytics에서 보고서를 설정하는 것은 특정 프로젝트 요구 사항에 따라 결정됩니다. 따라서 세부 보고서 설정은 이 통합의 범위를 벗어납니다.
+1. 일반적으로 Adobe Analytics에서 보고서를 설정하는 것은 특정 프로젝트 요구에 의해 수행됩니다. 따라서 세부 보고서 설정은 이 통합의 범위를 벗어납니다.
 
-   그러나 사용자 지정 트래픽 보고서는 **[Adobe Analytics 변수 설정](#setting-up-adobe-analytics-variables)**&#x200B;에서 사용자 지정 트래픽 변수를 설정한 후 Adobe Analytics에서 자동으로 사용할 수 있게 됩니다.
+   그러나 **[Adobe Analytics 변수 설정](#setting-up-adobe-analytics-variables)**&#x200B;에서 사용자 지정 트래픽 변수를 설정한 후 Adobe Analytics에서 사용자 지정 트래픽 보고서를 자동으로 사용할 수 있게 되는 것은 충분합니다.
 
-   예를 들어 **[!UICONTROL 뷰어 에셋(prop 30)]** 변수에 대한 보고서는 **[!UICONTROL 사용자 정의 트래픽 > 사용자 정의 트래픽 21-30 > 뷰어 에셋(prop 30)]**&#x200B;의 보고서 메뉴에서 사용할 수 있습니다.
+   예를 들어 **[!UICONTROL 뷰어 에셋(prop 30)]** 변수에 대한 보고서는 **[!UICONTROL 사용자 지정 트래픽 > 사용자 지정 트래픽 21-30 > 뷰어 에셋(prop 30)]**&#x200B;의 보고서 메뉴에서 사용할 수 있습니다.
 
-   **[!UICONTROL 뷰어 에셋(prop 30)]**&#x200B;을 만든 후 이 보고서를 방문하면 데이터가 표시되지 않습니다.그것은 통합에서 이 시점에서 예상됩니다.
+   **[!UICONTROL 뷰어 에셋(prop 30)]** 작성 후 바로 이 보고서를 방문하면 데이터가 표시되지 않습니다.통합에서 이 시점에서 필요합니다.
 
    ![image2019-6-26_23-12-49](assets/image2019-6-26_23-12-49.png)
 
-## 통합을 위한 Adobe 시작 구성 {#configuring-adobe-launch-for-the-integration}
+## 통합 {#configuring-adobe-launch-for-the-integration}에 대한 Adobe 시작 구성
 
-Adobe 시작을 구성한 후에는 통합에 대해 다음과 같은 설정이 설정됩니다.
+Adobe 시작을 구성한 후에는 통합에 대해 다음과 같은 설정이 됩니다.
 
 * 모든 구성을 함께 유지할 새 속성을 만듭니다.
-* Extension 설치 및 설정 속성에 설치된 모든 확장의 클라이언트측 코드는 라이브러리로 컴파일됩니다. 이 라이브러리는 나중에 웹 페이지에 사용됩니다.
-* 데이터 요소 및 규칙 구성 이 구성은 Dynamic Media 뷰어에서 캡처할 데이터, 추적 논리를 트리거할 시기 및 Adobe Analytics에서 뷰어의 데이터를 보낼 위치를 정의합니다.
+* 확장 설치 및 설정 속성에 설치된 모든 확장의 클라이언트측 코드는 라이브러리로 컴파일됩니다. 이 라이브러리는 나중에 웹 페이지에서 사용됩니다.
+* 데이터 요소 및 규칙 구성을 참조하십시오. 이 구성은 Dynamic Media 뷰어에서 캡처할 데이터, 추적 로직을 트리거할 시기 및 Adobe Analytics에서 뷰어 데이터를 보낼 위치를 정의합니다.
 * 라이브러리 게시.
 
-**통합에 대한 Adobe 시작을 구성하려면**:
+**통합에 대해 Adobe 시작을 구성하려면 다음을 수행하십시오**.
 
-1. 먼저 Experience Cloud [홈 페이지](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)에서 Adobe 실행에 액세스하십시오. 메뉴 막대에서 페이지의 오른쪽 상단 모서리에 있는 솔루션 아이콘(세 개 세 개 점 테이블)을 클릭한 다음 **[!UICONTROL 실행]**&#x200B;을 클릭합니다.
+1. 먼저 Experience Cloud [홈 페이지](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)에서 Adobe Launch에 액세스하십시오. 메뉴 모음에서 페이지 오른쪽 위 모서리 근처에 있는 솔루션 아이콘(3개 항목 테이블)을 클릭한 다음 **[!UICONTROL 실행]**&#x200B;을 클릭합니다.
 
-   또한 [Adobe 시작을 직접 열 수도 있습니다](https://launch.adobe.com/).
+   [Adobe 시작을 직접 열 수도 있습니다](https://launch.adobe.com/).
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
 ### Adobe 시작 {#creating-a-property-in-adobe-launch}에 속성 만들기
 
-Adobe 실행의 속성은 모든 설정을 함께 유지하는 명명된 구성입니다. 구성 설정의 라이브러리가 생성되고 다른 환경 수준(개발, 스테이징 및 프로덕션)에 게시됩니다.
+Adobe 론치의 속성은 모든 설정을 함께 유지하는 이름이 지정된 구성입니다. 구성 설정의 라이브러리가 생성되고 다른 환경 수준(개발, 스테이징 및 프로덕션)에 게시됩니다.
 
-자세한 내용은 [시작 속성 만들기](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch)를 참조하십시오.
+[론치 속성 만들기](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch)를 참조하십시오.
 
-1. Adobe 실행에서 **[!UICONTROL 새 속성]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 속성 만들기]** 대화 상자의 **[!UICONTROL 이름]** 필드에 웹 사이트의 제목과 같이 설명이 포함된 이름을 입력합니다. 예, `DynamicMediaViewersProp.`
+1. Adobe 론치에서 **[!UICONTROL 새 속성]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 속성 만들기]** 대화 상자의 **[!UICONTROL 이름]** 필드에 웹 사이트의 제목과 같은 설명형 이름을 입력합니다. 예, `DynamicMediaViewersProp.`
 1. **[!UICONTROL 도메인]** 필드에 웹 사이트의 도메인을 입력합니다.
 1. **[!UICONTROL 고급 옵션]** 드롭다운에서 사용하려는 확장 프로그램(이 경우 *Dynamic Media 뷰어*&#x200B;이(가) 아직 릴리스되지 않은 경우 **[!UICONTROL 확장 개발을 위한 구성(나중에 수정할 수 없음)]**&#x200B;을 활성화합니다.
 
@@ -693,7 +693,7 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. 새 브라우저 탭에서 [Adobe I/O 콘솔](https://console.adobe.io/integrations)로 이동합니다.
+1. 새 브라우저 탭에서 [[!DNL Adobe I/O] 콘솔](https://console.adobe.io/integrations)로 이동합니다.
 
 1. 오른쪽 위 모서리 근처에 있는 **[!UICONTROL Adobe I/O 콘솔 통합]** 페이지에서 **[!UICONTROL 새 통합]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 새 통합 만들기]** 대화 상자에서 **[!UICONTROL API]** 라디오 버튼이 선택되어 있는지 확인하고 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
@@ -850,4 +850,4 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
 위의 AEM 게시에 대한 Adobe Launch Cloud 구성에서 Adobe 시작 라이브러리의 개발 또는 스테이징 URL을 지정하여 이 제한 사항을 해결할 수 있습니다. 이렇게 하면 AEM 게시 노드가 Adobe 시작 라이브러리의 개발 또는 스테이징 버전을 사용하게 됩니다.
 
-Adobe Launch Cloud 구성 설정에 대한 자세한 내용은 [Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)을 통해 AEM을 Adobe을 실행하고 통합을 참조하십시오.
+Adobe 시작 클라우드 구성 설정에 대한 자세한 내용은 [AEM을 Adobe 시작을 통한 통합을 참조하십시오 [!DNL Adobe I/O]](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html).
