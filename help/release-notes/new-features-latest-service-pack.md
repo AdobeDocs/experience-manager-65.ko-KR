@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.5 서비스 팩 7의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2815'
 ht-degree: 56%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 56%
 
 #### [!DNL Brand Portal](6.5.4.0){#configure-assets-bp}을 사용한 [!DNL Experience Manager Assets] 구성
 
-[!DNL Experience Manager Assets]과 [!DNL Brand Portal] 사이의 인증 채널이 변경되었습니다. 이전에는 [!DNL Brand Portal]이 기존 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 인증을 위해 IMS 액세스 토큰을 가져오는 데 JWT 토큰 교환을 사용합니다. 이제 [!DNL Experience Manager Assets]은 Adobe I/O를 통해 [!DNL Brand Portal]에 구성되며, [!DNL Brand Portal]은 테넌트의 인증을 위해 IMS 토큰을 받습니다.
+[!DNL Experience Manager Assets]과 [!DNL Brand Portal] 사이의 인증 채널이 변경되었습니다. 이전에는 [!DNL Brand Portal]이 기존 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 인증을 위해 IMS 액세스 토큰을 가져오는 데 JWT 토큰 교환을 사용합니다. [!DNL Experience Manager Assets] 는 이제  [!DNL Brand Portal] through [!DNL Adobe I/O]로 구성되며, IMS 토큰을 조달하여  [!DNL Brand Portal] 임차인 인증을 받습니다.
 
 [!DNL Brand Portal]에서 [!DNL Experience Manager Assets]을 구성하는 단계는 [!DNL Experience Manager] 버전과 처음 구성하는 것인지 아니면 기존 구성을 업그레이드하는 것인지에 따라 다릅니다. 자세한 내용은 [Brand Portal에서 Experience Manager Assets 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)을 참조하십시오.
 
