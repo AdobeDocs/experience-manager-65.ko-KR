@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 이전 서비스 팩 릴리스 노�
 description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩에 대한 릴리스 노트입니다.'
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '14953'
+source-wordcount: '14944'
 ht-degree: 76%
 
 ---
@@ -41,7 +41,7 @@ Adobe Experience Manager 6.5.6.0에 도입된 주요 기능 및 개선 사항은
 
 * automated forms conversion 서비스](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)의 [Adobe Sign 텍스트 태그 지원.
 
-* ](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)을(를) 사용하여 컬러 양식을 응용 양식[으로 변환할 수 있습니다.[!DNL Automated Forms Conversion service]
+* [!DNL Automated Forms Conversion service]을(를) 사용하여 컬러 양식을 응용 양식](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)으로 변환할 수 있습니다.[
 
 * SMB 2 및 SMB 3 프로토콜 지원
 
@@ -139,7 +139,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
 * 사용자 인터페이스에 대한 대화형 옵션의 경우 화면 판독기는 이제 아이콘의 문자 이름(CQ-4272943)이 아니라 사용자가 사용할 목적을 알려줍니다.
 
-* 키보드 포커스가 이제 [!UICONTROL 플라이아웃], [!UICONTROL InlineZoom], [!UICONTROL Shopperable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light], [!UICONTROL Zoom_dark_dark 자산 세부 정보 [!UICONTROL Viewers](CQ-4290605)의 &lt;a14/>Viewers&lt;a15/>에서 키보드 탭 키를 사용하여 탐색할 때 a11/> 및 [!UICONTROL ZoomVertical_light] 옵션.[!DNL Dynamic Media]]
+* 키보드 포커스가 이제 [!UICONTROL 플라이아웃], [!UICONTROL InlineZoom], [!UICONTROL Shopperable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light], [!UICONTROL Zoom_dark_dark 자산 세부 정보 [!UICONTROL Viewers](CQ-4290605)의 ]Viewers[!DNL Dynamic Media]에서 키보드 탭 키를 사용하여 탐색할 때 a11/> 및 [!UICONTROL ZoomVertical_light] 옵션.
 
 * [!UICONTROL 자산 ] 속성 페이지의 저장 및   닫기 옵션은 이제 키보드 키를 사용하여 액세스할 수 있습니다(NPR-34107).
 
@@ -228,7 +228,7 @@ Experience Manager 6.5.6.0에 도입된 기능과 개선 사항의 전체 목록
 
 * 이미지 프로필을 여러 종횡비(예: 11)가 있는 폴더에 추가할 때 스마트 자르기 기능이 오류로 인해 실패합니다(NPR-34082).
 
-* DAM 자산 업데이트 워크플로우는 사용자가 Dynamic Media Scene7(CQ-4299727)으로 구성된 [!UICONTROL 도구]의 &lt;a4/>Workflow] 탭 내에서 [!UICONTROL 워크플로우 아카이브] 페이지로 스크롤할 때 실행됩니다.[!DNL Adobe Experience Manager][!UICONTROL 
+* DAM 자산 업데이트 워크플로우는 사용자가 Dynamic Media Scene7(CQ-4299727)으로 구성된 [!UICONTROL 도구]의 [!UICONTROL Workflow] 탭 내에서 [!UICONTROL 워크플로우 아카이브] 페이지로 스크롤할 때 실행됩니다.[!DNL Adobe Experience Manager]
 
 * [!UICONTROL 뷰어 사전 설정 편집기]의 [!UICONTROL 비헤이비어] 탭에 있는 심볼이 지역화되지 않았습니다(CQ-4299026).
 
@@ -633,7 +633,7 @@ Experience Manager 6.5 서비스 팩 5에 소개된 전체 기능, 주요 특징
 * Adobe Target 구성 요소가 있는 페이지가 게시되면 내부 캐시가 지워집니다(NPR-33162).
 * Adobe Target과의 통합이 [!DNL Windows Internet Explorer] 11에서 작동하지 않습니다(NPR-33111).
 * Adobe Target을 구성할 때 [!UICONTROL 회사] 및 [!UICONTROL 보고서 세트] 필드가 보고 소스 선택 시 표시되지 않습니다(NPR-32502).
-* Adobe I/O를 사용하여 [!DNL Experience Fragments]을 내보낼 때 소스 제품과 같은 메타 데이터가 Adobe Target으로 내보내지지 않습니다(NPR-32159).
+* [!DNL Adobe I/O]을(를) 사용하여 [!DNL Experience Fragments]을 내보낼 때 소스 제품과 같은 메타데이터는 Adobe Target으로 내보내지지 않습니다(NPR-32159).
 * 로컬 Experience Manager 관리 그룹의 승인된 IMS 사용자는 IMS 구성을 만들거나 수정할 수 없습니다(NPR-33045).
 * Adobe Launch 구성 페이지에 모든 레코드가 표시되지 않습니다(NPR-33011).
 * 컨텐츠 작성자 그룹의 사용자는 JavaScript 오류로 인해 Adobe Target 구성 요소의 속성을 편집할 수 없습니다(NPR-32996).
@@ -704,7 +704,7 @@ Adobe Experience Manager 6.5.4.0은 **2019년 4월** 6.5 릴리스의 공식 출
 
 Adobe Experience Manager 6.5.4.0에서 도입된 주요 기능 및 개선 사항은 다음과 같습니다.
 
-* 이제 Adobe Experience Manager Assets은 Adobe I/O 콘솔을 통해 Brand Portal에 구성됩니다.
+* 이제 Adobe Experience Manager 자산이 [!DNL Adobe I/O] 콘솔을 통해 브랜드 포털로 구성됩니다.
 
 * 이제 Adobe Experience Manager Forms 워크플로우에서 새로운 [인쇄 가능한 출력 생성](../forms/using/aem-forms-workflow-step-reference.md) 단계를 사용할 수 있습니다.
 
@@ -868,7 +868,7 @@ Adobe Experience Manager 6.5.4.0에서 도입된 주요 기능 및 개선 사항
 
 ### 브랜드 포털 {#assets-brand-portal-6540}
 
-* Brand Portal 사용자는 Experience Manager 6.5.4에서 Adobe I/O로 업그레이드할 때 기여도 폴더 자산을 [!DNL Assets]에 게시할 수 없습니다(CQDOC-15655). Experience Manager 6.5.4를 즉시 수정하려면 [핫픽스를 다운로드](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041)하고 작성자 인스턴스에 설치하는 것이 좋습니다.
+* 브랜드 포털 사용자는 Experience Manager 6.5.4에서 [!DNL Adobe I/O]으로 업그레이드할 때 기여도 폴더 자산을 [!DNL Assets]에 게시할 수 없습니다(CQDOC-15655). Experience Manager 6.5.4를 즉시 수정하려면 [핫픽스를 다운로드](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041)하고 작성자 인스턴스에 설치하는 것이 좋습니다.
 
 * 메타데이터 스키마 팝업 값은 자산 속성에 표시되지 않습니다(CQ-4283287).
 
