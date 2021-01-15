@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 7에 대한 릴
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ad8ca7aaacd80bf5ca8daec78f7836e883e2343b
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '4277'
+source-wordcount: '4274'
 ht-degree: 20%
 
 ---
@@ -463,7 +463,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 
 | 영역 | 기능 | 대체 |
 |---|---|---|
-| 통합 | **[!UICONTROL AEM 클라우드 서비스 옵트인]** 화면은 더 이상 사용되지 않습니다. AEM 6.5에서 Adobe IMS 및 I/O를 통해 인증을 사용하는 Target 표준 API를 지원하고 분석 및 개인 설정을 위해 AEM 페이지를 계측하는 Adobe Launch의 늘어나는 역할을 지원하도록 AEM 및 Target 통합이 업데이트되어 옵트인 마법사가 기능상 무관해졌습니다. | 해당 AEM 클라우드 서비스를 통해 시스템 연결, Adobe IMS 인증 및 Adobe I/O 통합 구성. |
+| 통합 | **[!UICONTROL AEM 클라우드 서비스 옵트인]** 화면은 더 이상 사용되지 않습니다. AEM 6.5에서 Adobe IMS 및 I/O를 통해 인증을 사용하는 Target 표준 API를 지원하고 분석 및 개인 설정을 위해 AEM 페이지를 계측하는 Adobe Launch의 늘어나는 역할을 지원하도록 AEM 및 Target 통합이 업데이트되어 옵트인 마법사가 기능상 무관해졌습니다. | 해당 AEM 클라우드 서비스를 통해 시스템 연결, Adobe IMS 인증 및 [!DNL Adobe I/O] 통합을 구성합니다. |
 | 커넥터 | Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 Adobe JCR Connector는 AEM 6.5에서 더 이상 사용하지 않습니다. | N/A |
 
 ## 알려진 문제 {#known-issues}
