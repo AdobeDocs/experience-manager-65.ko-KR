@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 6.5 릴리스에서 사용되지 않는 기능 및 제거된 기능.
 description: Adobe Experience Manager 6.5의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 1e6feac534fe990d614997c4bd3ab999a4a8d479
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 74%
+source-wordcount: '1719'
+ht-degree: 72%
 
 ---
 
@@ -34,7 +34,7 @@ AEM 기능 제거 또는 교체를 알릴 때에는 다음 규칙이 적용됩�
 | 자산 | 사용자에게 `/content/dam/collections`에 대한 충분한(읽기 및 쓰기) 권한이 없는 경우 사용자는 컬렉션을 만들 수 없습니다. | 사용자의 액세스 제어 설정을 적용하고 적합한 권한을 확인하십시오. |
 | Adobe Search &amp; Promote | Adobe Search &amp; Promote와의 통합이 더 이상 사용되지 않습니다. Adobe는 향후 Search &amp; Promote 통합을 개선할 계획이 없습니다. Search &amp; Promote 통합이 더 이상 사용되지 않는 동안에도 계속 지원됩니다. |  |
 | DTM 태그 관리자 | DTM(다이내믹 태그 관리자)과의 통합이 더 이상 사용되지 않습니다. | Adobe Experience Platform Launch를 태그 관리자로 사용하도록 전환. |
-| Adobe Target | AEM 6.5에서 Adobe I/O 기반 Adobe Target Standard API(Rest API)를 사용하여 AEM을 Adobe Target 서비스에 연결할 수 있는 기능이 추가됨에 따라 Target Classic API(XML) 방식은 더 이상 사용되지 않습니다. | 통합을 [새 API](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)로 다시 구성하십시오. |
+| Adobe Target | AEM 6.5에서 [!DNL Adobe I/O] 기반 Adobe Target Standard API(Rest API)를 사용하여 Adobe Target 서비스에 연결할 수 있는 AEM 기능을 추가하면 Target Classic API(XML) 방식은 더 이상 사용되지 않습니다. | 통합을 [새 API](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)로 다시 구성하십시오. |
 | Adobe Target | AEM에서 Adobe Target과 `mbox.js` 기반 통합을 사용하는 것은 더 이상 사용되지 않습니다. | `at.js` 1.x를 사용하도록 전환합니다. |
 | 상거래 | [CIF REST](https://github.com/adobe/commerce-cif-api)는 AEM과 상거래 엔진 간의 통합을 가능하게 하기 위해 마이크로 서비스 세트로 2018년에 제공되었습니다. 2018년 중반 Adobe이 Magento을 인수하면서 Adobe은 2가지 이유로 현 방식을 바꾸기로 했다. Magento에는 자체 상거래 API 세트(REST 및 GraphQL)가 있으며 두 개의 API 세트를 유지하는 것은 좋지 않습니다. 시장 트렌드는 GraphQL이 데이터를 쿼리하는 보다 효율적인 방법이므로 고객이 GraphQL로 이동하고 있음을 나타냅니다. Adobe는 2019년 Magento의 GraphQL API를 소스로 사용하여 새로운 상거래 통합 프레임워크를 발표했습니다. Adobe는 더 이상 CIF REST에 투자할 계획이 없습니다. 고객은 교체 솔루션을 사용해야 합니다. | AEM-Magento 통합의 경우 [AEM CIF Recetype](https://github.com/adobe/aem-cif-project-archetype) 및 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)로 전환합니다. AEM 및 Magento 통합 [커머스 통합 프레임워크 사용](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)을 참조하십시오. 새로운 접근 방식과 타사(Magento 제외) 통합 지원이 로드맵에 있습니다. |
 | 구성 요소(AEM Sites) | Adobe은 `/libs/foundation/components`에 저장된 대부분의 기초 구성 요소를 추가로 개선할 계획이 없습니다. 구성 요소 폴더에서 `cq:deprecated` 및 `cq:deprecatedReason` 속성을 찾습니다. AEM 6.5에는 기초 구성 요소가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 또한, Foundation 구성 요소는 더 이상 사용되지 않지만 완전히 지원됩니다. | 향후 프로젝트에 핵심 구성 요소를 사용하는 것이 좋습니다. 기존 사이트는 그대로 유지되거나 [AEM Modernize Tools 제품군](https://github.com/adobe/aem-modernize-tools)을 사용하여 코어 구성 요소를 사용하도록 사이트를 리팩터링할 수 있습니다. |
