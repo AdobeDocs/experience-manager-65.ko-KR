@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 7에 대한 릴
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fa8d8c9a001b56006f1c0a30eb5a342754e63573
+source-git-commit: ad8ca7aaacd80bf5ca8daec78f7836e883e2343b
 workflow-type: tm+mt
-source-wordcount: '4227'
+source-wordcount: '4277'
 ht-degree: 20%
 
 ---
@@ -285,7 +285,7 @@ ht-degree: 20%
 
 * 기존 [!DNL Adobe Launch] 구성을 편집하지 못했습니다(NPR-35045).
 * IMS 구성 및 [!DNL Adobe Target Standard] 환경(NPR-34555)을 사용하는 경우 [!DNL Experience Fragments]을(를) [!DNL Adobe Target]으로 내보낼 수 없습니다.
-* 폴더에서 [!UICONTROL 대상자] 페이지로 이동(NPR-35151)할 때 [!UICONTROL 대상] 페이지가 나타납니다(NPR-35151).
+* 폴더에서 [!UICONTROL 대상자] 페이지로 이동(NPR-35151)할 때 [!UICONTROL 대상] 페이지가 나타납니다(NPR-35151).][!UICONTROL 
 
 ### 슬링 {#sling-6570}
 
@@ -423,6 +423,10 @@ B. [패키지 관리자에서 HTTP API](https://docs.adobe.com/content/docs/en/c
 1. Adobe Experience Manager 서비스 팩을 설치했는지 확인합니다.
 1. 운영 체제에 대한 [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
 1. [AEM Forms 추가 기능 패키지 설치](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
+
+>[!NOTE]
+>
+>AEM 6.5.7.0에는 [AEM Forms 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 AEM 6.5.7.0으로 업데이트하는 경우 Forms Add-On 패키지의 패키지 설치 후 최신 버전의 패키지를 설치합니다.
 
 ### JEE에 Adobe Experience Manager Forms 설치 {#install-aem-forms-jee-installer}
 
