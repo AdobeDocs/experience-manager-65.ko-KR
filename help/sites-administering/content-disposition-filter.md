@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
-source-git-commit: 741ba6f6ef3270414c0ddabb1a1d02d5c436b7d9
+source-git-commit: bb50e530f0d015c0e7d06650157e3e3994082483
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -34,5 +34,4 @@ GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/sr
 
 * 제외된 리소스 경로:제외된 리소스 목록, 각 리소스 경로는 절대 및 정규화된 경로로 지정해야 합니다. 접두사 일치/와일드카드는 지원되지 않습니다.
 
-* 모든 리소스 경로에 대해 활성화:이 플래그는 제외된 리소스 경로에 정의된 제외된 경로를 제외하고 모든 경로에 대해 이 필터를 활성화할지 여부를 제어합니다. 이 옵션을 &#39;true&#39;로 설정하면 컨텐츠 처리 경로가 무시됩니다. 구성 전용 리소스 경로와 관계없이 &#39;jcr:data&#39; 또는 &#39;jcr:content jcr:data&#39; 속성이 포함된 리소스 경로에 적용됩니다.
-
+* 모든 리소스 경로에 대해 활성화:이 플래그는 제외된 리소스 경로에 정의된 제외된 경로를 제외하고 모든 경로에 대해 이 필터를 활성화할지 여부를 제어합니다. 이 옵션을 &#39;true&#39;로 설정하면 컨텐츠 처리 경로가 무시됩니다. 구성에 관계없이 &#39;jcr:data&#39; 또는 &#39;jcr:content/jcr:data&#39; 속성이 포함된 리소스 경로만 포함됩니다.
