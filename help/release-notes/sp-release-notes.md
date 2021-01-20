@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 7에 대한 릴
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
 workflow-type: tm+mt
-source-wordcount: '4274'
+source-wordcount: '4255'
 ht-degree: 20%
 
 ---
@@ -30,8 +30,6 @@ ht-degree: 20%
 [!DNL Adobe Experience Manager] 6.5.7.0은 2019년 4월 6.5 릴리스 이후 릴리스된 새로운 기능, 주요 고객의 요구 사항 개선 사항, 성능, 안정성 및 보안 개선 사항이 포함된 중요한 업데이트입니다. 서비스 팩이 [!DNL Adobe Experience Manager] 6.5에 설치되어 있습니다.
 
 [!DNL Adobe Experience Manager] 6.5.7.0에 도입된 주요 기능 및 개선 사항은 다음과 같습니다.
-
-* [!UICONTROL 이름], [!UICONTROL 마지막 수정 날짜,] 및 [!UICONTROL 마지막 롤아웃 날짜] 속성을 사용하여 롤아웃에 사용할 수 있는 Live Copy 페이지를 정렬합니다.
 
 * 페이지 이동 및 MSM 롤아웃을 비동기 작업으로 수행하여 런타임 성능에 대한 영향을 줄일 수 있습니다.
 
@@ -517,7 +515,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 
 * [AEM 6.5.7.0에 포함된 OSGi 번들 목록](assets/6570_bundles.txt)
 
-* [AEM 6.5.7.0에 포함된 콘텐츠 패키지 목록](assets/6570_packages.txt)
+* [AEM 6.5.7.0에 포함된 컨텐츠 패키지 목록](assets/6570_packages.txt)
 
 ## 제한된 웹 사이트 {#restricted-sites}
 
