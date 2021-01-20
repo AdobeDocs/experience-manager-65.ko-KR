@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.5 서비스 팩 7의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
 workflow-type: tm+mt
-source-wordcount: '2815'
-ht-degree: 56%
+source-wordcount: '2770'
+ht-degree: 57%
 
 ---
 
@@ -21,10 +21,6 @@ ht-degree: 56%
 이 문서에서는 최신 6.5 서비스 팩, 이전 6.5 서비스 팩](#key-features-previous-service-packs)에 포함된 [주요 기능 및 마지막 서비스 팩](#key-releases-since-last-sp) 릴리스 이후 [주요 AEM 릴리스에 포함된 기능에 대해 다룹니다.
 
 ## Adobe [!DNL Experience Manager Sites] {#aem-sites}
-
-### 롤아웃에 사용할 수 있는 Live Copy 페이지 정렬 {#sort-livecopy-pages}
-
-이제 [!UICONTROL 이름], [!UICONTROL 마지막으로 수정한 날짜] 및 [!UICONTROL 마지막 롤아웃 날짜] 속성을 사용하여 롤아웃에 사용할 수 있는 Live Copy 페이지를 정렬할 수 있습니다. 페이지에 대한 [!UICONTROL 마지막 롤아웃 날짜]는 이 릴리스에서 도입된 새 속성입니다.
 
 ### 페이지 이동 가능 여부 및 비동기 작업 {#page-moves-msm-asynchronous}(으)로 MSM 롤아웃
 
