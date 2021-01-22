@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1130'
 ht-degree: 1%
 
 ---
@@ -157,7 +157,7 @@ AEM에는 캠페인 뉴스레터를 만들 수 있는 다양한 템플릿과 구
 | 텍스트 및 개인화 | /libs/mcm/campaign/components/personalization |
 | Textimage | /libs/mcm/campaign/components/textimage |
 | 링크 | /libs/mcm/campaign/components/reference |
-| Scene7 이미지 템플릿 | /libs/mcm/campaign/s7image |
+| Dynamic Media Classic(이전 Scene7) 이미지 템플릿 | /libs/mcm/campaign/s7image |
 | 대상 참조 | /libs/mcm/campaign/components/reference |
 
 >[!NOTE]
