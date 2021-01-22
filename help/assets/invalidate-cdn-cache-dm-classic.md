@@ -1,16 +1,14 @@
 ---
 title: Dynamic Media Classic을 통해 CDN 캐시 무효화
 description: CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media Classic에서 제공하는 자산을 빠르게 업데이트할 수 있습니다.
-uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -28,15 +26,9 @@ Dynamic Media Classic(Scene7)](https://helpx.adobe.com/experience-manager/scene7
 
 **Dynamic Media Classic을 통해 CDN 캐시를 무효화하려면:**
 
-1. 다음 중 하나를 수행하십시오.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)을(를) 열고 계정에 로그인합니다.
 
-   * 웹 브라우저에서 Dynamic Media Classic 계정에 로그온합니다.
-
-      [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-      프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
-
-   * Dynamic Media Classic 응용 프로그램을 연 다음 계정에 로그인합니다.
+   프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 설정 > 애플리케이션 설정 > 일반 설정을 탭합니다.]**
 1. [응용 프로그램 일반 설정] 페이지의 [서버] 그룹 머리글 아래에서 **[!UICONTROL CDN 무효화 템플릿]** 텍스트 상자를 찾습니다.
