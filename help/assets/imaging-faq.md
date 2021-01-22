@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1870'
 ht-degree: 1%
 
 ---
@@ -123,7 +123,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 * Adobe 번들 CDN(Content Delivery Network)을 라이선스의 일부로 사용할 수 있습니다.
 * 일반 도메인이 아닌 전용 도메인(예: `images.company.com` 또는 `mycompany.scene7.com`)을 사용합니다(예: `s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`).
 
-도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
+도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 열고 회사 계정 또는 계정에 로그인합니다.
 
 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 누릅니다.]** 게시된 서버 이름 **[!UICONTROL 이라는 필드를 찾습니다.]** 현재 범용 도메인을 사용하고 있는 경우 기술 지원 티켓을 제출할 때 이 전환의 일부로 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
 
@@ -139,7 +139,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
    1. 기본 연락처 이름, 이메일, 전화.
    1. 스마트 이미징을 사용하도록 설정할 모든 도메인(즉, `images.company.com` 또는 `mycompany.scene7.com`).
 
-      도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
+      도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 열고 회사 계정 또는 계정에 로그인합니다.
 
       **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 클릭합니다.]**
 
@@ -147,7 +147,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
    1. Adobe을 통해 CDN을 사용하고 있고 직접 관계로 관리되지 않는지 확인합니다.
    1. `images.company.com` 또는 `mycompany.scene7.com`과 같은 전용 도메인을 사용하고 있고 `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com` 등의 일반 도메인이 아닌지 확인합니다.
 
-      도메인을 찾으려면 회사 계정 또는 계정에 로그인합니다.
+      도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 열고 회사 계정 또는 계정에 로그인합니다.
 
       **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정을 클릭합니다.]**
 
