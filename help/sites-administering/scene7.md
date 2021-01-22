@@ -1,18 +1,14 @@
 ---
 title: Dynamic Media Classic과 통합
-seo-title: Dynamic Media Classic과 통합
-description: AEM과 Dynamic Media Classic을 통합하는 방법을 살펴보십시오.
-seo-description: AEM과 Dynamic Media Classic을 통합하는 방법을 살펴보십시오.
-uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
+description: Adobe Experience Manager과 Dynamic Media Classic을 통합하는 방법을 살펴보십시오.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '5464'
+source-wordcount: '5452'
 ht-degree: 2%
 
 ---
@@ -42,7 +38,7 @@ AEM 사용자는 다이내믹 미디어로 작업할 두 가지 솔루션 중에
 
 다음 기준을 사용하여 선택할 솔루션을 결정합니다.
 
-* 게시 및 전달을 위해 Dynamic Media Classic에 리치 미디어 에셋이 있지만 해당 에셋을 WCM(Sites) 작성 및/또는 AEM Assets과 통합하려는 경우 이 문서에 설명된 **AEM/Dynamic Media Classic 지점 간 통합**&#x200B;을 사용하십시오.[](#aem-scene-point-to-point-integration)
+* 게시 및 전달을 위해 Dynamic Media Classic에 리치 미디어 에셋이 있지만 해당 에셋을 WCM(Sites) 작성 및/또는 AEM Assets과 통합하려는 경우 이 문서에 설명된 [AEM/Dynamic Media Classic 지점 간 통합](#aem-scene-point-to-point-integration)을 사용하십시오.****
 
 * 리치 미디어 전달 요구 사항이 있는 **new** AEM 고객인 경우 [Dynamic Media 옵션](#aem-dynamic-media)을 선택합니다. 이 옵션은 기존 S7 계정과 해당 시스템에 저장된 많은 자산이 없는 경우에 가장 적합합니다.
 
@@ -164,7 +160,7 @@ Dynamic Media 및 Dynamic Media Classic을 동시에 사용하려면:
 1. (선택 사항;사용 사례 표 참조) - [자산에서 Dynamic Media Classic으로 자동 업로드를 활성화하도록 선택한 경우 다음을 추가해야 합니다.
 
    1. Dynamic Media Classic에 자동 업로드를 설정합니다.
-   1. ***&lt;a4/>Dam 자산 업데이트**워크플로( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)의 끝에서 모든 Dynamic Media 워크플로우 단계*&#x200B;의 다음 **Dynamic Media Classic 업로드** 단계를 추가합니다.
+   1. ***Dam 자산 업데이트**워크플로( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)의 끝에서 모든 Dynamic Media 워크플로우 단계*&#x200B;의 다음 **Dynamic Media Classic 업로드** 단계를 추가합니다.
    1. (선택 사항) Dynamic Media Classic 에셋 업로드를 [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl)에서 MIME 유형별로 제한합니다. 이 목록에 없는 자산 MIME 유형은 Dynamic Media Classic 서버에 업로드되지 않습니다.
    1. (선택 사항) Dynamic Media Classic 구성에서 비디오를 설정합니다. Dynamic Media 및 Dynamic Media Classic 중 하나 또는 둘 다에 대해 비디오 인코딩을 동시에 활성화할 수 있습니다. 동적 변환은 AEM 인스턴스에서 로컬로 미리 보고 재생하는 데 사용되는 반면 Dynamic Media Classic 비디오 변환은 Dynamic Media Classic 서버에 생성되고 저장됩니다. Dynamic Media 및 Dynamic Media Classic 모두에 대해 비디오 인코딩 서비스를 설정할 때 Dynamic Media Classic 에셋 폴더에 [비디오 처리 프로필](/help/assets/video-profiles.md)을 적용합니다.
    1. (선택 사항) [Dynamic Media Classic에서 보안 미리 보기 구성](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
