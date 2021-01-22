@@ -1,18 +1,14 @@
 ---
 title: 검색 양식 구성
-seo-title: 검색 양식 구성
 description: 검색 Forms 구성 방법을 알아봅니다.
-seo-description: 검색 Forms 구성 방법을 알아봅니다.
-uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2060'
 ht-degree: 12%
 
 ---
@@ -64,7 +60,7 @@ ht-degree: 12%
 
    이 구성은 자산 브라우저에서 제품을 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
 
-* **페이지 편집기(Scene7 검색)**:
+* **페이지 편집기(Dynamic Media Classic  [이전 Scene7] 검색)**:
 
    이 구성은 자산 브라우저에서 Scene7 리소스를 검색할 때(페이지를 편집할 때) 사용할 수 있는 옵션을 정의합니다.
 
@@ -109,7 +105,7 @@ ht-degree: 12%
 <table>
  <tbody>
   <tr>
-   <th>설명</th>
+   <th>조건자</th>
    <th>목적</th>
    <th>설정</th>
   </tr>
