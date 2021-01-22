@@ -10,9 +10,9 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '4265'
+source-wordcount: '4335'
 ht-degree: 1%
 
 ---
@@ -22,12 +22,12 @@ ht-degree: 1%
 
 뷰어 사전 설정은 사용자가 컴퓨터 화면 및 모바일 장치에서 리치 미디어 자산을 보는 방법을 결정하는 설정 모음입니다. 관리자는 뷰어 사전 설정을 만들 수 있습니다. 설정은 뷰어 구성 옵션의 배열에 사용할 수 있습니다. 예를 들어 뷰어 표시 크기 또는 확대/축소 비헤이비어를 변경할 수 있습니다.
 
-<!-- OBSOLETE CONTENT  For instructions on creating and customizing your own HTML5 viewer presets, see the *Adobe Scene7 HTML5 Viewer SDK*. The SDK is available on the IS publish server embedded in the SDK itself. Each library version has its own SDK documentation included.
+고유한 HTML5 뷰어 사전 설정을 만들고 사용자 지정하는 방법에 대한 지침은 Adobe Dynamic Media *HTML5 뷰어 SDK API 설명서*&#x200B;를 참조하십시오. SDK는 SDK 자체에 포함된 IS 게시 서버에서 사용할 수 있습니다. 각 라이브러리 버전에는 고유한 SDK 설명서가 포함되어 있습니다.
 
-Path: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.
-For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html) -->
+경로: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
+예: 3.10 SDK:[https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-[Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
+또한 [Adobe Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
 
 이 섹션에서는 뷰어 사전 설정을 만들고, 편집하고, 관리하는 방법에 대해 설명합니다. 미리 볼 때마다 자산에 뷰어 사전 설정을 적용할 수 있습니다. [뷰어 사전 설정 적용](#applying-a-viewer-preset-to-an-asset)을 참조하십시오.
 
@@ -412,9 +412,9 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어에서 자산을 볼 때
 
 일부 뷰어 사전 설정에는 뷰어의 사용 및 전반적인 비헤이비어에 영향을 줄 수 있는 전용 설정이 있습니다. 만드는 뷰어 사전 설정에 따라 이러한 특별한 고려 사항을 알고 싶을 수 있습니다.
 
-대화형 뷰어 사전 설정[을 만들기 위한 특별한 고려 사항을 참조하십시오.](#special-considerations-for-creating-an-interactive-viewer-preset)
+대화형 뷰어 사전 설정](#special-considerations-for-creating-an-interactive-viewer-preset)을 만들기 위한 특별한 고려 사항을 참조하십시오.[
 
-회전판 배너 뷰어 사전 설정[을 만들기 위한 특별한 고려 사항을 참조하십시오.](#special-considerations-for-creating-a-carousel-banner-viewer-preset)
+회전판 배너 뷰어 사전 설정](#special-considerations-for-creating-a-carousel-banner-viewer-preset)을 만들기 위한 특별한 고려 사항을 참조하십시오.[
 
 **뷰어 사전 설정을 만들려면**
 
@@ -614,6 +614,6 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어에서 자산을 볼 때
 
 ## 뷰어 사전 설정 {#delivering-assets-with-viewer-presets}을(를) 사용하여 에셋 제공
 
-뷰어 사전 설정에 대한 URL을 가져오려면 [웹 응용 프로그램에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 웹 페이지에 비디오 뷰어 포함[을 참조하십시오.](/help/assets/embed-code.md)
+뷰어 사전 설정에 대한 URL을 가져오려면 [웹 응용 프로그램에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 웹 페이지에 비디오 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.[
 
 AEM을 WCM으로 사용하는 경우 페이지에 있는 뷰어 사전 설정을 사용하여 자산을 추가할 수 있습니다. [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
