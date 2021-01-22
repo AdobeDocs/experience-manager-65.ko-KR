@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정
 
 1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)에 로그인합니다.
 
-   프로비저닝 시 Adobe에서 자격 증명 및 로그인을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
 1. 다음을 수행하여 규칙 세트 파일을 업로드합니다.
 
