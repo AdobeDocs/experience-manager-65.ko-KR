@@ -1,17 +1,15 @@
 ---
 title: Dynamic Media 구성 - Scene7 모드
 description: Dynamic Media - Scene7 모드를 구성하는 방법에 대한 정보입니다.
-uuid: ce43c589-d415-4611-9266-b4e8887e4cdc
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 24ad36d3ff329885efff319404e0d5321e8ce46d
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '5990'
+source-wordcount: '6029'
 ht-degree: 1%
 
 ---
@@ -73,7 +71,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## Cloud Services {#configuring-dynamic-media-cloud-services}에서 Dynamic Media 구성 만들기
 
-**Dynamic Media**  구성 전 - Dynamic Media 자격 증명을 사용하여 프로비저닝 이메일을 받은 후 Dynamic Media Classic [ ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 에 로그인하여 암호를 변경해야 합니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
+**Dynamic Media**  구성 전 - Dynamic Media 자격 증명을 사용하여 프로비저닝 이메일을 받은 후  [Dynamic Media Classic 데스크톱 응용](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) 프로그램을 연 다음 계정에 로그인하여 암호를 변경해야 합니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
 
 ![dynamicmediaconficonfiguration2업데이트](assets/dynamicmediaconfiguration2updated.png)
 
@@ -87,7 +85,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    >[!NOTE]
    >
-   >Dynamic Media 자격 증명으로 프로비저닝 전자 메일을 받은 후 [Dynamic Media Classic에 로그인하여 암호를 변경하십시오. ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media 클라우드 서비스가 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
+   >Dynamic Media 자격 증명을 사용하여 프로비저닝 전자 메일을 받은 후 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 연 다음 계정에 로그인하여 암호를 변경합니다. 프로비저닝 이메일에 제공된 암호는 시스템에서 생성되며 임시 암호에만 사용됩니다. Dynamic Media 클라우드 서비스가 올바른 자격 증명으로 설정되도록 암호를 업데이트해야 합니다.
 
 1. 연결이 성공하면 다음을 설정합니다. 별표(*)가 있는 머리글은 필수입니다.
 
@@ -98,7 +96,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * **[!UICONTROL 자산 게시]**  - 다음 3가지 옵션 중에서 선택할 수 있습니다.
       * **[!UICONTROL 즉시]** 는 에셋이 업로드되면 시스템이 에셋을 인제스트하고 URL/포함을 즉시 제공함을 의미합니다. 자산을 게시하는 데 필요한 사용자 개입은 없습니다.
       * **[!UICONTROL 활성화 시]** 는 URL/포함 링크를 제공하기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.
-      * **[!UICONTROL 선택적]** 게시이 옵션을 사용하면 Dynamic Media에 게시되는 폴더를 제어할 수 있으므로 스마트 자르기 또는 동적 표현물 등의 기능을 사용하거나 미리 보기 위해 AEM에만 게시되는 폴더를 지정할 수 있습니다.동일한 에셋은 공개 도메인에 전달되기 위해 Dynamic Media에  ** 게시되지 않습니다.<br>이 옵션은  **[!UICONTROL Dynamic Media Cloud]** 구성에서 설정하거나, 원할 경우 폴더의  **[!UICONTROL 속성에서 폴더 수준에서 설정할 수 있습니다]**.<br>Dynamic Media [에서 선택적 게시로 작업을 참조하십시오.](/help/assets/selective-publishing.md)<br>나중에 이 구성을 변경하거나 나중에 폴더 수준에서 변경하면 해당 시점부터 업로드한 새 자산에만 변경 사항이 적용됩니다. **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 발행물 관리]** 대화 상자에서 수동으로 변경할 때까지 폴더의 기존 자산의 게시 상태는 그대로 유지됩니다.
+      * **[!UICONTROL 선택적]** 게시이 옵션을 사용하면 Dynamic Media에 게시되는 폴더를 제어할 수 있으므로 스마트 자르기 또는 동적 표현물 등의 기능을 사용하거나 미리 보기 위해 AEM에만 게시되는 폴더를 지정할 수 있습니다.동일한 에셋은 공개 도메인에 전달되기 위해 Dynamic Media에  ** 게시되지 않습니다.<br>이 옵션은  **[!UICONTROL Dynamic Media Cloud]** 구성에서 설정하거나, 원할 경우 폴더의  **[!UICONTROL 속성에서 폴더 수준에서 설정할 수 있습니다]**.<br>[Dynamic Media의 선택적 게시 작업을 참조하십시오.](/help/assets/selective-publishing.md)<br>나중에 이 구성을 변경하거나 나중에 폴더 수준에서 변경하면 해당 시점부터 업로드한 새 자산에만 변경 사항이 적용됩니다. **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 발행물 관리]** 대화 상자에서 수동으로 변경할 때까지 폴더의 기존 자산의 게시 상태는 그대로 유지됩니다.
    * **[!UICONTROL 보안 미리 보기 서버]**  - 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 AEM은 원격 Dynamic Media 변환에 안전하게 액세스하고 미리 볼 수 있습니다(이진 파일은 AEM 인스턴스로 다시 전송되지 않음).
 회사 서버 또는 특수 서버를 사용하기 위해 특별한 준비가 되어 있지 않은 경우, Adobe Systems에서는 이 설정을 지정한 대로 유지하는 것이 좋습니다.
 
@@ -122,7 +120,8 @@ Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더�
 1. **[!UICONTROL 저장을 탭합니다.]**
 1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 Dynamic Media에 연결하려면 AEM 작성자 인스턴스를 &quot;&quot;허용 목록에 추가하다해야 합니다.
 
-   * Dynamic Media Classic 계정에 로그온합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). 프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   * [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+
    * 페이지 오른쪽 상단의 탐색 막대에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 게시 설정 > 이미지 서버를 클릭합니다.]**
 
    * 이미지 서버 게시 페이지의 게시 컨텍스트 드롭다운 목록에서 **[!UICONTROL 이미지 제공 테스트를 선택합니다.]**
@@ -148,7 +147,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 
 실행 모드 `dynamicmedia_scene7`에서는 Dynamic Media Classic(Scene7) 사용자 인터페이스를 사용하여 Dynamic Media 설정을 변경합니다.
 
-위의 작업 중 일부는 여기에서 Dynamic Media Classic(Scene7)에 로그인해야 합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+위의 작업 중 일부는 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 연 다음 계정에 로그인해야 합니다.
 
 설정 및 구성 작업은 다음과 같습니다.
 
@@ -205,7 +204,8 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 정의
 
 이미지를 요청할 때 색상 보정을 사용하도록 기본 색상 속성을 구성하려면 다음을 수행하십시오.
 
-1. [프로비저닝 동안 제공된 자격 ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 증명을 사용하여 Dynamic Media Classicics에 로그인합니다. **[!UICONTROL 설정 > 응용 프로그램 설정으로 이동합니다.]**
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 연 다음 프로비저닝 동안 제공된 자격 증명을 사용하여 계정에 로그인합니다.
+1. **[!UICONTROL 설정 > 응용 프로그램 설정으로 이동합니다.]**
 1. **[!UICONTROL 제작 설정]** 영역을 확장하고 **[!UICONTROL 이미지 서버를 선택합니다.]** 게시  **[!UICONTROL 인스턴스]** 에 대한 기본값 **[!UICONTROL 을]** 설정할때 [게시 컨텍스트]를 이미지 서비스로 설정합니다.
 1. 변경해야 할 속성(예: **[!UICONTROL 색상 관리 속성]** 영역의 속성)으로 스크롤합니다.
 
@@ -334,9 +334,9 @@ AEM Assets에서 지원되지 않는 형식에 대해 사용자 지정 MIME 형�
 
 **기본 이름 지정을 구성하려면**
 
-1. Dynamic Media Classic(Scene7) 계정에 로그온합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다.
 
-   프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
 1. 페이지 상단 근처의 내비게이션 막대에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 배치 집합 사전 설정 > 기본 이름 지정을 탭합니다.]**
 1. 각 요소에 대한 정보를 보고 입력할 방법을 지정하려면 **[!UICONTROL 양식 보기]** 또는 **[!UICONTROL 코드 보기]**&#x200B;를 선택합니다.
@@ -368,9 +368,9 @@ Dynamic Media은 일괄 처리 집합 사전 설정을 사용하여 뷰어에 �
 
 **배치 집합 사전 설정을 만들려면**
 
-1. Dynamic Media Classic(Scene7) 계정에 로그온합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다.
 
-   프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
 1. 페이지 상단 근처의 내비게이션 막대에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 배치 집합 사전 설정 > 배치 집합 사전 설정을 누릅니다.]**
 
@@ -424,9 +424,9 @@ spin-01-01
 
 **2D 회전 집합의 자동 생성을 위한 일괄 세트 사전 설정을 만들려면**
 
-1. Dynamic Media Classic(Scene7) 계정에 로그온합니다.[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을(를) 열고 계정에 로그인합니다.
 
-   프로비저닝 시 Adobe에서 자격 증명 및 로그온을 제공했습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원에 문의하십시오.
 
 1. 페이지 상단 근처의 내비게이션 막대에서 **[!UICONTROL 설정] > [!UICONTROL 애플리케이션 설정] > [!UICONTROL 배치 집합 사전 설정] > [!UICONTROL 일괄 집합 사전 설정]**&#x200B;을 클릭합니다.
 
