@@ -1,18 +1,14 @@
 ---
 title: 콘텐츠의 HTTP2 전달 FAQ
-seo-title: 콘텐츠의 HTTP2 전달 FAQ
 description: HTTP2 컨텐츠 전달에 대해 알아봅니다.
-seo-description: HTTP2 컨텐츠 전달에 대해 알아봅니다.
-uuid: e837c3e0-6e48-46f1-b510-847c9976807a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: afbe9f80-c2a3-4a46-b9d6-4c9406667d7f
 translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
