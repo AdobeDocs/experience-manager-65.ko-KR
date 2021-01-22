@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 1%
@@ -47,7 +47,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 * Dynamic Media 라이선스의 일부로 Adobe 번들 CDN(컨텐츠 전달 네트워크)을 사용합니다.
 * 일반 Dynamic Media 도메인(즉, `s7d1.scene7.com`, `s7d2.scene7.com` 또는 `s7d13.scene7.com`)이 아닌 전용 도메인(즉, `images.company.com` 또는 `mycompany.scene7.com`)을 사용합니다.
 
-   도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)을(를) 통해 계정에 로그인합니다. 그런 다음 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 탭합니다. **게시된 서버 이름**&#x200B;이라는 레이블이 있는 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+   도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 열고 회사 계정 또는 계정에 로그인합니다. 그런 다음 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 탭합니다. **게시된 서버 이름**&#x200B;이라는 레이블이 있는 필드를 찾습니다. 현재 일반 Dynamic Media 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
 ## Dynamic Media 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까?{#what-is-the-process-for-enabling-http-for-my-scene-account}
 
@@ -57,13 +57,13 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
    * 기본 연락처 이름, 이메일 및 전화 번호
    * HTTP2로 전환할 모든 도메인. 즉, `images.company.com` 또는 `mycompany.scene7.com`입니다.
 
-      도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)을(를) 통해 계정에 로그인합니다. 그런 다음 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 탭합니다. **[!UICONTROL 게시된 서버 이름]** 레이블이 있는 필드를 찾습니다.
+      도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 열고 회사 계정 또는 계정에 로그인합니다. 그런 다음 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 탭합니다. **[!UICONTROL 게시된 서버 이름]** 레이블이 있는 필드를 찾습니다.
 
    * 리치 미디어 요청에 보안 HTTPS를 사용하는지 확인합니다.
    * Adobe을 통해 CDN을 사용하고 있고 직접 관계로 관리되지 않는지 확인합니다.
    * 전용 도메인을 사용하고 있는지 확인합니다. 즉, `images.company.com` 또는 `mycompany.scene7.com`은(는) `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`와 같은 일반 Dynamic Media 도메인이 아닙니다.
 
-      도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)을(를) 통해 계정에 로그인합니다. 그런 다음 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 탭합니다. **[!UICONTROL 게시된 서버 이름 필드를 찾습니다.]** 현재 일반 Dynamic Media 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
+      도메인을 찾으려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 열고 회사 계정 또는 계정에 로그인합니다. 그런 다음 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 탭합니다. **[!UICONTROL 게시된 서버 이름 필드를 찾습니다.]** 현재 일반 Dynamic Media 도메인을 사용하고 있는 경우 이 전환의 일부로 사용자 정의 도메인으로의 이동을 요청할 수 있습니다.
 
 1. 기술 지원에서는 요청을 제출한 순서에 따라 HTTP/2 고객 대기 목록에 사용자를 추가합니다.
 1. Adobe이 요청을 처리할 준비가 되면 지원 담당자가 전환을 조정하고 대상 날짜를 설정하도록 사용자에게 연락합니다.
