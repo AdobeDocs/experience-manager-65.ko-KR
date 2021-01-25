@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 7에 대한 릴
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
+source-git-commit: eec0e8f466c4a228b16ee2c1249052bfc3250dec
 workflow-type: tm+mt
-source-wordcount: '4255'
+source-wordcount: '4302'
 ht-degree: 20%
 
 ---
@@ -465,6 +465,8 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 | 커넥터 | Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 Adobe JCR Connector는 AEM 6.5에서 더 이상 사용하지 않습니다. | N/A |
 
 ## 알려진 문제 {#known-issues}
+
+* 잠긴 구성 요소 레지스트리 타이머로 인해 [!DNL Experience Manager] 응답에 문제가 발생하면 [이 패키지](https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr/2.1.20)를 설치합니다. 이러한 문제에 대한 해결 방법은 다음 [Experience Manager 서비스 팩 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-on-prem-managed-services)에 포함될 예정입니다.
 
 * Experience Manager 6.5.7.0 설치 중 `error.log` 파일에서 다음 오류를 무시합니다.
 
