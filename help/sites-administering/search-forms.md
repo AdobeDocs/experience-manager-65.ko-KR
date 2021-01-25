@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: 19faa273908e67a744e52d173a5352f0a52f7345
 workflow-type: tm+mt
 source-wordcount: '2060'
 ht-degree: 12%
@@ -414,7 +414,7 @@ ht-degree: 12%
 
 ### 사용자 지정된 구성 {#creating-opening-a-customized-configuration} 만들기/열기
 
-1. **도구**, **작업**, **Forms 검색**&#x200B;으로 이동합니다.
+1. **도구**, **일반**, **Forms 검색**&#x200B;으로 이동합니다.
 
 1. 사용자 정의할 구성을 선택합니다.
 1. **편집** 아이콘을 사용하여 업데이트를 위한 구성을 엽니다.
