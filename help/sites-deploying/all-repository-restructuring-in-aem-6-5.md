@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 translation-type: tm+mt
-source-git-commit: 6396660b642fd78ac7f311fa416efe0e0d52a9e3
+source-git-commit: 838e194f699b0832839c80f4ba9503c9d5a15945
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 2%
@@ -85,7 +85,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
    <td><strong>구조 조정 지침</strong></td>
    <td><p>새로 만들거나 수정한 모든 워크플로우 모델은 /conf/global/workflow/models로 마이그레이션해야 합니다.</p>
     <ol>
-     <li>수정된 워크플로우 모델을 이전 위치에 존재하는 로컬 AEM 6.4 개발 인스턴스에 배포합니다.</li>
+     <li>수정된 워크플로우 모델을 이전 위치에 존재하는 로컬 AEM 6.5 개발 인스턴스에 배포합니다.</li>
      <li>AEM &gt; 도구 &gt; 워크플로우 &gt; 모델의 AEM 워크플로우 모델 편집기를 사용하여 워크플로우 모델을 편집합니다.</li>
      <li>수정된 AEM 제공 워크플로우 모델을 마이그레이션할 때
       <ol>
