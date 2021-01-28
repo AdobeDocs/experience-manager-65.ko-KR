@@ -1,12 +1,12 @@
 ---
-title: ' [!DNL Adobe Experience Manager]에서 디지털 자산 및 이미지를 검색합니다.'
+title: ' [!DNL Adobe Experience Manager]에서 디지털 자산 및 이미지 검색'
 description: 필터 패널을 사용하여 [!DNL Adobe Experience Manager] 에서 필요한 에셋을 찾는 방법과 검색에 표시되는 에셋을 사용하는 방법을 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: 38ef8d8bd574933fdc57d7475831518f9d7f293e
 workflow-type: tm+mt
-source-wordcount: '5767'
+source-wordcount: '5716'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 ### 비슷한 이미지 찾기 {#visualsearch}
 
-사용자가 선택한 이미지와 시각적으로 유사한 이미지를 찾으려면 이미지 또는 도구 모음에서 **[!UICONTROL 비슷한 항목 찾기]** 옵션을 클릭합니다. [!DNL Experience Manager]는 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다. 유사성 검색 구성 방법[을 참조하십시오.](#configvisualsearch)
+사용자가 선택한 이미지와 시각적으로 유사한 이미지를 찾으려면 이미지 또는 도구 모음에서 **[!UICONTROL 비슷한 항목 찾기]** 옵션을 클릭합니다. [!DNL Experience Manager]는 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다. 유사성 검색 구성 방법](#configvisualsearch)을 참조하십시오.[
 
 ![카드 보기에서 옵션을 사용하여 유사한 이미지를 찾습니다.](assets/search_find_similar.png)
 
@@ -155,28 +155,28 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 제목, 설명 및 작성자와 같은 특정 메타데이터 필드의 정확한 값을 기반으로 자산을 검색할 수 있습니다. GQL 전체 텍스트 검색 기능은 메타데이터 값이 검색 쿼리와 정확히 일치하는 자산만 가져옵니다. 속성 이름(예: 작성자, 제목 등)과 값은 대/소문자를 구분합니다.
 
 | 메타데이터 필드 | 패싯 값 및 사용 |
-| ----------------------------------------- | ------------------------------------- |
-| 제목 | 제목:John |
-| 작성자 | 작성자:John |
-| 위치 | 위치:NA |
-| 설명 | 설명:&quot;샘플 이미지&quot; |
-| 작성자 도구 | creatortool:&quot;Adobe Photoshop CC 2020&quot; |
-| 저작권 소유자 | 저작권 보호:&quot;Adobe Systems&quot; |
-| 내용 작성자 | contributor:John |
-| 사용 약관 | usageterms:&quot;CopyRights Reserved&quot; |
-| 작성일 | created:YYYY-MM-DDTHH |
-| 만료 날짜 | expects:YYYY-MM-DDTHH |
-| 정시 | ontime:YYYY-MM-DDTHH |
-| 해제 시간 | offtime:YYYY-MM-DDTHH |
-| 시간 범위(만료일 시간, 해제 시간) | facet 필드:소문자로...주행 |
+| ----------------------------------------- | --------------------------------------- |
+| 제목 | `title:John` |
+| 작성자 | `creator:John` |
+| 위치 | `location:NA` |
+| 설명 | `description:"Sample Image"` |
+| 작성자 도구 | `creatortool:"Adobe Photoshop CC 2020"` |
+| 저작권 소유자 | `copyrightowner:"Adobe Systems"` |
+| 내용 작성자 | `contributor:John` |
+| 사용 약관 | `usageterms:"CopyRights Reserved"` |
+| 작성일 | `created`YYYY-MM-DDTHH |
+| 만료 날짜 | `expires`YYYY-MM-DDTHH |
+| 정시 | `ontime`YYYY-MM-DDTHH |
+| 해제 시간 | `offtime`YYYY-MM-DDTHH |
+| 시간 범위(만료일 시간, 해제 시간) | `facet field`:소문자로...주행 |
 | 경로 | /content/dam/&lt;폴더 이름> |
-| PDF 제목 | pdftitle:&quot;Adobe 문서&quot; |
-| 제목 | 제목:&quot;교육&quot; |
-| 태그 | 태그:&quot;위치 및 여행&quot; |
-| 유형 | type:&quot;image\png&quot; |
-| 이미지 너비 | width:lowbound.주행 |
-| 이미지 높이 | height:lower bound.주행 |
-| 개인 | 사람:John |
+| PDF 제목 | `pdftitle`:&quot;Adobe 문서&quot; |
+| 제목 | `subject:"Training"` |
+| 태그 | `tags:"Location And Travel"` |
+| 유형 | `type:"image\png"` |
+| 이미지 너비 | `width`: 하한..주행 |
+| 이미지 높이 | `height`: 하한..주행 |
+| 개인 | `person:John` |
 
 `path`, `limit`, `size` 및 `orderby` 속성은 `OR` 연산자를 다른 속성과 함께 사용하여 결합할 수 없습니다.
 
@@ -239,12 +239,12 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 | 이름 | 값 | 예 | 목적 |
 |---|---|---|---|
 | 리소스 접미어(B) | URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html)에 있는 리소스 접미어로 폴더 경로 | 특정 폴더를 선택한 상태로 자산 선택기를 실행하려면(예: `/content/dam/we-retail/en/activities` 폴더를 선택한 경우) URL은 다음과 같은 형식이어야 합니다.[https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 리소스 접미어로 전달합니다. |
-| mode | 단일, 다중 | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | 여러 모드에서 자산 선택기를 사용하여 여러 자산을 동시에 선택할 수 있습니다. |
-| 문제가 발생합니다 | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 [화강암 대화 상자]로 엽니다. 이 옵션은 [granite Path Field]를 통해 자산 선택기를 실행하고 pickerSrc URL로 구성하는 경우에만 적용됩니다. |
-| 루트 | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | 자산 선택기의 루트 폴더를 지정하려면 이 옵션을 사용합니다. 이 경우 자산 선택기를 사용하여 루트 폴더 아래에서 하위 자산(직접/간접)만 선택할 수 있습니다. |
-| 보기 모드 | 검색을 |  | 자산 유형 및 mimetype 매개 변수를 사용하여 검색 모드에서 자산 선택기를 실행하려면 |
-| assettype | 이미지, 문서, 멀티미디어, 아카이브 | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives)</li></ul> | 전달된 값을 기준으로 자산 유형을 필터링하려면 이 옵션을 사용합니다. |
-| mimetype | 에셋의 mimetype(`/jcr:content/metadata/dc:format`)(와일드카드가 지원됨) | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png)</li></ul> | MIME 유형에 따라 자산을 필터링하는 데 사용합니다. |
+| `mode` | 단일, 다중 | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | 여러 모드에서 자산 선택기를 사용하여 여러 자산을 동시에 선택할 수 있습니다. |
+| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 [화강암 대화 상자]로 엽니다. 이 옵션은 [granite Path Field]를 통해 자산 선택기를 실행하고 pickerSrc URL로 구성하는 경우에만 적용됩니다. |
+| `root` | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | 자산 선택기의 루트 폴더를 지정하려면 이 옵션을 사용합니다. 이 경우 자산 선택기를 사용하여 루트 폴더 아래에서 하위 자산(직접/간접)만 선택할 수 있습니다. |
+| `viewmode` | 검색을 |  | 자산 유형 및 mimetype 매개 변수를 사용하여 검색 모드에서 자산 선택기를 실행하려면 |
+| `assettype` | 이미지, 문서, 멀티미디어, 아카이브 | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives)</li></ul> | 제공된 값을 기준으로 자산 유형을 필터링하려면 이 옵션을 사용합니다. |
+| `mimetype` | 자산의 MIME 유형(`/jcr:content/metadata/dc:format`)(와일드카드도 지원됨). | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png)</li></ul> | MIME 유형에 따라 자산을 필터링하는 데 사용합니다. |
 
 자산 선택기 인터페이스에 액세스하려면 `https://[aem_server]:[port]/aem/assetpicker`으로 이동하십시오. 원하는 폴더로 이동하고 하나 이상의 자산을 선택합니다. 또는 Omniture 상자에서 원하는 에셋을 검색하고 필요에 따라 필터를 적용한 다음 선택합니다.
 
@@ -263,7 +263,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 시각적 검색 또는 유사성 검색에는 다음과 같은 제한이 있습니다.
 
-* 시각적 검색은 대용량 저장소에서 가장 잘 작동합니다. 좋은 결과를 얻기 위해 필요한 최소 이미지 수는 없지만, 일부 이미지가 있는 일치 항목의 품질은 큰 저장소의 일치 품질보다 좋지 않을 수 있습니다.
+* 시각적 검색은 대용량 저장소에서 가장 잘 작동합니다. 좋은 결과를 얻기 위해 필요한 최소 이미지 수는 없지만, 몇 개의 이미지를 사용한 일치 항목의 품질은 큰 저장소의 일치 항목 만큼 좋지 않습니다.
 * 모델을 변경하거나 [!DNL Experience Manager]에서 유사한 이미지를 찾을 수 없습니다. 예를 들어 일부 자산에 스마트 태그를 추가하거나 제거해도 모델이 변경되지 않습니다. 자산은 시각적으로 유사한 검색 결과에서 제외됩니다.
 
 검색 기능은 다음 시나리오에서 성능 제한을 가질 수 있습니다.
@@ -297,8 +297,8 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 **별표 와일드카드** 검색:검색을 확장하려면 검색 단어 앞이나 뒤에 별표를 사용하여 원하는 수의 문자와 일치시킵니다. 예를 들어 별표 없이 실행만 검색해도 변형된 단어(메타데이터에 포함)가 포함된 에셋은 반환되지 않습니다. 별표는 모든 수의 문자를 대체합니다. 예,
 
 * `run` 정확하게 run 키워드를 사용하여 자산 반환
-* `run*` 실행, 실행, 런어웨이 등이 포함된 에셋을 반환합니다.
-* `*run` outun, 다시 실행 등을 반환합니다.
+* `run*` 자산 `running`,  `run` `runaway`등이 있는 자산을 반환합니다.
+* `*run` 자산 `outrun`,  `rerun`등이 있는 자산을 반환합니다.
 * `*run*` 가능한 모든 조합을 반환합니다.
 
 ![예를 사용하여 자산 검색에서 별표 와일드카드의 사용](assets/search_with_asterisk_run.gif)
@@ -455,7 +455,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 | 누락된 메타데이터가 있는 자산을 검색할 때 결과가 잘못되었습니다. | 필수 메타데이터가 없는 에셋을 검색할 때 [!DNL Experience Manager]에 유효한 메타데이터가 있는 일부 에셋이 표시될 수 있습니다. 결과는 인덱스 메타데이터 속성을 기반으로 합니다. | 메타데이터가 업데이트된 후 자산 메타데이터의 올바른 상태를 반영하려면 다시 색인화가 필요합니다. [필수 메타데이터](metadata-schemas.md#define-mandatory-metadata)를 참조하십시오. |
 | 검색 결과가 너무 많습니다. | 광범위한 검색 매개 변수. | [검색 범위 제한(](#scope))을 고려합니다. 스마트 태그를 사용하면 예상보다 검색 결과를 더 많이 얻을 수 있습니다. 스마트 태그](#withsmarttags)의 [검색 비헤이비어를 참조하십시오. |
 | 관련되지 않았거나 부분적으로 관련된 검색 결과. | 스마트 태깅을 통해 검색 동작이 변경됩니다. | 스마트 태그 지정](#withsmarttags) 후 검색이 변경되는 방법을 이해합니다.[ |
-| 자산에 대한 자동 완성 제안이 없습니다. | 새로 업로드된 에셋은 아직 색인이 없습니다. Omniture 막대에서 검색 키워드를 입력하기 시작하면 메타데이터를 제안으로 즉시 사용할 수 없습니다. | [!DNL Assets] 백그라운드 작업을 실행하기 전에 시간 제한 기간이 만료될 때까지(기본적으로 1시간) 기다렸다가 새로 업로드되거나 업데이트된 모든 자산에 대한 메타데이터를 색인화한 다음 메타데이터를 제안 목록에 추가합니다. |
+| 자산에 대한 자동 완성 제안이 없습니다. | 새로 업로드된 에셋은 아직 색인이 없습니다. Omniture 막대에서 검색 키워드를 입력하기 시작하면 메타데이터를 제안으로 즉시 사용할 수 없습니다. | [!DNL Experience Manager] 백그라운드 작업을 실행하기 전에 시간 제한 기간이 만료될 때까지(기본적으로 1시간) 기다렸다가 새로 업로드되거나 업데이트된 모든 자산에 대한 메타데이터를 색인화한 다음 메타데이터를 제안 목록에 추가합니다. |
 | 검색 결과 없음. | <ul><li>쿼리와 일치하는 에셋이 없습니다. </li><li> 검색 쿼리 앞에 공백이 추가되었습니다. </li><li> 지원되지 않는 메타데이터 필드에 검색한 키워드가 포함되어 있습니다.</li><li> 자산의 비정기 동안 검색을 수행했습니다. </li></ul> | <ul><li>다른 키워드를 사용하여 검색합니다. 또는 스마트 태그 지정 또는 유사 검색을 사용하여 검색 결과를 향상시킬 수 있습니다. </li><li>[알려진 제한](#limitations).</li><li>모든 메타데이터 필드는 검색으로 간주되지 않습니다. [범위](#scope)를 참조하십시오.</li><li>나중에 검색하거나 필요한 자산에 대한 설정 및 해제 시간을 수정합니다.</li></ul> |
 | 검색 필터 또는 조건자를 사용할 수 없습니다. | <ul><li>검색 필터가 구성되지 않았습니다.</li><li>로그인에는 사용할 수 없습니다.</li><li>(거의 발생하지 않음) 사용 중인 배포에서 검색 옵션이 사용자 지정되지 않습니다.</li></ul> | <ul><li>검색 사용자 지정 설정이 사용 가능한지 확인하려면 관리자에게 문의하십시오.</li><li>계정에 사용자 지정을 사용할 수 있는 권한/권한이 있는지 확인하려면 관리자에게 문의하십시오.</li><li>관리자에게 문의하여 사용 중인 [!DNL Assets] 배포에 대한 사용 가능한 사용자 지정을 확인하십시오.</li></ul> |
 | 시각적으로 유사한 이미지를 검색할 때 예상 이미지가 누락됩니다. | <ul><li>[!DNL Experience Manager]에서는 이미지를 사용할 수 없습니다.</li><li>이미지가 인덱싱되지 않았습니다. 일반적으로 최근에 업로드된 경우입니다.</li><li>이미지에 스마트 태그가 없습니다.</li></ul> | <ul><li>이미지를 [!DNL Assets]에 추가합니다.</li><li>리포지토리를 다시 색인화하려면 관리자에게 문의하십시오. 또한 적절한 인덱스를 사용하고 있는지 확인합니다.</li><li>관련 자산에 스마트 태그를 지정하려면 관리자에게 문의하십시오.</li></ul> |
