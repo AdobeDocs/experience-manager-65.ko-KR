@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: 9b65f7194dc648ba9a6dbc127bc8d5951f126269
+source-git-commit: 6ca333c64fcd7d3b91b1ae8ef98c53ed770479d4
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 1%
@@ -98,6 +98,23 @@ AEM WCM Quickstart 창에 &quot;AEM WCM 실행 중&quot;이라는 메시지가 �
 
 다른 모든 것이 실패할 경우 로그를 확인하여 발생한 상황을 확인합니다.
 
+### Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}을(를) 사용하여 웹 사이트가 가끔씩 로드되지 않거나 실패합니다.
+
+AEM 6.5가 Java 11에서 실행되는 것으로 알려진 문제가 있습니다. 이 경우 웹 사이트가 로드되지 않거나 간헐적으로 실패할 수 있습니다.
+
+이러한 경우에는 아래 해결 방법을 따르십시오.
+
+1. `crx-quickstart/conf/` 폴더 아래에서 `sling.properties` 파일을 엽니다.
+1. 다음 줄을 찾습니다.
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.`
+
+1. 다음으로 바꿉니다.
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
+
+1. 인스턴스를 다시 시작합니다.
+
 ## 응용 프로그램 서버 {#troubleshooting-installations-with-an-application-server}을(를) 사용한 설치 문제 해결
 
 ### geometrixx-outdoor 페이지 {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page} 요청 시 페이지를 찾을 수 없음
@@ -130,20 +147,3 @@ AEM 설치 시 데이터베이스 서버와 같은 외부 저장소를 사용하
 
 JBoss의 Experience Manager에 JSP 파일을 설치 또는 업데이트한 후 해당 서버가 컴파일되지 않은 경우 JBoss JSP 컴파일러가 올바르게 구성되어 있는지 확인합니다. 자세한 내용은
 [JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) 아티클의 JSP 컴파일 문제
-
-### Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}을(를) 사용하여 웹 사이트가 가끔씩 로드되지 않거나 실패합니다.
-
-AEM 6.5가 Java 11에서 실행되는 것으로 알려진 문제가 있습니다. 이 경우 웹 사이트가 로드되지 않거나 간헐적으로 실패할 수 있습니다.
-
-이러한 경우에는 아래 해결 방법을 따르십시오.
-
-1. `crx-quickstart/conf/` 폴더 아래에서 `sling.properties` 파일을 엽니다.
-1. 다음 줄을 찾습니다.
-
-   `org.osgi.framework.bootdelegation=sun.,com.sun.`
-
-1. 다음으로 바꿉니다.
-
-   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
-
-1. 인스턴스를 다시 시작합니다.
