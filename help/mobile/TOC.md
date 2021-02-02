@@ -6,9 +6,9 @@ user-guide-title: AEM 6.5 Mobile 사용 안내서
 breadcrumb-title: Mobile 안내서
 user-guide-description: 모바일 앱용 컨텐츠 제작 및 관리
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '331'
 ht-degree: 12%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 12%
    + [모바일 앱용 페이지 템플릿](phonegap-apps-arch-page-templates.md)
    + [Adobe Target Cloud Service 구성](aem-mobile-configuring-cloud-service.md)
    + [SPA(Single Page Applications)](phonegap-single-page-applications.md)
-   + [저장소의 모델](administer-mobile-apps.md)
+   + [저장소의 모델](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/administering/administer-mobile-apps.html)
    + [AEM PhoneGap 시작](starting-aem-phonegap-app.md)
    + [모바일 앱 테스트](develop-mobile-apps-testing.md)
    + [앱 구조](phonegap-structure-an-app.md)
