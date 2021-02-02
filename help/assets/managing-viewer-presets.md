@@ -10,7 +10,7 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: fff2c39561f54436f8e5613ac648cb91af888c66
 workflow-type: tm+mt
 source-wordcount: '4335'
 ht-degree: 1%
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 웹 페이지마다 요구 사항이 다릅니다. 예를 들어 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지가 필요할 수 있습니다. 다른 경우 호스팅 페이지에 HTML5 뷰어를 직접 포함해야 할 수도 있습니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있을 수 있습니다. 또는 &quot;반응형&quot;일 수 있으며 다른 장치 또는 다른 브라우저 창 크기에 대해 다르게 표시됩니다. 이러한 요구 사항을 충족하기 위해 Dynamic Media과 함께 제공되는 미리 정의된 즉시 사용 가능한 모든 HTML5 뷰어는 정적 웹 페이지와 반응형 디자인 웹 페이지를 모두 지원합니다.
 
-웹 페이지에 응답형 뷰어를 포함하는 방법에 대한 자세한 내용은 의 [반응형 이미지 라이브러리](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)를 참조하십시오.
+웹 페이지에 응답형 뷰어를 포함하는 방법에 대한 자세한 내용은 의 [반응형 이미지 라이브러리](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)를 참조하십시오.
 
 >[!NOTE]
 >
