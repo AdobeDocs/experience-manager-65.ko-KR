@@ -7,10 +7,10 @@ user-guide-title: AEM 6.5 개발 사용 안내서
 breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 99%
+source-wordcount: '905'
+ht-degree: 91%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 99%
       + [SAP Commerce Cloud를 사용하여 개발](sap-commerce-cloud.md)
 + 구성 요소{#components}
    + [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
-   + [스타일 시스템](/help/sites-authoring/style-system.md)
+   + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [구성 요소 개요](components.md)
    + [AEM 구성 요소 - 기본 사항](components-basics.md)
    + [AEM 구성 요소 개발](developing-components.md)
@@ -101,7 +101,7 @@ ht-degree: 99%
       + [양식 개발(클래식 UI)](developing-forms.md)
 + 헤드리스 환경 관리{#headless}
    + [AEM을 사용한 헤드리스 및 하이브리드](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [구성 요소에 대해 JSON 내보내기 활성화](json-exporter-components.md)
+   + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
    + SPA(Single Page Applications){#spas}
       + [SPA 소개 및 연습](spa-walkthrough.md)
       + [SPA WKND 자습서](spa-wknd.md)
@@ -118,9 +118,9 @@ ht-degree: 99%
       + [SPA 및 Adobe Experience Platform Launch 통합](spa-launch.md)
       + [SPA 및 서버측 렌더링](spa-ssr.md)
       + [SPA 참조 자료](spa-reference-materials.md)
-   + [HTTP API](/help/assets/mac-api-assets.md)
-   + [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md)
-   + [경험 조각](/help/sites-authoring/experience-fragments.md)
+   + [HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
+   + [컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+   + [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
    + [AEM의 컨텐츠 조각과 컨텐츠 서비스 이해](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + 개발 도구{#devtools}
    + [개발 도구](dev-tools.md)
@@ -181,12 +181,12 @@ ht-degree: 99%
       + [사용자 지정 양식 매핑 만들기](extending-campaign-form-mapping.md)
       + [Adobe Campaign 양식 구성 요소를 사용하여 사용자 지정 AEM 페이지 템플릿 만들기](extending-campaign-custom-template.md)
       + [분석 요청 스크립트](analyze-request.md)
-   + [JMX 콘솔과 서비스 통합](jmx-integration.md)
-   + [벌크 편집기 개발](dev-bulk-editor.md)
+   + [JMX 콘솔과 서비스 통합](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/jmx-integration.html)
+   + [벌크 편집기 개발](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-bulk-editor.html)
    + 클래식 UI 확장{#extending-classic-ui}
       + [웹 사이트 콘솔 사용자 지정(클래식 UI)](customizing-siteadmin.md)
       + [시작 콘솔 사용자 지정(클래식 UI)](customizing-the-welcome-console.md)
-      + [보고서 개발](dev-reports.md)
+      + [보고서 개발](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
 + 테스트{#testing}
    + [계획](planning.md)
    + [어떤 테스트 환경이 필요합니까?](test-environments.md)
@@ -199,10 +199,10 @@ ht-degree: 99%
    + [다음 릴리스...](the-next-release.md)
    + [확인 목록](checklists.md)
    + [Tough Day](tough-day.md)
-   + [UI 테스트](hobbes.md)
+   + [UI 테스트](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html)
 + 우수 사례{#bestpractices}
    + [우수 사례 개요](best-practices.md)
-   + [AEM 개발 지침 및 우수 사례](dev-guidelines-bestpractices.md)
+   + [AEM 개발 지침 및 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html)
    + [개발 우수 사례](development-practices.md)
    + [컨텐츠 아키텍처](content-architecture.md)
    + [소프트웨어 아키텍처](software-architecture.md)
