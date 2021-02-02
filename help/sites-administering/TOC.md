@@ -7,10 +7,10 @@ user-guide-title: AEM 6.5 관리 사용 안내서
 breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 translation-type: tm+mt
-source-git-commit: 98180b630c991bc65ddfa275e0f8a97be3be6f7e
+source-git-commit: fd7a32c1070a0560ca744db041cf809f28672b33
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 17%
+source-wordcount: '671'
+ht-degree: 19%
 
 ---
 
@@ -82,10 +82,10 @@ ht-degree: 17%
    + [AEM의 일련화 문제 완화](mitigating-serialization-issues.md)
    + [사용자 동기화](sync.md)
    + [캡슐화된 토큰 지원](encapsulated-token.md)
-   + [단일 사인온](/help/sites-deploying/single-sign-on.md)
+   + [단일 사인온](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)
    + [AEM에서 사용자 관리 작업을 감사하는 방법](audit-user-management-operations.md)
    + [기본적으로 SSL](ssl-by-default.md)
-   + [SAML 2.0 인증 처리기](saml-2-0-authenticationhandler.md)
+   + [SAML 2.0 인증 핸들러](saml-2-0-authenticationhandler.md)
    + [AEM에서 닫힌 사용자 그룹](closed-user-groups.md)
    + [Granite Operations - 사용자 및 그룹 관리](granite-user-group-admin.md)
    + [AEM에서 CRXDE Lite 활성화](enabling-crxde-lite.md)
@@ -99,7 +99,7 @@ ht-degree: 17%
    + [AEM 6.5의 사용자 지정 사용자 그룹 매핑](/help/sites-administering/cug-mapping.md)
 + 개인화 {#personalization}
    + [개인화](personalization.md)
-   + [ContextHub 구성](/help/sites-developing/ch-configuring.md)
+   + [ContextHub 구성](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [Client Context](client-context.md)
    + [캠페인](campaigns.md)
    + [ContextHub을 사용하여 세그멘테이션 구성](segmentation.md)
@@ -137,7 +137,7 @@ ht-degree: 17%
    + [Adobe Analytics 및 Adobe Target에 선택](opt-in.md)
    + [AEM 포털 및 포틀릿](aem-as-portal.md)
    + [Dynamic Media Classic(Scene7)과 통합](scene7.md)
-   + [AEM Livefyre 레서피](aem-livefyre-recipes.md)
+   + [AEM Livefyre Recipes](aem-livefyre-recipes.md)
    + [통합 문제 해결](troubleshooting-integration-issues.md)
    + [BrightEdge Content Optimizer와 통합](brightedge.md)
    + [카탈로그 프로듀서](catalog-producer.md)
@@ -155,14 +155,14 @@ ht-degree: 17%
    + [솔루션 통합](integration.md)
    + [Adobe Target으로 경험 조각 내보내기](experience-fragments-target.md)
    + [이메일 템플릿 우수 사례](best-practices-for-email-templates.md)
-   + [Livefyre와 통합](livefyre.md)
+   + [Livefyre와 통합하기](livefyre.md)
 + 우수 사례 {#bestpractices}
    + [우수 사례](administer-best-practices.md)
-   + [번역 우수 사례](tc-bp.md)
-   + [MSM 우수 사례](msm-best-practices.md)
+   + [번역 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
+   + [MSM 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
    + [AEM Sites - GDPR 준비 완료](gdpr-compliance-sites.md)
-   + [AEM Foundation에 대한 GDPR 요청 처리](handling-gdpr-requests-for-aem-platform.md)
-   + [AEM Commerce - GDPR 준비](gdpr-compliance-commerce.md)
+   + [AEM Foundation에 대한 GDPR 요청 처리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
+   + [AEM Commerce - GDPR 준비](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
 + 컨텐츠 관리 {#contentmanagement}
    + [패키지를 사용한 작업 방법](package-manager.md)
    + [태그 관리](tags.md)
