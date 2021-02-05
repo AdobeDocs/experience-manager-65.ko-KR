@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ade3747ba608164a792a62097b82c55626245891
+source-git-commit: 2d54d115529126162c92e9943a188d05159535f9
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '934'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,6 @@ ht-degree: 1%
 ### 전제 조건 {#pre-requisites}
 
 * 클라이언트](prepopulate-adaptive-form-fields.md#prefill-at-client) 옵션에서 [데이터 병합 또는 프리플링을 활성화합니다. 미리 채워진 양식의 각 인스턴스에 대한 고유 데이터를 병합하는 데 도움이 됩니다.
-* [모든 게시 인스턴스에 대해 플러시 에이전트를 활성화합니다](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance). 적응형 양식의 캐싱 성능이 향상됩니다. 플러시 에이전트의 기본 URL은 `http://[server]:[port]]/etc/replication/agents.publish/flush.html`입니다.
 
 ### 디스패처 {#considerations}에서 적응형 양식을 캐싱하기 위한 고려 사항
 
@@ -63,7 +62,7 @@ ht-degree: 1%
 
 다음 단계를 수행하여 디스패처에서 응용 양식 캐싱을 활성화하고 구성합니다.
 
-1. 환경의 모든 게시 인스턴스에 대해 다음 URL을 열고 복제 에이전트를 구성합니다.
+1. 환경의 모든 게시 인스턴스에 대해 다음 URL을 열고 환경의 게시 인스턴스에 대해 [flush 에이전트를 활성화합니다](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance).
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [dispatcher.any 파일에 다음을 추가합니다](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files).
@@ -143,17 +142,7 @@ AEM 환경은 적응형 양식을 캐시하도록 구성되어 있습니다. 모
 
 이미지와 비디오를 게시한 후에는 이러한 자산을 참조하는 적응형 양식을 명시적으로 게시 취소하고 게시합니다.
 
-### 컨텐츠 조각 또는 경험 조각을 포함하는 일부 적응형 양식은 디스패처 캐시 {#content-or-experience-fragment-not-auto-invalidated}에서 자동으로 무효화되지 않습니다.
-
-#### 문제 {#issue2}
-
-컨텐츠 조각 또는 경험 조각을 적응형 양식에 추가하면 이러한 자산이 독립적으로 편집 및 게시되고 디스패처 캐시에서 무효화되지 않은 자산이 포함된 적응형 양식이 자동으로 포함됩니다.
-
-#### 솔루션 {#Solution2}
-
-업데이트된 컨텐츠 조각 또는 경험 조각을 게시한 후 이러한 자산을 사용하는 적응형 양식을 명시적으로 게시 취소하고 게시합니다.
-
-### 응용 양식의 첫 번째 인스턴스만 캐시됨{#only-first-insatnce-of-adptive-forms-is-cached}
+### 응용 양식의 첫 번째 인스턴스만 {#only-first-instance-of-adaptive-forms-is-cached} 캐시됩니다.
 
 #### 문제 {#issue3}
 
