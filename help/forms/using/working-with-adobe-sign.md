@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
+source-git-commit: fd9ee8e4eb35bd5d303d7bbdd9660a94c54925ff
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3859'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 0%
 * 익명 또는 로그인 사용자로 양식 서명
 * 동적 서명 프로세스(AEM [!DNL Forms] 워크플로우와 통합)
 * 기술 자료, 전화 및 소셜 프로필을 통한 인증
+
+적응형 양식](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)과 함께 Adobe Sign을 사용하여 더 나은 서명 환경을 만드는 모범 사례를 알아봅니다.[
 
 ## 전제 조건 {#prerequisites}
 
@@ -358,5 +360,5 @@ Adobe 서명](../../forms/using/working-with-adobe-sign.md#enableadobesign)에 �
 ## 관련 문서 {#related-articles}
 
 * [AEM Forms과 Adobe Sign 통합](../../forms/using/adobe-sign-integration-adaptive-forms.md)
-* [적응형 양식에서 Adobe Sign 사용](../../forms/using/working-with-adobe-sign.md)
+* [적응형 양식과 함께 Adobe Sign을 사용하기 위한 모범 사례](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 * [AEM Forms에서 Adobe Sign 사용(비디오)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
