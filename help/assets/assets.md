@@ -1,12 +1,12 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] 소개.'
+title: ' [!DNL Adobe Experience Manager Assets] 소개'
 description: 디지털 자산 관리란 무엇이고, 사용 사례 및  [!DNL Adobe Experience Manager Asset] 상품.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 130a03c821fd2a1e9ecda70039241720052a8920
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 36%
+source-wordcount: '868'
+ht-degree: 34%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 36%
 
 이미지를 DAM 저장소에 넣을지 이미지 구성 요소를 사용할지를 결정할 때 이미지 라이프사이클을 고려하십시오.
 
-* 이미지의 라이프사이클이 페이지의 라이프사이클과 동일하다면 이미지 구성 요소를 사용하십시오.
+* 이미지의 라이프사이클이 페이지와 동일한 경우 이미지 구성 요소를 사용합니다.
 * 이미지에 별도의 라이프 사이클이 있는 경우(예: 이미지를 두 번 사용하거나 WCM 외부에서 사용하는 경우) [!DNL Assets]을 사용합니다.
 
 ## 디지털 자산이란 무엇입니까? {#what-are-digital-assets}
@@ -67,11 +67,11 @@ ht-degree: 36%
 
 * **표현물**:표현물은 자산의 이진 표현입니다. [!DNL Assets] 항상 업로드된 파일의 표현인 기본 표현을 가집니다. 자산에는 사용자 지정된 작업 흐름 단계에 의해서나 자산이 업로드될 때 만들어지는 추가적인 표현들이 있습니다. 표현물들은 크기가 다르거나 해상도가 다르거나, 워터마크가 추가로 있거나 기타 특성이 변경되었을 수 있습니다.
 
-* **버전**:버전 매기기를 통해 특정 시점의 디지털 자산 스냅샷을 만들 수 있습니다. 자산을 이전 버전으로 복원할 수 있습니다. 자산](manage-assets.md#asset-versioning)에서 [버전 매기기를 참조하십시오.
+* **버전**:버전 매기기를 통해 특정 시점의 디지털 자산 스냅샷을 만들 수 있습니다. 자산을 이전 버전으로 복원할 수 있습니다.  [!DNL Assets]](manage-assets.md#asset-versioning)에서 [버전 매기기를 참조하십시오.
 
 * **하위 자산**:하위 자산은 예를 들어, 파일의 레이어나 PDF 파일의  [!DNL Adobe Photoshop] 페이지와 같이 자산을 구성하는 자산입니다. [!DNL Assets]에서는 자산처럼 하위 자산을 관리할 수 있습니다.
 
-### 자산 {#how-to-work-with-assets} 사용 방법
+### 디지털 자산으로 작업하는 방법 {#how-to-work-with-assets}
 
 자산 또는 컬렉션에서 작업을 수행합니다. 작업을 통해 자산, 컬렉션 및 표현물을 만들거나 수정할 수 있습니다. 자산에 대해 수행하는 많은 기본 작업(하위 자산 업로드, 삭제, 업데이트, 저장) - 사전 구성된 워크플로우를 트리거합니다. 이러한 속성은 [!DNL Assets]에서 자동으로 켜져 있으며 [!DNL Assets] 미디어 핸들러에서 자세히 설명합니다.
 
@@ -82,8 +82,13 @@ ht-degree: 36%
 * 에셋에 대한 표현물과 축소판을 생성합니다.필요한 경우 자동 크기 조정 및 자르기 작업이 가능합니다.
 * 필요한 경우 자산을 코드 변환합니다. 예를 들어, 모바일 및 웹용 비디오는 초당 24프레임으로 코드가 변환되고 초당 30프레임으로 비디오를 다운로드합니다. 모바일 및 웹용 오디오는 128Kbps로 코드 변환되고 192Kbps로 오디오를 다운로드할 수 있습니다.
 
-물론 워크플로우도 수동으로 적용할 수 있습니다. 기본 워크플로우 목록을 알려면 [ Assets 미디어 핸들러](/help/assets/media-handlers.md)를 참조하십시오.
+물론 워크플로우도 수동으로 적용할 수 있습니다. 기본 워크플로우 목록을 알려면 [ Assets 미디어 핸들러](media-handlers.md)를 참조하십시오.
 
-## [!DNL Experience Manager Assets] 및 [!DNL MediaLibrary] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] 및 [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-차이점에 대한 자세한 내용은 [자산 및 MediaLibrary](/help/assets/medialibrary.md)을 참조하십시오.
+차이점에 대한 자세한 내용은 [자산 및 미디어 라이브러리](medialibrary.md)를 참조하십시오.
+
+>[!MORELIKETHIS]
+>
+>* [최신 DAM으로 Experience Manager 자산 관리](https://www.youtube.com/embed/PBwQqZgC-yo)
+
