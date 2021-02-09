@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e1f5d549df1db28a8679296afb4b758051d8f6c
+source-git-commit: c9c407ea7c0bff3d15934552cd709bec7f24e857
 workflow-type: tm+mt
-source-wordcount: '3298'
+source-wordcount: '3318'
 ht-degree: 0%
 
 ---
@@ -165,6 +165,11 @@ Adobe Experience Manager Forms은 JDK(Java Development Kit) 배포에서 제공�
    <td><p>지원됨</p> </td>
   </tr>
   <tr>
+   <td><p>Microsoft SQL Server 2019</p> </td>
+   <td><p>저장소 마이크로커널</p> </td>
+   <td><p>지원됨</p> </td>
+  </tr>
+  <tr>
    <td>IBM DB2 11.1</td>
    <td>저장소 마이크로커널</td>
    <td>R:제한된 지원</td>
@@ -207,6 +212,12 @@ Adobe Experience Manager Forms은 JDK(Java Development Kit) 배포에서 제공�
    <td>Microsoft SQL Server<br /> </td>
    <td><p>Microsoft® SQL Server JDBC 드라이버 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>JEE 설치 시 AEM Forms과 함께 제공됩니다.</p> </td>
+  </tr>
+  <tr>
+  <tr>
+   <td>Microsoft SQL Server<br /> </td>
+   <td><p>Microsoft® SQL Server JDBC 드라이버 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
+   <td><p>Microsoft 웹 사이트에서 다운로드합니다.</p> </td>
   </tr>
   <tr>
    <td>Oracle</td>
@@ -704,7 +715,7 @@ AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
->Adobe은 2020년 말[에 Flash Player 업데이트 및 배포를 중지합니다.](https://theblog.adobe.com/adobe-flash-update/)
+>Adobe은 2020년 말](https://theblog.adobe.com/adobe-flash-update/)에 Flash Player 업데이트 및 배포를 중지합니다.[
 
 ### Microsoft Office용 Adobe Document Security 확장 {#adobe-rights-management-extension-for-microsoft-office}
 
@@ -722,7 +733,7 @@ JEE의 제3자 참조 플랫폼의 AEM Forms은 AEM Forms on JEE를 개발 및 �
 
 제3자 공급업체가 AEM Forms on JEE에서 지원하는 버전과의 역호환성을 보장한다는 가정 하에, Adobe은 출시에 따라 제3자 벤더가 발행한 긴급 또는 권장 패치를 지원합니다. Adobe은 JEE 설명서의 AEM Forms에 명시된 최소 패치 수준 이후에 출시되는 패치만 지원합니다.
 
-경우에 따라 Adobe은 주요 기능을 변경하는 타사 업데이트를 지원하지 않으므로 이전 버전과의 완벽한 호환성을 지원하지 않는 경우도 있습니다. 지원되는 업데이트에 대한 자세한 내용은 특정 공급업체 제품 및 패치 유형 Adobe에서 지원하는 패치 정의[를 참조하십시오.](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html)
+경우에 따라 Adobe은 주요 기능을 변경하는 타사 업데이트를 지원하지 않으므로 이전 버전과의 완벽한 호환성을 지원하지 않는 경우도 있습니다. 지원되는 업데이트에 대한 자세한 내용은 특정 공급업체 제품 및 패치 유형 Adobe에서 지원하는 패치 정의](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html)를 참조하십시오.[
 
 Adobe이 제어할 수 없는 상황에서 역호환성을 주장하는 타사 패치는 Adobe 제품 또는 고객 환경에 부정적인 영향을 줄 수 있습니다. 이러한 경우 Adobe은 고객이 중요한 시스템에 적용하기 전에 제3자로부터 긴급 패치가 미치는 영향을 평가할 것을 권장합니다. Adobe은 정상적인 Adobe 지원 프로그램을 통해 또는 제3자가 패치에서 문제를 바로잡는 방법으로 이러한 문제를 해결하기 위해 합리적인 사업 노력을 기울여 제3자와 협력할 것입니다. 이는 Adobe에서 지원할 새롭게 출시된 제3자 패치가 공급업체 또는 AEM Forms이 JEE에서 제공한 설명서에 따라 작동하도록 보장하지 않습니다.
 
