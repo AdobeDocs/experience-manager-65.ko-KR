@@ -4,10 +4,10 @@ description: Adobe Experience Manager 6.5 서비스 팩 7의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
+source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 57%
+source-wordcount: '2780'
+ht-degree: 56%
 
 ---
 
@@ -53,6 +53,10 @@ ht-degree: 57%
 ### 레이아웃 모드 {#reset-option-layout-mode}의 각 구성 요소에 대한 재설정 옵션 사용 가능
 
 이제 적응형 양식의 레이아웃 모드에서 각 구성 요소에 대해 재설정 옵션을 사용할 수 있습니다. 패널의 여러 열로 구성된 레이아웃을 정의할 때 이 기능을 사용하여 패널 내의 개별 구성 요소를 재설정할 수 있습니다. 구성 요소](../../help/forms/using/resize-using-layout-mode.md#resize-components)의 크기를 조정하려면 [레이아웃 모드 사용을 참조하십시오.
+
+### Microsoft SQL Server 2019 지원
+
+[!DNL Experience Manager Forms] 이제 Microsoft SQL Server 2019를 지원합니다.
 
 ## 이전 [!DNL Experience Manager] 6.5 서비스 팩 {#key-features-previous-service-packs}의 주요 기능
 
