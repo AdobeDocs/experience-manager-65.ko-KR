@@ -1,34 +1,30 @@
 ---
-title: XML 스키마를 사용하여 적응형 양식 만들기
-seo-title: XML 스키마를 사용하여 적응형 양식 만들기
-description: 적응형 양식에서는 XML 스키마를 양식 모델로 사용할 수 있으므로 기존 XSD 템플릿을 활용하여 적응형 양식을 만들 수 있습니다. XSD의 스키마 요소를 적응형 양식으로 드래그하여 놓을 수 있습니다.
-seo-description: 적응형 양식에서는 XML 스키마를 양식 모델로 사용할 수 있으므로 기존 XSD 템플릿을 활용하여 적응형 양식을 만들 수 있습니다. XSD의 스키마 요소를 적응형 양식으로 드래그하여 놓을 수 있습니다.
-uuid: 84c35728-1b6c-4286-854b-51c03bfd0eac
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
-docset: aem65
+title: XML 스키마를 사용하여 적응형 Forms을 만드는 방법
+description: 적응형 양식의 양식 모델로 XML 스키마를 사용하는 방법을 알아봅니다. 기존 XSD 템플릿을 적용하여 적응형 양식을 만들고 XSD의 스키마 요소를 적응형 양식으로 드래그하여 놓을 수 있습니다. XML 스키마 샘플을 사용하여 자세히 분석하고, XML 스키마를 사용하여 필드에 특수 속성을 추가하고, 적응형 양식 구성 요소에 사용할 수 있는 값을 제한합니다.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: ec8a4c3941b5434f10ad0727be02fcf296cd4da7
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1073'
 ht-degree: 5%
 
 ---
 
 
-# XML 스키마{#creating-adaptive-forms-using-xml-schema}을(를) 사용하여 적응형 양식 만들기
+# XML 스키마 {#creating-adaptive-forms-using-xml-schema}을(를) 사용하여 적응형 양식 만들기
 
 ## 전제 조건 {#prerequisites}
 
 XML 스키마를 양식 모델로 사용하여 적응형 양식을 작성하려면 XML 스키마에 대한 기본적인 이해가 필요합니다. 또한 이 아티클 이전에 다음 컨텐츠를 읽어 보는 것이 좋습니다.
 
-* [적응형 양식 만들기](../../forms/using/creating-adaptive-form.md)
+* [적응형 양식 만들기](creating-adaptive-form.md)
 * [XML 스키마](https://www.w3.org/TR/xmlschema-2/)
 
 ## XML 스키마를 양식 모델 {#using-an-xml-schema-as-form-model}으로 사용
 
-AEM Forms에서는 기존 XML 스키마를 양식 모델로 사용하여 적응형 양식 작성을 지원합니다. 이 XML 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다.
+[!DNL Experience Manager Forms] 에서는 기존 XML 스키마를 양식 모델로 사용하여 적응형 양식 작성을 지원합니다. 이 XML 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다.
 
 XML 스키마 사용의 주요 기능은 다음과 같습니다.
 
@@ -293,7 +289,7 @@ XML 스키마 요소에 다음 속성을 추가하여 연결된 적응형 양식
 
 **트리의 어떤 요소가 어떤 XML 요소와 연관되어 있는지 어떻게 알 수 있습니까?**
 
-Content Finder에서 요소를 두 번 클릭하면 팝업에 필드 이름과 `bindRef` 속성이 표시됩니다. 이 속성은 트리 요소를 스키마의 요소 또는 특성에 매핑합니다.
+Content Finder에서 요소를 두 번 클릭하면 팝업 창에 필드 이름과 `bindRef` 속성이 표시됩니다. 이 속성은 트리 요소를 스키마의 요소 또는 특성에 매핑합니다.
 
 ![XML 스키마 요소의 이진 필드](assets/dblclick.png)
 
