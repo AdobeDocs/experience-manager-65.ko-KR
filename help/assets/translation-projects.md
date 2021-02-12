@@ -3,9 +3,9 @@ title: 번역 프로젝트 만들기
 description: ' [!DNL Adobe Experience Manager]에서 번역 프로젝트를 만드는 방법을 알아봅니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: 534a3d75ebb6a6d297354cce4840bdc1dfa25707
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1878'
 ht-degree: 6%
 
 ---
@@ -19,13 +19,11 @@ ht-degree: 6%
 
 * **언어 사본 업데이트**:이 워크플로우를 실행하여 추가 자산 그룹을 번역하고 특정 로케일의 언어 복사본에 포함시킬 수 있습니다. 이 경우 번역된 자산은 이미 이전에 번역된 에셋이 포함된 대상 폴더에 추가됩니다.
 
->[!NOTE]
+>[!PREREQUISITES]
 >
->번역 서비스 공급자가 이진 파일의 변환을 지원하는 경우에만 자산 이진 파일이 변환됩니다.
+>* 번역 프로젝트를 만드는 사용자는 그룹 `projects-administrators`의 멤버입니다.
+>* 번역 서비스 공급자는 이진 파일의 변환을 지원합니다.
 
->[!NOTE]
->
->PDF 및 [!DNL Adobe InDesign] 파일과 같은 복잡한 자산에 대한 번역 워크플로우를 실행하는 경우 해당 하위 자산이나 변환(있는 경우)이 번역을 위해 제출되지 않습니다.
 
 ## 워크플로 {#create-and-translate-workflow} 만들기 및 번역
 
@@ -40,17 +38,14 @@ ht-degree: 6%
 소스 언어 루트 내의 소스 폴더 계층 구조와 일치하도록 대상 언어 루트 내에 대상 폴더 계층 구조를 만들려면 **[!UICONTROL 구조만 만들기 옵션을 사용합니다.]** 이 경우 소스 에셋이 대상 폴더에 복사됩니다. 그러나 번역 프로젝트는 생성되지 않습니다.
 
 1. [!DNL Assets] 인터페이스에서 대상 언어 루트에서 구조를 만들 소스 폴더를 선택합니다.
+
 1. **[!UICONTROL 참조]** 창을 열고 **[!UICONTROL 복사]**&#x200B;아래의 **[!UICONTROL 언어 사본]**&#x200B;을 클릭합니다.
 
-   ![chlimage_1-57](assets/chlimage_1-57.png)
+   ![언어 복사](assets/translation-language-copies.png)
 
-1. 맨 아래에 있는 **[!UICONTROL 만들기 및 번역]**&#x200B;을 클릭합니다.
-
-1. **[!UICONTROL Target 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
+1. **[!UICONTROL 만들기 및 번역]**&#x200B;을 클릭합니다. **[!UICONTROL Target 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
 1. **[!UICONTROL 프로젝트]** 목록에서 **[!UICONTROL 구조만 만들기]**&#x200B;를 선택합니다.
-
-   ![chlimage_1-60](assets/chlimage_1-60.png)
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 대상 언어의 새 구조는 **[!UICONTROL 언어 사본]** 아래에 나열됩니다.
 
@@ -109,7 +104,7 @@ ht-degree: 6%
 
    작업 상태에 대한 자세한 내용은 [번역 작업 상태 모니터링](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)을 참조하십시오.
 
-1. [!DNL Assets] UI로 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
+1. [!DNL Assets] 사용자 인터페이스로 이동하고 번역된 각 에셋에 대한 [!UICONTROL 속성] 페이지를 열어 번역된 메타데이터를 봅니다.
 
    ![자산 속성 페이지에서 번역된 메타데이터 보기](assets/translated-metadata-asset-properties.png)
 
@@ -117,7 +112,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >이 기능은 자산 및 폴더에 모두 사용할 수 있습니다. 폴더 대신 에셋을 선택하면 언어 루트에 대한 폴더의 전체 계층 구조가 복사되어 에셋의 언어 사본을 만듭니다.
+   >이 기능은 자산 및 폴더에 모두 사용할 수 있습니다. 폴더 대신 에셋을 선택하면 언어 루트에 이르는 폴더의 전체 계층 구조가 복사되어 에셋의 언어 사본을 만듭니다.
 
 ### 기존 번역 프로젝트에 추가 {#add-to-existing-translation-project}
 
@@ -131,8 +126,6 @@ ht-degree: 6%
 1. **[!UICONTROL Target 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
 1. **[!UICONTROL 프로젝트]** 목록에서 **[!UICONTROL 기존 번역 프로젝트에 추가]**&#x200B;를 선택하여 폴더에서 번역 워크플로우를 실행합니다.
-
-   ![chlimage_1-77](assets/chlimage_1-77.png)
 
    >[!NOTE]
    >
@@ -157,10 +150,6 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >기계 번역을 사용하는 경우 자산 이진 파일이 변환되지 않습니다.
-
-   >[!NOTE]
-   >
    >번역 작업에 추가하는 자산에 하위 자산이 포함되어 있는 경우, 번역 작업을 위해 하위 자산을 선택하고 제거합니다. 이렇게 해서 아무 문제도 발생하지 않습니다.
 
 1. 자산에 대한 번역을 시작하려면 **[!UICONTROL 번역 작업]** 타일의 화살표를 클릭하고 목록에서 **[!UICONTROL 시작]**&#x200B;을 선택합니다.
@@ -175,11 +164,11 @@ ht-degree: 6%
 
    자세한 내용은 [번역 작업 상태 모니터링](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)을 참조하십시오.
 
-1. 번역이 완료되면 상태가 검토 준비가 됨으로 변경됩니다. [!DNL Assets] UI로 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
+1. 번역이 완료되면 상태가 검토 준비가 됨으로 변경됩니다. [!DNL Assets] 사용자 인터페이스로 이동하고 번역된 각 자산에 대한 속성 페이지를 열어 번역된 메타데이터를 봅니다.
 
 ## 언어 복사 업데이트 {#update-language-copies}
 
-이 워크플로우를 실행하여 추가 자산 세트를 변환하고 특정 로케일에 대한 언어 복사본에 포함시킬 수 있습니다. 이 경우 번역된 자산은 이미 이전에 번역된 에셋이 포함된 대상 폴더에 추가됩니다. 선택 사항에 따라 번역 프로젝트가 만들어지거나 새 자산에 대해 기존 번역 프로젝트가 업데이트됩니다. 언어 사본 업데이트 워크플로우에는 다음 옵션이 포함됩니다.
+이 워크플로우를 실행하여 추가 자산 세트를 변환하고 특정 로케일의 언어 복사본에 포함시킬 수 있습니다. 이 경우 번역된 자산은 이미 이전에 번역된 에셋이 포함된 대상 폴더에 추가됩니다. 선택 사항에 따라 번역 프로젝트가 만들어지거나 새 자산에 대해 기존 번역 프로젝트가 업데이트됩니다. 언어 사본 업데이트 워크플로우에는 다음 옵션이 포함됩니다.
 
 * 새 번역 프로젝트 만들기
 * 기존 번역 프로젝트에 추가
@@ -197,8 +186,6 @@ ht-degree: 6%
 1. 맨 아래에 있는 **[!UICONTROL 언어 사본 업데이트]**&#x200B;를 클릭합니다.
 
 1. **[!UICONTROL 프로젝트]** 목록에서 **[!UICONTROL 새 번역 프로젝트 만들기]**&#x200B;를 선택합니다.
-
-   ![chlimage_1-86](assets/chlimage_1-86.png)
 
 1. **[!UICONTROL 프로젝트 제목]** 필드에 프로젝트의 제목을 입력합니다.
 
@@ -255,7 +242,7 @@ ht-degree: 6%
 
 ## 임시 언어 사본 만들기 {#creating-temporary-language-copies}
 
-번역 워크플로우를 실행하여 원본 자산의 편집된 버전으로 언어 사본을 업데이트할 때 번역된 자산을 승인할 때까지 기존 언어 복사본이 유지됩니다. [!DNL Adobe Experience Manager Assets] 새로 번역된 자산을 임시 위치에 저장하고 자산을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않습니다.
+번역 워크플로우를 실행하여 원본 에셋의 편집된 버전으로 언어 사본을 업데이트할 때 번역된 에셋을 승인할 때까지 기존 언어 복사본이 유지됩니다. [!DNL Adobe Experience Manager Assets] 새로 번역된 자산을 임시 위치에 저장하고 자산을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않습니다.
 
 1. 언어 복사본을 이미 만든 **[!UICONTROL 언어 사본]** 아래의 소스 루트 폴더를 클릭한 다음 **[!UICONTROL 자산]**&#x200B;에 표시를 클릭하여 [!DNL Experience Manager Assets]에서 폴더를 엽니다.
 
@@ -279,7 +266,7 @@ ht-degree: 6%
 
 1. 번역된 메타데이터를 보려면 [!DNL Assets] 콘솔로 이동하고 번역된 각 에셋에 대해 [!UICONTROL 속성] 페이지를 엽니다.
 
->[!MORELIKETHIS]
->
->* [메타데이터를 효율적으로 변환하기 위한 팁](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+## 팁 및 제한 사항 {#tips-limitations}
 
+* PDF 및 [!DNL Adobe InDesign] 파일과 같은 복잡한 자산에 대한 번역 워크플로우를 실행하는 경우 해당 하위 자산이나 변환(있는 경우)이 번역을 위해 제출되지 않습니다.
+* 기계 번역을 사용하는 경우 자산 이진 파일이 변환되지 않습니다.
