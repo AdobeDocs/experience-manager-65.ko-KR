@@ -1,34 +1,30 @@
 ---
-title: JSON 스키마를 사용하여 적응형 양식 만들기
-seo-title: JSON 스키마를 사용하여 적응형 양식 만들기
-description: 적응형 양식에서는 JSON 스키마를 양식 모델로 사용할 수 있으므로 기존 JSON 스키마를 활용하여 적응형 양식을 만들 수 있습니다.
-seo-description: 적응형 양식에서는 JSON 스키마를 양식 모델로 사용할 수 있으므로 기존 JSON 스키마를 활용하여 적응형 양식을 만들 수 있습니다.
-uuid: bdeaeae8-65a3-4c46-b27d-fe68481e31f1
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 375ba8fc-3152-4564-aec5-fcff2a95cf4c
-docset: aem65
+title: JSON 스키마를 사용하여 적응형 Forms을 만드는 방법
+description: JSON 스키마를 양식 모델로 사용하여 적응형 양식을 만드는 방법을 알아봅니다. 기존 JSON 스키마를 사용하여 적응형 양식을 만들 수 있습니다. JSON 스키마 샘플, JSON 스키마 정의에서 필드 사전 구성, 적응형 양식 구성 요소에 사용할 수 있는 값 제한, 지원되지 않는 구문 학습 등을 사용하여 자세히 살펴봅니다.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 37ab98c9c78af452887c32101287b6d7f18d9d91
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1448'
 ht-degree: 5%
 
 ---
 
 
-# JSON 스키마{#creating-adaptive-forms-using-json-schema}를 사용하여 적응형 양식 만들기
+# JSON 스키마 {#creating-adaptive-forms-using-json-schema}을 사용하여 적응형 양식 만들기
 
 ## 전제 조건 {#prerequisites}
 
 JSON 스키마를 양식 모델로 사용하여 적응형 양식을 작성하려면 JSON 스키마에 대한 기본적인 이해가 필요합니다. 이 아티클 이전에 다음 콘텐츠를 읽어 보시기 바랍니다.
 
-* [적응형 양식 만들기](../../forms/using/creating-adaptive-form.md)
+* [적응형 양식 만들기](creating-adaptive-form.md)
 * [JSON 스키마](https://json-schema.org/)
 
 ## JSON 스키마를 양식 모델 {#using-a-json-schema-as-form-model}으로 사용
 
-AEM Forms은 기존 JSON 스키마를 양식 모델로 사용하여 적응형 양식 작성을 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 사용하는 JSON 스키마는 [v4 사양](https://json-schema.org/draft-04/schema)과 호환되어야 합니다.
+[!DNL Adobe Experience Manager Forms] 에서는 기존 JSON 스키마를 양식 모델로 사용하여 적응형 양식 작성을 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 사용하는 JSON 스키마는 [v4 사양](https://json-schema.org/draft-04/schema)과 호환되어야 합니다.
 
 JSON 스키마 사용의 주요 기능은 다음과 같습니다.
 
@@ -82,7 +78,7 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
     </ul> </td>
   </tr>
   <tr>
-   <td><p>{</p> <p>"type" :"string",</p> <p>}</p> </td>
+   <td><p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>}</code></p> </td>
    <td><br /> <br /> 텍스트 필드<br /> <br /> <br /> </td>
   </tr>
   <tr>
@@ -112,16 +108,16 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 
 적응형 양식에서는 JSON 스키마에서 사용할 수 있는 정보를 사용하여 생성된 각 필드를 매핑합니다. 특히:
 
-* title 속성은 적응형 양식 구성 요소에 대한 레이블 역할을 합니다.
-* description 속성은 응용 양식 구성 요소에 대한 긴 설명으로 설정됩니다.
-* 기본 속성은 적응형 양식 필드의 초기 값 역할을 합니다.
-* maxLength 속성은 텍스트 필드 구성 요소의 maxlength 속성으로 설정됩니다.
-* Numeric 상자 구성 요소에는 minimum, maximum, exclusiveMinimum 및 exclusiveMaximum 속성이 사용됩니다.
-* DatePicker 구성 요소의 범위를 지원하기 위해 JSON 스키마 속성 minDate 및 maxDate 속성이 추가로 제공됩니다.
-* minItems 및 maxItems 속성은 패널 구성 요소에서 추가 또는 제거할 수 있는 항목/필드의 수를 제한하는 데 사용됩니다.
-* readOnly 속성은 적응형 양식 구성 요소의 readonly 특성을 설정합니다.
-* 필수 속성은 적응형 양식 필드를 필수로 표시하지만, 패널의 경우(유형이 개체인 경우) 최종 제출된 JSON 데이터에는 해당 객체에 해당하는 빈 값이 있는 필드가 포함됩니다.
-* pattern 속성은 응용 형식으로 유효성 검사 패턴(정규 표현식)으로 설정됩니다.
+* `title` 속성은 적응형 양식 구성 요소에 대한 레이블 역할을 합니다.
+* `description` 속성은 적응형 양식 구성 요소에 대한 긴 설명으로 설정됩니다.
+* `default` 속성은 적응형 양식 필드의 초기 값 역할을 합니다.
+* `maxLength` 속성은 텍스트 필드 구성 요소의 `maxlength` 특성으로 설정됩니다.
+* `minimum`, `maximum`, `exclusiveMinimum` 및 `exclusiveMaximum` 속성은 숫자 상자 구성 요소에 사용됩니다.
+* `DatePicker component` 추가 JSON 스키마 속성 `minDate` 및 `maxDate`에 대한 범위를 지원하기 위해..
+* `minItems` 및 `maxItems` 속성은 패널 구성 요소에서 추가 또는 제거할 수 있는 항목/필드의 수를 제한하는 데 사용됩니다.
+* `readOnly` 속성은 적응형 양식 구성 요소의 `readonly` 특성을 설정합니다.
+* `required` 속성은 적응형 양식 필드를 필수로 표시하지만 패널(유형이 개체인 경우)에서는 마지막으로 제출된 JSON 데이터에 해당 객체에 해당하는 빈 값이 있는 필드가 포함됩니다.
+* `pattern` 속성은 적응형 양식의 유효성 검사 패턴(정규 표현식)으로 설정됩니다.
 * JSON 스키마 파일 확장명은 .schema.json에 저장되어야 합니다. 예: &lt;filename>.schema.json.
 
 ## 샘플 JSON 스키마 {#sample-json-schema}
@@ -361,7 +357,7 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 
 ## 양식 개체 {#configure-scripts-or-expressions-for-form-objects}에 대한 스크립트 또는 표현식 구성
 
-JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript 표현식이며 적응형 양식 스크립팅 모델 API를 사용합니다. 양식 객체를 미리 구성하여 양식 이벤트에서 [표현식](../../forms/using/adaptive-form-expressions.md)을 평가할 수 있습니다.
+JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript 표현식이며 적응형 양식 스크립팅 모델 API를 사용합니다. 양식 객체를 미리 구성하여 양식 이벤트에서 [표현식](adaptive-form-expressions.md)을 평가할 수 있습니다.
 
 aem:aproperties 속성을 사용하여 적응형 양식 구성 요소에 대한 적응형 양식 표현식 또는 스크립트를 사전 구성할 수 있습니다. 예를 들어, initialize 이벤트가 트리거되면 아래 코드는 전화 필드의 값을 설정하고 값을 로그에 인쇄합니다.
 
@@ -381,7 +377,7 @@ aem:aproperties 속성을 사용하여 적응형 양식 구성 요소에 대한 
 }
 ```
 
-양식 개체에 대한 스크립트 또는 표현식을 구성하려면 [forms-power-user 그룹](/help/forms/using/forms-groups-privileges-tasks.md)의 구성원이어야 합니다. 아래 표는 적응형 양식 구성 요소에 대해 지원되는 모든 스크립트 이벤트를 나열합니다.
+양식 개체에 대한 스크립트 또는 표현식을 구성하려면 [forms-power-user 그룹](forms-groups-privileges-tasks.md)의 구성원이어야 합니다. 아래 표는 적응형 양식 구성 요소에 대해 지원되는 모든 스크립트 이벤트를 나열합니다.
 
 <table>
  <tbody>
@@ -586,9 +582,9 @@ aem:aproperties 속성을 사용하여 적응형 양식 구성 요소에 대한 
  </tbody>
 </table>
 
-JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트의 필드를 숨기고 값 커밋 이벤트에 대한 다른 필드의 값을 구성하는 것입니다. 스크립트 이벤트에 대한 표현식을 만드는 방법에 대한 자세한 내용은 [적응형 양식 표현식](../../forms/using/adaptive-form-expressions.md)을 참조하십시오.
+JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트의 필드를 숨기고 값 커밋 이벤트에 대한 다른 필드의 값을 구성하는 것입니다. 스크립트 이벤트에 대한 표현식을 만드는 방법에 대한 자세한 내용은 [적응형 양식 표현식](adaptive-form-expressions.md)을 참조하십시오.
 
-다음은 위의 예에 대한 샘플 JSON 코드입니다.
+다음은 이전에 언급한 예제에 대한 샘플 JSON 코드입니다.
 
 ### 초기화 이벤트 {#hiding-a-field-on-initialize-event} 시 필드 숨기기
 
@@ -711,13 +707,13 @@ JSON에서 이벤트를 사용하는 몇 가지 예는 초기화 이벤트의 �
     </ul> </td>
   </tr>
   <tr>
-   <td>maxItems</td>
+   <td><code>maxItems</code></td>
    <td>문자열</td>
-   <td>배열의 최대 항목 수를 지정합니다. 최대 항목은 0보다 크거나 같아야 합니다.</td>
+   <td>배열에 있는 최대 항목 수를 지정합니다. 최대 항목은 0보다 크거나 같아야 합니다.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>minItems</td>
+   <td><code>minItems</code></td>
    <td>문자열</td>
    <td>배열에 있는 최소 항목 수를 지정합니다. 최소 항목은 0보다 크거나 같아야 합니다.</td>
    <td> </td>
