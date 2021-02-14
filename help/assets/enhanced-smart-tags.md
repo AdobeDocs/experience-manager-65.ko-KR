@@ -3,10 +3,10 @@ title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 09bb767ae8565624e7a6b9786a5cd4c581fe0b9a
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 1%
+source-wordcount: '1610'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 �
 
 백그라운드에서 Smart Content Service는 Adobe Sensei AI 프레임워크를 사용하여 태그 구조 및 비즈니스 분류법에 대한 이미지 인식 알고리즘을 교육합니다. 그런 다음 이 컨텐츠 인텔리전스를 사용하여 다른 자산 세트에 관련 태그를 적용합니다.
 
-스마트 콘텐츠 서비스는 [!DNL Adobe I/O]에 호스팅되는 클라우드 서비스입니다. [!DNL Adobe Experience Manager]에서 사용하려면 시스템 관리자가 [!DNL Experience Manager] 배포를 [!DNL Adobe I/O]와 통합해야 합니다.
+스마트 콘텐츠 서비스는 [!DNL Adobe Developer Console]에 호스팅되는 클라우드 서비스입니다. [!DNL Adobe Experience Manager]에서 사용하려면 시스템 관리자가 [!DNL Experience Manager] 배포를 [!DNL Adobe Developer Console]와 통합해야 합니다.
 
 요약하면 스마트 콘텐츠 서비스를 사용하는 주요 단계는 다음과 같습니다.
 
@@ -36,13 +36,40 @@ Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 �
 
 ![순서도](assets/flowchart.gif)
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 및 지원되는 형식 {#prerequisites}
 
-스마트 콘텐츠 서비스를 사용하려면 먼저 [!DNL Adobe I/O]에 통합을 만들려면 다음을 확인하십시오.
+스마트 콘텐츠 서비스를 사용하려면 먼저 [!DNL Adobe Developer Console]에 통합을 만들려면 다음을 확인하십시오.
 
 * 조직에 대한 관리자 권한이 부여된 Adobe ID 계정이 있습니다.
 * 조직에서 스마트 콘텐츠 서비스 서비스를 사용할 수 있습니다.
 * 스마트 콘텐츠 서비스 베이스 패키지는 [!DNL Adobe Experience Manager Sites] 기본 패키지 및 [!DNL Assets] 추가 기능에 라이선스가 부여된 배포에만 추가할 수 있습니다.
+
+스마트 태그는 다음 MIME 유형의 자산에만 적용됩니다.
+
+* image/jpeg
+* image/tiff
+* image/png
+* image/bmp
+* image/gif
+* image/pjpeg
+* image/x-portable-anymap
+* image/x-portable-bitmap
+* image/x-portable-graymap
+* image/x-portable-pixmap
+* image/x-rgb
+* image/x-xbitmap
+* image/x-xpimap
+* image/x-icon
+* 이미지/photoshop
+* image/x-photoshop
+* 이미지/psd
+* image/vnd.adobe.photoshop
+
+자산 표현물의 스마트 태그 지정은 다음 MIME 유형에만 지원됩니다.
+
+* 이미지/jpeg
+* 이미지/pjpeg
+* 이미지/png
 
 ## 온보딩 {#onboarding}
 
@@ -58,7 +85,7 @@ Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 �
 
 ## 자산 및 태그 검토 {#reviewing-assets-and-tags}
 
-온보드 환경을 구축한 후 먼저 비즈니스 컨텍스트에서 이러한 이미지를 가장 잘 설명하는 태그 세트를 식별합니다.
+입사 절차를 거친 후 먼저 비즈니스 컨텍스트에서 이러한 이미지를 가장 잘 설명하는 태그 세트를 식별합니다.
 
 이미지를 검토하여 특정 비즈니스 요구 사항에 맞게 제품을 가장 잘 나타내는 이미지 세트를 확인합니다. 선별된 세트의 에셋이 [Smart Content Service 교육 지침](/help/assets/config-smart-tagging.md#training-the-smart-content-service)에 부합하는지 확인합니다.
 
@@ -73,7 +100,7 @@ Smart Content Service가 올바른 태그를 적용하려면 분류 방식을 �
 
 ## 스마트 태그 {#understandsearch}이(가) 있는 [!DNL Experience Manager] 검색 결과를 이해합니다.
 
-기본적으로 [!DNL Experience Manager] 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 스마트 태그와 관련된 검색어를 찾기 위해 추가 `OR` 절이 추가됩니다. 예를 들어 `woman running` 검색을 고려해 보십시오. 메타데이터에 `woman`만 있거나 `running` 키워드만 있는 자산은 기본적으로 검색 결과에 나타나지 않습니다. 그러나 스마트 태그를 사용하여 `woman` 또는 `running` 태그가 지정된 자산이 이러한 검색 쿼리에 나타납니다. 검색 결과는
+기본적으로 [!DNL Experience Manager] 검색은 검색어와 `AND` 절을 결합합니다. 스마트 태그를 사용해도 이 기본 동작은 변경되지 않습니다. 스마트 태그를 사용하면 스마트 태그와 관련된 검색어를 찾기 위해 추가 `OR` 절이 추가됩니다. 예를 들어 `woman running`을(를) 검색하는 것이 좋습니다. 메타데이터에 `woman`만 있거나 `running` 키워드만 있는 자산은 기본적으로 검색 결과에 나타나지 않습니다. 그러나 스마트 태그를 사용하여 `woman` 또는 `running` 태그가 지정된 자산이 이러한 검색 쿼리에 나타납니다. 검색 결과는
 
 * 메타데이터에 `woman` 및 `running` 키워드가 있는 자산.
 
@@ -162,3 +189,4 @@ Smart Content Service를 활성화하여 폴더 내의 자산에 주기적으로
 
 * 스마트 콘텐츠 서비스 이용은 연간 최대 2백만 개의 태그 이미지로 제한됩니다. 처리 및 태그가 지정된 복제 이미지는 각각 태그 있는 이미지로 카운트됩니다.
 * 타임라인에서 태그 지정 워크플로우를 실행하는 경우 한 번에 최대 15개의 자산에 태그를 적용할 수 있습니다.
+* 스마트 태그는 PNG 및 JPG 이미지 형식에만 작동합니다. 따라서 이러한 두 가지 형식으로 만들어진 표현물이 있는 지원되는 자산에 스마트 태그가 지정됩니다.
