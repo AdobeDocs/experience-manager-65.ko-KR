@@ -3,7 +3,7 @@ title: 연결된 에셋을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f0d91a32caa4d3b862d852028e3bc5547aeb8015
+source-git-commit: d05dc3af0a885e51758194783e773695086d7956
 workflow-type: tm+mt
 source-wordcount: '2263'
 ht-degree: 40%
@@ -32,7 +32,7 @@ ht-degree: 40%
 
    |  | [!DNL Sites] cloud service | [!DNL Experience Manager] 6.5( [!DNL Sites] AMS) | [!DNL Experience Manager] 6.5  [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]cloud service** | 지원됨 | 지원됨 | 지원됨 |
+   | **[!DNL Experience Manager Assets]로서의[!DNL Cloud Service]**  | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5( [!DNL Assets] AMS)** | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
@@ -51,7 +51,7 @@ ht-degree: 40%
 |---|---|---|---|---|
 | [!DNL Sites] administrator | 로컬 | [!DNL Experience Manager] `administrators` | `admin` | [!DNL Experience Manager]을 설정하고 원격 [!DNL Assets] 배포와의 통합을 구성합니다. |
 | DAM 사용자 | 로컬 | `Authors` | `ksaner` | `/content/DAM/connectedassets/`에서 가져온 자산을 보고 복제하는 데 사용됩니다. |
-| [!DNL Sites] 작성자 | 로컬 | `Authors` (원격 DAM에 대한 읽기 액세스 및 로컬에 대한 작성자 액세스  [!DNL Sites]사용) | `ksaner` | 최종 사용자는 컨텐트 속도를 개선하기 위해 이 통합을 사용하는 작성자입니다. [!DNL Sites] 작성자는 [!UICONTROL 컨텐츠 파인더]를 사용하여 원격 DAM에서 자산을 검색하고 로컬 웹 페이지에서 필요한 이미지를 사용합니다. `ksaner` DAM 사용자의 자격 증명이 사용됩니다. |
+| [!DNL Sites] 작성자 | 로컬 | <ul><li>`Authors` (원격 DAM에 대한 읽기 액세스 및 로컬에 대한 작성자 액세스  [!DNL Sites]사용) </li> <li>`dam-users` 로컬  [!DNL Sites]</li></ul> | `ksaner` | 최종 사용자는 컨텐트 속도를 개선하기 위해 이 통합을 사용하는 작성자입니다. [!DNL Sites] 작성자는 [!UICONTROL 컨텐츠 파인더]를 사용하여 원격 DAM에서 자산을 검색하고 로컬 웹 페이지에서 필요한 이미지를 사용합니다. `ksaner` DAM 사용자의 자격 증명이 사용됩니다. |
 | [!DNL Assets] administrator | 원격 | [!DNL Experience Manager] `administrators` | `admin` 원격  [!DNL Experience Manager] | CORS(원본 간 리소스 공유)를 구성합니다. |
 | DAM 사용자 | 원격 | `Authors` | `ksaner` 원격  [!DNL Experience Manager] | 원격 [!DNL Experience Manager] 배포의 작성자 역할. [!UICONTROL Content Finder]를 사용하여 연결된 자산에서 자산을 검색하고 찾아봅니다. |
 | DAM 배포자(기술 사용자) | 원격 | [!DNL Sites] `Authors` | `ksaner` 원격  [!DNL Experience Manager] | 원격 배포에 있는 이 사용자는 [!DNL Sites] 작성자 역할이 아닌 [!DNL Experience Manager] 로컬 서버에서 원격 자산을 가져오기 위해 [!DNL Sites] 작성자를 대신하여 사용됩니다. 이 역할은 위의 두 `ksaner` 역할과 동일하지 않으며 다른 사용자 그룹에 속합니다. |
