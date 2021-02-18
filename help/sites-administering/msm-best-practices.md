@@ -10,9 +10,9 @@ topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: cacf15a4e9c407d86aef47d7a6dda19e8eda7fb7
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1639'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 1%
 MSM은 콘텐츠 배포를 자동화하기 위한 구성 가능한 프레임워크입니다. 종종 구현에는 웹 사이트의 주요 부분과 조직 및 지리적 범위에 포함됩니다. 따라서 웹 사이트를 계획하는 대로 MSM 구현을 계획하는 것이 좋습니다.
 
 * 구현을 시작하기 전에 **계획 구조와 콘텐츠 흐름**&#x200B;을 주의하십시오.
+* **Live Copy의 양을 최소한으로 유지하십시오.** Live Copy 처리는 리소스를 많이 사용하는 작업입니다. 시스템에 Live Copy가 더 많을수록 성능이 더 영향을 받을 수 있습니다.내부 Live Copy 인덱스 처리, 롤아웃과 같은 Live Copy 작업 간, 사이트 관리자 참조 레일에 Live Copy 관계 표시와 같은 UI 작업에 이르기까지 다양한 작업이 가능합니다. Live Copy 관계가 사이트나 분기의 페이지에 상속되는 사이트의 사이트나 분기의 Live Copy를 만드는 것이 좋습니다. 전체 구조를 Live Copy로 만들 수 있는 경우 사이트나 분기의 페이지에 대한 개별 Live Copy를 만들지 마십시오.
 * **필요에 따라 원하는 만큼 사용자 정의할 수 있습니다.** MSM은 높은 수준의 사용자 지정(예: 롤아웃 구성)을 지원하지만 일반적으로 웹 사이트의 성능, 안정성 및 업그레이드 가능성에 대한 우수 사례는 사용자 지정을 최소화하는 것입니다.
 * **거버넌스** 모델을 일찍 설정하고 이에 따라 사용자를 교육하여 성공을 보장합니다. 거버넌스 관점에서 가장 좋은 방법은 로컬 컨텐츠 제작자가 다른 로컬 사용자와 해당 Live Copy에 컨텐츠를 할당/연결하기 위해 **의 권한을 최소화하는 것입니다.** 이는 비관리, 연쇄 상속이 MSM 구조의 복잡성을 상당히 증가시키고 성능과 안정성을 손상시킬 수 있기 때문입니다.
 
