@@ -10,15 +10,15 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 967018907e32e5916df72ff16dfc7bc06f8dbed8
 workflow-type: tm+mt
 source-wordcount: '804'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 
-# 워크플로 시작{#starting-workflows}
+# 워크플로우 시작{#starting-workflows}
 
 워크플로우를 관리할 때 다양한 방법을 사용하여 워크플로우를 시작할 수 있습니다.
 
@@ -129,7 +129,7 @@ Workflow Launcher는 변경된 노드의 위치 및 리소스 유형에 따라 �
       * 작성일
       * 수정됨
       * 제거됨
-   * **Noetype**
+   * **노드 유형**
 
       워크플로우 론처가 적용되는 노드 유형입니다.
 
