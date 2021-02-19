@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: f8abdd7ed0212d5ee0602e2573c184203f22d4a4
+source-git-commit: 3024d0d66c5158e04fdfe848954dcf90542125b2
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 2%
@@ -252,8 +252,8 @@ curl -H "CQ-Action: Deactivate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path:
 #### 에이전트 상태 확인 {#check-the-status-of-an-agent}
 
 ```shell
-curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:conten t.queue.json?agent=publish"
-http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on?agent=publish
+curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json?agent=publish"
+http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json?agent=publish
 ```
 
 #### 에이전트 {#delete-an-agent} 삭제
@@ -271,13 +271,13 @@ curl -u <user>:<password> -F "jcr:primaryType=cq:Page" -F "jcr:content/jcr:title
 #### 에이전트 {#pause-an-agent} 일시 중지
 
 ```shell
-curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
 #### 에이전트 큐 {#clear-an-agent-queue} 지우기
 
 ```shell
-curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
 ### 커뮤니티 {#communities}
@@ -296,7 +296,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 #### CRX DE Lite 활성화 및 비활성화 {#enabling-and-disabling-crx-de-lite}
 
-자세한 내용은 AEM[에서 CRXDE Lite 활성화를 참조하십시오.](/help/sites-administering/enabling-crxde-lite.md)
+자세한 내용은 AEM](/help/sites-administering/enabling-crxde-lite.md)에서 CRXDE Lite 활성화를 참조하십시오.[
 
 ### 데이터 저장소 가비지 컬렉션 {#data-store-garbage-collection}
 
