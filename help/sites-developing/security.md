@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea4de28525ec4c2094e84d98aad6a518b03f011e
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 요청 세션 사용 {#use-request-session}
 
-Adobe은 leas 권한에 따라 사용자 요청에 바인딩된 세션 및 적절한 액세스 제어를 사용하여 모든 저장소 액세스를 수행하는 것이 좋습니다.
+최소 권한 원칙에 따라 Adobe은 사용자 요청에 바인딩된 세션 및 적절한 액세스 제어를 사용하여 모든 저장소 액세스를 수행할 것을 권장합니다.
 
 ## 크로스 사이트 스크립팅(XSS)에 대한 Protect {#protect-against-cross-site-scripting-xss}
 
