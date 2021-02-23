@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 7에 대한 릴
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
+source-git-commit: 349568af561ca170ee000fbb0d1b40d3470ebe98
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4261'
 ht-degree: 20%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 20%
 
 * 새 에셋을 만들고 게시하고 새 위치로 이동하면 `Request to complete move operation` 워크플로우가 만들어지고 결과적으로 취소된 상태가 됩니다. 새 자산을 업로드하고 `move` 작업을 실행하면 보류 중인 상태로 `Request to complete move operation` 작업 과정이 만들어집니다(NPR-34543).
 
-* [!DNL Experience Manager] 6.5.2 환경에서 [!DNL Target] Standard로 경험 조각을 내보낼 때 작업 공간 속성을 [!DNL Target] Standard에 사용할 수 없으므로 API 호출이 실패합니다(NPR-34557).
+* [!DNL Experience Manager] 6.5.2 환경에서 [!DNL Target] Standard로 경험 조각을 내보낼 때 작업 영역 속성을 [!DNL Target] Standard에 사용할 수 없으므로 API 호출이 실패합니다(NPR-34557).
 
 * [!UICONTROL 게시] 옵션이 사라지므로 사용자는 [!UICONTROL 발행물 관리] 옵션을 통해 페이지를 게시할 수 없습니다(NPR-34542).
 
@@ -467,8 +467,6 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 | 커넥터 | Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 Adobe JCR Connector는 AEM 6.5에서 더 이상 사용하지 않습니다. | N/A |
 
 ## 알려진 문제 {#known-issues}
-
-* 잠긴 구성 요소 레지스트리 타이머로 인해 [!DNL Experience Manager] 응답에 문제가 발생하면 [이 패키지](https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr/2.1.20)를 설치합니다. 이러한 문제에 대한 해결 방법은 다음 [Experience Manager 서비스 팩 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-on-prem-managed-services)에 포함될 예정입니다.
 
 * Experience Manager 6.5.7.0 설치 중 `error.log` 파일에서 다음 오류를 무시합니다.
 
