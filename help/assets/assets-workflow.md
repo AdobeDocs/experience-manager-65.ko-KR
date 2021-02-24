@@ -3,9 +3,9 @@ title: 워크플로우를 사용하여 자산 처리
 description: 형식을 변환하고, 변환을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행하는 자산 처리.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ## 워크플로우 이해 {#understand-workflows}
 
-자산 처리를 위해 [!DNL Experience Manager]은(는) 워크플로우를 사용합니다. 워크플로우는 비즈니스 논리 또는 활동을 자동화하는 데 도움이 됩니다. 특정 작업을 수행하는 세부 단계는 기본적으로 제공되며 개발자는 고유한 사용자 지정 단계를 만들 수 있습니다. 이러한 단계를 논리적 순서로 결합하여 워크플로우를 만들 수 있습니다. 예를 들어 워크플로우는 업로드된 폴더, 이미지 해상도 등과 같은 특정 기준을 기반으로 업로드된 이미지에 워터마크를 적용할 수 있습니다. 또 다른 예로 워터마크를 설치하고 동시에 메타데이터를 추가하고 변환을 만들고, 지능형 태그를 추가하고 데이터 저장소에 게시하도록 구성된 작업 과정을 들 수 있습니다.
+자산 처리를 위해 [!DNL Experience Manager]은 워크플로우를 사용합니다. 워크플로우는 비즈니스 논리 또는 활동을 자동화하는 데 도움이 됩니다. 특정 작업을 수행하는 세부 단계는 기본적으로 제공되며 개발자는 고유한 사용자 지정 단계를 만들 수 있습니다. 이러한 단계를 논리적 순서로 결합하여 워크플로우를 만들 수 있습니다. 예를 들어 워크플로우는 업로드된 폴더, 이미지 해상도 등과 같은 특정 기준을 기반으로 업로드된 이미지에 워터마크를 적용할 수 있습니다. 또 다른 예로 워터마크를 설치하고 동시에 메타데이터를 추가하고 변환을 만들고, 지능형 태그를 추가하고 데이터 저장소에 게시하도록 구성된 작업 과정을 들 수 있습니다.
 
 ## [!DNL Experience Manager] {#default-workflows}에서 사용할 수 있는 기본 워크플로
 
 기본적으로 업로드된 모든 자산은 [!UICONTROL DAM 자산 업데이트] 작업 과정을 사용하여 처리됩니다. 이 워크플로우는 업로드된 각 자산에 대해 실행되며 변환 생성, 메타데이터 쓰기 되돌리기, 페이지 추출, 미디어 추출 및 트랜스코딩과 같은 기본 자산 관리 작업을 수행합니다.
 
-기본적으로 사용 가능한 다양한 워크플로우 모델을 보려면 ]**도구 > 워크플로우 > 모델**[!UICONTROL &#x200B;을 참조하십시오.[!DNL Experience Manager]
+기본적으로 사용 가능한 다양한 워크플로우 모델을 보려면 [!DNL Experience Manager]도구 > 워크플로우 > 모델&#x200B;]**을 참조하십시오.**[!UICONTROL 
 
 ![일부 기본 워크플로우](assets/aem-default-workflows.png)
 
@@ -106,5 +106,4 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 >* [워크플로우 모델 생성 및 워크플로우 기능 확장](/help/sites-developing/workflows.md)
 >* [워크플로우 실행 방법](/help/sites-administering/workflows-starting.md)
 >* [워크플로우 모범 사례](/help/sites-developing/workflows-best-practices.md)
->* [워크플로우를 사용하여 자산 수정에 대한 커뮤니티 아티클](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
