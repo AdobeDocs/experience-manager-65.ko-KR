@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Creative Cloud] 우수 사례에 폴더 공유'
 description: Adobe Creative Cloud(CC) 사용자와 폴더를 교환하도록  [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] 을 구성합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->[!DNL Experience Manager]에서 [!DNL Creative Cloud] 폴더 공유 기능은 더 이상 사용하지 않습니다. Adobe은 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [Experience Manager 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)과 같은 최신 기능을 사용하는 것이 좋습니다. [Experience Manager 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md)에 대해 자세히 알아보십시오.
+>[!DNL Experience Manager]에서 [!DNL Creative Cloud] 폴더 공유 기능은 더 이상 사용하지 않습니다. Adobe은 [Adobe 자산 링크](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) 또는 [Experience Manager 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)과 같은 최신 기능을 사용하는 것이 좋습니다. [Experience Manager 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md)에 대해 자세히 알아보십시오.
 
 [!DNL Adobe Experience Manager] 사용자가 앱 사용자 [!DNL Assets] 와 폴더를 공유할 수 있도록 구성할 수  [!DNL Adobe Creative Cloud] 있으므로  [!DNL Adobe Creative Cloud] 에셋 서비스에서 공유 폴더로 사용할 수 있습니다. 이 기능은 크리에이티브 팀과 [!DNL Assets] 사용자 간에 파일을 교환하는 데 사용할 수 있습니다. 특히 크리에이티브 사용자가 [!DNL Assets] 배포에 액세스할 수 없는 경우(기업 네트워크에 있지 않음).
 
