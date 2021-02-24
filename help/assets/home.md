@@ -3,10 +3,10 @@ title: Assets 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
 user-guide-title: Assets 안내서
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 77%
+source-wordcount: '321'
+ht-degree: 80%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 77%
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
 
-* [Experience Manager 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
 * [Experience Manager 6.5 릴리스 노트](/help/release-notes/home.md)
 * [최근 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Security 검사 목록](/help/sites-administering/security-checklist.md)
@@ -44,9 +43,9 @@ ht-degree: 77%
 
 ## [!DNL Experience Manager] 리소스 키
 
-* [Experience Manager 비디오 튜토리얼](https://helpx.adobe.com/kr/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Experience Manager 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 * [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Experience Manager 자산 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
