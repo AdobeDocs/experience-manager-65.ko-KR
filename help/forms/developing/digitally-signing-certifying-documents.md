@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '17099'
+source-wordcount: '17113'
 ht-degree: 0%
 
 ---
 
 
 # 문서 {#digitally-signing-and-certifying-documents} 디지털 서명 및 인증
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 **서명 서비스 정보**
 
@@ -39,9 +41,9 @@ PDF 문서 내에 여러 서명 필드가 있는 경우 서명 필드의 전체 
 서명 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
 * PDF 문서에 디지털 서명 필드를 추가하거나 삭제합니다. ([서명 필드 추가](digitally-signing-certifying-documents.md#adding-signature-fields)를 참조하십시오.)
-* PDF 문서에 있는 서명 필드의 이름을 검색합니다. ([서명 필드 이름 검색](digitally-signing-certifying-documents.md#retrieving-signature-field-names)을(를) 참조하십시오.)
+* PDF 문서에 있는 서명 필드의 이름을 검색합니다. ([서명 필드 이름 검색](digitally-signing-certifying-documents.md#retrieving-signature-field-names) 참조)
 * 서명 필드를 수정합니다. ([서명 필드 수정](digitally-signing-certifying-documents.md#modifying-signature-fields) 참조)
-* PDF 문서에 디지털 서명 (PDF 문서[에 디지털 서명 참조)](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
+* PDF 문서에 디지털 서명 (PDF 문서](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)에 디지털 서명 참조)[
 * PDF 문서 인증 ([PDF 문서 인증](digitally-signing-certifying-documents.md#certifying-pdf-documents)을 참조하십시오.)
 * PDF 문서에 있는 디지털 서명을 확인할 수 있습니다. ([디지털 서명 확인](digitally-signing-certifying-documents.md#verifying-digital-signatures)을 참조하십시오.)
 * PDF 문서에 있는 모든 디지털 서명의 유효성을 확인합니다. ([여러 디지털 서명 확인](digitally-signing-certifying-documents.md#verifying-digital-signatures)을 참조하십시오.)
@@ -559,7 +561,7 @@ PDF 문서는 공개 키 기술을 통해 서명됩니다. 서명자에게는 �
 
 >[!NOTE]
 >
->PDF 문서에 디지털 서명을 하려면 먼저 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 프로그래밍 방식으로 사용하여 인증서를 추가합니다. (Trust Manager API[를 사용하여 자격 증명 가져오기를 참조하십시오.)](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)
+>PDF 문서에 디지털 서명을 하려면 먼저 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 프로그래밍 방식으로 사용하여 인증서를 추가합니다. (Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)를 사용하여 자격 증명 가져오기를 참조하십시오.)[
 
 프로그래밍 방식으로 PDF 문서에 디지털 서명을 할 수 있습니다. PDF 문서에 디지털 서명을 하는 경우 AEM Forms에 있는 보안 자격 증명을 참조해야 합니다. 자격 증명은 서명에 사용되는 개인 키입니다.
 
@@ -823,13 +825,13 @@ Forms 서비스에서 만든 대화형 양식에 서명할 수 있습니다. 예
 
 >[!NOTE]
 >
->대화형 양식에 디지털 서명을 하려면 먼저 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 프로그래밍 방식으로 사용하여 인증서를 추가합니다. (Trust Manager API[를 사용하여 자격 증명 가져오기를 참조하십시오.)](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)
+>대화형 양식에 디지털 서명을 하려면 먼저 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 프로그래밍 방식으로 사용하여 인증서를 추가합니다. (Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)를 사용하여 자격 증명 가져오기를 참조하십시오.)[
 
 Forms 서비스 API를 사용할 때 `GenerateServerAppearance` 런타임 옵션을 `true`으로 설정합니다. 이 런타임 옵션을 사용하면 Acrobat 또는 Adobe Reader에서 연 경우 서버에서 생성된 양식의 모양이 유효한지 확인할 수 있습니다. Forms API를 사용하여 서명할 대화형 양식을 생성할 때는 이 런타임 옵션을 설정하는 것이 좋습니다.
 
 >[!NOTE]
 >
->인터랙티브한 Forms 디지털 서명을 읽기 전에 PDF 문서 서명에 익숙한 것이 좋습니다. (PDF 문서[에 디지털 서명 참조)](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
+>인터랙티브한 Forms 디지털 서명을 읽기 전에 PDF 문서 서명에 익숙한 것이 좋습니다. (PDF 문서](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)에 디지털 서명 참조)[
 
 ### {#summary_of_steps-4} 단계 요약
 
@@ -1063,7 +1065,7 @@ Forms 및 서명 API(웹 서비스)를 사용하여 대화형 양식에 디지�
 
 * PDF 문서에 적용되는 첫 번째 서명이어야 합니다.즉, 인증된 서명이 적용될 때 문서의 다른 모든 서명 필드는 서명되지 않아야 합니다. PDF 문서에서는 하나의 인증된 서명만 허용됩니다. PDF 문서에 서명하여 인증하려는 경우 서명하기 전에 이를 인증해야 합니다. PDF 문서를 인증한 후 추가 서명 필드에 디지털 방식으로 서명할 수 있습니다.
 * 문서의 작성자 또는 작성자는 인증된 서명을 무효화하지 않고 특정 방식으로 문서를 수정할 수 있음을 지정할 수 있습니다. 예를 들어, 문서에 양식 입력 또는 주석 달기가 허용됩니다. 작성자가 특정 수정 사항이 허용되지 않도록 지정하는 경우 Acrobat은 사용자가 해당 방식으로 문서를 수정할 수 없도록 제한합니다. 다른 응용 프로그램을 사용하는 등 이러한 수정이 이루어지면 인증된 서명은 유효하지 않으며 사용자가 문서를 열 때 Acrobat에서 경고를 표시합니다. (인증되지 않은 서명을 사용하면 수정 작업이 금지되지 않으며 일반적인 편집 작업으로 인해 원본 서명이 무효화되지 않습니다.)
-* 서명 시 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 콘텐트가 있는지 문서가 스캔됩니다. 예를 들어 주석을 사용하면 인증된 내용을 이해하는 데 중요한 페이지의 텍스트를 모호하게 만들 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
+* 서명 시 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 콘텐트가 있는지 문서가 스캔됩니다. 예를 들어 주석을 사용하면 인증된 내용을 이해하는 데 중요한 페이지의 텍스트를 가릴 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
 
 서명 서비스 Java API 또는 서명 웹 서비스 API를 사용하여 프로그래밍 방식으로 PDF 문서를 인증할 수 있습니다. PDF 문서를 인증할 때는 자격 증명 서비스에 있는 보안 자격 증명을 참조해야 합니다. 보안 자격 증명에 대한 자세한 내용은 응용 프로그램 서버에 대한 *AEM Forms 설치 및 배포* 안내서를 참조하십시오.
 
@@ -1131,7 +1133,7 @@ PDF 문서를 성공적으로 인증하려면 서명 서비스에서 PDF 문서�
 * **서명자의 위치**:자격 증명에 의해 지정된 서명자의 위치입니다.
 * **연락처 정보**:서명자의 주소 및 전화 번호와 같은 연락처 정보.
 * **권한 정보**:인증 서명이 유효하지 않게 만들지 않고도 최종 사용자가 문서에 수행할 수 있는 작업을 제어하는 권한입니다. 예를 들어 PDF 문서를 변경하면 인증된 서명이 잘못되도록 권한을 설정할 수 있습니다.
-* **법적 설명**:문서가 인증되면 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 콘텐트를 자동으로 스캔합니다. 예를 들어 주석을 사용하면 인증된 내용을 이해하는 데 중요한 페이지의 텍스트를 모호하게 만들 수 있습니다. 스캔 프로세스는 이러한 유형의 컨텐츠에 대한 경고를 생성합니다. 이 값은 경고를 생성할 수 있는 컨텐츠에 대한 추가 설명을 제공합니다.
+* **법적 설명**:문서가 인증되면 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 콘텐트를 자동으로 스캔합니다. 예를 들어 주석을 사용하면 인증된 내용을 이해하는 데 중요한 페이지의 텍스트를 가릴 수 있습니다. 스캔 프로세스는 이러한 유형의 컨텐츠에 대한 경고를 생성합니다. 이 값은 경고를 생성할 수 있는 컨텐츠에 대한 추가 설명을 제공합니다.
 * **모양 옵션**:인증된 서명의 모양을 제어하는 옵션입니다. 예를 들어, 인증된 서명은 날짜 정보를 표시할 수 있습니다.
 * **해지 확인**:이 값은 서명자의 인증서에 대해 해지 검사를 수행할지 여부를 지정합니다. `false`의 기본 설정은 해지 검사가 수행되지 않음을 의미합니다.
 * **OCSP 설정**:PDF 문서를 인증하는 데 사용되는 자격 증명 상태에 대한 정보를 제공하는 OCSP(온라인 인증서 상태 프로토콜) 지원 설정 예를 들어 PDF 문서에 로그인하는 데 사용하는 자격 증명에 대한 정보를 제공하는 서버의 URL을 지정할 수 있습니다.
