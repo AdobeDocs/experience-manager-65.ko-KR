@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
 
 
 # 환경 설정 노드 {#programmatically-managing-the-preferencesnodes} 프로그래밍 방식으로 관리
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 이 항목에서는 환경 설정 관리자 서비스 API(Java)를 사용하여 환경 설정 노드를 프로그래밍 방식으로 관리하는 방법에 대해 설명합니다.
 
