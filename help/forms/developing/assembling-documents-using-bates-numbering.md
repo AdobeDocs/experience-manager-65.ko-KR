@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '1941'
 ht-degree: 0%
 
 ---
 
 
 # Bates 번호 매기기를 사용하여 문서 정리 {#assembling-documents-using-bates-numbering}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Bates 번호 매기기를 사용하여 고유한 페이지 식별자가 포함된 PDF 문서를 구성할 수 있습니다. *Bates* numbering은 여러 관련 문서에 고유한 식별자를 적용하는 방법입니다. 문서(또는 문서 집합)의 각 페이지에는 페이지를 고유하게 식별하는 Bates 번호가 할당됩니다. 예를 들어 BOM 정보가 들어 있고 어셈블리 생산과 연관된 제조 문서에는 식별자가 포함될 수 있습니다. Bates 번호에는 순차적으로 증가하는 숫자 값과 선택적 접두어와 접미어가 포함됩니다. 접두사 + 숫자 + 접미사는 *bates 패턴*&#x200B;이라고 합니다.
 
