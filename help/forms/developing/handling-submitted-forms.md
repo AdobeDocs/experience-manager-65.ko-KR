@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
 
 
 # 제출된 Forms 처리 {#handling-submitted-forms}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 사용자가 대화형 양식을 채울 수 있는 웹 기반 응용 프로그램은 데이터를 서버에 다시 제출해야 합니다. Forms 서비스를 사용하여 사용자가 대화형 양식에 입력한 데이터를 검색할 수 있습니다. 데이터를 검색한 후 데이터를 처리하여 비즈니스 요구 사항을 충족할 수 있습니다. 예를 들어 데이터를 데이터베이스에 저장하고, 데이터를 다른 응용 프로그램으로 보내고, 데이터를 다른 서비스로 보내고, 데이터를 양식 디자인으로 병합하고, 웹 브라우저에 데이터를 표시하는 등의 작업을 수행할 수 있습니다.
 
@@ -69,7 +71,7 @@ Java XML 클래스 사용.
 
 >[!NOTE]
 >
->데이터를 XML 데이터로 전송하려면 양식 디자인을 Designer에서 올바르게 구성해야 합니다. 양식 디자인이 XML 데이터를 전송하도록 제대로 구성하려면 양식 디자인에 있는 [제출] 단추가 XML 데이터를 전송하도록 설정되어 있는지 확인하십시오. 제출 단추를 설정하여 XML 데이터를 제출하는 방법에 대한 자세한 내용은 [AEM Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63)를 참조하십시오.
+>데이터를 XML 데이터로 전송하려면 양식 디자인을 Designer에서 올바르게 구성해야 합니다. 양식 디자인이 XML 데이터를 전송하도록 제대로 구성하려면 양식 디자인에 있는 [제출] 단추가 XML 데이터를 전송하도록 설정되어 있는지 확인하십시오. 제출 단추를 설정하여 XML 데이터를 제출하는 방법에 대한 자세한 내용은 [AEM Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)을(를) 참조하십시오.
 
 ## 제출된 PDF 데이터 처리 {#handling-submitted-pdf-data}
 
@@ -96,7 +98,7 @@ Forms 서비스를 호출하는 웹 애플리케이션을 고려합니다. Forms
    <td><p>Forms 서비스는 대화형 PDF 양식을 클라이언트 웹 브라우저에 렌더링합니다.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>사용자가 대화형 양식을 채우고 제출 단추를 클릭합니다. 양식은 PDF 데이터로 Forms 서비스에 다시 제출됩니다. 이 옵션은 Designer에서 설정합니다.</p></td>
   </tr>
   <tr>
