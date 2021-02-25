@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1543'
 ht-degree: 0%
 
 ---
 
 
 # DCX 문서 {#validating-ddx-documents} 유효성 확인
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Assembler 서비스에서 사용하는 DDX 문서의 유효성을 프로그래밍 방식으로 확인할 수 있습니다. 즉, Assembler 서비스 API를 사용하여 DDX 문서가 유효한지 여부를 결정할 수 있습니다. 예를 들어, 이전 AEM Forms 버전에서 업그레이드한 후 DDX 문서가 유효한지 확인하려면 Assembler 서비스 API를 사용하여 유효성을 검사할 수 있습니다.
 
@@ -54,7 +56,7 @@ DCX 문서의 유효성을 검사하려면 다음 작업을 수행합니다.
 * adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 대체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 대체해야 합니다.
 
 **PDF Assembler 클라이언트 만들기**
 
