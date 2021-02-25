@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1839'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,15 @@ ht-degree: 0%
 
 # HTTP 토큰 {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기
 
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
+
 HTTP 토큰을 사용하여 SSO(Single Sign On) 인증을 수행하는 Flash Builder을 사용하여 클라이언트 응용 프로그램을 만들 수 있습니다. 예를 들어 Flash Builder을 사용하여 웹 기반 응용 프로그램을 만든다고 가정합니다. 각 보기에서 다른 AEM Forms 작업을 호출하는 응용 프로그램에 서로 다른 보기가 있다고 가정합니다. 각 Forms 작업에 대해 사용자를 인증하는 대신 사용자가 한 번 인증할 수 있는 로그인 페이지를 만들 수 있습니다. 인증이 완료되면 사용자는 다시 인증할 필요 없이 여러 작업을 호출할 수 있습니다. 예를 들어 사용자가 Workspace(또는 다른 Forms 애플리케이션)에 로그인한 경우 사용자가 다시 인증할 필요가 없습니다.
 
 클라이언트 응용 프로그램에 SSO 인증을 수행하는 데 필요한 응용 프로그램 로직이 포함되어 있지만 AEM 양식 사용자 관리는 실제 사용자 인증을 수행합니다. HTTP 토큰을 사용하여 사용자를 인증하기 위해 클라이언트 응용 프로그램은 인증 관리자 서비스의 `authenticateWithHTTPToken` 작업을 호출합니다. 사용자 관리는 HTTP 토큰을 사용하여 사용자를 인증할 수 있습니다. 이후 AEM Forms에 대한 원격 또는 웹 서비스 호출의 경우 인증을 위해 자격 증명을 전달할 필요가 없습니다.
 
 >[!NOTE]
 >
->이 섹션을 읽기 전에 Remoting을 사용하여 AEM Forms 호출을 사용하는 것이 좋습니다. (AEM Forms Remoting[을(를) 사용하여 AEM Forms 호출 참조)](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
+>이 섹션을 읽기 전에 Remoting을 사용하여 AEM Forms 호출을 사용하는 것이 좋습니다. (AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)을(를) 사용하여 AEM Forms 호출 참조)[
 
 사용자가 SSO를 사용하여 인증한 후 이름이 `MyApplication/EncryptDocument`인 다음 AEM Forms 단기 프로세스가 호출됩니다. (입력 및 출력 값과 같은 이 프로세스에 대한 자세한 내용은 [Short Lived 프로세스 예](/help/forms/developing/aem-forms-processes.md)를 참조하십시오.)
 
@@ -120,7 +122,7 @@ SSO 인증을 수행하는 클라이언트 응용 프로그램을 만드는 방�
 * `views/login.mxml`:로그인 화면을 나타냅니다. 자세한 내용은 [login.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)를 참조하십시오.
 * `views/logout.mxml`:로그아웃 화면을 나타냅니다. 자세한 내용은 [logout.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)를 참조하십시오.
 * `views/progress.mxml`:진행 보기를 나타냅니다. 자세한 내용은 [progress.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file)를 참조하십시오.
-* `views/remoting.mxml`:원격 기능을 사용하여 MyApplication/EncryptDocument라는 AEM Forms 단기 프로세스를 호출하는 보기를 나타냅니다. (remoting.mxml 파일 만들기[를 참조하십시오.)](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)
+* `views/remoting.mxml`:원격 기능을 사용하여 MyApplication/EncryptDocument라는 AEM Forms 단기 프로세스를 호출하는 보기를 나타냅니다. (remoting.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)를 참조하십시오.)[
 
 다음 그림은 클라이언트 응용 프로그램을 시각적으로 보여줍니다.
 
@@ -670,7 +672,7 @@ SSO 인증을 수행하는 클라이언트 응용 프로그램을 만드는 방�
 
 ### remoting.mxml 파일 {#creating-the-remoting-mxml-file} 만들기
 
-다음 코드는 `MyApplication/EncryptDocument` 프로세스를 호출하는 remoting.mxml 파일을 나타냅니다. 문서가 프로세스에 전달되기 때문에 AEM Forms으로 보안 문서를 전달하는 데 책임이 있는 응용 프로그램 논리가 이 파일에 있습니다. (Remoting[을(를) 사용하여 프로세스를 호출하려면 보안 문서 전달을 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
+다음 코드는 `MyApplication/EncryptDocument` 프로세스를 호출하는 remoting.mxml 파일을 나타냅니다. 문서가 프로세스에 전달되기 때문에 AEM Forms으로 보안 문서를 전달하는 데 책임이 있는 응용 프로그램 논리가 이 파일에 있습니다. (Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)을(를) 사용하여 프로세스를 호출하려면 보안 문서 전달을 참조하십시오.)[
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>
