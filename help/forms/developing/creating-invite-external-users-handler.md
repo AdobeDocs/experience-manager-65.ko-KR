@@ -2,15 +2,17 @@
 title: 외부 사용자 초대 처리기 만들기
 description: 외부 사용자 초대 처리기 만들기
 translation-type: tm+mt
-source-git-commit: 92e5cc0b1934dad641357a22894e70a3660b774a
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
 
 
 # 외부 사용자 초대 핸들러 만들기 {#create-invite-external-users-handler}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Rights Management 서비스에 대한 외부 사용자 초대 핸들러를 만들 수 있습니다. 외부 사용자 초대 핸들러를 사용하면 Rights Management 서비스가 외부 사용자를 Rights Management 사용자로 초대할 수 있습니다. 사용자가 Rights Management 사용자가 되면 정책으로 보호된 PDF 문서를 여는 등의 작업을 수행할 수 있습니다. 외부 사용자 초대 핸들러가 AEM Forms에 배포된 후 관리 콘솔을 사용하여 해당 핸들러를 상호 작용할 수 있습니다.
 
