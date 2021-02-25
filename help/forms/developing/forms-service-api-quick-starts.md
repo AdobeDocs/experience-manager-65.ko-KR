@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1576'
 ht-degree: 0%
 
 ---
 
 
 # Forms 서비스 API 빠른 시작 {#forms-service-api-quick-starts}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 다음 빠른 시작을 Forms 서비스에 사용할 수 있습니다.
 
@@ -204,7 +206,7 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서버로
 
 ## 빠른 시작(SOAP 모드):클라이언트에서 Java API {#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api}를 사용하여 양식 렌더링
 
-다음 코드 예제에서는 Forms 서비스 Java API를 사용하여 클라이언트에서 *Loan.xdp*&#x200B;라는 양식을 렌더링합니다. 양식 디자인이 응용 프로그램의 일부이며 내용 루트 URI 값 `repository:///`을 사용하여 참조됩니다. ([ 클라이언트에서 Forms 렌더링 참조)](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client)
+다음 코드 예제에서는 Forms 서비스 Java API를 사용하여 클라이언트에서 *Loan.xdp*&#x200B;라는 양식을 렌더링합니다. 양식 디자인이 응용 프로그램의 일부이며 내용 루트 URI 값 `repository:///`을 사용하여 참조됩니다. (](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client) 클라이언트에서 Forms 렌더링 참조)[
 
 ```java
  /*
@@ -743,7 +745,7 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서버로
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-an-html-form-using-the-java-api}을 사용하여 HTML 양식 렌더링
 
-다음 코드 예제에서는 Forms 서비스 Java API를 사용하여 HTML 양식을 렌더링합니다. 도구 모음은 HTML 양식과 2개의 첨부 파일에 추가됩니다. 또한 사용자 에이전트 값은 `HttpServletRequest` 개체에서 가져옵니다. (HTML[로 Forms 렌더링 참조)](/help/forms/developing/rendering-forms.md#rendering-forms-as-html)
+다음 코드 예제에서는 Forms 서비스 Java API를 사용하여 HTML 양식을 렌더링합니다. 도구 모음은 HTML 양식과 2개의 첨부 파일에 추가됩니다. 또한 사용자 에이전트 값은 `HttpServletRequest` 개체에서 가져옵니다. (HTML](/help/forms/developing/rendering-forms.md#rendering-forms-as-html)로 Forms 렌더링 참조)[
 
 ```java
  /*
@@ -904,7 +906,7 @@ Forms 서비스 API를 사용하는 응용 프로그램 로직은 Java 서버로
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}을 사용하여 CSS 파일을 사용하는 HTML 양식 렌더링
 
-다음 코드 예제에서는 Forms 서비스 클라이언트 API를 사용하여 HTML 양식을 렌더링합니다. 참조되는 사용자 지정 CSS 파일의 이름은 *custom.css*&#x200B;입니다. (사용자 지정 CSS 파일을 사용하여 HTML Forms 렌더링[을 참조하십시오.)](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files)
+다음 코드 예제에서는 Forms 서비스 클라이언트 API를 사용하여 HTML 양식을 렌더링합니다. 참조되는 사용자 지정 CSS 파일의 이름은 *custom.css*&#x200B;입니다. (사용자 지정 CSS 파일을 사용하여 HTML Forms 렌더링](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files)을 참조하십시오.)[
 
 ```java
  /*
@@ -2497,7 +2499,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-rendering-by-value-using-the-java-api}을 사용하여 값으로 렌더링
 
-다음 Java 빠른 시작은 값별로 *Loan.xdp*&#x200B;라는 양식 디자인을 기반으로 하는 대화형 PDF 양식을 렌더링합니다. 양식 디자인이 *inputXDP*&#x200B;라는 `com.adobe.idp.Document` 개체를 채우는 데 사용됩니다. (값[으로 Forms 렌더링 참조)](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
+다음 Java 빠른 시작은 값별로 *Loan.xdp*&#x200B;라는 양식 디자인을 기반으로 하는 대화형 PDF 양식을 렌더링합니다. 양식 디자인이 *inputXDP*&#x200B;라는 `com.adobe.idp.Document` 개체를 채우는 데 사용됩니다. (값](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)으로 Forms 렌더링 참조)[
 
 ```java
  /*
