@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2528'
 ht-degree: 0%
 
 ---
 
 
 # 대화형 PDF forms 렌더링 중 {#rendering-interactive-pdf-forms}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Forms 서비스는 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)에 렌더링하여 사용자의 정보를 수집합니다. 대화형 양식이 렌더링되면 사용자는 양식 필드에 데이터를 입력하고 양식에 있는 제출 단추를 클릭하여 정보를 Forms 서비스로 다시 보낼 수 있습니다. 인터랙티브한 PDF 양식을 표시하려면 클라이언트 웹 브라우저를 호스팅하는 컴퓨터에 Adobe Reader 또는 Acrobat을 설치해야 합니다.
 
@@ -49,7 +51,7 @@ Forms 서비스가 대화형 양식을 사용하여 사용자로부터 정보를
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p><code>GetLoanForm</code> Java 서블릿은 Forms 서비스 클라이언트 API를 사용하여 대출 양식을 클라이언트 웹 브라우저에 렌더링합니다. (Java API<a href="#render-an-interactive-pdf-form-using-the-java-api">를 사용하여 대화형 PDF 양식 렌더링을 참조하십시오.)</a></p></td>
+   <td><p><code>GetLoanForm</code> Java 서블릿은 Forms 서비스 클라이언트 API를 사용하여 대출 양식을 클라이언트 웹 브라우저에 렌더링합니다. (Java API</a>를 사용하여 대화형 PDF 양식 렌더링을 참조하십시오.)<a href="#render-an-interactive-pdf-form-using-the-java-api"></a></p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -180,7 +182,7 @@ Forms 응용 프로그램에 있는 리소스의 경로는 다음과 같습니�
 
 ## Java API {#render-an-interactive-pdf-form-using-the-java-api}를 사용하여 대화형 PDF 양식 렌더링
 
-Forms API를 사용하여 대화형 PDF 양식을 렌더링합니다(Java).
+Forms API(Java)를 사용하여 대화형 PDF 양식을 렌더링합니다.
 
 1. 프로젝트 파일 포함
 
