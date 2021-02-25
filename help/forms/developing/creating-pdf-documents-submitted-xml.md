@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
 
 
 # 제출된 XML 데이터가 있는 PDF 문서 만들기 {#creating-pdf-documents-with-submittedxml-data}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 ## 제출된 XML 데이터가 있는 PDF 문서 만들기 {#creating-pdf-documents-with-submitted-xml-data}
 
