@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
 
 
 # AEM Forms 백업 준비 중 {#preparing-aem-forms-for-backup}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 ## 백업 및 복원 서비스 {#about-the-backup-and-restore-service} 정보
 
