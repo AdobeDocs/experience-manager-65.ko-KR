@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,6 @@ ht-degree: 0%
 
 [Adobe ](https://helpx.adobe.com/support.html) 지원도메인 허용 웹 사이트 목록의 웹 사이트에만 Dynamic Media 컨텐츠가 제공되도록 CDN(Content Delivery Network) 수준에서 레퍼러 필터를 구성할 수 있습니다.
 
-핫링크 보호를 사용하려면 Adobe 번들로 제공되는 CDN을 사용해야 합니다. 핫링크 보호를 활성화하려면 관리자가 지원 티켓을 만들어 Dynamic Media 계정에 구성 변경을 요청해야 합니다. 핫링크 보호를 활성화하기 위한 추가 비용은 없습니다.
+>[!NOTE]
+>
+>핫 링크 보호를 사용하려면 Adobe 번들로 제공되는 CDN을 사용해야 합니다. 핫링크 보호를 활성화하려면 관리자가 지원 티켓을 만들어 Dynamic Media 계정에 구성 변경을 요청해야 합니다. 핫 링크 보호 활성화를 위한 추가 비용은 없습니다.
