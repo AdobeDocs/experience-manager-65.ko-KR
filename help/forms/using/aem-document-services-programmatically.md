@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: b4795930c87fa30d7c7ab60a50bc6f40da4f97d2
+source-git-commit: c3fddf28c0f2f5377fff7561d29f073cc847c3ca
 workflow-type: tm+mt
-source-wordcount: '6418'
+source-wordcount: '6450'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,13 @@ ht-degree: 1%
 
 # 프로그래밍 방식으로 AEM 문서 서비스 사용 {#using-aem-document-services-programmatically}
 
-이 문서의 샘플 및 예제를 통해 OSGi 환경의 AEM Forms에서 AEM 다큐멘트 서비스를 이해하고 사용하는 방법을 살펴볼 수 있습니다. JEE 환경의 AEM Forms 샘플 및 예제는 [AEM Forms을 사용한 JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee) 프로그래밍을 참조하십시오.
+이 문서의 샘플 및 예제를 통해 OSGi 환경의 AEM Forms에서 AEM 다큐멘트 서비스를 이해하고 사용하는 방법을 살펴볼 수 있습니다. JEE 환경의 AEM Forms 샘플 및 예는
+
+* [서명 서비스 Java API 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
+
+* [암호화 서비스 Java API 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
+
+* [Acrobat Reader 확장 서비스 Java API 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
 
 ## 전제 조건 {#prerequisite}
 
