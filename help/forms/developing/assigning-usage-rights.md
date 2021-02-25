@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '3937'
+source-wordcount: '3951'
 ht-degree: 0%
 
 ---
 
 
 # 사용 권한 할당 {#assigning-usage-rights}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 ## Acrobat Reader DC 확장 서비스 {#about-the-acrobat-reader-dc-extensions-service} 정보
 
@@ -186,7 +188,7 @@ Acrobat Reader DC Extensions API(웹 서비스)를 사용하여 PDF 문서에 �
 1. 적용할 사용 권한을 지정합니다.
 
    * 생성자를 사용하여 사용 권한을 나타내는 `UsageRights` 개체를 만듭니다.
-   * 적용할 각 사용 권한에 대해 `true` 값을 `UsageRights` 개체에 속하는 해당 데이터 멤버에 할당합니다. 예를 들어 `enableFormFillIn` 사용 권한을 추가하려면 `true` 개체의 `enableFormFillIn` 데이터 멤버에 &lt;a1/>을(를) 할당합니다. `UsageRights` 적용할 각 사용 권한에 대해 이 단계를 반복합니다.
+   * 적용할 각 사용 권한에 대해 `true` 값을 `UsageRights` 개체에 속하는 해당 데이터 멤버에 할당합니다. 예를 들어 `enableFormFillIn` 사용 권한을 추가하려면 `true` 개체의 `enableFormFillIn` 데이터 멤버에 `UsageRights`을(를) 할당합니다. 적용할 각 사용 권한에 대해 이 단계를 반복합니다.
 
 1. PDF 문서에 사용 권한을 적용합니다.
 
@@ -392,7 +394,7 @@ Acrobat Reader DC 확장 서비스 작업을 프로그래밍 방식으로 수행
 * 권한이 활성화된 PDF 문서를 열 때 Adobe Reader 내에 표시되는 메시지입니다.
 * 자격 증명이 더 이상 유효하지 않은 날짜입니다.
 * 자격 증명이 유효하지 않은 날짜입니다.
-* 이 권한이 활성화된 PDF 문서에 대해 설정된 사용 권한.
+* 이 권한이 활성화된 PDF 문서에 설정된 사용 권한.
 * 자격 증명을 사용한 횟수입니다.
 
 **참고 항목**
