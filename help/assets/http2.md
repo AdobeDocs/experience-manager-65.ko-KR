@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '724'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Adobe에서는 전반적인 성능이 개선된 HTTP/2 컨텐츠 제공을 발�
 
 >[!NOTE]
 >
->고객은 HTTP/2 컨텐츠 전달을 통해 혜택을 받으려면 Adobe Experience Manager Dynamic Media과 함께 번들로 제공되는 CDN(컨텐츠 전달 네트워크)을 사용해야 합니다.
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
 ## HTTP/2 소개{#what-is-http}
 
