@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '7898'
+source-wordcount: '7912'
 ht-degree: 0%
 
 ---
 
 
 # 파일 형식과 PDF {#converting-between-file-formatsand-pdf} 간 변환
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 **PDF 서비스 생성 정보**
 
@@ -613,12 +615,12 @@ WinID가 텍스트, 하위 창, 윈도우 클래스 ID 등과 같은 대화 상�
   <tr>
    <td><p>관리 설정 </p></td>
    <td><p>PDF 설정, 보안 설정 및 파일 유형 설정이 포함되어 있습니다. </p><p>파일 유형 설정은 파일 이름 확장자를 해당 기본 응용 프로그램과 연결합니다. 파일 유형 설정은 기본 파일을 인쇄하는 데 사용되는 기본 응용 프로그램 설정도 지정합니다. </p></td>
-   <td><p>이미 지원되는 기본 응용 프로그램에 대한 설정을 변경하려면 시스템 관리자가 관리 콘솔에서 파일 유형 설정을 설정합니다. </p><p>새 기본 파일 형식에 대한 지원을 추가하려면 파일을 수동으로 편집해야 합니다. (기본 파일 형식<a href="converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format">에 대한 지원 추가 또는 수정을 참조하십시오.)</a> </p></td>
+   <td><p>이미 지원되는 기본 응용 프로그램에 대한 설정을 변경하려면 시스템 관리자가 관리 콘솔에서 파일 유형 설정을 설정합니다. </p><p>새 기본 파일 형식에 대한 지원을 추가하려면 파일을 수동으로 편집해야 합니다. (기본 파일 형식</a>에 대한 지원 추가 또는 수정을 참조하십시오.)<a href="converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format"> </a></p></td>
   </tr>
   <tr>
    <td><p>스크립트 </p></td>
    <td><p>PDF 생성 서비스와 기본 애플리케이션 간의 상호 작용을 지정합니다. 이러한 상호 작용은 일반적으로 응용 프로그램이 파일을 Adobe PDF 드라이버으로 인쇄하도록 합니다. </p><p>이 스크립트에는 기본 응용 프로그램이 특정 대화 상자를 열도록 지시하고 해당 대화 상자의 필드 및 단추에 대한 특정 응답을 제공하는 지침이 들어 있습니다. </p></td>
-   <td><p>PDF 생성 서비스에는 지원되는 모든 기본 애플리케이션에 대한 스크립트 파일이 포함됩니다. XML 편집 응용 프로그램을 사용하여 이러한 파일을 수정할 수 있습니다.</p><p>새 기본 응용 프로그램에 대한 지원을 추가하려면 새 스크립트 파일을 만들어야 합니다. (기본 응용 프로그램<a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">에 대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오.)</a> </p></td>
+   <td><p>PDF 생성 서비스에는 지원되는 모든 기본 애플리케이션에 대한 스크립트 파일이 포함됩니다. XML 편집 응용 프로그램을 사용하여 이러한 파일을 수정할 수 있습니다.</p><p>새 기본 응용 프로그램에 대한 지원을 추가하려면 새 스크립트 파일을 만들어야 합니다. (기본 응용 프로그램</a>에 대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오.)<a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application"> </a></p></td>
   </tr>
   <tr>
    <td><p>일반 대화 상자 지침 </p></td>
@@ -628,12 +630,12 @@ WinID가 텍스트, 하위 창, 윈도우 클래스 ID 등과 같은 대화 상�
   <tr>
    <td><p>애플리케이션별 대화 상자 지침</p></td>
    <td><p>응용 프로그램별 대화 상자에 응답하는 방법을 지정합니다. </p><p>이 정보가 포함된 파일이 적용됩니다.<i>'[appname]'</i>.dialog.<i>'[locale]'</i>.xml(예: appmon.word.en_US.xml).</p></td>
-   <td><p>이 파일을 수정하지 마십시오. </p><p>새 기본 응용 프로그램에 대한 대화 상자 지침을 추가하려면 기본 응용 프로그램<a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">에 대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오.</a></p></td>
+   <td><p>이 파일을 수정하지 마십시오. </p><p>새 기본 응용 프로그램에 대한 대화 상자 지침을 추가하려면 기본 응용 프로그램</a>에 대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오.<a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application"></a></p></td>
   </tr>
   <tr>
    <td><p>추가 애플리케이션별 대화 상자 지침 </p></td>
    <td><p>응용 프로그램별 대화 상자 지침에 대한 무시 및 추가 항목을 지정합니다. 이 섹션에는 이러한 정보의 예가 나와 있습니다. </p><p>이 정보가 포함된 파일이 적용됩니다.<i>'[appname]'</i>.addition.<i>'[locale]'</i>.xml. 예를 들면 appmon.addition.en_US.xml이 있습니다.</p></td>
-   <td><p>이 유형의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. (기본 응용 프로그램<a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">에 대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오.)</a> </p><p><strong>중요</strong>:서버에서 지원할 각 기본 응용 프로그램에 대해 응용 프로그램별 대화 상자 지침을 추가로 만들어야 합니다. </p></td>
+   <td><p>이 유형의 파일은 XML 편집 응용 프로그램을 사용하여 만들고 수정할 수 있습니다. (기본 응용 프로그램</a>에 대한 추가 대화 상자 XML 파일 만들기 또는 수정을 참조하십시오.)<a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application"> </a></p><p><strong>중요</strong>:서버에서 지원할 각 기본 응용 프로그램에 대해 응용 프로그램별 대화 상자 지침을 추가로 만들어야 합니다. </p></td>
   </tr>
  </tbody>
 </table>
@@ -650,7 +652,7 @@ WinID가 텍스트, 하위 창, 윈도우 클래스 ID 등과 같은 대화 상�
 
 이 섹션 및 다음 섹션에서 사용자의 관점에서 대화 상자와 해당 구성 요소를 설명하는 경우 *대화 상자*, *버튼*, *필드* 및 *콤보 상자*&#x200B;와 같은 용어가 사용됩니다.
 
-이 섹션 및 다음 섹션에서 내부 표현의 관점에서 대화 상자와 해당 구성 요소를 설명하는 경우 *window 요소*&#x200B;라는 용어가 사용됩니다. 윈도우 요소의 내부 표시는 각 윈도우 요소 인스턴스가 레이블로 식별되는 계층입니다. window 요소 인스턴스는 물리적인 특성 및 동작도 설명합니다.
+이 섹션 및 다음 섹션에서 내부 표현의 관점에서 대화 상자와 해당 구성 요소를 설명하는 경우 *window 요소*&#x200B;라는 용어가 사용됩니다. 윈도우 요소의 내부 표시는 각 윈도우 요소 인스턴스가 레이블로 식별되는 계층입니다. window 요소 인스턴스는 또한 물리적인 특성 및 비헤이비어를 설명합니다.
 
 대화 상자와 해당 구성 요소는 활성화될 때까지 일부 대화 상자 요소가 숨겨지는 서로 다른 동작을 보여 줍니다. 내부 표현 관점에서 이러한 행동 문제는 존재하지 않습니다. 예를 들어 대화 상자의 내부 표현은 구성 요소가 대화 상자에 중첩되어 있다는 점을 제외하고 대화 상자에 포함된 구성 요소의 내부 표현과 비슷합니다.
 
