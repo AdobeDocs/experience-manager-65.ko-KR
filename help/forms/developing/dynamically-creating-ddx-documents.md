@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2199'
 ht-degree: 0%
 
 ---
 
 
 # 동적으로 DCX 문서 만들기 {#dynamically-creating-ddx-documents}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 어셈블러 작업을 수행하는 데 사용할 수 있는 DCX 문서를 동적으로 만들 수 있습니다. DCX 문서를 동적으로 만들면 런타임 동안 얻은 DCX 문서의 값을 사용할 수 있습니다. DCX 문서를 동적으로 만들려면 사용 중인 프로그래밍 언어에 속하는 클래스를 사용합니다. 예를 들어 Java를 사용하여 클라이언트 응용 프로그램을 개발하는 경우 `org.w3c.dom.*` 패키지에 속하는 클래스를 사용합니다. 마찬가지로 Microsoft .NET을 사용하는 경우에는 `System.Xml` 네임스페이스에 속하는 클래스를 사용하십시오.
 
