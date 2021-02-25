@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1876'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->고객은 스마트 이미징의 혜택을 받으려면 Adobe Experience Manager Dynamic Media과 함께 CDN(컨텐츠 전달 네트워크)을 사용해야 합니다.
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
 스마트 이미징은 또한 Adobe의 동급 최강의 프리미엄 CDN 서비스와 완벽하게 통합됨으로써 향상된 성능을 제공합니다. 이 서비스는 서버, 네트워크 및 피어링 지점 간의 최적의 인터넷 경로를 찾습니다. 인터넷에서 기본 라우트를 사용하는 대신 지연 시간과 패킷 손실 비율이 가장 낮은 경로를 찾습니다.
 
