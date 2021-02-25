@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4188'
 ht-degree: 0%
 
 ---
 
 
 # Forms을 HTML {#rendering-forms-as-html}으로 렌더링
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Forms 서비스는 웹 브라우저에서 HTTP 요청에 응답하여 양식을 HTML로 렌더링합니다. 양식을 HTML로 렌더링하면 클라이언트 웹 브라우저가 위치한 컴퓨터에서 Adobe Reader, Acrobat 또는 Flash Player을 필요로 하지 않습니다(양식 안내선(더 이상 사용되지 않음).
 
@@ -98,7 +100,7 @@ form:ready 이벤트에 있는 양식 스크립트는 양식의 초기 렌더링
 
 먼저 양식을 제출하기 전에 호출되는 콜백 함수를 정의해야 합니다. 여기서 함수의 이름은 `_user_onsubmit`입니다. 이 함수는 예외를 throw하지 않으며 예외일 경우 예외가 무시됩니다. html의 head 섹션에 JavaScript 함수를 배치하는 것이 좋습니다.그러나 `xfasubset.js`을 포함하는 스크립트 태그의 끝 전 어디에서든 선언할 수 있습니다.
 
-양식 서버가 드롭다운 목록이 포함된 XDP를 렌더링할 때 드롭다운 목록을 만드는 것 외에도 두 개의 숨겨진 텍스트 필드도 만듭니다. 이러한 텍스트 필드는 드롭다운 목록의 데이터를 저장합니다. 하나는 옵션의 표시 이름을 저장하고 다른 하나는 옵션에 대한 값을 저장합니다. 따라서 사용자가 양식을 제출할 때마다 드롭다운 목록의 전체 데이터가 제출됩니다. 항상 그렇게 많은 데이터를 제출하지 않으려는 경우 사용자 지정 스크립트를 작성하여 이를 비활성화할 수 있습니다. 예:드롭다운 목록의 이름은 `drpOrderedByStateProv`이며 하위 폼 머리글 아래에 둘러싸여 있습니다. HTML 입력 요소의 이름은 `header[0].drpOrderedByStateProv[0]`입니다. 드롭다운의 데이터를 저장하고 제출하는 숨김 필드의 이름은 다음과 같습니다.`header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+양식 서버가 드롭다운 목록이 포함된 XDP를 렌더링할 때 드롭다운 목록을 만드는 것 외에도 두 개의 숨겨진 텍스트 필드도 만듭니다. 이러한 텍스트 필드는 드롭다운 목록의 데이터를 저장합니다. 하나는 옵션의 표시 이름을 저장하고 다른 하나는 옵션에 대한 값을 저장합니다. 따라서 사용자가 양식을 제출할 때마다 드롭다운 목록의 전체 데이터가 제출됩니다. 항상 그렇게 많은 데이터를 제출하지 않으려는 경우 사용자 지정 스크립트를 작성하여 이를 비활성화할 수 있습니다. 예:드롭다운 목록의 이름은 `drpOrderedByStateProv`이고 하위 폼 머리글 아래에 있습니다. HTML 입력 요소의 이름은 `header[0].drpOrderedByStateProv[0]`입니다. 드롭다운의 데이터를 저장하고 제출하는 숨김 필드의 이름은 다음과 같습니다.`header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
 데이터를 게시하지 않으려는 경우 다음과 같이 이러한 입력 요소를 비활성화할 수 있습니다.`var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
