@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
 
 
 # PDF Portfolio {#assembling-pdf-portfolios} 취합
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Assembler Java 및 웹 서비스 API를 사용하여 PDF Portfolio을 구성할 수 있습니다. 포트폴리오는 워드 파일, 이미지 파일(예: jpeg 파일), PDF 문서 등 다양한 유형의 문서를 결합할 수 있습니다. 포트폴리오의 레이아웃은 미리 보기&#x200B;*,*&#x200B;이미지&#x200B;*레이아웃에서 또는*&#x200B;축 중심 회전&#x200B;*과 같은 다른 스타일로 설정할 수 있습니다.*
 
