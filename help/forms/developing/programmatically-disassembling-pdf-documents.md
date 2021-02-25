@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1788'
 ht-degree: 0%
 
 ---
 
 
 # 프로그래밍 방식으로 PDF 문서 분해하기 {#programmatically-disassembling-pdf-documents}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 PDF 문서를 어셈블러 서비스로 전달하여 분해할 수 있습니다. 일반적으로 이 작업은 PDF 문서가 문 모음과 같은 여러 개별 문서에서 처음 작성된 경우에 유용합니다. 다음 그림에서 DocA는 페이지에 대한 첫 번째 수준 1 책갈피가 새 결과 문서의 시작을 식별하는 여러 결과 문서로 분할됩니다.
 
@@ -79,7 +81,7 @@ PDF 문서를 분해하려면 다음 작업을 수행합니다.
 * adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar를 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 교체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar를 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 교체해야 합니다.
 
 **PDF Assembler 클라이언트 만들기**
 
