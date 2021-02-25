@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
 
 # 백업 및 복원 서비스 API 빠른 시작 {#backup-and-restore-service-apiquick-starts}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Java API 빠른 시작(SOAP)은 백업 및 복원 서비스 API에 사용할 수 있습니다.
 
@@ -33,7 +35,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}을 사용하여 백업 모드 시작
 
-다음 Java 코드 예제는 2시간 동안 고유한 레이블이 있는 백업 모드로 들어갑니다. 백업 시간이 만료되거나 백업 모드가 명시적으로 종료되면 양식 서버가 전역 문서 저장소에서 파일을 제거하도록 돌아갑니다. 양식 서버[에서 백업 모드 시작을 참조하십시오.](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)
+다음 Java 코드 예제는 2시간 동안 고유한 레이블이 있는 백업 모드로 들어갑니다. 백업 시간이 만료되거나 백업 모드가 명시적으로 종료되면 양식 서버가 전역 문서 저장소에서 파일을 제거하도록 돌아갑니다. 양식 서버](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)에서 백업 모드 시작을 참조하십시오.[
 
 ```java
  /*
@@ -148,7 +150,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}를 사용하여 백업 모드 종료
 
-다음 Java 코드 예제는 명시적으로 Forms Server를 백업 모드를 종료하고 전역 문서 저장소에서 파일을 제거하는 것으로 되돌립니다. 양식 서버[에서 백업 모드 종료를 참조하십시오.](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)
+다음 Java 코드 예제는 명시적으로 Forms Server를 백업 모드를 종료하고 전역 문서 저장소에서 파일을 제거하는 것으로 되돌립니다. 양식 서버](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)에서 백업 모드 종료를 참조하십시오.[
 
 ```java
  /*
