@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2152'
 ht-degree: 0%
 
 ---
 
 
 # 프로그래밍 방식으로 PDF 문서 정리 {#programmatically-assembling-pdf-documents}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Assembler Service API를 사용하여 여러 PDF 문서를 하나의 PDF 문서로 결합할 수 있습니다. 다음 그림은 세 개의 PDF 문서를 하나의 PDF 문서로 병합하는 것을 보여줍니다.
 
@@ -85,7 +87,7 @@ Assembler Service API를 사용하여 여러 PDF 문서를 하나의 PDF 문서�
 * adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 대체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 대체해야 합니다.
 
 **PDF Assembler 클라이언트 만들기**
 
