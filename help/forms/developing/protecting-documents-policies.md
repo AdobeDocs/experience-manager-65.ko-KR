@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '15544'
+source-wordcount: '15558'
 ht-degree: 0%
 
 ---
 
 
 # 정책 {#protecting-documents-with-policies}으로 문서 보호
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 **Document Security Service 정보**
 
@@ -229,7 +231,7 @@ Document Security API(Java)를 사용하여 정책을 만듭니다.
    * `InfomodelObjectFactory` 객체의 정적 `createPolicy` 메서드를 호출하여 `Policy` 객체를 만듭니다. 이 메서드는 `Policy` 객체를 반환합니다.
    * `Policy` 객체의 `setName` 메서드를 호출하고 정책 이름을 지정하는 문자열 값을 전달하여 정책의 이름 속성을 설정합니다.
    * `Policy` 개체의 `setDescription` 메서드를 호출하고 정책의 설명을 지정하는 문자열 값을 전달하여 정책의 설명을 설정합니다.
-   * `Policy` 개체의 `setPolicySetName` 메서드를 호출하고 정책 집합 이름을 지정하는 문자열 값을 전달하여 새 정책이 속하는 정책 집합을 설정합니다. (이 매개 변수 값에 `null`내 정책&#x200B;*정책 집합에 정책이 추가되게 하는 &lt;a0/>을 지정할 수 있습니다.)*
+   * `Policy` 개체의 `setPolicySetName` 메서드를 호출하고 정책 집합 이름을 지정하는 문자열 값을 전달하여 새 정책이 속하는 정책 집합을 설정합니다. (이 매개 변수 값에 `null`내 정책&#x200B;*정책 집합에 정책이 추가되게 하는*&#x200B;을 지정할 수 있습니다.)
    * `InfomodelObjectFactory` 개체의 정적 `createValidityPeriod` 메서드를 호출하여 정책의 유효 기간을 만듭니다. 이 메서드는 `ValidityPeriod` 객체를 반환합니다.
    * `ValidityPeriod` 개체의 `setRelativeExpirationDays` 메서드를 호출하고 일 수를 지정하는 정수 값을 전달하여 정책으로 보호된 문서에 액세스할 수 있는 일 수를 설정합니다.
    * `Policy` 개체의 `setValidityPeriod` 메서드를 호출하고 `ValidityPeriod` 개체를 전달하여 정책의 유효 기간을 설정합니다.
