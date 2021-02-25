@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2846'
 ht-degree: 0%
 
 ---
 
 
 # PDF를 Postscript 및 이미지 파일로 변환 {#converting-pdf-to-postscript-andimage-files}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 **PDF 변환 서비스 정보**
 
@@ -60,7 +62,7 @@ PDF 문서를 PostScript 파일로 변환하려면 다음 단계를 수행하십
 
 PDF 변환 서비스 작업을 프로그래밍 방식으로 수행하려면 먼저 PDF 변환 서비스 클라이언트를 만들어야 합니다. Java API를 사용하는 경우 `ConvertPdfServiceClient` 개체를 만듭니다. 웹 서비스 API를 사용하는 경우 `ConvertPDFServiceService` 개체를 만듭니다.
 
-이 섹션에서는 AEM Forms에 도입된 웹 서비스 기능을 사용합니다. 새 기능에 액세스하려면 `lc_version` 특성을 사용하여 프록시 개체를 구성해야 합니다. (웹 서비스를 사용하여 AEM Forms 호출[에서 &quot;웹 서비스를 사용하여 새 기능에 액세스&quot;를 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
+이 섹션에서는 AEM Forms에 도입된 웹 서비스 기능을 사용합니다. 새 기능에 액세스하려면 `lc_version` 특성을 사용하여 프록시 개체를 구성해야 합니다. (웹 서비스를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)에서 &quot;웹 서비스를 사용하여 새 기능에 액세스&quot;를 참조하십시오.)[
 
 **PDF 문서를 참조하여 PostScript 파일로 변환**
 
