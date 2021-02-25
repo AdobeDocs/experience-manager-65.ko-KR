@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: b4795930c87fa30d7c7ab60a50bc6f40da4f97d2
 workflow-type: tm+mt
-source-wordcount: '6355'
+source-wordcount: '6418'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,15 @@ ht-degree: 1%
 
 # 프로그래밍 방식으로 AEM 문서 서비스 사용 {#using-aem-document-services-programmatically}
 
-AEM Document Services를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) jar에서 사용할 수 있습니다. 주요 프로젝트에 대한 자세한 내용은 Maven[을 사용하여 AEM 프로젝트를 빌드하는 방법을 참조하십시오.](/help/sites-developing/ht-projects-maven.md)
+이 문서의 샘플 및 예제를 통해 OSGi 환경의 AEM Forms에서 AEM 다큐멘트 서비스를 이해하고 사용하는 방법을 살펴볼 수 있습니다. JEE 환경의 AEM Forms 샘플 및 예제는 [AEM Forms을 사용한 JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee) 프로그래밍을 참조하십시오.
 
->[!NOTE]
->
->DocAssurance 서비스 API를 사용하기 전에 [DocAssurance 서비스](/help/forms/using/install-configure-document-services.md)를 구성합니다.
+## 전제 조건 {#prerequisite}
+
+* DocAssurance 서비스 API를 사용하기 전에 [DocAssurance 서비스](/help/forms/using/install-configure-document-services.md)를 구성합니다.
+
+* AEM 마스터 프로젝트를 사용하여 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)를 다운로드하고 구성합니다. AEM Document Services를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)에서 사용할 수 있습니다.
+
+* Maven](/help/sites-developing/ht-projects-maven.md)을 사용하여 AEM 프로젝트를 빌드하는 방법에 대해 학습합니다.[
 
 ## DocAssurance 서비스 {#docassurance-service}
 
@@ -1036,7 +1040,7 @@ public class ModifySignatureField {
 
 * PDF 문서에 적용된 첫 번째 서명이어야 합니다. 즉, 인증된 서명이 적용될 때 문서의 다른 서명 필드는 서명되지 않아야 합니다. PDF 문서에서는 하나의 인증된 서명만 허용됩니다. PDF 문서에 서명하고 인증하려면 서명하기 전에 이를 인증합니다. PDF 문서를 인증한 후 추가 서명 필드에 디지털 방식으로 서명할 수 있습니다.
 * 문서의 작성자 또는 작성자는 인증된 서명을 무효화하지 않고 특정 방식으로 문서를 수정할 수 있음을 지정할 수 있습니다. 예를 들어 문서에 양식 채우기 또는 주석 달기를 허용할 수 있습니다. 작성자가 특정 수정 사항이 허용되지 않도록 지정하는 경우 Acrobat은 사용자가 해당 방식으로 문서를 수정할 수 없도록 제한합니다. 이러한 수정이 이루어지면 인증된 서명은 유효하지 않습니다. 또한 사용자가 문서를 열 때 Acrobat에서 경고가 표시됩니다. (인증되지 않은 서명을 사용하면 수정 작업이 금지되지 않으며 일반적인 편집 작업으로 인해 원본 서명이 무효화되지 않습니다.)
-* 서명 시 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 콘텐트가 있는지 문서가 스캔됩니다. 예를 들어 주석을 사용하면 인증된 내용을 이해하는 데 중요한 페이지의 텍스트를 모호하게 만들 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
+* 서명 시 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 콘텐트가 있는지 문서가 스캔됩니다. 예를 들어 주석을 사용하면 인증된 내용을 이해하는 데 중요한 페이지의 텍스트를 가릴 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
 
 **구문**:
 
@@ -1406,7 +1410,7 @@ Acrobat에서는 사용자가 이러한 방식으로 문서를 수정할 수 없
 
 서명 시 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 콘텐트가 있는지 문서가 스캔됩니다.
 
-예를 들어 주석을 사용하면 인증된 내용을 이해하는 데 중요한 페이지의 텍스트를 모호하게 만들 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
+예를 들어 주석을 사용하면 인증된 내용을 이해하는 데 중요한 페이지의 텍스트를 가릴 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
 
 >[!NOTE]
 >
