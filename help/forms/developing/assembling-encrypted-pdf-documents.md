@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1661'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
 
 
 # 암호화된 PDF 문서 정리 {#assembling-encrypted-pdf-documents}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Assembler 서비스를 사용하여 암호로 PDF 문서를 암호화할 수 있습니다. PDF 문서가 암호로 암호화된 후 Adobe Reader 또는 Acrobat에서 PDF 문서를 보려면 암호를 지정해야 합니다. 암호로 PDF 문서를 암호화하려면 PDF 문서를 암호화하는 데 필요한 암호화 요소 값을 DCX 문서에 포함해야 합니다.
 
@@ -75,7 +77,7 @@ Assembler 서비스를 사용하여 암호로 PDF 문서를 암호화할 수 있
 * adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 대체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 대체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
 
 **어셈블러 클라이언트 만들기**
 
