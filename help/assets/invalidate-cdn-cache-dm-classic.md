@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
+source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,11 @@ ht-degree: 0%
 
 # Dynamic Media Classic {#invalidating-your-cdn-cached-content}을(를) 통해 CDN 캐시를 무효화합니다.
 
-Dynamic Media 에셋은 빠른 전달을 위해 CDN에서 캐시됩니다. 그러나 자산을 업데이트할 때 이러한 변경 사항을 즉시 적용할 수 있습니다. CDN(Content Delivery Network) 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다.
+Dynamic Media 에셋은 빠른 전달을 위해 CDN(Content Delivery Network)에 의해 캐시됩니다. 그러나 에셋을 업데이트할 때 이러한 변경 사항이 즉시 적용되도록 할 수 있습니다. CDN 캐시된 컨텐츠를 무효화하면 캐시가 만료될 때까지 대기하지 않고 Dynamic Media에서 제공하는 에셋을 신속하게 업데이트할 수 있습니다.
+
+>[!NOTE]
+>
+>고객은 CDN 캐시 무효화의 혜택을 받으려면 Adobe Experience Manager Dynamic Media 번들로 포함된 CDN을 사용해야 합니다.
 
 >[!IMPORTANT]
 >
@@ -44,15 +48,15 @@ Dynamic Media Classic(Scene7)](https://helpx.adobe.com/experience-manager/scene7
 1. 페이지의 오른쪽 아래 모서리에서 **[!UICONTROL 닫기.]**
 1. Dynamic Media Classic 사용자 인터페이스에서 하나 이상의 자산을 선택한 다음 **[!UICONTROL 파일 > CDN 무효화를 클릭합니다.]** 만든 템플릿 및 선택한 자산에서 생성된 하나 이상의 URL 목록이 표시됩니다. 응용 프로그램 일반 설정 아래의 &quot;게시된 서버 이름&quot; 아래에 나열된 서버 URL을 사용합니다.
 
-   예를 들어 이전 단계에서 CDN 무효화 템플릿이 설정되어 있는 경우 `Backpack_B`이라는 단일 이미지 자산 이미지를 선택했다고 가정합니다. **[!UICONTROL 파일 > CDN 무효화]**&#x200B;를 클릭하면 CDN 무효화 사용자 인터페이스에 다음 URL이 생성됩니다.
+   예를 들어 이전 단계에서 CDN 무효화 템플릿이 설정되어 있는 경우 `Backpack_B`이라는 단일 이미지 자산 이미지를 선택했다고 가정합니다. **[!UICONTROL 파일 > CDN 무효화]**&#x200B;를 탭하면 CDN 무효화 사용자 인터페이스에 다음 URL이 생성됩니다.
 
    `https://server.com/is/image/Company/Backpack_B?$product$`
 
-1. URL 목록 상자에서 **[!UICONTROL 계속]**&#x200B;을 클릭하여 각 특정 URL에 대한 캐시를 지웁니다. URL을 편집하거나 URL 목록 상자에 URL을 입력하거나 붙여 넣어 URL을 추가할 수 있습니다.[CDN 무효화 템플릿]을 미리 설정할 필요가 없습니다.
+1. URL 목록 상자에서 **[!UICONTROL 계속]**&#x200B;을 눌러 각 특정 URL에 대한 캐시를 지웁니다. URL을 편집하거나 URL 목록 상자에 URL을 입력하거나 붙여 넣어 URL을 추가할 수 있습니다.[CDN 무효화 템플릿]을 미리 설정할 필요가 없습니다.
 
    **[!UICONTROL 계속]**&#x200B;을 클릭하면 캐시를 지우는 데 소요되는 예상 시간을 알려주는 표시기가 표시됩니다.
 
-   여러 자산을 선택한 다음 **[!UICONTROL 파일 > CDN 무효화]**&#x200B;를 클릭하면 각 자산이 저장된 **[!UICONTROL 템플릿 URL에서 참조됩니다.]** 따라서 웹 사이트에서 참조되는 각  **[!UICONTROL URL]** 이미지 사전 설정을 참조하는 CDN 무효화 템플릿을 정의할 수 있습니다(예: 제품 세부 사항, 검색 결과 등). 그런 다음 캐시에서 무효화할 이미지를 하나 이상 선택하면 URL이 자동으로 인터페이스를 채웁니다.
+   여러 자산을 선택한 다음 **[!UICONTROL 파일 > CDN 무효화]**&#x200B;를 탭하면 각 자산이 저장된 **[!UICONTROL 템플릿 URL에서 참조됩니다.]** 따라서 웹 사이트에서 참조되는 각  **[!UICONTROL URL]** 이미지 사전 설정을 참조하는 CDN 무효화 템플릿을 정의할 수 있습니다(예: 제품 세부 사항 및 검색 결과). 그런 다음 캐시에서 무효화할 이미지를 하나 이상 선택하면 URL이 자동으로 인터페이스를 채웁니다.
 
    >[!NOTE]
    >
