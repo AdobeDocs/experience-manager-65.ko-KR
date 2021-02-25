@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1738'
 ht-degree: 0%
 
 ---
 
 
 # 사용자 지정 CSS 파일 {#rendering-html-forms-using-custom-css-files}을(를) 사용하여 HTML Forms 렌더링
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Forms 서비스는 웹 브라우저에서 HTTP 요청에 응답하여 HTML 양식을 렌더링합니다. HTML 양식을 렌더링할 때 Forms 서비스는 사용자 지정 CSS 파일을 참조할 수 있습니다. 사용자 정의 CSS 파일을 만들어 비즈니스 요구 사항을 충족하고 Forms 서비스를 사용하여 HTML 양식을 렌더링할 때 해당 CSS 파일을 참조할 수 있습니다.
 
@@ -37,7 +39,7 @@ FormsIVS 응용 프로그램을 사용하여 샘플 CSS 파일을 검색할 수 
 
 >[!NOTE]
 >
->사용자 지정 CSS 파일을 사용하는 HTML 양식을 렌더링하기 전에 HTML 양식 렌더링에 대한 명확한 이해가 있어야 합니다. (HTML[로 Forms 렌더링 참조)](/help/forms/developing/rendering-forms-html.md)
+>사용자 지정 CSS 파일을 사용하는 HTML 양식을 렌더링하기 전에 HTML 양식 렌더링에 대한 명확한 이해가 있어야 합니다. (HTML](/help/forms/developing/rendering-forms-html.md)로 Forms 렌더링 참조)[
 
 >[!NOTE]
 >
