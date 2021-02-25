@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
 
 
 # Forms {#creating-web-applications-thatrenders-forms}을(를) 렌더링하는 웹 응용 프로그램 만들기
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 ## Forms {#creating-web-applications-that-renders-forms}을(를) 렌더링하는 웹 응용 프로그램 만들기
 
