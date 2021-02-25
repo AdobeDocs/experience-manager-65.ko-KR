@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
 
 
 # 값 {#rendering-forms-by-value}으로 Forms 렌더링
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 일반적으로 Designer에서 만든 양식 디자인은 Forms 서비스를 기준으로 전달됩니다. 양식 디자인은 클 수 있으며, 따라서 값별로 양식 디자인 바이트를 마샬링할 필요가 없도록 참조를 통해 양식을 전달하는 것이 더 효율적입니다. 또한 Forms 서비스는 양식 디자인을 캐시하여 캐시할 때 양식 디자인을 계속 읽을 필요가 없도록 할 수도 있습니다.
 
