@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
 
 # Java API 빠른 시작 {#introducing-java-api-quickstart} 소개
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Adobe AEM Forms API 빠른 시작을 사용하면 AEM Forms 서비스와 상호 작용하는 프로그램을 개발하는 데 소요되는 시간을 단축할 수 있습니다. *빠른*&#x200B;시작은 프로젝트에 복사하여 붙여넣을 수 있고 시작점으로 사용할 수 있는 전체 프로그램입니다. 빠른 시작을 실행하여 사용자 요구에 맞게 어떻게 동작하는지를 확인하고 수정할 수 있습니다.
 
