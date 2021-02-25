@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Dynamic Media 에셋은 빠른 전달을 위해 CDN(Content Delivery Network)에
 
 >[!NOTE]
 >
->고객은 CDN 캐시 무효화의 혜택을 받으려면 Adobe Experience Manager Dynamic Media 번들로 포함된 CDN을 사용해야 합니다.
+>이 기능을 사용하려면 Adobe Experience Manager Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.
 
 >[!IMPORTANT]
 >
