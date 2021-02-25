@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '8244'
+source-wordcount: '8258'
 ht-degree: 0%
 
 ---
 
 
 # PDF 문서 암호화 및 암호 해독 {#encrypting-and-decrypting-pdf-documents}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 **암호화 서비스 정보**
 
@@ -251,7 +253,7 @@ PDF 문서를 암호화할 때 보안 문서와 연결된 권한을 지정할 �
 
 >[!NOTE]
 >
->인증서를 사용하여 PDF 문서를 암호화하기 전에 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 프로그래밍 방식으로 사용하여 인증서를 추가합니다. (Trust Manager API[를 사용하여 자격 증명 가져오기를 참조하십시오.)](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)
+>인증서를 사용하여 PDF 문서를 암호화하기 전에 AEM Forms에 인증서를 추가해야 합니다. 관리 콘솔을 사용하거나 Trust Manager API를 프로그래밍 방식으로 사용하여 인증서를 추가합니다. (Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)를 사용하여 자격 증명 가져오기를 참조하십시오.)[
 
 >[!NOTE]
 >
@@ -565,7 +567,7 @@ PDF 문서에서 인증서 기반 암호화를 제거하려면 다음 단계를 
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API {#remove-certificate-based-encryption-using-the-web-service-api}을(를) 사용하여 인증서 기반 암호화 제거
+### 웹 서비스 API {#remove-certificate-based-encryption-using-the-web-service-api}를 사용하여 인증서 기반 암호화 제거
 
 암호화 API(웹 서비스)를 사용하여 인증서 기반 암호화를 제거합니다.
 
