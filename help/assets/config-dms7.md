@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '6123'
+source-wordcount: '6083'
 ht-degree: 1%
 
 ---
@@ -31,14 +31,15 @@ ht-degree: 1%
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Experience Manager Dynamic Media과 함께 번들로 제공되는 CDN을 사용하지 않는 고객은 다음 기능을 이용할 수 없습니다.
->* [스마트 이미징](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/imaging-faq.html?lang=en#dynamicmedia)
->* [캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en#dynamicmedia)
->* [핫링크 보호](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/hotlink-protection.html?lang=en#dynamicmedia)
->* [컨텐츠의 HTTP/2 전달](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/http2faq.html?lang=en#dynamicmedia)
->* [Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch 통합](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/launch.html?lang=en#dynamicmedia)
+>다음 기능 목록을 사용하려면 Adobe Experience Manager - Dynamic Media에 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이러한 기능에서 지원되지 않습니다.
+>
+>* [스마트 이미징](/help/assets/imaging-faq.md)
+>* [캐시 무효화](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [핫링크 보호](/help/assets/hotlink-protection.md)
+>* [컨텐츠의 HTTP/2 전달](/help/assets/http2.md)
+>* [Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch 통합](/help/assets/launch.md)
 >* CDN 수준에서 URL 리디렉션
 >* Akamai ChinaCDN(중국에서 최적의 전달을 위해)
 
@@ -115,7 +116,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    * **[!UICONTROL Dynamic Media 동기화 모드]**
       * **[!UICONTROL 기본적으로]**  활성화됨 - 제외용으로 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다.  <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL 기본적으로]**  사용 안 함 - Dynamic Media에 동기화하도록 선택한 폴더를 명시적으로 표시할 때까지 해당 구성은 폴더에 적용되지 않습니다.
+      * **[!UICONTROL 기본적으로]**  사용 안 함 - Dynamic Media에 동기화하도록 선택한 폴더를 명시적으로 표시할 때까지 해당 구성은 어떤 폴더에도 적용되지 않습니다.
 Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 탭합니다. **[!UICONTROL 세부 사항]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 3가지 옵션 중에서 선택합니다. 완료되면 **[!UICONTROL 저장을 누릅니다.]** *기억:이 3가지 옵션은 [모든 내용&#x200B;**동기화]를 선택한 경우 사용할 수**없습니다.* Dynamic Media [의 폴더 수준에서 선택적 게시로 작업을 참조하십시오.](/help/assets/selective-publishing.md)
          * **[!UICONTROL 상속됨]**  - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 도구 설명을 통해 표시되는 세부 상태입니다.
          * **[!UICONTROL 하위 폴더에 대해]**  활성화 - Dynamic Media에 동기화할 수 있도록 이 하위 트리에 모든 것을 포함합니다. 폴더 특정 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
