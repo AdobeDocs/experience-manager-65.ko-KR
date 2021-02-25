@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '9143'
+source-wordcount: '9157'
 ht-degree: 0%
 
 ---
 
 
 # AEM Forms 리포지토리 작업 {#working-with-aem-forms-repository}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 **저장소 서비스 정보**
 
@@ -541,7 +543,7 @@ URI를 지정하여 저장소 서비스 메서드를 호출하여 리소스를 �
 
 1. 읽을 리소스의 URI 지정
 
-   검색할 리소스의 URI를 나타내는 문자열 값을 지정합니다. 예를 들어 리소스 이름이 *testFolder*&#x200B;라는 폴더에 있는 &lt;a0/>testResource *이라고 가정하고 `/testFolder/testResource`를 지정합니다.*
+   검색할 리소스의 URI를 나타내는 문자열 값을 지정합니다. 예를 들어 리소스 이름이 *testFolder*&#x200B;라는 폴더에 있는 *testResource*&#x200B;이라고 가정하고 `/testFolder/testResource`를 지정합니다.
 
 1. 리소스 보기
 
