@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
 
 
 # Forms {#rendering-forms} 렌더링
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 **Forms 서비스 정보**
 
@@ -45,10 +47,10 @@ Forms 서비스를 사용하면 일반적으로 Designer에서 만든 양식을 
 Forms 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
 * 인터랙티브한 PDF forms 렌더링 ([대화형 PDF forms 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)을 참조하십시오.)
-* 클라이언트에서 양식을 렌더링합니다. ([ 클라이언트에서 Forms 렌더링 참조)](/help/forms/developing/rendering-forms-client.md)
+* 클라이언트에서 양식을 렌더링합니다. (](/help/forms/developing/rendering-forms-client.md) 클라이언트에서 Forms 렌더링 참조)[
 * 조각을 기반으로 양식 렌더링 자세한 내용은 [조각을 기준으로 Forms 렌더링](/help/forms/developing/rendering-forms-based-fragments.md)을 참조하십시오.
 * 권한이 활성화된 양식을 렌더링할 수 있습니다. ([렌더링 권한 사용 Forms](/help/forms/developing/rendering-rights-enabled-forms.md)을 참조하십시오.)
-* 양식을 HTML로 렌더링합니다. (HTML[로 Forms 렌더링 참조)](/help/forms/developing/rendering-forms-html.md)
+* 양식을 HTML로 렌더링합니다. (HTML](/help/forms/developing/rendering-forms-html.md)로 Forms 렌더링 참조)[
 * 사용자 지정 CSS 파일을 사용하여 HTML Forms 렌더링([사용자 지정 CSS 파일을 사용하여 HTML Forms 렌더링](/help/forms/developing/rendering-html-forms-using-custom.md)).
 * 제출된 양식을 처리할 수 있습니다. ([제출된 Forms 처리](/help/forms/developing/handling-submitted-forms.md)를 참조하십시오.)
 * 제출된 XML 데이터를 사용하여 PDF 문서 만들기. ([제출된 XML 데이터가 있는 PDF 문서 만들기](/help/forms/developing/creating-pdf-documents-submitted-xml.md)를 참조하십시오.)
