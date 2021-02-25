@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1714'
 ht-degree: 0%
 
 ---
 
 
 # Forms 서비스 {#passing-documents-to-the-formsservice}에 문서 전달
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 AEM Forms 서비스는 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)에 렌더링하여 사용자의 정보를 수집합니다. 인터랙티브한 PDF 양식은 일반적으로 XDP 파일로 저장되고 Designer에서 작성된 양식 디자인을 기반으로 합니다. AEM Forms의 경우 양식 디자인이 포함된 `com.adobe.idp.Document` 개체를 Forms 서비스에 전달할 수 있습니다. 그런 다음 Forms 서비스는 `com.adobe.idp.Document` 개체에 있는 양식 디자인을 렌더링합니다.
 
