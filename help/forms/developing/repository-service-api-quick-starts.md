@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
 
 # 저장소 서비스 API 빠른 시작 {#repository-service-api-quick-starts}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 다음 빠른 시작을 AEM Forms 저장소 서비스에 사용할 수 있습니다.
 
