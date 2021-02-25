@@ -10,15 +10,17 @@ geptopics: SG_AEMFORMS/categories/programmatically_disassembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 49584fb4-8c3a-4d73-acd6-0879a67f6093
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
 
 
 # 웹 서비스 API {#disassemble-a-pdf-document-usingthe-web-service-api}를 사용하여 PDF 문서 정리
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 Assembler Service API(웹 서비스)를 사용하여 PDF 문서를 분해합니다.
 
