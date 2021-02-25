@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '19030'
+source-wordcount: '19044'
 ht-degree: 0%
 
 ---
 
 
 # 문서 출력 스트림 만들기 {#creating-document-output-streams}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 **출력 서비스 정보**
 
@@ -107,7 +109,7 @@ PDF 문서를 만들려면 다음 단계를 수행하십시오.
 * adobe-utilities.jar(AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar(AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다.
 
 **출력 클라이언트 개체 만들기**
 
@@ -242,7 +244,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함되�
 
    >[!NOTE]
    >
-   >입력 PDF 문서가 인증되거나 디지털 서명을 받은 경우 `RenderOptionsSpec` 개체의 `setLinearizedPDF` 메서드를 사용하여 선형화된 PDF 옵션을 설정할 수 없습니다. (PDF 문서[에 디지털 서명 참조)](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)**
+   >입력 PDF 문서가 인증되거나 디지털 서명을 받은 경우 `RenderOptionsSpec` 개체의 `setLinearizedPDF` 메서드를 사용하여 선형화된 PDF 옵션을 설정할 수 없습니다. (PDF 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*에 디지털 서명 참조)*[
 
 1. PDF 문서를 생성합니다.
 
@@ -338,7 +340,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함되�
 
    >[!NOTE]
    >
-   >입력 PDF 문서가 인증되거나 디지털 서명을 받은 경우 `RenderOptionsSpec` 개체의 `linearizedPDF` 구성원을 사용하여 선형화된 PDF 옵션을 설정할 수 없습니다. (PDF 문서[에 디지털 서명 참조)](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)**
+   >입력 PDF 문서가 인증되거나 디지털 서명을 받은 경우 `RenderOptionsSpec` 개체의 `linearizedPDF` 구성원을 사용하여 선형화된 PDF 옵션을 설정할 수 없습니다. (PDF 문서&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*에 디지털 서명 참조)*[
 
 1. PDF 문서를 생성합니다.
 
@@ -429,7 +431,7 @@ PDF/A 문서를 만들려면 다음 단계를 수행하십시오.
 * adobe-utilities.jar(AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar(AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다.
 
 **출력 클라이언트 개체 만들기**
 
@@ -749,7 +751,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
 1. 프로젝트 파일 포함
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 이 클라이언트 응용 프로그램은 2개의 AEM Forms 서비스를 호출하므로 2개의 서비스 참조를 만듭니다. 출력 서비스와 연결된 서비스 참조에 다음 WSDL 정의를 사용합니다.`http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 이 클라이언트 응용 프로그램은 2개의 AEM Forms 서비스를 호출하므로 2개의 서비스 참조를 만듭니다. 출력 서비스와 연결된 서비스 참조에 대해 다음 WSDL 정의를 사용합니다.`http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`.
 
    Document Management 서비스와 연결된 서비스 참조에 대해 다음 WSDL 정의를 사용합니다.`http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
@@ -1065,7 +1067,7 @@ Assembler 서비스가 만든 양식 디자인을 사용하여 출력 서비스�
 
 1. 프로젝트 파일 포함
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 출력 서비스와 연결된 서비스 참조에 다음 WSDL 정의를 사용합니다.
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 출력 서비스와 연결된 서비스 참조에 대해 다음 WSDL 정의를 사용합니다.
 
    ```java
     http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1.
@@ -1184,7 +1186,7 @@ Assembler 서비스가 만든 양식 디자인을 사용하여 출력 서비스�
 * adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다. ([AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) 참조)
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다. ([AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) 참조)
 
 **출력 클라이언트 개체 만들기**
 
@@ -1315,7 +1317,7 @@ aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 1. 파일로 인쇄하는 데 필요한 인쇄 런타임 옵션을 설정합니다.
 
    * 생성자를 사용하여 `PrintedOutputOptionsSpec` 객체를 만듭니다.
-   * 파일의 위치와 이름을 나타내는 문자열 값을 `PrintedOutputOptionsSpec` 객체의 `fileURI` 데이터 멤버에 할당하여 파일을 지정합니다. 예를 들어 출력 서비스를 C:\Adobe에 있는 *MortgageForm.ps*&#x200B;라는 PostScript 파일로 인쇄하려면 C:\\Adobe\MortgageForm.ps을 지정합니다.
+   * 파일의 위치와 이름을 나타내는 문자열 값을 `PrintedOutputOptionsSpec` 객체의 `fileURI` 데이터 멤버에 할당하여 파일을 지정합니다. 예를 들어 출력 서비스를 C:\Adobe에 있는 *MortgageForm.ps* PostScript 파일로 인쇄하려면 C:\\Adobe\MortgageForm.ps을 지정합니다.
    * `PrintedOutputOptionsSpec` 개체의 `copies` 데이터 멤버에 복사본 수를 나타내는 정수 값을 할당하여 인쇄할 복사본 수를 지정합니다.
 
 1. 인쇄 스트림을 파일로 인쇄합니다.
@@ -1389,7 +1391,7 @@ aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배
 * adobe-utilities.jar(AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar(AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다.
 
 **출력 클라이언트 개체 만들기**
 
@@ -1730,7 +1732,7 @@ XML 데이터 소스를 기반으로 여러 PDF 파일을 만들려면 다음 �
 * adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다.
 
 **출력 클라이언트 개체 만들기**
 
@@ -1973,7 +1975,7 @@ XML 데이터 소스를 기반으로 여러 파일을 성공적으로 만들려�
 * adobe-utilities.jar(AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar(AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar를 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 대체해야 합니다.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar를 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 교체해야 합니다.
 
 **출력 클라이언트 개체 만들기**
 
@@ -2232,7 +2234,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 * adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에만 해당하는 JAR 파일로 교체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
 
 **출력 클라이언트 개체 만들기**
 
