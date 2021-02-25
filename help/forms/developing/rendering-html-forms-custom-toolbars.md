@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2384'
 ht-degree: 0%
 
 ---
 
 
 # CustomToolbars {#rendering-html-forms-with-customtoolbars}로 HTML Forms 렌더링
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 ## 사용자 정의 도구 모음 {#rendering-html-forms-with-custom-toolbars}을(를) 사용하여 HTML Forms 렌더링
 
@@ -42,7 +44,7 @@ fscmenu.xml 파일 외에 다음 파일도 가져와야 합니다.
 
 fscJS는 각 노드와 연관된 Java 스크립트입니다. `div#fscmenu` 노드 및 `ul#fscmenuItem` 노드에 대해 하나를 제공해야 합니다(선택 사항). JS 파일은 핵심 도구 모음 기능을 구현하며 기본 파일은 작동합니다.
 
-fscCSS는 특정 노드와 연관된 스타일 시트입니다. CSS 파일의 스타일은 도구 모음 모양을 지정합니다. *fscVCSS* 는 렌더링된 HTML 양식의 왼쪽에 표시되는 세로 도구 모음의 스타일 시트입니다. *fscIECSS는* Internet Explorer에서 렌더링되는 HTML 양식에 사용되는 스타일 시트입니다.
+fscCSS는 특정 노드와 연관된 스타일 시트입니다. CSS 파일의 스타일은 도구 모음 모양을 지정합니다. *fscVCSS* 는 렌더링된 HTML 양식의 왼쪽에 표시되는 세로 도구 모음의 스타일 시트입니다. *fsc* IECSS는 Internet Explorer에서 렌더링되는 HTML 양식에 사용되는 스타일 시트입니다.
 
 위의 모든 파일이 fscmenu.xml 파일에서 참조되는지 확인합니다. 즉, fscmenu.xml 파일에서 이러한 파일을 가리킬 URI 위치를 지정하여 Forms 서비스가 해당 파일을 찾을 수 있도록 합니다. 기본적으로 이러한 파일은 내부 키워드 `FSWebRoot` 또는 `ApplicationWebRoot`로 시작하는 URI 위치에서 사용할 수 있습니다.
 
@@ -153,7 +155,7 @@ adobe-forms-&lt;appserver>.ear 파일을 열어 JS 및 CSS 파일을 가져올 �
 
 >[!NOTE]
 >
->사용자 정의 도구 모음을 사용하는 HTML 양식을 렌더링하기 전에 HTML 양식이 렌더링되는 방법을 알아야 합니다. (HTML[로 Forms 렌더링 참조)](/help/forms/developing/rendering-forms-html.md)
+>사용자 정의 도구 모음을 사용하는 HTML 양식을 렌더링하기 전에 HTML 양식이 렌더링되는 방법을 알아야 합니다. (HTML](/help/forms/developing/rendering-forms-html.md)로 Forms 렌더링 참조)[
 
 Forms 서비스에 대한 자세한 내용은 [AEM Forms용 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
 
