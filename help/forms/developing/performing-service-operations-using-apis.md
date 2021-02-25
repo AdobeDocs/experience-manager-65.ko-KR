@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fa1426f-f453-45c5-89b9-67038f56c70e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
 
 
 # API를 사용하여 서비스 작업 수행 {#performing-service-operations-using-apis}
+
+**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
 
 AEM Forms API를 사용하여 클라이언트 애플리케이션을 개발하기 전에 먼저 서비스를 호출하는 여러 방법을 설명하는 AEM Forms 호출을 읽어 보는 것이 좋습니다. ([서비스 컨테이너](/help/forms/developing/service-container.md#service-container)를 참조하십시오.)
 
