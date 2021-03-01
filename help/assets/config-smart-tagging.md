@@ -3,17 +3,17 @@ title: 스마트 콘텐츠 서비스를 사용하여 자산 태그 지정 구성
 description: 스마트 콘텐츠 서비스를 사용하여  [!DNL Adobe Experience Manager]에서 스마트 태그 지정 및 향상된 스마트 태그 지정 기능을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 17%
+source-wordcount: '2172'
+ht-degree: 15%
 
 ---
 
 
 # 스마트 태그 지정 {#configure-asset-tagging-using-the-smart-content-service}에 대해 [!DNL Assets] 준비
 
-스마트 콘텐츠 서비스를 사용하여 에셋에 태그를 지정하기 전에 [!DNL Experience ManageR Assets]을(를) Adobe 개발자 콘솔과 통합하여 [!DNL Adobe Sensei]의 스마트 서비스를 활용합니다. 구성된 후에는 이미지와 태그를 사용하여 서비스를 교육합니다.
+스마트 콘텐츠 서비스를 사용하여 에셋에 태그를 지정하기 전에 [!DNL Experience Manager Assets]을(를) Adobe 개발자 콘솔과 통합하여 [!DNL Adobe Sensei]의 스마트 서비스를 활용합니다. 구성된 후에는 이미지와 태그를 사용하여 서비스를 교육합니다.
 
 스마트 콘텐츠 서비스를 사용하기 전에 다음을 확인하십시오.
 
@@ -27,11 +27,11 @@ ht-degree: 17%
 
 ## Adobe 개발자 콘솔과 통합 {#integrate-adobe-io}
 
-Adobe 개발자 콘솔과 통합하면 스마트 콘텐츠 서비스로 요청을 전달하기 전에 [!DNL Experience Manager] 서버가 Adobe 개발자 콘솔 게이트웨이로 서비스 자격 증명을 인증합니다. 통합하려면 조직에 대한 관리자 권한이 있는 Adobe ID 계정 및 조직에서 사용하고 사용할 수 있는 스마트 콘텐츠 서비스 라이선스가 있는 계정이 필요합니다.
+Adobe 개발자 콘솔과 통합하면 스마트 콘텐츠 서비스로 요청을 전달하기 전에 [!DNL Experience Manager] 서버가 Adobe 개발자 콘솔 게이트웨이로 서비스 자격 증명을 인증합니다. 통합하려면 조직에 대한 관리자 권한이 있는 Adobe ID 계정과 조직에서 사용할 수 있는 스마트 콘텐츠 서비스 라이선스가 있는 계정이 필요합니다.
 
 스마트 콘텐츠 서비스를 구성하려면 다음 최상위 단계를 따르십시오.
 
-1. [공개 키를 ](#obtain-public-certificate) 생성하려면 스마트 콘텐츠 서비스 구성 [!DNL Experience Manager] 을 만드십시오. OAuth 통합을 위한 [공개 인증서를 받습니다](#obtain-public-certificate).
+1. 공개 키를 생성하려면 [스마트 콘텐츠 서비스](#obtain-public-certificate) 구성을 [!DNL Experience Manager]에 만듭니다. OAuth 통합을 위한 [공개 인증서를 받습니다](#obtain-public-certificate).
 
 1. [Adobe 개발자 콘솔에서 통합을 만들고](#create-adobe-i-o-integration) 생성된 공개 키를 업로드합니다.
 
@@ -39,9 +39,9 @@ Adobe 개발자 콘솔과 통합하면 스마트 콘텐츠 서비스로 요청�
 
 1. [구성을 테스트합니다](#validate-the-configuration).
 
-1. 원할 경우, 자산 업로드[에 자동 태그 지정을 활성화합니다.](#enable-smart-tagging-in-the-update-asset-workflow-optional)
+1. 원할 경우, 자산 업로드](#enable-smart-tagging-in-the-update-asset-workflow-optional)에 자동 태그 지정을 활성화합니다.[
 
-### 공용 인증서 {#obtain-public-certificate}을(를) 얻으려면 스마트 콘텐츠 서비스 구성을 만듭니다.
+### 스마트 콘텐츠 서비스 구성 {#obtain-public-certificate}을(를) 만들어 공용 인증서를 얻습니다.
 
 공개 인증서를 사용하면 Adobe 개발자 콘솔에서 프로필을 인증할 수 있습니다.
 
@@ -73,11 +73,11 @@ Adobe 개발자 콘솔과 통합하면 스마트 콘텐츠 서비스로 요청�
    ![스마트 태그 지정 서비스에 대해 만들어진 설정의 표현](assets/smart-tags-download-public-cert.png)
 
 
-   *그림:스마트 태그 지정 서비스 설정*
+   *그림:스마트 태그 지정 서비스에 대한 설정입니다.*
 
 #### 인증서가 {#certrenew} 만료될 때 다시 구성
 
-인증서가 만료되면 더 이상 신뢰되지 않습니다. 만료된 인증서는 갱신할 수 없습니다. 새 인증서를 추가하려면 다음 단계를 따르십시오.
+인증서가 만료되면 더 이상 신뢰되지 않습니다. 만료된 인증서는 갱신할 수 없습니다. 인증서를 추가하려면 다음 단계를 수행합니다.
 
 1. 관리자로 [!DNL Experience Manager] 배포에 로그인합니다. **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**&#x200B;를 클릭합니다.
 
@@ -85,10 +85,10 @@ Adobe 개발자 콘솔과 통합하면 스마트 콘텐츠 서비스로 요청�
 
 1. 만료된 인증서로 기존의 **[!UICONTROL 유사 검색]** 키 저장소를 삭제합니다. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
 
-   ![새 보안 인증서를 추가하려면 Keystore의 기존 유사검색 항목을 삭제합니다.](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![보안 인증서를 추가하려면 Keystore에서 기존 유사성 검색 항목을 삭제합니다.](assets/smarttags_delete_similaritysearch_keystore.png)
 
 
-   *그림: 새 보안 인증서를 추가하려면 키 저장소에서 기존 `similaritysearch` 항목을 삭제합니다.*
+   *그림:보안 인증서를 추가하려면 Keystore `similaritysearch` 의 기존 항목을 삭제합니다.*
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL 기존 Cloud Services]**&#x200B;으로 이동합니다. **[!UICONTROL 자산 스마트 태그]** > **[!UICONTROL 구성 표시]** > **[!UICONTROL 사용 가능한 구성]**&#x200B;을 클릭합니다. 필요한 구성을 클릭합니다.
 
@@ -98,7 +98,7 @@ Adobe 개발자 콘솔과 통합하면 스마트 콘텐츠 서비스로 요청�
 
 ### Adobe 개발자 콘솔 통합 만들기 {#create-adobe-i-o-integration}
 
-스마트 콘텐츠 서비스 API를 사용하려면 Adobe 개발자 콘솔에서 통합을 만들어 [!UICONTROL API 키](Adobe 개발자 콘솔 통합의 [!UICONTROL CLIENT ID] 필드에서 생성), [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION [!UICONTROL 자산 스마트 태그 지정 서비스 설정]에 대한 ID] 및 [!UICONTROL CLIENT SECRET]입니다. [!DNL Experience Manager]에 있는 클라우드 구성의 ID&lt;a11/>.
+스마트 콘텐츠 서비스 API를 사용하려면 Adobe 개발자 콘솔에서 통합을 만들어 [!UICONTROL API 키](Adobe 개발자 콘솔 통합의 [!UICONTROL CLIENT ID] 필드에서 생성), [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION [!UICONTROL 자산 스마트 태그 지정 서비스 설정]에 대한 ID] 및 [!UICONTROL CLIENT SECRET]입니다. [!DNL Experience Manager]에 있는 클라우드 구성의 ID.
 
 1. 브라우저에서 [https://console.adobe.io](https://console.adobe.io/)에 액세스합니다. 적절한 계정을 선택하고 관련 조직 역할이 시스템 관리자인지 확인합니다.
 
@@ -108,7 +108,7 @@ Adobe 개발자 콘솔과 통합하면 스마트 콘텐츠 서비스로 요청�
 
 1. **[!UICONTROL 공개 키 업로드]**&#x200B;를 선택합니다. [!DNL Experience Manager]에서 다운로드한 인증서 파일을 제공합니다. [!UICONTROL 공개 키가 업로드되었습니다] 메시지가 표시됩니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-   [!UICONTROL 새 서비스 계정(JWT) 자격 증명 만들기] 페이지에는 방금 구성된 서비스 계정에 대한 공개 키가 표시됩니다.
+   [!UICONTROL 새 서비스 계정(JWT) 자격 증명 ] 페이지를 생성하면 서비스 계정의 공개 키가 표시됩니다.
 
 1. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
@@ -187,7 +187,7 @@ Adobe 개발자 콘솔과 통합하면 스마트 콘텐츠 서비스로 요청�
    ![스마트 태그 단계를 추가하고 스마트 태그 플래그 무시를 선택하도록 DAM 자산 업데이트 작업 과정 구성](assets/smart-tag-step-properties-workflow3.png)
 
 
-   *그림:스마트 태그 단계를 추가하고 스마트 태그 플래그 무시를 선택하도록 DAM 자산 업데이트 작업 과정 구성*
+   *그림:스마트 태그 단계를 추가하고 스마트 태그 플래그 무시를 선택하여 DAM 자산 업데이트 작업 과정을 구성합니다.*
 
 1. **[!UICONTROL 확인]**&#x200B;을 클릭하여 프로세스 단계를 닫은 다음 워크플로우를 저장합니다.
 
@@ -205,17 +205,17 @@ Smart Content Service를 정기적으로 또는 필요에 따라 트레이닝할
 
 ### 교육 지침 {#guidelines-for-training}
 
-최상의 결과를 얻으려면 교육 세트의 이미지가 다음 지침을 따라야 합니다.
+최상의 결과를 얻으려면 교육 세트의 이미지가 다음 지침을 따릅니다.
 
 **수량 및 크기:** 태그당 최소 30개의 이미지입니다. 긴 면에서 최소 500픽셀입니다.
 
-**일관성**:태그의 이미지는 시각적으로 비슷해야 합니다.
+**일관성**:특정 태그에 사용되는 이미지는 시각적으로 유사합니다.
 
 예를 들어 이러한 모든 이미지는 시각적으로 유사하지 않기 때문에 `my-party`(교육용)으로 태그를 지정하는 것은 좋지 않습니다.
 
 ![트레이닝 지침을 예시할 수 있는 실례가 되는 이미지](/help/assets/assets/do-not-localize/coherence.png)
 
-**적용 범위**:훈련 중에는 이미지가 충분히 다양해야 한다. Experience Manager이 올바른 것에 초점을 맞추도록 배우도록 몇 가지 하지만 상당히 다양한 예를 제공하는 것이 그 생각입니다. 시각적으로 다른 이미지에 동일한 태그를 적용하는 경우 각 종류의 최소 5개의 예를 포함합니다.
+**적용 범위**:트레이닝에서 이미지에 다양한 요소를 사용할 수 있습니다. Experience Manager이 올바른 것에 초점을 맞추도록 배우도록 몇 가지 하지만 상당히 다양한 예를 제공하는 것이 그 생각입니다. 시각적으로 다른 이미지에 동일한 태그를 적용하는 경우 각 종류의 최소 5개의 예를 포함합니다.
 
 예를 들어 태그 *model-down-pose*&#x200B;에 대해, 태그 지정 중에 서비스에서 유사한 이미지를 보다 정확하게 식별할 수 있도록 아래 강조 표시된 이미지와 유사한 더 많은 교육 이미지를 포함시킵니다.
 
@@ -237,7 +237,7 @@ Smart Content Service를 정기적으로 또는 필요에 따라 트레이닝할
 
 ### 정기적인 교육 {#periodic-training}
 
-Smart Content Service를 사용하여 폴더 내의 자산 및 관련 태그를 정기적으로 교육할 수 있습니다. 자산 폴더의 [!UICONTROL 속성] 페이지를 열고 **[!UICONTROL 세부 사항]** 탭 아래에서 **[!UICONTROL 스마트 태그 사용]**&#x200B;을 선택하고 변경 내용을 저장합니다.
+Smart Content Service를 사용하여 폴더 내의 자산 및 관련 태그를 정기적으로 교육할 수 있습니다. 자산 폴더의 [!UICONTROL 속성] 페이지를 열고 **[!UICONTROL 세부 사항]** 탭 아래에서 **[!UICONTROL 스마트 태그 활성화]**&#x200B;를 선택하고 변경 내용을 저장합니다.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
