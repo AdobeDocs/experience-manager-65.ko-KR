@@ -10,10 +10,10 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f3b5b22c1d5573492867aef60457413ad5cf419f
+source-git-commit: 103468b8e6e5bdf870156f85b7f547f190044561
 workflow-type: tm+mt
-source-wordcount: '3145'
-ht-degree: 3%
+source-wordcount: '3169'
+ht-degree: 2%
 
 ---
 
@@ -152,7 +152,7 @@ SchemaXML 및 JSON 스키마를 사용하는 것은 조직에서 백엔드 시�
   </tr>
   <tr>
    <td>파일 첨부</td>
-   <td><p>사용자가 지원 문서를 찾아 양식에 첨부할 수 있는 단추를 추가합니다. 여러 파일을 첨부 파일 구성 요소에 첨부할 수 있습니다.</p> <p><strong> 메모: </strong><ul> <li> 구성 요소는 \ / : 문자를 포함하는 파일 이름의 파일 이름 시작 문자(.)로 시작하는 첨부 파일을 지원하지 않습니다.* ? " &lt; &gt; | ;% $ 또는 nul, prn, con, lpt 또는 com과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름 포함 </li> <li> Apple Safari 브라우저에서 연 첨부 파일 구성 요소에 여러 파일을 첨부하려면 파일을 하나씩 선택하고 첨부합니다. 여러 파일을 한 번에 선택하여 첨부할 수 없습니다.</li> <li>파일 첨부 구성 요소는 Adobe Sign에 대해 활성화된 적응형 양식의 사전 정의된 파일 형식 집합을 지원합니다. 자세한 내용은 <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">지원되는 파일 형식</a>을 참조하십시오. </li> </ul></p> </td>
+   <td><p>사용자가 지원 문서를 찾아 양식에 첨부할 수 있는 단추를 추가합니다. 여러 파일을 첨부 파일 구성 요소에 첨부할 수 있습니다. 구성 요소의 속성 브라우저에 있는 첨부 파일에 **[!UICONTROL 최대 파일 크기]** 및 **[!UICONTROL 지원 파일 유형]**를 지정할 수도 있습니다. </p> <p><strong> 메모: </strong><ul> <li> 구성 요소는 \ / : 문자를 포함하는 파일 이름의 파일 이름 시작 문자(.)로 시작하는 첨부 파일을 지원하지 않습니다.* ? " &lt; &gt; | ;% $ 또는 nul, prn, con, lpt 또는 com과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름 포함 </li> <li> Apple Safari 브라우저에서 연 첨부 파일 구성 요소에 여러 파일을 첨부하려면 파일을 하나씩 선택하고 첨부합니다. 여러 파일을 한 번에 선택하여 첨부할 수 없습니다.</li> <li>파일 첨부 구성 요소는 Adobe Sign에 대해 활성화된 적응형 양식의 사전 정의된 파일 형식 집합을 지원합니다. 자세한 내용은 <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">지원되는 파일 형식</a>을 참조하십시오. </li></ul></p> </td>
   </tr>
   <tr>
    <td>첨부 파일 목록</td>
