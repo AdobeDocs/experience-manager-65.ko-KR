@@ -4,9 +4,9 @@ description: 상위 자산에서 파생되고 상위 자산에 연결된 여러 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 7eb569c86c45daa8b175f924b211693a5d5dde58
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3373'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 * 여러 사본을 동기화하여 원본 기본 복사본을 한 번 업데이트하면 변경 내용을 하위 복사본에 적용할 수 있습니다.
 * 상위 및 하위 자산 간의 연결을 일시적으로 또는 영구적으로 일시 중단하여 로컬 변경 작업을 수행합니다.
 
-## 전제 조건 {#configprereq}
+## 전제 조건 {#prereq}
 
-[!DNL Assets]에 MSM을 사용하려면 서비스 팩 1 이상을 설치하십시오. 자세한 내용은 [릴리스 노트](/help/release-notes/sp-release-notes.md)를 참조하십시오.
+[!DNL Assets]에 MSM을 사용하려면 [!DNL Experience Manager] 6.5 서비스 팩 1 이상을 설치하십시오. 자세한 내용은 최신 서비스 팩](/help/release-notes/sp-release-notes.md)의 릴리스 정보를 참조하십시오.[
 
 ## 이점 및 개념 {#concepts} 이해
 
@@ -106,7 +106,7 @@ MSM은 소스 에셋과 Live Copy 간에 라이브 관계를 유지하여 다음
 
 >[!TIP]
 >
->몇 개의 개별 Live Copy의 상태를 확인하려면 속성 페이지에 있는 첫 번째 방법을 사용합니다. 많은 Live Copy의 상태를 확인하려면 두 번째 방법(즉, **[!UICONTROL 관계 상태]** 페이지)을 참조하십시오.
+>몇 개의 개별 Live Copy의 상태를 확인하려면 첫 번째 방법을 사용하여 [!UICONTROL 속성] 페이지를 확인합니다. 많은 Live Copy의 상태를 확인하려면 두 번째 방법을 사용하여 **[!UICONTROL 관계 상태]** 페이지를 확인합니다.
 
 ### Live Copy {#statuslcasset} 정보 및 상태
 
@@ -123,7 +123,7 @@ Live Copy 자산 또는 폴더의 정보 및 상태를 확인하려면 다음 �
 
 1. Live Copy에 대한 옵션을 선택하여 상위에서 롤아웃 구성을 상속하거나 구성을 변경할 수 있습니다.
 
-### 폴더 {#statuslcfolder} 의 모든 Live Copy 정보 및 상태
+### 폴더 {#status-lc-folder} 의 모든 Live Copy 정보 및 상태
 
 [!DNL Experience Manager] 에서는 소스 폴더의 모든 Live Copy의 동상을 확인할 수 있는 콘솔을 제공합니다. 이 콘솔에는 모든 하위 자산의 상태가 표시됩니다.
 
@@ -142,7 +142,7 @@ Live Copy 자산 또는 폴더의 정보 및 상태를 확인하려면 다음 �
 
 >[!TIP]
 >
->너무 많이 찾아보지 않고도 다른 폴더의 Live Copy 상태를 빠르게 볼 수 있습니다. **[!UICONTROL Live Copy 개요]** 인터페이스의 위쪽 중간에 있는 팝업 목록의 폴더를 변경하기만 하면 됩니다.
+>너무 많이 찾아보지 않고도 다른 폴더의 Live Copy 상태를 빠르게 볼 수 있습니다. **[!UICONTROL Live Copy 개요]** 인터페이스의 위쪽 중간 부분에서 폴더를 변경합니다.
 
 ### 소스 {#refrailsource}에 대한 참조 레일의 빠른 작업
 
@@ -166,7 +166,7 @@ Live Copy 자산 또는 폴더의 정보 및 상태를 확인하려면 다음 �
 
 *그림:관계를 일시 중단하거나 특정 Live Copy의 롤아웃 구성을 변경합니다.*
 
-### Live Copy {#refraillc}에 대한 참조 레일의 빠른 작업
+### Live Copy {#ref-rail-lc}에 대한 참조 레일의 빠른 작업
 
 Live Copy 자산 또는 폴더의 경우 다음 정보를 보고 참조 레일에서 바로 다음 작업을 수행할 수 있습니다.
 
@@ -200,27 +200,27 @@ Live Copy 에셋 또는 폴더를 선택하고 왼쪽 레일을 열고 **[!UICON
 >
 >소스 자산에서 수정한 사항은 직접 관련된 Live Copy에만 롤아웃됩니다. Live Copy가 다른 Live Copy에서 파생된 경우, 수정 사항은 파생된 Live Copy로 롤아웃되지 않습니다.
 
-또는 특정 Live Copy를 선택한 후 참조 레일에서 롤아웃 작업을 시작할 수 있습니다. 자세한 내용은 Live Copy[에 대한 참조 레일의 빠른 작업을 참조하십시오. ](#refraillc) 이 롤아웃 방식에서는 선택한 Live Copy 및 선택적으로 해당 하위 Live Copy만 업데이트됩니다.
+또는 특정 Live Copy를 선택한 후 참조 레일에서 롤아웃 작업을 시작할 수 있습니다. 자세한 내용은 Live Copy](#ref-rail-lc)에 대한 참조 레일의 빠른 작업을 참조하십시오. [ 이 롤아웃 방식에서는 선택한 Live Copy 및 선택적으로 해당 하위 Live Copy만 업데이트됩니다.
 
 ![소스의 수정 내용을 선택한 Live Copy에 롤아웃합니다.](assets/livecopy_rollout_dialog.png)
 
 *그림:소스의 수정 내용을 선택한 Live Copy에 롤아웃합니다.*
 
-### 동기화 작업 {#aboutsync} 정보
+### 동기화 작업 {#about-sync} 정보
 
 동기화 작업은 소스 수정 내용을 선택한 Live Copy에만 가져옵니다. 동기화 작업은 상속을 취소한 후 수행한 로컬 수정 내용을 존중하고 유지합니다. 로컬 수정 내용을 덮어쓰지 않고 취소된 상속이 다시 설정되지 않습니다. 3가지 방법으로 동기화 작업을 시작할 수 있습니다.
 
 | [!DNL Experience Manager] 인터페이스에서 위치 | 사용 시기 및 이유 | 사용 방법 |
 |---|---|---|
-|  참조레일 | 소스를 이미 선택한 경우 신속하게 동기화할 수 있습니다. | 소스[에 대한 참조 레일의 빠른 작업을 참조하십시오.](#refrailsource) |
-| [!UICONTROL 속성] 페이지의 도구 모음 | Live Copy 속성이 이미 열려 있으면 동기화를 시작합니다. | [Live Copy 동기화](#synclc)를 참조하십시오. |
-| [!UICONTROL Live Copy ] 개요 콘솔 | 소스 폴더를 선택하거나 [!UICONTROL Live Copy 개요] 콘솔이 이미 열려 있을 때 여러 자산을 신속하게 동기화할 수 있습니다(반드시 모든 것이 아닙니다). 한 번에 하나의 자산에 대해 동기화 작업이 시작되지만 한 번에 여러 자산에 대해 빠르게 동기화할 수 있습니다. | Live Copy 폴더[에 있는 많은 자산에 대한 작업을 참조하십시오.](#bulkactions) |
+|  참조레일 | 소스를 이미 선택한 경우 신속하게 동기화할 수 있습니다. | 소스](#refrailsource)에 대한 참조 레일의 빠른 작업을 참조하십시오.[ |
+| [!UICONTROL 속성] 페이지의 도구 모음 | Live Copy 속성이 이미 열려 있으면 동기화를 시작합니다. | [Live Copy 동기화](#sync-lc)를 참조하십시오. |
+| [!UICONTROL Live Copy ] 개요 콘솔 | 소스 폴더를 선택하거나 [!UICONTROL Live Copy 개요] 콘솔이 이미 열려 있을 때 여러 자산을 신속하게 동기화할 수 있습니다(반드시 모든 것이 아닙니다). 한 번에 하나의 자산에 대해 동기화 작업이 시작되지만 한 번에 여러 자산에 대해 빠르게 동기화할 수 있습니다. | Live Copy 폴더](#bulk-actions)에 있는 많은 자산에 대한 작업을 참조하십시오.[ |
 
-### Live Copy 동기화 {#synclc}
+### Live Copy 동기화 {#sync-lc}
 
 동기화 작업을 시작하려면 Live Copy의 **[!UICONTROL 속성]** 페이지를 열고 **[!UICONTROL Live Copy]**&#x200B;를 클릭한 다음 도구 모음에서 원하는 작업을 클릭합니다.
 
-동기화 작업과 관련된 상태 및 정보를 보려면 [Live Copy](#statuslcasset) 및 [폴더](#statuslcfolder)의 모든 Live Copy의 정보 및 상태를 참조하십시오.
+동기화 작업과 관련된 상태 및 정보를 보려면 [Live Copy](#statuslcasset) 및 [폴더](#status-lc-folder)의 모든 Live Copy의 정보 및 상태를 참조하십시오.
 
 ![동기화 작업은 변경 내용을 소스에 가져옵니다.](assets/livecopy_sync.png)
 
@@ -230,15 +230,15 @@ Live Copy 에셋 또는 폴더를 선택하고 왼쪽 레일을 열고 **[!UICON
 >
 >관계가 일시 중단된 경우 동기화 작업은 도구 모음에서 사용할 수 없습니다. 동기화 작업을 참조 레일에서 사용할 수 있지만, 수정 내용은 성공적인 롤아웃 시에도 전파되지 않습니다.
 
-## 관계 일시 중단 및 다시 시작 {#suspendresume}
+## 관계 일시 중단 및 다시 시작 {#suspend-resume}
 
 Live Copy가 소스 에셋 또는 폴더에 대한 수정 내용을 수신하지 못하도록 관계를 일시적으로 중단할 수 있습니다. 또한 Live Copy에서 소스에서 수정 내용을 받기 시작하기 위해 관계를 다시 시작할 수 있습니다.
 
 일시 중단하거나 다시 시작하려면 Live Copy의 **[!UICONTROL 속성]** 페이지를 열고 **[!UICONTROL Live Copy]**&#x200B;를 클릭한 다음 도구 모음에서 원하는 작업을 클릭합니다.
 
-또는 **[!UICONTROL Live Copy 개요]** 콘솔에서 Live Copy 폴더에 있는 여러 자산의 관계를 신속하게 일시 중단하거나 다시 시작할 수 있습니다. 자세한 내용은 [Live copy 폴더](#bulkactions)의 많은 자산에 대한 작업 수행을 참조하십시오.
+또는 **[!UICONTROL Live Copy 개요]** 콘솔에서 Live Copy 폴더에 있는 여러 자산의 관계를 신속하게 일시 중단하거나 다시 시작할 수 있습니다. 자세한 내용은 [Live copy 폴더](#bulk-actions)의 많은 자산에 대한 작업 수행을 참조하십시오.
 
-## Live Copy {#localmods} 로컬 수정
+## Live Copy {#local-mods} 로컬 수정
 
 Live Copy는 소스 생성 시 원본 소스의 복제본입니다. Live Copy의 메타데이터 값은 소스에서 상속됩니다. 메타데이터 필드는 소스 자산의 각 필드에 따라 상속을 개별적으로 유지합니다.
 
@@ -266,9 +266,9 @@ Live Copy는 소스 생성 시 원본 소스의 복제본입니다. Live Copy의
    >
    >대화 상자에서 **[!UICONTROL 분리]**&#x200B;를 클릭하면 해당 관계가 즉시 제거됩니다. 속성 페이지에서 **[!UICONTROL 취소]**&#x200B;를 클릭하면 실행 취소할 수 없습니다.
 
-또는 **[!UICONTROL Live Copy 개요]** 콘솔에서 Live Copy 폴더에 있는 여러 자산을 빠르게 분리할 수 있습니다. 자세한 내용은 [Live copy 폴더](#bulkactions)의 많은 자산에 대한 작업 수행을 참조하십시오.
+또는 **[!UICONTROL Live Copy 개요]** 콘솔에서 Live Copy 폴더에 있는 여러 자산을 빠르게 분리할 수 있습니다. 자세한 내용은 [Live copy 폴더](#bulk-actions)의 많은 자산에 대한 작업 수행을 참조하십시오.
 
-## Live Copy 폴더 {#bulkactions}에 있는 많은 자산에 대해 작업 수행
+## Live Copy 폴더 {#bulk-actions}의 일괄 작업
 
 하나의 Live Copy 폴더에 여러 개의 자산이 있는 경우 각 자산에 대해 작업을 시작하는 것은 지루할 수 있습니다. [!UICONTROL Live Copy 콘솔]에서 많은 자산에 대한 기본 작업을 빠르게 시작할 수 있습니다. 위의 메서드는 개별 자산에 대해 계속 작동합니다.
 
@@ -280,13 +280,13 @@ Live Copy는 소스 생성 시 원본 소스의 복제본입니다. Live Copy의
 
    *그림:Live Copy Overviewconsole에서 Live Copy 폴더의 많은  [!UICONTROL 에셋을 손쉽게 업데이트할 ] 수 있습니다.*
 
-## [!DNL Assets] {#extendapi}에 대해 MSM 확장
+## [!DNL Assets] {#extend-api}에 대해 MSM 확장
 
 [!DNL Experience Manager] MSM Java API를 사용하여 기능을 확장할 수 있습니다. [!DNL Assets]의 경우, 확장은 [!DNL Sites]에 대해 MSM에서 작동하는 것과 동일하게 작동합니다. 자세한 내용은 [MSM](/help/sites-developing/extending-msm.md) 확장 및 특정 작업에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [API 개요](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [새 동기화 작업 만들기](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [새 롤아웃 구성 만들기](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
+* [동기화 작업 만들기](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
+* [롤아웃 구성 만들기](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
 * [간단한 LiveActionFactory 클래스 만들기 및 사용](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
 
 >[!NOTE]
@@ -296,7 +296,7 @@ Live Copy는 소스 생성 시 원본 소스의 복제본입니다. Live Copy의
 >* 페이지 속성(터치가 활성화된 UI)에서 MSM 잠금 구성은 [!DNL Assets]에 대한 MSM에서 지원되지 않습니다.
 
 
-## 자산 관리 작업이 Live Copy {#manageassets}에 미치는 영향
+## 자산 관리 작업이 Live Copy {#manage-assets}에 미치는 영향
 
 Live Copy와 소스는 디지털 자산으로서 어느 정도 관리할 수 있는 자산 또는 폴더입니다. [!DNL Experience Manager]의 일부 에셋 관리 작업은 Live Copy에 특정 영향을 줍니다.
 
@@ -305,7 +305,7 @@ Live Copy와 소스는 디지털 자산으로서 어느 정도 관리할 수 있
 * Live Copy 자산에 대해 편집 작업이 작동하지 않습니다. Live Copy의 소스가 Live Copy 자체인 경우 편집 작업은 해당 사본에서 작동하지 않습니다.
 * Live Copy 자산에 대해 체크아웃 작업을 사용할 수 없습니다.
 * 소스 폴더의 경우 검토 작업을 만드는 옵션을 사용할 수 있습니다.
-* 목록 보기 및 열 보기에서 자산 목록을 볼 때 Live Copy 자산 또는 폴더에 그에 대한 &#39;live copy&#39;가 표시됩니다. 이렇게 하면 폴더에 있는 Live Copy를 쉽게 식별할 수 있습니다.
+* 목록 보기 및 열 보기에서 자산 목록을 볼 때 Live Copy 자산 또는 폴더에 그에 대한 &#39;live copy&#39;가 표시됩니다. 폴더에 있는 Live Copy를 쉽게 식별할 수 있습니다.
 
 ## [!DNL Assets] 및 [!DNL Sites] {#comparison}에 대한 MSM 비교
 
@@ -319,7 +319,7 @@ Live Copy와 소스는 디지털 자산으로서 어느 정도 관리할 수 있
 * 페이지 속성에서 MSM 잠금 구성(터치가 활성화된 UI)은 [!DNL Assets]에 대한 MSM에서 지원되지 않습니다.
 * [!DNL Assets]에 대한 MSM의 경우 **[!UICONTROL 표준 롤아웃 구성]**&#x200B;만 사용하십시오. 다른 롤아웃 구성은 [!DNL Assets]에 대해 MSM에 사용할 수 없습니다.
 
-## 우수 사례 {#bestpractices}
+## 우수 사례 {#best-practices}
 
 MSM에 대한 일부 우수 사례는 다음과 같습니다.
 
@@ -330,3 +330,5 @@ MSM에 대한 일부 우수 사례는 다음과 같습니다.
 다음은 [!DNL Assets]에 대한 MSM의 제한 사항입니다.
 
 * CF(컨텐츠 조각)는 사용 사례에 대해 지원되지 않습니다. Live Copy를 만들려고 하면 CF가 관계 없이 그대로 복사됩니다. 복사된 CF는 시간 내 스냅샷이며 원본 CF가 업데이트될 때 업데이트되지 않습니다.
+
+* MSM은 메타데이터 원본에 쓰기 기능이 활성화되어 있지 않습니다. 서면으로 되돌아가면 상속은 끊어진다.
