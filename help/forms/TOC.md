@@ -64,7 +64,7 @@ ht-degree: 4%
       + [대화형 통신 설치 및 구성](using/installing-configuring-intreactive-communication-correspondence-management.md)
       + [automated forms conversion 서비스 설치 및 구성](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + JEE에 AEM Forms 설치 {#jee-installation}
-      + [JEE에서 AEM 양식에 지원되는 플랫폼](using/aem-forms-jee-supported-platforms.md)
+      + [JEE에서 AEM 양식에 대해 지원되는 플랫폼](using/aem-forms-jee-supported-platforms.md)
       + [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
       + [AEM Forms Document Security 서버 설치 및 구성](using/installing-and-configuring-the-document-security-server.md)
       + [AEM Forms 설치 준비(단일 서버)](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
@@ -85,7 +85,7 @@ ht-degree: 4%
       + [Microsoft SharePoint용 커넥터 구성](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Adobe LiveCycle과 AEM Forms 연결](using/aem-livecycle-connector.md)
       + [JEE 프로세스에서 AEM Forms에 양식 데이터를 제출하도록 AEM Forms 구성](using/submit-form-data-livecycle-process.md)
-      + [AEM FORMS용 AEM 데스크탑 앱](/help/forms/using/aem-desktop-app-for-aem-forms.md)
+      + [AEM Forms용 AEM 데스크탑 앱](/help/forms/using/aem-desktop-app-for-aem-forms.md)
 + AEM Forms {#upgrade-aem-forms} 업그레이드
    + [사용 가능한 업그레이드 경로](using/upgrade.md)
    + OSGi {#aem-forms-osgi-upgrade}에서 AEM Forms 업그레이드
@@ -114,7 +114,7 @@ ht-degree: 4%
       + [OSGi 기반의 Forms 워크플로우](using/forms-workflow-osgi-handling-user-data.md)
       + [Forms 사용자 관리](using/user-management-handling-user-data.md)
       + [Forms JEE 워크플로우](using/forms-workflow-jee-handling-user-data.md)
-      +  [Forms 포털](using/forms-portal-handling-user-data.md)
+      + [Forms 포털](using/forms-portal-handling-user-data.md)
       + [서신 관리](using/correspondence-management-handling-user-data.md)
       + [Adobe Sign과 통합](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [문서 보안](/help/forms/using/document-security-handling-user-data.md)
