@@ -5,12 +5,12 @@ solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
-user-guide-description: 디지털 자산을 생성, 관리, 게재 및 최적화합니다.
+user-guide-description: 디지털 자산 제작, 관리, 배달 및 최적화
 translation-type: tm+mt
 source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 78%
    + [URL을 웹 애플리케이션에 연결](linking-urls-to-yourwebapplication.md)
    + [규칙 세트를 사용하여 URL 변환](using-rulesets-to-transform-urls.md)
    + [Dynamic Media 자산 게시](publishing-dynamicmedia-assets.md)
-   + [Dynamic Media에서 선택적 게시 작업](selective-publishing.md)
+   + [Dynamic Media의 선택적 게시 작업](selective-publishing.md)
    + [Dynamic Media을 통해 CDN 캐시 무효화](invalidate-cdn-cache-dynamic-media.md)
    + [Dynamic Media Classic을 통해 CDN 캐시 무효화](invalidate-cdn-cache-dm-classic.md)
    + [벌크 자산 마이그레이션용 기능 팩 18912 설치](bulk-ingest-migrate.md)
