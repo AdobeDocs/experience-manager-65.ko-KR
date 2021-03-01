@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1f40c099518bc9d296026d8cfac5b6291e41a846
+source-git-commit: 02937bb85792e2ae9dcdeee3b860f800812a4461
 workflow-type: tm+mt
-source-wordcount: '6634'
+source-wordcount: '6627'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ platform launch 및 Dynamic Media 뷰어 5.13용 새 *Dynamic Media 뷰어* 확�
 
 확장 기능에 대한 자세한 내용은 Experience Platform Launch 사용 안내서의 [Adobe 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension)을 참조하십시오.
 
-**사이트 관리자,** Experience Manager 플랫폼의 개발자 및 운영 종사자를 대상으로 이 문서의 작성자를 지정합니다.
+**이 항목은** 사이트 관리자, Experience Manager 플랫폼의 개발자 및 운영 인력을 대상으로 합니다.
 
 ### 통합 제한 사항 {#limitations-of-the-integration}
 
@@ -405,7 +405,7 @@ Dynamic Media 뷰어 확장 기능을 사용하면 Dynamic Media 뷰어의 이�
 
 **시작하기 전에**
 
-아직 완료하지 않은 경우 전체 통합을 이해하려면 이 섹션 앞에 있는 모든 설명서를 철저히 검토할 것을 Adobe이 권장합니다.
+Adobe은 전체 통합을 이해하도록 이 섹션 전에 모든 설명서를 철저히 검토할 것을 권장합니다.
 
 이 섹션에서는 오디오 및 비디오용 Adobe Analytics 및 Adobe Analytics과 Dynamic Media 뷰어를 통합하는 데 필요한 구성 단계를 설명합니다. Experience Platform Launch에서 다른 목적으로 Dynamic Media 뷰어 확장 기능을 사용할 수는 있지만 이러한 시나리오는 이 문서에서 다루지 않습니다.
 
@@ -597,7 +597,7 @@ Experience Platform Launch 환경에 대한 자세한 내용은 [환경](https:/
 라이브러리를 게시하려면 다음 2단계를 수행해야 합니다.
 
 * 필요한 모든 변경 사항(새 내용 및 업데이트)을 라이브러리에 추가하여 새 라이브러리를 추가하고 만듭니다.
-* 개발 단계부터 스테이징 및 프로덕션에 이르는 다양한 환경 수준을 통해 라이브러리 이동
+* 개발에서 스테이징 및 프로덕션에 이르는 다양한 환경 수준을 통해 라이브러리를 이동합니다.
 
 #### 새 라이브러리 {#adding-and-building-a-new-library} 추가 및 구성
 
@@ -617,7 +617,7 @@ Experience Platform Launch 환경에 대한 자세한 내용은 [환경](https:/
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 개발용으로 저장 및 빌드]**&#x200B;를 클릭합니다.
 
-   몇 분 안에 라이브러리가 만들어지고 사용할 준비가 됩니다.
+   몇 분 후에 라이브러리가 만들어지고 사용할 준비가 됩니다.
 
    ![image2019-7-15_15-3-34](assets/image2019-7-15_15-3-34.png)
 
@@ -677,7 +677,7 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
    다음 정보 메시지가 표시됩니다.
 
-   *유효한 액세스 토큰을 검색하려면 새 인증서의 공개 키가 Adobe I/O의 기술 계정에 추가됩니다!*.
+   *유효한 액세스 토큰을 검색하려면 새 인증서의 공개 키가 Adobe I/O의 기술 계정에 추가됩니다!*
 
    정보 대화 상자를 닫으려면 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
@@ -733,7 +733,7 @@ AEM 구성은 다음 2가지 주요 단계로 구성됩니다.
 
 1. 이전에 열어 둔 **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지로 돌아갑니다. 페이지 오른쪽 맨 위에서 **[!UICONTROL 다음]**&#x200B;을 클릭하여 **[!UICONTROL Adobe IMS. 기술 계정 구성]** 창의 **[!UICONTROL 계정]** 페이지를 엽니다.
 
-   (페이지를 이전에 실수로 닫은 경우 Experience Manager 작성자로 돌아간 다음 **[!UICONTROL 도구 > 보안 > Adobe IMS 구성]**&#x200B;을 클릭합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform Launch]**&#x200B;을 선택합니다. **[!UICONTROL 인증서]** 드롭다운 목록에서 이전에 만든 인증서의 이름을 선택합니다.)
+   (이전 페이지를 닫은 경우 Experience Manager 작성자로 돌아간 다음 **[!UICONTROL 도구 > 보안 > Adobe IMS 구성]**&#x200B;을 클릭합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 클라우드 솔루션]** 드롭다운 목록에서 **[!UICONTROL Experience Platform Launch]**&#x200B;을 선택합니다. **[!UICONTROL 인증서]** 드롭다운 목록에서 이전에 만든 인증서의 이름을 선택합니다.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
