@@ -84,7 +84,7 @@ ht-degree: 12%
    + [소셜 구성 요소 프레임워크](scf.md)
    + [커뮤니티 구성 요소 안내서](components-guide.md)
    + [구성 요소, 기능 및 Feature Essentials](essentials.md)
-   + [자습서](tutorials.md)
+   + [튜토리얼](tutorials.md)
    + [문제 해결](troubleshooting.md)
    + [코딩 지침](code-guide.md)
    + [서버 측 사용자 정의](server-customize.md)
