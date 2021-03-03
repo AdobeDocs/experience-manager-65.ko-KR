@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
+source-git-commit: a2fa9a56de8882731e8193696f572a74c98c6b89
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1691'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: 반응형 또는 각도)이 필요한 프로젝트에 권장되는 솔루션입니다.
+>SPA 편집기는 SPA 프레임워크 기반의 클라이언트측 렌더링(예: 반응 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ SSR을 사용할 때 AEM의 [구성 요소 상호 작용 워크플로](/help/sit
    <th><strong>단점</strong></th>
   </tr>
   <tr>
-   <th><strong>aem</strong><br /> </th>
+   <th><strong>AEM</strong><br /> </th>
    <td>
     <ul>
      <li>AEM, 필요한 경우 라이브러리 삽입 관리</li>
@@ -135,7 +135,7 @@ SSR을 사용할 때 AEM의 [구성 요소 상호 작용 워크플로](/help/sit
     </ul> </td>
   </tr>
   <tr>
-   <th><strong>adobe i/o runtime<br /> </strong></th>
+   <th><strong>Adobe I/O Runtime<br /> </strong></th>
    <td>
     <ul>
      <li>SPA 개발자에게 보다 친숙한 <br /> </li>
@@ -166,10 +166,10 @@ SSR을 활용하려면 코드를 AEM뿐만 아니라 서버측 렌더링을 담�
 
 AEM의 SPA용 SSR을 사용하려면 Adobe I/O Runtime이 필요합니다. 이 SSR은 앱 콘텐츠 서버 쪽의 렌더링에 대해 호출됩니다. 앱의 HTL 내에서 콘텐츠를 렌더링하기 위해 Adobe I/O Runtime의 리소스가 호출됩니다.
 
-AEM이 즉시 사용 가능한 Angular 및 React SPA 프레임워크을 지원하는 것과 마찬가지로 서버측 렌더링도 Angular 및 Reimate 앱에 대해 지원됩니다. 자세한 내용은 두 프레임워크에 대한 NPM 설명서를 참조하십시오.
+AEM이 즉시 사용 가능한 Angular 및 React SPA 프레임워크을 지원하는 것처럼 Angular 및 Response 앱에 대해 서버측 렌더링도 지원됩니다. 자세한 내용은 두 프레임워크에 대한 NPM 설명서를 참조하십시오.
 
 * 반응:[https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
-* 각도:[https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
+* Angular:[https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
 간단한 예를 보려면 [We.Retail 저널 앱](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)을 참조하십시오. 전체 응용 프로그램 서버측을 렌더링합니다. 이는 실제 사례는 아니지만 SSR을 구현하는 데 필요한 사항을 설명합니다.
 
@@ -179,7 +179,7 @@ AEM이 즉시 사용 가능한 Angular 및 React SPA 프레임워크을 지원�
 
 >[!NOTE]
 >
->모든 AEM 프로젝트는 React 또는 Angular를 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Tranype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+>모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Tranype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
 
 ## Node.js {#using-node-js} 사용
 
@@ -201,7 +201,7 @@ AEM에서 SPA과 함께 SSR을 사용하는 데 필요한 [원격 컨텐츠 렌�
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` 는 Adobe I/O과 같이 원격 서버에서 렌더링된 내용을 검색하기 위한 OSGi 서비스입니다.원격 서버로 보낸 내용은 전달된 요청 매개 변수를 기반으로 합니다.
+`RemoteContentRenderingService` 는 Adobe I/O과 같이 원격 서버에서 렌더링된 내용을 검색하는 OSGi 서비스입니다.원격 서버로 보낸 내용은 전달된 요청 매개 변수를 기반으로 합니다.
 
 `RemoteContentRenderingService` 추가 컨텐츠 조작이 필요할 때 종속성 전환을 통해 사용자 지정 Sling 모델이나 서블릿에 삽입할 수 있습니다.
 
