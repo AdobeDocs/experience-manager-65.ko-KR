@@ -12,10 +12,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 98%
+source-wordcount: '551'
+ht-degree: 92%
 
 ---
 
@@ -28,6 +28,13 @@ ht-degree: 98%
 
 1. [참조의 론치(사이트 콘솔)](/help/sites-authoring/launches.md#launches-in-references-sites-console)에 액세스하여 사용 가능한 동작을 표시합니다.
 1. **페이지로 이동**&#x200B;을 선택하여 편집할 페이지를 엽니다.
+
+>[!NOTE]
+>
+>론치 내에서 페이지를 이동할 수 없습니다. 이 작업을 시도하면 경고 메시지가 트리거됩니다.
+>
+>* 경고:이 페이지는 론치의 소스입니다. 페이지를 이동할 수 없습니다.
+
 
 ### Live Copy에 따른 론치 페이지 편집 {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -45,7 +52,7 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
 
 자세한 내용은 [Live Copy 컨텐츠 변경](/help/sites-administering/msm-livecopy.md#changing-live-copy-content)을 참조하십시오.
 
-## 론치 페이지를 소스 페이지에 비교  {#comparing-a-launch-page-to-its-source-page}
+## 론치 페이지를 소스 페이지에 비교 {#comparing-a-launch-page-to-its-source-page}
 
 수행한 변경 작업을 추적하기 위해 **참조**&#x200B;에서 론치를 보고 론치 페이지를 소스 페이지와 비교할 수 있습니다.
 
