@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d62249ee2e2d40f2a437c1cb7f2a80f3f8e67efe
+source-git-commit: 06cb3a7cdd9b6de00aff67c66327abadce3e0920
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3309'
 ht-degree: 1%
 
 ---
@@ -552,13 +552,12 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
 
 ### 디자이너 {#designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server 또는 Microsoft Windows 10
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server 또는 Microsoft® Windows® 10
 * PAGE, NX 및 SSE2를 지원하는 1GHz 프로세서 이상
 * 64비트 OS용 32비트 또는 2GB RAM 1GB
 * 64비트 OS를 위한 32비트 또는 20GB의 디스크 공간 16GB
 * 그래픽 메모리 - 128MB GPU(256MB 권장)
 * 2.35GB의 하드 디스크 여유 공간
-* DVD-ROM 드라이브
 * 1024 X 768픽셀 이상의 모니터 해상도
 * 비디오 하드웨어 가속(선택 사항)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
