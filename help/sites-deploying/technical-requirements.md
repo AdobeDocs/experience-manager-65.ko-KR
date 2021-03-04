@@ -11,9 +11,9 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7065a6b984afb18c188acd848b9b77da7da67749
+source-git-commit: d62249ee2e2d40f2a437c1cb7f2a80f3f8e67efe
 workflow-type: tm+mt
-source-wordcount: '3118'
+source-wordcount: '3207'
 ht-degree: 1%
 
 ---
@@ -134,10 +134,10 @@ Adobe Experience Manager은 다음 버전의 Java 가상 시스템으로 작동�
  </tbody>
 </table>
 
-1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle의 비LTS 릴리스입니다([Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html) 참조). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다.
+1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle에 의한 비LTS 릴리스입니다([Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html) 참조). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다.
 
 1. IBM JRE는 WebSphere Application Server와 함께 사용할 수만 있습니다.
-1. 공개 업데이트가 종료되는 시점까지 LTS 릴리스의 모든 유지 관리 업데이트를 비롯한 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술을 사용하는 모든 AEM 고객에게 Adobe에서 직접 지원됩니다. 자세한 내용은 [Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf)에 대한 Oracle Java 지원을 참조하십시오.
+1. 공개 업데이트가 종료된 이후에도 LTS 릴리스의 모든 유지 관리 업데이트를 비롯한 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술을 사용하는 모든 AEM 고객에게 Adobe에서 직접 지원됩니다. 자세한 내용은 [Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf)에 대한 Oracle Java 지원을 참조하십시오.
 
 ### 저장 및 지속성 {#storage-persistence}
 
@@ -225,7 +225,7 @@ Adobe Experience Manager은 프로덕션 환경에서 다음과 같은 서버 �
 | Oracle Solaris 11 | Z:지원되지 않음 |
 | IBM AIX 7.2 | Z:지원되지 않음 |
 
-1. Linux Kernel 2.6, 3.x 및 4.x에는 Red Hat Enterprise Linux, CentOS, Oracle Linux 및 Amazon Linux를 비롯한 Red Hat 배포판에서의 파생물을 포함합니다. AEM Forms 추가 기능은 CentOS 7 및 Red Hat Enterprise Linux 7에서만 지원됩니다.
+1. Linux Kernel 2.6, 3.x 및 4.x에는 Red Hat Enterprise Linux, CentOS, Oracle Linux 및 Amazon Linux를 비롯한 Red Hat 배포용 파생물이 포함되어 있습니다. AEM Forms 추가 기능은 CentOS 7 및 Red Hat Enterprise Linux 7에서만 지원됩니다.
 1. AEM Forms은 Ubuntu 16.04 LTS에서만 지원됩니다.
 1. Adobe Managed Services에서 지원하는 Linux 배포
 1. Microsoft Windows 프로덕션 배포는 6.5로 업그레이드하고 제작 과정 이외의 다른 사용자도 사용할 수 있도록 지원됩니다. 새로운 배포는 AEM Sites 및 자산에 대한 요청 시 가능합니다.
@@ -235,7 +235,7 @@ Adobe Experience Manager은 프로덕션 환경에서 다음과 같은 서버 �
 
 Adobe Experience Manager은 이 페이지에 나열된 기술 요구 사항을 준수하고 Adobe의 표준 지원 약관에 따라 Microsoft Azure 및 Amazon 웹 서비스(AWS)와 같은 클라우드 컴퓨팅 환경의 가상 컴퓨터에서 실행됩니다.
 
-Azure 또는 AWS에 AEM을 배포하려면 Adobe Managed Services를 사용하는 것이 좋습니다. Adobe Managed Services는 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포 및 운영하는 경험과 기술을 전문가에게 제공합니다. Adobe Managed Services[에 대한 추가 설명서를 참조하십시오.](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)
+Azure 또는 AWS에 AEM을 배포하려면 Adobe Managed Services를 사용하는 것이 좋습니다. Adobe Managed Services는 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포 및 운영하는 경험과 기술을 전문가에게 제공합니다. Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)에 대한 추가 설명서를 참조하십시오.[
 
 Azure 또는 AWS 또는 기타 클라우드 컴퓨팅 환경에 AEM을 배포하는 다른 모든 경우 Adobe의 지원이 이 페이지에 나열된 기술 사양에 따라 가상 컴퓨팅 환경에 포함됩니다. 클라우드 서비스가 이 페이지에 나열된 기술 요구 사항(예: Azure Blob 스토리지 또는 AWS S3)의 일부로 특별히 지원되지 않는 한 이러한 클라우드 환경에서 실행되는 AEM과 관련된 보고된 문제는 클라우드 컴퓨팅 환경 관련 클라우드 서비스와 독립적으로 재생산되어야 합니다.
 
@@ -376,7 +376,7 @@ Adobe Experience Manager의 모든 요소(인스턴스, 발송자)는 IPv4 및 I
 
 ### AEM Dynamic Media Add-on {#requirements-for-aem-dynamic-media-add-on} 요구 사항
 
-AEM Dynamic Media은 기본적으로 비활성화됩니다. Dynamic Media[활성화 방법은 여기를 참조하십시오.](/help/assets/config-dynamic.md#enabling-dynamic-media)
+AEM Dynamic Media은 기본적으로 비활성화됩니다. Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media)활성화 방법은 여기를 참조하십시오.[
 
 Dynamic Media이 활성화되면 다음의 추가 기술 요구 사항이 적용됩니다.
 
@@ -384,7 +384,7 @@ Dynamic Media이 활성화되면 다음의 추가 기술 요구 사항이 적용
 >
 >이러한 시스템 요구 사항 **은 Dynamic Media - 하이브리드 모드를 사용하는 경우에만**&#x200B;만 적용됩니다.Dynamic Media - 하이브리드 모드에는 포함된 이미지 서버가 있으며, 이 서버는 특정 운영 체제에서만 인증됩니다.
 >
->Dynamic Media - Scene7 모드(즉, **dynamicmedia_scene7** 실행 모드)를 실행하는 Dynamic Media 고객의 경우 추가 시스템 요구 사항이 없습니다.aem과 동일한 시스템 요구 사항만 충족할 수 있습니다. Dynamic Media - Scene7 모드 아키텍처는 AEM에 포함된 서비스가 아니라 클라우드 기반의 이미지 서비스를 사용합니다.
+>Dynamic Media - Scene7 모드(즉, **dynamicmedia_scene7** 실행 모드)를 실행하는 Dynamic Media 고객의 경우 추가 시스템 요구 사항이 없습니다.AEM과 동일한 시스템 요구 사항만 충족할 수 있습니다. Dynamic Media - Scene7 모드 아키텍처는 AEM에 포함된 서비스가 아니라 클라우드 기반의 이미지 서비스를 사용합니다.
 
 #### 하드웨어 {#hardware}
 
@@ -408,7 +408,7 @@ Linux에서 Dynamic Media을 사용하는 경우 다음 사전 요구 사항을 
 
 >[!NOTE]
 >
->**SELinux:** 이미지 제공 기능을 비활성화해도 SELinux를 켜는 경우 작동하지 않습니다. 이 옵션은 기본적으로 활성화되어 있습니다. 이 문제를 해결하려면 **/etc/selecux/config** 파일을 편집하고 SELinux 값을 다음 위치에서 변경하십시오.
+>**SELinux:** 이미지 제공 기능을 비활성화해도 SELinux를 켜면 작동하지 않습니다. 이 옵션은 기본적으로 활성화되어 있습니다. 이 문제를 해결하려면 **/etc/selecux/config** 파일을 편집하고 SELinux 값을 다음 위치에서 변경하십시오.
 >
 >`SELINUX=enforcing` **끝** `SELINUX=disabled`
 
@@ -510,13 +510,27 @@ Windows x86의 경우:
 
 
 
+### AEM Forms Designer {#requirements-for-aem-forms-designer} 요구 사항
+
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server 또는 Microsoft Windows 10
+* PAGE, NX 및 SSE2를 지원하는 1GHz 프로세서 이상
+* 64비트 OS용 32비트 또는 2GB RAM 1GB
+* 64비트 OS를 위한 32비트 또는 20GB의 디스크 공간 16GB
+* 그래픽 메모리 - 128MB GPU(256MB 권장)
+* 2.35GB의 하드 디스크 여유 공간
+* DVD-ROM 드라이브
+* 1024 X 768픽셀 이상의 모니터 해상도
+* 비디오 하드웨어 가속(선택 사항)
+* Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
+* Designer를 설치할 수 있는 관리 권한입니다.
+
 ### AEM Assets XMP 메타데이터 쓰기 되돌리기 요구 사항 {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP 쓰기가 지원되고 다음 플랫폼 및 파일 형식에 대해 활성화됩니다.
 
 * **운영 체제:**
 
-   * Linux(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원). 32비트 클라이언트 라이브러리를 설치하는 단계는 64비트 RedHat Linux[에서 XMP 추출 및 다시 쓰기를 활성화하는 방법을 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)
+   * Linux(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원). 32비트 클라이언트 라이브러리를 설치하는 단계는 64비트 RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)에서 XMP 추출 및 다시 쓰기를 활성화하는 방법을 참조하십시오.[
 
    * Windows Server
    * Mac OS X(64비트)
