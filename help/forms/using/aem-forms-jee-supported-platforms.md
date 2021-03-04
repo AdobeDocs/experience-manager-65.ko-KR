@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9c407ea7c0bff3d15934552cd709bec7f24e857
+source-git-commit: d62249ee2e2d40f2a437c1cb7f2a80f3f8e67efe
 workflow-type: tm+mt
-source-wordcount: '3318'
-ht-degree: 0%
+source-wordcount: '3311'
+ht-degree: 1%
 
 ---
 
@@ -324,7 +324,7 @@ JEE 서버에 AEM Forms을 설정할 플랫폼을 선택할 때는 다음 예외
 
 1. AEM Forms on JEE는 MySQL과 함께 IBM® WebSphere®를 지원하지 않습니다.
 1. AEM Forms on JEE는 SUSE Linux Enterprise Server 12에서 JBoss를 지원하지 않습니다. SUSE Linux Enterprise Server 12에서는 IBM WebSphere만 지원됩니다.
-1. AEM Forms on JEE는 Oracle Java™ SE가 아닌 JBoss®가 있는 JDK를 지원하지 않습니다.
+1. AEM Forms on JEE는 Oracle Java™ SE가 아닌 JBoss®의 JDK를 지원하지 않습니다.
 1. AEM Forms on JEE는 IBM® JDK가 아닌 IBM® WebSphere®를 지원하는 JDK를 지원하지 않습니다.
 1. CRX 리포지토리는 TarMK, MongoDB 및 관계형 데이터베이스(RDBMK) 유형의 지속성을 지원합니다. 응용 프로그램 서버와 CRX 저장소 간에 서로 다른 데이터베이스 시스템을 둘 수 없습니다. 그러나 JEE 환경의 AEM Forms에서는 CRX 리포지토리와 함께 MongoMK를 사용하고 애플리케이션 서버가 있는 지원되는 관계형 데이터베이스를 사용할 수 있습니다.
 1. AEM Forms on JEE는 CentOS에서 WebSphere 응용 프로그램 서버를 지원하지 않습니다.
@@ -350,7 +350,7 @@ JEE 서버에 AEM Forms을 설정할 플랫폼을 선택할 때는 다음 예외
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
   <tr>
-   <td>Oracle UD(Unified Directory) 11g 릴리스 2</td>
+   <td>Oracle OOD(Unified Directory) 11g 릴리스 2</td>
    <td>서비스 팩</td>
   </tr>
   <tr>
@@ -552,23 +552,17 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
 
 ### 디자이너 {#designer}
 
->[!NOTE]
->
->Windows에 Designer를 설치하려면 관리자 권한으로 설치 프로그램을 실행합니다.
-
-* Microsoft® Windows® 2016 Server, Microsoft Windows 10
-
-   * PAGE, NX 및 SSE2를 지원하는 1GHz 프로세서 이상
-   * 64비트 OS용 32비트 또는 2GB RAM 1GB
-   * 64비트 OS를 위한 32비트 또는 20GB의 디스크 공간 16GB
-
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server 또는 Microsoft Windows 10
+* PAGE, NX 및 SSE2를 지원하는 1GHz 프로세서 이상
+* 64비트 OS용 32비트 또는 2GB RAM 1GB
+* 64비트 OS를 위한 32비트 또는 20GB의 디스크 공간 16GB
 * 그래픽 메모리 - 128MB GPU(256MB 권장)
 * 2.35GB의 하드 디스크 여유 공간
 * DVD-ROM 드라이브
-* Internet Explorer 10 또는 11;Firefox 45.x
 * 1024 X 768픽셀 이상의 모니터 해상도
 * 비디오 하드웨어 가속(선택 사항)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
+* Designer를 설치할 수 있는 관리 권한입니다.
 
 ### Adobe Acrobat 및 Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
