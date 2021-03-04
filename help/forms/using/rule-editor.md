@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '6814'
+source-wordcount: '6818'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ Forms-Power-users 그룹에 추가된 사용자는 새 스크립트를 만들고
 >
 >규칙 편집기에서 정의하는 조건 및 작업을 비롯한 사용 가능한 규칙 유형은 규칙을 만드는 양식 객체의 유형에도 따라 달라집니다. 규칙 편집기에는 특정 양식 객체 유형에 대한 조건 및 작업 문을 작성하기 위한 유효한 규칙 유형과 옵션만 표시됩니다. 예를 들어, 패널 개체에 대한 유효성 검사, 값 설정, 활성화 및 규칙 유형 비활성화는 표시되지 않습니다.
 
-규칙 편집기에서 사용할 수 있는 규칙 유형에 대한 자세한 내용은 규칙 편집기[에서 사용 가능한 규칙 유형을 참조하십시오.](../../forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p)
+규칙 편집기에서 사용할 수 있는 규칙 유형에 대한 자세한 내용은 규칙 편집기](../../forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p)에서 사용 가능한 규칙 유형을 참조하십시오.[
 
 ### 규칙 구문 선택에 대한 지침 {#guidelines-for-choosing-a-rule-construct}
 
-규칙 구절을 사용하여 대부분의 사용 사례를 얻을 수 있지만, 다음은 하나의 구문을 다른 구문보다 선택하는 몇 가지 지침입니다. 규칙 편집기에서 사용 가능한 규칙에 대한 자세한 내용은 규칙 편집기[에서 사용 가능한 규칙 유형을 참조하십시오.](../../forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p)
+규칙 구절을 사용하여 대부분의 사용 사례를 얻을 수 있지만, 다음은 하나의 구문을 다른 구문보다 선택하는 몇 가지 지침입니다. 규칙 편집기에서 사용 가능한 규칙에 대한 자세한 내용은 규칙 편집기](../../forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p)에서 사용 가능한 규칙 유형을 참조하십시오.[
 
 * 규칙을 만들 때 일반적인 경험의 규칙은 규칙을 작성하고 있는 객체의 컨텍스트에서 규칙을 고려하는 것입니다. 필드 A에서 사용자가 지정하는 값을 기준으로 필드 B를 숨기거나 표시하려는 경우를 고려합니다. 이 경우 필드 A에 대한 조건을 평가하고, 필드가 반환하는 값을 기준으로 필드 B에 대해 작업을 트리거합니다.
 
@@ -96,7 +96,7 @@ Forms-Power-users 그룹에 추가된 사용자는 새 스크립트를 만들고
 
 규칙 편집기는 규칙을 작성하는 데 사용할 수 있는 미리 정의된 규칙 유형 세트를 제공합니다. 각 규칙 유형을 자세히 살펴보겠습니다. 규칙 편집기에서 규칙 작성에 대한 자세한 내용은 [규칙 작성](../../forms/using/rule-editor.md#p-write-rules-p)을 참조하십시오.
 
-### 화이트보드 {#whenruletype}
+### http 화이트보드 {#whenruletype}
 
 **When** 규칙 유형이 **condition-action-alternate action** 규칙 구문을 따르거나, 경우에 따라 **condition-action** 구문을 따릅니다. 이 규칙 유형에서는 먼저 평가 조건을 지정하고 조건이 충족되면 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 [중첩된 표현식](#nestedexpressions)을 만들 수 있습니다.
 
@@ -114,7 +114,7 @@ When 규칙 유형을 사용하여 양식 객체에 대한 조건을 평가하�
 AND
 개체 C의 동작 3;
 
-]
+_
 
 라디오 단추 또는 목록과 같은 다중 값 구성 요소가 있는 경우 해당 구성 요소에 대한 규칙을 만들면 옵션이 자동으로 검색되고 규칙 작성자가 사용할 수 있습니다. 옵션 값을 다시 입력할 필요는 없습니다.
 
@@ -383,7 +383,7 @@ forms-power-users 그룹의 사용자는 코드 편집기에 액세스할 수 �
 AEM Forms은 마지막으로 규칙을 작성하는 데 사용한 규칙 편집기 모드를 추적합니다. 다음에 규칙 편집기를 실행하면 해당 모드로 열립니다. 하지만 기본 모드를 구성하여 지정된 모드에서 규칙 편집기를 열 수도 있습니다. 이렇게 하려면 다음을 수행하십시오.
 
 1. `https://[host]:[port]/system/console/configMgr`의 AEM 웹 콘솔로 이동합니다.
-1. **[!UICONTROL 적응형 양식 구성 서비스]**&#x200B;를 편집하려면 클릭합니다.
+1. **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**&#x200B;을 편집하려면 클릭합니다.
 1. **[!UICONTROL 규칙 편집기의 기본 모드]** 드롭다운에서 **[!UICONTROL 시각적 편집기]** 또는 **[!UICONTROL 코드 편집기]**&#x200B;를 선택합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
@@ -487,7 +487,7 @@ AEM Forms은 마지막으로 규칙을 작성하는 데 사용한 규칙 편집�
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
-   확장 표현식 필드에서 **연산자 선택** 필드에서 **로 나누기&lt;a1/>와**&#x200B;옵션 선택&#x200B;**필드에서**&#x200B;번호&#x200B;**를 선택합니다.** 그런 다음 숫자 필드에 **2**&#x200B;을 지정합니다.
+   확장 표현식 필드에서 **연산자 선택** 필드에서 **로 나누기**&#x200B;와 **옵션 선택** 필드에서 **번호**&#x200B;를 선택합니다. 그런 다음 숫자 필드에 **2**&#x200B;을 지정합니다.
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
 
