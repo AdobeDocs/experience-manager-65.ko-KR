@@ -1,6 +1,6 @@
 ---
-title: 선택한 사용자 그룹에 규칙 편집기 액세스 권한 부여
-seo-title: 선택한 사용자 그룹에 규칙 편집기 액세스 권한 부여
+title: 사용자 그룹을 선택하는 규칙 편집기 액세스 부여
+seo-title: 사용자 그룹을 선택하는 규칙 편집기 액세스 부여
 description: 사용자 그룹을 선택할 수 있도록 규칙 편집기에 제한된 액세스 권한을 부여합니다.
 seo-description: 사용자 그룹을 선택할 수 있도록 규칙 편집기에 제한된 액세스 권한을 부여합니다.
 uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
@@ -10,15 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 1%
+source-wordcount: '336'
+ht-degree: 8%
 
 ---
 
 
-# 선택한 사용자 그룹{#grant-rule-editor-access-to-select-user-groups}에 대한 규칙 편집기 액세스 권한 부여
+# 사용자 그룹을 선택하는 규칙 편집기 액세스 부여{#grant-rule-editor-access-to-select-user-groups}
 
 ## 개요 {#overview}
 
@@ -33,7 +33,7 @@ AEM Forms에서는 역할이나 기능에 따라 사용자에 대한 규칙 편�
 
    ![1-2](assets/1-2.png)
 
-1. 웹 콘솔 창에서 **적응형 양식 구성 서비스**&#x200B;를 찾아 클릭합니다. **응용 양식 구성 서비스** 대화 상자가 나타납니다. 값을 변경하지 말고 **저장**&#x200B;을 클릭합니다.
+1. 웹 콘솔 창에서 **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**&#x200B;을 찾아 클릭합니다. **[!UICONTROL [적응형 양식] 및 [대화형 통신 웹 채널]** 구성] 대화 상자가 나타납니다. 값을 변경하지 말고 **저장**&#x200B;을 클릭합니다.
 
    CRX-repository에 /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config 파일을 만듭니다.
 
