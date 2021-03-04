@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '697'
 ht-degree: 1%
 
 ---
@@ -35,8 +35,8 @@ ht-degree: 1%
 OSGi에서 AEM Forms과 동기화하도록 구성된 iOS용 AEM Forms 앱은 필드 수준 첨부 파일만 지원합니다. 모든 첨부 파일의 이름은 고유해야 합니다. 여러 첨부 파일의 이름이 동일한 경우 하나의 첨부 파일만 유지되고 동일한 이름의 다른 첨부 파일은 모두 손실됩니다. iOS 장치의 사용자가 데이터 손실을 보지 않도록 하려면 다음 단계를 수행하십시오.
 
 1. 연결된 서버에서 **Adobe Experience Manager > 도구 > 작업 > 웹 콘솔**&#x200B;으로 이동합니다.
-1. **적응형 양식 구성 서비스**&#x200B;를 찾아 클릭합니다.
-1. 응용 양식 구성 서비스 대화 상자에서 **파일 이름을 고유하게 만들기**&#x200B;를 활성화합니다.
+1. **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**&#x200B;을 찾아 클릭합니다.
+1. [!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성] 대화 상자에서 **파일 이름을 고유하게 만들기**&#x200B;를 활성화합니다.
 
    **파일 이름을 고유하게 만들기** 설정이 비활성화되어 있으면 사용자가 여러 첨부 파일이 있는 적응형 양식을 제출하려고 하면 데이터 손실이 발생합니다.
 
