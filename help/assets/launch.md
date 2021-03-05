@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 02937bb85792e2ae9dcdeee3b860f800812a4461
+source-git-commit: 0a4708800e00eb34042e6979eb0703ca7816c7e1
 workflow-type: tm+mt
 source-wordcount: '6627'
 ht-degree: 0%
@@ -18,6 +18,8 @@ ht-degree: 0%
 # Dynamic Media 뷰어를 Adobe Analytics 및 Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}과 통합
 
 ## Dynamic Media 뷰어와 Adobe Analytics 및 Experience Platform Launch의 통합은 무엇입니까?{#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
+
+<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
 
 platform launch 및 Dynamic Media 뷰어 5.13용 새 *Dynamic Media 뷰어* 확장을 사용하면 Adobe Analytics 및 Platform launch 고객은 Platform launch 구성에 있는 뷰어별 이벤트와 데이터를 사용할 수 있습니다.
 
