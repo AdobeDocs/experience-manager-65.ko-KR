@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a2fa9a56de8882731e8193696f572a74c98c6b89
+source-git-commit: 41e30a668c8c02f2c43e509ed708c4b9fa39a269
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 1%
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## SSR {#when-to-use-ssr} 사용 시기
 
-모든 프로젝트에 SSR이 필요하지 않습니다. AEM은 SPA용 JS SSR을 완벽하게 지원하지만 Adobe은 모든 프로젝트에 대해 체계적으로 구현하는 것은 권장하지 않습니다.
+모든 프로젝트에 SSR이 필요하지 않습니다. AEM은 SPA용 JS SSR을 완벽하게 지원하지만, Adobe은 모든 프로젝트에 대해 체계적으로 구현하는 것은 권장하지 않습니다.
 
 SSR을 구현하기로 결정할 때 먼저 SSR을 장기간 유지 보수하는 것을 포함하여 프로젝트에 대해 SSR을 보다 사실적으로 추가함으로써 얼마나 많은 복잡성, 노력, 비용이 추가되는지를 예상해야 합니다. SSR 아키텍처는 추가된 값이 예상 비용을 명확하게 초과하는 경우에만 선택해야 합니다.
 
