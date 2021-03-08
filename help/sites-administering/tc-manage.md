@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3453'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ AEM에서는 컨텐츠의 초기 번역을 위해 번역 프로젝트를 만들�
 
 예를 들어 /content/geometrixx/fr 언어 루트는 /content/geometrixx/en 마스터 언어의 프랑스어 번역을 위해 만들어집니다. 프랑스어 복사본에는 다른 페이지가 없습니다.
 
-* 프랑스어 언어 사본을 대상으로 하는 /content/geometrixx/en/products 페이지 및 모든 하위 페이지에 대한 번역 프로젝트가 생성됩니다. 언어 복사본에는 /content/geometrixx/fr/products 페이지가 포함되어 있지 않으므로 AEM에서는 즉시 /content/geometrixx/en/products 페이지와 모든 하위 페이지를 프랑스어 언어 사본으로 복사합니다. 사본은 번역 프로젝트에 포함되어 있습니다.
+* 프랑스어 언어 사본을 대상으로 하는 /content/geometrixx/en/products 페이지 및 모든 하위 페이지에 대한 번역 프로젝트가 생성됩니다. 언어 복사본에는 /content/geometrixx/fr/products 페이지가 포함되어 있지 않으므로 AEM에서는 즉시 /content/geometrixx/en/products 페이지와 모든 하위 페이지를 프랑스어 언어 복사본으로 복사합니다. 사본은 번역 프로젝트에 포함되어 있습니다.
 * 프랑스어 언어 사본을 대상으로 하는 /content/geometrixx/en 페이지와 모든 하위 페이지에 대한 번역 프로젝트가 생성됩니다. 언어 복사본에는 /content/geometrixx/en 페이지(언어 루트)에 해당하는 페이지가 포함되어 있으므로 AEM에서는 /content/geometrixx/en 페이지와 모든 하위 페이지를 복사하고 론치에 추가합니다. 사본은 번역 프로젝트에 포함되어 있습니다.
 
 ## 참조 패널 {#creating-translation-projects-using-the-references-panel}을 사용하여 번역 프로젝트 만들기
@@ -67,11 +67,15 @@ AEM에서는 컨텐츠의 초기 번역을 위해 번역 프로젝트를 만들�
 
 선택한 페이지의 하위 페이지도 선택되도록 지정할 수 있습니다. 이 경우 하위 페이지의 복사본이 번역되도록 각 프로젝트에 추가됩니다. 하위 페이지가 다른 번역 통합 프레임워크 구성과 연결되어 있으면 AEM에서 추가 프로젝트를 만듭니다.
 
-번역 프로젝트[를 수동으로 만들 수도 있습니다.](#creating-a-translation-project-using-the-projects-console)
+번역 프로젝트](#creating-a-translation-project-using-the-projects-console)를 수동으로 만들 수도 있습니다.[
+
+>[!NOTE]
+>
+>프로젝트를 만들려면 계정이 `project-administrators` 그룹의 구성원이어야 합니다.
 
 **초기 번역 및 번역 업데이트**
 
-[참조] 패널에는 기존 언어 사본을 업데이트할지 또는 첫 번째 언어 사본을 만들지 여부를 나타냅니다. 선택한 페이지에 대한 언어 복사본이 있는 경우 프로젝트 관련 명령에 액세스할 수 있도록 언어 사본 업데이트 탭이 나타납니다.
+[참조] 패널에는 기존 언어 사본을 업데이트할지 또는 첫 번째 언어 사본을 만들지 여부를 나타냅니다. 선택한 페이지에 대한 언어 복사본이 있는 경우 프로젝트 관련 명령에 액세스할 수 있는 언어 사본 업데이트 탭이 나타납니다.
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -126,9 +130,9 @@ AEM에서는 컨텐츠의 초기 번역을 위해 번역 프로젝트를 만들�
 
 번역 프로젝트를 만든 후 리소스 창을 사용하여 프로젝트에 페이지를 추가할 수 있습니다. 페이지를 추가하는 것은 동일한 프로젝트에서 다른 분기의 페이지를 포함할 때 유용합니다.
 
-번역 프로젝트에 페이지를 추가하면 페이지가 새 번역 작업에 포함됩니다. 기존 작업[에 페이지를 추가할 수도 있습니다.](#adding-pages-assets-to-a-translation-job)
+번역 프로젝트에 페이지를 추가하면 페이지가 새 번역 작업에 포함됩니다. 기존 작업](#adding-pages-assets-to-a-translation-job)에 페이지를 추가할 수도 있습니다.[
 
-새 프로젝트를 만들 때와 마찬가지로 페이지를 추가할 때 기존 언어 사본을 덮어쓰지 않기 위해 필요할 때 페이지 복사본이 론치에 추가됩니다. ([기존 언어 복사본에 대한 번역 프로젝트 만들기](#performing-initial-translations-and-updating-existing-translations)를 참조하십시오.)
+새 프로젝트를 만들 때와 마찬가지로 페이지를 추가할 때 기존 언어 사본을 덮어쓰지 않기 위해 필요한 경우 페이지 복사본이 론치에 추가됩니다. ([기존 언어 복사본에 대한 번역 프로젝트 만들기](#performing-initial-translations-and-updating-existing-translations)를 참조하십시오.)
 
 1. 사이트 콘솔을 사용하여 번역 프로젝트에 추가할 페이지를 선택합니다.
 
@@ -418,6 +422,10 @@ AEM에서는 컨텐츠의 초기 번역을 위해 번역 프로젝트를 만들�
 ## 프로젝트 콘솔을 사용하여 번역 프로젝트 만들기 {#creating-a-translation-project-using-the-projects-console}
 
 프로젝트 콘솔을 사용하려면 번역 프로젝트를 수동으로 만들 수 있습니다.
+
+>[!NOTE]
+>
+>프로젝트를 만들려면 계정이 `project-administrators` 그룹의 구성원이어야 합니다.
 
 번역 프로젝트를 수동으로 만들 때는 [기본 속성](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) 외에 다음 번역 관련 속성에 대한 값을 제공해야 합니다.
 
