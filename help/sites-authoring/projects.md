@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1399'
 ht-degree: 86%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 86%
 * **활성 프로젝트 전환**&#x200B;을 사용하면 모든 프로젝트 표시와 활성 상태 프로젝트만 표시 사이를 전환할 수 있습니다.
 * **통계 보기 표시**&#x200B;를 사용하면 작업 완료에 관련된 프로젝트 통계를 볼 수 있습니다.
 
-## 프로젝트 타일 {#project-tiles}
+## 프로젝트 타일  {#project-tiles}
 
 프로젝트 콘솔에서는 다양한 유형의 정보를 프로젝트와 연결할 수 있습니다. 이것을 **타일**&#x200B;이라고 합니다. 각 타일과 타일이 포함하는 정보의 종류는 이 섹션에 설명되어 있습니다.
 
@@ -70,7 +70,7 @@ ht-degree: 86%
 * 론치
 * 작업
 
-### 자산 {#assets}
+### 에셋 {#assets}
 
 **자산** 타일에서는 특정 프로젝트에 사용하는 모든 자산을 수집할 수 있습니다.
 
@@ -234,7 +234,7 @@ AEM은 다음과 같이 특별한 세 개의 템플릿과 함께 제공됩니다
    <td>
     <ul>
      <li>DAM-users 그룹(프로젝트를 만들 수 있음)</li>
-     <li>project-administrators 그룹(자산을 이동할 수 있음)</li>
+     <li>project-administrators 그룹(프로젝트를 만들고 자산을 이동할 수 있음)</li>
     </ul> </td>
   </tr>
  </tbody>
