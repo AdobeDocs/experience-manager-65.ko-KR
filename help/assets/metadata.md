@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]에서 디지털 자산의 메타데이�
 description: '메타데이터 유형에 대해 알아보고, 메타데이터에 따라 자산을 자동으로 구성하고 처리하는 방법을 알아봅니다. [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4ca77c7de6113127b123645a1955aaa70a91c1f3
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2388'
 ht-degree: 2%
 
 ---
@@ -78,11 +78,11 @@ XMP 쓰기가 지원되고 [기술 요구 사항에 설명된 플랫폼 및 파�
 1. 공통 속성을 편집할 자산을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭하여 선택한 자산에 대한 속성 페이지를 엽니다.
 1. 다양한 탭에서 선택한 자산에 대한 메타데이터 속성을 수정합니다.
-1. 특정 자산에 대한 메타데이터 편집기를 보려면 목록에서 나머지 자산을 선택 취소합니다. 메타데이터 편집기 필드는 특정 자산에 대한 메타데이터로 채워집니다.
+1. 특정 자산에 대한 메타데이터 편집기를 보려면 목록에서 나머지 에셋 선택을 취소합니다. 메타데이터 편집기 필드는 특정 자산에 대한 메타데이터로 채워집니다.
 
    >[!NOTE]
    >
-   >* 속성 페이지의 선택 취소로 자산 목록에서 자산을 제거할 수 있습니다. 자산 목록에는 기본적으로 선택된 모든 자산이 있습니다. 목록에서 제거하는 자산에 대한 메타데이터는 업데이트되지 않습니다.
+   >* 속성 페이지에서 선택 사항을 취소하여 자산 목록에서 자산을 제거할 수 있습니다. 자산 목록에는 기본적으로 선택된 모든 자산이 있습니다. 목록에서 제거하는 자산에 대한 메타데이터는 업데이트되지 않습니다.
    >* 자산 목록 맨 위에서 **[!UICONTROL 제목]** 옆의 확인란을 선택하여 자산을 선택하고 목록을 지우는 간을 전환합니다.
 
 
