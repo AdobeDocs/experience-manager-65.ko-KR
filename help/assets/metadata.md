@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager]에서 디지털 자산의 메타데이�
 description: '메타데이터 유형에 대해 알아보고, 메타데이터에 따라 자산을 자동으로 구성하고 처리하는 방법을 알아봅니다. [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d070f5dca569dfb90d3034b74c2940fd68d8ceab
+source-git-commit: 4ca77c7de6113127b123645a1955aaa70a91c1f3
 workflow-type: tm+mt
-source-wordcount: '2421'
+source-wordcount: '2384'
 ht-degree: 2%
 
 ---
@@ -77,11 +77,6 @@ XMP 쓰기가 지원되고 [기술 요구 사항에 설명된 플랫폼 및 파�
 1. [!DNL Assets] 사용자 인터페이스에서 편집할 자산의 위치로 이동합니다.
 1. 공통 속성을 편집할 자산을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭하여 선택한 자산에 대한 속성 페이지를 엽니다.
-
-   >[!NOTE]
-   >
-   >여러 자산을 선택하면 자산에 대해 가장 낮은 공통 상위 양식이 선택됩니다. 즉, 속성 페이지에는 모든 개별 자산의 속성 페이지에 공통인 메타데이터 필드만 표시됩니다.
-
 1. 다양한 탭에서 선택한 자산에 대한 메타데이터 속성을 수정합니다.
 1. 특정 자산에 대한 메타데이터 편집기를 보려면 목록에서 나머지 자산을 선택 취소합니다. 메타데이터 편집기 필드는 특정 자산에 대한 메타데이터로 채워집니다.
 
