@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
-source-git-commit: 571a48790c4977e97abec24fe88407b5b6376108
+source-git-commit: 7a96ff5cdd187291efe108d1171782bcbecfaeb0
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 3%
@@ -100,12 +100,12 @@ JCR 부울 속성에 일치합니다. &quot; `true`&quot; 및 &quot; `false`&quo
 
 * **작업**
 
-   &quot; 정확히 일치하려면 `equals`&quot;, 비항등 비교는 &quot; `!=`&quot;, property1보다 큰 속성은 &quot; `greater`&quot;, property1보다 크거나 같은 속성1은 &quot; `>=`&quot; 기본값은 &quot; `equals`&quot;입니다.
+   &quot;`equals`&quot;은 완전 일치의 경우, &quot;a1/>&quot;, &quot;property1보다 큰 속성은 &quot;`greater`&quot;, property1은 property2보다 크거나 같은 경우 &quot;`>=`&quot;. `!=` 기본값은 &quot;`equals`&quot;입니다.
 
 ### daterange {#daterange}
 
 날짜/시간 간격과 JCR 날짜 속성을 일치시킵니다. ISO8601을 사용합니다.
-날짜 및 시간에 대한 형식( `YYYY-MM-DDTHH:mm:ss.SSSZ`)을 지정하고 `YYYY-MM-DD`과 같은 부분 표현을 허용합니다. 또는 1970년 이후 UTC 시간대(unix 시간 형식)에서 타임스탬프를 밀리초 단위로 제공할 수 있습니다.
+날짜 및 시간에 대한 형식( `YYYY-MM-DDTHH:mm:ss.SSSZ`)을 지정하고 `YYYY-MM-DD`와 같은 부분 표현을 허용합니다. 또는 1970년 이후 UTC 시간대(unix 시간 형식)에서 타임스탬프를 밀리초 단위로 제공할 수 있습니다.
 
 두 개의 타임스탬프(지정된 날짜보다 최신 또는 이전 버전) 사이의 항목을 찾을 수 있으며, 포함 및 열린 간격 간을 선택할 수도 있습니다.
 
@@ -370,7 +370,7 @@ JCR 속성 및 해당 값에 일치합니다.
 
 * **작업**
 
-   &quot; `equals`&quot;은 완전 일치(기본값)의 경우, &quot;a1/>&quot;, 불균일성 비교의 경우 &quot; `jcr:like` xpath 함수(선택 사항)의 경우 &quot; `like`&quot;, 일치하지 않는 경우 &quot; `not`&quot;(예: `unequals` &quot; `not(@prop)`&quot;(xpath의 경우 값 매개 변수가 무시됨) 또는 &quot; `exists`&quot;(값이 true일 수 있음 - 속성이 존재해야 함, 기본값 - 또는 false - &quot; `not`&quot;과 동일함)
+   &quot;`equals`&quot;(완전 일치)(기본값)의 경우, 불균등 비교의 경우 &quot;`unequals`&quot;, `jcr:like` xpath 함수(선택 사항)의 경우 &quot;`like`&quot;, 일치하지 않는 경우 &quot; `not`&quot;(예: xpath의 &quot;`not(@prop)`&quot;, 값 매개 변수가 무시됩니다.) 또는 존재 확인을 위한 &quot;`exists`&quot;(값이 true일 수 있습니다. 속성이 존재해야 함, 기본값 또는 false - &quot;`not`&quot;과 동일함)
 
 * **깊이**
 
