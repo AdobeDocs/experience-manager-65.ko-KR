@@ -4,9 +4,9 @@ description: 상위 자산에서 파생되고 상위 자산에 연결된 여러 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7eb569c86c45daa8b175f924b211693a5d5dde58
+source-git-commit: 5c9907bf475796c5bbb61d6fcaf43730f9e79777
 workflow-type: tm+mt
-source-wordcount: '3373'
+source-wordcount: '3366'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ MSM은 소스 에셋과 Live Copy 간에 라이브 관계를 유지하여 다음
 
 1. 소스 에셋 또는 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 만들기]** > **[!UICONTROL Live Copy]**&#x200B;를 클릭합니다.
 
-   ![Experience Manager 인터페이스에서 Live Copy 만들기](assets/create_lc1.png)
+   ![인터페이스에서 Live Copy  [!DNL Experience Manager] 만들기](assets/create_lc1.png)
 
    *그림:인터페이스에서 Live Copy를  [!DNL Experience Manager] 만듭니다.*
 
@@ -82,7 +82,7 @@ MSM은 소스 에셋과 Live Copy 간에 라이브 관계를 유지하여 다음
 
 1. [!DNL Experience Manager] 인터페이스의 오른쪽 위 모서리에서 **[!UICONTROL 만들기]** > **[!UICONTROL Live Copy]**&#x200B;를 클릭합니다.
 
-   ![Experience Manager 인터페이스에서 Live Copy 만들기](assets/create_lc2.png)
+   ![인터페이스에서 Live Copy  [!DNL Experience Manager] 만들기](assets/create_lc2.png)
 
    *그림:인터페이스에서 Live Copy를  [!DNL Experience Manager] 만듭니다.*
 
@@ -106,7 +106,7 @@ MSM은 소스 에셋과 Live Copy 간에 라이브 관계를 유지하여 다음
 
 >[!TIP]
 >
->몇 개의 개별 Live Copy의 상태를 확인하려면 첫 번째 방법을 사용하여 [!UICONTROL 속성] 페이지를 확인합니다. 많은 Live Copy의 상태를 확인하려면 두 번째 방법을 사용하여 **[!UICONTROL 관계 상태]** 페이지를 확인합니다.
+>몇 개의 개별 Live Copy의 상태를 확인하려면 첫 번째 방법을 사용하여 **[!UICONTROL 속성]** 페이지를 확인합니다. 많은 Live Copy의 상태를 확인하려면 두 번째 방법을 사용하여 **[!UICONTROL 관계 상태]** 페이지를 확인합니다.
 
 ### Live Copy {#statuslcasset} 정보 및 상태
 
@@ -189,8 +189,9 @@ Live Copy 에셋 또는 폴더를 선택하고 왼쪽 레일을 열고 **[!UICON
 소스 자산에서 롤아웃 작업을 시작하고 전체 또는 몇 개의 Live Copy를 업데이트할 수 있습니다.
 
 1. Live Copy 에셋 또는 폴더를 선택합니다. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다. 또는 키보드 단축키 `p`을 사용합니다.
-1. **[!UICONTROL Live Copy 소스]**&#x200B;를 클릭합니다. 맨 위의 도구 모음에서 **[!UICONTROL 롤아웃]**&#x200B;을 클릭합니다.
-1. 업데이트할 Live Copy를 선택합니다. **[!UICONTROL 롤아웃]**&#x200B;을 클릭합니다. 하위 자산에 대한 업데이트를 롤아웃하려면 **[!UICONTROL 롤아웃 소스 및 모든 하위]**&#x200B;를 선택합니다.
+1. **[!UICONTROL Live Copy 소스]**&#x200B;를 클릭합니다. 도구 모음에서 **[!UICONTROL 롤아웃]**&#x200B;을 클릭합니다.
+1. 업데이트할 Live Copy를 선택합니다. **[!UICONTROL 롤아웃]**&#x200B;을 클릭합니다.
+1. 하위 자산에 대한 업데이트를 롤아웃하려면 **[!UICONTROL 롤아웃 소스 및 모든 하위]**&#x200B;를 선택합니다.
 
    ![소스의 수정 내용을 일부 또는 전체 Live Copy로 롤아웃합니다.](assets/livecopy_rollout_page.png)
 
