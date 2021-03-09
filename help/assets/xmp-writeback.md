@@ -3,9 +3,9 @@ title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능을 사용하여 에셋의 메타데이터 변경 내용을 에셋의 모든 또는 특정 표현물에 전파하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '792'
 ht-degree: 2%
 
 ---
@@ -62,7 +62,7 @@ XMP 원본에 쓰기 기능을 사용하여 메타데이터를 변환 축소판 
 
 >[!NOTE]
 >
->64비트 Linux의 XMP 쓰기 저장(writeback) 문제는 64비트 RedHat Linux[에서 XMP 쓰기 거기를 사용하는 방법을 참조하십시오.](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)
+>64비트 Linux의 XMP 쓰기 저장(writeback) 문제는 64비트 RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)에서 XMP 쓰기 거기를 사용하는 방법을 참조하십시오.[
 >
 >지원되는 플랫폼에 대해서는 [XMP 메타데이터 쓰기 백 사전 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)을 참조하십시오.
 
@@ -88,6 +88,6 @@ XMP 원본에 쓰기 기능을 사용하여 메타데이터를 변환 축소판 
 
    >[!NOTE]
    >
-   >기본적으로 **[!UICONTROL XMP 속성에 차단 목록에 추가하다 적용]** 옵션이 선택되어 있습니다. 즉, 차단 목록을 사용하여 필터링하는 것은 기본적으로 활성화되어 있습니다. 이러한 필터링을 비활성화하려면 **[!UICONTROL XMP 속성에 차단 목록에 추가하다 적용]** 옵션을 선택 취소합니다.
+   >기본적으로 **[!UICONTROL XMP 속성에 차단 목록에 추가하다 적용]** 옵션이 선택되어 있습니다. 즉, 차단 목록을 사용하여 필터링하는 것은 기본적으로 활성화되어 있습니다. 이러한 필터링을 비활성화하려면 **[!UICONTROL XMP 속성에 차단 목록에 추가하다 적용]** 옵션 선택을 취소합니다.
 
 1. 변경 사항을 저장합니다.
