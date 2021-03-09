@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] 소개'
 description: 디지털 자산 관리란 무엇이고, 사용 사례 및  [!DNL Adobe Experience Manager Asset] 상품.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 130a03c821fd2a1e9ecda70039241720052a8920
+source-git-commit: b851bfb2758db60e960afd4720d04202934c18bc
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '874'
 ht-degree: 34%
 
 ---
@@ -90,5 +90,6 @@ ht-degree: 34%
 
 >[!MORELIKETHIS]
 >
->* [최신 DAM으로 Experience Manager 자산 관리](https://www.youtube.com/embed/PBwQqZgC-yo)
+>* [비디오 소개 - 최신 DAM으로 Experience Manager 에셋](https://www.youtube.com/watch?v=PBwQqZgC-yo)
+>* [메타데이터 개념 이해](/help/assets/metadata-concepts.md)
 
