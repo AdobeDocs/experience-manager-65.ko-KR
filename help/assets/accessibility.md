@@ -3,7 +3,7 @@ title: ' [!DNL Experience Manager Assets]의 액세스 가능성'
 description: ' [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] 의 액세서빌러티 기능이 장애가 있는 사용자를 돕는 방법을 알아봅니다.'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 2%
@@ -95,7 +95,7 @@ Possible topics to cover in this article are below.
 | 자산 또는 폴더가 선택됨 | `e` | 선택한 자산을 편집합니다. |
 | 자산 또는 폴더가 선택됨 | `m` | 선택한 자산을 이동합니다. |
 | 자산 또는 폴더가 선택됨 | `Ctrl + c` | 선택한 자산을 복사합니다. |
-| 자산 또는 폴더가 선택됨 | `Esc` | 선택 영역을 선택 취소합니다. |
+| 자산 또는 폴더가 선택됨 | `Esc` | 선택을 취소합니다. |
 | 대화 상자가 열리고 포커스에 있음 | `Esc` | 대화 상자를 닫습니다. |
 | DAM의 폴더 내부 | `Ctrl + v` | 복사한 자산을 붙여넣습니다. |
 | [!DNL Assets] 콘솔 | `Ctrl + A` | 모든 자산을 선택합니다. |
