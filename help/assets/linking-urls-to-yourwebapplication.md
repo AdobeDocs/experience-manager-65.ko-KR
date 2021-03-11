@@ -1,6 +1,6 @@
 ---
 title: URL을 웹 애플리케이션에 연결
-description: 다이내믹 미디어에서 웹 애플리케이션에 URL을 연결하는 방법
+description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법
 uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 1%
@@ -26,7 +26,7 @@ AEM을 WCM으로 사용하는 *이 아닌*&#x200B;인 경우에만 URL에 연결
 
 >[!NOTE]
 >
->URL 문자열은 자산의 동적 변환에만 사용할 수 있습니다. 현재 다이내믹 미디어 서버가 아니라 DAM에 있는 정적 자산에는 사용할 수 없습니다. 정적인 변환에는 URL 단추가 표시되지 않습니다.
+>URL 문자열은 자산의 동적 변환에만 사용할 수 있습니다. 현재 Dynamic Media 서버가 아닌 DAM에 있는 정적 자산에는 사용할 수 없습니다. 정적인 변환에는 URL 단추가 표시되지 않습니다.
 
 웹 페이지에 비디오 또는 이미지 뷰어 포함을 참조하십시오.](embed-code.md)[
 
@@ -190,7 +190,7 @@ Dynamic Media은 이미지 및 비디오를 넘어 추가 자산인 정적 에�
 
 1. 이전에 복사한 모든 조각을 결합하여 다음 순서로 문자열을 생성합니다.
 
-   &lt;>>&lt;>>&lt;>>&lt;>>`video asset path``video service URL``protocol selector``customer name`
+   &lt;>>&lt;>>&lt;>>&lt;>>`video service URL``protocol selector``customer name``video asset path`
 
    예를 들어, 이러한 단계의 예에서 복사한 정보를 사용하면 다음과 같이 문자열이 표시됩니다.
 
