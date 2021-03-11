@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: 0a082d3cff66b82ef6de551a735a16a001446a1e
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->`JAR` aem `WAR` 의 파일 유형은 이러한 형식은 Adobe이 커밋한 지원 수준을 충족하기 위해 품질 보증을 받습니다.
+>`JAR` AEM `WAR` 의 파일 유형은 이러한 형식은 Adobe이 커밋한 지원 수준을 충족하기 위해 품질 보증을 받습니다.
 
 
 이 섹션에서는 응용 프로그램 서버와 함께 Adobe Experience Manager(AEM)을 설치하는 방법을 설명합니다. 개별 응용 프로그램 서버에 제공된 특정 지원 수준을 보려면 [지원되는 플랫폼](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) 섹션을 참조하십시오.
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->WAR 배포에 Dynamic Media을 사용하는 경우 [다이내믹 미디어 설명서](/help/assets/config-dynamic.md#enabling-dynamic-media)를 참조하십시오.
+>WAR 배포에 Dynamic Media을 사용하는 경우 [Dynamic Media 설명서](/help/assets/config-dynamic.md#enabling-dynamic-media)를 참조하십시오.
 
 ## 일반 설명 {#general-description}
 
@@ -61,7 +61,7 @@ AEM은 단일 배포 파일로 제공됩니다.
 
 * sling.home:배포하기 전에 AEM 전쟁 파일의 `WEB-INF/web.xml`파일에 있는 `sling.home` 매개 변수를 구성합니다.
 
-* 컨텍스트 루트:aem war 파일 이름 변경
+* 컨텍스트 루트:AEM war 파일 이름 변경
 
 #### 설치 게시 {#publish-installation}
 
@@ -247,7 +247,7 @@ conf 파일에서 메모리 인수 설정(예:`standalone.conf`)
       * web.xml 파일 복구
    * 루트 웹 앱으로 배포하려는 경우 AEM war 파일의 이름을 ROOT.war로 변경하고, 컨텍스트 루트로 aemauthor를 사용하려면 aemauthor.war로 이름을 변경합니다
    * tomcat의 webapps 폴더에 복사
-   * aem이 설치될 때까지 대기
+   * AEM이 설치될 때까지 대기
 
 
 ## 문제 해결 {#troubleshooting}
