@@ -4,9 +4,9 @@ description: 병목 현상을 제거하고 성능을 최적화하기 위해  [!D
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
 workflow-type: tm+mt
-source-wordcount: '2744'
+source-wordcount: '2741'
 ht-degree: 0%
 
 ---
@@ -176,11 +176,11 @@ accessKey=<snip>
 
 #### 런타임 변환 생성 {#runtime-rendition-generation}
 
-고객은 웹 사이트에 다양한 크기와 형식의 이미지를 사용하거나 비즈니스 파트너에게 배포합니다. 각 변환은 저장소에서 자산의 풋프린트에 추가되므로 Adobe은 이 기능을 신중하게 사용할 것을 권장합니다. 이미지를 처리하고 저장하는 데 필요한 리소스 양을 줄이기 위해 수집 중 변환보다는 런타임에 이러한 이미지를 생성할 수 있습니다.
+고객은 웹 사이트에 다양한 크기와 포맷의 이미지를 사용하거나 비즈니스 파트너에게 배포할 수 있습니다. 각 변환은 저장소에서 자산의 풋프린트에 추가되므로 Adobe은 이 기능을 신중하게 사용할 것을 권장합니다. 이미지를 처리하고 저장하는 데 필요한 리소스 양을 줄이기 위해 수집 중 변환보다는 런타임에 이러한 이미지를 생성할 수 있습니다.
 
 많은 사이트 고객은 요청될 때 이미지 크기를 조정하고 잘라내는 이미지 서블릿을 구현하여 게시 인스턴스에 추가 로드를 적용합니다. 그러나 이러한 이미지를 캐시하는 한 이러한 문제를 완화시킬 수 있습니다.
 
-또 다른 방법은 Dynamic Media 기술을 사용하여 이미지를 완전히 잘라내는 것입니다. 또한, [!DNL Experience Manager] 인프라에서 변환 생성 책임을 인계받을 뿐만 아니라 전체 게시 계층도 포함하는 브랜드 포털을 배포할 수 있습니다.
+또 다른 방법은 Dynamic Media 기술을 사용하여 이미지를 완전히 잘라내는 것입니다. 또한 [!DNL Experience Manager] 인프라에서 변환 생성 책임을 인계받을 뿐만 아니라 전체 게시 계층도 포함하는 브랜드 포털을 배포할 수 있습니다.
 
 #### ImageMagick {#imagemagick}
 
@@ -241,7 +241,7 @@ XMP 원본에 대한 업데이트는 메타데이터를 [!DNL Experience Manager
 
 ## 색인 검색 {#search-indexes}
 
-최신 서비스 팩 및 성능 관련 핫픽스가 시스템 색인에 대한 업데이트를 자주 포함하므로 반드시 구현하십시오. 색인 최적화에 대한 자세한 내용은 [성능 조정 팁](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)을 참조하십시오.
+시스템 색인에 대한 업데이트를 포함하는 최신 서비스 팩](/help/release-notes/sp-release-notes.md) 및 성능 관련 핫픽스를 설치합니다. [ 색인 최적화에 대한 자세한 내용은 [성능 조정 팁](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)을 참조하십시오.
 
 자주 실행하는 쿼리에 대한 사용자 정의 색인을 만듭니다. 자세한 내용은 [슬로우 쿼리 분석 방법](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) 및 [사용자 정의 인덱스 제작](/help/sites-deploying/queries-and-indexing.md)을 참조하십시오. 쿼리 및 인덱스 우수 사례에 대한 추가 통찰력은 [쿼리 및 색인화에 대한 우수 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)를 참조하십시오.
 
