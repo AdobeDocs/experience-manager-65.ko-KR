@@ -6,7 +6,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 14%
@@ -24,7 +24,7 @@ ht-degree: 14%
 >
 >Dynamic Media과 함께 Dynamic Media Classic에 통합된 AEM을 사용하고 싶은 경우 [이중 사용 시나리오](/help/sites-administering/scene7.md#dual-use-scenario)을 참조하십시오.
 
-다이내믹 미디어를 관리하는 경우 다음 항목에 관심이 있습니다.
+Dynamic Media을 관리하는 경우 다음 항목에 관심이 있습니다.
 
 * [Dynamic Media-Scene7 모드](config-dms7.md)  구성 — 새 Dynamic Media 고객인 경우 이 구성을 사용합니다.
 * [Dynamic Media-하이브리드 모드](config-dynamic.md)  구성 — AEM을 업그레이드하는 기존 Dynamic Media 고객인 경우 이 구성을 사용합니다.
