@@ -3,7 +3,7 @@ title: ' [!DNL Assets]에 대한 우수 사례'
 description: 배포 및 구성에 따라 달라지는 모범 사례를 식별하고 준수하여 로드되는 시스템 안정성 및 성능을 향상시킵니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Assets] {#best-practices-for-assets}에 대한 우수 사례
 
-[!DNL Adobe Experience Manager Assets] 콘텐츠 제작 속도를 높여 비즈니스 목표 달성에 기여하는 고품질의 디지털 마케팅 경험을 전달하는 데 있어 매우 중요한 역할을 하고 있습니다. [!DNL Experience Manager Assets] 내에서 많은 에셋을 사용하여 작업하거나 비디오 및 다이내믹 미디어를 비롯한 다양한 에셋을 정기적으로/정기적으로 업로드하는 경우 시스템 효율성을 높이기 위해 디지털 에셋 관리 환경을 최적화하는 것이 중요합니다.
+[!DNL Adobe Experience Manager Assets] 콘텐츠 제작 속도를 높여 비즈니스 목표 달성에 기여하는 고품질의 디지털 마케팅 경험을 전달하는 데 있어 매우 중요한 역할을 하고 있습니다. [!DNL Experience Manager Assets] 내에서 많은 에셋을 사용하여 작업하거나 비디오 및 Dynamic Media을 비롯한 여러 에셋을 정기적으로/정기적으로 업로드하는 경우 시스템 효율성을 높이기 위해 디지털 에셋 관리 경험을 최적화하는 것이 중요합니다.
 
 조직 및 자산 수집, 변환 생성 및 메타데이터 추출에 사용하는 기능을 배치하여 다양한 영역에서 모범 사례를 식별하고 이에 따라 로드 중인 시스템 안정성과 성능이 크게 향상되었습니다.[!DNL Assets]
 
