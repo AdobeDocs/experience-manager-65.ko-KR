@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media 뉴스레터
 description: 'Experience League의 Dynamic Media 뉴스레터는 월간 뉴스레터입니다. 이 플러그인은 Dynamic Media 및 Dynamic Media Classic을 빠르게 사용할 수 있도록 설계되어 있으므로 즉시 가치를 실현할 수 있습니다. 비디오 방법, 솔루션 개요 및 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 주요 기능과 기능에 대한 소개를 비롯하여 유용한 지식 구축 리소스를 이 원 스톱 스토어 뉴스레터에서 사용할 수 있습니다. '
-keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
+keywords: Dynamic Media;뉴스레터;제품 업데이트;팁과 트릭;이벤트;고객 성공;블로그;블로그;이미지;기능;기능
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Experience League의 월간 Dynamic Media 뉴스레터는 Dynamic Media 및 Dyna
 
    * Dynamic Media으로 업그레이드할 때에만 사용할 수 있는 중요한 기능을 살펴보십시오.
    * Adobe Experience Manager 에셋 및 Dynamic Media을 빠르게 익힐 수 있도록 고안된 웨비나 시리즈에 대해 살펴보십시오.
-   * Experience League 기반의 Dynamic Media을 통해 가치를 창출할 수 있는 여행
+   * Experience League에서 Dynamic Media을 통해 가치를 창출하는 여정을 시작할 수 있습니다.
    * 방문자가 리치 미디어와 어떻게 상호 작용하는지 분석할 수 있는 이번 9월 이후의 강력한 통합을 미리 보십시오.
    * Dynamic Media 기술 지원의 귀재인 PieterJan Pieper를 만나보십시오.
 
