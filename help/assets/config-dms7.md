@@ -1,15 +1,15 @@
 ---
 title: Dynamic Media 구성 - Scene7 모드
-description: Dynamic Media - Scene7 모드를 구성하는 방법에 대한 정보입니다.
+description: Dynamic Media - Scene7 모드를 구성하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
+source-git-commit: 99293a13fcdf06f37d9747683f7c32ebd9246d18
 workflow-type: tm+mt
-source-wordcount: '6072'
+source-wordcount: '6138'
 ht-degree: 1%
 
 ---
@@ -65,11 +65,11 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 >
 >호환성 모드에서 Experience Manager 인스턴스를 실행하는 경우(즉, 패키지화된 호환성 설치) 이러한 명령을 실행할 필요가 없습니다.
 
-호환성 패키지가 있거나 없는 모든 업그레이드의 경우 다음 Linux 말림 명령을 실행하여 원래 Dynamic Media과 함께 제공된 기본 기본 기본 기본 뷰어 사전 설정을 복사할 수 있습니다.
+호환성 패키지가 있거나 없는 모든 업그레이드의 경우 다음 Linux® curl 명령을 실행하여 원래 Dynamic Media과 함께 제공된 기본 기본 기본 기본 기본 뷰어 사전 설정을 복사할 수 있습니다.
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-`/etc`에서 만든 사용자 정의 뷰어 사전 설정 및 구성을 `/conf`(으)로 마이그레이션하려면 다음 Linux 말림 명령을 실행하십시오.
+`/etc`에서 만든 사용자 정의 뷰어 사전 설정 및 구성을 `/conf`으로 마이그레이션하려면 다음 Linux® curl 명령을 실행하십시오.
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
@@ -106,7 +106,10 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    * **[!UICONTROL 자산 게시]**  - 다음 3가지 옵션 중에서 선택할 수 있습니다.
       * **[!UICONTROL 즉시]** 는 에셋이 업로드되면 시스템이 에셋을 인제스트하고 URL/포함을 즉시 제공함을 의미합니다. 자산을 게시하는 데 필요한 사용자 개입은 없습니다.
-      * **[!UICONTROL 활성화 시]** 는 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.
+      * **[!UICONTROL 활성화 시]** 는 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.<br><!-- CQDOC-17478, Added March 9, 2021-->Experience Manager 6.5.8 이상 버전에서 Experience Manager 게시 인스턴스는 활성화 시 게시 모드 `dam:scene7Domain` 와 같은 정확한 Dynamic Media 메타데이터 값 `dam:scene7FileStatus` 을  **** 반영합니다. 이 기능을 활성화하려면 서비스 팩 8을 설치한 다음 Experience Manager을 다시 시작하십시오. Sling 구성 관리자로 이동합니다. `Scene7ActivationJobConsumer Component` 구성을 찾거나 새 구성을 만듭니다.) Dynamic Media 게시&#x200B;]**후 메타데이터 복제 확인란을 선택한 다음**[!UICONTROL &#x200B;저장&#x200B;]**을 누릅니다.**[!UICONTROL 
+
+         ![Dynamic Media 게시 후 메타데이터 복제 확인란](assets-dm/replicate-metadata-setting.png)
+
       * **[!UICONTROL 선택적]** 게시이 옵션을 사용하면 Dynamic Media에 게시되는 폴더를 제어할 수 있습니다. 스마트 자르기 또는 동적 표현물과 같은 기능을 사용하거나 미리 보기 위해 Experience Manager에서만 게시되는 폴더를 결정할 수 있습니다. 동일한 자산은 공개 도메인에 배달을 위해 Dynamic Media에 게시되지 *않습니다*.<br>이 옵션은  **[!UICONTROL Dynamic Media Cloud]** 구성에서 설정하거나, 원할 경우 폴더의  **[!UICONTROL 속성에서 폴더 수준에서 설정할 수 있습니다]**.<br>[Dynamic Media의 선택적 게시 작업을 참조하십시오.](/help/assets/selective-publishing.md)<br>나중에 이 구성을 변경하거나 나중에 폴더 수준에서 변경하면 해당 시점부터 업로드한 새 자산에만 변경 사항이 적용됩니다. **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 발행물 관리]** 대화 상자에서 수동으로 변경할 때까지 폴더의 기존 자산의 게시 상태는 그대로 유지됩니다.
    * **[!UICONTROL 보안 미리 보기 서버]**  - 보안 변환 미리 보기 서버에 대한 URL 경로를 지정할 수 있습니다. 즉, 변환이 생성된 후 Experience Manager은 원격 Dynamic Media 변환에 안전하게 액세스하고 미리 볼 수 있습니다(이진 파일은 Experience Manager 인스턴스로 다시 전송되지 않음).
 회사 서버 또는 특수 서버를 사용하기 위해 특별한 일정이 없으면 이 설정을 지정한 대로 유지하는 것이 좋습니다.
@@ -117,7 +120,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
       * **[!UICONTROL 기본적으로]**  활성화됨 - 제외용으로 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다.  <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 기본적으로]**  사용 안 함 - Dynamic Media에 동기화하도록 선택한 폴더를 명시적으로 표시할 때까지 해당 구성은 폴더에 적용되지 않습니다.
 Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 탭합니다. **[!UICONTROL 세부 사항]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 3가지 옵션 중에서 선택합니다. 완료되면 **[!UICONTROL 저장을 누릅니다.]** *기억:이 3가지 옵션은 [모든 내용&#x200B;**동기화]를 선택한 경우 사용할 수**없습니다.* Dynamic Media [의 폴더 수준에서 선택적 게시로 작업을 참조하십시오.](/help/assets/selective-publishing.md)
-         * **[!UICONTROL 상속됨]**  - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 도구 설명을 통해 표시되는 세부 상태입니다.
+         * **[!UICONTROL 상속됨]**  - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 도구 설명을 통해 상속된 쇼의 세부 상태입니다.
          * **[!UICONTROL 하위 폴더에 대해]**  활성화 - Dynamic Media에 동기화할 수 있도록 이 하위 트리에 모든 것을 포함합니다. 폴더 특정 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
          * **[!UICONTROL 하위 폴더에 대해]**  사용 안 함 - 이 하위 트리의 모든 항목을 Dynamic Media으로 동기화에서 제외합니다.
 
