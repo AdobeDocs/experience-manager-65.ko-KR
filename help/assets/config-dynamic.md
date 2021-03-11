@@ -10,7 +10,7 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: 99293a13fcdf06f37d9747683f7c32ebd9246d18
+source-git-commit: 54dd71655aeae00bcaa27847f91af07f15faf478
 workflow-type: tm+mt
 source-wordcount: '7840'
 ht-degree: 2%
@@ -977,6 +977,7 @@ CMYK, RGB 또는 회색 출력을 사용하여 Dynamic Media 색상 관리를 �
 
 >[!NOTE]
 표준 Adobe 색상 프로파일 세트는 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)의 [기능 팩 12445가 설치되어 있는 경우에만 사용할 수 있습니다. 모든 기능 팩과 서비스 팩은 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 사용할 수 있습니다. Feature Pack 12445는 Adobe 색상 프로파일을 제공합니다.
+
 
 ### 기능 팩 12445 설치 {#installing-feature-pack}
 
