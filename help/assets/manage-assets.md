@@ -4,7 +4,7 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
+source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
 workflow-type: tm+mt
 source-wordcount: '9590'
 ht-degree: 0%
@@ -340,7 +340,7 @@ Adobe Experience Manager에 많은 에셋을 업로드하면 I/O 요청이 크�
 * 동일한 이름의 폴더가 대상에 있으면 ZIP 파일의 에셋이 기존 폴더에 추출됩니다.
 * 추출을 취소하면 이미 추출된 에셋은 삭제되지 않습니다.
 * 동시에 두 개의 ZIP 파일을 선택하고 추출할 수 없습니다. 한 번에 하나의 ZIP 보관만 추출할 수 있습니다.
-* ZIP 아카이브를 업로드할 때 업로드 대화 상자에 500 서버 오류가 표시되는 경우 최신 서비스 팩을 설치한 후 다시 시도하십시오.
+* ZIP 아카이브를 업로드할 때 업로드 대화 상자에 500개의 서버 오류가 표시되는 경우 [최신 서비스 팩](/help/release-notes/sp-release-notes.md)을(를) 설치한 후 다시 시도하십시오.
 
 ## 자산 미리 보기 {#previewing-assets}
 
