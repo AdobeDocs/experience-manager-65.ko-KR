@@ -1,66 +1,50 @@
 ---
-title: Adobe Experience Manager 6.5 서비스 팩 7의 새로운 기능
-description: Adobe Experience Manager 6.5 서비스 팩 7의 새로운 기능
+title: ' [!DNL Experience Manager] 6.5 서비스 팩 8의 새로운 기능'
+description: ' [!DNL Experience Manager] 6.5 서비스 팩 8의 새로운 기능'
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
+source-git-commit: 2c6d11f63420040a500bbb75f1146c29f64bdcc5
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 56%
+source-wordcount: '2883'
+ht-degree: 53%
 
 ---
 
 
-# Adobe Experience Manager 6.5 서비스 팩 7의 새로운 기능 {#aem-whats-new-service-pack}
+# [!DNL Adobe Experience Manager] 6.5 서비스 팩 8 {#aem-whats-new-service-pack}의 새로운 기능
 
 ![새로운 기능](assets/whatsnew.jpeg)
 
 [!DNL Adobe Experience Manager] 6.5 서비스 팩은 분기별로 새로운 기능, 고객의 요청에 따라 향상된 기능, 성능, 안정성 및 보안 개선 사항을 제공합니다. 분기별 출시되어 새로운 기능과 혁신적인 기능에 쉽게 액세스하고 그러한 기능을 채택할 수 있습니다.
 
-이 문서에서는 최신 6.5 서비스 팩, 이전 6.5 서비스 팩](#key-features-previous-service-packs)에 포함된 [주요 기능 및 마지막 서비스 팩](#key-releases-since-last-sp) 릴리스 이후 [주요 AEM 릴리스에 포함된 기능에 대해 다룹니다.
+이 문서에서는 최신 서비스 팩, 이전 6.5 서비스 팩](#key-features-previous-service-packs)에 포함된 [주요 기능 및 마지막 서비스 팩](#key-releases-since-last-sp) 릴리스 이후 [주요 릴리스에 포함된 기능에 대해 다룹니다.
 
-## Adobe [!DNL Experience Manager Sites] {#aem-sites}
+## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### 페이지 이동 가능 여부 및 비동기 작업 {#page-moves-msm-asynchronous}(으)로 MSM 롤아웃
+### 롤아웃에 사용할 수 있는 Live Copy 페이지 정렬 {#sort-livecopy-pages}
 
-이제 페이지 이동 및 MSM 롤아웃을 비동기 작업으로 수행하여 런타임 성능에 대한 영향을 줄일 수 있습니다. 즉시 또는 나중에 실행할 작업을 예약할 수 있습니다. 연결된 작업 및 프로세스 단계의 상태가 콘솔에 표시되어 대규모 MSM 롤아웃을 모니터링하는 데 유용합니다.
+이제 [!UICONTROL 이름], [!UICONTROL 마지막으로 수정한 날짜] 및 [!UICONTROL 마지막 롤아웃 날짜] 속성을 사용하여 롤아웃에 사용할 수 있는 Live Copy 페이지를 정렬할 수 있습니다. 페이지에 대한 [!UICONTROL 마지막 롤아웃 날짜]는 이 릴리스에서 도입된 새 속성입니다.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* [!DNL Assets] 다양한 액세서빌러티 향상 기능을  [!DNL Dynamic Media] 제공합니다. 향상된 기능은 키보드 탐색, 화면 판독기 사용, 보조 기술(AT)을 사용할 수 있도록 해주는 유사한 개선 사항과 관련이 있습니다. [[!DNL Assets] 개선 사항](/help/release-notes/sp-release-notes.md#assets-6570) 및 [[!DNL Dynamic Media] 개선 사항](/help/release-notes/sp-release-notes.md#dynamic-media-6570)을 참조하십시오.
+* 이제 [연결된 자산 기능](/help/assets/use-assets-across-connected-assets-instances.md)을 사용할 때 자산을 사용하는 모든 [!DNL Sites] 페이지의 목록을 볼 수 있습니다. 자산에 대한 이러한 참조는 자산의 [!UICONTROL 속성] 페이지에서 사용할 수 있습니다. 이를 통해 관리자, 마케터 및 라이브러리에서는 자산 사용량을 전체적으로 볼 수 있으므로 추적, 관리 및 브랜드 일관성을 향상시킬 수 있습니다.
 
-* 사용자는 카드 및 열 보기에서 디지털 자산을 정렬할 수 있습니다.
+* 웹 페이지에서 참조되는 자산을 삭제하면 [!DNL Experience Manager]에 경고가 표시됩니다. 참조된 자산을 강제로 삭제하거나 자산의 [!DNL Properties] 페이지에 표시되는 참조를 확인하고 수정할 수 있습니다. 참조를 클릭하면 로컬 및 원격 [!DNL Sites] 페이지가 열립니다.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] 추가 패키지는 예약된  [!DNL Experience Manager] 서비스 팩 릴리스 후 일주일 후에 사용할 수 있습니다.
-
-### 성능 개선 사항 {#performance-improvements-forms}
-
-[!DNL Experience Manager] 6.5 서비스 팩 7 Forms은 다음 제품의 성능을 향상시킵니다.
-
-* 적응형 양식을 제출할 때 서버에서 필드 값의 유효성을 검사합니다.
-
-* [!DNL Automated Forms Conversion service]을(를) 사용하여 PDF 양식을 적응형 양식으로 변환
-
-### 성능 최적화를 위한 양식 데이터 모델 HTTP 클라이언트 구성 {#fdm-http-client-config}
-
-[!DNL Experience Manager Forms] 데이터 소스로 RESTful 웹 서비스와 통합할 때 양식 데이터 모델에 성능 최적화를 위한 HTTP 클라이언트 구성이 포함됩니다. [데이터 소스 구성](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration)을 참조하십시오.
-
-### 레이아웃 모드 {#reset-option-layout-mode}의 각 구성 요소에 대한 재설정 옵션 사용 가능
-
-이제 적응형 양식의 레이아웃 모드에서 각 구성 요소에 대해 재설정 옵션을 사용할 수 있습니다. 패널의 여러 열로 구성된 레이아웃을 정의할 때 이 기능을 사용하여 패널 내의 개별 구성 요소를 재설정할 수 있습니다. 구성 요소](../../help/forms/using/resize-using-layout-mode.md#resize-components)의 크기를 조정하려면 [레이아웃 모드 사용을 참조하십시오.
-
-### Microsoft SQL Server 2019 지원
-
-[!DNL Experience Manager Forms] 이제 Microsoft SQL Server 2019를 지원합니다.
+>[!DNL Experience Manager Forms]의 Add-on 패키지는 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 후 일주일 후에 사용할 수 있습니다.
 
 ## 이전 [!DNL Experience Manager] 6.5 서비스 팩 {#key-features-previous-service-packs}의 주요 기능
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
+
+#### 페이지 이동 가능 여부 및 비동기 작업으로 MSM 롤아웃 사용 가능(6.5.7.0) {#page-moves-msm-asynchronous}
+
+이제 페이지 이동 및 MSM 롤아웃을 비동기 작업으로 수행하여 런타임 성능에 대한 영향을 줄일 수 있습니다. 즉시 또는 나중에 실행할 작업을 예약할 수 있습니다. 연결된 작업 및 프로세스 단계의 상태가 콘솔에 표시되어 대규모 MSM 롤아웃을 모니터링하는 데 유용합니다.
 
 #### 비동기 모드에서 페이지 이동 작업 사용 가능(6.5.6.0) {#page-move-asynchronous}
 
@@ -109,6 +93,10 @@ ht-degree: 56%
 * 불완전하거나 잘못된 URL의 처리가 개선되었습니다. 그러한 URL을 사용하면 템플릿 편집기의 속도가 느려질 수 있습니다.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+* [!DNL Assets] 다양한 액세서빌러티 향상 기능을  [!DNL Dynamic Media] 제공합니다. 향상된 기능은 키보드 탐색, 화면 판독기 사용, 보조 기술(AT)을 사용할 수 있도록 해주는 유사한 개선 사항과 관련이 있습니다. [[!DNL Assets] 개선 사항](/help/release-notes/sp-release-notes.md#assets-6570) 및 [[!DNL Dynamic Media] 개선 사항](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0)을 참조하십시오.
+
+* 사용자는 카드 및 열 보기(6.5.7.0)에서 디지털 자산을 정렬할 수 있습니다.
 
 #### 액세스 가능성 개선(6.5.6.0) {#accessibility-assets-6560}
 
@@ -220,6 +208,22 @@ ht-degree: 56%
 비디오 프로필에서 사용할 수 있는 선택적 기능인 비디오 스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자르는 도구입니다. [비디오 프로필에서 스마트 자르기 사용 정보](../assets/video-profiles.md)를 참조하십시오.
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### 성능 개선 사항(6.5.7.0) {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 서비스 팩 7 Forms은 다음 제품의 성능을 향상시킵니다.
+
+* 적응형 양식을 제출할 때 서버에서 필드 값의 유효성을 검사합니다.
+
+* [!DNL Automated Forms Conversion service]을(를) 사용하여 PDF 양식을 적응형 양식으로 변환
+
+#### 성능 최적화를 위한 양식 데이터 모델 HTTP 클라이언트 구성(6.5.7.0) {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] 데이터 소스로 RESTful 웹 서비스와 통합할 때 양식 데이터 모델에 성능 최적화를 위한 HTTP 클라이언트 구성이 포함됩니다. [데이터 소스 구성](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration)을 참조하십시오.
+
+#### 레이아웃 모드에서 각 구성 요소에 대한 재설정 옵션 사용 가능(6.5.7.0) {#reset-option-layout-mode}
+
+이제 적응형 양식의 레이아웃 모드에서 각 구성 요소에 대해 재설정 옵션을 사용할 수 있습니다. 패널의 여러 열로 구성된 레이아웃을 정의할 때 이 기능을 사용하여 패널 내의 개별 구성 요소를 재설정할 수 있습니다. 구성 요소](../../help/forms/using/resize-using-layout-mode.md#resize-components)의 크기를 조정하려면 [레이아웃 모드 사용을 참조하십시오.
 
 #### 클라이언트에서 응용 양식을 미리 채우기(6.5.6.0) {#prefill-merge-data-at-client}
 
@@ -337,19 +341,18 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 
 배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들면 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다. [AEM Forms용 배치 API를 사용하여 여러 대화형 커뮤니케이션 생성](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)을 참조하십시오.
 
-## Adobe Experience Manager 6.5 SP6 이후 주요 릴리스 {#key-releases-since-last-sp}
+<!-- TBD: Check if the wider team released anything in FY21.
+-->
 
-2020년 9월 03일부터 2020년 11월 26일까지 Adobe은 서비스 팩 및 누적 수정 팩과 함께 다음 내용을 발표했습니다.
+## [!DNL Adobe Experience Manager] 6.5 SP7 {#key-releases-since-last-sp} 이후의 주요 릴리스
 
-* [!DNL Adobe Experience Manager] (Cloud Service  [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes)  및  [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes)).
+2020년 11월 26일부터 2021년 2월 25일까지 Adobe은 서비스 팩 및 누적 수정 팩 외에 다음 내용을 발표했습니다.
 
-* [[!DNL Experience Manager] 데스크탑 앱 2.0(2.0.3.2)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [!DNL Adobe Experience Manager] Cloud Service  [2020.11.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-11-0.html),  [2020.12.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-12-0.html) 및  [2021.1.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date)으로
 
-* [WKND 참조 사이트 - 0.0.6](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-0.0.6)
+* [[!DNL Experience Manager] 데스크탑 앱 2.1(2.1.0.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 * [Experience Manager Screens: 기능 팩 202011](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202011.html)
-
-* [Adobe 자산 링크 v2.2](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)
 
 >[!MORELIKETHIS]
 >
