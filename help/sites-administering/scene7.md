@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '5452'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Dynamic Media Classic을 사용하려면 Dynamic Media Classic 및 AEM Assets이
 
 ## AEM/Dynamic Media Classic 통합 대 Dynamic Media {#aem-scene-integration-versus-dynamic-media}
 
-AEM 사용자는 다이내믹 미디어로 작업할 두 가지 솔루션 중에서 선택할 수 있습니다.AEM 인스턴스를 Dynamic Media Classic과 통합하거나 AEM에 통합된 Dynamic Media 솔루션을 사용합니다.
+AEM 사용자는 Dynamic Media에서 사용할 수 있는 두 가지 솔루션 중에서 선택할 수 있습니다.AEM 인스턴스를 Dynamic Media Classic과 통합하거나 AEM에 통합된 Dynamic Media 솔루션을 사용합니다.
 
 다음 기준을 사용하여 선택할 솔루션을 결정합니다.
 
@@ -57,7 +57,7 @@ AEM 사용자는 다이내믹 미디어로 작업할 두 가지 솔루션 중에
 
 AEM Dynamic Media은 AEM 플랫폼 내에서 바로 Dynamic Media Classic 기능이 통합되어 있습니다.
 
-이 솔루션에서 자산을 사용하여 작업할 때는 다음 작업 과정을 따릅니다.
+이 솔루션에서 자산을 사용하여 작업하는 경우 다음 작업 과정을 따릅니다.
 
 1. 단일 이미지 및 비디오 에셋을 AEM에 바로 업로드할 수 있습니다.
 1. AEM에서 바로 비디오를 인코딩할 수 있습니다.
@@ -202,7 +202,7 @@ Adobe에서는 전체 회사가 아닌 하위 폴더를 가리키도록 루트 �
 
 에셋이 이미 Dynamic Media Classic에 있고 일반 저장소에서 에셋을 관리하는 것이 중요하지 않은 경우 AEM Assets으로 내보내면 Dynamic Media Classic으로 동기화하여 전달할 필요가 없습니다. 그렇지 않으면 단일 저장소에 에셋을 유지하고 배달을 위해 Dynamic Media Classic에만 동기화하는 것이 더 좋을 수 있습니다.
 
-## Dynamic Media Classic 통합 구성 중 {#configuring-scene-integration}
+## Dynamic Media Classic 통합 구성 {#configuring-scene-integration}
 
 Dynamic Media Classic에 자산을 업로드하도록 AEM을 구성할 수 있습니다. CQ 대상 폴더의 자산은 AEM에서 Dynamic Media Classic 회사 계정으로 업로드(자동 또는 수동으로)할 수 있습니다.
 
@@ -281,7 +281,7 @@ AEM Assets과 Dynamic Media Classic 간의 동기화를 통해 현재 다음과 
 
 ### Dynamic Media Classic 서버 구성 {#configuring-scene-servers}
 
-프록시에서 AEM을 실행하거나 특수 방화벽 설정을 사용하는 경우 다른 영역의 호스트를 명시적으로 활성화해야 할 수 있습니다. 서버는 `/etc/cloudservices/scene7/endpoints`의 컨텐츠에서 관리되며 필요에 따라 사용자 정의할 수 있습니다. 필요한 경우 URL을 누른 다음 편집하여 URL을 변경합니다. 이전 버전의 AEM에서는 이러한 값이 하드 코딩되었습니다.
+프록시 뒤에서 AEM을 실행하거나 특수 방화벽 설정을 사용하는 경우 다른 영역의 호스트를 명시적으로 활성화해야 할 수 있습니다. 서버는 `/etc/cloudservices/scene7/endpoints`의 컨텐츠에서 관리되며 필요에 따라 사용자 정의할 수 있습니다. 필요한 경우 URL을 누른 다음 편집하여 URL을 변경합니다. 이전 버전의 AEM에서는 이러한 값이 하드 코딩되었습니다.
 
 `/etc/cloudservices/scene7/endpoints.html`으로 이동하면 나열된 서버가 표시됩니다(URL을 클릭하여 편집할 수 있음).
 
