@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 자산 제공
-description: 다이내믹 미디어 에셋을 제공하는 방법 학습
+description: Dynamic Media 에셋을 제공하는 방법 학습
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,21 +9,21 @@ content-type: reference
 discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eacfe8a79d155dddde8908d05b05790d048b0c5
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 26%
+ht-degree: 20%
 
 ---
 
 
 # Dynamic Media 자산 제공{#delivering-dynamic-media-assets}
 
-비디오 및 이미지 등 다이내믹 미디어 자산을 제공하는 방법은 웹 사이트 구현 방법에 따라 다릅니다.
+비디오 및 이미지 등 Dynamic Media 자산을 제공하는 방법은 웹 사이트 구현 방법에 따라 다릅니다.
 
 Dynamic Media에는 다음의 몇 가지 선택 사항이 있습니다.
 
-* 웹 사이트가 AEM에서 호스팅된다면, 다이내믹 미디어 자산을 페이지에 바로 추가할 수 있습니다.
+* 웹 사이트가 AEM에서 호스팅되는 경우 Dynamic Media 자산을 페이지에 직접 추가할 수 있습니다.
 * 웹 사이트가 AEM에 없다면 다음 중 하나를 선택할 수 있습니다.
 
    * 웹 사이트에 비디오 또는 이미지 임베드
