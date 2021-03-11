@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: d72b8844-d782-4b5b-8999-338217dbefb9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7d93df515bf98f0a947428b8093e059d63b21a34
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 6%
@@ -61,5 +61,5 @@ ht-degree: 6%
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | 지연 | **/etc/cloudsettings**(ContextHub 구성 포함)를 정리합니다. 구성은 첫 번째 액세스 시 자동으로 마이그레이션됩니다. 이 컨텐츠를 업그레이드하고 **/etc/cloudsettings**&#x200B;의 lazy Content Migration을 시작하는 경우 업그레이드 전에 패키지를 통해 유지 관리하고 암시적 변형을 수행하기 위해 재설치해야 하며 완료 후 패키지의 후속 제거가 완료됩니다. |
 | `CQ64UsersTitleFixTask` | &lt; 6=&quot;&quot;> | 지연 | 사용자 프로필 노드에서 제목으로 기존 제목 구조를 조정합니다. |
 | `CQ64CommerceMigrationTask` | &lt; 6=&quot;&quot;> | 지연 | 상거래 콘텐츠를 **/etc/commerce**&#x200B;에서 **/var/commerce**&#x200B;로 마이그레이션합니다. 마이그레이션 중에 내용이 이동되고 이동된 콘텐츠에 대한 참조가 새 위치를 반영하도록 업데이트됩니다. |
-| `CQ65DMMigrationTask` | &lt; 6.5 | 지연 | 기존 카탈로그 설정 및 다이내믹 미디어 클라우드 서비스 설정을 **/etc**&#x200B;에서 **/conf**(으)로 마이그레이션 |
+| `CQ65DMMigrationTask` | &lt; 6.5 | 지연 | 기존 카탈로그 설정 및 Dynamic Media Cloud Services 설정을 **/etc**&#x200B;에서 **/conf**(으)로 마이그레이션 |
 | `CQ65LegacyClientlibsCleanupTask` | &lt; 6=&quot;&quot;> | 지연 | **/etc/clientlibs** 아래에 있는 기존 클라이언트 목록 정리 |
