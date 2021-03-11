@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 자산 게시
-description: 다이내믹 미디어 자산을 게시하는 방법
+description: Dynamic Media 자산을 게시하는 방법
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 이미 업로드한 자산을 선택하고 **[!UICONTROL 게시]** 또는 **[!UICONTROL 빠른 게시를 탭하여 Dynamic Media 자산을 게시합니다.]** Dynamic Media 에셋이 게시된 후에는 URL을 통해 웹 페이지에 포함하거나 페이지에 코드를 포함시켜 사용할 수 있습니다.
 
 또한 사용자가 직접 개입하지 않고도 업로드한 에셋을 즉시 게시할 수 있습니다. [Dynamic Media 구성 - Scene7 모드를 참조하십시오.](config-dms7.md)
-또는 폴더 수준에서 선택적 게시 **[!UICONTROL 를 사용하여 선택적으로 에셋을 Dynamic Media 또는 AEM에 게시할]** 수 있습니다. Dynamic Media에서 [선택적 게시 작업을 참조하십시오.](/help/assets/selective-publishing.md)
+또는 폴더 수준에서 선택적 게시 **[!UICONTROL 를 사용하여 선택적으로 에셋을 Dynamic Media 또는 AEM에 게시할]** 수 있습니다. [Dynamic Media의 선택적 게시 작업](/help/assets/selective-publishing.md)을 참조하십시오.
 
 **[!UICONTROL 카드 보기]**&#x200B;에서 작은 지구 아이콘이 자산 이름 바로 아래에 나타나고 자산 이름이 게시되었음을 나타내는 날짜와 시간 왼쪽에 나타납니다. **[!UICONTROL 목록 보기]**&#x200B;에서 **[!UICONTROL 게시된]** 열은 게시되었거나 게시되지 않은 자산을 나타냅니다.
 
