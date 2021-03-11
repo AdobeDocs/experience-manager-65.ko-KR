@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '3096'
-ht-degree: 27%
+ht-degree: 26%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 27%
 
 웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하려면 페이지에 직접 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **비디오 360 미디어** 구성 요소를 추가할 수 있습니다. 이렇게 하려면 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 그에 따라 사용 가능한 구성 옵션이 달라집니다.
 
-Adobe Experience Manager을 WCM으로 사용하는 경우 페이지에 바로 Dynamic Media 자산을 추가합니다. WCM에 제3자를 사용하는 경우 [link](/help/assets/linking-urls-to-yourwebapplication.md) 또는 [embed](/help/assets/embed-code.md) 에셋을 참조하십시오. 응답형 제3자 웹 사이트는 응답형 사이트[에 최적화된 이미지 제공을 참조하십시오.](/help/assets/responsive-site.md)
+Adobe Experience Manager을 WCM으로 사용하는 경우 페이지에 바로 Dynamic Media 자산을 추가합니다. WCM에 제3자를 사용하는 경우 [link](/help/assets/linking-urls-to-yourwebapplication.md) 또는 [embed](/help/assets/embed-code.md) 에셋을 참조하십시오. 응답형 제3자 웹 사이트는 응답형 사이트](/help/assets/responsive-site.md)에 최적화된 이미지 제공을 참조하십시오.[
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Dynamic Media 구성 요소는 스마트합니다.이미지를 추가하는지 �
 Dynamic Media 구성 요소를 추가하고 **[!UICONTROL Dynamic Media 설정]**&#x200B;이 비어 있거나 자산을 제대로 추가할 수 없는 경우, 다음을 확인하십시오.
 
 * [Dynamic Media를 활성화](/help/assets/config-dynamic.md)했습니다. Dynamic Media는 기본적으로 비활성화됩니다.
-* 이미지에 피라미드형 tiff 파일이 있습니다. 다이내믹 미디어를 활성화하기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
+* 이미지에 피라미드형 tiff 파일이 있습니다. Dynamic Media이 활성화되기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
 
 #### 이미지 작업 시 {#when-working-with-images}
 
@@ -328,7 +328,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 구성 요소에서 **[!UICONTROL 구성]**&#x200B;을 탭하여 다음 설정을 편집할 수 있습니다.
 
-* **[!UICONTROL 뷰어 사전]** 설정 - 뷰어 사전 설정 드롭다운 메뉴에서 기존 뷰어를 선택합니다. 가상 현실 안경을 사용하는 최종 사용자를 위해 Video360VR을 사용합니다. 기본 비디오 재생 컨트롤과 소셜 미디어 기능이 포함되어 있습니다. 기본 비디오 재생 컨트롤이 포함된 Video360_social을 사용합니다. 비디오 렌더링은 스테레오 모드에서 수행됩니다. 수동 관점제어 기능은 꺼져 있지만 자이로스코프 제어 기능은 켜져 있습니다. 소셜 미디어 기능이 없습니다.
+* **[!UICONTROL 뷰어 사전]** 설정 - 뷰어 사전 설정 드롭다운 메뉴에서 기존 뷰어를 선택합니다. 가상 현실 안경을 사용하는 최종 사용자를 위해 Video360VR을 사용합니다. 기본 비디오 재생 컨트롤과 소셜 미디어 기능이 포함되어 있습니다. 기본 비디오 재생 컨트롤이 포함된 Video360_social을 사용합니다. 비디오 렌더링은 스테레오 모드에서 수행됩니다. 수동 관점제어 기능은 꺼져 있지만 자이로스코프 제어 기능이 켜져 있습니다. 소셜 미디어 기능이 없습니다.
 
 찾고 있는 뷰어 사전 설정이 표시되지 않는 경우 게시되었는지 확인하십시오. 뷰어 사전 설정을 사용하려면 먼저 게시해야 합니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 
 
