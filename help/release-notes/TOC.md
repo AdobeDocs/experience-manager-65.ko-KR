@@ -3,10 +3,10 @@ cloud: experience-cloud
 product: experience manager
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5 릴리스 노트
-breadcrumb-title: 릴리스 정보
+breadcrumb-title: 릴리스 노트
 user-guide-description: 릴리스 정보에서 AEM 6.5의 최신 새로운 기능에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 56551f31e87188cebc2754f6a2c756ae96164ed1
+source-git-commit: 4f3be1e50b5520e55ffebfe13ea19aca77d5350d
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 64%
@@ -20,7 +20,7 @@ ht-degree: 64%
 + [일반 릴리스 노트](release-notes.md)
 + 서비스 팩 릴리스 노트 {#service-pack}
    + [새로운 기능](new-features-latest-service-pack.md)
-   + [서비스 팩 7 릴리스 노트](sp-release-notes.md)
+   + [서비스 팩 8 릴리스 노트](sp-release-notes.md)
    + [이전 서비스 팩 릴리스 노트](previous-hotfixes-featurepacks.md)
 + [AEM Sites 릴리스 노트](sites.md)
 + [AEM Assets 릴리스 노트](assets.md)
