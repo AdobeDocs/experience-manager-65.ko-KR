@@ -2,10 +2,10 @@
 title: AEM Sites 릴리스 노트
 description: Adobe Experience Manager 6.5 Sites에 관한 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 23656e023a9a0bfc335655f9cfb0530aa917b3ef
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 100%
+source-wordcount: '872'
+ht-degree: 95%
 
 ---
 
@@ -110,7 +110,13 @@ AEM Sites 6.5 개선 사항에 대한 자세한 정보는 다음을 참조하십
 
 >[!CAUTION]
 >
->AEM 6.5 릴리스 시점에는 AEM에서 at.js 2.x가 지원되지 않습니다. 최신 버전의 at.js 1.x를 사용하십시오.
+>현재:
+>
+>* AEM 활동 콘솔 내에서 타깃팅 엔진으로 Adobe Target을 사용하는 경우에는 `at.js 1.x`만 지원됩니다.
+   >
+   >
+* Target으로 경험 조각 내보내기를 사용하고 Target 콘솔 내에서 활동을 실행하는 경우 `at.js. 1.x` 및 `at.js 2.x` 모두 지원됩니다.
+
 
 * 이제 Adobe Target 통합은 Target Standard API를 사용할 수 있습니다. AEM의 이전 버전에서는 이제 더 이상 사용되지 않는 Target Classic HTTP API를 사용합니다.
 * Adobe Target `mbox.js` 버전 63이 포함되어 있습니다. 구현을 `at.js` v1.x로 전환하시기 바랍니다.
