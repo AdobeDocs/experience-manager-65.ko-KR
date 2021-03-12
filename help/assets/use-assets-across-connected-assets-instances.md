@@ -3,7 +3,7 @@ title: 연결된 에셋을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d17749cb8e923848f8f81360c03b9afba7989ae2
+source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 29%
@@ -225,4 +225,4 @@ ht-degree: 29%
 
 * 원격 참조가 검색되지 않고 오류 메시지가 표시되는 경우 사이트 배포를 사용할 수 있는지 확인하고 네트워크 연결 문제를 확인합니다. 확인을 위해 나중에 다시 시도하십시오. [!DNL Assets] 배포는 배포와 연결되도록 두 번 시도한  [!DNL Sites] 후 오류를 보고합니다.
 
-![자산 원격 참조를 다시 시도하지 못했습니다.](assets/reference-report-failure.png)
+   ![자산 원격 참조를 다시 시도하지 못했습니다.](assets/reference-report-failure.png)
