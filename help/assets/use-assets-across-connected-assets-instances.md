@@ -3,9 +3,9 @@ title: 연결된 에셋을 사용하여  [!DNL Sites]에서 DAM 에셋 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
+source-git-commit: 8df7e4403c6664b52573cd4479b3a6a08d2cb6fa
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2717'
 ht-degree: 29%
 
 ---
@@ -106,13 +106,15 @@ ht-degree: 29%
    >
    >작성자가 자산을 가져올 때 원격 배포에서 사용할 수 있는 모든 렌디션을 가져옵니다. 가져온 자산의 렌디션을 더 만들려면 이 구성 단계를 건너뜁니다. [!UICONTROL DAM 자산 업데이트] 워크플로우가 트리거되어 더 많은 변환을 만듭니다. 이러한 변환은 로컬 [!DNL Sites] 배포에서만 사용할 수 있으며 원격 DAM 배포에서는 사용할 수 없습니다.
 
-1. [!DNL Sites] 배포를 [!DNL Assets] 배포의 CORS 구성에서 허용된 원본으로 추가합니다.
+1. [!DNL Sites] 배포를 [!DNL Assets] 배포의 CORS 구성에서 허용된 원본으로 추가합니다. 자세한 내용은 [CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) 이해를 참조하십시오.
 
-   1. 관리자 자격 증명을 사용하여 로그인합니다. `Cross-Origin`을 검색합니다. **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에 액세스합니다.
+<!-- TBD: See if these steps are not required.
+    1. Log in using the administrator credentials. Search for `Cross-Origin`. Access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-   1. [!DNL Sites] 배포에 대한 CORS 구성을 만들려면 **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]** 옆에 있는 ![자산 추가 아이콘](assets/do-not-localize/assets_add_icon.png) 추가 옵션을 클릭합니다.
+    1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
-   1. **[!UICONTROL 허용된 원본]** 필드에 로컬 [!DNL Sites](즉, `https://[local_sites]:[port]`)의 URL을 입력합니다. 구성을 저장합니다.
+    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Save the configuration.
+-->
 
 구성된 [!DNL Sites] 배포와 [!DNL Assets] 배포 간의 연결을 확인할 수 있습니다.
 
@@ -173,7 +175,7 @@ ht-degree: 29%
 1. [!DNL Assets] 콘솔에서 자산을 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 참조]** 탭을 클릭합니다. [!DNL Assets] 배포에서 자산을 사용하려면 **[!UICONTROL 로컬 참조]**&#x200B;를 참조하십시오. 연결된 자산 기능을 사용하여 에셋을 가져온 [!DNL Sites] 배포에서 에셋을 사용하려면 **[!UICONTROL 원격 참조]을 참조하십시오.
 
-   ![자산 속성의 원격 참조](assets/connected-assets-remote-reference.png)
+   ![자산 속성 페이지의 원격 참조](assets/connected-assets-remote-reference.png)
 
 1. [!DNL Sites] 페이지에 대한 참조는 각 로컬 [!DNL Sites]에 대한 총 참조 수를 표시합니다. 모든 참조를 찾고 총 참조 수를 표시하는 데 시간이 걸릴 수 있습니다.
 1. 참조 목록은 대화형이고 DAM 사용자가 참조를 클릭하여 참조하는 페이지를 열 수 있습니다. 어떤 이유로 원격 참조를 가져올 수 없는 경우 사용자에게 실패를 알리는 알림이 표시됩니다.
@@ -223,6 +225,6 @@ ht-degree: 29%
 
    ![Uncognito 모드의 Chrome에서 쿠키 오류 발생](assets/chrome-cookies-incognito-dialog.png)
 
-* 원격 참조가 검색되지 않고 오류 메시지가 표시되는 경우 사이트 배포를 사용할 수 있는지 확인하고 네트워크 연결 문제를 확인합니다. 확인을 위해 나중에 다시 시도하십시오. [!DNL Assets] 배포는 배포와 연결되도록 두 번 시도한  [!DNL Sites] 후 오류를 보고합니다.
+* 원격 참조가 검색되지 않고 오류 메시지가 표시되는 경우 [!DNL Sites] 배포를 사용할 수 있는지 확인하고 네트워크 연결 문제를 확인합니다. 확인을 위해 나중에 다시 시도하십시오. [!DNL Assets] 배포는 배포와 연결되도록 두 번 시도한  [!DNL Sites] 후 오류를 보고합니다.
 
    ![자산 원격 참조를 다시 시도하지 못했습니다.](assets/reference-report-failure.png)
