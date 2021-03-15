@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 8에 대한 릴
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 89b037fbde6003ccf86336c4467df415e233986b
+source-git-commit: 60764db23115e7f548a82a67955331da2b858973
 workflow-type: tm+mt
-source-wordcount: '2822'
+source-wordcount: '2812'
 ht-degree: 18%
 
 ---
@@ -208,7 +208,7 @@ ht-degree: 18%
 
 A. 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다. 패키지가 자동으로 설치됩니다.
 
-B. [패키지 관리자에서 HTTP API](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html)를 사용합니다. 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
+B. [패키지 관리자에서 HTTP API](/help/sites-administering/package-manager.md#package-share)를 사용합니다. 중첩된 패키지가 설치되도록 `cmd=install&recursive=true`을(를) 사용합니다.
 
 >[!NOTE]
 >
