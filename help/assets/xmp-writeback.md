@@ -3,9 +3,9 @@ title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능을 사용하여 에셋의 메타데이터 변경 내용을 에셋의 모든 또는 특정 표현물에 전파하는 방법을 알아봅니다.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: 7faa6638eff422599450946a257e53970d25189c
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '784'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 2%
 
 # 표현물로 XMP 원본에 쓰기 {#xmp-writeback-to-renditions}
 
-[!DNL Adobe Experience Manager Assets]의 XMP 쓰기 저장(writeback) 기능은 자산 변환에 대한 자산 메타데이터 변경 내용을 복제합니다. [!DNL Experience Manager Assets] 내에서 또는 자산을 업로드하는 동안 에셋의 메타데이터를 변경하면 변경 내용이 처음에 CRXDe의 자산 노드 내에 저장됩니다. XMP 쓰기 저장(writeback) 기능은 메타데이터 변경 내용을 자산의 모든 또는 특정 표현물에 전파합니다.
+[!DNL Adobe Experience Manager Assets]의 이 XMP 원본에 쓰기 기능은 원래 자산의 변환에 대한 메타데이터 변경 내용을 복제합니다. 자산 내에서 또는 자산을 업로드하는 동안 자산에 대한 메타데이터를 변경하면 변경 내용이 처음에 자산 계층의 메타데이터 노드에 저장됩니다.
+
+XMP 쓰기 저장(writeback) 기능을 사용하여 자산의 모든 또는 특정 표현물에 메타데이터 변경 내용을 전파할 수 있습니다. 이 기능은 `jcr` 네임스페이스를 사용하는 메타데이터 속성만 다시 기록합니다. 즉, `dc:title` 속성은 다시 기록되지만 `mytitle` 속성은 기록되지 않습니다.
 
 `Classic Leather`라는 제목의 자산의 [!UICONTROL 제목] 속성을 `Nylon`으로 수정하는 시나리오를 생각해 보십시오.
 
@@ -23,11 +25,9 @@ ht-degree: 2%
 
 ![metadata_stored](assets/metadata_stored.png)
 
-그러나 [!DNL Experience Manager Assets]은(는) 에셋 변환에 메타데이터 변경 사항을 자동으로 전파하지 않습니다.
+그러나 [!DNL Experience Manager Assets]은(는) 에셋 변환에 메타데이터 변경 사항을 자동으로 전파하지 않습니다. XMP writeback](#enable-xmp-writeback)을 활성화하는 방법을 참조하십시오.[
 
-XMP 원본에 쓰기 기능을 사용하면 에셋의 모든 또는 특정 변환에 메타데이터 변경 내용을 적용할 수 있습니다. 하지만 변경 사항은 자산 계층의 메타데이터 노드 아래에 저장되지 않습니다. 대신 이 기능은 변환에 대한 바이너리 파일의 변경 사항을 포함합니다.
-
-## XMP writeback 사용 {#enabling-xmp-writeback}
+## XMP writeback 사용 {#enable-xmp-writeback}
 
 메타데이터 변경 내용을 업로드할 때 자산의 변환에 전파되도록 하려면 Configuration Manager에서 **[!UICONTROL Adobe CQ DAM Rendition Maker]** 구성을 수정합니다.
 
@@ -47,7 +47,7 @@ XMP 원본에 쓰기 기능을 사용하여 메타데이터를 변환 축소판 
 1. 모델 페이지에서 **[!UICONTROL DAM 메타데이터 쓰기 저장]** 워크플로우 모델을 엽니다.
 1. **[!UICONTROL DAM 메타데이터 쓰기 저장]** 속성 페이지에서 **[!UICONTROL XMP 쓰기 저장 프로세스]** 단계를 엽니다.
 1. [!UICONTROL 단계 속성] 대화 상자에서 **[!UICONTROL 프로세스]** 탭을 클릭합니다.
-1. **인수** 상자에서 `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`를 추가한 다음 **확인**&#x200B;을 클릭합니다.
+1. **인수** 상자에서 `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`를 추가하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
    ![step_properties](assets/step_properties.png)
 
