@@ -4,10 +4,10 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 8의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c6d11f63420040a500bbb75f1146c29f64bdcc5
+source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
 workflow-type: tm+mt
-source-wordcount: '2883'
-ht-degree: 53%
+source-wordcount: '3015'
+ht-degree: 50%
 
 ---
 
@@ -37,6 +37,22 @@ ht-degree: 53%
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms]의 Add-on 패키지는 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 후 일주일 후에 사용할 수 있습니다.
+
+### 규칙 {#show-hide-captcha}에 따라 적응형 양식의 CAPTCHA 구성 요소 표시 또는 숨기기
+
+이제 적응형 양식 제출 시 또는 사용자 작업 시 CAPTCHA의 유효성을 확인할 수 있습니다. 사용자 동작에 대한 CAPTCHA의 유효성을 확인하고 규칙을 기반으로 적응형 양식의 CAPTCHA 구성 요소를 표시하거나 숨기는 조건을 추가할 수도 있습니다.
+
+### 사용자 정의 CAPTCHA 서비스 {#add-custom-captcha-services} 추가
+
+[!DNL Experience Manager Forms] 는 Google reCAPTCHA(Google reCAPTCHA API에 대한 별도의 라이선스가 필요)를 CAPTCHA 유효성 검사 서비스로 사용하기 위한 기본 지원을 제공합니다. 사용자 정의 CAPTCHA 서비스를 사용하여 CAPTCHA의 유효성을 검사할 수도 있습니다.
+
+### 기타 개선 사항 {#other-enhancements-forms-6580}
+
+* [!DNL Experience Manager Forms] 날짜 선택기 구성 요소의 액세스 가능성을 개선했습니다.
+
+* PrintChannel API를 사용하여 PCL 형식으로 대화형 통신을 생성하는 지원을 추가했습니다.
+
+* PDFG 변환을 수행할 때 사용자 지정 책갈피 생성을 위해 [!DNL Experience Manager Forms] 레지스트리 변경 내용을 활성화하거나 비활성화할 수 있습니다.
 
 ## 이전 [!DNL Experience Manager] 6.5 서비스 팩 {#key-features-previous-service-packs}의 주요 기능
 
