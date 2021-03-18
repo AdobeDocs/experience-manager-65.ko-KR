@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 26efba567985dcb89b2610935cab18943b7034b3
+source-git-commit: 07f354ccfb8741f0de4fc85ba1575ead3b8ea6e4
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1559'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ Target Standard API를 통해 Adobe Target과 AEM을 통합하려면 Adobe IMS(I
 >AEM에서 Adobe Target Classic API를 사용하는 것은 이전 버전과의 호환성을 위해 계속 지원됩니다. [Target Classic API는 사용자 자격 증명 인증](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target)을 사용합니다.
 >
 >API 선택은 AEM/Target 통합에 사용되는 인증 방법에 의해 결정됩니다.
+>[테넌트 ID 및 클라이언트 코드](#tenant-client) 섹션도 참조하십시오.
 
 ## 전제 조건 {#prerequisites}
 
@@ -44,7 +45,7 @@ Target Standard API를 통해 Adobe Target과 AEM을 통합하려면 Adobe IMS(I
 
 * 조직의 시스템 관리자는 Admin Console을 사용하여 조직의 필수 개발자를 관련 제품 프로필에 추가해야 합니다.
 
-   * 이렇게 하면 특정 개발자에게 Adobe I/O 내의 통합을 활성화할 수 있는 권한이 제공됩니다.
+   * 이렇게 하면 특정 개발자에게 Adobe I/O 내 통합을 활성화할 수 있는 권한이 제공됩니다.
    * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
 
 
@@ -61,15 +62,15 @@ Target Standard API를 통해 Adobe Target과 AEM을 통합하려면 Adobe IMS(I
 
    ![](assets/integrate-target-io-01.png)
 
-1. **다운로드**(또는 **공개 키 다운로드**)를 선택하여 파일을 로컬 드라이브에 다운로드합니다. 이렇게 하면 [가 AEM](#configuring-adobe-i-o-for-adobe-target-integration-with-aem)와 Adobe Target 통합을 위해 Adobe I/O을 구성할 때 사용할 수 있습니다.
+1. **다운로드**(또는 **공개 키 다운로드**)를 선택하여 파일을 로컬 드라이브에 다운로드합니다. 이렇게 하면 [가 AEM](#configuring-adobe-i-o-for-adobe-target-integration-with-aem)와 Adobe Target 통합을 위한 Adobe I/O을 구성할 때 사용할 수 있습니다.
 
    >[!CAUTION]
    >
-   >이 구성을 열어 두십시오. AEM[에서 IMS 구성을 완료하면 이 구성이 다시 필요합니다.](#completing-the-ims-configuration-in-aem)
+   >이 구성을 열어 두십시오. AEM](#completing-the-ims-configuration-in-aem)에서 IMS 구성을 완료하면 이 구성이 다시 필요합니다.[
 
    ![](assets/integrate-target-io-02.png)
 
-## AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}과(와) Adobe Target 통합을 위해 Adobe I/O 구성
+## AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}과(와) Adobe Target 통합을 위한 Adobe I/O 구성
 
 AEM에서 사용할 Adobe Target과 Adobe I/O 프로젝트(통합)를 만든 다음 필요한 권한을 할당해야 합니다.
 
@@ -79,9 +80,9 @@ Adobe I/O 콘솔을 열어 AEM에서 사용할 Adobe Target으로 I/O 프로젝�
 
 >[!NOTE]
 >
->[Adobe I/O 튜토리얼](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html)도 참조하십시오.
+>[Adobe I/O 자습서](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html)도 참조하십시오.
 
-1. 프로젝트용 Adobe I/O 콘솔을 엽니다.
+1. 프로젝트에 대한 Adobe I/O 콘솔을 엽니다.
 
    [https://console.adobe.io/projects](https://console.adobe.io/projects)
 
@@ -146,7 +147,7 @@ Adobe I/O 콘솔을 열어 AEM에서 사용할 Adobe Target으로 I/O 프로젝�
 1. **통합**&#x200B;을 선택한 다음 필요한 통합 구성을 선택합니다.
 1. **편집기**&#x200B;를 **제품 역할**;대신 **Observer**.
 
-## Adobe I/O 통합 프로젝트 {#details-stored-for-the-adobe-io-integration-project}에 대한 세부 정보 저장
+## Adobe I/O 통합 프로젝트 {#details-stored-for-the-adobe-io-integration-project}에 대해 저장된 세부 정보
 
 Adobe I/O 프로젝트 콘솔에서 모든 통합 프로젝트의 목록을 볼 수 있습니다.
 
@@ -176,9 +177,9 @@ AEM으로 돌아가면 Target에 대한 Adobe I/O 통합에서 필요한 값을 
 
    * **제목**:텍스트.
    * **인증 서버**:아래 Payloadsection `"aud"` 의  **** 행에서 복사/붙여넣기(예: 아래  `"https://ims-na1.adobelogin.com"` 예)
-   * **API 키**:Target용 Adobe I/O  [](#details-stored-for-the-adobe-io-integration-project) 통합의 개요 섹션에서 이 항목을 복사합니다.
-   * **클라이언트 암호**:Target에 대한 Adobe I/O  [](#details-stored-for-the-adobe-io-integration-project) 통합의 개요 섹션에서 이것을 생성하고 복사합니다.
-   * **페이로드**:Target에 대한 Adobe I/O  [통합](#details-stored-for-the-adobe-io-integration-project) 의 JWT 생성 섹션에서 복사합니다.
+   * **API 키**:Target에 대한 Adobe I/O  [](#details-stored-for-the-adobe-io-integration-project) 통합의 개요 섹션에서 이 항목을 복사합니다.
+   * **클라이언트 암호**:Target에 대한  [](#details-stored-for-the-adobe-io-integration-project) Adobe I/O 통합의 개요 섹션에서 이 항목을 생성하고 복사합니다.
+   * **페이로드**:Target에 대한 Adobe I/O  [통합의 ](#details-stored-for-the-adobe-io-integration-project) JWTrich 생성 섹션에서 이 항목을 복사합니다.
 
    ![](assets/integrate-target-io-10.png)
 
@@ -230,7 +231,7 @@ AEM으로 돌아가면 Target에 대한 Adobe I/O 통합에서 필요한 값을 
 1. **Adobe Target 설정** 탭에 세부 정보를 입력합니다.
 
    * **인증**:IMS.
-   * **테넌트 ID**:adobe IMS 테넌트 ID
+   * **테넌트 ID**:Adobe IMS 테넌트 ID. 아래의 [테넌트 ID 및 클라이언트 코드](#tenant-client) 섹션을 참조하십시오.
 
       >[!NOTE]
       >
@@ -241,7 +242,7 @@ AEM으로 돌아가면 Target에 대한 Adobe I/O 통합에서 필요한 값을 
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >그런 다음 `yourtenantid`을 사용합니다.
-
+   * **클라이언트 코드**:아래의  [테넌트 ID 및 클라이언트 ](#tenant-client) 선택 항목을 참조하십시오.
    * **IMS 구성**:IMS 구성 이름을 선택합니다.
    * **API 유형**:REST
    * **A4T Analytics Cloud 구성**:타겟 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 컨텐츠를 타깃팅할 때 보고 소스로 Adobe Analytics을 사용하는 경우 이 옵션이 필요합니다. 클라우드 구성이 표시되지 않는 경우 [A4T Analytics Cloud 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration)의 참고 사항을 참조하십시오.
@@ -254,15 +255,35 @@ AEM으로 돌아가면 Target에 대한 Adobe I/O 통합에서 필요한 값을 
    >[!NOTE]
    >
    >[Target Classic API를 사용하기 위한 Cloud Service](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) 의 구성은 더 이상 사용되지 않습니다(Adobe Recommendations 설정 탭 사용).
-
-   예:
-
-   ![](assets/integrate-target-io-14.png)
-
 1. **Target 연결**&#x200B;을 클릭하여 Adobe Target와의 연결을 초기화합니다.
 
    연결이 성공하면 **연결 성공** 메시지가 표시됩니다.
 
 1. 메시지에서 **확인**&#x200B;을 선택하고 대화 상자에서 **확인**&#x200B;을 선택하여 구성을 확인합니다.
 1. 이제 [Target 프레임워크 추가](/help/sites-administering/target-configuring.md#adding-a-target-framework)로 이동하여 Target으로 보낼 ContextHub 또는 ClientContext 매개 변수를 구성할 수 있습니다. AEM 경험 조각을 Target으로 내보내는 데 필요하지 않을 수 있습니다.
+
+### 테넌트 ID 및 클라이언트 코드 {#tenant-client}
+
+[Adobe Experience Manager 6.5.8.0](/help/release-notes/sp-release-notes.md)에서는 클라이언트 코드 필드가 Target 구성 창에 추가되었습니다.
+
+테넌트 ID 및 클라이언트 코드 필드를 구성할 때 다음 사항을 주의하십시오.
+
+1. 대부분의 고객에게 테넌트 ID와 클라이언트 코드가 동일합니다. 즉, 두 필드 모두 동일한 정보를 포함하고 있으며 동일합니다. 두 필드 모두에 테넌트 ID를 입력해야 합니다.
+2. 기존 목적으로 테넌트 ID 및 클라이언트 코드 필드에 다른 값을 입력할 수도 있습니다.
+
+두 경우 모두 다음 사항에 유의하십시오.
+
+* 기본적으로 클라이언트 코드(처음 추가된 경우)도 테넌트 ID 필드에 자동으로 복사됩니다.
+* 기본 테넌트 ID 세트를 변경할 수 있는 옵션이 있습니다.
+* 따라서 Target에 대한 백엔드 호출은 테넌트 ID를 기반으로 하며 Target에 대한 클라이언트 측 호출은 클라이언트 코드를 기반으로 합니다.
+
+앞에서 설명한 바와 같이 첫 번째 사례는 AEM 6.5에서 가장 일반적으로 사용됩니다. 어떤 방식으로든 요구 사항에 따라 **모두** 필드에 올바른 정보가 들어 있는지 확인하십시오.
+
+>[!NOTE]
+>
+> 기존 Target 구성을 변경하려는 경우:
+>
+> 1. 테넌트 ID를 다시 입력합니다.
+> 2. Target에 다시 연결합니다.
+> 3. 구성을 저장합니다.
 
