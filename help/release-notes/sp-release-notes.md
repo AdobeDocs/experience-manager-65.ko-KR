@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 8에 대한 릴
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 60764db23115e7f548a82a67955331da2b858973
+source-git-commit: dfaa25ea72e50b60b8a40883ffb0241c131cc846
 workflow-type: tm+mt
-source-wordcount: '2812'
+source-wordcount: '3352'
 ht-degree: 18%
 
 ---
@@ -168,6 +168,56 @@ ht-degree: 18%
 >
 >[!DNL Experience Manager Forms] 예약된  [!DNL Experience Manager] 서비스 팩 릴리스 날짜 이후 1주일 후에 추가 기능 패키지를 릴리스합니다.
 
+**적응형 양식**
+
+* 반복 가능한 행이 있는 표를 응용 양식에 있는 여러 인스턴스가 있는 반복 가능한 패널에 삽입하면 테이블이 항상 패널의 첫 번째 인스턴스에 추가됩니다(NPR-35635).
+
+* 탭 포커스가 응용 형식으로 한 번 확인한 후 CAPTCHA 구성 요소에 다시 도달하면 [!DNL Experience Manager Forms]에 `Provide Captcha phrase to proceed` 오류 메시지(NPR-35539)가 표시됩니다.
+
+**대화형 통신**
+
+* 번역된 양식을 제출하면 제출 메시지가 영어로 표시되고 해당 언어로 번역되지 않습니다(NPR-35808).
+
+* 첨부된 XDP 또는 문서 조각에 숨기기 조건을 포함하면 대화형 통신이 로드되지 못합니다(NPR-35745).
+
+**서신 관리**
+
+* 편지를 편집할 때 조건이 있는 모듈을 로드하는 데 시간이 더 오래 걸립니다(NPR-35325).
+
+* 편지에 포함되지 않은 왼쪽 탐색 창에서 자산을 선택한 다음 다음 자산을 선택하면 파란색 강조 표시가 이전에 선택한 자산에서 제거되지 않습니다(NPR-35851).
+
+* 문자로 텍스트 필드를 편집할 때 [!DNL Experience Manager Forms]에 `Text Edit Failed` 오류 메시지가 표시됩니다(CQ-4313770).
+
+**워크플로우**
+
+* iOS용 [!DNL Experience Manager Forms] 모바일 응용 프로그램에서 응용 양식을 열려고 하면 응용 프로그램이 응답하기 위해 중지됩니다(CQ-4314825).
+
+* HTML 작업 영역의 [!UICONTROL To-do] 탭에는 HTML 문자가 표시됩니다(NPR-35298).
+
+**XMLFM**
+
+* 출력 서비스를 사용하여 XML 문서를 생성할 때 일부 XML 파일에 대해 `OutputServiceException` 오류가 발생합니다(CQ-4311341, CQ-4313893).
+
+* 글머리 기호 첫 번째 문자에 위 첨자 속성을 적용하면 글머리 기호 크기가 작아집니다(CQ-4306476).
+
+* 출력 서비스를 사용하여 생성된 PDF forms에는 테두리가 포함되지 않습니다(CQ-4312564).
+
+**디자이너**
+
+* [!DNL Experience Manager Forms] Designer에서 XDP 파일을 열면 designer.log 파일이 XDP 파일과 동일한 폴더에 생성됩니다(CQ-4309427, CQ-4310865).
+
+**HTML5 양식**
+
+* [!DNL iOS 14.1 or 14.2]에 대한 [!DNL Safari] 웹 브라우저의 응용 형식으로 확인란을 선택하면 추가 필드가 표시되지 않습니다(NPR-35652).
+
+**Forms 관리**
+
+* XDP 파일을 CRX 저장소에 성공적으로 업로드했음을 나타내는 확인 메시지가 없습니다(NPR-35546).
+
+**문서 보안**
+
+* AdminUI의 [!UICONTROL 정책 편집] 옵션에 대해 여러 문제가 보고되었습니다(NPR-35747).
+
 보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html)를 참조하십시오.
 
 ## 6.5.8.0 설치 {#install}
@@ -223,6 +273,32 @@ B. [패키지 관리자에서 HTTP API](/help/sites-administering/package-manage
 1. OSGi 번들 `org.apache.jackrabbit.oak-core`은 버전 1.22.3 이상입니다(웹 콘솔 사용:`/system/console/bundles`).
 
 이번 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하십시오.
+
+### Adobe Experience Manager Forms 추가 기능 패키지 설치 {#install-aem-forms-add-on-package}
+
+>[!NOTE]
+>
+>Experience Manager Forms을 사용하지 않는 경우 건너뜁니다. Experience Manager Forms의 수정 사항은 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 이후 1주일 후에 별도의 추가 기능 패키지를 통해 제공됩니다.
+
+1. Adobe Experience Manager 서비스 팩을 설치했는지 확인합니다.
+1. 운영 체제에 대한 [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
+1. [AEM Forms 추가 기능 패키지 설치](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
+
+>[!NOTE]
+>
+>AEM 6.5.8.0에는 [AEM Forms 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 AEM 6.5.8.0으로 업데이트하는 경우 Forms Add-On 패키지의 패키지 설치 후 최신 버전의 패키지를 설치합니다.
+
+### JEE에 Adobe Experience Manager Forms 설치 {#install-aem-forms-jee-installer}
+
+>[!NOTE]
+>
+>JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 프로그램을 통해 JEE의 Adobe Experience Manager Forms 수정 사항이 전달됩니다.
+
+JEE에 Forms Experience Manager용 누적 설치 프로그램 및 배포 후 구성에 대한 자세한 내용은 [릴리스 노트](jee-patch-installer-65.md)를 참조하십시오.
+
+>[!NOTE]
+>
+>JEE에 Forms Experience Manager용 누적 설치 프로그램을 설치한 후 최신 Forms 추가 기능 패키지를 설치하고 `crx-repository\install` 폴더에서 Forms 추가 기능 패키지를 삭제하고 서버를 다시 시작합니다.
 
 ### UberJar {#uber-jar}
 
