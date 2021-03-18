@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 07f354ccfb8741f0de4fc85ba1575ead3b8ea6e4
+source-git-commit: 498896dccf80065195cc945b01cb8d037b8f6dab
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1557'
 ht-degree: 1%
 
 ---
@@ -231,7 +231,7 @@ AEM으로 돌아가면 Target에 대한 Adobe I/O 통합에서 필요한 값을 
 1. **Adobe Target 설정** 탭에 세부 정보를 입력합니다.
 
    * **인증**:IMS.
-   * **테넌트 ID**:Adobe IMS 테넌트 ID. 아래의 [테넌트 ID 및 클라이언트 코드](#tenant-client) 섹션을 참조하십시오.
+   * **테넌트 ID**:Adobe IMS 테넌트 ID. [테넌트 ID 및 클라이언트 코드](#tenant-client) 섹션도 참조하십시오.
 
       >[!NOTE]
       >
@@ -242,7 +242,7 @@ AEM으로 돌아가면 Target에 대한 Adobe I/O 통합에서 필요한 값을 
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >그런 다음 `yourtenantid`을 사용합니다.
-   * **클라이언트 코드**:아래의  [테넌트 ID 및 클라이언트 ](#tenant-client) 선택 항목을 참조하십시오.
+   * **클라이언트 코드**:테넌트  [ID 및 클라이언트 선택 항목을 ](#tenant-client) 참조하십시오.
    * **IMS 구성**:IMS 구성 이름을 선택합니다.
    * **API 유형**:REST
    * **A4T Analytics Cloud 구성**:타겟 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 컨텐츠를 타깃팅할 때 보고 소스로 Adobe Analytics을 사용하는 경우 이 옵션이 필요합니다. 클라우드 구성이 표시되지 않는 경우 [A4T Analytics Cloud 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration)의 참고 사항을 참조하십시오.
