@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
 discoiquuid: 7c392909-ff84-4411-b44f-16f99dffac54
 docset: aem65
+feature: 양식 데이터 모델
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 ![](do-not-localize/data-integeration.png)
 
-AEM Forms 데이터 통합은 양식 데이터 모델을 만들고 사용할 수 있는 직관적인 유저 인터페이스를 제공합니다. 양식 데이터 모델은 데이터를 교환하기 위해 데이터 소스에 의존합니다.그러나 데이터 소스를 사용하거나 사용하지 않고 양식 데이터 모델을 만들 수 있습니다. 데이터 소스를 구성했는지 여부에 따라 데이터 모델에서 A를 만드는 방법은 두 가지가 있습니다.
+AEM Forms 데이터 통합은 양식 데이터 모델을 만들고 사용할 수 있는 직관적인 유저 인터페이스를 제공합니다. 양식 데이터 모델은 데이터를 교환하기 위해 데이터 소스에 의존합니다.그러나 데이터 소스를 사용하거나 사용하지 않고 양식 데이터 모델을 만들 수 있습니다. 데이터 소스를 구성했는지 여부에 따라 데이터 모델에서 A를 만드는 방법에는 두 가지가 있습니다.
 
 * **미리 구성된 데이터 소스** 사용:데이터 소스 구성에 설명된 대로 데이터  [소스를 구성한](../../forms/using/configure-data-sources.md) 경우 양식 데이터 모델을 만드는 동안 선택할 수 있습니다. 양식 데이터 모델에서 사용할 수 있는 선택된 데이터 소스의 모든 데이터 모델 개체, 속성 및 서비스를 가져옵니다.
 
