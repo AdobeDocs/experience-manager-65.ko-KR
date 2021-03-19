@@ -10,10 +10,11 @@ topic-tags: platform
 content-type: reference
 discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
+feature: 태깅
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1916'
 ht-degree: 1%
 
 ---
@@ -73,7 +74,7 @@ AEM에서 기본 경로는 `/content/  cq   :tags`이고 루트 노드는 `  cq 
 
 네임스페이스를 통해 여러 항목을 그룹화할 수 있습니다. 가장 일반적인 사용 사례는 (웹) 사이트당(예: 공개, 내부 및 포털) 또는 더 큰 응용 프로그램(예: WCM, 자산, 커뮤니티)당 네임스페이스를 갖는 것이지만 다른 다양한 요구에 네임스페이스를 사용할 수 있습니다. 네임스페이스는 사용자 인터페이스에서 현재 콘텐츠에 적용되는 태그의 하위 집합(즉, 특정 네임스페이스의 태그)만 표시하는 데 사용됩니다.
 
-태그의 네임스페이스는 분류 하위 트리에서 첫 번째 레벨이며, 분류법 루트 노드[의 바로 아래에 있는 노드입니다. ](#taxonomy-root-node) 네임스페이스는 부모가 `cq:Tag`노드 유형이 아닌 `cq:Tag` 유형의 노드입니다.
+태그의 네임스페이스는 분류 하위 트리에서 첫 번째 레벨이며, 분류법 루트 노드](#taxonomy-root-node)의 바로 아래에 있는 노드입니다. [ 네임스페이스는 부모가 `cq:Tag`노드 유형이 아닌 `cq:Tag` 유형의 노드입니다.
 
 모든 태그에는 네임스페이스가 있습니다. 네임스페이스를 지정하지 않으면 태그가 기본 네임스페이스에 할당되며, 이 네임스페이스는 TagID `default`(제목이 `Standard Tags),`이고 `/content/cq:tags/default.`
 
@@ -175,7 +176,7 @@ cq:Tag 노드를 가리키지 않는 기존 경로 또는 경로를 참조하는
 
 애플리케이션 개발자가 컨텐트 유형에 태깅을 첨부하려면 노드의 등록([CND](https://jackrabbit.apache.org/node-type-notation.html))에 `cq:Taggable` 믹싱 또는 `cq:OwnerTaggable` 믹신이 포함되어야 합니다.
 
-`cq:Taggable`에서 상속되는 `cq:OwnerTaggable` 혼합은 컨텐츠를 소유자/작성자가 분류할 수 있음을 나타내기 위한 것입니다. AEM에서는 `cq:PageContent` 노드의 속성만 나타냅니다. 태깅 프레임워크에서는 `cq:OwnerTaggable` 믹신이 필요하지 않습니다.
+`cq:Taggable`에서 상속되는 `cq:OwnerTaggable` 혼합은 해당 컨텐츠가 소유자/작성자에 의해 분류될 수 있음을 나타내기 위한 것입니다. AEM에서는 `cq:PageContent` 노드의 속성만 나타냅니다. 태깅 프레임워크에서는 `cq:OwnerTaggable` 믹신이 필요하지 않습니다.
 
 >[!NOTE]
 >
@@ -266,7 +267,7 @@ AEM에 포함된 노드 유형에 대한 기본 정의는 다음과 같습니다
 
 ## 태그 마이그레이션 {#tags-migration}
 
-Experience Manager 6.4 이상 태그는 `/content/cq:tags` 아래에 저장되고 이전 태그는 `/etc/tags` 아래에 저장되었습니다. 그러나 Adobe Experience Manager이 이전 버전에서 업그레이드된 시나리오에서 태그는 여전히 이전 위치 `/etc/tags` 아래에 있습니다. 업그레이드된 시스템 태그는 `/content/cq:tags` 아래로 마이그레이션해야 합니다.
+Experience Manager 6.4 이상 태그는 `/content/cq:tags` 아래에 저장되고, 이전 태그는 `/etc/tags` 아래에 저장되었습니다. 그러나 Adobe Experience Manager이 이전 버전에서 업그레이드된 시나리오에서 태그는 여전히 이전 위치 `/etc/tags` 아래에 있습니다. 업그레이드된 시스템 태그는 `/content/cq:tags` 아래로 마이그레이션해야 합니다.
 
 >[!NOTE]
 >
