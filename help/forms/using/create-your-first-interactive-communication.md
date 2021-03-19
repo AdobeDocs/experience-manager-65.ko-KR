@@ -8,10 +8,11 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -39,12 +40,12 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 
 ## 사용 사례 {#use-case}
 
-이 여정은 사용 사례를 익히는 것으로 시작됩니다.
+여정은 사용 사례를 배움으로써 시작됩니다.
 
 통신 사업자는 고객에게 이메일로 매월 청구서를 보낸다. 그 법안은 상호 작용 통신이다. 이메일에는 다음이 포함됩니다.
 
 * 이 자습서에서 인쇄 채널이라고 하는 암호로 보호된 PDF입니다. 고객 세부 사항, 청구 세부 사항, 비용 요약, 요금 지불 편리한 모드 및 사용 세부 사항이 포함되어 있습니다.
-* 이 자습서에서 웹 채널이라고 하는 BOM의 웹 버전에 대한 링크입니다. PDF 버전에 포함된 세부 사항 외에도 웹 버전의 이 청구서는 Adobe Target을 기반으로 사용 세부 사항과 개인화된 제안을 그래픽으로 표시합니다. 웹 버전에는 온라인 결제 양식도 포함되어 있습니다. IC를 벗어나지 않고도 온라인 결제를 할 수 있습니다.
+* 이 자습서에서 웹 채널이라고 하는 BOM의 웹 버전에 대한 링크입니다. PDF 버전에 포함된 세부 사항 외에도 웹 버전의 이 청구서는 Adobe Target을 기반으로 사용 세부 사항과 개인화된 제안을 그래픽으로 표시합니다. 웹 버전에는 온라인 결제 양식도 포함되어 있습니다. IC를 종료하지 않고도 온라인 결제를 할 수 있습니다.
 * 온라인 스토리지, 음악 구독, 주문형 비디오 구독 등 부가가치 서비스에 대한 링크입니다.
 
 ## 전제 조건 {#prerequisites}
