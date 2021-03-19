@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1970'
+source-wordcount: '1972'
 ht-degree: 0%
 
 ---
@@ -147,7 +148,7 @@ ht-degree: 0%
 
 1. 필드를 마우스로 가리키면 도구 설명이 표시됩니다. 어떻게 사용하지 못하게 하죠?
 
-   커서로 도구 설명을 비활성화하려면 디자이너의 액세서빌러티 패널에서 없음을 선택합니다.
+   커서로 도구 설명을 비활성화하려면 디자이너의 액세서빌러티 패널에서 [없음]을 선택합니다.
 
 1. Designer에서 사용자는 라디오 버튼과 체크 상자의 사용자 정의 모양 속성을 구성할 수 있습니다. HTML5 양식은 양식을 렌더링하는 동안 이러한 사용자 정의 모양 속성을 고려합니까?
 
