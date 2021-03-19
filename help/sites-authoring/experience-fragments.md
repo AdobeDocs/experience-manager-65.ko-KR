@@ -1,7 +1,7 @@
 ---
 title: 경험 구성요소
 seo-title: 경험 구성요소
-description: 'null'
+description: 경험 구성요소
 seo-description: 'null'
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5c88d9cfdd6238961aa46d36ebc1206a5d0507e0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1398'
 ht-degree: 96%
 
 ---
 
 
-# 경험 조각{#experience-fragments}
+# 경험 구성요소{#experience-fragments}
 
 경험 조각은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
 
