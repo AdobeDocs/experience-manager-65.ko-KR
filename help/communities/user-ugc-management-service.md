@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '617'
 ht-degree: 7%
 
 ---
@@ -67,7 +68,7 @@ Adobe Analytics에서 사용자 데이터를 삭제하려면 [GDPR Analytics 작
 
 AEM Communities에서 사용하는 Adobe Analytics 변수 매핑에 대해서는 다음 이미지를 참조하십시오.
 
-![ADOBE ANALYTICS용 AEM 커뮤니티 변수 매핑](assets/analytics-communities-mapping.png)
+![Adobe Analytics용 AEM 커뮤니티 변수 매핑](assets/analytics-communities-mapping.png)
 
 ## 사용자 계정 비활성화 {#disable-a-user-account}
 
