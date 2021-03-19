@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Stock] 자산 관리'
 description: ' [!DNL Adobe Experience Manager] 내에서  [!DNL Adobe Stock] 자산을 검색, 가져오기, 라이센스 부여 및 관리합니다. 라이선스가 부여된 자산을 다른 디지털 자산으로 사용하십시오.'
 contentOwner: AG
+feature: 검색, Adobe Stock
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1086'
 ht-degree: 3%
 
 ---
@@ -64,7 +66,7 @@ ht-degree: 3%
 
 *그림:인터페이스에서  [!DNL Adobe Stock] 자산을 검색하고 결과를  [!DNL Experience Manager] 필터링합니다.*
 
-**A.** ID가 제공되는 자산과 유사한  [!DNL Adobe Stock] 자산을 검색합니다. **B. 선택한 모양 또는 방향과 일치하는 에셋을** 검색합니다. **C.** 지원되는 자산 유형  **D.** D.Open 또는 필터 중 하나 검색E. **E.License를** 검색하고 선택한 자산을 F.F. [!DNL Experience Manager] **F.F.F.F.** 선택한 자산에 저장 워터마크K를 사용하여 자산 저장G.J.웹 사이트에서 선택한 자산 탐색H와 유사한 에셋를 선택합니다. 선택한 에셋 탐색H선택한 에셋를 선택한 에셋 [!DNL Experience Manager]   ****   [!DNL Adobe Stock]   ****   [!DNL Adobe Stock]   ****   **** N를 선택한 에셋를 선택한 에셋를 선택한 에셋NNNNNNNNNNNNN를.View검색 결과에서 선택한 자산 번호J.List카드 보기 및 목록 간 전환
+**A.** ID가 제공되는 자산과 유사한  [!DNL Adobe Stock] 자산을 검색합니다. **B. 선택한 모양 또는 방향과 일치하는 에셋을** 검색합니다. **C.** 지원되는 자산 유형  **D.** D.Open 또는 필터 중 하나 검색E. **E.License를** 검색하고 선택한 자산을 F.F. [!DNL Experience Manager] **F.F.F.F.** 선택한 자산에 저장 워터마크K를 사용하여 자산 저장G.J.웹 사이트에서 선택한 자산 탐색H와 유사한 에셋를 선택합니다. 선택한 에셋 탐색H선택한 에셋를 선택한 에셋 [!DNL Experience Manager]   ****   [!DNL Adobe Stock]   ****   [!DNL Adobe Stock]   ****   **** 를 선택한 에셋를 선택한 에셋를 선택한 에셋N를 선택한NNHN를NNNNNNNN.View검색 결과에서 선택한 자산 번호J.List카드 보기 및 목록 간 전환
 
 ### 자산 {#find-assets} 찾기
 
@@ -118,7 +120,7 @@ ht-degree: 3%
 
 * **잘못된 라이센스 유형이 표시됩니다**.에셋에 대해 잘못된 라이선스 유형 [!DNL Experience Manager] 이 표시될 수 있습니다. 사용자는 [!DNL Adobe Stock] 웹 사이트에 로그인하여 라이센스 유형을 확인할 수 있습니다.
 
-* **참조 필드 및 메타데이터는 동기화되지** 않습니다.사용자가 라이센스 참조 필드를 업데이트하면 라이센스 참조 정보가 웹 사이트 [!DNL Experience Manager] 에서 업데이트되지만  [!DNL Adobe Stock] 웹 사이트에서는 업데이트되지 않습니다. 마찬가지로 사용자가 [!DNL Adobe Stock] 웹 사이트의 참조 필드를 업데이트하면 업데이트가 [!DNL Experience Manager]에서 동기화되지 않습니다.
+* **참조 필드 및 메타데이터는 동기화되지** 않습니다.사용자가 라이센스 참조 필드를 업데이트하면 라이센스 참조 정보가 웹 사이트 [!DNL Experience Manager] 에서 업데이트되지만 웹 사이트에서는 업데이트되지  [!DNL Adobe Stock] 않습니다. 마찬가지로 사용자가 [!DNL Adobe Stock] 웹 사이트의 참조 필드를 업데이트하면 업데이트가 [!DNL Experience Manager]에서 동기화되지 않습니다.
 
 >[!MORELIKETHIS]
 >
