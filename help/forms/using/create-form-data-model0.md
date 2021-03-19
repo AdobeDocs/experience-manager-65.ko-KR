@@ -8,10 +8,11 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2747'
+source-wordcount: '2749'
 ht-degree: 0%
 
 ---
@@ -156,7 +157,7 @@ MySQL 데이터베이스를 구성하려면 다음을 수행합니다.
 
 ## 3단계:양식 데이터 모델 {#step-create-form-data-model} 만들기
 
-AEM Forms은 구성된 데이터 소스에서 양식 데이터 모드[l을 만들기 위해 직관적인 사용자 인터페이스를 제공합니다. ](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585) 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 이 자습서의 사용 사례는 MySQL을 데이터 소스로 사용합니다.
+AEM Forms은 구성된 데이터 소스에서 양식 데이터 모드](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l을 만들기 위해 직관적인 사용자 인터페이스를 제공합니다. [ 양식 데이터 모델에서 여러 데이터 소스를 사용할 수 있습니다. 이 자습서의 사용 사례는 MySQL을 데이터 소스로 사용합니다.
 
 양식 데이터 모델을 만들려면 다음을 수행합니다.
 
@@ -234,7 +235,7 @@ AEM Forms은 구성된 데이터 소스에서 양식 데이터 모드[l을 만�
 
    ![사용 요금 규칙 편집기](assets/usage_charges_rule_editor_new.png)
 
-1. 수학 표현식에서 각각 첫 번째 및 두 번째 개체로 **calcharts** 및 **confcalcharts**&#x200B;를 선택합니다. **plus**&#x200B;를 연산자로 선택합니다. 수학 표현식 내에서 **표현식 확장**&#x200B;을 눌러 **smscharts**, **internetcharts**, **roamingnational**, **roamingintenl** 및 **vas&lt;a111 /> 객체를 표현식에 추가합니다.**
+1. 수학 표현식에서 각각 첫 번째 및 두 번째 개체로 **calcharts** 및 **confcalcharts**&#x200B;를 선택합니다. **plus**&#x200B;를 연산자로 선택합니다. 수학 표현식 내에서 **표현식 확장**&#x200B;을 눌러 **smscharts**, **internetcharts**, **roamingnational**, **roamingintenl** 및 **vas** 객체를 표현식에 추가합니다.
 
    다음 이미지는 규칙 편집기의 수학 표현식을 보여 줍니다.
 
@@ -292,7 +293,7 @@ AEM Forms은 구성된 데이터 소스에서 양식 데이터 모드[l을 만�
 
 1. **완료**&#x200B;를 눌러 고객과 데이터 모델 개체 호출 사이의 1:n 연결을 만듭니다.
 
-   고객 및 호출 데이터 모델 객체 간의 연관성을 생성한 후 고객과 BOM 데이터 모델 객체 간의 1:1 연관성을 생성합니다.
+   고객과 호출 데이터 모델 객체 간의 연관성을 생성한 후 고객과 BOM 데이터 모델 객체 간의 1:1 연관성을 생성합니다.
 
 1. **customer** 데이터 모델 개체의 맨 위에 있는 확인란을 선택하여 선택하고 **연결 추가**&#x200B;를 탭합니다. **연결 추가** 속성 창이 열립니다.
 1. **연결 추가** 창에서:
@@ -319,7 +320,7 @@ AEM Forms은 구성된 데이터 소스에서 양식 데이터 모드[l을 만�
 
 ### 데이터 모델 개체 속성 편집 {#edit-data-model-object-properties}
 
-고객과 다른 데이터 모델 개체 간 연결을 만든 후 고객 속성을 편집하여 데이터 모델 개체에서 데이터를 검색할 속성을 정의합니다. 사용 사례에 따라 모바일 번호는 고객 데이터 모델 개체에서 데이터를 검색하는 속성으로 사용됩니다.
+고객과 다른 데이터 모델 개체 간 연결을 만든 후 고객 속성을 편집하여 데이터 모델 개체에서 데이터를 검색하는 속성을 정의합니다. 사용 사례에 따라 모바일 번호는 고객 데이터 모델 개체에서 데이터를 검색하는 속성으로 사용됩니다.
 
 1. **customer** 데이터 모델 개체의 맨 위에 있는 확인란을 선택하여 선택하고 **속성 편집**&#x200B;을 탭합니다. **속성 편집** 창이 열립니다.
 1. **고객**&#x200B;을 **최상위 수준 모델 개체**&#x200B;로 지정합니다.
