@@ -2,10 +2,12 @@
 title: 타임라인 보기에서 디지털 자산의 활동 스트림
 description: 이 문서에서는 타임라인에서 자산에 대한 활동 로그를 표시하는 방법에 대해 설명합니다.
 contentOwner: AG
+feature: 자산 관리
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '220'
 ht-degree: 5%
 
 ---
