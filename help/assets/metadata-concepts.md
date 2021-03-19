@@ -2,10 +2,11 @@
 title: 메타데이터 개념 이해
 description: 자산을 쉽게 분류하고 구성할 수 있는 메타데이터의 필요성과 유형에 대해 알아봅니다.
 contentOwner: AG
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '2731'
+source-wordcount: '2734'
 ht-degree: 0%
 
 ---
