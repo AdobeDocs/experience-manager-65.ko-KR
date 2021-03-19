@@ -9,11 +9,12 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2646'
-ht-degree: 1%
+source-wordcount: '2648'
+ht-degree: 2%
 
 ---
 
@@ -202,7 +203,7 @@ ht-degree: 1%
 
 **** 범위다른 축에 있는 주어진 값에 대한 X 또는 Y축에 있는 값의 최대값과 최소값 간의 차이를 반환합니다.
 
-**중간값이** 다른 축에 있는 주어진 값에 대해 X축이나 Y축에서 높은 값과 낮은 값을 구분하는 값을 반환합니다.
+**중간값이** 다른 축에 있는 주어진 값에 대해 X축이나 Y축에 있는 높은 값과 낮은 값을 구분하는 값을 반환합니다.
 
 **최소값** 이 다른 축에 있는 주어진 값에 대한 X축이나 Y축에 있는 값의 최소값을 반환합니다.
 
