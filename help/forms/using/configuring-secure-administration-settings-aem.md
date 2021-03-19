@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '885'
 ht-degree: 0%
 
 ---
@@ -31,7 +32,7 @@ JEE의 AEM Forms을 설치하고 구성한 후에는 SOAP 및 EJB(Enterprise Jav
 
 JEE 서비스의 AEM Forms은 공인 호출자에 대해 유효한 자격 증명을 전달해야 하지만, 원격으로 액세스해야 하는 서비스에 대한 원격 액세스만 허용해야 합니다. 제한된 액세스 가능성을 실현하려면 원격으로 액세스 가능한 서비스 세트를 작동하는 시스템에 필요한 최소 수준으로 축소한 다음 필요한 추가 서비스에 대해 원격 호출을 활성화해야 합니다.
 
-AEM Forms on JEE 서비스는 항상 최소한 SOAP 액세스 권한이 필요합니다. 이러한 서비스는 일반적으로 Workbench에서 사용하지만 Workspace 웹 애플리케이션에서 호출하는 서비스를 포함합니다.
+AEM Forms on JEE 서비스는 항상 최소한 SOAP 액세스 권한이 필요합니다. 이러한 서비스는 일반적으로 Workbench에서 사용하지만 Workspace 웹 애플리케이션에서 호출하는 서비스도 포함합니다.
 
 관리 콘솔에서 응용 프로그램 및 서비스 웹 페이지를 사용하여 다음 절차를 완료합니다.
 
