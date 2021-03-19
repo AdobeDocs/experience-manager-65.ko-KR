@@ -1,7 +1,7 @@
 ---
 title: 기초 구성 요소
 seo-title: 기초 구성 요소
-description: 'null'
+description: 기초 구성 요소
 seo-description: 'null'
 uuid: 3caf9123-ae58-4590-af2f-57ef076daf7f
 contentOwner: User
@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '7364'
+source-wordcount: '7365'
 ht-degree: 98%
 
 ---
