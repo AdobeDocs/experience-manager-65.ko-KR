@@ -2,10 +2,12 @@
 title: 폴더 자산 및 컬렉션 검토
 description: 폴더 또는 컬렉션 내의 에셋에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 요청할 수 있습니다.
 contentOwner: AG
+feature: 공동 작업, 컬렉션
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
