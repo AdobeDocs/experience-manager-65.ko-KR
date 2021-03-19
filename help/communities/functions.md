@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 94a5a8d99d052d7bcf01f237dc2b73157a2f11c2
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2458'
+source-wordcount: '2459'
 ht-degree: 6%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 6%
 
 # 커뮤니티 기능{#community-functions}
 
-커뮤니티 경험에서 예상되는 기능 유형은 잘 알려져 있습니다. 커뮤니티 기능은 커뮤니티 기능으로 사용할 수 있습니다. 기본적으로 이 구성 요소는 작성 모드에서 페이지에 구성 요소를 추가하는 것 이상의 것이 필요한 커뮤니티 기능을 구현하기 위해 미리 연결된 하나 이상의 페이지입니다. 커뮤니티 사이트가 ](/help/communities/sites.md)만들어진 [커뮤니티 사이트 템플릿[의 구조를 정의하는 데 사용되는 구성 블록입니다.](/help/communities/sites-console.md)
+커뮤니티 경험에서 예상되는 기능 유형은 잘 알려져 있습니다. 커뮤니티 기능은 커뮤니티 기능으로 사용할 수 있습니다. 기본적으로 이 구성 요소는 작성 모드에서 페이지에 구성 요소를 추가하는 것 이상의 것이 필요한 커뮤니티 기능을 구현하기 위해 미리 연결된 하나 이상의 페이지입니다. 커뮤니티 사이트가 [만들어진 ](/help/communities/sites-console.md)커뮤니티 사이트 템플릿](/help/communities/sites.md)의 구조를 정의하는 데 사용되는 구성 블록입니다.[
 
 커뮤니티 사이트가 만들어지면 표준 [AEM 제작 모드](/help/sites-authoring/editing-content.md)를 사용하여 결과 페이지에 컨텐츠가 추가될 수 있습니다. 커뮤니티 기능 콘솔에서 볼 수 있는 것처럼 다양한 커뮤니티 기능을 사용할 수 있습니다.
 
