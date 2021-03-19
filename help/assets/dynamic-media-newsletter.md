@@ -4,10 +4,11 @@ description: 'Experience League의 Dynamic Media 뉴스레터는 월간 뉴스�
 keywords: Dynamic Media;뉴스레터;제품 업데이트;팁과 트릭;이벤트;고객 성공;블로그;블로그;이미지;기능;기능
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
