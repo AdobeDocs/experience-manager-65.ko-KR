@@ -2,10 +2,11 @@
 title: 자산 템플릿
 description: ' [!DNL Adobe Experience Manager Assets] 의 자산 템플릿과 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.'
 contentOwner: AG
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1546'
 ht-degree: 1%
 
 ---
