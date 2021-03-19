@@ -1,15 +1,15 @@
 ---
 title: AEM Mobile - GDPR 준비
 seo-title: AEM Mobile - GDPR 준비
-description: 'null'
+description: '"AEM Mobile - GDPR 준비"'
 seo-description: 'null'
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 translation-type: tm+mt
-source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '697'
 ht-degree: 5%
 
 ---
