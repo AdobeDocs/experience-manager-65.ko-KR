@@ -2,10 +2,11 @@
 title: 검색 기능 확장.
 description: ' [!DNL Adobe Experience Manager Assets] 의 검색 기능을 기본값 이상으로 확장합니다.'
 contentOwner: AG
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '839'
 ht-degree: 8%
 
 ---
@@ -25,7 +26,7 @@ ht-degree: 8%
 
 ## 오버레이 {#overlaying}
 
-사전 구성된 조건자를 오버레이하려면 `facets` 노드를 `/libs/dam/content/search/searchpanel`에 복사하거나 `facetURL` 구성에서 다른 `/apps/dam/content/search/searchpanel/` 속성을 지정하십시오(기본값은 `searchpanel`에 해당).`/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`
+사전 구성된 조건자를 오버레이하려면 `/libs/dam/content/search/searchpanel` 노드를 `/apps/dam/content/search/searchpanel/`에 복사하거나 `searchpanel` 구성에서 다른 `facetURL` 속성을 지정하십시오(기본값은 `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`에 해당).`facets`
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
@@ -138,7 +139,7 @@ ht-degree: 8%
    </script>
    ```
 
-1. 구성 요소를 사용할 수 있게 하려면 해당 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하도록 하려면 CRXDE에서 기본 유형 **cq:EditConfig**&lt;a1/> 노드를 추가합니다.**** 단락을 제거할 수 있도록 단일 값 **DELETE**&#x200B;으로 다중 값 속성 **cq:actions**&#x200B;을 추가합니다.
+1. 구성 요소를 사용할 수 있게 하려면 해당 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하도록 하려면 CRXDE에서 기본 유형 **cq:EditConfig****노드를 추가합니다.** 단락을 제거할 수 있도록 단일 값 **DELETE**&#x200B;으로 다중 값 속성 **cq:actions**&#x200B;을 추가합니다.
 1. 브라우저로 이동하고 샘플 페이지(예: **press.html**)에서 디자인 모드로 전환하고 설명 단락 시스템에 대한 새 구성 요소를 활성화합니다(예: **left**).
 
 1. **편집** 모드에서 이제 새 구성 요소를 사이드킥에서 사용할 수 있습니다(**검색** 그룹에 있음). **예측** 열에 구성 요소를 삽입하고 **다이아몬드**&#x200B;와 같이 검색 단어를 입력하고 확대경을 클릭하여 검색을 시작합니다.
@@ -242,7 +243,7 @@ ht-degree: 8%
        });
    ```
 
-1. 구성 요소를 사용할 수 있게 하려면 해당 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하도록 하려면 CRXDE에서 기본 유형 **cq:EditConfig**&lt;a1/> 노드를 추가합니다.**** 단락을 제거할 수 있도록 단일 값 **DELETE**&#x200B;으로 다중 값 속성 **cq:actions**&#x200B;을 추가합니다.
+1. 구성 요소를 사용할 수 있게 하려면 해당 구성 요소를 편집할 수 있어야 합니다. 구성 요소를 편집 가능하도록 하려면 CRXDE에서 기본 유형 **cq:EditConfig****노드를 추가합니다.** 단락을 제거할 수 있도록 단일 값 **DELETE**&#x200B;으로 다중 값 속성 **cq:actions**&#x200B;을 추가합니다.
 1. 브라우저로 이동하고 샘플 페이지(예: **press.html**)에서 디자인 모드로 전환하고 설명 단락 시스템에 대한 새 구성 요소를 활성화합니다(예: **left**).
 1. **편집** 모드에서 이제 새 구성 요소를 사이드킥에서 사용할 수 있습니다(**검색** 그룹에 있음). **예측** 열에 구성 요소를 삽입합니다.
 
