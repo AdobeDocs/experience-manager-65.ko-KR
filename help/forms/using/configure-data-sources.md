@@ -8,10 +8,11 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
+feature: 양식 데이터 모델
 translation-type: tm+mt
-source-git-commit: 19ee2722bc73f67b77cc08dd2a634328ba5269ec
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
@@ -63,7 +64,7 @@ AEM 웹 콘솔 구성을 사용하여 관계형 데이터베이스를 구성할 
 1. **[!UICONTROL 유효성 검사 쿼리]** 필드에 SQL SELECT 쿼리를 지정하여 풀의 연결을 확인합니다. 쿼리는 하나 이상의 행을 반환해야 합니다. 데이터베이스를 기반으로 다음 중 하나를 지정합니다.
 
    * 1을 선택합니다(MySQL 및 MS SQL).
-   * 이중(Oracle) 중에서 선택 1
+   * 이중(Oracle)에서 1을 선택합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 눌러 구성을 저장합니다.
 
@@ -141,12 +142,12 @@ RESTful 서비스를 구성하려면 다음을 수행합니다.
 
 ### 성능 최적화를 위한 양식 데이터 모델 HTTP 클라이언트 구성 {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] 데이터 소스로 RESTful 웹 서비스와 통합할 때 양식 데이터 모델에 성능 최적화를 위한 HTTP 클라이언트 구성이 포함됩니다.
+[!DNL Experience Manager Forms] 데이터 소스로 RESTful 웹 서비스와 통합할 때 양식 데이터 모델은 성능 최적화를 위한 HTTP 클라이언트 구성을 포함합니다.
 양식 데이터 모델 HTTP 클라이언트를 구성하려면 다음 단계를 수행하십시오.
 
 1. [!DNL Experience Manager Forms] 작성자 인스턴스에 관리자로 로그인하고 [!DNL Experience Manager] 웹 콘솔 번들로 이동합니다. 기본 URL은 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)입니다.
 
-1. REST 데이터 소스&#x200B;**[!UICONTROL 에 대한 양식 데이터 모델 Http 클라이언트 구성을 누릅니다.]**
+1. REST 데이터 소스&#x200B;]**에 대한 양식 데이터 모델 Http 클라이언트 구성을 누릅니다.**[!UICONTROL 
 
 1. [!UICONTROL 양식 데이터 모델 REST 데이터 소스] 대화 상자에서 다음을 수행합니다.
 
