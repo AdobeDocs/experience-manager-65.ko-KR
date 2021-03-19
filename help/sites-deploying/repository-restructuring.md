@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
+feature: 업그레이드
 translation-type: tm+mt
-source-git-commit: 97b2da315fac6f84fcba6d4464bf8dd1d690cfd1
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ## 소개 {#introduction}
 
-AEM 6.4 이전에는 업그레이드 시 변경될 수 있는 JCR의 예측할 수 없는 영역에 고객 코드가 배포되었습니다. 이러한 이유 때문에 공식 AEM 릴리스가 사용자 지정 코드, 구성 또는 컨텐츠를 덮어쓰는 것이 일반적이었습니다. 또한 고객이 AEM 제품 코드 또는 컨텐츠를 덮어쓸 수 있으므로 제품 기능을 깨는 경우도 있습니다.
+AEM 6.4 이전에는 업그레이드 시 변경될 수 있었던 JCR의 예측할 수 없는 영역에 고객 코드가 배포되었습니다. 이러한 이유 때문에 공식 AEM 릴리스가 사용자 지정 코드, 구성 또는 컨텐츠를 덮어쓰는 것이 일반적이었습니다. 또한 고객이 AEM 제품 코드 또는 컨텐츠를 덮어쓸 수 있으므로 제품 기능을 깨는 경우도 있습니다.
 
 AEM 제품 코드와 고객 코드에 대한 계층을 명확히 설명함으로써 이러한 충돌을 막을 수 있습니다.
 
