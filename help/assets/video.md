@@ -8,10 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
+feature: 자산 관리
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '11740'
+source-wordcount: '11745'
 ht-degree: 1%
 
 ---
@@ -402,7 +404,7 @@ VBR 대 CBR을 선택하는 경우에는 미디어 파일에 VBR을 사용하는
 
 | 비디오 유형 | 너비 x 높이 | 폭 비율 | 높이 비율 |
 |--- |--- |--- |--- |
-| 소스 | 1920x1080 | 1 | 1 |
+| 소스 | 1920x1080 | 1 | 3 |
 | 인코딩됨 | 960 x 540 | 2 | 2 |
 | 인코딩됨 | 640 x 360 | 3 | 3 |
 | 인코딩됨 | 480 x 270 | 4 | 4 |
