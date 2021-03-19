@@ -8,11 +8,12 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '7698'
-ht-degree: 0%
+source-wordcount: '7699'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +42,7 @@ JEE에 AEM Forms을 설치하기 전에 네트워크 레이어 및 운영 체제
 
 **Windows의 설치 및 구성**
 
-턴키 방법을 사용하거나 PDF Generator를 설치하는 경우 JBoss의 JEE에 AEM Forms을 설치하는 경우 Windows에서 관리자로 설치해야 합니다. 또한 기본 애플리케이션 지원을 통해 Windows에 PDF Generator를 설치할 때는 Microsoft Office를 설치한 Windows 사용자와 동일한 Windows 사용자로 설치를 실행해야 합니다. 설치 권한에 대한 자세한 내용은* 응용 프로그램 서버용 JEE*에 AEM Forms 설치 및 배포 문서를 참조하십시오.
+턴키 방식을 사용하거나 PDF Generator를 설치하는 경우 JBoss의 AEM Forms을 JEE에 설치하는 경우 Windows에서 관리자로 설치해야 합니다. 또한 기본 애플리케이션 지원을 통해 Windows에 PDF Generator를 설치할 때는 Microsoft Office를 설치한 Windows 사용자와 동일한 Windows 사용자로 설치를 실행해야 합니다. 설치 권한에 대한 자세한 내용은* 응용 프로그램 서버용 JEE*에 AEM Forms 설치 및 배포 문서를 참조하십시오.
 
 ### 네트워크 레이어 보안 {#network-layer-security}
 
@@ -76,7 +77,7 @@ JEE에 AEM Forms을 설치하기 전에 네트워크 레이어 및 운영 체제
   </tr> 
   <tr> 
    <td><p>데이터베이스 포트</p> </td> 
-   <td><p>데이터베이스에 대한 기본 수신 포트를 사용하지 마십시오(MySQL - 3306, Oracle - 1521, MS SQL - 1433). 데이터베이스 포트 변경에 대한 자세한 내용은 데이터베이스 설명서를 참조하십시오.</p> <p>다른 데이터베이스 포트를 사용하면 JEE 구성의 전체 AEM Forms에 영향을 줍니다. 기본 포트를 변경하는 경우 JEE에서 AEM Forms의 데이터 소스와 같은 다른 구성 영역에서 해당 사항을 수정해야 합니다.</p> <p>JEE에서 AEM Forms의 데이터 소스를 구성하는 방법에 대한 자세한 내용은 JEE에서 AEM Forms 설치 및 업그레이드 또는 응용 프로그램 서버의 AEM Forms으로 업그레이드 <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">AEM Forms 사용자 안내서</a>를 참조하십시오.</p> </td> 
+   <td><p>데이터베이스의 기본 수신 포트를 사용하지 마십시오(MySQL - 3306, Oracle - 1521, MS SQL - 1433). 데이터베이스 포트 변경에 대한 자세한 내용은 데이터베이스 설명서를 참조하십시오.</p> <p>다른 데이터베이스 포트를 사용하면 JEE 구성의 전체 AEM Forms에 영향을 줍니다. 기본 포트를 변경하는 경우 JEE에서 AEM Forms의 데이터 소스와 같은 다른 구성 영역에서 해당 사항을 수정해야 합니다.</p> <p>JEE에서 AEM Forms의 데이터 소스를 구성하는 방법에 대한 자세한 내용은 JEE에서 AEM Forms 설치 및 업그레이드 또는 응용 프로그램 서버의 AEM Forms으로 업그레이드 <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">AEM Forms 사용자 안내서</a>를 참조하십시오.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -343,7 +344,7 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 애
   </tr> 
   <tr> 
    <td><p>디렉토리 검색</p> </td> 
-   <td><p>다른 사람이 존재하지 않는 페이지를 요청하거나 디렉터의 이름을 요청할 때(요청 문자열은 슬래시(/)로 끝남) 응용 프로그램 서버는 해당 디렉토리의 내용을 반환하지 않아야 합니다. 이를 방지하기 위해 응용 프로그램 서버에서 디렉토리 검색을 비활성화할 수 있습니다. 관리 콘솔 응용 프로그램 및 서버에서 실행 중인 다른 응용 프로그램에 대해 이 작업을 수행해야 합니다.</p> <p>JBoss의 경우 다음 예제와 같이 web.xml 파일에서 <code>DefaultServlet</code> 속성의 목록 초기화 매개 변수의 값을 <code>false</code>으로 설정합니다.</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;목록&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>WebSphere의 경우 ibm-web-ext.xmi 파일의 <code>directoryBrowsingEnabled</code> 속성을 <code>false</code>으로 설정합니다.</p> <p>WebLogic의 경우 다음 예제와 같이 weblogic.xml 파일의 인덱스 디렉토리 속성을 <code>false</code>으로 설정합니다.</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>다른 사람이 존재하지 않는 페이지를 요청하거나 디렉터의 이름을 요청할 때(요청 문자열은 슬래시(/)로 끝남) 응용 프로그램 서버는 해당 디렉토리의 내용을 반환하지 않아야 합니다. 이를 방지하기 위해 응용 프로그램 서버에서 디렉토리 검색을 비활성화할 수 있습니다. 관리 콘솔 응용 프로그램 및 서버에서 실행 중인 다른 응용 프로그램에 대해 이 작업을 수행해야 합니다.</p> <p>JBoss의 경우 다음 예제와 같이 web.xml 파일에서 <code>DefaultServlet</code> 속성의 목록 초기화 매개 변수의 값을 <code>false</code>으로 설정합니다.</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;목록&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;3&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>WebSphere의 경우 ibm-web-ext.xmi 파일의 <code>directoryBrowsingEnabled</code> 속성을 <code>false</code>으로 설정합니다.</p> <p>WebLogic의 경우 다음 예제와 같이 weblogic.xml 파일의 인덱스 디렉토리 속성을 <code>false</code>으로 설정합니다.</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -356,7 +357,7 @@ oracle에서 사용하는 데이터베이스 계정에는 CONNECT, RESOURCE 및 
 
 #### JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}에 대해 Windows에서 SQL Server에 대한 통합 보안 구성
 
-1. 다음 예제와 같이 ]JBOSS_HOME[\\standalone\configuration\lc_{datasource.xml}을 수정하여 연결 URL에 &lt;a2/>을(를) 추가합니다.`integratedSecurity=true`
+1. 다음 예제와 같이 `integratedSecurity=true`JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml}을 수정하여 연결 URL에 [을(를) 추가합니다.
 
    ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
