@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '964'
 ht-degree: 4%
 
 ---
@@ -212,4 +213,4 @@ ID의 기본값이 이메일 주소로 지정되면 이메일 주소가 변경�
 
 `admin`으로 로그인하지 않은 경우 로그인한 사용자는 `administrators` 사용자 그룹의 구성원이어야 합니다.
 
-작성자[의 복제 에이전트를 참조하십시오.](deploy-communities.md#replication-agents-on-author)
+작성자](deploy-communities.md#replication-agents-on-author)의 복제 에이전트를 참조하십시오.[
