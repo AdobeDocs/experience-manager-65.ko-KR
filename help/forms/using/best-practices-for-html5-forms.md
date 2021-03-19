@@ -10,10 +10,11 @@ topic-tags: hTML5_forms
 content-type: reference
 discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: b6c013a31b70166cba80fea53dffc3794ffee5b8
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1436'
 ht-degree: 1%
 
 ---
@@ -46,13 +47,13 @@ HTML5 양식에는 이미지, JavaScript 및 CSS 파일과 같은 여러 외부 
 
 * [압축된 이미지](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)를 사용합니다. 양식을 렌더링하는 데 필요한 네트워크 활동과 메모리 양이 줄어듭니다. 따라서 양식 로드 시간은 상당히 줄어듭니다.
 * AEM Configuration Manager(Day CQ HTML Library Manager)의 축소 옵션을 사용하여 JavaScript 및 CSS 파일을 압축합니다. 자세한 내용은 [OSGi 구성 설정](/help/sites-deploying/osgi-configuration-settings.md)을 참조하십시오.
-* 웹 압축을 활성화합니다. 양식에서 시작된 요청 및 응답 크기를 줄입니다. 자세한 내용은 AEM 양식 서버[의 성능 조정을 참조하십시오.](https://helpx.adobe.com/kr/aem-forms/6-3/performance-tuning-aem-forms.html)
+* 웹 압축을 활성화합니다. 양식에서 시작된 요청 및 응답 크기를 줄입니다. 자세한 내용은 AEM 양식 서버](https://helpx.adobe.com/kr/aem-forms/6-3/performance-tuning-aem-forms.html)의 성능 조정을 참조하십시오.[
 
 ## 관심 영역을 활성 상태로 유지하고 필수 필드 {#keep-the-interest-alive-show-only-required-fields}만 표시합니다.
 
 HTML5 양식은 수백 개의 페이지에 실행될 수 있습니다. 필드가 많이 있는 양식이 브라우저에서 느리게 로드됩니다. XFA 양식에서 다음과 같은 최적화를 수행하여 많은 수의 필드와 페이지로 양식을 최적화할 수 있습니다.
 
-* 큰 양식을 여러 개의 양식으로 분할할 수 있는지 평가합니다. 또한 양식 세트를 사용하여 모든 작은 양식을 함께 그룹화하여 하나의 단위로 표시할 수 있습니다. 양식 세트는 필요한 양식만 로드합니다. 또한 양식 세트에서 데이터 바인딩을 공유하도록 여러 양식의 공통 필드를 구성할 수 있습니다. 데이터 바인딩을 사용하면 일반적인 정보를 한 번만 채울 수 있습니다.정보가 후속 양식에 자동으로 입력되므로 성능이 크게 향상됩니다. 양식 세트에 대한 자세한 내용은 AEM 양식[의 양식 세트를 참조하십시오.](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)
+* 큰 양식을 여러 개의 양식으로 분할할 수 있는지 평가합니다. 또한 양식 세트를 사용하여 모든 작은 양식을 함께 그룹화하여 하나의 단위로 표시할 수 있습니다. 양식 세트는 필요한 양식만 로드합니다. 또한 양식 세트에서 데이터 바인딩을 공유하도록 여러 양식의 공통 필드를 구성할 수 있습니다. 데이터 바인딩을 사용하면 일반적인 정보를 한 번만 채울 수 있습니다.정보가 후속 양식에 자동으로 입력되므로 성능이 크게 향상됩니다. 양식 세트에 대한 자세한 내용은 AEM 양식](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)의 양식 세트를 참조하십시오.[
 * 섹션을 분할하고 각 섹션을 다른 페이지로 이동하는 것을 고려합니다. HTML5 양식은 페이지 스크롤 요청에서 각 페이지를 동적으로 로드합니다. 스크롤된 페이지(표시되는 페이지 및 앞에 있는 페이지)만 메모리에 저장됩니다.나머지 페이지는 주문형 로드됩니다. 따라서 페이지에서 섹션을 직접 분할하고 이동하면 양식을 로드하는 데 필요한 시간이 줄어듭니다. 양식의 첫 페이지를 랜딩 페이지로 사용할 수도 있습니다. 이는 책의 목차(TOC)와 유사합니다. 양식의 랜딩 페이지에는 양식의 다른 섹션에 대한 링크만 들어 있습니다. 양식 첫 페이지의 로드 시간이 크게 개선되고 사용자 환경이 개선됩니다.
 * 기본적으로 조건부 섹션을 숨겨진 상태로 유지합니다. 특정 조건이 충족될 때만 이러한 섹션을 볼 수 있도록 합니다. DOM의 크기를 최소로 유지하는 데 도움이 됩니다. 탭 방식의 탐색을 사용하여 한 번에 하나의 섹션만 표시할 수도 있습니다.
 
