@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
+feature: Forms 포털
 translation-type: tm+mt
-source-git-commit: a209b2dda04985a3f2d7c6838f11f0b5dc62d520
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
