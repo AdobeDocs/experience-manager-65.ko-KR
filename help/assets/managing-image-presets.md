@@ -9,10 +9,12 @@ content-type: reference
 discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
+feature: 이미지 사전 설정
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '3828'
+source-wordcount: '3833'
 ht-degree: 3%
 
 ---
@@ -81,7 +83,7 @@ Adobe Illustrator의 파일 형식은 PDF의 변수입니다. AEM Assets 컨텍�
 
 하위 자산은 전체 `DAM Update Asset` 워크플로 내에서 `Create Sub Asset process` 구성 요소에 의해 만들어집니다. 워크플로우 내에서 이 프로세스 구성 요소를 보려면 **[!UICONTROL 도구 > 워크플로우 > 모델 > DAM 자산 업데이트 > 편집을 탭합니다.]**
 
-자세한 내용은 다중 페이지 파일[의 페이지 보기를 참조하십시오.](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file)
+자세한 내용은 다중 페이지 파일](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file)의 페이지 보기를 참조하십시오.[
 
 자산을 열 때 하위 자산이나 페이지를 보고 콘텐츠 메뉴를 누른 다음 **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지를 선택할 수 있습니다.]** 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 `Create Sub Asset` 워크플로우 구성 요소에 의해 추출됩니다. 그런 다음 기본 자산 아래에 `page1.pdf`, `page2.pdf` 등으로 저장됩니다. 저장된 후에는 `DAM Update Asset` 워크플로우가 처리합니다.
 
@@ -417,7 +419,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
      <li><strong>Bi-Linear</strong>  - 가장 빠른 리샘플링 방법입니다.일부 앨리어싱 가공물은 눈에 잘 띈다.</li>
      <li><strong>Bi-Cubic</strong>  - CPU 사용을 증가시키지만 앨리어싱 가공물이 적은 경우 더 선명한 이미지를 생성합니다.</li>
      <li><strong>Sharp2</strong>  - Bi-Cubic보다 약간 더 선명하게 결과를 생성할 수 있지만 CPU 비용이 훨씬 높습니다.</li>
-     <li><strong>Bi-Sharp</strong> - 이미지 크기를 줄이기 위해 Photoshop 기본 리샘플러를 선택하는데, 이 <strong>는 쌍입방 </strong> 공유 영역이라고 합니다.</li>
+     <li><strong>Bi-Sharp</strong> - 이미지 크기를 줄이기 위해 Photoshop 기본 리샘플러를 선택하는데, 이를  <strong>쌍입방 </strong> 공유Adobe Photoshop라고 합니다.</li>
      <li><strong>각 </strong> 색상 및  <strong>밝기</strong>  - 각 방법은 색상 또는 밝기를 기반으로 할 수 있습니다. 기본적으로 <strong>각 색상</strong>이 선택됩니다.</li>
     </ul> </td>
   </tr>
@@ -450,7 +452,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 >[!NOTE]
 >
->AEM[에서 일부 이미지 수정자를 사용할 수 없습니다.](#advanced-tab-options)
+>AEM](#advanced-tab-options)에서 일부 이미지 수정자를 사용할 수 없습니다.[
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api)  - 네거티브 이미지 효과에 대한 각 색상 구성 요소를 반전합니다.
 
