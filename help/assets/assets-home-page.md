@@ -2,10 +2,12 @@
 title: '[!DNL Assets] 홈 페이지 경험'
 description: 자산에 대한 최근 활동 요약 정보를 포함하여 다양한 시작 화면 환경을 위한 [!DNL Experience Manager Assets] 홈 페이지를 개인화합니다.
 contentOwner: AG
+feature: 개발자 도구, 자산 관리
+role: 관리자, 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '567'
 ht-degree: 1%
 
 ---
