@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1794'
 ht-degree: 0%
 
 ---
@@ -140,7 +141,7 @@ Ultramarine-Accessible 테마는 참조 테마입니다. 적응형 양식의 색
 
 ### 4. 충분한 색상 대비 {#provide-sufficient-color-contrast} 제공
 
-접근성 설계에는 색상 사용에 대한 추가 지침을 고려해야 합니다. 양식 작성자는 다양한 양식 구성 요소를 강조 표시하여 색상을 사용하여 양식의 모양을 향상시킬 수 있습니다. 하지만, 부적절한 색상 사용은 다른 능력을 가진 사람들이 읽는 것을 어렵거나 불가능하게 만들 수 있습니다.
+접근성 설계에는 색상 사용에 대한 추가 지침을 고려해야 합니다. 양식 작성자는 다양한 양식 구성 요소를 강조 표시하여 색상을 사용하여 양식의 모양을 향상시킬 수 있습니다. 하지만, 부적절한 색상 사용은 다른 능력을 가진 사람들이 읽는 것을 어렵거나 불가능하게 만들 수도 있습니다.
 
 시각 장애가 있는 사용자는 디지털 컨텐츠를 읽기 위해 텍스트와 배경 간의 대비가 높습니다. 충분한 대비책이 없으면 일부 사용자가 읽을 수 있도록 양식을 읽기 어려울 수 있습니다.
 
