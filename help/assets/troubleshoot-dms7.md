@@ -8,10 +8,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1288'
 ht-degree: 1%
 
 ---
@@ -69,7 +70,7 @@ ht-degree: 1%
 
 * 두 가지 모두를 유지하면 게시된 자산 URL에 대한 고유한 이름을 가진 새 자산이 만들어집니다. 예를 들어 `image.jpg`은 원래 자산이고 `image1.jpg`은 새로 업로드된 자산입니다.
 
-* Dynamic Media - Scene7 모드 전달에서는 버전 만들기가 지원되지 않습니다. 새 버전은 배달되는 기존 자산을 대체합니다.
+* Dynamic Media - Scene7 모드 전달에서는 버전 만들기가 지원되지 않습니다. 새 버전은 전달에 있는 기존 자산을 대체합니다.
 
 ## 이미지 및 세트 {#images-and-sets}
 
