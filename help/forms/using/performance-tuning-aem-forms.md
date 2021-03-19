@@ -1,6 +1,6 @@
 ---
-title: AEM Forms 서버 성능 조정
-seo-title: AEM Forms 서버 성능 조정
+title: AEM Forms 서버의 성능 조정
+seo-title: AEM Forms 서버의 성능 조정
 description: AEM Forms이 최적으로 수행하려면 캐시 설정 및 JVM 매개변수를 미세 조정할 수 있습니다. 또한 웹 서버를 사용하면 AEM Forms 배포 성능을 향상시킬 수 있습니다.
 seo-description: AEM Forms이 최적으로 수행하려면 캐시 설정 및 JVM 매개변수를 미세 조정할 수 있습니다. 또한 웹 서버를 사용하면 AEM Forms 배포 성능을 향상시킬 수 있습니다.
 uuid: bf23b62c-7559-4726-8f4e-cc8b1457e501
@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 0%
+source-wordcount: '928'
+ht-degree: 2%
 
 ---
 
