@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 6d0ff6ae47688ba7f0e071bad40808fb3466246f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2804'
 ht-degree: 1%
 
 ---
@@ -104,7 +105,7 @@ Facebook 애플리케이션을 만들려면 [https://developers.facebook.com/app
 1. 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Facebook 소셜 로그인 구성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 컨텍스트 경로]** 구성을 선택합니다.
 
-   **[!UICONTROL 컨텍스트]** 경로는 커뮤니티 사이트를 만들고 편집할 때 선택한 클라우드 구성 경로와 같아야 합니다.
+   **[!UICONTROL 컨텍스트]** 경로는 커뮤니티 사이트를 만들거나 편집할 때 선택한 클라우드 구성 경로와 같아야 합니다.
 
 1. 컨텍스트 경로가 클라우드 서비스를 만들 수 있는지 확인합니다.
 1. **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL 구성 브라우저]**&#x200B;로 이동합니다. 컨텍스트를 선택하고 속성을 편집합니다. 아직 활성화되지 않은 경우 클라우드 구성을 활성화합니다.
