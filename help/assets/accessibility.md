@@ -2,10 +2,12 @@
 title: ' [!DNL Experience Manager Assets]의 액세스 가능성'
 description: ' [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] 의 액세서빌러티 기능이 장애가 있는 사용자를 돕는 방법을 알아봅니다.'
 contentOwner: AG
+feature: 자산 관리
+role: 비즈니스 전문가, 건축가, 리더
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '1925'
 ht-degree: 2%
 
 ---
