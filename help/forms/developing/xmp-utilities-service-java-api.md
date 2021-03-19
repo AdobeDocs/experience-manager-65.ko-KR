@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}를 사용하여 XMP 메타데이터 내보내기
 
-다음 코드 예제에서는 XMP 메타데이터를 검색, 검사 및 저장합니다. (PDF 문서에서 메타데이터 내보내기[를 참조하십시오.)](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)
+다음 코드 예제에서는 XMP 메타데이터를 검색, 검사 및 저장합니다. (PDF 문서에서 메타데이터 내보내기](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)를 참조하십시오.)[
 
 ```java
  /*
