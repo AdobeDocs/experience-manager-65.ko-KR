@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
+feature: 구성
 translation-type: tm+mt
-source-git-commit: b01f6d3726fd6aa06ffedaf10dfde9526479a2a3
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2881'
 ht-degree: 1%
 
 ---
@@ -62,7 +63,7 @@ Apache Oak 기반 백엔드를 사용하여 저장소에 다른 인덱서를 연
 
 먼저 쿼리를 추상 구문 트리로 구문 분석합니다. 그런 다음 쿼리가 확인되고 Oak 쿼리의 기본 언어인 SQL-2로 변환됩니다.
 
-다음으로 각 색인은 쿼리 비용을 예상하기 위해 협의됩니다. 일단 그것이 완성되면, 가장 저렴한 색인의 결과가 검색된다. 마지막으로, 결과를 필터링하여 현재 사용자가 결과에 대한 읽기 권한을 가지고 있고 그 결과가 전체 쿼리와 일치하는지 확인합니다.
+다음으로 각 색인은 쿼리 비용을 예상하기 위해 협의됩니다. 일단 그것이 완성되면, 가장 저렴한 색인의 결과가 검색된다. 마지막으로, 결과를 필터링하여 현재 사용자가 결과에 대한 읽기 권한을 가지고 있고 결과가 전체 쿼리와 일치하는지 확인합니다.
 
 ## 인덱스 {#configuring-the-indexes} 구성
 
