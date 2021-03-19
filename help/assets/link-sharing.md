@@ -2,10 +2,11 @@
 title: 링크를 사용하여 에셋 공유
 description: 자산, 폴더 및 컬렉션을 URL로 공유합니다.
 contentOwner: AG
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: e36d08c9ea89e840aecde79ffdd911372c0c54ee
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1058'
 ht-degree: 1%
 
 ---
