@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2936'
 ht-degree: 0%
 
 ---
@@ -71,7 +72,7 @@ Java XML 클래스 사용.
 
 >[!NOTE]
 >
->데이터를 XML 데이터로 전송하려면 양식 디자인을 Designer에서 올바르게 구성해야 합니다. 양식 디자인이 XML 데이터를 전송하도록 제대로 구성하려면 양식 디자인에 있는 [제출] 단추가 XML 데이터를 전송하도록 설정되어 있는지 확인하십시오. 제출 단추를 설정하여 XML 데이터를 제출하는 방법에 대한 자세한 내용은 [AEM Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)을(를) 참조하십시오.
+>데이터를 XML 데이터로 전송하려면 양식 디자인을 Designer에서 올바르게 구성해야 합니다. 양식 디자인이 XML 데이터를 전송하도록 제대로 구성하려면 양식 디자인에 있는 [제출] 단추가 XML 데이터를 전송하도록 설정되어 있는지 확인하십시오. 제출 단추를 설정하여 XML 데이터를 제출하는 방법에 대한 자세한 내용은 [AEM Forms 디자이너](https://www.adobe.com/go/learn_aemforms_designer_63)를 참조하십시오.
 
 ## 제출된 PDF 데이터 처리 {#handling-submitted-pdf-data}
 
@@ -90,7 +91,7 @@ Forms 서비스를 호출하는 웹 애플리케이션을 고려합니다. Forms
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>웹 페이지에는 Forms 서비스를 호출하는 Java 서블릿에 액세스하는 링크가 포함되어 있습니다.</p></td>
   </tr>
   <tr>
