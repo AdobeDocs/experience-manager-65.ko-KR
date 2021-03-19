@@ -1,7 +1,7 @@
 ---
 title: 컨텐츠 서비스
 seo-title: 컨텐츠 서비스
-description: 'null'
+description: 컨텐츠 서비스
 seo-description: 'null'
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 3%
+source-wordcount: '302'
+ht-degree: 4%
 
 ---
 
