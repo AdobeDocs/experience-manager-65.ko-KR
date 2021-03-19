@@ -1,15 +1,16 @@
 ---
-title: Dynamic Media에서 선택적 게시 작업
+title: Dynamic Media의 선택적 게시 작업
 description: Dynamic Media에서 선택적 게시로 작업하는 방법에 대한 정보입니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 29f91713f5760ab0b5a557b5c811ef2efee1cc61
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2937'
 ht-degree: 4%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 4%
 
 # Dynamic Media {#selective-publish-configure-folder}의 폴더 수준에서 선택적 게시 구성
 
-**[!UICONTROL Dynamic Media Configuration]**&#x200B;에 의존하는 대신 **[!UICONTROL 발행물 관리]** 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 사용하여 폴더 수준에서 AEM 또는 Dynamic Media에서 에셋을 게시 또는 게시 취소하도록 선택할 수 있습니다.&lt;a4/>Configuration&lt;a5/>에 대한 설정은 Dynamic Media 인스턴스의 모든 폴더에 대해 전역적입니다.
+**[!UICONTROL Dynamic Media Configuration]**&#x200B;에 의존하는 대신 **[!UICONTROL 발행물 관리]** 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 사용하여 폴더 수준에서 AEM 또는 Dynamic Media에서 에셋을 게시 또는 게시 취소하도록 선택할 수 있습니다.Configuration에 대한 설정은 Dynamic Media 인스턴스의 모든 폴더에 대해 전역적입니다.
 
 예를 들어, 선택적 게시에서는 아직 라이브가 아닌 제품의 자산으로 작업할 수 있습니다. 이러한 경우 마케팅 팀은 글로벌 전달을 위해 Dynamic Media에 이러한 자산을 게시하지 않고도 Dynamic Media에 동기화되는 스마트 자르기 이미지 및 동적 표현물에 액세스할 수 있으므로 홍보 자료를 만들 수 있습니다.
 
@@ -33,7 +34,7 @@ ht-degree: 4%
 
 폴더 수준 **[!UICONTROL Dynamic Media 게시 모드]** 옵션은 항상 **[!UICONTROL Dynamic Media 구성의**[!UICONTROL &#x200B;자산 게시&#x200B;]**설정에 있는 값으로 기본 설정됩니다.]** 하지만 이 항목의 다음 단계에서는 폴더 수준에서 이 기본값을 수동으로 변경하여  **[!UICONTROL Dynamic Media 구성 값을 재정의하는 방법을]** 보여 줍니다.
 
-**[!UICONTROL Dynamic Media 구성]**&#x200B;구성&lt;a3/>에 설정된 ]**값 또는 폴더 수준 속성에 설정된**[!UICONTROL  Dynamic Media 게시 모드&#x200B;]**값에 의존하더라도**[!UICONTROL &#x200B;즉시&#x200B;]**,**[!UICONTROL &#x200B;활성화 시&#x200B;]**또는 &lt;aa를 선택할 수 있습니다. 10/>선택적 게시.**[!UICONTROL **** 예를 들어  **[!UICONTROL Dynamic Media Configuration의 Publish]** Assets 값 **[!UICONTROL 을 활성화]**  시 **[!UICONTROL 로 설정하되,]**  ****   **** Dynamic MediaPublishmode 값을 폴더 수준로Selective Publish또는 그 반대로 설정할 수 있습니다.
+**[!UICONTROL Dynamic Media 구성]**&#x200B;구성&#x200B;**[!UICONTROL 에 설정된]** 값 또는 폴더 수준 속성에 설정된 **[!UICONTROL Dynamic Media 게시 모드]** 값에 의존하더라도 **[!UICONTROL 즉시]**, **[!UICONTROL 활성화 시]** 또는 &lt;aa를 선택할 수 있습니다. 10/>선택적 게시.**** 예를 들어  **[!UICONTROL Dynamic Media Configuration의 Publish]** Assets 값 **[!UICONTROL 을 활성화]**  시 **[!UICONTROL 로 설정하되,]**  ****   **** Dynamic MediaPublishmode 값을 폴더 수준로Selective Publish또는 그 반대로 설정할 수 있습니다.
 
 폴더에서 선택적 게시를 구성한 후 다음 중 하나를 수행할 수 있습니다.
 
@@ -107,7 +108,7 @@ Dynamic Media](#selective-publish-configure-folder)의 폴더 수준에서 [Dyna
 
 1. **[!UICONTROL 예약]**&#x200B;에서 게시 시간을 설정합니다.
 
-   | 예약 | 설명 |
+   | 일정 | 설명 |
    | --- | --- |
    | **[!UICONTROL 지금]** | 자산을 즉시 게시하려면 선택합니다. |
    | **[!UICONTROL 나중에]** | 특정 날짜 및 시간에 자산을 게시하려면 선택합니다. |
@@ -139,7 +140,7 @@ Dynamic Media](#selective-publish-configure-folder)의 폴더 수준에서 [Dyna
 
 1. **[!UICONTROL 예약]**&#x200B;에서 비활성화 시간을 설정합니다.
 
-   | 예약 | 설명 |
+   | 일정 | 설명 |
    | --- | --- |
    | **[!UICONTROL 지금]** | 자산을 즉시 게시 취소하려면 선택합니다. |
    | **[!UICONTROL 나중에]** | 특정 날짜 및 시간에 자산을 게시 취소하도록 선택합니다. |
