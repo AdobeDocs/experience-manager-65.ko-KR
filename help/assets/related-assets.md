@@ -2,10 +2,11 @@
 title: 관련 자산
 description: 몇 가지 일반적인 특성을 공유하는 디지털 자산을 연결하는 방법을 알아봅니다. 또한 디지털 에셋 간의 소스 파생적인 관계를 만들 수 있습니다.
 contentOwner: AG
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '634'
 ht-degree: 2%
 
 ---
@@ -37,7 +38,7 @@ ht-degree: 2%
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. 다른 자산을 선택한 자산과 연결하려면 도구 모음에서 **[!UICONTROL 연결]** ![자산 ](assets/do-not-localize/link-relate.png)연결&lt;a3/>을 클릭합니다.
+1. 다른 자산을 선택한 자산과 연결하려면 도구 모음에서 **[!UICONTROL 연결]** ![자산 ](assets/do-not-localize/link-relate.png)연결을 클릭합니다.
 1. 다음 중 하나를 수행하십시오.
 
    * 에셋의 소스 파일을 연결하려면 목록에서 **[!UICONTROL 소스]**&#x200B;를 선택합니다.
