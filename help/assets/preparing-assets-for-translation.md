@@ -2,10 +2,11 @@
 title: 자산 번역 준비
 description: 언어 루트 폴더를 만들어 다국어 에셋을 지원하기 위한 번역 에셋을 준비합니다.
 contentOwner: AG
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 1d3e908eafa1cdcbc6ef557da509f12cdd9418cc
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '443'
 ht-degree: 3%
 
 ---
@@ -35,7 +36,7 @@ ht-degree: 3%
 
 번역 자산을 준비하려면 다음 단계를 수행하십시오.
 
-1. 기본 언어의 언어 루트를 만듭니다. 예를 들어 샘플 폴더 계층 구조에 있는 영어 사본의 언어 루트는 `/content/dam/en`입니다. 언어 루트 만들기[의 정보에 따라 언어 루트가 올바르게 구성되었는지 확인합니다.](preparing-assets-for-translation.md#creating-a-language-root)
+1. 기본 언어의 언어 루트를 만듭니다. 예를 들어 샘플 폴더 계층 구조에 있는 영어 사본의 언어 루트는 `/content/dam/en`입니다. 언어 루트 만들기](preparing-assets-for-translation.md#creating-a-language-root)의 정보에 따라 언어 루트가 올바르게 구성되었는지 확인합니다.[
 
 1. 기본 언어로 에셋을 추가합니다.
 1. 언어 복사본이 필요한 각 대상 언어의 언어 루트를 만듭니다.
@@ -54,7 +55,7 @@ ht-degree: 3%
 
    ![폴더에 언어 코드 추가](assets/Add-language-code-in-folder.png)
 
-1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 언어 루트는 [!DNL Assets] 콘솔에서 만들어집니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 언어 루트는 [!DNL Assets] 콘솔에서 생성됩니다.
 
 ## 언어 루트 보기 {#viewing-language-roots}
 
