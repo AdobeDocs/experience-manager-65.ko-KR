@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
+feature: 문서 보안
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->사용자 로그인 계정을 사용하여 Acrobat 및 기타 클라이언트 애플리케이션을 통해 문서 보안에 로그인할 수도 있습니다. (클라이언트 응용 프로그램[에서 문서 보안에 대한 액세스 설정 참조)](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications)
+>사용자 로그인 계정을 사용하여 Acrobat 및 기타 클라이언트 애플리케이션을 통해 문서 보안에 로그인할 수도 있습니다. (클라이언트 응용 프로그램](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications)에서 문서 보안에 대한 액세스 설정 참조)[
 
 웹 페이지를 열려면 문서 보안을 위해 브라우저와 URL 및 로그인 정보가 필요합니다. 사용자의 URL은 관리자의 URL과 다릅니다.
 
