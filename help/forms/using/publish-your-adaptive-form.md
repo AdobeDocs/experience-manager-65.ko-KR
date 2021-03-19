@@ -8,11 +8,12 @@ contentOwner: khsingh
 topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 1a816672b3e97346f5a7a984fcb4dc0df1a5b0da
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 0%
+source-wordcount: '968'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 ![](do-not-localize/13-publish-your-adaptive-form-small.png)
 
-이 자습서는 [첫 번째 적응형 양식 만들기](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) 시리즈의 한 단계입니다. 전체 자습서 사용 사례를 이해하고, 실행하고, 시연하기 위해 시리즈를 시간순으로 따르는 것이 좋습니다.
+이 자습서는 [첫 번째 적응형 양식 만들기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) 시리즈의 한 단계입니다. 전체 자습서 사용 사례를 이해하고, 실행하고, 시연하기 위해 시리즈를 시간순으로 따르는 것이 좋습니다.
 
 적응형 양식이 준비되면 양식을 게시하여 최종 사용자가 양식을 사용할 수 있도록 할 수 있습니다. 최종 사용자는 게시된 양식을 모든 디바이스와 인터넷 브라우저에서 열 수 있습니다. 적응형 양식이 게시되면 양식 및 관련 내용이 AEM 작성자 인스턴스에서 AEM 게시 인스턴스로 복사됩니다. 이 양식은 게시 인스턴스를 통해 최종 사용자가 사용할 수 있게 됩니다.
 
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 ## {#before-you-start}을(를) 시작하기 전에
 
-* **[AEM Forms 게시 인스턴스를 설정합니다](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**.게시 인스턴스는 게시 모드에서  [!DNL Forms] 실행 중인 AEM의 공개 인스턴스입니다. 제작 환경에서 게시 인스턴스는 조직의 방화벽 외부에 있습니다.
+* **[AEM Forms 게시 인스턴스를 설정합니다](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**.게시 인스턴스는 게시 모드에서  [!DNL Forms] 실행 중인 AEM의 공개 인스턴스입니다. 제작 환경에서 게시 인스턴스는 조직의 방화벽 외부에 있습니다.
 * **[복제 설정 및 역방향 복제](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**:복제에서는 작성 인스턴스의 내용을 게시 인스턴스로 복사하고 게시 인스턴스의 사용자 입력(예: 양식 입력)을 작성자 인스턴스로 반환합니다.
 
 ## 적응형 양식을 AEM 페이지 {#publish-the-adaptive-form-as-an-aem-page}로 게시
