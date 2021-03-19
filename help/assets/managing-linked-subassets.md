@@ -2,10 +2,11 @@
 title: 참조 및 여러 페이지로 복합 자산 관리
 description: ' [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop] 내에서 디지털 자산에 대한 참조를 만드는 방법을 알아봅니다. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 여러 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.'
 contentOwner: AG
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -56,7 +57,7 @@ ht-degree: 0%
 
 ### 자산 {#create-references-by-dragging-aem-assets}을(를) 드래그하여 참조를 만듭니다.
 
-이 절차는 Adobe Illustrator[의 참조로 디지털 자산을 추가하는 것과 유사합니다.](#refai)
+이 절차는 Adobe Illustrator](#refai)의 참조로 디지털 자산을 추가하는 것과 유사합니다.[
 
 ### ZIP 파일 {#create-references-to-aem-assets-by-exporting-a-zip-file}을(를) 내보내 자산에 대한 참조를 만듭니다.
 
@@ -68,7 +69,7 @@ ht-degree: 0%
 
 ## [!DNL Adobe Photoshop] {#refps}에서 디지털 자산을 참조로 추가합니다.
 
-1. [!DNL Experience Manager] 데스크탑 앱을 사용하여 [!DNL Experience Manager Assets]에 액세스합니다. 로컬 파일 시스템에 에셋을 다운로드하고 표시합니다. [!DNL Adobe Photoshop]에서 [!UICONTROL 연결된 ] 기능을 사용합니다. 데스크톱 앱[에 자산 배치를 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)
+1. [!DNL Experience Manager] 데스크탑 앱을 사용하여 [!DNL Experience Manager Assets]에 액세스합니다. 로컬 파일 시스템에 에셋을 다운로드하고 표시합니다. [!DNL Adobe Photoshop]에서 [!UICONTROL 연결된 ] 기능을 사용합니다. 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)에 자산 배치를 참조하십시오.[
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
