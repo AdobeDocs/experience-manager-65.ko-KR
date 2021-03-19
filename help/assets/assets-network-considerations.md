@@ -2,10 +2,11 @@
 title: 네트워크 고려 사항 및 요구 사항
 description: ' [!DNL Adobe Experience Manager Assets] 배포를 디자인할 때의 네트워크 고려 사항에 대해 설명합니다.'
 contentOwner: AG
+role: 건축가, 관리자
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
