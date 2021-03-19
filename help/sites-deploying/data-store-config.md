@@ -11,10 +11,11 @@ topic-tags: deploying
 discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
+feature: 구성
 translation-type: tm+mt
-source-git-commit: 93cb84763cfd77b67a5dd1481caab79337f6e7c4
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3423'
+source-wordcount: '3424'
 ht-degree: 1%
 
 ---
@@ -283,7 +284,7 @@ oak-run의 `datastorecacheupgrade` 명령을 사용하여 캐시를 오프라인
 
 **다운로드**
 
-DataStore에서 로컬 캐시가 요청된 파일/blob의 레코드를 확인하기 전에 확인합니다. 캐시에 파일을 추가하는 동안 캐시가 구성된 제한을 초과하는 경우(`cacheSize` 매개 변수 참조) 일부 파일이 공간 재확보를 위해 제거됩니다.
+DataStore에서 로컬 캐시가 요청된 파일/BLOB의 레코드를 확인하기 전에 확인합니다. 캐시에 파일을 추가하는 동안 캐시가 구성된 제한을 초과하는 경우(`cacheSize` 매개 변수 참조) 일부 파일이 공간 재확보를 위해 제거됩니다.
 
 **비동기 업로드**
 
@@ -398,7 +399,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 1. 기능 팩 zip 파일의 내용을 임시 폴더에 추출합니다.
 
 1. 임시 폴더로 이동하여 `jcr_root/libs/system/install`의 내용을 `<aem-install>crx-quickstart/install` 폴더에 복사합니다.
-1. AEM이 Tar 또는 MongoDB 저장소에서 작동하도록 이미 구성된 경우 계속하기 전에 `/crx-quickstart/install` 폴더에서 기존 구성 파일을 제거하십시오. 제거해야 하는 파일은 다음과 같습니다.
+1. AEM이 이미 Tar 또는 MongoDB 저장소에서 작동하도록 구성된 경우 계속하기 전에 `/crx-quickstart/install` 폴더에서 기존 구성 파일을 제거하십시오. 제거해야 하는 파일은 다음과 같습니다.
 
    MongoMK의 경우:
 
