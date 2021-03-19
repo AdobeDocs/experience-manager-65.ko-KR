@@ -4,10 +4,11 @@ seo-title: 설치 워크벤치
 description: 설치 워크벤치.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+role: 관리자
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ ht-degree: 0%
 <table>
  <tbody>
   <tr>
-   <td><p><strong>자세한 내용은</strong></p> </td>
+   <td><p><strong>다음에 대한</strong></p> </td>
    <td><p><strong>자세한 내용은</strong></p> </td>
   </tr>
   <tr>
@@ -154,7 +155,7 @@ Workbench 6.4용 Designer 6.4.x와 Workbench 6.5용 Designer 6.5.0.x와 같이 �
    >&quot;Java 가상 컴퓨터를 만들 수 없습니다.&quot;라는 오류가 발생하면 값 -Xmx512M의 _JAVA_OPTIONS라는 환경 변수를 만들고 설치 관리자를 실행합니다.
 
 1. [소개] 화면에서 [다음]을 클릭합니다.
-1. 제품 라이센스 계약을 읽고, 동의함을 선택한 후, 다음을 클릭합니다.
+1. 제품 라이센스 계약을 읽고, 동의함을 선택한 다음, 다음을 클릭합니다.
 1. (선택 사항) 이 도구를 사용하여 양식을 만들고 수정해야 하는 경우 Adobe 디자이너 설치를 선택합니다.
 
    >[!NOTE]
