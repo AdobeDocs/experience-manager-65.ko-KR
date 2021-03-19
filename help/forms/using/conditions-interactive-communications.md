@@ -8,10 +8,11 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---
