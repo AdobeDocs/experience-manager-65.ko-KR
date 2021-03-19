@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
+description: 카탈로그 프로듀서
 translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
