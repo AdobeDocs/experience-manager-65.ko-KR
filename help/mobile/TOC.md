@@ -4,11 +4,14 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Mobile 사용 안내서
 breadcrumb-title: Mobile 안내서
-user-guide-description: 모바일 앱용 컨텐츠 제작 및 관리
+user-guide-description: 모바일 앱용 컨텐츠를 생성 및 관리합니다.
+feature-set: Experience Manager Sites
+feature: 모바일
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '334'
 ht-degree: 12%
 
 ---
