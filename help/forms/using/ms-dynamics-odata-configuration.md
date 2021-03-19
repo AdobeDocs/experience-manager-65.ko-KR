@@ -8,10 +8,11 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
+feature: 양식 데이터 모델
 translation-type: tm+mt
-source-git-commit: 6a53f5d8a2f3428e4957f2b2a38a1183ef7333ed
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1231'
 ht-degree: 0%
 
 ---
@@ -123,7 +124,7 @@ AD FS(Active Directory Federation Services) 컴퓨터에 OAuth 클라이언트�
 
    1. **서비스 루트** 필드의 값을 입력합니다. Dynamics 인스턴스로 이동하여 **개발자 리소스**&#x200B;로 이동하여 서비스 루트 필드에 대한 값을 확인합니다. 예: https://&lt;임차인 이름>/api/data/v9.1/
 
-   1. **클라이언트 ID**(예: **응용 프로그램 ID**), **클라이언트 암호**, **OAuth URL**, **토큰 URL 새로 고침**, &lt;a11> 0/>Microsoft Dynamics 서비스 구성의 값이 있는 액세스 토큰 URL **및**&#x200B;리소스&#x200B;**필드** 양식 데이터 모델로 Microsoft Dynamics를 구성하려면 **리소스** 필드에 동적 인스턴스 URL을 지정해야 합니다. 서비스 루트 URL을 사용하여 동적 인스턴스 URL을 파생합니다. 예: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. **클라이언트 ID**(예: **응용 프로그램 ID**), **클라이언트 암호**, **OAuth URL**, **토큰 URL 새로 고침**, **0/>Microsoft Dynamics 서비스 구성의 값이 있는 액세스 토큰 URL** 및 **리소스** 필드 양식 데이터 모델로 Microsoft Dynamics를 구성하려면 **리소스** 필드에 동적 인스턴스 URL을 지정해야 합니다. 서비스 루트 URL을 사용하여 동적 인스턴스 URL을 파생합니다. 예: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Microsoft Dynamics의 인증 프로세스를 위해 **인증 범위** 필드에 **openid**&#x200B;을 지정합니다.
 
