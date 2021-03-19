@@ -9,10 +9,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3533'
+source-wordcount: '3534'
 ht-degree: 0%
 
 ---
@@ -321,7 +322,7 @@ Forms API(웹 서비스)를 사용하여 플로우 가능한 레이아웃으로 
 
 1. 프로젝트 파일 포함
 
-   * Forms 서비스 WSDL을 사용하는 Java 프록시 클래스를 만듭니다. (Apache Axis[를 사용하여 Java 프록시 클래스 만들기를 참조하십시오.)](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis)
+   * Forms 서비스 WSDL을 사용하는 Java 프록시 클래스를 만듭니다. (Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis)를 사용하여 Java 프록시 클래스 만들기를 참조하십시오.)[
    * 클래스 경로에 Java 프록시 클래스를 포함합니다.
 
 1. 메모리 내 XML 데이터 소스 만들기
