@@ -6,10 +6,11 @@ uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
+role: 관리자
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -76,7 +77,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
 
    `process_instance_id`이(가) 0(영)인 고아 작업 또는 작업의 경우 해당 작업 ID를 메모하고 [고아 작업](#orphan)을(를) 참조하십시오.
 
-1. 프로세스 인스턴스 ID[ 섹션에 따라 워크플로우 인스턴스에서 사용자 데이터 제거 섹션의 지침을 따라 식별된 프로세스 인스턴스 ID에 대한 사용자 데이터를 삭제합니다.](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge)
+1. 프로세스 인스턴스 ID](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) 섹션에 따라 워크플로우 인스턴스에서 사용자 데이터 제거 섹션의 지침을 따라 식별된 프로세스 인스턴스 ID에 대한 사용자 데이터를 삭제합니다.[
 
 ### 사용자 데이터가 원시 변수 {#primitive}에 저장될 때 프로세스 인스턴스 ID 식별
 
@@ -112,7 +113,7 @@ AEM Forms JEE 워크플로우 프로세스 만들기에 대한 자세한 내용�
 
    쿼리는 지정된 `user_ID`에 연결된 모든 프로세스 인스턴스 ID를 반환합니다.
 
-1. 프로세스 인스턴스 ID[ 섹션에 따라 워크플로우 인스턴스에서 사용자 데이터 제거 섹션의 지침을 따라 식별된 프로세스 인스턴스 ID에 대한 사용자 데이터를 삭제합니다.](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge)
+1. 프로세스 인스턴스 ID](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) 섹션에 따라 워크플로우 인스턴스에서 사용자 데이터 제거 섹션의 지침을 따라 식별된 프로세스 인스턴스 ID에 대한 사용자 데이터를 삭제합니다.[
 
 ### 프로세스 인스턴스 ID {#purge}에 따라 워크플로우 인스턴스에서 사용자 데이터 제거
 
