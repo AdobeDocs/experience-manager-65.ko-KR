@@ -9,10 +9,12 @@ content-type: reference
 discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
+feature: 뷰어 사전 설정
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: fff2c39561f54436f8e5613ac648cb91af888c66
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '4335'
+source-wordcount: '4340'
 ht-degree: 1%
 
 ---
@@ -81,7 +83,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
  <tbody>
   <tr>
    <td><strong>회전 메뉴 세트</strong><br /> </td>
-   <td><p>핫스팟, 이미지 맵 또는 둘 다 여러 개의 이미지에 추가됩니다. 고객은 이미지를 왼쪽 또는 오른쪽으로 이동시킨 다음 추가 정보를 위해 또는 웹 사이트의 카테고리, 홈 또는 랜딩 페이지에서 직접 구매할 때 이미지의 핫스팟을 클릭할 수 있습니다.</p> </td>
+   <td><p>핫스팟, 이미지 맵 또는 둘 다 여러 개의 이미지에 추가됩니다. 고객은 이미지를 왼쪽 또는 오른쪽으로 이동시킨 다음 추가 정보를 위해 이미지의 핫스팟을 클릭하거나 웹 사이트의 카테고리, 홈 또는 랜딩 페이지에서 직접 구매할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><strong>차원</strong><br /> </td>
@@ -440,7 +442,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기 > 뷰어에서 자산을 볼 때
 
       각 뷰어 사전 설정 유형에 대한 CSS 스타일 속성은 [뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)의 &quot;Customizing *`<viewer name>`* 뷰어&quot; 도움말 항목에 설명되어 있습니다. 예를 들어 `Mixed_Media` 유형의 뷰어 사전 설정을 만드는 경우 각 속성의 목록과 설명은 [혼합 미디어 뷰어 사용자 정의](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)를 참조하십시오.
 
-   * 별도의 CSS 파일에 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결하려면 **[!UICONTROL 선택한 유형]** 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS 가져오기]**&#x200B;를 탭합니다(시각적 편집기를 위로 스크롤하여 보려면 해당 파일을 확인해야 할 수 있음).
+   * 별도의 CSS 파일에 스타일 설정을 정의한 경우 CSS 파일을 AEM Assets에 업로드할 수 있습니다. 업로드된 CSS 파일을 찾아 뷰어 사전 설정과 연결하려면 **[!UICONTROL 선택한 유형]** 풀다운 메뉴 아래에 있는 **[!UICONTROL CSS 가져오기]**&#x200B;를 탭합니다.(시각적 편집기를 위로 스크롤하여 보려면 스크롤해야 할 수도 있습니다).
 
       CSS 파일을 가져올 때 시각적 편집기는 CSS가 올바른 뷰어 마커를 사용하는지 확인합니다. 예를 들어 확대/축소 뷰어를 만드는 경우 가져오는 모든 CSS 규칙은 상위 뷰어 요소에 정의된 뷰어 클래스 이름 `.s7mixedmediaviewer`을 사용하여 정의해야 합니다.
 
