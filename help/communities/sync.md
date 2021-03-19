@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: acc758b83486e8c623e31bb4a68f3c29dd4848ba
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2510'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ AEM Communities의 게시 환경에서(구성된 권한에 따라) *사이트 �
 
 기본적으로 게시 환경에서 만든 사용자 데이터는 작성 환경에 나타나지 않습니다.
 
-작성 환경에서 생성된 대부분의 사용자 데이터는 작성 환경에 유지되도록 되어 있으며, 인스턴스를 게시하도록 동기화되거나 복제되지 않습니다.
+작성 환경에서 만들어진 대부분의 사용자 데이터는 작성 환경에 유지되도록 되어 있으며, 인스턴스를 게시하도록 동기화되거나 복제되지 않습니다.
 
 [토폴로지](/help/communities/topologies.md)가 [게시 팜](/help/sites-deploying/recommended-deploys.md#tarmk-farm)인 경우 한 게시 인스턴스에서 수행된 등록 및 수정 사항은 다른 게시 인스턴스와 동기화해야 합니다. 멤버는 로그인하여 게시 노드에서 해당 데이터를 볼 수 있어야 합니다.
 
@@ -101,7 +102,7 @@ AEM Communities의 게시 환경에서(구성된 권한에 따라) *사이트 �
 
 1. 최신 코드가 설치되었는지 확인합니다.
 
-   * [AEM 플랫폼 업데이트](https://helpx.adobe.com/kr/experience-manager/kb/aem62-available-hotfixes.html)
+   * [AEM 플랫폼 업데이트](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
    * [AEM Communities 업데이트](/help/communities/deploy-communities.md#latestfeaturepack)
 
 AEM Communities에서 사용자 동기화를 사용하려면 다음 구성이 필요합니다. 이러한 구성이 정확한지 확인하여 컨텐츠 배포 실패가 발생하지 않도록 하십시오.
