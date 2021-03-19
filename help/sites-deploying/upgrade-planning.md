@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
+feature: 업그레이드
 translation-type: tm+mt
-source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2447'
+source-wordcount: '2448'
 ht-degree: 0%
 
 ---
@@ -101,7 +102,7 @@ AEM 업그레이드를 계획 및 실행하는 데 많은 작업이 사용됩니
 
 ![unu_crop](assets/unu_cropped.png)
 
-AEM 6.5의 새로운 기능은 adobe.com[의 AEM 섹션에 있습니다. ](/help/release-notes/release-notes.md) 조직에서 일반적으로 사용하는 UI 또는 제품 기능의 변경 사항을 반드시 메모해 두십시오. 새로운 기능을 살펴보면서 조직에 유용한 모든 기능을 살펴볼 수 있습니다. AEM 6.5의 변경 사항을 살펴본 후 작성자를 위한 교육 계획을 수립합니다. 여기에는 [Adobe Digital Learning Services](https://www.adobe.com/training.html)를 통해 제공되는 도움말 기능 비디오나 공식 트레이닝과 같이 무료로 제공되는 리소스를 활용할 수 있습니다.
+AEM 6.5의 새로운 기능은 adobe.com](/help/release-notes/release-notes.md)의 AEM 섹션에 있습니다. [ 조직에서 일반적으로 사용하는 UI 또는 제품 기능의 변경 사항을 반드시 메모해 두십시오. 새로운 기능을 살펴보면서 조직에 유용한 모든 기능을 살펴볼 수 있습니다. AEM 6.5의 변경 사항을 살펴본 후 작성자를 위한 교육 계획을 수립합니다. 여기에는 [Adobe Digital Learning Services](https://www.adobe.com/training.html)를 통해 제공되는 도움말 기능 비디오나 공식 트레이닝과 같이 무료로 제공되는 리소스를 활용할 수 있습니다.
 
 ### 테스트 계획 만들기 {#creating-a-test-plan}
 
@@ -109,7 +110,7 @@ AEM 6.5의 새로운 기능은 adobe.com[의 AEM 섹션에 있습니다. ](/help
 
 ![test-plan](assets/test-plan.png)
 
-모든 애플리케이션과 사용자 지정 코드가 원하는 대로 계속 실행되도록 하려면 정확한 프로덕션 환경을 복제해야 하며, 업그레이드 후에 이 환경에 대한 테스트를 수행해야 합니다. 모든 사용자 정의 내용을 등록하고 성능, 로드 및 보안 테스트를 실행해야 합니다. 테스트 계획을 구성할 때는 일상적으로 작업하는 데 사용되는 기본 UI 및 워크플로우 외에 시스템에 수행된 모든 사용자 지정을 포함해야 합니다. 이러한 기능에는 사용자 정의 OSGI 서비스 및 서비스, Adobe Marketing Cloud 통합, AEM 커넥터를 통한 제3자와의 통합, 사용자 정의 제3자 통합, 사용자 정의 구성 요소 및 템플릿, AEM의 사용자 정의 UI 오버레이, 사용자 정의 워크플로우가 포함될 수 있습니다. AEM 6 이전 버전에서 마이그레이션하는 고객의 경우 색인이 필요할 수 있으므로 모든 사용자 지정 쿼리를 분석해야 합니다. AEM 6.x 버전을 이미 사용하고 있는 고객의 경우 업그레이드 후에도 색인이 계속 효과적으로 작동되도록 이러한 쿼리를 테스트해야 합니다.
+모든 애플리케이션과 사용자 지정 코드가 원하는 대로 계속 실행되도록 하려면 정확한 프로덕션 환경을 복제해야 하며, 업그레이드 후에 이 환경에 대한 테스트를 수행해야 합니다. 모든 사용자 정의 내용을 등록하고 성능, 로드 및 보안 테스트를 실행해야 합니다. 테스트 계획을 구성할 때는 일상적으로 작업하는 데 사용되는 기본 UI 및 워크플로우 외에 시스템에 수행된 모든 사용자 지정을 포함해야 합니다. 여기에는 사용자 정의 OSGI 서비스 및 서비스, Adobe Marketing Cloud 통합, AEM 커넥터를 통한 제3자와의 통합, 사용자 정의 제3자 통합, 사용자 정의 구성 요소 및 템플릿, AEM의 사용자 정의 UI 오버레이, 사용자 정의 워크플로우가 포함될 수 있습니다. AEM 6 이전 버전에서 마이그레이션하는 고객의 경우 색인이 필요할 수 있으므로 모든 사용자 지정 쿼리를 분석해야 합니다. AEM 6.x 버전을 이미 사용하고 있는 고객의 경우 업그레이드 후에도 색인이 계속 효과적으로 작동되도록 이러한 쿼리를 테스트해야 합니다.
 
 ### 아키텍처 및 인프라 변경 사항 결정 필요 {#determining-architectural-and-infrastructure-changes-needed}
 
@@ -117,13 +118,13 @@ AEM 6.5의 새로운 기능은 adobe.com[의 AEM 섹션에 있습니다. ](/help
 
 ![doi_crop](assets/doi_cropped.png)
 
-AEM 6.5에 대한 기술 요구 사항을 검토하고 현재 사용 중인 하드웨어 및 소프트웨어가 충분한지 확인하십시오. 운영 프로세스의 잠재적 변경 사항에 대해서는 다음 문서를 참조하십시오.
+AEM 6.5에 대한 기술 요구 사항을 검토하고 현재 사용 중인 하드웨어 및 소프트웨어가 충분한지 확인하십시오. 운영 프로세스를 변경할 수 있는 방법은 다음 문서를 참조하십시오.
 
 **모니터링 및 유지 관리:**
 
 [작업 대시보드](/help/sites-administering/operations-dashboard.md)
 
-[자산 모니터링 우수 사례](/help/assets/assets-monitoring-best-practices.md)
+[Assets 모니터링 우수 사례](/help/assets/assets-monitoring-best-practices.md)
 
 [JMX 콘솔을 사용하여 서버 리소스 모니터링](/help/sites-administering/jmx-console.md)
 
@@ -180,7 +181,7 @@ Adobe은 AEM 인스턴스를 업그레이드하는 과정을 문서화했지만 
 
 ### 개발 수행 및 QA {#performing-development-and-qa}
 
-AEM 6.5와 호환되도록 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)에 대한 절차를 제공했습니다. 이 반복 프로세스가 실행되므로 필요에 따라 Runbook을 변경해야 합니다. 업그레이드 후 즉시 개발이 필요 없는 대부분의 경우 사용자 정의 설정을 뒤로 호환성 상태로 유지하는 방법에 대한 자세한 내용은 AEM 6.5[의 이전 버전과의 호환성을 참조하십시오.](/help/sites-deploying/backward-compatibility.md)
+AEM 6.5와 호환되도록 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)에 대한 절차를 제공했습니다. 이 반복 프로세스가 실행되므로 필요에 따라 Runbook을 변경해야 합니다. 업그레이드 후 즉시 개발이 필요 없는 대부분의 경우 사용자 정의 설정을 뒤로 호환성 상태로 유지하는 방법에 대한 자세한 내용은 AEM 6.5](/help/sites-deploying/backward-compatibility.md)의 이전 버전과의 호환성을 참조하십시오.[
 
 ![patru_cropped](assets/patru_cropped.png)
 
