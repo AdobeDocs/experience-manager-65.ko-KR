@@ -1,10 +1,11 @@
 ---
 title: 외부 사용자 초대 처리기 만들기
 description: 외부 사용자 초대 처리기 만들기
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
