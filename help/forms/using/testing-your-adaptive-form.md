@@ -7,11 +7,12 @@ uuid: 6d182bbc-b47a-4c97-af70-c960b52fdfac
 contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 1a816672b3e97346f5a7a984fcb4dc0df1a5b0da
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 2%
+source-wordcount: '968'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 2%
 
 ![](do-not-localize/10-test-your-adaptive-form.png)
 
-이 자습서는 [첫 번째 적응형 양식 만들기](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) 시리즈의 한 단계입니다. 전체 자습서 사용 사례를 이해하고, 실행하고, 시연하기 위해 시리즈를 시간순으로 따르는 것이 좋습니다.
+이 자습서는 [첫 번째 적응형 양식 만들기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) 시리즈의 한 단계입니다. 전체 자습서 사용 사례를 이해하고, 실행하고, 시연하기 위해 시리즈를 시간순으로 따르는 것이 좋습니다.
 
 적응형 양식이 준비되면 최종 사용자에게 양식을 롤아웃하기 전에 응용 프로그램을 테스트해야 합니다. 모든 필드를 직접 테스트(기능 테스트)하거나 적응형 양식 테스트를 자동화할 수 있습니다. 적응형 양식이 여러 개 있으면 모든 적응형 양식의 모든 필드를 수동으로 테스트하는 것은 어려운 작업입니다.
 
