@@ -6,11 +6,13 @@ solution: Experience Manager, Experience Manager Forms
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
-user-guide-description: 디지털 양식을 작성하고 관리하며 게시하고 업데이트합니다.
+user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
+feature-set: Experience Manager Forms
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 4e4625fe20045a337c7bce780c57819c334fa4d6
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '3718'
+source-wordcount: '3720'
 ht-degree: 4%
 
 ---
