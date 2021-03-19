@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 081f7c17-4e5d-4c7e-a5c3-5541a29b9d55
 docset: aem65
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 0%
+source-wordcount: '732'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +29,7 @@ HTML5 양식 서비스 프록시는 제출 서비스에 대한 프록시를 등�
 
 * HTML5 양식 작업 과정을 사용하려면 HTML5 양식 사용자를 위한 제출 서비스 &quot;/content/xfaforms/submission/default&quot;를 열어야 합니다. 의도하지 않은 광범위한 사용자에게 AEM 서버를 노출합니다.
 * 서비스 URL은 양식의 런타임 모델에 포함됩니다. 서비스 URL 경로를 변경할 수 없습니다.
-* 제출은 2단계 프로세스입니다. 양식 데이터를 제출하려면 서버에 두 번 이상 가야 합니다. 따라서 서버의 로드를 증가시킵니다.
+* 제출은 2단계 프로세스입니다. 양식 데이터를 제출하려면 서버에 2개 이상의 여정이 필요합니다. 따라서 서버의 로드를 증가시킵니다.
 * HTML5 양식은 PDF 요청 대신 POST 요청에 데이터를 전송합니다. PDF 양식 및 HTML5 양식을 모두 포함하는 워크플로우의 경우 제출 작업을 처리하는 두 가지 방법이 필요합니다.
 
 ### 토폴로지 {#topologies-br}
