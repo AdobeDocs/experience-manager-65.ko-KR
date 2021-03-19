@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
+feature: 문서 보안
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '724'
 ht-degree: 1%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 1%
 
 # AEM에서 문서 보안으로 보호된 PDF 문서 검색 가능{#enable-aem-to-search-document-security-protected-pdf-documents}
 
-AEM 검색은 일반 텍스트 파일, Microsoft Office 문서 및 PDF 문서와 같이 일반적으로 사용되는 다양한 문서 형식으로 AEM 자산을 검색 및 찾고 텍스트 검색을 수행할 수 있습니다. AEM Document security[로 보호되는 PDF 문서에서 전체 텍스트 검색을 수행하도록 기본 검색을 확장할 수도 있습니다. ](../../forms/using/admin-help/document-security.md) AEM에서 해당 문서에서 전체 텍스트 검색을 수행하려면 다음 단계를 수행하십시오.
+AEM 검색은 일반 텍스트 파일, Microsoft Office 문서 및 PDF 문서와 같이 일반적으로 사용되는 다양한 문서 형식으로 AEM 자산을 검색 및 찾고 텍스트 검색을 수행할 수 있습니다. AEM Document security](../../forms/using/admin-help/document-security.md)로 보호되는 PDF 문서에서 전체 텍스트 검색을 수행하도록 기본 검색을 확장할 수도 있습니다. [ AEM에서 해당 문서에서 전체 텍스트 검색을 수행하려면 다음 단계를 수행하십시오.
 
 1. 보안 연결 설정
 1. 정책으로 보호된 샘플 PDF 문서 색인화
