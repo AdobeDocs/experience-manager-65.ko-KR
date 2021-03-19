@@ -1,17 +1,18 @@
 ---
 title: 적응형 양식 표현식
 seo-title: 적응형 양식 표현식
-description: 적응형 양식 표현식을 사용하여 섹션의 자동 유효성 검사, 계산 및 가시성을 켜거나 끌 수 있습니다.
-seo-description: 적응형 양식 표현식을 사용하여 섹션의 자동 유효성 검사, 계산 및 가시성을 켜거나 끌 수 있습니다.
+description: 적응형 양식 표현식을 사용하여 섹션의 자동 유효성 검사, 계산 및 가시성을 추가하거나 비활성화할 수 있습니다.
+seo-description: 적응형 양식 표현식을 사용하여 섹션의 자동 유효성 검사, 계산 및 가시성을 추가하거나 비활성화할 수 있습니다.
 uuid: c274dce5-8b87-472f-bff5-53b246fa6584
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2769'
 ht-degree: 0%
 
 ---
@@ -231,7 +232,7 @@ GuideBridge는 브라우저의 메모리 모델에서 적응형 양식과 상호
 
 표현식 외부에서 GuideBridge API를 사용할 수도 있습니다. 예를 들어 GuideBridge API를 사용하여 적응형 양식을 호스팅하는 페이지 HTML과 양식 모델 간의 통신을 설정할 수 있습니다. 또한 양식을 호스팅하는 Iframe의 부모에서 오는 값을 설정할 수 있습니다.
 
-위에서 언급한 예제에 GuideBridge API를 사용하려면 GuideBridge 인스턴스를 캡처하십시오. 인스턴스를 캡처하려면 `window` 개체의 `bridgeInitializeStart`이벤트를 수신합니다.
+위에서 언급한 예제에 GuideBridge API를 사용하려면 GuideBridge의 인스턴스를 캡처하십시오. 인스턴스를 캡처하려면 `window` 개체의 `bridgeInitializeStart`이벤트를 수신합니다.
 
 ```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
