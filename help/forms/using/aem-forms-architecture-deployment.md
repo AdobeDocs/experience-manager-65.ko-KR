@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
+role: 관리자
 translation-type: tm+mt
-source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2490'
+source-wordcount: '2491'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ AEM Forms on JEE에는 AEM 구성 요소에 다음과 같은 지원 서비스가
 
 AEM Forms 작성 사용자 인터페이스는 DOR(Document of Record), PDF forms 및 HTML5 Forms 만들기를 지원하지 않습니다. 이러한 자산은 독립 실행형 Forms Designer 응용 프로그램을 사용하여 디자인되며 AEM Forms Manager에 개별적으로 업로드됩니다. 또는 JEE 기반의 AEM Forms의 경우 양식을 애플리케이션(AEM Forms Workbench)으로 디자인하여 JEE 서버의 AEM Forms에 배포할 수 있습니다.
 
-OSGi 기반의 AEM Forms 및 JEE의 AEM Forms은 모두 워크플로우 기능을 갖추고 있습니다. AEM Forms의 완벽한 프로세스 관리 기능을 JEE에 설치하지 않고도 OSGi에서 AEM 양식에 다양한 작업을 위한 기본 워크플로우를 신속하게 구축 및 배포할 수 있습니다. JEE[에 있는 AEM Forms의 OSGi 및 프로세스 관리 기능에서 AEM Forms의 양식 중심 워크플로우의 기능에는 약간의 차이가 있습니다. ](capabilities-osgi-jee-workflows.md) OSGi 기반의 AEM Forms에서 양식 중심의 워크플로우를 개발 및 관리하면 익숙한 AEM Workflow 및 AEM Inbox 기능을 사용할 수 있습니다.
+OSGi 기반의 AEM Forms 및 JEE의 AEM Forms은 모두 워크플로우 기능을 갖추고 있습니다. AEM Forms의 완벽한 프로세스 관리 기능을 JEE에 설치하지 않고도 OSGi에서 AEM 양식에 다양한 작업을 위한 기본 워크플로우를 신속하게 구축 및 배포할 수 있습니다. JEE](capabilities-osgi-jee-workflows.md)에 있는 AEM Forms의 OSGi 및 프로세스 관리 기능에서 AEM Forms의 양식 중심 워크플로우의 기능에는 약간의 차이가 있습니다. [ OSGi 기반의 AEM Forms에서 양식 중심의 워크플로우를 개발 및 관리하면 익숙한 AEM Workflow 및 AEM Inbox 기능을 사용할 수 있습니다.
 
 ## 용어 {#terminologies}
 
