@@ -8,11 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
+feature: Forms 포털
 translation-type: tm+mt
-source-git-commit: 615b0db6da0986d7a74c42ec0d0e14bad7ede168
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +31,7 @@ AEM Forms을 사용하면 양식을 초안으로 저장할 수 있습니다. 초
 * [양식 포털 구성 요소 사용](/help/forms/using/enabling-forms-portal-components.md)
 * [양식 포털 페이지](/help/forms/using/creating-form-portal-page.md) 만들기
 * 양식 포털](/help/forms/using/draft-submission-component.md)에 대해 [적응형 양식 활성화
-* 사용자 지정 저장소[의 구현 세부 정보 학습](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* 사용자 지정 저장소](/help/forms/using/draft-submission-component.md#customizing-the-storage)의 구현 세부 정보 학습[
 
 ## 초안 데이터 서비스 {#draft-data-service}
 
