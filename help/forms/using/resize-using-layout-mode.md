@@ -1,10 +1,11 @@
 ---
 title: 레이아웃 모드를 사용하여 적응형 양식의 구성 요소 크기 조정
 description: '레이아웃 모드에서 사용할 수 있는 응답형 격자를 사용하여 구성 요소의 위치를 정의합니다. '
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 923c31bf67c7ad480ef3c3a1e312b4bd841bac6d
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -76,7 +77,7 @@ ht-degree: 0%
 
 다음 단계를 수행하여 패널의 열 개수를 정의합니다.
 
-1. **[!UICONTROL 편집]** 모드에서 패널을 누르고 ![구성](assets/configure_icon.png)을 선택한 다음 **[!UICONTROL 패널 레이아웃]** 드롭다운 목록에서 탐색 없이 페이지의 모든 항목 **[!UICONTROL 응답형 - &lt;a4/>을 선택합니다.]**
+1. **[!UICONTROL 편집]** 모드에서 패널을 누르고 ![구성](assets/configure_icon.png)을 선택한 다음 **[!UICONTROL 패널 레이아웃]** 드롭다운 목록에서 탐색 없이 페이지의 모든 항목 **[!UICONTROL 응답형 -]**&#x200B;을 선택합니다.
 
 1. ![저장](assets/save_icon.svg)을 눌러 속성을 저장합니다.
 
