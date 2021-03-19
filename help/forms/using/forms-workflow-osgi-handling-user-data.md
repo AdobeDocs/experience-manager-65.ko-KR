@@ -6,10 +6,11 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
+role: 관리자
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1017'
 ht-degree: 1%
 
 ---
@@ -27,7 +28,7 @@ Forms 중심의 AEM 워크플로우를 통해 실제 Forms 중심의 비즈니�
 * 감시 폴더 사용
 * 대화형 통신 또는 편지 제출
 
-Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSGi[Forms 중심의 WORKFLOW를 참조하십시오.](/help/forms/using/aem-forms-workflow.md)
+Forms 중심의 AEM 워크플로우 및 기능에 대한 자세한 내용은 OSGi](/help/forms/using/aem-forms-workflow.md)Forms 중심의 WORKFLOW를 참조하십시오.[
 
 ## 사용자 데이터 및 데이터는 {#user-data-and-data-stores} 저장
 
