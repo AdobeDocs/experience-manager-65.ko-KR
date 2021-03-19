@@ -2,10 +2,11 @@
 title: 편집할 에셋 체크 인 및 체크 아웃
 description: 편집할 에셋을 체크 아웃하고 변경 사항이 완료된 후 다시 체크 인하는 방법을 살펴봅니다.
 contentOwner: AG
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '435'
 ht-degree: 1%
 
 ---
