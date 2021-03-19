@@ -7,10 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
+feature: 이미지 프로필
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '2759'
+source-wordcount: '2764'
 ht-degree: 4%
 
 ---
@@ -109,9 +111,9 @@ ht-degree: 4%
 
 다른 자산 유형에 대한 고급 처리 매개 변수를 정의하려면 [자산 처리 구성](config-dms7.md#configuring-asset-processing)을 참조하십시오.
 
-메타데이터, 이미지 및 비디오 처리를 위한 프로필[을 참조하십시오.](processing-profiles.md)
+메타데이터, 이미지 및 비디오 처리를 위한 프로필](processing-profiles.md)을 참조하십시오.[
 
-처리 프로필 사용[에 대한 디지털 자산 구성을 위한 우수 사례를 참조하십시오.](/help/assets/organize-assets.md)
+처리 프로필 사용](/help/assets/organize-assets.md)에 대한 디지털 자산 구성을 위한 우수 사례를 참조하십시오.[
 
 **Dynamic Media 이미지 프로필을 만들려면**
 
