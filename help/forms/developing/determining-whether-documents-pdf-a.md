@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2110'
 ht-degree: 0%
 
 ---
@@ -76,7 +77,7 @@ PDF 문서가 PDF/A 규격인지 확인하려면 다음 작업을 수행합니�
 * adobe-utilities.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 * jbossall-client.jar (AEM Forms이 JBoss에 배포된 경우 필수)
 
-aem forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 대체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
+AEM Forms이 JBoss가 아닌 지원되는 J2EE 응용 프로그램 서버에 배포되는 경우 adobe-utilities.jar 및 jbossall-client.jar 파일을 AEM Forms이 배포된 J2EE 응용 프로그램 서버에 해당하는 JAR 파일로 대체해야 합니다. 모든 AEM Forms JAR 파일의 위치에 대한 자세한 내용은 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)을 참조하십시오.
 
 **PDF Assembler 클라이언트 만들기**
 
@@ -140,7 +141,7 @@ Assembler Service API(Java)를 사용하여 PDF 문서가 PDF/A 규격인지 확
 
 1. PDF/A 규정 준수를 결정하는 데 사용되는 PDF 문서를 참조합니다.
 
-   * 생성자를 사용하여 `java.io.FileInputStream` 개체를 만들고 PDF/A 호환성 여부를 결정하는 데 사용되는 PDF 문서의 위치를 전달하여 &lt;a0/> 개체를 만듭니다.
+   * 생성자를 사용하여 `java.io.FileInputStream` 개체를 만들고 PDF/A 호환성 여부를 결정하는 데 사용되는 PDF 문서의 위치를 전달하여  개체를 만듭니다.
    * 생성자를 사용하여 `com.adobe.idp.Document` 개체를 만들고 PDF 문서가 포함된 `java.io.FileInputStream` 개체를 전달합니다.
    * `HashMap` 생성자를 사용하여 입력 PDF 문서를 저장하는 데 사용되는 `java.util.Map` 객체를 만듭니다.
    * `put` 메서드를 호출하고 다음 인수를 전달하여 `java.util.Map` 객체에 항목을 추가합니다.
