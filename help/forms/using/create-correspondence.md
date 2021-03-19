@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
+feature: 서신 관리
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '3722'
 ht-degree: 0%
 
 ---
@@ -87,7 +88,7 @@ ht-degree: 0%
 
    컨텐츠 또는 데이터 탭에서 HTML 문자 미리 보기의 왼쪽 상단에 있는 선택한 모듈 강조 표시( ![highlightedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png))를 탭하여 편지 미리 보기에서 관련 텍스트, 단락 또는 데이터 필드를 선택한 경우 컨텐츠/데이터 모듈로 이동하는 기능을 비활성화하거나 활성화할 수 있습니다.
 
-   메일 작성 사용자 인터페이스의 다양한 모듈에 사용할 수 있는 작업에 대한 자세한 내용은 통신 사용자 인터페이스 만들기[에서 사용할 수 있는 작업 및 정보를 참조하십시오.](#actions-and-info-available-in-the-create-correspondence-content-tab)
+   메일 작성 사용자 인터페이스의 다양한 모듈에 사용할 수 있는 작업에 대한 자세한 내용은 통신 사용자 인터페이스 만들기](#actions-and-info-available-in-the-create-correspondence-content-tab)에서 사용할 수 있는 작업 및 정보를 참조하십시오.[
 
 1. 컨텐츠 모듈을 찾으려면 찾기 필드를 사용합니다. 통신 과정에서 검색할 컨텐츠 모듈의 전체 또는 부분 이름 또는 제목을 입력합니다.
 1. 목록, 텍스트, 조건 또는 대상 영역 앞에 있는 표시 아이콘( ![표시](assets/display.png))을 눌러 문자에서 표시하거나 숨깁니다.
@@ -237,7 +238,7 @@ ht-degree: 0%
 
    컨텐츠( ![highlightselectedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png))에서 선택한 모듈 하이라이트를 탭하면 문자 미리 보기에서 관련 텍스트, 단락 또는 데이터 필드를 누를 때 컨텐츠 탭의 컨텐츠 모듈을 강조 표시하는 기능을 비활성화하거나 활성화할 수 있습니다.
 
-   메일 작성 사용자 인터페이스의 다양한 모듈에 사용할 수 있는 작업에 대한 자세한 내용은 통신 사용자 인터페이스 만들기[에서 사용할 수 있는 작업 및 정보를 참조하십시오.](#actions-and-info-available-in-the-create-correspondence-content-tab)
+   메일 작성 사용자 인터페이스의 다양한 모듈에 사용할 수 있는 작업에 대한 자세한 내용은 통신 사용자 인터페이스 만들기](#actions-and-info-available-in-the-create-correspondence-content-tab)에서 사용할 수 있는 작업 및 정보를 참조하십시오.[
 
 1. 페이지에 페이지 나누기를 추가하려면 페이지 나누기를 삽입할 위치를 탭하고 [이전 페이지 나누기] 또는 [다음 페이지 나누기]를 선택합니다( ![pagebreakebefore](assets/pagebreakbeforeafter.png)).
 
