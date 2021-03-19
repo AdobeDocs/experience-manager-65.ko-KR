@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
+feature: 문서 보안
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ ht-degree: 0%
 
    자세한 내용은 [이벤트 감사 및 개인 정보 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings)을 참조하십시오.
 
-* 문서를 보호하는 데 사용하는 정책에 감사 기능이 활성화되어 있어야 합니다. (정책 만들기 및 편집[을 참조하십시오.)](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)
+* 문서를 보호하는 데 사용하는 정책에 감사 기능이 활성화되어 있어야 합니다. (정책 만들기 및 편집](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)을 참조하십시오.)[
 
 ## 이벤트 {#search-for-an-event} 검색
 
