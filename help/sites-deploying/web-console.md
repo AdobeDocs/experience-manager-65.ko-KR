@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
+feature: 구성
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '729'
 ht-degree: 4%
 
 ---
@@ -32,7 +33,7 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 
 * [구성](#configuration):OSGi 번들을 구성하는 데 사용되므로 AEM 시스템 매개 변수를 구성하기 위한 기본 메커니즘입니다
 * [번들](#bundles):번들 설치에 사용
-* [구성 요소](#components):aem에 필요한 구성 요소의 상태를 제어하는 데 사용됩니다.
+* [구성 요소](#components):AEM에 필요한 구성 요소의 상태를 제어하는 데 사용됩니다.
 
 모든 변경 사항은 실행 중인 시스템에 즉시 적용됩니다. 다시 시작할 필요가 없습니다.
 
@@ -67,7 +68,7 @@ AEM의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/d
 * **구성**
 기존 구성을 업데이트할 수 있습니다. 여기에는 PID(Persistent Id)가 있으며 다음 중 하나가 될 수 있습니다.
 
-   * aem에 대한 표준 및 정수값이 삭제되면 기본 설정으로 돌아갑니다.
+   * AEM에 대한 표준 및 정수값이 삭제되면 기본 설정으로 돌아갑니다.
    * 공장 구성에서 생성된 인스턴스;이러한 인스턴스는 사용자가 만들고, 삭제를 수행하면 인스턴스가 제거됩니다.
 
 * **팩토리**
