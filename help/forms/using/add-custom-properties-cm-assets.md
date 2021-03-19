@@ -9,10 +9,11 @@ topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
+feature: 서신 관리
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4462'
 ht-degree: 4%
 
 ---
@@ -540,7 +541,7 @@ nt:unstructured 유형의 드롭다운(여기서 `geographicallocation`)을 생�
    |---|---|
    | 텍스트 | /libs/fd/cm/content/createset/creattetext/jcr:content/body/items/form/items/textwizard/items/editproperties/items/properties/items/items/items/tab/tab1/items |
    | 목록 | /libs/fd/cm/content/createasset/createlist/jcr:content/body/items/form/items/listwizard/items/editproperties/items/properties/items/items/items/items/tab/tab1/items |
-   | 조건 | /libs/fd/cm/content/createasset/createcondition/jcr:content/body/items/form/conditionwizard/items/editproperties/items/properties/items/items/items/items/tab/tab1/items |
+   | 조건 | /libs/fd/cm/content/createset/createcondition/jcr:content/body/items/form/conditionwizard/items/editproperties/items/properties/items/items/items/tab/tab1/items |
    | 조각 | /libs/fd/cm/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/items/properties/items/items/items/items/items/items/tab2/items/tab1/items |
    | 편지 | /libs/fd/cm/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/items/letterproperties/items/letterproperties/items/letterproperties/items/items |
 
