@@ -2,10 +2,11 @@
 title: ImageMagick 설치 및 구성
 description: ImageMagick 소프트웨어에 대한 자세한 내용, 설치 방법, 명령줄 프로세스 단계 설정, 이미지 축소판 편집, 작성 및 생성 방법 등을 살펴볼 수 있습니다.
 contentOwner: AG
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -39,7 +40,7 @@ ImageMagick을 사용하여 대용량 파일을 처리하려면 일반적인 메
 
 1. [!DNL Experience Manager] 서버에서 워크플로우 콘솔(`https://[aem_server]:[port]/workflow`)로 이동하여 **[!UICONTROL DAM 자산 업데이트]** 워크플로우 모델을 엽니다.
 1. **[!UICONTROL DAM 자산 업데이트]** 워크플로 모델에서 **[!UICONTROL EPS 축소판(ImageMagick에서 제공)]** 단계를 엽니다.
-1. **[!UICONTROL 인수 탭]**&#x200B;에서 **[!UICONTROL MIME 유형]** 목록에 `image/jpeg`를 추가합니다.
+1. **[!UICONTROL 인수 탭]**&#x200B;에서 **[!UICONTROL MIME 유형]** 목록에 `image/jpeg`을 추가합니다.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
 
