@@ -10,11 +10,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 3202866bd38779a9784e44ab470152df61c585f5
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 0%
+source-wordcount: '834'
+ht-degree: 1%
 
 ---
 
@@ -71,7 +72,7 @@ UGC용 ASRP를 사용하도록 AEM Communities 사이트를 구성하려면 다�
 
    각 작성자 및 게시 인스턴스에 대해 스토리지 구성 콘솔에서 데이터 센터에 대한 연결을 테스트합니다.
 
-* 링크[외부화를 통해 프로필 데이터의 사이트 URL을 데이터 센터에서 라우트할 수 있는지 확인합니다.](#externalize-links)
+* 링크](#externalize-links)외부화를 통해 프로필 데이터의 사이트 URL을 데이터 센터에서 라우트할 수 있는지 확인합니다.[
 
 ### 암호화 키 {#replicate-the-crypto-key} 복제
 
