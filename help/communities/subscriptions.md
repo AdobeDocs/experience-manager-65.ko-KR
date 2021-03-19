@@ -1,6 +1,6 @@
 ---
-title: 커뮤니티 가입
-seo-title: 커뮤니티 가입
+title: 커뮤니티 구독
+seo-title: 커뮤니티 구독
 description: 커뮤니티 멤버는 이메일을 통해 다른 구성원과 상호 작용할 수 있습니다.
 seo-description: 커뮤니티 멤버는 이메일을 통해 다른 구성원과 상호 작용할 수 있습니다.
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 0%
+source-wordcount: '362'
+ht-degree: 2%
 
 ---
 
