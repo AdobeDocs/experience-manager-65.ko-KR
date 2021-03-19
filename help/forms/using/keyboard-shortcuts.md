@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1174'
 ht-degree: 5%
 
 ---
@@ -335,7 +336,7 @@ ht-degree: 5%
  </tbody>
 </table>
 
-### 형식 지정 {#formatting}
+### 서식 {#formatting}
 
 <table> 
  <tbody>
