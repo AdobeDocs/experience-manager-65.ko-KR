@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -164,7 +165,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}를 사용하여 서명 필드 이름을 검색하는 중
 
-다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 문서에 있는 서명 필드의 이름을 검색합니다. ([서명 필드 이름 검색](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)을(를) 참조하십시오.)
+다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 문서에 있는 서명 필드의 이름을 검색합니다. ([서명 필드 이름 검색](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names) 참조)
 
 ```java
  /*
@@ -398,7 +399,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}을 사용하여 PDF 문서에 디지털 서명
 
-다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 PDF 문서에 디지털 서명을 합니다. 보안 자격 증명에 대해 지정된 별칭은 안전하며 해지 확인이 수행됩니다. CRL 또는 OCSP 서버 정보가 지정되지 않았으므로 PDF 문서에 디지털 서명하는 데 사용되는 인증서에서 서버 정보를 가져옵니다. 서명된 문서는 *LoanSigned.pdf*&#x200B;라는 PDF 파일로 저장됩니다. (PDF 문서[에 디지털 서명 참조)](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
+다음 Java 코드 예제에서는 *LoanSig.pdf*&#x200B;라는 PDF 파일을 기반으로 하는 PDF 문서에 디지털 서명을 합니다. 보안 자격 증명에 대해 지정된 별칭은 안전하며 해지 확인이 수행됩니다. CRL 또는 OCSP 서버 정보가 지정되지 않았으므로 PDF 문서에 디지털 서명하는 데 사용되는 인증서에서 서버 정보를 가져옵니다. 서명된 문서는 *LoanSigned.pdf*&#x200B;라는 PDF 파일로 저장됩니다. (PDF 문서](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)에 디지털 서명 참조)[
 
 ```java
  /*
