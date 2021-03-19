@@ -1,14 +1,14 @@
 ---
 title: AEM Forms JEE 패치 설치 프로그램
-description: 'null'
+description: AEM Forms JEE 패치 설치 프로그램
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 translation-type: tm+mt
-source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 1%
+source-wordcount: '484'
+ht-degree: 28%
 
 ---
 
@@ -30,12 +30,12 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 ## 패치 {#installing-and-configuring-the-patch} 설치 및 구성
 
 1. &lt;*AEM_forms_root*/deploy 폴더의 백업을 수행합니다. 빠른 수정 사항을 제거하려는 경우 필요합니다.
-1. 응용 프로그램 서버를 중지합니다.
+1. 애플리케이션 서버를 중지합니다.
 1. 패치 설치 프로그램 아카이브 파일을 하드 드라이브에 추출합니다.
-1. 사용 중인 운영 체제에 따라 이름이 지정된 디렉토리:
+1. 사용 중인 운영 체제에 따라 이름이 지정된 디렉토리에서 다음 작업을 수행합니다.
 
-   * ****
-Windows 설치 프로그램을 복사한 하드 디스크의 설치 미디어 또는 폴더에서 해당 디렉토리로 이동한 다음 aemforms65_cfp_install.exe 파일을 두 번 클릭합니다.
+   * **Windows**
+설치 프로그램을 복사한 하드 디스크의 설치 미디어 또는 폴더에서 해당 디렉토리로 이동한 다음 aemforms65_cfp_install.exe 파일을 두 번 클릭합니다.
 
       * (Windows 32비트) `Windows\Disk1\InstData\VM`
       * (Windows 64비트) `Windows_64Bit`\ `Disk1\InstData\VM`
@@ -60,12 +60,12 @@ Windows 설치 프로그램을 복사한 하드 디스크의 설치 미디어 �
 
 1. 기본적으로 구성 관리자 시작 확인란이 선택됩니다. **[!UICONTROL 완료]**&#x200B;를 클릭하여 구성 관리자를 실행합니다.
 
-1. 나중에 Configuration Manager를 실행하려면 [완료]를 클릭하기 전에 [구성 관리자 시작] 옵션을 선택 해제합니다. 나중에 `[AEM_forms_root]/configurationManager/bin` 디렉터리에 있는 적절한 스크립트를 사용하여 Configuration Manager를 시작할 수 있습니다.
+1. 나중에 구성 관리자를 실행하려면 완료를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. 나중에 `[AEM_forms_root]/configurationManager/bin` 디렉터리에 있는 적절한 스크립트를 사용하여 Configuration Manager를 시작할 수 있습니다.
 
 1. 응용 프로그램 서버에 따라 다음 문서 중 하나를 선택하고 *AEM 양식 구성 및 배포* 섹션의 지침을 따릅니다.
 
-   * [JBoss용 AEM 양식 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [WebSphere용 AEM 양식 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [JBoss용 AEM 양식 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installJBoss_65_kr)
+   * [WebSphere용 AEM 양식 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebSphere_65_kr)
 
 1. (JBoss에만 해당) 패치를 설치하고 서버를 구성한 후 JBoss 응용 프로그램 서버의 tmp 및 작업 디렉토리를 삭제합니다.
 
