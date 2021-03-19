@@ -1,6 +1,6 @@
 ---
-title: AEM 6.5 Forms으로 업그레이드
-seo-title: AEM 6.5 Forms으로 업그레이드
+title: AEM 6.5 Forms로 업그레이드
+seo-title: AEM 6.5 Forms로 업그레이드
 description: AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다.
 seo-description: AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 4%
+source-wordcount: '956'
+ht-degree: 7%
 
 ---
 
@@ -28,7 +29,7 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
 
 1. 기존 AEM 인스턴스를 AEM 6.5로 업그레이드합니다. 다음 단계가 나열됩니다.
 
-   1. AEM 6.3 Forms 또는 AEM 6.4 Forms용 최신 서비스 팩 및 패치를 설치합니다. 자세한 내용은 [AEM 지속 허브](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)를 참조하십시오.
+   1. AEM 6.3 Forms 또는 AEM 6.4 Forms용 최신 서비스 팩 및 패치를 설치합니다. 자세한 내용은 [AEM 지속 허브](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)를 참조하십시오.
    1. 업그레이드할 소스 인스턴스를 준비합니다. 자세한 내용은 [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)를 참조하십시오.
    1. [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software)를 다운로드합니다.
    1. **(Unix/Linux 기반 설치만 해당)** UNIX 또는 Linux를 기본 운영 체제로 사용하는 경우 터미널 창을 열고 crx-quickstart가 포함된 폴더로 이동하여 다음 명령을 실행합니다.
@@ -45,8 +46,8 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
 
 1. AEM Forms 추가 기능 패키지 설치. 이 단계는 아래에 나열되어 있습니다.
 
-   1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
-   1. 머리글 메뉴에서 사용할 수 있는 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 누릅니다.
+   1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
+   1. 헤더 메뉴에 제공된 **[!UICONTROL Adobe Experience Manager]**&#x200B;를 누릅니다.
    1. **[!UICONTROL 필터]** 섹션에서 다음을 수행합니다.
       1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을 선택합니다.
       1. 패키지의 버전과 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
@@ -108,5 +109,5 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
-   AEM 6.4 Forms에서 crx-repository의 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정을 위해 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 AEM[의 Forms 리포지토리 재구성을 참조하십시오.](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
+   AEM 6.4 Forms에서 crx-repository의 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정을 위해 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)의 Forms 리포지토리 재구성을 참조하십시오.[
 
