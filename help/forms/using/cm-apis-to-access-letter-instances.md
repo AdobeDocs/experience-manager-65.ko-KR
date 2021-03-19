@@ -8,11 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
+feature: 서신 관리
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +81,7 @@ submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 
 #### 예 2: 사용자가 제출한 모든 문자 인스턴스를 가져오고 문자 인스턴스 유형은 DRAFT {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}입니다.
 
-다음 코드에는 사용자가 제출한 편지 인스턴스(submitted by 속성)와 같은 다른 기준을 기반으로 결과를 필터링하는 데 사용되는 동일한 쿼리에 여러 개의 문이 있으며 letterInstanceType의 유형은 DRAFT입니다.
+다음 코드에는 사용자가 제출한 편지 인스턴스(submitted by 속성)와 같은 다른 기준을 기준으로 결과를 필터링하는 데 사용되는 동일한 쿼리에 여러 개의 문이 있으며 letterInstanceType의 유형은 DRAFT입니다.
 
 ```java
 @Reference
