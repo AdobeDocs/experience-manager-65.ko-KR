@@ -2,10 +2,11 @@
 title: 검색 결과를 필터링하는 검색 패싯
 description: ' [!DNL Adobe Experience Manager]에서 검색 패싯을 만들고 수정하고 사용하는 방법입니다.'
 contentOwner: AG
+role: 관리자, 개발자
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '2424'
+source-wordcount: '2426'
 ht-degree: 2%
 
 ---
