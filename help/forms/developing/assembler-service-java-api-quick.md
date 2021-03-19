@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
+role: 개발자
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -1016,7 +1017,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}를 사용하여 책갈피를 사용하여 PDF 문서 취합
 
-다음 Java 코드 예제에서는 책갈피가 포함된 PDF 문서를 어셈블합니다. DCX 문서의 이름은 *bookmarkDCX.xml*&#x200B;입니다. PDF 문서에 추가할 책갈피를 설명하는 책갈피 XML 문서의 이름은 bookmarks.xml입니다. 결과 PDF 문서는 AssemblerResultBookmarks.pdf라는 PDF 파일로 저장됩니다. (책갈피[를 사용하여 PDF 문서 정리 참조)](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks)
+다음 Java 코드 예제에서는 책갈피가 포함된 PDF 문서를 어셈블합니다. DCX 문서의 이름은 *bookmarkDCX.xml*&#x200B;입니다. PDF 문서에 추가할 책갈피를 설명하는 책갈피 XML 문서의 이름은 bookmarks.xml입니다. 결과 PDF 문서는 AssemblerResultBookmarks.pdf라는 PDF 파일로 저장됩니다. (책갈피](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks)를 사용하여 PDF 문서 정리 참조)[
 
 ```java
  /*
@@ -1691,7 +1692,7 @@ public class AssemblePDFWithDynamicDDXSOAP {
 
 >[!NOTE]
 >
->`PDFUtility` acrobat을 사용하여 교정으로 표시된 PDF만 교정할 수 있습니다.
+>`PDFUtility` Acrobat을 사용하여 교정으로 표시된 PDF만 교정할 수 있습니다.
 
 ```java
 /*
