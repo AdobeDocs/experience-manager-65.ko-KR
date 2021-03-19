@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 84dd0d551431169239f63cff62a015e15f998e7d
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -137,7 +138,7 @@ HTML Forms의 스크립팅 엔진은 JavaScript로 작성되어 이러한 두 �
 
 HTML5 양식의 레이아웃 및 시각적 측면은 SVG 1.1, jQuery, BackBone 및 CSS3 기능을 기반으로 합니다. 양식의 초기 모양이 생성되고 서버에서 캐시됩니다. 초기 레이아웃 변경 및 양식 레이아웃에 대한 추가 증분 변경 사항은 클라이언트에서 관리됩니다. 이를 위해 런타임 패키지에는 JavaScript로 작성되고 jQuery/백본을 기반으로 하는 레이아웃 엔진이 포함되어 있습니다. 이 엔진은 반복 가능한 인스턴스 추가/제거, 성장 가능한 개체 레이아웃과 같은 모든 동적 동작을 처리합니다. 이 레이아웃 엔진은 양식을 한 번에 한 페이지씩 렌더링합니다. 처음에는 사용자가 한 페이지만 보고 가로 스크롤 막대는 첫 번째 페이지만 고려합니다. 그러나 사용자가 아래로 스크롤하면 다음 페이지가 렌더링을 시작합니다. 이 페이지별 변환은 브라우저에서 첫 번째 페이지를 렌더링하는 데 필요한 시간을 줄이고 양식의 인지 성능을 개선합니다. 이 엔진/라이브러리는 범주 이름이 **xfaforms.profile**&#x200B;인 CQ Client Lib의 일부입니다.
 
-또한 레이아웃 엔진에는 사용자로부터 양식 필드의 값을 캡처하는 데 사용되는 위젯 세트도 포함되어 있습니다. 이러한 위젯은 레이아웃 엔진과 원활하게 작동하는 특정 추가 계약을 구현하는 [jQuery UI 위젯](https://api.jqueryui.com/jQuery.widget/)으로 모델링됩니다.
+또한 레이아웃 엔진에는 사용자로부터 양식 필드 값을 캡처하는 데 사용되는 위젯 세트도 포함되어 있습니다. 이러한 위젯은 레이아웃 엔진과 원활하게 작동하는 특정 추가 계약을 구현하는 [jQuery UI 위젯](https://api.jqueryui.com/jQuery.widget/)으로 모델링됩니다.
 
 위젯 및 해당 계약에 대한 자세한 내용은 [HTML5 양식에 대한 사용자 정의 위젯](/help/forms/using/introduction-widgets.md)을 참조하십시오.
 
