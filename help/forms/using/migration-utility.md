@@ -1,6 +1,6 @@
 ---
-title: AEM Forms 에셋 및 문서 마이그레이션
-seo-title: AEM Forms 에셋 및 문서 마이그레이션
+title: AEM Forms 자산 및 문서 마이그레이션
+seo-title: AEM Forms 자산 및 문서 마이그레이션
 description: 마이그레이션 유틸리티를 사용하면 AEM 6.3 Forms 또는 이전 버전에서 AEM 6.4 Forms으로 AEM Forms 자산 및 문서를 마이그레이션할 수 있습니다.
 seo-description: 마이그레이션 유틸리티를 사용하면 AEM 6.3 Forms 또는 이전 버전에서 AEM 6.4 Forms으로 AEM Forms 자산 및 문서를 마이그레이션할 수 있습니다.
 uuid: a3fdf940-7fc2-441c-91c8-ad66ba47e5f2
@@ -11,11 +11,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-strategy: max-2018
 discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 2%
+source-wordcount: '1810'
+ht-degree: 3%
 
 ---
 
