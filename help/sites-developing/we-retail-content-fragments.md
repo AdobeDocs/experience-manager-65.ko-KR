@@ -1,7 +1,7 @@
 ---
 title: We.Retail에서 컨텐츠 조각 시험 사용
 seo-title: We.Retail에서 컨텐츠 조각 시험 사용
-description: 'null'
+description: We.Retail에서 컨텐츠 조각 시험 사용
 seo-description: 'null'
 uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 26%
+source-wordcount: '459'
+ht-degree: 27%
 
 ---
 
