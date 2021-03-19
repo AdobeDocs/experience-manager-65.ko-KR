@@ -7,10 +7,11 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
+role: 관리자
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -68,7 +69,7 @@ Forms 포털은 다음 시나리오에서 초안 및 제출된 양식에 대한 
 
 ### AEM 인스턴스 {#aem-instances}
 
-로그인된 사용자 및 익명 사용자에 대한 AEM 인스턴스(작성자, 게시 또는 원격)의 모든 초안 및 제출된 양식 데이터는 해당 AEM 저장소의 `/content/forms/fp/` 노드에 저장됩니다. 로그인 또는 익명 사용자가 초안을 저장하거나 양식을 제출할 때마다 각각의 초안 또는 제출과 관련된 각 첨부 파일에 대해 `draft ID` 또는 `submission ID`, `user data ID` 및 임의 `ID`이 생성됩니다.
+로그인된 사용자 및 익명 사용자에 대한 AEM 인스턴스(작성자, 게시 또는 원격)의 모든 초안 및 제출된 양식 데이터는 해당 AEM 저장소의 `/content/forms/fp/` 노드에 저장됩니다. 로그인한 사용자 또는 익명 사용자가 초안을 저장하거나 양식을 제출할 때마다 각각의 초안 또는 제출과 연관된 각 첨부 파일에 대해 `draft ID` 또는 `submission ID`, `user data ID` 및 임의 `ID`이 생성됩니다.
 
 #### 사용자 데이터 {#access-user-data} 액세스
 
