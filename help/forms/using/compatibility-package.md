@@ -10,10 +10,11 @@ topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '344'
 ht-degree: 6%
 
 ---
@@ -32,7 +33,7 @@ ht-degree: 6%
 * 데이터 사전
 * 적응형 양식의 가치 하락 템플릿 및 페이지
 
-자세한 내용은 호환성 패키지[을 설치하여 AEM Forms 6.5와 호환되는 에셋을 참조하십시오.](../../forms/using/compatibility-package.md#assetsmadecompatible)
+자세한 내용은 호환성 패키지](../../forms/using/compatibility-package.md#assetsmadecompatible)을 설치하여 AEM Forms 6.5와 호환되는 에셋을 참조하십시오.[
 
 ## AEM Forms 6.5에서 AEM Forms 6.4, 6.3 및 6.2 자산에 대한 지원 추가 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
