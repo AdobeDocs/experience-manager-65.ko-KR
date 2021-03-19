@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3293'
 ht-degree: 4%
 
 ---
@@ -358,7 +359,7 @@ ht-degree: 4%
 `ENABLEMENT`설정은 선택한 커뮤니티 사이트 템플릿에 [assignments 함수](/help/communities/functions.md#assignments-function)가 포함될 때 적용되며, 이 함수는 활성 기능에 라이선스가 부여되고 [configured](/help/communities/enablement.md)가 있을 때 사용할 수 있습니다. 할당 기능을 포함하는 참조 사이트 템플릿은 `Reference Structured Learning Site Template.`입니다.
 
 * **활성 관리자**
-(필수) 이 활성 커뮤니티를 관리하기 위해  `Community Enablementmanagers` 그룹의 구성원만 선택할 수 있습니다. 역량 강화 관리자는 리소스에 구성원을 할당할 책임이 있습니다. [사용자 및 사용자 그룹 관리](/help/communities/users.md)도 참조하십시오.
+(필수)  `Community Enablementmanagers` 이 지원 커뮤니티를 관리하기 위해 그룹의 구성원만 선택할 수 있습니다. 역량 강화 관리자는 리소스에 구성원을 할당할 책임이 있습니다. [사용자 및 사용자 그룹 관리](/help/communities/users.md)도 참조하십시오.
 
 * **Marketing Cloud 조직 ID**
 
@@ -389,7 +390,7 @@ ht-degree: 4%
 
 ![site-project](assets/site-project.png)
 
-마우스로 사이트를 마우스로 가리키거나 사이트 카드를 만지는 경우, [작성 모드](#authoring-site-content),](#modifying-site-properties),[사이트](#publishing-the-site) 게시, [사이트](#exporting-the-site) 내보내기 및 [사이트](#deleting-the-site)삭제에 대한 사이트 속성을 &lt;a0/>편집할 수 있도록 해주는 아이콘이 표시됩니다.[
+마우스로 사이트를 마우스로 가리키거나 사이트 카드를 만지는 경우, [작성 모드](#authoring-site-content),](#modifying-site-properties),[사이트](#publishing-the-site) 게시, [사이트](#exporting-the-site) 내보내기 및 [사이트](#deleting-the-site)삭제에 대한 사이트 속성을 [편집할 수 있도록 해주는 아이콘이 표시됩니다.
 
 ## 사이트 컨텐츠 작성 {#authoring-site-content}
 
@@ -526,7 +527,7 @@ UGC는 사이트 패키지에 포함되지 않습니다.
 
 새 커뮤니티 사이트가 게시되면 다양한 관리 및 구성원 역할에 대한 적절한 권한이 설정된 새 구성원 그룹(사용자 그룹은 게시 환경에서 만들기)이 만들어집니다.
 
-구성원 그룹에 대해 만들어진 이름은 다른 커뮤니티 사이트 루트에 대해 동일한 사이트 이름을 가진 커뮤니티 사이트 및 그룹과의 충돌을 방지하기 위한 고유한 ID뿐만 아니라 [1단계](#step13asitetemplate)의 사이트에 지정된 *site-name*&#x200B;입니다.
+구성원 그룹에 대해 만들어진 이름은 다른 커뮤니티 사이트 루트에 대해 동일한 사이트 이름을 가진 커뮤니티 사이트 및 그룹과의 충돌을 방지하기 위한 고유한 ID뿐만 아니라 [1단계](#step13asitetemplate)에 지정된 사이트 이름&#x200B;*에 있습니다.*
 
 예를 들어 이름이 &quot;시작하기 자습서&quot;라는 사이트에 대해 &quot;참여&quot;인 경우 중재자에 대한 사용자 그룹은 다음과 같습니다.
 
