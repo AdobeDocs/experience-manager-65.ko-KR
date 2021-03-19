@@ -6,11 +6,12 @@ seo-description: AEM Forms 다큐멘트 서비스를 설치하여 PDF 문서를 
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '4295'
-ht-degree: 2%
+source-wordcount: '4296'
+ht-degree: 3%
 
 ---
 
@@ -391,8 +392,8 @@ UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경�
 
 AEM Forms Add-on 패키지는 AEM에 배포되는 애플리케이션입니다. 이 패키지에는 AEM Forms 문서 서비스와 기타 AEM Forms 기능이 포함되어 있습니다. 패키지를 설치하려면 다음 단계를 수행하십시오.
 
-1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID이 필요합니다.
-1. 머리글 메뉴에서 사용할 수 있는 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 누릅니다.
+1. [소프트웨어 배포](https://experience.adobe.com/downloads)를 엽니다. 소프트웨어 배포에 로그인하려면 Adobe ID가 필요합니다.
+1. 헤더 메뉴에 제공된 **[!UICONTROL Adobe Experience Manager]**&#x200B;를 누릅니다.
 1. **[!UICONTROL 필터]** 섹션에서 다음을 수행합니다.
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을 선택합니다.
    2. 패키지의 버전과 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
