@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
+feature: 문서 보안
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '10273'
+source-wordcount: '10275'
 ht-degree: 0%
 
 ---
@@ -68,7 +69,7 @@ IPv6를 사용하는 경우 기본 URL을 컴퓨터 이름 또는 DNS 이름으�
 
 높이:최소 = 450;최대 = 800
 
-**클라이언트 자격 증명 캐싱 사용:** 사용자가 자격 증명을 캐시할 수 있도록 하려면 이 옵션을 선택합니다(사용자 이름 및 암호). 사용자 자격 증명이 캐시되면 문서를 열 때마다 또는 Adobe Acrobat의 [보안 정책 관리] 페이지에서 [새로 고침] 단추를 클릭할 때마다 사용자 자격 증명을 입력할 필요가 없습니다. 사용자가 자격 증명을 다시 제공해야 하기 전 일 수를 지정할 수 있습니다. 일 수를 0으로 설정하면 자격 증명을 무기한으로 캐시할 수 있습니다.
+**클라이언트 자격 증명 캐싱 사용:** 사용자가 자격 증명을 캐시할 수 있도록 하려면 이 옵션을 선택합니다(사용자 이름 및 암호). 사용자 자격 증명이 캐시되면 문서를 열 때마다 또는 Adobe Acrobat의 보안 정책 관리 페이지에서 새로 고침 단추를 클릭할 때마다 사용자 자격 증명을 입력할 필요가 없습니다. 사용자가 자격 증명을 다시 제공해야 하기 전 일 수를 지정할 수 있습니다. 일 수를 0으로 설정하면 자격 증명을 무기한으로 캐시할 수 있습니다.
 
 ## Document Security 사용자 및 관리자 구성 {#configuring-document-security-users-and-administrators}
 
@@ -554,7 +555,7 @@ document security에서는 인터넷 또는 네트워크에 연결하지 않고�
 
 등록 이메일에는 등록 페이지에 대한 링크 및 등록 방법에 대한 정보가 포함되어 있습니다. 사용자가 등록한 후 문서 보안은 활성화 페이지에 대한 링크가 포함된 활성화 이메일을 발행합니다. 활성화하면 계정을 비활성화하거나 삭제할 때까지 계정이 유효하게 유지됩니다.
 
-기본 제공 등록을 사용하는 경우 SMTP 서버, 등록 이메일 세부 사항, 액세스 기능 및 암호 이메일 정보를 한 번만 재설정합니다. 기본 제공 등록을 활성화하기 전에 사용자 관리에서 로컬 도메인을 생성한 후 &quot;문서 보안 초대 사용자&quot; 역할을 조직의 적절한 사용자 및 그룹에 할당했는지 확인하십시오. 자세한 내용은 [로컬 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) 및 [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)을 참조하십시오. 내장 등록을 사용하지 않는 경우 AEM 양식 SDK를 사용하여 만든 사용자 등록 시스템이 있어야 합니다. [AEM 양식을 사용한 프로그래밍](https://www.adobe.com/go/learn-aemforms-programming-63)의 &quot;AEM 양식에 대한 SPI 개발&quot;에 대한 도움말을 참조하십시오. [기본 제공 등록] 옵션을 사용하지 않는 경우 활성화 이메일과 클라이언트 로그인 화면에서 새 암호 또는 기타 정보를 위해 관리자에게 연락하는 방법을 알려 주는 메시지를 구성하는 것이 좋습니다.
+기본 제공 등록을 사용하는 경우 SMTP 서버, 등록 이메일 세부 사항, 액세스 기능 및 암호 이메일 정보를 한 번만 재설정합니다. 기본 제공 등록을 활성화하기 전에 사용자 관리에서 로컬 도메인을 생성한 후 &quot;문서 보안 초대 사용자&quot; 역할을 조직의 적절한 사용자 및 그룹에 할당했는지 확인하십시오. 자세한 내용은 [로컬 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) 및 [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)을 참조하십시오. 내장 등록을 사용하지 않는 경우 AEM 양식 SDK를 사용하여 만든 사용자 등록 시스템이 있어야 합니다. [AEM 양식을 사용한 프로그래밍](https://www.adobe.com/go/learn-aemforms-programming-63)의 &quot;AEM 양식에 대한 SPI 개발&quot;에 대한 도움말을 참조하십시오. [기본 제공 등록] 옵션을 사용하지 않는 경우 활성화 이메일과 클라이언트 로그인 화면에서 새 암호 또는 기타 정보를 위해 관리자에게 문의하는 방법을 알려 주는 메시지를 구성하는 것이 좋습니다.
 
 **초대된 사용자 등록 활성화 및 구성**
 
