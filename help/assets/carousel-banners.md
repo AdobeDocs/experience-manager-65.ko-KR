@@ -8,10 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
+feature: 회전 배너
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '4802'
+source-wordcount: '4807'
 ht-degree: 0%
 
 ---
@@ -39,7 +41,7 @@ Carousel 배너를 통해 마케터는 인터랙티브한 회전 프로모션 �
 
 ## 회전판 배너가 만들어지는 방법 보기 {#watch-how-carousel-banners-are-created}
 
-회전판 배너가 만들어지는 방법[에 대한 10분 및 33초 연습을 보십시오. ](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) 캐러셀 배너를 미리 보고 편집 및 전달하는 방법도 알아봅니다.
+회전판 배너가 만들어지는 방법](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)에 대한 10분 및 33초 연습을 보십시오. [ 캐러셀 배너를 미리 보고 편집 및 전달하는 방법도 알아봅니다.
 
 >[!NOTE]
 >
@@ -110,7 +112,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 
 핫스팟 또는 이미지 맵 데이터에 사용할 변수 세트를 식별하는 다른 방법이 있습니다.
 
-시스템 빠른 보기를 식별하기 위해 필요한 최소 데이터 세트가 무엇인지 알 수 있으므로 기존 빠른 보기 구현을 담당하는 IT 전문가와 상담하는 데 충분할 수 있습니다. 그러나 대부분의 경우 프런트 엔드 코드의 기존 동작을 간단하게 분석할 수도 있습니다.
+시스템에서 빠른 보기를 식별하는 데 필요한 최소 데이터 세트가 무엇인지 알 수 있으므로 기존 빠른 보기 구현을 담당하는 IT 전문가와 상담하는 데 충분할 수 있습니다. 그러나 대부분의 경우 프런트 엔드 코드의 기존 동작을 간단하게 분석할 수도 있습니다.
 
 대부분의 빠른 보기 구현은 다음 패러다임을 사용합니다.
 
@@ -321,7 +323,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 
    [자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
-   웹 사이트 랜딩 페이지에 설정된 회전판 추가[를 참조하십시오.](#adding-a-carousel-banner-to-your-website-page)
+   웹 사이트 랜딩 페이지에 설정된 회전판 추가](#adding-a-carousel-banner-to-your-website-page)를 참조하십시오.[
 
 ## 회전판 편집 세트 {#editing-carousel-sets}
 
@@ -377,7 +379,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 1. **[!UICONTROL 편집을 누릅니다.]**
 1. 도구 모음 오른쪽 모서리의 뷰어 사전 설정 목록에서 회전식 배너를 미리 볼 뷰어를 선택합니다.
 
-   ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
+   ![experience_fragment-carousselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
 1. **[미리 보기를 누릅니다.]**
 1. 이미지의 핫스팟 또는 이미지 맵을 눌러 연결된 동작을 테스트합니다.
