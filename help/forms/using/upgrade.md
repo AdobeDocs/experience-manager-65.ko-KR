@@ -1,6 +1,6 @@
 ---
-title: AEM 6.5 Forms으로 업그레이드
-seo-title: AEM 6.5 Forms으로 업그레이드
+title: AEM 6.5 Forms로 업그레이드
+seo-title: AEM 6.5 Forms로 업그레이드
 description: AEM 6.3 Forms 및 AEM 6.4 Forms에서 AEM 6.5 Forms으로 바로 업그레이드할 수 있습니다.
 seo-description: AEM 6.3 Forms 및 AEM 6.4 Forms에서 AEM 6.5 Forms으로 바로 업그레이드할 수 있습니다.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
@@ -9,16 +9,17 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 0%
+source-wordcount: '233'
+ht-degree: 5%
 
 ---
 
 
-# AEM 6.5 Forms으로 업그레이드{#upgrade-to-aem-forms}
+# AEM 6.5 Forms로 업그레이드{#upgrade-to-aem-forms}
 
 AEM 6.5 Forms에는 양식과 통신의 제작, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다. AEM 6.5 Forms의 새로운 기능과 개선 사항에 대해 자세히 알아보려면 [새로운 기능 요약 문서](../../forms/using/whats-new.md)를 참조하십시오.
 
