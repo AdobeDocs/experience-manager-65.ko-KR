@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 2bd74d5e90aff1146de5c5a0dffd99fc7dd9031c
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '479'
 ht-degree: 5%
 
 ---
@@ -63,7 +64,7 @@ AEM Communities의 주요 기능은 로그인된 사이트 방문자(구성원)�
 * [UGC 중재](moderate-ugc.md):신뢰할 수 있는 멤버는 UGC를 일괄적으로 또는 컨텍스트에 맞게 중재할 수 있습니다.
 * [태그 지정 UGC](tag-ugc.md):멤버가 컨텐츠에 태그를 지정할 수 있도록 기능을 구성할 수 있습니다.
 * [UGC 번역](translate-ugc.md):모든 UGC를 번역하거나 회원이 선택한 게시물을 번역하도록 기능을 구성할 수 있습니다.
-* [분석 구성](analytics.md):adobe analytics에서 멤버 활동에 대한 다양한 지표에 대해 보고할 수 있도록 설정
+* [분석 구성](analytics.md):Adobe Analytics에서 멤버 활동에 대한 다양한 지표에 대해 보고할 수 있도록 설정
 
 ### 커뮤니티 구성원 {#community-members}
 
@@ -81,7 +82,7 @@ AEM Communities의 주요 기능은 로그인된 사이트 방문자(구성원)�
 ### 지원 기능 {#enablement-features}
 
 * [지원 구성](enablement.md):활성화 기능을 올바로 설정하는 데 필요한 정보입니다.
-* [분석 구성](analytics.md):adobe analytics for Communities 기능을 활성화하는 데 필요한 정보입니다.
+* [분석 구성](analytics.md):Adobe Analytics for Communities 기능을 활성화하는 데 필요한 정보입니다.
 * [태깅 지원 리소스](tag-resources.md):활성화 카탈로그를 만드는 데 필요합니다.
 
 ### 배포 {#deployment}
@@ -104,4 +105,4 @@ AEM 플랫폼에 최신 커뮤니티 릴리스를 설치하는 것은 중요합�
 
 * SCF(소셜 구성 요소 프레임워크)에 대해 알아보고 커뮤니티 구성 요소 및 기능을 사용자 지정하려면 [커뮤니티 개발](communities.md)을 방문하십시오.
 
-* 커뮤니티 구성 요소로 작성하고 구성하는 방법을 알아보려면 [커뮤니티 구성 요소 작성](author-communities.md)을 방문하십시오.
+* 커뮤니티 구성 요소를 사용하여 작성하고 구성하는 방법을 알려면 [커뮤니티 구성 요소 작성](author-communities.md)을 방문하십시오.
