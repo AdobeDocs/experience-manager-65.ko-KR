@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
+feature: 구성
 translation-type: tm+mt
-source-git-commit: a678716e2c0520891e4228bc49b075f070ea45b7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2994'
 ht-degree: 5%
 
 ---
@@ -318,7 +319,7 @@ AEM에서는 이진 데이터를 콘텐트 노드와는 독립적으로 저장�
 
 >[!NOTE]
 >
->Adobe은 Adobe Managed Services를 사용하여 AEM을 Azure 또는 Amazon Web Services(AWS)에 배포하는 옵션을 선택하는 것이 좋습니다. 여기서 고객은 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영하는 경험과 기술을 갖춘 팀으로부터 혜택을 받을 수 있습니다. Adobe Managed Services[에 대한 추가 설명서를 참조하십시오.](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)
+>Adobe은 Adobe Managed Services를 사용하여 AEM을 Azure 또는 Amazon Web Services(AWS)에 배포하는 옵션을 선택하는 것이 좋습니다. 여기서 고객은 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영하는 경험과 기술을 갖춘 팀으로부터 혜택을 받을 수 있습니다. Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)에 대한 추가 설명서를 참조하십시오.[
 >
 >Azure 또는 AWS에서 AEM을 배포하는 방법에 대한 추천을 위해 Adobe Managed Services 외부에서 클라우드 공급자나 원하는 클라우드 환경에서 AEM 배포를 지원하는 Adobe 파트너와 직접 작업하는 것이 좋습니다. 선택한 클라우드 제공업체 또는 파트너는 고객의 특정 성능, 로드, 확장성 및 보안 요구 사항을 충족하기 위해 지원할 아키텍처의 크기 지정, 설계 및 구현을 책임집니다.
 >
