@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
+feature: 적응형 Forms, Adobe Sign
 translation-type: tm+mt
-source-git-commit: fd9ee8e4eb35bd5d303d7bbdd9660a94c54925ff
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '3859'
+source-wordcount: '3863'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ ht-degree: 0%
 * 계약 주기 시간을 단축하고 신규 업체의 가입 절차를 보다 신속하게 진행할 수 있습니다.
 * 일반적인 프로세스를 자동화하는 디지털 워크플로우를 구축할 수 있습니다.
 
-[!DNL Adobe Sign] aem과의 통합  [!DNL Forms] 지원:
+[!DNL Adobe Sign] AEM과의 통합  [!DNL Forms] 지원:
 
 * 단일 및 여러 사용자 서명 워크플로우
 * 순차적 및 동시 서명 워크플로우
@@ -132,7 +133,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Adobe Sign] 필드** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) 아이콘을 누릅니다. [!DNL Adobe Sign] 필드를 선택하고 추가하는 옵션이 표시됩니다.
 
-   **[!UICONTROL 유형]** 드롭다운 필드를 확장하여 [!DNL Adobe Sign] 필드를 선택하고 완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 눌러 선택한 필드를 [!DNL Adobe Sign] 블록에 추가합니다. **[!UICONTROL 유형]** 드롭다운 필드에는 서명, 서명자 정보 및 데이터 필드 유형이 포함되어 있습니다. [!DNL Adobe Sign] aem  [!DNL Forms] 지원 필드와의 통합은   Typedrop-down 상자에만 나열됩니다. [!DNL Adobe Sign] 필드에 대한 자세한 내용은 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html)를 참조하십시오.
+   **[!UICONTROL 유형]** 드롭다운 필드를 확장하여 [!DNL Adobe Sign] 필드를 선택하고 완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 눌러 선택한 필드를 [!DNL Adobe Sign] 블록에 추가합니다. **[!UICONTROL 유형]** 드롭다운 필드에는 서명, 서명자 정보 및 데이터 필드 유형이 포함되어 있습니다. [!DNL Adobe Sign] AEM  [!DNL Forms] 지원 필드와의 통합은   Typedrop-down 상자에만 나열됩니다. [!DNL Adobe Sign] 필드에 대한 자세한 내용은 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html)를 참조하십시오.
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
