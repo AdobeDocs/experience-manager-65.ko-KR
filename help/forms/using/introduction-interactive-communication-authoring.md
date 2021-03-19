@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications
 discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1347'
 ht-degree: 3%
 
 ---
@@ -122,7 +123,7 @@ H.**그룹**:두 개 이상의 구성 요소를 함께 자르거나, 복사하�
 
 J.**SOM 표현식 보기:** 구성 요소에 대한 [SOM 표현식](../../forms/using/using-som-expressions-adaptive-forms.md)을 볼 수 있습니다.
 
-K:**패널의 그룹 개체:** 패널에서 구성 요소를 그룹화하여 해당 구성 요소에 대해 동시에 작업을 수행할 수 있도록 합니다. 자세한 내용은 패널[의 그룹 개체를 참조하십시오.](create-interactive-communication.md#groupobjectspanel)
+K:**패널의 그룹 개체:** 패널에서 구성 요소를 그룹화하여 해당 구성 요소에 대해 동시에 작업을 수행할 수 있도록 합니다. 자세한 내용은 패널](create-interactive-communication.md#groupobjectspanel)의 그룹 개체를 참조하십시오.[
 
 L.**하위 패널 추가**(패널에만 해당):패널에 하위 패널을 추가할 수 있습니다.
 
