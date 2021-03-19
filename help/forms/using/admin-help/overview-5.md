@@ -10,11 +10,12 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9e25ea72-e7ba-400b-9cab-de256fe64888
 docset: aem65
+feature: PDF 생성기
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 0%
+source-wordcount: '151'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +29,6 @@ PDF Generator를 사용하면 다양한 파일 포맷을 PDF로 변환할 수 �
 처리할 수 있도록 PDF Generator로 파일을 보내는 방법에는 3가지가 있습니다.
 
 * 관리자는 관리 콘솔에서 PDF 페이지에 액세스할 수 있습니다. 자세한 내용은 [PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)를 사용하여 파일 변환을 참조하십시오.
-* 사용자는 `http(s)://'[server]:[port]'/pdfgui.`에 로그인하여 PDF 최종 사용자 페이지에 액세스할 수 있습니다. 여기서 PDF 네트워크 프린터, PDF 만들기, HTML을 PDF로, Export PDF 및 Optimize PDF 페이지에 액세스할 수 있습니다.
-* 서비스에 대한 끝점을 구성할 수 있습니다. <!--Fix broken link to Managing Endpoints --> 참조 [PDF 서비스 추천을 생성합니다](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).
+* 사용자는 `http(s)://'[server]:[port]'/pdfgui.`에 로그인하여 PDF 최종 사용자 페이지에 액세스할 수 있습니다. 여기서 PDF 네트워크 프린터, PDF 만들기, HTML을 PDF로 변환, Export PDF 및 Optimize PDF 페이지에 액세스할 수 있습니다.
+* 서비스에 대한 끝점을 구성할 수 있습니다. 자세한 내용은 <!--Fix broken link to Managing Endpoints --> [PDF 서비스 추천을 생성합니다](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).
 
