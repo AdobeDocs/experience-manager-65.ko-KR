@@ -2,10 +2,11 @@
 title: 메타데이터 기능의 구성 및 관리.
 description: 메타데이터 추가 및 관리와 관련된  [!DNL Experience Manager Assets] 기능 구성 및 관리.
 contentOwner: AG
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1954'
 ht-degree: 3%
 
 ---
@@ -65,7 +66,7 @@ ht-degree: 3%
 
    ![메타데이터 프로필의 속성 설정에 매핑](assets/metadata-profile-setting-map-property.png)
 
-   **[!UICONTROL 속성]**&#x200B;에 매핑에 지정하는 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 `./jcr:content/metadata/dc:desc`속성&#x200B;]**에 매핑의 이름으로 &lt;a0/>을 지정하는 경우 [!DNL Assets]은 자산의 메타데이터 노드에 값 `dc:desc`을 저장합니다.**[!UICONTROL 
+   **[!UICONTROL 속성]**&#x200B;에 매핑에 지정하는 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 `./jcr:content/metadata/dc:desc`속성&#x200B;]**에 매핑의 이름으로**[!UICONTROL &#x200B;을 지정하는 경우 [!DNL Assets]은 자산의 메타데이터 노드에 값 `dc:desc`을 저장합니다.
 
    * **[!UICONTROL 기본값]**:이 속성을 사용하여 메타데이터 구성 요소의 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 노드의 속성 `dc:desc`에 할당됩니다.
 
