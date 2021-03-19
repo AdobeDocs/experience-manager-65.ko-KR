@@ -8,10 +8,11 @@ contentOwner: anujkapo
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -129,7 +130,7 @@ if (data) {
 }
 ```
 
-`var som_map`에는 표준 형식으로 변형할 응용 양식 필드의 SOM 식이 나열됩니다. 필드를 탭하고 **[!UICONTROL SOM 표현식 보기]**&#x200B;를 선택하여 필드의 SOM 표현식을 응용 형식으로 볼 수 있습니다.
+`var som_map`에는 표준 형식으로 변형할 적응형 양식 필드의 SOM 식이 나열됩니다. 필드를 탭하고 **[!UICONTROL SOM 표현식 보기]**&#x200B;를 선택하여 필드의 SOM 표현식을 응용 형식으로 볼 수 있습니다.
 
 이 사용자 지정 오류 핸들러를 사용하면 적응형 양식이 `var som_map`에 나열된 필드를 표준 오류 메시지 형식으로 변환합니다. 따라서 유효성 검사 오류 메시지는 적응형 양식의 필드 수준에서 표시됩니다.
 
@@ -198,7 +199,7 @@ if (data) {
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   `var som_map`에는 표준 형식으로 변형할 응용 양식 필드의 SOM 식이 나열됩니다. 필드를 탭하고 **[!UICONTROL 추가 옵션]**(..) 메뉴에서 **[!UICONTROL SOM 표현식 보기]**&#x200B;를 선택하여 필드의 SOM 표현식을 적응형 형식으로 볼 수 있습니다.
+   `var som_map`에는 표준 형식으로 변형할 적응형 양식 필드의 SOM 식이 나열됩니다. 필드를 탭하고 **[!UICONTROL 추가 옵션]**(..) 메뉴에서 **[!UICONTROL SOM 표현식 보기]**&#x200B;를 선택하여 필드의 SOM 표현식을 적응형 형식으로 볼 수 있습니다.
 
    다음 샘플 코드 행을 사용자 지정 오류 처리기에 복사해야 합니다.
 
