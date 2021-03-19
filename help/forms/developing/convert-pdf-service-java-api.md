@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
+role: 개발자
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}을 사용하여 PDF 문서를 PostScript로 변환
 
-다음 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *Loan.ps*&#x200B;라는 PostScript 문서로 변환합니다. (PDF 문서를 PostScript[로 변환을 참조하십시오.)](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)
+다음 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *Loan.ps*&#x200B;라는 PostScript 문서로 변환합니다. (PDF 문서를 PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)로 변환을 참조하십시오.)[
 
 ```java
  /*
