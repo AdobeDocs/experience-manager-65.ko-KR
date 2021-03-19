@@ -2,10 +2,11 @@
 title: 자산 업로드 제한 사항 구성
 description: '사용자가 업로드할 수 있는 자산 유형 제한 '
 contentOwner: AG
+role: 개발자, 관리자, 건축가
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
