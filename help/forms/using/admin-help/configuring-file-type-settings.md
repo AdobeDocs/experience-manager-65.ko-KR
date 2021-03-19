@@ -8,10 +8,11 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
+feature: PDF 생성기
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6148'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ PDF Generator에서 지원되는 파일 유형에 대한 애플리케이션 설�
 파일 유형 설정 페이지에서 다음 작업을 수행할 수 있습니다.
 
 * [파일 유형 설정 만들기 또는 편집](#create-or-edit-file-type-settings)
-* 기본적으로 사용할 파일 유형 설정을 지정합니다(PDF Generator 구성 파일 가져오기 및 내보내기[ 참조).](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+* 기본적으로 사용할 파일 유형 설정을 지정합니다(PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md) 참조).[
 * [기본 설정 변경](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings)
 * [PDF/A 지원 사용](/help/forms/using/admin-help/enable-pdf-a-support.md)
 * [파일 유형 설정 삭제](/help/forms/using/admin-help/enable-pdf-a-support.md)
@@ -70,7 +71,7 @@ PDF Generator에서 지원되는 파일 유형에 대한 애플리케이션 설�
 
    [Microsoft Word 설정(Windows 전용)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-   [Microsoft Visio 설정(Windows만 해당)](#visio)
+   [Microsoft Visio 설정(Windows 전용)](#visio)
 
    [Microsoft Publisher 설정(Windows만 해당)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
@@ -230,7 +231,7 @@ XPS(XML Paper Specification)는 Windows Printing Machine에서 사용됩니다. 
 
 ## PDF 최적기 설정 {#pdf-optimizer-settings}
 
-PDF Generator를 사용하면 PDF 파일의 크기를 줄일 수 있습니다. 이러한 설정을 모두 사용할지 아니면 몇 가지 설정만을 사용할지 여부에 따라 파일을 사용하려는 방법과 파일이 반드시 갖추어야 하는 필수 속성에 따라 다릅니다. 대부분의 경우 기본 설정은 임베디드 글꼴을 제거하고 이미지를 압축하고 더 이상 필요하지 않은 파일에서 항목을 제거하여 공간을 절약하는 등 효율성을 극대화할 수 있도록 적절합니다.
+PDF Generator를 사용하면 PDF 파일의 크기를 줄일 수 있습니다. 이러한 설정을 모두 사용할지 아니면 몇 가지 설정만을 사용할지 여부에 따라 파일을 사용하려는 방법과 파일이 반드시 갖추어야 하는 필수 속성에 따라 다릅니다. 대부분의 경우 기본 설정은 임베디드 글꼴을 제거하고 이미지를 압축하고 더 이상 필요하지 않은 파일에서 항목을 제거하여 공간을 절약하는 등 작업의 효율성을 최대화하기 위해 적합합니다.
 
 >[!NOTE]
 >
@@ -361,7 +362,7 @@ NOTE to WRITER: Unfinished sentence above.
 * **포함된 인쇄 설정** 취소:문서에서 페이지 크기 조절 및 양면 모드와 같은 포함된 인쇄 설정을 제거합니다.
 * **책갈피 무시**:문서에서 모든 책갈피를 제거합니다.
 * **양식 필드 병합**:양식 필드의 모양을 변경하지 않고 사용할 수 없게 합니다. 양식 데이터는 페이지와 병합되어 페이지 컨텐츠가 됩니다.
-* **모든 대체 이미지** 삭제:화면에 표시할 버전을 제외한 모든 버전의 이미지를 제거합니다. 일부 PDF에는 저해상도의 화면상의 보기 및 고해상도 인쇄와 같이 다양한 용도로 동일한 이미지의 여러 버전이 포함되어 있습니다.
+* **모든 대체 이미지** 삭제:화면에 표시할 버전을 제외한 모든 버전의 이미지를 제거합니다. 일부 PDF에는 저해상도 화면상의 보기 및 고해상도 인쇄와 같이 다양한 용도로 동일한 이미지의 여러 버전이 포함되어 있습니다.
 * **문서 태그 무시**:문서에서 태그를 제거합니다. 이 경우 텍스트에 대한 액세스 가능성 및 리플로우 기능도 제거됩니다.
 * **이미지 조각 감지 및 병합**:얇은 슬라이스로 조각난 이미지나 마스크를 찾아 단일 이미지나 마스크로 분할 영역을 병합합니다.
 * **포함된 검색 색인 무시**:포함된 검색 인덱스를 제거하여 파일 크기를 줄입니다.
