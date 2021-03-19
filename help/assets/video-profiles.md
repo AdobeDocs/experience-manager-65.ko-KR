@@ -8,10 +8,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
+feature: 비디오 프로필
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '3707'
+source-wordcount: '3712'
 ht-degree: 3%
 
 ---
