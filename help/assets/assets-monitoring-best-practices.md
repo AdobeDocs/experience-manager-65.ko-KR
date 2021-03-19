@@ -2,10 +2,11 @@
 title: ' [!DNL Assets] 배포 모니터링 우수 사례'
 description: 배포 후  [!DNL Adobe Experience Manager] 배포의 환경과 성능을 모니터링하기 위한 우수 사례입니다.
 contentOwner: AG
+role: 관리자, 건축가
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1670'
 ht-degree: 1%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 1%
 
 * [위쪽](https://www.ex-parrot.com/pdw/iftop/):이 보고서는 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이 경우 이더넷을 사용하는 엔티티에 대한 통신 채널 통계별 정보와 이들이 사용하는 대역폭의 양을 표시합니다. 이벤트는 `yum install iftop` 또는 `apt-get install iftop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
-* Java Flight 레코더(JFR):비프로덕션 환경에서 무료로 사용할 수 있는 Oracle의 상업용 도구입니다. 자세한 내용은 [Java Flight Recorder를 사용하여 CQ 런타임 문제 진단](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)을 참조하십시오.
+* Java Flight 레코더(JFR):비프로덕션 환경에서 자유롭게 사용할 수 있는 Oracle의 상업용 도구입니다. 자세한 내용은 [Java Flight Recorder를 사용하여 CQ 런타임 문제 진단](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)을 참조하십시오.
 * [!DNL Experience Manager] `error.log` 파일:시스템에  [!DNL Experience Manager] `error.log` 기록된 오류에 대한 세부 정보를 확인하려면 파일을 조사할 수 있습니다. 조사할 오류를 식별하려면 `tail -F quickstart/logs/error.log` 명령을 사용합니다.
 * [워크플로우 콘솔](/help/sites-administering/workflows.md):워크플로우 콘솔을 활용하여 뒤로 지연되거나 문제가 발생하는 워크플로우를 모니터링할 수 있습니다.
 
