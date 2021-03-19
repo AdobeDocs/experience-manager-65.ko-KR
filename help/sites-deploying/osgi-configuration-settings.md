@@ -10,10 +10,11 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
+feature: 구성
 translation-type: tm+mt
-source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3806'
 ht-degree: 0%
 
 ---
@@ -461,7 +462,7 @@ SSL 관련 옵션에 대한 자세한 내용 및 CQSE용 HTTPS를 사용하는 �
 CQ 리writer의 HTML 파서를 제어합니다.
 
 * **처리할 추가**  태그 - 파서에서 처리할 HTML 태그를 추가하거나 제거할 수 있습니다. 기본적으로 다음 태그가 처리됩니다.A,IMG,AREA,FORM,BASE,LINK,SCRIPT,BODY,HEAD
-* **카멜 대소문자**  유지 - 기본적으로 HTML 파서는 카멜 대소문자(예: eBay)의 속성을 소문자(예: ebay)로 변환합니다. 이 설정을 해제하여 낙타 케이스 특성을 유지할 수 있습니다. 이 기능은 각도 2와 같은 전면 프레임워크를 사용할 때 유용합니다.
+* **카멜 대소문자**  유지 - 기본적으로 HTML 파서는 카멜 대소문자(예: eBay)의 속성을 소문자(예: ebay)로 변환합니다. 이 설정을 해제하여 낙타 케이스 특성을 유지할 수 있습니다. angular 2과 같은 프런트 엔드 프레임워크를 사용할 때 유용합니다.
 
 **일 공용 JDBC 연결** 풀컨텐츠 소스로 사용되는 외부 데이터베이스에 대한 액세스를 구성합니다.
 
@@ -471,7 +472,7 @@ CQ 리writer의 HTML 파서를 제어합니다.
 
 특히 `dps.session.service.url.name`을 정의할 수 있습니다.기본값은 [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)로 설정됩니다.
 
-**AEM** 와 CDN 간의 CDN 리writer자산/이진 파일이 안전한 방식으로 최종 사용자에게 전달되도록 보장해야 합니다. 여기에는 2가지 작업이 포함됩니다.
+**자산/** 이진 파일이 안전하게 최종 사용자에게 전달되도록 AEM과 CDN 간 CDN 리writer 통신을 보장해야 합니다. 여기에는 2가지 작업이 포함됩니다.
 
 * CDN을 통해 AEM에서 리소스에 처음으로 액세스하는 경우(또는 캐시에서 만료된 후).
 * 리소스가 CDN에 캐시되면 AEM으로 요청되지 않고 해당 리소스에 액세스할 수 있는 모든 사용자는 CDN에서 안전하게 캐시된 리소스에 액세스해야 합니다.
