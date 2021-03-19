@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1061'
 ht-degree: 1%
 
 ---
@@ -135,7 +136,7 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
   <tr>
    <td>badgingPath</td>
    <td>String[]</td>
-   <td><em>(필수)</em> 배지 수준 수에 해당하는 배지 이미지의 다중 값 문자열입니다. 배지 이미지 경로는 순서대로 정렬해야 첫 번째 배지는 가장 높은 전문가에게 부여됩니다. 배지(badgingLevels)에 지정된 배지가 적은 경우 배열의 마지막 배지가 나머지 배열에 채워집니다. 시작 예:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(필수)</em> 배지 수준 수에 이르기까지 배지 이미지의 다중 값 문자열입니다. 배지 이미지 경로는 순서대로 정렬해야 첫 번째 배지는 가장 높은 전문가에게 부여됩니다. 배지(badgingLevels)에 지정된 배지가 적은 경우 배열의 마지막 배지가 나머지 배열에 채워집니다. 시작 예:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
@@ -180,7 +181,7 @@ stopwords 파일이 없으면 고급 점수 지정 엔진에서 오류가 발생
 
 ### 포함 점수 규칙 및 하위 규칙 {#included-scoring-rules-and-sub-rules}
 
-베타 릴리스에 포함된 2개의 포럼 함수[에 대한 2개의 고급 채점 규칙은 포럼과 포럼 기능의 주석 구성 요소에 각각 하나씩 있습니다.](/help/communities/functions.md#forum-function)
+베타 릴리스에 포함된 2개의 포럼 함수](/help/communities/functions.md#forum-function)에 대한 2개의 고급 채점 규칙은 포럼과 포럼 기능의 주석 구성 요소에 각각 하나씩 있습니다.[
 
 1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
