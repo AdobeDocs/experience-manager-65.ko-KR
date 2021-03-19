@@ -3,10 +3,11 @@ title: 디지털 자산 컬렉션 관리
 description: 컬렉션 만들기, 보기, 삭제, 편집 및 다운로드 등 자산 컬렉션을 관리하는 작업에 대해 학습합니다.
 contentOwner: AG
 mini-toc-levels: 1
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2182'
 ht-degree: 0%
 
 ---
