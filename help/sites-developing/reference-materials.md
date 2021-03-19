@@ -12,9 +12,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+source-git-commit: 5b33f615f1c82ec7cf80ae00c440cb5e3f0741fa
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '308'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 2%
 AEM(Adobe Experience Manager)은 애플리케이션 개발 및 AEM 확장을 위한 여러 API를 제공합니다. 다음 목록은 AEM에서 지원하는 API에 대한 설명서를 제공합니다.
 
 * [Adobe AEM 6.5.0 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)
-* API 차이점(준비 중)
 * [Granite UI(Touch-enabled) API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 * [Coral UI 안내서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 * [위젯 API(클래식 UI) 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
@@ -37,7 +36,7 @@ AEM 단일 페이지 애플리케이션(SPA) 편집기 SDK 프레임워크 JavaS
 * [구성 요소 매핑](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [페이지 모델 관리자](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [편집 가능한 구성 요소 반응](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [각 편집 가능 구성 요소](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Angular 편집 가능한 구성 요소](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 AEM 전달 및 컨텐츠 관리 API:
 
