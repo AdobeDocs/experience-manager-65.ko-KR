@@ -2,10 +2,11 @@
 title: '[!DNL Assets] 크기 조정 안내서'
 description: 배포에 필요한 인프라 및 리소스를 예상하기 위한 효율적인 지표를 결정하는 우수 사례입니다. [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
+role: 건축가, 관리자
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
