@@ -2,10 +2,11 @@
 title: Adobe Creative Cloud 모범 사례와의 통합
 description: '에셋 전송 워크플로우를 간소화하고 콘텐츠 전송 속도를 높일 수 있는 통합 모범 사례 [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] '
 contentOwner: AG
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '3248'
+source-wordcount: '3251'
 ht-degree: 2%
 
 ---
@@ -39,7 +40,7 @@ ht-degree: 2%
 | 비즈니스 사용자는 데스크탑 환경에서 [!DNL Experience Manager]에 대한 변경 내용을 편집 및 업로드하고 새 파일을 [!DNL Experience Manager]에 업로드하는 작업을 간소화할 수 있습니다. 이들은 범용 통합을 사용하여 Adobe이 아닌 에셋 유형을 비롯하여 기본 데스크탑 애플리케이션에서 에셋 유형을 엽니다. | [Experience Manager 데스크탑 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] Win 및 Mac 데스크탑의 데스크탑 앱 |
 | 마케터와 비즈니스 사용자는 [!DNL Experience Manager] 내에서 [!DNL Adobe Stock] 자산을 검색, 미리 보기, 라이선스 부여, 저장 및 관리할 수 있습니다. 라이선스 자산과 저장된 에셋은 관리 향상을 위해 [!DNL Adobe Stock] 메타데이터를 선택합니다. | [Experience Manager 및 Adobe Stock 통합](aem-assets-adobe-stock.md) | [!DNL Experience Manager] 웹 인터페이스 |
 
-이 문서에서는 주로 공동 작업이 필요한 첫 2가지 측면에 초점을 맞춥니다. 사용 사례로는 규모에 따라 자산의 분배 및 소싱이 간단히 언급됩니다. 이러한 필수 솔루션에 대해서는 Adobe 브랜드 포털 또는 에셋 공유 공유세를 고려하십시오. [브랜드 포털](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)과 같은 대체 솔루션, [자산 공유 공용](https://adobe-marketing-cloud.github.io/asset-share-commons/) 구성 요소, [링크 공유](/help/assets/link-sharing.md)를 기반으로 구축할 수 있는 솔루션, [Experience Manager 자산](/help/assets/manage-assets.md)을(를) 사용하는 &lt;a6/>은 특정 요구 사항에 따라 검토해야 합니다.
+이 문서에서는 주로 공동 작업이 필요한 첫 2가지 측면에 초점을 맞춥니다. 사용 사례로는 규모에 따라 자산의 분배 및 소싱이 간단히 언급됩니다. 이러한 필수 솔루션에 대해서는 Adobe 브랜드 포털 또는 에셋 공유 공유세를 고려하십시오. [브랜드 포털](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)과 같은 대체 솔루션, [자산 공유 공용](https://adobe-marketing-cloud.github.io/asset-share-commons/) 구성 요소, [링크 공유](/help/assets/link-sharing.md)를 기반으로 구축할 수 있는 솔루션, [Experience Manager 자산](/help/assets/manage-assets.md)을(를) 사용하는 은 특정 요구 사항에 따라 검토해야 합니다.
 
 ![Experience Manager에 대한 Creative Cloud 연결, 사용할 기능 결정](assets/creative-connections-aem.png)
 
@@ -89,7 +90,7 @@ ht-degree: 2%
 
 * [데스크톱 앱 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)를 참조하십시오.
 * [Adobe Stock 통합](aem-assets-adobe-stock.md) 참조
-* [Adobe 자산 링크](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)를 참조하십시오.
+* [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)를 참조하십시오
 
 [!DNL Experience Manager] 및 [!DNL Creative Cloud] 통합에 대한 우수 사례에 대한 간략한 요약입니다. 이 문서의 나머지 부분을 참조하여 이러한 내용을 자세히 파악하십시오.
 
