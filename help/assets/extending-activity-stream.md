@@ -2,11 +2,12 @@
 title: 활동 스트림과  [!DNL Assets] 통합
 description: ' [!DNL Experience Manager] 의 기록 기능과 특정 이벤트를 기록하도록 구성하는 방법에 대해 설명합니다.'
 contentOwner: AG
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 0%
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
