@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
+role: 개발자
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1077'
 ht-degree: 0%
 
 ---
@@ -481,7 +482,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}을 사용하여 PDF 문서에서 정책 제거
 
-다음 코드 예제에서는 *PolicyProtectedLoanDoc.pdf*&#x200B;라는 PDF 문서에서 정책을 제거합니다. 보안되지 않은 PDF 문서는 *unProtectedLoan.pdf*&#x200B;로 저장됩니다. (PDF 문서에서 정책 제거[를 참조하십시오.)](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)
+다음 코드 예제에서는 *PolicyProtectedLoanDoc.pdf*&#x200B;라는 PDF 문서에서 정책을 제거합니다. 보안되지 않은 PDF 문서는 *unProtectedLoan.pdf*&#x200B;로 저장됩니다. (PDF 문서에서 정책 제거](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)를 참조하십시오.)[
 
 ```java
  /*
@@ -1646,7 +1647,7 @@ public class ModifyWatermarks {
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}을 사용하여 Word 문서에서 정책 제거
 
-다음 코드 예제에서는 *PolicyProtectedLoanDoc.doc*&#x200B;라는 Word 문서에서 정책을 제거합니다. 보안되지 않은 Word 문서는 *unProtectedLoan.doc*&#x200B;로 저장됩니다. (Word 문서[에서 정책 제거 참조)](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)
+다음 코드 예제에서는 *PolicyProtectedLoanDoc.doc*&#x200B;라는 Word 문서에서 정책을 제거합니다. 보안되지 않은 Word 문서는 *unProtectedLoan.doc*&#x200B;로 저장됩니다. (Word 문서](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)에서 정책 제거 참조)[
 
 ```java
  /*
