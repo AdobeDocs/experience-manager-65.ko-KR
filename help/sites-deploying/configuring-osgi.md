@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
+feature: 구성
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
@@ -130,7 +131,7 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은 번들을 구성하
 
 웹 콘솔에는 변경 사항이 저장되었다는 내용이 표시되지는 않지만 쉽게 찾을 수 있습니다.
 
-1. 웹 콘솔[에서 초기 변경을 수행하는 방법으로 구성 파일을 만듭니다.](#osgi-configuration-with-the-web-console)
+1. 웹 콘솔](#osgi-configuration-with-the-web-console)에서 초기 변경을 수행하는 방법으로 구성 파일을 만듭니다.[
 1. CRXDE Lite 열기
 1. **도구** 메뉴에서 **쿼리 ...를 선택합니다.**.
 1. **Type** `SQL`의 쿼리를 제출하여 업데이트된 구성의 PID를 검색합니다.
@@ -334,7 +335,7 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은 번들을 구성하
 
    `/apps/{somewhere}`
 
-   * 기본적으로 `{somewhere}`은 `system/config`이므로 구성이
+   * 기본적으로 `{somewhere}`은(는) `system/config`이므로 구성은
 
       `/apps/system/config`
 
