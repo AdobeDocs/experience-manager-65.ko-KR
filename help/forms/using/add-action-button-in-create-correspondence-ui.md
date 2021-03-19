@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
+feature: 서신 관리
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1912'
 ht-degree: 1%
 
 ---
@@ -424,7 +425,7 @@ AEM 서버에 액세스하려는 LiveCycle 서비스가 AEM 서버에 언급됩�
 
    >[!NOTE]
    >
-   >서버 사이드에서 변경할 때마다 LiveCycle 서버를 다시 시작합니다. 고유한 LiveCycle 구성 요소를 만드는 방법에 대한 자세한 내용은 사용자 정의 DSC 개발을 통해 LiveCycle ES 소프트웨어 확장[을 참조하십시오.](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)
+   >서버 사이드에서 변경할 때마다 LiveCycle 서버를 다시 시작합니다. 고유한 LiveCycle 구성 요소를 만드는 방법에 대한 자세한 내용은 사용자 정의 DSC 개발을 통해 LiveCycle ES 소프트웨어 확장](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)을 참조하십시오.[
 
    DSCSample.jar 파일은 renderLetter API를 사용합니다. renderLetter API에 대한 자세한 내용은 [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)를 참조하십시오.
 
