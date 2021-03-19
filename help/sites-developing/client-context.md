@@ -10,11 +10,12 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
+feature: Context Hub
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3023'
-ht-degree: 0%
+source-wordcount: '3025'
+ht-degree: 1%
 
 ---
 
@@ -124,7 +125,7 @@ clientcontext 구성 요소를 사용하면 페이지가 Client Context를 구�
 
 ### 세션 저장소 만들기 {#creating-a-session-store}
 
-Client Context에 추가하고 Client Context에서 검색해야 하는 데이터에 대한 세션 저장소를 만듭니다. 일반적으로 다음 절차를 사용하여 세션 저장소를 만듭니다.
+Client Context에서 추가하고 검색해야 하는 데이터에 대한 세션 저장소를 만듭니다. 일반적으로 다음 절차를 사용하여 세션 저장소를 만듭니다.
 
 1. `personalization.stores.kernel` 속성 값이 `categories`인 클라이언트 라이브러리 폴더를 만듭니다. Client Context는 이 범주의 클라이언트 라이브러리를 자동으로 로드합니다.
 
@@ -222,7 +223,7 @@ AEM은 확장할 수 있는 일반 스토어 및 일반 스토어 속성 컨텍�
 
 init.js.jsp 파일을 구성 요소에 추가하여 컨텍스트 저장소 구성 요소에서 사용하는 세션 저장소를 초기화하는 javascript 코드를 생성합니다. 예를 들어 초기화 스크립트를 사용하여 구성 요소에 대한 구성 속성을 검색하고 이를 사용하여 세션 저장소를 채웁니다.
 
-생성된 javascript는 작성자와 게시 인스턴스 모두에서 페이지 로드 시 클라이언트 컨텍스트를 초기화할 때 페이지에 추가됩니다. 이 JSP는 컨텍스트 저장소 구성 요소 인스턴스를 로드하고 렌더링하기 전에 실행됩니다.
+생성된 javascript는 작성자 및 게시 인스턴스 모두에서 페이지 로드 시 클라이언트 컨텍스트를 초기화할 때 페이지에 추가됩니다. 이 JSP는 컨텍스트 저장소 구성 요소 인스턴스를 로드하고 렌더링하기 전에 실행됩니다.
 
 이 코드는 파일의 MIME 형식을 `text/javascript`으로 설정해야 하며 그렇지 않으면 실행되지 않습니다.
 
@@ -421,7 +422,7 @@ function getName(){
 
 `PersistedSessionStore` 속성이 지속되지 않도록 하려면(즉, `sessionpersistence` 쿠키에서 제외됨) 해당 속성을 지속적인 세션 저장소의 비지속적인 속성 목록에 추가하십시오.
 
-` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)` 참조
+자세한 내용은 ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
 
 ```
 CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) {
