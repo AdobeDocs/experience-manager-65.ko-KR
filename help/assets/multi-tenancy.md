@@ -2,10 +2,11 @@
 title: 컬렉션, 코드 단편 및 코드 단편 템플릿에 대한 멀티 테넌시
 description: 멀티 테넌시 기능을 사용하여 고객 조직을 기반으로 CRX 저장소의 컨텐츠를 분리하여 무단 액세스를 방지하는 방법을 살펴봅니다.
 contentOwner: AG
+role: 아키텍트, 관리자, 리더
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '223'
 ht-degree: 1%
 
 ---
