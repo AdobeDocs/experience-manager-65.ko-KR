@@ -2,10 +2,11 @@
 title: 지원되는 파일 형식을 처리하기 위한 모범 사례
 description: ' [!DNL Experience Manager Assets]을(를) 사용하여 지원되는 다양한 파일 형식을 처리하기 위한 우수 사례입니다.'
 contentOwner: AG
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '466'
 ht-degree: 1%
 
 ---
@@ -41,7 +42,7 @@ PDF 래스터라이저를 사용하여 생성한 축소판과 미리 보기는 �
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-Adobe에서는 [!DNL Adobe InDesign Server]을 사용하여 IDML 및 HTML과 같은 [!DNL Adobe InDesign] 특정 변환을 추출하는 것이 좋습니다. 자세한 내용은 Adobe InDesign[에서 Experience Manager 에셋을 참조로 추가를 참조하십시오.](/help/assets/managing-linked-subassets.md#refai)
+Adobe에서는 [!DNL Adobe InDesign Server]을 사용하여 IDML 및 HTML과 같은 [!DNL Adobe InDesign] 특정 변환을 추출하는 것이 좋습니다. 자세한 내용은 Adobe InDesign](/help/assets/managing-linked-subassets.md#refai)에서 Experience Manager 에셋을 참조로 추가를 참조하십시오.[
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
