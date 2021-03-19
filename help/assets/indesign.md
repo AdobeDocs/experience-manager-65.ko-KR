@@ -2,10 +2,11 @@
 title: ' [!DNL Assets] 과(와) 통합 [!DNL InDesign Server]'
 description: ' [!DNL Adobe Experience Manager Assets] 과(와) [!DNL Adobe InDesign Server]을(를) 통합하는 방법을 알아봅니다.'
 contentOwner: AG
+role: 관리자
 translation-type: tm+mt
-source-git-commit: a31fa2712e541dfdc7a5b08ee9b33782f190f00b
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1579'
 ht-degree: 1%
 
 ---
@@ -96,7 +97,7 @@ ht-degree: 1%
 
 이 워크플로우는 다양한 작성자 인스턴스에서 설정에 맞게 조정할 수 있는 기본값을 사용하여 설정합니다(표준 워크플로우이므로, 자세한 내용은 [워크플로우 편집](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)) 아래에서 확인할 수 있습니다. 기본값(SOAP 포트 포함)을 사용하는 경우 구성이 필요하지 않습니다.
 
-설정 후 [!DNL InDesign] 파일을 [!DNL Experience Manager Assets](일반적인 방법 중 하나)에 업로드하면 워크플로우를 트리거하여 자산을 처리하고 다양한 변환을 준비합니다. INDD 파일을 [!DNL Experience Manager Assets]에 업로드하여 구성을 테스트하고 `<*your_asset*>.indd/Renditions` 아래에 IDS로 만든 다른 변환이 표시되는지 확인합니다.
+설정 후 [!DNL InDesign] 파일을 [!DNL Experience Manager Assets](일반적인 방법 중 하나)에 업로드하면 워크플로우를 트리거하여 자산을 처리하고 다양한 변환을 준비합니다. INDD 파일을 [!DNL Experience Manager Assets]에 업로드하여 구성을 테스트하여 `<*your_asset*>.indd/Renditions` 아래에 IDS로 만든 다른 변환이 표시되는지 확인합니다.
 
 #### 미디어 추출 {#media-extraction}
 
