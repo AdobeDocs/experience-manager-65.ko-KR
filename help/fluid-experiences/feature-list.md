@@ -2,11 +2,12 @@
 title: AEM Fluid Experiences 기능 목록
 description: Fluid Experiences 기능 목록
 index: n
+feature: 작성
 translation-type: tm+mt
-source-git-commit: 33abb544c5f12f7d7a44fc326f07fe9b53ebc9d3
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '351'
+ht-degree: 100%
 
 ---
 
