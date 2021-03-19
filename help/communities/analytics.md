@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2756'
+source-wordcount: '2757'
 ht-degree: 3%
 
 ---
@@ -58,7 +59,7 @@ Adobe Analytics은 회원이 지원되는 커뮤니티 기능과 상호 작용�
 1. AEM Analytics [클라우드 서비스](#aem-analytics-cloud-service-configuration) 및 [프레임워크](#aem-analytics-framework-configuration) 만들기
 
 1. [커뮤니티 ](#enable-analytics-for-a-community-site) 사이트에 대한 분석 활성화
-1. [**aem**](#verify-analytics-to-aem-variable-mapping) 변수 매핑으로 Analytics 확인
+1. [**AEM**](#verify-analytics-to-aem-variable-mapping) 변수 매핑으로 Analytics 확인
 1. [기본 게시자 식별](#primary-publisher)
 1. [커뮤니티 사이트 ](#publish-community-site-and-analytics-cloud-service) 게시
 1. Adobe Analytics에서 커뮤니티 사이트로 보고서 데이터](#obtaining-reports-from-analytics)의 [가져오기 구성
@@ -148,7 +149,7 @@ Adobe Marketing Cloud의 [보고서 세트 관리자](https://docs.adobe.com/con
 
 비디오 하트비트 분석에 라이센스가 부여되면 `Marketing Cloud Org Id`이(가) 할당됩니다.
 
-비디오 보고에 대한 Analytics 보고서 세트 구성 후 비디오 하트비트 보고를 활성화하려면[:](#adobe-analytics-report-suite-for-video-reporting)
+비디오 보고에 대한 Analytics 보고서 세트 구성 후 비디오 하트비트 보고를 활성화하려면](#adobe-analytics-report-suite-for-video-reporting):[
 
 * [Analytics 클라우드 서비스](#aem-analytics-cloud-service-configuration) 만들기
 * 커뮤니티 사이트](#enable-analytics-for-a-community-site)에 대한 [분석 활성화
