@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
+feature: 업그레이드
 translation-type: tm+mt
-source-git-commit: b8a532f45f531f36e04ff4b5f0cc2c9e729668bb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 ## 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-* **최소 필수 Java 버전:** 마이그레이션 도구는 Java 버전 7 이상에서만 작동합니다. AEM 6.3 이상 버전의 경우 Oracle의 JRE 8 및 IBM의 JRE 7 &amp; 8만 지원됩니다.
+* **최소 필수 Java 버전:** 마이그레이션 도구는 Java 버전 7 이상에서만 작동합니다. AEM 6.3 이상의 경우 Oracle의 JRE 8 및 IBM의 JRE 7 &amp; 8이 지원되는 유일한 버전입니다.
 
 * **업그레이드된 인스턴스: 5.6** 이  **넘는 버전**&#x200B;에서 업그레이드하는 경우 6.0 버전의 업그레이드 문서에 설명된 절차에 따라 AEM 6.0으로 직접 업그레이드를 수행했는지 확인하십시오.
 
