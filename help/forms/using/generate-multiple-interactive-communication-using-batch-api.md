@@ -5,11 +5,12 @@ contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2237'
-ht-degree: 3%
+source-wordcount: '2239'
+ht-degree: 4%
 
 ---
 
@@ -367,4 +368,4 @@ JSON 파일이 다음 위치에  `C:\batch\mergedJsonPath.json` 있고 아래 �
 
 >[!NOTE]
 >
->기본적으로 CRX 프로토콜만 활성화됩니다. 지원되는 다른 프로토콜을 활성화하려면 구성 관리자[을(를) 사용하여 프리플라이트 서비스 구성을 참조하십시오.](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager)
+>기본적으로 CRX 프로토콜만 활성화됩니다. 지원되는 다른 프로토콜을 활성화하려면 구성 관리자](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager)을(를) 사용하여 프리플라이트 서비스 구성을 참조하십시오.[
