@@ -8,10 +8,11 @@ topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
+feature: 서신 관리
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '6933'
+source-wordcount: '6935'
 ht-degree: 0%
 
 ---
@@ -174,7 +175,7 @@ Correspondence Management Solution은 다이내믹 데이터 항목(변수 데�
 
 **대/소문자** 일치: 검색에서 대소문자가 동일한 결과를 반환합니다.
 
-**단어:** 검색은 단어 단위만 반환합니다.
+**단어:** Search는 단어 단위만 반환합니다.
 
 >[!NOTE]
 >
