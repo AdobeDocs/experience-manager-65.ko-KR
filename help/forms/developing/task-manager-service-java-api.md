@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -268,7 +269,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}을 사용하여 사용자에게 할당된 작업 검색
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}를 사용하여 사용자에게 할당된 작업 검색
 
 다음 Java 코드 예제에서는 *tony blue*&#x200B;라는 사용자에게 할당된 모든 작업을 검색합니다. 이 사용자는 연결 속성에 지정되어 있습니다. 식별자 값 및 설명 등 반환된 작업에 대한 정보가 표시됩니다.
 
