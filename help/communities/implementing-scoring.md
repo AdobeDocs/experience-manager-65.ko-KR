@@ -11,10 +11,11 @@ content-type: reference
 discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2884'
+source-wordcount: '2885'
 ht-degree: 2%
 
 ---
