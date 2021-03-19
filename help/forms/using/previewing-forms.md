@@ -7,11 +7,12 @@ uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '394'
+ht-degree: 3%
 
 ---
 
@@ -72,5 +73,5 @@ AEM Forms에서는 저장소에 있는 양식과 문서를 미리 볼 수 있습
 **데이터를 사용하여 미리 보기**&#x200B;를 선택하면 실제 데이터를 입력한 양식이 어떻게 표시되는지 확인할 수 있습니다. 데이터로 미리 보기 옵션을 사용하면 샘플 사용자 데이터가 포함된 XML을 업로드할 수 있습니다. 샘플 사용자 데이터는 선택한 형식으로 미리 보기 양식을 채우는 데 사용됩니다.
 
 1. 자산을 선택하고 미리 보기 ![aem6forms_preview](assets/aem6forms_preview.png)를 클릭한 다음 **데이터를 사용하여 미리 보기**&#x200B;를 선택합니다.
-1. 양식 미리 보기 대화 상자에서 FormData를 XML 파일로 제공합니다. XML의 병합된 데이터로 양식을 렌더링하려면 미리 보기를 클릭합니다.
+1. 양식 미리 보기 대화 상자에서 FormData를 XML 파일로 제공합니다. XML의 병합된 데이터로 양식을 렌더링하려면 [미리 보기]를 클릭합니다.
 
