@@ -1,7 +1,7 @@
 ---
 title: 렌더링 및 전달
 seo-title: 렌더링 및 전달
-description: 'null'
+description: 렌더링 및 전달
 seo-description: 'null'
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '577'
 ht-degree: 8%
 
 ---
@@ -37,7 +37,7 @@ AEM 컨텐츠는 [Sling Default Servlets](https://sling.apache.org/documentation
 
 ## JSON {#requesting-json} 요청
 
-**&lt;RESOURCE.caas[을(를) 사용합니다.&lt;export-config>.][&lt;export-config>.] jsonto request JSON.**
+**&lt;RESOURCE.caas[을(를) 사용합니다.&lt;export-config>.][&lt;export-config>.** jsonto request JSON.]
 
 <table>
  <tbody>
@@ -194,7 +194,7 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description<br /> jcr:description&lt;a2/&gt; jcr:lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
+   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description<br /> jcr:description jcr:lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
   </tr>
   <tr>
    <td>includeComponents</td>
