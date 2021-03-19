@@ -2,10 +2,12 @@
 title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
+feature: 스마트 태그, 검색
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1602'
 ht-degree: 1%
 
 ---
