@@ -5,11 +5,14 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 클래식 UI 작성 사용 안내서
 user-guide-description: 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다.
+feature-set: Experience Manager Sites
+feature: 작성
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 94%
+source-wordcount: '274'
+ht-degree: 93%
 
 ---
 
