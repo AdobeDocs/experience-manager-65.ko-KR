@@ -8,10 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
+feature: 자산 관리
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1349'
 ht-degree: 1%
 
 ---
@@ -19,7 +21,7 @@ ht-degree: 1%
 
 # 소프트웨어 인터페이스 {#previewing-assets}을(를) 사용하여 자산 미리 보기
 
-[미리 보기]를 사용하여 업로드한 디지털 자산이 고객이 자신의 웹 브라우저에서 볼 때 어떻게 보이는지 확인할 수 있습니다. 자산에 할당된 기본 포함된 장치 간 뷰어는 미리 보기에 사용됩니다.
+[미리 보기]를 사용하여 업로드한 디지털 자산이 고객이 자신의 웹 브라우저에서 보게 되는 모양을 확인할 수 있습니다. 자산에 할당된 기본 포함된 장치 간 뷰어는 미리 보기에 사용됩니다.
 
 뷰어는 사용자가 컴퓨터 화면 및 모바일 장치에서 리치 미디어 에셋을 보는 방법을 결정하는 뷰어 표시 크기, 확대/축소 동작, 색상 구성표, 테두리, 글꼴 등 다양한 설정 또는 &quot;사전 설정&quot; 컬렉션입니다.
 
