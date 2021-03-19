@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -122,4 +123,4 @@ Designer를 사용하면 샘플 XML 데이터를 사용하여 양식을 미리 �
 
 ## 저장소 {#html-preview-of-forms-in-forms-manager}에 있는 양식 미리 보기
 
-AEM Forms에서는 저장소에서 양식과 문서를 미리 볼 수 있습니다. 미리 보기를 사용하면 최종 사용자에게 양식이 어떻게 표시되고 작동하는지 정확하게 알 수 있습니다.
+AEM Forms에서는 저장소에서 양식과 문서를 미리 볼 수 있습니다. 미리 보기를 사용하면 최종 사용자에게 양식이 어떻게 표시되고 작동하는지 정확하게 확인할 수 있습니다.
