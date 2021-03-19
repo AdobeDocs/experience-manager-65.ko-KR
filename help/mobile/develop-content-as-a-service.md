@@ -1,7 +1,7 @@
 ---
 title: 컨텐츠 전달
 seo-title: 컨텐츠 전달
-description: 'null'
+description: 컨텐츠 전달
 seo-description: 'null'
 uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '971'
 ht-degree: 1%
 
 ---
@@ -33,13 +33,13 @@ ht-degree: 1%
 
 컨텐츠 서비스가 제공하는 3가지 주요 유형의 자료는 다음과 같습니다.
 
-1. **자산**
+1. **에셋**
 1. **패키징된 HTML 컨텐츠(HTML/CSS/JS)**
 1. **채널에 독립적인 컨텐츠**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## 자산 {#assets}
+## 에셋 {#assets}
 
 자산 컬렉션은 다른 컬렉션에 대한 참조를 포함하는 AEM 구조체입니다.
 
