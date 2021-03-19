@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '823'
 ht-degree: 2%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 2%
 AEM Communities은 이메일을 사용하여 다음을 수행합니다.
 
 * [커뮤니티 알림](notifications.md)
-* [커뮤니티 가입](subscriptions.md)
+* [커뮤니티 구독](subscriptions.md)
 
 이메일 기능은 기본적으로 SMTP 서버 및 SMTP 사용자의 사양이 필요하므로 작동하지 않습니다.
 
