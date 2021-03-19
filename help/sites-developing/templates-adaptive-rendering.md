@@ -1,7 +1,7 @@
 ---
 title: 적응형 템플릿 렌더링
 seo-title: 적응형 템플릿 렌더링
-description: 'null'
+description: 적응형 템플릿 렌더링
 seo-description: 'null'
 uuid: 97226ae1-e42a-40ae-a5e0-886cd77559d8
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 3%
+source-wordcount: '490'
+ht-degree: 4%
 
 ---
 
