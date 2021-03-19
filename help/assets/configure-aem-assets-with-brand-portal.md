@@ -9,16 +9,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
+feature: Brand Portal
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 49%
+source-wordcount: '2087'
+ht-degree: 50%
 
 ---
 
 
-# Brand Portal에서 AEM Assets 구성 {#configure-integration-65}
+# Brand Portal로 AEM Assets 구성 {#configure-integration-65}
 
 Adobe Experience Manager Assets 브랜드 포털에서는 승인된 브랜드 자산을 Adobe Experience Manager Assets에서 브랜드 포털에 게시하고 브랜드 포털 사용자에게 배포할 수 있습니다.
 
@@ -75,7 +77,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 세부 지침은 다음을 참조하십시오.
 
-* [AEM 6.5 서비스 팩 릴리스 노트](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+* [AEM 6.5 서비스 팩 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **지원 센터에 문의**&#x200B;하십시오.
 
