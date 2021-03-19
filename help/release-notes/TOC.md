@@ -5,11 +5,14 @@ audience: end-user
 user-guide-title: Adobe Experience Manager 6.5 릴리스 노트
 breadcrumb-title: 릴리스 노트
 user-guide-description: 릴리스 정보에서 AEM 6.5의 최신 새로운 기능에 대해 알아보십시오.
+feature-set: Experience Manager
+feature: 릴리스 정보
+role: 리더, 건축가, 개발자, 데이터 아키텍트, 데이터 엔지니어, 관리자, 비즈니스 관리자
 translation-type: tm+mt
-source-git-commit: 4f3be1e50b5520e55ffebfe13ea19aca77d5350d
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 64%
+source-wordcount: '87'
+ht-degree: 57%
 
 ---
 
