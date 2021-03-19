@@ -2,10 +2,11 @@
 title: '[!DNL Assets] HTTP API.'
 description: ' [!DNL Adobe Experience Manager Assets]의 HTTP API를 사용하여 디지털 에셋을 만들고, 읽고, 업데이트하고, 삭제하고, 관리할 수 있습니다.'
 contentOwner: AG
+role: 개발자
 translation-type: tm+mt
-source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1728'
 ht-degree: 1%
 
 ---
@@ -63,7 +64,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 * `parent`:상위 폴더에 연결합니다.
 * `thumbnail`:(선택 사항) 폴더 축소판 이미지에 연결합니다.
 
-### 자산 {#assets}
+### 에셋 {#assets}
 
 Experience Manager에서 자산은 다음 요소를 포함합니다.
 
@@ -71,7 +72,7 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 * 원본 변환(원래 업로드된 에셋), 축소판 및 다양한 기타 표현물과 같은 여러 표현물. 추가 변환은 서로 다른 크기의 이미지, 다른 비디오 인코딩 또는 PDF 또는 [!DNL Adobe InDesign] 파일에서 추출된 페이지일 수 있습니다.
 * 선택적 주석.
 
-컨텐츠 조각의 요소에 대한 자세한 내용은 Experience Manager 에셋 HTTP API[의 컨텐츠 조각 지원을 참조하십시오.](/help/assets/assets-api-content-fragments.md#content-fragments)
+컨텐츠 조각의 요소에 대한 자세한 내용은 Experience Manager 에셋 HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments)의 컨텐츠 조각 지원을 참조하십시오.[
 
 [!DNL Experience Manager]에 폴더에 다음 구성 요소가 있습니다.
 
