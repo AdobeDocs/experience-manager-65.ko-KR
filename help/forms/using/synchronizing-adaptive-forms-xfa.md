@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -70,7 +71,7 @@ AEM Forms 작성 환경에서는 XFA 양식(왼쪽)의 필드를 적응형 양�
 
 XDP 파일 또는 조각의 변경이 있을 때마다 AEM Forms UI는 XDP 파일 또는 조각을 기반으로 하는 모든 적응형 양식에 플래그를 지정합니다.
 
-XDP 파일을 업데이트한 후 변경 사항을 플래그로 지정하려면 AEM Forms UI에서 다시 업로드해야 합니다.
+XDP 파일을 업데이트한 후 변경 사항이 플래그가 지정되도록 AEM Forms UI에서 다시 업로드해야 합니다.
 
 예를 들어 다음 단계를 사용하여 `sample-form.xdp` 파일을 업데이트할 수 있습니다.
 
