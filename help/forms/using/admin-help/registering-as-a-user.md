@@ -8,11 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
+feature: 문서 보안
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 0%
+source-wordcount: '730'
+ht-degree: 6%
 
 ---
 
@@ -38,11 +39,11 @@ ht-degree: 0%
 
 ## 초대된 사용자 {#register-as-an-invited-user}(으)로 등록
 
-초대받은 사용자이고 문서 보안으로부터 이메일 등록 메시지를 받은 경우 메시지의 URL을 사용하여 온라인 등록 페이지를 열어 등록할 수 있습니다. 등록한 후 계정 활성화에 대한 두 번째 알림을 받게 됩니다.
+초대받은 사용자이고 문서 보안으로부터 이메일 등록 메시지를 받은 경우 메시지의 URL을 사용하여 온라인 등록 페이지를 열어 등록할 수 있습니다. 등록하면 계정 활성화에 대한 두 번째 알림을 받게 됩니다.
 
 1. 문서 보안 등록 전자 메일을 엽니다. 메시지에 포함된 URL은 문서 보안의 [외부 사용자 등록] 페이지에 대한 링크입니다.
-1. URL을 클릭하거나 URL을 복사하여 브라우저에 붙여넣습니다. [외부 사용자 등록] 페이지가 표시됩니다.
-1. 해당 상자에 이름, 전화 번호, 주소, 조직 및 암호를 입력한 다음 암호 확인 상자에 암호를 다시 입력합니다. 암호는 8자의 조합으로 사용할 수 있습니다.
+1. URL을 클릭하거나 복사하여 브라우저에 붙여넣습니다. [외부 사용자 등록] 페이지가 표시됩니다.
+1. 해당 상자에 이름, 전화 번호, 주소, 조직 및 암호를 입력한 다음 암호 확인 상자에 암호를 다시 입력합니다. 아무 8자의 조합이 암호가 될 수 있습니다.
 1. 저장을 클릭합니다. 정품 인증 이메일을 확인할 것을 알리는 감사 메시지가 표시됩니다. 이제 계정을 활성화하여 등록 프로세스를 완료해야 합니다.
 
 ## 초대된 사용자 계정 {#activate-your-invited-user-account} 활성화
