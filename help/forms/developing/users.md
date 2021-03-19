@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
+role: 개발자
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '6257'
+source-wordcount: '6258'
 ht-degree: 0%
 
 ---
@@ -754,7 +755,7 @@ Authorization Manager Service API(웹 서비스)를 사용하여 역할 및 권�
    <td><p>사용자 자격 증명이 인증 관리자 서비스로 인증됩니다. 사용자 자격 증명이 유효하면 워크플로우가 3단계로 진행됩니다. 그렇지 않으면 사용자가 권한이 있는 사용자가 아니라는 메시지가 사용자에게 전송됩니다.</p></td>
   </tr>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>사용자 정보와 양식 디자인이 보안 엔터프라이즈 데이터베이스에서 검색됩니다. </p></td>
   </tr>
   <tr>
@@ -880,7 +881,7 @@ Authentication Manager Service API(웹 서비스)를 사용하여 사용자를 �
    <td><p>AEM Forms에서 동기화 작업을 수행합니다.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>사용자 정보가 업데이트됩니다.</p></td>
   </tr>
   <tr>
