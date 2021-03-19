@@ -3,10 +3,11 @@ title: 3D 자산 미리 보기
 description: 3D 자산을 미리 보는 방법 학습
 contentOwner: Rick Brough
 docset: aem65
+feature: 3D 자산
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '566'
 ht-degree: 11%
 
 ---
