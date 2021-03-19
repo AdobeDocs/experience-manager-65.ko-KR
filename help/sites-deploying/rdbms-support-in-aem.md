@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
+feature: 구성
 translation-type: tm+mt
-source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -87,7 +88,7 @@ JDBC 드라이버용 OSGi 번들을 만드는 방법에 대한 자세한 내용�
 
    * `org.postgresql.Driver` for PostgreSQL;
    * `com.ibm.db2.jcc.DB2Driver` DB2;
-   * `oracle.jdbc.OracleDriver` oracle용
+   * `oracle.jdbc.OracleDriver` oracle의 경우
    * `com.mysql.jdbc.Driver` for MySQL and MariaDB (실험적);
    * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` for Microsoft SQL Server(시험적)
 
@@ -101,7 +102,7 @@ JDBC 드라이버용 OSGi 번들을 만드는 방법에 대한 자세한 내용�
 
 * `jdbc:postgresql:databasename` for PostgreSQL;
 * `jdbc:db2://localhost:port/databasename` DB2;
-* `jdbc:oracle:thin:localhost:port:SID` oracle용
+* `jdbc:oracle:thin:localhost:port:SID` oracle의 경우
 * `jdbc:mysql://localhost:3306/databasename` for MySQL and MariaDB (실험적);
 * `jdbc:sqlserver://localhost:1453;databaseName=name` for Microsoft SQL Server(시험적).
 
