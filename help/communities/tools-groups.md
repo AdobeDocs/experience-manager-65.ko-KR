@@ -10,11 +10,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
+role: 관리자
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 3%
+source-wordcount: '543'
+ht-degree: 4%
 
 ---
 
@@ -101,4 +102,4 @@ AEM 작성자 환경의 그룹 템플릿 콘솔에 액세스하려면:
 
 그룹 템플릿을 편집해도 템플릿에서 이미 만든 커뮤니티 사이트에 영향을 주지 않습니다. 대신 [커뮤니티 사이트](/help/communities/sites-console.md#modify-structure)의 구조를 직접 편집할 수 있습니다.
 
-이 프로세스는 그룹 템플릿[을 만드는 것과 동일한 패널을 제공합니다.](#create-group-template)
+이 프로세스는 그룹 템플릿](#create-group-template)을 만드는 것과 동일한 패널을 제공합니다.[
