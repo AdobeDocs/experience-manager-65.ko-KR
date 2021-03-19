@@ -7,16 +7,17 @@ uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
+feature: 대화형 통신
 translation-type: tm+mt
-source-git-commit: 04e1b722cc9be1c4f51b629caffabe1a3f06d28e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2062'
 ht-degree: 2%
 
 ---
 
 
-# 에이전트 UI {#prepare-and-send-interactive-communication-using-the-agent-ui}을(를) 사용하여 대화형 통신 준비 및 보내기
+# 에이전트 UI {#prepare-and-send-interactive-communication-using-the-agent-ui}를 사용하여 대화형 통신 준비 및 보내기
 
 에이전트 UI를 사용하면 에이전트가 대화형 통신을 준비하고 게시물 프로세스로 전송할 수 있습니다. 에이전트는 허용된 대로 필요한 수정 사항을 만들고 이메일 또는 인쇄와 같은 게시 프로세스에 대화형 통신을 제출합니다.
 
@@ -205,7 +206,7 @@ Adobe은 이러한 지침을 순서대로 실행하여 대화형 통신을 초�
 
 ### 대화형 통신 초안 검색 {#retrieve-draft}
 
-Interactive Communication을 초안으로 저장한 후 이를 검색하여 계속 작업할 수 있습니다. 다음을 사용하여 대화형 통신을 검색합니다.
+Interactive Communication을 초안으로 저장한 후 이를 검색하여 계속 작업할 수 있습니다. 다음을 사용하여 대화형 통신 검색:
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
