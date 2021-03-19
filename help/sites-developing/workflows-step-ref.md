@@ -1,7 +1,7 @@
 ---
 title: 워크플로우 단계 참조
 seo-title: 워크플로우 단계 참조
-description: 'null'
+description: 워크플로우 단계 참조
 seo-description: 'null'
 uuid: 88bf6997-73a1-4639-82aa-5dff08d3ef86
 contentOwner: User
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3288'
 ht-degree: 2%
 
 ---
@@ -178,7 +178,7 @@ function check(){
 
 ### 규칙 정의 {#simulateforloop}을(를) 사용하여 for 루프 시뮬레이션
 
-규칙 정의를 경로 지정 표현식으로 사용하여 for 루프를 시뮬레이션할 수도 있습니다. [긴  **** ](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) 데이터 유형의 변수 카운트다운을 만듭니다. **변수 설정](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)** 단계의 매핑 모드로 &lt;a0/>표현식&#x200B;**을 사용하여** count **변수의 값을** count + 1 **단계의 각 실행에 대해 &lt;a6/>개수로 설정합니다.******[
+규칙 정의를 경로 지정 표현식으로 사용하여 for 루프를 시뮬레이션할 수도 있습니다. [긴  **** ](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) 데이터 유형의 변수 카운트다운을 만듭니다. **변수 설정](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)** 단계의 매핑 모드로 **[표현식**&#x200B;을 사용하여 **count** 변수의 값을 **count + 1** 단계의 각 실행에 대해 **개수로 설정합니다.**
 
 ![for 루프 시뮬레이션](assets/variable_use_case_count_new.png)
 
@@ -451,7 +451,7 @@ function check(){
 
    >[!NOTE]
    >
-   >**임의 참가자** 선택 임의 사용자()를 선택하는 샘플  `com.day.cq.workflow.impl.process.RandomParticipantChooser`서비스입니다. **무작위 참가자 선택** r 단계 구성 요소 샘플은 **동적 참가자 단계**&#x200B;를 확장하고 이 서비스를 단계 구현으로 사용합니다.
+   >**임의 참가자** 선택 무작위 사용자()를 선택하는 샘플  `com.day.cq.workflow.impl.process.RandomParticipantChooser`서비스입니다. **무작위 참가자 선택** r 단계 구성 요소 샘플은 **동적 참가자 단계**&#x200B;를 확장하고 이 서비스를 단계 구현으로 사용합니다.
 
 #### 동적 참가자 단계 - 예제 참가자 선택기 서비스 {#dynamic-participant-step-example-participant-chooser-service}
 
@@ -584,7 +584,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [일반](#step-properties-common-tab)
 * **프로세스**
 
-   * **프로세스**:실행할 프로세스 구현입니다. 드롭다운 메뉴를 사용하여 ECMAScript 또는 OSGi 서비스를 선택합니다. 에 대한 자세한 내용:
+   * **프로세스**:실행할 프로세스 구현입니다. 드롭다운 메뉴를 사용하여 ECMAScript 또는 OSGi 서비스를 선택합니다. 다음에 대한:
 
       * 표준 ECMAScripts 및 OSGi 서비스는 [프로세스 단계에 대한 기본 제공 프로세스](/help/sites-developing/workflows-process-ref.md)를 참조하십시오.
       * 프로세스 단계에 대한 ECMAScripts 만들기를 참조하십시오. [ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)와 함께 프로세스 단계 구현을 참조하십시오.
@@ -613,7 +613,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
       * **표현식:** 사용할 값이 표현식에 따라 계산될 때 옵션을 사용합니다. 표현식은 제공된 표현식 편집기에서 만들어집니다.
       * **JSON 점 표기법:** JSON 또는 FDM 유형 변수에서 값을 검색하는 옵션을 사용합니다.
       * **XPATH:** 이 옵션을 사용하여 XML 유형 변수에서 값을 검색합니다.
-      * **페이로드 관련:** 변수에 저장할 값을 페이로드를 기준으로 하는 경로에서 사용할 수 있을 때 이 옵션을 사용합니다.
+      * **페이로드 관련:** 변수에 저장할 값을 페이로드를 기준으로 하는 경로에서 사용할 수 있을 때 옵션을 사용합니다.
       * **절대 경로:** 변수에 저장할 값을 절대 경로에서 사용할 수 있을 때 이 옵션을 사용합니다.
    * **값 지정:** 변수에 매핑할 값을 지정합니다. 이 필드에서 지정하는 값은 매핑 모드에 따라 달라집니다.
    * **매핑 추가:** 이 옵션을 사용하여 변수에 대한 값을 설정할 매핑을 더 추가합니다.
