@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
+feature: 언어 복사
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -54,7 +55,7 @@ ht-degree: 0%
 
    * 일부 LSP는 서비스 및 기술 제공업체입니다. 또한 많은 LSP가 번역 플랫폼에 참여할 수 있도록 허용하는 독립 실행형 기술 공급업체도 있습니다.
    * **AEM Translation Framework**&#x200B;는 기계 및 인간 번역 모두에 대한 다양한 번역 기술 제공자와의 통합을 지원합니다.
-   * AEM 시스템[에서 LSP 커넥터를 통합하여 콘텐츠 번역 작업을 자동화하거나, 테스트를 위한 번역 프로젝트를 수동으로 제작, 내보내기 및 가져오는 방법, 그리고 LSP 또는 번역 기술 공급자가 없는 경우에 대해 알아보십시오.](/help/sites-administering/translation.md)
+   * AEM 시스템](/help/sites-administering/translation.md)에서 LSP 커넥터를 통합하여 콘텐츠 번역 작업을 자동화하거나, 테스트를 위한 번역 프로젝트를 수동으로 제작, 내보내기 및 가져오는 방법, 그리고 LSP 또는 번역 기술 공급자가 없는 경우에 대해 알아보십시오.[
 
 * 컨텐츠에 가장 적합한 **번역 방법**&#x200B;을 선택합니다.
 
