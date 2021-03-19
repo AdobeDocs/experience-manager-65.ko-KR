@@ -2,10 +2,11 @@
 title: 번역 프로젝트 만들기
 description: ' [!DNL Adobe Experience Manager]에서 번역 프로젝트를 만드는 방법을 알아봅니다.'
 contentOwner: AG
+role: 건축가, 관리자
 translation-type: tm+mt
-source-git-commit: 534a3d75ebb6a6d297354cce4840bdc1dfa25707
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1880'
 ht-degree: 6%
 
 ---
@@ -242,7 +243,7 @@ ht-degree: 6%
 
 ## 임시 언어 사본 만들기 {#creating-temporary-language-copies}
 
-번역 워크플로우를 실행하여 원본 에셋의 편집된 버전으로 언어 사본을 업데이트할 때 번역된 에셋을 승인할 때까지 기존 언어 복사본이 유지됩니다. [!DNL Adobe Experience Manager Assets] 새로 번역된 자산을 임시 위치에 저장하고 자산을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않습니다.
+번역 워크플로우를 실행하여 원본 자산의 편집된 버전으로 언어 사본을 업데이트할 때 번역된 자산을 승인할 때까지 기존 언어 복사본이 유지됩니다. [!DNL Adobe Experience Manager Assets] 새로 번역된 자산을 임시 위치에 저장하고 자산을 명시적으로 승인한 후 기존 언어 사본을 업데이트합니다. 자산을 거부하면 언어 사본은 변경되지 않습니다.
 
 1. 언어 복사본을 이미 만든 **[!UICONTROL 언어 사본]** 아래의 소스 루트 폴더를 클릭한 다음 **[!UICONTROL 자산]**&#x200B;에 표시를 클릭하여 [!DNL Experience Manager Assets]에서 폴더를 엽니다.
 
