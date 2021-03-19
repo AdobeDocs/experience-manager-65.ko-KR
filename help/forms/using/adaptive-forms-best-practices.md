@@ -7,10 +7,11 @@ uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 615b0db6da0986d7a74c42ec0d0e14bad7ede168
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '4296'
+source-wordcount: '4298'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ AEM(Adobe Experience Manager) 양식을 사용하면 복잡한 트랜잭션을 �
 * Apache Maven `aem-project-archetype`을 사용하여 AEM 프로젝트의 구조를 만들고 관리할 수 있습니다. AEM 프로젝트에 대한 권장 구조와 템플릿을 만듭니다. 또한 프로젝트를 관리하는 데 도움이 되는 빌드 자동화 및 변경 제어 시스템을 제공합니다.
 
    * 초기 구조를 생성하려면 maven `archetype:generate` 명령을 사용합니다.
-   * 마비성 `eclipse:eclipse` 명령을 사용하여 eclipse 프로젝트 파일을 생성하고 프로젝트를 eclipse로 가져옵니다.
+   * maven `eclipse:eclipse` 명령을 사용하여 eclipse 프로젝트 파일을 생성하고 프로젝트를 eclipse로 가져옵니다.
 
 자세한 내용은 [Apache Maven](/help/sites-developing/ht-projects-maven.md)을 사용하여 AEM 프로젝트를 빌드하는 방법을 참조하십시오.
 
@@ -67,7 +68,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 
    * **없음**:이 옵션을 사용하여 만든 적응형 양식에서는 어떠한 양식 모델도 사용하지 않습니다. 이러한 양식에서 생성된 데이터 XML은 필드와 해당 값이 있는 구조가 일정합니다.
    * **XML 또는 JSON 스키마**:XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 스키마를 적응형 양식에 연결하고 해당 요소를 사용하여 적응형 양식에 동적 내용을 추가할 수 있습니다. 스키마 요소는 적응형 양식을 작성하기 위해 내용 브라우저의 [데이터 모델 개체] 탭에서 사용할 수 있습니다. 스키마 요소를 끌어 놓아서 양식을 작성할 수 있습니다.
-   * **XFA 양식 템플릿**:XFA 기반 HTML5 양식에 투자를 하는 경우 이상적인 양식 모델입니다. XFA 기반 양식을 적응형 양식으로 바로 변환할 수 있는 방법을 제공합니다. 기존 XFA 규칙은 연결된 적응형 양식에 유지됩니다. 결과 적응형 양식은 유효성 검사, 이벤트, 속성 및 패턴과 같은 XFA 구문을 지원합니다.
+   * **XFA 양식 템플릿**:XFA 기반 HTML5 양식에 대한 투자를 하는 경우 이상적인 양식 모델입니다. XFA 기반 양식을 적응형 양식으로 바로 변환할 수 있는 방법을 제공합니다. 기존 XFA 규칙은 연결된 적응형 양식에 유지됩니다. 결과 적응형 양식은 유효성 검사, 이벤트, 속성 및 패턴과 같은 XFA 구문을 지원합니다.
    * **양식 데이터 모델**:적응형 양식을 미리 작성하고 제출된 양식 데이터를 백엔드 시스템에 다시 기록하기 위해 데이터베이스, 웹 서비스, AEM 사용자 프로필과 같은 백엔드 시스템을 통합하려는 경우 선호하는 양식 모델입니다. 양식 데이터 모델 편집기를 사용하면 적응형 양식을 만드는 데 사용할 수 있는 양식 데이터 모델에서 엔티티와 서비스를 정의하고 구성할 수 있습니다. 자세한 내용은 [AEM Forms 데이터 통합](/help/forms/using/data-integration.md)을 참조하십시오.
 
 요구 사항에 부합할 뿐만 아니라 XFA 및 XSD 에셋에 대한 기존 투자를 확장하는 데이터 모델이 있는 경우 신중하게 선택해야 합니다. 생성된 XML은 스키마에 의해 정의된 XPATH에 따라 데이터를 포함하므로 XSD 모델을 사용하여 양식 템플릿을 만드는 것이 좋습니다. 양식 데이터 모델의 기본 선택 항목으로 XSD 모델을 사용하면 데이터를 처리 및 사용하는 백엔드 시스템의 양식 디자인을 분리하고 양식 필드의 1-1 매핑으로 인해 양식 성능을 향상시킬 수 있습니다. 또한 필드의 BindRef는 XML에서 데이터 값의 XPATH로 만들 수 있습니다.
@@ -87,7 +88,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 * 구성 요소에 클라이언트 라이브러리를 포함시켜 해당 구성 요소를 사용하는 적응형 양식 또는 조각에 스타일을 일관되게 적용할 수 있습니다. 자세한 내용은 [적응형 양식 페이지 구성 요소 만들기](/help/forms/using/custom-adaptive-forms-templates.md)를 참조하십시오.
 * 적응형 양식 컨테이너 속성의 CSS 파일 경로 필드에서 클라이언트 라이브러리에 대한 경로를 지정하여 클라이언트 라이브러리에 정의된 스타일을 적용하여 적응형 양식을 선택할 수 있습니다.
 * 스타일의 클라이언트 라이브러리를 만들려면 테마 편집기 기본 clientlib 또는 양식 컨테이너 속성에서 사용자 지정 CSS 파일을 구성할 수 있습니다.
-* 적응형 양식은 응답형, 탭 구분, 아코디언, 마법사 등 패널 레이아웃을 제공하여 패널에서 양식 구성 요소를 배치하는 방식을 제어할 수 있습니다. 사용자 정의 패널 레이아웃을 만들어 양식 작성자가 사용할 수 있도록 만들 수 있습니다. 자세한 내용은 적응형 양식[에 대한 사용자 정의 레이아웃 구성 요소 만들기를 참조하십시오.](/help/forms/using/custom-layout-components-forms.md)
+* 적응형 양식은 응답형, 탭 구분, 아코디언, 마법사 등 패널 레이아웃을 제공하여 패널에서 양식 구성 요소를 배치하는 방식을 제어할 수 있습니다. 사용자 정의 패널 레이아웃을 만들어 양식 작성자가 사용할 수 있도록 만들 수 있습니다. 자세한 내용은 적응형 양식](/help/forms/using/custom-layout-components-forms.md)에 대한 사용자 정의 레이아웃 구성 요소 만들기를 참조하십시오.[
 * 필드 및 패널 레이아웃과 같은 특정 적응형 양식 구성 요소를 사용자 정의할 수도 있습니다.
 
    * 구성 요소의 사본을 수정하려면 AEM의 [오버레이](/help/sites-developing/overlays.md) 기능을 사용합니다. 기본 구성 요소를 수정하는 것은 권장되지 않습니다.
@@ -112,7 +113,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 
 AEM Forms은 적응형 양식 구성 요소에 동적 동작을 추가할 규칙을 만들 수 있는 [규칙 편집기](/help/forms/using/rule-editor.md)를 제공합니다. 이러한 규칙을 사용하여 조건을 평가하고 필드 표시 또는 숨기기, 값 계산, 드롭다운 목록 변경 등과 같은 구성 요소에 대한 작업을 동적으로 트리거할 수 있습니다.
 
-규칙 편집기에서는 규칙 작성을 위한 시각적 편집기와 코드 편집기를 제공합니다. 코드 편집기 모드를 사용하여 규칙을 작성할 때는 다음 사항을 고려하십시오.
+규칙 편집기에서는 규칙을 작성하기 위한 시각적인 편집기와 코드 편집기를 제공합니다. 코드 편집기 모드를 사용하여 규칙을 작성할 때는 다음 사항을 고려하십시오.
 
 * 규칙을 작성하는 동안 발생할 수 있는 충돌을 방지하려면 양식 필드 및 구성 요소에 의미 있고 고유한 이름을 사용하십시오.
 * 규칙 식에서 자신을 참조하려면 구성 요소에 대해 `this` 연산자를 사용합니다. 구성 요소 이름이 변경된 경우에도 규칙이 유효한지 확인합니다. 예, `field1.valueCommit script: this.value > 10`.
@@ -121,7 +122,7 @@ AEM Forms은 적응형 양식 구성 요소에 동적 동작을 추가할 규칙
 
 * 충돌을 방지하려면 상대적 고유 계층 구조로 구성 요소를 참조하십시오. 예, `parentName.fieldName`.
 
-* 복잡하거나 일반적으로 사용되는 규칙을 처리할 때는 응용 양식 간에 지정하고 재사용할 수 있는 별도의 클라이언트 라이브러리에 비즈니스 논리를 작성하는 것을 고려해 보십시오. 클라이언트 라이브러리는 자체 포함된 라이브러리여야 하며 jQuery 및 밑줄.js를 제외한 외부 종속성을 가질 수 없습니다. 클라이언트 라이브러리를 사용하여 제출된 양식 데이터의 [서버측 재유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)를 적용할 수도 있습니다.
+* 복잡하거나 일반적으로 사용되는 규칙을 처리할 때는 응용 양식 간에 지정하고 재사용할 수 있는 별도의 클라이언트 라이브러리에 비즈니스 논리를 작성하는 것이 좋습니다. 클라이언트 라이브러리는 자체 포함된 라이브러리여야 하며 jQuery 및 밑줄.js를 제외한 외부 종속성을 가질 수 없습니다. 클라이언트 라이브러리를 사용하여 제출된 양식 데이터의 [서버측 재유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)를 적용할 수도 있습니다.
 * 적응형 양식은 적응형 양식과 통신하고 작업을 수행하는 데 사용할 수 있는 API 세트를 제공합니다. 주요 API 중 일부는 다음과 같습니다. 자세한 내용은 응용 Forms](https://adobe.com/go/learn_aemforms_documentation_63)에 대한 [JavaScript 라이브러리 API 참조를 참조하십시오.
 
    * `guideBridge.reset()`:양식을 재설정합니다.
@@ -192,10 +193,10 @@ AEM Forms은 적응형 양식 구성 요소에 동적 동작을 추가할 규칙
 사용자 지정 데이터를 처리하려면 적응형 양식의 제출 작업이 필요합니다. 제출 작업은 적응형 양식을 사용하여 제출하는 데이터에 대해 수행된 작업을 결정합니다.
 
 * 적응형 양식에는 즉시 사용할 수 있는 여러 제출 작업이 있습니다. 자세한 내용은 [제출 작업 ](/help/forms/using/configuring-submit-actions.md) 구성을 참조하십시오.
-* 기본 제출 작업이 사용 사례를 충족하지 않는 경우 사용자 지정 제출 작업을 작성할 수 있습니다. 자세한 내용은 적응형 양식[에 대한 사용자 정의 제출 작업 쓰기를 참조하십시오.](/help/forms/using/custom-submit-action-form.md)
+* 기본 제출 작업이 사용 사례를 충족하지 않는 경우 사용자 지정 제출 작업을 작성할 수 있습니다. 자세한 내용은 적응형 양식](/help/forms/using/custom-submit-action-form.md)에 대한 사용자 정의 제출 작업 쓰기를 참조하십시오.[
 * 잘못된 데이터 제출을 방지하기 위해 서버측 유효성 검사를 포함합니다.
 
-적응형 양식에서 Adobe Sign의 다중 서명 경험을 활용할 수 있습니다. 적응형 양식에서 Adobe Sign을 구성할 때는 다음 사항을 고려하십시오. 자세한 내용은 응용 양식[에서 Adobe Sign 사용을 참조하십시오.](/help/forms/using/working-with-adobe-sign.md)
+적응형 양식에서 Adobe Sign의 다중 서명 경험을 활용할 수 있습니다. 적응형 양식에서 Adobe Sign을 구성할 때는 다음 사항을 고려하십시오. 자세한 내용은 응용 양식](/help/forms/using/working-with-adobe-sign.md)에서 Adobe Sign 사용을 참조하십시오.[
 
 * Adobe Sign 지원 적응형 양식은 모든 서명자가 양식에 서명한 후에만 제출됩니다. Forms은 모든 서명자가 양식에 서명할 때까지 서명 대기 중 상태로 표시됩니다.
 * 제출 시 양식 서명 환경을 구성하거나 서명자를 서명 페이지로 리디렉션할 수 있습니다.
@@ -258,7 +259,7 @@ AEM에서는 적응형 양식을 현지화하는 데 사용할 수 있는 번역
 
    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질)(pt-BR), 중국어(zh-CN), 중국어(zh-대만)(zh-TW) 및 한국어(ko-KR) 로캘로 적응형 양식 컨텐츠의 지역화를 지원합니다. 그러나 런타임 시 적응형 양식의 새 로캘에 대한 지원을 추가할 수 있습니다. 자세한 내용은 적응형 양식 현지화를 위한 새 로케일 지원[을 참조하십시오.](/help/forms/using/supporting-new-language-localization.md)
+* AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(브라질)(pt-BR), 중국어(zh-CN), 중국어(zh-대만)(zh-TW) 및 한국어(ko-KR) 로캘로 적응형 양식 컨텐츠의 지역화를 지원합니다. 그러나 런타임 시 적응형 양식의 새 로캘에 대한 지원을 추가할 수 있습니다. 자세한 내용은 적응형 양식 현지화를 위한 새 로케일 지원](/help/forms/using/supporting-new-language-localization.md)을 참조하십시오.[
 
 ## 제작 {#prepare-forms-project-for-production} 양식 프로젝트 준비
 
@@ -289,12 +290,12 @@ AEM 프로젝트를 한 환경에서 다른 환경으로 이동시켜야 하는 
 
 * `/content/forms/af/` 및 `/content/dam/formsanddocuments/*` 경로를 캐시하지 마십시오. 적응형 양식 캐싱 구성에 대한 자세한 내용은 [적응형 양식 캐싱](/help/forms/using/configure-adaptive-forms-cache.md)을 참조하십시오.
 
-* 웹 서버 압축 모듈을 통해 HTML을 활성화합니다. 자세한 내용은 AEM Forms 서버[성능 조정을 참조하십시오.](/help/forms/using/performance-tuning-aem-forms.md)
+* 웹 서버 압축 모듈을 통해 HTML을 활성화합니다. 자세한 내용은 AEM Forms 서버](/help/forms/using/performance-tuning-aem-forms.md)성능 조정을 참조하십시오.[
 * 큰 양식의 요청당 호출을 늘립니다. [크고 복잡한 양식의 성능 최적화](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms)를 참조하십시오.
 * 오류 처리기](https://helpx.adobe.com/experience-manager/6-2/sites-developing/customizing-errorhandler-pages.html)에 의해 표시되는 [사용자 지정 오류 페이지를 만듭니다.
 * AEM Forms 서버 보호.
 
-   * 프로덕션 서버에 배포된 샘플 사용자와 샘플 사용자가 없도록 하려면 `nosamplecontent` 실행 모드를 사용합니다. 프로덕션 준비 모드에서 AEM 실행[을 참조하십시오.](/help/sites-administering/production-ready.md)
+   * 프로덕션 서버에 배포된 샘플 사용자와 샘플 사용자가 없도록 하려면 `nosamplecontent` 실행 모드를 사용합니다. 프로덕션 준비 모드에서 AEM 실행](/help/sites-administering/production-ready.md)을 참조하십시오.[
 
 * 더미 크기를 최소 8GB로 유지합니다. 다른 설정에 대해서는 [AEM Forms 서버](/help/forms/using/performance-tuning-aem-forms.md)의 성능 조정을 참조하십시오.
 * 서비스 수준 작업을 실행하려면 관리자 세션 대신 서비스 사용자 세션을 사용하십시오. 자세한 내용은 [서비스 인증](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)을 참조하십시오.
@@ -305,9 +306,9 @@ AEM 프로젝트를 한 환경에서 다른 환경으로 이동시켜야 하는 
 
 프로덕션 환경에서는 제출된 양식 데이터를 AEM 저장소에 저장하지 않는 것이 좋습니다. Forms Portal 스토어, 콘텐츠 저장 및 PDF 제출 작업 저장의 기본 구현은 양식 데이터를 AEM 저장소에 저장합니다. 이러한 제출 조치는 단지 시연을 위한 것이다. 또한 저장 및 다시 시작 및 자동 저장 기능은 기본적으로 포털 저장소를 사용합니다. 따라서 다음 권장 사항을 고려하십시오.
 
-* **초안 데이터 저장**:적응형 양식의 초안 기능을 사용하는 경우 SPI(사용자 지정 서비스 제공 인터페이스)를 구현하여 초안 데이터를 데이터베이스와 같은 보다 안전한 스토리지에 저장해야 합니다. 자세한 내용은 초안 및 제출 구성 요소를 데이터베이스[에 통합하는 샘플을 참조하십시오.](/help/forms/using/integrate-draft-submission-database.md)
+* **초안 데이터 저장**:적응형 양식의 초안 기능을 사용하는 경우 SPI(사용자 지정 서비스 제공 인터페이스)를 구현하여 초안 데이터를 데이터베이스와 같은 보다 안전한 스토리지에 저장해야 합니다. 자세한 내용은 초안 및 제출 구성 요소를 데이터베이스](/help/forms/using/integrate-draft-submission-database.md)에 통합하는 샘플을 참조하십시오.[
 
-* **제출 데이터 저장**:Form Portal Submit Store를 사용하는 경우 사용자 지정 SPI를 구현하여 제출 데이터를 데이터베이스에 저장해야 합니다. 샘플 통합을 보려면 초안 및 제출 구성 요소를 데이터베이스[와 통합하는 샘플을 참조하십시오.](/help/forms/using/integrate-draft-submission-database.md)
+* **제출 데이터 저장**:Form Portal Submit Store를 사용하는 경우 사용자 지정 SPI를 구현하여 제출 데이터를 데이터베이스에 저장해야 합니다. 샘플 통합을 보려면 초안 및 제출 구성 요소를 데이터베이스](/help/forms/using/integrate-draft-submission-database.md)와 통합하는 샘플을 참조하십시오.[
 
    양식 데이터와 첨부 파일을 보안 스토리지에 저장하는 사용자 정의 제출 작업을 작성할 수도 있습니다. 자세한 내용은 [적응형 양식에 대한 사용자 정의 제출 작업 작성](/help/forms/using/custom-submit-action-form.md)을 참조하십시오.
 
