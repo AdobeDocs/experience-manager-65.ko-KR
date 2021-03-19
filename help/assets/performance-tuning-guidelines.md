@@ -3,10 +3,11 @@ title: 성능 조정 [!DNL Assets].
 description: 병목 현상을 제거하고 성능을 최적화하기 위해  [!DNL Experience Manager] 구성, 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 변경 사항 제안 및 지침 [!DNL Experience Manager Assets]
 contentOwner: AG
 mini-toc-levels: 1
+role: 건축가, 관리자
 translation-type: tm+mt
-source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '2741'
+source-wordcount: '2743'
 ht-degree: 0%
 
 ---
