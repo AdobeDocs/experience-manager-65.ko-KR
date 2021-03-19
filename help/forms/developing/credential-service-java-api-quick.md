@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
+role: 개발자
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -37,7 +38,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-importing-credentials-using-the-java-api}을(를) 사용하여 자격 증명 가져오기
 
-다음 코드 예제에서는 *cred.p12* 파일을 기반으로 자격 증명을 가져옵니다. 자격 증명을 가져오는 데 사용되는 별칭 값은 `Secure`입니다. (Trust Manager API[를 사용하여 자격 증명 가져오기를 참조하십시오.)](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)
+다음 코드 예제에서는 *cred.p12* 파일을 기반으로 자격 증명을 가져옵니다. 자격 증명을 가져오는 데 사용되는 별칭 값은 `Secure`입니다. (Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)를 사용하여 자격 증명 가져오기를 참조하십시오.)[
 
 ```java
  /*
@@ -138,7 +139,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}을(를) 사용하여 자격 증명 삭제
 
-다음 코드 예제에서는 별칭 값 *secure*&#x200B;를 기반으로 자격 증명을 삭제합니다. (신뢰 관리자 API[를 사용하여 자격 증명 삭제를 참조하십시오.)](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)
+다음 코드 예제에서는 별칭 값 *secure*&#x200B;를 기반으로 자격 증명을 삭제합니다. (신뢰 관리자 API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)를 사용하여 자격 증명 삭제를 참조하십시오.)[
 
 ```java
  /*
