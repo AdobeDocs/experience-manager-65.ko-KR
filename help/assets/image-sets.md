@@ -8,10 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
+feature: 이미지 세트,자산 관리
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -132,7 +134,7 @@ ht-degree: 0%
 
    에셋이 포함된 폴더 내에서 세트를 만들 수도 있습니다.
 
-   ![6_5_imagesets-createpldown](assets/6_5_imagesets-createpulldown.png)
+   ![6_5_imagesets-createplldown](assets/6_5_imagesets-createpulldown.png)
 
 1. 이미지 세트 편집기 페이지의 **[!UICONTROL 제목]** 필드에 이미지 세트 이름을 입력합니다. 이름이 이미지 세트의 배너에 나타납니다. 필요한 경우 설명을 입력합니다.
 
