@@ -8,10 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
+feature: 대화형 비디오
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '6056'
+source-wordcount: '6061'
 ht-degree: 0%
 
 ---
@@ -82,8 +84,8 @@ ht-degree: 0%
 
 1. **비디오에**  인터랙티브한 요소 추가 - 비디오에 하나 이상의 시간 세그먼트를 추가합니다. 그런 다음 해당 시간 세그먼트 내에 이미지 축소판을 연결합니다. 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 각 이미지 축소판을 할당합니다.
 (인터랙티브 컨텐츠에 상대 URL, 특히 AEM Sites 페이지로 연결되는 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.)
-대화형 비디오 에셋을 게시하여 마칩니다. 게시를 사용하면 나중에 복사하고 웹 사이트 랜딩 페이지에 적용할 포함 코드나 URL이 만들어집니다. 비디오[대화형 작업 추가를 참조하십시오.
-](#adding-interactivity-to-your-video)
+대화형 비디오 에셋을 게시하여 마칩니다. 게시를 사용하면 나중에 복사하고 웹 사이트 랜딩 페이지에 적용할 포함 코드나 URL이 만들어집니다. 비디오](#adding-interactivity-to-your-video)대화형 작업 추가를 참조하십시오.
+[
 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 1. **AEM Sites, AEM eCommerce 또는**
@@ -234,7 +236,7 @@ Quickview URL 및 결과 축소판 변수의 다음 예를 생각해 보십시�
 
 자신의 대화형 비디오 뷰어 사전 설정을 만들려면 [새 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)를 참조하십시오.
 
-## 비디오 및 관련 축소판 에셋 {#uploading-a-video-and-its-associated-thumbnail-assets} 업로드
+## 비디오와 관련 썸네일 자산 업그레이드 {#uploading-a-video-and-its-associated-thumbnail-assets}
 
 비디오 및 축소판 에셋을 이미 업로드한 경우 [비디오에 상호 작용 추가](#adding-interactivity-to-your-video)로 진행합니다.
 
