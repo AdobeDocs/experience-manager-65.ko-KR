@@ -11,10 +11,11 @@ content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 807a81045fca19ab83b9d7872684a5f8a9ed70f1
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1679'
 ht-degree: 2%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 2%
 
 # 커뮤니티 그룹 콘솔 {#community-groups-console}
 
-그룹 콘솔은 커뮤니티 사이트의 [템플릿 구조](/help/communities/sites-console.md#step1)에 [그룹 함수](/help/communities/functions.md#groups-function)이(가) 포함된 경우 커뮤니티 그룹을 만들기 위한 액세스 권한을 제공합니다.
+그룹 콘솔은 커뮤니티 사이트의 [템플릿 구조](/help/communities/sites-console.md#step1)에 [그룹 함수](/help/communities/functions.md#groups-function)가 포함된 경우 커뮤니티 그룹을 만들기 위한 액세스 권한을 제공합니다.
 
 * AEM Communities은 다른 그룹 내의 그룹 중첩을 지원합니다. 그룹 중첩은 새 그룹](/help/communities/tools-groups.md)의 [구조에 그룹 함수가 들어 있는 경우에 가능합니다.
 * 작성 환경에만 사이트 만들기 마법사와 유사한 그룹 만들기 마법사가 있습니다.
