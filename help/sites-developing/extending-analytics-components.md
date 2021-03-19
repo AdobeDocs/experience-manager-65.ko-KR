@@ -1,7 +1,7 @@
 ---
 title: 구성 요소에 Adobe Analytics 추적 추가
 seo-title: 구성 요소에 Adobe Analytics 추적 추가
-description: 'null'
+description: 구성 요소에 Adobe Analytics 추적 추가
 seo-description: 'null'
 uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1268'
 ht-degree: 2%
 
 ---
@@ -290,7 +290,7 @@ topnav 구성 요소를 구성하고 JSP 파일을 편집하여 추적 이벤트
 
 >[!NOTE]
 >
->ContextHub에서 데이터를 추적하는 것이 바람직합니다. 이 정보를 얻기 위해 javascript를 사용하는 방법에 대한 자세한 내용은 ContextHub[에서 값 액세스를 참조하십시오.](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub)
+>ContextHub에서 데이터를 추적하는 것이 바람직합니다. 이 정보를 얻기 위해 javascript를 사용하는 방법에 대한 자세한 내용은 ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub)에서 값 액세스를 참조하십시오.[
 
 #### 사이드 킥에 추적 구성 요소 추가 {#adding-the-tracking-component-to-sidekick}
 
@@ -441,6 +441,6 @@ eCommerce 모듈은 s.products 변수 데이터를 생성하는 여러 구성 �
 
 #### 추적 호출 크기 제한 {#limiting-the-size-of-tracking-calls}
 
-일반적으로 웹 브라우저는 GET 요청의 크기를 제한합니다. CQ 제품 및 SKU 값은 저장소 경로이므로 여러 값을 포함하는 제품 배열은 요청 크기 제한을 초과할 수 있습니다. 따라서 구성 요소는 각 `product` 배열의 항목 수를 제한해야 합니다. `CQ_Analytics.record function` 추적해야 하는 항목 수가 제한을 초과할 수 있는 경우 여러 함수를 만듭니다.
+일반적으로 웹 브라우저는 GET 요청의 크기를 제한합니다. CQ 제품 및 SKU 값은 저장소 경로이므로 여러 값을 포함하는 제품 배열은 요청 크기 제한을 초과할 수 있습니다. 따라서 구성 요소는 각 `CQ_Analytics.record function` 배열의 항목 수를 제한해야 합니다. `product` 추적해야 하는 항목 수가 제한을 초과할 수 있는 경우 여러 함수를 만듭니다.
 
 예를 들어 eCommerce 제출 명령 구성 요소는 호출에서 4개 항목의 수를 제한합니다. `product` 장바구니에 4개 이상의 제품이 포함되어 있으면 여러 개의 `CQ_Analytics.record` 함수가 생성됩니다.
