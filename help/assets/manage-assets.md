@@ -3,10 +3,11 @@ title: 디지털 에셋 관리
 description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, 주석 및 버전 지정과 같은 에셋 관리 작업에 대해 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
+role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '9590'
+source-wordcount: '9592'
 ht-degree: 0%
 
 ---
