@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
+feature: 구성
 translation-type: tm+mt
-source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '5916'
+source-wordcount: '5917'
 ht-degree: 0%
 
 ---
@@ -74,7 +75,7 @@ AEM 6.3에서는 온라인 개정 정리라는 이 기능의 온라인 버전이
 1. 첫 번째 온라인 개정 정리 실행 후 저장소 크기가 두 배로 증가합니다. 이는 디스크에 저장된 2세대 버전이 있기 때문입니다.
 1. 온라인 개정 정리 프로세스가 이전 세대를 재해석하므로 후속 실행 중에 저장소는 새로운 세대를 생성하는 동안 일시적으로 확장되고 첫 번째 실행 이후에 있던 크기로 안정화됩니다.
 
-또한 커밋의 유형 및 수에 따라 각 생성은 이전 생성과 비교하여 크기가 달라질 수 있으므로 최종 크기는 한 실행과 다른 실행마다 다를 수 있습니다.
+또한 커밋의 유형 및 수에 따라 각 생성은 이전 세대 버전과 비교할 때 크기가 달라질 수 있으므로 최종 크기는 한 실행과 다른 실행마다 다를 수 있습니다.
 
 이러한 사실로 인해 디스크를 처음에 예상 저장소 크기보다 최소 2 또는 3배 더 크게 크기를 지정하는 것이 좋습니다.
 
@@ -91,7 +92,7 @@ AEM 6.3에서는 온라인 개정 정리라는 이 기능의 온라인 버전이
 
 아래 두 차트에서 AEM 6.3과 비교하여 평균 실행 시간 단축 및 AEM 6.5의 디스크 평균 풋프린트 수를 보여주는 내부 실험 결과를 소개합니다.
 
-![onrc-duration-6_4vs63 ](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
+![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
 ### 전체 및 세부 구성 요소 구성 방법 {#how-to-configure-full-and-tail-compaction}
 
@@ -514,7 +515,7 @@ TarMK GC: no base state available, running full compaction instead
 |  | TarMK GC #2:중단된 항목:${REASON}. 구성 요소를 건너뛰는 중입니다. | 예측 단계가 너무 일찍 종료되었습니다. 추정 단계를 방해할 수 있는 이벤트의 일부 예:호스트 시스템에 메모리 또는 디스크 공간이 부족합니다. | 주어진 이유에 따라 다릅니다. |
 | 압축 | TarMK GC #2:압축 일시 중지됨 | 구성 단계에서 컴포지션 단계가 일시 중지된 경우에는 예측 단계나 비교 단계가 실행되지 않습니다. | 온라인 개정 정리를 활성화합니다. |
 |  | TarMK GC #2:취소됨:${REASON}. | 압축 단계가 너무 빨리 종료되었습니다. 구성 단계를 방해할 수 있는 이벤트의 일부 예:호스트 시스템에 메모리 또는 디스크 공간이 부족합니다. 또한 시스템을 종료하거나 작업 대시보드에 있는 유지 관리 창과 같은 관리 인터페이스를 통해 명시적으로 시스템을 취소하여 컴포션을 취소할 수도 있습니다. | 주어진 이유에 따라 다릅니다. |
-|  | TarMK GC #2:5회 후 32.902분(1974140ms)으로 압축하지 못했습니다. | 이 메시지는 복구할 수 없는 오류가 있다는 것을 의미하지는 않지만 특정 횟수의 시도 후에 컴포지션이 종료되었음을 의미합니다. 또한 다음 단락[을 읽으십시오.](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes) | 다음 [Oak 설명서](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes) 및 [온라인 개정 정리 실행](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) 섹션을 참조하십시오. |
+|  | TarMK GC #2:5회 후 32.902분(1974140ms)으로 압축하지 못했습니다. | 이 메시지는 복구할 수 없는 오류가 있다는 것을 의미하지는 않지만 특정 횟수의 시도 후에 컴포지션이 종료되었음을 의미합니다. 또한 다음 단락](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes)을 읽으십시오.[ | 다음 [Oak 설명서](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes) 및 [온라인 개정 정리 실행](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) 섹션을 참조하십시오. |
 | 정리 | TarMK GC #2:정리 중단됨 | 저장소를 종료하여 정리가 취소되었습니다. 일관성에 영향을 주지 않습니다. 또한 디스크 공간은 전체 크기로 복구되지 않을 수 있습니다. 다음 개정 정리 주기 동안 다시 매립됩니다. | 저장소가 종료된 이유를 확인하고 유지 관리 기간 동안 저장소를 종료하지 않도록 합니다. |
 
 ## 오프라인 개정 정리 실행 방법 {#how-to-run-offline-revision-cleanup}
@@ -614,7 +615,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
    <td><strong>개정과 페이지 버전의 차이는 무엇입니까?</strong></td>
    <td>
     <ul>
-     <li><strong>Oak 개정: </strong> Oak는 노드 및 속성으로 구성된 큰 트리 계층 구조의 모든 컨텐츠를 구성합니다. 이 컨텐츠 트리의 각 스냅샷 또는 개정은 변경할 수 없으며 트리 변경 사항은 새로운 수정 시퀀스로 표시됩니다. 일반적으로 각 컨텐츠 수정은 새 개정을 트리거합니다. <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank"> 링크</a>를 참조하십시오.</li>
+     <li><strong>Oak 개정: </strong> Oak는 노드 및 속성으로 구성된 큰 트리 계층 구조의 모든 컨텐츠를 구성합니다. 이 컨텐츠 트리의 각 스냅샷 또는 개정은 변경할 수 없으며 트리 변경 사항은 새로운 수정 사항의 시퀀스로 표시됩니다. 일반적으로 각 컨텐츠 수정은 새 개정을 트리거합니다. <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank"> 링크</a>를 참조하십시오.</li>
      <li><strong>페이지 버전:</strong> 버전 매기기를 통해 특정 시점의 페이지 "스냅샷"을 만들 수 있습니다. 일반적으로 페이지가 활성화되면 새 버전이 만들어집니다. 자세한 내용은 <a href="/help/sites-authoring/working-with-page-versions.md" target="_blank">페이지 버전 작업</a>을 참조하십시오.</li>
     </ul> </td>
   </tr>
