@@ -7,10 +7,11 @@ uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
 topic-tags: introduction
 discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
+feature: 적응형 양식
 translation-type: tm+mt
-source-git-commit: 43c04a8b2f1e2e7f2067cec055d8737dfc7b3e84
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 ![create-adaptive-form-workflow](assets/create-daptive-form-workflow.png)
 
-이 여정은 사용 사례를 익히는 것으로 시작됩니다.
+여정은 사용 사례를 배움으로써 시작됩니다.
 
 웹 사이트에서는 다양한 고객을 위한 다양한 제품을 제공합니다. 고객은 포털을 검색하고 제품을 선택하고 주문할 수 있습니다. 모든 고객은 계정을 만들고 배송 및 청구 주소를 제공합니다. 기존 고객인 Sara Rose는 웹사이트에 그녀의 배송 주소를 추가하기를 기대하고 있다. 웹 사이트에서는 배송 주소를 추가하고 업데이트하는 온라인 양식을 제공합니다.
 
