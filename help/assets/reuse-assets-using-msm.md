@@ -3,10 +3,11 @@ title: MSM을 사용하여 자산 재사용
 description: 상위 자산에서 파생되고 상위 자산에 연결된 여러 페이지/폴더에 있는 자산을 사용합니다. 자산은 기본 복사본과 동기화되고 몇 번의 클릭만으로 상위 자산으로부터 업데이트를 받습니다.
 contentOwner: AG
 mini-toc-levels: 1
+role: 비즈니스 전문가, 관리자, 건축가
 translation-type: tm+mt
-source-git-commit: 5c9907bf475796c5bbb61d6fcaf43730f9e79777
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3370'
 ht-degree: 0%
 
 ---
