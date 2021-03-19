@@ -2,10 +2,11 @@
 title: 일괄적으로 에셋 마이그레이션
 description: 자산을  [!DNL Adobe Experience Manager]으로 가져오고, 메타데이터를 적용하고, 변환을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 contentOwner: AG
+role: 건축가, 관리자
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1801'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ ht-degree: 0%
 
 #### HTTP {#pushing-through-http}를 통해 보내기
 
-Adobe Managed Services 팀은 Logton이라는 도구를 사용하여 고객 환경에 데이터를 로드합니다. Logton은 한 디렉토리의 모든 에셋을 [!DNL Experience Manager] 배포의 다른 디렉토리로 로드하는 작은 Java 애플리케이션입니다. 풀톤 대신 Perl 스크립트와 같은 도구를 사용하여 에셋을 저장소에 게시할 수도 있습니다.
+Adobe Managed Services 팀은 Logton이라는 도구를 사용하여 고객 환경에 데이터를 로드합니다. Logton은 하나의 디렉토리에서 [!DNL Experience Manager] 배포의 다른 디렉토리로 모든 에셋을 로드하는 작은 Java 애플리케이션입니다. 풀톤 대신 Perl 스크립트와 같은 도구를 사용하여 에셋을 저장소에 게시할 수도 있습니다.
 
 https를 통해 푸시하는 접근 방식을 사용하는 두 가지 주요 단점이 있습니다.
 
@@ -92,7 +93,7 @@ https를 통해 푸시하는 접근 방식을 사용하는 두 가지 주요 단
 
 이 문제를 해결하려면 [빠른 작업 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html)를 사용하여 자산 복제를 관리할 수 있습니다. 이는 서버가 과부하가 되지 않도록 작업 로드를 제한하면서 Sling 대기열을 사용하지 않고 오버헤드를 낮추면서 작동합니다. FAM을 사용하여 복제를 관리하는 예는 해당 기능의 설명서 페이지에 나와 있습니다.
 
-게시 팜에 에셋을 가져오기 위한 다른 옵션에는 Jackrabbit의 일부로 제공되는 [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) 또는 [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)을 사용하는 옵션이 있습니다. 다른 옵션은 [!DNL Experience Manager]Grabbit[라는 인프라에 대해 오픈 소스 도구를 사용하는 것입니다. 이 도구는 vlt보다 더 빠른 성능을 발휘한다고 주장합니다.](https://github.com/TWCable/grabbit)
+게시 팜에 에셋을 가져오기 위한 다른 옵션에는 Jackrabbit의 일부로 제공되는 [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) 또는 [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)을 사용하는 옵션이 있습니다. 다른 옵션은 [Grabbit](https://github.com/TWCable/grabbit)라는 인프라에 대해 오픈 소스 도구를 사용하는 것입니다. 이 도구는 vlt보다 더 빠른 성능을 발휘한다고 주장합니다.[!DNL Experience Manager]
 
 이러한 접근 방식의 경우, 주의해야 할 사항은 작성자 인스턴스의 에셋이 활성화된 것으로 표시되지 않는다는 것입니다. 이러한 자산에 대한 플래그를 올바른 활성화 상태로 처리하려면 자산을 활성화됨으로 표시하는 스크립트도 실행해야 합니다.
 
