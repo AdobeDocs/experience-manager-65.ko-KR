@@ -1,6 +1,6 @@
 ---
-title: AEM 6.5 Forms으로 업그레이드
-seo-title: AEM 6.5 Forms으로 업그레이드
+title: AEM 6.5 Forms로 업그레이드
+seo-title: AEM 6.5 Forms로 업그레이드
 description: AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다.
 seo-description: AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
+role: 관리자
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 0%
+source-wordcount: '277'
+ht-degree: 3%
 
 ---
 
