@@ -1,7 +1,7 @@
 ---
 title: Eclipse용 AEM 개발자 도구
 seo-title: Eclipse용 AEM 개발자 도구
-description: 'null'
+description: Eclipse용 AEM 개발자 도구
 seo-description: 'null'
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 translation-type: tm+mt
-source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '814'
 ht-degree: 4%
 
 ---
@@ -73,7 +73,7 @@ AEM 개발자 도구를 사용하기 전에 다음을 수행해야 합니다.
 
 >[!NOTE]
 >
->AEM[에서 다운로드할 때 Eclipse에서 번들을 사용하여 작업하는 방법을 참조하십시오.](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)
+>AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)에서 다운로드할 때 Eclipse에서 번들을 사용하여 작업하는 방법을 참조하십시오.[
 
 ## AEM 원근 {#the-aem-perspective}
 
