@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 8에 대한 릴
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dfaa25ea72e50b60b8a40883ffb0241c131cc846
+source-git-commit: fb1423b7ae110b8a3cf8e0e389394e9266157a9f
 workflow-type: tm+mt
-source-wordcount: '3352'
-ht-degree: 18%
+source-wordcount: '3360'
+ht-degree: 17%
 
 ---
 
@@ -349,9 +349,10 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 * Experience Manager 6.5.x.x를 설치하는 동안 다음 오류 및 경고 메시지가 표시될 수 있습니다.
    * &quot;Adobe Target 통합이 Target Standard API(IMS 인증)를 사용하여 Experience Manager에 구성된 경우 경험 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. 경험 조각/소스 Adobe Experience Manager 유형 대신 Target은 HTML/소스 Adobe Target Classic 유형으로 여러 가지 오퍼를 작성합니다.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: granite/operations/maintenance에 유지 관리 창이 없습니다.
-   * SUM, MAX 및 MIN과 같은 집계 함수를 사용하는 경우 적용형 양식 서버측 유효성 검사가 실패합니다. CQ-4274424
+   * SUM, MAX 및 MIN과 같은 집계 함수를 사용하는 경우 적응형 양식 서버측 유효성 검사가 실패합니다(CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - granite/operations/maintenance에 유지 관리 창이 없습니다.
    * 쇼퍼블 배너 뷰어를 통해 자산을 미리 볼 때 Dynamic Media 대화형 이미지의 핫스팟이 표시되지 않습니다.
+   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` :레지스트리 변경 완료 대기 시간 제한.
 
 ## OSGi 번들 및 콘텐츠 패키지가 설치됨 {#osgi-bundles-and-content-packages-included}
 
