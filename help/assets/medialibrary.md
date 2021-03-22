@@ -1,12 +1,12 @@
 ---
-title: 디지털 에셋 관리를 위한 미디어 라이브러리
+title: 미디어 라이브러리를 사용하여 기본적인 디지털 에셋 관리
 description: '[!DNL Experience Manager Assets] 에셋 관리를 위한 미디어 라이브러리'
 contentOwner: AG
 role: 건축가, 리더
 translation-type: tm+mt
-source-git-commit: 10e5ca2fb6e108a7201e6114b61b3d0266ff80d2
+source-git-commit: 31dc984d9cd93f7024229fd6773878eebfdadc57
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,6 @@ Experience Manager 자산은 엔터프라이즈급 DAM 기능을 제공합니다
 * [!DNL Adobe Experience Manager Screens]을(를) 사용하여 만든 디지털 화면 경험입니다.
 * [!DNL Assets] 헤드리스 작업을 위한 HTTP REST API.
 
-
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Basic metadata properties
@@ -65,7 +64,7 @@ Experience Manager 자산은 엔터프라이즈급 DAM 기능을 제공합니다
 * Comments and annotation
 -->
 
-미디어 라이브러리를 사용하여 다음과 같은 특정 작업을 수행할 수 있습니다.
+미디어 라이브러리 기능을 사용하려면 기본 [!DNL Experience Manager] 사용자 인터페이스를 사용할 수 있습니다. 미디어 라이브러리는 [!DNL Experience Manager Sites] 설치의 일부이며 별도의 인터페이스나 추가 기능이 필요하지 않습니다. 미디어 라이브러리 사용자는 기존 인터페이스를 사용하여 다음 작업을 수행할 수 있습니다.
 
 * 폴더를 만들어 자산을 구성합니다.
 * 자산을 업로드합니다.
