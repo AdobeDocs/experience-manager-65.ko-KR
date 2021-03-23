@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 15%
@@ -50,7 +50,7 @@ AEM은 개발을 용이하게 하는 다른 도구와 함께 제공됩니다.
 * [IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법](/help/sites-developing/ht-intellij.md)
 * [VLT 도구 사용 방법](/help/sites-developing/ht-vlttool.md)
 * [프록시 서버 도구 사용 방법](/help/sites-developing/ht-proxy-server.md)
-* [대화 상자 변환 도구](/help/sites-developing/dialog-conversion.md)
+* [AEM 현대화 도구](/help/sites-developing/modernization-tools.md)
 * [AEM Repo Tool](/help/sites-developing/aem-repo-tool.md)
 
 새 프로젝트를 쉽게 만들 수 있는 도구:
