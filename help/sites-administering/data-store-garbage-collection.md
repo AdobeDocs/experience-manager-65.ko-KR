@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 기존 WCM 자산이 제거되면 기본 데이터 저장소 레코드에 대한 참조가 노드 계층에서 제거될 수 있지만 데이터 저장소 레코드 자체는 유지됩니다. 이렇게 참조되지 않은 데이터 저장소 레코드는 보존할 필요가 없는 &quot;가비지&quot;가 됩니다. 많은 가비지 에셋이 존재하는 경우 공간을 유지하고 백업 및 파일 시스템 유지 관리 성능을 최적화하기 위해 이러한 에셋을 제거하는 것이 좋습니다.
 
-대부분의 경우 WCM 응용 프로그램은 정보를 수집하는 경향이 있지만 정보를 거의 자주 삭제하지 않습니다. 새 이미지가 추가되더라도 이전 버전을 대체하더라도 버전 제어 시스템은 이전 이미지를 계속 유지하고 필요한 경우 이 이미지를 다시 되돌릴 수 있습니다. 따라서 시스템에 추가한다고 생각하는 대부분의 컨텐츠는 영구적으로 저장됩니다. 그래서 우리가 정리하고자 하는 보관소의 &quot;쓰레기&quot;의 일반적인 원천은 무엇인가?
+대부분의 경우 WCM 애플리케이션은 정보를 수집하는 경향이 있지만 정보를 거의 자주 삭제하지 않습니다. 새 이미지가 추가되더라도 이전 버전을 대체하더라도 버전 제어 시스템은 이전 이미지를 계속 유지하고 필요한 경우 이 이미지를 다시 되돌리도록 지원합니다. 따라서 시스템에 추가한다고 생각하는 대부분의 컨텐츠는 영구적으로 저장됩니다. 그래서 우리가 정리하고자 하는 보관소의 &quot;쓰레기&quot;의 일반적인 원천은 무엇인가?
 
 AEM은 다음과 같이 여러 내부 및 정리 작업을 위한 저장소로 저장소를 사용합니다.
 
@@ -172,7 +172,7 @@ TarMK가 노드 스토어와 데이터 스토어 둘 다로 사용되고 있는 
 >
 >다음 예제에서 `curl` 명령은 인스턴스에 대해 다양한 매개 변수를 구성해야 할 수 있습니다.예를 들어, 실제 데이터 저장소 가비지 수집의 호스트 이름( `localhost`), 포트( `4502`), 관리 암호( `xyz`) 및 다양한 매개 변수를 사용할 수 있습니다.
 
-다음은 명령줄을 통해 데이터 저장소 가비지 수집을 호출하는 말림 명령의 예입니다.
+다음은 명령줄을 통해 데이터 저장소 가비지 수집을 호출하는 curl 명령의 예입니다.
 
 ```shell
 curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean
