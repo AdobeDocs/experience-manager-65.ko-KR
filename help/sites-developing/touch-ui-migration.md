@@ -11,7 +11,7 @@ topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 13%
@@ -119,7 +119,7 @@ ht-degree: 13%
 
 * [AEM 구성 요소](/help/sites-developing/developing-components.md)  개발(터치 지원 UI 사용)
 * [클래식 구성 요소에서 마이그레이션](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [대화 상자 전환](/help/sites-developing/dialog-conversion.md)  도구 - 클래식 UI 구성 요소의 대화 상자를 터치 UI로 변환하는 데 도움이 됩니다.
+* [AEM 현대화 도구](/help/sites-developing/modernization-tools.md)  - 클래식 UI 구성 요소의 대화 상자를 터치 UI로 변환하는 데 도움이 됩니다.
 
    * 터치 UI에 &quot;터치 UI 래퍼&quot; 내에서 클래식 UI 대화 상자를 여는 호환성 레이어가 있지만 기능이 제한되어 있으므로 장기적으로 사용하지 않는 것이 좋습니다.
 
