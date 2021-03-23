@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 6.5 릴리스에서 사용되지 않는 기능 및 제거된 기능.
 description: Adobe Experience Manager 6.5의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 72%
@@ -76,4 +76,4 @@ AEM 기능 제거 또는 교체를 알릴 때에는 다음 규칙이 적용됩�
 
 | 영역 | 기능 | 공지 |
 |--- |--- |--- |
-| Foundation | UI 프레임워크 | Adobe는 2019년에 Coral UI 2 구성 요소를 더 이상 사용하지 않을 계획입니다. Coral UI 3이 AEM 6.2에서 도입되었으며, AEM 6.5는 Coral 3을 기반으로 합니다. Coral 2를 사용하여 사용자 지정 UI를 구축하는 고객 및 파트너는 Coral 3으로 리팩토링할 것을 권장합니다. Adobe는 Coral 2 대화 상자를 Coral 3으로 변환하는 도구를 제공하고 있습니다. - [자세히 보기](/help/sites-developing/dialog-conversion.md) |
+| Foundation | UI 프레임워크 | Adobe는 2019년에 Coral UI 2 구성 요소를 더 이상 사용하지 않을 계획입니다. Coral UI 3이 AEM 6.2에서 도입되었으며, AEM 6.5는 Coral 3을 기반으로 합니다. Coral 2를 사용하여 사용자 지정 UI를 구축하는 고객 및 파트너는 Coral 3으로 리팩토링할 것을 권장합니다. Adobe는 Coral 2 대화 상자를 Coral 3으로 변환하는 도구를 제공하고 있습니다. - [자세히 보기](/help/sites-developing/modernization-tools.md) |
