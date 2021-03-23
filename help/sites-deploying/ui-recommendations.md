@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Adobe은 고객이 2018/19에 새 UI로 전환할 것을 권장합니다. 이 �
      <li>클래식 UI 페이지 편집기를 열려면 "페이지 편집" 동작을 구성합니다. <a href="#selecting-your-ui">UI 선택</a>을 참조하십시오.</li>
     </ol> <p>그런 다음 두 번째 단계에서:</p>
     <ol>
-     <li>구성 요소 대화 상자를 업데이트하여 Coral 3 대화 상자 형식을 사용합니다. Adobe에서는 <a href="/help/sites-developing/dialog-conversion.md">대화 상자 전환 도구</a>를 사용하여 구성 요소를 업데이트하는 것이 좋습니다.</li>
+     <li>구성 요소 대화 상자를 업데이트하여 Coral 3 대화 상자 형식을 사용합니다. Adobe은 <a href="/help/sites-developing/modernization-tools.md">AEM 현대화 도구</a>를 사용하여 구성 요소를 업데이트하는 것이 좋습니다.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -90,7 +90,7 @@ Adobe은 고객이 2018/19에 새 UI로 전환할 것을 권장합니다. 이 �
      <li>클래식 UI 페이지 편집기를 열려면 "페이지 편집" 동작을 구성합니다. <a href="#selecting-your-ui">UI 선택</a>을 참조하십시오.</li>
     </ol> <p>그런 다음 두 번째 단계에서:</p>
     <ol>
-     <li>구성 요소 대화 상자를 업데이트하여 Coral 3 대화 상자 형식을 사용합니다. Adobe에서는 <a href="/help/sites-developing/dialog-conversion.md">대화 상자 전환 도구</a>를 사용하여 구성 요소를 업데이트하는 것이 좋습니다.</li>
+     <li>구성 요소 대화 상자를 업데이트하여 Coral 3 대화 상자 형식을 사용합니다. Adobe은 <a href="/help/sites-developing/modernization-tools.md">AEM 현대화 도구</a>를 사용하여 구성 요소를 업데이트하는 것이 좋습니다.</li>
      <li>ContextHub(ClientContext 대체)를 구성하고 ContextHub를 사용하도록 페이지 템플릿을 업데이트합니다. ContextHub에는 사용자 정의 ClientContext 저장소를 로드할 수 있는 호환성 모드가 있습니다.</li>
     </ol> </td>
   </tr>
@@ -124,7 +124,7 @@ AEM 6.5에서 터치 지원 UI에 대한 개선 사항에 대한 자세한 내�
 자세한 개발 정보:
 
 * [터치 지원 UI 아키텍처](/help/sites-developing/touch-ui-concepts.md).
-* [대화 상자 전환 도구](/help/sites-developing/dialog-conversion.md)를 사용하여 구성 요소 편집 대화 상자를 클래식 UI의 터치 지원 UI로 변환합니다.
+* [AEM 현대화 도구](/help/sites-developing/modernization-tools.md)를 사용하여 구성 요소 편집 대화 상자를 클래식 UI의 터치 지원 UI로 변환합니다.
 
 * [터치 지원 UI](/help/sites-developing/touch-ui-structure.md) 구조.
 
