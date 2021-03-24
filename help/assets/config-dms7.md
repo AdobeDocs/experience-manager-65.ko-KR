@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: ef975961ddcd6910b5fba2dea7e9302921f45055
 workflow-type: tm+mt
-source-wordcount: '6141'
+source-wordcount: '6154'
 ht-degree: 1%
 
 ---
@@ -499,7 +499,11 @@ Dynamic Media - Scene7 모드가 원활하게 실행되도록 유지하려면 �
 
 #### 다양한 파일 형식을 처리하기 위해 사전 정의된 작업 매개 변수 업데이트
 
-파일을 업로드할 때 작업 매개 변수를 조정하여 보다 신속하게 처리할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하지는 않으려는 경우 레이어 추출을 false(off)로 설정할 수 있습니다. 이 경우 조정된 작업 매개 변수는 `process=None&createTemplate=false`으로 표시됩니다.
+파일을 업로드할 때 작업 매개 변수를 조정하여 보다 신속하게 처리할 수 있습니다. 예를 들어 PSD 파일을 업로드하지만 템플릿으로 처리하지는 않으려는 경우 레이어 추출을 false(off)로 설정할 수 있습니다. 이러한 경우 조정된 작업 매개 변수는 다음과 같이 표시됩니다.`process=None&createTemplate=false`.
+
+템플릿 만들기를 활성화할 경우 다음 매개 변수를 사용하십시오.`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
+
+<!-- REMOVED BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
 Adobe은 PDF, PostScript® 및 PSD 파일에 대해 다음과 같은 &quot;조정&quot; 작업 매개 변수를 사용하는 것이 좋습니다.
 
@@ -511,9 +515,11 @@ Adobe은 PDF, PostScript® 및 PSD 파일에 대해 다음과 같은 &quot;조�
 | ---| ---|
 | PDF | `pdfprocess=Thumbnail&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
 | PostScript® | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Thumbnail&airesolution=150&aicolorspace=Auto&aialpha=false` |
-| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+| PSD | `process=None&layerNaming=AppendName&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-이러한 매개 변수를 업데이트하려면 [MIME 유형 기반 자산 활성화/Dynamic Media Classic 업로드 작업 매개 변수 지원](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)의 단계를 따릅니다.
+<!-- CQDOC-17657 for PSD entry in table above -->
+
+이러한 매개 변수를 업데이트하려면 [MIME 유형 기반 자산 활성화/Dynamic Media Classic 업로드 작업 매개 변수 지원](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)의 단계를 따릅니다.
 
 #### Granite 일시적 워크플로 큐 {#updating-the-granite-transient-workflow-queue} 업데이트
 
