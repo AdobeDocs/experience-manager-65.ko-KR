@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ef975961ddcd6910b5fba2dea7e9302921f45055
+source-git-commit: d700510efb340598a7931647164e22d574884569
 workflow-type: tm+mt
-source-wordcount: '5511'
+source-wordcount: '5517'
 ht-degree: 1%
 
 ---
@@ -351,7 +351,7 @@ Dynamic Media Classic에 자산을 게시할 수 있도록 Experience Manager을
 
 기본적으로 비활성화된 Adobe CQ Dynamic Media Classic Dam 리스너를 활성화합니다.
 
-이를 활성화하려면:
+Adobe CQ Dynamic Media Classic Dam 리스너를 활성화하려면:
 
 1. [!UICONTROL 도구] 아이콘을 누른 다음 **[!UICONTROL 작업 > 웹 콘솔]**&#x200B;으로 이동합니다. 웹 콘솔이 열립니다.
 1. **[!UICONTROL Adobe CQ Dynamic Media Classic Dam 수신기]**&#x200B;로 이동하고 **[!UICONTROL 활성화됨]** 확인란을 선택합니다.
