@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 19faa273908e67a744e52d173a5352f0a52f7345
+source-git-commit: b7be1ff0e842794511ffeb4fed60eed60796b4ff
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2042'
 ht-degree: 12%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 12%
 
 다양한 AEM 콘솔 및/또는 작성 환경의 패널에서 사용할 수 있는 검색 패널에 사용된 검색 예측자를 선택하려면 **Forms 검색**&#x200B;을 사용합니다. 이러한 패널을 사용자 정의하면 특정 요구 사항에 따라 검색 기능을 사용할 수 있습니다.
 
-[조건자 범위](#predicates-and-their-settings)는 기본적으로 사용할 수 있습니다. 전체 텍스트 검색에 대한 전체 텍스트 설명, 속성 설명, 사용자가 지정한 단일 속성과 일치하는 자산을 검색하도록 속성 설명, 특정 속성에 대해 지정한 하나 이상의 값과 일치하는 자산을 검색하도록 옵션 조건자를 포함하여 여러 개의 조건자를 추가할 수 있습니다.
+[조건자 범위](#predicates-and-their-settings)는 기본적으로 사용할 수 있습니다. 속성 조건자를 포함하여(다른 사람 중) 여러 개의 조건자를 추가하여 사용자가 지정한 단일 속성과 일치하는 자산을 검색하거나, 옵션 조건자를 사용하여 특정 속성에 대해 지정한 하나 이상의 값과 일치하는 자산을 검색할 수 있습니다.
 
 [다양한 콘솔 및 자산 브라우저(페이지를 편집할 때)에서 사용되는 검색 양식](#configuring-your-search-forms)을 구성할 수 있습니다. 이러한 양식을 구성하기 위한 [대화 상자는 다음을 통해 액세스할 수 있습니다.](#configuring-your-search-forms)
 
@@ -176,17 +176,6 @@ ht-degree: 12%
      <li>필드 레이블</li>
      <li>속성 이름*</li>
      <li>옵션 경로</li>
-     <li>설명</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>전체 텍스트 </td>
-   <td>전체 텍스트 검색에 대한 검색 조건입니다.</td>
-   <td>
-    <ul>
-     <li>필드 레이블</li>
-     <li>자리 표시자</li>
-     <li>속성 이름</li>
      <li>설명</li>
     </ul> </td>
   </tr>
