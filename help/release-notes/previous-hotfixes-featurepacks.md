@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 이전 서비스 팩 릴리스 노�
 description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩에 대한 릴리스 노트입니다.'
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 131e564e4ed50c4f08412ba39c62f15b9c362b8c
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '17898'
+source-wordcount: '17912'
 ht-degree: 63%
 
 ---
@@ -36,6 +36,8 @@ ht-degree: 63%
    * [!DNL Automated Forms Conversion service]을(를) 사용하여 PDF 양식을 적응형 양식으로 변환
 
 * [!DNL Experience Manager Forms]의 [!DNL Microsoft SQL Server] 2019에 대한 지원.
+
+* OSGi 배포를 위한 고가용성 기능을 위해 [!DNL Microsoft] SQL Server 2016 항상 사용 가능 그룹에 대한 지원
 
 * 내장된 저장소(Apache Jackrabbit Oak)가 버전 1.22.5으로 업데이트되었습니다.
 
