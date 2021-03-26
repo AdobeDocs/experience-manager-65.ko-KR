@@ -4,9 +4,9 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 8의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3041'
 ht-degree: 50%
 
 ---
@@ -232,6 +232,10 @@ ht-degree: 50%
 * 적응형 양식을 제출할 때 서버에서 필드 값의 유효성을 검사합니다.
 
 * [!DNL Automated Forms Conversion service]을(를) 사용하여 PDF 양식을 적응형 양식으로 변환
+
+#### 고가용성을 위한 Microsoft SQL Server 2016 항상 사용 가능 그룹 지원 (6.5.7.0) {#always-on-availability-groups}
+
+[!DNL Experience Manager Forms] 이제  [!DNL Microsoft] OSGi 배포에 대한 고가용성 SQL Server 2016 Always On 가용성 그룹을 지원합니다.
 
 #### 성능 최적화를 위한 양식 데이터 모델 HTTP 클라이언트 구성(6.5.7.0) {#fdm-http-client-config}
 
