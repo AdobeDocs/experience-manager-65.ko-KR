@@ -9,11 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
-feature: 업그레이드
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 8d6818d0f2d90482f930f8e98682670ed6d0dd28
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2724'
 ht-degree: 2%
 
 ---
@@ -72,7 +71,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 워크플로우 모델 {#workflow-models}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -121,7 +120,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 워크플로 인스턴스 {#workflow-instances}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -147,7 +146,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 워크플로 런처 {#workflow-launchers}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -178,7 +177,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 워크플로 스크립트 {#workflow-scripts}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -213,7 +212,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### ContextHub 구성 {#contexthub-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -244,7 +243,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 클래식 Cloud Services 디자인 {#classic-cloud-services-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -283,7 +282,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 클래식 대시보드 디자인 {#classic-dashboards-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -322,7 +321,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 클래식 보고서 디자인 {#classic-reports-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -361,7 +360,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 기본 디자인 {#default-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -400,7 +399,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### Adobe DTM JavaScript 끝점 {#adobe-dtm-javascript-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -423,7 +422,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### Adobe DTM 웹 후크 끝점 {#adobe-dtm-web-hook-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -446,7 +445,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 받은 편지함 작업 {#inbox-tasks}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -473,7 +472,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 다중 사이트 관리자 블루프린트 구성 {#multi-site-manager-blueprint-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong><em></em>이전 위치</strong></td>
@@ -500,7 +499,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### AEM 프로젝트 대시보드 가젯 구성 {#aem-projects-dashboard-gadget-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -530,7 +529,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 복제 알림 이메일 템플릿 {#replication-notification-e-mail-template}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -563,7 +562,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 태그 {#tags}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -597,7 +596,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 번역 클라우드 서비스 {#translation-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -642,7 +641,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 번역 언어 {#translation-languages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -673,7 +672,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 번역 규칙 {#translation-rules}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -704,7 +703,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 번역 위젯 클라이언트 라이브러리 {#translation-widget-client-library}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -749,9 +748,11 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 | **구조 조정 지침** | 필요한 작업이 없습니다. |
 | **메모** | 이제 **도구 > 배포 > 복제 > 트리 활성화**&#x200B;를 통해 트리 활성화 웹 콘솔을 사용할 수 있습니다. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ### 공급업체 번역 커넥터 Cloud Services {#vendor-translation-connector-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -798,7 +799,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 워크플로 알림 이메일 템플릿 {#workflow-notification-email-templates}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
@@ -830,7 +831,7 @@ AEM 6.4 버전부터는 기본 ContextHub 구성이 없습니다. 따라서 사�
 
 ### 워크플로 패키지 {#workflow-packages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>이전 위치</strong></td>
