@@ -1,12 +1,12 @@
 ---
-title: 편집할 에셋 체크 인 및 체크 아웃
+title: 파일 체크 인 및 체크 아웃( [!DNL Assets])
 description: 편집할 에셋을 체크 아웃하고 변경 사항이 완료된 후 다시 체크 인하는 방법을 살펴봅니다.
 contentOwner: AG
 role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: eb87d77e1366786e8574f84590dfe9a3303efda0
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,7 @@ ht-degree: 1%
 ## 자산 {#checking-out-assets} 확인
 
 1. [!DNL Assets] 사용자 인터페이스에서 체크 아웃할 자산을 선택합니다. 체크아웃할 여러 자산을 선택할 수도 있습니다.
-1. 도구 모음에서 **[!UICONTROL 체크아웃]**을 클릭합니다.
-**[!UICONTROL 체크아웃]** 옵션은 **[!UICONTROL 체크 인]**으로 전환합니다.
+1. 도구 모음에서 **[!UICONTROL 체크아웃]**&#x200B;을 클릭합니다. **[!UICONTROL 체크아웃]** 옵션은 **[!UICONTROL 체크 인]**으로 전환합니다.
 체크 아웃한 에셋을 다른 사용자가 편집할 수 있는지 확인하려면 다른 사용자로 로그인합니다. 체크 아웃한 자산의 축소판에 잠금 기호가 표시됩니다.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -33,7 +32,7 @@ ht-degree: 1%
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   **[!UICONTROL 속성 보기]**&#x200B;를 클릭하여 잠긴 자산에 대한 메타데이터를 편집할 수 있습니다.
+   잠긴 자산에 대한 메타데이터를 편집하려면 **[!UICONTROL 속성 보기]**&#x200B;를 클릭합니다.
 
 1. **[!UICONTROL 편집]**&#x200B;을 클릭하여 편집 모드에서 자산을 엽니다.
 
@@ -64,6 +63,6 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager 데스크탑 앱에서 체크 인 및 체크 아웃 이해](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
->* [자산 체크 인 및 체크 아웃을 이해하기 위한 비디오 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [체크인 및  [!DNL Experience Manager] 데스크탑 앱 체크아웃 이해](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [체크 인 및 체크 아웃을 이해하기 위한 비디오 자습서 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
