@@ -3,10 +3,11 @@ title: 자산 번역 준비
 description: 언어 루트 폴더를 만들어 다국어 에셋을 지원하기 위한 번역 에셋을 준비합니다.
 contentOwner: AG
 role: 비즈니스 전문가, 관리자
+feature: 프로젝트
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '444'
 ht-degree: 3%
 
 ---
