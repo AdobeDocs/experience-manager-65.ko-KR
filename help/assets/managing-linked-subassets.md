@@ -4,9 +4,9 @@ description: ' [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe 
 contentOwner: AG
 role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: e6a0cab17d203183cc4169563179060338596cc3
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1381'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 참조는 참조된 자산의 경로, 문서 ID 및 인스턴스 ID를 기준으로 결정됩니다.
 
-## [!DNL Adobe Illustrator] {#refai}에서 디지털 자산을 참조로 추가합니다.
+## [!DNL Adobe Illustrator]:디지털 자산을 참조로 추가  {#refai}
 
 [!DNL Adobe Illustrator] 파일 내에서 기존 디지털 자산을 참조할 수 있습니다.
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
    *그림:자산 세부 정보에 있는 자산 참조를 참조하십시오.*
 
-## [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}에서 디지털 자산을 참조로 추가합니다.
+## [!DNL Adobe InDesign]:디지털 자산을 참조로 추가  {#add-aem-assets-as-references-in-adobe-indesign}
 
 [!DNL InDesign] 파일 내에서 디지털 자산을 참조하려면 자산을 [!DNL InDesign] 파일로 드래그하거나 [!DNL InDesign] 파일을 ZIP 아카이브로 내보냅니다.
 
@@ -55,6 +55,8 @@ ht-degree: 0%
 >
 >[!DNL InDesign Server]이(가) 프록시되면 [!DNL InDesign] 파일의 미리 보기가 XMP 메타데이터 내에 포함됩니다. 이 경우 축소판 추출은 명시적으로 필요하지 않습니다. 그러나 [!DNL InDesign Server]이(가) 프록시되지 않은 경우 [!DNL InDesign] 파일에 대해 축소판을 명시적으로 추출해야 합니다.
 
+INDD 파일이 업로드되면 저장소에서 `xmpMM:InstanceID` 및 `xmpMM:DocumentID` 속성을 가진 자산을 쿼리하여 참조를 가져옵니다.
+
 ### 자산 {#create-references-by-dragging-aem-assets}을(를) 드래그하여 참조를 만듭니다.
 
 이 절차는 Adobe Illustrator](#refai)의 참조로 디지털 자산을 추가하는 것과 유사합니다.[
@@ -62,12 +64,12 @@ ht-degree: 0%
 ### ZIP 파일 {#create-references-to-aem-assets-by-exporting-a-zip-file}을(를) 내보내 자산에 대한 참조를 만듭니다.
 
 1. 새 워크플로우를 만들려면 [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md)의 단계를 수행합니다.
-1. [!DNL Adobe InDesign]의 패키지 기능을 사용하여 문서를 내보냅니다. [!DNL Adobe InDesign] 문서와 연결된 에셋을 패키지로 내보낼 수 있습니다. 이 경우 내보낸 폴더에는 [!DNL InDesign] 파일의 하위 자산이 들어 있는 링크 폴더가 포함됩니다.
+1. [!DNL Adobe InDesign]의 [패키지 기능](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html)을 사용하여 문서를 내보냅니다. [!DNL Adobe InDesign] 문서와 연결된 에셋을 패키지로 내보낼 수 있습니다. 이 경우 내보낸 폴더에는 [!DNL InDesign] 파일의 하위 자산이 포함된 `Links` 폴더가 있습니다. `Links` 폴더가 INDD 파일과 동일한 폴더에 있습니다.
 1. ZIP 파일을 만들어 [!DNL Experience Manager] 저장소에 업로드합니다.
 1. `Unarchiver` 작업 과정을 시작합니다.
 1. 워크플로우가 완료되면 링크 폴더의 참조는 자동으로 하위 자산으로 참조됩니다. 참조된 자산 목록을 보려면 [!DNL InDesign] 자산의 자산 세부 사항 페이지로 이동하고 [레일](/help/sites-authoring/basic-handling.md#rail-selector)을 닫습니다.
 
-## [!DNL Adobe Photoshop] {#refps}에서 디지털 자산을 참조로 추가합니다.
+## [!DNL Adobe Photoshop]:디지털 자산을 참조로 추가  {#refps}
 
 1. [!DNL Experience Manager] 데스크탑 앱을 사용하여 [!DNL Experience Manager Assets]에 액세스합니다. 로컬 파일 시스템에 에셋을 다운로드하고 표시합니다. [!DNL Adobe Photoshop]에서 [!UICONTROL 연결된 ] 기능을 사용합니다. 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)에 자산 배치를 참조하십시오.[
 
