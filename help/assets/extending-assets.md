@@ -3,11 +3,12 @@ title: ' [!DNL Assets] 사용자 정의 및 확장'
 description: 사용자에게 특별히 맞춤화된 인터페이스와 기능 세트를 제공하는 자산 공유 및 자산 편집기를 사용자 정의하고 확장할 수 있는 방법을 알아봅니다.
 contentOwner: AG
 role: 개발자
+feature: 개발자 도구
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 2%
+source-wordcount: '256'
+ht-degree: 3%
 
 ---
 
