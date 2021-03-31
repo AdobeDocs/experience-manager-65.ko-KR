@@ -3,10 +3,11 @@ title: ' [!DNL Assets] 과(와) 통합 [!DNL InDesign Server]'
 description: ' [!DNL Adobe Experience Manager Assets] 과(와) [!DNL Adobe InDesign Server]을(를) 통합하는 방법을 알아봅니다.'
 contentOwner: AG
 role: 관리자
+feature: 게시
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1580'
 ht-degree: 1%
 
 ---
