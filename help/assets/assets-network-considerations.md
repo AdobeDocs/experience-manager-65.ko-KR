@@ -3,10 +3,11 @@ title: 네트워크 고려 사항 및 요구 사항
 description: ' [!DNL Adobe Experience Manager Assets] 배포를 디자인할 때의 네트워크 고려 사항에 대해 설명합니다.'
 contentOwner: AG
 role: 건축가, 관리자
+feature: 개발자 도구
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,7 @@ ht-degree: 0%
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-[!DNL Experience Manager] 환경의 토폴로지를 디자인하려면 시스템 구성에 대한 자세한 지식과 사용자 환경 내에서 네트워크를 연결하는 방법을 알아야 합니다.
+[!DNL Experience Manager] 환경의 토폴로지를 디자인하려면 시스템 구성에 대한 자세한 지식과 사용자 환경 내에서 네트워크가 어떻게 연결되는지 알아야 합니다.
 
 샘플 시나리오에는 5개의 서버가 있는 게시 팜, S3 이진 저장소 및 Dynamic Media이 구성되어 있습니다.
 
