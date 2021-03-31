@@ -3,10 +3,11 @@ title: 미디어 핸들러 및 워크플로우를 사용하여 자산 처리
 description: 미디어 핸들러와 워크플로우를 사용하여 디지털 자산에 대한 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: AG
 role: 비즈니스 전문가
+feature: 워크플로,표현물
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '2163'
+source-wordcount: '2165'
 ht-degree: 2%
 
 ---
