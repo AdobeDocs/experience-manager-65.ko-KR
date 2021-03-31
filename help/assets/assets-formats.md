@@ -3,10 +3,11 @@ title: 지원되는 파일 형식 및 MIME 형식
 description: 파일 형식 및 MIME 유형은  [!DNL Assets] and [!DNL Dynamic Media] 에서 지원하며 각 형식에 대해 지원되는 기능입니다.
 contentOwner: AG
 role: 비즈니스 전문가, 관리자
+feature: 자산 관리,표현물
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1585'
 ht-degree: 10%
 
 ---
@@ -306,7 +307,7 @@ Adobe 이미징 트랜스코딩 라이브러리는 인코딩, 트랜스코딩, �
 | TAR | application/x-tar |  |  |
 | TIF / TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| TTF | application/x-font-ttf |  |  |
+| RTF | application/x-font-ttf |  |  |
 | VOB | 비디오/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | 텍스트/vtt |  |  |
 | WAV | audio/x-wav |  |  |
