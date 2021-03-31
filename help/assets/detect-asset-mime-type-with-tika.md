@@ -3,10 +3,11 @@ title: Apache Tika를 사용하여 MIME 유형의 자산 탐지
 description: 'Apache Tika를 활성화하여 파일 확장명 대신 업로드 작업 중에 콘텐츠 스트림에서 MIME 유형의 자산을 검색합니다. [!DNL Experience Manager Assets] '
 contentOwner: AG
 role: 관리자, 건축가
+feature: 메타데이터,개발자 도구,자산 관리
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '172'
 ht-degree: 5%
 
 ---
