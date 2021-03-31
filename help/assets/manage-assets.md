@@ -4,11 +4,12 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 role: 비즈니스 전문가
+feature: 자산 관리,검색
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '9592'
-ht-degree: 0%
+source-wordcount: '9595'
+ht-degree: 1%
 
 ---
 
