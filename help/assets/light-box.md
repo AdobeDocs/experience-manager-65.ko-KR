@@ -3,10 +3,11 @@ title: 개인 이미지 갤러리로 Lightbox 사용
 description: Adobe Experience Manager Assets]에서 개인 이미지 갤러리로 Lightbox에 대해 알아보십시오.
 contentOwner: AG
 role: 비즈니스 전문가, 관리자
+feature: 개발자 도구,표현물
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
