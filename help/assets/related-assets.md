@@ -3,11 +3,12 @@ title: 관련 자산
 description: 몇 가지 일반적인 특성을 공유하는 디지털 자산을 연결하는 방법을 알아봅니다. 또한 디지털 에셋 간의 소스 파생적인 관계를 만들 수 있습니다.
 contentOwner: AG
 role: 비즈니스 전문가
+feature: 공동 작업,자산 관리
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 2%
+source-wordcount: '637'
+ht-degree: 3%
 
 ---
 
