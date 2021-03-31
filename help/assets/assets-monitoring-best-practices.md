@@ -3,10 +3,11 @@ title: ' [!DNL Assets] 배포 모니터링 우수 사례'
 description: 배포 후  [!DNL Adobe Experience Manager] 배포의 환경과 성능을 모니터링하기 위한 우수 사례입니다.
 contentOwner: AG
 role: 관리자, 건축가
+feature: 자산 관리
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1672'
 ht-degree: 1%
 
 ---
