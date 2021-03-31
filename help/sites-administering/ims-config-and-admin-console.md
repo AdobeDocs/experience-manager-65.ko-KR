@@ -10,15 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: a71c1e87dd5f01ba2584282e0960ca27d419adb0
+source-git-commit: 655d32a4ebb72ca447fc2157b029f0d08cf42b27
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 12%
+source-wordcount: '1691'
+ht-degree: 13%
 
 ---
 
 
-# Adobe IMS 인증 및 AEM Managed Services [!DNL Admin Console] 지원{#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+# Adobe IMS 인증 및 AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services} 지원[!DNL Admin Console]
 
 >[!NOTE]
 >
@@ -204,9 +204,11 @@ IDP는 아래 예에서 Okta입니다.
 
 아래 예에서는 동기화된 그룹을 로컬 *Dam_Users* 그룹에 추가하겠습니다.
 
-여기에서 사용자는 [!DNL Admin Console]의 일부 그룹에도 할당되었습니다. ( 사용자 동기화 도구를 사용하여 LDAP에서 사용자 및 그룹을 동기화하거나 로컬로 만들 수 있습니다. 위 **의 온보딩 사용자 섹션을 참조하십시오.)[!DNL Admin Console]**
+여기에서 사용자는 [!DNL Admin Console]의 일부 그룹에도 할당되었습니다. ( 사용자 동기화 도구를 사용하여 LDAP에서 사용자 및 그룹을 동기화하거나 로컬로 만들 수 있습니다. 위 [!DNL Admin Console]**의 온보딩 사용자 섹션을 참조하십시오.)**
 
-&amp;ast;사용자 그룹은 사용자가 인스턴스에 로그인할 때에만 동기화되고, 사용자와 그룹이 많은 고객의 경우, AMS에서 그룹 동기화 유틸리티를 실행하여 위에서 설명한 액세스 제어 및 권한 관리를 위해 그룹을 미리 가져올 수 있습니다.
+>[!NOTE]
+>
+>사용자 그룹은 사용자가 인스턴스에 로그인할 때에만 동기화됩니다.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
