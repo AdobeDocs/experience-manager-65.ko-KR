@@ -3,10 +3,11 @@ title: 일괄적으로 에셋 마이그레이션
 description: 자산을  [!DNL Adobe Experience Manager]으로 가져오고, 메타데이터를 적용하고, 변환을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 contentOwner: AG
 role: 건축가, 관리자
+feature: 마이그레이션,표현물,자산 관리
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
