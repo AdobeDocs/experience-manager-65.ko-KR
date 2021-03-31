@@ -10,11 +10,13 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
+feature: 콘텐츠 조각
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 08bf8f42898446f2e5cca1fde55ceb84710a1e30
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '544'
+ht-degree: 99%
 
 ---
 
