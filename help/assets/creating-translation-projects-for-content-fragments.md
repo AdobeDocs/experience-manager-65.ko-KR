@@ -9,10 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
+feature: 콘텐츠 조각
+role: 비즈니스 전문가, 관리자
 translation-type: tm+mt
-source-git-commit: 8f1a1beb9aa64b1d2ea5eda0bec3ca6e99c2ddcc
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '992'
 ht-degree: 2%
 
 ---
@@ -32,7 +34,7 @@ ht-degree: 2%
 
 **언어 복사 업데이트**
 
-소스 컨텐츠 조각을 업데이트하거나 수정할 때 해당 로케일/언어 특정 컨텐츠 조각에 대해 다시 번역해야 합니다. 업데이트 언어 사본 워크플로우에서는 추가 컨텐츠 그룹을 변환할 수 있으며 특정 로케일에 대한 언어 복사본에 포함할 수 있습니다. 이 경우 번역된 컨텐츠 조각은 이전에 번역된 컨텐츠 조각을 이미 포함하는 대상 폴더에 추가됩니다.
+소스 컨텐츠 조각을 업데이트하거나 수정할 때 해당 로케일/언어 특정 컨텐츠 조각에 대한 재번역 작업이 필요합니다. 업데이트 언어 사본 워크플로우에서는 추가 컨텐츠 그룹을 변환할 수 있으며 특정 로케일에 대한 언어 복사본에 포함할 수 있습니다. 이 경우 번역된 컨텐츠 조각은 이전에 번역된 컨텐츠 조각을 이미 포함하는 대상 폴더에 추가됩니다.
 
 ## 워크플로 {#create-and-translate-workflow} 만들기 및 번역
 
