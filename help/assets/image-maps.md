@@ -3,10 +3,11 @@ title: 하이퍼링크가 포함된 이미지 맵 추가
 description: 이미지에 하이퍼링크가 포함된 이미지 맵을 추가하는 방법을 알아봅니다.
 contentOwner: AG
 role: 비즈니스 전문가, 관리자
+feature: 자산 관리
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '273'
 ht-degree: 2%
 
 ---
