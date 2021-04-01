@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 관리 사용 안내서
@@ -9,10 +9,10 @@ feature-set: Experience Manager Sites
 feature: 배포
 role: 비즈니스 전문가
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
