@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: 대화형 통신
+exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 92092e1c050c9264c19e3cd9da9b240607af7bab
 workflow-type: tm+mt
-source-wordcount: '6122'
+source-wordcount: '6212'
 ht-degree: 1%
 
 ---
-
 
 # 대화형 통신 만들기{#create-an-interactive-communication}
 
@@ -611,3 +611,23 @@ Interactive Communications는 개인화되고 인터랙티브한 커뮤니케이
 
    ![content_tree_grouping](assets/content_tree_grouping.png)
 
+## 인쇄 채널 {#output-format-print-channel}의 출력 형식
+
+PrintChannel API를 사용하여 인터랙티브 커뮤니케이션의 인쇄 채널의 출력 포맷을 정의합니다. 출력 형식을 정의하지 않으면 AEM Forms에서 PDF 형식으로 출력을 생성합니다.
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
+
+다른 형식으로 출력을 생성하려면 출력 형식 유형을 지정합니다. 지원되는 출력 형식 유형의 목록은 [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html)를 참조하십시오.
+
+예를 들어 다음 샘플을 사용하여 PCL을 대화형 커뮤니케이션의 출력 형식으로 정의할 수 있습니다.
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+renderOptions.setRenderFormat(PrintConfig.HP_PCL_5e);
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
