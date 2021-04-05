@@ -4,14 +4,14 @@ description: ' [!DNL Adobe Experience Manager Assets]의 HTTP API를 사용하�
 contentOwner: AG
 role: 개발자
 feature: API,자산 HTTP API,개발자 도구
+exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1730'
 ht-degree: 1%
 
 ---
-
 
 # [!DNL Assets] HTTP API {#assets-http-api}
 
@@ -314,4 +314,4 @@ curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.p
 
 * [HTTP API는 네임스페이스의 메타데이터 ](#update-asset-metadata) 속성을  `jcr` 업데이트합니다. 그러나 Experience Manager 사용자 인터페이스는 `dc` 네임스페이스의 메타데이터 속성을 업데이트합니다.
 
-* 자산 API는 전체 메타데이터를 반환하지 않습니다. API에서 네임스페이스는 하드 코딩되며, 네임스페이스만 반환됩니다. 전체 메타데이터가 필요한 경우 자산 경로 `/jcr_content/metadata.json`을 봅니다.
+* 자산 HTTP API는 전체 메타데이터를 반환하지 않습니다. 네임스페이스는 하드 코딩되며 이러한 네임스페이스만 반환됩니다. 전체 메타데이터의 경우 자산 경로 `/jcr_content/metadata.json`을(를) 참조하십시오.
