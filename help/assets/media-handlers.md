@@ -4,14 +4,14 @@ description: 미디어 핸들러와 워크플로우를 사용하여 디지털 �
 contentOwner: AG
 role: 비즈니스 전문가
 feature: 워크플로,표현물
+exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2168'
 ht-degree: 2%
 
 ---
-
 
 # 미디어 핸들러 및 워크플로우를 사용하여 자산 처리 {#processing-assets-using-media-handlers-and-workflows}
 
@@ -46,6 +46,8 @@ ht-degree: 2%
 | [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | 에셋에서 데이터를 추출하는 다른 핸들러가 없는 경우에 대비책 |
+
+{style=&quot;table-layout:auto&quot;}
 
 모든 핸들러는 다음 작업을 수행합니다.
 
