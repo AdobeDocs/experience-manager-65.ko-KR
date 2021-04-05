@@ -3,14 +3,14 @@ title: '[!DNL Assets] 프록시 개발'
 description: 프록시는  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] 프록시, 지원되는 작업, 프록시 구성 요소 및 사용자 지정 프록시 작업자 개발 방법입니다.
 contentOwner: AG
 role: 관리자, 건축가
+exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Assets] 프록시 개발  {#assets-proxy-development}
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 프록시는 작업을 처리하고 결과를 만드는 처리자로 프록시 작업자를 사용하는 특정(또는 경우에 따라 분리) Experience Manager 인스턴스입니다. 프록시 워커는 다양한 작업에 사용할 수 있습니다. [!DNL Assets] 프록시의 경우 자산 내에서 렌더링하기 위해 자산을 로드하는 데 사용할 수 있습니다. 예를 들어 [IDS 프록시 작업자](indesign.md)는 [!DNL Adobe InDesign] 서버를 사용하여 자산에 사용할 파일을 처리합니다.
 
-프록시가 별도의 [!DNL Experience Manager] 인스턴스인 경우 Experience Manager 작성 인스턴스에서의 로드를 줄이는 데 도움이 됩니다. 기본적으로 [!DNL Assets]은 동일한 JVM에서 자산 처리 작업(프록시를 통해 외부화됨)을 실행하여 Experience Manager 작성 인스턴스의 로드를 줄입니다.
+프록시가 별도의 [!DNL Experience Manager] 인스턴스인 경우 [!DNL Experience Manager] 제작 인스턴스의 로드를 줄이는 데 도움이 됩니다. 기본적으로 [!DNL Assets]은 동일한 JVM에서 자산 처리 작업(프록시를 통해 외부화됨)을 실행하여 [!DNL Experience Manager] 작성 인스턴스에서의 로드를 줄입니다.
 
 ## 프록시(HTTP 액세스) {#proxy-http-access}
 
@@ -104,7 +104,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
  proxyJobService.removeJob(jobId);
 ```
 
-### 클라우드 서비스 구성 {#cloud-service-configurations}
+### Cloud Service 구성 {#cloud-service-configurations}
 
 >[!NOTE]
 >
