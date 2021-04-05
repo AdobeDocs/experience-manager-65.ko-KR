@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF 생성기
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 3bb12f6323398971ec315f49611a39977bd548a2
 workflow-type: tm+mt
-source-wordcount: '6148'
+source-wordcount: '6171'
 ht-degree: 0%
 
 ---
@@ -516,6 +516,8 @@ NOTE to WRITER: Unfinished sentence above.
 
 **[!UICONTROL 모든 스타일을 책갈피로 변환]**:Word 문서의 모든 스타일을 PDF 문서의 책갈피로 변환합니다.
 
+**[!UICONTROL 지정된 스타일을 책갈피로 변환]**:[스타일] 및 [ **[!UICONTROL 수준 필드]에서 정의한]** 스타일을 PDF 문서의 책갈피로 변환합니다.
+
 **[!UICONTROL 수준이 있는 스타일]**:PDF 문서에서 책갈피로 변환할 Word 문서의 스타일을 지정합니다. 책갈피 수준도 지정합니다. 이 기능을 사용하려면 **[!UICONTROL 모든 스타일을 책갈피로 변환]** 옵션을 선택 취소하고 스타일 이름을 다음 형식으로 지정합니다.
 
 **styleName1=level1[,styleName2=level2..]**
@@ -588,7 +590,7 @@ Microsoft Word 스타일 이름에 쉼표(,) 또는 등호(=)가 포함되어 �
 
 **PDFMaker를 폴백 변환기로 사용해 보십시오**.이 옵션을 선택하고 OpenOffice를 사용한 변환이 실패하거나 지정된 제한 시간 내에 도달하면 PDF Generator는 PDFMaker를 사용하여 변환을 시도합니다. PDFMaker를 사용한 변환이 실패하거나 지정된 시간 제한 값에 도달하면 예외가 로그 파일에 기록됩니다.
 
-**파일 이름 확장자**:이 응용 프로그램에 사용할 수 있는 파일 형식의 파일 이름 확장자를 쉼표로 구분하여 지정합니다. 기본값은 `odt,odp,ods,odg,odf,sxw,sxi,sxd`입니다. 확장 이전 또는 확장 사이의 공백을 포함하지 마십시오.
+**파일 이름 확장자**:이 응용 프로그램에 사용할 수 있는 파일 형식의 파일 이름 확장명을 쉼표로 구분하여 지정합니다. 기본값은 `odt,odp,ods,odg,odf,sxw,sxi,sxd`입니다. 확장 이전 또는 확장 사이의 공백을 포함하지 마십시오.
 
 **범위**:모든 페이지를 변환하거나 특정 페이지 또는 페이지 범위를 지정합니다. 페이지 범위가 정의되지 않은 경우 모든 페이지가 변환됩니다. 페이지 범위를 내보내려면 3-6 형식을 사용합니다. 단일 페이지를 내보내려면 7;9;11 형식을 사용합니다. 3-6;8;10;12와 같은 형식을 사용하여 페이지 범위와 단일 페이지의 조합을 내보낼 수 있습니다.
 
