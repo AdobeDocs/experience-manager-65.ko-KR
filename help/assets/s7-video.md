@@ -7,15 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
-role: 비즈니스 전문가, 관리자
+role: Business Practitioner, Administrator
+exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
+feature: 비디오
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1583'
 ht-degree: 62%
 
 ---
-
 
 # 비디오 {#video}
 
@@ -190,4 +191,3 @@ S7 클라우드 구성에서 선택한 S7 인코딩 사전 설정에 따라 다�
 1. 비디오 프로필을 활성화해야 합니다.
 1. 페이지에서 **[!UICONTROL 기본 비디오]** 구성 요소의 디자인을 구성합니다.
 1. 디자인 변경을 수행한 후 디자인을 활성화합니다.
-
