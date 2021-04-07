@@ -5,15 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-role: 비즈니스 전문가, 관리자
+role: Business Practitioner, Administrator,Developer
+exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
+feature: 구성,규칙 세트
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
-
 
 # 규칙 세트를 사용하여 URL {#using-rulesets-to-transform-urls} 변환
 
@@ -84,4 +85,3 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 에셋 정
    규칙 세트 조건은 라이브 Dynamic Media 이미지 서버에 대한 요청에 적용됩니다.
 
    규칙 세트 파일을 변경하면 업데이트된 규칙 세트 파일을 다시 업로드하고 다시 게시할 때 변경 내용이 즉시 적용됩니다.
-
