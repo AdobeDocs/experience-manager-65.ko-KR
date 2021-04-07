@@ -8,15 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
-role: 비즈니스 전문가, 관리자
+role: Business Practitioner, Administrator
+exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
+feature: 구성 요소,게시
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '3099'
+source-wordcount: '3098'
 ht-degree: 26%
 
 ---
-
 
 # 페이지에 Dynamic Media 자산 추가{#adding-dynamic-media-assets-to-pages}
 
