@@ -7,15 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
-role: 비즈니스 전문가, 관리자
+role: Business Practitioner, Administrator
+exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
+feature: 구성
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1275'
 ht-degree: 1%
 
 ---
-
 
 # URL을 웹 애플리케이션에 연결 {#linking-urls-to-your-web-application}
 
