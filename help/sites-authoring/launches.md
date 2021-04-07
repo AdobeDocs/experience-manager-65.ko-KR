@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
+exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 96%
+source-wordcount: '854'
+ht-degree: 93%
 
 ---
-
 
 # 론치{#launches}
 
@@ -102,6 +102,13 @@ ht-degree: 96%
 >론치를 만들고 편집하려면 기본 그룹 `content-authors`과 같이 `/content/launches`에 대한 액세스 권한이 필요합니다.
 >
 >문제가 발생하면 시스템 관리자에게 문의하십시오.
+
+>[!CAUTION]
+>
+>론치 페이지에서 구성 요소 순서를 변경할 수 없습니다.
+>
+>페이지가 홍보되면 컨텐츠 변경 사항이 반영되지만 구성 요소 위치는 변경되지 않습니다.
+
 
 ### 론치 콘솔 {#the-launches-console}
 
