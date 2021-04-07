@@ -10,14 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
+exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
+feature: 작업
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
-
 
 # AEM{#how-to-audit-user-management-operations-in-aem}에서 사용자 관리 작업을 감사하는 방법
 
@@ -91,4 +92,3 @@ AEM에서는 권한 변경 사항을 기록할 수 있는 기능을 도입하여
 ```
 10.05.2019 18:01:09.123 INFO [0:0:0:0:0:0:0:1 [1557491469096] POST /libs/cq/security/authorizables/POST HTTP/1.1] com.adobe.granite.security.user.internal.audit.AuditAuthorizableAction User 'test' was created
 ```
-
