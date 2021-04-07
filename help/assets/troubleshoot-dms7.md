@@ -8,15 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
-role: 비즈니스 전문가, 관리자
+role: Business Practitioner, Administrator
+exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
+feature: 문제 해결
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 1%
+source-wordcount: '1286'
+ht-degree: 2%
 
 ---
-
 
 # Dynamic Media 문제 해결 - Scene7 모드{#troubleshooting-dynamic-media-scene-mode}
 
@@ -262,4 +263,3 @@ ht-degree: 1%
   </tr>
  </tbody>
 </table>
-
