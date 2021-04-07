@@ -9,14 +9,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
+exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
+feature: 보안
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3138'
 ht-degree: 1%
 
 ---
-
 
 # 사용자, 그룹 및 액세스 권한 관리{#user-group-and-access-rights-administration}
 
@@ -486,7 +487,7 @@ CRXDE Lite의 **액세스 제어** 탭을 사용하여 액세스 제어 정책�
 
    **주체** 이름을 입력하거나 필드 오른쪽의 아이콘을 클릭하여 **주체 선택** 대화 상자를 열 수 있습니다.
 
-   이렇게 하면 **사용자** 또는 **그룹**&#x200B;에 대해 &lt;a0/>검색&#x200B;**할 수 있습니다.** 결과 목록에서 필요한 주체를 선택한 다음 **확인**&#x200B;을 클릭하여 값을 이전 대화 상자로 돌아갑니다.
+   이렇게 하면 **사용자** 또는 **그룹**&#x200B;에 대해 **검색**&#x200B;할 수 있습니다. 결과 목록에서 필요한 주체를 선택한 다음 **확인**&#x200B;을 클릭하여 값을 이전 대화 상자로 돌아갑니다.
 
 ![crx_accescontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
@@ -512,7 +513,7 @@ CRXDE Lite의 **액세스 제어** 탭을 사용하여 액세스 제어 정책�
   </tr>
   <tr>
    <td><code>rep:write</code></td>
-   <td>jcr:write 및 jcr:nodeTypeManagement의 jcr:write 및 jcr:nodeTypeManagement의 jackrabbit 특정 집계 권한입니다.<br /> </td>
+   <td>jcr:write 및 jcr:nodeTypeManagement의 jcrabbit 특정 집계 권한입니다.<br /> </td>
   </tr>
   <tr>
    <td><code>jcr:all</code></td>
@@ -556,7 +557,7 @@ CRXDE Lite의 **액세스 제어** 탭을 사용하여 액세스 제어 정책�
   </tr>
   <tr>
    <td><code>jcr:nodeTypeManagement</code></td>
-   <td>혼합 노드 유형을 추가 및 제거하고 노드의 기본 노드 유형을 변경합니다. 또한 새 노드의 mixin 또는 기본 유형이 명시적으로 지정된 Node.addNode 및 XML 가져오기 메서드를 호출하는 작업도 포함됩니다.</td>
+   <td>혼합 노드 유형을 추가 및 제거하고 노드의 기본 노드 유형을 변경합니다. 또한 새 노드의 mixin 또는 기본 유형이 명시적으로 지정된 Node.addNode 및 XML 가져오기 메서드를 호출하는 작업도 포함합니다.</td>
   </tr>
   <tr>
    <td><code>jcr:readAccessControl</code></td>
