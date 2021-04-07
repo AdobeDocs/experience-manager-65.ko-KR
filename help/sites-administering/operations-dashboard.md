@@ -10,14 +10,15 @@ topic-tags: operations
 content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
+exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
+feature: 작업
 translation-type: tm+mt
-source-git-commit: 19a6a4f80e2af37b8de49080a977d02bf0e43507
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '6198'
+source-wordcount: '6199'
 ht-degree: 2%
 
 ---
-
 
 # 작업 대시보드 {#operations-dashboard}
 
@@ -251,7 +252,7 @@ Composite Health Check의 역할은 일련의 공통 기능을 공유하는 여�
      <li>작업이 유지 관리 창에 추가되지 않으면 상태 검사가 [중요]로 반환됩니다.</li>
      <li>감사 로그 및 워크플로우 제거 유지 관리 작업을 구성하거나 유지 관리 창에서 제거해야 합니다. 구성되지 않은 상태로 두면, 이러한 작업은 처음 시도한 실행 시 실패하므로 시스템 유지 관리 검사가 위험 상태를 반환합니다.</li>
      <li><strong>AEM 6.4</strong>에서는 Lucene 바이너리  <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Maintenancentack도 </a> 제공됩니다</li>
-     <li>aem 6.2 이하에서는 작업이 실행되지 않으므로 시스템 유지 관리 검사가 시작 후 경고 상태를 반환합니다. 6.3부터 첫 번째 유지 관리 창에 아직 도달하지 않았으면 확인을 다시 받게 됩니다.</li>
+     <li>AEM 6.2 이하에서는 작업이 실행되지 않으므로 시스템 유지 관리 검사가 시작 후 경고 상태를 반환합니다. 6.3부터 첫 번째 유지 관리 창에 아직 도달하지 않았으면 확인을 다시 받게 됩니다.</li>
     </ul> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healcheck:name=systemchecks,type=HealthCheck</a>입니다.</p> </td>
   </tr>
   <tr>
@@ -297,7 +298,7 @@ Composite Health Check의 역할은 일련의 공통 기능을 공유하는 여�
   </tr>
   <tr>
    <td>보안 확인</td>
-   <td><p>보안 검사는 여러 보안 관련 검사의 결과를 집계하는 합성입니다. 이러한 개별 상태 검사는 <a href="/help/sites-administering/security-checklist.md">보안 체크리스트 설명서 페이지에서 사용할 수 있는 보안 체크리스트와 다른 문제를 해결합니다.</a> 이 검사는 인스턴스가 시작될 때 보안 연기 테스트로 유용합니다. </p> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healcheck:name=securitychecks,type=HealthCheck</a>입니다.</p> </td>
+   <td><p>보안 검사는 여러 보안 관련 검사의 결과를 집계하는 합성입니다. 이러한 개별 상태 검사는 <a href="/help/sites-administering/security-checklist.md">보안 체크리스트 설명서 페이지에서 사용할 수 있는 보안 체크리스트와 다른 문제를 해결합니다.</a> 이 검사는 인스턴스가 시작될 때 보안 연기 테스트로 유용합니다. </p> <p>이 상태 확인에 대한 MBean은 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healcheck:name=securitychecks,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>활성 상태 번들</td>
@@ -697,7 +698,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 >[!NOTE]
 >
->시스템 개요 대시보드에 대한 소개를 보려면 [이 비디오](https://video.tv.adobe.com/v/21340?captions=kor)를 시청하십시오.
+>시스템 개요 대시보드에 대한 소개를 보려면 [이 비디오](https://video.tv.adobe.com/v/21340)를 시청하십시오.
 
 ### {#how-to-access}에 액세스하는 방법
 
@@ -773,7 +774,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
    <td>인스턴스</td>
    <td>
     <ul>
-     <li>aem 버전</li>
+     <li>AEM 버전</li>
      <li>실행 모드 목록</li>
      <li>인스턴스가 시작된 날짜</li>
     </ul> </td>
@@ -905,4 +906,3 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
   </tr>
  </tbody>
 </table>
-
