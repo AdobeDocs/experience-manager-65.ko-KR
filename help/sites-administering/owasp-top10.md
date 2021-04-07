@@ -9,14 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
+exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
+feature: 보안
 translation-type: tm+mt
-source-git-commit: cd7331f5f57ec90ea72d41d467891dc832347a3c
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
-
 
 # OWASP 상위 10개{#owasp-top}
 
@@ -73,4 +74,3 @@ CSRF(교차 사이트 요청 위조)는 모든 양식 및 AJAX 요청에 암호�
 ## 10. 검증되지 않은 리디렉션 및 전달 {#unvalidated-redirects-and-forwards}
 
 사용자 제공 대상에 대한 모든 리디렉션을 내부 위치로 제한하여 완화된 상태입니다.
-
