@@ -6,15 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: 비즈니스 전문가, 관리자
+role: Business Practitioner, Administrator
+exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
+feature: Scene7 모드,하이브리드 모드
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '516'
 ht-degree: 99%
 
 ---
-
 
 # Dynamic Media-Hybrid에서 Dynamic Media-Scene7으로 이동 정보 {#about-migrating}
 
