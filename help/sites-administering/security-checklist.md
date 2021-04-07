@@ -10,14 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
+exl-id: 314a6409-398c-470b-8799-0c4e6f745141
+feature: 보안
 translation-type: tm+mt
-source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '2841'
+source-wordcount: '2842'
 ht-degree: 1%
 
 ---
-
 
 # Security 검사 목록 {#security-checklist}
 
@@ -110,7 +111,7 @@ AEM `admin` 계정 외에도 OSGi 웹 콘솔 암호의 기본 암호를 변경�
 
 ### Dispatcher 보안 검사 목록 완료 {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher는 인프라에서 중요한 역할을 합니다. Adobe에서는 [디스패처 보안 검사 목록](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)을 완료하는 것이 좋습니다.
+AEM Dispatcher는 인프라에서 중요한 역할을 합니다. Adobe에서는 [디스패처 보안 검사 목록](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/security-checklist.html)을 완료하는 것이 좋습니다.
 
 >[!CAUTION]
 >
