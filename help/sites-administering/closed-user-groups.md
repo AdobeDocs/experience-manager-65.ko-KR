@@ -10,14 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
+exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
+feature: 보안
 translation-type: tm+mt
-source-git-commit: 2142df4f7579e052e18879b437fc43911010b475
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '6890'
+source-wordcount: '6891'
 ht-degree: 0%
 
 ---
-
 
 # AEM{#closed-user-groups-in-aem}에서 닫힌 사용자 그룹
 
@@ -157,7 +158,7 @@ Apache Sling 인증 요구 사항은 페이지 또는 노드 계층 구조를 �
 
 이 문서의 대상은 내부 `LoginPathProvider` 인터페이스에 표시되는 로그인 경로의 평가입니다. AEM 6.3 이후 제공되는 구현은 다음과 같이 작동합니다.
 
-* 로그인 경로 등록은 만료된 암호 구분과 리디렉션 이유로 정기적인 로그인이 필요한 경우에 따라 다릅니다
+* 로그인 경로 등록은 만료된 암호 구분과 리디렉션 이유로 정기적인 로그인 필요 여부에 따라 다릅니다
 * 정기적으로 로그인하는 경우 다음 순서로 로그인 경로를 얻을 수 있는지 테스트합니다.
 
    * 새 `com.adobe.granite.auth.requirement.impl.RequirementService`에 의해 구현된 `LoginPathProvider`에서
@@ -819,7 +820,7 @@ CUG 인증 모델을 사용하면 액세스 제어 관리 및 권한 평가를 �
 * CUG를 만들 수 있는 지원되는 경로가 하나 이상 있는 경우 액세스 제어 관리가 활성화됩니다
 * 권한 평가는 **CUG 평가 활성화** 옵션이 추가로 선택된 경우에만 활성화됩니다.
 
-CUG 정책의 새로운 AEM 기본 설정 평가에서는 &#39;게시&#39; 실행 모드에서만 사용할 수 있습니다. 자세한 내용은 AEM 6.3[이후의 기본 구성에 대한 세부 사항을 참조하십시오. ](#default-configuration-since-aem) 지정된 경로에 대한 효과적인 정책을 컨텐츠에 저장된 정책과 비교하여 확인할 수 있습니다. 유효한 정책은 CUG에 대한 권한 평가가 활성화된 경우에만 표시됩니다.
+CUG 정책의 새로운 AEM 기본 설정 평가에서는 &#39;게시&#39; 실행 모드에서만 사용할 수 있습니다. 자세한 내용은 AEM 6.3](#default-configuration-since-aem)이후의 기본 구성에 대한 세부 사항을 참조하십시오. [ 지정된 경로에 대한 효과적인 정책을 컨텐츠에 저장된 정책과 비교하여 확인할 수 있습니다. 유효한 정책은 CUG에 대한 권한 평가가 활성화된 경우에만 표시됩니다.
 
 위에서 설명한 바와 같이 CUG 액세스 제어 정책은 이제 항상 컨텐츠에 저장되지만, 이러한 정책으로 인한 유효 권한에 대한 평가는 **CUG 평가 활성화**&#x200B;가 Apache Jackrabbit Oak **CUG Configuration의 시스템 콘솔에서 켜져 있는 경우에만 적용됩니다.** 기본적으로 &#39;게시&#39; 실행 모드에서만 활성화됩니다.
 
@@ -883,4 +884,3 @@ Adobe은 새 CUG 구현으로 마이그레이션하는 도구를 제공합니다
 >[!NOTE]
 >
 >문제가 발생하는 경우 마이그레이션 도구의 출력을 얻기 위해 `com.day.cq.auth.impl.cug`에서 **DEBUG** 수준으로 특정 로거를 설정할 수 있습니다. 이 방법에 대한 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md)을 참조하십시오.
-
