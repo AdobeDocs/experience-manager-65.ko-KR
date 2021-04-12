@@ -7,10 +7,10 @@ role: Business Practitioner
 feature: 자산 관리,검색
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 translation-type: tm+mt
-source-git-commit: d88962cb4018b0b60f61006510f416478d119cb5
+source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
 workflow-type: tm+mt
-source-wordcount: '9652'
-ht-degree: 1%
+source-wordcount: '9798'
+ht-degree: 0%
 
 ---
 
@@ -926,3 +926,23 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 * 편집, 보기 등 다양한 권한 수준을 가진 여러 사용자와 컬렉션을 공유할 수 있습니다.
 
 컬렉션 관리에 대한 자세한 내용은 [컬렉션 관리](/help/assets/manage-collections.md)를 참조하십시오.
+
+## 데스크톱 앱 또는 Adobe 자산 링크 {#hide-expired-assets-via-acp-api}에서 자산을 볼 때 만료된 자산 숨기기
+
+[!DNL Experience Manager] 데스크탑 앱을 사용하면 Windows 또는 Mac 데스크탑에서 DAM 저장소에 액세스할 수 있습니다. Adobe 자산 링크를 사용하면 지원되는 [!DNL Creative Cloud] 데스크톱 응용 프로그램 내에서 자산에 액세스할 수 있습니다.
+
+[!DNL Experience Manager] 사용자 인터페이스 내에서 자산을 검색할 때 만료된 자산이 표시되지 않습니다. 데스크탑 앱 및 에셋 링크에서 에셋을 검색할 때 만료된 에셋을 보고, 검색하고, 가져오는 것을 방지하기 위해 관리자는 다음 구성을 수행할 수 있습니다. 구성은 관리자 권한에 관계없이 모든 사용자에 대해 작동합니다.
+
+다음 CURL 명령을 실행합니다. 자산에 액세스하는 사용자에 대해 `/conf/global/settings/dam/acpapi/`에 대한 읽기 액세스 권한을 확인합니다. `dam-user` 그룹에 속한 사용자는 기본적으로 권한이 있습니다.
+
+```curl
+curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'jcr:title=acpapiconfig' \
+--data-urlencode 'hideExpiredAssets=true' \
+--data-urlencode 'hideExpiredAssets@TypeHint=Boolean' \
+--data-urlencode 'jcr:primaryType=nt:unstructured' \
+--data-urlencode '../../jcr:primaryType=sling:Folder'
+```
+
+자세한 내용은 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) 및 [Adobe 자산 링크 사용 방법](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)을 사용하여 [DAM 자산을 검색하는 방법을 참조하십시오.
