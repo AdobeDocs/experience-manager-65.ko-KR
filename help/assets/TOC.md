@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋 제작, 관리, 처리 및 배포
-feature-set: Experience Manager Assets, Experience Manager, Experience Manager Sites
+feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: 36454754ac726471c611adcc942548d3501109b7
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 79%
