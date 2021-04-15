@@ -2,14 +2,14 @@
 title: Live Copy 만들기 및 동기화
 description: Live Copy를 만들고 동기화하는 방법을 알아봅니다.
 feature: 다중 사이트 관리자
+exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056
 workflow-type: tm+mt
-source-wordcount: '4173'
+source-wordcount: '4174'
 ht-degree: 2%
 
 ---
-
 
 # Live Copy 만들기 및 동기화{#creating-and-synchronizing-live-copies}
 
@@ -240,7 +240,7 @@ Live Copy 페이지의 속성에는 Live Copy에 대한 다음 정보가 표시�
 
 #### 참조 레일 {#roll-out-a-blueprint-from-the-reference-rail}에서 블루프린트를 롤아웃합니다.
 
-1. **사이트** 콘솔에서 블루프린트에서 페이지를 선택하고 도구 모음에서 **[참조](/help/sites-authoring/basic-handling.md#references)** 패널을 엽니다(도구 모음).
+1. **사이트** 콘솔에서 Live Copy의 페이지를 선택하고 도구 모음에서 **[참조](/help/sites-authoring/basic-handling.md#references)** 패널을 엽니다.
 1. 이 페이지와 관련된 청사진을 표시하려면 목록에서 **블루프린트** 옵션을 선택합니다.
 1. 목록에서 필요한 블루프린트를 선택합니다.
 1. **롤아웃**&#x200B;을 클릭하거나 탭합니다.
