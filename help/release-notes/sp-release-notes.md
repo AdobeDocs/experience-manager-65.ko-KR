@@ -5,9 +5,9 @@ docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 translation-type: tm+mt
-source-git-commit: e2eb007eb7660004f98b4c26aba00a6a6e2a2f1a
+source-git-commit: 9b23e9d5bbdbdde864ce71f434d6536439067f82
 workflow-type: tm+mt
-source-wordcount: '3418'
+source-wordcount: '3413'
 ht-degree: 17%
 
 ---
@@ -158,7 +158,7 @@ ht-degree: 17%
 * [!UICONTROL 관리자] 필드에서 [!UICONTROL 모든 사용자]를 제거해도 실제로 백엔드에서 제거되지 않습니다(NPR-35592, NPR-35611).
 * 입력한 텍스트가 부분 일치(NPR-35666)인 경우 [!UICONTROL 메시지 작성] 구성 요소는 결과를 반환하지 않습니다.
 
-* **태그 추가**&#x200B;를 선택하여 새 블로그에 태그를 추가하려고 하면 성능 영향이 몇 가지 있습니다. 성능을 향상시키려면 태그 제안 문제를 해결하는 [cqTagLucene-0.0.1.zip 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip)를 설치하십시오. [!DNL Software Distribution]에서 핫픽스를 다운로드할 수 있습니다.
+* **[!UICONTROL 태그 추가]**&#x200B;를 선택하여 새 블로그에 태그를 추가하려고 할 때 성능 저하 및 둔화를 확인할 수 있습니다. 성능을 향상시키려면 [!DNL Software Distribution]에서 사용할 수 있는 [cqTagLucene-0.0.1.zip 핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip)를 설치하십시오.
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 
