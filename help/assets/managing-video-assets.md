@@ -2,8 +2,8 @@
 title: 비디오 자산 관리
 description: 비디오 에셋을 업로드, 미리 보기, 주석 달기 및  [!DNL Adobe Experience Manager]에 게시할 수 있습니다.
 contentOwner: AG
-role: 비즈니스 전문가
-feature: 자산 관리
+role: Business Practitioner
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: ' [!DNL Adobe Creative Cloud] 우수 사례에 폴더 공유'
 description: Adobe Creative Cloud(CC) 사용자와 폴더를 교환하도록  [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] 을 구성합니다.
 contentOwner: AG
-role: 비즈니스 전문가, 관리자
-feature: 협업
+role: Business Practitioner, Administrator
+feature: Collaboration
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

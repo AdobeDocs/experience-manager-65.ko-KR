@@ -1,7 +1,7 @@
 ---
 title: Live Copy 만들기 및 동기화
 description: Live Copy를 만들고 동기화하는 방법을 알아봅니다.
-feature: 다중 사이트 관리자
+feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 translation-type: tm+mt
 source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056

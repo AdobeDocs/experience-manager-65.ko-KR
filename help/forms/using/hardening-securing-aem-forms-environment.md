@@ -6,7 +6,7 @@ seo-description: OSGi 서버에서 AEM Forms 보안을 유지하기 위한 권�
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
-role: 관리자
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

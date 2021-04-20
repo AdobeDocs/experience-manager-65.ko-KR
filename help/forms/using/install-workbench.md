@@ -4,7 +4,7 @@ seo-title: 설치 워크벤치
 description: 설치 워크벤치.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-role: 관리자
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

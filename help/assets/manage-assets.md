@@ -4,7 +4,7 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: 자산 관리,검색
+feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 translation-type: tm+mt
 source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0

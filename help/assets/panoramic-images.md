@@ -8,8 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
-feature: 파노라마 이미지,자산 관리
-role: 비즈니스 전문가, 관리자
+feature: Panoramic Images,Asset Management
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

@@ -6,8 +6,8 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
-feature: 뷰어
-role: 비즈니스 전문가, 관리자, 개발자, 데이터 엔지니어, 데이터 아키텍트
+feature: Viewers
+role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
 translation-type: tm+mt
 source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt

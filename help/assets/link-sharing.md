@@ -2,8 +2,8 @@
 title: 링크를 사용하여 에셋 공유
 description: 자산, 폴더 및 컬렉션을 URL로 공유합니다.
 contentOwner: AG
-role: 비즈니스 전문가
-feature: 링크 공유,자산 관리
+role: Business Practitioner
+feature: Link Sharing,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

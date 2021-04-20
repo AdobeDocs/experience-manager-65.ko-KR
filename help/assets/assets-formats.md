@@ -2,8 +2,8 @@
 title: 지원되는 파일 형식 및 MIME 형식
 description: 파일 형식 및 MIME 유형은  [!DNL Assets] and [!DNL Dynamic Media] 에서 지원하며 각 형식에 대해 지원되는 기능입니다.
 contentOwner: AG
-role: 비즈니스 전문가, 관리자
-feature: 자산 관리,표현물
+role: Business Practitioner, Administrator
+feature: Asset Management,Renditions
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

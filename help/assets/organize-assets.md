@@ -2,8 +2,8 @@
 title: 디지털 자산 구성
 description: Experience Manager을 사용하여 디지털 에셋, 이미지, 파일, 폴더 등을 구성할 수 있습니다.
 contentOwner: AG
-role: 비즈니스 전문가
-feature: 자산 관리,검색
+role: Business Practitioner
+feature: Asset Management,Search
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

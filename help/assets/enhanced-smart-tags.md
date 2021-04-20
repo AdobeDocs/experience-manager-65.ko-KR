@@ -2,8 +2,8 @@
 title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
-feature: 스마트 태그, 검색
-role: 비즈니스 전문가
+feature: Smart Tags, Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 자산 사용 및 공유에 대한 보고서
 description: 디지털 자산의 사용, 활동 및 공유를 이해하는 데 도움이 되는  [!DNL Adobe Experience Manager Assets] 의 자산에 대한 보고서입니다.
 contentOwner: AG
-role: 비즈니스 전문가, 관리자
-feature: 자산 보고서,자산 관리
+role: Business Practitioner, Administrator
+feature: Asset Reports,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

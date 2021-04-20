@@ -2,8 +2,8 @@
 title: 자산 통찰력
 description: 자산 인사이트 기능을 사용하여 제3자 웹사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 이미지의 사용자 등급과 사용 통계를 추적할 수 있는 방법을 알아봅니다.
 contentOwner: AG
-role: 비즈니스 전문가, 관리자
-feature: 자산 통찰력,자산 보고서
+role: Business Practitioner, Administrator
+feature: Asset Insights,Asset Reports
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 자산 Digital Rights Management
 description: ' [!DNL Experience Manager]에서 라이선스가 부여된 자산에 대한 에셋 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
-role: 비즈니스 전문가, 관리자
-feature: DRM,자산 관리
+role: Business Practitioner, Administrator
+feature: DRM,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

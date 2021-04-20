@@ -2,7 +2,7 @@
 title: '[!DNL Assets] 프록시 개발'
 description: 프록시는  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] 프록시, 지원되는 작업, 프록시 구성 요소 및 사용자 지정 프록시 작업자 개발 방법입니다.
 contentOwner: AG
-role: 관리자, 건축가
+role: Administrator, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 translation-type: tm+mt
 source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537

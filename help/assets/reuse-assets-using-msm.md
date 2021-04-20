@@ -3,8 +3,8 @@ title: MSM을 사용하여 자산 재사용
 description: 상위 자산에서 파생되고 상위 자산에 연결된 여러 페이지/폴더에 있는 자산을 사용합니다. 자산은 기본 복사본과 동기화되고 몇 번의 클릭만으로 상위 자산으로부터 업데이트를 받습니다.
 contentOwner: AG
 mini-toc-levels: 1
-role: 비즈니스 전문가, 관리자, 건축가
-feature: 자산 관리,다중 사이트 관리자
+role: Business Practitioner, Administrator, Architect
+feature: Asset Management,Multi Site Manager
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

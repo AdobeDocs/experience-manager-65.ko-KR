@@ -2,8 +2,8 @@
 title: 페이지 추적기 사용 및 웹 페이지에 코드 포함
 description: Adobe Analytics에서 자산 관련 사용 데이터를 캡처할 수 있도록 페이지 추적기를 포함하고 웹 사이트 코드에 JavaScript 코드를 포함하는 방법을 알아봅니다.
 contentOwner: AG
-role: 건축가, 관리자
-feature: 자산 보고서
+role: Architect, Administrator
+feature: Asset Reports
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

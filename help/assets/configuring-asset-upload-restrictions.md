@@ -2,8 +2,8 @@
 title: 자산 업로드 제한 사항 구성
 description: '사용자가 업로드할 수 있는 자산 유형 제한 '
 contentOwner: AG
-role: 개발자, 관리자, 건축가
-feature: 자산 관리,업로드
+role: Developer, Administrator, Architect
+feature: Asset Management,Upload
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

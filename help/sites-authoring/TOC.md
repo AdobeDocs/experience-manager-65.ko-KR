@@ -7,8 +7,8 @@ user-guide-title: AEM 6.5 작성 사용 안내서
 breadcrumb-title: 작성 안내서
 user-guide-description: AEM에서의 컨텐츠 생성 및 작성에 대한 주요 개념을 알아봅니다.
 feature-set: Experience Manager Sites
-feature: 작성
-role: 비즈니스 전문가
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt

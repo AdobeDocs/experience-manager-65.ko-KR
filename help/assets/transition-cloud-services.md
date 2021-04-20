@@ -2,8 +2,8 @@
 title: 폴더에 번역 클라우드 서비스 적용
 description: 폴더에 번역 클라우드 서비스 적용
 contentOwner: AG
-role: 관리자
-feature: 번역
+role: Administrator
+feature: Translation
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

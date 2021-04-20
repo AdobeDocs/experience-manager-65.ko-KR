@@ -3,7 +3,7 @@ title: Adobe Creative Cloud 모범 사례와의 통합
 description: '에셋 전송 워크플로우를 간소화하고 콘텐츠 전송 속도를 높일 수 있는 통합 모범 사례 [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] '
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: 공동 작업,Adobe 에셋 링크,데스크탑 앱
+feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 translation-type: tm+mt
 source-git-commit: c4cfb709162ca8f8f6e8508516c39542347c6bc4

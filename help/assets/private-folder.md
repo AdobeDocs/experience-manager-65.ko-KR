@@ -2,8 +2,8 @@
 title: 자산을 공유할 비공개 폴더
 description: ' [!DNL Adobe Experience Manager Assets] 에서 비공개 폴더를 만들고 다른 사용자와 공유하는 방법을 알아보고 이들에게 다양한 권한을 할당합니다.'
 contentOwner: AG
-role: 비즈니스 전문가
-feature: 협업
+role: Business Practitioner
+feature: Collaboration
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

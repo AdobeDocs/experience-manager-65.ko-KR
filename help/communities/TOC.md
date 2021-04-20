@@ -6,8 +6,8 @@ user-guide-title: AEM 6.5 Communities 사용 안내서
 breadcrumb-title: Communities 안내서
 user-guide-description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다.
 feature-set: Experience Manager
-feature: 커뮤니티
-role: 비즈니스 전문가
+feature: Communities
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt

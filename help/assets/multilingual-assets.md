@@ -2,8 +2,8 @@
 title: 다국어 자산 및 자산 번역
 description: 이진 파일, 메타데이터 및 태그를 비롯한 에셋을 여러 언어로 변환하는 워크플로우를 자동화하는 방법을 살펴볼 수 있습니다.
 contentOwner: AG
-feature: 자산 관리
-role: 관리자
+feature: Asset Management
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

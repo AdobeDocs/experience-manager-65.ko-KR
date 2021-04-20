@@ -8,8 +8,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
-feature: 자산 관리
-role: 비즈니스 전문가, 관리자
+feature: Asset Management
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt

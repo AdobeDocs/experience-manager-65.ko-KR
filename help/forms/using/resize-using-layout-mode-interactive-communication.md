@@ -1,7 +1,7 @@
 ---
 title: 레이아웃 모드를 사용하여 대화형 통신을 위한 구성 요소 크기 조정
 description: '레이아웃 모드에서 사용할 수 있는 응답형 격자를 사용하여 구성 요소의 위치를 정의합니다. '
-feature: 대화형 통신
+feature: Interactive Communication
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

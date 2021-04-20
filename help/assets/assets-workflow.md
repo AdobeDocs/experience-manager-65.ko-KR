@@ -2,8 +2,8 @@
 title: 워크플로우를 사용하여 자산 처리
 description: 형식을 변환하고, 변환을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행하는 자산 처리.
 contentOwner: AG
-feature: 워크플로우, 표현물
-role: 비즈니스 전문가, 관리자
+feature: Workflow, Renditions
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

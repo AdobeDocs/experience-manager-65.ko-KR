@@ -2,8 +2,8 @@
 title: 중복 에셋 감지 사용
 description: Experience Manager에서 중복된 자산을 검색하는 방법을 알아봅니다.
 contentOwner: AG
-role: 비즈니스 전문가, 관리자
-feature: 자산 관리,자산 보고서
+role: Business Practitioner, Administrator
+feature: Asset Management,Asset Reports
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

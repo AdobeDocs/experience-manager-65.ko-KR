@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
-feature: 콘텐츠 조각
-role: 비즈니스 전문가, 관리자
+feature: Content Fragments
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

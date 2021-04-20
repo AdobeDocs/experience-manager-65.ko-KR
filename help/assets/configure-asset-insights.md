@@ -2,8 +2,8 @@
 title: 분석을 얻기 위해 자산 통찰력을 구성합니다.
 description: ' [!DNL Adobe Experience Manager Assets]에서 자산 인사이트를 구성합니다.'
 contentOwner: AG
-role: 건축가, 관리자
-feature: 자산 통찰력,자산 보고서
+role: Architect, Administrator
+feature: Asset Insights,Asset Reports
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

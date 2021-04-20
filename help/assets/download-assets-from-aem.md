@@ -2,8 +2,8 @@
 title: 자산 다운로드
 description: ' [!DNL Adobe Experience Manager] 에서 에셋을 다운로드하고 다운로드 기능을 활성화하거나 비활성화하는 방법에 대해 학습합니다.'
 contentOwner: AG
-role: 비즈니스 전문가
-feature: 자산 관리,자산 배포
+role: Business Practitioner
+feature: Asset Management,Asset Distribution
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

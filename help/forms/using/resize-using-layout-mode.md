@@ -1,7 +1,7 @@
 ---
 title: 레이아웃 모드를 사용하여 적응형 양식의 구성 요소 크기 조정
 description: '레이아웃 모드에서 사용할 수 있는 응답형 격자를 사용하여 구성 요소의 위치를 정의합니다. '
-feature: 적응형 양식
+feature: Adaptive Forms
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

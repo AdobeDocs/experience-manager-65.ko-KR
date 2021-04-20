@@ -7,8 +7,8 @@ user-guide-title: AEM 6.5 개발 사용 안내서
 breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature-set: Experience Manager Sites
-feature: 개발
-role: 개발자
+feature: Developing
+role: Developer
 translation-type: tm+mt
 source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 지원되는 파일 형식을 처리하기 위한 모범 사례
 description: ' [!DNL Experience Manager Assets]을(를) 사용하여 지원되는 다양한 파일 형식을 처리하기 위한 우수 사례입니다.'
 contentOwner: AG
-role: 관리자
-feature: 자산 관리,개발자 도구
+role: Administrator
+feature: Asset Management,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

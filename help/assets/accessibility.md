@@ -2,7 +2,7 @@
 title: 액세스 가능한 기능 및 인터페이스 [!DNL Experience Manager Assets]
 description: ' [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] 의 액세서빌러티 기능이 장애가 있는 사용자를 돕는 방법을 알아봅니다.'
 contentOwner: AG
-feature: 자산 관리
+feature: Asset Management
 role: Business Practitioner, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 translation-type: tm+mt

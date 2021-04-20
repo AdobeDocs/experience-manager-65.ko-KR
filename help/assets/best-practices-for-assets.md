@@ -2,8 +2,8 @@
 title: ' [!DNL Assets]에 대한 우수 사례'
 description: 배포 및 구성에 따라 달라지는 모범 사례를 식별하고 준수하여 로드되는 시스템 안정성 및 성능을 향상시킵니다.
 contentOwner: AG
-feature: 자산 관리
-role: 건축가, 관리자
+feature: Asset Management
+role: Architect, Administrator
 translation-type: tm+mt
 source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt

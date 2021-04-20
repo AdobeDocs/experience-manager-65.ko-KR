@@ -2,8 +2,8 @@
 title: 메타데이터 기능의 구성 및 관리.
 description: 메타데이터 추가 및 관리와 관련된  [!DNL Experience Manager Assets] 기능 구성 및 관리.
 contentOwner: AG
-role: 비즈니스 전문가, 관리자
-feature: 메타데이터
+role: Business Practitioner, Administrator
+feature: Metadata
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

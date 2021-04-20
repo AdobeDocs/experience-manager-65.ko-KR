@@ -2,8 +2,8 @@
 title: 자산 편집기 확장
 description: 사용자 지정 구성 요소를 사용하여 자산 편집기의 기능을 확장하는 방법을 알아봅니다.
 contentOwner: AG
-role: 비즈니스 전문가, 관리자
-feature: 개발자 도구
+role: Business Practitioner, Administrator
+feature: Developer Tools
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

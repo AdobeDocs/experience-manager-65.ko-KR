@@ -2,8 +2,8 @@
 title: DTM을 통해 자산 인사이트 활성화
 description: Adobe DTM(다이내믹 태그 관리)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
-role: 비즈니스 전문가, 관리자
-feature: 자산 통찰력,자산 보고서
+role: Business Practitioner, Administrator
+feature: Asset Insights,Asset Reports
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

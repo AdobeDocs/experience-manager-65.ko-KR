@@ -2,8 +2,8 @@
 title: 검색 기능 확장.
 description: ' [!DNL Adobe Experience Manager Assets] 의 검색 기능을 기본값 이상으로 확장합니다.'
 contentOwner: AG
-role: 개발자
-feature: 검색
+role: Developer
+feature: Search
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

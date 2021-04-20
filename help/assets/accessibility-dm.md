@@ -4,8 +4,8 @@ description: Dynamic Media 및 Dynamic Media 뷰어의 액세스 가능성 지�
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: 접근성
-role: 비즈니스 전문가, 관리자
+feature: Accessibility
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
