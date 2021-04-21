@@ -7,16 +7,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
-feature: 3D Assets,Asset Management
+feature: 3D 자산,자산 관리
 role: Business Practitioner, Administrator
+exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 666bc5d943af371726708cb2ef157a9b3f07eb8e
 workflow-type: tm+mt
-source-wordcount: '2319'
-ht-degree: 3%
+source-wordcount: '2291'
+ht-degree: 4%
 
 ---
-
 
 # Dynamic Media {#working-with-three-d-assets-dm}에서 3D 자산 작업
 
@@ -24,7 +24,7 @@ Dynamic Media을 사용하면 3D 자산을 매력적인 경험으로 업로드, 
 
 * 3D 자산의 한 번의 클릭(도구 모음에서 **[!UICONTROL 빠른 게시]** 사용)으로 URL을 생성합니다.
 * Adobe Dimension 기반의 고품질의 인터랙티브한 D 뷰어 사전 설정을 사용하여 3D 자산을 볼 수 있도록 최적화된 지원을 제공합니다.
-* 3D Media WCM 구성 요소를 사용하면 AEM Sites 페이지에 3D 자산을 쉽게 추가할 수 있습니다.
+* 3D Media WCM 구성 요소를 사용하면 Adobe Experience Manager Sites 페이지에 3D 자산을 쉽게 추가할 수 있습니다.
 
 Dynamic Media에서 3D 자산을 사용하는 데 필요한 추가 구성은 없습니다.
 
@@ -53,7 +53,7 @@ Dynamic Media은 다음 3D 형식을 지원합니다.
 >
 >3D 자산은 Dynamic Media - 하이브리드 모드에서 지원되지 않습니다.
 
-Dynamic Media에서 3D 자산으로 작업하기 전에 AEM 관리자가 Dynamic Media - Scene7 모드에서 Dynamic Media Cloud Services을 이미 사용하고 구성했는지 확인하십시오.
+Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관리자가 Dynamic Media - Scene7 모드에서 Dynamic Media Cloud Services을 이미 사용하고 구성했는지 확인하십시오.
 
 Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드의 [Dynamic Media Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)을 참조하십시오.](/help/assets/troubleshoot-dms7.md)
 
@@ -109,32 +109,26 @@ Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 �
 
 소프트웨어 인터페이스](/help/assets/previewing-assets.md)를 사용하여 자산 미리 보기를 참조하십시오.[
 
-**자산 세부 사항 페이지에서 3D 자산을 보고 상호 작용하려면**
+**자산 세부 사항 페이지에서 3D 자산을 보고 상호 작용하려면:**
 
-1. 3D 자산을 AEM에 업로드했는지 확인합니다.
+1. 3D 자산을 Experience Manager에 업로드했는지 확인합니다.
 
    Dynamic Media에서 사용할 3D 자산 업로드를 참조하십시오.](/help/assets/manage-assets.md#uploading-assets)[
 
-1. AEM의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 > 파일을 탭합니다.]**
+1. Experience Manager의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 > 파일을 누릅니다.]**
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 보기]** 드롭다운 목록에서 **[!UICONTROL 카드 보기를 탭합니다.]**
 1. 보려는 3D 자산으로 이동합니다.
-1. 3D 자산의 카드를 탭하여 자산 세부 사항 페이지에서 엽니다.
+1. 3D 자산의 카드를 누릅니다.
 1. 3D 자산에 대한 세부 사항 보기 페이지에서 다음 중 하나를 수행합니다.
 
-   * **카메라**  회전 - 3D 장면 및 개체 주위로 뷰를 궤도를 선회할 수 있습니다.
-      * _마우스_:마우스 왼쪽 단추를 클릭하고 드래그합니다.
-      * _터치 스크린_:한 손가락을 누른 상태에서 드래그합니다.
-   * **카메라**  팬 - 보기 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 이동할 수 있습니다.
-      * _마우스_:마우스 오른쪽 단추를 클릭하고 드래그합니다.
-      * _터치 스크린_:두 손가락을 누른 상태에서 드래그합니다.
-   * **카메라**  확대 - 카메라를 확대/축소하여 3D 장면의 영역 안팎을 이동할 수 있습니다.
-      * _마우스_:스크롤 휠입니다.
-      * _터치 스크린_:두 손가락을 꼬집다.
-   * **카메라**  다시 입력 - 3D 장면의 개체 지점에 카메라를 다시 입력합니다.
-      * _마우스_:두 번 클릭합니다.
-      * _터치 스크린_:두 번 누릅니다.
-   * **재설정**  - 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 눌러 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정을 수행하면 카메라가 더 가깝거나 더 멀리 이동되어 자산이 전체적으로 적절한 보기 크기로 표시됩니다.
-   * **전체 화면 모드**  - 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래에 있는 전체 화면 아이콘을 누릅니다.
+   | 보기 | 설명 | 마우스 동작 | 터치 스크린 동작 |
+   | --- | --- | --- | --- |
+   | **카메라 켜기** | 3D 장면 및 개체 주위로 보기를 궤도 회전합니다. | 마우스 왼쪽 단추를 클릭하고 드래그합니다. | 한 손가락을 누른 상태에서 드래그합니다. |
+   | **카메라 팬** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래로 이동합니다. | 마우스 오른쪽 단추를 클릭하고 드래그합니다. | 두 손가락을 누른 상태에서 드래그합니다. |
+   | **카메라 확대/축소** | 3D 장면의 영역 안팎으로 이동합니다. | 스크롤 휠입니다. | 두 손가락을 꼬집다. |
+   | **카메라 다시 입력** | 3D 장면에서 개체의 한 점으로 카메라를 다시 입력합니다. | 두 번 클릭. | 두 번 누릅니다. |
+   | **재설정** | 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 눌러 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정을 수행하면 카메라가 더 가깝거나 더 멀리 이동되어 자산이 전체적으로 적절한 보기 크기로 표시됩니다. |  |  |
+   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래에 있는 전체 화면 아이콘을 누릅니다. |  |  |
 
 1. 페이지 상단 오른쪽에서 **[!UICONTROL 닫기]**&#x200B;를 탭하여 자산 페이지로 돌아갑니다.
 
@@ -148,11 +142,11 @@ Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 �
 
 소프트웨어 인터페이스를 사용하여 자산 미리 보기를 참조하십시오.](/help/assets/previewing-assets.md)[
 
-**3D 미디어 구성 요소 내에서 3D 자산을 보고 상호 작용하려면**
+**3D 미디어 구성 요소 내에서 3D 자산을 보고 상호 작용하려면:**
 
 1. 웹 페이지가 **[!UICONTROL 편집]** 모드에 있는 동안 다음 중 하나를 수행합니다.
 
-   * 페이지의 오른쪽 위 근처에 있는 **[!UICONTROL 미리 보기]**&#x200B;를 클릭하여 **[!UICONTROL 미리 보기]** 모드를 입력합니다.
+   * 페이지 오른쪽 상단 근처에 있는 **[!UICONTROL 미리 보기]**&#x200B;를 클릭하여 **[!UICONTROL 미리 보기]** 모드를 입력합니다.
    * 브라우저의 페이지 URL에서 `/editor.html`을 삭제합니다.
 
 인터랙티브한 3D 에셋을    ![3D 미디어 구성 요소 내부에 표시되는 3D ](/help/assets/assets-dm/3d-asset-in-3d-media.png)
@@ -160,20 +154,14 @@ Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 �
 
 1. **[!UICONTROL 미리 보기]** 모드에서 다음 중 하나를 수행합니다.
 
-   * **카메라**  회전 - 3D 장면 및 개체 주위로 뷰를 궤도를 선회할 수 있습니다.
-      * _마우스_:마우스 왼쪽 단추를 클릭하고 드래그합니다.
-      * _터치 스크린_:한 손가락을 누른 상태에서 드래그합니다.
-   * **카메라**  팬 - 보기 왼쪽, 오른쪽, 위쪽 또는 아래쪽으로 이동할 수 있습니다.
-      * _마우스_:마우스 오른쪽 단추를 클릭하고 드래그합니다.
-      * _터치 스크린_:두 손가락을 누른 상태에서 드래그합니다.
-   * **카메라**  확대 - 카메라를 확대/축소하여 3D 장면의 영역 안팎을 이동할 수 있습니다.
-      * _마우스_:스크롤 휠입니다.
-      * _터치 스크린_:두 손가락을 꼬집다.
-   * **카메라**  다시 입력 - 3D 장면의 개체 지점에 카메라를 다시 입력합니다.
-      * _마우스_:두 번 클릭합니다.
-      * _터치 스크린_:두 번 누릅니다.
-   * **재설정**  - 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 눌러 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정을 수행하면 카메라가 더 가깝거나 더 멀리 이동되어 자산이 전체적으로 적절한 보기 크기로 표시됩니다.
-   * **전체 화면 모드**  - 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래에 있는 전체 화면 아이콘을 누릅니다.
+   | 보기 | 설명 | 마우스 동작 | 터치 스크린 동작 |
+   | --- | --- | --- | --- |
+   | **카메라 켜기** | 3D 장면 및 개체 주위로 보기를 궤도 회전합니다. | 마우스 왼쪽 단추를 클릭하고 드래그합니다. | 한 손가락을 누른 상태에서 드래그합니다. |
+   | **카메라 팬** | 보기를 왼쪽, 오른쪽, 위쪽 또는 아래로 이동합니다. | 마우스 오른쪽 단추를 클릭하고 드래그합니다. | 두 손가락을 누른 상태에서 드래그합니다. |
+   | **카메라 확대/축소** | 3D 장면의 영역 안팎으로 이동합니다. | 스크롤 휠입니다. | 두 손가락을 꼬집다. |
+   | **카메라 다시 입력** | 3D 장면에서 개체의 한 점으로 카메라를 다시 입력합니다. | 두 번 클릭. | 두 번 누릅니다. |
+   | **재설정** | 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 눌러 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정을 수행하면 카메라가 더 가깝거나 더 멀리 이동되어 자산이 전체적으로 적절한 보기 크기로 표시됩니다. |  |  |
+   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래에 있는 전체 화면 아이콘을 누릅니다. |  |  |
 
 ## 3D 미디어 구성 요소 작업 정보 {#working-with-three-d-media-component}
 
@@ -184,13 +172,12 @@ Dynamic Media에는 웹 페이지에서 3D 모델을 인터랙티브하게 볼 �
    * [선택 사항 - 3D 미디어 구성 요소 구성](#configuring-the-three-d-component)
 * [3D 미디어 구성 요소에 3D 자산 할당](#assigning-a-three-d-asset-to-the-component)
 
-
 ## 페이지 템플릿 {#adding-three-d-media-component-to-page-template}에 3D 미디어 구성 요소 추가
 
 1. **[!UICONTROL 도구 > 일반 > 템플릿으로 이동합니다.]**
 1. 에서 3D 구성 요소를 활성화할 페이지 템플릿으로 이동하여 템플릿을 선택합니다.
 1. **[!UICONTROL 편집]**&#x200B;을 눌러 템플릿을 엽니다.
-1. 페이지의 오른쪽 위 근처에 있는 드롭다운 메뉴에서 **[!UICONTROL 구조]** 모드가 아직 활성 상태가 아니면 를 선택합니다.
+1. 페이지의 오른쪽 상단 근처에 있는 드롭다운 메뉴에서 **[!UICONTROL 구조]** 모드가 아직 활성 상태가 아니면 를 선택합니다.
 
    ![3d-media-component-structure](/help/assets/assets-dm/3d-media-component-structure.png)
 
@@ -203,7 +190,7 @@ Dynamic Media에는 웹 페이지에서 3D 모델을 인터랙티브하게 볼 �
 
 ## 웹 페이지에 3D 미디어 구성 요소 추가 {#adding-the-three-d-media-component-to-a-web-page}
 
-웹 컨텐츠 관리 시스템으로 Adobe Experience Manager을 사용하는 경우 3D 미디어 구성 요소를 통해 웹 페이지에 3D 자산을 추가할 수 있습니다.
+Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 3D 미디어 구성 요소를 통해 웹 페이지에 3D 자산을 추가할 수 있습니다.
 
 [페이지에 Dynamic Media 자산 추가를 참조하십시오.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
@@ -262,13 +249,13 @@ Dynamic Media은 Dynamic Media에서 *정적 컨텐츠*&#x200B;로 지원되는 
 
 **[!UICONTROL 카드 보기]**&#x200B;에서 작은 지구 아이콘이 자산 이름 바로 아래에 나타나고 자산 이름 및 날짜/시간 왼쪽에 표시되어 게시되었음을 나타냅니다. **[!UICONTROL 목록 보기]**&#x200B;에서 **[!UICONTROL 게시된]** 열은 게시되었거나 게시되지 않은 자산을 나타냅니다.
 
-AEM을 WCM으로 사용하는 경우 이 게시 방법을 사용하여 웹 페이지에 직접 Dynamic Media 3D 자산을 추가합니다.
+Experience Manager을 WCM으로 사용하는 경우 이 게시 방법을 사용하여 웹 페이지에 직접 Dynamic Media 3D 자산을 추가합니다.
 
 [Dynamic Media 자산 게시를 참조하십시오.](publishing-dynamicmedia-assets.md)
 
 [페이지 게시를 참조하십시오.](/help/sites-authoring/publishing-pages.md)
 
-**정적 Dynamic Media 3D 자산을 게시하려면**
+**정적 Dynamic Media 3D 자산을 게시하려면:**
 
 1. 3D 자산(GLB, OBJ 또는 STL 파일 형식)을 열어 자산 세부 사항 페이지에서 볼 수 있습니다.
 1. 도구 모음에서 **[!UICONTROL 빠른 게시.]**
@@ -280,7 +267,7 @@ AEM을 WCM으로 사용하는 경우 이 게시 방법을 사용하여 웹 페�
 
    ![3d 자산 표현물](/help/assets/assets-dm/3d-asset-renditions.png)
 
-1. **[!UICONTROL 원본을 누릅니다.]** 3D 자산이 게시되면(또는 &quot;활성화&quot;) 다음 3D 자산 조건이 모두 충족되면 페이지의 왼쪽 하단 모서리 근처에  **** URL 단추가 표시됩니다.
+1. **[!UICONTROL 원본]**&#x200B;을 누릅니다. 3D 자산이 게시되거나 &quot;활성화됨&quot; 상태인 경우, 다음 3D 자산 조건이 모두 충족되면 페이지의 왼쪽 아래 모서리 근처에 **[!UICONTROL URL]** 단추가 표시됩니다.
    * 3D 자산은 지원되는 형식(GLB, OBJ, STL 및 USDZ)입니다.
    * 3D 자산을 Dynamic Media IPS(Image Production System)로 인제스트했습니다.
    * 3D 자산이 게시됩니다.
@@ -291,7 +278,7 @@ AEM을 WCM으로 사용하는 경우 이 게시 방법을 사용하여 웹 페�
 
 ### 차원 뷰어 {#alternate-publish-methods}를 사용하여 Dynamic Media 3D 자산을 게시하는 대체 방법
 
-AEM을 WCM으로 사용하는 경우 Dynamic Media 3D 자산을 게시하려면 다음 2가지 방법을 사용합니다.**
+Dynamic Media 3D 자산을 WCM으로 Experience Manager을 사용하지 *않으면 다음 2가지 방법으로 게시하십시오.*
 
 * **[!UICONTROL URL]**  - 제3자 웹 컨텐츠 관리 시스템을 사용하고 D 뷰어를 사용하여 Dynamic Media 3D 자산을 웹 페이지에 연결하려면  **** URL을 사용합니다.
 
