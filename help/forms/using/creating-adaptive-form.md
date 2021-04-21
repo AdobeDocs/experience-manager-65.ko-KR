@@ -1,17 +1,17 @@
 ---
 title: 적응형 양식을 만드는 방법
 description: ' [!DNL Experience Manager Forms]을(를) 사용하여 적응형 양식을 만드는 방법을 알아봅니다. 적응형 양식은 정보 수집 및 처리를 간소화하는 반응형 HTML5 양식입니다. 양식 데이터 모델, XFA 양식 템플릿, XML 또는 JSON 스키마를 기반으로 적응형 양식을 만드는 방법에 대해 자세히 살펴봅니다. '
-feature: Adaptive Forms
-role: Business Practitioner, Developers
+feature: 적응형 양식
+role: Business Practitioner, Developer
 level: Beginner
+exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 translation-type: tm+mt
-source-git-commit: 52fedc234b3edf581393bb42325902d2da3ab46e
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
-
 
 # 응용 양식 만들기 {#creating-an-adaptive-form}
 
