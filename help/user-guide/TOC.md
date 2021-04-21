@@ -4,14 +4,13 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 사용 안내서
 user-guide-description: AEM 6.5를 이해, 설치, 관리 및 사용하는 데 필요한 모든 리소스에 대한 개요
-feature-set: Experience Manager
-feature: Release Information
+feature: 릴리스 정보
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 13%
+source-wordcount: '62'
+ht-degree: 16%
 
 ---
 
