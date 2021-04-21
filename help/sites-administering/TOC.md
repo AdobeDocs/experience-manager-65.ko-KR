@@ -6,11 +6,10 @@ audience: admin-user
 user-guide-title: AEM 6.5 관리 사용 안내서
 breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
-feature-set: Experience Manager Sites,Experience Manager Assets,Experience Manager
-feature: Administering
+feature: 관리
 role: Administrator
 translation-type: tm+mt
-source-git-commit: b8970a8b2f7063a9bc5f7882ffa3598cabdef548
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 19%
