@@ -9,9 +9,9 @@ user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: 관리
 role: Administrator
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 06cbf5ccc957b0cb5bd24c820f5209821ae92cd9
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '665'
 ht-degree: 19%
 
 ---
@@ -165,6 +165,7 @@ ht-degree: 19%
    + [AEM Sites - GDPR 준비 완료](gdpr-compliance-sites.md)
    + [AEM Foundation에 대한 GDPR 요청 처리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce - GDPR 준비](gdpr-compliance-commerce.md)
++ 컨텐츠 관리 {#contentmanagement}
    + [패키지를 사용한 작업 방법](package-manager.md)
    + [태그 관리](tags.md)
    + [페이지 내보내기](page-exporter.md)
