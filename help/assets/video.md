@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
-feature: Asset Management
+feature: 자산 관리
 role: Business Practitioner, Administrator
+exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '11745'
+source-wordcount: '11752'
 ht-degree: 1%
 
 ---
-
 
 # 다이내믹 미디어의 비디오 {#video}
 
@@ -112,7 +112,7 @@ ht-degree: 1%
 
       * 웹 페이지의 포함 코드를 사용하여 비디오 통합:
          [웹 페이지에 비디오 뷰어를 포함합니다](embed-code.md).
-   * [YouTube에 비디오 게시를 참조하십시오](#publishing-videos-to-youtube).
+   * [YouTube에 비디오 게시](#publishing-videos-to-youtube).
    * [비디오 보고서](#viewing-video-reports) 생성
 
    * [비디오에 캡션 추가](#adding-captions-to-video).
@@ -277,7 +277,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 ## 비디오 인코딩 우수 사례 {#best-practices-for-encoding-videos}
 
-Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 **Dynamic Media 비디오 인코딩** 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
+Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 **Dynamic Media 비디오 인코딩** 워크플로우는 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 내역 및 실패 정보를 캡처합니다. [비디오 인코딩 모니터링 및 YouTube 게시 진행](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 비디오 인코딩]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
 
 다음은 소스 비디오 파일을 인코딩하기 위한 우수 사례 팁입니다.
 
@@ -404,9 +404,9 @@ VBR 대 CBR을 선택하는 경우에는 미디어 파일에 VBR을 사용하는
 
 | 비디오 유형 | 너비 x 높이 | 폭 비율 | 높이 비율 |
 |--- |--- |--- |--- |
-| 소스 | 1920x1080 | 1 | 3 |
+| 소스 | 1920x1080 | 1 | 1 |
 | 인코딩됨 | 960 x 540 | 2 | 2 |
-| 인코딩됨 | 640 x 360 | 3 | 3 |
+| 인코딩됨 | 640 x 360 | 3 | 1 |
 | 인코딩됨 | 480 x 270 | 4 | 4 |
 
 ### 인코딩된 비디오 파일 형식 {#encoded-video-file-format}
@@ -415,15 +415,15 @@ Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하�
 
 ## YouTube {#publishing-videos-to-youtube}에 비디오 게시
 
-사내 AEM 비디오 자산을 이전에 만든 YouTube 채널에 직접 게시할 수 있습니다.
+전에 만든 YouTube 채널에 직접 온프레미스 AEM 비디오 에셋을 게시할 수 있습니다.
 
-비디오 자산을 YouTube에 게시하려면 태그가 있는 AEM Assets을 설정합니다. 이러한 태그를 YouTube 채널과 연결합니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 정상적인 비디오 게시와 함께 발생합니다.
+비디오 자산을 YouTube에 게시하려면 태그가 있는 AEM Assets을 설정합니다. 이러한 태그를 YouTube 채널과 연관시킵니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하는 경우 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 정상적인 비디오 게시와 함께 발생합니다.
 
-YouTube는 자체 인코딩을 수행합니다. 따라서 AEM에 업로드된 원본 비디오 파일은 Dynamic Media의 인코딩이 만들어진 비디오 변환 대신 YouTube에 게시됩니다. Dynamic Media을 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 비디오를 처리할 필요가 있습니다.
+YouTube은 자체 인코딩을 수행합니다. 따라서 AEM에 업로드된 원본 비디오 파일은 Dynamic Media의 인코딩이 만들어진 비디오 변환 대신 YouTube에 게시됩니다. Dynamic Media을 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 비디오를 처리할 필요가 있습니다.
 
-비디오 처리 프로필을 무시하고 YouTube에 직접 게시하는 경우 간단히 AEM Asset의 비디오 에셋에 볼 수 있는 축소판이 없을 수 있습니다. 또한 다이내믹 미디어 또는 dynamicmedia_scene7 실행 모드에서 실행되는 경우 인코딩되지 않은 비디오는 Dynamic Media 에셋 유형에서 작동하지 않습니다.
+비디오 처리 프로필을 무시하고 YouTube에 직접 게시하는 경우 AEM Asset의 비디오 에셋에 볼 수 있는 축소판이 나타나지 않을 수 있습니다. 또한 다이내믹 미디어 또는 dynamicmedia_scene7 실행 모드에서 실행되는 경우 인코딩되지 않은 비디오는 Dynamic Media 에셋 유형에서 작동하지 않습니다.
 
-YouTube 서버에 비디오 에셋을 게시하려면 YouTube를 통해 안전하고 보안이 적용된 서버 간 인증을 보장하기 위해 다음 작업을 완료해야 합니다.
+YouTube 서버에 비디오 에셋을 게시하려면 YouTube을 사용하여 안전하고 보안이 철저한 서버 간 인증을 위해 다음 작업을 완료해야 합니다.
 
 1. [Google 클라우드 설정 구성](#configuring-google-cloud-settings)
 1. [YouTube 채널 만들기](#creating-a-youtube-channel)
@@ -432,18 +432,18 @@ YouTube 서버에 비디오 에셋을 게시하려면 YouTube를 통해 안전�
 1. [AEM에서 YouTube 설정](#setting-up-youtube-in-aem)
 1. [(선택 사항) 업로드된 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다.](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [YouTube 채널에 비디오 게시](#publishing-videos-to-your-youtube-channel)
-1. [(선택 사항) 게시된 비디오를 YouTube에서 확인](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
-1. [YouTube URL을 웹 응용 프로그램에 연결](#linking-youtube-urls-to-your-web-application)
+1. [(선택 사항) YouTube에서 게시된 비디오 확인](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
+1. [웹 응용 프로그램에 YouTube URL 연결](#linking-youtube-urls-to-your-web-application)
 
-[비디오를 게시 취소하여 YouTube](#unpublishing-videos-to-remove-them-from-youtube)에서 제거할 수도 있습니다.
+또한 [비디오를 게시 취소하여 YouTube](#unpublishing-videos-to-remove-them-from-youtube)에서 제거할 수도 있습니다.
 
 ### Google 클라우드 설정 구성 중 {#configuring-google-cloud-settings}
 
-YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있는 경우 이미 Google 계정을 가지고 있습니다.Google 계정이 없는 경우 계정을 쉽게 만들 수 있습니다. YouTube에 비디오 자산을 게시하려면 자격 증명이 필요하므로 계정이 필요합니다. 이미 만든 계정이 있는 경우 이 작업을 건너뛰고 [Creating a YouTube 채널](#creating-a-youtube-channel)으로 바로 진행합니다.
+YouTube에 게시하려면 Google 계정이 필요합니다. GMAIL 계정이 있는 경우 이미 Google 계정을 가지고 있습니다.Google 계정이 없는 경우 계정을 쉽게 만들 수 있습니다. YouTube에 비디오 자산을 게시하려면 자격 증명이 필요하므로 계정이 필요합니다. 이미 만든 계정이 있는 경우 이 작업을 건너뛰고 바로 [YouTube 채널 만들기](#creating-a-youtube-channel)로 진행합니다.
 
-Google Cloud와 YouTube에 사용되는 Google 계정과 같은 계정이 같을 필요는 없습니다.
+Google Cloud와 YouTube에 사용된 Google 계정에 사용된 계정이 동일할 필요는 없습니다.
 
-Google은 사용자 인터페이스를 주기적으로 변경합니다. 따라서 비디오를 YouTube에 게시하는 단계는 아래 문서화된 것과 약간 다를 수 있습니다. 이 경고는 비디오가 업로드되었는지 확인하려고 할 때 YouTube에도 적용됩니다.
+Google은 사용자 인터페이스를 주기적으로 변경합니다. 따라서 YouTube에 비디오를 게시하는 단계는 아래 문서화된 것과 약간 다를 수 있습니다. 이 경보는 비디오가 업로드되었는지 확인하려고 할 때도 YouTube에 적용됩니다.
 
 >[!NOTE]
 >
@@ -468,7 +468,7 @@ Google 클라우드 설정을 구성하려면:
 
 1. 새 프로젝트 대화 상자의 프로젝트 이름 필드에 새 프로젝트의 이름을 입력합니다.
 
-   프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다.만든 후에는 변경할 수 없습니다. 또한 나중에 AEM에서 YouTube를 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다.그것을 적으셔도 좋습니다
+   프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다.만든 후에는 변경할 수 없습니다. 또한 나중에 AEM에서 YouTube을 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다.그것을 적으셔도 좋습니다
 
 1. **[!UICONTROL 만들기를 클릭합니다.]**
 
@@ -480,7 +480,7 @@ Google 클라우드 설정을 구성하려면:
    ![6_5_googleaccount-api-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. API 및 서비스 페이지의 상단 근처에 있는 **[!UICONTROL API 및 서비스 활성화를 탭합니다.]**
-1. API 라이브러리 페이지의 왼쪽의 **[!UICONTROL 범주]** 아래에서 **[!UICONTROL YouTube를 탭합니다.]** 페이지 오른쪽에서  **[!UICONTROL YouTube 데이터 API를 누릅니다.]**
+1. API 라이브러리 페이지의 왼쪽의 **[!UICONTROL 범주]** 아래에서 **[!UICONTROL YouTube을 탭합니다.]** 페이지 오른쪽에서  **[!UICONTROL YouTube 데이터 API를 누릅니다.]**
 1. YouTube 데이터 API v3 페이지에서 **[!UICONTROL 활성화를 탭합니다.]**
 
    ![6_5_googleaccount-api-enable3](assets/6_5_googleaccount-apis-enable3.png)
@@ -535,7 +535,7 @@ Google 클라우드 설정을 구성하려면:
 
 1. `client_id.json` 파일을 저장합니다.
 
-   나중에 Adobe Experience Manager에서 YouTube를 설정할 때 다운로드한 json 파일이 필요합니다.
+   나중에 Adobe Experience Manager에서 YouTube을 설정할 때 다운로드한 json 파일이 필요합니다.
 
 1. **[!UICONTROL 완료를 클릭합니다.]**
 
@@ -547,17 +547,17 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
 >[!CAUTION]
 >
->AEM의 YouTube 설정 아래에 채널을 추가하기 전에 YouTube *에 채널을 하나 이상 설정해야 합니다(아래 AEM](#setting-up-youtube-in-aem)에서 YouTube 설정 참조).*[ 이렇게 하지 않으면 기존 채널이 없다는 경고가 표시되지 않습니다. 그러나 채널을 추가할 때도 Google 인증이 계속 수행되지만 비디오를 전송할 채널을 선택할 수 있는 옵션은 없습니다.
+>AEM의 YouTube 설정 아래에 채널을 추가하기 전에 YouTube *에 채널을 하나 이상 설정해야 합니다(* 아래 AEM](#setting-up-youtube-in-aem)에서 YouTube 설정 참조). [ 이렇게 하지 않으면 기존 채널이 없다는 경고가 표시되지 않습니다. 그러나 채널을 추가할 때도 Google 인증이 계속 수행되지만 비디오를 전송할 채널을 선택할 수 있는 옵션은 없습니다.
 
 YouTube 채널을 만들려면:
 
 1. [https://www.youtube.com](https://www.youtube.com/)로 이동하여 Google 계정 자격 증명을 사용하여 로그인합니다.
-1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진(단색 원 내에 문자로 나타날 수도 있음)을 클릭한 다음 **[!UICONTROL YouTube 설정]** (원형 톱니바퀴 아이콘)을 클릭합니다.
+1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진(단색 원 내에 문자로 나타날 수도 있음)을 클릭한 다음 **[!UICONTROL YouTube 설정]** (둥근 톱니바퀴 아이콘)을 클릭합니다.
 1. 개요 페이지의 추가 기능 머리글 아래에서 **[!UICONTROL 내 채널을 모두 보거나 새 채널을 만듭니다.]**
 1. 채널 페이지에서 **[!UICONTROL 새 채널 만들기를 클릭합니다.]**
 1. 브랜드 계정 페이지의 브랜드 계정 이름 필드에 비디오 자산을 게시할 위치를 선택하는 회사 이름이나 다른 채널 이름을 입력한 다음 **[!UICONTROL 만들기를 클릭합니다.]**
 
-   AEM에서 YouTube를 설정할 때 다시 입력해야 하기 때문에 여기에 입력한 이름을 기억하십시오.
+   AEM에서 YouTube을 설정할 때 다시 입력해야 하므로 여기에 입력한 이름을 기억하십시오.
 
 1. (선택 사항) 필요한 경우 채널을 더 추가합니다.
 
@@ -567,7 +567,7 @@ YouTube 채널을 만들려면:
 
 비디오를 YouTube에 게시하려면 AEM에서 하나 이상의 YouTube 채널에 태그를 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-administering/tags.md)를 참조하십시오.
 
-또는 AEM에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 [Enabling the YouTube 게시 복제 에이전트](#enabling-the-youtube-publish-replication-agent)로 이동할 수 있습니다.
+또는 AEM에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 [YouTube 게시 복제 에이전트 활성화](#enabling-the-youtube-publish-replication-agent)로 이동할 수 있습니다.
 
 ### YouTube 게시 복제 에이전트 {#enabling-the-youtube-publish-replication-agent} 활성화
 
@@ -579,14 +579,14 @@ YouTube 게시 복제 에이전트를 활성화한 후 Google 클라우드 계�
 1. 복제 에이전트를 켜려면 **[!UICONTROL 활성화됨]** 확인란을 선택합니다.
 1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-   이제 AEM에서 YouTube를 설정할 수 있습니다.
+   이제 AEM에서 YouTube을 설정할 수 있습니다.
 
 ### AEM {#setting-up-youtube-in-aem}에서 YouTube 설정
 
 AEM 6.4부터 AEM에서 YouTube 게시를 설정하는 새로운 터치 사용자 인터페이스 방법이 도입되었습니다. 사용 중인 AEM의 설치된 인스턴스를 기준으로 다음 중 하나를 수행합니다.
 
-* 6.4 이전에 AEM에서 YouTube를 구성하려면 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before) 이전에 [AEM에서 YouTube 설정을 참조하십시오.
-* AEM 6.4 이상에서 YouTube를 구성하려면 AEM 6.4 이상에서 [YouTube 설정](#setting-up-youtube-in-aem-and-later)을 참조하십시오.
+* 6.4 이전에 AEM에서 YouTube을 구성하려면 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before) 이전에 AEM에서 YouTube 설정을 참조하십시오.[
+* AEM 6.4 이상에서 YouTube을 구성하려면 [AEM 6.4 이상에서 YouTube 설정](#setting-up-youtube-in-aem-and-later)을 참조하십시오.
 
 #### AEM 6.4 이상에서 YouTube 설정 {#setting-up-youtube-in-aem-and-later}
 
@@ -595,10 +595,10 @@ AEM 6.4부터 AEM에서 YouTube 게시를 설정하는 새로운 터치 사용�
 1. **[!UICONTROL global]**&#x200B;을(를) 누릅니다(선택하지 않음).
 
 1. 글로벌 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기를 탭합니다.]**
-1. YouTube 구성 만들기 페이지의 Google 클라우드 플랫폼 설정 아래의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
+1. YouTube 구성 만들기 페이지의 Google Cloud 플랫폼 설정 아래의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
 
    처음에 Google 클라우드 설정을 처음 구성할 때 프로젝트 ID를 지정했습니다.
-YouTube 구성 만들기 페이지를 열어 둡니다.잠시 후에 다시 돌아오실 겁니다
+YouTube 구성 만들기 페이지를 엽니다.잠시 후에 다시 돌아오실 겁니다
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -635,12 +635,12 @@ YouTube 구성 만들기 페이지를 열어 둡니다.잠시 후에 다시 돌�
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
-#### 6.4 이전 AEM에서 YouTube 설정 {#setting-up-youtube-in-aem-before}
+#### 6.4 {#setting-up-youtube-in-aem-before} 이전에 AEM에서 YouTube 설정
 
 1. Dynamic Media 인스턴스에 관리자로 로그인해야 합니다.
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 누른 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services을 누릅니다.]**
-1. 제3자 서비스 머리글 아래의 YouTube에서 **[!UICONTROL 지금 구성을 탭합니다.]**
+1. 제3자 서비스 머리글 아래의 YouTube 아래에서 **[!UICONTROL 지금 구성을 탭합니다.]**
 1. 구성 만들기 대화 상자의 각 필드에 제목(필수)과 이름(선택 사항)을 입력합니다.
 1. **[!UICONTROL 만들기를 누릅니다.]**
 1. YouTube 계정 설정 대화 상자의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
@@ -656,7 +656,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
    이제 AEM에서 YouTube 채널을 설정합니다.
 
 1. **[!UICONTROL 사용 가능한 채널]**&#x200B;의 오른쪽에서 **+**(더하기 기호 아이콘)을 누릅니다.
-1. [YouTube 채널 설정] 대화 상자의 [제목] 필드에 **[!UICONTROL YouTube]** 이전 버전에 하나 이상의 채널을 추가하는 작업에서 만든 채널의 이름을 입력합니다.
+1. [YouTube 채널 설정] 대화 상자의 [제목] 필드에 **[!UICONTROL YouTube]** 이전 버전에 하나 이상의 채널 추가 작업에서 만든 채널의 이름을 입력합니다.
 
    원할 경우 선택적으로 설명을 추가할 수 있습니다.
 
@@ -685,7 +685,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
 
 선택적으로 비디오를 업로드할 때 YouTube 속성 설정을 자동화할 수 있습니다. AEM에서 메타데이터 처리 프로필을 만들어 이를 완수합니다.
 
-메타데이터 처리 프로필을 만들려면 먼저 **[!UICONTROL 필드 레이블]**, **[!UICONTROL 속성]**&#x200B;에 매핑 및 **[!UICONTROL Choices]** 필드에서 비디오를 위한 메타데이터 스키마에 있는 값을 복사합니다. 그런 다음 해당 값을 YouTube 비디오 메타데이터 처리 프로필에 추가하여 프로필을 만듭니다.
+메타데이터 처리 프로필을 만들려면 먼저 **[!UICONTROL 필드 레이블]**, **[!UICONTROL 속성]**&#x200B;에 매핑 및 **[!UICONTROL Choices]** 필드에서 비디오를 위한 메타데이터 스키마에 있는 값을 복사합니다. 그런 다음 해당 값을 YouTube 비디오 메타데이터 처리 프로파일에 추가하여 비디오 메타데이터 처리 프로필을 만듭니다.
 
 업로드된 비디오에 대한 기본 YouTube 속성 설정을 자동화하려면:
 
@@ -693,7 +693,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
 1. **[!UICONTROL 기본값을 클릭합니다.]** (선택 상자의 왼쪽에 &quot;기본값&quot;을 선택하지 마십시오.)
 1. **[!UICONTROL 기본]** 페이지에서 **[!UICONTROL video]**&#x200B;의 왼쪽에 있는 상자를 선택한 다음 **[!UICONTROL 편집을 클릭합니다.]**
 1. 메타데이터 스키마 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 클릭합니다.
-1. YouTube 게시 머리글에서 **[!UICONTROL YouTube 카테고리.]**
+1. YouTube 게시 머리글에서 **[!UICONTROL YouTube 카테고리를 클릭합니다.]**
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭에서 다음을 수행합니다.
 
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
@@ -702,7 +702,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
    * **[!UICONTROL 선택 항목]**에서 사용할 기본값(예: 사람 및 블로그, 과학 및 기술)을 선택하고 복사합니다.
 복사한 값을 열려 있는 텍스트 편집기에 붙여넣습니다. 나중에 메타데이터 처리 프로필을 만들 때 이 값이 필요합니다. 텍스트 편집기를 엽니다.
 
-1. YouTube 게시 머리글에서 **[!UICONTROL YouTube 개인 정보 보호.]**
+1. YouTube 게시 머리글에서 **[!UICONTROL YouTube 개인 정보 보호]**&#x200B;를 클릭합니다.
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭에서 다음을 수행합니다.
 
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
@@ -717,7 +717,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
 1. 페이지의 오른쪽 위 모서리 근처에 있는 메타데이터 프로필 페이지에서 **[!UICONTROL 만들기를 클릭합니다.]**
 1. 메타데이터 프로필 추가 대화 상자의 **[!UICONTROL 프로필 제목]** 텍스트 필드에 이름 `YouTube Video`을 입력한 다음 **[!UICONTROL 만들기.]**
 1. 메타데이터 프로필 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 클릭합니다.
-1. 다음을 수행하여 복사한 YouTube 게시 값을 프로필에 추가합니다.
+1. 다음을 수행하여 복사된 YouTube 게시 값을 프로필에 추가합니다.
 
    * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 클릭합니다.
    * (선택 사항) **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 지정된 구성 요소를 왼쪽으로 드래그하여 양식 영역에 놓습니다.
@@ -726,18 +726,18 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
    * **[!UICONTROL 빌드 양식]** 탭을 클릭한 다음 **[!UICONTROL 복수 값 텍스트]**&#x200B;라는 구성 요소를 드래그하여 방금 만든 **[!UICONTROL YouTube 게시]** 머리글 아래에 놓습니다.
 
    * **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
-   * 페이지 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 각 필드에 붙여 넣습니다. 선택 항목 값을 기본값 필드에 붙여 넣습니다.
+   * 페이지의 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 각 필드에 붙여 넣습니다. 선택 항목 값을 기본값 필드에 붙여 넣습니다.
 
-1. 다음을 수행하여 복사한 YouTube 개인 정보 값을 프로필에 추가합니다.
+1. 다음을 수행하여 복사된 YouTube 개인 정보 값을 프로필에 추가합니다.
 
    * 페이지 오른쪽에서 **[!UICONTROL 양식 작성]** 탭을 클릭합니다.
    * (선택 사항) **[!UICONTROL 섹션 헤더]**&#x200B;라는 레이블이 지정된 구성 요소를 왼쪽으로 드래그하여 양식 영역에 놓습니다.
    * (선택 사항) **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
    * (선택 사항) 페이지 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 `YouTube Privacy`을 입력합니다.
-   * **[!UICONTROL 빌드 양식]** 탭을 클릭한 다음 **[!UICONTROL 복수 값 텍스트]**&#x200B;라는 구성 요소를 드래그하여 방금 만든 **[!UICONTROL YouTube 개인 정보 보호]** 머리글 아래에 놓습니다.
+   * **[!UICONTROL 양식 작성]** 탭을 클릭한 다음 **[!UICONTROL 복수 값 텍스트]**&#x200B;라는 이름의 구성 요소를 드래그하여 방금 만든 **[!UICONTROL YouTube 개인 정보 보호]** 머리글 아래에 놓습니다.
 
    * **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
-   * 페이지 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 각 필드에 붙여 넣습니다. 선택 항목 값을 기본값 필드에 붙여 넣습니다.
+   * 페이지의 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 각 필드에 붙여 넣습니다. 선택 항목 값을 기본값 필드에 붙여 넣습니다.
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장을 클릭합니다.]**
 1. 비디오를 업로드할 폴더에 YouTube 게시 메타데이터 프로필을 적용합니다. 메타데이터 프로필과 비디오 프로필 세트를 모두 설정해야 합니다.
@@ -750,19 +750,19 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
 
 >[!NOTE]
 >
->Dynamic Media - Scene7 모드에서 실행 중인 경우 즉시 게시가 YouTube에 자동으로 게시되지 않습니다. Dynamic Media - Scene7 모드가 설정되면 다음 두 가지 게시 옵션 중에서 선택할 수 있습니다.**[!UICONTROL 즉시]** 또는 **[!UICONTROL 활성화 시.]**
+>Dynamic Media - Scene7 모드에서 실행될 때 즉시 게시가 YouTube에 자동으로 게시되지 않습니다. Dynamic Media - Scene7 모드가 설정되면 다음 두 가지 게시 옵션 중에서 선택할 수 있습니다.**[!UICONTROL 즉시]** 또는 **[!UICONTROL 활성화 시.]**
 >
->**[!UICONTROL 즉시 게시]** 는 업로드된 자산(IPS와 동기화된 후)이 배달 시스템에 자동으로 게시됨을 의미합니다. Dynamic Media의 경우에는 그렇지만 YouTube에서는 그렇지 않습니다. YouTube에 게시하려면 AEM 작성자 방식으로 게시해야 합니다.
+>**[!UICONTROL 즉시 게시]** 는 업로드된 자산(IPS와 동기화된 후)이 배달 시스템에 자동으로 게시됨을 의미합니다. Dynamic Media의 경우 그렇긴 하지만 YouTube의 경우에는 그렇지 않습니다. YouTube에 게시하려면 AEM 작성자 방법을 통해 게시해야 합니다.
 
 >[!NOTE]
 >
->YouTube에서 콘텐츠를 게시하기 위해 AEM에서는 진행 상황을 모니터링하고 실패 정보를 볼 수 있도록 **[!UICONTROL Publish to YouTube]** 작업 과정을 사용합니다.
+>YouTube에서 콘텐츠를 게시하기 위해 AEM은 진행 상황을 모니터링하고 실패 정보를 볼 수 있는 **[!UICONTROL YouTube에 게시]** 작업 과정을 사용합니다.
 >
->[비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+>[비디오 인코딩 모니터링 및 YouTube 게시 진행](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 >
->자세한 진행 정보를 보려면 복제 아래의 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스가 필요합니다.
+>자세한 진행 정보를 보려면 복제 중인 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스가 필요합니다.
 
-비디오를 YouTube 채널에 게시하려면:
+YouTube 채널에 비디오를 게시하려면:
 
 1. AEM에서 YouTube 채널에 게시할 비디오 자산으로 이동합니다.
 1. 비디오 자산(응용 비디오 세트)을 선택합니다.
@@ -780,11 +780,11 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 
-### (선택 사항) 게시된 비디오를 YouTube {#optional-verifying-the-published-video-on-youtube}에서 확인
+### (선택 사항) YouTube {#optional-verifying-the-published-video-on-youtube}에서 게시된 비디오를 확인하는 중
 
 선택적으로 YouTube 게시(또는 게시 취소)의 진행 상태를 모니터링할 수 있습니다.
 
-[비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+[비디오 인코딩 모니터링 및 YouTube 게시 진행](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
 게시 시간은 기본 소스 비디오 형식, 파일 크기 및 업로드 트래픽을 포함하는 다양한 요소에 따라 크게 다를 수 있습니다. 게시 프로세스는 몇 분에서 몇 시간 정도 걸릴 수 있습니다. 또한 고해상도 포맷은 훨씬 더 느리게 렌더링됩니다. 예를 들어 720p 및 1080p는 480p보다 표시되는 데 훨씬 오래 걸립니다.
 
@@ -792,35 +792,35 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.잠시 후에 다시 돌
 
 ### YouTube URL을 웹 응용 프로그램 {#linking-youtube-urls-to-your-web-application}에 연결
 
-비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 얻을 수 있습니다. YouTube URL을 복사하면 클립보드에 배치되므로 필요에 따라 웹 사이트 또는 애플리케이션의 페이지에 붙여넣을 수 있습니다.
+비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 얻을 수 있습니다. YouTube URL을 복사하면 클립보드에 보관되므로 필요에 따라 웹 사이트 또는 애플리케이션의 페이지에 붙여넣을 수 있습니다.
 
 >[!NOTE]
 >
->YouTube URL은 비디오 자산을 YouTube에 게시하기 전까지 복사할 수 없습니다.
+>비디오 에셋을 YouTube에 게시해야만 YouTube URL을 복사할 수 있습니다.
 
-YouTube URL을 웹 애플리케이션에 연결하려면:
+YouTube URL을 웹 응용 프로그램에 연결하려면:
 
 1. 복사할 URL이 있는 *YouTube 게시된* 비디오 자산으로 이동한 다음 선택합니다.
 
-   YouTube URL은 *after*&#x200B;을(를) 복사하여 *게시된*&#x200B;만 YouTube에 사용할 수 있습니다.
+   YouTube URL은 *after*&#x200B;을(를) 복사할 때만 사용할 수 있습니다. 먼저 *게시된*&#x200B;을(를) YouTube에 게시했습니다.
 
 1. 도구 모음에서 **[!UICONTROL 속성을 클릭합니다.]**
 1. **[!UICONTROL 고급]** 탭을 클릭합니다.
-1. YouTube 게시 머리글의 YouTube URL 목록에서 URL 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
+1. YouTube Publishing 헤더의 YouTube URL 목록에서 URL 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
 
-### 비디오를 게시 취소하여 YouTube {#unpublishing-videos-to-remove-them-from-youtube}에서 제거
+### YouTube {#unpublishing-videos-to-remove-them-from-youtube}에서 제거할 비디오 게시 취소
 
 AEM에서 비디오 에셋을 게시 취소하면 비디오가 YouTube에서 제거됩니다.
 
 >[!CAUTION]
 >
->YouTube에서 바로 비디오를 제거하면 AEM은 이를 인식하지 못하고 비디오가 YouTube에 아직 게시된 것처럼 계속 동작합니다. 항상 AEM을 통해 YouTube에서 비디오 에셋을 게시 취소합니다.
+>YouTube에서 바로 비디오를 제거하면 AEM은 해당 비디오가 아직 YouTube에 게시된 것처럼 행동하며 이를 인식하지 못합니다. 항상 AEM을 통해 YouTube에서 비디오 에셋을 게시 취소합니다.
 
 >[!NOTE]
 >
->YouTube에서 콘텐츠를 제거하려면 진행 상황을 모니터링하고 오류 정보를 볼 수 있는 **[!UICONTROL YouTube에서 게시 취소]** 작업 과정을 사용합니다.
+>YouTube에서 콘텐트를 제거하기 위해 AEM은 진행 상황을 모니터링하고 오류 정보를 볼 수 있는 YouTube ]**작업 과정에서**[!UICONTROL &#x200B;게시 취소 워크플로우를 사용합니다.
 >
->[비디오 인코딩 및 YouTube 게시 진행 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+>[비디오 인코딩 모니터링 및 YouTube 게시 진행](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
 YouTube에서 제거할 비디오를 게시 취소하려면 다음을 수행하십시오.
 
@@ -853,11 +853,11 @@ YouTube에서 제거할 비디오를 게시 취소하려면 다음을 수행하�
 
    ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. 자산 세부 사항에서 진행 상황을 봅니다. 자산을 탭하거나 클릭하면 드롭다운 메뉴를 열고 **[!UICONTROL 타임라인을 선택합니다.]** 인코딩 또는 YouTube 게시와 같은 워크플로우 활동으로 범위를 좁히려면 워크플로우를  **[!UICONTROL 선택합니다.]**
+1. 자산 세부 사항에서 진행 상황을 봅니다. 자산을 탭하거나 클릭하면 드롭다운 메뉴를 열고 **[!UICONTROL 타임라인을 선택합니다.]** 인코딩 또는 YouTube 게시과 같은 워크플로우 활동으로 범위를 좁히려면 워크플로우를  **[!UICONTROL 선택합니다.]**
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
-   인코딩 등 모든 워크플로우 정보가 타임라인에 표시됩니다. YouTube 게시를 위한 워크플로우 타임라인에는 YouTube 채널 이름과 YouTube 비디오 URL도 포함되어 있습니다. 또한 게시가 완료된 후 워크플로우 타임라인에 오류 알림이 표시됩니다.
+   인코딩 등 모든 워크플로우 정보가 타임라인에 표시됩니다. YouTube 게시의 경우 워크플로우 타임라인에는 YouTube 채널의 이름과 YouTube 비디오 URL도 포함됩니다. 또한 게시가 완료된 후 워크플로우 타임라인에 오류 알림이 표시됩니다.
 
    >[!NOTE]
    >
@@ -949,11 +949,11 @@ YouTube에서 제거할 비디오를 게시 취소하려면 다음을 수행하�
    * 게시 실패
    * 게시 완료 - 채널 및 URL에 대한 정보 포함
 
-   확인란을 지우면 YouTube 게시 워크플로우에서 지정된 이메일 알림을 받지 못함을 의미합니다.
+   확인란을 지우면 YouTube 게시 워크플로우에서 지정한 이메일 알림을 받지 않게 됩니다.
 
    >[!NOTE]
    >
-   >이러한 이메일은 YouTube에만 해당되며 일반적인 워크플로 이메일 알림에도 추가됩니다. 그 결과, 2개의 이메일 알림 세트(CQ Workflow Email Notification Service ]**일 CQ Workflow에서 사용할 수 있는 일반 알림 및 구성 설정에 따라 YouTube에만 적용되는 알림)를 받을 수 있습니다.**[!UICONTROL 
+   >이러한 이메일은 YouTube에만 해당되며 일반적인 워크플로우 이메일 알림에도 추가됩니다. 그 결과, 2개의 이메일 알림 세트(CQ Workflow Email Notification Service ]**일 CQ Workflow Email Notification Service에서 사용할 수 있는 일반 알림 및 구성 설정에 따라 YouTube에만 제공되는 알림)를 받을 수 있습니다.**[!UICONTROL 
 
 1. 완료되면 대화 상자의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 완료]** 아이콘(확인 표시)을 누릅니다.
 1. YouTube에 게시 워크플로우 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 동기화를 탭합니다.]**
@@ -1133,7 +1133,7 @@ URL에서 JSON 함수 사용에 대한 자세한 내용은 *Dynamic Media 이미
 >
 >사용되는 비디오 플레이어는 장 마커 사용을 지원해야 합니다. Dynamic Media 비디오 플레이어는 장(chapter) 마커를 지원하지만 제3자 비디오 플레이어를 사용하는 경우에는 지원하지 않을 수 있습니다.
 
-원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 정의 비디오 뷰어를 만들고 브랜딩할 수 있습니다. 장 탐색을 사용하여 자신의 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 뷰어 SDK API에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;수정자를 사용하여 비헤이비어 사용자 정의&quot; 머리글을 참조하십시오. [HTML5 뷰어 SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) 설명서를 참조하십시오.
+원하는 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 정의 비디오 뷰어를 만들고 브랜딩할 수 있습니다. 장 탐색을 사용하여 자신의 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 뷰어 SDK API에서 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber` 클래스의 &quot;수정자를 사용하여 비헤이비어 사용자 정의&quot; 머리글을 참조하십시오. [HTML5 뷰어 SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) 설명서를 참조하십시오.
 
 <!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1329,4 +1329,3 @@ T **비디오 축소판 추가**,
 1. 이미지를 업로드하고 게시한 후 축소판 변경 페이지에서 **[!UICONTROL 변경 내용 저장을 탭합니다.]**
 
    사용자 정의 축소판이 비디오에 추가됩니다.
-
