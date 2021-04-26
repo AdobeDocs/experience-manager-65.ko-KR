@@ -3,14 +3,14 @@ title: AEM 6.5 기능 사용 안내서
 seo-title: AEM 6.5 기능 사용 안내서
 description: AEM 6.5의 필수 기능에 대한 개요
 seo-description: AEM 6.5의 필수 기능에 대한 개요
+exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 100%
+source-wordcount: '157'
+ht-degree: 92%
 
 ---
-
 
 # AEM 6.5 기능 사용 안내서 {#aem-65-capabilities-user-guides}
 
@@ -36,7 +36,11 @@ Adobe Managed Services 클라우드 배포를 포함하여 [Adobe Experience Man
 
 ## AEM Screens {#aem-screens}
 
-[동적 및 대화형 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다.](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[동적 및 대화형 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+
+## AEM Commerce {#aem-commerce}
+
+[AEM Commerce에 대해 알아봅니다.](/help/commerce/home.md)
 
 ## AEM Communities {#aem-communities}
 
