@@ -2,9 +2,9 @@
 title: AEM 컨텐츠 및 상거래 릴리스 노트 2021
 description: AEM 컨텐츠 및 상거래 릴리스 노트 2021
 translation-type: tm+mt
-source-git-commit: 2d0b52dbf85e1fbe91c09a8366744aa77f25cd73
+source-git-commit: 1a6d713e74056333b18ed68f58876c2a75d535b8
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '498'
 ht-degree: 16%
 
 ---
@@ -27,13 +27,11 @@ ht-degree: 16%
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
-| CIF 추가 기능 | v2021.04.22 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| CIF 추가 기능 | v021.04.22 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | CIF 핵심 구성 요소 | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia 참조 사이트 | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### 새로운 기능 {#what-is-new-april}
-
-* **이제  [Adobe 소프트웨어 배포를 통해 CIF Add-on을 이용할 수 있습니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 이전 AEM CIF 커넥터는 유지 관리 모드로 전환되므로 더 이상 사용하지 않아야 합니다. 새 CIF 추가 기능으로 마이그레이션하십시오.**
 
 * 카테고리 UID 지원 - 범주 ID에 문자열을 사용하는 시스템의 타사 상거래 통합을 해제합니다.
 
