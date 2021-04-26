@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
+exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 translation-type: tm+mt
-source-git-commit: cb07e24b01084f57ad46615cb463ad5a0329c181
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 7%
 
 ---
-
 
 # 배포 및 유지 관리{#deploying-and-maintaining}
 
@@ -50,7 +50,7 @@ ht-degree: 7%
 * [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
 * [구성](/help/sites-deploying/configuring.md)
 * [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)
-* [eCommerce](/help/sites-deploying/ecommerce.md)
+* [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [구성 방법 문서](/help/sites-deploying/ht-deploy.md)
 * [웹 콘솔](/help/sites-deploying/web-console.md)
 * [복제 문제 해결](/help/sites-deploying/troubleshoot-rep.md)
@@ -96,7 +96,7 @@ AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 �
 
 이러한 인스턴스는 설치된 소프트웨어에 대해 동일합니다. 구성 하나만으로 차별화됩니다. 또한 대부분의 설치에서 디스패처를 사용합니다.
 
-* **발송자**:정적 웹 서버(Apache httpd, Microsoft IIS 등) aem 디스패처 모듈을 사용하여 추가합니다. 게시 인스턴스에서 생성한 웹 페이지를 캐시하여 성능을 향상시킵니다.
+* **발송자**:정적 웹 서버(Apache httpd, Microsoft IIS 등) AEM 디스패처 모듈을 사용하여 추가합니다. 게시 인스턴스에서 생성한 웹 페이지를 캐시하여 성능을 향상시킵니다.
 
 이 설정에는 많은 고급 옵션과 설명이 있지만 대부분의 배포에서 작성자, 게시 및 발송자의 기본 패턴은 가장 중요합니다. 우리는 비교적 간단한 설정에 초점을 맞추면서 시작할 것입니다. 다음 단계에 고급 배포 옵션에 대한 논의가 있을 예정입니다.
 
@@ -204,7 +204,7 @@ AEM에서 jar 파일의 압축을 풀고 직접 설치한 다음 시작하는 �
 
 ### 작성자 및 게시 설치 {#author-and-publish-installs}
 
-**`localhost:4502`**&#x200B;의 기본 설치(**author** 인스턴스)는 처음 실행하기 전에 `jar` 파일의 이름을 바꾸기만 하면 변경할 수 있습니다. 이름 지정 패턴은 다음과 같습니다.
+**`localhost:4502`**&#x200B;의 기본 설치(**author** 인스턴스)는 처음 실행하기 전에 `jar` 파일의 이름을 변경하여 변경할 수 있습니다. 이름 지정 패턴은 다음과 같습니다.
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
@@ -311,7 +311,7 @@ AEM은 웹 브라우저를 적절한 페이지(일반적으로 로그인 페이�
 * [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
 * [구성](/help/sites-deploying/configuring.md)
 * [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)
-* [eCommerce](/help/sites-deploying/ecommerce.md)
+* [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [구성 방법 문서](/help/sites-deploying/ht-deploy.md)
 * [웹 콘솔](/help/sites-deploying/web-console.md)
 * [복제 문제 해결](/help/sites-deploying/troubleshoot-rep.md)
