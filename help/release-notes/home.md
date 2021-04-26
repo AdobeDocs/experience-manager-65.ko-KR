@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager 6.5 릴리스 노트
 description: AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이상 사용되지 않거나 제거된 기능, 알려진 문제 등 AEM의 최신 릴리스에 대한 중요한 정보를 다룹니다.
+exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 translation-type: tm+mt
-source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 94%
+source-wordcount: '384'
+ht-degree: 92%
 
 ---
-
 
 # Adobe Experience Manager 6.5 릴리스 노트
 
@@ -34,6 +34,7 @@ AEM 릴리스 노트에서는 새로운 기능, 지원되는 플랫폼, 더 이�
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
+| [상거래 사용 안내서](/help/commerce/home.md) | AEM에서 제공하는 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
