@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
+exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 92%
 
 ---
-
 
 # 구성 요소{#components}
 
@@ -37,7 +37,7 @@ ht-degree: 92%
 
    표준 페이지 컨텐츠를 만드는 데 사용되는 구성 요소는 **일반**, **열** 및 **Forms** 그룹에 주로 포함되어 있습니다.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
    
 AEM 내의 eCommerce 기능에도 **상거래** 그룹의 다양한 구성 요소가 포함되어 있습니다. 사용되는 상거래 엔진에 따라 실제 사용 내용이 달라질 수 있습니다.
@@ -45,4 +45,3 @@ AEM 내의 eCommerce 기능에도 **상거래** 그룹의 다양한 구성 요�
 ## 디자인 모드를 사용하여 구성 요소 구성 {#using-design-mode-to-configure-components}
 
 작성자가 표준 설치에서 사이드 킥을 통해 액세스할 수 있는 구성 요소 외에도 다양한 기타 구성 요소를 사용할 수 있습니다. [디자인 모드](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components)를 사용하여 이러한 구성 요소를 활성화/비활성화하고 특정 구성 요소의 매개 변수를 편집할 수 있습니다.
-
