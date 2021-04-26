@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
+exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 97%
 
 ---
-
 
 # 구성 요소{#components}
 
@@ -62,7 +62,7 @@ ht-degree: 97%
 
 * [커뮤니티](/help/communities/author-communities.md) - 구성 요소는 웹 사이트에 포럼 및 댓글과 같은 대화형 기능을 제공합니다. 이러한 구성 요소 중 대다수는 [커뮤니티 사이트](/help/communities/overview.md)가 생성될 때 포함됩니다.
 
-* [eCommerce](/help/sites-administering/ecommerce.md) - AEM 내의 eCommerce 기능에도 다양한 구성 요소가 포함되어 있습니다. 사용되는 상거래 엔진에 따라 실제 사용 내용이 달라질 수 있습니다.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - AEM 내의 eCommerce 기능에도 다양한 구성 요소가 포함되어 있습니다. 사용되는 상거래 엔진에 따라 실제 사용 내용이 달라질 수 있습니다.
 
 ### 구성 요소 구성 {#configuring-components}
 
@@ -70,4 +70,3 @@ ht-degree: 97%
 
 * 페이지가 권장되는 편집 가능한 현대적 템플릿을 기반으로 하는 경우 [템플릿을 편집](/help/sites-authoring/templates.md)하여 특정 구성 요소에 대해 이러한 템플릿을 활성화/비활성화하고 매개 변수를 편집할 수 있습니다.
 * 페이지가 정적 템플릿을 기반으로 하는 경우 [디자인 모드](/help/sites-authoring/default-components-designmode.md#enable-disable-components)를 사용하여 특정 구성 요소에 대해 이러한 페이지를 활성화/비활성화하고 매개 변수를 편집할 수 있습니다.
-
