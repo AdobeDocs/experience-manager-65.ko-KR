@@ -5,9 +5,9 @@ topics: Commerce
 feature: 전자 상거래 통합 프레임워크
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 5%
 
 ---
@@ -28,17 +28,17 @@ AEM 컨텐츠 및 상거래에 대한 온보딩은 2단계 프로세스입니다
 
 2. 상거래 솔루션과 AEM 연결
 
-### AEM 6.5용 AEM Content 및 Commerce Add-on 설치
+### AEM 6.5용 AEM 콘텐츠 및 상거래 추가 기능 설치 {#install-add-on}
 
 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 포털에서 AEM 6.5용 AEM Commerce 추가 기능을 다운로드하고 설치합니다.
 
 필요한 AEM 6.5 서비스 팩을 시작하고 설치합니다. 마지막으로 사용 가능한 서비스 팩을 설치하는 것이 좋습니다.
 
-    >[!참고]
-    >
-    >AEM Managed Service 고객을 위한 CSE에서 수행합니다.
+>[!NOTE]
+>
+>이 작업은 AEM Managed Service 고객을 위한 CSE에서 수행합니다.
 
-### 전자 상거래 시스템에 AEM 연결
+### AEM을 상거래 시스템 {#connect}에 연결
 
 AEM은 액세스 가능한 AEM용 GraphQL 끝점이 있는 모든 상거래 시스템에 연결할 수 있습니다. 이러한 끝점은 일반적으로 공개적으로 사용할 수 있거나 개별 프로젝트 설정에 따라 개인 VPN 또는 로컬 연결을 통해 연결할 수 있습니다.
 
