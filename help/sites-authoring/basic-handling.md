@@ -10,23 +10,25 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
+exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 translation-type: tm+mt
-source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 100%
 
 ---
 
-
 # 기본 처리{#basic-handling}
 
 >[!NOTE]
 >
 >* 이 페이지는 AEM 작성 환경을 사용할 때 기본 처리에 대한 개요를 알 수 있도록 설계되었습니다. **사이트** 콘솔을 기본으로 사용합니다.
->
->* 몇 가지 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
+   >
+   >
+* 몇 가지 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
 >* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-authoring/keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
+
 >
 
 
@@ -106,7 +108,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
   </tr>
   <tr>
    <td>상거래</td>
-   <td>여기서는 제품, 제품 카탈로그 및 <a href="/help/sites-administering/ecommerce.md">상거래 </a> 사이트와 관련된 주문을 관리할 수 있습니다.</td>
+   <td>여기서는 제품, 제품 카탈로그 및 <a href="/help/commerce/cif-classic/administering/ecommerce.md">상거래 </a> 사이트와 관련된 주문을 관리할 수 있습니다.</td>
   </tr>
   <tr>
    <td>경험 구성요소</td>
@@ -592,4 +594,3 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 필터를 선택하면 해당 위치 필터가 이미 설정된 [검색](/help/sites-authoring/search.md)과 비슷한 패널이 열리므로, 보려는 컨텐츠를 추가로 필터링할 수 있습니다.
 
 ![bh-29](assets/bh-29.png)
-
