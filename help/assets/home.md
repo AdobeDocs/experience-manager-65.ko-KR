@@ -2,16 +2,16 @@
 title: Assets 안내서
 description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
 user-guide-title: Assets 안내서
-feature: Asset Management
+feature: 자산 관리
 role: Business Practitioner, Architect, Administrator
+exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 78%
+source-wordcount: '333'
+ht-degree: 77%
 
 ---
-
 
 # Assets 안내서
 
@@ -40,6 +40,7 @@ ht-degree: 78%
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 Experience Manager의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | Experience Manager 배포 구축 방법을 살펴봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 Experience Manager 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
+| [상거래 사용 안내서](/help/commerce/home.md) | AEM에서 제공하는 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 [!DNL Livefyre]와 공유하는 방법을 보여 줍니다. |
 
@@ -49,7 +50,7 @@ ht-degree: 78%
 * [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Experience Manager 자산 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
-* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
-* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
+* [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
+* [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR)
