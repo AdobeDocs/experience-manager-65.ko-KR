@@ -4,7 +4,7 @@ user-guide-title: AEM Commerce
 breadcrumb-title: Commerce 안내서
 user-guide-description: Experience Manager 상거래를 사용하고 관리하는 방법을 이해합니다.
 translation-type: tm+mt
-source-git-commit: 59c9f513c80bfd453493ec1b26adf18c6a3ca4eb
+source-git-commit: 96bb4904818e7f3f64613c810eeb48f223e287c7
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 25%
@@ -33,7 +33,7 @@ ht-degree: 25%
       + [CIF 구성 요소 사용자 정의](cif/customizing/customize-cif-components.md)
       + [CIF 카탈로그 선택기 사용](cif/customizing/use-cif-pickers.md)
 + [마이그레이션](cif/migration.md)
-+ [릴리스 노트] {#release-notes}
++ 릴리스 노트 {#release-notes}
    + [2021년](cif/release-notes/release-notes-2021.md)
    + [2020년](cif/release-notes/release-notes-2020.md)
    + [2019년](cif/release-notes/release-notes-2019.md)
