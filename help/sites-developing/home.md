@@ -4,10 +4,10 @@ seo-title: AEM 6.5 개발 사용 안내서
 description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 seo-description: AEM 인스턴스를 빌드하는 방법을 다룹니다.
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 100%
+source-wordcount: '357'
+ht-degree: 97%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 100%
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
+| [상거래 사용 안내서](/help/commerce/home.md) | AEM에서 제공하는 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
