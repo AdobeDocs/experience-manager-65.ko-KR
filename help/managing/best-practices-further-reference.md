@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
+exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 translation-type: tm+mt
-source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3783'
 ht-degree: 2%
 
 ---
-
 
 # 검사 목록 - 추가 참조{#the-checklist-further-reference}
 
@@ -34,9 +34,9 @@ AEM을 구현할 때(특히 첫 번째 경우) AEM](https://www.adobe.com/kr/mar
 
 사용할 AEM의 기능과 디자인에 미치는 영향을 고려해 보십시오.예를 들면 다음과 같습니다.
 
-* [상거래](/help/sites-administering/ecommerce.md)
+* [상거래](/help/commerce/cif-classic/administering/ecommerce.md)
 * [스크린](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
-* [자산](/help/assets/assets.md)
+* [에셋](/help/assets/assets.md)
 * [태그](/help/sites-administering/tags.md)
 * [다중 사이트 관리 및 번역](/help/sites-administering/msm-and-translation.md)
 * [양식](/help/forms/home.md)
@@ -111,7 +111,7 @@ AEM은 다른 Adobe 제품 및/또는 제3자 서비스와 통합할 수 있습�
    프로젝트에 적용되는 내용을 다양한 수준에서 명확히 정의합니다.
 
    * 개별 릴리스(반복적인 릴리스 프로세스가 사용되는 경우 고객에게 제공되는지 또는 내부 테스트 팀에 제공되는지 여부에 관계 없음)입니다.
-   * aem 프로젝트.
+   * AEM 프로젝트.
    * 전체 프로젝트;제3자 소프트웨어, 테스트에 미치는 영향, 조직 관련 문제 등 다양한 주제를 다룹니다.
    * 특정 측면에서는 프로젝트 범위 내에 *not*&#x200B;이(가) 아닌 항목을 설명하는 데에도 유용합니다. 이는 필수 문제로 제한되어야 하지만, 혼란과 잘못된 가정을 예방하는데 도움이 될 수 있습니다.
 
@@ -217,7 +217,7 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 사용자의 상황과 웹 사이트의 전략적 중요도에 따라 다음과 같은 인프라를 평가하고 선택할 수 있습니다.
 
 * 서버 수
-* aem 인스턴스 수(작성자 및 게시)
+* AEM 인스턴스 수(작성자 및 게시)
 
 ### 공연 {#performance}
 
@@ -264,7 +264,7 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 그래서 어떻게 실현 가능한(평균) 대응 시간을 결정할 수 있는가? 이것은 종종 경험의 문제입니다.
 
 * 웹 사이트의 과거 경험
-* aem을 사용한 경험
+* AEM을 사용한 경험
 * 평균 응답 시간을 초과하는 복잡한 페이지 인식(가능한 경우 개별적으로 최적화되어야 함)
 
 그러나(제어된 상황에서는) 다음 지침을 적용할 수 있습니다.
@@ -309,7 +309,7 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 
 검색 요청에 대한 타겟을 설정하는 것은 다음 사항에 따라 경험 문제입니다.
 
-* aem 경험
+* AEM 경험
 * 다른 목표에 비해 얼마나 자주 검색을 사용할 것인지 평가
 * 지속성 관리자
 * 검색 색인
