@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
+exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 13%
 
 ---
-
 
 # We.Retail 참조 구현{#we-retail-reference-implementation}
 
@@ -38,7 +38,7 @@ AEM 표준 참조 구현 방식인 We.Retail은 AEM의 가장 강력한 기능�
 | [반응형 레이아웃](/help/sites-authoring/responsive-layout.md) | 모든 페이지에는 화면 및 디바이스 크기에 맞게 동적으로 조정되는 반응형 레이아웃이 포함되어 있습니다. | [해 봐!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md) | 모든 페이지는 편집 가능한 템플릿을 기반으로 하므로 개발자가 아닌 사용자가 템플릿을 조정하고 사용자 정의할 수 있습니다. | [해 봐!](/help/sites-developing/we-retail-editable-templates.md) |
 | [HTML Template Language](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html) | 모든 구성 요소는 HTL을 기반으로 합니다. |  |
-| [eCommerce 기능](/help/sites-developing/ecommerce.md) | 제품 카탈로그 기능 |  |
+| [eCommerce 기능](/help/commerce/cif-classic/developing/ecommerce.md) | 제품 카탈로그 기능 |  |
 | [커뮤니티 사이트](/help/communities/overview.md) | 방문자가 커뮤니티 토론에 참여하거나 블로그를 읽는 등 다양한 작업을 할 수 있도록 허용 |  |
 | [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) | 모든 구성 요소는 새로운 핵심 구성 요소를 기반으로 하며 보다 유용하며 사용자가 즉시 사용할 수 있도록 구성할 수 있습니다 | [해 봐!](/help/sites-developing/we-retail-core-components.md) |
 | [컨텐츠 조각](/help/assets/content-fragments/content-fragments.md) | We.Retail 경험 섹션에서는 컨텐츠 조각을 통해 컨텐츠를 재사용할 수 있는 강력한 기능을 보여줍니다. | [시험해 봐!](/help/sites-developing/we-retail-content-fragments.md) |
@@ -83,7 +83,7 @@ We.Retail은 기술적으로 더 강력하며, 최신 AEM 기술을 더욱 유�
 | **기능** | **We.Retail** | **Geometrixx** |
 |---|---|---|
 | 사이트 구조 글로벌라이제이션 | 언어 마스터가 국가별 사이트에 실시간 복사 | 사용할 수 없음 |
-| 컨텐츠 조각 | 사용 가능 | 사용할 수 없음 |
+| 콘텐츠 조각 | 사용 가능 | 사용할 수 없음 |
 | 경험 구성요소 | 사용 가능 | 사용할 수 없음 |
 | 응답형 레이아웃 | 모든 페이지의 경우 | Geometrixx Media만 |
 | 편집 가능한 템플릿 | 모든 페이지의 경우 | 사용할 수 없음 |
@@ -123,4 +123,3 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 We.Retail 시작 페이지의 미리 보기:
 
 ![screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
-
