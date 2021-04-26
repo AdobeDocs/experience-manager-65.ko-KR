@@ -3,14 +3,14 @@ title: Adobe Experience Manager 6.5 커뮤니티 가이드
 seo-title: Adobe Experience Manager 6.5 커뮤니티 가이드
 description: 이 안내서에서는 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험 만들기와 같은 모든 AEM Communities 작업을 다룹니다.
 seo-description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험 만들기와 같은 모든 AEM Communities 작업을 다룹니다.
+exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
 translation-type: tm+mt
-source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 96%
+source-wordcount: '399'
+ht-degree: 93%
 
 ---
-
 
 # Adobe Experience Manager 6.5 커뮤니티 가이드
 
@@ -38,6 +38,7 @@ ht-degree: 96%
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
+| [상거래 사용 안내서](/help/commerce/home.md) | AEM에서 제공하는 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
