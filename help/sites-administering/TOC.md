@@ -9,10 +9,10 @@ user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: 관리
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 06cbf5ccc957b0cb5bd24c820f5209821ae92cd9
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 19%
+source-wordcount: '637'
+ht-degree: 18%
 
 ---
 
@@ -109,13 +109,6 @@ ht-degree: 19%
    + [세그멘테이션 구성](campaign-segmentation.md)
    + [랜딩 페이지용 디자인 가져오기 확장 및 구성](extending-the-design-importer-for-landingpages.md)
    + [랜딩 페이지를 Adobe Analytics과 통합](integrating-landing-pages-with-adobe-analytics.md)
-+ eCommerce {#ecommerce}
-   + [eCommerce](ecommerce.md)
-   + [개념](concepts.md)
-   + [범용 전자 상거래 관리](generic.md)
-   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 + 통합 {#integration}
    + [제3자 서비스와 통합](third-party-services.md)
    + [Salesforce와 통합](salesforce.md)
