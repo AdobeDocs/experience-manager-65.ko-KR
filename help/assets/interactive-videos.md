@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
-feature: Interactive Videos
+feature: 대화형 비디오
 role: Business Practitioner, Administrator
+exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '6061'
+source-wordcount: '6058'
 ht-degree: 0%
 
 ---
-
 
 # 대화형 비디오{#interactive-videos}
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 &quot;AEM Assets에서 대화형 비디오 사용, 링크 공유 및 YouTube 공유&quot; 웨비나에서는 대화형 비디오 및 기타 기능을 사용하여 전환 기반 이벤트를 비디오 마케팅 컨텐츠에 연결하는 방법을 설명합니다.
 
 >[!NOTE]
-[AEM Assets에서 대화형 비디오, 링크 공유 및 YouTube 공유 사용](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+[AEM Assets에서 인터랙티브한 비디오, 링크 공유 및 YouTube 공유 사용](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## 빠른 시작:대화형 비디오 {#quick-start-interactive-videos}
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 1. **(선택 사항) Quickview 변수**  식별 - 기존 Quickview 구현에서 사용하는 동적 변수를 식별하여 시작합니다. 대화형 비디오를 만들 때 변수를 사용하여 제품 축소판을 해당 제품 Quickview에 매핑합니다. [(선택 사항) Quickview 변수 확인](#optional-identifying-quickview-variables)을 참조하십시오.
    *이 단계는 다음 내용이 모두 참인 경우에만 필요합니다*.・ 빠른 보기를 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
-・ AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* AEM Assets](/help/sites-administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
+・ AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* AEM Assets](/help/commerce/cif-classic/administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
 
 1. **(선택 사항) 대화형 비디오 뷰어 사전**  설정 만들기 - 비디오 스크러버 및 대화형 축소판과 같은 플레이어를 구성하는 다양한 구성 요소의 모양과 동작을 사용자 정의합니다.
 바로 사용 가능한 대화형 비디오 뷰어 사전 설정 `Shoppable_Video_Light` 또는 `Shoppable_Video_Dark`을 대신 사용하려는 경우에는 자신의 대화형 비디오 뷰어 사전 설정을 만들 필요가 없습니다.
@@ -99,7 +99,7 @@ ht-degree: 0%
 >[!NOTE]
 이 작업은 다음 내용이 참인 경우에만 필요합니다.
 * Quickviews에 트리거하여 비디오에 인터랙티브한 요소를 추가하려고 합니다.
-* AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* AEM Assets](/help/sites-administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
+* AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* AEM Assets](/help/commerce/cif-classic/administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
 
 AEM 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
