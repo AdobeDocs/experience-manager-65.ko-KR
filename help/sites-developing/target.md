@@ -10,14 +10,14 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
+exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 1%
 
 ---
-
 
 # 타깃팅된 컨텐츠를 위한 개발{#developing-for-targeted-content}
 
@@ -253,7 +253,7 @@ mbox를 만드는 렌더링된 HTML 페이지의 코드는 다음 예와 유사�
 </script>
 ```
 
-각 매개 변수의 값은 각 순서에 따라 다릅니다. 따라서 구매 속성을 기반으로 코드를 생성하는 구성 요소가 필요합니다. CQ [eCommerce 통합 프레임워크](/help/sites-administering/ecommerce.md)를 사용하여 제품 카탈로그와 통합하고 장바구니 및 체크아웃 페이지를 구현할 수 있습니다.
+각 매개 변수의 값은 각 순서에 따라 다릅니다. 따라서 구매 속성을 기반으로 코드를 생성하는 구성 요소가 필요합니다. CQ [eCommerce 통합 프레임워크](/help/commerce/cif-classic/administering/ecommerce.md)를 사용하여 제품 카탈로그와 통합하고 장바구니 및 체크아웃 페이지를 구현할 수 있습니다.
 
 방문자가 제품을 구입할 때 Geometrixx Outdoors 샘플에 다음 확인 페이지가 표시됩니다.
 
