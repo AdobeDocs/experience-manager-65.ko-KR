@@ -9,10 +9,10 @@ user-guide-description: Adobe Managed Services 클라우드 배포를 포함하�
 feature: 배포
 role: Architect
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 20%
+source-wordcount: '328'
+ht-degree: 18%
 
 ---
 
@@ -90,11 +90,6 @@ ht-degree: 20%
    + [AEM 6.5의 Forms 리포지토리 재구성](forms-repository-restructuring-in-aem-6-5.md)
    + [AEM 6.5의 E-Commerce 저장소 재구성](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [6.5의 AEM Communities에 대한 저장소 재구성](communities-repository-restructuring-in-aem-6-5.md)
-+ eCommerce {#ecommerce}
-   + [eCommerce 개요](ecommerce.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + 우수 사례 {#practices}
    + [배포 우수 사례](best-practices.md)
    + [성능 트리](performance-tree.md)
