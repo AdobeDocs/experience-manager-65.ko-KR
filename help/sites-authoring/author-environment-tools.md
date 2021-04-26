@@ -10,14 +10,14 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
+exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2239'
 ht-degree: 97%
 
 ---
-
 
 # 작성 - 환경 및 도구{#authoring-the-environment-and-tools}
 
@@ -245,7 +245,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 * **참조** 구성 요소를 사용하여 빌린 컨텐츠와 빌려준 컨텐츠의 인스턴스: 여기서 참조하는/참조한 페이지로 이동할 수 있음
 
-* [제품 페이지에 대한 참조](/help/sites-administering/generic.md#showing-product-references)(커머스 - 제품 콘솔에서 사용 가능)
+* [제품 페이지에 대한 참조](/help/commerce/cif-classic/administering/generic.md#showing-product-references)(커머스 - 제품 콘솔에서 사용 가능)
 * [론치](/help/sites-authoring/launches.md): 관련 론치에 대한 액세스 권한 제공
 * [](/help/sites-administering/msm.md)LiveCopy: 선택한 리소스를 기반으로 하는 모든 LiveCopy 경로 표시 
 * [세부](/help/sites-administering/msm-best-practices.md) 사항과 다양한 작업을 제공하는 블루프린트
