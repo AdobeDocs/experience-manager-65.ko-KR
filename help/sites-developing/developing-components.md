@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
+exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 1%
 
 ---
-
 
 # AEM 구성 요소 개발{#developing-aem-components}
 
@@ -26,8 +26,8 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 보�
 
 * [페이지 작성](/help/sites-authoring/default-components.md)에서는 작성자가 컨텐츠를 편집하고 구성할 수 있도록 구성 요소를 허용합니다.
 
-   * [상거래](/help/sites-administering/ecommerce.md) 사이트를 구성할 때 구성 요소는 카탈로그에서 정보를 수집하고 렌더링할 수 있습니다.
-자세한 내용은 [eCommerce 개발](/help/sites-developing/ecommerce.md)을 참조하십시오.
+   * [상거래](/help/commerce/cif-classic/administering/ecommerce.md) 사이트를 구성할 때 구성 요소는 카탈로그에서 정보를 수집하고 렌더링할 수 있습니다.
+자세한 내용은 [eCommerce 개발](/help/commerce/cif-classic/developing/ecommerce.md)을 참조하십시오.
 
    * [커뮤니티](/help/communities/author-communities.md) 사이트를 구성할 때 구성 요소는 방문자에게 정보를 제공하고 방문자로부터 정보를 수집할 수 있습니다.
 자세한 내용은 [커뮤니티 개발](/help/communities/communities.md)을 참조하십시오.
@@ -82,7 +82,7 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 보�
 
 ### HTML 템플릿 언어 사용 {#using-the-html-template-language}
 
-AEM 6.0에 도입된 [HTML 템플릿 언어(HTL)](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)는 JSP(JavaServer Pages)를 HTML에 대해 선호되고 권장되는 서버측 템플릿 시스템으로 대체됩니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자를 위해 HTL을 사용하면 보안 및 개발 효율성을 향상시킬 수 있습니다.
+AEM 6.0에 도입된 [HTML 템플릿 언어(HTL)](https://docs.adobe.com/content/help/ko/experience-manager-htl/using/overview.html)는 JSP(JavaServer Pages)를 HTML에 대해 선호되고 권장되는 서버측 템플릿 시스템으로 대체됩니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자를 위해 HTL을 사용하면 보안 및 개발 효율성을 향상시킬 수 있습니다.
 
 >[!NOTE]
 >
@@ -438,7 +438,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 >[!NOTE]
 >
->이제 [핵심 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 및 편집 가능한 템플릿을 사용할 때 UI 내에서 구성 요소 인스턴스를 자동으로 만들 수 있습니다. 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)를 참조하십시오.
+>이제 [핵심 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html) 및 편집 가능한 템플릿을 사용할 때 UI 내에서 구성 요소 인스턴스를 자동으로 만들 수 있습니다. 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)를 참조하십시오.
 
 ## AEM Brackets 확장 사용 {#using-the-aem-brackets-extension}
 
