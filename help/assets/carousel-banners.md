@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
-feature: Carousel Banners
+feature: 회전 배너
 role: Business Practitioner, Administrator
+exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4807'
+source-wordcount: '4804'
 ht-degree: 0%
 
 ---
-
 
 # 회전 배너{#carousel-banners}
 
@@ -57,7 +57,7 @@ Carousel 배너를 통해 마케터는 인터랙티브한 회전 프로모션 �
 
    >[!NOTE]
    >
-   >AEM Sites 또는 Ecommerce 고객인 경우 내장 기능을 사용하여 제품 페이지로 이동하여 제품 카탈로그에서 기존 스킨을 조회할 수 있습니다. 핫스팟 또는 이미지 맵 변수를 수동으로 입력할 필요가 없습니다. [eCommerce](/help/sites-administering/generic.md) 설정에 대한 정보를 참조하십시오.
+   >AEM Sites 또는 Ecommerce 고객인 경우 내장 기능을 사용하여 제품 페이지로 이동하여 제품 카탈로그에서 기존 스킨을 조회할 수 있습니다. 핫스팟 또는 이미지 맵 변수를 수동으로 입력할 필요가 없습니다. [eCommerce](/help/commerce/cif-classic/administering/generic.md) 설정에 대한 정보를 참조하십시오.
    >
    >
    >AEM Assets 및 Dynamic Media 고객의 경우 핫스팟과 이미지 맵에 대한 데이터를 수동으로 입력한 다음 게시된 URL 또는 포함 코드를 타사 컨텐츠 관리 시스템에 통합합니다.
@@ -104,7 +104,7 @@ AEM Assets에서 핫스팟 또는 이미지 맵을 배너 이미지에 추가할
 
 >[!NOTE]
 >
->AEM Sites 및/또는 AEM Ecommerce 고객인 경우 이 단계를 건너뛰십시오. 핫스팟 또는 이미지 맵 변수를 수동으로 식별할 필요는 없습니다.제품 통합을 위해 Ecommerce와의 통합을 사용할 수 있습니다. [eCommerce](/help/sites-administering/generic.md) 설정에 대한 정보를 참조하십시오. 또한 대화형 구성 요소를 사용하여 웹 페이지에 추가할 수도 있습니다.
+>AEM Sites 및/또는 AEM Ecommerce 고객인 경우 이 단계를 건너뛰십시오. 핫스팟 또는 이미지 맵 변수를 수동으로 식별할 필요는 없습니다.제품 통합을 위해 Ecommerce와의 통합을 사용할 수 있습니다. [eCommerce](/help/commerce/cif-classic/administering/generic.md) 설정에 대한 정보를 참조하십시오. 또한 대화형 구성 요소를 사용하여 웹 페이지에 추가할 수도 있습니다.
 >
 >AEM Assets 또는 미디어 고객의 경우 URL 또는 포함 코드를 게시한 다음 타사 컨텐츠 관리 시스템과 통합하고 핫스팟 및 이미지 맵을 수동으로 식별해야 합니다.
 
