@@ -9,9 +9,9 @@ user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 
 feature: 개발
 role: Developer
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '910'
 ht-degree: 90%
 
 ---
@@ -70,10 +70,6 @@ ht-degree: 90%
    + [JMX 콘솔과 서비스 통합](jmx-integration.md)
    + [벌크 편집기 개발](dev-bulk-editor.md)
    + [보고서 개발](dev-reports.md)
-   + eCommerce{#ecommerce}
-      + [eCommerce](ecommerce.md)
-      + [개발(일반)](generic.md)
-      + [SAP Commerce Cloud를 사용하여 개발](sap-commerce-cloud.md)
 + 구성 요소{#components}
    + [코어 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)
    + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
