@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
-feature: Interactive Images
+feature: 대화형 이미지
 role: Business Practitioner, Administrator
+exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4335'
+source-wordcount: '4332'
 ht-degree: 0%
 
 ---
-
 
 # 대화형 이미지{#interactive-images}
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 1. **(선택 사항) 핫스팟 변수**  식별 - AEM Assets 및 Dynamic Media 독립 실행형 제품을 사용하는 경우, 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있도록 기존 Quickview 구현에서 사용되는 동적 변수를 식별하여 시작합니다. [(선택 사항) 핫스팟 변수 확인](#optional-identifying-hotspot-variables)을 참조하십시오.
 그러나 AEM Sites, AEM eCommerce 또는 두 가지 모두를 사용하는 경우에는 이 단계가 필요하지 않습니다.
-AEM Assets](/help/sites-administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
+AEM Assets](/help/commerce/cif-classic/administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
 
 1. **(선택 사항) 대화형 이미지 뷰어 사전**  설정 만들기 - 핫스팟을 나타내는 데 사용되는 그래픽 이미지를 사용자 정의합니다. `Shoppable_Banner`이라는 바로 사용 가능한 대화형 이미지 뷰어 사전 설정을 대신 사용하려는 경우에는 자신의 대화형 이미지 뷰어 사전 설정을 만들 필요가 없습니다.
 [(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)를 참조하십시오.
@@ -75,7 +75,7 @@ AEM Assets 및 Dynamic Media 독립 실행형 제품을 사용하는 경우 웹 
 >이 작업은 다음 내용이 참인 경우에만 필요합니다.
 >
 >* Quickviews에 트리거하여 이미지에 대화형 요소를 추가하려고 합니다.
->* AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* AEM Assets](/help/sites-administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
+>* AEM 구현은 IBM Websphere Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 AEM으로 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* AEM Assets](/help/commerce/cif-classic/administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
 
 >
 >
