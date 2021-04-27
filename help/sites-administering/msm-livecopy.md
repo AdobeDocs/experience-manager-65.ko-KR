@@ -266,7 +266,7 @@ Live Copy 페이지의 속성에는 Live Copy에 대한 다음 정보가 표시�
 
 #### Live Copy 개요 {#roll-out-a-blueprint-from-the-live-copy-overview}에서 블루프린트를 롤아웃합니다.
 
-블루프린트 페이지가 선택되면 Live Copy 개요](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)에서도 [롤아웃 작업을 사용할 수 있습니다.
+블루프린트 페이지가 선택되면 Live Copy 개요[&#128279;](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)에서도 롤아웃 작업을 사용할 수 있습니다.
 
 1. [Live Copy 개요](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)를 열고 블루프린트 페이지를 선택합니다.
 1. 도구 모음에서 **롤아웃**&#x200B;을 선택합니다.
