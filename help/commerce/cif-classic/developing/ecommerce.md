@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: platform
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 8%
+source-wordcount: '151'
+ht-degree: 6%
 
 ---
 
@@ -47,6 +47,3 @@ eCommerce API는 패키지에서 제공합니다.
 
 자세한 내용은 [API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)를 참조하십시오.
 
->[!NOTE]
->
->eCommerce 공급자를 빌드하는 모든 단계를 자세히 설명하는 전체 문서는 [사용자 지정 Adobe Experience Manager 6.2 eCommerce 공급자 만들기](https://helpx.adobe.com/kr/experience-manager/using/ecommerce62.html)를 참조하십시오.
