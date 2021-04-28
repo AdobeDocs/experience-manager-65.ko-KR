@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
-feature: Security
+feature: 보안
 translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '6891'
+source-wordcount: '6886'
 ht-degree: 0%
 
 ---
@@ -773,7 +773,7 @@ LiveCopy와 함께 CUG를 구성하는 작업은 다음과 같이 추가 노드 
 
 이 두 요소는 모두 `cq:Page` 아래에 만들어집니다. 현재 디자인을 사용하는 경우 MSM은 `cq:PageContent`(`jcr:content`) 노드 아래에 있는 노드 및 속성만 처리합니다.
 
-따라서 CUG 그룹을 블루프린트에서 Live Copy로 롤백할 수 없습니다. Live Copy를 설정할 때 이에 맞게 계획하십시오.
+따라서 Blueprint에서 CUG 그룹을 Live Copy로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이 사항에 대해 계획하십시오.
 
 ## 새 CUG 구현의 변경 사항 {#changes-with-the-new-cug-implementation}
 
