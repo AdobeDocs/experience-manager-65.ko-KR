@@ -9,9 +9,9 @@ feature: 전자 상거래 통합 프레임워크
 kt: 3455
 thumbnail: 28969.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '104'
 ht-degree: 7%
 
 ---
