@@ -2,10 +2,10 @@
 title: AEM 컨텐츠 및 상거래 릴리스 노트 2021
 description: AEM 컨텐츠 및 상거래 릴리스 노트 2021
 translation-type: tm+mt
-source-git-commit: c859aa89e481e852302e9cda0adf2acc04d68a55
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 14%
+source-wordcount: '1324'
+ht-degree: 13%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 14%
 
 * 바닥글에 대해 경험 조각을 사용하도록 공급업체 참조 스토어프런트 업데이트가 업데이트되었습니다. 비즈니스 사용자는 AEM 제작 도구를 사용하여 페이지 바닥글을 편집할 수 있습니다.
 
-### 개선 사항 {#what-is-improved-november}
+### 향상된 기능 {#what-is-improved-november}
 
 * 결제 구성 요소가 개선되어 구매자에게 미국 외부에서 청구/배송 주소를 허용하도록 대상 국가를 입력할 수 있습니다.
 
@@ -98,7 +98,7 @@ ht-degree: 14%
 
 * 제품 티저 구성 요소에 대한 기본 CTA 단추 레이블을 재정의하고 구성하는 유연성을 추가했습니다.
 
-* 주소록 구성 요소가 개선되어 등록된 구매자가 결제 중에 주소록 안에 저장된 배송 및 청구 주소를 선택할 수 있습니다.
+* 주소록 구성 요소가 개선되어 등록된 구매자가 체크아웃 중에 주소록에 저장된 배송 및 청구 주소를 선택할 수 있습니다.
 
 * 여러 버그 수정.
 
@@ -120,7 +120,7 @@ ht-degree: 14%
 
 * CIF 클라우드 구성 UI는 게시/게시 취소 작업을 지원합니다.
 
-### 개선 사항 {#what-is-improved-july}
+### 향상된 기능 {#what-is-improved-july}
 
 * 로그인 구성 요소를 사용자 드롭다운으로 이동하여 쉽게 액세스할 수 있습니다.
 
@@ -138,7 +138,7 @@ ht-degree: 14%
 
 ### 새로운 기능 {#what-is-new-june}
 
-Adobe Experience Manager에서 지원되는 첫 번째 버전의 CIF 핵심 구성 요소입니다.
+Adobe Experience Manager에서 지원되는 CIF 핵심 구성 요소의 첫 번째 버전입니다.
 
 * 제품 목록 페이지 및 검색 결과 페이지에서 제품 정렬을 추가하여 쇼핑객들이 관련성, 가격 및 제품 이름을 기준으로 정렬할 수 있습니다.
 
@@ -146,7 +146,7 @@ Adobe Experience Manager에서 지원되는 첫 번째 버전의 CIF 핵심 구�
 
 * ACL을 직접 조작하지 않고 서비스 사용자를 통해 /conf에 대한 액세스를 보장하기 위한 보안 요구 사항의 일부로 서비스 사용자 매핑을 추가했습니다. 이제 CIF 핵심 구성 요소를 사용하여 구성에 액세스해야 합니다.
 
-### 개선 사항 {#what-is-improved-june}
+### 향상된 기능 {#what-is-improved-june}
 
 * 제품 목록 페이지 및 검색 결과 페이지에는 총 항목 수가 표시됩니다. 구매자가 필터를 적용하면 항목 수가 업데이트됩니다.
 
@@ -174,7 +174,7 @@ Adobe Experience Manager에서 지원되는 첫 번째 버전의 CIF 핵심 구�
 
 * 클라우드 구성이 생성되면 제품 바인딩이 자동으로 생성됩니다.
 
-### 개선 사항
+### 향상된 기능
 
 * 클라우드 구성이 확장되어 &quot;폴더 만들기&quot; 작업을 표시합니다.
 
@@ -192,7 +192,7 @@ Adobe Experience Manager에서 지원되는 첫 번째 버전의 CIF 핵심 구�
 
 * CIF Connector 통합 및 간소화된 구성 설정 자세한 체크아웃 [시작하기](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) 또는 [새 AEM CIF 프로젝트 설정](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
-### 개선 사항 {#what-is-improved-april}
+### 향상된 기능 {#what-is-improved-april}
 
 * 장바구니 및 체크아웃 흐름이 확장되어 등록된 구매자를 지원합니다.
 
@@ -220,7 +220,7 @@ Adobe Experience Manager에서 지원되는 첫 번째 버전의 CIF 핵심 구�
 
 * 큰 카탈로그 세트를 지원하기 위해 카테고리 목록 구성 요소의 페이지 매김
 
-### 개선 사항 {#what-is-improved-february}
+### 향상된 기능 {#what-is-improved-february}
 
 * 할인 표시를 위한 장바구니 향상
 
@@ -248,7 +248,7 @@ Adobe Experience Manager에서 지원되는 첫 번째 버전의 CIF 핵심 구�
 
 * 일반 관련 제품 구성 요소를 사용할 수 있습니다.
 
-### 개선 사항 {#what-is-improved-january}
+### 향상된 기능 {#what-is-improved-january}
 
 * 제품 Teaser에 CTA 단추를 표시하는 지원.
 
@@ -256,6 +256,6 @@ Adobe Experience Manager에서 지원되는 첫 번째 버전의 CIF 핵심 구�
 
 * 제품 목록 구성 요소에서 제목/배너를 숨기거나 표시하는 옵션.
 
-* Prodcut Carousel 구성 요소에 적용된 드래그 앤 드롭 기능
+* 제품 회전판 구성 요소에 적용된 드래그 앤 드롭 기능.
 
 * 여러 버그 수정이 적용되었습니다.
