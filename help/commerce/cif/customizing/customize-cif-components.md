@@ -11,10 +11,10 @@ feature: 전자 상거래 통합 프레임워크
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2549'
-ht-degree: 2%
+source-wordcount: '2541'
+ht-degree: 1%
 
 ---
 
@@ -261,7 +261,7 @@ Venia 프로젝트를 가져오려면 [원하는 IDE를 사용합니다](https:/
 
    `@PostConstruct` 주석을 사용하면 Sling 모델이 초기화되는 즉시 이 메서드를 호출할 수 있습니다.
 
-   제품 GraphQL 쿼리는 `extendProductQueryWith` 메서드를 사용하여 이미 확장되어 추가 `created_at` 특성을 검색합니다. 이 속성은 나중에 `isShowBadge()` 메서드의 일부로 사용됩니다.
+   제품 GraphQL 쿼리는 `extendProductQueryWith` 메서드를 사용하여 추가 `created_at` 특성을 검색할 수 있도록 이미 확장되었습니다. 이 속성은 나중에 `isShowBadge()` 메서드의 일부로 사용됩니다.
 
 1. GraphQL 쿼리를 업데이트하여 `eco_friendly` 특성을 부분 쿼리에 포함시킵니다.
 
@@ -488,14 +488,14 @@ AEM 구성 요소의 일반적인 확장 기능은 구성 요소에서 생성한
 
 ## 보너스 챌린지 {#bonus-challenge}
 
-제품 Teaser에 이미 구현된 **새** 배지의 기능을 검토하십시오. 작성자가 **친환경** 배지가 표시되는 시기를 제어할 수 있도록 추가 확인란을 추가해 보십시오. `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`에서 구성 요소 대화 상자를 업데이트해야 합니다.
+제품 티저에 이미 구현된 **새** 배지의 기능을 검토하십시오. 작성자가 **친환경** 배지가 표시되는 시기를 제어할 수 있도록 추가 확인란을 추가해 보십시오. `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`에서 구성 요소 대화 상자를 업데이트해야 합니다.
 
 ![새로운 배지 구현 과제](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
 ## 추가 리소스 {#additional-resources}
 
-- [AEM 원형](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)
 - [AEM CIF 핵심 구성 요소 사용자 정의](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [핵심 구성 요소 사용자 정의](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
-- [AEM Sites 시작하기](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
