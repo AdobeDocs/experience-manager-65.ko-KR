@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
-feature: Multi Site Manager
+feature: 다중 사이트 관리자
+exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1667'
 ht-degree: 1%
 
 ---
-
 
 # MSM 우수 사례{#msm-best-practices}
 
@@ -49,7 +49,7 @@ MSM은 콘텐츠 배포를 자동화하기 위한 구성 가능한 프레임워�
 >[참조 구성 요소](/help/sites-authoring/default-components-foundation.md#reference)를 사용하여 단일 페이지 또는 단락을 다시 사용할 수도 있습니다. 그러나 다음 사항에 유의하십시오.
 >
 >* MSM은 보다 유연하므로 동기화된 컨텐츠와 시기를 세부적으로 제어할 수 있습니다.
->* [이제 ](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 기본 구성 요소를 기본 구성 요소에 비해 권장합니다.
+>* [이제 ](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html) 기본 구성 요소를 기본 구성 요소에 비해 권장합니다.
 
 >
 
@@ -68,6 +68,10 @@ Live Copy는 [일반 페이지](/help/sites-administering/msm-livecopy.md#creati
 블루프린트 구성이 참조되지 않는 경우 롤아웃은 Live Copy 자체에서만 시작할 수 있으므로 기본적으로 소스에서 컨텐츠를 가져올 수 있습니다.
 
 Live Copy를 사용하여 새 사이트를 만들 때 전체 MSM 기능 세트를 사용할 수 있도록 블루프린트 구성을 만드는 것이 좋습니다.
+
+>[메모!]
+>
+> 권한 탭의 CUG는 Blueprint에서 Live Copy로 롤아웃할 수 없습니다. Live Copy를 구성할 때 이 사항에 대해 계획하십시오.
 
 ## 구성 요소 및 컨테이너 동기화 {#components-and-container-synchronization}
 
@@ -207,4 +211,3 @@ MSM 롤아웃 구성은 사용자 지정이 매우 쉽습니다. 자동 롤아�
 * [Live Copy 개요 콘솔](/help/sites-administering/msm-livecopy-overview.md)
 * [Live Copy 동기화 구성](/help/sites-administering/msm-sync.md)
 * [MSM 롤아웃 충돌](/help/sites-administering/msm-rollout-conflicts.md)
-
