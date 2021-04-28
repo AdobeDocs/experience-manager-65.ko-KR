@@ -1,16 +1,16 @@
 ---
-title: AEM Commerce
-description: AEM Commerce 자가 도움말 리소스 및 설명서 링크
+title: AEM 컨텐츠 및 상거래
+description: AEM 컨텐츠 및 커머스 자가 도움말 리소스 및 설명서 링크
 translation-type: tm+mt
-source-git-commit: b8a46b96db1b81897186f1c8078c06bea64789c4
+source-git-commit: 7b03772e3c7f185cb107c6576e2423275c1a6ccc
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 89%
+source-wordcount: '315'
+ht-degree: 88%
 
 ---
 
 
-# AEM Commerce {#commerce-guide}
+# AEM 컨텐트 및 상거래 {#commerce-guide}
 
 이 페이지에는 AEM Commerce와 관련된 자가 도움말 리소스가 나열됩니다.
 
