@@ -2,9 +2,9 @@
 title: AEM CIF(Commerce Integration Framework) Add-on으로의 마이그레이션
 description: 이전 버전에서 AEM CIF(Commerce Integration Framework) Add-On으로 마이그레이션하는 방법
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 4%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 4%
 
 이 안내서는 Experience Manager 추가 기능 마이그레이션을 위해 업데이트해야 하는 영역을 식별하는 데 도움이 됩니다.
 
-## CIF 추가 기능
+## CIF Add-On
 
 CIF Add-on은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)을 통해 AEM 6.5에서 사용할 수 있습니다. 호환 가능하고 Cloud Service용 CIF 추가 기능과 동일한 기능을 제공합니다.
 
 [AEM 컨텐트 및 상거래 시작](getting-started.md)을 참조하십시오.
 
-CIF Adobe 배포 프로젝트를 지원하려면 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 제공합니다.
+CIF 배포를 지원하기 위해 Adobe은 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 제공합니다.
 
 ## 제품 카탈로그
 
