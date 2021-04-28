@@ -2,10 +2,10 @@
 title: AEM 컨텐츠 및 상거래 릴리스 노트 2021
 description: AEM 컨텐츠 및 상거래 릴리스 노트 2021
 translation-type: tm+mt
-source-git-commit: 1a6d713e74056333b18ed68f58876c2a75d535b8
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 16%
+ht-degree: 15%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 16%
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
-| CIF 추가 기능 | v021.04.22 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| CIF 추가 기능 | 2021.04.22 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | CIF 핵심 구성 요소 | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia 참조 사이트 | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### 새로운 기능 {#what-is-new-april}
 
-* 카테고리 UID 지원 - 범주 ID에 문자열을 사용하는 시스템의 타사 상거래 통합을 해제합니다.
+* 카테고리 UID 지원 - 범주 ID에 문자열을 사용하는 시스템에 대한 제3자 상거래 통합을 해제합니다.
 
 * PWA Studio용 AEM 확장 포함 예제 통합
 
@@ -57,9 +57,9 @@ ht-degree: 16%
 
 * Magento 2.4.2 지원
 
-### 개선 사항
+### 향상된 기능
 
-* 컨텐츠 기반 페이지에 대한 제품 세부 사항 구성 요소의 재유용성 개선
+* 컨텐츠 기반 페이지에 대한 제품 세부 사항 구성 요소의 재사용성 향상
 
 * PDP에 대한 캐시 향상 및 백엔드 요청 감소
 
@@ -77,11 +77,11 @@ ht-degree: 16%
 
 * 제품 경험 관리:경험 조각으로 제품 카탈로그 페이지를 개별적으로 보완합니다.
 
-* 연결된 컨텐츠로 신속하게 이동하는 작업을 포함하여 연결된 자산 및 경험 조각을 표시하도록 확장된 제품 콘솔 속성입니다.
+* 연결된 콘텐츠로 빠르게 이동하는 작업을 비롯한 연결된 자산 및 경험 조각을 보여주는 확장된 제품 콘솔 속성입니다.
 
-### 개선 사항  {#what-is-improved-february}
+### 향상된 기능 {#what-is-improved-february}
 
-* 제품 이미지 URL 및 카테고리 정보가 포함된 향상된 클라이언트측 데이터 레이어
+* 제품 이미지 URL 및 카테고리 정보가 포함된 클라이언트측 데이터 레이어가 향상되었습니다.
 
 * 여러 버그 수정.
 
@@ -97,7 +97,7 @@ ht-degree: 16%
 
 * 제품 경험 관리:자산 및 경험 조각에 대한 새 &#39;상거래&#39; 속성 탭. 이 탭에서는 자산 및 경험 조각을 제품 및 카테고리에 연결할 수 있습니다. 또한 이 탭에는 연결된 상거래 개체에 대한 실시간 데이터와 제품 콘솔에 세부 사항을 보여주는 링크가 표시됩니다.
 
-### 개선 사항  {#what-is-improved-january}
+### 향상된 기능 {#what-is-improved-january}
 
 * 인증 후 사용자 데이터를 Adobe 클라이언트 데이터 레이어로 보냅니다.
 
