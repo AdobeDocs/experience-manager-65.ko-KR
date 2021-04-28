@@ -2,9 +2,9 @@
 title: 장바구니 및 발송자 설정
 description: 장바구니 및 발송자 설정
 translation-type: tm+mt
-source-git-commit: 1848a9789b4008f1be43b36ee3edfac35d8fdc7c
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '140'
 ht-degree: 4%
 
 ---
