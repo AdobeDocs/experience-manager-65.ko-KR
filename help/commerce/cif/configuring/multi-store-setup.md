@@ -9,9 +9,9 @@ feature: 전자 상거래 통합 프레임워크
 kt: 3046
 thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '381'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 4. AEM 사이트에 하위 구성 할당
 
    * AEM Sites 콘솔으로 이동
-   * 사이트 구조의 지역 또는 언어 루트로 이동합니다(예:/content/venia/us _또는_ /content/venia/us/en for the venia 샘플 페이지
+   * 사이트 구조의 지역 또는 언어 루트로 이동합니다(예: Venia 샘플 페이지의 경우 /content/venia/us _또는_ /content/venia/us/en).
    * 페이지를 선택하고 페이지 속성을 엽니다.
    * 고급 탭 선택
    * `Configuration` 섹션에서 단계에서 만든 구성을 선택합니다
@@ -60,5 +60,5 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 스토어 보기에 연
 
 * [Magento 웹 사이트, 스토어 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF 핵심 구성 요소 - 멀티 스토어/사이트 구성](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
-* [다중 사이트 관리자 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [컨텐츠 재활용:다중 사이트 관리자 및 Live Copy](/help/sites-administering/msm.md)
