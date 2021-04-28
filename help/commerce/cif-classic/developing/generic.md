@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 1%
@@ -99,7 +99,7 @@ eCommerce 프레임워크를 모든 eCommerce 솔루션에서 사용할 수 있�
 
       `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
-* **주문** 데이터의 지속 상태를 소유합니다.
+* **주문** 데이터의 지속성을 소유합니다.
 
    `CommerceSession.getUserContext()`
 
