@@ -5,9 +5,9 @@ topics: Commerce
 feature: 전자 상거래 통합 프레임워크
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
@@ -38,7 +38,7 @@ AEM 컨텐츠 및 상거래에 대한 온보딩은 2단계 프로세스입니다
 >
 >이 작업은 AEM Managed Service 고객을 위한 CSE에서 수행합니다.
 
-### AEM을 상거래 시스템 {#connect}에 연결
+### 전자 상거래 시스템 {#connect}에 AEM 연결
 
 AEM은 액세스 가능한 AEM용 GraphQL 끝점이 있는 모든 상거래 시스템에 연결할 수 있습니다. 이러한 끝점은 일반적으로 공개적으로 사용할 수 있거나 개별 프로젝트 설정에 따라 개인 VPN 또는 로컬 연결을 통해 연결할 수 있습니다.
 
@@ -50,11 +50,11 @@ AEM은 액세스 가능한 AEM용 GraphQL 끝점이 있는 모든 상거래 시�
 
 AEM Content and Commerce Add-On 및 CIF Core Components는 AEM 서버측 및 클라이언트측 연결을 모두 사용합니다. 클라이언트측 CIF 핵심 구성 요소 및 CIF 추가 기능 작성 도구는 기본적으로 `/api/graphql`에 연결됩니다. 필요한 경우 CIF Cloud Service 구성을 통해 조정할 수 있습니다(아래 참조).
 
-CIF Add-on은 `/api/graphql`에 GraphQL 프록시 서블릿을 제공하며, 이 서블릿은 선택적으로 [로컬 개발](develop.md)에 사용할 수 있습니다. 프로덕션 배포의 경우 AEM Dispatcher나 기타 네트워크 레이어(예: CDN)를 통해 커머스 GraphQL 끝점에 역방향 프록시를 설정하는 것이 좋습니다.
+CIF Add-On은 `/api/graphql`에 GraphQL 프록시 서블릿을 제공하며, 이 서블릿은 선택적으로 [로컬 개발](develop.md)에 사용할 수 있습니다. 프로덕션 배포의 경우 AEM Dispatcher나 기타 네트워크 레이어(예: CDN)를 통해 커머스 GraphQL 끝점에 역방향 프록시를 설정하는 것이 좋습니다.
 
 ## {#catalog} 스토어 및 카탈로그 구성
 
-추가 기능 및 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 다른 상거래 스토어에 연결된 여러 AEM 사이트 구조(또는 스토어 보기 등)에서 사용할 수 있습니다. 기본적으로 CIF Add-On은 Adobe Commerce의 기본 스토어 및 카탈로그(Magento)에 연결하는 기본 구성으로 배포됩니다.
+Add-On 및 [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 다른 상거래 스토어에 연결된 여러 AEM 사이트 구조(또는 스토어 보기 등)에서 사용할 수 있습니다. 기본적으로 CIF Add-On은 Adobe Commerce의 기본 스토어 및 카탈로그(Magento)에 연결하는 기본 구성으로 배포됩니다.
 
 이 구성은 다음 단계에 따라 CIF Cloud Service 구성을 통해 프로젝트에 맞게 조정할 수 있습니다.
 
