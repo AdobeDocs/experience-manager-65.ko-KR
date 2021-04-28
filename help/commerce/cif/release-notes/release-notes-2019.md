@@ -2,10 +2,10 @@
 title: AEM 컨텐츠 및 상거래 릴리스 노트 2021
 description: AEM 컨텐츠 및 상거래 릴리스 노트 2021
 translation-type: tm+mt
-source-git-commit: c2fb9af056fa4be13cfd7e60e8a44485e8712c0b
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 11%
 
 * AEM Venia 스토어 전방에 Braintree 결제 지원 추가
 
-### 개선 사항 {#what-is-improved-november}
+### 향상된 기능 {#what-is-improved-november}
 
 * 카테고리/제품 선택기가 다중 저장소 설정의 지정된 Magento 저장소 보기를 준수하도록 개선되었습니다.
 
@@ -53,7 +53,7 @@ ht-degree: 11%
 
 * 계정 관리를 위한 반응형 기반 클라이언트측 구성 요소 이 릴리스는 다음 기능을 지원합니다.로그인, 암호 분실 및 계정 만들기
 
-### 개선 사항 {#what-is-improved-october}
+### 향상된 기능 {#what-is-improved-october}
 
 * 제품 세부 사항 및 제품 목록 구성 요소가 템플릿/페이지에 배치되면 작성자에게 레이아웃 미리 보기를 제공하기 위해 더미 데이터를 표시하도록 개선되었습니다.
 
@@ -77,7 +77,7 @@ ht-degree: 11%
 
 * 체크아웃 구성 요소에는 주소 양식, 결제 선택 및 배송 방법 선택 사항이 포함되어 있습니다.
 
-### 개선 사항 {#what-is-improved-september}
+### 향상된 기능 {#what-is-improved-september}
 
 * 제품 티저 및 제품 회전판 구성 요소는 제품 변형을 지원합니다.
 
@@ -105,7 +105,7 @@ ht-degree: 11%
 
 * 작성자가 AEM 페이지에 배치하여 AEM 페이지, 제품 세부 사항 페이지, 제품 목록 페이지 또는 외부 링크에 연결할 수 있는 단추입니다.
 
-### 개선 사항 {#what-is-improved-august}
+### 향상된 기능 {#what-is-improved-august}
 
 * Magento 저장소 구성이 OSGi에서 AEM 제품 콘솔로 이동되었으므로 통합 설정이 작성자에게 더 친숙해집니다.
 
@@ -131,7 +131,7 @@ ht-degree: 11%
 
 * AEM 페이지에 카테고리 목록을 표시하는 서버측 주요 카테고리 목록.
 
-### 개선 사항 {#what-is-improved-july}
+### 향상된 기능 {#what-is-improved-july}
 
 * 제품 속성과 관련된 Magento 2.3.2 지원 및 버그 수정이 제품 콘솔에 표시됩니다.
 
