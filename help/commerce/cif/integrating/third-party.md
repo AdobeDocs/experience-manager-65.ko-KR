@@ -1,9 +1,9 @@
 ---
-title: 상거래 통합 프레임워크를 사용한 AEM 및 제3자 상거래 통합
+title: Commerce Integration Framework를 사용한 AEM 및 제3자 상거래 통합
 description: 기업 기업은 스토어를 가동하기 위해 제3자 상거래 솔루션을 추가로 요구할 수 있습니다. 이러한 통합 시나리오에서 CIF(Commerce Integration Framework)를 사용하여 I/O 런타임을 사용하여 제3자 상거래 솔루션을 Adobe Experience Manager에 연결할 수 있습니다.
 thumbnail: cif-third-party-architecture.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # 상거래 통합 프레임워크를 사용한 AEM 및 제3자 상거래 통합 {#aem-third-party}
 
-비Adobe 상거래 솔루션의 통합은 CIF에 대한 일반적인 시나리오입니다. 서로 다른 API 및 스키마를 사용하는 타사 솔루션은 통합 레이어를 통해 연결됩니다.
+비Adobe 상거래 솔루션의 통합은 CIF에 대한 일반적인 시나리오입니다. 서로 다른 API 및 스키마를 사용하는 제3자 솔루션은 통합 레이어를 통해 연결됩니다.
 
 ## 아키텍처 {#architecture}
 
@@ -36,13 +36,13 @@ Experience Manager은 On-Demand 데이터를 검색하므로 제품 카탈로그
 
 CIF는 실시간 제품 카탈로그 액세스 및 제품 경험 관리 툴을 통해 Experience Manager을 확장합니다. 이러한 매끄러운 통합을 통해 작성자는 컨텐츠 컨텍스트를 종료하지 않고도 필요할 때마다 포함된 UI를 사용하여 상거래 데이터에 액세스할 수 있습니다.
 
-제품 카탈로그 API의 통합은 이러한 사용 사례를 잠금 해제해야 합니다.
+제품 카탈로그 API를 통합하면 이러한 사용 사례를 잠금 해제할 수 있습니다.
 
 ## 프런트 엔드 사용 사례
 
-[AEM CIF 코어 ](https://github.com/adobe/aem-core-cif-components) 구성 요소는 CIF 지원 Adobe 상거래 API를 통해 데이터를 검색하고 내보냅니다. 구성 요소를 다시 사용하려면 각 API를 구현해야 합니다.
+[AEM CIF 핵심 ](https://github.com/adobe/aem-core-cif-components) 구성 요소CIF 지원 Adobe 상거래 API를 통해 데이터를 검색하고 교환할 수 있습니다. 구성 요소를 다시 사용하려면 각 API를 구현해야 합니다.
 
-성능상의 중요한 클라이언트측 구성 요소에 대한 권장 사항은 지연을 방지하기 위해 타사 솔루션과 직접 통신하는 것입니다.
+성능에 중요한 클라이언트측 구성 요소에 대한 권장 사항은 지연을 방지하기 위해 제3자 솔루션과 직접 통신하는 것입니다.
 
 ## 통합 {#develop-integration} 개발
 
@@ -50,4 +50,4 @@ CIF는 실시간 제품 카탈로그 액세스 및 제품 경험 관리 툴을 �
 
 [참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference)은 상거래 솔루션에 대한 통합을 구축할 수 있는 좋은 시작점입니다. GraphQL을 지원하지만 REST와 같은 다른 유형의 API와 통합할 수도 있습니다.
 
-타사 레이어(예: Mulesoft)를 사용할 수 있거나 제3자 솔루션 위에 통합이 빌드되는 경우에는 이 통합 레이어가 필요하지 않습니다.
+제3자 레이어를 사용할 수 있거나(예: Mulesoft) 제3자 솔루션을 기반으로 통합을 만든 경우에는 이 통합 레이어가 필요하지 않습니다.
