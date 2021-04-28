@@ -7,9 +7,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '874'
 ht-degree: 7%
 
 ---
@@ -30,7 +30,7 @@ CIF 프로젝트 작업을 수행하려면 로컬 개발 환경을 사용하는 
 
 >[!NOTE]
 >
->다음 지침은 AEM 6.5에 초점을 맞춘 CIF를 사용하여 AEM Commerce용 로컬 AEM 개발 환경을 설정하는 데 도움이 됩니다.) AEM을 Cloud Service으로 사용하는 경우 [AEM 커머스를 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/home.html) 문서로 참조하십시오.
+>다음 지침은 AEM 6.5에 초점을 맞춘 CIF를 사용하여 AEM Commerce용 로컬 AEM 개발 환경을 설정하는 데 도움이 됩니다.) AEM을 Cloud Service으로 사용하는 경우 [AEM 커머스를 Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) 문서로 참조하십시오.
 
 AEM 6.5용 AEM Commerce Add-On. CIF Add-On은 로컬 개발 및 AEM 패키지로 제공됩니다. [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 기능 팩으로 다운로드할 수 있습니다.
 
@@ -46,7 +46,7 @@ AEM 6.5용 AEM Commerce Add-On. CIF Add-On은 로컬 개발 및 AEM 패키지로
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
-### CIF Add-on 액세스
+### CIF Add-On 액세스
 
 CIF Add-on은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 다운로드할 수 있으며 &#39;AEM Commerce add-on&#39;을 검색할 수 있습니다.
 
