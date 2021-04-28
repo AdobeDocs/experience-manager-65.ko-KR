@@ -9,22 +9,22 @@ feature: 전자 상거래 통합 프레임워크
 kt: 4933
 thumbnail: 34350.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 3%
 
 ---
 
 # 고급 URL 구성 {#url}
 
-[AEM CIF 핵심 ](https://github.com/adobe/aem-core-cif-components) 구성 요소는 제품 및 카테고리 페이지의 URL을 사용자 지정하는 고급 구성을 제공합니다. 많은 구현에서 SEO(검색 엔진 최적화) 목적으로 이러한 URL을 사용자 정의합니다.  다음 비디오는 `UrlProvider` 서비스 및 [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)의 기능을 구성하여 제품 및 카테고리 페이지의 URL을 사용자 지정하는 방법에 대해 자세히 설명합니다.
+[AEM CIF 핵심 ](https://github.com/adobe/aem-core-cif-components) 구성 요소는 제품 및 카테고리 페이지의 URL을 사용자 지정하는 고급 구성을 제공합니다. 많은 구현에서 SEO(검색 엔진 최적화) 목적으로 이러한 URL을 사용자 정의합니다. 다음 비디오는 `UrlProvider` 서비스 및 [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)의 기능을 구성하여 제품 및 카테고리 페이지의 URL을 사용자 지정하는 방법에 대해 자세히 설명합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## 구성 {#configuration}
 
-SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 &quot;CIF URL 공급자 구성&quot; 구성에 대한 OSGI 구성을 제공해야 하며 아래에 설명된 대로 서비스를 구성해야 합니다.
+SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하고 프로젝트가 필요한 경우 &quot;CIF URL 공급자 구성&quot; 구성에 대한 OSGI 구성을 제공해야 하며 아래에 설명된 대로 서비스를 구성해야 합니다.
 
 >[!NOTE]
 >
@@ -74,5 +74,5 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 &quot;CIF
 ## 추가 리소스
 
 * [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM 리소스 매핑](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [AEM 리소스 매핑](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
