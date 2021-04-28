@@ -3,10 +3,10 @@ title: 소개 및 개요
 description: 컨텐츠 및 상거래에 대한 소개 및 개요 CIF(Experience Manager Commerce Integration Framework)는 Magento 및 기타 제3자 상거래 솔루션에서 Experience Cloud과 상거래 서비스를 통합하고 확장하는 Adobe의 권장 패턴입니다.
 thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 1%
+source-wordcount: '869'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager 컨텐츠과 상거래를 통해 기업은 커머스 �
 
 * 신속하게 확장 및 혁신
 * 경험 개인화를 통해 전환율 향상
-* 한 번의 클릭으로 어디에서나 게시
+* 한 번의 제작으로 어디에서나 게시
 * 고객을 위한 경험 강화 및 차별화
 * 상거래 데이터 액세스를 통해 저작 간소화
 
@@ -42,7 +42,7 @@ Adobe Experience Manager 컨텐츠과 상거래를 통해 기업은 커머스 �
 
 ## 2013년 이후 고객 지원 성공
 
-200명 이상의 고객을 보유한 CIF는 성공적인 컨텐츠 및 상거래 프로젝트를 위한 성공적인 요소로 자리매김했습니다. IT 및 비즈니스에 가치 제공 최근 고객 프로젝트에서는 CIF를 &quot;뛰어난 가속화 기능 및 많은 가치를 제공하는 엄청난 시간 절약 기능&quot;이라고 설명합니다.
+200명 이상의 고객을 보유한 CIF는 성공적인 컨텐츠 및 상거래 프로젝트를 위한 성공적인 요소로 자리매김했습니다. IT 및 비즈니스에 가치 제공 최근 고객 프로젝트에서는 CIF를 &quot;뛰어난 가속화 기능 및 많은 가치를 제공하는 엄청난 시간 절약 기능&quot;으로 설명합니다.
 
 ## CIF 혜택 {#cif-benefits}
 
@@ -58,7 +58,7 @@ AEM의 강력한 CIF 툴을 사용하면 비즈니스 기회를 활용할 수 �
 
 ### 가치 실현 시간(TTV)
 
-[AEM Core Components](https://www.aemcomponents.dev/), [AEM Venia 참조 스토어프런트](https://github.com/adobe/aem-cif-guides-venia), [AEM Project 원형형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html) 및 PWA의 통합 패턴(헤드리스 컨텐츠 및 커머스)을 사용하여 프로젝트 개발을 가속화할 수 있습니다.
+[AEM Core Components](https://www.aemcomponents.dev/), [AEM Venia 참조 스토어프런트](https://github.com/adobe/aem-cif-guides-venia), [AEM Project 원형형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 및 PWA의 통합 패턴(헤드리스 컨텐츠 및 상거래)을 사용하여 프로젝트 개발을 가속화할 수 있습니다.
 
 CIF는 항상 최신 Add-On을 통해 지속적인 혁신을 위해 구축되므로 고객은 새로운 기능과 향상된 기능을 이용할 수 있습니다.
 
