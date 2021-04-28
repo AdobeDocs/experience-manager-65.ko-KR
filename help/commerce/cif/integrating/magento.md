@@ -3,7 +3,7 @@ title: Commerce Integration Framework를 사용한 AEM 및 Adobe Commerce(Magent
 description: AEM 및 Adobe 상거래(Magento)은 CIF(Commerce Integration Framework)를 사용하여 매끄럽게 통합됩니다. CIF를 사용하면 AEM이 Magento 인스턴스에 액세스하고 GraphQL을 통해 Magento과 통신할 수 있습니다. 또한 AEM 작성자는 제품 및 카테고리 선택기 및 제품 콘솔을 사용하여 Magento에서 온디맨드 방식으로 반입된 제품 및 카테고리 데이터를 검색할 수 있습니다. 또한 CIF는 상거래 프로젝트를 가속화할 수 있는 기본 스토어를 제공합니다.
 thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # 전자 상거래 통합 프레임워크 사용 AEM 및 Adobe 상거래(Magento) 통합 {#aem-magento-framework}
 
-Experience Manager 및 Adobe 상거래(Magento)은 CIF(Commerce Integration Framework)를 사용하여 매끄럽게 통합됩니다. CIF를 사용하면 AEM이 Adobe 상거래의 [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/)을 사용하여 통신 인스턴스에 직접 액세스하고 통신할 수 있습니다.
+Experience Manager 및 Adobe 상거래(Magento)은 CIF(Commerce Integration Framework)를 사용하여 매끄럽게 통합됩니다. CIF를 사용하면 AEM이 Adobe 상거래의 [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/)을 사용하여 상거래 인스턴스에 직접 액세스하고 통신할 수 있습니다.
 
 ## 아키텍처 개요 {#overview}
 
@@ -21,7 +21,7 @@ Experience Manager 및 Adobe 상거래(Magento)은 CIF(Commerce Integration Fram
 ![CIF 아키텍처 개요](../assets/AEM_Magento_Architecture.png)
 
 CIF에서는 서버측 및 클라이언트측 통신 패턴을 지원합니다.
-서버측 API 호출은 상거래 GraphQL 스키마에 대해 생성된 데이터 모델 [세트](https://github.com/adobe/commerce-cif-magento-graphql)와 함께 빌드 인 일반 [GraphQL 클라이언트](https://github.com/adobe/commerce-cif-graphql-client)을 사용하여 구현됩니다. 또한 모든 GraphQL 쿼리 또는 GQL 형식의 돌연변이를 사용할 수 있습니다.
+서버측 API 호출은 상거래 GraphQL 스키마에 대해 생성된 데이터 모델 [세트](https://github.com/adobe/commerce-cif-magento-graphql)와 함께 빌드인 일반 [GraphQL 클라이언트](https://github.com/adobe/commerce-cif-graphql-client)을 사용하여 구현됩니다. 또한 모든 GraphQL 쿼리 또는 GQL 형식의 돌연변이를 사용할 수 있습니다.
 
 [반응](https://reactjs.org/)을 사용하여 빌드하는 클라이언트측 구성 요소의 경우 [Apollo 클라이언트](https://www.apollographql.com/docs/react/)이 사용됩니다.
 
