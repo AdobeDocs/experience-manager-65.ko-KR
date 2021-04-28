@@ -7,7 +7,7 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 2%
@@ -203,7 +203,7 @@ eCommerce 기능을 설치하려면 다음 작업이 필요합니다.
    * 사용자 이름:admin
    * 암호:nimda
 
-1. 사이드바 탐색에서 **시스템** 및 **도구**&#x200B;를 탐색합니다. 그런 다음 **가져오기**&#x200B;를 선택하여 **마법사를 엽니다.CSV 가져오기** 창.
+1. 사이드바 탐색에서 **시스템** 및 **도구**&#x200B;를 확장합니다. 그런 다음 **가져오기**&#x200B;를 선택하여 **마법사를 엽니다.CSV 가져오기** 창.
 1. **구성** 탭에서 **업로드**&#x200B;다음 **파일 가져오기**&#x200B;를 수행합니다.
 
    [파일 가져오기](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
