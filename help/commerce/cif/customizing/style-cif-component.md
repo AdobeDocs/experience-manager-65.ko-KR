@@ -9,9 +9,9 @@ feature: 전자 상거래 통합 프레임워크
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2566'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 ## 클라이언트 라이브러리 및 ui.frontend 모듈 {#introduction-to-client-libraries}
 
-스토어프런트 테마/스타일을 렌더링하는 책임을 지는 CSS 및 JavaScript는 [클라이언트 라이브러리](/help/sites-developing/clientlibs.md) 또는 clientlibs를 통해 AEM에서 관리됩니다. 클라이언트 라이브러리는 프로젝트 코드에서 CSS 및 Javascript를 구성한 다음 페이지에 전달하는 메커니즘을 제공합니다.
+스토어프런트 테마/스타일을 렌더링하는 데 책임이 있는 CSS 및 JavaScript는 [클라이언트 라이브러리](/help/sites-developing/clientlibs.md) 또는 clientlibs를 통해 AEM에서 관리됩니다. 클라이언트 라이브러리는 프로젝트 코드에서 CSS 및 Javascript를 구성한 다음 페이지에 전달하는 메커니즘을 제공합니다.
 
 이러한 클라이언트 라이브러리에서 관리되는 CSS를 추가 및 재정의하여 브랜드별 스타일을 AEM CIF 핵심 구성 요소에 적용할 수 있습니다. 클라이언트 라이브러리가 구조화되어 페이지에 포함되는 방법을 이해하는 것이 중요합니다.
 
@@ -164,7 +164,7 @@ ht-degree: 2%
 
    ![ui.apps의 컴파일된 사이트 CSS](../assets/style-cif-component/comiled-css-ui-apps.png)
 
-   이렇게 하면 복사한 `site.css` 파일이 `ui.apps` 프로젝트로 복사됩니다. 이제 `venia.site` 범주가 있는 `clientlib-site`이라는 클라이언트 라이브러리의 일부입니다. 파일이 `ui.apps` 모듈의 일부이면 AEM에 배포할 수 있습니다.
+   이렇게 하면 `site.css` 파일이 `ui.apps` 프로젝트에 복사됩니다. 이제 `venia.site` 범주가 있는 `clientlib-site`이라는 클라이언트 라이브러리의 일부입니다. 파일이 `ui.apps` 모듈의 일부이면 AEM에 배포할 수 있습니다.
 
    >[!NOTE]
    >
@@ -174,7 +174,7 @@ ht-degree: 2%
 
    ![기타 클라이언트 라이브러리](../assets/style-cif-component/other-clientlibs.png)
 
-   이러한 클라이언트 라이브러리는 `ui.frontend` 모듈에서 관리하지 않습니다. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 clientlibraries에 대한 정의는 각 폴더 아래의 `.content.xml` 파일에 있습니다.
+   이러한 클라이언트 라이브러리는 `ui.frontend` 모듈에서 관리하지 않습니다. 대신 이러한 클라이언트 라이브러리에는 Adobe에서 제공하는 CSS 및 JavaScript 종속성이 포함됩니다. 이러한 클라이언트 라이브러리에 대한 정의는 각 폴더 아래의 `.content.xml` 파일에 있습니다.
 
    **clientlib-base** -  [AEM 코어 구성 요소의 필수 종속성을 간단히 포함하는 빈 클라이언트 라이브러리입니다](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html). 범주는 `venia.base`입니다.
 
@@ -225,7 +225,7 @@ ht-degree: 2%
 
    ![게시됨으로 보기](../assets/style-cif-component/view-as-published.png)
 
-   게시된 사이트에 나타나는 AEM 작성자 javascript가 로드되지 않은 페이지가 열립니다. url에 쿼리 매개 변수 `?wcmmode=disabled`이(가) 추가되었습니다. CSS 및 Javascript를 개발할 때는 이 매개 변수를 사용하여 AEM 작성자의 모든 것을 제거하여 페이지를 간소화하는 것이 좋습니다.
+   게시된 사이트에 나타나는 AEM 작성자 javascript가 로드되지 않은 페이지가 열립니다. url에 쿼리 매개 변수 `?wcmmode=disabled`이(가) 추가되었습니다. CSS 및 Javascript를 개발할 때는 이 매개 변수를 사용하여 AEM 작성자의 도움 없이 페이지를 간소화하는 것이 좋습니다.
 
 1. 페이지 소스를 보면 몇 개의 클라이언트 라이브러리가 포함되어 있는지 확인할 수 있습니다.
 
@@ -280,7 +280,7 @@ ht-degree: 2%
    * `venia.dependencies` - 종속된 모든 공급업체 라이브러리 `venia.site` 를 제공합니다.
    * `venia.site` - 모듈이 생성하는  `clientlib-site` 카테고리 `ui.frontend` 입니다.
 
-   다른 템플릿은 동일한 정책 **컨텐트 페이지**, **랜딩 페이지** 등을 사용합니다.동일한 정책을 다시 사용하면 동일한 클라이언트 라이브러리가 모든 페이지에 포함되도록 할 수 있습니다.
+   다른 템플릿은 동일한 정책 **컨텐트 페이지**, **랜딩 페이지** 등을 사용합니다. 동일한 정책을 다시 사용하면 동일한 클라이언트 라이브러리가 모든 페이지에 포함되도록 할 수 있습니다.
 
    클라이언트 라이브러리 포함을 관리하기 위해 템플릿 및 페이지 정책을 사용하면 템플릿별 정책을 변경할 수 있습니다. 예를 들어 동일한 AEM 인스턴스 내에서 두 개의 다른 브랜드를 관리하는 경우가 있습니다. 각 브랜드에는 고유한 스타일 또는 *테마*&#x200B;가 있지만 기본 라이브러리와 코드는 동일합니다. 또 다른 예로, 특정 페이지에만 표시하려는 클라이언트 라이브러리가 더 큰 경우 해당 템플릿에 대해서만 고유한 페이지 정책을 만들 수 있습니다.
 
