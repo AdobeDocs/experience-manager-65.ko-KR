@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
+exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 translation-type: tm+mt
-source-git-commit: 06cb3a7cdd9b6de00aff67c66327abadce3e0920
+source-git-commit: 97182f9a7b5fa5f96106fed59eeecf866c6d34ff
 workflow-type: tm+mt
 source-wordcount: '3205'
 ht-degree: 1%
 
 ---
-
 
 # 기술 요구 사항{#technical-requirements}
 
@@ -228,7 +228,7 @@ Adobe Experience Manager은 프로덕션 환경에서 다음과 같은 서버 �
 1. Linux Kernel 2.6, 3.x 및 4.x에는 Red Hat Enterprise Linux, CentOS, Oracle Linux 및 Amazon Linux를 비롯한 Red Hat 배포용 파생물이 포함되어 있습니다. AEM Forms 추가 기능은 CentOS 7 및 Red Hat Enterprise Linux 7에서만 지원됩니다.
 1. AEM Forms은 Ubuntu 16.04 LTS에서만 지원됩니다.
 1. Adobe Managed Services에서 지원하는 Linux 배포
-1. Microsoft Windows 프로덕션 배포는 6.5로 업그레이드하고 제작 과정 이외의 다른 사용자도 사용할 수 있도록 지원됩니다. 새로운 배포는 AEM Sites 및 자산에 대한 요청 시 가능합니다.
+1. Microsoft Windows 프로덕션 배포는 6.5로 업그레이드하고 비프로덕션 사용을 위해 지원됩니다. 새로운 배포는 AEM Sites 및 자산에 대한 요청 시 가능합니다.
 1. AEM Forms은 지원 수준 R 제한 없이 Microsoft Windows Server에서 지원됩니다.
 
 ### 가상 및 클라우드 컴퓨팅 환경 {#virtual-cloud-computing-environments}
