@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
+exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 translation-type: tm+mt
-source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
+source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
 workflow-type: tm+mt
-source-wordcount: '3386'
+source-wordcount: '3367'
 ht-degree: 0%
 
 ---
-
 
 # AEM 코어 개념 {#aem-core-concepts}
 
@@ -340,7 +340,7 @@ OSGi는 모듈식 애플리케이션 및 라이브러리를 개발 및 배포하
 
 항목 개체 조작에 대한 자세한 내용은 javax.jcr.Item 인터페이스의 [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html)을 참조하십시오.
 
-**노드(및 해당 속성)** 노드 및 해당 속성은 JCR API 2.0 사양(JSR 283)에 정의됩니다. 내용, 개체 정의, 렌더링 스크립트 및 기타 데이터를 저장합니다.
+**노드(및 해당 속성)** 노드 및 해당 속성은 JCR API 2.0 사양(JSR 283)에 정의됩니다. 컨텐츠, 객체 정의, 렌더링 스크립트 및 기타 데이터를 저장합니다.
 
 노드는 컨텐츠 구조를 정의하며 해당 속성은 실제 컨텐츠와 메타데이터를 저장합니다.
 
@@ -441,7 +441,7 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 * `/var`
 
-   시스템에 의해 변경 및 업데이트되는 파일;감사 로그, 통계, 이벤트 처리 등 하위 폴더 `/var/classes`에는 구성 요소 스크립트에서 생성된 소스 및 컴파일된 양식의 java 서블릿이 포함되어 있습니다.
+   시스템에 의해 변경 및 업데이트되는 파일;감사 로그, 통계, 이벤트 처리 등
 
 ## 환경 {#environments}
 
