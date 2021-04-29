@@ -10,14 +10,14 @@ topic-tags: testing
 content-type: reference
 discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
 docset: aem65
+exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 3727b561a2ee9778d75f18530caf16c6c3ef846a
 workflow-type: tm+mt
 source-wordcount: '1909'
 ht-degree: 2%
 
 ---
-
 
 # Tough Day{#tough-day}
 
@@ -336,7 +336,7 @@ java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --ad
 >
 >병렬 실행으로 인해 실제 테스트 실행 수는 `count` 매개 변수에 구성된 양이 아닙니다. 실행 중인 스레드 수에 편차가 있을 것으로 예상합니다(`concurrency parameter`에 의해 제어됨).
 
-### 연습 실행 {#dry-run}
+### 시험 실행 {#dry-run}
 
 연습 실행은 지정된 모든 입력(명령줄 매개 변수 또는 구성 파일)을 구문 분석하여 기본값으로 병합한 다음 결과를 출력합니다. 테스트를 실행하지 않습니다.
 
