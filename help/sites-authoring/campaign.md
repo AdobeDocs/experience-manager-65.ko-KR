@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
+exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 translation-type: tm+mt
-source-git-commit: 8e663a3c11523796a2bad15e9c088e484f2b573b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2780'
 ht-degree: 77%
 
 ---
-
 
 # Adobe Campaign Classic 및 Adobe Campaign Standard 작업{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
@@ -330,7 +330,7 @@ AEM에서 만든 컨텐츠를 Adobe Campaign의 게재와 동기화하려면:
 1. 도구 모음에서 **동기화**&#x200B;를 선택하여 AEM에서 사용 가능한 컨텐츠 목록에 액세스합니다.
 
    >[!NOTE]
-   **동기화** 옵션이 게재 도구 모음에 나타나지 않으면 **컨텐츠 편집 모드** 필드가 **AEM**&#x200B;속성&#x200B;**>**&#x200B;고급&#x200B;**을 선택하여 &lt;a4/>&lt;a3/>에 올바르게 구성되어 있는지 확인하십시오.**
+   **동기화** 옵션이 게재 도구 모음에 나타나지 않으면 **컨텐츠 편집 모드** 필드가 **AEM**&#x200B;속성&#x200B;**>**&#x200B;고급&#x200B;**을 선택하여**&#x200B;에 올바르게 구성되어 있는지 확인하십시오.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
 
