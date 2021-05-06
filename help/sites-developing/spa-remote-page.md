@@ -1,10 +1,11 @@
 ---
 title: RemotePage 구성 요소
 description: RemotePage 구성 요소는 AEM 내에서 원격 반응 SPA을 편집하기 위한 사용자 지정 페이지 구성 요소입니다.
+exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 translation-type: tm+mt
-source-git-commit: 431bed450ed5b0239d9191dcf061f01e64b8981a
+source-git-commit: a92358d187aa78e05dd9b5a7bd4ae14bf0972f62
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -28,6 +29,14 @@ AEM에서 편집 가능한 외부 SPA에 대한 자세한 내용은 SPA에서 �
 * 개발 시 CORS 활성화
 * 페이지 속성에서 원격 URL 구성
 * AEM에서 SPA 렌더링
+* 웹 응용 프로그램은 다음 중 하나와 같은 번들러 자산 매니페스트를 사용하고 로드할 모든 CSS 및 JS 파일을 진입점 속성에 나열하는 도메인 루트에 asset-manifest.json 파일을 노출해야 합니다.
+   * https://github.com/shellscape/webpack-manifest-plugin
+   * https://github.com/webdeveric/webpack-assets-manifest
+   * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
+
+   ![시작 지점](assets/asset-manifest-entrypoints.png)
+
+* 응용 프로그램은 본문 요소 아래의 `<div id="root"></div>`에서 시작할 수 있어야 합니다. 앱이 인스턴스화되기 위해 다른 마크업이 필요한 경우 `sling:resourceSuperType="spa-project-core/components/remotepage`이(가) 있는 프록시 구성 요소의 HTL 스크립트에서 적절히 조정되어야 합니다.
 
 ## 제한 사항 {#limitations}
 
