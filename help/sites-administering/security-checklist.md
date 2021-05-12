@@ -11,11 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
-feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: 보안
+source-git-commit: 1c6ee9b547fd0870feb510e35ffdcb8e3f857f18
 workflow-type: tm+mt
-source-wordcount: '2842'
+source-wordcount: '2873'
 ht-degree: 1%
 
 ---
@@ -26,7 +25,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->OWASP(Open Web Application Security Project)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project)에서 게시한 가장 위험한 보안 위협에 대한 추가 정보 [도 사용할 수 있습니다.
+>[OWASP(Open Web Application Security Project)](https://owasp.org/www-project-top-ten/)에서 게시한 가장 위험한 보안 위협에 대한 추가 정보도 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -163,7 +162,7 @@ Eclipse용 [AEM 개발자 도구](/help/sites-developing/aem-eclipse.md)는 Apac
 
 #### CSRF 보호 프레임워크 {#the-csrf-protection-framework}
 
-AEM 6.1은 크로스 사이트 요청 위조 공격으로부터 보호하는 메커니즘을 제공하며, **CSRF Protection Framework**. 사용 방법에 대한 자세한 내용은 [설명서](/help/sites-developing/csrf-protection.md)를 참조하십시오.
+AEM 6.1은 **CSRF Protection Framework**&#x200B;라고 하는 사이트 간 요청 위조 공격으로부터 보호하는 메커니즘을 제공합니다. 사용 방법에 대한 자세한 내용은 [설명서](/help/sites-developing/csrf-protection.md)를 참조하십시오.
 
 #### Sling 레퍼러 필터 {#the-sling-referrer-filter}
 
@@ -333,11 +332,9 @@ AEM은 `FormChooserServlet`에 대한 기본 색인을 제공하지 않으므로
 
 **자산 다운로드 서블릿으로 인한 DoS 감소**
 
-AEM의 기본 자산 다운로드 서블릿을 사용하면 인증된 사용자가 서버 및/또는 네트워크에 과부할 수 있는 보이는 자산의 ZIP 파일을 만들기 위해 임의로 크기가 크고 동시 다운로드 요청을 발행할 수 있습니다.
+기본 자산 다운로드 서블릿을 사용하면 인증된 사용자가 임의의 크기로 동시 다운로드 요청을 발행하여 자산의 ZIP 파일을 만들 수 있습니다. 큰 ZIP 아카이브를 만들면 서버와 네트워크에 과부하가 발생할 수 있습니다. 이 동작으로 인한 잠재적 서비스 거부(DoS) 위험을 완화하려면 `AssetDownloadServlet` 게시 인스턴스에서 기본적으로 [!DNL Experience Manager] OSGi 구성 요소를 사용할 수 없습니다. 기본적으로 [!DNL Experience Manager] 작성자 인스턴스에서 활성화됩니다.
 
-이 기능으로 인해 발생할 수 있는 DoS 위험을 줄이기 위해 최신 AEM 버전의 게시 인스턴스에 대해 기본적으로 `AssetDownloadServlet` OSGi 구성 요소가 비활성화됩니다.
-
-자산 다운로드 서버를 활성화해야 하는 경우 자세한 내용은 [이 문서](/help/assets/download-assets-from-aem.md)을(를) 참조하십시오.
+다운로드 기능이 필요하지 않은 경우 작성자 및 게시 배포의 서블릿을 비활성화합니다. 자산 다운로드 기능이 활성화되어 있어야 하는 설정의 경우 자세한 내용은 [이 아티클](/help/assets/download-assets-from-aem.md)을 참조하십시오. 배포에서 지원할 수 있는 최대 다운로드 제한을 정의할 수도 있습니다.
 
 ### WebDAV {#disable-webdav} 비활성화
 
