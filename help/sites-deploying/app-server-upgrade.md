@@ -1,8 +1,6 @@
 ---
 title: 응용 프로그램 서버 설치 업그레이드 단계
-seo-title: 응용 프로그램 서버 설치 업그레이드 단계
 description: 응용 프로그램 서버를 통해 배포되는 AEM 인스턴스를 업그레이드하는 방법을 알아봅니다.
-seo-description: 응용 프로그램 서버를 통해 배포되는 AEM 인스턴스를 업그레이드하는 방법을 알아봅니다.
 uuid: e4020966-737c-40ea-bfaa-c63ab9a29cee
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,10 +10,9 @@ discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
 docset: aem65
 feature: 업그레이드
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-translation-type: tm+mt
-source-git-commit: d99f4ce072688f8e7d453199742618f0b2357d07
+source-git-commit: 64f55369819104f2f622c61de1ecdb885e6708d9
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
