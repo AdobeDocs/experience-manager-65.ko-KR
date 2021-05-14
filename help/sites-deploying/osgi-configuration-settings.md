@@ -10,15 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: 구성
+exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
+source-git-commit: ca66c0655bcd878644e275fc8f7a41b38110beae
 workflow-type: tm+mt
-source-wordcount: '3806'
+source-wordcount: '3561'
 ht-degree: 0%
 
 ---
-
 
 # OSGi 구성 설정{#osgi-configuration-settings}
 
@@ -433,29 +432,6 @@ AEM 루트 매핑을 사용하면 인스턴스에 대해 기본값으로 보유�
 자세한 내용은 [버전 삭제](/help/sites-deploying/version-purging.md)를 참조하십시오.
 
 **일 CQ 워크플로우 이메일 알림** 서비스워크플로우에서 보낸 알림에 대한 이메일 설정을 구성합니다.
-
-**일 CQSE HTTP** ServiceCQ Servlet 엔진을 제어합니다.
-
-* **NIO for HTTP, **HTTP에 NIO를 사용할지 여부를 나타냅니다. 기본값은 true입니다. HTTP가 활성화된 경우에만 사용됩니다.
-* **연결 시간 초과, **연결 시간 초과(밀리초)입니다. 이 속성은 HTTP 및 HTTPS 연결 모두에 적용됩니다. 기본값은 60초입니다.
-
-* **HTTPS 활성화,** HTTPS가 활성화되었는지 여부. 기본값은 false입니다.
-* **세션 시간 초과**, 분 단위로 지정된 HTTP 세션의 기본 라이프타임입니다. 제한 시간이 0 이하일 경우 세션이 시간 초과되지 않습니다. 기본값은 10분입니다.
-* **디버그 로깅**, DEBUG 수준 메시지를 작성할지 여부를 선택합니다. 기본값은 false입니다.
-* **요청 버퍼 크기**, 요청에 대한 버퍼 크기(바이트)입니다. 기본값은 8KB입니다.
-* **최대 스레드 수**, 요청을 처리하는 데 사용할 최대 스레드 수입니다. 기본값은 200입니다.
-
-다음 속성은 HTTPS가 활성화된 경우에만 적용됩니다.
-
-* **HTTPS 포트**, HTTPS 요청에 대한 수신 대기 포트입니다. 기본값은 433입니다.
-* **HTTPS용 NIO**, HTTP에 NIO를 사용할지 여부를 나타냅니다. 기본적으로 HTTP용 NIO 속성 값이 사용됩니다.
-* **키** 저장소, HTTPS에 사용할 키 저장소의 절대 경로입니다. HTTPS가 활성화된 경우 필요합니다.
-* **Keystore 암호**, Keystore 액세스를 위한 암호.
-* **키 별칭**, 키 저장소에 있는 비밀 키의 별칭입니다.
-* **키 암호**, Keystore에서 비밀 키를 잠금 해제할 암호.
-* **클라이언트 인증서**, 클라이언트가 유효한 인증서를 제공해야 하는 요구 사항. 기본값은 none입니다.
-
-SSL 관련 옵션에 대한 자세한 내용 및 CQSE용 HTTPS를 사용하는 방법에 대한 자세한 설명은 [HTTP Over SSL 활성화](/help/sites-administering/ssl-by-default.md)를 참조하십시오.
 
 **CQ Rewriter HTML 파서 팩토리**
 
