@@ -12,9 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: 문서 보안
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
+source-git-commit: ffba6ecf6c3d75a71c3e6f970fd9a20ce467492d
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2562'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,7 @@ Document Security 관리자는 사용자 관리에서 다음 권한을 사용하
 
 >[!NOTE]
 >
->데이터베이스에서 최대 1,000개의 정책 집합 이름을 검색할 수 있습니다.
+>`getAllPolicysetnames()` API를 사용하여 데이터베이스에서 최대 1000개의 정책 집합 이름을 검색할 수 있습니다.
 
 정책 세트는 권한이 있는 관리자 및 정책 집합 코디네이터가 문서 보안 관리 웹 페이지에서 작성 및 삭제됩니다.
 
