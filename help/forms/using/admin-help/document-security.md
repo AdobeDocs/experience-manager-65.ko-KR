@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: 문서 보안
+exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
+source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
-
 
 # 문서 보안 정보 {#about-document-security}
 
@@ -223,6 +222,10 @@ Document Security 관리자는 사용자 관리에서 다음 권한을 사용하
 * 정책 집합 내의 정책 또는 문서에 대한 정책 및 문서 이벤트 보기
 * 문서에 대한 액세스 취소
 * 문서에 대한 정책을 전환합니다.
+
+>[!NOTE]
+>
+>데이터베이스에서 최대 1,000개의 정책 집합 이름을 검색할 수 있습니다.
 
 정책 세트는 권한이 있는 관리자 및 정책 집합 코디네이터가 문서 보안 관리 웹 페이지에서 작성 및 삭제됩니다.
 
