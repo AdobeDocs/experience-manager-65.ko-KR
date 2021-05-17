@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: 언어 복사
+exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
+source-git-commit: bed7ffd413c7826cf0e419fa1c31e3d3c325d4b1
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1571'
 ht-degree: 1%
 
 ---
-
 
 # 번역 통합 프레임워크 구성{#configuring-the-translation-integration-framework}
 
@@ -40,6 +39,7 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
+* [XTM 클라우드](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [린고텍](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [스마트링](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
@@ -228,4 +228,3 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 1. 편집을 클릭하거나 탭한 다음 Cloud Services 탭을 클릭하거나 탭합니다.
 1. 구성 추가 > 번역 통합을 클릭하거나 탭합니다.
 1. 사용할 번역 통합 프레임워크를 선택한 다음 완료를 클릭하거나 탭합니다.
-
