@@ -1,8 +1,8 @@
 ---
-title: PDF 유틸리티 서비스 Java APIQ빠른 시작(SOAP)
-seo-title: PDF 유틸리티 서비스 Java APIQ빠른 시작(SOAP)
-description: PDF 유틸리티 서비스를 사용하여 PDF 문서를 XDP 문서로 변환하고, XDP 문서를 PDF 문서로 변환하고, PDF 문서 속성을 검색하고, PDF 문서의 저장 스타일을 설정하고, PDF 문서의 기밀 정보를 가릴 수 있습니다.
-seo-description: PDF 유틸리티 서비스를 사용하여 PDF 문서를 XDP 문서로 변환하고, XDP 문서를 PDF 문서로 변환하고, PDF 문서 속성을 검색하고, PDF 문서의 저장 스타일을 설정하고, PDF 문서의 기밀 정보를 가릴 수 있습니다.
+title: PDF 유틸리티 서비스 Java APIQ 빠른 시작(SOAP)
+seo-title: PDF 유틸리티 서비스 Java APIQ 빠른 시작(SOAP)
+description: PDF 유틸리티 서비스를 사용하여 PDF 문서를 XDP 문서로 변환하고, XDP 문서를 PDF 문서로 변환하고, PDF 문서 속성을 검색하고, PDF 문서에 대한 저장 스타일을 설정하고, PDF 문서를 가릴 수 있습니다.
+seo-description: PDF 유틸리티 서비스를 사용하여 PDF 문서를 XDP 문서로 변환하고, XDP 문서를 PDF 문서로 변환하고, PDF 문서 속성을 검색하고, PDF 문서에 대한 저장 스타일을 설정하고, PDF 문서를 가릴 수 있습니다.
 uuid: 96bb2bd5-b274-43d4-a664-49cc1c526b3f
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e861d848-b0b7-4ae9-a56d-c0957ec95730
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
 
-
 # PDF 유틸리티 서비스 Java API 빠른 시작(SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
 
-다음 빠른 시작을 PDF 유틸리티 서비스에 사용할 수 있습니다.
+PDF 유틸리티 서비스에 다음 빠른 시작을 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서를 XDP 문서로 변환](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api)
 
@@ -31,17 +30,17 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서에 대한 저장 스타일 설정](pdf-utilities-service-java-api.md#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):PDF 문서 기밀 정보 가리기](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
+[빠른 시작(SOAP 모드):PDF 문서 정리](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 Forms Server 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 Forms Server 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}를 사용하여 PDF 문서를 XDP 문서로 변환
 
-다음 코드 예제에서는 PDF 문서를 XDP 문서로 변환합니다. ([PDF 문서를 XDP 문서로 변환](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents) 참조).
+다음 코드 예제에서는 PDF 문서를 XDP 문서로 변환합니다. ( [PDF 문서를 XDP 문서로 변환](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents) 참조).
 
 ```java
  /*
@@ -142,7 +141,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api}를 사용하여 XDP 문서를 PDF 문서로 변환
 
-다음 코드 예제에서는 XDP 문서를 PDF 문서로 변환합니다. ([XDP 문서를 PDF 문서로 변환](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents) 참조)
+다음 코드 예제에서는 XDP 문서를 PDF 문서로 변환합니다. ( [XDP 문서를 PDF 문서로 변환](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents) 참조).
 
 ```java
  /*
@@ -240,9 +239,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}을 사용하여 PDF 문서 속성 검색
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}를 사용하여 PDF 문서 속성 검색
 
-다음 코드 예제에서는 문서가 PDF 문서인지 여부를 결정하고, 그렇다면 문서를 읽을 수 있는 가장 이른 Acrobat 버전입니다. ([PDF 문서 속성 검색](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)을 참조하십시오.)
+다음 코드 예제에서는 문서가 PDF 문서인지 여부를 확인하고, 그럴 경우 문서를 읽을 수 있는 가장 이른 Acrobat 버전입니다. ( [PDF 문서 속성 검색](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties) 참조)
 
 ```java
  /*
@@ -357,9 +356,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}을 사용하여 PDF 문서에 대한 저장 스타일 설정
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}를 사용하여 PDF 문서에 대한 저장 스타일 설정
 
-다음 코드 예제에서는 빠른 웹 보기를 위해 저장 모드를 설정한 다음 PDF 문서를 암호화된 암호화 서비스에 전달합니다. 빠른 웹 보기를 위해 저장된 암호화된 PDF 문서는* FastWebViewLoan.pdf*라는 PDF 파일로 저장됩니다. ([PDF 문서 저장 모드 설정](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)을 참조하십시오.)
+다음 코드 예제에서는 빠른 웹 보기를 위해 저장 모드를 설정한 다음 PDF 문서를 암호화한 암호화 서비스로 전달합니다. 빠른 웹 보기를 위해 저장된 암호화된 PDF 문서는* FastWebViewLoan.pdf*라는 PDF 파일로 저장됩니다. ([PDF 문서 저장 모드 설정](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)을 참조하십시오.)
 
 ```java
  /*
@@ -499,7 +498,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}를 사용하여 문서를 PDF/A-2b 문서로 변환
 
-다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *LoanArchive.pdf*&#x200B;라는 PDF 파일로 저장한 PDF/A-2b 문서로 변환합니다. ([문서를 PDF/A 문서로 변환](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents) 참조)
+다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *LoanArchive.pdf*&#x200B;라는 PDF 파일로 저장된 PDF/A-2b 문서로 변환합니다. ([문서를 PDF/A 문서로 변환](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents) 참조)
 
 ```java
 /*
@@ -585,7 +584,7 @@ public class CreatePDFADocument {
 }
 ```
 
-## 빠른 시작(SOAP 모드):PDF 문서 기밀 정보 가리기 {#quick-start-soap-mode-sanitizing-pdf-documents}
+## 빠른 시작(SOAP 모드):PDF 문서 정리 {#quick-start-soap-mode-sanitizing-pdf-documents}
 
 다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 정리합니다.
 
@@ -667,4 +666,3 @@ public class Sanitization {
     }
 }
 ```
-
