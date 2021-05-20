@@ -1,6 +1,6 @@
 ---
-title: 커뮤니티에 대한 Maven 사용
-seo-title: 커뮤니티에 대한 Maven 사용
+title: 커뮤니티에 Maven 사용
+seo-title: 커뮤니티에 Maven 사용
 description: AEM Uber API jar
 seo-description: AEM Uber API jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
@@ -9,36 +9,35 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
-translation-type: tm+mt
-source-git-commit: 5e7cc6ab82ba450b9be7c97266ec4c81b18fe3d2
+exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 0%
 
 ---
 
-
-# 커뮤니티 {#using-maven-for-communities}에 대한 마비사항 사용
+# Communities에 Maven 사용 {#using-maven-for-communities}
 
 ## 개요 {#overview}
 
-AEM Communities 설명서의 이 섹션에서는 다음과 같은 항목을 다룹니다.
+AEM Communities 설명서의 이 섹션은 다음 항목 외에도 있습니다.
 
-* [Apache Maven을 사용하여 AEM 프로젝트 제작](../../help/sites-developing/ht-projects-maven.md).
+* [Apache Maven을 사용하여 AEM 프로젝트 작성](../../help/sites-developing/ht-projects-maven.md).
 
-개별 아티팩트를 대체하는 &quot;우버&quot; 아티팩트는 하나만 있습니다.
+개별 아티팩트를 대체하는 &quot;uber&quot; 아티팩트는 하나만 있습니다.
 
 * AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
->AEM 6.4부터 커뮤니티 API는 명시적으로 릴리스되지 않습니다. 이제 모든 커뮤니티 API가 Uber jar 자체에 포함됩니다.
+>AEM 6.4 이상에서 커뮤니티 API는 명시적으로 릴리스되지 않습니다. 이제 모든 Communities API가 Uber jar 자체에 포함됩니다.
 >
->최신 커뮤니티 릴리스를 최신 상태로 유지하는 것이 좋습니다.
+>최신 Communities 릴리스를 최신 상태로 유지하는 것이 좋습니다.
 >
 >최신 버전을 확인하려면 [최신 릴리스](deploy-communities.md#latest-releases) 섹션을 참조하십시오.
 
-## 종속 관계 예 {#maven-dependency-example}
+## Maven 종속성 예 {#maven-dependency-example}
 
 ```xml
 <dependency>
@@ -51,7 +50,7 @@ AEM Communities 설명서의 이 섹션에서는 다음과 같은 항목을 다�
 
 >[!NOTE]
 >
->최신 Uber jar 아티팩트를 식별하려면 [AEM Uber jar 리포지토리](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar)을 참조하십시오.
+>최신 Uber jar 아티팩트를 식별하려면 [AEM Uber jar 저장소](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar)를 참조하십시오.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:
