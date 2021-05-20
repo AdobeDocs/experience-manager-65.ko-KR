@@ -2,9 +2,8 @@
 title: AEM 6.5 모바일 사용 안내서
 seo-title: AEM 6.5 모바일 사용 안내서
 description: 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다.
-seo-description: 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법에 대해 설명합니다.
+seo-description: 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다.
 exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '369'
@@ -38,7 +37,7 @@ ht-degree: 89%
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [상거래 사용 안내서](/help/commerce/home.md) | AEM에서 제공하는 Commerce Integration Framework에 대해 알아봅니다. |
+| [상거래 사용 안내서](/help/commerce/home.md) | AEM에서 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
