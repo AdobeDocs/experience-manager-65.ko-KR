@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
-feature: Content Fragments
+feature: 콘텐츠 조각
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: b204df18-2aef-4905-82f8-c777928ba828
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1975'
 ht-degree: 99%
 
 ---
-
 
 # 컨텐츠 조각을 사용한 작업{#working-with-content-fragments}
 
