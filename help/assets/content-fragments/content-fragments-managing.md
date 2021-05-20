@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 관리
 seo-title: 컨텐츠 조각 관리
 description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
-seo-description: 컨텐츠 조각은 자산으로 저장되므로 주로 자산 콘솔에서 관리됩니다.
+seo-description: 컨텐츠 조각은 자산으로 저장되므로 자산 콘솔에서 주로 관리됩니다.
 uuid: 675e1a6b-2583-488f-bbb4-210daed3e1b0
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
-feature: Content Fragments
+feature: 콘텐츠 조각
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 636daf55-2225-4780-9c57-1a2d7464fe2c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1488'
 ht-degree: 99%
 
 ---
-
 
 # 컨텐츠 조각 관리{#managing-content-fragments}
 
@@ -178,7 +177,7 @@ ht-degree: 99%
 
    >[!CAUTION]
    >
-   >컨텐츠 조각을 편집하려면 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 필요합니다. 문제가 발생하면 시스템 관리자에게 문의하십시오.
+   >컨텐츠 조각을 편집하려면 [적절한 권한](/help/sites-developing/customizing-content-fragments.md#asset-permissions)이 필요합니다. 문제가 발생하는 경우 시스템 관리자에게 문의하십시오.
 
    >[!NOTE]
    >
@@ -347,4 +346,3 @@ ht-degree: 99%
    >[!CAUTION]
    >
    >조각이 페이지에서 이미 참조되어 있다면 경고 메시지가 표시되고 **강제 삭제**&#x200B;로 진행하겠다고 확인해야 합니다. 해당 컨텐츠 조각 구성 요소와 함께 조각이 모든 컨텐츠 페이지에서 삭제됩니다.
-
