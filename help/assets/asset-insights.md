@@ -1,19 +1,18 @@
 ---
 title: 자산 통찰력
-description: 자산 인사이트 기능을 사용하여 제3자 웹사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 이미지의 사용자 등급과 사용 통계를 추적할 수 있는 방법을 알아봅니다.
+description: 자산 인사이트 기능을 사용하여 타사 웹 사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 이미지의 사용자 등급과 사용 통계를 추적할 수 있는 방법을 알아봅니다.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: 자산 통찰력,자산 보고서
+exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 1%
+source-wordcount: '756'
+ht-degree: 0%
 
 ---
 
-
-# 자산 통찰력 {#asset-insights}
+# 자산 인사이트 {#asset-insights}
 
 자산 인사이트 기능을 사용하면 제3자 웹사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에 사용되는 이미지의 사용자 등급과 사용 통계를 추적할 수 있습니다. 성과 및 인기에 대한 통찰력을 얻을 수 있습니다.
 
@@ -21,7 +20,7 @@ ht-degree: 1%
 
 [!DNL Assets] 인사이트가 웹 사이트의 이미지에 대한 사용 통계를 캡처하려면 웹 사이트 코드에 이미지의 포함 코드를 포함해야 합니다.
 
-자산 통찰력이 자산에 대한 사용 통계를 표시하도록 하려면 먼저 Adobe Analytics에서 보고 데이터를 가져오기 위한 기능을 구성합니다. 자세한 내용은 [자산 인사이트 구성](/help/assets/configure-asset-insights.md)을 참조하십시오.
+자산 통찰력이 자산에 대한 사용 통계를 표시하도록 하려면 먼저 Adobe Analytics에서 보고 데이터를 가져오기 위한 기능을 구성합니다. 자세한 내용은 [자산 인사이트 구성](/help/assets/configure-asset-insights.md)을 참조하십시오. 이 기능을 사용하려면 [!DNL Adobe Analytics] 라이선스를 별도로 구입하십시오. [!DNL Managed Services]의 고객은 [!DNL Experience Manager]과(와) 함께 번들로 포함된 [!DNL Analytics] 라이센스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하십시오.
 
 >[!NOTE]
 >
