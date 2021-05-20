@@ -1,25 +1,24 @@
 ---
 title: 프로그래밍 방식으로 AEM 문서 서비스 사용
 seo-title: 프로그래밍 방식으로 AEM 문서 서비스 사용
-description: Document Services API를 사용하여 PDF 문서를 디지털 서명, 암호화 및 생성하는 방법을 살펴볼 수 있습니다.
-seo-description: Document Services API를 사용하여 PDF 문서를 디지털 서명, 암호화 및 생성하는 방법을 살펴볼 수 있습니다.
+description: Document Services API를 사용하여 PDF 문서를 디지털 서명, 암호화 및 생성하는 방법을 알아봅니다.
+seo-description: Document Services API를 사용하여 PDF 문서를 디지털 서명, 암호화 및 생성하는 방법을 알아봅니다.
 uuid: bf5ee197-4daf-4a64-8b6d-2c0d1f232b1c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
-translation-type: tm+mt
-source-git-commit: c3fddf28c0f2f5377fff7561d29f073cc847c3ca
+exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '6450'
 ht-degree: 1%
 
 ---
 
-
 # 프로그래밍 방식으로 AEM 문서 서비스 사용 {#using-aem-document-services-programmatically}
 
-이 문서의 샘플 및 예제를 통해 OSGi 환경의 AEM Forms에서 AEM 다큐멘트 서비스를 이해하고 사용하는 방법을 살펴볼 수 있습니다. JEE 환경의 AEM Forms 샘플 및 예는
+이 문서의 샘플 및 예는 OSGi 환경의 AEM Forms에서 AEM Document Services를 이해하고 사용하는 데 도움이 됩니다. JEE 환경의 AEM Forms에 대한 샘플 및 예는 를 참조하십시오.
 
 * [서명 서비스 Java API 빠른 시작](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
 
@@ -31,9 +30,9 @@ ht-degree: 1%
 
 * DocAssurance 서비스 API를 사용하기 전에 [DocAssurance 서비스](/help/forms/using/install-configure-document-services.md)를 구성합니다.
 
-* AEM 마스터 프로젝트를 사용하여 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)를 다운로드하고 구성합니다. AEM Document Services를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)에서 사용할 수 있습니다.
+* AEM maven 프로젝트를 사용하여 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)를 다운로드하고 구성합니다. AEM 문서 서비스를 사용하여 Maven 프로젝트를 빌드하는 데 필요한 클라이언트 클래스는 [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)에서 사용할 수 있습니다
 
-* Maven](/help/sites-developing/ht-projects-maven.md)을 사용하여 AEM 프로젝트를 빌드하는 방법에 대해 학습합니다.[
+* Maven](/help/sites-developing/ht-projects-maven.md)을 사용하여 AEM 프로젝트를 빌드하는 방법을 [알아봅니다.
 
 ## DocAssurance 서비스 {#docassurance-service}
 
@@ -50,7 +49,7 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
 * [서명 필드 추가](/help/forms/using/aem-document-services-programmatically.md#p-adding-a-signature-field-nbsp-p)
 * [문서 타임스탬프 적용](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
 
-* [서명 받기](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-p)
+* [서명 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-p)
 * [서명 필드 목록 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-field-list-nbsp-p)
 * [서명 필드 수정](/help/forms/using/aem-document-services-programmatically.md#p-modifying-signature-fields-nbsp-p)
 
@@ -66,18 +65,18 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
 * [디지털 서명 제거](/help/forms/using/aem-document-services-programmatically.md#p-removing-digital-signatures-p)
 
 * [인증 서명 필드 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-certifying-signature-field-p)
-* [PDF 암호화 유형 다운로드](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
+* [PDF 암호화 유형 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
 * [암호 암호화 제거](/help/forms/using/aem-document-services-programmatically.md#p-removing-password-encryption-from-pdf-p)
 
 * [인증서 암호화 제거](/help/forms/using/aem-document-services-programmatically.md#p-removing-certificate-encryption-p)
 
 >[!NOTE]
 >
->이러한 모든 서비스는 Document 개체를 입력 매개 변수로 사용하여 URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)에서 Javadoc를 찾을 수 있습니다.
+>이러한 모든 서비스는 Document 개체를 URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)에서 Javadoc를 찾을 수 있는 입력 매개 변수로 사용합니다
 
-### 보이지 않는 서명 필드 {#adding-an-invisible-signature-field} 추가
+### 보이지 않는 서명 필드 추가 {#adding-an-invisible-signature-field}
 
-디지털 서명은 서명을 그래픽으로 나타내는 양식 필드인 서명 필드에 나타납니다. 서명 필드를 표시하거나 숨길 수 있습니다. 서명자는 기존 서명 필드를 사용하거나 서명 필드를 프로그래밍 방식으로 추가할 수 있습니다. 두 경우 모두 PDF 문서에 서명하려면 서명 필드가 있어야 합니다. 서명 서비스 Java API 또는 서명 웹 서비스 API를 사용하여 프로그래밍 방식으로 서명 필드를 추가할 수 있습니다. PDF 문서에 두 개 이상의 서명 필드를 추가할 수 있습니다. 그러나 각 서명 필드 이름은 고유해야 합니다.
+서명의 그래픽 표현이 포함된 양식 필드인 서명 필드에 디지털 서명이 나타납니다. 서명 필드는 보거나 볼 수 있습니다. 서명자는 기존 서명 필드를 사용하거나 서명 필드를 프로그래밍 방식으로 추가할 수 있습니다. 두 경우 모두 PDF 문서에 서명을 하려면 먼저 서명 필드가 있어야 합니다. 서명 서비스 Java API 또는 서명 웹 서비스 API를 사용하여 서명 필드를 프로그래밍 방식으로 추가할 수 있습니다. PDF 문서에 두 개 이상의 서명 필드를 추가할 수 있습니다. 그러나 각 서명 필드 이름은 고유해야 합니다.
 
 **구문**:  `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
@@ -91,23 +90,23 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
   </tr>
   <tr>
    <td><code>inDoc</code></td>
-   <td>PDF를 포함하는 문서 개체<br /> </td>
+   <td>PDF가 포함된 문서 개체<br /> </td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code> </td>
-   <td>서명 필드의 이름입니다. 이 매개 변수는 필수이며 값으로 null을 사용할 수 없습니다.<br /> </td>
+   <td>서명 필드의 이름입니다. 이 매개 변수는 필수 매개 변수이며 값으로 null을 포함할 수 없습니다.<br /> </td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>서명 필드가 서명된 후 잠긴 PDF 문서 필드를 지정하는 <code>FieldMDPOptionSpec</code> 개체 이 매개 변수는 선택 사항이며 null 값을 허용할 수 있습니다.</td>
+   <td>서명 필드가 서명된 후 잠긴 PDF 문서 필드를 지정하는 <code>FieldMDPOptionSpec</code> 개체입니다. 이 매개 변수는 선택 사항이며 null 값을 허용할 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
-   <td>필드에 대한 다양한 시드 값을 지정하는 <code>SeedValueOptions</code> 객체입니다. t 이 매개 변수는 선택 사항이며 null 값을 허용할 수 있습니다.<span class="acrolinxCursorMarker"></span></td>
+   <td>필드의 다양한 시드 값을 지정하는 <code>SeedValueOptions</code> 개체. T 이 매개 변수는 선택 사항이며 null 값을 허용할 수 있습니다.<span class="acrolinxCursorMarker"></span></td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
-   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 이 매개 변수는 암호화된 파일에만 필요합니다.</td>
+   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 이 매개 변수는 암호화된 파일에 대해서만 필요합니다.</td>
   </tr>
  </tbody>
 </table>
@@ -239,7 +238,7 @@ public class AddInvisibleSignatureField {
 }
 ```
 
-문서 서명에 [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)사양을 사용할 수도 있습니다. 다음 샘플 코드를 사용하여 서명 형식을 [CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)(으)로 설정합니다.
+문서에 서명하려면 [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)사양을 사용할 수도 있습니다. 다음 샘플 코드를 사용하여 서명 형식을 [CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)로 설정합니다.
 
 ```java
 SigningFormat signingFormat = SigningFormat.CAdES;
@@ -249,7 +248,7 @@ signOptions.setSigAppearence(sigAppearence);
 
 ### 서명 필드 추가  {#adding-a-signature-field-nbsp}
 
-서명 서비스 Java API 또는 서명 웹 서비스 API를 사용하여 프로그래밍 방식으로 서명 필드를 추가할 수 있습니다. PDF 문서에 여러 서명 필드를 추가할 수 있습니다. 그러나 각 서명 필드 이름은 고유해야 합니다.
+서명 서비스 Java API 또는 서명 웹 서비스 API를 사용하여 서명 필드를 프로그래밍 방식으로 추가할 수 있습니다. PDF 문서에 여러 서명 필드를 추가할 수 있습니다. 그러나 각 서명 필드 이름은 고유해야 합니다.
 
 **구문**:
 
@@ -276,27 +275,27 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>서명 필드의 이름입니다. 이 매개 변수는 필수이며 null 값을 사용할 수 없습니다.</td>
+   <td>서명 필드의 이름입니다. 이 매개 변수는 필수 매개 변수이며 null 값을 사용할 수 없습니다.</td>
   </tr>
   <tr>
    <td><code>pageNumber</code></td>
-   <td>서명 필드가 추가된 페이지 번호입니다. 유효한 값은 문서 내에 포함된 페이지 수 사이의 1입니다. 이 매개 변수는 필수이며 null 값을 사용할 수 없습니다.<br /> </td>
+   <td>서명 필드가 추가되는 페이지 번호입니다. 유효한 값은 문서 내에 포함된 페이지 수까지 1개입니다. 이 매개 변수는 필수입니다.<br /> </td>
   </tr>
   <tr>
    <td><code>positionRectangle</code></td>
-   <td>서명 필드의 위치를 지정하는 <code>PositionRectangle object</code>. 이 매개 변수는 필수이며 null 값을 사용할 수 없습니다. 지정된 사각형이 지정된 페이지의 자르기 상자에 부분적으로 있지 않으면 <code>InvalidArgumentException</code>이(가) 발생합니다. 또한 지정된 사각형의 높이나 너비는 0이거나 음수일 수 없습니다. 왼쪽 아래 X 또는 왼쪽 Y 좌표는 0보다 크거나 음수가 될 수 있으며 페이지의 자르기 상자를 기준으로 합니다.</td>
+   <td>서명 필드의 위치를 지정하는 <code>PositionRectangle object</code> 이 매개 변수는 필수 매개 변수이며 null 값을 사용할 수 없습니다. 지정된 사각형이 지정된 페이지의 자르기 상자에 적어도 부분적으로 나타나지 않으면 <code>InvalidArgumentException</code>이 발생합니다. 또한 지정된 사각형의 높이나 너비는 0 또는 음수가 될 수 없습니다. 왼쪽 아래 X 또는 왼쪽 Y 좌표는 0보다 크지만 음수는 아니며 페이지의 자르기 상자에 상대적입니다.</td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>서명 필드가 서명된 후 잠긴 PDF 문서 필드를 지정하는 <code>FieldMDPOptionSpec</code> 개체 선택적 매개 변수이며 null일 수 있습니다.</td>
+   <td>서명 필드가 서명된 후 잠긴 PDF 문서 필드를 지정하는 <code>FieldMDPOptionSpec</code> 개체입니다. 선택적 매개 변수이며 null일 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
-   <td>필드에 대한 다양한 시드 값을 지정하는 <code>SeedValueOptions</code> 객체입니다. 선택적 매개 변수이며 null일 수 있습니다.</td>
+   <td>필드의 다양한 시드 값을 지정하는 <code>SeedValueOptions</code> 개체. 선택적 매개 변수이며 null일 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
-   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 이 매개 변수는 암호화된 파일에만 필요합니다.</td>
+   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 이 매개 변수는 암호화된 파일에 대해서만 필요합니다.</td>
   </tr>
  </tbody>
 </table>
@@ -429,7 +428,7 @@ public class AddSignatureField {
 
 ### 문서 타임스탬프 적용 {#apply-document-timestamp}
 
-[PAdES 4](https://en.wikipedia.org/wiki/PAdES) 사양에 따라 문서의 타임스탬프를 프로그래밍 방식으로 지정할 수 있습니다. 거래 관련 문서에 대해 [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) 사양을 사용할 수도 있습니다.
+[PAdES 4](https://en.wikipedia.org/wiki/PAdES) 사양에 따라 문서에 프로그래밍 방식으로 타임스탬프를 지정할 수 있습니다. 트랜잭션 관련 문서에 [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) 사양을 사용할 수도 있습니다.
 
 **구문**:  `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
@@ -443,7 +442,7 @@ public class AddSignatureField {
   </tr>
   <tr>
    <td><code>doc</code> </td>
-   <td>PDF를 포함하는 문서 개체<br /> </td>
+   <td>PDF가 포함된 문서 개체<br /> </td>
   </tr>
   <tr>
    <td><code>VerificationTime</code></td>
@@ -451,15 +450,15 @@ public class AddSignatureField {
   </tr>
   <tr>
    <td><code>ValidationPreferences</code> </td>
-   <td>유효성 검사 구성을 제어하는 환경 설정.</td>
+   <td>유효성 검사 구성을 제어하는 기본 설정입니다.</td>
   </tr>
   <tr>
    <td><code>ResourceResolver</code></td>
-   <td>granite trust store에 대한 리소스 확인자입니다.</td>
+   <td>granite 트러스트 저장소에 대한 리소스 확인자입니다.</td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
-   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화되어 있는 경우에만 필요합니다.</td>
+   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 이는 파일이 암호화되어 있는 경우에만 필요합니다.</td>
   </tr>
  </tbody>
 </table>
@@ -634,9 +633,9 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 }
 ```
 
-### 서명 {#getting-signature}을(를) 가져오는 중
+### {#getting-signature} 서명을 가져오는 중
 
-서명하거나 인증할 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 모르거나 이름을 확인하려면 프로그래밍 방식으로 이름을 검색합니다. 서명 서비스는 `form1[0].grantApplication[0].page1[0].SignatureField1[0]` 같은 서명 필드의 정규화된 이름을 반환합니다.
+서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 모르거나 이름을 확인한 다음 프로그래밍 방식으로 이름을 검색합니다. 서명 서비스는 `form1[0].grantApplication[0].page1[0].SignatureField1[0]` 등의 서명 필드의 정규화된 이름을 반환합니다.
 
 **구문**:  `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -650,15 +649,15 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
   </tr>
   <tr>
    <td><code>doc</code> </td>
-   <td>PDF를 포함하는 문서 개체<br /> </td>
+   <td>PDF가 포함된 문서 개체<br /> </td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>서명이 포함된 서명 필드의 이름입니다. 서명 필드의 정규화된 이름을 지정합니다. XFA 양식을 기반으로 하는 PDF 문서를 사용하는 경우 서명 필드의 부분 이름을 사용할 수 있습니다. 예를 들어 <code>form1[0].#subform[1].SignatureField3[3]</code>는 <code>SignatureField3[3]</code>로 지정할 수 있습니다.</td>
+   <td>서명이 포함된 서명 필드의 이름입니다. 서명 필드의 정규화된 이름을 지정합니다. XFA 양식을 기반으로 하는 PDF 문서를 사용할 때 서명 필드의 부분 이름을 사용할 수 있습니다. 예를 들어 <code>form1[0].#subform[1].SignatureField3[3]</code>은 <code>SignatureField3[3]</code>로 지정할 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
-   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화되어 있는 경우에만 필요합니다.</td>
+   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 이는 파일이 암호화되어 있는 경우에만 필요합니다.</td>
   </tr>
  </tbody>
 </table>
@@ -760,7 +759,7 @@ public class GetSignature {
 
 ### 서명 필드 목록 가져오기  {#getting-signature-field-list-nbsp}
 
-서명하거나 인증할 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에서 서명 필드 이름을 잘 모르면 프로그래밍 방식으로 검색하여 확인할 수 있습니다. 서명 서비스는 `form1[0].grantApplication[0].page1[0].SignatureField1[0]` 같은 서명 필드의 정규화된 이름을 반환합니다.
+서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서의 서명 필드 이름을 잘 모를 경우 프로그래밍 방식으로 해당 이름을 검색하고 확인할 수 있습니다. 서명 서비스는 `form1[0].grantApplication[0].page1[0].SignatureField1[0]` 등의 서명 필드의 정규화된 이름을 반환합니다.
 
 **구문**:  `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
@@ -769,7 +768,7 @@ public class GetSignature {
 | 매개 변수 | 설명 |
 |---|---|
 | `inDoc` | PDF가 포함된 문서 개체 |
-| `unlockOptions` | 암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화되어 있는 경우에만 필요합니다. |
+| `unlockOptions` | 암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 이는 파일이 암호화되어 있는 경우에만 필요합니다. |
 
 다음 Java 코드 예제에서는 PDF 문서에 있는 서명 필드의 이름을 검색합니다.
 
@@ -875,11 +874,11 @@ public class GetSignatureFields {
 
 ### 서명 필드 수정  {#modifying-signature-fields-nbsp}
 
-PDF 문서에 있는 서명 필드를 수정할 수 있습니다. 서명 필드를 수정하면 서명 필드 잠금 사전 값 또는 시드 값 사전 값을 조작하는 작업이 포함됩니다.
+PDF 문서에 있는 서명 필드를 수정할 수 있습니다. 서명 필드 수정에는 서명 필드 잠금 사전 값 또는 시드 값 사전 값을 조작하는 작업이 포함됩니다.
 
-필드 잠금 사전은 서명 필드가 서명될 때 잠긴 필드 목록을 지정합니다. 잠긴 필드는 사용자가 필드를 편집할 수 없습니다. 시드 값 사전에는 서명이 적용될 때 사용되는 제한 정보가 포함되어 있습니다. 예를 들어 서명을 무효화하지 않고 발생할 수 있는 작업을 제어하는 권한을 변경할 수 있습니다.
+필드 잠금 사전은 서명 필드에 서명할 때 잠긴 필드 목록을 지정합니다. 잠긴 필드를 사용하면 사용자가 필드를 편집할 수 없습니다. 시드 값 사전에는 서명이 적용될 때 사용되는 제한 정보가 들어 있습니다. 예를 들어 서명을 무효화하지 않고 발생할 수 있는 작업을 제어하는 권한을 변경할 수 있습니다.
 
-기존 서명 필드를 수정하여 변화하는 비즈니스 요구 사항을 반영하도록 PDF 문서를 편집할 수 있습니다. 예를 들어 새 비즈니스 요구 사항은 문서에 서명한 후 모든 문서 필드를 잠가야 합니다.
+기존 서명 필드를 수정하여 변경된 비즈니스 요구 사항을 반영하도록 PDF 문서를 편집할 수 있습니다. 예를 들어, 새로운 비즈니스 요구 사항을 적용하려면 문서가 서명된 후 모든 문서 필드를 잠가야 합니다.
 
 **구문**:  `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
 
@@ -897,20 +896,20 @@ PDF 문서에 있는 서명 필드를 수정할 수 있습니다. 서명 필드�
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>서명 필드의 이름입니다. 이 매개 변수는 필수이며 null 값을 사용할 수 없습니다.<br /> </td>
+   <td>서명 필드의 이름입니다. 이 매개 변수는 필수입니다.<br /> </td>
   </tr>
   <tr>
    <td><code>pdfSignatureFieldProperties</code></td>
-   <td>서명 필드의 <code>PDFSeedValueOptionSpec</code> 및 <code>FieldMDPOptionSpec</code> 값에 대한 정보를 지정하는 객체입니다.</td>
+   <td>서명 필드의 <code>PDFSeedValueOptionSpec</code> 및 <code>FieldMDPOptionSpec</code> 값에 대한 정보를 지정하는 개체입니다.</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
-   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화되어 있는 경우에만 필요합니다.</td>
+   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 이는 파일이 암호화되어 있는 경우에만 필요합니다.</td>
   </tr>
  </tbody>
 </table>
 
-다음 Java 코드 샘플은 서명이 서명 필드에 적용될 때 양식의 모든 필드를 잠가 서명 필드를 수정합니다.
+다음 Java 코드 샘플은 서명 필드에 서명을 적용할 때 양식의 모든 필드를 잠금으로 하여 서명 필드를 수정합니다.
 
 ```java
 /*************************************************************************
@@ -1042,11 +1041,11 @@ public class ModifySignatureField {
 
 ### PDF 문서 인증  {#certifying-pdf-documents-nbsp}
 
-인증된 서명이라는 특정 유형의 서명을 사용하여 PDF 문서를 인증하여 보호할 수 있습니다. 인증된 서명은 다음과 같은 방식으로 디지털 서명과 구별됩니다.
+인증된 서명이라는 특정 유형의 서명을 사용하여 PDF 문서를 인증하여 보안을 설정할 수 있습니다. 인증된 서명은 다음과 같은 방식으로 디지털 서명과 구별됩니다.
 
-* PDF 문서에 적용된 첫 번째 서명이어야 합니다. 즉, 인증된 서명이 적용될 때 문서의 다른 서명 필드는 서명되지 않아야 합니다. PDF 문서에서는 하나의 인증된 서명만 허용됩니다. PDF 문서에 서명하고 인증하려면 서명하기 전에 이를 인증합니다. PDF 문서를 인증한 후 추가 서명 필드에 디지털 방식으로 서명할 수 있습니다.
-* 문서의 작성자 또는 작성자는 인증된 서명을 무효화하지 않고 특정 방식으로 문서를 수정할 수 있음을 지정할 수 있습니다. 예를 들어 문서에 양식 채우기 또는 주석 달기를 허용할 수 있습니다. 작성자가 특정 수정 사항이 허용되지 않도록 지정하는 경우 Acrobat은 사용자가 해당 방식으로 문서를 수정할 수 없도록 제한합니다. 이러한 수정이 이루어지면 인증된 서명은 유효하지 않습니다. 또한 사용자가 문서를 열 때 Acrobat에서 경고가 표시됩니다. (인증되지 않은 서명을 사용하면 수정 작업이 금지되지 않으며 일반적인 편집 작업으로 인해 원본 서명이 무효화되지 않습니다.)
-* 서명 시 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 콘텐트가 있는지 문서가 스캔됩니다. 예를 들어 주석을 사용하면 인증된 내용을 이해하는 데 중요한 페이지의 텍스트를 가릴 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
+* PDF 문서에 적용된 첫 번째 서명이어야 합니다. 즉, 인증된 서명이 적용될 때 문서의 다른 서명 필드는 서명되지 않아야 합니다. PDF 문서에는 하나의 인증된 서명만 허용됩니다. PDF 문서에 서명하고 인증하려면 서명하기 전에 인증하십시오. PDF 문서를 인증하면 추가 서명 필드에 디지털 서명을 할 수 있습니다.
+* 문서의 작성자 또는 작성자는 인증된 서명을 무효화하지 않고 특정 방식으로 문서를 수정할 수 있음을 지정할 수 있습니다. 예를 들어, 문서에서 양식 채우기나 주석 달기를 허용할 수 있습니다. 작성자가 특정 수정 사항이 허용되지 않도록 지정하는 경우 Acrobat에서는 사용자가 이러한 방식으로 문서를 수정하지 못하도록 제한합니다. 그러한 수정 사항이 있는 경우 인증된 서명이 유효하지 않습니다. 또한 사용자가 문서를 열면 Acrobat에 경고가 표시됩니다. (인증되지 않은 서명을 사용하면 수정 사항이 방지되지 않으며 일반 편집 작업이 원본 서명을 무효화하지 않습니다.)
+* 서명 시 문서의 컨텐츠가 모호하거나 오해를 일으킬 수 있는 특정 유형의 컨텐츠가 있는지 문서가 스캔됩니다. 예를 들어, 주석에서는 인증되는 텍스트를 이해하는 데 중요한 페이지의 일부 텍스트를 구분할 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
 
 **구문**:
 
@@ -1073,15 +1072,15 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
-   <td>PDF 문서 서명/인증에 필요한 옵션을 포함합니다.</td>
+   <td>PDF 문서 서명/인증에 필요한 옵션을 포함합니다</td>
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>PDF 문서 확장에 필요한 Reader 옵션 포함</td>
+   <td>PDF 문서 확장에 필요한 Reader 옵션을 포함합니다</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
-   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화된 경우에만 필요합니다.<br /> </td>
+   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화되어 있는 경우에만 필요합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -1347,52 +1346,52 @@ public class Certify {
 
 ### 문서 보안 {#securing-documents}
 
-secureDocument를 사용하면 PDF 문서를 개별적으로 또는 특정 순서로 조합하여 암호화, 서명/인증 및 읽을 수 있습니다. 이 기능에 액세스하려면 해당 인수를 전달합니다. null이면 특정 처리가 필요하지 않은 것으로 간주됩니다.
+secureDocument를 사용하면 PDF 문서를 개별적으로 또는 특정 순서로 조합하여 암호화, 서명/인증 및 판독기를 확장할 수 있습니다. 이 기능에 액세스하려면 해당 인수를 전달합니다. null이면 특정 처리가 필요하지 않다고 가정합니다.
 
 **암호로 PDF 문서 암호화**
 
-암호로 PDF 문서를 암호화할 때 Adobe Reader 또는 Acrobat에서 PDF 문서를 열려면 암호를 지정해야 합니다. 또한 다른 AEM Forms Document Services 작업에서 문서를 사용하기 전에 암호로 암호화된 PDF 문서의 잠금을 해제해야 합니다.
+암호로 PDF 문서를 암호화할 때 사용자는 암호를 지정하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 열어야 합니다. 또한 다른 AEM Forms 문서 서비스 작업에서 문서를 사용하기 전에 암호로 암호화된 PDF 문서의 잠금을 해제해야 합니다.
 
-**인증서를 사용하여 PDF 문서 암호화**
+**인증서로 PDF 문서 암호화**
 
-인증서 기반의 암호화를 사용하면 공개 키 기술을 사용하여 특정 수신자의 문서를 암호화할 수 있습니다.
+인증서 기반 암호화를 사용하면 공개 키 기술을 사용하여 특정 수신자에 대한 문서를 암호화할 수 있습니다.
 
-문서에 대해 서로 다른 권한을 여러 받는 사람에게 부여할 수 있습니다. 암호화의 많은 측면들은 공개 키 기술로 가능하다.
+다양한 수신자에게 문서에 대한 서로 다른 권한을 부여할 수 있습니다. 암호화의 많은 측면들은 공개 키 기술에 의해 가능하게 된다.
 
-알고리즘은 다음 속성을 갖는 키라고 하는 2개의 큰 숫자를 생성하는 데 사용됩니다.
+알고리즘은 다음 속성을 갖는 키라고 하는 두 개의 큰 숫자를 생성하는 데 사용됩니다.
 
-* 하나의 키는 데이터 집합을 암호화하는 데 사용됩니다. 나중에 다른 키만 데이터를 해독하는 데 사용할 수 있습니다.
-* 하나의 키를 다른 키와 구별하는 것은 불가능하다.
-* 키 중 하나가 사용자의 개인 키 역할을 합니다. 이 키에 대한 액세스 권한은 사용자에게만 있는 것이 중요합니다.
-* 다른 키는 다른 사람과 공유할 수 있는 사용자의 공개 키입니다.
+* 한 개의 키는 데이터 집합을 암호화하는 데 사용됩니다. 나중에 다른 키만 데이터 암호를 해독하는 데 사용할 수 있습니다.
+* 한 개의 키를 다른 키와 구별하는 것은 불가능하다.
+* 키 중 하나는 사용자의 개인 키 역할을 합니다. 사용자만 이 키에 액세스할 수 있어야 합니다.
+* 다른 키는 사용자의 공개 키이며, 다른 사용자와 공유할 수 있습니다.
 
-공개 키 인증서에는 사용자의 공개 키와 식별 정보가 들어 있습니다. X.509 형식은 인증서를 저장하는 데 사용됩니다. 인증서는 일반적으로 인증서 유효성에 대한 신뢰도를 측정하는 인식된 실체인 인증 기관(CA)을 통해 발행되고 디지털 서명을 합니다. 인증서는 만료 날짜가 있으며 만료 날짜는 더 이상 유효하지 않습니다.
+공개 키 인증서에는 사용자의 공개 키와 식별 정보가 포함되어 있습니다. X.509 형식은 인증서를 저장하는 데 사용됩니다. 인증서는 일반적으로 CA(인증 기관)에서 발행하고 디지털 서명하며, CA는 인증서의 유효성에 대한 신뢰도를 측정하는 인식된 엔티티입니다. 인증서의 만료 날짜가 만료되어 더 이상 유효하지 않습니다.
 
-또한 CRL(인증서 해지 목록)은 만료 날짜 이전에 해지된 인증서에 대한 정보를 제공합니다. CRL은 인증서 당국에 의해 정기적으로 게시됩니다. 인증서의 해지 상태는 네트워크를 통해 OCSP(Online Certificate Status Protocol)를 통해 검색할 수도 있습니다.
+또한 CRL(인증서 해지 목록)은 만료 날짜 이전에 해지된 인증서에 대한 정보를 제공합니다. CRL은 인증서 기관에서 주기적으로 게시됩니다. 네트워크의 OCSP(온라인 인증서 상태 프로토콜)를 통해 인증서의 해지 상태를 검색할 수도 있습니다.
 
 >[!NOTE]
 >
->인증서를 사용하여 PDF 문서를 암호화하기 전에 AEM Trust Store에 인증서를 추가해야 합니다.
+>인증서로 PDF 문서를 암호화하려면 먼저 인증서를 AEM Trust Store에 추가해야 합니다.
 
 **PDF 문서에 사용 권한 적용**
 
-Reader 확장 Java Client API 및 웹 서비스를 사용하여 PDF 문서에 사용 권한을 적용할 수 있습니다. 사용 권한은 양식에 주석을 추가하거나 양식 필드를 채우고 양식을 저장하는 기능 등 Acrobat에서는 기본적으로 사용할 수 없지만 Adobe Reader에서는 사용할 수 없는 기능과 관련이 있습니다. 사용 권한이 적용된 PDF 문서를 사용 권한이 있는 문서라고 합니다. Adobe Reader에서 권한이 활성화된 문서를 여는 사용자는 해당 특정 문서에 대해 활성화된 작업을 수행할 수 있습니다.
+Reader 확장 Java Client API 및 웹 서비스를 사용하여 PDF 문서에 사용 권한을 적용할 수 있습니다. 사용 권한은 Acrobat에서 기본적으로 사용할 수 있지만, 양식에 주석을 추가하거나, 양식 필드를 작성하고, 양식을 저장하는 기능과 같이 Adobe Reader에서는 사용할 수 없는 기능과 관련이 있습니다. 사용 권한이 적용된 PDF 문서를 권한 사용 문서라고 합니다. Adobe Reader에서 권한 사용 문서를 여는 사용자는 해당 특정 문서에 대해 사용 가능한 작업을 수행할 수 있습니다.
 
-인증서를 사용하여 PDF 문서를 Reader으로 확장하려면 먼저 AEM Keystore에 인증서를 추가해야 합니다.
+인증서를 사용하여 PDF 문서 확장 을 Reader 하려면 먼저 AEM 키 저장소에 인증서를 추가해야 합니다.
 
-**PDF 문서에 디지털 서명**
+**PDF 문서 디지털 서명**
 
-PDF 문서에 디지털 서명을 적용하여 높은 수준의 보안을 제공할 수 있습니다. 자필 서명과 같은 디지털 서명은 서명자가 자신을 식별하고 문서에 대한 설명을 하는 수단을 제공합니다.
+PDF 문서에 디지털 서명을 적용하여 보안 수준을 제공할 수 있습니다. 자필 서명과 같은 디지털 서명은 서명자가 자신을 식별하고 문서에 대한 진술을 하는 수단을 제공합니다.
 
-문서에 디지털 서명을 하는 데 사용되는 기술을 통해 서명자와 수신자 모두 서명한 내용을 명확하게 하고 서명한 이후 문서가 변경되지 않았음을 확인할 수 있습니다.
+문서에 디지털 서명을 하는 데 사용되는 기술은 서명자와 수신자 모두 서명된 내용이 무엇인지 명확하게 하고, 서명된 이후 문서가 변경되지 않았다고 확신하는 데 도움이 됩니다.
 
-PDF 문서는 공개 키 기술을 통해 서명됩니다. 서명자에게는 두 개의 키가 있습니다.공개 키와 개인 키. 개인 키는 서명 시 사용할 수 있어야 하는 사용자의 자격 증명에 저장됩니다.
+PDF 문서는 공개 키 기술을 통해 서명됩니다. 서명자에게 두 개의 키가 있습니다.공개 키와 개인 키. 개인 키는 서명 시 사용할 수 있어야 하는 사용자의 자격 증명에 저장됩니다.
 
-공개 키는 서명을 확인하기 위해 수신자가 사용할 수 있어야 하는 사용자의 인증서에 저장됩니다. 해지된 인증서에 대한 정보는 CA(인증 기관)가 배포한 인증서 해지 목록(CRL) 및 OCSP(온라인 인증서 상태 프로토콜) 응답에서 찾을 수 있습니다. 서명 시간은 타임스탬프 기관이라고 하는 신뢰할 수 있는 소스에서 얻을 수 있습니다.
+공개 키는 수신자가 서명을 확인하기 위해 사용할 수 있어야 하는 사용자의 인증서에 저장됩니다. 해지된 인증서에 대한 정보는 CA(인증서 해지 목록)에서 배포되는 CRL 및 OCSP(온라인 인증서 상태 프로토콜) 응답에서 찾을 수 있습니다. 서명 시간은 Timestaming Authority라는 신뢰할 수 있는 소스에서 얻을 수 있습니다.
 
 >[!NOTE]
 >
->PDF 문서에 디지털 서명을 하려면 먼저 AEM Keystore에서 자격 증명을 추가해야 합니다. 자격 증명은 서명에 사용되는 개인 키입니다.
+>PDF 문서에 디지털 서명을 하려면 먼저 AEM 키 저장소에 자격 증명을 추가해야 합니다. 자격 증명은 서명에 사용되는 개인 키입니다.
 
 >[!NOTE]
 >
@@ -1400,27 +1399,27 @@ PDF 문서는 공개 키 기술을 통해 서명됩니다. 서명자에게는 �
 
 **PDF 문서 인증**
 
-인증된 서명이라는 특정 유형의 서명을 사용하여 PDF 문서를 인증하여 보호할 수 있습니다. 인증된 서명은 다음과 같은 방식으로 디지털 서명과 구별됩니다.
+인증된 서명이라는 특정 유형의 서명을 사용하여 PDF 문서를 인증하여 보안을 설정할 수 있습니다. 인증된 서명은 다음과 같은 방식으로 디지털 서명과 구별됩니다.
 
-PDF 문서에 적용되는 첫 번째 서명이어야 합니다.즉, 인증된 서명이 적용될 때 문서의 다른 모든 서명 필드는 서명되지 않아야 합니다.
+PDF 문서에 적용된 첫 번째 서명이어야 합니다.즉, 인증된 서명이 적용될 때 문서의 다른 서명 필드는 서명되지 않아야 합니다.
 
-PDF 문서에서는 하나의 인증된 서명만 허용됩니다. PDF 문서에 서명하여 인증하려는 경우 서명하기 전에 이를 인증해야 합니다.
+PDF 문서에는 하나의 인증된 서명만 허용됩니다. PDF 문서에 서명하고 인증하려면 서명하기 전에 인증을 받아야 합니다.
 
-PDF 문서를 인증한 후 추가 서명 필드에 디지털 방식으로 서명할 수 있습니다.
+PDF 문서를 인증하면 추가 서명 필드에 디지털 서명을 할 수 있습니다.
 
 문서의 작성자 또는 작성자는 인증된 서명을 무효화하지 않고 특정 방식으로 문서를 수정할 수 있음을 지정할 수 있습니다.
 
-예를 들어, 문서에 양식 입력 또는 주석 달기가 허용됩니다. 작성자가 특정 수정이 허용되지 않는다고 지정하는 경우
+예를 들어, 이 문서에서는 양식에 입력하거나 주석을 달 수 있습니다. 작성자가 특정 수정 사항이 허용되지 않도록 지정하는 경우
 
-Acrobat에서는 사용자가 이러한 방식으로 문서를 수정할 수 없도록 제한합니다. 다른 응용 프로그램을 사용하는 등 이러한 수정이 이루어지면 인증된 서명은 유효하지 않으며 사용자가 문서를 열 때 Acrobat에서 경고를 표시합니다. (인증되지 않은 서명을 사용하면 수정 작업이 금지되지 않으며 일반적인 편집 작업으로 인해 원본 서명이 무효화되지 않습니다.)
+Acrobat에서는 사용자가 이러한 방식으로 문서를 수정할 수 없도록 제한합니다. 다른 응용 프로그램을 사용하는 등의 이러한 수정 사항이 있는 경우 인증된 서명이 유효하지 않으며 사용자가 문서를 열면 Acrobat에 경고가 표시됩니다. (인증되지 않은 서명을 사용하면 수정 사항이 방지되지 않으며 일반 편집 작업이 원본 서명을 무효화하지 않습니다.)
 
-서명 시 문서의 내용이 모호하거나 오해를 불러일으킬 수 있는 특정 유형의 콘텐트가 있는지 문서가 스캔됩니다.
+서명 시 문서의 컨텐츠가 모호하거나 오해를 일으킬 수 있는 특정 유형의 컨텐츠가 있는지 문서가 스캔됩니다.
 
-예를 들어 주석을 사용하면 인증된 내용을 이해하는 데 중요한 페이지의 텍스트를 가릴 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
+예를 들어, 주석에서는 인증되는 텍스트를 이해하는 데 중요한 페이지의 일부 텍스트를 구분할 수 있습니다. 이러한 컨텐츠에 대한 설명(법적 증명)을 제공할 수 있습니다.
 
 >[!NOTE]
 >
->PDF 문서에 디지털 서명을 하려면 먼저 AEM Keystore에서 자격 증명을 추가해야 합니다. 자격 증명은 서명에 사용되는 개인 키입니다.
+>PDF 문서에 디지털 서명을 하려면 먼저 AEM 키 저장소에 자격 증명을 추가해야 합니다. 자격 증명은 서명에 사용되는 개인 키입니다.
 
 **구문**:
 
@@ -1450,20 +1449,20 @@ secureDocument(Document inDoc,
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
-   <td>PDF 문서 서명/인증에 필요한 옵션을 포함합니다.</td>
+   <td>PDF 문서에 서명/인증에 필요한 옵션을 포함합니다</td>
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>PDF 문서 확장에 필요한 Reader 옵션 포함</td>
+   <td>PDF 문서 Reader 확장에 필요한 옵션을 포함합니다</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
-   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화된 경우에만 필요합니다.<br /> </td>
+   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화되어 있는 경우에만 필요합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-**샘플 1**:이 샘플은 암호 암호화, 서명 필드 인증 및 Reader PDF 문서 확장에 사용됩니다.
+**샘플 1**:이 샘플은 암호 암호화를 수행하는 데 사용되며 서명 필드를 인증하고 PDF 문서를 확장하는 Reader을 인증합니다.
 
 ```java
 /*************************************************************************
@@ -1765,7 +1764,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**샘플 2**:이 샘플은 PKI 암호화, 서명 필드 서명 및 Reader PDF 문서 확장에 사용됩니다.
+**샘플 2**:이 샘플은 PKI 암호화를 수행하고 서명 필드에 서명하고 PDF 문서를 확장하는 데 사용됩니다.
 
 ```java
 /*************************************************************************
@@ -2088,26 +2087,26 @@ public class PassEncryptSignExtend {
 }
 ```
 
-독자가 PDF 문서를 확장하는 동안 다음 오류 메시지가 표시되는 경우:
+Reader가 PDF 문서를 확장하는 동안 다음 오류 메시지가 표시되는 경우:
 
 ```javascript
 org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.ThreadDeath: null at com.adobe.internal.pdftoolkit.services.javascript.GibsonContextFactory.observeInstructionCount(GibsonContextFactory.java:138)
 ```
 
-Reader 확장 서비스가 정의된 시간 초과 간격 내에 문서에 사용된 JavaScript를 실행할 수 없음을 의미합니다.
+즉, Reader 확장 서비스가 정의된 시간 제한 간격 내에 문서에 사용된 JavaScript를 실행할 수 없음을 의미합니다.
 
-PDF 문서에서 JavaScripts에 대해 정의된 시간 초과 간격 관리:
+다음을 사용하여 PDF 문서의 JavaScript에 대해 정의된 시간 제한 간격을 관리합니다.
 
 ```javascript
 ReaderExtensionsOptionSpec optionSpec = new ReaderExtensionsOptionSpec(usageRights, message);
 optionSpec.setJsScriptExecutionTimeoutInterval(100);
 ```
 
-여기서 100은 JavaScripts 실행을 위해 정의된 시간 초과 간격(초)을 나타냅니다. 시간 초과 간격에 적절한 값을 설정합니다.
+여기서 100은 JavaScript 실행을 위해 정의된 시간 초과 간격(초)을 나타냅니다. 시간 제한 간격에 적절한 값을 설정합니다.
 
-### 자격 증명 사용 권한을 가져오는 중 {#getting-credential-usage-rights}
+### 자격 증명 사용 권한 {#getting-credential-usage-rights} 가져오기
 
-지정된 `credentialAlias`에서 지정한 자격 증명의 사용 권한 정보를 가져오려면 `SecureDocument` API 내에서 이 API를 호출합니다.
+지정된 `credentialAlias`에 의해 지정된 자격 증명의 사용 권한 정보를 가져오려면 `SecureDocument` API 내에서 이 API를 호출하십시오.
 
 **구문**:  `getCredentialUsageRights(String credentialAlias, ResourceResolver resourceResolver)`
 
@@ -2121,7 +2120,7 @@ optionSpec.setJsScriptExecutionTimeoutInterval(100);
   </tr>
   <tr>
    <td><code>credentialAlias</code> </td>
-   <td>자격 증명을 지정하는 <code>credentialAlias</code>.<br /> </td>
+   <td>자격 증명을 지정하는 <code>credentialAlias</code><br /> </td>
   </tr>
   <tr>
    <td><code>credentialPassword</code> </td>
@@ -2198,7 +2197,7 @@ public void getCredentialUsageRights() {
 
 ### 문서 사용 권한 가져오기 {#getting-document-usage-rights}
 
-지정된 문서의 사용 권한 정보를 가져오려면 `docAssuranceService`API 내에서 이 API를 호출합니다.
+지정된 문서에 대한 사용 권한 정보를 가져오려면 `docAssuranceService`API 내에서 이 API를 호출하십시오.
 
 **구문**:  `getDocumentUsageRights(Document inDocument, UnlockOptions unlockOptions)`
 
@@ -2212,7 +2211,7 @@ public void getCredentialUsageRights() {
   </tr>
   <tr>
    <td><code>inDocument</code> </td>
-   <td><br />에서 사용 권한 정보를 가져올 문서 </td>
+   <td><br />에서 사용 권한 정보를 가져오는 문서 </td>
   </tr>
  </tbody>
 </table>
@@ -2334,12 +2333,12 @@ public void getDocumentUsageRights() {
   </tr>
   <tr>
    <td><code>unlockOptions</code> </td>
-   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화된 경우에만 필요합니다.<br /> </td>
+   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화되어 있는 경우에만 필요합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-다음 샘플에서는 지정된 문서의 사용 권한을 제거합니다.
+다음 샘플은 지정된 문서의 사용 권한을 제거합니다.
 
 ```java
 /*************************************************************************
@@ -2443,7 +2442,7 @@ public void removeDocumentUsageRights() {
 
 #### 디지털 서명 확인 중 {#verifying-digital-signatures}
 
-디지털 서명은 서명된 PDF 문서가 변경되지 않았으며 디지털 서명이 유효한지 확인할 수 있습니다. 디지털 서명을 확인할 때 서명의 상태 및 서명자의 ID와 같은 서명의 속성을 확인할 수 있습니다. 디지털 서명을 신뢰하기 전에 이를 확인하는 것이 좋습니다. 디지털 서명을 확인할 때는 디지털 서명이 포함된 PDF 문서를 참조하십시오.
+디지털 서명을 확인하여 서명된 PDF 문서가 수정되지 않았으며 디지털 서명이 유효한지 확인할 수 있습니다. 디지털 서명을 확인할 때 서명의 상태와 서명자의 ID와 같은 서명의 속성을 확인할 수 있습니다. 디지털 서명을 신뢰하기 전에 확인하는 것이 좋습니다. 디지털 서명을 확인할 때 디지털 서명이 포함된 PDF 문서를 참조합니다.
 
 **구문**:  `verify( inDoc, signatureFieldName, revocationCheckStyle, verificationTime, dssPrefs, ResourceResolver resourceResolver)`
 
@@ -2462,11 +2461,11 @@ public void removeDocumentUsageRights() {
   <tr>
    <td><code class="code">signatureField
       Name</code> </td>
-   <td>확인할 서명 필드의 이름입니다. 정규화된 이름 또는 부분 이름을<br /> 지정할 수 있습니다. </td>
+   <td>확인할 서명 필드의 이름입니다. 정규화된 이름 또는 부분 이름을 <br /> 지정할 수 있습니다. </td>
   </tr>
   <tr>
    <td><code>revocationCheckStyle</code></td>
-   <td>유효성 검사 중에 발생한 인증서의 해지 검사를 제어하는 옵션</td>
+   <td>유효성 검사 중에 발생한 인증서의 해지 확인을 제어하는 옵션입니다</td>
   </tr>
   <tr>
    <td><code>verificationTime</code></td>
@@ -2474,11 +2473,11 @@ public void removeDocumentUsageRights() {
   </tr>
   <tr>
    <td><code>dssPrefs</code></td>
-   <td>다양한 유효성 검사 구성을 제어하는 환경 설정. 암호화된 문서의 경우 <code>setUnlockOptions()</code></td>
+   <td>다양한 유효성 검사 구성을 제어하는 기본 설정입니다. 암호화된 문서의 경우 <code>setUnlockOptions()</code></td>
   </tr>
   <tr>
    <td><code>resourceResolver</code></td>
-   <td>granite trust store에 대한 리소스 확인 프로그램</td>
+   <td>granite 트러스트 저장소에 대한 리소스 확인자</td>
   </tr>
  </tbody>
 </table>
@@ -2761,7 +2760,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### 여러 디지털 서명 확인 중 {#verifying-multiple-digital-signatures}
 
-AEM을 사용하면 PDF 문서에서 디지털 서명을 확인할 수 있습니다. 여러 서명자의 서명이 필요한 비즈니스 프로세스에 PDF 문서가 여러 디지털 서명을 포함할 수 있습니다. 예를 들어, 금융 거래는 대출 담당자와 관리자 모두의 서명을 요구합니다. 서명 서비스 API를 사용하여 PDF 문서 내의 모든 서명을 확인할 수 있습니다. 여러 디지털 서명을 확인하는 경우 각 서명의 상태 및 속성을 확인할 수 있습니다. 디지털 서명을 신뢰하기 전에 이를 확인하는 것이 Adobe에 좋습니다.
+AEM을 사용하면 PDF 문서에서 디지털 서명을 확인할 수 있습니다. PDF 문서는 여러 서명자의 서명이 필요한 비즈니스 프로세스에 적용되는 경우 여러 디지털 서명을 포함할 수 있습니다. 예를 들어, 금융 거래는 대출 담당자와 매니저 모두의 서명을 필요로 한다. 서명 서비스 API를 사용하여 PDF 문서 내에서 모든 서명을 확인할 수 있습니다. 여러 디지털 서명을 확인할 때 각 서명의 상태와 속성을 확인할 수 있습니다. 디지털 서명을 신뢰하기 전에 Adobe에서 이를 확인하는 것이 좋습니다.
 
 **구문**:  `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -2779,7 +2778,7 @@ AEM을 사용하면 PDF 문서에서 디지털 서명을 확인할 수 있습니
   </tr>
   <tr>
    <td><code>revocationCheckStyle</code></td>
-   <td>유효성 검사 중에 발생한 인증서의 해지 검사를 제어하는 옵션</td>
+   <td>유효성 검사 중에 발생한 인증서의 해지 확인을 제어하는 옵션입니다</td>
   </tr>
   <tr>
    <td><code>verificationTime</code></td>
@@ -2787,16 +2786,16 @@ AEM을 사용하면 PDF 문서에서 디지털 서명을 확인할 수 있습니
   </tr>
   <tr>
    <td><code>dssPrefs</code></td>
-   <td>다양한 유효성 검사 구성을 제어하는 환경 설정. 암호화된 문서의 경우 <code>setUnlockOptions()</code></td>
+   <td>다양한 유효성 검사 구성을 제어하는 기본 설정입니다. 암호화된 문서의 경우 <code>setUnlockOptions()</code></td>
   </tr>
   <tr>
    <td><code>resourceResolver</code></td>
-   <td>granite trust store에 대한 리소스 확인 프로그램</td>
+   <td>granite 트러스트 저장소에 대한 리소스 확인자</td>
   </tr>
  </tbody>
 </table>
 
-다음 샘플 코드는 DocAssuranceService를 사용하여 이미 암호화된 PDF 문서의 서명 필드를 확인합니다.
+다음 샘플 코드는 DocAssuranceService를 사용하여 이미 암호화된 PDF 문서에서 서명 필드를 확인합니다.
 
 ```java
 /*************************************************************************
@@ -3059,7 +3058,7 @@ public class VerifyEncryptedPDFDoc {
 
 ### 디지털 서명 제거 중 {#removing-digital-signatures}
 
-이전 디지털 서명을 제거한 후에만 서명 필드에 새 디지털 서명을 적용할 수 있습니다. 디지털 서명은 덮어쓸 수 없습니다. 서명이 포함된 서명 필드에 디지털 서명을 적용하려고 하면 예외가 발생합니다.
+이전 디지털 서명을 제거한 후에만 서명 필드에 새 디지털 서명을 적용할 수 있습니다. 디지털 서명을 덮어쓸 수 없습니다. 서명이 이미 있는 서명 필드에 디지털 서명을 적용하려고 하면 예외가 발생합니다.
 
 **구문**:  `clearSignatureField(Document inDoc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -3081,7 +3080,7 @@ public class VerifyEncryptedPDFDoc {
   </tr>
   <tr>
    <td><code>unlockOptions</code> </td>
-   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화된 경우에만 필요합니다<br /> </td>
+   <td>암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수를 포함합니다. 파일이 암호화되어 있는 경우에만 필요합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -3178,9 +3177,9 @@ public class ClearSignatureField {
 }
 ```
 
-### 인증 서명 필드 {#getting-certifying-signature-field}을(를) 가져오는 중
+### 인증 서명 필드 {#getting-certifying-signature-field}를 가져오는 중
 
-서명하거나 인증할 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 잘 모르거나 이름을 확인하려는 경우 프로그래밍 방식으로 검색할 수 있습니다. 서명 서비스는 `form1[0].grantApplication[0].page1[0].SignatureField1[0]` 같은 서명 필드의 정규화된 이름을 반환합니다.
+서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 잘 모르거나 이름을 확인하려는 경우 프로그래밍 방식으로 검색할 수 있습니다. 서명 서비스는 `form1[0].grantApplication[0].page1[0].SignatureField1[0]` 등의 서명 필드의 정규화된 이름을 반환합니다.
 
 **구문**:  `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
@@ -3194,11 +3193,11 @@ public class ClearSignatureField {
   </tr>
   <tr>
    <td><code>inDoc</code> </td>
-   <td>PDF를 포함하는 문서 개체<br /> </td>
+   <td>PDF가 포함된 문서 개체<br /> </td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
-   <td>UnlockOptions에는 암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수가 포함되어 있습니다. 파일이 암호화되어 있는 경우에만 필요합니다.</td>
+   <td>UnlockOptions에는 암호화된 파일의 잠금을 해제하는 데 필요한 매개 변수가 포함되어 있습니다. 이는 파일이 암호화되어 있는 경우에만 필요합니다.</td>
   </tr>
  </tbody>
 </table>
@@ -3299,7 +3298,7 @@ public class GetCertifyingSignatureField {
 
 ### PDF 암호화 유형 {#getting-pdf-encryption-type} 가져오기
 
-서명하거나 인증할 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 잘 모르거나 이름을 확인하려는 경우 프로그래밍 방식으로 검색할 수 있습니다. 서명 서비스는 `asform1[0].grantApplication[0].page1[0].SignatureField1[0]` 같은 서명 필드의 정규화된 이름을 반환합니다.
+서명하거나 인증하려는 PDF 문서에 있는 모든 서명 필드의 이름을 검색할 수 있습니다. PDF 문서에 있는 서명 필드 이름을 잘 모르거나 이름을 확인하려는 경우 프로그래밍 방식으로 검색할 수 있습니다. 서명 서비스는 `asform1[0].grantApplication[0].page1[0].SignatureField1[0]` 같은 서명 필드의 정규화된 이름을 반환합니다.
 
 **구문**:  `void getPDFEncryption(Document inDoc)`
 
@@ -3313,7 +3312,7 @@ public class GetCertifyingSignatureField {
   </tr>
   <tr>
    <td><code>inDoc</code> </td>
-   <td>입력으로 제공된 문서. 암호화될 수도 있고 그렇지 않을 수도 있습니다.<br /> </td>
+   <td>입력으로 제공된 문서입니다. 암호화되거나 암호화되지 않을 수 있습니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -3415,7 +3414,7 @@ public class GetPDFEncryption {
 
 ### PDF {#removing-password-encryption-from-pdf}에서 암호 암호화 제거
 
-PDF 문서에서 암호 기반 암호화를 제거하여 사용자가 암호를 지정하지 않고도 Adobe Reader 또는 Acrobat에서 PDF 문서를 열 수 있도록 할 수 있습니다. PDF 문서에서 암호 기반 암호화를 제거한 후에는 문서가 더 이상 안전하지 않습니다.
+PDF 문서에서 암호 기반 암호화를 제거하여 암호를 지정하지 않고도 Adobe Reader 또는 Acrobat에서 PDF 문서를 열 수 있습니다. PDF 문서에서 암호 기반 암호화를 제거하면 문서가 더 이상 안전하지 않습니다.
 
 **구문**:  `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
@@ -3429,11 +3428,11 @@ PDF 문서에서 암호 기반 암호화를 제거하여 사용자가 암호를 
   </tr>
   <tr>
    <td><code>inDoc</code> </td>
-   <td>입력으로 제공된 문서. 암호로 보호되어야 합니다.<br /> </td>
+   <td>입력으로 제공된 문서입니다. 암호로 보호되어야 합니다.<br /> </td>
   </tr>
   <tr>
    <td><code>password</code> </td>
-   <td>문서에서 보안을 제거하는 데 사용할 문서 열기 또는 권한 암호.<br /> </td>
+   <td>문서에서 보안을 제거하는 데 사용할 문서 열기 또는 권한 암호입니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -3514,7 +3513,7 @@ PDF 문서에서 암호 기반 암호화를 제거하여 사용자가 암호를 
 
 ### 인증서 암호화 제거 중 {#removing-certificate-encryption}
 
-사용자가 Adobe Reader 또는 Acrobat에서 PDF 문서를 열 수 있도록 PDF 문서에서 인증서 기반 암호화를 제거할 수 있습니다. 인증서로 암호화된 PDF 문서에서 암호화를 제거하려면 개인 키를 참조하십시오. PDF 문서에서 암호화를 제거한 후에는 더 이상 안전하지 않습니다.
+PDF 문서에서 인증서 기반 암호화를 제거하여 Adobe Reader 또는 Acrobat에서 PDF 문서를 열 수 있습니다. 인증서로 암호화된 PDF 문서에서 암호화를 제거하려면 개인 키를 참조합니다. PDF 문서에서 암호화를 제거하면 더 이상 안전하지 않습니다.
 
 **구문**:  `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
 
@@ -3536,7 +3535,7 @@ PDF 문서에서 암호 기반 암호화를 제거하여 사용자가 암호를 
   </tr>
   <tr>
    <td><code>ResourceResolver</code></td>
-   <td>ResourceResolver를 사용하여 특정 사용자의 키 저장소에 액세스하여 자격 증명을 가져올 수 있습니다.</td>
+   <td>ResourceResolver를 사용하여 자격 증명을 가져오기 위해 특정 사용자의 키 저장소에 액세스합니다.</td>
   </tr>
  </tbody>
 </table>
@@ -3636,19 +3635,19 @@ PDF 문서에서 암호 기반 암호화를 제거하여 사용자가 암호를 
 
 ## 출력 서비스 {#output-service}
 
-출력 서비스는 XDP 파일을 .pdf, .pcl, .zpl 및 .ps 형식으로 렌더링하는 API를 제공합니다. 서비스는 다음 API를 지원합니다.
+출력 서비스는 XDP 파일을 .pdf, .pcl, .zpl 및 .ps 형식으로 렌더링하기 위한 API를 제공합니다. 이 서비스는 다음 API를 지원합니다.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** 양식 디자인을 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 데이터와 병합하여 PDF 문서를 리터럴 값으로 생성합니다.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**  양식 디자인을 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 데이터와 병합하여 PDF 문서를 생성합니다.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** 양식 디자인을 응용 프로그램에 저장된 데이터와 병합하여 PDF 문서를 생성합니다.
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** 양식 디자인을 데이터와 병합하여 PDF 문서를 만듭니다. 원할 경우, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 리터럴 값으로 저장된 양식 디자인 및 데이터 파일에서 PCL, PostScript 또는 ZPL 출력을 생성합니다.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**  양식 디자인을 애플리케이션에 저장된 데이터와 병합하여 PDF 문서를 생성합니다.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):**  양식 디자인을 데이터와 병합하여 PDF 문서를 만듭니다. 선택적으로, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** 양식 디자인 및 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 데이터 파일에서 PCL, PostScript 또는 ZPL 출력을 리터럴 값으로 생성합니다.
 
 * **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** 애플리케이션에 저장된 양식 디자인 및 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 생성합니다.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 원할 경우, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 리터럴 값으로 저장된 양식 디자인 또는 데이터에 대해 generatePDFOutput API를 사용합니다. 양식 디자인 및 XML 데이터가 응용 프로그램에 저장되는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API를 사용합니다.
+generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 선택적으로, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 또는 데이터에 generatePDFOutput API를 리터럴 값으로 사용합니다. 양식 디자인 및 XML 데이터가 응용 프로그램에 저장된 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API를 사용하십시오.
 
 **구문:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3662,7 +3661,7 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
   </tr>
   <tr>
    <td>uriOrFileName</td>
-   <td>입력 파일의 경로와 이름을 지정합니다. 파일은 PDF 또는 XDP 유형일 수 있습니다. 파일 이름만 지정하면 옵션에 지정된 contentRoot를 기준으로 파일을 읽습니다.</td>
+   <td>입력 파일의 경로와 이름을 지정합니다. 파일은 PDF 또는 XDP 유형일 수 있습니다. 파일 이름만 지정하면 옵션에 지정된 contentRoot와 관련하여 파일을 읽습니다.</td>
   </tr>
   <tr>
    <td>데이터</td>
@@ -3670,7 +3669,7 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
   </tr>
   <tr>
    <td>옵션</td>
-   <td>contentRoot, locale, AcrobatVersion, lineizedPDF 및 taggedPDF 변수의 값을 지정합니다. options 매개 변수는 PDFOutputOptions 유형의 객체를 허용합니다.<br /> </td>
+   <td>contentRoot, locale, AcrobatVersion, linealizedPDF 및 taggedPDF 변수의 값을 지정합니다. options 매개 변수는 PDFOutputOptions 유형의 개체를 허용합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -3755,7 +3754,7 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 원할 경우, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 애플리케이션에 저장되는 양식 디자인 또는 데이터에 generatePrintedOutput API를 사용합니다. 양식 디자인 및 XML 데이터가 네트워크 위치, 로컬 또는 HTTP 위치에 리터럴 값으로 저장되는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API를 사용합니다.
+generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 선택적으로 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 응용 프로그램에 저장된 양식 디자인 또는 데이터에 generatePrintedOutput API를 사용합니다. 양식 디자인 및 XML 데이터가 네트워크 위치, 로컬 또는 HTTP 위치에 리터럴 값으로 저장되는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API를 사용하십시오.
 
 **구문:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -3769,7 +3768,7 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
   </tr>
   <tr>
    <td>입력 문서<br /> </td>
-   <td>입력 파일의 경로와 이름을 지정합니다. 파일은 PDF 또는 XDP 유형일 수 있습니다. 파일 이름만 지정하면 옵션에 지정된 contentRoot를 기준으로 파일을 읽습니다.<br /> </td>
+   <td>입력 파일의 경로와 이름을 지정합니다. 파일은 PDF 또는 XDP 유형일 수 있습니다. 파일 이름만 지정하면 옵션에 지정된 contentRoot와 관련하여 파일을 읽습니다.<br /> </td>
   </tr>
   <tr>
    <td>데이터</td>
@@ -3777,7 +3776,7 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
   </tr>
   <tr>
    <td>옵션</td>
-   <td>contentRoot, locale, AcrobatVersion, lineizedPDF 및 taggedPDF 변수의 값을 지정합니다. options 매개 변수는 PDFOutputOptions 유형의 객체를 허용합니다.</td>
+   <td>contentRoot, locale, AcrobatVersion, linealizedPDF 및 taggedPDF 변수의 값을 지정합니다. options 매개 변수는 PDFOutputOptions 유형의 개체를 허용합니다.</td>
   </tr>
  </tbody>
 </table>
@@ -3865,7 +3864,7 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
 
 ### generatePDFOutputBatch {#generatepdfoutputbatch}
 
-양식 디자인을 데이터와 병합하여 PDF 문서를 만듭니다. 원할 경우, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 리터럴 값으로 저장된 양식 디자인 또는 데이터에 대해 generatePDFOutputBatch API를 사용합니다.
+양식 디자인을 데이터와 병합하여 PDF 문서를 만듭니다. 선택적으로, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 또는 데이터에 대해 generatePDFOutputBatch API를 리터럴 값으로 사용합니다.
 
 **구문:** `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
 
@@ -3879,19 +3878,19 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
   </tr>
   <tr>
    <td>템플릿<br /> </td>
-   <td>키 및 템플릿 파일 이름의 맵을 지정합니다.<br /> </td>
+   <td>키 맵과 템플릿 파일 이름을 지정합니다.<br /> </td>
   </tr>
   <tr>
    <td>데이터</td>
-   <td>키 및 데이터 문서의 맵을 지정합니다. 키가 null이 아니면 데이터 문서가 맵 템플릿에 지정된 해당 키에 대한 템플릿으로 렌더링됩니다. </td>
+   <td>키 및 데이터 문서의 맵을 지정합니다. 키가 null이 아니면 템플릿 맵에 지정된 해당 키에 대한 템플릿으로 데이터 문서가 렌더링됩니다. </td>
   </tr>
   <tr>
    <td>옵션</td>
-   <td>contentRoot, locale, AcrobatVersion, lineizedPDF 및 taggedPDF 변수의 값을 지정합니다. options 매개 변수는 PDFOutputOptions 유형의 객체를 허용합니다.</td>
+   <td>contentRoot, locale, AcrobatVersion, linealizedPDF 및 taggedPDF 변수의 값을 지정합니다. options 매개 변수는 PDFOutputOptions 유형의 개체를 허용합니다.</td>
   </tr>
   <tr>
    <td>batchOptions</td>
-   <td>변수 <code>generateManyFiles</code>의 값을 지정합니다. 여러 파일을 생성하도록 generateManyFiles 플래그를 설정합니다. options 매개 변수는 BatchOptions 유형의 객체를 허용합니다.</td>
+   <td>변수 <code>generateManyFiles</code> 값을 지정합니다. generateManyFiles 플래그를 설정하여 여러 파일을 생성합니다. options 매개 변수는 BatchOptions 유형의 개체를 허용합니다.</td>
   </tr>
  </tbody>
 </table>
@@ -3982,7 +3981,7 @@ String outputFolder="C:/Output";
 
 ### generatePrintedOutput {#generateprintedoutput}
 
-양식 디자인 및 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 생성합니다. 데이터 파일은 양식 디자인과 병합되며 인쇄 형식이 지정됩니다. 출력물을 프린터로 직접 보내거나 파일로 저장할 수 있습니다. 애플리케이션에 저장되는 양식 디자인 또는 데이터에 generatePrintedOutput API를 사용합니다.
+양식 디자인 및 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 생성합니다. 데이터 파일은 양식 디자인에 병합되고 인쇄 형식이 지정됩니다. 출력을 프린터로 직접 보내거나 파일로 저장할 수 있습니다. 응용 프로그램에 저장된 양식 디자인 또는 데이터에 generatePrintedOutput API를 사용합니다.
 
 **구문:** `Document generatePrintedOutput(String uriOrFileName, Document data, PrintedOutputOptions);`
 
@@ -3996,7 +3995,7 @@ String outputFolder="C:/Output";
   </tr>
   <tr>
    <td>uriOrFileName<br /> </td>
-   <td>입력 파일의 경로와 이름을 지정합니다. 파일 이름만 지정하면 옵션에 지정된 contentRoot를 기준으로 파일을 읽습니다. 파일은 PDF 또는 XDP 유형일 수 있습니다.<br /> </td>
+   <td>입력 파일의 경로와 이름을 지정합니다. 파일 이름만 지정하면 옵션에 지정된 contentRoot와 관련하여 파일을 읽습니다. 파일은 PDF 또는 XDP 유형일 수 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>데이터</td>
@@ -4004,7 +4003,7 @@ String outputFolder="C:/Output";
   </tr>
   <tr>
    <td>옵션</td>
-   <td>contentRoot, locale, AcrobatVersion, lineizedPDF 및 taggedPDF 변수의 값을 지정합니다. options 매개 변수는 PrintedOutputOptions 유형의 개체를 사용합니다.<br /> </td>
+   <td>contentRoot, locale, AcrobatVersion, linealizedPDF 및 taggedPDF 변수의 값을 지정합니다. options 매개 변수는 PrintedOutputOptions 형식의 개체를 허용합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4073,7 +4072,7 @@ Document doc=null;
 
 ### generatePrintedOutput {#generateprintedoutput-1}
 
-양식 디자인 및 데이터 파일을 제공된 PCL, PostScript 및 ZPL 출력을 생성합니다. 데이터 파일은 양식 디자인과 병합되며 인쇄 형식이 지정됩니다. 출력물을 프린터로 직접 전송하거나 파일로 저장할 수 있습니다. 양식 디자인 또는 응용 프로그램에 저장된 데이터에 generatePrintedOutput API를 사용합니다.
+양식 디자인 및 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 생성합니다. 데이터 파일은 양식 디자인에 병합되고 인쇄 형식이 지정됩니다. 출력을 프린터로 직접 전송하거나 파일로 저장할 수 있습니다. 양식 디자인 또는 응용 프로그램에 저장된 데이터에 generatePrintedOutput API를 사용합니다.
 
 **구문:** `Document generatePrintedOutput(Document inputdocument, Document data, PrintedOutputOptions);`
 
@@ -4087,7 +4086,7 @@ Document doc=null;
   </tr>
   <tr>
    <td>입력 문서<br /> </td>
-   <td>입력 파일의 경로와 이름을 지정합니다. 파일 이름만 지정하면 옵션에 지정된 contentRoot를 기준으로 파일을 읽습니다. 파일은 XDP 유형일 수 있습니다. </td>
+   <td>입력 파일의 경로와 이름을 지정합니다. 파일 이름만 지정하면 옵션에 지정된 contentRoot와 관련하여 파일을 읽습니다. 파일은 XDP 유형일 수 있습니다. </td>
   </tr>
   <tr>
    <td>데이터</td>
@@ -4095,7 +4094,7 @@ Document doc=null;
   </tr>
   <tr>
    <td>옵션</td>
-   <td>이 객체는 contentRoot, locale, printConfig, copies 및 paginationOverride의 값을 설정하는 데 사용됩니다. options 매개 변수는 PrintedOutputOptions 유형의 개체를 사용합니다.<br /> </td>
+   <td>이 개체는 contentRoot, locale, printConfig, copy 및 paginationOverride의 값을 설정하는 데 사용됩니다. options 매개 변수는 PrintedOutputOptions 형식의 개체를 허용합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4158,7 +4157,7 @@ Document doc=null;
 
 ### generatePrintedOutputBatch {#generateprintedoutputbatch}
 
-양식 디자인을 데이터와 병합하여 PS, PCL 및 ZPL 형식의 문서를 생성합니다. 원할 경우, 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 리터럴 값으로 저장된 양식 디자인 또는 데이터에 generatePrintedOutputBatch API를 사용합니다.
+양식 디자인을 데이터와 병합하여 PS, PCL 및 ZPL 형식의 문서를 생성합니다. 선택적으로 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 또는 데이터에 대해 generatePrintedOutputBatch API를 리터럴 값으로 사용합니다.
 
 **구문`:`** `BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
 
@@ -4176,15 +4175,15 @@ Document doc=null;
   </tr>
   <tr>
    <td>데이터</td>
-   <td>키 및 데이터 문서의 맵을 지정합니다. 키가 null이 아니면 데이터 문서가 맵 템플릿에서 해당 키에 대한 템플릿으로 렌더링됩니다.<br /> </td>
+   <td>키 및 데이터 문서의 맵을 지정합니다. 키가 null이 아니면 데이터 문서가 템플릿 맵에서 해당 키에 대한 템플릿으로 렌더링됩니다.<br /> </td>
   </tr>
   <tr>
    <td>옵션</td>
-   <td>PrintedOutputOptions 유형의 개체를 지정합니다. 이 개체는 contentRoot, locale, printConfig, copy, paginationOverride의 값을 설정하는 데 사용됩니다.<br /> </td>
+   <td>PrintedOutputOptions 형식의 개체를 지정합니다. 이 개체는 contentRoot, locale, printConfig, copy, paginationOverride의 값을 설정하는 데 사용됩니다.<br /> </td>
   </tr>
   <tr>
    <td>batchOptions</td>
-   <td>변수 generateManyFiles 값을 지정합니다. 여러 파일을 생성하도록 generateManyFiles 플래그를 설정합니다. options 매개 변수는 BatchOptions 유형의 개체를 허용합니다.<br /> </td>
+   <td>변수 generateManyFiles 값을 지정합니다. generateManyFiles 플래그를 설정하여 여러 파일을 생성합니다. options 매개 변수는 BatchOptions 형식의 개체를 허용합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4295,9 +4294,9 @@ String outputFolder="C:/Output";
 
 ## Forms 서비스 {#forms-service}
 
-Forms 서비스는 인터랙티브한 PDF 양식 간에 데이터를 가져오고 내보낼 수 있는 API를 제공합니다. 대화형 PDF 양식은 사용자의 정보를 표시하고 수집하는 데 사용되는 하나 이상의 필드가 포함된 PDF 문서입니다. 서비스는 다음 API를 지원합니다.
+Forms 서비스는 대화형 PDF 양식으로 데이터를 가져오고 내보내는 API를 제공합니다. 대화형 PDF 양식은 사용자의 정보를 표시하고 수집하는 데 사용되는 하나 이상의 필드가 포함된 PDF 문서입니다. 이 서비스는 다음 API를 지원합니다.
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** PDF 양식의 데이터를 내보냅니다.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** PDF 양식에서 데이터를 내보냅니다.
 * **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** 데이터를 대화형 PDF 양식으로 가져옵니다.
 
 ### exportData {#exportdata}
@@ -4316,11 +4315,11 @@ Forms 서비스는 인터랙티브한 PDF 양식 간에 데이터를 가져오�
   </tr>
   <tr>
    <td>xdpOrPdf<br /> </td>
-   <td>XDP 또는 PDF 파일이 포함된 문서 객체를 지정합니다. </td>
+   <td>XDP 또는 PDF 파일이 포함된 문서 개체를 지정합니다. </td>
   </tr>
   <tr>
    <td>dataFormat<br /> </td>
-   <td>데이터를 내보낼 형식을 지정합니다. enum(XDP, XmlData, Auto) 형식의 변수를 허용합니다.<br /> </td>
+   <td>데이터를 내보내는 형식을 지정합니다. 이 변수는 enum(XDP, XmlData, Auto) 유형의 변수를 허용합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4400,7 +4399,7 @@ try {
   </tr>
   <tr>
    <td>PDF<br /> </td>
-   <td>PDF 파일이 포함된 문서 객체를 지정합니다. </td>
+   <td>PDF 파일이 포함된 문서 개체를 지정합니다. </td>
   </tr>
   <tr>
    <td>데이터<br /> </td>
@@ -4461,21 +4460,21 @@ private File importData(File inDoc, File inXML)
 
 ## PDF Generator 서비스 {#pdfgeneratorservice}
 
-PDF Generator 서비스는 API를 제공하여 기본 파일 형식을 PDF로 변환합니다. 또한 PDF를 다른 파일 포맷으로 변환하고 PDF 문서의 크기를 최적화합니다.
+PDF Generator 서비스는 기본 파일 형식을 PDF로 변환하는 API를 제공합니다. 또한 PDF를 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다.
 
-### GeneratePDF서비스 {#generatepdfservice}
+### PDF 서비스 생성 {#generatepdfservice}
 
-GeneratePDF 서비스를 사용하면 API를 통해 .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .ods(더 이상 사용되지 않음).swf, .jpg, .bmp, .tif, .png, .html 및 기타 여러 파일 형식을 PDF로 변환할 수 있습니다. 또한 PDF를 다양한 파일 포맷으로 내보내고 PDF를 최적화할 수 있는 API를 제공합니다. 서비스는 다음 API를 지원합니다.
+GeneratePDFS 서비스는 .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, (사용되지 않음).swf, .jpg, .bmp, .tif, .png, .html 및 기타 다양한 파일 형식을 PDF로 변환하는 API를 제공합니다. 또한 PDF를 다양한 파일 형식으로 내보내고 PDF를 최적화하는 API를 제공합니다. 이 서비스는 다음 API를 지원합니다.
 
-* **createPDF**:지원되는 파일 유형을 PDF 문서로 변환합니다. Microsoft Word, Microsoft PowerPoint, Microsoft Excel 및 Microsoft Project와 같은 파일 형식을 지원합니다. 이러한 응용 프로그램 외에도 응용 프로그램 유형을 생성하는 제3자 일반 PDF도 API에 연결할 수 있습니다.
-* **exportPDF**:PDF 문서를 지원되는 파일 유형으로 변환합니다. 이 메서드는 PDF를 입력으로 받아들이고 PDF의 내용을 지정된 파일 형식 형식으로 내보냅니다. PDF 문서를 캡슐화된 PostScript( eps), HTML 3.2( htm, html), HTML 4.01(CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000(jpf, jpx, jpx2, j2k, j2c, jpc)로 내보낼 수 있습니다. microsoft Word Document( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain) TIFF(), XML 1.0() PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) 형식. 또한 PDF 출력에 대해 [사용자 정의 프리플라이트 프로필](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)을 지정할 수도 있습니다.
+* **createPDF**:지원되는 파일 유형을 PDF 문서로 변환합니다. Microsoft Word, Microsoft PowerPoint, Microsoft Excel, Microsoft Project 등의 파일 형식을 지원합니다. 이러한 애플리케이션 외에도 모든 타사 일반 PDF 생성 애플리케이션 유형도 API에 연결할 수 있습니다.
+* **exportPDF**:PDF 문서를 지원되는 파일 형식으로 변환합니다. 메서드는 PDF를 입력으로 수락하고 PDF의 컨텐츠를 지정된 파일 형식 형식으로 내보냅니다. PDF 문서를 캡슐화된 PostScript( eps), HTML 3.2( htm, html), HTML 4.01(CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, Excel Xlsx), Microsoft PowerPoint Script( Post( TX), Tx( Ptx) ps), 서식 있는 텍스트 형식(rtf), 텍스트(Accessible)( txt), 텍스트(Plain) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), RGB/3a(3a) 포맷. 또한 PDF 출력에 [사용자 정의 프리플라이트 프로파일](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)을 지정할 수도 있습니다.
 
-* **optimizePDF**:PDF 문서를 최적화하고 PDF 문서를 한 유형에서 다른 유형으로 변환합니다. 이 메서드는 PDF 문서를 입력으로 허용합니다.
+* **optimizePDF**:PDF 문서를 최적화하고 PDF 문서를 한 유형에서 다른 유형으로 변환합니다. 메서드는 PDF 문서를 입력으로 허용합니다.
 * **htmlToPdf2**:HTML 페이지를 PDF 문서로 변환합니다. HTML 페이지의 URL을 입력으로 허용합니다.
 
 >[!NOTE]
 >
->AIX 운영 체제에서 실행되는 AEM Forms 서버에서는 HTMLtoPDF API를 사용하지 않습니다.
+>HTMLtoPDF API는 AIX 운영 체제에서 실행되는 AEM Forms 서버에서 더 이상 사용되지 않습니다.
 
 #### Microsoft Windows 및 Linux에서 사용 가능한 PDF Generator API {#pdf-generator-api-available-on-microsoft-windows-and-linux}
 
@@ -4515,16 +4514,16 @@ GeneratePDF 서비스를 사용하면 API를 통해 .doc, .docx, .ppt, .pptx, .x
 
 #### createPDF {#createpdf}
 
-createPDF API는 지원되는 파일 유형을 PDF 문서로 변환합니다. Microsoft Word, Microsoft PowerPoint, Microsoft Excel, Microsoft Project 등 다양한 파일 형식을 지원합니다. 이러한 응용 프로그램 외에도 응용 프로그램 유형을 생성하는 제3자 일반 PDF도 API에 연결할 수 있습니다.
+createPDF API는 지원되는 파일 유형을 PDF 문서로 변환합니다. Microsoft Word, Microsoft PowerPoint, Microsoft Excel, Microsoft Project 등의 다양한 파일 형식을 지원합니다. 이러한 애플리케이션 외에도 모든 타사 일반 PDF 생성 애플리케이션 유형도 API에 연결할 수 있습니다.
 
-변환의 경우 몇 개의 매개 변수만 필수 항목입니다. 입력 문서는 필수 매개 변수입니다. 나중에 보안 권한, PDF 출력 설정 및 메타데이터 정보를 출력 PDF 문서에 적용할 수 있습니다.
+전환의 경우 몇 개의 매개 변수만 필수입니다. 입력 문서는 필수 매개 변수입니다. 보안 권한, PDF 출력 설정 및 메타데이터 정보를 나중에 출력 PDF 문서에 적용할 수 있습니다.
 
-createPDF 서비스는 결과가 포함된 java.util.Map을 반환합니다. 지도의 키는 다음과 같습니다.
+createPDF 서비스는 결과가 포함된 java.util.Map을 반환합니다. 맵의 키는 다음과 같습니다.
 
-* ConvertedDoc:새로 만든 PDF 문서가 포함되어 있습니다.
+* 변환된 문서:새로 만든 PDF 문서가 포함되어 있습니다.
 * 로그 문서:로그 파일이 포함되어 있습니다.
 
-createPDF 서비스에서는 다음과 같은 예외가 발생합니다.
+createPDF 서비스에는 다음과 같은 예외가 발생합니다.
 
 * 전환 예외
 * InvalidParameterException
@@ -4542,11 +4541,11 @@ createPDF 서비스에서는 다음과 같은 예외가 발생합니다.
   </tr>
   <tr>
    <td>inputDoc<br /> </td>
-   <td>문서 객체를 지정합니다. 문서 객체에 입력 파일이 포함되어 있습니다. 입력 문서 위에 com.adobe.aemfd.docmanager.Document 객체를 만듭니다. 필수 매개 변수입니다.</td>
+   <td>문서 객체를 지정합니다. 문서 객체에는 입력 파일이 포함되어 있습니다. 입력 문서 위에 com.adobe.aemfd.docmanager.Document 개체를 만듭니다. 필수 매개 변수입니다.</td>
   </tr>
   <tr>
    <td>inputFileName<br /> </td>
-   <td>확장명과 함께 입력 파일의 이름입니다. 필수 매개 변수입니다.<br /> </td>
+   <td>확장자와 함께 입력 파일의 이름입니다. 필수 매개 변수입니다.<br /> </td>
   </tr>
   <tr>
    <td>fileTypeSettings</td>
@@ -4554,7 +4553,7 @@ createPDF 서비스에서는 다음과 같은 예외가 발생합니다.
   </tr>
   <tr>
    <td>pdfSettings</td>
-   <td><p>변환된 문서의 PDF 출력. 다음 설정만 적용할 수 있습니다.</p>
+   <td><p>변환된 문서의 PDF 출력입니다. 다음 설정만 적용할 수 있습니다.</p>
     <ul>
      <li>High_Quality_Print<br /> </li>
      <li>PDFA1b_2005_RGB<br /> </li>
@@ -4562,12 +4561,12 @@ createPDF 서비스에서는 다음과 같은 예외가 발생합니다.
      <li>PDFX1a_2001<br /> </li>
      <li>PDFX3_2002<br /> </li>
      <li>Press_Quality<br /> </li>
-     <li>최소_파일_크기</li>
+     <li>Small_File_Size</li>
     </ul> <p>선택적 매개 변수입니다.<br /> </p> </td>
   </tr>
   <tr>
    <td>securitySettings</td>
-   <td><p>변환된 문서의 보안 설정 다음 설정을 적용할 수 있습니다.</p>
+   <td><p>변환된 문서의 보안 설정입니다. 다음 설정을 적용할 수 있습니다.</p>
     <ul>
      <li>보안 없음</li>
      <li>암호 보안<br /> </li>
@@ -4577,11 +4576,11 @@ createPDF 서비스에서는 다음과 같은 예외가 발생합니다.
   </tr>
   <tr>
    <td>settingsDoc</td>
-   <td>이 파일에는 PDF 문서를 생성하는 동안 적용된 설정(예: 웹 보기용 PDF 문서 최적화)과 PDF 문서를 만든 후 적용된 설정(예: 초기 보기 및 보안)이 포함됩니다. 선택적 매개 변수입니다.<br /> </td>
+   <td>이 파일에는 PDF 문서를 생성하는 동안 적용된 설정(예: 웹 보기용 PDF 문서 최적화)과 PDF 문서를 만든 후 적용된 설정(예: 초기 보기 및 보안)이 포함되어 있습니다. 선택적 매개 변수입니다.<br /> </td>
   </tr>
   <tr>
    <td>xmpDoc </td>
-   <td>파일에는 생성된 PDF 문서에 적용된 메타데이터 정보가 포함되어 있습니다. 이 매개 변수는 선택 사항입니다.<br /> </td>
+   <td>이 파일에는 생성된 PDF 문서에 적용된 메타데이터 정보가 포함되어 있습니다. 이 매개 변수는 선택 사항입니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4650,13 +4649,13 @@ File createPDF(File inputFile, String inputFilename, String fileTypeSettings, St
 
 #### exportPDF {#exportpdf}
 
-PDF 문서를 지원되는 파일 유형으로 변환합니다. 이 메서드는 PDF를 입력으로 받아들이고 PDF의 내용을 지정된 파일 형식 형식으로 내보냅니다.
+PDF 문서를 지원되는 파일 형식으로 변환합니다. 메서드는 PDF를 입력으로 수락하고 PDF의 컨텐츠를 지정된 파일 형식 형식으로 내보냅니다.
 
-createPDF 서비스는 결과가 포함된 java.util.Map을 반환합니다. 지도의 키는 다음과 같습니다.
+createPDF 서비스는 결과가 포함된 java.util.Map을 반환합니다. 맵의 키는 다음과 같습니다.
 
-* ConvertedDoc:출력 문서가 포함되어 있습니다.
+* 변환된 문서:출력 문서가 포함되어 있습니다.
 
-createPDF 서비스에서는 다음과 같은 예외가 발생합니다.
+createPDF 서비스에는 다음과 같은 예외가 발생합니다.
 
 * 전환 예외
 * InvalidParameterException
@@ -4682,7 +4681,7 @@ Map exportPDF(Document inputDoc, String inputFileName, String formatType, Docume
   </tr>
   <tr>
    <td>inputFileName<br /> </td>
-   <td>확장명과 함께 파일 이름입니다.<br /> </td>
+   <td>확장자와 함께 파일의 이름입니다.<br /> </td>
   </tr>
   <tr>
    <td>formatType</td>
@@ -4690,12 +4689,12 @@ Map exportPDF(Document inputDoc, String inputFileName, String formatType, Docume
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>이 파일에는 출력 문서를 생성하는 동안 적용할 구성이 들어 있습니다. 일반적으로 XML 파일입니다.</td>
+   <td>파일에는 출력 문서를 생성하는 동안 적용할 구성이 들어 있습니다. 일반적으로 XML 파일입니다.</td>
   </tr>
  </tbody>
 </table>
 
-다음 Java 코드 샘플은 PDF 문서를 지정된 파일 유형으로 변환합니다.
+다음 Java 코드 샘플은 PDF 문서를 지정된 파일 형식으로 변환합니다.
 
 ```java
 (tx == null)
@@ -4747,9 +4746,9 @@ finally {
 
 #### optimizePDF {#optimizepdf}
 
-OptimizePDF API는 PDF 파일의 크기를 줄여 최적화합니다. 이러한 변환의 결과는 원본 버전보다 작을 수 있는 PDF 파일입니다. 또한 이 작업은 최적화 매개 변수에 지정된 PDF 버전으로 PDF 문서를 변환합니다. 최적화된 PDF가 포함된 OptimizePDFMesult 객체를 반환합니다.
+OptimizePDF API는 크기를 줄여 PDF 파일을 최적화합니다. 이렇게 변환하면 원래 버전보다 작을 수 있는 PDF 파일이 생성됩니다. 또한 이 작업은 PDF 문서를 최적화 매개 변수에 지정된 PDF 버전으로 변환합니다. 최적화된 PDF가 포함된 OptimizePDFResult 개체를 반환합니다.
 
-createPDF 서비스에서는 다음과 같은 예외가 발생합니다.
+createPDF 서비스에는 다음과 같은 예외가 발생합니다.
 
 * 전환 예외
 * InvalidParameterException
@@ -4779,7 +4778,7 @@ OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Docume
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>이 파일에는 PDF 문서를 생성하는 동안 적용된 설정(예: 웹 보기용 PDF 문서 최적화)과 PDF 문서를 만든 후 적용된 설정(예: 초기 보기 및 보안)이 포함됩니다. 선택적 매개 변수입니다.<br /> </td>
+   <td>이 파일에는 PDF 문서를 생성하는 동안 적용된 설정(예: 웹 보기용 PDF 문서 최적화)과 PDF 문서를 만든 후 적용된 설정(예: 초기 보기 및 보안)이 포함되어 있습니다. 선택적 매개 변수입니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4837,9 +4836,9 @@ File optimizePDF(File inputFile, String fileTypeSettings, File settingsFile) thr
 
 HTML 페이지를 PDF 문서로 변환합니다. HTML 페이지의 URL을 입력으로 허용합니다.
 
-htmlToPdf2 서비스는 HtmlToPdfResult 객체를 반환합니다. 변환된 PDF는 result.getConvertedDocument()를 통해 얻을 수 있습니다.
+htmlToPdf2 서비스는 HtmlToPdfResult 개체를 반환합니다. result.getConvertedDocument()를 통해 변환된 PDF를 가져올 수 있습니다.
 
-htmlToPdf2 서비스는 다음 예외를 throw합니다.
+htmlToPdf2 서비스에는 다음과 같은 예외가 발생합니다.
 
 * 전환 예외
 * InvalidParameterException
@@ -4869,7 +4868,7 @@ HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String 
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>이 파일에는 PDF 문서를 생성하는 동안 적용된 설정(예: 웹 보기용 PDF 문서 최적화)과 PDF 문서를 만든 후 적용된 설정(예: 초기 보기 및 보안)이 포함됩니다. 선택적 매개 변수입니다.<br /> </td>
+   <td>이 파일에는 PDF 문서를 생성하는 동안 적용된 설정(예: 웹 보기용 PDF 문서 최적화)과 PDF 문서를 만든 후 적용된 설정(예: 초기 보기 및 보안)이 포함되어 있습니다. 선택적 매개 변수입니다.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4926,14 +4925,14 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-Distiller 서비스는 PostScript, EPS(Encapsulated PostScript) 및 프린터 텍스트 파일(PRN)을 PDF 파일로 변환합니다. Distiller 서비스는 대량의 인쇄 문서를 송장 및 명세서 같은 전자 문서로 변환하는 데 자주 사용됩니다. 또한 문서를 PDF로 변환하면 기업은 고객에게 종이 버전과 전자 버전의 문서를 보낼 수 있습니다. 지원되는 파일 형식은 .ps, .eps 및 .prn입니다. 서비스는 다음 API를 지원합니다.
+Distiller 서비스는 PostScript, EPS(Encapsulated PostScript) 및 프린터 텍스트 파일(PRN)을 PDF 파일로 변환합니다. Distiller 서비스는 대량의 인쇄 문서를 송장 및 명세서 등의 전자 문서로 변환하는 데 자주 사용됩니다. 또한 문서를 PDF로 변환하면 종이 버전 및 문서 전자 버전을 고객에게 보낼 수 있습니다. 지원되는 파일 형식은 .ps, .eps 및 .prn입니다. 이 서비스는 다음 API를 지원합니다.
 
-createPDF 서비스는 결과가 포함된 java.util.Map을 반환합니다. 지도의 키는 다음과 같습니다.
+createPDF 서비스는 결과가 포함된 java.util.Map을 반환합니다. 맵의 키는 다음과 같습니다.
 
 * ConvertedDoc :새로 만든 PDF 문서가 포함되어 있습니다.
 * LogDoc :로그 파일이 포함되어 있습니다.
 
-createPDF 서비스에서는 다음과 같은 예외가 발생합니다.
+createPDF 서비스에는 다음과 같은 예외가 발생합니다.
 
 * 전환 예외
 * InvalidParameterException
@@ -4975,12 +4974,12 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
      <li>PDFX1a_2001<br /> </li>
      <li>PDFX3_2002<br /> </li>
      <li>Press_Quality<br /> </li>
-     <li>최소_파일_크기</li>
+     <li>Small_File_Size</li>
     </ul> <p>선택적 매개 변수입니다.</p> </td>
   </tr>
   <tr>
    <td>securitySettings</td>
-   <td><p>변환된 문서의 보안 설정 다음 설정을 적용할 수 있습니다.</p>
+   <td><p>변환된 문서의 보안 설정입니다. 다음 설정을 적용할 수 있습니다.</p>
     <ul>
      <li>보안 없음</li>
      <li>암호 보안<br /> </li>
@@ -4990,16 +4989,16 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>이 파일에는 PDF 문서를 생성하는 동안 적용된 설정(예: 웹 보기용 PDF 문서 최적화)과 PDF 문서를 만든 후 적용된 설정(예: 초기 보기 및 보안)이 포함됩니다. 선택적 매개 변수입니다.<br /> </td>
+   <td>이 파일에는 PDF 문서를 생성하는 동안 적용된 설정(예: 웹 보기용 PDF 문서 최적화)과 PDF 문서를 만든 후 적용된 설정(예: 초기 보기 및 보안)이 포함되어 있습니다. 선택적 매개 변수입니다.<br /> </td>
   </tr>
   <tr>
    <td>xmpDoc </td>
-   <td>파일에는 생성된 PDF 문서에 대한 메타데이터 정보가 포함되어 있습니다. 선택적 매개 변수입니다.</td>
+   <td>생성된 PDF 문서에 대한 메타데이터 정보가 파일에 포함되어 있습니다. 선택적 매개 변수입니다.</td>
   </tr>
  </tbody>
 </table>
 
-다음 Java 코드 샘플은 PostScript(PS), EPS(Encapsulated PostScript) 및 프린터 텍스트 파일(PRN)의 입력 파일을 PDF 파일로 변환합니다.
+다음 Java 코드 샘플은 PostScript(PS), Encapsulated PostScript(EPS) 및 프린터 텍스트 파일(PRN)의 입력 파일을 PDF 파일로 변환합니다.
 
 ```java
 @Reference DistillerService distillerService;
@@ -5060,4 +5059,3 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
  }
 }
 ```
-
