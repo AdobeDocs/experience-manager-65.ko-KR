@@ -1,30 +1,29 @@
 ---
 title: 앱 메타데이터 편집
 seo-title: 앱 메타데이터 편집
-description: 앱 메타데이터는 응용 프로그램을 공급업체의 스토어로 공개하기 위해 필요한 세부 사항입니다. 앱 데이터 편집에 대해 알려면 이 페이지를 따르십시오.
-seo-description: 앱 메타데이터는 응용 프로그램을 공급업체의 스토어로 공개하기 위해 필요한 세부 사항입니다. 앱 데이터 편집에 대해 알려면 이 페이지를 따르십시오.
+description: 앱 메타데이터는 애플리케이션을 공급업체 스토어에 릴리스하기 위해 필요한 세부 정보입니다. 앱 데이터 편집에 대해 알려면 이 페이지를 따르십시오.
+seo-description: 앱 메타데이터는 애플리케이션을 공급업체 스토어에 릴리스하기 위해 필요한 세부 정보입니다. 앱 데이터 편집에 대해 알려면 이 페이지를 따르십시오.
 uuid: c140be0f-8403-416e-af0f-29072a2ab942
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
-translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
 
 ---
 
-
 # 앱 메타데이터 편집 {#editing-app-metadata}
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: 응답)이 필요한 프로젝트에는 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
 
-**앱 관리** 타일 및 &quot;앱 관리&quot; 페이지는 애플리케이션 메타데이터를 보고 편집할 수 있는 방법을 제공합니다. 앱 메타데이터는 응용 프로그램을 공급업체의 스토어로 공개하기 위해 필요한 세부 사항입니다. 여기에는 일반적인 메타데이터, iOS 메타데이터 및 스크린샷이 포함될 수 있습니다. 공통 및 iOS 메타데이터에 대한 자세한 내용은 [앱 타일 관리](/help/mobile/phonegap-app-details-tile.md)를 참조하십시오.
+**앱 관리** 타일 및 &quot;앱 관리&quot; 페이지는 애플리케이션 메타데이터를 보고 편집하는 방법을 제공합니다. 앱 메타데이터는 애플리케이션을 공급업체 스토어에 릴리스하기 위해 필요한 세부 정보입니다. 여기에는 일반적인 메타데이터, iOS 메타데이터 및 스크린샷이 포함될 수 있습니다. 공통 및 iOS 메타데이터에 대한 자세한 내용은 [앱 타일 관리](/help/mobile/phonegap-app-details-tile.md)를 참조하십시오.
 
 ## 앱 데이터 편집 {#editing-the-app-data}
 
@@ -34,13 +33,13 @@ ht-degree: 3%
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. &#39;...&#39;을 클릭하여 세부 사항을 보거나 편집하려면 을 클릭합니다.****
+1. &#39;..&#39;을 클릭하여 세부 정보를 보거나 편집하려면 **앱 관리** 타일의 오른쪽 아래 모서리에 있습니다.
 
-1. 아래 그림에 표시된 대로 5개의 탭 중 하나로 세부 정보를 입력하거나 볼 수 있습니다.
+1. 아래 그림과 같이 사용 가능한 5개의 탭 중 하나에 세부 정보를 입력하거나 확인합니다.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-## 일반 및 IOS 메타데이터 편집 {#editing-common-and-ios-metadata}
+## 공통 및 IOS 메타데이터 편집 {#editing-common-and-ios-metadata}
 
 공통 및 IOS 메타데이터를 편집할 수 있습니다.
 
@@ -51,7 +50,7 @@ ht-degree: 3%
 
 ## 스크린샷 추가 및 제거 {#add-and-remove-screenshots}
 
-메타데이터 롤업에 앱 스크린샷을 포함할 수 있습니다. 일부 벤더는 앱을 앱스토어에 제출할 때 정확한 스크린샷을 요구합니다. 이러한 이미지는 자산에 이미 있어야 합니다. 스크린샷을 업로드하려면 [자산 선택기](../assets/search-assets.md#assetpicker)를 참조하십시오.
+메타데이터 롤업에 앱 스크린샷을 포함할 수 있습니다. 일부 공급업체에서는 앱을 앱스토어에 제출할 때 정확한 스크린샷이 필요합니다. 이러한 이미지는 Assets에 이미 있어야 합니다. 스크린샷을 업로드하려면 [자산 선택기](../assets/search-assets.md#assetpicker)을 참조하십시오.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -72,7 +71,7 @@ ht-degree: 3%
 
 ### 스크린샷 삭제 {#delete-screenshots}
 
-스크린샷을 제거하려면:
+스크린샷을 제거하려면
 
 자산에서 삭제를 클릭합니다.
 
@@ -90,7 +89,7 @@ ht-degree: 3%
 
 ### 추가 리소스 {#additional-resources}
 
-관리자 및 개발자의 역할 및 책임을 살펴보려면 아래 리소스를 참조하십시오.
+관리자 및 개발자의 역할과 책임에 대해 알아보려면 아래 리소스를 참조하십시오.
 
-* [AEM을 사용하여 Adobe PhoneGap Enterprise를 위한 개발](/help/mobile/developing-in-phonegap.md)
-* [AEM에서 Adobe PhoneGap Enterprise용 컨텐츠 관리](/help/mobile/administer-phonegap.md)
+* [AEM을 사용한 Adobe PhoneGap Enterprise 개발](/help/mobile/developing-in-phonegap.md)
+* [AEM을 통해 Adobe PhoneGap Enterprise에 대한 컨텐츠 관리](/help/mobile/administer-phonegap.md)
