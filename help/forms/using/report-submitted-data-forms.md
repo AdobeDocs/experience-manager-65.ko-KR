@@ -1,34 +1,33 @@
 ---
-title: 양식 포털에서 제출된 양식을 사용한 작업 API
-seo-title: 양식 포털에서 제출된 양식을 사용한 작업 API
-description: AEM Forms은 양식 포털에서 제출된 양식 데이터를 쿼리하고 조치를 취하는 데 사용할 수 있는 API를 제공합니다.
-seo-description: AEM Forms은 양식 포털에서 제출된 양식 데이터를 쿼리하고 조치를 취하는 데 사용할 수 있는 API를 제공합니다.
+title: Forms 포털에서 제출된 양식을 사용하여 작업하는 API
+seo-title: Forms 포털에서 제출된 양식을 사용하여 작업하는 API
+description: AEM Forms은 forms 포털에서 제출된 양식 데이터를 쿼리하고 작업에 사용할 수 있는 API를 제공합니다.
+seo-description: AEM Forms은 forms 포털에서 제출된 양식 데이터를 쿼리하고 작업에 사용할 수 있는 API를 제공합니다.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
-feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Forms 포털
+exl-id: a685889e-5d24-471c-926d-dbb096792bc8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 4%
 
 ---
 
+# 양식 포털에서 제출된 양식을 사용하여 작업하는 API {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-# 양식 포털 {#apis-to-work-with-submitted-forms-on-forms-portal}에서 제출된 양식을 사용하여 작업하는 API
-
-AEM Forms은 양식 포털을 통해 제출된 양식 데이터를 쿼리하는 데 사용할 수 있는 API를 제공합니다. 또한 이 문서에 설명된 API를 사용하여 의견을 게시하거나 제출된 양식의 속성을 업데이트할 수 있습니다.
+AEM Forms은 forms 포털을 통해 제출된 양식 데이터를 쿼리하는 데 사용할 수 있는 API를 제공합니다. 또한 이 문서에 설명된 API를 사용하여 제출된 양식의 속성을 게시하거나 주석을 달 수 있습니다.
 
 >[!NOTE]
 >
->API를 호출할 사용자는 [제출 검토자를 양식](/help/forms/using/adding-reviewers-form.md)에 연결하는 설명에 따라 검토자 그룹에 추가해야 합니다.
+>API를 호출할 사용자는 [제출 검토자를 양식](/help/forms/using/adding-reviewers-form.md)에 설명된 대로 검토자 그룹에 추가해야 합니다.
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
-모든 적격한 양식 목록을 반환합니다.
+모든 적합한 양식 목록을 반환합니다.
 
 ### URL 매개 변수 {#url-parameters}
 
@@ -36,7 +35,7 @@ AEM Forms은 양식 포털을 통해 제출된 양식 데이터를 쿼리하는 
 
 ### 응답 {#response}
 
-응답 객체에는 양식 이름 및 저장소 경로를 포함하는 JSON 배열이 포함되어 있습니다. 응답의 구조는 다음과 같습니다.
+응답 개체에는 양식 이름과 저장소 경로가 포함된 JSON 배열이 포함되어 있습니다. 응답의 구조는 다음과 같습니다.
 
 ```json
 [
@@ -80,7 +79,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>offset</code> (옵션)</td>
-   <td>결과 세트의 인덱스에서 시작점을 지정합니다. 기본값은 <strong>0</strong>입니다.</td>
+   <td>결과 집합 인덱스의 시작점을 지정합니다. 기본값은 <strong>0</strong>입니다.</td>
   </tr>
   <tr>
    <td><code>limit</code> (옵션)</td>
@@ -88,7 +87,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (옵션)</td>
-   <td>결과 정렬에 사용할 속성을 지정합니다. 기본값은 <strong>jcr:lastModified</strong>입니다. 이 값은 마지막으로 수정한 시간을 기준으로 결과를 정렬합니다.</td>
+   <td>정렬 결과에 대한 속성을 지정합니다. 기본값은 <strong>jcr:lastModified</strong>이며, 마지막 수정 시간을 기준으로 결과를 정렬합니다.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (옵션)</td>
@@ -96,18 +95,18 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (옵션)</td>
-   <td>결과에 포함할 양식 속성의 쉼표로 구분된 목록을 지정합니다. 기본 속성은 <br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>,, <code>owner</code></td>
+   <td>결과에 포함할 쉼표로 구분된 양식 속성 목록을 지정합니다. 기본 속성은 다음과 같습니다.<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (옵션)</td>
-   <td>양식 속성에서 지정된 값을 검색하고 일치하는 값이 있는 양식을 반환합니다. 기본값은 <strong>"</strong>입니다.</td>
+   <td>양식 속성에서 지정된 값을 검색하고 값이 일치하는 양식을 반환합니다. 기본값은 <strong>"</strong>입니다.</td>
   </tr>
  </tbody>
 </table>
 
 ### 응답 {#response-1}
 
-응답 객체에는 지정된 양식의 세부 사항을 포함하는 JSON 배열이 포함되어 있습니다. 응답의 구조는 다음과 같습니다.
+응답 개체에는 지정된 양식의 세부 사항이 포함된 JSON 배열이 포함되어 있습니다. 응답의 구조는 다음과 같습니다.
 
 ```json
 {
@@ -141,11 +140,11 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 | 매개 변수 | 설명 |
 |---|---|
 | `submitID` | 제출 인스턴스와 연결된 메타데이터 ID를 지정합니다. |
-| `Comment` | 지정된 제출 인스턴스에 추가할 주석 텍스트를 지정합니다. |
+| `Comment` | 지정한 제출 인스턴스에 추가할 주석에 대한 텍스트를 지정합니다. |
 
 ### 응답 {#response-2}
 
-댓글을 성공적으로 게시할 때 주석 ID를 반환합니다.
+댓글을 성공적으로 게시할 때 댓글 ID를 반환합니다.
 
 ### 예 {#example-2}
 
@@ -175,7 +174,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 
 ### 응답 {#response-3}
 
-응답 개체에는 지정된 제출 ID와 관련된 모든 주석을 포함하는 JSON 배열이 포함되어 있습니다. 응답의 구조는 다음과 같습니다.
+응답 개체에는 지정된 제출 ID와 연결된 모든 설명을 포함하는 JSON 배열이 포함되어 있습니다. 응답의 구조는 다음과 같습니다.
 
 ```json
 [{
@@ -199,7 +198,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=update제출 {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 지정된 제출된 양식 인스턴스의 지정된 속성 값을 업데이트합니다.
 
@@ -230,4 +229,3 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSub
 ```json
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
-
