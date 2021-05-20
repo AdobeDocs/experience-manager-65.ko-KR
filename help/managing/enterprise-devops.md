@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 94%
 
 ---
-
 
 # 엔터프라이즈 DevOps {#enterprise-devops}
 
@@ -33,7 +32,7 @@ DevOps는 다음과 같은 문제를 방지하는 것을 목표로 합니다.
 
 ## 환경 {#environments}
 
-AEM(Adobe Experience Manager) 배포는 일반적으로 여러 환경에서 여러 수준에서 다른 용도로 사용되는 여러 환경으로 구성됩니다.
+AEM(Adobe Experience Manager) 배포는 일반적으로 여러 수준에서 다른 용도로 사용되는 여러 환경으로 구성됩니다.
 
 * [개발](#development)
 * [품질 보증](#quality-assurance)
@@ -63,7 +62,7 @@ AEM(Adobe Experience Manager) 배포는 일반적으로 여러 환경에서 여�
 
 ### 품질 보증 {#quality-assurance}
 
-이 환경은 품질 보증 팀이 새 시스템을 통합적으로 [테스트](/help/sites-developing/test-plan.md) 하는 데 사용됩니다.디자인과 기능 모두 적절한 컨텐츠를 사용한 작성자 및 게시 환경이 모두 있어야 하며, 전체 테스트를 활성화하는 데 필요한 모든 서비스를 제공해야 합니다.
+이 환경은 품질 보증 팀이 새 시스템을 모두 [테스트](/help/sites-developing/test-plan.md) 하기 위해 사용합니다.디자인과 기능 모두. 적절한 컨텐츠를 사용한 작성자 및 게시 환경이 모두 있어야 하며, 전체 테스트를 활성화하는 데 필요한 모든 서비스를 제공해야 합니다.
 
 ### 스테이징 {#staging}
 
@@ -141,6 +140,6 @@ AEM 프로젝트는 종종 코드 배포를 트리거합니다.
 컨텐츠를 다음과 같이 전송할 수 있습니다.
 
 * 다른 환경 간에 패키지를 내보내고 가져옵니다.
-* 서로 다른 인스턴스 간 - 컨텐츠를 직접 복제([AEM 복제](/help/sites-deploying/replication.md))하여(HTTP 또는 HTTPS, 연결 사용)
+* 다른 인스턴스 간에 HTTP 또는 HTTPS 연결을 사용하여 컨텐츠를 직접 복제([AEM 복제](/help/sites-deploying/replication.md))합니다.
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
