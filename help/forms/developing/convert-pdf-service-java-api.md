@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 8974c468-ff2b-431d-96fb-e987698619bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
 
-
 # PDF 서비스 Java API 빠른 시작(SOAP) {#convert-pdf-service-java-api-quickstart-soap} 변환
 
-다음 빠른 시작을 PDF 변환 서비스 API에 사용할 수 있습니다.
+다음 빠른 시작은 PDF 변환 서비스 API에 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서를 PostScript로 변환](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
@@ -30,11 +29,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms Server를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}을 사용하여 PDF 문서를 PostScript로 변환
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}를 사용하여 PDF 문서를 PostScript로 변환
 
-다음 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *Loan.ps*&#x200B;라는 PostScript 문서로 변환합니다. (PDF 문서를 PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)로 변환을 참조하십시오.)[
+다음 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 *Loan.ps*&#x200B;라는 PostScript 문서로 변환합니다. ( [PDF 문서를 PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)로 변환 을 참조하십시오.)
 
 ```java
  /*
@@ -149,7 +148,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}를 사용하여 PDF 문서를 JPEG 파일로 변환
 
-다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 JPEG 파일 세트로 변환하여 C:\Adobe directory폴더에 저장합니다. 각 파일의 이름은 `tempFile[index].jpg`이며 첫 번째 이미지 파일의 이름은 *tempFile0.jpg*&#x200B;입니다. ([PDF 문서를 이미지 형식으로 변환](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats) 참조)
+다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 JPEG 파일 세트로 변환하여 C:\Adobe directory폴더에 저장합니다. 각 파일의 이름은 `tempFile[index].jpg`로, 첫 번째 이미지 파일의 이름은 *tempFile0.jpg*&#x200B;입니다. ( [PDF 문서를 이미지 형식으로 변환](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats) 참조).
 
 ```java
  /*
@@ -281,4 +280,3 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
      }
  }
 ```
-
