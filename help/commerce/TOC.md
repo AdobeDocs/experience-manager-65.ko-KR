@@ -1,21 +1,20 @@
 ---
-sub-product: AEM 컨텐츠 및 상거래
-user-guide-title: AEM 컨텐츠 및 상거래
+sub-product: AEM Content 및 Commerce
+user-guide-title: AEM Content 및 Commerce
 breadcrumb-title: Commerce 안내서
-user-guide-description: AEM 컨텐츠 및 상거래 사용 및 관리 방법을 이해합니다.
-translation-type: tm+mt
+user-guide-description: AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
 source-git-commit: 8612e7c4105a9872fc8bba1988716eaa4b18d550
 workflow-type: tm+mt
 source-wordcount: '104'
-ht-degree: 24%
+ht-degree: 45%
 
 ---
 
 
 # 상거래 {#commerce}
 
-+ [AEM 컨텐츠 및 상거래](/help/commerce/home.md)
-+ [AEM 컨텐츠 및 상거래에 대한 주목할 만한 변경 사항](cif/changes.md)
++ [AEM Content 및 Commerce](/help/commerce/home.md)
++ [AEM 컨텐츠 및 상거래에 대한 주요 변경 사항](cif/changes.md)
 + [소개 및 개요](cif/introduction.md)
 + 통합 {#integrations}
    + [Adobe 상거래](cif/integrating/magento.md)
@@ -25,11 +24,11 @@ ht-degree: 24%
    + 관리 {#administering}
       + [다중 저장소 설정](cif/configuring/multi-store-setup.md)
       + [다중 템플릿 사용](cif/configuring/multi-template-usage.md)
-      + [SEO에 대한 URL 구성](cif/configuring/advanced-url-configuration.md)
+      + [SEO용 URL 구성](cif/configuring/advanced-url-configuration.md)
       + [캐싱 옵션](cif/configuring/caching.md)
    + 개발 {#developing}
       + [AEM을 사용한 개발](cif/develop.md)
-      + [CIF 구성 요소 스타일 지정](cif/customizing/style-cif-component.md)
+      + [스타일 지정 CIF 구성 요소](cif/customizing/style-cif-component.md)
       + [CIF 구성 요소 사용자 정의](cif/customizing/customize-cif-components.md)
       + [CIF 카탈로그 선택기 사용](cif/customizing/use-cif-pickers.md)
 + [마이그레이션](cif/migration.md)
@@ -45,7 +44,7 @@ ht-degree: 24%
    + 관리 {#administering}
       + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
       + [개념](/help/commerce/cif-classic/administering/concepts.md)
-      + [범용 전자 상거래 관리](/help/commerce/cif-classic/administering/generic.md)
+      + [일반 eCommerce 관리](/help/commerce/cif-classic/administering/generic.md)
       + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + 개발 {#developing}
       + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
