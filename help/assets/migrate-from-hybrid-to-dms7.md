@@ -9,7 +9,6 @@ docset: aem65
 role: Business Practitioner, Administrator
 feature: Scene7 모드,하이브리드 모드
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
-translation-type: tm+mt
 source-git-commit: 61e703e73b831a9b4e7045e5d5fffeef5be7ed6d
 workflow-type: tm+mt
 source-wordcount: '516'
