@@ -1,8 +1,8 @@
 ---
 title: 작업 관리자 서비스 Java API QuickStart(SOAP)
 seo-title: 작업 관리자 서비스 Java API QuickStart(SOAP)
-description: 작업 관리자 서비스를 사용하여 작업을 할당하거나 작업을 잠그고 사용자에게 할당된 작업을 검색하고 작업에서 양식 데이터를 검색하며 양식 데이터를 수정하고 첨부 파일을 검색하고 작업 정보를 검색할 수 있습니다.
-seo-description: 작업 관리자 서비스를 사용하여 작업을 할당하거나 작업을 잠그고 사용자에게 할당된 작업을 검색하고 작업에서 양식 데이터를 검색하며 양식 데이터를 수정하고 첨부 파일을 검색하고 작업 정보를 검색할 수 있습니다.
+description: 작업 관리자 서비스를 사용하여 작업을 할당하고 작업을 잠그고 사용자에게 할당된 작업을 검색하고 작업에서 양식 데이터를 검색하고 양식 데이터를 수정하고 첨부 파일을 검색하고 작업 정보를 검색할 수 있습니다.
+seo-description: 작업 관리자 서비스를 사용하여 작업을 할당하고 작업을 잠그고 사용자에게 할당된 작업을 검색하고 작업에서 양식 데이터를 검색하고 양식 데이터를 수정하고 첨부 파일을 검색하고 작업 정보를 검색할 수 있습니다.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
 
-
 # 작업 관리자 서비스 Java API 빠른 시작(SOAP) {#task-manager-service-java-api-quickstart-soap}
 
-작업 관리자 서비스에서 다음 빠른 시작을 사용할 수 있습니다.
+Task Manager Service에 사용할 수 있는 빠른 시작
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 작업 할당](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
 
@@ -45,7 +44,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍에 있는 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM Forms을 사용한 프로그래밍에 있는 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}를 사용하여 작업 할당
 
@@ -180,7 +179,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}을(를) 사용하여 작업 잠금
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}를 사용하여 작업 잠금
 
 다음 Java 코드 예제에서는 작업 식별자 값 2에 해당하는 작업을 잠급니다.
 
@@ -271,7 +270,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}를 사용하여 사용자에게 할당된 작업 검색
 
-다음 Java 코드 예제에서는 *tony blue*&#x200B;라는 사용자에게 할당된 모든 작업을 검색합니다. 이 사용자는 연결 속성에 지정되어 있습니다. 식별자 값 및 설명 등 반환된 작업에 대한 정보가 표시됩니다.
+다음 Java 코드 예는 *tony blue* 사용자에게 할당된 모든 작업을 검색합니다. 이 사용자는 연결 속성에 지정됩니다. 식별자 값 및 설명과 같은 반환된 작업에 대한 정보가 표시됩니다.
 
 ```java
  /*
@@ -395,7 +394,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}을 사용하여 작업에서 양식 데이터 검색
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}를 사용하여 작업에서 양식 데이터 검색
 
 다음 Java 코드 예제에서는 식별자 값이 304인 작업에서 양식 데이터를 검색합니다. 양식 데이터는 C:\Adobe에 있는 *FormData.xml*&#x200B;이라는 XML 파일에 기록됩니다.
 
@@ -501,9 +500,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}을 사용하여 양식 데이터 수정
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}를 사용하여 양식 데이터 수정
 
-다음 Java 코드 예제에서는 *FormData.xml* 파일에 있는 데이터가 포함된 양식을 업데이트합니다.
+다음 Java 코드 예제에서는 *FormData.xml* 파일에 있는 데이터가 있는 양식을 업데이트합니다.
 
 ```java
  /*
@@ -613,7 +612,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}를 사용하여 작업에서 첨부 파일 검색
 
-다음 Java 코드 예제에서는 파일 첨부 파일을 검색합니다. 각 첨부 파일은 TXT 파일로 저장됩니다.
+다음 Java 코드 예는 파일 첨부 파일을 검색합니다. 각 파일 첨부 파일은 TXT 파일로 저장됩니다.
 
 ```java
  /*
@@ -717,7 +716,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}를 사용하여 작업 정보 검색
 
-다음 Java 코드 예제에서는 *MortgageLoan - Prebuilt*&#x200B;이라는 프로세스를 기반으로 하는 모든 작업을 검색합니다. 반환된 각 작업의 상태가 완료된 작업인지 확인합니다. 작업을 완료한 사용자의 이름 및 작업이 완료된 날짜와 같은 정보가 검색되고 표시됩니다.
+다음 Java 코드 예제에서는 *ModerationLoan - Prebuted* 프로세스를 기반으로 하는 모든 작업을 검색합니다. 반환된 각 작업의 상태가 완료된 작업인지 확인합니다. 작업을 완료한 사용자 이름 및 작업이 완료된 날짜 등의 정보가 검색 및 표시됩니다.
 
 ```java
  /*
@@ -869,4 +868,3 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
      }
  
 ```
-
