@@ -5,11 +5,10 @@ solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
-user-guide-description: 디지털 에셋 제작, 관리, 처리 및 배포
-translation-type: tm+mt
+user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
 source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '588'
 ht-degree: 79%
 
 ---
@@ -18,16 +17,16 @@ ht-degree: 79%
 # Assets 안내서 {#assets}
 
 + [[!DNL Assets] 사용 안내서](home.md)
-+ [[!DNL Experience Manager] 6.5 자산 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
++ [[!DNL Experience Manager] 6.5 Assets 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [DAM 정보](assets.md)
 + [자산에 대한 우수 사례](best-practices-for-assets.md)
-+ [액세스 가능성 [!DNL Assets]](accessibility.md)
++ [ [!DNL Assets]의 액세스 가능성](accessibility.md)
 + Experience Manager 자산 사용 {#using}
    + [[!DNL Assets] 홈 페이지 경험](assets-home-page.md)
-   + [디지털 에셋 검색](search-assets.md)
-   + [에셋 메타데이터를 사용한 작업](metadata.md)
+   + [디지털 자산 검색](search-assets.md)
+   + [자산 메타데이터 작업](metadata.md)
    + [다국어 자산](multilingual-assets.md)
-   + [ [!DNL Adobe Stock]  Assets에서 자산 사용](aem-assets-adobe-stock.md)
+   + [자산에 [!DNL Adobe Stock] 자산 사용](aem-assets-adobe-stock.md)
    + [3D 자산 미리 보기](previewing-3d-assets.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [향상된 스마트 태그](enhanced-smart-tags.md)
@@ -35,7 +34,7 @@ ht-degree: 79%
    + [자산 처리](assets-workflow.md)
    + [이미지 맵 추가](image-maps.md)
    + [MSM을 사용하여 자산 재사용](reuse-assets-using-msm.md)
-   + [연결된 에셋 [!DNL Sites]](use-assets-across-connected-assets-instances.md)
+   + [연결된 자산( [!DNL Sites])](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Experience League의 Dynamic Media 뉴스레터](dynamic-media-newsletter.md)
    + [Dynamic Media 설정](administering-dynamic-media.md)
@@ -84,14 +83,14 @@ ht-degree: 79%
    + [벌크 자산 마이그레이션용 기능 팩 18912 설치](bulk-ingest-migrate.md)
    + [선택기를 사용한 작업](working-with-selectors.md)
 + 자산 확장 {#extending}
-   + [사용자 정의 및 확장 [!DNL Assets]](extending-assets.md)
+   + [사용자 지정 및 확장 [!DNL Assets]](extending-assets.md)
    + [미디어 핸들러 및 워크플로우를 사용하여 자산 처리](media-handlers.md)
    + [검색 기능 확장](searchx.md)
-   + [설치 및  [!DNL ImageMagick] 구성을 사용하여 작업 [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [ [!DNL Assets]에서 작동하도록  [!DNL ImageMagick] 을 설치 및 구성합니다](best-practices-for-imagemagick.md)
    + [자산과 활동 스트림 통합](extending-activity-stream.md)
    + [자산 편집기 확장](asseteditorx.md)
    + [[!DNL Assets] HTTP API](mac-api-assets.md)
-   + [HTTP API [!DNL Assets] 에서 컨텐츠 조각 지원](assets-api-content-fragments.md)
+   + [ [!DNL Assets] HTTP API에서 컨텐츠 조각 지원](assets-api-content-fragments.md)
    + [[!DNL Assets] 프록시 개발](proxy.md)
 + 자산 관리 {#administer}
    + [지원되는 파일 형식](assets-formats.md)
@@ -102,7 +101,7 @@ ht-degree: 79%
    + [표현물로 XMP 원본에 쓰기](xmp-writeback.md)
    + [자산 링크 공유](link-sharing.md)
    + [자산 보고서](asset-reports.md)
-   + [태그 지정을 위한 스마트 콘텐츠 서비스 구성](config-smart-tagging.md)
+   + [태깅을 위한 스마트 컨텐츠 서비스 구성](config-smart-tagging.md)
    + [메타데이터, 이미지 및 비디오 처리 프로필](processing-profiles.md)
    + [자산 편집기 페이지 만들기 및 구성](assets-finder-editor.md)
    + [자산 크기 조정 가이드](assets-sizing-guide.md)
@@ -114,7 +113,7 @@ ht-degree: 79%
    + [PDF 래스터라이저 사용](aem-pdf-rasterizer.md)
    + [업로드 제한 구성](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] 통합](aem-cc-integration-best-practices.md)
-   + [통합: [!DNL InDesign Server]](indesign.md)
+   + [ [!DNL InDesign Server]과 통합](indesign.md)
    + [자산의 디지털 권한 관리](drm.md)
    + [자산 통찰력에 데모 패키지 사용](use-demo-package-for-asset-insights.md)
    + [자산 파일 형식 우수 사례](assets-file-format-best-practices.md)
@@ -125,20 +124,20 @@ ht-degree: 79%
    + [컬렉션, 코드 조각 및 코드 조각 템플릿에 대한 다중 임차인](multi-tenancy.md)
    + [자산에 워터마크 지정](watermarking.md)
    + [자산 템플릿](asset-templates.md)
-   + [폴더를 [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
+   + [폴더 공유 모범 사례 [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
-   + [구성  [!DNL Assets] 방법 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [에셋 게시 대상 [!DNL Brand Portal]](brand-portal-publish-assets.md)
-   + [폴더 게시 대상 [!DNL Brand Portal]](brand-portal-publish-folder.md)
-   + [컬렉션 게시 대상 [!DNL Brand Portal]](brand-portal-publish-collection.md)
+   + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](configure-aem-assets-with-brand-portal.md)
+   + [자산을 [!DNL Brand Portal]에 게시](brand-portal-publish-assets.md)
+   + [폴더를 [!DNL Brand Portal]에 게시](brand-portal-publish-folder.md)
+   + [컬렉션을  [!DNL Brand Portal]에 게시](brand-portal-publish-collection.md)
 + 콘텐츠 조각 {#fragments}
-   + [콘텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
-   + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
-   + [콘텐츠 조각 모델](content-fragments/content-fragments-models.md)
-   + [변형 - 조각 콘텐츠 작성](content-fragments/content-fragments-variations.md)
+   + [컨텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
+   + [컨텐츠 조각 관리](content-fragments/content-fragments-managing.md)
+   + [컨텐츠 조각 모델](content-fragments/content-fragments-models.md)
+   + [변형 - 조각 컨텐츠 작성](content-fragments/content-fragments-variations.md)
    + [콘텐츠 조각 관련 콘텐츠](content-fragments/content-fragments-assoc-content.md)
    + [메타데이터 - 조각 속성](content-fragments/content-fragments-metadata.md)
-   + [콘텐츠 조각 - 삭제 고려 사항](content-fragments/content-fragments-delete.md)
+   + [컨텐츠 조각 - 삭제 고려 사항](content-fragments/content-fragments-delete.md)
    + [컨텐츠 조각 - Markdown](content-fragments/content-fragments-markdown.md)
    + [컨텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md)
 + 자산 관리 {#managing}
@@ -149,7 +148,7 @@ ht-degree: 79%
    + [비디오 자산 관리](managing-video-assets.md)
    + [번역 프로젝트 만들기](translation-projects.md)
    + [자산 번역 준비](preparing-assets-for-translation.md)
-   + [Experience Manager에서 에셋 다운로드](download-assets-from-aem.md)
+   + [Experience Manager에서 자산 다운로드](download-assets-from-aem.md)
    + [Lightbox](light-box.md)
    + [자산 통찰력](asset-insights.md)
    + [DTM을 통해 자산 통찰력 활성화](use-dtm-for-asset-insights.md)
