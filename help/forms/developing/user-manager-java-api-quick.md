@@ -1,8 +1,8 @@
 ---
 title: 사용자 관리자 Java API 빠른 시작(SOAP)
 seo-title: 사용자 관리자 Java API 빠른 시작(SOAP)
-description: User Manager API를 사용하여 사용자를 추가, 삭제, 그룹 생성, 사용자 및 그룹 관리, 역할 및 권한 관리, 프로그래밍 방식으로 사용자 동기화, 환경 설정 노드 프로그래밍 방식으로 관리
-seo-description: User Manager API를 사용하여 사용자를 추가, 삭제, 그룹 생성, 사용자 및 그룹 관리, 역할 및 권한 관리, 프로그래밍 방식으로 사용자 동기화, 환경 설정 노드 프로그래밍 방식으로 관리
+description: 사용자 관리자 API를 사용하여 사용자를 추가하고, 사용자를 삭제하고, 그룹을 만들고, 사용자와 그룹을 관리하고, 역할 및 권한을 관리하고, 사용자를 프로그래밍 방식으로 동기화하고, 환경 설정 노드를 프로그래밍 방식으로 관리할 수 있습니다.
+seo-description: 사용자 관리자 API를 사용하여 사용자를 추가하고, 사용자를 삭제하고, 그룹을 만들고, 사용자와 그룹을 관리하고, 역할 및 권한을 관리하고, 사용자를 프로그래밍 방식으로 동기화하고, 환경 설정 노드를 프로그래밍 방식으로 관리할 수 있습니다.
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7f622371-0f0f-4789-b2e7-e4b536a21c4d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-
 # 사용자 관리자 Java API 빠른 시작(SOAP) {#user-manager-java-api-quick-start-soap}
 
-Java API 빠른 시작(SOAP)은 사용자 관리자 API에 사용할 수 있습니다.
+User Manager API에 SOAP(Java API Quick Start)를 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 사용자 추가](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
@@ -33,17 +32,17 @@ Java API 빠른 시작(SOAP)은 사용자 관리자 API에 사용할 수 있습�
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 역할 및 권한 관리](user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 프로그래밍 방식으로 사용자 동기화](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 사용자를 프로그래밍 방식으로 동기화](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 프로그래밍 방식으로 환경 설정 노드 관리](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 프로그래밍 방식으로 환경 설정 노드를 관리합니다](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하는 경우 문서를 기반으로 하며 Windows 특정 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM Forms로 프로그래밍에 있는 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하는 경우 문서를 기반으로 하며 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-adding-users-using-the-java-api}을(를) 사용하여 사용자 추가
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-adding-users-using-the-java-api}를 사용하여 사용자 추가
 
 다음 코드 예제에서는 Wendy Blue라는 사용자를 AEM Forms에 추가합니다. ([사용자 추가](/help/forms/developing/users.md#adding-users)를 참조하십시오.)
 
@@ -161,9 +160,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-deleting-users-using-the-java-api}을(를) 사용하여 사용자 삭제
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-deleting-users-using-the-java-api}를 사용하여 사용자 삭제
 
-다음 코드 예제에서는 AEM Forms에서 Wendy Blue라는 사용자를 삭제합니다. ([사용자 삭제](/help/forms/developing/users.md#deleting-users)를 참조하십시오.)
+다음 코드 예제에서는 AEM Forms에서 Wendy Blue라는 사용자를 삭제합니다. ( [사용자 삭제](/help/forms/developing/users.md#deleting-users) 참조)
 
 ```java
  /*
@@ -257,9 +256,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}을 사용하여 사용자 및 그룹 관리
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}를 사용하여 사용자 및 그룹 관리
 
-다음 코드 예제에서는 로컬 사용자와 사용자가 속한 로컬 그룹을 찾습니다. ([사용자 및 그룹 관리](/help/forms/developing/users.md#managing-users-and-groups)를 참조하십시오.)
+다음 코드 예제에서는 로컬 사용자와 사용자가 속한 로컬 그룹을 찾습니다. ([사용자 및 그룹 관리](/help/forms/developing/users.md#managing-users-and-groups) 참조)
 
 ```java
  /*
@@ -381,9 +380,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}을(를) 사용하여 역할 및 권한 관리
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}를 사용하여 역할 및 권한 관리
 
-다음 코드 예제에서는 Services 사용자 역할을 주체에 할당하고 주체가 보유한 역할을 인쇄한 다음 주체로부터 역할을 제거합니다. 이 빠른 시작을 위해 두 개의 서비스가 호출됩니다.DirectoryManager 서비스 및 AuthorizationManager 서비스.([역할 및 권한 관리](/help/forms/developing/users.md#managing-roles-and-permissions) 참조)
+다음 코드 예제에서는 서비스 사용자 역할을 주도자에게 할당하고 주도자가 가진 역할을 인쇄한 다음 주도자에서 역할을 제거합니다. 이 빠른 시작을 위해 두 가지 서비스가 호출됩니다.DirectoryManager 서비스 및 AuthorizationManager 서비스([역할 및 권한 관리](/help/forms/developing/users.md#managing-roles-and-permissions) 참조)
 
 ```java
  /*
@@ -524,9 +523,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}을 사용하여 프로그래밍 방식으로 사용자를 동기화합니다.
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}를 사용하여 사용자를 프로그래밍 방식으로 동기화
 
-다음 Java 코드 예제에서는 사용자 관리 API를 사용하여 사용자를 동기화합니다. ([프로그래밍 방식으로 사용자 동기화](/help/forms/developing/users.md#programmatically-synchronizing-users)를 참조하십시오.)
+다음 Java 코드 예는 사용자 관리 API를 사용하여 사용자를 동기화합니다. ([프로그래밍 방식으로 사용자 동기화](/help/forms/developing/users.md#programmatically-synchronizing-users) 참조)
 
 ```java
  /*
@@ -633,7 +632,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick_start_soap_mode_adding_users_using_the_java_api-1}을(를) 사용하여 사용자 추가
+## 빠른 시작(SOAP 모드):Java API {#quick_start_soap_mode_adding_users_using_the_java_api-1}를 사용하여 사용자 추가
 
 다음 코드 예제에서는 Wendy Blue라는 사용자를 AEM Forms에 추가합니다. ([사용자 추가](/help/forms/developing/users.md#adding-users)를 참조하십시오.)
 
@@ -751,9 +750,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-creating-groups-using-the-java-api}을 사용하여 그룹 만들기
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-creating-groups-using-the-java-api}를 사용하여 그룹 만들기
 
-다음 코드 예제에서는 AEM Forms에 AdobeGroup이라는 그룹을 만듭니다. ([그룹 만들기](/help/forms/developing/users.md#creating-groups)를 참조하십시오.)
+다음 코드 예제에서는 AEM Forms에 AdobeGroup이라는 그룹을 만듭니다. ([그룹 만들기](/help/forms/developing/users.md#creating-groups) 참조)
 
 ```java
  /*
@@ -905,7 +904,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드) 환경 설정 노드 관리 {#quick-start-soap-mode-managing-preferences-nodes}
 
-사용자 관리 API를 사용하여 환경 설정 노드를 관리하는 다음 Java 코드 모델입니다. ( [환경 설정 노드 프로그래밍 방식으로 관리](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes) 참조)
+사용자 관리 API를 사용하여 기본 설정 노드를 관리하는 다음 Java 코드 모델입니다. ([프로그래밍 방식으로 환경 설정 노드 관리](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes) 참조)
 
 ```java
 /*
@@ -1006,9 +1005,9 @@ public class ManagePreferences {
 }
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}을 사용하여 프로그래밍 방식으로 환경 설정 노드 관리
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}를 사용하여 프로그래밍 방식으로 환경 설정 노드를 관리합니다
 
-사용자 관리 API를 사용하여 환경 설정 노드를 관리하는 다음 Java 코드 모델([환경 설정 노드 프로그래밍 방식 관리](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes) 참조)
+다음 Java 코드 모델은 사용자 관리 API를 사용하여 환경 설정 노드를 관리합니다( [프로그래밍 방식으로 환경 설정 노드 관리](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes) 참조)
 
 ```java
 /*
@@ -1092,4 +1091,3 @@ public class ManagePreferences {
 }
 }
 ```
-
