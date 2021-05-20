@@ -1,8 +1,8 @@
 ---
 title: 커뮤니티 구성 요소
 seo-title: 커뮤니티 구성 요소
-description: 모든 AEM 사이트에 커뮤니티 기능 추가
-seo-description: 모든 AEM 사이트에 커뮤니티 기능 추가
+description: AEM 사이트에 커뮤니티 기능 추가
+seo-description: AEM 사이트에 커뮤니티 기능 추가
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,13 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 44%
 
 ---
-
 
 # 커뮤니티 구성 요소 {#communities-components}
 
@@ -25,7 +24,7 @@ ht-degree: 44%
 
 AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 있을 뿐 아니라 표준 AEM 작성 도구를 사용하여 모든 AEM 사이트에 커뮤니티 기능을 추가할 수도 있습니다.
 
-커뮤니티 사이트 만들기에 대한 자세한 내용은 다음을 참조하십시오.
+커뮤니티 사이트 생성에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [AEM Communities 개요](/help/communities/overview.md)
 * [AEM Communities 시작하기](/help/communities/getting-started.md)
@@ -33,17 +32,17 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 >[!NOTE]
 >
->작성 환경에 익숙하지 않은 경우 [기본 처리](/help/sites-authoring/basic-handling.md)에 대한 설명서와 페이지 작성 안내서 ](/help/sites-authoring/qg-page-authoring.md)에 대한 [빠른 안내서를 봅니다.
+>작성 환경에 익숙하지 않은 경우 [기본 처리](/help/sites-authoring/basic-handling.md)에 대한 설명서를 보고, 페이지 작성에 대한 [빠른 안내서를 확인하십시오](/help/sites-authoring/qg-page-authoring.md).
 
 ## 사용 가능한 커뮤니티 구성 요소 {#available-communities-components}
 
-다음 표는 구성 요소 브라우저(사이드 킥됨)에서 활성화하면 작성자가 볼 수 있는 커뮤니티 구성 요소를 나열합니다.
+다음 표에는 구성 요소 브라우저(사이드 킥에서 활성화될 때 작성자가 볼 수 있는 커뮤니티 구성 요소가 나열되어 있습니다.
 
 대화형 [커뮤니티 구성 요소 안내서](/help/communities/components-guide.md)도 참조하십시오.
 
 >[!NOTE]
 >
->커뮤니티 구성 요소로 작성하는 데 필요한 정보가 포함되어 있으므로 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 읽으십시오.
+>커뮤니티 구성 요소를 사용하여 작성하는 데 필요한 정보가 포함되어 있으므로 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md) 을 읽으십시오.
 
 | **구성 요소 제목** | **기능** |
 |---|---|
@@ -80,13 +79,12 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 >[!NOTE]
 >
->투표 구성 요소는 더 이상 사용할 수 없고 Experience Manager 커뮤니티 내에서 지원됩니다.
+>투표 구성 요소는 더 이상 사용할 수 없으며 Experience Manager 커뮤니티에서 지원되지 않습니다.
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
-* 권장 배포에 대해 알려면 [커뮤니티 배포](/help/communities/deploy-communities.md)를 참조하십시오.
+* 권장 배포에 대해 알아보려면 [Communities 배포](/help/communities/deploy-communities.md)를 방문하십시오.
 
-* 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시지 구성에 대해 알려면 [커뮤니티 사이트 관리](/help/communities/administer-landing.md)를 참조하십시오.
+* 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시징 구성에 대해 알려면 [커뮤니티 사이트 관리](/help/communities/administer-landing.md)를 방문하십시오.
 
 * SCF(소셜 구성 요소 프레임워크)에 대해 알아보고 커뮤니티 구성 요소 및 기능을 사용자 지정하려면 [커뮤니티 개발](/help/communities/communities.md)을 방문하십시오.
-
