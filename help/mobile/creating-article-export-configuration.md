@@ -1,54 +1,53 @@
 ---
-title: 아티클 내보내기 구성 만들기
-seo-title: 아티클 내보내기 구성 만들기
-description: AEM Mobile으로 업로드할 Adobe Experience Manager(AEM)에서 컨텐츠를 내보내는 방법에 대해 알려면 이 페이지를 따르십시오.
-seo-description: AEM Mobile으로 업로드할 Adobe Experience Manager(AEM)에서 컨텐츠를 내보내는 방법에 대해 알려면 이 페이지를 따르십시오.
+title: 문서 내보내기 구성 만들기
+seo-title: 문서 내보내기 구성 만들기
+description: AEM Mobile으로 업로드할 Adobe Experience Manager(AEM)에서 콘텐츠를 내보내는 방법에 대해 알려면 이 페이지를 따르십시오.
+seo-description: AEM Mobile으로 업로드할 Adobe Experience Manager(AEM)에서 콘텐츠를 내보내는 방법에 대해 알려면 이 페이지를 따르십시오.
 uuid: 089bc15b-669e-4623-bdbb-fd9abf46e098
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5295f383-3b46-4456-9177-65de68e39a85
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 1%
 
 ---
 
-
-# 아티클 내보내기 구성 만들기{#creating-article-export-configuration}
+# 문서 내보내기 구성 만들기{#creating-article-export-configuration}
 
 >[!NOTE]
 >
->단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: 응답)이 필요한 프로젝트에는 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
+>단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
 >**전제 조건**:
 >
->공유 리소스를 만들고 수정하는 방법에 대한 자세한 내용은 [콘텐츠 동기화](/help/mobile/mobile-ondemand-contentsync.md)를 참조하십시오.
+>공유 리소스를 만들고 수정하는 방법에 대한 자세한 내용은 [컨텐츠 동기화](/help/mobile/mobile-ondemand-contentsync.md)를 참조하십시오.
 
-AEM Mobile 사용자는 컨텐츠 동기화를 사용하여 라이브 컨텐츠를 모바일 앱에서 사용할 수 있는 정적 컨텐츠로 내보냅니다. 이러한 내보내기는 컨텐츠가 AEM Mobile의 Mobile On-Demand Services에 업로드될 때 이루어집니다.
+AEM Mobile 사용자는 컨텐츠 동기화를 사용하여 모바일 앱에서 사용할 정적 컨텐츠로 라이브 컨텐츠를 내보내고 AEM Mobile에서 Mobile On-Demand Services로 컨텐츠가 업로드되면 내보내집니다.
 
-위의 표에 언급된 속성 ***dps-exportTemplate***&#x200B;은 앱의 내보내기 구성에 대한 경로를 정의합니다. 공유 리소스를 만들고 수정하도록 이 속성을 설정합니다.
+위의 표에 언급된 속성 ***dps-exportTemplate***&#x200B;은 앱 내보내기 구성의 경로를 정의합니다. 공유 리소스를 만들고 수정하려면 이 속성을 설정하십시오.
 
-다음 리소스는 AEM Mobile으로 업로드할 Adobe Experience Manager(AEM)에서 컨텐츠를 내보내는 방법을 설명합니다.
+다음 리소스는 AEM Mobile으로 업로드할 Adobe Experience Manager(AEM)에서 콘텐츠를 내보내는 방법에 대해 설명합니다.
 
-아티클에 내보내거나 업로드해야 하는 콘텐츠가 있습니다. 이 콘텐츠 중 일부를 아티클 간에 공유할 수 있습니다.
+문서에 내보내고 업로드해야 하는 컨텐츠가 있습니다. 이 컨텐츠 중 일부는 문서 간에 공유할 수 있습니다.
 
-[ContentSync](/help/mobile/mobile-ondemand-contentsync.md)를 사용하여 내용을 함께 모으고 ***공유 리소스*** 패키지를 만듭니다.
+[ContentSync](/help/mobile/mobile-ondemand-contentsync.md)를 사용하여 컨텐츠를 함께 수집하고 ***공유 리소스*** 패키지를 만듭니다.
 
-장치에서 속성 정적 렌더링에 필요한 모든 콘텐츠와 아티클을 내보내도록 **&lt;dps-exportTemplate>/dps-article>**&#x200B;에 있는 ContentSync 구성을 구성해야 합니다.
+**&lt;dps-exportTemplate>/dps-article>**&#x200B;에 있는 ContentSync 구성은 장치의 속성 정적 렌더링에 필요한 모든 콘텐츠와 문서를 내보내도록 구성해야 합니다.
 
 >[!CAUTION]
 >
->아래 단계를 수행하여 샘플 공유 리소스를 볼 수 있습니다(있는 경우에만).
+>다음 권한이 있는 경우에만 아래 단계를 수행하여 샘플 공유 리소스를 볼 수 있습니다.
 >
 >* 샘플 컨텐츠 설치
->* aem 인스턴스 실행
->* 사용자 지정 컨텍스트 또는 다른 포트가 구성되지 않음
+>* AEM 인스턴스 실행
+>* 구성된 사용자 지정 컨텍스트 또는 다른 포트 없음
 
 >
 
@@ -65,5 +64,4 @@ AEM Mobile 사용자는 컨텐츠 동기화를 사용하여 라이브 컨텐츠�
 
 >[!NOTE]
 >
->아티클 콘텐츠가 변경되면 아티클을 AEM Mobile On-demand Services으로 업로드하거나 내보내야 합니다.
-
+>문서 컨텐츠가 변경되면 문서를 AEM Mobile On-demand Services에 업로드하거나 내보내야 합니다.
