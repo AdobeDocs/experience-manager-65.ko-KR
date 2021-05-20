@@ -1,25 +1,24 @@
 ---
-title: 페이지 추적기 사용 및 웹 페이지에 코드 포함
-description: Adobe Analytics에서 자산 관련 사용 데이터를 캡처할 수 있도록 페이지 추적기를 포함하고 웹 사이트 코드에 JavaScript 코드를 포함하는 방법을 알아봅니다.
+title: 웹 페이지에 페이지 추적기 및 포함 코드 사용
+description: Adobe Analytics이 자산에 대한 사용 데이터를 캡처할 수 있도록 웹 사이트 코드에 페이지 추적기 및 JavaScript 코드를 포함하는 방법을 알아봅니다.
 contentOwner: AG
 role: Architect, Administrator
-feature: Asset Reports
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: 자산 보고서
+exl-id: 14d02015-df00-4566-a098-de76eaf42605
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '178'
 ht-degree: 6%
 
 ---
 
-
 # 웹 페이지에 페이지 추적기 및 포함 코드 사용 {#using-page-tracker-and-embed-code-in-web-pages}
 
-페이지 추적기는 Adobe Analytics이 이러한 웹 사이트의 [!DNL Adobe Experience Manager Assets]에 대한 사용 데이터를 캡처할 수 있도록 제3자 웹 사이트의 코드에 포함하는 JavaScript 코드 조각입니다.
+페이지 추적기는 Adobe Analytics이 이러한 웹 사이트에서 [!DNL Adobe Experience Manager Assets] 주위의 사용 데이터를 캡처할 수 있도록 타사 웹 사이트의 코드에 포함하는 JavaScript 코드 부분입니다.
 
-클릭 등과 같은 자산 관련 이벤트를 캡처하려면 타사 웹 사이트의 코드에 포함 코드를 포함시켜야 합니다.
+자산에만 해당하는 클릭 등과 같은 이벤트를 캡처하려면 타사 웹 사이트의 코드에 포함 코드를 포함합니다.
 
-다음 샘플 코드는 페이지 추적기 코드와 포함 코드를 모두 포함하는 웹 페이지의 모양을 표시합니다.
+다음 샘플 코드는 페이지 추적기 코드와 포함 코드를 모두 포함하는 웹 페이지의 모습을 보여줍니다.
 
 ```html
 <!DOCTYPE html>
@@ -61,9 +60,9 @@ ht-degree: 6%
 </html>
 ```
 
-## 페이지 추적기 코드 추가 {#adding-page-tracker-code}
+## 페이지 추적기 코드 {#adding-page-tracker-code} 추가
 
-웹 사이트 코드의 머리글 섹션 내에 페이지 추적기 코드를 추가합니다. 다음 코드 조각은 샘플 웹 페이지에 포함된 페이지 추적기 코드를 표시합니다.
+웹 사이트 코드의 헤더 섹션 내에 페이지 추적기 코드를 추가합니다. 다음 코드 조각은 샘플 웹 페이지에 포함된 페이지 추적기 코드를 표시합니다.
 
 ```xml
  <head>
@@ -81,9 +80,9 @@ ht-degree: 6%
  </head>
 ```
 
-## 포함 코드 {#add-embed-code} 추가
+## 포함 코드 추가 {#add-embed-code}
 
-웹 사이트 코드의 본문 내에 포함 코드를 추가합니다. 다음 코드 조각은 샘플 웹 페이지에 포함된 포함 코드를 표시합니다.
+웹 사이트 코드 본문에 포함 코드를 추가합니다. 다음 코드 조각은 샘플 웹 페이지에 포함된 포함 코드를 표시합니다.
 
 ```xml
 <body>
