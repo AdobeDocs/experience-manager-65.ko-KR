@@ -1,20 +1,19 @@
 ---
-title: Adobe Experience Manager(AEM) 및 웹 접근성 가이드라인
-description: AEM(Adobe Experience Manager) 및 웹 접근성 지침 소개
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+title: Adobe Experience Manager(AEM) 및 웹 액세스 가능성 지침
+description: Adobe Experience Manager(AEM) 및 웹 액세스 가능성 지침 소개
+exl-id: db8785b9-09eb-444a-addc-74c520e710a9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 70%
 
 ---
 
-
 # AEM 및 웹 접근성 지침{#aem-and-the-web-accessibility-guidelines}
 
-장애나 제한 사항에 관계없이 웹 컨텐츠를 타겟 대상자가 가능한 한 이용할 수 있도록 설계해야 할 많은 사회적, 경제적 및 법적 동기가 있습니다. 따라서 AEM(Adobe Experience Manager)을 통한 웹 접근성은 우수한 웹 디자인에서 점점 더 중요한 역할을 하고 있습니다.
+장애나 제한 사항에 관계없이 웹 컨텐츠를 타겟 대상자가 가능한 한 이용할 수 있도록 설계해야 할 많은 사회적, 경제적 및 법적 동기가 있습니다. 따라서 AEM(Adobe Experience Manager)을 사용한 웹 액세스 가능성은 좋은 웹 디자인에서 점점 더 중요해지고 있습니다.
 
-AEM에 영향을 미치는 액세스 가능한 웹 사이트 및 컨텐츠 제작:
+AEM에 영향을 주는 액세스 가능한 웹 사이트 및 컨텐츠 제작:
 
 * 액세스 가능성 기능이 올바로 활성화되도록 AEM을 구성할 책임이 있는 관리자
 
@@ -24,7 +23,7 @@ AEM에 영향을 미치는 액세스 가능한 웹 사이트 및 컨텐츠 제�
 
 * 템플릿 개발자도 웹 사이트 디자인을 구현할 때 이러한 문제를 알고 있어야 합니다.
 
-Adobe Experience Manager은 [World Wide Web 컨소시엄](#world-wide-web-consortium)에서 제공하는 [guidelines](#wcag-accessibility-guidelines)와 연동됩니다.
+Adobe Experience Manager은 [World Wide Web Consortium](#world-wide-web-consortium)에서 제공하는 [guidelines](#wcag-accessibility-guidelines)에서 작동합니다.
 
 >[!NOTE]
 >
@@ -48,11 +47,11 @@ WCAG 2.1은 [액세스 가능성 수준과 이를 준수하는 방법에 대한 
 
 * [액세스 가능한 컨텐츠 만들기](/help/sites-authoring/creating-accessible-content.md)에서는 AEM과 어떻게 관련되는지를 자세히 설명합니다.
 
-* [액세스 가능한 사이트 제작을 위한 리치 텍스트 편집기 ](/help/sites-administering/rte-accessible-content.md)
-구성관리자가 액세스 가능한 컨텐츠를 만들기 위해 AEM을 구성할 수 있는 방법에 대한 지침
+* [액세스 가능한 사이트 생성을 위한 리치 텍스트 ](/help/sites-administering/rte-accessible-content.md)
+편집기 구성관리자가 액세스 가능한 컨텐츠를 만들기 위해 AEM을 구성하는 방법에 대한 지침입니다.
 
 * [액세스 가능한 적응형 ](/help/forms/using/creating-accessible-adaptive-forms.md)
-양식 만들기Adobe Experience Manager(AEM)에는 다양한 기능을 가진 사용자를 위한 적응형 양식의 유용성을 향상시켜주는 다양한 기능과 기능이 포함되어 있습니다. 또한 이 솔루션은 양식 작성자가 액세스 가능한 적응형 양식을 만드는 데 도움이 됩니다.
+양식 만들기AEM(Adobe Experience Manager)에는 다양한 기능을 가진 사용자를 위한 적응형 양식의 유용성을 향상시키는 많은 기능이 포함되어 있습니다. 또한 이 솔루션은 양식 작성자가 액세스 가능한 적응형 양식을 만드는 데 도움이 됩니다.
 
 >[!NOTE]
 >
@@ -61,4 +60,3 @@ WCAG 2.1은 [액세스 가능성 수준과 이를 준수하는 방법에 대한 
 ## Adobe에서의 액세스 가능성 {#accessibility-at-adobe}
 
 자세한 내용은 [Adobe 액세스 가능성 리소스 센터](https://www.adobe.com/accessibility/)에서 확인하십시오.
-
