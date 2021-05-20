@@ -1,30 +1,29 @@
 ---
 title: 적응형 양식 키워드
 seo-title: 적응형 양식 키워드
-description: 이러한 예약어는 적응형 양식에 식별자로 사용할 수 없습니다.
-seo-description: 이러한 예약어는 적응형 양식에 식별자로 사용할 수 없습니다.
+description: 적응형 양식에서는 이러한 예약된 단어를 식별자로 사용할 수 없습니다.
+seo-description: 적응형 양식에서는 이러한 예약된 단어를 식별자로 사용할 수 없습니다.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: 적응형 양식
+exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 5%
 
 ---
 
-
 # 적응형 양식 키워드 {#adaptive-forms-keywords}
 
-적응형 양식 키워드는 적응형 양식에 특별한 의미를 갖는 사전 정의된 예약 식별자입니다. 이러한 키워드를 응용 양식에 식별자로 사용할 수는 없습니다. 다음 표는 적응형 양식의 예약된 식별자인 모든 키워드를 나열합니다.
+적응형 양식 키워드는 적응형 양식에 특별한 의미가 있는 사전 정의된 예약된 식별자입니다. 적응형 양식에서는 이러한 키워드를 식별자로 사용할 수 없습니다. 다음 표에는 적응형 양식에 대해 예약된 식별자인 모든 키워드가 나열되어 있습니다.
 
 <table>
  <tbody>
   <tr>
-   <td><p>불행</p> </td>
+   <td><p>부각</p> </td>
    <td><p>getOnOffValues</p> </td>
    <td><p>minOccurs</p> </td>
   </tr>
@@ -51,7 +50,7 @@ ht-degree: 5%
   <tr>
    <td><p>resetData</p> </td>
    <td><p>runPendingExpressions</p> </td>
-   <td><p>반복</p> </td>
+   <td><p>반복 가능</p> </td>
   </tr>
   <tr>
    <td><p>calcExp</p> </td>
@@ -66,7 +65,7 @@ ht-degree: 5%
   <tr>
    <td><p>valueCommitScript</p> </td>
    <td><p>autoSaveStart</p> </td>
-   <td><p>visit</p> </td>
+   <td><p>방문</p> </td>
   </tr>
   <tr>
    <td><p>validateExp</p> </td>
@@ -84,7 +83,7 @@ ht-degree: 5%
    <td><p>setAttribute</p> </td>
   </tr>
   <tr>
-   <td><p>formattedValue</p> </td>
+   <td><p>formatValue</p> </td>
    <td><p>xdpRef</p> </td>
    <td><p>getGuideProp</p> </td>
   </tr>
@@ -109,7 +108,7 @@ ht-degree: 5%
    <td><p>templateId</p> </td>
   </tr>
   <tr>
-   <td><p>manualMessage</p> </td>
+   <td><p>mandatoryMessage</p> </td>
    <td><p>multiSelect</p> </td>
    <td>&gt;<p>id</p> </td>
   </tr>
@@ -131,12 +130,12 @@ ht-degree: 5%
   <tr>
    <td><p>너비</p> </td>
    <td><p>buttonText</p> </td>
-   <td><p>index</p> </td>
+   <td><p>색인</p> </td>
   </tr>
   <tr>
    <td><p>높이</p> </td>
    <td><p>showComment</p> </td>
-   <td><p>visible</p> </td>
+   <td><p>표시</p> </td>
   </tr>
   <tr>
    <td><p>cssClassName</p> </td>
@@ -241,4 +240,4 @@ ht-degree: 5%
  </tbody>
 </table>
 
-위에 나열된 키워드 외에도 [적응형 양식 JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63)과 유사한 이름을 사용하지 마십시오.
+위에 나열된 키워드 외에도 [적응형 양식 JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63)와 유사한 이름을 사용하지 마십시오.
