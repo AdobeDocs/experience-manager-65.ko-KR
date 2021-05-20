@@ -1,18 +1,17 @@
 ---
 title: WCAG 2.1에 대한 빠른 안내서
 description: WCAG 2.1에 대한 빠른 안내서
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1770'
 ht-degree: 99%
 
 ---
 
-
 # WCAG 2.1에 대한 빠른 안내서{#quick-guide-to-wcag}
 
-AEM(Adobe Experience Manager)은 웹 컨텐츠 액세서빌러티 지침 준수를 극대화할 수 있도록 개발되었습니다.
+Adobe Experience Manager(AEM)은 웹 컨텐츠 액세스 가능성 지침을 최대한 준수하기 위해 개발되었습니다.
 
 [웹 컨텐츠 액세스 가능성 지침(WCAG) 버전 2.1](https://www.w3.org/TR/WCAG/)은 [World Wide Web Consortium(W3C)](https://www.w3.org/)에서 [Web Accessibility Initiative(WAI)](https://www.w3.org/WAI/)에 따라 작성한 국제 공인 지침입니다.
 
