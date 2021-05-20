@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
-feature: Content Fragments
+feature: 콘텐츠 조각
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 99%
+source-wordcount: '1746'
+ht-degree: 100%
 
 ---
-
 
 # 변형 - 조각 컨텐츠 작성{#variations-authoring-fragment-content}
 
@@ -382,4 +381,3 @@ Markdown을 사용하면 텍스트 서식을 지정할 수 있습니다. 다음�
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. **동기화**&#x200B;를 선택합니다. 변형이 업데이트되고 표시됩니다.
-
