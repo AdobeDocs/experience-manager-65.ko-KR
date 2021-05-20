@@ -9,16 +9,15 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
-feature: Content Fragments
+feature: 콘텐츠 조각
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 76f3a684-027d-4822-9eb4-220fc96956e3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '755'
 ht-degree: 96%
 
 ---
-
 
 # 컨텐츠 조각 모델{#content-fragment-models}
 
@@ -32,7 +31,7 @@ ht-degree: 96%
 
 컨텐츠 조각 모델을 활성화하려면 필요한 단계가 있습니다.
 
-* [구성 브라우저](/help/sites-administering/configurations.md)에서 컨텐츠 조각 모델을 사용할 수 있습니다.
+* [구성 브라우저](/help/sites-administering/configurations.md)에서 컨텐츠 조각 모델을 사용할 수 있도록 설정
 * 자산 폴더에 구성 적용
 
 ### 구성 관리자에서 컨텐츠 조각 모델을 사용할 수 있도록 설정 {#enable-content-fragment-models-in-configuration-manager}
@@ -161,4 +160,3 @@ ht-degree: 96%
 
    >[!NOTE]
    모델이 아직 게시되지 않은 컨텐츠 조각을 게시하는 경우 선택 목록에 이것이 표시되고 모델이 조각과 함께 게시됩니다.
-
