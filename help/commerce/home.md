@@ -1,22 +1,21 @@
 ---
-title: AEM 컨텐츠 및 상거래
-description: AEM 컨텐츠 및 커머스 자가 도움말 리소스 및 설명서 링크
-translation-type: tm+mt
+title: AEM Content 및 Commerce
+description: AEM 컨텐츠 및 Commerce 자습 리소스 및 설명서 링크
 source-git-commit: 809789d268deb4d77bbb5101265a1a0d7268b748
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
 
-# AEM 컨텐트 및 상거래 {#commerce-guide}
+# AEM Content 및 Commerce {#commerce-guide}
 
-이 페이지에는 AEM Commerce와 관련된 자가 도움말 리소스가 나열됩니다.
+이 페이지에는 AEM Commerce와 관련된 자습 리소스들이 나열됩니다.
 
 >[!NOTE]
 >
->AEM이 Cloud Service인 AEM 컨텐트 및 상거래의 경우 [AEM 컨텐트 및 상거래](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)를 참조하십시오.
+>AEM을 Cloud Service으로 사용하는 AEM 컨텐츠 및 상거래에 대해서는 [AEM 컨텐츠 및 상거래](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)를 참조하십시오.
 
 
 ## 주요 상거래 문서 {#key-articles}
