@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
-
-# 동적으로 드롭 다운 목록 {#dynamically-populating-drop-down-lists} 채우기
+# 동적으로 드롭다운 목록 채우기 {#dynamically-populating-drop-down-lists}
 
 ## 전제 조건 {#prerequisites}
 
@@ -29,14 +28,14 @@ ht-degree: 0%
 
 ## 드롭다운 목록을 동적으로 채우는 절차 {#procedure-to-dynamically-populate-drop-down-lists}
 
-**국가** 드롭다운 목록에서 선택한 값을 기준으로 **상태** 드롭다운 목록을 채울 시나리오를 생각해 보십시오. **국가** 드롭다운 목록에서 호주를 선택하면 **주** 드롭다운 목록에는 호주 내의 상태가 표시됩니다. 다음 절차에서는 이 작업을 수행하는 방법에 대해 설명합니다.
+**국가** 드롭다운 목록에서 선택한 값을 기반으로 **상태** 드롭다운 목록을 채울 시나리오를 생각해 보십시오. **국가** 드롭다운 목록에서 호주를 선택하면 **주** 드롭다운 목록에 호주 내의 상태가 표시됩니다. 다음 절차에서는 이 작업을 수행하는 방법을 설명합니다.
 
 1. 다음 모듈로 프로젝트를 만듭니다.
 
-   * 드롭다운을 채우는 논리를 포함하는 번들(이 경우 서블릿).
-   * .jar 파일을 포함하고 드롭다운 리소스를 포함하는 컨텐츠입니다. 서블릿은 이 리소스를 가리킵니다.
+   * 드롭다운을 채우는 로직을 포함하는 번들이며 이 경우 서블릿입니다.
+   * .jar 파일을 포함하고 드롭다운 리소스가 있는 컨텐츠입니다. 서블릿은 이 리소스를 가리킵니다.
 
-1. 요청 매개 변수 Country를 기반으로 서블릿을 작성하여 해당 국가 내의 상태 이름을 포함하는 배열을 반환합니다.
+1. 국가 내의 상태 이름을 포함하는 배열을 반환하는 요청 매개 변수 Country를 기반으로 서블릿을 작성합니다.
 
    ```java
    @Component(metatype = false)
@@ -147,16 +146,16 @@ ht-degree: 0%
    }
    ```
 
-1. 앱의 특정 폴더 계층 아래에 드롭다운 노드를 만듭니다(예: /apps/myfolder/demo 아래에 노드 만들기). 노드의 `sling:resourceType` 매개 변수가 서블릿이 가리키는 매개 변수와 동일한지 확인합니다(/apps/populatedropdown).
+1. 앱의 특정 폴더 계층 구조에 드롭다운 노드를 만듭니다(예를 들어 /apps/myfolder/demo 아래에 노드를 만듭니다). 노드의 `sling:resourceType` 매개 변수가 서블릿이 가리키는 값과 동일한지 확인합니다(/apps/populatedropdown).
 
    ![드롭다운 노드 만들기](assets/dropdown-node.png)
 
-1. 컨텐트 노드를 패키지하고 .jar 파일을 특정 위치(예: /apps/myfolder/demo/install/)에 포함합니다. 서버에 동일한 파일을 배포합니다.
-1. 적응형 양식을 만들고 거기에 국가 및 상태를 두 개의 드롭다운 목록을 추가합니다. 국가 목록에는 국가 이름이 포함될 수 있습니다. 상태 목록은 첫 번째 목록에서 선택하는 국가의 상태 이름을 동적으로 채울 수 있습니다.
+1. 컨텐츠 노드를 패키지하고 .jar 파일을 특정 위치(예: /apps/myfolder/demo/install/)에 포함합니다. 동일한 파일을 서버에 배포합니다.
+1. 적응형 양식을 만들고 여기에 국가 및 주, 두 개의 드롭다운 목록을 추가합니다. 국가 목록에는 국가 이름이 포함될 수 있습니다. 상태 목록은 첫 번째 목록에서 선택한 국가의 상태 이름을 동적으로 채울 수 있습니다.
 
-   국가 목록에 표시할 국가 이름을 추가합니다. 상태 목록에서 국가 목록에 있는 국가 이름을 기반으로 스크립트를 추가하여 채웁니다.
+   국가 목록에 표시할 국가 이름을 추가합니다. 상태 목록에서 국가 목록의 국가 이름을 기반으로 스크립트를 추가하여 채웁니다.
 
-   ![국가 ](assets/country-dropdown.png) ![이름 추가국가 이름](assets/state-dropdown.png) ![을 채우는 스크립트 추가국가 및 상태 드롭다운 목록을 수집하여](assets/2dropdowns.png)
+   ![국가 ](assets/country-dropdown.png) ![이름 추가주 이름을 ](assets/state-dropdown.png) ![채울 스크립트 추가국가 및 상태 드롭다운 목록을 수집하십시오](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(
@@ -174,6 +173,6 @@ ht-degree: 0%
    .responseText);
    ```
 
-위의 코드가 구현된 샘플 적응형 양식(데모/AFdemo)이 포함된 컨텐츠 패키지입니다.
+위의 코드가 구현된 샘플 적응형 양식(데모/AFdemo)이 포함된 컨텐츠 패키지.
 
 [파일 가져오기](assets/dropdown-demo-content-1.0.1-snapshot.zip)
