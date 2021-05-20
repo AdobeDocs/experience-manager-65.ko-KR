@@ -1,26 +1,25 @@
 ---
-title: Acrobat Reader DC 확장 서비스Java API 빠른 시작(SOAP)
-seo-title: Acrobat Reader DC 확장 서비스Java API 빠른 시작(SOAP)
-description: Acrobat Reader DC Extensions 서비스를 사용하여 PDF 문서에 사용 권한을 적용하고, PDF 문서에서 사용 권한을 제거하며, 사용 권한을 사용 권한이 있는 PDF 문서 LoanUsageRights.pdf에 사용 권한을 적용하는 데 사용되는 자격 증명에 대한 정보를 검색할 수 있습니다.
-seo-description: Acrobat Reader DC Extensions 서비스를 사용하여 PDF 문서에 사용 권한을 적용하고, PDF 문서에서 사용 권한을 제거하며, 사용 권한을 사용 권한이 있는 PDF 문서 LoanUsageRights.pdf에 사용 권한을 적용하는 데 사용되는 자격 증명에 대한 정보를 검색할 수 있습니다.
+title: Acrobat Reader DC 확장 서비스 Java API 빠른 시작(SOAP)
+seo-title: Acrobat Reader DC 확장 서비스 Java API 빠른 시작(SOAP)
+description: Acrobat Reader DC 확장 서비스를 사용하여 PDF 문서에 사용 권한을 적용하고, PDF 문서에서 사용 권한을 제거하고, 사용 권한을 LoanUsageRights.pdf라는 권한 사용 PDF 문서에 적용하는 데 사용되는 자격 증명에 대한 정보를 검색합니다.
+seo-description: Acrobat Reader DC 확장 서비스를 사용하여 PDF 문서에 사용 권한을 적용하고, PDF 문서에서 사용 권한을 제거하고, 사용 권한을 LoanUsageRights.pdf라는 권한 사용 PDF 문서에 적용하는 데 사용되는 자격 증명에 대한 정보를 검색합니다.
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
 content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 82f0b6c1-ca0c-48c7-b7f6-b54704ac0830
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-
 # Acrobat Reader DC 확장 서비스 Java API 빠른 시작(SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
-다음 빠른 시작을 Acrobat Reader DC Extensions 서비스에 사용할 수 있습니다.
+Acrobat Reader DC 확장 서비스에 다음 빠른 시작을 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 사용 권한 적용](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
@@ -32,11 +31,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM Forms을 사용한 프로그래밍에 있는 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM Forms으로 프로그래밍에 있는 빠른 시작은 Forms 서버 운영 체제를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}을 사용하여 사용 권한 적용
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}를 사용하여 사용 권한 적용
 
-다음 Java 코드 예는 *Loan.pdf*&#x200B;라는 PDF 문서에 사용 권한을 적용합니다. 권한이 활성화된 PDF 문서는 *LoanUsageRights.pdf*&#x200B;라는 PDF 파일로 저장됩니다. 다음 사용 권한이 이 PDF 문서에 적용됩니다.`enabledComments`, `enabledFormFillIn` 및 `enabledDigitalSignatures`. (PDF 문서에 사용 권한 적용](/help/forms/developing/assigning-usage-rights.md)을 참조하십시오.)[
+다음 Java 코드 예는 *Loan.pdf*&#x200B;라는 PDF 문서에 사용 권한을 적용합니다. 권한 사용 PDF 문서는 *LoanUsageRights.pdf*&#x200B;라는 PDF 파일로 저장됩니다. 다음 사용 권한이 이 PDF 문서에 적용됩니다.`enabledComments`, `enabledFormFillIn` 및 `enabledDigitalSignatures` ([PDF 문서에 사용 권한 적용](/help/forms/developing/assigning-usage-rights.md) 참조)
 
 
 ```java
@@ -148,7 +147,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}를 사용하여 PDF 문서에서 사용 권한 제거
 
-다음 Java 코드 예제는 *LoanUsageRights.pdf*&#x200B;라는 권한이 활성화된 PDF 문서에서 사용 권한을 제거합니다. (PDF 문서](/help/forms/developing/assigning-usage-rights.md)에서 사용 권한 제거를 참조하십시오.)[
+다음 Java 코드 예제에서는 *LoanUsageRights.pdf*&#x200B;라는 권한이 활성화된 PDF 문서에서 사용 권한을 제거합니다. ([PDF 문서에서 사용 권한 제거](/help/forms/developing/assigning-usage-rights.md) 참조)
 
 ```java
  /* 
@@ -248,7 +247,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}를 사용하여 자격 증명 정보 검색
 
-다음 Java 코드 예제에서는 사용 권한을 사용 가능한 PDF 문서 *LoanUsageRights.pdf*&#x200B;에 적용하는 데 사용되는 자격 증명에 대한 정보를 검색합니다. ([자격 증명 정보 검색](/help/forms/developing/assigning-usage-rights.md) 참조)
+다음 Java 코드 예는 *LoanUsageRights.pdf*&#x200B;라는 권한이 활성화된 PDF 문서에 사용 권한을 적용하는 데 사용되는 자격 증명에 대한 정보를 검색합니다. ( [자격 증명 정보 검색](/help/forms/developing/assigning-usage-rights.md) 참조)
 
 ```java
  /* 
@@ -356,4 +355,3 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  } 
  
 ```
-
