@@ -3,19 +3,18 @@ title: 분석을 얻기 위해 자산 통찰력을 구성합니다.
 description: ' [!DNL Adobe Experience Manager Assets]에서 자산 인사이트를 구성합니다.'
 contentOwner: AG
 role: Architect, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: 자산 통찰력,자산 보고서
+exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '253'
 ht-degree: 1%
 
 ---
 
-
 # 자산 인사이트 구성 {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] 제3자 웹 사이트에서 사용하는 디지털 자산에 대한 사용 데이터를  [!DNL Adobe Analytics] 자산 인사이트에서 이 데이터를 검색하고 인사이트를 생성하려면 먼저 Adobe Analytics과 통합할 기능을 구성합니다.
+[!DNL Adobe Experience Manager Assets] 제3자 웹 사이트에서 사용하는 디지털 자산에 대한 사용 데이터를  [!DNL Adobe Analytics] 자산 인사이트에서 이 데이터를 검색하고 인사이트를 생성하려면 먼저 [!DNL Adobe Analytics]과(와) 통합하도록 기능을 구성합니다. 이 기능을 사용하려면 [!DNL Adobe Analytics] 라이선스를 별도로 구입하십시오. [!DNL Managed Services]의 고객은 [!DNL Experience Manager]과(와) 함께 번들로 포함된 [!DNL Analytics] 라이센스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하십시오.
 
 >[!NOTE]
 >
