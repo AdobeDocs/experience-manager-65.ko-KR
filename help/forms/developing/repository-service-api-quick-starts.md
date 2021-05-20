@@ -1,8 +1,8 @@
 ---
 title: 저장소 서비스 API 빠른 시작
 seo-title: 저장소 서비스 API 빠른 시작
-description: AEM Forms 저장소 서비스를 사용하여 폴더를 만들고, 리소스를 작성하고, 리소스를 나열하고, 리소스를 읽고, 리소스를 업데이트하고, 리소스를 검색하고, 리소스 간 관계를 만들고, 리소스를 잠그고, 액세스 제어 목록을 관리하고, 리소스를 삭제합니다.
-seo-description: AEM Forms 저장소 서비스를 사용하여 폴더를 만들고, 리소스를 작성하고, 리소스를 나열하고, 리소스를 읽고, 리소스를 업데이트하고, 리소스를 검색하고, 리소스 간 관계를 만들고, 리소스를 잠그고, 액세스 제어 목록을 관리하고, 리소스를 삭제합니다.
+description: AEM Forms 저장소 서비스를 사용하여 폴더를 만들고, 리소스를 작성하고, 리소스를 나열하고, 리소스를 읽고, 리소스를 업데이트하고, 리소스를 검색하고, 리소스 간에 관계를 만들고, 리소스를 잠그고, 액세스 제어 목록을 관리하고, 리소스를 삭제할 수 있습니다.
+seo-description: AEM Forms 저장소 서비스를 사용하여 폴더를 만들고, 리소스를 작성하고, 리소스를 나열하고, 리소스를 읽고, 리소스를 업데이트하고, 리소스를 검색하고, 리소스 간에 관계를 만들고, 리소스를 잠그고, 액세스 제어 목록을 관리하고, 리소스를 삭제할 수 있습니다.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -10,26 +10,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 703b6798-d40f-4769-96fc-e440090ca983
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
-
 # 저장소 서비스 API 빠른 시작 {#repository-service-api-quick-starts}
 
-**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
+**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms용입니다.**
 
-다음 빠른 시작을 AEM Forms 저장소 서비스에 사용할 수 있습니다.
+AEM Forms 저장소 서비스에 다음 빠른 시작을 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 폴더 만들기](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 리소스 쓰기](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 리소스 목록](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 리소스 나열](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 리소스 읽기](repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
@@ -47,11 +46,11 @@ ht-degree: 0%
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다
 
-**애플리케이션/양식 애플리케이션**
+**응용 프로그램/FormsApplication**
 
-대부분의 AEM Forms 리포지토리 서비스는 빠른 시작을 다음 그림과 같이 `Applications/FormsApplication,` 응용 프로그램과 상호 작용합니다.
+대부분의 AEM Forms 저장소 서비스 빠른 시작은 다음 그림과 같이 `Applications/FormsApplication,` 응용 프로그램과 상호 작용합니다.
 
-FormsFolder 폴더는 AEM Forms 저장소의 위치입니다. 예를 들어 프로그래밍 방식으로 이 폴더를 `Applications/FormsApplication`에 추가할 수 있습니다. ( [빠른 시작(SOAP 모드)을 참조하십시오.)Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)을 사용하여 폴더 만들기.)
+FormsFolder 폴더는 AEM Forms 저장소의 위치입니다. 예를 들어 프로그래밍 방식으로 이 폴더를 `Applications/FormsApplication`에 추가할 수 있습니다. ( [빠른 시작(SOAP 모드)을 참조하십시오.)Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)를 사용하여 폴더 만들기.)
 
 AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
 
@@ -59,15 +58,15 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
 
 >[!NOTE]
 >
->웹 브라우저를 사용하여 AEM Forms 저장소를 검색할 수 있습니다. 저장소를 찾아보려면 웹 브라우저 `https://[server name]:[server port]/repository`에 다음 URL을 입력합니다. 웹 브라우저를 사용하여 빠른 시작 결과를 확인할 수 있습니다. 예를 들어 AEM Forms 저장소에 컨텐츠를 추가하는 경우 웹 브라우저에서 컨텐츠를 볼 수 있습니다.
+>웹 브라우저를 사용하여 AEM Forms 저장소를 찾아볼 수 있습니다. 저장소를 찾아보려면 웹 브라우저 `https://[server name]:[server port]/repository`에 다음 URL을 입력합니다. 웹 브라우저를 사용하여 빠른 시작 결과를 확인할 수 있습니다. 예를 들어 AEM Forms 리포지토리에 컨텐츠를 추가하는 경우 웹 브라우저에서 컨텐츠를 볼 수 있습니다.
 
 >[!NOTE]
 >
->Applications/FormsApplication이 기본적으로 없습니다. 빠른 시작을 따르려면 워크벤치를 사용하여 이 애플리케이션을 만드십시오. 워크벤치를 사용하여 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [프로세스 디자인 시작](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html)을 참조하십시오.
+>기본적으로 Applications/FormsApplication이 없습니다. 빠른 시작을 함께 수행하려면 Workbench를 사용하여 이 응용 프로그램을 만드십시오. Workbench를 사용하여 응용 프로그램을 만드는 방법에 대한 자세한 내용은 [프로세스 디자인 시작](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html)을 참조하십시오.
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}을 사용하여 폴더 만들기
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}를 사용하여 폴더 만들기
 
-다음 Java 코드 예제에서는 `/Applications/FormsApplication/1.0/` 위치에 *FormsFolder*&#x200B;라는 폴더를 만듭니다. ([폴더 만들기](/help/forms/developing/aem-forms-repository.md#creating-folders)를 참조하십시오.)
+다음 Java 코드 예제에서는 *FormsFolder*&#x200B;라는 폴더를 다음 위치 `/Applications/FormsApplication/1.0/`에 만듭니다. ([폴더 만들기](/help/forms/developing/aem-forms-repository.md#creating-folders)를 참조하십시오.)
 
 ```java
  /*
@@ -171,9 +170,9 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-writing-a-resource-using-the-java-api}을(를) 사용하여 리소스 쓰기
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-writing-a-resource-using-the-java-api}를 사용하여 리소스 쓰기
 
-다음 Java 코드 예제에서는 보관소에 *loan.xdp*&#x200B;라는 리소스를 씁니다. 리소스가 `/Applications/FormsApplication/1.0/FormsFolder` 위치에 추가됩니다. ([리소스 쓰기](/help/forms/developing/aem-forms-repository.md#writing-resources)를 참조하십시오.)
+다음 Java 코드 예제에서는 리포지토리에 *loan.xdp*&#x200B;라는 리소스를 작성합니다. 리소스가 `/Applications/FormsApplication/1.0/FormsFolder` 위치에 추가됩니다. ([리소스 쓰기](/help/forms/developing/aem-forms-repository.md#writing-resources)를 참조하십시오.)
 
 ```java
  /*
@@ -299,9 +298,9 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-listing-resources-using-the-java-api}을(를) 사용하여 리소스 나열
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-listing-resources-using-the-java-api}를 사용하여 리소스 나열
 
-다음 Java 코드 예제에서는 `Applications/FormsApplication/1.0/FormsFolder`에 있는 리소스를 나열합니다. ([리소스 목록](/help/forms/developing/aem-forms-repository.md#listing-resources)을 참조하십시오.)
+다음 Java 코드 예제에서는 `Applications/FormsApplication/1.0/FormsFolder`에 있는 리소스를 나열합니다. ([리소스 나열](/help/forms/developing/aem-forms-repository.md#listing-resources) 참조)
 
 ```java
  /*
@@ -398,9 +397,9 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-reading-a-resource-using-the-java-api}을 사용하여 리소스 읽기
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-reading-a-resource-using-the-java-api}를 사용하여 리소스 읽기
 
-다음 Java 코드 예는 보관소에서 *Loan.xdp*&#x200B;라는 리소스를 읽습니다. XDP 파일은 `/Applications/FormsApplication/1.0/FormsFolder/`에 있습니다. ([리소스 읽기](/help/forms/developing/aem-forms-repository.md#reading-resources)를 참조하십시오.)
+다음 Java 코드 예는 저장소에서 *Loan.xdp*&#x200B;라는 리소스를 읽습니다. XDP 파일은 `/Applications/FormsApplication/1.0/FormsFolder/`에 있습니다. ([리소스 읽기](/help/forms/developing/aem-forms-repository.md#reading-resources) 참조)
 
 ```java
  /*
@@ -499,9 +498,9 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-updating-a-resource-using-the-java-api}을 사용하여 리소스 업데이트
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-updating-a-resource-using-the-java-api}를 사용하여 리소스 업데이트
 
-다음 Java 코드 예제에서는 설명을 수정하여 `/Applications/FormsApplication/1.0/FormsFolder`을 업데이트합니다. ([리소스 업데이트](/help/forms/developing/aem-forms-repository.md#updating-resources)를 참조하십시오.)
+다음 Java 코드 예는 해당 설명을 수정하여 `/Applications/FormsApplication/1.0/FormsFolder`을 업데이트합니다. ([리소스 업데이트](/help/forms/developing/aem-forms-repository.md#updating-resources)를 참조하십시오.)
 
 ```java
  /*
@@ -611,9 +610,9 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-searching-for-resources-using-the-java-api}을(를) 사용하여 리소스 검색
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-searching-for-resources-using-the-java-api}를 사용하여 리소스 검색
 
-다음 Java 코드 예제는 `Applications/FormsApplication/1.0/FormsFolder`에서 Roan.xdp를 검색합니다. ([리소스 검색](/help/forms/developing/aem-forms-repository.md#searching-for-resources) 참조)
+다음 Java 코드 예는 `Applications/FormsApplication/1.0/FormsFolder`에서 Loan.xdp를 검색합니다. ([리소스 검색](/help/forms/developing/aem-forms-repository.md#searching-for-resources)을 참조하십시오.)
 
 ```java
  /*
@@ -737,7 +736,7 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}를 사용하여 리소스 간 관계 만들기
 
-다음 Java 코드 예제에서는 AEM Forms 저장소의 두 리소스 간에 관계를 만듭니다. ([리소스 관계 만들기](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)를 참조하십시오.)
+다음 Java 코드 예제에서는 AEM Forms 리포지토리에 있는 두 리소스 간의 관계를 만듭니다. ([리소스 관계 만들기](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships) 참조)
 
 ```java
  /*
@@ -878,7 +877,7 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-locking-a-resource-using-the-java-api}를 사용하여 리소스 잠금
 
-다음 Java 코드 예제에서는 /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp을 잠급니다. ([리소스 잠금](/help/forms/developing/aem-forms-repository.md#locking-resources)을 참조하십시오.)
+다음 Java 코드 예는 /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp 를 잠급니다. ([리소스 잠금](/help/forms/developing/aem-forms-repository.md#locking-resources)을 참조하십시오.)
 
 ```java
  /*
@@ -989,7 +988,7 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}를 사용하여 액세스 제어 목록 관리
 
-다음 Java 코드 예제는 저장소의 ACL(액세스 제어 목록)을 읽고 만듭니다.
+다음 Java 코드 예제에서는 리포지토리에서 ACL(액세스 제어 목록)을 읽고 만듭니다.
 
 ```java
  /*
@@ -1102,9 +1101,9 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}을(를) 사용하여 리소스 삭제
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}를 사용하여 리소스 삭제
 
-다음 Java 코드 예제에서는 `Applications/FormsApplication/1.0/FormsFolder`에서 Roan.xdp를 삭제합니다. 이 XDP 파일이 이 폴더에 없으면 예외가 발생합니다. ([리소스 삭제](/help/forms/developing/aem-forms-repository.md#deleting-resources)를 참조하십시오.)
+다음 Java 코드 예는 `Applications/FormsApplication/1.0/FormsFolder`에서 Loan.xdp를 삭제합니다. 이 XDP 파일이 이 폴더에 없으면 예외가 발생합니다. ([리소스 삭제](/help/forms/developing/aem-forms-repository.md#deleting-resources) 참조)
 
 ```java
  /*
@@ -1216,4 +1215,3 @@ AEM Forms 저장소에 있는 리소스의 경로는 다음과 같습니다.
  
  
 ```
-
