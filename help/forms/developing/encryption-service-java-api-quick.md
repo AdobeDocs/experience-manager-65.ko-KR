@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
-
 
 # 암호화 서비스 Java API 빠른 시작(SOAP) {#encryption-service-java-api-quickstart-soap}
 
@@ -24,7 +23,7 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 암호 기반 암호화 제거](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 인증서를 사용하여 PDF 문서 암호화](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[빠른 시작(SOAP 모드):Java API를 사용하여 인증서로 PDF 문서 암호화](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 인증서 기반 암호화 제거](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
@@ -36,11 +35,11 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms Server를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원되는 경로로 바꿉니다. 마찬가지로 다른 J2EE 응용 프로그램 서버를 사용하는 경우 유효한 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM Forms로 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}를 사용하여 PDF 문서 암호화
 
-다음 Java 코드 예제는 `OpenPassword`의 암호 값으로 *Loan.pdf*&#x200B;라는 PDF 문서를 암호화합니다. 마스터 암호는 `PermissionPassword`입니다. 보안 PDF 문서는 *EncryptLoan.pdf*&#x200B;라는 PDF 파일로 저장됩니다. ([암호](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)를 사용하여 PDF 문서 암호화를 참조하십시오.)
+다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 암호화하고 `OpenPassword`의 암호 값을 사용합니다. 마스터 암호는 `PermissionPassword`입니다. 보안 PDF 문서는 *EncryptLoan.pdf*&#x200B;라는 PDF 파일로 저장됩니다. ([암호로 PDF 문서 암호화](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)를 참조하십시오.)
 
 ```java
  /*
@@ -158,9 +157,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}을(를) 사용하여 암호 기반 암호화 제거
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}를 사용하여 암호 기반 암호화 제거
 
-다음 Java 코드 예제에서는 *EncryptLoan.pdf*&#x200B;라는 PDF 문서에서 암호 기반 암호화를 제거합니다. 암호 기반 암호화를 제거하는 데 사용되는 마스터 암호 값은 *PermissionPassword*&#x200B;입니다. 보안되지 않은 PDF 문서는 *noEncryptionLoan.pdf*&#x200B;라는 PDF 파일로 저장됩니다. ([암호 암호화 제거](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)를 참조하십시오.)
+다음 Java 코드 예제에서는 *EncryptLoan.pdf*&#x200B;라는 PDF 문서에서 암호 기반 암호화를 제거합니다. 암호 기반 암호화를 제거하는 데 사용되는 마스터 암호 값은 *PermissionPassword*&#x200B;입니다. 보안되지 않은 PDF 문서는 *noEncryptionLoan.pdf*&#x200B;라는 PDF 파일로 저장됩니다. ([암호 암호화 제거](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption) 참조)
 
 ```java
  /*
@@ -255,9 +254,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  }
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}를 사용하여 인증서를 사용하여 PDF 문서 암호화
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}를 사용하여 인증서로 PDF 문서 암호화
 
-다음 Java 코드 예제는 *Encryption.cer*&#x200B;라는 인증서로 *Loan.pdf*&#x200B;라는 PDF 문서를 암호화합니다. 암호화된 PDF 문서는 *EncryptLoanCert.pdf*&#x200B;라는 PDF 파일로 저장됩니다. ([인증서](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)를 사용하여 PDF 문서 암호화를 참조하십시오.)
+다음 Java 코드 예제에서는 *Loan.pdf*&#x200B;라는 PDF 문서를 암호화하고 *Encryption.cer*&#x200B;라는 인증서를 사용합니다. 암호화된 PDF 문서는 *EncryptLoanCert.pdf*&#x200B;라는 PDF 파일로 저장됩니다. ([인증서로 PDF 문서 암호화](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates) 참조)
 
 ```java
  /*
@@ -384,9 +383,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}을(를) 사용하여 인증서 기반 암호화 제거
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}를 사용하여 인증서 기반 암호화 제거
 
-다음 Java 코드 예제에서는 *EncryptLoanCert.pdf*&#x200B;라는 PDF 문서에서 인증서 기반 암호화를 제거합니다. 암호화를 제거하는 데 사용되는 공개 키의 별칭은 `Encryption`입니다. 보안되지 않은 PDF 문서는 *noEncryptionLoan.pdf*&#x200B;라는 PDF 파일로 저장됩니다. ([인증서 기반 암호화 제거](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption)를 참조하십시오.)
+다음 Java 코드 예제에서는 *EncryptLoanCert.pdf*&#x200B;라는 PDF 문서에서 인증서 기반 암호화를 제거합니다. 암호화를 제거하는 데 사용되는 공개 키의 별칭은 `Encryption`입니다. 보안되지 않은 PDF 문서는 *noEncryptionLoan.pdf*&#x200B;라는 PDF 파일로 저장됩니다. ([인증서 기반 암호화 제거](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption) 참조)
 
 ```java
  /*
@@ -483,7 +482,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}를 사용하여 암호화된 PDF 문서 잠금 해제
 
-다음 Java 코드 예제에서는 *EncryptLoan.pdf*&#x200B;라는 암호로 암호화된 PDF 문서를 잠금 해제합니다. 자세한 내용은 [암호화된 PDF 문서 잠금 해제](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents)를 참조하십시오.
+다음 Java 코드 예제에서는 *EncryptLoan.pdf*&#x200B;라는 암호로 암호화된 PDF 문서를 잠금 해제합니다. ([암호화된 PDF 문서 잠금 해제](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents) 참조).
 
 ```java
  /*
@@ -577,9 +576,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}을(를) 사용하여 암호화 유형 결정
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}를 사용하여 암호화 유형 확인
 
-다음 Java 코드 예제에서는 *EncryptLoan.pdf*&#x200B;라는 PDF 문서를 보호하는 암호화 유형을 결정합니다. ([암호화 유형 결정](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type)을 참조하십시오.)
+다음 Java 코드 예제에서는 *EncryptLoan.pdf*&#x200B;라는 PDF 문서를 보호하는 암호화 유형을 결정합니다. ([암호화 유형 결정](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type) 참조)
 
 ```java
  /*
@@ -681,4 +680,3 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
  
 ```
-
