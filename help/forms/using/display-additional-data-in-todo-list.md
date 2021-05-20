@@ -1,43 +1,42 @@
 ---
-title: 할 일 목록에 추가 데이터 표시
-seo-title: 할 일 목록에 추가 데이터 표시
-description: LiveCycle 작업 영역의 할 일 목록 표시를 사용자 정의하여 기본 정보 외에 자세한 정보를 표시할 수 있습니다.
-seo-description: LiveCycle 작업 영역의 할 일 목록 표시를 사용자 정의하여 기본 정보 외에 자세한 정보를 표시할 수 있습니다.
+title: ToDo 목록에 추가 데이터 표시
+seo-title: ToDo 목록에 추가 데이터 표시
+description: AEM Forms 작업 공간 의 할 일 목록 표시를 사용자 지정하여 기본 정보 외에 자세한 정보를 표시하는 방법
+seo-description: AEM Forms 작업 공간 의 할 일 목록 표시를 사용자 지정하여 기본 정보 외에 자세한 정보를 표시하는 방법
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
 
 ---
 
+# ToDo 목록에 추가 데이터 표시{#displaying-additional-data-in-todo-list}
 
-# ToDo 목록{#displaying-additional-data-in-todo-list}에 추가 데이터 표시
+기본적으로 AEM Forms 작업 영역 할 일 목록에는 작업 표시 이름과 설명이 표시됩니다. 그러나 만든 날짜, 기한 날짜와 같은 다른 정보를 추가할 수 있습니다. 아이콘을 추가하고 디스플레이 스타일을 변경할 수도 있습니다.
 
-기본적으로 AEM Forms 작업 영역 할 일 목록에는 작업 표시 이름과 설명이 표시됩니다. 그러나 작성 날짜, 마감 날짜 등 다른 정보를 추가할 수 있습니다. 아이콘을 추가하고 표시 스타일을 변경할 수도 있습니다.
+![기본 구성을 보여주는 HTML 작업 공간 할 일 탭 보기](assets/html-todo-list.png)
 
-![기본 구성을 보여주는 HTML 작업 영역 할 일 탭 보기](assets/html-todo-list.png)
+이 문서에서는 ToDo 목록에 각 작업에 대해 표시할 정보를 추가하는 단계에 대해 자세히 설명합니다.
 
-이 문서에서는 ToDo 목록의 각 작업에 대해 표시할 정보를 추가하는 단계에 대해 자세히 설명합니다.
+## {#what-can-be-added}을 추가할 수 있는 항목
 
-## {#what-can-be-added}을(를) 추가할 수 있는 항목
-
-서버에서 보낸 `task.json`에서 사용할 수 있는 정보를 추가할 수 있습니다. 정보를 일반 텍스트로 추가하거나 스타일을 사용하여 정보의 형식을 지정할 수 있습니다.
+서버에서 보낸 `task.json`에 사용 가능한 정보를 추가할 수 있습니다. 정보를 일반 텍스트로 추가하거나 스타일을 사용하여 정보 서식을 지정할 수 있습니다.
 
 JSON 개체 설명에 대한 자세한 내용은 [이](/help/forms/using/html-workspace-json-object-description.md) 문서를 참조하십시오.
 
-## 작업 {#displaying-information-on-a-task}에 대한 정보 표시
+## 작업 {#displaying-information-on-a-task}에 정보 표시
 
-1. AEM Forms 작업 영역 사용자 지정](../../forms/using/generic-steps-html-workspace-customization.md)에 대한 [일반 단계를 따릅니다.
-1. 작업에 대한 추가 정보를 표시하려면 해당 키-값 쌍을 `translation.json` 작업 블록 내에 추가해야 합니다.
+1. AEM Forms 작업 공간 사용자 지정에 대한 [일반 절차](../../forms/using/generic-steps-html-workspace-customization.md)를 따르십시오.
+1. 작업에 대한 추가 정보를 표시하려면 `translation.json` 작업 블록 내에 해당 키-값 쌍을 추가해야 합니다.
 
-   예를 들어, 영어용 `/apps/ws/locales/en-US/translation.json` 변경:
+   예를 들어, 영어 `/apps/ws/locales/en-US/translation.json` 변경:
 
    ```json
    "task" : {
@@ -126,7 +125,7 @@ JSON 개체 설명에 대한 자세한 내용은 [이](/help/forms/using/html-wo
 
 1. 작업에 추가된 정보(속성)에 스타일을 적용할 수 있습니다. 이렇게 하려면 `/apps/ws/css/newStyle.css`에 추가된 새 속성에 대한 스타일 정보를 추가해야 합니다.
 
-   예를 들어 add:
+   예를 들어 추가:
 
    ```css
    .task .taskProperties .stepname{
@@ -136,18 +135,18 @@ JSON 개체 설명에 대한 자세한 내용은 [이](/help/forms/using/html-wo
    }
    ```
 
-## HTML 템플릿 {#adding-entry-in-the-html-template}에 항목 추가
+## HTML 템플릿에 항목 추가 {#adding-entry-in-the-html-template}
 
-마지막으로, 작업에 추가할 각 속성에 대한 개발 패키지에 항목을 포함해야 합니다. 하나를 만들려면 AEM Forms 작업 공간 코드 작성을 참조하십시오.
+마지막으로 작업에 추가할 각 속성에 대한 개발 패키지에 항목을 포함해야 합니다. 만들려면 AEM Forms 작업 공간 코드 작성 을 참조하십시오.
 
 1. 복사 `task.html`:
 
    * 시작: `/libs/ws/js/runtime/templates/`
    * 끝: `/apps/ws/js/runtime/templates/`
 
-1. `/apps/ws/js/runtime/templates/task.html`에 새 정보를 추가합니다.
+1. 새 정보를 `/apps/ws/js/runtime/templates/task.html`에 추가합니다.
 
-   예를 들어 `div class="taskProperties"` 아래에 추가합니다.
+   예를 들어 `div class="taskProperties"` 아래에 를 추가합니다.
 
    ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
