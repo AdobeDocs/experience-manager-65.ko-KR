@@ -1,8 +1,8 @@
 ---
 title: HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기
 seo-title: HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기
-description: HTTP 토큰을 사용하여 SSO(Single Sign On) 인증을 수행하는 Flash Builder을 사용하여 클라이언트 응용 프로그램을 만듭니다. 한 번에 사용자를 인증하고 해당 인증을 사용하여 여러 AEM Forms 작업을 수행할 수 있습니다.
-seo-description: HTTP 토큰을 사용하여 SSO(Single Sign On) 인증을 수행하는 Flash Builder을 사용하여 클라이언트 응용 프로그램을 만듭니다. 한 번에 사용자를 인증하고 해당 인증을 사용하여 여러 AEM Forms 작업을 수행할 수 있습니다.
+description: HTTP 토큰을 사용하여 SSO(Single Sign On) 인증을 수행하는 Flash Builder을 사용하여 클라이언트 응용 프로그램을 만듭니다. 한 번에 작업을 위한 사용자를 인증하고 해당 인증을 사용하여 여러 AEM Forms 작업을 수행합니다.
+seo-description: HTTP 토큰을 사용하여 SSO(Single Sign On) 인증을 수행하는 Flash Builder을 사용하여 클라이언트 응용 프로그램을 만듭니다. 한 번에 작업을 위한 사용자를 인증하고 해당 인증을 사용하여 여러 AEM Forms 작업을 수행합니다.
 uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
 contentOwner: admin
 content-type: reference
@@ -10,120 +10,119 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1839'
 ht-degree: 0%
 
 ---
 
+# HTTP 토큰 {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램을 만드는 중
 
-# HTTP 토큰 {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기
+**이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms용입니다.**
 
-**이 문서의 샘플과 예는 JEE 환경의 AEM Forms에만 해당됩니다.**
+HTTP 토큰을 사용하여 SSO(Single Sign-On) 인증을 수행하는 Flash Builder을 사용하여 클라이언트 응용 프로그램을 만들 수 있습니다. 예를 들어 Flash Builder을 사용하여 웹 기반 응용 프로그램을 만든다고 가정합니다. 다음으로, 각 보기가 다른 AEM Forms 작업을 호출하는 애플리케이션에 서로 다른 보기가 있다고 가정합니다. 각 Forms 작업에 대해 사용자를 인증하는 대신 사용자가 한 번 인증할 수 있는 로그인 페이지를 만들 수 있습니다. 인증되면 사용자는 다시 인증하지 않고도 여러 작업을 호출할 수 있습니다. 예를 들어 사용자가 Workspace(또는 다른 Forms 애플리케이션)에 로그인한 경우 사용자를 다시 인증할 필요가 없습니다.
 
-HTTP 토큰을 사용하여 SSO(Single Sign On) 인증을 수행하는 Flash Builder을 사용하여 클라이언트 응용 프로그램을 만들 수 있습니다. 예를 들어 Flash Builder을 사용하여 웹 기반 응용 프로그램을 만든다고 가정합니다. 각 보기에서 다른 AEM Forms 작업을 호출하는 응용 프로그램에 서로 다른 보기가 있다고 가정합니다. 각 Forms 작업에 대해 사용자를 인증하는 대신 사용자가 한 번 인증할 수 있는 로그인 페이지를 만들 수 있습니다. 인증이 완료되면 사용자는 다시 인증할 필요 없이 여러 작업을 호출할 수 있습니다. 예를 들어 사용자가 Workspace(또는 다른 Forms 애플리케이션)에 로그인한 경우 사용자가 다시 인증할 필요가 없습니다.
-
-클라이언트 응용 프로그램에 SSO 인증을 수행하는 데 필요한 응용 프로그램 로직이 포함되어 있지만 AEM 양식 사용자 관리는 실제 사용자 인증을 수행합니다. HTTP 토큰을 사용하여 사용자를 인증하기 위해 클라이언트 응용 프로그램은 인증 관리자 서비스의 `authenticateWithHTTPToken` 작업을 호출합니다. 사용자 관리는 HTTP 토큰을 사용하여 사용자를 인증할 수 있습니다. 이후 AEM Forms에 대한 원격 또는 웹 서비스 호출의 경우 인증을 위해 자격 증명을 전달할 필요가 없습니다.
+클라이언트 응용 프로그램에는 SSO 인증을 수행하는 데 필요한 응용 프로그램 로직이 포함되어 있지만 AEM Forms 사용자 관리에서는 실제 사용자 인증을 수행합니다. HTTP 토큰을 사용하여 사용자를 인증하기 위해 클라이언트 응용 프로그램은 인증 관리자 서비스의 `authenticateWithHTTPToken` 작업을 호출합니다. 사용자 관리에서는 HTTP 토큰을 사용하여 사용자를 인증할 수 있습니다. AEM Forms에 대한 후속 원격 또는 웹 서비스 호출의 경우 인증을 위해 자격 증명을 전달할 필요가 없습니다.
 
 >[!NOTE]
 >
->이 섹션을 읽기 전에 Remoting을 사용하여 AEM Forms 호출을 사용하는 것이 좋습니다. (AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)을(를) 사용하여 AEM Forms 호출 참조)[
+>이 섹션을 읽기 전에 Remoting을 사용하여 AEM Forms을 호출하는 것에 익숙해지는 것이 좋습니다. ([AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)을 사용하여 AEM Forms 호출 을 참조하십시오.)
 
-사용자가 SSO를 사용하여 인증한 후 이름이 `MyApplication/EncryptDocument`인 다음 AEM Forms 단기 프로세스가 호출됩니다. (입력 및 출력 값과 같은 이 프로세스에 대한 자세한 내용은 [Short Lived 프로세스 예](/help/forms/developing/aem-forms-processes.md)를 참조하십시오.)
+사용자가 SSO를 사용하여 인증되면 이름이 `MyApplication/EncryptDocument`인 다음 AEM Forms 단기 프로세스가 호출됩니다. 입력 및 출력 값과 같은 이 프로세스에 대한 자세한 내용은 [단기 프로세스 예](/help/forms/developing/aem-forms-processes.md)를 참조하십시오.
 
 ![cf_encryptdocumentprocess2](assets/cf_cf_encryptdocumentprocess2.png)
 
 >[!NOTE]
 >
->이 프로세스는 기존 AEM Forms 프로세스를 기반으로 하지 않습니다. 이 프로세스를 호출하는 방법에 대해 설명하는 코드 예제를 따라 워크벤치를 사용하여 `MyApplication/EncryptDocument` 프로세스를 만드십시오. ([Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63) 사용 참조)
+>이 프로세스는 기존 AEM Forms 프로세스를 기반으로 하지 않습니다. 이 프로세스를 호출하는 방법에 대해 설명하는 코드 예제를 따라, workbench를 사용하여 `MyApplication/EncryptDocument` 프로세스를 만듭니다. ([Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63) 사용 을 참조하십시오.)
 
-Flash Builder을 사용하여 작성한 클라이언트 응용 프로그램은 `/um/login` 및 `/um/logout`에 구성된 사용자 관리자의 보안 서블릿과 상호 작용합니다. 즉, 클라이언트 응용 프로그램은 시작 중에 `/um/login` URL에 요청을 보내 사용자의 상태를 확인합니다. 그런 다음 사용자 관리자가 사용자 상태에 응답합니다. 클라이언트 응용 프로그램 및 User Manager 보안 서블릿은 HTTP를 사용하여 통신합니다.
+Flash Builder을 사용하여 작성된 클라이언트 응용 프로그램은 `/um/login` 및 `/um/logout`에 구성된 사용자 관리자의 보안 서블릿과 상호 작용합니다. 즉, 클라이언트 응용 프로그램이 시작하는 동안 `/um/login` URL에 요청을 보내 사용자의 상태를 확인합니다. 그런 다음 사용자 관리자가 사용자 상태에 응답합니다. 클라이언트 응용 프로그램 및 사용자 관리자 보안 서블릿은 HTTP를 사용하여 통신합니다.
 
 **요청 형식**
 
-보안 서블릿에는 다음과 같은 입력 변수가 필요합니다.
+보안 서블릿에는 다음 입력 변수가 필요합니다.
 
-* `um_no_redirect` - 이 값은  `true`여야 합니다. 이 변수는 사용자 관리자 보안 서블릿에 대한 모든 요청을 동반합니다. 또한 보안 서블릿이 flex 클라이언트 또는 기타 웹 응용 프로그램에서 들어오는 요청을 차별화하는 데 도움이 됩니다.
+* `um_no_redirect` - 이 값은  `true`여야 합니다. 이 변수는 User Manager 보안 서블릿에 대한 모든 요청을 포함합니다. 또한 보안 서블릿이 flex 클라이언트나 다른 웹 응용 프로그램에서 들어오는 요청을 구분하도록 도와줍니다.
 * `j_username` - 이 값은 로그인 양식에 제공된 사용자의 로그인 식별자 값입니다.
 * `j_password` - 이 값은 로그인 양식에 제공된 사용자의 해당 암호입니다.
 
-`j_password` 값은 자격 증명 요청에만 필요합니다. 암호 값이 지정되지 않은 경우 보안 서블릿은 사용 중인 계정이 이미 인증되었는지 확인합니다. 그렇다면 계속 진행하십시오.그러나 보안 서블릿은 사용자를 다시 인증하지 않습니다.
+`j_password` 값은 자격 증명 요청에만 필요합니다. 암호 값을 지정하지 않으면 보안 서블릿은 사용 중인 계정이 이미 인증되었는지 확인합니다. 그럴 경우 진행할 수 있습니다.그러나 보안 서블릿은 사용자를 다시 인증하지 않습니다.
 
 >[!NOTE]
 >
->i18n을 제대로 처리하려면 이 값이 POST 형식인지 확인하십시오.
+>i18n을 적절히 처리하려면 이 값이 POST 형식인지 확인하십시오.
 
 **응답 형식**
 
-`/um/login`에 구성된 보안 서블릿은 `URLVariables` 형식을 사용하여 응답합니다. 이 형식의 내용 유형은 text/plain입니다. 출력에는 앰퍼샌드(&amp;) 문자로 구분된 이름 값 쌍이 포함됩니다. 응답에는 다음 변수가 포함됩니다.
+`/um/login`에 구성된 보안 서블릿이 `URLVariables` 형식을 사용하여 응답합니다. 이 형식으로 표시되는 콘텐츠 유형의 출력은 텍스트/plain입니다. 출력에 앰퍼샌드(&amp;) 문자로 구분되는 이름 값 쌍이 포함됩니다. 응답에는 다음 변수가 포함되어 있습니다.
 
-* `authenticated` - 값은  `true` 또는  `false`입니다.
+* `authenticated` - 값은 또 `true` 는  `false`입니다.
 * `authstate` - 이 값은 다음 값 중 하나를 포함할 수 있습니다.
 
-   * `CREDENTIAL_CHALLENGE` - 이 상태는 사용자 관리자가 어떠한 수단을 통해서도 사용자의 ID를 확인할 수 없음을 나타냅니다. 인증이 수행되려면 사용자의 사용자 이름과 암호가 필요합니다.
-   * `SPNEGO_CHALLENGE`- 이 상태는 동일한 것으로 처리됩니다 `CREDENTIAL_CHALLENGE`.
+   * `CREDENTIAL_CHALLENGE` - 이 상태는 User Manager가 어떤 수단을 통해 사용자의 ID를 확인할 수 없음을 나타냅니다. 인증을 수행하려면 사용자 이름과 암호가 필요합니다.
+   * `SPNEGO_CHALLENGE`- 이 상태는  `CREDENTIAL_CHALLENGE`과 동일하게 처리됩니다.
    * `COMPLETE` - 이 상태는 사용자 관리자가 사용자를 인증할 수 있음을 나타냅니다.
    * `FAILED` - 이 상태는 사용자 관리자가 사용자를 인증할 수 없음을 나타냅니다. 이 상태에 대한 응답으로 flex 클라이언트는 사용자에게 오류 메시지를 표시할 수 있습니다.
    * `LOGGED_OUT` - 이 상태는 사용자가 성공적으로 로그아웃되었음을 나타냅니다.
 
-* `assertionid` - 상태가  `COMPLETE` 그렇다면 사용자의 값이  `assertionId` 포함됩니다. 클라이언트 응용 프로그램은 사용자의 `AuthResult`을(를) 가져올 수 있습니다.
+* `assertionid` - 상태가  `COMPLETE` 인 경우 사용자의 값이  `assertionId` 포함됩니다. 클라이언트 응용 프로그램은 사용자의 `AuthResult`을 획득할 수 있습니다.
 
 **로그인 프로세스**
 
-클라이언트 응용 프로그램이 시작되면 `/um/login` 보안 서블릿에 POST 요청을 할 수 있습니다. 예, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. 요청이 User Manager 보안 서블릿에 도달하면 다음 단계를 수행합니다.
+클라이언트 응용 프로그램이 시작되면 `/um/login` 보안 서블릿에 POST 요청을 수행할 수 있습니다. 예, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. 요청이 User Manager 보안 서블릿에 도달하면 다음 단계를 수행합니다.
 
-1. `lcAuthToken`이라는 쿠키를 찾습니다. 사용자가 이미 다른 Forms 응용 프로그램에 로그인한 경우에는 이 쿠키가 있습니다. 쿠키가 발견되면 쿠키의 컨텐츠가 확인됩니다.
-1. 헤더 기반 SSO가 활성화된 경우 서블릿은 사용자 ID를 결정하기 위해 구성된 헤더를 찾습니다.
-1. SPNEGO가 활성화된 경우 서블릿은 SPNEGO를 시작하고 사용자의 ID를 확인하려고 시도합니다.
+1. 이름이 `lcAuthToken`인 쿠키를 찾습니다. 사용자가 이미 다른 Forms 애플리케이션에 로그인한 경우에는 이 쿠키가 있습니다. 쿠키가 발견되면 해당 컨텐츠의 유효성이 검사됩니다.
+1. 헤더 기반 SSO가 활성화되어 있으면 서블릿은 사용자 ID를 결정하기 위해 구성된 헤더를 찾습니다.
+1. SPNEGO가 활성화되어 있으면 서블릿은 SPNEGO를 시작하고 사용자의 ID를 확인하려고 시도합니다.
 
-보안 서블릿이 사용자와 일치하는 유효한 토큰을 찾으면 보안 서블릿을 사용하여 `authstate=COMPLETE`으로 계속 응답할 수 있습니다. 그렇지 않으면 보안 서블릿이 `authstate=CREDENTIAL_CHALLENGE`으로 응답합니다. 다음 목록은 다음 값을 설명합니다.
+보안 서블릿이 사용자와 일치하는 유효한 토큰을 찾으면 보안 서블릿을 사용하여 `authstate=COMPLETE` 작업을 계속 진행하고 응답할 수 있습니다. 그렇지 않으면 보안 서블릿이 `authstate=CREDENTIAL_CHALLENGE`에 응답합니다. 다음 목록에서는 다음 값에 대해 설명합니다.
 
-* `Case authstate=COMPLETE`:사용자가 인증되고 값에 사용자에 대한  `assertionid` 어설션 식별자가 포함됨을 나타냅니다. 이 단계에서 클라이언트 응용 프로그램은 AEM Forms에 연결할 수 있습니다. 해당 URL에 대해 구성된 서블릿은 `AuthenticationManager.authenticate(HttpRequestToken)` 메서드를 호출하여 사용자에 대해 `AuthResult`을 가져올 수 있습니다. `AuthResult` 인스턴스는 사용자 관리자 컨텍스트를 만들어 세션에 저장할 수 있습니다.
-* `Case authstate=CREDENTIAL_CHALLENGE`:보안 서블릿에 사용자의 자격 증명이 필요함을 나타냅니다. 응답으로 클라이언트 응용 프로그램은 로그인 화면을 사용자에게 표시하고 가져온 자격 증명을 보안 서블릿으로 보낼 수 있습니다(예: `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true&j_username=administrator&j_password=password)`). 인증이 성공하면 보안 서블릿이 `authstate=COMPLETE`으로 응답합니다.
+* `Case authstate=COMPLETE`:사용자가 인증되고 값 `assertionid` 에 사용자에 대한 검증 식별자가 포함됨을 나타냅니다. 이 단계에서는 클라이언트 응용 프로그램이 AEM Forms에 연결할 수 있습니다. 해당 URL에 대해 구성된 서블릿은 `AuthenticationManager.authenticate(HttpRequestToken)` 메서드를 호출하여 사용자에 대한 `AuthResult`을 얻을 수 있습니다. `AuthResult` 인스턴스는 사용자 관리자 컨텍스트를 만들고 세션에 저장할 수 있습니다.
+* `Case authstate=CREDENTIAL_CHALLENGE`:보안 서블릿에 사용자의 자격 증명이 필요함을 나타냅니다. 응답으로 클라이언트 애플리케이션은 사용자에게 로그인 화면을 표시하고 획득한 자격 증명을 보안 서블릿으로 전송할 수 있습니다(예: `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true&j_username=administrator&j_password=password)`). 인증이 성공하면 보안 서블릿이 `authstate=COMPLETE`에 응답합니다.
 
-인증이 여전히 성공하지 않으면 보안 서블릿이 `authstate=FAILED`으로 응답합니다. 이 값에 응답하기 위해 클라이언트 응용 프로그램에서 자격 증명을 다시 획득하는 메시지를 표시할 수 있습니다.
+인증이 아직 완료되지 않으면 보안 서블릿은 `authstate=FAILED`에 응답합니다. 이 값에 응답하기 위해 클라이언트 응용 프로그램은 자격 증명을 다시 얻기 위한 메시지를 표시할 수 있습니다.
 
 >[!NOTE]
 >
->`authstate=CREDENTIAL_CHALLENGE` 동안에는 클라이언트가 취득한 자격 증명을 POST 형식으로 보안 서블릿으로 보내는 것이 좋습니다.
+>`authstate=CREDENTIAL_CHALLENGE` 동안에는 클라이언트가 가져온 자격 증명을 POST 양식의 보안 서블릿에 보내는 것이 좋습니다.
 
 **로그아웃 프로세스**
 
-클라이언트 응용 프로그램이 로그아웃하면 요청을 다음 URL로 보낼 수 있습니다.
+클라이언트 응용 프로그램이 로그아웃하면 다음 URL에 요청을 보낼 수 있습니다.
 
 `https://<your_serverhost>:<your_port>/um/logout?um_no_redirect=true`
 
-이 요청을 수신할 때 사용자 관리자 보안 서블릿은 `lcAuthToken` 쿠키를 삭제하고 `authstate=LOGGED_OUT`과 응답합니다. 클라이언트 응용 프로그램에서 이 값을 받으면 응용 프로그램에서 정리 작업을 수행할 수 있습니다.
+이 요청을 받을 때 사용자 관리자 보안 서블릿은 `lcAuthToken` 쿠키를 삭제하고 `authstate=LOGGED_OUT`에 응답합니다. 클라이언트 응용 프로그램이 이 값을 수신하면 응용 프로그램이 정리 작업을 수행할 수 있습니다.
 
-## SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}를 사용하여 AEM 양식 사용자를 인증하는 클라이언트 응용 프로그램 만들기
+## SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}를 사용하여 AEM Forms 사용자를 인증하는 클라이언트 응용 프로그램 만들기
 
-SSO 인증을 수행하는 클라이언트 응용 프로그램을 만드는 방법을 보여 주기 위해 클라이언트 응용 프로그램이 생성됩니다. 다음 그림은 클라이언트 응용 프로그램이 SSO를 사용하여 사용자를 인증하기 위해 수행하는 단계를 보여줍니다.
+SSO 인증을 수행하는 클라이언트 응용 프로그램을 만드는 방법을 보여 주기 위해 예제 클라이언트 응용 프로그램이 만들어집니다. 다음 그림은 클라이언트 응용 프로그램이 SSO를 사용하여 사용자를 인증하기 위해 수행하는 단계를 보여줍니다.
 
 ![cf_flexsso](assets/cf_cf_flexsso.png)
 
-이전 그림에서는 클라이언트 응용 프로그램이 시작될 때 발생하는 응용 프로그램 흐름에 대해 설명합니다.
+이전 그림은 클라이언트 응용 프로그램이 시작될 때 발생하는 응용 프로그램 플로우에 대해 설명합니다.
 
-1. 클라이언트 응용 프로그램에서 `applicationComplete` 이벤트를 트리거합니다.
-1. `ISSOManager.singleSignOn`에 대한 호출이 수행되었습니다. 클라이언트 응용 프로그램이 사용자 관리자 보안 서블릿으로 요청을 보냅니다.
-1. 보안 서블릿이 사용자를 인증하면 `ISSOManager`이 `SSOEvent.AUTHENTICATION_SUCCESS`을 전달합니다. 응답으로 클라이언트 응용 프로그램에 기본 페이지가 표시됩니다. 이 예제에서 기본 페이지는 MyApplication/EncryptDocument라는 짧은기간 AEM Forms 프로세스를 호출합니다.
-1. 보안 서블릿이 사용자가 유효한지 여부를 확인할 수 없는 경우 응용 프로그램에서 사용자 자격 증명을 다시 요청합니다. `ISSOManager` 클래스는 `SSOEvent.AUTHENTICATION_REQUIRED` 이벤트를 전달합니다. 클라이언트 응용 프로그램에 로그인 페이지가 표시됩니다.
-1. 로그인 페이지에 제공된 자격 증명은 `ISSOManager.login` 메서드로 전송됩니다. 인증이 성공하면 3단계로 이동합니다. 그렇지 않으면 `SSOEvent.AUTHENTICATION_FAILED` 이벤트가 트리거됩니다. 클라이언트 응용 프로그램에 로그인 페이지와 적절한 오류 메시지가 표시됩니다.
+1. 클라이언트 응용 프로그램이 `applicationComplete` 이벤트를 트리거합니다.
+1. `ISSOManager.singleSignOn`에 대한 호출이 수행됩니다. 클라이언트 응용 프로그램이 User Manager 보안 서블릿에 요청을 보냅니다.
+1. 보안 서블릿이 사용자를 인증하면 `ISSOManager`이 `SSOEvent.AUTHENTICATION_SUCCESS`을 전달합니다. 응답으로 클라이언트 응용 프로그램에 기본 페이지가 표시됩니다. 이 예에서 기본 페이지는 MyApplication/EncryptDocument라는 짧은 기간 동안 진행되는 AEM Forms 프로세스를 호출합니다.
+1. 보안 서블릿이 사용자가 유효한지 여부를 확인할 수 없는 경우 응용 프로그램이 사용자 자격 증명을 다시 요청합니다. `ISSOManager` 클래스는 `SSOEvent.AUTHENTICATION_REQUIRED` 이벤트를 전달합니다. 클라이언트 응용 프로그램에 로그인 페이지가 표시됩니다.
+1. 로그인 페이지에 제공된 자격 증명은 `ISSOManager.login` 메서드로 전송됩니다. 인증이 성공하면 3단계로 이동합니다. 그렇지 않으면 `SSOEvent.AUTHENTICATION_FAILED` 이벤트가 트리거됩니다. 클라이언트 응용 프로그램은 로그인 페이지와 적절한 오류 메시지를 표시합니다.
 
 ### 클라이언트 응용 프로그램 {#creating-the-client-application} 만들기
 
 클라이언트 응용 프로그램은 다음 파일로 구성됩니다.
 
-* `SSOStandalone.mxml`:클라이언트 응용 프로그램을 나타내는 기본 MXML 파일입니다. ([SSOStandalone.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file)를 참조하십시오.)
-* `um/ISSOManager.as`:SSO(Single Sign On)와 관련된 작업 노출 ([ISSOManager.as 파일](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file) 만들기 참조)
-* `um/SSOEvent.as`:SSO  `SSOEvent` 관련 이벤트에 대해 전달됩니다. ([SOEvent.as 파일](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file) 만들기 참조)
-* `um/SSOManager.as`:SSO 관련 작업을 관리하고 적절한 이벤트를 전달합니다. ([SOManager.as 파일](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file) 만들기 참조)
-* `um/UserManager.as`:WSDL을 사용하여 인증 관리자 서비스를 호출하는 응용 프로그램 논리를 포함합니다. ([UserManager.as 파일](creating-flash-builder-applications-perform.md#creating-the-usermanager-as-file) 만들기 참조)
-* `views/login.mxml`:로그인 화면을 나타냅니다. 자세한 내용은 [login.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)를 참조하십시오.
-* `views/logout.mxml`:로그아웃 화면을 나타냅니다. 자세한 내용은 [logout.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)를 참조하십시오.
-* `views/progress.mxml`:진행 보기를 나타냅니다. 자세한 내용은 [progress.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file)를 참조하십시오.
-* `views/remoting.mxml`:원격 기능을 사용하여 MyApplication/EncryptDocument라는 AEM Forms 단기 프로세스를 호출하는 보기를 나타냅니다. (remoting.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)를 참조하십시오.)[
+* `SSOStandalone.mxml`:클라이언트 응용 프로그램을 나타내는 기본 MXML 파일입니다. ([SSOStandalone.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file) 참조)
+* `um/ISSOManager.as`:SSO(Single Sign On)와 관련된 작업을 노출합니다. ([ISSOManager.as 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file) 참조)
+* `um/SSOEvent.as`:SSO  `SSOEvent` 관련 이벤트에 대해 가 발송됩니다. ([SOEvent.as 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file) 참조)
+* `um/SSOManager.as`:SSO 관련 작업을 관리하고 적절한 이벤트를 발송합니다. ([SOManager.as 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file) 참조)
+* `um/UserManager.as`:WSDL을 사용하여 인증 관리자 서비스를 호출하는 응용 프로그램 논리를 포함합니다. ([UserManager.as 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-usermanager-as-file) 참조)
+* `views/login.mxml`:로그인 화면을 나타냅니다. ([login.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)를 참조하십시오.)
+* `views/logout.mxml`:로그아웃 화면을 나타냅니다. ( [logout.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)를 참조하십시오.)
+* `views/progress.mxml`:진행률 보기를 나타냅니다. ([progress.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file) 참조)
+* `views/remoting.mxml`:원격을 사용하여 MyApplication/EncryptDocument라는 AEM Forms 단기 프로세스를 호출하는 보기를 나타냅니다. ([remoting.mxml 파일 만들기](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)를 참조하십시오.)
 
 다음 그림은 클라이언트 응용 프로그램을 시각적으로 보여줍니다.
 
@@ -131,11 +130,11 @@ SSO 인증을 수행하는 클라이언트 응용 프로그램을 만드는 방�
 
 >[!NOTE]
 >
->um과 view라는 두 개의 패키지가 있습니다. 클라이언트 응용 프로그램을 만들 때 해당 파일을 올바른 패키지에 포함해야 합니다. 또한 adobe-remoting-provider.swc 파일을 프로젝트의 클래스 경로에 추가해야 합니다. ([AEM Forms Flex 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file) 참조)
+>um 및 views라는 두 개의 패키지가 있습니다. 클라이언트 응용 프로그램을 만들 때 파일을 적절한 패키지에 배치해야 합니다. 또한 adobe-remoting-provider.swc 파일을 프로젝트의 클래스 경로에 추가해야 합니다. ([AEM Forms Flex 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)을 참조하십시오.)
 
-### SSOStandalone.mxml 파일 {#creating-the-ssostandalone-mxml-file} 만들기
+### SSOStandalone.mxml 파일 만들기 {#creating-the-ssostandalone-mxml-file}
 
-다음 코드는 SSOStandalone.mxml 파일을 나타냅니다.
+다음 코드는 SSOStandony.mxml 파일을 나타냅니다.
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>
@@ -373,7 +372,7 @@ SSO 인증을 수행하는 클라이언트 응용 프로그램을 만드는 방�
  }
 ```
 
-### SOManager.as 파일 {#creating-the-ssomanager-as-file} 만들기
+### SSOManager.as 파일 만들기 {#creating-the-ssomanager-as-file}
 
 다음 코드는 SOManager.as 파일을 나타냅니다.
 
@@ -673,7 +672,7 @@ SSO 인증을 수행하는 클라이언트 응용 프로그램을 만드는 방�
 
 ### remoting.mxml 파일 {#creating-the-remoting-mxml-file} 만들기
 
-다음 코드는 `MyApplication/EncryptDocument` 프로세스를 호출하는 remoting.mxml 파일을 나타냅니다. 문서가 프로세스에 전달되기 때문에 AEM Forms으로 보안 문서를 전달하는 데 책임이 있는 응용 프로그램 논리가 이 파일에 있습니다. (Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)을(를) 사용하여 프로세스를 호출하려면 보안 문서 전달을 참조하십시오.)[
+다음 코드는 `MyApplication/EncryptDocument` 프로세스를 호출하는 remoting.mxml 파일을 나타냅니다. 문서가 프로세스에 전달되므로 이 파일에 보안 문서를 AEM Forms에 전달하는 애플리케이션 논리가 있습니다. ([Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)을 사용하여 프로세스를 호출하려면 보안 문서 전달 을 참조하십시오.)
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>
@@ -871,11 +870,11 @@ SSO 인증을 수행하는 클라이언트 응용 프로그램을 만드는 방�
 
 ### 추가 정보 {#additional-information}
 
-다음 섹션에서는 클라이언트 응용 프로그램과 사용자 관리자 보안 서블릿 간의 통신을 설명하는 추가 세부 정보를 제공합니다.
+다음 섹션에서는 클라이언트 애플리케이션과 User Manager 보안 서블릿 간의 통신을 설명하는 추가 세부 정보를 제공합니다.
 
-### 새 인증이 발생합니다. {#a-new-authentication-occurs}
+### 새 인증이 {#a-new-authentication-occurs} 발생합니다
 
-이 경우 사용자는 처음으로 클라이언트 응용 프로그램에서 AEM Forms으로 로그인을 시도합니다. (사용자와 관련된 이전 세션이 없습니다.) `applicationComplete` 이벤트에서 사용자 관리자에게 요청을 보내는 `SSOManager.singleSignOn` 메서드가 호출됩니다.
+이 경우 사용자는 클라이언트 애플리케이션에서 AEM Forms으로 처음으로 로그인을 시도합니다. (사용자와 관련된 이전 세션이 없습니다.) `applicationComplete` 이벤트에서 사용자 관리자에게 요청을 보내는 `SSOManager.singleSignOn` 메서드가 호출됩니다.
 
 `GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1`
 
@@ -885,7 +884,7 @@ User Manager 보안 서블릿은 다음 값으로 응답합니다.
 
 `authenticated=false&authstate=CREDENTIAL_CHALLENGE`
 
-이 값에 대한 응답으로 `SSOEvent.AUTHENTICATION_REQUIRED` 값이 전달됩니다. 그 결과 클라이언트 응용 프로그램은 사용자에게 로그인 화면을 표시합니다. 자격 증명이 User Manager 보안 서블릿으로 다시 제출됩니다.
+이 값에 대한 응답으로 `SSOEvent.AUTHENTICATION_REQUIRED` 값이 전달됩니다. 따라서 클라이언트 응용 프로그램은 사용자에게 로그인 화면을 표시합니다. 자격 증명이 User Manager 보안 서블릿으로 다시 제출됩니다.
 
 `GET /um/login?um%5Fno%5Fredirect=true&j%5Fusername=administrator&j%5Fpassword=password HTTP/1.1`
 
@@ -897,22 +896,22 @@ User Manager 보안 서블릿은 다음 값으로 응답합니다.
  authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
-따라서 `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS`이(가) 전달됩니다. 필요한 경우 클라이언트 응용 프로그램에서 추가 처리를 수행할 수 있습니다. 예를 들어 사용자가 인증된 날짜와 시간을 추적하는 로그를 만들 수 있습니다.
+따라서 `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS`이(가) 전달됩니다. 클라이언트 응용 프로그램은 필요한 경우 추가 처리를 수행할 수 있습니다. 예를 들어 사용자가 인증된 날짜와 시간을 추적하는 로그를 만들 수 있습니다.
 
-### 사용자가 이미 인증된 {#the-user-is-already-authenticated}
+### 사용자가 이미 {#the-user-is-already-authenticated}에 인증되었습니다.
 
-이 경우 사용자가 이미 AEM Forms에 로그인한 다음 클라이언트 응용 프로그램으로 이동합니다. 클라이언트 응용 프로그램은 시작하는 동안 User Manager 보안 서블릿에 연결됩니다.
+이 경우 사용자는 이미 AEM Forms에 로그인한 다음 클라이언트 애플리케이션으로 이동합니다. 클라이언트 응용 프로그램은 시작하는 동안 사용자 관리자 보안 서블릿에 연결됩니다.
 
 ```verilog
  GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1
  Cookie: JSESSIONID=A4E0BCC2DD4BCCD3167C45FA350BD72A; lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
-사용자가 이미 인증되었으므로 사용자 관리자 쿠키가 존재하고 User Manager 보안 서블릿으로 전송됩니다. 그런 다음 servlet은 `assertionId` 값을 가져와서 유효한지 확인합니다. 유효하면 `authstate=COMPLETE`이(가) 반환됩니다. 그렇지 않으면 `authstate=CREDENTIAL_CHALLENGE`이(가) 반환됩니다. 다음은 일반적인 응답입니다.
+사용자가 이미 인증되었으므로 User Manager 쿠키가 있고 User Manager 보안 서블릿으로 전송됩니다. 그러면 서블릿은 `assertionId` 값을 가져오고 이 값이 유효한지 확인합니다. 유효한 경우 `authstate=COMPLETE` 이 반환됩니다. 그렇지 않으면 `authstate=CREDENTIAL_CHALLENGE`이 반환됩니다. 다음은 일반적인 응답입니다.
 
 ```verilog
  HTTP/1.1 200 OK
         authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
-이 경우 사용자는 로그인 화면이 표시되지 않고 시작 화면으로 바로 이동됩니다.
+이 경우 사용자에게 로그인 화면이 표시되지 않고 대신 시작 화면으로 직접 이동합니다.
