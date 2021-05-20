@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
-feature: Content Fragments
+feature: 콘텐츠 조각
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 99%
+source-wordcount: '541'
+ht-degree: 100%
 
 ---
-
 
 # Markdown{#markdown}
 
@@ -218,4 +217,3 @@ ht-degree: 99%
     ` - minus sign (hyphen)`
 
     ` . dot`
-
