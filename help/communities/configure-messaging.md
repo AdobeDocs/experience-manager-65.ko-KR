@@ -10,61 +10,60 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 4%
 
 ---
 
+# 메시징 기능 {#messaging-feature}
 
-# 메시지 기능 {#messaging-feature}
+포럼 및 주석에서 발생하는 공개적으로 표시되는 상호 작용 외에도 AEM Communities의 메시징 기능을 통해 커뮤니티 멤버가 보다 비공개로 상호 작용할 수 있습니다.
 
-포럼과 댓글에 표시되는 공개 상호 작용 외에도 AEM Communities의 메시지 기능을 사용하면 커뮤니티 멤버가 보다 비공개로 상호 작용할 수 있습니다.
-
-이 기능은 [커뮤니티 사이트](/help/communities/overview.md#communitiessites)를 만들 때 포함될 수 있습니다.
+이 기능은 [커뮤니티 사이트](/help/communities/overview.md#communitiessites)가 생성될 때 포함할 수 있습니다.
 
 메시징 기능은 다음과 같은 기능을 제공합니다.
 
-**A**  - 하나 이상의 커뮤니티 구성원에게 메시지를 보냅니다.
+**A**  - 하나 이상의 커뮤니티 구성원에게 메시지 보내기
 
-**B** - 커뮤니티 구성원 그룹에 직접  [메시지 일괄 보내기](/help/communities/messaging.md#group-messaging)
+**B**  - 커뮤니티 구성원 그룹 [으로 직접 메시지 일괄 전송](/help/communities/messaging.md#group-messaging)
 
 **C**  - 첨부 파일이 있는 메시지 보내기
 
 **D**  - 메시지 전달
 
-**전자** - 메시지에 응답
+**E**  - 메시지에 회신
 
-**F** - 메시지 삭제
+**F**  - 메시지 삭제
 
 **G**  - 삭제된 메시지 복원
 
-![메시지 섹션](assets/messaging-section.png)
+![messaging-section](assets/messaging-section.png)
 
 ![복원 메시지](assets/restore-message.png)
 
 메시징 기능을 활성화하고 수정하려면 다음을 참조하십시오.
 
-* [관리자를 ](/help/communities/messaging.md) 위한 메시지 구성
-* [개발자를 ](/help/communities/essentials-messaging.md) 위한 메시징 필수
+* [관리자용 ](/help/communities/messaging.md) 메시지 구성
+* [개발자용 ](/help/communities/essentials-messaging.md) 메시징 개념
 
 >[!NOTE]
 >
->작성자 편집 모드에서 페이지에 `Compose Message, Message, or Message List` 구성 요소(`Communities`구성 요소 그룹에 있음)를 추가하는 것은 지원되지 않습니다.
+>작성자 편집 모드의 페이지에 `Compose Message, Message, or Message List` 구성 요소(`Communities`구성 요소 그룹에 있음)를 추가하는 것은 지원되지 않습니다.
 
 ## 메시징 구성 요소 {#configure-messaging-components} 구성
 
-커뮤니티 사이트에 대한 메시징이 활성화되면 추가 구성 없이 설정됩니다. 기본 구성을 변경할 필요가 있는 경우 정보가 제공됩니다.
+커뮤니티 사이트에 대해 메시징이 활성화되면 추가 구성 없이 설정됩니다. 기본 구성을 변경해야 하는 경우 정보가 제공됩니다.
 
 ### 메시지 목록 구성(메시지 상자) {#configure-message-list-message-box}
 
-메시지 기능의 **받은 편지함**, **보낸 항목** 및 **휴지통** 페이지에 대한 메시지 목록 구성을 수정하려면 [작성 편집 모드](/help/communities/sites-console.md#authoring-site-content)에서 사이트를 엽니다.
+**받은 편지함**, **보낸 항목** 및 메시징 기능의 **휴지통** 페이지에 대한 메시지 목록 구성을 수정하려면 [작성 편집 모드](/help/communities/sites-console.md#authoring-site-content)에서 사이트를 엽니다.
 
 1. `Preview` 모드에서 **메시지** 링크를 선택하여 기본 메시징 페이지를 엽니다. 그런 다음 **받은 편지함**, **보낸 항목** 또는 **휴지통**&#x200B;을 선택하여 해당 메시지 목록에 대한 구성 요소를 구성합니다.
 
-1. `Edit` 모드에서 페이지의 구성 요소를 선택합니다.
+1. `Edit` 모드에서 페이지에서 구성 요소를 선택합니다.
 1. 구성 대화 상자에 액세스하려면 `link` 아이콘을 선택하여 상속을 취소합니다.
 상속이 취소되면 구성 아이콘을 선택하여 구성 대화 상자를 열 수 있습니다.
 
@@ -78,15 +77,15 @@ ht-degree: 4%
 
 * **서비스 선택기**
 
-   (*필수*) [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service)에서 **`serviceSelector.name`** 속성 값으로 설정합니다.
+   (*필수*) [AEM Communities 메시징 작업 서비스](/help/communities/messaging.md#messaging-operations-service)에서 속성 **`serviceSelector.name`**&#x200B;의 값으로 설정합니다.
 
-* **페이지 작성**
+* **작성 페이지**
 
-   (*필수*) 구성원이 **`Reply`** 단추를 클릭할 때 열리는 페이지입니다. 대상 페이지에는 **메시지 작성** 양식이 포함되어야 합니다.
+   (*필수*) 구성원이 **`Reply`** 단추를 클릭할 때 열 페이지입니다. 대상 페이지에는 **메시지 작성** 양식이 있어야 합니다.
 
-* **리소스로 답글/보기**
+* **리소스로 회신/보기**
 
-   이 확인란을 선택하면 회신 URL 및 보기 URL이 리소스를 참조하며, 그렇지 않은 데이터는 URL의 쿼리 매개 변수로 전달됩니다.
+   이 확인란을 선택하면 회신 URL 및 보기 URL이 리소스를 참조하고, 그렇지 않은 데이터는 URL에서 쿼리 매개 변수로 전달됩니다.
 
 * **프로필 표시 양식**
 
@@ -94,19 +93,19 @@ ht-degree: 4%
 
 * **휴지통 폴더**
 
-   이 확인란을 선택하면 이 메시지 목록 구성 요소는 삭제된 메시지(휴지통)로 플래그가 지정된 메시지만 표시합니다.
+   이 옵션을 선택하면 이 메시지 목록 구성 요소는 삭제됨으로 플래그가 지정된 메시지(휴지통)만 표시합니다.
 
 * **폴더 경로**
 
-   (*필수*) [AEM Communities 메시징 작업 서비스](/help/communities/messaging.md#messaging-operations-service)의 **받은 편지함.path.name** 및 **sentims.path.name**&#x200B;에 대해 설정된 값을 참조합니다. `Inbox`에 대해 구성할 때 **inbox.path.name** 값을 사용하여 하나의 항목을 추가합니다. `Outbox`에 대해 구성할 때 **mensions.path.name** 값을 사용하여 하나의 항목을 추가합니다. `Trash`을(를) 구성할 때 두 값을 모두 가진 항목을 두 개 추가합니다.
+   (*필수*) **inbox.path.name** 및 **sentitems.path.name**&#x200B;에 대해 설정된 값을 [AEM Communities 메시징 작업 서비스](/help/communities/messaging.md#messaging-operations-service)에서 참조합니다. `Inbox`에 대해 구성할 때 **inbox.path.name** 값을 사용하여 항목을 하나 추가하십시오. `Outbox`에 대해 구성할 때 **sentitems.path.name** 값을 사용하여 하나의 항목을 추가하십시오. `Trash`에 대해 구성할 때 두 값을 모두 가진 두 항목을 추가합니다.
 
-#### 표시 탭 {#display-tab}
+#### 탭 {#display-tab} 표시
 
 ![display-tab-message-list](assets/display-tab-message-list.png)
 
 * **읽기 단추 표시**
 
-   이 확인란을 선택하면 메시지를 읽음으로 표시할 수 있는 `Read`단추를 표시합니다.
+   이 옵션을 선택하면 메시지를 읽음으로 표시할 수 있는 `Read`버튼을 표시합니다.
 
 * **읽지 않은 상태로 표시 단추**
 
@@ -114,31 +113,31 @@ ht-degree: 4%
 
 * **삭제 단추**
 
-   이 확인란을 선택하면 메시지를 읽음으로 표시할 수 있는 `Delete` 단추가 표시됩니다. **`Message Options`**&#x200B;도 선택되면 삭제 기능이 복제됩니다.
+   이 확인란을 선택하면 메시지를 읽음으로 표시할 수 있는 `Delete` 단추가 표시됩니다. **`Message Options`** 도 선택되어 있으면 삭제 기능이 복제됩니다.
 
 * **메시지 옵션**
 
-   이 확인란을 선택하면 메시지를 재전송하거나 삭제할 수 있도록 **`Reply`**, **`Reply All`**, **`Forward`** 및 **`Delete`** 단추가 표시됩니다. **`Delete Button`**&#x200B;도 선택되면 삭제 기능이 복제됩니다.
+   이 확인란을 선택하면 메시지를 다시 전송하거나 삭제할 수 있는 **`Reply`**, **`Reply All`**, **`Forward`** 및 **`Delete`** 단추가 표시됩니다. **`Delete Button`** 도 선택되어 있으면 삭제 기능이 복제됩니다.
 
 * **페이지당 메시지**
 
-   지정된 수는 페이지 매김 체계의 페이지당 표시되는 최대 메시지 수입니다. 번호가 지정되지 않은 경우(비워 둔 경우) 모든 메시지가 표시되고 페이지 매김이 없습니다.
+   지정된 수는 페이지 매김 구성표에 페이지당 표시되는 최대 메시지 수입니다. 번호를 지정하지 않은 경우(비워 두면) 모든 메시지가 표시되고 페이지 매김이 없습니다.
 
 * **타임스탬프 패턴**
 
-   하나 이상의 언어에 대한 타임스탬프 패턴을 제공합니다. 기본값은 en, de, fr, it, es, ja, zh_CN, ko_KR입니다.
+   하나 이상의 언어에 대한 타임스탬프 패턴을 제공합니다. 기본값은 en, de, fr, es, ja, zh_CN, ko_KR입니다.
 
 * **사용자 표시**
 
-   보낸 사람 또는 받는 사람을 표시할지 여부를 결정하려면 **`Sender`** 또는 **`Recipients`** 중 하나를 선택합니다.
+   **`Sender`** 또는 **`Recipients`** 중 하나를 선택하여 보낸 사람 또는 받는 사람을 표시할지 여부를 결정합니다.
 
-### 메시지 작성 구성 {#configure-compose-message}
+### 작성 메시지 {#configure-compose-message} 구성
 
 메시지 작성 페이지의 구성을 수정하려면 [작성 편집 모드](/help/communities/sites-console.md#authoring-site-content)에서 사이트를 엽니다.
 
 * `Preview` 모드에서 **메시지** 링크를 선택하여 기본 메시징 페이지를 엽니다. 그런 다음 새 메시지 단추를 선택하여 `Compose Message` 페이지를 엽니다.
 
-* `Edit` 모드에서 메시지 본문을 포함하는 페이지의 기본 구성 요소를 선택합니다.
+* `Edit` 모드에서 메시지 본문이 포함된 페이지의 기본 구성 요소를 선택합니다.
 * 구성 대화 상자에 액세스하려면 `link` 아이콘을 선택하여 상속을 취소합니다.
 상속이 취소되면 구성 아이콘을 선택하여 구성 대화 상자를 열 수 있습니다.
 
@@ -156,11 +155,11 @@ ht-degree: 4%
 
 * **취소 URL**
 
-   발신자가 메시지를 취소하는 경우 표시되는 페이지의 URL을 입력합니다. 예, `../messaging.html`.
+   보낸 사람이 메시지를 취소할 경우 표시되는 페이지의 URL을 입력합니다. 예, `../messaging.html`.
 
 * **메시지 제목의 최대 길이입니다**
 
-   제목 필드에 허용되는 최대 문자 수입니다. 예: 500. 기본값은 제한이 없습니다.
+   제목 필드에 허용되는 최대 문자 수입니다. 예를 들면 500입니다. 기본값은 제한이 없습니다.
 
 * **메시지 본문의 최대 길이입니다**
 
@@ -168,15 +167,15 @@ ht-degree: 4%
 
 * **서비스 선택기**
 
-   (*필수*) [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service)에서 **`serviceSelector.name`** 속성 값으로 설정합니다.
+   (*필수*) [AEM Communities 메시징 작업 서비스](/help/communities/messaging.md#messaging-operations-service)에서 속성 **`serviceSelector.name`**&#x200B;의 값으로 설정합니다.
 
-#### 표시 탭 {#display-tab-1}
+#### 탭 {#display-tab-1} 표시
 
 ![display-tab-compose](assets/display-tab-compose.png)
 
 * **제목 필드 표시**
 
-   선택하는 경우 `Subject` 필드를 표시하고 메시지에 제목을 추가할 수 있도록 설정합니다. 기본값은 선택되어 있지 않습니다.
+   이 옵션을 선택하면 `Subject` 필드를 표시하고 메시지에 제목을 추가할 수 있습니다. 기본값은 선택되어 있지 않습니다.
 
 * **제목 레이블**
 
@@ -184,7 +183,7 @@ ht-degree: 4%
 
 * **파일 첨부 필드 표시**
 
-   이 확인란을 선택하면 `Attachment` 필드를 표시하고 메시지에 첨부 파일을 추가할 수 있도록 설정합니다. 기본값은 선택되어 있지 않습니다.
+   이 옵션을 선택하면 `Attachment` 필드를 표시하고 메시지에 첨부 파일을 추가할 수 있습니다. 기본값은 선택되어 있지 않습니다.
 
 * **파일 레이블 첨부**
 
@@ -192,7 +191,7 @@ ht-degree: 4%
 
 * **컨텐츠 필드 표시**
 
-   이 확인란을 선택하면 `Content` 필드를 표시하고 메시지 본문 추가를 활성화합니다. 기본값은 선택되어 있지 않습니다.
+   이 필드를 선택하면 `Content` 필드를 표시하고 메시지 본문을 추가할 수 있습니다. 기본값은 선택되어 있지 않습니다.
 
 * **컨텐츠 레이블**
 
@@ -204,5 +203,4 @@ ht-degree: 4%
 
 * **타임스탬프 패턴**
 
-   하나 이상의 언어에 대한 타임스탬프 패턴을 제공합니다. 기본값은 en, de, fr, it, es, ja, zh_CN, ko_KR입니다.
-
+   하나 이상의 언어에 대한 타임스탬프 패턴을 제공합니다. 기본값은 en, de, fr, es, ja, zh_CN, ko_KR입니다.
