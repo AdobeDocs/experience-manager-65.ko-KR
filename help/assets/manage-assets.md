@@ -4,12 +4,11 @@ description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, �
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: Asset Management,Search
+feature: 자산 관리,검색
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-translation-type: tm+mt
-source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '9798'
+source-wordcount: '9796'
 ht-degree: 0%
 
 ---
@@ -114,7 +113,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 >
 >[!UICONTROL 이름 충돌] 대화 상자에서 **[!UICONTROL 바꾸기]**&#x200B;를 선택하면 새 자산에 대해 자산 ID가 다시 생성됩니다. 이 ID는 이전 자산의 ID와 다릅니다.
 >
->자산 통찰력을 사용하여 Adobe Analytics으로 노출/클릭 수를 추적하는 경우 재생성된 자산 ID는 Analytics에서 자산에 대해 캡처된 데이터를 무효화합니다.
+>에셋 인사이트가 [!DNL Adobe Analytics]으로 노출 또는 클릭을 추적하도록 활성화된 경우 재생성된 에셋 ID는 [!DNL Analytics]에서 에셋에 대해 캡처된 데이터를 무효화합니다.
 
 업로드한 자산이 [!DNL Assets]에 존재하는 경우 **[!UICONTROL 감지된 중복]** 대화 상자에서 중복 자산을 업로드하려고 한다는 경고를 표시합니다. 이 대화 상자는 기존 자산의 이진 파일에 대한 `SHA 1` 체크섬 값이 업로드한 자산의 체크섬 값과 일치하는 경우에만 나타납니다. 이 경우 자산의 이름은 중요하지 않습니다.
 
@@ -327,7 +326,7 @@ Adobe Experience Manager에 많은 에셋을 업로드하면 I/O 요청이 크�
 >
 >3.1 미만의 servlet-api 버전이 있는 JEE 서버에서 실행되는 Adobe Experience Manager에 대해 스트리밍 업로드를 사용할 수 없습니다.
 
-### {#extractzip} 에셋이 포함된 ZIP 아카이브 추출
+### 자산을 포함하는 ZIP 보관 파일 추출 {#extractzip}
 
 다른 지원되는 자산처럼 ZIP 보관 파일을 업로드할 수 있습니다. 동일한 파일 이름 규칙이 ZIP 파일에 적용됩니다. [!DNL Experience Manager] DAM 위치에 ZIP 아카이브를 추출할 수 있습니다. 아카이브 파일에 ZIP이 확장자로 포함되어 있지 않으면 컨텐츠를 사용하여 파일 유형 검색을 활성화합니다.
 
@@ -401,7 +400,7 @@ Adobe Experience Manager에 많은 에셋을 업로드하면 I/O 요청이 크�
 
 1. 특정 기간 후에 자산을 비활성화하려면 **[!UICONTROL 해제 시간]** 필드 옆에 있는 날짜 선택기에서 비활성화 날짜/시간을 선택합니다. 비활성화 날짜는 자산의 활성화 날짜보다 이후여야 합니다. [!UICONTROL 해제 시간] 이후에는 [!DNL Assets] 웹 인터페이스 또는 HTTP API를 통해 에셋 및 해당 변환을 사용할 수 없습니다.
 
-1. **[!UICONTROL 태그]** 필드에서 하나 이상의 태그를 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 `Enter`을 선택합니다. 새 태그가 [!DNL Experience Manager]에 저장됩니다. [!DNL YouTube] 게시할 태그가 필요합니다. [YouTube](video.md#publishing-videos-to-youtube)에 비디오 게시를 참조하십시오.
+1. **[!UICONTROL 태그]** 필드에서 하나 이상의 태그를 선택합니다. 사용자 지정 태그를 추가하려면 상자에 태그 이름을 입력하고 `Enter`을 선택합니다. 새 태그가 [!DNL Experience Manager]에 저장됩니다. [!DNL YouTube] 게시할 태그가 필요합니다. YouTube](video.md#publishing-videos-to-youtube)에 비디오 게시를 참조하십시오.[
 
    >[!NOTE]
    >
@@ -719,7 +718,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 >
 >타임라인에는 컨텐츠 조각](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)에 대한 몇 가지 [옵션이 포함되어 있습니다.
 
-## 자산에 주석 추가 {#annotating}
+## 자산에 주석 달기 {#annotating}
 
 주석은 이미지나 비디오에 추가된 주석 또는 설명 노트입니다. 주석을 통해 마케터는 공동 작업을 수행하고 에셋에 대한 피드백을 남길 수 있습니다.
 
