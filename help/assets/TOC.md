@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 79%
+source-wordcount: '582'
+ht-degree: 80%
 
 ---
 
@@ -124,7 +124,6 @@ ht-degree: 79%
    + [컬렉션, 코드 조각 및 코드 조각 템플릿에 대한 다중 임차인](multi-tenancy.md)
    + [자산에 워터마크 지정](watermarking.md)
    + [자산 템플릿](asset-templates.md)
-   + [폴더 공유 모범 사례 [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
    + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](configure-aem-assets-with-brand-portal.md)
    + [자산을 [!DNL Brand Portal]에 게시](brand-portal-publish-assets.md)
