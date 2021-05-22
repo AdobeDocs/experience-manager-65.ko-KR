@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 6.5 릴리스에서 사용 중단되거나 제거된 기능.
 description: Adobe Experience Manager 6.5의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '1719'
-ht-degree: 72%
+source-wordcount: '1736'
+ht-degree: 71%
 
 ---
 
@@ -28,7 +28,7 @@ AEM 기능을 제거하거나 교체하기 위해 다음 규칙이 적용됩니�
 
 | 영역 | 기능 | 대체 |
 |---|---|---|
-| Creative Cloud 통합 | Creative Cloud 폴더 공유에 대한 AEM은 창의적 사용자에게 AEM의 자산에 대한 액세스 권한을 부여하는 방법으로 AEM 6.2에 도입되어, CC 애플리케이션에서 이를 열 수 있으며 새 파일을 업로드하거나 AEM에 변경 사항을 저장할 수 있습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 향후 Creative Cloud 폴더 공유 통합을 위해 AEM을 개선할 계획이 없습니다. 고객은 AEM에 해당 기능이 포함되어 있는 동안 교체 솔루션을 사용해 보시기 바랍니다. | 또한 Adobe Assset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환하는 것이 좋습니다. 자세한 내용은 AEM 및 Creative Cloud 통합 우수 사례를 검토하십시오. |
+| Creative Cloud 통합 | Creative Cloud 폴더 공유에 대한 AEM은 창의적 사용자에게 AEM의 자산에 대한 액세스 권한을 부여하는 방법으로 AEM 6.2에 도입되어, CC 애플리케이션에서 이를 열 수 있으며 새 파일을 업로드하거나 AEM에 변경 사항을 저장할 수 있습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 향후 Creative Cloud 폴더 공유 통합을 위해 AEM을 개선할 계획이 없습니다. 고객은 AEM에 해당 기능이 포함되어 있는 동안 교체 솔루션을 사용해 보시기 바랍니다. | 또한 Adobe Assset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환하는 것이 좋습니다. |
 | 자산 | `AssetDownloadServlet` 게시 인스턴스에 대해 기본적으로 가 비활성화되어 있습니다. 자세한 내용은 [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)을 참조하십시오. | [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)에 설명된 구성입니다. |
 | 자산 | 사용자에게 `/content/dam/collections`에 대한 충분한(읽기 및 쓰기) 권한이 없는 경우에는 컬렉션을 만들 수 없습니다. | 사용자의 액세스 제어 설정을 적용하고 적합한 권한을 확인하십시오. |
 | Adobe Search &amp; Promote | Adobe Search &amp; Promote와의 통합이 더 이상 사용되지 않습니다. Adobe는 향후 Search &amp; Promote 통합을 개선할 계획이 없습니다. Search &amp; Promote 통합이 더 이상 사용되지 않는 동안에도 계속 지원됩니다. |  |
@@ -56,6 +56,7 @@ AEM 기능을 제거하거나 교체하기 위해 다음 규칙이 적용됩니�
 
 | 영역 | 기능 | 대체 |
 |--- |--- |--- |
+| [!DNL Experience Cloud]과 통합 | [!DNL Adobe I/O]을 통해 구성을 사용하여 자산을 [!DNL Experience Cloud]과 동기화할 수 있습니다. [!DNL Adobe Experience Cloud] 이 이전에 호출되었습니다 [!DNL Adobe Marketing Cloud]. | 쿼리가 있으면 [Adobe 고객 지원 센터](https://www.adobe.com/kr/account/sign-in.supportportal.html)에 문의하십시오. |
 | Analytics Activity Map | AEM 내에 포함된 Activity Map 버전입니다. | Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다. Adobe Analytics](https://docs.adobe.com/content/help/ko-KR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)에서 제공하는 [ActivityMap 플러그인을 사용합니다. |
 | 통합 | ExactTarget 통합이 기본 배포(빠른 시작)에서 제거되어 더 이상 사용할 수 없습니다. | 교체 없음. |
 | 통합 | Salesforce Force API 통합이 기본 배포(빠른 시작)에서 제거되었으며 이제 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 설치할 추가 패키지입니다. | 이 기능은 계속 사용할 수 있습니다. |
