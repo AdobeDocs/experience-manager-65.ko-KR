@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
 workflow-type: tm+mt
 source-wordcount: '313'
@@ -38,7 +37,7 @@ ht-degree: 65%
 
 ## 자산 {#assets}
 
-Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
+Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함한 Assets에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
 
 <table>
  <tbody>
@@ -55,7 +54,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대
   <tr>
    <td>동적 이미징</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">동적 이미징 우수 사례</a></td>
-   <td><p>Dynamic Media 기능을 사용하거나 Dynamic Media Classic과 통합하는 경우 최상의 결과를 위해 이미지를 선명하게 하는 방법 및 이미지 품질을 최적화하는 최상의 방법을 설명합니다. </p> </td>
+   <td><p>Dynamic Media 기능을 사용하거나 Dynamic Media Classic과 통합하는 경우, 최상의 결과를 위해 이미지를 선명하게 하는 방법 및 이미지 품질을 최적화하는 최상의 방법을 설명합니다. </p> </td>
   </tr>
   <tr>
    <td>다언어 자산</td>
@@ -75,4 +74,4 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대
 
 적응형 양식:[적응형 양식 작업에 대한 우수 사례](/help/forms/using/adaptive-forms-best-practices.md) - 적응형 양식 설정, 작성 및 사용자 지정에 대한 우수 사례를 설명합니다.
 
-HTML5 양식:[HTML5 양식 디자인 모범 사례](/help/forms/using/best-practices-for-html5-forms.md) - HTML5 양식의 레이아웃 및 디자인 작업에 대한 우수 사례를 설명합니다.
+HTML5 양식:[HTML5 양식 디자인에 대한 우수 사례](/help/forms/using/best-practices-for-html5-forms.md) - HTML5 양식의 레이아웃 및 디자인 작업에 대한 우수 사례를 설명합니다.
