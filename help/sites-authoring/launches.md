@@ -11,7 +11,6 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-translation-type: tm+mt
 source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
 source-wordcount: '854'
@@ -99,15 +98,15 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->론치를 만들고 편집하려면 기본 그룹 `content-authors`과 같이 `/content/launches`에 대한 액세스 권한이 필요합니다.
+>론치를 만들고 편집하려면 기본 그룹 `content-authors`과 마찬가지로 `/content/launches`에 대한 액세스 권한이 있어야 합니다.
 >
 >문제가 발생하면 시스템 관리자에게 문의하십시오.
 
 >[!CAUTION]
 >
->론치 페이지에서 구성 요소 순서를 변경할 수 없습니다.
+>Launch 페이지에서 구성 요소 순서 재지정은 지원되지 않습니다.
 >
->페이지가 홍보되면 컨텐츠 변경 사항이 반영되지만 구성 요소 위치는 변경되지 않습니다.
+>페이지가 홍보되면 모든 컨텐츠 변경 사항이 반영되지만 구성 요소 위치는 변경되지 않습니다.
 
 
 ### 론치 콘솔 {#the-launches-console}
@@ -116,7 +115,7 @@ ht-degree: 93%
 
 * **도구** 콘솔: **도구**, **사이트**, **론치**.
 
-* 또는 [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)로 직접
+* 또는 [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)로 직접 액세스할 수 있습니다.
 
 ## 참조의 론치(사이트 콘솔) {#launches-in-references-sites-console}
 
@@ -124,8 +123,8 @@ ht-degree: 93%
 1. **참조** 레일을 열고 소스 페이지를 선택합니다.
 1. **론치**&#x200B;를 선택합니다. 그러면 기존 론치가 나열됩니다.
 
-   ![screen_shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
+   ![screen-shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. 적절한 론치를 탭/클릭합니다. 가능한 작업 목록이 표시됩니다.
 
-   ![screen_shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
