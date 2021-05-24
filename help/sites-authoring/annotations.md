@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 99%
 
 ---
-
 
 # 페이지 편집 시 주석{#annotations-when-editing-a-page}
 
@@ -52,10 +51,8 @@ ht-degree: 99%
 >
 >다양한 리소스에 주석을 달 수 있습니다.
 >
->* [자산에 주석 추가](/help/assets/manage-assets.md#annotating)
->* [비디오 자산에 주석 추가](/help/assets/managing-video-assets.md#annotate-video-assets)
-
->
+>* [자산에 주석 달기](/help/assets/manage-assets.md#annotating)
+* [비디오 자산에 주석 달기](/help/assets/managing-video-assets.md#annotate-video-assets)
 
 
 
@@ -70,14 +67,12 @@ ht-degree: 99%
    이제 기존의 모든 주석을 볼 수 있습니다.
 
    >[!NOTE]
-   >
-   >주석 모드를 끝내려면 상단 도구 모음 오른쪽에 있는 [주석] 아이콘(x 기호)을 탭하거나 클릭합니다.
+   주석 모드를 끝내려면 상단 도구 모음 오른쪽에 있는 [주석] 아이콘(x 기호)을 탭하거나 클릭합니다.
 
 1. 주석 추가를 시작하려면 [주석 추가] 아이콘(도구 모음 왼쪽의 더하기 기호)을 클릭하거나 탭합니다.
 
    >[!NOTE]
-   >
-   >주석 추가를 중지하고 보기로 돌아가려면 상단 도구 모음 왼쪽에 있는 [취소] 아이콘(흰색 원으로 둘러싸인 x 기호)을 탭하거나 클릭합니다.
+   주석 추가를 중지하고 보기로 돌아가려면 상단 도구 모음 왼쪽에 있는 [취소] 아이콘(흰색 원으로 둘러싸인 x 기호)을 탭하거나 클릭합니다.
 
 1. 필요한 구성 요소(파란색 테두리로 강조 표시되고 주석을 추가할 수 있는 구성 요소)를 클릭/탭하여 주석을 추가하고 대화 상자를 엽니다.
 
@@ -119,12 +114,10 @@ ht-degree: 99%
 1. 주석 모드를 끝내고 이전에 사용한 모드로 돌아가려면 상단 도구 모음 오른쪽에 있는 [주석] 아이콘(x 기호)을 탭하거나 클릭합니다.
 
 >[!NOTE]
->
->다른 사용자가 잠근 페이지에는 주석을 추가할 수 없습니다.
+다른 사용자가 잠근 페이지에는 주석을 추가할 수 없습니다.
 
 ### 주석 표시기 {#annotation-indicator}
 
 주석은 편집 모드에 나타나지는 않지만, 도구 모음 상단 오른쪽에 있는 배지에 현재 페이지에 대해 존재하는 주석의 수가 표시됩니다. 배지는 기본 [주석] 아이콘을 대신하며 주석 모드로/에서 전환하는 빠른 링크로 작동합니다.
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-
