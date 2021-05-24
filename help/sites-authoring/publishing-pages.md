@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 89%
 
 ---
-
 
 # 페이지 게시 {#publishing-pages}
 
@@ -145,7 +144,7 @@ ht-degree: 89%
 
    계속하려면 **다음**&#x200B;을 클릭하십시오.
 
-1. 게시 관리 마법사의 다음 단계인 **범위**&#x200B;에서 하위 페이지를 포함하거나 참조를 포함하는 것과 같이 게시/게시 취소 범위를 정의할 수 있습니다.
+1. 게시 관리 마법사의 다음 단계인 **범위**&#x200B;에서 하위 페이지 포함 여부, 참조 포함 등과 같이 게시/게시 취소 범위를 정의할 수 있습니다.
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -179,7 +178,7 @@ ht-degree: 89%
 
    ![pp-04](assets/pp-04.png)
 
-   **게시된 참조** 대화 상자에는 선택한 콘텐츠에 대한 참조가 표시됩니다. 기본적으로 모든 항목이 선택되어 있고 게시/게시 취소되지만 선택을 해제하여 취소하면 작업에 포함되지 않습니다.
+   **게시된 참조** 대화 상자는 선택한 컨텐츠에 대한 참조를 표시합니다. 기본적으로 모든 항목이 선택되어 있고 게시/게시 취소되지만 선택을 해제하여 취소하면 작업에 포함되지 않습니다.
 
    **완료**&#x200B;를 클릭하여 변경 내용을 저장하거나 **취소**&#x200B;를 클릭하여 선택 사항을 취소하고 마법사로 돌아갑니다.
 
@@ -195,12 +194,12 @@ ht-degree: 89%
 
    >[!NOTE]
    >
-   >**워크플로우** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 자세한 내용은 게시 권한에 관한 [이 페이지의 이전 참고 사항 및 [워크플로우 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)을 참조하십시오.](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd)
+   >**워크플로우** 단계는 사용자가 보유하거나 보유하지 않을 수 있는 권한에 따라 표시됩니다. 자세한 내용은 이 페이지의 [게시 권한에 대한 이전 메모](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd)워크플로우에 대한 액세스 관리](/help/sites-administering/workflows-managing.md) 및 [워크플로우를 페이지에 적용](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)을 참조하십시오.[
 
    참조는 트리거된 워크플로우 및 지정된 옵션별로 그룹화되어 다음 작업을 수행할 수 있습니다.
 
    * 워크플로우의 제목을 정의합니다.
-   * 워크플로에 [다중 리소스 지원](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)이 있는 경우 워크플로우 패키지를 유지합니다.
+   * 워크플로우가 [다중 리소스 지원](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)이(가) 있는 경우 워크플로우 패키지를 유지합니다.
    * 워크플로우 패키지를 유지하는 옵션이 선택된 경우 워크플로우 패키지의 제목을 정의합니다.
 
    **게시** 또는 **나중에 게시**&#x200B;를 클릭하여 게시를 완료할 수 있습니다.
@@ -220,7 +219,7 @@ ht-degree: 89%
 
 페이지를 편집할 때 해당 페이지의 게시를 취소하려는 경우 [페이지를 게시](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)한 만큼 **페이지 정보** 메뉴에서 **페이지 게시 취소**&#x200B;를 선택합니다.
 
-### 콘솔에서 게시 취소  {#unpublishing-from-the-console}
+### 콘솔에서 게시 취소 {#unpublishing-from-the-console}
 
 [게시하기 위해 게시 관리를 사용](/help/sites-authoring/publishing-pages.md#manage-publication)하는 것과 같은 방식으로 게시 취소할 수 있습니다.
 
@@ -262,7 +261,7 @@ ht-degree: 89%
 
    **게시된 참조** 옵션을 통해 게시되는 참조 자료도 검토할 수 있습니다.
 
-1. [게시 관리 마법사를 정규식으로 ](#manage-publication) 진행하여 트리 게시 또는 게시 취소를 완료합니다.
+1. [게시 관리 마법사를 ](#manage-publication) 정상적으로 계속 진행 하여 트리 게시 또는 게시 취소를 완료합니다.
 
 ## 게시 상태 확인 {#determining-publication-status}
 
