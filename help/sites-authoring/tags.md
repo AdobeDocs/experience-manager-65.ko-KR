@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 52cb99353ae33c8097b6b5bd29f6c040df30b42d
+exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 100%
 
 ---
-
 
 # 태그 사용{#using-tags}
 
