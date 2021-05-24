@@ -5,9 +5,9 @@ contentOwner: AG
 role: Administrator
 feature: 게시
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3c1a30f36222c319c354afa408555982bfe2804e
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1565'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,9 @@ ht-degree: 1%
 
 * **스크립트 확장**:여기에서 다양한 스크립트 조합을 지정할 수 있습니다. [!DNL InDesign Server]에서 자신만의 스크립트를 실행하려면 `/apps/settings/dam/indesign/scripts`에 스크립트를 저장합니다.
 
-[!DNL Adobe InDesign] 스크립트에 대한 자세한 내용은 [InDesign 개발자 설명서](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) 를 참조하십시오
+<!-- TBD: Hiding this link since ADC is not available anymore. 
+For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+-->
 
 >[!CAUTION]
 >
