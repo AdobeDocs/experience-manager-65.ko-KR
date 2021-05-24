@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 55e66c66-0120-4ed4-94c5-d65a434bb59b
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bb6a5913-0871-47c7-8641-936e98920ec0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 90%
 
 ---
 
+# 자산에 대한 이름 지정 규칙 testing{#naming-conventions-for-assets-testing}
 
-# 자산에 대한 이름 지정 규칙 테스트{#naming-conventions-for-assets-testing}
-
-저장소의 노드는 [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository)의 이름 지정 규칙을 따릅니다. 그러나 Adobe Experience Manager는 자산 노드의 이름에 대한 추가적인 규칙을 적용합니다.
+저장소의 노드는 [Java 컨텐츠 저장소](/help/sites-developing/the-basics.md#java-content-repository)의 이름 지정 규칙을 따릅니다. 그러나 Adobe Experience Manager는 자산 노드의 이름에 대한 추가적인 규칙을 적용합니다.
 
 ## 클래식 UI {#classic-ui}
 
@@ -38,4 +37,3 @@ ht-degree: 90%
    * &#39;0&#39; ~ &#39;9&#39;
    * _(밑줄)
    * `-` (대시/빼기 기호)
-
