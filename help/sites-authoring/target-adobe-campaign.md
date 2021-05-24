@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 79%
 
 ---
-
 
 # Adobe Campaign 타깃팅{#targeting-your-adobe-campaign}
 
@@ -36,12 +35,12 @@ Adobe Campaign 뉴스레터를 타깃팅하려면 먼저 클래식 UI(Client Con
 
 세그먼트를 만들려면 다음을 수행하십시오.
 
-1. [세그멘테이션 콘솔](http://localhost:4502/miscadmin#/etc/segmentation)(**&lt;호스트>:&lt;포트>/miscadmin#/etc/segmentation**&#x200B;에서)을 엽니다.
-1. 새 페이지를 만들고 제목을 입력(예: **AC 세그먼트**) 및 **세그먼트(Adobe Campaign)** 템플릿)합니다.
+1. **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**&#x200B;에서 [세그멘테이션 콘솔](http://localhost:4502/miscadmin#/etc/segmentation)을 엽니다.
+1. 새 페이지를 만들고 제목을 입력(예: **AC 세그먼트**)한 다음 **세그먼트(Adobe Campaign)** 템플릿을 선택합니다.
 1. 만들어진 페이지를 왼쪽에 있는 트리 보기에서 선택합니다.
 1. &#39;남성&#39;이라는 이름으로 만든 세그먼트 아래에 새 페이지를 만들어 세그먼트를 만들고(예: 남성 사용자 타깃팅) **세그먼트(Adobe Campaign)** 템플릿을 선택합니다.
 1. 만들어진 세그먼트 페이지를 열고 사이드 킥의 **세그먼트 ID**&#x200B;를 페이지에 드래그하여 놓습니다.
-1. 트레이트를 두 번 클릭하고 이 경우 Adobe Campaign에 정의된 남성 세그먼트(예: **MALE**)를 나타내는 ID를 입력한 다음 **확인**&#x200B;을 클릭합니다. 다음 메시지가 나타납니다.*`targetData.segmentCode == "MALE"`*
+1. 트레이트를 두 번 클릭하고, 이 경우 Adobe Campaign에 정의된 남성 세그먼트(예: **MALE**)를 나타내는 ID를 입력하고 **확인**&#x200B;을 클릭합니다. 다음 메시지가 표시됩니다.*`targetData.segmentCode == "MALE"`*
 1. 다른 세그먼트(예: 여성 사용자를 타깃팅하는 세그먼트)에 대해 이 절차를 반복합니다.
 
 ### 브랜드 만들기  {#creating-a-brand}
@@ -63,10 +62,10 @@ Adobe Campaign 뉴스레터를 타깃팅하려면 먼저 클래식 UI(Client Con
 세그먼트를 위한 경험을 만들려면 다음을 수행하십시오.
 
 1. 방금 만든 **캠페인** 페이지를 엽니다.
-1. **페이지 만들기**&#x200B;를 클릭하고 페이지 제목을 입력(예: 남성 세그먼트에 대한 경험을 만들고 있으므로 남성)하고 **경험** 템플릿을 선택합니다.
+1. **페이지 만들기**&#x200B;를 클릭하고 페이지용 제목을 입력(예: 남성 세그먼트를 위한 경험을 만들 때 남성)한 다음, **경험** 템플릿을 선택합니다.
 1. 만든 경험 페이지를 엽니다.
 1. **편집**&#x200B;을 클릭한 다음, 세그먼트 아래의 **항목 추가**&#x200B;를 클릭합니다.
-1. 남성 세그먼트의 경로(예: **/etc/segmentation/ac-segments/male**)를 입력하고 **확인**&#x200B;을 클릭합니다. 다음 메시지가 나타납니다.*경험이 타깃팅됨:남성*
+1. 남성 세그먼트의 경로(예: **/etc/segmentation/ac-segments/male**)를 입력하고 **확인**&#x200B;을 클릭합니다. 다음 메시지가 표시됩니다.*경험이 타깃팅된 대상:남성*
 1. 이전 절차를 반복하여 모든 세그먼트(예: 여성 타겟)를 위한 경험을 만듭니다.
 
 ## 타깃팅된 컨텐츠로 뉴스레터 만들기  {#creating-a-newsletter-with-targeted-content}
@@ -79,7 +78,7 @@ Adobe Campaign 뉴스레터를 타깃팅하려면 먼저 클래식 UI(Client Con
 
 타깃팅된 컨텐츠로 뉴스레터 만들려면 다음을 수행하십시오.
 
-1. 타깃팅된 컨텐츠로 뉴스레터 만들기:Geometrixx Outdoors의 이메일 캠페인 아래에서 **만들기** > **페이지**&#x200B;를 클릭하거나 탭하고 Adobe Campaign 메일 템플릿 중 하나를 선택합니다.
+1. 타깃팅된 컨텐츠가 있는 뉴스레터를 만듭니다.Geometrixx Outdoors의 이메일 캠페인 아래에서 **만들기** > **페이지**&#x200B;를 클릭하거나 탭하고 Adobe Campaign 메일 템플릿 중 하나를 선택합니다.
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
@@ -99,7 +98,7 @@ Adobe Campaign 뉴스레터를 타깃팅하려면 먼저 클래식 UI(Client Con
 
 1. 다른 세그먼트(남성)로 이동하고 **오퍼 추가**&#x200B;를 클릭한 다음, 더하기 아이콘 +을 클릭합니다. 그런 다음 오퍼를 편집하십시오.
 1. 다른 세그먼트(여성)로 이동하고 **오퍼 추가**&#x200B;를 클릭한 다음, 더하기 아이콘 +을 클릭합니다. 그런 다음 이 오퍼를 편집하십시오.
-1. **다음**&#x200B;을 클릭하여 매핑을 본 다음 **다음**&#x200B;을 클릭하여 Adobe Campaign에 적용되지 않는 설정을 보고 **저장**&#x200B;을 클릭합니다.
+1. **다음**&#x200B;을 클릭하여 매핑을 보고 **다음**&#x200B;을 클릭하여 Adobe Campaign에 적용되지 않는 설정을 보고 **저장**&#x200B;을 클릭하십시오.
 
    컨텐츠가 Adobe Campaign 내부의 배달에서 사용되면 AEM에서는 Adobe Campaign용의 올바른 타깃팅 코드를 자동으로 생성합니다.
 
@@ -112,4 +111,3 @@ Adobe Campaign 뉴스레터를 타깃팅하려면 먼저 클래식 UI(Client Con
    >[!NOTE]
    >
    >Adobe Campaign에서 세그먼트도 설정하는 경우 **미리 보기**&#x200B;를 클릭하면 각 세그먼트에 대한 경험이 표시됩니다.
-
