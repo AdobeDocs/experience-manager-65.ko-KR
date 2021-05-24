@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 72%
 
 ---
-
 
 # 우수 사례{#best-practices}
 
@@ -38,7 +37,7 @@ ht-degree: 72%
 
 ## 자산 {#assets}
 
-Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
+Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함한 Assets에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
 
 <table>
  <tbody>
@@ -55,7 +54,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 비롯한 자산에 대
   <tr>
    <td>동적 이미징</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">동적 이미징 우수 사례</a></td>
-   <td><p>Dynamic Media 기능을 사용하거나 Dynamic Media Classic과 통합하는 경우 최상의 결과를 위해 이미지를 선명하게 하는 방법 및 이미지 품질을 최적화하는 최상의 방법을 설명합니다. </p> </td>
+   <td><p>Dynamic Media 기능을 사용하거나 Dynamic Media Classic과 통합하는 경우, 최상의 결과를 위해 이미지를 선명하게 하는 방법 및 이미지 품질을 최적화하는 최상의 방법을 설명합니다. </p> </td>
   </tr>
   <tr>
    <td>다언어 자산</td>
