@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 92%
 
 ---
-
 
 # 론치 홍보{#promoting-launches}
 
@@ -34,7 +33,7 @@ ht-degree: 92%
 1. 사이드 킥의 **페이지** 탭에서 **론치 홍보**&#x200B;를 클릭합니다.
 1. 승격할 페이지를 지정합니다.
 
-   * (기본값) 현재 페이지만 홍보하려면 **프로덕션 버전에 대한 페이지 변경 사항 승격**&#x200B;을 선택합니다.
+   * (기본값) 현재 페이지만 홍보하려면 **Promote Page Changes To Production Version**&#x200B;을 선택합니다.
    * 현재 페이지의 하위 페이지도 홍보하려면 **하위 페이지 포함**&#x200B;을 선택합니다.
    * 론치에 있는 모든 페이지를 홍보하려면, **프로덕션 버전에 대한 전체 출시 홍보**&#x200B;를 선택합니다.
 
@@ -54,4 +53,3 @@ ht-degree: 92%
 예를 들어, 작성자가 론치 페이지를 승격하면 페이지 활성화 요청을 자동으로 생성할 수 있습니다. 패키지 노드가 수정될 때 작업 흐름 론쳐를 구성하여 요청 활성화 작업 흐름을 시작합니다.
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
-
