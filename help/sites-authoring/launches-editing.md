@@ -11,14 +11,13 @@ topic-tags: site-features
 discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
+exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 92%
 
 ---
-
 
 # 론치 편집{#editing-launches}
 
@@ -48,7 +47,7 @@ Live Copy는 소스 분기&#x200B;*의* 컨텐츠를 론치 분기&#x200B;*에* 
 표준 Live Copy를 편집하는 것과 동일한 방법으로 변경 작업을 수행할 수 있습니다. 예를 들면 다음과 같습니다.
 
 * 닫힌 자물쇠를 클릭하면 이 동기화가 중단되고 론치에서 컨텐츠를 새로 업데이트할 수 있습니다. 잠금 해제되면(열려 있는 자물쇠) 사용자가 수행한 변경 내용을 소스 분기 내의 동일한 위치에 수행된 변경 내용이 덮어쓰지 않습니다.
-* **특정 페이지에 대한 상속을 일시 중단** (및  **다시 시작**)합니다.
+* **특정 페이지에 대한**  상속을 일시 중단(및  **다시 시작**)합니다.
 
 자세한 내용은 [Live Copy 컨텐츠 변경](/help/sites-administering/msm-livecopy.md#changing-live-copy-content)을 참조하십시오.
 
