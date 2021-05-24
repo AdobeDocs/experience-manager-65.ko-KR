@@ -12,14 +12,13 @@ discoiquuid: ea2a523e-8d26-4be4-822f-35f153e40308
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '7365'
 ht-degree: 98%
 
 ---
-
 
 # 기초 구성 요소 {#foundation-components}
 
@@ -200,8 +199,8 @@ ht-degree: 98%
       * **고정 목록 옵션**
 
          * ****
-페이지페이지 목록을 선택합니다.사용 
-`+` 항목을 더 추가하고 위쪽/아래쪽 단추를 추가하여 순서를 조정합니다.
+페이지 목록을 선택합니다.사용 
+`+` 항목을 더 추가하려면 위쪽/아래쪽 단추를 눌러 순서를 조정합니다.
       * **검색 옵션**
 
          * **시작 위치**
@@ -216,7 +215,7 @@ QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있
 쿼리 표현식 및 추가적인 예에 대한 전체 논의는 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)를 참조하십시오.
    * **정렬**
 기준 선택 
-`jcr:title`,  `jcr:created`또는  `cq:lastModified`드롭다운 메뉴 `cq:template` 에서 선택합니다.
+`jcr:title`드롭다운  `jcr:created`메뉴 `cq:lastModified`에서 ,, 또는  `cq:template` 는 사용할 수 있습니다.
 
    * **제한**
 회전판에서 사용할 최대 항목 수로서, 선택 사항입니다.
@@ -229,7 +228,7 @@ QueryBuilder 설명 표기법을 사용하여 검색 쿼리를 입력할 수 있
 >
 >AEM DAM에 있는 디지털 자산을 표시하는 Adobe Experience Manager용의 사용자 지정 회전판 구성 요소를 만들 수 있습니다. 자세한 내용은 [Adobe Experience Manager용 사용자 지정 회전판 구성 요소 만들기](https://helpx.adobe.com/kr/experience-manager/using/custom-carousel-components.html)를 참조하십시오.
 
-### Chart  {#chart}
+### Chart {#chart}
 
 >[!CAUTION]
 >
@@ -339,7 +338,7 @@ CSV 형식을 사용하여 차트 데이터를 입력합니다. CSV 형식은 �
 
 >[!CAUTION]
 >
->이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
+>이 구성 요소는 광범위한 프로젝트 수준 사용자 지정 없이 더 이상 기본 작동하지 않을 것입니다.
 
 Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 파인더에서 Flash 자산을 드래그하거나 대화 상자를 사용할 수 있습니다.
 
@@ -553,7 +552,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
+>이 구성 요소는 광범위한 프로젝트 수준 사용자 지정 없이 더 이상 기본 작동하지 않을 것입니다.
 
 사용자 이름과 암호 필드를 제공합니다.
 
@@ -593,7 +592,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
+>이 구성 요소는 광범위한 프로젝트 수준 사용자 지정 없이 더 이상 기본 작동하지 않을 것입니다.
 
 * **제목**
 
@@ -732,7 +731,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
       나열을 시작할 경로입니다.
 
-### Slideshow  {#slideshow}
+### Slideshow {#slideshow}
 
 >[!CAUTION]
 >
@@ -740,7 +739,7 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
+>이 구성 요소는 광범위한 프로젝트 수준 사용자 지정 없이 더 이상 기본 작동하지 않을 것입니다.
 
 이 구성 요소는 일련의 이미지를 순서대로 로드하여 페이지에 표시합니다. 이미지를 추가 또는 제거하고 각 이미지에 제목을 지정할 수 있습니다. 고급 설정에서 표시 영역의 크기를 지정할 수도 있습니다.
 
@@ -925,11 +924,11 @@ Flash 구성 요소로 Flash 동영상을 로드할 수 있습니다. 컨텐츠 
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [핵심 구성 요소 포함 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html)를 대신 활용할 것을 권장합니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe은 [코어 구성 요소 포함 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html)를 대신 활용할 것을 권장합니다.
 
 >[!CAUTION]
 >
->이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
+>이 구성 요소는 광범위한 프로젝트 수준 사용자 지정 없이 더 이상 기본 작동하지 않을 것입니다.
 
 **비디오** 구성 요소를 사용하면 사전 정의된 &quot;특별&quot; 비디오 요소를 페이지에 가져올 수 있습니다.
 
@@ -1352,7 +1351,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
 구성 요소는 즉시 사용할 수 있도록 구성되지만 필요한 경우 구성을 변경할 수 있습니다. 예를 들어, 주소의 개별 요소에 대해 제한 사항을 추가할 수 있습니다. 필드를 비워 두면 기본 설정이 사용됩니다.
 
-### Captcha  {#captcha}
+### Captcha {#captcha}
 
 >[!CAUTION]
 >
@@ -1360,7 +1359,7 @@ HTML5 요소와 함께 사용하도록 [비디오 프로필 구성](/help/sites-
 
 >[!CAUTION]
 >
->이 구성 요소는 프로젝트 수준의 광범위한 사용자 정의 없이는 더 이상 즉시 사용할 수 없습니다.
+>이 구성 요소는 광범위한 프로젝트 수준 사용자 지정 없이 더 이상 기본 작동하지 않을 것입니다.
 
 Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을 입력하도록 요청합니다. 이 문자열은 새로 고칠 때마다 변경됩니다.
 
@@ -1579,4 +1578,3 @@ Captcha 구성 요소는 사용자가 화면에 표시된 영숫자 문자열을
 워크플로우에서 사용할 제출 단추를 만들 수 있도록 해줍니다.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
-
