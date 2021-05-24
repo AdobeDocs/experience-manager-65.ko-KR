@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7fed51b68c626b54565b9120f69229872946016f
+exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 85%
 
 ---
-
 
 # 페이지 속성 편집{#editing-page-properties}
 
@@ -55,12 +54,12 @@ ht-degree: 85%
 
 * **브랜딩**
 
-   각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전반에 일관된 브랜드 아이덴티티를 적용할 수 있습니다. 이 기능을 사용하려면 [핵심 구성 요소의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 간에 일관된 브랜드 이미지를 적용합니다. 이 기능을 사용하려면 [코어 구성 요소 릴리스 2.14.0 이상의 페이지 구성 요소를 사용해야 합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
 
-   * **재정의**  - 이 페이지에서 브랜드 슬러그를 정의하려면 선택합니다.
-      * 값이 **Override** 값도 설정되어 있지 않으면 모든 하위 페이지에서 값이 상속됩니다.
+   * **무시**  - 이 페이지에서 브랜드 슬러그를 정의하려면 을(를) 선택합니다.
+      * 이 값은 **Override** 값도 설정되지 않은 경우 하위 페이지에서도 상속됩니다.
    * **값**  무시 - 페이지 제목에 추가할 브랜드 슬러그의 텍스트입니다.
-      * 이 값은 &quot;Cycling Tuscany&quot;와 같은 파이프 문자 뒤에 페이지 제목에 추가됩니다. | 항상 WKND 준비&quot;
+      * 이 값은 &quot;Cycling Tuscany&quot;와 같은 파이프 문자 뒤에 페이지 제목에 추가됩니다 | 항상 WKND에 대비할 수 있음&quot;
 * **페이지 제목**
 
    페이지에 사용할 제목입니다. 일반적으로 제목 구성 요소별로 사용됩니다. 비어 있으면 **제목**&#x200B;이 사용됩니다.
@@ -93,7 +92,7 @@ ht-degree: 85%
 
    이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
 
-   예를 들어 별칭 URL이 웹 사이트 `http://example.com,` 경로의 `/v1.0/startpage`로 식별되는 페이지로 `welcome`으로 설정된 경우 `http://example.com/welcome`은 `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
+   예를 들어 웹 사이트 `http://example.com,`에 대해 경로 `/v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `welcome`으로 설정하면, `http://example.com/welcome`이 `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
 
    >[!CAUTION]
    >
@@ -104,7 +103,7 @@ ht-degree: 85%
    >* 기존 페이지로 설정하면 안 됩니다.
 
 
-   또한 별칭 URL에 대한 액세스를 허용하도록 Dispatcher를 구성해야 합니다. 자세한 내용은 [별칭 URL에 대한 액세스 활성화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
+   별칭 URL에 액세스할 수 있도록 Dispatcher를 구성해야 합니다. 자세한 내용은 [별칭 URL에 대한 액세스 활성화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
 
 * **별칭 URL 리디렉션**
 
@@ -138,7 +137,7 @@ ht-degree: 85%
    >
    >예를 들어 `/content/we-retail/spanish` 노드에 대해 `latin-lang`이라는 별칭을 정의하면, 이 페이지는 `/content/we-retail/latin-language`를 통해 액세스할 수 있습니다.
    >
-   >자세한 내용은 SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md#localized-page-names)에 있는 현지화된 페이지 이름을 참조하십시오.[
+   >자세한 내용은 SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md#localized-page-names)에서 현지화된 페이지 이름 을 참조하십시오.[
 
 * **&lt;*경로*>에서 상속됨**
 
@@ -162,7 +161,7 @@ ht-degree: 85%
 
    >[!CAUTION]
    >
-   >**[권한](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 `granite:AuthenticationRequired` 믹싱이 있는 경우 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성한 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 **인증 요구 사항** 아래에 표시되고 이 옵션은 편집할 수 없으며 [권한](/help/sites-authoring/editing-page-properties.md#permissions)을 편집할 수 없습니다.
+   >**[권한](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 `granite:AuthenticationRequired` mixin의 유무에 따라 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 **인증 요구 사항** 아래에 표시되고, 옵션이나 [권한](/help/sites-authoring/editing-page-properties.md#permissions)은 편집할 수 없습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
@@ -237,7 +236,7 @@ ht-degree: 85%
    * [유효 권한](/help/sites-administering/user-group-ac-admin.md) 보기
    >[!CAUTION]
    >
-   >**권한** 탭에서는 `granite:AuthenticationRequired` 믹싱이 있는 경우 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
+   >**권한** 탭에서는 `granite:AuthenticationRequired` mixin의 유무에 따라 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
@@ -252,7 +251,7 @@ ht-degree: 85%
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 [블루프린트] 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Livecopy**
 
