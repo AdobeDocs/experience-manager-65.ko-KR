@@ -2,21 +2,20 @@
 title: 컨텐츠 인사이트
 seo-title: 컨텐츠 인사이트
 description: 컨텐츠 인사이트는 웹 분석 및 SEO 추천을 사용하여 페이지 성능에 대한 정보를 제공합니다.
-seo-description: 컨텐츠 인사이트 웹 분석 및 SEO 추천을 사용하여 페이지 성능에 대한 정보를 제공합니다.
+seo-description: 컨텐츠 인사이트 에서는 웹 분석 및 SEO 추천을 사용한 페이지 성능에 대한 정보를 제공합니다
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 95%
 
 ---
-
 
 # 컨텐츠 인사이트{#content-insight}
 
@@ -51,7 +50,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->컨텐츠 인사이트 보고서를 사용하려면 관리자가 AEM을 SiteCatalyst, Target 및 BrightEdge와 통합해야 합니다. [SightCatalyst](/help/sites-administering/adobeanalytics.md)와 통합, [Adobe Target](/help/sites-administering/target.md)과 통합 및 [BrightEdge](/help/sites-administering/brightedge.md)와 통합을 참조하십시오.
+>컨텐츠 인사이트 보고서를 사용하려면 관리자가 AEM을 SiteCatalyst, Target 및 BrightEdge와 통합해야 합니다. [SightCatalyst](/help/sites-administering/adobeanalytics.md), [Adobe Target과 통합](/help/sites-administering/target.md) 및 [BrightEdge](/help/sites-administering/brightedge.md)와 통합 을 참조하십시오.
 
 ## 보기 보고서 {#the-views-report}
 
@@ -99,4 +98,3 @@ SEO 추천 보고서에는 페이지에 대한 BrightEdge 분석 결과가 포�
 이 보고서를 사용하면 페이지 검색성을 개선하기 위한 개선이 수행되도록 작업을 생성할 수 있습니다. 추천은 추천을 구현하기 위해 작업이 생성되었음을 나타냅니다. [SEO 추천용 작업 지정](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations)을 참조하십시오.
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
-
