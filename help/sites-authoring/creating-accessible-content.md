@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager용 액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성)
 description: AEM을 사용하여 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련
-translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '13956'
 ht-degree: 100%
 
 ---
-
 
 # 액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성) {#creating-accessible-content-wcag-conformance}
 
@@ -286,7 +285,7 @@ Adobe Flash와 같은 특정 미디어 형식의 컨텐츠 재생을 지원하�
 * [성공 기준 이해 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [성공 기준을 충족하는 방법 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### 적응성(1.3)  {#adaptable}
+### 적응성(1.3) {#adaptable}
 
 [지침 1.3 적응성: 정보나 구조의 손상 없이 다양한 방식으로 보여줄 수 있는 컨텐츠(예: 간단한 레이아웃)를 만드십시오.](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -357,6 +356,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
       >
       >* `<b>` 대상 `<strong>`
       >* `<i>` 대상 `<em>`
+
       >
       >이러한 요소는 효과가 동일하지만 `<strong>`과 `<em>`이 의미상 올바른 html이므로 더 많이 사용합니다. 개발팀은 프로젝트 인스턴스를 개발할 때 `<strong>`과 `<em>`(`<b>`와 `<i>` 대신)을 사용하도록 RTE를 구성할 수 있습니다.
 
@@ -458,7 +458,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 컨텐�
 * [성공 기준 이해 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [성공 기준을 충족하는 방법 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### 구별 가능성(1.4)  {#distinguishable}
+### 구별 가능성(1.4) {#distinguishable}
 
 [지침 1.4 구별 가능성: 배경에서 전경을 구별하는 것을 포함하여 사용자가 컨텐츠를 더 쉽게 보고 들을 수 있도록 하십시오.](https://www.w3.org/TR/WCAG/#distinguishable)
 
