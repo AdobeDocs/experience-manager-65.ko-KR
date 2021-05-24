@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+exl-id: dd65b308-c449-4f64-9f46-0797b922910f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 99%
 
 ---
-
 
 # 검색{#searching}
 
@@ -105,7 +104,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 1. 검색 기준을 정의하고 **저장**&#x200B;을 선택합니다.
 
-   ![screen_shot_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
+   ![screen-shot_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
 
 1. 이름을 지정한 다음 **저장**&#x200B;을 사용하여 확인합니다.
 
