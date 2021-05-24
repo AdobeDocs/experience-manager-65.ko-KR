@@ -1,28 +1,27 @@
 ---
 title: 명령줄 시작 및 중지
 seo-title: 명령줄 시작 및 중지
-description: 명령줄에서 AEM을 시작 및 중지하는 방법을 알아봅니다.
-seo-description: 명령줄에서 AEM을 시작 및 중지하는 방법을 알아봅니다.
+description: 명령줄에서 AEM을(를) 시작 및 중지하는 방법을 알아봅니다.
+seo-description: 명령줄에서 AEM을(를) 시작 및 중지하는 방법을 알아봅니다.
 uuid: 585f071c-2286-4a2c-af07-404bf298cba8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
-translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 4%
 
 ---
 
-
 # 명령줄 시작 및 중지{#command-line-start-and-stop}
 
 ## 명령줄 {#starting-adobe-experience-manager-from-the-command-line}에서 Adobe Experience Manager 시작
 
-`start` 스크립트는 *&lt;cq-installation>/bin* 디렉토리에서 사용할 수 있습니다. Unix 버전과 Windows 버전이 모두 제공됩니다. 스크립트는 *&lt;cq-installation>* 디렉토리에 설치된 인스턴스를 시작합니다.
+`start` 스크립트는 *&lt;cq-installation>/bin* 디렉토리에서 사용할 수 있습니다. Unix 및 Windows 버전이 모두 제공됩니다. 스크립트는 *&lt;cq-installation>* 디렉토리에 설치된 인스턴스를 시작합니다.
 
 이러한 두 버전은 AEM 인스턴스를 시작하고 조정하는 데 사용할 수 있는 환경 변수 목록을 지원합니다.
 
@@ -42,7 +41,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td>CQ_INTERFACE</td>
-   <td>이 서버가<br />에 수신해야 하는 인터페이스 </td>
+   <td>이 서버가<br />을 수신하는 인터페이스 </td>
   </tr>
   <tr>
    <td>CQ_RUNMODE</td>
@@ -50,15 +49,15 @@ ht-degree: 4%
   </tr>
   <tr>
    <td>CQ_JARFILE</td>
-   <td>jarfile<br /> 이름 </td>
+   <td>jarfile<br />의 이름 </td>
   </tr>
   <tr>
    <td>CQ_USE_JAAS</td>
    <td>JAAS 사용(true인 경우)<br /> </td>
   </tr>
   <tr>
-   <td>CQ_JAAS_CONFIG</td>
-   <td>JAAS 구성 경로<br /> </td>
+   <td>CQ_JAS_CONFIG</td>
+   <td>JAAS 구성의 경로<br /> </td>
   </tr>
   <tr>
    <td>CQ_JVM_OPTS</td>
@@ -69,7 +68,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->작성자 및 게시 중 일부 실행 모드는 AEM을 처음 시작하기 전에 설정해야 하며 이후에 변경할 수 없습니다. 프로덕션에서 사용할 AEM 인스턴스를 설정하기 전에 자세한 내용은 [실행 모드 설명서](/help/sites-deploying/configure-runmodes.md)를 참조하십시오.
+>작성자 및 게시 중 일부 실행 모드는 AEM을 처음 시작하기 전에 설정해야 하며 나중에 변경할 수 없습니다. 프로덕션에서 사용해야 하는 AEM 인스턴스를 설정하기 전에 [모드 실행 설명서](/help/sites-deploying/configure-runmodes.md)를 참조하십시오.
 
 ### Windows 플랫폼 start.bat 스크립트 예 {#windows-platform-start-bat-script-example}
 
@@ -85,7 +84,7 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->시작 스크립트는 *&lt;cq-installation>/app* 폴더 아래에 설치된 AEM Quickstart를 시작합니다.
+>시작 스크립트는 *의 &lt;cq-installation>/app* 폴더 아래에 설치된 AEM Quickstart를 시작합니다.
 
 ## Adobe Experience Manager {#stopping-adobe-experience-manager} 중지
 
@@ -93,16 +92,16 @@ AEM을 중지하려면 다음 중 하나를 수행합니다.
 
 * 사용 중인 플랫폼에 따라:
 
-   * 스크립트 또는 명령줄에서 AEM을 시작한 경우 **Ctrl+C**&#x200B;를 눌러 서버를 종료합니다.
+   * 스크립트나 명령줄에서 AEM을 시작한 경우 **Ctrl+C**&#x200B;을 눌러 서버를 종료합니다.
    * UNIX에서 시작 스크립트를 사용한 경우 중지 스크립트를 사용하여 AEM을 중지해야 합니다.
 
-* jar 파일을 두 번 클릭하여 AEM을 시작한 경우 시작 창에서 **On** 단추를 클릭하여 서버를 종료합니다(그런 다음 **Off**).
+* jar 파일을 두 번 클릭하여 AEM을 시작한 경우 시작 창에서 **On** 단추를 클릭하여 서버를 종료합니다(그런 다음 버튼이 **Off**)로 변경됨).
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
-## 명령줄 {#stopping-adobe-experience-manager-from-the-command-line}에서 Adobe Experience Manager 중지
+## 명령줄에서 Adobe Experience Manager 중지 {#stopping-adobe-experience-manager-from-the-command-line}
 
-`stop` 스크립트는 *&lt;cq-installation>/bin* 디렉토리에서 사용할 수 있습니다. Unix 버전과 Windows 버전이 모두 제공됩니다. 스크립트는 *&lt;cq-installation>* 디렉토리에 설치된 실행 중인 인스턴스를 중지합니다.
+`stop` 스크립트는 *&lt;cq-installation>/bin* 디렉토리에서 사용할 수 있습니다. Unix 및 Windows 버전이 모두 제공됩니다. 스크립트는 *&lt;cq-installation>* 디렉토리에 설치된 실행 중인 인스턴스를 중지합니다.
 
 ### Unix 플랫폼 중지 스크립트 예 {#unix-platform-stop-script-example}
 
@@ -116,7 +115,7 @@ AEM을 중지하려면 다음 중 하나를 수행합니다.
 ./stop.bat
 ```
 
-저장소를 재배치하지 않고 미리 구성하려는 경우 다음을 수행해야 합니다.
+리포지토리를 재배치하지 않고 미리 구성하려면 다음을 수행해야 합니다.
 
 * 필요한 위치에 `repository.xml` 추출
 
@@ -124,5 +123,4 @@ AEM을 중지하려면 다음 중 하나를 수행합니다.
 
 * `bootstrap.properties` 만들기 및 `repository.config` 정의
 
-다시 한 번 실제 설치를 시작하기 전에
-
+실제 설치를 시작하기 전에
