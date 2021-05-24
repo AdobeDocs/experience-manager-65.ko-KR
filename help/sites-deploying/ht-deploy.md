@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 257f3e4a-4b59-4cbb-bf61-f72f173676e6
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: 구성
+exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-
-# 구성 방법 아티클{#configuration-how-to-articles}
+# 구성 방법 문서{#configuration-how-to-articles}
 
 다음 항목에서는 특정 AEM 배포 작업을 수행하는 방법을 설명합니다.
 
@@ -28,5 +27,4 @@ ht-degree: 0%
 
 * [성능 조정 팁](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 * [시작 화면에서 기능을 제거하는 방법](/help/sites-developing/customizing-the-welcome-console.md)
-* [위치 추적기 기능 끄기 방법](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
-
+* [위치 추적기 기능을 끄는 방법](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
