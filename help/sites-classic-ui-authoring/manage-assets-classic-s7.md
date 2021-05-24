@@ -10,20 +10,19 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 863c3292d272ba4c80a80645262919e55870a437
+exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3250'
 ht-degree: 86%
 
 ---
 
-
 # Scene7 기능을 페이지에 추가{#adding-scene-features-to-your-page}
 
 [Adobe Scene7](https://help.adobe.com/ko_KR/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html)은 풍부한 미디어 자산을 관리 및 개선하고, 웹, 모바일, 이메일 및 인터넷 연결 디스플레이와 프린터에 게시 및 제공하기 위한 호스팅된 솔루션입니다.
 
-다양한 뷰어에서 Scene7에 게시된 Experience Manager 에셋을 볼 수 있습니다.
+다양한 뷰어에서 Scene7에 게시된 Experience Manager 자산을 볼 수 있습니다.
 
 * 확대/축소
 * 플라이아웃
@@ -31,13 +30,13 @@ ht-degree: 86%
 * 이미지 템플릿
 * 이미지
 
-Experience Manager에서 Scene7으로 바로 디지털 자산을 게시할 수 있으며 Scene7에서 Experience Manager으로 디지털 자산을 게시할 수 있습니다.
+Experience Manager에서 Scene7으로 직접 디지털 자산을 게시할 수 있으며, Scene7에서 Experience Manager으로 디지털 자산을 게시할 수 있습니다.
 
-이 문서에서는 Experience Manager에서 Scene7으로 디지털 자산을 게시하거나 그 반대로 게시하는 방법에 대해 설명합니다. 뷰어도 자세히 설명되어 있습니다. Scene7에 대한 Experience Manager 구성에 대한 자세한 내용은 [Experience Manager](/help/sites-administering/scene7.md)과 Scene7 통합을 참조하십시오.
+이 문서에서는 Experience Manager에서 Scene7으로 또는 그 반대로 디지털 자산을 게시하는 방법에 대해 설명합니다. 뷰어도 자세히 설명되어 있습니다. Scene7에 대한 Experience Manager 구성에 대한 내용은 [Scene7과 Experience Manager](/help/sites-administering/scene7.md)통합 을 참조하십시오.
 
 [이미지 맵 추가](/help/assets/image-maps.md)도 참조하십시오.
 
-Experience Manager에서 비디오 구성 요소 사용에 대한 자세한 내용은 다음을 참조하십시오.
+Experience Manager에 비디오 구성 요소를 사용하는 방법에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [비디오](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
 
@@ -51,7 +50,7 @@ Experience Manager에서 비디오 구성 요소 사용에 대한 자세한 내�
 
 >[!NOTE]
 >
->Experience Manager은 비동기적으로 Scene7에 게시합니다. **게시**&#x200B;를 클릭하면 자산이 Scene7에 게시되는 데 몇 초 정도 걸릴 수 있습니다.
+>Experience Manager은 Scene7에 비동기적으로 게시합니다. **게시**&#x200B;를 클릭하면 자산이 Scene7에 게시되는 데 몇 초 정도 걸릴 수 있습니다.
 
 
 ### 자산 콘솔에서 게시 {#publishing-from-the-assets-console}
@@ -92,7 +91,7 @@ Experience Manager에서 비디오 구성 요소 사용에 대한 자세한 내�
 
    >[!NOTE]
    >
-   >자산이 Scene7에 제대로 게시되지 않으면 링크가 **게시 실패**&#x200B;로 바뀝니다. 자산이 Scene7에 이미 게시된 경우 링크는 **Scene7에 다시 게시**&#x200B;로 표시됩니다. 다시 게시를 사용하면 Experience Manager에서 자산을 변경하고 다시 게시할 수 있습니다.
+   >자산이 Scene7에 제대로 게시되지 않으면 링크가 **게시 실패**&#x200B;로 바뀝니다. 자산이 Scene7에 이미 게시된 경우 링크는 **Scene7에 다시 게시**&#x200B;로 표시됩니다. 다시 게시를 사용하면 Experience Manager에서 자산을 변경한 후 다시 게시할 수 있습니다.
 
 ### CQ 대상 폴더의 외부에서 자산 게시 {#publishing-assets-from-outside-the-cq-target-folder}
 
@@ -124,7 +123,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. **Scene7 게시 상태 확인**&#x200B;을 클릭합니다. 자산이 게시되지 않은 경우 Experience Manager은 자산을 Scene7에 게시합니다. 업로드 후 자산은 임시 폴더에 있습니다. 기본적으로 임시 폴더는 **name_of_the_company/CQ5_adhoc**&#x200B;에 있습니다. [필요한 경우 구성](#configuringtheadhocfolder)할 수 있습니다.
+1. **Scene7 게시 상태 확인**&#x200B;을 클릭합니다. 자산이 게시되지 않으면 Experience Manager은 자산을 Scene7에 게시합니다. 업로드 후 자산은 임시 폴더에 있습니다. 기본적으로 임시 폴더는 **name_of_the_company/CQ5_adhoc**&#x200B;에 있습니다. [필요한 경우 구성](#configuringtheadhocfolder)할 수 있습니다.
 
    >[!NOTE]
    >
@@ -132,7 +131,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
 ## Scene7 구성 요소  {#scene-components}
 
-다음 Scene7 구성 요소를 Experience Manager에서 사용할 수 있습니다.
+다음 Scene7 구성 요소는 Experience Manager에서 사용할 수 있습니다.
 
 * 확대/축소
 * 플라이아웃(확대/축소)
@@ -180,7 +179,7 @@ CQ 대상 폴더 외부에 있는 자산을 게시하려면:
 
 클래식 UI에서 응답형 사이트에 대화형 보기 환경을 추가하려면:
 
-1. Experience Manager에 로그인하고 [구성된 Adobe Scene7 Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration)이 있으며 Scene7 구성 요소를 사용할 수 있는지 확인합니다.
+1. Experience Manager에 로그인하고 [구성된 Adobe Scene7 Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration)이 있으며 Scene7 구성 요소가 사용 가능한지 확인하십시오.
 
    >[!NOTE]
    >
@@ -227,7 +226,7 @@ HTML5 플라이아웃 구성 요소에서 자산은 분할 화면으로 표시�
 
 ### 이미지 {#image}
 
-Scene7 이미지 구성 요소를 사용하면 Scene7 수정자, 이미지 또는 뷰어 사전 설정, 선명하게 하기 등의 Scene7 기능을 이미지에 추가할 수 있습니다. Scene7 이미지 구성 요소는 특수 Scene7 기능이 있는 Experience Manager의 다른 이미지 구성 요소와 유사합니다. 이 예의 이미지에는 Scene7 URL 수정자, **&amp;op_invert=1**&#x200B;이 적용되어 있습니다.
+Scene7 이미지 구성 요소를 사용하면 Scene7 수정자, 이미지 또는 뷰어 사전 설정, 선명하게 하기 등의 Scene7 기능을 이미지에 추가할 수 있습니다. Scene7 이미지 구성 요소는 특수 Scene7 기능이 있는 Experience Manager에 있는 다른 이미지 구성 요소와 유사합니다. 이 예의 이미지에는 Scene7 URL 수정자, **&amp;op_invert=1**&#x200B;이 적용되어 있습니다.
 
 ![](do-not-localize/chlimage_1-4.png)
 
@@ -327,15 +326,15 @@ Scene7 비디오 구성 요소에서 응용 비디오 세트를 사용할 때는
 
 ## Scene7 컨텐츠 브라우저 {#scene-content-browser}
 
-Scene7 컨텐츠 브라우저를 사용하면 Experience Manager에서 바로 Scene7의 컨텐츠를 볼 수 있습니다. 컨텐츠 브라우저에 액세스하려면 컨텐츠 파인더의 터치 최적화 사용자 인터페이스에서 **Scene7**&#x200B;을 선택하거나, 클래식 사용자 인터페이스에서 **S7** 아이콘을 선택하십시오. 기능은 두 사용자 인터페이스에서 동일합니다.
+Scene7 컨텐츠 브라우저를 사용하면 Experience Manager에서 직접 Scene7의 컨텐츠를 볼 수 있습니다. 컨텐츠 브라우저에 액세스하려면 컨텐츠 파인더의 터치 최적화 사용자 인터페이스에서 **Scene7**&#x200B;을 선택하거나, 클래식 사용자 인터페이스에서 **S7** 아이콘을 선택하십시오. 기능은 두 사용자 인터페이스에서 동일합니다.
 
-구성이 여러 개인 경우 기본적으로 Experience Manager은 [기본 구성](/help/sites-administering/scene7.md#configuring-a-default-configuration)을 표시합니다. 드롭다운 메뉴의 Scene7 컨텐츠 브라우저에서 직접 다른 구성을 선택할 수 있습니다.
+구성이 여러 개인 경우 기본적으로 Experience Manager에 [기본 구성](/help/sites-administering/scene7.md#configuring-a-default-configuration)이 표시됩니다. 드롭다운 메뉴의 Scene7 컨텐츠 브라우저에서 직접 다른 구성을 선택할 수 있습니다.
 
 >[!NOTE]
 >
 >* 임시 폴더에 있는 자산은 Scene7 컨텐츠 브라우저에 나타나지 않습니다.
 >* [보안 미리 보기가 활성화](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)되면 Scene7의 게시된 자산 및 게시되지 않은 자산이 모두 Scene7 컨텐츠 브라우저에 표시됩니다.
->* 컨텐츠 브라우저에 옵션으로 **Scene7** 또는 **S7** 아이콘이 표시되지 않으면 [Scene7이 Experience Manager](/help/sites-administering/scene7.md)에서 작동하도록 구성해야 합니다.
+>* 컨텐츠 브라우저에 **Scene7** 또는 **S7** 아이콘이 옵션으로 표시되지 않는 경우 [Scene7이 Experience Manager](/help/sites-administering/scene7.md)에서 작동하도록 구성해야 합니다.
 >* 비디오의 경우 Scene7 컨텐츠 브라우저는 다음을 지원합니다.
    >   * 응용 비디오 세트: 여러 화면 간에 원활하게 재생되는 데 필요한 모든 비디오 표현물의 컨테이너
    >   * 단일 MP4 비디오
@@ -368,7 +367,7 @@ Scene7 컨텐츠 브라우저를 사용하면 Experience Manager에서 바로 Sc
 
 ### 컨텐츠 브라우저로 Scene7 자산 검색 {#searching-for-scene-assets-with-the-content-browser}
 
-Scene7 자산 검색은 검색 시 Experience Manager으로 직접 가져오는 대신 Scene7 시스템에서 자산의 원격 보기를 실제로 보고 있다는 점을 제외하고 Experience Manager 자산 검색과 유사합니다.
+Scene7 자산 검색은 검색할 때 Experience Manager으로 직접 가져오지 않고 Scene7 시스템에서 자산의 원격 보기가 실제로 표시된다는 점을 제외하면 Experience Manager 자산 검색과 유사합니다.
 
 클래식 UI 또는 터치에 적합한 UI를 사용하여 자산을 보고 검색할 수 있습니다. 인터페이스에 따라, 검색 방식이 약간 다릅니다.
 
@@ -380,7 +379,7 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 
 **폴더/경로** 표시되는 폴더의 이름은 선택한 구성에 따라 다릅니다. 폴더 아이콘을 클릭하고 하위 폴더를 선택한 후 확인 표시를 클릭하여 하위 레벨로 드릴다운할 수 있습니다.
 
-키워드를 입력하고 폴더를 선택하면 Experience Manager은 해당 폴더 및 하위 폴더를 검색합니다. 그러나 검색 시 키워드를 입력하지 않을 경우 폴더를 선택하면 해당 폴더의 자산만 표시되고 하위 폴더는 포함되지 않습니다.
+키워드를 입력하고 폴더를 선택하면 Experience Manager은 해당 폴더와 하위 폴더를 검색합니다. 그러나 검색 시 키워드를 입력하지 않을 경우 폴더를 선택하면 해당 폴더의 자산만 표시되고 하위 폴더는 포함되지 않습니다.
 
 기본적으로 Experience Manager은 선택한 폴더와 모든 하위 폴더를 검색합니다.
 
@@ -404,7 +403,7 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
    >
    >
 * 비디오를 검색할 때 단일 표현물을 검색합니다. 결과는 원래 표현물(*.mp4만 해당) 및 인코딩된 표현물을 반환합니다.
-* 응용 비디오 세트를 검색할 때 폴더 및 모든 하위 폴더가 검색되지만, 검색에 키워드를 추가한 경우에만 해당됩니다. 키워드를 추가하지 않은 경우 Experience Manager은 하위 폴더를 검색하지 않습니다.
+* 응용 비디오 세트를 검색할 때 폴더 및 모든 하위 폴더가 검색되지만, 검색에 키워드를 추가한 경우에만 해당됩니다. 키워드를 추가하지 않은 경우 Experience Manager이 하위 폴더를 검색하지 않습니다.
 
 
 
