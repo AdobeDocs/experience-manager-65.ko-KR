@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 98%
 
 ---
-
 
 # 페이지 성능 분석{#analyzing-page-performance}
 
@@ -111,4 +110,3 @@ SEO 추천을 위한 작업을 생성하려면 다음 절차를 수행하십시�
    **참고:**&#x200B;생성된 작업은 SEO 추천이 적용되는 페이지의 경로를 포함합니다.
 
 1. [완료]를 클릭하거나 탭하여 [작업 생성됨] 메시지를 닫습니다.
-
