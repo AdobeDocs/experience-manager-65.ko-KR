@@ -1,14 +1,13 @@
 ---
 title: 비동기 작업
 description: Adobe Experience Manager은 리소스 집약적인 일부 작업을 비동기식으로 완료하여 성능을 최적화합니다.
-translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 98%
 
 ---
-
 
 # 비동기 작업 {#asynchronous-operations}
 
@@ -144,9 +143,9 @@ AEM에 대한 자산, 페이지 또는 참조의 임계값 수를 구성하여 �
 >[!MORELIKETHIS]
 >
 >* [페이지 생성 및 구성](/help/sites-authoring/managing-pages.md)
->* [Live Copy 만들기 및 동기화](/help/sites-administering/msm-livecopy.md)
->* [Experience Manager에서 이메일을 구성합니다](/help/sites-administering/notification.md).
->* [에셋 메타데이터](/help/assets/metadata.md#import-metadata) 가져오기
->* [에셋 메타데이터](/help/assets/metadata.md#export-metadata) 내보내기
->* [연결된 자산을 사용하여 원격 배포에서 DAM 자산을 공유할 수 있습니다](/help/assets/use-assets-across-connected-assets-instances.md).
+* [Live Copy 생성 및 동기화](/help/sites-administering/msm-livecopy.md)
+* [Experience Manager ](/help/sites-administering/notification.md)에서 이메일을 구성합니다.
+* [자산 메타데이터 가져오기](/help/assets/metadata.md#import-metadata).
+* [자산 메타데이터](/help/assets/metadata.md#export-metadata) 내보내기.
+* [연결된 자산을 사용하여 원격 배포에서 DAM 자산을 공유할 수 있습니다](/help/assets/use-assets-across-connected-assets-instances.md).
 
