@@ -1,18 +1,17 @@
 ---
 title: 스마트 이미징
 description: 스마트 이미징은 각 사용자의 고유한 보기 특성을 적용하여 환경에 최적화된 적합한 이미지를 자동으로 제공하므로 향상된 성능과 참여를 제공합니다.
-uuid: c11e52ba-8d64-4dc5-b30a-fc10c2b704e5
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
-feature: 자산 관리
+feature: 자산 관리,표현물
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 8d27457ad88cb84e670e78bab4c40da36fcfc629
+source-git-commit: fde3cb4a2461ca80f410f360fd5d56f359cec149
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '2626'
 ht-degree: 1%
 
 ---
@@ -41,6 +40,53 @@ ht-degree: 1%
 |  |  |  |  | 평균 = 51% |
 
 위와 유사하게, Adobe은 라이브 고객 사이트에서 7009 URL을 사용하는 테스트도 실행했습니다. JPEG에 대해 평균 38%의 파일 크기 최적화를 수행할 수 있었습니다. WebP 포맷의 PNG의 경우 평균 31% 더 많은 파일 크기 최적화를 수행할 수 있었습니다. 스마트 이미징의 기능 때문에 이러한 유형의 최적화가 가능합니다.
+
+모바일 웹에서는 두 가지 요소로 인해 이러한 문제가 더 복잡해집니다.
+
+* 폼 팩터와 고해상도 디스플레이가 서로 다른 다양한 장치입니다.
+* 제한된 네트워크 대역폭입니다.
+
+이미지 측면에서 볼 때, 가장 좋은 품질의 이미지를 가능한 효율적으로 제공하는 것이 목표입니다.
+
+### 장치 픽셀 비율 최적화 기본 정보 {#dpr}
+
+CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실제 픽셀과 논리 픽셀 간의 관계입니다. 특히 최신 모바일 기기들의 화소 해상도는 망막 스크린의 출현으로 빠른 속도로 높아지고 있다.
+
+장치 픽셀 비율 최적화를 활성화하면 이미지가 화면의 기본 해상도로 렌더링되어 선명하게 표시됩니다.
+
+스마트 이미징 DPR 구성을 켜면 요청이 제공되는 디스플레이의 픽셀 밀도를 기반으로 요청된 이미지가 자동으로 조정됩니다. 현재 디스플레이의 픽셀 밀도는 Akamai CDN 헤더 값에서 가져옵니다.
+
+| 이미지의 URL에 허용되는 값 | 설명 |
+|---|---|
+| `dpr=off` | 개별 이미지 URL 수준에서 DPR 최적화를 끄십시오. |
+| `dpr=on,dprValue` | 스마트 이미징에서 감지한 DPR 값을 사용자 지정 값(클라이언트측 논리 또는 기타 방법으로 감지됨)으로 재정의합니다. `dprValue`에 허용되는 값은 0보다 큰 수입니다. 지정한 값 1.5, 2 또는 3은 일반적입니다. |
+
+>[!NOTE]
+>
+>* 회사 수준 DPR 설정이 해제되어 있더라도 `dpr=on,dprValue`을 사용할 수 있습니다.
+>* DPR 최적화로 인해 결과 이미지가 MaxPix Dynamic Media 설정보다 클 때 이미지의 종횡비를 유지하여 MaxPix 너비가 항상 인식됩니다.
+
+
+| 요청한 이미지 크기 | DPR 값 | 배달된 이미지 크기 |
+|---|---|---|
+| 816x500 | 1 | 816x500 |
+| 816x500 | 2 | 1632x1000 |
+
+[이미지 작업 시](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 및 [스마트 자르기 작업 시](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)를 참조하십시오.
+
+### 네트워크 대역폭 최적화 기본 정보 {#network-bandwidth-optimization}
+
+네트워크 대역폭을 켜면 실제 네트워크 대역폭을 기반으로 제공되는 이미지 품질이 자동으로 조정됩니다. 낮은 네트워크 대역폭의 경우 이미 켜져 있어도 DPR 최적화가 자동으로 꺼집니다.
+
+원하는 경우 회사는 이미지 URL에 `network=off`을 추가하여 개별 이미지 수준에서 네트워크 대역폭 최적화를 옵트아웃할 수 있습니다.
+
+| 이미지의 URL에 허용되는 값 | 설명 |
+|---|---|
+| `network=off` | 개별 이미지 URL 수준에서 네트워크 최적화를 해제합니다. |
+
+>[!NOTE]
+>
+>DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어 DPR=2가 있는 iPhone5 및 DPR=3이 있는 iPhone12에서는 모두 DPR=2를 표시합니다. 여전히 고해상도 장치의 경우 DPR=2를 전송하는 것이 DPR=1을 보내는 것보다 좋습니다. 준비 중:Adobe이 클라이언트측 코드에서 작동하여 최종 사용자의 DPR을 정확하게 판별하고 있습니다.
 
 ## 최신 스마트 이미징의 주요 이점은 무엇입니까?{#what-are-the-key-benefits-of-smart-imaging}
 
@@ -134,13 +180,23 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정 또는 계정에 로그인합니다.
 
-**[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 누릅니다. **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 도메인을 사용 중인 경우 기술 지원 티켓을 제출할 때 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
+**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL 일반 설정]** **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 필드를 찾습니다. 현재 일반 도메인을 사용 중인 경우 기술 지원 티켓을 제출할 때 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
 
 첫 번째 사용자 지정 도메인은 Dynamic Media 라이센스를 통해 추가 비용이 들지 않습니다.
 
 ## 내 계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까?{#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
 스마트 이미징 사용 요청을 시작합니다.자동으로 활성화되지 않습니다.
+
+기본적으로 Dynamic Media 회사 계정에 대해 스마트 이미징 DPR 및 네트워크 최적화가 비활성화(꺼짐)됩니다. 이러한 기본 개선 사항 중 하나 또는 둘 다 활성화(켜기)하려면 아래 설명된 지원 사례를 만드십시오.
+
+스마트 이미징 DPR 및 네트워크 최적화에 대한 릴리스 일정은 다음과 같습니다.
+
+| 지역 | Target 날짜 |
+|---|---|
+| 북미 | 2021년 5월 24일 |
+| 유럽, 중동, 아프리카 | 2021년 6월 25일 |
+| 아시아-태평양 | 2021년 7월 19일 |
 
 1. [Admin Console을 사용하여 지원 사례를 만듭니다.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. 지원 사례에 다음 정보를 제공하십시오.
@@ -150,7 +206,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
       도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정 또는 계정에 로그인합니다.
 
-      **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다.
+      **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;을 클릭합니다.
 
       **[!UICONTROL 게시된 서버 이름.]** 필드를 찾습니다.
    1. Adobe을 통해 CDN을 사용하고 있으며 직접 관계로 관리하지 않는지 확인합니다.
@@ -158,7 +214,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
       도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정 또는 계정에 로그인합니다.
 
-      **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 클릭합니다.
+      **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;을 클릭합니다.
 
       **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 Dynamic Media Classic 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
    1. HTTP/2에서 작업하기 위해 스마트 이미징이 필요한지 여부를 나타냅니다.
@@ -189,7 +245,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 ## 스마트 이미징이 예상대로 작동하는지 확인하려면 어떻게 해야 합니까?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. 계정이 스마트 이미징으로 구성된 후 브라우저에서 Dynamic Media Classic 또는 Adobe Experience Manager - Dynamic Media 이미지 URL을 로드합니다.
-1. 브라우저에서 **[!UICONTROL 보기 > 개발자 > 개발자 도구]**&#x200B;를 클릭하여 Chrome 개발자 창을 엽니다. 또는 원하는 브라우저 개발자 도구를 선택합니다.
+1. 브라우저에서 **[!UICONTROL 보기]** > **[!UICONTROL 개발자]** > **[!UICONTROL 개발자 도구]**&#x200B;를 클릭하여 Chrome 개발자 창을 엽니다. 또는 원하는 브라우저 개발자 도구를 선택합니다.
 
 1. 개발자 도구가 열려 있을 때 캐시가 비활성화되어 있는지 확인합니다.
 
@@ -209,6 +265,10 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 예. URL에 수정자 `bfc=off`을 추가하여 스마트 이미징을 끌 수 있습니다.
 
+## 회사 수준에서 DPR 및 네트워크 최적화를 끄도록 요청할 수 있습니까?{#dpr-companylevel-turnoff}
+
+예. 회사에서 DPR 및 네트워크 최적화를 비활성화하려면 이 주제의 앞부분에서 설명한 대로 지원 사례를 만드십시오.
+
 ## &quot;조정&quot;은 무엇입니까? 정의할 수 있는 설정이나 동작이 있습니까? (#tuning-settings)
 
 현재 선택적으로 스마트 이미징을 활성화하거나 비활성화할 수 있습니다. 다른 튜닝은 사용할 수 없습니다.
@@ -217,6 +277,14 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 현재 Smart Imaging에는 이러한 프로비저닝 기능이 없습니다.
 
-## 경우에 따라 JPEG 이미지가 WebP 이미지 대신 Chrome으로 반환됩니다. 왜? (#jpeg-webp)
+## 경우에 따라 JPEG 이미지가 WebP 이미지 대신 Chrome으로 반환됩니다. 왜 이런 변화가 일어납니까? (#jpeg-webp)
 
 스마트 이미징은 전환이 유용한지 여부를 결정합니다. 비교 가능한 품질과 함께 파일 크기가 더 작은 경우에만 새 이미지를 반환합니다.
+
+## 스마트 이미징 DPR 최적화는 Adobe Experience Manager Sites 구성 요소 및 Dynamic Media 뷰어와 어떻게 작동합니까?
+
+* Experience Manager 사이트 핵심 구성 요소는 기본적으로 DPR 최적화를 위해 구성됩니다. 서버측 스마트 이미징 DPR 최적화로 인해 큰 이미지가 발생하지 않도록 하기 위해 항상 `dpr=off`이 Sites 핵심 구성 요소 Dynamic Media 이미지에 추가됩니다.
+* 서버측 스마트 이미징 DPR 최적화로 인해 큰 이미지가 발생하지 않도록 DPR 최적화에 대해 Dynamic Media 기초 구성 요소가 기본적으로 구성되어 있으므로 `dpr=off`이 항상 Dynamic Media Foundation 구성 요소 이미지에 추가됩니다. 고객이 DM 기초 구성 요소에서 DPR 최적화를 선택 취소하더라도 서버측 스마트 이미징 DPR이 시작되지 않습니다. 요약하면 DM 기초 구성 요소에서 DPR 최적화는 DM 기초 구성 요소 수준 설정에만 적용됩니다.
+* 모든 뷰어 측 DPR 최적화는 서버 측 스마트 이미징 DPR 최적화와 함께 작동하며 과도한 크기의 이미지를 생성하지 않습니다. 즉, 확대/축소 지원 뷰어의 기본 보기처럼 DPR이 뷰어에 의해 처리되는 모든 위치에서 서버 측 스마트 이미징 DPR 값이 트리거되지 않습니다. 마찬가지로 색상 견본 및 축소판과 같은 뷰어 요소에 DPR 처리가 없으면 서버측 스마트 이미징 DPR 값이 트리거됩니다.
+
+[이미지 작업 시](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) 및 [스마트 자르기 작업 시](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)를 참조하십시오.
