@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 96%
 
 ---
-
 
 # 페이지 속성 편집{#editing-page-properties}
 
@@ -82,7 +81,7 @@ ht-degree: 96%
 
    이 페이지의 별칭 URL을 입력할 수 있습니다. 이를 통해 더 간단하고 기억에 남는 URL을 만들 수 있습니다.
 
-   예를 들어 별칭 URL이 웹 사이트 h `ttp://example.com,`의 경로 / `v1.0/startpage`에 대해 식별되는 페이지에 `elcome`으로 설정된 경우 h `ttp://example.com/welcome`은 h `ttp://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
+   예를 들어 `ttp://example.com,` 웹 사이트에 대해 경로 / `v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `elcome`을 (를) 사용하여 설정하면, `ttp://example.com/welcome`이 `ttp://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
 
    >[!CAUTION]
    >
@@ -172,7 +171,7 @@ ht-degree: 96%
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 [블루프린트] 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Livecopy**
 
@@ -195,4 +194,3 @@ ht-degree: 96%
    탭이 여러 개 있는 대화 상자가 열립니다.
 
 1. 필요한 변경 작업을 수행하고 **확인**&#x200B;을 클릭하여 저장합니다.
-
