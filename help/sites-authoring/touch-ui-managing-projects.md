@@ -1,22 +1,21 @@
 ---
 title: 프로젝트 관리
 seo-title: 프로젝트 관리
-description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 리소스들을 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
-seo-description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 리소스들을 하나의 엔티티로 그룹화하여 프로젝트를 구성할 수 있습니다
+description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 리소스를 그룹화하여 프로젝트를 구성할 수 있습니다
+seo-description: 프로젝트를 사용하면 프로젝트 콘솔에서 액세스 및 관리할 수 있는 하나의 엔티티로 리소스를 그룹화하여 프로젝트를 구성할 수 있습니다
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 84%
 
 ---
-
 
 # 프로젝트 관리{#managing-projects}
 
@@ -38,7 +37,7 @@ ht-degree: 84%
 
 >[!CAUTION]
 >
->프로젝트 만들기, 작업/워크플로우 만들기, 팀 보기 및 관리와 같은 프로젝트 기능을 사용하는 동안 프로젝트의 사용자가 다른 사용자/그룹을 보려면 해당 사용자는 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 액세스 권한이 있어야 합니다. 이를 구현하는 가장 쉬운 방법은 **projects-users** 그룹에 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 권한을 제공하는 것입니다.
+>프로젝트의 사용자가 프로젝트 만들기, 작업/워크플로우 만들기, 팀 보기 및 관리와 같은 프로젝트 기능을 사용할 때 다른 사용자/그룹을 보려면 해당 사용자는 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 권한이 있어야 합니다. 이를 구현하는 가장 쉬운 방법은 **projects-users** 그룹에 **/home/users** 및 **/home/groups**&#x200B;에 대한 읽기 권한을 제공하는 것입니다.
 
 ## 프로젝트 만들기 {#creating-a-project}
 
@@ -103,7 +102,7 @@ ht-degree: 84%
 
 타일에 항목을 추가하려면 다음을 수행하십시오.
 
-1. **프로젝트**&#x200B;에서 프로젝트를 탐색하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
+1. **프로젝트**&#x200B;에서 프로젝트로 이동하고 항목을 추가할 타일의 추가 + 아이콘을 클릭합니다.
 
    ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -133,13 +132,13 @@ ht-degree: 84%
 
 ### 프로젝트 타임라인 보기 {#viewing-a-project-timeline}
 
-프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 **타임라인**&#x200B;을 클릭/탭한 다음 선택 모드를 시작하고 프로젝트를 선택합니다. 자산은 왼쪽 창에 표시됩니다. **프로젝트** 콘솔로 돌아가려면 **타임라인**&#x200B;을 클릭/탭합니다.
+프로젝트 타임라인에서는 프로젝트의 자산이 마지막으로 사용된 시기에 대한 정보를 제공합니다. 프로젝트 타임라인을 보려면 **타임라인**&#x200B;을 클릭/탭한 다음 선택 모드로 전환하고 프로젝트를 선택하십시오. 자산은 왼쪽 창에 표시됩니다. **타임라인**&#x200B;을 클릭/탭하여 **프로젝트** 콘솔로 돌아갑니다.
 
 ![chlimage_1-264](assets/chlimage_1-264.png)
 
 ### 활성/비활성 프로젝트 보기 {#viewing-active-inactive-projects}
 
-활성 프로젝트와 비활성 프로젝트 간에 전환하려면 **프로젝트** 콘솔에서 **활성 프로젝트 전환**&#x200B;을 클릭합니다. 아이콘 옆에 확인 표시가 있으면 활성 프로젝트를 표시 중입니다.
+활성 프로젝트와 비활성 프로젝트 간에 전환하려면 **프로젝트** 콘솔에서 **활성 프로젝트 전환**&#x200B;을 클릭하십시오. 아이콘 옆에 확인 표시가 있으면 활성 프로젝트를 표시 중입니다.
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
@@ -164,4 +163,3 @@ ht-degree: 84%
    ![chlimage_1-267](assets/chlimage_1-267.png)
 
 1. **완료**&#x200B;를 탭/클릭하여 변경 내용을 저장합니다.
-
