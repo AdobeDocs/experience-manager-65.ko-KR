@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
+exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
 
 ---
-
 
 # CSV로 내보내기{#export-to-csv}
 
