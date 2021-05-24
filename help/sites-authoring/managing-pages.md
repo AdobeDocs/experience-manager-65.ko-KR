@@ -1,14 +1,13 @@
 ---
 title: 페이지 생성 및 구성
 description: AEM으로 페이지를 생성 및 관리하는 방법
-translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2523'
 ht-degree: 97%
 
 ---
-
 
 # 페이지 생성 및 구성 {#creating-and-organizing-pages}
 
@@ -105,7 +104,7 @@ ht-degree: 97%
 >
 >일부 브라우저(예: 이전 버전의 IE)는 특정 길이까지만 URL을 허용하므로 기술적인 이유로 페이지 이름을 짧게 유지하는 경우도 있습니다.
 
-새 페이지를 만들 때 AEM은 AEM 및 JCR에서 지정한 규칙](/help/sites-developing/naming-conventions.md)에 따라 페이지 이름을 확인합니다.[
+새 페이지를 생성할 때 AEM은 [AEM 및 JCR에서 지정한 규칙](/help/sites-developing/naming-conventions.md)에 따라 페이지 이름을 확인합니다.
 
 허용되는 최소 문자는 다음과 같습니다.
 
@@ -393,11 +392,11 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
 >[!NOTE]
 >
->비동기 작업 처리와 페이지 이동/이름 바꾸기 작업에 대한 제한을 구성하는 방법에 대한 자세한 내용은 관리 사용자 안내서의 [비동기 작업](/help/sites-administering/asynchronous-jobs.md) 문서를 참조하십시오.
+>비동기 작업 처리와 페이지 이동/이름 바꾸기 작업에 대한 제한을 구성하는 방법에 대한 자세한 내용은 관리 사용 안내서에서 [비동기 작업](/help/sites-administering/asynchronous-jobs.md) 문서를 참조하십시오.
 
 >[!NOTE]
 >
->비동기 페이지 이동 처리를 위해서는 AEM 6.5.3.0 이상이 필요합니다.
+>비동기 페이지 이동 처리를 사용하려면 AEM 6.5.3.0 이상이 필요합니다.
 
 ### 페이지 삭제 {#deleting-a-page}
 
