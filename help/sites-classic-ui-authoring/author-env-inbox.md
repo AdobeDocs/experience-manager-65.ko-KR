@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 94%
 
 ---
-
 
 # 받은 편지함{#your-inbox}
 
@@ -26,7 +25,7 @@ AEM의 다양한 영역에서 알림을 받을 수 있습니다. 예를 들어 �
 알림 유형별로 구분하여 두 개의 받은 편지함에서 이러한 알림을 수신합니다.
 
 * 가입의 결과로 수신한 알림을 볼 수 있는 받은 편지함은 다음 섹션에 설명되어 있습니다.
-* 워크플로우 항목에 대한 전문 받은 편지함은 [워크플로우 참여](/help/sites-classic-ui-authoring/classic-workflows-participating.md) 문서에 설명되어 있습니다.
+* 워크플로우 항목에 대한 전문 받은 편지함은 [Workflows에 참여](/help/sites-classic-ui-authoring/classic-workflows-participating.md) 문서에 설명되어 있습니다.
 
 ## 알림 보기 {#viewing-your-notifications}
 
@@ -93,7 +92,7 @@ AEM의 다양한 영역에서 알림을 받을 수 있습니다. 예를 들어 �
 1. 알림을 받을 페이지의 경로를 정의합니다.
 
    * **추가**&#x200B;를 클릭하여 표에 새 행을 추가합니다.
-   * **경로** 표 셀을 클릭하고 경로를 입력합니다(예:`/content/docs`.
+   * **경로** 테이블 셀을 클릭하고 경로(예: )를 입력합니다.`/content/docs`
 
    * 하위 트리에 속하는 모든 페이지에 대한 알림을 받으려면 **정확히 일치합니까?**&#x200B;를 **아니요**로 설정합니다.
 경로에 정의된 페이지의 작업에 대해서만 알림을 받으려면 **정확히 일치합니까?**&#x200B;를 **예**&#x200B;로 설정합니다.
