@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 100%
 
 ---
-
 
 # 구성 요소 콘솔{#components-console}
 
@@ -75,4 +74,3 @@ ht-degree: 100%
    개발자가 ](/help/sites-developing/developing-components.md#documenting-your-component)구성 요소에 대한 설명서[를 제공한 경우 **설명서** 탭에 표시됩니다. 사용 가능한 설명서가 없으면 **설명서** 탭이 표시되지 않습니다.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
-
