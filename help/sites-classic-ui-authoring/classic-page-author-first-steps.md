@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
-translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 93%
 
 ---
-
 
 # 작성자를 위한 첫 번째 단계{#first-steps-for-authors}
 
@@ -26,7 +25,7 @@ ht-degree: 93%
 
 * [시작하기](#getting-started):첫 번째 페이지를 만들고 게시하는 데 필요한 기본 이벤트 순서에 대해 자세히 설명합니다.
 
-* [추가 작업](#further-actions):작성 시 사용할 수 있는 다른 많은 작업이 계속 뒤를 이음
+* [추가 작업](#further-actions):작성할 때 사용할 수 있는 다른 많은 작업이 계속 뒤를 이습니다.
 
 ## 시작하기 {#getting-started}
 
@@ -58,7 +57,7 @@ ht-degree: 93%
 * [페이지 잠금](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [페이지 잠금 해제](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
-### 페이지 게시  {#publishing-a-page}
+### 페이지 게시 {#publishing-a-page}
 
 페이지 편집이 끝나면, 웹 사이트에서 방문자가 사용할 수 있도록 [페이지를 게시(또는 활성화)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10)할 차례일 것입니다.
 
