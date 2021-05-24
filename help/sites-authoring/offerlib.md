@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 98%
 
 ---
-
 
 # 오퍼 생성 및 관리{#creating-and-managing-offers}
 
@@ -36,9 +35,9 @@ ht-degree: 98%
 
 1. 탐색 콘솔에서 **개인화** > **오퍼**&#x200B;를 클릭하거나 탭합니다.
 
-   ![screen_shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
+   ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. **만들기**&#x200B;를 클릭하거나 탭한 다음 **만들기** **브랜드**&#x200B;를 클릭합니다.
+1. **만들기**&#x200B;를 클릭하거나 탭한 다음, **만들기** **브랜드**&#x200B;를 클릭하거나 탭합니다.
 1. 브랜드 템플릿을 선택하고 **다음**&#x200B;을 클릭하거나 탭합니다.
 1. 오퍼 콘솔과 활동 콘솔에 표시할 브랜드의 제목을 입력합니다. 원할 경우, 브랜드와 연결할 태그를 하나 이상 입력하거나 선택합니다.
 1. **만들기**&#x200B;를 클릭하거나 탭합니다.
@@ -68,7 +67,7 @@ ht-degree: 98%
 1. 오퍼 콘솔에서 오퍼를 만들 위치를 엽니다. 예를 들어, 브랜드를 열어 최상위 수준 오퍼를 만들거나, 라이브러리에서 폴더를 여십시오.
 1. **만들기** > **폴더 또는 오퍼 만들기**&#x200B;를 클릭하거나 탭합니다.
 
-   ![screen_shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
+   ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
 1. **오퍼 페이지** 템플릿을 선택한 다음, **다음**&#x200B;을 클릭하거나 탭합니다.
 1. 오퍼에 사용할 제목을 입력하고 원할 경우 오퍼와 연결할 태그를 하나 이상 선택하거나 입력한 다음, **만들기**&#x200B;를 클릭하거나 탭합니다.
