@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 99%
 
 ---
-
 
 # 페이지 컨텐츠 편집{#editing-page-content}
 
@@ -88,7 +87,7 @@ ht-degree: 99%
 
 1. 페이지에 필요한 구성 요소를 삽입합니다. 그런 다음 단락을 두 번 클릭하면 단락을 구성하고 컨텐츠를 추가할 수 있는 창이 열립니다.
 
-### 컨텐츠 파인더를 사용하여 구성 요소 삽입  {#inserting-a-component-using-the-content-finder}
+### 컨텐츠 파인더를 사용하여 구성 요소 삽입 {#inserting-a-component-using-the-content-finder}
 
 [컨텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)에서 자산을 끌어 페이지에 새 구성 요소를 추가할 수도 있습니다. 이렇게 하면 자산이 포함된 적절한 유형의 새 구성 요소가 자동으로 만들어집니다.
 
@@ -298,7 +297,7 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 * 단락 추가, 편집, 삭제 및 이동
 * 단락 내용 즉석 편집
 * 페이지 내 항목 복사, 잘라내기 및 붙여넣기
-* 페이지 간 항목 복사, 잘라내기 및 붙여넣기
+* 페이지 간에 항목 복사, 잘라내기 및 붙여넣기
 * 파일 및 이미지 추가, 삭제 및 변경
 * 주석 및 스케치 추가, 삭제 및 변경
 * 스캐폴드 변경
