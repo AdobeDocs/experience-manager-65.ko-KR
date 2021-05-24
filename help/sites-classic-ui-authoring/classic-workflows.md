@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
-translation-type: tm+mt
-source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+exl-id: 298fcfeb-dc8d-4edc-8743-83c0e5e5bc08
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 100%
 
 ---
-
 
 # 워크플로우 작업{#working-with-workflows}
 
@@ -35,4 +34,3 @@ AEM 워크플로우에서는 페이지 또는 자산에 대해 수행되는 일�
 
 * [페이지에 워크플로우 적용](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
 * [워크플로우에 참여](/help/sites-classic-ui-authoring/classic-workflows-participating.md)
-
