@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 100%
 
 ---
-
 
 # 대상자 관리{#managing-audiences}
 
