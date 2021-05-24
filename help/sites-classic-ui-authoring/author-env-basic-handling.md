@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 94%
 
 ---
-
 
 # 기본 처리{#basic-handling}
 
@@ -60,7 +59,7 @@ ht-degree: 94%
   </tr>
   <tr>
    <td><strong>론치</strong></td>
-   <td>이것은 <a href="/help/sites-classic-ui-authoring/classic-launches.md">launch</a>를 관리하는 데 도움이 됩니다. 향후 하나 이상의 활성화된 웹 페이지 릴리스에 필요한 컨텐츠를 개발할 수 있도록 해줍니다.<br /> <i>참고:터치를 사용하는 UI에서는 동일한 기능의 상당 부분을 참조 레일과 함께 사이트 콘솔에서 사용할 수 있습니다.</i> <i>필요한 경우 [도구] 콘솔에서 이 콘솔을 사용할 수 있습니다. [작업]을 선택하고 [론치]를 선택하면 됩니다.</i></td>
+   <td>이것은 <a href="/help/sites-classic-ui-authoring/classic-launches.md">launch</a>를 관리하는 데 도움이 됩니다. 향후 하나 이상의 활성화된 웹 페이지 릴리스에 필요한 컨텐츠를 개발할 수 있도록 해줍니다.<br /> <i>참고:터치 활성화 UI에서는 참조 레일과 함께 사이트 콘솔에서 동일한 기능의 상당 부분을 사용할 수 있습니다.</i> <i>필요한 경우 [도구] 콘솔에서 이 콘솔을 사용할 수 있습니다. [작업]을 선택하고 [론치]를 선택하면 됩니다.</i></td>
   </tr>
   <tr>
    <td><strong>받은 편지함 </strong></td>
@@ -99,7 +98,7 @@ ht-degree: 94%
 
 * 오른쪽 창
 
-   왼쪽 창에서 선택한 위치에 페이지가 표시되며 작업을 수행하는 데 사용할 수 있습니다.
+   페이지(왼쪽 창에서 선택한 위치)가 표시되고 작업을 수행하는 데 사용할 수 있습니다.
 
 여기서 도구 모음이나 컨텍스트 메뉴를 사용하거나 추가 작업에 필요한 페이지를 열어 [페이지를 관리](/help/sites-authoring/managing-pages.md)할 수 있습니다.
 
@@ -234,4 +233,3 @@ ht-degree: 94%
 클래식 UI에서는 클릭 및 두 번 클릭 등, 잘 알려진 작업 탐색 및 시작 메커니즘을 사용합니다. 현재 상황에 따라, 다양한 컨텍스트 메뉴도(보통 마우스 오른쪽 단추로 열림) 사용할 수 있습니다.
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
-
