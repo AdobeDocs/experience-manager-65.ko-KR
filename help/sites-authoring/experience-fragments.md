@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 96%
 
 ---
-
 
 # 경험 구성요소{#experience-fragments}
 
@@ -83,7 +82,7 @@ ht-degree: 96%
    >[!NOTE]
    경험 조각의 구조를 사이트의 페이지 구조에 일치시킬 필요는 없습니다.
 
-* [폴더 수준에서 허용된 템플릿을 할당할 수 있습니다](#configure-allowed-templates-folder).
+* [폴더 수준에서 허용된 템플릿을 할당할 수 있습니다.](#configure-allowed-templates-folder)
 
    >[!NOTE]
    [템플릿 편집기](/help/sites-authoring/templates.md)를 사용하여 나만의 템플릿을 생성할 수 있습니다.
@@ -338,9 +337,10 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 
 
-## 일반 HTML 표현물 {#the-plain-html-rendition}
+## 일반 HTML 렌디션 {#the-plain-html-rendition}
 
-URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 표현물에 액세스할 수 있습니다.
+
+URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌디션에 액세스할 수 있습니다.
 
 >[!NOTE]
 브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 타사 웹 앱, 사용자 지정 모바일 구현)이 URL만 사용하여 경험 조각의 컨텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/sites-developing/experience-fragments.md#the-plain-html-rendition)
