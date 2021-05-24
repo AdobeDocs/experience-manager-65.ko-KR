@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
+exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '4901'
 ht-degree: 96%
 
 ---
-
 
 # 페이지 템플릿 만들기{#creating-page-templates}
 
@@ -46,7 +45,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->**템플릿 콘솔**&#x200B;으로 만든 페이지 및 템플릿은 클래식 UI에 사용할 수 없으며, 이러한 사용은 지원되지 않습니다.
+>**템플릿 콘솔**&#x200B;로 작성된 페이지 및 템플릿은 클래식 UI에서 사용할 수 없으며, 이러한 사용은 지원되지 않습니다.
 
 ## 시작하기 전에 {#before-you-start}
 
@@ -111,7 +110,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    * 이 템플릿은 [개발자가 제공하므로](/help/sites-developing/page-templates-static.md) 작성자가 만들거나 편집할 수 없습니다.
    * 새 페이지를 만들기 위해 복사되지만, 그 이후에 동적 연결은 존재하지 않습니다(단, 템플릿 이름이 참고용으로 등록됨).
    * 디자인 속성을 유지하려면 [디자인 모드](/help/sites-authoring/default-components-designmode.md)를 사용합니다.
-   * 정적 템플릿을 편집하는 것은 개발자의 유일한 작업이므로 자세한 내용은 개발자 문서 [페이지 템플릿 - 정적](/help/sites-developing/page-templates-static.md)을 참조하십시오.
+   * 정적 템플릿을 편집하는 것은 개발자의 독점적인 작업이므로 자세한 내용은 개발자 문서 [페이지 템플릿 - 정적](/help/sites-developing/page-templates-static.md)을 참조하십시오.
 
 정의에 따라, 템플릿 콘솔 및 템플릿 편집기는 편집 가능 템플릿의 작성 및 편집만 허용합니다. 따라서 이 문서는 편집 가능 템플릿에만 중점을 둡니다.
 
@@ -148,7 +147,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 >[!CAUTION]
 >
->[국제화](/help/sites-developing/i18n.md)해야 하는 정보는 템플릿에 입력하지 마십시오. 내부화를 위해 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)의 [현지화 기능이 권장됩니다.
+>[국제화](/help/sites-developing/i18n.md)해야 하는 정보는 템플릿에 입력하지 마십시오. 내부화를 위해 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)의 [현지화 기능이 권장됩니다.
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
@@ -211,9 +210,9 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 >[!NOTE]
 >
->템플릿은 페이지 작성 워크플로우를 간소화하기 위한 강력한 도구입니다. 그러나 너무 많은 템플릿이 작성자를 압도하고 페이지 생성을 혼동시킬 수 있습니다. 템플릿의 수를 100개 미만으로 유지하는 것이 효과적인 경험입니다.
+>템플릿은 페이지 작성 워크플로우를 간소화하는 강력한 도구입니다. 그러나 너무 많은 템플릿이 작성자를 압도하고 페이지 생성을 혼동시킬 수 있습니다. 경험상 좋은 방법은 서식 파일의 수를 100개 미만으로 유지하는 것입니다.
 >
->잠재적인 성능 영향 때문에 Adobe에서는 1,000개 이상의 템플릿을 사용하는 것이 권장되지 않습니다.
+>Adobe은 성능에 영향을 줄 수 있으므로 1,000개 이상의 템플릿을 사용하지 않는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -279,7 +278,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    >**허용된 템플릿** 목록을 비워 두면 값/목록을 찾을 때까지 상위 트리까지 검색됩니다.
    >
    >
-   >[템플릿 가용성](/help/sites-developing/templates.md#template-availability)을 참조하십시오. 허용되는 템플릿에 대한 원칙은 동일하게 유지됩니다.
+   >[템플릿 가용성](/help/sites-developing/templates.md#template-availability)을 참조하십시오. 허용된 템플릿에 대한 원칙은 동일하게 유지됩니다.
 
 1. **저장**&#x200B;을 클릭하여 페이지 속성에 대한 변경 사항을 저장합니다.
 
@@ -474,7 +473,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
    구성을 제거하려면 구성 오른쪽에 있는 **삭제** 단추를 클릭하거나 탭합니다.
 
-   구성을 제거하려면** 삭제** 버튼을 클릭하거나 탭합니다.
+   구성을 제거하려면 ** 삭제** 단추를 클릭하거나 탭합니다.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -619,7 +618,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 ### 템플릿 편집 - 페이지 디자인 - 템플릿 작성자/개발자 {#editing-a-template-page-design-template-author-developer}
 
-필수 클라이언트측 라이브러리 및 페이지 정책을 포함하는 페이지 디자인은 **페이지 정보** 메뉴의 **페이지 디자인** 옵션 아래에서 유지됩니다.
+필수 클라이언트 측 라이브러리 및 페이지 정책을 포함하는 페이지 디자인은 **페이지 정보** 메뉴의 **페이지 디자인** 옵션에서 유지 관리됩니다.
 
 **페이지 디자인** 대화 상자에 액세스하려면:
 
