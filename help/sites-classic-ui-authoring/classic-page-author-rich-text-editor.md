@@ -6,14 +6,13 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7bf6657a8fd7677ab15e0f91324a065b684e2f92
+exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 77%
 
 ---
-
 
 # 리치 텍스트 편집기 {#rich-text-editor}
 
@@ -57,7 +56,7 @@ WYSIWYG 편집 대화 상자는 광범위한 기능을 제공합니다.
 
 ## 리치 텍스트 편집기의 기능 {#features-of-the-rich-text-editor}
 
-리치 텍스트 편집기는 다양한 기능을 제공하며, 이러한 [은 개별 구성 요소의 구성](/help/sites-administering/rich-text-editor.md)에 따라 달라집니다.이 기능은 터치에 적합한 UI와 클래식 UI 모두에서 사용할 수 있습니다.
+리치 텍스트 편집기에서는 다양한 기능을 제공하며, 이 [은 개별 구성 요소의 구성](/help/sites-administering/rich-text-editor.md)에 따라 달라집니다.터치에 적합한 UI와 클래식 UI 모두에서 기능을 사용할 수 있습니다.
 
 ### 기본 문자 형식 {#basic-character-formats}
 
@@ -77,7 +76,7 @@ WYSIWYG 편집 대화 상자는 광범위한 기능을 제공합니다.
 
 ### 사전 정의된 스타일 및 형식  {#predefined-styles-and-formats}
 
-![cq55_rte_stylespard](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
 설치 환경에 사전 정의된 스타일과 형식이 포함될 수 있습니다. **[!UICONTROL 스타일]** 및 **[!UICONTROL 서식]** 드롭다운 상자의 스타일과 서식을 선택한 텍스트에 적용할 수 있습니다.
 
@@ -106,11 +105,11 @@ WYSIWYG 편집 대화 상자는 광범위한 기능을 제공합니다.
 * 잘라내기(Ctrl-X)
 * 복사(Ctrl-C)
 * 붙여넣기
-구성 요소의 기본 붙여넣기 메커니즘(Ctrl-V)입니다.즉시 설치되면 [!UICONTROL Word]에서 붙여넣기로 구성됩니다.
+구성 요소의 기본 붙여넣기 메커니즘(Ctrl-V)입니다.즉시 설치할 때 [!UICONTROL Word]에서 붙여넣기로 구성됩니다.
 
 * 텍스트로 붙여넣기:스타일과 서식을 모두 제거하고 일반 텍스트만 붙여넣습니다.
 
-* Word에서 붙여넣기:이렇게 하면 컨텐츠가 HTML로 붙여넣고 필요한 서식을 재구성합니다.
+* Word에서 붙여넣기:컨텐츠를 HTML로 붙여넣고 필요한 서식을 재구성합니다.
 
 ### 실행 취소, 재실행 {#undo-redo}
 
@@ -158,7 +157,7 @@ AEM은 현재 구성 요소의 마지막 50개 작업 기록을 시간 순서대
 
 ![](do-not-localize/cq55_rte_links.png)
 
-필요한 텍스트를 강조 표시한 다음 하이퍼링크 아이콘을 클릭하여 URL(웹 사이트 내부 또는 외부 위치)에 대한 링크가 생성됩니다.
+웹 사이트 내부 또는 외부 URL로 연결되는 링크는 필요한 텍스트를 강조 표시한 다음 하이퍼링크 아이콘을 클릭하여 생성됩니다.
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -168,11 +167,11 @@ AEM은 현재 구성 요소의 마지막 50개 작업 기록을 시간 순서대
 
 다음을 작업을 수행할 수 있습니다.
 
-* URI를 직접 입력
-* 사이트 맵을 사용하여 웹 사이트 내의 페이지 선택
-* URI를 입력한 다음 대상 앵커를 추가합니다.예:`www.TargetUri.org#AnchorName`
-* 기준선만 입력(&quot;현재 페이지&quot; 참조);예: `#anchor`
-* Content Finder에서 페이지를 검색한 다음 페이지 아이콘을 하이퍼링크 대화 상자로 드래그하여 놓기
+* 직접 URI 입력
+* 사이트 맵을 사용하여 웹 사이트 내에서 페이지를 선택합니다
+* URI를 입력한 다음 대상 앵커 추가예`www.TargetUri.org#AnchorName`
+* 앵커만 입력(&quot;현재 페이지&quot; 참조).예: `#anchor`
+* Content Finder에서 페이지를 검색한 다음 페이지 아이콘을 하이퍼링크 대화 상자로 드래그하여 놓습니다
 
 >[!NOTE]
 >
@@ -182,7 +181,7 @@ AEM은 현재 구성 요소의 마지막 50개 작업 기록을 시간 순서대
 
 ![](do-not-localize/chlimage_1-10.png)
 
-### 앵커  {#anchors}
+### 앵커 {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -230,7 +229,7 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 맞춤법이 잘못된 부분은 강조 표시됩니다.
 
-![cq55_rte_spellchecker_use](assets/cq55_rte_spellchecker_use.png)
+![cq55_rte_spelchecker_use](assets/cq55_rte_spellchecker_use.png)
 
 >[!NOTE]
 >
@@ -250,11 +249,11 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
    >[!NOTE]
    >
-   >RTE에서는 표를 사용할 수 있지만 표를 만들 때는 **표** 구성 요소를 사용하는 것이 좋습니다.
+   >표는 RTE에서 사용할 수 있지만 표를 만들 때는 **Table** 구성 요소를 사용하는 것이 좋습니다.
 
 **텍스트** 및 **표** 구성 요소 모두 표 안에서 컨텍스트 메뉴(일반적으로 마우스 오른쪽 단추)를 클릭하여 표 기능을 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
-![cq55_rte_tabemenu](assets/cq55_rte_tablemenu.png)
+![cq55_rte_tablemenu](assets/cq55_rte_tablemenu.png)
 
 >[!NOTE]
 >
@@ -292,11 +291,11 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 
 >[!NOTE]
 >
->폭 및 높이와 같은 일부 셀 속성은 픽셀 또는 백분율로 정의할 수 있습니다.
+>너비와 높이와 같은 몇 가지 셀 속성은 픽셀 또는 백분율로 정의할 수 있습니다.
 
 >[!CAUTION]
 >
->Adobe에서는 표의 너비를 정의하는 것이 좋습니다.
+>Adobe은 표의 너비를 정의하는 것을 권장합니다.
 
 #### 셀 속성 {#cell-properties}
 
@@ -362,14 +361,14 @@ AEM에서는 **찾기** 및 **바꾸기**(찾기 및 바꾸기) 기능을 모두
 >특정한 기타 동작은 브라우저에 따라 다릅니다.
 >
 >* Windows IE: Ctrl 키를 누른 채로 마우스 기본 단추(일반적으로 왼쪽)를 클릭하여 여러 셀을 선택합니다.
->* Firefox:포인터를 드래그하여 셀 범위를 선택합니다.
+>* Firefox:포인터를 끌어 셀 범위를 선택합니다.
 
 
 #### 표 제거 {#remove-table}
 
-![cq55_rte_removetable](assets/cq55_rte_removetable.png)
+![cq55_rte_removeable](assets/cq55_rte_removetable.png)
 
-**[!UICONTROL 텍스트]** 구성 요소 내에서 표를 제거하려면 옵션을 사용합니다.
+옵션을 사용하여 **[!UICONTROL Text]** 구성 요소 내에서 테이블을 제거합니다.
 
 ### 특수 문자 {#special-characters}
 
