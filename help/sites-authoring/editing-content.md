@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 96%
 
 ---
-
 
 # 페이지 컨텐츠 편집{#editing-page-content}
 
@@ -107,9 +106,9 @@ ht-degree: 96%
 
 알림은 페이지에 대해 실행 중인 워크플로우를 나열합니다. 사용자가 현재 워크플로우 단계에 참여 중인 경우 옵션은 [워크플로우 상태](/help/sites-authoring/workflows-participating.md)에 영향을 주며 워크플로우에 대한 자세한 정보는 다음과 같이 확인할 수 있습니다.
 
-* **완료**  - 전체 작업 항목  **대화** 상자를 엽니다.
+* **완료**  - 전체 작업  **항목 대화** 상자를 엽니다.
 
-* **위임**  - 전체 작업 항목  **대화** 상자를 엽니다.
+* **위임**  - 전체 작업  **항목 대화** 상자를 엽니다.
 
 * **세부 사항 보기** - 워크플로우의 **세부 사항** 창을 엽니다.
 
@@ -412,7 +411,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 클릭하면 에뮬레이터 도구 모음이 사라질 뿐 아니라 새로 선택한 구성 요소 및 크기 조정 핸들에 대한 표준 편집 도구 모음(레이아웃 도구 모음이 아님)이 표시됩니다.
+>레이아웃 작업은 선택한 구성 요소의 범위로 제한됩니다. 예를 들어, 한 구성 요소의 레이아웃을 편집한 다음 다른 구성 요소를 클릭하면 에뮬레이터 도구 모음이 사라질 뿐 아니라 새롭게 선택한 구성 요소와 크기 조정 핸들에 대해 표준 편집 도구 모음(레이아웃 도구 모음이 아님)이 표시됩니다.
 >
 >여러 구성 요소에 영향을 미치는 페이지의 전체 레이아웃을 편집해야 하는 경우 [레이아웃 모드](/help/sites-authoring/responsive-layout.md)로 전환하십시오.
 
@@ -454,7 +453,7 @@ ht-degree: 96%
 
 페이지가 [편집 가능한 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 [페이지 정보 메뉴](/help/sites-authoring/author-environment-tools.md#page-information)에서 **템플릿 편집**&#x200B;을 선택하여 [템플릿 편집기](/help/sites-authoring/templates.md#editing-templates-template-authors)로 간편하게 전환할 수 있습니다.
 
-페이지가 [정적 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 도구 모음의 [페이지 모드 선택기](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용하여 [디자인 모드](/help/sites-authoring/default-components-designmode.md)로 전환하여 페이지에 사용할 구성 요소를 활성화/비활성화할 수 있습니다.
+페이지가 [정적 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 도구 모음에서 [페이지 모드 선택기](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용하여 [디자인 모드](/help/sites-authoring/default-components-designmode.md)로 전환하여 페이지에서 사용할 구성 요소를 활성화/비활성화할 수 있습니다.
 
 [열 보기](/help/sites-authoring/basic-handling.md#column-view) 또는 [목록 보기](/help/sites-authoring/basic-handling.md#list-view) 페이지를 선택할 때 페이지가 기반으로 하는 템플릿을 쉽게 확인할 수 있습니다.
 
@@ -563,7 +562,7 @@ AEM에서는 다른 사람이 컨텐츠를 수정할 수 없도록 페이지를 
 >
 >[키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z`를 사용하여 페이지 편집 작업을 취소할 수 있습니다.
 >
->키보드 단축키 `Ctrl-Y`을(를) 사용하여 페이지 편집 작업을 다시 실행할 수도 있습니다.
+>키보드 단축키 `Ctrl-Y`을 사용하여 페이지 편집 작업을 재실행할 수도 있습니다.
 
 >[!NOTE]
 >
@@ -608,4 +607,3 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 >[!NOTE]
 >
 >파일 및 이미지 변경의 실행 취소 내역은 최소 10시간 동안 유지됩니다. 이 시간이 지나면 변경을 취소하지 못할 수 있습니다. 관리자는 기본 시간인 10시간을 변경할 수 있습니다.
-
