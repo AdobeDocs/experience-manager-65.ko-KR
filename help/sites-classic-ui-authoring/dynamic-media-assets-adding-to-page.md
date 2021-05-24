@@ -5,20 +5,19 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 92%
 
 ---
 
-
 # 페이지에 Dynamic Media 자산 추가{#adding-dynamic-media-assets-to-pages}
 
-웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **[!UICONTROL Dynamic Media]** 또는 **[!UICONTROL 대화형 미디어]** 구성 요소를 페이지에 바로 추가할 수 있습니다. 이렇게 하려면 [!UICONTROL 디자인] 모드를 시작하고 Dynamic Media 구성 요소를 활성화합니다. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. Dynamic Media 및 인터랙티브 미디어 구성 요소는 편리하게도 이미지를 추가할지 아니면 비디오를 추가할지 여부와 그에 따라 사용 가능한 옵션이 달라집니다.
+웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **[!UICONTROL Dynamic Media]** 또는 **[!UICONTROL 대화형 미디어]** 구성 요소를 페이지에 바로 추가할 수 있습니다. [!UICONTROL 디자인] 모드로 전환하고 Dynamic Media 구성 요소를 활성화하여 이렇게 합니다. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. Dynamic Media 및 대화형 미디어 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 그에 따라 사용 가능한 옵션이 달라집니다.
 
-AEM을 WCM으로 사용하는 경우 페이지에 직접 Dynamic Media 자산을 추가합니다.
+AEM을 WCM으로 사용하는 경우에는 Dynamic Media 자산을 페이지에 직접 추가합니다.
 
 >[!NOTE]
 >
@@ -44,7 +43,7 @@ AEM을 WCM으로 사용하는 경우 페이지에 직접 Dynamic Media 자산을
 
 ## Dynamic Media 구성 요소 {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] 및 [!UICONTROL 대화형 미디어]는 Dynamic Media 아래의 [!UICONTROL 사이드 킥]에서 사용할 수 있습니다.**** 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용합니다. 다른 모든 Dynamic Media 구성 요소의 경우 **[!UICONTROL Dynamic Media]** 구성 요소를 사용하십시오.
+[!UICONTROL Dynamic Media] 및 [!UICONTROL 대화형 미디어]는 Dynamic Media 아래의 [!UICONTROL 사이드 킥]에서 사용할 수 있습니다.**** 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용합니다. 다른 모든 Dynamic Media 구성 요소의 경우에는 **[!UICONTROL Dynamic Media]** 구성 요소를 사용하십시오.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
