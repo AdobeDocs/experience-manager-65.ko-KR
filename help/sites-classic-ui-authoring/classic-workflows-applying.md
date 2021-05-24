@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d8b604c5-a6da-47c4-9422-b519e224c7ca
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 86%
 
 ---
-
 
 # 페이지에 워크플로우 적용{#applying-workflows-to-pages}
 
@@ -40,7 +39,7 @@ ht-degree: 86%
 
 **웹 사이트** 콘솔의 **상태** 열은 워크플로우가 페이지에 적용되었는지 여부를 나타냅니다.
 
-![워크플로 상태](assets/workflowstatus.png)
+![워크플로우 상태](assets/workflowstatus.png)
 
 ### 웹 사이트 콘솔에서 워크플로우 시작 {#starting-a-workflow-from-the-websites-console}
 
@@ -54,9 +53,8 @@ ht-degree: 86%
 1. 웹 사이트 콘솔을 엽니다.
 1. 필요한 페이지를 엽니다.
 1. 사이드 킥에서 [워크플로우] 탭을 선택합니다.
-1. **워크플로우** 대화 상자를 확장하여 **워크플로우**&#x200B;를 선택하고 선택적으로 **워크플로우 제목** 및 **주석**&#x200B;을 입력합니다.
+1. **워크플로우** 대화 상자를 확장하여 **워크플로우**&#x200B;를 선택하고 선택적으로 **워크플로우 제목** 및 **주석**&#x200B;을 입력할 수 있습니다.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
 1. **워크플로우 시작**&#x200B;을 클릭하여 구성한 속성과 현재 페이지를 페이로드로 사용하여 새 워크플로우 인스턴스를 시작합니다. 이제 워크플로우가 실행 중입니다.
-
