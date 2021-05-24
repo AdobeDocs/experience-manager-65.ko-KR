@@ -1,25 +1,24 @@
 ---
-title: DHTML 뷰어 사용 종료
+title: DHTML 뷰어 지원 중단
 description: 2014년 1월 31일부터 DHTML 뷰어 플랫폼은 공식적으로 사용이 종료됩니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
-translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+exl-id: 06b74770-1f96-4f6b-98c0-afef7000e42b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
 
 ---
 
-
-# DHTML 뷰어 지원 종료 {#dhtml-viewer-end-of-life}
+# DHTML 뷰어 지원 중단 {#dhtml-viewer-end-of-life}
 
 2014년 1월 31일부터 DHTML 뷰어 플랫폼은 공식적으로 사용이 종료됩니다.
 
-지원되는 최신 뷰어에 대해서는 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
+지원되는 최신 뷰어는 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 
