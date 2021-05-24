@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b41de64a-7d27-4633-a8d5-ac91d47eb1bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 93%
 
 ---
-
 
 # 효과적인 뉴스레터 랜딩 페이지 만들기{#creating-an-effective-newsletter-landing-page}
 
@@ -33,7 +32,7 @@ ht-degree: 93%
 >[!NOTE]
 >
 >Adobe는 이 기능(리드 및 목록 관리)을 추가로 개선할 계획이 없습니다.
->권장 사항은 [Adobe Campaign을 활용하고 AEM](/help/sites-administering/campaign.md)과의 통합을 활용하는 것입니다.
+>[Adobe Campaign을 활용하고 AEM](/help/sites-administering/campaign.md)에 통합하는 것이 좋습니다.
 
 ## 뉴스레터 목록 만들기 {#creating-a-list-for-the-newsletter}
 
@@ -59,7 +58,7 @@ MCM에서 사람들이 가입할 수 있는 **Geometrixx 뉴스레터**&#x200B;�
 
 1. 양식 구성 요소에서 **편집**&#x200B;을 클릭하여 양식이 감사 인사 페이지로 이동하도록 구성합니다([감사 인사 페이지 만들기](#creating-a-thank-you-page) 참조).
 
-   ![dc_formstart_thangyou](assets/dc_formstart_thankyou.png)
+   ![dc_formstart_confirm](assets/dc_formstart_thankyou.png)
 
 1. 양식 작업(양식을 전송할 때 발생하는 작업)을 설정하고 그룹을 구성하여 등록한 사용자를 앞에서 만든 목록(예: geometrixx-newsletter)에 지정합니다.
 
@@ -81,7 +80,7 @@ MCM에서 사람들이 가입할 수 있는 **Geometrixx 뉴스레터**&#x200B;�
 
 1. 등록 선물에 대한 Teaser 단락을 만듭니다. 전략으로 **처음**&#x200B;을 선택하고 등록 시 증정되는 선물에 대한 텍스트를 포함합니다.
 
-   ![dc_teaser_thangyou](assets/dc_teaser_thankyou.png)
+   ![dc_teaser_confirm](assets/dc_teaser_thankyou.png)
 
 1. 감사 인사 페이지에 티저 단락을 만듭니다. 전략으로 **처음**&#x200B;을 선택하고 선물이 배송되었다는 텍스트를 포함합니다.
 
