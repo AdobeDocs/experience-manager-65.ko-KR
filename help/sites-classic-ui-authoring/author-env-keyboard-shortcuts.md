@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 100%
 
 ---
-
 
 # 콘솔용 키보드 단축키{#keyboard-shortcuts-for-consoles}
 
@@ -27,8 +26,10 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 >데스크톱 장치에서의 다중 선택:
 >
 >* Windows: **Ctrl****을 클릭한 채**&#x200B;필수 구성 요소를 클릭합니다.
->
->* Mac: **Cmd****를 클릭한 채**&#x200B;필수 구성 요소를 클릭합니다.
+   >
+   >
+* Mac: **Cmd****를 클릭한 채**&#x200B;필수 구성 요소를 클릭합니다.
+
 >
 
 
