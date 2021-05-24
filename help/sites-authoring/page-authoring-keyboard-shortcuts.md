@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
-translation-type: tm+mt
-source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 91%
 
 ---
-
 
 # 페이지 편집 시 키보드 단축키{#keyboard-shortcuts-when-editing-pages}
 
@@ -44,7 +43,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 >[!NOTE]
 >
->&amp;ast;사용자가 미리 보기 모드에서 페이지와 상호 작용하기 시작하면 `Ctrl-Shift-m` 단축키를 더 이상 사용할 수 없습니다. 이 단축키를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
+>amp;ast;사용자가 미리 보기 모드에서 페이지를 조작하면 `Ctrl-Shift-m` 단축키를 더 이상 사용할 수 없습니다. 이 단축키를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
 
 데스크톱 사용자는 [콘솔](/help/sites-authoring/keyboard-shortcuts.md)을 사용하여 다양한 키보드 단축키를 사용할 수 있습니다.
 
