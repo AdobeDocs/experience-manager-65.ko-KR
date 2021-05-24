@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: a62ddf8b-97ea-40b9-9c3b-0922fe134567
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7689b0e7-9da3-467f-8e53-f056040391d8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Campaign을 사용한 작업{#working-with-adobe-campaign}
 
@@ -39,4 +38,3 @@ Adobe Campaign은 온라인과 오프라인 채널에서 모두 캠페인을 개
 
 * [사용자 지정 확장 프로그램 만들기](/help/sites-developing/extending-campaign-extensions.md)
 * [사용자 지정 양식 매핑 만들기](/help/sites-developing/extending-campaign-form-mapping.md)
-
