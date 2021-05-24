@@ -10,7 +10,6 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '445'
@@ -60,7 +59,7 @@ ht-degree: 97%
 
 * [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) - 페이지를 작성하는 데 필요한 코어 구성 요소는 컨텐츠 유형을 제공하는 유연하고 다양한 작성 기능을 제공합니다.
 
-* [커뮤니티](/help/communities/author-communities.md) - 구성 요소는 웹 사이트에 포럼 및 댓글과 같은 대화형 기능을 제공합니다. 이러한 구성 요소 중 대다수는 [커뮤니티 사이트](/help/communities/overview.md)가 생성될 때 포함됩니다.
+* [커뮤니티](/help/communities/author-communities.md) - 구성 요소는 웹 사이트에 포럼 및 댓글과 같은 대화형 기능을 제공합니다. 이러한 구성 요소 중 대부분은 [커뮤니티 사이트](/help/communities/overview.md)가 생성될 때 포함됩니다.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - AEM 내의 eCommerce 기능에도 다양한 구성 요소가 포함되어 있습니다. 사용되는 상거래 엔진에 따라 실제 사용 내용이 달라질 수 있습니다.
 
