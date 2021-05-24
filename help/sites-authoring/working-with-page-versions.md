@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 188434543403fab48f79be06356b86e132e2888a
+exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 97%
 
 ---
-
 
 # 페이지 버전 사용{#working-with-page-versions}
 
@@ -105,7 +104,7 @@ ht-degree: 97%
 1. **타임라인** 열을 열고, **모두 표시** 또는 **버전**&#x200B;을 선택합니다. 
 1. 페이지 버전이 나열됩니다. 미리 볼 버전을 선택합니다.
 
-   ![screen_shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
+   ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
 
 1. **미리 보기**&#x200B;를 선택합니다. 페이지가 새 탭에 표시됩니다.
 
@@ -125,11 +124,11 @@ ht-degree: 97%
 1. **타임라인** 열을 열고, **모두 표시** 또는 **버전**&#x200B;을 선택합니다. 
 1. 페이지 버전이 나열됩니다. 비교할 버전을 선택합니다.
 
-   ![screen_shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
+   ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
 
 1. **현재와 비교**&#x200B;를 선택합니다. [페이지 차이](/help/sites-authoring/page-diff.md)가 열리고 차이점이 표시됩니다.
 
-## 타임워프  {#timewarp}
+## 타임워프 {#timewarp}
 
 타임워프는 과거의 특정 시점에 *게시된* 페이지의 상태를 시뮬레이션하도록 디자인된 기능입니다.
 
@@ -148,15 +147,15 @@ ht-degree: 97%
 
 1. 타임워프를 시작하려는 페이지 편집기를 시작한 다음 [모드 선택]에서 **타임워프**&#x200B;를 선택합니다.
 
-   ![wpv-01](assets/wwpv-01.png)
+   ![wwpv-01](assets/wwpv-01.png)
 
 1. 대화 상자에서 대상 날짜 및 시간을 설정하고 **날짜 설정**&#x200B;을 클릭하거나 탭합니다. 시간을 선택하지 않으면 현재 시간이 기본값이 됩니다.
 
-   ![wpv-02](assets/wwpv-02.png)
+   ![wwpv-02](assets/wwpv-02.png)
 
 1. 이 페이지는 날짜 설정에 따라 표시됩니다. 창 상단에 파란색 상태 표시줄이 표시되면 타임워프 모드입니다. 상태 표시줄의 링크를 사용하여 새 대상 날짜를 선택하거나 타임워프 모드를 종료합니다.
 
-   ![wpv-03](assets/wwpv-03.png)
+   ![wwpv-03](assets/wwpv-03.png)
 
 ### 타임워프 제한 사항 {#timewarp-limitations}
 
@@ -172,4 +171,4 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->타임워프는 컨텐츠 작성자에게 컨텐츠를 이해하고 제작하는 데 도움이 되는 툴로 설계되었습니다. 감사 로그나 법적 목적이 아닙니다.
+>타임워프는 작성자가 컨텐츠를 이해하고 작성하는 데 도움이 되는 도구로 설계되었습니다. 감사 로그나 법적 목적이 아닙니다.
