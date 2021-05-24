@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 99%
 
 ---
-
 
 # 워크플로우에 참여{#participating-in-workflows}
 
@@ -52,11 +51,11 @@ ht-degree: 99%
 
 * 웹 사이트 콘솔의 **상태** 열은 페이지가 언제 워크플로우에 있는지를 나타냅니다.
 
-   ![워크플로 상태-1](assets/workflowstatus-1.png)
+   ![workflstatus-1](assets/workflowstatus-1.png)
 
 * 사용자나 사용자가 속한 그룹이 워크플로우의 일부인 작업 항목을 지정받으면 이 작업 항목이 사용자의 AEM 워크플로우 받은 편지함에 표시됩니다.
 
-   ![워크플로 받은 편지함](assets/workflowinbox.png)
+   ![workflinbox](assets/workflowinbox.png)
 
 ### 참가자 단계 완료 {#completing-a-participant-step}
 
@@ -65,7 +64,7 @@ ht-degree: 99%
 1. 워크플로우 단계를 선택하고 맨 위 탐색 막대에서 **완료** 단추를 클릭합니다.
 1. 결과 대화 상자에서 **다음 단계**(즉, 다음으로 실행될 단계)를 선택합니다. 드롭다운 목록에는 모든 적절한 대상이 표시됩니다. **주석**&#x200B;을 입력할 수도 있습니다.
 
-   ![워크플로 완료](assets/workflowcomplete.png)
+   ![workflowcomplete](assets/workflowcomplete.png)
 
    나열된 단계 수는 워크플로우 모델의 디자인에 따라 다릅니다.
 
@@ -78,7 +77,7 @@ ht-degree: 99%
 1. 맨 위 탐색 막대에서 **위임** 단추를 클릭합니다.
 1. 대화 상자에서 드롭다운 목록을 사용하여 작업 항목을 위임받을 **사용자**&#x200B;를 선택합니다. **주석**&#x200B;을 추가할 수도 있습니다.
 
-   ![워크플로 위임](assets/workflowdelegate.png)
+   ![workdelegate](assets/workflowdelegate.png)
 
 1. **확인**&#x200B;을 클릭하여 작업을 확인합니다.
 
@@ -92,4 +91,3 @@ ht-degree: 99%
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. 확인을 클릭하여 작업을 확인합니다.
-
