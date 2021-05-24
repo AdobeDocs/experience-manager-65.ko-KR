@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
-translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 
 ---
-
 
 # Dynamic Media 작업{#working-with-dynamic-media}
 
@@ -29,4 +28,3 @@ Dynamic Media는 확대/축소, 360도 회전, 비디오를 비롯한 대화형 
 >[!NOTE]
 >
 >[Dynamic Media Classic을 AEM에 통합](/help/sites-administering/scene7.md)한 경우에는 Dynamic Media를 사용할 때 자동 업로드를 동시에 사용할 수 없습니다. [Dynamic Media 활성화](/help/assets/config-dynamic.md#enabling-dynamic-media)를 참조하십시오. Dynamic Media는 기본적으로 비활성화됩니다.
-
