@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 99%
 
 ---
-
 
 # 페이지 작성에 대한 빠른 안내{#quick-guide-to-authoring-pages}
 
@@ -63,9 +62,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 >작성 작업을 더 쉽게 해줄 수 있는 다양한 키보드 단축키가 있습니다.
 >
 >* [페이지 편집 시 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
->* [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
-
->
+* [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 
@@ -123,8 +120,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 카드 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
    >[!NOTE]
-   >
-   >선택 모드에서 있으면 **선택** 아이콘(확인 표시)이 **선택 취소** 아이콘(십자 모양)으로 바뀝니다.
+   선택 모드에서 있으면 **선택** 아이콘(확인 표시)이 **선택 취소** 아이콘(십자 모양)으로 바뀝니다.
 
 ### 빠른 작업(카드 보기/데스크탑 전용) {#quick-actions-card-view-desktop-only}
 
@@ -179,8 +175,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사** 및 **붙여넣기** 아이콘을 사용합니다.
    >[!NOTE]
-   >
-   >같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
+   같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
 
    * 구성 요소 [삭제:](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
@@ -197,8 +192,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * **편집** 드롭다운 선택기를 사용하여 편집 모드로 돌아가거나 다른 모드를 선택합니다.
 
    >[!NOTE]
-   >
-   >컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 사용해야 합니다.
+   컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 사용해야 합니다.
 
 ### 페이지 속성 편집  {#editing-the-page-properties}
 
@@ -275,8 +269,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 작업을 확인하는 메시지가 나타납니다.
    >[!NOTE]
-   >
-   >삭제는 빠른 작업으로 사용할 수 없습니다.
+   삭제는 빠른 작업으로 사용할 수 없습니다.
 
 ### 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
