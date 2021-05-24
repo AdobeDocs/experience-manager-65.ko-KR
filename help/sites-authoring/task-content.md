@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
-translation-type: tm+mt
-source-git-commit: e3f1c932a5937e8a115e2849935b8f5ea5c2613d
+exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 94%
 
 ---
-
 
 # 작업{#working-with-tasks}
 
@@ -28,9 +27,9 @@ ht-degree: 94%
 
 **작업** 타일로 표시되는 프로젝트 내의 활성/완료 작업을 보고 프로젝트 진행 상태를 추적할 수 있습니다. 프로젝트 진행 상태는 다음 항목을 통해 판별할 수 있습니다.
 
-* **작업 타일:** 프로젝트의 전체 진행 상태가 프로젝트 세부 사항 페이지에서 사용할 수 있는 작업 타일에 설명되어 있습니다.
+* **작업 타일:** 프로젝트의 전체 진행 상태가 프로젝트 세부 사항 페이지에서 사용할 수 있는 작업 타일에 묘사됩니다.
 
-* **작업 목록:** 작업 타일을 클릭하면 작업 목록이 표시됩니다. 이 목록에는 프로젝트와 관련된 모든 작업에 대한 자세한 정보가 있습니다.
+* **작업 목록:**  작업 타일을 클릭하면 작업 목록이 표시됩니다. 이 목록에는 프로젝트와 관련된 모든 작업에 대한 자세한 정보가 있습니다.
 
 두 목록에는 모두 **작업** 타일에서 직접 생성하는 작업뿐만 아니라 워크플로우 작업도 표시합니다.
 
