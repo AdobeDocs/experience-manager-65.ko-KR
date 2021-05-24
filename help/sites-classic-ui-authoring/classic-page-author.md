@@ -1,26 +1,25 @@
 ---
 title: 페이지 작성
 seo-title: 페이지 작성
-description: AEM으로 작성하는 방법에 대한 2가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 작성 페이지에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(높은 수준)입니다.
-seo-description: AEM으로 작성하는 방법에 대한 2가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 작성 페이지에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(높은 수준)입니다.
+description: AEM으로 작성하는 방법에 대한 두 가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 페이지 작성에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(높은 수준)
+seo-description: AEM으로 작성하는 방법에 대한 두 가지 개요가 있습니다. (1) 작성자를 위한 첫 번째 단계 - 새 작성자를 위한 소개 및 (2) 페이지 작성에 대한 빠른 안내 - 기본 작업에 대한 빠른 안내(높은 수준)
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: a3606d72-1bd8-4886-9285-6457dae66486
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 78%
 
 ---
 
-
 # 페이지 작성{#authoring-pages}
 
-다음은 AEM으로 작성하는 방법에 대한 개요를 제공합니다.
+다음은 AEM을 사용한 작성에 대한 개요를 제공합니다.
 
 * [작성을 위한 첫 번째 단계](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - 새 작성자를 위한 소개
 
@@ -51,4 +50,3 @@ ht-degree: 78%
 
 * **입력과 동시 검색**
 특정 시나리오에서(예: 편집 대화 상자에서의 경로 선택) AEM 인터페이스를 통해 컨텐츠를 검색하면 쿼리를 입력함에 따라 일치하는 내용이 동적으로 표시됩니다.
-
