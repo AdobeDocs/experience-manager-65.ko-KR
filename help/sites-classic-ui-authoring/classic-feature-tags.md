@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 88%
 
 ---
-
 
 # 태그 사용{#using-tags}
 
@@ -44,7 +43,7 @@ ht-degree: 88%
 
 작성 환경에서 작성자는 페이지 속성에 액세스하고 **태그/키워드** 필드에 하나 이상의 태그를 입력하여 태그를 적용할 수 있습니다.
 
-[사전 정의된 태그](/help/sites-administering/tags.md)를 적용하려면 **페이지 속성** 창에서 `Tags/Keywords` 필드 풀다운을 사용하여 페이지에 대해 허용되는 태그 목록에서 선택합니다. **표준 태그** 탭은 기본 네임스페이스이므로 택소노법에 `namespace-string:` 접두사가 없습니다.
+[사전 정의된 태그](/help/sites-administering/tags.md)를 적용하려면, **페이지 속성** 창에서 `Tags/Keywords` 필드 풀다운을 사용하여 페이지에 대해 허용되는 태그 목록에서 선택하십시오. **표준 태그** 탭은 기본 네임스페이스이며, 이는 분류법에 접두사로 추가된 `namespace-string:`가 없음을 의미합니다.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -81,4 +80,3 @@ ht-degree: 88%
 페이지에 [검색 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search)를 추가하면 태그를 포함하는 검색 기능이 제공되며 작성 환경과 게시 환경 모두에서 사용할 수 있습니다.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
-
