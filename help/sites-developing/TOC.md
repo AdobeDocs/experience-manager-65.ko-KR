@@ -8,7 +8,6 @@ breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature: 개발
 role: Developer
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '910'
@@ -71,7 +70,7 @@ ht-degree: 90%
    + [벌크 편집기 개발](dev-bulk-editor.md)
    + [보고서 개발](dev-reports.md)
 + 구성 요소{#components}
-   + [코어 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)
+   + [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
    + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [구성 요소 개요](components.md)
    + [AEM 구성 요소 - 기본 사항](components-basics.md)
@@ -117,7 +116,7 @@ ht-degree: 90%
       + [SPA 및 서버측 렌더링](spa-ssr.md)
       + [RemotePage 구성 요소](spa-remote-page.md)
       + [AEM 내에서 외부 SPA 편집](spa-edit-external.md)
-      + [SPA의 합성 구성 요소](spa-composite-component.md)
+      + [SPA의 복합 구성 요소](spa-composite-component.md)
       + [SPA 참조 자료](spa-reference-materials.md)
    + [HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
    + [컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
@@ -158,7 +157,7 @@ ht-degree: 90%
    + [페이지 속성의 벌크 편집을 위한 페이지 구성](bulk-editing.md)
    + [컨텐츠 조각 사용자 지정 및 확장](customizing-content-fragments.md)
    + [컨텐츠 조각 렌더링용 구성 요소 구성](content-fragments-config-components-rendering.md)
-   + [경험 조각](experience-fragments.md)
+   + [경험 구성요소](experience-fragments.md)
    + 워크플로우 확장{#extending-workflows}
       + [워크플로우 개발 및 확장](workflows.md)
       + [워크플로우 모델 만들기](workflows-models.md)
