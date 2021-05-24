@@ -10,24 +10,23 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 87%
 
 ---
 
-
 # 론치 만들기{#creating-launches}
 
 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다. 론치를 만들 때에는 제목과 소스 페이지를 지정합니다:
 
-* 제목은 작성자가 액세스하여 작업할 수 있는 [참조](/help/sites-authoring/author-environment-tools.md#references) 레일에 나타납니다.
+* 제목은 [참조](/help/sites-authoring/author-environment-tools.md#references) 레일에 나타납니다. 이 레일에서 작성자가 액세스하여 작업할 수 있습니다.
 * 소스 페이지의 하위 페이지는 기본적으로 론치에 포함됩니다. 원할 경우 소스 페이지만 사용할 수 있습니다.
 * 기본적으로, [Live Copy](/help/sites-administering/msm.md)는 소스 페이지 변경에 따라 자동으로 론치 페이지를 업데이트합니다. 정적 복사본을 만들어 자동 변경을 방지하도록 지정할 수 있습니다.
 
-필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. 그러나 **시작 날짜**&#x200B;는 **프로덕션 준비** 플래그와 조합으로만 작동합니다([론치 구성 편집](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) 참조).작업이 실제로 자동으로 수행되도록 하려면 둘 다 설정해야 합니다.
+필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. 그러나 **시작 날짜**&#x200B;는 **프로덕션 준비** 플래그와 조합으로만 작동합니다([Launch 구성 편집](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) 참조).작업이 실제로 자동으로 수행되려면 두 작업 모두 설정해야 합니다.
 
 ## 론치 만들기 {#creating-a-launch}
 
@@ -135,7 +134,7 @@ ht-degree: 87%
 
 #### 중첩 론치 만들기 - 론치 콘솔 {#creating-a-nested-launch-launches-console}
 
-**론치** 콘솔에서 중첩 론치를 만드는 것은 다른 형태의 론치를 만드는 것과 기본적으로 동일하며, 론치 분기 `/content/launches`로 이동해야 합니다.
+**론치** 콘솔에서 중첩된 론치를 만드는 것은 기본적으로 다른 형태의 론치를 만드는 것과 동일하며, 단, 론치 분기 `/content/launches`로 이동해야 합니다.
 
 1. **론치** 콘솔에서 **만들기**&#x200B;를 선택합니다.
 1. **페이지 추가**&#x200B;를 선택한 다음 필터에서 `/content/launches`를 지정하여 론치 분기로 이동합니다. 필요한 론치를 선택하고 **선택**&#x200B;을 사용하여 확인합니다.
@@ -170,4 +169,3 @@ ht-degree: 87%
 >[!CAUTION]
 >
 >론치를 삭제하면 론치 자체 및 모든 하위 중첩 론치가 제거됩니다.
-
