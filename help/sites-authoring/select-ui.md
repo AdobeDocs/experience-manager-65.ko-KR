@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: e418d330-f234-411d-8cad-3fd9906dcbee
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 83%
 
 ---
-
 
 # UI 선택{#selecting-your-ui}
 
@@ -49,7 +48,7 @@ ht-degree: 83%
 >
 >이전 버전에서 업그레이드된 인스턴스는 페이지 작성을 위해 클래식 UI를 유지합니다.
 >
->업그레이드 후 페이지 작성이 터치 지원 UI로 자동 전환되지 않지만, **WCM 작성 UI 모드 서비스**( `AuthoringUIMode` 서비스)의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 사용하여 구성할 수 있습니다. [편집기에 대해 UI 무시](#ui-overrides-for-the-editor)를 참조하십시오.
+>업그레이드 후에 페이지 작성이 터치 지원 UI로 자동 전환되지 않지만 **WCM 작성 UI 모드 서비스**( `AuthoringUIMode` 서비스)의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 사용하여 구성할 수 있습니다. [편집기에 대해 UI 무시](#ui-overrides-for-the-editor)를 참조하십시오.
 
 ## 인스턴스용 기본 UI 구성 {#configuring-the-default-ui-for-your-instance}
 
@@ -84,7 +83,7 @@ ht-degree: 83%
 
 * **URL**
 
-   클래식 UI는 `welcome.html`의 시작 화면에 대한 URL을 사용하여 액세스할 수 있습니다.예:
+   클래식 UI는 `welcome.html`에 있는 시작 화면의 URL을 사용하여 액세스할 수 있습니다.예:
 
    `https://localhost:4502/welcome.html`
 
@@ -113,10 +112,10 @@ ht-degree: 83%
 
 * 페이지 작성 시:
 
-   * URL에서 `cf#`을 사용하여 페이지에 액세스할 때는 클래식 편집기를 사용할 수 밖에 없습니다. 예:
+   * URL에 `cf#`을 사용하여 페이지에 액세스할 때에는 클래식 편집기를 사용할 수 밖에 없습니다. 예:
       `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * URL에서 `/editor.html`을 사용하거나 터치 장치를 사용할 때는 터치 지원 편집기를 사용할 수 밖에 없습니다. 예:
+   * URL에 `/editor.html` 을 사용하거나 터치 장치를 사용할 때에는 터치 지원 편집기를 사용할 수 밖에 없습니다. 예:
       `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * 이러한 강제성은 모두 일시적이며 브라우저 세션에 대해서만 유효합니다.
