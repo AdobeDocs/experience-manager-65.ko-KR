@@ -9,82 +9,81 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2009'
 ht-degree: 1%
 
 ---
 
-
 # 프로그래밍 방식으로 워크플로우와 상호 작용{#interacting-with-workflows-programmatically}
 
-[워크플로](/help/sites-developing/workflows-customizing-extending.md)를 사용자 지정하고 확장할 때 워크플로우 개체에 액세스할 수 있습니다.
+[워크플로우 사용자 지정 및 확장 시](/help/sites-developing/workflows-customizing-extending.md)워크플로우 개체에 액세스할 수 있습니다.
 
 * [워크플로우 Java API 사용](#using-the-workflow-java-api)
-* [ECMA 스크립트에서 워크플로우 객체 얻기](#obtaining-workflow-objects-in-ecma-scripts)
-* [Workflow REST API 사용](#using-the-workflow-rest-api)
+* [ECMA 스크립트에서 워크플로우 개체 가져오기](#obtaining-workflow-objects-in-ecma-scripts)
+* [워크플로우 REST API 사용](#using-the-workflow-rest-api)
 
 ## 워크플로우 Java API {#using-the-workflow-java-api} 사용
 
-워크플로 Java API는 [`com.adobe.granite.workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html) 패키지와 여러 하위 패키지로 구성됩니다. API의 가장 중요한 멤버는 `com.adobe.granite.workflow.WorkflowSession` 클래스입니다. `WorkflowSession` 클래스는 디자인 타임 및 런타임 워크플로 개체에 대한 액세스를 제공합니다.
+워크플로우 Java API는 [`com.adobe.granite.workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/package-summary.html) 패키지와 여러 하위 패키지로 구성됩니다. API의 가장 중요한 멤버는 `com.adobe.granite.workflow.WorkflowSession` 클래스입니다. `WorkflowSession` 클래스는 디자인 타임 및 런타임 워크플로우 개체 모두에 액세스할 수 있도록 합니다.
 
 * 워크플로우 모델
 * 작업 항목
-* 워크플로 인스턴스
-* 워크플로 데이터
+* 워크플로우 인스턴스
+* 워크플로우 데이터
 * 받은 편지함 항목
 
-또한 이 클래스는 워크플로우 수명주기에 개입하는 여러 가지 방법을 제공합니다.
+또한 이 클래스는 워크플로우 주기를 위한 몇 가지 방법을 제공합니다.
 
-다음 표는 작업 과정과 프로그래밍 방식으로 상호 작용할 때 사용할 여러 주요 Java 객체의 참조 설명서에 대한 링크를 제공합니다. 다음 예제에서는 코드에서 클래스 개체를 가져와 사용하는 방법을 보여 줍니다.
+다음 표는 프로그래밍 방식으로 워크플로우와 상호 작용할 때 사용할 몇 가지 주요 Java 개체의 참조 설명서에 대한 링크를 제공합니다. 다음 예제에서는 코드에서 클래스 개체를 가져오고 사용하는 방법을 보여 줍니다.
 
-| 기능 | 개체 |
+| 기능 | 오브젝트 |
 |---|---|
 | 워크플로우 액세스 | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
 | 워크플로우 인스턴스 실행 및 쿼리 | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
 | 워크플로우 모델 관리 | [`WorkflowModel`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
-| 워크플로우에 있는(또는 그렇지 않은) 노드에 대한 정보 | [`WorkflowStatus`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
+| 워크플로우에 있는 노드에 대한 정보 | [`WorkflowStatus`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
-## ECMA 스크립트에서 워크플로우 객체 얻기 {#obtaining-workflow-objects-in-ecma-scripts}
+## ECMA 스크립트에서 워크플로우 개체 가져오기 {#obtaining-workflow-objects-in-ecma-scripts}
 
-[스크립트](/help/sites-developing/the-basics.md#locating-the-script)를 찾는 방법에 설명된 대로 AEM(Apache Sling을 통해)는 서버측 ECMA 스크립트를 실행하는 ECMA 스크립트 엔진을 제공합니다. [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) 클래스는 스크립트에 `sling` 변수로 즉시 사용할 수 있습니다.
+[스크립트](/help/sites-developing/the-basics.md#locating-the-script)에 설명된 대로, AEM(Apache Sling을 통해)에서는 서버측 ECMA 스크립트를 실행하는 ECMA 스크립트 엔진을 제공합니다. 스크립트에서 [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) 클래스를 바로 `sling` 변수로 사용할 수 있습니다.
 
-`ScriptHelper` 클래스는 `WorkflowSession` 개체를 최종적으로 가져오는 데 사용할 수 있는 `SlingHttpServletRequest`에 대한 액세스를 제공합니다.예를 들면 다음과 같습니다.
+`ScriptHelper` 클래스는 `WorkflowSession` 개체를 최종적으로 가져오는 데 사용할 수 있는 `SlingHttpServletRequest`에 대한 액세스 권한을 제공합니다.예:
 
 ```
 var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(Packages.com.adobe.granite.workflow.WorkflowSession);
 ```
 
-## 워크플로 REST API 사용 {#using-the-workflow-rest-api}
+## 워크플로우 REST API {#using-the-workflow-rest-api} 사용
 
 워크플로우 콘솔에서는 REST API를 많이 사용합니다.따라서 이 페이지에서는 워크플로우에 대한 REST API에 대해 설명합니다.
 
 >[!NOTE]
 >
->말림 명령줄 도구를 사용하면 Workflow REST API를 사용하여 워크플로우 개체에 액세스하고 인스턴스 주기를 관리할 수 있습니다. 이 페이지의 예제는 말림 명령줄 도구를 통해 REST API를 사용하는 방법을 보여 줍니다.
+>curl 명령줄 도구를 사용하면 Workflow REST API를 사용하여 워크플로우 개체에 액세스하고 인스턴스 주기를 관리할 수 있습니다. 이 페이지 전체의 예에서 curl 명령줄 도구를 통해 REST API를 사용하는 것을 보여줍니다.
 
 다음 작업이 REST API에서 지원됩니다.
 
 * 워크플로우 서비스 시작 또는 중지
-* 워크플로우 모델 생성, 업데이트 또는 삭제
+* 워크플로우 모델 만들기, 업데이트 또는 삭제
 * [워크플로우 인스턴스 시작, 일시 중지, 다시 시작 또는 종료](/help/sites-administering/workflows.md#workflow-status-and-actions)
 * 작업 항목 완료 또는 위임
 
 >[!NOTE]
 >
->웹 개발을 위한 Firefox 확장인 Firebug를 사용하면 콘솔을 실행할 때 HTTP 트래픽을 따를 수 있습니다. 예를 들어 매개 변수와 `POST` 요청을 사용하여 AEM 서버로 전송된 값을 확인할 수 있습니다.
+>웹 개발을 위한 Firefox 확장인 Firebug를 사용하여 콘솔을 작동할 때 HTTP 트래픽을 따를 수 있습니다. 예를 들어 `POST` 요청을 사용하여 AEM 서버로 전송된 매개 변수와 값을 확인할 수 있습니다.
 
-이 페이지에서는 AEM이 `4502` 포트의 localhost에서 실행되고 설치 컨텍스트는 &quot; `/`&quot;(루트)라고 가정합니다. 설치가 아닌 경우 HTTP 요청이 적용되는 URI를 적절히 조정해야 합니다.
+이 페이지에서는 AEM이 포트 `4502`의 localhost에서 실행되며 설치 컨텍스트가 &quot; `/`&quot;(루트)라고 가정합니다. 설치가 아닌 경우 HTTP 요청이 적용되는 URI를 적절하게 조정해야 합니다.
 
-`GET` 요청에 대해 지원되는 렌더링은 JSON 렌더링입니다. `GET`의 URL에는 `.json` 확장자가 있어야 합니다. 예:
+`GET` 요청에 지원되는 렌더링은 JSON 렌더링입니다. `GET`의 URL에는 `.json` 확장자가 있어야 합니다. 예를 들면 다음과 같습니다.
 
 `http://localhost:4502/etc/workflow.json`
 
-### 워크플로 인스턴스 관리 {#managing-workflow-instances}
+### 워크플로우 인스턴스 관리 {#managing-workflow-instances}
 
-다음 HTTP 요청 메서드가 다음에 적용됩니다.
+다음 HTTP 요청 메서드는 다음에 적용됩니다.
 
 `http://localhost:4502/etc/workflow/instances`
 
@@ -100,24 +99,24 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>새 워크플로우 인스턴스를 만듭니다. 매개 변수는 <br /> - <code>model</code>:해당 워크플로 모델<br /> - <code>payloadType</code>의 ID(URI):페이로드 유형(예: <code>JCR_PATH</code> 또는 URL)을 포함합니다.<br /> 페이로드가 매개 변수로 전송됩니다 <code>payload</code>. 새 워크플로 인스턴스 리소스의 URL이 포함된 위치 헤더와 함께 <code>201</code>(<code>CREATED</code>) 응답이 다시 전송됩니다.</p> </td>
+   <td><p>새 워크플로우 인스턴스를 만듭니다. 매개 변수:<br /> - <code>model</code>:각 워크플로우 모델<br /> - <code>payloadType</code>의 ID(URI):페이로드 유형(예: <code>JCR_PATH</code> 또는 URL)을 포함합니다.<br /> 페이로드가 매개 변수로 전송됩니다  <code>payload</code>. 새 워크플로우 인스턴스 리소스의 URL을 포함하는 위치 헤더와 함께 <code>201</code> (<code>CREATED</code>) 응답이 다시 전송됩니다.</p> </td>
   </tr>
  </tbody>
 </table>
 
-#### 상태 {#managing-a-workflow-instance-by-its-state}별로 워크플로우 인스턴스 관리
+#### 상태 {#managing-a-workflow-instance-by-its-state}로 워크플로우 인스턴스 관리
 
-다음 HTTP 요청 메서드가 다음에 적용됩니다.
+다음 HTTP 요청 메서드는 다음에 적용됩니다.
 
 `http://localhost:4502/etc/workflow/instances.{state}`
 
 | HTTP 요청 메서드 | 작업 |
 |---|---|
-| `GET` | 사용 가능한 워크플로 인스턴스 및 상태( `RUNNING`, `SUSPENDED`, `ABORTED` 또는 `COMPLETED`)를 나열합니다. |
+| `GET` | 사용 가능한 워크플로우 인스턴스와 해당 상태( `RUNNING`, `SUSPENDED`, `ABORTED` 또는 `COMPLETED`)를 나열합니다. |
 
 #### ID {#managing-a-workflow-instance-by-its-id}로 워크플로우 인스턴스 관리
 
-다음 HTTP 요청 메서드가 다음에 적용됩니다.
+다음 HTTP 요청 메서드는 다음에 적용됩니다.
 
 `http://localhost:4502/etc/workflow/instances/{id}`
 
@@ -129,18 +128,18 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>각 워크플로우 모델에 대한 링크를 포함하여 인스턴스 데이터(정의 및 메타데이터)를 가져옵니다.</td>
+   <td>각 워크플로우 모델에 대한 링크를 포함하는 인스턴스 데이터(정의 및 메타데이터)를 가져옵니다.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>인스턴스의 상태를 변경합니다. 새 상태는 매개 변수 <code>state</code>으로 전송되며 다음 값 중 하나가 있어야 합니다.<code>RUNNING</code>, <code>SUSPENDED</code> 또는 <code>ABORTED</code>.<br /> 새 상태에 연결할 수 없는 경우(예: 종료된 인스턴스를 일시 중단하는 경우)  <code>409</code> (<code>CONFLICT</code>) 응답이 클라이언트로 다시 전송됩니다.</td>
+   <td>인스턴스의 상태를 변경합니다. 새 상태는 매개 변수 <code>state</code> 로 전송되며 다음 값 중 하나가 있어야 합니다.<code>RUNNING</code>, <code>SUSPENDED</code> 또는 <code>ABORTED</code>.<br /> 새 상태에 연결할 수 없는 경우(예: 종료된 인스턴스를 일시 중단할 때)  <code>409</code> (<code>CONFLICT</code>) 응답이 클라이언트로 다시 전송됩니다.</td>
   </tr>
  </tbody>
 </table>
 
 ### 워크플로우 모델 관리 {#managing-workflow-models}
 
-다음 HTTP 요청 메서드가 다음에 적용됩니다.
+다음 HTTP 요청 메서드는 다음에 적용됩니다.
 
 `http://localhost:4502/etc/workflow/models`
 
@@ -156,7 +155,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>새 워크플로우 모델 만들기. 매개 변수 <code>title</code>이(가) 전송되면 지정된 제목으로 새 모델이 생성됩니다. JSON 모델 정의를 매개 변수 <code>model</code>으로 첨부하면 제공된 정의에 따라 새 워크플로우 모델이 만들어집니다.<br /> 새  <code>201</code> 워크플로우 모델 리소스의 URL이 포함된 위치 헤더와 함께 응답(<code>CREATED</code>)이 다시 전송됩니다.<br /> 모델 정의가 파일 매개 변수(  <code>modelfile</code><br /> 직렬화 형식 <code>model</code> 을 정의하려면  <code>modelfile</code> 매개 변수와 매개 변수의 두  <code>type</code> 경우 모두에 이 추가 매개 변수가 필요합니다. OSGI API를 사용하여 새로운 직렬화 형식을 통합할 수 있습니다. 표준 JSON 직렬 변환기는 워크플로 엔진과 함께 제공됩니다. JSON 형식입니다. 서식의 예는 아래를 참조하십시오.</td>
+   <td>새 워크플로우 모델 만들기. 매개 변수 <code>title</code>이 전송되면 지정된 제목과 함께 새 모델이 만들어집니다. JSON 모델 정의를 매개 변수 <code>model</code>로 첨부하면 제공된 정의에 따라 새 워크플로우 모델이 만들어집니다.<br /> 새  <code>201</code> 워크플로우 모델 리소스의 URL을 포함하는 위치 헤더와 함께 응답(<code>CREATED</code>)이 다시 전송됩니다.<br /> 모델 정의가 라는 파일 매개 변수로 첨부된 경우에도  <code>modelfile</code>마찬가지입니다.<br /> 이 두 경우 모두 <code>model</code> 와  <code>modelfile</code> 매개 변수의 경우 serialization 형식을 정의하려면 라는 추가 매개 변수 <code>type</code> 가 필요합니다. OSGI API를 사용하여 새로운 직렬화 형식을 통합할 수 있습니다. 워크플로우 엔진과 함께 표준 JSON 직렬 변환기가 제공됩니다. 해당 유형은 JSON입니다. 형식에 대한 예는 아래를 참조하십시오.</td>
   </tr>
  </tbody>
 </table>
@@ -223,7 +222,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 #### 특정 워크플로우 모델 관리 {#managing-a-specific-workflow-model}
 
-다음 HTTP 요청 메서드가 다음에 적용됩니다.
+다음 HTTP 요청 메서드는 다음에 적용됩니다.
 
 `http://localhost:4502*{uri}*`
 
@@ -241,11 +240,11 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
   </tr>
   <tr>
    <td><code>PUT</code></td>
-   <td>모델의 <code>HEAD</code> 버전을 업데이트합니다(새 버전 만들기).<br /> 모델의 새 버전에 대한 전체 모델 정의를 호출되는 매개 변수로 추가해야 합니다 <code>model</code>. 또한 새 모델을 만들 때는 <code>type</code> 매개 변수가 필요하므로 <code>JSON</code> 값이 필요합니다.<br /> </td>
+   <td>모델의 <code>HEAD</code> 버전을 업데이트합니다(새 버전을 만듭니다).<br /> 모델의 새 버전에 대한 전체 모델 정의를 라는 매개변수로 추가해야 합니다 <code>model</code>. 또한 새 모델을 만들 때에는 <code>type</code> 매개 변수가 필요하며 <code>JSON</code>.<br /> 값을 지정해야 합니다 </td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>PUT과 동일한 비헤이비어 AEM 위젯이 <code>PUT</code> 작업을 지원하지 않으므로 필요합니다.</td>
+   <td>PUT과 동일한 동작입니다. AEM 위젯이 <code>PUT</code> 작업을 지원하지 않으므로 필요합니다.</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
@@ -334,7 +333,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 #### 버전 {#managing-a-workflow-model-by-its-version}별로 워크플로우 모델 관리
 
-다음 HTTP 요청 메서드가 다음에 적용됩니다.
+다음 HTTP 요청 메서드는 다음에 적용됩니다.
 
 `http://localhost:4502/etc/workflow/models/{id}.{version}`
 
@@ -342,9 +341,9 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 |---|---|
 | `GET` | 지정된 버전에서 모델의 데이터를 가져옵니다(있는 경우). |
 
-### {#managing-user-inboxes} 받은 편지함 관리(사용자)
+### 받은 편지함 {#managing-user-inboxes} 관리(사용자)
 
-다음 HTTP 요청 메서드가 다음에 적용됩니다.
+다음 HTTP 요청 메서드는 다음에 적용됩니다.
 
 `http://localhost:4502/bin/workflow/inbox`
 
@@ -360,38 +359,38 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>URI가 매개 변수 <code>item</code>으로 전송되는 작업 항목을 완료하고 한 단계 뒤로 이동할 경우 매개 변수 <code>route</code> 또는 <code>backroute</code>에 의해 정의된 다음 노드로 작업 흐름 인스턴스를 전달합니다.<br /> 매개 변수 <code>delegatee</code> 가 전송되면 매개 변수로 식별된 작업 항목 <code>item</code> 이 지정된 참가자에게 위임됩니다.</td>
+   <td>URI가 매개 변수 <code>item</code>(으)로 전송되는 작업 항목을 완료하고, 한 단계 뒤로 이동할 경우 매개 변수 <code>route</code> 또는 <code>backroute</code>에 의해 정의된 다음 노드로 해당 워크플로우 인스턴스를 진행합니다.<br /> 매개변수 <code>delegatee</code> 가 전송되면 매개변수로 식별된 작업 항목 <code>item</code> 이 지정된 참여자에게 위임됩니다.</td>
   </tr>
  </tbody>
 </table>
 
-#### WorkItem ID {#managing-a-user-inbox-by-the-workitem-id}에 의한 받은 편지함 관리
+#### WorkItem ID {#managing-a-user-inbox-by-the-workitem-id}에 의한 (사용자) 받은 편지함 관리
 
-다음 HTTP 요청 메서드가 다음에 적용됩니다.
+다음 HTTP 요청 메서드는 다음에 적용됩니다.
 
 `http://localhost:4502/bin/workflow/inbox/{id}`
 
 | HTTP 요청 메서드 | 작업 |
 |---|---|
-| `GET` | ID로 식별되는 받은 편지함 `WorkItem`의 데이터(정의 및 메타데이터)를 가져옵니다. |
+| `GET` | 받은 편지함 `WorkItem`의 데이터(정의 및 메타데이터)를 해당 ID로 식별합니다. |
 
 ## 예 {#examples}
 
 ### ID가 {#how-to-get-a-list-of-all-running-workflows-with-their-ids}인 모든 실행 워크플로우 목록을 가져오는 방법
 
-실행 중인 모든 워크플로우의 목록을 보려면 GET을 사용하여 다음을 수행합니다.
+실행 중인 모든 워크플로우의 목록을 가져오려면 GET을 수행하십시오.
 
 `http://localhost:4502/etc/workflow/instances.RUNNING.json`
 
-#### ID가 있는 모든 실행 워크플로우 목록을 가져오는 방법 - curl {#how-to-get-a-list-of-all-running-workflows-with-their-ids-rest-using-curl}을 사용하여 REST
+#### ID가 있는 모든 실행 워크플로우 목록 가져오는 방법 - curl을 사용하여 REST{#how-to-get-a-list-of-all-running-workflows-with-their-ids-rest-using-curl}
 
-말림 사용 예:
+curl 사용 예:
 
 ```shell
 curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 ```
 
-결과에 표시된 `uri`는 다른 명령에서 `id` 인스턴스로 사용할 수 있습니다.예를 들면 다음과 같습니다.
+결과에 표시된 `uri`은 다른 명령에서 `id` 인스턴스로 사용할 수 있습니다.예:
 
 ```shell
 [
@@ -401,11 +400,11 @@ curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 
 >[!NOTE]
 >
->이 `curl` 명령은 `RUNNING` 대신 [워크플로 상태](/help/sites-administering/workflows.md#workflow-status-and-actions)와 함께 사용할 수 있습니다.
+>이 `curl` 명령은 `RUNNING` 대신 [워크플로우 상태](/help/sites-administering/workflows.md#workflow-status-and-actions)와 함께 사용할 수 있습니다.
 
 ### 워크플로우 제목 {#how-to-change-the-workflow-title}을 변경하는 방법
 
-워크플로우 콘솔의 **인스턴스** 탭에 표시된 **워크플로우 제목**&#x200B;을 변경하려면 `POST` 명령을 보내십시오.
+워크플로우 콘솔의 **인스턴스** 탭에 표시되는 **워크플로우 제목**&#x200B;을 변경하려면 `POST` 명령을 보냅니다.
 
 * 끝: `http://localhost:4502/etc/workflow/instances/{id}`
 
@@ -414,9 +413,9 @@ curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
    * `action`:값은 다음과 같습니다.  `UPDATE`
    * `workflowTitle`:워크플로우 제목
 
-#### 말림 {#how-to-change-the-workflow-title-rest-using-curl}을 사용하여 워크플로 제목 - REST를 변경하는 방법
+#### curl {#how-to-change-the-workflow-title-rest-using-curl}을 사용하여 워크플로우 제목 - REST를 변경하는 방법
 
-말림 사용 예:
+curl 사용 예:
 
 ```shell
 curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://localhost:4502/etc/workflow/instances/{id}
@@ -425,15 +424,15 @@ curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://loca
 curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
 ```
 
-### 모든 워크플로 모델 목록 방법 {#how-to-list-all-workflow-models}
+### 모든 워크플로우 모델을 나열하는 방법 {#how-to-list-all-workflow-models}
 
-사용 가능한 모든 워크플로우 모델 목록을 보려면 GET을 사용하여 다음을 수행합니다.
+사용 가능한 모든 워크플로우 모델 목록을 보려면 다음 작업을 수행하십시오.
 
 `http://localhost:4502/etc/workflow/models.json`
 
-#### 모든 워크플로우 모델을 나열하는 방법 - 말림 {#how-to-list-all-workflow-models-rest-using-curl}을 사용하여 REST
+#### 모든 워크플로우 모델을 나열하는 방법 - curl {#how-to-list-all-workflow-models-rest-using-curl}을 사용하여 REST
 
-말림 사용 예:
+curl 사용 예:
 
 ```shell
 curl -u admin:admin http://localhost:4502/etc/workflow/models.json
@@ -441,15 +440,15 @@ curl -u admin:admin http://localhost:4502/etc/workflow/models.json
 
 >[!NOTE]
 >
->자세한 내용은 [워크플로우 모델 관리](#managing-workflow-models)를 참조하십시오.
+>또한 [워크플로우 모델 관리](#managing-workflow-models)를 참조하십시오.
 
-### WorkflowSession 개체 {#obtaining-a-workflowsession-object} 얻기
+### WorkflowSession 개체 {#obtaining-a-workflowsession-object} 가져오기
 
-`com.adobe.granite.workflow.WorkflowSession` 클래스는 `javax.jcr.Session` 개체 또는 `org.apache.sling.api.resource.ResourceResolver` 개체에서 사용할 수 있습니다.
+`com.adobe.granite.workflow.WorkflowSession` 클래스는 `javax.jcr.Session` 개체 또는 `org.apache.sling.api.resource.ResourceResolver` 개체에서 적응할 수 있습니다.
 
-#### WorkflowSession 개체 얻기 - Java {#obtaining-a-workflowsession-object-java}
+#### WorkflowSession 개체 가져오기 - Java {#obtaining-a-workflowsession-object-java}
 
-JSP 스크립트(또는 servlet 클래스의 Java 코드)에서 HTTP 요청 객체를 사용하여 `ResourceResolver` 객체에 대한 액세스를 제공하는 `SlingHttpServletRequest` 객체를 가져옵니다. `ResourceResolver` 개체를 `WorkflowSession`에 적용합니다.
+JSP 스크립트(또는 서블릿 클래스의 Java 코드)에서 HTTP 요청 개체를 사용하여 `ResourceResolver` 객체에 대한 액세스를 제공하는 `SlingHttpServletRequest` 개체를 가져옵니다. `ResourceResolver` 개체를 `WorkflowSession`에 조정합니다.
 
 ```java
 <%
@@ -463,9 +462,9 @@ WorkflowSession wfSession = slingReq.getResourceResolver().adaptTo(WorkflowSessi
 %>
 ```
 
-#### WorkflowSession 개체 얻기 - ECMA 스크립트 {#obtaining-a-workflowsession-object-ecma-script}
+#### WorkflowSession 개체 가져오기 - ECMA 스크립트 {#obtaining-a-workflowsession-object-ecma-script}
 
-`sling` 변수를 사용하여 `ResourceResolver` 개체를 가져오는 데 사용하는 `SlingHttpServletRequest` 개체를 가져옵니다. `ResourceResolver` 개체를 `WorkflowSession` 개체에 적용합니다.
+`sling` 변수를 사용하여 `ResourceResolver` 개체를 가져오는 데 사용하는 `SlingHttpServletRequest` 개체를 가져옵니다. `ResourceResolver` 개체를 `WorkflowSession` 개체에 조정합니다.
 
 ```
 var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(Packages.com.adobe.granite.workflow.WorkflowSession);
@@ -480,7 +479,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 사용된 예:
 
-1. 모델을 만듭니다(ID `/var/workflow/models/mymodel/jcr:content/model` 포함).
+1. 모델을 만듭니다(ID `/var/workflow/models/mymodel/jcr:content/model` 사용).
 1. 모델을 삭제합니다.
 
 >[!NOTE]
@@ -491,20 +490,20 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 새 모델을 생성할 때:
 
-* 워크플로우 모델 편집기에서는 모델이 `/var/workflow/models` 아래의 특정 노드 구조를 사용해야 합니다. 모델의 부모 노드는 다음 속성 값을 갖는 `jcr:content` 노드가 있는 `cq:Page` 유형이어야 합니다.
+* 워크플로우 모델 편집기를 사용하려면 모델이 `/var/workflow/models` 아래의 특정 노드 구조를 사용해야 합니다. 모델의 상위 노드는 `jcr:content` 노드가 다음 속성 값을 갖는 `cq:Page` 유형이어야 합니다.
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`:  `/libs/cq/workflow/templates/model`
 
    모델을 생성할 때 먼저 이 `cq:Page` 노드를 만들고 해당 `jcr:content` 노드를 모델 노드의 상위로 사용해야 합니다.
 
-* 모델을 식별하기 위해 일부 메서드에서 필요로 하는 `id` 인수는 저장소의 모델 노드의 절대 경로입니다.
+* 모델을 식별하는 데 필요한 일부 메서드가 저장소의 모델 노드의 절대 경로입니다.`id`
 
    `/var/workflow/models/<*model_name>*/jcr:content/model`
 
    >[!NOTE]
    >
-   >[모든 워크플로 모델 목록 방법](#how-to-list-all-workflow-models)을 참조하십시오.
+   >모든 워크플로우 모델을 나열하는 방법](#how-to-list-all-workflow-models)을 참조하십시오.[
 
 #### 워크플로우 모델 만들기, 읽기 또는 삭제 - Java {#creating-reading-or-deleting-workflow-models-java}
 
@@ -547,7 +546,7 @@ var model = wfSession.createNewModel("My Model", modelId);
 var model = wfSession.deleteModel(modelId);
 ```
 
-#### 워크플로우 모델 삭제 - 말림 {#deleting-a-workflow-model-rest-using-curl}을 사용하여 REST
+#### curl {#deleting-a-workflow-model-rest-using-curl}을 사용하여 워크플로우 모델 삭제 - REST
 
 ```shell
 # deleting the model by its id
@@ -556,40 +555,40 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 
 >[!NOTE]
 >
->필요한 세부 수준 때문에 curl은 모델을 생성 및/또는 읽을 때 실용적이지 않습니다.
+>필요한 세부 수준 때문에 curl은 모델을 만들거나 읽는 데 실용적이지 않은 것으로 간주됩니다.
 
-### 워크플로우 상태 확인 시 시스템 워크플로우 필터링 {#filtering-out-system-workflows-when-checking-workflow-status}
+### 워크플로우 상태 {#filtering-out-system-workflows-when-checking-workflow-status} 확인 시 시스템 워크플로우 필터링
 
-[WorkflowStatus API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html)를 사용하여 노드의 워크플로 상태에 대한 정보를 검색할 수 있습니다.
+[WorkflowStatus API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html)를 사용하여 노드의 워크플로우 상태에 대한 정보를 검색할 수 있습니다.
 
-다양한 메서드에는 다음과 같은 매개 변수가 있습니다.
+다양한 방법에는 다음과 같은 매개 변수가 있습니다.
 
 `excludeSystemWorkflows`
 
-이 매개 변수를 `true`으로 설정하여 시스템 작업 과정이 관련 결과에서 제외되도록 할 수 있습니다.
+이 매개 변수를 `true`(으)로 설정하여 시스템 워크플로우를 관련 결과에서 제외해야 함을 나타낼 수 있습니다.
 
-[시스템 워크플로로 간주할 워크플로 `Models`를 지정하는 OSGi 구성](/help/sites-deploying/configuring-osgi.md) **Adobe Granite Workflow PayloadMapCache**&#x200B;을 업데이트할 수 있습니다. 기본(런타임) 워크플로우 모델은 다음과 같습니다.
+[은(는) 시스템 워크플로우로 간주되는 워크플로우 `Models`를 지정하는 OSGi 구성](/help/sites-deploying/configuring-osgi.md) **Granite Workflow PayloadMapCache** Adobe을 업데이트할 수 있습니다. 기본(런타임) 워크플로우 모델은 다음과 같습니다.
 
 * `/var/workflow/models/scheduled_activation/jcr:content/model`
 * `/var/workflow/models/scheduled_deactivation/jcr:content/model`
 
-### 참가자 이동 시간 초과 후 자동 진행 {#auto-advance-participant-step-after-a-timeout}
+### 시간 제한 후 자동 진행 참가자 단계 {#auto-advance-participant-step-after-a-timeout}
 
 사전 정의된 시간 내에 완료되지 않은 **참가자** 단계를 자동으로 진행해야 하는 경우 다음을 수행할 수 있습니다.
 
-1. OSGI 이벤트 리스너를 구현하여 작업 생성 및 수정 내용을 수신합니다.
-1. 시간 제한(마감 시간)을 지정한 다음, 해당 시간에 실행할 예약된 슬링 작업을 만듭니다.
-1. 시간 초과가 만료되고 작업이 트리거될 때 알림을 받는 작업 핸들러를 작성합니다.
+1. OSGI 이벤트 리스너를 구현하여 작업 생성 및 수정 사항을 수신합니다.
+1. 시간 제한(기한)을 지정한 다음 해당 시간에 실행할 예약된 슬링 작업을 만듭니다.
+1. 시간 제한이 만료되고 작업이 트리거될 때 알림을 받는 작업 처리기를 작성합니다.
 
    작업이 아직 완료되지 않은 경우 이 처리기는 작업에 필요한 작업을 수행합니다
 
 >[!NOTE]
 >
->이 방법을 사용할 수 있도록 조치를 명확히 정의해야 합니다.
+>이 접근 방식을 사용할 수 있도록 수행할 작업을 명확히 정의해야 합니다.
 
-### 워크플로 인스턴스 상호 작용 {#interacting-with-workflow-instances}
+### 워크플로우 인스턴스와 상호 작용 {#interacting-with-workflow-instances}
 
-다음은 워크플로우 인스턴스와 상호 작용(프로그래밍)하는 방법에 대한 기본 예를 제공합니다.
+다음은 워크플로우 인스턴스와 상호 작용(프로그래밍 방식으로)하는 방법에 대한 기본 예를 제공합니다.
 
 #### 워크플로우 인스턴스와 상호 작용 - Java {#interacting-with-workflow-instances-java}
 
@@ -623,7 +622,7 @@ wfSession.resumeWorkflow(workflow);
 wfSession.terminateWorkflow(workflow);
 ```
 
-#### 워크플로 인스턴스와 상호 작용 - 말림 {#interacting-with-workflow-instances-rest-using-curl}을(를) 사용하여 REST
+#### 워크플로우 인스턴스와 상호 작용 - curl {#interacting-with-workflow-instances-rest-using-curl}을 사용하는 REST
 
 * **워크플로우 시작**
 
@@ -635,14 +634,14 @@ wfSession.terminateWorkflow(workflow);
    curl -u admin:admin -d "model=/var/workflow/models/request_for_activation&payloadType=JCR_PATH&payload=/content/we-retail/us/en/products" http://localhost:4502/etc/workflow/instances
    ```
 
-* **인스턴스 목록**
+* **인스턴스 나열**
 
    ```shell
    # listing the instances
    curl -u admin:admin http://localhost:4502/etc/workflow/instances.json
    ```
 
-   모든 인스턴스가 나열됩니다.예를 들면 다음과 같습니다.
+   그러면 모든 인스턴스가 나열됩니다.예:
 
    ```shell
    [
@@ -653,7 +652,7 @@ wfSession.terminateWorkflow(workflow);
 
    >[!NOTE]
    >
-   >특정 상태의 인스턴스를 나열하려면 [실행 중인 모든 워크플로 목록](#how-to-get-a-list-of-all-running-workflows-with-their-ids)을 ID로 가져오는 방법을 참조하십시오.
+   >특정 상태의 인스턴스를 나열하려면 [실행 중인 모든 워크플로우 목록을 해당 ID로 가져오는 방법](#how-to-get-a-list-of-all-running-workflows-with-their-ids)을 참조하십시오.
 
 * **워크플로우 일시 중단**
 
@@ -685,11 +684,11 @@ wfSession.terminateWorkflow(workflow);
    curl -u admin:admin -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
    ```
 
-### 작업 항목 상호 작용 {#interacting-with-work-items}
+### 작업 항목 {#interacting-with-work-items}과 상호 작용
 
-다음은 작업 항목과 상호 작용(프로그래밍) 방법에 대한 기본 예를 제공합니다.
+다음은 작업 항목과 상호 작용(프로그래밍)하는 방법에 대한 기본 예를 제공합니다.
 
-#### 작업 항목과의 상호 작용 - Java {#interacting-with-work-items-java}
+#### 작업 항목과 상호 작용 - Java {#interacting-with-work-items-java}
 
 ```java
 // querying work items
@@ -707,7 +706,7 @@ wfSession.delegateWorkItem(workItem, delegatees.get(0));
 wfSession.complete(workItem, routes.get(0));
 ```
 
-#### 작업 항목과의 상호 작용 - ECMA 스크립트 {#interacting-with-work-items-ecma-script}
+#### 작업 항목과 상호 작용 - ECMA 스크립트 {#interacting-with-work-items-ecma-script}
 
 ```
 // querying work items
@@ -725,7 +724,7 @@ wfSession.delegateWorkItem(workItem, delegatees.get(0));
 wfSession.complete(workItem, routes.get(0));
 ```
 
-#### 작업 항목과의 상호 작용 - 말림 {#interacting-with-work-items-rest-using-curl}을 사용하여 REST
+#### 작업 항목과 상호 작용 - curl {#interacting-with-work-items-rest-using-curl}을 사용하여 REST
 
 * **받은 편지함에서 작업 항목 나열**
 
@@ -734,7 +733,7 @@ wfSession.complete(workItem, routes.get(0));
    curl -u admin:admin http://localhost:4502/bin/workflow/inbox
    ```
 
-   현재 받은 편지함에 있는 작업 항목에 대한 세부 사항이 나열됩니다.예를 들면 다음과 같습니다.
+   현재 받은 편지함에 있는 작업 항목에 대한 세부 사항이 나열됩니다.예:
 
    ```shell
    [{
@@ -809,9 +808,9 @@ wfSession.complete(workItem, routes.get(0));
    curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_activation_1&route=233123169" http://localhost:4502/bin/workflow/inbox
    ```
 
-### 워크플로 이벤트 수신 대기 중 {#listening-for-workflow-events}
+### 워크플로우 이벤트 수신{#listening-for-workflow-events}
 
-OSGi 이벤트 프레임워크를 사용하여 [ `com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) 클래스가 정의하는 이벤트를 수신합니다. 또한 이 클래스는 이벤트의 제목에 대한 정보를 얻는 데 유용한 여러 가지 방법을 제공합니다. 예를 들어 `getWorkItem` 메서드는 이벤트에 관련된 작업 항목에 대한 `WorkItem` 객체를 반환합니다.
+OSGi 이벤트 프레임워크를 사용하여 [ `com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) 클래스가 정의한 이벤트를 수신합니다. 또한 이 클래스는 이벤트의 주제에 대한 정보를 얻는 데 유용한 몇 가지 방법을 제공합니다. 예를 들어 `getWorkItem` 메서드는 이벤트에 포함된 작업 항목에 대한 `WorkItem` 개체를 반환합니다.
 
 다음 예제 코드는 워크플로우 이벤트를 수신하고 이벤트 유형에 따라 작업을 수행하는 서비스를 정의합니다.
 
@@ -885,4 +884,3 @@ public class WorkflowEventCatcher implements EventHandler, JobProcessor {
  }
 }
 ```
-
