@@ -58,12 +58,10 @@ Adobe Analytics과 AEM을 통합하여 웹 페이지 활동을 추적할 수 있
 >사용자 지정 프록시 구성과 함께 Adobe Analytics을 사용하는 경우 [Apache HTTP Client **프록시 구성에 필요한 두 개의 OSGi 번들](/help/sites-deploying/configuring-osgi.md)(예: 웹 콘솔 사용)을 구성해야 합니다.** AEM의 일부 기능에서는 3.x API를 사용하는 반면, 다른 기능에서는 4.x API를 사용하기 때문에 두 가지 모두 필요합니다. 구성:
 >
 >* **3.x API를 구성하기 위한 Day Commons HTTP Client 3.1** 
-   >  예: [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
-   >
-   >
-* **4.x API를** 구성하기 위한 Apache HTTP 구성 요소 프록시 구성
-   >  예: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
+>  예: [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>
+>* **4.x API를** 구성하기 위한 Apache HTTP 구성 요소 프록시 구성
+>  예: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 

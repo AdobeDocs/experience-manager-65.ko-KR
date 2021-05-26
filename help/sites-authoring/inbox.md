@@ -45,9 +45,9 @@ ht-degree: 100%
 >항목 유형에 대한 자세한 정보는 다음을 참조하십시오.
 >
 >* [프로젝트](/help/sites-authoring/touch-ui-managing-projects.md)
-* [프로젝트 - 작업 중](/help/sites-authoring/task-content.md)
-* [워크플로우](/help/sites-authoring/workflows.md)
-* [양식](/help/forms/home.md)
+>* [프로젝트 - 작업 중](/help/sites-authoring/task-content.md)
+>* [워크플로우](/help/sites-authoring/workflows.md)
+>* [양식](/help/forms/home.md)
 
 
 
@@ -58,7 +58,8 @@ ht-degree: 100%
 ![wf-80](assets/wf-80.png)
 
 >[!NOTE]
-특정 작업이 [해당 리소스의 카드 보기에도](/help/sites-authoring/basic-handling.md#card-view) 표시됩니다.
+>
+>특정 작업이 [해당 리소스의 카드 보기에도](/help/sites-authoring/basic-handling.md#card-view) 표시됩니다.
 
 ## 뛰어난 관리 작업  {#out-of-the-box-administrative-tasks}
 
@@ -83,7 +84,8 @@ AEM 알림 받은 편지함 열기
    ![wf-79](assets/inbox-list-view.png)
 
 >[!NOTE]
-받은 편지함은 콘솔로 작동하므로 완료되면 [전역 탐색](/help/sites-authoring/basic-handling.md#global-navigation) 또는 [검색](/help/sites-authoring/search.md)을 사용하여 다른 위치를 탐색합니다.
+>
+>받은 편지함은 콘솔로 작동하므로 완료되면 [전역 탐색](/help/sites-authoring/basic-handling.md#global-navigation) 또는 [검색](/help/sites-authoring/search.md)을 사용하여 다른 위치를 탐색합니다.
 
 ### 받은 편지함 - 목록 보기 {#inbox-list-view}
 
@@ -164,7 +166,8 @@ AEM 알림 받은 편지함 열기
 ## 항목에 대한 작업 수행 {#taking-action-on-an-item}
 
 >[!NOTE]
-항목을 두 개 이상 선택할 수 있지만 한 번에 한 항목에서만 작업을 수행할 수 있습니다.
+>
+>항목을 두 개 이상 선택할 수 있지만 한 번에 한 항목에서만 작업을 수행할 수 있습니다.
 
 
 1. 항목에 대해 작업을 수행하기 위해서는 해당 항목 옆에 있는 썸네일을 선택합니다. 해당 항목에 적용할 수 있는 작업에 대한 아이콘이 도구 모음에 표시됩니다.
@@ -185,8 +188,9 @@ AEM 알림 받은 편지함 열기
    * 항목에서 프로젝트를 생성합니다.
 
    >[!NOTE]
-   자세한 내용은 다음을 참조하십시오.
-   * 워크플로우 항목 - [워크플로우에 참여](/help/sites-authoring/workflows-participating.md)
+   >
+   >자세한 내용은 다음을 참조하십시오.
+   >* 워크플로우 항목 - [워크플로우에 참여](/help/sites-authoring/workflows-participating.md)
 
 
 1. 선택한 항목에 따라 작업이 시작됩니다. 예를 들면 다음과 같습니다.
@@ -241,8 +245,9 @@ AEM 알림 받은 편지함 열기
 1. 썸네일에서 적절한 작업을 탭/클릭하여 선택합니다.
 
    >[!NOTE]
-   **받은 편지함**&#x200B;의 **만들기** 옵션을 사용하여 생성된 작업만 프로젝트를 만드는 데 사용할 수 있습니다.
-   워크플로우의 작업 항목은 프로젝트를 만드는 데 사용할 수 없습니다.
+   >
+   >**받은 편지함**&#x200B;의 **만들기** 옵션을 사용하여 생성된 작업만 프로젝트를 만드는 데 사용할 수 있습니다.
+   >워크플로우의 작업 항목은 프로젝트를 만드는 데 사용할 수 없습니다.
 
 1. 도구 막대에서 **프로젝트 만들기**&#x200B;를 선택하여 마법사를 엽니다.
 1. 해당 템플릿을 선택한 뒤 **다음**&#x200B;을 선택합니다.
@@ -258,8 +263,10 @@ AEM 알림 받은 편지함 열기
    * **고급**
 
       * **이름**
+
    >[!NOTE]
-   자세한 내용은 [프로젝트 만들기](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project)를 참조하십시오.
+   >
+   >자세한 내용은 [프로젝트 만들기](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project)를 참조하십시오.
 
 1. **만들기**&#x200B;를 선택하여 작업을 확인합니다.
 
@@ -278,4 +285,5 @@ AEM 알림 받은 편지함 열기
    ![wf-89](assets/wf-89.png)
 
    >[!NOTE]
-   또한 [보기 설정](#inbox-view-settings)에서 [목록 보기](#inbox-list-view)를 사용할 때 정렬 순서를 구성할 수 있습니다.
+   >
+   >또한 [보기 설정](#inbox-view-settings)에서 [목록 보기](#inbox-list-view)를 사용할 때 정렬 순서를 구성할 수 있습니다.

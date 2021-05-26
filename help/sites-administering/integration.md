@@ -33,7 +33,6 @@ AEM을 다른 Adobe 또는 타사 서비스와 통합하는 방법에 대해 다
 >
 >* 3.x는 [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x는 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
 >
 
 

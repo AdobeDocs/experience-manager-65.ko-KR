@@ -53,19 +53,16 @@ ht-degree: 2%
 >
 >* [](/help/sites-administering/msm.md) MSM은 언어의 경계 내에서 블루프린트(예: 전역 마스터)에서 라이브 카피(예: 로컬 사이트)로 번역된 컨텐츠의 배포를 관리합니다.
 >* AEM의 [번역](/help/sites-administering/translation.md) 통합 기능은 타사 번역 관리 서비스와 함께 언어를 관리하고 컨텐츠를 이러한 다른 언어로 번역할 수 있습니다.
-
 >
->
-고급 사용 사례를 위해 MSM은 언어 마스터에서 사용할 수도 있습니다.
+>고급 사용 사례를 위해 MSM은 언어 마스터에서 사용할 수도 있습니다.
 
 >[!NOTE]
 >
 >모든 사용 사례에 대해 다음 우수 사례를 읽는 것이 좋습니다.
 >
 >* [MSM에 대한 우수 사례](/help/sites-administering/msm-best-practices.md);특히
-   >
-   >   
-   * [사이트 만들기](/help/sites-administering/msm-best-practices.md#create-site)
+>
+>   * [사이트 만들기](/help/sites-administering/msm-best-practices.md#create-site)
    * [MSM 및 다국어 웹 사이트](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 * [번역 우수 사례](/help/sites-administering/tc-bp.md)
 
