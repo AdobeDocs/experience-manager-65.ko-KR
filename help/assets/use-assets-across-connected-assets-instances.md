@@ -5,18 +5,18 @@ contentOwner: AG
 role: Business Practitioner, Administrator, Leader
 feature: 연결된 자산, 사용자 및 그룹
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: 9e99d25a15aee56721112e2afd4b570ba7854bd7
 workflow-type: tm+mt
-source-wordcount: '2739'
-ht-degree: 29%
+source-wordcount: '2742'
+ht-degree: 28%
 
 ---
 
 # 연결된 자산을 사용하여 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}에서 DAM 자산 공유
 
-대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 한 가지 이유는 함께 작업하는 데 필요한 기존 배포를 지리적으로 배포할 수 있습니다. 또 다른 이유는 모회사가 함께 사용하려는 이기종 인프라를 인수하는 것입니다.
+대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 함께 작업하는 데 필요한 기존 배포를 지리적으로 배포할 수 있습니다. 또 다른 이유는 모회사가 함께 사용하려는 다른 [!DNL Experience Manager] 버전을 포함하여 이기종 인프라를 인수하는 것입니다.
 
-사용자는 [!DNL Experience Manager Sites]에서 웹 페이지를 만들 수 있습니다. [!DNL Experience Manager Assets] 는 웹 사이트에 필요한 자산을 제공하는 DAM(디지털 자산 관리) 시스템입니다. [!DNL Experience Manager]는 이제 [!DNL Sites] 및 [!DNL Assets]을 통합하여 위의 사용 사례를 지원합니다. 
+연결된 자산 기능은 [!DNL Experience Manager Sites] 및 [!DNL Experience Manager Assets]을 통합하여 위의 사용 사례를 지원합니다. 사용자는 별도의 [!DNL Assets] 배포에서 디지털 자산을 사용하는 [!DNL Sites]에 웹 페이지를 만들 수 있습니다.
 
 ## 연결된 자산 개요 {#overview-of-connected-assets}
 
@@ -188,8 +188,8 @@ ht-degree: 29%
 * 로컬 자산은 원격 배포의 원본 자산과 동기화되지 않습니다. DAM 배포에 대한 권한 편집, 삭제 또는 취소는 다운스트림으로 전파되지 않습니다.
 * 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager] 구성 요소는 변경되지 않은 상태로 자산을 유지한 채 편집합니다. 다른 편집 작업은 허용되지 않습니다.
 * 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
-* 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Dynamic Media] 자산, 콘텐츠 조각 및 경험 구성요소는 지원되지 않습니다.
-* [!DNL Experience Manager] 메타데이터 스키마를 가져오지 않습니다. 가져온 모든 메타데이터가 표시되지 않을 수 있음을 의미합니다. 스키마를 별도로 업데이트하면 모든 속성이 표시됩니다.
+* 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Dynamic Media] 자산,  [!DNL Content Fragments]및  [!DNL Experience Fragments] 은 지원되지 않습니다.
+* [!DNL Experience Manager] 메타데이터 스키마를 가져오지 않습니다. 가져온 모든 메타데이터가 표시되지 않을 수 있음을 의미합니다. [!DNL Sites] 배포에서 스키마가 별도로 업데이트되면 모든 메타데이터 속성이 표시됩니다.
 * 작성자가 원격 DAM 배포에 액세스할 수 없는 경우에도 모든 [!DNL Sites] 작성자는 가져온 복사본에 대한 읽기 권한을 갖습니다.
 * 통합을 사용자 지정할 수 있는 API 지원이 없습니다.
 * 이 기능을 통해 원격 자산을 원활하게 검색하고 사용할 수 있습니다. 로컬 배포에서 많은 원격 자산을 한 번에 사용할 수 있도록 하려면 자산을 마이그레이션하는 것이 좋습니다. [자산 마이그레이션 안내서](assets-migration-guide.md)를 참조하십시오.
@@ -199,8 +199,8 @@ ht-degree: 29%
 
 * [!DNL Assets] 배포 [!DNL Adobe Managed Services] 가 지원됩니다.
 * [!DNL Sites] 한 번에 하나의 저장소 [!DNL Assets] 에 연결할 수 있습니다.
-* 원격 저장소로 작동하는 [!DNL Assets] 라이선스.
-* 로컬 작성 배포로 작동하는 [!DNL Sites] 의 하나 이상의 라이선스.
+* 원격 저장소로 작동하는 [!DNL Assets] 라이센스가 필요합니다.
+* 로컬 작성 배포로 작동하는 [!DNL Sites] 의 라이센스가 하나 이상 필요합니다.
 
 ### 사용량 {#usage}
 
