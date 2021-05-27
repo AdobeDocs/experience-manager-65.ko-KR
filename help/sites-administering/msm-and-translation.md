@@ -63,6 +63,6 @@ ht-degree: 2%
 >* [MSM에 대한 우수 사례](/help/sites-administering/msm-best-practices.md);특히
 >
 >   * [사이트 만들기](/help/sites-administering/msm-best-practices.md#create-site)
-   * [MSM 및 다국어 웹 사이트](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
-* [번역 우수 사례](/help/sites-administering/tc-bp.md)
+>   * [MSM 및 다국어 웹 사이트](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>* [번역 우수 사례](/help/sites-administering/tc-bp.md)
 
