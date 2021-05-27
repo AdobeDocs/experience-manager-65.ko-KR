@@ -4,9 +4,9 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 9의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 48a5f9ffb33ae09f5d4e6e57cf66b871a9ff6981
+source-git-commit: f0398d63aa7d9c994c56217cce52b3fb4de04769
 workflow-type: tm+mt
-source-wordcount: '3294'
+source-wordcount: '3292'
 ht-degree: 46%
 
 ---
@@ -413,15 +413,15 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## [!DNL Adobe Experience Manager] 6.5 SP7 이후의 주요 릴리스 {#key-releases-since-last-sp}
+## [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp} 이후의 주요 릴리스
 
-2020년 11월 26일부터 2021년 2월 25일까지 Adobe은 서비스 팩 및 누적 수정 팩 외에 다음과 같은 사항을 발표했습니다.
+2021년 2월 25일부터 2021년 5월 27일까지 Adobe은 서비스 팩 외에 다음과 같은 사항을 발표했습니다.
 
-* [!DNL Adobe Experience Manager] 로서의 Cloud Service  [2020.11.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-11-0.html),  [2020.12.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-12-0.html) 및  [2021.1.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
+* [!DNL Adobe Experience Manager] 로서의 Cloud Service  [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html),  [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html) 및  [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
 
-* [[!DNL Experience Manager] 데스크탑 앱 2.1(2.1.0.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] 데스크탑 앱 2.1(2.1.2.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: 기능 팩 202011](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202011.html)
+* [Experience Manager Screens: 기능 팩 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html?lang=en)
 
 >[!MORELIKETHIS]
 >
