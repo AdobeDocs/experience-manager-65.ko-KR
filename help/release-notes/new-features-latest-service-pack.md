@@ -1,17 +1,17 @@
 ---
-title: ' [!DNL Experience Manager] 6.5 서비스 팩 8의 새로운 기능'
-description: ' [!DNL Experience Manager] 6.5 서비스 팩 8의 새로운 기능'
+title: ' [!DNL Experience Manager] 6.5 서비스 팩 9의 새로운 기능'
+description: ' [!DNL Experience Manager] 6.5 서비스 팩 9의 새로운 기능'
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 48a5f9ffb33ae09f5d4e6e57cf66b871a9ff6981
 workflow-type: tm+mt
-source-wordcount: '3041'
-ht-degree: 50%
+source-wordcount: '3294'
+ht-degree: 46%
 
 ---
 
-# [!DNL Adobe Experience Manager] 6.5 서비스 팩 8 {#aem-whats-new-service-pack}의 새로운 기능
+# [!DNL Adobe Experience Manager] 6.5 서비스 팩 9 {#aem-whats-new-service-pack}의 새로운 기능
 
 ![새로운 기능](assets/whatsnew.jpeg)
 
@@ -21,15 +21,57 @@ ht-degree: 50%
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### 롤아웃에 사용할 수 있는 Live Copy 페이지 정렬 {#sort-livecopy-pages}
+### 삭제된 페이지 및 트리 {#ability-to-restore-pages-tree} 복원 기능
 
-이제 [!UICONTROL 이름], [!UICONTROL 마지막 수정 날짜] 및 [!UICONTROL 마지막 롤아웃 날짜] 속성을 사용하여 롤아웃에 사용할 수 있는 Live Copy 페이지를 정렬할 수 있습니다. 페이지에 대한 [!UICONTROL 마지막 롤아웃 날짜]는 이 릴리스에 도입된 새로운 속성입니다.
+이제 [!DNL Experience Manager Sites] 페이지에서 삭제된 페이지와 전체 트리 보기를 복원할 수 있습니다.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* 이제 [연결된 자산 기능](/help/assets/use-assets-across-connected-assets-instances.md)을 사용할 때 자산을 사용하는 모든 [!DNL Sites] 페이지의 목록을 볼 수 있습니다. 자산에 대한 이러한 참조는 자산의 [!UICONTROL 속성] 페이지에서 사용할 수 있습니다. 이를 통해 관리자, 마케터 및 라이브러리에서는 자산 사용을 완전히 볼 수 있으므로 추적, 관리 및 브랜드 일관성을 향상시킬 수 있습니다.
+* 중국의 소셜 및 정치적 견해와 일치하도록 홍콩, 마카오 및 대만과 관련된 중국어 로케일 및 지역의 이름을 업데이트했습니다.
 
-* 웹 페이지에서 참조되는 자산을 삭제하면 [!DNL Experience Manager]에 경고가 표시됩니다. 참조된 자산을 강제로 삭제하거나 자산의 [!DNL Properties] 페이지에 표시되는 참조를 확인하고 수정할 수 있습니다. 참조를 클릭하면 로컬 및 원격 [!DNL Sites] 페이지가 열립니다.
+* [!DNL Adobe Experience Manager] 의 ACP api 응답에서 이메일 ID를 낮추도록 선택적 구성이 도입되었습니다.
+
+   ![AEM의 ACP 응답에서 이메일 ID를 소문자로 구성](assets/email-lowcase-config.png)
+
+* 다양한 위치의 텍스트 및 아이콘의 대비(배경 포함)가 WCAG에 따라 개선되어 시력이 제한된 사용자와 색상을 인식하는 데 도움이 됩니다. 자세한 내용은 Assets](sp-release-notes.md#assets-accessibility-6590)의 [액세스 가능성 개선 을 참조하십시오.
+
+### Dynamic Media {#assets-dynamic-media}
+
+* [Dynamic Media는 ](sp-release-notes.md#assets-accessibility-6590) 다음과 같은 측면에서 더 쉽게 액세스할 수 있습니다.
+
+   * 키보드 키 사용 편이성.
+   * 다양한 편집기의 텍스트, 자리 표시자 텍스트 및 컨트롤의 대비(배경 포함)
+   * 화면 판독기의 접근성 및 내레이션.
+
+* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 최상의 품질 이미지를 효율적으로 전달할 수 있습니다.고해상도의 디스플레이와 제한된 네트워크 대역폭을 가진 디바이스 자세한 내용은 [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
+
+   >[!NOTE]
+   >
+   >위의 스마트 이미징 개선 사항에 대한 릴리스 타임라인은 다음과 같습니다.
+   >
+   >* 2021년 5월 24일 NA,
+      >
+      >
+   * 유럽, 중동 및 아프리카 2021년 6월 25일
+      >
+      >
+   * 아시아 태평양 2021년 7월 19일
+
+
+* Dynamic Media 게재에서 차세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다(fmt URL 수정자). 자세한 내용은 [이미지 제공 및 api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) 렌더링 을 참조하십시오.
+
+   >[!NOTE]
+   >
+   >AVIF 지원을 위한 릴리스 타임라인은 다음과 같습니다.
+   >
+   >* 북미 2021년 5월 10일
+      >
+      >
+   * 유럽, 중동, 아프리카 2021년 5월 24일
+      >
+      >
+   * 아시아 태평양 2021년 6월 24일.
+
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -37,25 +79,13 @@ ht-degree: 50%
 >
 >[!DNL Experience Manager Forms] 추가 기능 패키지는 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 후 1주일 후에 사용할 수 있습니다.
 
-### 규칙 {#show-hide-captcha}을 기반으로 적응형 양식에 CAPTCHA 구성 요소를 표시하거나 숨깁니다.
-
-이제 적응형 양식 제출 시 또는 사용자 작업에서 CAPTCHA의 유효성을 검사할 수 있습니다. 사용자 작업에서 CAPTCHA의 유효성을 검사하는 조건을 추가하고 규칙을 기반으로 적응형 양식의 CAPTCHA 구성 요소를 표시하거나 숨길 수도 있습니다.
-
-### 사용자 지정 CAPTCHA 서비스 {#add-custom-captcha-services} 추가
-
-[!DNL Experience Manager Forms] 는 Google reCAPTCHA(Google reCAPTCHA API의 별도의 라이센스가 필요)를 CAPTCHA 유효성 검사 서비스로 사용할 수 있도록 기본 지원을 제공합니다. 사용자 지정 CAPTCHA 서비스를 사용하여 CAPTCHA의 유효성을 검사할 수도 있습니다.
-
-### 기타 개선 사항 {#other-enhancements-forms-6580}
-
-* [!DNL Experience Manager Forms] 날짜 선택기 구성 요소의 액세스 가능성이 개선되었습니다.
-
-* PrintChannel API를 사용하여 PCL 형식으로 대화형 커뮤니케이션을 생성하는 지원이 추가되었습니다.
-
-* 이제 PDFG 변환을 수행할 때 사용자 지정 책갈피 생성을 위해 [!DNL Experience Manager Forms] 레지스트리 변경 사항을 활성화하거나 비활성화할 수 있습니다.
-
 ## 이전 [!DNL Experience Manager] 6.5 서비스 팩의 주요 기능 {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
+
+#### 롤아웃에 사용할 수 있는 Live Copy 페이지 정렬(6.5.8.0) {#sort-livecopy-pages}
+
+이제 [!UICONTROL 이름], [!UICONTROL 마지막 수정 날짜] 및 [!UICONTROL 마지막 롤아웃 날짜] 속성을 사용하여 롤아웃에 사용할 수 있는 Live Copy 페이지를 정렬할 수 있습니다. 페이지에 대한 [!UICONTROL 마지막 롤아웃 날짜]는 이 릴리스에 도입된 새로운 속성입니다.
 
 #### 페이지 이동 및 MSM 롤아웃을 비동기 작업으로 사용 가능(6.5.7.0) {#page-moves-msm-asynchronous}
 
@@ -108,6 +138,10 @@ ht-degree: 50%
 * 불완전하거나 잘못된 URL의 처리가 개선되었습니다. 그러한 URL을 사용하면 템플릿 편집기의 속도가 느려질 수 있습니다.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+* 이제 [연결된 자산 기능](/help/assets/use-assets-across-connected-assets-instances.md)을 사용할 때 자산을 사용하는 모든 [!DNL Sites] 페이지의 목록을 볼 수 있습니다. 자산에 대한 이러한 참조는 자산의 [!UICONTROL 속성] 페이지에서 사용할 수 있습니다. 이를 통해 관리자, 마케터 및 라이브러리에서는 자산 사용을 완전히 볼 수 있으므로 추적, 관리 및 브랜드 일관성(6.5.8.0)을 향상시킬 수 있습니다.
+
+* 웹 페이지에서 참조되는 자산을 삭제하면 [!DNL Experience Manager]에 경고가 표시됩니다. 참조된 자산을 강제로 삭제하거나 자산의 [!DNL Properties] 페이지에 표시되는 참조를 확인하고 수정할 수 있습니다. 참조를 클릭하면 로컬 및 원격 [!DNL Sites] 페이지(6.5.8.0)가 열립니다.
 
 * [!DNL Assets] 과  [!DNL Dynamic Media] 에서는 다양한 액세스 가능성이 개선되었습니다. 향상된 기능은 키보드 탐색, 화면 판독기 사용, 보조 기술(AT)을 사용할 수 있도록 지원하기 위한 유사한 개선 사항입니다. [[!DNL Assets] 개선 사항](/help/release-notes/sp-release-notes.md#assets-6570) 및 [[!DNL Dynamic Media] 개선 사항](/help/release-notes/sp-release-notes.md#dynamic-media-6570)(6.5.7.0)을 참조하십시오
 
@@ -173,9 +207,9 @@ ht-degree: 50%
 
 [!DNL Experience Manager Assets]과 [!DNL Brand Portal] 사이의 인증 채널이 변경되었습니다. 이전에는 [!DNL Brand Portal]이 기존 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 인증을 위해 IMS 액세스 토큰을 가져오는 데 JWT 토큰 교환을 사용합니다. [!DNL Experience Manager Assets] 이제 은  [!DNL Brand Portal] 를 통해  [!DNL Adobe I/O]구성되며, 은 테넌트의 인증을 위해 IMS 토큰을  [!DNL Brand Portal] 받습니다.
 
-[!DNL Brand Portal]에서 [!DNL Experience Manager Assets]을 구성하는 단계는 [!DNL Experience Manager] 버전과 처음 구성하는 것인지 아니면 기존 구성을 업그레이드하는 것인지에 따라 다릅니다. 자세한 내용은 [Brand Portal에서 Experience Manager Assets 구성](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)을 참조하십시오.
+[!DNL Brand Portal]에서 [!DNL Experience Manager Assets]을 구성하는 단계는 [!DNL Experience Manager] 버전과 처음 구성하는 것인지 아니면 기존 구성을 업그레이드하는 것인지에 따라 다릅니다. 자세한 내용은 [Brand Portal에서 Experience Manager Assets 구성](https://docs.adobe.com/content/help/ko/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)을 참조하십시오.
 
-#### 액세스 가능성 개선(6.5.4.0) {#accessibility-enhancements}
+#### 액세스 가능성 개선(6.5.4.0) {#accessibility-enhancements-6540}
 
 [!DNL Experience Manager Assets]에서는 다음과 같은 액세스 가능성이 개선되었습니다.
 
@@ -223,6 +257,22 @@ ht-degree: 50%
 비디오 프로필에서 사용할 수 있는 선택적 기능인 비디오 스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자르는 도구입니다. [비디오 프로필에서 스마트 자르기 사용 정보](../assets/video-profiles.md)를 참조하십시오.
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### 규칙을 기반으로 적응형 양식에 CAPTCHA 구성 요소를 표시하거나 숨깁니다(6.5.8.0) {#show-hide-captcha}
+
+이제 적응형 양식 제출 시 또는 사용자 작업에서 CAPTCHA의 유효성을 검사할 수 있습니다. 사용자 작업에서 CAPTCHA의 유효성을 검사하는 조건을 추가하고 규칙을 기반으로 적응형 양식의 CAPTCHA 구성 요소를 표시하거나 숨길 수도 있습니다.
+
+#### 사용자 지정 CAPTCHA 서비스 추가(6.5.8.0) {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] 는 Google reCAPTCHA(Google reCAPTCHA API의 별도의 라이센스가 필요)를 CAPTCHA 유효성 검사 서비스로 사용할 수 있도록 기본 지원을 제공합니다. 사용자 지정 CAPTCHA 서비스를 사용하여 CAPTCHA의 유효성을 검사할 수도 있습니다.
+
+#### 기타 개선 사항(6.5.8.0) {#other-enhancements-forms-6580}
+
+* [!DNL Experience Manager Forms] 날짜 선택기 구성 요소의 액세스 가능성이 개선되었습니다.
+
+* PrintChannel API를 사용하여 PCL 형식으로 대화형 커뮤니케이션을 생성하는 지원이 추가되었습니다.
+
+* 이제 PDFG 변환을 수행할 때 사용자 지정 책갈피 생성을 위해 [!DNL Experience Manager Forms] 레지스트리 변경 사항을 활성화하거나 비활성화할 수 있습니다.
 
 #### 성능 개선(6.5.7.0) {#performance-improvements-forms}
 
