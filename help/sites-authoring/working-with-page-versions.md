@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4d5f7057178ea0a1f00ea363b76dacdfb714b5e3
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 97%
+source-wordcount: '1487'
+ht-degree: 69%
 
 ---
 
@@ -64,9 +64,23 @@ ht-degree: 97%
 
    새 버전을 나타내기 위해 업데이트된 정보가 포함된 타임라인이 열립니다.
 
-## 페이지 버전으로 복구 {#reverting-to-a-page-version}
+## 버전 {#reinstating-versions} 복원
 
-버전을 만들면 필요할 경우 해당 버전으로 되돌릴 수 있습니다.
+페이지의 버전을 만들면 이전 버전을 활성화하는 다양한 방법이 있습니다.
+
+* **이 [타임라인](/help/sites-authoring/basic-handling.md#timeline) 레일의** 옵션으로 되돌리기
+
+   선택한 페이지의 이전 버전을 복원합니다.
+
+* 맨 위의 [작업 도구 모음](/help/sites-authoring/basic-handling.md#actions-toolbar)에서 **복원** 옵션
+
+   * **버전 복원**
+
+      현재 선택한 폴더에 지정된 페이지의 버전을 복원합니다.또한 이전에 삭제한 페이지 복원을 포함할 수 있습니다.
+
+   * **트리 복원**
+
+      지정된 날짜 및 시간으로 전체 트리 버전을 복원합니다.여기에는 이전에 삭제한 페이지가 포함될 수 있습니다.
 
 >[!NOTE]
 >
@@ -76,26 +90,81 @@ ht-degree: 97%
 >
 >1. 페이지의 버전을 임의로 만듭니다.
 >1. 초기 레이블 및 버전 노드 이름은 1.0, 1.1, 1.2 등이 됩니다.
->1. 첫 번째 버전 즉 1.0을 복원합니다.
+>1. 첫 번째 버전을 복원합니다.예: 1.0
 >1. 다시 새 버전을 만듭니다.
 >1. 생성된 레이블 및 노드 이름은 이제 1.0.0, 1.0.1, 1.0.2 등이 됩니다.
 
->
 
+### 버전 {#revert-to-a-version}으로 되돌리기
 
-
-이전 버전으로 되돌리기
+**선택한 페이지를 이전 버전으로 되돌리기**&#x200B;하십시오.
 
 1. 이전 버전으로 되돌릴 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다 .
 1. **타임라인** 열을 열고, **모두 표시** 또는 **버전**&#x200B;을 선택합니다. 선택한 페이지의 이전 버전이 나열됩니다.
 1. 되돌아갈 버전을 선택합니다. 가능한 옵션이 표시됩니다.
 
-   ![screen-shot_2019-03-05at112505](assets/screen-shot_2019-03-05at112505.png)
+   ![이 버전으로 되돌리기](assets/screen-shot_2019-03-05at112505.png)
 
 1. **이 버전으로 되돌리기**&#x200B;를 선택합니다. 선택한 버전이 복원되고 타임라인의 정보가 업데이트됩니다.
 
-## 버전 미리 보기  {#previewing-a-version}
+### 버전 복원 {#restore-version}
+
+이 방법은 현재 폴더 내에서 지정된 페이지의 버전을 복원하는 데 사용할 수 있습니다.이전에 삭제한 페이지 복원을 포함할 수도 있습니다.
+
+1. 필요한 폴더로 이동하고 [을(를) 선택합니다.](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+
+1. **복원**&#x200B;을 선택한 다음 맨 위의 [작업 도구 모음](/help/sites-authoring/basic-handling.md#actions-toolbar)에서 **버전 복원**&#x200B;을 선택합니다.
+
+   >[!NOTE]
+   >
+   >다음 중 한 경우에 해당됩니다.
+   >
+   >* 하위 페이지가 없는 단일 페이지를 선택했습니다.
+   >* 또는 폴더의 페이지 중 어느 것도 버전을 가지고 있지 않습니다.
+
+   >
+   >해당 버전이 없으므로 표시가 비어 있습니다.
+
+1. 사용 가능한 버전이 나열됩니다.
+
+   ![버전 복원 - 폴더의 모든 페이지 목록](/help/sites-authoring/assets/versions-restore-version-01.png)
+
+1. 특정 페이지의 경우 **RESTORE TO VERSION** 아래의 드롭다운 선택기를 사용하여 해당 페이지에 필요한 버전을 선택합니다.
+
+   ![버전 복원 - 버전 선택](/help/sites-authoring/assets/versions-restore-version-02.png)
+
+1. 기본 디스플레이에서 복원할 필수 페이지를 선택합니다.
+
+   ![버전 복원 - 페이지 선택](/help/sites-authoring/assets/versions-restore-version-03.png)
+
+1. 선택한 버전의 선택한 페이지에 대해 **복원**&#x200B;을 선택하여 현재 버전으로 복원합니다.
+
+>[!NOTE]
+>
+>필요한 페이지와 관련 버전을 선택하는 순서는 교환이 가능합니다.
+
+### 트리 복원 {#restore-tree}
+
+이 방법은 지정된 날짜 및 시간에 트리 버전을 복원하는 데 사용할 수 있습니다.여기에는 이전에 삭제한 페이지가 포함될 수 있습니다.
+
+1. 필요한 폴더로 이동하고 [을(를) 선택합니다.](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+
+1. **복원**&#x200B;을 선택한 다음 맨 위의 [작업 도구 모음](/help/sites-authoring/basic-handling.md#actions-toolbar)에서 **트리 복원**&#x200B;을 선택합니다. 트리의 최신 버전이 표시됩니다.
+
+   ![트리 복원](/help/sites-authoring/assets/versions-restore-tree-02.png)
+
+1. **Latest**&#x200B;의 Latest Versions에 있는 날짜 및 시간 선택기를 사용하여 복원할 트리의 다른 버전을 선택합니다.
+
+1. 플래그 **버전 관리되지 않는 페이지**&#x200B;를 필요에 따라 설정합니다.
+
+   * 활성(선택) 상태인 경우, 버전이 지정되지 않은 페이지는 그대로 유지되며 복원의 영향을 받지 않습니다.
+
+   * 비활성(선택 안 됨) 경우, 버전이 관리되지 않는 페이지가 버전이 지정된 트리에 없으므로 제거됩니다.
+
+1. 선택한 버전의 트리를 *현재* 버전으로 복원할 **복원**&#x200B;을 선택합니다.
+
+## 버전 미리 보기 {#previewing-a-version}
 
 특정 버전을 미리 볼 수 있습니다.
 
