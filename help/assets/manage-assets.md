@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: 자산 관리,검색
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: a7f8e98729dd27f6976d3289a51f22435fced585
 workflow-type: tm+mt
-source-wordcount: '9796'
+source-wordcount: '9775'
 ht-degree: 0%
 
 ---
@@ -811,10 +811,6 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
    ![인쇄 대화 상자에서 PDF에 표시할 주석/검토 상태의 위치를 선택합니다](assets/Print-annotation-dialog.png)
 
    인쇄된 PDF에 주석/상태를 표시할 위치에 따라 다른 설정을 선택할 수 있습니다. 인쇄된 자산과 별도의 페이지에 주석/상태를 표시하려면 **[!UICONTROL 다음 페이지]**&#x200B;를 선택합니다.
-
-   >[!NOTE]
-   >
-   >PDF 파일에서 긴 주석이 제대로 렌더링되지 않을 수 있습니다. 최적의 렌더링을 위해 주석을 50단어로 제한하는 것이 좋습니다.
 
 1. **[!UICONTROL 인쇄]**&#x200B;를 클릭합니다. 2단계에서 선택한 옵션에 따라 생성된 PDF에 지정된 위치의 주석/상태가 표시됩니다. 예를 들어, **왼쪽 위** 설정을 사용하여 주석 및 검토 상태를 모두 인쇄하도록 선택하면 생성된 출력이 여기에 표시된 PDF 파일과 유사합니다.
 
