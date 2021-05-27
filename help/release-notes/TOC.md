@@ -7,7 +7,7 @@ breadcrumb-title: 릴리스 노트
 user-guide-description: 릴리스 노트에서 AEM 6.5의 최신 새로운 기능에 대해 알아보십시오.
 feature: 릴리스 정보
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: dafc10e6e73967566ec8bff8ac0e4c39bc7cd885
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 64%
@@ -21,7 +21,7 @@ ht-degree: 64%
 + [일반 릴리스 노트](release-notes.md)
 + 서비스 팩 릴리스 노트 {#service-pack}
    + [새로운 기능](new-features-latest-service-pack.md)
-   + [서비스 팩 8 릴리스 노트](sp-release-notes.md)
+   + [서비스 팩 9 릴리스 노트](sp-release-notes.md)
    + [이전 서비스 팩 릴리스 노트](previous-hotfixes-featurepacks.md)
 + [AEM Sites 릴리스 노트](sites.md)
 + [AEM Assets 릴리스 노트](assets.md)
