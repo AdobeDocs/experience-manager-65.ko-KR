@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 2efb7e618050f2bbedf7771ae73741b8e77891f8
+source-git-commit: e33a4f197c0deb2457237aac1c1e31093c89adef
 workflow-type: tm+mt
 source-wordcount: '3381'
 ht-degree: 14%
@@ -363,7 +363,9 @@ B. [패키지 관리자에서 HTTP API](/help/sites-administering/package-manage
 
 이번 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하십시오.
 
-<!--### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+<!--
+
+### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -387,7 +389,8 @@ For information about installing the cumulative installer for Experience Manager
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.-->
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+-->
 
 ### UberJar {#uber-jar}
 
