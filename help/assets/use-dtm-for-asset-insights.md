@@ -1,11 +1,11 @@
 ---
 title: DTM을 통해 자산 통찰력 활성화
-description: DTM(Dynamic Tag Management)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
+description: DTM(Adobe Dynamic Tag Management)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: 자산 통찰력,자산 보고서
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # DTM {#enable-asset-insights-through-dtm}을 통해 자산 통찰력 활성화
 
-Adobe Dynamic Tag Management는 디지털 마케팅 도구를 활성화하는 도구입니다. Adobe Analytics 고객에게 무료로 제공됩니다. 추적 코드를 사용자 지정하여 자산 통찰력을 사용하도록 타사 CMS 솔루션을 활성화하거나 DTM을 사용하여 자산 통찰력 태그를 삽입할 수 있습니다. 인사이트는 이미지에서만 지원되고 제공됩니다.
+Adobe Dynamic Tag Management는 디지털 마케팅 도구를 활성화하는 도구입니다. Adobe Analytics 고객에게 무료로 제공됩니다. 추적 코드를 사용자 지정하여 타사 CMS 솔루션에서 자산 통찰력을 사용할 수 있도록 하거나 DTM을 사용하여 자산 통찰력 태그를 삽입할 수 있습니다. 인사이트는 이미지에서만 지원되고 제공됩니다.
 
 >[!CAUTION]
 >
@@ -51,7 +51,7 @@ Adobe Dynamic Tag Management는 디지털 마케팅 도구를 활성화하는 �
    >
    >* `AppMeasurement.js` 가 제거되었습니다. DTM의 Adobe Analytics 도구를 통해 사용할 수 있습니다.
    >* `assetAnalytics.dispatcher.init()` 호출이 제거됩니다. 함수는 DTM의 Adobe Analytics 도구 로드가 완료되면 호출됩니다.
-   >* 자산 통찰력 페이지 추적기가 호스팅되는 위치(예: Experience Manager, CDN 등)에 따라 스크립트 소스의 출처를 변경해야 할 수 있습니다.
+   >* Assets Insights 페이지 추적기가 호스팅되는 위치(예: Experience Manager, CDN 등)에 따라 스크립트 소스의 출처를 변경해야 할 수 있습니다.
    >* Experience Manager이 호스팅하는 페이지 추적기의 경우 소스는 디스패처 인스턴스의 호스트 이름을 사용하여 게시 인스턴스를 가리켜야 합니다.
 
 
