@@ -11,29 +11,29 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: 구성 요소,게시
-source-git-commit: fde3cb4a2461ca80f410f360fd5d56f359cec149
+source-git-commit: 00fc290d91de3c194ada837a931f1d86a5557939
 workflow-type: tm+mt
-source-wordcount: '3274'
-ht-degree: 26%
+source-wordcount: '3108'
+ht-degree: 19%
 
 ---
 
 # 페이지에 Dynamic Media 자산 추가{#adding-dynamic-media-assets-to-pages}
 
-웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하려면 페이지에 직접 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **비디오 360 미디어** 구성 요소를 추가할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화하여 이렇게 합니다. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 그에 따라 사용 가능한 구성 옵션이 변경될 수 있습니다.
+웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하려면 페이지에 직접 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **비디오 360 미디어** 구성 요소를 추가할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화하여 구성 요소를 추가합니다. 그런 다음이 구성 요소를 페이지에 추가하고 자산을 구성 요소에 추가할 수 있습니다. Dynamic Media 구성 요소는 편리하게도 이미지를 추가하는지 아니면 비디오를 추가하는지 여부와 그에 따라 사용 가능한 구성 옵션이 변경될 수 있습니다.
 
-Adobe Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic Media 자산을 직접 추가합니다. WCM에 대해 타사 항목을 사용하는 경우 [link](/help/assets/linking-urls-to-yourwebapplication.md) 또는 [embed](/help/assets/embed-code.md) 자산을 사용합니다. 응답형 타사 웹 사이트의 경우 [응답형 사이트에 최적화된 이미지 제공](/help/assets/responsive-site.md)을 참조하십시오.
+Adobe Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic Media 자산을 직접 추가합니다. WCM에 타사 항목을 사용하는 경우 [link](/help/assets/linking-urls-to-yourwebapplication.md) 또는 [embed](/help/assets/embed-code.md) 자산을 사용합니다. 응답형 타사 웹 사이트의 경우 [응답형 사이트에 최적화된 이미지 제공](/help/assets/responsive-site.md)을 참조하십시오.
 
 >[!NOTE]
 >
->자산을 Experience Manager의 페이지에 추가하기 전에 먼저 자산을 게시해야 합니다. [Dynamic Media 자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
+>Experience Manager의 페이지에 자산을 추가하기 전에 자산을 게시해야 합니다. [Dynamic Media 자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 ## 페이지에 Dynamic Media 구성 요소 추가 {#adding-a-dynamic-media-component-to-a-page}
 
 3D Media, Dynamic Media, 대화형 미디어, 파노라마 미디어, 스마트 자르기 비디오 또는 비디오 360 미디어 구성 요소를 페이지에 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media 구성 요소는 다음 섹션에 설명되어 있습니다.
 
 1. Experience Manager에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
-1. 페이지 왼쪽에 있는 패널에서(사이드 패널의 표시를 전환해야 할 수 있음) **[!UICONTROL 구성 요소]** 아이콘을 클릭합니다.
+1. 페이지 왼쪽에 있는 패널에서(필요한 경우 사이드 패널의 표시를 토글) **[!UICONTROL 구성 요소]** 아이콘을 클릭합니다.
 1. **[!UICONTROL 구성 요소]** 제목의 드롭다운 목록에서 **[!UICONTROL Dynamic Media.]**
 
    사용 가능한 Dynamic Media 구성 요소 목록이 없는 경우 사용할 Dynamic Media 구성 요소를 활성화해야 합니다. [Dynamic Media 구성 요소 활성화](#enabling-dynamic-media-components)를 참조하십시오.
@@ -58,7 +58,7 @@ Adobe Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic M
 
 ### Dynamic Media 구성 요소 {#enabling-dynamic-media-components} 활성화
 
-페이지에 추가할 수 있는 Dynamic Media 구성 요소가 없는 경우, 먼저 사용하려는 구성 요소를 활성화해야 할 것입니다.
+페이지에 추가할 수 있는 Dynamic Media 구성 요소가 없는 경우, 먼저 사용하려는 구성 요소를 활성화해야 함을 의미합니다.
 
 1. Experience Manager에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
 1. 페이지 상단 근처에 있는 도구 모음 왼쪽의 페이지 정보 아이콘을 탭한 다음, 드롭다운 목록에서 **[!UICONTROL 템플릿 편집]**&#x200B;을 누릅니다.
@@ -75,7 +75,7 @@ Adobe Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic M
    ![허용된 구성 요소](/help/assets/assets-dm/allowed-components.png)
 
 1. **[!UICONTROL Dynamic Media이 표시될 때까지 스크롤합니다.]**
-1. **[!UICONTROL Dynamic Media]** 왼쪽의 > 아이콘을 탭하여 목록을 확장하고 활성화할 Dynamic Media 구성 요소를 선택합니다.
+1. **[!UICONTROL Dynamic Media]** 왼쪽의 > 아이콘을 탭하여 목록을 확장하고 활성화할 Dynamic Media 구성 요소를 선택할 수 있습니다.
 
    ![Dynamic Media 구성 요소 목록](/help/assets/assets-dm/dm-components-select.png)
 
@@ -110,13 +110,13 @@ Dynamic Media 구성 요소는 **[!UICONTROL 구성 요소]** 아이콘을 탭�
 
 >[!NOTE]
 >
->이러한 구성 요소는 기본적으로 사용할 수 없으며 사용하기 전에 템플릿 편집기를 사용하여 사용 가능해야 합니다. [템플릿 편집기](/help/sites-authoring/templates.md#editing-templates-template-authors)에서 사용할 수 있게 되면 다른 Experience Manager 구성 요소에서처럼 페이지에 구성 요소를 추가할 수 있습니다.
+>이러한 구성 요소는 기본적으로 사용할 수 없습니다.이러한 템플릿은 사용하기 전에 템플릿 편집기를 사용하여 사용할 수 있어야 합니다. [템플릿 편집기](/help/sites-authoring/templates.md#editing-templates-template-authors)에서 사용할 수 있게 되면 다른 Experience Manager 구성 요소에서처럼 페이지에 구성 요소를 추가할 수 있습니다.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
 ### Dynamic Media 구성 요소 {#dynamic-media-component}
 
-Dynamic Media 구성 요소는 편리합니다.이미지를 추가하는지 아니면 비디오를 추가하는지에 따라 다양한 선택 사항이 제공됩니다. 이 구성 요소는 이미지 사전 설정, 이미지 세트와 같은 이미지 기반 뷰어, 스핀 세트, 혼합 미디어 세트 및 비디오를 지원합니다. 또한 뷰어는 응답형이어서 화면 크기가 스크린의 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
+Dynamic Media 구성 요소는 편리합니다.이미지를 추가하는지 아니면 비디오를 추가하는지에 따라 다양한 선택 사항이 제공됩니다. 이 구성 요소는 이미지 사전 설정, 이미지 세트와 같은 이미지 기반 뷰어, 스핀 세트, 혼합 미디어 세트 및 비디오를 지원합니다. 또한 뷰어는 응답형입니다. 화면 크기가 스크린의 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
 
 >[!NOTE]
 >
@@ -127,22 +127,22 @@ Dynamic Media 구성 요소는 편리합니다.이미지를 추가하는지 아�
 
 >
 >
-해당 페이지의 각 Dynamic Media 구성 요소에 다른 뷰어 사전 설정을 할당하는 것은 지원되지 않습니다.
+해당 페이지의 각 Dynamic Media 구성 요소에 다른 뷰어 사전 설정을 할당할 수 없습니다.
 >
 >그러나 페이지 내에서 동일한 유형의 자산을 사용하는 모든 Dynamic Media 구성 요소에 대해 동일한 뷰어 사전 설정을 사용할 수 있습니다.
 
 Dynamic Media 구성 요소를 추가하고 **[!UICONTROL Dynamic Media 설정]**&#x200B;이 비어 있거나 자산을 제대로 추가할 수 없는 경우, 다음을 확인하십시오.
 
 * [Dynamic Media를 활성화](/help/assets/config-dynamic.md)했습니다. Dynamic Media는 기본적으로 비활성화됩니다.
-* 이미지에 피라미드형 tiff 파일이 있습니다. Dynamic Media이 활성화되기 전에 가져온 이미지에는 피라미드형 tiff 파일이 없습니다.
+* 이미지에 피라미드형 tiff 파일이 있습니다. Dynamic Media을 활성화하기 전에 가져오는 이미지에는 피라미드형 tiff 파일이 없습니다.
 
 #### 이미지 작업 시 {#when-working-with-images}
 
 Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 혼합 미디어 세트를 포함한 다이내믹 이미지를 추가할 수 있습니다. 확대하거나 축소할 수 있고, 해당하는 경우 스핀 세트 내의 이미지를 회전하거나 다른 유형의 세트에서 이미지를 선택할 수 있습니다.
 
-구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지가 응답하도록 하기 위해 중단점을 설정하거나 응답형 이미지 사전 설정을 적용할 수 있습니다.
+구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지를 응답형으로 만들려면 중단점을 설정하거나 응답형 이미지 사전 설정을 적용할 수 있습니다.
 
-*구성 요소에서&#x200B;**[!UICONTROL 편집]**아이콘을 탭한 다음,**[!UICONTROL Dynamic Media 설정을 탭하여 다음 Dynamic Media 설정을 편집해야 합니다.]***
+구성 요소에서 **[!UICONTROL 편집]** 아이콘을 탭한 다음, **[!UICONTROL Dynamic Media 설정을 탭하여 다음 Dynamic Media 설정을 편집합니다.]**
 
 ![dm-settings-image-사전 설정](assets/dm-settings-image-preset.png)
 
@@ -150,36 +150,36 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 >
 >기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. 고정 크기로 설정하려면 **[!UICONTROL Width]** 및 **[!UICONTROL Height.]******
 
-* **[!UICONTROL 뷰어 사전 설정]**  - 드롭다운 메뉴에서 기존 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. 뷰어 사전 설정 관리를 참조하십시오. 이미지 사전 설정을 사용 중일 때는 뷰어 사전 설정을 선택할 수 없고 그 반대의 경우도 마찬가지입니다.
+* **[!UICONTROL 뷰어 사전 설정]**  - 드롭다운 메뉴에서 기존 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 합니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 이미지 사전 설정을 사용하고 있고 반대로 뷰어 사전 설정을 선택할 수는 없습니다.
 
-   이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우 사용할 수 있는 유일한 선택 사항입니다. 표시되는 뷰어 사전 설정은 편리하게도 적절한 뷰어 사전 설정만 표시됩니다.
+   이 옵션은 이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에만 사용할 수 있습니다. 표시되는 뷰어 사전 설정은 편리하게도 적절한 뷰어 사전 설정만 표시됩니다.
 
 * **[!UICONTROL 뷰어 수정자]**  - 뷰어 수정자는 이름=값 쌍의 형태를 및 구분 기호와 함께 가져오고 뷰어 참조 가이드에 설명된 대로 뷰어를 변경할 수 있도록 합니다. 뷰어 한정자의 예는 비디오 축소판에 대해 다른 이미지를 설정하고 닫힌 캡션/자막 파일을 비디오와 연결하는 `posterimage=img.jpg&caption=text.vtt,1` 입니다.
 
-* **[!UICONTROL 이미지 사전 설정]**  - 드롭다운 메뉴에서 기존 이미지 사전 설정을 선택합니다. 보려는 이미지 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. 이미지 사전 설정 관리를 참조하십시오. 이미지 사전 설정을 사용 중일 때는 뷰어 사전 설정을 선택할 수 없고 그 반대의 경우도 마찬가지입니다.
+* **[!UICONTROL 이미지 사전 설정]**  - 드롭다운 메뉴에서 기존 이미지 사전 설정을 선택합니다. 보려는 이미지 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 합니다. 이미지 사전 설정 관리를 참조하십시오. 이미지 사전 설정을 사용하고 있고 반대로 뷰어 사전 설정을 선택할 수는 없습니다.
 
    이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
-* **[!UICONTROL 이미지 수정자]**  - 추가적인 이미지 명령을 제공하여 이미지 효과를 적용할 수 있습니다. 이러한 내용은 이미지 사전 설정 및 이미지 제공 명령 참조에 설명되어 있습니다.
+* **[!UICONTROL 이미지 수정자]**  - 추가적인 이미지 명령을 제공하여 이미지 효과를 적용할 수 있습니다. 이러한 효과는 이미지 사전 설정 및 이미지 제공 명령 참조에 설명되어 있습니다.
 
    이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
-* **[!UICONTROL 중단점]**  - 응답형 사이트에서 이 자산을 사용하는 경우 이미지 중단점을 추가해야 합니다. 이미지 중단점은 쉼표(,)로 구분해야 합니다. 이 선택 사항은 이미지 사전 설정에 정의된 높이나 폭이 없는 경우에 작동합니다.
+* **[!UICONTROL 중단점]**  - 응답형 사이트에서 이 자산을 사용하는 경우 이미지 중단점을 추가해야 합니다. 이미지 중단점은 쉼표(,)로 구분됩니다. 이 선택 사항은 이미지 사전 설정에 정의된 높이나 폭이 없는 경우에 작동합니다.
 
    이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
    구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 탭하여 다음 고급 설정을 편집할 수 있습니다.
 
-* **[!UICONTROL 고해상도 장치를 위한 최적화]**  - DPR(장치 픽셀 비율) 최적화를 허용하려면 확인란을 (기본값) 선택합니다.
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-   [장치 픽셀 비율 최적화 정보](/help/assets/imaging-faq.md#dpr)를 참조하십시오.
+  See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
-   모든 Adobe Experience Manager Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
 
-   **[!UICONTROL 고해상도 장치를 위해 최적화]** 옵션은 다음 내용이 true인 경우에만 표시됩니다.
-   * 사전 설정 유형에서 **[!UICONTROL 이미지 사전 설정]**&#x200B;이 선택되고 **[!UICONTROL 이미지 사전 설정]** 드롭다운 목록에서 **[!UICONTROL RESS_IP]**&#x200B;가 선택됩니다.
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-   ![이미지 사전 설정에 대한 장치 픽셀 비율 설정](/help/assets/assets-dm/dpr-ress-ip.png)
+  ![device pixel ratio setting for image preset](/help/assets/assets-dm/dpr-ress-ip.png) -->
 
 * **[!UICONTROL 제목]**  - 이미지의 제목을 변경합니다.
 
@@ -202,17 +202,17 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 Dynamic Media 설정을 편집해야 합니다.
+구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 Dynamic Media 설정을 편집합니다.
 
 >[!NOTE]
 >
 >기본적으로 Dynamic Media 비디오 구성 요소는 적응형입니다. 고정 크기로 설정하려면 **[!UICONTROL 고급]** 탭에서 **[!UICONTROL 폭]** 및 **[!UICONTROL 높이]**&#x200B;로 구성 요소를 설정하십시오.
 
-* **[!UICONTROL 뷰어 사전 설정]**  - 드롭다운 메뉴에서 기존 비디오 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. 뷰어 사전 설정 관리를 참조하십시오.
+* **[!UICONTROL 뷰어 사전 설정]**  - 드롭다운 메뉴에서 기존 비디오 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 합니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 
 
 * **[!UICONTROL 뷰어 수정자]**  - 뷰어 수정자는 이름=값 쌍의 형태를 및 구분 기호와 함께 가져오고 Adobe 뷰어 참조 가이드에 설명된 대로 뷰어를 변경할 수 있도록 합니다. 뷰어 한정자의 예는 `posterimage=img.jpg&caption=text.vtt,1`입니다.
 
-   뷰어 한정자를 사용하면 예를 들어 다음을 수행할 수 있습니다.
+   뷰어 한정자를 사용하면 다음을 수행할 수 있습니다.
 
    * 캡션 파일을 비디오와 연결:[caption][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * 탐색 파일을 비디오와 연결:[탐색][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
@@ -233,13 +233,13 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 Dynamic Media 설정을 편집해야 합니다.
+구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 클릭하여 다음 Dynamic Media 설정을 편집합니다.
 
 >[!NOTE]
 >
 >기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. 고정 크기로 설정하려면 **[!UICONTROL Width]** 및 **[!UICONTROL Height.]******
 
-* **[!UICONTROL 이미지 수정자]**  - 추가적인 이미지 명령을 제공하여 이미지 효과를 적용할 수 있습니다. 이러한 내용은 이미지 사전 설정 및 이미지 제공 명령 참조에 설명되어 있습니다.
+* **[!UICONTROL 이미지 수정자]**  - 추가적인 이미지 명령을 제공하여 이미지 효과를 적용할 수 있습니다. 이러한 효과는 이미지 사전 설정 및 이미지 제공 명령 참조에 설명되어 있습니다.
 
    이미지 세트, 스핀 세트 또는 혼합 미디어 세트를 보는 경우에는 이 선택 사항을 사용할 수 없습니다.
 
@@ -247,17 +247,17 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 * **[!UICONTROL 비율 일치 활성화]**  - Dynamic Media에서 원본 이미지의 비율과 가장 일치하는 종횡비로 스마트 자르기 렌디션을 선택하도록 하려면 이 옵션을 선택합니다.
 
-* **[!UICONTROL 고해상도 장치를 위한 최적화]**  - DPR(장치 픽셀 비율) 최적화를 허용하려면 확인란을 (기본값) 선택합니다.
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
-   [장치 픽셀 비율 최적화 정보](/help/assets/imaging-faq.md#dpr)를 참조하십시오.
+  See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
-   모든 Adobe Experience Manager Dynamic Media 스마트 이미징 DPR 값은 무시됩니다.
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
 
-   **[!UICONTROL 고해상도 장치를 위해 최적화]** 옵션은 다음 내용이 true인 경우에만 표시됩니다.
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
-   * 사전 설정 유형에서 **[!UICONTROL 스마트 자르기]** 옵션이 선택됩니다.
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-   ![스마트 자르기의 장치 픽셀 비율 설정](/help/assets/assets-dm/dpr-smartcrop.png)
+  ![device pixel ratio setting for smart crop](/help/assets/assets-dm/dpr-smartcrop.png) -->
 
 * **[!UICONTROL 제목]**  - 스마트 자르기 이미지의 제목을 변경합니다.
 
@@ -277,7 +277,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 대화형 미디어 구성 요소는 핫스팟이나 이미지 맵과 같은 상호 작용이 있는 자산을 위한 것입니다. 대화형 이미지, 대화형 비디오 또는 회전 배너가 있는 경우 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용하십시오.
 
-대화형 미디어 구성 요소는 편리하게도이미지를 추가하는지 아니면 비디오를 추가하는지에 따라 다양한 선택 사항이 제공됩니다. 또한 뷰어는 응답형이어서 화면 크기가 스크린의 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
+대화형 미디어 구성 요소는 편리하게도이미지를 추가하든 비디오를 추가하든 다양한 선택 사항이 표시됩니다. 또한 뷰어는 응답형입니다. 화면 크기가 스크린의 크기에 따라 자동으로 변경됩니다. 모든 뷰어는 HTML5 뷰어입니다.
 
 >[!NOTE]
 >
@@ -288,7 +288,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 >
 >
-해당 페이지의 각 Interactive Media 구성 요소에 다른 뷰어 사전 설정을 할당하는 것은 지원되지 않습니다.
+해당 페이지의 각 Interactive Media 구성 요소에 다른 뷰어 사전 설정을 할당할 수 없습니다.
 >
 >그러나 페이지 내에서 동일한 유형의 자산을 사용하는 모든 Interactive Media 구성 요소에 대해 동일한 뷰어 사전 설정을 사용할 수 있습니다.
 
@@ -296,7 +296,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 탭하여 다음 **[!UICONTROL 일반]** 설정을 편집할 수 있습니다.
 
-* **[!UICONTROL 뷰어 사전 설정]**  - 드롭다운 메뉴에서 기존 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 할 수 있습니다. 뷰어 사전 설정을 사용하려면 먼저 게시해야 합니다. 뷰어 사전 설정 관리를 참조하십시오.
+* **[!UICONTROL 뷰어 사전 설정]**  - 드롭다운 메뉴에서 기존 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 합니다. 뷰어 사전 설정을 사용하려면 먼저 게시해야 합니다. 뷰어 사전 설정 관리를 참조하십시오.
 
 * **[!UICONTROL 제목]**  - 비디오의 제목을 변경합니다.
 
@@ -340,13 +340,13 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 * **[!UICONTROL 뷰어 사전 설정]**  - 뷰어 사전 설정 드롭다운 메뉴에서 기존 뷰어를 선택합니다.
 
-보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 뷰어 사전 설정을 사용하려면 먼저 게시해야 합니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 
+보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 사용하기 전에 뷰어 사전 설정을 게시합니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 
 
 ### 비디오 360 미디어 구성 요소 {#video-media-component}
 
 **[!UICONTROL 비디오 360 Media]** 구성 요소를 사용하여 룸, 속성, 위치, 가로 또는 의료 절차의 몰입형 보기 환경을 위해 웹 페이지에 필요한 사각형 비디오를 렌더링합니다.
 
-평면 디스플레이에서 재생 중에 사용자는 보기 각도를 제어할 수 있습니다.모바일 장치에서 재생은 일반적으로 내장된 회전 제어 기능을 활용합니다.
+평면 디스플레이에서 재생 중에 사용자는 보기 각도를 제어할 수 있습니다.모바일 장치에서 재생은 일반적으로 내장된 점경식 컨트롤을 사용합니다.
 
 뷰어에는 360개의 비디오 자산 전달에 대한 기본 지원이 포함되어 있습니다. 기본적으로 보거나 재생하는 데 추가 구성이 필요하지 않습니다. .mp4, .mkv 및 .mov와 같은 표준 비디오 확장 기능을 사용하여 360 비디오를 제공합니다. 가장 일반적인 코덱은 H.264입니다.
 
@@ -356,7 +356,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 * **[!UICONTROL 뷰어 사전 설정]**  - 뷰어 사전 설정 드롭다운 메뉴에서 기존 뷰어를 선택합니다. Video360VR은 가상 현실 안경을 사용하는 최종 사용자에게 사용됩니다. 기본 비디오 재생 제어 및 소셜 미디어 기능을 포함합니다. 기본 비디오 재생 컨트롤이 포함된 Video360_social을 사용합니다. 비디오 렌더링은 스테레오 모드로 수행됩니다. 수동 시점 제어 기능이 해제되었지만 회전 제어 기능이 켜져 있습니다. 소셜 미디어 기능이 없습니다.
 
-보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 뷰어 사전 설정을 사용하려면 먼저 게시해야 합니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 
+보려는 뷰어 사전 설정이 표시되지 않으면 게시되었는지 확인합니다. 뷰어 사전 설정을 사용하기 전에 반드시 게시하십시오. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 
 
 ### HTTP/2를 사용하여 Dynamic Media 자산 {#using-http-to-delivery-dynamic-media-assets} 전달
 
@@ -366,10 +366,10 @@ Dynamic Media 계정에서 HTTP/2를 사용하는 시작에 대한 자세한 내
 
 >[!MORELIKETHIS]
 >
->* [AEM Dynamic Media에서 비디오 플레이어 사용](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
->* [AEM Dynamic Media에서 대화형 비디오 사용](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
->* [AEM Dynamic Media을 사용한 자산 뷰어 이해](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
->* [AEM Dynamic Media에서 사용자 지정 비디오 축소판 사용](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
->* [AEM Dynamic Media을 사용한 색상 관리 이해](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
->* [AEM Dynamic Media에서 이미지 선명하게 하기 사용](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Dynamic Media Experience Manager에서 비디오 플레이어 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Experience Manager Dynamic Media에서 대화형 비디오 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Experience Manager Dynamic Media을 사용한 자산 뷰어 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Experience Manager Dynamic Media에서 사용자 지정 비디오 축소판 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Experience Manager Dynamic Media을 사용한 색상 관리 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Experience Manager Dynamic Media에서 이미지 선명하게 하기 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
