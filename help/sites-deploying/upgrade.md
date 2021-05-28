@@ -13,7 +13,7 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: 업그레이드
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 4%
@@ -53,11 +53,11 @@ ht-degree: 4%
 
 AEM 6.0에서는 새로운 Jackrabbit Oak 저장소를 도입했습니다. 지속성 관리자는 [Micro Kernels](/help/sites-deploying/platform.md#contentbody_title_4)로 대체되었습니다. 버전 6.1부터 CRX2는 더 이상 지원되지 않습니다. CRX2 리포지토리를 5.6.1 인스턴스에서 마이그레이션하려면 crx2oak라는 마이그레이션 도구를 실행해야 합니다. 자세한 내용은 [CRX2OAK 마이그레이션 도구 사용](/help/sites-deploying/using-crx2oak.md)을 참조하십시오.
 
-자산 통찰력을 사용하고 AEM 6.2 이전 버전에서 업그레이드하는 경우 자산을 마이그레이션하고 JMX Bean을 통해 생성된 ID를 가져야 합니다. 내부 테스트에서는 TarMK 환경의 125K 자산이 한 시간 후에 마이그레이션되었지만 결과는 다를 수 있습니다.
+Assets Insights를 사용하고 AEM 6.2 이전 버전에서 업그레이드하는 경우 자산을 마이그레이션하고 JMX Bean을 통해 생성된 ID를 가져야 합니다. 내부 테스트에서는 TarMK 환경의 125K 자산이 한 시간 후에 마이그레이션되었지만 결과는 다를 수 있습니다.
 
 6.3에서는 TarMK 구현의 기반이 되는 `SegmentNodeStore` 의 새 형식을 도입했습니다. AEM 6.3 이전 버전에서 업그레이드하는 경우 시스템 다운타임을 포함하여 업그레이드의 일부로 저장소 마이그레이션이 필요합니다.
 
-Adobe 엔지니어링 팀은 이것을 약 20분 정도 예상하고 있습니다. 재색인화는 필요하지 않습니다. 또한 새 저장소 형식과 함께 작동하도록 crx2oak 도구의 새 버전이 릴리스되었습니다.
+Adobe 엔지니어링 팀은 이것을 약 20분 정도 예상하고 있습니다. 색인을 다시 지정할 필요는 없습니다. 또한 새 저장소 형식과 함께 작동하도록 crx2oak 도구의 새 버전이 릴리스되었습니다.
 
 **AEM 6.3에서 AEM 6.5로 업그레이드하는 경우 이 마이그레이션이 필요하지 않습니다.**
 
