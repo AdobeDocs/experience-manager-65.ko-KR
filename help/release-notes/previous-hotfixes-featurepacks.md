@@ -3,10 +3,10 @@ title: '[!DNL Adobe Experience Manager] 6.5 이전 서비스 팩 릴리스 노�
 description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩의 릴리스 노트입니다.'
 contentOwner: AK
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 8c69687ef4fbc2e4ee729d98232fe56db9b1df5a
+source-git-commit: d06e60baac692c92358244944226b77d5dad4022
 workflow-type: tm+mt
 source-wordcount: '20321'
-ht-degree: 57%
+ht-degree: 56%
 
 ---
 
@@ -1107,7 +1107,7 @@ Experience Manager 6.5 서비스 팩 5에 소개된 전체 기능, 주요 특징
 
 * 메타데이터 스키마에서 계단식 팝업을 사용할 때 동안 하위 드롭다운에서 아포스트로피가 포함된 드롭다운 옵션 선택 및 저장 시 선택한 아포스트로피 옵션은 자산 [!UICONTROL 속성]을 다시 열면 사라집니다(NPR-32649).
 
-* [!UICONTROL 자산 통찰력 동기화 작업]이 다음 항목으로 이동하는 대신 잘못된 항목(Analytics 쪽)이 나타나면 중지되고 실패합니다(NPR-32674).
+* [!UICONTROL 자산 통찰력 동기화 작업] 이 다음 항목으로 이동하는 대신 잘못된 항목(Analytics 쪽)이 나타나면 중지되고 실패합니다(NPR-32674).
 
 * 파노라마 뷰어의 모바일 브라우저에서 기본적으로 모션 센서가 비활성화되어 있으므로 자이로스코프가 작동하지 않습니다(CQ-4272937).
 
