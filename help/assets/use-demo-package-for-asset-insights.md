@@ -1,11 +1,11 @@
 ---
-title: 자산 통찰력에 데모 패키지 사용
+title: Assets Insights에 데모 패키지 사용
 description: 데모 패키지를 사용하여 Adobe 자산 통찰력 을 활성화하여 웹 페이지의 데이터를 캡처하고 통찰력을 생성합니다.
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: 자산 통찰력,자산 보고서
 exl-id: 13947513-da76-43e1-ae01-abd24a59752a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
