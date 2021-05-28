@@ -8,9 +8,9 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1114'
 ht-degree: 1%
 
 ---
@@ -93,17 +93,9 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 옵트인할 
 
 사용자가 동영상 파일을 업로드해도 자산 노드에서 삭제 권한이 없으면 삭제 청크 노드가 실패하여 업로드가 다시 시작됩니다.
 
-#### AEM 6.4로 한 번에 운영할 수 있는 최대 디지털 자산 수는 얼마입니까?{#what-is-the-maximum-number-of-digital-assets-that-can-be-operated-with-aem-at-a-time}
-
-Adobe Experience Manager(AEM) 6.5를 사용하면 현재 한 번에 최대 2GB의 자산을 업로드할 수 있습니다.
-
-AEM 6.5로 작업할 수 있는 최대 자산 수에 대한 자세한 내용은 [자산 크기 조정 가이드](/help/assets/assets-sizing-guide.md)를 참조하십시오.
-
 #### 언어 사본을 만드는 동안 OOTB 구성에 대한 기본 설정은 무엇입니까?{#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-클래식 UI를 통해 언어 사본을 만들 때 자산은 새 언어 계층 구조로 이동되지 않고 언어 마스터에서 사용됩니다.
-
-반면에 Touch UI(**참조** -> **언어 사본 업데이트**)를 통해 언어 사본을 만들 때 새 언어 아래에 새 DAM 폴더가 만들어지고 자산에서 참조됩니다.
+Touch UI(**참조** -> **언어 사본 업데이트**)를 통해 언어 사본을 만들 때 새 언어로 새 DAM 폴더가 생성되고, 자산에서 참조됩니다.
 
 OOTB 구성에 대한 기본 설정입니다. 번역 구성에서 **페이지 자산 번역** = **번역 안 함**을 설정할 수 있습니다.
 AEM 6.4의 경우 **도구** > **Cloud Services** > **번역 클라우드 서비스**&#x200B;입니다.
@@ -115,10 +107,6 @@ OSGi 구성 요소 비활성화 를 비활성화할 수 있습니다. 이 서비
 해결 방법으로, AEM을 다시 시작할 때마다 UI를 통해 또는 `curl` 명령(아래 예제)을 통해 구성 요소를 수동으로 비활성화할 수도 있습니다.
 
 `curl -u admin:$(pass CQ_Admin) 'https://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
-
-#### AEM 6.5 인스턴스로 자산 통찰력을 구성하는 방법{#how-to-configure-asset-insights-with-aem-instance}
-
-DTM(Adobe 활성화)을 통해 배포된 Experience Manager에 대한 자산 통찰력을 설정하고 구성하려면 [AEM Assets을 사용하여 자산 통찰력을 설정하는 방법](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)을 참조하십시오.
 
 #### 관리 콘솔을 사용자 지정하는 방법{#how-to-customize-admin-consoles}
 
@@ -136,20 +124,8 @@ Granite UI Foundation의 새 Sling 구성 요소 세트는 Coral3에 대해 만�
 
 단순 검색 구현은 2017년 Summit Lab AEM Search Demystified의 자료입니다.
 
-#### AEM Assets과 AEM MediaLibrary의 차이점은 무엇입니까?{#what-is-the-difference-between-aem-assets-and-aem-medialibrary}
-
-AEM Assets은 AEM Platform의 애플리케이션으로서, 고객이 웹 기반 저장소에서 디지털 자산(이미지, 비디오, 문서 및 오디오 클립)을 관리할 수 있는 반면, AEM Media Library은 이미지 및 기타 공유 리소스가 저장되는 AEM WCM 컨텐츠 리포지토리의 지정된 부분입니다.
-
-자세한 내용은 [AEM Assets 및 AEM MediaLibrary](/help/assets/medialibrary.md)를 참조하십시오.
-
 #### 고객이 Adobe 자산 선택기에 액세스하여 이미지를 선택할 수 있는 WordPress용 플러그인을 작성할 수 있습니까?{#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
 
 예. WordPress를 사용하는 고객은 Adobe 자산 선택기를 사용하여 AEM Assets 서버에서 이미지를 선택하여 WordPress 사이트의 게시물에 추가할 수 있습니다.
 
 자세한 내용은 [자산 선택기](../assets/search-assets.md#assetpicker)를 참조하십시오.
-
-#### AEM Assets에서 검색 패싯을 확장하여 추가 설명을 추가할 수 있습니까?{#is-it-possible-to-extend-the-search-facets-in-aem-assets-to-add-additional-predicates}
-
-AEM(Adobe Experience Manager) Assets의 엔터프라이즈급 배포는 많은 자산을 저장할 수 있는 용량을 제공합니다. 기본 양식에 설명을 추가하거나 선택한 패싯을 포함하는 사용자 지정 양식을 사용할 수 있습니다.
-
-자세한 내용은 [검색 패싯](/help/assets/search-facets.md)을 참조하십시오.
