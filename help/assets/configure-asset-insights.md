@@ -5,16 +5,16 @@ contentOwner: AG
 role: Architect, Administrator
 feature: 자산 통찰력,자산 보고서
 exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '257'
 ht-degree: 1%
 
 ---
 
 # 자산 통찰력 구성 {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] 에서는 타사 웹 사이트에서 사용하는 디지털 자산에 대한 사용 데이터를  [!DNL Adobe Analytics]가져옵니다. 자산 통찰력 이 데이터를 검색하고 인사이트를 생성하려면 먼저 [!DNL Adobe Analytics]과 통합하도록 기능을 구성합니다. 이 기능을 사용하려면 [!DNL Adobe Analytics] 라이센스를 별도로 구입하십시오. [!DNL Managed Services] 의 고객은 [!DNL Experience Manager]와 번들로 제공되는 [!DNL Analytics] 라이센스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하십시오.
+[!DNL Adobe Experience Manager Assets] 에서는 타사 웹 사이트에서 사용하는 디지털 자산에 대한 사용 데이터를  [!DNL Adobe Analytics]가져옵니다. 자산 인사이트에서 이 데이터를 검색하고 인사이트를 생성하려면 먼저 [!DNL Adobe Analytics]과 통합하도록 기능을 구성합니다. 온-프레미스 설치에서 이 기능을 사용하려면 [!DNL Adobe Analytics] 라이센스를 별도로 구입하십시오. [!DNL Managed Services] 의 고객은 [!DNL Experience Manager]와 번들로 제공되는 [!DNL Analytics] 라이센스를 받습니다. [Managed Services 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ ht-degree: 1%
    *그림:에서  [!DNL Adobe Analytics] 자산 통찰력에 대한 을  [!DNL Experience Manager]구성합니다.*
 
 1. **[!UICONTROL 인증]**&#x200B;을 클릭합니다.
-1. [!DNL Experience Manager]이 자격 증명을 인증하면 **[!UICONTROL 보고서 세트]** 목록에서 자산 통찰력이 데이터를 가져오려는 곳에서 [!DNL Adobe Analytics] 보고서 세트를 선택합니다. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
+1. [!DNL Experience Manager]이 자격 증명을 인증한 후 **[!UICONTROL 보고서 세트]** 목록에서 자산 통찰력이 데이터를 가져오려는 [!DNL Adobe Analytics] 보고서 세트를 선택합니다. **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 1. [!DNL Experience Manager] 보고서 세트를 설정한 후에 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
 ## 페이지 추적기 {#page-tracker}
