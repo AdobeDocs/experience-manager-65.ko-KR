@@ -1,10 +1,10 @@
 ---
 title: AEM Content and Commerce 릴리스 노트 2021
 description: AEM Content and Commerce 릴리스 노트 2021
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 15%
+source-wordcount: '648'
+ht-degree: 13%
 
 ---
 
@@ -14,13 +14,37 @@ ht-degree: 15%
 
 현재 사용 중인 CIF 버전 또는 향후 사용할 예정인 최소 시스템 요구 사항을 아래 표에서 검토하십시오.
 
-**이제  [Adobe 소프트웨어 배포를 통해 CIF 추가 기능을 사용할 수 있습니다](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 이전 AEM CIF 커넥터가 유지 관리 모드로 전환되고 있으므로 더 이상 사용하지 않아야 합니다. 새 CIF 추가 기능으로 마이그레이션하십시오.**
+**4월 릴리스에서는 GitHub의 CIF 커넥터를 [Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 사용할 수 있는 CIF 추가 기능으로 교체했습니다. 추가 기능으로 전환하면 프로젝트에 큰 이점이 있습니다.
+
+* 대부분의 새로운 기능은 AEM 6.5에서 즉시 사용할 수 있습니다(기능 사이드 포트를 기다리지 않음).
+* 새로운 추가 기능 버전으로 쉽게 업그레이드 가능
+* Cloud Service 준비
+
+이전 AEM CIF 커넥터가 유지 관리 모드로 전환되고 있으므로 더 이상 사용하지 않아야 합니다. CIF 커넥터를 새 CIF 추가 기능으로 바꾸십시오. 대부분의 프로젝트에 대해 단순히 패키지를 대체할 수 있어야 합니다. **
 
 | 구성 요소 | 시스템 요구 사항 |
 |:-------|:-----:|
 | CIF 추가 기능 | 최소:AEM 6.5.7, Magento 2.3.5 GraphQL 스키마 |
 | CIF 코어 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM 프로젝트 전형 | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## 릴리스 날짜:2021년 5월
+
+| 구성 요소 | 버전 | 세부 사항 |
+|:-------|:-----:|---------------------:|
+| CIF 추가 기능 | 2021.05.26 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| CIF 코어 구성 요소 | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
+| CIF Venia 참조 사이트 | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
+
+### 새로운 기능 {#what-is-new-may}
+
+* 제품 콘솔 속성의 관련 콘텐츠에 대한 페이지 매김 지원
+
+### 버그 수정 {#bug-fixes-may}
+
+* 제품 속성의 자산 탭에 자산 축소판이 표시되지 않음
+
+* 탐색 표시 는 제품 콘솔에서 미리 보기 데이터를 재설정합니다
 
 ## 릴리스 날짜:2021년 4월
 
