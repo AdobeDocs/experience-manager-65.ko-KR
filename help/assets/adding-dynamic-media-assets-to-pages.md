@@ -11,9 +11,9 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: 구성 요소,게시
-source-git-commit: 00fc290d91de3c194ada837a931f1d86a5557939
+source-git-commit: 8199702fe778f11cc2a953979a4ccfdcef3f1154
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3210'
 ht-degree: 19%
 
 ---
@@ -170,16 +170,16 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
    구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 탭하여 다음 고급 설정을 편집할 수 있습니다.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
+* **[!UICONTROL 고해상도 장치를 위한 최적화]**  - DPR(장치 픽셀 비율) 최적화를 허용하려면 확인란을 (기본값) 선택합니다.
 
-  See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
+   **[!UICONTROL 고해상도 장치를 위해 최적화]** 옵션은 다음 내용이 true인 경우에만 표시됩니다.
+   * 사전 설정 유형에서 **[!UICONTROL 이미지 사전 설정]**&#x200B;이 선택되고 **[!UICONTROL 이미지 사전 설정]** 드롭다운 목록에서 **[!UICONTROL RESS_IP]**&#x200B;가 선택됩니다.
 
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+   ![이미지 사전 설정에 대한 장치 픽셀 비율 설정](/help/assets/assets-dm/dpr-ress-ip.png)
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
-  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for image preset](/help/assets/assets-dm/dpr-ress-ip.png) -->
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL 제목]**  - 이미지의 제목을 변경합니다.
 
@@ -247,17 +247,17 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 * **[!UICONTROL 비율 일치 활성화]**  - Dynamic Media에서 원본 이미지의 비율과 가장 일치하는 종횡비로 스마트 자르기 렌디션을 선택하도록 하려면 이 옵션을 선택합니다.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
+* **[!UICONTROL 고해상도 장치를 위한 최적화]**  - DPR(장치 픽셀 비율) 최적화를 허용하려면 확인란을 (기본값) 선택합니다.
 
-  See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
+   **[!UICONTROL 고해상도 장치를 위해 최적화]** 옵션은 다음 내용이 true인 경우에만 표시됩니다.
 
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+   * 사전 설정 유형에서 **[!UICONTROL 스마트 자르기]** 옵션이 선택됩니다.
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+   ![스마트 자르기의 장치 픽셀 비율 설정](/help/assets/assets-dm/dpr-smartcrop.png)
 
-  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for smart crop](/help/assets/assets-dm/dpr-smartcrop.png) -->
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL 제목]**  - 스마트 자르기 이미지의 제목을 변경합니다.
 
