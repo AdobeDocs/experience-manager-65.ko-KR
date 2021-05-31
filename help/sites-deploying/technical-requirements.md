@@ -3,17 +3,12 @@ title: 기술 요구 사항
 seo-title: 기술 요구 사항
 description: AEM에 대해 지원되는 클라이언트 및 서버 플랫폼 목록입니다.
 seo-description: AEM에 대해 지원되는 클라이언트 및 서버 플랫폼 목록입니다.
-uuid: 597f8fc1-9ac7-458d-a7c1-f576dd0f189b
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
-discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
-docset: aem65
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 4a4ecd1304a1eed0916c3f1a51558397fa4dbc47
+source-git-commit: ed10c7230557f84511dfadd6fddb6b566466a049
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3265'
 ht-degree: 1%
 
 ---
@@ -99,49 +94,50 @@ Adobe Experience Manager은 다음 버전의 Java Virtual Machine을 사용하�
 <table>
  <tbody>
   <tr>
-   <td>플랫폼</td>
-   <td>지원 수준</td>
+   <td><strong>플랫폼</strong></td>
+   <td><strong>지원 수준</strong></td>
   </tr>
   <tr>
-   <td><strong>아줄 줄루 오픈JDK 11 - 64비트 [3]</strong></td>
-   <td>A:지원됨</td>
+   <td>아줄 줄루 오픈JDK 11 - 64비트</td>
+   <td>A:지원되는 [1]</td>
   </tr>
   <tr>
-   <td>아줄 줄루 오픈JDK 8 - 64비트 [3]</td>
-   <td>A:지원됨</td>
+   <td>아줄 줄루 오픈JDK 8 - 64비트</td>
+   <td>A:지원되는 [1]</td>
   </tr>
   <tr>
-   <td><strong>Oracle Java SE 11 JDK - 64비트</strong></td>
-   <td>A:지원됨</td>
+   <td>Oracle Java SE 11 JDK - 64비트</td>
+   <td>A:지원되는 [2]</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 10 JDK [1]</td>
-   <td>Z:지원되지 않음 </td>
+   <td>Oracle Java SE 10 JDK</td>
+   <td>Z:지원되지 않음 [2]</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 9 JDK [1]</td>
-   <td>Z:지원되지 않음</td>
+   <td>Oracle Java SE 9 JDK</td>
+   <td>Z:지원되지 않음 [2]</td>
   </tr>
   <tr>
    <td>Oracle Java SE 8 JDK - 64비트</td>
+   <td>A:지원되는 [2]</td>
+  </tr>
+  <tr>
+   <td>IBM J9 VM - 빌드 2.9, JRE 1.8.0</td>
    <td>A:지원되는 [3]</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - 빌드 2.9, JRE 1.8.0 [2]</td>
-   <td>A:지원됨</td>
-  </tr>
-  <tr>
-   <td>IBM J9 VM - 빌드 2.8, JRE 1.8.0 [2]</td>
-   <td>A:지원됨</td>
+   <td>IBM J9 VM - 빌드 2.8, JRE 1.8.0</td>
+   <td>A:지원되는 [3]</td>
   </tr>
  </tbody>
 </table>
 
-1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle의 비 LTS 릴리스입니다( [Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html) 참조). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다.
+1. AEM 6.5 SP9부터 OpenJDK의 Azul Zulu 빌드를 사용하는 모든 AEM 고객을 위해 LTS 릴리스의 모든 유지 관리 업데이트를 포함한 OpenJDK의 Azul Zulu 빌드의 지원 및 배포가 Adobe에서 직접 지원됩니다. 자세한 내용은 [Adobe Experience Manager에 대한 Azul Java 지원](assets/adobe-azul-openjdk-license-agreement.pdf)을 참조하십시오.
+
+1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle의 비 LTS 릴리스입니다( [Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html) 참조). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다. 공개 업데이트 종료 이후 릴리스의 모든 유지 관리 업데이트를 포함하여 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술 **을 사용하는 모든 AEM 고객을 위해 2022년 12월까지 Adobe에서 직접 지원합니다**. 자세한 내용은 [Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf)에 대한 Java 지원 Oracle 를 참조하십시오.
 
 1. IBM JRE는 WebSphere Application Server에서만 지원됩니다.
-1. 공개 업데이트 종료 이후 릴리스의 모든 유지 관리 업데이트를 포함하여 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술 **을 사용하는 모든 AEM 고객을 위해 2022년 12월까지 Adobe에서 직접 지원합니다**. 자세한 내용은 [Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf)에 대한 Java 지원 Oracle 를 참조하십시오.
-1. AEM 6.5 SP9부터 OpenJDK의 Azul Zulu 빌드를 사용하는 모든 AEM 고객을 위해 LTS 릴리스의 모든 유지 관리 업데이트를 포함한 OpenJDK의 Azul Zulu 빌드의 지원 및 배포가 Adobe에서 직접 지원됩니다.
+
 
 ### 저장소 및 지속성 {#storage-persistence}
 
