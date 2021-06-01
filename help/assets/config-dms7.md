@@ -9,9 +9,9 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: 구성,Scene7 모드
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 485464350f391fca327207b78b165897fdacc2d3
 workflow-type: tm+mt
-source-wordcount: '6154'
+source-wordcount: '6156'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >다음 기능 목록을 사용하려면 Adobe Experience Manager - Dynamic Media과 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이러한 기능에서 지원되지 않습니다.
 >
@@ -48,8 +48,8 @@ ht-degree: 1%
 
 [Dynamic Media는 기본적으로 비활성화됩니다. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Dynamic Media 기능을 사용하려면 활성화해야 합니다.
 
->[!NOTE]
-Dynamic Media - Scene7 모드는 Experience Manager 작성자 인스턴스용입니다. 따라서 Experience Manager 작성자 인스턴스에서 `runmode=dynamicmedia_scene7` Experience Manager 게시 인스턴스가 아닌 *을 구성해야 합니다.*
+>[!WARNING]
+Dynamic Media - Scene7 모드는 *Experience Manager 작성자 인스턴스에만 사용됩니다*. 따라서 Experience Manager 작성자 인스턴스에서 `runmode=dynamicmedia_scene7` Experience Manager 게시 인스턴스가 아닌 *을 구성해야 합니다.*
 
 Dynamic Media을 활성화하려면 터미널 창에 다음을 입력하여 명령줄에서 `dynamicmedia_scene7` 실행 모드를 사용하여 Experience Manager을 시작해야 합니다(사용된 예제 포트는 4502).
 
@@ -86,9 +86,9 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ![dynamicmediaconfiguration2업데이트됨](assets/dynamicmediaconfiguration2updated.png)
 
-**Cloud Services에서 Dynamic Media 구성을 만들려면**
+**Cloud Services에서 Dynamic Media 구성을 만들려면:**
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 탭한 다음, **[!UICONTROL Cloud Services > Dynamic Media 구성]**&#x200B;을 누릅니다.
+1. Experience Manager 작성자 모드에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 탭한 다음, **[!UICONTROL Cloud Services > Dynamic Media 구성]**&#x200B;을 누릅니다.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**(**[!UICONTROL global]** 왼쪽의 폴더 아이콘을 탭하거나 선택하지 않음)을 탭한 다음 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 1. **[!UICONTROL Dynamic Media 구성 만들기]** 페이지에서 제목, Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. 이 정보는 규정 이메일에서 Adobe이 제공합니다. 이메일을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
 
