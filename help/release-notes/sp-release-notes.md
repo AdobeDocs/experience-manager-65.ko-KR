@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: e33a4f197c0deb2457237aac1c1e31093c89adef
+source-git-commit: 68928e251203f67faef498dc22f6d57ea141e748
 workflow-type: tm+mt
-source-wordcount: '3381'
+source-wordcount: '3389'
 ht-degree: 14%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 14%
 >AEM 서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되는 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
 >[!DNL Azul Zulu] JDK에 대한 지원은 [!DNL Experience Manager] 고객에게도 Adobe이 제공합니다.
 >[Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 [!DNL Azul Zulu JDKs] 관련 버전을 다운로드할 수 있습니다.
->Adobe에 의해 배포되는 Oracle Java 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java] 기술 및 [!DNL Azul Zulu] 기술 사용에 대한 자세한 내용은 관련 FAQ를 참조하십시오.
+>Adobe에 의해 배포되는 Oracle Java 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en)를 참조하십시오.
 
 다음은 [!DNL Experience Manager] 6.5.9.0 릴리스에서 제공된 수정 사항 목록입니다.
 
