@@ -7,9 +7,9 @@ content-type: reference
 feature: 접근성
 role: Business Practitioner, Administrator
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -20,20 +20,20 @@ ht-degree: 0%
 
 ## [!DNL Dynamic Media]에서 키보드 액세스 가능성 지원
 
-[!DNL Dynamic Media]은 [!DNL Adobe Experience Manager Assets]에 대한 플러그인이므로 대부분의 키보드 제어 동작은 [!DNL Experience Manager Assets]에 있는 것과 동일합니다. 예를 들어 [!DNL Dynamic Media]의 `Cancel` 버튼은 [!DNL Experience Manager Assets]에서와 동일한 포커스 강조 표시가 있고 [!DNL Experience Manager Assets]에서와 같이 `Spacebar` 키에 반응합니다. Assets](/help/assets/accessibility.md#keyboard-shortcuts)의 [키보드 단축키 를 참조하십시오.
+[!DNL Dynamic Media]은 [!DNL Adobe Experience Manager Assets]에 대한 플러그인이므로 대부분의 키보드 컨트롤 동작은 [!DNL Experience Manager Assets]에서와 동일합니다. 예를 들어 [!DNL Dynamic Media]의 `Cancel` 버튼은 [!DNL Experience Manager Assets]에서와 동일한 포커스 강조 표시가 있고 [!DNL Experience Manager Assets]에서와 같이 `Spacebar` 키에 반응합니다. Assets](/help/assets/accessibility.md#keyboard-shortcuts)의 [키보드 단축키 를 참조하십시오.
 
 [!DNL Dynamic Media]의 개별 사용자 인터페이스 요소에서 지원하는 키 입력은 대부분의 경우 명확하고 쉽게 검색할 수 있습니다. [!DNL Dynamic Media]의 키보드 컨트롤은 다음과 같습니다.
 
 * `Tab` 및 `Shift+Tab` 키 입력을 사용하여 페이지에서 대화형 요소 간을 탐색할 수 있습니다.
 `Tab` 을 사용하면 입력 포커스를 탭 순서의 다음 사용자 인터페이스 요소로 이동합니다.`Shift+Tab` 을 사용하면 입력 포커스가 이전 사용자 인터페이스 요소로 돌아갑니다.
 초점 순번은 화면에서 자연어 사용자 인터페이스 요소 위치를 따르며 왼쪽에서 오른쪽, 위에서 아래로 이동합니다. 또한 필드에 오류가 있으면 `Tab` 키를 눌러 포커스를 이동할 수 있습니다.
-* `Spacebar` 및 `Enter` 키를 사용하여 단추, 드롭다운 목록 등과 같은 표준 사용자 인터페이스 요소를 활성화할 수 있습니다.
-* 활성 요소에서 키보드 포커스를 강조 표시하는 기능을 제공합니다. 입력 포커스가 있는 사용자 인터페이스 요소는 사용자 인터페이스 요소 주위에 렌더링되는 테두리로 시각적 포커스 표시를 받을 수 있다.
+* `Spacebar` 및 `Enter` 키를 사용하여 단추 및 드롭다운 목록과 같은 표준 사용자 인터페이스 요소를 활성화할 수 있습니다.
+* 활성 요소에서 키보드 포커스를 강조 표시하는 기능을 제공합니다. 입력 포커스가 있는 사용자 인터페이스 요소는 사용자 인터페이스 요소 주위에 렌더링되는 테두리로 시각적 포커스 표시를 수신한다.
 * 핫스팟 편집기에서 화살표 키와 같은 일부 사용자 지정 키 입력을 사용하여 복잡한 사용자 인터페이스 요소와 상호 작용하여 핫스팟 위치를 변경할 수 있습니다.
 * 대화형 비디오 편집기에서 `Spacebar` 을 사용하여 이미지를 선택하고 세그먼트에 추가할 수 있습니다. 또한 `Backspace` 키를 사용하여 **[!UICONTROL Content]** 탭에서 선택한 항목을 삭제할 수 있습니다. 또한 `Tab` 함수를 눌러 페이지의 대화형 요소 간을 탐색합니다.
 * 이미지 자르기/스마트 자르기 편집기에서 다음을 수행할 수 있습니다.
-   * 화살표 키를 사용하여 프레임 크기를 자르거나 이미지를 다시 배치하거나 둘 다 배치합니다.
-   * 첫 번째 `Tab` 중지는 전체 이미지 프레임을 강조 표시합니다. 그런 다음 키보드에서 화살표 키를 사용하여 프레임을 다시 배치할 수 있습니다.
+   * 화살표 키를 사용하여 프레임 크기를 자르거나 이미지 위치 변경 또는 둘 다를 선택합니다.
+   * 첫 번째 `Tab` 중지는 전체 이미지 프레임을 강조 표시합니다. 그런 다음 키보드에서 화살표 키를 사용하여 프레임 위치를 변경할 수 있습니다.
    * 다음 네 개의 `Tab` 정지는 프레임의 네 코너입니다. 프레임 모서리에 포커스를 놓으면 모서리가 강조 표시됩니다. 키보드의 화살표 키를 사용하여 포커스가 있는 모서리를 이동할 수도 있습니다.
 [단일 이미지의 스마트 자르기 또는 스마트 견본 편집](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image) 을 참조하십시오
 
