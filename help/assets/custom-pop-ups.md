@@ -12,16 +12,16 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: 뷰어
 role: Business Practitioner, Administrator
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1090'
 ht-degree: 2%
 
 ---
 
 # 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
-기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 그러나 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다. 사용 중인 뷰어에 따라 이 기능을 사용하면 핫스팟이나 축소판 이미지를 클릭하거나 이미지 맵에서 정보나 관련 컨텐츠를 볼 수 있습니다.
+기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 그러나 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다. 뷰어에 따라 이 기능을 사용하면 핫스팟이나 축소판 이미지 또는 이미지 맵에서 탭하여 정보나 관련 컨텐츠를 볼 수 있습니다.
 
 빠른 보기는 Dynamic Media의 다음 뷰어에서 지원합니다.
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 각 뷰어의 기능은 다르지만, 빠른 보기를 만드는 프로세스는 지원되는 세 뷰어 모두에서 동일합니다.
 
-**빠른 보기를 사용하여 사용자 지정 팝업을 만들려면**
+**빠른 보기를 사용하여 사용자 지정 팝업을 만들려면 다음을 수행하십시오.**
 
 1. 업로드된 자산에 대한 빠른 보기를 만듭니다.
 
@@ -41,7 +41,7 @@ ht-degree: 2%
     <tbody>
     <tr>
     <td><strong>사용 중인 뷰어</strong></td>
-    <td><strong>다음 단계를 완료하여 빠른 보기를 만듭니다</strong></td>
+    <td><strong>빠른 보기를 만들려면 다음 단계를 완료하십시오</strong></td>
     </tr>
     <tr>
     <td>대화형 이미지</td>
@@ -64,7 +64,7 @@ ht-degree: 2%
     <tbody>
     <tr>
     <td><strong>사용 중인 뷰어</strong><br /> </td>
-    <td><strong>다음 단계를 완료하여 뷰어를 웹 사이트와 통합</strong></td>
+    <td><strong>뷰어를 웹 사이트와 통합하려면 다음 단계를 완료하십시오</strong></td>
     </tr>
     <tr>
     <td>대화형 이미지</td>
@@ -81,12 +81,12 @@ ht-degree: 2%
     </tbody>
    </table>
 
-1. 이제 사용 중인 뷰어는 빠른 보기를 사용하는 방법을 알아야 합니다.
+1. 이제 사용 중인 뷰어는 빠른 보기를 사용하는 방법을 알고 있어야 합니다.
 
-   이렇게 하려면 뷰어가 `QuickViewActive` 이라는 핸들러를 사용합니다.
+   뷰어는 `QuickViewActive`이라는 핸들러를 사용합니다.
 
    ****
-예: 대화형 이미지에 웹 페이지에서 다음 샘플 포함 코드를 사용했다고 가정해 봅시다.
+예: 대화형 이미지에 웹 페이지에서 다음 샘플 포함 코드를 사용한다고 가정해 보십시오.
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -94,7 +94,7 @@ ht-degree: 2%
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **위의 샘플 포함 코드 예제를 사용하여 다음 코드가 있습니다.**
+   **위의 샘플 포함 코드 예를 사용하여 다음 코드가 있습니다.**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -153,7 +153,7 @@ ht-degree: 2%
       * 추가 변수를 추가할 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트합니다.
    * 뷰어 외부의 페이지에서 간단한 `loadQuickView` () 함수를 만듭니다.
 
-      예를 들어, 다음은 sku 값을 브라우저 콘솔에 씁니다.
+      예를 들어, 다음은 SKU 값을 브라우저 콘솔에 씁니다.
 
    ```xml
    function loadQuickView(sku){
@@ -182,7 +182,7 @@ ht-degree: 2%
 
 1. 팝업 `DIV`을 HTML 페이지의 본문에 배치합니다.
 
-   요소 중 하나는 사용자가 Quickview를 호출할 때 sku 값으로 업데이트된 ID로 설정됩니다. 또한 팝업이 표시된 후 팝업을 다시 숨기기 위한 간단한 단추도 포함되어 있습니다.
+   요소 중 하나는 사용자가 Quickview를 호출할 때 SKU 값으로 업데이트된 ID로 설정됩니다. 또한 팝업이 표시된 후 팝업을 다시 숨기기 위한 간단한 단추도 포함되어 있습니다.
 
    ```xml
    <div id="quickview_div" >
@@ -193,7 +193,7 @@ ht-degree: 2%
    </div>
    ```
 
-1. 팝업에서 sku 값을 업데이트하는 함수를 추가합니다.5단계에서 만든 단순 함수를 대체하여 팝업을 표시합니다. 사용:
+1. 팝업에서 SKU 값을 업데이트할 수 있도록 함수를 추가합니다.5단계에서 만든 단순 함수를 대체하여 팝업을 표시합니다. 사용:
 
    ```xml
    <script type="text/javascript">
@@ -209,9 +209,9 @@ ht-degree: 2%
 
    대화형 비디오 뷰어와 같은 일부 뷰어는 전체 화면 모드로 표시를 지원합니다. 그러나 이전 단계에서 설명한 대로 팝업을 사용하면 전체 화면 모드에 있는 동안 뷰어 뒤에 표시됩니다.
 
-   팝업을 표준 모드와 전체 화면 모드 모두에서 표시하려면 팝업을 뷰어 컨테이너에 첨부합니다. 이를 위해 두 번째 처리기 메서드인 `initComplete`를 사용할 수 있습니다.
+   팝업을 표준 모드와 전체 화면 모드 모두에서 표시하려면 팝업을 뷰어 컨테이너에 첨부합니다. 두 번째 처리기 메서드인 `initComplete`를 사용하십시오.
 
-   뷰어가 초기화되면 `initComplete` 핸더가 호출됩니다.
+   뷰어가 초기화되면 `initComplete` 핸들러가 호출됩니다.
 
    ```xml
    "initComplete":function() { code block }
@@ -234,14 +234,14 @@ ht-degree: 2%
    }
    ```
 
-   위의 코드에서 다음을 수행했습니다.
+   위의 코드에서는 다음 작업이 수행되었습니다.
 
    * 사용자 지정 팝업을 확인했습니다.
    * DOM에서 제거했습니다.
    * 뷰어 컨테이너를 식별했습니다.
    * 뷰어 컨테이너에 팝업을 첨부했습니다.
 
-1. 이제 전체 setHandlers 코드는 다음과 유사해야 합니다(대화형 비디오 뷰어가 사용됨).
+1. 전체 setHandlers 코드가 다음과 유사하게 표시됩니다(대화형 비디오 뷰어가 사용됨).
 
    ```xml
    s7interactivevideoviewer.setHandlers({
