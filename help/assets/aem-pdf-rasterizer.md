@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer, Administrator
 feature: 개발자 도구,표현물
 exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: eb687a85f0612df7776dace7b81f97bff5f5ad35
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ Adobe은 다음과 같은 경우 PDF 래스터라이저 라이브러리를 사�
 
 PDF Rasterizer를 사용하여 생성된 축소판 및 미리 보기는 기본 출력보다 품질이 향상되므로 여러 장치에서 일관된 보기 환경을 제공합니다. Adobe PDF Rasterizer 라이브러리는 색상 공간 변환을 지원하지 않습니다. 소스 파일의 색상 공간에 관계없이 항상 RGB로 출력됩니다.
 
-1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)에서 [!DNL Adobe Experience Manager] 배포에 PDF 래스터라이저 패키지를 설치합니다.
+1. [소프트웨어 배포]에서 [!DNL Adobe Experience Manager] 배포에 PDF 래스터라이저 패키지를 설치합니다
+(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip)
 
    >[!NOTE]
    >
