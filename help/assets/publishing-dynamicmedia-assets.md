@@ -10,7 +10,7 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: Business Practitioner, Administrator
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: 게시
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Dynamic Media 자산 게시 {#publishing-dynamic-media-assets}
 
-이미 업로드한 자산을 선택하고 **[!UICONTROL 게시]** 또는 **[!UICONTROL 빠른 게시를 탭하여 Dynamic Media 자산을 게시합니다.]** Dynamic Media 자산이 게시되면 URL을 통해 또는 페이지에 해당 코드를 포함하여 웹 페이지에 포함할 수 있습니다.
+이미 업로드한 자산을 선택하고 **[!UICONTROL 게시]** 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 탭하여 Dynamic Media 자산을 게시합니다. Dynamic Media 자산이 게시되면 URL을 통해 또는 페이지에 해당 코드를 포함하여 웹 페이지에 포함할 수 있습니다.
 
 사용자가 개입하지 않고 업로드한 자산을 즉시 게시할 수도 있습니다. [Dynamic Media 구성 - Scene7 모드 을 참조하십시오.](config-dms7.md)
 또는 폴더 수준에서  **[!UICONTROL 선택적 게시]** 를 사용하여 서로 배타적으로 Dynamic Media 또는 AEM에 자산을 선택적으로 게시할 수 있습니다. [Dynamic Media의 선택적 게시 작업](/help/assets/selective-publishing.md)을 참조하십시오.
