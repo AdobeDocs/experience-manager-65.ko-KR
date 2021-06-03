@@ -10,10 +10,10 @@ discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: Business Practitioner, Administrator
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: 비디오
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 62%
+source-wordcount: '1589'
+ht-degree: 59%
 
 ---
 
@@ -74,7 +74,7 @@ Scene7 비디오 구성 요소에 대해 다음 형식이 지원됩니다.
 
 범용 사전 설정을 구성하려면:
 
-1. **[!UICONTROL Cloud Services]**&#x200B;에서 **[!UICONTROL Scene7]** 구성으로 이동한 후 **[!UICONTROL 편집을 클릭합니다.]**
+1. **[!UICONTROL 클라우드 서비스]**&#x200B;에서 **[!UICONTROL Scene7]** 구성으로 이동한 후 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 비디오]** 탭을 선택합니다.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -95,7 +95,7 @@ Scene7 비디오 구성 요소에 대해 다음 형식이 지원됩니다.
 
 ## 뷰어 및 인코딩 사전 설정 업데이트 {#updating-viewer-and-encoding-presets}
 
-Scene7에서 사전 설정이 업데이트되었기 때문에 AEM에서 비디오에 대한 뷰어 및 인코딩 사전 설정을 업데이트해야 할 경우 클라우드 구성에서 Scene7 구성으로 이동한 후 **[!UICONTROL 뷰어 및 인코딩 사전 설정 업데이트를 클릭합니다.]**
+Scene7에서 사전 설정이 업데이트되었기 때문에 Experience Manager에서 비디오에 대한 뷰어 및 인코딩 사전 설정을 업데이트해야 할 경우 클라우드 구성에서 Scene7 구성으로 이동한 후 **[!UICONTROL 뷰어 및 인코딩 사전 설정 업데이트]**&#x200B;를 클릭합니다.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -112,9 +112,9 @@ Scene7에서 사전 설정이 업데이트되었기 때문에 AEM에서 비디�
 
 ## 기본 비디오 구성 요소 및 Scene7 비디오 구성 요소 {#foundation-video-component-versus-scene-video-component}
 
-AEM을 사용하는 경우, 사이트에서 사용할 수 있는 비디오 구성 요소와 Scene7 비디오 구성 요소 둘 다에 액세스할 수 있습니다. 이러한 구성 요소는 서로 바꿔서 사용할 수 없습니다.
+Experience Manager을 사용하는 경우 사이트에서 사용할 수 있는 비디오 구성 요소와 Scene7 비디오 구성 요소 둘 다에 액세스할 수 있습니다. 이러한 구성 요소는 서로 바꿔서 사용할 수 없습니다.
 
-Scene7 비디오 구성 요소는 Scene7 비디오에만 작동합니다. 기본 구성 요소는 AEM(ffmpeg 사용)에서 저장된 비디오와 Scene7 비디오에 작동합니다.
+Scene7 비디오 구성 요소는 Scene7 비디오에만 작동합니다. 기본 구성 요소는 Experience Manager(ffmpeg 사용) 및 Scene7 비디오에서 저장된 비디오에 작동합니다.
 
 다음 매트릭스에서는 어떤 구성 요소를 언제 사용해야 할지를 설명합니다.
 
@@ -122,13 +122,13 @@ Scene7 비디오 구성 요소는 Scene7 비디오에만 작동합니다. 기본
 
 >[!NOTE]
 >
->곧바로 사용할 수 있는 S7 비디오 구성 요소는 범용 비디오 프로필을 사용합니다. 그러나 Scene7에서 다음 중 하나를 수행하여 AEM에서 사용할 HTML5 기반 비디오 플레이어를 가져올 수 있습니다.곧바로 사용할 수 있는 HTML5 비디오 플레이어의 포함 코드를 복사하여 AEM 페이지에 넣습니다.
+>곧바로 사용할 수 있는 S7 비디오 구성 요소는 범용 비디오 프로필을 사용합니다. 그러나 Scene7에서 다음 중 하나를 수행하여 Experience Manager이 사용할 HTML5 기반 비디오 플레이어를 가져올 수 있습니다.곧바로 사용할 수 있는 HTML5 비디오 플레이어의 포함 코드를 복사하여 Experience Manager 페이지에 넣습니다.
 
 ## AEM 비디오 구성 요소 {#aem-video-component}
 
-Scene7 비디오를 볼 때는 Scene7 비디오 구성 요소를 사용하도록 권장되지만, 이 섹션에서는 완벽을 기하기 위해 AEM의 기본 비디오 구성 요소와 함께 Scene7 비디오를 사용하는 방법을 설명합니다.
+Scene7 비디오 구성 요소를 사용하는 것이 Scene7 비디오를 보는 데 권장되지만, 이 섹션에서는 완벽함을 위해 Experience Manager의 기본 비디오 구성 요소 와 함께 Scene7 비디오를 사용하는 방법에 대해 설명합니다.
 
-### AEM 비디오 및 Scene7 비디오 비교  {#aem-video-and-scene-video-comparison}
+### AEM 비디오 및 Scene7 비디오 비교 {#aem-video-and-scene-video-comparison}
 
 다음 표에서는 AEM 기본 비디오 구성 요소와 Scene7 비디오 구성 요소의 지원되는 기능을 개괄적으로 비교해서 설명합니다.
 
@@ -150,9 +150,9 @@ S7 클라우드 구성에서 선택한 S7 인코딩 사전 설정에 따라 다�
 >
 >새 비디오 프로필 및 해당 변경 사항을 게시하려면 활성화해야 합니다.
 
-1. AEM에서 **[!UICONTROL 도구] > [!UICONTROL 구성 콘솔]**&#x200B;을 탭합니다.
-1. **[!UICONTROL 구성 콘솔]**&#x200B;에서 탐색 트리의 **[!UICONTROL 도구 > DAM > 비디오 프로필]**&#x200B;로 이동합니다.
-1. 새 S7 비디오 프로필을 만듭니다. **[!UICONTROL 새로 만들기..]** 메뉴에서 **[!UICONTROL 페이지 만들기]**&#x200B;를 선택한 다음 Scene7 비디오 프로필 템플릿을 선택합니다. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 구성 콘솔]**&#x200B;을 탭합니다.
+1. **[!UICONTROL 구성 콘솔]**&#x200B;에서 **[!UICONTROL 도구]** > **[!UICONTROL DAM]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
+1. 새 S7 비디오 프로필을 만듭니다. **[!UICONTROL 새]**. 메뉴에서 **[!UICONTROL 페이지 만들기]**&#x200B;를 선택한 다음 Scene7 비디오 프로필 템플릿을 선택합니다. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
