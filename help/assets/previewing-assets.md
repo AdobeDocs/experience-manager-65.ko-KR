@@ -11,7 +11,7 @@ docset: aem65
 feature: 자산 관리
 role: Business Practitioner, Administrator
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 1%
@@ -38,7 +38,7 @@ ht-degree: 1%
 **소프트웨어 인터페이스를 사용하여 자산을 미리 보려면**
 
 1. **[!UICONTROL Adobe Experience Manager]**&#x200B;의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산]**&#x200B;을 탭한 다음, **[!UICONTROL 파일]**&#x200B;을 탭하여 자산에 액세스합니다.
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 보기]** 드롭다운 목록에서 **[!UICONTROL 목록 보기를 탭합니다.]**
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 보기]** 드롭다운 목록에서 **[!UICONTROL 목록 보기]**&#x200B;를 탭합니다.
 1. (선택 사항) **[!UICONTROL 유형]** 열을 사용하여 미리 보려는 유형별로 자산을 정렬합니다.
 1. **[!UICONTROL 제목]** 열에서 미리 보려는 자산의 제목 이름(축소판 이미지 아님)을 클릭합니다.
 1. 클릭한 자산 유형에 따라 다음 중 하나를 수행합니다.
