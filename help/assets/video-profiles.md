@@ -11,9 +11,9 @@ docset: aem65
 feature: 비디오 프로필
 role: Business Practitioner, Administrator
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3704'
 ht-degree: 3%
 
 ---
@@ -158,11 +158,11 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 **적응형 스트리밍을 위한 비디오 프로필을 만들려면**,
 
-1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필로 이동합니다.]**
+1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭하거나 탭하여 새 비디오 프로필을 추가합니다.
 
 1. 프로필의 이름과 설명을 입력합니다.
-1. 비디오 인코딩 사전 설정 만들기/편집 페이지에서 **[!UICONTROL 비디오 인코딩 사전 설정 추가를 누릅니다.]**
+1. 비디오 인코딩 사전 설정 만들기/편집 페이지에서 **[!UICONTROL 비디오 인코딩 사전 설정 추가]**&#x200B;를 누릅니다.
 1. **[!UICONTROL 기본]** 탭에서 비디오 및 오디오 옵션을 설정합니다.
 각 옵션 옆에 있는 정보 아이콘을 탭하여 선택한 비디오 형식 코덱에 따른 추가적인 설명 또는 권장 설정을 제공합니다.
 1. 비디오 크기 제목 아래에서 **[!UICONTROL 비율 유지]**&#x200B;가 선택되어 있는지 확인합니다.
@@ -170,7 +170,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 1. 다음 중 하나를 수행하십시오.
 
-   * **[!UICONTROL Width]** 필드에 **[!UICONTROL auto를 입력합니다.]** 높이  **** 필드에 값을 픽셀 단위로 입력합니다.
+   * **[!UICONTROL Width]** 필드에 **[!UICONTROL auto]**&#x200B;을 입력합니다. **[!UICONTROL 높이]** 필드에 값을 픽셀 단위로 입력합니다.
 
    * 비디오 크기를 시각화하는 데 도움이 되도록 **[!UICONTROL 높이]** 오른쪽에 있는 정보 아이콘(i)을 탭하여 크기 계산기 페이지를 엽니다. **[!UICONTROL 크기 계산기]**&#x200B;를 사용하여 원하는 비디오 차원(파란색 상자로 표시됨)을 설정합니다. 완료되면 오른쪽 위 모서리에서 **[!UICONTROL X]**&#x200B;을 탭합니다.
 
@@ -211,17 +211,17 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 **점진적 스트리밍을 위한 비디오 프로필을 만들려면:**
 
-1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필로 이동합니다.]**
+1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 눌러 새 비디오 프로필을 추가합니다.
 1. 프로필의 이름과 설명을 입력합니다.
-1. 비디오 인코딩 사전 설정 만들기/편집 페이지에서 **[!UICONTROL 비디오 인코딩 사전 설정 추가를 누릅니다.]**
+1. 비디오 인코딩 사전 설정 만들기/편집 페이지에서 **[!UICONTROL 비디오 인코딩 사전 설정 추가]**&#x200B;를 누릅니다.
 1. **[!UICONTROL 기본]** 탭에서 비디오 및 오디오 옵션을 설정합니다.
 각 옵션 옆에 있는 정보 아이콘을 탭하여 선택한 비디오 형식 코덱에 따른 추가적인 설명 또는 권장 설정을 제공합니다.
-1. (선택 사항) 비디오 크기 제목 아래에서 **[!UICONTROL 종횡비 유지를 선택 취소합니다.]**
+1. (선택 사항) 비디오 크기 제목 아래에서 **[!UICONTROL 종횡비 유지]**&#x200B;를 선택 취소합니다.
 1. 다음을 수행합니다.
-   * **[!UICONTROL Width]** 필드에 **[!UICONTROL auto.]**&#x200B;를 입력합니다.
+   * **[!UICONTROL Width]** 필드에 **[!UICONTROL auto]**&#x200B;을 입력합니다.
    * **[!UICONTROL 높이]** 필드에 값을 픽셀 단위로 입력합니다.
-비디오 크기를 시각화하는 데 도움이 되도록 높이 정보 아이콘을 탭하여 **[!UICONTROL 크기 계산기]** 페이지를 엽니다. **[!UICONTROL 크기 계산기]** 페이지를 사용하여 원하는 비디오 차원(파란색 상자)을 추가로 설정합니다. 완료되면 대화 상자의 오른쪽 상단 모서리에서 **[!UICONTROL X.]**&#x200B;를 누릅니다
+비디오 크기를 시각화하는 데 도움이 되도록 높이 정보 아이콘을 탭하여 **[!UICONTROL 크기 계산기]** 페이지를 엽니다. **[!UICONTROL 크기 계산기]** 페이지를 사용하여 원하는 비디오 차원(파란색 상자)을 추가로 설정합니다. 이 작업이 끝나면 대화 상자의 오른쪽 상단 모서리에서 **[!UICONTROL X]**&#x200B;을(를) 누릅니다.
 1. (선택 사항) 다음 중 하나를 수행합니다.
 
    * **[!UICONTROL 고급]** 탭을 탭하고 **[!UICONTROL 기본값 사용]** 확인란이 선택되어 있는지 확인합니다(권장).
@@ -256,7 +256,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 **사용자가 추가한 비디오 인코딩 매개 변수를 사용하려면 다음을 수행하십시오**.
 
-1. AEM 로고를 탭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite으로 이동합니다.]**
+1. AEM 로고를 탭한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
 1. CRXDE Lite 페이지의 왼쪽에 있는 탐색기 패널에서 다음 위치로 이동합니다.
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -308,11 +308,11 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. 페이지의 오른쪽 아래 모서리 근처에 있는 **[!UICONTROL 추가.]**
+1. 페이지의 오른쪽 아래 모서리 근처에 있는 **[!UICONTROL 추가]**&#x200B;를 탭합니다.
 1. 다음 중 하나를 수행하십시오.
 
    * 3~4단계를 반복하여 비디오 인코딩 프로필에 다른 매개 변수를 추가합니다.
-   * 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장.]**
+   * 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
 
 1. CRXDE Lite 페이지의 왼쪽 위 모서리에서 **[!UICONTROL 뒤로 홈]** 아이콘을 탭하여 AEM으로 돌아갑니다.
 
@@ -328,9 +328,9 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 **비디오 프로필을 편집하려면 다음을 수행하십시오**.
 
-1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필로 이동합니다.]**
+1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. 비디오 프로필 페이지에서 비디오 프로필 이름 하나를 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 편집.]**
+1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 누릅니다.
 1. 비디오 인코딩 프로필 페이지에서 원하는 이름과 설명을 편집합니다.
 1. 적응형 스트리밍에 대해 **[!UICONTROL 인코딩]** 확인란이 선택되어 있는지 확인하는 것이 좋습니다.
 적응형 스트리밍에 대한 설명을 보려면 정보 아이콘을 누릅니다. (점진적 비디오 프로필을 편집하는 경우 이 확인란을 선택하지 마십시오.)
@@ -338,13 +338,13 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
    선택한 비디오 형식 코덱에 따른 추가적인 설명 또는 권장 설정을 보려면 **[!UICONTROL 기본]** 및 **[!UICONTROL 고급]** 탭의 각 옵션 옆에 있는 정보 아이콘을 탭하십시오.
 
-1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장.]**
+1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
 ### 비디오 프로필 복사 {#copying-a-video-encoding-profile}
 
-1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필로 이동합니다.]**
+1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. 비디오 프로필 페이지에서 비디오 프로필 이름 하나를 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 복사.]**
+1. 도구 모음에서 **[!UICONTROL 복사]**&#x200B;를 누릅니다.
 1. 비디오 인코딩 프로필 페이지에서 프로필의 새 이름을 입력합니다.
 1. 적응형 스트리밍에 대해 **[!UICONTROL 인코딩]** 확인란이 선택되어 있는지 확인하는 것이 좋습니다. 적응형 스트리밍에 대한 설명을 보려면 정보 아이콘을 누릅니다. (점진적 비디오 프로필을 복사하는 경우 확인란을 선택하지 마십시오.)
 
@@ -353,14 +353,14 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
    권장 설정 및 설명을 보려면 기본 및 고급 탭의 각 옵션 옆에 있는 정보 아이콘을 누릅니다.
 
-1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장.]**
+1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
 ### 비디오 프로필 삭제 {#deleting-a-video-encoding-profile}
 
-1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필로 이동합니다.]**
+1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. 비디오 프로필 페이지에서 하나 이상의 비디오 프로필 이름을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 삭제]**&#x200B;를 누릅니다.
-1. **[!UICONTROL 확인]**
+1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
 ## 폴더에 비디오 프로필 적용 {#applying-a-video-profile-to-folders}
 
@@ -378,7 +378,7 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 ### 특정 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-specific-folders}
 
-**[!UICONTROL 도구]** 메뉴 내에서 또는 폴더에 있는 경우 **[!UICONTROL 속성에서 폴더에 비디오 프로필을 적용할 수 있습니다.]** 이 섹션에서는 두 가지 방법으로 폴더에 비디오 프로필을 적용하는 방법을 설명합니다.
+**[!UICONTROL 도구]** 메뉴 내에서 또는 폴더에 있는 경우 **[!UICONTROL 속성]**&#x200B;에서 폴더에 비디오 프로필을 적용할 수 있습니다. 이 섹션에서는 두 가지 방법으로 폴더에 비디오 프로필을 적용하는 방법을 설명합니다.
 
 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
@@ -386,16 +386,16 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 #### 프로필 사용자 인터페이스 {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}을 통해 폴더에 비디오 프로필 적용
 
-1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필로 이동합니다.]**
+1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에 적용할 비디오 프로필을 선택합니다.
-1. **[!UICONTROL 폴더에 프로필 적용]**&#x200B;을 탭하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 적용 을 탭합니다.]** 프로필이 이미 할당된 폴더는  **[!UICONTROL 카드 보기에서 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.]**
-비디오  [프로필 처리 작업의 진행 상태를 모니터링할 수 있습니다](#monitoring-the-progress-of-an-encoding-job).
+1. **[!UICONTROL 폴더에 프로필 적용]**&#x200B;을 탭하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 탭합니다. 프로필이 이미 할당된 폴더는 **[!UICONTROL 카드 보기]**에 있는 동안 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+[비디오 프로필 처리 작업의 진행 상황을 모니터링할 수 있습니다](#monitoring-the-progress-of-an-encoding-job).
 
 #### 속성 {#applying-video-profiles-to-folders-from-properties}의 폴더에 비디오 프로필 적용
 
 1. AEM 로고를 탭하거나 클릭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 비디오 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
-1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기 를 클릭합니다.]** 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 비디오  [프로필 처리 작업의 진행 상태를 모니터링할 수 있습니다](#monitoring-the-progress-of-an-encoding-job).
@@ -406,9 +406,9 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 처리 중인 프로필을 편집한 후 폴더에서 자산 재처리](processing-profiles.md#reprocessing-assets)도 참조하십시오.[
 
-**비디오 프로필을 전체적으로** 적용하려면
+**비디오 프로필을 전체적으로 적용하려면:**
 
-* 다음 노드로 CRXDE Lite으로 이동합니다.`/content/dam/jcr:content` `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 속성을 추가하고 **[!UICONTROL 모두 저장.]**
+* 다음 노드로 CRXDE Lite으로 이동합니다.`/content/dam/jcr:content` `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * [비디오 프로필 처리 작업의 진행 상황을 모니터링할 수 있습니다](#monitoring-the-progress-of-an-encoding-job).
@@ -423,18 +423,18 @@ Dynamic Media에는 이미 최고의 보기 환경에 최적화된 MP4 H.264-용
 
 폴더에서 비디오 프로필을 제거하면 모든 하위 폴더는 해당 상위 폴더에서 프로필 제거를 자동으로 상속합니다. 그러나 폴더 내에서 발생한 파일의 모든 처리가 그대로 유지됩니다.
 
-**[!UICONTROL 도구]** 메뉴 내에서 또는 폴더에 있는 경우 **[!UICONTROL 폴더 설정에서 비디오 프로필을 제거할 수 있습니다.]** 이 섹션에서는 두 가지 방법으로 폴더에서 비디오 프로필을 제거하는 방법을 설명합니다.
+**[!UICONTROL 도구]** 메뉴 내에서 또는 폴더에 있는 경우 **[!UICONTROL 폴더 설정]**&#x200B;에서 비디오 프로필을 제거할 수 있습니다. 이 섹션에서는 두 가지 방법으로 폴더에서 비디오 프로필을 제거하는 방법을 설명합니다.
 
 ### 프로필 사용자 인터페이스 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface} 를 통해 폴더에서 비디오 프로필 제거
 
-1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필로 이동합니다.]**
+1. AEM 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에서 제거할 비디오 프로필을 선택합니다.
-1. **[!UICONTROL 폴더에서 프로필 제거]**&#x200B;를 탭하고 프로필을 제거하는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 제거.]**&#x200B;를 탭합니다.
+1. **[!UICONTROL 폴더에서 프로필 제거]**&#x200B;를 탭하고 프로필을 제거하는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 제거]**&#x200B;를 탭합니다.
 
    이름이 더 이상 폴더 이름 아래에 표시되지 않으므로 비디오 프로필이 더 이상 폴더에 적용되지 않았는지 확인할 수 있습니다.
 
 ### {#removing-video-profiles-from-folders-by-way-of-properties} 속성을 사용하여 폴더에서 비디오 프로필 제거
 
 1. AEM 로고를 탭하거나 클릭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 비디오 프로필을 제거할 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 탭하거나 클릭하여 선택한 다음, **[!UICONTROL 속성.]**
-1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]**&#x200B;을 선택하고 **[!UICONTROL 저장 및 닫기 를 클릭합니다.]** 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]**&#x200B;을 선택하고 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
