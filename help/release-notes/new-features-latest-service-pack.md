@@ -4,10 +4,10 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 9의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: f0398d63aa7d9c994c56217cce52b3fb4de04769
+source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
 workflow-type: tm+mt
-source-wordcount: '3292'
-ht-degree: 46%
+source-wordcount: '3727'
+ht-degree: 41%
 
 ---
 
@@ -18,6 +18,13 @@ ht-degree: 46%
 [!DNL Adobe Experience Manager] 6.5 서비스 팩은 분기별로 새로운 기능, 고객이 요청한 개선 사항, 성능, 안정성 및 보안 개선 사항을 제공합니다. 분기별 출시되어 새로운 기능과 혁신적인 기능에 쉽게 액세스하고 그러한 기능을 채택할 수 있습니다.
 
 이 문서에서는 최신 서비스 팩에 포함된 기능, 이전 6.5 서비스 팩에 포함된 [주요 기능](#key-features-previous-service-packs) 및 마지막 서비스 팩](#key-releases-since-last-sp) 릴리스 이후 [주요 릴리스를 소개합니다.
+
+>[!NOTE]
+>
+>AEM 서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되는 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
+>[!DNL Azul Zulu] JDK에 대한 지원은 [!DNL Experience Manager] 고객에게도 Adobe이 제공합니다.
+>[Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 [!DNL Azul Zulu JDKs] 관련 버전을 다운로드할 수 있습니다.
+>Adobe에 의해 배포되는 Oracle Java 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en)를 참조하십시오.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -78,6 +85,36 @@ ht-degree: 46%
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] 추가 기능 패키지는 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 후 1주일 후에 사용할 수 있습니다.
+
+### [!DNL Azul Zulu OpenJDK] {#support-azul-zulu} 지원
+
+이제 OSGi 배포에서 [!DNL Experience Manager Forms]용 [!DNL Azul Zulu] 빌드가 있는 애플리케이션을 개발 및 운영할 수 있습니다. [!DNL OpenJDK] 자세한 내용은 [Experience Manager 6.5 서비스 팩 9 릴리스 노트](sp-release-notes.md) 및 [기술 요구 사항](../sites-deploying/technical-requirements.md)을 참조하십시오.
+
+### [!UICONTROL 작업 할당] {#group-notification-email}을 사용하여 그룹에 알림 이메일을 보낼 수 있습니다.
+
+이제 작업 할당 워크플로우 단계를 사용하여 그룹 이메일 주소로 알림 이메일을 보낼 수 있습니다.
+
+### 소스 대화형 통신 {#retrieve-draft-after-source-modifications} 수정 후 대화형 통신 초안을 검색하는 기능
+
+이제 소스 대화형 커뮤니케이션을 변경한 후 초안으로 저장된 대화형 커뮤니케이션을 검색할 수 있습니다.
+
+### reCAPTCHA 서비스 {#set-custom-domain-name-recaptcha} 로드, 렌더링 및 유효성 검사를 위한 사용자 지정 도메인 이름을 설정합니다.
+
+reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 사용합니다. 이제 설정을 수정하여 `https://www.google.com/` 또는 reCAPTCHA 서비스를 로드, 렌더링 및 확인할 수 있는 사용자 지정 도메인 이름을 설정할 수 있습니다.
+
+### [!UICONTROL 양식 데이터 모델 서비스 호출] 워크플로우 단계 {#input-data-enhancements-fdm}에 대한 입력 데이터 개선 사항
+
+[!UICONTROL 양식 데이터 모델 서비스 호출] 워크플로우 단계에서 양식 데이터 모델과 서비스를 선택하는 경우 입력 데이터에 대한 서비스 인수를 지정합니다.
+
+이제 [!UICONTROL 페이로드에 상대] 옵션을 선택하여 파일을 서비스 인수로 첨부하면 실제 파일 이름 대신 파일을 포함하는 폴더 경로를 지정할 수 있습니다. 첨부 파일 이름 대신 폴더 이름을 정의하면 워크플로우 모델을 다시 사용할 수 있습니다. 워크플로우 모델을 단일 파일 첨부 이름으로 제한하지 않습니다.
+
+### 레코드 문서 템플릿 {#use-multiple-master-pages-dor-template}에서 여러 마스터 페이지를 사용할 수 있습니다.
+
+이제 레코드 문서 템플릿에서 여러 마스터 페이지를 사용할 수 있습니다. 따라서 이제 제목 페이지와 템플릿의 다른 페이지에 머리글, 바닥글, 글꼴, 로고 정보가 다를 수 있습니다.
+
+### 레코드 문서 {#support-page-breaks-dor}에서 지원 페이지가 중단됩니다.
+
+이제 페이지 나누기를 레코드 문서에 추가할 수 있습니다. 따라서 페이지 내에서 패널이 중단되는 경우 페이지 나누기를 추가하여 Document of Record의 새 페이지로 패널을 이동할 수 있습니다.
 
 ## 이전 [!DNL Experience Manager] 6.5 서비스 팩의 주요 기능 {#key-features-previous-service-packs}
 
