@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: 구성,하이브리드 모드
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 2%
@@ -141,11 +141,11 @@ Dynamic Media의 고객인 경우, 하이브리드 게재를 모든 Dynamic Medi
 
 ## Dynamic Media {#enabling-dynamic-media} 활성화
 
-[Dynamic Media는 기본적으로 비활성화됩니다. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Dynamic Media 기능을 활용하려면 `dynamicmedia` 실행 모드(예: `publish` 실행 모드)를 사용하여 Dynamic Media을 활성화해야 합니다. 활성화하기 전에 [기술 요구 사항을 검토하십시오.](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)
+[Dynamic Media는 기본적으로 비활성화됩니다. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Dynamic Media 기능을 활용하려면 `dynamicmedia` 실행 모드(예: `publish` 실행 모드)를 사용하여 Dynamic Media을 활성화해야 합니다. 활성화하기 전에 [기술 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)을 검토하십시오.
 
 >[!NOTE]
 >
->실행 모드를 통해 Dynamic Media을 활성화하면 `dynamicMediaEnabled` 플래그를 **[!UICONTROL true로 설정하여 Dynamic Media을 활성화한 Experience Manager 6.1 및 Experience Manager 6.0의 기능이 대체합니다.]** 이 플래그는 Experience Manager 6.2 이상에서 기능이 없습니다. 또한 Dynamic Media을 활성화하기 위해 빠른 시작을 다시 시작할 필요가 없습니다.
+>실행 모드를 통해 Dynamic Media을 활성화하면 `dynamicMediaEnabled` 플래그를 **[!UICONTROL true]**&#x200B;로 설정하여 Dynamic Media을 활성화한 Experience Manager 6.1 및 Experience Manager 6.0의 기능이 대체합니다. 이 플래그는 Experience Manager 6.2 이상에서 기능이 없습니다. 또한 Dynamic Media을 활성화하기 위해 빠른 시작을 다시 시작할 필요가 없습니다.
 
 Dynamic Media을 활성화하면 UI에서 Dynamic Media 기능을 사용할 수 있으며, 업로드된 모든 이미지 자산은 동적 이미지 표현물을 빠르게 전달하는 데 사용되는 *cqdam.pyramid.tiff* 표현물을 수신합니다. 이러한 PTIFF는 다음과 같은 중요한 이점을 제공합니다.
 
@@ -268,12 +268,12 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제할 수 있도록
 **인증을 설정하려면**
 
 1. 아직 파일 및 암호가 없는 경우 Adobe 고객 지원 센터에서 KeyStore 파일 및 암호를 문의하십시오. 이 정보는 프로비저닝의 필수 부분입니다. 그것은 당신의 계정에 열쇠를 연결합니다.
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구 > 보안 > 사용자.]**
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**&#x200B;를 탭합니다.
 1. 사용자 관리 페이지에서 **[!UICONTROL dynamic-media-replication]** 사용자로 이동한 다음 탭하여 엽니다.
 
    ![dm-replication](assets/dm-replication.png)
 
-1. Dynamic-media-replication에 대한 사용자 설정 편집 페이지에서 **[!UICONTROL 키 저장소]** 탭을 탭한 다음 **[!UICONTROL 키 저장소 만들기를 클릭합니다.]**
+1. Dynamic-media-replication에 대한 사용자 설정 편집 페이지에서 **[!UICONTROL 키 저장소]** 탭을 탭한 다음 **[!UICONTROL 키 저장소 만들기]**&#x200B;를 클릭합니다.
 
    ![dm-replication-keystore](assets/dm-replication-keystore.png)
 
@@ -287,7 +287,7 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제할 수 있도록
 1. **[!UICONTROL Edit User Settings For dynamic-media-replication]** 페이지에서 **Add Private Key from KeyStore file** 영역을 확장하고 다음을 추가합니다(다음 이미지 참조).
 
    * **[!UICONTROL 새 별칭]** 필드에 나중에 복제 구성에서 사용할 별칭의 이름을 입력합니다. 예를 들어 `replication` 을 별칭으로 사용할 수 있습니다.
-   * **[!UICONTROL KeyStore 파일을 누릅니다.]** Adobe이 제공한 KeyStore 파일로 이동하여 선택한 다음  **[!UICONTROL 열기 를 누릅니다.]**
+   * **[!UICONTROL KeyStore 파일]**&#x200B;을 누릅니다. Adobe이 제공한 KeyStore 파일로 이동하여 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 누릅니다.
    * **[!UICONTROL KeyStore 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 이 암호는 **5단계에서 만든 KeyStore 암호가 아닌**&#x200B;이지만 KeyStore 파일 암호 Adobe은 프로비저닝 중에 사용자에게 보낸 환영 전자 메일에 제공합니다. KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 개인 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 동일한 개인 키 암호일 수 있음). Adobe은 프로비전 중에 사용자에게 보낸 시작 전자 메일에 있는 개인 키 암호를 제공합니다. 개인 키 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 개인 키 별칭]** 필드에 개인 키 별칭을 입력합니다. 예, `*companyname*-alias`. Adobe은 프로비전 중에 사용자에게 전송된 시작 전자 메일에 개인 키 별칭을 제공합니다. 개인 키 별칭을 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
@@ -296,32 +296,32 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제할 수 있도록
 
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 이 사용자에게 변경 사항을 저장합니다.
 
-   다음으로 [복제 에이전트를 구성해야 합니다.](#configuring-the-replication-agent)
+   다음으로 [복제 에이전트를 구성해야 합니다](#configuring-the-replication-agent).
 
 ### 복제 에이전트 구성 {#configuring-the-replication-agent}
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, 작성자의 **[!UICONTROL 도구 > 배포 > 복제 > 에이전트 를 탭합니다.]**
-1. 작성자의 에이전트 페이지에서 **[!UICONTROL Dynamic Media Hybrid 이미지 복제(s7delivery)를 누릅니다.]**
-1. **[!UICONTROL 편집을 누릅니다.]**
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트 를 탭합니다.
+1. 작성자 페이지의 에이전트 페이지에서 **[!UICONTROL Dynamic Media 하이브리드 이미지 복제(s7delivery)]**&#x200B;를 탭합니다.
+1. **[!UICONTROL 편집]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 설정]** 탭을 탭한 다음, 다음을 입력합니다.
 
    * **[!UICONTROL 활성화됨]**  - 복제 에이전트를 활성화하려면 이 확인란을 선택합니다.
    * **[!UICONTROL 지역]**  - 해당 지역으로 설정합니다.북미, 유럽 또는 아시아
    * **[!UICONTROL 테넌트 ID]**  - 이 값은 복제 서비스에 게시되는 회사/테넌트의 이름입니다. 이 값은 Adobe이 프로비전 중에 사용자에게 보낸 환영 이메일에서 제공하는 테넌트 ID입니다. 이 정보를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
-   * **[!UICONTROL 키 저장소 별칭]**  - 이 값은 인증 설정에서 키를 생성할 때 ** 새 별칭** 값  [세트와 동일합니다](#setting-up-authentication).예,  `replication`. ([인증 설정](#setting-up-authentication)의 7단계를 참조하십시오.)
-   * **[!UICONTROL 키 저장소 암호]**  - 키 저장소 만들기를 탭했을 때 만든  **[!UICONTROL 키 저장소 암호입니다.]** Adobe이 이 암호를 제공하지 않습니다. [인증 설정](#setting-up-authentication)의 5단계를 참조하십시오.
+   * **[!UICONTROL 키 저장소 별칭]**  - 이 값은 인증 설정 **에서 키를 생성할 때 설정된 새** 별칭 값과 동일합니다 [ ](#setting-up-authentication).예,  `replication`. ([인증 설정](#setting-up-authentication)의 7단계를 참조하십시오.)
+   * **[!UICONTROL 키 저장소 암호]**  - 키 저장소 만들기를 탭했을 때 만든  **[!UICONTROL 키 저장소 암호입니다]**. Adobe이 이 암호를 제공하지 않습니다. [인증 설정](#setting-up-authentication)의 5단계를 참조하십시오.
 
    다음 이미지는 샘플 데이터가 있는 복제 에이전트를 보여줍니다.
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
-1. **[!UICONTROL 확인]**
+1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
 ### Dynamic Media용 복제 에이전트 확인 {#validating-the-replication-agent-for-dynamic-media}
 
 Dynamic Media용 복제 에이전트의 유효성을 검사하려면 다음을 수행하십시오.
 
-**[!UICONTROL 연결 테스트를 누릅니다.]** 출력의 예는 다음과 같습니다.
+**[!UICONTROL 연결 테스트]**&#x200B;를 누릅니다. 출력의 예는 다음과 같습니다.
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -456,7 +456,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 **솔루션:**
 
-1. Experience Manager에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite을 클릭합니다.]**
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;를 클릭합니다.
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -467,7 +467,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
    `enableOauth=true`
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장.]**
+1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
 
 ### 구성 테스트 {#testing-your-configuration}
 
@@ -478,12 +478,12 @@ Adobe은 구성에 대한 엔드 투 엔드 테스트를 수행할 것을 권장
 * 이미지 사전 설정이 추가되었습니다.
 * Cloud Services 아래에 **[!UICONTROL Dynamic Media 구성(6.3 이전)]**&#x200B;을 구성합니다. 이 테스트에는 이미지 서비스 URL이 필요합니다
 
-**구성을 테스트하려면**
+**구성을 테스트하려면:**
 
-1. 이미지 자산을 업로드합니다. (Assets에서 **[!UICONTROL 만들기 > 파일]**&#x200B;을 탭하고 파일을 선택합니다.)
+1. 이미지 자산을 업로드합니다. (Assets에서 **[!UICONTROL 만들기]** > **[!UICONTROL 파일]**&#x200B;을 탭하고 파일을 선택합니다.)
 1. 워크플로우가 완료될 때까지 기다립니다.
-1. 이미지 자산을 게시합니다. (자산을 선택하고 **[!UICONTROL 빠른 게시.]**)를 누릅니다.
-1. 이미지를 열고 **[!UICONTROL 표현물 을 탭하여 해당 이미지에 대한 표현물로 이동합니다.]**
+1. 이미지 자산을 게시합니다. (자산을 선택하고 **[!UICONTROL 빠른 게시]**&#x200B;를 누릅니다.)
+1. 이미지를 열고 **[!UICONTROL 표현물]**&#x200B;을 탭하여 해당 이미지에 대한 표현물로 이동합니다.
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
@@ -504,7 +504,7 @@ Dynamic Media Cloud Services을 설정하기 전에 게시 인스턴스를 설�
 
 Dynamic Media Cloud Services을 구성하려면:
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > Cloud Services > Dynamic Media 구성(Pre-6.3).]**
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media 구성(6.3 이전)]**&#x200B;을 누릅니다.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**&#x200B;을 선택한 다음 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 1. **[!UICONTROL Dynamic Media 구성 만들기]** 대화 상자의 제목 필드에 제목을 입력합니다.
 1. 비디오에 대한 Dynamic Media을 구성하는 경우,
@@ -530,7 +530,7 @@ Dynamic Media Hybrid를 사용하여 여러 Experience Manager 설치에서 비�
 
 ### 첫 번째 작성자 노드 {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node} 구성 후 Video Analytics 사전 설정 패키지 생성
 
-이 작업을 완료하면 Video Analytics 사전 설정이 포함된 패키지 파일이 있습니다. 이러한 사전 설정에는 보고서 세트, 추적 서버, 추적 네임스페이스 및 Marketing Cloud 조직 ID가 포함되어 있습니다(사용 가능한 경우).
+이 작업을 완료하면 Video Analytics 사전 설정이 포함된 패키지 파일이 있습니다. 이러한 사전 설정에는 보고서 세트, 추적 서버, 추적 네임스페이스 및 Experience Cloud 조직 ID가 포함되어 있습니다(사용 가능한 경우).
 
 1. 아직 구성하지 않은 경우 Dynamic Media 구성(6.3 이전)을 구성합니다.
 1. (선택 사항) 보고서 세트 ID를 보고 복사합니다. JCR에 액세스할 수 있어야 합니다. 보고서 세트 ID는 필요하지 않지만 유효성 검사를 쉽게 합니다.
@@ -708,16 +708,16 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
 비디오 전용에 Dynamic Media을 사용하는 경우 다음 단계에 따라 복제에 대한 자산 필터를 설정합니다.
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > 배포 > 복제 > 작성자의 에이전트]**&#x200B;를 누릅니다.
-1. 작성자의 에이전트 페이지에서 **[!UICONTROL 기본 에이전트(게시)를 누릅니다.]**
-1. **[!UICONTROL 편집을 누릅니다.]**
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트를 탭합니다.
+1. 작성자 페이지의 에이전트 페이지에서 **[!UICONTROL 기본 에이전트(게시)]**&#x200B;를 누릅니다.
+1. **[!UICONTROL 편집]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 에이전트 설정]** 대화 상자의 **[!UICONTROL 설정]** 탭에서 **[!UICONTROL 활성화됨]**&#x200B;을 선택하여 에이전트를 켜십시오.
-1. **[!UICONTROL 확인]**
-1. Experience Manager에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite을 누릅니다.]**
+1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;을 누릅니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` 로 이동합니다.
-1. **[!UICONTROL filter-video]**&#x200B;를 찾은 다음 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 복사.]**
+1. **[!UICONTROL filter-video]**&#x200B;를 찾은 다음 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/publish` 로 이동합니다.
-1. **[!UICONTROL jcr:content]**&#x200B;을 찾아 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 붙여넣기.]**
+1. **[!UICONTROL jcr:content]**&#x200B;을 찾아 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 붙여넣기]**&#x200B;를 선택합니다.
 
 이러한 단계는 비디오 자체가 Dynamic Media Cloud Service에 의해 전달되는 동안 비디오 포스터 이미지와 재생에 필요한 비디오 메타데이터를 전달하도록 Experience Manager 게시 인스턴스를 설정합니다. 이 필터는 원본 비디오와 정적 축소판 그림 표현물 복제에서 제외하며 게시 인스턴스에는 필요하지 않습니다.
 
@@ -725,25 +725,25 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
 비프로덕션 배포에서 이미징에 Dynamic Media을 사용하는 경우 다음 단계에 따라 복제에 대한 자산 필터를 설정합니다.
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > 배포 > 복제 > 작성자의 에이전트]**&#x200B;를 누릅니다.
-1. 작성자의 에이전트 페이지에서 **[!UICONTROL 기본 에이전트(게시)를 누릅니다.]**
-1. **[!UICONTROL 편집을 누릅니다.]**
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트를 탭합니다.
+1. 작성자 페이지의 에이전트 페이지에서 **[!UICONTROL 기본 에이전트(게시)]**&#x200B;를 누릅니다.
+1. **[!UICONTROL 편집]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 에이전트 설정]** 대화 상자의 **[!UICONTROL 설정]** 탭에서 **[!UICONTROL 활성화됨]**&#x200B;을 선택하여 에이전트를 켜십시오.
-1. **[!UICONTROL 확인]**
-1. Experience Manager에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite을 누릅니다.]**
+1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;을 누릅니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` 로 이동합니다.
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
-1. **[!UICONTROL filter-images]**&#x200B;를 찾은 다음 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 복사.]**
+1. **[!UICONTROL filter-images]**&#x200B;를 찾은 다음 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/publish` 로 이동합니다.
-1. **[!UICONTROL jcr:content]**&#x200B;을 찾아 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 만들기 > 노드 만들기를 선택합니다.]** 유형 `damRenditionFilters` 의 이름을  `nt:unstructured`입력합니다.
-1. `damRenditionFilters`을 찾아 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 붙여넣기.]**
+1. **[!UICONTROL jcr:content]**&#x200B;을 찾아 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 만들기]** > **[!UICONTROL 노드 만들기]**&#x200B;를 선택합니다. `nt:unstructured` 유형의 이름 `damRenditionFilters`을 입력합니다.
+1. `damRenditionFilters`을 찾아 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 붙여넣기]**&#x200B;를 선택합니다.
 
 이러한 단계는 비프로덕션 환경에 이미지를 전달하도록 Experience Manager 게시 인스턴스를 설정합니다. 이 필터는 원본 이미지와 정적 표현물 복제에서 제외되며, 게시 인스턴스에는 필요하지 않습니다.
 
 >[!NOTE]
-작성자에 다양한 필터가 있는 경우 각 에이전트에는 다른 사용자가 할당되어야 합니다. granite 코드에서는 사용자당 하나의 필터 모델을 적용합니다. 각 필터를 설정할 때마다 항상 다른 사용자가 있어야 합니다.
+작성자에 다양한 필터가 있는 경우 각 에이전트에는 다른 사용자가 할당되어야 합니다. granite 코드에서는 사용자당 하나의 필터 모델을 적용합니다. 각 필터 설정에 대해 항상 다른 사용자가 있어야 합니다.
 서버에서 두 개 이상의 필터를 사용하고 있습니까? 예를 들어 게시할 복제용 필터 1개와 s7delivery용 두 번째 필터가 있습니다. 그럴 경우 이러한 두 필터에 **userId**&#x200B;가 **jcr:content** 노드에서 할당되어 있는지 확인해야 합니다. 다음 이미지를 참조하십시오.
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
@@ -752,14 +752,14 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
 복제에 대한 자산 필터를 선택적으로 사용자 지정하려면 다음을 수행합니다.
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > 일반 > CRXDE Lite을 누릅니다.]**
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;를 누릅니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` 로 이동하여 필터를 검토합니다.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
 1. 필터에 대한 MIME 유형을 정의하려면 다음과 같이 MIME 유형을 찾을 수 있습니다.
 
-   왼쪽 레일에서 `content > dam > <locate_your_asset> >  jcr:content > metadata` 를 확장한 다음 테이블에서 **[!UICONTROL dc:format.]**
+   왼쪽 레일에서 `content > dam > <locate_your_asset> >  jcr:content > metadata` 를 확장한 다음 테이블에서 **[!UICONTROL dc:format]**&#x200B;을 찾습니다.
 
    다음 그래픽은 dc:format 자산의 경로의 예입니다.
 
@@ -813,11 +813,11 @@ Dynamic Media 이미지 서버 구성에 Adobe CQ Scene7 ImageServer 번들과 A
 >[!NOTE]
 Dynamic Media은 [이 활성화되면 즉시 사용할 수 있습니다](#enabling-dynamic-media). 그러나 특정 사양 또는 요구 사항을 충족하도록 Dynamic Media Image Server를 구성하여 설치를 세밀하게 조정할 수도 있습니다.
 
-**전제 조건**: ** Dynamic Media 이미지 서버를 구성하기 전에 Windows® VM에 Microsoft® Visual C++ 라이브러리 설치가 포함되어 있는지 확인하십시오. 라이브러리는 Dynamic Media 이미지 서버를 실행하는 데 필요합니다. [여기에서 Microsoft® Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드할 수 있습니다](https://www.microsoft.com/en-us/download/details.aspx?id=14632).
+**전제 조건**: ** Dynamic Media 이미지 서버를 구성하기 전에 Windows® VM에 Microsoft® Visual C++ 라이브러리 설치가 포함되어 있는지 확인하십시오. 라이브러리는 Dynamic Media 이미지 서버를 실행하는 데 필요합니다. [여기에서 Microsoft® Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드할 수 있습니다](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
 Dynamic Media 이미지 서버 설정을 구성하려면:
 
-1. Experience Manager의 왼쪽 위 모서리에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구 > 작업 > 웹 콘솔을 탭합니다.]**
+1. Experience Manager의 왼쪽 위 모서리에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 탭합니다.
 1. Adobe Experience Manager 웹 콘솔 구성 페이지에서 **[!UICONTROL OSGi > 구성]** 을 탭하여 현재 Experience Manager 내에서 실행 중인 모든 번들을 나열합니다.
 
    Dynamic Media 게재 서버는 목록의 다음 이름 아래에 있습니다.
@@ -825,7 +825,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
    * `Adobe CQ Scene7 ImageServer`
    * `Adobe CQ Scene7 PlatformServer`
 
-1. 번들 목록에서 Adobe CQ Scene7 ImageServer 오른쪽에 있는 편집 아이콘을 탭합니다.
+1. 번들 목록에서 Adobe CQ Scene7 ImageServer의 오른쪽에 있는 **[!UICONTROL 편집]** 아이콘을 탭합니다.
 1. Adobe CQ Scene7 ImageServer 대화 상자에서 다음 구성 값을 설정합니다.
 
    >[!NOTE]
@@ -861,7 +861,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
   <tr>
    <td>RandomAccessUrlTimeout</td>
    <td>20</td>
-   <td>시간 초과 값은 이미지 서버가 JCR이 범위 타일 요청에 응답할 때까지 대기하는 시간(초)입니다.</td>
+   <td>이미지 서버가 JCR이 범위 타일 요청에 응답할 때까지 대기하는 시간(초)에 대한 시간 초과 값입니다.</td>
   </tr>
   <tr>
    <td>WorkerThreads</td>
@@ -871,14 +871,14 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
  </tbody>
 </table>
 
-1. **[!UICONTROL 저장.]**
+1. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 1. 번들 목록에서 Adobe CQ Scene7 PlatformServer 오른쪽에 있는 **[!UICONTROL 편집]** 아이콘을 탭합니다.
 1. Adobe CQ Scene7 PlatformServer 대화 상자에서 다음 기본값 옵션을 설정합니다.
 
    >[!NOTE]
    Dynamic Media 이미지 서버는 자체 디스크 캐시를 사용하여 응답을 캐시합니다. Experience Manager HTTP 캐시 및 Dispatcher를 사용하여 Dynamic Media Image Server의 응답을 캐시할 수 없습니다.
 
-   | **속성** | **기본값** | **설명** |
+   | 속성 | 기본값 | 설명 |
    |---|---|---|
    | 캐시 사용 | 선택됨 | 응답 캐시가 사용되는지 여부 |
    | 캐시 루트 | 캐시 | 응답 캐시 폴더에 대한 하나 이상의 경로입니다. 상대 경로는 내부 s7imaging 번들 폴더에 대해 확인됩니다. |
@@ -966,7 +966,7 @@ Dynamic Media 색상 관리를 사용하여 미리 볼 자산의 색상을 올�
 
 색상 교정을 통해 수집된 자산은 생성된 피라미드 TIFF 표현물에 색상 공간(RGB, CMYK, 회색)과 포함된 색상 프로파일을 유지합니다. 동적 변환을 요청하면 이미지 색상이 대상 색상 공간으로 수정됩니다. JCR의 Dynamic Media 게시 설정에서 출력 색상 프로필을 구성합니다.
 
-Adobe 색상 관리는 ICC에서 정의한 형식인 ICC(International Color Consortium) 프로파일을 사용합니다.
+Adobe의 색상 관리는 ICC에서 정의한 형식인 ICC(International Color Consortium) 프로파일을 사용합니다.
 
 CMYK, RGB 또는 회색 출력을 사용하여 Dynamic Media 색상 관리를 구성하고 이미지 사전 설정을 구성할 수 있습니다. [이미지 사전 설정 구성](/help/assets/managing-image-presets.md)을 참조하십시오.
 
@@ -977,14 +977,14 @@ CMYK, RGB 또는 회색 출력을 사용하여 Dynamic Media 색상 관리를 �
 * `iccEmbed` -  [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-표준 Adobe 색상 프로필 세트는 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)의 [기능 팩 12445이 설치된 경우에만 사용할 수 있습니다. 모든 기능 팩과 서비스 팩은 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 사용할 수 있습니다. 기능 팩 12445에서는 Adobe 색상 프로필을 제공합니다.
+표준 Adobe 색상 프로필 세트는 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)의 [기능 팩 12445이 설치된 경우에만 사용할 수 있습니다. 모든 기능 팩과 서비스 팩은 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 사용할 수 있습니다. 기능 팩 12445에서는 Adobe의 색상 프로필을 제공합니다.
 
 
 ### 기능 팩 12445 {#installing-feature-pack} 설치
 
 Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치하십시오.
 
-**기능 팩 12445을 설치하려면**
+**기능 팩 12445을 설치하려면 다음을 수행하십시오.**
 
 1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)로 이동하여 `cq-6.3.0-featurepack-12445`를 다운로드합니다.
 
@@ -1006,7 +1006,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
 
    색상 수정 속성은 **색상 교정 속성** 표에 설명되어 있습니다. 색상 교정 속성에 할당할 수 있는 값은 **색상 프로필** 표에 있습니다.
 
-   예를 들어 **[!UICONTROL 이름]**&#x200B;에서 `iccprofilecmyk`를 추가하고 **[!UICONTROL 유형]** `String`을 선택하고 `WebCoated`을 **[!UICONTROL 값으로 추가합니다.]** 그런 다음  **** 추가 및  **[!UICONTROL 저장]** 을 탭하여 값을 저장합니다.
+   예를 들어 **[!UICONTROL 이름]**&#x200B;에서 `iccprofilecmyk`를 추가하고 **[!UICONTROL 유형]** `String`을 선택하고 `WebCoated`값을 **[!UICONTROL 값]**&#x200B;으로 추가합니다. 그런 다음 **[!UICONTROL 추가]**&#x200B;를 클릭한 다음 **[!UICONTROL 모두 저장]**&#x200B;을 탭하여 값을 저장합니다.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1254,9 +1254,9 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
  </tbody>
 </table>
 
-1. **[!UICONTROL 모두 저장.]**
+1. **[!UICONTROL 모두 저장]**&#x200B;을 누릅니다.
 
-예를 들어 **[!UICONTROL iccprofilergb]** 를 `sRGB`로 설정하고 **[!UICONTROL iccprofilecmyk]** 를 **[!UICONTROL WebCoated.]**&#x200B;로 설정할 수 있습니다.
+예를 들어 **[!UICONTROL iccprofilergb]**&#x200B;을 `sRGB`로 설정하고 **[!UICONTROL iccprofilecmyk]**&#x200B;를 **[!UICONTROL WebCoated]**&#x200B;로 설정할 수 있습니다.
 
 이렇게 하면 다음 작업이 수행됩니다.
 
