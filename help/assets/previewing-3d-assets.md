@@ -6,7 +6,7 @@ docset: aem65
 feature: 3D 자산
 role: Business Practitioner
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 666bc5d943af371726708cb2ef157a9b3f07eb8e
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 11%
@@ -55,7 +55,7 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
 
 1. 3D 자산을 Experience Manager에 업로드했는지 확인합니다.
 [3D 미리 보기](#supported-3d-previewing-assets) 및 [자산 업로드](/help/assets/manage-assets.md#uploading-assets)에 대해 지원되는 형식을 참조하십시오.
-1. Experience Manager의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 > 파일.]**
+1. Experience Manager의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 > 파일]**&#x200B;을 탭합니다.
 
    ![탐색 페이지](/help/assets/assets-dm/navigation-assets.png)
 
@@ -79,4 +79,4 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
    | **재설정** | 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 탭하여 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정을 수행하면 카메라가 더 가깝거나 더 멀게 이동되어 자산이 전체적으로 적절한 보기 크기로 표시됩니다. |  |  |
    | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 탭합니다. |  |  |
 
-1. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 닫기.]**
+1. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL Close]**&#x200B;를 누릅니다.
