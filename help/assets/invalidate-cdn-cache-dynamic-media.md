@@ -8,7 +8,7 @@ content-type: reference
 role: Business Practitioner, Administrator
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 feature: CDN 캐시
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching
 
 *2부 1:CDN 무효화 템플릿 만들기*
 
-1. Experience Manager 6.5.6 이상에서 **[!UICONTROL 도구 > Assets > CDN 무효화.]**&#x200B;를 누릅니다.
+1. Experience Manager 6.5.6 이상에서 **[!UICONTROL 도구 > 자산 > CDN 무효화]**&#x200B;를 누릅니다.
 
    ![CDN 유효성 검사 기능](/help/assets/assets-dm/cdn-invalidation-template2.png)
 
@@ -46,12 +46,12 @@ Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching
 
    ![CDN 무효화 템플릿 - 만들기](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. **[!UICONTROL CDN 무효화 템플릿]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 탭한 다음 **[!UICONTROL 확인]**<br>을 탭합니다.
+1. **[!UICONTROL CDN 무효화 템플릿]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장]**&#x200B;을 탭한 다음 **[!UICONTROL 확인]**.<br>
 
    *2부:CDN 무효화 옵션 설정*
    <br>
 
-1. Cloud Service으로 Experience Manager에서 **[!UICONTROL 도구 > 자산 > CDN 무효화.]**&#x200B;를 누릅니다.
+1. Cloud Service으로 Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL CDN 무효화]**&#x200B;를 누릅니다.
 
    ![CDN 유효성 검사 기능](/help/assets/assets-dm/cdn-invalidation-path2.png)
 
@@ -71,7 +71,7 @@ Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching
    | **[!UICONTROL 자산 추가]** | 무효화할 자산을 선택하려면 자산 선택기를 사용합니다. 게시된 자산 또는 게시 취소된 자산을 선택할 수 있습니다.<br>CDN에서 캐싱은 자산 기반이 아닌 URL 기반입니다. 따라서 웹 사이트에 있는 전체 URL을 알고 있어야 합니다. 그러한 URL을 결정한 후 템플릿에 추가할 수 있습니다. 그런 다음 해당 자산을 선택하고 추가하고 한 단계에서 URL을 무효화할 수 있습니다. <br>CDN에서  **[!UICONTROL 자산 관련 이미지 사전 설정을 무효화하거나]**, 템플릿 기반 **[!UICONTROL 의 무효화]** 또는 둘 다에 이 옵션을 사용합니다. |
    | **[!UICONTROL URL 추가]** | 무효화하려는 CDN 캐시가 있는 Dynamic Media 자산에 전체 URL 경로를 수동으로 추가 또는 붙여 넣습니다. ***2의 1부에서 CDN 무효화 템플릿을 만들지 않은 경우 이 옵션을 사용합니다.CDN 무효화 템플릿*** 만들기에 사용할 자산이 몇 개만 있습니다.<br>**중요:**  추가하는 각 URL은 자체 줄에 있어야 합니다.<br>한 번에 최대 1000개의 URL을 무효화할 수 있습니다. **[!UICONTROL URL 추가]** 텍스트 필드의 URL 수가 1000개를 초과하는 경우 **[!UICONTROL 다음]**&#x200B;을(를) 탭할 수 없습니다. 이러한 경우 선택한 자산의 오른쪽에 있는 **[!UICONTROL X]**&#x200B;을 탭하거나 수동으로 추가한 URL을 탭하여 무효화 목록에서 삭제해야 합니다.<br>CDN 무효화 템플릿 또는 이 URL 텍스트 추가 필드에서 이미지 스마트 자르기의  **[!UICONTROL URL]** 을 지정합니다. |
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 다음.]**
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 다음]**&#x200B;을 탭합니다.
 1. **[!UICONTROL CDN 무효화 - Confirm]** 페이지의 **[!UICONTROL URL]** 목록 상자에서, 이전에 만든 CDN 무효화 템플릿과 방금 추가한 자산에서 생성된 하나 이상의 URL 목록을 볼 수 있습니다.
 
    예를 들어, 이전 단계에 표시된 CDN 무효화 템플릿 예제를 사용하여 `spinset` 라는 단일 자산을 추가했다고 가정합니다. **[!UICONTROL 도구 > Assets > CDN 무효화]**&#x200B;를 탭하면 **[!UICONTROL CDN 무효화 - Confirm]** 사용자 인터페이스에 다음 5개의 생성된 URL이 표시됩니다.
@@ -91,7 +91,7 @@ Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching
 | *선택한 자산의 URL을 검색하지 못했습니다.* | 다음 시나리오 중 하나가 충족되는 경우 발생합니다.<br> - Dynamic Media 구성을 찾을 수 없습니다.<br>- Dynamic Media 구성을 읽을 서비스 사용자를 검색하는 동안 예외가 있습니다.<br>- URL을 구성하는 데 사용되는 게시 서버 또는 회사 루트가 Dynamic Media 구성에 없습니다. |
 | *일부 URL이 올바르게 정의되지 않았습니다. 수정 및 다시 제출합니다.* | IPS CDN 캐시 무효화 API가 다른 회사를 참조하는 오류를 반환하는 경우 발생합니다. 또는 IPS `cdnCacheInvalidation` API에서 수행한 유효성 검사에 따라 URL이 유효하지 않은 경우 |
 | *CDN 캐시를 무효화하지 못했습니다.* | CDN 캐시 무효화 요청이 다른 이유로 실패할 경우 발생합니다. |
-| *무효화할 URL을 입력하지 않았습니다.* | **[!UICONTROL CDN 무효화 - Confirm]** 페이지에 URL이 없는 경우 **[!UICONTROL Submit.]**&#x200B;을 탭합니다. |
+| *무효화할 URL을 입력하지 않았습니다.* | **[!UICONTROL CDN 무효화 - Confirm]** 페이지에 URL이 없고 **[!UICONTROL Submit]**&#x200B;을 탭한 경우 발생합니다. |
 
 
 <!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
