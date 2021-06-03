@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: 자산 관리,표현물
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: d407162e18f85f4fee0596581f004f8cf4c99458
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 1%
@@ -207,7 +207,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
       **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;을 클릭합니다.
 
-      **[!UICONTROL 게시된 서버 이름.]** 필드를 찾습니다.
+      **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다.
    1. Adobe을 통해 CDN을 사용하고 있으며 직접 관계로 관리하지 않는지 확인합니다.
    1. `images.company.com` 또는 `mycompany.scene7.com` 등의 전용 도메인을 사용하고 있고 `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com` 등의 일반 도메인이 아닌지 확인합니다.
 
