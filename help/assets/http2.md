@@ -10,9 +10,9 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: Business Practitioner, Administrator
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: 게시,구성
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '732'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ HTTP/2는 브라우저 및 서버의 통신 방식을 개선하여 정보를 더
 
 다음 웹 사이트에서는 HTTP/2 및 그 이점에 대해 간단하고 간단하게 설명합니다.
 
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+[HTTP/2에 대해 알고 있어야 하는 사항](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
 ## 컨텐츠 전달을 위해 HTTP/2로 이동하여 얻을 수 있는 주요 이점은 무엇입니까?{#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -62,7 +62,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 HTTP/2로 전환하는 요청을 시작합니다.자동으로 수행되지 않습니다.
 
-1. HTTP/2로 전환하려면 고객 지원 Adobe 요청을 시작합니다. [AEM 지원 포털에 액세스](https://helpx.adobe.com/kr/experience-manager/kb/accessing-aem-support-portal.html)를 참조하십시오.
+1. HTTP/2로 전환하려면 고객 지원 Adobe 요청을 시작합니다. [Adobe Experience Manager 지원 포털에 액세스](https://helpx.adobe.com/kr/experience-manager/kb/accessing-aem-support-portal.html)를 참조하십시오.
 
    1. 지원 요청에서 다음 정보를 제공합니다.
 
