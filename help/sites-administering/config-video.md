@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 1%
@@ -81,7 +81,7 @@ HTML5 요소를 사용하려면 비디오 프로필을 정의합니다. 여기�
    >
    >수정해야 하는 속성뿐만 아니라 전체 프로필 노드를 오버레이하고 편집합니다. 이러한 리소스는 SlingResourceMerger를 통해 해결되지 않습니다.
 
-4. 속성 중 하나를 변경한 경우 **[!UICONTROL 모두 저장을 클릭하십시오.]**
+4. 속성 중 하나를 변경한 경우 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
 >[!NOTE]
 >
