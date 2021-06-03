@@ -10,7 +10,7 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: 구성
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 1%
@@ -75,7 +75,7 @@ URL 문자열을 가져오는 방법은 여러 가지가 있습니다. 그러나
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * 스핀 세트, 이미지 세트, 회전 메뉴 세트 또는 비디오를 선택한 경우, 드롭다운 메뉴에서 **[!UICONTROL 뷰어.]**
+   * 스핀 세트, 이미지 세트, 회전 메뉴 세트 또는 비디오를 선택한 경우, 드롭다운 메뉴에서 **[!UICONTROL Viewers]**&#x200B;를 누릅니다.
 
       왼쪽 레일에서 뷰어 사전 설정 이름을 탭합니다. 세트 또는 비디오의 미리 보기가 별도의 페이지에서 열립니다.
 
@@ -85,7 +85,7 @@ URL 문자열을 가져오는 방법은 여러 가지가 있습니다. 그러나
 
 1. 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
 
-   URL 창을 종료하려면 **[!UICONTROL X]**&#x200B;을 탭하거나 **[!UICONTROL 닫기.]**
+   URL 창을 종료하려면 **[!UICONTROL X]**&#x200B;을 탭하거나 **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
 
 ## 정적 자산 {#obtaining-a-url-for-a-static-asset} URL 가져오기
 
@@ -123,7 +123,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
 ## 게시된 비디오 표현물에 대한 비디오 URL 가져오기 {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. AEM에서 **[!UICONTROL 도구 > 배포 > 클라우드 > Cloud Services으로 이동합니다.]**
+1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
 1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 머리글로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 탭합니다.
 1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성 이름을 탭합니다.
 
@@ -139,7 +139,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
    예를 들어 등록 ID가 `87654321|MyCompany`인 경우 고객 이름은 `MyCompany`입니다.
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL Cloud Services]**&#x200B;을 탭한 다음 Experience Manager 로고를 탭하고 **[!UICONTROL 일반 > CRXDE Lite으로 이동합니다.]**
+1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL Cloud Services]**&#x200B;을 탭한 다음 Experience Manager 로고를 탭하고 **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
 1. JCR(Java Content Repository)에서 전체 비디오 변환 경로를 복사합니다.
 
    예를 들어 비디오의 변환 경로는 다음과 유사할 수 있습니다.
@@ -160,7 +160,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
 ## 응용 스트리밍을 위한 비디오 URL(HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls} 가져오기
 
-1. AEM에서 **[!UICONTROL 도구 > 배포 > 클라우드 > Cloud Services으로 이동합니다.]**
+1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
 1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 머리글로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 탭합니다.
 1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성 이름을 탭합니다.
 1. **[!UICONTROL Dynamic Media Cloud Services 설정]** 페이지에서 다음을 수행합니다.
