@@ -11,7 +11,7 @@ docset: aem65
 feature: 360 VR 비디오
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 **360 비디오 뷰어에서 사용할 자산을 업로드하려면:**
 
 1. 360 비디오 자산 전용 폴더를 만들었습니다.
-1. [응용 비디오 프로필을 폴더에 적용합니다.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
+1. [폴더에 응용 비디오 프로필을 적용합니다](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    360개의 비디오 컨텐츠를 렌더링하면 표준 비360 비디오 컨텐츠보다 소스 비디오 해상도와 인코딩된 변환 해상도에 대한 요구 사항이 더 높습니다.
 
@@ -99,8 +99,9 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 
 360 비디오가 마음에 들면 게시할 수 있습니다.
 
-웹 페이지에 비디오 또는 이미지 뷰어 포함 을 참조하십시오.[](/help/assets/embed-code.md)
-웹  [애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
+웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
+[
+[URL을 웹 애플리케이션에 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
 [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 **360 비디오를 미리 보려면:**
@@ -111,7 +112,7 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 
    비디오를 미리 볼 수 있도록 360 비디오 자산을 탭합니다.
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 미리 보기 페이지에서 드롭다운 목록을 탭한 다음 **[!UICONTROL Viewers를 선택합니다.]**
+1. 페이지의 왼쪽 위 모서리 근처에 있는 미리 보기 페이지에서 드롭다운 목록을 탭한 다음 **[!UICONTROL Viewers]**&#x200B;를 선택합니다.
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
@@ -122,13 +123,13 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 
    ![6_5_360video-preview-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360 비디오 스크린샷입니다.*
 
-   * 뷰어 목록에서 **[!UICONTROL Video360VR.]**
+   * 뷰어 목록에서 **[!UICONTROL Video360VR]**&#x200B;을 누릅니다.
 
       VR(Virtual Reality) 비디오는 가상 현실 헤드셋을 사용하여 액세스하는 몰입형 비디오 콘텐츠입니다. 일반 비디오와 마찬가지로 360도 비디오 카메라를 사용하여 비디오를 녹화하거나 캡처할 때 VR 비디오를 만들 수 있습니다.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *360 VR 비디오 스크린샷입니다.*
 
-1. 미리 보기 페이지의 오른쪽 상단에서 **[!UICONTROL 닫기.]**
+1. 미리 보기 페이지의 오른쪽 위에 있는 **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
 
 ## 360 비디오 게시 {#publishing-video}
 
