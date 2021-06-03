@@ -9,7 +9,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: 게시
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 4%
@@ -32,9 +32,9 @@ Dynamic Media 인스턴스의 모든 폴더에 전역 설정을 적용하는 **[
 
 나중에 폴더에서 **[!UICONTROL 선택적 게시]** 설정을 변경하기로 결정하는 경우 이러한 변경 사항은 해당 시점부터 해당 폴더로 업로드하는 새 자산에만 영향을 줍니다. 폴더에 있는 기존 자산의 게시 상태는 **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 게시 관리]** 대화 상자에서 수동으로 변경할 때까지 그대로 유지됩니다.
 
-폴더 수준 **[!UICONTROL Dynamic Media 게시 모드]** 옵션은 항상 **[!UICONTROL Dynamic Media 구성의**[!UICONTROL &#x200B;자산 게시&#x200B;]**설정에 있는 값으로 기본 설정됩니다.]** 그러나 이 항목의 다음 단계에서는 폴더 수준에서 이 기본값을 수동으로 변경하여  **[!UICONTROL Dynamic Media 구성 값을 재정의하는 방법을]** 보여줍니다.
+폴더 수준 **[!UICONTROL Dynamic Media 게시 모드]** 옵션은 항상 **[!UICONTROL Dynamic Media 구성]**&#x200B;의 **[!UICONTROL 자산 게시]** 설정에 있는 값으로 기본 설정됩니다. 그러나 이 항목의 다음 단계에서는 폴더 수준에서 이 기본값을 수동으로 변경하여 **[!UICONTROL Dynamic Media 구성]** 값을 재정의하는 방법을 보여 줍니다.
 
-**[!UICONTROL Dynamic Media 구성]**&#x200B;에 설정된 **[!UICONTROL Publish Assets]** 값 또는 폴더 수준 속성에 설정된 **[!UICONTROL Dynamic Media 게시 모드]** 값을 사용하는지에 관계없이 여전히 **[!UICONTROL 즉시]**, **[!UICONTROL 활성화 시]** 또는 **[!UICONTROL 선택적 게시를 선택할 수 있습니다.]** 예를 들어  **[!UICONTROL Dynamic Media 구성]** 에서 자산  **[!UICONTROL 게시]**  값을 활성화 시 **[!UICONTROL 로 설정할 수 있지만 폴더 수준에서]** Dynamic Media  **[!UICONTROL 게시 모드 값을]** 선택적 게시 ****&#x200B;로 설정하거나 그 반대로 설정할 수 있습니다.
+**[!UICONTROL Dynamic Media 구성]**&#x200B;에 설정된 **[!UICONTROL Publish Assets]** 값 또는 폴더 수준 속성에 설정된 **[!UICONTROL Dynamic Media 게시 모드]** 값을 사용하는지에 관계없이 여전히 **[!UICONTROL 즉시]**, **[!UICONTROL 활성화 시]** 또는 **[!UICONTROL 선택적 게시]**&#x200B;를 선택할 수 있습니다. 예를 들어 **[!UICONTROL Dynamic Media 구성]**&#x200B;의 **[!UICONTROL 자산 게시]** 값을 **[!UICONTROL 활성화 시]**&#x200B;로 설정할 수 있지만, 폴더 수준의 **[!UICONTROL Dynamic Media 게시]** 모드 값을 **[!UICONTROL 선택적 게시]** 등으로 설정할 수 있습니다.
 
 폴더에서 선택적 게시를 구성한 후 다음 중 하나를 수행할 수 있습니다.
 
@@ -45,22 +45,22 @@ Dynamic Media 인스턴스의 모든 폴더에 전역 설정을 적용하는 **[
 
 **Dynamic Media의 폴더 수준에서 선택적 게시를 구성하려면**
 
-1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL 자산 > 파일.]**
+1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL 자산 > 파일]**&#x200B;을 탭합니다.
 1. 다음 중 하나를 수행하십시오.
-   * 기존 폴더의 속성 편집 - **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기]**&#x200B;에서 속성을 편집할 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성을 누릅니다.]**
-   * 새 폴더의 속성을 편집합니다. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기]**&#x200B;에서 **[!UICONTROL 만들기 > 폴더를 탭합니다.]** 폴더  **[!UICONTROL 만들기]** 대화 상자에서 폴더에 대한 제목(필수)을 입력한 다음  **[!UICONTROL 만들기 를 탭합니다.]** 폴더를 선택한 다음 도구 모음에서 속성 을  **[!UICONTROL 누릅니다.]**
+   * 기존 폴더의 속성 편집 - **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기]**&#x200B;에서 속성을 편집할 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
+   * 새 폴더의 속성을 편집합니다. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기]**&#x200B;에서 **[!UICONTROL 만들기]** > **[!UICONTROL 폴더]**&#x200B;를 탭합니다. **[!UICONTROL 폴더 만들기]** 대화 상자에서 폴더에 대한 제목(필수)을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 탭합니다. 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
 
 1. **[!UICONTROL 동기화 모드]** 드롭다운 목록에서 다음 중 하나를 선택합니다.
 
    | 동기화 모드 | 설명 |
    | --- | --- |
-   | **[!UICONTROL 상속됨]** | 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 또는 **[!UICONTROL Dynamic Media 구성에 설정된 기본 모드 중 하나에서 동기화 값을 상속합니다.]** 피상속에 대한 세부  **** 상태는 공구 팁을 통해 표시됩니다. |
-   | **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 dynamicmedia에 동기화]** | Dynamic Media에 게시하려면 자산을 Dynamic Media에 동기화해야 합니다. 이 옵션을 선택하면 Dynamic Media과 동기화할 이 하위 트리의 모든 자산이 포함됩니다. 폴더별 설정은 **[!UICONTROL Dynamic Media 구성에서 기본 설정을 덮어씁니다.]** |
+   | **[!UICONTROL 상속됨]** | 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 중 하나 또는 **[!UICONTROL Dynamic Media 구성]**&#x200B;에 설정된 기본 모드 중 하나에서 동기화 값을 상속합니다. **[!UICONTROL 상속됨]**&#x200B;에 대한 자세한 상태는 도구 설명을 통해 표시됩니다. |
+   | **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 dynamicmedia에 동기화]** | Dynamic Media에 게시하려면 자산을 Dynamic Media에 동기화해야 합니다. 이 옵션을 선택하면 Dynamic Media과 동기화할 이 하위 트리의 모든 자산이 포함됩니다. 폴더별 설정은 **[!UICONTROL Dynamic Media 구성]**&#x200B;의 기본 설정을 덮어씁니다. |
    | **[!UICONTROL Dynamic Media 동기화에서 이 폴더 하위 트리의 모든 항목 제외]** | 이 하위 트리의 모든 자산이 Dynamic Media과 동기화되지 않도록 제외합니다. |
 
    ![폴더 수준 선택적 게시](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
-1. **[!UICONTROL Dynamic Media 게시 모드]** 드롭다운 목록에서 옵션을 선택합니다. **[!UICONTROL Dynamic Media 게시 모드]** 옵션은 항상 **[!UICONTROL Dynamic Media 구성에 설정된 값으로 기본 설정됩니다.]** 그러나 다음 옵션 중 하나를 사용하여 이 기본  **[!UICONTROL Dynamic Media]** 구성 값을 수동으로 재정의할 수 있습니다.
+1. **[!UICONTROL Dynamic Media 게시 모드]** 드롭다운 목록에서 옵션을 선택합니다. **[!UICONTROL Dynamic Media 게시 모드]** 옵션은 항상 **[!UICONTROL Dynamic Media 구성]**&#x200B;에 설정된 값으로 기본 설정됩니다. 그러나 다음 옵션 중 하나를 사용하여 이 기본값 **[!UICONTROL Dynamic Media 구성]** 값을 수동으로 무시할 수 있습니다.
 
    >[!IMPORTANT]
    >
@@ -90,10 +90,10 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
 
 **게시 관리를 사용하여 Dynamic Media 또는 AEM에 자산을 선택적으로 게시하려면**
 
-1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL 자산 > 파일.]**
+1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL Assets]** > **[!UICONTROL 파일]**&#x200B;을 탭합니다.
 1. **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기에서 다음 중 하나를 수행합니다.]**
-   * 자산을 게시하려는 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 게시 관리 를 누릅니다.]**  특정 폴더의 게시 상태를  **[!UICONTROL 보다]** 쉽게 확인할 수 있도록 목록 보기를 사용하는 것이 도움이 될 수 있습니다.
-   * 자산을 게시하려는 폴더로 이동합니다. 폴더를 열고 하나 이상의 자산을 선택합니다. 도구 모음에서 **[!UICONTROL 게시 관리 를 누릅니다.]** 특정 자산의  **[!UICONTROL 게시 상태를]** 보다 쉽게 확인할 수 있도록 목록 보기를 사용하는 것이 도움이 될 수 있습니다.
+   * 자산을 게시하려는 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 누릅니다.  특정 폴더의 게시 상태를 보다 쉽게 확인할 수 있도록 **[!UICONTROL 목록 보기]**&#x200B;를 사용하는 것이 도움이 될 수 있습니다.
+   * 자산을 게시하려는 폴더로 이동합니다. 폴더를 열고 하나 이상의 자산을 선택합니다. 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 누릅니다. 특정 자산의 게시 상태를 보다 쉽게 확인할 수 있도록 **[!UICONTROL 목록 보기]**&#x200B;를 사용하는 것이 도움이 될 수 있습니다.
 
       >[!NOTE]
       >
@@ -113,19 +113,19 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
    | **[!UICONTROL 지금]** | 을(를) 선택하여 자산을 즉시 게시합니다. |
    | **[!UICONTROL 나중에]** | 을(를) 선택하여 특정 날짜 및 시간에 자산을 게시합니다. |
 
-1. **[!UICONTROL 게시 관리]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음.]**
+1. **[!UICONTROL 게시 관리]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]**&#x200B;을 탭합니다.
 1. **[!UICONTROL 게시 관리 - 범위]** 페이지에서 다음 중 하나를 수행합니다.
 
    * 필요한 경우 게시에서 제거할 자산을 한 개 이상 선택합니다.
-   * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시]** 또는 **[!UICONTROL Dynamic Media에 게시.]**
-1. **[!UICONTROL 확인]**
+   * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시]** 또는 **[!UICONTROL Dynamic Media에 게시]**&#x200B;를 탭합니다.
+1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
 ### 게시 관리 {#selective-unpublish-manage-publication}를 사용하여 Dynamic Media 또는 AEM에서 자산을 선택적으로 게시 취소합니다
 
-1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL 자산 > 파일.]**
+1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL Assets]** > **[!UICONTROL 파일]**&#x200B;을 탭합니다.
 1. **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기에서 다음 중 하나를 수행합니다.]**
-   * 자산을 게시 취소하려는 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 게시 관리 를 누릅니다.]**  특정 폴더의 게시 상태를  **[!UICONTROL 보다]** 쉽게 확인할 수 있도록 목록 보기를 사용하는 것이 도움이 될 수 있습니다.
-   * 자산을 게시 취소하려는 폴더로 이동합니다. 폴더를 열고 하나 이상의 자산을 선택합니다. 도구 모음에서 **[!UICONTROL 게시 관리 를 누릅니다.]** 특정 자산의  **[!UICONTROL 게시 상태를]** 보다 쉽게 확인할 수 있도록 목록 보기를 사용하는 것이 도움이 될 수 있습니다.
+   * 자산을 게시 취소하려는 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 누릅니다.  특정 폴더의 게시 상태를 보다 쉽게 확인할 수 있도록 **[!UICONTROL 목록 보기]**&#x200B;를 사용하는 것이 도움이 될 수 있습니다.
+   * 자산을 게시 취소하려는 폴더로 이동합니다. 폴더를 열고 하나 이상의 자산을 선택합니다. 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 누릅니다. 특정 자산의 게시 상태를 보다 쉽게 확인할 수 있도록 **[!UICONTROL 목록 보기]**&#x200B;를 사용하는 것이 도움이 될 수 있습니다.
 
       >[!NOTE]
       >
@@ -145,11 +145,11 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
    | **[!UICONTROL 지금]** | 자산을 즉시 게시 취소하려면 을(를) 선택합니다. |
    | **[!UICONTROL 나중에]** | 특정 날짜 및 시간에 대한 자산 게시를 취소하려면 을(를) 선택합니다. |
 
-1. **[!UICONTROL 게시 관리]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음.]**
+1. **[!UICONTROL 게시 관리]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]**&#x200B;을 탭합니다.
 1. **[!UICONTROL 게시 관리 - 범위]** 페이지에서 다음 중 하나를 수행합니다.
    * 게시 취소에서 제거할 자산을 한 개 이상 선택합니다.
-   * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시 취소]** 또는 **[!UICONTROL Dynamic Media에서 게시 취소.]**
-1. **[!UICONTROL 확인]**
+   * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시 취소]** 또는 **[!UICONTROL Dynamic Media에서 게시 취소]**&#x200B;를 탭합니다.
+1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
 ## 빠른 게시 {#quick-publish-aem-dm}를 사용하여 Dynamic Media 또는 AEM에 자산 게시
 
@@ -161,10 +161,10 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
 
 **빠른 게시를 사용하여 Dynamic Media 또는 AEM에 자산을 게시하려면**
 
-1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 페이지 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, 페이지 오른쪽에서 **[!UICONTROL Assets > Files.]**
+1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 페이지 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, 페이지 오른쪽에서 **[!UICONTROL Assets]** > **[!UICONTROL 파일]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기에서 다음 중 하나를 수행합니다.]**
-   * 자산을 게시하려는 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 빠른 게시 를 누릅니다.]**  특정 폴더의 게시 상태를  **[!UICONTROL 보다]** 쉽게 확인할 수 있도록 목록 보기를 사용하는 것이 도움이 될 수 있습니다.
-   * 자산을 게시하려는 폴더로 이동합니다. 폴더를 열고 하나 이상의 자산을 선택합니다. 도구 모음에서 **[!UICONTROL 빠른 게시 를 누릅니다.]** 특정 자산의  **[!UICONTROL 게시 상태를]** 보다 쉽게 확인할 수 있도록 목록 보기를 사용하는 것이 도움이 될 수 있습니다.
+   * 자산을 게시하려는 폴더로 이동합니다. 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 누릅니다.  특정 폴더의 게시 상태를 보다 쉽게 확인할 수 있도록 **[!UICONTROL 목록 보기]**&#x200B;를 사용하는 것이 도움이 될 수 있습니다.
+   * 자산을 게시하려는 폴더로 이동합니다. 폴더를 열고 하나 이상의 자산을 선택합니다. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 누릅니다. 특정 자산의 게시 상태를 보다 쉽게 확인할 수 있도록 **[!UICONTROL 목록 보기]**&#x200B;를 사용하는 것이 도움이 될 수 있습니다.
 
       >[!NOTE]
       >
@@ -177,10 +177,10 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
    | 빠른 게시 옵션 | 기능 |
    | --- | --- | 
    | AEM에 게시 | 선택한 자산을 즉시 AEM에 게시합니다. |
-   | Brand Portal에 게시 | 선택한 자산을 즉시 **[!UICONTROL Brand Portal에 게시합니다.]**<br>이 옵션은 AEM Assets 인스턴스에 이미 Brand Portal이**[!UICONTROL &#x200B;구성된 경우에만 사용할 ]**수 있습니다. |
-   | Dynamic Media에 게시 | 선택한 자산을 즉시 Dynamic Media에 게시합니다.<br>자산이 이미 Dynamic Media에 동기화되어야 합니다. 필요한 경우 폴더 속성의 **[!UICONTROL 동기화 모드]**&#x200B;가 이미 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media로 동기화하도록 설정되어 있는지 확인하십시오.]** |
+   | Brand Portal에 게시 | 선택한 자산을 즉시 **[!UICONTROL Brand Portal]**&#x200B;에 게시합니다.<br>이 옵션은 AEM Assets 인스턴스에 이미 Brand Portal이  **[!UICONTROL 구성된 경우에만 사용할]** 수 있습니다. |
+   | Dynamic Media에 게시 | 선택한 자산을 즉시 Dynamic Media에 게시합니다.<br>자산이 이미 Dynamic Media에 동기화되어야 합니다. 필요한 경우 폴더 속성의 **[!UICONTROL 동기화 모드]**&#x200B;가 이미 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 dynamic media]**&#x200B;로 동기화하도록 설정되어 있는지 확인하십시오. |
 
-1. **[!UICONTROL 확인]**&#x200B;을 탭한 다음, **[!UICONTROL 닫기.]**
+1. **[!UICONTROL 확인]**&#x200B;을 탭한 다음, **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
 
 ## 검색 결과 {#selective-publish-unpublish-search-results} 을 통해 자산을 선택적으로 게시 또는 게시 취소합니다
 
@@ -190,9 +190,9 @@ AEM에서 자산 검색](/help/assets/search-assets.md)도 참조하십시오.[
 
 **검색 결과를 통해 자산을 선택적으로 게시 또는 게시 취소하려면 다음을 수행하십시오**
 
-1. AEM의 페이지 왼쪽 위 모서리에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 페이지 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL 자산 > 파일.]**
+1. AEM의 페이지 왼쪽 위 모서리에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 페이지 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL Assets]** > **[!UICONTROL 파일]**&#x200B;을 탭합니다.
 1. 페이지의 오른쪽 위 모서리 근처에 있는 도구 모음에서 검색 아이콘(확대경)을 탭합니다.
-1. **[!UICONTROL Type to search]** 텍스트 필드에 키워드를 입력한 다음 **[!UICONTROL Enter.]** 키를 누릅니다.
+1. **[!UICONTROL Type to search]** 텍스트 필드에 키워드를 입력한 다음 **[!UICONTROL Enter]** 키를 누릅니다.
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 목록 보기]** 아이콘을 탭합니다.
 1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 필터]** 아이콘을 탭합니다.
 
@@ -204,7 +204,7 @@ AEM에서 자산 검색](/help/assets/search-assets.md)도 참조하십시오.[
 1. 다음 중 하나를 수행하십시오.
    * 게시하거나 게시 취소하려는 자산을 한 개 이상 선택합니다.
    * **[!UICONTROL 검색 결과]** 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 선택]**&#x200B;을 탭합니다.
-1. 도구 모음에서 **[!UICONTROL 게시 관리 를 누릅니다.]** 게시 관리를 보려면 도구 모음에서 줄임표 아이콘을 탭해야 할 수  **[!UICONTROL 있습니다.]**
+1. 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 누릅니다. 도구 모음에서 줄임표 아이콘을 탭하여 **[!UICONTROL 게시 관리]**&#x200B;를 볼 수 있습니다.
 1. **[!UICONTROL 게시 관리 - 옵션]** 페이지에서 원하는 작업을 선택합니다.
 
    | 선택한 작업 | Dynamic Media 구성의 자산 게시 설정 | 자산은 다음과 같습니다 |
@@ -225,7 +225,7 @@ AEM에서 자산 검색](/help/assets/search-assets.md)도 참조하십시오.[
    | 지금 | 선택한 작업이 즉시 수행됩니다. |
    | 나중에 | 선택한 작업은 선택한 특정 날짜 및 시간에 실행됩니다. |
 
-1. **[!UICONTROL 게시 관리 - 옵션]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음.]**
+1. **[!UICONTROL 게시 관리 - 옵션]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]**&#x200B;을 탭합니다.
 1. (선택 사항) **[!UICONTROL 게시 관리 - 범위]** 페이지에서 선택한 자산에 대한 테이블의 **[!UICONTROL Target]** 열을 검토합니다.
 
    | Dynamic Media 구성의 자산 게시 설정 | 선택한 작업 | 게시 대상 |
@@ -242,7 +242,7 @@ AEM에서 자산 검색](/help/assets/search-assets.md)도 참조하십시오.[
 1. **[!UICONTROL 게시 관리 - 범위]** 페이지에서 다음 중 하나를 수행합니다.
    * 게시 또는 게시 취소에서 제거할 자산을 한 개 이상 선택합니다.
    * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시]** 또는 **[!UICONTROL 게시 취소]**&#x200B;를 탭하여 작업을 시작합니다.
-1. **[!UICONTROL 확인]**
+1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
 ## 자산 {#check-publish-status-of-asset} 의 게시 상태 확인
 
@@ -250,10 +250,10 @@ AEM에서 **[!UICONTROL 타임라인]**, **[!UICONTROL 카드 보기]**, **[!UIC
 
 **자산의 게시 상태를 확인하려면**
 
-1. AEM의 페이지 왼쪽 위 모서리에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 페이지 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL 자산 > 파일.]**
+1. AEM의 페이지 왼쪽 위 모서리에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 페이지 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL Assets]** > **[!UICONTROL 파일]**&#x200B;을 탭합니다.
 1. **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기]**(아래 스크린샷은 **[!UICONTROL 목록 보기]**)에서 게시했거나 게시 취소된 자산이 들어 있는 폴더를 엽니다.
 1. 확인 표시가 있는 자산이 나타나도록 자산을 선택합니다. 예를 들어 아래 스크린샷을 참조하십시오.
-1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 메뉴에서 **[!UICONTROL 타임라인 을 선택합니다.]** 왼쪽  **** 패널의 상태 영역에는 선택한 자산의 게시 상태가 표시됩니다.
+1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 메뉴에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다. 왼쪽 패널의 **[!UICONTROL 상태]** 영역에는 선택한 자산의 게시 상태가 표시됩니다.
 **[!UICONTROL 목록 보기]**&#x200B;를 사용하는 경우 **[!UICONTROL Dynamic Media]** 게시 상태에 대한 추가 열이 나타납니다.
    * Dynamic Media에 동기화하도록 구성된 폴더는 기본적으로 **[!UICONTROL Dynamic Media]** 열을 표시합니다.
    * Dynamic Media에 동기화하도록 구성되지 않은 *은(는) Dynamic Media 열이 표시되지 않습니다.*
