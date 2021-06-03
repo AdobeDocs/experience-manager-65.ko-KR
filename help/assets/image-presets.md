@@ -10,16 +10,16 @@ discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 feature: 이미지 사전 설정
 role: Business Practitioner, Administrator
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '328'
 ht-degree: 14%
 
 ---
 
 # Dynamic Media 이미지 사전 설정 적용 {#applying-image-presets}
 
-이미지 사전 설정을 사용하면 자산에서 서로 다른 크기, 다른 형식 또는 동적으로 생성된 다른 이미지 속성이 있는 이미지를 동적으로 전달할 수 있습니다. 이미지를 내보낼 때 사전 설정을 선택할 수 있으며, 이 경우 관리자가 지정한 사양에 맞게 이미지를 재포맷할 수도 있습니다.
+이미지 사전 설정을 사용하면 자산에서 서로 다른 크기, 다른 형식 또는 동적으로 생성된 다른 이미지 속성이 있는 이미지를 동적으로 전달할 수 있습니다. 이미지를 내보낼 때 사전 설정을 선택할 수 있습니다. 이 사전 설정은 관리자가 지정한 사양에 맞게 이미지를 다시 포맷합니다.
 
 또한 응답형(**[!UICONTROL RESS]** 버튼을 선택한 후 지정)인 이미지 사전 설정을 선택할 수 있습니다.
 
@@ -35,9 +35,9 @@ ht-degree: 14%
 >
 >Dynamic Media - Scene7 모드에서 이미지 사전 설정은 이미지 자산에 대해서만 지원됩니다.
 
-**Dynamic Media 이미지 사전 설정을 적용하려면**
+**Dynamic Media 이미지 사전 설정을 적용하려면:**
 
-1. 자산을 열고 왼쪽 레일에서 드롭다운 메뉴를 탭한 다음, **[!UICONTROL 표현물]** 을 누릅니다.
+1. 자산을 열고 왼쪽 레일에서 드롭다운 메뉴를 탭한 다음, **[!UICONTROL 표현물]**&#x200B;을 누릅니다.
 
    >[!NOTE]
    >
@@ -51,8 +51,8 @@ ht-degree: 14%
 
 1. 다음 중 하나를 수행합니다.
 
-   * 이미지 사전 설정을 미리 볼 동적 변환을 선택합니다.
-   * **[!UICONTROL URL]**, **[!UICONTROL Embed]** 또는 **[!UICONTROL RESS]**&#x200B;를 탭하여 팝업을 표시합니다.
+   * 이미지 사전 설정을 미리 볼 수 있도록 다이내믹 렌디션을 선택합니다.
+   * 팝업을 표시하려면 **[!UICONTROL URL]**, **[!UICONTROL Embed]** 또는 **[!UICONTROL RESS]**&#x200B;를 누릅니다.
 
    >[!NOTE]
    >
