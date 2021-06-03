@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: 구성,하이브리드 모드
-source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
+source-git-commit: c4221ede672c131aa0864438bc9fd16c73ddf10c
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 2%
@@ -259,16 +259,18 @@ Dynamic Media 이미지 전달은 Experience Manager 작성자에서 비디오 �
 PTIFF 만들기의 기본 메모리 제한은 모든 워크플로우에서 3GB입니다. 예를 들어 다른 워크플로가 일시 중지된 동안 3GB 메모리가 필요한 이미지 하나를 처리하거나 각각 300MB의 메모리가 필요한 10개의 이미지를 동시에 처리할 수 있습니다.
 메모리 제한은 구성 가능하고 시스템 리소스 가용성과 처리 중인 이미지 컨텐츠 유형에 해당합니다. 많은 자산이 있고 시스템에 충분한 메모리가 있는 경우 이 제한을 늘려 이미지가 동시에 처리되도록 할 수 있습니다.
 최대 메모리 제한을 초과하는 이미지가 거부됩니다.
-PTIFF 만들기에 대한 메모리 제한을 변경하려면 **[!UICONTROL 도구 > 작업 > 웹 콘솔 > Adobe CQ Scene7 PTiffManager]**&#x200B;로 이동하여 **[!UICONTROL maxMemory]** 값을 변경하십시오.
+PTIFF 만들기에 대한 메모리 제한을 변경하려면 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]**&#x200B;로 이동하여 **[!UICONTROL maxMemory]** 값을 변경하십시오.
 
 ### 인증 설정 {#setting-up-authentication}
 
 Dynamic Media 이미지 제공 서비스에 이미지를 복제할 수 있도록 작성자에 대한 복제 인증을 설정합니다. 먼저 KeyStore를 가져온 다음 **[!UICONTROL dynamic-media-replication]** 사용자 아래에 저장하고 구성합니다. 회사 관리자가 프로비저닝 프로세스 중에 KeyStore 파일과 필요한 자격 증명이 포함된 환영 이메일을 받았습니다. 이 정보를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
 
-**인증을 설정하려면**
+**인증을 설정하려면 다음을 수행하십시오.**
 
 1. 아직 파일 및 암호가 없는 경우 Adobe 고객 지원 센터에서 KeyStore 파일 및 암호를 문의하십시오. 이 정보는 프로비저닝의 필수 부분입니다. 그것은 당신의 계정에 열쇠를 연결합니다.
+
 1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**&#x200B;를 탭합니다.
+
 1. 사용자 관리 페이지에서 **[!UICONTROL dynamic-media-replication]** 사용자로 이동한 다음 탭하여 엽니다.
 
    ![dm-replication](assets/dm-replication.png)
@@ -818,7 +820,7 @@ Dynamic Media은 [이 활성화되면 즉시 사용할 수 있습니다](#enabli
 Dynamic Media 이미지 서버 설정을 구성하려면:
 
 1. Experience Manager의 왼쪽 위 모서리에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 탭합니다.
-1. Adobe Experience Manager 웹 콘솔 구성 페이지에서 **[!UICONTROL OSGi > 구성]** 을 탭하여 현재 Experience Manager 내에서 실행 중인 모든 번들을 나열합니다.
+1. Adobe Experience Manager 웹 콘솔 구성 페이지에서 **[!UICONTROL OSGi]** > **[!UICONTROL 구성]**&#x200B;을 탭하여 Experience Manager 내에서 현재 실행 중인 모든 번들을 나열합니다.
 
    Dynamic Media 게재 서버는 목록의 다음 이름 아래에 있습니다.
 
