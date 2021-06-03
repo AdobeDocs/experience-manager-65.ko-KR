@@ -5,10 +5,10 @@ user-guide-title: Assets 안내서
 feature: 자산 관리
 role: Business Practitioner, Architect, Administrator
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 77%
+source-wordcount: '337'
+ht-degree: 68%
 
 ---
 
@@ -35,11 +35,11 @@ ht-degree: 77%
 | [관리 안내서](/help/sites-administering/home.md) | Adobe Experience Manager 관리 방법을 이해합니다. |
 | [작성 안내서](/help/sites-authoring/home.md) | 이 안내서에서는 Experience Manager의 작성 개념을 설명합니다. |
 | [클래식 UI 작성 안내서](/help/sites-classic-ui-authoring/home.md) | 이 안내서에서는 클래식 사용자 인터페이스에서 Experience Manager의 작성 개념을 설명합니다. |
-| [Screens 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | 동적이고 대화형 디지털 경험을 게시할 수 있는 디지털 서명 솔루션에 대해 알아봅니다. |
+| [Screens 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | 동적 및 대화형 디지털 경험을 게시할 수 있도록 디지털 서명 솔루션에 대해 알아봅니다. |
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 Experience Manager의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | Experience Manager 배포를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 Experience Manager 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [상거래 사용 안내서](/help/commerce/home.md) | AEM에서 Commerce Integration Framework에 대해 알아봅니다. |
+| [상거래 사용 안내서](/help/commerce/home.md) | Experience Manager에서 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 [!DNL Livefyre]와 공유하는 방법을 보여 줍니다. |
 
@@ -48,7 +48,7 @@ ht-degree: 77%
 * [Experience Manager 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 * [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
-* [Experience Manager 자산 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
+* [Experience Manager 자산 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-assets/ct-p/experience-manager-assets-community)
 * [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
 * [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
