@@ -11,7 +11,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 feature: 워크플로우,자산 관리,표현물
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 0%
@@ -76,20 +76,20 @@ AEM Assets에서 프로필 사용과 관련된 중요한 개념은 프로필에 
    * 기본 선택한 폴더에 자산이 있는 하위 폴더가 하나 이상 있는 경우 워크플로우는 폴더 계층 구조의 모든 자산을 다시 처리합니다.
    * 자산이 1000개 이상인 폴더 계층 구조에서 이 워크플로우를 실행하지 않는 것이 좋습니다.
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 타임라인 을 클릭합니다.]**
+1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 클릭합니다.
 1. 페이지의 왼쪽 아래 모서리 근처에 있는 댓글 필드 오른쪽에 있는 캐럿 아이콘( **^** )을 클릭합니다.
 
    ![자산 워크플로우 재처리 1](/help/assets/assets/reprocess-assets1.png)
 
-1. **[!UICONTROL 워크플로우 시작 을 클릭합니다.]**
-1. **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7을 선택합니다.자산을 재처리합니다.]**
+1. **[!UICONTROL 워크플로우 시작]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7을 선택합니다.자산]**&#x200B;을 재처리합니다.
 1. (선택 사항) **워크플로우 제목 입력** 텍스트 필드에 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로우 인스턴스를 참조할 수 있습니다.
 
    ![자산 재처리 2](/help/assets/assets/reprocess-assets2.png)
 
 1. **[!UICONTROL 시작]**&#x200B;을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-   워크플로우를 모니터링하거나 진행 상황을 확인하려면 AEM 주 콘솔 페이지에서 **[!UICONTROL 도구 > 워크플로우를 클릭합니다.]** 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 기록 열기를 클릭합니다.]** 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
+   워크플로우를 모니터링하거나 진행 상태를 확인하려면 AEM 주 콘솔 페이지에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]**&#x200B;를 클릭합니다. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 기록 열기]**&#x200B;를 클릭합니다. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
 
 ### 재처리 워크플로우의 일괄 처리 크기 조정 {#adjusting-load}
 
@@ -97,12 +97,12 @@ AEM Assets에서 프로필 사용과 관련된 중요한 개념은 프로필에 
 
 **재처리 워크플로우의 배치 크기를 선택적으로 조정하려면**
 
-1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 클릭하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]**(망치) 아이콘 > **[!UICONTROL 워크플로우 > 모델.]**
+1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 클릭하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]**(망치) 아이콘 > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 클릭합니다.
 1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다.자산]**&#x200B;을 재처리합니다.
 
    ![Scene7이 있는 워크플로우 모델 페이지:카드 보기에서 선택한 자산 워크플로우 재처리](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. 도구 모음에서 **[!UICONTROL 편집 을 클릭합니다.]** 새 브라우저 탭에서 Scene7을 엽니다.자산 워크플로우 모델 페이지를 재처리합니다.
+1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. 새 브라우저 탭에서 Scene7을 엽니다.자산 워크플로우 모델 페이지를 재처리합니다.
 1. Scene7에서:오른쪽 위 모서리 근처에 있는 자산 워크플로우 페이지를 다시 처리하려면 **[!UICONTROL 편집]** 을 클릭하여 워크플로우를 &quot;잠금 해제&quot;합니다.
 1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 도구 모음에서 **[!UICONTROL 구성]**&#x200B;을 클릭합니다.
 
@@ -127,7 +127,7 @@ AEM Assets에서 프로필 사용과 관련된 중요한 개념은 프로필에 
 1. Scene7을 표시하는 브라우저 탭을 닫습니다.자산 워크플로우 모델을 재처리합니다.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite.]**
+1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -138,10 +138,10 @@ AEM Assets에서 프로필 사용과 관련된 중요한 개념은 프로필에 
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add.]** The new property appears as the following:
+1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
+1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
