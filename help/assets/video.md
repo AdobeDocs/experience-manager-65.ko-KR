@@ -11,9 +11,9 @@ docset: aem65
 feature: 자산 관리
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '11752'
+source-wordcount: '11748'
 ht-degree: 1%
 
 ---
@@ -456,12 +456,12 @@ Google Cloud 설정을 구성하려면:
    이미 Google 계정이 있는 경우 다음 단계로 건너뜁니다.
 
 1. [https://cloud.google.com/](https://cloud.google.com/)로 이동합니다.
-1. 오른쪽 위 모서리 근처에 있는 Google Cloud 페이지에서 **[!UICONTROL 콘솔을 클릭합니다.]**
+1. 오른쪽 상단 모서리의 Google Cloud 페이지에서 **[!UICONTROL 콘솔]**&#x200B;을 클릭합니다.
 
    필요한 경우 Google 계정 자격 증명을 사용하여 **[!UICONTROL 로그인]**&#x200B;해야 **[!UICONTROL 콘솔]** 옵션을 볼 수 있습니다.
 
 1. 대시보드 페이지의 **[!UICONTROL Google Cloud Platform]** 오른쪽에 있는 프로젝트 드롭다운 목록을 클릭하여 프로젝트 선택 대화 상자를 엽니다.
-1. 프로젝트 선택 대화 상자에서 **[!UICONTROL 새 프로젝트를 누릅니다.]**
+1. 프로젝트 선택 대화 상자에서 **[!UICONTROL 새 프로젝트]**&#x200B;를 누릅니다.
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
@@ -469,32 +469,32 @@ Google Cloud 설정을 구성하려면:
 
    프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다.만든 후에는 변경할 수 없습니다. 또한 나중에 AEM에서 YouTube을 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다.그것을 적으실 수 있습니다.
 
-1. **[!UICONTROL 만들기를 클릭합니다.]**
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
 1. 다음 중 하나를 수행합니다.
 
-   * 프로젝트의 대시보드의 시작하기 카드에서 **[!UICONTROL 탐색 및 API 활성화]**&#x200B;를 누릅니다.
-   * 프로젝트의 대시보드의 API 카드에서 **[!UICONTROL API 개요로 이동]** 을 누릅니다.
+   * 프로젝트의 대시보드의 시작하기 카드에서 **[!UICONTROL 탐색 및 API]**&#x200B;를 활성화합니다.
+   * 프로젝트의 대시보드의 API 카드에서 **[!UICONTROL API로 이동 개요]**&#x200B;를 탭합니다.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. API 및 서비스 페이지의 상단 근처에 있는 **[!UICONTROL API 및 서비스 활성화]**&#x200B;를 탭합니다.
-1. API 라이브러리 페이지의 왼쪽에 있는 **[!UICONTROL 카테고리]**&#x200B;에서 **[!UICONTROL YouTube을 탭합니다.]** 페이지 오른쪽에서  **[!UICONTROL YouTube 데이터 API를 탭합니다.]**
+1. API 라이브러리 페이지의 왼쪽에 있는 **[!UICONTROL 카테고리]** 아래에서 **[!UICONTROL YouTube]**&#x200B;을 누릅니다. 페이지 오른쪽에서 **[!UICONTROL YouTube 데이터 API]**&#x200B;를 탭합니다.
 1. YouTube 데이터 API v3 페이지에서 **[!UICONTROL 활성화]**&#x200B;를 탭합니다.
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
-1. API를 사용하려면 자격 증명이 필요할 수 있습니다. 필요한 경우 **[!UICONTROL 자격 증명 만들기를 클릭합니다.]**
+1. API를 사용하려면 자격 증명이 필요할 수 있습니다. 필요한 경우 **[!UICONTROL 자격 증명 만들기]**&#x200B;를 클릭합니다.
 
    ![6_5_googleaccount-apis-createcreatecredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
 1. **[!UICONTROL 프로젝트]** 페이지에 자격 증명을 추가하고, 1단계에서 다음을 수행합니다.
 
-   * **[!UICONTROL 어떤 API를 사용하고 있습니까?]** 드롭다운 목록에서  **[!UICONTROL YouTube 데이터 API v3를 선택합니다.]**
+   * **[!UICONTROL 어떤 API를 사용하고 있습니까?]** 드롭다운 목록에서  **[!UICONTROL YouTube 데이터 API v3 를 선택합니다]**.
 
    * **[!UICONTROL 어디에서 API를 호출합니까?]** 드롭다운 목록에서  **[!UICONTROL 웹 서버(예: node.js, Tomcat)를 선택합니다]**
 
-   * **[!UICONTROL 어떤 데이터에 액세스합니까?]** 드롭다운 목록에서 사용자 데이터 **[!UICONTROL 를 누릅니다.]**
+   * **[!UICONTROL 어떤 데이터에 액세스합니까?]** 드롭다운 목록에서 사용자 데이터 **[!UICONTROL 를 누릅니다]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -518,7 +518,7 @@ Google Cloud 설정을 구성하려면:
 
    **참고**:위의 경로 예제는 그림 용도로만 사용됩니다.
 
-1. **[!UICONTROL OAuth 클라이언트 ID 만들기를 클릭합니다.]**
+1. **[!UICONTROL OAuth 클라이언트 ID 만들기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 프로젝트에 자격 증명을 추가]** 페이지의 3단계의 **[!UICONTROL OAuth 2.0 동의 화면 설정]** 제목 아래에서 현재 사용 중인 Gmail 이메일 주소를 선택합니다.
 
    ![6_5_googleaccount-apis-createcredentials-consenscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
@@ -527,8 +527,8 @@ Google Cloud 설정을 구성하려면:
 
    AEM 관리자가 YouTube을 인증할 때 동의 화면이 표시됩니다.AEM은 YouTube에 권한을 요청하십시오.
 
-1. **[!UICONTROL 계속 을 클릭하십시오.]**
-1. 프로젝트에 자격 증명 추가 페이지의 4단계에서 **[!UICONTROL 자격 증명 다운로드]** 제목 아래에 있는 **[!UICONTROL 다운로드.]**&#x200B;를 탭합니다.
+1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
+1. 프로젝트에 자격 증명 추가 페이지의 4단계에서 **[!UICONTROL 자격 증명 다운로드]** 제목 아래에 있는 **[!UICONTROL 다운로드]**&#x200B;를 탭합니다.
 
    ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
 
@@ -536,7 +536,7 @@ Google Cloud 설정을 구성하려면:
 
    나중에 Adobe Experience Manager에서 YouTube을 설정할 때 이 다운로드한 json 파일이 필요합니다.
 
-1. **[!UICONTROL 완료 를 클릭합니다.]**
+1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 
    Google 계정에서 로그아웃합니다. 이제 YouTube 채널을 만듭니다.
 
@@ -552,9 +552,9 @@ YouTube 채널을 만들려면:
 
 1. [https://www.youtube.com](https://www.youtube.com/)로 이동하여 Google 계정 자격 증명을 사용하여 로그인합니다.
 1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진(단색 원 내에 문자로 표시될 수도 있음)을 클릭한 다음 **[!UICONTROL YouTube 설정]** (라운드 톱니바퀴 아이콘)을 클릭합니다.
-1. 개요 페이지의 추가 기능 제목 아래에서 **[!UICONTROL 내 채널을 모두 보거나 새 채널을 만드십시오.]**
-1. 채널 페이지에서 **[!UICONTROL 새 채널을 만듭니다.]**
-1. 브랜드 계정 페이지의 브랜드 계정 이름 필드에 비디오 자산을 게시하려는 위치에 비즈니스 이름 또는 다른 채널 이름을 입력한 다음 **[!UICONTROL 만들기.]**
+1. 개요 페이지의 추가 기능 제목 아래에서 **[!UICONTROL 내 채널을 모두 보거나 새 채널]**&#x200B;을 만듭니다.
+1. 채널 페이지에서 **[!UICONTROL 새 채널 만들기]**&#x200B;를 클릭합니다.
+1. 브랜드 계정 페이지의 브랜드 계정 이름 필드에 비디오 자산을 게시하려는 위치에 비즈니스 이름 또는 다른 채널 이름을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    AEM에서 YouTube을 설정할 때 다시 입력해야 하므로 여기에 입력하는 이름을 기억하십시오.
 
@@ -570,11 +570,11 @@ YouTube 채널을 만들려면:
 
 ### YouTube 게시 복제 에이전트 {#enabling-the-youtube-publish-replication-agent} 활성화
 
-YouTube 게시 복제 에이전트를 활성화한 후 Google Cloud 계정에 대한 연결을 테스트하려면 **[!UICONTROL 연결 테스트 를 누릅니다.]** 브라우저 탭에 연결 결과가 표시됩니다. YouTube 채널을 추가한 경우 해당 목록이 테스트의 일부로 표시됩니다.
+YouTube 게시 복제 에이전트를 활성화한 후 Google Cloud 계정에 대한 연결을 테스트하려면 **[!UICONTROL 연결 테스트]**&#x200B;를 누릅니다. 브라우저 탭에 연결 결과가 표시됩니다. YouTube 채널을 추가한 경우 해당 목록이 테스트의 일부로 표시됩니다.
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 클릭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자의 에이전트]**&#x200B;를 클릭합니다.
-1. 작성자 에이전트 페이지에서 **[!UICONTROL YouTube 게시(youtube)를 클릭합니다.]**
-1. 도구 모음의 설정 오른쪽에 있는 **[!UICONTROL 편집.]**
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 클릭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트 를 클릭합니다.
+1. 작성자 에이전트 페이지에서 **[!UICONTROL YouTube 게시(youtube)]**&#x200B;를 클릭합니다.
+1. 도구 모음의 설정 오른쪽에 있는 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 1. 복제 에이전트를 켜려면 **[!UICONTROL Enabled]** 확인란을 선택하십시오.
 1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
@@ -590,7 +590,7 @@ AEM 6.4부터 AEM에서 YouTube 게시를 설정하는 새로운 터치 사용�
 #### AEM 6.4 이상에서 YouTube 설정 {#setting-up-youtube-in-aem-and-later}
 
 1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube 게시 구성.]**
+1. 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube 게시 구성]**&#x200B;을 누릅니다.
 1. **[!UICONTROL global]**&#x200B;을 누릅니다(선택하지 않음).
 
 1. 전역 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
@@ -604,23 +604,23 @@ YouTube 구성 만들기 페이지를 열어 둡니다.곧 다시 돌아올 겁�
 1. 일반 텍스트 편집기를 사용하여 [Google Cloud 설정 구성](/help/assets/video.md#configuring-google-cloud-settings) 작업에서 이전에 다운로드하여 저장한 JSON 파일을 엽니다.
 1. 전체 JSON 텍스트를 선택하고 복사합니다.
 1. YouTube 계정 설정 대화 상자로 돌아갑니다. **[!UICONTROL JSON 구성]** 필드에서 JSON 텍스트를 붙여 넣습니다.
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장.]**
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 탭합니다.
 
    이제 AEM에서 YouTube 채널을 설정합니다.
 
-1. **[!UICONTROL 채널 추가를 누릅니다.]**
+1. **[!UICONTROL 채널 추가]**&#x200B;를 누릅니다.
 1. 채널 이름 필드에 **[!UICONTROL 이전에 YouTube]**&#x200B;에 하나 이상의 채널을 추가하는 작업에서 만든 채널의 이름을 입력합니다.
 
    원하는 경우 설명을 선택적으로 추가할 수 있습니다.
 
-1. **[!UICONTROL 추가.]**
+1. **[!UICONTROL 추가]**&#x200B;를 누릅니다.
 1. YouTube/Google 인증이 표시됩니다. 아직 Google Cloud 계정에 로그인하지 않은 경우 이 단계를 건너뜁니다.
 
    * Google 프로젝트 ID 및 위의 JSON 텍스트와 연결된 Google 사용자 이름 및 암호를 입력합니다.
    * 계정에 두 개 이상의 항목이 표시되는 채널 수에 따라 다릅니다. 채널을 선택합니다. 전자 메일 주소를 선택하지 마십시오;채널이 아닙니다.
    * 다음 페이지에서 **[!UICONTROL Accept]**&#x200B;를 눌러 이 채널에 액세스할 수 있습니다.
 
-1. **[!UICONTROL Allow.]**&#x200B;를 누릅니다.
+1. **[!UICONTROL Allow]**&#x200B;을 누릅니다.
 
    이제 게시할 태그를 설정합니다.
 
@@ -628,9 +628,9 @@ YouTube 구성 만들기 페이지를 열어 둡니다.곧 다시 돌아올 겁�
 1. 드롭다운 목록 아이콘(위/아래로 캐럿)을 탭하여 AEM에서 사용 가능한 태그 목록을 표시합니다.
 1. 태그를 하나 이상 탭하여 추가합니다.
 
-   추가한 태그를 삭제하려면 태그를 선택하고 **[!UICONTROL X.]**
+   추가한 태그를 삭제하려면 태그를 선택하고 **[!UICONTROL X]**&#x200B;를 누릅니다.
 
-1. 원하는 태그를 추가했으면 **[!UICONTROL 저장.]**
+1. 원하는 태그를 추가했으면 **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
@@ -638,8 +638,8 @@ YouTube 구성 만들기 페이지를 열어 둡니다.곧 다시 돌아올 겁�
 
 1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services을 탭합니다.]**
-1. 타사 서비스 제목 아래에 있는 YouTube에서 **[!UICONTROL 지금 구성 을 탭합니다.]**
+1. 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**&#x200B;을 누릅니다.
+1. 타사 서비스 제목 아래에 있는 YouTube에서 **[!UICONTROL 지금 구성]**&#x200B;을 탭합니다.
 1. 구성 만들기 대화 상자의 각 필드에 제목(필수)과 이름(선택 사항)을 입력합니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 누릅니다.
 1. YouTube 계정 설정 대화 상자의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
@@ -650,23 +650,23 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 1. 일반 텍스트 편집기를 사용하여 Google Cloud 설정 구성 작업에서 이전에 다운로드하여 저장한 JSON 파일을 엽니다.
 1. 전체 JSON 텍스트를 선택하고 복사합니다.
 1. YouTube 계정 설정 대화 상자로 돌아갑니다. **[!UICONTROL JSON 구성]** 필드에서 JSON 텍스트를 붙여 넣습니다.
-1. **[!UICONTROL 확인]**
+1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
-   이제 AEM에서 YouTube 채널을 설정합니다.
+   이제 Experience Manager에서 YouTube 채널을 설정합니다.
 
 1. **[!UICONTROL 사용 가능한 채널]** 오른쪽의 **+**(더하기 기호 아이콘)를 탭합니다.
 1. YouTube 채널 설정 대화 상자의 제목 필드에서 **[!UICONTROL 이전에 YouTube]**&#x200B;에 하나 이상의 채널을 추가하는 작업에서 만든 채널의 이름을 입력합니다.
 
    원하는 경우 설명을 선택적으로 추가할 수 있습니다.
 
-1. **[!UICONTROL 확인]**
+1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 1. YouTube/Google 인증이 표시됩니다. 아직 Google Cloud 계정에 로그인하지 않은 경우 이 단계를 건너뜁니다.
 
    * Google 프로젝트 ID 및 위의 JSON 텍스트와 연결된 Google 사용자 이름 및 암호를 입력합니다.
    * 계정에 두 개 이상의 항목이 표시되는 채널 수에 따라 다릅니다. 채널을 선택합니다. 전자 메일 주소를 선택하지 마십시오;채널이 아닙니다.
    * 다음 페이지에서 **[!UICONTROL Accept]**&#x200B;를 눌러 이 채널에 액세스할 수 있습니다.
 
-1. **[!UICONTROL Allow.]**&#x200B;를 누릅니다.
+1. **[!UICONTROL Allow]**&#x200B;을 누릅니다.
 
    이제 게시할 태그를 설정합니다.
 
@@ -676,7 +676,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
    추가한 태그를 삭제하려면 태그를 선택하고 **X**&#x200B;를 누릅니다.
 
-1. 원하는 태그를 추가했으면 **[!UICONTROL 확인.]**
+1. 원하는 태그를 추가했으면 **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
@@ -688,11 +688,11 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
 업로드한 비디오에 대한 기본 YouTube 속성 설정을 자동화하는 방법은 다음과 같습니다.
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 클릭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마를 클릭합니다.]**
-1. **[!UICONTROL 기본값을 클릭합니다.]** (선택 상자에 &quot;기본값&quot; 왼쪽에 선택 표시를 추가하지 마십시오.)
-1. **[!UICONTROL default]** 페이지에서 **[!UICONTROL video]** 왼쪽에 있는 상자를 선택한 다음 **[!UICONTROL 편집을 클릭합니다.]**
-1. 메타데이터 스키마 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 클릭합니다.
-1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 카테고리를 클릭합니다.]**
+1. 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 스키마]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL default]**&#x200B;을 클릭합니다. (선택 상자에 &quot;기본값&quot; 왼쪽에 선택 표시를 추가하지 마십시오.)
+1. **[!UICONTROL 기본]** 페이지에서 **[!UICONTROL 비디오]** 왼쪽에 있는 상자를 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 탭합니다.
+1. 메타데이터 스키마 편집기 페이지에서 **[!UICONTROL 고급]** 탭을 탭합니다.
+1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 범주]**&#x200B;를 클릭합니다.
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭 아래에서 다음을 수행합니다.
 
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
@@ -701,7 +701,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
    * **[!UICONTROL 선택 항목]**에서 사용할 기본값(예: 사용자 및 블로그 또는 과학 및 기술)을 선택하고 복사합니다.
 복사한 값을 열려 있는 텍스트 편집기에 붙여넣습니다. 메타데이터 처리 프로필을 만들 때 나중에 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
-1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 개인 정보 보호.]**
+1. YouTube 게시 제목 아래에서 **[!UICONTROL YouTube 개인 정보 보호]**&#x200B;를 탭합니다.
 1. 페이지 오른쪽의 **[!UICONTROL 설정]** 탭 아래에서 다음을 수행합니다.
 
    * **[!UICONTROL 속성에 매핑]** 텍스트 필드에서 값을 선택하고 복사합니다.
@@ -710,8 +710,8 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
    * **[!UICONTROL 선택 항목]**에서 사용할 기본값을 선택하고 복사합니다. 선택 사항은 두 쌍으로 그룹화됩니다. 쌍의 맨 아래 필드는 공용, 비상장 또는 개인 등의 복사할 기본값입니다.
 복사한 값을 열려 있는 텍스트 편집기에 붙여넣습니다. 메타데이터 처리 프로필을 만들 때 나중에 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
-1. 메타데이터 스키마 편집기 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 취소.]**
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 프로필.]**
+1. 메타데이터 스키마 편집기 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 취소]**&#x200B;를 클릭합니다.
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;을 클릭합니다.
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 메타데이터 프로필 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 메타데이터 프로필 추가 대화 상자의 **[!UICONTROL 프로필 제목]** 텍스트 필드에 이름 `YouTube Video`을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
@@ -738,7 +738,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
    * **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
    * 페이지 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 해당 필드에 붙여 넣습니다. 선택 사항 값을 기본값 필드에 붙여넣습니다.
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장을 클릭합니다.]**
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. 비디오를 업로드할 폴더에 YouTube 게시 메타데이터 프로필을 적용합니다. 메타데이터 프로필과 비디오 프로필 세트가 모두 있어야 합니다.
 
    [메타데이터 프로필](/help/assets/metadata-config.md#metadata-profiles) 및 [비디오 프로필](/help/assets/video-profiles.md)을 참조하십시오.
@@ -749,7 +749,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
 >[!NOTE]
 >
->Dynamic Media - Scene7 모드에서 실행할 때 게시가 즉시 YouTube에 자동으로 게시되지 않습니다. Dynamic Media - Scene7 모드가 설정되면, 다음 두 가지 게시 옵션 중에서 선택할 수 있습니다.**[!UICONTROL 즉시]** 또는 **[!UICONTROL 활성화 시.]**
+>Dynamic Media - Scene7 모드에서 실행할 때 게시가 즉시 YouTube에 자동으로 게시되지 않습니다. Dynamic Media - Scene7 모드가 설정되면, 다음 두 가지 게시 옵션 중에서 선택할 수 있습니다.**[!UICONTROL 즉시]** 또는 **[!UICONTROL 활성화 시]**
 >
 >**[!UICONTROL 게시]** 즉시 는 업로드된 자산이 IPS와 동기화된 후 게재 시스템에 자동으로 게시됨을 의미합니다. Dynamic Media에게 이는 사실이지만 YouTube에게는 그렇지 않습니다. YouTube에 게시하려면 AEM 작성자를 통해 게시해야 합니다.
 
@@ -765,15 +765,15 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
 1. AEM에서 YouTube 채널에 게시할 비디오 자산으로 이동합니다.
 1. 비디오 자산(응용 비디오 세트)을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 속성.]**
+1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 1. 기본 탭의 메타데이터 제목 아래에서 태그 필드 오른쪽에 있는 **[!UICONTROL 선택 대화 상자 열기]**&#x200B;를 클릭합니다.
 1. 태그 선택 페이지에서 사용할 태그로 이동한 다음, 태그를 하나 이상 선택합니다.
 
    태그는 YouTube 채널과 연결되어 있어야 합니다.
 
-1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 선택.]**
-1. 비디오 속성 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장하고 닫기.]**
-1. 도구 모음에서 **[!UICONTROL 빠른 게시.]**
+1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 선택]**&#x200B;을 클릭합니다.
+1. 비디오 속성 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
+1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 클릭합니다.
 
    또한 [AEM Sites에서 게시 관리 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html)을 참조하십시오.
 
@@ -803,7 +803,7 @@ YouTube URL을 웹 애플리케이션에 연결하려면
 
    YouTube URL은 *이후에*&#x200B;을 복사하는 데에만 사용할 수 있으며, 먼저 *게시된*&#x200B;비디오 자산을 YouTube에 게시했습니다.
 
-1. 도구 모음에서 **[!UICONTROL 속성.]**
+1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 고급]** 탭을 클릭합니다.
 1. YouTube 게시 제목 아래의 YouTube URL 목록에서 URL 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
 
@@ -825,10 +825,10 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
 1. YouTube 채널에서 게시를 취소하려는 비디오 자산으로 이동합니다.
 1. 자산 선택 모드에서 하나 이상의 게시된 비디오 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 게시 관리 를 클릭합니다.]** 세 점 아이콘()을 탭해야 할 수 있습니다..) 도구 모음에서 **[!UICONTROL 게시 관리.]**
-1. 게시 관리 페이지에서 **[!UICONTROL 게시 취소.]**
-1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음.]**
-1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시 취소.]**
+1. 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 클릭합니다. 세 점 아이콘()을 탭해야 할 수 있습니다..) 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 참조하십시오.
+1. 게시 관리 페이지에서 **[!UICONTROL 게시 취소]**&#x200B;를 누릅니다.
+1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]**&#x200B;을 누릅니다.
+1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시 취소]**&#x200B;를 누릅니다.
 
 ## 비디오 인코딩 및 YouTube 게시 진행률 모니터링 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
@@ -848,11 +848,11 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
-   이 열은 기본적으로 표시되지 않습니다. 열을 사용하려면 보기 드롭다운 메뉴에서 **[!UICONTROL 설정 보기]**&#x200B;를 선택하고 **[!UICONTROL 처리 상태]** 열을 추가하고 **[!UICONTROL 업데이트.]**
+   이 열은 기본적으로 표시되지 않습니다. 열을 사용하려면 보기 드롭다운 메뉴에서 **[!UICONTROL 설정 보기]**&#x200B;를 선택하고 **[!UICONTROL 처리 상태]** 열을 추가하고 **[!UICONTROL 업데이트]**&#x200B;를 탭하거나 클릭합니다.
 
    ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. 자산 세부 정보에서 진행 상황을 봅니다. 자산을 탭하거나 클릭하면 드롭다운 메뉴를 열고 **[!UICONTROL 타임라인 을 선택합니다.]** 인코딩 또는 YouTube 게시과 같은 워크플로우 활동으로 범위를 좁히려면 워크플로우 를  **[!UICONTROL 선택합니다.]**
+1. 자산 세부 정보에서 진행 상황을 봅니다. 자산을 탭하거나 클릭하면 드롭다운 메뉴를 열고 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다. 인코딩 또는 YouTube 게시과 같은 워크플로우 활동으로 범위를 좁히려면 **[!UICONTROL 워크플로우]**&#x200B;를 선택합니다.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -869,7 +869,7 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
    >
    >이러한 구성에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]** 속성을 조정할 수 있습니다.
 
-1. 진행 중인 워크플로우의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 인스턴스에서 사용할 수 있는 워크플로우 인스턴스를 참조하십시오.]**
+1. 진행 중인 워크플로우의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 인스턴스]**&#x200B;에서 사용할 수 있는 워크플로우 인스턴스를 참조하십시오.
 
    >[!NOTE]
    >
@@ -877,13 +877,13 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
-   인스턴스를 선택하고 **[!UICONTROL 기록 열기 를 탭하거나 클릭합니다.]**
+   인스턴스를 선택하고 **[!UICONTROL 기록 열기]**&#x200B;를 누릅니다.
 
    ![chlimage_1-434](assets/chlimage_1-434.png)
 
    워크플로우 인스턴스 영역에서 워크플로우를 일시 중단, 종료 또는 변경할 수도 있습니다. 자세한 내용은 [워크플로우 관리](/help/sites-administering/workflows-administering.md) 를 참조하십시오.
 
-1. 실패한 작업의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 실패에서 사용할 수 있는 워크플로우 실패 를 참조하십시오.]** 워크플로우  **[!UICONTROL 실패]** 는 실패한 모든 워크플로우 활동을 신뢰합니다.
+1. 실패한 작업의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 실패]**&#x200B;에서 사용할 수 있는 워크플로우 실패 를 참조하십시오. **[!UICONTROL 워크플로우 실패]**&#x200B;는 실패한 모든 워크플로우 활동을 나열합니다.
 
    >[!NOTE]
    >
@@ -905,7 +905,7 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
    >
    >이러한 구성에서 **[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 **[!UICONTROL 시간 초과]** 속성을 조정할 수 있습니다.
 
-1. 완료된 워크플로우의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 보관에서 사용할 수 있는 워크플로우 아카이브를 참조하십시오.]** 워크플로우  **[!UICONTROL 아카이브]** 로그 목록은 모두 완료된 워크플로우 활동.
+1. 완료된 워크플로우의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 아카이브]**&#x200B;에서 사용할 수 있는 워크플로우 아카이브를 참조하십시오. **[!UICONTROL 워크플로우 아카이브]**&#x200B;는 완료된 모든 워크플로우 활동을 나열합니다.
 
    >[!NOTE]
    >
@@ -923,13 +923,13 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
 알림을 구성하는 방법은 인코딩 작업 또는 YouTube 게시 작업에 대한 알림을 원하는 지에 따라 다릅니다.
 
-* 인코딩 작업의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에서 및 **[!UICONTROL 일 CQ 워크플로우 이메일 알림 서비스를 검색하여 모든 AEM 워크플로우 이메일 알림에 대한 구성 페이지에 액세스할 수 있습니다.]** AEM [에서 이메일 알림 구성 을 참조하십시오](/help/sites-administering/notification.md). **[!UICONTROL Notify on Abort]** 또는 **[!UICONTROL Notify on Complete]**&#x200B;에 대한 확인란을 선택하거나 선택 취소할 수 있습니다.
+* 인코딩 작업의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에서 모든 AEM 워크플로우 이메일 알림에 대한 구성 페이지에 액세스하여 **[!UICONTROL 일 CQ 워크플로우 이메일 알림 서비스]**&#x200B;를 검색할 수 있습니다. AEM](/help/sites-administering/notification.md)에서 이메일 알림 구성 을 참조하십시오. [ **[!UICONTROL Notify on Abort]** 또는 **[!UICONTROL Notify on Complete]**&#x200B;에 대한 확인란을 선택하거나 선택 취소할 수 있습니다.
 
 * YouTube 게시 작업의 경우 다음을 수행합니다.
 
-1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델.]**&#x200B;을 탭합니다.
+1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 탭합니다.
 1. 워크플로우 모델 페이지에서 **[!UICONTROL YouTube에 게시]**&#x200B;를 선택한 다음, 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 탭합니다.
-1. YouTube에 게시 워크플로우 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 편집.]**
+1. YouTube에 게시 워크플로우 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 편집]**&#x200B;을 탭합니다.
 1. YouTube 업로드 구성 요소에서 마우스 포인터를 놓은 다음 한 번 탭하여 인라인 도구 모음을 표시합니다.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
@@ -955,7 +955,7 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
    >이러한 이메일은 YouTube에만 해당되며 일반 워크플로우 이메일 알림 외에도 제공됩니다. 그 결과, **[!UICONTROL 일 CQ 워크플로우 이메일 알림 서비스]**&#x200B;에서 사용할 수 있는 일반 알림과 구성 설정에 따라 YouTube에 고유한 두 개의 이메일 알림 세트를 받을 수 있습니다.
 
 1. 작업이 끝나면 대화 상자의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL Done]** 아이콘(확인 표시)을 탭합니다.
-1. YouTube에 게시 워크플로우 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 동기화 를 탭합니다.]**
+1. YouTube에 게시 워크플로우 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 동기화]**&#x200B;를 탭합니다.
 
 ## 비디오 보고서 보기 {#viewing-video-reports}
 
@@ -985,11 +985,11 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
 기본적으로 비디오 보고서를 처음 입력할 때 이 보고서는 현재 달 1일에 시작하여 현재 월의 날짜로 끝나는 비디오 데이터를 표시합니다. 그러나 고유한 날짜 범위를 지정하여 기본 날짜 범위를 무시할 수 있습니다. 다음에 비디오 보고서를 입력할 때 지정한 날짜 범위가 사용됩니다.
 
-비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 게시 서버를 이미 설정해야 합니다. 게시 서버가 설정되지 않은 경우에는 여전히 게시하여 비디오 보고서를 볼 수 있지만 Dynamic Media 클라우드 구성으로 돌아가 **[!UICONTROL 확인]**&#x200B;을 탭해야 합니다.
+비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 게시 서버를 이미 설정해야 합니다. 게시 서버가 설정되지 않은 경우에는 여전히 게시하여 비디오 보고서를 볼 수 있지만 Dynamic Media 클라우드 구성으로 돌아가 **[!UICONTROL OK]**&#x200B;을 탭해야 합니다.
 
 비디오 보고서를 보려면 다음을 수행하십시오.
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 보고서.]**
+1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 보고서]**&#x200B;를 탭합니다.
 1. 비디오 보고서 페이지에서 다음 중 하나를 수행합니다.
 
    * 오른쪽 위 모서리 근처에 있는 **비디오 보고서 새로 고침** 아이콘을 탭합니다.
@@ -1093,7 +1093,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
    최상의 결과를 얻으려면 Internet Explorer 9 이상, Google Chrome 또는 Safari에서 도구를 사용하십시오.
 
-   도구의 **[!UICONTROL 비디오 파일의 URL 입력]** 필드에서 복사한 비디오 파일의 URL을 붙여넣은 다음 **[!UICONTROL 로드]**&#x200B;를 클릭합니다. 비디오 파일 자체에 URL을 가져올 수 있는 URL을 가져오려면 [자산](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)에 대한 URL을 얻은 다음, 비디오 파일의 URL 입력 필드에 붙여넣을 수 있습니다.**** Internet Explorer, Chrome 또는 Safari는 기본적으로 비디오를 재생할 수 있습니다.
+   도구의 **[!UICONTROL 비디오 파일의 URL 입력]** 필드에서 복사한 비디오 파일의 URL을 붙여넣은 다음 **[!UICONTROL 로드]**&#x200B;를 클릭합니다. [비디오 파일 자체에 URL을 가져올 수 있는 URL을 가져오려면 ](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)비디오 파일 필드의 URL 입력&#x200B;]**을 참조하십시오.**[!UICONTROL  Internet Explorer, Chrome 또는 Safari는 기본적으로 비디오를 재생할 수 있습니다.
 
    이제 사이트에서 화면의 지침에 따라 WebVTT 파일을 작성하고 저장합니다. 완료되면 캡션 파일 내용을 복사하여 일반 텍스트 편집기에 붙여넣은 다음 .vtt 파일 확장자로 저장합니다.
 
@@ -1112,13 +1112,13 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
 1. 다음 중 하나를 수행하십시오.
 
-   * 팝업 비디오 뷰어 환경의 경우 **[!UICONTROL URL을 누릅니다.]** URL 대화 상자에서 URL을 선택하여 클립보드에 복사한 다음 URL을 단순 텍스트 편집기에 복사합니다. 비디오의 복사된 URL을 다음 구문과 함께 추가합니다.
+   * 팝업 비디오 뷰어 환경의 경우 **[!UICONTROL URL]**&#x200B;을 누릅니다. URL 대화 상자에서 URL을 선택하여 클립보드에 복사한 다음 URL을 단순 텍스트 편집기에 복사합니다. 비디오의 복사된 URL을 다음 구문과 함께 추가합니다.
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
       캡션 경로의 끝에 `,1`을 참고하십시오. 경로에서 .vtt 파일 이름 확장자 바로 다음에 `,1` 또는 `,0`로 설정하여 비디오 플레이어 모음에서 닫힌 캡션 단추를 활성화(켜기) 또는 비활성화(해제)하는 옵션이 각각 있습니다.
 
-   * 포함된 비디오 뷰어 환경의 경우 **[!UICONTROL 포함 코드 를 누릅니다.]** 포함 코드 대화 상자에서 포함 코드를 선택하고 클립보드에 복사한 다음 단순 텍스트 편집기에 붙여넣습니다. 복사된 포함 코드를 다음 구문과 함께 추가합니다.
+   * 포함된 비디오 뷰어 환경의 경우 **[!UICONTROL 포함 코드]**&#x200B;를 누릅니다. 포함 코드 대화 상자에서 포함 코드를 선택하고 클립보드에 복사한 다음 단순 텍스트 편집기에 붙여넣습니다. 복사된 포함 코드를 다음 구문과 함께 추가합니다.
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -1222,7 +1222,7 @@ AEM의 모든 비디오에는 연결된 축소판이 있어야 합니다.축소�
 
 이 단계는 &quot;Dynamic Media_Scene7&quot; 모드에서 실행되는 Dynamic Media에만 적용됩니다.
 
-T **사용자 지정 비디오 축소판 추가**,
+**사용자 지정 비디오 축소판을 추가하려면:**
 
 1. 다음을 이미 수행했는지 확인하십시오.
 
@@ -1239,18 +1239,18 @@ T **사용자 지정 비디오 축소판 추가**,
 
    * 비디오의 프레임을 새 축소판으로 사용하려면
 
-      * 도구 모음에서 **[!UICONTROL 비디오에서 프레임 선택]** 을 누릅니다.
+      * 도구 모음에서 **[!UICONTROL 비디오에서 프레임 선택]**&#x200B;을 누릅니다.
       * 재생 단추를 누른 다음 비디오의 새 축소판으로 캡처할 프레임에서 일시 중지 단추를 누릅니다.
    * 이미지 자산을 새 축소판으로 사용하려면
 
-      * 도구 모음에서 **[!UICONTROL 자산에서 축소판 선택]** 을 누릅니다.
-      * **[!UICONTROL 축소판 선택]**
+      * 도구 모음에서 **[!UICONTROL Assets]**&#x200B;에서 축소판 선택 을 누릅니다.
+      * **[!UICONTROL 축소판 선택]**&#x200B;을 누릅니다.
       * 사용하려는 이전에 업로드 및 게시된 이미지 자산으로 이동합니다. 비디오의 축소판 이미지로 사용할 수 있도록 자산 크기가 자동으로 조정됩니다.
-      * 이미지 자산을 선택한 다음 **[!UICONTROL 선택.]**
+      * 이미지 자산을 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 누릅니다.
 
 
-1. Change Thumbnail 페이지에서 **[!UICONTROL Save Change를 누릅니다.]**
-1. 비디오의 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기.]**
+1. Change Thumbnail 페이지에서 **[!UICONTROL Save Change]**&#x200B;를 누릅니다.
+1. 비디오의 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭합니다.
 
 ## Dynamic Media의 비디오 축소판 정보 - 하이브리드 모드 {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
@@ -1268,7 +1268,7 @@ Dynamic Media에서 생성된 축소판을 사용하는 대신 사용자 정의 
 
 이러한 단계는 하이브리드 모드에서 실행되는 Dynamic Media에만 적용됩니다.
 
-T **비디오 축소판 추가**,
+**비디오 축소판을 추가하려면**
 
 1. 비디오 축소판을 추가할 업로드된 비디오 자산으로 이동합니다.
 1. 목록 보기 또는 카드 보기에서 자산 선택 모드에서 비디오 자산을 탭합니다.
@@ -1279,7 +1279,7 @@ T **비디오 축소판 추가**,
    Dynamic Media은 사용자 정의한 기본 시간 간격이나 시간 간격에 따라 비디오에서 시리즈 축소판 이미지를 생성합니다.
 
 1. 생성된 축소판 이미지를 미리 보고 비디오에 추가할 이미지를 선택합니다.
-1. **[!UICONTROL 변경 내용 저장.]**
+1. **[!UICONTROL 변경 내용 저장]**&#x200B;을 누릅니다.
 
    선택한 축소판을 사용하도록 비디오의 축소판 이미지가 업데이트됩니다. 나중에 축소판 이미지를 변경하기로 결정한 경우 **[!UICONTROL 축소판 그림 변경]** 페이지로 돌아가서 새 이미지를 선택할 수 있습니다.
 
@@ -1293,9 +1293,9 @@ T **비디오 축소판 추가**,
 
 [비디오 축소판 추가](#adding-a-video-thumbnail)를 참조하십시오.
 
-**비디오 축소판이 생성되는 기본 시간 간격을 구성하려면**
+**비디오 축소판이 생성되는 기본 시간 간격을 구성하려면 다음을 수행합니다.**
 
-1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite.]**
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;을 누릅니다.
 
 1. CRXDE Lite 페이지의 왼쪽 디렉토리 패널에서 `o etc/dam/imageserver/configuration/jcr:content/settings.` 로 이동합니다.
 
@@ -1317,7 +1317,7 @@ T **비디오 축소판 추가**,
 
 이러한 단계는 하이브리드 모드에서 실행되는 Dynamic Media에만 적용됩니다.
 
-T **사용자 지정 비디오 축소판 추가**,
+**사용자 지정 비디오 축소판을 추가하려면:**
 
 1. 사용자 지정 비디오 축소판을 추가할 업로드된 비디오 자산으로 이동합니다.
 1. 목록 보기 또는 카드 보기에서 자산 선택 모드에서 비디오 자산을 탭합니다.
@@ -1325,6 +1325,6 @@ T **사용자 지정 비디오 축소판 추가**,
 1. 비디오의 속성 페이지에서 **[!UICONTROL 축소판 변경]**&#x200B;을 누릅니다.
 1. 축소판 그림 변경 페이지의 도구 모음에서 **[!UICONTROL 새 축소판 업로드]**&#x200B;를 누릅니다.
 1. 사용할 축소판 이미지로 이동하여 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 눌러 AEM에 이미지를 업로드합니다. 업로드 후에 이미지를 게시합니다.
-1. 이미지를 업로드하고 게시한 후 [축소판 그림 변경] 페이지에서 **[!UICONTROL 변경 내용 저장.]**
+1. 이미지를 업로드하고 게시한 후 축소판 변경 페이지에서 **[!UICONTROL 변경 내용 저장]**&#x200B;을 누릅니다.
 
    사용자 정의 축소판이 비디오에 추가됩니다.
