@@ -11,7 +11,7 @@ docset: aem65
 feature: 파노라마 이미지,자산 관리
 role: Business Practitioner, Administrator
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -46,11 +46,11 @@ CRXDE Lite에서 다음과 같은 기본 종횡비 설정 2를 무시할 수 있
 
 1. [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인합니다.
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버를 클릭합니다.]**
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 클릭합니다.
 1. 이미지 서버 게시 페이지의 맨 위에 있는 **[!UICONTROL 게시 컨텍스트]** 드롭다운 메뉴에서 **[!UICONTROL 이미지 제공]**&#x200B;을 선택합니다.
 
-1. 동일한 이미지 서버 게시 페이지에서 **[!UICONTROL 요청 속성 제목을 찾습니다.]**
-1. 요청 속성 제목 아래에서 **[!UICONTROL 회신 이미지 크기 제한을 찾습니다.]** 그런 다음 연결된 너비 및 높이 필드에서 파노라마 이미지에 사용할 수 있는 최대 이미지 크기를 늘립니다.
+1. 동일한 이미지 서버 게시 페이지에서 **[!UICONTROL 요청 속성]** 제목을 찾습니다.
+1. 요청 속성 제목 아래에서 **[!UICONTROL 회신 이미지 크기 제한]**&#x200B;을 찾습니다. 그런 다음 연결된 너비 및 높이 필드에서 파노라마 이미지에 사용할 수 있는 최대 이미지 크기를 늘립니다.
 
    Dynamic Media Classic의 제한 픽셀은 25,000,000픽셀입니다. 2:1 종횡비를 갖는 이미지의 최대 허용 크기는 7000 x 3500입니다. 그러나 일반적인 데스크탑 화면의 경우 4096 x 2048 픽셀로도 충분합니다.
 
@@ -60,14 +60,14 @@ CRXDE Lite에서 다음과 같은 기본 종횡비 설정 2를 무시할 수 있
 
 1. 요청 속성 제목 아래에서 다음을 수행합니다.
 
-   * 요청 난독화 모드를 **[!UICONTROL 비활성화로 설정합니다.]**
-   * 요청 잠금 모드를 **[!UICONTROL 비활성화로 설정합니다.]**
+   * 요청 난독화 모드를 **[!UICONTROL Disabled]**&#x200B;로 설정합니다.
+   * 요청 잠금 모드를 **[!UICONTROL Disabled]**&#x200B;로 설정합니다.
 
    이러한 설정은 AEM에서 `Panoramic Media` WCM 구성 요소를 사용하는 데 필요합니다.
 
-1. [이미지 서버 게시] 페이지 하단의 왼쪽의 **[!UICONTROL 저장.]**
+1. 이미지 서버 게시 페이지 하단의 왼쪽의 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-1. 오른쪽 아래 모서리에서 **[!UICONTROL 닫기.]**
+1. 오른쪽 아래 모서리에서 **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
 
 ### 파노라마 미디어 WCM 구성 요소 문제 해결 {#troubleshooting-the-panoramic-media-wcm-component}
 
