@@ -9,9 +9,9 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: 구성,Scene7 모드
-source-git-commit: 485464350f391fca327207b78b165897fdacc2d3
+source-git-commit: 90737593086c680f0a948f5b9cab6e58767b6373
 workflow-type: tm+mt
-source-wordcount: '6156'
+source-wordcount: '6153'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ## Scene7 모드에서 Dynamic Media 활성화 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media는 기본적으로 비활성화됩니다. ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Dynamic Media 기능을 사용하려면 활성화해야 합니다.
+[Dynamic Media는 기본적으로 비활성화됩니다. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Dynamic Media 기능을 사용하려면 활성화해야 합니다.
 
 >[!WARNING]
 Dynamic Media - Scene7 모드는 *Experience Manager 작성자 인스턴스에만 사용됩니다*. 따라서 Experience Manager 작성자 인스턴스에서 `runmode=dynamicmedia_scene7` Experience Manager 게시 인스턴스가 아닌 *을 구성해야 합니다.*
@@ -76,7 +76,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 기능 팩 18912 설치은 *선택 사항*&#x200B;입니다.
 
-기능 팩 18912을 사용하면 FTP를 통해 자산을 벌크하거나 Dynamic Media - 하이브리드 모드 또는 Dynamic Media Classic에서 Experience Manager의 Dynamic Media - Scene7 모드로 자산을 마이그레이션할 수 있습니다. [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)에서 사용할 수 있습니다.
+기능 팩 18912을 사용하면 FTP를 통해 자산을 벌크하거나 Dynamic Media - 하이브리드 모드 또는 Dynamic Media Classic에서 Experience Manager의 Dynamic Media - Scene7 모드로 자산을 마이그레이션할 수 있습니다. [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)에서 사용할 수 있습니다.
 
 자세한 내용은 [벌크 자산 마이그레이션용 기능 팩 18912 설치](/help/assets/bulk-ingest-migrate.md) 를 참조하십시오.
 
@@ -88,7 +88,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 **Cloud Services에서 Dynamic Media 구성을 만들려면:**
 
-1. Experience Manager 작성자 모드에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 탭한 다음, **[!UICONTROL Cloud Services > Dynamic Media 구성]**&#x200B;을 누릅니다.
+1. Experience Manager 작성자 모드에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 탭한 다음, **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media 구성]**&#x200B;을 누릅니다.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**(**[!UICONTROL global]** 왼쪽의 폴더 아이콘을 탭하거나 선택하지 않음)을 탭한 다음 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
 1. **[!UICONTROL Dynamic Media 구성 만들기]** 페이지에서 제목, Dynamic Media 계정 이메일 주소, 암호를 입력한 다음 지역을 선택합니다. 이 정보는 규정 이메일에서 Adobe이 제공합니다. 이메일을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
 
@@ -109,7 +109,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
          ![Dynamic Media 게시 후 메타데이터 복제 확인란](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL 선택적]** 게시이 옵션을 사용하면 Dynamic Media에 게시되는 폴더를 제어할 수 있습니다. 스마트 자르기 또는 동적 표현물과 같은 기능을 사용하거나 미리 보기 위해 Experience Manager에 배타적으로 게시된 폴더를 결정할 수 있습니다. 이러한 동일한 자산은 공개 도메인에서 전달을 위해 Dynamic Media에 게시된 *이 아닙니다.*<br>여기에서  **[!UICONTROL Dynamic Media Cloud 구성]** 에서 이 옵션을 설정할 수 있고, 원할 경우 폴더의  **[!UICONTROL 속성]**&#x200B;에서 폴더 수준에서 이 옵션을 설정하도록 선택할 수 있습니다.<br>[Dynamic Media의 선택적 게시 작업을 참조하십시오.](/help/assets/selective-publishing.md)<br>나중에 이 구성을 변경하거나 나중에 폴더 수준에서 변경하면 해당 변경 사항은 해당 시점부터 업로드하는 새 자산에만 영향을 줍니다. 폴더에 있는 기존 자산의 게시 상태는 **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 게시 관리]** 대화 상자에서 수동으로 변경할 때까지 그대로 유지됩니다.
+      * **[!UICONTROL 선택적]** 게시이 옵션을 사용하면 Dynamic Media에 게시되는 폴더를 제어할 수 있습니다. 스마트 자르기 또는 동적 표현물과 같은 기능을 사용하거나 미리 보기 위해 Experience Manager에 배타적으로 게시된 폴더를 결정할 수 있습니다. 이러한 동일한 자산은 공개 도메인에서 전달을 위해 Dynamic Media에 게시된 *이 아닙니다.*<br>여기에서  **[!UICONTROL Dynamic Media Cloud 구성]** 에서 이 옵션을 설정할 수 있고, 원할 경우 폴더의  **[!UICONTROL 속성]**&#x200B;에서 폴더 수준에서 이 옵션을 설정하도록 선택할 수 있습니다.<br>Dynamic Media [의 선택적 게시 작업](/help/assets/selective-publishing.md)을 참조하십시오.<br>나중에 이 구성을 변경하거나 나중에 폴더 수준에서 변경하면 해당 변경 사항은 해당 시점부터 업로드하는 새 자산에만 영향을 줍니다. 폴더에 있는 기존 자산의 게시 상태는 **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 게시 관리]** 대화 상자에서 수동으로 변경할 때까지 그대로 유지됩니다.
    * **[!UICONTROL 보안 미리 보기 서버]**  - 보안 변환 미리 보기 서버의 URL 경로를 지정할 수 있습니다. 즉, 표현물이 생성되면 Experience Manager이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리가 Experience Manager 인스턴스로 다시 전송되지 않음).
 회사의 서버나 특수 서버를 사용하기 위해 특별한 계획이 없는 한 Adobe은 이 설정을 지정된 대로 유지하는 것을 권장합니다.
 
@@ -118,7 +118,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * **[!UICONTROL Dynamic Media 동기화 모드]**
       * **[!UICONTROL 기본적으로 활성화됨]**  - 제외에 특별히 폴더를 표시하지 않는 한 기본적으로 모든 폴더에 구성이 적용됩니다.  <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 기본적으로 비활성화됨]**  - Dynamic Media에 동기화할 선택한 폴더를 명시적으로 표시할 때까지 구성은 폴더에 적용되지 않습니다.
-선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 누릅니다. **[!UICONTROL 세부 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중에서 선택합니다. 완료되면 **[!UICONTROL 저장]**&#x200B;을 누릅니다. *기억:앞서 모든 컨텐츠 동기화를 선택한 경우에는 이 세&#x200B;**가지 옵션을 사용할 수**없습니다.* Dynamic Media [의 폴더 수준에서 선택적 게시 작업 을 참조하십시오.](/help/assets/selective-publishing.md)
+선택한 폴더를 Dynamic Media에 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 누릅니다. **[!UICONTROL 세부 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중에서 선택합니다. 완료되면 **[!UICONTROL 저장]**&#x200B;을 누릅니다. *기억:앞서 모든 컨텐츠 동기화를 선택한 경우에는 이 세&#x200B;**[!UICONTROL 가지 옵션을 사용할 수]**없습니다.* Dynamic Media [의 폴더 수준에서 선택적 게시 작업](/help/assets/selective-publishing.md)을 참조하십시오.
          * **[!UICONTROL 상속됨]**  - 폴더에 명시적 동기화 값이 없습니다.대신 폴더는 상위 폴더 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속받습니다. 도구 설명을 통해 상속된 표시에 대한 세부 상태입니다.
          * **[!UICONTROL 하위 폴더에 사용]**  - Dynamic Media에 동기화할 이 하위 트리에 모든 것을 포함합니다. 폴더별 설정은 클라우드 구성에서 기본 모드를 덮어씁니다.
          * **[!UICONTROL 하위 폴더에 대해 비활성화]**  - 이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다.
@@ -132,7 +132,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    * [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
 
-   * 페이지 오른쪽 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정 > Application Setup > Publish Setup > Image Server]**&#x200B;를 누릅니다.
+   * 페이지의 오른쪽 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;를 누릅니다.
 
    * 이미지 서버 게시 페이지의 게시 컨텍스트 드롭다운 목록에서 **[!UICONTROL 테스트 이미지 제공]**&#x200B;을 선택합니다.
    * 클라이언트 주소 필터에 대해 **[!UICONTROL 추가]**&#x200B;를 누릅니다.
@@ -172,7 +172,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 지정
 
 게시 설정 설정은 Dynamic Media에서 기본적으로 자산이 전달되는 방법을 결정합니다. 지정된 설정이 없으면 Dynamic Media은 게시 설정에 정의된 기본 설정에 따라 자산을 전달합니다. 예를 들어, 해상도 속성을 포함하지 않는 이미지 전달에 대한 요청에서 기본 개체 해상도 설정이 있는 이미지가 생성됩니다.
 
-게시 설정을 구성하려면:Dynamic Media Classic에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 누릅니다.
+게시 설정을 구성하려면:Dynamic Media Classic에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;를 탭합니다.
 
 이미지 서버 화면은 이미지 전달을 위한 기본 설정을 설정합니다. 각 설정에 대한 설명은 UI 화면을 참조하십시오.
 
@@ -182,11 +182,11 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 지정
 * **[!UICONTROL 카탈로그 필드의 기본값]** - 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
 * **[!UICONTROL 색상 관리 속성]**  - 이 설정은 사용할 ICC 색상 프로파일을 결정합니다.
 * **[!UICONTROL 호환성 속성]**  - 이 설정을 사용하면 이전 버전과의 호환성을 위해 텍스트 레이어의 이전 및 이후 단락을 버전 3.6의 단락과 동일하게 처리할 수 있습니다.
-* **[!UICONTROL 로컬라이제이션 지원]**  - 이 설정을 사용하여 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정하여 뷰어의 다양한 도구 설명에 대해 지원할 언어를 정의할 수 있습니다. **[현지화 지원]** 설정에 대한 자세한 내용은 [자산 현지화 설정 시 고려 사항](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html)을 참조하십시오.
+* **[!UICONTROL 로컬라이제이션 지원]**  - 이 설정을 사용하여 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정하여 뷰어의 다양한 도구 설명에 대해 지원할 언어를 정의할 수 있습니다. **[현지화 지원]** 설정에 대한 자세한 내용은 [자산 현지화 설정 시 고려 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets)을 참조하십시오.
 
 #### 응용 프로그램 일반 설정 구성 중 {#configuring-application-general-settings}
 
-응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 모음에서 **[!UICONTROL 설정 > 응용 프로그램 설정 > 일반 설정]**&#x200B;을 누릅니다.
+응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;을 누릅니다.
 
 **[!UICONTROL 서버]**  - 계정 프로비저닝에서 Dynamic Media은 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 애플리케이션에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 적용됩니다. 고객 지원 센터에서 명시적으로 지시한 경우를 제외하고 서버 이름을 변경하지 마십시오.
 
@@ -249,7 +249,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 **지원되는 형식에 대한 MIME 유형을 편집하려면:**
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구 > 일반 > CRXDE Lite]**&#x200B;을 누릅니다.
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;을 탭합니다.
 1. 왼쪽 레일에서 다음 위치로 이동합니다.
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -276,7 +276,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
 
 **지원되지 않는 형식에 대한 MIME 유형을 추가하려면 다음을 수행합니다.**
 
-1. Experience Manager에서 **[!UICONTROL 도구 > 작업 > 웹 콘솔]**&#x200B;을 누릅니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 누릅니다.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -294,7 +294,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
 
 1. 방금 추가한 빈 텍스트 필드에 `DWG=image/vnd.dwg`을 입력합니다.
 
-   `DWG=image/vnd.dwg` 예제는 그림 용도로만 사용됩니다. 여기에 추가하는 MIME 유형은 다른 지원되지 않는 형식일 수 있습니다.
+   예제 `DWG=image/vnd.dwg`는 데모용으로만 사용됩니다. 여기에 추가하는 MIME 유형은 다른 지원되지 않는 형식일 수 있습니다.
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
@@ -303,7 +303,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
    이때 열려 있는 Adobe Experience Manager 웹 콘솔 구성 페이지가 있는 브라우저 탭을 닫을 수 있습니다.
 
 1. 열려 있는 Experience Manager 콘솔이 있는 브라우저 탭으로 돌아갑니다.
-1. Experience Manager에서 **[!UICONTROL 도구 > 일반 > CRXDE Lite]**&#x200B;를 누릅니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;을 누릅니다.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -330,7 +330,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
 
 파일을 업로드하면 Dynamic Media에서 활성 사전 설정에서 정의된 명명 규칙과 일치하는 모든 파일이 있는 세트를 자동으로 만듭니다.
 
-**기본 이름 지정 구성**
+##### 기본 이름 지정 구성
 
 배치 집합 사전 설정 배합식에서 사용되는 기본 이름 지정 규칙을 만듭니다. 배치 집합 사전 설정 정의에서 선택한 기본 이름 지정 규칙은 일괄 생성 세트에 필요한 모든 것입니다. 사용자가 정의하는 기본 이름 지정 규칙을 사용하도록 배치 세트 사전 설정이 생성됩니다. 회사에서 정의한 기본 이름에 예외가 있는 경우 특정 컨텐츠 세트에 필요한 대체 사용자 지정 이름 지정 규칙을 사용하여 일괄처리 집합 사전 설정을 최대 많이 만들 수 있습니다.
 
@@ -346,7 +346,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
 
-1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 일괄처리 세트 사전 설정 > 기본 이름 지정]**&#x200B;을 누릅니다.
+1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 배치 설정]** > **[!UICONTROL 기본 이름 지정]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 양식 보기]** 또는 **[!UICONTROL 코드 보기]**&#x200B;를 선택하여 각 요소에 대한 정보를 보고 입력하는 방법을 지정합니다.
 
    **[!UICONTROL 코드 보기]** 확인란을 선택하여 양식 선택과 함께 작성되는 정규식 값을 볼 수 있습니다. 양식 보기에서 어떤 이유로든 사용자를 제한하는 경우 이름 지정 규칙의 요소를 정의하는 데 도움이 되도록 이러한 값을 입력하거나 변경할 수 있습니다. 값을 양식 보기에서 구문 분석할 수 없는 경우 양식 필드는 비활성 상태가 됩니다.
@@ -365,7 +365,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
    * **[!UICONTROL 다른 이름으로 저장]**&#x200B;을 탭하고 사전 설정의 이름을 입력합니다.
    * 기존 사전 설정을 편집하는 경우 **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
-**배치 집합 사전 설정 생성**
+##### 배치 집합 사전 설정 생성
 
 Dynamic Media은 일괄처리 집합 사전 설정을 사용하여 뷰어에 표시할 이미지 세트(대체 이미지, 색상 옵션, 360spin)로 자산을 구성합니다. 일괄처리 집합 사전 설정은 Dynamic Media의 자산 업로드 프로세스와 함께 자동으로 실행됩니다.
 
@@ -379,7 +379,7 @@ Dynamic Media은 일괄처리 집합 사전 설정을 사용하여 뷰어에 표
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
 
-1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정 > 애플리케이션 설정 > 일괄처리 세트 사전 설정 > 일괄처리 세트 사전 설정]**&#x200B;을 누릅니다.
+1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 배치 설정]** > **[!UICONTROL 배치 설정 사전 설정]**&#x200B;을 누릅니다.
 
    **[!UICONTROL 세부 사항]** 페이지의 오른쪽 위 모서리에 설정된 대로 보기 양식이 기본 보기입니다.
 
@@ -388,7 +388,7 @@ Dynamic Media은 일괄처리 집합 사전 설정을 사용하여 뷰어에 표
 1. 배치 세트 유형 드롭다운 메뉴에서 사전 설정 유형을 선택합니다.
 1. 다음 중 하나를 수행하십시오.
 
-   * 이전에 **[!UICONTROL 애플리케이션 설정 > 일괄처리 집합 사전 설정 > 기본 이름 지정]**&#x200B;에서 설정한 기본 이름 지정 규칙을 사용하는 경우 **[!UICONTROL 자산 이름 지정 규칙]**&#x200B;을 확장한 다음 파일 이름 지정 드롭다운 목록에서 **[!UICONTROL 기본]**&#x200B;을 탭합니다.
+   * 이전에 **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 일괄처리 집합 사전 설정]** > **[!UICONTROL 기본 이름 지정]**&#x200B;에서 설정한 기본 이름 지정 규칙을 사용하는 경우 **[!UICONTROL 자산 이름 지정 규칙]**&#x200B;을 확장한 다음 파일 이름 지정 드롭다운 목록에서 **[!UICONTROL 기본]**&#x200B;를 탭합니다.
 
    * 사전 설정을 설정할 때 새 이름 지정 규칙을 정의하려면 **[!UICONTROL 자산 이름 지정 규칙]**&#x200B;을 확장한 다음 파일 이름 지정 드롭다운 목록에서 **[!UICONTROL 사용자 지정]**&#x200B;을 누릅니다.
 
@@ -405,7 +405,7 @@ Dynamic Media은 일괄처리 집합 사전 설정을 사용하여 뷰어에 표
 
    사전 설정을 활성화하면 Dynamic Media에 자산을 업로드할 때 세트 사전 설정이 적용되어 세트가 생성됩니다.
 
-**2D 스핀 세트의 자동 생성을 위한 배치 세트 사전 설정 생성**
+##### 2D 스핀 세트의 자동 생성을 위한 배치 세트 사전 설정 생성
 
 배치 세트 유형 **[!UICONTROL 다축 스핀 세트]**&#x200B;를 사용하여 2D 스핀 세트 생성을 자동화하는 레서피를 생성할 수 있습니다. 이미지 그룹화에서는 이미지 자산이 다차원 배열의 해당 위치에서 제대로 정렬되도록 행 및 열 정규 표현식을 사용합니다. 다축 스핀 세트에 있어야 하는 최소 또는 최대 행 또는 열 수는 없습니다.
 
@@ -425,9 +425,9 @@ spin-01-01
 
 ![chlimage_1-560](assets/chlimage_1-560.png)
 
-스핀 세트의 공유 자산 이름 부분에 대한 그룹이 **일치** 필드에 추가됩니다(강조 표시된 대로). 행과 열이 포함된 자산 이름의 변수 부분이 각각 **Row** 및 **Column** 필드에 추가됩니다.
+스핀 세트의 공유 자산 이름 부분에 대한 그룹이 **[!UICONTROL 일치]** 필드에 추가됩니다(강조 표시된 대로). 행과 열이 포함된 자산 이름의 변수 부분이 각각 **[!UICONTROL Row]** 및 **[!UICONTROL Column]** 필드에 추가됩니다.
 
-스핀 세트가 업로드되고 게시되면 **업로드 작업 옵션** 대화 상자의 **일괄 세트 사전 설정** 아래에 나열된 2D 스핀 세트 레서피의 이름을 활성화합니다.
+스핀 세트가 업로드되고 게시되면 **[!UICONTROL 업로드 작업 옵션]** 대화 상자의 **[!UICONTROL 일괄 세트 사전 설정]** 아래에 나열된 2D 스핀 세트 레서피의 이름을 활성화합니다.
 
 **2D 스핀 세트의 자동 생성을 위한 배치 세트 사전 설정을 생성하려면:**
 
@@ -435,7 +435,7 @@ spin-01-01
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
 
-1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정] > [!UICONTROL 애플리케이션 설정] > [!UICONTROL 배치 설정] > [!UICONTROL 배치 설정 사전 설정]**&#x200B;을 누릅니다.
+1. 페이지 상단 근처에 있는 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 배치 설정]** > **[!UICONTROL 배치 설정 사전 설정]**&#x200B;을 누릅니다.
 
    **[!UICONTROL 세부 사항]** 페이지의 오른쪽 위 모서리에 설정된 대로 보기 양식이 기본 보기입니다.
 
@@ -470,7 +470,7 @@ spin-01-01
 
    `\w+-\w+-C(\d+)`
 
-   위의 샘플은 그림 용도로만 사용할 수 있습니다. 원하는 대로 정규 표현식을 만들 수 있습니다.
+   위의 샘플은 데모용으로만 사용됩니다. 원하는 대로 정규 표현식을 만들 수 있습니다.
 
    >[!NOTE]
    행과 열 정규 표현식의 조합이 다차원 스핀 세트 배열 내에서 자산의 위치를 확인할 수 없는 경우, 자산이 세트에 추가되지 않습니다. 오류가 기록됩니다.
@@ -592,41 +592,17 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
 이미징, 비디오 또는 둘 다에 Dynamic Media을 사용하는 경우, Adobe이 제공하는 기본 필터를 그대로 사용할 수 있습니다. 다음 필터는 기본적으로 활성화되어 있습니다.
 
-<table>
- <tbody>
-  <tr>
-   <td> </td>
-   <td><strong>필터</strong></td>
-   <td><strong>MIME 유형</strong></td>
-   <td><strong>표현물</strong></td>
-  </tr>
-  <tr>
-   <td>Dynamic Media 이미지 제공</td>
-   <td><p>필터 이미지</p> <p>필터 세트</p> <p> </p> </td>
-   <td><p><strong>image/</strong>로 시작</p> <p><strong>application/</strong>을 포함하고 <strong>set</strong>로 끝납니다.</p> </td>
-   <td>곧바로 사용할 수 있는 "필터 이미지"(대화형 이미지를 포함하여 단일 이미지 자산에 적용) 및 "필터 세트"(스핀 세트, 이미지 세트, 혼합 미디어 세트 및 회전 메뉴 세트에 적용)는 다음과 같습니다.
-    <ul>
-     <li>복제에서 원본 이미지 및 정적 이미지 표현물을 제외합니다.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Dynamic Media 비디오 제공</td>
-   <td>필터 비디오</td>
-   <td><strong>video/</strong>로 시작합니다.</td>
-   <td>곧바로 사용할 수 있는 "filter-video"는
-    <ul>
-     <li>원본 비디오 및 정적 축소판 그림 표현물을 복제에서 제외합니다.<br /> <br /> </li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+|  | 필터 | MIME 유형 | 표현물 |
+| --- | --- | --- | --- |
+| Dynamic Media 이미지 제공 | filter-image<br>filter-sets | **image/**<br>&#x200B;에 **applications/**&#x200B;로 시작하고 **set**&#x200B;로 끝납니다. | 즉시 사용 가능한 &quot;필터 이미지&quot;(대화형 이미지를 포함하여 단일 이미지 자산에 적용) 및 &quot;필터 세트&quot;(스핀 세트, 이미지 세트, 혼합 미디어 세트 및 회전 메뉴 세트에 적용)는<br>원본 이미지 및 정적 이미지 표현물 복제에서 ・ 제외합니다. |
+| Dynamic Media 비디오 제공 | 필터 비디오 | **video/**&#x200B;로 시작합니다. | 곧바로 사용할 수 있는 &quot;필터 비디오&quot;는<br> 원본 비디오 및 정적 축소판 그림 표현물・ 복제에서 제외합니다. |
 
 >[!NOTE]
 필터는 MIME 유형에 적용되며 경로별로 지정할 수 없습니다.
 
 #### 복제에 대한 자산 필터 사용자 지정 {#customizing-asset-filters-for-replication}
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구 > 일반 > CRXDE Lite]**&#x200B;를 누릅니다.
+1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;를 탭합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` 로 이동하여 필터를 검토합니다.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
@@ -649,31 +625,16 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
    복제에 대해 필터링할 수 있는 문자는 다음과 같습니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>사용할 문자</strong></td>
-   <td><strong>복제용으로 자산을 필터링하는 방법</strong></td>
-  </tr>
-  <tr>
-   <td>*</td>
-   <td>와일드카드 문자</td>
-  </tr>
-  <tr>
-   <td>+</td>
-   <td>복제할 자산을 포함합니다.</td>
-  </tr>
-  <tr>
-   <td>-</td>
-   <td>복제에서 자산을 제외합니다.</td>
-  </tr>
- </tbody>
-</table>
+   | 사용할 문자 | 복제용으로 자산을 필터링하는 방법 |
+   | --- | --- |
+   | * | 와일드카드 문자 |
+   | + | 복제할 자산 포함 |
+   | - | 복제에서 자산 제외 |
 
-다음으로 이동 `content/dam/<locate your asset>/jcr:content/renditions`.
+   다음으로 이동 `content/dam/<locate your asset>/jcr:content/renditions`.
 
-다음 그래픽은 자산 표현물의 예입니다.
+   다음 그래픽은 자산 표현물의 예입니다.
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+   ![chlimage_1-4](assets/chlimage_1-4.png)
 
-원본만 복제하려면 `+original`을 입력합니다.
+   원본만 복제하려면 `+original`을 입력합니다.
