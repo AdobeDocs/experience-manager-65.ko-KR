@@ -10,22 +10,22 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: Business Practitioner, Administrator
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: 공동 작업,자산 관리
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '424'
 ht-degree: 29%
 
 ---
 
 # Dynamic Media 작업 {#working-with-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 제공하는 데 도움이 됩니다. 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 제공하는 데 도움이 됩니다. 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
 
 Dynamic Media는 확대/축소, 360도 회전, 비디오를 비롯한 대화형 보기 환경을 제공합니다. Dynamic Media는 Adobe Experience Manager 디지털 자산 관리(Assets) 솔루션의 워크플로우를 고유하게 통합하여 디지털 캠페인 관리 프로세스를 단순화하고 간소화합니다.
 
->[!NOTE]
+<!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
->커뮤니티 문서는 [Adobe Experience Manager 및 Dynamic Media 작업](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)에서 사용할 수 있습니다.
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
 ## Dynamic Media {#what-you-can-do-with-dynamic-media}으로 수행할 수 있는 작업
 
@@ -50,7 +50,7 @@ Dynamic Media 전용 기능에는 다음이 포함됩니다.
 
 >[!NOTE]
 >
->Dynamic Media 사용 및 Dynamic Media Classic과 AEM 통합 간의 차이점을 이해하려면 [Dynamic Media Classic 통합과 Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) 를 참조하십시오.
+>Dynamic Media 사용 및 Dynamic Media Classic과 Adobe Experience Manager 통합 간의 차이점을 이해하려면 [Dynamic Media Classic 통합과 Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) 를 참조하십시오.
 
 ## Dynamic Media이 활성화되어 있고 Dynamic Media이 비활성화되어 있음 {#dynamic-media-on-versus-dynamic-media-off}
 
