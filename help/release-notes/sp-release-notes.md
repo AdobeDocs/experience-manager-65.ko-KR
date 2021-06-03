@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 0f70c011cc192df0650c3ec666bae2c26653b444
+source-git-commit: 7d3c8d9266bdec3f75211cfa0636217fd8b054ca
 workflow-type: tm+mt
-source-wordcount: '3391'
-ht-degree: 14%
+source-wordcount: '3874'
+ht-degree: 15%
 
 ---
 
@@ -75,6 +75,18 @@ ht-degree: 14%
       >
    * 아시아 태평양 2021년 6월 24일.
 
+
+* [!UICONTROL 작업 할당] 워크플로우 단계를 사용하여 그룹에 알림 이메일을 보낼 수 있습니다.
+
+* 소스 Interactive Communication을 수정한 후 Interactive Communication 초안을 검색하는 기능.
+
+* [!DNL Experience Manager Forms]에서 reCAPTCHA 서비스를 로드, 렌더링 및 유효성 검사하기 위한 사용자 지정 도메인 이름을 설정합니다.
+
+* [!UICONTROL 양식 데이터 모델 서비스 호출] 워크플로우 단계에 대한 입력 데이터 개선 사항.
+
+* [!DNL Experience Manager Forms]의 레코드 문서 템플릿에서 여러 마스터 페이지를 사용할 수 있습니다.
+
+* [!DNL Experience Manager Forms]의 레코드 문서에서 지원 페이지가 중단됩니다.
 
 * 내장된 저장소(Apache Jackrabbit Oak)가 1.22.7.
 
@@ -307,7 +319,50 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] 는 예정된  [!DNL Experience Manager] 서비스 팩 릴리스 날짜로부터 1주일 후에 추가 기능 패키지를 출시합니다.
+>* [!DNL Experience Manager Forms] 는 예정된  [!DNL Experience Manager] 서비스 팩 릴리스 날짜로부터 1주일 후에 추가 기능 패키지를 출시합니다.
+>* 이제 OSGi 배포에서 [!DNL Experience Manager Forms]용 [!DNL Azul Zulu] 빌드가 있는 애플리케이션을 개발 및 운영할 수 있습니다.[!DNL OpenJDK]
+
+
+**적응형 양식**
+
+* 여러 번역 사전을 생성하는 동안 [!DNL Experience Manager Forms] 6.5.7.0에서 언어 초기화 문제가 발생합니다(NPR-36439).
+* 적응형 양식 조각에 첨부 파일을 추가하고 양식을 제출하면 [!DNL Experience Manager Forms]에 다음 오류 메시지가 표시됩니다(NPR-36195).
+
+   ```TXT
+    POST /content/forms/af/attachmentissue/jcr:content/guideContainer.af.submit.jsp HTTP/1.1] com.adobe.aemds.guide.servlet.GuideSubmitServlet [AF] Invalid file name or mime type for file resulted in submission failure
+   ```
+
+* 인간 변환을 사용하여 사전을 업데이트한 다음 적응형 양식을 미리 보면 수정 사항이 표시되지 않습니다(NPR-36035).
+
+**대화형 통신**
+
+* 대화형 통신 인쇄 채널을 사용하여 이미지를 업로드하고 편집하면 이미지가 더 이상 표시되지 않습니다(NPR-36518).
+
+* 텍스트 자산을 편집하고 자리 표시자를 채우면 탐색 창에서 모든 대화형 요소가 제거됩니다(NPR-35991).
+
+**워크플로우**
+
+* JBoss에서 [!DNL Experience Manager Forms] 서비스의 REST 엔드포인트를 호출하면 [!DNL Experience Manager]에 다음 오류 메시지가 표시됩니다(NPR-36305).
+
+   ```TXT
+   Invalid input. The maximum length of 2000 characters was exceeded.
+   ```
+
+**백엔드 통합**
+
+* 읽기 서비스 인수를 대시가 포함된 리터럴 값에 바인딩하는 동안 양식 데이터 모델을 저장할 수 없습니다(NPR-36366).
+
+**문서 보안**
+
+* GlobalSign용 인증 및 HSM을 설정하면 LTV에 타임스탬프를 추가하는 동안 [!DNL Experience Manager Forms]에 `Unsuported Algorithm` 및 `Invalid TSA Certificate` 오류 메시지가 표시됩니다(NPR-36026, NPR-36025).
+
+**문서 서비스**
+
+* [!DNL Experience Manager Forms]과의 통합을 위해 [!DNL Gibson] 라이브러리에 대한 업데이트(NPR-36211).
+
+**Foundation JEE**
+
+* AdminUI에서 끝점 관리 를 선택하면 [!DNL Experience Manager Forms]에 `endpoint registry failure` 오류 메시지가 표시됩니다(CQ-4320249).
 
 보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html)를 참조하십시오.
 
@@ -365,34 +420,31 @@ B. [패키지 관리자에서 HTTP API](/help/sites-administering/package-manage
 
 이번 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하십시오.
 
-<!--
-
-### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+### Adobe Experience Manager Forms 추가 기능 패키지 설치 {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+>Forms Experience Manager을 사용하지 않는 경우 건너뜁니다. 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 후 1주일 후에 Forms Experience Manager의 수정 사항이 별도의 추가 기능 패키지를 통해 전달됩니다.
 
-1. Ensure that you have installed the Adobe Experience Manager Service Pack.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) for your operating system.
-1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-
->[!NOTE]
->
->AEM 6.5.9.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to AEM 6.5.9.0, install the latest version of the package post installation of Forms Add-On Package.
-
-### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+1. Adobe Experience Manager 서비스 팩을 설치했는지 확인합니다.
+1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
+1. [AEM Forms 추가 기능 패키지 설치](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
+>AEM 6.5.9.0에는 [AEM Forms 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 AEM 6.5.9.0으로 업데이트하는 경우 Forms 추가 기능 패키지의 패키지 설치 후 최신 버전을 설치하십시오.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+### JEE에 Adobe Experience Manager Forms 설치 {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
--->
+>JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 프로그램을 통해 JEE의 Adobe Experience Manager Forms 수정 사항이 전달됩니다.
+
+JEE의 Forms Experience Manager용 누적 설치 프로그램 설치 및 배포 후 구성에 대한 자세한 내용은 [릴리스 노트](jee-patch-installer-65.md)를 참조하십시오.
+
+>[!NOTE]
+>
+>JEE의 Forms Experience Manager용 누적 설치 프로그램을 설치한 후 최신 Forms 추가 기능 패키지를 설치하고 `crx-repository\install` 폴더에서 Forms 추가 기능 패키지를 삭제한 다음 서버를 다시 시작합니다.
 
 ### UberJar {#uber-jar}
 
