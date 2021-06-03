@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: 이미지 사전 설정
 role: Business Practitioner, Administrator
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3831'
 ht-degree: 3%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 3%
 
 ## Dynamic Media 이미지 사전 설정 관리 {#managing-image-presets-1}
 
-AEM 로고를 탭하거나 클릭하여 전역 탐색 콘솔에 액세스한 다음, 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산 > 이미지 사전 설정으로 이동하여 AEM에서 이미지 사전 설정을 관리합니다.]**
+AEM 로고를 탭하거나 클릭하여 전역 탐색 콘솔에 액세스한 다음, 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산 > 이미지 사전 설정]**&#x200B;으로 이동하여 AEM에서 이미지 사전 설정을 관리합니다.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -80,11 +80,11 @@ Adobe Illustrator의 파일 형식은 PDF의 변형입니다. AEM Assets 컨텍�
 * Adobe Illustrator 문서는 여러 레이어가 있는 단일 페이지로 구성됩니다. 각 레이어는 기본 Illustrator 자산 아래에 PNG 하위 자산으로 추출됩니다.
 * PDF 문서는 하나 이상의 페이지로 구성됩니다. 각 페이지는 주 다중 페이지 PDF 문서 아래에 단일 페이지 PDF 하위 자산으로 추출됩니다.
 
-하위 자산은 전체 `DAM Update Asset` 워크플로우 내에서 `Create Sub Asset process` 구성 요소에 의해 만들어집니다. 워크플로우 내에서 이 프로세스 구성 요소를 보려면 **[!UICONTROL 도구 > 워크플로우 > 모델 > DAM 자산 업데이트 > 편집을 누릅니다.]**
+하위 자산은 전체 `DAM Update Asset` 워크플로우 내에서 `Create Sub Asset process` 구성 요소에 의해 만들어집니다. 워크플로우 내에서 이 프로세스 구성 요소를 보려면 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**&#x200B;을 탭하십시오.
 
 또한 [다중 페이지 파일의 페이지 보기](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file)를 참조하십시오.
 
-자산을 열 때 하위 자산이나 페이지를 보고, 컨텐츠 메뉴를 탭하고 **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지 를 선택할 수 있습니다.]** 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 `Create Sub Asset` 워크플로우 구성 요소에 의해 추출됩니다. 그런 다음 기본 자산 아래에 `page1.pdf`, `page2.pdf` 등으로 저장됩니다. 저장되면 `DAM Update Asset` 워크플로우가 처리합니다.
+자산을 열 때 하위 자산이나 페이지를 보고, 컨텐츠 메뉴를 탭하고 **[!UICONTROL 하위 자산]** 또는 **[!UICONTROL 페이지]**&#x200B;를 선택할 수 있습니다. 하위 자산은 실제 자산입니다. 즉, PDF 페이지는 `Create Sub Asset` 워크플로우 구성 요소에 의해 추출됩니다. 그런 다음 기본 자산 아래에 `page1.pdf`, `page2.pdf` 등으로 저장됩니다. 저장되면 `DAM Update Asset` 워크플로우가 처리합니다.
 
 Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 렌디션을 미리 보고 생성하려면 다음 처리 단계를 수행해야 합니다.
 
@@ -105,7 +105,7 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 렌디�
 
 `DAM Update Asset` 워크플로우를 통해 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소 옵션에 액세스합니다.
 
-왼쪽 상단에 있는 Adobe Experience Manager을 탭하고 **[!UICONTROL 도구 > 워크플로우 > 모델로 이동합니다.]** 워크플로우 모델 페이지에서  **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음 도구 모음에서  **[!UICONTROL 편집 을 탭합니다.]** DAM 자산  [!UICONTROL 업데이트 ] 워크플로우 페이지에서  `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 두 번 탭하여 해당 단계 속성 대화 상자를 엽니다.
+왼쪽 상단에 있는 Adobe Experience Manager을 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;로 이동합니다. 워크플로우 모델 페이지에서 **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 선택한 다음 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 누릅니다. [!UICONTROL DAM 자산 업데이트] 워크플로우 페이지에서 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소를 두 번 탭하여 해당 단계 속성 대화 상자를 엽니다.
 
 #### PDF/AI 이미지 미리 보기 변환 옵션 {#rasterize-pdf-ai-image-preview-rendition-options} 래스터화
 
@@ -203,7 +203,7 @@ ExtendScript은 [!UICONTROL DAM 자산 업데이트] 워크플로우의 미디�
 >* EPS 파일의 축소판 크기는 축소판 그림 아래의 **[!UICONTROL 인수]** 탭의 **[!UICONTROL EPS 축소판 그림]** 단계에서 구성됩니다.
    >
    >
-* 비디오의 축소판 크기는 **[!UICONTROL FFmpeg 축소판 그림]** 단계의 **[!UICONTROL 인수 아래의**[!UICONTROL &#x200B;프로세스&#x200B;]**탭에 구성됩니다.]**
+* 비디오의 축소판 크기는 **[!UICONTROL FFmpeg 축소판 그림]** 단계의 **[!UICONTROL 인수]** 아래의 **[!UICONTROL 프로세스]** 탭에 구성됩니다.
 
 >
 
@@ -211,12 +211,12 @@ ExtendScript은 [!UICONTROL DAM 자산 업데이트] 워크플로우의 미디�
 
 **이미지 축소판 크기를 구성하려면**:
 
-1. **[!UICONTROL 도구 > 워크플로우 > 모델 > DAM 자산 업데이트 > 편집을 누릅니다.]**
-1. **[!UICONTROL Dynamic Media 이미지 자산 처리]** 단계를 탭하고 **[!UICONTROL 축소판]** 탭을 탭하거나 클릭합니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인]**
+1. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]** > **[!UICONTROL DAM 자산 업데이트]** > **[!UICONTROL 편집]**&#x200B;을 탭합니다.
+1. **[!UICONTROL Dynamic Media 이미지 자산 처리]** 단계를 탭하고 **[!UICONTROL 축소판]** 탭을 탭하거나 클릭합니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
    ![6_5_dynamicmediaprocesseassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. **[!UICONTROL 축소판 처리]** 단계를 누른 다음 **[!UICONTROL 축소판]** 탭을 탭합니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인]**
+1. **[!UICONTROL 축소판 처리]** 단계를 누른 다음 **[!UICONTROL 축소판]** 탭을 탭합니다. 필요에 따라 축소판 크기를 변경한 다음 **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
    >[!NOTE]
    >
@@ -226,7 +226,7 @@ ExtendScript은 [!UICONTROL DAM 자산 업데이트] 워크플로우의 미디�
 
 ### {#increasing-or-decreasing-the-number-of-image-presets-that-display}을 표시하는 Dynamic Media 이미지 사전 설정 수를 늘리거나 줄입니다
 
-만드는 이미지 사전 설정은 자산을 미리 볼 때 동적 변환으로 사용할 수 있습니다. AEM은 **[!UICONTROL 세부 사항 보기 > 표현물에서 자산을 볼 때 다양한 동적 표현물을 보여줍니다.]** 표시되는 표현물의 제한을 늘리거나 줄일 수 있습니다.
+만드는 이미지 사전 설정은 자산을 미리 볼 때 동적 변환으로 사용할 수 있습니다. AEM은 **[!UICONTROL 세부 사항 보기 > 표현물]**&#x200B;에서 자산을 볼 때 다양한 동적 표현물을 보여줍니다. 표시되는 표현물의 제한을 늘리거나 줄일 수 있습니다.
 
 **표시되는 Dynamic Media 이미지 사전 설정 수를 늘리거나 줄이려면**:
 
@@ -241,7 +241,7 @@ ExtendScript은 [!UICONTROL DAM 자산 업데이트] 워크플로우의 미디�
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. limit 속성에서 숫자를 원하는 숫자(예: `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`)로 변경합니다.
-1. **[!UICONTROL 모두 저장.]**
+1. **[!UICONTROL 모두 저장]**&#x200B;을 누릅니다.
 
 ## Dynamic Media 이미지 사전 설정 만들기 {#creating-image-presets}
 
@@ -263,8 +263,8 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 **Dynamic Media 이미지 사전 설정을 만들려면**:
 
-1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구 > 자산 > 이미지 사전 설정.]**
-1. **[!UICONTROL 만들기를 클릭합니다.]** 이미지  **[!UICONTROL 사전 설정 편집]** 창이 열립니다.
+1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구 > 자산 > 이미지 사전 설정]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL 이미지 사전 설정 편집]** 창이 열립니다.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -304,7 +304,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 * **[!UICONTROL 단순 선명도 사용]**  - [단순 선명도 사용]을 선택하지  **[!UICONTROL 마십시오]** (이 선명도 필터는 [언샵 마스킹 설정]보다 덜 제어함).
 
-* **[!UICONTROL 선명하게 하기:재샘플링 모드]**  -  **[!UICONTROL Bi-Cubic을 선택합니다.]**
+* **[!UICONTROL 선명하게 하기:재샘플링 모드]**  -  **[!UICONTROL Bi-Cubic을 선택합니다]**.
 
 #### 기본 탭 옵션 {#basic-tab-options}
 
@@ -495,11 +495,11 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 ## 이미지 사전 설정 편집 {#modifying-image-presets}
 
-1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구 > 자산 > 이미지 사전 설정.]**
+1. AEM에서 AEM 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;을 탭합니다.
 
    ![6_5_image사전 설정-편집 사전 설정](assets/6_5_imagepreset-editpreset.png)
 
-1. 사전 설정을 선택한 다음 **[!UICONTROL 편집을 클릭합니다.]** 이미지  **[!UICONTROL 사전 설정 편집]** 창이 열립니다.
+1. 사전 설정을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. **[!UICONTROL 이미지 사전 설정 편집]** 창이 열립니다.
 1. 변경 작업을 수행하고 **[!UICONTROL 저장]**&#x200B;을 클릭하여 변경 내용을 저장하거나 **[!UICONTROL 취소]**&#x200B;를 클릭하여 변경 내용을 취소합니다.
 
 ## Dynamic Media 이미지 사전 설정 게시 {#publishing-image-presets}
@@ -510,14 +510,14 @@ Dynamic Media - 하이브리드 모드를 실행하는 경우 이미지 사전 �
 
 **Dynamic Media - 하이브리드 모드에서 이미지 사전 설정을 게시하려면 다음을 수행하십시오**.
 
-1. AEM에서 AEM 로고를 탭하거나 클릭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산 > 이미지 사전 설정으로 이동합니다.]**
-1. 이미지 사전 설정 목록에서 이미지 사전 설정 또는 여러 이미지 사전 설정을 선택하고 **[!UICONTROL 게시 를 클릭하거나 탭합니다.]**
+1. AEM에서 AEM 로고를 탭하거나 클릭하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 탭하거나 클릭하고 **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;으로 이동합니다.
+1. 이미지 사전 설정 목록에서 이미지 사전 설정 또는 여러 이미지 사전 설정을 선택하고 **[!UICONTROL 게시]**&#x200B;를 클릭하거나 탭합니다.
 1. 이미지 사전 설정이 게시되면 상태가 게시 취소에서 게시됨으로 변경됩니다.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
 ## Dynamic Media 이미지 사전 설정 삭제 {#deleting-image-presets}
 
-1. AEM에서 AEM 로고를 탭하거나 클릭하여 전역 탐색 콘솔에 액세스합니다.
-1. **[!UICONTROL 도구]** 아이콘을 탭한 다음, **[!UICONTROL 자산 > 이미지 사전 설정으로 이동합니다.]**
+1. Experience Manager에서 AEM 로고를 탭하거나 클릭하여 전역 탐색 콘솔에 액세스합니다.
+1. **[!UICONTROL 도구]** 아이콘을 탭한 다음, **[!UICONTROL 자산]** > **[!UICONTROL 이미지 사전 설정]**&#x200B;으로 이동합니다.
 1. 사전 설정을 선택한 다음 **[!UICONTROL 삭제]**&#x200B;를 클릭합니다. Dynamic Media에서 삭제를 확인합니다. **[!UICONTROL 삭제]**&#x200B;를 탭하여 **[!UICONTROL 취소]**&#x200B;를 삭제하거나 탭합니다.
