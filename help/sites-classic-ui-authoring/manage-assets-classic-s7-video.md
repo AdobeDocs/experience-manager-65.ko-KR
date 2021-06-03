@@ -8,10 +8,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 89%
+source-wordcount: '1699'
+ht-degree: 87%
 
 ---
 
@@ -148,8 +148,8 @@ Dynamic Media Classic 클라우드 구성에서 선택한 Dynamic Media Classic 
 >
 >새 비디오 프로필 및 해당 변경 사항을 게시하려면 활성화해야 합니다.
 
-1. AEM에서 **[!UICONTROL 도구]**&#x200B;로 이동한 후 **[!UICONTROL 구성 콘솔을 선택합니다.]** 구성 콘솔에서 탐색 트리의 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
-1. 새 Dynamic Media Classic 비디오 프로필을 만듭니다. **[!UICONTROL 새로 만들기...]** 메뉴에서 **[!UICONTROL 페이지 만들기]**&#x200B;를 선택한 다음 Dynamic Media Classic 비디오 프로필 템플릿을 선택합니다. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]**&#x200B;로 이동한 다음 **[!UICONTROL 구성 콘솔]**&#x200B;을 선택합니다. 구성 콘솔에서 탐색 트리의 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
+1. 새 Dynamic Media Classic 비디오 프로필을 만듭니다. **[!UICONTROL 새로 만들기]**. 메뉴에서 **[!UICONTROL 페이지 만들기]**&#x200B;를 선택한 다음 Dynamic Media Classic 비디오 프로필 템플릿을 선택합니다. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
