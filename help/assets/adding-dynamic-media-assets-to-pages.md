@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: 구성 요소,게시
-source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '3210'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic M
 
 1. Experience Manager에서 Dynamic Media 구성 요소를 추가할 페이지를 엽니다.
 1. 페이지 왼쪽에 있는 패널에서(필요한 경우 사이드 패널의 표시를 토글) **[!UICONTROL 구성 요소]** 아이콘을 클릭합니다.
-1. **[!UICONTROL 구성 요소]** 제목의 드롭다운 목록에서 **[!UICONTROL Dynamic Media.]**
+1. **[!UICONTROL 구성 요소]** 제목의 드롭다운 목록에서 **[!UICONTROL Dynamic Media]**&#x200B;을 선택합니다.
 
    사용 가능한 Dynamic Media 구성 요소 목록이 없는 경우 사용할 Dynamic Media 구성 요소를 활성화해야 합니다. [Dynamic Media 구성 요소 활성화](#enabling-dynamic-media-components)를 참조하십시오.
 
@@ -74,7 +74,7 @@ Adobe Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic M
 
    ![허용된 구성 요소](/help/assets/assets-dm/allowed-components.png)
 
-1. **[!UICONTROL Dynamic Media이 표시될 때까지 스크롤합니다.]**
+1. **[!UICONTROL Dynamic Media]**&#x200B;이 표시될 때까지 스크롤합니다.
 1. **[!UICONTROL Dynamic Media]** 왼쪽의 > 아이콘을 탭하여 목록을 확장하고 활성화할 Dynamic Media 구성 요소를 선택할 수 있습니다.
 
    ![Dynamic Media 구성 요소 목록](/help/assets/assets-dm/dm-components-select.png)
@@ -99,7 +99,7 @@ Adobe Experience Manager을 WCM으로 사용하는 경우 페이지에 Dynamic M
 
 ## Dynamic Media 구성 요소 {#dynamic-media-components}
 
-Dynamic Media 구성 요소는 **[!UICONTROL 구성 요소]** 아이콘을 탭한 다음, **[!UICONTROL Dynamic Media에서 필터링하면 사용할 수 있습니다.]**
+Dynamic Media 구성 요소는 **[!UICONTROL 구성 요소]** 아이콘을 탭한 다음, **[!UICONTROL Dynamic Media]**&#x200B;에서 필터링할 수 있습니다.
 
 사용 가능한 Dynamic Media 구성 요소는 다음과 같습니다.
 
@@ -142,13 +142,13 @@ Dynamic Media 구성 요소를 사용하면 이미지 세트, 스핀 세트 및 
 
 구성 요소에서 바로 뷰어 사전 설정, 이미지 사전 설정 또는 이미지 형식을 구성할 수도 있습니다. 이미지를 응답형으로 만들려면 중단점을 설정하거나 응답형 이미지 사전 설정을 적용할 수 있습니다.
 
-구성 요소에서 **[!UICONTROL 편집]** 아이콘을 탭한 다음, **[!UICONTROL Dynamic Media 설정을 탭하여 다음 Dynamic Media 설정을 편집합니다.]**
+구성 요소에서 **[!UICONTROL 편집]** 아이콘을 탭한 다음, **[!UICONTROL Dynamic Media 설정]**&#x200B;을 탭하여 다음 Dynamic Media 설정을 편집합니다.
 
 ![dm-settings-image-사전 설정](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. 고정 크기로 설정하려면 **[!UICONTROL Width]** 및 **[!UICONTROL Height.]******
+>기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. 고정 크기로 설정하려면 **[!UICONTROL 고급]** 탭의 구성 요소에서 **[!UICONTROL 폭]** 및 **[!UICONTROL 높이]**&#x200B;를 설정하십시오.
 
 * **[!UICONTROL 뷰어 사전 설정]**  - 드롭다운 메뉴에서 기존 뷰어 사전 설정을 선택합니다. 보려는 뷰어 사전 설정이 표시되지 않을 경우 표시되도록 설정해야 합니다. [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오. 이미지 사전 설정을 사용하고 있고 반대로 뷰어 사전 설정을 선택할 수는 없습니다.
 
@@ -236,7 +236,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
 >[!NOTE]
 >
->기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. 고정 크기로 설정하려면 **[!UICONTROL Width]** 및 **[!UICONTROL Height.]******
+>기본적으로 Dynamic Media 이미지 구성 요소는 적응형입니다. 고정 크기로 설정하려면 **[!UICONTROL 고급]** 탭의 구성 요소에서 **[!UICONTROL 폭]** 및 **[!UICONTROL 높이]**&#x200B;를 설정하십시오.
 
 * **[!UICONTROL 이미지 수정자]**  - 추가적인 이미지 명령을 제공하여 이미지 효과를 적용할 수 있습니다. 이러한 효과는 이미지 사전 설정 및 이미지 제공 명령 참조에 설명되어 있습니다.
 
