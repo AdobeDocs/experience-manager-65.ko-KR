@@ -11,7 +11,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: 문제 해결
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
    이 선택적 기능 팩은 FTP 지원을 위한 것이거나 Dynamic Media Classic에서 Dynamic Media으로 자산을 마이그레이션하는 경우 입니다.
 
-* Cloud Services 사용자 인터페이스로 이동하고 제공된 계정이 **[!UICONTROL 사용 가능한 구성 아래에 표시되는지 확인합니다.]**
+* Cloud Services 사용자 인터페이스로 이동하고 제공된 계정이 **[!UICONTROL 사용 가능한 구성]** 아래에 표시되는지 확인합니다.
 * `Dynamic Media Asset Activation (scene7)` 복제 에이전트가 활성화되어 있는지 확인합니다.
 
    이 복제 에이전트는 작성자의 에이전트 아래에 있습니다.
