@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1685'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ AEM을 WCM으로 사용하는 경우에는 Dynamic Media 자산을 페이지에 
 
 ## Dynamic Media 구성 요소 {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] 및 [!UICONTROL 대화형 미디어]는 Dynamic Media 아래의 [!UICONTROL 사이드 킥]에서 사용할 수 있습니다.**** 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용합니다. 다른 모든 Dynamic Media 구성 요소의 경우에는 **[!UICONTROL Dynamic Media]** 구성 요소를 사용하십시오.
+[!UICONTROL Dynamic ] Media 및  [!UICONTROL 대화형 ] 미디어는   Dynamic Media **[!UICONTROL 의 Sidekkick에서 사용할 수]**&#x200B;있습니다. 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 **[!UICONTROL 대화형 미디어]** 구성 요소를 사용합니다. 다른 모든 Dynamic Media 구성 요소의 경우에는 **[!UICONTROL Dynamic Media]** 구성 요소를 사용하십시오.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
