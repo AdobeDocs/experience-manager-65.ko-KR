@@ -5,7 +5,7 @@ contentOwner: AG
 role: Business Practitioner
 feature: 자산 관리,자산 분배
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: 92983232216a5c7c563ebddc3baf6fcd81aaa4e2
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 3%
@@ -22,13 +22,13 @@ ht-degree: 3%
 
 자산 유형 이미지 세트, 스핀 세트, 혼합 미디어 세트 및 회전 세트는 다운로드할 수 없습니다.
 
-자산을 다운로드하려면 다음 단계를 수행하십시오.
+**자산을 다운로드하려면 다음 단계를 수행하십시오.**
 
 1. 왼쪽 위 모서리에서 로고를 클릭합니다. 왼쪽 레일에서 **[!UICONTROL 탐색]**&#x200B;을 클릭합니다.
-1. [!UICONTROL 탐색] 페이지에서 **[!UICONTROL 자산]** > **[!UICONTROL 파일.]**
+1. [!UICONTROL 탐색] 페이지에서 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**&#x200B;을 클릭합니다.
 1. 다운로드할 자산이 들어 있는 폴더로 이동합니다.
 1. 폴더를 선택하거나 폴더 내에서 하나 이상의 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 다운로드.]**
+1. 도구 모음에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
    ![Experience Manager 자산에서 자산을 다운로드할 때 사용할 수 있는 옵션](/help/assets/assets/asset-download1.png)
 
@@ -45,7 +45,7 @@ ht-degree: 3%
    | **[!UICONTROL 스마트 자르기]** | AEM 내에서 선택한 자산의 모든 스마트 자르기 렌디션을 다운로드하려면 이 옵션을 선택합니다. 스마트 자르기 렌디션이 있는 zip 파일이 만들어지고 로컬 컴퓨터에 다운로드됩니다. |
    | **[!UICONTROL 동적 렌디션]** | 일련의 대체 표현물을 실시간으로 생성하려면 이 옵션을 선택합니다. 이 옵션을 선택하는 경우 [이미지 사전 설정](image-presets.md) 목록에서 선택하여 동적으로 만들 표현물도 선택합니다. <br>또한 측정 크기 및 단위, 형식, 색상 공간, 해상도 및 이미지 반전 등의 선택적 이미지 수정자를 선택할 수 있습니다. 이 옵션은 [!DNL Dynamic Media] 이 활성화된 경우에만 사용할 수 있습니다. |
 
-1. 대화 상자에서 **[!UICONTROL 다운로드.]**&#x200B;를 클릭합니다.
+1. 대화 상자에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 
 다운로드할 폴더를 선택하면 폴더 아래에 있는 전체 자산 계층 구조가 다운로드됩니다. 개별 폴더에 다운로드한 각 자산(상위 폴더 아래에 중첩된 하위 폴더의 자산 포함)을 포함하려면 **[!UICONTROL 각 자산에 대해 별도의 폴더 만들기]**&#x200B;를 선택합니다.
 
