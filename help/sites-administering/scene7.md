@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '5517'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Experience Manager 사용자는 Dynamic Media에서 작업할 두 솔루션 중�
 * 자산을 Dynamic Media Classic에 바로 업로드한 다음 페이지 작성 또는 사용을 위해 **Dynamic Media Classic** 컨텐츠 브라우저를 통해 액세스합니다
 * 자산을 업로드한 다음 Dynamic Media Classic에 자동 게시 기능을 활성화합니다.페이지 작성을 위해 **자산** 컨텐츠 브라우저를 통해 액세스합니다
 
-이 통합에 사용하는 구성 요소는 [디자인 모드의 **Dynamic Media Classic** 구성 요소 영역에 있습니다.](/help/sites-authoring/author-environment-tools.md#page-modes)
+이 통합에 사용하는 구성 요소는 [디자인 모드](/help/sites-authoring/author-environment-tools.md#page-modes)의 **Dynamic Media Classic** 구성 요소 영역에 있습니다.
 
 ### Experience Manager Dynamic Media {#aem-dynamic-media}
 
@@ -423,8 +423,8 @@ Dynamic Media Classic으로 자산을 푸시할 때 자산을 즉시 게시하�
 
 자산을 게시하지 않고 Dynamic Media Classic에 푸시하려면 먼저 다음을 설정해야 합니다.
 
-1. [Admin Console을 사용하여 지원 사례를 만듭니다.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 지원 사례에서 Dynamic Media Classic 계정에 대한 보안 미리 보기 활성화를 요청합니다.
-1. Dynamic Media Classic 계정에 대한 [보안 미리 보기 설정 지침을 따르십시오.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. [Admin Console을 사용하여 지원 사례를 만듭니다](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). 지원 사례에서 Dynamic Media Classic 계정에 대한 보안 미리 보기 활성화를 요청합니다.
+1. Dynamic Media Classic 계정에 대한 [보안 미리 보기 설정](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)의 지침에 따라 수행하십시오.
 
 이러한 단계는 Dynamic Media Classic에서 보안 테스트 설정을 만들기 위해 수행하는 것과 동일합니다.
 
