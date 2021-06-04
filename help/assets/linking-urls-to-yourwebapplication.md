@@ -10,7 +10,7 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: 구성
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 웹 사이트 및 애플리케이션이 URL 호출을 통해 Dynamic Media 서비스에 액세스합니다. 자산을 게시하면 Dynamic Media에서 자산을 참조하는 URL 문자열을 활성화합니다. 이러한 URL을 테스트하기 위해 웹 브라우저에 붙여넣을 수 있습니다.
 
-AEM을 WCM으로 사용하지 *않고*&#x200B;인 경우에만 URL에 연결합니다. 연결 대 포함 - 비디오 플레이어를 팝업 또는 모달 창으로 전달하려는 경우 사용됩니다. AEM을 WCM으로 사용하는 경우 [자산을 페이지에 직접 추가합니다.](adding-dynamic-media-assets-to-pages.md)
+AEM을 WCM으로 사용하지 *않고*&#x200B;인 경우에만 URL에 연결합니다. 연결 대 포함 - 비디오 플레이어를 팝업 또는 모달 창으로 전달하려는 경우 사용됩니다. AEM을 WCM으로 사용하는 경우 [자산을 페이지에 직접 추가합니다](adding-dynamic-media-assets-to-pages.md).
 
 웹 페이지 및 애플리케이션에 이러한 URL 문자열을 배치하려면 Dynamic Media에서 복사합니다.
 
@@ -29,13 +29,13 @@ AEM을 WCM으로 사용하지 *않고*&#x200B;인 경우에만 URL에 연결합�
 >
 >URL 문자열은 자산의 동적 변환에만 사용할 수 있습니다. 현재 Dynamic Media 서버가 아닌 DAM에 있는 정적 자산에 사용할 수 없습니다. 정적인 표현물에 대해서는 URL 단추가 표시되지 않습니다.
 
-웹 페이지에 비디오 또는 이미지 뷰어 포함](embed-code.md)을 참조하십시오.[
+또한 [웹 페이지에 비디오 또는 이미지 뷰어 포함](embed-code.md)을 참조하십시오.
 
 또한 [YouTube URL을 웹 애플리케이션에 연결](video.md)을 참조하십시오.
 
 [응답형 사이트용으로 최적화된 이미지 제공](responsive-site.md)도 참조하십시오.
 
-[자산 업로드를 참조하십시오.](manage-assets.md#uploading-assets)
+[자산 업로드](manage-assets.md#uploading-assets)도 참조하십시오.
 
 ## 자산 {#obtaining-a-url-for-an-asset} URL 가져오기
 
@@ -59,7 +59,7 @@ URL 문자열을 가져오는 방법은 여러 가지가 있습니다. 그러나
 
    URL은 *다음에*&#x200B;을 복사하는 데에만 사용할 수 있으며, 먼저 *자산을 게시했습니다*. 또한 뷰어 사전 설정 또는 이미지 사전 설정도 게시해야 합니다.
 
-   [자산 게시를 참조하십시오.](publishing-dynamicmedia-assets.md)
+   [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
    [뷰어 사전 설정 게시](managing-viewer-presets.md#publishing-viewer-presets)를 참조하십시오.
 
