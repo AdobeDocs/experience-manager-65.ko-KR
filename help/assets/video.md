@@ -11,7 +11,7 @@ docset: aem65
 feature: 자산 관리
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '11748'
 ht-degree: 1%
@@ -30,7 +30,7 @@ ht-degree: 1%
 >
 >Dynamic Media에서 비디오를 사용하기 전에 AEM 관리자가 Dynamic Media - Scene7 모드 또는 Dynamic Media - 하이브리드 모드에서 Dynamic Media Cloud Services을 이미 활성화 및 구성했는지 확인하십시오.
 >
->* Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드에서 [Dynamic Media Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)을 참조하십시오.](/help/assets/troubleshoot-dms7.md)
+>* Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md)에서 [Dynamic Media Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
    >
    >
 * Dynamic Media 구성 - 하이브리드 모드에서 [Dynamic Media Cloud Services 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
@@ -356,7 +356,7 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
 
 ### 해상도 {#resolution}
 
-**해상도 **비디오 파일의 높이와 너비를 픽셀 단위로 설명합니다. 대부분의 소스 비디오는 고해상도(예: 1920 x 1080)로 저장됩니다. 스트리밍을 위해 소스 비디오는 더 작은 해상도(640 x 480 이하)로 압축됩니다.
+**** 해상도는 비디오 파일의 높이와 너비를 픽셀 단위로 설명합니다. 대부분의 소스 비디오는 고해상도(예: 1920 x 1080)로 저장됩니다. 스트리밍을 위해 소스 비디오는 더 작은 해상도(640 x 480 이하)로 압축됩니다.
 
 해상도 및 데이터 전송률은 비디오 품질을 결정하는 두 가지 통합 연결 요소입니다. 동일한 비디오 품질을 유지하려면 비디오 파일의 픽셀 수가 많을수록 해상도가 높을수록 데이터 속도가 빨라야 합니다. 예를 들어, 320 x 240 해상도와 640 x 480 해상도 비디오 파일에서 프레임당 픽셀 수를 고려해 보십시오.
 
@@ -548,7 +548,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 >
 >AEM의 YouTube 설정 아래에 채널을 추가하려면 먼저 YouTube *에서 채널을 하나 이상 설정했는지 확인하십시오(아래 AEM](#setting-up-youtube-in-aem)에서 YouTube 설정 을 참조하십시오).*[ 이 작업을 수행하지 않으면 기존 채널에 대한 경고가 표시되지 않습니다. 그러나 채널을 추가할 때는 Google 인증이 계속 발생하지만 비디오가 전송되는 채널을 선택할 수 있는 옵션이 없습니다.
 
-YouTube 채널을 만들려면:
+**YouTube 채널을 만들려면:**
 
 1. [https://www.youtube.com](https://www.youtube.com/)로 이동하여 Google 계정 자격 증명을 사용하여 로그인합니다.
 1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진(단색 원 내에 문자로 표시될 수도 있음)을 클릭한 다음 **[!UICONTROL YouTube 설정]** (라운드 톱니바퀴 아이콘)을 클릭합니다.
@@ -761,7 +761,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 >
 >자세한 진행 정보를 보려면 복제 중인 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스 권한이 필요합니다.
 
-비디오를 YouTube 채널에 게시하려면:
+**비디오를 YouTube 채널에 게시하려면:**
 
 1. AEM에서 YouTube 채널에 게시할 비디오 자산으로 이동합니다.
 1. 비디오 자산(응용 비디오 세트)을 선택합니다.
@@ -797,7 +797,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 >
 >YouTube URL은 비디오 자산을 YouTube에 게시하기 전까지 복사할 수 없습니다.
 
-YouTube URL을 웹 애플리케이션에 연결하려면
+**YouTube URL을 웹 애플리케이션에 연결하려면**
 
 1. 복사할 URL이 있는 *YouTube 게시된* 비디오 자산으로 이동한 다음 선택합니다.
 
@@ -821,7 +821,7 @@ AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제
 >
 >[비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
-YouTube에서 제거할 비디오 게시를 취소하려면,
+**YouTube에서 제거할 비디오 게시를 취소하려면,**
 
 1. YouTube 채널에서 게시를 취소하려는 비디오 자산으로 이동합니다.
 1. 자산 선택 모드에서 하나 이상의 게시된 비디오 자산을 선택합니다.
@@ -836,7 +836,7 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
 ### 진행률 모니터링 {#monitoring-progress}
 
-진행 상황을 모니터링하려면(실패한 인코딩/YouTube 게시 포함):
+**진행 상황을 모니터링하려면(실패한 인코딩/YouTube 게시 포함):**
 
 1. 자산 폴더에서 비디오 인코딩 진행 상태 보기:
 
@@ -987,7 +987,7 @@ YouTube에서 제거할 비디오 게시를 취소하려면,
 
 비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 게시 서버를 이미 설정해야 합니다. 게시 서버가 설정되지 않은 경우에는 여전히 게시하여 비디오 보고서를 볼 수 있지만 Dynamic Media 클라우드 구성으로 돌아가 **[!UICONTROL OK]**&#x200B;을 탭해야 합니다.
 
-비디오 보고서를 보려면 다음을 수행하십시오.
+**비디오 보고서를 보려면 다음을 수행하십시오.**
 
 1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 보고서]**&#x200B;를 탭합니다.
 1. 비디오 보고서 페이지에서 다음 중 하나를 수행합니다.
@@ -1008,7 +1008,7 @@ Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기�
 
 [Dynamic Media Viewers 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) 및 [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)를 사용하여 고유한 비디오 뷰어를 만듭니다.
 
-HTML5 Viewer SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 보려면 다음을 수행하십시오.
+**HTML5 Viewer SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 보려면 다음을 수행하십시오.**
 
 1. 게시된 비디오 자산으로 이동합니다.
 1. 자산 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL Viewers]**&#x200B;를 선택합니다.
@@ -1108,7 +1108,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
    URL은 *다음에*&#x200B;을 복사하는 데에만 사용할 수 있으며, 먼저 *자산을 게시했습니다*.
 
-   [자산 게시를 참조하십시오.](/help/assets/publishing-dynamicmedia-assets.md)
+   [자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
 
 1. 다음 중 하나를 수행하십시오.
 
