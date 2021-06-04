@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 28%
+source-wordcount: '483'
+ht-degree: 29%
 
 ---
 
@@ -52,10 +52,12 @@ Linux해당 디렉토리로 이동하고 명령 프롬프트에서 다음을 입
 1. 사전 설치 요약 정보를 읽고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 1. 설치가 완료되면 **[!UICONTROL 다음]**&#x200B;을 클릭하여 설치된 파일에 빠른 수정 업데이트를 적용합니다.
 
-1. 완료 를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**&#x200B;를 사용하여 구성 관리자를 실행하기 전에 *&lt;AEMForms_Install_Dir>\configurationManager\bin* 디렉토리로 이동하여 다음 파일에서 **axis.jar**&#x200B;을 **axis-1.4.1.jar**&#x200B;로 업데이트하십시오.
+1. 완료 를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**&#x200B;를 사용하여 구성 관리자를 실행하기 전에 *&lt;AEMForms_Install_Dir>\configurationManager\bin* 디렉토리를 탐색하고 다음 이름 변경 작업으로 `ConfigurationManager.lax` 및 `ConfigurationManager_IPv6.lax` 파일을 업데이트하십시오.
 
-   * ConfigurationManager.lax
-   * ConfigurationManager_IPv6.lax
+   * `axis.jar` 끝 `axis-1.4.1.1.jar`
+   * `serializer-2.7.1.jar` 끝 `serializer-2.7.2.jar`
+   * `xalan-2.7.1.jar` 끝 `xalan-2.7.2.jar`
+   * `xercesImpl-2.9.1.jar` 끝 `xercesImpl-2.12.0.jar`
 
 1. 기본적으로 구성 관리자 시작 확인란이 선택됩니다. **[!UICONTROL 완료]**&#x200B;를 클릭하여 구성 관리자를 실행합니다.
 
