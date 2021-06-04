@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 Search &amp; Promote 서비스에 대해 구성된 기본 URL은 `https://searchandpromote.omniture.com/px/`입니다. 다른 서비스를 사용하려면 OSGi 콘솔을 사용하여 다른 URL을 지정하십시오.
 
-1. OSGi 콘솔을 열고 구성 탭을 클릭합니다. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))
+1. OSGi 콘솔을 열고 구성 탭을 클릭합니다. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Day CQ Search &amp; Promote 구성 항목을 클릭합니다.
 1. 원격 서버 URI 상자에 URL을 입력하고 저장을 클릭합니다.
 
