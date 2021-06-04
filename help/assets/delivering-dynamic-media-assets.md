@@ -11,7 +11,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: 자산 관리,표현물
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 16%
@@ -29,7 +29,7 @@ Dynamic Media을 사용하면 다음과 같은 몇 가지 옵션이 있습니다
 
    * 웹 사이트에 비디오 또는 이미지를 포함합니다.
    * 웹 애플리케이션에 URL을 연결합니다. 비디오 플레이어를 팝업 또는 모달 창으로 전달하려는 경우 링크를 사용합니다.
-   * 사이트가 응답형인 경우 [최적화된 이미지를 제공할 수 있습니다.](/help/assets/responsive-site.md)
+   * 사이트가 응답형인 경우 [최적화된 이미지를 게재](/help/assets/responsive-site.md)할 수 있습니다.
 
 >[!NOTE]
 >
