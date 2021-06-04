@@ -10,7 +10,7 @@ discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: 자산 관리
 role: Business Practitioner, Administrator
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 3%
@@ -23,11 +23,11 @@ ht-degree: 3%
 
 웹 사이트가 타사 WCM에 있는 경우 이 기능을 사용하는 것이 적절합니다. 그러나 웹 사이트가 대신 AEM에 있는 경우 오프사이트 이미지 서버가 이미지를 렌더링하여 웹 페이지에 제공합니다.
 
-웹 페이지에 비디오 뷰어 포함](embed-code.md)도 참조하십시오.[
+또한 [웹 페이지에 비디오 뷰어 포함](embed-code.md)을 참조하십시오.
 
 또한 [URL을 웹 응용 프로그램에 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
 
-**응답형 사이트용으로 최적화된 이미지를 전달하려면**:
+**응답형 사이트용으로 최적화된 이미지를 전달하려면:**
 
 1. 응답형 코드를 제공할 이미지로 이동하여 드롭다운 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 누릅니다.
 
