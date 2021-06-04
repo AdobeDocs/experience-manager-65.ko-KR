@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: 이미지 사전 설정
 role: Business Practitioner, Administrator
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '3831'
 ht-degree: 3%
@@ -61,7 +61,7 @@ AEM 로고를 탭하거나 클릭하여 전역 탐색 콘솔에 액세스한 다
 >
 >*Dynamic Media - 하이브리드 모드*&#x200B;에서 이미지 사전 설정을 수동으로 게시해야 합니다.
 >
->[이미지 사전 설정 게시를 참조하십시오.](#publishing-image-presets)
+>[이미지 사전 설정 게시](#publishing-image-presets)를 참조하십시오.
 
 >[!NOTE]
 >
