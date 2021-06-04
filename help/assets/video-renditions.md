@@ -6,7 +6,7 @@ contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 3%
@@ -33,7 +33,7 @@ AEM 자산은 클라이언트측에서 이러한 표현물에 대한 재생 지�
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-DM 인코딩 표현물에 대한 프록시 서버를 구성하려면 [Dynamic Media Cloud 서비스를 구성합니다.](config-dynamic.md)
+DM 인코딩 표현물에 대한 프록시 서버를 구성하려면 [Dynamic Media Cloud Services 구성](config-dynamic.md).
 
 원하는 매개 변수로 비디오 표현물을 생성하려면 [해당 비디오 프로필](video-profiles.md)을 만듭니다.
 
