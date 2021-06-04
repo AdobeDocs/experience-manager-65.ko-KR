@@ -10,10 +10,10 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: Business Practitioner, Administrator
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: 게시
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 1%
 
 이미 업로드한 자산을 선택하고 **[!UICONTROL 게시]** 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 탭하여 Dynamic Media 자산을 게시합니다. Dynamic Media 자산이 게시되면 URL을 통해 또는 페이지에 해당 코드를 포함하여 웹 페이지에 포함할 수 있습니다.
 
-사용자가 개입하지 않고 업로드한 자산을 즉시 게시할 수도 있습니다. [Dynamic Media 구성 - Scene7 모드 을 참조하십시오.](config-dms7.md)
-또는 폴더 수준에서  **[!UICONTROL 선택적 게시]** 를 사용하여 서로 배타적으로 Dynamic Media 또는 AEM에 자산을 선택적으로 게시할 수 있습니다. [Dynamic Media의 선택적 게시 작업](/help/assets/selective-publishing.md)을 참조하십시오.
+사용자가 개입하지 않고 업로드한 자산을 즉시 게시할 수도 있습니다. [Dynamic Media 구성 - Scene7 모드](config-dms7.md)를 참조하십시오.
+또는 폴더 수준에서 **[!UICONTROL 선택적 게시]**&#x200B;를 사용하여 서로 배타적으로 Dynamic Media 또는 AEM에 자산을 선택적으로 게시할 수 있습니다. [Dynamic Media의 선택적 게시 작업](/help/assets/selective-publishing.md)을 참조하십시오.
 
 **[!UICONTROL 카드 보기]**&#x200B;에서 작은 지구본 아이콘이 자산의 이름 바로 아래에 있고 날짜 및 시간 왼쪽에 표시되어 게시된 것임을 나타냅니다. **[!UICONTROL 목록 보기]**&#x200B;에서 **[!UICONTROL 게시된]** 열은 게시되었거나 게시되지 않은 자산을 나타냅니다.
 
