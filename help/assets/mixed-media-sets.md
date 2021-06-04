@@ -11,7 +11,7 @@ docset: aem65
 feature: 미디어 집합 혼합,자산 관리
 role: Business Practitioner, Administrator
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 1%
@@ -38,11 +38,11 @@ ht-degree: 1%
 
    먼저 혼합 미디어 세트에 대한 이미지 및 비디오를 업로드하십시오. 필요한 경우 [이미지 세트](/help/assets/image-sets.md) 및 [스핀 세트](/help/assets/spin-sets.md)를 만듭니다. 사용자가 혼합 미디어 세트 뷰어에서 이미지를 확대/축소할 수 있으므로, 이미지를 선택할 때 확대/축소를 고려하십시오. 가장 큰 차원에서 이미지가 2000픽셀 이상인지 확인합니다.
 
-1. [혼합 미디어 세트를 만듭니다.](#creating-mixed-media-sets)
+1. [혼합 미디어 세트를 만듭니다](#creating-mixed-media-sets).
 
    혼합 미디어 세트를 만들려면 자산 페이지에서 **[!UICONTROL 만들기 > 혼합 미디어 세트]**&#x200B;를 탭한 다음 세트 이름을 지정하고, 자산을 선택하고, 이미지가 나타나는 순서를 선택합니다.
 
-   [선택기를 사용한 작업을 참조하십시오.](/help/assets/working-with-selectors.md)
+   [선택기를 사용한 작업](/help/assets/working-with-selectors.md)을 참조하십시오.
 
 1. 필요에 따라 [혼합 미디어 뷰어 사전 설정](/help/assets/managing-viewer-presets.md)을 설정합니다.
 
@@ -50,13 +50,13 @@ ht-degree: 1%
 
    뷰어 사전 설정을 만들거나 편집하려면 **[!UICONTROL 도구 > 자산 > 뷰어 사전 설정]**&#x200B;을 참조하십시오.
 
-   [뷰어 사전 설정 추가 및 편집을 참조하십시오.](/help/assets/managing-viewer-presets.md)
+   [뷰어 사전 설정 추가 및 편집](/help/assets/managing-viewer-presets.md)을 참조하십시오.
 
-1. [혼합 미디어 세트를 미리 봅니다.](#previewing-mixed-media-sets)
+1. [혼합 미디어 세트를 미리 봅니다](#previewing-mixed-media-sets).
 
    혼합 미디어 세트를 선택하면 미리 볼 수 있습니다. 축소판 아이콘을 클릭하여 선택한 뷰어에서 혼합 미디어 세트를 검사합니다. 왼쪽 레일 드롭다운 메뉴에서 사용할 수 있는 **[!UICONTROL 뷰어]** 메뉴에서 다른 뷰어를 선택할 수 있습니다.
 
-1. [혼합 미디어 세트를 게시합니다.](#publishing-mixed-media-sets)
+1. [혼합 미디어 세트를 게시합니다](#publishing-mixed-media-sets).
 
    혼합 미디어 세트를 게시하면 URL 및 포함 문자열이 활성화됩니다. 또한 [뷰어 사전 설정을 게시](/help/assets/managing-viewer-presets.md#publishing-viewer-presets)해야 합니다.
 
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 세트에 자산을 추가하면 자동으로 영숫자 순서로 추가됩니다. 자산이 추가된 후 수동으로 자산 순서를 변경하거나 정렬할 수 있습니다.
 
-**혼합 미디어 세트를 만들려면**
+**혼합 미디어 세트를 만들려면:**
 
 1. 자산에서 혼합 미디어 세트를 만들 위치로 이동하여 **[!UICONTROL 만들기]**&#x200B;를 클릭하고 **[!UICONTROL 혼합 미디어 세트]**&#x200B;를 선택합니다. 자산을 포함하는 폴더 내에서 세트를 만들 수도 있습니다. 혼합 미디어 세트 편집기가 표시됩니다.
 
@@ -132,7 +132,7 @@ Assets](/help/assets/manage-assets.md)의 자산처럼 사용자 인터페이스
 * 뷰어 사전 설정을 적용합니다.
 * 기본 축소판을 변경합니다.
 
-**혼합 미디어 세트를 편집하려면**
+**혼합 미디어 세트를 편집하려면:**
 
 1. 다음 중 하나를 수행합니다.
 
