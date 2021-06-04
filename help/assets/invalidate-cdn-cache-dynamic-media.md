@@ -8,7 +8,7 @@ content-type: reference
 role: Business Practitioner, Administrator
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 feature: CDN 캐시
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Dynamic Media 자산은 CDN(Content Delivery Network)에 의해 캐시되므로 
 
 >[!IMPORTANT]
 >
->다음 단계는 Adobe Experience Manager 6.5, 서비스 팩 6(Experience Manager 6.5.6) 이상의 Dynamic Media - Scene7 모드에만 적용됩니다. 이 CDN 무효화 기능을 사용하려면 Experience Manager Dynamic Media과 번들로 제공되는 기본 CDN을 사용해야 합니다.다른 모든 사용자 지정 CDN은 지원되지 않습니다.<br>Experience Manager 6.5, 서비스 팩 5(Experience Manager 6.5.5) 또는 이전 버전에서 Dynamic Media을 사용하는 경우 Dynamic Media Classic [을 통해 CDN 캐시 무효화에 있는 단계를 수행합니다.](/help/assets/invalidate-cdn-cache-dm-classic.md)
+>다음 단계는 Adobe Experience Manager 6.5, 서비스 팩 6(Experience Manager 6.5.6) 이상의 Dynamic Media - Scene7 모드에만 적용됩니다. 이 CDN 무효화 기능을 사용하려면 Experience Manager Dynamic Media과 번들로 제공되는 기본 CDN을 사용해야 합니다.다른 모든 사용자 지정 CDN은 지원되지 않습니다.<br>Experience Manager 6.5, 서비스 팩 5(Experience Manager 6.5.5) 이전 버전에서 Dynamic Media을 사용하는 경우 Dynamic Media Classic [을 통해 CDN 캐시 무효화에 있는 단계를 따르십시오](/help/assets/invalidate-cdn-cache-dm-classic.md).
 
 Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)에서 [캐싱 개요 를 참조하십시오.
 
