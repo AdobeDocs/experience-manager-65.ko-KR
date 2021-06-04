@@ -11,7 +11,7 @@ docset: aem65
 feature: 이미지 세트,자산 관리
 role: Business Practitioner, Administrator
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 0%
@@ -40,13 +40,13 @@ ht-degree: 0%
 
 **빠르게 시작하고 실행하려면**
 
-1. [여러 보기에 대한 기본 소스 이미지를 업로드합니다.](#uploading-assets-in-image-sets)
+1. [여러 보기에 대한 기본 소스 이미지를 업로드합니다](#uploading-assets-in-image-sets).
 
    이미지 세트에 대한 이미지를 업로드하여 시작합니다. 이미지를 선택할 때 고객이 이미지 세트 뷰어에서 이미지를 확대/축소할 수 있음을 기억하십시오. 최적의 확대/축소 세부 사항을 위해 가장 큰 차원에서 이미지가 2000픽셀 이상인지 확인하십시오. Dynamic Media은 각각 최대 25메가픽셀을 렌더링할 수 있습니다. 예를 들어, 5000 x 5000메가픽셀 이미지 또는 최대 25메가픽셀 크기의 다른 크기 조합을 사용할 수 있습니다.
 
    Adobe Experience Manager Assets는 많은 이미지 파일 형식을 지원하지만 무손실 TIFF, PNG 및 EPS 이미지를 사용하는 것이 좋습니다.
 
-1. [이미지 세트를 만듭니다.](#creating-image-sets)
+1. [이미지 세트를 만듭니다](#creating-image-sets).
 
    이미지 세트에서 사용자는 이미지 세트 뷰어에서 축소판 이미지를 클릭합니다.
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
    [업로드할 이미지 세트 자산 준비 및 파일 업로드](#uploading-assets-in-image-sets)를 참조하십시오.
 
-   [선택기를 사용한 작업을 참조하십시오.](/help/assets/working-with-selectors.md)
+   [선택기를 사용한 작업](/help/assets/working-with-selectors.md)을 참조하십시오.
 
 1. 필요에 따라 [이미지 세트 뷰어 사전 설정](/help/assets/managing-viewer-presets.md)을 추가합니다.
 
@@ -68,11 +68,11 @@ ht-degree: 0%
    뷰어 사전 설정을 만들거나 편집하려면 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 뷰어 사전 설정]**&#x200B;을 참조하십시오.
 
 1. (선택 사항) 일괄처리 집합 사전 설정을 사용하여 만든 [이미지 집합 보기](/help/assets/image-sets.md#viewing-image-sets)
-1. [이미지 세트 미리 보기.](/help/assets/previewing-assets.md)
+1. [이미지 세트 미리 보기](/help/assets/previewing-assets.md).
 
    이미지 세트를 선택하고 미리 볼 수 있습니다. 선택한 뷰어에서 이미지 세트를 검사할 수 있도록 축소판 아이콘을 클릭합니다. 왼쪽 레일 드롭다운 메뉴에서 사용할 수 있는 **[!UICONTROL Viewers]** 메뉴에서 다른 뷰어를 선택할 수 있습니다.
 
-1. [이미지 세트를 게시합니다.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [이미지 세트를 게시합니다](/help/assets/publishing-dynamicmedia-assets.md).
 
    이미지 세트를 게시하면 URL 및 포함 코드가 활성화됩니다. 또한 [만든 사용자 지정 뷰어 사전 설정](/help/assets/managing-viewer-presets.md)을 게시해야 합니다. 즉시 사용 가능한 뷰어 사전 설정이 이미 게시되었습니다.
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
    [이미지 세트를 웹 페이지에 연결](/help/assets/linking-urls-to-yourwebapplication.md) 및 [비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
 
-이미지 세트를 편집하려면 [이미지 세트 편집을 참조하십시오.](#editing-image-sets) 또한 이미지 세트 속성을 보고 편집할  [수 있습니다](/help/assets/manage-assets.md#editing-properties).
+이미지 세트를 편집하려면 [이미지 세트 편집](#editing-image-sets)을 참조하십시오. 또한 [이미지 세트 속성](/help/assets/manage-assets.md#editing-properties)을 보고 편집할 수 있습니다.
 
 세트를 만드는 데 문제가 있는 경우 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md#images-and-sets)에서 이미지 및 세트 를 참조하십시오.
 
@@ -148,7 +148,7 @@ ht-degree: 0%
 
    자산 선택기를 사용하여 키워드를 입력하고 **[!UICONTROL Return]**&#x200B;을 탭하거나 클릭하여 자산을 검색할 수 있습니다. 필터를 적용하여 검색 결과를 세분화할 수도 있습니다. 경로, 컬렉션, 파일 유형 및 태그별로 필터링할 수 있습니다. 필터를 선택한 다음 도구 모음에서 **[!UICONTROL 필터]** 아이콘을 탭합니다. 보기 아이콘을 탭하고 **[!UICONTROL 열 보기]**, **[!UICONTROL 카드 보기]** 또는 **[!UICONTROL 목록 보기]**&#x200B;를 선택하여 보기를 변경합니다.
 
-   [선택기를 사용한 작업을 참조하십시오.](/help/assets/working-with-selectors.md)
+   [선택기를 사용한 작업](/help/assets/working-with-selectors.md)을 참조하십시오.
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
