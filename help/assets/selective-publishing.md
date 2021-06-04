@@ -9,7 +9,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: 게시
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 4%
@@ -38,10 +38,10 @@ Dynamic Media 인스턴스의 모든 폴더에 전역 설정을 적용하는 **[
 
 폴더에서 선택적 게시를 구성한 후 다음 중 하나를 수행할 수 있습니다.
 
-* [게시 관리 를 사용하여 Dynamic Media 또는 AEM에 자산을 선택적으로 게시합니다.](#selective-publish-manage-publication)
-* [게시 관리 를 사용하여 Dynamic Media 또는 AEM에서 자산을 선택적으로 게시 취소합니다.](#selective-unpublish-manage-publication)
-* [빠른 게시를 사용하여 Dynamic Media 또는 AEM에 자산을 게시합니다.](#quick-publish-aem-dm)
-* [검색 결과를 통해 자산을 선택적으로 게시 또는 게시 취소합니다.](#selective-publish-unpublish-search-results)
+* [게시 관리 를 사용하여 Dynamic Media 또는 AEM에 자산을 선택적으로 게시합니다](#selective-publish-manage-publication).
+* [게시 관리 를 사용하여 Dynamic Media 또는 AEM에서 자산을 선택적으로 게시 취소합니다](#selective-unpublish-manage-publication).
+* [빠른 게시를 사용하여 Dynamic Media 또는 AEM에 자산을 게시합니다](#quick-publish-aem-dm).
+* [검색 결과를 통해 자산을 선택적으로 게시 또는 게시 취소합니다](#selective-publish-unpublish-search-results).
 
 **Dynamic Media의 폴더 수준에서 선택적 게시를 구성하려면**
 
@@ -186,7 +186,7 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
 
 검색 결과에 다른 Dynamic Media 게시 설정이 있는 자산 폴더에서 자산이 표시될 수 있습니다. 검색 결과에서 하나 이상의 자산을 선택한 경우 자산에는 다른 Dynamic Media 게시 모드 설정이 있는 경우 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 트리거하여 게시하거나 게시를 취소할 수 있습니다.
 
-AEM에서 자산 검색](/help/assets/search-assets.md)도 참조하십시오.[
+AEM](/help/assets/search-assets.md)에서 자산 검색 을 참조하십시오.[
 
 **검색 결과를 통해 자산을 선택적으로 게시 또는 게시 취소하려면 다음을 수행하십시오**
 
