@@ -11,9 +11,9 @@ docset: aem65
 feature: 자산 관리
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '11748'
+source-wordcount: '11655'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Dynamic Media에서 비디오를 사용하기 전에 AEM 관리자가 Dynamic Media - Scene7 모드 또는 Dynamic Media - 하이브리드 모드에서 Dynamic Media Cloud Services을 이미 활성화 및 구성했는지 확인하십시오.
+>Dynamic Media에서 비디오를 사용하기 전에 Adobe Experience Manager 관리자가 Dynamic Media - Scene7 모드 또는 Dynamic Media - 하이브리드 모드에서 Dynamic Media Cloud Services을 이미 활성화 및 구성했는지 확인하십시오.
 >
 >* Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md)에서 [Dynamic Media Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
    >
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 1. **다음 중** 하나를 수행하여 Dynamic Media 비디오를 게시합니다.
 
-   * 웹 컨텐츠 관리 시스템으로 Adobe Experience Manager을 사용하는 경우 웹 페이지에 직접 비디오를 추가할 수 있습니다.
+   * Adobe Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 웹 페이지에 비디오를 직접 추가할 수 있습니다.
 
       * [웹 페이지에 비디오 추가](adding-dynamic-media-assets-to-pages.md).
    * 타사 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 페이지에 비디오를 링크하거나 포함할 수 있습니다.
@@ -120,11 +120,11 @@ ht-degree: 1%
 
 ## Dynamic Media {#working-with-video-in-dynamic-media}에서 비디오를 사용한 작업
 
-Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry 및 Windows 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
+Dynamic Media의 비디오는 데스크탑, iOS, Android™, Blackberry 및 Windows 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
 
 예를 들어, iOS 모바일 장치에서 3G, 4G 또는 Wi-Fi와 같은 대역폭을 감지합니다. 그런 다음 응용 비디오 세트 내의 다양한 비디오 비트 전송률 중에서 올바른 인코딩된 비디오를 자동으로 선택합니다. 비디오는 데스크탑, 모바일 장치 또는 태블릿으로 스트리밍됩니다.
 
-또한 데스크탑 또는 모바일 장치에서 네트워크 조건이 변경되면 자동으로 비디오 품질이 전환됩니다. 또한 고객이 데스크탑에서 전체 화면 모드로 전환하면 응용 비디오 세트가 더 나은 해상도를 사용하여 응답하여 고객의 보기 환경을 개선할 수 있습니다. 응용 비디오 세트 사용은 고객이 여러 화면 및 장치에서 Dynamic Media 비디오를 재생할 수 있는 최상의 재생 기능을 제공합니다.
+또한 데스크탑 또는 모바일 장치에서 네트워크 조건이 변경되면 자동으로 비디오 품질이 전환됩니다. 또한 고객이 데스크탑에서 전체 화면 모드로 전환하면 더 나은 해상도를 사용하여 응용 비디오 세트가 응답하여 고객의 보기 환경을 향상시킵니다. 응용 비디오 세트 사용은 고객이 여러 화면 및 장치에서 Dynamic Media 비디오를 재생할 수 있는 최상의 재생 기능을 제공합니다.
 
 비디오 플레이어에서 재생할 인코딩된 비디오 또는 재생 중에 선택할 인코딩된 비디오를 결정하는 데 사용하는 로직은 다음 알고리즘을 기반으로 합니다.
 
@@ -145,13 +145,13 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android, Blackberry 및 Windows
 
 * 모든 HTML5 비디오 뷰어에서 비디오 캡션 기능.
 * 비디오 자산을 효율적으로 관리하기 위해 전체 메타데이터 지원을 사용하여 비디오를 구성, 탐색 및 검색할 수 있습니다.
-* 응용 비디오 세트를 웹뿐만 아니라 iPhone, iPad, Android, Blackberry 및 Windows 폰을 포함한 데스크톱 및 모바일 장치에 제공합니다.
+* iPhone, iPad, Android, Blackberry 및 Windows 휴대폰을 비롯한 웹, 데스크탑, 모바일 장치에 응용 비디오 세트를 제공합니다.
 
 응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video)를 참조하십시오.
 
 Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다.[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
 
-다음 위치에서 이 비디오 형식을 지원하는 Windows 장치를 찾을 수 있습니다.[Windows Phone에서 지원되는 비디오 형식](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
+다음 위치에서 이 비디오 형식을 지원하는 Windows 장치를 찾을 수 있습니다.[Windows Phone 8용 지원되는 미디어 코덱은](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))
 
 * 다음을 포함하여 Dynamic Media 비디오 뷰어 사전 설정을 사용하여 비디오를 재생합니다.
 
@@ -163,17 +163,23 @@ Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-또한 [AEM Assets 및 Dynamic Media Classic용 뷰어](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) 및 [AEM Assets용 뷰어만](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)을 참조하십시오.
+또한 [Experience Manager 자산용 뷰어 및 Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) 및 [Experience Manager 자산용 뷰어](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)를 참조하십시오.
 
 ## 우수 사례:HTML5 비디오 뷰어 {#best-practice-using-the-html-video-viewer} 사용
 
-Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레이어입니다. 이러한 매개 변수를 사용하면 HTML5 비디오 재생과 관련된 많은 일반적인 문제와 적응형 스트리밍 게재 부족 및 제한된 데스크탑 브라우저 도달과 같은 모바일 장치와 관련된 문제를 방지할 수 있습니다.
+Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레이어입니다. HTML5 비디오 재생과 관련된 많은 일반적인 문제를 방지하기 위해 이 매개 변수를 사용할 수 있습니다. 또한 적응형 스트리밍 게재 부족 및 제한된 데스크탑 브라우저 도달과 같은 모바일 장치와 관련된 문제가 있습니다.
 
-플레이어의 디자인 측면에서는 표준 웹 개발 도구를 사용하여 모든 비디오 플레이어의 기능을 디자인할 수 있습니다. 예를 들어 HTML5 및 CSS를 사용하여 단추, 컨트롤 및 사용자 지정 포스터 이미지 배경을 디자인하여 고객에게 맞춤형 모양을 만들어 줄 수 있습니다.
+플레이어의 디자인 측면에서는 표준 웹 개발 도구를 사용하여 비디오 플레이어의 기능을 디자인할 수 있습니다. 예를 들어 HTML5 및 CSS를 사용하여 단추, 컨트롤 및 사용자 지정 포스터 이미지 배경을 디자인하여 고객에게 맞춤형 모양을 만들어 줄 수 있습니다.
 
 뷰어의 재생 측에서 브라우저의 비디오 기능을 자동으로 감지합니다. 그런 다음 응용 비디오 스트리밍이라고도 하는 HLS(HTTP Live Streaming)를 사용하여 비디오를 제공합니다. 또는 이러한 전달 메서드가 없으면 HTML5 점진적 이 대신 사용됩니다.
 
-단일 플레이어에 HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하고 내장된 재생을 사용하고 브라우저의 기능에 따라 적응형 및 점진적 스트리밍을 사용하는 기능을 결합하면 데스크탑 및 모바일 사용자 모두에게 리치 미디어 콘텐츠의 범위를 확장하고 간소화된 비디오 경험을 제공할 수 있습니다.
+를 단일 플레이어에 결합하여 다음을 수행합니다.
+
+* HTML5 및 CSS를 사용하여 재생 구성 요소를 디자인하는 기능
+* 포함된 재생 있음
+* 브라우저의 기능에 따라 적응형 및 점진적 스트리밍을 사용합니다
+
+리치 미디어 콘텐츠의 범위를 데스크탑 및 모바일 사용자 모두로 확장하고 간소화된 비디오 경험을 제공할 수 있습니다.
 
 또한 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)를 참조하십시오.
 
@@ -181,9 +187,9 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 데스크탑 및 모바일 적응형 비디오 스트리밍의 경우 비트율 전환에 사용되는 비디오는 응용 비디오 세트의 모든 MP4 비디오를 기반으로 합니다.
 
-비디오 재생은 HLS 또는 점진적 비디오 다운로드를 사용하여 발생합니다. 6.0, 6.1 및 6.2와 같은 이전 버전의 AEM에서는 비디오가 HTTP를 통해 스트리밍되었습니다.
+비디오 재생은 HLS 또는 점진적 비디오 다운로드를 사용하여 발생합니다. 6.0, 6.1 및 6.2와 같은 이전 버전의 Experience Manager에서는 비디오가 HTTP를 통해 스트리밍되었습니다.
 
-그러나 AEM 6.3 이상에서는 DM 게이트웨이 서비스 URL이 항상 HTTPS를 사용하므로 비디오가 이제 HTTPS(즉, HLS)를 통해 스트리밍됩니다. 이 기본 동작에는 고객에게 영향을 주지 않습니다. 즉, 비디오 스트리밍은 브라우저가 지원하지 않는 한 항상 HTTPS를 통해 발생합니다. (다음 표를 참조하십시오.) 따라서,
+그러나 Experience Manager 6.3 이상에서는 DM 게이트웨이 서비스 URL이 항상 HTTPS를 사용하므로 비디오가 HTTPS(즉, HLS)를 통해 스트리밍됩니다. 이 기본 동작에는 고객이 영향을 주지 않습니다. 즉, 비디오 스트리밍은 브라우저가 지원하지 않는 한 항상 HTTPS를 통해 발생합니다. (다음 표를 참조하십시오.) 따라서,
 
 * HTTPS 비디오 스트리밍이 있는 HTTPS 웹 사이트가 있는 경우 스트리밍이 좋습니다.
 * HTTPS 비디오 스트리밍이 있는 HTTP 웹 사이트가 있는 경우 스트리밍이 문제가 해결되고 웹 브라우저에서 혼합 콘텐츠 문제가 발생하지 않습니다.
@@ -278,12 +284,11 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 **Dynamic Media 인코딩 비디오** 워크플로우가 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 기록 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
 
-다음은 소스 비디오 파일을 인코딩하기 위한 우수 사례 팁입니다.
+<!-- DEAD The following are best-practice tips for encoding source video files.
 
-비디오 인코딩에 대한 자세한 내용은 다음을 참조하십시오.
+For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
-* [스트리밍 101:기본 사항 - Codecs, Bandwidth, Data Rate 및 Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
-* [비디오 인코딩 기본 사항](https://www.adobe.com/go/learn_s7_encoding_en).
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
 
 ### 소스 비디오 파일 {#source-video-files}
 
@@ -337,13 +342,13 @@ Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 �
 * **[!UICONTROL 상수 비트율 인코딩]** (CBR) - CBR 인코딩 중에 비트율 또는 초당 비트 수가 인코딩 프로세스 전체에서 동일하게 유지됩니다. CBR 인코딩은 전체 비디오에서 설정에 설정된 데이터 속도를 유지합니다. 또한 CBR 인코딩은 품질을 위해 미디어 파일을 최적화하지는 않지만 저장 공간에 저장합니다.
 비디오가 전체 비디오 전체에서 유사한 동작 수준을 포함하는 경우 CBR을 사용합니다. CBR은 비디오 컨텐츠를 스트리밍하는 데 가장 일반적으로 사용됩니다. [사용자 지정 추가된 비디오 인코딩 매개 변수 사용](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters)을 참조하십시오.
 
-* **[!UICONTROL VBR(Variable Bitrate Encoding]** ) - VBR 인코딩은 압축기에 필요한 데이터를 기반으로 데이터 속도를 낮추고 설정한 상한까지 조정합니다. 즉, VBR 인코딩 프로세스 중에 미디어 파일의 비트율이 미디어 파일 비트율 요구 사항에 따라 동적으로 증가 또는 감소합니다.
+* **[!UICONTROL VBR(Variable Bitrate Encoding]** ) - VBR 인코딩은 압축기에 필요한 데이터를 기반으로 데이터 속도를 낮추고 설정한 상한까지 조정합니다. 이 기능은 VBR 인코딩 프로세스 중에 미디어 파일의 비트율이 미디어 파일 비트율 요구 사항에 따라 동적으로 증가 또는 감소함을 의미합니다.
 VBR은 인코딩하는 데 더 오래 걸리지만 가장 유리한 결과를 생성합니다.미디어 파일의 품질이 우수합니다. VBR은 비디오 컨텐츠의 http 점진적 게재에 가장 일반적으로 사용됩니다.
 
-VBR 대 CRB는 언제 사용해야 합니까?
-VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 사용하는 것이 좋습니다. VBR은 경쟁적 비트율로 더 높은 품질의 파일을 제공합니다. VBR을 사용하는 경우 2단계 인코딩에 사용하고 최대 비트율을 대상 비디오 비트율의 1.5배로 설정하십시오.
+VBR 대 CRB는 언제 사용합니까?
+VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 좋습니다. VBR은 경쟁적 비트율로 고품질의 파일을 제공합니다. VBR을 사용하는 경우 2단계 인코딩에 사용하고 최대 비트율을 대상 비디오 비트율의 1.5배로 설정하십시오.
 
-비디오 인코딩 사전 설정을 선택하는 경우 대상 최종 사용자의 연결 속도를 고려합니다. 해당 속도의 80%인 데이터 비율이 있는 사전 설정을 선택합니다. 예를 들어 대상 최종 사용자의 연결 속도가 1000Kbps인 경우 가장 좋은 사전 설정은 비디오 데이터 속도가 800Kbps인 사전 설정입니다.
+비디오 인코딩 사전 설정을 선택하는 경우 대상 최종 사용자의 연결 속도를 기억하십시오. 해당 속도의 80%인 데이터 비율이 있는 사전 설정을 선택합니다. 예를 들어 대상 최종 사용자의 연결 속도가 1000Kbps인 경우 가장 좋은 사전 설정은 비디오 데이터 속도가 800Kbps인 사전 설정입니다.
 
 이 표에서는 일반적인 연결 속도의 데이터 속도를 설명합니다.
 
@@ -367,7 +372,7 @@ VBR과 CBR을 선택하는 방법은 거의 항상 미디어 파일에 VBR을 �
 
 640 x 480 파일은 프레임당 4배 더 많은 픽셀을 가지고 있습니다. 이러한 두 가지 예제 해상도에 대해 동일한 데이터 속도를 구현하려면 640 x 480 파일에 4배 압축을 적용하여 비디오 품질을 줄일 수 있습니다. 따라서, 비디오 데이터 속도가 250Kbps이면 320 x 240 해상도로 고품질로 볼 수 있지만, 640 x 480 해상도에서는 볼 수 없습니다.
 
-일반적으로 데이터 속도가 높을수록 비디오가 더 잘 보이고 해상도가 높을수록 보기 품질을 유지해야 하는 데이터 비율이 높아집니다(해상도가 낮은 것에 비해).
+일반적으로 데이터 속도가 높을수록 비디오가 더 잘 보이고 해상도가 높을수록 보기 품질이 유지되어야 하는 데이터 비율이 높습니다(해상도가 낮은 것과 비교하여).
 
 해상도와 데이터 전송률이 연결되어 있으므로 비디오를 인코딩할 때 두 가지 옵션이 있습니다.
 
@@ -414,13 +419,13 @@ Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하�
 
 ## YouTube에 비디오 게시 {#publishing-videos-to-youtube}
 
-온-프레미스 AEM 비디오 자산을 이전에 만든 YouTube 채널에 직접 게시할 수 있습니다.
+온-프레미스 Experience Manager 비디오 자산을 이전에 만든 YouTube 채널에 직접 게시할 수 있습니다.
 
-비디오 자산을 YouTube에 게시하려면 태그가 있는 AEM Assets을 설정합니다. 이러한 태그를 YouTube 채널과 연관시킵니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하면 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 비디오의 일반 게시와 함께 발생합니다.
+비디오 자산을 YouTube에 게시하려면 태그가 있는 Experience Manager 자산을 설정합니다. 이러한 태그를 YouTube 채널과 연관시킵니다. 비디오 자산의 태그가 YouTube 채널의 태그와 일치하면 비디오가 YouTube에 게시됩니다. YouTube에 게시는 연결된 태그가 사용되는 한 비디오의 일반 게시와 함께 발생합니다.
 
-YouTube은 자체 인코딩을 수행합니다. 따라서 AEM에 업로드된 원본 비디오 파일은 Dynamic Media의 인코딩이 만들어진 비디오 변환 대신 YouTube에 게시됩니다. Dynamic Media을 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 처리할 것으로 예상됩니다.
+YouTube은 자체 인코딩을 수행합니다. 따라서 Experience Manager에 업로드된 원본 비디오 파일은 Dynamic Media의 인코딩이 만들어진 비디오 변환 대신 YouTube에 게시됩니다. Dynamic Media을 사용하여 비디오를 처리할 필요는 없지만 재생에 뷰어 사전 설정이 필요한 경우 처리할 필요가 있습니다.
 
-비디오 처리 프로필을 건너뛰고 YouTube에 바로 게시할 경우 AEM Asset의 비디오 자산이 볼 수 있는 축소판을 가져올 수 없음을 의미합니다. 즉, dynamic media 또는 dynamic media_scene7 실행 모드에서 실행되는 경우 인코딩되지 않은 비디오가 Dynamic Media 자산 유형에서 작동하지 않습니다.
+비디오 처리 프로필을 건너뛰고 YouTube에 바로 게시할 경우 Experience Manager 자산의 비디오 자산이 볼 수 있는 축소판을 가져오지 않음을 의미합니다. 즉, `dynamicmedia` 또는 `dynamicmedia_scene7` 실행 모드에서 실행하는 경우 인코딩되지 않은 비디오가 Dynamic Media 자산 유형에서 작동하지 않습니다.
 
 YouTube 서버에 비디오 자산을 게시하려면 YouTube을 사용하여 안전하고 안전한 서버 간 인증을 위해 다음 작업을 완료해야 합니다.
 
@@ -428,7 +433,7 @@ YouTube 서버에 비디오 자산을 게시하려면 YouTube을 사용하여 �
 1. [YouTube 채널 만들기](#creating-a-youtube-channel)
 1. [게시할 태그 추가](#adding-tags-for-publishing)
 1. [YouTube 게시 복제 에이전트 활성화](#enabling-the-youtube-publish-replication-agent)
-1. [AEM에서 YouTube 설정](#setting-up-youtube-in-aem)
+1. [Experience Manager에서 YouTube 설정](#setting-up-youtube-in-aem)
 1. [(선택 사항) 업로드된 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [YouTube 채널에 비디오 게시](#publishing-videos-to-your-youtube-channel)
 1. [(선택 사항) YouTube에서 게시된 비디오 확인](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
@@ -450,7 +455,7 @@ Google은 정기적으로 사용자 인터페이스를 변경합니다. 따라�
 
 Google Cloud 설정을 구성하려면:
 
-1. 새 Google 계정을 만듭니다.
+1. Google 계정을 만듭니다.
    [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
 
    이미 Google 계정이 있는 경우 다음 단계로 건너뜁니다.
@@ -458,7 +463,7 @@ Google Cloud 설정을 구성하려면:
 1. [https://cloud.google.com/](https://cloud.google.com/)로 이동합니다.
 1. 오른쪽 상단 모서리의 Google Cloud 페이지에서 **[!UICONTROL 콘솔]**&#x200B;을 클릭합니다.
 
-   필요한 경우 Google 계정 자격 증명을 사용하여 **[!UICONTROL 로그인]**&#x200B;해야 **[!UICONTROL 콘솔]** 옵션을 볼 수 있습니다.
+   필요한 경우 Google 계정 자격 증명을 사용하여 **[!UICONTROL 에 로그인하여**[!UICONTROL &#x200B;콘솔&#x200B;]**옵션을 확인합니다.]**
 
 1. 대시보드 페이지의 **[!UICONTROL Google Cloud Platform]** 오른쪽에 있는 프로젝트 드롭다운 목록을 클릭하여 프로젝트 선택 대화 상자를 엽니다.
 1. 프로젝트 선택 대화 상자에서 **[!UICONTROL 새 프로젝트]**&#x200B;를 누릅니다.
@@ -467,7 +472,7 @@ Google Cloud 설정을 구성하려면:
 
 1. 새 프로젝트 대화 상자의 프로젝트 이름 필드에 새 프로젝트의 이름을 입력합니다.
 
-   프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다.만든 후에는 변경할 수 없습니다. 또한 나중에 AEM에서 YouTube을 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다.그것을 적으실 수 있습니다.
+   프로젝트 ID는 프로젝트 이름을 기반으로 합니다. 따라서 프로젝트 이름을 신중하게 선택합니다.만든 후에는 변경할 수 없습니다. 또한 나중에 Experience Manager에서 YouTube을 설정할 때 동일한 프로젝트 ID를 다시 입력해야 합니다.그것을 적는 것을 고려해 보십시오.
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -484,7 +489,7 @@ Google Cloud 설정을 구성하려면:
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
-1. API를 사용하려면 자격 증명이 필요할 수 있습니다. 필요한 경우 **[!UICONTROL 자격 증명 만들기]**&#x200B;를 클릭합니다.
+1. API를 사용하려면 자격 증명이 필요합니다. 필요한 경우 **[!UICONTROL 자격 증명 만들기]**&#x200B;를 클릭합니다.
 
    ![6_5_googleaccount-apis-createcreatecredentials](assets/6_5_googleaccount-apis-createcredentials.png)
 
@@ -500,13 +505,13 @@ Google Cloud 설정을 구성하려면:
 
 1. **[!UICONTROL 어떤 자격 증명이 필요합니까?]**
 1. **[!UICONTROL 프로젝트]** 페이지에 자격 증명을 추가하고, 2단계의 **[!UICONTROL OAuth 2.0 클라이언트 ID 만들기]** 제목 아래에 있는 이름 필드에 원하는 경우 고유한 이름을 입력합니다. 또는 Google에서 지정한 기본 이름을 사용할 수 있습니다.
-1. **[!UICONTROL Authorized Javascript 원본]** 제목 아래에 텍스트 필드에 다음 경로를 입력하고 경로에 고유한 도메인과 포트 번호를 바꾼 다음 **[!UICONTROL Enter]** 키를 눌러 목록에 경로를 추가합니다.
+1. **[!UICONTROL Authorized JavaScript 원본]** 제목 아래에 텍스트 필드에 다음 경로를 입력하고 경로에 고유한 도메인과 포트 번호를 바꾼 다음 **[!UICONTROL Enter]** 키를 눌러 목록에 경로를 추가합니다.
 
    `https://<servername.domain>:<port_number>`
 
    예, `https://1a2b3c.mycompany.com:4321`
 
-   **참고**:위의 경로 예제는 그림 용도로만 사용됩니다.
+   **참고**:위의 경로 예는 데모용으로만 사용됩니다.
 
    ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 
@@ -516,7 +521,7 @@ Google Cloud 설정을 구성하려면:
 
    예, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **참고**:위의 경로 예제는 그림 용도로만 사용됩니다.
+   **참고**:위의 경로 예는 데모용으로만 사용됩니다.
 
 1. **[!UICONTROL OAuth 클라이언트 ID 만들기]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 프로젝트에 자격 증명을 추가]** 페이지의 3단계의 **[!UICONTROL OAuth 2.0 동의 화면 설정]** 제목 아래에서 현재 사용 중인 Gmail 이메일 주소를 선택합니다.
@@ -525,7 +530,7 @@ Google Cloud 설정을 구성하려면:
 
 1. **[!UICONTROL 사용자에게 표시되는 제품 이름]** 제목의 텍스트 필드에 동의 화면에 표시할 항목을 입력합니다.
 
-   AEM 관리자가 YouTube을 인증할 때 동의 화면이 표시됩니다.AEM은 YouTube에 권한을 요청하십시오.
+   Experience Manager 관리자가 YouTube을 인증할 때 동의 화면이 표시됩니다.Experience Manager은 YouTube에 권한을 요청하십시오.
 
 1. **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. 프로젝트에 자격 증명 추가 페이지의 4단계에서 **[!UICONTROL 자격 증명 다운로드]** 제목 아래에 있는 **[!UICONTROL 다운로드]**&#x200B;를 탭합니다.
@@ -544,9 +549,9 @@ Google Cloud 설정을 구성하려면:
 
 YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합니다. YouTube 채널을 이미 만든 경우 이 작업을 건너뛰고 게시](/help/assets/video.md#adding-tags-for-publishing)에 대한 태그 추가 로 이동할 수 있습니다.[
 
->[!CAUTION]
+>[!WARNING]
 >
->AEM의 YouTube 설정 아래에 채널을 추가하려면 먼저 YouTube *에서 채널을 하나 이상 설정했는지 확인하십시오(아래 AEM](#setting-up-youtube-in-aem)에서 YouTube 설정 을 참조하십시오).*[ 이 작업을 수행하지 않으면 기존 채널에 대한 경고가 표시되지 않습니다. 그러나 채널을 추가할 때는 Google 인증이 계속 발생하지만 비디오가 전송되는 채널을 선택할 수 있는 옵션이 없습니다.
+>Experience Manager의 YouTube 설정 아래에 채널을 추가하려면 먼저 YouTube *에서 채널을 하나 이상 설정했는지 확인하십시오(아래 Experience Manager](#setting-up-youtube-in-aem)에서 YouTube 설정 을 참조하십시오).*[ 하나 이상의 채널을 설정하지 않으면 존재하지 않는 채널에 대한 경고가 표시되지 않습니다. 그러나 채널을 추가할 때는 Google 인증이 계속 발생하지만 비디오가 전송되는 채널을 선택할 수 있는 옵션이 없습니다.
 
 **YouTube 채널을 만들려면:**
 
@@ -556,7 +561,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 1. 채널 페이지에서 **[!UICONTROL 새 채널 만들기]**&#x200B;를 클릭합니다.
 1. 브랜드 계정 페이지의 브랜드 계정 이름 필드에 비디오 자산을 게시하려는 위치에 비즈니스 이름 또는 다른 채널 이름을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
-   AEM에서 YouTube을 설정할 때 다시 입력해야 하므로 여기에 입력하는 이름을 기억하십시오.
+   Experience Manager에서 YouTube을 설정할 때 다시 입력해야 하므로 여기에 입력하는 이름을 기억하십시오.
 
 1. (선택 사항) 필요한 경우 채널을 더 추가합니다.
 
@@ -564,30 +569,30 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
 ### {#adding-tags-for-publishing} 게시용 태그 추가
 
-비디오를 YouTube에 게시하기 위해 AEM은 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-administering/tags.md)를 참조하십시오.
+비디오를 YouTube에 게시하려면 Experience Manager은 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-administering/tags.md)를 참조하십시오.
 
-또는 AEM에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 [YouTube 게시 복제 에이전트 활성화](#enabling-the-youtube-publish-replication-agent)로 이동할 수 있습니다.
+또는 Experience Manager에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 [YouTube 게시 복제 에이전트 활성화](#enabling-the-youtube-publish-replication-agent)로 이동할 수 있습니다.
 
 ### YouTube 게시 복제 에이전트 {#enabling-the-youtube-publish-replication-agent} 활성화
 
-YouTube 게시 복제 에이전트를 활성화한 후 Google Cloud 계정에 대한 연결을 테스트하려면 **[!UICONTROL 연결 테스트]**&#x200B;를 누릅니다. 브라우저 탭에 연결 결과가 표시됩니다. YouTube 채널을 추가한 경우 해당 목록이 테스트의 일부로 표시됩니다.
+YouTube 게시 복제 에이전트를 활성화한 후 Google Cloud 계정에 대한 연결을 테스트하려면 **[!UICONTROL 연결 테스트]**&#x200B;를 누릅니다. 브라우저 탭에 연결 결과가 표시됩니다. YouTube 채널을 추가한 경우 목록의 일부가 테스트의 일부로 표시됩니다.
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 클릭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트 를 클릭합니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 클릭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트 를 클릭합니다.
 1. 작성자 에이전트 페이지에서 **[!UICONTROL YouTube 게시(youtube)]**&#x200B;를 클릭합니다.
 1. 도구 모음의 설정 오른쪽에 있는 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
-1. 복제 에이전트를 켜려면 **[!UICONTROL Enabled]** 확인란을 선택하십시오.
+1. 복제 에이전트를 설정할 수 있도록 **[!UICONTROL Enabled]** 확인란을 선택합니다.
 1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
-   이제 AEM에서 YouTube을 설정합니다.
+   이제 Experience Manager에서 YouTube을 설정합니다.
 
-### AEM {#setting-up-youtube-in-aem}에서 YouTube 설정
+### Experience Manager {#setting-up-youtube-in-aem}에서 YouTube 설정
 
-AEM 6.4부터 AEM에서 YouTube 게시를 설정하는 새로운 터치 사용자 인터페이스 방법이 도입되었습니다. 사용 중인 AEM의 설치된 인스턴스에 따라 다음 중 하나를 수행합니다.
+Experience Manager 6.4부터 Experience Manager에서 YouTube 게시를 설정하는 새로운 터치 사용자 인터페이스 방법이 도입되었습니다. 사용 중인 Experience Manager의 설치된 인스턴스에 따라 다음 중 하나를 수행합니다.
 
-* 6.4 이전 AEM에서 YouTube을 구성하려면 [6.4](/help/assets/video.md#setting-up-youtube-in-aem-before) 이전 AEM에서 YouTube 설정 을 참조하십시오.
-* AEM 6.4 이상에서 YouTube을 구성하려면 [AEM 6.4 이상에서 YouTube 설정](#setting-up-youtube-in-aem-and-later)을 참조하십시오.
+* 6.4 이전 Experience Manager에서 YouTube을 구성하려면 [6.4](/help/assets/video.md#setting-up-youtube-in-aem-before) 이전 Experience Manager에서 YouTube 설정 을 참조하십시오.
+* Experience Manager 6.4 이상에서 YouTube을 구성하려면 [Experience Manager 6.4 이상에서 YouTube 설정](#setting-up-youtube-in-aem-and-later)을 참조하십시오.
 
-#### AEM 6.4 이상에서 YouTube 설정 {#setting-up-youtube-in-aem-and-later}
+#### Experience Manager 6.4 이상에서 YouTube 설정 {#setting-up-youtube-in-aem-and-later}
 
 1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
 1. 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube 게시 구성]**&#x200B;을 누릅니다.
@@ -606,7 +611,7 @@ YouTube 구성 만들기 페이지를 열어 둡니다.곧 다시 돌아올 겁�
 1. YouTube 계정 설정 대화 상자로 돌아갑니다. **[!UICONTROL JSON 구성]** 필드에서 JSON 텍스트를 붙여 넣습니다.
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 탭합니다.
 
-   이제 AEM에서 YouTube 채널을 설정합니다.
+   이제 Experience Manager에서 YouTube 채널을 설정합니다.
 
 1. **[!UICONTROL 채널 추가]**&#x200B;를 누릅니다.
 1. 채널 이름 필드에 **[!UICONTROL 이전에 YouTube]**&#x200B;에 하나 이상의 채널을 추가하는 작업에서 만든 채널의 이름을 입력합니다.
@@ -625,8 +630,8 @@ YouTube 구성 만들기 페이지를 열어 둡니다.곧 다시 돌아올 겁�
    이제 게시할 태그를 설정합니다.
 
 1. **[!UICONTROL 게시할 태그 설정]**  - Cloud Services > YouTube 페이지에서 연필 아이콘을 탭하여 사용할 태그 목록을 편집합니다.
-1. 드롭다운 목록 아이콘(위/아래로 캐럿)을 탭하여 AEM에서 사용 가능한 태그 목록을 표시합니다.
-1. 태그를 하나 이상 탭하여 추가합니다.
+1. Experience Manager에 사용 가능한 태그 목록을 표시할 수 있도록 드롭다운 목록 아이콘(위/아래 캐럿)을 누릅니다.
+1. 태그를 추가할 수 있도록 하나 이상의 태그를 탭합니다.
 
    추가한 태그를 삭제하려면 태그를 선택하고 **[!UICONTROL X]**&#x200B;를 누릅니다.
 
@@ -634,7 +639,7 @@ YouTube 구성 만들기 페이지를 열어 둡니다.곧 다시 돌아올 겁�
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
-#### 6.4 {#setting-up-youtube-in-aem-before} 이전 AEM에서 YouTube 설정
+#### 6.4 {#setting-up-youtube-in-aem-before} 이전 Experience Manager에서 YouTube 설정
 
 1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
 
@@ -645,7 +650,7 @@ YouTube 구성 만들기 페이지를 열어 둡니다.곧 다시 돌아올 겁�
 1. YouTube 계정 설정 대화 상자의 **[!UICONTROL 응용 프로그램 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
 
    처음에 [에서 Google Cloud 설정을 구성한 경우 프로젝트 ID를 지정했습니다](/help/assets/video.md#configuring-google-cloud-settings).
-YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁니다
+YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁니다.
 
 1. 일반 텍스트 편집기를 사용하여 Google Cloud 설정 구성 작업에서 이전에 다운로드하여 저장한 JSON 파일을 엽니다.
 1. 전체 JSON 텍스트를 선택하고 복사합니다.
@@ -671,8 +676,8 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
    이제 게시할 태그를 설정합니다.
 
 1. **[!UICONTROL 게시할 태그 설정]**  - Cloud Services > YouTube 페이지에서 연필 아이콘을 탭하여 사용할 태그 목록을 편집합니다.
-1. 드롭다운 목록 아이콘(위/아래로 캐럿)을 탭하여 AEM에서 사용 가능한 태그 목록을 표시합니다.
-1. 태그를 하나 이상 탭하여 추가합니다.
+1. Experience Manager에 사용 가능한 태그 목록을 표시할 수 있도록 드롭다운 목록 아이콘(위/아래 캐럿)을 누릅니다.
+1. 태그를 추가할 수 있도록 하나 이상의 태그를 탭합니다.
 
    추가한 태그를 삭제하려면 태그를 선택하고 **X**&#x200B;를 누릅니다.
 
@@ -682,9 +687,9 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
 ### (선택 사항) 업로드한 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
-선택적으로 비디오 업로드 시 YouTube 속성 설정을 자동화할 수 있습니다. AEM에서 메타데이터 처리 프로필을 만들어 이 작업을 수행합니다.
+선택적으로 Experience Manager에서 메타데이터 처리 프로필을 만들어 비디오 업로드 시 YouTube 속성 설정을 자동화할 수 있습니다.
 
-메타데이터 처리 프로필을 만들려면 먼저 **[!UICONTROL 필드 레이블]**, **[!UICONTROL 속성에 매핑]** 및 **[!UICONTROL Choices]** 필드의 값을 복사해야 하며, 모두 비디오용 메타데이터 스키마에 있습니다. 그런 다음 해당 값을 추가하여 YouTube 비디오 메타데이터 처리 프로필을 만듭니다.
+메타데이터 처리 프로필을 만들려면 먼저 **[!UICONTROL 필드 레이블]**, **[!UICONTROL 속성에 매핑]** 및 **[!UICONTROL Choices]** 필드의 값을 복사해야 하며, 모두 비디오용 메타데이터 스키마에 있습니다. 그런 다음 해당 값을 추가하여 YouTube 비디오 메타데이터 처리 프로필을 빌드합니다.
 
 업로드한 비디오에 대한 기본 YouTube 속성 설정을 자동화하는 방법은 다음과 같습니다.
 
@@ -711,7 +716,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 복사한 값을 열려 있는 텍스트 편집기에 붙여넣습니다. 메타데이터 처리 프로필을 만들 때 나중에 이 값이 필요합니다. 텍스트 편집기를 열어 둡니다.
 
 1. 메타데이터 스키마 편집기 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 취소]**&#x200B;를 클릭합니다.
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;을 클릭합니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;을 클릭합니다.
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 메타데이터 프로필 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 메타데이터 프로필 추가 대화 상자의 **[!UICONTROL 프로필 제목]** 텍스트 필드에 이름 `YouTube Video`을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
@@ -722,7 +727,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
    * (선택 사항) **[!UICONTROL 섹션 헤더]** 레이블이 지정된 구성 요소를 왼쪽으로 드래그하여 양식 영역에 놓습니다.
    * (선택 사항) **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
    * (선택 사항) 페이지의 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 `YouTube Publishing`을 입력합니다.
-   * **[!UICONTROL 양식 작성]** 탭을 클릭한 다음, **[!UICONTROL 다중 값 텍스트]**&#x200B;라는 구성 요소를 드래그하고 방금 만든 **[!UICONTROL YouTube 게시]** 제목 아래에 놓습니다.
+   * **[!UICONTROL 양식 작성]** 탭을 클릭한 다음, **[!UICONTROL 다중 값 텍스트]**&#x200B;라는 구성 요소를 드래그하고 만든 **[!UICONTROL YouTube 게시]** 제목 아래에 놓습니다.
 
    * **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
    * 페이지 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 해당 필드에 붙여 넣습니다. 선택 사항 값을 기본값 필드에 붙여넣습니다.
@@ -733,7 +738,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
    * (선택 사항) **[!UICONTROL 섹션 헤더]** 레이블이 지정된 구성 요소를 왼쪽으로 드래그하여 양식 영역에 놓습니다.
    * (선택 사항) **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
    * (선택 사항) 페이지의 오른쪽의 설정 탭의 필드 레이블 텍스트 필드에 `YouTube Privacy`을 입력합니다.
-   * **[!UICONTROL 양식 작성]** 탭을 클릭한 다음, **[!UICONTROL 다중 값 텍스트]**&#x200B;라는 구성 요소를 드래그하고 방금 만든 **[!UICONTROL YouTube 개인 정보 보호]** 제목 아래에 놓습니다.
+   * **[!UICONTROL 양식 작성]** 탭을 클릭한 다음, **[!UICONTROL 다중 값 텍스트]**&#x200B;라는 구성 요소를 드래그하고 만든 **[!UICONTROL YouTube 개인 정보 보호]** 제목 아래에 놓습니다.
 
    * **[!UICONTROL 필드 레이블]**&#x200B;을 클릭하여 구성 요소를 선택합니다.
    * 페이지 오른쪽의 설정 탭에서 이전에 복사한 YouTube 게시 값(필드 레이블 값 및 속성 값에 매핑)을 양식의 해당 필드에 붙여 넣습니다. 선택 사항 값을 기본값 필드에 붙여넣습니다.
@@ -745,17 +750,17 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
 ### YouTube 채널 {#publishing-videos-to-your-youtube-channel}에 비디오 게시
 
-이제 이전에 비디오 자산에 추가한 태그를 연결합니다. 이 프로세스를 통해 AEM에서 YouTube 채널에 게시할 자산을 알 수 있습니다.
+이제 이전에 비디오 자산에 추가한 태그를 연결합니다. 이 프로세스를 통해 Experience Manager은 YouTube 채널에 게시할 자산을 알 수 있습니다.
 
 >[!NOTE]
 >
 >Dynamic Media - Scene7 모드에서 실행할 때 게시가 즉시 YouTube에 자동으로 게시되지 않습니다. Dynamic Media - Scene7 모드가 설정되면, 다음 두 가지 게시 옵션 중에서 선택할 수 있습니다.**[!UICONTROL 즉시]** 또는 **[!UICONTROL 활성화 시]**
 >
->**[!UICONTROL 게시]** 즉시 는 업로드된 자산이 IPS와 동기화된 후 게재 시스템에 자동으로 게시됨을 의미합니다. Dynamic Media에게 이는 사실이지만 YouTube에게는 그렇지 않습니다. YouTube에 게시하려면 AEM 작성자를 통해 게시해야 합니다.
+>**[!UICONTROL 게시]** 즉시 는 업로드된 자산이 IPS와 동기화된 후 게재 시스템에 자동으로 게시됨을 의미합니다. Dynamic Media에게 이는 사실이지만 YouTube에게는 그렇지 않습니다. YouTube에 게시하려면 Experience Manager 작성자를 통해 게시해야 합니다.
 
 >[!NOTE]
 >
->YouTube에서 컨텐츠를 게시하기 위해 AEM은 **[!UICONTROL YouTube에 게시]** 워크플로우를 사용하여 진행 상황을 모니터링하고 실패 정보를 볼 수 있습니다.
+>YouTube에서 컨텐츠를 게시하기 위해 Experience Manager은 **[!UICONTROL YouTube에 게시]** 워크플로우를 사용하여 진행 상황을 모니터링하고 실패 정보를 볼 수 있습니다.
 >
 >[비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 >
@@ -763,7 +768,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
 **비디오를 YouTube 채널에 게시하려면:**
 
-1. AEM에서 YouTube 채널에 게시할 비디오 자산으로 이동합니다.
+1. Experience Manager에서 YouTube 채널에 게시할 비디오 자산으로 이동합니다.
 1. 비디오 자산(응용 비디오 세트)을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 1. 기본 탭의 메타데이터 제목 아래에서 태그 필드 오른쪽에 있는 **[!UICONTROL 선택 대화 상자 열기]**&#x200B;를 클릭합니다.
@@ -775,7 +780,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 1. 비디오 속성 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
 1. 도구 모음에서 **[!UICONTROL 빠른 게시]**&#x200B;를 클릭합니다.
 
-   또한 [AEM Sites에서 게시 관리 사용](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html)을 참조하십시오.
+   Experience Manager 사이트에 게시 관리 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html)을 참조하십시오.[
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 
@@ -785,9 +790,9 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
 [비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
-게시 시간은 기본 소스 비디오의 형식, 파일 크기 및 업로드 트래픽이 포함된 여러 요인에 따라 크게 달라질 수 있습니다. 게시 프로세스는 몇 분에서 몇 시간 정도 걸릴 수 있습니다. 또한 고해상도 포맷이 훨씬 느리게 렌더링된다는 점도 유념하십시오. 예를 들어 720p와 1080p는 480p보다 훨씬 오래 걸립니다.
+게시 시간은 기본 소스 비디오의 형식, 파일 크기 및 업로드 트래픽이 포함된 여러 요인에 따라 크게 달라질 수 있습니다. 게시 프로세스는 몇 분에서 몇 시간 정도 걸릴 수 있습니다. 또한 고해상도 포맷이 훨씬 느리게 렌더링됩니다. 예를 들어 720p와 1080p는 480p보다 오래 걸립니다.
 
-**[!UICONTROL 업로드(처리 중)]**&#x200B;라는 상태 메시지가 계속 표시되면 8시간 후에 사이트에서 비디오를 제거하고 다시 업로드하십시오.
+**[!UICONTROL 업로드(처리 중)]**&#x200B;라는 상태 메시지가 계속 표시되면 8시간 후에 Adobe의 사이트에서 비디오를 제거하고 다시 업로드하십시오.
 
 ### YouTube URL을 웹 응용 프로그램 {#linking-youtube-urls-to-your-web-application}에 연결
 
@@ -809,15 +814,15 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
 ### 비디오를 게시 취소하여 YouTube {#unpublishing-videos-to-remove-them-from-youtube}에서 제거합니다.
 
-AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제거됩니다.
+Experience Manager에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제거됩니다.
 
 >[!CAUTION]
 >
->YouTube 내에서 직접 비디오를 제거하는 경우, AEM은 인식하지 못하며 비디오가 YouTube에 아직 게시되어 있는 것처럼 계속 동작합니다. 항상 AEM을 통해 YouTube에서 비디오 자산 게시를 취소합니다.
+>YouTube 내에서 직접 비디오를 제거하는 경우, Experience Manager은 이를 인식하지 못하고 비디오가 YouTube에 아직 게시되어 있는 것처럼 계속 동작합니다. 항상 Experience Manager 방식으로 YouTube에서 비디오 자산 게시를 취소합니다.
 
 >[!NOTE]
 >
->YouTube에서 컨텐츠를 제거하려면 AEM에서는 진행 상황을 모니터링하고 실패 정보를 볼 수 있는 **[!UICONTROL YouTube에서 게시 취소 워크플로우를 사용합니다.]**
+>YouTube에서 컨텐츠를 제거하려면 Experience Manager은 진행 상황을 모니터링하고 실패 정보를 볼 수 있는 **[!UICONTROL YouTube에서 게시 취소 워크플로우를 사용합니다.]**
 >
 >[비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
@@ -825,18 +830,16 @@ AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제
 
 1. YouTube 채널에서 게시를 취소하려는 비디오 자산으로 이동합니다.
 1. 자산 선택 모드에서 하나 이상의 게시된 비디오 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 클릭합니다. 세 점 아이콘()을 탭해야 할 수 있습니다..) 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 참조하십시오.
+1. 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 클릭합니다. 세 점 아이콘()을 누릅니다..) 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;가 열립니다.
 1. 게시 관리 페이지에서 **[!UICONTROL 게시 취소]**&#x200B;를 누릅니다.
 1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]**&#x200B;을 누릅니다.
 1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시 취소]**&#x200B;를 누릅니다.
 
 ## 비디오 인코딩 및 YouTube 게시 진행률 모니터링 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-비디오 인코딩이 적용된 폴더에 새 비디오를 업로드하거나 Youtube에 비디오를 게시하면 다양한 방법으로 비디오 인코딩/Youtube 게시가 진행(또는 실패)되고 있음을 모니터링할 수 있습니다. 실제 YouTube 게시 진행 상태는 로그 방식으로만 사용할 수 있지만 실패 또는 성공 여부는 다음 절차에 설명된 추가 방법으로 나열되어 있습니다. 또한 YouTube 게시 워크플로우 또는 비디오 인코딩이 완료되거나 중단되면 이메일 알림을 받을 수 있습니다.
+새 비디오를 비디오 인코딩이 적용된 폴더에 업로드하거나 YouTube에 비디오를 게시하면 비디오 인코딩/Youtube 게시가 진행(또는 실패)되는 방식을 모니터링할 수 있습니다. 실제 YouTube 게시 진행 상태는 로그 방식으로만 사용할 수 있습니다. 그러나 실패 또는 성공은 다음 절차에 설명된 추가 방법으로 나열되어 있습니다. 또한 YouTube 게시 워크플로우 또는 비디오 인코딩이 완료되거나 중단되면 이메일 알림을 받게 됩니다.
 
 ### 진행률 모니터링 {#monitoring-progress}
-
-**진행 상황을 모니터링하려면(실패한 인코딩/YouTube 게시 포함):**
 
 1. 자산 폴더에서 비디오 인코딩 진행 상태 보기:
 
@@ -860,7 +863,7 @@ AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제
 
    >[!NOTE]
    >
-   >**[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)의 **[!UICONTROL timeout]**&#x200B;에 대한 여러 워크플로우 구성으로 인해 실패/오류 메시지가 마지막으로 기록되는 데 시간이 오래 걸릴 수 있습니다. 예:
+   >**[!UICONTROL 다시 시도]**, **[!UICONTROL 다시 시도 지연]** 및 [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)의 **[!UICONTROL timeout]**&#x200B;에 대한 여러 워크플로우 구성으로 인해 실패/오류 메시지가 최종적으로 기록되는 데 시간이 오래 걸릴 수 있습니다. 예:
    >
    >    * Apache Sling 작업 큐 구성
    >    * Adobe Granite Workflow 외부 프로세스 작업 처리기
@@ -873,7 +876,7 @@ AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제
 
    >[!NOTE]
    >
-   >**[!UICONTROL 도구]** 메뉴에 액세스하려면 관리 권한이 필요할 수 있습니다.
+   >**[!UICONTROL 도구]** 메뉴에 액세스하려면 관리 권한이 필요합니다.
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -887,13 +890,13 @@ AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제
 
    >[!NOTE]
    >
-   >**[!UICONTROL 도구]** 메뉴에 액세스하려면 관리 권한이 필요할 수 있습니다.
+   >**[!UICONTROL 도구]** 메뉴에 액세스하려면 관리 권한이 필요합니다.
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
    >
-   >[다시 시도&#x200B;]**,**[!UICONTROL &#x200B;다시 시도 지연&#x200B;]**및**[!UICONTROL &#x200B;시간 초과&#x200B;]**(예: https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)에서)에 대한 여러 워크플로우 구성으로 인해 오류 메시지가 마지막으로 기록되는 데 시간이 오래 걸릴 수 있습니다.**[!UICONTROL 
+   >예를 들어, [다시 시도&#x200B;]**,**[!UICONTROL &#x200B;다시 시도 지연&#x200B;]**및**[!UICONTROL &#x200B;시간 초과&#x200B;]**(](https://localhost:4502/system/console/configMgr)에서)에 대한 여러 워크플로우 구성으로 인해 오류 메시지가 마지막으로 기록되는 데 시간이 오래 걸릴 수 있습니다.**[!UICONTROL 
    >
    >
    >
@@ -909,25 +912,25 @@ AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제
 
    >[!NOTE]
    >
-   >**[!UICONTROL 도구]** 메뉴에 액세스하려면 관리 권한이 필요할 수 있습니다.
+   >**[!UICONTROL 도구]** 메뉴에 액세스하려면 관리 권한이 필요합니다.
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
-1. 중단되거나 실패한 워크플로우 작업에 대한 이메일 알림을 받을 수 있습니다. 관리자가 이러한 이메일 알림을 구성할 수 있습니다. [이메일 알림 구성](#configuring-e-mail-notifications)을 참조하십시오.
+1. 중단되거나 실패한 워크플로우 작업에 대한 이메일 알림을 받게 됩니다. 관리자가 이러한 이메일 알림을 구성할 수 있습니다. [이메일 알림 구성](#configuring-e-mail-notifications)을 참조하십시오.
 
 #### 전자 메일 알림 구성 {#configuring-e-mail-notifications}
 
 >[!NOTE]
 >
->**[!UICONTROL 도구]** 메뉴에 액세스하려면 관리 권한이 필요할 수 있습니다.
+>**[!UICONTROL 도구]** 메뉴에 액세스하려면 관리 권한이 필요합니다.
 
 알림을 구성하는 방법은 인코딩 작업 또는 YouTube 게시 작업에 대한 알림을 원하는 지에 따라 다릅니다.
 
-* 인코딩 작업의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에서 모든 AEM 워크플로우 이메일 알림에 대한 구성 페이지에 액세스하여 **[!UICONTROL 일 CQ 워크플로우 이메일 알림 서비스]**&#x200B;를 검색할 수 있습니다. AEM](/help/sites-administering/notification.md)에서 이메일 알림 구성 을 참조하십시오. [ **[!UICONTROL Notify on Abort]** 또는 **[!UICONTROL Notify on Complete]**&#x200B;에 대한 확인란을 선택하거나 선택 취소할 수 있습니다.
+* 인코딩 작업의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에서 모든 Experience Manager 워크플로우 이메일 알림에 대한 구성 페이지에 액세스하여 **[!UICONTROL 일 CQ 워크플로우 이메일 알림 서비스]**&#x200B;를 검색할 수 있습니다. [Experience Manager](/help/sites-administering/notification.md)에서 이메일 알림 구성을 참조하십시오. **[!UICONTROL Notify on Abort]** 또는 **[!UICONTROL Notify on Complete]**&#x200B;에 대한 확인란을 선택하거나 선택 취소할 수 있습니다.
 
 * YouTube 게시 작업의 경우 다음을 수행합니다.
 
-1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 탭합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 탭합니다.
 1. 워크플로우 모델 페이지에서 **[!UICONTROL YouTube에 게시]**&#x200B;를 선택한 다음, 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 탭합니다.
 1. YouTube에 게시 워크플로우 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 편집]**&#x200B;을 탭합니다.
 1. YouTube 업로드 구성 요소에서 마우스 포인터를 놓은 다음 한 번 탭하여 인라인 도구 모음을 표시합니다.
@@ -948,11 +951,11 @@ AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제
    * 게시 실패
    * 게시 완료 - 채널 및 URL에 대한 정보를 포함합니다
 
-   확인란을 지우는 것은 YouTube 게시 워크플로우에서 지정된 이메일 알림을 받지 못함을 의미합니다.
+   확인란을 지우는 것은 YouTube 게시 워크플로우에서 지정된 이메일 알림을 받지 않음을 의미합니다.
 
    >[!NOTE]
    >
-   >이러한 이메일은 YouTube에만 해당되며 일반 워크플로우 이메일 알림 외에도 제공됩니다. 그 결과, **[!UICONTROL 일 CQ 워크플로우 이메일 알림 서비스]**&#x200B;에서 사용할 수 있는 일반 알림과 구성 설정에 따라 YouTube에 고유한 두 개의 이메일 알림 세트를 받을 수 있습니다.
+   >이러한 이메일은 YouTube에만 해당되며 일반 워크플로우 이메일 알림 외에도 제공됩니다. 그 결과, **[!UICONTROL 일 CQ 워크플로우 이메일 알림 서비스]**&#x200B;에서 사용할 수 있는 일반 알림과 구성 설정에 따라 YouTube과 관련된 두 개의 이메일 알림 세트를 받을 수 있습니다.
 
 1. 작업이 끝나면 대화 상자의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL Done]** 아이콘(확인 표시)을 탭합니다.
 1. YouTube에 게시 워크플로우 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 동기화]**&#x200B;를 탭합니다.
@@ -963,7 +966,7 @@ AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제
 >
 >비디오 보고서는 Dynamic Media - 하이브리드 모드를 실행하는 경우에만 사용할 수 있습니다.
 
-비디오 보고서에는 지정된 기간 동안 여러 개의 집계 지표가 표시되어 *게시된 *개별 및 집계 비디오가 예상대로 작동하는지 모니터링할 수 있습니다. 다음 상위 지표 데이터는 전체 웹 사이트에서 게시된 모든 비디오에 대해 집계됩니다.
+비디오 보고서에는 지정된 시간에 여러 개의 집계 지표가 표시되어 *게시된 *개별 및 집계 비디오가 예상대로 작동하는지 모니터링할 수 있습니다. 다음 상위 지표 데이터는 전체 웹 사이트에서 게시된 모든 비디오에 대해 집계됩니다.
 
 * 비디오 시작
 * 완료율
@@ -985,15 +988,15 @@ AEM에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제
 
 기본적으로 비디오 보고서를 처음 입력할 때 이 보고서는 현재 달 1일에 시작하여 현재 월의 날짜로 끝나는 비디오 데이터를 표시합니다. 그러나 고유한 날짜 범위를 지정하여 기본 날짜 범위를 무시할 수 있습니다. 다음에 비디오 보고서를 입력할 때 지정한 날짜 범위가 사용됩니다.
 
-비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 게시 서버를 이미 설정해야 합니다. 게시 서버가 설정되지 않은 경우에는 여전히 게시하여 비디오 보고서를 볼 수 있지만 Dynamic Media 클라우드 구성으로 돌아가 **[!UICONTROL OK]**&#x200B;을 탭해야 합니다.
+비디오 보고서가 올바르게 작동하려면 Dynamic Media Cloud Services이 구성되면 보고서 세트 ID가 자동으로 생성됩니다. 동시에 보고서 세트 ID가 게시 서버로 푸시되어 자산을 미리 볼 때 URL 복사 기능에 사용할 수 있습니다. 그러나 이 기능을 사용하려면 게시 서버가 이미 설정되어 있어야 합니다. 게시 서버가 설정되지 않은 경우에는 여전히 게시하여 비디오 보고서를 볼 수 있습니다. 그러나 Dynamic Media 클라우드 구성으로 돌아가 **[!UICONTROL OK]**&#x200B;를 탭해야 합니다.
 
 **비디오 보고서를 보려면 다음을 수행하십시오.**
 
-1. AEM의 왼쪽 위 모서리에서 AEM 로고를 탭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]**(망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 보고서]**&#x200B;를 탭합니다.
+1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 탭한 다음, 왼쪽 레일에서 **[!UICONTROL 도구]** (망치 아이콘) > **[!UICONTROL 자산]** > **[!UICONTROL 비디오 보고서]**&#x200B;를 탭합니다.
 1. 비디오 보고서 페이지에서 다음 중 하나를 수행합니다.
 
    * 오른쪽 위 모서리 근처에 있는 **비디오 보고서 새로 고침** 아이콘을 탭합니다.
-보고서의 종료 날짜가 현재 날짜인 경우에만 새로 고침을 사용해야 합니다. 이렇게 하면 보고서를 마지막으로 실행한 이후 발생한 비디오 추적이 표시됩니다.
+보고서의 종료 날짜가 현재 날짜인 경우에만 새로 고침을 사용합니다. 이렇게 하면 보고서를 마지막으로 실행한 이후 발생한 비디오 추적이 표시됩니다.
 
    * 오른쪽 위 모서리 근처에 있는 **날짜 선택기** 아이콘을 탭합니다.
 비디오 데이터를 저장할 시작 날짜 및 종료 날짜 범위를 지정한 다음 **[!UICONTROL 보고서 실행]**&#x200B;을 누릅니다.
@@ -1075,17 +1078,17 @@ Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기�
 >
 >사용하는 비디오 플레이어는 캡션 표시를 지원해야 합니다.
 
-Dynamic Media에는 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환하는 기능이 있습니다. 이 전환은 JSON 텍스트를 비디오의 숨겨진 완전한 텍스트 로 웹 페이지에 포함할 수 있음을 의미합니다. 그런 다음 검색 엔진은 컨텐츠를 크롤링하고 색인화하여 비디오를 보다 손쉽게 검색할 수 있게 만들고 고객에게 비디오 컨텐츠에 대한 추가 세부 사항을 제공할 수 있습니다.
+Dynamic Media은 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로 변환합니다. 이 전환은 JSON 텍스트를 비디오의 숨겨진 완전한 텍스트 로 웹 페이지에 포함할 수 있음을 의미합니다. 그런 다음 검색 엔진은 컨텐츠를 크롤링하고 색인화하여 비디오를 보다 손쉽게 검색할 수 있게 만들고 고객에게 비디오 컨텐츠에 대한 추가 세부 사항을 제공할 수 있습니다.
 
 URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dynamic Media 이미지 제공 및 렌더링 API 도움말*&#x200B;에서 [정적(비이미지) 콘텐츠 제공](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)을 참조하십시오.
 
-**비디오에 캡션 또는 자막을 추가하려면**:
+**비디오에 캡션 또는 자막을 추가하려면**
 
 1. 타사 응용 프로그램 또는 서비스를 사용하여 비디오 캡션/자막 파일을 만듭니다.
 
    만드는 파일이 WebVTT(Web Video Text Tracks) 표준을 따르는지 확인합니다. 캡션 파일 이름 확장명은 .vtt입니다. WebVTT 캡션 표준에 대한 자세한 정보를 확인할 수 있습니다.
 
-   [WebVTT 를 참조하십시오.웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/).
+   [WebVTT 를 참조하십시오.웹 비디오 텍스트 트랙 형식](https://w3c.github.io/webvtt/).
 
    Dynamic Media 외부에서 캡션/자막 파일을 작성하는 데 사용할 수 있는 무료 및 프리미엄 도구와 서비스가 모두 있습니다. 예를 들어 스타일이 없는 간단한 비디오 캡션 파일을 만들려면 다음과 같은 무료 온라인 캡션 작성 및 편집 도구를 사용할 수 있습니다.
 
@@ -1095,15 +1098,15 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
    도구의 **[!UICONTROL 비디오 파일의 URL 입력]** 필드에서 복사한 비디오 파일의 URL을 붙여넣은 다음 **[!UICONTROL 로드]**&#x200B;를 클릭합니다. [비디오 파일 자체에 URL을 가져올 수 있는 URL을 가져오려면 ](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)비디오 파일 필드의 URL 입력&#x200B;]**을 참조하십시오.**[!UICONTROL  Internet Explorer, Chrome 또는 Safari는 기본적으로 비디오를 재생할 수 있습니다.
 
-   이제 사이트에서 화면의 지침에 따라 WebVTT 파일을 작성하고 저장합니다. 완료되면 캡션 파일 내용을 복사하여 일반 텍스트 편집기에 붙여넣은 다음 .vtt 파일 확장자로 저장합니다.
+   이제 사이트에서 화면의 지침에 따라 WebVTT 파일을 작성하고 저장합니다. 완료되면 캡션 파일 내용을 복사하여 일반 텍스트 편집기에 붙여넣은 다음 `.vtt` 파일 확장자로 저장합니다.
 
    >[!NOTE]
    >
-   >여러 언어로 비디오 자막을 글로벌 지원하려면 WebVTT 표준을 사용하려면 지원할 각 언어에 대해 별도의 .vtt 파일과 호출을 만들어야 합니다.
+   >여러 언어로 된 비디오 자막을 글로벌 지원을 위해 WebVTT 표준을 사용하려면 지원할 각 언어에 대해 별도의 .vtt 파일과 호출을 만들어야 합니다.
 
-   일반적으로 캡션 VTT 파일의 이름을 비디오 파일과 같은 이름으로 지정하고 -EN 또는 -FR 또는 -DE 등의 언어 로케일에 추가하려고 합니다. 이렇게 하면 기존 웹 컨텐츠 관리 시스템을 사용하여 비디오 URL의 생성을 자동화하는 데 도움이 됩니다.
+   일반적으로 캡션 VTT 파일의 이름을 비디오 파일과 같은 이름으로 지정하고 -EN, -FR 또는 -DE와 같은 언어 로케일에 추가하려고 합니다. 이렇게 하면 기존 웹 컨텐츠 관리 시스템을 사용하여 비디오 URL의 생성을 자동화하는 데 도움이 됩니다.
 
-1. AEM에서 WebVTT 캡션 파일을 DAM에 업로드합니다.
+1. Experience Manager에서 WebVTT 캡션 파일을 DAM에 업로드합니다.
 1. 업로드한 캡션 파일과 연결할 *게시된* 비디오 자산으로 이동합니다.
 
    URL은 *다음에*&#x200B;을 복사하는 데에만 사용할 수 있으며, 먼저 *자산을 게시했습니다*.
@@ -1116,17 +1119,17 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      캡션 경로의 끝에 `,1`을 참고하십시오. 경로에서 .vtt 파일 이름 확장자 바로 다음에 `,1` 또는 `,0`로 설정하여 비디오 플레이어 모음에서 닫힌 캡션 단추를 활성화(켜기) 또는 비활성화(해제)하는 옵션이 각각 있습니다.
+      캡션 경로의 끝에 `,1`을 참고하십시오. 경로에서 `.vtt` 파일 이름 확장자 바로 다음에, 각각 `,1` 또는 `,0`로 설정하여 비디오 플레이어 모음에서 닫힌 캡션 단추를 활성화(설정)하거나 비활성화(해제)할 수 있습니다.
 
-   * 포함된 비디오 뷰어 환경의 경우 **[!UICONTROL 포함 코드]**&#x200B;를 누릅니다. 포함 코드 대화 상자에서 포함 코드를 선택하고 클립보드에 복사한 다음 단순 텍스트 편집기에 붙여넣습니다. 복사된 포함 코드를 다음 구문과 함께 추가합니다.
+   * 포함된 비디오 뷰어 환경의 경우 **[!UICONTROL 포함 코드]**&#x200B;를 누릅니다. 포함 코드 대화 상자에서 를 선택하고 포함 코드를 클립보드에 복사한 다음 단순 텍스트 편집기에 붙여넣습니다. 복사된 포함 코드를 다음 구문과 함께 추가합니다.
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      캡션 경로의 끝에 `,1`을 참고하십시오. 경로에서 .vtt 파일 이름 확장자 바로 다음에 `,1` 또는 `,0`로 설정하여 비디오 플레이어 모음에서 닫힌 캡션 단추를 활성화(켜기) 또는 비활성화(해제)하는 옵션이 각각 있습니다.
+      캡션 경로의 끝에 `,1`을 참고하십시오. 경로에서 `.vtt` 파일 이름 확장자 바로 다음에, 각각 `,1` 또는 `,0`로 설정하여 비디오 플레이어 모음에서 닫힌 캡션 단추를 활성화(설정)하거나 비활성화(해제)할 수 있습니다.
 
 ## 비디오에 장 마커 추가 {#adding-chapter-markers-to-video}
 
-장 마커를 단일 비디오나 응용 비디오 세트에 추가하여 긴 양식 비디오를 더 쉽게 보고 탐색할 수 있습니다. 사용자가 비디오를 재생할 때 비디오 타임라인의 장 마커(비디오 스크러버라고도 함)를 클릭하여 관심 영역으로 쉽게 이동하거나 새로운 컨텐츠, 데모, 자습서 등으로 바로 이동할 수 있습니다.
+장 마커를 단일 비디오나 응용 비디오 세트에 추가하여 긴 양식 비디오를 더 쉽게 보고 탐색할 수 있습니다. 사용자가 비디오를 재생하면 비디오 타임라인에서 장 마커(비디오 스크러버라고도 함)를 클릭하여 관심 영역으로 쉽게 이동할 수 있습니다. 또는 새로운 컨텐츠, 데모 및 자습서로 바로 이동할 수 있습니다.
 
 >[!NOTE]
 >
@@ -1136,7 +1139,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
 <!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-캡션을 만드는 것과 거의 동일한 방식으로 비디오에 대한 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 사용할 수도 있는 WebVTT 캡션 파일과 구분되어야 합니다.캡션과 장을 하나의 WebVTT 파일에 결합할 수 없습니다.
+캡션을 만드는 것과 거의 동일한 방식으로 비디오에 대한 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 또한 사용 중인 WebVTT 캡션 파일과 구분해야 합니다.캡션과 장을 하나의 WebVTT 파일에 결합할 수 없습니다.
 
 다음 샘플을 사용하여 장 탐색 기능을 사용하여 WebVTT 파일을 만들 수 있습니다.
 
@@ -1158,18 +1161,18 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-위의 예에서 `Chapter 1`은 큐 식별자이며, 선택 사항입니다. `00:00:000 --> 01:04:364`의 큐 시간은 장의 시작 시간과 종료 시간을 `00:00:000` 형식으로 지정합니다. 마지막 세 자리 숫자는 밀리초이며, 필요한 경우 `000` 상태로 둘 수 있습니다. `The bicycle store behind it all`의 장 제목은 장 내용에 대한 실제 설명입니다. 사용자가 비디오 타임라인의 시각적 큐 포인트 위에 마우스 포인터를 놓으면 큐 식별자, 시작 큐 시간 및 장 제목이 모두 비디오 플레이어의 팝업에 나타납니다.
+위의 예에서 `Chapter 1`은 큐 식별자이며, 선택 사항입니다. `00:00:000 --> 01:04:364`의 큐 시간은 장의 시작 시간과 종료 시간을 `00:00:000` 형식으로 지정합니다. 마지막 세 자리 숫자는 밀리초이며, 필요한 경우 `000` 상태로 둘 수 있습니다. `The bicycle store behind it all`의 장 제목은 장 내용에 대한 실제 설명입니다. 사용자가 비디오 타임라인의 시각적 큐 포인트 위에 마우스 포인터를 놓으면 큐 식별자, 시작 큐 시간 및 장 제목이 모두 비디오 플레이어 팝업에 나타납니다.
 
-HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebVTT(Web Video Text Tracks) 표준을 따르는지 확인하십시오. 장 파일 확장명은 .vtt입니다. WebVTT 캡션 표준에 대한 자세한 정보를 확인할 수 있습니다.
+HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebVTT(Web Video Text Tracks) 표준을 따르는지 확인하십시오. 장 파일 이름 확장명은 `.vtt`입니다. WebVTT 캡션 표준에 대한 자세한 정보를 확인할 수 있습니다.
 
-[WebVTT 를 참조하십시오.웹 비디오 텍스트 트랙 형식](https://dev.w3.org/html5/webvtt/)
+[WebVTT 를 참조하십시오.웹 비디오 텍스트 트랙 형식](https://w3c.github.io/webvtt/)
 
 **비디오에 장 마커를 추가하려면**
 
-1. .vtt 파일을 UTF8 인코딩으로 저장하여 장 제목 텍스트에서 문자 변환과 관련된 문제를 방지합니다.
+1. 장 제목 텍스트에서 문자 표현물에 문제가 발생하지 않도록 `.vtt` 파일을 UTF8 인코딩으로 저장합니다.
 
    일반적으로 VTT 장의 이름을 비디오 파일과 같은 이름으로 지정하고 장에 추가하려고 합니다. 이렇게 하면 기존 웹 컨텐츠 관리 시스템을 사용하여 비디오 URL의 생성을 자동화하는 데 도움이 됩니다.
-1. AEM에서 WebVTT 장 파일을 업로드합니다.
+1. Experience Manager에서 WebVTT 장 파일을 업로드합니다.
 
    [자산 업로드](/help/assets/manage-assets.md#uploading-assets)를 참조하십시오.
 
@@ -1186,7 +1189,7 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
        <li>왼쪽 레일에서 비디오 뷰어 사전 설정 이름을 탭하거나 클릭합니다. 비디오 미리 보기가 별도의 페이지에 열립니다.</li>
        <li>왼쪽 레일의 하단에서 <strong>URL</strong>을 클릭합니다.</li>
        <li>URL 대화 상자에서 URL을 선택하여 클립보드에 복사한 다음 URL을 단순 텍스트 편집기에 복사합니다.</li>
-       <li>복사한 비디오의 URL을 다음 구문과 함께 추가하여 복사한 URL과 장 파일에 연결합니다.<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       <li>복사한 비디오의 URL을 다음 구문과 함께 추가하면 복사한 URL과 장 파일에 연결할 수 있습니다.<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
@@ -1197,8 +1200,8 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
        <li>드롭다운 메뉴에서 <strong>Viewers</strong>를 클릭하거나 탭합니다.</li>
        <li>왼쪽 레일에서 비디오 뷰어 사전 설정 이름을 탭하거나 클릭합니다. 비디오 미리 보기가 별도의 페이지에 열립니다.</li>
        <li>왼쪽 레일의 하단에서 <strong>포함</strong>을 클릭합니다.</li>
-       <li>포함 코드 대화 상자에서 전체 코드를 선택하고 클립보드에 복사한 다음 단순 텍스트 편집기에 붙여넣습니다.</li>
-       <li>비디오의 포함 코드를 다음 구문과 함께 추가하여 복사한 URL과 장 파일에 연결합니다.<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
+       <li>포함 코드 대화 상자에서 를 선택하고 전체 코드를 클립보드에 복사한 다음 단순 텍스트 편집기에 붙여넣습니다.</li>
+       <li>비디오의 포함 코드를 다음 구문과 추가하므로 복사한 URL과 장 파일에 연결할 수 있습니다.<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
        </ol> </td>
       </tr>
      </tbody>
@@ -1206,9 +1209,9 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
 
 ## Dynamic Media의 비디오 축소판 정보 - Scene7 모드 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-비디오 축소판은 고객에게 비디오를 나타내는 이미지 자산 또는 비디오 프레임의 축소된 버전입니다. 고객이 비디오를 클릭하도록 하려면 축소판이 제공해야 합니다.
+비디오 축소판은 고객에게 비디오를 나타내는 이미지 자산 또는 비디오 프레임의 축소된 버전입니다. 축소판은 고객이 비디오를 클릭하도록 권장하는 데 사용됩니다.
 
-AEM의 모든 비디오에는 연결된 축소판이 있어야 합니다.축소판을 바꾸지 않으면 삭제할 수 없습니다. 기본적으로 비디오를 AEM에 업로드할 때 첫 번째 프레임이 축소판으로 사용됩니다. 그러나 브랜딩 용도나 시각적 검색 등을 위해 축소판을 사용자 지정할 수 있습니다. 비디오 축소판을 사용자 지정할 때 사용할 프레임에서 비디오를 재생하고 일시 중지하거나, 이미 업로드한 이미지 자산과 디지털 자산 관리자에서 *published*&#x200B;를 선택할 수 있습니다.
+Experience Manager의 모든 비디오에는 연결된 축소판이 있어야 합니다.축소판을 바꾸지 않으면 삭제할 수 없습니다. 기본적으로 비디오를 Experience Manager에 업로드할 때 첫 번째 프레임이 축소판으로 사용됩니다. 그러나 브랜딩 용도나 시각적 검색 등을 위해 축소판을 사용자 지정할 수 있습니다. 비디오 축소판을 사용자 지정할 때 사용할 프레임에서 비디오를 재생하고 일시 중지하거나, 이미 업로드한 이미지 자산과 디지털 자산 관리자에서 *published*&#x200B;를 선택할 수 있습니다.
 
 비디오에서 선택하는 사용자 지정 비디오 축소판 이미지는 추출되지 않고 DAM에 별도의 개별 자산으로 저장됩니다. 그러나 기존 이미지 자산에서 선택하는 사용자 지정 비디오 축소판은 JCR에 저장됩니다. 선택한 자산의 경로는 다음 예제 경로에서 과 같이 비디오 자산의 노드 아래에 저장됩니다.
 
@@ -1254,13 +1257,13 @@ AEM의 모든 비디오에는 연결된 축소판이 있어야 합니다.축소�
 
 ## Dynamic Media의 비디오 축소판 정보 - 하이브리드 모드 {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
-Dynamic Media에서 자동으로 생성된 10개의 축소판 이미지 중 하나를 선택하여 비디오에 추가할 수 있습니다. AEM Sites, AEM Mobile 또는 AEM Screens의 작성 환경에서 비디오 자산이 Dynamic Media 구성 요소와 함께 사용되는 경우 비디오 플레이어에 선택한 축소판이 표시됩니다. 축소판은 전체 비디오의 내용을 가장 잘 나타내는 정적 그림 역할을 하며 사용자가 재생 단추를 클릭하도록 합니다.
+Dynamic Media에서 자동으로 생성된 10개의 축소판 이미지 중 하나를 선택하여 비디오에 추가할 수 있습니다. Experience Manager 사이트, Experience Manager 모바일 또는 Experience Manager Screens의 작성 환경에서 비디오 자산이 Dynamic Media 구성 요소와 함께 사용되는 경우 비디오 플레이어에 선택한 축소판이 표시됩니다. 축소판은 전체 비디오의 내용을 가장 잘 나타내는 정적 그림 역할을 하며 사용자가 재생 단추를 클릭하도록 합니다.
 
-비디오의 총 시간을 기준으로 Dynamic Media은 10(기본값) 축소판 이미지를 비디오에 캡처합니다. 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% 및 91%입니다. 열 축소판은 지속됩니다. 즉, 나중에 다른 축소판을 선택하더라도 시리즈를 다시 생성할 필요가 없습니다. 10개의 축소판 이미지를 미리 보고 비디오에 사용할 이미지를 선택합니다. 기본적으로 변경하려면 CRXDE Lite을 사용하여 축소판 이미지가 생성되는 시간 간격을 구성할 수 있습니다. 예를 들어 비디오에서 균일하게 배치된 네 개의 축소판 이미지만 생성하려는 경우 간격 시간을 24%, 49%, 74% 및 99%로 구성할 수 있습니다.
+비디오의 총 시간을 기준으로 Dynamic Media은 10(기본값) 축소판 이미지를 비디오에 캡처합니다. 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% 및 91%입니다. 열 축소판은 지속됩니다. 즉, 나중에 다른 축소판을 선택하더라도 시리즈를 다시 생성할 필요가 없습니다. 10개의 축소판 이미지를 미리 보고 비디오에 사용할 이미지를 선택합니다. 기본값으로 변경하려면 CRXDE Lite을 사용하여 축소판 이미지가 생성되는 시간 간격을 구성할 수 있습니다. 예를 들어 비디오에서 균일하게 배치된 네 개의 축소판 이미지만 생성하려는 경우 간격 시간을 24%, 49%, 74% 및 99%로 구성할 수 있습니다.
 
 가장 좋은 방법은 비디오를 업로드한 후 언제든지 웹 사이트에 비디오를 게시하기 전에 비디오 축소판을 추가할 수 있는 것입니다.
 
-Dynamic Media에서 생성된 축소판을 사용하는 대신 사용자 정의 축소판을 업로드하여 비디오를 나타낼 수 있습니다. 예를 들어, 비디오의 제목, 눈길을 끄는 개방형 이미지 또는 비디오에서 캡처한 특정 이미지가 있는 사용자 정의 축소판 이미지를 만들 수 있습니다. 업로드하는 사용자 정의 비디오 축소판 이미지는 최대 해상도가 1280 x 720픽셀(최소 너비 640픽셀)이며 2MB보다 크지 않아야 합니다.
+Dynamic Media에서 생성된 축소판을 사용하는 대신 사용자 정의 축소판을 업로드하여 비디오를 나타낼 수 있습니다. 예를 들어 비디오의 제목, 눈길을 끄는 개방형 이미지 또는 비디오에서 캡처한 특정 이미지가 있는 사용자 정의 축소판 이미지를 만들 수 있습니다. 업로드하는 사용자 정의 비디오 축소판 이미지는 최대 해상도가 1280 x 720픽셀(최소 너비 640픽셀)이며 2MB보다 크지 않아야 합니다.
 
 또한 [Dynamic Media의 비디오 축소판 정보 - Scene7 모드](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode)를 참조하십시오.
 
@@ -1276,14 +1279,14 @@ Dynamic Media에서 생성된 축소판을 사용하는 대신 사용자 정의 
 1. 비디오의 속성 페이지에서 **[!UICONTROL 축소판 변경]**&#x200B;을 누릅니다.
 1. 축소판 그림 변경 페이지의 도구 모음에서 **[!UICONTROL 프레임 선택]**&#x200B;을 누릅니다.
 
-   Dynamic Media은 사용자 정의한 기본 시간 간격이나 시간 간격에 따라 비디오에서 시리즈 축소판 이미지를 생성합니다.
+   Dynamic Media은 사용자 지정한 기본 시간 간격이나 시간 간격에 따라 비디오에서 축소판 이미지를 생성합니다.
 
 1. 생성된 축소판 이미지를 미리 보고 비디오에 추가할 이미지를 선택합니다.
 1. **[!UICONTROL 변경 내용 저장]**&#x200B;을 누릅니다.
 
    선택한 축소판을 사용하도록 비디오의 축소판 이미지가 업데이트됩니다. 나중에 축소판 이미지를 변경하기로 결정한 경우 **[!UICONTROL 축소판 그림 변경]** 페이지로 돌아가서 새 이미지를 선택할 수 있습니다.
 
-   새 기본 시간 간격을 구성했거나 기존 비디오를 바꾸기 위해 새 비디오를 업로드한 경우 Dynamic Media에서 미리 보기를 다시 생성해야 합니다.
+   새 기본 시간 간격을 구성했거나 기존 비디오를 바꾸기 위해 새 비디오를 업로드한 경우 Dynamic Media에서 미리 보기를 다시 생성하도록 합니다.
 
    [비디오 축소판이 생성되는 기본 시간 간격 구성](#configuring-the-default-time-interval-that-video-thumbnails-are-generated)을 참조하십시오.
 
@@ -1299,17 +1302,17 @@ Dynamic Media에서 생성된 축소판을 사용하는 대신 사용자 정의 
 
 1. CRXDE Lite 페이지의 왼쪽 디렉토리 패널에서 `o etc/dam/imageserver/configuration/jcr:content/settings.` 로 이동합니다.
 
-   디렉토리 패널이 표시되지 않는 경우 홈 탭 왼쪽의 >> 아이콘을 탭해야 할 수 있습니다.
+   디렉토리 패널이 표시되지 않으면 홈 탭 왼쪽의 > 아이콘을 누릅니다.
 
 1. 오른쪽 아래 패널의 속성 탭에서 `thumbnailtime`을 두 번 누릅니다.
-1. [축소판 표시 시간 편집] 대화 상자에서 텍스트 필드를 사용하여 간격 값을 백분율로 입력합니다.
+1. **[!UICONTROL 축소판 편집]** 대화 상자에서 텍스트 필드를 사용하여 간격 값을 백분율로 입력합니다.
 
-   * 더하기 기호(+) 아이콘을 탭하여 하나 이상의 간격 값 필드를 추가합니다. 아이콘을 보려면 대화 상자 아래쪽으로 스크롤해야 할 수 있습니다.
-   * 간격 값 필드 오른쪽에 있는 빼기 기호(-) 아이콘을 탭하여 목록에서 삭제합니다.
-   * 위쪽 화살표 아이콘과 아래쪽 화살표 아이콘을 탭하여 간격 값을 다시 정렬합니다.
+   * 하나 이상의 간격 값 필드를 추가하려면 더하기 기호(+) 아이콘을 누릅니다. 필요한 경우 대화 상자 아래쪽으로 스크롤하여 아이콘을 확인합니다.
+   * 목록에서 삭제하려면 간격 값 필드 오른쪽에 있는 빼기 기호(-) 아이콘을 누릅니다.
+   * 간격 값을 다시 정렬하려면 위쪽 화살표 아이콘과 아래쪽 화살표 아이콘을 누릅니다.
 
-1. **[!UICONTROL 확인]**&#x200B;을 눌러 속성 탭으로 돌아갑니다.
-1. CRXDE Lite 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장]**&#x200B;을 탭한 다음, 왼쪽 위 모서리에 있는 홈 아이콘을 탭하여 AEM으로 돌아갑니다.
+1. **[!UICONTROL 확인]**&#x200B;을 탭하고 속성 탭으로 돌아갑니다.
+1. CRXDE Lite 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장]**&#x200B;을 탭한 다음, 왼쪽 위 모서리에 있는 홈 아이콘을 탭하여 Experience Manager으로 돌아갑니다.
 
    [비디오 축소판 추가](#adding-a-video-thumbnail)를 참조하십시오.
 
@@ -1324,7 +1327,7 @@ Dynamic Media에서 생성된 축소판을 사용하는 대신 사용자 정의 
 1. 도구 모음에서 **[!UICONTROL 속성 보기]** 아이콘(&quot;i&quot;가 포함된 원)을 탭합니다.
 1. 비디오의 속성 페이지에서 **[!UICONTROL 축소판 변경]**&#x200B;을 누릅니다.
 1. 축소판 그림 변경 페이지의 도구 모음에서 **[!UICONTROL 새 축소판 업로드]**&#x200B;를 누릅니다.
-1. 사용할 축소판 이미지로 이동하여 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 눌러 AEM에 이미지를 업로드합니다. 업로드 후에 이미지를 게시합니다.
+1. 사용할 축소판 이미지로 이동하여 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 탭하여 이미지를 Experience Manager에 업로드합니다. 업로드 후에 이미지를 게시합니다.
 1. 이미지를 업로드하고 게시한 후 축소판 변경 페이지에서 **[!UICONTROL 변경 내용 저장]**&#x200B;을 누릅니다.
 
    사용자 정의 축소판이 비디오에 추가됩니다.
