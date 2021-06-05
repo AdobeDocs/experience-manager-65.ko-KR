@@ -11,9 +11,9 @@ docset: aem65
 feature: 파노라마 이미지,자산 관리
 role: Business Practitioner, Administrator
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ CRXDE Lite에서 다음과 같은 기본 종횡비 설정 2를 무시할 수 있
 
 ## Dynamic Media Classic 구성 {#configuring-dynamic-media-classic-scene}
 
-파노라마 이미지 뷰어가 AEM 내에서 제대로 작동하려면 JCR에서 뷰어 사전 설정이 업데이트되도록 Dynamic Media Classic 및 Dynamic Media Classic 관련 메타데이터와 파노라마 이미지 뷰어 사전 설정을 동기화해야 합니다. 이를 수행하려면 다음 방법으로 Dynamic Media Classic을 구성하십시오.
+Adobe Experience Manager 내에서 파노라마 이미지 뷰어가 제대로 작동하려면 내에서 파노라마 이미지 뷰어 사전 설정을 Dynamic Media Classic 및 Dynamic Media Classic 관련 메타데이터와 동기화하여 뷰어 사전 설정이 JCR에서 업데이트되도록 합니다. 이 동기화를 수행하려면 다음과 같이 Dynamic Media Classic을 구성하십시오.
 
 1. [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인합니다.
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 클릭합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;을 클릭합니다.
 1. 이미지 서버 게시 페이지의 맨 위에 있는 **[!UICONTROL 게시 컨텍스트]** 드롭다운 메뉴에서 **[!UICONTROL 이미지 제공]**&#x200B;을 선택합니다.
 
 1. 동일한 이미지 서버 게시 페이지에서 **[!UICONTROL 요청 속성]** 제목을 찾습니다.
@@ -63,7 +63,7 @@ CRXDE Lite에서 다음과 같은 기본 종횡비 설정 2를 무시할 수 있
    * 요청 난독화 모드를 **[!UICONTROL Disabled]**&#x200B;로 설정합니다.
    * 요청 잠금 모드를 **[!UICONTROL Disabled]**&#x200B;로 설정합니다.
 
-   이러한 설정은 AEM에서 `Panoramic Media` WCM 구성 요소를 사용하는 데 필요합니다.
+   이러한 설정은 Experience Manager에서 `Panoramic Media` WCM 구성 요소를 사용하는 데 필요합니다.
 
 1. 이미지 서버 게시 페이지 하단의 왼쪽의 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -71,12 +71,12 @@ CRXDE Lite에서 다음과 같은 기본 종횡비 설정 2를 무시할 수 있
 
 ### 파노라마 미디어 WCM 구성 요소 문제 해결 {#troubleshooting-the-panoramic-media-wcm-component}
 
-이미지를 WCM의 파노라마 미디어 구성 요소에 끌어다 놓고 구성 요소 자리 표시자가 축소된 경우 다음 문제를 해결할 수 있습니다.
+이미지를 WCM의 파노라마 미디어 구성 요소에 끌어다 놓고 구성 요소 자리 표시자가 축소된 경우 다음 문제를 해결하십시오.
 
-* 403 금지된 오류가 발생한 경우 요청된 이미지 크기가 너무 커서 오류가 발생했을 수 있습니다. [Dynamic Media Classic 구성](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene)에서 **[!UICONTROL 회신 이미지 크기 제한]** 설정을 검토하십시오.
+* 403 금지된 오류가 발생하는 경우 요청한 이미지 크기가 너무 커서 발생할 수 있습니다. [Dynamic Media Classic 구성](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene)에서 **[!UICONTROL 회신 이미지 크기 제한]** 설정을 검토하십시오.
 
 * 자산에 대한 &quot;잘못된 잠금&quot; 또는 페이지에 표시된 &quot;구문 분석 오류&quot; 표시에 대해서는 요청 난독화 모드 및 요청 잠금 모드 를 선택하여 비활성화되어 있는지 확인하십시오.
-* 오염된 캔버스 오류의 경우 이미지 자산에 대한 이전 요청에 대해 규칙 세트 정의 파일 경로 를 설정하고 CTN을 무효화합니다.
+* 오염된 캔버스 오류에 대해 이미지 자산에 대한 이전 요청에 대해 규칙 세트 정의 파일 경로 를 설정하고 CTN을 무효화합니다.
 * 이미지 요청의 크기가 지원되는 제한보다 큰 경우 이미지 요청이 발생하면 **[!UICONTROL JPEG 인코딩 속성 > 품질]** 설정이 비어 있지 않은지 확인하십시오. **[!UICONTROL Quality]** 필드에 대한 일반적인 설정은 `95`입니다. [이미지 서버 게시] 페이지에서 설정을 찾을 수 있습니다. 페이지에 액세스하려면 [Dynamic Media Classic 구성](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene)을 참조하십시오.
 
 ## 파노라마 이미지 미리 보기 {#previewing-panoramic-images}
