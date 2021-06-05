@@ -10,9 +10,9 @@ discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 feature: 뷰어 사전 설정
 role: Business Practitioner, Administrator
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 [뷰어 사전 설정 게시](managing-viewer-presets.md#publishing-viewer-presets)도 참조하십시오.
 
-사용 중인 게시 모드에 따라 뷰어 사전 설정을 게시할 필요가 없을 수 있습니다.
+사용 중인 게시 모드에 따라 뷰어 사전 설정을 게시할 필요가 없습니다.
 뷰어 사전 설정에 문제가 있으면 [Dynamic Media 문제 해결 - Scene7](troubleshoot-dms7.md#viewers) 을 참조하십시오.
 
 ## 자산 {#applying-a-viewer-preset-to-an-asset}에 Dynamic Media 뷰어 사전 설정 적용
@@ -37,7 +37,7 @@ ht-degree: 1%
    * 뷰어 사전 설정을 선택하면 **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 단추가 나타납니다.
    * 자산의 **[!UICONTROL 세부 사항 보기]**&#x200B;에서 뷰어를 선택하면 시스템에 다양한 뷰어 사전 설정이 표시됩니다. 표시되는 사전 설정 수를 늘릴 수 있습니다. [표시되는 뷰어 사전 설정 수를 늘립니다](managing-viewer-presets.md).
 
-1. 왼쪽 창에서 뷰어를 선택하여 오른쪽 창에 표시된 대로 자산에 적용합니다. [URL을 복사하여 다른 사용자와](linking-urls-to-yourwebapplication.md)을 공유할 수도 있습니다.
+1. 오른쪽 창에 표시된 대로 자산에 적용할 수 있도록 왼쪽 창에서 뷰어를 선택합니다. [URL을 복사하여 다른 사용자와](linking-urls-to-yourwebapplication.md)을 공유할 수도 있습니다.
 
 ## 뷰어 사전 설정 URL {#obtaining-viewer-preset-urls} 가져오기
 
