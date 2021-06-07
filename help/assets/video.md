@@ -11,9 +11,9 @@ docset: aem65
 feature: 자산 관리
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
 workflow-type: tm+mt
-source-wordcount: '11655'
+source-wordcount: '11657'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 1%
 
 ## Dynamic Media {#working-with-video-in-dynamic-media}에서 비디오를 사용한 작업
 
-Dynamic Media의 비디오는 데스크탑, iOS, Android™, Blackberry 및 Windows 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
+Dynamic Media의 비디오는 데스크탑, iOS, Android™, BlackBerry® 및 Windows 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
 
 예를 들어, iOS 모바일 장치에서 3G, 4G 또는 Wi-Fi와 같은 대역폭을 감지합니다. 그런 다음 응용 비디오 세트 내의 다양한 비디오 비트 전송률 중에서 올바른 인코딩된 비디오를 자동으로 선택합니다. 비디오는 데스크탑, 모바일 장치 또는 태블릿으로 스트리밍됩니다.
 
@@ -145,11 +145,11 @@ Dynamic Media의 비디오는 데스크탑, iOS, Android™, Blackberry 및 Wind
 
 * 모든 HTML5 비디오 뷰어에서 비디오 캡션 기능.
 * 비디오 자산을 효율적으로 관리하기 위해 전체 메타데이터 지원을 사용하여 비디오를 구성, 탐색 및 검색할 수 있습니다.
-* iPhone, iPad, Android, Blackberry 및 Windows 휴대폰을 비롯한 웹, 데스크탑, 모바일 장치에 응용 비디오 세트를 제공합니다.
+* iPhone, iPad, Android™, BlackBerry® 및 Windows 휴대폰을 비롯한 모바일 장치, 웹, 데스크탑 및 장치에 응용 비디오 세트를 제공합니다.
 
 응용 비디오 스트리밍은 다양한 iOS 플랫폼에서 지원됩니다. [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video)를 참조하십시오.
 
-Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 Blackberry 장치를 찾을 수 있습니다.[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
+Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합니다. 다음 위치에서 이 비디오 형식을 지원하는 BlackBerry® 장치를 찾을 수 있습니다.[BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)에서 지원되는 비디오 형식.
 
 다음 위치에서 이 비디오 형식을 지원하는 Windows 장치를 찾을 수 있습니다.[Windows Phone 8용 지원되는 미디어 코덱은](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))
 
@@ -239,17 +239,17 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   </tr>
   <tr>
    <td>모바일</td>
-   <td>Chrome(Android 6 이하)</td>
+   <td>Chrome(Android™ 6 이하)</td>
    <td>점진적 다운로드.</td>
   </tr>
   <tr>
    <td>모바일</td>
-   <td>Chrome(Android 7 이상)</td>
+   <td>Chrome(Android™ 7 이상)</td>
    <td>HLS</td>
   </tr>
   <tr>
    <td>모바일</td>
-   <td>Android(기본 브라우저)</td>
+   <td>Android™(기본 브라우저)</td>
    <td>점진적 다운로드.</td>
   </tr>
   <tr>
@@ -264,7 +264,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
   </tr>
   <tr>
    <td>모바일</td>
-   <td>Blackberry</td>
+   <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
  </tbody>
@@ -602,7 +602,7 @@ Experience Manager 6.4부터 Experience Manager에서 YouTube 게시를 설정�
 1. YouTube 구성 만들기 페이지의 Google Cloud 플랫폼 설정 아래의 **[!UICONTROL 애플리케이션 이름]** 필드에 Google 프로젝트 ID를 입력합니다.
 
    처음에 Google Cloud 설정을 구성할 때 프로젝트 ID를 지정했습니다.
-YouTube 구성 만들기 페이지를 열어 둡니다.곧 다시 돌아올 겁니다
+YouTube 구성 만들기 페이지를 열어 둡니다.잠시 후에, 당신은 그것에 대해 돌아올 것입니다.
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -837,7 +837,7 @@ Experience Manager에서 비디오 자산 게시를 취소하면 비디오가 Yo
 
 ## 비디오 인코딩 및 YouTube 게시 진행률 모니터링 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-새 비디오를 비디오 인코딩이 적용된 폴더에 업로드하거나 YouTube에 비디오를 게시하면 비디오 인코딩/Youtube 게시가 진행(또는 실패)되는 방식을 모니터링할 수 있습니다. 실제 YouTube 게시 진행 상태는 로그 방식으로만 사용할 수 있습니다. 그러나 실패 또는 성공은 다음 절차에 설명된 추가 방법으로 나열되어 있습니다. 또한 YouTube 게시 워크플로우 또는 비디오 인코딩이 완료되거나 중단되면 이메일 알림을 받게 됩니다.
+비디오 인코딩이 적용된 폴더에 새 비디오를 업로드하거나 YouTube에 비디오를 게시하면 비디오 인코딩/Youtube 게시가 진행(또는 실패)되는 방식을 모니터링할 수 있습니다. 실제 YouTube 게시 진행 상태는 로그 방식으로만 사용할 수 있습니다. 그러나 실패 또는 성공은 다음 절차에 설명된 추가 방법으로 나열되어 있습니다. 또한 YouTube 게시 워크플로우 또는 비디오 인코딩이 완료되거나 중단되면 이메일 알림을 받게 됩니다.
 
 ### 진행률 모니터링 {#monitoring-progress}
 
@@ -1038,7 +1038,7 @@ Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기�
 
 1. 다음을 수행하여 TrackingManager 구성 요소를 만듭니다.
 
-   * `s7sdk.Util.init();` 을 호출한 후 다음을 추가하여 이벤트를 추적할 TrackingManager 인스턴스를 만듭니다.
+   * `s7sdk.Util.init();`을 호출한 후 다음을 추가하여 이벤트를 추적할 TrackingManager 인스턴스를 만듭니다.
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -1211,7 +1211,7 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
 
 비디오 축소판은 고객에게 비디오를 나타내는 이미지 자산 또는 비디오 프레임의 축소된 버전입니다. 축소판은 고객이 비디오를 클릭하도록 권장하는 데 사용됩니다.
 
-Experience Manager의 모든 비디오에는 연결된 축소판이 있어야 합니다.축소판을 바꾸지 않으면 삭제할 수 없습니다. 기본적으로 비디오를 Experience Manager에 업로드할 때 첫 번째 프레임이 축소판으로 사용됩니다. 그러나 브랜딩 용도나 시각적 검색 등을 위해 축소판을 사용자 지정할 수 있습니다. 비디오 축소판을 사용자 지정할 때 사용할 프레임에서 비디오를 재생하고 일시 중지하거나, 이미 업로드한 이미지 자산과 디지털 자산 관리자에서 *published*&#x200B;를 선택할 수 있습니다.
+Experience Manager의 모든 비디오에는 연결된 축소판이 있어야 합니다.축소판을 바꾸지 않으면 삭제할 수 없습니다. 기본적으로 비디오를 Experience Manager에 업로드할 때 첫 번째 프레임이 축소판으로 사용됩니다. 그러나 브랜딩 용도나 시각적 검색 등을 위해 축소판을 사용자 지정할 수 있습니다. 비디오 축소판을 사용자 지정할 때 비디오를 재생하고 사용할 프레임에서 일시 정지할 수 있습니다. 또는 이미 업로드한 이미지 자산과 디지털 자산 관리자에서 *published*&#x200B;를 선택할 수 있습니다.
 
 비디오에서 선택하는 사용자 지정 비디오 축소판 이미지는 추출되지 않고 DAM에 별도의 개별 자산으로 저장됩니다. 그러나 기존 이미지 자산에서 선택하는 사용자 지정 비디오 축소판은 JCR에 저장됩니다. 선택한 자산의 경로는 다음 예제 경로에서 과 같이 비디오 자산의 노드 아래에 저장됩니다.
 
