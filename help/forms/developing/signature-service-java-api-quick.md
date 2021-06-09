@@ -11,16 +11,16 @@ topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 role: Developer
 exl-id: 34069505-a6cf-4540-932b-604f81823178
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9fa433bedefdb3272b43d540ba26624e28c1dbbd
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
 
 # 서명 서비스 Java API 빠른 시작(SOAP) {#signature-service-java-api-quickstart-soap}
 
-서명 서비스에 SOAP(Java API Quick Start)를 사용할 수 있습니다.
+AEM Forms JEE 서명 서비스에 대해 다음 Java API 빠른 시작(SOAP)을 사용할 수 있습니다.
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서에 서명 필드 추가](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
 
@@ -40,7 +40,9 @@ ht-degree: 0%
 
 [빠른 시작(SOAP 모드):Java API를 사용하여 디지털 서명 제거](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
+[빠른 시작(SOAP 모드):Java API를 사용하여 문서 타임스탬프 적용](#quick-start-soap-mode-apply-document-timestamp-using-the-java-api)
+
+AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
@@ -1334,7 +1336,113 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
          }
      }
  }
+
+
  
  
  
+```
+
+## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-apply-document-timestamp-using-the-java-api}를 사용하여 문서 타임스탬프 적용
+
+다음 Java 코드 예제에서는 타임스탬프를 PDF 문서에 적용합니다.
+
+```java
+ /*
+ * This Java Quick Start uses the SOAP mode and contains the following JAR files
+ * in the class path:
+ * 1. adobe-signatures-client.jar
+ * 2. adobe-livecycle-client.jar
+ * 3. adobe-usermanager-client.jar
+ * 4. adobe-utilities.jar
+ * 5. commons-httpclient-<version>.jar
+ * 6. axis.jar (required for SOAP mode)
+ * 7. jaxrpc-api.jar (required for SOAP mode)
+ * 8. commons-logging.jar (required for SOAP mode)
+ * 9. commons-discovery.jar (required for SOAP mode)
+ * 10. wsdl4j.jar (required for SOAP mode)
+ * 11. adobe-utilities.jar (required for SOAP mode)
+ *
+ *
+ * These JAR files are located in the following path:
+ * <install directory>/sdk/client-libs/common
+ *
+ * The adobe-utilities.jar file is located in the following path:
+ * <install directory>/sdk/client-libs/jboss
+ *
+ * SOAP required JAR files are located in the following path:
+ * <install directory>/sdk/client-libs/thirdparty
+ *
+ * If you want to invoke a remote forms server instance and there is a
+ * firewall between the client application and the server, then it is
+ * recommended that you use the SOAP mode. When using the SOAP mode,
+ * you have to include these additional JAR files
+ *
+ * For information about the SOAP
+ * mode, see "Setting connection properties" in Programming
+ * with AEM Forms
+ */
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import com.adobe.idp.Document;
+import com.adobe.idp.dsc.clientsdk.ServiceClientFactory;
+import com.adobe.idp.dsc.clientsdk.ServiceClientFactoryProperties;
+import com.adobe.livecycle.signatures.client.SignatureServiceClient;
+import com.adobe.livecycle.signatures.client.types.AddSignatureValidationOptionSpec;
+import com.adobe.livecycle.signatures.client.types.TSPOptionSpec;
+
+public class ApplyDocumentTimeStamp {
+
+    public static void main(String args[]){
+        {
+
+            try
+            {
+                //Set connection properties required to invoke AEM Forms using SOAP mode
+                Properties connectionProps = new Properties();
+                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
+                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
+                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
+                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
+
+                //Create a ServiceClientFactory instance
+                ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps);
+
+                //Create a SignatureServiceClient object
+                SignatureServiceClient signClient = new SignatureServiceClient(myFactory);
+
+                //Specify a PDF document to sign
+                FileInputStream fileInputStream = new FileInputStream("test.pdf");
+
+                //Sign the PDF document
+                Document inPDFDoc = new Document (fileInputStream);
+
+                // create AddSignatureValidationOptionSpec Object. later we will set the required OptionSpecs
+                AddSignatureValidationOptionSpec addSigValidiationSpec =  new AddSignatureValidationOptionSpec();
+
+                //Create a TSPOptionSpec object to pass to in AddSignatureValidationOptionSpec
+                TSPOptionSpec tspSpec = new TSPOptionSpec();
+                tspSpec.setTspServerURL("http://tsp-server-url.com");
+                tspSpec.setTspServerPassword("provide Timestamp server password");
+                tspSpec.setTspServerUsername("provide Timestamp server username");
+                addSigValidiationSpec.setTSPOptionSpec(tspSpec);
+
+                Document signedDoc = signClient.applyDocumentTimeStamp(inPDFDoc,addSigValidiationSpec);
+
+                //Save the signed PDF document
+                File outFile = new File("testout.pdf");
+                signedDoc.copyToFile (outFile);
+
+            }
+
+            catch (Exception ee)
+            {
+                ee.printStackTrace();
+            }
+        }
+    }
+}
 ```
