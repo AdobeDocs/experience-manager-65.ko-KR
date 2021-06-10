@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2a866e82a059184ea86f22646e4a20406ad109e8
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '2097'
 ht-degree: 1%
 
 ---
@@ -310,3 +310,156 @@ AEM Assets의 컬렉션이 공유되거나 공유되지 않으면 사용자는 A
 1. [메일 서비스 구성](/help/sites-administering/notification.md#configuring-the-mail-service)에 설명된 대로 이메일 서비스를 구성합니다.
 1. 관리자로 AEM에 로그인합니다. **도구** > **작업** > **웹 콘솔**&#x200B;을 클릭하여 웹 콘솔 구성을 엽니다.
 1. **일 CQ DAM 리소스 컬렉션 서블릿**&#x200B;을 편집합니다. **전자 메일 보내기**&#x200B;를 선택합니다. **저장**&#x200B;을 클릭합니다.
+
+## OAuth {#setting-up-oauth} 설정
+
+AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통합 Mail Service에 대한 OAuth2 지원을 제공합니다.
+
+아래에 설명된 대로 여러 이메일 공급자에 대해 OAuth를 구성할 수 있습니다.
+
+### Gmail {#gmail}
+
+1. `https://console.developers.google.com/projectcreate`에서 프로젝트를 만드십시오
+1. 프로젝트를 선택한 다음 **API 및 서비스** - **대시보드 - 자격 증명**&#x200B;으로 이동합니다.
+1. 요구 사항에 따라 OAuth 동의 화면 구성
+1. 다음에 나오는 업데이트 화면에서 다음 두 범위를 추가합니다.
+   * `https://mail.google.com/`
+   * `https://www.googleapis.com//auth/gmail.send`
+1. 범위를 추가한 후 왼쪽 메뉴에서 **자격 증명**&#x200B;으로 돌아간 다음 **자격 증명 만들기** - **OAuth 클라이언트 ID** - **데스크탑 앱**&#x200B;으로 이동합니다
+1. 클라이언트 ID 및 클라이언트 암호가 포함된 새 창이 열립니다.
+1. 자격 증명을 저장합니다.
+
+**AEM 측 구성**
+
+>[!NOTE]
+>
+>Adobe 관리 서비스 고객은 고객 서비스 엔지니어와 협력하여 프로덕션 환경을 변경할 수 있습니다.
+
+먼저 메일 서비스를 구성합니다.
+
+1. `http://serveraddress:serverport/system/console/configMgr`(으)로 이동하여 AEM 웹 콘솔을 엽니다.
+1. 을(를) 찾은 다음 **일 CQ 메일 서비스**&#x200B;를 클릭합니다.
+1. 다음 설정을 추가합니다.
+   * SMTP 서버 호스트 이름: `smtp.gmail.com`
+   * SMTP 서버 포트:요구 사항에 따라 `25` 또는 `587`
+   * **SMPT에서 StarTLS** 및 **SMTP에 StarTLS**&#x200B;가 필요함 티켓확인란을 선택합니다.
+   * **OAuth 흐름**&#x200B;을 선택하고 **저장**&#x200B;을 클릭합니다.
+
+그런 다음 아래 절차에 따라 SMTP OAuth 공급자를 구성합니다.
+
+1. `http://serveraddress:serverport/system/console/configMgr`(으)로 이동하여 AEM 웹 콘솔을 엽니다.
+1. 을(를) 찾은 다음 **CQ Mail SMTP OAuth2 공급자**&#x200B;를 클릭합니다.
+1. 다음과 같이 필요한 정보를 입력합니다.
+   * 인증 URL:`https://accounts.google.com/o/oauth2/auth`
+   * 토큰 URL:`https://accounts.google.com/o/oauth2/token`
+   * 범위:`https://www.googleapis.com/auth/gmail.send` 및 `https://mail.google.com/` 구성된 각 범위의 오른쪽에 **+** 단추를 눌러 두 개 이상의 범위를 추가할 수 있습니다.
+   * 클라이언트 ID 및 클라이언트 암호:위의 단락에 설명된 대로 검색한 값으로 이러한 필드를 구성합니다.
+   * 새로 고침 토큰 URL: `https://accounts.google.com/o/oauth2/token`
+   * 새로 고침 토큰 만료:절대
+1. **저장**&#x200B;을 클릭합니다.
+
+<!-- clarify refresh token expiry, currrently not present in the UI -->
+
+구성이 완료되면 설정은 다음과 같습니다.
+
+![oauth smtp 공급자](assets/oauth-smtpprov2.png)
+
+이제 OAuth 구성 요소를 활성화합니다. 다음을 통해 이 작업을 수행할 수 있습니다.
+
+1. 다음 URL을 방문하여 구성 요소 콘솔로 이동합니다.`http://serveraddress:serverport/system/console/components`
+1. 다음 구성 요소를 찾습니다
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeGenerateServlet`
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
+1. 구성 요소 왼쪽에 있는 재생 아이콘을 누릅니다
+
+   ![구성 요소](assets/oauth-components-play.png)
+
+마지막으로 다음 방법으로 구성을 확인합니다.
+
+1. 게시 인스턴스의 주소로 이동하고 관리자로 로그인합니다.
+1. 브라우저에서 새 탭을 열고 `http://serveraddress:serverport/services/mailer/oauth2/authorize`(으)로 이동합니다. 이렇게 하면 SMTP 공급자의 페이지로 리디렉션됩니다(이 경우 Gmail).
+1. 필요한 권한을 부여하는 로그인 및 동의
+1. 동의하면 토큰이 저장소에 저장됩니다. 게시 인스턴스에서 이 URL에 직접 액세스하여 `accessToken` 아래에서 액세스할 수 있습니다.`http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
+1. 각 게시 인스턴스에 대해 위의 를 반복합니다
+
+<!-- clarify if the ip/server address in the last procedure is that of the publish instance -->
+
+### Microsoft Outlook {#microsoft-outlook}
+
+1. [https://portal.azure.com/](https://portal.azure.com/)로 이동한 후 로그인합니다.
+1. 검색 막대에서 **Azure Active Directory**&#x200B;를 검색하고 결과를 클릭합니다. 또는 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)로 바로 이동할 수 있습니다
+1. **앱 등록** - **새 등록**&#x200B;을 클릭합니다.
+
+   ![](assets/oauth-outlook1.png)
+
+1. 요구 사항에 따라 정보를 입력한 다음 **등록**&#x200B;을 클릭합니다.
+1. 새로 만든 앱으로 이동하고 **API 권한**&#x200B;을 선택합니다.
+1. **권한 추가** - **그래프 권한** - **위임된 권한**&#x200B;으로 이동합니다.
+1. 앱에 대한 아래 권한을 선택한 다음 **권한 추가**&#x200B;를 클릭합니다.
+   * `SMTP.Send`
+   * `Mail.Read`
+   * `Mail.Send`
+   * `openid`
+   * `offline_access`
+1. **인증** - **플랫폼 추가** - **웹**&#x200B;로 이동하고 **리디렉션 Url** 섹션에서 OAuth 코드를 리디렉션하기 위해 다음 URL을 추가한 다음 **구성**&#x200B;을 누릅니다.
+   * `http://localhost:4503/services/mailer/oauth2/token`
+1. 각 게시 인스턴스에 대해 위의 를 반복합니다
+1. 요구 사항에 따라 설정을 구성합니다
+1. 그런 다음 **인증서 및 Secrets**&#x200B;로 이동하여 **새 클라이언트 암호**&#x200B;를 클릭하고 화면 단계에 따라 암호를 만듭니다. 나중에 사용할 수 있도록 이 암호를 반드시 기록하십시오
+1. 왼쪽 창에서 **개요**&#x200B;를 누르고 나중에 사용할 수 있도록 **응용 프로그램(클라이언트) ID** 및 **디렉토리(테넌트) ID**&#x200B;의 값을 복사합니다
+
+다시 매핑하려면 AEM 측에서 Mail 서비스에 대해 OAuth2를 구성하려면 다음 정보가 필요합니다.
+
+* 테넌트 ID로 빌드되는 인증 URL입니다. 다음 양식이 있습니다.`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* 테넌트 ID로 구성될 토큰 URL입니다. 다음 양식이 있습니다.`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 테넌트 ID로 빌드되는 새로 고침 URL입니다. 다음 양식이 있습니다.`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 클라이언트 ID
+* 클라이언트 암호
+
+**AEM 측 구성**
+
+다음으로, OAuth2 설정을 AEM과 통합합니다.
+
+1. `http://serveraddress:serverport/system/console/configMgr`(으)로 이동하여 로컬 인스턴스의 웹 콘솔로 이동합니다.
+1. **일 CQ 메일 서비스**&#x200B;를 찾아 클릭합니다.
+1. 다음 설정을 추가합니다.
+   * SMTP 서버 호스트 이름: `smtp.office365.com`
+   * SMTP 사용자:이메일 형식의 사용자 이름
+   * &quot;보낸 사람&quot; 주소:메일러가 보낸 메시지의 &quot;보낸 사람:&quot; 필드에 사용할 전자 메일 주소입니다
+   * SMTP 서버 포트:요구 사항에 따라 `25` 또는 `587`
+   * **SMPT에서 StarTLS** 및 **SMTP에 StarTLS**&#x200B;가 필요함 티켓확인란을 선택합니다.
+   * **OAuth 흐름**&#x200B;을 선택하고 **저장**&#x200B;을 클릭합니다.
+1. 을(를) 찾은 다음 **CQ Mail SMTP OAuth2 공급자**&#x200B;를 클릭합니다.
+1. 다음과 같이 필요한 정보를 입력합니다.
+   * 인증 URL, 토큰 URL 및 새로 고침 토큰 URL을 이 절차의 끝에 [에 설명된 대로 구성하여 입력합니다.](#microsoft-outlook)
+   * 클라이언트 ID 및 클라이언트 암호:위에서 설명한 대로 검색한 값으로 이러한 필드를 구성합니다.
+   * 구성에 다음 범위를 추가합니다.
+      * openid
+      * offline_access
+      * `https://outlook.office365.com/Mail.Send`
+      * `https://outlook.office365.com/Mail.Read`
+      * `https://outlook.office365.com/SMTP.Send`
+   * AuthCode 리디렉션 Url:`http://localhost:4503/services/mailer/oauth2/token`
+   * 새로 고침 토큰 URL:위의 토큰 URL과 동일한 값이 있어야 합니다
+1. **저장**&#x200B;을 클릭합니다.
+
+구성이 완료되면 설정은 다음과 같습니다.
+
+![](assets/oauth-outlook-smptconfig.png)
+
+이제 OAuth 구성 요소를 활성화합니다. 다음을 통해 이 작업을 수행할 수 있습니다.
+
+1. 다음 URL을 방문하여 구성 요소 콘솔로 이동합니다.`http://serveraddress:serverport/system/console/components`
+1. 다음 구성 요소를 찾습니다
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeGenerateServlet`
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
+1. 구성 요소 왼쪽에 있는 재생 아이콘을 누릅니다
+
+![구성 요소2](assets/oauth-components-play.png)
+
+마지막으로 다음 방법으로 구성을 확인합니다.
+
+1. 게시 인스턴스의 주소로 이동하고 관리자로 로그인합니다.
+1. 브라우저에서 새 탭을 열고 `http://serveraddress:serverport/services/mailer/oauth2/authorize`(으)로 이동합니다. 이렇게 하면 SMTP 공급자의 페이지로 리디렉션됩니다(이 경우 Gmail).
+1. 필요한 권한을 부여하는 로그인 및 동의
+1. 동의하면 토큰이 저장소에 저장됩니다. 게시 인스턴스에서 이 URL에 직접 액세스하여 `accessToken` 아래에서 액세스할 수 있습니다.`http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
