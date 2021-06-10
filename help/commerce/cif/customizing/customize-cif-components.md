@@ -10,9 +10,9 @@ audience: developer
 feature: 전자 상거래 통합 프레임워크
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: b132fc30e9ab77da24557c5d644a255173dc23c2
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2587'
 ht-degree: 1%
 
 ---
@@ -331,9 +331,13 @@ Sling 모델은 Java로 구현되며 생성된 프로젝트의 **core** 모듈�
 
 ## 제품 티저 {#customize-markup-product-teaser} 마크업 사용자 정의
 
-AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크업을 수정하는 것입니다. 이 작업은 구성 요소가 태그를 렌더링하는 데 사용하는 [HTL 스크립트](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)를 재정의하여 수행됩니다. HTL(HTML Template Language)은 AEM 구성 요소가 작성된 컨텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어로서 구성 요소를 다시 사용할 수 있도록 합니다. 예를 들어 제품 티저를 반복해서 사용하여 서로 다른 제품을 표시할 수 있습니다.
+AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크업을 수정하는 것입니다. 이 작업은 구성 요소가 태그를 렌더링하는 데 사용하는 [HTL 스크립트](https://docs.adobe.com/content/help/ko/experience-manager-htl/using/overview.html)를 재정의하여 수행됩니다. HTL(HTML Template Language)은 AEM 구성 요소가 작성된 컨텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어로서 구성 요소를 다시 사용할 수 있도록 합니다. 예를 들어 제품 티저를 반복해서 사용하여 서로 다른 제품을 표시할 수 있습니다.
 
 이 경우 티저 위에 배너를 렌더링하여 제품이 사용자 지정 속성에 따라 &quot;친환경&quot;임을 표시하려고 합니다. 구성 요소의 [마크업](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)에 대한 디자인 패턴은 AEM CIF 코어 구성 요소뿐만 아니라 모든 AEM 구성 요소에 실제로 표준입니다.
+
+>[!NOTE]
+>
+> 이 제품 티저 또는 CIF 페이지 구성 요소와 같은 CIF 제품 및 카테고리 선택기를 사용하여 구성 요소를 사용자 지정하는 경우 구성 요소 대화 상자에 필요한 `cif.shell.picker` clientlib을 포함해야 합니다. 자세한 내용은 [CIF 제품 및 카테고리 선택기 사용](use-cif-pickers.md)을 참조하십시오.
 
 1. IDE에서 `ui.apps` 모듈을 탐색하고 확장하고 폴더 계층 구조를 다음으로 확장합니다.`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` 및 `.content.xml` 파일을 검사합니다.
 
@@ -498,3 +502,4 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
 - [AEM CIF 핵심 구성 요소 사용자 정의](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [CIF 제품 및 카테고리 선택기 사용](use-cif-pickers.md)
