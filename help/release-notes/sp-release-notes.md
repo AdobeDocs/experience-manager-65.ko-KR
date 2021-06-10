@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 2e01bb0b16728a8073e5de47deb88de69486d408
+source-git-commit: f62c675af34a4b11cc152eafb7bc561f8b6890a9
 workflow-type: tm+mt
-source-wordcount: '3877'
-ht-degree: 15%
+source-wordcount: '3857'
+ht-degree: 13%
 
 ---
 
@@ -22,17 +22,15 @@ ht-degree: 15%
 | 날짜 | 2021년 5월 27일 |
 | 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip) |
 
-<!-- TBD: Update the SD link when SP8 is available. Same link is duplicated below in install -->
-
 ## [!DNL Adobe Experience Manager] 6.5.9.0에 포함된 사항 {#what-s-included-in-aem}
 
 [!DNL Adobe Experience Manager] 6.5.9.0에는 2019년 4월 6.5 릴리스의 공식 출시 이후 릴리스된 새로운 기능, 주요 고객이 요청한 향상된 기능 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. 서비스 팩이 [!DNL Adobe Experience Manager] 6.5에 설치됩니다.
 
 [!DNL Adobe Experience Manager] 6.5.9.0에 도입된 주요 기능 및 개선 사항은 다음과 같습니다.
 
-* 이제 AEM Sites Dynamic Media Foundation 구성 요소에서 응답형 이미지 사전 설정 또는 스마트 자르기를 사용할 때 고해상도 장치에 대한 최적화를 켜거나 끌 수 있습니다.
+* [!DNL Experience Manager Sites] 이제 Dynamic Media Foundation 구성 요소에서 응답형 이미지 사전 설정 또는 스마트 자르기를 사용할 때 고해상도 장치에 대한 최적화를 켜거나 끌 수 있습니다.
 
-* 성능을 향상시키기 위해 hidden=false 조건이 JCR 쿼리에서 QueryBuilder 평가기로 이동됩니다. 변경 후 숨겨진 설명이 작동하는지 확인하기 위해 Adobe Experience Manager에서는 숨겨진 폴더가 인터페이스에 표시되지 않는지 확인합니다.
+* 성능을 향상시키기 위해 hidden=false 조건이 JCR 쿼리에서 QueryBuilder 평가기로 이동됩니다. 변경 후 숨겨진 설명이 작동하는지 확인하기 위해 Experience Manager은 숨겨진 폴더가 인터페이스에 표시되지 않는지 확인합니다.
 
 * [!DNL Experience Manager Sites] 페이지에서 삭제된 페이지 및 트리를 복원하는 기능.
 
@@ -94,9 +92,9 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->AEM 서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되는 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
+>서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되는 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
 >[!DNL Azul Zulu] JDK에 대한 지원은 [!DNL Experience Manager] 고객에게도 Adobe이 제공합니다.
->[Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 [!DNL Azul Zulu JDKs] 관련 버전을 다운로드할 수 있습니다.
+>[Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 [!DNL Azul Zulu] JDK의 관련 버전을 다운로드할 수 있습니다.
 >Adobe에 의해 배포되는 Oracle Java 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en)를 참조하십시오.
 
 다음은 [!DNL Experience Manager] 6.5.9.0 릴리스에서 제공된 수정 사항 목록입니다.
@@ -212,7 +210,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 * 읽기 전용 권한이 있는 사이트 작성자는 자산에 스마트 자르기 기능을 사용하고 스마트 잘려진 렌디션을 편집할 수 있습니다. 그러나 읽기 전용 권한이 있는 사용자는 사이트 개발 인스턴스에서 자산 속성을 편집할 수 없습니다(CQ-4316450).
 
-* AEM 인스턴스가 Dynamic Media 모드를 설정한 경우에도 Dynamic Media 구성이 활성화되지 않은 폴더 경로에는 비디오 주석이 작동하지 않습니다(CQ-4314950).
+* [!DNL Experience Manager] 인스턴스가 [!DNL Dynamic Media] 모드에서 설정되어 있어도 폴더 경로 [!DNL where Dynamic] 미디어 구성이 활성화되지 않습니다(CQ-4314950).
 
 * 자산 제목에 2바이트, 멀티바이트, 높은 ASCII, 키릴 자모, 서로게이트 쌍, 히브리어, 아랍어 및 GB18030 문자가 있는 경우, Dynamic Media에 게시할 때 자산 제목에 물음표(?)가 표시됩니다. (CQ-4311872).
 
@@ -261,7 +259,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 * `resourceresolver` Sling 번들로 인해 `Sling:alias` 쿼리가 실패합니다(NPR-35335).
 
-* AEM에서 SSL을 설정할 때 컨텍스트 경로가 제거됩니다(NPR-35294).
+* Experience Manager에서 SSL을 설정할 때 컨텍스트 경로가 제거됩니다(NPR-35294).
 
 * 긴 실행 세션 후 `SegmentNotFound` 예외가 반환됩니다(NPR-36405).
 
@@ -275,11 +273,11 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 ### 프로젝트 {#projects-6590}
 
-* 프로젝트 경로에 추가된 슬래시(/)가 추가되어 프로젝트의 JCR 경로가 확인되지 않으므로 프로젝트의 속성을 저장할 수 없습니다(NPR-36191).
+* 프로젝트 경로에 추가된 슬래시(`/`)가 추가되어 프로젝트의 JCR 경로가 확인되지 않으므로 프로젝트의 속성을 저장할 수 없습니다(NPR-36191).
 
 ### 스크린 {#screens-6590}
 
-* [!DNL Experience Manager Screens] 사용자 지정 2FA 인증 핸들러가 사용되는 경우 플레이어를 인증할 수 없습니다(NPR-35854).
+* [!DNL Experience Manager Screens] 사용자 지정 2단계 인증 핸들러가 사용되는 경우 플레이어를 인증할 수 없습니다(NPR-35854).
 
 ### 상거래 {#commerce-6590}
 
@@ -291,7 +289,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 * 인간 변환이 있는 프로젝트에 대해 자동 승인 옵션을 선택하면 작업 상태가 `Unknown`으로 표시됩니다(NPR-35981).
 
-* 페이지를 번역하는 경우 경험 조각의 참조 경로가 대상 경험 조각 참조 경로로 업데이트되지 않습니다(NPR-35911).
+* 페이지를 번역하는 경우 [!DNL Experience Fragments]의 참조 경로가 대상 [!DNL Experience Fragment] 참조 경로로 업데이트되지 않습니다(NPR-35911).
 
 * 상위 및 하위 페이지를 변경하고 상위 페이지를 번역용으로 보내면 하위 페이지도 잘못 변환됩니다(NPR-35896).
 
@@ -303,12 +301,12 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 ### 워크플로 {#workflow-6590}
 
-* 받은 편지함에서 사용할 수 있는 항목에 대해 완료, 위임 또는 열기 작업을 클릭하면 이러한 작업이 완료되었음을 나타내는 시각적 단서가 없습니다(NPR-36317).
+* 받은 편지함에서 사용할 수 있는 항목에 대해 완료, 위임 또는 열기 작업을 클릭하면 이러한 작업이 완료되는 시각적 단서가 없습니다(NPR-36317).
 
 ### [!DNL Communities] {#communities-6590}
 
-* 스팸 필터링에서 시스템은 AEM 서버를 다운시키는 JAVA 힙의 100%를 사용합니다(NPR-36316, NPR-36493).
-* 포럼에서 SearchCommentSocialComponentListProvider에서 시작한 JCR 세션 데이터가 누출됩니다(NPR-36235).
+* 스팸 필터링에서 시스템은 Java 힙의 100%를 소비하여 Experience Manager 서버가 응답하지 않습니다(NPR-36316, NPR-36493).
+* 포럼에서 `SearchCommentSocialComponentListProvider`에서 시작된 JCR 세션 데이터가 누출됩니다(NPR-36235).
 * 특정 받은 편지함 메시지를 열면 잘못된 페이지 매김 및 기타 문제가 있는 모든 메시지가 반영됩니다(NPR-35917).
 
 ### [!DNL Brand Portal] {#brandportal-6590}
@@ -364,7 +362,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 * AdminUI에서 끝점 관리 를 선택하면 [!DNL Experience Manager Forms]에 `endpoint registry failure` 오류 메시지가 표시됩니다(CQ-4320249).
 
-보안 업데이트에 대한 자세한 내용은 [Experience Manager 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html)를 참조하십시오.
+보안 업데이트에 대한 자세한 내용은 [[!DNL Experience Manager] 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html)를 참조하십시오.
 
 ## 6.5.9.0 설치 {#install}
 
@@ -400,7 +398,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 **자동 설치**
 
-작업 인스턴스에 Adobe Experience Manager 6.5.9.0을 자동으로 설치하는 두 가지 방법이 있습니다.
+작업 인스턴스에 [!DNL Experience Manager] 6.5.9.0을 자동으로 설치하는 두 가지 방법이 있습니다.
 
 A. 서버가 온라인 상태일 때 패키지를 `../crx-quickstart/install` 폴더에 넣습니다. 패키지가 자동으로 설치됩니다.
 
@@ -473,7 +471,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 
 | 영역 | 기능 | 대체 |
 |---|---|---|
-| 통합 | **[!UICONTROL AEM 클라우드 서비스 옵트인]** 화면은 더 이상 사용되지 않습니다. Adobe IMS 및 I/O를 통해 인증을 사용하는 Adobe Target Standard API를 지원하고 분석 및 개인화를 위해 Experience Manager 페이지를 계측하는 Adobe Launch의 늘어나는 역할을 지원하도록 Experience Manager 6.5에서 옵트인 통합이 업데이트되어 옵트인 마법사가 기능상 무관해졌습니다. | 해당 Experience Manager 클라우드 서비스를 통해 시스템 연결, Adobe IMS 인증 및 [!DNL Adobe I/O] 통합을 구성합니다. |
+| 통합 | **[!UICONTROL AEM 클라우드 서비스 옵트인]** 화면은 더 이상 사용되지 않습니다. Adobe IMS 및 [!DNL Adobe I/O]을 통해 인증을 사용하는 Adobe Target Standard API를 지원하고 분석 및 개인화를 위해 Experience Manager 페이지를 계측하는 Adobe Launch의 늘어나는 역할을 지원하도록 Experience Manager 6.5에서 옵트인 마법사가 기능상 무관해졌습니다. | 각각의 [!DNL Experience Manager] 클라우드 서비스를 통해 시스템 연결, Adobe IMS 인증 및 [!DNL Adobe I/O] 통합을 구성합니다. |
 | 커넥터 | Microsoft SharePoint 2010 및 Microsoft SharePoint 2013용 Adobe JCR 커넥터는 Experience Manager 6.5에서 더 이상 사용되지 않습니다. | N/A |
 
 ## 알려진 문제 {#known-issues}
@@ -484,7 +482,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 런타임 복사본을 검색하려면 Adobe에서 HTTP API를 사용하여 사용자 지정 워크플로우 모델의 디자인 타임 사본을 해당 런타임 복사와 동기화하는 것이 좋습니다.
    `<designModelPath>/jcr:content.generate.json`.
 
-* 계층 구조의 한 폴더의 이름이 [!DNL Experience Manager Assets]에서 변경되고 자산이 있는 중첩된 폴더가 [!DNL Brand Portal]에 게시되는 경우 루트 폴더가 다시 게시될 때까지 폴더의 제목이 [!DNL Brand Portal]에서 업데이트되지 않습니다.
+* 계층 구조의 한 폴더의 이름이 [!DNL Assets]에서 변경되고 자산이 있는 중첩된 폴더가 [!DNL Brand Portal]에 게시되는 경우 루트 폴더가 다시 게시될 때까지 폴더의 제목이 [!DNL Brand Portal]에서 업데이트되지 않습니다.
 
 * 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
 
