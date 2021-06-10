@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 이전 서비스 팩 릴리스 노�
 description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩의 릴리스 노트입니다.'
 contentOwner: AK
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: d06e60baac692c92358244944226b77d5dad4022
+source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
 workflow-type: tm+mt
-source-wordcount: '20321'
+source-wordcount: '20313'
 ht-degree: 56%
 
 ---
@@ -590,9 +590,9 @@ Adobe Experience Manager 6.5.6.0에 도입된 주요 기능 및 개선 사항은
 
 * [번역된 적응형 양식 페이지에 대한 캐싱 기능이 개선되었습니다](../../help/forms/using/configure-adaptive-forms-cache.md).
 
-* automated forms conversion 서비스에서 [Adobe Sign 텍스트 태그를 지원합니다](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
+* automated forms conversion 서비스에서 [Adobe Sign 텍스트 태그를 지원합니다](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
 
-* [색상 양식을 [!DNL Automated Forms Conversion service]을 사용하여 적응형 양식으로 전환](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
+* [색상 양식을 [!DNL Automated Forms Conversion service]을 사용하여 적응형 양식으로 전환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)
 
 * SMB 2 및 SMB 3 프로토콜 지원
 
@@ -1001,7 +1001,7 @@ Experience Manager 6.5 서비스 팩 5에 소개된 전체 기능, 주요 특징
 
 >[!IMPORTANT]
 >
->[!DNL Experience Manager desktop app]의 Windows 사용자는 [데스크탑 앱 버전 2.0.3.2](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html#whats-new-added)로 업그레이드하여 [!DNL Adobe Experience Manager 6.5.5.0] 인스턴스의 DAM 저장소에 액세스하는 것이 좋습니다. 데스크탑 앱 버전 2.0.2를 사용하여 [!DNL Adobe Experience Manager] 6.5.5.0 인스턴스에서 DAM 저장소에 액세스할 때 문제가 발생할 수 있습니다.
+>[!DNL Experience Manager desktop app]의 Windows 사용자는 [데스크탑 앱 버전 2.0.3.2](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html#what-is-new)로 업그레이드하여 [!DNL Adobe Experience Manager 6.5.5.0] 인스턴스의 DAM 저장소에 액세스하는 것이 좋습니다. 데스크탑 앱 버전 2.0.2를 사용하여 [!DNL Adobe Experience Manager] 6.5.5.0 인스턴스에서 DAM 저장소에 액세스할 때 문제가 발생할 수 있습니다.
 
 **Experience Manager Assets의 액세스 가능성이 개선되었습니다**
 
@@ -2183,7 +2183,7 @@ Remove one mention of this fix.
 
 #### 자산 - 포함
 
-* [!DNL Experience Manager Assets]에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [Experience Manager Assets에 MSM을 사용하여 자산 재사용](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/reuse-assets-using-msm.html)을 참조하십시오. NPR-29199: CQ-4259922용 핫픽스
+* [!DNL Experience Manager Assets]에 대한 다중 사이트 관리자 지원이 활성화되었습니다. 자세한 내용은 [Experience Manager Assets에 MSM을 사용하여 자산 재사용](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html)을 참조하십시오. NPR-29199: CQ-4259922용 핫픽스
 
 #### 사이트 - 포함
 
