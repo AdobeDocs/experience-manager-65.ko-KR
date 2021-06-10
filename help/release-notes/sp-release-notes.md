@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 7d3c8d9266bdec3f75211cfa0636217fd8b054ca
+source-git-commit: 2e01bb0b16728a8073e5de47deb88de69486d408
 workflow-type: tm+mt
-source-wordcount: '3874'
+source-wordcount: '3877'
 ht-degree: 15%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 15%
 
 * 메일 시스템 구성 서비스에 대한 새로 고침 토큰을 사용하여 액세스 토큰을 새로 고침하도록 새 사용자가 지원합니다.
 
-* 메일 시스템 구성 서비스를 위한 [!DNL SMTP XOAUTH2] 메커니즘을 지원합니다.
+* [메일 구성 서비스에 대한 SMTP XOAUTH2 ](/help/sites-administering/notification.md#setting-up-oauth)  메커니즘을 지원합니다.
 
 * [!DNL MongoDB] 버전 4.2 및 4.4를 지원합니다.
 
