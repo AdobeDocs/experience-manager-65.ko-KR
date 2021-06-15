@@ -11,7 +11,7 @@ docset: aem65
 feature: 360 VR 비디오
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -82,8 +82,8 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **속성 유형**:이중
-   * **값**:부동 소수점 종횡비, 기본 2.0.
+   * **속성 유형**  - 이중
+   * **값**  - 부동 소수점 종횡비, 기본값 2.0.
 
 이 속성을 설정하면 기존 비디오와 새로 업로드한 비디오 모두에 즉시 적용됩니다.
 
