@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: 구성,하이브리드 모드
-source-git-commit: c4221ede672c131aa0864438bc9fd16c73ddf10c
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 2%
@@ -211,7 +211,7 @@ Dynamic Media은 기본적으로 활성화되지 않습니다. 그러나 이전�
 
 Dynamic Media을 활성화한 후 비활성화하려면 `-r dynamicmedia` 실행 모드 플래그를 제거합니다.
 
-**Dynamic Media이 활성화되면 비활성화하십시오**
+**Dynamic Media이 활성화된 후 비활성화하려면:**
 
 1. 명령줄에서 quickstart를 시작할 때 다음 중 하나를 수행할 수 있습니다.
 
@@ -229,7 +229,7 @@ Dynamic Media을 활성화한 후 비활성화하려면 `-r dynamicmedia` 실행
 
 ## (선택 사항) Dynamic Media 사전 설정 및 구성을 6.3에서 6.5로 마이그레이션 다운타임 없음 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-Experience Manager Dynamic Media을 6.3에서 6.5로 업그레이드하는 경우(이제 가동 중지 시간 없이 배포할 수 있는 기능이 포함됨) 다음 curl 명령을 실행해야 합니다. 이 명령은 모든 사전 설정 및 구성을 CRXDE Lite의 `/etc`에서 `/conf`(으)로 마이그레이션합니다.
+Experience Manager - Dynamic Media을 6.3에서 6.5로 업그레이드하는 경우(이제 가동 중지 시간 없이 배포할 수 있는 기능이 포함됨) 다음 curl 명령을 실행해야 합니다. 이 명령은 모든 사전 설정 및 구성을 CRXDE Lite의 `/etc`에서 `/conf`(으)로 마이그레이션합니다.
 
 >[!NOTE]
 호환성 모드에서 Experience Manager 인스턴스를 실행하는 경우, 즉 호환성 패키지가 설치되어 있으므로 이러한 명령을 실행할 필요가 없습니다.
@@ -373,7 +373,8 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**솔루션**:이  `KeyStore` (가)  **dynamic-media-replicationuser** 에 저장되고 올바른 암호가 제공되는지 확인합니다.
+**해결 방법:**
+이  `KeyStore` dynamic-media-replicationuser에 저장되고  **** 올바른 암호가 제공되는지 확인합니다.
 
 #### 문제:키 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data} 데이터를 해독할 수 없습니다.
 
@@ -389,7 +390,8 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**솔루션**:암호를 확인합니다. 복제 에이전트에 저장된 암호가 키 저장소를 만드는 데 사용된 암호와 다릅니다.
+**해결 방법:**
+암호를 확인합니다. 복제 에이전트에 저장된 암호가 키 저장소를 만드는 데 사용된 암호와 다릅니다.
 
 #### 문제:InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
@@ -409,7 +411,8 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**솔루션**:Experience Manager 작성자의 Java™ 프로세스에 시스템 속성이 유효한 truststore로  `-Djavax.net.ssl.trustStore=` 설정되어 있는지 확인하십시오.
+**해결 방법:**
+Experience Manager 작성자의 Java™ 프로세스에 시스템 속성이  `-Djavax.net.ssl.trustStore=` 유효한 truststore로 설정되어 있는지 확인하십시오.
 
 #### 문제:KeyStore가 설정되지 않았거나 {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized} 초기화되지 않았습니다.
 
@@ -427,7 +430,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 02.08.2016 14:37:44 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1470173864834, userId='admin', revision='null'}. com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised key store for user dynamic-media-replication
 ```
 
-**솔루션**:
+**솔루션:**
 
 1. 사용자 관리 페이지로 이동합니다.
    `localhost:4502/libs/granite/security/content/useradmin.html`
@@ -584,8 +587,8 @@ dam/dm/presets/analytics/jcr:content/userdata` 로 이동합니다.
        trackingServer=aemvideodal.d2.sc.omtrdc.net
       ```
 
-   * **Experience Manager의 비디오 보고 도구를 통해 Video**
-Analytics 사전 설정을 확인합니다.  **[!UICONTROL 도구 > 자산 > 비디오 보고 탭하기]**
+   * **Experience**
+Manager의 비디오 보고 도구를 통해 Video Analytics 사전 설정을 확인합니다.  **[!UICONTROL 도구]**  >  **[!UICONTROL 자산]**  >  **[!UICONTROL 비디오 보고]**
 
       `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -815,7 +818,7 @@ Dynamic Media 이미지 서버 구성에 Adobe CQ Scene7 ImageServer 번들과 A
 >[!NOTE]
 Dynamic Media은 [이 활성화되면 즉시 사용할 수 있습니다](#enabling-dynamic-media). 그러나 특정 사양 또는 요구 사항을 충족하도록 Dynamic Media Image Server를 구성하여 설치를 세밀하게 조정할 수도 있습니다.
 
-**전제 조건**: ** Dynamic Media 이미지 서버를 구성하기 전에 Windows® VM에 Microsoft® Visual C++ 라이브러리 설치가 포함되어 있는지 확인하십시오. 라이브러리는 Dynamic Media 이미지 서버를 실행하는 데 필요합니다. [여기에서 Microsoft® Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드할 수 있습니다](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
+**전제 조건**  -  ** Dynamic Media 이미지 서버를 구성하기 전에 Windows®의 VM에 Microsoft® Visual C++ 라이브러리 설치가 포함되어 있는지 확인하십시오. 라이브러리는 Dynamic Media 이미지 서버를 실행하는 데 필요합니다. [여기에서 Microsoft® Visual C++ 2010 재배포 가능 패키지(x64)를 다운로드할 수 있습니다](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
 Dynamic Media 이미지 서버 설정을 구성하려면:
 
@@ -891,7 +894,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
 
 기본 매니페스트를 사용하면 Dynamic Media 게재 응답을 생성하는 데 사용되는 기본값을 구성할 수 있습니다. 품질(JPEG 품질, 해상도, 리샘플링 모드), 캐싱(만료)을 미세 조정하고, 너무 큰 이미지(defaultpix, defaultthumpix, maxpix)의 렌더링을 방지할 수 있습니다.
 
-기본 매니페스트 구성의 위치는 **[!UICONTROL 카탈로그 루트]** 기본값(**[!UICONTROL Adobe CQ Scene7 PlatformServer]** 번들)에서 가져옵니다. 기본적으로 이 값은 **[!UICONTROL 도구 > 일반 > CRXDE Lite]** 내에 다음 경로에 있습니다.
+기본 매니페스트 구성의 위치는 **[!UICONTROL 카탈로그 루트]** 기본값(**[!UICONTROL Adobe CQ Scene7 PlatformServer]** 번들)에서 가져옵니다. 기본적으로 이 값은 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]** 내에 있는 다음 경로에 있습니다
 
 `/conf/global/settings/dam/dm/imageserver/`
 
@@ -1000,7 +1003,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
 
 **기본 색상 프로파일을 구성하려면**
 
-1. **[!UICONTROL 도구 > 일반 > CRXDE Lite]**&#x200B;에서 기본 Adobe Color 프로필이 포함된 `/conf/global/settings/dam/dm/imageserver/jcr:content`로 이동합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;에서 기본 Adobe Color 프로필이 포함된 `/conf/global/settings/dam/dm/imageserver/jcr:content`로 이동합니다.
 
    ![chlimage_1-514](assets/chlimage_1-514.png)
 
