@@ -10,7 +10,7 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: 자산 관리
 role: Business Practitioner, Administrator
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 1%
@@ -81,10 +81,10 @@ Experience Manager을 사용하면 섭취, 게재 시 또는 둘 다에 따라 �
 
 가장 좋은 방법은 언샵 마스크 반경 매개 변수로 시작하십시오. 시작할 수 있는 반경 설정은 다음과 같습니다.
 
-* **[!UICONTROL 웹 사이트]**:0.2-0.3픽셀
-* **[!UICONTROL 사진 인쇄(250-300ppi)]**:0.3-0.5픽셀
-* **[!UICONTROL 오프셋 인쇄(266-300ppi)]**:0.7-1.0픽셀
-* **[!UICONTROL 캔버스 인쇄(150ppi)]**:1.5-2.0픽셀
+* **[!UICONTROL 웹 사이트]**  - 0.2-0.3픽셀
+* **[!UICONTROL 사진 인쇄(250-300ppi)]**  - 0.3-0.5픽셀
+* **[!UICONTROL 오프셋 인쇄(266-300ppi)]**  - 0.7-1.0픽셀
+* **[!UICONTROL 캔버스 인쇄(150ppi)]**  - 1.5-2.0픽셀
 
 1.75에서 4로 점진적으로 증가시키세요. 선명하게 하기가 여전히 원하는 방식이 아닌 경우 반지름을 소수점으로 늘린 다음 양을 1.75에서 4로 다시 실행합니다. 필요에 따라 반복합니다.
 
