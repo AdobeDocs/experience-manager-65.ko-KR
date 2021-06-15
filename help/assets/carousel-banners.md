@@ -11,9 +11,9 @@ docset: aem65
 feature: 회전 배너
 role: Business Practitioner, Administrator
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '4734'
+source-wordcount: '4740'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 홍보 배너에 포함된 콘텐츠를 만들고 수정하는 데에는 시간이 오래 걸릴 수 있으므로 새 콘텐츠를 빠르게 게시하거나 더 타겟팅할 수 있는 기능을 제한할 수 있습니다. 회전 배너를 사용하여 회전 배너를 빠르게 만들거나 수정할 수 있습니다. 제품 세부 사항 또는 관련 리소스에 연결하는 핫스팟과 같은 인터랙티브한 요소를 추가하고 모든 화면에 제공할 수 있으므로 새로운 홍보 컨텐츠를 보다 빠르게 출시할 수 있습니다.
 
-캐러셀 배너는 **[!UICONTROL CAROUSELSET]**&#x200B;이라는 단어가 있는 배너에 의해 지정됩니다.
+캐러셀 배너는 **[!UICONTROL CAROUSELSET]**&#x200B;이라는 단어가 포함된 배너에 의해 지정됩니다
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 ## 빠른 시작:회전 배너 {#quick-start-carousel-banners}
 
-빠르게 시작하고 실행하려면
+회전 배너를 사용하여 빠르게 시작하고 실행하려면:
 
 1. [핫스팟 및 이미지 맵 변수](#identifying-hotspot-and-image-map-variables)  식별(Experience Manager 자산 + Dynamic Media을 사용하는 고객에게만 해당됨)
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Experience Manager 사이트 또는 Ecommerce 고객인 경우 기본 기능을 사용하여 제품 페이지로 이동하고 제품 카탈로그에서 기존 SKU를 조회할 수 있습니다. 핫스팟이나 이미지 맵 변수를 수동으로 입력할 필요가 없습니다. [eCommerce](/help/commerce/cif-classic/administering/generic.md) 설정에 대한 정보를 참조하십시오.
+   >Experience Manager 사이트 또는 Ecommerce 고객인 경우 기본 기능을 사용하여 제품 페이지로 이동하고 제품 카탈로그에서 기존 SKU(Stock Keeping Unit)를 조회할 수 있습니다. 핫스팟이나 이미지 맵 변수를 수동으로 입력할 필요가 없습니다. [eCommerce](/help/commerce/cif-classic/administering/generic.md) 설정에 대한 정보를 참조하십시오.
    >
    >
    >Experience Manager 자산 및 Dynamic Media 고객의 경우, 핫스팟과 이미지 맵에 대한 데이터를 수동으로 입력한 다음 게시된 URL 또는 포함 코드를 타사 컨텐츠 관리 시스템과 통합합니다.
