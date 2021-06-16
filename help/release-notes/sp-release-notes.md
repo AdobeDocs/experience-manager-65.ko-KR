@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f62c675af34a4b11cc152eafb7bc561f8b6890a9
+source-git-commit: 0ed031e8be43633caf6d9916542b6650e3dfd327
 workflow-type: tm+mt
 source-wordcount: '3857'
-ht-degree: 13%
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 13%
 | 버전 | 6.5.9.0 |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2021년 5월 27일 |
-| 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip) |
+| 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9-1.0.zip) |
 
 ## [!DNL Adobe Experience Manager] 6.5.9.0에 포함된 사항 {#what-s-included-in-aem}
 
@@ -384,7 +384,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 1. 설치하기 전에 스냅샷 또는 [!DNL Experience Manager] 인스턴스의 새 백업을 만듭니다.
 
-1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip)에서 서비스 팩을 다운로드하십시오.
+1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9-1.0.zip)에서 서비스 팩을 다운로드하십시오.
 
 1. 패키지 관리자를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다. 자세한 내용은 [패키지 관리자](/help/sites-administering/package-manager.md)를 참조하십시오.
 
