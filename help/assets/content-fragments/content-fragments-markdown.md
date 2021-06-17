@@ -13,10 +13,10 @@ docset: aem65
 feature: 콘텐츠 조각
 role: Business Practitioner, Administrator
 exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '543'
+ht-degree: 97%
 
 ---
 
@@ -174,7 +174,7 @@ ht-degree: 100%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-코드 범위(code span)를 나타내려면 억음 악센트 따옴표(`)로 둘러쌉니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
+코드 범위를 나타내려면 백틱 따옴표(&amp;grave;)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
 
 예:
 
