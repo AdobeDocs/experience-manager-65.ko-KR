@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 exl-id: 1c3d0d48-5c31-42a8-8698-922d7c2127e9
-source-git-commit: cd895fcab5adce600ce230fb6867392e45963c16
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/sr
 
 컨텐츠 처리 필터 옵션은 다음과 같은 기능을 제공합니다.
 
-* **컨텐츠 처리 경로:**  필터를 적용할 경로 목록 다음에 해당 경로에서 제외할 MIME 유형 목록입니다. 이 경로는 절대 경로여야 하며 모든 리소스 경로를 지정된 경로 접두사와 일치시키기 위해 끝에 와일드카드(`*`)를 포함할 수 있습니다. 예:`/content/*:image/jpeg,image/svg+xml`이 &#39;/content의 모든 노드에 필터를 적용합니까? jpg 및 svg 이미지 제외
+* **컨텐츠 처리 경로:**  필터를 적용할 경로 목록 다음에 해당 경로에서 제외할 MIME 유형 목록입니다. 이 경로는 절대 경로여야 하며 모든 리소스 경로를 지정된 경로 접두사와 일치시키기 위해 끝에 와일드카드(`*`)를 포함할 수 있습니다. 예:`/content/*:image/jpeg,image/svg+xml`은 jpg 및 svg 이미지를 제외한 `/content?`의 모든 노드에 필터를 적용합니다
 
 * **제외된 리소스 경로:** 제외된 리소스 목록으로서, 각 리소스 경로는 절대 및 정규화된 경로로 부여되어야 합니다. 접두사 일치/와일드카드는 지원되지 않습니다.
 
