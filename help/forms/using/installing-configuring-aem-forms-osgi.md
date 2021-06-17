@@ -10,9 +10,9 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Administrator
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1907'
 ht-degree: 5%
 
 ---
@@ -191,7 +191,7 @@ Dispatcher는 엔터프라이즈급 웹 서버와 함께 사용할 수 있는 Ad
 
 1. 레퍼러 필터 서비스를 구성합니다.
 
-   관리자로 Apache Felix 구성 관리자에 로그인합니다. 구성 관리자의 기본 URL은 `https://[server]:[port_number]/system/console/configMgr`입니다. **구성** 메뉴에서 **Apache Sling 레퍼러 필터** 옵션을 선택합니다. 호스트 허용 필드에 디스패처의 호스트 이름을 입력하여 레퍼러로 허용하고 **저장**&#x200B;을 클릭합니다. 항목의 형식은 &#39;https://[server]:[port]&#39;입니다.
+   관리자로 Apache Felix 구성 관리자에 로그인합니다. 구성 관리자의 기본 URL은 `https://[server]:[port_number]/system/console/configMgr`입니다. **구성** 메뉴에서 **Apache Sling 레퍼러 필터** 옵션을 선택합니다. 호스트 허용 필드에 디스패처의 호스트 이름을 입력하여 레퍼러로 허용하고 **저장**&#x200B;을 클릭합니다. 항목의 형식은 `https://[server]:[port]`입니다.
 
 #### 캐시 구성 {#configure-cache}
 
