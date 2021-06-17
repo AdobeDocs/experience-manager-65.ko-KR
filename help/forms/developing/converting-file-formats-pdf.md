@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '7912'
+source-wordcount: '7911'
 ht-degree: 0%
 
 ---
@@ -850,7 +850,7 @@ WinID가 텍스트, 하위 창, 창 클래스 ID 등의 대화 상자 내용을 
 
 >[!NOTE]
 >
->이 컨텍스트에서 추가라는 용어는 `appmon.[applicationname].addition.[locale]`.xml&#39; 파일의 내용을 의미합니다. 이러한 파일은 대화 상자 XML 파일에 대한 무시 및 추가를 지정합니다.
+>이 컨텍스트에서 추가라는 용어는 `appmon.[applicationname].addition.[locale].xml` 파일의 내용을 의미합니다. 이러한 파일은 대화 상자 XML 파일에 대한 무시 및 추가를 지정합니다.
 
 다음 용도로 기본 응용 프로그램의 추가 대화 상자 XML 파일을 수정할 수도 있습니다.
 
