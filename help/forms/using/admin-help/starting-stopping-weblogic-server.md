@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ WebLogic Server를 종료한 후 노드 관리자를 호출한 명령 프롬프�
 >이 작업은 WebLogic 도메인 및 관리 서버를 만든 후에만 수행할 수 있습니다.
 
 1. WebLogic Server 및 노드 관리자가 실행 중인지 확인합니다.
-1. 웹 브라우저의 URL 행에 `https://host name]:[port]`/console&#39;을 입력하여 WebLogic Server 관리 콘솔을 시작합니다.
+1. 웹 브라우저의 URL 행에 `https://host name]:[port]/console`을 입력하여 WebLogic Server 관리 콘솔을 시작합니다.
 1. 도메인 구조에서 환경 > 서버를 클릭합니다.
 1. 오른쪽 창에서 컨트롤 탭을 클릭합니다.
 1. 시작할 관리 대상 서버를 선택합니다.
