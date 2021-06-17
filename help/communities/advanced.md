@@ -12,7 +12,7 @@ discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Administrator
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -184,28 +184,28 @@ stopwords 파일이 없으면 고급 점수 엔진이 오류가 발생합니다.
 
 1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule
+   ```
 
 1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   ```
 
 **메모:**
 
 * `rules` 및 `sub-rules` 노드 모두 `cq:Page` 유형입니다.
-
-* `subRules` 는 규칙 노드에서 [] Stringon 유형의  `jcr:content` 속성입니다.
-
+* `subRules` 는 규칙 노드에서 `[]` Stringon 유형의  `jcr:content` 속성입니다.
 * `sub-rules` 다양한 점수 규칙 간에 공유할 수 있습니다.
-
 * `rules` 모든 사용자가 읽기 권한을 가진 저장소 위치에 있어야 합니다.
-
 * 규칙 이름은 위치에 관계없이 고유해야 합니다.
 
 ### 배지 규칙 포함 {#included-badging-rules}
