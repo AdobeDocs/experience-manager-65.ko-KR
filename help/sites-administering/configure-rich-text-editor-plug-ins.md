@@ -3,9 +3,9 @@ title: 리치 텍스트 편집기 플러그인 구성
 description: 개별 기능을 활성화하기 위해 Adobe Experience Manager 리치 텍스트 편집기 플러그인을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4395'
 ht-degree: 3%
 
 ---
@@ -338,7 +338,7 @@ AEM을 사용하여 일본어 컨텐츠를 작성하는 작성자는 중단이 �
 
 1. 스타일 노드 아래에 새 노드를 만듭니다. [새 스타일 ](#stylesindropdown) 지정을 참조하십시오.
    * 이름: `jpn-word-wrap`
-   * 유형:&#39;nt:unstructure
+   * 유형: `nt:unstructure`
 
 1. CSS 클래스를 참조할 노드에 속성 `cssName`을 추가합니다. 이 클래스 이름은 일본어 자동 줄바꿈 기능에 대해 예약된 이름입니다.
    * 이름: `cssName`
