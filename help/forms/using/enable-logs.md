@@ -12,9 +12,9 @@ discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '647'
 ht-degree: 6%
 
 ---
@@ -52,7 +52,7 @@ HTML5 양식에 대한 로그 만들기를 시작하도록 로거 유틸리티�
 
 ### 요청 매개 변수 {#enabling-logging-using-request-parameter}을 사용하여 로깅 활성화
 
-이 방법을 사용하여 특정 요청에 대한 로그를 생성할 수 있습니다. 요청 매개 변수의 이름은 &#39;log입니다. 로그 URL은 다음과 같습니다.
+이 방법을 사용하여 특정 요청에 대한 로그를 생성할 수 있습니다. 요청 매개 변수의 이름은 `log`입니다. 로그 URL은 다음과 같습니다.
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -94,7 +94,7 @@ HTML5 양식에 대한 로그 만들기를 시작하도록 로거 유틸리티�
    <td>끔<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>3</td>
+   <td>1</td>
    <td>치명적<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -102,7 +102,7 @@ HTML5 양식에 대한 로그 만들기를 시작하도록 로거 유틸리티�
    <td>오류<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>3</td>
+   <td>1</td>
    <td>경고<br type="_moz" /> </td>
   </tr>
   <tr>
