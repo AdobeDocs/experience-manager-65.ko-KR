@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: 구성,하이브리드 모드
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 2%
@@ -564,8 +564,7 @@ Dynamic Media 구성(6.3 이전)을 구성하기 전에 ***이 작업을 완료�
    * **JCR을 통해 Video Analytics**
 사전 설정을 검사하여 JCR을 통해 Video Analytics 사전 설정을 확인하십시오. CRXDE Lite에 액세스할 수 있어야 합니다.
 
-      Experience Manager - CRXDE Lite에서 `/conf/global/settings/
-dam/dm/presets/analytics/jcr:content/userdata` 로 이동합니다.
+      Experience Manager - CRXDE Lite에서 `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata` 로 이동합니다.
 
       `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`에서와 같이
 
