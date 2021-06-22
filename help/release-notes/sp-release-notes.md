@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 0ed031e8be43633caf6d9916542b6650e3dfd327
+source-git-commit: 101cbd0d06d370da315e1579a8c2f274a6138b9a
 workflow-type: tm+mt
 source-wordcount: '3857'
 ht-degree: 12%
@@ -446,7 +446,7 @@ JEE의 Forms Experience Manager용 누적 설치 프로그램 설치 및 배포 
 
 ### UberJar {#uber-jar}
 
-Experience Manager 6.5.9.0용 UberJar는 [Maven Central 저장소](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.9/)에서 사용할 수 있습니다.
+Experience Manager 6.5.9.0용 UberJar는 [Maven Central 저장소](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.9-1.0/)에서 사용할 수 있습니다.
 
 Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/help/sites-developing/ht-projects-maven.md)을 참조하여 프로젝트 POM에 다음 종속성을 포함하십시오.
 
@@ -454,7 +454,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.9</version>
+     <version>6.5.9-1.0</version>
      <scope>provided</scope>
 </dependency>
 ```
