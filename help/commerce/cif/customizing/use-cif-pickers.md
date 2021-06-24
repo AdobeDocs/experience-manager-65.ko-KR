@@ -7,20 +7,21 @@ version: cloud-service
 activity: develop
 audience: developer
 feature: 전자 상거래 통합 프레임워크
-source-git-commit: d84993e704096eabe85c4d4d61e24096d15ae9bd
+exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
+source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 1%
+source-wordcount: '648'
+ht-degree: 0%
 
 ---
 
-# AEM 컨텐츠 및 상거래 작성 선택기 {#cif-pickers}
+# AEM Content &amp; Commerce Authoring Picker {#cif-pickers}
 
 AEM Content &amp; Commerce Authoring은 AEM 작성자와 마케터가 상거래 제품 데이터 및 카탈로그를 효율적으로 작업할 수 있도록 하는 작성 도구 세트를 제공합니다. 제품 선택기 및 카테고리 선택기는 CIF 추가 기능의 일부이며 CIF 코어 구성 요소에서 사용됩니다. 프로젝트는 구성 요소 대화 상자에서 이러한 선택기를 사용하여 제품 또는 카테고리를 선택할 수 있습니다.
 
 ## 제품 선택기 {#product-picker}
 
-프로젝트 구성 요소에서 제품 선택기를 사용하려면 개발자가 `commerce/gui/components/common/cifproductfield`을 구성 요소 대화 상자에 추가해야 합니다. 예를 들어 cq:dialog에는 다음 사항을 사용합니다.
+프로젝트 구성 요소에서 제품 선택기를 사용하려면 개발자가 `commerce/gui/components/common/cifproductfield`을 구성 요소 대화 상자에 추가해야 합니다. 예를 들어 cq:dialog:에 다음 내용을 사용하십시오
 
 ```xml
 <product jcr:primaryType="nt:unstructured"
@@ -46,10 +47,13 @@ AEM Content &amp; Commerce Authoring은 AEM 작성자와 마케터가 상거래 
 >[!CAUTION]
 >
 >`cifproductfield` 구성 요소에는 `cif.shell.picker` clientlib이 필요합니다. clientlib을 대화 상자에 추가하려면 extraClientlibs 속성을 사용할 수 있습니다.
+>[!CAUTION]
+>
+>CIF 코어 구성 요소 버전 2.0.0부터 `id`에 대한 지원이 제거되고 `uid` 로 대체되었습니다. 제품 식별자로 `sku` 또는 `slug` 을 사용하는 것이 좋습니다. CIF 코어 구성 요소 버전 1.x를 사용하는 프로젝트에만 `id`을 계속 지원합니다.
 
 `cifproductfield` 의 전체 작업 예는 [CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) 프로젝트에서 찾을 수 있습니다. AEM 코어 구성 요소 설명서의 [대화 상자 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs)을 참조하십시오.
 
-## 범주 선택기 {#category-picker}
+## 카테고리 선택기 {#category-picker}
 
 카테고리 선택기는 제품 선택기와 유사한 방식으로 구성 요소 대화 상자에서도 사용할 수 있습니다.
 
@@ -73,5 +77,8 @@ cq:dialog 구성에서 다음 코드 조각을 사용할 수 있습니다.
 >[!CAUTION]
 >
 >`cifproductfield` 구성 요소와 동일한 `cifcategoryfield` 구성 요소에도 `cif.shell.picker` clientlib이 필요합니다. clientlib을 대화 상자에 추가하려면 `extraClientlibs` 속성을 사용할 수 있습니다. AEM 코어 구성 요소 설명서의 [대화 상자 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs)을 참조하십시오.
+>[!CAUTION]
+>
+>CIF 코어 구성 요소 버전 2.0.0부터 `id`에 대한 지원이 제거되고 `uid` 로 대체되었습니다. 카테고리 식별자로 `uid` 또는 `slug` 을 사용하는 것이 좋습니다. CIF 코어 구성 요소 버전 1.x를 사용하는 프로젝트에만 `id` 및 `idAndUrlPath`을 계속 지원합니다.
 
 `cifcategoryfield` 의 전체 작업 예는 [CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) 프로젝트에서 찾을 수 있습니다.
