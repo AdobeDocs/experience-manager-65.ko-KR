@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: 자산 관리,검색
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d06e60baac692c92358244944226b77d5dad4022
+source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9743'
 ht-degree: 0%
 
 ---
@@ -80,8 +80,6 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 크기 제한을 수정하려면 CRX 저장소에서 `fileupload` 노드의 `chunkUploadMinFileSize` 속성을 구성합니다.
 
 **[!UICONTROL 일시 중지]**&#x200B;를 클릭하면 **[!UICONTROL 재생]** 옵션으로 전환합니다. 업로드를 다시 시작하려면 **[!UICONTROL 재생]**&#x200B;을 클릭하십시오.
-
-![일시 중지된 자산 업로드 다시 시작](assets/resume-paused-upload.png)
 
 진행 중인 업로드를 취소하려면 진행률 표시줄 옆에 있는 닫기(`X`)를 클릭합니다. 업로드 작업을 취소하면 [!DNL Assets] 자산이 부분적으로 업로드된 부분을 삭제합니다.
 
@@ -212,7 +210,7 @@ Dynamic Media을 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 |  | 비디오 옵션 | 비디오 사전 설정을 선택하여 비디오 파일을 변환할 수 있습니다.<br> 비디오  [업로드 옵션 설정](#setting-evideo-upload-options)을 참조하십시오. |
 |  | 일괄처리 집합 사전 설정 | 업로드된 파일에서 이미지 세트 또는 스핀 세트를 만들려면 사용할 사전 설정에 대해 활성 열을 클릭합니다. 두 개 이상의 사전 설정을 선택할 수 있습니다. Dynamic Media Classic의 애플리케이션 설정/일괄처리 집합 사전 설정 페이지에서 사전 설정을 만듭니다.<br> 일괄처리  [집합 사전 설정 만들기에 대한 자세한 내용은 이미지 세트 자동 생성을 위한 일괄처리 집합 사전 ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 설정 구성 및 스핀 세트 를 참조하십시오.<br> 업로드  [시 일괄처리 집합 사전 설정 설정을 참조하십시오](#setting-batch-set-presets-at-upload). |
 
-#### 업로드 {#setting-image-editing-options-at-upload}에 이미지 편집 옵션을 설정합니다.
+#### 업로드 시 이미지 편집 옵션 설정 {#setting-image-editing-options-at-upload}
 
 AI, EPS 및 PSD 파일을 비롯한 이미지 파일을 업로드할 때 [!UICONTROL 업로드 작업 옵션] 대화 상자에서 다음 편집 작업을 수행할 수 있습니다.
 
@@ -312,7 +310,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 |  | 모바일 | iPhone 또는 Android 모바일 장치에서 전달할 MP4 파일을 만듭니다.해상도 크기와 원하는 대상 데이터 비율로 하나 이상의 종횡비를 선택하십시오. |
 |  | 태블릿 | iPad 또는 Android 태블릿 장치에서 전달할 MP4 파일을 만듭니다.해상도 크기와 원하는 대상 데이터 비율로 하나 이상의 종횡비를 선택하십시오. |
 
-#### 업로드 {#setting-batch-set-presets-at-upload}에 일괄처리 집합 사전 설정 설정 지정
+#### 업로드 시 일괄처리 집합 사전 설정 설정 설정 설정 {#setting-batch-set-presets-at-upload}
 
 업로드된 이미지에서 이미지 세트 또는 스핀 세트를 자동으로 만들려면 사용할 사전 설정에 대해 활성 열을 클릭합니다. 두 개 이상의 사전 설정을 선택할 수 있습니다.
 
@@ -378,7 +376,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 >* [하위 자산 보기](managing-linked-subassets.md#viewing-subassets).
 
 
-## 속성 및 메타데이터 {#editing-properties} 편집
+## 속성 및 메타데이터 편집 {#editing-properties}
 
 1. 자산의 위치로 이동하여 해당 메타데이터를 편집합니다.
 
@@ -455,7 +453,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
    >
    >**[!UICONTROL 붙여넣기]** 옵션은 붙여넣기 작업이 완료될 때까지 도구 모음에서 사용할 수 있습니다.
 
-## 자산 이동 및 이름 바꾸기 {#moving-or-renaming-assets}
+## 자산 이동 및 이름 변경 {#moving-or-renaming-assets}
 
 자산(또는 폴더)을 다른 위치로 이동하는 경우 자산을 복사하는 동안 자산(또는 폴더)이 중복되지 않습니다. 자산(또는 폴더)은 대상 위치에 배치되고 소스 위치에서 제거됩니다. 자산을 새 위치로 이동할 때 자산의 이름을 바꿀 수도 있습니다.
 게시된 자산을 다른 위치로 이동하는 경우 자산을 다시 게시할 수 있는 옵션이 제공됩니다. 게시된 자산에 대한 기본적으로 이동 작업이 자동으로 게시 취소됩니다. 작성자가 자산을 이동할 때 [!UICONTROL 다시 게시] 옵션을 선택하면 이동한 자산이 다시 게시됩니다.
@@ -499,7 +497,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 
    참조를 업데이트하지 않으면 이 참조는 자산의 이전 경로를 계속 가리킵니다. 참조를 조정하면 새 자산 경로로 업데이트됩니다.
 
-### 드래그 작업 {#move-using-drag}을 사용하여 자산 이동
+### 드래그 작업을 사용하여 자산 이동 {#move-using-drag}
 
 사용자 인터페이스에서 [!UICONTROL 이동] 옵션을 사용하는 대신 자산을 대상 위치로 끌어 동위 폴더로 이동할 수 있습니다. 그러나 이 작업은 목록 보기에서만 수행할 수 있습니다.
 
@@ -541,7 +539,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 
    마찬가지로 `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`을 오버레이하여 주석 페이지 이미지를 사용자 지정할 수 있습니다.
 
-   ![오버레이 표현물CRXDE의 선택기 노드 를 사용하여 주석 페이지 이미지를 사용자 지정합니다](assets/renditionpicker-node-crxde.png)
+   ![오버레이 표현물CRXDE의 선택기 노드 를 사용하여 주석 페이지 이미지를 사용자 지정합니다](assets/renditionpicker-node.png)
 
    비디오 자산에 대한 표현물 차원을 구성하려면 `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker` 위치에 있는 CRX 저장소의 `videopicker` 노드로 이동하여 노드를 오버레이한 다음 적절한 속성을 편집합니다.
 
@@ -647,15 +645,13 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 * 터치 장치:길게 터치하세요. 예를 들어, iPad에서 빠른 작업이 표시되도록 자산을 길게 탭할 수 있습니다.
 * 비터치 장치:포인터를 가져갑니다. 예를 들어, 데스크탑 장치에서 포인터를 자산 축소판 위에 두면 빠른 작업 모음이 표시됩니다.
 
-### 자산 {#navigating-and-selecting-assets} 탐색 및 선택
+### 자산 탐색 및 선택 {#navigating-and-selecting-assets}
 
 **[!UICONTROL 선택]** 옵션을 사용하여 사용 가능한 보기(카드, 열 및 목록)가 있는 자산을 보고, 탐색하고 선택할 수 있습니다.
 
 목록 보기 및 열 보기에서 자산 축소판 위에 포인터를 두면 **[!UICONTROL 선택]** 옵션이 표시됩니다.
 
 카드 보기에서 **[!UICONTROL 선택]** 옵션이 빠른 작업으로 표시됩니다.
-
-![카드 보기에서 빠른 작업 선택](assets/select_quick_action.png)
 
 브라우저의 [!DNL Assets] 사용자 인터페이스에서 폴더 또는 컬렉션을 검색할 때 오른쪽 상단 모서리에서 [!UICONTROL 모두 선택] 옵션을 사용하여 표시되거나 로드된 모든 자산을 선택할 수 있습니다. 처음에는 100개의 자산만 카드 보기에 로드되고 목록 보기에서 200개의 자산만 로드됩니다. 검색 결과 페이지를 스크롤할 때 보기에 더 많은 자산이 로드됩니다. [!UICONTROL 모두 선택] 옵션은 로드된 자산만 선택합니다.
 
@@ -678,8 +674,6 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 1. 이미지를 자르려면 **[!UICONTROL 자르기]** ![옵션을 클릭하여 이미지](assets/do-not-localize/crop.png)를 자릅니다.
 
 1. 목록에서 원하는 옵션을 선택합니다. 자르기 영역은 선택한 옵션에 따라 이미지에 나타납니다. **자유 손** 옵션을 사용하면 종횡비 제한 없이 이미지를 자를 수 있습니다.
-
-   ![자르기 옵션](assets/crop-options.png)
 
 1. 잘릴 영역을 선택하고 이미지에서 크기를 조정하거나 위치를 변경합니다.
 
@@ -736,11 +730,9 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 1. 타임라인 하단의 **[!UICONTROL 주석]** 상자에 주석을 추가합니다. 또는 이미지에서 영역을 표시하고 **[!UICONTROL 주석 추가]** 대화 상자에서 주석을 추가합니다.
 
-   ![주석 추가 대화 상자의 주석 상자](assets/annotation-comment-box.png)
-
 1. 사용자에게 주석에 대해 알리려면 사용자의 이메일 주소를 지정하고 설명을 추가합니다. 예를 들어, Aaron MacDonald에 주석을 알리려면 @aa을 입력합니다. 일치하는 모든 사용자에 대한 힌트가 목록에 표시됩니다. 목록에서 Aaron의 이메일 주소를 선택하여 주석으로 Aaron에게 태깅합니다. 마찬가지로 주석 내 또는 그 전 또는 후에 더 많은 사용자에게 태그를 지정할 수 있습니다.
 
-   ![사용자의 전자 메일 주소를 지정하고 사용자에게 알릴 댓글 추가](assets/annotation-add-user-email.png)
+   ![사용자의 전자 메일 주소를 지정하고 사용자에게 알릴 댓글 추가](assets/annotate-gif.gif)
 
    >[!NOTE]
    >
@@ -808,8 +800,6 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 1. [인쇄] 대화 상자에서 PDF에 주석/검토 상태를 표시할 위치를 선택합니다. 예를 들어, 인쇄된 이미지가 포함된 페이지의 오른쪽 상단에 주석/상태를 인쇄하려면 **왼쪽 위** 설정을 사용합니다. 기본적으로 선택됩니다.
 
-   ![인쇄 대화 상자에서 PDF에 표시할 주석/검토 상태의 위치를 선택합니다](assets/Print-annotation-dialog.png)
-
    인쇄된 PDF에 주석/상태를 표시할 위치에 따라 다른 설정을 선택할 수 있습니다. 인쇄된 자산과 별도의 페이지에 주석/상태를 표시하려면 **[!UICONTROL 다음 페이지]**&#x200B;를 선택합니다.
 
 1. **[!UICONTROL 인쇄]**&#x200B;를 클릭합니다. 2단계에서 선택한 옵션에 따라 생성된 PDF에 지정된 위치의 주석/상태가 표시됩니다. 예를 들어, **왼쪽 위** 설정을 사용하여 주석 및 검토 상태를 모두 인쇄하도록 선택하면 생성된 출력이 여기에 표시된 PDF 파일과 유사합니다.
@@ -856,7 +846,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 1. font-family 매개 변수를 `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`으로 설정하여 주석 PDF 파일을 구성합니다. 이 구성은 기본적으로 제공되며, 모든 유럽 및 CJK 언어에 대해 작동합니다.
 1. 선택한 언어가 2단계에서 언급한 언어와 다른 경우 적절한(쉼표로 구분된) 항목을 기본 글꼴 패밀리에 추가합니다.
 
-## 자산 버전 {#asset-versioning} 만들기, 관리, 미리 보기 및 되돌리기
+## 자산 버전 만들기, 관리, 미리 보기 및 되돌리기 {#asset-versioning}
 
 버전 매기기를 통해 특정 시점의 디지털 자산 스냅샷을 만들 수 있습니다. 버전 관리를 사용하면 나중에 자산을 이전 상태로 복원할 수 있습니다. 예를 들어, 자산에 대한 변경 사항을 실행 취소하려면, 편집되지 않은 버전의 자산을 복원합니다. [!DNL Experience Manager]에서 버전을 만들고, 현재 개정을 보고, 두 버전의 이미지 간의 차이를 함께 보고, 자산을 이전 버전으로 복원할 수 있습니다.
 
@@ -909,7 +899,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
    *그림:슬라이더를 사용하여 선택한 자산 버전을 현재 버전과 쉽게 비교할 수 있습니다.*
 
-### 자산 {#starting-a-workflow-on-an-asset}에서 워크플로우 시작
+### 자산에서 워크플로우 시작 {#starting-a-workflow-on-an-asset}
 
 워크플로우를 적용하여 자산을 처리하려면 자산](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset)에서 워크플로우 시작 을 참조하십시오.[
 
@@ -922,7 +912,7 @@ CUG는 자산에 대한 액세스를 제한하는 추가 방법입니다. 폴더
 
 컬렉션 관리에 대한 자세한 내용은 [컬렉션 관리](/help/assets/manage-collections.md)를 참조하십시오.
 
-## 데스크탑 앱 또는 Adobe 자산 링크에서 자산을 볼 때 만료된 자산을 숨깁니다. {#hide-expired-assets-via-acp-api}
+## 데스크탑 앱 또는 Adobe 자산 링크에서 자산을 볼 때 만료된 자산 숨기기 {#hide-expired-assets-via-acp-api}
 
 [!DNL Experience Manager] 데스크탑 앱을 사용하면 Windows 또는 Mac 데스크탑에서 DAM 저장소에 액세스할 수 있습니다. Adobe 자산 링크를 사용하면 지원되는 [!DNL Creative Cloud] 데스크탑 애플리케이션 내에서 자산에 액세스할 수 있습니다.
 
