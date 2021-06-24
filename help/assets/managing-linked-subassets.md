@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner, Administrator
 feature: 자산 관리
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
    *그림:자산 세부 사항의 자산 참조.*
 
-## [!DNL Adobe InDesign]:디지털 자산을 참조로 추가  {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]:디지털 자산을 참조로 추가 {#add-aem-assets-as-references-in-adobe-indesign}
 
 [!DNL InDesign] 파일 내에서 디지털 자산을 참조하려면 자산을 [!DNL InDesign] 파일로 드래그하거나 [!DNL InDesign] 파일을 ZIP 아카이브로 내보내십시오.
 
@@ -57,11 +57,11 @@ ht-degree: 0%
 
 INDD 파일이 업로드되면 리포지토리에서 `xmpMM:InstanceID` 및 `xmpMM:DocumentID` 속성을 갖는 자산을 쿼리하여 참조를 가져옵니다.
 
-### 자산 {#create-references-by-dragging-aem-assets}을(를) 끌어 참조를 만듭니다
+### 자산을 끌어 참조 만들기 {#create-references-by-dragging-aem-assets}
 
 이 절차는 [Adobe Illustrator](#refai)에서 디지털 자산을 참조로 추가하는 것과 유사합니다.
 
-### ZIP 파일 {#create-references-to-aem-assets-by-exporting-a-zip-file}을 내보내어 자산에 대한 참조를 만듭니다
+### ZIP 파일을 내보내어 자산에 대한 참조를 만듭니다 {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md)의 단계를 수행하여 새 워크플로우를 만듭니다.
 1. [!DNL Adobe InDesign]의 [패키지 기능](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html)을 사용하여 문서를 내보냅니다. [!DNL Adobe InDesign] 문서 및 연결된 자산을 패키지로 내보낼 수 있습니다. 이 경우 내보낸 폴더에는 [!DNL InDesign] 파일의 하위 자산이 포함된 `Links` 폴더가 있습니다. `Links` 폴더가 INDD 파일과 동일한 폴더에 있습니다.
@@ -72,8 +72,6 @@ INDD 파일이 업로드되면 리포지토리에서 `xmpMM:InstanceID` 및 `xmp
 ## [!DNL Adobe Photoshop]:디지털 자산을 참조로 추가 {#refps}
 
 1. [!DNL Experience Manager] 데스크탑 앱을 사용하여 [!DNL Experience Manager Assets]에 액세스합니다. 로컬 파일 시스템에 자산을 다운로드하여 표시합니다. [!DNL Adobe Photoshop]에서 [!UICONTROL 연결 배치] 기능을 사용합니다. [데스크탑 앱에 자산 배치](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)를 참조하십시오.
-
-   ![chlimage_1-87](assets/chlimage_1-261.png)
 
 1. [!DNL Photoshop] 파일을 마운트된 드라이브에 저장하거나 [업로드](/help/assets/manage-assets.md#uploading-assets)를 [!DNL Experience Manager] 저장소에 저장합니다.
 1. 워크플로우가 완료되면 기존 [!DNL Experience Manager] 자산에 대한 참조가 자산 세부 사항 페이지에 나열됩니다.
@@ -112,7 +110,7 @@ INDD 파일이 업로드되면 리포지토리에서 `xmpMM:InstanceID` 및 `xmp
 
 ![다중 페이지 자산에 대한 하위 자산 보기](assets/view_subassets_simulation.gif)
 
-## 다중 페이지 파일 {#view-pages-of-a-multi-page-file} 의 페이지 보기
+## 다중 페이지 파일의 페이지 보기 {#view-pages-of-a-multi-page-file}
 
 [!DNL Experience Manager Assets]의 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 다중 페이지 파일을 볼 수 있습니다. 다중 페이지 자산을 열고 페이지의 왼쪽 위 모서리에서 **[!UICONTROL 페이지 보기]**&#x200B;를 클릭합니다. 열리는 페이지 뷰어 에는 자산의 페이지와 각 페이지를 탐색하고 확대/축소하는 컨트롤이 표시됩니다.
 
