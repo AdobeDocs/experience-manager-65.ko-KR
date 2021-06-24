@@ -1,10 +1,11 @@
 ---
 title: AEM Content and Commerce 릴리스 노트 2021
 description: AEM Content and Commerce 릴리스 노트 2021
-source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
+exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
+source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 13%
+source-wordcount: '758'
+ht-degree: 12%
 
 ---
 
@@ -27,6 +28,23 @@ ht-degree: 13%
 | CIF 추가 기능 | 최소:AEM 6.5.7, Magento 2.3.5 GraphQL 스키마 |
 | CIF 코어 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM 프로젝트 전형 | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## 릴리스 날짜:2021년 6월
+
+| 구성 요소 | 버전 | 세부 사항 |
+|:-------|:-----:|---------------------:|
+| CIF 추가 기능 | 2021.06.18 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
+| CIF 코어 구성 요소 | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
+| CIF Venia 참조 사이트 | 2021.06.12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
+
+### 새로운 기능 {#what-is-new-june}
+
+* 컨텐츠 조각에 대한 새 CIF 제품 및 카테고리 참조 데이터 유형(Incl) 제품/카테고리 선택기 UI 지원)
+* 새 상거래 컨텐츠 조각 코어 구성 요소
+* AEM 백엔드에서 지원되는 전체 텍스트 상거래 검색
+* 상거래 핵심 구성 요소 지원 Adobe Commerce Sensei Recs 데이터 수집
+* 카테고리 페이지의 SEO 기반 URL이 개선되었습니다
+* 사이트/구성당 사용자 지정 HTTP 헤더 지원
 
 ## 릴리스 날짜:2021년 5월
 
@@ -102,7 +120,7 @@ ht-degree: 13%
 
 * 연결된 컨텐츠로 빠르게 이동하는 작업을 포함하여 연결된 자산 및 경험 조각을 표시하도록 확장된 제품 콘솔 속성입니다.
 
-### 개선 사항 {#what-is-improved-february}
+### 개선 사항  {#what-is-improved-february}
 
 * 제품 이미지 URL 및 카테고리 정보로 향상된 클라이언트측 데이터 레이어.
 
@@ -120,7 +138,7 @@ ht-degree: 13%
 
 * 제품 경험 관리:자산 및 경험 조각에 대한 새 &#39;상거래&#39; 속성 탭입니다. 이 탭에서는 자산 및 경험 조각을 제품 및 카테고리에 연결할 수 있습니다. 또한 탭에는 연결된 상거래 개체에 대한 실시간 데이터와 제품 콘솔에 세부 정보를 표시하는 링크도 표시됩니다.
 
-### 개선 사항 {#what-is-improved-january}
+### 개선 사항  {#what-is-improved-january}
 
 * 인증 후 Adobe 클라이언트 데이터 레이어로 사용자 데이터를 보냅니다.
 
