@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Administrator
 feature: 번역
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1879'
-ht-degree: 6%
+source-wordcount: '1875'
+ht-degree: 5%
 
 ---
 
@@ -69,15 +69,9 @@ ht-degree: 6%
 
 1. **[!UICONTROL Target 언어]** 목록에서 폴더 구조를 만들 언어를 선택합니다.
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
-
 1. **[!UICONTROL Project]** 목록에서 **[!UICONTROL 새 번역 프로젝트 만들기]**&#x200B;를 선택합니다.
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
-
 1. **[!UICONTROL 프로젝트 제목]** 필드에 프로젝트의 제목을 입력합니다.
-
-   ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. [!DNL Assets] 소스 폴더에서 4단계에서 선택한 로케일의 대상 폴더에 복사됩니다.
 
@@ -233,8 +227,6 @@ ht-degree: 6%
 1. 맨 아래에 있는 **[!UICONTROL 언어 사본 업데이트]**&#x200B;를 클릭합니다.
 
 1. **[!UICONTROL Project]** 목록에서 **[!UICONTROL 기존 번역 프로젝트에 추가]**&#x200B;를 선택합니다.
-
-   ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. **[!UICONTROL 기존 번역 프로젝트]** 목록에서 변환할 자산을 추가할 프로젝트를 선택합니다.
 
