@@ -5,14 +5,14 @@ contentOwner: AG
 role: Business Practitioner
 feature: 자산 관리,자산 분배
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '875'
 ht-degree: 3%
 
 ---
 
-# [!DNL Adobe Experience Manager] {#download-assets-from-aem}에서 자산 다운로드
+# [!DNL Adobe Experience Manager]에서 자산 다운로드 {#download-assets-from-aem}
 
 정적 및 동적 표현물을 포함한 자산을 다운로드할 수 있습니다. 또는 [!DNL Adobe Experience Manager Assets]에서 직접 자산에 대한 링크가 있는 이메일을 보낼 수 있습니다. 다운로드한 자산은 ZIP 파일에 번들로 제공됩니다. 압축 ZIP 파일의 최대 파일 크기는 내보내기 작업의 1GB입니다. 내보내기 작업당 최대 500개의 총 자산이 허용됩니다.
 
@@ -29,11 +29,6 @@ ht-degree: 3%
 1. 다운로드할 자산이 들어 있는 폴더로 이동합니다.
 1. 폴더를 선택하거나 폴더 내에서 하나 이상의 자산을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
-
-   ![Experience Manager 자산에서 자산을 다운로드할 때 사용할 수 있는 옵션](/help/assets/assets/asset-download1.png)
-
-   *그림:다운로드 대화 상자에서 옵션을 사용할 수 있습니다.*
-
 1. 다운로드 대화 상자에서 원하는 다운로드 옵션을 선택합니다.
 
    | 내보내기 또는 다운로드 옵션 | 설명 |
@@ -49,7 +44,7 @@ ht-degree: 3%
 
 다운로드할 폴더를 선택하면 폴더 아래에 있는 전체 자산 계층 구조가 다운로드됩니다. 개별 폴더에 다운로드한 각 자산(상위 폴더 아래에 중첩된 하위 폴더의 자산 포함)을 포함하려면 **[!UICONTROL 각 자산에 대해 별도의 폴더 만들기]**&#x200B;를 선택합니다.
 
-## 자산 다운로드 서블릿 {#enable-asset-download-servlet} 활성화
+## 자산 다운로드 서블릿 활성화 {#enable-asset-download-servlet}
 
 [!DNL Experience Manager]의 기본 서블릿을 사용하면 인증된 사용자가 서버와 네트워크에 과부하를 줄 수 있는 표시되는 자산의 ZIP 파일을 만들기 위해 임의로 큰 동시 다운로드 요청을 발행할 수 있습니다. 이 기능으로 인해 발생할 수 있는 DoS 위험을 완화하려면 게시 인스턴스에 대해 `AssetDownloadServlet` OSGi 구성 요소가 기본적으로 비활성화됩니다.
 
@@ -66,7 +61,7 @@ DAM에서 자산을 다운로드할 수 있도록 하려면 Asset Share Commons 
 
 기본적으로 `GET` 요청이 파일을 다운로드하도록 하려면 [!DNL Experience Manager]에서 ZIP 보관 파일의 다운로드 크기에 대해 50MB 제한을 적용합니다. `POST` 요청을 통해 시작된 다운로드나 사용자 인터페이스는 이 제한의 영향을 받지 않습니다.
 
-## 자산 다운로드 서블릿 {#disable-asset-download-servlet} 비활성화
+## 자산 다운로드 서블릿 비활성화 {#disable-asset-download-servlet}
 
 Dispatcher 구성을 업데이트하여 모든 자산 다운로드 요청을 차단하여 [!DNL Experience Manager] 게시 인스턴스에서 `Asset Download Servlet`을 비활성화할 수 있습니다. OSGi 콘솔을 통해 직접 서블릿을 수동으로 비활성화할 수도 있습니다.
 
