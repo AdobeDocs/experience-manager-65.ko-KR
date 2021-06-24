@@ -5,7 +5,7 @@ contentOwner: AG
 role: Business Practitioner
 feature: 워크플로우,표현물
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 2%
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## 워크플로우의 미디어 핸들러를 사용하여 자산 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}에 대한 작업을 수행합니다
+## 워크플로우의 미디어 핸들러를 사용하여 자산에 대한 작업을 수행합니다 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 미디어 핸들러는 일반적으로 워크플로우와 함께 사용되는 서비스입니다.
 
@@ -71,7 +71,7 @@ ht-degree: 2%
 
 다음 예제에서는 PDF 문서를 제외한 모든 자산에 대해 하위 자산이 생성되도록 **[!UICONTROL AEM Assets 동기화]** 워크플로우를 향상시키는 방법을 보여줍니다.
 
-### 미디어 핸들러 {#disabling-enabling-a-media-handler} 비활성화 또는 활성화
+### 미디어 핸들러를 비활성화하거나 활성화합니다 {#disabling-enabling-a-media-handler}
 
 Apache Felix 웹 관리 콘솔을 통해 미디어 핸들러를 비활성화하거나 활성화할 수 있습니다. 미디어 핸들러가 비활성화되면 해당 작업이 자산에 대해 수행되지 않습니다.
 
@@ -82,11 +82,11 @@ Apache Felix 웹 관리 콘솔을 통해 미디어 핸들러를 비활성화하�
 1. 페이지를 새로 고칩니다.미디어 핸들러 옆에 비활성화되었음을 나타내는 아이콘이 표시됩니다.
 1. 미디어 핸들러를 활성화하려면 미디어 핸들러의 이름 옆에 있는 **[!UICONTROL 활성화]**&#x200B;를 클릭하십시오.
 
-### 새 미디어 핸들러 {#creating-a-new-media-handler} 만들기
+### 새 미디어 핸들러 만들기 {#creating-a-new-media-handler}
 
 새 미디어 유형을 지원하거나 자산에서 특정 작업을 실행하려면 새 미디어 핸들러를 만들어야 합니다. 이 섹션에서는 진행 방법을 설명합니다.
 
-#### 중요 클래스 및 인터페이스 {#important-classes-and-interfaces}
+#### 중요한 클래스 및 인터페이스 {#important-classes-and-interfaces}
 
 구현을 시작하는 가장 좋은 방법은 대부분의 작업을 처리하고 적절한 기본 동작을 제공하는 제공된 요약 구현에서 상속하는 것입니다.`com.day.cq.dam.core.AbstractAssetHandler` 클래스
 
@@ -129,7 +129,7 @@ my.own.stuff 패키지/&amp;ast;&amp;ast;amp;ast;@scr.component inherit=&quot;tr
 * `com.day.cq.dam.core.AbstractAssetHandler` 클래스:이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며 일반적인 사용 기능을 제공합니다.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` 클래스:이 클래스는 다른 모든 자산 처리기 구현의 기본 역할을 하며, 일반적인 사용 기능과 하위 자산 추출에 사용되는 일반적인 기능을 제공합니다.
 
-#### 예:특정 텍스트 처리기 {#example-create-a-specific-text-handler} 만들기
+#### 예:특정 텍스트 처리기 만들기 {#example-create-a-specific-text-handler}
 
 이 섹션에서는 워터마크로 축소판을 생성하는 특정 텍스트 핸들러를 만듭니다.
 
@@ -368,7 +368,7 @@ my.own.stuff 패키지/&amp;ast;&amp;ast;amp;ast;@scr.component inherit=&quot;tr
      Layer watermarkLayer;
      try {
       final Session session = node.getSession();
-      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png");
+      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/samplesite/icons/certificate.png");
       watermarkLayer.setX(MARGIN);
       watermarkLayer.setY(MARGIN);
       layer.merge(watermarkLayer);
@@ -466,7 +466,7 @@ my.own.stuff 패키지/&amp;ast;&amp;ast;amp;ast;@scr.component inherit=&quot;tr
 * 임시 디렉터리를 삭제합니다.
 * 지정된 경우 해당 변환에 따라 축소판을 만듭니다. 축소판의 수와 치수는 단계의 인수에 의해 정의됩니다.
 
-### [!DNL ImageMagick] {#an-example-using-imagemagick} 사용 예
+### [!DNL ImageMagick] 사용 예제 {#an-example-using-imagemagick}
 
 다음 예제에서는 miMIME e-type GIF나 TIFF가 있는 자산이 `/content/dam`에 추가될 때마다 원본 이미지를 세 개의 추가 축소판(140x100, 48x48 및 10x250)과 함께 만들도록 명령줄 프로세스 단계를 설정하는 방법을 보여 줍니다.[!DNL Experience Manager]
 
@@ -496,7 +496,7 @@ my.own.stuff 패키지/&amp;ast;&amp;ast;amp;ast;@scr.component inherit=&quot;tr
 1. **[!UICONTROL CQ5 DAM]** 콘솔로 이동합니다(예: `http://localhost:4502/libs/wcm/core/content/damadmin.html`).
 1. 자산 **[!UICONTROL myImage.tiff]**&#x200B;을 열고 전환된 이미지와 세 개의 축소판이 작성되었는지 확인합니다.
 
-#### CommandLineProcess 프로세스 단계 {#configuring-the-commandlineprocess-process-step} 구성
+#### CommandLineProcess 프로세스 단계 구성 {#configuring-the-commandlineprocess-process-step}
 
 이 섹션에서는 [!UICONTROL CommandLineProcess]의 [!UICONTROL 프로세스 인수]를 설정하는 방법을 설명합니다.
 
