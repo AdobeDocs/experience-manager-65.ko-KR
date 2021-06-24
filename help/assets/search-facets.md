@@ -5,10 +5,10 @@ contentOwner: AG
 role: Administrator, Developer
 feature: 검색
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 2%
+source-wordcount: '2397'
+ht-degree: 3%
 
 ---
 
@@ -30,8 +30,6 @@ ht-degree: 2%
 
 1. [!DNL Experience Manager] 로고를 클릭한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms 검색]**&#x200B;으로 이동합니다.
 1. Forms 검색 페이지에서 **[!UICONTROL 자산 관리 검색 레일]**&#x200B;을 선택한 다음 **[!UICONTROL 편집]** ![편집 아이콘](assets/do-not-localize/aemassets_edit.png)을 클릭합니다.
-
-   ![자산 또는 관리 검색 레일을 찾아 선택합니다](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
@@ -71,7 +69,7 @@ ht-degree: 2%
 1. [!DNL Assets] 사용자 인터페이스의 검색 패널로 이동합니다. 속성 설명이 패널에 추가됩니다.
 1. 텍스트 상자에서 검색할 자산에 대한 설명을 입력합니다. 예를 들어 `Adobe` 을 입력합니다. 검색을 수행하면 `Adobe`과 일치하는 설명이 있는 자산이 검색 결과에 나열됩니다.
 
-## 옵션 설명 {#adding-an-options-predicate} 추가
+## 옵션 설명 추가 {#adding-an-options-predicate}
 
 [옵션] 조건부를 사용하면 [필터] 패널에서 여러 검색 옵션을 추가할 수 있습니다. 필터 패널에서 이러한 옵션 중 하나 이상을 선택하여 자산을 검색할 수 있습니다. 예를 들어 파일 유형을 기반으로 자산을 검색하려면 검색 양식에서 이미지, 멀티미디어, 문서, 아카이브 등의 옵션을 구성합니다. 이러한 옵션을 구성한 후 필터 패널에서 이미지 옵션을 선택하면 GIF 유형, JPEG, PNG 등의 자산에 대해 검색이 수행됩니다.
 
@@ -125,7 +123,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 1. **[!UICONTROL 설명]** 필드에 선택적 설명을 입력한 다음 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
 1. 검색 패널로 이동합니다. 옵션 조건부가 **검색** 패널에 추가됩니다. **[!UICONTROL 파일 유형]**&#x200B;에 대한 옵션이 확인란으로 표시됩니다.
 
-## 다중 값 속성 설명 {#adding-a-multi-value-property-predicate} 추가
+## 다중 값 속성 설명 추가 {#adding-a-multi-value-property-predicate}
 
 다중 값 속성 설명을 사용하면 자산을 여러 값에 대한 검색을 수행할 수 있습니다. [!DNL Assets]에 여러 제품의 이미지가 있고 각 이미지에 대한 메타데이터에 제품과 연관된 SKU 번호가 포함된 시나리오를 생각해 보십시오. 이 설명을 사용하여 여러 SKU 번호를 기반으로 제품 이미지를 검색할 수 있습니다.
 
@@ -180,7 +178,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 
 기본적으로 **[!UICONTROL Forms 검색]** 페이지의 **[!UICONTROL 자산 관리자 검색 레일]** 앞에 잠금 아이콘 ![잠금 닫힌 아이콘](assets/do-not-localize/lock_closed_icon.svg)이 나타납니다. Forms 검색 페이지의 옵션에 대한 잠금 아이콘은 기본 설정이 그대로 있고 사용자 지정되지 않았음을 나타냅니다. 검색 패싯을 양식에 추가하면 기본 양식이 수정되었음을 나타내는 아이콘 ![잠금 닫힌 아이콘](assets/do-not-localize/lock_closed_icon.svg)이 사라집니다.
 
-![Forms 검색 페이지의 옵션에 대한 잠금 아이콘은 기본 설정이 그대로 있고 사용자 지정되지 않았음을 나타냅니다.](assets/locked_admin_rail.png)
+![잠금 아이콘](assets/locked_admin_rail.png)
 
 기본 검색 패싯을 복원하려면 다음 단계를 수행합니다.
 
