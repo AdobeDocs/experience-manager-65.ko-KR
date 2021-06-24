@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner,Administrator
 feature: 메타데이터
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: ae0c8bda918e2e8a7a6a32e0228d1a2410b283d9
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3547'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 2%
 >
 >스키마 양식의 하위 양식을 보려면 스키마 양식 이름을 클릭합니다.
 
-## {#add-a-metadata-schema-form} 메타데이터 스키마 추가
+## 메타데이터 스키마 양식 추가 {#add-a-metadata-schema-form}
 
 메타데이터 스키마 양식을 추가하려면 다음 단계를 수행합니다.
 
@@ -73,13 +73,9 @@ ht-degree: 2%
 
 1. **[!UICONTROL 메타데이터 스키마 양식 편집기]** 페이지에서 메타데이터 양식을 사용자 지정합니다. 필요한 구성 요소를 **[!UICONTROL 빌드 양식]** 탭에서 탭 중 하나로 드래그합니다.
 
-   ![자산 속성 페이지를 사용자 지정하는 메타데이터 스키마 편집기](assets/metadata-schema-editor.png)
-
-   *그림:사용 가능한 탭 [!UICONTROL 이 ] 있는 메타데이터 스키마 양식 편집기 페이지입니다.*
-
 1. 구성 요소를 구성하려면 구성 요소를 선택하고 **[!UICONTROL 설정]** 탭에서 해당 속성을 수정합니다.
 
-### [!UICONTROL 빌드 양식] 탭 {#components-within-the-build-form-tab} 내의 구성 요소
+### [!UICONTROL 빌드 양식] 탭 내의 구성 요소 {#components-within-the-build-form-tab}
 
 **[!UICONTROL 빌드 양식]** 탭에는 스키마 양식에 사용하는 양식 항목이 나열됩니다. **[!UICONTROL 설정]** 탭은 **[!UICONTROL 양식 작성]** 탭에서 선택하는 각 항목의 속성을 제공합니다. 다음 표에는 **[!UICONTROL 빌드 양식]** 탭에서 사용할 수 있는 양식 항목이 나열되어 있습니다.
 
@@ -100,7 +96,7 @@ ht-degree: 2%
 | [!UICONTROL 자산 등급] | 를 추가하여 자산 등급을 매기는 옵션을 표시합니다. |
 | [!UICONTROL 상황에 맞는 메타데이터] | 를 추가하여 자산의 속성 페이지에서 다른 메타데이터 탭 표시를 제어합니다. |
 
-#### 메타데이터 구성 요소 {#edit-the-metadata-component} 편집
+#### 메타데이터 구성 요소 편집 {#edit-the-metadata-component}
 
 양식에서 메타데이터 구성 요소의 속성을 편집하려면 구성 요소를 클릭하여 **[!UICONTROL 설정]** 탭에서 다음 속성의 하위 집합을 모두 또는 편집합니다.
 
@@ -144,15 +140,13 @@ ht-degree: 2%
 
 *그림:자산 속성 페이지의 컨텍스트 메타데이터.*
 
-### JSON 파일 {#specify-properties-in-json-file}에 속성을 지정합니다
+### JSON 파일에 속성 지정 {#specify-properties-in-json-file}
 
 **[!UICONTROL 설정]** 탭에서 옵션에 대한 속성을 지정하는 대신 해당 키-값 쌍을 지정하여 JSON 파일에서 옵션을 정의할 수 있습니다. **[!UICONTROL JSON 경로]** 필드에 JSON 파일의 경로를 지정합니다.
 
-#### 스키마 양식 {#adding-deleting-a-tab-in-the-schema-form}에서 탭을 추가하거나 삭제합니다
+#### 스키마 양식에서 탭 추가 또는 삭제 {#adding-deleting-a-tab-in-the-schema-form}
 
 스키마 편집기를 사용하면 탭을 추가하거나 삭제할 수 있습니다. 기본 스키마 양식에는 **[!UICONTROL 기본]**, **[!UICONTROL 고급]** , **[!UICONTROL IPTC]** 및 **[!UICONTROL IPTC 확장]** 탭이 포함됩니다.
-
-![메타데이터 스키마 양식의 기본 탭](assets/metadata-schema-form-tabs.png)
 
 `+` 을 클릭하여 스키마 양식에 탭을 추가합니다. 기본적으로 새 탭의 이름은 `Unnamed-1`입니다. **[!UICONTROL 설정]** 탭에서 이름을 수정할 수 있습니다. 탭을 삭제하려면 `X` 을 클릭하십시오.
 
@@ -177,7 +171,7 @@ ht-degree: 2%
 * 다른 필드에 지정된 값을 기준으로 특정 필드에 대해 표시되는 선택 사항을 변경합니다.
 * 다른 필드에 지정된 값을 기반으로 특정 필드에 기본 메타데이터 값을 설정합니다.
 
-### [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}에서 계단식 메타데이터 구성
+### [!DNL Experience Manager]에서 계단식 메타데이터 구성 {#configure-cascading-metadata-in-aem}
 
 선택한 자산 유형에 따라 계단식 메타데이터를 표시하려는 시나리오를 생각해 보십시오. 몇 가지 예
 
@@ -282,11 +276,11 @@ ht-degree: 2%
 
 [!DNL Experience Manager] 에서는 즉시 사용 가능한 다양한 MIME 유형에 대한 기본 양식을 제공합니다. 그러나 다양한 MIME 유형의 자산에 사용자 지정 양식을 추가할 수 있습니다.
 
-### MIME 유형 {#add-new-forms-for-mime-types}에 대한 새 양식 추가
+### MIME 유형에 새 양식 추가 {#add-new-forms-for-mime-types}
 
 적절한 양식 유형으로 양식을 만듭니다. 예를 들어 `image/png` 하위 유형에 대한 템플릿을 추가하려면 &quot;이미지&quot; 양식에서 양식을 만듭니다. 스키마 양식의 제목은 하위 유형 이름입니다. 이 경우 제목은 `png`입니다.
 
-#### 다양한 MIME 유형 {#use-an-existing-schema-template-for-various-mime-types}에 기존 스키마 템플릿 사용
+#### 다양한 MIME 유형에 기존 스키마 템플릿 사용 {#use-an-existing-schema-template-for-various-mime-types}
 
 다른 MIME 유형에 기존 템플릿을 사용할 수 있습니다. 예를 들어 MIME 유형 `image/png`의 자산에 `image/jpeg` 양식을 사용하십시오.
 
@@ -313,11 +307,11 @@ ht-degree: 2%
 | 비디오/wmv | video/x-ms-wmv |
 | 비디오/flv | video/x-flv |
 
-## 메타데이터 스키마 {#grant-access-to-metadata-schemas}에 대한 액세스 권한 부여
+## 메타데이터 스키마에 대한 액세스 권한 부여 {#grant-access-to-metadata-schemas}
 
 메타데이터 스키마 기능은 관리자만 사용할 수 있습니다. 그러나 관리자는 일부 권한을 수정하여 관리자가 아닌 사용자에게 액세스 권한을 제공할 수 있습니다. 관리자가 아닌 사용자가 `/conf` 폴더에 대한 권한을 생성, 수정 및 삭제할 수 있도록 제공합니다.
 
-## 폴더별 메타데이터 {#apply-folder-specific-metadata} 적용
+## 폴더별 메타데이터 적용 {#apply-folder-specific-metadata}
 
 [!DNL Assets] 메타데이터 스키마의 변형을 정의하고 특정 폴더에 적용할 수 있도록 해줍니다.
 
@@ -349,7 +343,7 @@ ht-degree: 2%
 1. **확인**&#x200B;을 클릭하여 성공 메시지를 닫습니다.
 1. 수정된 메타데이터 스키마를 적용한 폴더로 이동합니다.
 
-## 필수 메타데이터 {#define-mandatory-metadata} 정의
+## 필수 메타데이터 정의 {#define-mandatory-metadata}
 
 폴더 수준에서 필수 필드를 정의할 수 있습니다. 이 필드는 폴더에 업로드된 자산에 적용됩니다. 이전에 정의한 필수 필드에 대해 누락된 메타데이터가 있는 자산을 업로드하면 카드 보기의 자산에 누락된 메타데이터에 대한 시각적 표시가 나타납니다.
 
