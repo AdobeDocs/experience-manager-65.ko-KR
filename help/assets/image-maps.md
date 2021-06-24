@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner, Administrator
 feature: 자산 관리
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cfa58bb7dcbe70906071a22fbae4a9f479a31d9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '268'
 ht-degree: 2%
 
 ---
@@ -26,8 +26,6 @@ ht-degree: 2%
 
    * **[!UICONTROL Card]** 또는 **[!UICONTROL List]** 보기에서 자산을 선택하고 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
    * 자산 페이지에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
-
-      ![편집 옵션](assets/do-not-localize/edit_icon.png)
 
 1. 이미지 맵을 삽입하려면 도구 모음에서 **[!UICONTROL Launch Map]** ![이미지 맵](assets/do-not-localize/image-map-icon.png)을 클릭합니다.
 1. 이미지 맵의 모양을 선택합니다. 선택한 모양의 핫 스팟이 이미지에 배치됩니다.
