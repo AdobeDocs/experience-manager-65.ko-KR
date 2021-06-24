@@ -4,10 +4,11 @@ description: AEM Content and Commerce 프로젝트를 배포하는 방법을 알
 topics: Commerce
 feature: 전자 상거래 통합 프레임워크
 thumbnail: 37843.jpg
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
+source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 5%
+source-wordcount: '721'
+ht-degree: 4%
 
 ---
 
@@ -78,6 +79,9 @@ CIF 추가 기능은 [로컬 개발](develop.md)에 선택적으로 사용할 �
    >
    > UID에 대한 지원이 Adobe Commerce(Magento) 2.4.2에서 도입되었습니다. 상거래 백엔드가 버전 2.4.2 이상의 GraphQL 스키마를 지원하는 경우에만 활성화하십시오.
 - 카탈로그 루트 카테고리 식별자 - 저장소 카탈로그 루트의 식별자(UID 또는 ID)입니다
+   >[!CAUTION]
+   >
+   > CIF 코어 구성 요소 버전 2.0.0부터 `id`에 대한 지원이 제거되고 `uid` 로 대체되었습니다. 프로젝트에서 CIF 코어 구성 요소 버전 2.0.0을 사용하는 경우 카탈로그 UID 지원을 활성화하고 유효한 카테고리 UID를 &quot;카탈로그 루트 카테고리 식별자&quot;로 사용해야 합니다.
 
 위에 표시된 구성은 참조용입니다. 프로젝트는 자체 구성을 제공해야 합니다.
 
