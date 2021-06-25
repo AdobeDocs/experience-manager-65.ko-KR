@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 101cbd0d06d370da315e1579a8c2f274a6138b9a
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3857'
+source-wordcount: '3805'
 ht-degree: 12%
 
 ---
 
-# [!DNL Adobe Experience Manager] 6.5 서비스 팩 릴리스 노트  {#aem-service-pack-release-notes}
+# [!DNL Adobe Experience Manager] 6.5 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
 
-## 릴리스 정보 {#release-information}
+## 릴리스 노트 {#release-information}
 
 | 제품 | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
@@ -22,7 +22,7 @@ ht-degree: 12%
 | 날짜 | 2021년 5월 27일 |
 | 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9-1.0.zip) |
 
-## [!DNL Adobe Experience Manager] 6.5.9.0에 포함된 사항 {#what-s-included-in-aem}
+## [!DNL Adobe Experience Manager] 6.5.9.0에 포함된 제품 {#what-s-included-in-aem}
 
 [!DNL Adobe Experience Manager] 6.5.9.0에는 2019년 4월 6.5 릴리스의 공식 출시 이후 릴리스된 새로운 기능, 주요 고객이 요청한 향상된 기능 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. 서비스 팩이 [!DNL Adobe Experience Manager] 6.5에 설치됩니다.
 
@@ -30,7 +30,7 @@ ht-degree: 12%
 
 * [!DNL Experience Manager Sites] 이제 Dynamic Media Foundation 구성 요소에서 응답형 이미지 사전 설정 또는 스마트 자르기를 사용할 때 고해상도 장치에 대한 최적화를 켜거나 끌 수 있습니다.
 
-* 성능을 향상시키기 위해 hidden=false 조건이 JCR 쿼리에서 QueryBuilder 평가기로 이동됩니다. 변경 후 숨겨진 설명이 작동하는지 확인하기 위해 Experience Manager은 숨겨진 폴더가 인터페이스에 표시되지 않는지 확인합니다.
+* 성능을 향상시키기 위해 `hidden=false` 조건이 JCR 쿼리에서 [!UICONTROL QueryBuilder] 평가기로 이동됩니다. 변경 후 숨겨진 설명이 작동하는지 확인하려면 [!DNL Experience Manager] 은 숨겨진 폴더가 표시되지 않는지 확인합니다.
 
 * [!DNL Experience Manager Sites] 페이지에서 삭제된 페이지 및 트리를 복원하는 기능.
 
@@ -40,39 +40,13 @@ ht-degree: 12%
 
 * [!DNL MongoDB] 버전 4.2 및 4.4를 지원합니다.
 
-* 홍콩, 마카오 및 대만과 관련된 이름 발생 횟수는 중국 로케일 및 지역에 대한 새 이름 지정 규칙에 따라 업데이트됩니다.
+* 홍콩, 마카오 및 대만과 관련된 이름의 발생 횟수는 중국 로케일 및 지역에 대한 새 이름 지정 규칙에 따라 업데이트됩니다.
 
-* [!DNL Experience Manager] [Assets](#assets-accessibility-6590) 및 [Dynamic Media](#accessibility-dm-6590)의 액세스 가능성이 개선되었습니다.
+* [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) 및 [[!DNL Dynamic Media]](#accessibility-dm-6590)의 액세스 가능성이 개선되었습니다.
 
-* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 최상의 품질 이미지를 효율적으로 전달할 수 있습니다.고해상도의 디스플레이와 제한된 네트워크 대역폭을 가진 디바이스 자세한 내용은 [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
+* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 최상의 품질 이미지를 효율적으로 전달할 수 있습니다.고해상도의 디스플레이와 제한된 네트워크 대역폭을 가진 디바이스 자세한 내용 및 타임라인은 [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
 
-   >[!NOTE]
-   >
-   >위의 스마트 이미징 개선 사항에 대한 릴리스 타임라인은 다음과 같습니다.
-   >
-   >* 2021년 5월 24일 NA,
-      >
-      >
-   * 유럽, 중동 및 아프리카 2021년 6월 25일
-      >
-      >
-   * 아시아 태평양 2021년 7월 19일
-
-
-* Dynamic Media 게재에서 차세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다(fmt URL 수정자). 자세한 내용은 [이미지 제공 및 api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) 렌더링 을 참조하십시오.
-
-   >[!NOTE]
-   >
-   >AVIF 지원을 위한 릴리스 타임라인은 다음과 같습니다.
-   >
-   >* 북미 2021년 5월 10일
-      >
-      >
-   * 2021년 5월 24일 유럽, 중동, 아프리카
-      >
-      >
-   * 아시아 태평양 2021년 6월 24일.
-
+* [!DNL Dynamic Media] 배달(`fmt` URL 수정자)은 차세대 이미지 형식 AVIF(AV1 이미지 형식)를 지원합니다. 자세한 내용 및 타임라인은 [이미지 제공 및 API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)를 참조하십시오.
 
 * [!UICONTROL 작업 할당] 워크플로우 단계를 사용하여 그룹에 알림 이메일을 보낼 수 있습니다.
 
@@ -167,7 +141,7 @@ ht-degree: 12%
 
 * DAM 폴더를 삭제하거나 이동할 수 없으며 예외가 기록됩니다(NPR-35942).
 
-#### Assets {#assets-enhancements}의 개선 사항
+#### 자산의 개선 사항 {#assets-enhancements}
 
 * 카드, 열 및 인사이트 보기에서 [!UICONTROL 없음] 옵션을 도입하여 JCR 노드에 저장된 순서로 자산을 정렬합니다(NPR-36356).
 
@@ -214,7 +188,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 * 자산 제목에 2바이트, 멀티바이트, 높은 ASCII, 키릴 자모, 서로게이트 쌍, 히브리어, 아랍어 및 GB18030 문자가 있는 경우, Dynamic Media에 게시할 때 자산 제목에 물음표(?)가 표시됩니다. (CQ-4311872).
 
-#### Dynamic Media {#accessibility-dm-6590}의 액세스 가능성이 개선되었습니다
+#### Dynamic Media의 액세스 가능성 개선 {#accessibility-dm-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0에서는  [!DNL Assets] 다음과 같은 액세스 가능성이 개선되었습니다 [!DNL Dynamic Media].
 
@@ -299,7 +273,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 * 삭제된 작업을 열면 [!DNL Experience Manager]에 잘못된 메시지가 표시됩니다(CQ-4315910).
 
-### 워크플로 {#workflow-6590}
+### 워크플로우 {#workflow-6590}
 
 * 받은 편지함에서 사용할 수 있는 항목에 대해 완료, 위임 또는 열기 작업을 클릭하면 이러한 작업이 완료되는 시각적 단서가 없습니다(NPR-36317).
 
@@ -376,7 +350,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 >
 >Adobe에서는 [!DNL Adobe Experience Manager] 6.5.9.0 패키지를 삭제하거나 제거하지 않는 것이 좋습니다.
 
-### 서비스 팩 {#install-service-pack} 설치
+### 서비스 팩 설치 {#install-service-pack}
 
 [!DNL Adobe Experience Manager] 6.5 인스턴스에 서비스 팩을 설치하려면 다음 단계를 수행하십시오.
 
@@ -494,7 +468,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
    * 쇼퍼블 배너 뷰어를 통해 자산을 미리 볼 때 Dynamic Media 대화형 이미지의 핫스팟이 표시되지 않습니다.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` :등록 변경으로 등록 취소를 완료할 때까지 기다리는 중 시간이 초과되었습니다.
 
-## OSGi 번들 및 콘텐츠 패키지가 설치됨 {#osgi-bundles-and-content-packages-included}
+## OSGi 번들 및 컨텐츠 패키지가 포함됨 {#osgi-bundles-and-content-packages-included}
 
 다음 텍스트 문서에는 [!DNL Experience Manager] 6.5.9.0에 포함된 OSGi 번들 및 컨텐츠 패키지 목록이 나와 있습니다.
 
