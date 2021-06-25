@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner, Administrator
 feature: 메타데이터
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2730'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 다음과 같이 디지털 자산에 고급 데이터를 추가할 수 있습니다.
 
-* 자산 유형(이미지, 비디오, 오디오 클립 또는 문서입니까?).
+* 자산 유형(이미지, 비디오, 오디오 클립 또는 문서)입니다.
 * 자산의 소유자입니다.
 * 자산의 제목입니다.
 * 자산에 대한 설명입니다.
@@ -55,7 +55,7 @@ ht-degree: 0%
 * 오디오 또는 비디오 파일의 비트율.
 * 이미지의 해상도(세부 정보 수준).
 
-설명 메타데이터는 애플리케이션 도메인(예: 자산이 만들어지는 비즈니스)과 관련된 메타데이터입니다. 설명 메타데이터를 자동으로 확인할 수 없습니다. 수동으로 또는 반자동으로 만들어집니다. 예를 들어 GPS 지원 카메라는 위도와 경도를 자동으로 추적하고 이미지에 지리 태그를 추가할 수 있습니다.
+설명 메타데이터는 애플리케이션 도메인과 관련된 메타데이터입니다. 예를 들어, 자산이 시작되는 비즈니스 등의 메타데이터입니다. 설명 메타데이터를 자동으로 확인할 수 없습니다. 수동으로 또는 반자동으로 만들어집니다. 예를 들어 GPS 지원 카메라는 위도와 경도를 자동으로 추적하고 이미지에 지리 태그를 추가할 수 있습니다.
 
 설명 메타데이터 정보를 수동으로 만드는 데 드는 비용이 높습니다. 따라서 소프트웨어 시스템과 조직 간에 메타데이터 교환을 쉽게 하기 위해 표준이 마련되었습니다. [!DNL Experience Manager Assets] 은 메타데이터 관리에 대한 모든 관련 표준을 지원합니다.
 
@@ -113,7 +113,7 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpBJ` - 기본 구직 매표.
 
-### 응용 프로그램별 메타데이터 {#application-specific-metadata}
+### 애플리케이션별 메타데이터 {#application-specific-metadata}
 
 응용 프로그램별 메타데이터는 기술 및 설명 메타데이터를 포함합니다. 이러한 메타데이터를 사용하는 경우 다른 응용 프로그램에서 메타데이터를 사용하지 못할 수 있습니다. 예를 들어 다른 이미지 렌더링 응용 프로그램에서 [!DNL Adobe Photoshop] 메타데이터에 액세스할 수 없습니다. 애플리케이션별 속성을 표준 속성으로 변경하는 워크플로우 단계를 만들 수 있습니다.
 
@@ -129,7 +129,7 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 * PDF 및 PDF/X
 * Photoshop 및 psAux - [!DNL Adobe Photoshop].
 
-### Digital Rights Management(DRM) 메타데이터 {#digital-rights-management-metadata}
+### DRM(Digital Rights Management) 메타데이터 {#digital-rights-management-metadata}
 
 * 참조 - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -139,7 +139,7 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 * PUR - 프리즘 사용 권한.
 * `xmpPlus` - XMP과 PLUS 통합.
 
-### 포토그래피 특정 메타데이터 {#photography-specific-metadata}
+### 사진별 메타데이터 {#photography-specific-metadata}
 
 * Exif - GPS 위치를 포함한 카메라의 기술 정보.
 * CRS - [!DNL Camera Raw] 스키마.
@@ -194,7 +194,7 @@ DCMES 외에도 Dublin Core Initiative에서 만든 다른 메타데이터 요�
 
 IPTC 헤더 정보는 대부분 XMP으로 대체되었지만, XMP에 대해 IPTC 핵심 스키마 및 확장 스키마를 사용할 수 있습니다. 이미지 프로그램에서 XMP 및 IPTC 속성이 모두 동기화됩니다.
 
-## 메타데이터 기반 워크플로우 {#metadata-driven-workflows}
+## 메타데이터 기반의 워크플로우 {#metadata-driven-workflows}
 
 메타데이터 기반의 워크플로우를 만들면 일부 프로세스를 자동화할 수 있으므로 효율성이 향상됩니다. 메타데이터 기반 워크플로우에서 워크플로우 관리 시스템은 워크플로우를 읽고 그 결과 일부 사전 정의된 작업을 수행합니다. 예를 들어 메타데이터 기반 워크플로우를 사용할 수 있는 몇 가지 방법은 다음과 같습니다.
 
@@ -210,7 +210,7 @@ XMP(Extensible Metadata Platform)은 모든 메타데이터 관리를 위해 [!D
 
 [XMP 사양](https://www.adobe.com/devnet/xmp.html)은 Adobe에서 사용할 수 있습니다.
 
-### XMP이란?{#what-is-xmp}
+### XMP이란? {#what-is-xmp}
 
 Adobe은 Adobe Acrobat 소프트웨어 제품의 일부로 XMP 표준을 처음 도입했습니다. 그 이후 XMP 표준이 채택됐다. [!DNL Assets] 기본적으로 XMP - Adobe에 의해 실행되는 확장 가능한 메타데이터 플랫폼 을 지원합니다. XMP은 표준화된 독점 메타데이터를 디지털 자산에 처리하고 저장하는 표준입니다. XMP은 여러 애플리케이션이 메타데이터로 효과적으로 작동할 수 있도록 하는 일반적인 표준으로 설계되었습니다.
 
@@ -229,7 +229,7 @@ XMP은 정의된 메타데이터 항목 세트와 함께 사용할 수 있는 [�
 
 XMP은 가장 일반적으로 직렬화되어 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework)(RDF)의 하위 집합을 사용하여 저장됩니다. 이 하위 집합은 [XML](https://en.wikipedia.org/wiki/XML)로 표시됩니다.
 
-### XMP {#advantages-of-xmp}의 이점
+### XMP의 이점 {#advantages-of-xmp}
 
 XMP은 다른 인코딩 표준 및 스키마에 비해 다음과 같은 이점이 있습니다.
 
@@ -268,7 +268,7 @@ XMP에는 하나 이상의 스키마의 속성이 포함될 수 있습니다. �
 
 XMP에서는 텍스트 속성에 `xml:lang` 속성을 추가하여 텍스트의 언어를 지정할 수 있습니다.
 
-## IPTC 메타데이터 {#support-for-iptc-metadata} 사용
+## IPTC 메타데이터 작업 {#support-for-iptc-metadata}
 
 [!DNL Adobe Experience Manager Assets]이 [!DNL Adobe Bridge] 및 기타 [!DNL Adobe Creative Cloud] 앱을 통해 자산에 추가된 IPTC 메타데이터, 크리에이티브 등급 및 키워드를 지원하는 방법을 알아봅니다.
 
@@ -289,7 +289,7 @@ XMP에서는 텍스트 속성에 `xml:lang` 속성을 추가하여 텍스트의 
 1. 필요에 따라 IPTC 확장 메타데이터 속성을 편집합니다.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭하여 변경 사항을 저장합니다.
 
-### 광고 등급 지원 {#creative-rating-support}
+### 크리에이티브 등급 지원 {#creative-rating-support}
 
 속성 페이지에는 개별 사용자 등급 및 전체 등급이 표시되는 것 외에도 Adobe Bridge 및 기타 Creative 앱을 통해 자산에 지정된 등급이 표시됩니다
 
