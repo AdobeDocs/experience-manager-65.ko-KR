@@ -4,9 +4,9 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 9의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
+source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
 workflow-type: tm+mt
-source-wordcount: '3680'
+source-wordcount: '3674'
 ht-degree: 41%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 41%
    * 다양한 편집기의 텍스트, 자리 표시자 텍스트 및 컨트롤의 대비(배경 포함).
    * 화면 판독기의 접근성 및 내레이션.
 
-* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 최상의 품질 이미지를 효율적으로 전달할 수 있습니다.고해상도의 디스플레이와 제한된 네트워크 대역폭을 가진 디바이스 자세한 내용 및 타임라인은 [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
+* 스마트 이미징 DPR(Device Pixel Ratio)과 네트워크 대역폭 최적화를 통해 고해상도 디스플레이와 제한된 네트워크 대역폭을 사용하는 장치에서 최상의 이미지를 효율적으로 전달할 수 있습니다. [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
 
 * [!DNL Dynamic Media] 배달(`fmt` URL 수정자)은 이제 차세대 이미지 형식 AVIF(AV1 이미지 형식)를 지원합니다. 자세한 내용 및 타임라인은 [이미지 제공 및 API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)를 참조하십시오.
 
