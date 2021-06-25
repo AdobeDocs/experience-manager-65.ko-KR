@@ -1,18 +1,19 @@
 ---
 title: 디지털 자산의 메타데이터 관리
-description: 메타데이터 유형에 대해 알아보고 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] 을 통해 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있는 방법을 알아봅니다.
+description: 자산의 메타데이터 유형과 자산을 쉽게 구성하고 처리할 수 있도록 자산에 대한 메타데이터를 관리하는 방법에 대해 알아봅니다.
 contentOwner: AG
+mini-toc-levels: 1
 feature: 태깅, 메타데이터
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2341'
+source-wordcount: '2339'
 ht-degree: 2%
 
 ---
 
-# 디지털 자산의 메타데이터 {#managing-metadata-for-digital-assets} 관리
+# 디지털 자산의 메타데이터 관리 {#managing-metadata-for-digital-assets}
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -36,7 +37,7 @@ ht-degree: 2%
 
 * 자산이 DAM에 업로드될 때 [메타데이터 프로필](/help/assets/metadata-config.md#metadata-profiles) 기능을 활용하여 메타데이터를 자동으로 추가할 수 있습니다.[!DNL Experience Manager Assets]
 
-## [!DNL Experience Manager Assets] {#add-edit-metadata}에서 메타데이터 추가 또는 편집
+## [!DNL Experience Manager Assets]에서 메타데이터 추가 또는 편집 {#add-edit-metadata}
 
 [!DNL Assets] 사용자 인터페이스에서 자산의 메타데이터를 편집하려면 다음 단계를 따르십시오.
 
@@ -62,7 +63,7 @@ ht-degree: 2%
 
 XMP Write-back은 [기술 요구 사항에 설명된 플랫폼 및 파일 형식에 대해 지원되고 활성화됩니다.](/help/sites-deploying/technical-requirements.md)
 
-## 여러 자산 {#editing-metadata-properties-of-multiple-assets}의 메타데이터 속성 편집
+## 여러 자산의 메타데이터 속성 편집 {#editing-metadata-properties-of-multiple-assets}
 
 [!DNL Adobe Enterprise Manager Assets] 여러 자산의 메타데이터를 동시에 편집할 수 있으므로 일반적인 메타데이터 변경 사항을 자산에 빠르게 전파할 수 있습니다. 여러 컬렉션의 메타데이터를 일괄적으로 편집할 수도 있습니다. 속성 페이지를 사용하여 여러 자산 또는 컬렉션에서 메타데이터 변경 작업을 수행합니다.
 
@@ -116,13 +117,13 @@ XMP Write-back은 [기술 요구 사항에 설명된 플랫폼 및 파일 형식
 
 1. 올바른 가져오기를 확인하려면 자산의 [!UICONTROL 속성] 페이지로 이동하여 필드의 값을 확인합니다.
 
-메타데이터를 가져올 때 날짜 및 타임스탬프를 추가하려면 날짜 및 시간에 `YYYY-MM-DDThh:mm:ss.fff-00:00` 형식을 사용하십시오. 날짜와 시간은 `T`으로 구분되고, `hh`은 24시간 형식의 시간, `fff`는 나노초이고, `-00:00`은 시간대 오프셋입니다. 예를 들어 `2020-03-26T11:26:00.000-07:00`은 2020년 3월 26일, 11:26:00.000AM PST 시간입니다.
+메타데이터를 가져올 때 날짜 및 타임스탬프를 추가하려면 날짜 및 시간에 `YYYY-MM-DDThh:mm:ss.fff-00:00` 형식을 사용하십시오. 날짜와 시간은 `T`으로 구분되고, `hh`은 24시간 형식의 시간, `fff`는 나노초이고, `-00:00`은 시간대 오프셋입니다. 예를 들어, `2020-03-26T11:26:00.000-07:00`은 2020년 3월 26일, 11:26:00.000AM PST 시간입니다.
 
 >[!CAUTION]
 >
 >날짜 형식이 `YYYY-MM-DDThh:mm:ss.fff-00:00`과 일치하지 않으면 날짜 값이 설정되지 않습니다. 내보낸 메타데이터 CSV 파일의 날짜 형식은 `YYYY-MM-DDThh:mm:ss-00:00` 형식입니다. 가져오려면 `fff`으로 표시된 나노 초 값을 추가하여 허용 가능한 형식으로 변환하십시오.
 
-## 메타데이터 {#export-metadata} 내보내기
+## 메타데이터 내보내기 {#export-metadata}
 
 여러 자산에 대한 메타데이터를 CSV 형식으로 내보낼 수 있습니다. 메타데이터는 비동기식으로 내보내지므로 시스템 성능에 영향을 주지 않습니다. 메타데이터를 내보내려면 [!DNL Experience Manager]이 자산 노드 `jcr:content/metadata` 및 해당 하위 노드의 속성을 통과하여 CSV 파일로 메타데이터 속성을 내보냅니다.
 
@@ -151,11 +152,11 @@ XMP Write-back은 [기술 요구 사항에 설명된 플랫폼 및 파일 형식
 
    *그림:대량으로 내보낸 메타데이터가 포함된 CSV 파일을 다운로드하는 대화 상자*
 
-## {#collections-metadata} 컬렉션의 메타데이터 편집
+## 컬렉션의 메타데이터 편집 {#collections-metadata}
 
 자세한 내용은 [컬렉션 메타데이터](/help/assets/manage-collections.md#view-edit-collection-metadata) 보기 및 편집 및 [일괄](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk)에서 여러 컬렉션의 메타데이터 편집을 참조하십시오.
 
-## 폴더 {#applying-a-metadata-profile-to-folders}에 메타데이터 프로필 적용
+## 폴더에 메타데이터 프로필 적용 {#applying-a-metadata-profile-to-folders}
 
 <!-- TBD: Review this overview.
 -->
@@ -178,7 +179,7 @@ XMP Write-back은 [기술 요구 사항에 설명된 플랫폼 및 파일 형식
 
 나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
 
-### [!UICONTROL 프로필] 사용자 인터페이스 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}의 폴더에 메타데이터 프로필을 적용합니다.
+### [!UICONTROL 프로필] 사용자 인터페이스의 폴더에 메타데이터 프로필 적용 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 메타데이터 프로필을 적용하려면 다음 단계를 수행합니다.
 
@@ -186,7 +187,7 @@ XMP Write-back은 [기술 요구 사항에 설명된 플랫폼 및 파일 형식
 1. 폴더 또는 여러 폴더에 적용할 메타데이터 프로필을 선택합니다.
 1. **[!UICONTROL 메타데이터 프로필을 폴더에 적용]**&#x200B;을 클릭하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 완료]**&#x200B;를 클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-### [!UICONTROL 속성] {#applying-metadata-profiles-to-folders-from-properties}의 폴더에 메타데이터 프로필 적용
+### [!UICONTROL 속성]의 폴더에 메타데이터 프로필 적용 {#applying-metadata-profiles-to-folders-from-properties}
 
 1. 왼쪽 레일에서 **[!UICONTROL 자산]**&#x200B;을 클릭한 다음 메타데이터 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 클릭하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
@@ -201,13 +202,13 @@ XMP Write-back은 [기술 요구 사항에 설명된 플랫폼 및 파일 형식
 
 For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
-### {#removing-a-metadata-profile-from-folders} 폴더에서 메타데이터 프로필을 제거합니다.
+### 폴더에서 메타데이터 프로필 제거 {#removing-a-metadata-profile-from-folders}
 
 폴더에서 메타데이터 프로필을 제거하면 모든 하위 폴더는 해당 상위 폴더에서 프로필을 자동으로 상속받게 됩니다. 그러나 폴더 내에서 발생한 파일의 모든 처리가 그대로 유지됩니다.
 
 **[!UICONTROL 도구]** 메뉴 또는 폴더 내의 **[!UICONTROL 속성]**&#x200B;에서 메타데이터 프로필을 제거할 수 있습니다.
 
-#### 프로필 사용자 인터페이스 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}을 통해 폴더에서 메타데이터 프로필을 제거합니다
+#### 프로필 사용자 인터페이스를 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 1. [!DNL Experience Manager] 로고를 클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;으로 이동합니다.
 1. 폴더 또는 여러 폴더에서 제거할 메타데이터 프로필을 선택합니다.
@@ -215,7 +216,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 
    이름이 더 이상 폴더 이름 아래에 표시되지 않으므로 메타데이터 프로필이 더 이상 폴더에 적용되지 않았는지 확인할 수 있습니다.
 
-#### 속성 {#removing-metadata-profiles-from-folders-via-properties}을 통해 폴더에서 메타데이터 프로필을 제거합니다
+#### 속성을 통해 폴더에서 메타데이터 프로필 제거 {#removing-metadata-profiles-from-folders-via-properties}
 
 1. [!DNL Experience Manager] 로고를 클릭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 메타데이터 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 클릭하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
