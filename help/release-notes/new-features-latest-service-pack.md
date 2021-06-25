@@ -4,14 +4,14 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 9의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3680'
 ht-degree: 41%
 
 ---
 
-# [!DNL Adobe Experience Manager] 6.5 서비스 팩 9 {#aem-whats-new-service-pack}의 새로운 기능
+# [!DNL Adobe Experience Manager] 6.5 서비스 팩 9의 새로운 기능 {#aem-whats-new-service-pack}
 
 ![새로운 기능](assets/whatsnew.jpeg)
 
@@ -21,14 +21,14 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->AEM 서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되는 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
+>[!DNL Experience Manager] 서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되어 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
 >[!DNL Azul Zulu] JDK에 대한 지원은 [!DNL Experience Manager] 고객에게도 Adobe이 제공합니다.
 >[Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 [!DNL Azul Zulu] JDK의 관련 버전을 다운로드할 수 있습니다.
 >Adobe에 의해 배포되는 Oracle Java 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en)를 참조하십시오.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### 삭제된 페이지 및 트리 {#ability-to-restore-pages-tree} 복원 기능
+### 삭제된 페이지 및 트리 복원 기능 {#ability-to-restore-pages-tree}
 
 이제 [!DNL Experience Manager Sites] 페이지에서 삭제된 페이지와 전체 트리 보기를 복원할 수 있습니다.
 
@@ -36,49 +36,23 @@ ht-degree: 41%
 
 * 중국의 소셜 및 정치적 견해와 일치하도록 홍콩, 마카오 및 대만과 관련된 중국어 로케일 및 지역의 이름을 업데이트했습니다.
 
-* [!DNL Adobe Experience Manager] 의 ACP api 응답에서 이메일 ID를 낮추도록 선택적 구성이 도입되었습니다.
+* ACP API 응답의 이메일 ID에서 대/소문자를 변경하기 위해 [!DNL Adobe Experience Manager]의 선택적 구성이 도입되었습니다.
 
-   ![AEM의 ACP 응답에서 이메일 ID를 소문자로 구성](assets/email-lowcase-config.png)
+   ![ACP 응답에서 이메일 ID를 소문자로 변경하기 위한 구성  [!DNL Experience Manager]](assets/email-lowcase-config.png)
 
-* 다양한 위치의 텍스트 및 아이콘의 대비(배경 포함)가 WCAG에 따라 개선되어 시력이 제한된 사용자와 색상을 인식하는 데 도움이 됩니다. 자세한 내용은 Assets](sp-release-notes.md#assets-accessibility-6590)의 [액세스 가능성 개선 을 참조하십시오.
+* 다양한 기능에 대해 텍스트 및 아이콘의 배경색이 개선되었습니다. 이러한 WCAG 지침 구현으로 [!DNL Assets]에 액세스할 수 있게 되어 시력과 색상에 대한 인식이 제한된 사용자도 보다 쉽게 액세스할 수 있습니다.  [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590)에서 [액세스 가능성 개선 을 참조하십시오.
 
-### Dynamic Media {#assets-dynamic-media}
+### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* [Dynamic Media는 ](sp-release-notes.md#assets-accessibility-6590) 다음과 같은 측면에서 더 쉽게 액세스할 수 있습니다.
+* [[!DNL Dynamic Media] 는 ](sp-release-notes.md#assets-accessibility-6590) 다음과 관련하여 보다 쉽게 액세스할 수 있습니다.
 
    * 키보드 키 사용 편이성.
-   * 다양한 편집기의 텍스트, 자리 표시자 텍스트 및 컨트롤의 대비(배경 포함)
+   * 다양한 편집기의 텍스트, 자리 표시자 텍스트 및 컨트롤의 대비(배경 포함).
    * 화면 판독기의 접근성 및 내레이션.
 
-* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 최상의 품질 이미지를 효율적으로 전달할 수 있습니다.고해상도의 디스플레이와 제한된 네트워크 대역폭을 가진 디바이스 자세한 내용은 [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
+* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 최상의 품질 이미지를 효율적으로 전달할 수 있습니다.고해상도의 디스플레이와 제한된 네트워크 대역폭을 가진 디바이스 자세한 내용 및 타임라인은 [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
 
-   >[!NOTE]
-   >
-   >위의 스마트 이미징 개선 사항에 대한 릴리스 타임라인은 다음과 같습니다.
-   >
-   >* 2021년 5월 24일 NA,
-      >
-      >
-   * 유럽, 중동 및 아프리카 2021년 6월 25일
-      >
-      >
-   * 아시아 태평양 2021년 7월 19일
-
-
-* Dynamic Media 게재에서 차세대 이미지 형식 AVIF에 대한 지원이 도입되었습니다(fmt URL 수정자). 자세한 내용은 [이미지 제공 및 api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) 렌더링 을 참조하십시오.
-
-   >[!NOTE]
-   >
-   >AVIF 지원을 위한 릴리스 타임라인은 다음과 같습니다.
-   >
-   >* 북미 2021년 5월 10일
-      >
-      >
-   * 유럽, 중동, 아프리카 2021년 5월 24일
-      >
-      >
-   * 아시아 태평양 2021년 6월 24일.
-
+* [!DNL Dynamic Media] 배달(`fmt` URL 수정자)은 이제 차세대 이미지 형식 AVIF(AV1 이미지 형식)를 지원합니다. 자세한 내용 및 타임라인은 [이미지 제공 및 API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)를 참조하십시오.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -86,33 +60,33 @@ ht-degree: 41%
 >
 >[!DNL Experience Manager Forms] 추가 기능 패키지는 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 후 1주일 후에 사용할 수 있습니다.
 
-### [!DNL Azul Zulu OpenJDK] {#support-azul-zulu} 지원
+### [!DNL Azul Zulu OpenJDK] 지원 {#support-azul-zulu}
 
 이제 OSGi 배포에서 [!DNL Experience Manager Forms]용 [!DNL Azul Zulu] 빌드가 있는 애플리케이션을 개발 및 운영할 수 있습니다. [!DNL OpenJDK] 자세한 내용은 [Experience Manager 6.5 서비스 팩 9 릴리스 노트](sp-release-notes.md) 및 [기술 요구 사항](../sites-deploying/technical-requirements.md)을 참조하십시오.
 
-### [!UICONTROL 작업 할당] {#group-notification-email}을 사용하여 그룹에 알림 이메일을 보낼 수 있습니다.
+### [!UICONTROL 작업 할당]을 사용하여 그룹에 알림 이메일을 보내는 기능 {#group-notification-email}
 
 이제 작업 할당 워크플로우 단계를 사용하여 그룹 이메일 주소로 알림 이메일을 보낼 수 있습니다.
 
-### 소스 대화형 통신 {#retrieve-draft-after-source-modifications} 수정 후 대화형 통신 초안을 검색하는 기능
+### 소스 Interactive Communication 수정 후 Interactive Communication 초안을 검색하는 기능 {#retrieve-draft-after-source-modifications}
 
 이제 소스 대화형 커뮤니케이션을 변경한 후 초안으로 저장된 대화형 커뮤니케이션을 검색할 수 있습니다.
 
-### reCAPTCHA 서비스 {#set-custom-domain-name-recaptcha} 로드, 렌더링 및 유효성 검사를 위한 사용자 지정 도메인 이름을 설정합니다.
+### reCAPTCHA 서비스 로드, 렌더링 및 유효성 검사를 위한 사용자 지정 도메인 이름을 설정합니다 {#set-custom-domain-name-recaptcha}
 
 reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 사용합니다. 이제 설정을 수정하여 `https://www.google.com/` 또는 reCAPTCHA 서비스를 로드, 렌더링 및 확인할 수 있는 사용자 지정 도메인 이름을 설정할 수 있습니다.
 
-### [!UICONTROL 양식 데이터 모델 서비스 호출] 워크플로우 단계 {#input-data-enhancements-fdm}에 대한 입력 데이터 개선 사항
+### [!UICONTROL 양식 데이터 모델 서비스 호출] 워크플로우 단계에 대한 입력 데이터 개선 사항 {#input-data-enhancements-fdm}
 
 [!UICONTROL 양식 데이터 모델 서비스 호출] 워크플로우 단계에서 양식 데이터 모델과 서비스를 선택하는 경우 입력 데이터에 대한 서비스 인수를 지정합니다.
 
 이제 [!UICONTROL 페이로드에 상대] 옵션을 선택하여 파일을 서비스 인수로 첨부하면 실제 파일 이름 대신 파일을 포함하는 폴더 경로를 지정할 수 있습니다. 첨부 파일 이름 대신 폴더 이름을 정의하면 워크플로우 모델을 다시 사용할 수 있습니다. 워크플로우 모델을 단일 파일 첨부 이름으로 제한하지 않습니다.
 
-### 레코드 문서 템플릿 {#use-multiple-master-pages-dor-template}에서 여러 마스터 페이지를 사용할 수 있습니다.
+### 레코드 문서에서 여러 마스터 페이지를 사용하는 기능 {#use-multiple-master-pages-dor-template}
 
 이제 레코드 문서 템플릿에서 여러 마스터 페이지를 사용할 수 있습니다. 따라서 이제 제목 페이지와 템플릿의 다른 페이지에 머리글, 바닥글, 글꼴, 로고 정보가 다를 수 있습니다.
 
-### 레코드 문서 {#support-page-breaks-dor}에서 지원 페이지가 중단됩니다.
+### 레코드 문서에서 페이지 나누기 지원 {#support-page-breaks-dor}
 
 이제 페이지 나누기를 레코드 문서에 추가할 수 있습니다. 따라서 페이지 내에서 패널이 중단되는 경우 페이지 나누기를 추가하여 Document of Record의 새 페이지로 패널을 이동할 수 있습니다.
 
@@ -120,7 +94,7 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
-#### 롤아웃에 사용할 수 있는 Live Copy 페이지 정렬(6.5.8.0) {#sort-livecopy-pages}
+#### 롤아웃에 사용할 수 있는 Live Copy 페이지를 정렬합니다(6.5.8.0) {#sort-livecopy-pages}
 
 이제 [!UICONTROL 이름], [!UICONTROL 마지막 수정 날짜] 및 [!UICONTROL 마지막 롤아웃 날짜] 속성을 사용하여 롤아웃에 사용할 수 있는 Live Copy 페이지를 정렬할 수 있습니다. 페이지에 대한 [!UICONTROL 마지막 롤아웃 날짜]는 이 릴리스에 도입된 새로운 속성입니다.
 
@@ -128,7 +102,7 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 이제 페이지 이동 및 MSM 롤아웃을 비동기 작업으로 수행하여 런타임 성능에 대한 영향을 줄일 수 있습니다. 작업을 즉시 또는 나중에 실행하도록 예약할 수 있습니다. 연관된 작업 및 프로세스 단계의 상태가 콘솔에 표시되므로 대규모 MSM 롤아웃을 모니터링하는 데 유용합니다.
 
-#### 비동기 모드(6.5.6.0)에서의 페이지 이동 작업 가용성 {#page-move-asynchronous}
+#### 비동기 모드에서 페이지 이동 작업 가용성(6.5.6.0) {#page-move-asynchronous}
 
 이제 비동기 모드에서 페이지 이동 작업을 사용할 수 있습니다. 즉시 실행할 수 있을 뿐만 아니라, 나중에 실행할 수 있도록 페이지 이동 작업을 예약할 수도 있습니다.
 
@@ -210,11 +184,11 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
    * 화면 판독기는 검색 필터 패널의 옵션을 확장 가능한 아코더로 알려줍니다.
 
-#### [!DNL Assets](6.5.6.0) {#other-enhancements-assets-6560}의 기타 개선 사항
+#### [!DNL Assets] 의 기타 개선 사항(6.5.6.0) {#other-enhancements-assets-6560}
 
 * 폴더(비공개 및 비비공개)와 연결된 사용자 그룹은 이제 [해당 폴더 삭제](/help/assets/private-folder.md#delete-private-folder)에서 저장소에서 제거됩니다. 그러나 JMX를 사용하여 기존의 중복, 고립됨, 미사용 및 자동 생성된 사용자 그룹을 리포지토리에서 제거할 수 있습니다.
 
-#### [!DNL Assets](6.5.5.0) {#assets-accessibility}의 액세스 가능성 개선
+#### [!DNL Assets]의 액세스 가능성 개선(6.5.5.0) {#assets-accessibility}
 
 이제 WCAG(Web Content Accessibility Guidelines)를 준수하여 [!DNL Experience Manager Assets]에 더 쉽게 액세스할 수 있습니다. 다음이 개선되어 액세스 가능성이 향상되었습니다.
 
@@ -230,7 +204,7 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 [!DNL Assets] 사용자 인터페이스 흐름의 예외 처리가 향상되었습니다. 자산에 차원에 대한 유형이 없는 경우, 관찰된 예외가 로그 파일에 기록됩니다.
 
-#### [!DNL Dynamic Media](6.5.5.0) {#support-for-3d}에서 3D 자산 지원
+#### [!DNL Dynamic Media]에서 3D 자산 지원(6.5.5.0) {#support-for-3d}
 
 [!DNL Dynamic Media]의 3D 이미지 지원을 통해 고객은 웹 페이지 및 애플리케이션에 3D 컨텐츠를 게시하고 추가할 수 있습니다. 지원에는 다음이 포함됩니다.
 
@@ -240,7 +214,7 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 * [!DNL Sites] WCM 구성 요소를 사용하여 [!DNL Experience Manager Sites] 페이지에서 일반적인 3D 자산을 게시하고 볼 수 있습니다.
 
-#### [!DNL Brand Portal](6.5.4.0){#configure-assets-bp}을 사용한 [!DNL Experience Manager Assets] 구성
+#### [!DNL Experience Manager Assets](6.5.4.0)을 사용한 [!DNL Brand Portal] 구성 {#configure-assets-bp}
 
 [!DNL Experience Manager Assets]과 [!DNL Brand Portal] 사이의 인증 채널이 변경되었습니다. 이전에는 [!DNL Brand Portal]이 기존 OAuth 게이트웨이를 통해 클래식 UI에 구성되었으며, 이 게이트웨이는 인증을 위해 IMS 액세스 토큰을 가져오는 데 JWT 토큰 교환을 사용합니다. [!DNL Experience Manager Assets] 이제 은  [!DNL Brand Portal] 를 통해  [!DNL Adobe I/O]구성되며, 은 테넌트의 인증을 위해 IMS 토큰을  [!DNL Brand Portal] 받습니다.
 
@@ -265,11 +239,11 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 ![만든 날짜에 대한 정렬 가능한 열](assets/asset-created-date.png)
 
-#### [!DNL Adobe Experience Manager Assets](6.5.2.0) {#visual-search} 시각적 검색
+#### [!DNL Adobe Experience Manager Assets](6.5.2.0)  시각적 검색 {#visual-search}
 
 [!DNL Assets] 사용자는 시각적으로 유사한 이미지를 검색할 수 있습니다. Experience Manager는 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다. [시각적 검색](../assets/search-assets.md)을 참조하십시오.
 
-### Dynamic Media {#dynamic-media-previous-service-packs}
+### 다이내믹 미디어 {#dynamic-media-previous-service-packs}
 
 #### CDN 캐시 콘텐츠 무효화(6.5.6.0) {#invalidate-cdn-cached-content}
 
@@ -281,7 +255,7 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 * 전체 자산 URL 추가
 
-#### 자산을 [!DNL Experience Manager] 및 [!DNL Dynamic Media](6.5.6.0) {#selective-publishing}에 선택적으로 게시
+#### [!DNL Experience Manager] 및 [!DNL Dynamic Media]에 자산의 선택적 게시(6.5.6.0) {#selective-publishing}
 
 이제 [!UICONTROL 빠른 게시] 또는 [!UICONTROL 게시 관리] 마법사를 사용하여 [!DNL Experience Manager] 또는 [!DNL Dynamic Media]에 자산을 선택적으로 게시 또는 게시 취소하도록 선택할 수 있습니다. 폴더 수준에서 `Publish` 또는 `Unpublish` 모드를 설정할 수도 있습니다.
 
@@ -327,7 +301,7 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 [!DNL Experience Manager Forms] 이제 데이터 소스로 RESTful 웹 서비스와 통합할 때 양식 데이터 모델에 성능 최적화를 위한 HTTP 클라이언트 구성이 포함됩니다. [데이터 소스 구성](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration)을 참조하십시오.
 
-#### 레이아웃 모드(6.5.7.0) {#reset-option-layout-mode}에서 각 구성 요소에 대한 재설정 옵션 사용 가능
+#### 레이아웃 모드에서 각 구성 요소에 대한 재설정 옵션 가용성(6.5.7.0) {#reset-option-layout-mode}
 
 이제 적응형 양식의 레이아웃 모드에서 각 구성 요소에 대해 재설정 옵션을 사용할 수 있습니다. 패널에 대한 다중 열 레이아웃을 정의할 때 이 기능을 사용하여 패널 내의 개별 구성 요소를 재설정할 수 있습니다. [레이아웃 모드를 사용하여 구성 요소](../../help/forms/using/resize-using-layout-mode.md#resize-components)의 크기를 조정할 수 있습니다.
 
@@ -336,19 +310,19 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 적응형 양식을 미리 채우면 [!DNL Experience Manager Forms] 서버가 데이터를 적응형 양식으로 병합하고 채워진 양식을 사용자에게 전달합니다. 기본적으로 데이터 병합 작업은 서버에서 수행됩니다.
 이제 [!DNL Experience Manager Forms] 서버를 [로 구성하여 서버 대신 클라이언트](../../help/forms/using/prepopulate-adaptive-form-fields.md)에서 데이터 병합 작업을 수행할 수 있습니다. 적응형 양식을 미리 작성하고 렌더링하는 데 필요한 시간이 크게 줄어듭니다.
 
-#### 양방향 SSL 구현(6.5.6.0) {#fdm-integration-rest-apis-two-way-ssl}을 사용하는 서버의 RESTful API와 양식 데이터 모델 통합
+#### 양방향 SSL 구현을 통해 서버의 RESTful API와 양식 데이터 모델 통합(6.5.6.0) {#fdm-integration-rest-apis-two-way-ssl}
 
 [!DNL Experience Manager Forms] 이제 양식 데이터 모델 [을 양방향 SSL이 구현된 서버의 RESTful API와 통합할 수 있습니다](../../help/forms/using/configure-data-sources.md).
 
-#### automated forms conversion 서비스에서 [!DNL Adobe Sign] 텍스트 태그에 대한 지원을 추가했습니다(6.5.6.0) {#sign-integration-acroform-afcs}
+#### automated forms conversion 서비스에서 [!DNL Adobe Sign] 텍스트 태그에 대한 지원이 추가되었습니다(6.5.6.0). {#sign-integration-acroform-afcs}
 
 AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함된 경우 이러한 필드는 이제 인식되어 [!DNL Automated Forms Conversion service] 를 사용하여 변환된 적응형 양식에 [!DNL Adobe Sign] 필드로 표시됩니다. 서명자는 적응형 양식에 서명하는 동안 이러한 필드를 채울 수 있습니다.
 
-#### 색상이 적용된 PDF forms을 적응형 양식으로 전환(6.5.6.0) {#colored-PDF-forms} 지원
+#### 색상이 적용된 PDF forms을 적응형 양식으로 전환(6.5.6.0) 지원 {#colored-PDF-forms}
 
 [!DNL Automated Forms Conversion service] 을 사용하여 컬러 PDF forms을 적응형 양식으로 변환할 수 있습니다.
 
-#### SMB 2 및 SMB 3 프로토콜(6.5.6.0) {#smb-support} 지원
+#### SMB 2 및 SMB 3 프로토콜 지원(6.5.6.0) {#smb-support}
 
 [!DNL Experience Manager Forms] 는 이제 SMB 2 및 SMB 3 프로토콜을 지원합니다.
 
@@ -356,11 +330,11 @@ AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함된 경우 이러한 필
 
 이제 적응형 양식 URL](../../help/forms/using/supporting-new-language-localization.md)의 인수 대신 적응형 양식 URL에서 [로케일을 선택기로 지정할 수 있습니다. 이 기능은 [!DNL Experience Manager Dispatcher]에 번역된 적응형 양식을 캐싱하는 데 도움이 됩니다. 이전 버전에서는 번역된 적응형 양식을 캐싱할 수 없었습니다. 적응형 양식 URL에서 선택기로 로캘을 사용하기 위한 캐싱을 구성하는 방법에 대한 자세한 내용은 [디스패처에서 적응형 양식 캐시 구성](../../help/forms/using/configure-adaptive-forms-cache.md)을 참조하십시오.
 
-#### 양식 데이터 모델 서비스의 출력을 변수(6.5.6.0)에 저장 {#save-fdm-service-to-variable}
+#### 양식 데이터 모델 서비스의 출력을 변수에 저장(6.5.6.0) {#save-fdm-service-to-variable}
 
 양식 데이터 모델을 사용하면 양식 데이터 모델 서비스의 출력을 변수에 저장할 수 있습니다. [!DNL Experience Manager Forms] 이제 에서는 양식 데이터 모델 서비스의 유형을 변수 유형에 자동으로 매핑합니다.
 
-#### 첨부 파일 구성 요소(6.5.6.0)에 여러 파일 첨부 {#attach-multiple-files}
+#### 첨부 파일 구성 요소에 여러 파일 첨부(6.5.6.0) {#attach-multiple-files}
 
 이제 [여러 파일](../../help/forms/using/introduction-forms-authoring.md)을 적응형 양식의 [!UICONTROL 파일 첨부] 구성 요소에 첨부할 수 있습니다.
 
@@ -376,7 +350,7 @@ AcroForm에 [!DNL Adobe Sign] 텍스트 태그가 포함된 경우 이러한 필
 
 ![초안으로 저장](assets/save-as-draft.gif)
 
-#### [!DNL Oracle WebLogic] 애플리케이션 서버 지원(6.5.5.0)  {#weblogic-support}
+#### [!DNL Oracle WebLogic] 애플리케이션 서버 지원(6.5.5.0) {#weblogic-support}
 
 Adobe Experience Manager Forms에 JEE에서 Adobe Experience Manager Forms에 대한 [!DNL Oracle WebLogic 12] 지원이 추가되었습니다. 이전 버전에서 업그레이드하거나 [!DNL Oracle WebLogic] 12.2.1.4 이상의 JEE 서버에서 새 Experience Manager 6.5 Forms를 설정할 수 있습니다. 이후에 버전이 약간 변경되었으며, 여기서 12.2.1.x의 x는 버전 번호로 대체됩니다.
 
@@ -390,7 +364,7 @@ Adobe Experience Manager Forms는 다음과 같은 액세스 가능성이 개선
 
 * 적응형 양식에 필수 필드가 있으면 ARIA 액세스 가능성 스키마의 해당 필드에 대해 필수 속성이 `True`로 설정됩니다.
 
-#### 양식 데이터 모델(6.5.5.0) {#x509-based-authentication-soap}에서 SOAP 기반 웹 서비스를 위한 X-509 인증서 기반 인증
+#### 양식 데이터 모델에서 SOAP 기반 웹 서비스를 위한 X-509 인증서 기반 인증(6.5.5.0) {#x509-based-authentication-soap}
 
 이제 양식 데이터 모델은 SOAP 웹 서비스를 데이터 소스로 사용하면서 X-509 인증서 기반 인증을 지원합니다. 자세한 내용은 [SOAP 웹 서비스 구성](../forms/using/configure-data-sources.md#configure-soap-web-services)을 참조하십시오.
 
@@ -443,14 +417,14 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 부재 예정인 경우 해당 기간 동안 자신에게 할당된 항목에 대한 처리 방법을 지정할 수 있습니다.
 부재 설정을 적용할 시작 날짜 및 시간, 종료 날짜 및 시간을 지정할 수 있습니다. 모든 항목을 받을 기본 사람을 설정할 수 있습니다. [부재 설정 구성](../forms/using/configure-out-of-office-settings.md)을 참조하십시오.
 
-#### Experience Manager Forms용 배치 API를 사용하여 여러 대화형 커뮤니케이션 생성(6.5.3.0) {#generate-multiple-ic}
+#### Forms Experience Manager용 배치 API를 사용하여 여러 대화형 커뮤니케이션 생성(6.5.3.0) {#generate-multiple-ic}
 
 배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들면 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다. [AEM Forms용 배치 API를 사용하여 여러 대화형 커뮤니케이션 생성](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)을 참조하십시오.
 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp} 이후의 주요 릴리스
+## [!DNL Adobe Experience Manager] 6.5 SP8 이후 주요 릴리스 {#key-releases-since-last-sp}
 
 2021년 2월 25일부터 2021년 5월 27일까지 Adobe은 서비스 팩 외에 다음과 같은 사항을 발표했습니다.
 
