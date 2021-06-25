@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
+source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3838'
 ht-degree: 12%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 12%
 
 * [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) 및 [[!DNL Dynamic Media]](#accessibility-dm-6590)의 액세스 가능성이 개선되었습니다.
 
-* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 최상의 품질 이미지를 효율적으로 전달할 수 있습니다.고해상도의 디스플레이와 제한된 네트워크 대역폭을 가진 디바이스 자세한 내용 및 타임라인은 [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
+* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 최상의 품질 이미지를 효율적으로 제공할 수 있습니다.고해상도의 디스플레이와 제한된 네트워크 대역폭을 가진 디바이스 자세한 내용 및 타임라인은 [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
 
 * [!DNL Dynamic Media] 배달(`fmt` URL 수정자)은 차세대 이미지 형식 AVIF(AV1 이미지 형식)를 지원합니다. 자세한 내용 및 타임라인은 [이미지 제공 및 API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)를 참조하십시오.
 
@@ -115,6 +115,29 @@ ht-degree: 12%
 
 ### [!DNL Assets] {#assets-6590}
 
+[!DNL Assets]에서 다음과 같은 사용자 경험 개선 작업이 수행됩니다.
+
+* [!UICONTROL 만들기], [!UICONTROL 수정] 또는 [!UICONTROL 이름] 매개 변수 중 하나를 기반으로 정렬되지 않은 자산을 보려면 [!DNL Adobe Experience Manager]에서 [!UICONTROL 없음] 옵션을 제공합니다. [!UICONTROL 정렬 기준] 옵션. [!UICONTROL 없음] 옵션은 자산 사용자 인터페이스(카드, 열 및 인사이트 보기)의 자산이 JCR 노드에 있는 자산과 동일한 순서로 유지되도록 합니다(NPR-36356).
+
+* [!DNL Adobe Experience Manager]에서 ACP API 응답에서 이메일 ID를 소문자로 만들려면 선택적 설정이 도입됩니다.as a1/> 사용자가 ID에 모든 문자가 소문자로 포함되어 있지 않으면 자산을 체크 인할 수 없습니다. [!DNL Adobe Asset Link] [!DNL Adobe Asset Link] 패널에서는 [!DNL Adobe Experience Manager]의 ACP API 응답을 사용합니다(CQ-4317704).
+
+[!DNL Adobe Experience Manager] 6.5.9.0에서는 다음과 같은 액세스 가능성이  [!DNL Assets] 개선되었습니다.
+
+다음 텍스트와 아이콘의 대비(배경 포함)가 개선되어 시력이 제한된 사용자와 색상을 인식하는 데 도움이 됩니다.
+
+* [!UICONTROL 속성] 페이지의 자산 제목(NPR-35967).
+* 다양한 위치의 [!UICONTROL 등급] 섹션에 별 등급 아이콘이 표시됩니다(NPR-36009).
+* 자산 및 폴더 카드 보기의 텍스트(NPR-35966).
+* [!UICONTROL 타임라인] 보기의 자리 표시자 텍스트(NPR-35965).
+* 자산 검색 결과의 자산 이름(NPR-35964).
+* [!UICONTROL 링크 공유] 대화 상자의 자리 표시자 텍스트(NPR-35963).
+* [!UICONTROL 보기 설정 대화 상자]의  [!UICONTROL 목록 옵션]에 있는 메타데이터  , 상태      및 기타 텍스트(NPR-35910).
+*  전역 검색 [!UICONTROL 에서 ] 검색 자리 표시자 텍스트를 표시하는 위치 및 유형입니다(NPR-35909).
+* [!UICONTROL 컨텐츠 트리] 아래에서 아이콘을 확장 및 축소합니다(NPR-35908).
+* 자산 폴더가 표시되는 페이지의 [!UICONTROL Assets] 텍스트(NPR-35905).
+* 자산 세부 사항 페이지의 [!UICONTROL 개요] 옵션 내의 [!UICONTROL 자산 메타데이터], [!UICONTROL 사용 통계]의 텍스트(NPR-35904).
+* 자산 세부 사항 페이지의 [!UICONTROL 속성] 및 [!UICONTROL 편집] 옵션에 대한 바로 가기 키에 대한 텍스트입니다(NPR-35904).
+
 [!DNL Adobe Experience Manager] 6.5.9.0에서는  [!DNL Assets] 다음 문제가 해결되었습니다.
 
 * [!UICONTROL 폴더 메타데이터 스키마] 양식의 태그 선택 요소 내에서 생성된 태그는 저장되지 않습니다(NPR-36119).
@@ -141,59 +164,12 @@ ht-degree: 12%
 
 * DAM 폴더를 삭제하거나 이동할 수 없으며 예외가 기록됩니다(NPR-35942).
 
-#### 자산의 개선 사항 {#assets-enhancements}
-
-* 카드, 열 및 인사이트 보기에서 [!UICONTROL 없음] 옵션을 도입하여 JCR 노드에 저장된 순서로 자산을 정렬합니다(NPR-36356).
-
-* Adobe Experience Manager의 API 응답에서 이메일 ID를 소문자로 추가하는 옵션이 추가되었습니다(CQ-4317704).
-
-#### Assets의 액세스 가능성 개선 {#assets-accessibility-6590}
-
-[!DNL Adobe Experience Manager] 6.5.9.0에서는 다음과 같은 액세스 가능성이  [!DNL Assets] 개선되었습니다.
-
-다음 텍스트와 아이콘의 대비(배경 포함)가 개선되어 시력이 제한된 사용자와 색상을 인식하는 데 도움이 됩니다.
-
-* [!UICONTROL 속성] 페이지의 자산 제목(NPR-35967).
-* 다양한 위치의 [!UICONTROL 등급] 섹션에 별 등급 아이콘이 표시됩니다(NPR-36009).
-* 자산 및 폴더 카드 보기의 텍스트입니다(NPR-35966).
-* [!UICONTROL 타임라인] 보기의 자리 표시자 텍스트(NPR-35965).
-* 자산 검색 결과의 자산 이름(NPR-35964).
-* [!UICONTROL 링크 공유] 대화 상자의 자리 표시자 텍스트(NPR-35963).
-* [!UICONTROL 보기 설정 대화 상자]의  [!UICONTROL 목록 옵션]에 있는 메타데이터  , 상태      및 기타 텍스트(NPR-35910).
-*  전역 검색 [!UICONTROL 에서 ] 검색 자리 표시자 텍스트를 표시하는 위치 및 유형입니다(NPR-35909).
-* [!UICONTROL 컨텐츠 트리] 아래에서 아이콘을 확장 및 축소합니다(NPR-35908).
-* 자산 폴더가 표시되는 페이지의 [!UICONTROL 자산] 텍스트(NPR-35905).
-* [!UICONTROL 자산 메타데이터], [!UICONTROL 자산 세부 정보 페이지의 [!UICONTROL 개요] 옵션 내의 텍스트(NPR-35904)]
-* 자산 세부 사항 페이지의 [!UICONTROL 속성] 및 [!UICONTROL 편집] 옵션에 대한 바로 가기 키에 대한 텍스트입니다(NPR-35904).
-
 ### [!DNL Dynamic Media] {#dynamic-media-6590}
-
-Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문제를 수정합니다.
-
-* [!DNL Dynamic Media]이 [기본](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config)에 의해 선택적으로 활성화되고 비활성화될 때 사용자 지정 뷰어 사전 설정 및 CSS가 [!DNL Dynamic Media]에 복제되지 않습니다(NPR-36232).
-
-* 자산 세부 사항 페이지에서 비디오 표현물을 미리 보려 하면 비디오가 느리게 로드됩니다(CQ-4320122).
-
-* 중복 자산 탐지기가 활성화된 상태에서 200개 이상의 자산을 업로드할 때 브라우저 페이지가 응답하지 않고 속도가 느려집니다(CQ-4319633).
-
-* 페이지의 파노라마 미디어 구성 요소에 파노라마 이미지 자산을 추가하면 발견되지 않은 참조 오류가 기록됩니다(CQ-4317666).
-
-* 경험 조각을 사용하여 대화형 미디어 뷰어가 구현되면 경험 조각이 게시자에서 열리지 않고 오류가 기록됩니다(CQ-4317655).
-
-* Dynamic Media에 게시 옵션은 메타데이터 편집기 보기의 빠른 게시에서 사용할 수 없습니다(CQ-4317199).
-
-* 읽기 전용 권한이 있는 사이트 작성자는 자산에 스마트 자르기 기능을 사용하고 스마트 잘려진 렌디션을 편집할 수 있습니다. 그러나 읽기 전용 권한이 있는 사용자는 사이트 개발 인스턴스에서 자산 속성을 편집할 수 없습니다(CQ-4316450).
-
-* [!DNL Experience Manager] 인스턴스가 [!DNL Dynamic Media] 모드에서 설정되어 있어도 폴더 경로 [!DNL where Dynamic] 미디어 구성이 활성화되지 않습니다(CQ-4314950).
-
-* 자산 제목에 2바이트, 멀티바이트, 높은 ASCII, 키릴 자모, 서로게이트 쌍, 히브리어, 아랍어 및 GB18030 문자가 있는 경우, Dynamic Media에 게시할 때 자산 제목에 물음표(?)가 표시됩니다. (CQ-4311872).
-
-#### Dynamic Media의 액세스 가능성 개선 {#accessibility-dm-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0에서는  [!DNL Assets] 다음과 같은 액세스 가능성이 개선되었습니다 [!DNL Dynamic Media].
 
-* 이미지 세트 편집기에서 키보드 키를 사용하여 자산을 추가하기 위해 대화 상자를 엽니다.
-   * 화면 판독기에서 대화 상자가 열려 있다고 알려줍니다.
+* 대화 상자를 열어 [!UICONTROL 이미지 세트] 편집기에서 키보드 키를 사용하여 자산을 추가하는 경우:
+   * 화면 판독기는 대화 상자가 열려 있음을 알려줍니다.
    * 키보드 포커스가 열리면 대화 상자로 이동합니다.
    * 대화 상자가 닫히면 키보드 포커스가 자산 추가 옵션으로 다시 이동합니다(CQ-4312134).
 
@@ -218,6 +194,26 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 * 필수 필드를 나타내는 시각적 별표는 이제 이미지 세트 편집기의 자산 제목 필드에 제공되며 화면 판독기에서 필드에 대한 필수 정보를 알려줍니다(CQ-4290712).
 
 * 이제 화면 판독기에서 자산 세부 사항 페이지의 뷰어 내에서 다양한 대화형 옵션의 용도에 액세스하고 나레이션할 수 있습니다(CQ-4290708).
+
+Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문제를 수정합니다.
+
+* [!DNL Dynamic Media]이 [기본](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config)에 의해 선택적으로 활성화되고 비활성화될 때 사용자 지정 뷰어 사전 설정 및 CSS가 [!DNL Dynamic Media]에 복제되지 않습니다(NPR-36232).
+
+* 자산 세부 사항 페이지에서 비디오 표현물을 미리 보려 하면 비디오가 느리게 로드됩니다(CQ-4320122).
+
+* 중복 자산 탐지기가 활성화된 상태에서 200개 이상의 자산을 업로드할 때 브라우저 페이지가 응답하지 않고 속도가 느려집니다(CQ-4319633).
+
+* 페이지의 파노라마 미디어 구성 요소에 파노라마 이미지 자산을 추가하면 발견되지 않은 참조 오류가 기록됩니다(CQ-4317666).
+
+* 경험 조각을 사용하여 대화형 미디어 뷰어가 구현되면 경험 조각이 게시자에서 열리지 않고 오류가 기록됩니다(CQ-4317655).
+
+* [!UICONTROL Dynamic Media에 ] 게시 옵션은 속성 페이지의  [!UICONTROL 빠른 ] 게시 옵션  에서 사용할 수 없습니다(CQ-4317199).
+
+* 읽기 전용 권한이 있는 사이트 작성자는 자산에 스마트 자르기 기능을 사용하고 스마트 자르기 렌디션을 편집할 수 있습니다(CQ-4316450).
+
+* [!DNL Experience Manager] 인스턴스가 [!DNL Dynamic Media] 모드에서 설정되어 있어도 [!DNL Dynamic Media] 구성이 활성화되지 않은 폴더 경로에는 비디오 주석이 작동하지 않습니다(CQ-4314950).
+
+* 자산 제목에 2바이트, 멀티바이트, 높은 ASCII, 키릴 자모, 서로게이트 쌍, 히브리어, 아랍어 및 GB18030 문자가 있는 경우, Dynamic Media에 게시할 때 자산 제목에 물음표(?)가 표시됩니다. (CQ-4311872).
 
 ### 플랫폼 {#platform-6590}
 
