@@ -1,11 +1,11 @@
 ---
-title: 검색 기능 확장.
+title: 검색 기능 확장
 description: ' [!DNL Adobe Experience Manager Assets] 의 검색 기능을 기본값 이상으로 확장합니다.'
 contentOwner: AG
 role: Developer
 feature: 검색
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 8%
@@ -34,7 +34,7 @@ ht-degree: 8%
 >
 >기본적으로 `/apps` 아래의 디렉토리 구조가 없으므로 만듭니다. 노드 유형이 `/libs` 아래의 유형과 일치하는지 확인합니다.
 
-## 탭 {#adding-tabs} 추가
+## 탭 추가 {#adding-tabs}
 
 [!DNL Assets] 관리 인터페이스에서 검색 탭을 구성하여 추가 검색 탭을 추가할 수 있습니다. 추가 탭을 만들려면 다음을 수행하십시오.
 
@@ -55,7 +55,7 @@ ht-degree: 8%
 
 가장 좋은 방법은 기존 설명을 복사하고 조정하는 것입니다. 샘플 조건자는 **/libs/cq/search/components/predicate**&#x200B;에 있습니다.
 
-### 예:단순 속성 설명 {#example-build-a-simple-property-predicate} 작성
+### 예:단순 속성 설명 작성 {#example-build-a-simple-property-predicate}
 
 속성 설명을 빌드하려면 다음을 수행하십시오.
 
@@ -148,7 +148,7 @@ ht-degree: 8%
    >
    >검색할 때 올바른 대/소문자를 포함하여 정확히 단어를 입력해야 합니다.
 
-### 예:단순 그룹 설명 {#example-build-a-simple-group-predicate} 작성
+### 예:단순 그룹 설명 작성 {#example-build-a-simple-group-predicate}
 
 그룹 설명을 작성하려면 다음을 수행하십시오.
 
