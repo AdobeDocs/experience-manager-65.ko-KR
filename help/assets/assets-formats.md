@@ -2,17 +2,18 @@
 title: 지원되는 파일 형식 및 MIME 유형
 description: ' [!DNL Assets] and [!DNL Dynamic Media] 에서 지원하는 파일 형식 및 MIME 유형과 각 형식에 대해 지원되는 기능입니다.'
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner, Administrator
 feature: 자산 관리,표현물
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 10%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}에서 지원되는 형식
+# [!DNL Adobe Experience Manager Assets]에서 지원되는 형식 {#assets-supported-formats}
 
 [!DNL Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형에 대한 다양한 지원을 제공합니다. [!DNL Assets]을 다른 표준 호환 DAM(디지털 자산 관리) 솔루션 및 데스크탑 소프트웨어와 통합하려면 Adobe의 [!DNL Extensible Metadata Platform] (XMP)을 사용하십시오.
 
@@ -24,7 +25,7 @@ ht-degree: 10%
 | * | 추가 기능 지원 |
 | - | 해당 사항 없음 |
 
-## [!DNL Experience Manager] {#supported-raster-image-formats}에서 지원되는 래스터 이미지 형식
+## [!DNL Experience Manager]에서 지원되는 래스터 이미지 형식 {#supported-raster-image-formats}
 
 [!DNL Assets]에서 지원되는 래스터 이미지 형식은 다음과 같습니다.
 
@@ -86,7 +87,7 @@ ht-degree: 10%
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
-## Dynamic Media {#unsupported-image-formats-dynamic-media}에서 지원되지 않는 래스터 이미지 형식
+## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
 다음 목록에서는 Dynamic Media에서 지원되지 않는 *래스터 이미지 파일 형식의 하위 유형을 설명합니다.*
 
@@ -164,7 +165,7 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 | QXP | ✓ | ✓ | - | - | - | - | - | - |
 | EPUB | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
 
-## Dynamic Media {#supported-document-formats-dynamic-media}에서 지원되는 문서 형식
+## Dynamic Media에서 지원되는 문서 형식 {#supported-document-formats-dynamic-media}
 
 | 형식 | 업로드<br> (입력 형식) | <br> 이미지<br> 사전 설정<br>(출력 형식) 만들기 | 미리 보기<br> 동적<br> 변환 | 배달<br> 동적<br> 변환 | <br> dynamic<br> 변환 다운로드 |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -203,7 +204,7 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 | WMV | ✓ | ✓ | - | * | * |
 | SWF | ✓ | ✓ | - | - | - |
 
-## {#supported-input-video-formats-for-dynamic-media-transcoding} 트랜스코딩에 대해 Dynamic Media에서 지원되는 입력 비디오 형식
+## 코드 변환을 위해 Dynamic Media에서 지원되는 입력 비디오 형식 {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | 비디오 파일 확장 | 컨테이너 | 권장 비디오 코덱스 | 지원되지 않는 비디오 코덱입니다 |
 |---|---|---|---|
