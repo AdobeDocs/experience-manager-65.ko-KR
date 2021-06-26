@@ -1,6 +1,7 @@
 ---
 title: Dynamic Media 구성 - 하이브리드 모드
 description: Dynamic Media - 하이브리드 모드를 구성하는 방법을 알아봅니다.
+mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: 구성,하이브리드 모드
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 48463a72108621e94f1c50cf43f911794ec759dd
 workflow-type: tm+mt
-source-wordcount: '7843'
+source-wordcount: '7838'
 ht-degree: 2%
 
 ---
@@ -56,7 +57,7 @@ Dynamic Media의 고객인 경우, 하이브리드 게재를 모든 Dynamic Medi
 
 ![chlimage_1-506](assets/chlimage_1-428.png)
 
-## 이미지 {#hybrid-publishing-architecture-for-images}에 대한 하이브리드 게시 아키텍처
+## 이미지를 위한 하이브리드 게시 아키텍처 {#hybrid-publishing-architecture-for-images}
 
 ![chlimage_1-507](assets/chlimage_1-507.png)
 
@@ -139,7 +140,7 @@ Dynamic Media의 고객인 경우, 하이브리드 게재를 모든 Dynamic Medi
  </tbody>
 </table>
 
-## Dynamic Media {#enabling-dynamic-media} 활성화
+## Dynamic Media 활성화 {#enabling-dynamic-media}
 
 [Dynamic Media는 기본적으로 비활성화됩니다. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Dynamic Media 기능을 활용하려면 `dynamicmedia` 실행 모드(예: `publish` 실행 모드)를 사용하여 Dynamic Media을 활성화해야 합니다. 활성화하기 전에 [기술 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)을 검토하십시오.
 
@@ -189,23 +190,23 @@ Dynamic Media을 활성화하려면 명령줄에서 또는 빠른 시작 파일 
 
 ### 다른 포트 또는 컨텍스트 경로에 대한 Experience Manager을 설치한 경우.. {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-[Experience Manager을 응용 프로그램 서버](/help/sites-deploying/application-server-install.md)에 배포하고 Dynamic Media이 활성화되어 있는 경우, 외부 도우미에서 **self** 도메인을 구성해야 합니다. 그렇지 않으면 Dynamic Media 자산에 대한 축소판 생성이 제대로 작동하지 않습니다.
+[Experience Manager을 응용 프로그램 서버](/help/sites-deploying/application-server-install.md)에 배포하고 Dynamic Media이 활성화되어 있는 경우, 외부 도우미에서 **자체 도메인**&#x200B;을 구성해야 합니다. 그렇지 않으면 Dynamic Media 자산에 대한 축소판 생성이 제대로 작동하지 않습니다.
 
-또한 다른 포트나 컨텍스트 경로에서 quickstart를 실행하는 경우 **self** 도메인도 변경해야 합니다.
+또한 다른 포트나 컨텍스트 경로에서 quickstart를 실행하는 경우 **자체 도메인**&#x200B;도 변경해야 합니다.
 
 Dynamic Media이 활성화되면 이미지 자산에 대한 정적 축소판 표현물이 Dynamic Media을 사용하여 생성됩니다. Dynamic Media에 대해 축소판 생성이 제대로 작동하려면 Experience Manager이 URL 요청을 직접 수행하고 포트 번호와 컨텍스트 경로를 모두 알고 있어야 합니다.
 
 Experience Manager:
 
-* [외부 도우미](/help/sites-developing/externalizer.md)의 **self** 도메인은 포트 번호와 컨텍스트 경로를 모두 검색하는 데 사용됩니다.
-* **self** 도메인이 구성되어 있지 않으면 포트 번호와 컨텍스트 경로가 Jetty HTTP 서비스에서 검색됩니다.
+* [외부 도우미](/help/sites-developing/externalizer.md)의 **자체 도메인**&#x200B;은 포트 번호와 컨텍스트 경로를 모두 검색하는 데 사용됩니다.
+* **자체 도메인**&#x200B;이 구성되어 있지 않으면 포트 번호와 컨텍스트 경로가 Jetty HTTP 서비스에서 검색됩니다.
 
-Experience Manager QuickStart WAR 배포에서 포트 번호 및 컨텍스트 경로를 파생할 수 없으므로 **self** 도메인을 구성해야 합니다. **self** 도메인을 구성하는 방법에 대해서는 [외부 도우미 설명서](/help/sites-developing/externalizer.md) 를 참조하십시오.
+Experience Manager QuickStart WAR 배포에서 포트 번호 및 컨텍스트 경로를 파생할 수 없으므로 **자체 도메인**&#x200B;을 구성해야 합니다. **자체 도메인**&#x200B;을 구성하는 방법에 대해서는 [외부 도우미 설명서](/help/sites-developing/externalizer.md) 를 참조하십시오.
 
 >[!NOTE]
-[Experience Manager Quickstart 독립형 배포](/help/sites-deploying/deploy.md)에서는 포트 번호 및 컨텍스트 경로를 자동으로 구성할 수 있으므로 일반적으로 **self** 도메인을 구성할 필요가 없습니다. 그러나 모든 네트워크 인터페이스가 꺼져 있으면 **self** 도메인을 구성해야 합니다.
+[Experience Manager Quickstart 독립형 배포](/help/sites-deploying/deploy.md)에서는 포트 번호 및 컨텍스트 경로를 자동으로 구성할 수 있으므로 일반적으로 **자체 도메인**&#x200B;을 구성할 필요가 없습니다. 그러나 모든 네트워크 인터페이스가 꺼져 있으면 **자체 도메인**&#x200B;을 구성해야 합니다.
 
-## Dynamic Media {#disabling-dynamic-media} 비활성화
+## Dynamic Media 비활성화  {#disabling-dynamic-media}
 
 Dynamic Media은 기본적으로 활성화되지 않습니다. 그러나 이전에 Dynamic Media을 활성화한 경우에는 나중에 해제할 수 있습니다.
 
@@ -242,7 +243,7 @@ Experience Manager - Dynamic Media을 6.3에서 6.5로 업그레이드하는 경
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## 이미지 복제 구성 {#configuring-image-replication}
+## 이미지 복제 구성  {#configuring-image-replication}
 
 Dynamic Media 이미지 전달은 Experience Manager 작성자에서 비디오 축소판을 포함한 이미지 자산을 게시하고 Adobe의 주문형 복제 서비스(복제 서비스 URL)로 복제하여 작동합니다. 그런 다음 자산은 온디맨드 이미지 전달 서비스(이미지 서비스 URL)를 통해 전달됩니다.
 
@@ -350,7 +351,7 @@ Replication test succeeded
 
 인증을 설정할 때 솔루션 사용 시 발생할 수 있는 몇 가지 문제가 있습니다. 이러한 문제를 확인하기 전에 복제를 설정했는지 확인하십시오.
 
-#### 문제:HTTP 상태 코드 401(메시지 포함) - 권한 부여 필요 {#problem-http-status-code-with-message-authorization-required}
+#### 문제:메시지가 있는 HTTP 상태 코드 401 - 권한 부여 필요 {#problem-http-status-code-with-message-authorization-required}
 
 이 문제는 `dynamic-media-replication` 사용자에 대해 KeyStore를 설정하지 못해서 발생할 수 있습니다.
 
@@ -376,7 +377,7 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
 **해결 방법:**
 이  `KeyStore` dynamic-media-replicationuser에 저장되고  **** 올바른 암호가 제공되는지 확인합니다.
 
-#### 문제:키 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data} 데이터를 해독할 수 없습니다.
+#### 문제:키 암호를 해독할 수 없습니다. 데이터 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -414,7 +415,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 **해결 방법:**
 Experience Manager 작성자의 Java™ 프로세스에 시스템 속성이  `-Djavax.net.ssl.trustStore=` 유효한 truststore로 설정되어 있는지 확인하십시오.
 
-#### 문제:KeyStore가 설정되지 않았거나 {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized} 초기화되지 않았습니다.
+#### 문제:KeyStore가 설정되지 않았거나 초기화되지 않았습니다. {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 이 문제는 핫픽스, 또는 기능 팩이 dynamic-media-user 또는 keystore 노드를 덮어쓰는 경우 발생할 수 있습니다.
 
@@ -443,7 +444,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. **[!UICONTROL 연결 테스트]**&#x200B;를 눌러 구성이 올바른지 확인합니다.
 
-#### 문제:게시 에이전트가 OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth} 대신 SSL을 사용하고 있습니다.
+#### 문제:게시 에이전트가 OAuth 대신 SSL을 사용하고 있습니다 {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 이 문제는 핫픽스 또는 기능 팩이 올바르게 설치되지 않거나 설정이 과다 기록되어 발생할 수 있습니다.
 
@@ -533,7 +534,7 @@ Dynamic Media Hybrid를 사용하여 여러 Experience Manager 설치에서 비�
 1. Dynamic Media 구성(6.3 이전)을 구성하기 전에 ***새*** 작성자 노드 ***앞에 Video Analytics 사전 설정 패키지를 설치합니다.***
 1. 패키지 설치를 확인하고 디버깅합니다.
 
-### 첫 번째 작성자 노드 {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node} 구성 후 Video Analytics 사전 설정 패키지 생성
+### 첫 번째 작성자 노드를 구성한 후 Video Analytics 사전 설정 패키지 생성 {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
 이 작업을 완료하면 Video Analytics 사전 설정이 포함된 패키지 파일이 있습니다. 이러한 사전 설정에는 보고서 세트, 추적 서버, 추적 네임스페이스 및 Experience Cloud 조직 ID가 포함되어 있습니다(사용 가능한 경우).
 
@@ -547,7 +548,7 @@ Dynamic Media Hybrid를 사용하여 여러 Experience Manager 설치에서 비�
 1. 패키지를 빌드합니다.
 1. 후속 새 작성자 노드와 공유할 수 있도록 Video Analytics 사전 설정 패키지를 다운로드하거나 공유합니다.
 
-### 추가 작성자 노드 {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}를 구성하기 전에 Video Analytics 사전 설정 패키지 설치
+### 추가 작성자 노드를 구성하기 전에 Video Analytics 사전 설정 패키지 설치 {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Dynamic Media 구성(6.3 이전)을 구성하기 전에 ***이 작업을 완료했는지 확인하십시오.*** 이렇게 하지 않으면 사용되지 않는 다른 보고서 세트가 생성됩니다. 또한 비디오 보고가 올바르게 작동하지만 데이터 수집은 최적화되지 않습니다.
 
@@ -610,7 +611,7 @@ Manager의 비디오 보고 도구를 통해 Video Analytics 사전 설정을 �
 * Analytics 사전 설정 패키지를 먼저 설치하지 않으면 새 보고서 세트가 생성될 수 있습니다.
 * Experience Manager 6.3에서 Experience Manager 6.4 또는 Experience Manager 6.4.1로 업그레이드한 다음 Dynamic Media 구성(6.3 이전)을 구성하면 여전히 보고서 세트가 생성됩니다. 이 문제는 알려진 대로 해결되며 Experience Manager 6.4.2에 대해 수정되었습니다.
 
-### Video Analytics 사전 설정 {#about-the-video-analytics-preset} 정보
+### Video Analytics 사전 설정 정보 {#about-the-video-analytics-preset}
 
 Video Analytics 사전 설정(경우에 따라 Analytics 사전 설정이라고도 함)은 Dynamic Media의 뷰어 사전 설정 옆에 저장됩니다. 이것은 기본적으로 뷰어 사전 설정과 동일하지만 AppMeasurement 및 비디오 하트비트 보고를 구성하는 데 사용되는 정보가 있습니다.
 
@@ -623,7 +624,7 @@ Video Analytics 사전 설정(경우에 따라 Analytics 사전 설정이라고�
 
 Experience Manager 6.4 이상 버전은 `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`에 이 사전 설정을 저장합니다
 
-## 카탈로그 설정 복제 중 {#replicating-catalog-settings}
+## 카탈로그 설정 복제 {#replicating-catalog-settings}
 
 JCR을 통해 설정 프로세스의 일부로 고유한 기본 카탈로그 설정을 게시합니다. 카탈로그 설정을 복제하려면 다음을 수행하십시오.
 
@@ -646,7 +647,7 @@ JCR을 통해 설정 프로세스의 일부로 고유한 기본 카탈로그 설
 >[!NOTE]
 기본적으로, 자산의 세부 사항 보기에서 **[!UICONTROL Viewers]**&#x200B;를 선택하면 시스템은 **[!UICONTROL 표현물]** 및 다양한 뷰어 사전 설정을 선택할 때 다양한 표현물을 표시합니다. 표시되는 숫자를 늘리거나 줄일 수 있습니다. [표시](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정의 수를 늘립니다](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-## 복제용 자산 필터링 {#filtering-assets-for-replication}
+## 복제에 대한 자산 필터링 {#filtering-assets-for-replication}
 
 Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 모든 *자산(이미지와 비디오 모두)을 Experience Manager 게시 노드에 복제합니다.* Experience Manager 게시 서버에서도 자산을 전달하므로 이 워크플로우가 필요합니다.
 
@@ -662,7 +663,7 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
 ### 복제에 기본 자산 필터 사용 {#using-default-asset-filters-for-replication}
 
-프로덕션 **이나** (2) 이미징과 비디오에서 (1) 이미징용 Dynamic Media을 사용하는 경우, Adobe이 그대로 제공하는 기본 필터를 사용할 수 있습니다. 다음 필터는 기본적으로 활성화되어 있습니다.
+프로덕션 *이나* (2) 이미징과 비디오에서 (1) 이미징용 Dynamic Media을 사용하는 경우, Adobe이 그대로 제공하는 기본 필터를 사용할 수 있습니다. 다음 필터는 기본적으로 활성화되어 있습니다.
 
 <table>
  <tbody>
@@ -984,7 +985,7 @@ CMYK, RGB 또는 회색 출력을 사용하여 Dynamic Media 색상 관리를 �
 표준 Adobe 색상 프로필 세트는 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)의 [기능 팩 12445이 설치된 경우에만 사용할 수 있습니다. 모든 기능 팩과 서비스 팩은 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 사용할 수 있습니다. 기능 팩 12445에서는 Adobe의 색상 프로필을 제공합니다.
 
 
-### 기능 팩 12445 {#installing-feature-pack} 설치
+### 기능 팩 12445 설치 {#installing-feature-pack}
 
 Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치하십시오.
 
@@ -1096,7 +1097,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
    <th><p>설명</p> </th>
   </tr>
   <tr>
-   <td>AdobeRGB</td>
+   <td>Adobe RGB</td>
    <td>RGB</td>
    <td>Adobe RGB (1998)</td>
   </tr>
@@ -1138,12 +1139,12 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
   <tr>
    <td>유로스케일 코팅</td>
    <td>CMYK</td>
-   <td>유로스케일 코팅 v2</td>
+   <td>유로 스케일 코팅 v2</td>
   </tr>
   <tr>
    <td>EuroscaleUncoated</td>
    <td>CMYK</td>
-   <td>Euroscale Uncoated v2</td>
+   <td>유로 스케일 미코팅 v2</td>
   </tr>
   <tr>
    <td>JapanColorCoated</td>
