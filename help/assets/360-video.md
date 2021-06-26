@@ -11,9 +11,9 @@ docset: aem65
 feature: 360 VR 비디오
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Dynamic Media - Scene7 모드에는 360개의 비디오 자산 전달을 위한 
 
 또한 [뷰어 사전 설정 관리](/help/assets/managing-viewer-presets.md)를 참조하십시오.
 
-## 360 작동 중인 비디오 {#video-in-action}
+## 360 비디오 작동 {#video-in-action}
 
 [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)을 탭하여 브라우저 창을 열고 360도 비디오를 시청하십시오. 비디오 재생 중에 마우스 포인터를 새 위치로 드래그하여 보기 각도를 변경합니다.
 
@@ -43,14 +43,14 @@ Adobe Premier Pro를 사용하여 360/VR 푸티지를 보고 편집할 수 있�
 
 [360/VR 비디오](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)를 참조하십시오.
 
-## 360 비디오 뷰어 {#uploading-assets-for-use-with-the-video-viewer}에서 사용할 자산 업로드
+## 360 비디오 뷰어에서 사용할 자산 업로드 {#uploading-assets-for-use-with-the-video-viewer}
 
 Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 페이지에서 **멀티미디어**&#x200B;로 레이블이 지정되며, 일반적인 비디오 자산과 유사합니다.
 
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *selecttopreview카드 보기에 표시된 업로드된 360 비디오 자산입니다. 자산은 Multimedia로 레이블이 지정됩니다.*
 
-**360 비디오 뷰어에서 사용할 자산을 업로드하려면:**
+**360 비디오 뷰어에서 사용할 자산을 업로드합니다.**
 
 1. 360 비디오 자산 전용 폴더를 만들었습니다.
 1. [폴더에 응용 비디오 프로필을 적용합니다](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -62,7 +62,7 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
    * 가장 좋은 방법은 다음 해상도 중 하나를 사용하는 것입니다.
 
       * 풀 HD 또는 FHD 해상도 또는,
-      * 4K, UHD 또는 Ultra HD 해상도로 알려진 2160p - 3840 x 2160 이 큰 디스플레이 해상도는 프리미엄 TV 세트와 컴퓨터 모니터에서 가장 자주 발견된다. 너비는 4000픽셀에 가깝기 때문에 2160p 해상도를 &quot;4K&quot;라고 합니다. 즉, 1080p의 4배 픽셀을 제공합니다.
+      * 2160p - 3840 x 2160(4k, UHD 또는 Ultra HD 해상도로 알려져 있음) 이 큰 디스플레이 해상도는 프리미엄 TV 세트와 컴퓨터 모니터에서 가장 자주 발견된다. 너비는 4000픽셀에 가깝기 때문에 2160p 해상도를 &quot;4k&quot;라고 합니다. 즉, 1080p의 4배 픽셀을 제공합니다.
    * [고품질 렌디션을 ](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) 사용하여 사용자 지정 응용 비디오 프로필을 만듭니다. 예를 들어 다음 세 가지 설정을 포함하는 응용 비디오 프로필 을 만듭니다.
 
       * width=auto;height=720;bitrate=2500kbps
@@ -74,7 +74,7 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 
 1. [비디오를 폴더에 업로드합니다](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-## 360개 비디오의 기본 종횡비 재정의 {#overriding-the-default-aspect-ratio-of-videos}
+## 360개 비디오의 기본 종횡비 재정의  {#overriding-the-default-aspect-ratio-of-videos}
 
 업로드된 자산이 360 비디오 뷰어와 함께 사용할 360 비디오로 분류되도록 하려면 자산의 종횡비가 2여야 합니다.
 
