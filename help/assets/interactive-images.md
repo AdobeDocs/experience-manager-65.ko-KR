@@ -11,9 +11,9 @@ docset: aem65
 feature: 대화형 이미지
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 3110c1d4424179dbc9eda9e07cf3353c4b4bb4b0
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '4291'
+source-wordcount: '4284'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
-## 대화형 이미지 배너가 만들어지는 방법을 확인하십시오 {#watch-how-interactive-image-banners-are-created}
+## 대화형 이미지 배너를 만드는 방법을 확인하십시오 {#watch-how-interactive-image-banners-are-created}
 
 [대화형 이미지 배너를 만드는 방법에 대한 연습을 재생합니다](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10분 33초). 또한 대화형 이미지 배너를 미리 보고 편집하고 전달하는 방법을 알아봅니다.
 
@@ -56,13 +56,13 @@ Experience Manager 자산](/help/commerce/cif-classic/administering/concepts.md)
 1. **이미지 배너 업로드**  - 대화형 이미지를 만들 이미지 배너를 업로드합니다.
 [이미지 배너 업로드](#uploading-an-image-banner)를 참조하십시오.
 
-1. **이미지 배너에 핫스팟 추가**  - 이미지 배너에 하나 이상의 핫스팟을 추가하고 각각 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 연결합니다. 핫스팟을 추가한 후에는 대화형 이미지를 게시하여 이 작업을 완료합니다.
+1. **이미지 배너에 핫스팟 추가**  - 이미지 배너에 하나 이상의 핫스팟을 추가하고 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 각 핫스팟을 연결합니다. 핫스팟을 추가한 후에는 대화형 이미지를 게시하여 이 작업을 완료합니다.
 
    * [이미지 배너에 핫스팟 추가](#adding-hotspots-to-an-image-banner)를 참조하십시오.
    * [대화형 이미지 미리 보기](#optional-previewing-interactive-images) - 선택 사항 를 참조하십시오. 원할 경우 쇼퍼블 배너의 표현을 보고 상호 작용을 테스트할 수 있습니다.
    * 대화형 이미지 자산을 게시하는 방법에 대한 자세한 내용은 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
-1. **Experience Manager** 에서 웹 사이트 또는 웹 사이트에 대화형 이미지 추가 - Experience Manager 사이트, eCommerce 또는 둘 다 사용하는 경우 Experience Manager의 웹 페이지에 대화형 이미지를 추가할 수 있습니다. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
+1. **웹 사이트에 대화형 이미지 추가**  - Experience Manager 사이트, eCommerce 또는 둘 다 사용하는 경우 Experience Manager의 웹 페이지에 대화형 이미지를 추가할 수 있습니다. 대화형 미디어 구성 요소를 페이지로 드래그합니다. [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
    Experience Manager 자산 및 Dynamic Media 독립 실행형 을 사용하는 경우 웹 사이트에서 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. [웹 사이트와 대화형 이미지 통합](#integrating-an-interactive-image-with-your-website)을 참조하십시오.
 
@@ -166,14 +166,14 @@ Quickview URL 및 그 결과 핫스팟 변수의 다음 예를 생각해 보십�
 
 데모 웹 페이지에는 &quot;자세히 보기&quot;라는 빠른 보기 단추가 있는 여러 제품 축소판이 있습니다. 웹 브라우저의 디버깅 도구가 계속 활성화되면 각 단추를 클릭하고 기록된 Quickview URL을 기록해 둡니다. 페이지에서 사용할 수 있는 4개의 제품 빠른 보기를 모두 활성화하면 백엔드에 대해 수행된 Quickview 요청 목록이 있습니다.
 
-* `/datafeed/Men-Windbreaker.json`
-* `/datafeed/Men-SimpleHenley.json`
-* `/datafeed/Men-CamoPullover.json`
-* `/datafeed/Women-QuiltedDownJacket.json`
+* `/datafeed/Male-Windbreaker.json`
+* `/datafeed/Male-SimpleHenley.json`
+* `/datafeed/Male-CamoPullover.json`
+* `/datafeed/Female-QuiltedDownJacket.json`
 
 서버 호출을 보면 제품별 정보가 요청 경로에만 있음을 알 수 있습니다. 또한 쿼리 문자열이 전혀 사용되지 않으며 두 가지 데이터 유형이 관련되어 있습니다.
 
-* 첫 번째 유형은 남성 혹은 여성입니다. 이를 &quot;제품 카테고리&quot;라고 할 수 있습니다.
+* 첫 번째 유형은 남성 또는 여성입니다. 이를 &quot;제품 카테고리&quot;라고 할 수 있습니다.
 * 두 번째 유형은 CamoPullover와 같은 제품 이름입니다. 이 정보가 제품 SKU라고 간주할 수 있습니다.
 
 이 정보가 주어지면 전체 Quickview URL은 다음 패턴을 가집니다.
@@ -216,7 +216,7 @@ Experience Manager 자산과 함께 제공되는 `Shoppable_Banner`이라는 기
 
    이제 이미지 배너를 업로드할 준비가 되었습니다.
 
-## 이미지 배너 업로드 중 {#uploading-an-image-banner}
+## 이미지 배너 업로드 {#uploading-an-image-banner}
 
 사용하려는 이미지를 이미 업로드한 경우 다음 단계인 [이미지 배너에 핫스팟 추가](#adding-hotspots-to-an-image-banner)로 이동하십시오.
 
@@ -284,7 +284,7 @@ Experience Manager 자산과 함께 제공되는 `Shoppable_Banner`이라는 기
 
          * [핫스팟 변수 식별](#optional-identifying-hotspot-variables);을 참조하십시오.이러한 변수를 정의해야 합니다.
          * 그런 다음 SKU 값을 수동으로 입력합니다. SKU 값 텍스트 필드에 제공하는 각 개별 제품 또는 서비스의 고유 식별자인 제품의 SKU(Stock Keeping Unit)를 입력합니다. 입력한 SKU 값은 Quickview 템플릿의 변수 부분을 자동으로 채우므로 시스템이 탭된 핫스팟을 특정 SKU의 Quickview와 연결하려는 것을 알게 됩니다.
-         * (선택 사항) Quickview 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 **[!UICONTROL 일반 변수 추가]**&#x200B;를 누릅니다. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 `category=Mens`은 추가된 변수입니다.
+         * (선택 사항) Quickview 내에 제품을 추가로 식별하는 데 사용해야 하는 다른 변수가 있는 경우 **[!UICONTROL 일반 변수 추가]**&#x200B;를 누릅니다. 텍스트 필드에 추가 변수를 지정합니다. 예를 들어 `category=Males`은 추가된 변수입니다.
    * **[!UICONTROL 하이퍼링크]**&#x200B;를 누릅니다.
 
       * Experience Manager 사이트 고객인 경우 사이트 선택기 아이콘(폴더)을 탭하거나 클릭하여 URL로 이동합니다. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
@@ -339,7 +339,7 @@ Experience Manager 자산과 함께 제공되는 `Shoppable_Banner`이라는 기
 
 대화형 이미지 자산을 게시하는 방법에 대한 자세한 내용은 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
-## 웹 사이트 {#integrating-an-interactive-image-with-your-website}와 대화형 이미지 통합
+## 웹 사이트와 대화형 이미지 통합 {#integrating-an-interactive-image-with-your-website}
 
 이제 배너 이미지를 업로드하고, 이미지에 핫스팟을 추가하고, 대화형 이미지를 게시하면 웹 사이트 페이지에 추가할 수 있습니다.
 
@@ -359,7 +359,7 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-세 사람의 그림은 정적 `IMG` 태그입니다.
+세 남자의 사진은 정적 `IMG` 태그입니다.
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
@@ -380,7 +380,7 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 
 이제 대화형 이미지를 웹 사이트의 기존 Quickview와 통합할 준비가 되었습니다.
 
-## 대화형 이미지를 기존 Quickview {#integrating-an-interactive-image-with-an-existing-quickview}과 통합
+## 기존 Quickview와 대화형 이미지 통합 {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 이 작업은 독립 실행형 Experience Manager Assets 고객인 경우에만 적용됩니다.
