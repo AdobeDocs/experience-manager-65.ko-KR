@@ -1,6 +1,7 @@
 ---
 title: 다이내믹 미디어의 비디오
 description: Dynamic Media에서 비디오로 작업하는 방법 알아보기
+mini-toc-levels: 3
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +12,9 @@ docset: aem65
 feature: 자산 관리
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
+source-git-commit: 54230d68fc86c9098f7712044bc501bdc4f16502
 workflow-type: tm+mt
-source-wordcount: '11657'
+source-wordcount: '11668'
 ht-degree: 1%
 
 ---
@@ -21,6 +22,16 @@ ht-degree: 1%
 # 다이내믹 미디어의 비디오 {#video}
 
 이 섹션에서는 Dynamic Media에서 비디오 작업을 설명합니다.
+
+현재 Dynamic Media에서 알려진 비디오 재생 문제:
+
+* 
+
+   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+
+* 
+
+   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 
 ## 빠른 시작:비디오 {#quick-start-videos}
 
@@ -43,7 +54,7 @@ ht-degree: 1%
 
    * 자신만의 비디오 인코딩 프로필을 만듭니다. 또는 Dynamic Media과 함께 제공되는 사전 정의된 _응용 비디오 인코딩_ 프로필을 사용하면 됩니다.
 
-      * [비디오 인코딩 프로필 만들기](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [비디오 인코딩 프로필을 만듭니다](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * [비디오 인코딩 우수 사례](#best-practices-for-encoding-videos)에 대해 자세히 알아보십시오.
    * 비디오 처리 프로필을 기본 소스 비디오를 업로드할 하나 이상의 폴더에 연결합니다.
 
@@ -64,13 +75,13 @@ ht-degree: 1%
    * 비디오 자산 구성, 탐색 및 검색
 
       * [디지털 ](/help/assets/organize-assets.md)
-자산 구성  [처리 프로필 사용을 위한 디지털 자산을 구성하는 우수 사례에 대해 자세히 알아보십시오](organize-assets.md)
+자산 구성  [처리 프로필을 사용하기 위해 디지털 자산을 구성하는 우수 사례에 대해 자세히 알아보십시오](organize-assets.md)
 
-      * [비디오 ](search-assets.md#custompredicates) 자산 검색  [또는 자산 검색](/help/assets/search-assets.md)
+      * [비디오 ](search-assets.md#custompredicates) 자산 검색 또는  [자산 검색](/help/assets/search-assets.md)
    * 비디오 자산 미리 보기 및 게시
 
       * 관련 축소판과 함께 비디오의 소스 비디오 및 인코딩된 표현물을 봅니다.
-         [비디오 ](managing-video-assets.md#upload-and-preview-video-assets) 미리 보기 또는  [자산 미리 보기](previewing-assets.md)
+         [미리 ](managing-video-assets.md#upload-and-preview-video-assets) 보기 비디오 또는  [자산 미리 보기](previewing-assets.md)
          [비디오 표현물 보기](video-renditions.md)
          [비디오 표현물 관리](manage-assets.md#managing-renditions)
 
@@ -103,22 +114,22 @@ ht-degree: 1%
 
    * Adobe Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 웹 페이지에 비디오를 직접 추가할 수 있습니다.
 
-      * [웹 페이지에 비디오 추가](adding-dynamic-media-assets-to-pages.md).
+      * [웹 페이지에 비디오를 추가합니다](adding-dynamic-media-assets-to-pages.md).
    * 타사 웹 컨텐츠 관리 시스템을 사용하는 경우 웹 페이지에 비디오를 링크하거나 포함할 수 있습니다.
 
       * URL을 사용하여 비디오 통합:
-         [URL을 웹 애플리케이션에 연결](linking-urls-to-yourwebapplication.md).
+         [웹 애플리케이션에 URL을 연결합니다](linking-urls-to-yourwebapplication.md).
 
       * 웹 페이지에서 포함 코드를 사용하여 비디오 통합:
-         [웹 페이지에 비디오 뷰어 포함](embed-code.md).
-   * [YouTube에 비디오 게시](#publishing-videos-to-youtube).
-   * [비디오 보고서 생성](#viewing-video-reports).
+         [웹 페이지에 비디오 뷰어를 포함합니다](embed-code.md).
+   * [비디오를 YouTube에 게시합니다](#publishing-videos-to-youtube).
+   * [비디오 보고서를 생성합니다](#viewing-video-reports).
 
-   * [비디오에 캡션 추가](#adding-captions-to-video).
+   * [비디오에 캡션을 추가합니다](#adding-captions-to-video).
 
 
 
-## Dynamic Media {#working-with-video-in-dynamic-media}에서 비디오를 사용한 작업
+## Dynamic Media에서 비디오를 사용한 작업 {#working-with-video-in-dynamic-media}
 
 Dynamic Media의 비디오는 데스크탑, iOS, Android™, BlackBerry® 및 Windows 모바일 장치를 포함하여 여러 화면에서 스트리밍을 위한 고품질 적응형 비디오를 쉽게 게시할 수 있도록 하는 종단 간 솔루션입니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑 컴퓨터 또는 모바일 장치가 사용 가능한 대역폭을 감지합니다.
 
@@ -165,7 +176,7 @@ Dynamic Media은 MP4 H.264 비디오용 모바일 비디오 재생을 지원합�
 
 또한 [Experience Manager 자산용 뷰어 및 Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) 및 [Experience Manager 자산용 뷰어](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)를 참조하십시오.
 
-## 우수 사례:HTML5 비디오 뷰어 {#best-practice-using-the-html-video-viewer} 사용
+## 우수 사례:HTML5 비디오 뷰어 사용 {#best-practice-using-the-html-video-viewer}
 
 Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레이어입니다. HTML5 비디오 재생과 관련된 많은 일반적인 문제를 방지하기 위해 이 매개 변수를 사용할 수 있습니다. 또한 적응형 스트리밍 게재 부족 및 제한된 데스크탑 브라우저 도달과 같은 모바일 장치와 관련된 문제가 있습니다.
 
@@ -183,7 +194,7 @@ Dynamic Media HTML5 비디오 뷰어 사전 설정은 강력한 비디오 플레
 
 또한 [HTML5 뷰어 정보](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)를 참조하십시오.
 
-### HTML5 비디오 뷰어 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오를 재생합니다.
+### HTML5 비디오 뷰어를 사용하여 데스크탑 컴퓨터 및 모바일 장치에서 비디오 재생 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 데스크탑 및 모바일 적응형 비디오 스트리밍의 경우 비트율 전환에 사용되는 비디오는 응용 비디오 세트의 모든 MP4 비디오를 기반으로 합니다.
 
@@ -282,7 +293,7 @@ HLS는 네트워크 대역폭 용량에 따라 재생을 자동으로 조정하�
 
 ## 비디오 인코딩 우수 사례 {#best-practices-for-encoding-videos}
 
-Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 **Dynamic Media 인코딩 비디오** 워크플로우가 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 기록 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
+Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 **Dynamic Media 인코딩 비디오** 워크플로우가 비디오를 인코딩합니다. 이 워크플로우는 워크플로우 프로세스 기록 및 실패 정보를 캡처합니다. [비디오 인코딩 및 YouTube 게시 진행 상태 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media을 활성화하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우가 자동으로 적용됩니다. (Dynamic Media을 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.)
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
@@ -302,7 +313,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 | 1280 X 720 | 16:9 | 3000 - 6000kbps(비디오의 동작 양에 따라 다름) |
 | 1920 X 1080 | 16:9 | 6000 - 8000kbps(비디오의 동작 양에 따라 다름) |
 
-### 파일의 메타데이터 {#obtaining-a-file-s-metadata} 가져오기
+### 파일의 메타데이터 가져오기 {#obtaining-a-file-s-metadata}
 
 비디오 편집 도구를 사용하여 파일의 메타데이터를 보거나 메타데이터를 얻기 위해 디자인된 응용 프로그램을 사용하여 파일의 메타데이터를 가져올 수 있습니다. 다음은 타사 응용 프로그램인 MediaInfo를 사용하여 비디오 파일의 메타데이터를 가져오는 방법에 대한 지침입니다.
 
@@ -390,7 +401,7 @@ VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 �
 | 720p | 720년 | 대형 화면 |
 | 1080p | 1080년 | HD 대형 화면 |
 
-### Fps(초당 프레임) {#fps-frames-per-second}
+### Fps(초당 프레임 수) {#fps-frames-per-second}
 
 미국 및 일본에서는 대부분의 비디오가 초당 29.97프레임(fps)으로 촬영됩니다.유럽에서는 대부분의 비디오가 25fps로 촬영됩니다. 필름은 24fps로 촬영됩니다.
 
@@ -408,9 +419,9 @@ VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 �
 
 | 비디오 유형 | 너비 x 높이 | 폭 비율 | 높이 비율 |
 |--- |--- |--- |--- |
-| 소스 | 1920x1080 | 1 | 3 |
+| 소스 | 1920x1080 | 1 | 1 |
 | 인코딩됨 | 960 x 540 | 2 | 2개 |
-| 인코딩됨 | 640 x 360 | 3 | 3 |
+| 인코딩됨 | 640 x 360 | 3 | 1 |
 | 인코딩됨 | 480 x 270 | 4 | 4 |
 
 ### 인코딩된 비디오 파일 형식 {#encoded-video-file-format}
@@ -436,8 +447,8 @@ YouTube 서버에 비디오 자산을 게시하려면 YouTube을 사용하여 �
 1. [Experience Manager에서 YouTube 설정](#setting-up-youtube-in-aem)
 1. [(선택 사항) 업로드된 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [YouTube 채널에 비디오 게시](#publishing-videos-to-your-youtube-channel)
-1. [(선택 사항) YouTube에서 게시된 비디오 확인](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
-1. [YouTube URL을 웹 애플리케이션에 연결](#linking-youtube-urls-to-your-web-application)
+1. [(선택 사항) YouTube에서 게시된 비디오를 확인합니다](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
+1. [웹 애플리케이션에 YouTube URL 연결](#linking-youtube-urls-to-your-web-application)
 
 [비디오를 게시 취소하여 YouTube](#unpublishing-videos-to-remove-them-from-youtube)에서 제거할 수도 있습니다.
 
@@ -547,11 +558,11 @@ Google Cloud 설정을 구성하려면:
 
 ### YouTube 채널 만들기 {#creating-a-youtube-channel}
 
-YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합니다. YouTube 채널을 이미 만든 경우 이 작업을 건너뛰고 게시](/help/assets/video.md#adding-tags-for-publishing)에 대한 태그 추가 로 이동할 수 있습니다.[
+YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합니다. YouTube 채널을 이미 만든 경우 이 작업을 건너뛰고 게시](/help/assets/video.md#adding-tags-for-publishing)용 태그 추가 로 이동할 수 있습니다.[
 
 >[!WARNING]
 >
->Experience Manager의 YouTube 설정 아래에 채널을 추가하려면 먼저 YouTube *에서 채널을 하나 이상 설정했는지 확인하십시오(아래 Experience Manager](#setting-up-youtube-in-aem)에서 YouTube 설정 을 참조하십시오).*[ 하나 이상의 채널을 설정하지 않으면 존재하지 않는 채널에 대한 경고가 표시되지 않습니다. 그러나 채널을 추가할 때는 Google 인증이 계속 발생하지만 비디오가 전송되는 채널을 선택할 수 있는 옵션이 없습니다.
+>Experience Manager의 YouTube 설정 아래에 채널을 추가하려면 먼저 YouTube *에서 채널을 하나 이상 설정했는지 확인하십시오(아래 Experience Manager](#setting-up-youtube-in-aem)에서 YouTube 설정 을 참조하십시오.).*[ 하나 이상의 채널을 설정하지 않으면 존재하지 않는 채널에 대한 경고가 표시되지 않습니다. 그러나 채널을 추가할 때는 Google 인증이 계속 발생하지만 비디오가 전송되는 채널을 선택할 수 있는 옵션이 없습니다.
 
 **YouTube 채널을 만들려면:**
 
@@ -567,25 +578,25 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
    이제 게시할 태그를 추가합니다.
 
-### {#adding-tags-for-publishing} 게시용 태그 추가
+### 게시할 태그 추가 {#adding-tags-for-publishing}
 
 비디오를 YouTube에 게시하려면 Experience Manager은 태그를 하나 이상의 YouTube 채널에 연결합니다. 게시할 태그를 추가하려면 [태그 관리](/help/sites-administering/tags.md)를 참조하십시오.
 
 또는 Experience Manager에서 기본 태그를 사용하려는 경우 이 작업을 건너뛰고 [YouTube 게시 복제 에이전트 활성화](#enabling-the-youtube-publish-replication-agent)로 이동할 수 있습니다.
 
-### YouTube 게시 복제 에이전트 {#enabling-the-youtube-publish-replication-agent} 활성화
+### YouTube 게시 복제 에이전트 활성화 {#enabling-the-youtube-publish-replication-agent}
 
 YouTube 게시 복제 에이전트를 활성화한 후 Google Cloud 계정에 대한 연결을 테스트하려면 **[!UICONTROL 연결 테스트]**&#x200B;를 누릅니다. 브라우저 탭에 연결 결과가 표시됩니다. YouTube 채널을 추가한 경우 목록의 일부가 테스트의 일부로 표시됩니다.
 
 1. Experience Manager의 왼쪽 위 모서리에서 Experience Manager 로고를 클릭한 다음 왼쪽 레일에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트 를 클릭합니다.
-1. 작성자 에이전트 페이지에서 **[!UICONTROL YouTube 게시(youtube)]**&#x200B;를 클릭합니다.
+1. 작성자 에이전트 페이지에서 **[!UICONTROL YouTube 게시]**&#x200B;를 클릭합니다.
 1. 도구 모음의 설정 오른쪽에 있는 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
 1. 복제 에이전트를 설정할 수 있도록 **[!UICONTROL Enabled]** 확인란을 선택합니다.
 1. **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 
    이제 Experience Manager에서 YouTube을 설정합니다.
 
-### Experience Manager {#setting-up-youtube-in-aem}에서 YouTube 설정
+### Experience Manager에서 YouTube 설정 {#setting-up-youtube-in-aem}
 
 Experience Manager 6.4부터 Experience Manager에서 YouTube 게시를 설정하는 새로운 터치 사용자 인터페이스 방법이 도입되었습니다. 사용 중인 Experience Manager의 설치된 인스턴스에 따라 다음 중 하나를 수행합니다.
 
@@ -639,7 +650,7 @@ YouTube 구성 만들기 페이지를 열어 둡니다.잠시 후에, 당신은 
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
-#### 6.4 {#setting-up-youtube-in-aem-before} 이전 Experience Manager에서 YouTube 설정
+#### 6.4 이전 Experience Manager에서 YouTube 설정 {#setting-up-youtube-in-aem-before}
 
 1. 관리자로 Dynamic Media 인스턴스에 로그인해야 합니다.
 
@@ -685,7 +696,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
    이제 비디오를 YouTube 채널에 게시합니다.
 
-### (선택 사항) 업로드한 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### (선택 사항) 업로드된 비디오에 대한 기본 YouTube 속성 설정을 자동화합니다 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 선택적으로 Experience Manager에서 메타데이터 처리 프로필을 만들어 비디오 업로드 시 YouTube 속성 설정을 자동화할 수 있습니다.
 
@@ -748,7 +759,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
    [메타데이터 프로필](/help/assets/metadata-config.md#metadata-profiles) 및 [비디오 프로필](/help/assets/video-profiles.md)을 참조하십시오.
 
-### YouTube 채널 {#publishing-videos-to-your-youtube-channel}에 비디오 게시
+### YouTube 채널에 비디오 게시 {#publishing-videos-to-your-youtube-channel}
 
 이제 이전에 비디오 자산에 추가한 태그를 연결합니다. 이 프로세스를 통해 Experience Manager은 YouTube 채널에 게시할 자산을 알 수 있습니다.
 
@@ -762,7 +773,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 >
 >YouTube에서 컨텐츠를 게시하기 위해 Experience Manager은 **[!UICONTROL YouTube에 게시]** 워크플로우를 사용하여 진행 상황을 모니터링하고 실패 정보를 볼 수 있습니다.
 >
->[비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+>[비디오 인코딩 및 YouTube 게시 진행 상태 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 >
 >자세한 진행 정보를 보려면 복제 중인 YouTube 로그를 모니터링할 수 있습니다. 그러나 이러한 모니터링에는 관리자 액세스 권한이 필요합니다.
 
@@ -784,17 +795,17 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 
    YouTube 채널에서 게시된 비디오를 선택적으로 확인할 수 있습니다.
 
-### (선택 사항) YouTube에서 게시된 비디오를 확인하는 중 {#optional-verifying-the-published-video-on-youtube}
+### (선택 사항) YouTube에서 게시된 비디오를 확인합니다 {#optional-verifying-the-published-video-on-youtube}
 
 선택적으로 YouTube 게시(또는 게시 취소)의 진행 상황을 모니터링할 수 있습니다.
 
-[비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+[비디오 인코딩 및 YouTube 게시 진행 상태 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
 게시 시간은 기본 소스 비디오의 형식, 파일 크기 및 업로드 트래픽이 포함된 여러 요인에 따라 크게 달라질 수 있습니다. 게시 프로세스는 몇 분에서 몇 시간 정도 걸릴 수 있습니다. 또한 고해상도 포맷이 훨씬 느리게 렌더링됩니다. 예를 들어 720p와 1080p는 480p보다 오래 걸립니다.
 
 **[!UICONTROL 업로드(처리 중)]**&#x200B;라는 상태 메시지가 계속 표시되면 8시간 후에 Adobe의 사이트에서 비디오를 제거하고 다시 업로드하십시오.
 
-### YouTube URL을 웹 응용 프로그램 {#linking-youtube-urls-to-your-web-application}에 연결
+### 웹 애플리케이션에 YouTube URL 연결 {#linking-youtube-urls-to-your-web-application}
 
 비디오를 게시한 후 Dynamic Media에서 생성한 YouTube URL 문자열을 가져올 수 있습니다. YouTube URL을 복사하면 클립보드에 로드되므로 웹 사이트 또는 애플리케이션의 페이지에 필요에 따라 붙여넣을 수 있습니다.
 
@@ -812,7 +823,7 @@ YouTube 계정 설정 대화 상자를 열어 둡니다.곧 다시 돌아올 겁
 1. **[!UICONTROL 고급]** 탭을 클릭합니다.
 1. YouTube 게시 제목 아래의 YouTube URL 목록에서 URL 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
 
-### 비디오를 게시 취소하여 YouTube {#unpublishing-videos-to-remove-them-from-youtube}에서 제거합니다.
+### YouTube에서 제거할 수 있도록 비디오 게시 취소 {#unpublishing-videos-to-remove-them-from-youtube}
 
 Experience Manager에서 비디오 자산 게시를 취소하면 비디오가 YouTube에서 제거됩니다.
 
@@ -824,7 +835,7 @@ Experience Manager에서 비디오 자산 게시를 취소하면 비디오가 Yo
 >
 >YouTube에서 컨텐츠를 제거하려면 Experience Manager은 진행 상황을 모니터링하고 실패 정보를 볼 수 있는 **[!UICONTROL YouTube에서 게시 취소 워크플로우를 사용합니다.]**
 >
->[비디오 인코딩 및 YouTube 게시 진행률 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
+>[비디오 인코딩 및 YouTube 게시 진행 상태 모니터링](#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오.
 
 **YouTube에서 제거할 비디오 게시를 취소하려면,**
 
@@ -835,11 +846,11 @@ Experience Manager에서 비디오 자산 게시를 취소하면 비디오가 Yo
 1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 다음]**&#x200B;을 누릅니다.
 1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시 취소]**&#x200B;를 누릅니다.
 
-## 비디오 인코딩 및 YouTube 게시 진행률 모니터링 {#monitoring-video-encoding-and-youtube-publishing-progress}
+## 비디오 인코딩 및 YouTube 게시 진행 모니터링 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-비디오 인코딩이 적용된 폴더에 새 비디오를 업로드하거나 YouTube에 비디오를 게시하면 비디오 인코딩/Youtube 게시가 진행(또는 실패)되는 방식을 모니터링할 수 있습니다. 실제 YouTube 게시 진행 상태는 로그 방식으로만 사용할 수 있습니다. 그러나 실패 또는 성공은 다음 절차에 설명된 추가 방법으로 나열되어 있습니다. 또한 YouTube 게시 워크플로우 또는 비디오 인코딩이 완료되거나 중단되면 이메일 알림을 받게 됩니다.
+비디오 인코딩이 적용된 폴더에 새 비디오를 업로드하거나 YouTube에 비디오를 게시하면 비디오 인코딩/Youtube 게시 진행 방식을 모니터링할 수 있습니다. 실제 YouTube 게시 진행 상태는 로그 방식으로만 사용할 수 있습니다. 그러나 실패 또는 성공은 다음 절차에 설명된 추가 방법으로 나열되어 있습니다. 또한 YouTube 게시 워크플로우 또는 비디오 인코딩이 완료되거나 중단되면 이메일 알림을 받게 됩니다.
 
-### 진행률 모니터링 {#monitoring-progress}
+### 진행 상태 모니터링 {#monitoring-progress}
 
 1. 자산 폴더에서 비디오 인코딩 진행 상태 보기:
 
@@ -916,7 +927,7 @@ Experience Manager에서 비디오 자산 게시를 취소하면 비디오가 Yo
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
-1. 중단되거나 실패한 워크플로우 작업에 대한 이메일 알림을 받게 됩니다. 관리자가 이러한 이메일 알림을 구성할 수 있습니다. [이메일 알림 구성](#configuring-e-mail-notifications)을 참조하십시오.
+1. 중단되거나 실패한 워크플로우 작업에 대한 이메일 알림을 받게 됩니다. 관리자가 이러한 이메일 알림을 구성할 수 있습니다. [전자 메일 알림 구성](#configuring-e-mail-notifications)을 참조하십시오.
 
 #### 전자 메일 알림 구성 {#configuring-e-mail-notifications}
 
@@ -926,7 +937,7 @@ Experience Manager에서 비디오 자산 게시를 취소하면 비디오가 Yo
 
 알림을 구성하는 방법은 인코딩 작업 또는 YouTube 게시 작업에 대한 알림을 원하는 지에 따라 다릅니다.
 
-* 인코딩 작업의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에서 모든 Experience Manager 워크플로우 이메일 알림에 대한 구성 페이지에 액세스하여 **[!UICONTROL 일 CQ 워크플로우 이메일 알림 서비스]**&#x200B;를 검색할 수 있습니다. [Experience Manager](/help/sites-administering/notification.md)에서 이메일 알림 구성을 참조하십시오. **[!UICONTROL Notify on Abort]** 또는 **[!UICONTROL Notify on Complete]**&#x200B;에 대한 확인란을 선택하거나 선택 취소할 수 있습니다.
+* 인코딩 작업의 경우 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;에서 모든 Experience Manager 워크플로우 이메일 알림에 대한 구성 페이지에 액세스하여 **[!UICONTROL 일 CQ 워크플로우 이메일 알림 서비스]**&#x200B;를 검색할 수 있습니다. [Experience Manager](/help/sites-administering/notification.md)에서 이메일 알림 구성 을 참조하십시오. **[!UICONTROL Notify on Abort]** 또는 **[!UICONTROL Notify on Complete]**&#x200B;에 대한 확인란을 선택하거나 선택 취소할 수 있습니다.
 
 * YouTube 게시 작업의 경우 다음을 수행합니다.
 
@@ -1005,13 +1016,13 @@ Experience Manager에서 비디오 자산 게시를 취소하면 비디오가 Yo
 
 1. 게시된 상위 비디오를 나열하는 테이블에서 비디오 이름을 탭하여 비디오를 재생하고 비디오의 대상 유지(드롭다운) 보고서를 볼 수 있습니다.
 
-### Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk} 를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서 보기
+### Dynamic Media HTML5 Viewer SDK를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 봅니다 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기본 비디오 뷰어를 기반으로 사용자 지정 뷰어 사전 설정을 만든 경우 비디오 보고서를 보는 데 추가 단계가 필요하지 않습니다. 그러나 HTML5 Viewer SDK API를 기반으로 자체 비디오 뷰어를 만든 경우 다음 단계를 사용하여 비디오 뷰어가 추적 이벤트를 Dynamic Media 비디오 보고서에 전송하는지 확인합니다.
 
-[Dynamic Media Viewers 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) 및 [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)를 사용하여 고유한 비디오 뷰어를 만듭니다.
+[Dynamic Media Viewers 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) 및 [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)를 사용하여 고유한 비디오 뷰어를 만듭니다.
 
-**HTML5 Viewer SDK API를 사용하여 만든 비디오 뷰어를 기반으로 비디오 보고서를 보려면 다음을 수행하십시오.**
+**Dynamic Media HTML5 Viewer SDK를 사용하여 만든 비디오 뷰어를 기반으로 한 비디오 보고서를 보려면 다음을 수행하십시오.**
 
 1. 게시된 비디오 자산으로 이동합니다.
 1. 자산 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL Viewers]**&#x200B;를 선택합니다.
@@ -1068,7 +1079,7 @@ Dynamic Media에서 제공하는 기본 비디오 뷰어를 사용하거나 기�
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-## 비디오에 캡션 추가 {#adding-captions-to-video}
+## 비디오에 캡션 또는 자막 추가 {#adding-captions-to-video}
 
 단일 비디오나 응용 비디오 세트에 자막을 추가하여 비디오의 범위를 글로벌 마켓플레이스로 확장할 수 있습니다. 캡션을 추가하면 오디오를 복제할 필요가 없고 다른 언어별로 오디오를 다시 녹음하기 위해 기본 스피커를 사용할 필요가 없습니다. 비디오는 녹음된 언어로 재생됩니다. 외국어 자막이 나타나므로 다른 언어를 사용하는 사람들이 오디오 부분을 계속 이해할 수 있습니다.
 
@@ -1096,13 +1107,13 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
    최상의 결과를 얻으려면 Internet Explorer 9 이상, Google Chrome 또는 Safari에서 도구를 사용하십시오.
 
-   도구의 **[!UICONTROL 비디오 파일의 URL 입력]** 필드에서 복사한 비디오 파일의 URL을 붙여넣은 다음 **[!UICONTROL 로드]**&#x200B;를 클릭합니다. [비디오 파일 자체에 URL을 가져올 수 있는 URL을 가져오려면 ](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)비디오 파일 필드의 URL 입력&#x200B;]**을 참조하십시오.**[!UICONTROL  Internet Explorer, Chrome 또는 Safari는 기본적으로 비디오를 재생할 수 있습니다.
+   도구의 **[!UICONTROL 비디오 파일의 URL 입력]** 필드에서 복사한 비디오 파일의 URL을 붙여넣은 다음 **[!UICONTROL 로드]**&#x200B;를 클릭합니다. [비디오 파일 자체에 대한 URL을 가져오려면 ](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)에 대한 URL을 획득 을 참조하고, 이 URL을 **[!UICONTROL 비디오 파일 필드의 URL 입력]**&#x200B;에 붙여넣을 수 있습니다. Internet Explorer, Chrome 또는 Safari는 기본적으로 비디오를 재생할 수 있습니다.
 
    이제 사이트에서 화면의 지침에 따라 WebVTT 파일을 작성하고 저장합니다. 완료되면 캡션 파일 내용을 복사하여 일반 텍스트 편집기에 붙여넣은 다음 `.vtt` 파일 확장자로 저장합니다.
 
    >[!NOTE]
    >
-   >여러 언어로 된 비디오 자막을 글로벌 지원을 위해 WebVTT 표준을 사용하려면 지원할 각 언어에 대해 별도의 .vtt 파일과 호출을 만들어야 합니다.
+   >여러 언어로 비디오 자막을 글로벌 지원하려면 WebVTT 표준을 사용하려면 지원할 각 언어에 대해 별도의 .vtt 파일과 호출을 만들어야 합니다.
 
    일반적으로 캡션 VTT 파일의 이름을 비디오 파일과 같은 이름으로 지정하고 -EN, -FR 또는 -DE와 같은 언어 로케일에 추가하려고 합니다. 이렇게 하면 기존 웹 컨텐츠 관리 시스템을 사용하여 비디오 URL의 생성을 자동화하는 데 도움이 됩니다.
 
@@ -1143,7 +1154,7 @@ URL에서 JSON 함수를 사용하는 방법에 대한 자세한 내용은 *Dyna
 
 다음 샘플을 사용하여 장 탐색 기능을 사용하여 WebVTT 파일을 만들 수 있습니다.
 
-### 비디오 장 탐색 {#webvtt-file-with-video-chapter-navigation}이 있는 WebVTT 파일
+### 비디오 장 탐색 기능이 있는 WebVTT 파일 {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT
@@ -1207,7 +1218,7 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
      </tbody>
    </table>
 
-## Dynamic Media의 비디오 축소판 정보 - Scene7 모드 {#about-video-thumbnails-in-dynamic-media-scene-mode}
+## Dynamic Media - Scene7 모드의 비디오 축소판 정보 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
 비디오 축소판은 고객에게 비디오를 나타내는 이미지 자산 또는 비디오 프레임의 축소된 버전입니다. 축소판은 고객이 비디오를 클릭하도록 권장하는 데 사용됩니다.
 
@@ -1255,11 +1266,11 @@ Experience Manager의 모든 비디오에는 연결된 축소판이 있어야 �
 1. Change Thumbnail 페이지에서 **[!UICONTROL Save Change]**&#x200B;를 누릅니다.
 1. 비디오의 속성 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭합니다.
 
-## Dynamic Media의 비디오 축소판 정보 - 하이브리드 모드 {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
+## Dynamic Media - 하이브리드 모드의 비디오 축소판 정보 {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
 Dynamic Media에서 자동으로 생성된 10개의 축소판 이미지 중 하나를 선택하여 비디오에 추가할 수 있습니다. Experience Manager 사이트, Experience Manager 모바일 또는 Experience Manager Screens의 작성 환경에서 비디오 자산이 Dynamic Media 구성 요소와 함께 사용되는 경우 비디오 플레이어에 선택한 축소판이 표시됩니다. 축소판은 전체 비디오의 내용을 가장 잘 나타내는 정적 그림 역할을 하며 사용자가 재생 단추를 클릭하도록 합니다.
 
-비디오의 총 시간을 기준으로 Dynamic Media은 10(기본값) 축소판 이미지를 비디오에 캡처합니다. 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% 및 91%입니다. 열 축소판은 지속됩니다. 즉, 나중에 다른 축소판을 선택하더라도 시리즈를 다시 생성할 필요가 없습니다. 10개의 축소판 이미지를 미리 보고 비디오에 사용할 이미지를 선택합니다. 기본값으로 변경하려면 CRXDE Lite을 사용하여 축소판 이미지가 생성되는 시간 간격을 구성할 수 있습니다. 예를 들어 비디오에서 균일하게 배치된 네 개의 축소판 이미지만 생성하려는 경우 간격 시간을 24%, 49%, 74% 및 99%로 구성할 수 있습니다.
+Dynamic Media은 비디오의 총 시간을 기반으로 10개의(기본값) 축소판 이미지를 캡처합니다. 이 영상은 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81%, 91%로 녹화된 것이다. 열 축소판은 지속됩니다. 즉, 나중에 다른 축소판을 선택하더라도 시리즈를 다시 생성할 필요가 없습니다. 10개의 축소판 이미지를 미리 보고 비디오에 사용할 이미지를 선택합니다. 기본값으로 변경하려면 CRXDE Lite을 사용하여 축소판 이미지가 생성되는 시간 간격을 구성할 수 있습니다. 예를 들어 비디오에서 균일하게 배치된 네 개의 축소판 이미지만 생성하려는 경우 간격 시간을 24%, 49%, 74% 및 99%로 구성할 수 있습니다.
 
 가장 좋은 방법은 비디오를 업로드한 후 언제든지 웹 사이트에 비디오를 게시하기 전에 비디오 축소판을 추가할 수 있는 것입니다.
 
@@ -1290,7 +1301,7 @@ Dynamic Media에서 생성된 축소판을 사용하는 대신 사용자 정의 
 
    [비디오 축소판이 생성되는 기본 시간 간격 구성](#configuring-the-default-time-interval-that-video-thumbnails-are-generated)을 참조하십시오.
 
-#### 비디오 축소판이 생성되는 기본 시간 간격 구성 {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
+#### 비디오 축소판이 생성되는 기본 시간 간격을 구성합니다 {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
 새로운 기본 시간 간격을 구성하고 저장하면 나중에 업로드하는 비디오에만 변경 사항이 자동으로 적용됩니다. 이전에 업로드한 비디오에는 새 기본값이 자동으로 적용되지 않습니다. 기존 비디오의 경우 축소판을 다시 생성해야 합니다.
 
