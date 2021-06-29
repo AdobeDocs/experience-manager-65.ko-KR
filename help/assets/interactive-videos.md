@@ -11,9 +11,9 @@ docset: aem65
 feature: 대화형 비디오
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '6013'
+source-wordcount: '6015'
 ht-degree: 0%
 
 ---
@@ -72,14 +72,14 @@ ht-degree: 0%
 대화형 비디오 단계:
 
 1. **(선택 사항) Quickview 변수 식별**  - 기존 Quickview 구현에서 사용하는 동적 변수를 식별하여 시작합니다. 대화형 비디오를 만들 때 변수를 사용하여 제품 축소판 그림을 해당 제품 빠른 보기에 매핑합니다. [(선택 사항) Quickview 변수 식별](#optional-identifying-quickview-variables)을 참조하십시오.
-   *이 단계는 다음 사항이 모두 참인 경우에만 필요합니다*.・ Quickviews에 트리거하여 비디오에 대화형 기능을 추가하려고 합니다.
-・ Experience Manager 구현은 IBM® WebSphere® Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* Experience Manager 자산](/help/commerce/cif-classic/administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
+   *이 단계는 다음 사항이 모두 참인 경우에만 필요합니다*.・ Quickview에 트리거하여 비디오에 상호 작용을 추가하려고 합니다.
+・ Experience Manager 구현은 IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* Experience Manager 자산](/help/commerce/cif-classic/administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
 
-1. **(선택 사항) 대화형 비디오 뷰어 사전 설정 만들기**  - 비디오 스크러버 및 대화형 축소판과 같은 플레이어를 구성하는 다양한 구성 요소의 모양과 동작을 사용자 정의합니다.
+1. **(선택 사항) 대화형 비디오 뷰어 사전 설정 만들기**  - 비디오 스크러버 및 대화형 축소판과 같은 플레이어를 구성하는 다양한 구성 요소의 모양과 동작을 사용자 지정합니다.
 기본 제공 대화형 비디오 뷰어 사전 설정 `Shoppable_Video_Light` 또는 `Shoppable_Video_Dark` 을 대신 사용하려는 경우에는 대화형 비디오 뷰어 사전 설정을 직접 만들 필요가 없습니다.
-[새 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)(선택 사항) 및 [대화형 뷰어 사전 설정 작성에 대한 특수 고려 사항](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset)을 참조하십시오.
+[뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)(선택 사항) 및 [대화형 뷰어 사전 설정 만들기에 대한 특수 고려 사항](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset)을 참조하십시오.
 
-1. **비디오 및 관련 이미지 자산 업로드**  - 대화형으로 만들려는 비디오 및 관련 이미지를 업로드합니다.
+1. **비디오 및 관련 이미지 자산 업로드**  - 대화형 비디오와 연결된 이미지를 업로드합니다.
 [비디오 및 관련 축소판 자산 업로드](#uploading-a-video-and-its-associated-thumbnail-assets)를 참조하십시오.
 
 1. **비디오에 대화형 활동 추가**  - 비디오에 하나 이상의 시간 세그먼트를 추가합니다. 그런 다음 해당 시간 세그먼트 내에서 이미지 축소판을 연결합니다. 하이퍼링크, 빠른 보기 또는 경험 조각과 같은 작업에 각 이미지 축소판을 할당합니다.
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 1. **Experience Manager** 에서 웹 사이트 또는 웹 사이트에 대화형 비디오 추가 - Experience Manager 사이트, eCommerce 또는 둘 다 사용하는 경우 웹 페이지에 대화형 비디오를 추가할 수 있습니다. 대화형 미디어 구성 요소를 Experience Manager의 페이지로 드래그합니다. [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 포함 코드 또는 URL을 사용하여 대화형 비디오를 웹 사이트 환경과 통합합니다. [웹 사이트와 대화형 비디오 통합](#integrating-an-interactive-video-with-your-website)을 참조하십시오.
-타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. [기존 Quickview](#integrating-an-interactive-video-with-an-existing-quickview)와 대화형 비디오 통합 을 참조하십시오.
+타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. [기존 Quickview](#integrating-an-interactive-video-with-an-existing-quickview)와 대화형 비디오를 통합합니다.
    [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 ## (선택 사항) Quickview 변수 식별 {#optional-identifying-quickview-variables}
@@ -98,8 +98,8 @@ ht-degree: 0%
 >
 >이 작업은 다음 내용이 true인 경우에만 필요합니다.
 >
->* 빠른 보기를 트리거하여 비디오에 상호 작용을 추가하려고 합니다.
->* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* Experience Manager 자산](/help/commerce/cif-classic/administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
+>* Quickview에 트리거하여 비디오에 상호 작용을 추가하려고 합니다.
+>* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* Experience Manager 자산](/help/commerce/cif-classic/administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
 
 >
 >
@@ -234,11 +234,11 @@ Quickview URL 및 그 결과 축소판 변수의 다음 예를 생각해 보십�
 
 대화형 비디오 뷰어 사전 설정이 추가한 비디오 및 모든 타임라인 세그먼트를 올바르게 렌더링합니다. 또한 미리 보기 모드에서 제품 축소판을 클릭할 때 기본 Quickview 예시를 사용하므로 게시하기 전에 해당 상호 작용을 테스트할 수 있습니다.
 
-뷰어 사전 설정을 저장하면 [뷰어 사전 설정] 페이지에서 해당 상태가 **On**으로 자동으로 설정됩니다. 이 상태는 Dynamic Media 구성 요소에 표시되고 이 구성 요소로 비디오를 미리 볼 때마다 표시됩니다. 새 뷰어 사전 설정을 수동으로 게시해야 합니다.
+뷰어 사전 설정을 저장하면 [뷰어 사전 설정] 페이지에서 해당 상태가 자동으로 **On**&#x200B;로 설정됩니다. 이 상태는 Dynamic Media 구성 요소에 표시되고 이 구성 요소로 비디오를 미리 볼 때마다 표시됩니다. 새 뷰어 사전 설정을 수동으로 게시해야 합니다.
 
 고유한 대화형 비디오 뷰어 사전 설정을 만들려면 [새 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) 를 참조하십시오.
 
-## 비디오와 관련 썸네일 자산 업그레이드 {#uploading-a-video-and-its-associated-thumbnail-assets}
+## 비디오 및 관련 축소판 자산 업로드 {#uploading-a-video-and-its-associated-thumbnail-assets}
 
 비디오 및 축소판 자산을 이미 업로드한 경우 [비디오에 상호 작용 추가](#adding-interactivity-to-your-video)로 진행합니다.
 
@@ -253,7 +253,7 @@ Quickview URL 및 그 결과 축소판 변수의 다음 예를 생각해 보십�
 
    이제 비디오에 대화형 기능을 추가합니다.
 
-## 비디오에 인터랙티브한 추가 {#adding-interactivity-to-your-video}
+## 비디오에 대화형 기능 추가 {#adding-interactivity-to-your-video}
 
 대화형 비디오 만들기 페이지에서 즉석 시각적 편집기를 사용하여 비디오에 타임라인 세그먼트를 추가합니다.
 
@@ -493,13 +493,13 @@ Quickview URL 및 그 결과 축소판 변수의 다음 예를 생각해 보십�
 
 1. 대화형 비디오를 게시합니다. 게시하면 웹 사이트 경험에 최종적으로 복사하여 붙여넣는 포함 코드 또는 URL이 만들어집니다.
 
-   빠른 보기를 사용하여 상호 작용을 추가한 경우 포함 코드만 사용하십시오.하이퍼연결된 웹 페이지가 포함된 상호 작용을 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
+   Quickview를 사용하여 상호 작용을 추가한 경우 포함 코드만 사용하십시오.하이퍼연결된 웹 페이지가 포함된 상호 작용을 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 
    [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
    >[!NOTE]
    >
-   >Quickviews를 사용하여 쇼퍼블 비디오를 게시하려면 상거래 영역에서 각 비디오의 관련 이미지 자산을 별도로 게시해야 합니다.
+   >Quickview를 사용하여 쇼퍼블 비디오를 게시하려면 상거래 영역에서 각 비디오의 관련 이미지 자산을 별도로 게시해야 합니다.
 
    타임라인 세그먼트를 추가하고 대화형 비디오를 게시하면 기존 웹 사이트 랜딩 페이지에 추가할 수 있습니다. [웹 사이트와 대화형 비디오 통합](#integrating-an-interactive-video-with-your-website)을 참조하십시오.
 
@@ -516,9 +516,8 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 독립형 Experience Manager Assets 고객의 경우 이 섹션에 설명된 대로 웹 사이트에 대화형 비디오를 수동으로 추가할 수 있습니다.
 
 1. 게시된 대화형 비디오의 포함 코드 또는 URL을 복사합니다.
-웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
-[
-빠른 보기를 사용하여 상호 작용을 추가한 경우 포함 코드만 사용하십시오.하이퍼연결된 웹 페이지가 포함된 상호 작용을 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
+[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
+Quickview를 사용하여 상호 작용을 추가한 경우 포함 코드만 사용하십시오.하이퍼연결된 웹 페이지가 포함된 상호 작용을 추가한 경우 게시된 URL을 사용할 수도 있습니다. 그러나 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우에는 URL 기반 연결 방법을 사용할 수 없습니다.
 
 1. 대상의 웹 페이지 코드에서 정적 비디오가 있는 위치를 식별합니다.
 1. 정적 비디오를 제거하고 Experience Manager 자산에서 복사한 포함 코드 또는 URL로 코드를 바꿉니다.
@@ -528,7 +527,7 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 >
 >따라서 하이퍼링크된 웹 페이지로만 상호 작용을 추가한 경우 됩니다.
 >
->그러나 빠른 보기를 트리거하기 위해 상호 작용을 추가한 경우 대화형 비디오 옆에 있는 축소판은 표시 목적으로만 사용됩니다.아직 기존 빠른 보기와 통합되지 않았습니다. 이러한 경우 이제 웹 사이트의 기존 빠른 보기와 대화형 비디오를 통합해야 합니다.
+>그러나 빠른 보기를 트리거하기 위해 상호 작용을 추가한 경우 대화형 비디오 옆에 있는 축소판은 표시 목적으로만 사용됩니다.아직 기존 Quickview와 통합되지 않았습니다. 이러한 경우 이제 대화형 비디오를 웹 사이트의 기존 Quickview와 통합해야 합니다.
 
 **예**
 
@@ -563,7 +562,7 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 </script>
 ```
 
-통합은 비디오 포함 코드를 제거하고 Experience Manager에서 대화형 비디오 포함 코드로 바꾸는 것만큼 간단합니다. 다음 URL에서 결과를 볼 수 있습니다. 페이지에 있는 대화형 비디오에 대한 표시이지만 아직 기존 빠른 보기에 통합되지 않았습니다.
+통합은 비디오 포함 코드를 제거하고 Experience Manager에서 대화형 비디오 포함 코드로 바꾸는 것만큼 간단합니다. 다음 URL에서 결과를 볼 수 있습니다. 페이지에 있는 대화형 비디오에 대한 표시이지만 아직 기존 Quickview에 통합되지 않았습니다.
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
@@ -595,7 +594,7 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 * 축소판 데이터를 기반으로 Quickview URL을 구성합니다.
 * 백엔드에서 Quickview를 로드하고 표시하기 위해 화면에서 렌더링하는 프로세스를 트리거합니다.
 
-또한 대화형 비디오 뷰어는 전체 화면 작업 모드를 지원합니다. 최종 사용자는 전체 화면을 종료하지 않고 축소판을 클릭하여 빠른 보기를 트리거합니다. 이 기능을 사용하려면 빠른 보기 모달 대화 상자가 뷰어의 컨테이너에 연결되도록 프런트 엔드 코드를 변경합니다. 뷰어가 전체 화면 모드에 있을 때 사용할 수 없는 문서 BODY 또는 기타 웹 페이지 요소를 추가하지 마십시오. 이 작업을 수행하는 코드는 페이지에 로드되는 뷰어 다음에 전송되는 하나 이상의 뷰어 콜백을 수신해야 합니다.
+또한 대화형 비디오 뷰어는 전체 화면 작업 모드를 지원합니다. 최종 사용자는 전체 화면을 종료하지 않고 축소판을 클릭하여 Quickview를 트리거합니다. 이 기능을 사용하려면 빠른 보기 모달 대화 상자가 뷰어의 컨테이너에 연결되도록 프런트 엔드 코드를 변경합니다. 뷰어가 전체 화면 모드에 있을 때 사용할 수 없는 문서 BODY 또는 기타 웹 페이지 요소를 추가하지 마십시오. 이 작업을 수행하는 코드는 페이지에 로드되는 뷰어 다음에 전송되는 하나 이상의 뷰어 콜백을 수신해야 합니다.
 
 Experience Manager이 반환한 포함 코드에 이미 사용 가능한 이벤트 처리기가 있습니다. 강조 표시된 다음 코드 조각에 표시된 대로 주석 처리됩니다.
 
@@ -769,4 +768,4 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 ## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
-[빠른 보기를 사용하여 사용자 지정 팝업 만들기](/help/assets/custom-pop-ups.md)를 참조하십시오.
+[Quickview](/help/assets/custom-pop-ups.md)를 사용하여 사용자 지정 팝업 만들기를 참조하십시오.
