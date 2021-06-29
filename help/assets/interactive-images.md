@@ -11,9 +11,9 @@ docset: aem65
 feature: 대화형 이미지
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '4284'
+source-wordcount: '4286'
 ht-degree: 0%
 
 ---
@@ -46,12 +46,12 @@ ht-degree: 0%
 
 대화형 이미지 단계:
 
-1. **(선택 사항) 핫스팟 변수 식별**  - Experience Manager 자산 및 Dynamic Media 독립 실행형을 사용하는 경우 기존 Quickview 구현에서 사용되는 동적 변수를 식별하여 시작합니다. 그런 다음 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있습니다. [(선택 사항) 핫스팟 변수 식별](#optional-identifying-hotspot-variables)을 참조하십시오.
+1. **(선택 사항) 핫스팟 변수 식별**  - Experience Manager 자산 및 Dynamic Media 독립 실행형을 사용하는 경우 기존 Quickview 구현에서 사용되는 동적 변수를 식별하여 시작합니다. 그런 다음 대화형 이미지를 만들 때 핫스팟 데이터를 입력할 수 있습니다. [(선택 사항) 핫스팟 변수 식별](#optional-identifying-hotspot-variables) 을 참조하십시오.
 그러나 Adobe Experience Manager Sites, Adobe Experience Manager eCommerce 또는 두 가지 모두를 사용하는 경우 이 단계가 필요하지 않습니다.
 Experience Manager 자산](/help/commerce/cif-classic/administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
 
 1. **(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기**  - 핫스팟을 표시하는 데 사용되는 그래픽 이미지를 사용자 지정합니다. `Shoppable_Banner` 이라는 기본 대화형 이미지 뷰어 사전 설정을 대신 사용하려는 경우에는 대화형 이미지 뷰어 사전 설정을 만들 필요가 없습니다.
-[(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)를 참조하십시오.
+[(선택 사항) 대화형 이미지 뷰어 사전 설정 만들기](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) 를 참조하십시오.
 
 1. **이미지 배너 업로드**  - 대화형 이미지를 만들 이미지 배너를 업로드합니다.
 [이미지 배너 업로드](#uploading-an-image-banner)를 참조하십시오.
@@ -66,15 +66,15 @@ Experience Manager 자산](/help/commerce/cif-classic/administering/concepts.md)
 
    Experience Manager 자산 및 Dynamic Media 독립 실행형 을 사용하는 경우 웹 사이트에서 포함 코드를 복사한 다음 기존 Quickview와 통합해야 합니다. [웹 사이트와 대화형 이미지 통합](#integrating-an-interactive-image-with-your-website)을 참조하십시오.
 
-   타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. [기존 Quickview](#integrating-an-interactive-image-with-an-existing-quickview)와 대화형 이미지 통합을 참조하십시오.
+   타사 WCM(Web Content Manager)을 사용하는 경우, 새 대화형 비디오를 웹 사이트에서 사용되는 기존 Quickview 구현과 통합해야 합니다. [기존 Quickview](#integrating-an-interactive-image-with-an-existing-quickview)와 대화형 이미지를 통합합니다.
 
-## (선택 사항) 핫스팟 변수 식별 {#optional-identifying-hotspot-variables}
+## (선택 사항) 핫스팟 변수를 식별합니다 {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
 >이 작업은 다음 내용이 true인 경우에만 필요합니다.
 >
->* 빠른 보기에 트리거하여 이미지에 상호 작용을 추가하려고 합니다.
+>* Quickview에 트리거하여 이미지에 상호 작용을 추가하려고 합니다.
 >* Experience Manager 구현에서는 IBM® WebSphere® Commerce, Elastic Path, hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 Experience Manager으로 제품 데이터를 가져오는 데 eCommerce 통합 프레임워크를 사용하지 *않습니다.* Experience Manager 자산](/help/commerce/cif-classic/administering/concepts.md)의 [eCommerce 개념을 참조하십시오.
 
 >
@@ -164,7 +164,7 @@ Quickview URL 및 그 결과 핫스팟 변수의 다음 예를 생각해 보십�
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-데모 웹 페이지에는 &quot;자세히 보기&quot;라는 빠른 보기 단추가 있는 여러 제품 축소판이 있습니다. 웹 브라우저의 디버깅 도구가 계속 활성화되면 각 단추를 클릭하고 기록된 Quickview URL을 기록해 둡니다. 페이지에서 사용할 수 있는 4개의 제품 빠른 보기를 모두 활성화하면 백엔드에 대해 수행된 Quickview 요청 목록이 있습니다.
+데모 웹 페이지에는 &quot;자세히 보기&quot;라는 빠른 보기 단추가 있는 여러 제품 축소판이 있습니다. 웹 브라우저의 디버깅 도구가 계속 활성화되면 각 단추를 클릭하고 기록된 Quickview URL을 기록해 둡니다. 페이지에서 사용할 수 있는 4개의 제품 Quickview를 모두 활성화하면 백엔드에 대한 다음 Quickview 요청 목록이 있습니다.
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -292,7 +292,7 @@ Experience Manager 자산과 함께 제공되는 `Shoppable_Banner`이라는 기
 
    링크를 새 브라우저 탭(권장 기본값)에서 열지 또는 동일한 탭에서 열지를 지정해야 합니다.
 
-   자세한 내용은 [선택기 작업](/help/assets/working-with-selectors.md)을 참조하십시오.
+   자세한 내용은 [선택기를 사용한 작업](/help/assets/working-with-selectors.md)을 참조하십시오.
 
    * **[!UICONTROL 경험 조각]**&#x200B;을 누릅니다.
 
@@ -323,9 +323,8 @@ Experience Manager 자산과 함께 제공되는 `Shoppable_Banner`이라는 기
 [미리 보기]를 사용하여 고객에게 대화형 이미지가 표시되는 방식을 보여주고, 이미지의 핫스팟을 테스트하여 예상대로 작동하는지 확인할 수 있습니다.
 
 대화형 이미지에 만족하면 게시할 수 있습니다.
-웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
-[
-[URL을 웹 애플리케이션에 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
+[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
+[웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 대화형 컨텐츠에 상대 URL이 있는 링크, 특히 Experience Manager 사이트 페이지에 대한 링크가 있는 경우 URL 기반 연결 방법이 없습니다.
 [페이지에 Dynamic Media 자산 추가](/help/assets/adding-dynamic-media-assets-to-pages.md)를 참조하십시오.
 
 **대화형 이미지를 미리 보려면:**
@@ -348,7 +347,7 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 독립형 Experience Manager Assets 고객인 경우, 이 섹션에 설명된 대로 웹 사이트에 대화형 이미지를 수동으로 추가할 수 있습니다.
 
 1. 게시된 대화형 이미지의 포함 코드를 복사합니다.
-웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.[
+[웹 페이지에 비디오 또는 이미지 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
 
 1. 복사한 포함 코드를 웹 페이지 내에서 원하는 위치에 추가합니다.
 복사된 포함 코드는 응답형 환경에 대해 설정되어 지정된 영역에 자동으로 맞게 설정됩니다.
@@ -370,7 +369,7 @@ Experience Manager 사이트 고객인 경우 대화형 미디어 구성 요소�
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
-따라서 데모 웹 사이트의 쇼퍼블 대화형 이미지에 있는 핫스팟은 표시 목적으로만 사용됩니다.아직 기존 빠른 보기와 통합되지 않았습니다.
+따라서 데모 웹 사이트의 쇼퍼블 대화형 이미지에 있는 핫스팟은 표시 목적으로만 사용됩니다.아직 기존 Quickview와 통합되지 않았습니다.
 
 응답형 환경을 위한 쇼퍼블 대화형 이미지에 &quot;자르기&quot;를 적용하려면 경로에 대화형 이미지 구성 속성 `ZoomView.iscommand`을 포함할 수 있습니다. 구성 요소 `ZoomView`은 호출되고 `iscommand`은 사용자가 적용하는 &quot;자르기&quot; 이미지 제공 명령입니다.
 
@@ -518,4 +517,4 @@ loadQuickView(quickViewUrl);
 
 ## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
 
-[빠른 보기를 사용하여 사용자 지정 팝업 만들기](/help/assets/custom-pop-ups.md)를 참조하십시오.
+[Quickview](/help/assets/custom-pop-ups.md)를 사용하여 사용자 지정 팝업 만들기를 참조하십시오.
