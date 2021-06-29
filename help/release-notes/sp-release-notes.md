@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '3838'
+source-wordcount: '3837'
 ht-degree: 12%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 12%
 
 [!DNL Adobe Experience Manager] 6.5.9.0에 도입된 주요 기능 및 개선 사항은 다음과 같습니다.
 
-* [!DNL Experience Manager Sites] 이제 Dynamic Media Foundation 구성 요소에서 응답형 이미지 사전 설정 또는 스마트 자르기를 사용할 때 고해상도 장치에 대한 최적화를 켜거나 끌 수 있습니다.
+* [!DNL Experience Manager Sites] 이제 Dynamic Media Foundation 구성 요소를 사용하여 응답형 이미지 사전 설정 또는 스마트 자르기를 사용할 때 고해상도 장치에 대한 최적화를 켜거나 끌 수 있습니다.
 
 * 성능을 향상시키기 위해 `hidden=false` 조건이 JCR 쿼리에서 [!UICONTROL QueryBuilder] 평가기로 이동됩니다. 변경 후 숨겨진 설명이 작동하는지 확인하려면 [!DNL Experience Manager] 은 숨겨진 폴더가 표시되지 않는지 확인합니다.
 
@@ -66,10 +66,10 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되는 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
+>서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java™ SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되는 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
 >[!DNL Azul Zulu] JDK에 대한 지원은 [!DNL Experience Manager] 고객에게도 Adobe이 제공합니다.
 >[Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 [!DNL Azul Zulu] JDK의 관련 버전을 다운로드할 수 있습니다.
->Adobe에 의해 배포되는 Oracle Java 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en)를 참조하십시오.
+>Adobe에 의해 배포되는 Oracle Java™ 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java™] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en)를 참조하십시오.
 
 다음은 [!DNL Experience Manager] 6.5.9.0 릴리스에서 제공된 수정 사항 목록입니다.
 
@@ -91,7 +91,7 @@ ht-degree: 12%
 
 * Live Copy를 동기화하려고 할 때(롤아웃 구성을 사용하는 동안 [!UICONTROL 블루프린트 활성화에서 활성화] 및 [!UICONTROL 블루프린트 활성화에서 활성화 취소]) 구성 요소가 Live Copy 마스터에서 삭제되면 동기화가 실패하고 `NullPointerException`가 기록됩니다(NPR-36127).
 
-* 사용자가 태그(시스템에 없는 태그)에 대한 임시 텍스트를 입력하고 Enter 키를 누르면 태그 아래에 태그가 표시되지만 컨텐츠 조각을 저장하고 다시 열면 임시 태그가 사라집니다(NPR-36132).
+* 사용자가 태그에 대한 임시 텍스트(시스템에 없는 태그)를 입력하고 Enter 키를 누르면 태그 필드가 필드 아래에 표시되지만 컨텐츠 조각을 저장하고 다시 열면 임시 태그가 사라집니다(NPR-36132).
 
 * 받은 편지함에는 비동기 작업의 상태를 표시하는 옵션이 없습니다(NPR-36104).
 
@@ -144,7 +144,7 @@ ht-degree: 12%
 
 * 작은 타원을 사용하여 자산에 주석을 지정하면 타원이 인쇄 버전의 주석 수와 겹칩니다(NPR-36114).
 
-* 열 보기에서 중복된 자산이 업로드될 때 [!DNL Experience Manager]이 중복 자산 충돌을 묻는 메시지를 표시하지 않는 경우가 있습니다(NPR-36048).
+* 때로는 열 보기에서 중복 자산이 업로드될 때 [!DNL Experience Manager]이 중복 자산 충돌을 묻지 않습니다(NPR-36048).
 
 * 링크 공유 대화 상자가 열려 있고 변경 사항이 없는 경우 닫기 단추를 클릭하여 닫히지 않습니다(NPR-36030).
 
@@ -194,6 +194,16 @@ ht-degree: 12%
 * 필수 필드를 나타내는 시각적 별표는 이제 이미지 세트 편집기의 자산 제목 필드에 제공되며 화면 판독기에서 필드에 대한 필수 정보를 알려줍니다(CQ-4290712).
 
 * 이제 화면 판독기에서 자산 세부 사항 페이지의 뷰어 내에서 다양한 대화형 옵션의 용도에 액세스하고 나레이션할 수 있습니다(CQ-4290708).
+
+[!DNL Dynamic Media]에 알려진 비디오 재생 문제:
+
+* 
+
+   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+
+* 
+
+   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 
 Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문제를 수정합니다.
 
@@ -275,7 +285,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 ### [!DNL Communities] {#communities-6590}
 
-* 스팸 필터링에서 시스템은 Java 힙의 100%를 소비하여 Experience Manager 서버가 응답하지 않습니다(NPR-36316, NPR-36493).
+* 스팸 필터링에서 시스템은 Java™ 힙의 100%를 소비하여 Experience Manager 서버가 응답하지 않습니다(NPR-36316, NPR-36493).
 * 포럼에서 `SearchCommentSocialComponentListProvider`에서 시작된 JCR 세션 데이터가 누출됩니다(NPR-36235).
 * 특정 받은 편지함 메시지를 열면 잘못된 페이지 매김 및 기타 문제가 있는 모든 메시지가 반영됩니다(NPR-35917).
 
@@ -310,7 +320,7 @@ Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문
 
 **워크플로우**
 
-* JBoss에서 [!DNL Experience Manager Forms] 서비스의 REST 엔드포인트를 호출하면 [!DNL Experience Manager]에 다음 오류 메시지가 표시됩니다(NPR-36305).
+* JBoss®에서 [!DNL Experience Manager Forms] 서비스의 REST 엔드포인트를 호출하면 [!DNL Experience Manager]에 다음 오류 메시지가 표시됩니다(NPR-36305).
 
    ```TXT
    Invalid input. The maximum length of 2000 characters was exceeded.
@@ -400,7 +410,7 @@ B. [패키지 관리자에서 HTTP API](/help/sites-administering/package-manage
 
 >[!NOTE]
 >
->AEM 6.5.9.0에는 [AEM Forms 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 AEM 6.5.9.0으로 업데이트하는 경우 Forms 추가 기능 패키지의 패키지 설치 후 최신 버전을 설치하십시오.
+>Experience Manager 6.5.9.0에는 [AEM Forms 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 Experience Manager 6.5.9.0으로 업데이트하는 경우 Forms 추가 기능 패키지의 패키지 설치 후 최신 버전의 패키지를 설치하십시오.
 
 ### JEE에 Adobe Experience Manager Forms 설치 {#install-aem-forms-jee-installer}
 
@@ -435,14 +445,14 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 
 ## 이제 사용되지 않는 기능 {#removed-deprecated-features}
 
-다음은 [!DNL Experience Manager] 6.5.7.0에서 더 이상 사용되지 않는 것으로 표시된 기능 및 기능 목록입니다. 기능은 처음에 더 이상 사용되지 않으며 이후 릴리스에서 이후에 제거됩니다. 일반적으로 대체 옵션이 제공됩니다.
+다음은 [!DNL Experience Manager] 6.5.7.0에서 더 이상 사용되지 않는 것으로 표시된 기능 및 기능 목록입니다. 기능은 처음에 더 이상 사용되지 않으며 이후 릴리스에서 이후에 제거됩니다. 다른 옵션이 제공됩니다.
 
 배포에서 기능 또는 기능을 사용하는지 검토합니다. 또한 대체 옵션을 사용하도록 구현을 변경할 계획입니다.
 
 | 영역 | 기능 | 대체 |
 |---|---|---|
 | 통합 | **[!UICONTROL AEM 클라우드 서비스 옵트인]** 화면은 더 이상 사용되지 않습니다. Adobe IMS 및 [!DNL Adobe I/O]을 통해 인증을 사용하는 Adobe Target Standard API를 지원하고 분석 및 개인화를 위해 Experience Manager 페이지를 계측하는 Adobe Launch의 늘어나는 역할을 지원하도록 Experience Manager 6.5에서 옵트인 마법사가 기능상 무관해졌습니다. | 각각의 [!DNL Experience Manager] 클라우드 서비스를 통해 시스템 연결, Adobe IMS 인증 및 [!DNL Adobe I/O] 통합을 구성합니다. |
-| 커넥터 | Microsoft SharePoint 2010 및 Microsoft SharePoint 2013용 Adobe JCR 커넥터는 Experience Manager 6.5에서 더 이상 사용되지 않습니다. | N/A |
+| 커넥터 | Microsoft® SharePoint 2010 및 Microsoft® SharePoint 2013용 Adobe JCR 커넥터는 Experience Manager 6.5에서 더 이상 사용되지 않습니다. | N/A |
 
 ## 알려진 문제 {#known-issues}
 
