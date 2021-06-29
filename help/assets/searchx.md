@@ -5,7 +5,7 @@ contentOwner: AG
 role: Developer
 feature: 검색
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 8%
@@ -59,7 +59,7 @@ ht-degree: 8%
 
 속성 설명을 빌드하려면 다음을 수행하십시오.
 
-1. 프로젝트 디렉토리에서 구성 요소 폴더를 만듭니다(예: **/apps/geometrixx/components/titlede조건자**).
+1. 프로젝트 디렉토리에서 구성 요소 폴더를 만듭니다(예: **/apps/weretail/components/title조건자**).
 1. **content.xml** 추가:
 
    ```xml
@@ -152,7 +152,7 @@ ht-degree: 8%
 
 그룹 설명을 작성하려면 다음을 수행하십시오.
 
-1. 프로젝트 디렉토리에 구성 요소 폴더를 만듭니다(예: **/apps/geometrixx/components/picspredicate).**
+1. 프로젝트 디렉토리에서 구성 요소 폴더를 만듭니다(예: **/apps/weretail/components/picspredicate**).
 1. **content.xml** 추가:
 
    ```xml
