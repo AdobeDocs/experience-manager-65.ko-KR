@@ -12,10 +12,10 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: 뷰어
 role: Business Practitioner, Administrator
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 그러나 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다. 뷰어에 따라 이 기능을 사용하면 핫스팟이나 축소판 이미지 또는 이미지 맵에서 탭하여 정보나 관련 컨텐츠를 볼 수 있습니다.
 
-빠른 보기는 Dynamic Media의 다음 뷰어에서 지원합니다.
+빠른 보기는 Dynamic Media의 다음 뷰어에서 지원됩니다.
 
 * 대화형 이미지(클릭 가능한 핫스팟)
 * 대화형 비디오(비디오 재생 중 클릭 가능한 축소판 이미지)
@@ -114,7 +114,7 @@ ht-degree: 2%
 
 1. 이제 `quickViewActivate` 처리기를 구성해야 합니다.
 
-   `quickViewActivate` 처리기는 뷰어의 빠른 보기를 제어합니다. 처리기에는 Quickview에 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 Quickview에 설정된 SKU 변수와 샘플 `loadQuickView` 함수 호출에 대한 매핑을 제공합니다.
+   `quickViewActivate` 처리기는 뷰어의 Quickview를 제어합니다. 처리기에는 Quickview에 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 Quickview에 설정된 SKU 변수와 샘플 `loadQuickView` 함수 호출에 대한 매핑을 제공합니다.
 
    **웹**
 페이지에서 사용할 변수 mappingMap 변수를 SKU 값 및 Quickview에 포함된 일반 변수에 매핑합니다.
