@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: AEM 6.5 작성 사용 안내서
 breadcrumb-title: 작성 안내서
 user-guide-description: AEM에서의 컨텐츠 생성 및 작성에 대한 주요 개념을 알아봅니다.
 feature: 작성
 role: Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 95%
