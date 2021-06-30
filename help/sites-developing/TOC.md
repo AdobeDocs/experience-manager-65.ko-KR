@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: AEM 6.5 개발 사용 안내서
 breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature: 개발
 role: Developer
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 90%
@@ -70,7 +70,7 @@ ht-degree: 90%
    + [벌크 편집기 개발](dev-bulk-editor.md)
    + [보고서 개발](dev-reports.md)
 + 구성 요소{#components}
-   + [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
+   + [코어 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html)
    + [스타일 시스템](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [구성 요소 개요](components.md)
    + [AEM 구성 요소 - 기본 사항](components-basics.md)
