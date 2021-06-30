@@ -1,13 +1,13 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: AEM 6.5 클래식 UI 작성 사용 안내서
 user-guide-description: 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다.
 feature: 작성
 role: Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 94%
