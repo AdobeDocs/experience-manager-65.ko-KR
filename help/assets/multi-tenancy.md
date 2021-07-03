@@ -2,10 +2,10 @@
 title: 컬렉션, 코드 조각 및 코드 조각 템플릿에 대한 다중 임차인
 description: 멀티 테넌트 관리 기능을 통해 고객 조직을 기반으로 CRX 저장소의 컨텐츠를 분리하여 무단 액세스를 방지하는 방법을 알아봅니다.
 contentOwner: AG
-role: Architect, Administrator, Leader
+role: Architect, Admin, Leader
 feature: 컬렉션
 exl-id: f95560c9-f1b9-4e86-94a7-70347d268d8f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 1%
