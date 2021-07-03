@@ -8,17 +8,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 워크플로우,자산 관리,표현물
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 0%
 
 ---
 
-# 메타데이터, 이미지 및 비디오 처리를 위한 프로필{#profiles-for-processing-metadata-images-and-videos}
+# 메타데이터, 이미지 및 비디오 처리 프로필{#profiles-for-processing-metadata-images-and-videos}
 
 프로필은 폴더에 업로드되는 자산에 적용할 옵션에 대한 레서피입니다. 예를 들어 업로드하는 비디오 자산에 적용할 메타데이터 프로필 및 비디오 인코딩 프로필을 지정할 수 있습니다. 또는 이미지 자산에 적용할 이미징 프로필로 제대로 잘립니다.
 
@@ -41,7 +41,7 @@ Experience Manager Assets에서 프로필 사용과 관련된 중요한 개념�
 >
 >동일한 프로필이 할당된 두 폴더 간에 자산을 이동하는 경우에도 마찬가지입니다.
 
-## {#reprocessing-assets} 폴더에서 자산 재처리
+## 폴더에서 자산 재처리 {#reprocessing-assets}
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Experience Manager Assets에서 프로필 사용과 관련된 중요한 개념�
 
    워크플로우를 모니터링하거나 진행 상태를 확인하려면 Experience Manager 기본 콘솔 페이지에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]**&#x200B;를 클릭합니다. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 기록 열기]**&#x200B;를 클릭합니다. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
 
-### 재처리 워크플로우의 일괄 처리 크기 조정 {#adjusting-load}
+### 재처리 워크플로우의 배치 크기 조정 {#adjusting-load}
 
 (선택 사항) 재처리 워크플로우의 기본 배치 크기는 작업당 50개의 자산입니다. 이 최적 배치 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 제어됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있습니다. 따라서 처리 배너는 더 오랫동안 Experience Manager 자산에 유지됩니다. 그러나 평균 파일 크기가 1MB 이하인 경우 Adobe은 값을 여러 개 100개, 1000개를 넘지 않는 것이 좋습니다. 평균 파일 크기가 수백 MB와 같이 큰 경우 배치 크기를 최대 10개까지 줄이는 것이 좋습니다.
 
