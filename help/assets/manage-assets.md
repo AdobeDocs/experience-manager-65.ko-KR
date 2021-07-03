@@ -3,10 +3,10 @@ title: 디지털 자산 관리
 description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, 주석 달기 및 버전과 같은 자산 관리 작업을 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
+role: User
 feature: 자산 관리,검색
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 03b171d2af17efee73780b01058fd62bc9d45dbd
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '9788'
 ht-degree: 0%
