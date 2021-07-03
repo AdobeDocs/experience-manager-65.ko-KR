@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 feature: CDN 캐시,Dynamic Media Classic
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 0%
 
 ---
 
-# Dynamic Media Classic {#invalidating-your-cdn-cached-content}의 방식으로 CDN 캐시 무효화
+# Dynamic Media Classic을 통해 CDN 캐시 무효화 {#invalidating-your-cdn-cached-content}
 
 Dynamic Media 자산은 CDN(Content Delivery Network)에서 캐시하여 빠른 배달을 제공합니다. 그러나 자산을 업데이트할 때에는 이러한 변경 사항을 즉시 적용할 수 있습니다. CDN 캐시 콘텐츠를 무효화하면 캐시가 만료될 때까지 기다리지 않고 Dynamic Media에서 전달하는 자산을 빠르게 업데이트할 수 있습니다.
 
