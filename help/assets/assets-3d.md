@@ -8,16 +8,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 feature: 3D 자산,자산 관리
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2306'
 ht-degree: 4%
 
 ---
 
-# Dynamic Media {#working-with-three-d-assets-dm}에서 3D 자산 작업
+# Dynamic Media에서 3D 자산 작업 {#working-with-three-d-assets-dm}
 
 Dynamic Media을 사용하면 3D 자산을 업로드, 관리, 보고 몰입형 환경으로 제공할 수 있습니다.
 
@@ -31,7 +31,7 @@ Dynamic Media에서 3D 자산을 사용하는 데 필요한 추가 구성이 없
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
-## Dynamic Media {#supported-three-d-file-formats-in-dm}에서 지원되는 3D 형식
+## Dynamic Media에서 지원되는 3D 형식 {#supported-three-d-file-formats-in-dm}
 
 Dynamic Media은 다음 3D 형식을 지원합니다.
 
@@ -44,7 +44,7 @@ Dynamic Media은 다음 3D 형식을 지원합니다.
 | STL | 입체광조형 | application/vnd.ms-pki.stl |  |
 | USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | *수집만 지원보거나 상호 작용을 사용할 수 없습니다.* USDZ는 Safari 및 iOS 장치에서 기본적으로 볼 수 있는 전용 3D 포맷입니다. |
 
-## 빠른 시작:Dynamic Media {#quick-start-three-d}의 3D 자산
+## 빠른 시작:Dynamic Media의 3D 자산 {#quick-start-three-d}
 
 다음 단계별 워크플로우 설명은 Dynamic Media - Scene7 모드에서 3D 자산을 빠르게 시작하고 실행할 수 있도록 설계되었습니다.
 
@@ -131,7 +131,7 @@ Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 �
 
 1. 페이지 상단 오른쪽에서 **[!UICONTROL 닫기]**&#x200B;를 탭하여 자산 페이지로 돌아갑니다.
 
-## 3D 미디어 구성 요소 내의 3D 자산 보기 및 상호 작용 {#interacting-with-asset-inside-three-d-media-component}
+## 3D 미디어 구성 요소 내에서 3D 자산 보기 및 상호 작용 {#interacting-with-asset-inside-three-d-media-component}
 
 웹 페이지가 **[!UICONTROL 편집]** 모드에 있는 경우 3D 자산과 상호 작용할 수 없습니다. 자산을 대화형으로 만들려면 **[!UICONTROL 미리 보기]** 기능을 사용하여 3D Media 구성 요소의 기능에 대한 전체 액세스 권한이 있는 페이지 편집기에서 웹 페이지를 볼 수 있습니다.
 
@@ -162,7 +162,7 @@ Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 �
    | **재설정** | 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 탭하여 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정을 수행하면 카메라가 더 가깝거나 더 멀게 이동되어 자산이 전체적으로 적절한 보기 크기로 표시됩니다. |  |  |
    | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 탭합니다. |  |  |
 
-## 3D 미디어 구성 요소 작업 정보 {#working-with-three-d-media-component}
+## 3D Media 구성 요소 작업 정보 {#working-with-three-d-media-component}
 
 Dynamic Media에는 웹 페이지에서 3D 모델을 대화형 볼 수 있도록 Adobe Experience Manager Sites에서 사용할 수 있는 Dynamic Media 3D Media 구성 요소가 포함되어 있습니다.
 
@@ -171,7 +171,7 @@ Dynamic Media에는 웹 페이지에서 3D 모델을 대화형 볼 수 있도록
    * [선택 사항 - 3D Media 구성 요소 구성](#configuring-the-three-d-component)
 * [3D 미디어 구성 요소에 3D 자산 할당](#assigning-a-three-d-asset-to-the-component)
 
-## 페이지 템플릿 {#adding-three-d-media-component-to-page-template}에 3D Media 구성 요소 추가
+## 페이지 템플릿에 3D Media 구성 요소 추가 {#adding-three-d-media-component-to-page-template}
 
 1. **[!UICONTROL 도구 > 일반 > 템플릿]**&#x200B;으로 이동합니다.
 1. 에서 3D 구성 요소를 활성화할 페이지 템플릿으로 이동하여 템플릿을 선택합니다.
@@ -210,7 +210,7 @@ Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 3
 
 [3D 자산을 3D Media 구성 요소에 지정](#assigning-a-three-d-asset-to-the-component)을 참조하십시오.
 
-### 선택 사항 - 3D 미디어 구성 요소 {#configuring-the-three-d-component} 구성
+### 선택 사항 - 3D Media 구성 요소 구성 {#configuring-the-three-d-component}
 
 1. Experience Manager 사이트 페이지 편집기에서 이전에 페이지에 추가한 **[!UICONTROL 3D Media Viewer]** 구성 요소를 선택합니다.
 1. **[!UICONTROL 구성]** 아이콘(공구모양)을 탭하여 구성 요소 구성 대화 상자를 열 수 있습니다.
@@ -223,7 +223,7 @@ Experience Manager을 웹 컨텐츠 관리 시스템으로 사용하는 경우 3
 
 1. 오른쪽 상단 모서리에서 확인 표시를 눌러 변경 사항을 저장합니다.
 
-## 3D 자산을 3D 미디어 구성 요소 {#assigning-a-three-d-asset-to-the-component}에 할당
+## 3D 미디어 구성 요소에 3D 자산 할당 {#assigning-a-three-d-asset-to-the-component}
 
 웹 페이지에 3D Media 구성 요소를 추가한 후 3D 자산을 여기에 할당할 수 있습니다.
 
@@ -275,7 +275,7 @@ Experience Manager을 WCM으로 사용하는 경우 이 게시 방법을 사용�
 
 1. 웹 페이지에서 복사하여 사용할 수 있는 3D 자산의 직접 프로덕션 URL을 표시할 수 있도록 **[!UICONTROL URL]**&#x200B;을 누릅니다.
 
-### 차원 뷰어 {#alternate-publish-methods}를 사용하여 Dynamic Media 3D 자산을 게시하는 대체 방법
+### 차원 뷰어를 사용하여 Dynamic Media 3D 자산을 게시하는 대체 방법 {#alternate-publish-methods}
 
 *을(를) WCM으로 사용하지 않는 경우 다음 두 가지 방법으로 Dynamic Media 3D 자산을 게시하십시오.*
 
