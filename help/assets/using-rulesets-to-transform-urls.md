@@ -5,17 +5,17 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-role: Business Practitioner, Administrator,Developer
+role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: 구성,규칙 세트
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
 
 ---
 
-# 규칙 세트를 사용하여 URL {#using-rulesets-to-transform-urls} 변환
+# 규칙 세트를 사용하여 URL 변환 {#using-rulesets-to-transform-urls}
 
 Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니다. 규칙 세트는 XML 데이터를 평가하고 특정 조건을 충족하는 경우 특정 작업을 수행하는 스크립팅 언어(예: JavaScript)로 작성된 지침 세트입니다. 각 규칙은 하나 이상의 조건과 하나 이상의 작업으로 구성됩니다. 규칙은 조건에 대해 XML 데이터를 평가하고 조건이 충족되면 적절한 작업을 수행합니다. 규칙 세트의 예는 다음과 같습니다.
 
