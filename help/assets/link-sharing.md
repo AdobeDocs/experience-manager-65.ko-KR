@@ -2,17 +2,17 @@
 title: 링크를 사용하여 자산 공유
 description: 자산, 폴더 및 컬렉션을 URL로 공유합니다.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: 링크 공유,자산 관리
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: 3ec39279d001297dcc11ebd1110bb452de8ca980
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 1%
 
 ---
 
-# 링크 {#asset-link-sharing}를 통해 자산 공유
+# 링크를 통해 자산 공유 {#asset-link-sharing}
 
 [!DNL Adobe Experience Manager Assets] 자산, 폴더 및 컬렉션을 조직 및 외부 엔티티(파트너 및 공급업체 등)의 멤버와 URL로 공유할 수 있습니다. 링크를 통해 자산을 공유하는 것은 먼저 [!DNL Assets]에 로그인하지 않고도 외부 당사자가 리소스를 사용할 수 있도록 하는 편리한 방법입니다.
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 1. 자산 공유를 취소하려면 해당 자산을 선택하고 도구 모음에서 **[!UICONTROL 공유 해제]**&#x200B;를 클릭합니다. 다음은 확인 메시지입니다. 자산의 항목이 목록에서 제거됩니다.
 
-## 일 CQ 메일 서비스 {#configure-day-cq-mail-service} 구성
+## 일 CQ 메일 서비스 구성 {#configure-day-cq-mail-service}
 
 1. [!DNL Experience Manager] 홈 페이지에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;로 이동합니다.
 1. 서비스 목록에서 **[!UICONTROL 일 CQ 메일 서비스]**&#x200B;를 찾습니다.
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-## 최대 데이터 크기 {#configure-maximum-data-size} 구성
+## 최대 데이터 크기 구성 {#configure-maximum-data-size}
 
 링크 공유 기능을 사용하여 공유된 링크에서 자산을 다운로드할 때 [!DNL Experience Manager] 은 저장소에서 자산 계층을 압축한 다음 ZIP 파일에 있는 자산을 반환합니다. 그러나 ZIP 파일로 압축할 수 있는 데이터 양에 제한이 없는 경우 대량의 데이터가 압축되어 JVM에서 메모리 오류가 발생합니다. 이러한 상황으로 인해 시스템을 잠재적 서비스 거부 공격으로부터 보호하려면 구성 관리자에서 **[!UICONTROL 최대 컨텐츠 크기(압축되지 않음)]** CQ DAM Adhoc Asset Share 프록시 서블릿&#x200B;]**에 대한 매개 변수를 사용하여 최대 크기를 구성하십시오.**[!UICONTROL  자산의 압축되지 않은 크기가 구성된 값을 초과하는 경우 자산 다운로드 요청이 거부됩니다. 기본값은 100MB입니다.
 
