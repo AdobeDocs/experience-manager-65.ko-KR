@@ -2,17 +2,17 @@
 title: 스마트 컨텐츠 서비스를 사용하여 자산 태그 지정 구성
 description: 스마트 컨텐츠 서비스를 사용하여 [!DNL Adobe Experience Manager]에서 스마트 태그 지정 및 향상된 스마트 태그 지정을 구성하는 방법을 알아봅니다.
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: 태깅,스마트 태그
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2173'
 ht-degree: 15%
 
 ---
 
-# 스마트 태그 지정 {#configure-asset-tagging-using-the-smart-content-service}에 대해 [!DNL Assets] 준비
+# 스마트 태그 지정을 위해 [!DNL Assets] 준비 {#configure-asset-tagging-using-the-smart-content-service}
 
 스마트 컨텐츠 서비스를 사용하여 자산에 태그 지정을 시작하려면 먼저 [!DNL Experience Manager Assets]을 Adobe 개발자 콘솔과 통합하여 [!DNL Adobe Sensei]의 스마트 서비스를 활용하십시오. 구성이 완료되면 이미지와 태그를 사용하여 서비스를 진행합니다.
 
@@ -39,7 +39,7 @@ Adobe 개발자 콘솔과 통합하면 [!DNL Experience Manager] 서버는 요�
 
 1. 선택 사항으로, [자산 업로드](#enable-smart-tagging-in-the-update-asset-workflow-optional)에 자동 태깅을 활성화합니다.
 
-### 스마트 컨텐츠 서비스 구성 {#obtain-public-certificate}을(를) 만들어 공개 인증서를 받습니다
+### 스마트 컨텐츠 서비스 구성을 만들어 공개 인증서 받기 {#obtain-public-certificate}
 
 공개 인증서를 사용하면 Adobe 개발자 콘솔에서 프로필을 인증할 수 있습니다.
 
@@ -233,7 +233,7 @@ Smart Content Service를 주기적으로 또는 필요에 따라 교육할 수 �
 >
 >태그를 학습하고 다른 이미지에 적용할 수 있는 스마트 컨텐츠 서비스의 기능은 교육에 사용하는 이미지의 품질에 따라 달라집니다. 최상의 결과를 얻으려면 Adobe에서 시각적으로 유사한 이미지를 사용하여 각 태그에 대한 서비스를 교육하는 것이 좋습니다.
 
-### 정기 교육 {#periodic-training}
+### 주기적 훈련 {#periodic-training}
 
 Smart Content Service를 사용하여 폴더 내의 자산 및 관련 태그에 대해 정기적으로 교육할 수 있습니다. 자산 폴더의 [!UICONTROL 속성] 페이지를 열고 **[!UICONTROL 세부 정보]** 탭 아래에서 **[!UICONTROL 스마트 태그 활성화]**&#x200B;를 선택하고 변경 사항을 저장합니다.
 
