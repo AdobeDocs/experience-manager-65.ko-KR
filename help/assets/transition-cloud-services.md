@@ -2,10 +2,10 @@
 title: 폴더에 번역 클라우드 서비스 적용
 description: 폴더에 번역 클라우드 서비스 적용
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: 번역
 exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 6%
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 번역 워크플로우 중에 활용할 수 있도록 번역 클라우드 서비스를 자산 폴더에 직접 적용할 수 있습니다.
 
-## 번역 서비스 {#applying-the-translation-services} 적용
+## 번역 서비스 적용 {#applying-the-translation-services}
 
 번역 클라우드 서비스를 자산 폴더에 직접 적용하면 번역 워크플로우를 만들거나 업데이트할 때 번역 서비스를 구성할 필요가 없습니다.
 
@@ -38,7 +38,7 @@ ht-degree: 6%
 
 1. 도구 모음에서 **[!UICONTROL 저장]**&#x200B;을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭하여 대화 상자를 닫습니다.번역 서비스가 폴더에 적용됩니다.
 
-## 사용자 지정 번역 커넥터 {#applying-custom-translation-connector} 적용
+## 사용자 지정 번역 커넥터 적용  {#applying-custom-translation-connector}
 
 번역 워크플로우에서 사용할 번역 서비스의 사용자 지정 커넥터를 적용하려면 해당 커넥터를 사용하십시오. 사용자 지정 커넥터를 적용하려면 먼저 패키지 관리자에서 커넥터를 설치하십시오. 그런 다음 Cloud Services 콘솔에서 커넥터를 구성합니다. 커넥터를 구성한 후에는 [번역 서비스 적용](transition-cloud-services.md#applying-the-translation-services)에 설명된 Cloud Services 탭의 커넥터 목록에서 커넥터를 사용할 수 있습니다. 사용자 지정 커넥터를 적용하고 번역 워크플로우를 실행한 후 번역 프로젝트의 **[!UICONTROL 번역 요약]** 타일에는 헤드 **[!UICONTROL 공급자]** 및 **[!UICONTROL 메서드]**&#x200B;에 커넥터 세부 정보가 표시됩니다.
 
