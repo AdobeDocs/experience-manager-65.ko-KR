@@ -3,9 +3,9 @@ title: 워크플로우를 사용하여 자산 처리
 description: 자산 처리를 통해 형식을 변환하고, 표현물을 만들고, 자산을 관리하고, 자산을 확인하고, 워크플로우를 실행합니다.
 contentOwner: AG
 feature: 워크플로우, 표현물
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 자산 처리에서 [!DNL Experience Manager] 은 워크플로우를 사용합니다. 워크플로우는 비즈니스 로직 또는 활동을 자동화하는 데 도움이 됩니다. 특정 작업을 수행하는 세부 단계는 기본적으로 제공되며 개발자는 고유한 사용자 지정 단계를 만들 수 있습니다. 이러한 단계를 논리적 순서로 결합하여 워크플로우를 만들 수 있습니다. 예를 들어, 워크플로우는 업로드된 폴더, 이미지 해상도 등과 같은 특정 기준에 따라 업로드된 이미지에 워터마크를 적용할 수 있습니다. 다른 예로는 워터마크 지정 및 메타데이터 동시 추가, 변환 만들기, 지능형 태그 추가, 데이터 저장소에 게시하도록 구성된 워크플로우입니다.
 
-## [!DNL Experience Manager] {#default-workflows}에서 사용할 수 있는 기본 워크플로우
+## [!DNL Experience Manager]에서 사용할 수 있는 기본 워크플로우 {#default-workflows}
 
 기본적으로 업로드된 모든 자산은 [!UICONTROL DAM 자산 업데이트] 워크플로우를 사용하여 처리됩니다. 워크플로우는 업로드된 각 자산에 대해 실행되며, 표현물 생성, 메타데이터 원본에 쓰기, 페이지 추출, 미디어 추출 및 코드 변환과 같은 기본 자산 관리 작업을 수행합니다.
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 *그림:일부 기본 워크플로우는에서 사용할 수 있습니다 [!DNL Experience Manager].*
 
-## 워크플로우를 적용하여 자산 {#applying-workflows-to-assets} 처리
+## 워크플로우를 적용하여 자산 처리 {#applying-workflows-to-assets}
 
 디지털 자산에 워크플로우를 적용하는 것은 웹 사이트 페이지와 동일합니다. 워크플로우를 만들고 사용하는 방법에 대한 전체 안내서는 [워크플로우 시작](/help/sites-authoring/workflows-participating.md)을 참조하십시오.
 
@@ -65,7 +65,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 
-## 여러 자산 {#applying-a-workflow-to-multiple-assets}에 워크플로우 적용
+## 여러 자산에 워크플로우 적용 {#applying-a-workflow-to-multiple-assets}
 
 1. [!DNL Assets] 콘솔에서 워크플로우를 시작할 자산의 위치로 이동하고 자산을 선택합니다. 메뉴에서 **[!UICONTROL 타임라인]**&#x200B;을 선택하여 타임라인을 표시합니다.
 
@@ -79,7 +79,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 1. (선택 사항) 워크플로우 인스턴스를 참조하는 데 사용할 수 있는 워크플로우의 제목을 지정합니다.
 1. **[!UICONTROL 시작]**&#x200B;을 클릭한 다음 대화 상자에서 **[!UICONTROL 확인]**&#x200B;을 클릭합니다. 워크플로우는 선택한 모든 자산에서 실행됩니다.
 
-## 여러 폴더 {#applying-a-workflow-to-multiple-folders}에 워크플로우 적용
+## 여러 폴더에 워크플로우 적용 {#applying-a-workflow-to-multiple-folders}
 
 여러 폴더에 워크플로우를 적용하는 절차는 여러 자산에 워크플로우를 적용하는 절차와 유사합니다. [!DNL Assets] 인터페이스에서 폴더를 선택하고 [여러 자산에 워크플로우를 적용하는 2-7단계를 수행합니다](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
 
@@ -87,7 +87,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 
 [컬렉션에 워크플로우 적용](/help/assets/manage-collections.md#running-a-workflow-on-a-collection)을 참조하십시오.
 
-## 조건부로 자산 {#auto-execute-workflow-on-some-assets}을 처리하는 워크플로우를 자동 시작
+## 조건부로 자산을 처리하는 워크플로우를 자동 시작 {#auto-execute-workflow-on-some-assets}
 
 관리자는 사전 정의된 조건을 기반으로 자산을 자동으로 실행하고 처리하도록 워크플로우를 구성할 수 있습니다. 이 기능은 비즈니스 부문 사용자 및 마케터에게 유용합니다. 예를 들어 특정 폴더에 사용자 지정 워크플로우를 만들 수 있습니다. 기관의 사진 촬영에서 가져온 모든 자산은 워터마크가 될 수 있으며 프리랜서에서 업로드한 모든 자산을 처리하여 특정 표현물을 만들 수 있다고 가정합니다.
 
