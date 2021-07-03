@@ -3,16 +3,16 @@ title: ' [!DNL Assets]에 대한 우수 사례'
 description: 배포 및 구성에 따라 달라지는 우수 사례를 식별하고 준수하여 로드 중인 시스템 안정성 및 성능을 향상시킵니다.
 contentOwner: AG
 feature: 자산 관리
-role: Architect, Administrator
+role: Architect, Admin
 exl-id: 6b50f1b3-9c1c-47c8-a43e-6f40c42a41cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
 
 ---
 
-# [!DNL Assets] {#best-practices-for-assets}에 대한 우수 사례
+# [!DNL Assets] 우수 사례 {#best-practices-for-assets}
 
 [!DNL Adobe Experience Manager Assets] 는 컨텐츠 속도를 높여 비즈니스 목표 달성에 기여하는 고품질 디지털 마케팅 경험을 제공하는데 중요한 부분입니다. [!DNL Experience Manager Assets] 내에서 자산을 대량으로 사용하거나 비디오 및 Dynamic Media을 포함한 다양한 자산을 정기적으로/정기적으로 업로드하는 경우 시스템 효율성을 위해 디지털 자산 관리 경험을 최적화해야 합니다.
 
