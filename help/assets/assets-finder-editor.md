@@ -2,10 +2,10 @@
 title: 자산 편집기 페이지 만들기 및 구성
 description: 사용자 지정 자산 편집기 페이지를 만들고 여러 자산을 동시에 편집하는 방법을 알아봅니다.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 개발자 도구,자산 관리
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 6%
@@ -26,7 +26,7 @@ ht-degree: 6%
 >
 >자산 공유는 오픈 소스 참조 구현으로 사용할 수 있습니다. [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)를 참조하십시오. 공식적으로 지원되지 않습니다.
 
-## 자산 편집기 페이지를 만들고 구성하는 이유는 무엇입니까?{#why-create-and-configure-asset-editor-pages}
+## 자산 편집기 페이지를 만들고 구성하는 이유는 무엇입니까? {#why-create-and-configure-asset-editor-pages}
 
 디지털 자산 관리는 점점 더 많은 시나리오에서 사용됩니다. 전문 사용자용 [!DNL Adobe Experience Manager Assets]의 강력한 사용자 인터페이스는 사진사나 분류법 등 전문 교육을 받은 소규모 사용자 그룹의 소규모 사용자 그룹에서 비즈니스 사용자, WCM 작성자, 언론인 등으로 이동할 때 너무 많은 정보를 제공하고 이해 관계자가 관련 있는 디지털 자산에 액세스할 수 있도록 특정 사용자 인터페이스 또는 애플리케이션을 요청할 수 있습니다.
 
@@ -190,7 +190,7 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
 -->
 
-## 자산 편집기 페이지 {#creating-and-configuring-an-asset-editor-page} 만들기 및 구성
+## 자산 편집기 페이지 만들기 및 구성 {#creating-and-configuring-an-asset-editor-page}
 
 자산 편집기를 사용자 지정하여 사용자가 디지털 자산을 보고 편집할 수 있는 방법을 결정합니다. 이렇게 하려면 새 자산 편집기 페이지를 만든 다음 해당 페이지에서 사용자가 수행할 수 있는 보기 및 작업을 사용자 지정합니다.
 
@@ -217,7 +217,7 @@ Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는
 
 ![assetshare6](assets/assetshare6.png)
 
-#### 자산 공유 페이지 {#setting-which-asset-editor-opens-from-an-asset-share-page}에서 열 자산 편집기 설정
+#### 자산 공유 페이지에서 열 자산 편집기 설정 {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 사용자 지정된 자산 편집기 페이지를 만든 후에는 사용자 지정된 자산 공유에서 만든 자산을 두 번 클릭할 때 사용자 지정된 편집기 페이지에서 자산이 열리는지 확인해야 합니다.
 
@@ -261,7 +261,7 @@ Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
-#### 메타데이터 양식 및 텍스트 필드 - 보기 메타데이터 구성 요소 {#metadata-form-and-text-field-configuring-the-view-metadata-component} 구성
+#### 메타데이터 양식 및 텍스트 필드 - 메타데이터 보기 구성 요소 구성 {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
 메타데이터 양식은 시작 및 종료 작업을 포함하는 양식입니다. 사이에 **텍스트** 필드를 입력합니다. 양식 작업에 대한 자세한 내용은 [Forms](/help/sites-authoring/default-components-foundation.md#form-component)을 참조하십시오.
 
@@ -386,7 +386,7 @@ Geometrixx 자산 편집기 템플릿을 사용하여 만든 기본 페이지는
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
-## 자산 편집기 페이지 {#multi-editing-assets-with-the-asset-editor-page}를 사용하여 자산 다중 편집
+## 자산 편집기 페이지에서 자산 다중 편집 {#multi-editing-assets-with-the-asset-editor-page}
 
 [!DNL Experience Manager Assets]을 사용하면 여러 자산을 한 번에 변경할 수 있습니다. 자산을 선택한 후 자산을 동시에 변경할 수 있습니다.
 
