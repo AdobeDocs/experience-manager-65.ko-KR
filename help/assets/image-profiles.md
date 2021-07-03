@@ -8,9 +8,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: 이미지 프로필
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2752'
 ht-degree: 4%
@@ -122,7 +122,7 @@ ht-degree: 4%
 
 1. 편집할 경우 변경 사항을 저장합니다. 삭제할 경우 프로필을 제거할지 확인합니다.
 
-## 폴더 {#applying-an-image-profile-to-folders}에 Dynamic Media 이미지 프로필 적용
+## 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-an-image-profile-to-folders}
 
 이미지 프로필을 폴더에 할당하면 모든 하위 폴더는 해당 상위 폴더에서 프로필을 자동으로 상속합니다. 이 워크플로우는 한 개의 이미지 프로필만 폴더에 할당할 수 있음을 의미합니다. 따라서 자산을 업로드, 저장, 사용 및 보관하는 의 폴더 구조를 신중하게 고려하십시오.
 
@@ -136,7 +136,7 @@ ht-degree: 4%
 
 나중에 변경한 기존 이미지 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
 
-### 특정 폴더 {#applying-image-profiles-to-specific-folders}에 Dynamic Media 이미지 프로필 적용
+### 특정 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-specific-folders}
 
 **[!UICONTROL 도구]** 메뉴 내에서 또는 폴더에 있는 경우 **[!UICONTROL 속성]**&#x200B;에서 이미지 프로필을 폴더에 적용할 수 있습니다. 이 섹션에서는 두 가지 방법으로 폴더에 이미지 프로필을 적용하는 방법을 설명합니다.
 
@@ -144,7 +144,7 @@ ht-degree: 4%
 
 나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
 
-#### 프로필 사용자 인터페이스 {#applying-image-profiles-to-folders-from-profiles-user-interface}의 폴더에 Dynamic Media 이미지 프로필 적용
+#### 프로필 사용자 인터페이스의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에 적용할 이미지 프로필을 선택합니다.
@@ -153,7 +153,7 @@ ht-degree: 4%
 
 1. **[!UICONTROL 폴더에 처리 프로필 적용]**&#x200B;을 탭하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 탭/클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-#### 속성 {#applying-image-profiles-to-folders-from-properties}의 폴더에 Dynamic Media 이미지 프로필 적용
+#### 속성의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
 
 1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 이미지 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
@@ -181,7 +181,7 @@ ht-degree: 4%
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
-## 단일 이미지 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}의 스마트 자르기 또는 스마트 견본 편집
+## 단일 이미지의 스마트 자르기 또는 스마트 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!NOTE]
 >
@@ -263,13 +263,13 @@ ht-degree: 4%
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 탭한 다음, **[!UICONTROL 닫기]**&#x200B;를 탭하여 자산의 폴더로 돌아갑니다.
 
-## {#removing-an-image-profile-from-folders} 폴더에서 이미지 프로필 제거
+## 폴더에서 이미지 프로필 제거 {#removing-an-image-profile-from-folders}
 
 폴더에서 이미지 프로필을 제거하면 모든 하위 폴더는 해당 상위 폴더에서 프로필 제거를 자동으로 상속합니다. 그러나 폴더 내에서 발생한 파일의 모든 처리가 그대로 유지됩니다.
 
 **[!UICONTROL 도구]** 메뉴 내에서 또는 폴더에 있는 경우 **[!UICONTROL 속성]**&#x200B;에서 이미지 프로필을 제거할 수 있습니다. 이 섹션에서는 두 가지 방법으로 폴더에서 이미지 프로필을 제거하는 방법을 설명합니다.
 
-### 프로필 사용자 인터페이스 {#removing-image-profiles-from-folders-via-profiles-user-interface} 를 통해 폴더에서 Dynamic Media 이미지 프로필 제거
+### 프로필 사용자 인터페이스를 통해 폴더에서 Dynamic Media 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에서 제거할 이미지 프로필을 선택합니다.
@@ -277,7 +277,7 @@ ht-degree: 4%
 
    이름이 더 이상 폴더 이름 아래에 표시되지 않으므로 이미지 프로필이 더 이상 폴더에 적용되지 않았는지 확인할 수 있습니다.
 
-### {#removing-image-profiles-from-folders-via-properties} 속성을 통해 폴더에서 Dynamic Media 이미지 프로필 제거
+### 속성을 통해 폴더에서 Dynamic Media 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-properties}
 
 1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 이미지 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
