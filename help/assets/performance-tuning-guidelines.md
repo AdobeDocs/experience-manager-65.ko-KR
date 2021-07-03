@@ -3,10 +3,10 @@ title: 성능 조정 [!DNL Assets].
 description: ' [!DNL Experience Manager] 구성, 병목 현상을 제거하고 성능을 최적화하기 위한 하드웨어, 소프트웨어 및 네트워크 구성 요소의 변경 사항에 대한 제안 및 지침 [!DNL Experience Manager Assets]'
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Administrator
+role: Architect, Admin
 feature: 자산 관리
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2743'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TBD: Get reviewed by engineering. -->
 
-# [!DNL Adobe Experience Manager Assets] 성능 조정 가이드  {#assets-performance-tuning-guide}
+# [!DNL Adobe Experience Manager Assets] 성능 조정 가이드 {#assets-performance-tuning-guide}
 
 [!DNL Experience Manager Assets] 설정에는 많은 수의 하드웨어, 소프트웨어 및 네트워크 구성 요소가 포함되어 있습니다. 배포 시나리오에 따라 성능 병목 현상을 제거하기 위해 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 특정 구성 변경이 필요할 수 있습니다.
 
@@ -151,7 +151,7 @@ Adobe은 많은 회사에 HTTP 트래픽을 감지하는 방화벽이 있어 이
 
 예를 들어, 워크플로 인스턴스 노드를 만드는 많은 비임시 워크플로우를 실행한 후 임시 단위로 [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html)를 실행할 수 있습니다. Granite Workflow 제거 스케줄러가 실행될 때까지 기다리지 않고 중복되고 완료된 워크플로우 인스턴스를 즉시 제거합니다.
 
-### 최대 병렬 작업 {#maximum-parallel-jobs}
+### 최대 병렬 작업 수 {#maximum-parallel-jobs}
 
 기본적으로 [!DNL Experience Manager]은(는) 서버의 프로세서 수와 동일한 최대 병렬 작업 수를 실행합니다. 이 설정의 문제는 로드가 많은 동안 모든 프로세서가 [!UICONTROL DAM Update Asset] 워크플로우에 의해 사용되고 UI 응답성이 느려지고 [!DNL Experience Manager] 가 서버 성능과 안정성을 보호하는 다른 프로세스를 실행하지 못하도록 한다는 것입니다. 이 값은 다음 단계를 수행하여 서버에서 사용할 수 있는 프로세서의 절반으로 설정하는 것이 좋습니다.
 
@@ -286,7 +286,7 @@ XMP 원본에 쓰기 기능은 [!DNL Experience Manager]에서 메타데이터�
 * 네트워크 벤치마크 도구 사용
 * 디스패처에 대해 테스트
 
-### [!DNL Experience Manager] 배포 테스트  {#aem-deployment-testing}
+### [!DNL Experience Manager] 배포 테스트 {#aem-deployment-testing}
 
 효율적인 CPU 사용률 및 로드 공유를 통해 지연을 최소화하고 높은 처리량을 얻으려면 정기적으로 [!DNL Experience Manager] 배포 성능을 모니터링하십시오. 특히
 
