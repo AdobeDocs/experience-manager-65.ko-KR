@@ -10,9 +10,9 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 feature: 뷰어 사전 설정
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '4339'
 ht-degree: 1%
@@ -36,7 +36,7 @@ ht-degree: 1%
 >
 >사전 정의된 기본 제공 뷰어 사전 설정&#x200B;*을 편집하는 것은 지원되는 시나리오가 아닙니다.* 기본 뷰어 사전 설정을 편집하려고 하면 새 이름을 사용하여 뷰어 사전 설정을 저장하라는 메시지가 표시됩니다.
 
-## 뷰어에 대한 키보드 액세스 가능성 {#keyboard-accessibility-for-viewers}
+## 뷰어의 키보드 액세스 가능성 {#keyboard-accessibility-for-viewers}
 
 모든 기본 뷰어는 키보드 액세스 가능성을 지원합니다.
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 >
 >기본적으로 자산의 세부 사항 보기에서 뷰어 를 선택하면 시스템에 15개의 뷰어 사전 설정이 표시됩니다. 이 제한을 늘릴 수 있습니다. [표시되는 뷰어 사전 설정 수를 늘립니다](#increasing-the-number-of-viewer-presets-that-display).
 
-### 응답형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
+### 반응형 디자인 웹 페이지에 대한 뷰어 지원 {#viewer-support-for-responsive-designed-web-pages}
 
 웹 페이지마다 요구 사항이 다릅니다. 예를 들어, 별도의 브라우저 창에서 HTML5 뷰어를 여는 링크를 제공하는 웹 페이지를 원하는 경우가 있습니다. 다른 경우 HTML5 뷰어를 호스팅 페이지에 직접 포함해야 할 수도 있습니다. 후자의 경우 웹 페이지에 정적 레이아웃이 있을 수 있습니다. 또는 &quot;응답형&quot;일 수 있으며 다른 장치 또는 다른 브라우저 창 크기에 대해 다르게 표시될 수 있습니다. 이러한 요구 사항을 수용하기 위해 Dynamic Media과 함께 제공되는 사전 정의된 모든 기본 제공 HTML5 뷰어는 정적 웹 페이지와 응답형 디자인 웹 페이지를 모두 지원합니다.
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 >처음 사용하기 전에 모든 기본 제공 뷰어를 게시해야 합니다.
 >[뷰어 사전 설정 게시]를 참조하십시오.(#publishing-viewer-presets)
 
-### 뷰어 사전 설정 시스템 호환성 {#viewer-preset-system-compatibility}
+### 뷰어 사전 설정 시스템 호환성  {#viewer-preset-system-compatibility}
 
 Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다음 시스템과 완전히 호환됩니다.
 
@@ -386,7 +386,7 @@ Dynamic Media과 함께 제공되는 모든 기본 뷰어 사전 설정은 다�
  </tbody>
 </table>
 
-## {#increasing-the-number-of-viewer-presets-that-display}을 표시하는 뷰어 사전 설정 수를 늘립니다
+## 표시되는 뷰어 사전 설정 수 증가 {#increasing-the-number-of-viewer-presets-that-display}
 
 AEM에서는 **[!UICONTROL 세부 사항 보기]** > **[!UICONTROL 뷰어]**&#x200B;에서 자산을 볼 때 다양한 뷰어 사전 설정이 표시됩니다. 표시되는 뷰어 수를 늘리거나 줄일 수 있습니다.
 
@@ -475,7 +475,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기]** > **[!UICONTROL 뷰어]**&#x2
 
    [뷰어 사전 설정 게시](#publishing-viewer-presets)를 참조하십시오.
 
-### 대화형 뷰어 사전 설정 {#special-considerations-for-creating-an-interactive-viewer-preset} 만들기에 대한 특수 고려 사항
+### 대화형 뷰어 사전 설정을 만들기 위한 특수 고려 사항 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **패널의 이미지 축소판 표시 모드 정보**
 
@@ -529,7 +529,7 @@ AEM에서는 **[!UICONTROL 세부 사항 보기]** > **[!UICONTROL 뷰어]**&#x2
 * 하위 세그먼트 기간 = 총 비디오 지속 시간 / 비디오 하위 세그먼트 수.
 위의 표에 나오는 예를 사용하여 30초 / 3 비디오 하위 세그먼트 = 각 비디오 하위 세그먼트의 10초 표시.
 
-#### 캐러셀 배너 뷰어 사전 설정 만들기 시 특별히 고려해야 할 사항 {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+#### 캐러셀 배너 뷰어 사전 설정 만들기에 대한 특수 고려 사항 {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 회전 배너 뷰어 사전 설정을 만들 때 다음과 같이 핫스팟 스타일을 변경할 수 있습니다.
 
@@ -597,7 +597,7 @@ Dynamic Media에 만들어 추가한 뷰어 사전 설정을 삭제할 수 있�
 1. 뷰어 사전 설정 페이지에서 사전 설정 제목을 선택한 다음 **[!UICONTROL 휴지통]** 아이콘을 탭합니다.
 1. **[!UICONTROL 삭제]**&#x200B;를 누릅니다.
 
-## 자산 {#applying-a-viewer-preset-to-an-asset}에 뷰어 사전 설정 적용
+## 자산에 뷰어 사전 설정 적용 {#applying-a-viewer-preset-to-an-asset}
 
 자산과 선택한 뷰어를 모두 이미 게시한 경우 뷰어 사전 설정을 선택하면 **[!UICONTROL URL]** 및 **[!UICONTROL 포함]** 단추가 표시됩니다.
 
@@ -613,7 +613,7 @@ Dynamic Media에 만들어 추가한 뷰어 사전 설정을 삭제할 수 있�
 
    [URL을 복사하여](/help/assets/linking-urls-to-yourwebapplication.md)을 다른 사용자와 공유할 수 있습니다.
 
-## 뷰어 사전 설정 {#delivering-assets-with-viewer-presets}으로 자산 제공
+## 뷰어 사전 설정을 사용하여 자산 제공 {#delivering-assets-with-viewer-presets}
 
 뷰어 사전 설정에 대한 URL을 가져오려면 [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)을 참조하십시오. 또한 [웹 페이지에 비디오 뷰어 포함](/help/assets/embed-code.md)을 참조하십시오.
 
