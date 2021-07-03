@@ -2,10 +2,10 @@
 title: 관련 자산
 description: 몇 가지 일반적인 특성을 공유하는 디지털 자산을 연결하는 방법을 알아봅니다. 또한 디지털 자산 간에 소스 파생되는 관계를 만듭니다.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: 공동 작업,자산 관리
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 >
 >자산에 대한 편집 권한이 있는 사용자만 자산을 관련화하고 관계를 해제할 수 있습니다.
 
-## 자산 관계 {#relating-assets}
+## 자산 관련 {#relating-assets}
 
 1. [!DNL Experience Manager] 인터페이스에서 연결할 자산의 **[!UICONTROL 속성]** 페이지를 엽니다.
 
