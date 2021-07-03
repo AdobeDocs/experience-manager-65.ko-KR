@@ -11,9 +11,9 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 feature: 콘텐츠 조각
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 3%
@@ -78,7 +78,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 
 즉, 후속(`write`) 요청을 단일 엔티티로 성공하거나 실패할 수 있는 단일 트랜잭션으로 결합할 수 없습니다.
 
-### AEM(자산) REST API 대 AEM 구성 요소 {#aem-assets-rest-api-versus-aem-components}
+### AEM(Assets) REST API와 AEM 구성 요소 {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <tbody>
@@ -160,7 +160,7 @@ Assets REST API는 URL 매개 변수를 통해 페이징(GET 요청)을 지원�
 >
 >페이징은 일반적으로 요청된 엔티티의 1차 하위 구성요소와 관련된 컨테이너 엔티티(즉, 폴더 또는 변환이 있는 자산)에 적용됩니다.
 
-#### 예:{#example-paging} 호출
+#### 예:페이징 {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
