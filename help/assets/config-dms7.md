@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: 구성,Scene7 모드
-source-git-commit: 90737593086c680f0a948f5b9cab6e58767b6373
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '6153'
 ht-degree: 1%
@@ -80,7 +80,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 자세한 내용은 [벌크 자산 마이그레이션용 기능 팩 18912 설치](/help/assets/bulk-ingest-migrate.md) 를 참조하십시오.
 
-## Cloud Services {#configuring-dynamic-media-cloud-services}에서 Dynamic Media 구성 만들기
+## Cloud Services에서 Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
 **Dynamic Media 구성 전**  - Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후  [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하여 암호를 변경해야 합니다. 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
 
@@ -143,7 +143,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 구성을 추가로 사용자 지정하려면 원할 경우 Dynamic Media - Scene7 모드](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)에서 [(선택 사항) 고급 설정 구성 아래에서 작업을 선택적으로 완료할 수 있습니다.
 
-## (선택 사항) Dynamic Media에서 고급 설정 구성 - Scene7 모드 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## (선택 사항) Dynamic Media - Scene7 모드에서 고급 설정 구성 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 지정하거나 성능을 최적화하려는 경우 다음 *선택적* 작업 중 하나 이상을 완료할 수 있습니다.
 
@@ -168,7 +168,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 지정
 * [지원되지 않는 형식에 대한 MIME 유형 추가](#adding-mime-types-for-unsupported-formats)
 * [이미지 세트 및 스핀 세트를 자동으로 생성하기 위해 일괄처리 집합 사전 설정 만들기](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### 이미지 서버 {#publishing-setup-for-image-server}에 대한 게시 설정
+#### 이미지 서버에 대한 게시 설정 {#publishing-setup-for-image-server}
 
 게시 설정 설정은 Dynamic Media에서 기본적으로 자산이 전달되는 방법을 결정합니다. 지정된 설정이 없으면 Dynamic Media은 게시 설정에 정의된 기본 설정에 따라 자산을 전달합니다. 예를 들어, 해상도 속성을 포함하지 않는 이미지 전달에 대한 요청에서 기본 개체 해상도 설정이 있는 이미지가 생성됩니다.
 
@@ -184,7 +184,7 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 지정
 * **[!UICONTROL 호환성 속성]**  - 이 설정을 사용하면 이전 버전과의 호환성을 위해 텍스트 레이어의 이전 및 이후 단락을 버전 3.6의 단락과 동일하게 처리할 수 있습니다.
 * **[!UICONTROL 로컬라이제이션 지원]**  - 이 설정을 사용하여 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정하여 뷰어의 다양한 도구 설명에 대해 지원할 언어를 정의할 수 있습니다. **[현지화 지원]** 설정에 대한 자세한 내용은 [자산 현지화 설정 시 고려 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets)을 참조하십시오.
 
-#### 응용 프로그램 일반 설정 구성 중 {#configuring-application-general-settings}
+#### 응용 프로그램 일반 설정 구성 {#configuring-application-general-settings}
 
 응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 모음에서 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;을 누릅니다.
 
@@ -236,7 +236,7 @@ Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할
 * RGB 출력을 반환하는 동적 변환은 *sRGB* 색상 공간에 반환합니다.
 * CMYK 출력을 반환하는 동적 변환은 *WebCoated* 색상 공간에 반환합니다.
 
-#### 지원되는 형식 {#editing-mime-types-for-supported-formats}에 대한 MIME 유형 편집
+#### 지원되는 형식에 대한 MIME 유형 편집 {#editing-mime-types-for-supported-formats}
 
 Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리 매개 변수를 사용자 지정할 수 있습니다. 예를 들어 자산 처리 매개 변수를 지정하여 다음을 수행할 수 있습니다.
 
@@ -270,7 +270,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 1. 페이지의 왼쪽 위 모서리에서 **[!UICONTROL CRXDE Lite]**&#x200B;을 눌러 Experience Manager으로 돌아갑니다.
 
-#### 지원되지 않는 형식 {#adding-mime-types-for-unsupported-formats}에 대한 MIME 유형 추가
+#### 지원되지 않는 형식에 대한 MIME 유형 추가 {#adding-mime-types-for-unsupported-formats}
 
 Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. CRXDE Lite에 추가하는 새 노드가 `image_` 앞에 MIME 유형을 이동하여 Experience Manager에서 삭제되지 않도록 하십시오. 또한 해당 활성화값이 **[!UICONTROL false]**&#x200B;로 설정되어 있는지 확인하십시오.
 
@@ -322,7 +322,7 @@ Experience Manager 자산에서 지원되지 않는 형식에 대한 사용자 �
 
 1. CRXDE Lite 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
 
-#### 이미지 세트 및 스핀 세트 자동 생성을 위한 일괄처리 집합 사전 설정 만들기 {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
+#### 이미지 세트 및 스핀 세트를 자동으로 생성하기 위해 일괄처리 집합 사전 설정 만들기 {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
 자산을 Dynamic Media에 업로드하는 동안 일괄처리 집합 사전 설정을 사용하여 이미지 세트 또는 스핀 세트 만들기를 자동화합니다.
 
@@ -486,7 +486,7 @@ spin-01-01
 
    사전 설정을 활성화하면 Dynamic Media에 자산을 업로드할 때 세트 사전 설정이 적용되어 세트가 생성됩니다.
 
-### (선택 사항) Dynamic Media - Scene7 모드 {#optional-tuning-the-performance-of-dynamic-media-scene-mode} 성능 조정
+### (선택 사항) Dynamic Media - Scene7 모드 성능 조정 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Dynamic Media - Scene7 모드가 원활하게 실행되도록 하려면 다음 동기화 성능/확장성 미세 조정 팁을 권장합니다.
 
@@ -519,7 +519,7 @@ Adobe은 PDF, PostScript® 및 PSD 파일에 다음과 같은 &quot;튜닝된&qu
 
 이러한 매개 변수를 업데이트하려면 [MIME 유형 기반 Assets/Dynamic Media Classic 업로드 작업 매개 변수 지원](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)의 단계를 따르십시오.
 
-#### Granite 임시 워크플로우 큐 {#updating-the-granite-transient-workflow-queue} 업데이트
+#### Granite 임시 워크플로우 큐 업데이트 {#updating-the-granite-transient-workflow-queue}
 
 Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 워크플로우에 사용됩니다. Dynamic Media에서 이미지 수집 및 처리에 사용됩니다.
 
@@ -542,7 +542,7 @@ Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 
 
 1. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
-#### Granite 워크플로우 큐 {#updating-the-granite-workflow-queue} 업데이트
+#### Granite 워크플로우 큐 업데이트 {#updating-the-granite-workflow-queue}
 
 Granite 워크플로우 큐는 비임시 워크플로우에 사용됩니다. Dynamic Media에서는 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우를 사용하여 비디오를 처리하는 데 사용됩니다.
 
@@ -580,7 +580,7 @@ Scene7 업로드 연결 설정은 Experience Manager 자산을 Dynamic Media Cla
 
 1. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
-### (선택 사항) 복제용 자산 필터링 {#optional-filtering-assets-for-replication}
+### (선택 사항) 복제할 자산 필터링 {#optional-filtering-assets-for-replication}
 
 Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 모든 *자산(이미지와 비디오 모두)을 Experience Manager 게시 노드에 복제합니다.* Experience Manager 게시 서버에서도 자산을 전달하므로 이 워크플로우가 필요합니다.
 
@@ -600,7 +600,7 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 >[!NOTE]
 필터는 MIME 유형에 적용되며 경로별로 지정할 수 없습니다.
 
-#### 복제에 대한 자산 필터 사용자 지정 {#customizing-asset-filters-for-replication}
+#### 복제를 위한 자산 필터 사용자 지정 {#customizing-asset-filters-for-replication}
 
 1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;를 탭합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` 로 이동하여 필터를 검토합니다.
