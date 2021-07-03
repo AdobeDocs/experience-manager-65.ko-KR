@@ -3,9 +3,9 @@ title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
 feature: 스마트 태그, 검색
-role: Business Practitioner
+role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1600'
 ht-degree: 1%
@@ -117,7 +117,7 @@ Smart Content Service에서 올바른 태그를 적용하려면 해당 태그를
 >
 >Lucene 색인화가 [!DNL Adobe Experience Manager]에서 완료된 경우 스마트 태그를 기반으로 한 검색이 예상대로 작동하지 않습니다.
 
-## 자산 {#tagging-assets-automatically}에 자동으로 태그 지정
+## 자산에 자동으로 태그 지정 {#tagging-assets-automatically}
 
 스마트 컨텐츠 서비스를 교육한 후 태깅 워크플로우를 트리거하여 유사한 다른 자산 세트에 적절한 태그를 자동으로 적용할 수 있습니다.
 
@@ -133,7 +133,7 @@ Smart Content Service가 폴더 내의 자산에 정기적으로 태그를 지�
 
 폴더에 대해 이 옵션을 선택하면 Smart Content Service가 폴더 내의 자산에 자동으로 태그를 지정합니다. 기본적으로 태깅 워크플로우는 매일 오전 12:00에 실행됩니다.
 
-### 요청 시 태깅 {#on-demand-tagging}
+### 주문형 태깅 {#on-demand-tagging}
 
 워크플로우 콘솔 또는 타임라인에서 태그 지정 워크플로우를 트리거하여 즉시 자산에 태그를 지정할 수 있습니다.
 
@@ -155,7 +155,7 @@ Smart Content Service가 폴더 내의 자산에 정기적으로 태그를 지�
 
    Smart Content Service에서 자산에 태그가 지정되어 있는지 확인하려면 자산 폴더로 이동하고 태그를 검토합니다.
 
-#### 타임라인에서 자산에 태그 지정 {#tagging-assets-from-the-timeline}
+#### 타임라인에서 자산에 태그를 지정합니다 {#tagging-assets-from-the-timeline}
 
 1. [!DNL Assets] 사용자 인터페이스에서 스마트 태그를 적용할 자산 또는 특정 자산이 들어 있는 폴더를 선택합니다.
 1. 왼쪽 위 모서리에서 **[!UICONTROL 타임라인]**&#x200B;을 엽니다.
@@ -170,7 +170,7 @@ Smart Content Service가 폴더 내의 자산에 정기적으로 태그를 지�
 >
 >후속 태그 지정 사이클에서 수정된 자산만 새로 훈련된 태그로 다시 태그가 지정됩니다. 하지만 태깅하지 않은 자산이라도 태깅을 수행하면 태깅이 마지막 태깅과 현재 태깅 주기 사이의 간격이 24시간을 초과하는 경우 태그가 지정됩니다. 주기적인 태깅 워크플로우의 경우 시간 간격이 6개월을 초과할 때 변경되지 않은 자산에 태그가 지정됩니다.
 
-## 적용된 스마트 태그 {#manage-smart-tags} 조정 또는 중재
+## 적용된 스마트 태그 조정 또는 중재 {#manage-smart-tags}
 
 가장 관련성이 높은 태그만 표시되도록 스마트 태그를 조정하여 브랜드 이미지에 할당된 부정확한 태그를 제거할 수 있습니다.
 
