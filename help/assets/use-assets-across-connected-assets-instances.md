@@ -2,17 +2,17 @@
 title: 연결된 자산을 사용하여 [!DNL Sites]에서 DAM 자산 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
-role: Business Practitioner, Administrator, Leader
+role: User, Admin, Leader
 feature: 연결된 자산, 사용자 및 그룹
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 9e99d25a15aee56721112e2afd4b570ba7854bd7
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2742'
 ht-degree: 28%
 
 ---
 
-# 연결된 자산을 사용하여 [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}에서 DAM 자산 공유
+# 연결된 자산을 사용하여 [!DNL Experience Manager Sites]에서 DAM 자산 공유 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 함께 작업하는 데 필요한 기존 배포를 지리적으로 배포할 수 있습니다. 또 다른 이유는 모회사가 함께 사용하려는 다른 [!DNL Experience Manager] 버전을 포함하여 이기종 인프라를 인수하는 것입니다.
 
@@ -57,7 +57,7 @@ ht-degree: 28%
 | DAM 사용자 | 원격 | `Authors` | `ksaner` 원격  [!DNL Experience Manager] | 원격 [!DNL Experience Manager] 배포에서 작성자 역할. [!UICONTROL 컨텐츠 파인더]를 사용하여 연결된 자산에서 자산을 검색하고 찾아봅니다. |
 | DAM 배포자(기술 사용자) | 원격 | [!DNL Sites] `Authors` | `ksaner` 원격  [!DNL Experience Manager] | 원격 배포에 있는 이 사용자 역할은 [!DNL Sites] 작성자 역할이 아닌 [!DNL Experience Manager] 로컬 서버에서 [!DNL Sites] 작성자를 대신하여 원격 자산을 가져오는 데 사용됩니다. 이 역할은 위의 두 `ksaner` 역할과 동일하지 않으며 다른 사용자 그룹에 속합니다. |
 
-## [!DNL Sites] 및 [!DNL Assets] 배포 {#configure-a-connection-between-sites-and-assets-deployments} 간의 연결을 구성합니다
+## [!DNL Sites] 배포와 [!DNL Assets] 배포 간의 연결 구성 {#configure-a-connection-between-sites-and-assets-deployments}
 
 [!DNL Experience Manager] 관리자가 이 통합을 만들 수 있습니다. 만들고 나면 사용자 그룹을 통해 사용 권한이 설정됩니다. 사용자 그룹은 [!DNL Sites] 배포 및 DAM 배포에 정의됩니다.
 
