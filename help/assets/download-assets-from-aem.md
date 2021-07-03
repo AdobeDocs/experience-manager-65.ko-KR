@@ -2,10 +2,10 @@
 title: 자산 다운로드
 description: ' [!DNL Adobe Experience Manager] 에서 자산을 다운로드하고 다운로드 기능을 활성화하거나 비활성화하는 방법을 알아봅니다.'
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: 자산 관리,자산 분배
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 3%
