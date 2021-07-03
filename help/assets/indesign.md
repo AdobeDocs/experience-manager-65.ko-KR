@@ -2,17 +2,17 @@
 title: ' [!DNL Assets] 과 통합 [!DNL InDesign Server]'
 description: ' [!DNL Adobe Experience Manager Assets] 을 [!DNL Adobe InDesign Server]과 통합하는 방법을 알아봅니다.'
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: 게시
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 3c1a30f36222c319c354afa408555982bfe2804e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets]을 [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}과 통합
+# [!DNL Adobe Experience Manager Assets]을 [!DNL Adobe InDesign Server]과 통합 {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] CFP 패키지를:
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 >
 >[!DNL Adobe InDesign] 는 두 개의 별도 오퍼로 제공됩니다. [Adobe ](https://www.adobe.com/products/indesign.html) 인쇄 및 디지털 배포용 페이지 레이아웃을 디자인하는 데 사용되는 InDesign 데스크탑 앱입니다. [Adobe InDesign ](https://www.adobe.com/products/indesignserver.html) Services를 사용하면 만든 항목을 기반으로 프로그래밍 방식으로 자동화된 문서를 만들 수  [!DNL InDesign]있습니다. 이 스크립트는 [ExtendScript](https://www.adobe.com/devnet/scripting.html) 엔진에 인터페이스를 제공하는 서비스로 작동합니다.스크립트는 [!DNL JavaScript]와 비슷한 [!DNL ExtendScript]에 작성됩니다. [!DNL InDesign] 스크립트에 대한 자세한 내용은 [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)를 참조하십시오.
 
-## 추출이 작동하는 방법 {#how-the-extraction-works}
+## 추출 작동 방식 {#how-the-extraction-works}
 
 [!DNL Adobe InDesign Server]을(를) [!DNL Experience Manager Assets]과 통합하여 [!DNL InDesign]로 만든 INDD 파일을 업로드하고, 렌디션을 생성하고, 추출된 모든 미디어(예: 비디오)를 추출하고, 자산으로 저장하도록 할 수 있습니다.
 
@@ -60,7 +60,7 @@ ht-degree: 1%
    * 추출된 텍스트와 파일은 [!DNL Experience Manager Assets]에 저장됩니다.
    * 모든 표현물은 자산 자체의 [!DNL Experience Manager Assets]에 저장됩니다.
 
-## [!DNL InDesign Server]을 Experience Manager {#integrating-the-indesign-server-with-aem}과 통합합니다.
+## [!DNL InDesign Server]을(를) Experience Manager과 통합 {#integrating-the-indesign-server-with-aem}
 
 [!DNL Experience Manager Assets]과 함께 사용하기 위해 [!DNL InDesign Server]을 통합하거나 프록시를 구성한 후 다음을 수행해야 합니다.
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 기본값이 인스턴스에 적합하지 않은 경우에만 필요합니다.
 1. InDesign Server](#configuring-the-proxy-worker-for-indesign-server)에 대한 [프록시 작업자를 구성합니다.
 
-### [!DNL InDesign Server] {#installing-the-indesign-server} 설치
+### [!DNL InDesign Server] 설치 {#installing-the-indesign-server}
 
 [!DNL Experience Manager]에서 사용할 [!DNL InDesign Server]을 설치하고 시작하려면 다음을 수행하십시오.
 
@@ -88,7 +88,7 @@ ht-degree: 1%
    >출력 메시지를 파일에 저장하려면 리디렉션을 사용하십시오.예를 들어, Windows에서는
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### [!DNL Experience Manager Assets] 워크플로우 {#configuring-the-aem-assets-workflow} 구성
+### [!DNL Experience Manager Assets] 워크플로우 구성 {#configuring-the-aem-assets-workflow}
 
 [!DNL Experience Manager Assets] 에는  **[!UICONTROL 에 대해 특별히 몇 가지 프로세스 단계가]**&#x200B;있는 사전 구성된 워크플로우 DAM 자산 업데이트 [!DNL InDesign]가 있습니다.
 
@@ -146,7 +146,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 * **페이지 디자인**:결과 페이지를 생성할 때 사용할 페이지 디자인입니다.
 
-### [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}에 대한 프록시 작업자 구성
+### [!DNL InDesign Server]에 대한 프록시 작업자 구성 {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
    ![Link Externalizer 설정](assets/link-externalizer-config.png)
 
-### [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server}에 대한 병렬 작업 처리를 활성화합니다.
+### [!DNL InDesign Server]에 대한 병렬 작업 처리 사용 {#enabling-parallel-job-processing-for-indesign-server}
 
 이제 ID에 대한 병렬 작업 처리를 활성화할 수 있습니다. 다음 작업을 처리할 수 있는 최대 병렬 작업 수(`x`) 및 [!DNL InDesign Server]을(를) 결정합니다.
 
@@ -213,7 +213,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 >
 >기본적으로 구성 가능한 (`retry.interval.to.whitelist.name`) 시간(분) 후 ID 작업자의 유효성을 다시 확인합니다. 작업자가 온라인에서 검색되면 차단 목록에서 제거됩니다.
 
-## [!DNL InDesign Server] 10.0 이상 {#enabling-support-for-indesign-server-or-later}에 대한 지원을 사용하도록 설정
+## [!DNL InDesign Server] 10.0 이상에서 지원 사용 {#enabling-support-for-indesign-server-or-later}
 
 [!DNL InDesign Server] 10.0 이상의 경우 다음 단계를 수행하여 다중 세션 지원을 활성화합니다.
 
@@ -225,7 +225,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 >
 >[!DNL InDesign Server] 통합을 [!DNL Experience Manager Assets]에 사용하려면 통합에 필요한 세션 지원 기능이 단일 코어 시스템에서 지원되지 않으므로 다중 코어 프로세서를 사용하십시오.
 
-## [!DNL Experience Manager] 자격 증명 {#configure-aem-credentials} 구성
+## [!DNL Experience Manager] 자격 증명 구성 {#configure-aem-credentials}
 
 [!DNL InDesign Server]와의 통합을 중단하지 않고 [!DNL Experience Manager] 배포에서 [!DNL InDesign Server]에 액세스할 기본 관리자 자격 증명(사용자 이름 및 암호)을 변경할 수 있습니다.
 
