@@ -2,17 +2,17 @@
 title: 자산을 공유할 비공개 폴더
 description: ' [!DNL Adobe Experience Manager Assets] 에서 개인 폴더를 만들고 다른 사용자와 공유하고 다양한 권한을 할당하는 방법을 알아봅니다.'
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: 협업
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] {#private-folder}의 비공개 폴더
+# [!DNL Adobe Experience Manager Assets]의 비공개 폴더 {#private-folder}
 
 전용 사용 가능한 [!DNL Adobe Experience Manager Assets] 사용자 인터페이스에서 비공개 폴더를 만들 수 있습니다. 이 비공개 폴더를 다른 사용자에게 공유하고 다양한 권한을 할당할 수 있습니다. 사용자가 지정하는 권한 수준에 따라 폴더에서 다양한 작업을 수행할 수 있습니다. 예를 들어 폴더 내의 자산을 보거나 자산을 편집할 수 있습니다.
 
