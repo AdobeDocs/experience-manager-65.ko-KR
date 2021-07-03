@@ -2,21 +2,21 @@
 title: Assets Insights에 데모 패키지 사용
 description: 데모 패키지를 사용하여 Adobe 자산 통찰력 을 활성화하여 웹 페이지의 데이터를 캡처하고 통찰력을 생성합니다.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 자산 통찰력,자산 보고서
 exl-id: 13947513-da76-43e1-ae01-abd24a59752a
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
 
 ---
 
-# 자산 통찰력 {#using-demo-package-for-asset-insights}에 데모 패키지 사용
+# Assets Insights에 데모 패키지 사용 {#using-demo-package-for-asset-insights}
 
 데모 패키지를 사용하여 Adobe 자산 통찰력 을 활성화하여 샘플 웹 페이지로부터 데이터를 캡처하고 통찰력을 생성할 수 있습니다.
 
-## [!DNL Use Experience Manager Assets] 샘플 웹 페이지가 있는 통찰력   {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] 샘플 웹 페이지가 있는 통찰력  {#using-aem-assets-insights-with-sample-web-page}
 
 1. [자산 통찰력 구성](configure-asset-insights.md)의 지침을 사용하여 자산 통찰력을 구성합니다.
 1. 아래에서 샘플 자산 패키지를 다운로드하고 CRXDE 패키지 관리자에서 패키지를 설치합니다.
