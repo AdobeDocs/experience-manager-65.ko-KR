@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: 구성
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 1%
@@ -37,7 +37,7 @@ AEM을 WCM으로 사용하지 *않고*&#x200B;인 경우에만 URL에 연결합�
 
 [자산 업로드](manage-assets.md#uploading-assets)도 참조하십시오.
 
-## 자산 {#obtaining-a-url-for-an-asset} URL 가져오기
+## 자산에 대한 URL 가져오기 {#obtaining-a-url-for-an-asset}
 
 이미지 사전 설정 또는 뷰어 사전 설정으로 생성된 URL 문자열을 가져올 수 있습니다. URL을 복사하면 클립보드에 로드되므로 웹 사이트 또는 애플리케이션의 페이지에 필요에 따라 붙여넣을 수 있습니다.
 
@@ -87,7 +87,7 @@ URL 문자열을 가져오는 방법은 여러 가지가 있습니다. 그러나
 
    URL 창을 종료하려면 **[!UICONTROL X]**&#x200B;을 탭하거나 **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
 
-## 정적 자산 {#obtaining-a-url-for-a-static-asset} URL 가져오기
+## 정적 자산에 대한 URL 가져오기 {#obtaining-a-url-for-a-static-asset}
 
 Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 정적 자산 전달을 지원합니다. 전달을 위해 지원되는 정적 자산 형식에는 다음이 포함됩니다.
 
@@ -158,7 +158,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
    게시된 비디오 표현물에 대한 전체 비디오 URL입니다.
 
-## 응용 스트리밍을 위한 비디오 URL(HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls} 가져오기
+## 적응형 스트리밍(HLS)을 위한 비디오 URL 가져오기 {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
 1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 머리글로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 탭합니다.
@@ -201,7 +201,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## HTTP/2를 사용하여 Dynamic Media 자산 {#using-http-to-deliver-your-dynamic-media-assets} 제공
+## HTTP/2를 사용하여 Dynamic Media 자산 전달 {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2는 브라우저 및 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 보다 신속하게 정보를 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 자산의 배달이 HTTP/2를 통해 수행될 수 있으므로 로드 시간이 향상됩니다.
 
