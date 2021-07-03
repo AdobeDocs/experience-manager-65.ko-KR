@@ -3,10 +3,10 @@ title: 디지털 자산 컬렉션 관리
 description: 컬렉션 만들기, 보기, 삭제, 편집 및 다운로드와 같은 자산 컬렉션을 관리하는 작업을 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
+role: User
 feature: 컬렉션,자산 관리
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * 검색 기준에 따라 자산을 동적으로 포함하는 스마트 컬렉션입니다.
 
-## 컬렉션 콘솔 {#navigating-the-collections-console}에 액세스
+## 컬렉션 콘솔 액세스 {#navigating-the-collections-console}
 
 **[!UICONTROL 컬렉션]**&#x200B;을 열려면 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 자산]** > **[!UICONTROL 컬렉션]**&#x200B;으로 이동합니다.
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 [정적 참조](#creating-a-collection-with-static-references)나 [검색 기준 기반 필터](#creating-a-smart-collection)를 기반으로 하여 컬렉션을 만들 수 있습니다. Lightbox에서 컬렉션을 만들 수도 있습니다.
 
-### 정적 참조 {#creating-a-collection-with-static-references} 을 사용하여 컬렉션 만들기
+### 정적 참조를 사용하여 컬렉션 만들기 {#creating-a-collection-with-static-references}
 
 정적 참조와 함께 컬렉션을 만들 수 있습니다. 예를 들어 자산, 폴더, 컬렉션, 스핀 세트 및 이미지 세트에 대한 참조가 있는 컬렉션입니다.
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
    컬렉션에 자산을 추가하려면 [!DNL Assets] 사용자 인터페이스로 이동합니다. 자세한 내용은 [컬렉션에 자산 추가](#adding-assets-to-a-collection)를 참조하십시오.
 
-### dropzone {#create-collections-using-dropzone}을 사용하여 컬렉션 만들기
+### 드롭존을 사용하여 컬렉션 만들기 {#create-collections-using-dropzone}
 
 [!DNL Assets] 사용자 인터페이스에서 자산을 컬렉션으로 드래그할 수 있습니다. 컬렉션의 사본을 만들고 자산을 여기에 드래그할 수도 있습니다.
 
@@ -138,7 +138,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 1. 원래 스마트 컬렉션을 편집된 컬렉션으로 대체하려면 **[!UICONTROL 덮어쓰기]** 를 클릭합니다. 또는 **[!UICONTROL 다른 이름으로 저장]**&#x200B;을 선택하여 편집된 컬렉션을 별도로 저장합니다.
 1. 확인 대화 상자에서 **[!UICONTROL 저장]**&#x200B;을 클릭하여 프로세스를 완료합니다.
 
-## 컬렉션 메타데이터 {#view-edit-collection-metadata} 보기 및 편집
+## 컬렉션 메타데이터 보기 및 편집 {#view-edit-collection-metadata}
 
 컬렉션 메타데이터는 추가된 태그를 포함하여 컬렉션에 대한 데이터를 포함합니다.
 
@@ -146,7 +146,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 1. **[!UICONTROL 컬렉션 메타데이터]** 페이지에서 **[!UICONTROL 기본]** 및 **[!UICONTROL 고급]** 탭의 컬렉션 메타데이터를 봅니다.
 1. 필요에 따라 메타데이터를 수정합니다. 변경 사항을 저장하려면 도구 모음에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
-## 여러 컬렉션의 메타데이터를 벌크로 {#editing-collection-metadata-in-bulk} 편집
+## 여러 컬렉션의 메타데이터 일괄적으로 편집 {#editing-collection-metadata-in-bulk}
 
 여러 컬렉션의 메타데이터를 동시에 편집할 수 있습니다. 이 기능을 사용하면 여러 컬렉션에서 공통 메타데이터를 빠르게 복제할 수 있습니다.
 
@@ -180,7 +180,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 
 최상위 수준에서 컬렉션을 검색하는 경우 개별 컬렉션만 검색 결과에 반환됩니다. [!DNL Assets] 또는 컬렉션 내의 폴더는 제외됩니다. 다른 모든 경우(예: 개별 컬렉션 내 또는 폴더 계층 구조) 모든 관련 자산, 폴더 및 컬렉션이 반환됩니다.
 
-## {#searching-within-collections} 컬렉션 내에서 검색
+## 컬렉션 내에서 검색 {#searching-within-collections}
 
 컬렉션 콘솔에서 컬렉션을 클릭하여 엽니다.
 
@@ -195,7 +195,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 
 1. 변경 사항을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-## {#deleting-a-collection} 컬렉션 삭제
+## 컬렉션 삭제 {#deleting-a-collection}
 
 1. 컬렉션 콘솔에서 컬렉션을 한 개 이상 선택하고 도구 모음에서 삭제 를 클릭합니다.
 
@@ -205,7 +205,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
    >
    >[저장된 검색](#saved-searches)을 삭제하여 스마트 컬렉션을 삭제할 수도 있습니다.
 
-## 컬렉션 {#downloading-a-collection} 다운로드
+## 컬렉션 다운로드 {#downloading-a-collection}
 
 컬렉션을 다운로드하면 폴더 및 하위 컬렉션을 포함하여 컬렉션 내의 자산의 전체 계층 구조가 다운로드됩니다.
 
@@ -215,7 +215,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 
    다운로드할 컬렉션을 선택하면 컬렉션 아래의 전체 폴더 계층 구조가 다운로드됩니다. 개별 폴더에 다운로드한 각 컬렉션(상위 컬렉션 아래에 중첩된 하위 컬렉션에 있는 자산 포함)을 포함하려면 **[!UICONTROL 각 자산에 대해 별도의 폴더 만들기]**&#x200B;를 선택합니다.
 
-## 중첩된 컬렉션 {#creating-nested-collections} 만들기
+## 중첩된 컬렉션 만들기 {#creating-nested-collections}
 
 다른 컬렉션에 컬렉션을 추가하여 중첩된 컬렉션을 만들 수 있습니다.
 
@@ -258,7 +258,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
 
 1. 대화 상자에서 **[!UICONTROL 삭제]**&#x200B;를 클릭하여 저장된 검색을 삭제합니다.
 
-## {#running-a-workflow-on-a-collection} 컬렉션에서 워크플로우 실행
+## 컬렉션에서 워크플로우 실행 {#running-a-workflow-on-a-collection}
 
 컬렉션 내의 자산에 대한 워크플로우를 실행할 수 있습니다. 컬렉션에 중첩된 컬렉션이 포함되어 있으면 중첩된 컬렉션 내의 자산에서도 워크플로우가 실행됩니다. 그러나 컬렉션과 중첩된 컬렉션에 중복 자산이 포함되어 있는 경우 워크플로우는 해당 자산에 대해 한 번만 실행됩니다.
 
