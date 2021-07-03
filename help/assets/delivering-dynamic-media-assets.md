@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: 자산 관리,표현물
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 16%
@@ -47,7 +47,7 @@ Dynamic Media을 사용하면 다음과 같은 몇 가지 옵션이 있습니다
 * [규칙 세트를 사용하여 URL 변환](/help/assets/using-rulesets-to-transform-urls.md)
 
 
-## Dynamic Media 자산 {#http-delivery-of-dynamic-media-assets} 의 HTTP/2 전달
+## Dynamic Media 자산의 HTTP/2 전달 {#http-delivery-of-dynamic-media-assets}
 
 이제 Experience Manager은 HTTP/2를 통해 모든 Dynamic Media 컨텐츠(이미지 및 비디오)의 전달을 지원합니다. 즉, 이미지나 비디오에 대해 게시된 URL 또는 포함 코드는 호스팅된 자산을 허용하는 모든 애플리케이션과 통합할 수 있습니다. 게시된 자산은 HTTP/2 프로토콜을 통해 전달됩니다. 이 전달 방법은 브라우저 및 서버의 통신 방식을 개선하여 모든 Dynamic Media 자산의 응답 및 로드 시간을 향상시킬 수 있습니다.
 
