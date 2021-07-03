@@ -2,10 +2,10 @@
 title: 자산 통찰력
 description: 자산 통찰력 기능을 사용하여 타사 웹 사이트, 마케팅 캠페인 및 Adobe의 크리에이티브 솔루션에서 사용되는 이미지의 사용자 등급 및 사용 통계를 추적하는 방법을 알아봅니다.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 자산 통찰력,자산 보고서
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Assets Insights에 자산에 대한 사용 통계가 표시되도록 하려면 �
 >
 >인사이트는 이미지에서만 지원되고 제공됩니다.
 
-## 이미지 {#viewing-statistics-for-an-image} 통계 보기
+## 이미지에 대한 통계 보기 {#viewing-statistics-for-an-image}
 
 메타데이터 페이지에서 자산 통찰력 점수를 볼 수 있습니다.
 
