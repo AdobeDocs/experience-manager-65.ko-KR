@@ -2,10 +2,10 @@
 title: Lightbox를 개인 이미지 갤러리로 사용
 description: Adobe Experience Manager Assets에서 개인 이미지 갤러리로서의 Lightbox에 대해 알아봅니다.]
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 개발자 도구,표현물
 exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Lightbox는 자산에 쉽게 액세스할 수 있는 특별한 유형의 컬렉�
 
 [!DNL Adobe Experience Manager Assets] 사용자인 경우 응용 프로그램에 처음 로그인할 때 Lightbox가 자동으로 만들어집니다. 로그인에 대해서만 사용됩니다. 다른 사용자는 Lightbox에 액세스할 수 없습니다.
 
-## Lightbox {#adding-assets-to-lightbox}에 자산 추가
+## Lightbox에 자산 추가 {#adding-assets-to-lightbox}
 
 1. [!DNL Assets] 사용자 인터페이스에서 Lightbox에 추가할 자산을 선택합니다.
 1. 자산을 **[!UICONTROL Lightbox]** 영역으로 드래그합니다. 드롭 영역이 활성화되고 해당 레이블이 **[!UICONTROL Drop to Add]**&#x200B;로 변경되면 해제합니다.
@@ -33,7 +33,7 @@ Lightbox는 자산에 쉽게 액세스할 수 있는 특별한 유형의 컬렉�
    >
    >Lightbox는 컬렉션과 유사하지만 일반적으로 컬렉션에서 수행하는 모든 작업을 수행할 수 없습니다. 예를 들어 Lightbox에 대한 설정을 삭제, 공유 또는 볼 수 없습니다. 또한 다른 컬렉션에 추가할 수 없습니다. 하지만 라이트박스 내에서 자산을 편집할 수 있습니다.
 
-## Lightbox {#removing-assets-from-lightbox}에서 자산 제거
+## Lightbox에서 자산 제거 {#removing-assets-from-lightbox}
 
 1. 컬렉션 콘솔로 이동하고 Lightbox를 클릭하여 해당 자산을 확인합니다.
 1. 제거할 자산을 선택합니다.
