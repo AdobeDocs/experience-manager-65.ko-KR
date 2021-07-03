@@ -8,16 +8,16 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2849'
 ht-degree: 19%
 
 ---
 
-# Dynamic Media Classic 기능을 페이지에 추가 {#adding-scene-features-to-your-page}
+# 페이지에 Dynamic Media Classic 기능 추가 {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) Classic은 풍부한 미디어 자산을 관리, 개선, 게시 및 웹, 모바일, 이메일 및 인터넷에 연결된 디스플레이 및 인쇄에 제공하기 위한 호스팅 솔루션입니다.
 
@@ -41,7 +41,7 @@ Experience Manager에서 비디오 구성 요소를 사용하는 방법에 대�
 >
 >Dynamic Media Classic 자산이 제대로 표시되지 않으면 Dynamic Media이 [비활성화](config-dynamic.md#disabling-dynamic-media)인지 확인한 다음 페이지를 새로 고치십시오.
 
-## 자산 {#manually-publishing-to-scene-from-assets}에서 Dynamic Media Classic에 수동으로 게시
+## 자산에서 Dynamic Media Classic에 수동으로 게시 {#manually-publishing-to-scene-from-assets}
 
 다음과 같이 Dynamic Media Classic에 디지털 자산을 게시할 수 있습니다.
 
@@ -80,7 +80,7 @@ Experience Manager에서 비디오 구성 요소를 사용하는 방법에 대�
 
 <!-- For more information about this important change, see [Flash Viewer End-of-Life FAQs](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html). -->
 
-### 페이지 {#adding-a-scene-component-to-a-page}에 Dynamic Media Classic(Scene7) 구성 요소 추가
+### 페이지에 Dynamic Media Classic(Scene7) 구성 요소 추가 {#adding-a-scene-component-to-a-page}
 
 페이지에 Dynamic Media Classic(Scene7) 구성 요소를 추가하는 것은 페이지에 구성 요소를 추가하는 것과 같습니다. Dynamic Media Classic 구성 요소는 다음 섹션에서 자세히 설명합니다.
 
@@ -105,7 +105,7 @@ Experience Manager에서 비디오 구성 요소를 사용하는 방법에 대�
    >
    >Touch UI에서만 이미지나 비디오를 페이지에 배치한 Dynamic Media Classic 구성 요소에 끌어다 놓아야 합니다. Dynamic Media Classic 구성 요소를 선택하고 편집한 다음, 자산을 선택할 수 없습니다.
 
-### 응답형 사이트 {#adding-interactive-viewing-experiences-to-a-responsive-website}에 대화형 보기 환경 추가
+### 응답형 사이트에 대화형 보기 경험 추가 {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 자산에 대한 응답형 디자인은 자산이 표시되는 위치에 따라 조정됨을 의미합니다. 응답형 디자인을 통해 여러 장치에 동일한 자산을 효과적으로 표시할 수 있습니다.
 
@@ -143,7 +143,7 @@ Experience Manager에서 비디오 구성 요소를 사용하는 방법에 대�
 
 **[!UICONTROL +]** 단추를 누르면 HTML5 확대/축소 구성 요소가 더 큰 이미지를 표시합니다.
 
-자산의 맨 아래에는 확대/축소 도구가 있습니다. 확대하려면 **[!UICONTROL +]** 를 탭합니다.줄이려면 **[!UICONTROL -]**&#x200B;를 누릅니다. **[!UICONTROL x]** 또는 확대/축소 재설정 화살표를 탭하면 이미지가 가져온 원래 크기로 돌아갑니다. 전체 화면으로 만들려면 대각선 화살표를 누릅니다. 구성 요소를 구성할 수 있도록 **[!UICONTROL 편집]**&#x200B;을 누릅니다. 이 구성 요소를 사용하여 모든 [!UICONTROL Dynamic Media Classic] 구성 요소](#settings-common-to-all-scene-components)에 공통되는 [설정을 구성할 수 있습니다.
+자산의 맨 아래에는 확대/축소 도구가 있습니다. 확대하려면 **[!UICONTROL +]**&#x200B;을 누릅니다.줄이려면 **[!UICONTROL -]**&#x200B;를 누릅니다. **[!UICONTROL x]** 또는 확대/축소 재설정 화살표를 탭하면 이미지가 가져온 원래 크기로 돌아갑니다. 전체 화면으로 만들려면 대각선 화살표를 누릅니다. 구성 요소를 구성할 수 있도록 **[!UICONTROL 편집]**&#x200B;을 누릅니다. 이 구성 요소를 사용하여 모든 [!UICONTROL Dynamic Media Classic] 구성 요소](#settings-common-to-all-scene-components)에 공통되는 [설정을 구성할 수 있습니다.
 
 ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
@@ -303,7 +303,7 @@ Dynamic Media Classic 컨텐츠 브라우저를 사용하면 Dynamic Media Class
 * 응용 비디오 세트 및 템플릿의 경우 미리 보기에 대한 크기 정보가 생성되지 않습니다.
 * 응용 비디오 세트의 경우 미리 보기에 대한 해상도가 생성되지 않습니다.
 
-### 컨텐츠 브라우저 {#searching-for-scene-assets-with-the-content-browser}에서 Dynamic Media Classic 자산 검색
+### 컨텐츠 브라우저로 Dynamic Media Classic 자산 검색 {#searching-for-scene-assets-with-the-content-browser}
 
 Dynamic Media Classic에서 자산을 검색하는 것은 Experience Manager 자산에서 자산을 검색하는 것과 비슷합니다. 그러나 검색할 때 자산을 Experience Manager으로 직접 가져오지 않고 Dynamic Media Classic 시스템에서 자산의 원격 보기가 표시됩니다.
 
