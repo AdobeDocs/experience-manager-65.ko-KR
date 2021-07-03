@@ -2,17 +2,17 @@
 title: ' [!DNL Assets]에서 파일 체크인 및 체크아웃'
 description: 편집할 자산을 확인하고 변경 사항이 완료되면 다시 체크 인하는 방법을 알아봅니다.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: 자산 관리
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 1%
 
 ---
 
-# [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}의 체크인 및 체크아웃 파일
+# [!DNL Experience Manager] DAM에서 파일 체크인 및 체크아웃 {#check-in-and-check-out-files-in-assets}
 
 [!DNL Adobe Experience Manager Assets] 편집할 자산을 확인하고 변경을 완료한 후 다시 체크 인할 수 있습니다. 자산을 체크 아웃한 후에는 자산을 편집, 주석 달기, 게시, 이동 또는 삭제할 수만 있습니다. 자산을 체크 아웃하면 자산이 잠깁니다. 다른 사용자는 자산을 다시 [!DNL Assets]에 체크 인할 때까지 자산에서 이러한 작업을 수행할 수 없습니다. 그러나 잠긴 자산에 대한 메타데이터를 변경할 수 있습니다.
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 이 기능은 여러 사용자가 여러 팀 간의 워크플로우 편집에서 공동 작업하는 작성자가 변경한 내용을 다른 사용자가 덮어쓰지 않도록 하는 데 도움이 됩니다.
 
-## 자산 확인 {#checking-out-assets}
+## 자산 체크아웃 {#checking-out-assets}
 
 1. [!DNL Assets] 사용자 인터페이스에서 체크 아웃할 자산을 선택합니다. 여러 자산을 선택하여 체크아웃할 수도 있습니다.
 1. 도구 모음에서 **[!UICONTROL 체크아웃]**&#x200B;을 클릭합니다. **[!UICONTROL Checkout]** 옵션은 **[!UICONTROL Checkin]**으로 전환합니다.
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 1. [!DNL Assets] 인터페이스에서 편집된 자산을 선택하고 도구 모음에서 **[!UICONTROL 체크 인]**&#x200B;을 클릭합니다. 수정된 자산은 [!DNL Assets]에 체크 인되며, 다른 사용자가 편집할 수 있습니다.
 
-## {#forced-check-in} 강제 체크 인
+## 강제 체크인 {#forced-check-in}
 
 관리자는 다른 사용자가 체크 아웃한 자산을 체크 인할 수 있습니다.
 
