@@ -2,17 +2,17 @@
 title: Apache Tika를 사용하여 MIME 유형의 자산 탐지
 description: 'Apache Tika를 활성화하여 파일 확장자 대신 업로드 작업 중에 컨텐츠 스트림에서 MIME 유형의 자산을 탐지할 수 있습니다. [!DNL Experience Manager Assets] '
 contentOwner: AG
-role: Administrator, Architect
+role: Admin, Architect
 feature: 메타데이터,개발자 도구,자산 관리
 exl-id: a312466d-8d84-4c94-af85-1549afc61aed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 5%
 
 ---
 
-# [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}을 사용하여 MIME 유형의 자산 탐지
+# [!DNL Apache Tika]을 사용하여 MIME 유형의 자산 탐지 {#detecting-mime-type-of-assets-using-apache-tika}
 
 일반적으로 [!DNL Adobe Experience Manager Assets] 은 파일 확장자에서 업로드하는 MIME 유형의 자산을 감지합니다.
 
