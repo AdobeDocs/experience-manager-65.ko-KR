@@ -2,10 +2,10 @@
 title: 자산 템플릿
 description: ' [!DNL Adobe Experience Manager Assets] 의 자산 템플릿 및 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.'
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: 자산 관리,개발자 도구
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 1%
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 업데이트된 파일을 상위 폴더 내에서 INDD, PDF 또는 JPG 형식으로 내보낼 수 있습니다. 이러한 형식의 출력을 로컬 파일 시스템에 다운로드할 수도 있습니다.
 
-## 자료 {#creating-a-collateral} 만들기
+## 자료 만들기 {#creating-a-collateral}
 
 향후 캠페인을 위해 브로셔, 홍보물 및 광고와 같은 디지털 인쇄 가능한 자료를 만들고 전 세계 아웃렛 스토어와 공유하는 시나리오를 생각해 보십시오. 템플릿을 기반으로 자료를 만들면 채널 간에 통합된 고객 경험을 전달할 수 있습니다. 디자이너는 [!DNL InDesign] 과 같은 크리에이티브 솔루션을 사용하여 캠페인 템플릿(단일 페이지 또는 다중 페이지)을 만들고 템플릿을 [!DNL Experience Manager Assets]에 업로드할 수 있습니다. 담보를 만들기 전에 하나 이상의 INDD 템플릿을 업로드하여 [!DNL Experience Manager]에서 미리 사용할 수 있도록 하십시오.
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## 자료 {#editing-a-collateral} 편집
+## 자료 편집 {#editing-a-collateral}
 
 담보물을 작성한 후 바로 편집할 수 있습니다. 또는 [!UICONTROL 템플릿] 페이지나 자산 페이지에서 엽니다.
 
