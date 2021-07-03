@@ -3,10 +3,10 @@ title: 지원되는 파일 형식 및 MIME 유형
 description: ' [!DNL Assets] and [!DNL Dynamic Media] 에서 지원하는 파일 형식 및 MIME 유형과 각 형식에 대해 지원되는 기능입니다.'
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 자산 관리,표현물
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 10%
