@@ -2,16 +2,16 @@
 title: '[!DNL Assets] 프록시 개발'
 description: 프록시는 [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] 프록시, 지원되는 작업, 프록시 구성 요소 및 사용자 지정 프록시 작업자를 개발하는 방법입니다.
 contentOwner: AG
-role: Administrator, Architect
+role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
 
 ---
 
-# [!DNL Assets] 프록시 개발  {#assets-proxy-development}
+# [!DNL Assets] 프록시 개발 {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] 프록시를 사용하여 특정 작업에 대한 처리를 배포합니다.
 
@@ -130,7 +130,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
  final String value = cloudConfig.get("someProperty", "defaultValue");
 ```
 
-### 사용자 지정된 프록시 작업자 {#developing-a-customized-proxy-worker} 개발
+### 사용자 지정된 프록시 작업자 개발 {#developing-a-customized-proxy-worker}
 
 [IDS 프록시 작업자](indesign.md)는 InDesign 자산 처리를 아웃소싱하기 위해 이미 기본적으로 제공되는 [!DNL Assets] 프록시 작업자의 예입니다.
 
