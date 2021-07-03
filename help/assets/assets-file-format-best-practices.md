@@ -2,10 +2,10 @@
 title: 지원되는 파일 형식을 처리하는 우수 사례
 description: ' [!DNL Experience Manager Assets]을 사용하여 지원되는 다양한 파일 형식을 처리하는 우수 사례입니다.'
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: 자산 관리,개발자 도구
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 >
 >AMS(Adobe Managed Services)에서 [!DNL Experience Manager] 을(를) 사용하는 경우 대용량 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager] 30000 x 23000 픽셀보다 큰 고해상도 PSB 파일을 처리할 수 없습니다.
 
-## [!DNL Adobe Camera Raw] 라이브러리  {#adobe-camera-raw-library}
+## [!DNL Adobe Camera Raw] 라이브러리 {#adobe-camera-raw-library}
 
 최적의 성능을 위해 RAW 및 DNG 파일에 [!DNL Adobe Camera Raw] 라이브러리를 사용하는 것이 좋습니다.
 
