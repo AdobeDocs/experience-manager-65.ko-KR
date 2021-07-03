@@ -3,10 +3,10 @@ title: Adobe Creative Cloud 우수 사례와 통합
 description: 자산 전송 워크플로우를 간소화하고 높은 컨텐츠 속도를 달성하는 데 도움이 되는 통합 [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] 에 대한 우수 사례입니다.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 공동 작업,Adobe 자산 링크,데스크탑 앱
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '3254'
 ht-degree: 2%
