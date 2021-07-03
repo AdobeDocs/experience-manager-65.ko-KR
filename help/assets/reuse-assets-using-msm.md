@@ -3,17 +3,17 @@ title: MSM을 사용하여 자산 재사용
 description: 상위 자산에서 파생되고 상위 자산에 연결된 여러 페이지/폴더에서 자산을 사용합니다. 자산이 기본 사본과 계속 동기화되며 몇 번의 클릭으로 상위 자산에서 업데이트를 받습니다.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner, Administrator, Architect
+role: User, Admin, Architect
 feature: 자산 관리,다중 사이트 관리자
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '3371'
 ht-degree: 0%
 
 ---
 
-# [!DNL Assets] {#reuse-assets-using-msm-for-assets}에 MSM을 사용하여 자산 재사용
+# [!DNL Assets]에 MSM을 사용하여 자산 재사용 {#reuse-assets-using-msm-for-assets}
 
 [!DNL Adobe Experience Manager]의 MSM(Multi Site Manager) 기능을 사용하면 한 번 작성되고 여러 웹 위치에서 다시 사용할 수 있습니다. [!DNL Assets] 기능에 대한 MSM과 같은 디지털 자산에 사용할 수 있습니다. [!DNL Assets]에 MSM을 사용하면 다음 작업을 수행할 수 있습니다.
 
@@ -124,7 +124,7 @@ Live Copy 자산 또는 폴더의 정보 및 상태를 확인하려면 다음 �
 
 1. Live Copy에 대한 옵션을 선택하여 상위 항목에서 롤아웃 구성을 상속하거나 구성을 변경할 수 있습니다.
 
-### 폴더 {#status-lc-folder} 의 모든 Live Copy 정보 및 상태
+### 폴더의 모든 Live Copy에 대한 정보 및 상태 {#status-lc-folder}
 
 [!DNL Experience Manager] 소스 폴더의 모든 라이브 카피의 동상을 확인하는 콘솔을 제공합니다. 이 콘솔에는 모든 하위 자산의 상태가 표시됩니다.
 
@@ -167,7 +167,7 @@ Live Copy 자산 또는 폴더의 정보 및 상태를 확인하려면 다음 �
 
 *그림:특정 Live Copy의 관계를 일시 중단하거나 롤아웃 구성을 변경합니다.*
 
-### Live Copy {#ref-rail-lc}에 대한 참조 레일의 빠른 작업
+### Live Copy에 대한 참조 레일의 빠른 작업 {#ref-rail-lc}
 
 Live Copy 자산 또는 폴더의 경우 다음 정보를 확인하고 참조 레일에서 바로 다음 작업을 수행할 수 있습니다.
 
@@ -208,7 +208,7 @@ Live Copy 자산 또는 폴더를 선택하고 왼쪽 레일을 열고 **[!UICON
 
 *그림:소스 수정 사항을 선택한 Live Copy에 롤아웃합니다.*
 
-### 동기화 작업 {#about-sync} 정보
+### 동기화 작업 기본 정보 {#about-sync}
 
 동기화 작업은 소스 수정 사항만 선택한 Live Copy로 가져옵니다. 동기화 작업은 상속을 취소한 후 수행된 로컬 수정 사항을 준수하며 유지 관리합니다. 로컬 수정 내용을 덮어쓰지 않고 취소된 상속이 다시 설정되지 않습니다. 세 가지 방법으로 동기화 작업을 시작할 수 있습니다.
 
@@ -240,7 +240,7 @@ Live Copy가 소스 자산 또는 폴더의 수정 사항을 받지 않도록 �
 
 또는 **[!UICONTROL Live Copy 개요]** 콘솔에서 Live Copy 폴더에 있는 여러 자산의 관계를 빠르게 일시 중단하거나 다시 시작할 수 있습니다. [Live Copy 폴더에 있는 많은 자산에 대한 작업 수행](#bulk-actions)을 참조하십시오.
 
-## Live Copy {#local-mods} 로컬 수정
+## Live Copy에 로컬 수정 {#local-mods}
 
 Live Copy는 생성될 때 원본 소스의 복제본입니다. Live Copy의 메타데이터 값은 소스에서 상속됩니다. 메타데이터 필드는 소스 자산의 각 필드와 함께 상속을 개별적으로 유지 관리합니다.
 
@@ -270,7 +270,7 @@ Live Copy는 생성될 때 원본 소스의 복제본입니다. Live Copy의 메
 
 또는 **[!UICONTROL Live Copy 개요]** 콘솔에서 Live Copy 폴더에 있는 여러 자산을 빠르게 분리할 수 있습니다. [Live Copy 폴더에 있는 많은 자산에 대한 작업 수행](#bulk-actions)을 참조하십시오.
 
-## Live Copy 폴더의 일괄 작업 {#bulk-actions}
+## Live Copy 폴더의 벌크 작업 {#bulk-actions}
 
 Live Copy 폴더에 여러 개의 자산이 있는 경우 각 자산에 대해 작업을 시작하는 것은 지루할 수 있습니다. [!UICONTROL Live Copy 콘솔]의 많은 자산에 대한 기본 작업을 빠르게 시작할 수 있습니다. 위의 방법은 개별 자산에 대해 계속 작동합니다.
 
@@ -282,7 +282,7 @@ Live Copy 폴더에 여러 개의 자산이 있는 경우 각 자산에 대해 �
 
    *그림:Live Copy 개요 콘솔에서 Live Copy 폴더의  [!UICONTROL 많은 자산을 ] 쉽게 업데이트합니다.*
 
-## [!DNL Assets] {#extend-api}에 대한 MSM 확장
+## [!DNL Assets]에 대한 MSM 확장 {#extend-api}
 
 [!DNL Experience Manager] msm Java API를 사용하여 기능을 확장할 수 있습니다. [!DNL Assets]의 경우, 확장은 [!DNL Sites]에 대한 MSM에서 작동하는 것과 동일하게 작동합니다. 특정 작업에 대한 자세한 내용은 [MSM](/help/sites-developing/extending-msm.md) 확장 및 다음을 참조하십시오.
 
@@ -298,7 +298,7 @@ Live Copy 폴더에 여러 개의 자산이 있는 경우 각 자산에 대해 �
 >* 페이지 속성(터치 지원 UI)에서 MSM 잠금 구성은 [!DNL Assets]에 대한 MSM에서 지원되지 않습니다.
 
 
-## 자산 관리 작업이 라이브 카피 {#manage-assets}에 미치는 영향
+## 자산 관리 작업이 Live Copy에 미치는 영향 {#manage-assets}
 
 Live Copy 및 소스는 디지털 자산으로서 어느 정도 관리할 수 있는 자산 또는 폴더입니다. [!DNL Experience Manager]의 일부 자산 관리 작업은 Live Copy에 특정 영향을 줍니다.
 
