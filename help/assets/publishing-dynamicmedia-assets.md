@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: 게시
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 집합 또는 자산 게시에 대한 자세한 내용은 [자산 게시](manage-assets.md)를 참조하십시오.
 
-## Dynamic Media 자산 {#http-delivery-of-dynamic-media-assets} 의 HTTP/2 전달
+## Dynamic Media 자산의 HTTP/2 전달 {#http-delivery-of-dynamic-media-assets}
 
 이제 Experience Manager은 HTTP/2를 통해 모든 Dynamic Media 컨텐츠(이미지 및 비디오)의 전달을 지원합니다. 즉, 이미지나 비디오에 대해 게시된 URL 또는 포함 코드는 호스팅된 자산을 허용하는 모든 애플리케이션과 통합할 수 있습니다. 게시된 자산은 HTTP/2 프로토콜을 통해 전달됩니다. 이 전달 방법은 브라우저 및 서버의 통신 방식을 개선하여 모든 Dynamic Media 자산의 응답 및 로드 시간을 향상시킬 수 있습니다.
 
