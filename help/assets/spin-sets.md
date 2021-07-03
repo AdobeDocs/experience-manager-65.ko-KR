@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 feature: 스핀 세트,자산 관리
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 0%
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 AEM Assets](/help/assets/manage-assets.md)에서 다른 자산을 업로드하는 것처럼 스핀 세트에 대한 이미지를 업로드할 수 있습니다.[
 
-### 스핀 세트 {#guidelines-for-shooting-spin-set-images} 이미지를 캡처하기 위한 지침
+### 스핀 세트에 대한 이미지 캡처 지침 {#guidelines-for-shooting-spin-set-images}
 
 다음은 스핀 세트 이미지에 대한 몇 가지 우수 사례입니다. 일반적으로 스핀 세트에 있는 이미지가 많을수록 이미지 회전 효과가 더 좋습니다. 그러나 집합에 많은 이미지를 포함하면 이미지가 로드되는 데 걸리는 시간도 늘어납니다. AEM에서는 스핀 세트에서 사용할 이미지를 촬영하기 위해 다음 지침을 권장합니다.
 
@@ -217,6 +217,6 @@ AEM에서 축소판에 사용하는 이미지를 다른 이미지로 대체하�
 
 [자산 미리 보기](/help/assets/previewing-assets.md)를 참조하십시오.
 
-## 스핀 세트 게시 중 {#publishing-spin-sets}
+## 스핀 세트 게시 {#publishing-spin-sets}
 
 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
