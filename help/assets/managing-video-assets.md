@@ -2,10 +2,10 @@
 title: 비디오 자산 관리
 description: 비디오 자산을 업로드, 미리 보기, 주석 달기 및  [!DNL Adobe Experience Manager]에 게시합니다.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: 자산 관리
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 
    ![비디오 재생 제어](assets/video-playback-controls.png)
 
-## 2GB {#configuration-to-upload-assets-that-are-larger-than-gb}보다 큰 자산을 업로드하도록 구성
+## 2GB보다 큰 자산을 업로드하도록 구성 {#configuration-to-upload-assets-that-are-larger-than-gb}
 
 기본적으로 [!DNL Assets]에서는 파일 크기 제한으로 인해 2GB보다 큰 자산을 업로드할 수 없습니다. 그러나 CRXDE Lite으로 이동하여 `/apps` 디렉토리 아래에 노드를 만들어 이 제한을 덮어쓸 수 있습니다. 노드에는 동일한 노드 이름, 디렉토리 구조 및 이와 비교할 수 있는 노드 속성이 있어야 합니다.
 
