@@ -2,17 +2,17 @@
 title: '[!DNL Assets] 크기 조정 가이드'
 description: 배포 [!DNL Adobe Experience Manager Assets]에 필요한 인프라 및 리소스를 예상하기 위한 효율적인 지표를 결정하는 우수 사례입니다.
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: 자산 관리
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 0%
 
 ---
 
-# [!DNL Assets] 크기 조정 가이드  {#assets-sizing-guide}
+# [!DNL Assets] 크기 조정 가이드 {#assets-sizing-guide}
 
 [!DNL Adobe Experience Manager Assets] 구현을 위해 환경 크기를 조정할 때 디스크, CPU, 메모리, IO 및 네트워크 처리량 측면에서 사용 가능한 리소스가 충분한지 확인하는 것이 중요합니다. 이러한 리소스 중 많은 크기를 조정하려면 시스템에 로드되는 자산 수를 이해해야 합니다. 더 나은 지표를 사용할 수 없는 경우 기존 라이브러리의 크기를 라이브러리 페이지로 나누어 자산이 만들어지는 비율을 찾을 수 있습니다.
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 몇 가지 위험 때문에 모든 경우에 데이터 저장소를 공유하는 것이 권장되지 않습니다.
 
-#### 단일 실패 지점 {#single-point-of-failure}
+#### 단일 장애 지점 {#single-point-of-failure}
 
 공유 데이터 저장소가 있는 경우 인프라에서 단일 장애 지점이 발생합니다. 시스템에 하나의 작성자 및 두 개의 게시 인스턴스가 있고 각각 고유한 데이터 저장소가 있는 시나리오를 생각해 보십시오. 충돌하면 다른 두 항목은 계속 실행될 수 있습니다. 그러나 데이터 저장소가 공유되면 단일 디스크 오류로 인해 전체 인프라가 다운될 수 있습니다. 따라서 데이터 저장소를 빠르게 복원할 수 있는 공유 데이터 저장소의 백업을 유지 관리해야 합니다.
 
@@ -78,7 +78,7 @@ AWS S3 서비스를 공유 데이터 저장소에 배포하는 것이 좋습니�
 
 AWS 작업의 경우, EBS 볼륨의 RAID 배열을 빌드하지 않고 단일 중앙 위치(Amazon S3를 통해)를 구현하면 시스템의 복잡성과 운영 위험을 크게 상쇄할 수 있습니다.
 
-#### 성능 관련 사항 {#performance-concerns}
+#### 성능 문제 {#performance-concerns}
 
 공유 데이터 저장소를 사용하려면 모든 인스턴스 간에 공유되는 네트워크 마운트 드라이브에 바이너리를 저장해야 합니다. 이러한 바이너리는 네트워크를 통해 액세스되므로 시스템 성능에 부정적인 영향을 줍니다. 빠른 네트워크 연결을 사용하여 빠른 디스크 어레이에 대한 영향을 부분적으로 줄일 수 있습니다. 그러나, 이것은 비싼 제안이다. AWS 작업의 경우 모든 디스크는 원격이며 네트워크 연결이 필요합니다. 사용 후 볼륨은 인스턴스가 시작되거나 중지되면 데이터가 손실됩니다.
 
