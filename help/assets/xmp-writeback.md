@@ -2,10 +2,10 @@
 title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능이 자산의 메타데이터 변경 사항을 자산의 모든 또는 특정 표현물에 전달하는 방법을 알아봅니다.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 메타데이터
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 2%
@@ -28,7 +28,7 @@ XMP 원본에 쓰기 기능을 사용하여 메타데이터 변경 사항을 자
 
 그러나 [!DNL Experience Manager Assets] 은 메타데이터 변경 사항을 자산의 변환에 자동으로 전파하지 않습니다. [XMP 원본에 쓰기](#enable-xmp-writeback)를 활성화하는 방법을 참조하십시오.
 
-## XMP 원본에 쓰기 {#enable-xmp-writeback} 사용
+## XMP 원본에 쓰기 활성화 {#enable-xmp-writeback}
 
 메타데이터 변경 내용을 업로드할 때 자산의 변환에 전파할 수 있도록 하려면 Configuration Manager에서 **[!UICONTROL Adobe CQ DAM Rendition Maker]** 구성을 수정합니다.
 
@@ -38,7 +38,7 @@ XMP 원본에 쓰기 기능을 사용하여 메타데이터 변경 사항을 자
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
-## 특정 표현물에 대해 XMP 원본에 쓰기 활성화 {#enabling-xmp-writeback-for-specific-renditions}
+## 특정 표현물에 대한 XMP 원본에 쓰기 활성화 {#enabling-xmp-writeback-for-specific-renditions}
 
 XMP 원본에 쓰기 기능이 메타데이터 변경 사항을 전파하여 표현물을 선택하도록 하려면 이러한 표현물을 [!UICONTROL DAM 메타데이터 WriteBack] 워크플로우의 XMP 원본에 쓰기 프로세스 워크플로우 단계로 지정합니다. 기본적으로 이 단계는 원래 표현물로 구성됩니다.
 
@@ -67,7 +67,7 @@ XMP 원본에 쓰기 기능이 메타데이터 변경 사항을 전파하여 표
 >
 >지원되는 플랫폼에 대해서는 [XMP 메타데이터 쓰기 되돌리기 사전 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)을 참조하십시오.
 
-## XMP 메타데이터 {#filtering-xmp-metadata} 필터링
+## XMP 메타데이터 필터링 {#filtering-xmp-metadata}
 
 [!DNL Experience Manager Assets] 에서는 자산을 수집할 때 자산 바이너리에서 읽히고 JCR에 저장된 XMP 메타데이터에 대한 속성/노드의 차단 목록 및 허용 목록 필터링을 모두 지원합니다.
 
