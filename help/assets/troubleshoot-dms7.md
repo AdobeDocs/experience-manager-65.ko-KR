@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: 문제 해결
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 2%
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 동기화 오류 및 문제가 `error.log`(AEM server 디렉토리 `/crx-quickstart/logs/`)에 기록됩니다. 대부분의 문제의 근본 원인을 파악하는 데 충분한 로깅을 사용할 수 있지만 자세한 정보를 수집하기 위해 Sling Console([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))을 통해 `com.adobe.cq.dam.ips` 패키지의 DEBUG에 대한 로깅을 늘릴 수 있습니다.
 
-### 이동, 복사, {#move-copy-delete} 삭제
+### 이동, 복사, 삭제 {#move-copy-delete}
 
 이동, 복사 또는 삭제 작업을 수행하기 전에 다음을 수행하십시오.
 
