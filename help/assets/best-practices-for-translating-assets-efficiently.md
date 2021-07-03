@@ -2,10 +2,10 @@
 title: 자산 번역 우수 사례
 description: 다양한 번역된 버전을 동기화하고 번역 워크플로우를 간소화하기 위해 자산을 효율적으로 관리하는 모범 사례입니다.
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: 자산 관리
 exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 3%
