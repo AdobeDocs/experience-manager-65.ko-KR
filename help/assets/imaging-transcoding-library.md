@@ -2,10 +2,10 @@
 title: 이미징 코드 변환 라이브러리
 description: 인코딩, 코드 변환, 이미지 리샘플링, 이미지 크기 조정 등 핵심 이미지 처리 기능을 수행할 수 있는 Adobe의 이미지 처리 솔루션인 Imaging Transcoding 라이브러리를 구성하고 사용하는 방법을 알아봅니다.
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: 표현물,개발자 도구,자산 처리
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 1%
@@ -71,7 +71,7 @@ Imaging Transcoding Library는 다양한 파일 형식 및 프로필을 지원�
 
 ITL 처리를 구성하려면 구성 파일을 만들고 워크플로우를 업데이트하여 실행합니다.
 
-### 추출된 번들 {#create-conf-file}에 대한 구성 파일 만들기
+### 추출된 번들에 대한 구성 파일 만들기 {#create-conf-file}
 
 라이브러리를 구성하려면 다음 단계를 사용하여 라이브러리를 나타내는 CONF 파일을 만듭니다. 관리자 또는 루트 권한이 필요합니다.
 
