@@ -6,17 +6,17 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: 게시
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2944'
 ht-degree: 4%
 
 ---
 
-# Dynamic Media {#selective-publish-configure-folder} 의 폴더 수준에서 선택적 게시 구성
+# Dynamic Media의 폴더 수준에서 선택적 게시 구성 {#selective-publish-configure-folder}
 
 폴더 수준에서 Adobe Experience Manager 또는 Dynamic Media으로 또는에서 자산을 게시 또는 게시 취소하도록 선택할 수 있습니다. Dynamic Media 인스턴스의 모든 폴더에 전역 설정을 적용하는 **[!UICONTROL Dynamic Media 구성]**&#x200B;에 전적으로 의지하는 대신 **[!UICONTROL 게시 관리]** 또는 **[!UICONTROL 빠른 게시]**&#x200B;를 사용할 수 있습니다.
 
@@ -74,7 +74,7 @@ ht-degree: 4%
 
 1. 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭한 다음 **[!UICONTROL 확인]**&#x200B;을 탭하여 Experience Manager 자산으로 돌아갑니다.
 
-## 게시 관리{#selective-publish-manage-publication}를 사용하여 Dynamic Media 또는 Experience Manager에 자산을 선택적으로 게시합니다.
+## 게시 관리를 사용하여 Dynamic Media 또는 Experience Manager에 자산을 선택적으로 게시{#selective-publish-manage-publication}
 
 **[!UICONTROL 게시 관리]**&#x200B;를 사용하여 자산을 Dynamic Media 또는 Experience Manager에 선택적으로 게시하려면 먼저 다음 중 하나를 설정해야 합니다.
 
@@ -123,7 +123,7 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
    * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시]** 또는 **[!UICONTROL Dynamic Media에 게시]**&#x200B;를 탭합니다.
 1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
-### 게시 관리 {#selective-unpublish-manage-publication}를 사용하여 Dynamic Media 또는 Experience Manager에서 선택적으로 자산 게시 취소
+### 게시 관리를 사용하여 Dynamic Media 또는 Experience Manager에서 선택적으로 자산 게시 취소 {#selective-unpublish-manage-publication}
 
 1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스합니다. 왼쪽에서 탐색 아이콘(도구 아이콘 바로 위)을 탭한 다음, **[!UICONTROL Assets]** > **[!UICONTROL 파일]**&#x200B;을 탭합니다.
 1. **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기에서 다음 중 하나를 수행합니다.]**
@@ -154,7 +154,7 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
    * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시 취소]** 또는 **[!UICONTROL Dynamic Media에서 게시 취소]**&#x200B;를 탭합니다.
 1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
-## 빠른 게시 {#quick-publish-aem-dm}를 사용하여 Dynamic Media 또는 Experience Manager에 자산 게시
+## 빠른 게시를 사용하여 Dynamic Media 또는 Experience Manager에 자산 게시 {#quick-publish-aem-dm}
 
 단순 자산 활성화 사례에 **[!UICONTROL 빠른 게시]**&#x200B;를 사용할 수 있습니다. **[!UICONTROL 빠른]** 게시에서는 추가 사용자 상호 작용 없이 선택한 자산을 즉시 게시합니다. 이 작업 때문에 게시되지 않은 참조도 자동으로 게시됩니다.
 
@@ -185,7 +185,7 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
 
 1. **[!UICONTROL 확인]**&#x200B;을 탭한 다음, **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
 
-## 검색 결과 {#selective-publish-unpublish-search-results} 을 통해 자산을 선택적으로 게시 또는 게시 취소합니다
+## 검색 결과를 통해 자산을 선택적으로 게시 또는 게시 취소합니다 {#selective-publish-unpublish-search-results}
 
 검색 결과에 다른 Dynamic Media 게시 설정이 있는 자산 폴더에서 자산이 표시될 수 있습니다. 검색 결과에서 여러 자산을 선택하고 각 자산에는 서로 다른 Dynamic Media 게시 모드 설정이 있는 경우 도구 모음에서 **[!UICONTROL 게시 관리]**&#x200B;를 트리거하여 게시하거나 게시를 취소할 수 있습니다.
 
@@ -247,7 +247,7 @@ Experience Manager](/help/assets/search-assets.md)에서 자산 검색 을 참�
    * **[!UICONTROL 게시 관리 - 범위]** 페이지의 오른쪽 위 모서리에서 **[!UICONTROL 게시]** 또는 **[!UICONTROL 게시 취소]**&#x200B;를 탭하여 작업을 시작합니다.
 1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
 
-## 자산 {#check-publish-status-of-asset} 의 게시 상태 확인
+## 자산의 게시 상태 확인 {#check-publish-status-of-asset}
 
 Experience Manager에서 **[!UICONTROL 타임라인]**, **[!UICONTROL 카드 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 목록 보기]**&#x200B;를 사용하여 자산의 게시 상태를 빠르게 확인할 수 있습니다.
 
