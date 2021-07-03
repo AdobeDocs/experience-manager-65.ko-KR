@@ -3,16 +3,16 @@ title: '[!DNL Assets] 홈 페이지 경험'
 description: 자산 관련 최근 활동에 대한 스냅숏을 포함하여 풍부한 시작 화면 경험을 위해 [!DNL Experience Manager Assets] 홈 페이지를 개인화합니다.
 contentOwner: AG
 feature: 개발자 도구, 자산 관리
-role: Administrator, Business Practitioner
+role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] 홈 페이지 경험  {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] 홈 페이지 경험 {#aem-assets-home-page-experience}
 
 자산의 최근 활동에 대한 스냅숏을 포함하여 풍부한 시작 화면 경험을 위해 [!DNL Adobe Experience Manager Assets] 홈 페이지를 개인화합니다.
 
