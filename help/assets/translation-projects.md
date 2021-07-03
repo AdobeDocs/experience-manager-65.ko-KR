@@ -2,10 +2,10 @@
 title: 번역 프로젝트 만들기
 description: ' [!DNL Adobe Experience Manager]에서 번역 프로젝트를 만드는 방법을 알아봅니다.'
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: 번역
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1875'
 ht-degree: 5%
