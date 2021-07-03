@@ -3,16 +3,16 @@ title: ' [!DNL Adobe Experience Manager Assets] 소개'
 description: 디지털 자산 관리란 무엇이고, 사용 사례이며,  [!DNL Adobe Experience Manager Asset] 오퍼링을 제공하는지 알아봅니다.
 contentOwner: AG
 feature: 자산 관리
-role: Leader, Architect, Business Practitioner
+role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 34%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] as a DAM 솔루션 {#administering-assets} 정보
+# [!DNL Adobe Experience Manager Assets] as a DAM 솔루션 정보 {#administering-assets}
 
 [!DNL Assets] 는 플랫폼의 필수적인 부분이며 기업이 디지털 자산을  [!DNL Experience Manager] 관리하고 배포할 수 있도록 해주는 DAM(디지털 자산 관리) 도구입니다. 조직 전반의 사용자는 이미지, 비디오, 문서, 오디오 클립, 3D 파일, 리치 미디어와 같은 다양한 유형의 디지털 자산을 관리, 저장 및 액세스하여 웹, 인쇄 및 디지털 배포에 사용할 수 있습니다.
 
@@ -35,7 +35,7 @@ ht-degree: 34%
 
 기본 사용자 인터페이스는 [!DNL Sites]의 사용자 인터페이스와 동일합니다. 자세한 내용은 [사이트 개요](/help/sites-authoring/page-authoring.md)를 참조하십시오.
 
-### 디지털 자산 관리 및 이미지 구성 요소 {#digital-asset-management-versus-image-component}
+### 디지털 자산 관리와 이미지 구성 요소 {#digital-asset-management-versus-image-component}
 
 이미지를 DAM 저장소에 넣을지, 이미지 구성 요소를 사용할지를 결정할 때 이미지 라이프사이클을 고려하십시오.
 
@@ -52,7 +52,7 @@ ht-degree: 34%
 >
 >대량의 자산(특히 이미지)을 업로드하거나 편집하는 것은 [!DNL Experience Manager] 배포 성능에 영향을 줄 수 있습니다.
 
-### [!DNL Experience Manager Assets] 용어  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] 용어 {#aem-assets-terminology}
 
 [!DNL Experience Manager]에서 디지털 자산으로 작업하는 경우 다음 용어를 이해해야 합니다.
 
