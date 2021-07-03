@@ -2,10 +2,10 @@
 title: 자산 Digital Rights Management
 description: ' [!DNL Experience Manager]에서 라이선스가 있는 자산에 대한 자산 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: DRM,자산 관리
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 0%
@@ -128,7 +128,7 @@ ht-degree: 0%
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-## [!DNL Assets] {#digital-rights-management-in-assets-1}의 Digital Rights Management
+## [!DNL Assets]의 Digital Rights Management {#digital-rights-management-in-assets-1}
 
 이 기능은 [!DNL Adobe Experience Manager Assets]에서 라이선스가 부여된 자산을 다운로드하기 전에 사용권 계약에 동의함을 적용합니다.
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 >
 >라이센스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스에서 지원하는 경우, Adobe은 `/apps/settings/dam/drm/licenses` 또는 `/conf/&ast;/settings/dam/drm/licenses` 아래에 저장하는 것을 권장합니다.
 
-### DRM으로 보호된 자산 {#downloading-drm-assets} 다운로드
+### DRM 보호 자산 다운로드 {#downloading-drm-assets}
 
 1. 카드 보기에서 다운로드할 자산을 선택하고 **[!UICONTROL 다운로드]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL 저작권 관리]** 페이지의 목록에서 다운로드할 자산을 선택합니다.
