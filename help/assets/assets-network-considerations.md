@@ -2,17 +2,17 @@
 title: 네트워크 고려 사항 및 요구 사항
 description: ' [!DNL Adobe Experience Manager Assets] 배포를 디자인할 때 네트워크 고려 사항에 대해 설명합니다.'
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: 개발자 도구
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
-# [!DNL Assets] 네트워크 고려 사항  {#assets-network-considerations}
+# [!DNL Assets] 네트워크 고려 사항 {#assets-network-considerations}
 
 [!DNL Adobe Experience Manager Assets] 이해 못지않게 네트워크를 이해하는 것이 중요합니다. 네트워크는 업로드, 다운로드 및 사용자 경험에 영향을 줄 수 있습니다. 네트워크 토폴로지를 다이어그래밍하면 네트워크 성능 및 사용자 환경을 개선하기 위해 수정해야 하는 네트워크에서 초크 포인트 및 하위 최적화 영역을 식별할 수 있습니다.
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 오른쪽에 표시되는 컴퓨터는 1Mbps 속도로 VPN을 통해 회사 네트워크의 업스트림을 제한할 수 있습니다. 1Mbps 연결에 대한 사용자 환경은 1Gbps 연결을 통해 사용자 경험과는 크게 다릅니다. 사용자가 상호 작용하는 자산의 크기에 따라 VPN 업링크가 작업에 적합하지 않을 수 있습니다.
 
-## 회사 네트워크 토폴로지 {#topology-of-the-corporate-network}
+## 기업 네트워크의 토폴로지 {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
