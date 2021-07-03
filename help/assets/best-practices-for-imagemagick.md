@@ -2,17 +2,17 @@
 title: ImageMagick 설치 및 구성
 description: ImageMagick 소프트웨어, 설치 방법, 명령줄 프로세스 단계 설정, 이미지 축소판 편집, 작성 및 생성 등에 사용
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: 표현물,개발자 도구
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 1%
 
 ---
 
-# [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}에서 작동하도록 ImageMagick 설치 및 구성
+# [!DNL Experience Manager Assets]에서 작동하도록 ImageMagick 설치 및 구성 {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick는 비트맵 이미지를 생성, 편집, 작성 또는 변환하는 소프트웨어 플러그인입니다. PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF 및 SVG를 포함하여 다양한 형식(200개 이상)으로 이미지를 읽고 쓸 수 있습니다. ImageMagick를 사용하여 이미지의 크기 조정, 대칭 이동, 미러, 회전, 왜곡, 전단 및 변환. 또한 ImageMagick를 사용하여 이미지 색상을 조정하거나 다양한 특수 효과를 적용하거나 텍스트, 선, 다각형, 타원 및 커브를 그릴 수도 있습니다.
 
@@ -24,7 +24,7 @@ ImageMagick를 사용하여 대용량 파일을 처리하려면 일반적인 메
 >
 >[!DNL Adobe Managed Services](AMS)에서 [!DNL Experience Manager] 을 사용 중인 경우 고해상도 PSD 또는 PSB 파일을 많이 처리하려면 Adobe 고객 지원 센터에 문의하십시오. [!DNL Experience Manager] 30000 x 23000 픽셀보다 큰 고해상도 PSB 파일을 처리할 수 없습니다.
 
-## ImageMagick {#installing-imagemagick} 설치
+## ImageMagick 설치 {#installing-imagemagick}
 
 다양한 운영 체제에서 여러 버전의 ImageMagic 설치 파일을 사용할 수 있습니다. 운영 체제에 적합한 버전을 사용하십시오.
 
@@ -34,7 +34,7 @@ ImageMagick를 사용하여 대용량 파일을 처리하려면 일반적인 메
 1. 경로 환경 변수를 ImageMagic 설치 디렉터리로 설정합니다.
 1. 설치가 성공했는지 확인하려면 `identify -version` 명령을 실행합니다.
 
-## 명령줄 프로세스 단계 {#set-up-the-command-line-process-step} 설정
+## 명령줄 프로세스 단계 설정 {#set-up-the-command-line-process-step}
 
 특정 사용 사례에 대해 명령줄 프로세스 단계를 설정할 수 있습니다. 다음 단계를 수행하여 [!DNL Experience Manager] 서버의 `/content/dam`에 JPEG 이미지 파일을 추가할 때마다 뒤집힌 이미지와 축소판(140x100, 48x48, 319x319 및 1280x1280)을 생성합니다.
 
