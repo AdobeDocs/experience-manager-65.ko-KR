@@ -10,9 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 feature: 콘텐츠 조각
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 2%
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 또한, 자산에 대한 임시 복사본을 만드는 방법과 유사하게 조각에 대한 임시 언어 사본을 만들 수도 있습니다. 자세한 내용은 [자산에 대한 임시 언어 사본 만들기](translation-projects.md#creating-temporary-language-copies)를 참조하십시오.
 
-## 혼합 미디어 조각 번역 중 {#translating-mixed-media-fragments}
+## 혼합 미디어 조각 번역 {#translating-mixed-media-fragments}
 
 AEM에서 다양한 유형의 미디어 자산 및 컬렉션을 포함하는 컨텐츠 조각을 번역할 수 있습니다. 인라인 자산을 포함하는 컨텐츠 조각을 번역하는 경우, 이러한 자산의 번역된 사본은 대상 언어 루트 아래에 저장됩니다.
 
