@@ -2,10 +2,10 @@
 title: 검색 패싯을 사용하여 검색 결과 필터링
 description: ' [!DNL Adobe Experience Manager]에서 검색 패싯을 만들고, 수정하고, 사용하는 방법입니다.'
 contentOwner: AG
-role: Administrator, Developer
+role: Admin, Developer
 feature: 검색
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2397'
 ht-degree: 3%
