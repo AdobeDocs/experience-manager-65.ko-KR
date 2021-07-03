@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 feature: 회전 배너
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '4740'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
-## 회전 배너가 만들어지는 방법을 확인하십시오 {#watch-how-carousel-banners-are-created}
+## 회전 배너가 만들어지는 방식을 확인하십시오 {#watch-how-carousel-banners-are-created}
 
 [캐러셀 배너를 만드는 방법에 대한 연습을 재생합니다](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10분 33초). 또한 회전 배너를 미리 보고 편집하고 전달하는 방법을 알아봅니다.
 
@@ -177,7 +177,7 @@ Quickview URL 및 그 결과 핫스팟이나 이미지 맵 변수의 다음 예�
  </tbody>
 </table>
 
-## 이미지 배너 업로드 중 {#uploading-image-banners}
+## 이미지 배너 업로드 {#uploading-image-banners}
 
 사용하려는 이미지를 이미 업로드한 경우 다음 단계인 [회전 메뉴 집합 만들기](#creating-carousel-sets)로 이동하십시오. 회전판에 사용되는 이미지는 Dynamic Media이 활성화된 후에 업로드해야 합니다.
 
@@ -325,7 +325,7 @@ Quickview URL 및 그 결과 핫스팟이나 이미지 맵 변수의 다음 예�
 
    웹 사이트 랜딩 페이지에 설정된 회전 메뉴 추가](#adding-a-carousel-banner-to-your-website-page)를 참조하십시오[
 
-## 회전 메뉴 집합 편집 {#editing-carousel-sets}
+## 회전판 세트 편집 {#editing-carousel-sets}
 
 >[!NOTE]
 회전 배너를 만들거나 편집하려면 관리자가 아닌 사용자를 **[!UICONTROL dam-users]** 그룹에 추가해야 합니다. 만들거나 편집하는 데 문제가 있는 경우 **[!UICONTROL dam-users]** 그룹에 사용자를 추가할 수 있는 시스템 관리자에게 문의하십시오.
@@ -392,7 +392,7 @@ Quickview URL 및 그 결과 핫스팟이나 이미지 맵 변수의 다음 예�
 1. 페이지 왼쪽에 있는 패널의 **[!UICONTROL 뷰어]** 목록에서 사용할 회전 배너 뷰어 사전 설정의 이름을 탭합니다.
 1. 이미지에서 핫스팟이나 이미지 맵을 탭하여 연결된 작업을 테스트할 수 있습니다.
 
-## 회전 배너 게시 중 {#publishing-carousel-banners}
+## 회전 배너 게시 {#publishing-carousel-banners}
 
 사용할 수 있도록 회전판을 게시합니다. 회전 메뉴 세트를 게시하면 URL 및 포함 코드가 활성화됩니다. 또한 확장성과 성능을 제공하기 위해 CDN과 통합된 Dynamic Media 클라우드에 회전판을 게시합니다.
 
@@ -402,7 +402,7 @@ Quickview URL 및 그 결과 핫스팟이나 이미지 맵 변수의 다음 예�
 
 회전 배너를 게시하는 방법에 대한 자세한 내용은 [Dynamic Media 자산 게시](/help/assets/publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
-## 웹 사이트 페이지에 회전 배너를 추가하는 중 {#adding-a-carousel-banner-to-your-website-page}
+## 웹 사이트 페이지에 회전 배너 추가 {#adding-a-carousel-banner-to-your-website-page}
 
 배너 이미지를 업로드하여 캐러셀, 핫스팟 및/또는 이미지 맵을 배너에 추가하고 캐러셀 세트를 게시하면 기존 웹 사이트 페이지에 추가할 수 있습니다.
 
@@ -417,7 +417,7 @@ Experience Manager 사이트 고객의 경우 대화형 미디어 구성 요소�
 1. Experience Manager 자산에서 복사한 포함 코드를 웹 페이지에 추가합니다.
 복사된 포함 코드는 응답형이므로 페이지의 포함 영역에 자동으로 맞게 조정되어야 합니다.
 
-## 캐러셀 배너와 기존 빠른 보기 {#integrating-the-carousel-banner-with-an-existing-quickview} 통합
+## 회전판 배너와 기존 빠른 보기 통합 {#integrating-the-carousel-banner-with-an-existing-quickview}
 
 참고:이 단계는 독립 실행형 Experience Manager Assets 고객인 경우에만 적용됩니다.
 
