@@ -4,16 +4,16 @@ description: 3D 자산을 미리 보는 방법 알아보기
 contentOwner: Rick Brough
 docset: aem65
 feature: 3D 자산
-role: Business Practitioner
+role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 11%
 
 ---
 
-# Adobe Experience Manager{#previewing-3d-assets-aem}에서 3D 자산 미리 보기
+# Adobe Experience Manager에서 3D 자산 미리 보기{#previewing-3d-assets-aem}
 
 Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전달 및 대화형 미리 보기를 지원합니다.
 
@@ -21,7 +21,7 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
-## Experience Manager {#supported-3d-previewing-assets}에서 3D 미리 보기에 대해 지원되는 형식
+## Experience Manager에서 3D 미리 보기에 대해 지원되는 형식 {#supported-3d-previewing-assets}
 
 대화형 3D 미리 보기는 다음 파일 형식을 지원합니다.
 
@@ -45,7 +45,7 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## Experience Manager{#performance-3d-previewing-assets}에서 3D 자산을 미리 볼 때의 성능 고려 사항
+## Experience Manager에서 3D 자산을 미리 볼 때의 성능 고려 사항{#performance-3d-previewing-assets}
 
 자산 세부 사항 보기 페이지에서 3D 자산을 여는 데 걸리는 시간은 대역폭, 이미지 복잡성, 서버에 대한 지연 시간과 같은 몇 가지 요인에 따라 다릅니다.
 
