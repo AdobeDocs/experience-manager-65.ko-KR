@@ -2,10 +2,10 @@
 title: 자산 업로드 제한 구성
 description: '사용자가 업로드할 수 있는 자산 유형 제한 '
 contentOwner: AG
-role: Developer, Administrator, Architect
+role: Developer, Admin, Architect
 feature: 자산 관리,업로드
 exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 1%
