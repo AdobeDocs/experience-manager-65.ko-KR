@@ -3,10 +3,10 @@ title: '메타데이터 스키마는 메타데이터 속성 페이지의 레이�
 description: 메타데이터 스키마는 속성에 대해 표시되는 속성 페이지의 레이아웃과 메타데이터 속성을 정의합니다. 사용자 지정 메타데이터 스키마를 만들고, 메타데이터 스키마를 편집하고, 자산에 메타데이터 스키마를 적용하는 방법을 알아보십시오.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner,Administrator
+role: User,Admin
 feature: 메타데이터
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: 9ac5582b2e4859bf4f101c5caa5258fc755ebc46
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '3547'
 ht-degree: 2%
