@@ -2,10 +2,10 @@
 title: 자산 번역 준비
 description: 언어 루트 폴더를 만들어 다국어 자산을 지원하기 위한 번역 자산을 준비합니다.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 프로젝트
 exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 3%
