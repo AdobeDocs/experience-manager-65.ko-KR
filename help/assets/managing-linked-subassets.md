@@ -2,10 +2,10 @@
 title: 참조 및 여러 페이지로 복합 자산 관리
 description: ' [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop] 내에서 디지털 자산에 대한 참조를 만드는 방법을 알아봅니다. PDF, INDD, PPT, PPTX 및 AI 파일과 같은 다중 페이지 파일의 개별 하위 자산 페이지를 보려면 페이지 뷰어 기능을 사용하십시오.'
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 자산 관리
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 0%
