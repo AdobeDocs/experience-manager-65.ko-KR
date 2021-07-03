@@ -5,17 +5,17 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 feature: CDN 캐시
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
 
 ---
 
-# Dynamic Media {#invalidating-cdn-cache-for-dm-assets}의 방식으로 CDN 캐시 무효화
+# Dynamic Media을 통해 CDN 캐시 무효화 {#invalidating-cdn-cache-for-dm-assets}
 
 Dynamic Media 자산은 CDN(Content Delivery Network)에 의해 캐시되므로 고객에게 빠르게 전달할 수 있습니다. 그러나 그러한 자산을 업데이트할 때에는 이러한 변경 사항을 웹 사이트에서 즉시 적용할 수 있습니다. CDN 캐시를 지우거나 무효화하면 Dynamic Media에서 제공하는 자산을 빠르게 업데이트할 수 있습니다. TTL(Time To Live) 값(기본값 10시간)을 사용하여 캐시가 만료될 때까지 기다리는 대신 Dynamic Media 내에서 캐시가 몇 분 내에 만료되도록 요청을 보낼 수 있습니다.
 
