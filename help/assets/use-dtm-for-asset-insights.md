@@ -2,17 +2,17 @@
 title: DTM을 통해 자산 통찰력 활성화
 description: DTM(Adobe Dynamic Tag Management)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 자산 통찰력,자산 보고서
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '675'
 ht-degree: 1%
 
 ---
 
-# DTM {#enable-asset-insights-through-dtm}을 통해 자산 통찰력 활성화
+# DTM을 통해 자산 통찰력 활성화 {#enable-asset-insights-through-dtm}
 
 Adobe Dynamic Tag Management는 디지털 마케팅 도구를 활성화하는 도구입니다. Adobe Analytics 고객에게 무료로 제공됩니다. 추적 코드를 사용자 지정하여 타사 CMS 솔루션에서 자산 통찰력을 사용할 수 있도록 하거나 DTM을 사용하여 자산 통찰력 태그를 삽입할 수 있습니다. 인사이트는 이미지에서만 지원되고 제공됩니다.
 
