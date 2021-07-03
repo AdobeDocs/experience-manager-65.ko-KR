@@ -9,16 +9,16 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 feature: 자산 관리
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 1%
 
 ---
 
-# 소프트웨어 인터페이스 {#previewing-assets}를 사용하여 자산 미리 보기
+# 소프트웨어 인터페이스를 사용하여 자산 미리 보기 {#previewing-assets}
 
 미리 보기 를 사용하여 업로드한 디지털 자산이 고객이 자체 웹 브라우저에서 볼 때 어떻게 보이는지 확인할 수 있습니다. 미리 보기에 자산에 지정된 기본 내장된 교차 장치 뷰어가 사용됩니다.
 
@@ -144,7 +144,7 @@ ht-degree: 1%
     </tbody>
     </table>
 
-## 키보드 {#keyboard-navigation-asset-preview}을 사용하여 자산 미리 보기
+## 키보드를 사용하여 자산 미리 보기 {#keyboard-navigation-asset-preview}
 
 1. 자산 사용자 인터페이스에서 미리 보려는 자산이 포함된 폴더로 이동합니다.
 
