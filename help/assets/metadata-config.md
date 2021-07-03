@@ -2,17 +2,17 @@
 title: 메타데이터 기능 구성 및 관리.
 description: 메타데이터 추가 및 관리와 관련된  [!DNL Experience Manager Assets] 기능의 구성 및 관리.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 메타데이터
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 3%
 
 ---
 
-# [!DNL Assets] {#config-metadata}에서 메타데이터 기능 구성 및 관리
+# [!DNL Assets]에 있는 메타데이터 기능 구성 및 관리 {#config-metadata}
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 자세한 내용은 [메타데이터 스키마 양식 편집](metadata-schemas.md#edit-metadata-schema-forms)을 참조하십시오.
 
-## [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem} 내에 사용자 지정 네임스페이스를 등록합니다
+## [!DNL Experience Manager] 내에 사용자 지정 네임스페이스를 등록합니다 {#registering-a-custom-namespace-within-aem}
 
 [!DNL Experience Manager] 내에 고유한 네임스페이스를 추가할 수 있습니다. `cq`, `jcr`, `sling` 등과 같이 사전 정의된 네임스페이스가 있는 것처럼 저장소 메타데이터 및 XML 처리를 위한 네임스페이스를 가질 수 있습니다.
 
@@ -35,7 +35,7 @@ ht-degree: 3%
 1. 네임스페이스를 추가하려면 페이지 하단에서 **[!UICONTROL 새로 만들기]**&#x200B;를 클릭합니다.
 1. XML 네임스페이스 규칙에서 사용자 지정 네임스페이스를 지정합니다. ID를 URI 형태로 지정하고 ID에 연결된 접두사를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
-## 벌크 메타데이터 업데이트 {#bulk-metadata-update-limit}에 대한 제한 구성
+## 벌크 메타데이터 업데이트에 대한 제한 구성 {#bulk-metadata-update-limit}
 
 DOS(서비스 거부) 등의 상황을 방지하기 위해 [!DNL Enterprise Manager] 은 Sling 요청에서 지원되는 매개 변수 수를 제한합니다. 한 번에 많은 자산의 메타데이터를 업데이트할 때 제한에 도달할 수 있으며 더 많은 자산에 대해 메타데이터가 업데이트되지 않습니다. Enterprise Manager는 로그에 다음 경고를 생성합니다.
 
@@ -47,7 +47,7 @@ DOS(서비스 거부) 등의 상황을 방지하기 위해 [!DNL Enterprise Mana
 
 메타데이터 프로필을 사용하면 폴더 내의 자산에 기본 메타데이터를 적용할 수 있습니다. 메타데이터 프로필을 만들어 폴더에 적용합니다. 이후에 폴더에 업로드하는 모든 자산은 메타데이터 프로필에서 구성한 기본 메타데이터를 상속합니다.
 
-### 메타데이터 프로필 {#adding-a-metadata-profile} 추가
+### 메타데이터 프로필 추가 {#adding-a-metadata-profile}
 
 1. **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 메타데이터 프로필]**&#x200B;로 이동하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 1. 프로필의 제목(예: `Sample Metadata`)을 입력하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 메타데이터 프로필에 대한 [!UICONTROL 양식 편집]이 표시됩니다.
@@ -91,7 +91,7 @@ DOS(서비스 거부) 등의 상황을 방지하기 위해 [!DNL Enterprise Mana
 
    ![메타데이터 프로필 페이지에 추가된 메타데이터 프로필](assets/MetadataProfiles-page.png)
 
-### 메타데이터 프로필 {#copying-a-metadata-profile} 복사
+### 메타데이터 프로필 복사 {#copying-a-metadata-profile}
 
 1. **[!UICONTROL 메타데이터 프로필]** 페이지에서 메타데이터 프로필을 선택하여 복사본을 만듭니다.
 
@@ -103,7 +103,7 @@ DOS(서비스 거부) 등의 상황을 방지하기 위해 [!DNL Enterprise Mana
 
    ![메타데이터 프로필 페이지에 추가된 메타데이터 프로필 사본](assets/copy-metadata-profile.png)
 
-### 메타데이터 프로필 {#deleting-a-metadata-profile} 삭제
+### 메타데이터 프로필 삭제 {#deleting-a-metadata-profile}
 
 1. **[!UICONTROL 메타데이터 프로필]** 페이지에서 삭제할 프로필을 선택합니다.
 
@@ -130,11 +130,11 @@ To apply a metadata profile globally, follow these steps:
   ![See applied metadata profile to a folder in the JCR in CRXDE](assets/metadata-profile-folder-setting2.png)
 -->
 
-## 폴더 {#folder-metadata-schema}에 대한 메타데이터 스키마
+## 폴더의 메타데이터 스키마 {#folder-metadata-schema}
 
 [!DNL Adobe Experience Manager Assets]을 사용하면 폴더 속성 페이지에 표시되는 레이아웃 및 메타데이터를 정의하는 자산 폴더에 대한 메타데이터 스키마를 생성할 수 있습니다. 
 
-### {#add-a-folder-metadata-schema-form} 폴더 메타데이터 스키마 추가
+### 폴더 메타데이터 스키마 양식 추가 {#add-a-folder-metadata-schema-form}
 
 폴더 메타데이터 스키마 Forms 편집기를 사용하여 폴더에 대한 메타데이터 스키마를 만들고 편집합니다.
 
@@ -219,13 +219,13 @@ To apply a metadata profile globally, follow these steps:
 
 ![delete_form](assets/delete_form.png)
 
-### 폴더 메타데이터 스키마 {#assign-a-folder-metadata-schema} 할당
+### 폴더 메타데이터 스키마 할당 {#assign-a-folder-metadata-schema}
 
 폴더 메타데이터 스키마 Forms 페이지나 폴더를 만들 때 폴더에 폴더 메타데이터 스키마를 할당할 수 있습니다.
 
 폴더에 대한 메타데이터 스키마를 구성하는 경우 스키마 양식의 경로는 `./jcr:content` 아래의 폴더 노드의 `folderMetadataSchema` 속성에 저장됩니다.
 
-#### 폴더 메타데이터 스키마 페이지 {#assign-to-a-schema-from-the-folder-metadata-schema-page}에서 스키마에 할당
+#### 폴더 메타데이터 스키마 페이지에서 스키마에 할당 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 폴더 메타데이터 스키마]**&#x200B;로 이동합니다.
 1. 폴더 메타데이터 스키마 Forms 페이지에서 폴더에 적용할 스키마 양식을 선택합니다.
@@ -240,7 +240,7 @@ To apply a metadata profile globally, follow these steps:
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
-#### {#assign-a-schema-when-creating-a-folder} 폴더를 만들 때 스키마 할당
+#### 폴더를 만들 때 스키마 할당 {#assign-a-schema-when-creating-a-folder}
 
 폴더를 만들 때 폴더 메타데이터 스키마를 할당할 수 있습니다. 시스템에 폴더 메타데이터 스키마가 하나 이상 있으면 **[!UICONTROL 폴더 만들기]** 대화 상자에 추가 목록이 표시됩니다. 원하는 스키마를 선택할 수 있습니다. 기본적으로 선택된 스키마가 없습니다.
 
@@ -253,7 +253,7 @@ To apply a metadata profile globally, follow these steps:
 1. 메타데이터 스키마를 적용한 폴더의 메타데이터 속성을 엽니다.
 1. 폴더 메타데이터 필드를 보려면 **[!UICONTROL 폴더 메타데이터]** 탭을 클릭합니다.
 
-### 폴더 메타데이터 스키마 {#use-the-folder-metadata-schema} 사용
+### 폴더 메타데이터 스키마 사용 {#use-the-folder-metadata-schema}
 
 폴더 메타데이터 스키마로 구성된 폴더의 속성을 엽니다. **[!UICONTROL 폴더 메타데이터]** 탭이 [!UICONTROL 속성] 페이지에 표시됩니다. 폴더 메타데이터 스키마 양식을 보려면 이 탭을 선택합니다.
 
