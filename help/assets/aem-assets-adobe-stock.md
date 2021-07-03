@@ -3,16 +3,16 @@ title: 자산 관리 [!DNL Adobe Stock] 자산
 description: ' [!DNL Adobe Experience Manager] 내에서 자산을 검색, 가져오기, 라이선스 및 관리합니다.  [!DNL Adobe Stock]  라이선스가 있는 자산을 다른 디지털 자산으로 사용합니다.'
 contentOwner: AG
 feature: 검색, Adobe Stock
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 3%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}에서 [!DNL Adobe Stock] 자산 사용
+# [!DNL Adobe Experience Manager Assets]에서 [!DNL Adobe Stock] 자산 사용 {#use-adobe-stock-assets-in-aem-assets}
 
 조직은 [!DNL Adobe Stock] 엔터프라이즈 플랜을 [!DNL Experience Manager Assets]과 통합하여 라이선스가 있는 자산이 광고 및 마케팅 프로젝트에 폭넓게 사용 가능하고 [!DNL Experience Manager] 의 강력한 자산 관리 기능이 있는지 확인할 수 있습니다.
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 통합에는 [enterprise [!DNL Adobe Stock] 계획](https://stockenterprise.adobe.com/)이 필요합니다.
 
-## [!DNL Experience Manager] 및 [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock} 통합
+## [!DNL Experience Manager] 및 [!DNL Adobe Stock] 통합 {#integrate-aem-and-adobe-stock}
 
 [!DNL Experience Manager] 과 [!DNL Adobe Stock] 간의 통신을 허용하려면 [!DNL Experience Manager]에서 IMS 구성과 [!DNL Adobe Stock] 구성을 만드십시오.
 
@@ -30,7 +30,7 @@ ht-degree: 3%
 >
 >조직에 대한 [!DNL Experience Manager] 관리자 및 [!DNL Admin Console] 관리자만 관리자 권한이 필요하므로 통합을 수행할 수 있습니다.
 
-### IMS 구성 {#create-an-ims-configuration} 만들기
+### IMS 구성 만들기 {#create-an-ims-configuration}
 
 1. [!DNL Experience Manager] 사용자 인터페이스에서 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL Adobe IMS 구성]**&#x200B;으로 이동합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭하고 **[!UICONTROL 클라우드 솔루션]** > **[!UICONTROL Adobe Stock]**&#x200B;을 선택합니다.
 1. 기존 인증서를 재사용하거나 **[!UICONTROL 새 인증서 만들기]**&#x200B;를 선택합니다.
@@ -43,7 +43,7 @@ ht-degree: 3%
 <!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
-### [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}에서 [!DNL Adobe Stock] 구성을 만듭니다
+### [!DNL Experience Manager]에서 [!DNL Adobe Stock] 구성 만들기 {#create-adobe-stock-configuration-in-aem}
 
 1. [!DNL Experience Manager]도구&#x200B;]**>**[!UICONTROL  Cloud Services ]**>**[!UICONTROL  Adobe Stock ]**로 이동합니다.**[!UICONTROL 
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭하여 구성을 만들고 기존 IMS 구성과 연결합니다. `PROD` 을 환경 매개 변수로 선택합니다.
@@ -103,7 +103,7 @@ ht-degree: 3%
 
 *그림:대화 상자에서 자산에 라이선스를  [!DNL Adobe Stock] 부여하고 저장할 수  [!DNL Experience Manager Assets]있습니다.*
 
-### 메타데이터 및 자산 속성 {#access-metadata-and-asset-properties} 액세스
+### 메타데이터 및 자산 속성에 액세스 {#access-metadata-and-asset-properties}
 
 사용자는 [!DNL Experience Manager]에 저장된 자산에 대한 [!DNL Adobe Stock] 메타데이터 속성을 포함하여 메타데이터에 액세스하고 미리 볼 수 있으며, 자산에 대해 **[!UICONTROL 라이센스 참조]**&#x200B;를 추가할 수 있습니다. 그러나 라이센스 참조에 대한 업데이트는 [!DNL Experience Manager] 웹 사이트와 [!DNL Adobe Stock] 웹 사이트 간에 동기화되지 않습니다.
 
