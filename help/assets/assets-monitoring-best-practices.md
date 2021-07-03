@@ -2,10 +2,10 @@
 title: '배포 모니터링 우수 사례 [!DNL Assets] '
 description: 배포 후 [!DNL Adobe Experience Manager] 배포의 환경 및 성능을 모니터링하는 우수 사례입니다.
 contentOwner: AG
-role: Administrator, Architect
+role: Admin, Architect
 feature: 자산 관리
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * 상단:Iotop은 디스크 입출력 사용을 위한 세부 대시보드입니다. 여기에는 디스크 입출력(I/O)을 사용하는 프로세스와 사용 양을 나타내는 바와 미터(M)가 표시됩니다. Iotop은 `yum install iotop` 또는 `apt-get install iotop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
-* [Iftop](https://www.ex-parrot.com/pdw/iftop/):Iftop은 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이더넷을 사용하는 엔터티의 통신 채널 통계당 정보를 표시하는 경우 및 사용하는 대역폭의 양을 나타냅니다. Iftop은 `yum install iftop` 또는 `apt-get install iftop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
+* [Iftop](https://www.ex-parrot.com/pdw/iftop/):Iftop은 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이더넷을 사용하는 엔터티의 통신 채널 통계당 정보를 표시하는 경우 및 사용하는 대역폭의 양이 표시됩니다. Iftop은 `yum install iftop` 또는 `apt-get install iftop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
 * Java 비행 기록(JFR):비프로덕션 환경에서 자유롭게 사용할 수 있는 Oracle의 상업적 도구입니다. 자세한 내용은 [Java Flight Recorder를 사용하여 CQ 런타임 문제를 진단하는 방법](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)을 참조하십시오.
 * [!DNL Experience Manager] `error.log` 파일:시스템에  [!DNL Experience Manager] `error.log` 기록된 오류에 대한 세부 정보를 파일에 조사할 수 있습니다. 조사할 오류를 식별하려면 `tail -F quickstart/logs/error.log` 명령을 사용합니다.
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 각 항목을 모니터링하려면 NewRelic(TM) 및 AppDynamics(TM)와 같은 외부 도구가 필요합니다. 이러한 도구를 사용하여 시스템에 대한 경고를 정의할 수 있습니다. 예를 들어 높은 시스템 사용률, 워크플로우 백업, 상태 확인 실패 또는 웹 사이트에 대한 인증되지 않은 액세스 등이 있습니다. Adobe은 다른 도구에 비해 특정 도구를 권장하지 않습니다. 자신에게 적합한 도구를 찾고 이를 활용하여 설명된 항목을 모니터링합니다.
 
-#### 내부 응용 프로그램 모니터링 {#internal-application-monitoring}
+#### 내부 애플리케이션 모니터링 {#internal-application-monitoring}
 
 내부 애플리케이션 모니터링에는 JVM, 컨텐츠 저장소 등 [!DNL Experience Manager] 스택을 구성하는 응용 프로그램 구성 요소를 모니터링하고, 플랫폼에 구축된 사용자 정의 응용 프로그램 코드를 통해 모니터링합니다. 일반적으로 SolarWinds(TM), HP OpenView(TM), Hyperic(TM), Javbix(TM) 등과 같이 널리 사용되는 다양한 모니터링 솔루션에서 직접 모니터링할 수 있는 JMX Mbeans를 통해 수행됩니다. JMX에 대한 직접 연결을 지원하지 않는 시스템의 경우 셸 스크립트를 작성하여 JMX 데이터를 추출하고 해당 데이터를 기본적으로 이해하는 형식으로 이러한 시스템에 표시할 수 있습니다.
 
@@ -188,7 +188,7 @@ Java 기반 애플리케이션 스택과 마찬가지로 [!DNL Experience Manage
    * 경보 임계값:상태가 좋지 않으면
    * 경고 정의:로그 파일에 오류가 있습니다. 문제의 원인에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
-## 일반적인 문제 및 해결 방법 {#common-issues-and-resolutions}
+## 일반적인 문제 및 해결 방법  {#common-issues-and-resolutions}
 
 모니터링 과정에서 문제가 발생하는 경우 [!DNL Experience Manager] 배포의 일반적인 문제를 해결하기 위해 수행할 수 있는 몇 가지 문제 해결 작업이 있습니다.
 
