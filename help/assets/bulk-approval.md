@@ -3,9 +3,9 @@ title: 폴더 자산 및 컬렉션 검토
 description: 폴더 또는 컬렉션 내의 자산에 대한 검토 워크플로우를 설정하고 검토자 또는 크리에이티브 파트너와 공유하여 피드백을 받습니다.
 contentOwner: AG
 feature: 공동 작업, 컬렉션
-role: Business Practitioner
+role: User
 exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 검토자가 검토를 완료한 후(자산을 승인하거나 거부함) 검토 완료 알림을 받게 됩니다.
 
-## {#creating-a-review-task-for-folders} 폴더에 대한 검토 작업 만들기
+## 폴더에 대한 검토 작업 만들기 {#creating-a-review-task-for-folders}
 
 1. [!DNL Assets] 사용자 인터페이스에서 검토 작업을 만들 폴더를 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 검토 작업 만들기]** ![검토 작업 만들기](assets/do-not-localize/create-review-task.png)를 클릭하여 **[!UICONTROL 검토 작업]** 페이지를 엽니다. 도구 모음에 옵션이 표시되지 않으면 **[!UICONTROL 자세히]**&#x200B;를 클릭한 다음 옵션을 선택합니다.
@@ -70,7 +70,7 @@ ht-degree: 1%
 
    ![목록 보기에 표시된 상태 검토](assets/review_status_listview.png)
 
-## {#creating-a-review-task-for-collections} 컬렉션에 대한 검토 작업 만들기
+## 컬렉션에 대한 검토 작업 만들기 {#creating-a-review-task-for-collections}
 
 1. 컬렉션 페이지에서 검토 작업을 생성할 컬렉션을 선택합니다.
 1. 도구 모음에서 **[!UICONTROL 검토 작업 만들기]** ![검토 작업 만들기](assets/do-not-localize/create-review-task.png)를 클릭하여 **[!UICONTROL 검토 작업]** 페이지를 엽니다. 도구 모음에 옵션이 표시되지 않으면 **[!UICONTROL 자세히]**&#x200B;를 클릭한 다음 옵션을 선택합니다.
