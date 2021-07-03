@@ -5,17 +5,17 @@ uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: 구성
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 12%
 
 ---
 
-# Dynamic Media {#setting-up-dynamic-media} 설정
+# Dynamic Media 설정 {#setting-up-dynamic-media}
 
 [Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 전달하여 자산을 관리하는 데 도움이 됩니다. 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
 
