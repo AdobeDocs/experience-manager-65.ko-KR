@@ -2,10 +2,10 @@
 title: 자산 편집기 확장
 description: 사용자 지정 구성 요소를 사용하여 자산 편집기의 기능을 확장하는 방법을 알아봅니다.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: 개발자 도구
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 1%
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 샘플 페이지 구성 요소에서는 모든 선택기가 `static.css`(`/etc/designs/geometrixx/static.css`)의 `.asseteditor`으로 시작해야 합니다. 우수 사례:모든 `.asseteditor` 선택기를 스타일 시트에 복사하고 원하는 대로 규칙을 조정합니다.
 
-### FormSelector:나중에 로드될 리소스에 대한 조정 {#formchooser-adjustments-for-eventually-loaded-resources}
+### FormSelector:최종 로드된 리소스에 대한 조정 {#formchooser-adjustments-for-eventually-loaded-resources}
 
 자산 편집기에서는 양식 선택기를 사용하여 양식 선택기와 양식의 경로를 자산 URL에 추가하면 동일한 양식 페이지에서 리소스를 편집할 수 있습니다.
 
@@ -121,7 +121,7 @@ HTML 부분에서 이전 제목 세트(자산 또는 페이지 제목)를 사용
 <title><%= title %></title>
 ```
 
-## 단순 양식 필드 구성 요소 {#creating-a-simple-form-field-component} 만들기
+## 단순 양식 필드 구성 요소 만들기 {#creating-a-simple-form-field-component}
 
 이 예에서는 로드된 자산의 메타데이터를 표시하고 표시하는 구성 요소를 만드는 방법을 설명합니다.
 
@@ -202,7 +202,7 @@ HTML 부분에서 이전 제목 세트(자산 또는 페이지 제목)를 사용
 
 1. **편집** 모드에서는 이제 새 구성 요소(예: **샘플 메타데이터**)를 사이드킥에서 사용할 수 있습니다(**자산 편집기** 그룹에 있음). 구성 요소를 삽입합니다. 메타데이터를 저장하려면 메타데이터 양식에 추가해야 합니다.
 
-## 메타데이터 옵션 수정 {#modifying-metadata-options}
+## 메타데이터 수정 옵션 {#modifying-metadata-options}
 
 [메타데이터 양식](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)에서 사용할 수 있는 네임스페이스를 수정할 수 있습니다.
 
