@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 feature: 이미지 세트,자산 관리
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [자산 관리](/help/assets/manage-assets.md)를 참조하십시오.
 
-## 빠른 시작:이미지 집합 {#quick-start-image-sets}
+## 빠른 시작:이미지 세트 {#quick-start-image-sets}
 
 **빠르게 시작하고 실행하려면**
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 [Assets](/help/assets/manage-assets.md#uploading-assets)에 있는 다른 자산을 업로드하는 것처럼 이미지 세트에 대한 이미지를 업로드할 수 있습니다.
 
-### 업로드할 이미지 세트 자산 준비 중 {#preparing-image-set-assets-for-upload}
+### 업로드할 이미지 세트 자산 준비 {#preparing-image-set-assets-for-upload}
 
 이미지 세트를 만들기 전에 이미지가 올바른 크기와 형식인지 확인하십시오.
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 >* 검은색, 갈색 및 녹색 색상의 축소판 그림.
 
 
-## 이미지 집합 만들기 {#creating-image-sets}
+## 이미지 세트 만들기 {#creating-image-sets}
 
 사용자 인터페이스 또는 API를 통해 이미지 세트를 만들 수 있습니다. 이 섹션에서는 UI에서 이미지 세트를 만드는 방법을 설명합니다.
 
@@ -237,10 +237,10 @@ ht-degree: 0%
 
 1. 편집을 완료하면 **[!UICONTROL 저장]**&#x200B;을 누릅니다.
 
-## 이미지 집합 미리 보기 {#previewing-image-sets}
+## 이미지 세트 미리 보기 {#previewing-image-sets}
 
 [자산 미리 보기](/help/assets/previewing-assets.md)를 참조하십시오.
 
-## 이미지 집합 {#publishing-image-sets} 게시
+## 이미지 집합 게시 {#publishing-image-sets}
 
 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md)를 참조하십시오.
