@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 feature: 미디어 집합 혼합,자산 관리
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 1%
@@ -172,7 +172,7 @@ Assets](/help/assets/manage-assets.md)의 자산처럼 사용자 인터페이스
 
 혼합 미디어 세트를 미리 보는 방법에 대한 자세한 내용은 [자산 미리 보기](/help/assets/previewing-assets.md) 를 참조하십시오.
 
-## 혼합 미디어 집합 게시 중 {#publishing-mixed-media-sets}
+## 혼합 미디어 집합 게시 {#publishing-mixed-media-sets}
 
 혼합 미디어 세트를 게시하는 방법에 대한 자세한 내용은 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md) 를 참조하십시오.
 
