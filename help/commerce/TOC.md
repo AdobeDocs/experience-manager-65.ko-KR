@@ -3,10 +3,10 @@ sub-product: AEM Content 및 Commerce
 user-guide-title: AEM Content 및 Commerce
 breadcrumb-title: Commerce 안내서
 user-guide-description: AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
-source-git-commit: 8612e7c4105a9872fc8bba1988716eaa4b18d550
+source-git-commit: 538dc7620317f86c0b3d762eaef597d0a7969ace
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 45%
+source-wordcount: '108'
+ht-degree: 43%
 
 ---
 
@@ -31,6 +31,7 @@ ht-degree: 45%
       + [스타일 지정 CIF 구성 요소](cif/customizing/style-cif-component.md)
       + [CIF 구성 요소 사용자 정의](cif/customizing/customize-cif-components.md)
       + [CIF 카탈로그 선택기 사용](cif/customizing/use-cif-pickers.md)
++ [Adobe 상거래 PWA Studio](cif/pwa-studio/getting-started.md)
 + [마이그레이션](cif/migration.md)
 + 릴리스 노트 {#release-notes}
    + [2021년](cif/release-notes/release-notes-2021.md)
