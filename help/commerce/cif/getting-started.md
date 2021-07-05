@@ -3,14 +3,13 @@ title: AEM Content and Commerce 시작하기
 description: AEM Content and Commerce 프로젝트를 배포하는 방법을 알아봅니다.
 topics: Commerce
 feature: 전자 상거래 통합 프레임워크
-thumbnail: 37843.jpg
-exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
+source-git-commit: 1b200ea21709cd9234c92da8a8ef6145d2c2f635
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 4%
 
 ---
+
 
 # AEM Content and Commerce 시작하기 {#start}
 
