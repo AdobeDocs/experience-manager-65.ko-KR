@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 08269877be5e98405474e4b1793526763cab174f
+source-git-commit: 071bc0e36ed2d8eb4ce7bd0ba46823adc0e43095
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 0%
@@ -50,34 +50,17 @@ AEM과 함께 제공된 표준 보고서의 경우:
 >아래 예와 정의에서는 다음 표기법이 사용됩니다.
 >
 >* 각 행은 다음과 같은 노드 또는 속성을 정의합니다.
-   >
-   >  
-* `N:<name> [<nodeType>]`
-   >
-   >     
-   이름이 `<*name*>`이고 노드 유형이 `<*nodeType*>`*인 노드를 설명합니다.*
-   >
-   >  
-* `P:<name> [<propertyType]`
-   >
-   >     
-   이름이 `<*name*>`이고 속성 유형이 `<*propertyType*>`인 속성에 대해 설명합니다.
-   >
-   >  
-* `P:<name> = <value>`
-   >
-   >     
-   `<value>` 값으로 설정해야 하는 속성 `<name>`에 대해 설명합니다.
+   >  `N:<name> [<nodeType>]` :의 이름  `<*name*>` 및 노드 유형을 사용하는 노드를  `<*nodeType*>`*설명합니다.*
+   >  `P:<name> [<propertyType]` :의 이름과 속성 유형을  `<*name*>` 사용하여 속성을 설명합니다 `<*propertyType*>`.
+   >  `P:<name> = <value>` :의 값 `<name>` 으로 설정해야 하는 속성을  `<value>`설명합니다.
    >
    >
 * 들여쓰기는 노드 간의 계층 구조를 보여 줍니다.
->* 항목 구분 | 가능한 항목의 목록을 나타냅니다.예를 들어 유형 또는 이름이 있습니다.
+>* 항목 구분 | 가능한 항목의 목록을 나타냅니다.예를 들어 유형 또는 이름이 있습니다.예`String|String[]`은(는) 속성이 String 또는 String[]일 수 있음을 의미합니다.
 
->
->  
-예`String|String[]`은(는) 속성이 String 또는 String[]일 수 있음을 의미합니다.
->
->* `[]` 어레이를 나타냅니다.예[] 를 들어 쿼리 정의에서와 같이  [문자열 또는 노드 배열](#query-definition).
+   >
+   >
+* `[]` 어레이를 나타냅니다.예[] 를 들어 쿼리 정의에서와 같이  [문자열 또는 노드 배열](#query-definition).
 >
 >
 별도로 명시되어 있지 않는 한 기본 유형은 다음과 같습니다.
