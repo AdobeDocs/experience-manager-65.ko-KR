@@ -10,14 +10,15 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 08269877be5e98405474e4b1793526763cab174f
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 0%
 
 ---
 
-# 보고서 개발{#developing-reports}
+
+# 보고서 개발 {#developing-reports}
 
 AEM에서는 대부분 보고 프레임워크를 기반으로 하는 [표준 보고서](/help/sites-administering/reporting.md)를 선택할 수 있습니다.
 
@@ -85,7 +86,7 @@ AEM과 함께 제공된 표준 보고서의 경우:
 >* 속성 - `String`
 
 
-## 보고 프레임워크 {#reporting-framework}
+## Reporting Framework {#reporting-framework}
 
 보고 프레임워크는 다음 원칙에 따라 작동합니다.
 
@@ -107,7 +108,7 @@ AEM과 함께 제공된 표준 보고서의 경우:
 * 표준 CQ5 페이지입니다.
 * 보고서](#report-template)에 대해 구성된 [표준 CQ5 템플릿을 기반으로 합니다.
 
-### 보고서 기준 {#report-base}
+### 보고서 기본 {#report-base}
 
 [ `reportbase` 구성 요소](#report-base-component)는 다음과 같은 보고서의 기초가 됩니다.
 
@@ -117,7 +118,7 @@ AEM과 함께 제공된 표준 보고서의 경우:
 * 사용 가능한 차트 유형과 현재 활성 상태를 정의합니다.
 * 사용자가 보고서의 특정 측면을 구성할 수 있는 편집 대화 상자를 정의합니다.
 
-### 열 기준 {#column-base}
+### 열 기본 {#column-base}
 
 각 열은 다음과 같은 [ `columnbase` 구성 요소](#column-base-component)의 인스턴스입니다.
 
@@ -168,7 +169,7 @@ AEM과 함께 제공된 표준 보고서의 경우:
 
    예를 들어, 사용자에게 표시되는 텍스트로 구성된 경우, 정렬에 사용할 값과 링크를 만드는 데 사용되는 추가 URL(클라이언트 측)이 있습니다.
 
-#### 처리 큐 {#workflow-of-the-processing-queue} 워크플로
+#### 처리 큐의 워크플로우 {#workflow-of-the-processing-queue}
 
 다음 워크플로우는 처리 큐를 나타냅니다.
 
@@ -218,7 +219,7 @@ AEM과 함께 제공된 표준 보고서의 경우:
 * [보고서 디자인](#report-design)
 * [보고서 템플릿](#report-template)
 
-### 보고서 구성 요소 {#location-of-report-components} 위치
+### 보고서 구성 요소의 위치 {#location-of-report-components}
 
 기본 보고 구성 요소는 `/libs/cq/reporting/components` 아래에 있습니다.
 
@@ -824,7 +825,7 @@ N:definitions
 
    * `/content/geometrixx/en/services`
 
-#### 사전 처리 - 데이터 유형 형식 {#preprocessing-data-type-formatters}
+#### 사전 처리 - 데이터 유형 서식 파일 {#preprocessing-data-type-formatters}
 
 이러한 형식은 숫자 값을 상대 문자열로 변환합니다.
 
@@ -1199,7 +1200,7 @@ N:apps
                 N:<reportname> [sling:Folder]
 ```
 
-## 고유한 보고서 만들기 - 예제 {#creating-your-own-report-an-example}
+## 고유한 보고서 만들기 - 예 {#creating-your-own-report-an-example}
 
 ### 새 보고서 정의 {#defining-your-new-report}
 
