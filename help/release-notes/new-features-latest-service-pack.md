@@ -4,9 +4,9 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 9의 새로운 기능
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3668'
 ht-degree: 41%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 41%
 >[!DNL Experience Manager] 서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되어 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
 >[!DNL Azul Zulu] JDK에 대한 지원은 [!DNL Experience Manager] 고객에게도 Adobe이 제공합니다.
 >[Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 [!DNL Azul Zulu] JDK의 관련 버전을 다운로드할 수 있습니다.
->Adobe에 의해 배포되는 Oracle Java 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en)를 참조하십시오.
+>Adobe에 의해 배포되는 Oracle Java 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf)를 참조하십시오.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -249,7 +249,7 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 이제 [!DNL Dynamic Media] 사용자 인터페이스를 사용하여 CDN(Content Delivery Network) 캐시 콘텐츠를 무효화할 수 있습니다. 따라서 캐시가 만료될 때까지 기다리지 않고 업데이트된 자산을 즉시 사용할 수 있습니다. CDN을 다음 방법으로 무효화할 수 있습니다.
 
-* CDN 무효화 템플릿 만들기:자산 및 양식 관련 템플릿 기반 URL 선택
+* CDN 무효화 템플릿 만들기: 자산 및 양식 관련 템플릿 기반 URL 선택
 
 * 자산 선택기를 통해 자산 및 관련 사전 설정 선택
 
@@ -428,11 +428,11 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 
 2021년 2월 25일부터 2021년 5월 27일까지 Adobe은 서비스 팩 외에 다음과 같은 사항을 발표했습니다.
 
-* [!DNL Adobe Experience Manager] 로서의 Cloud Service  [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html),  [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html) 및  [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
+* [!DNL Adobe Experience Manager] 로서의 Cloud Service  [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html),  [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html) 및  [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html#release-date).
 
 * [[!DNL Experience Manager] 데스크탑 앱 2.1(2.1.2.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: 기능 팩 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html?lang=en)
+* [Experience Manager Screens: 기능 팩 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html)
 
 >[!MORELIKETHIS]
 >
