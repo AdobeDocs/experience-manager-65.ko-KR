@@ -3,12 +3,13 @@ title: 리치 텍스트 편집기 플러그인 구성
 description: 개별 기능을 활성화하기 위해 Adobe Experience Manager 리치 텍스트 편집기 플러그인을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
 workflow-type: tm+mt
-source-wordcount: '4395'
+source-wordcount: '4405'
 ht-degree: 3%
 
 ---
+
 
 # 리치 텍스트 편집기 플러그인 구성 {#configure-the-rich-text-editor-plug-ins}
 
@@ -72,7 +73,7 @@ RTE 기능은 각각 기능 속성이 있는 일련의 플러그인을 통해 �
 
 찾기를 클릭하면 찾기 및 바꾸기 대화 상자가 투명해지고 바꾸기를 클릭하면 불투명해집니다. 이를 통해 작성자는 작성자가 대체할 텍스트를 검토할 수 있습니다. 사용자가 모두 바꾸기를 클릭하면 대화 상자가 닫히고 교체 수가 표시됩니다.
 
-## 붙여넣기 모드 {#paste-modes} 구성
+## 붙여넣기 모드 구성 {#paste-modes}
 
 RTE를 사용할 때 작성자가 다음 세 가지 모드 중 하나로 컨텐츠를 붙여넣을 수 있습니다.
 
@@ -82,7 +83,7 @@ RTE를 사용할 때 작성자가 다음 세 가지 모드 중 하나로 컨텐�
 
 * **MS Word 모드**:MS Word에서 복사할 때 서식을 지정하여 표를 포함한 텍스트를 붙여넣습니다. 웹 페이지나 MS Excel과 같은 다른 소스에서 텍스트를 복사하고 붙여넣는 것은 지원되지 않으며 부분 형식만 유지합니다.
 
-### RTE 도구 모음 {#configure-paste-options-available-on-the-rte-toolbar}에서 사용할 수 있는 붙여넣기 옵션 구성
+### RTE 도구 모음에서 사용할 수 있는 붙여넣기 옵션 구성  {#configure-paste-options-available-on-the-rte-toolbar}
 
 RTE 도구 모음에서 작성자에게 이 세 가지 아이콘 중 일부, 전체 또는 하나도 제공할 수 없습니다.
 
@@ -98,7 +99,7 @@ RTE 도구 모음에서 작성자에게 이 세 가지 아이콘 중 일부, 전
 1. `rtePlugins/edit` 노드로 이동합니다. 노드가 없으면 [플러그인 활성화](#activateplugin)를 참조하십시오.
 1. `edit` 노드에서 `features` 속성을 만들고 하나 이상의 기능을 추가합니다. 모든 변경 내용을 저장합니다.
 
-### 붙여넣기(Ctrl+V) 아이콘과 바로 가기 {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}의 동작을 구성합니다
+### 붙여넣기(Ctrl+V) 아이콘과 바로 가기 동작을 구성합니다 {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
 다음 단계를 사용하여 **[!UICONTROL 붙여넣기(Ctrl+V)]** 아이콘의 동작을 미리 구성할 수 있습니다. 또한 이 구성은 작성자가 컨텐츠를 붙여넣는 데 사용하는 키보드 단축키 Ctrl+V의 동작을 정의합니다.
 
@@ -155,53 +156,18 @@ Microsoft Word와 같은 다른 프로그램에서 AEM에 붙여넣을 때 허�
    >
    >명시적으로 정의되지 않은 경우 기본값인 true가 사용되고 형식이 수락됩니다.
 
-1. 다른 형식도 `htmlPasteRules` 노드에 적용되는 다양한 다른 속성 또는 노드를 사용하여 정의할 수 있습니다.
+1. 다른 형식은 `htmlPasteRules` 노드에도 적용되는 다양한 다른 속성 또는 노드를 사용하여 정의할 수도 있습니다. 모든 변경 내용을 저장합니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>속성</strong></td>
-   <td><strong>유형</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td>allowBlockTags</td>
-   <td>String[]</td>
-   <td><p>허용되는 블록 태그 목록을 정의합니다.</p> <p>가능한 몇 가지 블록 태그는 다음과 같습니다.</p>
-    <ul>
-     <li>제목(h1, h2, h3)</li>
-     <li>단락 (p)</li>
-     <li>목록(ol, ul)</li>
-     <li>표(테이블)</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>fallbackBlockTag</td>
-   <td>문자열</td>
-   <td><p>allowBlockTags에 포함되지 않은 블록 태그가 있는 모든 블록에 사용되는 블록 태그를 정의합니다.</p> <p> 대부분의 경우 충분한 비용.</p> </td>
-  </tr>
-  <tr>
-   <td>표</td>
-   <td>nt:unstructured</td>
-   <td><p>테이블을 붙여넣을 때 동작을 정의합니다.<br /> </p> <p>이 노드에는 테이블 붙여넣기를 허용할지 여부를 정의하려면 <code>allow</code> 속성(<code>Boolean</code> 유형)이 있어야 합니다.</p> <p><code>allow</code>이 <code>false</code>로 설정된 경우 <code>ignoreMode</code> 속성(유형<code> String</code>)을 지정하여 붙여넣기가 수행된 테이블 컨텐츠가 처리되는 방식을 정의해야 합니다. <code>ignoreMode</code>에 유효한 값은 다음과 같습니다.</p>
-    <ul>
-     <li><code>remove</code>:테이블 컨텐츠를 제거합니다.</li>
-     <li><code>paragraph</code>:표 셀을 단락으로 변환합니다.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>list</td>
-   <td>nt:구조화되지 않음</td>
-   <td><p>목록을 붙여넣을 때의 동작을 정의합니다.<br /> </p> <p>목록 붙여넣기가 허용되는지 여부를 정의하려면 <code>allow</code> 속성(<code>Boolean</code> 유형)이 있어야 합니다.</p> <p><code>allow</code>이 <code>false</code>로 설정된 경우 <code>ignoreMode</code> 속성(<code>String</code> 유형)을 지정하여 붙여넣은 목록 컨텐츠를 처리하는 방법을 정의해야 합니다. <code>ignoreMode</code>에 유효한 값은 다음과 같습니다.</p>
-    <ul>
-     <li><code>remove</code>:목록 콘텐츠를 제거합니다.</li>
-     <li><code>paragraph</code>:목록 항목을 단락으로 바꿉니다.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+`htmlPasteRules`에 다음 속성을 사용할 수 있습니다.
 
-유효한 `htmlPasteRules` 구조의 예:
+| 속성 | 유형 | 설명 |
+|---|---|---|
+| `allowBlockTags` | 문자열 | 허용되는 블록 태그 목록을 정의합니다. 가능한 몇 가지 블록 태그는 다음과 같습니다. <ul> <li>제목(h1, h2, h3)</li> <li>단락 (p)</li> <li>목록(ol, ul)</li> <li>표(테이블)</li> </ul> |
+| `fallbackBlockTag` | 문자열 | `allowBlockTags`에 포함되지 않은 블록 태그가 있는 모든 블록에 사용되는 블록 태그를 정의합니다. `p` 대부분의 경우에 충분합니다. |
+| 표 | nt:unstructured | 표를 붙여넣을 때의 동작을 정의합니다. 이 노드에는 테이블 붙여넣기가 허용되는지 여부를 정의하려면 `allow` 속성(부울 유형)이 있어야 합니다. allow가 `false`로 설정된 경우 `ignoreMode` 속성(String 유형)을 지정하여 붙여넣기가 수행된 테이블 컨텐츠가 처리되는 방식을 정의해야 합니다. `ignoreMode`에 유효한 값은 다음과 같습니다. <ul> <li>`remove`:테이블 컨텐츠를 제거합니다.</li> <li>`paragraph`:표 셀을 단락으로 변환합니다.</li> </ul> |
+| list | nt:구조화되지 않음 | 목록을 붙여넣을 때의 동작을 정의합니다. 목록 붙여넣기가 허용되는지 여부를 정의하려면 `allow` 속성(부울 유형)이 있어야 합니다. `allow`이 `false`로 설정된 경우 `ignoreMode` 속성(String 유형)을 지정하여 붙여넣은 목록 컨텐츠를 처리하는 방법을 정의해야 합니다. `ignoreMode`에 유효한 값은 다음과 같습니다. <ul><li> `remove`:목록 콘텐츠를 제거합니다.</li> <li>`paragraph`:목록 항목을 단락으로 바꿉니다.</li> </ul> |
+
+유효한 `htmlPasteRules` 구조의 예는 다음과 같습니다.
 
 ```xml
 "htmlPasteRules": {
@@ -223,13 +189,9 @@ Microsoft Word와 같은 다른 프로그램에서 AEM에 붙여넣을 때 허�
 }
 ```
 
-1. 모든 변경 내용을 저장합니다.
-
 ## 텍스트 스타일 구성 {#textstyles}
 
-작성자가 스타일을 적용하여 텍스트 부분을 변경할 수 있습니다. 스타일은 CSS 스타일 시트에서 미리 정의한 CSS 클래스를 기반으로 합니다. 스타일이 지정된 컨텐츠는 CSS 클래스를 참조할 때 `class` 속성을 사용하여 `span` 태그로 묶입니다. 예:
-
-`<span class=monospaced>Monospaced Text Here</span>`
+작성자가 스타일을 적용하여 텍스트 부분을 변경할 수 있습니다. 스타일은 CSS 스타일 시트에서 미리 정의한 CSS 클래스를 기반으로 합니다. 스타일이 지정된 컨텐츠는 CSS 클래스를 참조할 때 `class` 속성을 사용하여 `span` 태그로 묶입니다. 예, `<span class=monospaced>Monospaced Text Here</span>`.
 
 스타일 플러그인이 처음 활성화되면 기본 스타일을 사용할 수 없습니다. 팝업 목록이 비어 있습니다. 작성자에게 스타일을 제공하려면 다음을 수행하십시오.
 
@@ -237,11 +199,11 @@ Microsoft Word와 같은 다른 프로그램에서 AEM에 붙여넣을 때 허�
 * 스타일 시트의 위치를 지정합니다.
 * 스타일 드롭다운 목록에서 선택할 수 있는 개별 스타일을 지정합니다.
 
-이후(재)구성의 경우 스타일을 더 추가하려면 지침만 따라 새 스타일 시트를 참조하고 추가 스타일을 지정합니다.
+이후 구성의 경우 스타일을 더 추가하려면 지침만 따라 새 스타일 시트를 참조하고 추가 스타일을 지정합니다.
 
 >[!NOTE]
 >
->[표 또는 표 셀](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)에 대해서도 스타일을 정의할 수 있습니다. 이러한 구성에는 별도의 절차가 필요합니다.
+>[표 또는 표 셀](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)에 대한 스타일을 정의할 수 있습니다. 이러한 구성에는 별도의 절차가 필요합니다.
 
 ### 스타일 드롭다운 선택기 목록 활성화 {#styleselectorlist}
 
@@ -708,10 +670,7 @@ AEM에서 링크를 추가할 때 다음을 정의할 수 있습니다.
    * **유형** `String`
    * **값** `richtext`
 
-   `../items/text` 노드의 위치는 대화 상자의 구조에 따라 다를 수 있습니다.두 가지 예는 다음과 같습니다.
-   * `/apps/myProject>/components/text/dialog/items/text`
-   * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
-
+   `../items/text` 노드의 위치는 대화 상자의 구조에 따라 다를 수 있습니다.두 가지 예제는 `/apps/myProject>/components/text/dialog/items/text` 및 `/apps/<myProject>/components/text/dialog/items/panel/items/text`입니다.
 
 1. `htmlRules`에서 새 노드를 만듭니다.
 
