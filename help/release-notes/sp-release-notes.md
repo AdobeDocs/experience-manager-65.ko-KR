@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 9에 관한 릴
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 0c5759786a698f7c7503a56da7f472229d18f763
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3843'
+source-wordcount: '3835'
 ht-degree: 12%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 12%
 
 * [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) 및 [[!DNL Dynamic Media]](#accessibility-dm-6590)의 액세스 가능성이 개선되었습니다.
 
-* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 최상의 품질 이미지를 효율적으로 제공할 수 있습니다.고해상도의 디스플레이와 제한된 네트워크 대역폭을 가진 디바이스 자세한 내용 및 타임라인은 [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
+* 스마트 이미징 DPR(장치 픽셀 비율) 및 네트워크 대역폭 최적화를 통해 최상의 품질 이미지를 효율적으로 제공할 수 있습니다. 고해상도의 디스플레이와 제한된 네트워크 대역폭을 가진 디바이스 자세한 내용 및 타임라인은 [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
 
 * [!DNL Dynamic Media] 배달(`fmt` URL 수정자)은 차세대 이미지 형식 AVIF(AV1 이미지 형식)를 지원합니다. 자세한 내용 및 타임라인은 [이미지 제공 및 API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)를 참조하십시오.
 
@@ -69,7 +69,7 @@ ht-degree: 12%
 >서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java™ SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되는 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
 >[!DNL Azul Zulu] JDK에 대한 지원은 [!DNL Experience Manager] 고객에게도 Adobe이 제공합니다.
 >[Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 [!DNL Azul Zulu] JDK의 관련 버전을 다운로드할 수 있습니다.
->Adobe에 의해 배포되는 Oracle Java™ 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java™] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en)를 참조하십시오.
+>Adobe에 의해 배포되는 Oracle Java™ 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java™] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf)를 참조하십시오.
 
 다음은 [!DNL Experience Manager] 6.5.9.0 릴리스에서 제공된 수정 사항 목록입니다.
 
@@ -119,7 +119,7 @@ ht-degree: 12%
 
 * [!UICONTROL 만들기], [!UICONTROL 수정] 또는 [!UICONTROL 이름] 매개 변수 중 하나를 기반으로 정렬되지 않은 자산을 보려면 [!DNL Adobe Experience Manager]에서 [!UICONTROL 없음] 옵션을 제공합니다. [!UICONTROL 정렬 기준] 옵션. [!UICONTROL 없음] 옵션은 자산 사용자 인터페이스(카드, 열 및 인사이트 보기)의 자산이 JCR 노드에 있는 자산과 동일한 순서로 유지되도록 합니다(NPR-36356).
 
-* [!DNL Adobe Experience Manager]에서 ACP API 응답에서 이메일 ID를 소문자로 만들려면 선택적 설정이 도입됩니다.as a1/> 사용자가 ID에 모든 문자가 소문자로 포함되어 있지 않으면 자산을 체크 인할 수 없습니다. [!DNL Adobe Asset Link] [!DNL Adobe Asset Link] 패널에서는 [!DNL Adobe Experience Manager]의 ACP API 응답을 사용합니다(CQ-4317704).
+* [!DNL Adobe Experience Manager]에서 ACP API 응답에서 이메일 ID를 소문자로 만들려면 선택적 설정이 도입됩니다. as a1/> 사용자가 ID에 모든 문자가 소문자로 포함되어 있지 않으면 자산을 체크 인할 수 없습니다. [!DNL Adobe Asset Link] [!DNL Adobe Asset Link] 패널에서는 [!DNL Adobe Experience Manager]의 ACP API 응답을 사용합니다(CQ-4317704).
 
 [!DNL Adobe Experience Manager] 6.5.9.0에서는 다음과 같은 액세스 가능성이  [!DNL Assets] 개선되었습니다.
 
@@ -197,7 +197,7 @@ ht-degree: 12%
 
 Adobe Experience Manager 6.5.9.0 Assets는 [!DNL Dynamic Media]에서 다음 문제를 수정합니다.
 
-* [!DNL Dynamic Media]이 [기본](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config)에 의해 선택적으로 활성화되고 비활성화될 때 사용자 지정 뷰어 사전 설정 및 CSS가 [!DNL Dynamic Media]에 복제되지 않습니다(NPR-36232).
+* [!DNL Dynamic Media]이 [기본](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#troubleshoot-dm-config)에 의해 선택적으로 활성화되고 비활성화될 때 사용자 지정 뷰어 사전 설정 및 CSS가 [!DNL Dynamic Media]에 복제되지 않습니다(NPR-36232).
 
 * 자산 세부 사항 페이지에서 비디오 표현물을 미리 보려 하면 비디오가 느리게 로드됩니다(CQ-4320122).
 
@@ -394,7 +394,7 @@ B. [패키지 관리자에서 HTTP API](/help/sites-administering/package-manage
 
 1. 모든 OSGI 번들은 OSGi 콘솔에서 **[!UICONTROL ACTIVE]**&#x200B;이거나 **[!UICONTROL FRAGMENT]**&#x200B;입니다(웹 콘솔 사용: `/system/console/bundles`).
 
-1. OSGi 번들 `org.apache.jackrabbit.oak-core`은 버전 1.22.3 이상에 있습니다(웹 콘솔 사용:`/system/console/bundles`)
+1. OSGi 번들 `org.apache.jackrabbit.oak-core`은 버전 1.22.3 이상에 있습니다(웹 콘솔 사용: `/system/console/bundles`)
 
 이번 릴리스에서 사용할 수 있는 인증된 플랫폼을 확인하려면 [기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하십시오.
 
@@ -405,12 +405,12 @@ B. [패키지 관리자에서 HTTP API](/help/sites-administering/package-manage
 >Forms Experience Manager을 사용하지 않는 경우 건너뜁니다. 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 후 1주일 후에 Forms Experience Manager의 수정 사항이 별도의 추가 기능 패키지를 통해 전달됩니다.
 
 1. Adobe Experience Manager 서비스 팩을 설치했는지 확인합니다.
-1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
+1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
 1. [AEM Forms 추가 기능 패키지 설치](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
 
 >[!NOTE]
 >
->Experience Manager 6.5.9.0에는 [AEM Forms 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 Experience Manager 6.5.9.0으로 업데이트하는 경우 Forms 추가 기능 패키지의 패키지 설치 후 최신 버전의 패키지를 설치하십시오.
+>Experience Manager 6.5.9.0에는 [AEM Forms 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 Experience Manager 6.5.9.0으로 업데이트하는 경우 Forms 추가 기능 패키지의 패키지 설치 후 최신 버전의 패키지를 설치하십시오.
 
 ### JEE에 Adobe Experience Manager Forms 설치 {#install-aem-forms-jee-installer}
 
@@ -472,7 +472,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
    * SUM, MAX 및 MIN과 같은 집계 함수를 사용하는 경우 적용형 양식 서버측 유효성 검사가 실패합니다(CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - granite/operations/maintenance에 유지 관리 창이 없습니다.
    * 쇼퍼블 배너 뷰어를 통해 자산을 미리 볼 때 Dynamic Media 대화형 이미지의 핫스팟이 표시되지 않습니다.
-   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` :등록 변경으로 등록 취소를 완료할 때까지 기다리는 중 시간이 초과되었습니다.
+   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : 등록 변경으로 등록 취소를 완료할 때까지 기다리는 중 시간이 초과되었습니다.
 
 ## OSGi 번들 및 컨텐츠 패키지가 포함됨 {#osgi-bundles-and-content-packages-included}
 
