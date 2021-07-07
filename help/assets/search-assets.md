@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: 검색, 메타데이터
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '5575'
+source-wordcount: '5573'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 | [추천 검색](#searchsuggestions) | [필수 메타데이터](#mandatorymetadata) | [다운로드](#download) |
 | [검색 결과 및 동작 이해](#searchbehavior) | [검색 패싯 수정](#searchfacets) | [벌크 메타데이터 업데이트](#metadataupdates) |
 | [검색 순위 및 증가](#searchrank) | [텍스트 추출](#extracttextupload) | [스마트 컬렉션](#collections) |
-| [고급 검색:검색 필터링 및 범위](#scope) | [사용자 지정 설명](#custompredicates) | [예기치 않은 결과 이해 및 문제 해결](#unexpected-results) |
+| [고급 검색: 검색 필터링 및 범위](#scope) | [사용자 지정 설명](#custompredicates) | [예기치 않은 결과 이해 및 문제 해결](#unexpected-results) |
 | [다른 솔루션 및 앱에서 검색](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager 데스크탑 앱](#desktop-app)</li><li>[Adobe Stock 이미지](#adobe-stock)</li><li>[Dynamic Media 자산](#dynamic-media)</li></ul> |  |  |
 | [자산 선택기](#asset-picker) |  |  |
 | [](#limitations) 제한 사항 및  [팁](#tips) |  |  |
@@ -44,7 +44,7 @@ ht-degree: 1%
 
 ![Experience Manager 자산 검색 결과 인터페이스 이해](assets/aem_search_results.png)
 
-*그림:검색  [!DNL Experience Manager Assets] 결과 인터페이스를 이해합니다.*
+*그림: 검색  [!DNL Experience Manager Assets] 결과 인터페이스를 이해합니다.*
 
 **A.** 검색을 스마트 컬렉션으로 저장합니다. **B.** 검색 결과 범위를 좁히려면 필터 또는 조건자를 사용합니다. **C.** 파일, 폴더 또는 둘 다를 표시합니다. **D.** 왼쪽 레일을 열거나 닫으려면 필터 를 클릭합니다. **E.** 검색 위치는 DAM입니다. **사용자가** 제공한 검색 키워드가 있는 F.Omnisearch 필드. **G.** 로드된 검색 결과를 선택합니다. **H.** 총 검색 결과 중 표시된 검색 결과 수입니다. **검색** 을 닫습니다. **J.** 카드 보기와 목록 보기 간에 전환합니다.
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 ![검색 패싯에서 검색 결과를 필터링하지 않고 대략적인 자산 수를 참조하십시오.](assets/asset_search_results_in_facets_filters.png)
 
-*그림:검색 패싯에서 검색 결과를 필터링하지 않고 대략적인 자산 수를 참조하십시오.*
+*그림: 검색 패싯에서 검색 결과를 필터링하지 않고 대략적인 자산 수를 참조하십시오.*
 
 ## 검색 결과 및 동작 이해 {#searchbehavior}
 
@@ -101,7 +101,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 ![여러 키워드를 입력하여 모든 키워드에 맞는 제안을 봅니다.](assets/search_suggestionsmanykeywords.gif)
 
-*그림:여러 키워드를 입력하여 모든 키워드에 맞는 제안을 봅니다.*
+*그림: 여러 키워드를 입력하여 모든 키워드에 맞는 제안을 봅니다.*
 
 ### 검색 순위 및 증폭 {#searchrank}
 
@@ -121,19 +121,19 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*비디오:검색 결과의 등급 및 등급에 영향을 줄 수 있는 방법을 이해합니다.*
+*비디오: 검색 결과의 등급 및 등급에 영향을 줄 수 있는 방법을 이해합니다.*
 
 ## 고급 검색 {#scope}
 
 [!DNL Experience Manager] 에서는 원하는 자산을 더 빨리 찾을 수 있도록 검색된 자산에 적용되는 필터와 같은 다양한 방법을 제공합니다. 다음은 자주 사용하는 몇 가지 방법에 대해 설명합니다. 일부 [그림 예제](#samples)는 아래에 공유되어 있습니다.
 
-**파일 또는 폴더 검색**:검색 결과에서 파일, 폴더 또는 둘 다 확인합니다. **[!UICONTROL 필터]** 패널에서 적절한 옵션을 선택할 수 있습니다. [검색 인터페이스](#searchui)를 참조하십시오.
+**파일 또는 폴더 검색**: 검색 결과에서 파일, 폴더 또는 둘 다 확인합니다. **[!UICONTROL 필터]** 패널에서 적절한 옵션을 선택할 수 있습니다. [검색 인터페이스](#searchui)를 참조하십시오.
 
-**폴더** 내에서 자산 검색:검색을 특정 폴더로 제한할 수 있습니다. **[!UICONTROL 필터]** 패널에서 폴더의 경로를 추가합니다. 한 번에 하나의 폴더만 선택할 수 있습니다.
+**폴더** 내에서 자산 검색: 검색을 특정 폴더로 제한할 수 있습니다. **[!UICONTROL 필터]** 패널에서 폴더의 경로를 추가합니다. 한 번에 하나의 폴더만 선택할 수 있습니다.
 
 ![필터 패널에서 폴더 경로를 추가하여 검색 결과를 폴더로 제한](assets/search_folder_select.gif)
 
-*그림:필터 패널에서 폴더 경로를 추가하여 검색 결과를 폴더로 제한합니다.*
+*그림: 필터 패널에서 폴더 경로를 추가하여 검색 결과를 폴더로 제한합니다.*
 
 ### 유사한 이미지 찾기 {#visualsearch}
 
@@ -141,7 +141,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 ![카드 보기에서 옵션을 사용하여 유사한 이미지를 찾습니다](assets/search_find_similar.png)
 
-*그림:카드 보기에서 옵션을 사용하여 유사한 이미지를 찾습니다.*
+*그림: 카드 보기에서 옵션을 사용하여 유사한 이미지를 찾습니다.*
 
 ### Adobe Stock 이미지 {#adobe-stock}
 
@@ -169,7 +169,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 | 만료 날짜 | expires:YYYY-MM-DDHH |
 | 시간 | ontime:YYYY-MM-DDTHH |
 | 해제 시간 | offtime:YYYY-MM-DDTHH |
-| 시간 범위(expires dateontime,offtime) | 패싯 필드 :소행..상단 |
+| 시간 범위(expires dateontime,offtime) | 패싯 필드 : 소행..상단 |
 | 경로 | /content/dam/&lt;폴더 이름> |
 | PDF 제목 | pdftitle:&quot;Adobe 문서&quot; |
 | 제목 | 제목:&quot;교육&quot; |
@@ -188,13 +188,13 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 다음은 복잡한 쿼리에 대한 검색 형식의 예입니다.
 
-* 여러 패싯 필드가 있는 모든 자산을 표시하려면(예:title=John Doe 및 creator tool = Adobe Photoshop):`title:"John Doe" creatortool:Adobe*`
-* 패싯 값이 단일 단어가 아닌 문장이 될 때 모든 자산을 표시하려면(예:title=Scott Reynolds)`title:"Scott Reynolds"`
-* 단일 속성의 여러 값이 있는 자산을 표시하려면(예:title=스캇 레이놀즈 또는 존 도):`title:"Scott Reynolds" OR "John Doe"`
-* 특정 문자열로 시작하는 속성 값이 있는 자산을 표시하려면(예:제목이 스콧 레이놀즈)입니다.`title:Scott*`
-* 특정 문자열로 끝나는 속성 값이 있는 자산을 표시하려면(예:제목이 스콧 레이놀즈)입니다.`title:*Reynolds`
-* 특정 문자열을 포함하는 속성 값이 있는 자산을 표시하려면 다음을 수행하십시오.title = Basel Meeting Room):`title:*Meeting*`
-* 특정 문자열을 포함하고 특정 속성 값을 갖는 자산을 표시하려면(예:title=John Doe가 있는 자산에서 문자열 Adobe 검색:`*Adobe* title:"John Doe"`
+* 여러 패싯 필드가 있는 모든 자산을 표시하려면(예: title=John Doe 및 creator tool = Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
+* 패싯 값이 단일 단어가 아닌 문장이 될 때 모든 자산을 표시하려면(예: title=Scott Reynolds) `title:"Scott Reynolds"`
+* 단일 속성의 여러 값이 있는 자산을 표시하려면(예: title=스캇 레이놀즈 또는 존 도): `title:"Scott Reynolds" OR "John Doe"`
+* 특정 문자열로 시작하는 속성 값이 있는 자산을 표시하려면(예: 제목이 스콧 레이놀즈)입니다. `title:Scott*`
+* 특정 문자열로 끝나는 속성 값이 있는 자산을 표시하려면(예: 제목이 스콧 레이놀즈)입니다. `title:*Reynolds`
+* 특정 문자열을 포함하는 속성 값이 있는 자산을 표시하려면 다음을 수행하십시오. title = Basel Meeting Room): `title:*Meeting*`
+* 특정 문자열을 포함하고 특정 속성 값을 갖는 자산을 표시하려면(예: title=John Doe가 있는 자산에서 문자열 Adobe 검색: `*Adobe* title:"John Doe"`
 
 ## 다른 [!DNL Experience Manager] 제공 또는 인터페이스에서 자산 검색 {#search-assets-other-surfaces}
 
@@ -202,7 +202,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 ### Adobe 자산 링크 패널에서 자산 검색 {#aal}
 
-이제 크리에이티브 전문가가 Adobe 자산 링크를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고 [!DNL Experience Manager Assets]에 저장된 컨텐츠에 액세스할 수 있습니다. 광고 팀은 [!DNL Adobe Creative Cloud] 앱에서 앱 내 패널을 사용하여 자산을 원활하게 탐색, 검색, 체크아웃 및 체크인할 수 있습니다.[!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign]. Asset Link를 사용하면 사용자가 시각적으로 유사한 결과를 검색할 수도 있습니다. 시각적 검색 표시 결과는 Adobe Sensei의 기계 학습 알고리즘에 의해 수행되며 사용자가 미적으로 유사한 이미지를 찾을 수 있도록 도와줍니다. Adobe 자산 링크를 사용하여 [자산 검색 및 찾아보기](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)를 참조하십시오.
+이제 크리에이티브 전문가가 Adobe 자산 링크를 사용하여 지원되는 Adobe Creative Cloud 앱을 종료하지 않고 [!DNL Experience Manager Assets]에 저장된 컨텐츠에 액세스할 수 있습니다. 광고 팀은 [!DNL Adobe Creative Cloud] 앱에서 앱 내 패널을 사용하여 자산을 원활하게 탐색, 검색, 체크아웃 및 체크인할 수 있습니다. [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] 및 [!DNL Adobe InDesign]. Asset Link를 사용하면 사용자가 시각적으로 유사한 결과를 검색할 수도 있습니다. 시각적 검색 표시 결과는 Adobe Sensei의 기계 학습 알고리즘에 의해 수행되며 사용자가 미적으로 유사한 이미지를 찾을 수 있도록 도와줍니다. Adobe 자산 링크를 사용하여 [자산 검색 및 찾아보기](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)를 참조하십시오.
 
 ### [!DNL Experience Manager] 데스크탑 앱에서 자산 검색 {#desktop-app}
 
@@ -242,7 +242,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 | 이름 | 값 | 예 | 목적 |
 |---|---|---|---|
-| 리소스 접미사(B) | 폴더 경로는 URL에 리소스 접미사로 사용됩니다.[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 특정 폴더가 선택된 자산 선택기를 실행하려면(예: `/content/dam/we-retail/en/activities` 폴더가 선택된 경우), URL은 형식이어야 합니다.`https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 이 폴더를 리소스 접미사로 전달합니다. |
+| 리소스 접미사(B) | 폴더 경로는 URL에 리소스 접미사로 사용됩니다. [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | 특정 폴더가 선택된 자산 선택기를 실행하려면(예: `/content/dam/we-retail/en/activities` 폴더가 선택된 경우), URL은 형식이어야 합니다. `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | 자산 선택기를 시작할 때 특정 폴더를 선택해야 하는 경우 이 폴더를 리소스 접미사로 전달합니다. |
 | `mode` | 단일, 다중 | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | 여러 모드에서 자산 선택기를 사용하여 여러 자산을 동시에 선택할 수 있습니다. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | 이러한 매개 변수를 사용하여 자산 선택기를 Granite 대화 상자로 엽니다. 이 옵션은 Granite Path Field를 통해 자산 선택기를 시작하고 pickerSrc URL로 구성하는 경우에만 적용할 수 있습니다. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | 이 옵션을 사용하여 자산 선택기의 루트 폴더를 지정합니다. 이 경우 자산 선택기를 사용하여 루트 폴더 아래에 하위 자산(직접/간접)만 선택할 수 있습니다. |
@@ -254,7 +254,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 ![자산 선택기에서 자산을 찾아보고 선택합니다](assets/assetpicker.png)
 
-*그림:자산 선택기에서 자산을 찾아보고 선택합니다.*
+*그림: 자산 선택기에서 자산을 찾아보고 선택합니다.*
 
 ## 제한 사항 {#limitations}
 
@@ -285,9 +285,9 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 * 전체 텍스트 검색은 `-` 및 `^` 등의 연산자를 지원합니다. 이러한 문자를 문자열 리터럴으로 검색하려면 검색 표현식을 큰따옴표로 묶습니다. 예를 들어 `Notebook - Beauty` 대신 `"Notebook - Beauty"`을 사용하십시오.
 * 검색 결과가 너무 많으면 원하는 자산에서 [검색](#scope)의 범위를 0으로 제한하십시오. 특정 파일 유형, 특정 위치, 특정 메타데이터 등과 같이 원하는 자산을 더 잘 찾는 방법을 알고 있을 때 가장 잘 작동합니다.
 
-* **태깅**:태그를 사용하면 보다 효율적으로 검색하고 찾을 수 있는 자산을 분류할 수 있습니다. 태깅은 다른 사용자 및 워크플로우에 적절한 분류법을 전파하는 데 도움이 됩니다. [!DNL Experience Manager] 에서는 사용 및 트레이닝을 통해 자산에 태그 지정 작업을 보다 효과적으로 수행할 수 있도록 Adobe Sensei의 인공적인 지능형 서비스를 사용하여 자산에 자동으로 태그를 지정하는 방법을 제공합니다. 자산을 검색할 때, 계정에서 기능이 활성화되어 있으면 스마트 태그가 팩터링됩니다. 내장된 검색 기능과 함께 작동합니다. [검색 동작](#searchbehavior)을 참조하십시오. 검색 결과가 표시되는 순서를 최적화하기 위해 일부 선택 자산 중 [검색 순위](#searchrank)를 늘릴 수 있습니다.
+* **태깅**: 태그를 사용하면 보다 효율적으로 검색하고 찾을 수 있는 자산을 분류할 수 있습니다. 태깅은 다른 사용자 및 워크플로우에 적절한 분류법을 전파하는 데 도움이 됩니다. [!DNL Experience Manager] 에서는 사용 및 트레이닝을 통해 자산에 태그 지정 작업을 보다 효과적으로 수행할 수 있도록 Adobe Sensei의 인공적인 지능형 서비스를 사용하여 자산에 자동으로 태그를 지정하는 방법을 제공합니다. 자산을 검색할 때, 계정에서 기능이 활성화되어 있으면 스마트 태그가 팩터링됩니다. 내장된 검색 기능과 함께 작동합니다. [검색 동작](#searchbehavior)을 참조하십시오. 검색 결과가 표시되는 순서를 최적화하기 위해 일부 선택 자산 중 [검색 순위](#searchrank)를 늘릴 수 있습니다.
 
-* **색인 지정**:인덱싱된 메타데이터 및 자산만 검색 결과에 반환됩니다. 더 나은 서비스 및 성능을 위해 적절한 색인 지정 및 우수 사례를 따르십시오. [인덱싱](#searchindex)을 참조하십시오.
+* **색인 지정**: 인덱싱된 메타데이터 및 자산만 검색 결과에 반환됩니다. 더 나은 서비스 및 성능을 위해 적절한 색인 지정 및 우수 사례를 따르십시오. [인덱싱](#searchindex)을 참조하십시오.
 
 * 검색 결과에서 특정 자산을 제외하려면 Lucene 색인에서 `excludedPath` 속성을 사용합니다.
 
@@ -297,9 +297,9 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 ![따옴표가 있는 검색 동작 및 없는 검색](assets/search_with_quotes.gif)
 
-*그림:따옴표가 있는 검색 동작과 없는 검색 동작입니다.*
+*그림: 따옴표가 있는 검색 동작과 없는 검색 동작입니다.*
 
-**별표 와일드카드를 사용하여 검색**:검색을 확장하려면 검색어 앞이나 뒤에 별표를 사용하여 어떤 수의 문자든 일치시킵니다. 예를 들어 별표 없이 실행을 검색하면 단어의 변형이 포함된 자산(메타데이터에 포함)이 반환되지 않습니다. 별표는 여러 문자를 대체합니다. 예,
+**별표 와일드카드를 사용하여 검색**: 검색을 확장하려면 검색어 앞이나 뒤에 별표를 사용하여 어떤 수의 문자든 일치시킵니다. 예를 들어 별표 없이 실행을 검색하면 단어의 변형이 포함된 자산(메타데이터에 포함)이 반환되지 않습니다. 별표는 여러 문자를 대체합니다. 예,
 
 * `run` 정확히 실행 키워드가 있는 자산 반환
 * `run*` ,  `running`,  `run`등이  `runaway`있는 자산을 반환합니다.
@@ -308,9 +308,9 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 ![예를 사용하여 자산 검색에서 별표 와일드카드의 사용 예시](assets/search_with_asterisk_run.gif)
 
-*그림:예를 사용하여 자산 검색에서 별표 와일드카드의 사용을 보여 줍니다.*
+*그림: 예를 사용하여 자산 검색에서 별표 와일드카드의 사용을 보여 줍니다.*
 
-**물음표 와일드카드로 검색**:검색을 확장하려면 하나 이상의 &#39;?&#39; 문자를 정확히 몇 자 수와 일치시킵니다. 예를 들어 다음 그림에서
+**물음표 와일드카드로 검색**: 검색을 확장하려면 하나 이상의 &#39;?&#39; 문자를 정확히 몇 자 수와 일치시킵니다. 예를 들어 다음 그림에서
 
 * `run???` 쿼리가 자산과 일치하지 않습니다.
 
@@ -320,13 +320,13 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 ![예를 사용하여 자산 검색에서 물음표 와일드카드의 사용 예시](assets/search_with_questionmark_run.gif)
 
-*그림:예를 사용하여 자산 검색에서 물음표 와일드카드의 사용을 보여 줍니다.*
+*그림: 예를 사용하여 자산 검색에서 물음표 와일드카드의 사용을 보여 줍니다.*
 
-**키워드 제외**:키워드를 포함하지 않는 자산을 검색하려면 대시를 사용하십시오. 예를 들어 `running -shoe` 쿼리는 `running`을 포함하지만 `shoe`는 포함하지 않는 자산을 반환합니다. 마찬가지로 `camp -night` 쿼리는 `camp`을 포함하지만 `night`는 포함하지 않는 자산을 반환합니다. `camp-night` 쿼리는 `camp` 및 `night`를 모두 포함하는 자산을 반환합니다.
+**키워드 제외**: 키워드를 포함하지 않는 자산을 검색하려면 대시를 사용하십시오. 예를 들어 `running -shoe` 쿼리는 `running`을 포함하지만 `shoe`는 포함하지 않는 자산을 반환합니다. 마찬가지로 `camp -night` 쿼리는 `camp`을 포함하지만 `night`는 포함하지 않는 자산을 반환합니다. `camp-night` 쿼리는 `camp` 및 `night`를 모두 포함하는 자산을 반환합니다.
 
 ![제외된 키워드를 포함하지 않는 자산을 검색하려면 대시를 사용하십시오](assets/search_dash_exclude_keyword.gif)
 
-*그림:제외된 키워드를 포함하지 않는 자산을 검색하려면 대시를 사용하십시오.*
+*그림: 제외된 키워드를 포함하지 않는 자산을 검색하려면 대시를 사용하십시오.*
 
 ## 검색 기능과 관련된 구성 및 관리 작업 {#configadmin}
 
@@ -358,7 +358,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
    변경 사항을 저장합니다.
 
 1. `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`에 액세스하여 `Boolean` 유형의 `similarityTags` 속성을 `true` 값으로 추가합니다.
-1. [!DNL Experience Manager] 저장소의 자산에 스마트 태그를 적용합니다. [스마트 태그를 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring)을 참조하십시오.
+1. [!DNL Experience Manager] 저장소의 자산에 스마트 태그를 적용합니다. [스마트 태그를 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring)을 참조하십시오.
 1. CRXDE의 `/oak-index/damAssetLucene` 노드에서 `reindex` 속성을 `true`로 설정합니다. 변경 사항을 저장합니다.
 1. (선택 사항) 검색 양식을 사용자 지정한 경우 `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` 노드를 `/conf/global/settings/dam/search/facets/assets/jcr:content/items`에 복사합니다. 변경 사항을 저장합니다.
 
@@ -432,7 +432,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 ![검색 자산에 대한 타임라인 항목 정렬](assets/sort_timeline_search_results.gif)
 
-*그림:검색 자산에 대한 타임라인 항목을 정렬합니다.*
+*그림: 검색 자산에 대한 타임라인 항목을 정렬합니다.*
 
 ### 검색된 자산 다운로드 {#download}
 
