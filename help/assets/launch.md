@@ -10,9 +10,9 @@ docset: aem65
 feature: 뷰어
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '6616'
+source-wordcount: '6614'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Experience Manager 사이트에서 [Dynamic Media 뷰어 추적](#tracking-dynam
 
 ## 통합에서 데이터 및 이벤트 추적 작동 방식 {#how-data-and-event-tracking-works-in-the-integration}
 
-통합에서는 두 가지 별도 및 독립적인 Dynamic Media 뷰어 추적 유형을 사용합니다.*Adobe Analytics* 및 *오디오 및 비디오용 Adobe Analytics*.
+통합에서는 두 가지 별도 및 독립적인 Dynamic Media 뷰어 추적 유형을 사용합니다. *Adobe Analytics* 및 *오디오 및 비디오용 Adobe Analytics*.
 
 ### Adobe Analytics을 사용한 추적 기본 정보  {#about-tracking-using-adobe-analytics}
 
@@ -77,7 +77,7 @@ Dynamic Media 뷰어 확장은 자동으로 데이터 요소 값을 최신 상�
 
 #### Experience Platform Launch의 규칙 정보 {#about-rules-in-adobe-launch}
 
-Experience Platform Launch의 규칙은 규칙을 구성하는 세 가지 영역을 정의하는 알 수 없는 구성입니다.*Events*, *Conditions* 및 *Actions*:
+Experience Platform Launch의 규칙은 규칙을 구성하는 세 가지 영역을 정의하는 알 수 없는 구성입니다. *Events*, *Conditions* 및 *Actions*:
 
 * *이벤트* (if)는 규칙을 트리거할 시기를 Experience Platform Launch에게 알려줍니다.
 * *조건* (if)은 규칙을 트리거할 때 허용하거나 허용하지 않을 다른 제한 사항을 Experience Platform Launch에게 알려줍니다.
@@ -88,7 +88,7 @@ Experience Platform Launch의 규칙은 규칙을 구성하는 세 가지 영역
 Adobe Analytics 추적의 경우 [확장 설치 및 설정에 설명된 대로 여러 개의 다른 확장을 설치해야 합니다](#installing-and-setup-of-extensions). 특히
 
 * Dynamic Media Viewer 확장 프로그램은 지원되는 이벤트 목록을 뷰어 로드, 자산 교체, 확대 및 비디오 재생과 같은 Dynamic Media 뷰어에 해당하는 이벤트로 확장합니다.
-* Adobe Analytics 확장은 지원되는 작업 목록을 추적 서버로 데이터를 전송하는 데 필요한 두 가지 작업으로 확장합니다.*변수 설정* 및 *비콘 보내기*.
+* Adobe Analytics 확장은 지원되는 작업 목록을 추적 서버로 데이터를 전송하는 데 필요한 두 가지 작업으로 확장합니다. *변수 설정* 및 *비콘 보내기*.
 
 Dynamic Media 뷰어를 추적하려면 다음 유형의 모든 유형을 사용할 수 있습니다.
 
@@ -205,7 +205,7 @@ Dynamic Media Viewers 확장에서 제공하는 유일한 데이터 요소 유�
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-각 뷰어 유형에서 지원되는 이벤트 목록은 [Dynamic Media Viewers 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)를 참조하십시오.특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 클릭합니다. 현재 Dynamic Media 뷰어 참조 가이드는 이벤트 인수를 문서화하지 않습니다.
+각 뷰어 유형에서 지원되는 이벤트 목록은 [Dynamic Media Viewers 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)를 참조하십시오. 특정 뷰어 섹션으로 이동한 다음 Adobe Analytics 추적 지원 하위 섹션을 클릭합니다. 현재 Dynamic Media 뷰어 참조 가이드는 이벤트 인수를 문서화하지 않습니다.
 
 이제 Dynamic Media 뷰어 *데이터 요소*&#x200B;의 수명 주기를 고려합니다. 이러한 데이터 요소의 값은 페이지에서 해당 Dynamic Media 뷰어 이벤트가 발생한 후 채워집니다. 예를 들어 데이터 요소가 **[!UICONTROL LOAD]** 이벤트와 그 &quot;asset&quot; 인수를 가리킵니다. 이러한 경우, 이러한 데이터 요소의 값은 뷰어가 처음으로 **[!UICONTROL LOAD]** 이벤트를 실행한 후 유효한 데이터를 받습니다. 데이터 요소가 **[!UICONTROL ZOOM]** 이벤트와 그 &quot;scale&quot; 인수를 가리키는 경우 뷰어가 처음으로 **[!UICONTROL ZOOM]** 이벤트를 전송할 때까지 이러한 데이터 요소의 값은 비어 있습니다.
 
@@ -217,7 +217,7 @@ Dynamic Media Viewers 확장에서 제공하는 유일한 데이터 요소 유�
 
 **다음 샘플 설정을 고려하십시오.**
 
-* 두 개의 Dynamic Media 확대/축소 뷰어가 있는 웹 페이지:*viewer1* 및 *viewer2*.
+* 두 개의 Dynamic Media 확대/축소 뷰어가 있는 웹 페이지: *viewer1* 및 *viewer2*.
 
 * **** ZoomScaleData 요소는 ZOOMevent  **** 및 그 &quot;scale&quot; 인수를 가리킵니다.
 * **** 다음을 사용하는 TrackPanRule:
@@ -230,7 +230,7 @@ Dynamic Media Viewers 확장에서 제공하는 유일한 데이터 요소 유�
    * 코어 Experience Platform Launch 확장의 키 누르기 이벤트를 트리거로 사용합니다.
    * **[!UICONTROL ZoomScale]** 데이터 요소의 값을 Adobe Analytics에 보냅니다.
 
-이제 최종 사용자가 두 뷰어가 있는 웹 페이지를 로드한다고 가정합니다. *뷰어1*&#x200B;에서 50% 확장으로 전환합니다.그런 다음 *뷰어2*&#x200B;에서 25% 확장으로 확대합니다. *viewer1*&#x200B;에서 이미지를 이동한 다음 마지막으로 키보드에서 키를 선택합니다.
+이제 최종 사용자가 두 뷰어가 있는 웹 페이지를 로드한다고 가정합니다. *뷰어1*&#x200B;에서 50% 확장으로 전환합니다. 그런 다음 *뷰어2*&#x200B;에서 25% 확장으로 확대합니다. *viewer1*&#x200B;에서 이미지를 이동한 다음 마지막으로 키보드에서 키를 선택합니다.
 
 최종 사용자의 활동으로 인해 Adobe Analytics에 다음과 같은 두 개의 추적 호출이 수행됩니다.
 
@@ -239,9 +239,9 @@ Dynamic Media Viewers 확장에서 제공하는 유일한 데이터 요소 유�
 
 위에 설정된 샘플 세트는 데이터 요소 값의 수명 범위에도 영향을 줍니다. Dynamic Media 뷰어가 관리하는 데이터 요소의 값은 뷰어 자체가 웹 페이지에 배치된 후에도 Platform launch 라이브러리 코드에 저장됩니다. 이 기능은 Dynamic Media이 아닌 뷰어 확장에 의해 트리거되고 이러한 데이터 요소를 참조하는 규칙이 있는 경우 데이터 요소는 마지막으로 알려진 값을 반환합니다. 뷰어가 더 이상 웹 페이지에 없는 경우에도.
 
-어떤 경우든 Dynamic Media 뷰어에 의해 구동되는 데이터 요소의 값은 로컬 저장소 또는 서버에 저장되지 않습니다.대신 클라이언트측 Experience Platform Launch 라이브러리에만 유지됩니다. 이러한 데이터 요소 값은 웹 페이지가 다시 로드되면 사라집니다.
+어떤 경우든 Dynamic Media 뷰어에 의해 구동되는 데이터 요소의 값은 로컬 저장소 또는 서버에 저장되지 않습니다. 대신 클라이언트측 Experience Platform Launch 라이브러리에만 유지됩니다. 이러한 데이터 요소 값은 웹 페이지가 다시 로드되면 사라집니다.
 
-일반적으로 데이터 요소 편집기는 [저장소 기간 선택](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html?lang=en#create-a-data-element)을 지원합니다. 그러나 Dynamic Media Viewers 확장을 사용하는 데이터 요소는 **[!UICONTROL None]**&#x200B;의 저장 시간 옵션만 지원합니다. 사용자 인터페이스에서는 다른 값을 설정할 수 있지만 데이터 요소 동작은 이 경우에는 정의되지 않습니다. 확장은 데이터 요소의 값을 자체적으로 관리합니다.전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지 관리하는 데이터 요소입니다.
+일반적으로 데이터 요소 편집기는 [저장소 기간 선택](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html#create-a-data-element)을 지원합니다. 그러나 Dynamic Media Viewers 확장을 사용하는 데이터 요소는 **[!UICONTROL None]**&#x200B;의 저장 시간 옵션만 지원합니다. 사용자 인터페이스에서는 다른 값을 설정할 수 있지만 데이터 요소 동작은 이 경우에는 정의되지 않습니다. 확장은 데이터 요소의 값을 자체적으로 관리합니다. 전체 뷰어 수명 주기 동안 뷰어 이벤트 인수의 값을 유지 관리하는 데이터 요소입니다.
 
 ### Dynamic Media Viewers 확장의 규칙 정보 {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -490,7 +490,7 @@ Adobe Analytics을 구성한 후 통합에 대해 다음과 같이 설정됩니�
 
    예를 들어 **[!UICONTROL 뷰어 자산(prop 30)]** 변수에 대한 보고서는 **[!UICONTROL 사용자 지정 트래픽]** > **[!UICONTROL 사용자 지정 트래픽 21-30]** > **[!UICONTROL 뷰어 자산(prop 30)]**&#x200B;의 보고서 메뉴에서 사용할 수 있습니다.
 
-   **[!UICONTROL 뷰어 자산(prop 30)]** 생성 직후 이 보고서를 방문하면 데이터가 표시되지 않습니다.통합에서 이 시점에서 예상됩니다.
+   **[!UICONTROL 뷰어 자산(prop 30)]** 생성 직후 이 보고서를 방문하면 데이터가 표시되지 않습니다. 통합에서 이 시점에서 예상됩니다.
 
    ![image2019-6-26_23-12-49](assets/image2019-6-26_23-12-49.png)
 
@@ -562,7 +562,7 @@ Experience Platform Launch에서 사용할 수 있는 모든 확장은 **[!UICON
 
 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref)을 참조하십시오.
 
-* (선택 사항)비디오 추적이 필요한 경우에만 필요합니다. *오디오 및 비디오용 Analytics Adobe Medium* 확장
+* (선택 사항) 비디오 추적이 필요한 경우에만 필요합니다. *오디오 및 비디오용 Analytics Adobe Medium* 확장
 
 추적 서버 필드를 입력합니다. *Analytics for Audio 및 Video* 확장 Adobe Medium의 추적 서버가 Adobe Analytics에 사용되는 추적 서버와 다릅니다. `<trackingNamespace>.hb.omtrdc.net` 템플릿을 따릅니다. 여기서 `<trackingNamespace>`은 프로비저닝 이메일의 정보입니다.
 
@@ -693,7 +693,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
    >[!NOTE]
    >
-   >이 시점에서 ***IMS 기술 계정 구성&#x200B;]**Adobe을*** 열어 두십시오.***페이지를 닫지 않고***다음 을 클릭하지 마십시오&#x200B;***.**[!UICONTROL *** 나중에 단계에서 이 페이지로 돌아갑니다.
+   >이 시점에서 ***IMS 기술 계정 구성&#x200B;]**Adobe을*** 열어 두십시오. ***페이지를 닫지 않고***다음 을 클릭하지 마십시오&#x200B;***.**[!UICONTROL *** 나중에 단계에서 이 페이지로 돌아갑니다.
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
