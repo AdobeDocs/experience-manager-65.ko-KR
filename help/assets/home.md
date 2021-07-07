@@ -5,10 +5,10 @@ user-guide-title: Assets 안내서
 feature: 자산 관리
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 68%
+source-wordcount: '335'
+ht-degree: 69%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 68%
 
 ## 키 [!DNL Experience Manager] 리소스
 
-* [Experience Manager 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
+* [Experience Manager 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 * [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Experience Manager 자산 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-assets/ct-p/experience-manager-assets-community)
