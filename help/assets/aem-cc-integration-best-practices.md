@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: 공동 작업,Adobe 자산 링크,데스크탑 앱
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3254'
+source-wordcount: '3250'
 ht-degree: 2%
 
 ---
@@ -29,8 +29,8 @@ ht-degree: 2%
 
 | 요구 사항 | 사용 사례 | 관련 서피스 |
 |---|---|---|
-| 데스크탑에서 크리에이티브 환경 간소화 | 크리에이티브 전문가를 위한 DAM([!DNL Experience Manager Assets])에서 자산에 대한 액세스를 간소화하거나, 기본 자산 작성 애플리케이션에서 작업하는 데스크탑의 사용자를 보다 폭넓게 활용할 수 있습니다. 이 솔루션은 [!DNL Experience Manager]에 변경 내용을 검색, 사용(열기)하고 편집 및 저장하고 새 파일을 업로드하는 쉽고 간단한 방법이 필요합니다. | Win 또는 Mac 데스크탑[!DNL Creative Cloud] 앱 |
-| [!DNL Adobe Stock]에서 고품질의 즉시 사용할 수 있는 자산 제공 | 마케터는 자산 소싱 및 검색을 지원하여 컨텐츠 작성 프로세스를 가속화할 수 있습니다. 크리에이티브 전문가가 크리에이티브 도구 내에서 바로 승인된 자산을 사용합니다. | [!DNL Experience Manager Assets]; [!DNL Adobe Stock] marketplace;메타데이터 필드 |
+| 데스크탑에서 크리에이티브 환경 간소화 | 크리에이티브 전문가를 위한 DAM([!DNL Experience Manager Assets])에서 자산에 대한 액세스를 간소화하거나, 기본 자산 작성 애플리케이션에서 작업하는 데스크탑의 사용자를 보다 폭넓게 활용할 수 있습니다. 이 솔루션은 [!DNL Experience Manager]에 변경 내용을 검색, 사용(열기)하고 편집 및 저장하고 새 파일을 업로드하는 쉽고 간단한 방법이 필요합니다. | Win 또는 Mac 데스크탑 [!DNL Creative Cloud] 앱 |
+| [!DNL Adobe Stock]에서 고품질의 즉시 사용할 수 있는 자산 제공 | 마케터는 자산 소싱 및 검색을 지원하여 컨텐츠 작성 프로세스를 가속화할 수 있습니다. 크리에이티브 전문가가 크리에이티브 도구 내에서 바로 승인된 자산을 사용합니다. | [!DNL Experience Manager Assets];  [!DNL Adobe Stock] marketplace; 메타데이터 필드 |
 | 조직별 자산 분배 및 공유 | 내부 부서/지역 분기 및 외부 파트너, 배포자 및 에이전시는 상위 조직에서 공유한 승인된 자산을 사용합니다. 조직은 더 광범위한 재사용을 위해 생성된 자산을 안전하고 원활하게 공유하려고 합니다. | Brand Portal, Asset Share Commons |
 
 ## 협업 요구 사항을 지원하기 위한 Adobe 제공 {#adobe-offerings-to-support-the-collaboration-need}
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 ### [!DNL Experience Manager] 및 [!DNL Creative Cloud] 통합을 사용할 때의 고려 사항 {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* [데스크탑 앱 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles) 를 참조하십시오
+* [데스크탑 앱 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles) 를 참조하십시오
 * [Adobe Stock 통합](aem-assets-adobe-stock.md)을 참조하십시오
 * [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)를 참조하십시오
 
@@ -209,7 +209,7 @@ Adobe 자산 링크는 이 사용 사례를 지원합니다.
 
 다음 업로드 기능을 활용할 수 있습니다.
 
-* 대용량/계층 폴더를 벌크로 업로드하려면 [폴더 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#upload-and-add-new-assets-to-aem) 기능을 제공하는 [!DNL Experience Manager] 데스크탑 앱을 사용합니다. 계층 폴더 구조를 업로드할 수도 있습니다. [!DNL Assets] 업로드되므로 웹 브라우저 세션에 연결되어 있지 않습니다
+* 대용량/계층 폴더를 벌크로 업로드하려면 [폴더 업로드](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem) 기능을 제공하는 [!DNL Experience Manager] 데스크탑 앱을 사용합니다. 계층 폴더 구조를 업로드할 수도 있습니다. [!DNL Assets] 업로드되므로 웹 브라우저 세션에 연결되어 있지 않습니다
 * 단일 폴더에서 몇 개의 파일을 업로드하려면 파일을 웹 인터페이스로 직접 드래그하거나 [!DNL Assets] 웹 인터페이스에서 만들기 옵션을 사용합니다.
 * 비즈니스 요구 사항에 따라 사용자 정의 업로더를 사용할 수도 있습니다.
 
