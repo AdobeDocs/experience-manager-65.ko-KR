@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: 자산 통찰력,자산 보고서
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b3acfdba41e1bd94c65bb7a87f63b9c326a80dd2
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '651'
 ht-degree: 1%
 
 ---
@@ -114,4 +114,4 @@ Adobe Dynamic Tag Management는 디지털 마케팅 도구를 활성화하는 �
    * AppMeasurement 개체는 사용 가능한 모든 SiteCatalyst 엔진에 대해 `satelliteLib`을 쿼리하여 검색됩니다. 여러 태그가 구성된 경우 배열 선택기의 인덱스를 적절하게 변경합니다. 배열의 항목은 DTM 인터페이스에서 사용할 수 있는 SiteCatalyst 도구에 따라 순서가 지정됩니다.
 
 1. 코드 편집기 창을 저장하고 닫은 다음 도구 구성에 변경 사항을 저장합니다.
-1. **[!UICONTROL 승인]** 탭에서 보류 중인 승인을 모두 승인합니다. DTM 태그가 웹 페이지에 삽입할 준비가 되었습니다. 웹 페이지에서 DTM 태그를 삽입하는 방법에 대한 자세한 내용은 [사용자 지정 페이지 템플릿에서 DTM 통합](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/) 을 참조하십시오.
+1. **[!UICONTROL 승인]** 탭에서 보류 중인 승인을 모두 승인합니다. DTM 태그가 웹 페이지에 삽입할 준비가 되었습니다.
