@@ -3,10 +3,10 @@ sub-product: AEM Content 및 Commerce
 user-guide-title: AEM Content 및 Commerce
 breadcrumb-title: Commerce 안내서
 user-guide-description: AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
-source-git-commit: 538dc7620317f86c0b3d762eaef597d0a7969ace
+source-git-commit: a5bf6a1a6e9013e44209ea865145af1557445318
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 43%
+source-wordcount: '111'
+ht-degree: 42%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 43%
       + [다중 템플릿 사용](cif/configuring/multi-template-usage.md)
       + [SEO용 URL 구성](cif/configuring/advanced-url-configuration.md)
       + [캐싱 옵션](cif/configuring/caching.md)
+      + [사용자 지정 HTTP 헤더](/help/commerce/cif/configuring/custom-http-headers.md)
    + 개발 {#developing}
       + [AEM을 사용한 개발](cif/develop.md)
       + [스타일 지정 CIF 구성 요소](cif/customizing/style-cif-component.md)
