@@ -8,9 +8,9 @@ activity: develop
 audience: developer
 feature: 전자 상거래 통합 프레임워크
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
-source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
+source-git-commit: 2fadfa65242b208a750b0d5392fdd2c41e9ff20e
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ cq:dialog 구성에서 다음 코드 조각을 사용할 수 있습니다.
 
 카테고리 선택기 필드는 다음과 같은 선택적 속성을 지원합니다.
 
-- selectionId(id, uid, slug, idAndUrlPath, uidAndUrlPath) - 선택기에서 반환할 카테고리 속성을 선택할 수 있습니다(기본값 = id). idAndUrlPath 및 uidAndUrlPath는 카테고리 id/uid 및 url_path를 로 구분하여 저장하는 특수 옵션입니다 | 문자(예: 1|men/top)
+- selectionId(id, uid, slug, urlPath, idAndUrlPath _(사용 안 함)_, uidAndUrlPath _(사용 안 함)_) - 선택기에서 반환할 카테고리 속성을 선택할 수 있습니다(기본값 = id).
 - multiple (true, false) - 하나 이상의 카테고리를 선택할 수 있도록 설정(기본값 = false)
 
 또한 `name`, `fieldLabel` 또는 `fieldDescription`와 같은 표준 진단 필드 속성도 지원됩니다.
@@ -79,6 +79,6 @@ cq:dialog 구성에서 다음 코드 조각을 사용할 수 있습니다.
 >`cifproductfield` 구성 요소와 동일한 `cifcategoryfield` 구성 요소에도 `cif.shell.picker` clientlib이 필요합니다. clientlib을 대화 상자에 추가하려면 `extraClientlibs` 속성을 사용할 수 있습니다. AEM 코어 구성 요소 설명서의 [대화 상자 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs)을 참조하십시오.
 >[!CAUTION]
 >
->CIF 코어 구성 요소 버전 2.0.0부터 `id`에 대한 지원이 제거되고 `uid` 로 대체되었습니다. 카테고리 식별자로 `uid` 또는 `slug` 을 사용하는 것이 좋습니다. CIF 코어 구성 요소 버전 1.x를 사용하는 프로젝트에만 `id` 및 `idAndUrlPath`을 계속 지원합니다.
+>CIF 코어 구성 요소 버전 2.0.0부터 `id`에 대한 지원이 제거되고 `uid` 로 대체되었습니다. 카테고리 식별자로 `uid` 또는 `urlPath` 을 사용하는 것이 좋습니다. CIF 코어 구성 요소 버전 1.x를 사용하는 프로젝트에만 `id` 및 `idAndUrlPath`을 계속 지원합니다.
 
 `cifcategoryfield` 의 전체 작업 예는 [CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) 프로젝트에서 찾을 수 있습니다.
