@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 캐시는 데이터 액세스 시간을 단축하고 지연을 줄이며 입출력 속도를 향상시키는 메커니즘입니다. 적응형 양식 캐시는 사전 채워진 데이터를 저장하지 않고 적응형 양식의 HTML 콘텐츠 및 JSON 구조만 저장합니다. 클라이언트에서 적응형 양식을 렌더링하는 데 필요한 시간을 줄이는 데 도움이 됩니다. 적응형 양식용으로 특별히 설계되었습니다.
 
-## 작성자 및 게시 인스턴스에서 적응형 양식 캐시를 구성합니다. {#configure-adaptive-forms-caching-at-author-and-publish-instances}
+## 작성자 및 게시 인스턴스에서 적응형 양식 캐시를 구성합니다 {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
 1. `https://[server]:[port]/system/console/configMgr`의 AEM 웹 콘솔 구성 관리자로 이동합니다.
 1. **[!UICONTROL 적응형 양식 및 대화형 통신 웹 채널 구성]**&#x200B;을 클릭하여 구성 값을 편집합니다.
@@ -39,7 +39,7 @@ ht-degree: 1%
 환경은 캐시 적응형 양식 및 관련 자산을 사용하도록 구성되어 있습니다.
 
 
-## (선택 사항) dispatcher {#configure-the-cache}에서 적응형 양식 캐시를 구성합니다
+## (선택 사항) Dispatcher에서 적응형 양식 캐시를 구성합니다 {#configure-the-cache}
 
 추가적인 성능 향상을 위해 dispatcher에서 적응형 양식 캐싱을 구성할 수도 있습니다.
 
@@ -132,7 +132,7 @@ AEM 환경은 적응형 양식을 캐시하도록 구성되어 있습니다. 모
 
 ## 문제 해결 {#troubleshooting}
 
-### 이미지나 비디오가 포함된 일부 적응형 양식은 디스패처 캐시 {#videos-or-images-not-auto-invalidated}에서 자동으로 무효화되지 않습니다
+### 이미지나 비디오가 포함된 일부 적응형 양식은 Dispatcher 캐시에서 자동으로 무효화되지 않습니다 {#videos-or-images-not-auto-invalidated}
 
 #### 문제 {#issue1}
 
@@ -142,7 +142,7 @@ AEM 환경은 적응형 양식을 캐시하도록 구성되어 있습니다. 모
 
 이미지 및 비디오를 게시한 후 이러한 자산을 참조하는 적응형 양식을 명시적으로 게시 취소하고 게시합니다.
 
-### 적응형 양식의 첫 번째 인스턴스만 {#only-first-instance-of-adaptive-forms-is-cached} 캐시됩니다
+### 적응형 양식의 첫 번째 인스턴스만 캐시됩니다 {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### 문제 {#issue3}
 
