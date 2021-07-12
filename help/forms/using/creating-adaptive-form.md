@@ -2,10 +2,10 @@
 title: 적응형 양식을 만드는 방법
 description: ' [!DNL Experience Manager Forms]을 사용하여 적응형 양식을 만드는 방법을 알아봅니다. 적응형 양식은 정보 수집 및 처리를 간소화하는 반응형 HTML5 양식입니다. 양식 데이터 모델, XFA 양식 템플릿, XML 또는 JSON 스키마를 기반으로 적응형 양식을 만드는 방법에 대해 자세히 알아보십시오. '
 feature: 적응형 양식
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 0%
@@ -82,7 +82,7 @@ ht-degree: 0%
 >
 >적응형 양식에 대한 양식 데이터 모델을 변경할 수도 있습니다. 자세한 단계는 적응형 양식](#edit-form-model)의 양식 모델 속성 편집을 참조하십시오.[
 
-## XFA 양식 템플릿 {#create-an-adaptive-form-based-on-an-xfa-form-template} 을 기반으로 적응형 양식을 만듭니다
+## XFA 양식 템플릿을 기반으로 적응형 양식 만들기 {#create-an-adaptive-form-based-on-an-xfa-form-template}
 
 XFA 양식 템플릿을 재사용하여 적응형 양식을 만들 수 있습니다. 용도를 변경하려면 XFA 양식 템플릿을 적응형 양식과 업로드하고 연결합니다. 양식 템플릿(XFA 양식)의 요소는 적응형 양식 작성 시 컨텐츠 파인더에서 사용할 수 있습니다. 컨텐츠 파인더에서 양식 템플릿 요소를 양식에 드래그하여 놓을 수 있습니다.
 
@@ -123,7 +123,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 
    >[!CAUTION]
    >
-   >JSON 스키마 파일 이름이 **.schema.json**&#x200B;로 끝나야 합니다. 예:mySchema.schema.json
+   >JSON 스키마 파일 이름이 **.schema.json**&#x200B;로 끝나야 합니다. 예: mySchema.schema.json
 
    ![XML 또는 JSON 스키마 선택](assets/upload-schema.png)
    **그림:** *XML 또는 JSON 스키마 선택*
@@ -139,7 +139,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 
 ## 적응형 양식 템플릿 {#adaptive-form-templates}
 
-템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 컨텐츠 구조를 포함하는 사전 형식의 구성 요소가 있습니다.<!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
+템플릿은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 여기에는 특정 속성 및 컨텐츠 구조를 포함하는 사전 형식의 구성 요소가 있습니다. <!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
 
 또한 템플릿 편집기를 사용하여 나만의 템플릿을 생성할 수 있습니다. 템플릿 작업에 대한 자세한 내용은 [적응형 양식 템플릿](template-editor.md)을 참조하십시오.
 
@@ -147,7 +147,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 >
 >편집을 위해 고급 템플릿을 사용하여 만든 적응형 양식을 열면 오류 메시지가 나타납니다. 고급 템플릿에는 서명 단계 구성 요소가 있으며, 기본적으로 Adobe Sign이 활성화되어 있습니다. [Adobe Sign 클라우드 구성](adobe-sign-integration-adaptive-forms.md) 및 [서명자](working-with-adobe-sign.md#addsignerstoanadaptiveform)를 만들어 선택하여 오류를 해결하십시오.
 
-## 적응형 양식 {#edit-form-model} 의 양식 모델 속성 편집
+## 적응형 양식의 양식 모델 속성 편집 {#edit-form-model}
 
 적응형 양식은 양식 모델 없이(양식 모델의 경우 없음 옵션 사용) 또는 양식 템플릿, XML 스키마 또는 JSON 스키마 또는 양식 데이터 모델과 같은 양식 모델을 사용하여 만들어집니다. 적응형 양식에 대한 양식 모델을 없음에서 다른 양식 모델로 변경할 수 있습니다. 양식 모델을 기반으로 하는 적응형 양식의 경우 동일한 양식 모델에 대해 다른 양식 템플릿, XML 스키마, JSON 스키마 또는 양식 데이터 모델을 선택할 수 있습니다. 그러나 한 양식 모델에서 다른 양식 모델로 변경할 수는 없습니다.
 
@@ -159,7 +159,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 
 1. **[!UICONTROL 저장]**&#x200B;을 눌러 속성을 저장합니다.
 
-## 적응형 양식 {#auto-save-an-adaptive-form} 자동 저장
+## 적응형 양식 자동 저장 {#auto-save-an-adaptive-form}
 
 기본적으로 적응형 양식의 컨텐츠는 저장 단추를 누르는 것과 같은 사용자 작업에 저장됩니다. 이벤트나 시간 간격을 기준으로 콘텐츠 저장을 자동으로 시작하도록 적응형 양식을 구성할 수도 있습니다. 자동 저장 옵션은 다음과 같은 경우에 유용합니다.
 
@@ -168,7 +168,7 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
 * 사용자 이벤트를 기반으로 양식 콘텐츠 저장 시작
 * 지정된 시간 간격 후에 양식 내용을 반복적으로 저장
 
-### 적응형 양식 {#enable-auto-save-for-an-adaptive-form}에 대해 자동 저장 활성화
+### 적응형 양식에 대해 자동 저장 활성화 {#enable-auto-save-for-an-adaptive-form}
 
 기본적으로 자동 저장 옵션은 활성화되지 않습니다. 적응형 양식의 자동 저장 탭에서 자동 저장 옵션을 활성화할 수 있습니다. 자동 저장 탭에서도 여러 가지 다른 구성 옵션이 제공됩니다. 적응형 양식에 대해 자동 저장 옵션을 활성화하고 구성하려면 다음 단계를 수행하십시오.
 
