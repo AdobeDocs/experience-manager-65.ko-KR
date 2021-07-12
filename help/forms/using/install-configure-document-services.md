@@ -6,16 +6,16 @@ seo-description: AEM Forms 문서 서비스를 설치하여 PDF 문서를 작성
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
-role: Administrator
+role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 3%
 
 ---
 
-# 문서 서비스 {#installing-and-configuring-document-services} 설치 및 구성
+# 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
 
 AEM Forms은 PDF 문서를 작성, 조합, 배포 및 아카이빙하고, 문서에 대한 액세스를 제한하는 디지털 서명을 추가하고, 바코드 양식을 디코딩하는 등의 다양한 문서 수준 작업을 수행하는 OSGi 서비스 집합을 제공합니다. 이러한 서비스는 AEM Forms 추가 기능 패키지에 포함되어 있습니다. 이러한 서비스를 문서 서비스라고 합니다. 사용 가능한 문서 서비스 및 주요 기능 목록은 다음과 같습니다.
 
@@ -25,7 +25,7 @@ AEM Forms은 PDF 문서를 작성, 조합, 배포 및 아카이빙하고, 문서
 
 * **바코드 Forms 서비스:** 바코드의 전자 이미지에서 데이터를 추출할 수 있습니다. 이 서비스는 하나 이상의 바코드를 입력으로 포함하는 TIFF 및 PDF 파일을 승인하고 바코드 데이터를 추출합니다. 자세한 내용은 [Barcoded Forms Service](/help/forms/using/using-barcoded-forms-service.md)를 참조하십시오.
 
-* **DocAssurance 서비스:**  문서를 암호화 및 해독하고, 추가 사용 권한으로 Adobe Reader의 기능을 확장하며, 문서에 디지털 서명을 추가할 수 있습니다. Doc Assurance 서비스에는 다음 세 가지 서비스가 포함됩니다.서명, 암호화 및 reader 확장 자세한 내용은 [DocAssurance 서비스](/help/forms/using/overview-aem-document-services.md)를 참조하십시오.
+* **DocAssurance 서비스:**  문서를 암호화 및 해독하고, 추가 사용 권한으로 Adobe Reader의 기능을 확장하며, 문서에 디지털 서명을 추가할 수 있습니다. Doc Assurance 서비스에는 다음 세 가지 서비스가 포함됩니다. 서명, 암호화 및 reader 확장 자세한 내용은 [DocAssurance 서비스](/help/forms/using/overview-aem-document-services.md)를 참조하십시오.
 
 * **암호화 서비스:** 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 문서의 내용을 읽을 수 없게 됩니다. 권한이 있는 사용자는 문서를 해독하여 해당 내용에 대한 액세스 권한을 얻을 수 있습니다. 자세한 내용은 [암호화 서비스](/help/forms/using/overview-aem-document-services.md#encryption-service)를 참조하십시오.
 
@@ -66,8 +66,8 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 * AEM 인스턴스의 설치 경로에 공백이 들어 있지 않습니다.
 * AEM 인스턴스가 실행 중입니다. AEM 용어에서 &quot;인스턴스&quot;는 작성자 또는 게시 모드에서 서버에서 실행되는 AEM의 사본입니다. 일반적으로 AEM Forms 문서 서비스를 실행하려면 하나의 AEM 인스턴스(작성자 또는 게시)만 필요합니다.
 
-   * **작성자**:컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브로 전환될 준비가 되면 게시 인스턴스에 복제됩니다.
-   * **게시**:인터넷 또는 내부 네트워크를 통해 대중에게 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
+   * **작성자**: 컨텐츠를 작성, 업로드 및 편집하고 웹 사이트를 관리하는 데 사용되는 AEM 인스턴스입니다. 컨텐츠가 라이브로 전환될 준비가 되면 게시 인스턴스에 복제됩니다.
+   * **게시**: 인터넷 또는 내부 네트워크를 통해 대중에게 게시된 컨텐츠를 제공하는 AEM 인스턴스입니다.
 
 * 메모리 요구 사항이 충족되었습니다. AEM Forms 추가 기능 패키지에는 다음이 필요합니다.
 
@@ -76,8 +76,8 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 
 * PDF 생성기가 Microsoft Windows 및 Linux에서 변환을 수행하는 데 필요한 클라이언트 소프트웨어가 설치되어 있습니다.
 
-   * **Microsoft Windows**:Microsoft  [Office ](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)또는  [Apache OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux**:Apache  [OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft Windows**: Microsoft  [Office ](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)또는  [Apache OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+   * **Linux**: Apache  [OpenOffice 설치](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ Acrobat을 설치한 후 Microsoft Word를 엽니다. **Acrobat**&#x200B;탭에�
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Windows 전용) 설치 잉크 및 필기 서비스 구성 {#configure-install-ink-and-handwriting-service}
+### (Windows만 해당) 설치 잉크 및 필기 서비스 구성 {#configure-install-ink-and-handwriting-service}
 
 Microsoft Windows Server를 실행하는 경우 잉크 및 필기 서비스를 구성합니다. Microsoft Office의 링크 기능을 사용하는 Microsoft PowerPoint 파일을 여는 데 이 서비스가 필요합니다.
 
@@ -304,7 +304,7 @@ Microsoft Windows Server를 실행하는 경우 잉크 및 필기 서비스를 �
 1. **[!UICONTROL 기능]** 메뉴에서 **[!UICONTROL 기능 추가]**&#x200B;를 클릭합니다. **[!UICONTROL 잉크 및 필기 서비스]** 확인란을 선택합니다.
 1. **[!UICONTROL 잉크]** 및 필기 서비스 **[!UICONTROL 를 선택한 기능 대화]** 상자를 선택합니다. **[!UICONTROL 설치]**&#x200B;를 클릭하면 서비스가 설치됩니다.
 
-### (Windows 전용) Microsoft Office {#configure-the-file-block-settings-for-microsoft-office}에 대한 파일 블록 설정을 구성합니다.
+### (Windows 전용) Microsoft Office의 파일 블록 설정을 구성합니다 {#configure-the-file-block-settings-for-microsoft-office}
 
 Microsoft Office 트러스트 센터 설정을 변경하여 PDF Generator 서비스가 이전 버전의 Microsoft Office로 만든 파일을 변환할 수 있도록 합니다.
 
@@ -314,7 +314,7 @@ Microsoft Office 트러스트 센터 설정을 변경하여 PDF Generator 서비
 1. **[!UICONTROL 신뢰 센터 설정]**&#x200B;에서 **[!UICONTROL 파일 블록 설정]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 파일 유형]** 목록에서 PDF 생성기 서비스가 PDF 문서로 변환할 수 있어야 하는 파일 유형에 대해 **[!UICONTROL 열기]**&#x200B;를 선택 취소합니다.
 
-### (Windows 전용) 프로세스 수준 토큰 바꾸기 권한 {#grant-the-replace-a-process-level-token-privilege}을 부여합니다
+### (Windows만 해당) 프로세스 수준 토큰 바꾸기 권한을 부여합니다 {#grant-the-replace-a-process-level-token-privilege}
 
 응용 프로그램 서버를 시작하는 데 사용되는 사용자 계정에는 **프로세스 수준 토큰 바꾸기** 권한이 필요합니다. 로컬 시스템 계정에는 기본적으로 프로세스 수준 토큰&#x200B;**바꾸기 권한이 있습니다.** 로컬 관리자 그룹의 사용자와 함께 실행 중인 서버의 경우 권한을 명시적으로 부여해야 합니다. 권한을 부여하려면 다음 단계를 수행하십시오.
 
@@ -322,7 +322,7 @@ Microsoft Office 트러스트 센터 설정을 변경하여 PDF Generator 서비
 1. **[!UICONTROL 로컬 컴퓨터 정책]** > **[!UICONTROL 컴퓨터 구성]** > **[!UICONTROL Windows 설정]** > **[!UICONTROL 보안 설정]** > **[!UICONTROL 로컬 정책]** > **[!UICONTROL 사용자 권한 할당]**&#x200B;으로 이동하여 **[!UICONTROL 프로세스 수준 토큰 바꾸기]** 정책을 편집하고 그룹을 포함합니다.
 1. 프로세스 수준 토큰 바꾸기 항목에 사용자를 추가합니다.
 
-### (Windows 전용) 관리자가 아닌 사용자를 위해 PDF 생성기 서비스를 사용하도록 설정 {#enable-the-pdf-generator-service-for-non-administrators}
+### (Windows 전용) 관리자가 아닌 사용자를 위해 PDF Generator 서비스를 사용하도록 설정 {#enable-the-pdf-generator-service-for-non-administrators}
 
 관리자가 아닌 사용자가 PDF Generator 서비스를 사용할 수 있도록 설정할 수 있습니다. 일반적으로 관리자 권한이 있는 사용자만 서비스를 사용할 수 있습니다.
 
@@ -330,7 +330,7 @@ Microsoft Office 트러스트 센터 설정을 변경하여 PDF Generator 서비
 1. 환경 변수의 값을 TRUE로 설정합니다.
 1. AEM Forms 인스턴스를 다시 시작합니다.
 
-### (Windows 전용) UAC(사용자 계정 컨트롤) 사용 안 함 {#disable-user-account-control-uac}
+### (Windows 전용) 사용자 계정 컨트롤 사용 안 함(UAC) {#disable-user-account-control-uac}
 
 1. 시스템 구성 유틸리티에 액세스하려면 **[!UICONTROL 시작 > 실행]**&#x200B;으로 이동한 다음 **[!UICONTROL MSCONFIG]**&#x200B;을 입력합니다.
 1. **[!UICONTROL 도구]** 탭을 클릭하고 아래로 스크롤하여 **[!UICONTROL UAC 설정 변경]**&#x200B;을 선택합니다. **[!UICONTROL Launch]** 를 클릭하여 새 창에서 명령을 실행합니다.
@@ -358,11 +358,11 @@ PDF Generator 서비스는 WebKit, WebCapture 및 PhantomJS 경로 또는 방법
 >
 >글꼴 폴더에 새 글꼴을 설치할 때마다 AEM Forms 인스턴스를 다시 시작합니다.
 
-### (UNIX 기반 플랫폼만 해당) HTML을 PDF로 변환하는 추가 구성 {#extra-configurations-for-html-to-pdf-conversion}
+### (UNIX 기반 플랫폼만 해당) HTML에서 PDF로 변환하는 추가 구성  {#extra-configurations-for-html-to-pdf-conversion}
 
 UNIX 기반 플랫폼에서 PDF Generator 서비스는 WebKit 및 PhantomJS 경로를 지원하여 HTML 파일을 PDF 문서로 변환합니다. HTML을 PDF로 변환하려면 기본 변환 경로에 적용할 수 있는 다음 구성을 수행하십시오.
 
-### (UNIX 기반 플랫폼만 해당) 유니코드 글꼴에 대한 지원을 활성화합니다(WebKit만 해당) {#enable-support-for-unicode-fonts-webkit-only}
+### (UNIX 기반 플랫폼만 해당) 유니코드 글꼴에 대한 지원을 활성화합니다(WebKit만 해당). {#enable-support-for-unicode-fonts-webkit-only}
 
 시스템에 적합한 다음 디렉토리에 유니코드 글꼴을 복사합니다.
 
@@ -406,7 +406,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 
 ## 설치 후 구성 {#post-installation-configurations}
 
-### RSA/BouncyCastle 라이브러리에 대한 부팅 위임 구성 {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
+### RSA/BouncyCastle 라이브러리에 대한 부팅 위임 구성  {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
 
 1. AEM 인스턴스를 중지합니다. [AEM 설치 디렉토리]\crx-quickstart\conf\ folder으로 이동합니다. 편집할 sling.properties 파일을 엽니다.
 
@@ -426,7 +426,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 
 1. 파일을 저장하고 닫습니다.
 
-### 글꼴 관리자 서비스 {#configuring-the-font-manager-service} 구성
+### 글꼴 관리자 서비스 구성  {#configuring-the-font-manager-service}
 
 1. [AEM Configuration Manager](http://localhost:4502/system/console/configMgr)에 관리자로 로그인합니다.
 1. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]** 서비스를 찾아 엽니다. 시스템 글꼴, Adobe 서버 글꼴 및 고객 글꼴 디렉토리의 경로를 지정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
@@ -436,7 +436,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    >Adobe 이외의 당사자가 제공하는 글꼴을 사용할 수 있는 권리는 해당 글꼴이 있는 해당 당사자가 제공한 사용권 계약에 따라 다르며, Adobe 소프트웨어를 사용할 수 있는 라이센스에 따라 적용되지 않습니다. Adobe은 Adobe 소프트웨어와 함께 비Adobe 글꼴을 사용하기 전에, 특히 서버 환경에서 글꼴을 사용하기 전에 적용 가능한 모든 비Adobe 사용권 계약을 검토하고 준수하도록 권장합니다.
    > 글꼴 폴더에 새 글꼴을 설치하면 AEM Forms 인스턴스를 다시 시작합니다.
 
-### PDF Generator 서비스 {#configure-a-local-user-account-to-run-the-pdf-generator-service}를 실행하도록 로컬 사용자 계정을 구성합니다
+### PDF Generator 서비스를 실행하도록 로컬 사용자 계정 구성  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
 PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합니다. 로컬 사용자를 만드는 단계는 [Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account)에서 사용자 계정 만들기 또는 [UNIX 기반 플랫폼에서 사용자 계정 만들기](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html)를 참조하십시오.
 
@@ -481,7 +481,7 @@ PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합�
  </tbody> 
 </table>
 
-### (Windows 전용) PDF Generator 서비스용 Acrobat 구성 {#configure-acrobat-for-the-pdf-generator-service}
+### (Windows 전용) PDF Generator 서비스를 위한 Acrobat 구성 {#configure-acrobat-for-the-pdf-generator-service}
 
 Microsoft Windows에서 PDF Generator 서비스는 Adobe Acrobat을 사용하여 지원되는 파일 형식을 PDF 문서로 변환합니다. 다음 단계를 수행하여 PDF Generator 서비스에 대한 Adobe Acrobat을 구성합니다.
 
@@ -509,9 +509,9 @@ Microsoft Windows에서 PDF Generator 서비스는 Adobe Acrobat을 사용하여
 
    1. 다음으로 이동 `[Path_of_reports_folder]`. SystemReadinessTool.html 파일을 엽니다. 보고서를 확인하고 언급된 문제를 수정합니다.
 
-### (Windows 전용) HTML에서 PDF로 변환할 기본 경로를 구성합니다. {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
+### (Windows 전용) HTML에서 PDF로 변환할 기본 경로를 구성합니다 {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 여러 경로를 제공합니다.Webkit, Acrobat WebCapture(Windows 전용) 및 PhantomJS. PhantomJS 경로는 동적 컨텐츠를 처리할 수 있는 기능이 있고 32비트 라이브러리, 32비트 JDK에 대한 종속성이 없거나 추가 글꼴이 필요 없으므로 PhantomJS 경로를 사용하는 것이 좋습니다. 또한 PhantomJS 경로에는 전환을 실행하기 위한 하위 액세스나 루트 액세스가 필요하지 않습니다.
+PDF Generator 서비스는 HTML 파일을 PDF 문서로 변환하는 여러 경로를 제공합니다. Webkit, Acrobat WebCapture(Windows 전용) 및 PhantomJS. PhantomJS 경로는 동적 컨텐츠를 처리할 수 있는 기능이 있고 32비트 라이브러리, 32비트 JDK에 대한 종속성이 없거나 추가 글꼴이 필요 없으므로 PhantomJS 경로를 사용하는 것이 좋습니다. 또한 PhantomJS 경로에는 전환을 실행하기 위한 하위 액세스나 루트 액세스가 필요하지 않습니다.
 
 HTML에서 PDF로 변환하는 기본 경로는 Webkit입니다. 변환 경로를 변경하려면
 
