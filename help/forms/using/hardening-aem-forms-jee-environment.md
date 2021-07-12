@@ -8,11 +8,11 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
-role: Administrator
+role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '7698'
+source-wordcount: '7696'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ JEE에 AEM Forms을 성공적으로 설치한 후에는 보안 관점에서 환�
 
 **서비스 계정(Windows의 JBoss 턴키만 해당)**
 
-AEM Forms on JEE는 기본적으로 LocalSystem 계정을 사용하여 서비스를 설치합니다. 기본 제공 LocalSystem 사용자 계정에는 높은 액세스 가능성이 있습니다.관리자 그룹의 일부입니다. 작업자 프로세스 ID가 LocalSystem 사용자 계정으로 실행되는 경우 해당 작업자 프로세스는 전체 시스템에 대한 전체 액세스 권한을 갖습니다.
+AEM Forms on JEE는 기본적으로 LocalSystem 계정을 사용하여 서비스를 설치합니다. 기본 제공 LocalSystem 사용자 계정에는 높은 액세스 가능성이 있습니다. 관리자 그룹의 일부입니다. 작업자 프로세스 ID가 LocalSystem 사용자 계정으로 실행되는 경우 해당 작업자 프로세스는 전체 시스템에 대한 전체 액세스 권한을 갖습니다.
 
 관리 이외의 특정 계정을 사용하여 JEE에서 AEM Forms이 배포된 애플리케이션 서버를 실행하려면 다음 지침을 따르십시오.
 
@@ -189,8 +189,8 @@ AEM Forms on JEE는 기본적으로 LocalSystem 계정을 사용하여 서비스
    * 서비스로 로그온(이미 설정되어야 함)
 
 1. 새 사용자 계정에 다음 디렉토리에 대한 수정 권한을 부여합니다.
-   * **GDS(Global Document Storage) 디렉토리**:GDS 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 경우 이 위치는 기본적으로 `[JBoss root]/server/[type]/svcnative/DocumentStorage`에 있는 응용 프로그램 서버 설치 아래의 디렉터리로 설정됩니다
-   * **CRX-Repository 디렉토리**:기본 위치는 입니다.  `[AEM-Forms-installation-location]\crx-repository`
+   * **GDS(Global Document Storage) 디렉토리**: GDS 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 경우 이 위치는 기본적으로 `[JBoss root]/server/[type]/svcnative/DocumentStorage`에 있는 응용 프로그램 서버 설치 아래의 디렉터리로 설정됩니다
+   * **CRX-Repository 디렉토리**: 기본 위치는 입니다.  `[AEM-Forms-installation-location]\crx-repository`
    * **AEM Forms 임시 디렉토리**:
       * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
       * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
@@ -206,8 +206,8 @@ UNIX 기반 시스템에서는 비루트 사용자가 다음 디렉토리를 임
    >[!NOTE]
    >
    > JBoss Application Server의 기본 설치 위치:
-   > * Windows:C:\Adobe\Adobe_Experience_Manager_Forms\jboss
-   > * Linux:/opt/jboss/
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jboss/
 
 1. 응용 프로그램 서버를 시작합니다.
 
@@ -275,7 +275,7 @@ Configuration Manager는 JEE 데이터베이스에서 AEM Forms의 부트스트�
 
 일부 양식 서버 서비스에는 익명 호출자가 호출할 수 있는 작업이 있습니다. 이러한 서비스에 대한 익명 액세스가 필요하지 않으면 [서비스](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services)에 대한 중요하지 않은 익명 액세스를 비활성화하는 단계에 따라 비활성화하십시오.
 
-#### 기본 관리자 암호 {#change-the-default-administrator-password} 변경
+#### 기본 관리자 암호 변경 {#change-the-default-administrator-password}
 
 JEE의 AEM Forms이 설치되면, 기본 사용자 계정이 *password*&#x200B;인 기본 암호로 Super Administrator/ login-id Administrator에 대해 구성됩니다. 구성 관리자를 사용하여 이 암호를 즉시 변경해야 합니다.
 
@@ -321,7 +321,7 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 응
 1. **설정 > 코어 시스템 설정 > 구성**&#x200B;을 클릭합니다.
 1. **WSDL**&#x200B;을 선택 취소하고 **확인**&#x200B;을 클릭합니다.
 
-### 응용 프로그램 서버 보안 {#application-server-security}
+### 애플리케이션 서버 보안 {#application-server-security}
 
 다음 표에서는 JEE 애플리케이션의 AEM Forms이 설치된 후 애플리케이션 서버를 보호하는 몇 가지 기술에 대해 설명합니다.
 
@@ -343,7 +343,7 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 응
   </tr> 
   <tr> 
    <td><p>디렉토리 검색</p> </td> 
-   <td><p>존재하지 않는 페이지를 요청하거나 디렉터의 이름을 요청할 때(요청 문자열은 슬래시(/)로 끝남), 응용 프로그램 서버는 해당 디렉토리의 내용을 반환하지 않아야 합니다. 이를 방지하기 위해 애플리케이션 서버에서 디렉토리 탐색을 비활성화할 수 있습니다. 관리 콘솔 응용 프로그램 및 서버에서 실행 중인 다른 응용 프로그램에 대해 이 작업을 수행해야 합니다.</p> <p>JBoss의 경우, 다음 예제와 같이 web.xml 파일에서 <code>DefaultServlet</code> 속성의 목록 초기화 매개변수 값을 <code>false</code>로 설정합니다.</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;기본&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;목록&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;3&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>WebSphere의 경우 ibm-web-ext.xmi 파일의 <code>directoryBrowsingEnabled</code> 속성을 <code>false</code>로 설정합니다.</p> <p>WebLogic의 경우 다음 예제와 같이 weblogic.xml 파일의 index-directories 속성을 <code>false</code>로 설정합니다.</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>존재하지 않는 페이지를 요청하거나 디렉터의 이름을 요청할 때(요청 문자열은 슬래시(/)로 끝남), 응용 프로그램 서버는 해당 디렉토리의 내용을 반환하지 않아야 합니다. 이를 방지하기 위해 애플리케이션 서버에서 디렉토리 탐색을 비활성화할 수 있습니다. 관리 콘솔 응용 프로그램 및 서버에서 실행 중인 다른 응용 프로그램에 대해 이 작업을 수행해야 합니다.</p> <p>JBoss의 경우, 다음 예제와 같이 web.xml 파일에서 <code>DefaultServlet</code> 속성의 목록 초기화 매개변수 값을 <code>false</code>로 설정합니다.</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;기본&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;목록&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>WebSphere의 경우 ibm-web-ext.xmi 파일의 <code>directoryBrowsingEnabled</code> 속성을 <code>false</code>로 설정합니다.</p> <p>WebLogic의 경우 다음 예제와 같이 weblogic.xml 파일의 index-directories 속성을 <code>false</code>로 설정합니다.</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -354,7 +354,7 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 응
 
 oracle에서 사용하는 데이터베이스 계정에는 CONNECT, 리소스 및 뷰 생성 권한만 필요합니다. 다른 데이터베이스에 대한 유사한 요구 사항에 대해서는 [JEE에 AEM Forms 설치 준비 (단일 서버)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)를 참조하십시오.
 
-#### JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}용 Windows의 SQL Server에 대한 통합 보안 구성
+#### JBoss용 Windows의 SQL Server에 대한 통합 보안 구성 {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
 1. 다음 예제와 같이 [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml}을 수정하여 연결 URL에 `integratedSecurity=true`을 추가합니다.
 
@@ -382,7 +382,7 @@ oracle에서 사용하는 데이터베이스 계정에는 CONNECT, 리소스 및
 1. 응용 프로그램 서버를 실행 중인 컴퓨터의 Windows 시스템 경로에 sqljdbc_auth.dll 파일을 추가합니다. sqljdbc_auth.dll 파일은 Microsoft SQL JDBC 6.2.1.0 드라이버 설치 시 나타납니다.
 1. **혼합** 모드에서 **Windows 인증만**&#x200B;으로 SQL Server 보안을 설정합니다.
 
-#### Windows에서 WebSphere용 SQL Server에 대한 통합 보안 구성 {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
+#### WebSphere용 Windows에서 SQL Server에 대한 통합 보안 구성 {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
 
 WebSphere에서는 WebSphere에 포함된 SQL Server JDBC 드라이버가 아니라 외부 SQL Server JDBC 드라이버를 사용하는 경우에만 통합 보안을 구성할 수 있습니다.
 
@@ -399,7 +399,7 @@ WebSphere에서는 WebSphere에 포함된 SQL Server JDBC 드라이버가 아니
 1. **이 계정**&#x200B;을 선택하고 사용할 로그인 계정을 설정하는 데 필요한 정보를 제공합니다.
 1. **혼합** 모드에서 **Windows 인증만**&#x200B;으로 SQL Server의 보안을 설정합니다.
 
-### 데이터베이스 {#protecting-access-to-sensitive-content-in-the-database}의 중요 콘텐츠에 대한 액세스 보호
+### 데이터베이스의 중요한 콘텐츠에 대한 액세스 보호 {#protecting-access-to-sensitive-content-in-the-database}
 
 AEM Forms 데이터베이스 스키마에는 시스템 구성 및 비즈니스 프로세스에 대한 중요한 정보가 포함되어 있으므로 방화벽 뒤에 숨겨야 합니다. 데이터베이스는 Forms 서버와 동일한 트러스트 경계 내에서 고려해야 합니다. 비즈니스 데이터의 정보 공개 및 도난 방지를 위해 DBA(데이터베이스 관리자)가 데이터베이스를 구성하여 권한이 부여된 관리자만 액세스할 수 있도록 해야 합니다.
 
@@ -428,7 +428,7 @@ LDAP를 사용하는 일반적인 공격에는 공격자가 의도적으로 여�
 1. 자동 계정 잠금 설정에서 **최대 연속 인증 실패**&#x200B;를 낮은 숫자로 설정합니다(예: 3).
 1. **저장**&#x200B;을 클릭합니다.
 
-### {#auditing-and-logging} 감사 및 로깅
+### 감사 및 로깅 {#auditing-and-logging}
 
 응용 프로그램 감사 및 로깅을 적절하고 안전하게 사용하면 보안 및 기타 예외 이벤트를 가능한 한 빨리 추적하고 감지할 수 있습니다. 애플리케이션 내에서 감사 및 로깅을 효과적으로 사용하는 경우 성공적인 로그인 및 실패한 로그인 추적과 같은 항목과 주요 레코드 작성 또는 삭제와 같은 주요 애플리케이션 이벤트가 포함됩니다.
 
@@ -469,11 +469,11 @@ LDAP를 사용하는 일반적인 공격에는 공격자가 의도적으로 여�
 
 1. AEM Forms 인스턴스를 다시 시작합니다.
 
-## Enterprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise} 이외의 액세스에 대해 JEE에서 AEM Forms 구성
+## 엔터프라이즈 수준 이상의 액세스를 위해 JEE에서 AEM Forms 구성 {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
 JEE에 AEM Forms을 성공적으로 설치한 후에는 환경 보안을 정기적으로 유지해야 합니다. 이 섹션에서는 JEE 프로덕션 서버에서 AEM Forms의 보안을 유지 관리하는 데 권장되는 작업에 대해 설명합니다.
 
-### 웹 액세스 {#setting-up-a-reverse-proxy-for-web-access}에 대한 역방향 프록시 설정
+### 웹 액세스를 위한 역방향 프록시 설정 {#setting-up-a-reverse-proxy-for-web-access}
 
 *역방향 프록시*&#x200B;를 사용하여 JEE 웹 애플리케이션의 AEM Forms용 URL 세트를 외부 사용자와 내부 사용자 모두 사용할 수 있도록 할 수 있습니다. 이 구성은 사용자가 JEE의 AEM Forms이 실행 중인 애플리케이션 서버에 직접 연결할 수 있도록 하는 것보다 더 안전합니다. 역방향 프록시는 JEE에서 AEM Forms을 실행 중인 애플리케이션 서버에 대한 모든 HTTP 요청을 수행합니다. 사용자는 역방향 프록시에 대한 네트워크 액세스 권한만 가지며 역방향 프록시에서 지원하는 URL 연결만 시도할 수 있습니다.
 
@@ -706,7 +706,7 @@ JEE의 AEM Forms은 레퍼러 필터 기능을 사용하여 CSRF 공격을 차�
 
 JEE의 AEM Forms은 서버 리소스에 대한 액세스가 허용되는 레퍼러를 지정하는 레퍼러 필터를 제공합니다. 기본적으로 레퍼러 필터는 *CSRF_CHECK_GETS*&#x200B;가 true로 설정된 경우가 아니면 안전한 HTTP 메서드(예: GET)을 사용하는 요청을 필터링하지 않습니다. 허용된 레퍼러 항목의 포트 번호가 0으로 설정된 경우, JEE의 AEM Forms에서는 포트 번호에 관계없이 해당 호스트의 레퍼러가 있는 모든 요청을 허용합니다. 포트 번호를 지정하지 않으면 기본 포트 80(HTTP) 또는 포트 443(HTTPS)의 요청만 허용됩니다. 허용된 레퍼러 목록의 모든 항목이 삭제된 경우 레퍼러 필터링이 비활성화됩니다.
 
-문서 서비스를 처음 설치하면 허용된 레퍼러 목록이 문서 서비스가 설치된 서버의 주소로 업데이트됩니다. 서버 항목에는 서버 이름, IPv4 주소, IPv6이 활성화된 경우 IPv6 주소, 루프백 주소 및 localhost 항목이 포함됩니다. 허용된 레퍼러 목록에 추가된 이름은 호스트 운영 체제에서 반환됩니다. 예를 들어 IP 주소가 10.40.54.187인 서버에는 다음 항목이 포함됩니다.`https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0` 호스트 운영 체제에서 참조하는 정규화되지 않은 이름(IPv4 주소, IPv6 주소 또는 정규화된 도메인 이름이 없는 이름)에 대해서는 허용 목록에 추가하다 업데이트되지 않습니다. 비즈니스 환경에 맞게 허용된 레퍼러 목록을 수정합니다. 기본 허용된 레퍼러 목록과 함께 프로덕션 환경에 양식 서버를 배포하지 마십시오. 허용된 레퍼러, 레퍼러 예외 또는 URI를 수정한 후 변경 사항이 적용되도록 서버를 다시 시작해야 합니다.
+문서 서비스를 처음 설치하면 허용된 레퍼러 목록이 문서 서비스가 설치된 서버의 주소로 업데이트됩니다. 서버 항목에는 서버 이름, IPv4 주소, IPv6이 활성화된 경우 IPv6 주소, 루프백 주소 및 localhost 항목이 포함됩니다. 허용된 레퍼러 목록에 추가된 이름은 호스트 운영 체제에서 반환됩니다. 예를 들어 IP 주소가 10.40.54.187인 서버에는 다음 항목이 포함됩니다. `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0` 호스트 운영 체제에서 참조하는 정규화되지 않은 이름(IPv4 주소, IPv6 주소 또는 정규화된 도메인 이름이 없는 이름)에 대해서는 허용 목록에 추가하다 업데이트되지 않습니다. 비즈니스 환경에 맞게 허용된 레퍼러 목록을 수정합니다. 기본 허용된 레퍼러 목록과 함께 프로덕션 환경에 양식 서버를 배포하지 마십시오. 허용된 레퍼러, 레퍼러 예외 또는 URI를 수정한 후 변경 사항이 적용되도록 서버를 다시 시작해야 합니다.
 
 **허용된 레퍼러 목록 관리**
 
@@ -727,7 +727,7 @@ JEE의 AEM Forms에서는 허용된 레퍼러 예외 목록 및 허용된 URI �
 
 API에 대한 자세한 내용은* JEE API Reference에서 AEM Forms 를 참조하십시오.
 
-글로벌 수준의 허용된 레퍼러 예외에 대해 ***LC_GLOBAL_ALLOWED_REFERRER_EXCEPTION*** 목록을 사용하여 모든 응용 프로그램에 적용할 수 있는 예외를 정의합니다. 이 목록에는 절대 경로(예:`/index.html`) 또는 상대 경로(예:`/sample/`) 정규 표현식을 상대 URI 끝에 추가할 수도 있습니다(예: ).`/sample/(.)*`
+글로벌 수준의 허용된 레퍼러 예외에 대해 ***LC_GLOBAL_ALLOWED_REFERRER_EXCEPTION*** 목록을 사용하여 모든 응용 프로그램에 적용할 수 있는 예외를 정의합니다. 이 목록에는 절대 경로(예: `/index.html`) 또는 상대 경로(예: `/sample/`) 정규 표현식을 상대 URI 끝에 추가할 수도 있습니다(예: ). `/sample/(.)*`
 
 ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** 목록 ID는 `adobe-usermanager-client.jar`에 있는 `com.adobe.idp.um.api` 네임스페이스의 `UMConstants` 클래스에 상수로 정의됩니다. AEM Forms API를 사용하여 이 목록을 생성, 수정 또는 편집할 수 있습니다. 예를 들어, 전역 허용 레퍼러 예외 목록을 만들려면 다음을 사용합니다.
 
@@ -887,7 +887,7 @@ CSRF 필터에 의해 올바른 서버 요청이 차단되는 경우 다음 중 
  </tbody> 
 </table>
 
-### 응용 프로그램 서버의 포트 {#ports-for-application-servers}
+### 애플리케이션 서버의 포트 {#ports-for-application-servers}
 
 이 섹션에서는 지원되는 각 애플리케이션 서버 유형에 대한 기본 포트(및 대체 구성 범위)에 대해 설명합니다. 이러한 포트는 JEE에서 AEM Forms을 실행하는 애플리케이션 서버에 연결할 수 있도록 허용하려는 네트워크 기능에 따라 내부 방화벽에서 활성화하거나 비활성화해야 합니다.
 
@@ -930,8 +930,8 @@ CSRF 필터에 의해 올바른 서버 요청이 차단되는 경우 다음 중 
    <td><p>웹 애플리케이션에 대한 액세스</p> </td> 
    <td> 
     <ul> 
-     <li><p>관리 서버 수신 포트:기본값은 7001입니다.</p> </li> 
-     <li><p>관리 서버 SSL 수신 포트:기본값은 7002입니다.</p> </li> 
+     <li><p>관리 서버 수신 포트: 기본값은 7001입니다.</p> </li> 
+     <li><p>관리 서버 SSL 수신 포트: 기본값은 7002입니다.</p> </li> 
      <li><p>관리 대상 서버에 대해 구성된 포트(예: 8001)</p> </li> 
     </ul> </td> 
   </tr> 
@@ -939,9 +939,9 @@ CSRF 필터에 의해 올바른 서버 요청이 차단되는 경우 다음 중 
    <td><p>JEE의 AEM Forms에 액세스하는 데 WebLogic 관리 포트가 필요하지 않음</p> </td> 
    <td> 
     <ul> 
-     <li><p>관리 대상 서버 수신 포트:1에서 65534까지 구성 가능</p> </li> 
-     <li><p>관리 서버 SSL 수신 포트:1에서 65534까지 구성 가능</p> </li> 
-     <li><p>노드 관리자 수신 포트:기본값은 5556입니다.</p> </li> 
+     <li><p>관리 대상 서버 수신 포트: 1에서 65534까지 구성 가능</p> </li> 
+     <li><p>관리 서버 SSL 수신 포트: 1에서 65534까지 구성 가능</p> </li> 
+     <li><p>노드 관리자 수신 포트: 기본값은 5556입니다.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -951,7 +951,7 @@ CSRF 필터에 의해 올바른 서버 요청이 차단되는 경우 다음 중 
 
 JEE의 AEM Forms에 필요한 WebSphere 포트에 대한 자세한 내용은 WebSphere Application Server UI의 포트 번호 설정으로 이동하십시오.
 
-### SSL {#configuring-ssl} 구성
+### SSL 구성 {#configuring-ssl}
 
 JEE 물리적 아키텍처의 [AEM Forms 섹션에 설명된 물리적 아키텍처를 참조하려면 사용하려는 모든 연결에 대해 SSL을 구성해야 합니다](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture). 특히 네트워크에서 사용자 자격 증명이 노출되지 않도록 모든 SOAP 연결을 SSL을 통해 수행해야 합니다.
 
@@ -985,15 +985,15 @@ WebSphere 또는 WebLogic에 대한 SSL 리디렉션을 구성하려면 애플�
 
    standalone.xml 파일을 저장하고 닫습니다.
 
-## Windows 특정 보안 권장 사항 {#windows-specific-security-recommendations}
+## Windows 관련 보안 권장 사항 {#windows-specific-security-recommendations}
 
 이 섹션에는 JEE에서 AEM Forms을 실행하는 데 사용되는 경우 Windows에만 적용되는 보안 권장 사항이 포함되어 있습니다.
 
 ### JBoss 서비스 계정 {#jboss-service-accounts}
 
-JEE의 AEM Forms 턴키 설치는 기본적으로 로컬 시스템 계정을 사용하여 서비스 계정을 설정합니다. 기본 제공 로컬 시스템 사용자 계정에는 높은 액세스 가능성이 있습니다.관리자 그룹의 일부입니다. 작업자 프로세스 ID가 로컬 시스템 사용자 계정으로 실행되는 경우 해당 작업자 프로세스는 전체 시스템에 대한 전체 액세스 권한을 갖습니다.
+JEE의 AEM Forms 턴키 설치는 기본적으로 로컬 시스템 계정을 사용하여 서비스 계정을 설정합니다. 기본 제공 로컬 시스템 사용자 계정에는 높은 액세스 가능성이 있습니다. 관리자 그룹의 일부입니다. 작업자 프로세스 ID가 로컬 시스템 사용자 계정으로 실행되는 경우 해당 작업자 프로세스는 전체 시스템에 대한 전체 액세스 권한을 갖습니다.
 
-#### 관리자가 아닌 계정 {#run-the-application-server-using-a-non-administrative-account}을 사용하여 응용 프로그램 서버를 실행합니다
+#### 관리자가 아닌 계정을 사용하여 응용 프로그램 서버 실행 {#run-the-application-server-using-a-non-administrative-account}
 
 1. Microsoft Management Console(MMC)에서 다음과 같이 로그인할 Forms Server 서비스의 로컬 사용자를 만듭니다.
 
@@ -1010,8 +1010,8 @@ JEE의 AEM Forms 턴키 설치는 기본적으로 로컬 시스템 계정을 사
    * 서비스로 로그온(이미 설정되어야 함)
 
 1. 새 사용자 계정에 다음 디렉토리에 대한 수정 권한을 부여합니다.
-   * **GDS(Global Document Storage) 디렉토리**:GDS 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 경우 이 위치는 기본적으로 `[JBoss root]/server/[type]/svcnative/DocumentStorage`에 있는 응용 프로그램 서버 설치 아래의 디렉터리로 설정됩니다
-   * **CRX-Repository 디렉토리**:기본 위치는 입니다.  `[AEM-Forms-installation-location]\crx-repository`
+   * **GDS(Global Document Storage) 디렉토리**: GDS 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 경우 이 위치는 기본적으로 `[JBoss root]/server/[type]/svcnative/DocumentStorage`에 있는 응용 프로그램 서버 설치 아래의 디렉터리로 설정됩니다
+   * **CRX-Repository 디렉토리**: 기본 위치는 입니다.  `[AEM-Forms-installation-location]\crx-repository`
    * **AEM Forms 임시 디렉토리**:
       * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
       * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
@@ -1027,8 +1027,8 @@ UNIX 기반 시스템에서는 비루트 사용자가 다음 디렉토리를 임
    >[!NOTE]
    >
    > JBoss Application Server의 기본 설치 위치:
-   > * Windows:C:\Adobe\Adobe_Experience_Manager_Forms\jboss
-   > * Linux:/opt/jboss/.
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jboss/.
 
 
 1. 응용 프로그램 서버 서비스를 시작합니다.
@@ -1051,7 +1051,7 @@ Forms 서버 서비스로 문서를 보내고 받는 방법으로 감시 폴더�
 
 턴키 설치 방법을 사용하여 JBoss의 JEE에 AEM Forms을 설치할 때 JBoss 관리 콘솔 및 JMX 콘솔에 대한 액세스가 이미 구성(JMX 모니터링이 비활성화됨)되었습니다. 자체 JBoss Application Server를 사용하는 경우 JBoss Management Console 및 JMX 모니터링 콘솔에 대한 액세스가 안전한지 확인합니다. JMX 모니터링 콘솔에 대한 액세스는 jmx-invoker-service.xml이라는 JBoss 구성 파일에 설정됩니다.
 
-### 디렉터리 찾아보기 사용 안 함 {#disable-directory-browsing}
+### 디렉터리 검색 사용 안 함 {#disable-directory-browsing}
 
 Administration Console에 로그인한 후 URL을 수정하여 콘솔의 디렉토리 목록을 검색할 수 있습니다. 예를 들어 URL을 다음 URL 중 하나로 변경하면 디렉토리 목록이 나타날 수 있습니다.
 
@@ -1060,11 +1060,11 @@ https://<servername>:8080/adminui/secured/
 https://<servername>:8080/um/
 ```
 
-## WebLogic 특정 보안 권장 사항 {#weblogic-specific-security-recommendations}
+## WebLogic 관련 보안 권장 사항 {#weblogic-specific-security-recommendations}
 
 이 섹션에서는 JEE에서 AEM Forms을 실행할 때 WebLogic 9.1의 보안을 위해 애플리케이션 서버 구성 권장 사항을 제공합니다.
 
-### 디렉터리 찾아보기 사용 안 함 {#disable_directory_browsing-1}
+### 디렉터리 검색 사용 안 함 {#disable_directory_browsing-1}
 
 다음 예제와 같이 weblogic.xml 파일의 index-directories 속성을 `false`로 설정합니다.
 
@@ -1083,7 +1083,7 @@ https://<servername>:8080/um/
 
 이 섹션에서는 JEE에서 AEM Forms을 실행하는 WebSphere 보안을 위해 애플리케이션 서버 구성 권장 사항을 제공합니다.
 
-### 디렉터리 찾아보기 사용 안 함 {#disable_directory_browsing-2}
+### 디렉터리 검색 사용 안 함 {#disable_directory_browsing-2}
 
 ibm-web-ext.xml 파일의 `directoryBrowsingEnabled` 속성을 `false`로 설정합니다.
 
