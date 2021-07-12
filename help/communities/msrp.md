@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
-role: Administrator
+role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # MSRP - MongoDB 저장소 리소스 공급자 {#msrp-mongodb-storage-resource-provider}
 
-## MSRP {#about-msrp} 정보
+## MSRP 정보 {#about-msrp}
 
 AEM Communities이 MSRP를 일반 스토어로 사용하도록 구성된 경우, 동기화 또는 복제 없이 모든 작성자 및 게시 인스턴스에서 사용자 생성 컨텐츠(UGC)에 액세스할 수 있습니다.
 
@@ -49,7 +49,7 @@ AEM Communities이 MSRP를 일반 스토어로 사용하도록 구성된 경우,
 
 ## MongoDB 구성 {#mongodb-configuration}
 
-### MSRP {#select-msrp} 선택
+### MSRP 선택 {#select-msrp}
 
 [스토리지 구성 콘솔](srp-config.md)에서는 사용할 SRP 구현을 식별하는 기본 스토리지 구성을 선택할 수 있습니다.
 
@@ -64,19 +64,19 @@ AEM Communities이 MSRP를 일반 스토어로 사용하도록 구성된 경우,
 
    * **[!UICONTROL mongoDB URI]**
 
-      *기본값*:mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+      *기본값*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
    * **[!UICONTROL mongoDB 데이터베이스]**
 
-      *기본값*:커뮤니티
+      *기본값*: 커뮤니티
 
    * **[!UICONTROL mongoDB UGC 컬렉션]**
 
-      *기본값*:콘텐츠
+      *기본값*: 콘텐츠
 
    * **[!UICONTROL mongoDB 첨부 파일 컬렉션]**
 
-      *기본값*:첨부 파일
+      *기본값*: 첨부 파일
 
 * **[!UICONTROL SolrConfiguration]**
 
@@ -93,12 +93,12 @@ AEM Communities이 MSRP를 일반 스토어로 사용하도록 구성된 경우,
 URL독립형 모드에서 Solr와 통신하는 데 사용되는 URL입니다.
 SolrCloud 모드에서 실행 중인 경우 비워 둡니다.
 
-         *기본값*:https://127.0.0.1:8983/solr/
+         *기본값*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Solr]**
 CollectionSolr 컬렉션 이름입니다.
 
-         *기본값*:collection1
+         *기본값*: collection1
 
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다
 
@@ -114,7 +114,7 @@ CollectionSolr 컬렉션 이름입니다.
 
 복제본 세트로 작업하고 응용 프로그램과 MongoDB 인스턴스 간 연결을 정의하는 방법을 알아보려면 MongoDB의 [연결 문자열 URI 형식](https://docs.mongodb.org/manual/reference/connection-string/) 설명서를 참조하십시오.
 
-#### 복제본 세트 {#example-url-for-connecting-to-a-replica-set}에 연결하는 예제 Url
+#### 복제본 세트에 연결하는 예제 Url  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -145,7 +145,7 @@ MSRP로 구성된 이전 버전에서 업그레이드하는 경우 다음을 수
 1. MSRP 다시 색인화
 섹션 [MSRP 재인덱스 도구](#msrp-reindex-tool)를 참조하십시오.
 
-## 구성 {#publishing-the-configuration} 게시
+## 구성 게시 {#publishing-the-configuration}
 
 MSRP는 모든 작성자 및 게시 인스턴스에서 공용 스토어로 식별되어야 합니다.
 
@@ -164,11 +164,11 @@ MSRP는 모든 작성자 및 게시 인스턴스에서 공용 스토어로 식�
 * [사용자 동기화](sync.md)
 * [사용자 및 사용자 그룹 관리](users.md)
 
-## MSRP 재인덱스 도구 {#msrp-reindex-tool}
+## MSRP 재색인 도구 {#msrp-reindex-tool}
 
 새 구성 파일을 설치하거나 손상된 Solr 인덱스를 복구할 때 MSRP용 Solr를 다시 인덱싱하기 위한 HTTP 끝점이 있습니다.
 
-이 도구를 사용하는 MongoDB는 MSRP용 *truth*&#x200B;의 소스입니다.MongoDB에서만 백업을 수행할 수 있습니다.
+이 도구를 사용하는 MongoDB는 MSRP용 *truth*&#x200B;의 소스입니다. MongoDB에서만 백업을 수행할 수 있습니다.
 
 전체 UGC 트리는 *path *data 매개 변수에 의해 지정된 대로 다시 인덱싱되거나 지정된 하위 트리만 재인덱싱될 수 있습니다.
 
@@ -189,7 +189,7 @@ MSRP는 모든 작성자 및 게시 인스턴스에서 공용 스토어로 식�
 
 cURL -u *signin* -d *data* *reindex-url*
 
-*signin*  = administrator-id:password 예:admin:admin
+*signin*  = administrator-id:password 예: admin:admin
 
 *data*  = &quot;batchSize=*size*&amp;path=*path&quot;*
 
@@ -215,7 +215,7 @@ cURL -u *signin* -d *data* *reindex-url*
 curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo/' http://localhost:4503/services/social/datastore/mongo/reindex
 ```
 
-## MSRP {#how-to-demo-msrp} 데모 방법
+## MSRP 데모 방법 {#how-to-demo-msrp}
 
 데모 또는 개발 환경에 대한 MSRP를 설정하려면 [HowTo Setup MongoDB for Demo](demo-mongo.md)을 참조하십시오.
 
@@ -232,7 +232,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
    * [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) 노드를 포함하지 않습니다. 즉, 스토리지 공급자가 JSRP입니다.
    * srpc 노드가 있고 [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) 노드가 포함된 경우 기본 구성의 속성은 MSRP를 기본 공급자로 정의해야 합니다.
 
-### {#ugc-disappears-after-upgrade} 업그레이드 후 UGC가 사라짐
+### 업그레이드 후 UGC가 사라짐 {#ugc-disappears-after-upgrade}
 
 기존 AEM Communities 6.0 사이트에서 업그레이드하는 경우 AEM Communities 6.3으로 업그레이드한 후 기존 UGC를 [SRP](srp.md) API에 필요한 구조를 준수하도록 변환해야 합니다.
 
@@ -246,7 +246,7 @@ AEM Communities 6.1 이상으로 가져오기 위해 이전 버전의 AEM 소셜
 
 로그에 다음 오류가 표시되면 Solr 스키마 파일이 제대로 구성되지 않은 것입니다.
 
-#### JsonMappingException:정의되지 않은 필드 provider_id {#jsonmappingexception-undefined-field-provider-id}
+#### JsonMappingException: 정의되지 않은 필드 provider_id {#jsonmappingexception-undefined-field-provider-id}
 
 ```xml
 Caused by: com.fasterxml.jackson.databind.JsonMappingException: undefined field provider_id
@@ -261,7 +261,7 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 * XML 구성 파일이 올바른 솔루션 위치에 복사되었습니다.
 * 새 구성 파일이 기존 구성 파일을 교체한 후 솔러가 다시 시작되었습니다.
 
-### MongoDB에 대한 보안 연결이 실패함 {#secure-connection-to-mongodb-fails}
+### MongoDB에 대한 보안 연결이 실패했습니다. {#secure-connection-to-mongodb-fails}
 
 클래스 정의가 누락되어 MongoDB 서버에 보안 연결을 시도하지 못한 경우 공용 maven 저장소에서 사용할 수 있는 MongoDB 드라이버 번들 `mongo-java-driver`을 업데이트해야 합니다.
 
