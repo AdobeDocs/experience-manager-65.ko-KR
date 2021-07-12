@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
-role: Administrator
+role: Admin
 exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -30,7 +30,7 @@ AEM Communities에서 JSRP를 저장 옵션(기본값)으로 사용하는 경우
 
 ## 구성 {#configuration}
 
-### JSRP {#select-jsrp} 선택
+### JSRP 선택 {#select-jsrp}
 
 기본적으로 JSRP는 UGC의 저장소 옵션입니다.
 
@@ -38,7 +38,7 @@ AEM Communities에서 JSRP를 저장 옵션(기본값)으로 사용하는 경우
 
 작성 환경에서 스토리지 구성 콘솔에 도달하려면
 
-* 전역 탐색에서:**[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 저장소 구성]**
+* 전역 탐색에서: **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 저장소 구성]**
 
 * **[!UICONTROL JCR 저장소 리소스 공급자(JSRP)]** 선택
 
@@ -46,11 +46,11 @@ AEM Communities에서 JSRP를 저장 옵션(기본값)으로 사용하는 경우
 
 ![jsrp 구성](assets/jsrp-configuration.png)
 
-### 구성 {#publishing-the-configuration} 게시
+### 구성 게시 {#publishing-the-configuration}
 
 JSRP가 기본 구성이지만 게시 환경에서 동일한 구성이 설정되도록 하려면:
 
-* 전역 탐색에서:**[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]**
+* 전역 탐색에서: **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]**
 * **[!UICONTROL 트리 활성화]** > **[!UICONTROL 시작 경로]**&#x200B;를 선택합니다.
 
    * `/conf/global/settings/community/srpc/` 로 이동합니다.
@@ -81,7 +81,7 @@ JSRP가 기본 구성이지만 게시 환경에서 동일한 구성이 설정되
 
 버그가 아닙니다. JSRP의 특징은 게시 환경에 입력한 커뮤니티 컨텐츠가 게시 환경에서만 표시된다는 것입니다.
 
-### 게시 인스턴스 {#ugc-not-visible-on-publish-instance}에 UGC가 표시되지 않음
+### 게시 인스턴스에 UGC가 표시되지 않음 {#ugc-not-visible-on-publish-instance}
 
 단일 게시 인스턴스나 게시 클러스터가 배포되는 경우 JCR에 [UGC가 표시되지 않음](#ugc-not-visible-in-jcr)에 대한 지침을 따릅니다.
 
