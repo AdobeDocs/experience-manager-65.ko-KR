@@ -10,8 +10,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
-role: Administrator
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 6%
@@ -29,7 +29,7 @@ ht-degree: 6%
 >
 >[커뮤니티 사이트](/help/communities/sites-console.md), [커뮤니티 사이트 템플릿](/help/communities/sites.md), [커뮤니티 그룹 템플릿](/help/communities/tools-groups.md) 및 [커뮤니티 함수](/help/communities/functions.md)를 만드는 콘솔은 작성 환경에서만 사용할 수 있습니다.
 
-## 커뮤니티 함수 콘솔 {#community-functions-console}
+## 커뮤니티 기능 콘솔 {#community-functions-console}
 
 작성 환경의 커뮤니티 기능 콘솔에 연결하려면
 
@@ -37,7 +37,7 @@ ht-degree: 6%
 
 ![community-functions](assets/community-functions.png)
 
-## 미리 빌드된 함수 {#pre-built-functions}
+## 사전 빌드된 함수 {#pre-built-functions}
 
 다음은 AEM Communities과 함께 제공되는 기능에 대한 간략한 설명입니다. 각 기능에는 [커뮤니티 사이트 템플릿](/help/communities/sites.md)에 쉽게 통합되는 기능에 함께 연결된 커뮤니티 구성 요소가 들어 있는 하나 이상의 AEM 페이지가 포함되어 있습니다.
 
@@ -179,7 +179,7 @@ ht-degree: 6%
 선택을 취소하면 커뮤니티 사이트에 허용되는 네임스페이스를 하나 이상 선택할 수 있습니다.
 기본값이 선택되어 있습니다.
 
-### 추천 콘텐츠 함수 {#featured-content-function}
+### 주요 콘텐츠 함수 {#featured-content-function}
 
 주요 컨텐츠 함수는 [주요 컨텐츠 구성 요소](/help/communities/featured.md)가 구성되어 주석을 추가 및 삭제할 수 있도록 구성된 페이지입니다.
 
@@ -290,7 +290,7 @@ ht-degree: 6%
 
 리드 보드 함수는 [리드 보드 구성 요소](/help/communities/enabling-leaderboard.md)가 하나 있는 페이지입니다.
 
-**참고**:리드 보드 구성 요소는 커뮤니티 템플릿 ** 에서 커뮤니티 사이트를 만든 후 리드 보드 기능을 포함하는 추가 구성이 필요합니다. 커뮤니티 사이트에 대한 [점수 및 배지](/help/communities/implementing-scoring.md)의 구성에 따라 달라지는 리더보드 구성 요소의 [규칙](/help/communities/enabling-leaderboard.md#rules-tab)을 지정하십시오.
+**참고**: 리드 보드 구성 요소는 커뮤니티 템플릿 ** 에서 커뮤니티 사이트를 만든 후 리드 보드 기능을 포함하는 추가 구성이 필요합니다. 커뮤니티 사이트에 대한 [점수 및 배지](/help/communities/implementing-scoring.md)의 구성에 따라 달라지는 리더보드 구성 요소의 [규칙](/help/communities/enabling-leaderboard.md#rules-tab)을 지정하십시오.
 
 템플릿에 추가하면 기본 제목 및 URL 이름과 템플릿에 대한 기본 표시 설정을 지정하는 다음 대화 상자가 열립니다.
 
@@ -315,7 +315,7 @@ ht-degree: 6%
 
 ### 페이지 기능 {#page-function}
 
-페이지 함수는 커뮤니티 사이트의 기능에 연결된 빈 페이지를 커뮤니티 사이트에 추가합니다.로그인, 메뉴, 알림, 메시지, 테마 및 브랜딩. 컨텐츠가 [표준 AEM 작성 모드](/help/sites-authoring/editing-content.md)를 사용하여 페이지에 추가됩니다.
+페이지 함수는 커뮤니티 사이트의 기능에 연결된 빈 페이지를 커뮤니티 사이트에 추가합니다. 로그인, 메뉴, 알림, 메시지, 테마 및 브랜딩. 컨텐츠가 [표준 AEM 작성 모드](/help/sites-authoring/editing-content.md)를 사용하여 페이지에 추가됩니다.
 
 템플릿에 추가되면 유일한 구성은 [제목 및 URL 설정](#title-and-url-settings)에 대한 것입니다.
 
