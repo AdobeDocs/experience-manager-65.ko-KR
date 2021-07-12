@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 feature: Brand Portal
-role: Administrator
+role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2086'
 ht-degree: 50%
 
 ---
 
-# Brand Portal로 AEM Assets 구성 {#configure-integration-65}
+# Brand Portal에서 AEM Assets 구성 {#configure-integration-65}
 
 Adobe Experience Manager Assets Brand Portal을 사용하면 Adobe Experience Manager Assets에서 승인한 브랜드 자산을 Brand Portal에 게시하고 Brand Portal 사용자에게 배포할 수 있습니다.
 
@@ -41,8 +41,8 @@ AEM Assets은 Brand Portal 개발자 콘솔을 통해 Brand Portal으로 구성�
 
 이 도움말은 다음 두 가지 사용 사례에 대해 설명합니다.
 
-* [새 구성](#configure-new-integration-65):새 Brand Portal 사용자이고 Brand Portal으로 AEM Assets 작성자 인스턴스를 구성하려는 경우 Adobe 개발자 콘솔을 통해 구성을 만들 수 있습니다.
-* [구성 업그레이드](#upgrade-integration-65):기존 OAuth 게이트웨이에 대한 구성이 있는 기존 Brand Portal 사용자인 경우 기존 구성을 삭제하고 Adobe 개발자 콘솔을 통해 새 구성을 만드십시오.
+* [새 구성](#configure-new-integration-65): 새 Brand Portal 사용자이고 Brand Portal으로 AEM Assets 작성자 인스턴스를 구성하려는 경우 Adobe 개발자 콘솔을 통해 구성을 만들 수 있습니다.
+* [구성 업그레이드](#upgrade-integration-65): 기존 OAuth 게이트웨이에 대한 구성이 있는 기존 Brand Portal 사용자인 경우 기존 구성을 삭제하고 Adobe 개발자 콘솔을 통해 새 구성을 만드십시오.
 
 제공된 정보는 이 도움말을 읽는 사람이 다음 기술을 잘 알고 있다는 가정을 기반으로 합니다.
 
@@ -76,7 +76,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 세부 지침은 다음을 참조하십시오.
 
-* [AEM 6.5 서비스 팩 릴리스 노트](https://docs.adobe.com/content/help/ko/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+* [AEM 6.5 서비스 팩 릴리스 노트](https://docs.adobe.com/content/help/ko-KR/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **지원 센터에 문의**&#x200B;하십시오.
 
@@ -254,7 +254,7 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
 
 1. IMS 계정에 대한 **[!UICONTROL 제목]**&#x200B;을 지정합니다.
 
-   **[!UICONTROL 인증 서버]** 필드에서 URL을 지정합니다.[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
+   **[!UICONTROL 인증 서버]** 필드에서 URL을 지정합니다. [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
    [서비스 계정(JWT) 연결](#createnewintegration)을 만드는 동안 복사한 **[!UICONTROL API 키]** 필드, **[!UICONTROL 클라이언트 암호]** 및 **[!UICONTROL 페이로드]**(JWT 페이로드)에 클라이언트 ID를 지정합니다.
 
@@ -342,7 +342,7 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
 이제 다음을 수행할 수 있습니다.
 
 * [AEM Assets의 자산을 Brand Portal에 게시](../assets/brand-portal-publish-assets.md)
-* [Brand Portal의 자산을 AEM Assets에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Brand Portal의 자산 소싱
+* [Brand Portal의 자산을 AEM Assets에 게시](https://docs.adobe.com/content/help/ko/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Brand Portal의 자산 소싱
 * [AEM Assets의 폴더를 Brand Portal에 게시](../assets/brand-portal-publish-folder.md)
 * [AEM Assets의 컬렉션을 Brand Portal에 게시](../assets/brand-portal-publish-collection.md)
 * [사전 설정, 스키마 및 패싯을 Brand Portal에 게시](https://docs.adobe.com/content/help/ko-KR/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
