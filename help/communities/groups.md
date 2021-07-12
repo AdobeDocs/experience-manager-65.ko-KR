@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
-role: Administrator
+role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -32,9 +32,9 @@ ht-degree: 2%
 
 커뮤니티 그룹의 다른 패싯은 다음과 같습니다.
 
-* **만들기**:작성자 및 선택적으로 게시 인스턴스에 새 그룹을 만들 수 있습니다.
-* **컨트롤**:그룹은 공개되거나 비밀일 수 있습니다.
-* **중첩**:그룹은 0개 이상의 그룹을 포함할 수 있습니다.
+* **만들기**: 작성자 및 선택적으로 게시 인스턴스에 새 그룹을 만들 수 있습니다.
+* **컨트롤**: 그룹은 공개되거나 비밀일 수 있습니다.
+* **중첩**: 그룹은 0개 이상의 그룹을 포함할 수 있습니다.
 
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
@@ -53,7 +53,7 @@ ht-degree: 2%
 그룹 콘솔에 액세스하려면
 
 * 작성자에서 관리자 권한으로 로그인합니다.
-* 전역 탐색에서:**[!UICONTROL 커뮤니티]** > **[!UICONTROL 사이트]**
+* 전역 탐색에서: **[!UICONTROL 커뮤니티]** > **[!UICONTROL 사이트]**
 * 기존 커뮤니티 사이트 폴더를 선택하여 엽니다.
 * 폴더 내에서 커뮤니티 사이트의 인스턴스를 선택합니다.
 
@@ -72,7 +72,7 @@ ht-degree: 2%
 
 * **그룹 만들기** 단추를 선택합니다.
 
-### 1단계:커뮤니티 그룹 템플릿 {#step-community-group-template}
+### 1단계: 커뮤니티 그룹 템플릿 {#step-community-group-template}
 
 ![다국어 커뮤니티 그룹](assets/multi-lingual-group.png)
 
@@ -107,7 +107,7 @@ ht-degree: 2%
 
    드롭다운을 사용하여 사용 가능한 [커뮤니티 그룹 템플릿](/help/communities/tools.md)을(를) 선택합니다.
 
-### 2단계:디자인 {#step-design}
+### 2단계: 디자인 {#step-design}
 
 ### 커뮤니티 그룹 테마 {#community-group-theme}
 
@@ -138,7 +138,7 @@ ht-degree: 2%
    * 브라우저의 너비보다 작으면 이미지가 가로로 반복됩니다.
    * 브라우저의 너비보다 큰 경우 이미지가 잘리는 것으로 나타납니다.
 
-### 3단계:설정 {#step-settings}
+### 3단계: 설정 {#step-settings}
 
 **중재**
 
@@ -188,7 +188,7 @@ ht-degree: 2%
 
 ![축소판 이미지](assets/thumbnail-image.png)
 
-### 4단계:그룹 {#step-create-group} 만들기
+### 4단계: 그룹 만들기 {#step-create-group}
 
 ![community-create-group](assets/community-create-group.png)
 
@@ -202,7 +202,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->그룹은 [1단계에서 지정한 대로 모든 언어로 생성됩니다.각 커뮤니티 사이트의 커뮤니티 그룹 콘솔에서 사용 가능한 추가 커뮤니티 그룹 언어 의 커뮤니티 그룹 템플릿](/help/communities/groups.md#step-community-group-template).
+>그룹은 [1단계에서 지정한 대로 모든 언어로 생성됩니다. 각 커뮤니티 사이트의 커뮤니티 그룹 콘솔에서 사용 가능한 추가 커뮤니티 그룹 언어 의 커뮤니티 그룹 템플릿](/help/communities/groups.md#step-community-group-template).
 
 ## 작성자 그룹 컨텐츠 {#author-group-content}
 
@@ -261,7 +261,7 @@ ht-degree: 2%
 >
 >[페이지 함수](/help/communities/functions.md#page-function)와 같은 다른 모든 함수는 먼저 포함되고 나열되어야 합니다.
 
-**예:하위 커뮤니티(그룹) 구조에 달력 함수 추가**
+**예: 하위 커뮤니티(그룹) 구조에 달력 함수 추가**
 
 ![community-group-add-calendar](assets/community-group-add-calendar.png)
 
@@ -286,7 +286,7 @@ ht-degree: 2%
 
 [THUMBNAIL](#thumbnail) 패널을 사용하면 작성 환경의 커뮤니티 사이트 그룹 콘솔뿐만 아니라 게시 환경의 사이트 방문자에 대한 커뮤니티 그룹을 나타내기 위해 이미지를 업로드할 수 있습니다.
 
-## 그룹 {#publish-the-group} 게시
+## 그룹 게시 {#publish-the-group}
 
 ![publish-site](assets/publish-site.png)
 
@@ -302,7 +302,7 @@ ht-degree: 2%
 >
 >커뮤니티 사이트 및 중첩 그룹은 하향식으로 게시해야 합니다.
 
-## 그룹 {#delete-the-group} 삭제
+## 그룹 삭제 {#delete-the-group}
 
 ![아이콘 삭제](assets/deleteicon.png)
 
