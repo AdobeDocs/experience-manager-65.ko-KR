@@ -4,20 +4,20 @@ seo-title: Workbench 설치
 description: Workbench를 설치합니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-role: Administrator
+role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 0%
 
 ---
 
-# Workbench {#install-workbench} 설치
+# Workbench 설치 {#install-workbench}
 
 이 문서에서는 AEM Forms Workbench 설치 및 구성에 대한 지침을 제공합니다. 설치 프로그램은 Forms Designer도 설치합니다.
 
-## 누가 이 문서를 읽어야 합니까?{#who-should-read-this-doc}
+## 누가 이 문서를 읽어야 합니까? {#who-should-read-this-doc}
 
 이 문서는 Workbench 설치, 구성, 관리 또는 배포를 담당하는 관리자 또는 개발자를 위한 것입니다. 업그레이드된 AEM Forms 프로세스를 지원하도록 시스템을 구성하는 데 필요한 정보가 포함되어 있습니다. 제공된 정보는 이 문서를 읽는 사람이 Microsoft® Windows® 운영 체제를 잘 알고 있다는 가정을 기반으로 합니다.
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 >
 >Flex Workspace는 AEM Forms에서 더 이상 사용되지 않습니다. AEM Forms 릴리스에서 사용할 수 있습니다.
 
-## {#before-you-install} 설치 전
+## 설치하기 전에 {#before-you-install}
 
 ### Workbench 설치 개요 {#workbench-installation-overview}
 
@@ -76,7 +76,7 @@ Workbench는 개발자와 양식 작성자가 자동화된 비즈니스 프로�
 ### 최소 하드웨어 및 소프트웨어 요구 사항 {#minimum-hardware-software-requirements}
 
 ****
-Workbench최소 요구 사항은 다음과 같습니다.설치 디스크 공간:
+Workbench최소 요구 사항은 다음과 같습니다. 설치 디스크 공간:
 * 680MB(Workbench 전용)
 * Workbench, Designer 및 샘플 어셈블리를 완전히 설치하려면 단일 드라이브에 2.15GB가 있습니다.
 * 임시 설치 디렉터리의 경우 400MB - 사용자 \temp 디렉터리에 200MB, Windows 임시 디렉터리에 200MB입니다.
@@ -85,7 +85,7 @@ Workbench최소 요구 사항은 다음과 같습니다.설치 디스크 공간:
 >
 >이러한 모든 위치가 단일 드라이브에 있는 경우 설치 중에 1.5GB의 공간이 있어야 합니다. 설치가 완료되면 임시 디렉토리에 복사된 파일이 삭제됩니다.
 
-* 하드웨어 요구 사항:Intel® Pentium® 4 또는 AMD 동급 프로세서 1GHz 프로세서
+* 하드웨어 요구 사항: Intel® Pentium® 4 또는 AMD 동급 프로세서 1GHz 프로세서
 * Java™ Runtime Environment(JRE) 7.0 은 51 이상을 업데이트하여 7.0으로 업데이트합니다.
 * 최소 1024 X 768픽셀 이상(16비트 색상 이상) 모니터 해상도
 * AEM Forms 서버에 대한 TCP/IPv4 또는 TCP/IPv6 네트워크 연결입니다.
@@ -125,19 +125,19 @@ Workbench 6.4용 Designer 6.4.x 및 Workbench 6.5용 Designer 6.5.0.x와 같은 
  </tbody>
 </table>
 
-### Windows 10에서 디자이너(독립형)를 제거하려면 {#uninstall-designer-standalone-windows10}
+### Windows 10에서 Designer(독립형)를 제거하려면 {#uninstall-designer-standalone-windows10}
 
 1. **Campaign 컨트롤 패널 > 프로그램 > 프로그램 및 기능**&#x200B;으로 이동합니다.
 1. 현재 설치된 프로그램 목록에서 **Adobe 디자이너**&#x200B;를 선택합니다.
 1. **제거**&#x200B;를 클릭한 다음 **예**&#x200B;를 클릭합니다.
 
-## Workbench {#installing-workbench} 설치
+## Workbench 설치 {#installing-workbench}
 
 이 장에서는 Workbench 설치 방법에 대해 설명합니다.
 
-### Workbench {#installing-and-running-workbench} 설치 및 실행
+### Workbench 설치 및 실행 {#installing-and-running-workbench}
 
-Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요한 소프트웨어 및 하드웨어가 포함되어 있는지 확인해야 합니다(섹션 참조:**설치하기 전에**).
+Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요한 소프트웨어 및 하드웨어가 포함되어 있는지 확인해야 합니다(섹션 참조: **설치하기 전에**).
 
 **Workbench를 설치하고 실행하려면**
 
@@ -171,15 +171,15 @@ Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요�
 1. 설치 요약을 검토합니다. AEM Forms Workbench 시작 을 선택하여 Workbench를 실행하고 다음 을 클릭합니다.
 1. 릴리스 노트를 검토하고 완료를 클릭합니다.
 1. 이제 컴퓨터에 다음 항목이 설치됩니다.
-   * **Workbench**:시작 메뉴에서 Workbench를 실행하려면 바로 가기 폴더를 저장하도록 선택한 경우 모든 프로그램 > AEM Forms > 워크벤치를 선택합니다. 자세한 내용은   <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Workbench</a> 사용 설명서를 참조하십시오.
-   * **디자이너**:Workbench 내에서 디자이너에 액세스할 수 있습니다. 자세한 내용은 <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">디자이너 도움말</a>의 시작 항목을 참조하십시오.
-   * **AEM Forms SDK**:SDK 사용에 대한 자세한 내용은  <a href="http://www.adobe.com/go/learn_aemforms_programming_65">AEM Forms을 사용하여 프로그래밍</a>을 참조하십시오.
+   * **Workbench**: 시작 메뉴에서 Workbench를 실행하려면 바로 가기 폴더를 저장하도록 선택한 경우 모든 프로그램 > AEM Forms > 워크벤치를 선택합니다. 자세한 내용은   <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Workbench</a> 사용 설명서를 참조하십시오.
+   * **디자이너**: Workbench 내에서 디자이너에 액세스할 수 있습니다. 자세한 내용은 <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">디자이너 도움말</a>의 시작 항목을 참조하십시오.
+   * **AEM Forms SDK**: SDK 사용에 대한 자세한 내용은  <a href="http://www.adobe.com/go/learn_aemforms_programming_65">AEM Forms을 사용하여 프로그래밍</a>을 참조하십시오.
 
-## 업그레이드 프로세스 {#upgrading-processes}
+## 프로세스 업그레이드 {#upgrading-processes}
 
 업그레이드 마법사를 사용하여 JEE의 AEM Forms 프로세스를 AEM Forms 응용 프로그램으로 업그레이드할 수 있습니다. 자세한 내용은 Workbench 도움말의 이전 객체 설명서 업그레이드 를 참조하십시오.
 
-### 서버 {#configuring-and-logging-server} 구성 및 로그인
+### 서버 구성 및 로그인 {#configuring-and-logging-server}
 
 Workbench를 사용하려면 일반적으로 별도의 컴퓨터에서 실행되는 AEM Forms 인스턴스가 있어야 합니다. AEM Forms에 로그인하려면 사용자 이름 및 암호와 서버 위치에 대한 세부 사항이 있어야 합니다.
 
@@ -191,7 +191,7 @@ Workbench를 사용하려면 일반적으로 별도의 컴퓨터에서 실행되
 
 기본적으로 Workbench는 활동 또는 비활동과 관계없이 2시간 후에 시간 초과됩니다. 시간 초과 설정을 편집하려면 <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">관리 콘솔 도움말</a>에서 &quot;사용자 관리 구성 > 고급 시스템 속성 구성&quot;을 참조하십시오.
 
-### HTTPS {#configuring-workbench-to-connect-over-HTTPS}에서 연결하도록 Workbench 구성
+### HTTPS를 통해 연결하도록 Workbench 구성 {#configuring-workbench-to-connect-over-HTTPS}
 
 HTTPS를 통해 Workbench를 AEM Forms 서버에 연결하려면 공개 키를 발급한 CA(인증 기관)가 Workbench에서 신뢰할 수 있는 것으로 인식되는지 확인해야 합니다. 인증서가 신뢰할 수 있는 소스에서 온 것으로 인식되지 않으면 [Workbench_HOME]/workbench/jre/lib/security 디렉토리에 있는 캐시 파일을 업데이트해야 합니다.
 
@@ -227,19 +227,19 @@ HTTPS를 통해 Workbench를 AEM Forms 서버에 연결하려면 공개 키를 �
 
 Forms 생성기 또는 출력으로 특정 양식 서식 파일의 캐시 항목을 검색하거나 업데이트할 때 몇 가지 키 값을 사용하여 액세스할 특정 캐시 항목을 찾습니다.
 
-* **템플릿 파일 이름**:캐시된 양식의 기본 고유 식별자로 사용되는 템플릿의 위치 및 파일 이름입니다.
-* **타임스탬프**:템플릿 파일에 양식의 마지막 업데이트 시간을 확인하는 데 사용되는 타임스탬프가 포함되어 있습니다.
-* **템플릿 UUID**:디자이너는 각 템플릿에 양식 및 해당 버전에 대한 고유 식별자(UUID)를 삽입합니다. 양식이 업데이트될 때마다 포함된 UUID가 업데이트됩니다. 예를 들어 XDP 템플릿에 다음 컨텐츠가 표시될 수 있습니다.
+* **템플릿 파일 이름**: 캐시된 양식의 기본 고유 식별자로 사용되는 템플릿의 위치 및 파일 이름입니다.
+* **타임스탬프**: 템플릿 파일에 양식의 마지막 업데이트 시간을 확인하는 데 사용되는 타임스탬프가 포함되어 있습니다.
+* **템플릿 UUID**: 디자이너는 각 템플릿에 양식 및 해당 버전에 대한 고유 식별자(UUID)를 삽입합니다. 양식이 업데이트될 때마다 포함된 UUID가 업데이트됩니다. 예를 들어 XDP 템플릿에 다음 컨텐츠가 표시될 수 있습니다.
 
    `<?xml version="1.0" encoding="UTF-8"?>`
    `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
 
-* **렌더링 옵션**:렌더링된 양식 캐시 내에서 캐시 컨텐츠는 각 고유한 렌더링 옵션 세트에 대해 별도로 저장됩니다.
+* **렌더링 옵션**: 렌더링된 양식 캐시 내에서 캐시 컨텐츠는 각 고유한 렌더링 옵션 세트에 대해 별도로 저장됩니다.
 
 
 Forms 서비스는 파일 이름 또는 저장소 위치를 참조하거나 또는 메모리의 XML 개체로 값별로 템플릿을 수신합니다.
-* **참조에 의해 전달된 템플릿**:컨텐츠 루트와 양식 이름을 사용합니다. 이 방법을 사용하여 모든 요청에서 파일 이름이 다른 고유한 템플릿이 전달되면 디스크 캐시가 지속적으로 확장되어 다시 사용되지 않습니다. 이를 방지하려면 동일한 파일 이름으로 고유한 템플릿을 전달하여 모든 요청에 대해 동일한 캐시가 업데이트되도록 해야 합니다.
-* **값으로 전달된 템플릿**:inDataDoc 매개 변수를 사용하여 데이터와 함께 전달된 템플릿 바이트를 사용합니다. 이 방법을 사용하여 UUID가 다른 고유한 템플릿을 전달하면 디스크 캐시가 지속적으로 확장되어 재사용되지 않습니다. 이를 방지하려면 UUID 속성을 모든 템플릿에서 제거하여 템플릿에 대한 캐시가 만들어지지 않도록 해야 합니다. 또는 null이 아닌 동일한 UUID를 전달하면 캐시 개체를 만들 수 있지만 각 요청마다 동일한 캐시가 업데이트되도록 합니다.
+* **참조에 의해 전달된 템플릿**: 컨텐츠 루트와 양식 이름을 사용합니다. 이 방법을 사용하여 모든 요청에서 파일 이름이 다른 고유한 템플릿이 전달되면 디스크 캐시가 지속적으로 확장되어 다시 사용되지 않습니다. 이를 방지하려면 동일한 파일 이름으로 고유한 템플릿을 전달하여 모든 요청에 대해 동일한 캐시가 업데이트되도록 해야 합니다.
+* **값으로 전달된 템플릿**: inDataDoc 매개 변수를 사용하여 데이터와 함께 전달된 템플릿 바이트를 사용합니다. 이 방법을 사용하여 UUID가 다른 고유한 템플릿을 전달하면 디스크 캐시가 지속적으로 확장되어 재사용되지 않습니다. 이를 방지하려면 UUID 속성을 모든 템플릿에서 제거하여 템플릿에 대한 캐시가 만들어지지 않도록 해야 합니다. 또는 null이 아닌 동일한 UUID를 전달하면 캐시 개체를 만들 수 있지만 각 요청마다 동일한 캐시가 업데이트되도록 합니다.
 
 캐시가 지속적으로 늘어나지 않도록 하려면 새로운 AEM Forms API, renderHTMLForm2 및 renderPDFForm2를 사용하여 동적으로 생성된 템플릿을 렌더링하기 위해 다음 요소를 고려하십시오.
 
@@ -256,11 +256,11 @@ UUID 및 컨텐츠 루트가 캐시 키로 사용되는 패시화된 문서의 �
    * 동적으로 생성된 모든 템플릿에서 UUID를 제거하거나 동일한 UUID를 전달합니다.
    * 템플릿 바이트 또는 디스크의 동일한 파일 이름에서 문서를 생성합니다.
 
-### Workbench {#uninstalling-workbench} 제거
+### Workbench 제거 {#uninstalling-workbench}
 
 Campaign 컨트롤 패널에서 프로그램 추가 또는 제거 기능을 사용하여 설치 해제 기능을 시작합니다. Workbench 및 Designer 응용 프로그램에는 별도의 제거 프로그램이 있습니다.
 
-## AEM Forms XDC 편집기 구성{#configuring-aem-forms-xdc-editor}
+## AEM Forms XDC 편집기 구성 {#configuring-aem-forms-xdc-editor}
 
 네트워크 프린터 관리자는 XDC 편집기를 사용하여 XML Forms XDC(Architecture Device Configuration) 파일을 만들고 수정할 수 있습니다. XDC 파일은 프린터 언어 또는 용지 크기와 트레이 위치 간의 상관 관계 등과 같은 프린터 기능을 설명합니다.
 
