@@ -6,9 +6,9 @@ seo-description: OSGi 서버에서 AEM Forms 보안을 위한 권장 사항 및 
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
-role: Administrator
+role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 0%
@@ -38,11 +38,11 @@ AEM Forms은 사용자 지정이 매우 편리하며 다양한 환경에서 작�
 
 전송 계층 보안 취약점은 인터넷 연결 또는 인트라넷 관련 응용 프로그램 서버에 대한 첫 번째 위협 중 하나입니다. 이 섹션에서는 이러한 취약점에 대해 네트워크에서 호스트를 강화시키는 프로세스를 설명합니다. 네트워크 세그멘테이션, 전송 제어 프로토콜/인터넷 프로토콜(TCP/IP) 스택 강화 및 호스트 보호를 위한 방화벽 사용에 대해 설명합니다.
 
-### 열린 끝점 제한 {#limit-open-endpoints}
+### 열린 끝점 제한  {#limit-open-endpoints}
 
 조직에는 최종 사용자와 AEM Forms 게시 팜 간의 액세스를 제한하는 외부 방화벽이 있을 수 있습니다. 조직에는 게시 팜과 조직 요소 내의 다른 액세스(예: 작성자 인스턴스, 처리 인스턴스, 데이터베이스) 간을 제한하는 내부 방화벽이 있을 수도 있습니다. 방화벽이 최종 사용자 및 조직 요소 내의 제한된 수의 AEM Forms URL에 액세스할 수 있도록 허용합니다.
 
-#### 외부 방화벽 구성 {#configure-external-firewall}
+#### 외부 방화벽 구성  {#configure-external-firewall}
 
 특정 AEM Forms URL이 인터넷에 액세스할 수 있도록 외부 방화벽을 구성할 수 있습니다. 적응형 양식, HTML5, 서신 관리 편지를 작성하거나 AEM Forms 서버에 로그인하려면 다음 URL에 대한 액세스 권한이 필요합니다.
 
@@ -96,7 +96,7 @@ AEM Forms은 사용자 지정이 매우 편리하며 다양한 환경에서 작�
  </tbody>
 </table>
 
-#### 내부 방화벽 구성 {#configure-internal-firewall}
+#### 내부 방화벽 구성  {#configure-internal-firewall}
 
 특정 AEM Forms 구성 요소(예: 작성자 인스턴스, 처리 인스턴스, 데이터베이스)가 게시 팜 및 토폴로지 다이어그램에 언급된 기타 내부 구성 요소와 통신할 수 있도록 내부 방화벽을 구성할 수 있습니다.
 
@@ -121,7 +121,7 @@ AEM Forms은 사용자 지정이 매우 편리하며 다양한 환경에서 작�
  </tbody>
 </table>
 
-#### 저장소 권한 및 ACL(액세스 제어 목록) {#setup-repository-permissions-and-access-control-lists-acls} 설정
+#### 저장소 권한 및 ACL(액세스 제어 목록) 설정 {#setup-repository-permissions-and-access-control-lists-acls}
 
 기본적으로 게시 노드에서 사용할 수 있는 자산은 모든 사람이 액세스할 수 있습니다. 모든 자산에 대해 읽기 전용 액세스가 활성화됩니다. 익명 액세스를 활성화해야 합니다. 인증된 사용자에게만 양식 보기를 제한하고 액세스를 제출하려는 경우, 인증된 사용자만 게시 노드에서 사용할 수 있는 자산에 대해 읽기 전용 액세스 권한을 갖도록 하려면 일반 그룹을 사용하십시오. 다음 위치/디렉토리에는 경화가 필요한 양식 자산이 포함되어 있습니다(인증된 사용자에 대한 읽기 전용 액세스).
 
@@ -129,17 +129,17 @@ AEM Forms은 사용자 지정이 매우 편리하며 다양한 환경에서 작�
 * /etc.clientlibs/fd/&amp;ast;
 * /libs/fd/&amp;ast;
 
-## 양식 데이터를 안전하게 처리 {#securely-handle-forms-data}
+## 양식 데이터를 안전하게 처리  {#securely-handle-forms-data}
 
 AEM Forms은 사전 정의된 위치 및 임시 폴더에 데이터를 저장합니다. 무단 사용을 방지하기 위해 데이터를 보호해야 합니다.
 
-### 임시 폴더 {#setup-periodic-cleanup-of-temporary-folder}의 주기적 정리 설정
+### 임시 폴더의 주기적 정리 설정 {#setup-periodic-cleanup-of-temporary-folder}
 
 첨부 파일, 확인 또는 미리 보기 구성 요소에 대한 양식을 구성할 때 해당 데이터는 /tmp/fd/ 의 게시 노드에 저장됩니다. 데이터는 정기적으로 삭제됩니다. 기본 데이터 제거 작업을 수정하여 더 적극적이 될 수 있습니다. 데이터 제거로 예약된 작업을 수정하려면 AEM Web Console을 열고 AEM Forms 임시 저장소 정리 작업을 열고 Cron 표현식을 수정합니다.
 
 위에 언급된 시나리오에서는 데이터가 인증된 사용자에 대해서만 저장됩니다. 또한 데이터는 ACL(액세스 제어 목록)으로 보호됩니다. 따라서 데이터 삭제를 수정하는 것은 정보를 보호하는 추가 단계입니다.
 
-### 양식 포털 제출 작업에 의해 저장된 보안 데이터 {#secure-data-saved-by-forms-portal-submit-action}
+### Forms 포털 제출 작업에 의해 저장된 보안 데이터 {#secure-data-saved-by-forms-portal-submit-action}
 
 기본적으로 적응형 양식의 forms 포털 제출 작업은 게시 노드의 로컬 저장소에 데이터를 저장합니다. 데이터는 /content/forms/fp에 저장됩니다. **게시 인스턴스에 데이터를 저장하지 않는 것이 좋습니다.**
 
@@ -147,7 +147,7 @@ AEM Forms은 사전 정의된 위치 및 임시 폴더에 데이터를 저장합
 
 AEM DS 설정 서비스에 대한 처리 서버의 자격 증명을 사용하여 게시 노드에서 처리 서버로 데이터를 게시합니다. 처리 서버 리포지토리에 대한 읽기-쓰기 액세스 권한이 있는 관리자가 아닌 제한된 사용자의 자격 증명을 사용하는 것이 좋습니다. 자세한 내용은 초안 및 제출 [에 대한 저장소 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md)을 참조하십시오.
 
-### 양식 데이터 모델(FDM) {#secure-data-handled-by-form-data-model-fdm}에 의해 처리된 보안 데이터
+### FDM(양식 데이터 모델)으로 처리된 보안 데이터 {#secure-data-handled-by-form-data-model-fdm}
 
 FDM(양식 데이터 모델)에 대한 데이터 소스를 구성하려면 필요한 최소 권한이 있는 사용자 계정을 사용합니다. 관리 계정을 사용하면 권한이 없는 사용자에게 메타데이터 및 스키마 엔티티에 대한 오픈 액세스 권한을 제공할 수 있습니다.\
 또한 데이터 통합에서는 FDM 서비스 요청을 승인하는 방법을 제공합니다. 사전 및 사후 실행 인증 메커니즘을 삽입하여 요청의 유효성을 검사할 수 있습니다. 양식을 미리 작성하고, 양식을 제출하고, 규칙을 통해 서비스를 호출하는 동안 서비스 요청이 생성됩니다.
