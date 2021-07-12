@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
-role: Administrator
+role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2803'
 ht-degree: 1%
 
 ---
 
-# facebook 및 Twitter {#social-login-with-facebook-and-twitter}을 사용하여 소셜 로그인
+# facebook 및 Twitter을 사용하여 소셜 로그인 {#social-login-with-facebook-and-twitter}
 
 소셜 로그인은 사이트 방문자에게 Facebook 또는 Twitter 계정으로 로그인하는 옵션을 제공하는 기능입니다. 따라서 AEM 구성원 프로필에 허용된 Facebook 또는 Twitter 데이터를 포함합니다.
 
@@ -87,7 +87,7 @@ facebook 애플리케이션을 만들려면 [https://developers.facebook.com/app
       * *사이트 URL*&#x200B;에 `  https://<server>:<port>.`를 입력합니다.
       * *표시 이름*&#x200B;에 Facebook 연결 서비스의 제목으로 사용할 제목을 입력합니다.
       * *Category*&#x200B;의 경우 *Apps for Pages*&#x200B;를 선택하는 것이 좋지만 어떤 것이든 될 수 있습니다.
-      * *제품 추가:Facebook 로그인*
+      * *제품 추가: Facebook 로그인*
       * *유효한 OAuth 리디렉션 URIs*&#x200B;에 대해 `  https://<server>:<port>.`를 입력합니다
 
 >[!NOTE]
@@ -96,7 +96,7 @@ facebook 애플리케이션을 만들려면 [https://developers.facebook.com/app
 
 애플리케이션이 만들어지면 **[!UICONTROL 앱 ID]** 및 **[!UICONTROL 앱 암호]** 설정을 찾습니다. 이 정보는 [Facebook 클라우드 서비스](#createafacebookcloudservice)를 구성하는 데 필요합니다.
 
-### facebook Connect Cloud Service {#create-a-facebook-connect-cloud-service} 만들기
+### facebook Connect Cloud Service 만들기 {#create-a-facebook-connect-cloud-service}
 
 클라우드 서비스 구성을 만들어 인스턴스화된 [Granite OAuth 응용 프로그램 및 Provider](#adobe-granite-oauth-application-and-provider) Adobe은 Facebook 응용 프로그램 및 새 사용자가 추가되는 구성원 그룹을 식별합니다.
 
@@ -121,8 +121,8 @@ facebook 애플리케이션을 만들려면 [https://developers.facebook.com/app
    * **[!UICONTROL 앱 ID/API 키]** (*필수*) Facebook 앱용  ***앱*** ID를 입력합니다. 대화 상자에서 만든 [Granite OAuth 응용 프로그램 Adobe 및 Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) 인스턴스를 식별합니다.
    * **[!UICONTROL 앱 암호]** (*필수*)  ***Facebook*** 앱의 앱 암호를 입력합니다.
    * **[!UICONTROL 사용자]** 만들기 이 확인란을 선택하면 Facebook 계정으로 로그인하면 AEM 사용자 항목이 만들어지고 선택한 사용자 그룹에 구성원으로 추가됩니다.  기본값이 선택되어 있습니다(적극 권장).
-   * **[!UICONTROL 마스크 사용자 ID]**:선택을 취소합니다.
-   * **[!UICONTROL 범위 전자 메일]**:사용자의 이메일 id를 Facebook에서 가져와야 합니다.
+   * **[!UICONTROL 마스크 사용자 ID]**: 선택을 취소합니다.
+   * **[!UICONTROL 범위 전자 메일]**: 사용자의 이메일 id를 Facebook에서 가져와야 합니다.
    * **[!UICONTROL 사용자 그룹에]** 추가사용자 그룹 추가를 선택하여 사용자가 추가될 커뮤니티 사이트에 대해 하나 이상의  [구성원 ](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) 그룹을 선택합니다.
 
    >[!NOTE]
@@ -212,7 +212,7 @@ AEM Communities 공급자는 [Adobe Granite OAuth 응용 프로그램 및 Provid
 
 ## Twitter 로그인 {#twitter-login}
 
-### twitter 앱 {#create-a-twitter-app} 만들기
+### twitter 앱 만들기 {#create-a-twitter-app}
 
 twitter 소셜 로그인을 활성화하려면 구성된 Twitter 응용 프로그램이 필요합니다.
 
@@ -237,18 +237,18 @@ twitter 소셜 로그인을 활성화하려면 구성된 Twitter 응용 프로�
 
 twitter 애플리케이션 관리의 권한 섹션에서 다음을 수행합니다.
 
-* **[!UICONTROL 액세스]**:선택  `Read only`.
+* **[!UICONTROL 액세스]**: 선택  `Read only`.
 
    * 다른 옵션은 지원되지 않습니다
 
-* **[!UICONTROL 추가 권한]**:선택 사항입니다  `Request email addresses from users`.
+* **[!UICONTROL 추가 권한]**: 선택 사항입니다  `Request email addresses from users`.
 
    * 선택하지 않으면 AEM의 사용자 프로필에 이메일 주소가 포함되지 않습니다.
    * Twitter의 지침은 수행할 추가 단계를 기록합니다.
 
 소셜 로그인에 대한 유일한 REST 요청은 *[GET 계정/확인 자격 증명](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*&#x200B;입니다.
 
-### twitter 연결 Cloud Service {#create-a-twitter-connect-cloud-service} 만들기
+### twitter 연결 Cloud Service 만들기 {#create-a-twitter-connect-cloud-service}
 
 클라우드 서비스 구성을 만들어 인스턴스화된 [Granite OAuth 응용 프로그램 및 Provider](#adobe-granite-oauth-application-and-provider) 인스턴스는 Twitter 응용 프로그램 및 새 사용자가 추가되는 구성원 그룹을 식별합니다.
 
@@ -348,7 +348,7 @@ AEM Communities 구성은 [Adobe Granite OAuth 애플리케이션 및 Provider](
 
 ## 소셜 로그인 활성화 {#enable-social-login}
 
-### AEM Communities 사이트 콘솔 {#aem-communities-sites-console}
+### AEM Communities Sites 콘솔 {#aem-communities-sites-console}
 
 클라우드 서비스가 구성되면 커뮤니티 사이트 [만들기](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) 또는 [관리](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties)에서 [사용자 관리](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) 설정 하위 패널을 사용하여 커뮤니티 사이트에 대한 관련 소셜 로그인 설정에 대해 활성화할 수 있습니다.
 
@@ -374,7 +374,7 @@ AEM Communities 구성은 [Adobe Granite OAuth 애플리케이션 및 Provider](
 * 아직 Facebook 또는 Twitter에 로그인하지 않은 경우 적절한 자격 증명으로 로그인합니다.
 * facebook 또는 Twitter 앱에서 표시되는 대화 상자에 따라 권한을 부여해야 할 수 있습니다.
 * 페이지 상단에 있는 도구 모음이 성공적인 로그인을 반영하도록 업데이트됩니다.
-* **[!UICONTROL 프로필]** 선택:프로필 페이지에는 사용자의 아바타 이미지, 이름 및 성이 표시됩니다. 또한 허용되는 필드/매개 변수에 따라 Facebook 또는 Twitter 프로필의 정보를 표시합니다.
+* **[!UICONTROL 프로필]** 선택: 프로필 페이지에는 사용자의 아바타 이미지, 이름 및 성이 표시됩니다. 또한 허용되는 필드/매개 변수에 따라 Facebook 또는 Twitter 프로필의 정보를 표시합니다.
 
 ## AEM Platform OAuth 구성 {#aem-platform-oauth-configurations}
 
@@ -399,7 +399,7 @@ AEM Communities 구성은 [Adobe Granite OAuth 애플리케이션 및 Provider](
 
 ![granitoauth1](assets/graniteoauth1.png)
 
-### Adobe Granite OAuth 애플리케이션 및 공급자 {#adobe-granite-oauth-application-and-provider}
+### Granite OAuth 애플리케이션 및 공급자 Adobe {#adobe-granite-oauth-application-and-provider}
 
 facebook 또는 Twitter에 대한 클라우드 서비스가 만들어지면 `Adobe Granite OAuth Authentication Handler` 인스턴스가 생성됩니다.
 
@@ -464,7 +464,7 @@ facebook 또는 Twitter 앱에 대해 생성된 인스턴스를 찾으려면 다
 
 작성자 인스턴스에서 관리자 권한으로 로그인됨:
 
-1. 전역 탐색에서:**도구, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md)를 선택합니다.**
+1. 전역 탐색에서: **도구, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md)를 선택합니다.**
 1. ntBaseLucene 복사본에서 ntBaseLucene-oauth라는 인덱스를 만듭니다.
 
    * 노드 `/oak:index` 아래에 있습니다.
