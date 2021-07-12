@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 feature: 콘텐츠 조각
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 100%
