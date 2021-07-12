@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 0%
@@ -25,14 +25,14 @@ ht-degree: 0%
 
 사용자 생성 컨텐츠(UGC)라고도 하는 커뮤니티 컨텐츠는 구성원(로그인한 사이트 방문자)이 다음 커뮤니티 구성 요소 중 하나와의 상호 작용을 통해 게시된 커뮤니티 사이트의 컨텐츠를 게시하면 생성됩니다.
 
-* [블로그](/help/communities/blog-feature.md):구성원은 블로그 기사 또는 댓글을 게시합니다.
-* [달력](/help/communities/calendar.md):구성원은 달력 이벤트 또는 댓글을 게시합니다.
-* [댓글](/help/communities/comments.md):구성원은 댓글에 댓글 또는 답글을 게시한다.
+* [블로그](/help/communities/blog-feature.md): 구성원은 블로그 기사 또는 댓글을 게시합니다.
+* [달력](/help/communities/calendar.md): 구성원은 달력 이벤트 또는 댓글을 게시합니다.
+* [댓글](/help/communities/comments.md): 구성원은 댓글에 댓글 또는 답글을 게시한다.
 
-* [포럼](/help/communities/forum.md):구성원은 새 주제를 게시하거나 주제에 답글을 답니다.
-* [관념화](/help/communities/ideation-feature.md):회원들은 아이디어나 의견을 게시한다.
-* [QnA](/help/communities/working-with-qna.md):구성원은 질문을 만들거나 질문에 답합니다.
-* [검토](/help/communities/reviews.md):항목에 등급을 매길 때 구성원이 댓글을 게시합니다.
+* [포럼](/help/communities/forum.md): 구성원은 새 주제를 게시하거나 주제에 답글을 답니다.
+* [관념화](/help/communities/ideation-feature.md): 회원들은 아이디어나 의견을 게시한다.
+* [QnA](/help/communities/working-with-qna.md): 구성원은 질문을 만들거나 질문에 답합니다.
+* [검토](/help/communities/reviews.md): 항목에 등급을 매길 때 구성원이 댓글을 게시합니다.
 
 UGC를 중재하는 것은 긍정적인 기여도를 인식하는 동시에 음성 기여도(예: 스팸 및 학대 언어)를 제한하는 데 유용합니다. UGC는 몇 가지 환경에서 중재할 수 있습니다.
 
@@ -145,7 +145,7 @@ UGC를 중재하는 것은 긍정적인 기여도를 인식하는 동시에 음�
  </tbody>
 </table>
 
-### {#edit-delete} 편집 / 삭제
+### 편집 / 삭제 {#edit-delete}
 
 게시물이 만들어지면 작성자, 관리자 또는 커뮤니티 중재자가 게시물을 편집하거나 삭제할 수 있습니다.
 
@@ -171,7 +171,7 @@ UGC가 삭제되면 저장소에서 제거되고 복구되지 않을 수 있습�
 
 중재자는 UGC가 게시된 사이트에 계속 표시되도록 할 수 없습니다. 관리자 및 커뮤니티 중재자에게 게시물은 계속 사용할 수 있으며 스팸으로 주석을 답니다.
 
-### {#close-reopen} 닫기/다시 열기
+### 닫기/다시 열기 {#close-reopen}
 
 닫기 작업은 전체 대화 스레드(포럼 주제 또는 초기 댓글)에서 작동하며 모든 후속 게시물 또는 답글을 포함합니다.
 
@@ -181,7 +181,7 @@ UGC가 삭제되면 저장소에서 제거되고 복구되지 않을 수 있습�
 
 닫기/다시 열기 작업은 관리자 또는 커뮤니티 중재자가 수행할 수 있습니다.
 
-### 플래그 / 플래그 해제 {#flag-unflag}
+### 플래그/플래그 해제 {#flag-unflag}
 
 플래그 지정은 컨텐츠 작성자를 제외하고, 게시물의 컨텐츠에 문제가 있음을 나타내기 위해 로그인한 구성원을 위한 방법입니다. 플래그가 지정되면 동일한 구성원이 컨텐츠 플래그를 해제할 수 있는 플래그 해제 아이콘이 표시됩니다.
 
@@ -236,16 +236,16 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시된
 
 감성은 UGC(post)에 있는 양수 및 음수 키워드([watchwords](#configuringwatchwords))의 수를 기반으로 계산됩니다.
 
-감정 분석에서는 사전 구성된 규칙 세트를 사용하고 UGC의 감정을 계산합니다. 기본 규칙은 다음 위치에 있습니다.`/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+감정 분석에서는 사전 구성된 규칙 세트를 사용하고 UGC의 감정을 계산합니다. 기본 규칙은 다음 위치에 있습니다. `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
 규칙이 생성하는 값은 1(모두 음수, 양수 단어 없음)에서 10(모두 양수, 음수 단어 없음)입니다. 감정 값 5는 중립 정답이며 기본값입니다.
 
 /libs 구성 요소에 정의된 규칙은 다음과 같습니다.
 
-* 규칙 1:긍정적인 단어가 없고 음수가 하나 이상 있는 경우 값을 1로 설정합니다.
-* 규칙 2:음수가 없고 긍정적인 단어가 하나 이상 있는 경우 값을 10으로 설정합니다.
-* 규칙 3:긍정적인 단어보다 음수가 많은 경우 값을 3으로 설정합니다.
-* 규칙 4:음수 단어보다 긍정적인 단어가 더 있으면 값을 8로 설정합니다.
+* 규칙 1: 긍정적인 단어가 없고 음수가 하나 이상 있는 경우 값을 1로 설정합니다.
+* 규칙 2: 음수가 없고 긍정적인 단어가 하나 이상 있는 경우 값을 10으로 설정합니다.
+* 규칙 3: 긍정적인 단어보다 음수가 많은 경우 값을 3으로 설정합니다.
+* 규칙 4: 음수 단어보다 긍정적인 단어가 더 있으면 값을 8로 설정합니다.
 
 규칙을 덮어쓰거나 추가하려면 기본 규칙 구조를 따라 /apps 디렉토리에 규칙 세트를 만듭니다. 감정 구성을 편집하여 규칙의 위치를 식별합니다.
 
@@ -257,7 +257,7 @@ UGC가 사전 중재되면 중재 작업에 의해 승인될 때까지 게시된
 
 AEM communities에서는 [감정](#sentiment)을 평가하는 프로세스의 단계로 *watchword analyzer*&#x200B;를 제공합니다. 워치워드에서 제공되는 감정 값에 대한 기여는 게시된 컨텐츠에 사용되는 음성과 긍정적인 감시 단어 및 금지된 단어를 비교한 것입니다.
 
-#### 감정 및 감시 단어 구성 {#configure-sentiment-and-watchwords}
+#### 감정 및 Watchwords 구성 {#configure-sentiment-and-watchwords}
 
 긍정 및 부정적 관찰자의 목록은 감정 규칙이 될 수 있으므로 사용자 지정할 수 있습니다.
 
