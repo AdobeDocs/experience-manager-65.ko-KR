@@ -6,9 +6,9 @@ uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
-role: Administrator
+role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 사용자 관리는 AEM Forms 사용자가 AEM Forms에 액세스할 수 있도록 생성, 관리 및 권한을 부여하는 AEM Forms JEE 구성 요소입니다. 사용자 관리에서는 사용자 정보를 얻기 위해 도메인을 디렉토리로 사용합니다. 지원되는 도메인 유형은 다음과 같습니다.
 
-**로컬 도메인**:이 유형의 도메인은 타사 스토리지 시스템에 연결되어 있지 않습니다. 대신 사용자와 그룹은 로컬에서 생성되어 사용자 관리 데이터베이스에 있습니다. 암호는 로컬로 저장되고 로컬 데이터베이스를 사용하여 인증됩니다.
+**로컬 도메인**: 이 유형의 도메인은 타사 스토리지 시스템에 연결되어 있지 않습니다. 대신 사용자와 그룹은 로컬에서 생성되어 사용자 관리 데이터베이스에 있습니다. 암호는 로컬로 저장되고 로컬 데이터베이스를 사용하여 인증됩니다.
 
-**하이브리드 도메인**:이 유형의 도메인은 타사 스토리지 시스템에 연결되어 있지 않습니다. 대신 사용자와 그룹은 로컬에서 생성되어 사용자 관리 데이터베이스에 있습니다. 로컬 도메인과 달리 하이브리드 도메인은 LDAP, Kerberos, SAML 또는 사용자 지정 인증 공급자인 외부 인증 공급자를 사용합니다.
+**하이브리드 도메인**: 이 유형의 도메인은 타사 스토리지 시스템에 연결되어 있지 않습니다. 대신 사용자와 그룹은 로컬에서 생성되어 사용자 관리 데이터베이스에 있습니다. 로컬 도메인과 달리 하이브리드 도메인은 LDAP, Kerberos, SAML 또는 사용자 지정 인증 공급자인 외부 인증 공급자를 사용합니다.
 
-**엔터프라이즈 도메인**:LDAP 디렉토리와 같이 타사 스토리지 시스템에 있는 사용자 및 그룹으로 구성됩니다. 사용자 관리에서 타사 스토리지 시스템에 쓰지 않습니다. 대신 사용자 관리는 사용자 및 그룹 정보를 사용자 관리 데이터베이스와 동기화합니다. 엔터프라이즈 도메인은 LDAP, Kerberos, SAML 또는 사용자 지정 인증 공급자인 외부 인증 공급자를 사용합니다.
+**엔터프라이즈 도메인**: LDAP 디렉토리와 같이 타사 스토리지 시스템에 있는 사용자 및 그룹으로 구성됩니다. 사용자 관리에서 타사 스토리지 시스템에 쓰지 않습니다. 대신 사용자 관리는 사용자 및 그룹 정보를 사용자 관리 데이터베이스와 동기화합니다. 엔터프라이즈 도메인은 LDAP, Kerberos, SAML 또는 사용자 지정 인증 공급자인 외부 인증 공급자를 사용합니다.
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 `https://'[server]:[port]'lc` 아래의 Forms 애플리케이션에 적어도 한 번 액세스한 사용자를 위한 사용자 관리 데이터도 AEM 저장소에 저장됩니다.
 
-## 사용자 데이터 {#access-and-delete-user-data} 액세스 및 삭제
+## 사용자 데이터 액세스 및 삭제 {#access-and-delete-user-data}
 
 사용자 관리 데이터베이스 및 AEM 저장소의 사용자에 대한 사용자 관리 데이터에 액세스하고 내보낼 수 있으며, 필요한 경우 영구적으로 삭제할 수 있습니다.
 
@@ -179,7 +179,7 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 Forms JEE 사용자가 적어도 하나 이상의 AEM Forms 작성자 인스턴스에 액세스한 경우 AEM 저장소에 데이터가 있습니다. AEM 리포지토리에서 사용자 데이터에 액세스하고 삭제할 수 있습니다.
 
-#### 사용자 데이터 {#access-user-data} 액세스
+#### 사용자 데이터 액세스 {#access-user-data}
 
 AEM 저장소에서 만든 사용자를 보려면 AEM 관리자 자격 증명으로 `https://'[server]:[port]'/lc/useradmin`에 로그인합니다. URL의 `server` 및 `port`은 AEM 작성자 인스턴스의 URL입니다. 여기에서 사용자 이름으로 사용자를 검색할 수 있습니다. 사용자를 두 번 클릭하여 사용자의 속성, 권한 및 그룹과 같은 정보를 봅니다. 사용자에 대한 `Path` 속성은 AEM 리포지토리에서 생성된 사용자 노드의 경로를 지정합니다.
 
