@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
-role: Administrator
+role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
@@ -31,7 +31,7 @@ AEM 인스턴스에서 앱을 다운로드할 수 있습니다. 앱 다운로드
 >
 >파일 이름에는 영숫자, 하이픈 또는 밑줄만 사용할 수 있습니다.
 
-## AEM용 AEM Forms 데스크탑 앱 {#enable-aem-forms-for-aem-desktop-app} 사용
+## AEM용 AEM Forms 데스크탑 앱 활성화 {#enable-aem-forms-for-aem-desktop-app}
 
 AEM Desktop App은 Microsoft Windows의 WebDAV 프로토콜을 사용하고 Mac OS X의 SMB1을 사용하여 AEM Forms 서버에 연결합니다. 기본적으로 AEM Forms 서버는 이진 파일 및 기타 자산을 WebDAV 또는 SMB 클라이언트와 동기화하도록 활성화되지 않습니다. AEM용 AEM Forms 데스크탑 앱을 활성화하려면 다음 단계를 수행하십시오.
 
