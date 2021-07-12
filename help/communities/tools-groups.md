@@ -10,8 +10,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
-role: Administrator
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 3%
@@ -95,7 +95,7 @@ AEM 작성 환경의 그룹 템플릿 콘솔에 연결하려면
 
 원하는 함수를 모두 템플릿 빌더 영역으로 끌어다 놓고 구성했으면 오른쪽 상단 모서리에서 **저장** 을 선택합니다.
 
-## 그룹 템플릿 편집{#edit-group-template}
+## 그룹 템플릿 편집 {#edit-group-template}
 
 기본 [그룹 템플릿 콘솔](#group-templates-console)에서 커뮤니티 그룹을 볼 때 편집할 기존 그룹 템플릿을 선택할 수 있습니다.
 
