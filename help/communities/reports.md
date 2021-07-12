@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 7%
@@ -47,7 +47,7 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
 ### 커뮤니티 사이트 보고서 {#reports-for-community-sites}
 
-* 전역 탐색에서:**[!UICONTROL 탐색]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 보고서]**
+* 전역 탐색에서: **[!UICONTROL 탐색]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 보고서]**
 
 * 다음 중에서 선택하십시오.
 
@@ -67,7 +67,7 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
 ### 지원 리소스 및 학습 경로 보고서 {#reports-for-enablement-resources-and-learning-paths}
 
-* 전역 탐색에서:**[!UICONTROL 탐색]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 리소스]**
+* 전역 탐색에서: **[!UICONTROL 탐색]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 리소스]**
 
 * 기존 지원 커뮤니티 사이트 선택:
 
@@ -178,11 +178,11 @@ AEM Communities의 경우 작성 환경에서 여러 가지 방법으로 액세�
 
 ## 문제 해결 {#troubleshooting}
 
-### {#no-community-sites-listed}에 나열된 커뮤니티 사이트가 없습니다.
+### 나열된 커뮤니티 사이트 없음 {#no-community-sites-listed}
 
 나열된 커뮤니티 사이트가 없는 경우, 사이트에 대해 Adobe Analytics이 활성화되었는지 확인하십시오. 발령에 대한 보고서를 선택하는 경우 지정 기능이 커뮤니티 사이트의 구조에 있는지 확인합니다.
 
-### 보고서가 AEM 작성자 인스턴스 {#reports-do-not-show-in-aem-author-instance}에 표시되지 않습니다.
+### 보고서가 AEM 작성자 인스턴스에 표시되지 않습니다 {#reports-do-not-show-in-aem-author-instance}
 
 보고서가 AEM 작성자 인스턴스에 표시되지 않으면 게시 인스턴스의 URL 매핑과 같은 사용자 지정을 확인합니다. URL 매핑이 커뮤니티 사이트의 AEM 게시 인스턴스에서만 수행되는 경우, **사이트 트렌드 보고서 소셜 구성 요소 팩토리** 구성의 AEM 작성자 인스턴스에서 동일한지 확인하십시오.
 
