@@ -10,16 +10,16 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 1%
 
 ---
 
-# OSGi 그룹의 AEM Forms 및 Privileges{#aem-forms-on-osgi-groups-and-privileges}
+# OSGi 그룹 및 권한의 AEM Forms{#aem-forms-on-osgi-groups-and-privileges}
 
 [그룹](/help/sites-administering/user-group-ac-admin.md#group-administration)을 만들고, 정책 및 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration)를 AEM의 그룹에 할당할 수 있습니다. 이러한 정책은 그룹에 속하는 사용자의 권한을 제어합니다.
 
@@ -94,7 +94,7 @@ ht-degree: 1%
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>AEM 받은 편지함 응용 프로그램 사용<br /> <strong>참고:</strong>AEM 받은 편지함에서 Interactive Communications Agent UI에 액세스하려면 cm-agent-users 및 workflow-users 그룹이 할당되어 있어야 합니다.</li> 
+     <li>AEM 받은 편지함 응용 프로그램 사용<br /> <strong>참고: </strong>AEM 받은 편지함에서 Interactive Communications Agent UI에 액세스하려면 cm-agent-users 및 workflow-users 그룹이 할당되어 있어야 합니다.</li> 
      <li>워크플로우 인스턴스 관리</li> 
     </ul> </td> 
   </tr>
