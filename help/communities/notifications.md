@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 1%
@@ -69,7 +69,7 @@ AEM Communities에서는 로그인한 커뮤니티 구성원에게 관심 이벤
 
 * 구성원 프로필이 이미 다른 구성원이 팔로우할 수 있도록 구성되어 있습니다.
 
-## 다음 {#notifications-from-following}의 알림
+## 다음에서 알림 {#notifications-from-following}
 
 ![알림](assets/notifications.png)
 
@@ -116,19 +116,19 @@ AEM Communities에서는 로그인한 커뮤니티 구성원에게 관심 이벤
 
 ![알림4](assets/notifications4.png)
 
-### 전자 메일 알림 {#email-notifications}
+### 이메일 알림 {#email-notifications}
 
 이메일 채널이 활성화되면 구성원은 웹의 컨텐츠에 대한 링크가 포함된 이메일을 수신하게 됩니다.
 
 ![알림5](assets/notifications5.png)
 
-## 전자 메일 알림 사용자 지정 {#customize-email-notifications}
+## 이메일 알림 사용자 지정 {#customize-email-notifications}
 
 조직은 **/libs/settings/community/templates/email/html**&#x200B;에서 템플릿을 오버레이하여 [이메일 알림을 사용자 지정할 수 있습니다.](/help/communities/client-customize.md#overlays)
 
 예를 들어, 언급 이메일 알림(커뮤니티 구성 요소의 경우)을 수정하려면 **@mentions** 지원을 사용하도록 설정한 구성 요소의 템플릿에 동사 **언급**&#x200B;에 대한 **if** 조건을 추가합니다.
 
-블로그 댓글에 @mention에 대한 이메일 알림 템플릿을 수정하려면 다음 위치에서 즉시 템플릿을 사용하십시오.**/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en**
+블로그 댓글에 @mention에 대한 이메일 알림 템플릿을 수정하려면 다음 위치에서 즉시 템플릿을 사용하십시오. **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en**
 
 ```java
 {{#equals this.verb "mention"}}\
