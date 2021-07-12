@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
-role: Administrator
+role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-# 새 폴더를 만들어 양식을 분류합니다. {#create-new-folders-to-categorize-forms}
+# 양식을 분류할 새 폴더 만들기 {#create-new-folders-to-categorize-forms}
 
 폴더를 사용하여 자산을 더 잘 구성할 수 있습니다. AEM Forms은 양식 템플릿, PDF, 문서, 리소스, 적응형 양식 등 여러 유형의 자산을 다양한 메타데이터로 지원하므로 폴더를 사용하여 원하는 기준에 따라 양식을 분류할 수 있습니다.
 
@@ -50,7 +50,7 @@ AEM Forms을 사용하면 폴더의 제목을 변경할 수 있습니다. 제목
 
    지정된 이름의 폴더가 있는 경우 오류가 발생하여 제출이 실패합니다. 이름 필드 옆에 표시되는 오류 ![aem6forms_error_alert](assets/aem6forms_error_alert.png) 아이콘을 마우스로 가리키면 오류 메시지를 볼 수 있습니다.
 
-### 폴더 제목 {#edit-the-folder-title-br} 편집
+### 폴더 제목을 편집합니다 {#edit-the-folder-title-br}
 
 1. 제목을 편집할 폴더를 선택합니다.
 1. 도구 모음에서 편집 ![aem6forms_edit](assets/aem6forms_edit.png) 아이콘을 클릭합니다.
