@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
-role: Administrator
+role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2884'
 ht-degree: 2%
@@ -78,7 +78,7 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
    ![지정된 배지](assets/assigned-badges.png)
 
-### 수여된 배지 {#awarded-badges}
+### 수상 배지 {#awarded-badges}
 
 보상 기반 배지는 지역 사회의 활동에 적용된 규칙에 따라 지역 사회 구성원들에게 점수 부여 서비스에 의해 수여됩니다.
 
@@ -115,7 +115,7 @@ AEM Communities 점수 및 배지 기능은 커뮤니티 구성원을 식별하�
 
 Badge 콘솔에서 설치되면 사용자 지정 배지가 게시 환경에 자동으로 복제됩니다.
 
-## 점수 {#enable-scoring} 사용
+## 점수 책정 활성화 {#enable-scoring}
 
 기본적으로 점수는 활성화되지 않습니다. 배지 점수 책정 및 수상을 위한 기본 단계는 다음과 같습니다.
 
@@ -127,7 +127,7 @@ Badge 콘솔에서 설치되면 사용자 지정 배지가 게시 환경에 자�
 
 포럼 및 댓글에 대한 기본 점수 및 배지 규칙을 사용하여 커뮤니티 사이트에 대한 점수를 활성화하려면 [빠른 테스트](#quick-test) 섹션을 참조하십시오.
 
-### 콘텐츠에 규칙 적용 {#apply-rules-to-content}
+### 컨텐츠에 규칙 적용 {#apply-rules-to-content}
 
 점수부여 및 배지를 사용하려면 `scoringRules` 및 `badgingRules` 속성을 사이트의 컨텐츠 트리의 노드에 추가합니다.
 
@@ -146,13 +146,13 @@ Badge 콘솔에서 설치되면 사용자 지정 배지가 게시 환경에 자�
 >
 >점수 규칙이 배지 수여에 영향을 주지 않는 것으로 나타나면 배지 규칙의 scoringRules 속성에 의해 점수 규칙이 차단되지 않았는지 확인합니다. [배지 규칙](#badging-rules)이라는 섹션을 참조하십시오.
 
-### 구성 요소 {#enable-badges-for-component}에 대한 배지 활성화
+### 구성 요소에 대한 배지 활성화 {#enable-badges-for-component}
 
 점수부여 및 배지 규칙은 [작성 모드](/help/communities/author-communities.md)에서 구성 요소 구성을 편집하여 배지를 활성화한 구성 요소의 인스턴스에만 적용됩니다.
 
 부울 속성 `allowBadges`은 구성 요소 인스턴스에 대한 배지 표시를 활성화/비활성화합니다. [구성 요소 편집 대화 상자](/help/communities/author-communities.md)에서 포럼, QnA 및 **배지 표시** 확인란을 통해 구성 요소를 구성할 수 있습니다.
 
-#### 예 :포럼 구성 요소 인스턴스 {#example-allowbadges-for-forum-component-instance}에 대한 allowBadge
+#### 예 : 포럼 구성 요소 인스턴스에 대한 allowBadge {#example-allowbadges-for-forum-component-instance}
 
 ![enable-badge-component](assets/enable-badges-component.png)
 
@@ -183,9 +183,9 @@ Badge 콘솔에서 설치되면 사용자 지정 배지가 게시 환경에 자�
 
 >[!NOTE]
 >
->우수 사례:각 점수 규칙의 이름을 고유하게 지정합니다.
+>우수 사례: 각 점수 규칙의 이름을 고유하게 지정합니다.
 >
->점수 규칙 이름은 전역적으로 고유해야 합니다.같은 이름으로 끝나면 안 됩니다.
+>점수 규칙 이름은 전역적으로 고유해야 합니다. 같은 이름으로 끝나면 안 됩니다.
 >
 >*이*&#x200B;하지 않을 작업의 예:
 >
@@ -225,7 +225,7 @@ Badge 콘솔에서 설치되면 사용자 지정 배지가 게시 환경에 자�
    <td>긴</td>
    <td>
     <ul>
-     <li>필수 여부동사는 이벤트 작업에 해당합니다</li>
+     <li>필수 여부 동사는 이벤트 작업에 해당합니다</li>
      <li>동사 속성이 하나 이상 있어야 합니다.</li>
      <li>동사는 모두 대문자로 입력해야 합니다.</li>
      <li>여러 동사 속성이 있지만 중복은 없습니다</li>
@@ -239,8 +239,8 @@ Badge 콘솔에서 설치되면 사용자 지정 배지가 게시 환경에 자�
    <td>문자열</td>
    <td>
     <ul>
-     <li>선택 사항;하위 규칙을 이벤트 항목으로 식별된 커뮤니티 구성 요소로 제한</li>
-     <li>지정된 경우 :값은 이벤트 항목의 다중 값 문자열입니다</li>
+     <li>선택 사항; 하위 규칙을 이벤트 항목으로 식별된 커뮤니티 구성 요소로 제한</li>
+     <li>지정된 경우 : 값은 이벤트 항목의 다중 값 문자열입니다</li>
      <li>릴리스의 주제 목록은 <a href="#topics-and-verbs">항목 및 동사</a> 섹션에 있습니다.</li>
      <li>기본값은 동사와 연관된 모든 주제에 적용됩니다.</li>
     </ul> </td>
@@ -250,7 +250,7 @@ Badge 콘솔에서 설치되면 사용자 지정 배지가 게시 환경에 자�
    <td>부울</td>
    <td>
     <ul>
-     <li>선택 사항;구성원이 소유한 컨텐츠에 대해 행동하는 경우에는 중요하지 않음</li>
+     <li>선택 사항; 구성원이 소유한 컨텐츠에 대해 행동하는 경우에는 중요하지 않음</li>
      <li>true일 경우 조치 중인 컨텐츠 소유자에게 점수를 적용합니다</li>
      <li>false이면 멤버 수행 작업에 점수를 적용합니다.</li>
      <li>기본값은 false입니다.</li>
@@ -261,7 +261,7 @@ Badge 콘솔에서 설치되면 사용자 지정 배지가 게시 환경에 자�
    <td>문자열</td>
    <td>
     <ul>
-     <li>선택 사항;점수 엔진 식별</li>
+     <li>선택 사항; 점수 엔진 식별</li>
      <li>"basic"이면, 수량 기준으로 점수 엔진을 지정합니다
       <ul>
        <li>릴리스에 포함됨</li>
@@ -340,7 +340,7 @@ Badge 콘솔에서 설치되면 사용자 지정 배지가 게시 환경에 자�
 
 >[!NOTE]
 >
->우수 사례 :각 AEM 사이트에 고유한 배지 이미지를 만듭니다.
+>우수 사례 : 각 AEM 사이트에 고유한 배지 이미지를 만듭니다.
 
 ![배지 규칙 구성](assets/badging-rule-configuration.png)
 
@@ -403,15 +403,15 @@ cURL -i -X POST -H *헤더* -u *signin* -F *operation* -F *배지* *member-profi
 
 *header*  = &quot;Accept:application/json&quot; 사용자 지정 헤더에서 서버로 전달됨(필수)
 
-*signin*  = administrator-id:password 예:admin:admin
+*signin*  = administrator-id:password 예: admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; OR &quot;:operation=social:deleteBadge&quot;
 
 *badge*  = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file*  = 저장소에서 배지 이미지 파일의 위치(예: ).content/moderator.png
+*badge-image-file*  = 저장소에서 배지 이미지 파일의 위치(예: ). content/moderator.png
 
-*member-profile-url*  = 게시 시 구성원 프로필에 대한 종단점입니다. 예:https://&lt;server>: &lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url*  = 게시 시 구성원 프로필에 대한 종단점입니다. 예: https://&lt;server>: &lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -429,7 +429,7 @@ cURL -i -X POST -H *헤더* -u *signin* -F *operation* -F *배지* *member-profi
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
-#### 할당된 실버 배지 {#revoke-an-assigned-silver-badge} 취소
+#### 할당된 실버 배지 취소 {#revoke-an-assigned-silver-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/libs/settings/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
@@ -562,13 +562,13 @@ ComponentsSocialEvent  `topic`= com/adobe/cq/social/moderation
 
 ## 문제 해결 {#troubleshooting}
 
-### 배지가 {#badges-are-not-appearing}에 표시되지 않습니다.
+### 배지가 표시되지 않습니다. {#badges-are-not-appearing}
 
 웹 사이트의 콘텐츠에 점수 및 배지 규칙이 적용되었지만 배지가 없는 경우 해당 구성 요소의 인스턴스에 대해 배지가 활성화되어 있는지 확인하십시오.
 
 [구성 요소용 배지 활성화](#enable-badges-for-component)를 참조하십시오.
 
-### 점수 규칙은 {#scoring-rule-has-no-effect}에 영향을 주지 않습니다.
+### 점수 규칙은 영향을 주지 않습니다 {#scoring-rule-has-no-effect}
 
 웹 사이트의 콘텐츠에 점수부여 및 배지 규칙이 적용되었으며 배지가 일부 작업에 대해 수여되지만 다른 것은 아닌 경우 배지 규칙이 적용되는 점수 규칙을 제한하지 않았는지 확인하십시오.
 
@@ -635,11 +635,11 @@ ComponentsSocialEvent  `topic`= com/adobe/cq/social/moderation
 마지막으로
 
 * 게시 인스턴스에서 구성 요소를 찾습니다.
-* 커뮤니티 구성원으로 로그인(예:weston.mccall@dodgit.com / password).
+* 커뮤니티 구성원으로 로그인(예: weston.mccall@dodgit.com / password).
 * 새 포럼 항목을 게시합니다.
 * 배지가 표시되려면 페이지를 새로 고쳐야 합니다.
 
-   * 다른 커뮤니티 구성원으로 로그아웃하고 로그인합니다(예:aaron.mcdonald@mailinator.com/password).
+   * 다른 커뮤니티 구성원으로 로그아웃하고 로그인합니다(예: aaron.mcdonald@mailinator.com/password).
 
 * 포럼을 선택합니다.
 
