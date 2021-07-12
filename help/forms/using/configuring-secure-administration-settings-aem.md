@@ -8,16 +8,16 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
-role: Administrator
+role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 0%
 
 ---
 
-# JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}에서 AEM Forms에 대한 보안 관리 설정 구성
+# JEE에서 AEM Forms에 대한 보안 관리 설정 구성 {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 개인 개발 환경에서 필요하지만 JEE의 AEM Forms 프로덕션 환경에서 필요하지 않은 사용자 계정 및 서비스를 관리하는 방법을 알아봅니다.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 이 문서에서는 JEE에서 AEM Forms이 제공하는 관리 옵션을 통해 전체 공격 면을 줄이는 방법에 대해 설명합니다.
 
-## 서비스 {#disabling-non-essential-remote-access-to-services}에 대한 불필요한 원격 액세스를 사용하지 않도록 설정
+## 서비스 원격 액세스를 사용하지 않도록 설정 {#disabling-non-essential-remote-access-to-services}
 
 JEE의 AEM Forms이 설치 및 구성된 후에는 SOAP 및 EJB(Enterprise JavaBeans™)을 통해 원격 호출을 위해 많은 서비스를 사용할 수 있습니다. 이 경우 원격이란 응용 프로그램 서버의 SOAP, EJB 또는 AMF(Action Message Format) 포트에 대한 네트워크 액세스 권한이 있는 호출자를 참조합니다.
 
@@ -66,7 +66,7 @@ JEE 서비스의 AEM Forms은 항상 적어도 SOAP 액세스가 필요합니다
 
 1. **다음**&#x200B;을 클릭하고 위의 목록에 없는 SOAP 끝점에 대한 이전 단계를 반복합니다. 끝점을 제거하기 전에 공급자 열에 SOAP가 나열되는지 확인하십시오.
 
-## 서비스 {#disabling-non-essential-anonymous-access-to-services}에 대한 비필수 익명 액세스를 사용하지 않도록 설정
+## 서비스에 대한 필수 불가결한 익명 액세스 사용 안 함 {#disabling-non-essential-anonymous-access-to-services}
 
 일부 forms 서버 서비스에서는 일부 작업에 대해 인증되지 않은(익명) 호출을 허용합니다. 즉, 서비스에 의해 노출된 하나 이상의 작업은 인증된 사용자로 호출되거나 인증된 사용자가 전혀 호출되지 않을 수 있습니다.
 
@@ -107,7 +107,7 @@ JEE 서비스의 AEM Forms은 항상 적어도 SOAP 액세스가 필요합니다
 
    필요하지 않은 서비스에는 익명 액세스를 사용하지 않도록 설정해야 합니다. 대부분의 내부 서비스는 사전 인증 없이 시스템의 모든 사용자가 이 서비스를 호출해야 하므로 익명 인증을 사용하도록 설정해야 합니다.
 
-## 기본 전역 시간 제한 변경 {#changing-the-default-global-time-out}
+## 기본 전역 시간 초과 변경 {#changing-the-default-global-time-out}
 
 최종 사용자는 AEM Forms 서버 서비스를 호출하는 Workbench, AEM Forms 웹 애플리케이션 또는 사용자 정의 애플리케이션을 통해 AEM Forms에 인증할 수 있습니다. 한 글로벌 시간 초과 설정은 이러한 사용자가 재인증되기 전에 AEM Forms(SAML 기반 어설션 사용)과 상호 작용할 수 있는 시간을 지정하는 데 사용됩니다. 기본 설정은 2시간입니다. 프로덕션 환경에서는 허용되는 최소 시간(분)으로 시간을 단축해야 합니다.
 
