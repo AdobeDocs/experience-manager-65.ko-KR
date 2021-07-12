@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 3%
@@ -88,7 +88,7 @@ Analytics for Communities 기능을 구성하려면 계정 담당자에게 Adobe
 
    사용할 Analytics 보고서 세트의 이름입니다.
 
-## 비디오 보고용 Adobe Analytics 보고서 세트 {#adobe-analytics-report-suite-for-video-reporting}
+## 비디오 보고를 위한 Adobe Analytics 보고서 세트 {#adobe-analytics-report-suite-for-video-reporting}
 
 Adobe Marketing Cloud의 [보고서 세트 관리자](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)를 사용하여 커뮤니티 사이트에서 커뮤니티 기능에 대한 보고서를 제공할 수 있도록 Analytics 보고서 세트를 구성할 수 있습니다.
 
@@ -144,7 +144,7 @@ Adobe Marketing Cloud의 [보고서 세트 관리자](https://docs.adobe.com/con
 >
 >이를 실패하면 복구할 수 없는 데이터 손실이 발생할 수 있습니다.
 
-### 비디오 하트비트 Analytics {#video-heartbeat-analytics}
+### 비디오 하트비트 분석 {#video-heartbeat-analytics}
 
 비디오 하트비트 Analytics에 라이센스가 있으면 `Marketing Cloud Org Id`이 할당됩니다.
 
@@ -154,7 +154,7 @@ Adobe Marketing Cloud의 [보고서 세트 관리자](https://docs.adobe.com/con
 * 커뮤니티 사이트에 대해 [Analytics 활성화](#enable-analytics-for-a-community-site)
 * `Marketing Cloud Org Id`을(를) 커뮤니티 사이트와 연결
 
-`Marketing Cloud Org Id`은 [커뮤니티 사이트 생성](/help/communities/sites-console.md#enablement) 시 또는 [커뮤니티 사이트 속성 수정](/help/communities/sites-console.md#modifying-site-properties)에 의해 입력될 수 있습니다.[](#aem-analytics-cloud-service-configuration)
+`Marketing Cloud Org Id`은 [커뮤니티 사이트 생성](/help/communities/sites-console.md#enablement) 시 또는 [커뮤니티 사이트 속성 수정](/help/communities/sites-console.md#modifying-site-properties)에 의해 입력될 수 있습니다. [](#aem-analytics-cloud-service-configuration)
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
@@ -166,7 +166,7 @@ Adobe Marketing Cloud의 [보고서 세트 관리자](https://docs.adobe.com/con
 
 작성자 인스턴스에서 표준 UI를 사용하여 Adobe Analytics과 AEM 커뮤니티 사이트를 통합하는 새 Analytics 통합을 만들려면:
 
-* 전역 탐색에서:**[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**
+* 전역 탐색에서: **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL Cloud Services]**
 * **[!UICONTROL Adobe Analytics]**&#x200B;로 스크롤합니다.
 * **[!UICONTROL 지금 구성]** 또는 **[!UICONTROL 구성 표시]**&#x200B;를 선택합니다.
 
@@ -281,7 +281,7 @@ Analytics 프레임워크를 만들면 구성에 대한 프레임워크가 열�
 
 ![analytics-enablement-framework](assets/analytics-framework1.png)
 
-### 보고서 세트 {#select-report-suite} 선택
+### 보고서 세트 선택 {#select-report-suite}
 
 비디오 보고에 대해 설정된 보고서 세트를 선택합니다.
 
@@ -290,7 +290,7 @@ Analytics 프레임워크를 만들면 구성에 대한 프레임워크가 열�
 
 사이드 킥이 필요하지 않으며 보고서 세트 설정에 대한 액세스를 방해하지 않도록 최소화할 수 있습니다.
 
-#### &#39;항목 추가&#39; {#report-suites-dialog-before-and-after-selecting-add-item} 선택 전후 보고서 세트 대화 상자
+#### &#39;항목 추가&#39;를 선택하기 전후에 보고서 세트 대화 상자 {#report-suites-dialog-before-and-after-selecting-add-item}
 
 ![보고서 세트](assets/report-suite.png)
 
@@ -319,7 +319,7 @@ Analytics 프레임워크를 만들면 구성에 대한 프레임워크가 열�
 
 ## 커뮤니티 사이트에 대한 Analytics 활성화 {#enable-analytics-for-a-community-site}
 
-### 새 커뮤니티 사이트 {#enable-for-new-community-site}에 사용
+### 새 커뮤니티 사이트에 사용 {#enable-for-new-community-site}
 
 [새 커뮤니티 사이트를 만드는 동안 Analytics 클라우드 서비스를 추가하려면](/help/communities/sites-console.md):
 
@@ -329,7 +329,7 @@ Analytics 프레임워크를 만들면 구성에 대한 프레임워크가 열�
 
 * 선택적으로 Analytics 프레임워크 구성으로 돌아가 변수 매핑을 조정하십시오.
 
-### 기존 커뮤니티 사이트 {#enable-for-existing-community-site}에 대해 활성화
+### 기존 커뮤니티 사이트에 대해 활성화 {#enable-for-existing-community-site}
 
 Analytics 클라우드 서비스를 [기존 커뮤니티 사이트](/help/communities/sites-console.md#modifying-site-properties)에 추가하려면:
 
@@ -342,7 +342,7 @@ Analytics 클라우드 서비스를 [기존 커뮤니티 사이트](/help/commun
 
 * 선택적으로 Analytics 프레임워크 구성으로 돌아가 변수 매핑을 조정하십시오.
 
-### 사용자 지정된 사이트 {#enable-for-customized-sites} 사용
+### 사용자 지정된 사이트에 대해 활성화 {#enable-for-customized-sites}
 
 Analytics 추적 및 가져오기가 커뮤니티 사이트에 대해 제대로 작동하려면 `scf-js-site-title` 클래스 및 href 특성이 있는 페이지 요소가 있어야 합니다. 커뮤니티 사이트에 대한 수정되지 않은 `sitepage.hbs` 스크립트에서 그러하듯이 그러한 요소는 페이지에만 있어야 합니다. `siteUrl` 값이 추출되어 *사이트 경로*&#x200B;로 Adobe Analytics에 전송됩니다.
 
@@ -387,7 +387,7 @@ Analytics용으로 구현된 새 사용자 지정 구성 요소를 만드는 경
 >
 >저널 구성 요소는 블로그 기능을 구현하는 데 사용됩니다.
 
-### Analytics를 AEM 변수 {#mapped-analytics-to-aem-variables}에 매핑했습니다.
+### AEM 변수에 Analytics가 매핑됨 {#mapped-analytics-to-aem-variables}
 
 커뮤니티 사이트가 Analytics가 활성화되고 클라우드 구성 프레임워크가 선택된 상태로 저장되면 AEM 변수가 각각 evar1 및 event1로 시작하는 Analytics eVar 및 이벤트에 자동으로 매핑되고 1씩 증가합니다.
 
@@ -397,7 +397,7 @@ evar1에서 evar11까지 및 event1에서 event7까지 변수 중 하나를 매�
 
 ![map-analytics](assets/map-analytics1.png)
 
-#### 각 이벤트 {#map-of-evars-sent-with-each-event}와 함께 전송된 eVar 맵
+#### 각 이벤트와 함께 전송된 eVar 맵 {#map-of-evars-sent-with-each-event}
 
 <table>
  <tbody>
@@ -523,15 +523,15 @@ evar1에서 evar11까지 및 event1에서 event7까지 변수 중 하나를 매�
 
 **eVar 값의 예 :**
 
-* *[MIME 유형](https://www.iana.org/assignments/media-types)*:video/mp4
-* *[커뮤니티 사이트 제목](/help/communities/sites-console.md#step13asitetemplate)*:Geometrixx 커뮤니티
-* *[커뮤니티 함수 이름](/help/communities/functions.md)*:포럼
-* *[커뮤니티 그룹 이름](/help/communities/creating-groups.md#creating-a-new-group)*:하이킹
+* *[MIME 유형](https://www.iana.org/assignments/media-types)*: video/mp4
+* *[커뮤니티 사이트 제목](/help/communities/sites-console.md#step13asitetemplate)*: Geometrixx 커뮤니티
+* *[커뮤니티 함수 이름](/help/communities/functions.md)*: 포럼
+* *[커뮤니티 그룹 이름](/help/communities/creating-groups.md#creating-a-new-group)*: 하이킹
 * *커뮤니티 그룹 컨텐츠에 대한 경로*:  `/content/sites/<site name>/en/groups/hiking`
 * *[UGC 구성 요소 resourceType](/help/communities/essentials.md)*:  `social/forum/components/hbs/topic`
-* *UGC 구성 요소 제목*:하이킹 항목
+* *UGC 구성 요소 제목*: 하이킹 항목
 * *로그인(authorizableId)*:  `aaron.mcdonald@mailinator.com`
-* *UGC에 대한 SRP 경로*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
+* *UGC에 대한 SRP 경로*:  `/content/usergenerated/asi/.../forum/jmtz-topic3`
 또는 
 *다음에 추가할 구성 요소 경로*:  `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
@@ -551,21 +551,21 @@ Communities eVar 및 이벤트가 보고서 세트에 이전에 존재했던 매
 >
 >커뮤니티 사이트가 [published](#publishing-the-community-site)이고 Analytics가 활성화되어 있기 전에 다시 매핑하는 것이 중요합니다. 그렇지 않으면 데이터가 손실될 수 있습니다.
 
-#### 예제 1단계:Analytics evar14를 매핑 테이블 {#example-step-dragging-analytics-evar-into-mapping-table}으로 드래그
+#### 예제 1단계: Analytics evar14를 매핑 테이블로 드래그 {#example-step-dragging-analytics-evar-into-mapping-table}
 
 ![analytics-mapping-evar](assets/analytics-mapping-evar.png)
 
-#### 예제 2단계:대체된 evar11 {#example-step-selecting-x-to-remove-replaced-evar}을 제거하려면 &#39;x&#39;를 선택하십시오.
+#### 예제 2단계: 대체된 evar11을 제거하려면 &#39;x&#39;를 선택합니다. {#example-step-selecting-x-to-remove-replaced-evar}
 
 ![analytics-mapping-evar1](assets/analytics-mapping-evar1.png)
 
-#### 예제 3단계:AEM var eventdata.siteId가 Analytics evar14에 다시 매핑됨 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
+#### 예제 3단계: AEM var eventdata.siteId가 Analytics evar14에 다시 매핑됨 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
 ![analytics-mapping-evar2](assets/analytics-mapping-evar2.png)
 
-## 커뮤니티 사이트 {#publishing-the-community-site} 게시
+## 커뮤니티 사이트 게시 {#publishing-the-community-site}
 
-### Analytics에서 AEM으로 변수 매핑 확인 {#verify-analytics-to-aem-variable-mapping}
+### Analytics에서 AEM로의 변수 매핑 확인 {#verify-analytics-to-aem-variable-mapping}
 
 Analytics 클라우드 서비스 및 프레임워크를 게시하는 커뮤니티 사이트를 게시하기 전에 변수 매핑을 확인하는 것이 좋습니다.
 
@@ -602,7 +602,7 @@ Analytics 클라우드 서비스 및 프레임워크를 게시하는 커뮤니�
 >
 >여러 게시 인스턴스에서 폴링을 방지하기 위해 기본 게시자를 구성하는 것이 중요합니다.
 
-### 암호화 키 {#replicate-the-crypto-key} 복제
+### 암호화 키 복제 {#replicate-the-crypto-key}
 
 Adobe Analytics 자격 증명이 암호화되어 있습니다. 작성자와 게시자 간에 암호화된 분석 자격 증명을 복제하거나 전송할 수 있도록 하려면 모든 AEM 인스턴스가 동일한 기본 암호화 키를 공유해야 합니다.
 
@@ -612,7 +612,7 @@ Adobe Analytics 자격 증명이 암호화되어 있습니다. 작성자와 게�
 
 커뮤니티 사이트에 대해 Analytics 클라우드 서비스가 활성화되고, 필요한 경우 Analytics의 [AEM 변수에 대한 매핑이 조정되면 [(re)커뮤니티 사이트](/help/communities/sites-console.md#publishing-the-site)를 게시하여 게시 환경에 구성을 복제해야 합니다.](#mapped-analytics-to-aem-variables)
 
-## Analytics {#obtaining-reports-from-analytics}에서 보고서 가져오기
+## Analytics에서 보고서 가져오기 {#obtaining-reports-from-analytics}
 
 ### 보고서 관리 {#report-management}
 
@@ -624,7 +624,7 @@ Adobe Analytics 자격 증명이 암호화되어 있습니다. 작성자와 게�
 
 쿼리 간격의 기본값은 10초입니다.
 
-### 보고서 가져오기 프로그램 {#report-importer}
+### 보고서 가져오기 {#report-importer}
 
 Analytics가 활성화된 커뮤니티 사이트가 게시되면 기본 게시자의 [OSGi 구성](/help/sites-deploying/configuring-osgi.md), `AEM Communities Analytics Report Importer`이(가) CRXDE에 개별적으로 구성되지 않은 구성에 대한 기본 폴링 간격을 설정하도록 구성할 수 있습니다.
 
@@ -661,12 +661,12 @@ Analytics가 활성화된 커뮤니티 사이트가 게시되면 기본 게시�
 
 ![구성 요소 보고서](assets/component-report.png)
 
-## Analytics {#manage-user-data-in-analytics}에서 사용자 데이터 관리
+## Analytics에서 사용자 데이터 관리 {#manage-user-data-in-analytics}
 
 Adobe Analytics에서는 사용자 데이터에 액세스, 내보내기 및 삭제할 수 있는 API를 제공합니다. 자세한 내용은 [액세스 및 삭제 요청 제출](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)을 참조하십시오.
 
 ## 리소스 {#resources}
 
-* Adobe Experience Cloud:[Analytics 도움말 및 참조](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
-* AEM:[Adobe Analytics과 통합](/help/sites-administering/adobeanalytics.md)
-* AEM:[외부 공급자의 Analytics](/help/sites-administering/external-providers.md)
+* Adobe Experience Cloud: [Analytics 도움말 및 참조](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
+* AEM: [Adobe Analytics과 통합](/help/sites-administering/adobeanalytics.md)
+* AEM: [외부 공급자의 Analytics](/help/sites-administering/external-providers.md)
