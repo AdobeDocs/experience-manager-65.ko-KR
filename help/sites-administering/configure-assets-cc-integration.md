@@ -3,16 +3,16 @@ title: Experience Cloud과 AEM Assets 통합 구성
 description: Experience Cloud과 AEM Assets 통합을 구성하는 방법을 알아봅니다.
 contentOwner: AG
 feature: 자산 관리
-role: Business Practitioner, Architect, Administrator
+role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 1%
 
 ---
 
-# Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}과 AEM Assets 통합 구성
+# Experience Cloud과 AEM Assets 통합 구성 {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
 Adobe Experience Cloud 고객의 경우 Adobe Experience Manager Assets 내의 자산을 Adobe Creative Cloud과 동기화하거나 그 반대로 동기화할 수 있습니다. 자산을 Experience Cloud과 동기화하거나 그 반대로 동기화할 수 있습니다. [!DNL Adobe I/O]을 통해 이 동기화를 설정할 수 있습니다. 업데이트된 [!DNL Adobe Marketing Cloud] 이름은 [!DNL Adobe Experience Cloud]입니다.
 
@@ -36,7 +36,7 @@ Adobe Experience Cloud 고객의 경우 Adobe Experience Manager Assets 내의 �
 >Sharing assets between Adobe Experience Cloud and Adobe Creative Cloud requires administrator privileges on the AEM instance.
 -->
 
-## 응용 프로그램 {#create-an-application} 만들기
+## 애플리케이션 만들기 {#create-an-application}
 
 1. [https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/)에 로그인하여 Adobe 개발자 게이트웨이 인터페이스에 액세스합니다.
 
@@ -63,7 +63,7 @@ Adobe Experience Cloud 고객의 경우 Adobe Experience Manager Assets 내의 �
    >
    >**[!UICONTROL 응용 프로그램 ID]** 대신 **[!UICONTROL 응용 프로그램 암호]**&#x200B;를 실수로 복사하지 않도록 하십시오.
 
-## Experience Cloud {#add-a-new-configuration}에 새 구성 추가
+## Experience Cloud에 새 구성 추가 {#add-a-new-configuration}
 
 1. 로컬 AEM Assets 인스턴스의 사용자 인터페이스에서 AEM 로고를 클릭하고 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL 기존 Cloud Services]**&#x200B;로 이동합니다.
 
@@ -112,7 +112,7 @@ Adobe Experience Cloud 고객의 경우 Adobe Experience Manager Assets 내의 �
 
 1. 복제 레스트가 완료되면 테스트 결과가 끝날 때 성공 메시지를 확인합니다.
 
-## 사용자를 Experience Cloud {#add-users-to-experience-cloud}에 추가
+## Experience Cloud에 사용자 추가 {#add-users-to-experience-cloud}
 
 1. 관리자 자격 증명을 사용하여 Experience Cloud에 로그인합니다.
 1. 레일에서 **[!UICONTROL 관리]**&#x200B;로 이동한 다음 **[!UICONTROL Enterprise Dashboard]**&#x200B;를 클릭합니다.
@@ -127,7 +127,7 @@ Adobe Experience Cloud 고객의 경우 Adobe Experience Manager Assets 내의 �
 
 -->
 
-## AEM Assets과 Experience Cloud {#exchange-assets-between-aem-and-experience-cloud} 간 자산 교환
+## AEM Assets과 Experience Cloud 간 자산 교환 {#exchange-assets-between-aem-and-experience-cloud}
 
 1. AEM Assets에 로그인합니다.
 1. 자산 콘솔에서 폴더를 만들고 일부 자산을 업로드합니다. 예를 들어, 폴더 **mc-demo**&#x200B;을 만들고 자산을 폴더에 업로드합니다.
