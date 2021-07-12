@@ -6,9 +6,9 @@ uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
-role: Administrator
+role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -66,11 +66,11 @@ AEM 배포에 대해 구성된 데이터 저장소 지속성에 따라 초안 �
 | `processedXDP` | 제출된 편지를 만드는 데 사용되는 XDP 템플릿의 세부 정보를 포함합니다. 이 노드는 제출된 대상에 대해서만 만들어집니다. |
 | `submittedLetter` | 제출된 편지 데이터를 다운로드 가능한 이진 형식으로 저장합니다. 이 노드는 제출된 대상에 대해서만 만들어집니다. |
 
-## 사용자 데이터 {#access-and-delete-user-data} 액세스 및 삭제
+## 사용자 데이터 액세스 및 삭제 {#access-and-delete-user-data}
 
 구성된 데이터 저장소에서 초안 및 제출된 서신 데이터에 액세스할 수 있으며, 필요한 경우 삭제할 수 있습니다.
 
-### 사용자 데이터 {#access-user-data} 액세스
+### 사용자 데이터 액세스 {#access-user-data}
 
 서신 관리는 초안 및 제출된 편지 인스턴스를 찾고 액세스하는 데 사용할 수 있는 API를 제공합니다. API를 사용하여 편지 인스턴스 ID 또는 서신을 저장하거나 제출한 사용자를 사용하여 편지 인스턴스를 찾고 열 수 있습니다. 자세한 내용은 [API를 참조하여 문자 인스턴스](/help/forms/using/cm-apis-to-access-letter-instances.md)에 액세스하십시오.
 
