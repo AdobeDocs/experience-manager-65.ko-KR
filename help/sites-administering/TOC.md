@@ -7,8 +7,8 @@ user-guide-title: AEM 6.5 관리 사용 안내서
 breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: 관리
-role: Administrator
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 18%
@@ -22,7 +22,7 @@ ht-degree: 18%
 + 사이트 기능 {#introduction}
    + [웹 사이트 관리](msm-and-translation.md)
    + [비동기 작업](asynchronous-jobs.md)
-   + [컨텐츠 재사용:다중 사이트 관리자 및 Live Copy](msm.md)
+   + [컨텐츠 재사용: 다중 사이트 관리자 및 Live Copy](msm.md)
    + [Live Copy 개요 콘솔](msm-livecopy-overview.md)
    + [Live Copy 동기화 구성](msm-sync.md)
    + [Live Copy 생성 및 동기화](msm-livecopy.md)
