@@ -2,10 +2,10 @@
 title: JSON 스키마를 사용하여 적응형 Forms을 만드는 방법
 description: JSON 스키마를 양식 모델로 사용하여 적응형 양식을 만드는 방법을 알아보십시오. 기존 JSON 스키마를 사용하여 적응형 양식을 만들 수 있습니다. JSON 스키마 샘플을 사용하여 자세히 분석하고, JSON 스키마 정의에서 필드를 사전 구성하고, 적응형 양식 구성 요소에 대해 허용 가능한 값을 제한하며, 지원되지 않는 구문을 학습합니다.
 feature: 적응형 양식
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 5%
@@ -21,7 +21,7 @@ JSON 스키마를 양식 모델로 사용하여 적응형 양식을 작성하려
 * [적응형 양식 만들기](creating-adaptive-form.md)
 * [JSON 스키마](https://json-schema.org/)
 
-## JSON 스키마를 양식 모델 {#using-a-json-schema-as-form-model} 로 사용
+## 양식 모델로 JSON 스키마 사용  {#using-a-json-schema-as-form-model}
 
 [!DNL Adobe Experience Manager Forms] 에서는 기존 JSON 스키마를 양식 모델로 사용하여 적응형 양식 생성을 지원합니다. 이 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생성하거나 사용하는 구조를 나타냅니다. 사용하는 JSON 스키마는 [v4 사양](https://json-schema.org/draft-04/schema)과 호환되어야 합니다.
 
@@ -103,7 +103,7 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
  </tbody>
 </table>
 
-### 일반 스키마 속성 {#common-schema-properties}
+### 공통 스키마 속성 {#common-schema-properties}
 
 적응형 양식은 JSON 스키마에서 사용할 수 있는 정보를 사용하여 생성된 각 필드를 매핑합니다. 특히
 
@@ -332,7 +332,7 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 
 위의 예에서는 고객 레코드를 정의합니다. 여기서 각 고객은 배송 주소와 청구 주소를 모두 갖습니다. 두 주소의 구조는 동일합니다. 주소는 주소, 도시 및 주지가 있으므로 주소를 중복하지 않는 것이 좋습니다. 또한 나중에 변경할 수 있도록 필드를 손쉽게 추가 및 삭제할 수 있습니다.
 
-## JSON 스키마 정의 {#pre-configuring-fields-in-json-schema-definition}에 있는 필드 사전 구성
+## JSON 스키마 정의에서 필드 사전 구성 {#pre-configuring-fields-in-json-schema-definition}
 
 **aem:afProperties** 속성을 사용하여 JSON 스키마 필드를 사전 구성하여 사용자 지정 적응형 양식 구성 요소에 매핑할 수 있습니다. 예는 아래에 나와 있습니다.
 
@@ -354,7 +354,7 @@ JSON 스키마는 간단하고 복잡한 요소 유형으로 구성됩니다. �
 }
 ```
 
-## 양식 개체 {#configure-scripts-or-expressions-for-form-objects}에 대한 스크립트 또는 표현식을 구성합니다
+## 양식 객체에 대한 스크립트 또는 표현식 구성  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript는 적응형 양식의 표현식 언어입니다. 모든 표현식은 유효한 JavaScript 표현식이며, 적응형 양식 스크립팅 모델 API를 사용합니다. 양식 개체를 미리 구성하여 양식 이벤트에서 ](adaptive-form-expressions.md)식을 평가할 수 있습니다.[
 
@@ -585,7 +585,7 @@ JSON에서 이벤트를 사용하는 일부 예제는 초기화 이벤트 시 �
 
 다음은 이전에 언급된 예에 대한 샘플 JSON 코드입니다.
 
-### 초기화 이벤트 {#hiding-a-field-on-initialize-event} 시 필드 숨기기
+### 초기화 이벤트 시 필드 숨기기 {#hiding-a-field-on-initialize-event}
 
 ```json
 "name": {
@@ -598,7 +598,7 @@ JSON에서 이벤트를 사용하는 일부 예제는 초기화 이벤트 시 �
 }
 ```
 
-#### 값 커밋 이벤트 {#configure-value-of-another-field-on-value-commit-event}에 대한 다른 필드의 값 구성
+#### 값 커밋 이벤트에 대한 다른 필드의 값 구성 {#configure-value-of-another-field-on-value-commit-event}
 
 ```json
 "Income": {
@@ -622,7 +622,7 @@ JSON에서 이벤트를 사용하는 일부 예제는 초기화 이벤트 시 �
 }
 ```
 
-## 적응형 양식 구성 요소 {#limit-acceptable-values-for-an-adaptive-form-component} 의 허용 가능한 값 제한
+## 적응형 양식 구성 요소의 허용 가능한 값 제한 {#limit-acceptable-values-for-an-adaptive-form-component}
 
 JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 구성 요소에 허용 가능한 값을 제한할 수 있습니다.
 
@@ -720,7 +720,7 @@ JSON 스키마 요소에 다음 제한 사항을 추가하여 적응형 양식 �
  </tbody>
 </table>
 
-## 지원되지 않는 구문 {#non-supported-constructs}
+## 지원되지 않는 구문  {#non-supported-constructs}
 
 적응형 양식은 다음 JSON 스키마 구문을 지원하지 않습니다.
 
