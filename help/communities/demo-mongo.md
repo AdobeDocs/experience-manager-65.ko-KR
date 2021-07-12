@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
+role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
 
 ---
 
-# 데모 {#how-to-setup-mongodb-for-demo}에 대한 MongoDB를 설정하는 방법
+# 데모 MongoDB를 설정하는 방법 {#how-to-setup-mongodb-for-demo}
 
 ## 소개 {#introduction}
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ## MongoDB {#mongodb}
 
-### MongoDB {#install-mongodb} 설치
+### MongoDB 설치 {#install-mongodb}
 
 * [https://www.mongodb.org/](https://www.mongodb.org/)에서 MongoDB를 다운로드합니다.
 
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 * MongoDB는 AEM과 동일한 호스트에서 실행하거나 원격으로 실행할 수 있습니다.
 
-### MongoDB {#start-mongodb} 시작
+### MongoDB 시작 {#start-mongodb}
 
 * &lt;mongo-install>/bin/mongoom —dbpath  &lt;mongo-dbpath>
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 >
 >MongoDB가 *AEM 다음에*&#x200B;시작되면, **다시 시작** 모든 **AEM** 인스턴스를 다시 시작하여 MongoDB에 올바르게 연결합니다.
 
-### 데모 프로덕션 옵션:MongoDB 복제본 세트 {#demo-production-option-setup-mongodb-replica-set} 설정
+### 데모 프로덕션 옵션: MongoDB 복제본 세트 설정 {#demo-production-option-setup-mongodb-replica-set}
 
 다음 명령은 localhost에 3개의 노드가 있는 복제본 세트를 설정하는 예제입니다.
 
@@ -94,7 +94,7 @@ ht-degree: 1%
 
 ## Solr {#solr}
 
-### Solr {#install-solr} 설치
+### Solr 설치 {#install-solr}
 
 * [Apache Lucene](https://archive.apache.org/dist/lucene/solr/)에서 솔루션을 다운로드합니다.
 
@@ -108,7 +108,7 @@ ht-degree: 1%
    * 서비스가 필요하지 않습니다.
    * 설치된 Solr 폴더를 &lt;solr-install>이라고 합니다.
 
-### AEM Communities에 대한 솔루션 구성 {#configure-solr-for-aem-communities}
+### AEM Communities용 솔루션 구성 {#configure-solr-for-aem-communities}
 
 데모 목적으로 MSRP용 Solr 컬렉션을 구성하려면 다음 두 가지 결정을 수행해야 합니다(자세한 내용은 기본 설명서에 대한 링크 선택).
 
@@ -126,11 +126,11 @@ Solr 실행 방법은 설치 버전 및 방식에 따라 다를 수 있습니다
 
 기본 포트 8983을 사용하여 Solr HTTP 서버가 시작됩니다. Solr 콘솔로 이동하여 테스트할 Solr 콘솔을 가져올 수 있습니다.
 
-* 기본 콘솔:[http://localhost:8983/solr/](http://localhost:8983/solr/)
+* 기본 콘솔: [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
->Solr Console을 사용할 수 없는 경우 &lt;solrinstall>/example/logs 아래의 로그를 확인합니다. SOLR이 확인할 수 없는 특정 호스트 이름(예:&quot;user-macbook-pro&quot;)
+>Solr Console을 사용할 수 없는 경우 &lt;solrinstall>/example/logs 아래의 로그를 확인합니다. SOLR이 확인할 수 없는 특정 호스트 이름(예: &quot;user-macbook-pro&quot;)
 이 경우 etc/hosts 파일을 이 호스트 이름의 새 항목(예: 127.0.0.1 user-macbook-pro)으로 업데이트하면 Solr이 제대로 시작됩니다.
 
 ### SolrCloud {#solrcloud}
@@ -139,13 +139,13 @@ Solr 실행 방법은 설치 버전 및 방식에 따라 다를 수 있습니다
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
-## MongoDB를 일반 저장소로 식별 {#identify-mongodb-as-common-store}
+## MongoDB를 공용 스토어로 식별 {#identify-mongodb-as-common-store}
 
 필요한 경우 작성자 및 게시 AEM 인스턴스를 시작합니다.
 
 AEM이 MongoDB가 시작되기 전에 실행 중이라면 AEM 인스턴스를 다시 시작해야 합니다.
 
-기본 설명서 페이지의 지침을 따르십시오.[MSRP - MongoDB 공용 저장소](msrp.md)
+기본 설명서 페이지의 지침을 따르십시오. [MSRP - MongoDB 공용 저장소](msrp.md)
 
 ## 테스트 {#test}
 
@@ -161,7 +161,7 @@ MongoDB 공용 저장소를 테스트하고 확인하려면 게시 인스턴스�
 
    ![보기 주석](assets/view-comment.png)
 
-   참고:작성자의 *asipath* 아래에 JCR 노드가 있지만 이는 SCF 프레임워크에 대한 것입니다. 실제 UGC는 JCR에 없으며 MongoDB에 있습니다.
+   참고: 작성자의 *asipath* 아래에 JCR 노드가 있지만 이는 SCF 프레임워크에 대한 것입니다. 실제 UGC는 JCR에 없으며 MongoDB에 있습니다.
 
 1. mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**&#x200B;에서 UGC를 봅니다.
 
@@ -169,7 +169,7 @@ MongoDB 공용 저장소를 테스트하고 확인하려면 게시 인스턴스�
 
 1. 솔더에서 UGC 보기:
 
-   * 솔루션 대시보드로 이동합니다.[http://localhost:8983/solr/](http://localhost:8983/solr/)
+   * 솔루션 대시보드로 이동합니다. [http://localhost:8983/solr/](http://localhost:8983/solr/)
    * `core selector` 사용자가 `collection1` 을 선택합니다.
    * 선택 `Query`.
    * 선택 `Execute Query`.
