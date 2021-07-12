@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
-role: Administrator
+role: Admin
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 작성자 인스턴스에서 자산을 삭제하는 경우 게시 인스턴스에서도 자산이 삭제됩니다. AEM Forms 서버는 작성자 및 게시 인스턴스로 구성됩니다. 작성 인스턴스는 양식 자산 및 리소스를 만들고 관리하기 위한 것입니다. 게시 인스턴스에는 최종 사용자가 사용할 수 있는 게시된 양식 자산 및 관련 리소스가 포함되어 있습니다.
 
-## 양식 {#how-to-delete-a-form}을 삭제하는 방법
+## 양식을 삭제하는 방법 {#how-to-delete-a-form}
 
 1. `https://[hostname]:'port'/aem/forms.html.`에 액세스하여 AEM Forms 사용자 인터페이스에 로그인
 1. 로 이동하고 삭제할 양식을 선택합니다. 도구 모음에서 ![aem6forms_delete2](assets/aem6forms_delete2.png) 삭제 를 클릭하고 삭제 작업을 확인합니다.
@@ -42,7 +42,7 @@ ht-degree: 0%
    >
    >선택한 자산이 폴더이고 해당 계층의 그러한 자산이 포함되어 있는 경우 다른 자산을 개별적으로 삭제하거나 전체 폴더를 삭제합니다.
 
-## 참조된 XFA 양식 {#impact-of-deleting-a-referenced-xfa-form} 삭제에 따른 영향
+## 참조된 XFA 양식 삭제에 따른 영향 {#impact-of-deleting-a-referenced-xfa-form}
 
 AEM Forms에서 XFA 양식 템플릿은 적응형 양식 또는 다른 XFA 양식 템플릿에서 참조할 수 있습니다. 또한 템플릿은 리소스 또는 다른 XFA 템플릿을 참조할 수 있습니다.
 
