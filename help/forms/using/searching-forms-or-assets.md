@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 4%
@@ -72,11 +72,11 @@ AEM 양식 및 자산 검색에 대한 검색 필드 및 매개 변수 또는 �
 
 다음 상태 중 하나를 사용하여 자산을 검색할 수 있습니다.
 
-* **게시됨**:게시 후 게시되고 수정되지 않은 모든 자산을 검색합니다.
+* **게시됨**: 게시 후 게시되고 수정되지 않은 모든 자산을 검색합니다.
 
-* **게시 취소됨**:게시되지 않은 모든 자산을 검색합니다.
+* **게시 취소됨**: 게시되지 않은 모든 자산을 검색합니다.
 
-* **수정됨**:게시 후에 수정되거나 게시 취소된 모든 자산을 검색합니다.
+* **수정됨**: 게시 후에 수정되거나 게시 취소된 모든 자산을 검색합니다.
 
 ### 자산 유형 {#asset-type}
 
