@@ -10,16 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
+role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 2%
 
 ---
 
-# 전자 메일 {#configuring-email} 구성
+# 이메일 구성 {#configuring-email}
 
 AEM Communities은 다음 용도로 이메일을 사용합니다.
 
@@ -99,7 +99,7 @@ Communities 이메일 구성 인스턴스에 도달하려면 다음을 수행하
 
 ![email-reply-config](assets/email-reply-config.png)
 
-### 알림 구성 {#configuration-for-notifications}
+### 알림용 구성 {#configuration-for-notifications}
 
 이름 이메일이 있는 `AEM Communities Email Reply Configuration` OSGi 구성의 인스턴스는 수정 기능이 있습니다. 이 기능에는 이메일 회신이 포함되지 않습니다.
 
@@ -154,7 +154,7 @@ Communities 이메일 구성 인스턴스에 도달하려면 다음을 수행하
 
    추적기 ID를 메시지 본문에 추가하면 이 접두사가 사용됩니다. 기본값은 `Please do not remove this:`입니다.
 
-* **[!UICONTROL 이메일(HTML]**):이 확인란을 선택하면 콘텐츠 유형의 이메일이 로 설정됩니다 `"text/html;charset=utf-8"`. 기본값이 선택되어 있습니다.
+* **[!UICONTROL 이메일(HTML]**): 이 확인란을 선택하면 콘텐츠 유형의 이메일이 로 설정됩니다 `"text/html;charset=utf-8"`. 기본값이 선택되어 있습니다.
 
 * **[!UICONTROL 기본 사용자 이름]**
 
@@ -214,8 +214,8 @@ Communities 이메일 구성 인스턴스에 도달하려면 다음을 수행하
 * 관리자 권한으로 기본 게시자에 로그인하고 [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importers/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling)로 이동합니다.
 * 새로 만든 구성을 선택하고 다음 속성을 수정합니다.
 
-   * **feedType**:다음으로  `pop3s` 바꾸기  **`emailreply`**
-   * **소스**:소스의 프로토콜 `pop3s://` 을  **`emailreply://`**
+   * **feedType**: 다음으로  `pop3s` 바꾸기  **`emailreply`**
+   * **소스**: 소스의 프로토콜 `pop3s://` 을  **`emailreply://`**
 
 ![폴링 프로토콜](assets/polling-protocol.png)
 
