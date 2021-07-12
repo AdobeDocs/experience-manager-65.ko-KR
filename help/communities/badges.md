@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Communities Badge 콘솔에서는 수익을 내거나 커뮤니티에서 특정 
 
 작성 환경에서 Badge 콘솔로 이동합니다.
 
-* 전역 탐색에서:**[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 배지]**
+* 전역 탐색에서: **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 배지]**
 
 이 콘솔에는 현재 사용 가능한 배지와 새 배지를 추가할 수 있는 배지가 표시됩니다.
 
