@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
-role: Administrator
+role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
 
 ---
 
-# 커뮤니티에 대한 FFmpeg {#ffmpeg-for-communities}
+# 커뮤니티용 FFmpeg {#ffmpeg-for-communities}
 
 ## 개요 {#overview}
 
@@ -56,12 +56,12 @@ FFmpeg는 AEM *author* 인스턴스를 호스팅하는 서버에 설치해야 �
 * **[!UICONTROL DAM 자산 업데이트]**&#x200B;를 찾습니다.
 * 클래식 UI에서 편집할 워크플로우를 두 번 클릭하여 엽니다.
 
-   결과 위치:[http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
+   결과 위치: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
 * **[!UICONTROL FFmpeg 코드 변환]** 단계를 두 번 클릭하여 단계 속성 대화 상자에 액세스합니다.
 * **[!UICONTROL 프로세스]** 탭에서 다음을 수행합니다.
 
-   * **[!UICONTROL 배치]**:코드 변환을 비활성화하려면 모든 항목을 선택 취소합니다. 기본값:  `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+   * **[!UICONTROL 배치]**: 코드 변환을 비활성화하려면 모든 항목을 선택 취소합니다. 기본값:  `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
    ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
