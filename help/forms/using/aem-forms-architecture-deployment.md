@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
-role: Administrator
+role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 0%
 
 ---
 
-# AEM Forms {#architecture-and-deployment-topologies-for-aem-forms} 아키텍처 및 배포 토폴로지
+# AEM Forms을 위한 아키텍처 및 배포 토폴로지 {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## 아키텍처 {#architecture}
 
@@ -32,16 +32,16 @@ AEM Forms용 아키텍처에는 다음 구성 요소가 포함되어 있습니�
 * **Forms 서비스:** PDF 문서 작성, 조합, 배포 및 보관, 문서 액세스를 제한하는 디지털 서명 추가, 바코드 양식 디코딩과 같은 양식 관련 기능을 제공합니다. 이러한 서비스는 AEM에 공동 배포되는 사용자 지정 코드에 의해 공개적으로 소비될 수 있습니다.
 * **웹 레이어:** 공통 및 forms 서비스를 통해 구축된 JSP 또는 서블릿은 다음과 같은 기능을 제공합니다.
 
-   * **프런트 엔드 작성**:양식 작성 및 양식 관리 사용자 인터페이스로 양식을 작성하고 관리할 수 있습니다.
-   * **양식 표현물 및 제출 프런트** 엔드:AEM Forms 최종 사용자가 사용할 최종 사용자 인터페이스(예: 정부 웹 사이트에 액세스하는 시민)입니다. 양식 표현물(웹 브라우저에 양식 표시) 및 제출 기능을 제공합니다.
-   * **REST API**:JSP 및 서블릿은 forms mobile SDK와 같은 HTTP 기반 클라이언트가 원격 사용을 위해 양식 서비스의 하위 집합을 내보냅니다.
+   * **프런트 엔드 작성**: 양식 작성 및 양식 관리 사용자 인터페이스로 양식을 작성하고 관리할 수 있습니다.
+   * **양식 표현물 및 제출 프런트** 엔드: AEM Forms 최종 사용자가 사용할 최종 사용자 인터페이스(예: 정부 웹 사이트에 액세스하는 시민)입니다. 양식 표현물(웹 브라우저에 양식 표시) 및 제출 기능을 제공합니다.
+   * **REST API**: JSP 및 서블릿은 forms mobile SDK와 같은 HTTP 기반 클라이언트가 원격 사용을 위해 양식 서비스의 하위 집합을 내보냅니다.
 
 **OSGi의 AEM Forms:** OSGi 환경의 AEM Forms은 표준 AEM 작성자 또는 AEM Forms 패키지가 배포되는 AEM 게시입니다. [단일 서버 환경, 팜 및 클러스터된 설정](/help/sites-deploying/recommended-deploys.md)에서 OSGi에서 AEM Forms을 실행할 수 있습니다. 클러스터 설정은 AEM 작성자 인스턴스에만 사용할 수 있습니다.
 
 **JEE의 AEM Forms:** JEE의 AEM Forms은 JEE 스택에서 실행되는 AEM Forms 서버입니다. 여기에는 AEM Forms 추가 기능 패키지가 포함된 AEM 작성자 및 애플리케이션 서버에서 실행되는 단일 JEE 스택에 공동 배포되는 추가 AEM Forms JEE 기능이 있습니다. 단일 서버 및 클러스터된 설정에서 JEE에서 AEM Forms을 실행할 수 있습니다. AEM Forms on JEE는 문서 보안, 프로세스 관리 및 AEM Forms으로 업그레이드하는 LiveCycle 고객의 경우에만 필요합니다. 다음은 JEE에서 AEM Forms을 사용할 몇 가지 추가 시나리오입니다.
 
 * **HTML 작업 공간 지원(HTML 작업 공간 사용 고객):** JEE의 AEM Forms을 사용하면 처리 인스턴스에서 단일 사인온을 사용할 수 있고, 처리 인스턴스에서 렌더링되는 특정 자산을 제공하고 HTML 작업 공간 내에서 렌더링되는 양식 제출을 처리합니다.
-* **고급 추가 양식/대화형 통신 데이터 처리**:고급 프로세스 관리 기능이 필요한 복잡한 사용 사례에서 양식/대화형 통신 데이터를 추가 처리(및 결과를 적절한 데이터 저장소에 저장)하는 데 JEE의 AEM Forms을 사용할 수 있습니다.
+* **고급 추가 양식/대화형 통신 데이터 처리**: 고급 프로세스 관리 기능이 필요한 복잡한 사용 사례에서 양식/대화형 통신 데이터를 추가 처리(및 결과를 적절한 데이터 저장소에 저장)하는 데 JEE의 AEM Forms을 사용할 수 있습니다.
 
 AEM 구성 요소에 대해 다음과 같은 지원 서비스를 제공하는 JEE의 AEM Forms도 포함되어 있습니다.
 
@@ -67,12 +67,12 @@ AEM Forms on OSGi 및 JEE의 AEM Forms에는 모두 워크플로우 기능이 �
 
 * 최종 사용자를 위한 Forms 렌더링 및 제출.
 * 최종 기록 시스템에서 추가 처리 및 스토리지를 위해 제출된 원시 양식 데이터를 처리 인스턴스로 전송합니다. AEM Forms에 제공된 기본 구현은 AEM의 역복제 기능을 사용하여 구현됩니다. 대체 구현은 양식 데이터를 먼저 저장하는 대신 처리 서버로 직접 푸시할 수도 있습니다(후자는 역방향 복제를 활성화하기 위한 전제 조건임). 게시 인스턴스의 민감한 데이터 저장에 대한 우려가 있는 고객은 일반적으로 처리 인스턴스가 더 안전한 영역에 있으므로 이 [대체 구현](/help/forms/using/configuring-draft-submission-storage.md)에 액세스할 수 있습니다.
-* 대화형 커뮤니케이션 및 문자 렌더링 및 제출:대화형 통신 및 문자가 게시 인스턴스에 렌더링되고 해당 데이터가 저장 및 사후 처리를 위해 처리 인스턴스에 제출됩니다. 데이터는 게시 인스턴스에 로컬로 저장하고 나중에 처리 인스턴스(기본 옵션)에 다시 복제하거나 게시 인스턴스에 저장하지 않고 처리 인스턴스에 직접 푸시할 수 있습니다. 후자의 구현은 보안에 민감한 고객에게 유용합니다.
+* 대화형 커뮤니케이션 및 문자 렌더링 및 제출: 대화형 통신 및 문자가 게시 인스턴스에 렌더링되고 해당 데이터가 저장 및 사후 처리를 위해 처리 인스턴스에 제출됩니다. 데이터는 게시 인스턴스에 로컬로 저장하고 나중에 처리 인스턴스(기본 옵션)에 다시 복제하거나 게시 인스턴스에 저장하지 않고 처리 인스턴스에 직접 푸시할 수 있습니다. 후자의 구현은 보안에 민감한 고객에게 유용합니다.
 
 **처리 중:** Forms-Manager 그룹에 지정된 사용자가 없는 작성자 실행 모드에서 실행되는 AEM Forms 인스턴스입니다. OSGi의 JEE에 AEM Forms 또는 AEM Forms을 처리 인스턴스로 배포할 수 있습니다. 양식 작성 및 관리 활동이 처리 인스턴스에서 수행되지 않고 작성자 인스턴스에서만 발생하도록 사용자가 할당되지 않습니다. 처리 인스턴스를 사용하면 다음 기능을 사용할 수 있습니다.
 
 * **게시 인스턴스에서 도착하는 원시 양식 데이터 처리:**  이 작업은 주로 데이터가 도착할 때 트리거되는 AEM 워크플로우를 통해 처리 인스턴스에서 수행됩니다. 워크플로우는 즉시 제공되는 양식 데이터 모델 단계를 사용하여 데이터나 문서를 적절한 데이터 저장소에 보관할 수 있습니다.
-* **양식 데이터의 보안 저장소**:처리에서는 사용자와 격리된 원시 양식 데이터를 위한 방화벽 뒤 저장소를 제공합니다. 작성자 인스턴스의 양식 디자이너나 게시 인스턴스의 최종 사용자는 이 리포지토리에 액세스할 수 없습니다.
+* **양식 데이터의 보안 저장소**: 처리에서는 사용자와 격리된 원시 양식 데이터를 위한 방화벽 뒤 저장소를 제공합니다. 작성자 인스턴스의 양식 디자이너나 게시 인스턴스의 최종 사용자는 이 리포지토리에 액세스할 수 없습니다.
 
    >[!NOTE]
    >
@@ -80,7 +80,7 @@ AEM Forms on OSGi 및 JEE의 AEM Forms에는 모두 워크플로우 기능이 �
 
 * **게시 인스턴스에서 도착하는 서신 데이터의 저장 및 사후 처리:**  AEM 워크플로우는 해당 편지 정의의 선택적 사후 처리를 수행합니다. 이러한 워크플로우는 최종 처리된 데이터를 적절한 외부 데이터 저장소에 저장할 수 있습니다.
 
-* **HTML 작업 공간 호스팅**:처리 인스턴스는 HTML 작업 공간의 프론트런트를 호스팅합니다. HTML 작업 공간에서는 검토 및 승인 프로세스를 위해 연결된 작업/그룹 지정에 대한 UI를 제공합니다.
+* **HTML 작업 공간 호스팅**: 처리 인스턴스는 HTML 작업 공간의 프론트런트를 호스팅합니다. HTML 작업 공간에서는 검토 및 승인 프로세스를 위해 연결된 작업/그룹 지정에 대한 UI를 제공합니다.
 
 다음 이유로 인해 처리 인스턴스가 작성자 실행 모드에서 실행되도록 구성됩니다.
 
@@ -99,7 +99,7 @@ AEM Forms을 사용하면 단일 서버에서 모든 기능을 설정 및 실행
 
 ![기본 기능](assets/basic-features.png)
 
-### AEM Forms 프로세스 관리 사용 토폴로지 {#topology-for-using-aem-forms-process-management}
+### AEM Forms 프로세스 관리 사용을 위한 토폴로지 {#topology-for-using-aem-forms-process-management}
 
 AEM Forms 고객은 AEM Forms 프로세스 관리 기능을 사용할 계획입니다. 예를 들어, HTML Workspace는 아래에 표시된 토폴로지와 유사한 토폴로지를 가질 수 있습니다. JEE 서버의 AEM Forms은 단일 서버 또는 클러스터 구성에 있을 수 있습니다.
 
@@ -111,7 +111,7 @@ LiveCycle ES4에서 업그레이드하는 경우, 이 토폴로지는 JEE의 AEM
 
 게시 처리, 적응형 양식, HTML5 양식 및 대화형 커뮤니케이션 기능을 사용하지 않고 JEE 서버에서 AEM Forms을 프로세스 관리 기능(HTML 작업 공간)으로 사용할 계획을 세우는 고객에게 토폴로지를 권장합니다.
 
-### 적응형 양식, HTML5 양식, 대화형 통신 기능 {#topology-for-using-adaptive-forms-html-forms-interactive-communication-capabilities} 을 사용하기 위한 토폴로지
+### 적응형 양식, HTML5 양식, 대화형 통신 기능을 사용하기 위한 토폴로지 {#topology-for-using-adaptive-forms-html-forms-interactive-communication-capabilities}
 
 AEM Forms 고객이 AEM Forms 데이터 캡처 기능(예: 적응형 양식, HTML5 Forms, PDF forms)을 사용하려는 경우 아래에 표시된 토폴로지와 유사한 토폴로지를 사용할 수 있습니다. 이 토폴로지는 AEM Forms의 대화형 통신 기능을 사용하는 데에도 권장됩니다.
 
@@ -124,21 +124,21 @@ AEM Forms 고객이 AEM Forms 데이터 캡처 기능(예: 적응형 양식, HTM
 * 대화형 통신 에이전트 UI는 일반적으로 조직 내에서 실행됩니다. 따라서 개인 네트워크 내에 에이전트 UI용 게시 서버를 유지할 수 있습니다.
 * JEE 서버의 AEM Forms에 내장된 OSGi 인스턴스의 AEM Forms는 OSGi 및 감시 폴더에서 Forms 중심 워크플로우를 실행할 수도 있습니다.
 
-## OSGi {#sample-physical-topologies-for-using-aem-forms-on-osgi}에서 AEM Forms을 사용하기 위한 샘플 물리적 토폴로지
+## OSGi에서 AEM Forms을 사용하기 위한 샘플 물리적 토폴로지 {#sample-physical-topologies-for-using-aem-forms-on-osgi}
 
-### 데이터 캡처, 대화형 커뮤니케이션, OSGi의 양식 중심의 워크플로우 {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
+### 데이터 캡처, 대화형 커뮤니케이션, OSGi의 양식 중심의 워크플로우를 위한 토폴로지 {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
 
 AEM Forms 고객이 AEM Forms 데이터 캡처 기능(예: 적응형 양식, HTML5 Forms, PDF forms)을 사용하려는 경우 아래에 표시된 토폴로지와 유사한 토폴로지를 사용할 수 있습니다. 또한 이 토폴로지는 OSGi 기능에서 대화형 통신 및 Forms 중심의 워크플로우(예: 비즈니스 프로세스 워크플로우에 AEM 받은 편지함 및 AEM Forms 앱 사용)를 사용하는 데에도 권장됩니다.
 
 ![interactive-use-cases-af-cm-osgi-workflow](assets/interactive-use-cases-af-cm-osgi-workflow.png)
 
-### 오프라인 일괄 처리 처리를 위해 감시 폴더 기능을 사용하는 토폴로지 {#topology-for-using-watched-folder-capabilities-for-offline-batch-processing}
+### 오프라인 일괄 처리를 위해 감시 폴더 기능을 사용하는 토폴로지 {#topology-for-using-watched-folder-capabilities-for-offline-batch-processing}
 
 일괄 처리를 위해 감시 폴더를 사용하려는 AEM Forms 고객은 아래 표시된 토폴로지와 유사한 토폴로지를 사용할 수 있습니다. 토폴로지에는 클러스터된 환경이 표시되지만 로드에 따라 단일 인스턴스 또는 AEM Forms 서버 팜을 사용하기로 결정합니다. 타사 데이터 소스는 고유한 기록 시스템입니다. 감시 폴더의 입력 소스 역할을 합니다. 또한 토폴로지는 인쇄 파일 형태로 출력을 표시합니다. 출력 컨텐츠를 파일 시스템에 저장하고, 이메일을 통해 전송하며, 다른 사용자 지정 방법을 사용하여 출력을 사용할 수도 있습니다.
 
 ![오프라인 일괄 처리-via-watched 폴더](assets/offline-batch-processing-via-watched-folders.png)
 
-### 오프라인 API 기반 처리를 위해 문서 서비스 기능을 사용하는 토폴로지 {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
+### 오프라인 API 기반 처리를 위한 문서 서비스 기능을 사용하는 토폴로지 {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
 
 AEM Forms 고객은 문서 서비스 기능만 사용하려는 경우 아래 표시된 토폴로지와 유사한 토폴로지를 사용할 수 있습니다. 이 토폴로지는 OSGi 서버에서 AEM Forms 클러스터를 사용하는 것이 좋습니다. 이 토폴로지는 대부분의 사용자가 프로그래밍 방식으로(API 사용) AEM Forms 서버의 액세스 기능을 사용하고 사용자 인터페이스를 통한 개입이 최소한으로 필요한 경우 권장됩니다. 토폴로지는 여러 소프트웨어 클라이언트 시나리오에 매우 유용합니다. 예를 들어 PDF Generator 서비스를 사용하는 여러 클라이언트가 필요 시 PDF 문서를 작성할 수 있습니다.
 
