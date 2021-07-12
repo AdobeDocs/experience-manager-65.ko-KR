@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2548'
 ht-degree: 0%
 
 ---
 
-# 자산을 AEM Forms{#importing-and-exporting-assets-to-aem-forms}으로 가져오기 및 내보내기
+# AEM Forms으로 자산 가져오기 및 내보내기{#importing-and-exporting-assets-to-aem-forms}
 
 다양한 AEM Forms 인스턴스 간에 양식 및 관련 자산, 테마, 데이터 사전, 문서 조각 및 문자를 이동할 수 있습니다. 이러한 이동은 시스템을 마이그레이션하거나 스테이지 서버에서 프로덕션 서버로 양식을 이동할 때 필요합니다. AEM Forms UI를 통해 업로드하고 가져올 수 있는 자산을 내보내거나 가져오는 데 Forms UI를 사용하는 것이 좋습니다. 이러한 자산을 내보내거나 가져올 때는 AEM 패키지 관리자를 사용하지 않는 것이 좋습니다.
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 
 
-## Forms 및 문서 자산 {#download-or-upload-forms-amp-documents-assets} 을 다운로드하거나 업로드합니다.
+## Forms 및 문서 자산 다운로드 또는 업로드 {#download-or-upload-forms-amp-documents-assets}
 
 AEM Forms 사용자 인터페이스를 사용하면 AEM CRX-package 또는 binary 파일로 자산을 다운로드하여 AEM 인스턴스에서 자산을 내보낼 수 있습니다. 그런 다음 다운로드한 AEM CRX-package 또는 binary 파일을 다른 AEM 인스턴스로 가져올 수 있습니다.
 
@@ -78,11 +78,11 @@ Forms 및 문서 자산을 업로드하려면
    >
    >패키지를 업로드해도 기존 폴더 계층 구조가 바뀌지 않습니다. 예를 들어 한 서버에 &#39;Training&#39;이라는 적응형 양식이 있는 경우 /content/dam/formsanddocuments 위치에 있습니다. 적응형 양식을 다운로드하고 다른 서버에 양식을 업로드합니다. 두 번째 서버에도 같은 위치에 이름이 &#39;Training&#39;인 폴더가 있습니다. /content/dam/formsanddocuments. 업로드에 실패합니다.
 
-## 테마 {#downloading-or-uploading-a-theme} 다운로드 또는 업로드
+## 테마 다운로드 또는 업로드 {#downloading-or-uploading-a-theme}
 
 AEM Forms을 사용하면 테마를 생성, 다운로드 또는 업로드할 수 있습니다. 테마는 양식, 문서 및 문자와 같은 다른 자산과 같이 만들어집니다. 테마를 만들고 다운로드하여 별도의 인스턴스에 업로드하여 다시 사용할 수 있습니다. 주제에 대한 자세한 내용은 [AEM Forms의 테마](../../forms/using/themes.md)를 참조하십시오.
 
-### 테마 {#downloading-a-theme} 다운로드
+### 테마 다운로드 {#downloading-a-theme}
 
 다른 프로젝트 또는 인스턴스에서 사용할 수 있는 AEM Forms의 테마를 내보낼 수 있습니다. AEM에서 인스턴스에 업로드할 수 있는 zip 파일로 테마를 다운로드할 수 있습니다.
 
@@ -92,7 +92,7 @@ AEM Forms을 사용하면 테마를 생성, 다운로드 또는 업로드할 수
 1. Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) 아이콘 > 탐색 ![나침반](assets/compass.png) 아이콘> Forms> 테마를 탭합니다.
 1. 테마를 선택하고 **다운로드**&#x200B;를 누릅니다. 테마는 아카이브(.zip 파일)로 다운로드됩니다.
 
-### 테마 {#uploading-a-theme} 업로드
+### 테마 업로드 {#uploading-a-theme}
 
 프로젝트에서 스타일 사전 설정으로 생성된 테마를 사용할 수 있습니다. 다른 사용자가 만든 테마 패키지를 프로젝트에서 업로드하여 가져올 수 있습니다.
 
@@ -126,7 +126,7 @@ AEM Forms을 사용하면 테마를 생성, 다운로드 또는 업로드할 수
 
    .cmp 파일에는 내보낸 자산이 포함되어 있습니다. .cmp 파일을 다른 사용자와 공유할 수 있습니다. 다른 사용자는 다른 서버에 .cmp 파일을 가져와서 새 서버의 모든 자산을 가져올 수 있습니다.
 
-### 모든 서신 관리 자산을 패키지 {#export-all-the-correspondence-management-assets-as-a-package}로 내보냅니다.
+### 모든 서신 관리 자산을 패키지로 내보내기 {#export-all-the-correspondence-management-assets-as-a-package}
 
 이 옵션을 사용하여 모든 서신 관리 자산 및 관련 종속성을 AEM Forms 인스턴스에서 패키지로 다운로드합니다.
 
@@ -157,7 +157,7 @@ AEM Forms을 사용하면 테마를 생성, 다운로드 또는 업로드할 수
 
    패키지의 자산을 서신 관리의 다른 인스턴스에 추가하려면 [패키지를 AEM Forms 인스턴스](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)에 가져옵니다.
 
-### 문서 조각, 편지 및/또는 데이터 사전을 서신 관리 {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}에 가져오기
+### 문서 조각, 편지 및/또는 데이터 사전을 서신 관리로 가져오기 {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
 .cmp 파일로 내보낸 자산을 가져올 수 있습니다. .cmp 파일에는 하나 이상의 문자, 데이터 사전, 문서 조각 및 종속 자산이 있을 수 있습니다.
 
@@ -170,14 +170,14 @@ AEM Forms을 사용하면 테마를 생성, 다운로드 또는 업로드할 수
 
    자산을 가져온 후 자산의 다음 속성이 업데이트되고 다른 속성은 동일하게 유지됩니다.
 
-   * 작성자:자산을 서버에 가져온 사용자의 ID를 표시합니다
-   * 수정됨:자산을 서버에 가져온 시간
+   * 작성자: 자산을 서버에 가져온 사용자의 ID를 표시합니다
+   * 수정됨: 자산을 서버에 가져온 시간
 
    >[!NOTE]
    >
    >XDP를 업로드하려면(cmp 파일의 일부나 다른 방법)에서 forms-power-users 그룹의 일부여야 합니다. 액세스 권한이 필요하면 관리자에게 문의하십시오.
 
-## 워크플로 응용 프로그램 {#export-a-workflow-application} 내보내기
+## 워크플로우 애플리케이션 내보내기 {#export-a-workflow-application}
 
 AEM 패키지 관리자를 사용하여 워크플로우 애플리케이션을 내보낼 수 있습니다. 절차는 다음과 같습니다.
 
@@ -223,7 +223,7 @@ AEM Forms 사용자 인터페이스는 폴더를 사용하여 자산을 정렬�
 
    ![ededeletedownloadaflolder](assets/editdeletedownloadafolder.png)
 
-### 하나 이상의 자산 또는 문자 {#create-copies-of-one-or-more-assets-or-letters} 사본 만들기
+### 하나 이상의 자산 또는 문자의 사본 만들기 {#create-copies-of-one-or-more-assets-or-letters}
 
 기존 자산과 문자를 사용하여 비슷한 속성, 콘텐츠 및 상속된 자산과 문자를 신속하게 만들 수 있습니다. 데이터 사전, 문서 조각 및 문자를 복사하여 붙여넣을 수 있습니다.
 
