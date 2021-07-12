@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 1%
@@ -31,15 +31,15 @@ ht-degree: 1%
 
 캐싱에 사용할 수 있는 옵션은 다음과 같습니다.
 
-* **없음**:아티팩트를 캐시하지 않도록 강제 적용합니다. 따라서 실제로 성능이 저하되고 캐시가 없기 때문에 높은 메모리 가용성이 필요합니다.
-* **보수**:인라인 조각 및 이미지가 포함된 템플릿과 같이 양식을 렌더링하기 전에 생성된 중간 아티팩트만 캐시하도록 지시합니다.
-* **공격적**:강제 적용에서는 Reactive 캐싱 수준의 모든 아티팩트 외에 렌더링된 HTML 컨텐츠를 포함하여 캐싱할 수 있는 거의 모든 항목을 캐시합니다. 따라서 성능이 가장 뛰어나지만 캐시된 아티팩트를 저장하는 데 더 많은 메모리를 사용합니다. 공격적인 캐싱 전략은 렌더링된 컨텐츠가 캐싱될 때 양식을 렌더링할 때 일관된 시간 성능을 얻음을 의미합니다.
+* **없음**: 아티팩트를 캐시하지 않도록 강제 적용합니다. 따라서 실제로 성능이 저하되고 캐시가 없기 때문에 높은 메모리 가용성이 필요합니다.
+* **보수**: 인라인 조각 및 이미지가 포함된 템플릿과 같이 양식을 렌더링하기 전에 생성된 중간 아티팩트만 캐시하도록 지시합니다.
+* **공격적**: 강제 적용에서는 Reactive 캐싱 수준의 모든 아티팩트 외에 렌더링된 HTML 컨텐츠를 포함하여 캐싱할 수 있는 거의 모든 항목을 캐시합니다. 따라서 성능이 가장 뛰어나지만 캐시된 아티팩트를 저장하는 데 더 많은 메모리를 사용합니다. 공격적인 캐싱 전략은 렌더링된 컨텐츠가 캐싱될 때 양식을 렌더링할 때 일관된 시간 성능을 얻음을 의미합니다.
 
 AEM Forms의 기본 캐시 설정이 최적의 성능을 발휘하기에 충분하지 않을 수 있습니다. 따라서 다음 설정을 사용하는 것이 좋습니다.
 
-* **캐시 전략**:공격적
-* **캐시 크기** (양식 수의 조건):필요에 따라
-* **최대 개체 크기**:필요에 따라
+* **캐시 전략**: 공격적
+* **캐시 크기** (양식 수의 조건): 필요에 따라
+* **최대 개체 크기**: 필요에 따라
 
 ![모바일 Forms 구성](assets/snap.png)
 
@@ -62,7 +62,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 >
 >권장되는 설정은 Windows 2008 R2 8 Core 및 Oracle HotSpot 1.7(64비트) JDK이며 시스템 구성에 따라 확대하거나 축소할 수 있습니다.
 
-## 웹 서버 {#using-a-web-server} 사용
+## 웹 서버 사용 {#using-a-web-server}
 
 적응형 양식 및 HTML5 양식은 HTML5 형식으로 렌더링됩니다. 결과 출력은 양식 크기 및 양식 이미지와 같은 요소에 따라 클 수 있습니다. 데이터 전송을 최적화하기 위해 권장되는 방법은 요청을 제공하는 웹 서버를 사용하여 HTML 응답을 압축하는 것입니다. 이 접근 방식은 응답 크기, 네트워크 트래픽, 서버와 클라이언트 시스템 간의 데이터를 스트리밍하는 데 필요한 시간을 줄입니다.
 
@@ -76,9 +76,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 **운영 체제에 적용할 수 있는 Apache 웹 서버 소프트웨어를 얻습니다.**
 
-* Windows:apache HTTP Server Project 사이트에서 Apache 웹 서버를 다운로드합니다.
-* Solaris 64비트:solaris용 Sunfreeware 웹 사이트에서 Apache 웹 서버를 다운로드합니다.
-* Linux:apache 웹 서버는 Linux 시스템에 미리 설치됩니다.
+* Windows: apache HTTP Server Project 사이트에서 Apache 웹 서버를 다운로드합니다.
+* Solaris 64비트: solaris용 Sunfreeware 웹 사이트에서 Apache 웹 서버를 다운로드합니다.
+* Linux: apache 웹 서버는 Linux 시스템에 미리 설치됩니다.
 
 Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. 구성은 HTTP를 사용하여 최적화를 위한 것입니다.
 
@@ -140,7 +140,7 @@ Apache는 HTTP 프로토콜을 사용하여 CRX와 통신할 수 있습니다. �
 
    crx 서버에 액세스하려면 `https://'server':80` 을 사용하십시오. 여기서 `server`은 Apache 서버가 실행 중인 서버의 이름입니다.
 
-## AEM Forms {#using-an-antivirus-on-server-running-aem-forms} 실행 중인 서버에서 안티바이러스 사용
+## AEM Forms을 실행하는 서버에서 안티바이러스 사용 {#using-an-antivirus-on-server-running-aem-forms}
 
 바이러스 백신 소프트웨어를 실행하는 서버에서 성능이 저하될 수 있습니다. 항상 안티바이러스(On-Access Scanning) 소프트웨어가 시스템의 모든 파일을 검색합니다. 이렇게 하면 서버 속도가 느려질 수 있고 AEM Forms의 성능이 영향을 받습니다.
 
