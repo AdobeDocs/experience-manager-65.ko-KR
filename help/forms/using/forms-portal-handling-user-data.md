@@ -7,9 +7,9 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
-role: Administrator
+role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 [!DNL AEM Forms] 포털에서는 페이지에 적응형 양식, HTML5 양식 및 기타 Forms 자산을 나열하는 데 사용할 수 있는 구성 요소를  [!DNL AEM Sites] 제공합니다. 또한 로그인한 사용자를 위해 초안 및 제출된 적응형 양식 및 HTML5 양식을 표시하도록 구성할 수 있습니다. forms 포털에 대한 자세한 내용은 [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)를 참조하십시오.
 
-로그인한 사용자가 적응형 양식을 초안으로 저장하거나 제출하면 양식 포털의 초안 및 제출 탭에 표시됩니다. 초안 또는 제출된 양식의 데이터는 AEM 배포를 위해 구성된 데이터 저장소에 저장됩니다. 익명 사용자의 초안 및 제출은 양식 포털 페이지에 표시되지 않습니다.하지만 데이터는 구성된 데이터 저장소에 저장됩니다. 자세한 내용은 초안 및 제출 [에 대한 저장소 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md)을 참조하십시오.
+로그인한 사용자가 적응형 양식을 초안으로 저장하거나 제출하면 양식 포털의 초안 및 제출 탭에 표시됩니다. 초안 또는 제출된 양식의 데이터는 AEM 배포를 위해 구성된 데이터 저장소에 저장됩니다. 익명 사용자의 초안 및 제출은 양식 포털 페이지에 표시되지 않습니다. 하지만 데이터는 구성된 데이터 저장소에 저장됩니다. 자세한 내용은 초안 및 제출 [에 대한 저장소 서비스 구성](/help/forms/using/configuring-draft-submission-storage.md)을 참조하십시오.
 
 ## 사용자 데이터 및 데이터 저장소 {#user-data-and-data-stores}
 
@@ -62,7 +62,7 @@ Forms 포털은 다음 시나리오에서 초안 및 제출된 양식에 대한 
  </tbody>
 </table>
 
-## 사용자 데이터 {#access-and-delete-user-data} 액세스 및 삭제
+## 사용자 데이터 액세스 및 삭제 {#access-and-delete-user-data}
 
 구성된 데이터 저장소에서 로그인 및 익명 사용자에 대한 초안 및 제출된 양식 데이터에 액세스할 수 있으며, 필요한 경우 삭제할 수 있습니다.
 
@@ -70,7 +70,7 @@ Forms 포털은 다음 시나리오에서 초안 및 제출된 양식에 대한 
 
 로그인과 익명 사용자에 대한 AEM 인스턴스(작성자, 게시 또는 원격)의 모든 초안 및 제출된 양식 데이터는 해당 AEM 저장소의 `/content/forms/fp/` 노드에 저장됩니다. 로그인한 사용자 또는 익명 사용자가 초안을 저장하거나 양식을 제출할 때마다 각각의 초안 또는 제출과 연관된 각 첨부 파일에 대해 `draft ID` 또는 `submission ID`, `user data ID` 및 임의의 `ID`이 생성됩니다.
 
-#### 사용자 데이터 {#access-user-data} 액세스
+#### 사용자 데이터 액세스 {#access-user-data}
 
 로그인한 사용자가 초안을 저장하거나 양식을 제출하면 하위 노드가 사용자 ID로 만들어집니다. 예를 들어, 사용자 ID가 `srose`인 Sarah Rose에 대한 초안 및 제출 데이터는 AEM 저장소의 `/content/forms/fp/srose/` 노드에 저장됩니다. 사용자 ID 노드 내에서 데이터는 계층 구조로 구성됩니다.
 
@@ -106,7 +106,7 @@ AEM이 데이터베이스에 데이터를 저장하도록 구성된 경우, Form
 * 메타데이터
 * additionalmetadata
 
-#### 사용자 데이터 {#access-user-data-1} 액세스
+#### 사용자 데이터 액세스 {#access-user-data-1}
 
 데이터베이스 테이블에서 로그인과 익명 사용자에 대한 초안 및 제출 데이터에 액세스하려면 다음 데이터베이스 명령을 실행합니다. 쿼리에서 `logged-in user` 을 액세스하려는 데이터의 사용자 ID나 익명 사용자의 `anonymous` 로 바꿉니다.
 
