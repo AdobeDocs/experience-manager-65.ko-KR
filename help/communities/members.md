@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
-role: Administrator
+role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -24,11 +24,11 @@ ht-degree: 4%
 
 AEM Communities 기능을 사용하려면 게시 환경에서 커뮤니티에 참여하기 전에 사이트 방문자를 등록하고 로그인해야 하는 경우가 많습니다. 해당 사용자 등록은 게시 환경에만 있어야 하며, 일반적으로 이를 *구성원*&#x200B;이라고 하여 작성 환경에 등록된 *사용자*&#x200B;와 구분합니다.
 
-### 게시 {#members-users-on-publish}의 구성원(사용자)
+### 게시할 구성원(사용자) {#members-users-on-publish}
 
 커뮤니티 구성원 및 그룹 콘솔을 사용하여 *게시* 환경에 등록된 구성원 및 구성원 그룹은 *author* 환경에서 만들고 관리할 수 있습니다. 이 작업은 [터널 서비스](deploy-communities.md#tunnel-service-on-author)가 활성화된 경우에만 가능합니다.
 
-### 작성자 {#users-on-author}의 사용자
+### 작성자의 사용자 {#users-on-author}
 
 *author* 환경에 등록된 사용자 및 그룹을 관리하려면 플랫폼의 보안 콘솔을 사용해야 합니다.
 
@@ -80,7 +80,7 @@ AEM Communities 기능을 사용하려면 게시 환경에서 커뮤니티에 �
 
 ![create-member1](assets/create-member1.png)
 
-### 일반 - 멤버 세부 정보 {#general-member-details}
+### 일반 - 구성원 세부 정보 {#general-member-details}
 
 대부분의 필드는 구성원이 나중에 해당 프로필을 채울 수 있는 선택 필드입니다.
 
@@ -206,7 +206,7 @@ ID가 기본적으로 이메일 주소로 설정되면 이메일 주소가 변�
 
 * **[!UICONTROL 저장]**&#x200B;을 선택합니다
 
-## 승인된 관리자 {#authorized-administrators}
+## 권한 있는 관리자 {#authorized-administrators}
 
 커뮤니티 구성원 콘솔에서 구성원을 사용하여 작업할 때는 적절한 권한이 있는 사용자로 로그인하고 [터널 서비스](deploy-communities.md#tunnel-service-on-author)에서 사용하는 복제 에이전트를 올바르게 구성해야 합니다.
 
