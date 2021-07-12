@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
-role: Administrator
+role: Admin
 exl-id: b635e2ed-4637-4b2f-a746-ec8dc7541bab
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -66,14 +66,14 @@ ht-degree: 1%
 
 1. **[MySQL용 JDBC 드라이버 설치](deploy-communities.md#jdbc-driver-for-mysql)**
 
-   웹 콘솔 사용(번들):*http://localhost:4502/system/console/bundles*
+   웹 콘솔 사용(번들): *http://localhost:4502/system/console/bundles*
 
    SCORM 패키지 설치 전 *설치*
 
 1. **[SCORM 패키지 설치](deploy-communities.md#scorm-package)**
 
 
-   패키지 관리자 사용:*http://localhost:4502/crx/packmgr/*
+   패키지 관리자 사용: *http://localhost:4502/crx/packmgr/*
 
 **모든 서버에서:**
 
@@ -93,21 +93,21 @@ ht-degree: 1%
 
 1. **[JDBC 접속 풀 구성](mysql.md#configure-jdbc-connections)**
 
-   웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
+   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
 
 1. **[SCORM 엔진 서비스 구성](mysql.md#aem-communities-scormengine-service)**
 
-   웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
+   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
 
 1. **[CSRF 필터 구성](mysql.md#adobe-granite-csrf-filter)**
 
-   웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
+   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
 
 **작성자 인스턴스:**
 
 1. (*선택 사항*) **[Analytics 서비스 구성](analytics.md)**
 
-   도구, 배포, Cloud Services 콘솔 사용:*http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   도구, 배포, Cloud Services 콘솔 사용: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[FFmpeg 구성](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
@@ -115,11 +115,11 @@ ht-degree: 1%
 
 1. **[터널 서비스 활성화](deploy-communities.md#tunnel-service-on-author)**
 
-   웹 콘솔 사용(configMgr):*http://localhost:4502/system/console/configMgr*
+   웹 콘솔 사용(configMgr): *http://localhost:4502/system/console/configMgr*
 
 1. **[커뮤니티 관리자 만들기](users.md#creating-community-members)**
 
-   작성 환경의 경우 클래식 UI 보안 콘솔을 사용합니다.*http://localhost:4502/useradmin*
+   작성 환경의 경우 클래식 UI 보안 콘솔을 사용합니다. *http://localhost:4502/useradmin*
 
    경로 = /home/users/community로 사용자 만들기
 
