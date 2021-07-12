@@ -10,22 +10,22 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 12%
 
 ---
 
-# Designer{#installing-and-configuring-designer} 설치 및 구성
+# 디자이너 설치 및 구성{#installing-and-configuring-designer}
 
 ## 전제 조건 {#pre-requisites}
 
 AEM Forms Designer 설치 프로그램에는 32비트 버전의 [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) 및 [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package)이 필요합니다. 설치를 시작하기 전에 위에서 설명한 재배포 가능 런타임 패키지가 설치되어 있는지 확인하십시오.
 
-## Designer {#install-designer} 설치
+## Designer 설치 {#install-designer}
 
 디자이너는 독립 실행형 설치 프로그램으로 사용할 수 있으며 WorkBench와 함께 번들로 제공됩니다. Designer용 독립형 설치 프로그램을 사용하는 경우 다음 단계를 수행하십시오.
 
