@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-strategy: max-2018
 discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 3%
@@ -33,7 +33,7 @@ ht-degree: 3%
 >
 >업그레이드가 부족한 경우, 서신 관리 자산의 경우 자산을 가져올 때마다 마이그레이션을 실행할 수 있습니다. 서신 관리 마이그레이션의 경우 Forms 호환성 패키지가 설치되어 있어야 합니다.
 
-## 마이그레이션 접근 방법 {#approach-to-migration}
+## 마이그레이션 방법 {#approach-to-migration}
 
 [AEM Forms 6.4, 6.3 또는 6.2에서 최신 버전의 AEM Forms 6.5로 업그레이드하거나 새로 설치할 수 있습니다. ](../../forms/using/upgrade.md) 이전 설치를 업그레이드했는지 또는 새 설치를 수행했는지 여부에 따라 다음 중 하나를 수행해야 합니다.
 
@@ -55,7 +55,7 @@ ht-degree: 3%
 
 서신 관리 자산의 경우:
 
-* 이전 플랫폼에서 가져온 자산의 경우 속성이 추가됩니다.**fd:version=1.0**
+* 이전 플랫폼에서 가져온 자산의 경우 속성이 추가됩니다. **fd:version=1.0**
 * AEM 6.1 Forms이므로 주석을 즉시 사용할 수 없습니다. 이전에 추가된 주석은 자산에서 사용할 수 있지만 인터페이스에 자동으로 표시되지 않습니다. AEM Forms 사용자 인터페이스에서 extendedProperties 속성을 사용자 정의하여 주석을 표시해야 합니다.
 * LiveCycle ES4와 같은 일부 이전 버전에서는 Flex RichTextEditor를 사용하여 텍스트가 편집되었지만 AEM 6.1 Forms으로 HTML 편집기가 사용됩니다. 이러한 글꼴, 글꼴 크기 및 글꼴 여백의 렌더링 및 모양 때문에 작성자 사용자 인터페이스의 이전 버전과 다를 수 있습니다. 그러나 문자를 렌더링할 때 문자가 동일하게 표시됩니다.
 * 텍스트 모듈의 목록이 개선되어 이제 다르게 렌더링됩니다. 시각적인 차이가 있을 수 있습니다. 텍스트 모듈에서 목록을 사용하는 문자를 렌더링하고 보는 것이 좋습니다.
@@ -74,7 +74,7 @@ ht-degree: 3%
 
 자산을 변경하거나 자산을 만들기 전에 마이그레이션 유틸리티를 실행합니다. 변경하거나 자산을 만든 후에는 유틸리티를 실행하지 않는 것이 좋습니다. 마이그레이션 프로세스가 실행되는 동안 서신 관리 또는 적응형 Forms 자산 사용자 인터페이스가 열리지 않았는지 확인하십시오.
 
-마이그레이션 유틸리티를 처음 실행하면 다음과 같은 경로 및 이름으로 로그가 생성됩니다.\[aem-installation-directory]\cq-quickstart\logs\aem-forms-migration.log 이 로그는 자산 이동과 같은 서신 관리 및 적응형 Forms 마이그레이션 정보로 계속 업데이트됩니다.
+마이그레이션 유틸리티를 처음 실행하면 다음과 같은 경로 및 이름으로 로그가 생성됩니다. \[aem-installation-directory]\cq-quickstart\logs\aem-forms-migration.log 이 로그는 자산 이동과 같은 서신 관리 및 적응형 Forms 마이그레이션 정보로 계속 업데이트됩니다.
 
 >[!NOTE]
 >
@@ -146,30 +146,30 @@ ht-degree: 3%
 
    * 양식 데이터 모델 클라우드 서비스
 
-      * 소스 경로:/etc/cloudservices/fdm
-      * Target 경로:/conf/global/settings/cloudconfigs/fdm
+      * 소스 경로: /etc/cloudservices/fdm
+      * Target 경로: /conf/global/settings/cloudconfigs/fdm
    * Recaptcha
 
-      * 소스 경로:/etc/cloudservices/recaptcha
-      * Target 경로:/conf/global/settings/cloudconfigs/recaptcha
+      * 소스 경로: /etc/cloudservices/recaptcha
+      * Target 경로: /conf/global/settings/cloudconfigs/recaptcha
    * Adobe Sign
 
-      * 소스 경로:/etc/cloudservices/echosign
-      * Target 경로:/conf/global/settings/cloudconfigs/echosign
+      * 소스 경로: /etc/cloudservices/echosign
+      * Target 경로: /conf/global/settings/cloudconfigs/echosign
    * Typekit 클라우드 서비스
 
-      * 소스 경로:/etc/cloudservices/typekit
-      * Target 경로:/conf/global/settings/cloudconfigs/typekit
+      * 소스 경로: /etc/cloudservices/typekit
+      * Target 경로: /conf/global/settings/cloudconfigs/typekit
 
    마이그레이션 프로세스가 진행되는 동안 브라우저 창에 다음 내용이 표시됩니다.
 
-   * 자산이 업데이트되는 경우:자산이 업데이트되었습니다.
-   * 마이그레이션이 완료되면:자산에 대한 마이그레이션을 완료했습니다.
+   * 자산이 업데이트되는 경우: 자산이 업데이트되었습니다.
+   * 마이그레이션이 완료되면: 자산에 대한 마이그레이션을 완료했습니다.
 
    실행되면 마이그레이션 유틸리티가 다음을 수행합니다.
 
-   * **자산에 태그를 추가합니다**.태그 &quot;서신 관리 :&quot;를 추가합니다.마이그레이션된 자산&quot; / &quot;적응형 Forms :마이그레이션된 자산&quot;. 마이그레이션된 자산으로 마이그레이션된 자산을 식별할 수 있도록 합니다. 마이그레이션 유틸리티를 실행하면 시스템의 모든 기존 자산이 마이그레이션됨으로 표시됩니다.
-   * **태그 생성**:이전 시스템에 있는 카테고리 및 하위 카테고리는 태그로 만들어지면 이러한 태그는 AEM의 관련 서신 관리 자산과 연결됩니다. 예를 들어 편지 템플릿의 카테고리(클레임) 및 하위 카테고리(클레임)가 태그로 생성됩니다.
+   * **자산에 태그를 추가합니다**. 태그 &quot;서신 관리 :&quot;를 추가합니다. 마이그레이션된 자산&quot; / &quot;적응형 Forms : 마이그레이션된 자산&quot;. 마이그레이션된 자산으로 마이그레이션된 자산을 식별할 수 있도록 합니다. 마이그레이션 유틸리티를 실행하면 시스템의 모든 기존 자산이 마이그레이션됨으로 표시됩니다.
+   * **태그 생성**: 이전 시스템에 있는 카테고리 및 하위 카테고리는 태그로 만들어지면 이러한 태그는 AEM의 관련 서신 관리 자산과 연결됩니다. 예를 들어 편지 템플릿의 카테고리(클레임) 및 하위 카테고리(클레임)가 태그로 생성됩니다.
 
 
 
@@ -191,7 +191,7 @@ ht-degree: 3%
 
 ### 마이그레이션 유틸리티를 실행한 후 하우스키핑 작업 {#housekeepingtasks}
 
-마이그레이션 유틸리티를 실행한 후 다음 하우스키핑 작업을 수행합니다.[](../../forms/using/import-export-forms-templates.md)
+마이그레이션 유틸리티를 실행한 후 다음 하우스키핑 작업을 수행합니다. [](../../forms/using/import-export-forms-templates.md)
 
 1. XFA 버전의 레이아웃 및 조각 레이아웃이 3.3 이상인지 확인합니다. 이전 버전의 레이아웃 및 조각 레이아웃을 사용하는 경우 편지를 렌더링하는 데 문제가 있을 수 있습니다. 이전 XFA 버전을 최신 버전으로 업데이트하려면 다음 단계를 수행하십시오.
 
