@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
-role: Administrator
+role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 1%
@@ -52,7 +52,7 @@ AEM Communities에는 여러 언어로 활성화된 [기본 번역 서비스](..
 >
 >프로덕션 시스템의 경우 라이선스 번역 서비스가 필요합니다. 라이센스가 없는 경우 기본 번역 서비스는 [해제되어 있어야 합니다](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
-## UGC {#global-translation-of-ugc}의 전역 번역
+## UGC 글로벌 번역 {#global-translation-of-ugc}
 
 웹 사이트에 [언어 사본](../../help/sites-administering/tc-prep.md)이 여러 개 있는 경우, 기본 번역 서비스는 UGC가 기본적으로 동일한 구성 요소(구성 요소가 포함된 페이지의 언어 사본)에 의해 생성된 경우처럼 한 사이트에 입력한 UGC가 다른 사이트에 입력된 UGC와 관련이 있을 수 있음을 인식하지 못합니다.
 
@@ -114,7 +114,7 @@ AEM Communities에는 여러 언어로 활성화된 [기본 번역 서비스](..
 
 자세한 지침은 [번역 통합 구성 만들기](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)를 참조하십시오.
 
-* **** Sitestab:를 기본값으로 둘 수 있습니다.
+* **** Sitestab: 를 기본값으로 둘 수 있습니다.
 
 * **** 커뮤니티 탭:
    * **[!UICONTROL 번역]**
@@ -128,7 +128,7 @@ AEM Communities에는 여러 언어로 활성화된 [기본 번역 서비스](..
    * **[!UICONTROL 로케일 선택...]**
 (선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화에 나타납니다. 규칙에 따라 웹 사이트의 [기본 언어](sites-console.md#translation)에 대한 로케일을 선택합니다. `No Common Store`을 선택하면 전역 번역이 비활성화됩니다. 기본적으로 글로벌 번역은 비활성화됩니다.
 
-* **** 자산 탭:를 기본값으로 둘 수 있습니다.
+* **** 자산 탭: 를 기본값으로 둘 수 있습니다.
 * **[!UICONTROL 확인]** 선택
 
 #### 활성화 {#activation}
