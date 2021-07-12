@@ -6,9 +6,9 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
-role: Administrator
+role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 0%
@@ -23,7 +23,7 @@ AEM Forms 문서 보안을 사용하면 사전 정의된 보안 설정을 작성
 
 ## 사용자 데이터 및 데이터 저장소 {#user-data-and-data-stores}
 
-문서 보안은 My Sql, Oracle, MS SQL Server 및 IBM DB2와 같은 데이터베이스에 사용자 데이터를 포함한 보호된 문서와 관련된 정책 및 데이터를 저장합니다. 또한, 정책에 있는 인증된 사용자에 대한 데이터는 사용자 관리에 저장됩니다. 사용자 관리에 저장된 데이터에 대해서는 [Forms 사용자 관리 를 참조하십시오.사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md).
+문서 보안은 My Sql, Oracle, MS SQL Server 및 IBM DB2와 같은 데이터베이스에 사용자 데이터를 포함한 보호된 문서와 관련된 정책 및 데이터를 저장합니다. 또한, 정책에 있는 인증된 사용자에 대한 데이터는 사용자 관리에 저장됩니다. 사용자 관리에 저장된 데이터에 대해서는 [Forms 사용자 관리 를 참조하십시오. 사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md).
 
 다음 표는 문서 보안이 데이터베이스 테이블의 데이터를 구성하는 방법을 매핑합니다.
 
@@ -80,7 +80,7 @@ AEM Forms 문서 보안을 사용하면 사전 정의된 보안 설정을 작성
  </tbody>
 </table>
 
-## 사용자 데이터 {#access-and-delete-user-data} 액세스 및 삭제
+## 사용자 데이터 액세스 및 삭제 {#access-and-delete-user-data}
 
 데이터베이스의 사용자에 대한 문서 보안 데이터에 액세스하여 내보낼 수 있으며, 필요한 경우 영구적으로 삭제할 수 있습니다.
 
@@ -128,7 +128,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 >
 >`EdcAuditEntity` 테이블에서 데이터를 내보내려면 [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하여 `principalId`, `policyId` 또는 `licenseId`을 기반으로 감사 데이터를 내보내는 [EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용합니다.
 
-시스템에서 사용자에 대한 전체 데이터를 가져오려면 사용자 관리 데이터베이스에서 데이터에 액세스하여 내보내야 합니다. 자세한 내용은 [Forms 사용자 관리 를 참조하십시오.사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md).
+시스템에서 사용자에 대한 전체 데이터를 가져오려면 사용자 관리 데이터베이스에서 데이터에 액세스하여 내보내야 합니다. 자세한 내용은 [Forms 사용자 관리 를 참조하십시오. 사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md).
 
 ### 사용자 데이터 삭제 {#delete-user-data}
 
