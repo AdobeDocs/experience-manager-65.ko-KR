@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AEM Communities의 메시징 기능은 로그인한 사이트 방문자(구성�
 
 * **메시지 허용 목록에 추가하다 필드**
 
-   사용자가 편집하고 유지할 수 있는 메시지 작성 구성 요소의 속성을 지정합니다. 새 양식 요소를 추가하는 경우 SRP에 저장하려면 요소 ID를 추가해야 합니다. 기본값은 두 개의 항목입니다.*subject* 및 *content*.
+   사용자가 편집하고 유지할 수 있는 메시지 작성 구성 요소의 속성을 지정합니다. 새 양식 요소를 추가하는 경우 SRP에 저장하려면 요소 ID를 추가해야 합니다. 기본값은 두 개의 항목입니다. *subject* 및 *content*.
 
 * **메시지 상자 크기 제한**
 
@@ -142,11 +142,11 @@ AEM Communities의 메시징 기능은 로그인한 사이트 방문자(구성�
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
 
-**메시징 작업 서비스:소셜 콘솔**
+**메시징 작업 서비스: 소셜 콘솔**
 
 ![social-console-op-service](assets/social-console-op-service.png)
 
-**메시징 작업 서비스:소셜 메시징**
+**메시징 작업 서비스: 소셜 메시징**
 
 ![social-message-op-service](assets/social-message-op-service.png)
 
