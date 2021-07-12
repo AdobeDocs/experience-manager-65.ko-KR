@@ -6,8 +6,8 @@ user-guide-title: AEM 6.5 모바일 사용 안내서
 breadcrumb-title: Mobile 안내서
 user-guide-description: 모바일 앱용 컨텐츠를 생성 및 관리합니다.
 feature: 모바일
-role: Business Practitioner
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+role: User
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 12%
