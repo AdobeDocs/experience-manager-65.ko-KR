@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
-role: Administrator
+role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 3%
 
 ---
 
-# 사용자가 생성한 컨텐츠 태깅 {#tagging-user-generated-content}
+# 사용자 생성 컨텐츠에 태깅 {#tagging-user-generated-content}
 
 ## 개요 {#overview}
 
