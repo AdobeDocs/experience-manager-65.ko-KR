@@ -6,16 +6,16 @@ seo-description: '문서 보안을 사용하여 지원되는 형식으로 저장
 uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
-role: Administrator
+role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
-# 문서 보안 서버 {#installing-and-configuring-the-document-security-server} 설치 및 구성
+# 문서 보안 서버 설치 및 구성 {#installing-and-configuring-the-document-security-server}
 
 문서 보안을 사용하여 지원되는 형식으로 저장한 정보를 안전하게 배포합니다. 인증된 사용자만 보호된 문서에 액세스할 수 있습니다.
 
@@ -23,11 +23,11 @@ Adobe Experience Manager Forms 문서 보안을 사용하면 인증된 사용자
 
 정책을 사용하여 문서를 보호할 수 있습니다. 정책에 지정하는 기밀 설정은 수신자가 정책을 적용할 문서를 사용할 수 있는 방법을 결정합니다. 예를 들어 수신자가 텍스트를 인쇄하거나 복사할지, 텍스트를 편집할지, 보호된 문서에 서명 및 주석을 추가할 수 있는지를 지정할 수 있습니다.
 
-정책은 Document Security 서버에 저장됩니다.클라이언트 응용 프로그램을 통해 문서에 정책을 적용합니다. 문서에 정책을 적용하면 정책에 지정된 기밀 설정이 문서에 포함된 정보를 보호합니다. 정책에 의해 권한이 부여된 수신자에게 정책에 따라 보호된 문서를 배포할 수 있습니다.
+정책은 Document Security 서버에 저장됩니다. 클라이언트 응용 프로그램을 통해 문서에 정책을 적용합니다. 문서에 정책을 적용하면 정책에 지정된 기밀 설정이 문서에 포함된 정보를 보호합니다. 정책에 의해 권한이 부여된 수신자에게 정책에 따라 보호된 문서를 배포할 수 있습니다.
 
 또한 문서 보안은 문서를 보호하고 보호된 문서를 확인하고 보호된 문서를 색인화할 수 있는 클라이언트, 뷰어 및 색인자를 제공합니다. 문서 보안에 대한 자세한 내용은 [문서 보안 정보](/help/forms/using/admin-help/document-security.md)를 참조하십시오.
 
-## 배포 토폴로지 {#deployment-topology}
+## 배포 토폴로지  {#deployment-topology}
 
 문서 보안 기능은 JEE의 AEM Forms에서만 사용할 수 있습니다. JEE에서 AEM Forms의 단일 인스턴스가 필요합니다. 필요한 경우 AEM Forms 서버의 클러스터 또는 팜을 만들 수도 있습니다. 다음 토폴로지는 문서 보안 기능을 실행하기 위한 토폴로지를 나타냅니다. 토폴로지에 대한 자세한 내용은 [AEM Forms용 아키텍처 및 배포 토폴로지](aem-forms-architecture-deployment.md)를 참조하십시오.
 
