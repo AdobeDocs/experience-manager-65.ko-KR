@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 feature: 적응형 양식
-role: Administrator
+role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 **전역** 사전: AEM 클라이언트 라이브러리에 JSON 개체로 관리되는 두 개의 글로벌 사전이 있습니다. 이러한 사전은 기본 오류 메시지, 월 이름, 통화 기호, 날짜 및 시간 패턴 등을 포함합니다. 이러한 사전은 CRXDe Lite에서 /libs/fd/xfaforms/clientlibs/I18N에 있습니다. 이러한 위치에는 각 로케일에 대한 별도의 폴더가 포함되어 있습니다. 글로벌 사전은 일반적으로 자주 업데이트되지 않으므로 각 로케일에 대해 별도의 JavaScript 파일을 유지하면 브라우저에서 이를 캐싱하고 동일한 서버에서 다른 적응형 양식에 액세스할 때 네트워크 대역폭 사용을 줄일 수 있습니다.
 
-### 적응형 양식의 현지화 작동 방식 {#how-localization-of-adaptive-form-works}
+### 적응형 양식 현지화 작동 방식 {#how-localization-of-adaptive-form-works}
 
 적응형 양식의 로케일을 식별하는 방법에는 두 가지가 있습니다. 적응형 양식을 렌더링할 때 는 로 요청된 로케일을 식별합니다.
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 요청된 로캘에 대한 클라이언트 라이브러리가 없는 경우 클라이언트 라이브러리에서 로케일에 있는 언어 코드를 확인합니다. 예를 들어 요청된 로케일이 `en_ZA`(남아프리카 영어)이고 `en_ZA`에 대한 클라이언트 라이브러리가 없는 경우 적응형 양식에서는 `en`(영어) 언어에 대해 클라이언트 라이브러리를 사용합니다. 그러나 이들 중 어느 것도 없는 경우 적응형 양식은 `en` 로케일에 사전을 사용합니다.
 
-## 지원되지 않는 로케일 {#add-localization-support-for-non-supported-locales}에 대한 지역화 지원 추가
+## 지원되지 않는 로케일에 대한 지역화 지원 추가 {#add-localization-support-for-non-supported-locales}
 
 AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아어(it), 독일어(de), 일본어(ja), 포르투갈어(pt-BR), 중국어(zh-CN), 중국어(zh-TW) 및 한국어(ko-KR) 로케일로 적응형 양식 컨텐츠의 지역화를 지원합니다.
 
@@ -71,7 +71,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 1. [사전에 대한 로케일 지원 추가](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [서버 다시 시작](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
-### 안내서 현지화 서비스 {#add-a-locale-to-the-guide-localization-service-br}에 로케일을 추가합니다.
+### 안내서 로컬라이제이션 서비스에 로케일 추가 {#add-a-locale-to-the-guide-localization-service-br}
 
 1. 이동 `https://'[server]:[port]'/system/console/configMgr`.
 1. **안내서 지역화 서비스** 구성 요소를 편집하려면 클릭하십시오.
@@ -79,7 +79,7 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 ![GuideLocalizationService](assets/configservice.png)
 
-### 로케일 {#add-xfa-client-library-for-a-locale-br}에 대한 XFA 클라이언트 라이브러리 추가
+### 로케일에 대한 XFA 클라이언트 라이브러리 추가 {#add-xfa-client-library-for-a-locale-br}
 
 `etc/<folderHierarchy>` 아래에 `cq:ClientLibraryFolder` 유형의 노드를 `xfaforms.I18N.<locale>` 범주와 함께 만들고 다음 파일을 클라이언트 라이브러리에 추가합니다.
 
@@ -93,7 +93,7 @@ I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
 ```
 
-### 로케일 {#add-adaptive-form-client-library-for-a-locale-br}에 대한 적응형 양식 클라이언트 라이브러리 추가
+### 로케일에 대한 적응형 양식 클라이언트 라이브러리 추가 {#add-adaptive-form-client-library-for-a-locale-br}
 
 `etc/<folderHierarchy>` 아래에 `cq:ClientLibraryFolder` 유형의 노드를 만들고, 카테고리는 `guides.I18N.<locale>`, `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`로 종속성을 만듭니다. &quot;
 
@@ -108,7 +108,7 @@ i18n.js
 LogMessages.js
 ```
 
-### 사전 {#add-locale-support-for-the-dictionary-br}에 대한 로케일 지원 추가
+### 사전에 대한 로케일 지원 추가 {#add-locale-support-for-the-dictionary-br}
 
 추가하는 `<locale>`이 `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr` 중에 없는 경우에만 이 단계를 수행하십시오.
 
@@ -121,11 +121,11 @@ LogMessages.js
 
 `<locale>`이 `https://'[server]:[port]'/libs/cq/i18n/translator.html`에 나타납니다.
 
-### 서버 {#restart-the-server}을(를) 다시 시작합니다
+### 서버 다시 시작 {#restart-the-server}
 
 추가된 로케일을 적용하려면 AEM 서버를 다시 시작합니다.
 
-## 스페인어 {#sample-libraries-for-adding-support-for-spanish}에 대한 지원을 추가하기 위한 샘플 라이브러리
+## 스페인어 지원을 추가하기 위한 샘플 라이브러리 {#sample-libraries-for-adding-support-for-spanish}
 
 스페인어 지원을 추가하기 위한 샘플 클라이언트 라이브러리
 
