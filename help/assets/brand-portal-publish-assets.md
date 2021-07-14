@@ -13,10 +13,10 @@ docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 39a44c4b706f68d2f4f220811aa9bcc80aec55e4
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 44%
+source-wordcount: '372'
+ht-degree: 43%
 
 ---
 
@@ -74,4 +74,4 @@ Adobe Experience Manager(AEM) Assets 관리자는 자산 및 폴더를 조직의
 
 이제 Brand Portal에 로그인하여 게시된 자산을 Brand Portal 인터페이스에서 사용할 수 있는지 확인합니다.
 
-![bp_landing_page](assets/bp_landing_page.png)
+![bp_landingpage](assets/bp_landingpage.png)
