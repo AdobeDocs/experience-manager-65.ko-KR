@@ -10,26 +10,31 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: '353'
+ht-degree: 1%
 
 ---
 
-# HTML5 양식 {#enabling-attachments-for-an-html-form}에 대한 첨부 파일 활성화
+# HTML5 양식에 대한 첨부 파일 활성화 {#enabling-attachments-for-an-html-form}
 
 HTML5 양식을 사용하여 첨부 파일을 업로드, 미리 보기 및 제출할 수 있습니다. 기본적으로 첨부 파일 지원은 비활성화됩니다. 첨부 지원을 사용하려면
 
-1. 다중 선택 문자열 속성 `mfAttachmentOptions`을 사용하여 [사용자 지정 프로필](/help/forms/using/custom-profile.md)을 만듭니다.
-1. 사용자 지정 프로필에서 속성 `fileSizeLimit`, `multiSelect` 및 `buttonTex`를 지정하여 첨부 파일 위젯의 옵션을 구성합니다. 필요에 따라 더 많은 사용자 지정 속성을 지정할 수도 있습니다.
+1. `mfAttachmentOptions` 다중 선택 문자열 속성을 사용하여 [사용자 지정 프로필](/help/forms/using/custom-profile.md)을 만듭니다. 첨부 파일 위젯의 옵션을 구성하려면 `mfAttachmentOptions` 속성의 각 문자열에 `property=value` 형식이 있어야 합니다. `property` 및 `value` 값은 다음 값 중 하나를 가질 수 있습니다.
 
-1. 사용자 지정 프로필에서 다음 구성을 사용하십시오.
+   | 속성 | 값 |
+   |--- |---|
+   | multiSelect | true 또는 false(기본적으로 true) |
+   | fileSizeLimit | MB 수(기본적으로 2MB). 예, 5. |
+   | buttonText | 팝업 창의 단추 텍스트(기본적으로 &quot;첨부&quot;) |
+   | 동의 | 사용할 파일 형식의 쉼표로 구분된 목록(&quot;audio/&amp;ast;, 비디오/&amp;ast;, 이미지/&amp;ast;, 텍스트/amp;ast;, .pdf&quot; 기본적으로) |
 
-   * **multiSelect**  -> true 또는 false(기본적으로 true)
-   * **fileSizeLimit**  -> value_in_mb(약 5개)(기본적으로 2MB)
-   * **buttonText**  -> 팝업 창의 단추 텍스트(기본적으로 &quot;Attach&quot;)
-   * **수락하려면** -> 파일 형식을 사용합니다(&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; by default).
+   예:
+
+   ![옵션 구성](assets/mfAttachmentOptions.png)
+
+   필요에 따라 `mfAttachmentOptions` 속성에 대해 사용자 지정 옵션을 더 지정할 수도 있습니다.
 
    >[!NOTE]
    >
