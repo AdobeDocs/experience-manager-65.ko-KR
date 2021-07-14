@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
+source-git-commit: e54d8633aa3b8c1554df90d1b9650713246b95e8
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 29%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 29%
 >
 >[자세한 ](https://www.adobe.com/kr/account/sign-in.supportportal.html) 내용은 지원 센터에 문의하거나 패치를 받으십시오.
 
-## 패치 설치 프로그램 {#about-the-patch-installer} 정보
+## 패치 설치 프로그램 정보 {#about-the-patch-installer}
 
 AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 때까지 사용할 수 있는 AEM 6.5 Forms JEE의 모든 구성 요소에 대한 모든 고정 문제가 포함되어 있습니다. 해결된 문제의 전체 목록은 최신 [서비스 팩 릴리스 노트](sp-release-notes.md)를 참조하십시오.
 
-## 패치 {#prerequisites-to-installing-the-patch}을 설치하기 위한 사전 요구 사항
+## 패치 설치 사전 요구 사항 {#prerequisites-to-installing-the-patch}
 
 * AEM 6.5 Forms
 
-## 패치 {#installing-and-configuring-the-patch} 설치 및 구성
+## 패치 설치 및 구성 {#installing-and-configuring-the-patch}
 
 1. &lt;*AEM_forms_root*/deploy 폴더의 백업을 수행합니다. 빠른 수정 사항을 제거하려는 경우 필요합니다.
 1. 애플리케이션 서버를 중지합니다.
@@ -58,6 +58,7 @@ Linux해당 디렉토리로 이동하고 명령 프롬프트에서 다음을 입
    * `serializer-2.7.1.jar` 끝 `serializer-2.7.2.jar`
    * `xalan-2.7.1.jar` 끝 `xalan-2.7.2.jar`
    * `xercesImpl-2.9.1.jar` 끝 `xercesImpl-2.12.0.jar`
+   * `xml-apis-2.7.1.jar` 끝 `xml-apis-2.7.2.jar`
 
 1. 기본적으로 구성 관리자 시작 확인란이 선택됩니다. **[!UICONTROL 완료]**&#x200B;를 클릭하여 구성 관리자를 실행합니다.
 
