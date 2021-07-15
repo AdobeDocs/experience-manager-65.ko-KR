@@ -8,10 +8,10 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: 구성
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 12%
+source-wordcount: '261'
+ht-degree: 10%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 12%
 
 Dynamic Media을 관리하는 경우 다음 항목이 관심사로 표시됩니다.
 
-* [Dynamic Media-Scene7 모드 구성](config-dms7.md)  - 새 Dynamic Media 고객인 경우 이 구성을 사용합니다.
-* [Dynamic Media-Hybrid 모드 구성](config-dynamic.md)  - 기존 Dynamic Media 고객 업그레이드 Experience Manager인 경우 이 구성을 사용합니다.
+* [Dynamic Media 구성 - Scene7 모드](config-dms7.md)  - 새 Dynamic Media 고객인 경우 이 구성을 사용합니다.
+* [Dynamic Media 구성 - 하이브리드 모드](config-dynamic.md)  - 기존 Dynamic Media 고객 업그레이드 Experience Manager인 경우 이 구성을 사용합니다.
 * [이미지 사전 설정 관리](managing-image-presets.md)
 * [뷰어 사전 설정 관리](managing-viewer-presets.md)
 * [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)
