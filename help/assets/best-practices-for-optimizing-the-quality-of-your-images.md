@@ -1,5 +1,5 @@
 ---
-title: 이미지 품질 최적화 우수 사례
+title: Dynamic Media에서 이미지 품질 최적화 우수 사례
 description: Dynamic Media의 이미지 품질 최적화 우수 사례를 알아봅니다
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: 자산 관리
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 1%
+source-wordcount: '1451'
+ht-degree: 0%
 
 ---
 
-# 이미지 품질 최적화 우수 사례 {#best-practices-for-optimizing-the-quality-of-your-images}
+# Dynamic Media에서 이미지 품질 최적화 우수 사례 {#best-practices-for-optimizing-the-quality-of-your-images}
 
 허용되는 결과를 렌더링하는 데 많은 요소가 기여하므로 이미지 품질 최적화는 시간이 많이 걸릴 수 있습니다. 개인이 화질을 다르게 인식하기 때문에 결과는 어느 정도 주관적이다. 구조화된 실험이 핵심입니다.
 
@@ -47,7 +47,7 @@ Adobe Experience Manager에는 이미지 조정 및 최적화 및 렌더링 결�
 
 이미지 선명하게 하기는 웹 사이트에서 이미지를 제어하는 가장 복잡한 측면이며 오류가 많은 경우입니다. 다음 유용한 리소스를 참조하여 Experience Manager에서 선명하게 하고 언샵 마스킹이 작동하는 방식에 대해 자세히 알아보십시오.
 
-우수 사례 백서 [Experience Manager에도 적용되는 Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf)에서 이미지 선명하게 하기
+우수 사례 백서 [Experience Manager에도 적용되는 Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf)에서 이미지를 선명하게 합니다.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
@@ -59,14 +59,14 @@ Experience Manager을 사용하면 섭취, 게재 시 또는 둘 다에 따라 �
 * 단순 선명도( `&op_sharpen`) - Photoshop에 사용된 선명 필터와 유사하게, 간단한 선명도 동적 크기 조정 후 이미지의 최종 보기에 기본 선명도 적용됩니다. 그러나 이 방법은 사용자가 구성할 수 없습니다. 가장 좋은 방법은 필요한 경우가 아니면 &amp;op_선명하게 하기를 사용하지 않는 것입니다.
 * 언샵 마스킹( `&op_USM`) - 언샵 마스킹은 업계 표준 선명도 필터입니다. 가장 좋은 방법은 아래 지침에 따라 언샵 마스킹으로 이미지를 선명하게 하는 것입니다. 언샵 마스킹을 사용하면 다음 세 가지 매개변수를 제어할 수 있습니다.
 
-   * `&op_sharpen=`amount,radius,임계값
+   * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL 금액]** (0-5, 효과 강도)
-      * **[!UICONTROL radius]**  (0-250, 선명하게 표시된 개체 주위에 그려지는 &quot;선명도&quot;의 너비(픽셀 단위)입니다.)
+      * **[!UICONTROL *금액&#x200B;*]**(0-5, 효과 강도)
+      * **[!UICONTROL *radius *]**(0-250, 선명하게 표시된 개체 주위에 그려지는 &quot;선명도&quot;의 너비(픽셀 단위)입니다.)
 
       매개변수 반경과 양이 서로 작용한다는 점을 명심하십시오. 감소 반경은 양을 증가시켜 보상할 수 있다. 반경은 값이 낮을수록 가장자리 픽셀만 선명하게 표시되므로 보다 세밀하게 제어할 수 있지만 값이 높을수록 더 넓은 범위의 픽셀 범위가 선명하게 표시됩니다.
 
-      * **[!UICONTROL 임계값]** (0-255, 효과 민감도)
+      * **[!UICONTROL *임계값&#x200B;*]**(0-255, 효과 민감도)
 
              이 매개 변수는 가장자리 픽셀로 간주되고 필터가 선명하게 하기 전에 선명하게 된 픽셀이 주변 영역과 얼마나 다른지를 결정합니다. **[!UICONTROL 임계값]** 매개 변수는 피부톤과 같이 유사한 색상을 갖는 영역을 과선명도 사용하지 않도록 하는 데 도움이 됩니다. 예를 들어, 임계 값 12는 &quot;노이즈&quot;를 추가하지 않기 위해 피부 색조 밝기의 약간의 변화를 무시하며, 속눈썹이 피부를 충족하는 경우와 같이 높은 대비 영역에 가장자리 대비를 추가합니다.
          
@@ -74,9 +74,9 @@ Experience Manager을 사용하면 섭취, 게재 시 또는 둘 다에 따라 �
 
          Experience Manager 도움말 항목 - 이미지 선명하게 하기
 
-         우수 사례 백서 [Adobe Dynamic Media Classic에서 이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf).
+         우수 사례 백서 [Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf)에서 이미지를 선명하게 합니다.
 
-      * Experience Manager을 사용하면 네 번째 매개 변수를 제어할 수도 있습니다.모노크롬(0,1) 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 개별적으로 또는 값 1을 사용하여 이미지 명도/강도에 언샵 마스킹이 적용되는지 여부를 결정합니다.
+      * Experience Manager을 사용하면 네 번째 매개 변수를 제어할 수도 있습니다. 모노크롬(0,1) 이 매개 변수는 값 0을 사용하여 각 색상 구성 요소에 개별적으로 또는 값 1을 사용하여 이미지 명도/강도에 언샵 마스킹이 적용되는지 여부를 결정합니다.
 
 
 가장 좋은 방법은 언샵 마스크 반경 매개 변수로 시작하십시오. 시작할 수 있는 반경 설정은 다음과 같습니다.
@@ -92,7 +92,7 @@ Experience Manager을 사용하면 섭취, 게재 시 또는 둘 다에 따라 �
 
 ### JPEG 압축에 대한 우수 사례(`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
-* 이 매개 변수는 JPG 인코딩 품질을 제어합니다. 값이 높을수록 화질이 높지만 파일 크기가 커집니다.또는 값이 낮을수록 품질이 떨어지지만 파일 크기가 작다는 의미입니다. 이 매개 변수의 범위는 0-100입니다.
+* 이 매개 변수는 JPG 인코딩 품질을 제어합니다. 값이 높을수록 화질이 높지만 파일 크기가 커집니다. 또는 값이 낮을수록 품질이 떨어지지만 파일 크기가 작다는 의미입니다. 이 매개 변수의 범위는 0-100입니다.
 * 품질에 최적화하려면 매개 변수 값을 100으로 설정하지 마십시오. 90 또는 95와 100의 설정 차이는 거의 알 수 없지만 100은 이미지 파일의 크기를 불필요하게 증가시킵니다. 따라서 품질에 최적화되지만 이미지 파일이 너무 커지지 않도록 하려면 `qlt= value`을 90 또는 95로 설정하십시오.
 * 작은 이미지 파일 크기에 맞게 최적화하되, 이미지 품질을 허용 수준으로 유지하려면 `qlt= value`을 80으로 설정하십시오. 70~75보다 낮은 값은 상당한 이미지 품질이 저하됩니다.
 * 가장 좋은 방법으로서 중간에 있으려면 `qlt= value`을 85로 설정하면 중간에 있습니다.
