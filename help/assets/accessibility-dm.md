@@ -7,9 +7,9 @@ content-type: reference
 feature: 접근성
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,10 @@ ht-degree: 0%
 
 [!DNL Dynamic Media]은 [!DNL Adobe Experience Manager Assets]에 대한 플러그인이므로 대부분의 키보드 컨트롤 동작은 [!DNL Experience Manager Assets]에서와 동일합니다. 예를 들어 [!DNL Dynamic Media]의 `Cancel` 버튼은 [!DNL Experience Manager Assets]에서와 동일한 포커스 강조 표시가 있고 [!DNL Experience Manager Assets]에서와 같이 `Spacebar` 키에 반응합니다. Assets](/help/assets/accessibility.md#keyboard-shortcuts)의 [키보드 단축키 를 참조하십시오.
 
-[!DNL Dynamic Media]의 개별 사용자 인터페이스 요소에서 지원하는 키 입력은 대부분의 경우 명확하고 쉽게 검색할 수 있습니다. [!DNL Dynamic Media]의 키보드 컨트롤은 다음과 같습니다.
+[!DNL Dynamic Media]에서 개별 사용자 인터페이스 요소가 지원하는 키 입력은 명확하고 검색하기가 쉽습니다. [!DNL Dynamic Media]의 키보드 컨트롤은 다음과 같습니다.
 
 * `Tab` 및 `Shift+Tab` 키 입력을 사용하여 페이지에서 대화형 요소 간을 탐색할 수 있습니다.
-`Tab` 을 사용하면 입력 포커스를 탭 순서의 다음 사용자 인터페이스 요소로 이동합니다.`Shift+Tab` 을 사용하면 입력 포커스가 이전 사용자 인터페이스 요소로 돌아갑니다.
+`Tab` 을 사용하면 입력 포커스를 탭 순서의 다음 사용자 인터페이스 요소로 이동합니다. `Shift+Tab` 을 사용하면 입력 포커스가 이전 사용자 인터페이스 요소로 돌아갑니다.
 초점 순번은 화면에서 자연어 사용자 인터페이스 요소 위치를 따르며 왼쪽에서 오른쪽, 위에서 아래로 이동합니다. 또한 필드에 오류가 있으면 `Tab` 키를 눌러 포커스를 이동할 수 있습니다.
 * `Spacebar` 및 `Enter` 키를 사용하여 단추 및 드롭다운 목록과 같은 표준 사용자 인터페이스 요소를 활성화할 수 있습니다.
 * 활성 요소에서 키보드 포커스를 강조 표시하는 기능을 제공합니다. 입력 포커스가 있는 사용자 인터페이스 요소는 사용자 인터페이스 요소 주위에 렌더링되는 테두리로 시각적 포커스 표시를 수신한다.
