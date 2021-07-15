@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
-feature: 미디어 집합 혼합,자산 관리
+feature: 혼합 미디어 집합,자산 관리
 role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f5eccfc1b81d8e24cafe917f3ad74b472c0676bd
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 1%
@@ -30,7 +30,7 @@ ht-degree: 1%
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [자산 관리](/help/assets/manage-assets.md)를 참조하십시오.
 
-## 빠른 시작:혼합 미디어 집합 {#quick-start-mixed-media-sets}
+## 빠른 시작: 혼합 미디어 집합 {#quick-start-mixed-media-sets}
 
 혼합 미디어 세트를 사용하여 빠르게 시작하고 실행하려면 다음 단계를 수행합니다.
 
