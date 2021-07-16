@@ -6,8 +6,8 @@ audience: end-user
 user-guide-title: AEM 6.5 클래식 UI 작성 사용 안내서
 user-guide-description: 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다.
 feature: 작성
-role: Business Practitioner
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+role: User
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 94%
