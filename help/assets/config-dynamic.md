@@ -13,10 +13,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: 구성,하이브리드 모드
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '7838'
-ht-degree: 2%
+source-wordcount: '7797'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,7 @@ Dynamic Media에서 [video](/help/assets/video.md) 작업에 대해 자세히 �
 
 >
 >
-이러한 내용은 [Experience Manager 인스턴스 모니터링 및 유지 관리에 설명되어 있습니다](/help/sites-deploying/monitoring-and-maintaining.md).
+이러한 문서는 [Experience Manager 인스턴스 모니터링 및 유지 관리에 설명되어 있습니다](/help/sites-deploying/monitoring-and-maintaining.md).
 
 하이브리드 게시 및 게재는 Adobe Experience Manager에 추가된 Dynamic Media의 핵심 기능입니다. 하이브리드 게시를 사용하면 Experience Manager 게시 노드 대신 클라우드에서 이미지, 세트 및 비디오와 같은 Dynamic Media 자산을 제공할 수 있습니다.
 
@@ -183,14 +183,14 @@ Dynamic Media을 활성화하려면 명령줄에서 또는 빠른 시작 파일 
    >
    >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log - ImageServer 로그는 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
 
-   이미지 서버 로그 파일 이름의 예:`ImageServer-57346-2020-07-25.log`
+   이미지 서버 로그 파일 이름의 예: `ImageServer-57346-2020-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access 로그는 `/is/image` 및 `/is/content`을 통해 Dynamic Media에 대한 각 요청을 기록합니다.
 
-   이러한 로그는 Dynamic Media이 활성화된 경우에만 사용됩니다. `system/console/status-Bundlelist` 페이지에서 생성된 **Download Full** 패키지에는 포함되지 않습니다.Dynamic Media 문제가 있는 경우 고객 지원 센터에 문의할 때 이러한 로그를 모두 문제에 추가합니다.
+   이러한 로그는 Dynamic Media이 활성화된 경우에만 사용됩니다. `system/console/status-Bundlelist` 페이지에서 생성된 **Download Full** 패키지에는 포함되지 않습니다. Dynamic Media 문제가 있는 경우 고객 지원 센터에 문의할 때 이러한 로그를 모두 문제에 추가합니다.
 
 ### 다른 포트 또는 컨텍스트 경로에 대한 Experience Manager을 설치한 경우.. {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-[Experience Manager을 응용 프로그램 서버](/help/sites-deploying/application-server-install.md)에 배포하고 Dynamic Media이 활성화되어 있는 경우, 외부 도우미에서 **자체 도메인**&#x200B;을 구성해야 합니다. 그렇지 않으면 Dynamic Media 자산에 대한 축소판 생성이 제대로 작동하지 않습니다.
+[Experience Manager을 응용 프로그램 서버](/help/sites-deploying/application-server-install.md)에 배포하고 Dynamic Media이 활성화되어 있는 경우, Externalizer에서 **자체 도메인**&#x200B;을 구성해야 합니다. 그렇지 않으면 Dynamic Media 자산에 대한 축소판 생성이 제대로 작동하지 않습니다.
 
 또한 다른 포트나 컨텍스트 경로에서 quickstart를 실행하는 경우 **자체 도메인**&#x200B;도 변경해야 합니다.
 
@@ -198,10 +198,10 @@ Dynamic Media이 활성화되면 이미지 자산에 대한 정적 축소판 표
 
 Experience Manager:
 
-* [외부 도우미](/help/sites-developing/externalizer.md)의 **자체 도메인**&#x200B;은 포트 번호와 컨텍스트 경로를 모두 검색하는 데 사용됩니다.
+* [Externalizer](/help/sites-developing/externalizer.md)의 **자체 도메인**&#x200B;은 포트 번호와 컨텍스트 경로를 모두 검색하는 데 사용됩니다.
 * **자체 도메인**&#x200B;이 구성되어 있지 않으면 포트 번호와 컨텍스트 경로가 Jetty HTTP 서비스에서 검색됩니다.
 
-Experience Manager QuickStart WAR 배포에서 포트 번호 및 컨텍스트 경로를 파생할 수 없으므로 **자체 도메인**&#x200B;을 구성해야 합니다. **자체 도메인**&#x200B;을 구성하는 방법에 대해서는 [외부 도우미 설명서](/help/sites-developing/externalizer.md) 를 참조하십시오.
+Experience Manager QuickStart WAR 배포에서 포트 번호 및 컨텍스트 경로를 파생할 수 없으므로 **자체 도메인**&#x200B;을 구성해야 합니다. **자체 도메인**&#x200B;을 구성하는 방법에 대해서는 [외부 도우미 설명서](/help/sites-developing/externalizer.md)를 참조하십시오.
 
 >[!NOTE]
 [Experience Manager Quickstart 독립형 배포](/help/sites-deploying/deploy.md)에서는 포트 번호 및 컨텍스트 경로를 자동으로 구성할 수 있으므로 일반적으로 **자체 도메인**&#x200B;을 구성할 필요가 없습니다. 그러나 모든 네트워크 인터페이스가 꺼져 있으면 **자체 도메인**&#x200B;을 구성해야 합니다.
@@ -212,7 +212,7 @@ Dynamic Media은 기본적으로 활성화되지 않습니다. 그러나 이전�
 
 Dynamic Media을 활성화한 후 비활성화하려면 `-r dynamicmedia` 실행 모드 플래그를 제거합니다.
 
-**Dynamic Media이 활성화된 후 비활성화하려면:**
+**Dynamic Media을 비활성화하려면:**
 
 1. 명령줄에서 quickstart를 시작할 때 다음 중 하나를 수행할 수 있습니다.
 
@@ -243,7 +243,7 @@ Experience Manager - Dynamic Media을 6.3에서 6.5로 업그레이드하는 경
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## 이미지 복제 구성  {#configuring-image-replication}
+## 이미지 복제 구성 {#configuring-image-replication}
 
 Dynamic Media 이미지 전달은 Experience Manager 작성자에서 비디오 축소판을 포함한 이미지 자산을 게시하고 Adobe의 주문형 복제 서비스(복제 서비스 URL)로 복제하여 작동합니다. 그런 다음 자산은 온디맨드 이미지 전달 서비스(이미지 서비스 URL)를 통해 전달됩니다.
 
@@ -270,13 +270,13 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제할 수 있도록
 
 1. 아직 파일 및 암호가 없는 경우 Adobe 고객 지원 센터에서 KeyStore 파일 및 암호를 문의하십시오. 이 정보는 프로비저닝의 필수 부분입니다. 그것은 당신의 계정에 열쇠를 연결합니다.
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**&#x200B;를 탭합니다.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**&#x200B;로 이동합니다.
 
-1. 사용자 관리 페이지에서 **[!UICONTROL dynamic-media-replication]** 사용자로 이동한 다음 탭하여 엽니다.
+1. 사용자 관리 페이지에서 **[!UICONTROL dynamic-media-replication]** 사용자로 이동한 다음 을 선택하여 엽니다.
 
    ![dm-replication](assets/dm-replication.png)
 
-1. Dynamic-media-replication에 대한 사용자 설정 편집 페이지에서 **[!UICONTROL 키 저장소]** 탭을 탭한 다음 **[!UICONTROL 키 저장소 만들기]**&#x200B;를 클릭합니다.
+1. Dynamic-media-replication에 대한 사용자 설정 편집 페이지에서 **[!UICONTROL 키 저장소]** 탭을 선택한 다음 **[!UICONTROL 키 저장소 만들기]**&#x200B;를 선택합니다.
 
    ![dm-replication-keystore](assets/dm-replication-keystore.png)
 
@@ -290,41 +290,41 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제할 수 있도록
 1. **[!UICONTROL Edit User Settings For dynamic-media-replication]** 페이지에서 **Add Private Key from KeyStore file** 영역을 확장하고 다음을 추가합니다(다음 이미지 참조).
 
    * **[!UICONTROL 새 별칭]** 필드에 나중에 복제 구성에서 사용할 별칭의 이름을 입력합니다. 예를 들어 `replication` 을 별칭으로 사용할 수 있습니다.
-   * **[!UICONTROL KeyStore 파일]**&#x200B;을 누릅니다. Adobe이 제공한 KeyStore 파일로 이동하여 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 누릅니다.
+   * **[!UICONTROL KeyStore 파일]**&#x200B;을 선택합니다. Adobe이 제공한 KeyStore 파일로 이동하여 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 선택합니다.
    * **[!UICONTROL KeyStore 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 이 암호는 **5단계에서 만든 KeyStore 암호가 아닌**&#x200B;이지만 KeyStore 파일 암호 Adobe은 프로비저닝 중에 사용자에게 보낸 환영 전자 메일에 제공합니다. KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 개인 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 동일한 개인 키 암호일 수 있음). Adobe은 프로비전 중에 사용자에게 보낸 시작 전자 메일에 있는 개인 키 암호를 제공합니다. 개인 키 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 개인 키 별칭]** 필드에 개인 키 별칭을 입력합니다. 예, `*companyname*-alias`. Adobe은 프로비전 중에 사용자에게 전송된 시작 전자 메일에 개인 키 별칭을 제공합니다. 개인 키 별칭을 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭하여 이 사용자에게 변경 사항을 저장합니다.
+1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하여 변경 사항을 이 사용자에게 저장합니다.
 
    다음으로 [복제 에이전트를 구성해야 합니다](#configuring-the-replication-agent).
 
 ### 복제 에이전트 구성 {#configuring-the-replication-agent}
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트 를 탭합니다.
-1. 작성자 페이지의 에이전트 페이지에서 **[!UICONTROL Dynamic Media 하이브리드 이미지 복제(s7delivery)]**&#x200B;를 탭합니다.
-1. **[!UICONTROL 편집]**&#x200B;을 누릅니다.
-1. **[!UICONTROL 설정]** 탭을 탭한 다음, 다음을 입력합니다.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트로 이동합니다.
+1. 작성자의 에이전트 페이지에서 **[!UICONTROL Dynamic Media 하이브리드 이미지 복제(s7delivery)]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 편집]**&#x200B;을 선택하십시오.
+1. **[!UICONTROL 설정]** 탭을 선택한 후 다음을 입력합니다.
 
    * **[!UICONTROL 활성화됨]**  - 복제 에이전트를 활성화하려면 이 확인란을 선택합니다.
-   * **[!UICONTROL 지역]**  - 해당 지역으로 설정합니다.북미, 유럽 또는 아시아
+   * **[!UICONTROL 지역]**  - 해당 지역으로 설정합니다. 북미, 유럽 또는 아시아
    * **[!UICONTROL 테넌트 ID]**  - 이 값은 복제 서비스에 게시되는 회사/테넌트의 이름입니다. 이 값은 Adobe이 프로비전 중에 사용자에게 보낸 환영 이메일에서 제공하는 테넌트 ID입니다. 이 정보를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
-   * **[!UICONTROL 키 저장소 별칭]**  - 이 값은 인증 설정 **에서 키를 생성할 때 설정된 새** 별칭 값과 동일합니다 [ ](#setting-up-authentication).예,  `replication`. ([인증 설정](#setting-up-authentication)의 7단계를 참조하십시오.)
+   * **[!UICONTROL 키 저장소 별칭]**  - 이 값은 인증 설정 **에서 키를 생성할 때 설정된 새** 별칭 값과 동일합니다 [ ](#setting-up-authentication). 예,  `replication`. ([인증 설정](#setting-up-authentication)의 7단계를 참조하십시오.)
    * **[!UICONTROL 키 저장소 암호]**  - 키 저장소 만들기를 탭했을 때 만든  **[!UICONTROL 키 저장소 암호입니다]**. Adobe이 이 암호를 제공하지 않습니다. [인증 설정](#setting-up-authentication)의 5단계를 참조하십시오.
 
    다음 이미지는 샘플 데이터가 있는 복제 에이전트를 보여줍니다.
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
-1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
-### Dynamic Media용 복제 에이전트 확인 {#validating-the-replication-agent-for-dynamic-media}
+### Dynamic Media용 복제 에이전트의 유효성 검사 {#validating-the-replication-agent-for-dynamic-media}
 
 Dynamic Media용 복제 에이전트의 유효성을 검사하려면 다음을 수행하십시오.
 
-**[!UICONTROL 연결 테스트]**&#x200B;를 누릅니다. 출력의 예는 다음과 같습니다.
+**[!UICONTROL 연결 테스트]**&#x200B;를 선택합니다. 출력의 예는 다음과 같습니다.
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -343,7 +343,7 @@ Replication test succeeded
 >[!NOTE]
 다음 중 하나를 수행하여 확인할 수도 있습니다.
 * 복제 로그를 확인하여 자산이 복제되었는지 확인합니다.
-* 이미지를 게시합니다. 이미지를 탭하고 드롭다운 메뉴에서 **[!UICONTROL Viewers]**&#x200B;를 선택한 다음, 뷰어 사전 설정을 선택합니다. **[!UICONTROL URL]**&#x200B;을 클릭합니다. 이미지가 표시되는지 확인하려면 브라우저에서 URL 경로를 복사하여 붙여넣습니다.
+* 이미지를 게시합니다. 이미지를 선택하고 드롭다운 메뉴에서 **[!UICONTROL Viewers]**&#x200B;를 선택한 다음 뷰어 사전 설정을 선택합니다. **[!UICONTROL URL]**&#x200B;을 선택합니다. 이미지가 표시되는지 확인하려면 브라우저에서 URL 경로를 복사하여 붙여넣습니다.
 
 
 
@@ -351,7 +351,7 @@ Replication test succeeded
 
 인증을 설정할 때 솔루션 사용 시 발생할 수 있는 몇 가지 문제가 있습니다. 이러한 문제를 확인하기 전에 복제를 설정했는지 확인하십시오.
 
-#### 문제:메시지가 있는 HTTP 상태 코드 401 - 권한 부여 필요 {#problem-http-status-code-with-message-authorization-required}
+#### 문제: 메시지가 있는 HTTP 상태 코드 401 - 권한 부여 필요 {#problem-http-status-code-with-message-authorization-required}
 
 이 문제는 `dynamic-media-replication` 사용자에 대해 KeyStore를 설정하지 못해서 발생할 수 있습니다.
 
@@ -377,7 +377,7 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
 **해결 방법:**
 이  `KeyStore` dynamic-media-replicationuser에 저장되고  **** 올바른 암호가 제공되는지 확인합니다.
 
-#### 문제:키 암호를 해독할 수 없습니다. 데이터 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data}
+#### 문제: 키 암호를 해독할 수 없습니다. 데이터 암호를 해독할 수 없습니다. {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -394,7 +394,7 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 **해결 방법:**
 암호를 확인합니다. 복제 에이전트에 저장된 암호가 키 저장소를 만드는 데 사용된 암호와 다릅니다.
 
-#### 문제:InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
+#### 문제: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
 이 문제는 Experience Manager 작성자 인스턴스의 구성 오류로 인해 발생합니다. 작성자의 Java™ 프로세스에 올바른 `javax.net.ssl.trustStore`이(가) 없습니다. 복제 로그에 다음 오류가 표시됩니다.
 
@@ -415,7 +415,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 **해결 방법:**
 Experience Manager 작성자의 Java™ 프로세스에 시스템 속성이  `-Djavax.net.ssl.trustStore=` 유효한 truststore로 설정되어 있는지 확인하십시오.
 
-#### 문제:KeyStore가 설정되지 않았거나 초기화되지 않았습니다. {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### 문제: KeyStore가 설정되지 않았거나 초기화되지 않았습니다. {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 이 문제는 핫픽스, 또는 기능 팩이 dynamic-media-user 또는 keystore 노드를 덮어쓰는 경우 발생할 수 있습니다.
 
@@ -435,16 +435,16 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. 사용자 관리 페이지로 이동합니다.
    `localhost:4502/libs/granite/security/content/useradmin.html`
-1. 사용자 관리 페이지에서 `dynamic-media-replication` 사용자로 이동한 다음 탭하여 엽니다.
-1. **[!UICONTROL KeyStore]** 탭을 클릭합니다. **[!UICONTROL Create KeyStore]** 단추가 나타나면 [Setting up Authentication](#setting-up-authentication)의 단계를 먼저 다시 실행해야 합니다.
+1. 사용자 관리 페이지에서 `dynamic-media-replication` 사용자로 이동한 다음 를 선택하여 엽니다.
+1. **[!UICONTROL KeyStore]** 탭을 선택합니다. **[!UICONTROL Create KeyStore]** 단추가 나타나면 [Setting up Authentication](#setting-up-authentication)의 단계를 먼저 다시 실행해야 합니다.
 1. KeyStore 설정을 다시 실행해야 하는 경우 [복제 에이전트 구성](/help/assets/config-dynamic.md#configuring-the-replication-agent)도 다시 수행해야 합니다.
 
    s7delivery 복제 에이전트를 다시 구성합니다.
    `localhost:4502/etc/replication/agents.author/s7delivery.html`
 
-1. **[!UICONTROL 연결 테스트]**&#x200B;를 눌러 구성이 올바른지 확인합니다.
+1. **[!UICONTROL 연결 테스트]**&#x200B;를 선택하여 구성이 올바른지 확인합니다.
 
-#### 문제:게시 에이전트가 OAuth 대신 SSL을 사용하고 있습니다 {#problem-publish-agent-is-using-ssl-instead-of-oauth}
+#### 문제: 게시 에이전트가 OAuth 대신 SSL을 사용하고 있습니다 {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 이 문제는 핫픽스 또는 기능 팩이 올바르게 설치되지 않거나 설정이 과다 기록되어 발생할 수 있습니다.
 
@@ -462,7 +462,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 **솔루션:**
 
-1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;를 클릭합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -473,7 +473,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
    `enableOauth=true`
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
+1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 
 ### 구성 테스트 {#testing-your-configuration}
 
@@ -486,15 +486,15 @@ Adobe은 구성에 대한 엔드 투 엔드 테스트를 수행할 것을 권장
 
 **구성을 테스트하려면:**
 
-1. 이미지 자산을 업로드합니다. (Assets에서 **[!UICONTROL 만들기]** > **[!UICONTROL 파일]**&#x200B;을 탭하고 파일을 선택합니다.)
+1. 이미지 자산을 업로드합니다. (Assets에서 **[!UICONTROL 만들기]** > **[!UICONTROL 파일]**&#x200B;로 이동하여 파일을 선택합니다.)
 1. 워크플로우가 완료될 때까지 기다립니다.
-1. 이미지 자산을 게시합니다. (자산을 선택하고 **[!UICONTROL 빠른 게시]**&#x200B;를 누릅니다.)
+1. 이미지 자산을 게시합니다. (자산을 선택하고 **[!UICONTROL 빠른 게시]**&#x200B;를 선택합니다.)
 1. 이미지를 열고 **[!UICONTROL 표현물]**&#x200B;을 탭하여 해당 이미지에 대한 표현물로 이동합니다.
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
 1. 동적 변환을 선택합니다.
-1. 이 자산의 URL을 가져오려면 **[!UICONTROL URL]**&#x200B;을 클릭하십시오.
+1. 이 자산의 URL을 가져오려면 **[!UICONTROL URL]**&#x200B;을 선택합니다.
 1. 선택한 URL로 이동하고 이미지가 예상대로 작동하는지 확인합니다.
 
 자산이 전달되었는지 테스트하는 또 다른 방법은 URL에 req=exists 를 추가하는 것입니다.
@@ -508,10 +508,10 @@ Dynamic Media Cloud Service은 여러 가지 이미지, 비디오, 비디오 분
 >[!NOTE]
 Dynamic Media Cloud Services을 설정하기 전에 게시 인스턴스를 설정해야 합니다. Dynamic Media Cloud Services을 구성하기 전에 복제를 설정해야 합니다.
 
-Dynamic Media Cloud Services을 구성하려면:
+**Dynamic Media Cloud Services을 구성하려면:**
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media 구성(6.3 이전)]**&#x200B;을 누릅니다.
-1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**&#x200B;을 선택한 다음 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media 구성(6.3 이전)]**&#x200B;으로 이동합니다.
+1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL global]**&#x200B;을 선택한 다음 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL Dynamic Media 구성 만들기]** 대화 상자의 제목 필드에 제목을 입력합니다.
 1. 비디오에 대한 Dynamic Media을 구성하는 경우,
 
@@ -519,8 +519,8 @@ Dynamic Media Cloud Services을 구성하려면:
    * **[!UICONTROL 비디오 서비스 URL]** 필드에 Dynamic Media 게이트웨이의 비디오 서비스 URL을 입력합니다.
 
 1. 이미지화를 위해 Dynamic Media을 구성하는 경우 **[!UICONTROL 이미지 서비스 URL]** 필드에 Dynamic Media 게이트웨이의 이미지 서비스 URL을 입력합니다.
-1. **[!UICONTROL 저장]**&#x200B;을 눌러 Dynamic Media 구성 브라우저 페이지로 돌아갑니다.
-1. 전역 탐색 콘솔에 액세스하려면 Experience Manager 로고를 누릅니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택하여 Dynamic Media 구성 브라우저 페이지로 돌아갑니다.
+1. 전역 탐색 콘솔에 액세스하려면 Experience Manager 로고를 선택합니다.
 
 ## 비디오 보고 구성 {#configuring-video-reporting}
 
@@ -534,7 +534,7 @@ Dynamic Media Hybrid를 사용하여 여러 Experience Manager 설치에서 비�
 1. Dynamic Media 구성(6.3 이전)을 구성하기 전에 ***새*** 작성자 노드 ***앞에 Video Analytics 사전 설정 패키지를 설치합니다.***
 1. 패키지 설치를 확인하고 디버깅합니다.
 
-### 첫 번째 작성자 노드를 구성한 후 Video Analytics 사전 설정 패키지 생성 {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
+### 첫 번째 작성자 노드를 구성한 후 Video Analytics 사전 설정 패키지를 만듭니다 {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
 이 작업을 완료하면 Video Analytics 사전 설정이 포함된 패키지 파일이 있습니다. 이러한 사전 설정에는 보고서 세트, 추적 서버, 추적 네임스페이스 및 Experience Cloud 조직 ID가 포함되어 있습니다(사용 가능한 경우).
 
@@ -543,12 +543,12 @@ Dynamic Media Hybrid를 사용하여 여러 Experience Manager 설치에서 비�
 1. 패키지 관리자를 사용하여 패키지를 만듭니다.
 1. 필터를 포함하도록 패키지를 편집합니다.
 
-   Experience Manager:`/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+   Experience Manager: `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 1. 패키지를 빌드합니다.
 1. 후속 새 작성자 노드와 공유할 수 있도록 Video Analytics 사전 설정 패키지를 다운로드하거나 공유합니다.
 
-### 추가 작성자 노드를 구성하기 전에 Video Analytics 사전 설정 패키지 설치 {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
+### 추가 작성자 노드를 구성하기 전에 Video Analytics 사전 설정 패키지를 설치합니다 {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Dynamic Media 구성(6.3 이전)을 구성하기 전에 ***이 작업을 완료했는지 확인하십시오.*** 이렇게 하지 않으면 사용되지 않는 다른 보고서 세트가 생성됩니다. 또한 비디오 보고가 올바르게 작동하지만 데이터 수집은 최적화되지 않습니다.
 
@@ -558,7 +558,7 @@ Dynamic Media 구성(6.3 이전)을 구성하기 전에 ***이 작업을 완료�
 1. Video Analytics 사전 설정 패키지를 설치합니다.
 1. Dynamic Media 구성 구성(6.3 이전)을 구성합니다.
 
-### 패키지 설치 확인 및 디버깅 {#verifying-and-debugging-the-package-installation}
+### 패키지 설치 확인 및 디버그 {#verifying-and-debugging-the-package-installation}
 
 1. 다음 중 하나를 수행하여 확인하고 필요한 경우 패키지 설치를 디버깅합니다.
 
@@ -588,7 +588,7 @@ Dynamic Media 구성(6.3 이전)을 구성하기 전에 ***이 작업을 완료�
       ```
 
    * **Experience**
-Manager의 비디오 보고 도구를 통해 Video Analytics 사전 설정을 확인합니다.  **[!UICONTROL 도구]**  >  **[!UICONTROL 자산]**  >  **[!UICONTROL 비디오 보고]**
+Manager의 비디오 보고 도구를 통해 Video Analytics 사전 설정을 확인하십시오.  **[!UICONTROL 도구]**  >  **[!UICONTROL 자산]**  >  **[!UICONTROL 비디오 보고]**
 
       `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -636,8 +636,8 @@ JCR을 통해 설정 프로세스의 일부로 고유한 기본 카탈로그 설
 
    `https://<*server*>:<*port*>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
-1. **[!UICONTROL 복제]** 탭을 탭합니다.
-1. **[!UICONTROL 복제]**&#x200B;를 누릅니다.
+1. **[!UICONTROL 복제]** 탭을 선택합니다.
+1. **[!UICONTROL 복제]**&#x200B;를 선택합니다.
 
 ## 뷰어 사전 설정 복제 {#replicating-viewer-presets}
 
@@ -645,9 +645,9 @@ JCR을 통해 설정 프로세스의 일부로 고유한 기본 카탈로그 설
 자세한 내용은 [뷰어 사전 설정 게시](/help/assets/managing-viewer-presets.md#publishing-viewer-presets)를 참조하십시오.
 
 >[!NOTE]
-기본적으로, 자산의 세부 사항 보기에서 **[!UICONTROL Viewers]**&#x200B;를 선택하면 시스템은 **[!UICONTROL 표현물]** 및 다양한 뷰어 사전 설정을 선택할 때 다양한 표현물을 표시합니다. 표시되는 숫자를 늘리거나 줄일 수 있습니다. [표시](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정의 수를 늘립니다](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+기본적으로, 자산의 세부 사항 보기에서 **[!UICONTROL Viewers]**&#x200B;를 선택하면 시스템은 **[!UICONTROL 표현물]** 및 다양한 뷰어 사전 설정을 선택할 때 다양한 표현물을 표시합니다. 표시되는 숫자를 늘리거나 줄일 수 있습니다. [표시되는 이미지 사전 설정 수를 늘립니다](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수를 늘리십시오](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-## 복제에 대한 자산 필터링 {#filtering-assets-for-replication}
+## 복제할 자산 필터링 {#filtering-assets-for-replication}
 
 Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 모든 *자산(이미지와 비디오 모두)을 Experience Manager 게시 노드에 복제합니다.* Experience Manager 게시 서버에서도 자산을 전달하므로 이 워크플로우가 필요합니다.
 
@@ -655,7 +655,7 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
 자산을 복제할 뿐만 아니라 다음 비자산도 복제됩니다.
 
-* Dynamic Media 전달 구성:`/conf/global/settings/dam/dm/imageserver/jcr:content`
+* Dynamic Media 전달 구성: `/conf/global/settings/dam/dm/imageserver/jcr:content`
 * 이미지 사전 설정: `/conf/global/settings/dam/dm/presets/macros`
 * 뷰어 사전 설정: `/conf/global/settings/dam/dm/presets/viewer`
 
@@ -709,20 +709,20 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 >[!NOTE]
 필터는 MIME 유형에 적용되며 경로별로 지정할 수 없습니다.
 
-### 비디오 전용 배포에 대한 자산 필터 설정 {#setting-up-asset-filters-for-video-only-deployments}
+### 비디오 전용 배포를 위한 자산 필터 설정 {#setting-up-asset-filters-for-video-only-deployments}
 
 비디오 전용에 Dynamic Media을 사용하는 경우 다음 단계에 따라 복제에 대한 자산 필터를 설정합니다.
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트를 탭합니다.
-1. 작성자 페이지의 에이전트 페이지에서 **[!UICONTROL 기본 에이전트(게시)]**&#x200B;를 누릅니다.
-1. **[!UICONTROL 편집]**&#x200B;을 누릅니다.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트로 이동합니다.
+1. 작성자의 에이전트 페이지에서 **[!UICONTROL 기본 에이전트(게시)]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 편집]**&#x200B;을 선택하십시오.
 1. **[!UICONTROL 에이전트 설정]** 대화 상자의 **[!UICONTROL 설정]** 탭에서 **[!UICONTROL 활성화됨]**&#x200B;을 선택하여 에이전트를 켜십시오.
-1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
-1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` 로 이동합니다.
-1. **[!UICONTROL filter-video]**&#x200B;를 찾은 다음 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
+1. **[!UICONTROL filter-video]**&#x200B;를 찾은 다음 마우스 오른쪽 단추를 클릭한 다음 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/publish` 로 이동합니다.
-1. **[!UICONTROL jcr:content]**&#x200B;을 찾아 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 붙여넣기]**&#x200B;를 선택합니다.
+1. `jcr:content`을 찾은 다음 마우스 오른쪽 단추를 클릭한 다음 **[!UICONTROL 붙여넣기]**&#x200B;를 선택합니다.
 
 이러한 단계는 비디오 자체가 Dynamic Media Cloud Service에 의해 전달되는 동안 비디오 포스터 이미지와 재생에 필요한 비디오 메타데이터를 전달하도록 Experience Manager 게시 인스턴스를 설정합니다. 이 필터는 원본 비디오와 정적 축소판 그림 표현물 복제에서 제외하며 게시 인스턴스에는 필요하지 않습니다.
 
@@ -730,43 +730,41 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
 비프로덕션 배포에서 이미징에 Dynamic Media을 사용하는 경우 다음 단계에 따라 복제에 대한 자산 필터를 설정합니다.
 
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트를 탭합니다.
-1. 작성자 페이지의 에이전트 페이지에서 **[!UICONTROL 기본 에이전트(게시)]**&#x200B;를 누릅니다.
-1. **[!UICONTROL 편집]**&#x200B;을 누릅니다.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 복제]** > **[!UICONTROL 작성자]**&#x200B;의 에이전트로 이동합니다.
+1. 작성자의 에이전트 페이지에서 **[!UICONTROL 기본 에이전트(게시)]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 편집]**&#x200B;을 선택하십시오.
 1. **[!UICONTROL 에이전트 설정]** 대화 상자의 **[!UICONTROL 설정]** 탭에서 **[!UICONTROL 활성화됨]**&#x200B;을 선택하여 에이전트를 켜십시오.
-1. **[!UICONTROL 확인]**&#x200B;을 누릅니다.
-1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` 로 이동합니다.
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
 1. **[!UICONTROL filter-images]**&#x200B;를 찾은 다음 마우스 오른쪽 단추로 클릭하고 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/publish` 로 이동합니다.
-1. **[!UICONTROL jcr:content]**&#x200B;을 찾아 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 만들기]** > **[!UICONTROL 노드 만들기]**&#x200B;를 선택합니다. `nt:unstructured` 유형의 이름 `damRenditionFilters`을 입력합니다.
-1. `damRenditionFilters`을 찾아 마우스 오른쪽 단추를 클릭하고 **[!UICONTROL 붙여넣기]**&#x200B;를 선택합니다.
+1. `jcr:content`을 찾아 마우스 오른쪽 단추를 클릭한 다음 **[!UICONTROL 만들기]** > **[!UICONTROL 노드 만들기]**&#x200B;로 이동합니다. `nt:unstructured` 유형의 이름 `damRenditionFilters`을 입력합니다.
+1. `damRenditionFilters`을 찾은 다음 마우스 오른쪽 단추를 클릭한 다음 **[!UICONTROL 붙여넣기]**&#x200B;를 선택합니다.
 
 이러한 단계는 비프로덕션 환경에 이미지를 전달하도록 Experience Manager 게시 인스턴스를 설정합니다. 이 필터는 원본 이미지와 정적 표현물 복제에서 제외되며, 게시 인스턴스에는 필요하지 않습니다.
 
 >[!NOTE]
 작성자에 다양한 필터가 있는 경우 각 에이전트에는 다른 사용자가 할당되어야 합니다. granite 코드에서는 사용자당 하나의 필터 모델을 적용합니다. 각 필터 설정에 대해 항상 다른 사용자가 있어야 합니다.
-서버에서 두 개 이상의 필터를 사용하고 있습니까? 예를 들어 게시할 복제용 필터 1개와 s7delivery용 두 번째 필터가 있습니다. 그럴 경우 이러한 두 필터에 **userId**&#x200B;가 **jcr:content** 노드에서 할당되어 있는지 확인해야 합니다. 다음 이미지를 참조하십시오.
+서버에서 두 개 이상의 필터를 사용하고 있습니까? 예를 들어 게시할 복제용 필터 1개와 s7delivery용 두 번째 필터가 있습니다. 그럴 경우 이러한 두 필터에 **userId** 노드가 `jcr:content` 노드에서 다른 사용자가 할당되어 있는지 확인해야 합니다. 다음 이미지를 참조하십시오.
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
-### 복제에 대한 자산 필터 사용자 지정 {#customizing-asset-filters-for-replication}
+### 복제할 자산 필터 사용자 지정(선택 사항) {#customizing-asset-filters-for-replication}
 
-복제에 대한 자산 필터를 선택적으로 사용자 지정하려면 다음을 수행합니다.
-
-1. Experience Manager에서 Experience Manager 로고를 탭하여 전역 탐색 콘솔에 액세스하고 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;를 누릅니다.
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` 로 이동하여 필터를 검토합니다.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
 1. 필터에 대한 MIME 유형을 정의하려면 다음과 같이 MIME 유형을 찾을 수 있습니다.
 
-   왼쪽 레일에서 `content > dam > <locate_your_asset> >  jcr:content > metadata` 를 확장한 다음 테이블에서 **[!UICONTROL dc:format]**&#x200B;을 찾습니다.
+   왼쪽 레일에서 `content > dam > <locate_your_asset> >  jcr:content > metadata` 를 확장한 다음 테이블에서 `dc:format` 를 찾습니다.
 
-   다음 그래픽은 dc:format 자산의 경로의 예입니다.
+   다음 그래픽은 `dc:format` 자산 경로의 예입니다.
 
    ![chlimage_1-512](assets/chlimage_1-512.png)
 
@@ -780,36 +778,21 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
    복제에 대해 필터링할 수 있는 문자는 다음과 같습니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>사용할 문자</strong></td>
-   <td><strong>복제용으로 자산을 필터링하는 방법</strong></td>
-  </tr>
-  <tr>
-   <td>*</td>
-   <td>와일드카드 문자<br /> </td>
-  </tr>
-  <tr>
-   <td>+</td>
-   <td>복제할 자산을 포함합니다.</td>
-  </tr>
-  <tr>
-   <td>-</td>
-   <td>복제에서 자산을 제외합니다.</td>
-  </tr>
- </tbody>
-</table>
+   | 사용할 문자 | 복제용으로 자산을 필터링하는 방법 |
+   | --- | --- |
+   | `*` | 와일드카드 문자 |
+   | `+` | 복제할 자산 포함 |
+   | `-` | 복제에서 자산 제외 |
 
-다음으로 이동 `content/dam/<locate your asset>/jcr:content/renditions`.
+   다음으로 이동 `content/dam/<locate your asset>/jcr:content/renditions`.
 
-다음 그래픽은 자산 표현물의 예입니다.
+   다음 그래픽은 자산 표현물의 예입니다.
 
-![chlimage_1-513](assets/chlimage_1-4.png)
+   ![chlimage_1-513](assets/chlimage_1-4.png)
 
-위의 예를 사용하여 PTIFF(피라미드형 TIFF)를 복제하려는 경우 `cqdam`로 시작하는 모든 렌디션을 포함하는 `+cqdam,*`을 입력합니다. 이 예에서 해당 표현물은 `cqdam.pyramid.tiff`입니다.
+   위의 예를 사용하여 PTIFF(피라미드형 TIFF)를 복제하려는 경우 `cqdam`로 시작하는 모든 렌디션을 포함하는 `+cqdam,*`을 입력합니다. 이 예에서 해당 표현물은 `cqdam.pyramid.tiff`입니다.
 
-원본만 복제하려면 `+original`을 입력합니다.
+   원본만 복제하려면 `+original`을 입력합니다.
 
 ## Dynamic Media 이미지 서버 설정 구성 {#configuring-dynamic-media-image-server-settings}
 
@@ -822,62 +805,31 @@ Dynamic Media은 [이 활성화되면 즉시 사용할 수 있습니다](#enabli
 
 Dynamic Media 이미지 서버 설정을 구성하려면:
 
-1. Experience Manager의 왼쪽 위 모서리에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 탭하여 전역 탐색 콘솔에 액세스한 다음, **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 탭합니다.
-1. Adobe Experience Manager 웹 콘솔 구성 페이지에서 **[!UICONTROL OSGi]** > **[!UICONTROL 구성]**&#x200B;을 탭하여 Experience Manager 내에서 현재 실행 중인 모든 번들을 나열합니다.
+1. Experience Manager의 왼쪽 위 모서리에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;로 이동합니다.
+1. Adobe Experience Manager 웹 콘솔 구성 페이지에서 **[!UICONTROL OSGi]** > **[!UICONTROL 구성]**&#x200B;으로 이동하여 Experience Manager 내에서 현재 실행 중인 모든 번들을 나열합니다.
 
    Dynamic Media 게재 서버는 목록의 다음 이름 아래에 있습니다.
 
    * `Adobe CQ Scene7 ImageServer`
    * `Adobe CQ Scene7 PlatformServer`
 
-1. 번들 목록에서 Adobe CQ Scene7 ImageServer의 오른쪽에 있는 **[!UICONTROL 편집]** 아이콘을 탭합니다.
+1. 번들 목록에서 Adobe CQ Scene7 ImageServer의 오른쪽에 있는 **[!UICONTROL 편집]** 아이콘을 선택합니다.
 1. Adobe CQ Scene7 ImageServer 대화 상자에서 다음 구성 값을 설정합니다.
 
    >[!NOTE]
    일반적으로 기본값을 변경할 필요가 없습니다. 그러나 기본값을 변경하는 경우 변경 사항을 적용하려면 번들을 다시 시작해야 합니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>속성</strong></td>
-   <td><strong>기본값</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td>TcpPort.name</td>
-   <td><code><em>empty</em></code></td>
-   <td>ImageServer 프로세스와의 통신에 사용할 포트 번호입니다. 기본적으로 사용 가능한 포트는 자동으로 감지됩니다.</td>
-  </tr>
-  <tr>
-   <td>AllowRemoteAccess.name</td>
-   <td><code><em>empty</em></code></td>
-   <td><p>ImageServer 프로세스에 대한 원격 액세스를 허용하거나 허용하지 않습니다. false이면 이미지 서버가 localhost에서만 수신 대기합니다.</p> <p>localhost를 가리키는 기본 외부 도우미 설정은 특정 VM 인스턴스의 실제 도메인 또는 IP 주소를 지정해야 합니다. 로컬 호스트가 VM의 상위 시스템을 가리키기 때문입니다.</p> <p>VM의 도메인 또는 IP 주소에는 호스트 파일 항목이 있어야 문제를 해결할 수 있습니다.</p> </td>
-  </tr>
-  <tr>
-   <td>MaxRenderRgnPixels</td>
-   <td>16마일</td>
-   <td>렌더링되는 최대 크기(메가픽셀)입니다.</td>
-  </tr>
-  <tr>
-   <td>MaxMessageSize</td>
-   <td>16MB바이트</td>
-   <td>배달되는 최대 메시지 크기(MB)입니다.</td>
-  </tr>
-  <tr>
-   <td>RandomAccessUrlTimeout</td>
-   <td>20</td>
-   <td>이미지 서버가 JCR이 범위 타일 요청에 응답할 때까지 대기하는 시간(초)에 대한 시간 초과 값입니다.</td>
-  </tr>
-  <tr>
-   <td>WorkerThreads</td>
-   <td>10</td>
-   <td>작업자 스레드 수입니다.</td>
-  </tr>
- </tbody>
-</table>
+   | 속성 | 기본값 | 설명 |
+   | --- | --- | --- |
+   | `TcpPort.name` | *`empty`* | ImageServer 프로세스와의 통신에 사용할 포트 번호입니다. 기본적으로 사용 가능한 포트는 자동으로 감지됩니다. |
+   | `AllowRemoteAccess.name` | *`empty`* | ImageServer 프로세스에 대한 원격 액세스를 허용하거나 허용하지 않습니다. false이면 이미지 서버가 localhost에서만 수신 대기합니다.<br> localhost를 가리키는 기본 Externalizer 설정은 특정 VM 인스턴스의 실제 도메인 또는 IP 주소를 지정해야 합니다. 로컬 호스트가 VM의 상위 시스템을 가리키기 때문입니다.<br>VM의 도메인 또는 IP 주소에는 호스트 파일 항목이 있어야 문제를 해결할 수 있습니다. |
+   | `MaxRenderRgnPixels` | 16mp | 렌더링되는 최대 크기(메가픽셀)입니다. |
+   | `MaxMessageSize` | 16MB | 배달되는 최대 메시지 크기(MB)입니다. |
+   | `RandomAccessUrlTimeout` | 20 | 이미지 서버가 JCR이 범위 타일 요청에 응답할 때까지 대기하는 시간(초)에 대한 시간 초과 값입니다. |
+   | `WorkerThreads` | 10 | 작업자 스레드 수입니다. |
 
-1. **[!UICONTROL 저장]**&#x200B;을 누릅니다.
-1. 번들 목록에서 Adobe CQ Scene7 PlatformServer 오른쪽에 있는 **[!UICONTROL 편집]** 아이콘을 탭합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+1. 번들 목록에서 Adobe CQ Scene7 PlatformServer 오른쪽에 있는 **[!UICONTROL 편집]** 아이콘을 선택합니다.
 1. Adobe CQ Scene7 PlatformServer 대화 상자에서 다음 기본값 옵션을 설정합니다.
 
    >[!NOTE]
@@ -902,68 +854,25 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
 
 아래 표에 설명된 대로 새 값을 입력하여 등록 정보 값을 변경할 수 있습니다.
 
-기본 매니페스트 변경을 마치면 페이지의 왼쪽 위 모서리에서 **[!UICONTROL 모두 저장]**&#x200B;을 누릅니다.
+기본 매니페스트 변경을 마치면 페이지의 왼쪽 위 모서리에서 **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 
-**[!UICONTROL Access Control]** 탭([속성] 탭 오른쪽)을 탭한 다음, 모든 사용자 및 dynamic-media-replication 사용자에 대해 액세스 제어 권한을 `jcr:read`로 설정해야 합니다.
+**[!UICONTROL 액세스 제어]** 탭([속성] 탭 오른쪽)을 선택한 다음 모든 사용자 및 dynamic-media 복제 사용자에 대해 액세스 제어 권한을 `jcr:read`로 설정해야 합니다.
 
 ![CRXDE Lite에서 이미지 서버 구성 및 액세스 제어 탭 설정](assets/configimageservercrxdeliteaccesscontroltab.png)
 
 매니페스트 설정 테이블 및 그 기본값:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>속성</strong></td>
-   <td><strong>기본값</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td>bkgcolor</td>
-   <td>FFFFFF</td>
-   <td><p>기본 배경색입니다. 실제 이미지 데이터를 포함하지 않는 회신 이미지의 영역을 채우는 데 사용되는 RGB 값입니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api">BkgColor</a>도 참조하십시오.</p> </td>
-  </tr>
-  <tr>
-   <td>defaultpix</td>
-   <td>300,300</td>
-   <td><p>기본 보기 크기입니다. 서버가 wid=, hei= 또는 scl=를 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 이 너비와 높이보다 크지 않은 회신 이미지를 제한합니다.</p> <p>쉼표로 구분된 0 이상의 정수 두 수로 지정됩니다. 너비와 높이(픽셀 단위)입니다. 두 값 중 하나 또는 둘 다 0으로 설정하여 제약 조건을 해제할 수 있습니다. 중첩/포함된 요청에는 적용되지 않습니다.</p> <p>이미지 제공 API에서 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api">DefaultPix</a>도 참조하십시오.</p> <p>그러나 일반적으로 자산을 전달하는 데 뷰어 사전 설정 또는 이미지 사전 설정을 사용합니다. Defaultpix는 뷰어 사전 설정 또는 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다.</p> </td>
-  </tr>
-  <tr>
-   <td>defaultthumpix</td>
-   <td>100,100</td>
-   <td><p>기본 축소판 크기 축소판 요청에 대해 attribute::DefaultPix 대신 사용됩니다(req=tmb).</p> <p>서버가 이 너비와 높이보다 크지 않은 회신 이미지를 제한합니다. 축소판 요청(req=tmb)에서 크기를 명시적으로 지정하지 않고 'wid=', 'hei=' 또는 'scl='를 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 이 작업은 true입니다.</p> <p>쉼표로 구분된 0 이상의 정수 두 수로 지정됩니다. 너비와 높이(픽셀 단위)입니다. 두 값 중 하나 또는 둘 다 0으로 설정하여 제약 조건을 해제할 수 있습니다. </p> <p>중첩/포함된 요청에는 적용되지 않습니다.</p> <p>이미지 제공 API에서 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a>도 참조하십시오. </p> </td>
-  </tr>
-  <tr>
-   <td>만료</td>
-   <td>36000000</td>
-   <td><p>기본 클라이언트 캐시 사용 시간입니다. 특정 카탈로그 레코드에 유효한 카탈로그:만료 값이 없는 경우 기본 만료 간격을 제공합니다.</p> <p>실수, 0 이상 회신 데이터가 생성된 이후 만료까지 남은 밀리초 수입니다. 항상 회신 이미지를 즉시 만료하려면 0으로 설정하여 클라이언트 캐싱을 효과적으로 사용하지 않도록 설정합니다. 기본적으로 이 값은 10시간으로 설정되어 있습니다. 즉, 새 이미지가 게시되면 이전 이미지가 사용자의 캐시를 나가는 데 10시간이 걸립니다. 캐시를 더 빨리 지워야 하는 경우 고객 지원 센터에 문의하십시오.</p> <p>이미지 제공 API에서 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">만료</a>도 참조하십시오.</p> </td>
-  </tr>
-  <tr>
-   <td>jpegquality</td>
-   <td>80</td>
-   <td><p>기본 JPEG 인코딩 속성입니다. JPEG 회신 이미지의 기본 속성을 지정합니다.</p> <p>쉼표로 구분된 정수 및 플래그. 첫 번째 값은 1.100 범위에 있고 품질을 정의합니다. 두 번째 값은 일반 동작의 경우 0이거나, 1은 JPEG 인코딩에 사용되는 RGB 색상-도시화 다운 샘플링을 사용하지 않도록 설정할 수 있습니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api">JpegQuality</a>도 참조하십시오.</p> </td>
-  </tr>
-  <tr>
-   <td>maxpix</td>
-   <td>2000,2000</td>
-   <td><p>회신 이미지 크기 제한. 클라이언트에 반환되는 최대 회신 이미지 폭과 높이입니다.</p> <p>폭이나 높이가 속성:MaxPix보다 큰 응답 이미지가 요청에 의해 발생하는 경우 서버에서 오류를 반환합니다.</p> <p>이미지 제공 API의 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api">MaxPix</a>도 참조하십시오.</p> </td>
-  </tr>
-  <tr>
-   <td>resmode</td>
-   <td>SHARP2</td>
-   <td><p>기본 재샘플링 모드입니다. 이미지 데이터 크기 조절에 사용할 기본 리샘플링 및 보간 속성을 지정합니다.</p> <p>요청에 resMode=가 지정되지 않은 경우 사용됩니다.</p> <p>허용되는 값에는 BILIN, BICUB 또는 SHARP2가 포함됩니다.</p> <p>열거형. 빌린의 경우 2, 바이그룹의 경우 3, 샤프2 보간 모드의 경우 4로 설정합니다. 최상의 결과를 얻으려면 sharp2를 사용하십시오.</p> <p>이미지 제공 API에서 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api">ResMode</a>도 참조하십시오.</p> </td>
-  </tr>
-  <tr>
-   <td>해상도</td>
-   <td>72</td>
-   <td><p>기본 개체 해상도. 특정 카탈로그 레코드에 올바른 카탈로그::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.</p> <p>0보다 큰 실수 일반적으로 인치당 픽셀로 표시되지만 미터 당 픽셀 등의 다른 단위로 표시될 수도 있습니다.</p> <p>이미지 제공 API에서 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api">해상도</a>도 참조하십시오.</p> </td>
-  </tr>
-  <tr>
-   <td>축소판 그림</td>
-   <td>1%,11%,21%,31%,41%,51%,61%,71%,81%,91%</td>
-   <td>이 값은 비디오 재생 시간의 스냅샷을 나타내며 <a href="https://www.encoding.com/">encoding.com</a>에 전달됩니다. 자세한 내용은 <a href="/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode">비디오 축소판 정보</a>를 참조하십시오.</td>
-  </tr>
- </tbody>
-</table>
+| 속성 | 기본값 | 설명 |
+| --- | --- | --- |
+| `bkgcolor` | `FFFFFF` | 기본 배경색입니다. 실제 이미지 데이터를 포함하지 않는 회신 이미지의 영역을 채우는 데 사용되는 RGB 값입니다. 이미지 제공 API의 [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api)도 참조하십시오. |
+| `defaultpix` | `300,300` | 기본 보기 크기입니다. 서버가 wid=, hei= 또는 scl=를 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 이 너비와 높이보다 크지 않은 회신 이미지를 제한합니다.<br>쉼표로 구분된 0 이상의 정수 두 수로 지정됩니다. 너비와 높이(픽셀 단위)입니다. 두 값 중 하나 또는 둘 다 0으로 설정하여 제약 조건을 해제할 수 있습니다. 중첩/포함된 요청에는 적용되지 않습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) 제공 API의 DefaultPixin도 참조하십시오.<br>그러나 일반적으로 자산을 전달하는 데 뷰어 사전 설정 또는 이미지 사전 설정을 사용합니다. Defaultpix는 뷰어 사전 설정 또는 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다. |
+| `defaultthumbpix` | `100,100` | 기본 축소판 크기 축소판 요청에 대한 특성::DefaultPix 대신 사용됩니다(`req=tmb`).<br>서버가 이 너비와 높이보다 크지 않은 회신 이미지를 제한합니다. 축소판 요청(`req=tmb`)이 크기를 명시적으로 지정하지 않고 `wid=`, `hei=` 또는 `scl=`을 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 이 작업은 true입니다.<br>쉼표로 구분된 0 이상의 정수 두 수로 지정됩니다. 너비와 높이(픽셀 단위)입니다. 두 값 중 하나 또는 둘 다 0으로 설정하여 제약 조건을 해제할 수 있습니다.<br>중첩/포함된 요청에는 적용되지 않습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) 제공 API의 DefaultThumbPixin도 참조하십시오. |
+| `expiration` | `36000000` | 기본 클라이언트 캐시 사용 시간입니다. 특정 카탈로그 레코드에 유효한 카탈로그:만료 값이 없는 경우 기본 만료 간격을 제공합니다.<br>실수, 0 이상 회신 데이터가 생성된 이후 만료까지 남은 밀리초 수입니다. 항상 회신 이미지를 즉시 만료하려면 0으로 설정하여 클라이언트 캐싱을 효과적으로 사용하지 않도록 설정합니다. 기본적으로 이 값은 10시간으로 설정되어 있습니다. 즉, 새 이미지가 게시되면 이전 이미지가 사용자의 캐시를 나가는 데 10시간이 걸립니다. 캐시를 더 빨리 지워야 하는 경우 고객 지원 센터에 문의하십시오.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) 제공 API의 만료도 참조하십시오. |
+| `jpegquality` | `80` | 기본 JPEG 인코딩 속성입니다. JPEG 회신 이미지의 기본 속성을 지정합니다.<br>쉼표로 구분된 정수 및 플래그. 첫 번째 값은 1.100 범위에 있고 품질을 정의합니다. 두 번째 값은 일반 동작의 경우 0이거나, 1은 JPEG 인코딩에 사용되는 RGB 색상-도시화 다운 샘플링을 사용하지 않도록 설정할 수 있습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) 제공 API의 JpegQualitting도 참조하십시오. |
+| `maxpix` | `2000,2000` | 회신 이미지 크기 제한. 클라이언트에 반환되는 최대 회신 이미지 폭과 높이입니다.<br>폭이나 높이가 속성:MaxPix보다 큰 응답 이미지가 요청에 의해 발생하는 경우 서버에서 오류를 반환합니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api) 제공 API의 MaxPixin도 참조하십시오. |
+| `resmode` | `SHARP2` | 기본 재샘플링 모드입니다. 이미지 데이터 크기 조절에 사용할 기본 리샘플링 및 보간 속성을 지정합니다.<br>요청에  `resMode=` 가 지정되지 않은 경우 사용됩니다.<br>허용되는 값은  `BILIN`,  `BICUB` 또는  `SHARP2`를 포함합니다.<br>열거형. `bilin`, `bicub` 의 경우 3, `sharp2` 보간 모드의 경우 4로 설정합니다. 최상의 결과를 얻으려면 `sharp2` 를 사용하십시오.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) 제공 API의 ResMode 를 참조하십시오. |
+| `resolution` | `72` | 기본 개체 해상도. 특정 카탈로그 레코드에 올바른 카탈로그::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.<br>0보다 큰 실수 일반적으로 인치당 픽셀로 표시되지만 미터 당 픽셀 등의 다른 단위로 표시될 수도 있습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) 제공 API의 확인도 참조하십시오. |
+| `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | 이 값은 비디오 재생 시간의 스냅샷을 나타내며 [encoding.com](https://www.encoding.com/)에 전달됩니다. 자세한 내용은 [비디오 축소판 정보](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode)를 참조하십시오. |
 
 ## Dynamic Media 색상 관리 구성 {#configuring-dynamic-media-color-management}
 
@@ -1007,11 +916,11 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
 
    ![chlimage_1-514](assets/chlimage_1-514.png)
 
-1. **[!UICONTROL 속성]** 탭 아래쪽으로 스크롤하여 색상 수정 속성을 추가합니다. 다음 표에 설명된 속성 이름, 유형 및 값을 수동으로 입력합니다. 값을 입력한 후 **[!UICONTROL 추가]** 및 **[!UICONTROL 모두 저장]**&#x200B;을 탭하여 값을 저장합니다.
+1. **[!UICONTROL 속성]** 탭 아래쪽으로 스크롤하여 색상 수정 속성을 추가합니다. 다음 표에 설명된 속성 이름, 유형 및 값을 수동으로 입력합니다. 값을 입력한 후 **[!UICONTROL 추가]**&#x200B;를 선택한 다음 **[!UICONTROL 모두 저장]**&#x200B;을 선택하여 값을 저장합니다.
 
    색상 수정 속성은 **색상 교정 속성** 표에 설명되어 있습니다. 색상 교정 속성에 할당할 수 있는 값은 **색상 프로필** 표에 있습니다.
 
-   예를 들어 **[!UICONTROL 이름]**&#x200B;에서 `iccprofilecmyk`를 추가하고 **[!UICONTROL 유형]** `String`을 선택하고 `WebCoated`값을 **[!UICONTROL 값]**&#x200B;으로 추가합니다. 그런 다음 **[!UICONTROL 추가]**&#x200B;를 클릭한 다음 **[!UICONTROL 모두 저장]**&#x200B;을 탭하여 값을 저장합니다.
+   예를 들어 **[!UICONTROL 이름]**&#x200B;에서 `iccprofilecmyk`를 추가하고 **[!UICONTROL 유형]** `String`을 선택하고 `WebCoated`값을 **[!UICONTROL 값]**&#x200B;으로 추가합니다. 그런 다음 **[!UICONTROL 추가]**&#x200B;를 선택한 다음 **[!UICONTROL 모두 저장]**&#x200B;을 선택하여 값을 저장합니다.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1077,7 +986,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">icrenderintent</a></td>
    <td>문자열</td>
    <td>상대적</td>
-   <td><p>렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다.<strong>지각, 상대, 채도, 절대. </strong><i></i>Adobe은  <strong>기본적으로 상대 </strong><i></i>를 권장합니다.</p> </td>
+   <td><p>렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. <strong>지각, 상대, 채도, 절대. </strong><i></i>Adobe은  <strong>기본적으로 상대 </strong><i></i>를 권장합니다.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1259,7 +1168,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
  </tbody>
 </table>
 
-1. **[!UICONTROL 모두 저장]**&#x200B;을 누릅니다.
+1. **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 
 예를 들어 **[!UICONTROL iccprofilergb]**&#x200B;을 `sRGB`로 설정하고 **[!UICONTROL iccprofilecmyk]**&#x200B;를 **[!UICONTROL WebCoated]**&#x200B;로 설정할 수 있습니다.
 
