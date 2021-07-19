@@ -7,9 +7,9 @@ solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: 공동 작업,Dynamic Media Classic
-source-git-commit: ed213692bc72ab727a5fa105796fb68aef33904e
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1170'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 0%
    * Dynamic Media의 자르기 마법을 사용하는 방법을 알아봅니다.
    * Dynamic Media Classic에서 더 많은 가치를 얻을 수 있도록 무료 감사를 이용하십시오.
    * Dynamic Media Classic의 새 사용자 인터페이스에 대해 알아봅니다.
-   * Adobe Experience Cloud 고객 성공 관리자 Georgia Myers를 만나보십시오.
+   * Adobe Experience Cloud의 고객 성공 관리자 `Georgia Myers`을 만나보십시오.
 
 * **[2020년 1월, 1호](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
@@ -85,7 +85,7 @@ ht-degree: 0%
    * 강력한 새로운 보안 기능
    * Adobe이 어떻게 준비되고 있어서 성공적인 휴가철입니다.
    * 동료와 뉴스레터를 공유하여 팀 전문 지식을 구축하십시오.
-   * Dynamic Media의 수석 제품 관리자인 Apova Gupta를 만나보십시오.
+   * Dynamic Media의 수석 제품 관리자 `Apoorva Gupta` 을 만나보십시오.
 
 * **[2019년 10월, 10호](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
@@ -95,7 +95,7 @@ ht-degree: 0%
    * 고화질 영상과 동영상을 통해 놀라운 속도를 낼 수 있는 정보를 제공하는 인포그래픽입니다.
    * 오늘날의 고객 기대치를 충족하도록 풍부한 미디어 전략을 업데이트하는 방법을 이해하는 데 도움이 되는 CMSwire 기사입니다.
    * Skill Builder 시리즈에서 Dynamic Media의 온디맨드 웨비나에 액세스할 수 있습니다.
-   * Adobe Experience Manager의 사이트 신뢰성 엔지니어링 관리자 Nick Peters를 만나보십시오.
+   * Adobe Experience Manager의 `Nick Peters` 관리자, 사이트 신뢰성 엔지니어링,
    * Experience League에서 Dynamic Media 및 Dynamic Media Classic을 빠르게 사용할 수 있습니다.
 
 * **[2019년 9월, 2019년 9월](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
@@ -117,7 +117,7 @@ ht-degree: 0%
    * Adobe Experience Manager Assets 및 Dynamic Media을 빠르게 이용할 수 있도록 설계된 웨비나 시리즈에 대해 알아보십시오.
    * Experience League 시 Dynamic Media의 가치 창출을 여정으로 시작합니다.
    * 방문자가 리치 미디어와 상호 작용하는 방법을 분석할 수 있는 이번 9월 강력한 통합을 신속하게 엿볼 수 있습니다.
-   * Dynamic Media 기술 지원 분야의 PieterJan Pieper를 만나보십시오.
+   * Dynamic Media 기술 지원 위즈인 `PieterJan Pieper`을 만나보십시오.
 
 * **[2019년 7월, 207호](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
@@ -128,7 +128,7 @@ ht-degree: 0%
    * 다음은 정보가 채워진 Adobe 인사이더 투어의 다음 정류장입니다.
    * Adobe Experience Manager Assets(Adobe Experience Manager Assets) 내에 Dynamic Media이 있을 때 사용할 수 있는 흥미로운 기능입니다.
    * 웹 사이트에 360도 비디오 및 사용자 정의 비디오 축소판 추가
-   * Experience Manager Assets에서 Dynamic Media의 주요 솔루션 컨설턴트인 Andrew 해서웨이를 만나보십시오.
+   * Experience Manager Assets 내에서 Dynamic Media의 주요 솔루션 컨설턴트인 `Andrew Hathaway` 을 만나보십시오.
 
 * **[2019년 6월, 2016년 6월](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
@@ -139,7 +139,7 @@ ht-degree: 0%
    * 예정된 Adobe Insider Tour에 대해 자세히 알아보십시오.
    * 디지털 자산이 불법 복제되지 않도록 보호하는 방법에 대해 읽어 보십시오.
    * 이미지용 AI 기반의 Smart Crop에 대해 알아봅니다.
-   * Dynamic Media 및 Dynamic Media Classic의 다양한 뛰어난 기능과 혁신적인 기능을 뒷받침하는 주요 요소 중 하나인 Alex Thiers를 만나보십시오.
+   * Dynamic Media 및 Dynamic Media Classic의 많은 주요 기능과 혁신적인 기능을 뒷받침하는 요소 중 하나인 `Alex Thiers`을 만나보십시오.
 
 * **[2019년 5월, 2015년 5월](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**
 
