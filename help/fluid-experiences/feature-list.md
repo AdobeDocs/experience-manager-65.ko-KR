@@ -4,7 +4,7 @@ description: Fluid Experiences 기능 목록
 index: n
 feature: 작성
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 100%
