@@ -10,10 +10,10 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: 게시,구성
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -60,7 +60,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 ## Dynamic Media 계정에 대해 HTTP/2를 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
-HTTP/2로 전환하는 요청을 시작합니다.자동으로 수행되지 않습니다.
+HTTP/2로 전환하는 요청을 시작합니다. 자동으로 수행되지 않습니다.
 
 1. HTTP/2로 전환하려면 고객 지원 Adobe 요청을 시작합니다. [Adobe Experience Manager 지원 포털에 액세스](https://helpx.adobe.com/kr/experience-manager/kb/accessing-aem-support-portal.html)를 참조하십시오.
 
@@ -77,7 +77,7 @@ HTTP/2로 전환하는 요청을 시작합니다.자동으로 수행되지 않�
 
       브라우저에 이 사실을 나타내지 않으므로 확장을 다운로드해야 합니다.
 
-      Firefox 및 Chrome의 경우 &quot;HTTP/2 및 SPDY Indicator&quot;라는 확장이 있습니다. 브라우저는 http/2만 안전하게 지원하므로 확인하려면 https가 있는 URL을 호출해야 합니다. http/2가 지원되는 경우 확장이 파란색 Flash 기호 형태로 표시되고 헤더 &quot;X-Firefox-Spdy&quot; 가 표시됩니다.&quot;h2&quot;.
+      Firefox 및 Chrome의 경우 &quot;HTTP/2 및 SPDY Indicator&quot;라는 확장이 있습니다. 브라우저는 http/2만 안전하게 지원하므로 확인하려면 https가 있는 URL을 호출해야 합니다. http/2가 지원되는 경우 확장이 파란색 Flash 기호 형태로 표시되고 헤더 &quot;X-Firefox-Spdy&quot; 가 표시됩니다. &quot;h2&quot;.
 
 
 ## 언제 HTTP/2로 전환할 수 있습니까? {#when-can-i-expect-to-be-transitioned-over-to-http}
@@ -98,4 +98,4 @@ HTTP/2로 전환하면 새 CDN 구성으로 이동해야 하므로 CDN에서 캐
 
 브라우저에 이 사실을 나타내지 않으므로 확장을 다운로드해야 합니다.
 
-Firefox 및 Chrome의 경우 &quot;HTTP/2 및 SPDY Indicator&quot;라는 확장이 있습니다. 브라우저는 http/2만 안전하게 지원하므로 확인하려면 https가 있는 URL을 호출해야 합니다. http/2가 지원되는 경우 확장이 파란색 Flash 기호 형태로 표시되고 헤더 `X-Firefox-Spdy` 가 표시됩니다.`h2`.
+Firefox 및 Chrome의 경우 &quot;HTTP/2 및 SPDY Indicator&quot;라는 확장이 있습니다. 브라우저는 http/2만 안전하게 지원하므로 확인하려면 https가 있는 URL을 호출해야 합니다. http/2가 지원되는 경우 확장이 파란색 Flash 기호 형태로 표시되고 헤더 `X-Firefox-Spdy` 가 표시됩니다. `h2`.
