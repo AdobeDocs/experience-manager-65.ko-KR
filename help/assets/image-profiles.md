@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: 이미지 프로필
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 3411c5c4498cc45451a5874fae2bfccfaddae251
 workflow-type: tm+mt
-source-wordcount: '2752'
+source-wordcount: '2755'
 ht-degree: 4%
 
 ---
@@ -53,20 +53,20 @@ ht-degree: 4%
     <ul>
      <li>값은 위쪽, 아래쪽, 왼쪽 및 오른쪽입니다.</li>
      <li>왼쪽 상단은 0,0으로 간주되며 픽셀 자르기는 여기에서 계산됩니다.</li>
-     <li>자르기 시작 지점:왼쪽은 X이고, 상단은 Y입니다</li>
-     <li>가로 계산:원래 이미지의 가로 픽셀 치수에서 [왼쪽]을 뺀 다음 [오른쪽]을 뺀 것입니다.</li>
-     <li>세로 계산:세로 픽셀 높이 - 위쪽, 아래쪽 빼기</li>
-    </ul> <p>예를 들어 4000 x 3000 픽셀 이미지가 있다고 가정합니다. 값을 사용합니다.Top=250, Bottom=500, Left=300, Right=700.</p> <p>(4000-300-700, 3000-250-500 또는 3000,2250)의 채우기 공간을 사용하여 왼쪽 상단(300,250) 자르기에서</p> </td>
+     <li>자르기 시작 지점: 왼쪽은 X이고, 상단은 Y입니다</li>
+     <li>가로 계산: 원래 이미지의 가로 픽셀 치수에서 [왼쪽]을 뺀 다음 [오른쪽]을 뺀 것입니다.</li>
+     <li>세로 계산: 세로 픽셀 높이 - 위쪽, 아래쪽 빼기</li>
+    </ul> <p>예를 들어 4000 x 3000 픽셀 이미지가 있다고 가정합니다. 값을 사용합니다. Top=250, Bottom=500, Left=300, Right=700.</p> <p>(4000-300-700, 3000-250-500 또는 3000,2250)의 채우기 공간을 사용하여 왼쪽 상단(300,250) 자르기에서</p> </td>
   </tr>
   <tr>
    <td>스마트 자르기</td>
    <td>시각적 초점을 기반으로 이미지를 벌크 자르십시오.</td>
-   <td><p>스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 일괄적으로 이미지 자르기를 신속하게 자동화합니다. 스마트 자르기는 화면 크기에 상관없이 의도한 관심 영역을 캡처하기 위해 모든 이미지의 초점을 자동으로 감지하고 자릅니다.</p> <p>스마트 자르기를 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong> 를 선택한 다음 응답형 이미지 자르기 오른쪽에 있는 기능을 활성화(켜기)합니다.</p> <p>일반적으로 크기가 큰, 중간 및 작음의 기본 중단점 크기는 대부분의 이미지가 모바일 및 태블릿 장치, 데스크톱 및 배너에 사용되는 전체 크기 범위를 다룹니다. 원하는 경우 큰, 중간 및 작은 의 기본 이름을 편집할 수 있습니다.</p> <p>중단점을 더 추가하려면 <strong>자르기 추가</strong>;자르기를 삭제하려면 [쓰레기통] 아이콘을 클릭합니다.</p> </td>
+   <td><p>스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 일괄적으로 이미지 자르기를 신속하게 자동화합니다. 스마트 자르기는 화면 크기에 상관없이 의도한 관심 영역을 캡처하기 위해 모든 이미지의 초점을 자동으로 감지하고 자릅니다.</p> <p>스마트 자르기를 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong> 를 선택한 다음 응답형 이미지 자르기 오른쪽에 있는 기능을 활성화(켜기)합니다.</p> <p>일반적으로 크기가 큰, 중간 및 작음의 기본 중단점 크기는 대부분의 이미지가 모바일 및 태블릿 장치, 데스크톱 및 배너에 사용되는 전체 크기 범위를 다룹니다. 원하는 경우 큰, 중간 및 작은 의 기본 이름을 편집할 수 있습니다.</p> <p>중단점을 더 추가하려면 <strong>자르기 추가</strong>; 자르기를 삭제하려면 [쓰레기통] 아이콘을 클릭합니다.</p> </td>
   </tr>
   <tr>
    <td>색상 및 이미지 견본</td>
    <td>각 이미지에 대한 이미지 견본을 벌크로 생성합니다.</td>
-   <td><p><strong>참고</strong>:스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>색상 또는 텍스처를 보여주는 제품 이미지에서 고품질 색상 견본을 자동으로 찾아 생성합니다.</p> <p>[색상 및 이미지 견본]을 사용하려면 [자르기 옵션] 드롭다운 목록에서 <strong>스마트 자르기</strong>을 선택한 다음 [색상] 및 [이미지 견본] 오른쪽에 있는 기능을 활성화(켜기)합니다. [너비] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 작물은 [표현물] 레일에서 사용할 수 있지만 색상 견본은 URL 복사 기능을 통해서만 사용됩니다. 사이트에서 견본을 렌더링하려면 직접 보는 구성 요소를 사용합니다. 이 규칙의 예외는 회전 배너입니다. Dynamic Media은 회전 배너에 사용된 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 색상 견본 사용</strong></p> <p>이미지 색상 견본의 URL은 간단합니다. 예:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code>이 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 다음과 같이 <code>req=userdata</code> 요청을 수행합니다.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어 다음은 Dynamic Media Classic의 견본 자산입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>다음은 견본 자산의 해당 <code>req=userdata</code> URL입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p><code>req=userdata</code> 응답은 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>참고</strong>: 스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>색상 또는 텍스처를 보여주는 제품 이미지에서 고품질 색상 견본을 자동으로 찾아 생성합니다.</p> <p>[색상 및 이미지 견본]을 사용하려면 [자르기 옵션] 드롭다운 목록에서 <strong>스마트 자르기</strong>을 선택한 다음 [색상] 및 [이미지 견본] 오른쪽에 있는 기능을 활성화(켜기)합니다. [너비] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 작물은 [표현물] 레일에서 사용할 수 있지만 색상 견본은 URL 복사 기능을 통해서만 사용됩니다. 사이트에서 견본을 렌더링하려면 직접 보는 구성 요소를 사용합니다. 이 규칙의 예외는 회전 배너입니다. Dynamic Media은 회전 배너에 사용된 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 색상 견본 사용</strong></p> <p>이미지 색상 견본의 URL은 간단합니다. 예:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code>이 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 다음과 같이 <code>req=userdata</code> 요청을 수행합니다.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어 다음은 Dynamic Media Classic의 견본 자산입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>다음은 견본 자산의 해당 <code>req=userdata</code> URL입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p><code>req=userdata</code> 응답은 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -87,7 +87,7 @@ ht-degree: 4%
 | --- | --- |
 | 양 | 가장자리 픽셀에 적용된 대비 크기를 제어합니다. 기본값은 1.75입니다. 고해상도 이미지의 경우 최대 5로 늘릴 수 있습니다. 양을 필터 강도를 측정하는 방법으로 생각합니다. 범위는 0-5입니다. |
 | 반경 | 선명하게 하기가 적용되는 가장자리 픽셀 주위의 픽셀 수를 결정합니다. 고대비 이미지의 경우 1~2를 입력합니다. 작은 값은 가장자리 픽셀만 선명하게 하고 큰 값은 넓은 폭의 픽셀을 선명하게 합니다. 정확한 값은 이미지의 크기에 따라 다릅니다. 기본값은 0.2이고, 범위는 0-250입니다. |
-| 임계값 | 언샵 마스크 필터를 적용할 때 무시할 대비 범위를 결정합니다.즉, 이 옵션은 가장자리 픽셀로 간주되고 선명하게 되기 전에 선명하게 된 픽셀이 주변 영역과 얼마나 다른지를 결정합니다. 노이즈가 발생하지 않도록 0~255 사이의 값을 사용해 보십시오. |
+| 임계값 | 언샵 마스크 필터를 적용할 때 무시할 대비 범위를 결정합니다. 즉, 이 옵션은 가장자리 픽셀로 간주되고 선명하게 되기 전에 선명하게 된 픽셀이 주변 영역과 얼마나 다른지를 결정합니다. 노이즈가 발생하지 않도록 0~255 사이의 값을 사용해 보십시오. |
 
 선명하게 하기는 [이미지 선명하게 하기](/help/assets/assets/sharpening_images.pdf)에 설명되어 있습니다.
 
@@ -155,7 +155,7 @@ ht-degree: 4%
 
 #### 속성의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 이미지 프로필을 적용할 폴더로 이동합니다.
+1. AEM 로고를 탭하고 **[!UICONTROL Assets]**&#x200B;로 이동합니다. 그런 다음 이미지 프로필을 적용할 폴더의 상위 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
 1. **[!UICONTROL 이미지 프로필]** 탭을 탭합니다. **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
@@ -175,7 +175,7 @@ ht-degree: 4%
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
-   * 다음 노드로 CRXDE Lite으로 이동합니다.`/content/dam/jcr:content`
+   * 다음 노드로 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`
 
       `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
 
@@ -207,7 +207,7 @@ ht-degree: 4%
 
    * 페이지의 오른쪽 위 모서리 근처에 있는 슬라이더 막대를 왼쪽 또는 오른쪽으로 드래그하여 이미지 표시를 각각 늘리거나 줄입니다.
    * 이미지에서 코너 핸들을 드래그하여 자르기나 견본의 볼 수 있는 영역의 크기를 조정합니다.
-   * 이미지에서 상자/견본을 새 위치로 드래그합니다. 이미지 색상 견본만 편집할 수 있습니다.색상 견본은 정적입니다.
+   * 이미지에서 상자/견본을 새 위치로 드래그합니다. 이미지 색상 견본만 편집할 수 있습니다. 색상 견본은 정적입니다.
    * 이미지 위에서 **[!UICONTROL 되돌리기]**&#x200B;를 탭하여 모든 편집 내용을 취소하고 원래 자르기 또는 견본을 복원합니다.
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 탭한 다음, **[!UICONTROL 닫기]**&#x200B;를 탭하여 자산의 폴더로 돌아갑니다.
