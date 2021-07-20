@@ -8,12 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 feature: 이미지 사전 설정
-role: User, Admin
+role: User,Admin
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 14%
+source-wordcount: '329'
+ht-degree: 11%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 14%
 
 **Dynamic Media 이미지 사전 설정을 적용하려면:**
 
-1. 자산을 열고 왼쪽 레일에서 드롭다운 메뉴를 탭한 다음, **[!UICONTROL 표현물]**&#x200B;을 누릅니다.
+1. 자산을 열고 왼쪽 레일에서 드롭다운 메뉴를 선택한 다음 **[!UICONTROL 표현물]**&#x200B;을 선택합니다.
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ ht-degree: 14%
 1. 다음 중 하나를 수행합니다.
 
    * 이미지 사전 설정을 미리 볼 수 있도록 다이내믹 렌디션을 선택합니다.
-   * 팝업을 표시하려면 **[!UICONTROL URL]**, **[!UICONTROL Embed]** 또는 **[!UICONTROL RESS]**&#x200B;를 누릅니다.
+   * 팝업을 표시하려면 **[!UICONTROL URL]**, **[!UICONTROL 포함]** 또는 **[!UICONTROL RESS]**&#x200B;를 선택합니다.
 
    >[!NOTE]
    >
