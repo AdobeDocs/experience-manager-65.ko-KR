@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: 자산 관리,표현물
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '2626'
+source-wordcount: '2633'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
 
 >[!NOTE]
 >
->DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어 DPR=2가 있는 iPhone5 및 DPR=3이 있는 iPhone12에서는 모두 DPR=2를 표시합니다. 여전히 고해상도 장치의 경우 DPR=2를 전송하는 것이 DPR=1을 보내는 것보다 좋습니다. 준비 중:Adobe이 클라이언트측 코드에서 작동하여 최종 사용자의 DPR을 정확하게 판별하고 있습니다.
+>DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측 값을 기반으로 합니다. 이러한 값은 때때로 부정확합니다. 예를 들어 DPR=2가 있는 iPhone5 및 DPR=3이 있는 iPhone12에서는 모두 DPR=2를 표시합니다. 여전히 고해상도 장치의 경우 DPR=2를 전송하는 것이 DPR=1을 보내는 것보다 좋습니다. 준비 중: Adobe이 클라이언트측 코드에서 작동하여 최종 사용자의 DPR을 정확하게 판별하고 있습니다.
 
 ## 최신 스마트 이미징의 주요 이점은 무엇입니까? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -94,13 +94,13 @@ CSS 픽셀 비율이라고도 하는 DPR(장치 픽셀 비율)은 장치의 실�
 
 최신 버전의 스마트 이미징 개선 사항:
 
-* 최신 스마트 이미징을 활용하여 웹 페이지의 Google SEO 등급을 개선했습니다.
+* 최신 스마트 이미징을 사용하는 웹 페이지의 Google SEO 등급을 개선했습니다.
 * 최적화된 컨텐츠를 런타임 시 즉시 제공합니다.
 * Adobe Sensei 기술을 사용하여 이미지 요청에 지정된 품질(qlt)에 따라 변환합니다.
 * 스마트 이미징은 &quot;bfc&quot; URL 매개 변수를 사용하여 해제할 수 있습니다.
 * TTL(Time To Live)과 독립적입니다. 이전에는 스마트 이미징이 작동하려면 최소 TTL이 12시간이었습니다.
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 Smart Imaging에서는 파생자만 캐시되므로 단일 단계 캐시 무효화 프로세스를 허용합니다.
-* 규칙 세트에 사용자 지정 헤더를 사용하는 고객은 이전 버전의 Smart Imaging과 달리 이러한 헤더가 차단되지 않으므로 최신 Smart Imaging을 활용할 수 있습니다. 예를 들어, [이미지 응답에 사용자 지정 헤더 값을 추가하는 경우 &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot;이 권장됩니다|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* 규칙 세트에 사용자 지정 헤더를 사용하는 고객은 이전 버전의 Smart Imaging과 달리 이러한 헤더가 차단되지 않으므로 최신 Smart Imaging을 활용할 수 있습니다. 예를 들어, [이미지 응답에 사용자 지정 헤더 값을 추가합니다|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)에 설명된 &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot;이 있습니다.
 
 ## 스마트 이미징과 관련된 라이센스 비용이 있습니까? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -180,13 +180,13 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정 또는 계정에 로그인합니다.
 
-**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL 일반 설정]** **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 필드를 찾습니다. 현재 일반 도메인을 사용 중인 경우 기술 지원 티켓을 제출할 때 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
+**[!UICONTROL 설치]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;게시된 서버 이름&#x200B;]**이라는 필드를 찾습니다.**[!UICONTROL  현재 일반 도메인을 사용 중인 경우 기술 지원 티켓을 제출할 때 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
 
 첫 번째 사용자 지정 도메인은 Dynamic Media 라이센스를 통해 추가 비용이 들지 않습니다.
 
 ## 내 계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-스마트 이미징 사용 요청을 시작합니다.자동으로 활성화되지 않습니다.
+스마트 이미징 사용 요청을 시작합니다. 자동으로 활성화되지 않습니다.
 
 기본적으로 Dynamic Media 회사 계정에 대해 스마트 이미징 DPR 및 네트워크 최적화가 비활성화(꺼짐)됩니다. 이러한 기본 개선 사항 중 하나 또는 둘 다 활성화(켜기)하려면 아래 설명된 지원 사례를 만드십시오.
 
@@ -206,7 +206,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
       도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정 또는 계정에 로그인합니다.
 
-      **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;을 클릭합니다.
+      **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다.
 
       **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다.
    1. Adobe을 통해 CDN을 사용하고 있으며 직접 관계로 관리하지 않는지 확인합니다.
@@ -214,7 +214,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
       도메인을 찾으려면 [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 회사 계정 또는 계정에 로그인합니다.
 
-      **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;을 클릭합니다.
+      **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다.
 
       **[!UICONTROL 게시된 서버 이름]**&#x200B;이라는 레이블이 지정된 필드를 찾습니다. 현재 일반 Dynamic Media Classic 도메인을 사용 중인 경우, 이 전환의 일부로 고유한 사용자 지정 도메인으로 이동을 요청할 수 있습니다.
    1. HTTP/2에서 작업하기 위해 스마트 이미징이 필요한지 여부를 나타냅니다.
@@ -225,7 +225,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 1. 고객 지원 센터에서 이 작업을 완료하면 알림을 받게 됩니다.
 1. 스마트 이미징의 성능 향상을 극대화하려면 Adobe에서 TTL(Time To Live)을 24시간 이상으로 설정하는 것이 좋습니다. TTL은 CDN에 의해 자산이 캐시되는 기간을 정의합니다. 이 설정을 변경하려면 다음을 수행하십시오.
 
-   1. Dynamic Media Classic을 사용하는 경우 **[!UICONTROL 설정 > 애플리케이션 설정 > 게시 설정 > 이미지 서버]**&#x200B;를 클릭합니다. **[!UICONTROL 기본 클라이언트 캐시 시간을 Live]** 값으로 24 이상으로 설정합니다.
+   1. Dynamic Media Classic을 사용하는 경우 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;로 이동합니다. **[!UICONTROL 기본 클라이언트 캐시 시간을 Live]** 값으로 24 이상으로 설정합니다.
    1. Dynamic Media을 사용하는 경우 [다음 지침](config-dynamic.md)을 따르십시오. **[!UICONTROL 만료]** 값을 24시간 이상 설정합니다.
 
 ## 언제 내 계정이 스마트 이미징으로 활성화될 수 있습니까? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
@@ -245,7 +245,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 ## 스마트 이미징이 예상대로 작동하는지 확인하려면 어떻게 해야 합니까?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. 계정이 스마트 이미징으로 구성된 후 브라우저에서 Dynamic Media Classic 또는 Adobe Experience Manager - Dynamic Media 이미지 URL을 로드합니다.
-1. 브라우저에서 **[!UICONTROL 보기]** > **[!UICONTROL 개발자]** > **[!UICONTROL 개발자 도구]**&#x200B;를 클릭하여 Chrome 개발자 창을 엽니다. 또는 원하는 브라우저 개발자 도구를 선택합니다.
+1. 브라우저에서 **[!UICONTROL 보기]** > **[!UICONTROL 개발자]** > **[!UICONTROL 개발자 도구]**&#x200B;로 이동하여 Chrome 개발자 창을 엽니다. 또는 원하는 브라우저 개발자 도구를 선택합니다.
 
 1. 개발자 도구가 열려 있을 때 캐시가 비활성화되어 있는지 확인합니다.
 
