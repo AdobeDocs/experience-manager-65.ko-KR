@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: 이미지 프로필
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 6ac0be454a5410f55155490941cb5aa6e2d8620b
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '2755'
-ht-degree: 4%
+source-wordcount: '2790'
+ht-degree: 3%
 
 ---
 
@@ -39,43 +39,15 @@ ht-degree: 4%
 
 선택할 수 있는 두 가지 이미지 자르기 옵션이 있습니다. 색상 및 이미지 색상 견본 만들기를 자동화하는 옵션도 있습니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>옵션</strong></td>
-   <td><strong>사용 시기</strong></td>
-   <td><strong>설명</strong></td>
-  </tr>
-  <tr>
-   <td>픽셀 자르기</td>
-   <td>차원만 기준으로 이미지를 벌크 자르십시오.</td>
-   <td><p>이 옵션을 사용하려면 [자르기 옵션] 드롭다운 목록에서 <strong>픽셀 자르기</strong>를 선택합니다.</p> <p>이미지의 양쪽에서 자르려면 이미지의 모든 측면이나 각 측면에서 자를 픽셀 수를 입력합니다. 이미지가 잘리는 양은 이미지 파일의 ppi(인치당 픽셀) 설정에 따라 달라집니다.</p> <p>이미지 프로필 픽셀 자르기는 다음 방식으로 렌더링됩니다.<br /> </p>
-    <ul>
-     <li>값은 위쪽, 아래쪽, 왼쪽 및 오른쪽입니다.</li>
-     <li>왼쪽 상단은 0,0으로 간주되며 픽셀 자르기는 여기에서 계산됩니다.</li>
-     <li>자르기 시작 지점: 왼쪽은 X이고, 상단은 Y입니다</li>
-     <li>가로 계산: 원래 이미지의 가로 픽셀 치수에서 [왼쪽]을 뺀 다음 [오른쪽]을 뺀 것입니다.</li>
-     <li>세로 계산: 세로 픽셀 높이 - 위쪽, 아래쪽 빼기</li>
-    </ul> <p>예를 들어 4000 x 3000 픽셀 이미지가 있다고 가정합니다. 값을 사용합니다. Top=250, Bottom=500, Left=300, Right=700.</p> <p>(4000-300-700, 3000-250-500 또는 3000,2250)의 채우기 공간을 사용하여 왼쪽 상단(300,250) 자르기에서</p> </td>
-  </tr>
-  <tr>
-   <td>스마트 자르기</td>
-   <td>시각적 초점을 기반으로 이미지를 벌크 자르십시오.</td>
-   <td><p>스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 일괄적으로 이미지 자르기를 신속하게 자동화합니다. 스마트 자르기는 화면 크기에 상관없이 의도한 관심 영역을 캡처하기 위해 모든 이미지의 초점을 자동으로 감지하고 자릅니다.</p> <p>스마트 자르기를 사용하려면 자르기 옵션 드롭다운 목록에서 <strong>스마트 자르기</strong> 를 선택한 다음 응답형 이미지 자르기 오른쪽에 있는 기능을 활성화(켜기)합니다.</p> <p>일반적으로 크기가 큰, 중간 및 작음의 기본 중단점 크기는 대부분의 이미지가 모바일 및 태블릿 장치, 데스크톱 및 배너에 사용되는 전체 크기 범위를 다룹니다. 원하는 경우 큰, 중간 및 작은 의 기본 이름을 편집할 수 있습니다.</p> <p>중단점을 더 추가하려면 <strong>자르기 추가</strong>; 자르기를 삭제하려면 [쓰레기통] 아이콘을 클릭합니다.</p> </td>
-  </tr>
-  <tr>
-   <td>색상 및 이미지 견본</td>
-   <td>각 이미지에 대한 이미지 견본을 벌크로 생성합니다.</td>
-   <td><p><strong>참고</strong>: 스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.</p> <p>색상 또는 텍스처를 보여주는 제품 이미지에서 고품질 색상 견본을 자동으로 찾아 생성합니다.</p> <p>[색상 및 이미지 견본]을 사용하려면 [자르기 옵션] 드롭다운 목록에서 <strong>스마트 자르기</strong>을 선택한 다음 [색상] 및 [이미지 견본] 오른쪽에 있는 기능을 활성화(켜기)합니다. [너비] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.</p> <p>모든 이미지 작물은 [표현물] 레일에서 사용할 수 있지만 색상 견본은 URL 복사 기능을 통해서만 사용됩니다. 사이트에서 견본을 렌더링하려면 직접 보는 구성 요소를 사용합니다. 이 규칙의 예외는 회전 배너입니다. Dynamic Media은 회전 배너에 사용된 견본에 대한 보기 구성 요소를 제공합니다.)</p> <p><strong>이미지 색상 견본 사용</strong></p> <p>이미지 색상 견본의 URL은 간단합니다. 예:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>여기서 <code>:Swatch</code>이 자산 요청에 추가됩니다.</p> <p><strong>색상 견본 사용</strong></p> <p>색상 견본을 사용하려면 다음과 같이 <code>req=userdata</code> 요청을 수행합니다.</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>예를 들어 다음은 Dynamic Media Classic의 견본 자산입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>다음은 견본 자산의 해당 <code>req=userdata</code> URL입니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p><code>req=userdata</code> 응답은 다음과 같습니다.</p> <p><code class="code">SmartCropDef=Swatch
-       SmartCropHeight=200.0
-       SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
-       SmartCropType=Swatch
-       SmartCropWidth=200.0
-       SmartSwatchColor=0xA56DB2</code></p> <p>다음 각 URL 예와 같이 XML 또는 JSON 형식으로 <code>req=userdata</code> 응답을 요청할 수도 있습니다.</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml</code></p><p><code>SmartSwatchColor</code></p><p></p></td></tr></tbody></table>
+| 옵션 | 사용 시기 | 설명 |
+| --- | --- | --- |
+| 픽셀 자르기 | 차원만 기준으로 이미지를 벌크 자르십시오. | 이 옵션을 사용하려면 [자르기 옵션] 드롭다운 목록에서 **[!UICONTROL 픽셀 자르기]**&#x200B;를 선택합니다.<br><br>이미지의 양쪽에서 자르려면 이미지의 모든 측면이나 각 측면에서 자를 픽셀 수를 입력합니다. 이미지가 잘리는 양은 이미지 파일의 ppi(인치당 픽셀) 설정에 따라 달라집니다.<br><br>이미지 프로필 픽셀 자르기는 다음과 같은 방식으로 렌더링됩니다.<br> 값・은 위쪽, 아래쪽, 왼쪽 및 오른쪽입니다.<br>・ 왼쪽 위 `0,0` 가 고려되고 여기서 픽셀 자르기가 계산됩니다.<br>・ 자르기 시작 지점: 왼쪽은 X이고, 위쪽은 Y・<br> 가로 계산입니다. 원래 이미지의 가로 픽셀 치수에서 [왼쪽]을 뺀 다음 [오른쪽]을 뺀 것입니다.<br>・ 세로 계산: 세로 픽셀 높이 - 위쪽, 아래쪽 빼기<br><br>예를 들어 4000 x 3000 픽셀 이미지가 있다고 가정합니다. 값을 사용합니다. Top=250, Bottom=500, Left=300, Right=700.<br><br>(4000-300-700, 3000-250-500 또는 3000,2250)의 채우기 공간을 사용하여 왼쪽 상단(300,250) 자르기에서 |
+| 스마트 자르기 | 시각적 초점을 기반으로 이미지를 벌크 자르십시오. | 스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 일괄적으로 이미지 자르기를 신속하게 자동화합니다. 스마트 자르기는 화면 크기에 상관없이 의도한 관심 영역을 캡처하기 위해 모든 이미지의 초점을 자동으로 감지하고 자릅니다.</p> <p>스마트 자르기를 사용하려면 자르기 옵션 드롭다운 목록에서 **[!UICONTROL 스마트 자르기]** 를 선택한 다음 응답형 이미지 자르기 오른쪽에 있는 기능을 활성화(켜기)합니다.</p> <p>일반적으로 크기가 큰, 중간 및 작음의 기본 중단점 크기는 대부분의 이미지가 모바일 및 태블릿 장치, 데스크톱 및 배너에 사용되는 전체 크기 범위를 다룹니다. 원하는 경우 큰, 중간 및 작은 의 기본 이름을 편집할 수 있습니다.</p> <p>중단점을 더 추가하려면 **[!UICONTROL 자르기 추가]**&#x200B;를 선택하여 자르기를 삭제하고 [쓰레기통] 아이콘을 선택합니다. |
+| 색상 및 이미지 견본 | 각 이미지에 대한 이미지 견본을 벌크로 생성합니다. | **참고**: 스마트 견본은 Dynamic Media Classic에서 지원되지 않습니다.<br><br>색상 또는 텍스처를 보여주는 제품 이미지에서 고품질 색상 견본을 자동으로 찾아 생성합니다.<br><br>[색상] 및 [이미지 견본]을 사용하려면 [자르기 옵션] 드롭다운 목록에서  **[!UICONTROL 스마트]** 자르기]를 선택한 다음 [색상] 및 [이미지 견본] 오른쪽에 있는 기능을 활성화(켜기)합니다. [너비] 및 [높이] 텍스트 상자에 픽셀 값을 입력합니다.<br><br>모든 이미지 작물은 [표현물] 레일에서 사용할 수 있지만 색상 견본은 URL 복사 기능을 통해서만 사용됩니다. 사이트에서 견본을 렌더링하려면 직접 보는 구성 요소를 사용합니다. 이 규칙의 예외는 회전 배너입니다. Dynamic Media은 회전 배너에 사용된 견본에 대한 보기 구성 요소를 제공합니다.)<br><br>**이미지**<br>&#x200B;색상 견본 사용: 이미지 색상 견본의 URL은 간단합니다. 위치:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>여기서 `:Swatch`이 자산 요청에 추가됩니다.<br><br>**색상**<br>&#x200B;색상 견본을 사용하려면 다음 사항을 사용하여  `req=userdata` 요청을 수행합니다.<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br> 예를 들어, 다음은 Dynamic Media Classic의 견본 자산입니다.<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br> 다음은 견본 자산의 해당  `req=userdata` URL입니다.<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>  `req=userdata` 응답은 다음과 같습니다.<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>다음 각 URL 예제와 같이 XML 또는 JSON 형식으로  `req=userdata`  응답을 요청하여 색상 견본을 요청하고 <br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**WCM 구성 요소를 만들어 24비트 RGB 16진수 값으로 표현되는**   `SmartSwatchColor`  속성을 16진수로 구문 분석할 수도 있습니다.<br><br>뷰어 참조 안내서 [`userdata` 에서 를 참조하십시오](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html). |
 
 ## 언샵 마스크 {#unsharp-mask}
 
-**[!UICONTROL 언샵 마스크]**&#x200B;를 사용하여 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정할 수 있습니다. 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. 이 효과는 Adobe Photoshop의 &quot;언샵 마스크&quot; 필터와 동일한 옵션을 사용합니다.
+**[!UICONTROL 언샵 마스크]**&#x200B;를 사용하여 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정할 수 있습니다. 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. 이 효과는 Adobe Photoshop의 *언샵 마스크* 필터와 동일한 옵션을 사용합니다.
 
 >[!NOTE]
 >
@@ -101,8 +73,8 @@ ht-degree: 4%
 
 **Dynamic Media 이미지 프로필을 만들려면 다음을 수행하십시오.**
 
-1. Adobe Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
-1. 이미지 프로필을 추가할 수 있도록 **[!UICONTROL 만들기]**&#x200B;를 누릅니다.
+1. Adobe Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
+1. 이미지 프로필을 추가할 수 있도록 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 1. 프로파일 이름 및 언샵 마스크, 자르기, 견본 또는 둘 다에 대한 값을 입력합니다.
 
    목적에 맞는 프로필 이름을 사용하십시오. 예를 들어, 색상 견본만 생성하는 프로파일을 만들려면, 즉 스마트 자르기가 비활성화되어 있고(꺼져 있으며) 색상 및 이미지 견본이 활성화되어(켜져 있음) 프로파일 이름 &quot;스마트 색상 견본&quot;을 사용합니다.
@@ -111,12 +83,12 @@ ht-degree: 4%
 
    ![자르기](assets/crop.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 누릅니다. 새로 만든 프로필이 사용 가능한 프로필 목록에 나타납니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 새로 만든 프로필이 사용 가능한 프로필 목록에 나타납니다.
 
 ## Dynamic Media 이미지 프로필 편집 또는 삭제 {#editing-or-deleting-image-profiles}
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
-1. 편집하거나 제거할 이미지 프로필을 선택합니다. 편집하려면 **[!UICONTROL 이미지 처리 프로필 편집]**&#x200B;을 선택합니다. 제거하려면 **[!UICONTROL 이미지 처리 프로필 삭제]**&#x200B;를 선택합니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
+1. 편집하거나 제거할 이미지 프로필을 선택합니다. 편집하려면 **[!UICONTROL 이미지 프로필 편집]**&#x200B;을 선택합니다. 제거하려면 **[!UICONTROL 이미지 프로필 삭제]**&#x200B;를 선택합니다.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -134,7 +106,7 @@ ht-degree: 4%
 
 이미지 프로필을 특정 폴더에 적용하거나 모든 자산에 전체적으로 적용할 수 있습니다.
 
-나중에 변경한 기존 이미지 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
+나중에 변경한 기존 이미지 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. 처리 중인 프로필을 편집한 후 [폴더에서 자산 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
 
 ### 특정 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-specific-folders}
 
@@ -142,22 +114,22 @@ ht-degree: 4%
 
 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
-나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. [폴더의 자산에 대한 처리 프로필을 편집한 후 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
+나중에 변경한 기존 비디오 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다. 처리 중인 프로필을 편집한 후 [폴더에서 자산 재처리](processing-profiles.md#reprocessing-assets)를 참조하십시오.
 
 #### 프로필 사용자 인터페이스의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에 적용할 이미지 프로필을 선택합니다.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. **[!UICONTROL 폴더에 처리 프로필 적용]**&#x200B;을 탭하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 탭/클릭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. **[!UICONTROL 폴더에 처리 프로필 적용]**&#x200B;을 선택하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 적용]**&#x200B;을 선택합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
 #### 속성의 폴더에 Dynamic Media 이미지 프로필 적용 {#applying-image-profiles-to-folders-from-properties}
 
-1. AEM 로고를 탭하고 **[!UICONTROL Assets]**&#x200B;로 이동합니다. 그런 다음 이미지 프로필을 적용할 폴더의 상위 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
-1. **[!UICONTROL 이미지 프로필]** 탭을 탭합니다. **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
+1. Experience League 로고를 선택하고 **[!UICONTROL 자산]**&#x200B;으로 이동합니다. 그런 다음 이미지 프로필을 적용할 폴더의 상위 폴더로 이동합니다.
+1. 폴더에서 확인 표시를 선택하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 이미지 프로필]** 탭을 선택합니다. **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. 프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -171,13 +143,13 @@ ht-degree: 4%
 
 1. 다음 중 하나를 수행하십시오.
 
-   * `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` 로 이동하여 적절한 프로필을 적용하고 **[!UICONTROL 저장]**&#x200B;을 탭합니다.
+   * `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`으로 이동하여 적절한 프로필을 적용하고 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * 다음 노드로 CRXDE Lite으로 이동합니다. `/content/dam/jcr:content`
 
-      `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 탭합니다.
+      `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` 속성을 추가하고 **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
@@ -193,24 +165,24 @@ ht-degree: 4%
 
 필요한 경우 스마트 자르기를 다시 실행하여 추가 자르기를 다시 생성할 수 있습니다.
 
-[여러 이미지의 스마트 자르기 또는 스마트 견본 편집](#editing-the-smart-crop-or-smart-swatch-of-multiple-images)을 참조하십시오.
+또한 [여러 이미지의 스마트 자르기 또는 스마트 견본 편집](#editing-the-smart-crop-or-smart-swatch-of-multiple-images)을 참조하십시오.
 
 **단일 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면 다음을 수행하십시오.**
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
 
-1. 폴더를 탭하여 해당 컨텐츠를 열 수 있습니다.
-1. 조정할 스마트 자르기 또는 스마트 견본이 있는 이미지를 누릅니다.
-1. 도구 모음에서 **[!UICONTROL 스마트 자르기]**&#x200B;를 누릅니다.
+1. 폴더를 선택하여 해당 컨텐츠를 열 수 있습니다.
+1. 스마트 자르기 또는 스마트 견본을 조정할 이미지를 선택합니다.
+1. 도구 모음에서 **[!UICONTROL 스마트 자르기]**&#x200B;를 선택합니다.
 
 1. 다음 중 하나를 수행합니다.
 
    * 페이지의 오른쪽 위 모서리 근처에 있는 슬라이더 막대를 왼쪽 또는 오른쪽으로 드래그하여 이미지 표시를 각각 늘리거나 줄입니다.
    * 이미지에서 코너 핸들을 드래그하여 자르기나 견본의 볼 수 있는 영역의 크기를 조정합니다.
    * 이미지에서 상자/견본을 새 위치로 드래그합니다. 이미지 색상 견본만 편집할 수 있습니다. 색상 견본은 정적입니다.
-   * 이미지 위에서 **[!UICONTROL 되돌리기]**&#x200B;를 탭하여 모든 편집 내용을 취소하고 원래 자르기 또는 견본을 복원합니다.
+   * 이미지 위에서 **[!UICONTROL 되돌리기]**&#x200B;를 선택하여 모든 편집 내용을 취소하고 원래 자르기 또는 견본을 복원합니다.
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 탭한 다음, **[!UICONTROL 닫기]**&#x200B;를 탭하여 자산의 폴더로 돌아갑니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 선택한 다음 **[!UICONTROL 닫기]**&#x200B;를 선택하여 자산의 폴더로 돌아갑니다.
 
 ## 여러 이미지의 스마트 자르기 또는 스마트 견본 편집 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
@@ -222,8 +194,8 @@ ht-degree: 4%
 
 **여러 이미지의 스마트 자르기 또는 스마트 견본을 편집하려면 다음을 수행하십시오.**
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
-1. 폴더에서 **[!UICONTROL 추가 작업]**(..) 아이콘을 탭한 다음 **[!UICONTROL 스마트 자르기]**&#x200B;를 탭합니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 스마트 자르기 또는 스마트 견본 이미지 프로필이 적용된 폴더로 이동합니다.
+1. 폴더에서 **[!UICONTROL 추가 작업]**(..) 아이콘을 선택한 다음 **[!UICONTROL 스마트 자르기]**&#x200B;를 선택합니다.
 
 1. **[!UICONTROL 스마트 자르기 편집]** 페이지에서 다음 중 하나를 수행합니다.
 
@@ -242,28 +214,28 @@ ht-degree: 4%
    * 스마트 자르기 상자의 크기를 조정합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 견본만 있는 경우 이미지에서 자르기 상자의 코너 핸들을 드래그하여 자르기의 볼 수 있는 영역 크기를 조정합니다.
-      * 이미지에 스마트 자르기와 스마트 견본이 모두 있는 경우 이미지에서 자르기 상자의 코너 핸들을 드래그하여 자르기의 볼 수 있는 영역 크기를 조정합니다. 또는 이미지 아래에서 스마트 색상 견본을 탭하거나 클릭한 다음(색상 견본은 고정됨) 자르기 상자의 코너 핸들을 드래그하여 견본의 볼 수 있는 영역의 크기를 조정합니다.
+      * 이미지에 스마트 자르기와 스마트 견본이 모두 있는 경우 이미지에서 자르기 상자의 코너 핸들을 드래그하여 자르기의 볼 수 있는 영역 크기를 조정합니다. 또는 이미지 아래에서 스마트 색상 견본을 선택한 다음(색상 견본은 고정됨) 자르기 상자의 코너 핸들을 드래그하여 색상 견본의 볼 수 있는 영역의 크기를 조정합니다.
 
       ![이미지의 스마트 자르기 크기 조정](assets/edit_smart_crops-resize.png)
 
    * 스마트 자르기 상자를 이동합니다. 다음 중 하나를 수행합니다.
 
       * 이미지에 스마트 자르기 또는 스마트 견본만 있는 경우 이미지에서 자르기 상자를 새 위치로 드래그합니다.
-      * 이미지에 스마트 자르기와 스마트 견본이 모두 있는 경우 이미지에서 스마트 자르기 상자를 새 위치로 드래그합니다. 또는 이미지 아래에서 스마트 색상 견본을 탭하거나 클릭한 다음(색상 견본은 정적) 스마트 색상 견본 자르기 상자를 새 위치로 드래그합니다.
+      * 이미지에 스마트 자르기와 스마트 견본이 모두 있는 경우 이미지에서 스마트 자르기 상자를 새 위치로 드래그합니다. 또는 이미지 아래에서 스마트 색상 견본을 선택한 다음(색상 견본은 정적) 스마트 색상 견본 자르기 상자를 새 위치로 드래그합니다.
 
       ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * 모든 편집 내용을 실행 취소하고 원본 스마트 자르기 또는 스마트 견본을 복원합니다(현재 편집 세션에만 적용).
 
-      이미지 위에 있는 **[!UICONTROL 되돌리기]**&#x200B;를 누릅니다.
+      이미지 위에서 **[!UICONTROL 되돌리기]**&#x200B;를 선택합니다.
 
       ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
 
 
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 탭한 다음, **[!UICONTROL 닫기]**&#x200B;를 탭하여 자산의 폴더로 돌아갑니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 저장]**&#x200B;을 선택한 다음 **[!UICONTROL 닫기]**&#x200B;를 선택하여 자산의 폴더로 돌아갑니다.
 
-## 폴더에서 이미지 프로필 제거 {#removing-an-image-profile-from-folders}
+## 폴더에서 Dynamic Media 이미지 프로필 제거 {#removing-an-image-profile-from-folders}
 
 폴더에서 이미지 프로필을 제거하면 모든 하위 폴더는 해당 상위 폴더에서 프로필 제거를 자동으로 상속합니다. 그러나 폴더 내에서 발생한 파일의 모든 처리가 그대로 유지됩니다.
 
@@ -271,17 +243,17 @@ ht-degree: 4%
 
 ### 프로필 사용자 인터페이스를 통해 폴더에서 Dynamic Media 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 이미지 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에서 제거할 이미지 프로필을 선택합니다.
-1. **[!UICONTROL 폴더에서 처리 프로필 제거]**&#x200B;를 탭하고 프로필을 제거하는 데 사용할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 제거]**&#x200B;를 탭합니다.
+1. **[!UICONTROL 폴더에서 처리 프로필 제거]**&#x200B;를 선택하고 프로필을 제거할 폴더 또는 여러 폴더를 선택하고 **[!UICONTROL 제거]**&#x200B;를 선택합니다.
 
    이름이 더 이상 폴더 이름 아래에 표시되지 않으므로 이미지 프로필이 더 이상 폴더에 적용되지 않았는지 확인할 수 있습니다.
 
 ### 속성을 통해 폴더에서 Dynamic Media 이미지 프로필 제거 {#removing-image-profiles-from-folders-via-properties}
 
-1. Experience Manager 로고를 탭하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음, 이미지 프로필을 제거할 폴더로 이동합니다.
-1. 폴더에서 확인 표시를 눌러 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 누릅니다.
+1. Experience Manager 로고를 선택하고 **[!UICONTROL 자산]**&#x200B;으로 이동한 다음 이미지 프로필을 제거할 폴더로 이동합니다.
+1. 폴더에서 확인 표시를 선택하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 이미지 프로필]** 탭을 선택합니다.
-1. **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 **[!UICONTROL 없음]**&#x200B;을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 탭합니다.
+1. **[!UICONTROL 프로필 이름]** 드롭다운 목록에서 **[!UICONTROL 없음]**&#x200B;을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다.
 
    프로필이 이미 할당된 폴더는 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
