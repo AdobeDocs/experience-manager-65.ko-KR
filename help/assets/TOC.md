@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: ed213692bc72ab727a5fa105796fb68aef33904e
+source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 77%
+source-wordcount: '584'
+ht-degree: 75%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 77%
    + [대화형 이미지](interactive-images.md)
    + [대화형 비디오](interactive-videos.md)
    + [360 VR 비디오](/help/assets/360-video.md)
-   + [Adobe Analytics 및 Adobe Launch와 Dynamic Media Viewer 통합](/help/assets/launch.md)
+   + [Adobe Analytics 및 Adobe Experience Platform 태그와 Dynamic Media Viewer 통합](/help/assets/tags.md)
    + [빠른 보기를 사용하여 사용자 지정 팝업 만들기](custom-pop-ups.md)
    + [응답형 사이트용으로 최적화된 이미지 제공](responsive-site.md)
    + [Dynamic Media 자산 미리 보기](previewing-assets.md)
