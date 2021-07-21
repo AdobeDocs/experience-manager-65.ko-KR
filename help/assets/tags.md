@@ -1,6 +1,6 @@
 ---
 title: Adobe Analytics 및 Experience Platform 태그와 Dynamic Media Viewer 통합
-description: Experience Platform 태그 및 Dynamic Media Viewers 5.13용 Dynamic Media Viewers 확장을 사용하면 Adobe Analytics 및 Experience Platform 태그 고객이 Experience Platform 태그 구성에서 Dynamic Media Viewer용 이벤트 및 데이터를 사용할 수 있습니다.
+description: Experience Platform 태그 및 Dynamic Media Viewers 5.13용 Dynamic Media Viewers 확장에 대해 알아봅니다. Adobe Analytics 및 Experience Platform 태그 고객은 Experience Platform 태그 구성에서 Dynamic Media Viewer에 대한 특정 이벤트 및 데이터를 사용할 수 있습니다.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -10,9 +10,9 @@ docset: aem65
 feature: 뷰어
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 997eeafa03d3148fb0754eaa27a5a99217e0d1bc
 workflow-type: tm+mt
-source-wordcount: '6630'
+source-wordcount: '6636'
 ht-degree: 0%
 
 ---
@@ -802,7 +802,7 @@ Experience Manager 구성은 다음 두 가지 주요 단계로 구성됩니다.
 
 1. **[!UICONTROL Experience Platform 태그 구성]** 페이지의 왼쪽 패널에서 Experience Platform 태그 구성을 적용할 Experience Manager 사이트를 선택합니다.
 
-   샘플 목적으로만, 아래 스크린샷에서는 `We.Retail` 사이트 가 선택되어 있습니다.
+   샘플 목적으로만, 아래 스크린샷에서는 **`We.Retail`** 사이트가 선택되어 있습니다.
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
