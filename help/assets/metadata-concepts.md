@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: 메타데이터
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2721'
 ht-degree: 0%
 
 ---
@@ -63,10 +63,10 @@ ht-degree: 0%
 
 파일에 메타데이터를 포함하는 방법은 다양합니다. 다양한 인코딩 표준이 지원됩니다.
 
-* XMP:추출된 메타데이터를 리포지토리 내에 저장하는 데 [!DNL Assets]에서 사용됩니다.
-* ID3:오디오 및 비디오 파일에 사용할 수 있습니다.
-* 예:이미지 파일에 사용할 수 있습니다.
-* 기타/기존:[!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등입니다.
+* XMP: 추출된 메타데이터를 리포지토리 내에 저장하는 데 [!DNL Assets]에서 사용됩니다.
+* ID3: 오디오 및 비디오 파일에 사용할 수 있습니다.
+* 예: 이미지 파일에 사용할 수 있습니다.
+* 기타/기존: [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel] 등입니다.
 
 ### XMP {#xmp}
 
@@ -121,7 +121,7 @@ Exif로 정의된 메타데이터 필드는 일반적으로 기술적인 부분�
 * 앨범 - [!DNL Adobe Photoshop Album].
 * CQ - [!DNL Experience Manager Assets]에 의해 사용됩니다.
 * DAM - [!DNL Experience Manager Assets]에 의해 사용됩니다.
-* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html)는 Windows 운영 체제에 대한 메타데이터 및 파일 관리를 위한 도구 모음입니다.
+* DEX - [!DNL Optima SC Description explorer]은 Windows 운영 체제에 대한 메타데이터 및 파일 관리를 위한 도구 모음입니다.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
@@ -221,7 +221,7 @@ XMP은 데이터 모델, 스토리지 모델 및 스키마를 제공하여 메�
 EXIF, ID3 또는 Microsoft Office의 모든 레거시 메타데이터는 자동으로 XMP으로 변환되며, 제품 카탈로그와 같은 고객별 메타데이터 스키마를 지원하도록 확장할 수 있습니다.
 
 XMP의 메타데이터는 속성 세트로 구성됩니다. 이러한 속성은 항상
-리소스라는 특정 엔터티즉, 속성은 리소스에 대한 &quot;정보&quot;입니다. XMP의 경우 리소스는 항상 자산입니다.
+리소스라는 특정 엔터티 즉, 속성은 리소스에 대한 &quot;정보&quot;입니다. XMP의 경우 리소스는 항상 자산입니다.
 
 ### XMP 에코시스템 {#xmp-ecosystem}
 
@@ -259,10 +259,10 @@ XMP 스키마는
 
 XMP에는 하나 이상의 스키마의 속성이 포함될 수 있습니다. 예를 들어, 여러 Adobe 애플리케이션에서 사용하는 일반적인 하위 집합에는 다음이 포함될 수 있습니다.
 
-* 더블린 코어 스키마:`dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`.
-* XMP 기본 스키마:`xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`.
-* XMP 권한 관리 스키마:`xmpRights:WebStatement`, `xmpRights:Marked`
-* XMP Media 관리 스키마:`xmpMM:DocumentID`
+* 더블린 코어 스키마: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`.
+* XMP 기본 스키마: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`.
+* XMP 권한 관리 스키마: `xmpRights:WebStatement`, `xmpRights:Marked`
+* XMP Media 관리 스키마: `xmpMM:DocumentID`
 
 #### 언어 대체 요소 {#language-alternatives}
 
