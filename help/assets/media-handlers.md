@@ -6,7 +6,7 @@ contentOwner: AG
 role: User
 feature: 워크플로우,표현물
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 4851d61d9897ac71c6512829fdccf1895ad58bcd
+source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 2%
@@ -451,7 +451,7 @@ my.own.stuff 패키지 /&amp;ast;&amp;ast; amp;ast; @scr.component inherit=&quot
 * [ImageMagick](https://www.imagemagick.org/script/index.php) 및 [Ghostscript](https://www.ghostscript.com/)를 사용하여 EPS 및 AI 변환.
 * [FFmpeg](https://ffmpeg.org/)를 사용하여 FLV 비디오 코드 변환.
 * [FRAME](https://lame.sourceforge.io/)을 사용한 MP3 인코딩.
-* [SOX](https://sox.sourceforge.net/)를 사용한 오디오 처리.
+* [SOX](https://sox.sourceforge.io/)를 사용한 오디오 처리.
 
 >[!NOTE]
 >
