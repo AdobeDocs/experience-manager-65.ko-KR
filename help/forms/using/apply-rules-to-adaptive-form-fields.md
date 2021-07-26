@@ -1,5 +1,5 @@
 ---
-title: '"자습서를 게시하지 마십시오:적응형 양식 필드에 규칙 적용"'
+title: 적응형 양식 필드에 규칙 적용
 seo-title: 적응형 양식 필드에 규칙 적용
 description: 적응형 양식에 대화형, 비즈니스 논리 및 스마트 유효성 검사를 추가하는 규칙을 만듭니다.
 seo-description: 적응형 양식에 대화형, 비즈니스 논리 및 스마트 유효성 검사를 추가하는 규칙을 만듭니다.
@@ -8,20 +8,20 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63bc43bba88a42d62fb574bc8ce42470ac61d693
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
 
-# 자습서:적응형 양식 필드에 규칙 적용 {#tutorial-apply-rules-to-adaptive-form-fields}
+# 자습서: 적응형 양식 필드에 규칙 적용 {#tutorial-apply-rules-to-adaptive-form-fields}
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
 
 이 자습서는 [첫 번째 적응형 양식 만들기](/help/forms/using/create-your-first-adaptive-form.md) 시리즈의 단계입니다. Adobe은 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하기 위해 시리즈를 시간 순서대로 따르는 것을 권장합니다.
 
-## 자습서 {#about-the-tutorial} 정보
+## 자습서 정보 {#about-the-tutorial}
 
 규칙을 사용하여 적응형 양식에 대화형, 비즈니스 논리 및 스마트 유효성 검사를 추가할 수 있습니다. 적응형 양식에는 기본 제공 규칙 편집기가 있습니다. 규칙 편집기는 안내식 투어와 유사한 드래그 앤 드롭 기능을 제공합니다. 드래그 앤 드롭 방법은 규칙을 만드는 가장 빠르고 쉬운 방법입니다. 또한 규칙 편집기는 코딩 기술을 테스트하거나 규칙을 한 차원 끌어올리는 데 관심이 있는 사용자를 위한 코드 창도 제공합니다.
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 자습서의 각 섹션 끝에 있는 대화형 GIF 이미지는 빌드하고 있는 양식의 기능을 즉시 학습하고 확인할 수 있도록 도와줍니다.
 
-## 1단계:데이터베이스 {#retrieve-customer-record}에서 고객 레코드 검색
+## 1단계: 데이터베이스에서 고객 레코드 검색 {#retrieve-customer-record}
 
 [양식 데이터 모델 만들기](/help/forms/using/create-form-data-model.md) 문서에 따라 양식 데이터 모델을 만들었습니다. 이제 규칙 편집기를 사용하여 Forms 데이터 모델 서비스를 호출하여 정보를 검색하고 데이터베이스에 추가할 수 있습니다.
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
    ![검색 정보](assets/retrieve-information.gif)
 
-## 2단계:업데이트된 고객 주소를 데이터베이스에 추가 {#updated-customer-address}
+## 2단계: 데이터베이스에 업데이트된 고객 주소 추가 {#updated-customer-address}
 
 데이터베이스에서 고객 세부 정보를 검색한 후 배송 주소, 상태 및 우편 번호를 업데이트할 수 있습니다. 아래 절차는 Form Data Model 서비스를 호출하여 고객 정보를 데이터베이스로 업데이트합니다.
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 1. **[!UICONTROL 완료]**&#x200B;를 눌러 규칙을 저장합니다. 규칙 편집기 창에서 **[!UICONTROL 닫기]**&#x200B;를 누릅니다.
 1. 적응형 양식을 미리 봅니다. 고객의 세부 사항을 검색하고 배송 주소를 업데이트한 다음 양식을 제출합니다. 동일한 고객의 상세내역을 다시 읽어들일 때 갱신된 배송 주소가 표시됩니다.
 
-## 3단계:(보너스 섹션) 코드 편집기를 사용하여 유효성 검사를 실행하고 오류 메시지 {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages} 를 표시합니다.
+## 3단계: (보너스 섹션) 코드 편집기를 사용하여 유효성 검사를 실행하고 오류 메시지를 표시합니다 {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
 
 양식에서 유효성 검사를 실행하여 양식에 입력한 데이터가 올바르고 데이터가 잘못된 경우 오류 메시지가 표시되는지 확인해야 합니다. 예를 들어 기존 고객 ID가 아닌 ID를 양식에 입력한 경우 오류 메시지가 표시됩니다.
 
