@@ -12,10 +12,10 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 85596d4c2204aa1dd34c409b45d25eeffdb9c046
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -29,7 +29,7 @@ AEM Forms Designer 설치 프로그램에는 32비트 버전의 [Visual C++ redi
 
 디자이너는 독립 실행형 설치 프로그램으로 사용할 수 있으며 WorkBench와 함께 번들로 제공됩니다. Designer용 독립형 설치 프로그램을 사용하는 경우 다음 단계를 수행하십시오.
 
-1. Designer 설치 프로그램을 다운로드하려면 Adobe 지원 센터에 문의하십시오.
+1. Adobe [라이선스 웹 사이트](https://licensing.adobe.com/)에서 디자이너를 다운로드합니다.
 
    >[!NOTE]
    >
