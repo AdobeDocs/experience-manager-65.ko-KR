@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 스마트 태그, 검색
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1632'
 ht-degree: 1%
 
 ---
@@ -188,6 +188,7 @@ Smart Content Service가 폴더 내의 자산에 정기적으로 태그를 지�
 
 ## 팁 및 제한 사항 {#tips-best-practices-limitations}
 
+* 모델을 교육하려면 가장 적합한 이미지를 사용합니다. 교육을 되돌릴 수 없거나 교육 모델을 제거할 수 없습니다. 태깅 정확성은 현재 교육에 따라 다르므로 주의하십시오.
 * 스마트 컨텐츠 서비스 사용은 매년 최대 200만 개의 태그가 지정된 이미지로 제한됩니다. 처리 및 태그가 지정된 중복 이미지는 각각 태그가 지정된 이미지로 계산됩니다.
 * 타임라인에서 태그 지정 워크플로우를 실행하는 경우 한 번에 최대 15개의 자산에 태그를 적용할 수 있습니다.
 * 스마트 태그는 PNG 및 JPG 이미지 형식에만 작동합니다. 따라서 이러한 두 가지 형식으로 만들어진 표현물이 있는 지원되는 자산에 스마트 태그가 지정됩니다.
