@@ -2,10 +2,10 @@
 title: AEM Content and Commerce 릴리스 노트 2021
 description: AEM Content and Commerce 릴리스 노트 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
+source-git-commit: d1e2a2b11bd4eaece80a2538ddc34ada59e63578
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 12%
+source-wordcount: '867'
+ht-degree: 11%
 
 ---
 
@@ -15,21 +15,38 @@ ht-degree: 12%
 
 현재 사용 중인 CIF 버전 또는 향후 사용할 예정인 최소 시스템 요구 사항을 아래 표에서 검토하십시오.
 
-**4월 릴리스에서는 GitHub의 CIF 커넥터를 [Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 사용할 수 있는 CIF 추가 기능으로 교체했습니다. 추가 기능으로 전환하면 프로젝트에 큰 이점이 있습니다.
+**4월 릴리스에서는 GitHub의 CIF 커넥터를** Adobe 소프트웨어 배포 [에서 사용할 수 있는 CIF 추가 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)기능으로교체했습니다. 추가 기능으로 전환하면 프로젝트에 큰 이점이 있습니다.
 
 * 대부분의 새로운 기능은 AEM 6.5에서 즉시 사용할 수 있습니다(기능 사이드 포트를 기다리지 않음).
 * 새로운 추가 기능 버전으로 쉽게 업그레이드 가능
 * Cloud Service 준비
 
-이전 AEM CIF 커넥터가 유지 관리 모드로 전환되고 있으므로 더 이상 사용하지 않아야 합니다. CIF 커넥터를 새 CIF 추가 기능으로 바꾸십시오. 대부분의 프로젝트에 대해 단순히 패키지를 대체할 수 있어야 합니다. **
+이전 AEM CIF 커넥터가 유지 관리 모드로 전환되고 있으므로 더 이상 사용하지 않아야 합니다. CIF 커넥터를 새 CIF 추가 기능으로 바꾸십시오. 대부분의 프로젝트에 대해 단순히 패키지를 대체할 수 있어야 합니다.
 
 | 구성 요소 | 시스템 요구 사항 |
 |:-------|:-----:|
-| CIF 추가 기능 | 최소:AEM 6.5.7, Magento 2.3.5 GraphQL 스키마 |
+| CIF 추가 기능 | 최소: AEM 6.5.7, Magento 2.3.5 GraphQL 스키마 |
 | CIF 코어 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM 프로젝트 전형 | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## 릴리스 날짜:2021년 6월
+## 릴리스 날짜: 2021년 7월
+
+| 구성 요소 | 버전 | 세부 사항 |
+|:-------|:-----:|---------------------:|
+| CIF 추가 기능 | 2021.07.21 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| CIF 코어 구성 요소 | 1.13.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0) |
+| CIF Venia 참조 사이트 | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
+
+### 새로운 기능 {#what-is-new-july}
+
+* CIF 코어 구성 요소 v2
+   * PDP/PLP URL 및 SEO를 위한 간소화된 구성 및 개선
+   * 예정된 변경 사항을 더 잘 파악하기 위해 작성 모드에서 준비된 제품 데이터에 대한 시각적 지표
+   * 컨텐츠 및 상거래 페이지를 위한 새 사이트 맵 구성 요소
+
+* 사전 정의된 권장 또는 즉석에서 만든 추천을 사용하여 AEM Storefront에서 Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html)에서 제공하는 [Adobe Commerce Sensei 제품 권장 사항을 지원합니다
+
+## 릴리스 날짜: 2021년 6월
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
@@ -46,7 +63,7 @@ ht-degree: 12%
 * 카테고리 페이지의 SEO 기반 URL이 개선되었습니다
 * 사이트/구성당 사용자 지정 HTTP 헤더 지원
 
-## 릴리스 날짜:2021년 5월
+## 릴리스 날짜: 2021년 5월
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
@@ -64,7 +81,7 @@ ht-degree: 12%
 
 * 탐색 표시 는 제품 콘솔에서 미리 보기 데이터를 재설정합니다
 
-## 릴리스 날짜:2021년 4월
+## 릴리스 날짜: 2021년 4월
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
@@ -80,13 +97,11 @@ ht-degree: 12%
 
 * WCM 탐색 코어 구성 요소를 확장하는 새 CIF 탐색 코어 구성 요소
 
-* AEM storefront의 스테이지된 카탈로그 데이터에 대한 시각적 표시기
-
 ### 버그 수정 {#bug-fixes-april}
 
 * 카테고리 페이지의 페이지 속성에 있는 상거래 탭 아래에 루트 카테고리 필드가 표시되지 않았습니다
 
-## 릴리스 날짜:2021년 3월 {#what-is-new-march}
+## 릴리스 날짜: 2021년 3월 {#what-is-new-march}
 
 | GitHub | 버전 | 자세한 릴리스 노트 |
 |:-------|:-----:|---------------------:|
@@ -106,7 +121,7 @@ ht-degree: 12%
 
 * 여러 버그 수정.
 
-## 릴리스 날짜:2021년 2월
+## 릴리스 날짜: 2021년 2월
 
 | GitHub | 버전 | 자세한 릴리스 노트 |
 |:-------|:-----:|---------------------:|
@@ -116,7 +131,7 @@ ht-degree: 12%
 
 ### 새로운 기능 {#what-is-new-february}
 
-* 제품 경험 관리:경험 조각을 사용하여 제품 카탈로그 페이지를 개별적으로 보강합니다.
+* 제품 경험 관리: 경험 조각을 사용하여 제품 카탈로그 페이지를 개별적으로 보강합니다.
 
 * 연결된 컨텐츠로 빠르게 이동하는 작업을 포함하여 연결된 자산 및 경험 조각을 표시하도록 확장된 제품 콘솔 속성입니다.
 
@@ -126,7 +141,7 @@ ht-degree: 12%
 
 * 여러 버그 수정.
 
-## 릴리스 날짜:2021년 1월
+## 릴리스 날짜: 2021년 1월
 
 | GitHub | 버전 | 자세한 릴리스 노트 |
 |:-------|:-----:|---------------------:|
@@ -136,7 +151,7 @@ ht-degree: 12%
 
 ### 새로운 기능 {#what-is-new-january}
 
-* 제품 경험 관리:자산 및 경험 조각에 대한 새 &#39;상거래&#39; 속성 탭입니다. 이 탭에서는 자산 및 경험 조각을 제품 및 카테고리에 연결할 수 있습니다. 또한 탭에는 연결된 상거래 개체에 대한 실시간 데이터와 제품 콘솔에 세부 정보를 표시하는 링크도 표시됩니다.
+* 제품 경험 관리: 자산 및 경험 조각에 대한 새 &#39;상거래&#39; 속성 탭입니다. 이 탭에서는 자산 및 경험 조각을 제품 및 카테고리에 연결할 수 있습니다. 또한 탭에는 연결된 상거래 개체에 대한 실시간 데이터와 제품 콘솔에 세부 정보를 표시하는 링크도 표시됩니다.
 
 ### 개선 사항  {#what-is-improved-january}
 
