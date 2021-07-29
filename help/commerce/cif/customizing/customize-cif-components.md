@@ -10,14 +10,15 @@ audience: developer
 feature: 전자 상거래 통합 프레임워크
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
-source-git-commit: b132fc30e9ab77da24557c5d644a255173dc23c2
+exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
+source-git-commit: 90a19e84e2a8e2ff8c4216a6c0beab0b65b582d4
 workflow-type: tm+mt
 source-wordcount: '2587'
 ht-degree: 1%
 
 ---
 
-# AEM CIF 코어 구성 요소 사용자 지정 {#customize-cif-components}
+# AEM CIF 핵심 구성 요소 사용자 지정 {#customize-cif-components}
 
 [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)는 [CIF Core Components](https://github.com/adobe/aem-core-cif-components)를 사용하기 위한 참조 코드 베이스입니다. 이 자습서에서는 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 구성 요소를 추가로 확장하여 Magento의 사용자 지정 속성을 표시합니다. 또한 AEM과 Magento의 GraphQL 통합과 CIF 코어 구성 요소에서 제공하는 확장 후크 간의 GraphQL에 대해 자세히 알아봅니다.
 
@@ -55,22 +56,22 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. 필요한 OSGi 구성을 추가하여 AEM 인스턴스를 Magento 인스턴스에 연결하거나 구성을 새로 만든 프로젝트에 추가합니다.
 
-1. 이때 Magento 인스턴스에 연결된 스토어의 작업 버전이 있어야 합니다. 다음 위치에서 `US` > `Home` 페이지로 이동합니다.[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)
+1. 이때 Magento 인스턴스에 연결된 스토어의 작업 버전이 있어야 합니다. 다음 위치에서 `US` > `Home` 페이지로 이동합니다. [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)
 
    현재 스토프런트가 Venia 테마를 사용하고 있다는 것을 알 수 있습니다. 스토어의 주 메뉴를 확장하면 연결 Magento이 작동하는지 나타내는 다양한 범주가 표시됩니다.
 
    ![Venia 테마로 구성된 Storefront](../assets/customize-cif-components/venia-store-configured.png)
 
-## 제품 티저 {#author-product-teaser} 작성
+## 제품 티저 작성 {#author-product-teaser}
 
 제품 티저 구성 요소는 이 자습서 전체에서 확장됩니다. 첫 번째 단계에서는 홈 페이지에 제품 티저의 새 인스턴스를 추가하여 기준 기능을 이해합니다.
 
-1. 사이트의 **홈 페이지**&#x200B;로 이동합니다.[http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. 사이트의 **홈 페이지**&#x200B;로 이동합니다. [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
 2. 페이지의 기본 레이아웃 컨테이너에 새 **제품 티저** 구성 요소를 삽입합니다.
 
@@ -88,7 +89,7 @@ Venia 브랜드는 최근 지속 가능한 재료를 사용하여 일부 제품�
 
    ![제품 티저 - 기본 스타일](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Magento {#add-custom-attribute}에 사용자 지정 속성 추가
+## Magento에 사용자 지정 속성 추가 {#add-custom-attribute}
 
 AEM에 표시되는 제품 및 제품 데이터는 Magento에 저장됩니다. 그런 다음 Magento UI를 사용하여 설정한 제품 속성의 일부로 **Eco Friendly**&#x200B;에 대한 새 속성을 추가합니다.
 
@@ -134,7 +135,7 @@ AEM에 표시되는 제품 및 제품 데이터는 Magento에 저장됩니다. �
    >
    > [캐시 관리에 대한 자세한 내용은 Magento 사용 안내서](https://docs.magento.com/user-guide/system/cache-management.html)에서 확인할 수 있습니다.
 
-## GraphQL IDE를 사용하여 속성 {#use-graphql-ide} 확인
+## GraphQL IDE를 사용하여 속성 확인 {#use-graphql-ide}
 
 AEM 코드로 이동하기 전에 GraphQL IDE를 사용하여 [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/)을 탐색하는 것이 유용합니다. AEM과의 Magento 통합은 주로 일련의 GraphQL 쿼리를 통해 수행됩니다. GraphQL 쿼리를 이해하고 수정하는 것은 CIF 코어 구성 요소를 확장할 수 있는 주요 방법 중 하나입니다.
 
@@ -183,7 +184,7 @@ AEM 코드로 이동하기 전에 GraphQL IDE를 사용하여 [Magento GraphQL](
    >
    > [Magento GraphQL에 대한 자세한 설명서는 여기에서 찾을 수 있습니다](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
-## 제품 Teaser {#updating-sling-model-product-teaser}에 대한 Sling 모델 업데이트
+## 제품 티저에 대한 Sling 모델 업데이트 {#updating-sling-model-product-teaser}
 
 다음으로, Sling 모델을 구현하여 제품 티저의 비즈니스 논리를 확장합니다. [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) 은 구성 요소에 필요한 비즈니스 로직을 구현하는 주석 기반의 &quot;POJO&quot;(일반 이전 Java 개체)입니다. Sling 모델은 HTL 스크립트와 함께 구성 요소의 일부로 사용됩니다. Sling 모델](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models)에 대한 [위임 패턴을 따르므로 기존 제품 티저 모델의 일부를 확장할 수 있습니다.
 
@@ -191,7 +192,7 @@ Sling 모델은 Java로 구현되며 생성된 프로젝트의 **core** 모듈�
 
 선택한 IDE의 [IDE를 사용하여 Venia 프로젝트를 가져옵니다. ](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) 사용된 스크린샷은 [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)에서 가져옵니다.
 
-1. IDE에서 **core** 모듈 아래에서 다음 위치로 이동합니다.`core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`
+1. IDE에서 **core** 모듈 아래에서 다음 위치로 이동합니다. `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`
 
    ![핵심 위치 IDE](../assets/customize-cif-components/core-location-ide.png)
 
@@ -274,11 +275,9 @@ Sling 모델은 Java로 구현되며 생성된 프로젝트의 **core** 모듈�
        productRetriever = productTeaser.getProductRetriever();
    
        if (productRetriever != null) {
-           productRetriever.extendProductQueryWith(p ->
-                productRetriever.extendProductQueryWith(p -> p
-                   .createdAt()
-                   .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
-               );
+           productRetriever.extendProductQueryWith(p -> p
+               .createdAt()
+               .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
            );
        }
    }
@@ -329,7 +328,7 @@ Sling 모델은 Java로 구현되며 생성된 프로젝트의 **core** 모듈�
 
    Sling 모델이 업데이트되었으므로 Sling 모델을 기반으로 **Eco Friendly**&#x200B;의 표시기를 실제로 표시하려면 구성 요소 마크업을 업데이트해야 합니다.
 
-## 제품 티저 {#customize-markup-product-teaser} 마크업 사용자 정의
+## 제품 티저의 마크업 사용자 정의 {#customize-markup-product-teaser}
 
 AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크업을 수정하는 것입니다. 이 작업은 구성 요소가 태그를 렌더링하는 데 사용하는 [HTL 스크립트](https://docs.adobe.com/content/help/ko/experience-manager-htl/using/overview.html)를 재정의하여 수행됩니다. HTL(HTML Template Language)은 AEM 구성 요소가 작성된 컨텐츠를 기반으로 마크업을 동적으로 렌더링하는 데 사용하는 간단한 템플릿 언어로서 구성 요소를 다시 사용할 수 있도록 합니다. 예를 들어 제품 티저를 반복해서 사용하여 서로 다른 제품을 표시할 수 있습니다.
 
@@ -339,7 +338,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
 >
 > 이 제품 티저 또는 CIF 페이지 구성 요소와 같은 CIF 제품 및 카테고리 선택기를 사용하여 구성 요소를 사용자 지정하는 경우 구성 요소 대화 상자에 필요한 `cif.shell.picker` clientlib을 포함해야 합니다. 자세한 내용은 [CIF 제품 및 카테고리 선택기 사용](use-cif-pickers.md)을 참조하십시오.
 
-1. IDE에서 `ui.apps` 모듈을 탐색하고 확장하고 폴더 계층 구조를 다음으로 확장합니다.`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` 및 `.content.xml` 파일을 검사합니다.
+1. IDE에서 `ui.apps` 모듈을 탐색하고 확장하고 폴더 계층 구조를 다음으로 확장합니다. `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` 및 `.content.xml` 파일을 검사합니다.
 
    ![제품 티저 ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
 
@@ -399,10 +398,10 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. 새 브라우저 창을 열고 AEM 및 **OSGi 콘솔** > **상태** > **Sling 모델**&#x200B;으로 이동합니다.[http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
+1. 새 브라우저 창을 열고 AEM 및 **OSGi 콘솔** > **상태** > **Sling 모델**&#x200B;으로 이동합니다. [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 1. `MyProductTeaserImpl`을 검색하면 다음과 같은 줄이 표시됩니다.
 
@@ -433,7 +432,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
    >
    > Teaser에 사용된 제품에 속성 집합의 일부로 `eco_friendly` 속성이 없는 경우 일부 스택 추적이 표시될 수도 있습니다.
 
-## 친환경 배지 {#add-styles}에 대한 스타일 추가
+## 친환경 배지에 대한 스타일 추가 {#add-styles}
 
 이때 **친환경** 배지를 표시할 시점에 대한 논리가 작동하지만 일반 텍스트에서는 일부 스타일을 사용할 수 있습니다. 그런 다음 `ui.frontend` 모듈에 아이콘 및 스타일을 추가하여 구현을 완료합니다.
 
@@ -478,7 +477,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성한 마크
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)에서 제품 티저가 추가된 **Venia 홈 페이지**&#x200B;로 새로 고칩니다.
