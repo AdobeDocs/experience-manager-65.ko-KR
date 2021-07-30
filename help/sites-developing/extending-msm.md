@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
 workflow-type: tm+mt
 source-wordcount: '2601'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->이 페이지는 [컨텐츠를 재사용하는 것과 함께 읽어야 합니다.다중 사이트 관리자](/help/sites-administering/msm.md).
+>이 페이지는 [컨텐츠를 재사용하는 것과 함께 읽어야 합니다. 다중 사이트 관리자](/help/sites-administering/msm.md).
 >
 >AEM 6.4의 사이트 저장소 구조 변경 의 다음 섹션도 관심 사항이 있을 수 있습니다.
 >* [다중 사이트 관리자 블루프린트 구성](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-blueprint-configurations)
@@ -61,17 +61,21 @@ ht-degree: 2%
    * 블루프린트 구성( `Blueprint`)의 사용은 선택 사항이지만, 다음과 같습니다.
 
       * 작성자가 (에) 수정 사항을 이 소스에서 상속되는 Live Copy에 푸시할 수 있도록 소스에서 **롤아웃** 옵션을 사용할 수 있습니다.
-      * 작성자가 **사이트 만들기**;를 사용할 수 있도록 허용합니다.언어를 쉽게 선택하고 live copy 구조를 구성할 수 있습니다.
+      * 작성자가 **사이트 만들기**;를 사용할 수 있도록 허용합니다. 언어를 쉽게 선택하고 live copy 구조를 구성할 수 있습니다.
       * 결과 Live Copy에 대한 기본 롤아웃 구성을 정의합니다.
 
-* **`LiveRelationship`** 는  `LiveRelationship` Live Copy 분기에 있는 리소스와 해당 소스/블루프린트 리소스 간의 연결(관계)을 지정합니다.
+* **`LiveRelationship`**
+
+   `LiveRelationship` 은 Live Copy 분기에 있는 리소스와 그에 상응하는 소스/블루프린트 리소스 간의 연결(관계)을 지정합니다.
 
    * 관계는 상속과 롤아웃을 구현할 때 사용됩니다.
    * `LiveRelationship` 개체는 롤아웃 구성( `RolloutConfig`)에 대한 액세스(참조) `LiveCopy`와 관계와  `LiveStatus` 관련된 개체를 제공합니다.
 
    * 예를 들어 Live Copy는 `/content/we-retail/language-masters`의 소스/블루프린트에서 `/content/copy/us`에 만들어집니다. 리소스 `/content/we.retail/language-masters/en/jcr:content` 및 `/content/copy/us/en/jcr:content`은 관계를 형성합니다.
 
-* **`LiveCopy`** `LiveCopy` live copy 리소스와 소스/블루프린트 리소스 간의 관계(  `LiveRelationship`)에 대한 구성 세부 사항을 저장합니다.
+* **`LiveCopy`**
+
+   `LiveCopy` live copy 리소스와 소스/블루프린트 리소스 간의 관계(  `LiveRelationship`)에 대한 구성 세부 사항을 저장합니다.
 
    * `LiveCopy` 클래스를 사용하여 페이지의 경로, 소스/블루프린트 페이지의 경로, 롤아웃 구성 및 하위 페이지도 `LiveCopy`에 포함되는지 여부에 액세스합니다.
 
@@ -91,7 +95,9 @@ ht-degree: 2%
 
    `LiveAction` 구성이 지정된 `LiveAction` 개체를 만듭니다. 구성은 저장소에 리소스로 저장됩니다.
 
-* **`RolloutConfig`** 는  `RolloutConfig` 트리거될 때 사용할 목록 `LiveActions`을 포함합니다. `LiveCopy`은 `RolloutConfig`을 상속하고 결과는 `LiveRelationship`에 있습니다.
+* **`RolloutConfig`**
+
+   `RolloutConfig`에는 트리거할 때 사용할 `LiveActions` 목록이 있습니다. `LiveCopy`은 `RolloutConfig`을 상속하고 결과는 `LiveRelationship`에 있습니다.
 
    * 처음으로 Live Copy를 설정하는 경우에도 RolloutConfig (LiveActions를 트리거함)를 사용합니다.
 
@@ -106,24 +112,24 @@ ht-degree: 2%
 
 * `LiveAction` 클래스에는 다음 메서드가 포함됩니다.
 
-   * `getName`:작업 이름 반환 작업을 참조하는 데 사용되는 이름(예: 롤아웃 구성)입니다.
-   * `execute`:작업의 작업을 수행합니다.
+   * `getName`: 작업 이름 반환 작업을 참조하는 데 사용되는 이름(예: 롤아웃 구성)입니다.
+   * `execute`: 작업의 작업을 수행합니다.
 
 * `LiveActionFactory` 클래스에는 다음 멤버가 포함됩니다.
 
-   * `LIVE_ACTION_NAME`:연관된 이름이 들어 있는 필드입니다 `LiveAction`. 이 이름은 `LiveAction` 클래스의 `getName` 메서드에서 반환되는 값과 일치해야 합니다.
+   * `LIVE_ACTION_NAME`: 연관된 이름이 들어 있는 필드입니다 `LiveAction`. 이 이름은 `LiveAction` 클래스의 `getName` 메서드에서 반환되는 값과 일치해야 합니다.
 
-   * `createAction`:의 인스턴스를  `LiveAction`만듭니다. 옵션 `Resource` 매개 변수를 사용하여 구성 정보를 제공할 수 있습니다.
+   * `createAction`: 의 인스턴스를  `LiveAction`만듭니다. 옵션 `Resource` 매개 변수를 사용하여 구성 정보를 제공할 수 있습니다.
 
-   * `createsAction`:연결된 의 이름을 반환합니다  `LiveAction`.
+   * `createsAction`: 연결된 의 이름을 반환합니다  `LiveAction`.
 
-### LiveAction 구성 노드 {#accessing-the-liveaction-configuration-node} 액세스
+### LiveAction 구성 노드 액세스 {#accessing-the-liveaction-configuration-node}
 
 저장소의 `LiveAction` 구성 노드를 사용하여 `LiveAction` 인스턴스의 런타임 동작에 영향을 주는 정보를 저장합니다. 저장소의 `LiveAction` 구성을 저장하는 노드는 런타임 시 `LiveActionFactory` 개체에 사용할 수 있습니다. 따라서 필요에 따라 구성 노드에 속성을 추가하여 `LiveActionFactory` 구현에서 사용할 수 있습니다.
 
 예를 들어 `LiveAction`은(는) 블루프린트 작성자의 이름을 저장해야 합니다. 구성 노드의 속성은 정보를 저장하는 블루프린트 페이지의 속성 이름을 포함합니다. 런타임 시 `LiveAction` 은 구성에서 속성 이름을 검색한 다음 속성 값을 가져옵니다.
 
-` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` 메서드의 매개 변수는 `Resource` 개체입니다. 이 `Resource` 개체는 롤아웃 구성에서 이 라이브 작업에 대한 `cq:LiveSyncAction` 노드를 나타냅니다.[롤아웃 구성 만들기](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)를 참조하십시오. 구성 노드를 사용할 때와 마찬가지로 `ValueMap` 개체에 조정해야 합니다.
+` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` 메서드의 매개 변수는 `Resource` 개체입니다. 이 `Resource` 개체는 롤아웃 구성에서 이 라이브 작업에 대한 `cq:LiveSyncAction` 노드를 나타냅니다. [롤아웃 구성 만들기](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)를 참조하십시오. 구성 노드를 사용할 때와 마찬가지로 `ValueMap` 개체에 조정해야 합니다.
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -137,7 +143,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-### Target 노드, 소스 노드 및 LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}에 액세스
+### Target 노드, 소스 노드 및 LiveRelationship에 액세스 {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 다음 개체는 `LiveAction` 개체의 `execute` 메서드의 매개 변수로 제공됩니다.
 
@@ -179,7 +185,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 새 롤아웃 구성을 만들려면:
 
-1. CRXDE Lite 열기예:
+1. CRXDE Lite 열기 예:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. 다음으로 이동 :
@@ -201,22 +207,22 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 이 **다음 속성을 갖는 노드를 만듭니다.**
 
-   * **이름**:롤아웃 구성의 노드 이름입니다. md#installed-synchronization-actions)(예: `contentCopy` 또는 `workflow`).
+   * **이름**: 롤아웃 구성의 노드 이름입니다. md#installed-synchronization-actions)(예: `contentCopy` 또는 `workflow`).
    * **유형**: `cq:RolloutConfig`
 
 1. 이 노드에 다음 속성을 추가합니다.
    * **이름**: `jcr:title`
 
       **유형**: `String`
-      **값**:UI에 표시되는 식별 제목입니다.
+      **값**: UI에 표시되는 식별 제목입니다.
    * **이름**: `jcr:description`
 
       **유형**: `String`
-      **값**:선택적 설명입니다.
+      **값**: 선택적 설명입니다.
    * **이름**: `cq:trigger`
 
       **유형**: `String`
-      **값**:사용할  [롤아웃 ](/help/sites-administering/msm-sync.md#rollout-triggers) 트리거입니다. 다음 중에서 선택합니다.
+      **값**: 사용할  [롤아웃 ](/help/sites-administering/msm-sync.md#rollout-triggers) 트리거입니다. 다음 중에서 선택합니다.
       * `rollout`
       * `modification`
       * `publish`
@@ -237,7 +243,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. **** 다음 노드 속성을 사용하여 노드를 만듭니다.
 
-   * **이름**:동기화 작업의 노드 이름입니다.
+   * **이름**: 동기화 작업의 노드 이름입니다.
 이름은 [동기화 작업](/help/sites-administering/msm-sync.md#installed-synchronization-actions) 아래의 테이블의 **작업 이름**&#x200B;과 동일해야 합니다(예: `contentCopy` 또는 `workflow`).
    * **유형**: `cq:LiveSyncAction`
 
@@ -378,7 +384,7 @@ Eclipse 컴파일러가 `LiveActionFactory` 코드에 사용되는 클래스를 
     </dependency>
    ```
 
-### LiveActionFactory {#implement-liveactionfactory} 구현
+### LiveActionFactory 구현 {#implement-liveactionfactory}
 
 다음 `LiveActionFactory` 클래스는 소스 및 대상 페이지에 대한 메시지를 로깅하는 `LiveAction`을 구현하고 소스 노드에서 대상 노드로 `cq:lastModifiedBy` 속성을 복사합니다. 라이브 작업의 이름은 `exampleLiveAction`입니다.
 
@@ -550,15 +556,15 @@ Eclipse 컴파일러가 `LiveActionFactory` 코드에 사용되는 클래스를 
 
 1. 표준 절차](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) 를 사용하여 [롤아웃 구성을 만들고 구성하고 속성을 사용합니다.
 
-   * **제목**:롤아웃 구성 예
-   * **이름**:expleroloutconfig
+   * **제목**: 롤아웃 구성 예
+   * **이름**: expleroloutconfig
    * **cq:trigger**:  `publish`
 
-### 예제 롤아웃 구성 {#add-the-live-action-to-the-example-rollout-configuration}에 Live Action 추가
+### 롤아웃 구성 예제에 라이브 작업 추가 {#add-the-live-action-to-the-example-rollout-configuration}
 
 `ExampleLiveActionFactory` 클래스를 사용하도록 이전 절차에서 만든 롤아웃 구성을 구성합니다.
 
-1. CRXDE Lite 열기예: [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
+1. CRXDE Lite 열기 예: [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
 1. `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content` 아래에 다음 노드를 만듭니다.
 
    * **이름**: `exampleLiveAction`
@@ -575,13 +581,13 @@ Eclipse 컴파일러가 `LiveActionFactory` 코드에 사용되는 클래스를 
 
 1. **모두 저장**&#x200B;을 클릭합니다.
 
-### Live Copy {#create-the-live-copy} 만들기
+### Live Copy 만들기 {#create-the-live-copy}
 
 [롤아웃 구성](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) 을 사용하여 We.Retail 참조 사이트의 영어/제품 분기의 Live Copy를 만듭니다.
 
 * **소스**:  `/content/we-retail/language-masters/en/products`
 
-* **롤아웃 구성**:롤아웃 구성 예
+* **롤아웃 구성**: 롤아웃 구성 예
 
 소스 분기의 **Products** (영어) 페이지를 활성화하고 `LiveAction` 클래스가 생성하는 로그 메시지를 관찰합니다.
 
@@ -636,7 +642,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 
 언어를 수정하려면 다음을 수행합니다.
 
-1. 웹 브라우저에서 CRXDE Lite 열기예: [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
+1. 웹 브라우저에서 CRXDE Lite 열기 예: [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
 1. `/apps` 폴더를 선택하고 **만들기**&#x200B;를 클릭한 다음 **폴더 만들기를 클릭합니다.**
 
    새 폴더 이름을 `wcm`로 지정합니다.
@@ -669,11 +675,11 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
 
 * 연락처 이메일:
 
-   * 롤아웃된 속성에서 제외됩니다.[동기화에서 속성 및 노드 유형 제외](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization)를 참조하십시오.
+   * 롤아웃된 속성에서 제외됩니다. [동기화에서 속성 및 노드 유형 제외](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization)를 참조하십시오.
 
 * 주요 시각적 스타일:
 
-   * 상속이 취소되지 않는 한 터치 지원 UI에서 이 속성을 편집할 수 없도록 하여 상속을 복원할 수도 있습니다.이 설정은 연결 상태를 나타내기 위해 토글되는 체인/끊어진 체인 링크를 클릭하여 제어합니다.
+   * 상속이 취소되지 않는 한 터치 지원 UI에서 이 속성을 편집할 수 없도록 하여 상속을 복원할 수도 있습니다. 이 설정은 연결 상태를 나타내기 위해 토글되는 체인/끊어진 체인 링크를 클릭하여 제어합니다.
 
 페이지 속성이 롤아웃되는지 여부에 따라 편집 시 상속을 취소/복원할 수 있는지 여부는 대화 상자 속성에 의해 제어됩니다.
 
@@ -685,7 +691,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
    * 리소스의 첫 번째 하위 수준에만 적용됩니다
    * **유형**: `String`
 
-   * **값**:는 고려 중인 속성의 이름을 보유하며 속성 값과 비교할 수  `name`있습니다.예를 들어
+   * **값**: 는 고려 중인 속성의 이름을 보유하며 속성 값과 비교할 수  `name`있습니다. 예를 들어
       `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable` 이 정의된 경우 체인을 끊거나 닫는 것은 다음과 같은 방법으로 MSM과 상호 작용합니다.
@@ -695,7 +701,7 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
    * **상대** (예:  `myProperty` 또는  `./myProperty`)
 
       * `cq:propertyInheritanceCancelled`에서 속성을 추가하고 제거합니다.
-   * **절대** (예: `/image`)
+   * **절대** (예:  `/image`)
 
       * 체인을 끊으면 `cq:LiveSyncCancelled` mixin이 `./image`에 추가되고 `cq:isCancelledForChildren`를 `true`에 설정하여 상속이 취소됩니다.
 
