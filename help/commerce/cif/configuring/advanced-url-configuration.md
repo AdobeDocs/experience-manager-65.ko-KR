@@ -8,10 +8,11 @@ audience: administrator
 feature: 전자 상거래 통합 프레임워크
 kt: 4933
 thumbnail: 34350.jpg
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
+source-git-commit: dbd38aa75caa7c3c2feee79702ab85ab397eb583
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 3%
+source-wordcount: '745'
+ht-degree: 4%
 
 ---
 
@@ -23,36 +24,61 @@ ht-degree: 3%
 
 ## 구성 {#configuration}
 
-SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝트가 &quot;CIF URL 공급자 구성&quot; 구성에 대한 OSGI 구성을 제공하고 아래에 설명된 대로 서비스를 구성해야 합니다.
+SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝트가 필요합니다. &quot;CIF URL 공급자 구성&quot;에 대한 OSGI 구성을 제공해야 합니다.
 
 >[!NOTE]
 >
-> [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) 프로젝트는 아래 참조 자료 구성을 포함하여 제품 및 카테고리 페이지에 대한 사용자 지정 URL의 사용을 보여 줍니다.
+> AEM CIF 코어 구성 요소 의 릴리스 2.0.0부터 URL 공급자 구성에서는 1.x 릴리스에서 제공되는 자유 텍스트 구성 가능 형식 대신 미리 정의된 URL 형식만 제공합니다. 또한 URL에서 데이터를 전달하는 선택기를 사용하여 접미사로 대체되었습니다.
 
-### 제품 페이지 URL 템플릿 {#product}
+### 제품 페이지 URL 형식 {#product}
 
-이렇게 하면 다음 속성으로 제품 페이지의 URL이 구성됩니다.
+제품 페이지의 URL을 구성하고 다음 옵션을 지원합니다.
 
-* **제품 URL 템플릿**:자리 표시자 집합을 사용하여 URL의 형식을 정의합니다. 기본값은 `{{page}}.{{url_key}}.html#{{variant_sku}}`이며, 여기서 `/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange` 와 같이 URL이 생성됩니다.
-   * `{{page}}` 이(가)  `/content/venia/us/en/products/product-page`
-   * `{{url_key}}` 이 제품 `url_key` 의 Magento 속성으로 대체되었습니다.  `chaz-kangeroo-hoodie`
-   * `{{variant_sku}}` 이(가) 현재 선택한 변형으로 대체되었습니다.  `MH01-M-Orange`
-* **제품 식별자 위치**:제품 데이터를 가져오는 데 사용할 식별자의 위치를 정의합니다. 기본값은 `SELECTOR`이고, 다른 가능한 값은 `SUFFIX`입니다. 이전 예제 URL을 사용하면 ID `chaz-kangeroo-hoodie`이 제품 데이터를 가져오는 데 사용됨을 의미합니다.
-* **제품 식별자 유형**:제품 데이터를 가져올 때 사용할 식별자의 유형을 정의합니다. 기본값은 `URL_KEY`이고, 다른 가능한 값은 `SKU`입니다. 이전 예 URL을 사용하면 제품 데이터를 `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}` 과 같은 Magento GraphQL 필터로 가져오게 됩니다.
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (기본값)
+* `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-### 제품 목록 페이지 URL 템플릿 {#product-list}
+[Venia 참조 저장소의 경우](https://github.com/adobe/aem-cif-guides-venia):
 
-이렇게 하면 다음 속성으로 카테고리 또는 제품 목록 페이지의 URL이 구성됩니다.
+* `{{page}}` 교체  `/content/venia/us/en/products/product-page`
+* `{{sku}}` 은 제품의 sku(예: )로 대체됩니다.  `VP09`
+* `{{url_key}}` 은 제품의  `url_key` 속성으로 대체됩니다(예: ).  `lenora-crochet-shorts`
+* `{{url_path}}` 은(는) 제품의  `url_path`예:  `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` 은 현재 선택한 변형으로 대체됩니다(예: ).  `VP09-KH-S`
 
-* **카테고리 URL 템플릿**:자리 표시자 집합을 사용하여 URL의 형식을 정의합니다. 기본값은 `{{page}}.{{id}}.html`이며, 여기서 `/content/venia/us/en/products/category-page.3.html` 와 같이 URL이 생성됩니다.
-   * `{{page}}` 이(가)  `/content/venia/us/en/products/category-page`
-   * `{{id}}` 이 Magento의  `id` 카테고리 속성으로 대체되었습니다. 여기서는  `3`
-* **카테고리 식별자 위치**:제품 데이터를 가져오는 데 사용할 식별자의 위치를 정의합니다. 기본값은 `SELECTOR`이고, 다른 가능한 값은 `SUFFIX`입니다. 이전 예제 URL을 사용하면 ID `3`이 제품 데이터를 가져오는 데 사용됨을 의미합니다.
-* **카테고리 식별자 유형**:제품 데이터를 가져올 때 사용할 식별자의 유형을 정의합니다. 기본값과 현재 지원되는 값은 `ID`입니다. 이전 예제 URL을 사용하면 카테고리 데이터를 `category(id:3)` 과 같은 Magento GraphQL 필터로 가져오게 됩니다.
+위의 예제 데이터를 사용하면 기본 URL 형식을 사용하여 형식이 지정된 제품 변형 URL은 `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` 과 같습니다.
 
-구성 요소에서 `UrlProvider` 을 사용하여 해당 데이터를 설정하고 있는 한 각 템플릿에 대한 사용자 지정 속성을 추가할 수 있습니다. `ProductListItemImpl` 클래스의 코드 예를 확인하여 이 구현이 어떻게 구현되는지 확인하십시오.
+### 카테고리 페이지 URL 형식 {#product-list}
 
-또한 `UrlProvider` 서비스를 완전히 사용자 지정 OSGi 서비스로 대체할 수도 있습니다. 이 경우, 기본 구현을 바꾸려면 `UrlProvider` 인터페이스를 구현하고 높은 서비스 등급에 등록해야 합니다.
+카테고리 또는 제품 목록 페이지의 URL을 구성하고 다음 옵션을 지원합니다.
+
+* `{{page}}.html/{{url_path}}.html` (기본값)
+* `{{page}}.html/{{url_key}}.html`
+
+[Venia 참조 저장소의 경우](https://github.com/adobe/aem-cif-guides-venia):
+
+* `{{page}}` 교체  `/content/venia/us/en/products/category-page`
+* `{{url_key}}` 은 카테고리의 속성으로  `url_key` 대체됩니다
+* `{{url_path}}` 은(는) 카테고리의  `url_path`
+
+위의 예제 데이터를 사용할 경우 기본 URL 형식을 사용하여 형식이 지정된 카테고리 페이지 URL은 `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html` 과 같습니다.
+
+>[!NOTE]
+> 
+> `url_path`은(는) 제품 또는 카테고리의 상위 항목 `url_keys`과 `/` 슬래시로 구분된 제품 또는 카테고리의 `url_key`의 연결입니다.
+
+## 사용자 지정 URL 형식 {#custom-url-format}
+
+사용자 지정 URL 형식을 제공하기 위해 프로젝트는 [`UrlFormat` 인터페이스](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)를 구현하고 카테고리 페이지 또는 제품 페이지 URL 형식으로 사용하여 구현을 OSGI 서비스로 등록할 수 있습니다. `UrlFormat#PROP_USE_AS` 서비스 속성은 바꿀 사전 정의된 형식 중 하나를 나타냅니다.
+
+* `useAs=productPageUrlFormat`이 구성된 제품 페이지 url 형식을 대체합니다
+* `useAs=categoryPageUrlFormat`은 구성된 카테고리 페이지 url 형식을 대체합니다
+
+OSGI 서비스로 등록된 `UrlFormat` 의 구현이 여러 개 있는 경우 서비스 등급이 높은 구현은 해당 구현이 더 낮은 서비스 등급을 대체합니다.
+
+`UrlFormat` 은 주어진 매개 변수 맵에서 URL을 작성하고 동일한 매개 변수 맵을 반환하기 위해 URL을 구문 분석하기 위한 한 쌍의 메서드를 구현해야 합니다. 매개 변수는 위에서 설명한 것과 동일하며, 카테고리에 대해서만 추가 `{{uid}}` 매개 변수가 `UrlFormat`에 제공됩니다.
 
 ## Sling 매핑과 결합 {#sling-mapping}
 
