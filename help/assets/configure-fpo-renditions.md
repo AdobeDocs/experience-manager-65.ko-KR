@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: 표현물
 exl-id: null
-source-git-commit: 865370e38368072c39ad337eb52259c586403efb
+source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -25,9 +25,9 @@ Experience Manager을 사용하면 많은 방법으로 FPO 변환을 생성하�
 ImageMagick를 사용하여 FPO 변환을 생성하기 위해 를 포함하여 이미지를 처리할 수 있습니다. 원본 이미지의 PPI가 72보다 큰 경우 표현물의 픽셀 크기가 비례적으로 축소됩니다. Experience Manager 자산](best-practices-for-imagemagick.md)에서 작동하도록 [ImageMagick 설치 및 구성 을 참조하십시오.
 
 |  | Experience Manager의 내장된 워크플로우 사용 | ImageMagick 워크플로우 사용 | 비고 |
-|— |— |—|— |
-| 새 자산의 경우 | FPO 변환 활성화([도움말](#generate-renditions-of-new-assets-using-aem-workflow)) | Experience Manager 워크플로우에서 ImageMagick 명령줄 추가([도움말](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager은 업로드할 때마다 DAM 자산 업데이트 워크플로우를 실행합니다. |
-| 기존 자산의 경우 | 새로운 전용 Experience Manager 워크플로우에서 FPO 표현물 활성화([도움말](#generate-renditions-of-existing-assets-using-aem-workflow)) | 새로운 전용 Experience Manager 워크플로우에서 ImageMagick 명령줄 추가([도움말](#generate-renditions-of-existing-assets-using-imagemagick)) | 기존 자산의 FPO 렌디션은 온디맨드 또는 대량으로 만들 수 있습니다. |
+|--- |--- |---|--- |
+| 새 자산의 경우 | FPO 변환 활성화([도움말](#generate-renditions-of-new-assets-using-aem-workflow)) | Experience Manager 워크플로우에서 ImageMagick 명령줄 추가([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager은 업로드할 때마다 DAM 자산 업데이트 워크플로우를 실행합니다. |
+| 기존 자산의 경우 | 새로운 전용 Experience Manager 워크플로우에서 FPO 렌디션을 활성화합니다([도움말](#generate-renditions-of-existing-assets-using-aem-workflow)). | 전용 새 Experience Manager 워크플로우에 ImageMagick 명령줄 추가([help](#generate-renditions-of-existing-assets-using-imagemagick)) | 기존 자산의 FPO 표현물은 요청 시 또는 대량으로 만들 수 있습니다. |
 
 >[!CAUTION]
 >
