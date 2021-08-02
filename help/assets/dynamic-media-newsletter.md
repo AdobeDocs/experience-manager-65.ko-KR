@@ -1,30 +1,34 @@
 ---
-title: Dynamic Media 뉴스레터
-description: 'Dynamic Media Newsletter by Experience League은 월간 뉴스레터입니다. Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다. 이 원스톱 상점 뉴스레터에서 유용한 지식 구축 리소스를 이용할 수 있습니다. 여기에는 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 일부 주요 기능 및 기능에 대한 비디오, 솔루션 개요 및 소개가 포함되어 있습니다. '
+title: Dynamic Media 뉴스레터 아카이브
+description: '보관된 Dynamic Media Experience League 뉴스레터는 월별 뉴스레터입니다. Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다. 보관된 뉴스레터에는 이제 중단된 이 원스톱 스토어 뉴스레터에서 사용할 수 있었던 중요한 지식 작성 리소스가 포함되어 있습니다. 보관된 뉴스레터에는 사용 방법 비디오 및 솔루션 개요 등이 포함되어 있습니다. 이미지 사전 설정, 뷰어 사전 설정 및 비디오 프로필과 같은 주요 기능과 성능에 대한 소개가 있습니다. '
 keywords: Dynamic Media;뉴스레터;제품 업데이트;팁과 트릭;이벤트;고객 성공;블로그;블로그;이미지;비디오;기능;기능
 contentOwner: Rick Brough
 solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: 공동 작업,Dynamic Media Classic
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
 
 # ![Dynamic Media 뉴스레터 로고](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-월별 Dynamic Media 뉴스레터는 Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다.
+>[!NOTE]
+>
+>이제 월별 뉴스레터가 중단되었습니다. 그러나 아래 뉴스레터 보관소에 액세스할 수 있습니다.
 
-이 원스톱 상점 뉴스레터에서 유용한 지식 구축 리소스를 이용할 수 있습니다. 여기에는 이미지 사전 설정, 뷰어 사전 설정, 비디오 프로필 등과 같은 일부 주요 기능 및 기능에 대한 비디오, 솔루션 개요 및 소개가 포함되어 있습니다.
+Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media Classic을 빠르게 활용하여 즉시 가치를 실현할 수 있도록 고안되었습니다.
 
-## 영감 받기 - 최신 정보 제공
+이 원스톱 숍 보관된 뉴스레터에서 방법 비디오 및 솔루션 개요 등 중요한 지식 작성 리소스를 찾을 수 있습니다. 이미지 사전 설정, 뷰어 사전 설정 및 비디오 프로필과 같은 주요 기능과 성능에 대한 소개가 있습니다.
 
-[받은 ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) 편지함에서 매월 Dynamic Media Newsletter를 수신하려면 등록하십시오.
+<!-- ## Get inspired - Stay informed
 
-## Dynamic Media 뉴스레터 문제가 누락되었습니까?
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+
+## Dynamic Media 뉴스레터 아카이브
 
 <!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
@@ -52,9 +56,9 @@ ht-degree: 0%
    * Adobe의 무료 Dynamic Media Classic 감사에 대해 자세히 알아보십시오.
    * 고객 성공 서비스의 수석 프로그램 관리자 John Monroe를 만나보십시오.
 
-      >[!IMPORTANT]
-      >
-      >Adobe은 Dynamic Media 뉴스레터를 수신하려는 사람에게만 보낼 수 있도록 하려고 합니다. 이 문제 후에도 뉴스레터를 계속 수신하려면 [여기](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)에 등록하십시오.
+<!--     >[!IMPORTANT]
+    >
+    >Adobe wants to make sure they are only sending the Dynamic Media newsletter to people who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[2020년 2월, 2호](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -153,7 +157,7 @@ ht-degree: 0%
 
 * **[2019년 4월, 2014년 4월](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   Adobe Experience Manager Assets 및 Adobe Dynamic Media Classic 내에서 Dynamic Media 사용자를 위한 뉴스, 이벤트 및 리소스로 채워진 Adobe의 새 월별 뉴스레터인 Dynamic Media 뉴스레터의 취임 문제를 소개합니다.
+   Adobe Experience Manager Assets 및 Adobe Dynamic Media Classic 내에서 Dynamic Media 사용자를 위한 뉴스, 이벤트 및 리소스로 채워진 Dynamic Media 뉴스레터, Adobe 뉴스레터 시작입니다.
 
    이 문제:
    * Adobe의 Dynamic Media Classic 숨겨진 기능 웨비나에 등록하십시오.
