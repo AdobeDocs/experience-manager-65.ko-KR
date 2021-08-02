@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 75%
+ht-degree: 52%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 75%
    + [MSM을 사용하여 자산 재사용](reuse-assets-using-msm.md)
    + [연결된 자산( [!DNL Sites])](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
-   + [Experience League의 Dynamic Media 뉴스레터](dynamic-media-newsletter.md)
+   + [Experience League별 Dynamic Media 뉴스레터 아카이브](dynamic-media-newsletter.md)
    + [Dynamic Media 설정](administering-dynamic-media.md)
    + [Dynamic Media 작업](dynamic-media.md)
    + [Dynamic Media 구성 - Scene7 모드](config-dms7.md)
@@ -74,7 +74,7 @@ ht-degree: 75%
    + [Dynamic Media 자산 미리 보기](previewing-assets.md)
    + [페이지에 Dynamic Media 자산 추가](adding-dynamic-media-assets-to-pages.md)
    + [웹 페이지에 Dynamic Video 또는 Image viewer 포함](embed-code.md)
-   + [URL을 웹 애플리케이션에 연결](linking-urls-to-yourwebapplication.md)
+   + [웹 애플리케이션에 URL 연결](linking-urls-to-yourwebapplication.md)
    + [규칙 세트를 사용하여 URL 변환](using-rulesets-to-transform-urls.md)
    + [Dynamic Media 자산 게시](publishing-dynamicmedia-assets.md)
    + [Dynamic Media의 선택적 게시 작업](selective-publishing.md)
