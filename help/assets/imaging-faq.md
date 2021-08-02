@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: 자산 관리,표현물
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
+source-git-commit: a166ea9e56ba6b69793e9949a920a7a24b5b9b25
 workflow-type: tm+mt
-source-wordcount: '2633'
+source-wordcount: '2607'
 ht-degree: 1%
 
 ---
@@ -190,13 +190,13 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 기본적으로 Dynamic Media 회사 계정에 대해 스마트 이미징 DPR 및 네트워크 최적화가 비활성화(꺼짐)됩니다. 이러한 기본 개선 사항 중 하나 또는 둘 다 활성화(켜기)하려면 아래 설명된 지원 사례를 만드십시오.
 
-스마트 이미징 DPR 및 네트워크 최적화에 대한 릴리스 일정은 다음과 같습니다.
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is as follows:
 
-| 지역 | Target 날짜 |
+| Region | Target date |
 |---|---|
-| 북미 | 라이브 버전 |
-| 유럽, 중동, 아프리카 | 2021년 8월 13일 |
-| 아시아-태평양 | 2021년 7월 22일 |
+| North America | Live |
+| Europe, Middle East, Africa | 13 Aug 2021 |
+| Asia-Pacific | 22 Jul 2021 | -->
 
 1. [Admin Console을 사용하여 지원 사례를 만듭니다](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. 지원 사례에 다음 정보를 제공하십시오.
