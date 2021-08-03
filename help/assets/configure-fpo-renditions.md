@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: 표현물
 exl-id: null
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,11 @@ ImageMagick를 사용하여 FPO 변환을 생성하기 위해 를 포함하여 �
 
 Experience Manager에서 새 자산이 업로드되면 DAM 자산 업데이트 워크플로우가 실행됩니다. ImageMagick를 사용하여 새로 업로드한 자산의 렌디션을 처리하려면 워크플로우 모델에 새 명령을 추가합니다.
 
-1. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 클릭합니다. **[!UICONTROL DAM 자산 업데이트]** 모델을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 클릭합니다.
 
-1. 왼쪽 위 모서리에서 **[!UICONTROL 사이드 패널]** 전환 을 클릭합니다. 명령줄 단계를 검색합니다.
+1. **[!UICONTROL DAM 자산 업데이트]** 모델을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
+
+1. 왼쪽 위 모서리에서 **[!UICONTROL 사이드 패널]** 전환 을 클릭하고 명령줄 단계를 검색합니다.
 
 1. **[!UICONTROL 명령줄]** 단계를 드래그하고 **[!UICONTROL 축소판 처리]** 단계 앞에 추가합니다.
 
@@ -89,13 +91,21 @@ ImageMagick 명령줄 기능에 대한 자세한 내용은 [https://imagemagick.
 
 Experience Manager 워크플로우를 사용하여 기존 자산의 FPO 변환을 생성하려면 내장 FPO 표현물 옵션을 사용하는 전용 워크플로우 모델을 만듭니다.
 
-1. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 클릭합니다. 모델을 만들려면 **[!UICONTROL 만들기]** > **[!UICONTROL 모델 만들기]**&#x200B;를 클릭합니다. 의미 있는 **[!UICONTROL 제목]** 및 **[!UICONTROL 이름]**&#x200B;을 추가합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 클릭합니다.
 
-1. 모델을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. **[!UICONTROL 페이지 정보]** > **[!UICONTROL 속성 열기]**&#x200B;를 클릭합니다. **[!UICONTROL 임시 워크플로]**&#x200B;를 선택합니다. 확장성 및 성능이 향상됩니다. **[!UICONTROL 저장]** 및 **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
+1. 모델을 만들려면 **[!UICONTROL 만들기]** > **[!UICONTROL 모델 만들기]**&#x200B;를 클릭합니다.
 
-1. 왼쪽 위 모서리에서 **[!UICONTROL 사이드 패널]** 전환 을 클릭합니다. 프로세스 축소판 단계를 검색합니다. **[!UICONTROL 축소판 처리]** 단계를 드래그합니다.
+1. 의미 있는 **[!UICONTROL 제목]** 및 **[!UICONTROL 이름]**&#x200B;을 추가합니다.
 
-1. **[!UICONTROL 축소판 처리]**&#x200B;를 선택하고 **[!UICONTROL 구성]**&#x200B;을 클릭합니다. [구성에 따라 Experience Manager 워크플로우](#generate-renditions-of-new-assets-using-aem-workflow)를 사용하여 새 자산의 렌디션을 생성합니다. 변경 사항을 활성화하려면 **[!UICONTROL 동기화]**&#x200B;를 클릭하십시오.
+1. 모델을 선택하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. **[!UICONTROL 페이지 정보]** > **[!UICONTROL 속성]**&#x200B;을 클릭한 다음 **[!UICONTROL 임시 워크플로우]**&#x200B;를 선택합니다. 확장성 및 성능이 향상됩니다.
+
+1. **[!UICONTROL 저장]** 및 **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
+
+1. 왼쪽 위 모서리에서 **[!UICONTROL 사이드 패널]** 전환 을 클릭하고 프로세스 축소판 단계를 검색합니다.
+
+1. **[!UICONTROL 축소판 처리]**&#x200B;를 선택하고 **[!UICONTROL 구성]**&#x200B;을 클릭합니다. [구성에 따라 Experience Manager 워크플로우](#generate-renditions-of-new-assets-using-aem-workflow)를 사용하여 새 자산의 렌디션을 생성합니다.
+
+1. 변경 사항을 활성화하려면 **[!UICONTROL 동기화]**&#x200B;를 클릭하십시오.
 
 
 ## ImageMagick를 사용하여 기존 자산의 렌디션 생성 {#generate-renditions-of-existing-assets-using-imagemagick}
