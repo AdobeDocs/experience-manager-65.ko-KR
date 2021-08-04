@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2509'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Granite, CQ 및 Sling 태그 라이브러리는 템플릿 및 구성 요소의 JSP 스크립트에서 사용할 특정 기능에 액세스할 수 있도록 해줍니다.
 
-## Granite 태그 라이브러리 {#granite-tag-library}
+## Granite Tag Library {#granite-tag-library}
 
 Granite 태그 라이브러리에는 유용한 함수가 포함되어 있습니다.
 
@@ -37,7 +37,7 @@ Granite UI 구성 요소의 jsp 스크립트를 개발할 때는 스크립트 �
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling" %>
 ```
 
-### <ui:includeClientLib> {#ui-includeclientlib}
+### &lt;ui:includeclientlib> {#ui-includeclientlib}
 
 `<ui:includeClientLib>` 태그는 js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리를 포함합니다. js 및 css와 같은 다양한 유형의 여러 포함을 위해 이 태그를 jsp에서 여러 번 사용해야 합니다. 이 태그는 ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` 서비스 인터페이스의 편의 래퍼입니다.
 
@@ -45,19 +45,19 @@ Granite UI 구성 요소의 jsp 스크립트를 개발할 때는 스크립트 �
 
 **categories**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 및 CSS 라이브러리가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
-해당 항목:`com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
+해당 항목: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
 **테마**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS와 JS 모두)가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
-해당 항목:`com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
+해당 항목: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
 **js**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 라이브러리가 포함됩니다.
 
-해당 항목:`com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
+해당 항목: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
 **css**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리의 모든 CSS 라이브러리가 포함됩니다.
 
-해당 항목:`com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
+해당 항목: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
 **테마**  - 테마 또는 비테마 라이브러리만 나타내는 플래그를 포함해야 합니다. 생략하면 두 세트가 모두 포함됩니다. 순수 JS 또는 CSS에만 적용됩니다(카테고리 또는 테마 포함에는 적용되지 않음).
 
@@ -99,7 +99,7 @@ AEM 구성 요소의 jsp 스크립트를 개발할 때 스크립트 맨 위에 �
 
 Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects) 태그로 정의된 정기적으로 사용되는 스크립팅 개체를 표시합니다. 이렇게 하면 구성 요소의 jsp 코드가 단축되고 단순화됩니다.
 
-### <cq:text> {#cq-text}
+### &lt;cq:text> {#cq-text}
 
 `<cq:text>` 태그는 구성 요소 텍스트를 JSP에 출력하는 편의 태그입니다.
 
@@ -157,7 +157,7 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 <cq:text property="text" tagClass="text"/>
 ```
 
-### <cq:setContentBundle> {#cq-setcontentbundle}
+### &lt;cq:setcontentbundle> {#cq-setcontentbundle}
 
 `<cq:setContentBundle>` 태그는 i18n 현지화 컨텍스트를 만들고 `javax.servlet.jsp.jstl.fmt.localizationContext` 구성 변수에 저장합니다.
 
@@ -204,7 +204,7 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 </div> ...
 ```
 
-### <cq:include> {#cq-include}
+### &lt;cq:include> {#cq-include}
 
 `<cq:include>` 태그는 현재 페이지에 리소스를 포함합니다.
 
@@ -220,7 +220,7 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 
 **resourceType**
 
-* 포함할 리소스의 리소스 유형입니다. 리소스 유형을 설정하면 경로가 리소스 개체의 정확한 경로여야 합니다.이 경우 경로에 매개 변수, 선택기 및 확장을 추가할 수 없습니다.
+* 포함할 리소스의 리소스 유형입니다. 리소스 유형을 설정하면 경로가 리소스 개체의 정확한 경로여야 합니다. 이 경우 경로에 매개 변수, 선택기 및 확장을 추가할 수 없습니다.
 * 포함할 리소스를 리소스로 확인할 수 없는 경로 특성으로 지정한 경우 태그는 경로 및 이 리소스 유형에서 합성 리소스 개체를 만들 수 있습니다.
 * 경로 및 resourceType 또는 스크립트를 지정해야 합니다.
 
@@ -254,7 +254,7 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 * AEM 구성 요소를 개발할 때 `<cq:include>` 을 사용하는 것이 좋습니다.
 * `<cq:include>` 스크립트 속성을 사용할 때 스크립트 파일 이름으로 스크립트 파일을 직접 포함할 수 있습니다. 이 경우 구성 요소 및 리소스 유형 상속을 고려하며, 선택기와 확장을 사용하여 Sling의 스크립트 해상도를 엄격하게 준수하는 것보다 간편합니다.
 
-### <cq:includeClientLib> {#cq-includeclientlib}
+### &lt;cq:includeclientlib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
@@ -266,19 +266,19 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 
 **categories**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 및 CSS 라이브러리가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
-해당 항목:`com.day.cq.widget.HtmlLibraryManager#writeIncludes`
+해당 항목: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
 **테마**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS와 JS 모두)가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
-해당 항목:`com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
+해당 항목: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
 **js**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 라이브러리가 포함됩니다.
 
-해당 항목:`com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
+해당 항목: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
 **css**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리의 모든 CSS 라이브러리가 포함됩니다.
 
-해당 항목:`com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
+해당 항목: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
 **테마**  - 테마 또는 비테마 라이브러리만 나타내는 플래그를 포함해야 합니다. 생략하면 두 세트가 모두 포함됩니다. 순수 JS 또는 CSS에만 적용됩니다(카테고리 또는 테마 포함에는 적용되지 않음).
 
@@ -298,7 +298,7 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 <cq:includeClientLib css="cq.collab.calendar, cq.security" />
 ```
 
-### <cq:defineObjects> {#cq-defineobjects}
+### &lt;cq:defineobjects> {#cq-defineobjects}
 
 `<cq:defineObjects>` 태그는 개발자가 참조할 수 있는 다음과 같은 스크립트를 정기적으로 노출합니다. 또한 [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects) 태그로 정의된 개체도 노출합니다.
 
@@ -440,7 +440,7 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 >
 >스크립트에 `/libs/foundation/global.jsp` 파일이 포함되면 `<cq:defineObjects />` 태그가 자동으로 포함됩니다.
 
-### <cq:requestURL> {#cq-requesturl}
+### &lt;cq:requesturl> {#cq-requesturl}
 
 `<cq:requestURL>` 태그는 현재 요청 URL을 JspWriter에 씁니다. 두 태그 [ `<cq:addParam>`](#amp-lt-cq-addparam) 및 [ `<cq:removeParam>`](#amp-lt-cq-removeparam)는 이 태그의 본문 내에서 사용할 수 있으며, 이 태그를 쓰기 전에 현재 요청 URL을 수정할 수 있습니다.
 
@@ -462,7 +462,7 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### <cq:addParam> {#cq-addparam}
+### &lt;cq:addparam> {#cq-addparam}
 
 `<cq:addParam>` 태그는 바깥쪽 [ `<cq:requestURL>`](#amp-lt-cq-requesturl) 태그에 지정된 이름과 값을 갖는 요청 매개 변수를 추가합니다.
 
@@ -482,7 +482,7 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### <cq:removeParam> {#cq-removeparam}
+### &lt;cq:removeparam> {#cq-removeparam}
 
 `<cq:removeParam>` 태그는 바깥쪽 [ `<cq:requestURL>`](#amp-lt-cq-requesturl) 태그에서 지정된 이름과 값을 갖는 요청 매개 변수를 제거합니다. 값이 제공되지 않으면 지정된 이름의 모든 매개 변수가 제거됩니다.
 
@@ -512,7 +512,7 @@ Sling 태그 라이브러리에는 유용한 Sling 함수가 포함되어 있습
 >
 >스크립트에 `/libs/foundation/global.jsp` 파일이 포함되면 sling taglib이 자동으로 선언됩니다.
 
-### <sling:include> {#sling-include}
+### &lt;sling:include> {#sling-include}
 
 `<sling:include>` 태그는 현재 페이지에 리소스를 포함합니다.
 
@@ -532,7 +532,7 @@ Sling 태그 라이브러리에는 유용한 Sling 함수가 포함되어 있습
 
 **resourceType**
 
-* 포함할 리소스의 리소스 유형입니다. 리소스 유형을 설정하면 경로가 리소스 개체의 정확한 경로여야 합니다.이 경우 경로에 매개 변수, 선택기 및 확장을 추가할 수 없습니다.
+* 포함할 리소스의 리소스 유형입니다. 리소스 유형을 설정하면 경로가 리소스 개체의 정확한 경로여야 합니다. 이 경우 경로에 매개 변수, 선택기 및 확장을 추가할 수 없습니다.
 * 포함할 리소스를 리소스로 확인할 수 없는 경로 특성으로 지정한 경우 태그는 경로 및 이 리소스 유형에서 합성 리소스 개체를 만들 수 있습니다.
 
 **replaceSelectors**
@@ -549,7 +549,7 @@ Sling 태그 라이브러리에는 유용한 Sling 함수가 포함되어 있습
 
 >[!NOTE]
 >
->`<sling:include>` 태그에 포함된 리소스 및 스크립트의 해상도는 일반적인 sling URL 해상도와 동일합니다. 기본적으로 선택기, 확장 등은 현재 요청에서 포함된 스크립트도 사용됩니다. 태그 속성을 통해 수정할 수 있습니다.예를 들어 `replaceSelectors="foo.bar"` 을 사용하면 선택기를 덮어쓸 수 있습니다.
+>`<sling:include>` 태그에 포함된 리소스 및 스크립트의 해상도는 일반적인 sling URL 해상도와 동일합니다. 기본적으로 선택기, 확장 등은 현재 요청에서 포함된 스크립트도 사용됩니다. 태그 속성을 통해 수정할 수 있습니다. 예를 들어 `replaceSelectors="foo.bar"` 을 사용하면 선택기를 덮어쓸 수 있습니다.
 
 예:
 
@@ -577,7 +577,7 @@ Sling 태그 라이브러리에는 유용한 Sling 함수가 포함되어 있습
 <sling:include replaceSelectors="content" />
 ```
 
-### <sling:defineObjects> {#sling-defineobjects}
+### &lt;sling:defineobjects> {#sling-defineobjects}
 
 `<sling:defineObjects>` 태그는 개발자가 참조할 수 있는 다음과 같은 스크립트를 정기적으로 노출합니다.
 
@@ -636,7 +636,7 @@ l **ogName resourceResolverName**
 
 [JavaServer Pages Standard Tag Library](https://www.oracle.com/technetwork/java/index-jsp-135995.html)에는 많은 유용한 표준 태그가 포함되어 있습니다. 코어, 형식 및 함수 taglibs는 다음 코드 조각에 표시된 대로 `/libs/foundation/global.jsp`에 의해 정의됩니다.
 
-### /libs/foundation/global.jsp {#extract-of-libs-foundation-global-jsp} 추출
+### /libs/foundation/global.jsp의 추출 {#extract-of-libs-foundation-global-jsp}
 
 ```xml
 <%@taglib prefix="c" uri="https://java.sun.com/jsp/jstl/core" %>
