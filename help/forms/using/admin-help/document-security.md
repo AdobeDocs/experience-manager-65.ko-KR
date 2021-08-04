@@ -12,9 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: 문서 보안
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: a84f9bd590193cbb8c2549b34df1bbcec618ba67
+source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '3298'
+source-wordcount: '3310'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 1. 수신자가 해당 클라이언트 응용 프로그램에서 문서를 엽니다. 수신자는 정책에 따라 문서를 사용할 수 있습니다.
 1. 문서 소유자, 정책 세트 코디네이터 또는 관리자는 웹 페이지를 사용하여 문서를 추적하고 문서에 대한 액세스를 수정할 수 있습니다.
 
-## 문서 보안 사용자 정보 {#about-document-security-users}
+## 문서 보안 사용자 기본 정보 {#about-document-security-users}
 
 다양한 유형의 사용자는 문서 보안과 함께 다양한 작업을 수행합니다.
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 * 문서 보안 보기 서버 이벤트
 * 문서 보안 변경 정책 소유자
 
-## 정책 및 정책으로 보호된 문서 {#policies-and-policy-protected-documents}
+## 정책 및 정책에 따라 보호되는 문서 {#policies-and-policy-protected-documents}
 
 *정책*&#x200B;은 보안 설정 집합을 정의하고 정책이 적용되는 문서에 액세스할 수 있는 사용자를 정의합니다. 또한 정책을 사용하면 문서에 대한 권한을 동적으로 변경할 수 있습니다. 문서에 대한 액세스를 취소하거나 정책을 전환할 수 있도록 기밀성 설정을 변경할 수 있는 문서 권한을 확보한 사람에게 제공합니다.
 
@@ -182,7 +182,7 @@ Adobe Acrobat® Pro 및 Acrobat Standard을 사용하여 PDF 문서에 정책 �
 
 오프라인 사용이 활성화되면 수신자는 정책에 지정된 기간 동안 정책에 의해 보호된 문서를 오프라인(활성 인터넷 또는 네트워크 연결 없이)으로 사용할 수도 있습니다.
 
-### 정책으로 보호된 문서가 작동하는 방식 {#how-policy-protected-documents-work}
+### 정책으로 보호된 문서 작동 방식 {#how-policy-protected-documents-work}
 
 정책으로 보호된 문서를 열고 사용하려면 정책에 사용자의 이름이 수신자로 포함되어야 하며 유효한 문서 보안 계정이 있어야 합니다. PDF 문서의 경우 Acrobat 또는 Adobe Reader®가 필요합니다. 다른 파일 유형의 경우 Acrobat Reader DC 확장이 설치된 파일에 적합한 애플리케이션이 필요합니다.
 
@@ -276,4 +276,4 @@ Adobe Acrobat® Pro 및 Acrobat Standard을 사용하여 PDF 문서에 정책 �
 
    >[!NOTE]
    >
-   > [getAllPolicysetnames()]((https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html)) API를 사용하여 최대 1000개의 정책 세트 이름을 검색할 수 있습니다. 내부적으로 API는 API 호출자가 문서 게시자 권한을 가지고 있는 최대 1000개의 정책을 검색한 다음 검색된 정책과 연관된 고유한 정책 세트 이름 목록을 만들고 반환합니다. 예를 들어 API가 1000개의 정책을 검색하고 검색된 정책이 총 200개의 정책 세트와 연결된 경우 API는 200개의 정책 세트 이름만 반환합니다.
+   > [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API를 사용하여 최대 1000개의 정책 세트 이름을 검색할 수 있습니다. 내부적으로 API는 API 호출자가 문서 게시자 권한을 가지고 있는 최대 1000개의 정책을 검색한 다음 검색된 정책과 연관된 고유한 정책 세트 이름 목록을 만들고 반환합니다. 예를 들어 API가 1000개의 정책을 검색하고 검색된 정책이 총 200개의 정책 세트와 연결된 경우 API는 200개의 정책 세트 이름만 반환합니다.
