@@ -7,11 +7,12 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
+mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: 구성,Scene7 모드
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
 workflow-type: tm+mt
-source-wordcount: '6160'
+source-wordcount: '6856'
 ht-degree: 1%
 
 ---
@@ -26,7 +27,8 @@ ht-degree: 1%
 
 새로운 아키텍처를 통해 Experience Manager은 기본 소스 자산을 담당하며 자산 처리 및 게시를 위해 Dynamic Media과 동기화됩니다.
 
-1. 기본 소스 자산이 Experience Manager에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media은 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 자산 처리 및 표현물 생성을 처리합니다. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
+1. 기본 소스 자산이 Experience Manager에 업로드되면 Dynamic Media에 복제됩니다. 이때 Dynamic Media은 이미지의 비디오 인코딩 및 동적 변형과 같은 모든 자산 처리 및 표현물 생성을 처리합니다.
+(Dynamic Media - Scene7 모드에서 기본 업로드 파일 크기는 2GB 이하입니다. 업로드 파일 크기를 최대 15GB까지 2GB로 활성화하려면 [(선택 사항) Dynamic Media 구성 - Scene7 모드 을 참조하여 2GB](#optional-config-dms7-assets-larger-than-2gb)보다 큰 자산을 업로드하십시오.
 1. 표현물이 생성되면 Experience Manager이 원격 Dynamic Media 표현물에 안전하게 액세스하고 미리 볼 수 있습니다(바이너리가 Experience Manager 인스턴스로 다시 전송되지 않음).
 1. 컨텐츠를 게시 및 승인할 준비가 되면, 컨텐츠를 전달 서버에 푸시하고 CDN(Content Delivery Network)에 컨텐츠를 캐시하도록 Dynamic Media 서비스를 트리거합니다.
 
@@ -147,11 +149,95 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 지정하거나 성능을 최적화하려는 경우 다음 *선택적* 작업 중 하나 이상을 완료할 수 있습니다.
 
+* [(선택 사항) 2GB보다 큰 자산을 업로드할 Dynamic Media - Scene7 모드 구성](#optional-config-dms7-assets-larger-than-2gb)
+
 * [(선택 사항) Dynamic Media 설정 및 구성 - Scene7 모드 설정](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
 * [(선택 사항) Dynamic Media - Scene7 모드의 성능 조정](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(선택 사항) 복제할 자산을 필터링합니다](#optional-filtering-assets-for-replication)
+
+### (선택 사항) 2GB보다 큰 자산을 업로드할 Dynamic Media - Scene7 모드 구성 {#optional-config-dms7-assets-larger-than-2gb}
+
+Dynamic Media - Scene7 모드에서 기본 자산 업로드 파일 크기는 2GB 이합니다. 그러나 2GB보다 크고 최대 15GB의 자산 업로드를 선택적으로 구성할 수 있습니다.
+
+이 기능을 사용하려면 다음 전제 조건 및 사항을 숙지하십시오.
+
+* 서비스 팩 6.5.4.0 이상에서 Experience Manager 6.5를 실행 중이어야 합니다.
+* [Oak의 직접 이진 액세스 ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) 다운로드가 활성화되었습니다.
+
+   활성화하려면 데이터 저장소 구성에서 속성 `presignedHttpDownloadURIExpirySeconds > 0`을 설정합니다. 더 큰 바이너리를 다운로드하고 다시 시도할 수 있을 만큼 값이 길어야 합니다.
+
+* 15GB보다 큰 자산은 업로드되지 않습니다. (크기 제한은 아래 8단계에서 설정됩니다.)
+* Scene7 자산 재처리 워크플로우가 폴더에서 트리거되면 폴더에 있는 이미 업로드한 큰 자산을 재처리합니다. 그러나 Scene7 회사에 존재하지 않는 큰 자산은 업로드하지 않습니다.
+* 폴더에서 워크플로우가 트리거되는 경우가 아니라 단일 자산 페이로드에만 큰 업로드가 작동합니다.
+
+**2GB보다 큰 자산을 업로드하기 위해 Dynamic Media - Scene7 모드를 구성하려면:**
+
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
+
+1. CRXDE Lite 창에서 다음 중 하나를 수행합니다.
+
+   * 왼쪽 레일에서 다음 경로로 이동합니다.
+
+      `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * 위의 경로를 복사하여 도구 모음 아래의 CRXDE Lite 경로 필드에 붙여넣은 다음 `Enter` 키를 누릅니다.
+
+1. 왼쪽 레일에서 `fileupload`을 마우스 오른쪽 단추로 클릭한 다음 팝업 메뉴에서 **[!UICONTROL 오버레이 노드]**&#x200B;를 선택합니다.
+
+   ![오버레이 노드 옵션](/help/assets/assets-dm/uploadassets15gb_a.png)
+
+1. 오버레이 노드 대화 상자에서 **[!UICONTROL 노드 유형 일치]** 확인란을 선택하여 옵션을 활성화(설정)한 다음 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
+
+   ![오버레이 노드 대화 상자](/help/assets/assets-dm/uploadassets15gb_b.png)
+
+1. CRXDE Lite 창에서 다음 중 하나를 수행합니다.
+
+   * 왼쪽 레일에서 다음 오버레이 노드 경로로 이동합니다.
+
+      `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * 위의 경로를 복사하여 도구 모음 아래의 CRXDE Lite 경로 필드에 붙여넣은 다음 `Enter` 키를 누릅니다.
+
+1. **[!UICONTROL 속성]** 탭의 **[!UICONTROL 이름]** 열 아래에서 `sizeLimit`를 찾습니다.
+1. `sizeLimit` 이름의 오른쪽에 있는 **[!UICONTROL 값]** 열 아래에서 값 필드를 두 번 클릭합니다.
+1. 크기 제한을 원하는 최대 업로드 크기로 늘릴 수 있도록 적절한 값(바이트)을 입력합니다. 예를 들어 업로드 자산 크기 제한을 10GB로 늘리려면 값 필드에 `10737418240` 을 입력합니다.
+최대 15GB(`2013265920` 바이트)의 값을 입력할 수 있습니다. 이 경우 15GB보다 큰 업로드된 자산은 업로드되지 않습니다.
+
+
+   ![크기 제한 값](/help/assets/assets-dm/uploadassets15gb_c.png)
+
+1. CRXDE Lite 창의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL 모두 저장]**&#x200B;을 선택합니다.
+
+   *이제 다음을 수행하여 Granite Workflow 외부 프로세스 작업 핸들러에 대한 시간 제한을 설정합니다.*
+
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
+1. 다음 중 하나를 수행합니다.
+
+   * 다음 URL 경로로 이동합니다.
+
+      `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
+
+   * 위의 경로를 복사하여 브라우저의 URL 필드에 붙여넣습니다. `localhost:4502` 을 자체 Experience Manager 인스턴스로 바꾸십시오.
+
+1. **[!UICONTROL Granite Workflow 외부 프로세스 작업 처리기 Adobe]** 대화 상자의 **[!UICONTROL 최대 시간 초과]** 필드에서 값을 `18000` 분(5시간)으로 설정합니다. 기본값은 10800분(3시간)입니다.
+
+   ![최대 시간 제한 값](/help/assets/assets-dm/uploadassets15gb_d.png)
+
+1. 대화 상자의 오른쪽 아래 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+
+   *이제 다음을 수행하여 Scene7 직접 이진 업로드 프로세스 단계에 대한 시간 제한을 설정합니다.*
+
+1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;로 이동합니다.
+1. 워크플로우 모델 페이지에서 **[!UICONTROL Dynamic Media 인코딩 비디오]**&#x200B;을 선택합니다.
+1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
+1. 워크플로우 페이지에서 **[!UICONTROL Scene7 직접 이진 업로드]** 프로세스 단계를 두 번 클릭합니다.
+1. **[!UICONTROL 단계 속성]** 대화 상자의 **[!UICONTROL 일반]** 탭의 **[!UICONTROL 고급 설정]** 제목의 **[!UICONTROL 시간 초과]** 필드에 `18000`분(5시간)의 값을 입력합니다. 기본값은 `3600`분(1시간)입니다.
+1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 동기화]**&#x200B;를 선택합니다.
+1. **[!UICONTROL DAM 자산 업데이트]** 워크플로우 모델과 **[!UICONTROL Scene7 워크플로우 재처리]** 워크플로우 모델에 대해 14-21단계를 반복합니다.
 
 ### (선택 사항) Dynamic Media 설정 및 구성 - Scene7 모드 설정 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
@@ -525,7 +611,7 @@ Granite Transit 워크플로우 큐는 **[!UICONTROL DAM 자산 업데이트]** 
 
 **Granite Transient 워크플로우 큐를 업데이트하려면:**
 
-1. [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr)로 이동하여 **큐를 검색합니다. Granite Transient 워크플로 큐**.
+1. [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)로 이동하여 **큐를 검색합니다. Granite Transient 워크플로 큐**.
 
    >[!NOTE]
    OSGi PID가 동적으로 생성되므로 직접 URL 대신 텍스트 검색이 필요합니다.
