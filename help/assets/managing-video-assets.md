@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: 자산 관리
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 1. 도구 모음에서 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;을 클릭합니다.
-1. [!DNL Adobe Experience Manager] [!UICONTROL 웹 콘솔 번들] 페이지의 테이블의 이름 열 아래에서 **[!UICONTROL Granite Workflow 외부 프로세스 작업 핸들러 Adobe]**&#x200B;를 찾아 클릭합니다.
+1. [!DNL Adobe Experience Manager] [!UICONTROL 웹 콘솔 번들] 페이지의 테이블의 이름 열 아래에서 **[!UICONTROL Granite Workflow 외부 프로세스 작업 핸들러 Adobe]**&#x200B;을 찾아 클릭합니다.
 1. [!UICONTROL Granite Workflow 외부 프로세스 작업 핸들러 Adobe] 페이지에서 **[!UICONTROL 기본 시간 초과]** 및 **[!UICONTROL 최대 시간 초과]** 필드 모두에 대한 초를 `18000`(5시간)로 설정합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 1. [!DNL Experience Manager]에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 클릭합니다.
 1. 워크플로우 모델 페이지에서 **[!UICONTROL Dynamic Media 인코딩 비디오]**&#x200B;을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
