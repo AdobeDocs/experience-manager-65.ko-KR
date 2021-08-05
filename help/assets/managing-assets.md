@@ -10,16 +10,16 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: 자산 관리
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 13%
 
 ---
 
 # Dynamic Media 자산 관리 기본 정보 {#managing-assets}
 
-Dynamic Media 자산 이미지, 비디오 및 대화형 자산을 업로드한 후 관리 - 미리 보기, 다운로드 또는 게시를 포함한 많은 작업이 필요합니다.
+Dynamic Media 자산(이미지, 비디오 및 대화형 자산)이 업로드되면 관리 - 미리 보기, 다운로드 또는 게시를 포함한 많은 작업이 포함됩니다.
 
 미리 볼 때 이미지 사전 설정(이미지에만 해당) 또는 뷰어 사전 설정(비디오 및 이미지의 경우)을 적용할 수도 있습니다. 두 항목을 모두 자산에 적용할 수 없습니다. [뷰어 사전 설정 적용](/help/assets/viewer-presets.md) 및 [이미지 사전 설정 적용](/help/assets/image-sets.md)을 참조하십시오.
 
