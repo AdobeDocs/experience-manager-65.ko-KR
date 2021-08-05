@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: 메타데이터
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b36448449830aa8e19f6dc29ab7fb62608bb39dd
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1982'
 ht-degree: 3%
 
 ---
@@ -60,15 +60,15 @@ DOS(서비스 거부) 등의 상황을 방지하기 위해 [!DNL Enterprise Mana
 
    **[!UICONTROL 설명]** 구성 요소에 대해 다음 속성을 편집합니다.
 
-   * **[!UICONTROL 필드 레이블]**:메타데이터 속성의 표시 이름입니다. 사용자 참조용입니다.
+   * **[!UICONTROL 필드 레이블]**: 메타데이터 속성의 표시 이름입니다. 사용자 참조용입니다.
 
-   * **[!UICONTROL 속성에 매핑]**:이 속성의 값은 저장소에 저장되는 자산 노드에 대한 상대 경로 또는 이름을 제공합니다. 이 값은 경로가 자산의 노드 아래에 있음을 나타내므로 항상 `./` 로 시작해야 합니다.
+   * **[!UICONTROL 속성에 매핑]**: 이 속성의 값은 저장소에 저장되는 자산 노드에 대한 상대 경로 또는 이름을 제공합니다. 이 값은 경로가 자산의 노드 아래에 있음을 나타내므로 항상 `./` 로 시작해야 합니다.
 
    ![메타데이터 프로필의 속성 설정에 매핑](assets/metadata-profile-setting-map-property.png)
 
-   **[!UICONTROL 속성에 매핑]**&#x200B;에 대해 지정하는 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 **[!UICONTROL 속성에 매핑]**&#x200B;의 이름으로 `./jcr:content/metadata/dc:desc`을 지정하는 경우 [!DNL Assets]은 자산의 메타데이터 노드에 값 `dc:desc`을 저장합니다.
+   **[!UICONTROL 속성에 매핑]**&#x200B;에 대해 지정하는 값은 자산의 메타데이터 노드 아래에 속성으로 저장됩니다. 예를 들어 **[!UICONTROL 속성에 매핑]**&#x200B;의 이름으로 `./jcr:content/metadata/dc:desc`을 지정하는 경우 [!DNL Assets]은 자산의 메타데이터 노드에 값 `dc:desc`을 저장합니다. 메타데이터 스키마의 주어진 속성에 필드를 하나만 매핑하는 것이 좋습니다. 그렇지 않으면 시스템에 의해 속성에 매핑된 최신 추가 필드가 선택됩니다.
 
-   * **[!UICONTROL 기본값]**:이 속성을 사용하여 메타데이터 구성 요소에 대한 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 노드에서 속성 `dc:desc`에 할당됩니다.
+   * **[!UICONTROL 기본값]**: 이 속성을 사용하여 메타데이터 구성 요소에 대한 기본값을 추가합니다. 예를 들어 &quot;My description&quot;을 지정하면 이 값이 자산의 메타데이터 노드에서 속성 `dc:desc`에 할당됩니다.
 
    ![메타데이터 프로필에서 기본 설명 설정](assets/metadata-profile-setting-default-value.png)
 
@@ -191,27 +191,27 @@ To apply a metadata profile globally, follow these steps:
 
 양식 항목의 속성을 편집하려면 구성 요소를 클릭하고 **[!UICONTROL 설정]** 탭에서 다음 속성의 하위 집합을 모두 또는 편집하십시오.
 
-**[!UICONTROL 필드 레이블]**:폴더의 속성 페이지에 표시되는 메타데이터 속성의 이름입니다.
+**[!UICONTROL 필드 레이블]**: 폴더의 속성 페이지에 표시되는 메타데이터 속성의 이름입니다.
 
-**[!UICONTROL 속성에 매핑]**:이 속성은 CRX 저장소가 저장된 폴더 노드의 상대 경로를 지정합니다. &quot;**로 시작합니다./**&quot; - 경로가 폴더의 노드 아래에 있음을 나타냅니다.
+**[!UICONTROL 속성에 매핑]**: 이 속성은 CRX 저장소가 저장된 폴더 노드의 상대 경로를 지정합니다. &quot;**로 시작합니다./**&quot; - 경로가 폴더의 노드 아래에 있음을 나타냅니다.
 
 다음은 이 속성에 유효한 값입니다.
 
-* `./jcr:content/metadata/dc:title`:폴더의 메타데이터 노드에 값을 속성으로 저장합니다 `dc:title`.
+* `./jcr:content/metadata/dc:title`: 폴더의 메타데이터 노드에 값을 속성으로 저장합니다 `dc:title`.
 
-* `./jcr:created`:폴더의 노드에 JCR 속성을 표시합니다. CRXDE에서 이러한 속성을 구성하는 경우, Adobe은 이러한 속성이 보호되므로 편집 비활성화로 표시하는 것이 좋습니다. 그렇지 않으면 자산의 속성을 저장할 때 &#39; `Asset(s) failed to modify`&#39; 오류가 발생합니다.
+* `./jcr:created`: 폴더의 노드에 JCR 속성을 표시합니다. CRXDE에서 이러한 속성을 구성하는 경우, Adobe은 이러한 속성이 보호되므로 편집 비활성화로 표시하는 것이 좋습니다. 그렇지 않으면 자산의 속성을 저장할 때 &#39; `Asset(s) failed to modify`&#39; 오류가 발생합니다.
 
 구성 요소가 메타데이터 스키마 양식에 올바르게 표시되는지 확인하려면 속성 경로에 공백을 포함하지 마십시오.
 
-**[!UICONTROL JSON 경로]**:옵션에 키-값 쌍을 지정하는 JSON 파일의 경로를 지정하는 데 사용합니다.
+**[!UICONTROL JSON 경로]**: 옵션에 키-값 쌍을 지정하는 JSON 파일의 경로를 지정하는 데 사용합니다.
 
-**[!UICONTROL 자리 표시자]**:이 속성을 사용하여 메타데이터 속성과 관련된 관련 자리 표시자 텍스트를 지정합니다.
+**[!UICONTROL 자리 표시자]**: 이 속성을 사용하여 메타데이터 속성과 관련된 관련 자리 표시자 텍스트를 지정합니다.
 
-**[!UICONTROL 선택]** 사항:이 속성을 사용하여 목록에서 선택 사항을 지정합니다.
+**[!UICONTROL 선택]** 사항: 이 속성을 사용하여 목록에서 선택 사항을 지정합니다.
 
-**[!UICONTROL 설명]**:이 속성을 사용하여 메타데이터 구성 요소에 대한 간단한 설명을 추가합니다.
+**[!UICONTROL 설명]**: 이 속성을 사용하여 메타데이터 구성 요소에 대한 간단한 설명을 추가합니다.
 
-**[!UICONTROL 클래스]**:속성이 연결된 객체 클래스입니다.
+**[!UICONTROL 클래스]**: 속성이 연결된 객체 클래스입니다.
 
 ### 폴더 메타데이터 스키마 양식 삭제 {#delete-folder-metadata-schema-forms}
 
