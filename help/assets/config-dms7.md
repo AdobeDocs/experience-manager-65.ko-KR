@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: 구성,Scene7 모드
-source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
+source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
 workflow-type: tm+mt
-source-wordcount: '6856'
+source-wordcount: '6941'
 ht-degree: 1%
 
 ---
@@ -161,16 +161,21 @@ Dynamic Media - Scene7 모드의 구성 및 설정을 추가로 사용자 지정
 
 Dynamic Media - Scene7 모드에서 기본 자산 업로드 파일 크기는 2GB 이합니다. 그러나 2GB보다 크고 최대 15GB의 자산 업로드를 선택적으로 구성할 수 있습니다.
 
-이 기능을 사용하려면 다음 전제 조건 및 사항을 숙지하십시오.
+이 기능을 사용하려면 다음 전제 조건 및 점을 알아 두십시오.
 
-* 서비스 팩 6.5.4.0 이상에서 Experience Manager 6.5를 실행 중이어야 합니다.
-* [Oak의 직접 이진 액세스 ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) 다운로드가 활성화되었습니다.
+* Dynamic Media - Scene7 모드에서 서비스 팩 6.5.4.0 이상 버전의 Experience Manager 6.5를 실행 중이어야 합니다.
+* 이 큰 업로드 기능은 [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html) 고객에게만 지원됩니다.
+* Experience Manager 인스턴스가 Amazon S3 또는 Microsoft® Azure Blob 저장소를 사용하여 구성되었는지 확인하십시오.
 
-   활성화하려면 데이터 저장소 구성에서 속성 `presignedHttpDownloadURIExpirySeconds > 0`을 설정합니다. 더 큰 바이너리를 다운로드하고 다시 시도할 수 있을 만큼 값이 길어야 합니다.
+   >[!NOTE]
+   Blob 저장소 구성에서 이 큰 업로드 기능은 AzureSas에서 지원되지 않으므로 두 액세스 키(key1 및 key2)로 Azure Blob 저장소를 구성합니다.
+
+* Oak의 [직접 이진 액세스 다운로드](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)가 활성화되었습니다(Oak의 *직접 이진 액세스 업로드*&#x200B;가 필요하지 않음).
+
+   직접 이진 액세스 다운로드를 활성화하려면 데이터 저장소 구성에서 속성 `presignedHttpDownloadURIExpirySeconds > 0`을 설정하십시오. 더 큰 바이너리를 다운로드하고 다시 시도할 수 있을 만큼 값이 길어야 합니다.
 
 * 15GB보다 큰 자산은 업로드되지 않습니다. (크기 제한은 아래 8단계에서 설정됩니다.)
-* Scene7 자산 재처리 워크플로우가 폴더에서 트리거되면 폴더에 있는 이미 업로드한 큰 자산을 재처리합니다. 그러나 Scene7 회사에 존재하지 않는 큰 자산은 업로드하지 않습니다.
-* 폴더에서 워크플로우가 트리거되는 경우가 아니라 단일 자산 페이로드에만 큰 업로드가 작동합니다.
+* **[!UICONTROL Dynamic Media Reprocess]** 자산 워크플로우가 폴더에서 트리거되면 Dynamic Media 회사와 이미 동기화된 큰 자산을 모두 재처리합니다. 하지만 큰 자산이 폴더에서 아직 동기화되지 않는 경우 자산을 업로드하지 않습니다. 따라서 Dynamic Media의 기존 대용량 자산을 동기화하기 위해 개별 자산에서 **[!UICONTROL Dynamic Media Reprocess]** 자산 워크플로우를 실행할 수 있습니다.
 
 **2GB보다 큰 자산을 업로드하기 위해 Dynamic Media - Scene7 모드를 구성하려면:**
 
@@ -237,7 +242,7 @@ Dynamic Media - Scene7 모드에서 기본 자산 업로드 파일 크기는 2GB
 1. **[!UICONTROL 단계 속성]** 대화 상자의 **[!UICONTROL 일반]** 탭의 **[!UICONTROL 고급 설정]** 제목의 **[!UICONTROL 시간 초과]** 필드에 `18000`분(5시간)의 값을 입력합니다. 기본값은 `3600`분(1시간)입니다.
 1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 동기화]**&#x200B;를 선택합니다.
-1. **[!UICONTROL DAM 자산 업데이트]** 워크플로우 모델과 **[!UICONTROL Scene7 워크플로우 재처리]** 워크플로우 모델에 대해 14-21단계를 반복합니다.
+1. **[!UICONTROL DAM 자산 업데이트]** 워크플로우 모델과 **[!UICONTROL Dynamic Media 재처리]** 워크플로우 모델에 대해 14-21단계를 반복합니다.
 
 ### (선택 사항) Dynamic Media 설정 및 구성 - Scene7 모드 설정 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
