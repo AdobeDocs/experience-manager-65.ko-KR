@@ -11,7 +11,7 @@ docset: aem65
 feature: 파노라마 이미지,자산 관리
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ![파노라마 이미지2](assets/panoramic-image2.png)
 
-## 파노라마 이미지 뷰어에서 사용할 자산 업로드 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## 파노라마 이미지 뷰어에서 사용할 자산을 업로드합니다 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 업로드된 자산이 파노라마 이미지 뷰어와 함께 사용할 구형 파노라마 이미지로 분류되도록 하려면 자산에 다음 중 하나 또는 둘 다 있어야 합니다.
 
@@ -38,7 +38,7 @@ CRXDE Lite에서 다음과 같은 기본 종횡비 설정 2를 무시할 수 있
 
 종횡비와 키워드 기준은 모두 자산 세부 사항 페이지와 `Panoramic Media` WCM 구성 요소의 파노라마 자산에 적용됩니다.
 
-파노라마 이미지 뷰어에서 사용할 자산을 업로드하려면 [자산 업로드](/help/assets/manage-assets.md#uploading-assets)를 참조하십시오.
+파노라마 이미지 뷰어에 사용할 자산을 업로드하려면 [자산 업로드](/help/assets/manage-assets.md#uploading-assets)를 참조하십시오.
 
 ## Dynamic Media Classic 구성 {#configuring-dynamic-media-classic-scene}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager 내에서 파노라마 이미지 뷰어가 제대로 �
 
 1. [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인합니다.
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;을 클릭합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**&#x200B;을 선택합니다.
 1. 이미지 서버 게시 페이지의 맨 위에 있는 **[!UICONTROL 게시 컨텍스트]** 드롭다운 메뉴에서 **[!UICONTROL 이미지 제공]**&#x200B;을 선택합니다.
 
 1. 동일한 이미지 서버 게시 페이지에서 **[!UICONTROL 요청 속성]** 제목을 찾습니다.
@@ -65,9 +65,9 @@ Adobe Experience Manager 내에서 파노라마 이미지 뷰어가 제대로 �
 
    이러한 설정은 Experience Manager에서 `Panoramic Media` WCM 구성 요소를 사용하는 데 필요합니다.
 
-1. 이미지 서버 게시 페이지 하단의 왼쪽의 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+1. [이미지 서버 게시] 페이지 하단의 왼쪽에 있는 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-1. 오른쪽 아래 모서리에서 **[!UICONTROL 닫기]**&#x200B;를 클릭합니다.
+1. 오른쪽 아래 모서리에서 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.
 
 ### 파노라마 미디어 WCM 구성 요소 문제 해결 {#troubleshooting-the-panoramic-media-wcm-component}
 
