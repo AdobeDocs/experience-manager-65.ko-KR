@@ -6,14 +6,14 @@ docset: aem65
 feature: 3D 자산
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 11%
+source-wordcount: '555'
+ht-degree: 10%
 
 ---
 
-# Adobe Experience Manager에서 3D 자산 미리 보기{#previewing-3d-assets-aem}
+# Adobe Experience Manager에서 3D 자산 미리 보기 {#previewing-3d-assets-aem}
 
 Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전달 및 대화형 미리 보기를 지원합니다.
 
@@ -31,8 +31,8 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
 | GLTF | GL 전송 형식 | model/gltf+json | 아래의 **참고**&#x200B;를 참조하십시오. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
 | STL | 입체광조형 | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | 수집만 지원미리 보기를 사용할 수 없습니다. |
-| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | 수집만 지원미리 보기를 사용할 수 없습니다. |
+| DN | Adobe Dimension | model/x-adobe-dn | 수집만 지원 미리 보기를 사용할 수 없습니다. |
+| USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | 수집만 지원 미리 보기를 사용할 수 없습니다. |
 
 >[!NOTE]
 >
@@ -55,16 +55,16 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
 
 1. 3D 자산을 Experience Manager에 업로드했는지 확인합니다.
 [3D 미리 보기](#supported-3d-previewing-assets) 및 [자산 업로드](/help/assets/manage-assets.md#uploading-assets)에 대해 지원되는 형식을 참조하십시오.
-1. Experience Manager의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산 > 파일]**&#x200B;을 탭합니다.
+1. Experience Manager의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**&#x200B;을 선택합니다.
 
    ![탐색 페이지](/help/assets/assets-dm/navigation-assets.png)
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 보기 드롭다운 목록에서 **[!UICONTROL 카드 보기]**&#x200B;를 탭한 다음, 미리 보려는 3D 자산으로 이동합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 보기 드롭다운 목록에서 **[!UICONTROL 카드 보기]**&#x200B;를 선택한 다음, 미리 보려는 3D 자산으로 이동합니다.
 
    ![3D 카드 선택](/help/assets/assets-dm/3d-card-select.png)
-   _카드 보기에서 미리 보려는 3D 자산의 카드를 탭합니다._
+   _카드 보기에서 미리 보려는 3D 자산의 카드를 선택합니다._
 
-1. 3D 자산의 카드를 탭합니다.
+1. 3D 자산의 카드를 선택합니다.
 
    ![대화형 3D 미리 보기](/help/assets/assets-dm/3d-preview.png)
    _자산 세부 사항 보기 페이지에서 3D 자산의 대화형 미리 보기._
@@ -76,7 +76,7 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
    | **카메라 팬** | 왼쪽, 오른쪽, 위 또는 아래로 뷰를 패닝합니다. | 마우스 오른쪽 단추 클릭 + 드래그. | 두 손가락으로 누르기 + 드래그. |
    | **카메라 확대/축소** | 3D 장면의 영역 내외로 이동합니다. | 스크롤 휠입니다. | 두 손가락에 끼어요 |
    | **카메라 다시 입력** | 3D 장면에서 개체의 한 지점으로 카메라를 다시 입력합니다. | 두 번 클릭. | 두 번 탭하세요. |
-   | **재설정** | 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 탭하여 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정을 수행하면 카메라가 더 가깝거나 더 멀게 이동되어 자산이 전체적으로 적절한 보기 크기로 표시됩니다. |  |  |
-   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 탭합니다. |  |  |
+   | **재설정** | 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 선택하여 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정을 수행하면 카메라가 더 가깝거나 더 멀게 이동되어 자산이 전체적으로 적절한 보기 크기로 표시됩니다. |  |  |
+   | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |  |  |
 
-1. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL Close]**&#x200B;를 누릅니다.
+1. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.
