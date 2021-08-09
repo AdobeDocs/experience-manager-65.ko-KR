@@ -6,9 +6,9 @@ seo-description: AEM에 대해 지원되는 클라이언트 및 서버 플랫폼
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 5ce72a51d69e97d7e07e9f734bfd7547fccd51f1
+source-git-commit: 0f0dfe8af5feed5227a091b89d65ef58d71eb299
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3266'
 ht-degree: 1%
 
 ---
@@ -63,11 +63,11 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
    <td>설명<br /> </td>
   </tr>
   <tr>
-   <td><strong>A:지원됨</strong></td>
+   <td><strong>A: 지원됨</strong></td>
    <td>Adobe은 이 구성에 대한 모든 지원 및 유지 관리를 제공합니다. 이 구성은 Adobe의 품질 보증 프로세스에서 다룹니다.</td>
   </tr>
   <tr>
-   <td><strong>R:제한된 지원</strong></td>
+   <td><strong>R: 제한된 지원</strong></td>
    <td>고객이 프로젝트를 성공적으로 수행할 수 있도록 하기 위해 Adobe은 제한된 지원 프로그램 내에서 특정 조건을 충족해야 합니다. R 수준 지원은 공식 고객 요청과 Adobe 확인을 필요로 합니다. 자세한 내용은 Adobe 고객 지원 센터에 문의하십시오.</td>
   </tr>
  </tbody>
@@ -77,7 +77,7 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 
 | 지원 수준 | 설명 |
 |---|---|
-| **Z:지원되지 않음** | 구성이 지원되지 않습니다. Adobe은 구성 작동 여부에 대한 설명을 만들지 않으며 구성을 지원하지 않습니다. |
+| **Z: 지원되지 않음** | 구성이 지원되지 않습니다. Adobe은 구성 작동 여부에 대한 설명을 만들지 않으며 구성을 지원하지 않습니다. |
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
@@ -99,65 +99,65 @@ Adobe Experience Manager은 다음 버전의 Java Virtual Machine을 사용하�
   </tr>
   <tr>
    <td>아줄 줄루 오픈JDK 11 - 64비트</td>
-   <td>A:지원되는 [1]</td>
+   <td>A: 지원되는 [1]</td>
   </tr>
   <tr>
    <td>아줄 줄루 오픈JDK 8 - 64비트</td>
-   <td>A:지원되는 [1]</td>
+   <td>A: 지원되는 [1]</td>
   </tr>
   <tr>
    <td>Oracle Java SE 11 JDK - 64비트</td>
-   <td>A:지원되는 [2]</td>
+   <td>A: 지원되는 [2]</td>
   </tr>
   <tr>
    <td>Oracle Java SE 10 JDK</td>
-   <td>Z:지원되지 않음 [2]</td>
+   <td>Z: 지원되지 않음 [2]</td>
   </tr>
   <tr>
    <td>Oracle Java SE 9 JDK</td>
-   <td>Z:지원되지 않음 [2]</td>
+   <td>Z: 지원되지 않음 [2]</td>
   </tr>
   <tr>
    <td>Oracle Java SE 8 JDK - 64비트</td>
-   <td>A:지원되는 [2]</td>
+   <td>A: 지원되는 [2]</td>
   </tr>
   <tr>
    <td>IBM J9 VM - 빌드 2.9, JRE 1.8.0</td>
-   <td>A:지원되는 [3]</td>
+   <td>A: 지원되는 [3]</td>
   </tr>
   <tr>
    <td>IBM J9 VM - 빌드 2.8, JRE 1.8.0</td>
-   <td>A:지원되는 [3]</td>
+   <td>A: 지원되는 [3]</td>
   </tr>
  </tbody>
 </table>
 
-1. AEM 6.5 SP9 반응부터 OpenJDK의 Azul Zulu 빌드를 사용하는 모든 AEM 고객을 위해 LTS 릴리스의 모든 유지보수 업데이트를 포함하여 OpenJDK의 Azul Zulu 빌드의 지원 및 배포가 Adobe에서 직접 지원됩니다. AEM Forms Java EE용 AEM 6.5 SP10. 자세한 내용은 [Adobe Experience Manager에 대한 Azul Java 지원](assets/adobe-azul-openjdk-license-agreement.pdf)을 참조하십시오.
+1. AEM 6.5 SP9 반응부터 OpenJDK의 Azul Zulu 빌드를 사용하는 모든 AEM 고객을 위해 LTS 릴리스의 모든 유지보수 업데이트를 포함하여 OpenJDK의 Azul Zulu 빌드의 지원 및 배포가 Adobe에서 직접 지원됩니다. 자세한 내용은 [Adobe Experience Manager에 대한 Azul Java 지원](assets/adobe-azul-openjdk-license-agreement.pdf)을 참조하십시오.
 
 1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle의 비 LTS 릴리스입니다( [Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html) 참조). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다. 공개 업데이트 종료 이후 릴리스의 모든 유지 관리 업데이트를 포함하여 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술 **을 사용하는 모든 AEM 고객을 위해 2022년 12월까지 Adobe에서 직접 지원합니다**. 자세한 내용은 [Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf)에 대한 Java 지원 Oracle 를 참조하십시오.
 
 1. IBM JRE는 WebSphere Application Server에서만 지원됩니다.
 
 
-### 저장소 및 지속성 {#storage-persistence}
+### 스토리지 및 지속성 {#storage-persistence}
 
 Adobe Experience Manager 리포지토리를 배포하는 다양한 옵션이 있습니다. 지원되는 기술 및 스토리지 옵션에 대해서는 다음 목록을 참조하십시오.
 
 | **플랫폼** | **설명** | **지원 수준** |
 |---|---|---|
-| **TAR 파일이 있는 파일 시스템** `[1]` | 저장소 | A:지원됨 |
-| **데이터 저장소가 있는 파일 시스템** `[1]` | 바이너리 | A:지원됨 |
-| 파일 시스템 `[1]`에 TAR 파일에 바이너리 저장 | 바이너리 | Z:프로덕션에서 지원되지 않음 |
-| Amazon S3 | 바이너리 | A:지원됨 |
-| Microsoft Azure Blob 저장소 | 바이너리 | A:지원됨 |
-| MongoDB Enterprise 4.0 | 저장소 | A:지원되는 `[2, 3]` |
-| MongoDB Enterprise 3.6 | 저장소 | Z:지원되지 않음 |
-| MongoDB Enterprise 3.4 | 저장소 | Z:지원되지 않음 |
-| IBM DB2 10.5 | 저장소 및 Forms 데이터베이스 | R:제한된 지원 `[4]` |
-| Oracle 데이터베이스 12c(12.1.x) | 저장소 및 Forms 데이터베이스 | R:제한된 지원 |
-| Microsoft SQL Server 2016 | Forms 데이터베이스 | A:지원됨 |
-| **Apache Lucene(Quickstart 기본 제공)** | 검색 서비스 | A:지원됨 |
-| Apache 솔루션 | 검색 서비스 | A:지원됨 |
+| **TAR 파일이 있는 파일 시스템** `[1]` | 저장소 | A: 지원됨 |
+| **데이터 저장소가 있는 파일 시스템** `[1]` | 바이너리 | A: 지원됨 |
+| 파일 시스템 `[1]`에 TAR 파일에 바이너리 저장 | 바이너리 | Z: 프로덕션에서 지원되지 않음 |
+| Amazon S3 | 바이너리 | A: 지원됨 |
+| Microsoft Azure Blob 저장소 | 바이너리 | A: 지원됨 |
+| MongoDB Enterprise 4.0 | 저장소 | A: 지원되는 `[2, 3]` |
+| MongoDB Enterprise 3.6 | 저장소 | Z: 지원되지 않음 |
+| MongoDB Enterprise 3.4 | 저장소 | Z: 지원되지 않음 |
+| IBM DB2 10.5 | 저장소 및 Forms 데이터베이스 | R: 제한된 지원 `[4]` |
+| Oracle 데이터베이스 12c(12.1.x) | 저장소 및 Forms 데이터베이스 | R: 제한된 지원 |
+| Microsoft SQL Server 2016 | Forms 데이터베이스 | A: 지원됨 |
+| **Apache Lucene(Quickstart 기본 제공)** | 검색 서비스 | A: 지원됨 |
+| Apache 솔루션 | 검색 서비스 | A: 지원됨 |
 
 1. &#39;파일 시스템&#39;에는 POSIX 호환 블록 저장소가 포함됩니다. 여기에는 네트워크 스토리지 기술이 포함됩니다. 파일 시스템 성능은 다를 수 있으며 전체 성능에 영향을 줄 수 있습니다. 네트워크/원격 파일 시스템과 함께 테스트 AEM을 로드하는 것이 좋습니다.
 1. MongoDB 공유는 AEM에서 지원되지 않습니다.
@@ -190,7 +190,7 @@ Adobe Experience Manager 리포지토리를 배포하는 다양한 옵션이 있
 >
 >**대부분의 관계형 데이터베이스는 현재 AEM 6.5의 Level-R 내에서 지원되며, 위의 Level-R 설명에 명시된 지원 기준 및 지원 프로그램과 함께 제공됩니다.**
 
-### 서블릿 엔진/응용 프로그램 서버 {#servlet-engines-application-servers}
+### 서블릿 엔진/애플리케이션 서버 {#servlet-engines-application-servers}
 
 Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)나 타사 애플리케이션 서버(WAR 파일)에서 웹 애플리케이션으로 실행할 수 있습니다.
 
@@ -198,14 +198,14 @@ Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)나 타사 �
 
 | 플랫폼 | 지원 수준 |
 |---|---|
-| **빠른 시작 내장 서블릿 엔진(Jetty 9.4)** | A:지원됨 |
-| Oracle WebLogic Server 12.2(12cR2) | Z:지원되지 않음 |
-| IBM WebSphere Application Server Continuous Delivery(LibertyProfile)(웹 프로필 7.0 및 IBM JRE 1.8 포함) | R:신규 계약에 대한 제한된 지원 `[2]` |
-| IBM WebSphere Application Server 9.0 및 IBM JRE 1.8 | R:새 계약에 대한 제한된 지원 `[1]` `[2]` |
-| Apache Tomcat 8.5.x | R:신규 계약에 대한 제한된 지원 `[2]` |
-| JBoss 애플리케이션 서버를 사용하는 JBoss EAP 7.2.x | Z:지원되지 않음 |
-| JBoss 애플리케이션 서버를 사용하는 JBoss EAP 7.1.4 | R:새 계약에 대한 제한된 지원 `[1]` `[2]` |
-| JBoss Application Server가 포함된 JBoss EAP 7.0.x | Z:지원되지 않음 |
+| **빠른 시작 내장 서블릿 엔진(Jetty 9.4)** | A: 지원됨 |
+| Oracle WebLogic Server 12.2(12cR2) | Z: 지원되지 않음 |
+| IBM WebSphere Application Server Continuous Delivery(LibertyProfile)(웹 프로필 7.0 및 IBM JRE 1.8 포함) | R: 신규 계약에 대한 제한된 지원 `[2]` |
+| IBM WebSphere Application Server 9.0 및 IBM JRE 1.8 | R: 새 계약에 대한 제한된 지원 `[1]` `[2]` |
+| Apache Tomcat 8.5.x | R: 신규 계약에 대한 제한된 지원 `[2]` |
+| JBoss 애플리케이션 서버를 사용하는 JBoss EAP 7.2.x | Z: 지원되지 않음 |
+| JBoss 애플리케이션 서버를 사용하는 JBoss EAP 7.1.4 | R: 새 계약에 대한 제한된 지원 `[1]` `[2]` |
+| JBoss Application Server가 포함된 JBoss EAP 7.0.x | Z: 지원되지 않음 |
 
 1. AEM Forms을 사용한 배포에 권장됩니다.
 1. 애플리케이션 서버에 대한 AEM 6.5 배포를 시작하면 제한된 지원으로 이동합니다. 기존 고객은 AEM 6.5로 업그레이드하고 애플리케이션 서버를 계속 사용할 수 있습니다. 신규 고객의 경우 위의 수준-R 설명에 나와 있는 지원 기준과 지원 프로그램을 함께 제공합니다.
@@ -216,14 +216,14 @@ Adobe Experience Manager은 프로덕션 환경에 대해 다음 서버 플랫�
 
 | **플랫폼** | **지원 수준** |
 |---|---|
-| **Red Hat 배포 기반 Linux** | A:지원되는 `[1]` `[3]` |
-| Debian 배포 incl 기반 Linux. 우분투 | A:지원되는 `[2]` |
-| Linux, SUSE 배포 기반 | A:지원됨 |
-| Microsoft Windows Server 2019 `[4]` | R:신규 계약에 대한 제한된 지원 |
-| Microsoft Windows Server 2016 `[4]` | R:신규 계약에 대한 제한된 지원 `[5]` |
-| Microsoft Windows Server 2012 R2 | Z:지원되지 않음 |
-| Oracle Solaris 11 | Z:지원되지 않음 |
-| IBM AIX 7.2 | Z:지원되지 않음 |
+| **Red Hat 배포 기반 Linux** | A: 지원되는 `[1]` `[3]` |
+| Debian 배포 incl 기반 Linux. 우분투 | A: 지원되는 `[2]` |
+| Linux, SUSE 배포 기반 | A: 지원됨 |
+| Microsoft Windows Server 2019 `[4]` | R: 신규 계약에 대한 제한된 지원 |
+| Microsoft Windows Server 2016 `[4]` | R: 신규 계약에 대한 제한된 지원 `[5]` |
+| Microsoft Windows Server 2012 R2 | Z: 지원되지 않음 |
+| Oracle Solaris 11 | Z: 지원되지 않음 |
+| IBM AIX 7.2 | Z: 지원되지 않음 |
 
 1. Linux Kernel 2.6, 3.x 및 4.x에는 Red Hat Enterprise Linux, CentOS, Oracle Linux 및 Amazon Linux를 포함한 Red Hat 배포의 파생물이 포함되어 있습니다. AEM Forms 추가 기능 기능은 CentOS 7 및 Red Hat Enterprise Linux 7에서만 지원됩니다.
 1. AEM Forms은 Ubuntu 16.04 LTS에서만 지원됩니다
@@ -249,20 +249,20 @@ Dispatcher는 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispat
 
 | 플랫폼 | 지원 수준 |
 |---|---|
-| **Apache httpd 2.4.x** `[1,2]` | A:지원됨 |
-| Microsoft IIS 10(인터넷 정보 서버) | A:지원됨 |
-| Microsoft IIS 8.5(인터넷 정보 서버) | Z:지원되지 않음 |
+| **Apache httpd 2.4.x** `[1,2]` | A: 지원됨 |
+| Microsoft IIS 10(인터넷 정보 서버) | A: 지원됨 |
+| Microsoft IIS 8.5(인터넷 정보 서버) | Z: 지원되지 않음 |
 
 1. Apache httpd 소스 코드를 기반으로 구축된 웹 서버는 httpd가 기반으로 하는 버전과 동일한 지원 수준을 갖게 됩니다. 확실하지 않은 경우 Adobe에게 각 서버 제품과 관련된 지원 수준을 확인하도록 요청하십시오. 다음과 같은 경우:
 
    1. HTTP 서버는 공식 Apache 소스 배포만 사용하여 구축되었습니다. 또는
-   1. HTTP 서버가 실행 중인 운영 체제의 일부로 전달되었습니다. 예:IBM HTTP Server, Oracle HTTP Server
+   1. HTTP 서버가 실행 중인 운영 체제의 일부로 전달되었습니다. 예: IBM HTTP Server, Oracle HTTP Server
 
 1. Windows 운영 체제용 Apache 2.4.x에는 Dispatcher를 사용할 수 없습니다.
 
 ## 지원되는 클라이언트 플랫폼 {#supported-client-platforms}
 
-### 사용자 인터페이스 작성에 지원되는 브라우저 {#supported-browsers-for-authoring-user-interface}
+### 사용자 인터페이스 작성을 위해 지원되는 브라우저 {#supported-browsers-for-authoring-user-interface}
 
 Adobe Experience Manager 사용자 인터페이스는 다음 클라이언트 플랫폼에서 작동합니다. 모든 브라우저는 기본 플러그인 및 추가 기능으로 테스트됩니다.
 
@@ -283,48 +283,48 @@ AEM 사용자 인터페이스는 더 큰 화면(일반적으로 노트북 및 �
   </tr>
   <tr>
    <td><strong>Google Chrome(Evergreen)</strong></td>
-   <td>A:지원됨</td>
-   <td>A:지원됨</td>
+   <td>A: 지원됨</td>
+   <td>A: 지원됨</td>
   </tr>
   <tr>
    <td>Microsoft Edge(에버그린)</td>
-   <td>A:지원됨</td>
-   <td>A:지원됨</td>
+   <td>A: 지원됨</td>
+   <td>A: 지원됨</td>
   </tr>
   <tr>
    <td>Microsoft Internet Explorer 11</td>
-   <td>Z:지원되지 않음</td>
-   <td>Z:지원되지 않음</td>
+   <td>Z: 지원되지 않음</td>
+   <td>Z: 지원되지 않음</td>
   </tr>
   <tr>
    <td>Mozilla Firefox(Evergreen)</td>
-   <td>A:지원됨</td>
-   <td>A:지원됨</td>
+   <td>A: 지원됨</td>
+   <td>A: 지원됨</td>
   </tr>
   <tr>
    <td>Mozilla Firefox 마지막 ESR [1]</td>
-   <td>A:지원됨</td>
-   <td>A:지원됨</td>
+   <td>A: 지원됨</td>
+   <td>A: 지원됨</td>
   </tr>
   <tr>
    <td>macOS용 Apple Safari(에버그린)</td>
-   <td>A:지원됨</td>
-   <td>A:지원됨</td>
+   <td>A: 지원됨</td>
+   <td>A: 지원됨</td>
   </tr>
   <tr>
    <td>macOS용 Apple Safari 11.x</td>
-   <td>Z:지원되지 않음</td>
-   <td>Z:지원되지 않음</td>
+   <td>Z: 지원되지 않음</td>
+   <td>Z: 지원되지 않음</td>
   </tr>
   <tr>
    <td>iOS 12.x의 Apple Safari</td>
-   <td>A:지원되는 [2]</td>
-   <td>Z:지원되지 않음</td>
+   <td>A: 지원되는 [2]</td>
+   <td>Z: 지원되지 않음</td>
   </tr>
   <tr>
    <td>iOS 11.x의 Apple Safari</td>
-   <td>Z:지원되지 않음</td>
-   <td>Z:지원되지 않음</td>
+   <td>Z: 지원되지 않음</td>
+   <td>Z: 지원되지 않음</td>
   </tr>
  </tbody>
 </table>
@@ -350,7 +350,7 @@ Microsoft Windows 7+와 SSL을 통해 보안되지 않은 AEM 인스턴스에 �
 
 Windows에서 WebDav 클라이언트의 응답성을 향상시키려면 [Microsoft 지원 KB 2445570](https://support.microsoft.com/kb/2445570)을 참조하십시오.
 
-## 추가 플랫폼 노트 {#additional-platform-notes}
+## 추가 플랫폼 정보 {#additional-platform-notes}
 
 이 섹션에서는 Adobe Experience Manager 및 해당 추가 기능 실행에 대한 특수 노트 및 자세한 정보를 제공합니다.
 
@@ -382,9 +382,9 @@ Dynamic Media이 활성화되면 다음과 같은 추가 기술 요구 사항이
 
 >[!NOTE]
 >
->이러한 시스템 요구 사항 **은 Dynamic Media - Hybrid 모드를 사용하는 경우에만 적용됩니다.Dynamic Media - 하이브리드 모드에서는 특정 운영 체제에서만 인증되는 내장 이미지 서버가 있습니다.**
+>이러한 시스템 요구 사항 **은 Dynamic Media - Hybrid 모드를 사용하는 경우에만 적용됩니다. Dynamic Media - 하이브리드 모드에서는 특정 운영 체제에서만 인증되는 내장 이미지 서버가 있습니다.**
 >
->Dynamic Media - Scene7 모드(즉, **dynamicmedia_scene7** 실행 모드)를 실행하는 Dynamic Media 고객의 경우 추가적인 시스템 요구 사항이 없습니다.AEM과 동일한 시스템 요구 사항만 해당됩니다. Dynamic Media - Scene7 모드 아키텍처는 AEM에 포함된 서비스가 아니라 클라우드 기반 이미지 서비스를 사용합니다.
+>Dynamic Media - Scene7 모드(즉, **dynamicmedia_scene7** 실행 모드)를 실행하는 Dynamic Media 고객의 경우 추가적인 시스템 요구 사항이 없습니다. AEM과 동일한 시스템 요구 사항만 해당됩니다. Dynamic Media - Scene7 모드 아키텍처는 AEM에 포함된 서비스가 아니라 클라우드 기반 이미지 서비스를 사용합니다.
 
 #### 하드웨어 {#hardware}
 
@@ -510,7 +510,7 @@ Windows x86의 경우:
 
 
 
-### AEM Forms 디자이너에 대한 요구 사항 {#requirements-for-aem-forms-designer}
+### AEM Forms 디자이너 요구 사항 {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server 또는 Microsoft® Windows® 10
 * PAE, NX 및 SSE2를 지원하는 1GHz 이상의 프로세서
@@ -534,8 +534,8 @@ XMP Write-back은 다음 플랫폼 및 파일 형식에 대해 지원되고 활�
    * Windows Server
    * Mac OS X(64비트)
 
-* **파일 형식**:JPEG, PNG, TIFF, PDF, INDD, AI 및 EPS.
+* **파일 형식**: JPEG, PNG, TIFF, PDF, INDD, AI 및 EPS.
 
 ### Linux에서 메타데이터가 많은 자산을 처리하는 AEM Assets 요구 사항 {#assetsonlinux}
 
-XMPFilesProcessor 프로세스를 사용하려면 라이브러리 GLIBC_2.14가 필요합니다. Linux 커널 버전 3.1.x와 같이 GLIBC_2.14가 포함된 Linux 커널을 사용합니다.PSD 파일과 같은 대량의 메타데이터가 포함된 자산을 처리하는 성능이 향상됩니다. 이전 버전의 GLIBC를 사용하면 `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`으로 시작하는 로그에 오류가 발생합니다.
+XMPFilesProcessor 프로세스를 사용하려면 라이브러리 GLIBC_2.14가 필요합니다. Linux 커널 버전 3.1.x와 같이 GLIBC_2.14가 포함된 Linux 커널을 사용합니다. PSD 파일과 같은 대량의 메타데이터가 포함된 자산을 처리하는 성능이 향상됩니다. 이전 버전의 GLIBC를 사용하면 `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`으로 시작하는 로그에 오류가 발생합니다.
