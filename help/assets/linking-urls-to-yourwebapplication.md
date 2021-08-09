@@ -10,9 +10,9 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: 구성
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1277'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 웹 사이트 및 애플리케이션이 URL 호출을 통해 Dynamic Media 서비스에 액세스합니다. 자산을 게시하면 Dynamic Media에서 자산을 참조하는 URL 문자열을 활성화합니다. 이러한 URL을 테스트하기 위해 웹 브라우저에 붙여넣을 수 있습니다.
 
-AEM을 WCM으로 사용하지 *않고*&#x200B;인 경우에만 URL에 연결합니다. 연결 대 포함 - 비디오 플레이어를 팝업 또는 모달 창으로 전달하려는 경우 사용됩니다. AEM을 WCM으로 사용하는 경우 [자산을 페이지에 직접 추가합니다](adding-dynamic-media-assets-to-pages.md).
+Experience Manager을 WCM으로 사용하지 *않고*&#x200B;인 경우에만 URL에 연결합니다. 연결 - 대 포함 - 비디오 플레이어를 팝업 또는 모달 창으로 전달하려는 경우 사용됩니다. Experience Manager을 WCM으로 사용하는 경우 [자산을 페이지에 직접 추가합니다](adding-dynamic-media-assets-to-pages.md).
 
 웹 페이지 및 애플리케이션에 이러한 URL 문자열을 배치하려면 Dynamic Media에서 복사합니다.
 
@@ -69,7 +69,7 @@ URL 문자열을 가져오는 방법은 여러 가지가 있습니다. 그러나
 
    * 이미지를 선택한 경우 드롭다운 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 누릅니다.
 
-      **[!UICONTROL Dynamic]** 제목 아래에서 사전 설정 이름을 탭하여 오른쪽 프레임에서 해당 변환을 확인합니다. 동적 제목을 보려면 표현물 목록을 스크롤해야 할 수 있습니다.
+      **[!UICONTROL Dynamic]** 제목 아래에서 사전 설정 이름을 탭하여 오른쪽 프레임에서 해당 변환을 확인합니다. 필요한 경우 표현물 목록을 스크롤하여 동적 제목을 확인합니다.
 
       왼쪽 레일 하단에서 **[!UICONTROL URL]**&#x200B;을 탭합니다.
 
@@ -83,7 +83,7 @@ URL 문자열을 가져오는 방법은 여러 가지가 있습니다. 그러나
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. 텍스트를 선택하고 웹 브라우저에 복사하여 자산을 미리 보거나 웹 컨텐츠 페이지에 추가합니다.
+1. 자산을 미리 보거나 웹 컨텐츠 페이지에 추가할 수 있도록 텍스트를 선택하여 웹 브라우저에 복사합니다.
 
    URL 창을 종료하려면 **[!UICONTROL X]**&#x200B;을 탭하거나 **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
 
@@ -123,32 +123,32 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
 ## 게시된 비디오 표현물에 대한 비디오 URL 가져오기 {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
 1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 머리글로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 탭합니다.
 1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성 이름을 탭합니다.
 
-1. **[!UICONTROL Dynamic Media 클라우드 설정]** 페이지의 **[!UICONTROL 비디오 서비스 URL]**&#x200B;에서 전체 URL 경로를 복사합니다. 복사한 URL 경로가 단계의 후반부에 필요합니다.
+1. **[!UICONTROL Dynamic Media 클라우드 설정]** 페이지의 **[!UICONTROL 비디오 서비스 URL]**&#x200B;에서 전체 URL 경로를 복사합니다. 복사한 URL 경로를 단계의 후반부에 입력해야 합니다.
 
    예를 들어 URL 경로는 다음과 유사할 수 있습니다.
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (위 경로는 그림 용도로만 사용됩니다.)복사한 실제 경로가 아닙니다.)
+   (위의 경로는 예만 해당됩니다. 복사한 실제 경로가 아닙니다.)
 
 1. **[!UICONTROL 등록 ID]**&#x200B;에서 ID의 마지막 부분에 있는 고객 이름을 복사합니다.
 
    예를 들어 등록 ID가 `87654321|MyCompany`인 경우 고객 이름은 `MyCompany`입니다.
 
 1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL Cloud Services]**&#x200B;을 탭한 다음 Experience Manager 로고를 탭하고 **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
-1. JCR(Java Content Repository)에서 전체 비디오 변환 경로를 복사합니다.
+1. JCR(Java™ Content Repository)에서 전체 비디오 표현물 경로를 복사합니다.
 
    예를 들어 비디오의 변환 경로는 다음과 유사할 수 있습니다.
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (위 경로는 그림 용도로만 사용됩니다.)복사한 실제 경로가 아닙니다.)
+   (위의 경로는 예만 해당됩니다. 복사한 실제 경로가 아닙니다.)
 
-1. 복사된 정보를 다음 순서로 정렬하여 전체 URL 경로를 형성합니다.
+1. 복사한 정보를 전체 URL 경로를 형성하도록 다음 순서로 배열합니다.
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -156,11 +156,11 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
-   게시된 비디오 표현물에 대한 전체 비디오 URL입니다.
+   이 예는 게시된 비디오 표현물을 위한 전체 비디오 URL입니다.
 
 ## 적응형 스트리밍(HLS)을 위한 비디오 URL 가져오기 {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. AEM에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
 1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 머리글로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 탭합니다.
 1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성 이름을 탭합니다.
 1. **[!UICONTROL Dynamic Media Cloud Services 설정]** 페이지에서 다음을 수행합니다.
@@ -169,9 +169,9 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (위 경로는 그림 용도로만 사용됩니다.)복사한 실제 경로가 아닙니다.)
+   (위의 경로는 예만 해당됩니다. 복사한 실제 경로가 아닙니다.)
 
-   * **[!UICONTROL 등록 ID]**&#x200B;에서 ID의 마지막 부분에 있는 고객 이름을 복사합니다. 이 단계에서 나중에 복사된 고객 이름이 필요합니다.
+   * **[!UICONTROL 등록 ID]**&#x200B;에서 ID의 마지막 부분에 있는 고객 이름을 복사합니다. 이 단계의 후반부에 복사된 고객 이름이 필요합니다.
 
       예를 들어 등록 ID가 `87654321|demoCo`이면 복사하는 고객 이름은 `demoCo`입니다.
 
@@ -183,7 +183,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
    | HTTP <br> HTTP(비보안 비디오 게재)를 사용하는 경우 이전에 복사한 비디오 서비스 URL 값에서 https를 http로 변경해야 합니다. | `public/` |
    | HTTPS | `public-ssl/` |
 
-1. Dynamic Media에서 처리한 대로 AEM의 전체 비디오 자산 경로를 복사합니다. 이 복사한 비디오 자산 경로가 이 단계의 후반부에 필요합니다.
+1. Dynamic Media에서 처리한 대로 Experience Manager의 전체 비디오 자산 경로를 복사합니다. 이 복사한 비디오 자산 경로가 이 단계의 후반부에 필요합니다.
 
    예:
 
