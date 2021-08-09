@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 이미지 사전 설정 관리
-description: Dynamic Media 이미지 사전 설정을 이해하고 이미지 사전 설정을 만들고, 수정하고, 관리하는 방법을 알아봅니다
+description: Dynamic Media 이미지 사전 설정을 이해하고 이미지 사전 설정을 만들고, 수정하고, 관리하는 방법을 알아봅니다.
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 mini-toc-levels: 3
 contentOwner: Rick Brough
@@ -13,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: 이미지 사전 설정
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3843'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 2%
 >
 >Dynamic Media - Scene7 모드에서 이미지 사전 설정은 이미지 자산에 대해서만 지원됩니다.
 
-두 개의 이미지 사전 설정을 만들 수 있습니다.데스크탑 버전의 경우 500 x 500 픽셀과 모바일 버전의 경우 150 x 150 픽셀이 포함된 픽셀 이미지를 500x500픽셀로 표시하기 위해 `Enlarge`라는 두 개의 이미지 사전 설정을 만들고, 이미지를 150 x 150픽셀로 표시하기 위해 `Thumbnail`라는 사전 설정을 만듭니다. `Enlarge` 및 `Thumbnail` 크기로 이미지를 전달하려면 Experience Manager이 이미지 사전 설정 확대 및 축소판 이미지 사전 설정의 정의를 확인합니다. 그런 다음 Experience Manager은 각 이미지 사전 설정의 크기 및 형식 지정 사양에 따라 이미지를 동적으로 생성합니다.
+두 개의 이미지 사전 설정을 만들 수 있습니다. 데스크탑 버전의 경우 500 x 500 픽셀과 모바일 버전의 경우 150 x 150 픽셀이 포함된 픽셀 이미지를 500x500픽셀로 표시하기 위해 `Enlarge`라는 두 개의 이미지 사전 설정을 만들고, 이미지를 150 x 150픽셀로 표시하기 위해 `Thumbnail`라는 사전 설정을 만듭니다. `Enlarge` 및 `Thumbnail` 크기로 이미지를 전달하려면 Experience Manager이 이미지 사전 설정 확대 및 축소판 이미지 사전 설정의 정의를 확인합니다. 그런 다음 Experience Manager은 각 이미지 사전 설정의 크기 및 형식 지정 사양에 따라 이미지를 동적으로 생성합니다.
 
 동적으로 전달될 때 크기가 줄어든 이미지는 선명도와 세부 사항을 잃을 수 있습니다. 이러한 이유로, 각 이미지 사전 설정에는 특정 크기로 전달될 때 이미지를 최적화하는 형식 지정 컨트롤이 포함되어 있습니다. 이러한 컨트롤을 사용하면 웹 사이트나 애플리케이션에 이미지가 전달될 때 이미지가 선명하고 명확하게 표시됩니다.
 
@@ -101,8 +101,8 @@ Dynamic Media을 사용하여 AI, EPS 또는 PDF 파일에 대한 동적 렌디�
 
 | **메타데이터 속성** | **설명** |
 |---|---|
-| dam:Physicalwidthinsites | 문서 너비(인치) |
-| dam:Physicalheight | 문서 높이(인치) |
+| `dam:Physicalwidthininches` | 문서 너비(인치) |
+| `dam:Physicalheightininches` | 문서 높이(인치) |
 
 `DAM Update Asset` 워크플로우를 통해 `Rasterize PDF/AI Image Preview Rendition` 프로세스 구성 요소 옵션에 액세스합니다.
 
@@ -181,7 +181,7 @@ ExtendScript은 [!UICONTROL DAM 자산 업데이트] 워크플로우의 미디�
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>예</td>
-   <td>각 페이지에 대해 300ppi JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 자산 아래에 저장된 실제 자산입니다. 또한 최적화되어 <code>DAM Update Asset</code> 워크플로우에 의해 PTIFF로 바뀝니다.<br /> </td>
+   <td>각 페이지에 대해 300PPI JPEG 하위 자산을 생성합니다. JPEG 하위 자산은 InDesign 자산 아래에 저장된 실제 자산입니다. 또한 최적화되어 <code>DAM Update Asset</code> 워크플로우에 의해 PTIFF로 바뀝니다.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -193,11 +193,11 @@ ExtendScript은 [!UICONTROL DAM 자산 업데이트] 워크플로우의 미디�
 
 ## 이미지 축소판 크기 구성 {#configuring-image-thumbnail-size}
 
-**[!UICONTROL DAM 자산 업데이트]** 워크플로우에서 이러한 설정을 구성하여 축소판의 크기를 구성할 수 있습니다. 워크플로우에서는 이미지 자산의 축소판 크기를 구성할 수 있는 두 가지 단계가 있습니다. 하나의 (**[!UICONTROL Dynamic Media Process Image Assets]**)는 동적 이미지 자산에 사용되고 다른 (**[!UICONTROL Process Thumbnail]**)은 정적 축소판 생성을 위해 사용되거나, 다른 모든 프로세스에서 축소판을 생성하지 못하는 경우 *모두 동일한 설정을 가져야 합니다.*
+**[!UICONTROL DAM 자산 업데이트]** 워크플로우에서 이러한 설정을 구성하여 축소판의 크기를 구성할 수 있습니다. 워크플로우에서는 이미지 자산의 축소판 크기를 구성할 수 있는 두 가지 단계가 있습니다. (**[!UICONTROL Dynamic Media Process Image Assets]**)는 동적 이미지 자산에 사용되고 (**[!UICONTROL Process Thumbnail]**)은 정적 축소판 생성을 위한 것이거나 다른 모든 프로세스가 축소판을 생성하지 못할 경우 *모두 동일한 설정을 가져야 합니다.*
 
 **[!UICONTROL Dynamic Media 이미지 자산 처리]** 단계에서는 이미지 서버에서 미리 보기가 생성되며 이 구성은 **[!UICONTROL 축소판 처리]** 단계에 적용되는 구성과 독립적입니다. **[!UICONTROL 축소판 처리]** 단계를 통해 축소판을 생성하는 것은 축소판을 만드는 가장 느리고 메모리 집약적인 방법입니다.
 
-축소판 크기 조절은 다음 형식으로 정의됩니다.**[!UICONTROL width:height:center]**(예: *80:80:false*) 너비와 높이는 축소판의 크기(픽셀 단위)를 결정합니다. 가운데 값은 false 또는 true이고, true로 설정하면 축소판 이미지의 크기가 구성에 지정된 크기와 정확히 일치함을 나타냅니다. 크기가 조정된 이미지가 더 작으면 축소판 안에 가운데에 표시됩니다.
+축소판 크기 조절은 다음 형식으로 정의됩니다. **[!UICONTROL width:height:center]**(예: `80:80:false`). 너비와 높이는 축소판의 크기(픽셀 단위)를 결정합니다. 가운데 값은 false 또는 true이고, true로 설정하면 축소판 이미지의 크기가 구성에 지정된 크기와 정확히 일치함을 나타냅니다. 크기가 조정된 이미지가 더 작으면 축소판 안에 가운데에 표시됩니다.
 
 >[!NOTE]
 >
@@ -301,11 +301,11 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 이미지 사전 설정을 만들거나 편집할 때 이 섹션에 설명된 옵션이 있습니다. 또한 Adobe은 다음과 같은 &quot;우수 사례&quot; 선택 사항을 시작할 것을 권장합니다.
 
-* **[!UICONTROL 형식]** (**** 기본 탭) - 요구  **** 사항에 맞는 JPEG 또는 다른 형식을 선택합니다. 모든 웹 브라우저는 JPEG 이미지 형식을 지원합니다.작은 파일 크기와 이미지 품질 간의 균형이 잘 유지됩니다. 그러나 JPEG 형식 이미지는 압축 설정이 너무 낮으면 원하지 않는 이미지 아티팩트를 가져올 수 있는 손실 압축 체계를 사용합니다. 이러한 이유로 Adobe은 압축 품질을 75로 설정할 것을 권장합니다. 이 설정은 이미지 품질과 작은 파일 크기 간의 균형을 잘 맞춥니다.
+* **[!UICONTROL 형식]** (**** 기본 탭) - 요구  **** 사항에 맞는 JPEG 또는 다른 형식을 선택합니다. 모든 웹 브라우저는 JPEG 이미지 형식을 지원합니다. 작은 파일 크기와 이미지 품질 간의 균형이 잘 유지됩니다. 그러나 JPEG 형식 이미지는 압축 설정이 너무 낮으면 원하지 않는 이미지 아티팩트를 가져올 수 있는 손실 압축 체계를 사용합니다. 이러한 이유로 Adobe은 압축 품질을 75로 설정할 것을 권장합니다. 이 설정은 이미지 품질과 작은 파일 크기 간의 균형을 잘 맞춥니다.
 
 * **[!UICONTROL 단순 선명도 사용]**  - [단순 선명도 사용]을 선택하지  **[!UICONTROL 마십시오]** (이 선명도 필터는 [언샵 마스킹 설정]보다 덜 제어함).
 
-* **[!UICONTROL 선명하게 하기:재샘플링 모드]**  -  **[!UICONTROL Bi-Cubic을 선택합니다]**.
+* **[!UICONTROL 선명하게 하기: 재샘플링 모드]**  -  **[!UICONTROL Bi-Cubic을 선택합니다]**.
 
 #### 기본 탭 옵션 {#basic-tab-options}
 
@@ -340,7 +340,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
      <li><strong>유형  </strong>-  <strong>적응형</strong> (기본값),  <strong>웹</strong> 또는  <strong>Macintosh</strong>를 선택합니다. <strong>알파</strong>가 있는 GIF를 선택하면 Macintosh 옵션을 사용할 수 없습니다.</li>
      <li><strong>디더</strong>  -  <strong></strong> 확산기 또는  <strong>끄기를 선택합니다</strong>.</li>
      <li><strong>색상 수  </strong>- 2부터 256까지의 숫자를 입력합니다.</li>
-     <li><strong>색상 목록</strong>  - 쉼표로 구분된 목록을 입력합니다. 예를 들어, 흰색, 회색 및 검정인 경우 000000,888888,ffff를 입력합니다.</li>
+     <li><strong>색상 목록</strong>  - 쉼표로 구분된 목록을 입력합니다. 예를 들어, 흰색, 회색 및 검정인 경우 <code>000000,888888,ffffff</code>을 입력합니다.</li>
     </ul>
     <div>
       선택
@@ -349,12 +349,12 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
      <strong>알파</strong>를 사용하는 TIFF는 다음 추가 옵션을 제공합니다.
     </div>
     <ul>
-     <li><strong>압축</strong>  - 압축 알고리즘을 선택합니다. PDF에 대한 알고리즘 옵션은 <strong>None</strong>, <strong>Zip</strong> 및 <strong>Jpeg</strong>입니다.TIFF의 경우 옵션은 <strong>없음</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> 및 <strong>Zip</strong>;입니다.및 알파의 TIFF는 <strong>없음</strong>, <strong>LZW</strong> 및 <strong>Zip</strong>입니다.</li>
+     <li><strong>압축</strong>  - 압축 알고리즘을 선택합니다. PDF에 대한 알고리즘 옵션은 <strong>None</strong>, <strong>Zip</strong> 및 <strong>Jpeg</strong>입니다. TIFF의 경우 옵션은 <strong>없음</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> 및 <strong>Zip</strong>;입니다. 및 알파의 TIFF는 <strong>없음</strong>, <strong>LZW</strong> 및 <strong>Zip</strong>입니다.</li>
     </ul> <p><strong>PNG</strong>, <strong>알파,</strong> 또는 <strong>EPS</strong>를 선택하면 추가 옵션이 없습니다.</p> </td>
   </tr>
   <tr>
    <td><strong>선명하게 하기</strong></td>
-   <td>모든 크기 조절이 수행된 후 이미지에 기본 선명도 필터를 적용하려면 <strong>단순 선명도 사용</strong> 옵션을 선택합니다.선명하게 하면 이미지를 다른 크기로 표시할 때 나타날 수 있는 흐림 효과를 보상하는 데 도움이 됩니다. </td>
+   <td>모든 크기 조절이 수행된 후 이미지에 기본 선명도 필터를 적용하려면 <strong>단순 선명도 사용</strong> 옵션을 선택합니다. 선명하게 하면 이미지를 다른 크기로 표시할 때 나타날 수 있는 흐림 효과를 보상하는 데 도움이 됩니다. </td>
   </tr>
  </tbody>
 </table>
@@ -403,7 +403,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
     </ul> <p><strong>언샵 마스크</strong>에는 다음 옵션이 있습니다.</p>
     <ul>
      <li><strong>금액</strong>  - 가장자리 픽셀에 적용되는 대비의 양을 제어합니다. 기본 실수 값은 1.0입니다. 고해상도 이미지의 경우 최대 5.0까지 늘릴 수 있습니다. [금액]을 필터 강도 측정에 대해 생각해 보십시오.</li>
-     <li><strong>반경</strong>  - 선명하게 하기에 영향을 주는 가장자리 픽셀을 둘러싸는 픽셀 수를 결정합니다. 고해상도 이미지의 경우 1부터 2까지의 실수를 입력합니다. 낮은 값은 가장자리 픽셀만 선명하게 합니다.값이 높을수록 더 넓은 범위의 픽셀이 선명해집니다. 올바른 값은 이미지의 크기에 따라 다릅니다.</li>
+     <li><strong>반경</strong>  - 선명하게 하기에 영향을 주는 가장자리 픽셀을 둘러싸는 픽셀 수를 결정합니다. 고해상도 이미지의 경우 1부터 2까지의 실수를 입력합니다. 낮은 값은 가장자리 픽셀만 선명하게 합니다. 값이 높을수록 더 넓은 범위의 픽셀이 선명해집니다. 올바른 값은 이미지의 크기에 따라 다릅니다.</li>
      <li><strong>임계값</strong>  - 언샵 마스크 필터가 적용될 때 무시할 대비 범위를 결정합니다. 즉, 이 옵션은 가장자리 픽셀로 간주되고 선명하게 되기 전에 선명하게 된 픽셀이 주변 영역과 얼마나 다른지를 결정합니다. 노이즈가 발생하지 않도록 하려면 2~20의 정수 값을 사용해 보십시오. </li>
      <li><strong>적용 대상</strong>  - 선명하게 하기 취소가 각 색상이나 밝기에 적용되는지 여부를 결정합니다.</li>
     </ul>
@@ -416,7 +416,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
    <td><strong>리샘플링 모드</strong></td>
    <td><strong>재샘플링 모드</strong> 옵션을 선택합니다. 이러한 옵션은 이미지를 다운샘플링할 때 이미지를 선명하게 합니다.
     <ul>
-     <li><strong>Bi-Linear</strong>  - 가장 빠른 재샘플링 방법입니다.일부 앨리어싱 가공물들은 눈에 띄습니다.</li>
+     <li><strong>Bi-Linear</strong>  - 가장 빠른 재샘플링 방법입니다. 일부 앨리어싱 가공물들은 눈에 띄습니다.</li>
      <li><strong>Bi-Cubic</strong>  - CPU 사용을 증가시키지만 앨리어싱 가공물이 덜 눈에 띄도록 더 선명한 이미지를 생성합니다.</li>
      <li><strong>Sharp2</strong>  - Bi-Cubic보다 약간 더 선명한 결과를 생성할 수 있지만 CPU 비용이 훨씬 더 높습니다.</li>
      <li><strong>Bi-Sharp</strong>  - 이미지 크기를 줄이기 위해 Photoshop 기본 반응기를  <strong>선택합니다. 이 분석기는 쌍입방 </strong> 공유인 Adobe Photoshop입니다.</li>
@@ -425,20 +425,20 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
   </tr>
   <tr>
    <td><strong>인쇄 해상도</strong></td>
-   <td>이 이미지를 인쇄할 해상도를 선택하십시오.기본값은 72픽셀입니다.</td>
+   <td>이 이미지를 인쇄할 해상도를 선택하십시오. 기본값은 72픽셀입니다.</td>
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에 Dynamic Media에서는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정 사항을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api">이미지 서버 프로토콜 명령 참조</a>에 정의되어 있습니다.</p> <p>중요 사항:API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에 Dynamic Media에서는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정 사항을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api">이미지 서버 프로토콜 명령 참조</a>에 정의되어 있습니다.</p> <p>중요 사항: API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
-     <li>기본 템플릿 및 텍스트 렌더링 명령:<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
-     <li>로컬라이제이션 명령:<code>locale=</code> 및 <code>req=xlate</code></li>
+     <li>기본 템플릿 및 텍스트 렌더링 명령: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
+     <li>로컬라이제이션 명령: <code>locale=</code> 및 <code>req=xlate</code></li>
      <li><code>req=set</code> 는 일반적인 용도로 사용할 수 없습니다.</li>
      <li><code>req=mbrset</code></li>
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>비핵심 Dynamic Media 서비스:SVG, 이미지 렌더링 및 Web-to-Print</li>
+     <li>비핵심 Dynamic Media 서비스: SVG, 이미지 렌더링 및 Web-to-Print</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -507,7 +507,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
 
 Dynamic Media - 하이브리드 모드를 실행하는 경우 이미지 사전 설정을 수동으로 게시해야 합니다.
 
-(Dynamic Media - Scene7 모드를 실행하는 경우 이미지 사전 설정이 자동으로 게시됩니다.이 단계를 완료할 필요는 없습니다.)
+(Dynamic Media - Scene7 모드를 실행하는 경우 이미지 사전 설정이 자동으로 게시됩니다. 이 단계를 완료할 필요는 없습니다.)
 
 **Dynamic Media - 하이브리드 모드에서 이미지 사전 설정을 게시하려면 다음을 수행하십시오.**
 
