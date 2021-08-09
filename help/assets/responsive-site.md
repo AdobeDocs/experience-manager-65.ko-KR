@@ -10,10 +10,10 @@ discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: 자산 관리
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 1%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 3%
 
 웹 개발자와 응답형 서비스를 위한 코드를 공유하려면 응답형 코드 기능을 사용하십시오. 응답형(**[!UICONTROL RESS]**) 코드를 클립보드에 복사하여 웹 개발자와 공유할 수 있습니다.
 
-웹 사이트가 타사 WCM에 있는 경우 이 기능을 사용하는 것이 적절합니다. 그러나 웹 사이트가 대신 AEM에 있는 경우 오프사이트 이미지 서버가 이미지를 렌더링하여 웹 페이지에 제공합니다.
+웹 사이트가 타사 WCM에 있는 경우 이 기능을 사용하는 것이 적절합니다. 그러나 웹 사이트가 대신 Adobe Experience Manager에 있는 경우 오프사이트 이미지 서버가 이미지를 렌더링하여 웹 페이지에 제공합니다.
 
 또한 [웹 페이지에 비디오 뷰어 포함](embed-code.md)을 참조하십시오.
 
-또한 [URL을 웹 응용 프로그램에 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
+또한 [웹 응용 프로그램에 URL 연결](linking-urls-to-yourwebapplication.md)을 참조하십시오.
 
 **응답형 사이트용으로 최적화된 이미지를 전달하려면:**
 
-1. 응답형 코드를 제공할 이미지로 이동하여 드롭다운 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 누릅니다.
+1. 응답형 코드를 제공할 이미지로 이동하여 드롭다운 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 선택합니다.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -41,9 +41,9 @@ ht-degree: 3%
    >
    >선택한 자산 **[!UICONTROL URL]** 또는 **[!UICONTROL RESS]** 단추를 사용할 수 있도록 선택한 이미지 사전 설정 또는 뷰어 사전 설정을 게시해야 합니다.**
    >
-   >Dynamic Media - 하이브리드 모드를 사용하려면 이미지 사전 설정을 게시해야 합니다.Dynamic Media - Scene7 모드는 이미지 사전 설정을 자동으로 게시합니다.
+   >Dynamic Media - 하이브리드 모드를 사용하려면 이미지 사전 설정을 게시해야 합니다. Dynamic Media - Scene7 모드는 이미지 사전 설정을 자동으로 게시합니다.
 
-1. **[!UICONTROL RESS]**&#x200B;을 누릅니다.
+1. **[!UICONTROL RESS]**&#x200B;을 선택합니다.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
