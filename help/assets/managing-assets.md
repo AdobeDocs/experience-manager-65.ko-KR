@@ -10,10 +10,10 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: 자산 관리
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 13%
+source-wordcount: '114'
+ht-degree: 14%
 
 ---
 
@@ -25,7 +25,7 @@ Dynamic Media 자산(이미지, 비디오 및 대화형 자산)이 업로드되�
 
 자산 관리에 대한 일반 정보는 [자산 관리](/help/assets/manage-assets.md)에 있습니다.
 
-다음 항목에서는 Dynamic Media 자산을 관리하는 데 필요한 작업에 대해 설명합니다.
+다음 항목에서는 Dynamic Media 자산을 관리하는 방법을 설명합니다.
 
 * [이미지 품질 최적화 우수 사례](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Dynamic Media 자산 미리 보기](/help/assets/previewing-assets.md)
