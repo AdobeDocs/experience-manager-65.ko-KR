@@ -11,7 +11,7 @@ docset: aem65
 role: User, Admin
 feature: 워크플로우,자산 관리,표현물
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 0%
@@ -49,11 +49,11 @@ Experience Manager Assets에서 프로필 사용과 관련된 중요한 개념�
 
 나중에 변경한 기존 처리 프로필이 이미 있는 폴더에서 자산을 재처리할 수 있습니다.
 
-예를 들어 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 자산에는 자동으로 이미지 프로필이 자산에 적용되었습니다. 하지만 나중에 프로필에 새로운 스마트 자르기 비율을 추가하기로 합니다. 이제 자산을 선택하고 다시 폴더에 업로드하는 대신 *Scene7을 실행하기만 하면 됩니다.자산* 워크플로우를 다시 처리합니다.
+예를 들어 이미지 프로필을 만들어 폴더에 할당했다고 가정합니다. 폴더에 업로드한 모든 이미지 자산에는 자동으로 이미지 프로필이 자산에 적용되었습니다. 하지만 나중에 프로필에 새로운 스마트 자르기 비율을 추가하기로 합니다. 이제 자산을 선택하고 다시 폴더에 업로드하는 대신 *Scene7을 실행하기만 하면 됩니다. 자산* 워크플로우를 다시 처리합니다.
 
 처음으로 처리가 실패한 자산에서 재처리 워크플로우를 실행할 수 있습니다. 따라서 처리 프로필을 편집하지 않았거나 처리 프로필을 적용하지 않았더라도 언제든지 자산 폴더에서 재처리 워크플로우를 실행할 수 있습니다.
 
-선택적으로 재처리 워크플로우의 배치 크기를 최대 1000개의 자산인 기본값 50개에서 조정할 수 있습니다. _Scene7을 실행하는 경우:폴더에서 자산_ 워크플로우를 재처리하는 경우 자산은 배치로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후, 전체 배치 세트에 있는 각 자산의 메타데이터는 Experience Manager 시 업데이트됩니다. 일괄 처리 크기가 큰 경우 처리가 지연될 수 있습니다. 또는 일괄 처리 크기가 너무 작으면 Dynamic Media 서버로 라운드 트립이 너무 많이 발생할 수 있습니다.
+선택적으로 재처리 워크플로우의 배치 크기를 최대 1000개의 자산인 기본값 50개에서 조정할 수 있습니다. _Scene7을 실행하는 경우: 폴더에서 자산_ 워크플로우를 재처리하는 경우 자산은 배치로 그룹화된 다음 처리를 위해 Dynamic Media 서버로 전송됩니다. 처리 후, 전체 배치 세트에 있는 각 자산의 메타데이터는 Experience Manager 시 업데이트됩니다. 일괄 처리 크기가 큰 경우 처리가 지연될 수 있습니다. 또는 일괄 처리 크기가 너무 작으면 Dynamic Media 서버로 라운드 트립이 너무 많이 발생할 수 있습니다.
 
 [재처리 워크플로우의 일괄 처리 크기 조정](#adjusting-load)을 참조하십시오.
 
@@ -67,7 +67,7 @@ Experience Manager Assets에서 프로필 사용과 관련된 중요한 개념�
 
 **폴더에서 자산을 재처리하려면 다음을 수행하십시오.**
 
-1. Experience Manager의 자산 페이지에서 처리 프로필이 할당된 자산의 폴더로 이동하고 **[!UICONTROL Scene7을 적용할 자산의 폴더로 이동합니다.자산 재처리]** 워크플로우,
+1. Experience Manager의 자산 페이지에서 처리 프로필이 할당된 자산의 폴더로 이동하고 **[!UICONTROL Scene7을 적용할 자산의 폴더로 이동합니다. 자산 재처리]** 워크플로우,
 
    처리 프로필이 이미 할당된 폴더는 카드 보기에서 폴더 이름 바로 아래에 프로필 이름이 표시되어 표시됩니다.
 
@@ -77,35 +77,35 @@ Experience Manager Assets에서 프로필 사용과 관련된 중요한 개념�
    * 기본 선택한 폴더에 자산이 있는 하위 폴더가 하나 이상 있는 경우 워크플로우는 폴더 계층 구조의 모든 자산을 재처리합니다.
    * 자산이 1000개 이상인 폴더 계층 구조에서 이 워크플로우를 실행하지 않는 것이 좋습니다.
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 클릭합니다.
-1. 페이지의 왼쪽 아래 모서리 근처에 있는 댓글 필드 오른쪽에 있는 캐럿 아이콘( **^** )을 클릭합니다.
+1. 페이지의 왼쪽 위 모서리 근처에 있는 드롭다운 목록에서 **[!UICONTROL 타임라인]**&#x200B;을 선택합니다.
+1. 페이지의 왼쪽 아래 모서리 근처에 있는 [주석] 필드의 오른쪽에 있는 캐럿 아이콘( **^** )을 선택합니다.
 
    ![자산 워크플로우 재처리 1](/help/assets/assets/reprocess-assets1.png)
 
-1. **[!UICONTROL 워크플로우 시작]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7을 선택합니다.자산]**&#x200B;을 재처리합니다.
+1. **[!UICONTROL 워크플로우 시작]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 워크플로우 시작]** 드롭다운 목록에서 **[!UICONTROL Scene7을 선택합니다. 자산]**&#x200B;을 재처리합니다.
 1. (선택 사항) **워크플로우 제목 입력** 텍스트 필드에 워크플로우의 이름을 입력합니다. 필요한 경우 이름을 사용하여 워크플로우 인스턴스를 참조할 수 있습니다.
 
    ![자산 재처리 2](/help/assets/assets/reprocess-assets2.png)
 
-1. **[!UICONTROL 시작]**&#x200B;을 클릭한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 시작]**&#x200B;을 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
 
-   워크플로우를 모니터링하거나 진행 상태를 확인하려면 Experience Manager 기본 콘솔 페이지에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]**&#x200B;를 클릭합니다. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 기록 열기]**&#x200B;를 클릭합니다. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
+   워크플로우를 모니터링하거나 진행 상태를 확인하려면 Experience Manager 기본 콘솔 페이지에서 **[!UICONTROL 도구]** > **[!UICONTROL 워크플로우]**&#x200B;를 선택합니다. 워크플로우 인스턴스 페이지에서 워크플로우를 선택합니다. 메뉴 모음에서 **[!UICONTROL 작업 내역 열기]**&#x200B;를 선택합니다. 동일한 [워크플로우 인스턴스] 페이지에서 선택한 워크플로우를 종료, 일시 중단 또는 이름을 변경할 수도 있습니다.
 
-### 재처리 워크플로우의 배치 크기 조정 {#adjusting-load}
+### 재처리 워크플로우의 일괄 처리 크기 조정 {#adjusting-load}
 
 (선택 사항) 재처리 워크플로우의 기본 배치 크기는 작업당 50개의 자산입니다. 이 최적 배치 크기는 재처리가 실행되는 평균 자산 크기 및 MIME 유형의 자산에 의해 제어됩니다. 값이 높을수록 하나의 재처리 작업에 많은 파일이 있습니다. 따라서 처리 배너는 더 오랫동안 Experience Manager 자산에 유지됩니다. 그러나 평균 파일 크기가 1MB 이하인 경우 Adobe은 값을 여러 개 100개, 1000개를 넘지 않는 것이 좋습니다. 평균 파일 크기가 수백 MB와 같이 큰 경우 배치 크기를 최대 10개까지 줄이는 것이 좋습니다.
 
 **재처리 워크플로우의 배치 크기를 선택적으로 조정하려면**
 
-1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 클릭하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]**(망치) 아이콘 > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 클릭합니다.
-1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다.자산]**&#x200B;을 재처리합니다.
+1. Experience Manager에서 **[!UICONTROL Adobe Experience Manager]**&#x200B;을 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]**(망치) 아이콘 > **[!UICONTROL 워크플로우]** > **[!UICONTROL 모델]**&#x200B;을 선택합니다.
+1. 워크플로우 모델 페이지의 카드 보기 또는 목록 보기에서 **[!UICONTROL Scene7을 선택합니다. 자산]**&#x200B;을 재처리합니다.
 
-   ![Scene7이 있는 워크플로우 모델 페이지:카드 보기에서 선택한 자산 워크플로우 재처리](/help/assets/assets-dm/reprocess-assets7.png)
+   ![Scene7이 있는 워크플로우 모델 페이지: 카드 보기에서 선택한 자산 워크플로우 재처리](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 클릭합니다. 새 브라우저 탭에서 Scene7을 엽니다.자산 워크플로우 모델 페이지를 재처리합니다.
-1. Scene7에서:오른쪽 위 모서리 근처에 있는 자산 워크플로우 페이지를 다시 처리하려면 **[!UICONTROL 편집]** 을 클릭하여 워크플로우를 &quot;잠금 해제&quot;합니다.
-1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 도구 모음에서 **[!UICONTROL 구성]**&#x200B;을 클릭합니다.
+1. 도구 모음에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다. 새 브라우저 탭에서 Scene7을 엽니다. 자산 워크플로우 모델 페이지를 재처리합니다.
+1. Scene7에서: 오른쪽 위 모서리 근처에 있는 자산 워크플로우 페이지를 다시 처리하려면 **[!UICONTROL 편집]**&#x200B;을 선택하여 워크플로우에 대한 &quot;잠금 해제&quot;를 선택하십시오.
+1. 워크플로우에서 Scene7 일괄 업로드 구성 요소를 선택하여 도구 모음을 열고 도구 모음에서 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
 
    ![Scene7 배치 업로드 구성 요소](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -119,16 +119,16 @@ Experience Manager Assets에서 프로필 사용과 관련된 중요한 개념�
 
    ![속성 대화 상자](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자의 오른쪽 맨 위에 있는 **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL Scene7에 일괄 업로드 - 단계 속성]** 대화 상자의 오른쪽 맨 위에 있는 **[!UICONTROL 완료]**&#x200B;를 선택합니다.
 
-1. Scene7의 오른쪽 위 모서리:자산 워크플로우 모델 페이지를 다시 처리하고 **[!UICONTROL 동기화]**&#x200B;를 클릭합니다. **[!UICONTROL 동기화된]**&#x200B;가 표시되면 워크플로우 런타임 모델이 성공적으로 동기화되어 폴더의 자산을 재처리할 수 있습니다.
+1. Scene7의 오른쪽 위 모서리: 자산 워크플로우 모델 페이지를 다시 처리하고 **[!UICONTROL 동기화]**&#x200B;를 선택합니다. **[!UICONTROL 동기화된]**&#x200B;가 표시되면 워크플로우 런타임 모델이 성공적으로 동기화되어 폴더의 자산을 재처리할 수 있습니다.
 
    ![워크플로우 모델 동기화](/help/assets/assets-dm/reprocess-assets1.png)
 
-1. Scene7을 표시하는 브라우저 탭을 닫습니다.자산 워크플로우 모델을 재처리합니다.
+1. Scene7을 표시하는 브라우저 탭을 닫습니다. 자산 워크플로우 모델을 재처리합니다.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -139,10 +139,10 @@ Experience Manager Assets에서 프로필 사용과 관련된 중요한 개념�
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, select **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
+1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
