@@ -12,9 +12,9 @@ docset: aem65
 feature: 자산 관리
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '11702'
+source-wordcount: '11699'
 ht-degree: 1%
 
 ---
@@ -306,7 +306,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 비디오 파일을 인코딩할 때 가능한 가장 높은 품질의 소스 비디오 파일을 사용하십시오. 이전에 인코딩된 비디오 파일은 이미 압축되었으므로 해당 파일을 사용하지 마십시오. 또한 인코딩을 통해 하위 품질의 비디오가 생성됩니다.
 
-* Dynamic Media은 주로 최대 30분의 짧은 형식의 비디오를 지원합니다.
+* Dynamic Media은 최대 30분의 짧은 양식 비디오를 지원합니다.
 * 각각 최대 15GB의 기본 소스 비디오 파일을 업로드할 수 있습니다.
 
 다음 표에서는 소스 비디오 파일을 인코딩하기 전에 사용해야 하는 권장 크기, 종횡비 및 최소 비트 전송률에 대해 설명합니다.
@@ -572,7 +572,7 @@ YouTube에 비디오를 게시하려면 하나 이상의 채널이 있어야 합
 
 1. [https://www.youtube.com](https://www.youtube.com/)로 이동하여 Google 계정 자격 증명을 사용하여 로그인합니다.
 1. YouTube 페이지의 오른쪽 위 모서리에서 프로필 사진(단색 원 내에 문자로 표시될 수도 있음)을 클릭한 다음 **[!UICONTROL YouTube 설정]** (라운드 톱니바퀴 아이콘)을 클릭합니다.
-1. 개요 페이지의 추가 기능 제목 아래에서 **[!UICONTROL 내 채널을 모두 보거나 새 채널]**&#x200B;을 만듭니다.
+1. 개요 페이지의 추가 기능 제목 아래에서 **[!UICONTROL 내 채널을 모두 보거나 채널]**&#x200B;을 만듭니다.
 1. 채널 페이지에서 **[!UICONTROL 새 채널 만들기]**&#x200B;를 클릭합니다.
 1. 브랜드 계정 페이지의 브랜드 계정 이름 필드에 비디오 자산을 게시하려는 위치에 비즈니스 이름 또는 다른 채널 이름을 입력한 다음 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
 
@@ -1182,7 +1182,7 @@ HTML5 비디오 뷰어를 사용하고 있으므로 만드는 장 파일이 WebV
 
 [WebVTT 를 참조하십시오. 웹 비디오 텍스트 트랙 형식](https://w3c.github.io/webvtt/)
 
-**비디오에 장 마커를 추가하려면**
+**비디오 장 탐색 추가**
 
 1. 장 제목 텍스트에서 문자 표현물에 문제가 발생하지 않도록 `.vtt` 파일을 UTF8 인코딩으로 저장합니다.
 
@@ -1245,7 +1245,7 @@ Experience Manager의 모든 비디오에는 연결된 축소판이 있어야 �
 1. 다음을 이미 수행했는지 확인하십시오.
 
    * 비디오 자산에 대한 폴더를 만들었습니다.
-   * [폴더에 비디오 프로필을 적용했습니다](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+   * [폴더에 비디오 프로필을 적용합니다](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    * [비디오를 폴더에 업로드했습니다](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
