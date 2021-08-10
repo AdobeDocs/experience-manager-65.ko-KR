@@ -1,5 +1,5 @@
 ---
-title: URL을 웹 애플리케이션에 연결
+title: 웹 애플리케이션에 URL 연결
 description: Dynamic Media에서 웹 애플리케이션에 URL을 연결하는 방법
 uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: 구성
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 1%
 
 ---
 
-# URL을 웹 애플리케이션에 연결 {#linking-urls-to-your-web-application}
+# 웹 애플리케이션에 URL 연결 {#linking-urls-to-your-web-application}
 
 웹 사이트 및 애플리케이션이 URL 호출을 통해 Dynamic Media 서비스에 액세스합니다. 자산을 게시하면 Dynamic Media에서 자산을 참조하는 URL 문자열을 활성화합니다. 이러한 URL을 테스트하기 위해 웹 브라우저에 붙여넣을 수 있습니다.
 
@@ -37,7 +37,7 @@ Experience Manager을 WCM으로 사용하지 *않고*&#x200B;인 경우에만 UR
 
 [자산 업로드](manage-assets.md#uploading-assets)도 참조하십시오.
 
-## 자산에 대한 URL 가져오기 {#obtaining-a-url-for-an-asset}
+## 자산의 URL 가져오기 {#obtaining-a-url-for-an-asset}
 
 이미지 사전 설정 또는 뷰어 사전 설정으로 생성된 URL 문자열을 가져올 수 있습니다. URL을 복사하면 클립보드에 로드되므로 웹 사이트 또는 애플리케이션의 페이지에 필요에 따라 붙여넣을 수 있습니다.
 
@@ -53,9 +53,9 @@ Experience Manager을 WCM으로 사용하지 *않고*&#x200B;인 경우에만 UR
 
 URL 문자열을 가져오는 방법은 여러 가지가 있습니다. 그러나 아래 단계에서는 사용할 수 있는 한 가지 방법을 보여 줍니다.
 
-**자산의 URL을 가져오려면**
+**자산의 URL을 가져오려면 다음을 수행하십시오.**
 
-1. 이미지 사전 설정 URL 또는 뷰어 사전 설정 URL이 복사하려는 *게시된* 자산으로 이동하고 자산을 탭하여 엽니다.
+1. 이미지 사전 설정 URL 또는 뷰어 사전 설정 URL이 복사하려는 *게시된* 자산으로 이동하고 열 자산을 선택합니다.
 
    URL은 *다음에*&#x200B;을 복사하는 데에만 사용할 수 있으며, 먼저 *자산을 게시했습니다*. 또한 뷰어 사전 설정 또는 이미지 사전 설정도 게시해야 합니다.
 
@@ -67,27 +67,27 @@ URL 문자열을 가져오는 방법은 여러 가지가 있습니다. 그러나
 
 1. 선택한 자산에 따라 다음 중 하나를 수행합니다.
 
-   * 이미지를 선택한 경우 드롭다운 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 누릅니다.
+   * 이미지를 선택한 경우 드롭다운 메뉴에서 **[!UICONTROL 표현물]**&#x200B;을 선택합니다.
 
-      **[!UICONTROL Dynamic]** 제목 아래에서 사전 설정 이름을 탭하여 오른쪽 프레임에서 해당 변환을 확인합니다. 필요한 경우 표현물 목록을 스크롤하여 동적 제목을 확인합니다.
+      **[!UICONTROL Dynamic]** 제목 아래에서 사전 설정 이름을 선택하여 오른쪽 프레임에서 해당 변환을 확인합니다. 필요한 경우 표현물 목록을 스크롤하여 동적 제목을 확인합니다.
 
-      왼쪽 레일 하단에서 **[!UICONTROL URL]**&#x200B;을 탭합니다.
+      왼쪽 레일 하단에서 **[!UICONTROL URL]**&#x200B;을 선택합니다.
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * 스핀 세트, 이미지 세트, 회전 메뉴 세트 또는 비디오를 선택한 경우, 드롭다운 메뉴에서 **[!UICONTROL Viewers]**&#x200B;를 누릅니다.
+   * 스핀 세트, 이미지 세트, 회전 메뉴 세트 또는 비디오를 선택한 경우, 드롭다운 메뉴에서 **[!UICONTROL 뷰어]**&#x200B;를 선택합니다.
 
-      왼쪽 레일에서 뷰어 사전 설정 이름을 탭합니다. 세트 또는 비디오의 미리 보기가 별도의 페이지에서 열립니다.
+      왼쪽 레일에서 뷰어 사전 설정 이름을 선택합니다. 세트 또는 비디오의 미리 보기가 별도의 페이지에서 열립니다.
 
-      왼쪽 레일의 하단에서 **[!UICONTROL URL]**&#x200B;을 누릅니다.
+      왼쪽 레일의 하단에서 **[!UICONTROL URL]**&#x200B;을 선택합니다.
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. 자산을 미리 보거나 웹 컨텐츠 페이지에 추가할 수 있도록 텍스트를 선택하여 웹 브라우저에 복사합니다.
 
-   URL 창을 종료하려면 **[!UICONTROL X]**&#x200B;을 탭하거나 **[!UICONTROL 닫기]**&#x200B;를 탭합니다.
+   URL 창을 종료하려면 **[!UICONTROL X]**&#x200B;을 선택하거나 **[!UICONTROL 닫기]**&#x200B;를 선택하십시오.
 
-## 정적 자산에 대한 URL 가져오기 {#obtaining-a-url-for-a-static-asset}
+## 정적 자산의 URL 가져오기 {#obtaining-a-url-for-a-static-asset}
 
 Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 정적 자산 전달을 지원합니다. 전달을 위해 지원되는 정적 자산 형식에는 다음이 포함됩니다.
 
@@ -101,9 +101,9 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 * XML
 * ZIP
 
-**정적 자산의 URL을 가져오려면**
+**정적 자산의 URL을 가져오려면 다음을 수행하십시오.**
 
-1. 복사할 URL이 있는 *게시된* 정적 자산으로 이동한 후 자산을 탭하여 엽니다.
+1. 복사할 URL이 있는 *게시된* 정적 자산으로 이동한 후 자산을 선택하여 엽니다.
 
    URL은 *이후에*&#x200B;을 복사하는 데에만 사용할 수 있으며, 정적 자산을 처음 *게시했습니다*.
 
@@ -116,7 +116,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          예, `https://aem.com/is/content/adobe/image.gif`.
-   * **[!UICONTROL 자산 > 동적 표현물]**&#x200B;을 탭한 다음, 정적 자산의 동적 표현물을 탭하고 URL을 복사합니다.
+   * **[!UICONTROL 자산]** > **[!UICONTROL 동적 표현물]**&#x200B;을 선택한 다음 정적 자산의 동적 표현물을 선택하고 URL을 복사합니다.
 
       복사된 URL을 경로 `is/image/` 대신 `is/content`을 사용하도록 변경합니다.
 
@@ -124,8 +124,8 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 ## 게시된 비디오 표현물에 대한 비디오 URL 가져오기 {#obtaining-a-video-url-for-a-published-video-rendition}
 
 1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
-1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 머리글로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 탭합니다.
-1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성 이름을 탭합니다.
+1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 머리글로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성 이름을 선택합니다.
 
 1. **[!UICONTROL Dynamic Media 클라우드 설정]** 페이지의 **[!UICONTROL 비디오 서비스 URL]**&#x200B;에서 전체 URL 경로를 복사합니다. 복사한 URL 경로를 단계의 후반부에 입력해야 합니다.
 
@@ -139,7 +139,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
    예를 들어 등록 ID가 `87654321|MyCompany`인 경우 고객 이름은 `MyCompany`입니다.
 
-1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL Cloud Services]**&#x200B;을 탭한 다음 Experience Manager 로고를 탭하고 **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
+1. 페이지의 왼쪽 위 모서리 근처에 있는 **[!UICONTROL Cloud Services]**&#x200B;을 선택한 다음 Experience Manager 로고를 선택하고 **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]**&#x200B;로 이동합니다.
 1. JCR(Java™ Content Repository)에서 전체 비디오 표현물 경로를 복사합니다.
 
    예를 들어 비디오의 변환 경로는 다음과 유사할 수 있습니다.
@@ -158,11 +158,11 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
    이 예는 게시된 비디오 표현물을 위한 전체 비디오 URL입니다.
 
-## 적응형 스트리밍(HLS)을 위한 비디오 URL 가져오기 {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## 적응형 스트리밍(HLS)용 비디오 URL 가져오기 {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 배포]** > **[!UICONTROL 클라우드]** > **[!UICONTROL Cloud Services]**&#x200B;로 이동합니다.
-1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 머리글로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 탭합니다.
-1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성 이름을 탭합니다.
+1. **[!UICONTROL Cloud Services]** 페이지에서 **[!UICONTROL Dynamic Media Cloud Services]** 머리글로 스크롤한 다음 **[!UICONTROL 구성 표시]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 사용 가능한 구성]**&#x200B;에서 원하는 구성 이름을 선택합니다.
 1. **[!UICONTROL Dynamic Media Cloud Services 설정]** 페이지에서 다음을 수행합니다.
 
    * **[!UICONTROL 비디오 서비스 URL]**&#x200B;에서 전체 URL 경로를 복사합니다. 복사된 URL 경로는 이 단계의 후반부에 필요합니다. 예를 들어 URL 경로는 다음과 유사할 수 있습니다.
@@ -201,7 +201,7 @@ Dynamic Media에서는 이미지 및 비디오 이외에 추가적인 자산인 
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## HTTP/2를 사용하여 Dynamic Media 자산 전달 {#using-http-to-deliver-your-dynamic-media-assets}
+## HTTP/2를 사용하여 Dynamic Media 자산을 전달합니다 {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2는 브라우저 및 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 보다 신속하게 정보를 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. 이제 Dynamic Media 자산의 배달이 HTTP/2를 통해 수행될 수 있으므로 로드 시간이 향상됩니다.
 
