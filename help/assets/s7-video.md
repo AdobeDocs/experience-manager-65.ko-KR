@@ -8,12 +8,13 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: 비디오
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 42%
+source-wordcount: '1564'
+ht-degree: 39%
 
 ---
 
@@ -34,7 +35,7 @@ Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비�
 * FFMPEG 썸네일
 * FFMPEG 인코딩
 
-Dynamic Media Classic 통합을 활성화하고 구성해도 바로 사용 가능한 DAM 수집 워크플로우에서 이러한 2가지 워크플로우 단계가 자동으로 제거되거나 비활성화되지는 않습니다. Adobe Experience Manager에서 이미 FFMPEG 기반 비디오 인코딩을 사용하고 있다면 작성 환경에 FFMPEG가 설치되어 있을 수 있습니다. 이 경우 DAM을 사용하여 수집된 새 비디오는 다음 두 번 인코딩됩니다.FFMPEG 인코더에서 한 번, Dynamic Media Classic 통합에서 한 번,
+Dynamic Media Classic 통합을 활성화하고 구성해도 바로 사용 가능한 DAM 수집 워크플로우에서 이러한 2가지 워크플로우 단계가 자동으로 제거되거나 비활성화되지는 않습니다. Adobe Experience Manager에서 이미 FFMPEG 기반 비디오 인코딩을 사용하고 있다면 작성 환경에 FFMPEG가 설치되어 있을 수 있습니다. 이 경우 DAM을 사용하여 수집된 새 비디오는 다음 두 번 인코딩됩니다. FFMPEG 인코더에서 한 번, Dynamic Media Classic 통합에서 한 번,
 
 Experience Manager의 FFMPEG 기반 비디오 인코딩이 구성되고 FFMPEG가 설치된 경우 DAM 수집 워크플로우에서 두 개의 FFMPEG 워크플로우를 제거하는 것이 좋습니다.
 
@@ -70,11 +71,9 @@ Scene7 비디오 구성 요소에 대해 다음 형식이 지원됩니다.
 1. Experience Manager에서 컨텐츠 파인더의 **[!UICONTROL Scene7]** 탭에서 WCM의 비디오 자산에 액세스합니다.
 1. **[!UICONTROL Scene7 Video]** 구성 요소를 사용하여 작성합니다.
 
-## Scene7 비디오에 대한 통합 구성 {#configuring-integration-with-scene-video}
+## Scene7 비디오와의 통합 구성 {#configuring-integration-with-scene-video}
 
-범용 사전 설정을 구성하려면:
-
-1. **[!UICONTROL 클라우드 서비스]**&#x200B;에서 **[!UICONTROL Scene7]** 구성으로 이동한 후 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL Cloud Services]**&#x200B;에서 **[!UICONTROL Scene7]** 구성으로 이동한 후 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 비디오]** 탭을 선택합니다.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -95,14 +94,14 @@ Scene7 비디오 구성 요소에 대해 다음 형식이 지원됩니다.
 
 ## 뷰어 및 인코딩 사전 설정 업데이트 {#updating-viewer-and-encoding-presets}
 
-Scene7에서 사전 설정이 업데이트되었기 때문에 비디오에 대한 뷰어 및 인코딩 사전 설정을 업데이트하려면 클라우드 구성에서 Scene7 구성으로 이동한 후 **[!UICONTROL 뷰어 및 인코딩 사전 설정 업데이트]**&#x200B;를 누릅니다.
+Scene7에서 사전 설정이 업데이트되었기 때문에 비디오에 대한 뷰어 및 인코딩 사전 설정을 업데이트하려면 클라우드 구성에서 Scene7 구성으로 이동한 후 **[!UICONTROL 뷰어 및 인코딩 사전 설정 업데이트]**&#x200B;를 선택합니다.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
 ## Adobe DAM에서 Scene7으로 기본 소스 비디오를 업로드합니다. {#uploading-your-master-video}
 
 1. Scene7 인코딩 프로필을 사용하여 클라우드 구성을 설정한 CQ DAM 대상 폴더로 이동합니다.
-1. **[!UICONTROL 업로드]**&#x200B;를 클릭하여 기본 소스 비디오를 업로드합니다. [!UICONTROL DAM 자산 업데이트] 워크플로우가 완료되고 **[!UICONTROL Scene7에 게시]**&#x200B;가 선택되면 비디오 업로드 및 인코딩이 완료됩니다.
+1. **[!UICONTROL 업로드]**&#x200B;를 선택하여 기본 소스 비디오를 업로드합니다. [!UICONTROL DAM 자산 업데이트] 워크플로우가 완료되고 **[!UICONTROL Scene7에 게시]**&#x200B;가 선택되면 비디오 업로드 및 인코딩이 완료됩니다.
 
    >[!NOTE]
    >
@@ -150,9 +149,9 @@ S7 클라우드 구성에서 선택한 S7 인코딩 사전 설정에 따라 다�
 >
 >새 비디오 프로필 및 해당 변경 사항을 게시하려면 활성화해야 합니다.
 
-1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 구성 콘솔]**&#x200B;을 누릅니다.
+1. Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 구성 콘솔]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 구성 콘솔]**&#x200B;에서 **[!UICONTROL 도구]** > **[!UICONTROL DAM]** > **[!UICONTROL 비디오 프로필]**&#x200B;으로 이동합니다.
-1. S7 비디오 프로필을 만듭니다. **[!UICONTROL 새]**. 메뉴에서 **[!UICONTROL 페이지 만들기]**&#x200B;를 선택한 다음 Scene7 비디오 프로필 템플릿을 선택합니다. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+1. S7 비디오 프로필을 만듭니다. **[!UICONTROL 새]**. 메뉴에서 **[!UICONTROL 페이지 만들기]**&#x200B;를 선택한 다음 Scene7 비디오 프로필 템플릿을 선택합니다. 새 비디오 프로필 페이지에 이름을 지정하고 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
