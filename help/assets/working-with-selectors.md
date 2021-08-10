@@ -10,10 +10,10 @@ discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 role: User, Admin
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 feature: 선택기
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 3%
+source-wordcount: '725'
+ht-degree: 2%
 
 ---
 
@@ -25,23 +25,23 @@ ht-degree: 3%
 
 회전판 세트를 만들고 핫스팟과 이미지 맵을 추가하고 대화형 비디오와 이미지를 만드는 동안 선택기에 액세스합니다.
 
-예를 들어, 이 회전 배너에서는 핫스팟이나 이미지 맵을 Quickview 페이지에 연결하는 경우 제품 선택기를 사용합니다. 핫스팟이나 이미지 맵을 하이퍼링크에 연결하는 경우에는 사이트 선택기를 사용합니다.슬라이드를 만들 때 자산 선택기를 사용합니다.
+예를 들어, 이 회전 배너에서는 핫스팟이나 이미지 맵을 Quickview 페이지에 연결하는 경우 제품 선택기를 사용합니다. 핫스팟이나 이미지 맵을 하이퍼링크에 연결하는 경우에는 사이트 선택기를 사용합니다. 슬라이드를 만들 때 자산 선택기를 사용합니다.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
 핫스팟이나 이미지 맵이 있는 위치를 수동으로 입력하지 않고 선택하면 선택기를 사용합니다. 사이트 선택기는 Experience Manager 사이트 고객인 경우에만 작동합니다. 제품 선택기에도 Experience Manager 상거래가 필요합니다.
 
-## 제품 선택 {#selecting-products}
+## 제품 선택기 사용 {#selecting-products}
 
 제품 선택기를 사용하여 핫스팟이나 이미지 맵이 제품 카탈로그의 특정 제품에 Quickview를 제공하려는 경우 제품을 선택합니다.
 
-1. 회전 메뉴 세트, 대화형 이미지 또는 대화형 비디오로 이동하고 **[!UICONTROL 작업]** 탭을 탭합니다(핫스팟이나 이미지 맵을 정의한 경우에만 사용 가능).
+1. 회전 메뉴 세트, 대화형 이미지 또는 대화형 비디오로 이동하고 **[!UICONTROL 작업]** 탭을 선택합니다(핫스팟이나 이미지 맵을 정의한 경우에만 사용 가능).
 
    제품 선택기는 **[!UICONTROL 작업 유형]** 영역에 있습니다.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. **[!UICONTROL 제품 선택기]** 아이콘(확대경)을 탭하고 카탈로그의 제품으로 이동합니다.
+1. **[!UICONTROL 제품 선택기]** 아이콘(확대경)을 선택하고 카탈로그의 제품으로 이동합니다.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
@@ -53,11 +53,11 @@ ht-degree: 3%
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Experience Manager이 가장 최근 항목 또는 가장 오래된 항목 또는 가장 오래된 항목순으로 정렬하는지 여부를 변경하려면 **[!UICONTROL 정렬]**&#x200B;을 누릅니다.
+   Experience Manager을 가장 최근 항목 또는 가장 오래된 항목 또는 가장 오래된 항목순으로 정렬할지 여부를 변경하려면 **[!UICONTROL 정렬]**&#x200B;을 선택하십시오.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   **[!UICONTROL View as]** 를 탭하여 제품을 보는 방법을 변경합니다(**[!UICONTROL 목록 보기]** 또는 **[!UICONTROL 카드 보기]**).
+   **[!UICONTROL 제품을 보는 방법을 변경하려면]**&#x200B;로 보기 를 선택하십시오. **[!UICONTROL 목록 보기]** 또는 **[!UICONTROL 카드 보기]**
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -65,21 +65,21 @@ ht-degree: 3%
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. **[!UICONTROL 미리 보기]** 모드에서는 핫스팟이나 이미지 맵을 탭하고 Quickview의 모습을 볼 수 있습니다.
+1. **[!UICONTROL 미리 보기]** 모드에서는 핫스팟이나 이미지 맵을 선택하고 Quickview의 모양을 확인할 수 있습니다.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## 사이트 선택 {#selecting-sites}
+## 사이트 선택기 사용 {#selecting-sites}
 
 Experience Manager 사이트 내에서 관리되는 웹 페이지에 핫스팟이나 이미지 맵을 연결하려는 경우 사이트 선택기를 사용하여 웹 페이지를 선택합니다.
 
-1. 회전 메뉴 세트, 대화형 이미지 또는 대화형 비디오로 이동하고 **[!UICONTROL 작업]** 탭을 탭합니다(핫스팟이나 이미지 맵을 정의한 경우에만 사용 가능).
+1. 회전 메뉴 세트, 대화형 이미지 또는 대화형 비디오로 이동하고 **[!UICONTROL 작업]** 탭을 선택합니다(핫스팟이나 이미지 맵을 정의한 경우에만 사용 가능).
 
    사이트 선택기는 **[!UICONTROL 작업 유형]** 영역에 있습니다.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. **[!UICONTROL 사이트 선택기]** 아이콘(돋보기가 있는 폴더)을 탭하고 핫스팟이나 이미지 맵을 연결할 Experience Manager 사이트의 페이지로 이동합니다.
+1. **[!UICONTROL 사이트 선택기]** 아이콘(돋보기가 있는 폴더)을 선택하고 핫스팟이나 이미지 맵을 연결할 Experience Manager 사이트의 페이지로 이동합니다.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -87,16 +87,16 @@ Experience Manager 사이트 내에서 관리되는 웹 페이지에 핫스팟�
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 핫스팟 또는 이미지 맵을 탭하는 경우 **[!UICONTROL 미리 보기]** 모드에서는 지정한 Experience Manager 사이트 페이지로 이동합니다.
+1. 핫스팟 또는 이미지 맵을 선택하는 경우 **[!UICONTROL 미리 보기]** 모드에서는 지정한 Experience Manager 사이트 페이지로 이동합니다.
 
-## 자산 선택 {#selecting-assets}
+## 자산 선택기 사용 {#selecting-assets}
 
-회전판 배너, 대화형 비디오, 이미지 세트, 혼합 미디어 세트 및 스핀 세트에서 사용할 이미지를 선택하려면 이 선택기를 사용합니다. 대화형 비디오에서 **[!UICONTROL 컨텐츠]** 탭에서 **[!UICONTROL 자산 선택]**&#x200B;을 탭할 때 자산 선택기를 사용할 수 있습니다. 회전 집합에서 슬라이드를 만들 때 자산 선택기를 사용할 수 있습니다. 이미지 세트, 혼합 미디어 세트 및 스핀 세트에서 각각 이미지 세트, 혼합 미디어 세트 또는 스핀 세트를 만들 때 자산 선택기를 사용할 수 있습니다.
+회전판 배너, 대화형 비디오, 이미지 세트, 혼합 미디어 세트 및 스핀 세트에서 사용할 이미지를 선택하려면 이 선택기를 사용합니다. 대화형 비디오에서 **[!UICONTROL 컨텐츠]** 탭에서 **[!UICONTROL 자산 선택]**&#x200B;을 선택하면 자산 선택기를 사용할 수 있습니다. 회전 집합에서 슬라이드를 만들 때 자산 선택기를 사용할 수 있습니다. 이미지 세트, 혼합 미디어 세트 및 스핀 세트에서 각각 이미지 세트, 혼합 미디어 세트 또는 스핀 세트를 만들 때 자산 선택기를 사용할 수 있습니다.
 
 자세한 내용은 [자산 선택기](search-assets.md#assetpicker)도 참조하십시오.
 
 1. 회전판 세트로 이동하고 슬라이드를 만듭니다. 또는 대화형 비디오로 이동하여 **[!UICONTROL 컨텐츠]** 탭으로 이동한 다음 자산을 선택합니다. 또는 혼합 미디어 세트, 이미지 세트 또는 스핀 세트를 만듭니다.
-1. **[!UICONTROL 자산 선택기]** 아이콘(돋보기가 있는 폴더)을 탭하고 자산으로 이동합니다.
+1. **[!UICONTROL 자산 선택기]** 아이콘(돋보기가 있는 폴더)을 선택하고 자산으로 이동합니다.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
@@ -106,11 +106,11 @@ Experience Manager 사이트 내에서 관리되는 웹 페이지에 핫스팟�
 
    Experience Manager이 **[!UICONTROL 경로]** 필드의 다른 폴더로 이동하여 자산을 탐색하는 위치를 변경합니다.
 
-   **[!UICONTROL 컬렉션]**&#x200B;을 탭하여 컬렉션 내에서 자산만 검색합니다.
+   **[!UICONTROL 컬렉션]**&#x200B;을 선택하여 컬렉션 내에서 자산만 검색합니다.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   **[!UICONTROL View as]** 를 탭하여 제품을 보는 방법을 변경합니다. - **[!UICONTROL 목록 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 카드 보기]**
+   **[!UICONTROL 제품을 보는 방법을 변경하려면]**&#x200B;로 보기를 선택합니다. **[!UICONTROL 목록 보기]**, **[!UICONTROL 열 보기]** 또는 **[!UICONTROL 카드 보기]**&#x200B;입니다.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
