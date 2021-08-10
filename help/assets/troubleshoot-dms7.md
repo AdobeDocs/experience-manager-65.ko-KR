@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 문제 해결 - Scene7 모드
-description: Scene7 모드에서 실행 중인 Dynamic Media 문제 해결.
+description: Scene7 모드에서 실행 중인 Dynamic Media 문제 해결
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,10 +11,10 @@ docset: aem65
 role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: 문제 해결
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '1286'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 다음을 수행하여 Dynamic Media이 제대로 설정되었는지 확인합니다.
 
 * 시작 명령에 `-r dynamicmedia_scene7` 실행 모드 인수가 포함되어 있습니다.
-* 모든 AEM 6.4 누적 수정 팩(CFP)은 사용 가능한 Dynamic Media 기능 팩 *앞에 설치되었습니다.*
+* 사용 가능한 모든 Dynamic Media 기능 팩 전에 모든 Adobe Experience Manager 6.4 누적 수정 팩(CFP)이 먼저 *전에 설치되었습니다.*
 * 옵션 기능 팩 18912 가 설치됩니다.
 
    이 선택적 기능 팩은 FTP 지원을 위한 것이거나 Dynamic Media Classic에서 Dynamic Media으로 자산을 마이그레이션하는 경우 입니다.
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 ### 자산 동기화 상태 속성 {#asset-synchronization-status-properties}
 
-다음 자산 속성을 CRXDE Lite에서 검토하여 AEM에서 Dynamic Media으로 성공적으로 자산을 동기화할 수 있습니다.
+다음 자산 속성을 CRXDE Lite에서 검토하여 Experience Manager에서 Dynamic Media으로 성공적으로 자산을 동기화할 수 있습니다.
 
 | **속성** | **예** | **설명** |
 |---|---|---|
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 ### 동기화 로깅 {#synchronization-logging}
 
-동기화 오류 및 문제가 `error.log`(AEM server 디렉토리 `/crx-quickstart/logs/`)에 기록됩니다. 대부분의 문제의 근본 원인을 파악하는 데 충분한 로깅을 사용할 수 있지만 자세한 정보를 수집하기 위해 Sling Console([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))을 통해 `com.adobe.cq.dam.ips` 패키지의 DEBUG에 대한 로깅을 늘릴 수 있습니다.
+동기화 오류 및 문제가 `error.log`(Experience Manager 서버 디렉토리 `/crx-quickstart/logs/`)에 기록됩니다. 대부분의 문제의 근본 원인을 파악하는 데 충분한 로깅을 사용할 수 있지만 자세한 정보를 수집하기 위해 Sling Console([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))을 통해 `com.adobe.cq.dam.ips` 패키지의 DEBUG에 대한 로깅을 늘릴 수 있습니다.
 
 ### 이동, 복사, 삭제 {#move-copy-delete}
 
@@ -66,11 +66,11 @@ ht-degree: 2%
 
 ### 버전 제어 {#version-control}
 
-기존 Dynamic Media 자산을 바꿀 때(동일한 이름 및 위치) 자산을 유지하거나 버전을 바꾸거나 만들 수 있습니다.
+기존 Dynamic Media 자산을 바꿀 때(동일한 이름 및 위치) 자산을 유지하거나 버전을 교체/만들 수 있습니다.
 
-* 두 자산을 모두 유지하면 게시된 자산 URL에 대한 고유한 이름이 있는 새 자산이 만들어집니다. 예를 들어 `image.jpg`은 원래 자산이고 `image1.jpg`은 새로 업로드된 자산입니다.
+* 두 자산을 모두 유지하면 게시된 자산 URL에 대한 고유한 이름이 있는 자산이 만들어집니다. 예를 들어 `image.jpg`은 원래 자산이고 `image1.jpg`은 새로 업로드된 자산입니다.
 
-* Dynamic Media - Scene7 모드 게재에서는 버전 만들기가 지원되지 않습니다. 새 버전이 게재의 기존 자산을 대체합니다.
+* Dynamic Media - Scene7 모드 게재에서는 버전 만들기가 지원되지 않습니다. 새 버전은 게재의 기존 자산을 대체합니다.
 
 ## 이미지 및 세트 {#images-and-sets}
 
@@ -89,7 +89,7 @@ ht-degree: 2%
     <ol>
      <li><p>CRX/DE로 이동합니다.</p>
       <ul>
-       <li>JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>에 사전 설정이 정의되어 있는지 확인합니다. 이 위치는 AEM 6.x에서 6.4로 업그레이드하고 마이그레이션을 옵트아웃한 경우에 적용됩니다. 그렇지 않으면 위치는 <code>/conf/global/settings/dam/dm/presets/viewer</code>입니다.</li>
+       <li>JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>에 사전 설정이 정의되어 있는지 확인합니다. 이 위치는 Experience Manager 6.x에서 6.4로 업그레이드하고 마이그레이션을 옵트아웃한 경우에 적용됩니다. 그렇지 않으면 위치가 <code>/conf/global/settings/dam/dm/presets/viewer</code>입니다.</li>
        <li>JCR의 자산이 메타데이터 아래에 <code>dam:scene7FileStatus</code><strong> </strong>이 <code>PublishComplete</code>로 표시되는지 확인합니다.</li>
       </ul> </li>
     </ol> </td>
@@ -107,7 +107,7 @@ ht-degree: 2%
   <tr>
    <td><strong></strong> 세트 편집의 일부로 자산을 선택한 후에는 선택 단추가 활성화되지 않습니다</td>
    <td><p> </p> <p>6.4에서 수정되는 알려진 문제</p> <p> </p> </td>
-   <td><p>먼저 자산 선택기에서 다른 폴더를 클릭하고 뒤로 이동하여 자산을 선택합니다.</p> </td>
+   <td><p>먼저 자산 선택기의 다른 폴더에서 을 선택하고 뒤로 이동하여 자산을 선택합니다.</p> </td>
   </tr>
   <tr>
    <td>회전 핫스팟은 슬라이드 간에 전환한 후 이동합니다</td>
@@ -153,7 +153,7 @@ ht-degree: 2%
    <td>
     <ul>
      <li>폴더에 비디오 프로필이 할당되어 있는지 확인합니다(지원되지 않는 파일 형식인 경우). 지원되지 않는 경우에는 이미지만 표시됩니다.</li>
-     <li>비디오 프로필에는 AVS 세트를 생성하려면 둘 이상의 인코딩 사전 설정이 포함되어야 합니다(단일 인코딩은 MP4 파일에 대한 비디오 컨텐츠로 처리됨).지원되지 않는 파일의 경우 처리되지 않은 것으로 처리됨).</li>
+     <li>비디오 프로필에는 AVS 세트를 생성하려면 둘 이상의 인코딩 사전 설정이 포함되어야 합니다(단일 인코딩은 MP4 파일에 대한 비디오 컨텐츠로 처리됨). 지원되지 않는 파일의 경우 처리되지 않은 것으로 처리됨).</li>
      <li>메타데이터에서 <code>dam:scene7File</code> 의 <code>dam:scene7FileAvs</code> 을 확인하여 비디오 처리가 완료되었는지 확인합니다.</li>
     </ul> </td>
    <td>
@@ -175,8 +175,8 @@ ht-degree: 2%
     </ul> </td>
    <td>
     <ol>
-     <li>을 사용하여 AEM 인스턴스 확인 <code>-r dynamicmedia_scene7</code></li>
-     <li>Cloud Services 아래의 Dynamic Media 구성이 제대로 설정되었는지 확인합니다.</li>
+     <li>을 사용하여 Experience Manager 인스턴스 확인 <code>-r dynamicmedia_scene7</code></li>
+     <li>Cloud Services 아래의 Dynamic Media 구성이 제대로 설정되어 있는지 확인하십시오.</li>
      <li>폴더에 비디오 프로필이 있는지 확인합니다. 또한 비디오 프로필을 확인합니다.</li>
     </ol> </td>
   </tr>
@@ -219,11 +219,11 @@ ht-degree: 2%
   <tr>
    <td>뷰어 사전 설정이 게시되지 않음</td>
    <td><p>샘플 관리자 진단 페이지로 진행합니다. <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>계산된 값을 관찰합니다. 올바르게 작동하면 다음 내용이 표시됩니다.</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>참고</strong>:뷰어 자산을 동기화할 Dynamic Media 클라우드 설정을 구성한 후 약 10분이 걸릴 수 있습니다.</p> <p>활성화되지 않은 자산이 남아 있는 경우 <strong>활성화되지 않은 모든 자산 목록</strong> 단추 중 하나를 클릭하여 세부 사항을 확인합니다.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>참고</strong>: 뷰어 자산을 동기화할 Dynamic Media 클라우드 설정을 구성한 후 약 10분이 걸릴 수 있습니다.</p> <p>활성화되지 않은 자산이 남아 있는 경우 <strong>활성화되지 않은 모든 자산 목록</strong> 단추 중 하나를 선택하여 세부 사항을 확인합니다.</p> </td>
    <td>
     <ol>
      <li>관리 도구의 뷰어 사전 설정 목록으로 이동합니다. <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>모든 뷰어 사전 설정을 선택한 다음 <strong>게시</strong>를 클릭합니다.</li>
+     <li>모든 뷰어 사전 설정을 선택한 다음 <strong>게시</strong>를 선택합니다.</li>
      <li>샘플 관리자로 돌아가서 활성화되지 않은 자산 수가 이제 0임을 확인합니다.</li>
     </ol> </td>
   </tr>
@@ -249,14 +249,14 @@ ht-degree: 2%
       <ul>
        <li>삭제 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
       </ul> </li>
-     <li>CRX 패키지 관리자로 이동합니다.<code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>CRX 패키지 관리자로 이동합니다. <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
       <ol>
        <li>목록에서 뷰어 패키지를 검색합니다(<code>cq-dam-scene7-viewers-content</code>로 시작).</li>
-       <li><strong>다시 설치</strong>를 클릭합니다.</li>
+       <li><strong>다시 설치</strong>를 선택합니다.</li>
       </ol> </li>
      <li>Cloud Services에서 Dynamic Media 구성 페이지로 이동한 다음 Dynamic Media - S7 구성에 대한 구성 대화 상자를 엽니다.
       <ul>
-       <li>변경하지 말고 <strong>저장</strong>을 클릭하십시오. 이렇게 하면 논리를 다시 트리거하여 샘플 자산, 뷰어 사전 설정 CSS 및 아트웍을 만들고 동기화합니다.<br />  </li>
+       <li>변경하지 말고 <strong>저장</strong>을 선택합니다. 이 작업을 수행하면 논리를 다시 트리거하여 샘플 자산, 뷰어 사전 설정 CSS 및 아트워크를 만들고 동기화합니다.<br />  </li>
       </ul> </li>
     </ol> </td>
   </tr>
