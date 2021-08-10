@@ -10,7 +10,7 @@ discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: 자산 관리
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 1%
@@ -50,7 +50,7 @@ ht-degree: 1%
 1. **[!UICONTROL 응답형 이미지 포함]** 대화 상자에서 응답형 코드 텍스트를 선택하고 복사하여 웹 사이트에 붙여넣어 응답형 자산에 액세스합니다.
 1. 코드에서 직접 응답형 웹 사이트의 중단점과 일치하도록 포함 코드의 기본 중단점을 편집합니다. 또한 다른 페이지 중단점에서 제공되는 다양한 이미지 해상도를 테스트합니다.
 
-## HTTP/2를 사용하여 Dynamic Media 자산 전달 {#using-http-to-delivery-your-dynamic-media-assets}
+## HTTP/2를 사용하여 Dynamic Media 자산을 제공합니다 {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2는 브라우저 및 서버의 통신 방식을 향상시키는 업데이트된 새로운 웹 프로토콜입니다. 보다 신속하게 정보를 전송할 수 있고 필요한 처리 능력을 줄일 수 있습니다. Dynamic Media 자산의 배달은 HTTP/2를 사용하여 지원되며, 이 경우 더 나은 응답 및 로드 시간이 제공됩니다.
 
