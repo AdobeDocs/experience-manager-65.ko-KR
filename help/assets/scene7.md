@@ -9,10 +9,11 @@ topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '2849'
+source-wordcount: '2850'
 ht-degree: 17%
 
 ---
@@ -31,7 +32,7 @@ ht-degree: 17%
 
 Experience Manager에서 Dynamic Media Classic으로 직접 디지털 자산을 게시할 수 있으며, Dynamic Media Classic에서 Experience Manager으로 디지털 자산을 게시할 수 있습니다.
 
-이 문서에서는 Experience Manager에서 Dynamic Media Classic으로 디지털 자산을 게시하고 반대로 게시하는 방법에 대해 설명합니다. 뷰어도 자세히 설명되어 있습니다. Dynamic Media Classic에 대한 Experience Manager 구성에 대한 내용은 [Dynamic Media Classic과 Experience Manager](/help/sites-administering/scene7.md) 통합을 참조하십시오.
+이 문서에서는 Experience Manager에서 Dynamic Media Classic으로 디지털 자산을 게시하고 반대로 게시하는 방법에 대해 설명합니다. 뷰어도 자세히 설명되어 있습니다. Dynamic Media Classic에 대한 Experience Manager 구성에 대한 내용은 [Dynamic Media Classic과 Experience Manager 통합](/help/sites-administering/scene7.md)을 참조하십시오.
 
 [이미지 맵 추가](image-maps.md)도 참조하십시오.
 
@@ -107,7 +108,7 @@ Experience Manager에서 비디오 구성 요소를 사용하는 방법에 대�
 
 자산에 대한 응답형 디자인은 자산이 표시되는 위치에 따라 조정됨을 의미합니다. 응답형 디자인을 통해 여러 장치에 동일한 자산을 효과적으로 표시할 수 있습니다.
 
-또한 [웹 페이지를 위한 응답형 디자인](/help/sites-developing/responsive.md)을 참조하십시오.
+웹 페이지를 위한 응답형 디자인 [을 참조하십시오](/help/sites-developing/responsive.md).
 
 **응답형 사이트에 대화형 보기 환경을 추가하려면:**
 
