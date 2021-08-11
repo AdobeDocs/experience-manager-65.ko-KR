@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: 구성,Scene7 모드
-source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
+source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
 workflow-type: tm+mt
 source-wordcount: '6941'
 ht-degree: 1%
@@ -168,7 +168,7 @@ Dynamic Media - Scene7 모드에서 기본 자산 업로드 파일 크기는 2GB
 * Experience Manager 인스턴스가 Amazon S3 또는 Microsoft® Azure Blob 저장소를 사용하여 구성되었는지 확인하십시오.
 
    >[!NOTE]
-   Blob 저장소 구성에서 이 큰 업로드 기능은 AzureSas에서 지원되지 않으므로 두 액세스 키(key1 및 key2)로 Azure Blob 저장소를 구성합니다.
+   Blob 저장소 구성에서 이 큰 업로드 기능은 AzureSas에서 지원되지 않으므로 액세스 키 및 비밀 키로 Azure Blob 저장소를 구성합니다.
 
 * Oak의 [직접 이진 액세스 다운로드](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)가 활성화되었습니다(Oak의 *직접 이진 액세스 업로드*&#x200B;가 필요하지 않음).
 
