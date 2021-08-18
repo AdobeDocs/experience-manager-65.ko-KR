@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
+source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '677'
 ht-degree: 2%
 
 ---
@@ -88,7 +88,7 @@ AEM 6.0 소셜 커뮤니티에서 AEM 6.3 Communities로 업그레이드할 때 
 
 ### JSP 구성 요소 템플릿 없음 {#no-jsp-component-templates}
 
-[소셜 구성 요소 프레임워크](/help/communities/scf.md) (SCF)는 AEM 6.0 이전에 사용된 JSP(Java Server Page) 대신 `HandlebarsJS` (HBS) 템플릿 언어를 사용합니다.
+[소셜 구성 요소 프레임워크](/help/communities/scf.md) (SCF)는 AEM 6.0 이전에 사용된 JSP(Java Server Page) 대신 [HandlebarsJS](https://handlebarsjs.com/) (HBS) 템플릿 언어를 사용합니다.
 
 AEM 6.0에서 JSP 구성 요소는 일반적으로 &quot;hbs&quot;라는 하위 폴더에 있는 HBS 구성 요소를 사용하여 같은 위치에서 새 HBS 프레임워크 구성 요소와 함께 남아 있습니다.
 
