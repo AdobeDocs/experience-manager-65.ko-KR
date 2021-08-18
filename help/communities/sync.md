@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f4f4be3d9885723953b1306ff25a52d27799aa93
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '2508'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ Apache Sling 동기화 에이전트 구성을 구성하려면 다음을 수행�
 
 동기화할 데이터(노드 경로)를 구성하려면 다음을 수행합니다.
 
-1. 작성자 인스턴스에 대한 관리자 권한으로 로그인합니다.
+1. 게시 인스턴스에 대한 관리자 권한으로 로그인합니다.
 1. [웹 콘솔](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html)에 액세스합니다.
 
    예: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
@@ -187,7 +187,7 @@ Apache Sling 동기화 에이전트 구성을 구성하려면 다음을 수행�
 
 멤버 동기화를 확인하려면
 
-1. AEM 작성자 인스턴스에 대한 관리자 권한으로 로그인합니다.
+1. 게시 인스턴스에 대한 관리자 권한으로 로그인합니다.
 1. [웹 콘솔](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html)에 액세스합니다.
 
    예: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
@@ -258,7 +258,7 @@ Apache Sling 동기화 에이전트 구성을 구성하려면 다음을 수행�
 
    이 속성에 지정된 노드 유형은 동기화되며 알림 정보(블로그 및 구성 후)는 다른 게시자 간에 동기화됩니다.
 
-1. **DistributedFolders**&#x200B;에서 동기화할 모든 폴더를 추가합니다. 예,
+1. **DistributedFolders**&#x200B;에서 동기화할 모든 폴더를 추가합니다. 예를 들어,
 
    `segments/scoring`
 
