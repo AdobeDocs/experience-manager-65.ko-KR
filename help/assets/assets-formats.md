@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: 자산 관리,표현물
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f0a0ea53675afa16463a3cf863257020ba5374d3
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1555'
 ht-degree: 10%
 
 ---
@@ -217,12 +217,8 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 | AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV(DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3(IV30), MJPEG, Microsoft® Video 1(MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| MTS | AVCHD | H264/AVC | - |
 | MKV | 마트로스카 | H264/AVC | - |
-| R3D, RM | Red Raw 비디오 | MJPEG 2000 | - |
 | RAM, RM | RealVideo | 지원되지 않음 | Real G2(RV20), Real 8(RV30), Real 10(RV40) |
-| FLAC | 네이티브 Flash | 무손실 오디오 코덱이 있습니다 | - |
 | MJ2 | 동작 JPEG 2000 | 모션 JPEG 2000 코덱을 | - |
 
 ## 지원되는 아카이브 형식 {#supported-archive-formats}
