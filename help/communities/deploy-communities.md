@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 626ffab5cd1b5ba9c0bd6928911aa09e9450e5fc
+source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1921'
 ht-degree: 1%
 
 ---
@@ -144,11 +144,11 @@ SCORM(Shareable Content Object Reference Model)은 e-learning을 위한 표준 �
 
 AEM Communities SCORM 엔진은 [지원](/help/communities/overview.md#enablement-community) 기능에 필요합니다. AEM 6.5 Communities에서 지원되는 Scorm 패키지:
 
-* [SCORM 2017.1 엔진을 포함하는 cq-social-scorm-package, 버전 ](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) 2.3.7 [ ](https://rusticisoftware.com/blog/scorm-engine-2017-released/) .
+* [SCORM 2017.1 엔진을 포함하는 cq-social-scorm-package, 버전 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) 2.3.7 [ ](https://rusticisoftware.com/blog/scorm-engine-2017-released/) .
 
 **SCORM 패키지를 설치하려면**
 
-1. 패키지 공유에서 [cq-social-scorm-package, 버전 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg)을 설치합니다.
+1. 패키지 공유에서 [cq-social-scorm-package, 버전 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)을 설치합니다.
 1. cq 인스턴스에서 `/libs/social/config/scorm/database_scormengine_data.sql` 을 다운로드하여 mysql 서버에서 실행하여 업그레이드된 scormEngineDB 스키마를 만듭니다.
 1. 게시자의 `https://<hostname>:<port>/system/console/configMgr`에서 CSRF 필터의 제외된 경로 속성에 `/content/communities/scorm/RecordResults`을 추가합니다.
 
