@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 exl-id: 4ca76b50-d56d-4f4d-be92-bf8929c5d754
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '362'
 ht-degree: 2%
 
 ---
 
-# 카탈로그 필수 패키지 {#catalog-essentials}
+# 카탈로그 핵심 사항 {#catalog-essentials}
 
 이 페이지에서는 지원 커뮤니티 사이트의 카탈로그 기능 작업에 필요한 필수 정보를 제공합니다.
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 [태깅 지원 리소스](tag-resources.md)를 참조하십시오.
 
-## 클라이언트측 {#essentials-for-client-side}에 대한 필수 사항
+## 클라이언트측 핵심 사항 {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -58,7 +58,7 @@ ht-degree: 2%
  </tbody>
 </table>
 
-## 서버측 {#essentials-for-server-side}에 대한 필수 사항
+## 서버측 핵심 사항 {#essentials-for-server-side}
 
 ### 카탈로그 기능 {#catalog-function}
 
@@ -77,7 +77,7 @@ ht-degree: 2%
 
 * 카탈로그 페이지의 카탈로그 리소스로 이동합니다
 
-   * 예, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
+   * 예를 들어, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
 * 하위 필터 노드 추가
 
@@ -94,8 +94,8 @@ ht-degree: 2%
    * 다중 속성 추가
 
       * 이름: `se_resource-tags`
-      * 유형:문자열
-      * 값:*[TagID](#pre-filter-tagids)* 입력
+      * 유형: 문자열
+      * 값: *[TagID](#pre-filter-tagids)* 입력
          * **[!UICONTROL Multi]** 선택
          * **[!UICONTROL 추가]** 선택
 
@@ -113,8 +113,8 @@ ht-degree: 2%
 
 ### 참조 API {#reference-apis}
 
-* [지원 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
+* [지원 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [보고 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [보고 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)
