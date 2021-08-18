@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: f4f4be3d9885723953b1306ff25a52d27799aa93
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2490'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ AEM Communities에서 사용자 동기화를 활성화하려면 다음 구성이
 Apache Sling 동기화 에이전트 구성을 구성하려면 다음을 수행하십시오.
 
 1. AEM 작성자 인스턴스에 대한 관리자 권한으로 로그인합니다.
-1. [웹 콘솔](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html)에 액세스합니다. 예: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+1. [웹 콘솔](/help/sites-deploying/configuring-osgi.md)에 액세스합니다. 예: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 1. **Apache Sling Distribution Agent - Sync Agent Factory**&#x200B;를 찾습니다.
 
    * 편집할 기존 구성을 선택합니다(연필 아이콘).
@@ -165,7 +165,7 @@ Apache Sling 동기화 에이전트 구성을 구성하려면 다음을 수행�
 동기화할 데이터(노드 경로)를 구성하려면 다음을 수행합니다.
 
 1. 게시 인스턴스에 대한 관리자 권한으로 로그인합니다.
-1. [웹 콘솔](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html)에 액세스합니다.
+1. [웹 콘솔](/help/sites-deploying/configuring-osgi.md)에 액세스합니다.
 
    예: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
@@ -188,7 +188,7 @@ Apache Sling 동기화 에이전트 구성을 구성하려면 다음을 수행�
 멤버 동기화를 확인하려면
 
 1. 게시 인스턴스에 대한 관리자 권한으로 로그인합니다.
-1. [웹 콘솔](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html)에 액세스합니다.
+1. [웹 콘솔](/help/sites-deploying/configuring-osgi.md)에 액세스합니다.
 
    예: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
