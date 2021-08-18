@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1521'
 ht-degree: 2%
 
 ---
 
-# SCF Handlebars 도우미 {#scf-handlebars-helpers}
+# SCF Handlebars Helpers {#scf-handlebars-helpers}
 
 | **[⇐ 기능 핵심 사항](essentials.md)** | **[서버 측 사용자 지정 ⇒](server-customize.md)** |
 |---|---|
@@ -47,19 +47,19 @@ safeString을 true로 설정하면 반환된 문자열이 SafeString입니다.
 
 ### 매개 변수 {#parameters}
 
-* **컨텍스트**:문자열
+* **컨텍스트**: 문자열
 
    (선택 사항) 기본값은 빈 문자열입니다
 
-* **maxLength**:숫자
+* **maxLength**: 숫자
 
    (선택 사항) 기본값은 컨텍스트 길이입니다.
 
-* **maxWords**:숫자
+* **maxWords**: 숫자
 
    (선택 사항) 기본값은 트림된 문자열의 단어 수입니다.
 
-* **safeString**:부울
+* **safeString**: 부울
 
    (선택 사항) true이면 Handlebars.SafeString() 을 반환합니다. 기본값은 false입니다.
 
@@ -95,23 +95,23 @@ Then abbreviate would return
 
 ### 매개 변수 {#parameters-1}
 
-* **컨텍스트**:문자열
+* **컨텍스트**: 문자열
 
    (선택 사항) 기본값은 빈 문자열입니다.
 
-* **numChars**:숫자
+* **numChars**: 숫자
 
    (선택 사항) 전체 텍스트를 표시하지 않을 때 표시할 문자 수입니다. 기본값은 100입니다.
 
-* **추가 텍스트**:문자열
+* **추가 텍스트**: 문자열
 
    (선택 사항) 표시할 텍스트가 더 있음을 나타내는 텍스트입니다. 기본값은 &quot;자세히&quot;입니다.
 
-* **줄임표 텍스트**:문자열
+* **줄임표 텍스트**: 문자열
 
    (선택 사항) 숨겨진 텍스트가 있음을 나타내는 텍스트입니다. 기본값은 &quot;...&quot;입니다.
 
-* **safeString**:부울
+* **safeString**: 부울
 
    (선택 사항) 결과를 반환하기 전에 Handlebars.SafeString()을 적용할지 여부를 나타내는 부울 값입니다. 기본값은 false입니다.
 
@@ -135,13 +135,13 @@ Then content-loadmore would return
 
 ### 매개 변수 {#parameters-2}
 
-* **컨텍스트**:숫자
+* **컨텍스트**: 숫자
 
    (선택 사항) 1970년 1월 1일부터 오프셋(epoch)인 밀리초 값입니다. 기본값은 현재 날짜입니다.
 
-* **형식**:문자열
+* **형식**: 문자열
 
-   (선택 사항) 적용할 날짜 형식입니다. 기본값은 &quot;YYYY-MM-DDTHH:mm:ss.ssZ&quot;이며, 결과는 &quot;2015-03-18T18:17:13-07:00&quot;으로 표시됩니다
+   (선택 사항) 적용할 날짜 형식입니다. 기본값은 &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot;이며, 결과는 &quot;2015-03-18T18:17:13-07:00&quot;으로 표시됩니다
 
 ### 예 {#examples-1}
 
@@ -163,11 +163,11 @@ Then content-loadmore would return
 
 ### 매개 변수 {#parameters-3}
 
-* **lvalue**:문자열
+* **lvalue**: 문자열
 
    비교할 왼쪽 값입니다.
 
-* **값**:문자열
+* **값**: 문자열
 
    비교할 오른쪽 값입니다.
 
@@ -187,11 +187,11 @@ Then content-loadmore would return
 
 ### 매개 변수 {#parameters-4}
 
-* **컨텍스트**:문자열
+* **컨텍스트**: 문자열
 
    (선택 사항) 번역할 문자열입니다. 기본값이 제공되지 않을 경우 필수입니다.
 
-* **모드**:문자열
+* **모드**: 문자열
 
    (선택 사항) 설정되어 있는 경우 테스트할 [WCM 모드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)를 쉼표로 구분한 목록입니다.
 
@@ -213,15 +213,15 @@ Then content-loadmore would return
 
 ### 매개 변수 {#parameters-5}
 
-* **컨텍스트**:문자열
+* **컨텍스트**: 문자열
 
    (선택 사항) 번역할 문자열입니다. 기본값이 제공되지 않을 경우 필수입니다.
 
-* **기본값**:문자열
+* **기본값**: 문자열
 
    (선택 사항) 번역할 기본 문자열입니다. 제공된 컨텍스트가 없는 경우 필요합니다.
 
-* **댓글**:문자열
+* **댓글**: 문자열
 
    (선택 사항) 번역 힌트입니다
 
@@ -244,7 +244,7 @@ Then content-loadmore would return
 
 ### 매개 변수 {#parameters-6}
 
-* **컨텍스트**:문자열 또는 개체
+* **컨텍스트**: 문자열 또는 개체
 
    (상대 경로를 제공하지 않는 한 선택 사항입니다)
 
@@ -252,19 +252,19 @@ Then content-loadmore would return
 
    `this.id` 을 사용하여 요청된 resourceType을 렌더링하기 위해 `id`에서 리소스를 가져옵니다.
 
-* **resourceType**:문자열
+* **resourceType**: 문자열
 
    (선택 사항) 리소스 유형은 기본적으로 컨텍스트의 리소스 유형으로 설정됩니다.
 
-* **템플릿**:문자열
+* **템플릿**: 문자열
 
    구성 요소 스크립트의 경로입니다.
 
-* **경로**:문자열
+* **경로**: 문자열
 
    (필수) 리소스의 경로입니다. 경로가 상대적이면 컨텍스트를 제공해야 하며, 그렇지 않으면 빈 문자열이 반환됩니다.
 
-* **authoringDisabled**:부울
+* **authoringDisabled**: 부울
 
    (선택 사항) 기본값은 false입니다. 내부용입니다.
 
@@ -284,19 +284,19 @@ js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라
 
 ### 매개 변수 {#parameters-7}
 
-* **카테고리**:문자열
+* **카테고리**: 문자열
 
    (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 및 CSS 라이브러리가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
-* **테마**:문자열
+* **테마**: 문자열
 
    (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS와 JS 모두)가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
-* **js**:문자열
+* **js**: 문자열
 
    (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 라이브러리가 포함됩니다.
 
-* **css**:문자열
+* **css**: 문자열
 
    (선택 사항) 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리의 모든 CSS 라이브러리가 포함됩니다.
 
@@ -340,7 +340,7 @@ js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라
     <link href="/etc/clientlibs/social/hbs/comments.css" rel="stylesheet" type="text/css">
 ```
 
-## Pretty-time {#pretty-time}
+## 꽤 {#pretty-time}
 
 시간 도우미에서 일정 날짜 형식이 표시되는 마감 지점까지 경과된 시간을 표시합니다.
 
@@ -351,11 +351,11 @@ js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라
 
 ### 매개 변수 {#parameters-8}
 
-* **컨텍스트**:숫자
+* **컨텍스트**: 숫자
 
    과거에 &#39;지금&#39;에 비교할 시간입니다. 시간은 1970년 1월 1일(epoch)부터 오프셋된 밀리초 값으로 표시됩니다.
 
-* **daysCutoff**:숫자
+* **daysCutoff**: 숫자
 
    실제 날짜로 전환하기 전 일 수입니다. 기본값은 60입니다.
 
@@ -379,11 +379,11 @@ Depending on how long in the past, may return
 
 XSS를 방지하는 데 도움이 되도록 HTML 요소 컨텐츠에 대한 소스 문자열을 인코딩하는 도우미.
 
-참고:유효성 검사기가 아니며, 특성 값을 쓰는 데 사용할 수 없습니다.
+참고: 유효성 검사기가 아니며, 특성 값을 쓰는 데 사용할 수 없습니다.
 
 ### 매개 변수 {#parameters-9}
 
-* **컨텍스트**:개체
+* **컨텍스트**: 개체
 
    인코딩할 HTML입니다.
 
@@ -397,11 +397,11 @@ XSS를 방지하는 데 도움이 되도록 HTML 요소 컨텐츠에 대한 소�
 
 XSS를 방지하기 위해 HTML 속성 값에 쓸 소스 문자열을 인코딩하는 도우미입니다.
 
-참고:이것은 유효성 검사기가 아니며, 실행 가능한 속성(href, src, 이벤트 핸들러)을 쓰는 데 사용할 수 없습니다.
+참고: 이것은 유효성 검사기가 아니며, 실행 가능한 속성(href, src, 이벤트 핸들러)을 쓰는 데 사용할 수 없습니다.
 
 ### 매개 변수 {#parameters-10}
 
-* **컨텍스트**:개체
+* **컨텍스트**: 개체
 
    인코딩할 HTML입니다.
 
@@ -415,11 +415,11 @@ XSS를 방지하기 위해 HTML 속성 값에 쓸 소스 문자열을 인코딩�
 
 XSS를 방지하기 위해 JavaScript 문자열 컨텐츠에 쓸 소스 문자열을 인코딩하는 도우미.
 
-참고:유효성 검사기가 아니며, 임의 JavaScript에 쓰는 데 사용할 수 없습니다.
+참고: 유효성 검사기가 아니며, 임의 JavaScript에 쓰는 데 사용할 수 없습니다.
 
 ### 매개 변수 {#parameters-11}
 
-* **컨텍스트**:개체
+* **컨텍스트**: 개체
 
    인코딩할 HTML입니다.
 
@@ -433,11 +433,11 @@ var input = {{xss-jsString topic-title}}
 
 XSS를 방지하기 위해 HTML href 또는 srce 속성 값으로 쓸 URL을 가릴 수 있는 도우미입니다.
 
-참고:빈 문자열을 반환할 수 있습니다
+참고: 빈 문자열을 반환할 수 있습니다
 
 ### 매개 변수 {#parameters-12}
 
-* **컨텍스트**:개체
+* **컨텍스트**: 개체
 
    가릴 URL입니다.
 
@@ -449,12 +449,10 @@ XSS를 방지하기 위해 HTML href 또는 srce 속성 값으로 쓸 URL을 가
 
 ## Handlebars.js 기본 개요 {#handlebars-js-basic-overview}
 
-[Handlebars.js 설명서](https://handlebarsjs.com/expressions.html)의 도우미 기능에 대한 빠른 개요:
-
 * Handlebars 도우미 호출은 간단한 식별자(도우미의 *name*)이며, 그 뒤에는 0개 이상의 공백으로 구분된 매개 변수가 옵니다.
 * 매개 변수는 간단한 문자열, 숫자, 부울 또는 JSON 개체일 수 있으며, 마지막 매개 변수로서 선택적 키-값 쌍(해시 인수) 시퀀스가 있을 수 있습니다.
 * 해시 인수의 키는 단순 식별자여야 합니다.
-* 해시 인수의 값은 Handlebars 표현식입니다.단순 식별자, 경로 또는 문자열
+* 해시 인수의 값은 Handlebars 표현식입니다. 단순 식별자, 경로 또는 문자열
 * 현재 컨텍스트 `this`은 항상 Handlebars 도우미가 사용할 수 있습니다.
 * 컨텍스트는 문자열, 숫자, 부울 또는 JSON 데이터 개체일 수 있습니다.
 * 현재 컨텍스트 내에 중첩된 개체를 `this.url` 또는 `this.id` 과 같은 컨텍스트로 전달할 수 있습니다(단순 및 블록 도움말의 다음 예 참조).
@@ -470,7 +468,7 @@ XSS를 방지하기 위해 HTML href 또는 srce 속성 값으로 쓸 URL을 가
 
 * 도우미에서 반환된 HTML 문자열 컨텐츠는 SafeString인 것이 좋습니다.
 
-### Handlebars.js 설명서의 간단한 도우미 예제:{#an-example-of-a-simple-helper-from-handlebars-js-documentation}
+### Handlebars.js 설명서의 간단한 도우미 예제: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
 ```
 Handlebars.registerHelper('link_to', function(title, options) {
@@ -496,7 +494,7 @@ template(context);
 &lt;li>&lt;a href=&quot;/posts/hello-world&quot;>포스트!&lt;/a>&lt;/li>
 &lt;/ul>
 
-### Handlebars.js 설명서의 블록 도우미의 예:{#an-example-of-a-block-helper-from-handlebars-js-documentation}
+### Handlebars.js 설명서의 블록 도우미의 예: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
 
 ```
 Handlebars.registerHelper('link', function(options) {
@@ -522,7 +520,7 @@ template(data);
 &lt;li>&lt;a href=&quot;/people/2&quot;>Yhuda&lt;/a>&lt;/li>
 &lt;/ul>
 
-## 사용자 지정 SCF 도우미 {#custom-scf-helpers}
+## 사용자 지정 SCF 도움말 {#custom-scf-helpers}
 
 사용자 지정 도우미는 특히 데이터를 전달할 때 서버측뿐만 아니라 클라이언트측에도 구현해야 합니다. SCF의 경우, 페이지가 요청될 때 서버가 주어진 구성 요소에 대한 HTML을 생성하므로 대부분의 템플릿은 서버 측에서 컴파일되고 렌더링됩니다.
 
@@ -601,7 +599,7 @@ clientlib은 다음 조건을 충족해야 합니다.
 * Handlebars가 로드된 후 로드합니다.
 * [included](clientlibs.md)이어야 합니다.
 
-참고:scf 도우미는 `/etc/clientlibs/social/commons/scf/helpers.js`에 정의됩니다.
+참고: scf 도우미는 `/etc/clientlibs/social/commons/scf/helpers.js`에 정의됩니다.
 
 | **[⇐ 기능 핵심 사항](essentials.md)** | **[서버 측 사용자 지정 ⇒](server-customize.md)** |
 |---|---|
