@@ -13,9 +13,9 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1674'
 ht-degree: 2%
 
 ---
@@ -113,7 +113,7 @@ ht-degree: 2%
 
 ![communitygrouptoc](assets/communitygrouptheme.png)
 
-이 프레임워크는 [Twitter Bootstrap](https://twitterbootstrap.org/)을 사용하여 반응형 유연한 디자인을 사이트로 가져옵니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 그룹 서식 파일의 스타일을 지정하거나 Bootstrap 테마를 업로드할 수 있습니다.
+프레임워크는 `Twitter Bootstrap`을 사용하여 반응형 유연한 디자인을 사이트로 가져옵니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 그룹 서식 파일의 스타일을 지정하거나 Bootstrap 테마를 업로드할 수 있습니다.
 
 이 옵션을 선택하면 테마가 불투명한 파란색 확인 표시로 오버레이됩니다.
 
