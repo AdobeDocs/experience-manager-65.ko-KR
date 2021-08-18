@@ -12,9 +12,9 @@ discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->고급 점수 및 배지 기능을 사용하려면 [전문가 식별 패키지](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)를 설치하십시오.
+>고급 점수 및 배지 기능을 사용하려면 [전문가 식별 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq610%2Fsocial%2Ffeaturepack%2Fcq-social-expert-identification-pkg)를 설치하십시오.
 
 ## 구성 가능한 점수 엔진 {#configurable-scoring-engine}
 
@@ -144,7 +144,7 @@ stopwords 파일이 없으면 고급 점수 엔진이 오류가 발생합니다.
   </tr>
   <tr>
    <td>badgingType</td>
-   <td>문자열</td>
+   <td>String</td>
    <td><em>(필수)</em> 점수 엔진을 "기본" 또는 "고급"으로 식별합니다. "고급"으로 설정하면 기본값이 "기본"입니다.</td>
   </tr>
   <tr>
