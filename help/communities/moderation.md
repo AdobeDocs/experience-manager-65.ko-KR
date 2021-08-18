@@ -12,9 +12,9 @@ discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2050'
 ht-degree: 3%
 
 ---
@@ -242,11 +242,11 @@ Github의 [샘플 프로젝트](https://github.com/Adobe-Marketing-Cloud/aem-com
 
 태그 필터에 대한 샘플을 설치하려면 다음을 수행하십시오.
 
-1. AEM 작성자([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) 인스턴스 및 AEM 게시([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) 인스턴스에서 패키지 관리자를 엽니다.
+1. AEM 작성자(`https://[aem-author]:4502/crx/packmgr/index.jsp`) 인스턴스와 AEM 게시(`https://[aem-publish]:4503/crx/packmgr/index.jsp`) 인스턴스에서 패키지 관리자를 엽니다.
 1. Github 코드에서 패키지 `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip`를 빌드하고 설치하고 이를 활성화합니다.
 1. AEM 작성자( `https://[aem-author]:4502/system/console/bundles`) 인스턴스와 AEM 게시( `https://[aem-publish]:4503/system/console/bundles`) 인스턴스에서 번들 콘솔을 엽니다.
-1. Github에서 패키지 ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`을 빌드하고 설치하고 이를 활성화합니다.
-1. AEM 작성자([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) 및 AEM 게시([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) 인스턴스로 이동합니다.****
+1. Github에서 패키지(`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`)를 작성하고 설치 및 활성화합니다.
+1. AEM 작성자(`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) 및 AEM 게시(`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) 인스턴스의 **/apps/social/moderation/facets** 노드로 이동합니다.
 1. `jcr:read` 권한이 있는 기술 사용자 **communities-utility-reader**&#x200B;를 추가합니다.
 
 기존 커뮤니티 사이트에 사용자 지정 필터를 노출하려면 다음을 수행하십시오.
