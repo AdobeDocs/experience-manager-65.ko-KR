@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3288'
 ht-degree: 4%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 4%
 
    * 올바른 URL의 경우 기본 언어 코드 + &quot;.html&quot;을 추가합니다
 
-      *예*, `https://localhost:4502/content/sites/mysight/en.html`
+      *예를 들어*, `https://localhost:4502/content/sites/mysight/en.html`
 
 * **커뮤니티 사이트** 템플릿 메뉴
 
@@ -130,7 +130,7 @@ ht-degree: 4%
 
 ![사이트테마](assets/sitetheme.png)
 
-이 프레임워크는 [Twitter Bootstrap](https://twitterbootstrap.org/)을 사용하여 반응형 유연한 디자인을 사이트로 가져옵니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 사이트 템플릿의 스타일을 지정하거나 Bootstrap 테마를 업로드할 수 있습니다.
+프레임워크는 `Twitter Bootstrap`을 사용하여 반응형 유연한 디자인을 사이트로 가져옵니다. 미리 로드된 여러 Bootstrap 테마 중 하나를 선택하여 선택한 커뮤니티 사이트 템플릿의 스타일을 지정하거나 Bootstrap 테마를 업로드할 수 있습니다.
 
 이 옵션을 선택하면 테마가 불투명한 파란색 확인 표시로 오버레이됩니다.
 
