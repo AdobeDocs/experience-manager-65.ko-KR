@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '222'
 ht-degree: 12%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 지정 기능은 지원 커뮤니티 구성원에게 지원 리소스와 학습 경로를 할당하는 기능입니다.
 
-## 클라이언트측 {#essentials-for-client-side}에 대한 필수 사항
+## 클라이언트측 핵심 사항 {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -81,7 +81,7 @@ ht-degree: 12%
 | 완료 | 합격 |
 | 완료 | 실패 |
 
-## 서버측 {#essentials-for-server-side}에 대한 필수 사항
+## 서버측 핵심 사항 {#essentials-for-server-side}
 
 ### 지정 기능 {#assignments-function}
 
@@ -93,4 +93,4 @@ ht-degree: 12%
 
 * [보고 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)
