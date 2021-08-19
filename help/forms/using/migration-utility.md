@@ -13,7 +13,7 @@ discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 3%
@@ -191,7 +191,7 @@ ht-degree: 3%
 
 ### 마이그레이션 유틸리티를 실행한 후 하우스키핑 작업 {#housekeepingtasks}
 
-마이그레이션 유틸리티를 실행한 후 다음 하우스키핑 작업을 수행합니다. [](../../forms/using/import-export-forms-templates.md)
+마이그레이션 유틸리티를 실행한 후 다음 하우스키핑 작업을 수행합니다.
 
 1. XFA 버전의 레이아웃 및 조각 레이아웃이 3.3 이상인지 확인합니다. 이전 버전의 레이아웃 및 조각 레이아웃을 사용하는 경우 편지를 렌더링하는 데 문제가 있을 수 있습니다. 이전 XFA 버전을 최신 버전으로 업데이트하려면 다음 단계를 수행하십시오.
 
