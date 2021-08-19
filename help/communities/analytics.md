@@ -12,7 +12,7 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: fcdadcf691ed5a569a5a40ca070f8ec266ec3eb9
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 3%
@@ -154,7 +154,7 @@ Adobe Marketing Cloud의 [보고서 세트 관리자](https://docs.adobe.com/con
 * 커뮤니티 사이트에 대해 [Analytics 활성화](#enable-analytics-for-a-community-site)
 * `Marketing Cloud Org Id`을(를) 커뮤니티 사이트와 연결
 
-`Marketing Cloud Org Id`은 [커뮤니티 사이트 생성](/help/communities/sites-console.md#enablement) 시 또는 [커뮤니티 사이트 속성 수정](/help/communities/sites-console.md#modifying-site-properties)에 의해 입력될 수 있습니다. [](#aem-analytics-cloud-service-configuration)
+`Marketing Cloud Org Id`은 [커뮤니티 사이트 생성](/help/communities/sites-console.md#enablement) 시 또는 [커뮤니티 사이트 속성 수정](/help/communities/sites-console.md#modifying-site-properties)에 의해 입력될 수 있습니다.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
@@ -646,7 +646,7 @@ Analytics가 활성화된 커뮤니티 사이트가 게시되면 기본 게시�
 * [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)로 이동합니다. 예: [https://localhost:4503/crx/de](https://localhost:4503/crx/de)
 
 * 언어 루트의 jcr:content 노드 아래(예: `/content/sites/engage/en/jcr:content),`Analytics 보고에 대해 구성된 구성 요소로 이동합니다.)
-예, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+예를 들어, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * 생성된 기간을 확인합니다.
 
