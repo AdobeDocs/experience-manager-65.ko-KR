@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 88%
@@ -62,10 +62,10 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 * [문서](#finding-documents)
 * [동영상](#finding-movies)
 * [Dynamic Media 브라우저](/help/sites-administering/scene7.md#scene7contentbrowser)
-* [](#products) [페이지](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
+* [페이지](#finding-pages)
 
 * [단락](#referencing-paragraphs-from-other-pages)
-* [제품](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
+* [제품](#products)
 * 또는 [저장소 구조별로 웹 사이트를 검색할 수 있음](#the-content-finder)
 
 모든 옵션에서 [특정 항목을 검색할 수 있습니다](#the-content-finder).
@@ -102,7 +102,7 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 ### 페이지 찾기 {#finding-pages}
 
-이 탭에는 모든 페이지가 표시됩니다.편집할 페이지를 두 번 클릭하여 엽니다.
+이 탭에는 모든 페이지가 표시됩니다. 편집할 페이지를 두 번 클릭하여 엽니다.
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
