@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 1%
 
 ---
 
-# 게시된 사이트 {#experience-the-published-site}에 경험하십시오.
+# 게시된 사이트 경험 {#experience-the-published-site}
 
-## 게시 {#browse-to-new-site-on-publish}에서 새 사이트 찾아보기
+## 게시할 때 새 사이트 찾아보기 {#browse-to-new-site-on-publish}
 
 새로 만든 커뮤니티 사이트가 게시되었으므로 사이트를 만들 때 표시되는 URL을 탐색하지만 게시 서버에서 다음과 같이 찾습니다.
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 다양한 링크를 선택하면 해당 링크가 읽기 전용 모드임을 알 수 있습니다.
 
-### JCR {#prevent-anonymous-access-on-jcr}에 대한 익명 액세스 방지
+### JCR에 대한 익명 액세스 방지 {#prevent-anonymous-access-on-jcr}
 
 알려진 제한 사항은 사이트의 컨텐츠에 대해 **익명 액세스 허용**&#x200B;이 비활성화되었더라도 jcr 컨텐츠 및 json 을 통해 커뮤니티 사이트 컨텐츠를 익명 방문자에게 노출합니다. 그러나 해결 방법으로 Sling 제한을 사용하여 이 동작을 제어할 수 있습니다.
 
@@ -205,7 +205,7 @@ Weston McCall(weston.mccall@dodgit.com / 암호)로 로그인하고 동일한 �
 
 커뮤니티 구성원에게 중재 권한이 있으면 조정 링크가 표시되며 이 링크를 선택하면 게시된 커뮤니티 컨텐츠가 표시되고, 이 링크를 선택하면 작성 환경의 [중재 콘솔](/help/communities/moderation.md)과 유사한 방식으로 [중재된](/help/communities/moderate-ugc.md)이 됩니다.
 
-브라우저의 뒤로 단추를 사용하여 게시된 사이트로 돌아갑니다. 대부분의 콘솔은 게시 환경의 전역 탐색에서 액세스할 수 없습니다.[](/help/communities/moderate-ugc.md)
+브라우저의 뒤로 단추를 사용하여 게시된 사이트로 돌아갑니다. 대부분의 콘솔은 게시 환경의 전역 탐색에서 액세스할 수 없습니다.
 
 ![moderationlink](assets/moderationlink.png)
 
