@@ -8,9 +8,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 812d1a43176a75ff22e3a0bc07bc658cb5070a62
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3002'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 >
 >추가 설정 없이 해당 아래의 어디에서든 새 제품 정의를 만들 수 있습니다.
 
-### 제품 {#importing-products} 가져오기
+### 제품 가져오기 {#importing-products}
 
 #### 제품 가져오기 - 터치에 적합한 UI {#importing-products-touch-optimized-ui}
 
@@ -76,7 +76,7 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 
    * **소스**
 
-      가져올 파일브라우저를 사용하여 파일을 선택할 수 있습니다.
+      가져올 파일 브라우저를 사용하여 파일을 선택할 수 있습니다.
 
    * **증분 가져오기**
 
@@ -116,7 +116,7 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 
    * **상거래 공급자**
 
-      [상거래 공급자의 가져오기](/help/commerce/cif-classic/administering/concepts.md#commerce-providers);기본 Geometrixx.
+      [상거래 공급자의 가져오기](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); 기본 Geometrixx.
 
    * **소스 파일**
 
@@ -203,7 +203,7 @@ AEM 일반 솔루션은 외부 전자 상거래 엔진을 사용하는 것과 �
 
    ![chlimage_1-89](/help/sites-administering/assets/chlimage_1-89.png)
 
-### 제품 {#search-for-products} 검색
+### 제품 검색 {#search-for-products}
 
 1. **Commerce**&#x200B;를 통해 **Products** 콘솔로 이동합니다.
 1. 아이콘을 사용하여 검색에 대한 보조 레일을 엽니다.
@@ -352,7 +352,7 @@ Search &amp; Promote 통합을 통해 다음을 수행할 수 있습니다.
 
 자세한 내용은 [제품 피드](/help/sites-administering/product-feed.md)를 참조하십시오.
 
-### 제품 업데이트 {#event-handler-for-product-updates}에 대한 이벤트 처리기
+### 제품 업데이트에 대한 이벤트 처리기 {#event-handler-for-product-updates}
 
 제품 추가, 수정 또는 삭제 시 및 제품 페이지가 추가, 수정 또는 삭제될 때 이벤트를 기록하는 이벤트 처리기가 있습니다. 다음과 같은 OSGi 이벤트가 있습니다.
 
@@ -371,7 +371,7 @@ OSGI 이벤트( `/system/console/events`)의 웹 콘솔에서 볼 수 있습니�
 
 >[!NOTE]
 >
->[AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)에서 이벤트 처리를 참조하십시오. [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)에서 [이벤트 처리를 참조하십시오.
 
 ### 장바구니에 추가 링크가 있는 이미지 {#image-with-add-to-cart-links}
 
@@ -492,20 +492,20 @@ OSGI 이벤트( `/system/console/events`)의 웹 콘솔에서 볼 수 있습니�
 
 1. **섹션 블루프린트** 템플릿을 사용하여 새 페이지를 만듭니다.
 
-   예, `Swimwear`.
+   예를 들어, `Swimwear`.
 
 1. 새 `Swimwear` 페이지를 열고 **블루프린트 편집**&#x200B;을 클릭하여 **속성** 대화 상자를 엽니다. 여기에서 **제품** 선택을 설정할 수 있습니다.
 
    예를 들어 **태그/키워드** 필드를 열어 활동 을 선택한 다음, Geometrixx-Outdoors 섹션에서 수영 을 선택합니다.
 
-1. 속성을 저장하려면 **확인**&#x200B;을 클릭하십시오.예제 제품은 블루프린트 페이지의 **제품 선택 기준** 아래에 표시됩니다.
+1. 속성을 저장하려면 **확인**&#x200B;을 클릭하십시오. 예제 제품은 블루프린트 페이지의 **제품 선택 기준** 아래에 표시됩니다.
 1. **롤아웃 변경..**, **롤아웃 페이지 및 모든 하위 페이지**&#x200B;를 선택한 다음 **다음**&#x200B;을 클릭한 다음 **롤아웃**&#x200B;을 클릭합니다. 롤아웃이 성공적으로 완료되면 **상태** 표시기가 녹색으로 표시됩니다.
-1. 이제 **닫기**&#x200B;를 클릭하고 새 카탈로그 섹션을 확인할 수 있습니다.예: on 및 under:
+1. 이제 **닫기**&#x200B;를 클릭하고 새 카탈로그 섹션을 확인할 수 있습니다. 예: on 및 under:
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
 
-1. 블루프린트 페이지에서 다시 **블루프린트 편집**&#x200B;을 클릭하고 **속성** 대화 상자에서 **생성된 페이지** 탭을 엽니다. 배너 목록 필드에서 표시할 이미지를 선택합니다.예: `summer.jpg`
-1. 속성을 저장하려면 **확인**&#x200B;을 클릭하십시오.배너 정보는 블루프린트 페이지의 **제품 선택 기준**&#x200B;에 표시됩니다.
+1. 블루프린트 페이지에서 다시 **블루프린트 편집**&#x200B;을 클릭하고 **속성** 대화 상자에서 **생성된 페이지** 탭을 엽니다. 배너 목록 필드에서 표시할 이미지를 선택합니다. 예: `summer.jpg`
+1. 속성을 저장하려면 **확인**&#x200B;을 클릭하십시오. 배너 정보는 블루프린트 페이지의 **제품 선택 기준**&#x200B;에 표시됩니다.
 1. 이러한 새 변경 사항을 롤아웃합니다.
 
 ### 카탈로그 롤아웃 {#rolling-out-a-catalog}
@@ -600,7 +600,7 @@ OSGI 이벤트( `/system/console/events`)의 웹 콘솔에서 볼 수 있습니�
 
 ## 바우처 {#vouchers}
 
-### 바우처 {#creating-a-voucher} 만들기
+### 바우처 만들기 {#creating-a-voucher}
 
 #### 바우처 만들기 - 클래식 UI {#creating-a-voucher-classic-ui}
 
@@ -614,7 +614,7 @@ OSGI 이벤트( `/system/console/events`)의 웹 콘솔에서 볼 수 있습니�
 
 1. 이제 바우처를 활성화할 수 있으므로 쇼핑객이 게시 인스턴스의 장바구니에서 사용할 수 있습니다.
 
-### 바우처를 제거하는 중 {#removing-vouchers}
+### 바우처 제거 {#removing-vouchers}
 
 #### 바우처 제거 - 클래식 UI {#removing-vouchers-classic-ui}
 
@@ -643,7 +643,7 @@ OSGI 이벤트( `/system/console/events`)의 웹 콘솔에서 볼 수 있습니�
 >
 >즉시 사용 가능한 AEM에는 반품, 주문 상태 업데이트, 이행 수행, 포장 명세서 생성과 같은 주문과 관련된 표준 기능에 필요한 작업이 없습니다. 주로 기술 미리 보기로 사용됩니다.
 >
->AEM의 일반 주문 관리는 기본 상태를 유지합니다.마법사에서 사용할 수 있는 필드는 스캐폴드에 따라 다릅니다.
+>AEM의 일반 주문 관리는 기본 상태를 유지합니다. 마법사에서 사용할 수 있는 필드는 스캐폴드에 따라 다릅니다.
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >사용자 지정된 스캐폴드를 생성하는 경우 주문 정보를 더 저장할 수 있습니다.
@@ -654,7 +654,7 @@ OSGI 이벤트( `/system/console/events`)의 웹 콘솔에서 볼 수 있습니�
 >
 >고객 주문 정보는 해당 홈 디렉토리에 저장되며 해당 계정의 주문 내역에 의해 노출됩니다. 이 정보는 홈 디렉토리의 나머지 디렉토리와 함께 게시됩니다.
 
-### 주문 정보 만들기 {#creating-order-information}
+### 주문 정보 생성 {#creating-order-information}
 
 #### 주문 정보 만들기 - 터치에 적합한 UI {#creating-order-information-touch-optimized-ui}
 
