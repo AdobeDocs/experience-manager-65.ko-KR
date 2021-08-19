@@ -7,7 +7,8 @@ uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
+source-git-commit: 61691c300322edcdee33b121ca400e4c89256e45
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 2%
@@ -26,7 +27,7 @@ ht-degree: 2%
 1. [카탈로그 가져오기를 구성합니다](#configure-the-catalog-importer).
 1. [가져오기를 사용하여 카탈로그](#catalog-import)를 AEM의 특정 위치로 가져옵니다.
 
-## Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}에 대해 성공한 검색 구성
+## Geometrixx Outdoors에 대한 인증된 검색 구성 {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -100,7 +101,7 @@ ht-degree: 2%
    * **색인 작업**:  `full`
    * **솔루션 구성**:  `Sample Solr Config for Clothes`
 
-## 카탈로그 버전 {#configure-the-catalog-version} 구성
+## 카탈로그 버전 구성 {#configure-the-catalog-version}
 
 가져오는 **카탈로그 버전**( `hybris.catalog.version`)은 OSGi 서비스에 대해 구성할 수 있습니다.
 
@@ -111,11 +112,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다.자세한 내용은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오. 구성 가능한 매개 변수와 그 기본값은 전체 목록이 필요하면 콘솔 을 참조하십시오.
+>AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오. 구성 가능한 매개 변수와 그 기본값은 전체 목록이 필요하면 콘솔 을 참조하십시오.
 
 로그 출력은 생성된 페이지 및 구성 요소에 대한 피드백을 제공하고 잠재적인 오류를 보고합니다.
 
-## 가져오기 구조 {#configure-the-import-structure} 구성
+## 가져오기 구조 구성 {#configure-the-import-structure}
 
 다음 목록은 기본적으로 생성되는 샘플 구조(자산, 페이지 및 구성 요소)를 보여줍니다.
 
@@ -163,9 +164,9 @@ ht-degree: 2%
 &quot;**일 CQ Commerce Hybris 기본 가져오기 처리기**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
-AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다.자세한 내용은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오. 구성 가능한 매개 변수와 그 기본값은 전체 목록이 필요하면 콘솔 을 참조하십시오.
+AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오. 구성 가능한 매개 변수와 그 기본값은 전체 목록이 필요하면 콘솔 을 참조하십시오.
 
-## {#configure-the-product-attributes-to-load} 로드하도록 제품 속성 구성
+## 로드할 제품 속성 구성 {#configure-the-product-attributes-to-load}
 
 응답 파서는 (변형) 제품에 로드할 속성과 속성을 정의하도록 구성할 수 있습니다.
 
@@ -178,7 +179,7 @@ AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설
 
    >[!NOTE]
    >
-   >AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다.자세한 내용은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오. 구성 가능한 매개 변수와 그 기본값은 전체 목록이 필요하면 콘솔 을 참조하십시오.
+   >AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오. 구성 가능한 매개 변수와 그 기본값은 전체 목록이 필요하면 콘솔 을 참조하십시오.
 
 ## 제품 데이터 가져오기 {#importing-the-product-data}
 
@@ -200,7 +201,7 @@ hybris에서 가져온 실제 제품 정보는 다음 보관소에 보관됩니�
 
 >[!NOTE]
 >
->hybris 구현(즉,`geometrixx-outdoors/en_US`)는 `/etc/commerce` 아래에 제품 ID와 기타 기본 정보만 저장합니다.
+>hybris 구현(즉, `geometrixx-outdoors/en_US`)는 `/etc/commerce` 아래에 제품 ID와 기타 기본 정보만 저장합니다.
 >
 >제품에 대한 정보가 요청될 때마다 hybris 서버가 참조됩니다.
 
@@ -216,7 +217,7 @@ hybris에서 가져온 실제 제품 정보는 다음 보관소에 보관됩니�
 
       [`http://localhost:4502/crx/de/index.jsp#/etc/commerce/products`](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-   1. 제품 데이터를 포함하는 노드를 삭제합니다.예: `outdoors`
+   1. 제품 데이터를 포함하는 노드를 삭제합니다. 예: `outdoors`
    1. **모두** 저장 변경 사항을 유지합니다.
 
 1. AEM에서 hybris 가져오기를 엽니다.
@@ -227,7 +228,7 @@ hybris에서 가져온 실제 제품 정보는 다음 보관소에 보관됩니�
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. 필요한 매개 변수를 구성합니다.예:
+1. 필요한 매개 변수를 구성합니다. 예:
 
    ![chlimage_1-42](/help/sites-administering/assets/chlimage_1-42a.png)
 
@@ -239,7 +240,7 @@ hybris에서 가져온 실제 제품 정보는 다음 보관소에 보관됩니�
        /etc/commerce/products/outdoors
    ```
 
-   CRXDE Lite에서 열 수 있습니다.예:
+   CRXDE Lite에서 열 수 있습니다. 예:
 
    `[http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
 
@@ -249,7 +250,7 @@ hybris에서 가져온 실제 제품 정보는 다음 보관소에 보관됩니�
 
    `/etc/commerce/products`
 
-   CRXDE Lite에서 열 수 있습니다.예:
+   CRXDE Lite에서 열 수 있습니다. 예:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -281,13 +282,13 @@ hybris에서 가져온 실제 제품 정보는 다음 보관소에 보관됩니�
 
    `/etc/commerce/products`
 
-   CRXDE Lite에서 열 수 있습니다.예:
+   CRXDE Lite에서 열 수 있습니다. 예:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
 1. hybris에서 잔잔한 제품에 담긴 정보를 업데이트합니다.
 
-1. hybris에서 Express Queue에 제품을 추가합니다.예:
+1. hybris에서 Express Queue에 제품을 추가합니다. 예:
 
    ![chlimage_1-43](/help/sites-administering/assets/chlimage_1-43a.png)
 
@@ -308,9 +309,7 @@ hybris에서 가져온 실제 제품 정보는 다음 보관소에 보관됩니�
        /etc/commerce/products
    ```
 
-   ` [](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
-
-## 카탈로그 가져오기 {#configure-the-catalog-importer} 구성
+## 카탈로그 가져오기 구성 {#configure-the-catalog-importer}
 
 hybris 카탈로그를 Hybris 카탈로그, 카테고리 및 제품에 대한 배치 가져오기를 사용하여 AEM으로 가져올 수 있습니다.
 
@@ -319,7 +318,7 @@ hybris 카탈로그를 Hybris 카탈로그, 카테고리 및 제품에 대한 �
 **Day CQ Commerce Hybris 카탈로그 가져오기**
 (  `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
-AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다.자세한 내용은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오. 구성 가능한 매개 변수와 그 기본값은 전체 목록이 필요하면 콘솔 을 참조하십시오.
+AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오. 구성 가능한 매개 변수와 그 기본값은 전체 목록이 필요하면 콘솔 을 참조하십시오.
 
 ## 카탈로그 가져오기 {#catalog-import}
 
@@ -346,7 +345,7 @@ Catalog가져올 카탈로그의 식별자입니다.
 
 카탈로그에서 하나 이상의 제품을 제거하려면
 
-1. [OSGi ](/help/sites-deploying/configuring-osgi.md) **serviceDay CQ Commerce Hybris Catalog Importer에 대해 를 구성합니다**.카탈로그  [가져오기 구성](#configure-the-catalog-importer)을 참조하십시오.
+1. [OSGi ](/help/sites-deploying/configuring-osgi.md) **serviceDay CQ Commerce Hybris Catalog Importer에 대해 를 구성합니다**. 카탈로그  [가져오기 구성](#configure-the-catalog-importer)을 참조하십시오.
 
    다음 속성을 활성화합니다.
 
@@ -355,7 +354,7 @@ Catalog가져올 카탈로그의 식별자입니다.
 
    >[!NOTE]
    >
-   >AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다.자세한 내용은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오. 구성 가능한 매개 변수와 그 기본값은 전체 목록이 필요하면 콘솔 을 참조하십시오.
+   >AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오. 구성 가능한 매개 변수와 그 기본값은 전체 목록이 필요하면 콘솔 을 참조하십시오.
 
 1. 두 개의 증분 업데이트를 수행하여 가져오기를 초기화합니다( [카탈로그 가져오기](#catalog-import) 참조).
 
@@ -406,7 +405,7 @@ Catalog가져올 카탈로그의 식별자입니다.
       1. 적절한 카탈로그를 다시 롤아웃
       1. 적절한 카테고리 페이지 새로 고침
 
-## Client Context {#add-order-history-trait-to-the-client-context}에 주문 내역 트레이트 추가
+## Client Context에 주문 내역 특성 추가 {#add-order-history-trait-to-the-client-context}
 
 주문 내역을 [클라이언트 컨텍스트](/help/sites-developing/client-context.md)에 추가하려면:
 
