@@ -11,7 +11,7 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '4901'
 ht-degree: 96%
@@ -114,7 +114,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 정의에 따라, 템플릿 콘솔 및 템플릿 편집기는 편집 가능 템플릿의 작성 및 편집만 허용합니다. 따라서 이 문서는 편집 가능 템플릿에만 중점을 둡니다.
 
-### 템플릿을 사용하여 페이지 만들기  {#using-a-template-to-create-a-page}
+### 템플릿을 사용하여 페이지 만들기 {#using-a-template-to-create-a-page}
 
 템플릿을 사용하여 [새 페이지를 만들 경우](/help/sites-authoring/managing-pages.md#creating-a-new-page) 정적 및 편집 가능 템플릿 간에 차이점은 없으며 구분하는 표시도 없습니다. 페이지 작성자를 위해 프로세스는 투명하게 진행됩니다.
 
@@ -127,7 +127,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    * 또는 [에서 바로 사용할 수 있습니다.https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * 필요한 경우 [템플릿용 폴더를 만들 수](#creating-a-template-folder-admin) 있습니다.
-* 처음에는 빈 상태인 [새 템플릿을 만듭니다](#creatinganewtemplateauthor).  [](#templatedefinitions)
+* 처음에는 빈 상태인 [새 템플릿을 만듭니다](#creatinganewtemplateauthor).
 
 * 필요한 경우 템플릿에 대한 [추가 속성을 정의](#definingtemplatepropertiesauthor)합니다.
 * [템플릿을 편집](#editingtemplates)하여 다음을 정의합니다.
@@ -183,7 +183,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
    >
    >새 템플릿이 작성되면 콘솔에서 **초안**&#x200B;으로 표시되어 페이지 작성자가 아직 사용할 수 없음을 나타냅니다.
 
-### 템플릿 속성 정의 - 템플릿 작성자  {#defining-template-properties-template-author}
+### 템플릿 속성 정의 - 템플릿 작성자 {#defining-template-properties-template-author}
 
 템플릿에는 다음 속성을 지정할 수 있습니다.
 
@@ -234,7 +234,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 1. 썸네일이 만족스러우면 **저장 및 닫기**&#x200B;를 클릭하거나 탭합니다.
 
-### 템플릿 활성화 및 허용 - 템플릿 작성자  {#enabling-and-allowing-a-template-template-author}
+### 템플릿 활성화 및 허용 - 템플릿 작성자 {#enabling-and-allowing-a-template-template-author}
 
 페이지를 작성할 때 템플릿을 사용하려면 다음을 수행해야 합니다.
 
@@ -296,7 +296,7 @@ AEM은 이제 다음과 같은 두 가지 기본 유형의 템플릿을 제공�
 
 1. 도구 모음에서 **게시**&#x200B;를 선택하여 작업을 완료합니다.
 
-## 템플릿 편집 - 템플릿 작성자  {#editing-templates-template-authors}
+## 템플릿 편집 - 템플릿 작성자 {#editing-templates-template-authors}
 
 템플릿을 만들거나 편집할 때 다양한 측면을 정의할 수 있습니다. 템플릿 편집 작업은 페이지 작성과 유사합니다.
 
