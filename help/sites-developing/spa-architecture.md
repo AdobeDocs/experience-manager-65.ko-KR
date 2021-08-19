@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2122'
 ht-degree: 2%
@@ -28,7 +28,7 @@ SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭
 >
 >SPA 편집기는 SPA 프레임워크 기반 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
-## AEM {#spa-development-principles-for-aem}에 대한 SPA 개발 원칙
+## AEM 개발 원칙 {#spa-development-principles-for-aem}
 
 AEM에서 단일 페이지 애플리케이션을 개발하는 경우 프런트 엔드 개발자는 SPA을 만들 때 표준 우수 사례를 관찰한다고 가정합니다. 프런트 엔드 개발자로서 이러한 일반 모범 사례와 몇 가지 AEM 관련 원칙을 따르는 경우 SPA은 [AEM 및 해당 컨텐츠 작성 기능](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa)에서 사용할 수 있습니다.
 
@@ -55,7 +55,7 @@ AEM 작성 기능을 지원하지 않아도 되는 경우 다른 [SPA 디자인 
 
 ### 동적 렌더링 {#dynamic-rendering}
 
-SPA은 컨텐츠의 동적 렌더링만 사용해야 합니다. 이는 AEM이 컨텐츠 구조의 모든 하위 항목을 가져오고 렌더링하는 기본 예측입니다.[](/help/sites-developing/spa-architecture.md#portability)
+SPA은 컨텐츠의 동적 렌더링만 사용해야 합니다. 이는 AEM이 컨텐츠 구조의 모든 하위 항목을 가져오고 렌더링하는 기본 예측입니다.
 
 특정 컨텐츠를 가리키는 명시적 렌더링은 정적 렌더링으로 간주되지만 지원되는 것은 AEM 컨텐츠 작성 기능과 호환되지 않습니다. 이는 [이식성](/help/sites-developing/spa-architecture.md#portability)의 원칙과도 어긋납니다.
 
@@ -71,7 +71,7 @@ SPA은 컨텐츠의 동적 렌더링만 사용해야 합니다. 이는 AEM이 �
 
 ## SPA 디자인 모델 {#spa-design-models}
 
-AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)에서 SPA을 개발하는 [의 원칙을 따를 경우 SPA은 지원되는 모든 AEM 컨텐츠 작성 기능과 함께 작동합니다.[](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)
+AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)에서 SPA을 개발하는 [의 원칙을 따를 경우 SPA은 지원되는 모든 AEM 컨텐츠 작성 기능과 함께 작동합니다.
 
 그러나 이것이 완전히 필요하지 않은 경우도 있을 수 있습니다. 다음 표에서는 다양한 디자인 모델, 그 이점 및 그 단점에 대해 간략하게 설명합니다.
 
@@ -103,9 +103,8 @@ AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-a
 >[!NOTE]
 >
 >모든 모델은 AEM에서 지원되지만, 세 번째(및 이에 따라 AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)에서 권장되는 [SPA 개발 원칙을 따르는 경우에만 컨텐츠 작성자는 익숙해진 대로 AEM에서 SPA의 컨텐츠와 상호 작용하고 편집할 수 있습니다.
->[](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)
 
-## 기존 SPA을 AEM {#migrating-existing-spas-to-aem}으로 마이그레이션
+## 기존 SPA에서 AEM으로 마이그레이션 {#migrating-existing-spas-to-aem}
 
 일반적으로 SPA이 AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)SPA 개발 원칙을 따르는 경우, SPA은 AEM에서 작동하며 AEM SPA 편집기를 사용하여 편집할 수 있습니다.[
 
@@ -165,7 +164,7 @@ AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-a
 
    정규 표현식 목록을 무시하도록 `ModelRouter` 을 비활성화하거나 구성할 수 있습니다.
 
-## AEM-Agnostic {#aem-agnostic}
+## AEM-agnostic {#aem-agnostic}
 
 이러한 코드 블록은 React 및 Angular 구성 요소에 Adobe 또는 AEM 관련 항목이 필요하지 않음을 보여줍니다.
 
