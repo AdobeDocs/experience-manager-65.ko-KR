@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 사용자가 워크플로우를 시작할 때 실행되는 일련의 단계를 정의하는 [워크플로우 모델](/help/sites-developing/workflows.md#model)을 만듭니다. 워크플로우가 일시적인지 또는 여러 리소스를 사용하는지 등의 모델 속성을 정의할 수도 있습니다.
 
-사용자가 워크플로우를 시작하면 인스턴스가 시작됩니다.이 모델은 [동기화](#sync-your-workflow-generate-a-runtime-model)에서 변경 내용을 적용할 때 생성되는 해당 런타임 모델입니다.
+사용자가 워크플로우를 시작하면 인스턴스가 시작됩니다. 이 모델은 [동기화](#sync-your-workflow-generate-a-runtime-model)에서 변경 내용을 적용할 때 생성되는 해당 런타임 모델입니다.
 
 ## 새 워크플로우 만들기 {#creating-a-new-workflow}
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 편집기를 사용하여 새 워크플로우를 만들려면 다음을 수행하십시오.
 
-1. **워크플로우 모델** 콘솔을 엽니다.**도구**, **워크플로우**, **모델**&#x200B;을 통해 또는 예를 들면 다음과 같습니다.[https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
+1. **워크플로우 모델** 콘솔을 엽니다. **도구**, **워크플로우**, **모델**&#x200B;을 통해 또는 예를 들면 다음과 같습니다. [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. **만들기**&#x200B;를 선택한 다음 **모델 만들기**&#x200B;를 선택합니다.
 1. **워크플로우 모델 추가** 대화 상자가 나타납니다. **완료**&#x200B;를 선택하기 전에 **제목** 및 **이름**(선택 사항)을 입력합니다.
 1. 새 모델은 **워크플로우 모델** 콘솔에 나열됩니다.
@@ -52,7 +52,7 @@ ht-degree: 2%
 >
 >`/var/workflow/models`
 >
->예, `/var/workflow/models/prototypes`
+>예를 들어, `/var/workflow/models/prototypes`
 >
 >그런 다음 이 폴더를 [해당 폴더의 모델에 대한 액세스를 관리하는 데 사용할 수 있습니다](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
 
@@ -79,7 +79,7 @@ ht-degree: 2%
 
 ![wf-21](assets/wf-21.png)
 
-### 처음 {#editing-a-default-or-legacy-workflow-for-the-first-time} 기본 또는 레거시 워크플로우 편집
+### 처음으로 기본 또는 레거시 워크플로우 편집 {#editing-a-default-or-legacy-workflow-for-the-first-time}
 
 편집할 [기본 및/또는 레거시 모델](/help/sites-developing/workflows.md#workflow-types)을 연 경우:
 
@@ -115,7 +115,7 @@ ht-degree: 2%
 워크플로우 모델에 단계를 추가하려면 다음을 수행합니다.
 
 1. 편집할 기존 워크플로우 모델을 엽니다. **워크플로우 모델** 콘솔에서 필요한 모델을 선택한 다음 **편집**&#x200B;을 선택합니다.
-1. 단계 브라우저를 엽니다.맨 위 도구 모음의 맨 왼쪽에 있는 **사이드 패널** 전환 을 사용합니다. 여기에서 다음을 수행할 수 있습니다.
+1. 단계 브라우저를 엽니다. 맨 위 도구 모음의 맨 왼쪽에 있는 **사이드 패널** 전환 을 사용합니다. 여기에서 다음을 수행할 수 있습니다.
 
    * **** 특정 단계에 대해 필터링합니다.
    * 드롭다운 선택기를 사용하여 선택 사항을 특정 단계 그룹으로 제한합니다.
@@ -135,9 +135,9 @@ ht-degree: 2%
 
    런타임에 단계가 모델에 표시되는 순서대로 실행됩니다. 단계 구성 요소를 추가한 후 모델의 다른 위치로 드래그할 수 있습니다.
 
-   기존 단계를 복사, 잘라내기, 붙여넣기, 그룹화 또는 삭제할 수도 있습니다.[페이지 편집기와 같습니다.](/help/sites-authoring/editing-content.md)
+   기존 단계를 복사, 잘라내기, 붙여넣기, 그룹화 또는 삭제할 수도 있습니다. [페이지 편집기와 같습니다.](/help/sites-authoring/editing-content.md)
 
-   분할 단계는 도구 모음 옵션을 사용하여 축소/확장할 수도 있습니다.![wf-축소/확장-도구 모음-icon](assets/wf-collapseexpand-toolbar-icon.png)
+   분할 단계는 도구 모음 옵션을 사용하여 축소/확장할 수도 있습니다. ![wf-축소/확장-도구 모음-icon](assets/wf-collapseexpand-toolbar-icon.png)
 
 1. **동기화**(편집기 도구 모음)로 변경 사항을 확인하여 런타임 모델을 생성합니다.
 
@@ -156,7 +156,7 @@ ht-degree: 2%
    >
    >AEM과 함께 설치되는 기본 단계 구성 요소에 대한 자세한 내용은 [워크플로우 단계 참조](/help/sites-developing/workflows-step-ref.md)를 참조하십시오.
 
-1. 필요에 따라 **단계 속성**&#x200B;을 구성합니다.사용 가능한 속성은 단계 유형에 따라 다르며, 사용 가능한 여러 탭이 있을 수도 있습니다. 예를 들어, 새 워크플로우에 있는 기본 **참가자 단계**&#x200B;은`Step 1`
+1. 필요에 따라 **단계 속성**&#x200B;을 구성합니다. 사용 가능한 속성은 단계 유형에 따라 다르며, 사용 가능한 여러 탭이 있을 수도 있습니다. 예를 들어, 새 워크플로우에 있는 기본 **참가자 단계**&#x200B;은`Step 1`
 
    ![wf-11](assets/wf-11.png)
 
@@ -175,13 +175,13 @@ ht-degree: 2%
 
    ![wf-07](assets/wf-07.png)
 
-1. **저장 및 닫기**;로 변경을 확인합니다.다음에 **Sync**(편집기 도구 모음)가 와서 런타임 모델을 생성합니다.
+1. **저장 및 닫기**;로 변경을 확인합니다. 다음에 **Sync**(편집기 도구 모음)가 와서 런타임 모델을 생성합니다.
 
    자세한 내용은 [워크플로우 동기화](#sync-your-workflow-generate-a-runtime-model)를 참조하십시오.
 
 >[!NOTE]
 >
->[임시](/help/sites-developing/workflows.md#transient-workflows) 모드에서 워크플로우를 실행하면 AEM에서 워크플로우 기록이 저장되지 않습니다. 따라서 [타임라인](/help/sites-authoring/basic-handling.md#timeline)에 해당 워크플로우와 관련된 정보가 표시되지 않습니다.[](/help/sites-authoring/basic-handling.md#timeline)
+>[임시](/help/sites-developing/workflows.md#transient-workflows) 모드에서 워크플로우를 실행하면 AEM에서 워크플로우 기록이 저장되지 않습니다. 따라서 [타임라인](/help/sites-authoring/basic-handling.md#timeline)에 해당 워크플로우와 관련된 정보가 표시되지 않습니다.
 
 ## Touch UI에서 워크플로우 모델 사용 가능 {#classic2touchui}
 
@@ -216,7 +216,7 @@ ht-degree: 2%
 
    ![wf-08](assets/wf-08.png)
 
-1. **저장 및 닫기**;로 변경을 확인합니다.다음에 **Sync**(편집기 도구 모음)가 와서 런타임 모델을 생성합니다.
+1. **저장 및 닫기**;로 변경을 확인합니다. 다음에 **Sync**(편집기 도구 모음)가 와서 런타임 모델을 생성합니다.
 
    자세한 내용은 [워크플로우 동기화](#sync-your-workflow-generate-a-runtime-model)를 참조하십시오.
 
@@ -228,7 +228,7 @@ ht-degree: 2%
 >
 >워크플로우 단계가 **페이지 속성**&#x200B;에 정의되어 있지만, 어느 워크플로우 단계에도 사용되지 않으면 진행률 표시줄에 현재 워크플로우 단계에 관계없이 진행 상태가 표시되지 않습니다.
 
-사용할 수 있는 단계는 워크플로우 모델에서 정의됩니다.기존 워크플로우 모델을 업데이트하여 단계 정의를 포함할 수 있습니다. 워크플로우 모델에 대한 단계 수를 정의할 수 있습니다.
+사용할 수 있는 단계는 워크플로우 모델에서 정의됩니다. 기존 워크플로우 모델을 업데이트하여 단계 정의를 포함할 수 있습니다. 워크플로우 모델에 대한 단계 수를 정의할 수 있습니다.
 
 워크플로우에 대한 **단계**&#x200B;를 정의하려면
 
@@ -260,7 +260,7 @@ ht-degree: 2%
 
    자세한 내용은 [워크플로우 동기화](#sync-your-workflow-generate-a-runtime-model)를 참조하십시오.
 
-## 패키지 {#exporting-a-workflow-model-in-a-package}에서 워크플로우 모델 내보내기
+## 패키지에서 워크플로우 모델 내보내기 {#exporting-a-workflow-model-in-a-package}
 
 패키지에서 워크플로우 모델을 내보내려면 다음을 수행하십시오.
 
@@ -310,7 +310,7 @@ ht-degree: 2%
 
 ## 워크플로우 테스트 {#testing-workflows}
 
-다양한 페이로드 유형을 사용하도록 워크플로우를 테스트할 때 매우 좋습니다.개발된 유형과 다른 유형을 포함합니다. 예를 들어, 워크플로우에서 자산을 처리하려는 경우 페이지를 페이로드로 설정하여 테스트하고, 이 페이지에서 오류가 발생하지 않도록 하십시오.
+다양한 페이로드 유형을 사용하도록 워크플로우를 테스트할 때 매우 좋습니다. 개발된 유형과 다른 유형을 포함합니다. 예를 들어, 워크플로우에서 자산을 처리하려는 경우 페이지를 페이로드로 설정하여 테스트하고, 이 페이지에서 오류가 발생하지 않도록 하십시오.
 
 예를 들어 다음과 같이 새 워크플로우를 테스트합니다.
 
@@ -324,7 +324,7 @@ ht-degree: 2%
 
 ## 예 {#examples}
 
-### 예:게시 요청을 수락하거나 거부하기 위한 (단순) 워크플로우 만들기 {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
+### 예: 게시 요청을 수락 또는 거부하는 (단순) 워크플로우 만들기 {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
 
 워크플로우를 만들 수 있는 몇 가지 가능성을 보여주기 위해 다음 예에서는 `Publish Example` 워크플로우의 변형을 만듭니다.
 
@@ -364,25 +364,25 @@ ht-degree: 2%
 1. 구성을 위해 **Or Split**&#x200B;을 엽니다.
 1. 구성:
 
-   * **일반**:분할 이름을 지정합니다.
-   * **분기 1**:기본  **경로**&#x200B;를 선택합니다.
+   * **일반**: 분할 이름을 지정합니다.
+   * **분기 1**: 기본  **경로**&#x200B;를 선택합니다.
 
-   * **분기 2**:기본  **라우트** 를 선택하지 않았는지 확인합니다.
+   * **분기 2**: 기본  **라우트** 를 선택하지 않았는지 확인합니다.
 
 1. **OR Split**&#x200B;에 대한 업데이트를 확인합니다.
 1. **참가자 단계**&#x200B;를 왼쪽 분기로 드래그하고 속성을 열고 다음 값을 지정한 다음 변경 사항을 확인합니다.
 
    * **제목**: `Reject Publish Request`
 
-   * **사용자/그룹**:예  `projects-administrators`
+   * **사용자/그룹**: 예  `projects-administrators`
 
-   * **이메일을 통해 사용자에게 알림**:사용자에게 이메일을 통해 알림을 보내려면 활성화합니다.
+   * **이메일을 통해 사용자에게 알림**: 사용자에게 이메일을 통해 알림을 보내려면 활성화합니다.
 
 1. **프로세스 단계**&#x200B;를 오른쪽 분기로 드래그하고 속성을 열고 다음 값을 지정한 다음 변경 사항을 확인합니다.
 
    * **제목**: `Publish Page as Requested`
 
-   * **프로세스**:을(를) 선택합니다  `Activate Page`. 이 프로세스는 선택한 페이지를 게시자 인스턴스에 게시합니다.
+   * **프로세스**: 을(를) 선택합니다  `Activate Page`. 이 프로세스는 선택한 페이지를 게시자 인스턴스에 게시합니다.
 
 1. **동기화**(편집기 도구 모음)를 클릭하여 런타임 모델을 생성합니다.
 
@@ -396,7 +396,7 @@ ht-degree: 2%
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-### 예:ECMA 스크립트를 사용하여 OR 분할에 대한 규칙 정의 {#defineruleecmascript}
+### 예: ECMA 스크립트를 사용하여 OR 분할에 대한 규칙 정의 {#defineruleecmascript}
 
 **또는** 분할단계를 통해 조건부 처리 경로를 워크플로우에 도입할 수 있습니다.
 
@@ -431,7 +431,7 @@ OR 규칙을 정의하려면 다음과 같이 진행합니다.
 
    자세한 내용은 [워크플로우 동기화](#sync-your-workflow-generate-a-runtime-model)를 참조하십시오.
 
-#### 함수 확인() {#function-check}
+#### 함수 Check() {#function-check}
 
 >[!NOTE]
 >
@@ -456,7 +456,7 @@ function check() {
 }
 ```
 
-### 예:활성화 사용자 지정 요청 {#example-customized-request-for-activation}
+### 예: 활성화 사용자 지정 요청 {#example-customized-request-for-activation}
 
 기본 워크플로우를 사용자 지정할 수 있습니다. 사용자 지정된 동작을 갖도록 하려면 해당 워크플로우의 세부 사항을 오버레이합니다.
 
