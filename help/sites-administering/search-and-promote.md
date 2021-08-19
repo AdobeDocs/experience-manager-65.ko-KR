@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,6 @@ Search &amp; Promote 서비스에 대해 구성된 기본 URL은 `https://search
    >
    >유효한 Search&amp;Promote 자격 증명 사용(이메일/암호).
    >그런 다음 브라우저의 주소 표시줄에서 다음과 같이 표시되어야 합니다.
-   >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
