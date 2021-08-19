@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1920'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 이 설명서는 성능 테스트를 수행하는 전반적인 전략 및 방법론과 Adobe이 프로세스를 지원하기 위해 사용할 수 있는 일부 도구에 대해 설명합니다. 마지막으로, 코드 분석과 시스템 구성 관점에서 AEM 6에서 사용할 수 있는 일부 도구를 성능 조정에 도움을 줄 것입니다.
 
-### 실제 시뮬레이션 {#simulating-reality}
+### 현실 시뮬레이션 {#simulating-reality}
 
 성능 테스트를 수행할 때 가장 중요한 것은 프로덕션 환경을 가능한 한 가깝게 모방하도록 하는 것입니다. 이 작업은 종종 어려울 수 있지만 이러한 테스트의 정확성을 확인하는 것이 중요합니다. 성능 테스트를 디자인할 때는 다음 사항을 고려해야 합니다.
 
@@ -65,8 +65,8 @@ AEM의 많은 성능 측정(예: 쿼리 응답 시간)은 시스템의 컨텐츠
 * [Neustar](https://www.neustar.biz/services/web-performance/load-testing)과 같은 클라우드 기반 로드 테스트 도구도 사용할 수 있습니다.
 * 모바일 또는 응답형 웹 사이트를 테스트할 때는 별도의 도구 세트를 사용해야 합니다. 네트워크 대역폭을 조절하여 3G 또는 EDGE와 같은 느린 모바일 연결을 시뮬레이션하여 작동합니다. 널리 사용되는 도구 중에는 다음과 같습니다.
 
-   * **[네트워크 링크 컨디셔너](https://nshipster.com/network-link-conditioner/)**  - 사용하기 쉬운 UI를 제공하며 네트워킹 스택에서 매우 낮은 수준에서 작동합니다. 여기에는 OS X 및 iOS용 버전이 포함되어 있습니다.[](https://nshipster.com/network-link-conditioner/)
-   * [**Charles**](https://www.charlesproxy.com/)  - 여러 가지 다른 용도 외에 네트워크 조절 기능을 제공하는 웹 디버깅 프록시 애플리케이션입니다. 버전은 Windows, OS X 및 Linux용 제공됩니다.[](https://www.charlesproxy.com/)
+   * **[네트워크 링크 컨디셔너](https://nshipster.com/network-link-conditioner/)**  - 사용하기 쉬운 UI를 제공하며 네트워킹 스택에서 매우 낮은 수준에서 작동합니다. 여기에는 OS X 및 iOS용 버전이 포함되어 있습니다.
+   * [**Charles**](https://www.charlesproxy.com/)  - 여러 가지 다른 용도 외에 네트워크 조절 기능을 제공하는 웹 디버깅 프록시 애플리케이션입니다. 버전은 Windows, OS X 및 Linux용 제공됩니다.
 
 #### 최적화 도구 {#optimization-tools}
 
@@ -92,7 +92,7 @@ Google의 PageSpeed 도구는 페이지 성능에 대한 우수 사례 및 추�
 
 ## 작성 환경 {#author-environment}
 
-### 테스트 수행 중 {#performing-tests}
+### 테스트 수행 {#performing-tests}
 
 작성 환경에서 성능 테스트를 수행하려면 프로덕션 작성자의 경험을 시뮬레이션해야 합니다. 즉, 작성자 설치에는 프로덕션 작성 인스턴스에 대해 보유하고 있는 모든 구성 요소, OSGi 번들, UI 사용자 지정, 사용자 지정 인덱스 및 기타 추가 사항이 포함되어야 합니다.
 
@@ -118,7 +118,7 @@ MongoDB 백엔드가 있는 시스템의 경우, AEM에서는 로드 또는 성�
 
 ## 게시 환경 {#publish-environment}
 
-### 테스트 수행 중 {#performing-tests-1}
+### 테스트 수행 {#performing-tests-1}
 
 로드 테스트를 수행해야 하는 배포의 가장 중요한 부분은 게시 또는 디스패처 환경에 직면하는 최종 사용자입니다.
 
@@ -138,7 +138,7 @@ MongoDB 백엔드가 있는 시스템의 경우, AEM에서는 로드 또는 성�
 * [쿼리 성능 도구를 사용하여 느린 실행 쿼리 분석](/help/sites-administering/operations-dashboard.md#query-performance)
 
 * 오류 또는 경고 오류를 확인하십시오. 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md)을 참조하십시오
-* 메모리 및 CPU 사용률, 디스크 I/O 또는 네트워크 I/O와 같은 시스템 하드웨어 리소스를 모니터링합니다.이러한 리소스는 종종 성능 병목 현상을 야기합니다
+* 메모리 및 CPU 사용률, 디스크 I/O 또는 네트워크 I/O와 같은 시스템 하드웨어 리소스를 모니터링합니다. 이러한 리소스는 종종 성능 병목 현상을 야기합니다
 * 페이지의 아키텍처와 주소를 지정하여 URL 매개 변수의 사용을 최소화하여 가능한 한 많은 캐싱을 허용할 수 있습니다
 * [성능 최적화](/help/sites-deploying/configuring-performance.md) 및 [성능 조정 팁](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) 설명서를 따르십시오
 
