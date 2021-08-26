@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 3e4e9ab8b3940f539228bccf759dcade03a8b015
+source-git-commit: 218e97eb31061e833f3b291a6607b2ebf4762471
 workflow-type: tm+mt
 source-wordcount: '2967'
 ht-degree: 26%
@@ -116,7 +116,7 @@ ht-degree: 26%
 ![구성된 연결된 자산에 대한 연결 테스트  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *그림: 구성된 연결된 자산에 대한 연결 테스트  [!DNL Sites].*
 
-### Dynamic Media 자산에 대한 연결 구성{#sites-dynamic-media-connected-assets}
+### Dynamic Media 자산에 대한 연결 구성 {#sites-dynamic-media-connected-assets}
 
 웹 페이지 작성자가 웹 페이지에서 [!DNL Dynamic Media] 이미지를 사용할 수 있도록 해주는 [!DNL Sites] 배포와 [!DNL Dynamic Media] 배포 간의 연결을 구성할 수 있습니다. 웹 페이지를 작성하는 동안 원격 자산 및 원격 [!DNL Dynamic Media] 배포를 사용한 경험이 동일하게 유지됩니다.
 
