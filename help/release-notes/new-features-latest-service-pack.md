@@ -4,7 +4,7 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 10의 새로운 기�
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 738972f73ff3af070eb6b48bff67496ab451a6a7
+source-git-commit: d83f8d6e4b99ac7f287c0f091b84bbbf9d82fc75
 workflow-type: tm+mt
 source-wordcount: '3974'
 ht-degree: 37%
@@ -449,9 +449,9 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## [!DNL Adobe Experience Manager] 6.5 SP8 이후 주요 릴리스 {#key-releases-since-last-sp}
+## [!DNL Adobe Experience Manager] 6.5 SP9 이후의 주요 릴리스 {#key-releases-since-last-sp}
 
-2021년 2월 25일부터 2021년 5월 27일까지 Adobe은 서비스 팩 외에 다음과 같은 사항을 발표했습니다.
+2021년 5월 27일부터 2021년 8월 26일까지 Adobe은 서비스 팩 외에 다음과 같은 사항을 발표했습니다.
 
 * [!DNL Adobe Experience Manager] 로서의 Cloud Service  [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html),  [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html) 및  [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en).
 
