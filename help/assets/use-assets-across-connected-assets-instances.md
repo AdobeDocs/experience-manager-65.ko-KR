@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 37073594b45995ade7f0e73c519feb21adf48482
+source-git-commit: 3e4e9ab8b3940f539228bccf759dcade03a8b015
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 28%
+source-wordcount: '2967'
+ht-degree: 26%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 28%
 
 ## 연결된 자산 개요 {#overview-of-connected-assets}
 
-[!UICONTROL 페이지 편집기]의 페이지를 대상 대상으로 편집할 때 작성자는 자산의 소스 역할을 하는 다른 [!DNL Assets] 배포의 자산을 원활하게 검색, 탐색 및 포함할 수 있습니다. 관리자는 [!DNL Sites] 기능이 [!DNL Assets] 기능이 있는 [!DNL Experience Manager] 의 다른 배포와 함께 [!DNL Experience Manager] 배포의 일회성 통합을 만듭니다.
+[!UICONTROL 페이지 편집기]의 페이지를 대상 대상으로 편집할 때 작성자는 자산의 소스 역할을 하는 다른 [!DNL Assets] 배포의 자산을 원활하게 검색, 탐색 및 포함할 수 있습니다. 관리자는 [!DNL Sites] 기능이 [!DNL Assets] 기능이 있는 [!DNL Experience Manager] 의 다른 배포와 함께 [!DNL Experience Manager] 배포의 일회성 통합을 만듭니다. 사이트 작성자는 연결된 자산을 통해 사이트의 웹 페이지에서 Dynamic Media 이미지를 사용하고 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 활용할 수도 있습니다.
 
 [!DNL Sites] 작성자의 경우 원격 자산을 읽기 전용 로컬 자산으로 사용할 수 있습니다. 이 기능은 한 번에 여러 개의 원격 자산을 원활하게 검색하고 사용할 수 있도록 지원합니다. 한 번에 [!DNL Sites] 배포에서 많은 원격 자산을 사용할 수 있도록 하려면 자산을 일괄적으로 마이그레이션하는 것이 좋습니다. [Experience Manager 자산 마이그레이션 안내서](/help/assets/assets-migration-guide.md)를 참조하십시오.
 
@@ -115,6 +115,25 @@ ht-degree: 28%
 
 ![구성된 연결된 자산에 대한 연결 테스트  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *그림: 구성된 연결된 자산에 대한 연결 테스트  [!DNL Sites].*
+
+### Dynamic Media 자산에 대한 연결 구성{#sites-dynamic-media-connected-assets}
+
+웹 페이지 작성자가 웹 페이지에서 [!DNL Dynamic Media] 이미지를 사용할 수 있도록 해주는 [!DNL Sites] 배포와 [!DNL Dynamic Media] 배포 간의 연결을 구성할 수 있습니다. 웹 페이지를 작성하는 동안 원격 자산 및 원격 [!DNL Dynamic Media] 배포를 사용한 경험이 동일하게 유지됩니다.
+
+다이내믹 미디어 배포를 위해 연결된 자산 기능을 구성하려면 다음 단계를 수행합니다.
+
+1. 원격 [!DNL Assets] 작성자 배포에서 [!DNL Dynamic Media] 전역 구성을 활성화하고 구성합니다. Dynamic Media을 구성하려면 [Dynamic Media 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)을 참조하십시오.<br/>
+원격  [!DNL Assets] 배포의  [!UICONTROL Dynamic Media 동기화 모드]에서 기본적 **[!UICONTROL 으로 활성화 를 선택합니다]**.
+
+1. [사이트 및 자산 배포 간 연결을 구성](#configure-a-connection-between-sites-and-assets-deployments)에 설명된 대로 연결된 자산 구성을 만듭니다. 또한 **[!UICONTROL Dynamic Media 연결된 자산에 대한 원본 표현물 가져오기]** 옵션을 선택합니다.
+
+1. 로컬 [!DNL Sites] 및 원격 [!DNL Assets] 배포에 [!DNL Dynamic Media]을 구성합니다. 다음 지침에 따라 [configure [!DNL Dynamic Media]](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
+
+   * 모든 구성에서 동일한 회사 이름을 사용합니다.
+   * 로컬 [!DNL Sites]Dynamic Media 동기화 모드]에서 기본적으로 **[!UICONTROL 비활성화됨]**&#x200B;을 선택합니다. [!UICONTROL  [!DNL Sites] 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스 권한만 필요합니다.
+   * 로컬 [!DNL Sites]자산 게시&#x200B;]**옵션에서**[!UICONTROL &#x200B;선택적 게시&#x200B;]**를 선택합니다.**[!UICONTROL  **[!UICONTROL 모든 컨텐츠 동기화]**&#x200B;를 선택하지 마십시오.
+
+1. 이미지 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)에서 [[!DNL Dynamic Media] 지원을 사용하도록 설정합니다. 이 기능을 사용하면 로컬 [!DNL Sites] 배포에서 웹 페이지의 작성자가 [!DNL Dynamic Media] 이미지를 사용할 때 기본 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 이미지를 표시할 수 있습니다.[!DNL Dynamic Media]
 
 ## 원격 자산 사용 {#use-remote-assets}
 
@@ -226,3 +245,6 @@ ht-degree: 28%
 * 원격 참조가 검색되지 않고 오류 메시지가 표시되는 경우 [!DNL Sites] 배포를 사용할 수 있는지 확인하고 네트워크 연결 문제를 확인합니다. 나중에 다시 시도하여 확인합니다. [!DNL Assets] 배포는 배포에 대한 연결을 두 번  [!DNL Sites] 시도한 다음 오류를 보고합니다.
 
    ![자산 원격 참조를 검색하지 못했습니다.](assets/reference-report-failure.png)
+
+
+
