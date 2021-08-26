@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 10에 관한 �
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
+source-git-commit: 861f5f4ae87da106bc42895e03bc42c0b17bd9fc
 workflow-type: tm+mt
 source-wordcount: '3652'
 ht-degree: 11%
@@ -30,7 +30,7 @@ ht-degree: 11%
 
 * **향상된  [!DNL Content Fragment] 모델 및 편집기**: 이제 중첩된 모델을 사용하여 구조화된 컨텐츠에 대해 복잡한 사용자 지정 모델을 만들 수  [!DNL Content Fragment] 있습니다. 컨텐츠 구조는 하위 조각으로 모델링된 기본 요소로 모듈화됩니다. 높은 수준 조각이 이러한 하위 조각을 참조합니다. 고급 유효성 검사 규칙과 같은 더 많은 데이터 유형 개선 사항은 [!DNL Content Fragments] 을 사용하여 컨텐츠 모델링의 유연성을 더욱 향상시킵니다. [!DNL Experience Manager] [!DNL Content Fragment] 편집기는 구조 트리 보기 및 조각 계층을 통한 탭 탐색 표시 탐색과 같은 향상된 기능을 사용하여 공통 편집기 세션에서 중첩된 조각 구조를 지원합니다.
 
-* **GraphQL API 대상[!DNL Content Fragments]**: 새로운 GraphQL API는 구조화된 컨텐츠를 JSON 형식으로 제공하는 표준 방법입니다. GraphQL 쿼리를 사용하면 클라이언트가 경험을 렌더링하기 위해 관련 콘텐츠 항목만 요청할 수 있습니다. 이러한 선택을 통해 클라이언트 측에서 컨텐츠 구문 분석이 필요한 컨텐츠 over-delivery(HTTP REST API의 경우 가능성)가 제거됩니다. GraphQL 스키마는 [!DNL Content Fragment] 모델에서 파생되며 API 응답은 JSON 형식으로 이루어집니다. [!DNL Experience Manager]에서 [!DNL Cloud Service], [GraphQL 쿼리는](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching)을 지속하고 캐시 친화적인 GET 요청을 처리합니다. 아직 [!DNL Experience Manager] 6.5에서는 사용할 수 없습니다.
+* **GraphQL API 대상[!DNL Content Fragments]**: 새로운 GraphQL API는 구조화된 컨텐츠를 JSON 형식으로 제공하는 표준 방법입니다. GraphQL 쿼리를 사용하면 클라이언트가 경험을 렌더링하기 위해 관련 콘텐츠 항목만 요청할 수 있습니다. 이러한 선택을 통해 클라이언트 측에서 컨텐츠 구문 분석이 필요한 컨텐츠 over-delivery(HTTP REST API의 경우 가능성)가 제거됩니다. GraphQL 스키마는 [!DNL Content Fragment] 모델에서 파생되며 API 응답은 JSON 형식으로 이루어집니다. [!DNL Experience Manager]에서 [!DNL Cloud Service], [GraphQL 쿼리는](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching)을 지속하고 캐시 친화적인 GET 요청을 처리합니다. 아직 [!DNL Experience Manager] 6.5.10.0에서는 사용할 수 없습니다.
 
 * **계층 관리 및 향후 미리 보기**: 이제 사용자에게는 론치에서 페이지를 추가 및 제거하는 기능을  [!DNL Experience Manager] 포함하여 론치의 컨텐츠 구조에 액세스할 수 있는 인터페이스가 제공됩니다. 이 기능은 향후 게시를 위해 타깃팅된 컨텐츠 버전을 작성할 수 있도록 [!DNL Experience Manager] 론치의 유연성을 향상시킵니다. [타임워프 기능](/help/sites-authoring/working-with-page-versions.md#timewarp) 을 사용하면 향후 컨텐츠 상태로 론치를 미리 볼 수 있습니다.
 
