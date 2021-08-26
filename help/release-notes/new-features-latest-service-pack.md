@@ -1,17 +1,20 @@
 ---
-title: ' [!DNL Experience Manager] 6.5 서비스 팩 9의 새로운 기능'
-description: ' [!DNL Experience Manager] 6.5 서비스 팩 9의 새로운 기능'
+title: ' [!DNL Experience Manager] 6.5 서비스 팩 10의 새로운 기능'
+description: ' [!DNL Experience Manager] 6.5 서비스 팩 10의 새로운 기능'
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: 738972f73ff3af070eb6b48bff67496ab451a6a7
 workflow-type: tm+mt
-source-wordcount: '3668'
-ht-degree: 41%
+source-wordcount: '3974'
+ht-degree: 37%
 
 ---
 
-# [!DNL Adobe Experience Manager] 6.5 서비스 팩 9의 새로운 기능 {#aem-whats-new-service-pack}
+# [!DNL Adobe Experience Manager] 6.5 서비스 팩 10의 새로운 기능 {#aem-whats-new-service-pack}
+
+<!-- TBD: Downsample this image. We do not need as big an image since customers don't use as big a screen to view. Also, having a 700+ KB decorative image is bad for page load time.
+-->
 
 ![새로운 기능](assets/whatsnew.jpeg)
 
@@ -19,40 +22,40 @@ ht-degree: 41%
 
 이 문서에서는 최신 서비스 팩에 포함된 기능, 이전 6.5 서비스 팩에 포함된 [주요 기능](#key-features-previous-service-packs) 및 마지막 서비스 팩](#key-releases-since-last-sp) 릴리스 이후 [주요 릴리스를 소개합니다.
 
->[!NOTE]
->
->[!DNL Experience Manager] 서비스 팩 9부터 [!DNL Experience Manager] 고객은 Java SE와 표준을 준수하는 OpenJDK의 [!DNL Azul Zulu] 빌드가 배포되어 [!DNL Experience Manager] 애플리케이션을 개발하고 운영할 수 있습니다.
->[!DNL Azul Zulu] JDK에 대한 지원은 [!DNL Experience Manager] 고객에게도 Adobe이 제공합니다.
->[Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 [!DNL Azul Zulu] JDK의 관련 버전을 다운로드할 수 있습니다.
->Adobe에 의해 배포되는 Oracle Java 기술에 대한 사용 권한은 2022년 12월 말까지 만료됩니다. [!DNL Experience Manager] 고객은 이 날짜까지 최신  [!DNL Azul Zulu] JDK에 대한 사용을 계획 및 구현하는 것이 좋습니다. [!DNL Oracle Java] 기술 및 [!DNL Azul Zulu] 기술의 사용에 대한 자세한 내용은 관련 [FAQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf)를 참조하십시오.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### 삭제된 페이지 및 트리 복원 기능 {#ability-to-restore-pages-tree}
+* **향상된  [!DNL Content Fragment] 모델 및 편집기**: 이제 중첩된 모델을 사용하여 구조화된 컨텐츠에 대해 복잡한 사용자 지정 모델을 만들 수  [!DNL Content Fragment] 있습니다. 컨텐츠 구조는 하위 조각으로 모델링된 기본 요소로 모듈화됩니다. 높은 수준 조각이 이러한 하위 조각을 참조합니다. 고급 유효성 검사 규칙과 같은 더 많은 데이터 유형 개선 사항은 [!DNL Content Fragments] 을 사용하여 컨텐츠 모델링의 유연성을 더욱 향상시킵니다. [!DNL Experience Manager] [!DNL Content Fragment] 편집기는 구조 트리 보기 및 조각 계층을 통한 탭 탐색 표시 탐색과 같은 향상된 기능을 사용하여 공통 편집기 세션에서 중첩된 조각 구조를 지원합니다.
 
-이제 [!DNL Experience Manager Sites] 페이지에서 삭제된 페이지와 전체 트리 보기를 복원할 수 있습니다.
+* **GraphQL API 대상[!DNL Content Fragments]**: 새로운 GraphQL API는 구조화된 컨텐츠를 JSON 형식으로 제공하는 표준 방법입니다. GraphQL 쿼리를 사용하면 클라이언트가 경험을 렌더링하기 위해 관련 콘텐츠 항목만 요청할 수 있습니다. 이러한 선택을 통해 클라이언트 측에서 컨텐츠 구문 분석이 필요한 컨텐츠 over-delivery(HTTP REST API의 경우 가능성)가 제거됩니다. GraphQL 스키마는 [!DNL Content Fragment] 모델에서 파생되며 API 응답은 JSON 형식으로 이루어집니다. [!DNL Experience Manager]에서 [!DNL Cloud Service], [GraphQL 쿼리는](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching)을 지속하고 캐시 친화적인 GET 요청을 처리합니다. 아직 [!DNL Experience Manager] 6.5에서는 사용할 수 없습니다.
+
+* **계층 관리 및 향후 미리 보기**: 이제 사용자에게는 론치에서 페이지를 추가 및 제거하는 기능을  [!DNL Experience Manager] 포함하여 론치의 컨텐츠 구조에 액세스할 수 있는 인터페이스가 제공됩니다. 이 기능은 향후 게시를 위해 타깃팅된 컨텐츠 버전을 작성할 수 있도록 [!DNL Experience Manager] 론치의 유연성을 향상시킵니다. [타임워프 기능](/help/sites-authoring/working-with-page-versions.md#timewarp) 을 사용하면 향후 컨텐츠 상태로 론치를 미리 볼 수 있습니다.
+
+* [!DNL Experience Manager] 컨텐츠 작성자가 파일 구조를 탐색하지 않고도 폴더 아래에 모든 컨텐츠 모델의 목록을 직접 표시합니다. 이제 기능을 사용하려면 클릭이 적고 작성 효율성이 향상됩니다.
+
+* [!DNL Sites] 편집기의 경로 필드를 사용하면 작성자가 [!DNL Content Finder]에서 자산을 드래그할 수 있습니다.
+
+* Platform은 몇 가지 액세스 가능성이 개선되었습니다. [플랫폼 업데이트](/help/release-notes/sp-release-notes.md#platform-65100)를 참조하십시오.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* 중국의 소셜 및 정치적 견해와 일치하도록 홍콩, 마카오 및 대만과 관련된 중국어 로케일 및 지역의 이름을 업데이트했습니다.
+* [!DNL Experience Manager] 연결된 자산 기능을 해당 핵심 구성 요소에서  [!DNL Dynamic Media] 이미지를 사용하도록 확장합니다. [연결된 자산 사용](/help/assets/use-assets-across-connected-assets-instances.md)을 참조하십시오.
 
-* ACP API 응답의 이메일 ID에서 대/소문자를 변경하기 위해 [!DNL Adobe Experience Manager]의 선택적 구성이 도입되었습니다.
+* 개별 자산 및 컬렉션을 링크로 공유할 때([!UICONTROL 링크 공유] 대화 상자 사용) 사용자는 수신자가 원래 자산을 다운로드하도록 할지, 아니면 해당 표현물을 다운로드하도록 할지 또는 둘 다 다운로드하도록 할지 선택할 수 있습니다.
 
-   ![ACP 응답에서 이메일 ID를 소문자로 변경하기 위한 구성  [!DNL Experience Manager]](assets/email-lowcase-config.png)
+   ![원본 자산만 다운로드하거나, 표현물만 다운로드하거나, 두 가지 모두를 다운로드하는 옵션](/help/assets/assets/share-renditions.png)
 
-* 다양한 기능에 대해 텍스트 및 아이콘의 배경색이 개선되었습니다. 이러한 WCAG 지침 구현으로 [!DNL Assets]에 액세스할 수 있게 되어 시력과 색상에 대한 인식이 제한된 사용자도 보다 쉽게 액세스할 수 있습니다.  [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590)에서 [액세스 가능성 개선 을 참조하십시오.
+* 사용자가 공유된 자산을 링크로 다운로드하면 원래 자산, 표현물 또는 두 가지 모두를 다운로드하도록 선택할 수 있습니다.
+
+* 관리자는 PDF, PowerPoint, InDesign 및 Keynote 파일과 같은 복합 자산에 대해 [!DNL Experience Manager]이 생성하는 하위 자산 수를 제한할 수 있습니다.
+
+   ![하위 자산 생성 제한](/help/assets/assets/sub-asset-limit.png)
+
+* [!DNL Adobe Camera Raw] v10.4를 지원하는 새 [!DNL Camera Raw] 패키지를 사용할 수 있습니다. [이미지를 처리 [!DNL Camera Raw]](/help/assets/camera-raw.md)를 참조하십시오.
 
 ### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* [[!DNL Dynamic Media] 는 ](sp-release-notes.md#assets-accessibility-6590) 다음과 관련하여 보다 쉽게 액세스할 수 있습니다.
-
-   * 키보드 키 사용 편이성.
-   * 다양한 편집기의 텍스트, 자리 표시자 텍스트 및 컨트롤의 대비(배경 포함).
-   * 화면 판독기의 접근성 및 내레이션.
-
-* 스마트 이미징 DPR(Device Pixel Ratio)과 네트워크 대역폭 최적화를 통해 고해상도 디스플레이와 제한된 네트워크 대역폭을 사용하는 장치에서 최상의 이미지를 효율적으로 전달할 수 있습니다. [스마트 이미징 FAQ](/help/assets/imaging-faq.md)를 참조하십시오.
-
-* [!DNL Dynamic Media] 배달(`fmt` URL 수정자)은 이제 차세대 이미지 형식 AVIF(AV1 이미지 형식)를 지원합니다. 자세한 내용 및 타임라인은 [이미지 제공 및 API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)를 참조하십시오.
+* 많은 액세스 가능성 개선 작업이 [!DNL Dynamic Media] 클라이언트에서 수행되므로 화면 판독기에서 작업 또는 사용자 인터페이스에 대한 보다 적절하고 유용한 설명을 표시할 수 있습니다. [[!DNL Dynamic Media] 업데이트](/help/release-notes/sp-release-notes.md#dynamic-media-65100)를 참조하십시오.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -60,37 +63,11 @@ ht-degree: 41%
 >
 >[!DNL Experience Manager Forms] 추가 기능 패키지는 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 후 1주일 후에 사용할 수 있습니다.
 
-### [!DNL Azul Zulu OpenJDK] 지원 {#support-azul-zulu}
-
-이제 OSGi 배포에서 [!DNL Experience Manager Forms]용 [!DNL Azul Zulu] 빌드가 있는 애플리케이션을 개발 및 운영할 수 있습니다. [!DNL OpenJDK] 자세한 내용은 [Experience Manager 6.5 서비스 팩 9 릴리스 노트](sp-release-notes.md) 및 [기술 요구 사항](../sites-deploying/technical-requirements.md)을 참조하십시오.
-
-### [!UICONTROL 작업 할당]을 사용하여 그룹에 알림 이메일을 보내는 기능 {#group-notification-email}
-
-이제 작업 할당 워크플로우 단계를 사용하여 그룹 이메일 주소로 알림 이메일을 보낼 수 있습니다.
-
-### 소스 Interactive Communication 수정 후 Interactive Communication 초안을 검색하는 기능 {#retrieve-draft-after-source-modifications}
-
-이제 소스 대화형 커뮤니케이션을 변경한 후 초안으로 저장된 대화형 커뮤니케이션을 검색할 수 있습니다.
-
-### reCAPTCHA 서비스 로드, 렌더링 및 유효성 검사를 위한 사용자 지정 도메인 이름을 설정합니다 {#set-custom-domain-name-recaptcha}
-
-reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 사용합니다. 이제 설정을 수정하여 `https://www.google.com/` 또는 reCAPTCHA 서비스를 로드, 렌더링 및 확인할 수 있는 사용자 지정 도메인 이름을 설정할 수 있습니다.
-
-### [!UICONTROL 양식 데이터 모델 서비스 호출] 워크플로우 단계에 대한 입력 데이터 개선 사항 {#input-data-enhancements-fdm}
-
-[!UICONTROL 양식 데이터 모델 서비스 호출] 워크플로우 단계에서 양식 데이터 모델과 서비스를 선택하는 경우 입력 데이터에 대한 서비스 인수를 지정합니다.
-
-이제 [!UICONTROL 페이로드에 상대] 옵션을 선택하여 파일을 서비스 인수로 첨부하면 실제 파일 이름 대신 파일을 포함하는 폴더 경로를 지정할 수 있습니다. 첨부 파일 이름 대신 폴더 이름을 정의하면 워크플로우 모델을 다시 사용할 수 있습니다. 워크플로우 모델을 단일 파일 첨부 이름으로 제한하지 않습니다.
-
-### 레코드 문서에서 여러 마스터 페이지를 사용하는 기능 {#use-multiple-master-pages-dor-template}
-
-이제 레코드 문서 템플릿에서 여러 마스터 페이지를 사용할 수 있습니다. 따라서 이제 제목 페이지와 템플릿의 다른 페이지에 머리글, 바닥글, 글꼴, 로고 정보가 다를 수 있습니다.
-
-### 레코드 문서에서 페이지 나누기 지원 {#support-page-breaks-dor}
-
-이제 페이지 나누기를 레코드 문서에 추가할 수 있습니다. 따라서 페이지 내에서 패널이 중단되는 경우 페이지 나누기를 추가하여 Document of Record의 새 페이지로 패널을 이동할 수 있습니다.
-
 ## 이전 [!DNL Experience Manager] 6.5 서비스 팩의 주요 기능 {#key-features-previous-service-packs}
+
+### 삭제된 페이지 및 트리 복원 기능(6.5.9.0) {#ability-to-restore-pages-tree}
+
+이제 [!DNL Experience Manager Sites] 페이지에서 삭제된 페이지와 전체 트리 보기를 복원할 수 있습니다.
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
@@ -150,6 +127,14 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
 
+
+* 중국 소셜 및 정치 관점과 일치하도록 홍콩, 마카오 및 대만과 관련된 중국어 로케일 및 지역의 이름을 업데이트했습니다(6.5.9.0).
+
+* [!DNL Adobe Experience Manager](6.5.9.0)에서 ACP API 응답의 이메일 ID의 대/소문자를 변경하기 위해 선택적 구성이 도입되었습니다.
+
+   ![ACP 응답에서 이메일 ID를 소문자로 변경하기 위한 구성  [!DNL Experience Manager]](assets/email-lowcase-config.png)
+
+* 다양한 기능에 대해 텍스트 및 아이콘의 배경색이 개선되었습니다. WCAG(Web Content Accessibility Guidelines) 지침의 이 구현에서는 시각 및 색상에 대한 인식이 제한된 사용자가 [!DNL Assets]에 더 쉽게 액세스할 수 있도록 합니다.  [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590)에서 [액세스 가능성 개선(6.5.9.0)을 참조하십시오.
 * 이제 [연결된 자산 기능](/help/assets/use-assets-across-connected-assets-instances.md)을 사용할 때 자산을 사용하는 모든 [!DNL Sites] 페이지의 목록을 볼 수 있습니다. 자산에 대한 이러한 참조는 자산의 [!UICONTROL 속성] 페이지에서 사용할 수 있습니다. 이를 통해 관리자, 마케터 및 라이브러리에서는 자산 사용을 완전히 볼 수 있으므로 추적, 관리 및 브랜드 일관성(6.5.8.0)을 향상시킬 수 있습니다.
 
 * 웹 페이지에서 참조되는 자산을 삭제하면 [!DNL Experience Manager]에 경고가 표시됩니다. 참조된 자산을 강제로 삭제하거나 자산의 [!DNL Properties] 페이지에 표시되는 참조를 확인하고 수정할 수 있습니다. 참조를 클릭하면 로컬 및 원격 [!DNL Sites] 페이지(6.5.8.0)가 열립니다.
@@ -245,6 +230,16 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 ### 다이내믹 미디어 {#dynamic-media-previous-service-packs}
 
+* [[!DNL Dynamic Media] 는 ](sp-release-notes.md#assets-accessibility-6590) 다음과 관련하여 보다 쉽게 액세스할 수 있습니다.
+
+   * 키보드 키 사용 편이성.
+   * 다양한 편집기의 텍스트, 자리 표시자 텍스트 및 컨트롤의 대비(배경 포함).
+   * 화면 판독기의 접근성 및 내레이션.
+
+* 스마트 이미징 DPR(Device Pixel Ratio)과 네트워크 대역폭 최적화를 통해 고해상도 디스플레이와 제한된 네트워크 대역폭을 사용하는 장치에서 최상의 이미지를 효율적으로 전달할 수 있습니다. [스마트 이미징 FAQ](/help/assets/imaging-faq.md)(6.5.9.0)를 참조하십시오.
+
+* [!DNL Dynamic Media] 배달(`fmt` URL 수정자)은 이제 차세대 이미지 형식 AVIF(AV1 이미지 형식)를 지원합니다. 자세한 내용 및 타임라인은 [이미지 제공 및 API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) 렌더링(6.5.9.0)을 참조하십시오.
+
 #### CDN 캐시 콘텐츠 무효화(6.5.6.0) {#invalidate-cdn-cached-content}
 
 이제 [!DNL Dynamic Media] 사용자 인터페이스를 사용하여 CDN(Content Delivery Network) 캐시 콘텐츠를 무효화할 수 있습니다. 따라서 캐시가 만료될 때까지 기다리지 않고 업데이트된 자산을 즉시 사용할 수 있습니다. CDN을 다음 방법으로 무효화할 수 있습니다.
@@ -265,9 +260,39 @@ reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 �
 
 #### Dynamic Media용 비디오 프로필에서 스마트 자르기(6.5.3.0) {#smart-crop-video}
 
-비디오 프로필에서 사용할 수 있는 선택적 기능인 비디오 스마트 자르기는 Adobe Sensei의 인공 지능 기능을 사용하여 크기와 상관없이 업로드한 모든 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자르는 도구입니다. [비디오 프로필에서 스마트 자르기 사용 정보](../assets/video-profiles.md)를 참조하십시오.
+비디오 프로필에서 사용할 수 있는 선택적 기능인 비디오용 스마트 자르기는 Adobe Sensei을 사용하여 크기와 상관없이 적응형 비디오 또는 점진적 비디오에서 초점을 자동으로 감지하고 자릅니다. 비디오 프로필에서 스마트 자르기 사용 정보](../assets/video-profiles.md)를 참조하십시오.[
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### [!DNL Azul Zulu OpenJDK] 지원(6.5.9.0) {#support-azul-zulu}
+
+이제 OSGi 배포에서 [!DNL Experience Manager Forms]용 [!DNL Azul Zulu] 빌드가 있는 애플리케이션을 개발 및 운영할 수 있습니다. [!DNL OpenJDK] 자세한 내용은 [Experience Manager 6.5 서비스 팩 9 릴리스 노트](sp-release-notes.md) 및 [기술 요구 사항](../sites-deploying/technical-requirements.md)을 참조하십시오.
+
+#### [!UICONTROL 작업 할당](6.5.9.0)을 사용하여 그룹에 알림 이메일을 보낼 수 있습니다. {#group-notification-email}
+
+이제 작업 할당 워크플로우 단계를 사용하여 그룹 이메일 주소로 알림 이메일을 보낼 수 있습니다.
+
+#### 소스 대화형 커뮤니케이션을 수정한 후 대화형 통신 초안을 검색하는 기능(6.5.9.0) {#retrieve-draft-after-source-modifications}
+
+이제 소스 대화형 커뮤니케이션을 변경한 후 초안으로 저장된 대화형 커뮤니케이션을 검색할 수 있습니다.
+
+#### reCAPTCHA 서비스 로드, 렌더링 및 유효성 검사를 위한 사용자 지정 도메인 이름 설정(6.5.9.0) {#set-custom-domain-name-recaptcha}
+
+reCAPTCHA 서비스는 `https://www.recaptcha.net/`을 기본 도메인으로 사용합니다. 이제 설정을 수정하여 `https://www.google.com/` 또는 사용자 정의 도메인 이름을 reCAPTCHA 서비스를 로드, 렌더링 및 확인할 수 있습니다.
+
+#### [!UICONTROL 양식 데이터 모델 서비스 호출] 워크플로우 단계에 대한 입력 데이터 개선 사항(6.5.9.0) {#input-data-enhancements-fdm}
+
+[!UICONTROL 양식 데이터 모델 서비스 호출] 워크플로우 단계에서 양식 데이터 모델과 서비스를 선택하는 경우 입력 데이터에 대한 서비스 인수를 지정합니다.
+
+이제 [!UICONTROL 페이로드에 상대] 옵션을 선택하여 파일을 서비스 인수로 첨부하면 실제 파일 이름 대신 파일을 포함하는 폴더 경로를 지정할 수 있습니다. 첨부 파일 이름 대신 폴더 이름을 정의하면 워크플로우 모델을 다시 사용할 수 있습니다. 워크플로우 모델을 단일 파일 첨부 이름으로 제한하지 않습니다.
+
+#### 레코드 문서 템플릿에서 여러 마스터 페이지를 사용하는 기능(6.5.9.0) {#use-multiple-master-pages-dor-template}
+
+이제 레코드 문서 템플릿에서 여러 마스터 페이지를 사용할 수 있습니다. 따라서 이제 제목 페이지와 템플릿의 다른 페이지에 머리글, 바닥글, 글꼴, 로고 정보가 다를 수 있습니다.
+
+#### 레코드 문서에서 지원 페이지 브레이크(6.5.9.0) {#support-page-breaks-dor}
+
+이제 페이지 나누기를 레코드 문서에 추가할 수 있습니다. 따라서 페이지 내에서 패널이 중단되는 경우 페이지 나누기를 추가하여 Document of Record의 새 페이지로 패널을 이동할 수 있습니다.
 
 #### 규칙을 기반으로 적응형 양식에 CAPTCHA 구성 요소를 표시하거나 숨깁니다(6.5.8.0) {#show-hide-captcha}
 
@@ -428,15 +453,15 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 
 2021년 2월 25일부터 2021년 5월 27일까지 Adobe은 서비스 팩 외에 다음과 같은 사항을 발표했습니다.
 
-* [!DNL Adobe Experience Manager] 로서의 Cloud Service  [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html),  [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html) 및  [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html#release-date).
+* [!DNL Adobe Experience Manager] 로서의 Cloud Service  [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html),  [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html) 및  [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en).
 
-* [[!DNL Experience Manager] 데스크탑 앱 2.1(2.1.2.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] 데스크탑 앱 2.1(2.1.3.3)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: 기능 팩 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html)
+* [Experience Manager Screens: 기능 팩 202105](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202105.html?lang=en)
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Adobe Experience Manager] 6.5 설명서](../user-guide/home.md)
-* [ [!DNL Adobe Experience Manager] 6.5의 일반적인 릴리스 노트](release-notes.md)
-* [ [!DNL Adobe Experience Manager] 6.5의 서비스 팩 릴리스 노트](sp-release-notes.md)
+>* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
+>* [ [!DNL Experience Manager]  6.5의 일반 가용성 릴리스 노트](release-notes.md)
+>* [ [!DNL Experience Manager]  6.5의 서비스 팩 릴리스 노트](sp-release-notes.md)
 

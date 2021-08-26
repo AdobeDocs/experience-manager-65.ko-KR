@@ -3,11 +3,11 @@ title: 연결된 자산을 사용하여 [!DNL Sites]에서 DAM 자산 공유
 description: 원격 [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] 배포에서 사용할 수 있는 자산을 사용합니다.
 contentOwner: AG
 role: User, Admin, Leader
-feature: 연결된 자산, 사용자 및 그룹
+feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 37073594b45995ade7f0e73c519feb21adf48482
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2732'
 ht-degree: 28%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 28%
 * 사용자는 각 배포에 적절한 사용자 그룹의 일부입니다.
 * [!DNL Adobe Experience Manager] 배포 유형의 경우 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] 6.5 [!DNL Assets] 는 Cloud Service [!DNL Experience Manager] 로 작동합니다. 이 기능이 [!DNL Experience Manager]에서 [!DNL Cloud Service]로 작동하는 방법에 대한 자세한 내용은 [에 연결된 자산 [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)을 참조하십시오. [!DNL Experience Manager] 
 
-   |  | [!DNL Sites]로서의 [!DNL Cloud Service]  | [!DNL Experience Manager] AMS [!DNL Sites] 의 6.5 | [!DNL Experience Manager] 6.5  [!DNL Sites] 온-프레미스 |
+   |  | [!DNL Cloud Service]로서의 [!DNL Sites] | [!DNL Experience Manager] AMS [!DNL Sites] 의 6.5 | [!DNL Experience Manager] 6.5  [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]로서의[!DNL Cloud Service]**  | 지원됨 | 지원됨 | 지원됨 |
+   | [!DNL Cloud Service]**로서의**[!DNL Experience Manager Assets] | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]AMS [!DNL Assets] 의 6.5** | 지원됨 | 지원됨 | 지원됨 |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
@@ -41,8 +41,8 @@ ht-degree: 28%
 
 작성자는 콘텐츠 파인더에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용합니다. 문서가 `Download` 구성 요소에 추가되고 이미지가 `Image` 구성 요소에 추가됩니다. 작성자는 기본 `Download` 또는 `Image` 구성 요소를 확장하는 모든 사용자 지정 [!DNL Experience Manager] 구성 요소에 원격 자산을 추가합니다. 지원되는 형식은 다음과 같습니다.
 
-* **이미지 형식**:이미지 구성 요소 [가 지원하는 ](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 형식입니다. [!DNL Dynamic Media] 이미지는 지원되지 않습니다.
-* **문서 형식**:지원되는  [문서 형식을 참조하십시오](assets-formats.md#supported-document-formats).
+* **이미지 형식**: 이미지 구성 요소 [가 지원하는 ](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 형식입니다.
+* **문서 형식**: 지원되는  [문서 형식을 참조하십시오](assets-formats.md#supported-document-formats).
 
 ### 관련 사용자 및 그룹 {#users-and-groups-involved}
 
@@ -85,7 +85,7 @@ ht-degree: 28%
 
    ![연결된 자산 기능에 대한 일반적인 구성](assets/connected-assets-typical-config.png)
 
-   *그림:연결된 자산 기능에 대한 일반적인 구성.*
+   *그림: 연결된 자산 기능에 대한 일반적인 구성.*
 
 1. [!DNL Assets] 배포의 기존 디지털 자산이 이미 처리되고 표현물이 생성됩니다. 이러한 표현물은 이 기능을 사용하여 가져오므로 표현물을 다시 생성할 필요가 없습니다. 표현물의 재생성을 방지하기 위해 워크플로우 런처를 비활성화합니다. ([!DNL Sites]) 배포에서 런처 구성을 조정하여 `connectedassets` 폴더를 제외합니다(이 폴더에서 자산을 가져옵니다).
 
@@ -114,7 +114,7 @@ ht-degree: 28%
 구성된 [!DNL Sites] 배포와 [!DNL Assets] 배포 간의 연결을 확인할 수 있습니다.
 
 ![구성된 연결된 자산에 대한 연결 테스트  [!DNL Sites]](assets/connected-assets-multiple-config.png)
-*그림:구성된 연결된 자산에 대한 연결 테스트  [!DNL Sites].*
+*그림: 구성된 연결된 자산에 대한 연결 테스트  [!DNL Sites].*
 
 ## 원격 자산 사용 {#use-remote-assets}
 
@@ -188,7 +188,7 @@ ht-degree: 28%
 * 로컬 자산은 원격 배포의 원본 자산과 동기화되지 않습니다. DAM 배포에 대한 권한 편집, 삭제 또는 취소는 다운스트림으로 전파되지 않습니다.
 * 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager] 구성 요소는 변경되지 않은 상태로 자산을 유지한 채 편집합니다. 다른 편집 작업은 허용되지 않습니다.
 * 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
-* 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Dynamic Media] 자산,  [!DNL Content Fragments]및  [!DNL Experience Fragments] 은 지원되지 않습니다.
+* 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Content Fragments] 및  [!DNL Experience Fragments] 은 지원되지 않습니다.
 * [!DNL Experience Manager] 메타데이터 스키마를 가져오지 않습니다. 가져온 모든 메타데이터가 표시되지 않을 수 있음을 의미합니다. [!DNL Sites] 배포에서 스키마가 별도로 업데이트되면 모든 메타데이터 속성이 표시됩니다.
 * 작성자가 원격 DAM 배포에 액세스할 수 없는 경우에도 모든 [!DNL Sites] 작성자는 가져온 복사본에 대한 읽기 권한을 갖습니다.
 * 통합을 사용자 지정할 수 있는 API 지원이 없습니다.
