@@ -3,11 +3,11 @@ title: 참조 및 여러 페이지로 복합 자산 관리
 description: ' [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop] 내에서 디지털 자산에 대한 참조를 만드는 방법을 알아봅니다. PDF, INDD, PPT, PPTX 및 AI 파일과 같은 다중 페이지 파일의 개별 하위 자산 페이지를 보려면 페이지 뷰어 기능을 사용하십시오.'
 contentOwner: AG
 role: User, Admin
-feature: 자산 관리
+feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 참조는 참조된 자산의 경로, 문서 ID 및 인스턴스 ID를 기반으로 해결됩니다.
 
-## [!DNL Adobe Illustrator]:디지털 자산을 참조로 추가 {#refai}
+## [!DNL Adobe Illustrator]: 디지털 자산을 참조로 추가 {#refai}
 
 [!DNL Adobe Illustrator] 파일 내에서 기존 디지털 자산을 참조할 수 있습니다.
 
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    ![자산 세부 정보에서 참조 열의 Experience Manager 자산 참조 보기](assets/asset-references.png)
 
-   *그림:자산 세부 사항의 자산 참조.*
+   *그림: 자산 세부 사항의 자산 참조.*
 
-## [!DNL Adobe InDesign]:디지털 자산을 참조로 추가 {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: 디지털 자산을 참조로 추가 {#add-aem-assets-as-references-in-adobe-indesign}
 
 [!DNL InDesign] 파일 내에서 디지털 자산을 참조하려면 자산을 [!DNL InDesign] 파일로 드래그하거나 [!DNL InDesign] 파일을 ZIP 아카이브로 내보내십시오.
 
@@ -69,7 +69,7 @@ INDD 파일이 업로드되면 리포지토리에서 `xmpMM:InstanceID` 및 `xmp
 1. `Unarchiver` 워크플로우를 시작합니다.
 1. 워크플로우가 완료되면 링크 폴더의 참조가 자동으로 하위 자산으로 참조됩니다. 참조된 자산 목록을 보려면 [!DNL InDesign] 자산의 자산 세부 사항 페이지로 이동하여 [레일](/help/sites-authoring/basic-handling.md#rail-selector)을 닫습니다.
 
-## [!DNL Adobe Photoshop]:디지털 자산을 참조로 추가 {#refps}
+## [!DNL Adobe Photoshop]: 디지털 자산을 참조로 추가 {#refps}
 
 1. [!DNL Experience Manager] 데스크탑 앱을 사용하여 [!DNL Experience Manager Assets]에 액세스합니다. 로컬 파일 시스템에 자산을 다운로드하여 표시합니다. [!DNL Adobe Photoshop]에서 [!UICONTROL 연결 배치] 기능을 사용합니다. [데스크탑 앱에 자산 배치](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)를 참조하십시오.
 
@@ -96,13 +96,17 @@ INDD 파일이 업로드되면 리포지토리에서 `xmpMM:InstanceID` 및 `xmp
 
 하위 자산을 생성하려면 다음 중 하나를 수행합니다.
 
-* 새 자산:[!UICONTROL DAM 자산 업데이트] 워크플로우는 [!DNL Experience Manager]에 업로드된 모든 새 자산에서 실행됩니다. 새 다중 페이지 자산에 대해 하위 자산이 자동으로 생성됩니다.
-* 기존 다중 페이지 자산:다음 단계 중 하나를 수행하여 [!UICONTROL DAM 자산 업데이트] 워크플로우를 수동으로 실행합니다.
+* 새 자산: [!UICONTROL DAM 자산 업데이트] 워크플로우는 [!DNL Experience Manager]에 업로드된 모든 새 자산에서 실행됩니다. 새 다중 페이지 자산에 대해 하위 자산이 자동으로 생성됩니다.
+* 기존 다중 페이지 자산: 다음 단계 중 하나를 수행하여 [!UICONTROL DAM 자산 업데이트] 워크플로우를 수동으로 실행합니다.
 
    * 자산을 선택하고 [!UICONTROL 타임라인]을 클릭하여 왼쪽 패널을 엽니다. 또는 키보드 단축키 `alt + 3`를 사용합니다. [!UICONTROL 워크플로우 시작]을 클릭하고, [!UICONTROL DAM 자산 업데이트]를 선택하고 [!UICONTROL 시작]을 클릭한 다음 [!UICONTROL 계속]을 클릭합니다.
    * 자산을 선택하고 도구 모음에서 [!UICONTROL 만들기] > [!UICONTROL 워크플로우]를 클릭합니다. 팝업 대화 상자에서 [!UICONTROL DAM 자산 업데이트] 워크플로우를 선택하고 [!UICONTROL 시작]을 클릭한 다음 [!UICONTROL 계속]을 클릭합니다.
 
 특히 Microsoft Word 문서에서 **[!UICONTROL DAM Parse Word 문서]** 워크플로우를 실행합니다. Microsoft Word 문서의 내용에서 `cq:Page` 구성 요소를 생성합니다. 문서에서 추출된 이미지는 `cq:Page` 구성 요소에서 참조됩니다. 이러한 이미지는 하위 자산 생성이 비활성화된 경우에도 추출됩니다.
+
+>[!NOTE]
+>
+>[!UICONTROL 프로세스 인수]의 [!UICONTROL 하위 자산 만들기 - 단계 속성]에서 [!DNL Experience Manager]에서 생성하는 하위 자산 수를 지정할 수 있습니다. 기본값은 5입니다. 모든 하위 자산을 생성하려면 필드를 비워 둡니다. 필드에 음수가 있으면 하위 자산이 생성되지 않습니다.
 
 ## 하위 자산 보기 {#viewing-subassets}
 

@@ -3,11 +3,11 @@ title: 링크를 사용하여 자산 공유
 description: 자산, 폴더 및 컬렉션을 URL로 공유합니다.
 contentOwner: AG
 role: User
-feature: 링크 공유,자산 관리
+feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---
@@ -24,20 +24,17 @@ ht-degree: 1%
 
 ## 자산 공유 {#share-assets}
 
-사용자와 공유할 자산의 URL을 생성하려면 링크 공유 대화 상자를 사용합니다. 관리자 권한이 있거나 `/var/dam/share` 위치에 읽기 권한이 있는 사용자는 자신과 공유된 링크를 볼 수 있습니다.
+사용자와 공유할 자산의 URL을 생성하려면 [!UICONTROL 링크 공유] 대화 상자를 사용합니다. 관리자 권한이 있거나 `/var/dam/share` 위치에 읽기 권한이 있는 사용자는 자신과 공유된 링크를 볼 수 있습니다.
 
 1. [!DNL Assets] 사용자 인터페이스에서 링크로 공유할 자산을 선택합니다.
-1. 도구 모음에서 **[!UICONTROL 링크 공유]** ![자산 공유 아이콘](assets/do-not-localize/assets_share.png)을 클릭합니다. **[!UICONTROL 공유]**&#x200B;를 클릭한 후 만들 링크는 [!UICONTROL 링크 공유] 필드에 미리 표시됩니다. **[!UICONTROL Submit]**&#x200B;을 클릭하기 전까지는 링크가 아직 만들어지지 않습니다.
 
-   ![링크 공유 대화 상자](assets/Link-sharing-dialog-box.png)
+1. 도구 모음에서 **[!UICONTROL 링크 공유]** ![자산 공유 아이콘](assets/do-not-localize/assets_share.png)을 클릭합니다. **[!UICONTROL 공유]**&#x200B;를 클릭한 후 만들 링크는 [!UICONTROL 링크 공유] 필드에 미리 표시됩니다. **[!UICONTROL Submit]**&#x200B;을 선택해야 링크가 만들어집니다.
 
-   *그림:링크로 자산을 공유하는 대화 상자*
+   ![링크 공유 대화 상자](/help/assets/assets/share-assets-as-link.png)
+
+   *그림: 링크로 자산을 공유하는 대화 상자*
 
 1. **[!UICONTROL 링크 공유]** 대화 상자의 이메일 주소 상자에 링크를 공유할 사용자의 이메일 ID를 입력합니다. 사용자를 한 명 이상 추가할 수 있습니다.
-
-   ![링크 공유 대화 상자에서 직접 자산에 대한 링크 공유](assets/Asset-Sharing-LinkShareDialog.png)
-
-   *그림:링크 공유 대화 상자에서 직접  [!UICONTROL 자산에 대한 링크] 를 공유합니다.*
 
    >[!NOTE]
    >
@@ -51,7 +48,7 @@ ht-degree: 1%
 
    ![공유 링크의 만료 날짜 설정](assets/Set-shared-link-expiration.png)
 
-1. 사용자가 표현물과 함께 원본 자산을 다운로드하도록 하려면 **[!UICONTROL 원본 파일 다운로드 허용]**&#x200B;을 선택합니다. 기본적으로 사용자는 링크로 공유하는 자산의 표현물만 다운로드할 수 있습니다.
+1. 사용자가 원래 자산을 다운로드하도록 하려면 **[!UICONTROL 원본 파일의 다운로드 허용]**&#x200B;을 선택합니다. 사용자가 공유 자산의 표현물만 다운로드하도록 하려면 **[!UICONTROL 파일]**&#x200B;의 표현물 다운로드 허용 을 선택하십시오.
 
 1. **[!UICONTROL 공유]**&#x200B;를 클릭합니다. 링크가 이메일을 통해 사용자와 공유되는지 확인하는 메시지가 표시됩니다.
 
@@ -77,10 +74,10 @@ ht-degree: 1%
 1. 서비스 목록에서 **[!UICONTROL 일 CQ 메일 서비스]**&#x200B;를 찾습니다.
 1. 서비스 옆에 있는 **[!UICONTROL 편집]**&#x200B;을 클릭하고 **[!UICONTROL Day CQ Mail Service]**&#x200B;에 대해 이름에 대해 언급된 세부 사항을 사용하여 다음 매개 변수를 구성합니다.
 
-   * SMTP 서버 호스트 이름:이메일 서버 호스트 이름
-   * SMTP 서버 포트:전자 메일 서버 포트
-   * SMTP 사용자:이메일 서버 사용자 이름
-   * SMTP 암호:이메일 서버 암호
+   * SMTP 서버 호스트 이름: 이메일 서버 호스트 이름
+   * SMTP 서버 포트: 전자 메일 서버 포트
+   * SMTP 사용자: 이메일 서버 사용자 이름
+   * SMTP 암호: 이메일 서버 암호
 
    ![chlimage_1-263](assets/chlimage_1-548.png)
 

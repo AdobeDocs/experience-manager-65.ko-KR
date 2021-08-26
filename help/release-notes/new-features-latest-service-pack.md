@@ -4,9 +4,9 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 10의 새로운 기�
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: d83f8d6e4b99ac7f287c0f091b84bbbf9d82fc75
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3974'
+source-wordcount: '3983'
 ht-degree: 37%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 37%
 [!DNL Adobe Experience Manager] 6.5 서비스 팩은 분기별로 새로운 기능, 고객이 요청한 개선 사항, 성능, 안정성 및 보안 개선 사항을 제공합니다. 분기별 출시되어 새로운 기능과 혁신적인 기능에 쉽게 액세스하고 그러한 기능을 채택할 수 있습니다.
 
 이 문서에서는 최신 서비스 팩에 포함된 기능, 이전 6.5 서비스 팩에 포함된 [주요 기능](#key-features-previous-service-packs) 및 마지막 서비스 팩](#key-releases-since-last-sp) 릴리스 이후 [주요 릴리스를 소개합니다.
-
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -41,13 +40,13 @@ ht-degree: 37%
 
 * [!DNL Experience Manager] 연결된 자산 기능을 해당 핵심 구성 요소에서  [!DNL Dynamic Media] 이미지를 사용하도록 확장합니다. [연결된 자산 사용](/help/assets/use-assets-across-connected-assets-instances.md)을 참조하십시오.
 
-* 개별 자산 및 컬렉션을 링크로 공유할 때([!UICONTROL 링크 공유] 대화 상자 사용) 사용자는 수신자가 원래 자산을 다운로드하도록 할지, 아니면 해당 표현물을 다운로드하도록 할지 또는 둘 다 다운로드하도록 할지 선택할 수 있습니다.
+* 개별 자산 및 컬렉션을 링크로 공유할 때([!UICONTROL 링크 공유] 대화 상자 사용) 사용자는 수신자가 원래 자산을 다운로드하도록 할지, 아니면 해당 표현물을 다운로드하도록 할지 또는 둘 다 다운로드하도록 할지 선택할 수 있습니다. 링크](/help/assets/link-sharing.md)를 통해 자산 공유 를 참조하십시오.[
 
-   ![원본 자산만 다운로드하거나, 표현물만 다운로드하거나, 두 가지 모두를 다운로드하는 옵션](/help/assets/assets/share-renditions.png)
+   ![원본 자산만, 표현물만 또는 두 가지 모두만 다운로드할 수 있는 옵션](/help/release-notes/assets/share-assets-as-link.png)
 
 * 사용자가 공유된 자산을 링크로 다운로드하면 원래 자산, 표현물 또는 두 가지 모두를 다운로드하도록 선택할 수 있습니다.
 
-* 관리자는 PDF, PowerPoint, InDesign 및 Keynote 파일과 같은 복합 자산에 대해 [!DNL Experience Manager]이 생성하는 하위 자산 수를 제한할 수 있습니다.
+* **생성된 하위 자산 제한**: 관리자는 PDF, PowerPoint, InDesign 및 Keynote 파일과 같은 복합 자산에 대해  [!DNL Experience Manager] 생성되는 하위 자산 수를 제한할 수 있습니다.
 
    ![하위 자산 생성 제한](/help/assets/assets/sub-asset-limit.png)
 

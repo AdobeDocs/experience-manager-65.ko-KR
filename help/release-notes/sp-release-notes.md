@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 10에 관한 �
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 4fca7799bf33bf90f601ab72a354f76e48ccdb04
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3652'
 ht-degree: 11%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 11%
 
 * **링크 공유 옵션을 사용하여 자산 또는 표현물을 다운로드합니다**. 자산 및 컬렉션을 링크로 공유할 때 사용자는 원본 자산의 다운로드를 허용할지, 렌디션을 허용할지 또는 공유 링크를 사용하여 둘 다 다운로드하도록 허용할지를 선택할 수 있습니다. 또한 링크를 통해 공유된 자산을 다운로드하는 사용자는 원본 자산만, 표현물만 또는 두 가지 모두를 다운로드할 수 있습니다.
 
-* **생성된 하위 자산 제한**: 관리자는 PDF, PowerPoint, InDesign 및 Keynote 파일과 같은 복합 자산에 대해  [!DNL Experience Manager] 생성되는 하위 자산 수를 제한할 수 있습니다.
+* **생성된 하위 자산 제한**: 관리자는 PDF, PowerPoint, InDesign 및 Keynote 파일과 같은 복합 자산에 대해  [!DNL Experience Manager] 생성되는 하위 자산 수를 제한할 수 있습니다. [조합 자산 관리](/help/assets/managing-linked-subassets.md#generate-subassets)를 참조하십시오.
 
 * **Camera Raw 지원**:  [!DNL Camera Raw] v10.4 [!DNL Adobe Camera Raw] 를 지원하는 새 패키지를 사용할 수 있습니다.  [를  [!DNL Camera Raw]](/help/assets/camera-raw.md)사용하여 이미지 처리를 참조하십시오.
 

@@ -3,11 +3,11 @@ title: 자산 다운로드
 description: ' [!DNL Adobe Experience Manager] 에서 자산을 다운로드하고 다운로드 기능을 활성화하거나 비활성화하는 방법을 알아봅니다.'
 contentOwner: AG
 role: User
-feature: 자산 관리,자산 분배
+feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 66becef1f25d15c5451be6bc480ff7a4bccd4fcb
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '873'
 ht-degree: 3%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 3%
 
 DAM에서 자산을 다운로드할 수 있도록 하려면 Asset Share Commons 또는 기타 포털과 같은 구현을 사용할 때 OSGi 구성을 통해 서블릿을 수동으로 활성화합니다. Adobe은 일상적인 다운로드 요구 사항에 영향을 주지 않고 허용된 다운로드 크기를 가능한 한 낮게 설정할 것을 권장합니다. 높은 값은 성능에 영향을 줄 수 있습니다.
 
-1. 게시 실행 모드(`config.publish`)를 대상으로 하는 이름 지정 규칙이 있는 폴더를 만듭니다.`/apps/<your-app-name>/config.publish`. 실행 모드에 대한 구성 속성을 정의하려면 [실행 모드](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode)를 참조하십시오.
+1. 게시 실행 모드(`config.publish`)를 대상으로 하는 이름 지정 규칙이 있는 폴더를 만듭니다. `/apps/<your-app-name>/config.publish`. 실행 모드에 대한 구성 속성을 정의하려면 [실행 모드](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode)를 참조하십시오.
 1. 구성 폴더에서 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 유형의 파일을 만듭니다.`nt:file`
 1. `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 을(를) 다음으로 채웁니다. 다운로드에 대한 최대 크기(바이트)를 `asset.download.prezip.maxcontentsize` 값으로 설정합니다. 아래 샘플은 ZIP 다운로드의 최대 크기를 100kB를 초과하지 않도록 구성합니다.
 
