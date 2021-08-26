@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: 73e53f516d8e10b548f913db079c7e9812deb907
+source-git-commit: 9e1eea90945bb77e83e15d25708e47f2f3009fd8
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '374'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 [!DNL Experience Manager Assets]에서 [!DNL Camera Raw] 지원을 활성화하려면 다음 단계를 수행하십시오.
 
-1. [!DNL Software Distribution]에서 [Camera Raw 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)를 다운로드합니다.
+1. [!DNL Software Distribution]에서 [[!DNL Camera Raw] 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip)를 다운로드합니다.
 1. 액세스 `https://[aem_server]:[port]/workflow`. **[!UICONTROL DAM 자산 업데이트]** 워크플로우를 엽니다.
 1. **[!UICONTROL 축소판 처리]** 단계를 편집합니다.
 1. **[!UICONTROL 축소판 그림]** 탭에서 다음 구성을 제공합니다.
