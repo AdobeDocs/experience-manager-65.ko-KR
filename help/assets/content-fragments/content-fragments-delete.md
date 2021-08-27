@@ -1,26 +1,18 @@
 ---
 title: 컨텐츠 조각 - 삭제 고려 사항
-seo-title: 컨텐츠 조각 - 삭제 고려 사항
-description: 컨텐츠 조각 - 삭제 고려 사항
-seo-description: 컨텐츠 조각 - 삭제 고려 사항
-uuid: e7ac1809-159f-4d02-ad30-dc6c246e8a04
-contentOwner: aheimoz
-topic-tags: content-fragments
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
-docset: aem65
-feature: 콘텐츠 조각
-role: User, Admin
-exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: AEM에서 컨텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 고려 사항을 검토하십시오. 컨텐츠 조각은 헤드리스 컨텐츠를 제공하기 위한 강력한 도구이며 컨텐츠 조각을 삭제하기 위한 의미를 신중하게 고려해야 합니다.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 100%
+source-wordcount: '509'
+ht-degree: 84%
 
 ---
 
-# 컨텐츠 조각 - 삭제 고려 사항{#content-fragments-delete-considerations}
+# 컨텐츠 조각 - 삭제 고려 사항 {#content-fragments-delete-considerations}
+
+AEM에서 컨텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 고려 사항을 검토하십시오. 컨텐츠 조각은 헤드리스 컨텐츠를 제공하기 위한 강력한 도구이며 컨텐츠 조각을 삭제하기 위한 의미를 신중하게 고려해야 합니다.
 
 ## 권한 - 삭제 또는 삭제 안 함 {#permissions-delete-or-not-delete}
 
@@ -33,12 +25,12 @@ ht-degree: 100%
    * **사용 사례**: 컨텐츠 조각을 편집/업데이트하며 **전체 조각을 삭제**&#x200B;해야 하는 사용자.
    * **권한**: [삭제](/help/sites-administering/security.md#actions) 권한은 [사용자 및/또는 그룹 관리를 통해 삭제 권한을 지정](/help/sites-administering/security.md#managing-permissions)할 수 있습니다.
 
-1. **변형이나 하위 노드와 같이 컨텐츠 조각을 구성하는 여러 하위 엔티티.**
+2. **변형이나 하위 노드와 같이 컨텐츠 조각을 구성하는 여러 하위 엔티티.**
 
    컨텐츠 조각 편집기의 기본 작업을 수행하려면 이러한 임시 하위 요소를 삭제할 수 있어야 합니다. 예를 들어 변형을 조작할 때 또는 메타데이터를 편집하거나 관련 컨텐츠를 관리할 때도 마찬가지입니다.
 
    * **사용 사례**: 컨텐츠 조각을 편집/업데이트해야 하지만, **전체 조각 삭제는 허용되지 않는** 사용자.
-   * **권한**: [편집기 기능에만 필요한 권한](/help/assets/content-fragments/content-fragments-delete.md#permissions-required-for-editor-functionality-only)을 참조하십시오.
+   * **권한**: [편집기 기능에만 필요한 권한](#permissions-required-for-editor-functionality-only)을 참조하십시오.
 
 >[!NOTE]
 >

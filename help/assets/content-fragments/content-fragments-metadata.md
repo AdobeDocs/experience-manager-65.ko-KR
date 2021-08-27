@@ -1,44 +1,39 @@
 ---
 title: 메타데이터 - 조각 속성
-seo-title: 메타데이터 - 조각 속성
-description: 컨텐츠 조각의 메타데이터(속성)를 보고 편집할 수 있습니다.
-seo-description: 컨텐츠 조각의 메타데이터(속성)를 보고 편집할 수 있습니다.
-uuid: 5cd4fe03-4a24-44f2-aad7-079d7c421353
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
-docset: aem65
-feature: 콘텐츠 조각
-role: User, Admin
-exl-id: 319cd6b0-c866-4838-96a5-eceb7edae9af
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: AEM에서 컨텐츠 조각에 대한 메타데이터 속성을 보고 편집하여 헤드리스 컨텐츠를 조정하는 방법을 참조하십시오.
+feature: Content Fragments
+role: User
+source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 100%
+source-wordcount: '206'
+ht-degree: 36%
 
 ---
 
-# 메타데이터 - 조각 속성{#metadata-fragment-properties}
+# 메타데이터 - 조각 속성 {#metadata-fragment-properties}
+
+AEM에서 컨텐츠 조각에 대한 메타데이터 속성을 보고 편집하여 헤드리스 컨텐츠를 조정하는 방법을 참조하십시오.
 
 ## 속성/메타데이터 편집 {#editing-properties-meta-data}
 
 컨텐츠 조각에 대한 메타데이터(속성)를 보고 편집할 수 있습니다.
 
 1. **자산** 콘솔에서 컨텐츠 조각의 위치로 이동합니다.
-1. 다음 중 하나를 선택합니다.
+2. 다음 중 하나를 선택합니다.
 
    * [**속성 보기**&#x200B;를 선택하여 대화 상자를 엽니다](/help/assets/manage-assets.md#editing-properties). 볼 수도 있도록 열리면 편집할 수도 있습니다.
-   * [편집할 컨텐츠 조각](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)을 연 후 사이드 패널에서 **메타데이터**&#x200B;를 선택합니다.
+   * 편집할 컨텐츠 조각을 연 후 사이드 패널에서 **메타데이터** 를 선택합니다.
 
-   ![cfm-6420-06](assets/cfm-6420-06.png)
+   ![메타데이터](assets/cfm-metadata-01.png)
 
-1. **기본** 탭에는 다음과 같이 보거나 편집할 수 있는 옵션이 있습니다.
+3. **기본** 탭에는 다음과 같이 보거나 편집할 수 있는 옵션이 있습니다.
 
    * 썸네일 - 여기에 사용할 **이미지를 업로드**&#x200B;할 수 있습니다.
+   * **컨텐츠 조각** 모델은 현재 조각을 만드는 데 사용되는 모델을 나타냅니다
    * **제목**
    * **설명**
    * **태그**
+      * [](/help/sites-authoring/tags.md) 태그는 컨텐츠 분류 및 분류법에 사용할 수 있으므로 조각을 구성할 때 특히 유용합니다. 태그는 컨텐츠를 찾고(태그별) 벌크 작업을 적용하는 데 사용할 수 있습니다.
+예를 들어 관련 조각에 &quot;크리스마스 시작&quot;으로 태그를 지정하여 하위 집합으로 검색할 수 있도록 하거나, 새 폴더에서 다른 향후 실행 시 사용할 수 있도록 복사할 수 있습니다.
    * 작성일(표시만)
-   ![cfm-6420-07](assets/cfm-6420-07.png)
+   ![메타데이터](assets/cfm-metadata-02.png)

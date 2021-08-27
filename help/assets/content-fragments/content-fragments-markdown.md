@@ -1,30 +1,20 @@
 ---
 title: Markdown
-seo-title: Markdown
-description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
-seo-description: 작성 시 컨텐츠 조각 편집기에서는 Markdown 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
-uuid: afcbf82f-3a75-4491-9172-706188db65bb
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
-docset: aem65
-feature: 콘텐츠 조각
-role: User, Admin
-exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: 컨텐츠 조각 편집기에서 Markdown 구문을 사용하여 헤드리스 컨텐츠를 쉽게 만들 수 있는 방법을 이해합니다.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 97%
+source-wordcount: '522'
+ht-degree: 90%
 
 ---
 
-# Markdown{#markdown}
+# Markdown {#markdown}
 
-[작성](content-fragments-variations.md#authoring-your-content) 시 컨텐츠 조각 편집기에서는 *Markdown* 구문을 사용하므로 컨텐츠를 쉽게 작성할 수 있습니다.
+[authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)인 경우 컨텐츠 조각 편집기에서는 *markdown* 구문을 사용하여 헤드리스 컨텐츠를 쉽게 작성할 수 있습니다.
 
-![Markdown 편집기](/help/assets/content-fragments/assets/cfm-6420-08.png)
+![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 다음을 항목을 정의할 수 있습니다.
 

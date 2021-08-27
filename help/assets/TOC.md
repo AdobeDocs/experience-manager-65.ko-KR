@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 85736791b7a8f518b57180b0139d6a76ebf1c6dc
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 51%
+source-wordcount: '629'
+ht-degree: 48%
 
 ---
 
@@ -91,6 +91,9 @@ ht-degree: 51%
    + [자산 편집기 확장](asseteditorx.md)
    + [[!DNL Assets] HTTP API](mac-api-assets.md)
    + [ [!DNL Assets] HTTP API에서 컨텐츠 조각 지원](assets-api-content-fragments.md)
+   + [컨텐츠 조각용 GraphQL API](content-fragments/graphql-api-content-fragments.md)
+   + [컨텐츠 조각에 대한 원격 GraphQL 쿼리에 대한 인증](content-fragments/graphql-authentication-content-fragments.md)
+   + [컨텐츠 조각을 사용한 GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] 프록시 개발](proxy.md)
 + 자산 관리 {#administer}
    + [지원되는 파일 형식](assets-formats.md)
@@ -130,15 +133,19 @@ ht-degree: 51%
    + [자산을 [!DNL Brand Portal]에 게시](brand-portal-publish-assets.md)
    + [폴더를 [!DNL Brand Portal]에 게시](brand-portal-publish-folder.md)
    + [컬렉션을  [!DNL Brand Portal]에 게시](brand-portal-publish-collection.md)
-+ 콘텐츠 조각 {#fragments}
++ 콘텐츠 조각 {#content-fragments}
    + [컨텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
-   + [컨텐츠 조각 관리](content-fragments/content-fragments-managing.md)
+   + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 게재](content-fragments/content-fragments-graphql.md)
+   + [인스턴스에 대한 컨텐츠 조각 기능 활성화](content-fragments/content-fragments-configuration-browser.md)
    + [컨텐츠 조각 모델](content-fragments/content-fragments-models.md)
+   + [컨텐츠 조각 관리](content-fragments/content-fragments-managing.md)
    + [변형 - 조각 컨텐츠 작성](content-fragments/content-fragments-variations.md)
    + [콘텐츠 조각 관련 콘텐츠](content-fragments/content-fragments-assoc-content.md)
    + [메타데이터 - 조각 속성](content-fragments/content-fragments-metadata.md)
    + [컨텐츠 조각 - 삭제 고려 사항](content-fragments/content-fragments-delete.md)
-   + [컨텐츠 조각 - Markdown](content-fragments/content-fragments-markdown.md)
+   + [Markdown](content-fragments/content-fragments-markdown.md)
+   + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [미리 보기 - JSON 표시](/help/assets/content-fragments/content-fragments-json-preview.md)
    + [컨텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md)
 + 자산 관리 {#managing}
    + [디지털 자산을 관리합니다](manage-assets.md)

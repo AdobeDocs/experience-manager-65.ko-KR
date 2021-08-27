@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 조각 템플릿
-seo-title: 컨텐츠 조각 템플릿
+seo-title: Content Fragment Templates
 description: 템플릿은 컨텐츠 조각을 만들 때 선택되며 기본 구조, 요소 및 변형을 새 조각에 제공합니다
-seo-description: 템플릿은 컨텐츠 조각을 만들 때 선택되며 기본 구조, 요소 및 변형을 새 조각에 제공합니다
+seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 uuid: d147bac8-b710-40ed-9664-decb5ffcf8e7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2ec9625d480eb8cae23f44aa247fce2a519dec31
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '656'
 ht-degree: 5%
 
 ---
@@ -25,6 +25,10 @@ ht-degree: 5%
 >[이제 컨텐츠 조각 ](/help/assets/content-fragments/content-fragments-models.md) 모델을 사용하여 모든 조각을 만드는 것이 좋습니다.
 >
 >컨텐츠 조각 모델은 We.Retail의 모든 예에 사용됩니다.
+
+>[!NOTE]
+>
+>AEM 6.3 이전에는 모델 대신 템플릿을 사용하여 컨텐츠 조각을 만들었습니다. 템플릿은 더 이상 새 조각을 만드는 데 사용할 수 없지만 그러한 템플릿으로 만든 조각은 계속 지원됩니다.
 
 템플릿은 컨텐츠 조각을 만들 때 선택합니다. 기본 구조, 요소 및 변형을 새 조각에 제공합니다. 컨텐츠 조각에 사용되는 템플릿은 Granite 구성 관리자를 따릅니다.
 
@@ -51,12 +55,10 @@ ht-degree: 5%
 >구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
 >
 >1. `/apps` 아래에 필요한 항목(즉, `/libs`에 있는 항목)을 다시 만듭니다.
-   >
-   >
-1. `/apps` 내에서 변경
+>
+>1. `/apps` 내에서 변경
 
 >
-
 
 
 템플릿의 기본 구조는 다음과 같습니다.
@@ -135,12 +137,12 @@ conf
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>필수</p> </td>
-     <td><p><code>true</code>를 지정하는 경우 컨텐츠 조각을 만들 때 컨텐츠 조각의 요소(마스터 요소 제외)를 나타내는 하위 자산을 만들어야 합니다.<em>false</em>를 "on the fly"로 만들어야 하는 경우</p> <p><strong>참고</strong>:현재 이 매개 변수는 로 설정해야 합니다 <code>true</code>.</p> </td>
+     <td><p><code>true</code>를 지정하는 경우 컨텐츠 조각을 만들 때 컨텐츠 조각의 요소(마스터 요소 제외)를 나타내는 하위 자산을 만들어야 합니다. <em>false</em>를 "on the fly"로 만들어야 하는 경우</p> <p><strong>참고</strong>: 현재 이 매개 변수는 로 설정해야 합니다 <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
      <td><p><code>Long</code></p> <p>필수</p> </td>
-     <td><p>컨텐츠 구조의 버전현재 지원됨:</p> <p><strong>참고</strong>:현재 이 매개 변수는 로 설정해야 합니다 <code>2</code>.<br /> </p> </td>
+     <td><p>컨텐츠 구조의 버전 현재 지원됨:</p> <p><strong>참고</strong>: 현재 이 매개 변수는 로 설정해야 합니다 <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
   </table>
@@ -157,7 +159,7 @@ conf
     <tr>
      <td><code>elements</code> </td>
      <td><p><code>nt:unstructured</code></p> <p>필수</p> </td>
-     <td><p>컨텐츠 조각 요소의 정의를 포함하는 노드입니다. 필수 항목이며 <strong>Main</strong> 요소에 대해 하나 이상의 하위 노드를 포함해야 하지만 [1..n] 하위 노드.</p> <p>템플릿을 사용하면 요소 하위 분기가 조각의 모델 하위 분기에 복사됩니다.</p> <p>첫 번째 요소(CRXDE Lite에서 표시됨)는 자동으로 <i>main</i> 요소로 간주됩니다.노드 이름은 관련이 없으며 노드 자체가 주 자산으로 표시된다는 사실 이외에 특별한 의미를 갖지 않습니다.다른 요소는 하위 자산으로 처리됩니다.</p> </td>
+     <td><p>컨텐츠 조각 요소의 정의를 포함하는 노드입니다. 필수 항목이며 <strong>Main</strong> 요소에 대해 하나 이상의 하위 노드를 포함해야 하지만 [1..n] 하위 노드.</p> <p>템플릿을 사용하면 요소 하위 분기가 조각의 모델 하위 분기에 복사됩니다.</p> <p>첫 번째 요소(CRXDE Lite에서 표시됨)는 자동으로 <i>main</i> 요소로 간주됩니다. 노드 이름은 관련이 없으며 노드 자체가 주 자산으로 표시된다는 사실 이외에 특별한 의미를 갖지 않습니다. 다른 요소는 하위 자산으로 처리됩니다.</p> </td>
     </tr>
    </tbody>
   </table>
@@ -184,12 +186,12 @@ conf
     <tr>
      <td><code>defaultContent</code></td>
      <td><p><code>String</code></p> <p>옵션</p> <p>기본값: ""</p> </td>
-     <td>요소의 초기 컨텐츠;<code>precreateElements</code><i> = </i><code>true</code>인 경우에만 사용됩니다.</td>
+     <td>요소의 초기 컨텐츠; <code>precreateElements</code><i> = </i><code>true</code>인 경우에만 사용됩니다.</td>
     </tr>
     <tr>
      <td><code>initialContentType</code></td>
      <td><p><code>String</code></p> <p>옵션</p> <p>기본값: <code>text/html</code></p> </td>
-     <td><p>요소의 초기 컨텐츠 유형;<code>precreateElements</code><i> = </i><code>true</code>; 인 경우에만 사용됩니다.현재 지원됨:</p>
+     <td><p>요소의 초기 컨텐츠 유형; <code>precreateElements</code><i> = </i><code>true</code>; 인 경우에만 사용됩니다. 현재 지원됨:</p>
       <ul>
        <li><code>text/html</code></li>
        <li><code>text/plain</code></li>
@@ -199,7 +201,7 @@ conf
     <tr>
      <td><code>name</code></td>
      <td><p><code>String</code></p> <p>필수</p> </td>
-     <td>요소의 내부 이름입니다.조각 유형에 대해 고유해야 합니다.</td>
+     <td>요소의 내부 이름입니다. 조각 유형에 대해 고유해야 합니다.</td>
     </tr>
    </tbody>
   </table>
