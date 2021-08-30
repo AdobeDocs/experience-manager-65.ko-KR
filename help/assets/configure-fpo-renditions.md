@@ -3,11 +3,10 @@ title: Adobe InDesign에 대한 배치 전용 표현물 생성
 description: Experience Manager 자산 워크플로우 및 ImageMagick를 사용하여 신규 및 기존 자산의 FPO 변환을 생성합니다.
 contentOwner: Vishabh Gupta
 role: Admin
-feature: 표현물
-exl-id: null
-source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
+feature: Renditions
+source-git-commit: 08de462ead66cfc8f0cadbd1070bfa12f7c0d3d6
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
