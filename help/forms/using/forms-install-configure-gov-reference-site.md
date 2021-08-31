@@ -1,23 +1,23 @@
 ---
 title: We.Gov 및 We.Finance 참조 사이트 설정 및 구성
-seo-title: We.Gov 참조 사이트 설정 및 구성
+seo-title: Set up and configure We.Gov reference site
 description: AEM Forms 데모 패키지 설치, 구성 및 사용자 지정
-seo-description: AEM Forms 데모 패키지 설치, 구성 및 사용자 지정
+seo-description: Install, configure, and customize an AEM Forms demo package.
 uuid: 0a6ad8f9-0d38-40c3-ad8d-e705edef55f8
 contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
-source-wordcount: '4743'
+source-wordcount: '4703'
 ht-degree: 2%
 
 ---
 
-# We.Gov 및 We.Finance 참조 사이트 {#set-up-and-configure-we-gov-reference-site} 설정 및 구성
+# We.Gov 및 We.Finance 참조 사이트 설정 및 구성 {#set-up-and-configure-we-gov-reference-site}
 
-## 데모 패키지 세부 정보 {#demo-package-details}
+## 데모 패키지 세부 사항 {#demo-package-details}
 
 ### 설치 사전 요구 사항 {#installation-prerequisites}
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 * 패키지는 다른 데모 패키지 또는 이전 데모 패키지 버전이 없는 깨끗한 서버에 설치해야 합니다
 * 패키지는 작성자 모드에서 실행되는 OSGI 서버에 설치해야 합니다
 
-### 이 패키지에는 {#what-does-this-package-include}이 포함된 것은 무엇입니까?
+### 이 패키지에는 무엇이 포함되어 있습니까 {#what-does-this-package-include}
 
 [AEM Forms We.Gov 데모 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/we-gov-forms.pkg.all-2.0.2.zip)(**we-gov-forms.pkg.all-&lt;version>.zip**)은 여러 개의 다른 하위 패키지 및 서비스를 포함하는 패키지로 제공됩니다. 패키지에는 다음 모듈이 포함되어 있습니다.
 
@@ -96,7 +96,7 @@ ht-degree: 2%
 1. 설치 프로세스를 완료할 수 있도록 허용합니다.
 1. *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled*&#x200B;로 이동하여 설치가 성공했는지 확인합니다.
 
-### 로컬 ZIP 파일 {#from-a-local-zip-file}에서
+### 로컬 ZIP 파일에서 {#from-a-local-zip-file}
 
 1. **we-gov-forms.pkg.all-&lt;version>.zip** 파일을 다운로드하여 찾습니다.
 1. *https://&lt;aemserver>:&lt;port>/crx/packmgr/index.jsp*&#x200B;로 이동합니다.
@@ -113,7 +113,7 @@ ht-degree: 2%
 1. 설치 프로세스를 완료할 수 있도록 허용합니다.
 1. *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled*&#x200B;로 이동하여 설치가 성공했는지 확인합니다.
 
-### 새 패키지 버전 {#installing-new-package-versions} 설치
+### 새 패키지 버전 설치 {#installing-new-package-versions}
 
 새 패키지 버전을 설치하려면 4.1 및 4.2에 정의된 단계를 수행합니다. 다른 이전 패키지가 이미 설치되어 있는 동안 최신 패키지 버전을 설치할 수 있지만 먼저 이전 패키지 버전을 제거하는 것이 좋습니다. 이렇게 하려면 아래 절차를 따르십시오.
 
@@ -159,10 +159,10 @@ ht-degree: 2%
 
 1. 원하는 SMTP 서버에 연결하도록 서비스를 구성합니다.
 
-   1. **SMTP 서버 호스트 이름**:e(smtp.gmail.com)
-   1. **서버 포트**:예: SSL을 사용하는 gmail(465)
+   1. **SMTP 서버 호스트 이름**: e(smtp.gmail.com)
+   1. **서버 포트**: 예: SSL을 사용하는 gmail(465)
    1. **SMTP 사용자:** demo@  &lt;companyname> .com
-   1. **&quot;보낸 사람&quot; 주소**:aemformsdemo@adobe.com
+   1. **&quot;보낸 사람&quot; 주소**: aemformsdemo@adobe.com
 
    ![SMTP 구성](assets/configure_smtp.jpg)
 
@@ -209,12 +209,12 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >AEM 서버에 액세스하는 데 사용되는 URL은 구성 문제(예:*https://&lt;aemserver>:&lt;port>/mnt/overlay/adobesign/cloudservices/adobesign/properties.html*)
+   >AEM 서버에 액세스하는 데 사용되는 URL은 구성 문제(예: *https://&lt;aemserver>:&lt;port>/mnt/overlay/adobesign/cloudservices/adobesign/properties.html*)
 
 1. &quot;We.gov Adobe Sign&quot; 구성을 선택합니다.
 1. 속성을 클릭합니다.
 1. &quot;설정&quot; 탭으로 이동합니다.
-1. oAuth URL(예:[https://secure.na1.echosign.com/public/oauth](https://secure.na1.echosign.com/public/oauth)
+1. oAuth URL(예: [https://secure.na1.echosign.com/public/oauth](https://secure.na1.echosign.com/public/oauth)
 1. 구성된 Adobe Sign 인스턴스에서 구성된 클라이언트 ID 및 클라이언트 암호를 제공합니다.
 1. &quot;Adobe Sign에 연결&quot;을 클릭합니다.
 1. 연결에 성공하면 &quot;저장 및 닫기&quot;를 클릭하여 통합을 완료합니다.
@@ -244,18 +244,18 @@ ht-degree: 2%
 1. &quot;인증 설정&quot; 탭으로 이동합니다.
 1. 다음 세부 정보를 입력합니다.
 
-   1. **서비스 루트:** 예: https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/
+   1. **서비스 루트:** 예  `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **인증 유형:** OAuth 2.0
    1. **인증 설정** ( [이 정보를 수집하려면 MS Dynamics 클라우드 구성 ](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) 설정 참조):
 
       1. 클라이언트 Id - 애플리케이션 ID라고도 합니다
       1. 클라이언트 암호
-      1. OAuth URL - 예.[https://login.windows.net/common/oauth2/authorize](https://login.windows.net/common/oauth2/authorize)
-      1. 토큰 URL 새로 고침 - 예[https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
-      1. 액세스 토큰 URL - 예[https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
+      1. OAuth URL - 예. [https://login.windows.net/common/oauth2/authorize](https://login.windows.net/common/oauth2/authorize)
+      1. 토큰 URL 새로 고침 - 예 [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
+      1. 액세스 토큰 URL - 예 [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. 인증 범위 - **openid**
       1. 인증 헤더 - **인증 베어러**
-      1. 리소스 - 예: [https://msdynamicsserver.api.crm3.dynamics.com](https://msdynamicsserver.api.crm3.dynamics.com)
+      1. 리소스 - 예: `https://msdynamicsserver.api.crm3.dynamics.com`
    1. &quot;OAuth에 연결&quot;을 클릭합니다.
 
 
@@ -281,9 +281,9 @@ ht-degree: 2%
 1. 리소스 URL/서비스 루트 URL을 찾으려면 MS Dynamics 인스턴스 대시보드로 이동합니다.
 1. 상단 탐색 막대에서 &quot;Sales&quot; 또는 고유한 인스턴스 유형과 &quot;Select Settings&quot;를 클릭합니다.
 1. 오른쪽 아래 근처에 있는 &quot;사용자 지정&quot; 및 &quot;개발자 리소스&quot;를 클릭합니다.
-1. 여기에서 서비스 루트 URL을 확인할 수 있습니다.예
+1. 여기에서 서비스 루트 URL을 확인할 수 있습니다. 예
 
-   *[https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
+   *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
 1. 새로 고침 및 액세스 토큰 URL에 대한 자세한 내용은 다음 위치에서 확인할 수 있습니다.
 
@@ -387,9 +387,9 @@ Adobe Analytics 계정에 대한 사용자 자격 증명을 찾으려면 계정 
    ![액세스 관리](assets/aftia-admin-user-access.jpg)
 1. 사용 권한 상자의 오른쪽에 사용자 이름 및 공유 암호 정보가 나타납니다.
 1. 사용자 이름 내에 콜론(:)이 있으며, 콜론(:)의 왼쪽에 있는 모든 정보는 사용자 이름이며, 콜론(:)의 오른쪽에 있는 모든 정보는 회사 이름이 됩니다.
-   * 다음은 그 예입니다.*사용자 이름 :회사 이름*
+   * 다음은 그 예입니다. *사용자 이름 : 회사 이름*
 
-#### Adobe Analytics {#setup-user-authentication}에서 사용자 인증 설정
+#### Adobe Analytics에서 사용자 인증 설정 {#setup-user-authentication}
 
 관리자는 다음 작업을 수행하여 사용자에게 AEM Analytics 권한을 제공할 수 있습니다.
 
@@ -426,7 +426,7 @@ AEM Forms Analytics 데이터는 오프라인 상태이거나, `we-gov-forms.ui.
 
    ![Analysis and Recommendations](assets/analytics_recommendations.jpg)
 
-1. 이 페이지에는 AEM Sites 페이지와 관련된 Adobe Analytics에서 가져온 정보가 표시됩니다(참고:이 정보는 Adobe Analytics에서 정기적으로 새로 고침되며 실시간으로 표시되지 않습니다.
+1. 이 페이지에는 AEM Sites 페이지와 관련된 Adobe Analytics에서 가져온 정보가 표시됩니다(참고: 이 정보는 Adobe Analytics에서 정기적으로 새로 고침되며 실시간으로 표시되지 않습니다.
 
    ![AEM Sites 분석](assets/sites_analysis.jpg)
 
@@ -474,7 +474,7 @@ Adobe Forms을 사용하여 AEM Forms을 설치하고 구성하려면 전환 도
 
 * [자동 양식 전환 서비스 구성](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html)
 
-#### IMS 구성 파트 1 만들기 {#creating-ims-config}
+#### IMS 구성 만들기 1부 {#creating-ims-config}
 
 Forms 변환 도구와 올바르게 통신하도록 서비스를 구성하려면 Adobe I/O에 등록할 수 있도록 Identity Management System(IMS) 서비스를 구성해야 합니다.
 
@@ -492,9 +492,9 @@ Forms 변환 도구와 올바르게 통신하도록 서비스를 구성하려면
 1. 나머지 구성 - 검토 섹션 [Adobe I/O](#create-integration-adobeio)통합 만들기
 
 >[!NOTE]
-이 섹션에서 만든 인증서는 Adobe I/O에서 통합 서비스를 만드는 데 사용됩니다.사용자가 통합 서비스에서 생성되면 사용자는 Adobe I/O에서 해당 정보를 사용하여 구성을 완료할 수 있습니다.
+이 섹션에서 만든 인증서는 Adobe I/O에서 통합 서비스를 만드는 데 사용됩니다. 사용자가 통합 서비스에서 생성되면 사용자는 Adobe I/O에서 해당 정보를 사용하여 구성을 완료할 수 있습니다.
 
-#### Adobe I/O {#create-integration-adobeio}에서 통합 만들기
+#### Adobe I/O에서 통합 만들기 {#create-integration-adobeio}
 
 시스템 관리자에게 문의하여 통합을 만들지 않은 경우 Adobe 도메인 내에 통합을 만들 수 있는지 확인하십시오.
 
@@ -564,7 +564,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 검토할 수
 
 1. 템플릿 URL */conf/we-gov/settings/wcm/templates/we-gov-flamingo-template*.
 
-1. 테마 URL:*/content/dam/formsanddocuments-themes/adobe-gov-forms-themes/we-gov-테마*
+1. 테마 URL: */content/dam/formsanddocuments-themes/adobe-gov-forms-themes/we-gov-테마*
 
 1. 다음을 클릭합니다.
 
@@ -592,9 +592,9 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 계속 만들 수 �
 
 1. 시스템의 서비스 URL은 https://aemformsconversion.adobe.io/으로 설정됩니다.
 
-1. 템플릿 URL:*/conf/we-finance/settings/wcm/templates/we-finance-adaptive-form*
+1. 템플릿 URL: */conf/we-finance/settings/wcm/templates/we-finance-adaptive-form*
 
-1. 테마 URL:*/content/dam/formsanddocuments-themes/adobe-finance-forms-themes/we-finance-theme*
+1. 테마 URL: */content/dam/formsanddocuments-themes/adobe-finance-forms-themes/we-finance-theme*
 
 1. 다음을 클릭합니다.
 
@@ -690,7 +690,7 @@ automated forms conversion 서비스에는 특정 [우수 사례, 알려진 복�
 
 ### 사이트 페이지 사용자 지정 {#sites-pages-customization}
 
-모든 사이트 페이지는 다음 위치에서 사용할 수 있습니다.*https://&lt;aemserver>:&lt;port>/sites.html/content/we-gov*
+모든 사이트 페이지는 다음 위치에서 사용할 수 있습니다. *https://&lt;aemserver>:&lt;port>/sites.html/content/we-gov*
 
 이러한 사이트 페이지에서는 AEM 그리드 패키지를 사용하여 몇 가지 구성 요소의 레이아웃을 제어할 수도 있습니다.
 
@@ -745,13 +745,13 @@ automated forms conversion 서비스에는 특정 [우수 사례, 알려진 복�
 * (AGS-120) 사이트 탐색 구성 요소는 현재 깊이가 2개 이상인 중첩된 하위 페이지를 지원하지 않습니다.
 * (AGRS-159) 현재 MS Dynamics FDM은 먼저 2개의 작업을 수행하고 등록 적응형 양식 데이터를 Dynamics에 POST 한 다음 사용자 레코드를 가져와서 연락처 ID를 검색합니다. 현재 상태에서는 이름이 같은 두 명 이상의 사용자가 Dynamics에 있으면 연락처 ID를 가져올 수 없어 등록 적응형 양식을 제출할 수 없습니다.
 
-## 액세스 가능성 테스트 구성 {#configure-accessibility-testing}
+## 접근성 테스트 구성 {#configure-accessibility-testing}
 
-### 액세스 가능성 테스트 Chrome을 활성화하면 {#enable-chrome-add-on}에 추가됩니다.
+### 접근성 테스트 Chrome 추가 기능 활성화 {#enable-chrome-add-on}
 
 먼저 액세서빌러티 테스트를 수행하려면 Chrome 플러그인을 설치해야 합니다. 이 플러그인은 [여기](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en)에 있습니다.
 
-설치되면 Chrome 브라우저 내에서 테스트할 페이지를 로드합니다(참고:탭이 여러 개 있으면 점수가 달라질 수 있으므로 탭을 한 개만 여는 것이 좋습니다. 페이지가 로드되면
+설치되면 Chrome 브라우저 내에서 테스트할 페이지를 로드합니다(참고: 탭이 여러 개 있으면 점수가 달라질 수 있으므로 탭을 한 개만 여는 것이 좋습니다. 페이지가 로드되면
 **페이지에서**&#x200B;을 마우스 오른쪽 단추로 클릭하고 **감사** 탭 을 선택합니다. 개발자는 액세스 가능성 플러그인으로 수행할 감사 유형을 선택할 수 있습니다. 원하는 옵션을 모두 선택하면 사용자는 보고서 생성 버튼을 선택할 수 있습니다. 이렇게 하면 전체 액세스 가능성 등급을 표시하고 전체 액세스 가능성 등급을 높이는 데 사용할 수 있는 방법을 보여 주는 PDF 문서가 생성됩니다.
 
 보고서가 실행되면 사용자는 다음을 볼 수 있습니다.
@@ -764,7 +764,7 @@ automated forms conversion 서비스에는 특정 [우수 사례, 알려진 복�
 
 ![접근성 보고서](assets/aftia-accessibility-report.jpg)
 
-### Ultramarine 테마 {#ultramarine-theme}
+### 울트라마린 테마 {#ultramarine-theme}
 
 Adobe에 의해 유지 관리되는 공개적으로 이용 가능한 Ultramarine 테마는
 `we-gov-forms.pkg.all-<version>.zip` 설치 가능한 ZIP 파일. CRX를 사용하여 이 패키지를 설치하면 됩니다.

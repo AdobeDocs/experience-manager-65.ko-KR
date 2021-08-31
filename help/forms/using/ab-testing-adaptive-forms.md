@@ -1,8 +1,8 @@
 ---
 title: 적응형 양식에 대한 A/B 테스트 만들기 및 관리
-seo-title: 적응형 양식에 대한 A/B 테스트 만들기 및 관리
+seo-title: Create and manage A/B test for adaptive forms
 description: AEM Forms은 적응형 양식에 대한 A/B 테스트를 실행하여 고객 경험을 향상시키고 전환율을 향상시킬 수 있는 Adobe Target과 통합됩니다.
-seo-description: AEM Forms은 적응형 양식에 대한 A/B 테스트를 실행하여 고객 경험을 향상시키고 전환율을 향상시킬 수 있는 Adobe Target과 통합됩니다.
+seo-description: AEM Forms integrates with Adobe Target that allows running A/B tests for adaptive forms to enhance customer experience and improve conversion rates.
 uuid: e258805c-4da8-4c5d-ae91-7bea78a6a71b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,15 @@ AEM Forms은 Adobe Marketing Cloud 솔루션인 Adobe Target과 통합되어 있
 
 AEM Forms을 사용하면 적응형 양식에 대해 A/B 테스트를 실시간으로 설정하고 실행할 수 있습니다. 또한 기본 제공 및 사용자 지정 가능한 보고 기능을 제공하여 양식 경험의 실시간 성능을 시각화하고 사용자 참여도와 전환을 극대화하는 것을 식별합니다.
 
-## AEM Forms {#set-up-and-integrate-target-in-aem-forms}에서 Target 설정 및 통합
+## AEM Forms에서 Target 설정 및 통합 {#set-up-and-integrate-target-in-aem-forms}
 
 적응형 양식에 대한 A/B 테스트를 만들고 분석하기 전에 Target 서버를 설정하고 AEM Forms에 통합해야 합니다.
 
-### Target {#set-up-target} 설정
+### Target 설정 {#set-up-target}
 
 AEM을 Target과 통합하려면 유효한 Adobe Target 계정이 있는지 확인합니다. Adobe Target에 등록하면 클라이언트 코드가 전송됩니다. AEM을 Target과 연결하려면 클라이언트 코드, Target 계정과 연결된 이메일 및 암호가 필요합니다.
 
-클라이언트 코드는 Adobe Target 고객 계정을 식별하고 Adobe Target 서버를 호출할 때 URL에서 하위 도메인으로 사용됩니다. 계속하기 전에 자격 증명을 사용하여 [https://testandtarget.omniture.com/](https://testandtarget.omniture.com/)에 로그인할 수 있는지 확인하십시오.
+클라이언트 코드는 Adobe Target 고객 계정을 식별하고 Adobe Target 서버를 호출할 때 URL에서 하위 도메인으로 사용됩니다. 계속하기 전에 [https://experience.adobe.com/](https://experience.adobe.com/)에 로그온하고 액세스 권한이 있으면 [!UICONTROL 빠른 액세스] 섹션에서 [!DNL Adobe Target] 옵션을 봅니다.
 
 ### AEM Forms에서 Target 통합 {#integrate-target-in-aem-forms}
 
@@ -81,8 +81,7 @@ jboss 서버 외에 모든 애플리케이션 서버의 서버 시작 스크립�
 >
 >나중에 구성된 Target URL을 업데이트하는 경우 실행 중인 A/B 테스트가 현재 URL을 가리키도록 업데이트해야 합니다. A/B 테스트 업데이트에 대한 자세한 내용은 [A/B 테스트 업데이트](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p)를 참조하십시오.
 
-
-## AEM {#create-audiences-within-aem} 내에서 대상 만들기
+## AEM 내에서 대상 만들기 {#create-audiences-within-aem}
 
 AEM에서는 대상을 만들고 A/B 테스트에 사용할 수 있습니다. AEM 내에서 만드는 대상은 AEM Forms에서 사용할 수 있습니다. AEM 내에서 대상을 만들려면 다음 단계를 수행하십시오.
 
