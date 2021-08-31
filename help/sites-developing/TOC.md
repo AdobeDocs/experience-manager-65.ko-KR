@@ -6,11 +6,11 @@ audience: end-user
 user-guide-title: AEM 6.5 개발 사용 안내서
 breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
-feature: 개발
+feature: Developing
 role: Developer
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+source-git-commit: 1eb2ef06ed0541026ff3ba436dfab0d261af7356
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '909'
 ht-degree: 90%
 
 ---
@@ -119,7 +119,7 @@ ht-degree: 90%
       + [SPA의 복합 구성 요소](spa-composite-component.md)
       + [SPA 참조 자료](spa-reference-materials.md)
    + [HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
-   + [컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+   + [컨텐츠 조각](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
    + [경험 조각](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
    + [AEM의 컨텐츠 조각과 컨텐츠 서비스 이해](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + 개발 도구{#devtools}
