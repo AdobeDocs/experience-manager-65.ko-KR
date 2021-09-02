@@ -4,10 +4,10 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 10의 새로운 기�
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
+source-git-commit: 2a4da77cbde3d3a91674a5239436ccf962f72003
 workflow-type: tm+mt
-source-wordcount: '3983'
-ht-degree: 37%
+source-wordcount: '4106'
+ht-degree: 35%
 
 ---
 
@@ -61,6 +61,23 @@ ht-degree: 37%
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] 추가 기능 패키지는 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 후 1주일 후에 사용할 수 있습니다.
+
+* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어 및 스페인어 ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model)의 PDF forms을 적응형 양식으로 전환할 수 있습니다.
+
+* **속성 브라우저의 오류 메시지**: 응용 Forms 속성 브라우저에 각 속성에 대한 오류 메시지가 추가되었습니다. 이러한 메시지는 필드에 대해 허용되는 값을 이해하는 데 도움이 됩니다.
+
+* **리터럴 옵션을 사용하여 JSON 유형 변수에 대한 값을 설정할 수 있도록 지원합니다**. AEM Workflow의 설정 변수 단계에서 리터럴 옵션을 사용하여 JSON 유형 변수의 값을 설정할 수 있습니다. 리터럴 옵션을 사용하면 문자열 형태로 JSON을 지정할 수 있습니다.
+
+* **플랫폼 업데이트**:  [!DNL Adobe Experience Manager Forms] on JEE에서 다음 플랫폼에 대한 지원을 추가했습니다.
+   * [!DNL Adobe Acrobat 2020]
+   * [!DNL Ubuntu 20.04]
+   * [!DNL Open Office 4.1.10]
+   * [!DNL Microsoft Office 2019]
+   * [!DNL Microsoft Windows Server 2019]
+   * [!DNL RHEL8.3]
+   * [!DNL Apache Geode cache solution]
+
+* [!DNL AEM Forms]에 `GuideBridge#getGuidePath` API에 대한 지원이 추가되었습니다.
 
 ## 이전 [!DNL Experience Manager] 6.5 서비스 팩의 주요 기능 {#key-features-previous-service-packs}
 
