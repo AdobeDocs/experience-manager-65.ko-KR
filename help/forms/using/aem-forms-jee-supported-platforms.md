@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 95f2268c5965ed73336da9681ae52e755cee36f4
+source-git-commit: 496516f7f4b0e59bbfdae4cbe061a793f28449d2
 workflow-type: tm+mt
-source-wordcount: '3460'
+source-wordcount: '3472'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,7 @@ JEE 서버의 AEM Forms은 지원되는 운영 체제, 애플리케이션 서버
 >
 >* 지원되는 서버 플랫폼에 대한 전체 예외 목록은 [지원되는 서버 플랫폼에 대한 예외](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p)를 참조하십시오.
 >* AEM Forms on JEE는 지원되는 운영 체제 및 응용 프로그램의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
+
 >
 
 
@@ -516,6 +517,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
 >* Acrobat 버전은 PDF Generator 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용할 수 있도록 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 대한 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;을 참조하십시오
 >
 >* PDF Generator 서비스는 Microsoft Windows 10을 지원하지 않습니다.
+
 >
 
 
@@ -691,6 +693,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
 >* Safari에서는 관리 콘솔이 지원되지 않습니다.
 >* 서신 관리는 AEM 6.1 Forms용 Windows® Internet Explorer 9.0을 지원하지 않습니다.
 >* Forms 포털은 Internet Explorer 11에서 접근성을 위해 JAWS 14.0 화면 판독기 소프트웨어를 지원합니다.
+
 >
 
 
@@ -724,6 +727,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
 >[!NOTE]
 >
 >* Forms Portal은 iPad의 Safari에서만 지원됩니다.
+
 >
 
 
@@ -806,3 +810,13 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 
 * 2020년 9월 9일
    * AEM Forms 앱용 iOS의 지원되는 버전을 iOS 12로 변경했습니다. 이전 버전은 iOS 11입니다.
+
+* 2021년 9월 2일
+   * **플랫폼 업데이트**:  [!DNL Adobe Experience Manager Forms] on JEE에서 다음 플랫폼에 대한 지원을 추가했습니다.
+      * [!DNL Adobe Acrobat 2020]
+      * [!DNL Ubuntu 20.04]
+      * [!DNL Open Office 4.1.10]
+      * [!DNL Microsoft Office 2019]
+      * [!DNL Microsoft Windows Server 2019]
+      * [!DNL RHEL8]
+
