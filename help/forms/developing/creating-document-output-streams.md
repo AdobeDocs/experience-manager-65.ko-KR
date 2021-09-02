@@ -1,8 +1,8 @@
 ---
 title: 문서 출력 스트림 만들기
-seo-title: 문서 출력 스트림 만들기
+seo-title: Creating Document Output Streams
 description: 출력 서비스를 사용하여 문서를 PDF(PDF/A 문서 포함), PostScript, PCL(Printer Control Language) 및 Zebra - ZPL, Intermec - IPL, Datamax - DPL 및 TecToshiba - TPCL 레이블 형식으로 변환합니다.
-seo-description: 출력 서비스를 사용하여 문서를 PDF(PDF/A 문서 포함), PostScript, PCL(Printer Control Language) 및 Zebra - ZPL, Intermec - IPL, Datamax - DPL 및 TecToshiba - TPCL 레이블 형식으로 변환합니다.
+seo-description: Use the Output service to convert documents as PDF (including PDF/A documents), PostScript, Printer Control Language (PCL), and Zebra - ZPL, Intermec - IPL, Datamax - DPL, and TecToshiba - TPCL label formats.
 uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 74882ccf78a62d543f1598f12ee009f9922c18a4
 workflow-type: tm+mt
-source-wordcount: '19044'
+source-wordcount: '19016'
 ht-degree: 0%
 
 ---
 
-# 문서 출력 스트림 만들기 {#creating-document-output-streams}
+# 문서 출력 스트림 만들기  {#creating-document-output-streams}
 
 **이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms용입니다.**
 
@@ -75,7 +75,7 @@ PDF 문서를 만들 때 양식 디자인 위치를 지정하는 URI 값을 전�
 
 ## PDF 문서 만들기 {#creating-pdf-documents}
 
-출력 서비스를 사용하여 제공된 양식 디자인 및 XML 양식 데이터를 기반으로 하는 PDF 문서를 만들 수 있습니다. 출력 서비스에서 만든 PDF 문서는 대화형 PDF 문서가 아닙니다.사용자는 양식 데이터를 입력하거나 수정할 수 없습니다.
+출력 서비스를 사용하여 제공된 양식 디자인 및 XML 양식 데이터를 기반으로 하는 PDF 문서를 만들 수 있습니다. 출력 서비스에서 만든 PDF 문서는 대화형 PDF 문서가 아닙니다. 사용자는 양식 데이터를 입력하거나 수정할 수 없습니다.
 
 장기 보관을 위한 PDF 문서를 만들려면 PDF/A 문서를 만드는 것이 좋습니다. ([PDF/A 문서 작성](creating-document-output-streams.md#creating-pdf-a-documents)을 참조하십시오.)
 
@@ -192,7 +192,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
 >[!NOTE]
 >
->Forms 응용 프로그램에 있는 XDP를 참조하여 PDF 문서를 생성하는 전체 빠른 시작을 보려면 [빠른 시작(EJB 모드)을 참조하십시오.Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)를 사용하여 애플리케이션 XDP 파일을 기반으로 PDF 문서 만들기
+>Forms 응용 프로그램에 있는 XDP를 참조하여 PDF 문서를 생성하는 전체 빠른 시작을 보려면 [빠른 시작(EJB 모드)을 참조하십시오. Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)를 사용하여 애플리케이션 XDP 파일을 기반으로 PDF 문서 만들기
 
 **작업 결과 검색**
 
@@ -210,7 +210,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
 [출력 서비스 API 빠른 시작](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Java API {#create-a-pdf-document-using-the-java-api}를 사용하여 PDF 문서 만들기
+### Java API를 사용하여 PDF 문서 만들기 {#create-a-pdf-document-using-the-java-api}
 
 출력 API(Java)를 사용하여 PDF 문서를 만듭니다.
 
@@ -283,21 +283,21 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(EJB 모드):Java API를 사용하여 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[빠른 시작(EJB 모드): Java API를 사용하여 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API {#create-a-pdf-document-using-the-web-service-api}를 사용하여 PDF 문서 만들기
+### 웹 서비스 API를 사용하여 PDF 문서 만들기 {#create-a-pdf-document-using-the-web-service-api}
 
 출력 API(웹 서비스)를 사용하여 PDF 문서를 만듭니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
@@ -387,7 +387,7 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
 
 출력 서비스를 사용하여 PDF/A 문서를 만들 수 있습니다. PDF/A는 문서의 컨텐츠를 장기간 보존하기 위한 보관 형식이므로 모든 글꼴이 포함되고 파일의 압축이 해제됩니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 컨텐츠가 포함되어 있지 않습니다. 다른 출력 서비스 작업과 마찬가지로 양식 디자인과 데이터를 모두 제공하여 PDF/A 문서를 만들 수 있습니다.
 
-PDF/A-1 사양은 a와 b라는 두 가지 적합성 수준으로 구성됩니다.두 가지 간의 주요 차이점은 적합성 수준 b에 필요하지 않은 논리 구조(액세서빌러티) 지원과 관련되어 있습니다.적합성 수준에 관계없이 PDF/A-1은 생성된 PDF/A 문서에 모든 글꼴이 포함되도록 지시합니다.
+PDF/A-1 사양은 a와 b라는 두 가지 적합성 수준으로 구성됩니다. 두 가지 간의 주요 차이점은 적합성 수준 b에 필요하지 않은 논리 구조(액세서빌러티) 지원과 관련되어 있습니다. 적합성 수준에 관계없이 PDF/A-1은 생성된 PDF/A 문서에 모든 글꼴이 포함되도록 지시합니다.
 
 PDF/A는 PDF 문서 보관의 표준이지만 표준 PDF 문서가 회사의 요구 사항에 맞는 경우 보관에 PDF/A를 사용해야 하는 것은 아닙니다. PDF/A 표준은 문서 보존 요구 사항을 충족하면서 장기간 저장할 수 있는 PDF 파일을 설정하는 데 목적이 있습니다. 예를 들어, 시간이 지남에 따라 URL이 유효하지 않을 수 있으므로 URL을 PDF/A에 포함할 수 없습니다.
 
@@ -401,11 +401,11 @@ Acrobat에서 PDF/A 문서를 열면 다음 그림과 같이 문서가 PDF/A 문
 
 >[!NOTE]
 >
->AIIM 웹 사이트에는 [https://www.aiim.org/documents/standards/19005-1_FAQ.pdf](https://www.aiim.org/documents/standards/19005-1_FAQ.pdf)에서 액세스할 수 있는 PDF/A FAQ 섹션이 있습니다.
+>AIIM 웹 사이트에는 [https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml](https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml)에서 액세스할 수 있는 PDF/A FAQ 섹션이 있습니다.
 
 >[!NOTE]
 >
->출력 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)를 참조하십시오.
+>출력 서비스에 대한 자세한 내용은 [AEM Forms에 대한 서비스 참조](https://www.adobe.com/go/learn_aemforms_services_65)를 참조하십시오.
 
 ### 단계 요약 {#summary_of_steps-1}
 
@@ -475,7 +475,7 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 
 [출력 서비스 API 빠른 시작](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Java API {#create-a-pdf-a-document-using-the-java-api}를 사용하여 PDF/A 문서를 만듭니다
+### Java API를 사용하여 PDF/A 문서 만들기 {#create-a-pdf-a-document-using-the-java-api}
 
 출력 API(Java)를 사용하여 PDF/A 문서를 만듭니다.
 
@@ -543,19 +543,19 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 PDF/A 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF/A 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성을 설정합니다](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-### 웹 서비스 API {#create-a-pdf-a-document-using-the-web-service-api}를 사용하여 PDF/A 문서를 만듭니다
+### 웹 서비스 API를 사용하여 PDF/A 문서 만들기 {#create-a-pdf-a-document-using-the-web-service-api}
 
 출력 API(웹 서비스)를 사용하여 PDF/A 문서를 만듭니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
@@ -630,7 +630,7 @@ PDF/A 문서를 만들 때 렌더링 런타임 옵션을 설정할 수 있습니
 
 [SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## 컨텐츠 서비스에 있는 문서(더 이상 사용되지 않음)를 출력 서비스 {#passing-documents-located-in-content-services-deprecated-to-the-output-service}에 전달
+## 컨텐츠 서비스에 있는 문서(더 이상 사용되지 않음)를 출력 서비스에 전달 {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
 출력 서비스는 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 양식 디자인이 포함된 `com.adobe.idp.Document` 개체를 출력 서비스에 전달할 수 있습니다. 그런 다음 출력 서비스는 `com.adobe.idp.Document` 개체에 있는 양식 디자인을 렌더링합니다.
 
@@ -690,7 +690,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
 [조각을 사용하여 PDF 문서 만들기](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
-### Java API {#pass-documents-to-the-output-service-using-the-java-api}를 사용하여 출력 서비스에 문서를 전달합니다
+### Java API를 사용하여 출력 서비스에 문서를 전달합니다 {#pass-documents-to-the-output-service-using-the-java-api}
 
 출력 서비스 및 컨텐츠 서비스(더 이상 사용되지 않음) API(Java)를 사용하여 컨텐츠 서비스에서 검색한 문서를 전달합니다.
 
@@ -737,23 +737,23 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(EJB 모드):Java API를 사용하여 출력 서비스에 문서 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[빠른 시작(EJB 모드): Java API를 사용하여 출력 서비스에 문서 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 출력 서비스에 문서 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 출력 서비스에 문서 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API {#pass-documents-to-the-output-service-using-the-web-service-api}를 사용하여 출력 서비스에 문서를 전달합니다
+### 웹 서비스 API를 사용하여 출력 서비스에 문서를 전달합니다 {#pass-documents-to-the-output-service-using-the-web-service-api}
 
 출력 서비스 및 컨텐츠 서비스(더 이상 사용되지 않음) API(웹 서비스)를 사용하여 컨텐츠 서비스에서 검색한 문서를 전달합니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 이 클라이언트 응용 프로그램은 두 개의 AEM Forms 서비스를 호출하므로 두 개의 서비스 참조를 만듭니다. 출력 서비스와 연결된 서비스 참조에 대해 다음 WSDL 정의를 사용하십시오.`http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 이 클라이언트 응용 프로그램은 두 개의 AEM Forms 서비스를 호출하므로 두 개의 서비스 참조를 만듭니다. 출력 서비스와 연결된 서비스 참조에 대해 다음 WSDL 정의를 사용하십시오. `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
 
-   문서 관리 서비스와 연결된 서비스 참조에 대해 다음 WSDL 정의를 사용하십시오.`http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`
+   문서 관리 서비스와 연결된 서비스 참조에 대해 다음 WSDL 정의를 사용하십시오. `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`
 
    `BLOB` 데이터 유형은 두 서비스 참조에 공통이므로 사용할 때 `BLOB` 데이터 형식을 완전히 정규화합니다. 해당 웹 서비스 빠른 시작에서 모든 `BLOB` 인스턴스는 완전히 검증됩니다.
 
@@ -818,7 +818,7 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
 
 [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## 저장소에 있는 문서를 출력 서비스 {#passing-documents-located-in-the-repository-to-the-output-service}에 전달
+## 저장소에 있는 문서를 출력 서비스에 전달 {#passing-documents-located-in-the-repository-to-the-output-service}
 
 출력 서비스는 일반적으로 XDP 파일로 저장되고 디자이너에서 만들어지는 양식 디자인을 기반으로 하는 비대화형 PDF 양식을 렌더링합니다. 양식 디자인이 포함된 `com.adobe.idp.Document` 개체를 출력 서비스에 전달할 수 있습니다. 그런 다음 출력 서비스는 `com.adobe.idp.Document` 개체에 있는 양식 디자인을 렌더링합니다.
 
@@ -834,9 +834,9 @@ AEM Forms 저장소에서 Loan.xdp를 프로그래밍 방식으로 검색하고 
 
 다음 두 가지 방법 중 하나를 사용하여 리포지토리에 있는 XDP 파일을 기반으로 PDF를 만들 수 있습니다. 참조용으로 XDP 위치를 전달하거나 리포지토리에서 XDP를 프로그래밍 방식으로 검색하여 XDP 파일 내의 출력 서비스에 전달할 수 있습니다.
 
-[빠른 시작(EJB 모드):Java API ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) 를 사용하여 애플리케이션 XDP 파일을 기반으로 PDF 문서 만들기(참조를 통해 XDP 파일의 위치를 전달하는 방법 표시).
+[빠른 시작(EJB 모드): Java API ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) 를 사용하여 애플리케이션 XDP 파일을 기반으로 PDF 문서 만들기(참조를 통해 XDP 파일의 위치를 전달하는 방법 표시).
 
-[빠른 시작(EJB 모드):Java API ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) 를 사용하여 AEM Forms 저장소에 있는 문서를 출력 서비스에 전달합니다(AEM Forms 저장소에서 XDP 파일을 프로그래밍 방식으로 검색하고 인스턴스 내에서 출력 서비스에 전달하는 방법을  `com.adobe.idp.Document` 표시). (이 섹션에서는 이 작업을 수행하는 방법을 설명합니다.)
+[빠른 시작(EJB 모드): Java API ](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) 를 사용하여 AEM Forms 저장소에 있는 문서를 출력 서비스에 전달합니다(AEM Forms 저장소에서 XDP 파일을 프로그래밍 방식으로 검색하고 인스턴스 내에서 출력 서비스에 전달하는 방법을  `com.adobe.idp.Document` 표시). (이 섹션에서는 이 작업을 수행하는 방법을 설명합니다.)
 
 >[!NOTE]
 >
@@ -890,7 +890,7 @@ XDP 파일은 `com.adobe.idp.Document` 인스턴스(또는 웹 서비스를 사�
 
 리소스 저장소 클라이언트
 
-### Java API {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}를 사용하여 저장소에 있는 문서를 출력 서비스에 전달합니다
+### Java API를 사용하여 저장소에 있는 문서를 출력 서비스에 전달합니다 {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
 
 출력 서비스 및 저장소 API(Java)를 사용하여 저장소에서 검색한 문서를 전달합니다.
 
@@ -931,7 +931,7 @@ XDP 파일은 `com.adobe.idp.Document` 인스턴스(또는 웹 서비스를 사�
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(EJB 모드):Java API를 사용하여 AEM Forms 리포지토리에 있는 문서를 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[빠른 시작(EJB 모드): Java API를 사용하여 AEM Forms 리포지토리에 있는 문서를 출력 서비스로 전달](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1001,7 +1001,7 @@ XDP 파일은 `com.adobe.idp.Document` 인스턴스(또는 웹 서비스를 사�
 
 [PDF 문서 만들기](creating-document-output-streams.md#creating-pdf-documents)
 
-### Java API {#create-a-pdf-document-based-on-fragments-using-the-java-api}를 사용하여 조각을 기반으로 PDF 문서 만들기
+### Java API를 사용하여 조각을 기반으로 PDF 문서 만들기 {#create-a-pdf-document-based-on-fragments-using-the-java-api}
 
 출력 서비스 API 및 어셈블러 서비스 API(Java)를 사용하여 조각을 기반으로 PDF 문서를 만듭니다.
 
@@ -1053,15 +1053,15 @@ XDP 파일은 `com.adobe.idp.Document` 인스턴스(또는 웹 서비스를 사�
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(EJB 모드):Java API를 사용하여 조각을 기반으로 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[빠른 시작(EJB 모드): Java API를 사용하여 조각을 기반으로 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 조각을 기반으로 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 조각을 기반으로 PDF 문서 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성을 설정합니다](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-### 웹 서비스 API {#create-a-pdf-document-based-on-fragments-using-the-web-service-api}를 사용하여 조각을 기반으로 PDF 문서 만들기
+### 웹 서비스 API를 사용하여 조각을 기반으로 PDF 문서 만들기 {#create-a-pdf-document-based-on-fragments-using-the-web-service-api}
 
 출력 서비스 API 및 어셈블러 서비스 API(웹 서비스)를 사용하여 조각을 기반으로 PDF 문서를 만듭니다.
 
@@ -1144,7 +1144,7 @@ XDP 파일은 `com.adobe.idp.Document` 인스턴스(또는 웹 서비스를 사�
 
 [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## 파일 {#printing-to-files}에 인쇄
+## 파일로 인쇄 {#printing-to-files}
 
 출력 서비스를 사용하여 PostScript, PCL(Printer Control Language) 또는 다음 레이블 형식과 같은 스트림을 파일에 인쇄할 수 있습니다.
 
@@ -1224,7 +1224,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 [출력 서비스 API 빠른 시작](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Java API {#print-to-files-using-the-java-api}를 사용하여 파일로 인쇄
+### Java API를 사용하여 파일에 인쇄 {#print-to-files-using-the-java-api}
 
 출력 API(Java)를 사용하여 파일로 인쇄:
 
@@ -1275,19 +1275,19 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 파일에 인쇄](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 파일에 인쇄](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성을 설정합니다](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-### 웹 서비스 API {#print-to-files-using-the-web-service-api}를 사용하여 파일로 인쇄
+### 웹 서비스 API를 사용하여 파일에 인쇄 {#print-to-files-using-the-web-service-api}
 
 출력 API(웹 서비스)를 사용하여 파일로 인쇄:
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
@@ -1349,7 +1349,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 [SwaRef를 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## 인쇄 스트림을 프린터로 보내는 중 {#sending-print-streams-to-printers}
+## 프린터로 인쇄 스트림 보내기 {#sending-print-streams-to-printers}
 
 출력 서비스를 사용하여 PostScript, PCL(Printer Control Language) 또는 다음 레이블 형식과 같은 인쇄 스트림을 네트워크 프린터로 보낼 수 있습니다.
 
@@ -1405,10 +1405,10 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 다음 옵션을 포함하여 인쇄 스트림을 프린터로 전송할 때 런타임 옵션을 설정할 수 있습니다.
 
-* **복사**:프린터에 보낼 복사본 수를 지정합니다. 기본값은 1입니다.
-* **스테이플**:스테이플러를 사용할 때 XCI 옵션이 설정됩니다. 이 옵션은 스테이플 요소에 의해 구성 모델에서 지정할 수 있으며 PS 및 PCL 프린터에만 사용됩니다.
-* **OutputJog**:출력 페이지를 조인해야 할 때(출력 트레이에서 물리적으로 이동) XCI 옵션이 설정됩니다. 이 옵션은 PS 및 PCL 프린터에만 사용됩니다.
-* **OutputBin**:인쇄 드라이버가 적절한 출력 저장소를 선택할 수 있도록 하는 데 사용되는 XCI 값입니다.
+* **복사**: 프린터에 보낼 복사본 수를 지정합니다. 기본값은 1입니다.
+* **스테이플**: 스테이플러를 사용할 때 XCI 옵션이 설정됩니다. 이 옵션은 스테이플 요소에 의해 구성 모델에서 지정할 수 있으며 PS 및 PCL 프린터에만 사용됩니다.
+* **OutputJog**: 출력 페이지를 조인해야 할 때(출력 트레이에서 물리적으로 이동) XCI 옵션이 설정됩니다. 이 옵션은 PS 및 PCL 프린터에만 사용됩니다.
+* **OutputBin**: 인쇄 드라이버가 적절한 출력 저장소를 선택할 수 있도록 하는 데 사용되는 XCI 값입니다.
 
 >[!NOTE]
 >
@@ -1420,7 +1420,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 프린터가 PDF를 지원하는 경우 PDF 파일을 보내도록 선택할 수 있습니다. 그러나 PDF 문서를 프린터로 보낼 때 문제가 되는 것은 각 프린터 제조업체마다 PDF 인터프리터를 다르게 구현한다는 것입니다. 즉, 일부 인쇄업체는 Adobe PDF 해석을 사용하지만 프린터에 따라 다릅니다. 다른 프린터에는 자체 PDF 인터프리터가 있습니다. 따라서 인쇄 결과는 달라질 수 있습니다.
 
-PDF 문서를 프린터에 보내는 또 다른 제한 사항은 프린트라는 것입니다.프린터의 설정을 제외하고 듀플렉스, 용지 트레이 선택 및 스테이플에 액세스할 수 없습니다.
+PDF 문서를 프린터에 보내는 또 다른 제한 사항은 프린트라는 것입니다. 프린터의 설정을 제외하고 듀플렉스, 용지 트레이 선택 및 스테이플에 액세스할 수 없습니다.
 
 인쇄할 문서를 검색하려면 `generatePrintedOutput` 메서드를 사용합니다. 다음 표는 `generatePrintedOutput` 메서드를 사용할 때 지정된 인쇄 스트림에 대해 설정된 컨텐츠 유형을 지정합니다.
 
@@ -1537,7 +1537,7 @@ PDF 문서를 프린터에 보내는 또 다른 제한 사항은 프린트라는
 
    >[!NOTE]
    >
-   >ZPL 인쇄 스트림을 생성하는 경우 `PrintedOutputOptionsSpec` 개체의 `setPagination` 메서드를 사용하여 페이지 매김 값을 설정할 수 없습니다. 마찬가지로 ZPL 인쇄 스트림에 대해 다음 옵션을 설정할 수 없습니다.OutputJog, PageOffset 및 Staple입니다. `setPagination` 메서드는 PostScript 생성에 적합하지 않습니다. PCL 생성에만 유효합니다.
+   >ZPL 인쇄 스트림을 생성하는 경우 `PrintedOutputOptionsSpec` 개체의 `setPagination` 메서드를 사용하여 페이지 매김 값을 설정할 수 없습니다. 마찬가지로 ZPL 인쇄 스트림에 대해 다음 옵션을 설정할 수 없습니다. OutputJog, PageOffset 및 Staple입니다. `setPagination` 메서드는 PostScript 생성에 적합하지 않습니다. PCL 생성에만 유효합니다.
 
 1. 인쇄할 문서 검색
 
@@ -1568,13 +1568,13 @@ PDF 문서를 프린터에 보내는 또 다른 제한 사항은 프린트라는
    >
    >`sendToPrinter` 메서드가 버전 8.2.1에서 AEM Forms API에 추가되었습니다.
 
-### 웹 서비스 API {#send-a-print-stream-to-a-printer-using-the-web-service-api}를 사용하여 인쇄 스트림을 프린터로 보냅니다.
+### 웹 서비스 API를 사용하여 프린터로 인쇄 스트림 보내기 {#send-a-print-stream-to-a-printer-using-the-web-service-api}
 
 출력 API(웹 서비스)를 사용하여 네트워크 프린터로 인쇄 스트림을 보냅니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
@@ -1607,7 +1607,7 @@ PDF 문서를 프린터에 보내는 또 다른 제한 사항은 프린트라는
 
    >[!NOTE]
    >
-   >ZPL 인쇄 스트림을 생성하는 경우 `PrintedOutputOptionsSpec` 개체의 `pagination` 데이터 멤버를 사용하여 페이지 매김 값을 설정할 수 없습니다. 마찬가지로 ZPL 인쇄 스트림에 대해 다음 옵션을 설정할 수 없습니다.OutputJog, PageOffset 및 Staple입니다. `pagination` 데이터 멤버는 PostScript 생성에 적합하지 않습니다. PCL 생성에만 유효합니다.
+   >ZPL 인쇄 스트림을 생성하는 경우 `PrintedOutputOptionsSpec` 개체의 `pagination` 데이터 멤버를 사용하여 페이지 매김 값을 설정할 수 없습니다. 마찬가지로 ZPL 인쇄 스트림에 대해 다음 옵션을 설정할 수 없습니다. OutputJog, PageOffset 및 Staple입니다. `pagination` 데이터 멤버는 PostScript 생성에 적합하지 않습니다. PCL 생성에만 유효합니다.
 
 1. 인쇄할 문서를 검색합니다.
 
@@ -1748,9 +1748,9 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 XML 데이터 소스를 기반으로 여러 파일을 성공적으로 만들려면 출력 서비스에 대해 다음 런타임 옵션을 설정해야 합니다.
 
-* **많은 파일**:출력 서비스에서 단일 문서를 만들지 여러 문서를 만들지 여부를 지정합니다. true 또는 false를 지정할 수 있습니다. XML 데이터 소스의 각 데이터 레코드에 대해 별도의 문서를 만들려면 true를 지정합니다.
-* **파일 URI**:출력 서비스에서 생성하는 파일의 위치를 지정합니다. 예를 들어 C:\\Adobe\forms\Loan.pdf 을 지정한다고 가정해 보겠습니다. 이 경우 출력 서비스는 Loan.pdf 파일을 만들고 C:\\Adobe\forms folder폴더에 파일을 넣습니다. 여러 파일이 있는 경우 파일 이름은 Loan0001.pdf, Loan0002.pdf, Loan003.pdf 등입니다. 파일 위치를 지정하면 클라이언트 컴퓨터가 아닌 서버에 파일이 배치됩니다.
-* **레코드 이름**:데이터 레코드를 구분하는 데이터 소스의 XML 요소 이름을 지정합니다. 예를 들어 이 섹션 앞에 표시된 XML 데이터 소스 예제에서 데이터 레코드를 구분하는 XML 요소를 `LoanRecord` 이라고 합니다. 레코드 이름 런타임 옵션을 설정하는 대신 데이터 레코드가 포함된 요소 레벨을 나타내는 숫자 값을 지정하여 레코드 수준을 설정할 수 있습니다. 그러나 레코드 이름 또는 레코드 수준만 설정할 수 있습니다. 두 값을 모두 설정할 수 없습니다.)
+* **많은 파일**: 출력 서비스에서 단일 문서를 만들지 여러 문서를 만들지 여부를 지정합니다. true 또는 false를 지정할 수 있습니다. XML 데이터 소스의 각 데이터 레코드에 대해 별도의 문서를 만들려면 true를 지정합니다.
+* **파일 URI**: 출력 서비스에서 생성하는 파일의 위치를 지정합니다. 예를 들어 C:\\Adobe\forms\Loan.pdf 을 지정한다고 가정해 보겠습니다. 이 경우 출력 서비스는 Loan.pdf 파일을 만들고 C:\\Adobe\forms folder폴더에 파일을 넣습니다. 여러 파일이 있는 경우 파일 이름은 Loan0001.pdf, Loan0002.pdf, Loan003.pdf 등입니다. 파일 위치를 지정하면 클라이언트 컴퓨터가 아닌 서버에 파일이 배치됩니다.
+* **레코드 이름**: 데이터 레코드를 구분하는 데이터 소스의 XML 요소 이름을 지정합니다. 예를 들어 이 섹션 앞에 표시된 XML 데이터 소스 예제에서 데이터 레코드를 구분하는 XML 요소를 `LoanRecord` 이라고 합니다. 레코드 이름 런타임 옵션을 설정하는 대신 데이터 레코드가 포함된 요소 레벨을 나타내는 숫자 값을 지정하여 레코드 수준을 설정할 수 있습니다. 그러나 레코드 이름 또는 레코드 수준만 설정할 수 있습니다. 두 값을 모두 설정할 수 없습니다.)
 
 **렌더링 런타임 옵션 설정**
 
@@ -1805,13 +1805,13 @@ XML 데이터 소스를 기반으로 여러 파일을 성공적으로 만들려�
 
 [출력 서비스 API 빠른 시작](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Java API {#create-multiple-pdf-files-using-the-java-api}를 사용하여 여러 PDF 파일 만들기
+### Java API를 사용하여 여러 PDF 파일 만들기 {#create-multiple-pdf-files-using-the-java-api}
 
 출력 API(Java)를 사용하여 여러 PDF 파일을 만듭니다.
 
 1. 프로젝트 파일 포함&quot;
 
-   Java 프로젝트의 클래스 경로에 adobe-output-client.jar와 같은 클라이언트 JAR 파일을 포함합니다..
+   Java 프로젝트의 클래스 경로에 adobe-output-client.jar와 같은 클라이언트 JAR 파일을 포함합니다. .
 
 1. 출력 클라이언트 개체 만들기
 
@@ -1857,19 +1857,19 @@ XML 데이터 소스를 기반으로 여러 파일을 성공적으로 만들려�
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(EJB 모드):Java API를 사용하여 여러 PDF 파일 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
+[빠른 시작(EJB 모드): Java API를 사용하여 여러 PDF 파일 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API {#create-multiple-pdf-files-using-the-web-service-api}를 사용하여 여러 PDF 파일 만들기
+### 웹 서비스 API를 사용하여 여러 PDF 파일 만들기 {#create-multiple-pdf-files-using-the-web-service-api}
 
 출력 API(웹 서비스)를 사용하여 여러 PDF 파일을 만들 수 있습니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
@@ -1997,9 +1997,9 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 출력 서비스에서 여러 양식 디자인을 기반으로 PDF 문서를 성공적으로 만들려면 다음 PDF 런타임 옵션을 설정합니다.
 
-* **파일 URI**:출력 서비스에서 생성하는 PDF 파일의 이름과 위치를 지정합니다.
-* **규칙**:정의한 규칙을 지정합니다.
-* **LookAhead**:정의된 텍스트 패턴을 검색할 입력 데이터 파일의 시작 부분에서 사용할 바이트 수를 지정합니다. 기본값은 500바이트입니다.
+* **파일 URI**: 출력 서비스에서 생성하는 PDF 파일의 이름과 위치를 지정합니다.
+* **규칙**: 정의한 규칙을 지정합니다.
+* **LookAhead**: 정의된 텍스트 패턴을 검색할 입력 데이터 파일의 시작 부분에서 사용할 바이트 수를 지정합니다. 기본값은 500바이트입니다.
 
 **렌더링 런타임 옵션 설정**
 
@@ -2021,7 +2021,7 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 
 [출력 서비스 API 빠른 시작](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Java API {#create-search-rules-using-the-java-api}를 사용하여 검색 규칙 만들기
+### Java API를 사용하여 검색 규칙 만들기 {#create-search-rules-using-the-java-api}
 
 출력 API(Java)를 사용하여 검색 규칙을 만듭니다.
 
@@ -2088,21 +2088,21 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(EJB 모드):Java API를 사용하여 검색 규칙 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[빠른 시작(EJB 모드): Java API를 사용하여 검색 규칙 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 검색 규칙 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 검색 규칙 만들기](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API {#create-search-rules-using-the-web-service-api}를 사용하여 검색 규칙 만들기
+### 웹 서비스 API를 사용하여 검색 규칙 만들기 {#create-search-rules-using-the-web-service-api}
 
 출력 API(웹 서비스)를 사용하여 검색 규칙을 만듭니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
@@ -2264,7 +2264,7 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 [출력 서비스 API 빠른 시작](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### Java API {#flatten-a-pdf-document-using-the-java-api}를 사용하여 PDF 문서 평면화
+### Java API를 사용하여 PDF 문서 평면화 {#flatten-a-pdf-document-using-the-java-api}
 
 출력 API(Java)를 사용하여 대화형 PDF 문서를 비대화형 PDF 문서로 병합합니다.
 
@@ -2303,21 +2303,21 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
 
 [단계 요약](creating-document-output-streams.md#summary-of-steps)
 
-[빠른 시작(EJB 모드):Java API를 사용하여 PDF 문서 변환](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[빠른 시작(EJB 모드): Java API를 사용하여 PDF 문서 변환](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 PDF 문서 변환](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 변환](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 웹 서비스 API {#flatten-a-pdf-document-using-the-web-service-api}를 사용하여 PDF 문서 평면화
+### 웹 서비스 API를 사용하여 PDF 문서 평면화 {#flatten-a-pdf-document-using-the-web-service-api}
 
 출력 API(웹 서비스)를 사용하여 대화형 PDF 문서를 비대화형 PDF 문서로 병합합니다.
 
 1. 프로젝트 파일을 포함합니다.
 
-   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다.`http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
+   MTOM을 사용하는 Microsoft .NET 프로젝트를 만듭니다. 다음 WSDL 정의를 사용해야 합니다. `http://localhost:8080/soap/services/OutputService?WSDL&lc_version=9.0.1`
 
    >[!NOTE]
    >
