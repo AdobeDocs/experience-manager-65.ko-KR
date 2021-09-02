@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 10에 관한 �
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 8c345f5f78ca5f9e8981611ef377e23309fcbe3d
+source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
 workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 11%
@@ -70,8 +70,7 @@ ht-degree: 11%
    * [!DNL Open Office 4.1.10]
    * [!DNL Microsoft Office 2019]
    * [!DNL Microsoft Windows Server 2019]
-   * [!DNL RHEL8.3]
-   * [!DNL Apache Geode cache solution]
+   * [!DNL RHEL8]
 
 [!DNL Experience Manager] 6.5.10.0에 도입된 모든 기능 및 개선 사항 목록은 [6.5 서비스 팩 10](new-features-latest-service-pack.md)의 새로운 기능 을 참조하십시오. [!DNL Adobe Experience Manager] 
 

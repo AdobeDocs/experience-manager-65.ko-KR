@@ -4,7 +4,7 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 10의 새로운 기�
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 2a4da77cbde3d3a91674a5239436ccf962f72003
+source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
 workflow-type: tm+mt
 source-wordcount: '4106'
 ht-degree: 35%
@@ -74,8 +74,7 @@ ht-degree: 35%
    * [!DNL Open Office 4.1.10]
    * [!DNL Microsoft Office 2019]
    * [!DNL Microsoft Windows Server 2019]
-   * [!DNL RHEL8.3]
-   * [!DNL Apache Geode cache solution]
+   * [!DNL RHEL8]
 
 * [!DNL AEM Forms]에 `GuideBridge#getGuidePath` API에 대한 지원이 추가되었습니다.
 
