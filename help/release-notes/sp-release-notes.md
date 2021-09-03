@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 10에 관한 �
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: a3d52ecf9284ba22cac3739ba543e5dd5c855331
+source-git-commit: 2095159a76380f7d17abcea9965ed6f82da69c8c
 workflow-type: tm+mt
-source-wordcount: '4205'
+source-wordcount: '4245'
 ht-degree: 11%
 
 ---
@@ -272,8 +272,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 >[!NOTE]
 >
->* [!DNL Experience Manager Forms] 는 예정된  [!DNL Experience Manager] 서비스 팩 릴리스 날짜로부터 1주일 후에 추가 기능 패키지를 출시합니다.
-
+>서비스 팩을 사용하면 최신 서버 운영 체제, 응용 프로그램 서버 및 데이터베이스에서 [!DNL AEM Forms]을 실행할 수 있습니다. 또한, Cloud Service에서 사용 가능한 일부 기능을 온-프레미스 환경으로 가져오고 고객이 보고한 문제에 대한 수정 사항을 제공합니다. [!DNL AEM Forms] osgi 서비스 팩에서 을 다운로드하여 설치할 수 있습니다. [!DNL AEM Forms on JEE]  서비스 팩은 2021년 9월 9일에 제공될 예정입니다.
 
 **적응형 양식**
 
