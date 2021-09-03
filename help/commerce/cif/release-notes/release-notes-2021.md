@@ -2,7 +2,7 @@
 title: AEM Content and Commerce 릴리스 노트 2021
 description: AEM Content and Commerce 릴리스 노트 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: b6703f519295eef728d5504360d99de69438064c
+source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 11%
@@ -33,7 +33,7 @@ ht-degree: 11%
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
-| CIF 추가 기능 | 2021.08.20 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.08.20.zip) |
+| CIF 추가 기능 | 2021.09.02 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
 | CIF 코어 구성 요소 | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
 | CIF Venia 참조 사이트 | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
 
