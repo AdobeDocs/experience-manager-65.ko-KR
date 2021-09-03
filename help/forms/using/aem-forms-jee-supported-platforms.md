@@ -11,7 +11,7 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 0b5b545f796a5a36f7e7f160c11ebd64e5a3c2ce
+source-git-commit: 54ace42972b2d6c7b807dbb2c7a40c2542c0b7c0
 workflow-type: tm+mt
 source-wordcount: '3250'
 ht-degree: 1%
@@ -526,8 +526,8 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
 
 추가 요구 사항은 다음을 참조하십시오.
 
-* [JEE 배포에서 단일 서버 AEM Forms을 위한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [JEE 배포에서 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
+* [JEE 배포에서 단일 서버 AEM Forms을 위한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+* [JEE 배포에서 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ## JEE에서 AEM Forms에 대해 지원되는 클라이언트 {#supported-clients-for-aem-forms-on-jee}
 
