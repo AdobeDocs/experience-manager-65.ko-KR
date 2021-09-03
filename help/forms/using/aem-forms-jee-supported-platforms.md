@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 2095159a76380f7d17abcea9965ed6f82da69c8c
+source-git-commit: 0b5b545f796a5a36f7e7f160c11ebd64e5a3c2ce
 workflow-type: tm+mt
-source-wordcount: '3248'
+source-wordcount: '3250'
 ht-degree: 1%
 
 ---
@@ -470,7 +470,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
 >
 >또한
 >
->* PDF 생성기를 사용하려면 전환을 수행하려면 32비트 버전의 [Acrobat 2017 버전 17.011.30078](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)이 필요합니다.
+>* PDF 생성기를 사용하려면 전환을 수행하려면 32비트 버전의 [Acrobat 2017 버전 17.011.30078 이상](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)이 필요합니다.
 >* PDF Generator는 변환에 필요한 32비트 Retail 버전의 Microsoft Office Professional Plus와 기타 소프트웨어만 지원합니다.
 >* PDF Generator는 Microsoft Office 365를 지원하지 않습니다.
 >* OpenOffice용 PDF Generator 변환은 Windows 및 Linux에서만 지원됩니다.
