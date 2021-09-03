@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 10에 관한 �
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 496516f7f4b0e59bbfdae4cbe061a793f28449d2
+source-git-commit: a3d52ecf9284ba22cac3739ba543e5dd5c855331
 workflow-type: tm+mt
-source-wordcount: '4438'
+source-wordcount: '4205'
 ht-degree: 11%
 
 ---
@@ -64,13 +64,17 @@ ht-degree: 11%
 
 * **리터럴 옵션을 사용하여 JSON 유형 변수에 대한 값을 설정할 수 있도록 지원합니다**. AEM Workflow의 설정 변수 단계에서 리터럴 옵션을 사용하여 JSON 유형 변수의 값을 설정할 수 있습니다. 리터럴 옵션을 사용하면 문자열 형태로 JSON을 지정할 수 있습니다.
 
-* [플랫폼 업데이트](../forms/using/aem-forms-jee-supported-platforms.md):  [!DNL Adobe Experience Manager Forms] on JEE에서 다음 플랫폼에 대한 지원을 추가했습니다.
-   * [!DNL Adobe Acrobat 2020]
-   * [!DNL Ubuntu 20.04]
-   * [!DNL Open Office 4.1.10]
-   * [!DNL Microsoft Office 2019]
-   * [!DNL Microsoft Windows Server 2019]
-   * [!DNL RHEL8]
+<!--
+
+* [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+  * [!DNL Adobe Acrobat 2020]
+  * [!DNL Ubuntu 20.04]
+  * [!DNL Open Office 4.1.10]
+  * [!DNL Microsoft Office 2019]
+  * [!DNL Microsoft Windows Server 2019]
+  * [!DNL RHEL8]
+
+  -->
 
 [!DNL Experience Manager] 6.5.10.0에 도입된 모든 기능 및 개선 사항 목록은 [6.5 서비스 팩 10](new-features-latest-service-pack.md)의 새로운 기능 을 참조하십시오. [!DNL Adobe Experience Manager] 
 
@@ -273,7 +277,11 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **적응형 양식**
 
-* 적응형 양식의 필드 값에 대해 수행된 유효성 검사가 성공하면 [!DNL AEM Forms]이 양식 데이터 모델을 호출하지 못합니다(CQ-4325491).
+<!--
+
+* When the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
+
+-->
 
 * 번역 프로젝트에 언어 사전을 추가한 다음 프로젝트를 열면 [!DNL AEM Forms]에 오류 메시지가 표시됩니다(CQ-4324933).
 
@@ -308,19 +316,26 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * 편집기에서 모든 텍스트를 선택하면 글꼴 텍스트를 Arial로 변경할 수 없습니다(NPR-36646).
 
-* 편집기에서 URL을 만들고 변경 사항을 미리 볼 때 URL 텍스트 대신 검은색 배경이 표시됩니다(NPR-36640).
+<!--
+
+* When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
+
+-->
 
 * 텍스트를 편집기에 복사하여 붙여넣을 때 문서에서 사용할 수 있는 글머리 기호의 글꼴을 Arial로 변경하는 동안 문제가 발생합니다(NPR-36628).
 
 * 텍스트 편집기의 글머리 기호에 대한 들여쓰기 문제가 발생합니다(NPR-36513).
 
-**디자이너**
+<!--
+**Designer**
 
-* 화면 Reader이 기본 페이지의 텍스트 레이블 또는 동적 PDF의 하위 양식 페이지에서 배치된 부동 필드 데이터를 읽지 못합니다(CQ-4321587).
+* Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
+
+-->
 
 **문서 서비스**
 
-* XDP 파일을 PDF 파일로 변환한 다음 결과 PDF를 어셈블하면 PDF 세대에 오류가 발생하고 다음 오류 메시지가 표시됩니다.
+* XDP 파일을 PDF 파일로 변환한 다음 결과 PDF를 어셈블하면 PDF 세대가 실패하고 다음 오류 메시지가 표시됩니다(CQ-4328666).
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -414,18 +429,21 @@ B. [패키지 관리자에서 HTTP API](/help/sites-administering/package-manage
 >
 >Experience Manager 6.5.10.0에는 [AEM Forms 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases)의 새 버전이 포함되어 있습니다. 이전 버전의 AEM Forms 호환성 패키지를 사용하고 Experience Manager 6.5.10.0으로 업데이트하는 경우 Forms 추가 기능 패키지의 패키지 사후 설치 최신 버전을 설치하십시오.
 
-### JEE에 Adobe Experience Manager Forms 설치 {#install-aem-forms-jee-installer}
+<!--
+
+### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->JEE에서 AEM Forms를 사용하지 않는 경우 건너뜁니다. 별도의 설치 프로그램을 통해 JEE의 Adobe Experience Manager Forms 수정 사항이 전달됩니다.
+>Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
 
-JEE의 Forms Experience Manager용 누적 설치 프로그램 설치 및 배포 후 구성에 대한 자세한 내용은 [릴리스 노트](jee-patch-installer-65.md)를 참조하십시오.
+For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
 
 >[!NOTE]
 >
->JEE의 Forms Experience Manager용 누적 설치 프로그램을 설치한 후 최신 Forms 추가 기능 패키지를 설치하고 `crx-repository\install` 폴더에서 Forms 추가 기능 패키지를 삭제한 다음 서버를 다시 시작합니다.
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
+-->
 
 ### UberJar {#uber-jar}
 
@@ -459,10 +477,14 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 
 ## 알려진 문제 {#known-issues}
 
-* (Microsoft Windows의 JBoss만 해당) [!DNL AEM Forms on JEE]에서 PDF 작성 서비스를 계속 사용하려면 소프트웨어 배포에서 [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip)을 다운로드하고 Zip 파일에서 사용 가능한 폴더를 추출하여 다음 위치로 복사합니다.
-   `[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
+<!--
 
-* [!DNL Microsoft Windows Server 2019]은 [!DNL MySQL 5.7] 및 [!DNL JBoss EAP 7.1]를 지원하지 않으므로 [!DNL Microsoft Windows Server 2019]은 [!DNL AEM Forms 6.5.10.0]에 대한 턴키 설치를 지원하지 않습니다.
+* (For JBoss on Microsoft Windows only) To continue using the Create PDF service on [!DNL AEM Forms on JEE], download [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) from Software Distribution, extract and copy the folder available in the Zip file to the following location:
+`[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
+
+* As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
+
+-->
 
 * [!DNL Experience Manager] 인스턴스를 6.5에서 6.5.10.0 버전으로 업그레이드하는 경우 `error.log` 파일에서 `RRD4JReporter` 예외를 볼 수 있습니다. 문제를 해결하려면 인스턴스를 다시 시작합니다.
 
