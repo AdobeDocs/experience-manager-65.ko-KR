@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 54ace42972b2d6c7b807dbb2c7a40c2542c0b7c0
+source-git-commit: 7d727f4e3e71fac241ed1409caf0fa19355354b9
 workflow-type: tm+mt
-source-wordcount: '3250'
+source-wordcount: '3249'
 ht-degree: 1%
 
 ---
@@ -231,7 +231,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
   <tr>
    <td>Oracle</td>
    <td><p>Oracle 데이터베이스 19.3.0.0.0 JDBC 드라이버</p> <p>ojdbc8.jar(버전 19.3.0.0.0)<br /> </p> </td>
-   <td><p><a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">Oracle 웹 사이트</a>에서 다운로드합니다.</p> </td>
+   <td><p><a href="https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html">Oracle 웹 사이트</a>에서 다운로드합니다.</p> </td>
   </tr>
  </tbody>
 </table>
