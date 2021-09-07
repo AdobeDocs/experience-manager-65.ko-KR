@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: f74190692d718da6074affa87d283f326eca7faa
+source-git-commit: 610f294c314489032ec71b863542d269d302ee01
 workflow-type: tm+mt
 source-wordcount: '1577'
 ht-degree: 1%
@@ -173,7 +173,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 1. 구성 **[!UICONTROL Day CQ Link Externalizer]**&#x200B;를 찾습니다. **[!UICONTROL 편집]**&#x200B;을 클릭하여 엽니다.
 1. Link Externalizer 설정은 [!DNL Experience Manager] 배포 및 [!DNL InDesign Server]에 대한 절대 URL을 만드는 데 도움이 됩니다. **[!UICONTROL Domains]** 필드를 사용하여 [!DNL Adobe InDesign Server]의 호스트 이름을 지정합니다. **저장**&#x200B;을 클릭합니다.
 
-   절대 URL을 생성할 때 로컬, 작성자 및 게시 인스턴스에 대해 호스트 이름 `localhost`을 사용해야 합니다.
+   절대 URL에서는 `localhost` 을 로컬, 작성자 및 게시 인스턴스의 호스트 이름으로 사용해야 합니다.
 
    ![Link Externalizer 설정](assets/link-externalizer-config.png)
 
