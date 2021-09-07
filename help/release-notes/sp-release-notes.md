@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 10에 관한 �
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f75c6898eee9bbd6cdf9ce5e21dacc7898b80938
+source-git-commit: 59cc855e937c7be71cfc7a28fccd1db0b91e9f97
 workflow-type: tm+mt
-source-wordcount: '4392'
+source-wordcount: '4394'
 ht-degree: 11%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 11%
 
 * [!DNL AEM Forms]에 `GuideBridge#getGuidePath` API에 대한 지원이 추가되었습니다.
 
-* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어 및 스페인어 ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model)의 PDF forms을 적응형 양식으로 전환할 수 있습니다.
+* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model)의 PDF forms을 적응형 양식으로 전환할 수 있습니다.
 
 * **속성 브라우저의 오류 메시지**: 응용 Forms 속성 브라우저에 각 속성에 대한 오류 메시지가 추가되었습니다. 이러한 메시지는 필드에 대해 허용되는 값을 이해하는 데 도움이 됩니다.
 
@@ -272,9 +272,9 @@ Need to verify with Engineering, the status is currently showing as Resolved
 >* [!DNL Experience Manager Forms] 는 예정된  [!DNL Experience Manager] 서비스 팩 릴리스 날짜로부터 1주일 후에 추가 기능 패키지를 출시합니다.
 
 
-[!DNL AEM Forms 6.5.10.0] 에는 다음 버그 수정 사항이 포함되어 있습니다.
+[!DNL AEM 6.5.10.0 Forms] 에는 다음 버그 수정 사항이 포함되어 있습니다.
 
-* [!DNL AEM Forms 6.5]을 설치하면 다음 타사 라이브러리가 자동으로 설치됩니다(CQDOC-18373).
+* [!DNL AEM 6.5 Forms]을 설치하면 다음 타사 라이브러리가 자동으로 설치됩니다(CQDOC-18373).
    * [!DNL Microsoft Visual C++ 2008 Service Pack 1 (x86)]
    * [!DNL Microsoft Visual C++ 2010 Service Pack 1 (x86)]
 
