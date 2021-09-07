@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 7d727f4e3e71fac241ed1409caf0fa19355354b9
+source-git-commit: f75c6898eee9bbd6cdf9ce5e21dacc7898b80938
 workflow-type: tm+mt
-source-wordcount: '3249'
+source-wordcount: '3471'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <td>R: 제한된 지원</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.19 </td>
+   <td>MySQL 5.7.34 </td>
    <td>-</td>
    <td>R: 제한된 지원</td>
   </tr>  
@@ -277,14 +277,29 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <th><p><strong> 플랫폼</strong></p> </th>
    <th><p><strong>지원 수준</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
-  </tr>   
-  <tr>
-   <td>Microsoft Windows Server 2016(64비트)</td>
+  </tr>
+   <tr>
+   <td>Microsoft Windows Server 2019(64비트)</td>
    <td>A: 지원됨</td>
    <td>서비스 팩 및 중요 업데이트</td>
-  </tr>  
+  </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7(커널 3.x)(64비트)</td>
+   <td>Ubuntu 20.04</td>
+   <td>A: 지원됨</td>
+   <td>서비스 팩 및 중요 업데이트</td>
+  </tr>
+  <tr>
+   <td>Microsoft Windows Server 2016(64비트)(더 이상 사용되지 않음)</td>
+   <td>A: 지원됨</td>
+   <td>서비스 팩 및 중요 업데이트</td>
+  </tr>
+  <tr>
+   <td><p>Red Hat Enterprise Linux 8(커널 4.x)(64비트)</p> </td>
+   <td><p>A: 지원됨</p> </td>
+   <td><p>사소한 릴리스, 누적 업데이트 및 중요 업데이트</p> </td>
+  </tr>
+  <tr>
+   <td><p>Red Hat Enterprise Linux 7(커널 3.x)(64비트)(더 이상 사용되지 않음)</td>
    <td><p>A: 지원됨</p> </td>
    <td><p>사소한 릴리스, 누적 업데이트 및 중요 업데이트</p> </td>
   </tr>
@@ -432,33 +447,57 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
   <tr>
    <th><p><strong>제품</strong></p> </th>
    <th><p><strong>PDF로 변환할 수 있는 지원되는 형식</strong></p> </th>
-  </tr>  
+  </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic </a> tracklatest 버전</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic </a> tracklatest 버전</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
-  </tr> 
+  </tr>
   <tr>
-   <td>Microsoft® Office 2016</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic </a> tracklatest 버전(지원 중단됨)</td>
+   <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2019</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF 및 TXT</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2016(사용 중지)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF 및 TXT</td>
   </tr>
   <tr>
    <td>WordPerfect X7</td>
    <td>WP, WPD</td>
-  </tr>  
+  </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016<br /> </td>
+   <td>Microsoft® Office Visio 2019<br /> </td>
    <td>VSD, VSDX</td>
-  </tr>  
+  </tr>
   <tr>
-   <td>Microsoft® Publisher 2016<br /> </td>
+   <td>Microsoft® Office Visio 2016 (사용 중지)<br /> </td>
+   <td>VSD, VSDX</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
-  </tr>  
+  </tr>
   <tr>
-   <td>Microsoft® Project 2016<br /> </td>
+   <td>Microsoft® Publisher 2016(사용 중지)<br /> </td>
+   <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Project 2019<br /> </td>
    <td>MPP</td>
-  </tr>  
+  </tr>
   <tr>
-   <td>OpenOffice 4.1.2</td>
+   <td>Microsoft® Project 2016(사용 중지)<br /> </td>
+   <td>MPP</td>
+  </tr>
+  <tr>
+   <td>OpenOffice 4.1.10</td>
+   <td>ODT, ODP, ODS, ODG, SXW, SXW, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, IMAGE 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPX, JPF, J2K, J2C, RTF, HTML, HTML, RTF, HTML, HTML, HTML, HTML, JTXC, HTML, XC, HTML, RTF 및 TXT</td>
+  </tr>
+  <tr>
+   <td>OpenOffice 4.1.2(사용 중지)</td>
    <td>ODT, ODP, ODS, ODG, SXW, SXW, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, IMAGE 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPX, JPF, J2K, J2C, RTF, HTML, HTML, RTF, HTML, HTML, HTML, HTML, JTXC, HTML, XC, HTML, RTF 및 TXT</td>
   </tr>  
  </tbody>
@@ -470,7 +509,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
 >
 >또한
 >
->* PDF 생성기를 사용하려면 전환을 수행하려면 32비트 버전의 [Acrobat 2017 버전 17.011.30078 이상](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)이 필요합니다.
+>* PDF Generator를 사용하려면 32비트 버전의 [Acrobat 2020 클래식 트랙 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 또는 Acrobat 2017 버전 17.011.30078이 필요합니다.
 >* PDF Generator는 변환에 필요한 32비트 Retail 버전의 Microsoft Office Professional Plus와 기타 소프트웨어만 지원합니다.
 >* PDF Generator는 Microsoft Office 365를 지원하지 않습니다.
 >* OpenOffice용 PDF Generator 변환은 Windows 및 Linux에서만 지원됩니다.
@@ -579,8 +618,12 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/) 규�
    <th><p><strong>Acrobat 및 Adobe Reader(기본)</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
-    <tr>
-   <td>Acrobat 2017(클래식 트랙)</td>
+  <tr>
+   <td>Acrobat 2020(클래식 트랙)</td>
+   <td>버전 20.004.30006 이상<br /> </td>
+  </tr>
+  <tr>
+   <td>Acrobat 2017(클래식 트랙)(더 이상 사용되지 않음)</td>
    <td>버전 17.011.30078 이상<br /> </td>
   </tr>
 
@@ -743,9 +786,37 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 
 타사 패치에 대한 추가 정보는 Adobe 엔터프라이즈 지원 사이트에서 제품과 관련된 기술 자료를 검색하여 찾을 수도 있습니다.
 
+## 플랫폼 업데이트 {#platform-updates}
+
+다음 플랫폼은 2021년 9월 7일에 AEM Forms 6.5.10.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
+
+* Adobe Acrobat 2017 - [Adobe Acrobat 2017에 대한 핵심 지원은 2022년 6월 6일에 종료됩니다](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+
+* Microsoft Windows Server 2016(64비트)
+
+* Red Hat Enterprise Linux 7(커널 3.x)(64비트)
+
+* Microsoft® Office 2016
+
+* OpenOffice 4.1.2
+
+>[!NOTE]
+>
+>[더 이상 사용되지 않는 것으로 표시된 플랫폼은 AEM Forms 6.5 서비스 팩 15(6.5.15.0) 릴리스](https://helpx.adobe.com/support/programs/eol-matrix.html)까지 계속 지원됩니다.
+
+
+
 ## 개정 내역 {#revision-history}
 
 * 2020년 9월 9일
    * AEM Forms 앱용 iOS의 지원되는 버전을 iOS 12로 변경했습니다. 이전 버전은 iOS 11입니다.
 
+* 2021년 9월 7일
+   * **플랫폼 업데이트**:  [!DNL Adobe Experience Manager Forms] on JEE에서 다음 플랫폼에 대한 지원을 추가했습니다.
+      * [!DNL Adobe Acrobat 2020]
+      * [!DNL Ubuntu 20.04]
+      * [!DNL Open Office 4.1.10]
+      * [!DNL Microsoft Office 2019]
+      * [!DNL Microsoft Windows Server 2019]
+      * [!DNL RHEL8]
 
