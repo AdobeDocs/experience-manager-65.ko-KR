@@ -3,11 +3,11 @@ title: ' [!DNL Assets] 과 통합 [!DNL InDesign Server]'
 description: ' [!DNL Adobe Experience Manager Assets] 을 [!DNL Adobe InDesign Server]과 통합하는 방법을 알아봅니다.'
 contentOwner: AG
 role: Admin
-feature: 게시
+feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f74190692d718da6074affa87d283f326eca7faa
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1577'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 * 특정 처리 작업의 로드를 분배하는 프록시. 프록시는 특정 작업을 수행하기 위해 프록시 작업자와 통신하는 [!DNL Experience Manager] 인스턴스와 결과를 전달하는 다른 [!DNL Experience Manager] 인스턴스입니다.
 * 특정 작업을 정의하고 관리하는 프록시 작업자
-여기에는 다양한 작업이 포함될 수 있습니다.예를 들어 [!DNL InDesign Server] 을 사용하여 파일을 처리합니다.
+여기에는 다양한 작업이 포함될 수 있습니다. 예를 들어 [!DNL InDesign Server] 을 사용하여 파일을 처리합니다.
 
 [!DNL Adobe InDesign] 프록시로 만든 [!DNL Experience Manager Assets]에 파일을 완전히 업로드하려면 프록시가 사용됩니다. 이 작업자는 프록시 작업자를 사용하여 [!DNL Adobe InDesign Server]과 통신합니다. 여기서 [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)는 메타데이터를 추출하고 [!DNL Experience Manager Assets]에 대한 다양한 변환을 생성합니다. 프록시 작업자는 클라우드 구성에서 [!DNL InDesign Server] 인스턴스와 [!DNL Experience Manager] 인스턴스 간에 양방향 통신을 사용하도록 설정합니다.
 
@@ -85,7 +85,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >출력 메시지를 파일에 저장하려면 리디렉션을 사용하십시오.예를 들어, Windows에서는
+   >출력 메시지를 파일에 저장하려면 리디렉션을 사용하십시오. 예를 들어, Windows에서는
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
 ### [!DNL Experience Manager Assets] 워크플로우 구성 {#configuring-the-aem-assets-workflow}
@@ -109,9 +109,9 @@ ht-degree: 1%
 
 미디어 추출 인수 및 스크립트 경로
 
-* **ExtendScript 라이브러리**:다른 스크립트에 필요한 간단한 http get/post 메서드 라이브러리입니다.
+* **ExtendScript 라이브러리**: 다른 스크립트에 필요한 간단한 http get/post 메서드 라이브러리입니다.
 
-* **스크립트 확장**:여기에서 다양한 스크립트 조합을 지정할 수 있습니다. [!DNL InDesign Server]에서 자신만의 스크립트를 실행하려면 `/apps/settings/dam/indesign/scripts`에 스크립트를 저장합니다.
+* **스크립트 확장**: 여기에서 다양한 스크립트 조합을 지정할 수 있습니다. [!DNL InDesign Server]에서 자신만의 스크립트를 실행하려면 `/apps/settings/dam/indesign/scripts`에 스크립트를 저장합니다.
 
 <!-- TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
@@ -133,18 +133,18 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **페이지 추출 처리기**:팝업 목록에서 사용할 처리기를 선택합니다. 추출 처리기는 관련 `RenditionPicker`(`ExtractionHandler` API 참조)에 의해 선택된 특정 변환에서 작동합니다. 표준 [!DNL Experience Manager] 설치에서는 다음을 사용할 수 있습니다.
-   * IDML 내보내기 추출 핸들:MediaExtract 단계에서 생성된 `IDML` 변환에서 작동합니다.
+* **페이지 추출 처리기**: 팝업 목록에서 사용할 처리기를 선택합니다. 추출 처리기는 관련 `RenditionPicker`(`ExtractionHandler` API 참조)에 의해 선택된 특정 변환에서 작동합니다. 표준 [!DNL Experience Manager] 설치에서는 다음을 사용할 수 있습니다.
+   * IDML 내보내기 추출 핸들: MediaExtract 단계에서 생성된 `IDML` 변환에서 작동합니다.
 
-* **페이지 이름**:결과 페이지에 지정할 이름을 지정합니다. 비워 두면 이름이 &quot;page&quot;(또는 &quot;page&quot;가 이미 있는 경우 파생자)입니다.
+* **페이지 이름**: 결과 페이지에 지정할 이름을 지정합니다. 비워 두면 이름이 &quot;page&quot;(또는 &quot;page&quot;가 이미 있는 경우 파생자)입니다.
 
-* **페이지 제목**:결과 페이지에 지정할 제목을 지정합니다.
+* **페이지 제목**: 결과 페이지에 지정할 제목을 지정합니다.
 
-* **페이지 루트 경로**:결과 페이지의 루트 위치에 대한 경로입니다. 비워 두면 자산의 표현물을 포함하는 노드가 사용됩니다.
+* **페이지 루트 경로**: 결과 페이지의 루트 위치에 대한 경로입니다. 비워 두면 자산의 표현물을 포함하는 노드가 사용됩니다.
 
-* **페이지 템플릿**:결과 페이지를 생성할 때 사용할 템플릿입니다.
+* **페이지 템플릿**: 결과 페이지를 생성할 때 사용할 템플릿입니다.
 
-* **페이지 디자인**:결과 페이지를 생성할 때 사용할 페이지 디자인입니다.
+* **페이지 디자인**: 결과 페이지를 생성할 때 사용할 페이지 디자인입니다.
 
 ### [!DNL InDesign Server]에 대한 프록시 작업자 구성 {#configuring-the-proxy-worker-for-indesign-server}
 
@@ -171,7 +171,9 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 1. `https://[aem_server]:[port]/system/console/configMgr`에서 웹 콘솔에 액세스합니다.
 1. 구성 **[!UICONTROL Day CQ Link Externalizer]**&#x200B;를 찾습니다. **[!UICONTROL 편집]**&#x200B;을 클릭하여 엽니다.
-1. Link Externalizer 설정은 [!DNL Experience Manager] 배포 및 [!DNL InDesign Server]에 대한 절대 URL을 만드는 데 도움이 됩니다. **[!UICONTROL Domains]** 필드를 사용하여 [!DNL Adobe InDesign Server]에 대한 호스트 이름과 컨텍스트 경로를 지정합니다. **저장**&#x200B;을 클릭합니다.
+1. Link Externalizer 설정은 [!DNL Experience Manager] 배포 및 [!DNL InDesign Server]에 대한 절대 URL을 만드는 데 도움이 됩니다. **[!UICONTROL Domains]** 필드를 사용하여 [!DNL Adobe InDesign Server]의 호스트 이름을 지정합니다. **저장**&#x200B;을 클릭합니다.
+
+   절대 URL을 생성할 때 로컬, 작성자 및 게시 인스턴스에 대해 호스트 이름 `localhost`을 사용해야 합니다.
 
    ![Link Externalizer 설정](assets/link-externalizer-config.png)
 
@@ -184,7 +186,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 병렬 ID 작업 수를 구성하려면
 
-1. Felix Console;의 **[!UICONTROL Configurations]** 탭을 엽니다.예:`https://[aem_server]:[port]/system/console/configMgr`
+1. Felix Console;의 **[!UICONTROL Configurations]** 탭을 엽니다. 예: `https://[aem_server]:[port]/system/console/configMgr`
 
 1. `Apache Sling Job Queue Configuration` 아래에서 ID 처리 큐를 선택합니다.
 
