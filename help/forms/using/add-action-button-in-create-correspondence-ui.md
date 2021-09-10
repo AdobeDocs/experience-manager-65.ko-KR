@@ -1,24 +1,24 @@
 ---
 title: 서신 UI에서 사용자 지정 작업/단추 추가
-seo-title: 서신 UI에서 사용자 지정 작업/단추 추가
+seo-title: Add custom action/button in Create Correspondence UI
 description: 서신 UI에서 사용자 지정 작업/단추를 추가하는 방법을 알아봅니다
-seo-description: 서신 UI에서 사용자 지정 작업/단추를 추가하는 방법을 알아봅니다
+seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
-feature: 서신 관리
+feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9f3ca2da0828ce5170622852220a1926df0d5150
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
 
-# 서신 UI 만들기에서 사용자 지정 작업/단추 추가 {#add-custom-action-button-in-create-correspondence-ui}
+# 서신 UI에서 사용자 지정 작업/단추 추가 {#add-custom-action-button-in-create-correspondence-ui}
 
 ## 개요 {#overview}
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 * CRX 및 JavaScript 지식
 * LiveCycle 서버
 
-## 시나리오:Create Correspondence User Interface에서 단추를 만들어 검토용 문자 보내기 {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## 시나리오: 서신 사용자 만들기 인터페이스에서 버튼을 만들어 검토할 편지를 보냅니다 {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 작업(검토를 위해 편지 보내기)이 있는 단추를 서신 사용자 만들기 인터페이스에 추가합니다.
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 1. 단추에 작업 처리 추가
 1. 작업 처리를 활성화하기 위해 LiveCycle 프로세스 추가
 
-### Create Correspondence 사용자 인터페이스에 단추 추가 {#add-the-button-to-the-create-correspondence-user-interface}
+### 서신 사용자 인터페이스에 단추 추가 {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. `https://'[server]:[port]'/[ContextPath]/crx/de`(으)로 이동하여 관리자로 로그인합니다.
 1. apps 폴더에서 defaultApp 폴더(구성 폴더에 있음)와 유사한 경로/구조를 가진 `defaultApp` 폴더를 만듭니다. 폴더를 만들려면 다음 단계를 수행하십시오.
@@ -124,7 +124,7 @@ ht-degree: 1%
 
 1. **모두 저장**&#x200B;을 클릭합니다.
 
-#### /apps 분기 {#create-a-locale-folder-with-properties-file-in-the-apps-branch}에 속성 파일이 있는 로케일 폴더를 만듭니다.
+#### /apps 분기에 속성 파일을 사용하여 로케일 폴더를 만듭니다 {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 ACMExtensionMessages.properties 파일에는 서신 작성 사용자 인터페이스의 다양한 필드의 레이블 및 도구 설명 메시지가 포함되어 있습니다. 사용자 지정된 작업/단추가 작동하려면 /apps 분기에서 이 파일의 복사본을 만듭니다.
 
@@ -162,7 +162,7 @@ ACMExtensionMessages.properties 파일에는 서신 작성 사용자 인터페�
 
 1. **모두 저장**&#x200B;을 클릭합니다.
 
-#### Adobe Asset Composer 빌딩 블록 번들 {#restart-the-adobe-asset-composer-building-block-bundle} 다시 시작
+#### Adobe 자산 작성기 빌딩 블록 번들을 다시 시작합니다 {#restart-the-adobe-asset-composer-building-block-bundle}
 
 서버측 변경을 모두 수행한 후 Adobe 자산 작성기 빌딩 블록 번들을 다시 시작합니다. 이 시나리오에서는 서버 측에 있는 acmExtensionsConfig.xml 및 ACMExtensionMessages.properties 파일이 편집되므로 Adobe Asset Composer 빌딩 블록 번들을 다시 시작해야 합니다.
 
@@ -172,13 +172,13 @@ ACMExtensionMessages.properties 파일에는 서신 작성 사용자 인터페�
 
 1. 이동 `https://[host]:'port'/system/console/bundles`. 필요한 경우 관리자로 로그인합니다.
 
-1. Adobe 자산 작성기 빌딩 블록 번들을 찾습니다. 번들을 다시 시작합니다.중지 를 클릭한 다음 시작 을 클릭합니다.
+1. Adobe 자산 작성기 빌딩 블록 번들을 찾습니다. 번들을 다시 시작합니다. 중지 를 클릭한 다음 시작 을 클릭합니다.
 
    ![Adobe 자산 작성기 빌딩 블록](assets/6_assetcomposerbuildingblockbundle.png)
 
 Adobe 자산 작성기 빌딩 블록 번들을 다시 시작하면 사용자 지정 단추가 서신 사용자 만들기 인터페이스에 표시됩니다. 서신 사용자 인터페이스에서 문자를 열어 사용자 지정 단추를 미리 볼 수 있습니다.
 
-### 단추 {#add-action-handling-to-the-button}에 작업 처리 추가
+### 버튼에 작업 처리 추가 {#add-action-handling-to-the-button}
 
 Create Correspondence 사용자 인터페이스는 기본적으로 다음 위치의 cm.domain.js 파일에서 ActionHandler가 구현되어 있습니다.
 
@@ -188,9 +188,9 @@ Create Correspondence 사용자 인터페이스는 기본적으로 다음 위치
 
 작업/버튼을 클릭할 때 작업/버튼을 처리하면 다음과 같은 논리가 포함됩니다.
 
-* 새로 추가된 작업을 시각적/보이지 않음으로 만들기:actionVisible() 함수를 재정의하여 수행합니다.
-* 새로 추가된 작업 활성화/비활성화:actionEnabled() 함수를 재정의하여 수행합니다.
-* 사용자가 버튼을 클릭할 때의 실제 작업 처리:handleAction() 함수의 구현을 재정의하여 수행됩니다.
+* 새로 추가된 작업을 시각적/보이지 않음으로 만들기: actionVisible() 함수를 재정의하여 수행합니다.
+* 새로 추가된 작업 활성화/비활성화: actionEnabled() 함수를 재정의하여 수행합니다.
+* 사용자가 버튼을 클릭할 때의 실제 작업 처리: handleAction() 함수의 구현을 재정의하여 수행됩니다.
 
 1. 이동 `https://'[server]:[port]'/[ContextPath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
 
@@ -323,7 +323,7 @@ Create Correspondence 사용자 인터페이스는 기본적으로 다음 위치
       '</div>';
       ```
 
-### LiveCycle 프로세스를 추가하여 작업 <span class="acrolinxCursorMarker"></code>처리 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}를 사용하도록 설정합니다.
+### LiveCycle 프로세스를 추가하여 작업 <span class="acrolinxCursorMarker"></code>처리를 활성화합니다 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 이 시나리오에서는 첨부된 components.zip 파일의 일부인 다음 구성 요소를 활성화합니다.
 
@@ -331,9 +331,9 @@ Create Correspondence 사용자 인터페이스는 기본적으로 다음 위치
 * 검토 프로세스 LCA(SendLetterForReview.lca)를 위한 편지 보내기
 
 components.zip 파일을 다운로드하고 압축 해제하여 DSCSample.jar 및 SendLetterForReview.lca 파일을 가져옵니다. 다음 절차에 지정된 대로 이 파일을 사용하십시오.
-components.zip
+[파일 가져오기](assets/components.zip)
 
-#### LCA 프로세스 {#configure-the-livecycle-server-to-run-the-lca-process}를 실행하도록 LiveCycle 서버를 구성합니다
+#### LCA 프로세스를 실행하도록 LiveCycle 서버 구성 {#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
@@ -346,13 +346,13 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 
 1. 다음 세부 정보를 입력하고 **저장**&#x200B;을 클릭합니다.
 
-   * **서버 Url**:작업 처리기 코드가 사용하는 검토 보내기 서비스의 LC 서버의 URL입니다.
-   * **사용자 이름**:LC 서버의 관리자 사용자 이름
-   * **암호**:관리자 사용자 이름의 암호
+   * **서버 Url**: 작업 처리기 코드가 사용하는 검토 보내기 서비스의 LC 서버의 URL입니다.
+   * **사용자 이름**: LC 서버의 관리자 사용자 이름
+   * **암호**: 관리자 사용자 이름의 암호
 
    ![Adobe LiveCycle 클라이언트 SDK 구성](assets/3_clientsdkconfiguration.png)
 
-#### LiveCycle 아카이브 설치(LCA) {#install-livecycle-archive-lca}
+#### LCA(LiveCycle 아카이브) 설치 {#install-livecycle-archive-lca}
 
 이메일 서비스 프로세스를 활성화하는 필수 LiveCycle 프로세스입니다.
 
@@ -380,7 +380,7 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 
 1. **가져오기**&#x200B;를 클릭합니다. 
 
-#### 서비스 목록 {#adding-servicename-to-the-allowlist-service-list}에 허용 목록에 추가하다 ServiceName 추가
+#### 서비스 목록에 허용 목록에 추가하다 ServiceName 추가 {#adding-servicename-to-the-allowlist-service-list}
 
 AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 명시합니다.
 
@@ -391,7 +391,7 @@ AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 명시합니�
 
 1. **저장**&#x200B;을 클릭합니다.
 
-#### 전자 메일 서비스 {#configure-the-email-service} 구성
+#### 이메일 서비스 구성 {#configure-the-email-service}
 
 이 시나리오에서 서신 관리가 이메일을 보낼 수 있도록 하려면 LiveCycle 서버에서 이메일 서비스를 구성하십시오.
 
@@ -405,7 +405,7 @@ AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 명시합니�
 
 1. **저장**&#x200B;을 클릭합니다.
 
-#### DSC 서비스 {#configure-the-dsc-service} 구성
+#### DSC 서비스 구성 {#configure-the-dsc-service}
 
 서신 관리 API를 사용하려면 DSCSample.jar(이 문서에 components.zip의 일부로 첨부됨)를 다운로드하고 LiveCycle 서버에 업로드합니다. DSCSample.jar 파일이 LiveCycle 서버에 업로드되면 AEM 서버는 DSCSample.jar 파일을 사용하여 renderLetter API에 액세스합니다.
 
@@ -424,11 +424,11 @@ AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 명시합니�
 
    >[!NOTE]
    >
-   >서버 사이드에서 변경할 때마다 LiveCycle 서버를 다시 시작합니다. 고유한 LiveCycle 구성 요소 만들기에 대한 내용은 [사용자 지정 DSC 개발을 통해 LiveCycle ES 소프트웨어 확장](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)을 참조하십시오.
+   >서버 사이드에서 변경할 때마다 LiveCycle 서버를 다시 시작합니다.
 
    DSCSample.jar 파일은 renderLetter API를 사용합니다. renderLetter API에 대한 자세한 내용은 [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)를 참조하십시오.
 
-#### DSC를 LiveCycle {#import-dsc-to-livecyle}에 가져오기
+#### LiveCyle로 DSC 가져오기 {#import-dsc-to-livecyle}
 
 DSCSample.jar 파일은 renderLetter API를 사용하여 C가 입력으로 제공하는 XML 데이터에서 PDF 바이트로 편지를 렌더링합니다. renderLetter 및 기타 API에 대한 자세한 내용은 [Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)를 참조하십시오.
 
@@ -440,7 +440,7 @@ DSCSample.jar 파일은 renderLetter API를 사용하여 C가 입력으로 제�
 1. 파일 브라우저를 통해 **DSCSample.jar** 파일을 선택하고 **열기**&#x200B;를 클릭합니다.
 1. **RenderWrapper**&#x200B;를 마우스 오른쪽 단추로 클릭하고 **구성 요소 시작**&#x200B;을 선택합니다. 구성 요소가 시작되면 구성 요소 이름 옆에 녹색 화살표가 나타납니다.
 
-## 검토용으로 편지 보내기 {#send-letter-for-review}
+## 검토를 위해 편지 보내기 {#send-letter-for-review}
 
 검토를 위해 편지를 보내기 위한 작업 및 버튼을 구성한 후:
 
