@@ -11,14 +11,14 @@ discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 9f3ca2da0828ce5170622852220a1926df0d5150
+source-git-commit: ba2c753cfd041ccfcd6ba7a45648234290b99d25
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1881'
 ht-degree: 1%
 
 ---
 
-# 서신 UI에서 사용자 지정 작업/단추 추가 {#add-custom-action-button-in-create-correspondence-ui}
+# 서신 UI에서 사용자 지정 작업 단추 추가 {#add-custom-action-button-in-create-correspondence-ui}
 
 ## 개요 {#overview}
 
@@ -360,7 +360,7 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 >
 >이 프로세스가 수행하는 작업을 보거나 유사한 프로세스를 만들려면 Workbench가 필요합니다.
 
-1. `https:/[lc server]/:[lc port]/adminui`에서 Livecycle Server adminui에 관리자로 로그인합니다.
+1. 관리자로 로그인하여 `https:/[lc server]/:[lc port]/adminui`에 LiveCycle® 서버 관리자 로 로그인합니다.
 
 1. **홈 > 서비스 > 응용 프로그램 및 서비스 > 응용 프로그램 관리**&#x200B;로 이동합니다.
 
@@ -382,7 +382,7 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 
 #### 서비스 목록에 허용 목록에 추가하다 ServiceName 추가 {#adding-servicename-to-the-allowlist-service-list}
 
-AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 명시합니다.
+Experience Manager 서버에 액세스할 LiveCycle 서비스가 Experience Manager 서버에 설명되어 있습니다.
 
 1. 관리자로 `https:/[host]:'port'/system/console/configMgr`에 로그인합니다.
 
@@ -395,7 +395,7 @@ AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 명시합니�
 
 이 시나리오에서 서신 관리가 이메일을 보낼 수 있도록 하려면 LiveCycle 서버에서 이메일 서비스를 구성하십시오.
 
-1. `https:/[lc server]:[lc port]/adminui`에 Livecycle Server adminui에 관리자 자격 증명으로 로그인합니다.
+1. 관리 자격 증명으로 `https:/[lc server]:[lc port]/adminui`에 있는 LiveCycle 서버 관리자에게 로그인합니다.
 
 1. **홈 > 서비스 > 응용 프로그램 및 서비스 > 서비스 관리**&#x200B;로 이동합니다.
 
@@ -407,30 +407,30 @@ AEM 서버에서 AEM 서버에 액세스할 LiveCycle 서비스를 명시합니�
 
 #### DSC 서비스 구성 {#configure-the-dsc-service}
 
-서신 관리 API를 사용하려면 DSCSample.jar(이 문서에 components.zip의 일부로 첨부됨)를 다운로드하고 LiveCycle 서버에 업로드합니다. DSCSample.jar 파일이 LiveCycle 서버에 업로드되면 AEM 서버는 DSCSample.jar 파일을 사용하여 renderLetter API에 액세스합니다.
+서신 관리 API를 사용하려면 DSCSample.jar(이 문서에 components.zip의 일부로 첨부됨)를 다운로드하고 LiveCycle 서버에 업로드합니다. DSCSample.jar 파일이 LiveCycle 서버에 업로드되면 Experience Manager 서버는 DSCSample.jar 파일을 사용하여 renderLetter API에 액세스합니다.
 
 자세한 내용은 [AEM Forms과 Adobe LiveCycle 연결](/help/forms/using/aem-livecycle-connector.md)을 참조하십시오.
 
-1. 다음 위치에 있는 DSCSample.jar의 cmsa.properties에서 AEM 서버 URL을 업데이트합니다.
+1. 다음 위치에 있는 DSCSample.jar의 cmsa.properties에서 Experience Manager 서버 URL을 업데이트합니다.
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. 구성 파일에 다음 매개 변수를 제공합니다.
 
    * **crx.serverUrl**=https:/host:port/[컨텍스트 경로]/[AEM URL]
-   * **crx.username** = AEM 사용자 이름
-   * **crx.password** = AEM 암호
+   * **crx.username** = Experience Manager 사용자 이름
+   * **crx.password** = Experience Manager 암호
    * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
-   >서버 사이드에서 변경할 때마다 LiveCycle 서버를 다시 시작합니다.
+   >서버 측에서 변경할 때마다 LiveCycle 서버를 다시 시작합니다.
 
-   DSCSample.jar 파일은 renderLetter API를 사용합니다. renderLetter API에 대한 자세한 내용은 [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)를 참조하십시오.
+   DSCSample.jar 파일은 renderLetter API를 사용합니다. renderLetter API에 대한 자세한 내용은 [Interface LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)를 참조하십시오.
 
 #### LiveCyle로 DSC 가져오기 {#import-dsc-to-livecyle}
 
-DSCSample.jar 파일은 renderLetter API를 사용하여 C가 입력으로 제공하는 XML 데이터에서 PDF 바이트로 편지를 렌더링합니다. renderLetter 및 기타 API에 대한 자세한 내용은 [Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)를 참조하십시오.
+DSCSample.jar 파일은 renderLetter API를 사용하여 DSC가 입력으로 제공하는 XML 데이터에서 PDF 바이트로 편지를 렌더링합니다. renderLetter 및 기타 API에 대한 자세한 내용은 [Letter Render Service](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)를 참조하십시오.
 
 1. Workbench를 시작하고 로그인합니다.
 1. **창 > 보기 표시 > 구성 요소**&#x200B;를 선택합니다. 구성 요소 보기가 Workbench ES2에 추가됩니다.
