@@ -9,10 +9,10 @@ docset: aem65
 role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
-feature: 구성,Scene7 모드
-source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
+feature: Configuration,Scene7 Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '6941'
+source-wordcount: '6936'
 ht-degree: 1%
 
 ---
@@ -39,11 +39,11 @@ ht-degree: 1%
 >다음 기능 목록을 사용하려면 Adobe Experience Manager - Dynamic Media과 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이러한 기능에서 지원되지 않습니다.
 >
 >* [스마트 이미징](/help/assets/imaging-faq.md)
-* [캐시 무효화](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-* [핫링크 보호](/help/assets/hotlink-protection.md)
-* [컨텐츠의 HTTP/2 전달](/help/assets/http2.md)
-* CDN 수준에서 URL 리디렉션
-* Akamai ChinaCDN(중국에서 최적의 전달을 위한)
+>* [캐시 무효화](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [핫링크 보호](/help/assets/hotlink-protection.md)
+>* [컨텐츠의 HTTP/2 전달](/help/assets/http2.md)
+>* CDN 수준에서 URL 리디렉션
+>* Akamai ChinaCDN(중국에서 최적의 전달을 위한)
 
 
 ## Scene7 모드에서 Dynamic Media 활성화 {#enabling-dynamic-media-in-scene-mode}
@@ -51,7 +51,8 @@ ht-degree: 1%
 [Dynamic Media는 기본적으로 비활성화됩니다. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Dynamic Media 기능을 사용하려면 활성화해야 합니다.
 
 >[!WARNING]
-Dynamic Media - Scene7 모드는 *Experience Manager 작성자 인스턴스에만 사용됩니다*. 따라서 Experience Manager 작성자 인스턴스에서 `runmode=dynamicmedia_scene7` Experience Manager 게시 인스턴스가 아닌 *을 구성해야 합니다.*
+>
+>Dynamic Media - Scene7 모드는 *Experience Manager 작성자 인스턴스에만 사용됩니다*. 따라서 Experience Manager 작성자 인스턴스에서 `runmode=dynamicmedia_scene7` Experience Manager 게시 인스턴스가 아닌 *을 구성해야 합니다.*
 
 Dynamic Media을 활성화하려면 터미널 창에 다음을 입력하여 명령줄에서 `dynamicmedia_scene7` 실행 모드를 사용하여 Experience Manager을 시작해야 합니다(사용된 예제 포트는 4502).
 
@@ -64,7 +65,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 이제 Experience Manager Dynamic Media을 6.3에서 6.4 또는 6.5로 업그레이드하면 다운타임 없이 배포할 수 있습니다. 모든 사전 설정 및 구성을 CRXDE Lite의 `/etc`에서 `/conf`(으)로 마이그레이션하려면 다음 curl 명령을 실행해야 합니다.
 
 >[!NOTE]
-호환성 모드에서 Experience Manager 인스턴스를 실행하는 경우(즉, 호환성 패키지가 설치되어 있으므로) 이러한 명령을 실행할 필요가 없습니다.
+>
+>호환성 모드에서 Experience Manager 인스턴스를 실행하는 경우(즉, 호환성 패키지가 설치되어 있으므로) 이러한 명령을 실행할 필요가 없습니다.
 
 호환성 패키지를 사용하거나 사용하지 않는 모든 업그레이드의 경우 다음 Linux® curl 명령을 실행하여 원래 Dynamic Media과 함께 제공된 기본 기본 기본 기본 뷰어 사전 설정을 복사할 수 있습니다.
 
@@ -273,7 +275,7 @@ Dynamic Media - Scene7 모드에서 기본 자산 업로드 파일 크기는 2GB
 * **[!UICONTROL 카탈로그 필드의 기본값]** - 이 설정은 이미지의 해상도 및 기본 축소판 유형과 관련이 있습니다.
 * **[!UICONTROL 색상 관리 속성]**  - 이 설정은 사용할 ICC 색상 프로파일을 결정합니다.
 * **[!UICONTROL 호환성 속성]**  - 이 설정을 사용하면 이전 버전과의 호환성을 위해 텍스트 레이어의 이전 및 이후 단락을 버전 3.6의 단락과 동일하게 처리할 수 있습니다.
-* **[!UICONTROL 로컬라이제이션 지원]**  - 이 설정을 사용하여 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정하여 뷰어의 다양한 도구 설명에 대해 지원할 언어를 정의할 수 있습니다. **[현지화 지원]** 설정에 대한 자세한 내용은 [자산 현지화 설정 시 고려 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets)을 참조하십시오.
+* **[!UICONTROL 로컬라이제이션 지원]**  - 이 설정을 사용하여 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정하여 뷰어의 다양한 도구 설명에 대해 지원할 언어를 정의할 수 있습니다. **[현지화 지원]** 설정에 대한 자세한 내용은 [자산 현지화 설정 시 고려 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets)을 참조하십시오.
 
 #### 응용 프로그램 일반 설정 구성 {#configuring-application-general-settings}
 
@@ -295,7 +297,6 @@ Experience Manager과 일관성을 유지하려면 항상 이 설정을 선택�
 
 >[!NOTE]
 기본적으로 자산의 세부 사항 보기에서 **[!UICONTROL Viewers]**&#x200B;를 선택하면 시스템은 **[!UICONTROL 표현물]** 및 15개의 뷰어 사전 설정을 선택할 때 15개의 표현물을 표시합니다. 이 제한을 늘릴 수 있습니다. [표시](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수를 늘립니다](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
-
 
 #### 색상 관리 구성 {#configuring-color-management}
 

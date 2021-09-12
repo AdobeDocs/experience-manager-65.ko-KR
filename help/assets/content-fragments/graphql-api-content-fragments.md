@@ -2,13 +2,13 @@
 title: 컨텐츠 조각에 사용할 AEM GraphQL API
 description: 헤드리스 컨텐츠 전달을 위해 AEM(Adobe Experience Manager)에서 AEM GraphQL API와 함께 컨텐츠 조각을 사용하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
-source-git-commit: 955fd54c94ca7144965ce407ea628806d90d8336
+exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '3921'
+source-wordcount: '3919'
 ht-degree: 2%
 
 ---
-
 
 # 컨텐츠 조각에 사용할 AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
 
@@ -817,7 +817,7 @@ POST 쿼리는 일반적으로 캐시되지 않으므로 이러한 작업이 필
 
 >[!NOTE]
 >
->AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 [CORS(Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))를 참조하십시오.
+>AEM의 CORS 리소스 공유 정책에 대한 자세한 개요는 [CORS(Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))를 참조하십시오.
 
 GraphQL 종단점에 액세스하려면 고객 Git 리포지토리에서 CORS 정책을 구성해야 합니다. 이 작업은 원하는 엔드포인트에 대한 적절한 OSGi CORS 구성 파일을 추가하여 수행합니다.
 

@@ -1,6 +1,6 @@
 ---
 title: 비디오
-seo-title: 비디오
+seo-title: Video
 description: 자산은 Dynamic Media Classic으로 자동 인코딩을 위해 자산으로 비디오를 직접 업로드하고, 페이지 작성을 위해 자산에서 직접 Dy 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,10 +8,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '1683'
-ht-degree: 49%
+source-wordcount: '1678'
+ht-degree: 50%
 
 ---
 
@@ -63,7 +63,7 @@ Dynamic Media Classic 비디오 구성 요소에 대해 다음 형식이 지원�
 
 자산에 대해 워크플로우 또는 버전 관리가 필요하지 않은 경우 자산을 Dynamic Media Classic으로 업로드해야 합니다. 다음은 권장되는 워크플로우입니다.
 
-1. Dynamic Media Classic 데스크탑 앱에서 [Dynamic Media Classic(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정합니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=en#upload-options).
+1. Dynamic Media Classic 데스크탑 앱에서 [Dynamic Media Classic(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정합니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 1. Experience Manager에서 컨텐츠 파인더의 **[!UICONTROL Dynamic Media Classic]** 탭에서 WCM의 비디오 자산에 액세스합니다.
 1. Dynamic Media Classic 비디오 구성 요소를 사용하여 작성합니다.
 
@@ -80,7 +80,7 @@ Dynamic Media Classic 비디오 구성 요소에 대해 다음 형식이 지원�
 
    >[!NOTE]
    >
-   >비디오 사전 설정의 의미에 대한 자세한 내용은 [비디오 파일 인코딩을 위한 비디오 사전 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files)을 참조하십시오.
+   >비디오 사전 설정의 의미에 대한 자세한 내용은 [비디오 파일 인코딩을 위한 비디오 사전 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)을 참조하십시오.
    >
    >범용 사전 설정을 구성할 때 응용 비디오 설정을 선택하거나 **[!UICONTROL 응용 비디오 인코딩]** 옵션을 선택하는 것이 좋습니다.
 
@@ -119,7 +119,6 @@ Dynamic Media Classic 비디오 구성 요소는 Dynamic Media Classic 비디오
 >
 >곧바로 사용할 수 있는 Dynamic Media Classic 비디오 구성 요소는 범용 비디오 프로필을 사용합니다. 그러나 Experience Manager에서 사용할 HTML5 기반 비디오 플레이어를 가져올 수 있습니다. Dynamic Media Classic에서 곧바로 사용할 수 있는 HTML5 비디오 플레이어의 포함 코드를 복사하여 Experience Manager 페이지에 넣습니다.
 
-
 ## Experience Manager 비디오 구성 요소 {#aem-video-component}
 
 Dynamic Media Classic 비디오 구성 요소를 사용하는 것이 Dynamic Media Classic 비디오를 보는 데 권장되지만, 이 섹션에서는 완벽함을 위해 Experience Manager에서 [!UICONTROL 기본 비디오 구성 요소]와 함께 Dynamic Media Classic 비디오를 사용하는 방법에 대해 설명합니다.
@@ -131,7 +130,7 @@ Dynamic Media Classic 비디오 구성 요소를 사용하는 것이 Dynamic Med
 |  | Experience Manager 기본 비디오 | Dynamic Media Classic 비디오 |
 |---|---|---|
 | 접근 방법 | HTML5 우선 접근 방법. Flash는 HTML5 이외의 폴백에만 사용됩니다. | 대부분의 데스크톱에 포함된 Flash. HTML5는 모바일 및 태블릿에 사용됩니다. |
-| 배달 | 점진적 | 적응형 스트리밍 |
+| 제공 | 점진적 | 적응형 스트리밍 |
 | 추적 | 예 | 예 |
 | 확장성 | 예 | 아니오 |
 | 모바일 비디오 | 예 | 예 |

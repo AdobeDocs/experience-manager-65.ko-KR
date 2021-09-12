@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Experience Manager] 6.5 서비스 팩 10에 관한 �
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 59cc855e937c7be71cfc7a28fccd1db0b91e9f97
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '4394'
+source-wordcount: '4392'
 ht-degree: 11%
 
 ---
 
 # [!DNL Adobe Experience Manager] 6.5 서비스 팩 릴리스 노트 {#aem-service-pack-release-notes}
 
-## 릴리스 노트 {#release-information}
+## 릴리스 정보 {#release-information}
 
 | 제품 | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
@@ -58,7 +58,7 @@ ht-degree: 11%
 
 * [!DNL AEM Forms]에 `GuideBridge#getGuidePath` API에 대한 지원이 추가되었습니다.
 
-* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model)의 PDF forms을 적응형 양식으로 전환할 수 있습니다.
+* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html#language-specific-meta-model)의 PDF forms을 적응형 양식으로 전환할 수 있습니다.
 
 * **속성 브라우저의 오류 메시지**: 응용 Forms 속성 브라우저에 각 속성에 대한 오류 메시지가 추가되었습니다. 이러한 메시지는 필드에 대해 허용되는 값을 이해하는 데 도움이 됩니다.
 
@@ -243,7 +243,7 @@ ht-degree: 11%
 
 * 다중 번역 프로젝트의 언어 복사본에 추가 하위 페이지가 삭제됩니다(NPR-36622).
 
-### 워크플로우 {#workflow-65100}
+### 워크플로 {#workflow-65100}
 
 * 서버가 부재 중 메시지를 받으면 메모리 경고를 보고하고 응답을 중지합니다(NPR-36768).
 
@@ -506,5 +506,5 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 >* [[!DNL Experience Manager] 6.5 릴리스 노트](/help/release-notes/release-notes.md)
 >* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
->* [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/subscription/priority-product-update.html) 구독
+>* [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html) 구독
 

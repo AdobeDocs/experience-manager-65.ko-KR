@@ -5,12 +5,12 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-feature: CDN 캐시,Dynamic Media Classic
+feature: CDN Cache,Dynamic Media Classic
 role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Dynamic Media Classic의 [캐시 개요(Scene7)](https://helpx.adobe.com/experie
 
 **Dynamic Media Classic을 통해 CDN 캐시를 무효화하려면 다음을 수행하십시오.**
 
-1. [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)을 연 다음 계정에 로그인합니다.
+1. [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)을 연 다음 계정에 로그인합니다.
 
    자격 증명과 로그온은 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
 

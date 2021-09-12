@@ -1,8 +1,8 @@
 ---
 title: 커뮤니티에 대한 Dispatcher 구성
-seo-title: 커뮤니티에 대한 Dispatcher 구성
+seo-title: Configuring Dispatcher for Communities
 description: AEM Communities에 대한 디스패처 구성
-seo-description: AEM Communities에 대한 디스패처 구성
+seo-description: Configure the dispatcher for AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 3%
+source-wordcount: '668'
+ht-degree: 9%
 
 ---
 
@@ -29,7 +29,7 @@ AEM Communities의 경우 [커뮤니티 사이트](overview.md#community-sites)�
 
 기본 [Dispatcher 설명서](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)도 참조하십시오.
 
-## 디스패처 캐싱 {#dispatcher-caching}
+## Dispatcher 캐싱 {#dispatcher-caching}
 
 ### 개요 {#overview}
 
@@ -80,7 +80,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 
 
 이 섹션에서는 Communities 기능의 적절한 기능을 수행하는 데 필요한 항목을 설명합니다.
 
-필터 속성 이름은 4자리 숫자를 사용하여 필터 패턴을 적용할 순서를 나타내는 규칙을 따릅니다. 여러 필터 패턴이 요청에 적용되면 마지막으로 적용되는 필터 패턴이 유효합니다. 따라서, 가장 첫 번째 필터 패턴은 모든 것을 부인하는 데 종종 사용되어, 다음 패턴은 제어된 방식으로 액세스를 복원한다.
+필터 속성 이름은 4자리 숫자를 사용하여 필터 패턴을 적용할 순서를 나타내는 규칙을 따릅니다. 여러 필터 패턴이 요청에 적용되는 경우 마지막으로 적용되는 필터 패턴이 유효합니다. 따라서, 가장 첫 번째 필터 패턴은 모든 것을 부인하는 데 종종 사용되어, 다음 패턴은 제어된 방식으로 액세스를 복원한다.
 
 다음 샘플은 특정 dispatcher.any 파일에 맞게 수정해야 하는 속성 이름을 사용합니다.
 
@@ -93,11 +93,9 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 
 >**속성 이름 예**
 >**/0050** 및 **/0170**&#x200B;과 같이 표시되는 모든 속성 이름은 기존 dispatcher.any 구성 파일에 맞게 조정해야 합니다.
 
-
 >[!CAUTION]
 >
->Dispatcher를 사용하여 액세스를 제한할 때 추가적인 고려 사항은 [Dispatcher 보안 검사 목록](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en)을 참조하십시오. 또한 AEM 설치에 대한 추가 보안 세부 사항은 [AEM Security Checklist](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html)를 참조하십시오.
-
+>Dispatcher를 사용하여 액세스를 제한할 때 추가 고려 사항은 [Dispatcher 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)를 참조하십시오. 또한 AEM 설치에 대한 추가 보안 세부 사항은 [AEM Security Checklist](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/security-checklist.html)를 참조하십시오.
 
 다음 항목을 /filter 섹션의 끝에 추가해야 합니다. 특히 모든 거부 항목 뒤에 추가합니다.
 
@@ -249,7 +247,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 
 ```
 -->
 
-## 디스패처 규칙 {#dispatcher-rules}
+## Dispatcher 규칙 {#dispatcher-rules}
 
 `dispatcher.any` 의 규칙 섹션에서는 요청된 URL을 기반으로 캐시해야 하는 응답을 정의합니다. Communities에서 규칙 섹션을 사용하여 캐시하면 안 되는 항목을 정의합니다.
 

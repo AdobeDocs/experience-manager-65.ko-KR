@@ -1,8 +1,8 @@
 ---
 title: Brand Portal에서 AEM Assets 구성
-seo-title: Brand Portal에서 AEM Assets 구성
+seo-title: Configure AEM Assets with Brand Portal
 description: Brand Portal에 자산 및 컬렉션을 게시하기 위해 Brand Portal에서 AEM Assets을 구성하는 방법을 알아봅니다.
-seo-description: Brand Portal에 자산 및 컬렉션을 게시하기 위해 Brand Portal에서 AEM Assets을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure AEM Assets with Brand Portal for publishing assets and Collections to Brand Portal.
 uuid: b95c046e-9988-444c-b50e-ff5ec8cafe14
 topic-tags: brand-portal
 content-type: reference
@@ -12,9 +12,9 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: aed6e28d7ff228ecbaeaf0d468d1d9bcb4373f90
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '2076'
+source-wordcount: '2047'
 ht-degree: 48%
 
 ---
@@ -70,7 +70,7 @@ AEM 작성자 인스턴스를 설정하려면 AEM 6.5가 있어야 합니다. AE
 
 * Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5를 요청합니다.
 
-AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 [배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#default-local-install)를 참조하십시오.
+AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 [배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install)를 참조하십시오.
 
 ### AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
 
@@ -337,7 +337,7 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
    >
    >자산 복제(큐에서 실행)가 실패할 수 있으므로 복제 에이전트를 비활성화하지 마십시오.
    >
-   >시간 초과 오류를 방지하기 위해 4개의 복제 에이전트가 모두 구성되었는지 확인합니다. Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=en#connection-timeout)에 동시 게시 시 문제 해결 [을 참조하십시오.
+   >시간 초과 오류를 방지하기 위해 4개의 복제 에이전트가 모두 구성되었는지 확인합니다. Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout)에 동시 게시 시 문제 해결 [을 참조하십시오.
 
 이제 다음을 수행할 수 있습니다.
 

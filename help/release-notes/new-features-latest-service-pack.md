@@ -4,10 +4,10 @@ description: ' [!DNL Experience Manager] 6.5 서비스 팩 10의 새로운 기�
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 355cea8e5d3d3426788cd23e6d55297363adf05b
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '4108'
-ht-degree: 35%
+source-wordcount: '4102'
+ht-degree: 36%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 35%
 >
 >[!DNL Experience Manager Forms] 추가 기능 패키지는 예약된 [!DNL Experience Manager] 서비스 팩 릴리스 후 1주일 후에 사용할 수 있습니다.
 
-* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model)의 PDF forms을 적응형 양식으로 전환할 수 있습니다.
+* 이제 Automated forms conversion 서비스를 사용하여 [프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html#language-specific-meta-model)의 PDF forms을 적응형 양식으로 전환할 수 있습니다.
 
 * **속성 브라우저의 오류 메시지**: 응용 Forms 속성 브라우저에 각 속성에 대한 오류 메시지가 추가되었습니다. 이러한 메시지는 필드에 대해 허용되는 값을 이해하는 데 도움이 됩니다.
 
@@ -243,7 +243,7 @@ ht-degree: 35%
 
 [!DNL Assets] 사용자는 시각적으로 유사한 이미지를 검색할 수 있습니다. Experience Manager는 사용자가 선택한 이미지와 유사한 DAM 저장소에서 스마트 태그가 지정된 이미지를 표시합니다. [시각적 검색](../assets/search-assets.md)을 참조하십시오.
 
-### 다이내믹 미디어 {#dynamic-media-previous-service-packs}
+### Dynamic Media {#dynamic-media-previous-service-packs}
 
 * [[!DNL Dynamic Media] 는 ](sp-release-notes.md#assets-accessibility-6590) 다음과 관련하여 보다 쉽게 액세스할 수 있습니다.
 
@@ -468,11 +468,11 @@ Experience Manager Forms는 다음과 같은 액세스 가능성이 개선되었
 
 2021년 5월 27일부터 2021년 8월 26일까지 Adobe은 서비스 팩 외에 다음과 같은 사항을 발표했습니다.
 
-* [!DNL Adobe Experience Manager] 로서의 Cloud Service  [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html),  [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html) 및  [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en).
+* [!DNL Adobe Experience Manager] 로서의 Cloud Service  [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html),  [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html) 및  [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ko-KR).
 
 * [[!DNL Experience Manager] 데스크탑 앱 2.1(2.1.3.3)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: 기능 팩 202105](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202105.html?lang=en)
+* [Experience Manager Screens: 기능 팩 202105](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202105.html)
 
 >[!MORELIKETHIS]
 >

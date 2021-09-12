@@ -12,10 +12,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
-feature: 구성,하이브리드 모드
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+feature: Configuration,Hybrid Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '7797'
+source-wordcount: '7792'
 ht-degree: 1%
 
 ---
@@ -44,8 +44,7 @@ Dynamic Media에서 [video](/help/assets/video.md) 작업에 대해 자세히 �
 >* `ImageServing.log`
 
 >
->
-이러한 문서는 [Experience Manager 인스턴스 모니터링 및 유지 관리에 설명되어 있습니다](/help/sites-deploying/monitoring-and-maintaining.md).
+>이러한 문서는 [Experience Manager 인스턴스 모니터링 및 유지 관리에 설명되어 있습니다](/help/sites-deploying/monitoring-and-maintaining.md).
 
 하이브리드 게시 및 게재는 Adobe Experience Manager에 추가된 Dynamic Media의 핵심 기능입니다. 하이브리드 게시를 사용하면 Experience Manager 게시 노드 대신 클라우드에서 이미지, 세트 및 비디오와 같은 Dynamic Media 자산을 제공할 수 있습니다.
 
@@ -344,7 +343,6 @@ Replication test succeeded
 다음 중 하나를 수행하여 확인할 수도 있습니다.
 * 복제 로그를 확인하여 자산이 복제되었는지 확인합니다.
 * 이미지를 게시합니다. 이미지를 선택하고 드롭다운 메뉴에서 **[!UICONTROL Viewers]**&#x200B;를 선택한 다음 뷰어 사전 설정을 선택합니다. **[!UICONTROL URL]**&#x200B;을 선택합니다. 이미지가 표시되는지 확인하려면 브라우저에서 URL 경로를 복사하여 붙여넣습니다.
-
 
 
 ### 인증 문제 해결 {#troubleshooting-authentication}
@@ -838,7 +836,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
    | 속성 | 기본값 | 설명 |
    |---|---|---|
    | 캐시 사용 | 선택됨 | 응답 캐시가 사용되는지 여부 |
-   | 캐시 루트 | 캐시 | 응답 캐시 폴더에 대한 하나 이상의 경로입니다. 상대 경로는 내부 s7imaging 번들 폴더에 대해 확인됩니다. |
+   | 캐시 루트 | cache | 응답 캐시 폴더에 대한 하나 이상의 경로입니다. 상대 경로는 내부 s7imaging 번들 폴더에 대해 확인됩니다. |
    | 캐시 최대 크기 | 200000000 | 응답 캐시의 최대 크기(바이트)입니다. |
    | 캐시 최대 항목 | 100000 | 캐시에서 허용되는 최대 항목 수입니다. |
 
@@ -869,7 +867,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
 | `defaultthumbpix` | `100,100` | 기본 축소판 크기 축소판 요청에 대한 특성::DefaultPix 대신 사용됩니다(`req=tmb`).<br>서버가 이 너비와 높이보다 크지 않은 회신 이미지를 제한합니다. 축소판 요청(`req=tmb`)이 크기를 명시적으로 지정하지 않고 `wid=`, `hei=` 또는 `scl=`을 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 이 작업은 true입니다.<br>쉼표로 구분된 0 이상의 정수 두 수로 지정됩니다. 너비와 높이(픽셀 단위)입니다. 두 값 중 하나 또는 둘 다 0으로 설정하여 제약 조건을 해제할 수 있습니다.<br>중첩/포함된 요청에는 적용되지 않습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) 제공 API의 DefaultThumbPixin도 참조하십시오. |
 | `expiration` | `36000000` | 기본 클라이언트 캐시 사용 시간입니다. 특정 카탈로그 레코드에 유효한 카탈로그:만료 값이 없는 경우 기본 만료 간격을 제공합니다.<br>실수, 0 이상 회신 데이터가 생성된 이후 만료까지 남은 밀리초 수입니다. 항상 회신 이미지를 즉시 만료하려면 0으로 설정하여 클라이언트 캐싱을 효과적으로 사용하지 않도록 설정합니다. 기본적으로 이 값은 10시간으로 설정되어 있습니다. 즉, 새 이미지가 게시되면 이전 이미지가 사용자의 캐시를 나가는 데 10시간이 걸립니다. 캐시를 더 빨리 지워야 하는 경우 고객 지원 센터에 문의하십시오.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) 제공 API의 만료도 참조하십시오. |
 | `jpegquality` | `80` | 기본 JPEG 인코딩 속성입니다. JPEG 회신 이미지의 기본 속성을 지정합니다.<br>쉼표로 구분된 정수 및 플래그. 첫 번째 값은 1.100 범위에 있고 품질을 정의합니다. 두 번째 값은 일반 동작의 경우 0이거나, 1은 JPEG 인코딩에 사용되는 RGB 색상-도시화 다운 샘플링을 사용하지 않도록 설정할 수 있습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) 제공 API의 JpegQualitting도 참조하십시오. |
-| `maxpix` | `2000,2000` | 회신 이미지 크기 제한. 클라이언트에 반환되는 최대 회신 이미지 폭과 높이입니다.<br>폭이나 높이가 속성:MaxPix보다 큰 응답 이미지가 요청에 의해 발생하는 경우 서버에서 오류를 반환합니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api) 제공 API의 MaxPixin도 참조하십시오. |
+| `maxpix` | `2000,2000` | 회신 이미지 크기 제한. 클라이언트에 반환되는 최대 회신 이미지 폭과 높이입니다.<br>폭이나 높이가 속성:MaxPix보다 큰 응답 이미지가 요청에 의해 발생하는 경우 서버에서 오류를 반환합니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) 제공 API의 MaxPixin도 참조하십시오. |
 | `resmode` | `SHARP2` | 기본 재샘플링 모드입니다. 이미지 데이터 크기 조절에 사용할 기본 리샘플링 및 보간 속성을 지정합니다.<br>요청에  `resMode=` 가 지정되지 않은 경우 사용됩니다.<br>허용되는 값은  `BILIN`,  `BICUB` 또는  `SHARP2`를 포함합니다.<br>열거형. `bilin`, `bicub` 의 경우 3, `sharp2` 보간 모드의 경우 4로 설정합니다. 최상의 결과를 얻으려면 `sharp2` 를 사용하십시오.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) 제공 API의 ResMode 를 참조하십시오. |
 | `resolution` | `72` | 기본 개체 해상도. 특정 카탈로그 레코드에 올바른 카탈로그::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.<br>0보다 큰 실수 일반적으로 인치당 픽셀로 표시되지만 미터 당 픽셀 등의 다른 단위로 표시될 수도 있습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) 제공 API의 확인도 참조하십시오. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | 이 값은 비디오 재생 시간의 스냅샷을 나타내며 [encoding.com](https://www.encoding.com/)에 전달됩니다. 자세한 내용은 [비디오 축소판 정보](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode)를 참조하십시오. |
@@ -936,7 +934,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
-   <td>문자열</td>
+   <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>기본 RGB 색상 프로필의 이름입니다.</td>
   </tr>

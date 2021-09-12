@@ -10,12 +10,12 @@ content-type: reference
 discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
-feature: 이미지 사전 설정
+feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '3843'
+source-wordcount: '3839'
 ht-degree: 2%
 
 ---
@@ -137,7 +137,7 @@ PDF 또는 AI 워크플로우를 래스터화하는 인수
    <td>생성된 미리 보기 표현물의 최대 높이(픽셀 단위)입니다.<br /> </td>
   </tr>
   <tr>
-   <td>해상도</td>
+   <td>해결</td>
    <td>72</td>
    <td>첫 번째 페이지를 ppi(인치당 픽셀 수)로 래스터화하는 해상도.</td>
   </tr>
@@ -202,12 +202,10 @@ ExtendScript은 [!UICONTROL DAM 자산 업데이트] 워크플로우의 미디�
 >[!NOTE]
 >
 >* EPS 파일의 축소판 크기는 축소판 그림 아래의 **[!UICONTROL 인수]** 탭의 **[!UICONTROL EPS 축소판 그림]** 단계에서 구성됩니다.
-   >
-   >
-* 비디오의 축소판 크기는 **[!UICONTROL FFmpeg 축소판 그림]** 단계의 **[!UICONTROL 인수]** 아래의 **[!UICONTROL 프로세스]** 탭에 구성됩니다.
+>
+>* 비디오의 축소판 크기는 **[!UICONTROL FFmpeg 축소판 그림]** 단계의 **[!UICONTROL 인수]** 아래의 **[!UICONTROL 프로세스]** 탭에 구성됩니다.
 
 >
-
 
 
 **이미지 축소판 크기를 구성하려면**
@@ -429,7 +427,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
   </tr>
   <tr>
    <td><strong>이미지 수정자</strong></td>
-   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에 Dynamic Media에서는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정 사항을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api">이미지 서버 프로토콜 명령 참조</a>에 정의되어 있습니다.</p> <p>중요 사항: API에 나열된 다음 기능은 지원되지 않습니다.</p>
+   <td><p>UI에서 사용할 수 있는 일반적인 이미지 설정 외에 Dynamic Media에서는 <strong>이미지 수정자</strong> 필드에서 지정할 수 있는 다양한 고급 이미지 수정 사항을 지원합니다. 이러한 매개 변수는 <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api">이미지 서버 프로토콜 명령 참조</a>에 정의되어 있습니다.</p> <p>중요 사항: API에 나열된 다음 기능은 지원되지 않습니다.</p>
     <ul>
      <li>기본 템플릿 및 텍스트 렌더링 명령: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 및 <code>textPs=</code></li>
      <li>로컬라이제이션 명령: <code>locale=</code> 및 <code>req=xlate</code></li>
