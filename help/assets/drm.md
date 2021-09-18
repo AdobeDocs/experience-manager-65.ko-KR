@@ -3,12 +3,12 @@ title: 자산 Digital Rights Management
 description: ' [!DNL Experience Manager]에서 라이선스가 있는 자산에 대한 자산 만료 상태 및 정보를 관리하는 방법을 알아봅니다.'
 contentOwner: AG
 role: User, Admin
-feature: DRM,자산 관리
+feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: e87facbad559aa7e45656f621de17e6ef3109273
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 0%
+source-wordcount: '1398'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ![expired_flag_list](assets/expired_flag_list.png)
 
-*그림:목록 보기에서 Statuscolumn  에 Expiedbanner가   표시됩니다.*
+*그림: 목록 보기에서 Statuscolumn  에 Expiedbanner가   표시됩니다.*
 
 왼쪽 레일의 [!UICONTROL 타임라인]에서 자산의 만료 상태를 볼 수 있습니다.
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. [!DNL Experience Manager] 구성 관리자를 엽니다.
 1. **[!UICONTROL Adobe CQ DAM 만료 알림]**&#x200B;을 선택합니다. 기본적으로 **[!UICONTROL 시간 기반 스케줄러]**&#x200B;가 선택되어 자산이 만료된 하위 자산인지 여부를 특정 시간에 확인할 작업을 예약합니다. 작업이 완료되면, 하위 자산이 만료된 자산과 참조된 자산이 검색 결과에 만료된 것으로 표시됩니다.
 
-1. 작업을 주기적으로 실행하려면 **[!UICONTROL 시간 기반 스케줄러 규칙]** 필드를 지우고 **[!UICONTROL 기간별 스케줄러]** 필드에서 시간(초)을 수정합니다. 예를 들어 예제 표현식 `0 0 0 &ast; &ast; ?`은 작업을 00시간에 트리거합니다.
+1. 작업을 주기적으로 실행하려면 **[!UICONTROL 시간 기반 스케줄러 규칙]** 필드를 지우고 **[!UICONTROL 기간별 스케줄러]** 필드에서 시간(초)을 수정합니다. 예를 들어 예제 표현식 `0 0 0 * * ?`은 작업을 00시간에 트리거합니다.
 1. 자산이 만료될 때 전자 메일을 받으려면 **[!UICONTROL 전자 메일 보내기]**&#x200B;를 선택합니다.
 
    >[!NOTE]
@@ -97,7 +97,7 @@ ht-degree: 0%
 
    ![만료 필드에 자산 만료 날짜 및 시간 설정](assets/asset-properties-advanced-tab.png)
 
-   *그림:  자산 속성 페이지의 고급   탭 - 자산 만료를 설정합니다.*
+   *그림:   자산 속성 페이지의 고급   탭 - 자산 만료를 설정합니다.*
 
 1. **[!UICONTROL 저장]**&#x200B;을 클릭한 다음 **[!UICONTROL 닫기]**&#x200B;를 클릭하여 자산 콘솔을 표시합니다.
 1. 자산에 대한 게시 상태는 카드 보기에서 자산 축소판 아래에 있는 만료된 상태를 나타냅니다. 목록 보기에서 자산의 상태가 **[!UICONTROL 만료됨]**&#x200B;으로 표시됩니다.
