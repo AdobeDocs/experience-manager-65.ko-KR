@@ -2,13 +2,13 @@
 title: 향상된 스마트 태그
 description: 향상된 스마트 태그
 contentOwner: AG
-feature: 스마트 태그, 검색
+feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
+source-git-commit: fbb27348df0b9d5f93d186acbce45fcf88197c5e
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 1%
+source-wordcount: '1544'
+ht-degree: 0%
 
 ---
 
@@ -47,30 +47,30 @@ Smart Content Service에서 올바른 태그를 적용하려면 해당 태그를
 
 이 서비스는 다음 MIME 유형의 자산에 스마트 태그를 적용합니다.
 
-* image/jpeg
-* image/tiff
-* image/png
-* image/bmp
-* image/gif
-* image/pjpeg
-* image/x-portable-anymap
-* image/x-portable-bitmap
-* image/x-portable-graymap
-* image/x-portable-pixmap
-* image/x-rgb
-* image/x-xbitmap
-* image/x-xpixmap
-* image/x-icon
-* 이미지/photoshop
-* image/x-photoshop
-* 이미지/psd
-* image/vnd.adobe.photoshop
+* `image/jpeg`
+* `image/tiff`
+* `image/png`
+* `image/bmp`
+* `image/gif`
+* `image/pjpeg`
+* `image/x-portable-anymap`
+* `image/x-portable-bitmap`
+* `image/x-portable-graymap`
+* `image/x-portable-pixmap`
+* `image/x-rgb`
+* `image/x-xbitmap`
+* `image/x-xpixmap`
+* `image/x-icon`
+* `image/photoshop`
+* `image/x-photoshop`
+* `image/psd`
+* `image/vnd.adobe.photoshop`
 
 이 서비스는 다음 MIME 유형의 자산 변환에 스마트 태그를 적용합니다.
 
-* 이미지/jpeg
-* 이미지/pjpeg
-* 이미지/png
+* `image/jpeg`
+* `image/pjpeg`
+* `image/png`
 
 ## 온보딩 {#onboarding}
 
@@ -79,10 +79,6 @@ Smart Content Service에서 올바른 태그를 적용하려면 해당 태그를
 관리자는 링크를 따라 스마트 컨텐츠 서비스를 [!DNL Experience Manager]과 통합할 수 있습니다. 서비스를 [!DNL Experience Manager Assets]과 통합하려면 [스마트 태그 구성](config-smart-tagging.md)을 참조하십시오.
 
 관리자가 서비스를 구성하고 [!DNL Experience Manager]에 사용자를 추가하면 온보딩 프로세스가 완료됩니다.
-
->[!NOTE]
->
->[!DNL Experience Manager] 6.3 이전 버전을 사용 중이며 자산에 대한 태그 지정 서비스가 필요한 경우 [스마트 태그](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)를 참조하십시오. 스마트 태그는 최신 AI 기능을 사용하지 않으므로 향상된 스마트 태그 지정 서비스보다 정확성이 낮습니다.
 
 ## 자산 및 태그 검토 {#reviewing-assets-and-tags}
 
