@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
-feature: 게시
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Publishing
+source-git-commit: a5164c0c2ef175f1bf63ef911bf92df36e413a6f
 workflow-type: tm+mt
-source-wordcount: '2945'
+source-wordcount: '2960'
 ht-degree: 4%
 
 ---
@@ -70,6 +70,8 @@ ht-degree: 4%
    >[!IMPORTANT]
    >
    >선택한 Dynamic Media 게시 모드 옵션에 관계없이 나중에 *이미 게시된 자산*&#x200B;에 대한 모든 업데이트는 추가 사용자 작업 없이 즉시 게시됩니다.
+   >
+   >게시된 비디오가 업데이트되면 게재의 변경 사항을 반영하려면 다시 게시해야 합니다.
 
    | Dynamic Media 게시 모드 옵션 | 설명 |
    | --- | --- |
@@ -182,7 +184,7 @@ Dynamic Media](#selective-publish-configure-folder)Dynamic Media 구성 만들�
 
 1. **[!UICONTROL 빠른 게시]** 메뉴 목록에서 다음 옵션 중 하나를 선택합니다.
 
-   | 빠른 게시 옵션 | 기능 |
+   | 빠른 게시 옵션 | 설명 |
    | --- | --- | 
    | Experience Manager에 게시 | 선택한 자산을 즉시 Experience Manager에 게시합니다. |
    | Brand Portal에 게시 | 선택한 자산을 즉시 **[!UICONTROL Brand Portal]**&#x200B;에 게시합니다.<br>이 옵션은 Experience Manager 자산 인스턴스에  **[!UICONTROL Brand Portal이 이미 구성된 경우에만 사용할]** 수 있습니다. |
@@ -241,11 +243,11 @@ Experience Manager](/help/assets/search-assets.md)에서 자산 검색 을 참�
    | 즉시 또는 <br>활성화 시 | 게시 | Experience Manager 및 Dynamic Media |
    | 즉시 또는 <br>활성화 시 | Dynamic Media에 게시 | 없음 |
    | 선택적 게시 | 게시 | Experience Manager |
-   | 선택적 게시 | Dynamic Media에 게시 | 다이내믹 미디어 |
+   | 선택적 게시 | Dynamic Media에 게시 | Dynamic Media |
    | 즉시 또는 <br>활성화 시 | 게시 취소 | Experience Manager 및 Dynamic Media |
    | 즉시 또는 <br>활성화 시 | Dynamic Media에서 게시 취소 | 없음 |
    | 선택적 게시 | 게시 취소 | Experience Manager |
-   | 선택적 게시 | Dynamic Media에서 게시 취소 | 다이내믹 미디어 |
+   | 선택적 게시 | Dynamic Media에서 게시 취소 | Dynamic Media |
 
 1. **[!UICONTROL 게시 관리 - 범위]** 페이지에서 다음 중 하나를 수행합니다.
    * 게시 또는 게시 취소에서 제거할 자산을 한 개 이상 선택합니다.
