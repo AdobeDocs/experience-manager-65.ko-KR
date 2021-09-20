@@ -9,12 +9,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
-feature: 자산 관리
+feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: a5164c0c2ef175f1bf63ef911bf92df36e413a6f
 workflow-type: tm+mt
-source-wordcount: '11699'
+source-wordcount: '11713'
 ht-degree: 1%
 
 ---
@@ -32,21 +32,15 @@ ht-degree: 1%
 >Dynamic Media에서 비디오를 사용하기 전에 Adobe Experience Manager 관리자가 Dynamic Media - Scene7 모드 또는 Dynamic Media - 하이브리드 모드에서 Dynamic Media Cloud Services을 이미 활성화 및 구성했는지 확인하십시오.
 >
 >* Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md)에서 [Dynamic Media Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
-   >
-   >
-* Dynamic Media 구성 - 하이브리드 모드에서 [Dynamic Media Cloud Services 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
 >
->
-현재 Experience Manager 6.5.9.0의 Dynamic Media *에서 알려진 비디오 재생 문제는*&#x200B;에만 해당합니다.
->
->* 
+>* Dynamic Media 구성 - 하이브리드 모드에서 [Dynamic Media Cloud Services 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)을 참조하십시오.
 
-   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
->* 
-
-   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 >
+>현재 Experience Manager 6.5.9.0의 Dynamic Media *에서 알려진 비디오 재생 문제는*&#x200B;입니다.
+>
+>* 게시된 비디오가 업데이트되면 게재의 변경 사항을 반영하려면 다시 게시해야 합니다.
 
+>
 
 
 1. **다음을 수행하여 Dynamic Media** 비디오를 업로드합니다.
@@ -374,13 +368,13 @@ VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 �
 | 2000년 | 일반 광대역 데스크탑 연결. 이 연결의 경우 평균 1200-1500Kbps로 800-2000Kbps 범위의 데이터 속도를 타깃팅합니다. |
 | 5000 | 일반적인 고속 광대역 연결 대부분의 소비자는 이 속도로 비디오를 전달할 수 없으므로 이 상위 범위의 인코딩을 사용하지 않는 것이 좋습니다. |
 
-### 해상도 {#resolution}
+### 해결 {#resolution}
 
 **** 해상도는 비디오 파일의 높이와 너비를 픽셀 단위로 설명합니다. 대부분의 소스 비디오는 고해상도(예: 1920 x 1080)로 저장됩니다. 스트리밍을 위해 소스 비디오는 더 작은 해상도(640 x 480 이하)로 압축됩니다.
 
 해상도 및 데이터 전송률은 비디오 품질을 결정하는 두 가지 통합 연결 요소입니다. 동일한 비디오 품질을 유지하려면 비디오 파일의 픽셀 수가 많을수록 해상도가 높을수록 데이터 속도가 빨라야 합니다. 예를 들어, 320 x 240 해상도와 640 x 480 해상도 비디오 파일에서 프레임당 픽셀 수를 고려해 보십시오.
 
-| 해상도 | 프레임당 픽셀 수 |
+| 해결 | 프레임당 픽셀 수 |
 |--- |--- |
 | 320 x 240 | 76,800 |
 | 640 x 480 | 307,200 |
@@ -396,7 +390,7 @@ VBR과 CBR을 선택할 때는 미디어 파일에 VBR을 사용하는 것이 �
 
 기본 소스 비디오 파일에 대한 비디오 인코딩 사전 설정을 선택(또는 생성)할 때 이 표를 사용하여 올바른 해상도를 타깃팅하십시오.
 
-| 해상도 | 높이(픽셀) | 화면 크기 |
+| 해결 | 높이(픽셀) | 화면 크기 |
 |--- |--- |--- |
 | 240p | 240년 | 작은 화면 |
 | 300p | 300 | 일반적으로 모바일 장치용 작은 화면 |
