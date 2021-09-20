@@ -1,8 +1,8 @@
 ---
 title: Adobe Target과 통합 수동 구성
-seo-title: Adobe Target과 통합 수동 구성
+seo-title: Manually Configuring the Integration with Adobe Target
 description: Adobe Target과의 통합을 수동으로 구성하는 방법을 알아봅니다.
-seo-description: Adobe Target과의 통합을 수동으로 구성하는 방법을 알아봅니다.
+seo-description: Learn how to manually configure the integration with Adobe Target.
 uuid: 0bb76a65-f981-4cc5-bee8-5feb3297137c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6850fc2e4251ad408936ee71600ab8923f54e9a3
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2210'
 ht-degree: 5%
 
 ---
@@ -70,6 +70,10 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭하거나 탭합니
 
 컨텐츠를 타깃팅할 때 Adobe Analytics을 보고 소스로 사용하도록 Adobe Target을 구성할 수 있습니다.
 
+>[!NOTE]
+>
+>사용자 자격 증명 인증(기존)이 A4T(Target 및 Analytics 모두에 대해)에서 작동하지 않습니다. 따라서 고객은 사용자 자격 증명 인증 대신 [IMS 인증](/help/sites-administering/integration-ims-adobe-io.md)을 사용해야 합니다.
+
 이렇게 하려면 Adobe Target 클라우드 구성을 연결할 A4T 클라우드 구성을 지정해야 합니다.
 
 1. **AEM 로고** > **도구** > **배포** > **Cloud Services**&#x200B;를 통해 **Cloud Services**&#x200B;로 이동합니다.
@@ -93,7 +97,7 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭하거나 탭합니
 
    **확인**&#x200B;을 클릭합니다. Adobe Target을 사용하여 컨텐츠를 타깃팅하는 경우 보고서 소스](/help/sites-authoring/content-targeting-touch.md)를 [선택할 수 있습니다.
 
-## Adobe Target {#manually-integrating-with-adobe-target}과 수동으로 통합
+## Adobe Target과 수동 통합 {#manually-integrating-with-adobe-target}
 
 옵트인 마법사를 사용하는 대신 Adobe Target과 수동으로 통합합니다.
 
@@ -104,7 +108,6 @@ AT.js는 mbox.js 라이브러리에 비해 다음과 같은 몇 가지 개선 �
 * 향상된 보안
 * 단일 페이지 애플리케이션에 대한 향상된 구현 옵션
 * AT.js에는 target.js에 포함된 구성 요소가 포함되어 있으므로 더 이상 target.js 호출이 없습니다
-
 **클라이언트 라이브러리** 드롭다운 메뉴에서 AT.js 또는 mbox.js를 선택할 수 있습니다.
 
 ### Target 클라우드 구성 만들기 {#creating-a-target-cloud-configuration}
@@ -142,18 +145,18 @@ AEM에서 Target 클라우드 구성을 만들려면 다음 절차를 따르십�
 
 1. 대화 상자에서 이러한 속성에 대한 값을 제공합니다.
 
-   * **클라이언트 코드**:Target 계정 클라이언트 코드
-   * **이메일**:Target 계정 이메일입니다.
-   * **암호**:Target 계정 암호입니다.
-   * **API 유형**:REST 또는 XML
-   * **A4T Analytics Cloud 구성**:Target 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 컨텐츠를 타깃팅할 때 Adobe Analytics을 보고 소스로 사용하는 경우 이 작업이 필요합니다. 클라우드 구성이 표시되지 않으면 [A4T Analytics Cloud 구성](#configuring-a-t-analytics-cloud-configuration)의 참고 사항을 참조하십시오.
+   * **클라이언트 코드**: Target 계정 클라이언트 코드
+   * **이메일**: Target 계정 이메일입니다.
+   * **암호**: Target 계정 암호입니다.
+   * **API 유형**: REST 또는 XML
+   * **A4T Analytics Cloud 구성**: Target 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 컨텐츠를 타깃팅할 때 Adobe Analytics을 보고 소스로 사용하는 경우 이 작업이 필요합니다. 클라우드 구성이 표시되지 않으면 [A4T Analytics Cloud 구성](#configuring-a-t-analytics-cloud-configuration)의 참고 사항을 참조하십시오.
 
    * **정확한 타겟 지정 사용:** 기본적으로 이 확인란이 선택되어 있습니다. 이 옵션을 선택하면 클라우드 서비스 구성이 컨텍스트를 로드한 후 컨텐츠를 로드합니다. 다음을 참조하십시오.
    * **Adobe Target에서 세그먼트 동기화:** 이 옵션을 선택하면 AEM에서 사용할 Target에 정의된 세그먼트를 다운로드할 수 있습니다. 인라인 세그먼트는 지원되지 않으며 항상 Target의 세그먼트를 사용해야 하므로 API 유형 속성이 REST일 때 이 옵션을 선택해야 합니다. (&#39;세그먼트&#39;의 AEM 용어는 &#39;대상&#39; Target과 같습니다.)
    * **클라이언트 라이브러리:** mbox.js 또는 AT.js 클라이언트 라이브러리를 원하는지 선택합니다.
    * **DTM을 사용하여 클라이언트 라이브러리 게재**  - DTM이나 다른 태그 관리 시스템의 AT.js 또는 mbox.js를 사용하려면 이 옵션을 선택합니다. 이 옵션을 사용하려면 [DTM 통합](/help/sites-administering/dtm.md)을 구성해야 합니다. Adobe은 AEM보다 DTM을 사용하여 라이브러리를 전달하는 것을 권장합니다.
-   * **사용자 지정 mbox.js**:DTM 상자를 선택했거나 기본 mbox.js를 사용하는 경우 비워 둡니다. 또는 사용자 지정 mbox.js를 업로드합니다. mbox.js를 선택한 경우에만 나타납니다.
-   * **사용자 지정 AT.js**:DTM 상자를 선택했거나 기본 AT.js를 사용하는 경우 비워 둡니다. 또는 사용자 지정 AT.js를 업로드합니다. AT.js를 선택한 경우에만 나타납니다.
+   * **사용자 지정 mbox.js**: DTM 상자를 선택했거나 기본 mbox.js를 사용하는 경우 비워 둡니다. 또는 사용자 지정 mbox.js를 업로드합니다. mbox.js를 선택한 경우에만 나타납니다.
+   * **사용자 지정 AT.js**: DTM 상자를 선택했거나 기본 AT.js를 사용하는 경우 비워 둡니다. 또는 사용자 지정 AT.js를 업로드합니다. AT.js를 선택한 경우에만 나타납니다.
 
    >[!NOTE]
    기본적으로 Adobe Target 구성 마법사를 선택하면 정확한 타겟 지정이 활성화됩니다.
@@ -165,7 +168,7 @@ AEM에서 Target 클라우드 구성을 만들려면 다음 절차를 따르십�
 
    Target에 연결할 수 없는 경우 [문제 해결](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) 섹션을 참조하십시오.
 
-### Target 프레임워크 {#adding-a-target-framework} 추가
+### Target 프레임워크 추가 {#adding-a-target-framework}
 
 Target 클라우드 구성을 구성한 후 Target 프레임워크을 추가합니다. 프레임워크는 사용 가능한 [Client Context](/help/sites-administering/client-context.md) 또는 [ContextHub](/help/sites-developing/ch-configuring.md) 구성 요소에서 Adobe Target으로 전송되는 기본 매개 변수를 식별합니다. Target은 매개 변수를 사용하여 현재 컨텍스트에 적용되는 세그먼트를 결정합니다.
 
@@ -198,19 +201,17 @@ Target 클라우드 구성을 구성한 후 Target 프레임워크을 추가합�
 
 프레임워크가 만들어집니다. 프레임워크를 게시 인스턴스에 복제하려면 사이드 킥에서 **프레임워크 활성화** 옵션을 사용합니다.
 
-### 활동을 Target 클라우드 구성과 연결 {#associating-activities-with-the-target-cloud-configuration}
+### 활동을 Target 클라우드 구성과 연결  {#associating-activities-with-the-target-cloud-configuration}
 
 [AEM 활동](/help/sites-authoring/activitylib.md)을 Target 클라우드 구성과 연결하여 [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html)에서 활동을 미러링할 수 있습니다.
 
 >[!NOTE]
 사용 가능한 활동 유형은 다음 방법으로 결정됩니다.
 * Adobe Target에 연결하기 위해 AEM 측에 사용된 Adobe Target 임차인(clientcode)에서 **xt_only** 선택 사항이 활성화되면, AEM에서 XT 활동&#x200B;**만** 만들 수 있습니다.
-
 * Adobe Target 임차인(clientcode)에서 **xt_only** 선택 사항이 활성화되지 **않으면** AEM에서에서 XT 활동과 A/B 활동을 **모두** 만들 수 있습니다.
-
 **추가 참고:** **xt_only** 선택 사항은 특정 Target 임차인(clientcode)에 적용되는 설정이며, Adobe Target에서 직접 수정하는 것만 가능합니다. 이 선택 사항은 AEM에서 활성하거나 비활성화할 수 없습니다.
 
-### Target 프레임워크을 사이트 {#associating-the-target-framework-with-your-site}에 연결
+### Target 프레임워크을 사이트와 연결 {#associating-the-target-framework-with-your-site}
 
 AEM에서 Target 프레임워크을 만든 후 웹 페이지를 프레임워크와 연결합니다. 페이지의 타깃팅된 구성 요소는 추적을 위해 프레임워크 정의 데이터를 Adobe Target에 보냅니다. ( [컨텐츠 타깃팅](/help/sites-authoring/content-targeting-touch.md)을 참조하십시오.)
 

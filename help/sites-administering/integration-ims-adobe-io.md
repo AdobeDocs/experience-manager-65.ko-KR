@@ -1,8 +1,8 @@
 ---
 title: Adobe I/O을 사용하여 Adobe Target과 통합
-seo-title: Adobe I/O을 사용하여 Adobe Target과 통합
+seo-title: Integration with Adobe Target using Adobe I/O
 description: Adobe I/O을 사용하여 AEM과 Adobe Target 통합에 대해 알아봅니다
-seo-description: Adobe I/O을 사용하여 AEM과 Adobe Target 통합에 대해 알아봅니다
+seo-description: Learn about integrating AEM with Adobe Target using Adobe I/O
 uuid: dd4ed638-e182-4d7e-9c98-282431812467
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,14 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: baf68f43decec6631516442c3f9e319ce879696f
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1563'
 ht-degree: 1%
 
 ---
 
-# Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}을 사용하여 Adobe Target과 통합
+# Adobe I/O을 사용하여 Adobe Target과 통합{#integration-with-adobe-target-using-adobe-i-o}
 
 Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(Identity Management 시스템) 및 Adobe I/O을 구성해야 합니다.
 
@@ -48,12 +48,12 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(I
    * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)를 참조하십시오.
 
 
-## IMS 구성 구성 - 공개 키 {#configuring-an-ims-configuration-generating-a-public-key} 생성
+## IMS 구성 구성 - 공개 키 생성 {#configuring-an-ims-configuration-generating-a-public-key}
 
 구성의 첫 번째 단계는 AEM에서 IMS 구성을 만들고 공개 키를 생성하는 것입니다.
 
 1. AEM에서 **도구** 메뉴를 엽니다.
-1. **보안** 섹션에서 **IMS 구성 Adobe**&#x200B;를 선택합니다.
+1. **보안** 섹션에서 **Adobe IMS 구성**&#x200B;을 선택합니다.
 1. **만들기**&#x200B;를 선택하여 **Adobe IMS 기술 계정 구성**&#x200B;을 엽니다.
 1. **클라우드 구성** 아래의 드롭다운을 사용하여 **Adobe Target**&#x200B;을 선택합니다.
 1. **새 인증서 만들기**&#x200B;를 활성화하고 새 별칭을 입력합니다.
@@ -69,7 +69,7 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(I
 
    ![](assets/integrate-target-io-02.png)
 
-## AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}과 Adobe Target 통합을 위한 Adobe I/O 구성
+## AEM과 Adobe Target 통합을 위한 Adobe I/O 구성 {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}
 
 AEM에서 사용할 Adobe Target과 Adobe I/O 프로젝트(통합)를 만든 다음 필요한 권한을 지정해야 합니다.
 
@@ -144,9 +144,9 @@ AEM에서 사용할 Adobe Target으로 I/O 프로젝트를 만들려면 Adobe I/
 1. **Products**(위쪽 도구 모음)로 이동한 다음 **Adobe Target - &lt;*your-tenant-id***(왼쪽 패널에서)를 선택합니다.
 1. **제품 프로필**&#x200B;을 선택한 다음 제공된 목록에서 필요한 작업 공간을 선택합니다. 예를 들어, 기본 작업 영역입니다.
 1. **통합**&#x200B;을 선택한 다음 필요한 통합 구성을 선택합니다.
-1. **Editor** 를 **제품 역할** 로 선택합니다.**Observer** 대신
+1. **Editor** 를 **제품 역할** 로 선택합니다. **Observer** 대신
 
-## Adobe I/O 통합 프로젝트 {#details-stored-for-the-adobe-io-integration-project}에 대해 저장된 세부 정보
+## Adobe I/O 통합 프로젝트에 대해 저장된 세부 사항 {#details-stored-for-the-adobe-io-integration-project}
 
 Adobe I/O 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 볼 수 있습니다.
 
@@ -165,7 +165,7 @@ Adobe I/O 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 볼 수
 
 이러한 중 일부는 AEM에서 Target을 위한 Adobe I/O 통합을 완료해야 합니다.
 
-## AEM {#completing-the-ims-configuration-in-aem}에서 IMS 구성 완료
+## AEM에서 IMS 구성 완료 {#completing-the-ims-configuration-in-aem}
 
 AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추가하여 IMS 구성을 완료할 수 있습니다.
 
@@ -174,11 +174,11 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
 
 1. 여기에서 Adobe I/O](#details-stored-for-the-adobe-io-integration-project)의 [세부 정보를 사용할 수 있습니다.
 
-   * **제목**:텍스트.
-   * **인증 서버**:아래  `"aud"` 예와 같이 아래  **** Payloadsection `"https://ims-na1.adobelogin.com"` 의 줄에서 이 내용을 복사하거나 붙여넣습니다
-   * **API 키**:Target 통합을  [](#details-stored-for-the-adobe-io-integration-project) 위한 Adobe I/O 통합 개요 섹션에서 복사합니다
-   * **클라이언트 암호**:Target용  [](#details-stored-for-the-adobe-io-integration-project) Adobe I/O 통합의 개요 섹션에서 이 항목을 생성하고 복사합니다.
-   * **페이로드**:Target 통합을  [위한 ](#details-stored-for-the-adobe-io-integration-project) Adobe I/O 통합의 JWT 생성 섹션에서 복사합니다
+   * **제목**: 텍스트.
+   * **인증 서버**: 아래  `"aud"` 예와 같이 아래  **** Payloadsection `"https://ims-na1.adobelogin.com"` 의 줄에서 이 내용을 복사하거나 붙여넣습니다
+   * **API 키**: Target 통합을  [](#details-stored-for-the-adobe-io-integration-project) 위한 Adobe I/O 통합 개요 섹션에서 복사합니다
+   * **클라이언트 암호**: Target용  [](#details-stored-for-the-adobe-io-integration-project) Adobe I/O 통합의 개요 섹션에서 이 항목을 생성하고 복사합니다.
+   * **페이로드**: Target 통합을  [위한 ](#details-stored-for-the-adobe-io-integration-project) Adobe I/O 통합의 JWT 생성 섹션에서 복사합니다
 
    ![](assets/integrate-target-io-10.png)
 
@@ -229,8 +229,8 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
 
 1. **Adobe Target 설정** 탭에 세부 정보를 입력합니다.
 
-   * **인증**:IMS
-   * **테넌트 ID**:Adobe IMS 테넌트 ID입니다. [테넌트 ID 및 클라이언트 코드](#tenant-client) 섹션도 참조하십시오.
+   * **인증**: IMS
+   * **테넌트 ID**: adobe IMS 테넌트 ID입니다. [테넌트 ID 및 클라이언트 코드](#tenant-client) 섹션도 참조하십시오.
 
       >[!NOTE]
       >
@@ -241,15 +241,18 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >그런 다음 `yourtenantid`을 사용합니다.
-   * **클라이언트 코드**:테넌트  [ID 및 클라이언트 코드 섹션을 ](#tenant-client) 참조하십시오.
-   * **IMS 구성**:ims 구성 이름을 선택합니다.
-   * **API 유형**:REST
-   * **A4T Analytics Cloud 구성**:Target 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 컨텐츠를 타깃팅할 때 Adobe Analytics을 보고 소스로 사용하는 경우 이 작업이 필요합니다. 클라우드 구성이 표시되지 않으면 [A4T Analytics Cloud 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration)의 참고 사항을 참조하십시오.
-   * **정확한 타겟 지정 사용**:기본적으로 이 확인란은 선택되어 있습니다. 이 옵션을 선택하면 클라우드 서비스 구성이 컨텍스트를 로드한 후 컨텐츠를 로드합니다. 다음을 참조하십시오.
-   * **Adobe Target에서 세그먼트 동기화**:AEM에서 사용할 Target에 정의된 세그먼트를 다운로드하려면 이 옵션을 선택합니다. 인라인 세그먼트는 지원되지 않으며 항상 Target의 세그먼트를 사용해야 하므로 API 유형 속성이 REST일 때 이 옵션을 선택해야 합니다. (&#39;세그먼트&#39;의 AEM 용어는 &#39;대상&#39; Target과 같습니다.)
-   * **클라이언트 라이브러리**:AT.js 클라이언트 라이브러리나 mbox.js(더 이상 사용되지 않음)를 원하는지 선택합니다.
-   * **Tag Management System을 사용하여 클라이언트 라이브러리를 제공합니다**.DTM(더 이상 사용되지 않음), Launch 또는 기타 태그 관리 시스템을 사용합니다.
-   * **사용자 지정 AT.js**:태그 관리 상자를 선택했거나 기본 AT.js를 사용하려면 비워 둡니다. 또는 사용자 지정 AT.js를 업로드합니다. AT.js를 선택한 경우에만 나타납니다.
+   * **클라이언트 코드**: 테넌트  [ID 및 클라이언트 코드 섹션을 ](#tenant-client) 참조하십시오.
+   * **IMS 구성**: ims 구성 이름을 선택합니다.
+   * **API 유형**: REST
+   * **A4T Analytics Cloud 구성**: Target 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 컨텐츠를 타깃팅할 때 Adobe Analytics을 보고 소스로 사용하는 경우 이 작업이 필요합니다. 클라우드 구성이 표시되지 않으면 [A4T Analytics Cloud 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration)의 참고 사항을 참조하십시오.
+
+   >[!NOTE]
+   >사용자 자격 증명 인증(기존)이 A4T(Target 및 Analytics 모두에 대해)에서 작동하지 않습니다. 따라서 고객은 다음을 사용해야 합니다     사용자 자격 증명 인증 대신 IMS 인증입니다.
+   * **정확한 타겟 지정 사용**: 기본적으로 이 확인란은 선택되어 있습니다. 이 옵션을 선택하면 클라우드 서비스 구성이 컨텍스트를 로드한 후 컨텐츠를 로드합니다. 다음을 참조하십시오.
+   * **Adobe Target에서 세그먼트 동기화**: AEM에서 사용할 Target에 정의된 세그먼트를 다운로드하려면 이 옵션을 선택합니다. 인라인 세그먼트는 지원되지 않으며 항상 Target의 세그먼트를 사용해야 하므로 API 유형 속성이 REST일 때 이 옵션을 선택해야 합니다. (&#39;세그먼트&#39;의 AEM 용어는 &#39;대상&#39; Target과 같습니다.)
+   * **클라이언트 라이브러리**: AT.js 클라이언트 라이브러리나 mbox.js(더 이상 사용되지 않음)를 원하는지 선택합니다.
+   * **Tag Management System을 사용하여 클라이언트 라이브러리를 제공합니다**. DTM(더 이상 사용되지 않음), Launch 또는 기타 태그 관리 시스템을 사용합니다.
+   * **사용자 지정 AT.js**: 태그 관리 상자를 선택했거나 기본 AT.js를 사용하려면 비워 둡니다. 또는 사용자 지정 AT.js를 업로드합니다. AT.js를 선택한 경우에만 나타납니다.
 
    >[!NOTE]
    >
