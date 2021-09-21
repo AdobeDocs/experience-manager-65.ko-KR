@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: baf68f43decec6631516442c3f9e319ce879696f
+source-git-commit: baacb6623757c4a7a67ae2be4232a36c4a509b69
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1538'
 ht-degree: 1%
 
 ---
@@ -245,9 +245,6 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
    * **IMS 구성**: ims 구성 이름을 선택합니다.
    * **API 유형**: REST
    * **A4T Analytics Cloud 구성**: Target 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 컨텐츠를 타깃팅할 때 Adobe Analytics을 보고 소스로 사용하는 경우 이 작업이 필요합니다. 클라우드 구성이 표시되지 않으면 [A4T Analytics Cloud 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration)의 참고 사항을 참조하십시오.
-
-   >[!NOTE]
-   >사용자 자격 증명 인증(기존)이 A4T(Target 및 Analytics 모두에 대해)에서 작동하지 않습니다. 따라서 고객은 다음을 사용해야 합니다     사용자 자격 증명 인증 대신 IMS 인증입니다.
    * **정확한 타겟 지정 사용**: 기본적으로 이 확인란은 선택되어 있습니다. 이 옵션을 선택하면 클라우드 서비스 구성이 컨텍스트를 로드한 후 컨텐츠를 로드합니다. 다음을 참조하십시오.
    * **Adobe Target에서 세그먼트 동기화**: AEM에서 사용할 Target에 정의된 세그먼트를 다운로드하려면 이 옵션을 선택합니다. 인라인 세그먼트는 지원되지 않으며 항상 Target의 세그먼트를 사용해야 하므로 API 유형 속성이 REST일 때 이 옵션을 선택해야 합니다. (&#39;세그먼트&#39;의 AEM 용어는 &#39;대상&#39; Target과 같습니다.)
    * **클라이언트 라이브러리**: AT.js 클라이언트 라이브러리나 mbox.js(더 이상 사용되지 않음)를 원하는지 선택합니다.
