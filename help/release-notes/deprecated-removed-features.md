@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 6.5 릴리스에서 사용 중단되거나 제거된 기능.
 description: Adobe Experience Manager 6.5의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: becdfee534e4464147811302ed67de74b8044a24
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1745'
 ht-degree: 71%
 
 ---
@@ -28,9 +28,10 @@ AEM 기능을 제거하거나 교체하기 위해 다음 규칙이 적용됩니�
 
 | 영역 | 기능 | 대체 |
 |---|---|---|
+| [!DNL Sites] | 템플릿 기반 단순 컨텐츠 조각. | [모델 기반의 구조화된 컨텐츠 ](/help/assets/content-fragments/content-fragments-models.md) 조각. |
 | Creative Cloud 통합 | Creative Cloud 폴더 공유에 대한 AEM은 창의적 사용자에게 AEM의 자산에 대한 액세스 권한을 부여하는 방법으로 AEM 6.2에 도입되어, CC 애플리케이션에서 이를 열 수 있으며 새 파일을 업로드하거나 AEM에 변경 사항을 저장할 수 있습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 향후 Creative Cloud 폴더 공유 통합을 위해 AEM을 개선할 계획이 없습니다. 고객은 AEM에 해당 기능이 포함되어 있는 동안 교체 솔루션을 사용해 보시기 바랍니다. | 또한 Adobe Assset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환하는 것이 좋습니다. |
-| 자산 | `AssetDownloadServlet` 게시 인스턴스에 대해 기본적으로 가 비활성화되어 있습니다. 자세한 내용은 [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)을 참조하십시오. | [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)에 설명된 구성입니다. |
-| 자산 | 사용자에게 `/content/dam/collections`에 대한 충분한(읽기 및 쓰기) 권한이 없는 경우에는 컬렉션을 만들 수 없습니다. | 사용자의 액세스 제어 설정을 적용하고 적합한 권한을 확인하십시오. |
+| 에셋 | `AssetDownloadServlet` 게시 인스턴스에 대해 기본적으로 가 비활성화되어 있습니다. 자세한 내용은 [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)을 참조하십시오. | [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)에 설명된 구성입니다. |
+| 에셋 | 사용자에게 `/content/dam/collections`에 대한 충분한(읽기 및 쓰기) 권한이 없는 경우에는 컬렉션을 만들 수 없습니다. | 사용자의 액세스 제어 설정을 적용하고 적합한 권한을 확인하십시오. |
 | Adobe Search &amp; Promote | Adobe Search &amp; Promote와의 통합이 더 이상 사용되지 않습니다. Adobe는 향후 Search &amp; Promote 통합을 개선할 계획이 없습니다. Search &amp; Promote 통합이 더 이상 사용되지 않는 동안에도 계속 지원됩니다. |  |
 | DTM 태그 관리자 | DTM(다이내믹 태그 관리자)과의 통합이 더 이상 사용되지 않습니다. | Adobe Experience Platform Launch를 태그 관리자로 사용하도록 전환. |
 | Adobe Target | AEM 6.5에서 [!DNL Adobe I/O] 기반 Adobe Target Standard API(Rest API)를 사용하여 Adobe Target 서비스에 연결할 수 있는 기능을 추가하면 Target Classic API(XML) 방식이 더 이상 사용되지 않습니다. | 통합을 [에 다시 구성하여 새 API](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)를 사용하십시오. |
@@ -47,7 +48,7 @@ AEM 기능을 제거하거나 교체하기 위해 다음 규칙이 적용됩니�
 | 개발자 | `Granite.Sling.js` 클라이언트 라이브러리. Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 Granite.Sling.js 클라이언트 라이브러리를 개선할 계획이 없습니다. | 코드를 리팩토링하는 라이브러리 기능에 의존하고 있는 고객들은 더 이상 해당 기능을 사용할 수 없습니다. |
 | 개발자 | YUI를 사용하여 JavaScript 클라이언트 라이브러리를 압축/축소할 수 있습니다. Adobe는 향후 YUI 라이브러리를 업데이트할 계획이 없습니다. AEM 6.4가 출시되기 이전까지, YUI는 기본적으로 GCC(Google Closure Compiler)로 전환할 수 있는 옵션과 함께 JavaScript를 축소할 수 있었습니다. AEM 6.5부터는 GCC가 기본값입니다. | 고객은 이러한 구현에 따라 GCC로 전환하기 위해 AEM 6.5로 업그레이드하는 것이 좋습니다. |
 | 개발자 | CRXDE Lite의 클래식 UI 대화 상자 편집기. Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 클래식 UI 대화 상자 편집기를 개선할 계획이 없습니다. | 교체할 수 없습니다. |
-| 양식 | AEM Mobile과의 AEM Forms 통합은 더 이상 사용되지 않습니다. | 교체할 수 없습니다. |  | 개발자 | CRXDE Lite의 클래식 UI 대화 상자 편집기. Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 클래식 UI 대화 상자 편집기를 개선할 계획이 없습니다. | 교체할 수 없습니다. |
+| Forms | AEM Mobile과의 AEM Forms 통합은 더 이상 사용되지 않습니다. | 교체할 수 없습니다. |  | 개발자 | CRXDE Lite의 클래식 UI 대화 상자 편집기. Adobe는 향후 배포(빠른 시작)의 일부로 제공되는 클래식 UI 대화 상자 편집기를 개선할 계획이 없습니다. | 교체할 수 없습니다. |
 | 개발자 | 클라이언트 라이브러리 로드 대시/밑줄. Adobe은 배포(빠른 시작)의 일부로 제공되는 Lodash/underscore 클라이언트 라이브러리를 추가로 유지 및 업데이트할 계획이 없습니다. | Adobe은 코드에 여전히 Logdash/underscore가 필요한 고객에게 해당 코드를 해당 프로젝트 코드 베이스에 추가할 것을 권장합니다. |
 
 ## 제거된 기능 {#removed-features}
@@ -61,7 +62,7 @@ AEM 기능을 제거하거나 교체하기 위해 다음 규칙이 적용됩니�
 | 통합 | ExactTarget 통합이 기본 배포(빠른 시작)에서 제거되어 더 이상 사용할 수 없습니다. | 교체 없음. |
 | 통합 | Salesforce Force API 통합이 기본 배포(빠른 시작)에서 제거되었으며 이제 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 설치할 추가 패키지입니다. | 이 기능은 계속 사용할 수 있습니다. |
 | 양식 | Adobe Central 제품이 더 이상 지원되지 않아 Adobe Central Migration Bridge 서비스 지원이 제거되었습니다. | 교체 없음. |
-| 양식 | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | 교체 없음. |
+| Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | 교체 없음. |
 | 양식 | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | 교체 없음 |
 | 양식 | LiveCycle ES4 SP1에서 JEE의 AEM 6.5 Forms로 한 번에 업그레이드할 수 없음 | AEM Forms 업그레이드 설명서의 [사용 가능한 업그레이드 경로](../forms/using/upgrade.md)를 참조하십시오. |
 | 양식 | JEE의 AEM Forms에서 UPD 기반 클러스터링 지원을 제거했습니다. | JEE의 AEM Forms에서는 TCP 기반 클러스터링만 사용할 수 있습니다. UDP 멀티캐스트 서버를 이전 버전에서 JEE의 AEM 5.5 Forms로 업그레이드하는 경우 수동 구성을 수행하여 TCP 기반 Gemfire 클러스터로 전환합니다. 자세한 지침은 [JEE의 AEM 6.5 양식으로 업그레이드](../forms/using/upgrade-forms-jee.md)를 참조하십시오. |
