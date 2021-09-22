@@ -12,9 +12,9 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: d995173140237f34a03c8e84128ad9d657c9a026
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2053'
 ht-degree: 48%
 
 ---
@@ -338,6 +338,8 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
    >자산 복제(큐에서 실행)가 실패할 수 있으므로 복제 에이전트를 비활성화하지 마십시오.
    >
    >시간 초과 오류를 방지하기 위해 4개의 복제 에이전트가 모두 구성되었는지 확인합니다. Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout)에 동시 게시 시 문제 해결 [을 참조하십시오.
+   >
+   >자동 생성된 설정은 수정하지 마십시오.
 
 이제 다음을 수행할 수 있습니다.
 
