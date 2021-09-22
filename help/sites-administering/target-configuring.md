@@ -88,8 +88,7 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭하거나 탭합니
    >AEM으로 A4T를 구성할 때 구성 참조 누락 항목이 표시될 수 있습니다. Analytics 프레임워크를 선택하려면 다음을 수행하십시오.
    >
    >1. **도구** > **일반** > **CRXDE Lite**&#x200B;로 이동합니다.
-   1. 다음으로 이동:
-      `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
+   1. 다음으로 이동: `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    1. **disable** 속성을 **false**&#x200B;로 설정합니다.
    1. **모두 저장**&#x200B;을 탭하거나 클릭합니다.
 
