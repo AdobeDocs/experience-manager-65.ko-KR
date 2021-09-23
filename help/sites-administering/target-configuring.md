@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 7da4a482e709a8b6bcc5537905ce811b5363e19b
+source-git-commit: b0ccbf9e63cd9db00004ae96b2556df43f4b1478
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2199'
 ht-degree: 5%
 
 ---
@@ -88,14 +88,20 @@ Adobe Target 아래에서 **구성 표시**&#x200B;를 클릭하거나 탭합니
    >AEM으로 A4T를 구성할 때 구성 참조 누락 항목이 표시될 수 있습니다. Analytics 프레임워크를 선택하려면 다음을 수행하십시오.
    >
    >1. **도구** > **일반** > **CRXDE Lite**&#x200B;로 이동합니다.
-   1. 다음으로 이동: `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
+   1. [1]로 이동합니다(아래 참조)
    1. **disable** 속성을 **false**&#x200B;로 설정합니다.
    1. **모두 저장**&#x200B;을 탭하거나 클릭합니다.
 
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+[1]
 
-   **확인**&#x200B;을 클릭합니다. Adobe Target을 사용하여 컨텐츠를 타깃팅하는 경우 보고서 소스](/help/sites-authoring/content-targeting-touch.md)를 [선택할 수 있습니다.
+```
+   >/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
+```
+
+![chlimage_1-159](assets/chlimage_1-159.png)
+
+**확인**&#x200B;을 클릭합니다. Adobe Target을 사용하여 컨텐츠를 타깃팅하는 경우 보고서 소스](/help/sites-authoring/content-targeting-touch.md)를 [선택할 수 있습니다.
 
 ## Adobe Target과 수동 통합 {#manually-integrating-with-adobe-target}
 
