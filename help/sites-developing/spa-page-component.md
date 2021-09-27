@@ -1,8 +1,8 @@
 ---
 title: SPA 페이지 구성 요소
-seo-title: SPA 페이지 구성 요소
+seo-title: SPA Page Component
 description: SPA에서 페이지 구성 요소는 하위 구성 요소의 HTML 요소를 제공하지 않고 대신 SPA 프레임워크에 전달합니다. 이 문서에서는 이 방법이 SPA의 페이지 구성 요소를 고유하게 만드는 방법을 설명합니다.
-seo-description: SPA에서 페이지 구성 요소는 하위 구성 요소의 HTML 요소를 제공하지 않고 대신 SPA 프레임워크에 전달합니다. 이 문서에서는 이 방법이 SPA의 페이지 구성 요소를 고유하게 만드는 방법을 설명합니다.
+seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 4%
+source-wordcount: '730'
+ht-degree: 2%
 
 ---
 
@@ -82,28 +82,28 @@ SPA 컨텐츠를 설명하는 메타 리소스 속성:
 
 ## 메타 속성 {#meta-properties}
 
-* `cq:wcmmode`:편집기의 WCM 모드(예: 페이지, 템플릿)
-* `cq:pagemodel_root_url`:앱의 루트 모델의 URL입니다. 하위 페이지 모델이 앱 루트 모델의 조각이므로 하위 페이지에 직접 액세스할 때 중요합니다. 그런 다음 ` [PageModelManager](/help/sites-developing/spa-page-component.md)`은(는) 응용 프로그램 초기 모델을 해당 루트 시작 지점에서 응용 프로그램을 입력하는 것을 체계적으로 권장합니다.
+* `cq:wcmmode`: 편집기의 WCM 모드(예: 페이지, 템플릿)
+* `cq:pagemodel_root_url`: 앱의 루트 모델의 URL입니다. 하위 페이지 모델이 앱 루트 모델의 조각이므로 하위 페이지에 직접 액세스할 때 중요합니다. 그런 다음 ` [PageModelManager](/help/sites-developing/spa-page-component.md)`은(는) 응용 프로그램 초기 모델을 해당 루트 시작 지점에서 응용 프로그램을 입력하는 것을 체계적으로 권장합니다.
 
-* `cq:pagemodel_router`:라이브러리 ` [ModelRouter](/help/sites-developing/spa-routing.md)` 의 를 활성화하거나  `PageModelManager` 비활성화합니다
+* `cq:pagemodel_router`: 라이브러리 ` [ModelRouter](/help/sites-developing/spa-routing.md)` 의 를 활성화하거나  `PageModelManager` 비활성화합니다
 
-* `cq:pagemodel_route_filters`:무시해야 하는 경로를 제공하기 위해 쉼표로 구분된 목록 또는 정규  ` [ModelRouter](/help/sites-developing/spa-routing.md)` 표현식입니다.
+* `cq:pagemodel_route_filters`: 무시해야 하는 경로를 제공하기 위해 쉼표로 구분된 목록 또는 정규  ` [ModelRouter](/help/sites-developing/spa-routing.md)` 표현식입니다.
 
 >[!CAUTION]
 >
 >이 문서에서는 데모용으로만 We.Retail 분개 앱을 사용합니다. 프로젝트 작업에 사용해서는 안 됩니다.
 >
->모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다. AEM의 모든 SPA 프로젝트는 Maven Archetype for SPA Starter Kit을 기반으로 해야 합니다.
+>모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다. AEM의 모든 SPA 프로젝트는 Maven Archetype for SPA Starter Kit을 기반으로 해야 합니다.
 
 ## 페이지 편집기 오버레이 동기화 {#page-editor-overlay-synchronization}
 
 오버레이의 동기화는 `cq.authoring.page` 카테고리에서 제공하는 매우 동일한 돌연변이 관찰자에 의해 보장됩니다.
 
-## Sling 모델 JSON을 내보낸 구조 구성 {#sling-model-json-exported-structure-configuration}
+## Sling 모델 JSON 내보낸 구조 구성 {#sling-model-json-exported-structure-configuration}
 
 라우팅 기능이 활성화되면 AEM 탐색 구성 요소의 JSON 내보내기 덕분에 SPA의 JSON 내보내기에 애플리케이션의 다른 경로가 포함되어 있다고 가정합니다. AEM 탐색 구성 요소의 JSON 출력은 다음 두 속성을 통해 SPA 루트 페이지 컨텐츠 정책에 구성할 수 있습니다.
 
-* `structureDepth`:내보낸 트리의 깊이에 해당하는 번호
-* `structurePatterns`:내보낼 페이지에 해당하는 레지엑스 배열을 재생성합니다
+* `structureDepth`: 내보낸 트리의 깊이에 해당하는 번호
+* `structurePatterns`: 내보낼 페이지에 해당하는 레지엑스 배열을 재생성합니다
 
 이는 `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`의 SPA 샘플 컨텐츠에 표시될 수 있습니다.

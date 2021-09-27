@@ -1,20 +1,20 @@
 ---
 title: 성능 최적화
-seo-title: 성능 최적화
+seo-title: Performance Optimization
 description: AEM의 특정 측면을 구성하여 성능을 최적화하는 방법을 알아봅니다.
-seo-description: AEM의 특정 측면을 구성하여 성능을 최적화하는 방법을 알아봅니다.
+seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
-feature: 구성
+feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fc42469e4b97f2f2c5d7489837012d31c63f86d
 workflow-type: tm+mt
-source-wordcount: '6659'
-ht-degree: 2%
+source-wordcount: '6645'
+ht-degree: 14%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 ## 게시 환경 {#publish-environment}
 
-이 환경에는 사용자가 사용할 수 있는 컨텐츠가 포함되어 있습니다. 여기서 요청 수가 훨씬 더 크고 속도는 매우 중요하지만 요청의 특성이 덜 동적이므로 추가적인 성능 향상 메커니즘을 적용할 수 있습니다.컨텐츠 캐싱 또는 로드 밸런싱 등의 작업을 수행합니다.
+이 환경에는 사용자가 사용할 수 있는 컨텐츠가 포함되어 있습니다. 여기서 요청 수가 훨씬 더 크고 속도는 매우 중요하지만 요청의 특성이 덜 동적이므로 추가적인 성능 향상 메커니즘을 적용할 수 있습니다. 컨텐츠 캐싱 또는 로드 밸런싱 등의 작업을 수행합니다.
 
 >[!NOTE]
 >
@@ -70,15 +70,15 @@ AEM 프로젝트에 대한 성능 최적화 방법론은 처음부터 성능 문
 
 시스템 로드가 변경되고 시스템의 성능 프로필이 시간이 지남에 따라 변경되므로 6-12개월 간격으로 성능 &quot;조정&quot; 또는 &quot;상태 확인&quot;을 예약해야 합니다.
 
-### 실제 시뮬레이션 {#simulate-reality}
+### 현실 시뮬레이션 {#simulate-reality}
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-웹 사이트를 통해 라이브로 전환하고 실행 후 성능 문제가 발생하는 경우를 알 수 있는 경우 다음과 같은 한 가지 이유가 있습니다.부하 테스트와 성능 테스트만으로 실제 상황을 거의 시뮬레이션하지 못했습니다.
+웹 사이트를 통해 라이브로 전환하고 실행 후 성능 문제가 발생하는 경우를 알 수 있는 경우 다음과 같은 한 가지 이유가 있습니다. 부하 테스트와 성능 테스트만으로 실제 상황을 거의 시뮬레이션하지 못했습니다.
 
 현실을 시뮬레이션하는 것은 어렵고 &quot;실제&quot;에 투자하기 위해 합리적으로 얼마나 많은 노력을 기울이느냐에 따라 다릅니다. &quot;실수&quot;는 &quot;실제 코드&quot;와 &quot;실제 트래픽&quot;뿐만 아니라 특히 컨텐츠 크기 및 구조에 대한 &quot;실제 컨텐츠&quot;를 의미합니다. 템플릿의 크기 및 구조에 따라 템플릿이 완전히 다를 수 있습니다.
 
-### 고정 목표 설정 {#establish-solid-goals}
+### 확고한 목표 설정 {#establish-solid-goals}
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
@@ -92,7 +92,7 @@ AEM 프로젝트에 대한 성능 최적화 방법론은 처음부터 성능 문
 
 한 번에 하나의 병목 현상을 최적화하는 것이 중요합니다. 하나의 최적화의 영향을 확인하지 않고 작업을 동시에 수행하려고 하면 실제로 도움을 준 최적화 측정을 제대로 추적하지 못합니다.
 
-### Agile 반복 주기 {#agile-iteration-cycles}
+### 애자일 반복 주기 {#agile-iteration-cycles}
 
 ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
@@ -185,7 +185,7 @@ JVM 및 OS 레벨 튜닝은 일반적으로 성능이 크게 향상되지 않으
 * 애플리케이션(프로젝트) 코드
 * 검색 기능
 
-### 성능 {#basic-rules-regarding-performance} 관련 기본 규칙
+### 성능에 대한 기본 규칙 {#basic-rules-regarding-performance}
 
 성능 최적화 시 특정 규칙을 염두에 두어야 합니다.
 
@@ -198,9 +198,9 @@ JVM 및 OS 레벨 튜닝은 일반적으로 성능이 크게 향상되지 않으
 
 >[!NOTE]
 >
->성능을 측정하는 데 사용하는 메커니즘은 측정하려는 내용에 종종 영향을 줍니다. 여러분은 항상 이러한 불일치를 고려하고 가능한 한 그 효과를 없애도록 노력해야 합니다.특정 브라우저 플러그인은 가능한 한 비활성화해야 합니다.
+>성능을 측정하는 데 사용하는 메커니즘은 측정하려는 내용에 종종 영향을 줍니다. 여러분은 항상 이러한 불일치를 고려하고 가능한 한 그 효과를 없애도록 노력해야 합니다. 특정 브라우저 플러그인은 가능한 한 비활성화해야 합니다.
 
-## 성능 {#configuring-for-performance} 구성
+## 성능 구성 {#configuring-for-performance}
 
 AEM(및/또는 기본 저장소)의 특정 측면을 성능 최적화를 위해 구성할 수 있습니다. 다음은 가능성 및 제안이며, 변경하기 전에 해당 기능을 사용할지 여부를 확인해야 합니다.
 
@@ -217,7 +217,7 @@ AEM 6.0부터 Adobe Experience Manager은 Oak 기반 저장소 아키텍처를 �
 * [쿼리 및 색인 생성에 대한 우수 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
 * [쿼리 및 색인 지정](/help/sites-deploying/queries-and-indexing.md)
 
-### 동시 워크플로 처리 {#concurrent-workflow-processing}
+### 동시 워크플로우 처리 {#concurrent-workflow-processing}
 
 동시에 실행되는 워크플로우 프로세스 수를 제한하여 성능을 개선합니다. 기본적으로 워크플로우 엔진은 Java VM에서 사용할 수 있는 처리기가 있을 만큼 여러 워크플로우를 동시에 처리합니다. 워크플로우 단계에서 많은 양의 처리 리소스(RAM 또는 CPU)를 필요로 하는 경우 이러한 워크플로우 중 일부를 동시에 실행해도 사용 가능한 서버 리소스에 높은 수요가 발생할 수 있습니다.
 
@@ -225,8 +225,8 @@ AEM 6.0부터 Adobe Experience Manager은 Oak 기반 저장소 아키텍처를 �
 
 워크플로우 엔진은 작업 항목 처리를 처리하고 예약하기 위해 Apache Sling 작업 큐를 사용합니다. 워크플로우 작업 처리를 위한 Apache Sling Job Queue Configuration 서비스 팩토리에서 기본적으로 다음 작업 큐 서비스를 만들었습니다.
 
-* Granite Workflow 큐:DAM 자산을 처리하는 워크플로우 단계와 같은 대부분의 워크플로우 단계는 Granite Workflow 큐 서비스를 사용합니다.
-* Granite Workflow 외부 프로세스 작업 큐:이 서비스는 일반적으로 외부 시스템에 연결하고 결과를 폴링하는 데 사용되는 특별한 외부 워크플로우 단계에 사용됩니다. 예를 들어 InDesign 미디어 추출 프로세스 단계는 외부 프로세스로 구현됩니다. 워크플로우 엔진은 폴링 처리를 위해 외부 큐를 사용합니다. ( [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html) 참조).
+* Granite Workflow 큐: DAM 자산을 처리하는 워크플로우 단계와 같은 대부분의 워크플로우 단계는 Granite Workflow 큐 서비스를 사용합니다.
+* Granite Workflow 외부 프로세스 작업 큐: 이 서비스는 일반적으로 외부 시스템에 연결하고 결과를 폴링하는 데 사용되는 특별한 외부 워크플로우 단계에 사용됩니다. 예를 들어 InDesign 미디어 추출 프로세스 단계는 외부 프로세스로 구현됩니다. 워크플로우 엔진은 폴링 처리를 위해 외부 큐를 사용합니다. ( [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html) 참조).
 
 동시 실행 워크플로우 프로세스의 최대 수를 제한하도록 이러한 서비스를 구성합니다.
 
@@ -236,7 +236,7 @@ AEM 6.0부터 Adobe Experience Manager은 Oak 기반 저장소 아키텍처를 �
 
 #### 저장소의 구성 {#configuration-in-the-repo}
 
-sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)를 사용하여 서비스 [를 구성하는 경우 기존 서비스의 PID를 찾아야 합니다. 예:org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
+sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)를 사용하여 서비스 [를 구성하는 경우 기존 서비스의 PID를 찾아야 합니다. 예: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. 웹 콘솔을 사용하여 PID를 검색할 수 있습니다.
 
 `queue.maxparallel` 속성을 구성해야 합니다.
 
@@ -259,7 +259,7 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
 
-따라서 워크플로우 모델의 작업 주제와 일치하는 항목의 작업 대기열을 만들 수 있습니다. 큐의 성능 관련 속성을 구성하면 대기열 항목과 일치하는 작업을 생성하는 워크플로우 모델에만 영향을 줍니다.
+따라서 워크플로우 모델의 작업 주제와 일치하는 항목의 작업 대기열을 만들 수 있습니다. 큐의 성능 관련 속성을 구성하면 큐 항목과 일치하는 작업을 생성하는 워크플로우 모델에만 영향을 줍니다.
 
 다음 절차에서는 **DAM 자산 업데이트** 워크플로우를 예로 사용하여 워크플로우에 대한 작업 큐를 만듭니다.
 
@@ -285,7 +285,7 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 예를 들어 다음과 같은 경우 여러 DAM 인스턴스를 배포하면 성능이 향상됩니다.
 
-* 작성 환경에 대한 많은 자산의 정기적인 업로드로 인해 로드가 많습니다.여기서는 별도의 DAM 인스턴스를 작성자 서비스를 위해 사용할 수 있습니다.
+* 작성 환경에 대한 많은 자산의 정기적인 업로드로 인해 로드가 많습니다. 여기서는 별도의 DAM 인스턴스를 작성자 서비스를 위해 사용할 수 있습니다.
 * 전 세계 위치(예: 미국, 유럽, 아시아)에 여러 팀이 있습니다.
 
 추가 고려 사항은 다음과 같습니다.
@@ -309,7 +309,7 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 제어는 필수 사항이지만 테스트에만 국한되지 않는 모든 프로세스를 포괄하는 추가 프로세스입니다.
 
-### 기술 자료 확인 {#verification-of-knowledge}
+### 지식 확인 {#verification-of-knowledge}
 
 첫 번째 단계는 테스트를 시작하기 전에 알아야 하는 기준 정보를 문서화하는 것입니다.
 
@@ -326,7 +326,7 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 전체 애플리케이션의 맵을 만들 수 있으므로 명확한 개요를 알 수 있습니다(작성 환경의 테스트에서 이 맵을 얻을 수 있음).
 
-응용 프로그램의 내부 요소를 다이어그램 표현하여 테스트 요구 사항에 대한 개요를 제공할 수 있습니다.색상 코딩을 사용하면 보고 기반으로 작용할 수도 있습니다.
+응용 프로그램의 내부 요소를 다이어그램 표현하여 테스트 요구 사항에 대한 개요를 제공할 수 있습니다. 색상 코딩을 사용하면 보고 기반으로 작용할 수도 있습니다.
 
 ### 범위 정의 {#scope-definition}
 
@@ -369,7 +369,7 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 #### 트랜잭션 {#transactions}
 
-* 트랜잭션이라는 용어는 페이지 자체와 모든 후속 호출을 포함하여 전체 웹 페이지의 요청을 나타내는 데 사용됩니다.즉, 페이지 요청, 모든 AJAX 호출, 이미지 및 기타 개체입니다.**드릴다운 요청**
+* 트랜잭션이라는 용어는 페이지 자체와 모든 후속 호출을 포함하여 전체 웹 페이지의 요청을 나타내는 데 사용됩니다. 즉, 페이지 요청, 모든 AJAX 호출, 이미지 및 기타 개체입니다.**드릴다운 요청**
 * 각 요청을 완전히 분석하기 위해 호출 스택의 각 요소를 표시한 다음 각 요청의 평균 처리 시간을 합할 수 있습니다.
 
 ### 성능 목표 정의 {#defining-the-performance-goals}
@@ -378,7 +378,7 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 평균 및 최대 조건 모두에서 성능을 테스트해야 합니다. 또한 웹 사이트를 처음 사용할 수 있을 때 웹 사이트의 증가하는 관심을 충족할 수 있도록 Go Live 시나리오 테스트가 필요합니다.
 
-기존 웹 사이트에서 수집한 모든 경험이나 통계도 향후 목표를 결정하는 데 유용할 수 있습니다.예를 들어 라이브 웹 사이트의 상위 트래픽.
+기존 웹 사이트에서 수집한 모든 경험이나 통계도 향후 목표를 결정하는 데 유용할 수 있습니다. 예를 들어 라이브 웹 사이트의 상위 트래픽.
 
 #### 단일 구성 요소 테스트 {#single-component-tests}
 
@@ -388,10 +388,10 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 | 구성 요소 | 테스트 유형 | 아니오. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
-| 홈페이지 단일 사용자 | 평균 | 1 | 3 |  |  |
-|  | 피크 | 3 | 3 |  |  |
-| 홈 페이지 100명의 사용자 | 평균 | 100 | 3 |  |  |
-|  | 피크 | 100년 | 3 |  |
+| 홈페이지 단일 사용자 | 평균 | 1 | 1 |  |  |
+|  | 피크 | 1 | 3 |  |  |
+| 홈 페이지 100명의 사용자 | 평균 | 100 | 1 |  |  |
+|  | 피크 | 100년 | 1 |  |
 
 #### 결합된 구성 요소 테스트 {#combined-component-tests}
 
@@ -399,11 +399,11 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 | 시나리오 | 구성 요소 | 아니오. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
-| 혼합 평균 | 홈 페이지 | 10 | 3 |  |  |
-|  | 검색 | 10 | 3 |  |  |
+| 혼합 평균 | 홈 페이지 | 10 | 1 |  |  |
+|  | 검색 | 10 | 1 |  |  |
 |  | 뉴스 | 10 | 2 |  |  |
-|  | 이벤트 | 10 | 3 |  |  |
-|  | 활성화 | 10 | 3 |  | 작성 동작 시뮬레이션. |
+|  | 이벤트 | 10 | 1 |  |  |
+|  | 활성화 | 10 | 1 |  | 작성 동작 시뮬레이션. |
 | 혼합 피크 | 홈 페이지 | 100년 | 5 |  |  |
 |  | 검색 | 50 | 5개 |  |  |
 |  | 뉴스 | 100년 | 10 |  |  |
@@ -433,22 +433,22 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 
 | 오류 시나리오 | 오류 유형 | 아니오. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
-| 검색 구성 요소 오버로드 | 전역 와일드카드(별표) 검색 | 10 | 3 |  | &amp;ast;&amp;ast;&amp;ast;검색됩니다. |
+| 검색 구성 요소 오버로드 | 전역 와일드카드(별표) 검색 | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast; 검색됩니다. |
 |  | 중지 단어 | 20년 | 2개 |  | 정지 단어를 검색하는 중입니다. |
-|  | 빈 문자열 | 10 | 3 |  | 빈 문자열을 검색합니다. |
-|  | 특수 문자 | 10 | 3 |  | 특수 문자를 검색하는 중입니다. |
+|  | 빈 문자열 | 10 | 1 |  | 빈 문자열을 검색합니다. |
+|  | 특수 문자 | 10 | 1 |  | 특수 문자를 검색하는 중입니다. |
 
 #### 지구력 테스트 {#endurance-tests}
 
-특정 문제는 시스템이 지속적으로 실행된 후에만 발생합니다.그것은 몇 시간 혹은 심지어 며칠이다. 지구력 테스트는 필요한 기간 동안 일정한 평균 부하를 테스트하는 데 사용됩니다. 그런 다음 성능 저하를 분석할 수 있습니다.
+특정 문제는 시스템이 지속적으로 실행된 후에만 발생합니다. 그것은 몇 시간 혹은 심지어 며칠이다. 지구력 테스트는 필요한 기간 동안 일정한 평균 부하를 테스트하는 데 사용됩니다. 그런 다음 성능 저하를 분석할 수 있습니다.
 
 | 시나리오 | 테스트 유형 | 아니오. 사용자 수 | Tx/초(예상함) | Tx/초(테스트됨) | 설명 |
 |---|---|---|---|---|---|
-| 지구력 테스트(72시간) | 홈 페이지 | 10 | 3 |  |  |
-|  | 검색 | 10 | 3 |  |  |
+| 지구력 테스트(72시간) | 홈 페이지 | 10 | 1 |  |  |
+|  | 검색 | 10 | 1 |  |  |
 |  | 뉴스 | 20년 | 2개 |  |  |
-|  | 이벤트 | 10 | 3 |  |  |
-|  | 활성화 | 3 | 3 |  | 작성 동작 시뮬레이션. |
+|  | 이벤트 | 10 | 1 |  |  |
+|  | 활성화 | 1 | 1 |  | 작성 동작 시뮬레이션. |
 
 ### 최적화 {#optimization}
 
@@ -481,33 +481,31 @@ sling:OsgiConfig 노드](/help/sites-deploying/configuring-osgi.md#adding-a-new-
 * 테스트 중에 발생한 모든 가정
 * 테스트에서 발생할 모든 권장 사항
 
-## Dispatcher {#optimizing-performance-when-using-the-dispatcher} 를 사용할 때 성능 최적화
+## Dispatcher 사용 시 성능 최적화 {#optimizing-performance-when-using-the-dispatcher}
 
 [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)는 Adobe의 캐싱 및/또는 로드 밸런싱 도구입니다. Dispatcher를 사용하는 경우 캐시 성능을 위해 웹 사이트를 최적화하는 것을 고려해야 합니다.
 
 >[!NOTE]
 >
->Dispatcher 버전은 AEM과 독립적이지만 AEM 설명서에 Dispatcher 설명서를 포함합니다. 최신 버전의 AEM에 대해 설명서에 포함된 Dispatcher 설명서를 항상 사용하십시오.
+>Dispatcher 버전은 AEM과 독립적이지만 Dispatcher 설명서는 AEM 설명서에 임베드되어 있습니다. 항상 최신 버전의 AEM 설명서에 임베드된 Dispatcher 설명서를 사용하십시오.
 >
->이전 버전의 AEM에 대한 설명서에 포함된 Dispatcher 설명서에 대한 링크를 따라간 경우 이 페이지로 리디렉션되었을 수 있습니다.
+>이전 버전의 AEM에 대한 설명서에 임베드된 Dispatcher 설명서에 대한 링크를 따라간 경우 이 페이지로 리디렉션되었을 수 있습니다.
 
-Dispatcher는 웹 사이트에서 이를 활용하는 경우 성능을 최적화하는 데 사용할 수 있는 많은 내장 메커니즘을 제공합니다. 이 섹션에서는 캐싱의 이점을 극대화하도록 웹 사이트를 디자인하는 방법을 설명합니다.
+Dispatcher는 웹 사이트에서 이를 활용하는 경우 성능을 최적화하는 데 사용할 수 있는 많은 내장 메커니즘을 제공합니다. 이 섹션에서는 캐싱의 이점을 극대화하기 위해 웹 사이트를 디자인하는 방법을 설명합니다.
 
 >[!NOTE]
 >
->Dispatcher가 표준 웹 서버에 캐시를 저장한다는 것을 이해하는 데 도움이 될 수 있습니다. 이는 사용자가 다음을 의미함을 의미합니다.
+>Dispatcher가 표준 웹 서버에 캐시를 저장한다는 것을 기억하는 데 도움이 될 수 있습니다. 이는 다음을 의미합니다.
 >
 >* 페이지로 저장하고 URL을 사용하여 요청할 수 있는 모든 것을 캐싱할 수 있습니다
 >* 쿠키, 세션 데이터 및 양식 데이터와 같은 다른 항목은 저장할 수 없습니다.
 
 >
->
-일반적으로 많은 캐싱 전략에는 적절한 URL을 선택하고 이 추가 데이터에 의존하지 않는 것이 포함됩니다.
+>일반적으로, 좋은 URL을 선택하고 이 추가 데이터에 의존하지 않는 것이 많은 캐싱 전략에 포함됩니다.
 >
 >Dispatcher 버전 4.1.11에서는 응답 헤더를 캐싱할 수도 있습니다. [HTTP 응답 헤더 캐싱](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache) 을 참조하십시오.
 
-
-### Dispatcher 캐시 비율 계산 {#calculating-the-dispatcher-cache-ratio}
+### 디스패처 캐시 비율 계산 {#calculating-the-dispatcher-cache-ratio}
 
 캐시 비율 수식은 시스템으로 들어오는 총 요청 수 중 캐시에서 처리한 요청의 비율을 예측합니다. 캐시 비율을 계산하려면 다음 항목이 필요합니다.
 
@@ -519,7 +517,7 @@ Dispatcher는 웹 사이트에서 이를 활용하는 경우 성능을 최적화
 
 * (총 요청 수 **게시에서 요청 수를 뺀**) **나누어서**&#x200B;총 요청 수로 계산합니다.
 
-예를 들어 총 요청 수가 129491이고 게시 인스턴스에서 제공하는 요청 수가 58959인 경우 캐시 비율은 다음과 같습니다.**(129491 - 58959)/129491= 54.5%**.
+예를 들어 총 요청 수가 129491이고 게시 인스턴스에서 제공하는 요청 수가 58959인 경우 캐시 비율은 다음과 같습니다. **(129491 - 58959)/129491= 54.5%**.
 
 한 대 하나의 게시자/디스패처 쌍이 없는 경우 정확한 측정을 위해 모든 디스패처 및 게시자의 요청을 함께 추가해야 합니다. [권장 배포](/help/sites-deploying/recommended-deploys.md)도 참조하십시오.
 
@@ -529,24 +527,24 @@ Dispatcher는 웹 사이트에서 이를 활용하는 경우 성능을 최적화
 
 #### 일관된 페이지 인코딩 사용 {#using-consistent-page-encoding}
 
-Dispatcher 버전 4.1.11을 사용하면 응답 헤더를 캐싱할 수 있습니다. Dispatcher에서 응답 헤더를 캐싱하지 않는 경우 헤더에 페이지 인코딩 정보를 저장하는 경우 문제가 발생할 수 있습니다. 이 경우 Dispatcher가 캐시에서 페이지를 제공할 때 웹 서버의 기본 인코딩이 페이지에 사용됩니다. 이 문제를 피하는 방법에는 두 가지가 있습니다.
+Dispatcher 버전 4.1.11을 사용하면 응답 헤더를 캐싱할 수 있습니다. Dispatcher에서 응답 헤더를 캐싱하지 않는 경우 헤더에 페이지 인코딩 정보를 저장하는 경우 문제가 발생할 수 있습니다. 이 상황에서 Dispatcher가 캐시에서 페이지를 제공하면 웹 서버의 기본 인코딩이 페이지에 사용됩니다. 이 문제를 방지하는 두 가지 방법이 있습니다.
 
-* 인코딩을 하나만 사용하는 경우 웹 서버에서 사용되는 인코딩이 AEM 웹 사이트의 기본 인코딩과 같은지 확인하십시오.
-* 다음 예와 같이 HTML `head` 섹션에서 `<META>` 태그를 사용하여 인코딩을 설정합니다.
+* 인코딩을 하나만 사용하는 경우 웹 서버에서 사용되는 인코딩이 AEM 웹 사이트의 기본 인코딩과 동일한지 확인합니다.
+* 다음 예제와 같이, HTML `head` 섹션에서 `<META>` 태그를 사용하여 인코딩을 설정합니다.
 
 ```xml
         <META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
 ```
 
-#### URL 매개 변수 {#avoid-url-parameters} 방지
+#### URL 매개 변수 방지 {#avoid-url-parameters}
 
-가능하면 캐싱하려는 페이지의 URL 매개 변수를 사용하지 마십시오. 예를 들어 사진 갤러리가 있는 경우 다음 URL은 캐시되지 않습니다(Dispatcher가 [에 따라 구성된 경우가 아니면](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)).
+가능하면 캐시하려는 페이지의 URL 매개 변수를 사용하지 마십시오. 예를 들어 사진 갤러리가 있는 경우 다음 URL은 캐시되지 않습니다(Dispatcher가 [적절하게 구성](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)되지 않은 경우).
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
 ```
 
-그러나 다음과 같이 이러한 매개 변수를 페이지 URL에 넣을 수 있습니다.
+단, 다음과 같이 이러한 매개 변수를 페이지 URL에 넣을 수 있습니다.
 
 ```xml
 www.myCompany.com/pictures/gallery.christmas.1.html
@@ -556,13 +554,13 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 >
 >이 URL은 동일한 페이지를 호출하고 `gallery.html`과 동일한 템플릿을 호출합니다. 템플릿 정의에서 페이지를 렌더링하는 스크립트를 지정하거나 모든 페이지에 대해 동일한 스크립트를 사용할 수 있습니다.
 
-#### URL {#customize-by-url}로 사용자 지정
+#### URL로 사용자 지정 {#customize-by-url}
 
-사용자가 글꼴 크기(또는 기타 레이아웃 사용자 지정)를 변경할 수 있도록 허용하는 경우, 다른 사용자 지정 사항이 URL에 반영되었는지 확인하십시오.
+사용자가 글꼴 크기(또는 기타 레이아웃 사용자 지정)를 변경할 수 있도록 허용하는 경우 다른 사용자 지정이 URL에 반영되었는지 확인합니다.
 
-예를 들어 쿠키는 캐시되지 않으므로 쿠키(또는 유사한 메커니즘)에 글꼴 크기를 저장하는 경우 글꼴 크기는 캐시된 페이지에 대해 유지되지 않습니다. 따라서 Dispatcher는 임의 글꼴 크기의 문서를 반환합니다.
+예를 들어 쿠키는 캐시되지 않으므로 글꼴 크기를 쿠키(또는 유사한 메커니즘)에 저장하면 캐시된 페이지에 대해 글꼴 크기가 유지되지 않습니다. 따라서 Dispatcher는 임의의 글꼴 크기 문서를 무작위로 반환합니다.
 
-선택기로 URL에 글꼴 크기를 포함하면 이 문제가 발생합니다.
+URL에 글꼴 크기를 선택기로 포함하면 이 문제를 피할 수 있습니다.
 
 ```xml
 www.myCompany.com/news/main.large.html
@@ -570,47 +568,47 @@ www.myCompany.com/news/main.large.html
 
 >[!NOTE]
 >
->대부분의 레이아웃 측면에서 스타일 시트 및/또는 클라이언트측 스크립트를 사용할 수도 있습니다. 캐싱은 일반적으로 매우 잘 작동합니다.
+>대부분의 레이아웃 측면에서 스타일 시트 및/또는 클라이언트측 스크립트를 사용하는 것도 가능합니다. 일반적으로 캐싱과 매우 잘 작동합니다.
 >
 >다음과 같은 URL을 사용할 수 있는 인쇄 버전에도 유용합니다.
 >
 >`www.myCompany.com/news/main.print.html`
 >
->템플릿 정의의 스크립트 글로브를 사용하여 인쇄 페이지를 렌더링하는 별도의 스크립트를 지정할 수 있습니다.
+>템플릿 정의의 스크립트 글로빙을 사용하여 인쇄 페이지를 렌더링하는 별도의 스크립트를 지정할 수 있습니다.
 
-#### 제목 {#invalidating-image-files-used-as-titles}으로 사용된 이미지 파일을 무효화합니다.
+#### 제목으로 사용된 이미지 파일 무효화 {#invalidating-image-files-used-as-titles}
 
-페이지 제목 또는 다른 텍스트를 그림으로 렌더링하는 경우 페이지에서 콘텐츠 업데이트 시 삭제되도록 파일을 저장하는 것이 좋습니다.
+페이지 제목 또는 기타 텍스트를 사진으로 렌더링하는 경우 페이지의 콘텐츠 업데이트 시 삭제되도록 파일을 저장하는 것이 좋습니다.
 
 1. 이미지 파일을 페이지와 동일한 폴더에 넣습니다.
-1. 이미지 파일에 대해 다음 이름 지정 형식을 사용합니다.
+1. 이미지 파일에 다음 이름 지정 형식을 사용합니다.
 
    `<page file name>.<image file name>`
 
-예를 들어 `myPage.html` 페이지의 제목을 `file myPage.title.gif`에 저장할 수 있습니다. 페이지가 업데이트되면 이 파일은 자동으로 삭제되므로 페이지 제목을 변경하면 자동으로 캐시에 반영됩니다.
+예를 들어 `myPage.html` 페이지의 제목을 `file myPage.title.gif`에 저장할 수 있습니다. 이 파일은 페이지가 업데이트되면 자동으로 삭제되므로 페이지 제목이 변경되면 캐시에 자동으로 반영됩니다.
 
 >[!NOTE]
 >
->이미지 파일이 반드시 AEM 인스턴스에 존재하지 않을 수도 있습니다. 이미지 파일을 동적으로 만드는 스크립트를 사용할 수 있습니다. 그러면 Dispatcher가 웹 서버에 파일을 저장합니다.
+>이미지 파일이 AEM 인스턴스에 실제로 존재할 필요는 없습니다. 이미지 파일을 동적으로 생성하는 스크립트를 사용할 수 있습니다. 그러면 Dispatcher가 웹 서버에 파일을 저장합니다.
 
 #### 탐색에 사용된 이미지 파일 무효화 {#invalidating-image-files-used-for-navigation}
 
-탐색 항목에 그림을 사용하는 경우 이 방법은 기본적으로 제목과 같으며, 약간 더 복잡합니다. 대상 페이지가 있는 모든 탐색 이미지를 저장합니다. 일반 및 활성에 두 개의 그림을 사용하는 경우 다음 스크립트를 사용할 수 있습니다.
+탐색 항목에 사진을 사용하는 경우 메서드는 기본적으로 제목과 동일하지만 약간 더 복잡합니다. 대상 페이지와 함께 모든 탐색 이미지를 저장합니다. 일반 및 활성에 대해 두 개의 사진을 사용하는 경우 다음 스크립트를 사용할 수 있습니다.
 
-* 페이지를 정상적으로 표시하는 스크립트입니다.
-* &quot;.normal&quot; 요청을 처리하고 일반 그림을 반환하는 스크립트.
-* &quot;.active&quot; 요청을 처리하고 활성화된 그림을 반환하는 스크립트입니다.
+* 페이지를 정상적으로 표시하는 스크립트.
+* “.normal” 요청을 처리하고 일반 사진을 반환하는 스크립트.
+* “.active” 요청을 처리하고 활성화된 사진을 반환하는 스크립트.
 
-페이지와 동일한 이름 지정 핸들로 이러한 그림을 만드는 것이 중요합니다. 콘텐츠 업데이트가 페이지와 이 그림을 삭제하도록 하려면
+콘텐츠 업데이트가 페이지와 함께 이러한 사진을 삭제하도록 하려면 페이지와 동일한 이름 지정 핸들을 사용하여 이러한 사진을 만드는 것이 중요합니다.
 
-페이지가 일반적으로 자동 무효화되더라도 수정되지 않은 페이지의 경우 사진은 여전히 캐시에 남아 있습니다.
+수정되지 않은 페이지의 경우 페이지 자체가 일반적으로 자동 무효화되더라도 사진은 여전히 캐시에 남아 있습니다.
 
 #### 개인화 {#personalization}
 
 개인화를 필요한 위치로 제한하는 것이 좋습니다. 이유는 다음과 같습니다.
 
-* 자유롭게 사용자 정의 가능한 시작 페이지를 사용하는 경우 사용자가 요청할 때마다 해당 페이지를 작성해야 합니다.
-* 반면, 10개의 다른 시작 페이지를 선택할 수 있는 경우 각 시작 페이지를 캐싱할 수 있으므로 성능이 향상됩니다.
+* 자유롭게 사용자 지정할 수 있는 시작 페이지를 사용하는 경우 사용자가 요청할 때마다 해당 페이지를 구성해야 합니다.
+* 반대로 10개의 서로 다른 시작 페이지를 선택할 수 있는 경우 각 시작 페이지를 캐시할 수 있으므로 성능이 향상됩니다.
 
 >[!TIP]
 >Dispatcher 캐시 구성에 대한 자세한 내용은 [AEM Dispatcher 캐시 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) 및 [보호된 콘텐츠 캐싱 섹션을 참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
@@ -628,27 +626,27 @@ www.myCompany.com/news/main.large.html
 
 #### 고정 연결 {#sticky-connections}
 
-[고정 ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) 연결한 명의 사용자에 대한 문서가 모두 동일한 서버에서 구성되었는지 확인합니다. 사용자가 이 폴더를 벗어나서 나중에 해당 폴더로 돌아오면 연결이 계속 유지됩니다. 웹 사이트에 고정 연결이 필요한 모든 문서를 보관할 하나의 폴더를 정의합니다. 다른 문서가 들어 있지 않도록 하세요. 이는 개인화된 페이지 및 세션 데이터를 사용하는 경우 로드 밸런싱에 영향을 줍니다.
+[고정 연결](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) 은 한 명의 사용자에 대한 문서가 모두 동일한 서버에서 구성되도록 합니다. 사용자가 이 폴더를 떠났다가 나중에 다시 돌아와도 연결은 계속 유지됩니다. 웹 사이트에 고정 연결이 필요한 모든 문서를 보관할 하나의 폴더를 정의하십시오. 다른 문서는 여기에 넣지 마십시오. 이는 개인화된 페이지 및 세션 데이터를 사용하는 경우 로드 밸런싱에 영향을 미칩니다.
 
 #### MIME 유형 {#mime-types}
 
-브라우저가 파일 유형을 결정할 수 있는 방법에는 두 가지가 있습니다.
+브라우저가 파일 유형을 결정할 수 있는 두 가지 방법이 있습니다.
 
-1. 확장 프로그램(예:`.html`, `.gif`, `.jpg` 등)
-1. 서버가 파일과 함께 보내는 MIME 유형에 의해
+1. 확장 프로그램(예: `.html`, `.gif`, `.jpg` 등)
+1. 서버가 파일과 함께 보내는 MIME 형식별
 
-대부분의 파일의 경우 MIME 유형은 파일 확장명에 암시되어 있습니다. i.e.:
+대부분의 파일에서 MIME 유형은 파일 확장명에 암시되어 있습니다. 즉,
 
-1. 확장 프로그램(예:`.html`, `.gif`, `.jpg` 등)
-1. 서버가 파일과 함께 보내는 MIME 유형에 의해
+1. 확장 프로그램(예: `.html`, `.gif`, `.jpg` 등)
+1. 서버가 파일과 함께 보내는 MIME 형식별
 
 파일 이름에 확장명이 없으면 일반 텍스트로 표시됩니다.
 
 Dispatcher 버전 4.1.11을 사용하면 응답 헤더를 캐싱할 수 있습니다. Dispatcher에서 응답 헤더를 캐시하지 않는 경우 MIME 유형이 HTTP 헤더의 일부임을 알고 있어야 합니다. 따라서 AEM 응용 프로그램이 파일 끝이 인식되지 않은 파일을 반환하고 대신 MIME 유형을 사용하는 경우 이러한 파일이 잘못 표시될 수 있습니다.
 
-파일이 제대로 캐시되는지 확인하려면 다음 지침을 따르십시오.
+파일이 제대로 캐시되었는지 확인하려면 다음 지침을 따르십시오.
 
-* 파일의 확장자가 항상 적절한지 확인합니다.
+* 파일의 확장명이 항상 적절한지 확인하십시오.
 * `download.jsp?file=2214` 과 같은 URL이 있는 일반 파일 서버 스크립트는 피하십시오. 파일 사양을 포함하는 URL을 사용하도록 스크립트를 다시 작성합니다. 이전 예제의 경우 이 값은 `download.2214.pdf`입니다.
 
 ## 백업 성능 {#backup-performance}
@@ -663,9 +661,9 @@ Dispatcher 버전 4.1.11을 사용하면 응답 헤더를 캐싱할 수 있습�
 
 * H-P ProLiant DL380 G6, 8개의 CPU x 2.533GHz
 * 직렬 연결 SCSI 300GB 10,000RPM 드라이브
-* 하드웨어 RAID 컨트롤러;RAID0+5 어레이의 드라이브 8개
+* 하드웨어 RAID 컨트롤러; RAID0+5 어레이의 드라이브 8개
 * VMware 이미지 CPU x 2 Intel Xeon E5540 @ 2.53GHz
-* RedHat Linux 2.6.18-194.el5;Java 1.6.0_29
+* RedHat Linux 2.6.18-194.el5; Java 1.6.0_29
 * 단일 작성자 인스턴스
 
 이 서버의 디스크 하위 시스템은 매우 빠르고 운영 서버에서 사용할 수 있는 고성능 RAID 구성을 나타냅니다. 백업 성능은 디스크 성능에 영향을 줄 수 있으며 이 환경의 결과는 매우 빠른 RAID 구성의 성능을 반영합니다. VMWare 이미지는 RAID 어레이의 로컬 디스크 스토리지에 물리적으로 상주하는 하나의 대용량 디스크 볼륨을 갖도록 구성됩니다.
@@ -686,7 +684,7 @@ AEM 구성에서는 모든 운영 체제와 AEM 소프트웨어와 함께 저장
 
 #### 벤치마크 시나리오 {#benchmark-scenarios}
 
-백업 벤치마크는 다음 두 가지 주요 시나리오를 다룹니다.시스템이 상당한 응용 프로그램을 로드하고 시스템이 유휴 상태일 때 백업을 수행합니다. 일반적으로 AEM이 유휴 상태일 때 백업을 수행해야 하지만 시스템이 로드될 때 백업을 실행해야 하는 경우가 있습니다.
+백업 벤치마크는 다음 두 가지 주요 시나리오를 다룹니다. 시스템이 상당한 응용 프로그램을 로드하고 시스템이 유휴 상태일 때 백업을 수행합니다. 일반적으로 AEM이 유휴 상태일 때 백업을 수행해야 하지만 시스템이 로드될 때 백업을 실행해야 하는 경우가 있습니다.
 
 * **유휴 상태**  - AEM에서 다른 작업 없이 백업이 수행됩니다.
 * **로드**  - 온라인 프로세스에서 시스템이 80% 로드되지 않는 동안 백업이 수행됩니다. 로드 영향을 보기 위해 백업 지연이 변경되었습니다.
