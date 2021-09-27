@@ -3,12 +3,12 @@ title: 디지털 자산의 메타데이터 관리
 description: 자산의 메타데이터 유형과 자산을 쉽게 구성하고 처리할 수 있도록 자산에 대한 메타데이터를 관리하는 방법에 대해 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
-feature: 태깅, 메타데이터
+feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2336'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 2%
 
    ![자산의 속성 을 선택하여 해당 메타데이터를 확인합니다](assets/asset-metadata.png)
 
-   *그림:자산 속성 페이지에서 메타데이터를 편집하거나   추가합니다.*
+   *그림: 자산 속성 페이지에서 메타데이터를 편집하거나   추가합니다.*
 
 1. 필요에 따라 다양한 탭 아래에서 메타데이터를 편집하고, 완료되면 도구 모음에서 **[!UICONTROL 저장]** 을 클릭하여 변경 사항을 저장합니다. **[!UICONTROL 닫기]** 를 클릭하여 [!DNL Assets] 웹 인터페이스로 돌아갑니다.
 
@@ -110,7 +110,7 @@ XMP Write-back은 [기술 요구 사항에 설명된 플랫폼 및 파일 형식
    | [!UICONTROL 배치 크기] | 메타데이터를 가져올 일괄 처리의 자산 수입니다. 기본값은 50입니다. 최대값은 100입니다. |
    | [!UICONTROL 필드 분리 기호] | 기본값은 `,`(쉼표)입니다. 다른 문자를 지정할 수 있습니다. |
    | [!UICONTROL 다중 값 구분 기호] | 메타데이터 값에 대한 구분자입니다. 기본값은 `|`입니다. |
-   | [!UICONTROL 워크플로우 실행] | 기본적으로 False입니다. `true`(으)로 설정되고 기본 런처 설정이 [!UICONTROL DAM 메타데이터 WriteBack] 워크플로우(이진 XMP 데이터에 메타데이터를 쓰는 경우)에 적용됩니다. 실행 워크플로우를 활성화하면 시스템이 느려집니다. |
+   | [!UICONTROL 워크플로우 실행] | 기본적으로 False입니다. `true`으로 설정되고 [!UICONTROL DAM 메타데이터 WriteBack] 워크플로우에 대한 기본 설정이 적용됩니다(바이너리 XMP 데이터에 메타데이터를 쓰는 경우). 워크플로우를 활성화하면 시스템이 느려집니다. |
    | [!UICONTROL 자산 경로 열 이름] | 자산이 있는 CSV 파일의 열 이름을 정의합니다. |
 
 1. 도구 모음에서 **[!UICONTROL 가져오기]**&#x200B;를 클릭합니다. 메타데이터를 가져온 후에는 [!UICONTROL Notification] 받은 편지함에 알림이 표시됩니다.
@@ -150,7 +150,7 @@ XMP Write-back은 [기술 요구 사항에 설명된 플랫폼 및 파일 형식
 
    ![대량으로 내보낸 메타데이터가 포함된 CSV 파일을 다운로드하는 대화 상자](assets/csv_download.png)
 
-   *그림:대량으로 내보낸 메타데이터가 포함된 CSV 파일을 다운로드하는 대화 상자*
+   *그림: 대량으로 내보낸 메타데이터가 포함된 CSV 파일을 다운로드하는 대화 상자*
 
 ## 컬렉션의 메타데이터 편집 {#collections-metadata}
 
@@ -234,7 +234,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
 >* [여러 컬렉션의 메타데이터 속성 편집](manage-collections.md#editing-collection-metadata-in-bulk)
-* [Experience Manager 자산에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Experience Manager 자산에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.

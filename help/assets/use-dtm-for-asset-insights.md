@@ -3,11 +3,11 @@ title: DTM을 통해 자산 통찰력 활성화
 description: DTM(Adobe Dynamic Tag Management)을 사용하여 자산 통찰력을 활성화하는 방법을 알아봅니다.
 contentOwner: AG
 role: User, Admin
-feature: 자산 통찰력,자산 보고서
+feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: b3acfdba41e1bd94c65bb7a87f63b9c326a80dd2
+source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '647'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Adobe Dynamic Tag Management는 디지털 마케팅 도구를 활성화하는 �
 
 >[!CAUTION]
 >
->Adobe DTM은 [!DNL Adobe Experience Platform Launch]이 더 이상 사용되지 않으며, 곧 [end of life](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)에 도달합니다. Adobe은 [자산 통찰력](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)에 [!DNL Launch] 을 사용할 것을 권장합니다.
+>Adobe DTM은 [!DNL Adobe Experience Platform]이 더 이상 사용되지 않으며, 곧 [end of life](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)에 도달합니다. Adobe은 [자산 통찰력](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)에 [!DNL Adobe Experience Platform] 을 사용할 것을 권장합니다.
 
 다음 단계를 수행하여 DTM을 통해 자산 통찰력을 활성화합니다.
 
@@ -108,7 +108,7 @@ Adobe Dynamic Tag Management는 디지털 마케팅 도구를 활성화하는 �
    ```
 
    * DTM의 페이지 로드 규칙은 `pagetracker.js` 코드만 포함합니다. 모든 `assetAnalytics` 필드는 기본값에 대한 무시로 간주됩니다. 기본적으로 필요하지 않습니다.
-   * 이 코드는 `_satellite.getToolsByType('sc')[0].getS()`이 초기화되고 `assetAnalytics,dispatcher.init`가 사용 가능한지 확인한 후 `assetAnalytics.dispatcher.init()`을 호출합니다. 따라서 11단계에서 추가하지 않아도 됩니다.
+   * 이 코드는 `_satellite.getToolsByType('sc')[0].getS()` 가 초기화되고 `assetAnalytics,dispatcher.init`가 사용 가능한지 확인한 후 `assetAnalytics.dispatcher.init()`을 호출합니다. 따라서 11단계에서 추가하지 않아도 됩니다.
    * 인사이트 페이지 추적기 코드(**[!UICONTROL 도구 > Assets > Insights 페이지 추적기]**) 내의 주석에 표시된 대로, 페이지 추적기에서 `AppMeasurement` 개체를 만들지 않으면 처음 세 개의 인수(RSID, 추적 서버 및 방문자 네임스페이스)는 관련이 없습니다. 대신 빈 문자열이 전달되어 이 강조 표시됩니다.\
       나머지 인수는 인사이트 구성 페이지(**[!UICONTROL 도구 > 자산 > 인사이트 구성]**)에 구성된 것에 해당합니다.
    * AppMeasurement 개체는 사용 가능한 모든 SiteCatalyst 엔진에 대해 `satelliteLib`을 쿼리하여 검색됩니다. 여러 태그가 구성된 경우 배열 선택기의 인덱스를 적절하게 변경합니다. 배열의 항목은 DTM 인터페이스에서 사용할 수 있는 SiteCatalyst 도구에 따라 순서가 지정됩니다.
