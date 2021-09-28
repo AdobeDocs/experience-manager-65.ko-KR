@@ -1,8 +1,8 @@
 ---
 title: 전자 메일 알림 구성
-seo-title: 전자 메일 알림 구성
+seo-title: Configuring Email Notification
 description: AEM에서 이메일 알림을 구성하는 방법을 알아봅니다.
-seo-description: AEM에서 이메일 알림을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 2a866e82a059184ea86f22646e4a20406ad109e8
+source-git-commit: 1ae4e3b898f1d0a27fa72a7d8db01f638d4c6f7a
 workflow-type: tm+mt
-source-wordcount: '2097'
-ht-degree: 1%
+source-wordcount: '2086'
+ht-degree: 2%
 
 ---
 
@@ -35,11 +35,11 @@ AEM에서 다음과 같은 사용자에게 이메일 알림을 보냅니다.
 
 >[!NOTE]
 >
->AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다.자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
+>AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
 
-## 메일 서비스 {#configuring-the-mail-service} 구성
+## 메일 서비스 구성 {#configuring-the-mail-service}
 
-AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200B;를 올바르게 구성해야 합니다. 웹 콘솔에서 구성을 볼 수 있습니다. AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다.자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
+AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200B;를 올바르게 구성해야 합니다. 웹 콘솔에서 구성을 볼 수 있습니다. AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 몇 가지가 있습니다. 자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
 
 다음 제한 사항이 적용됩니다.
 
@@ -56,7 +56,7 @@ AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-## 전자 메일 알림 채널 구성 {#configuring-the-email-notification-channel}
+## 이메일 알림 채널 구성 {#configuring-the-email-notification-channel}
 
 페이지 또는 포럼 이벤트 알림을 구독하면 보낸 메일 주소가 기본적으로 `no-reply@acme.com`(으)로 설정됩니다. 웹 콘솔에서 **알림 이메일 채널** 서비스를 구성하여 이 값을 변경할 수 있습니다.
 
@@ -82,7 +82,7 @@ AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200
 
 1. 파일을 저장합니다.
 
-## 워크플로우 전자 메일 알림 서비스 구성 {#configuring-the-workflow-email-notification-service}
+## 워크플로우 이메일 알림 서비스 구성 {#configuring-the-workflow-email-notification-service}
 
 워크플로우 이메일 알림을 받으면 보낸 사람 이메일 주소와 호스트 URL 접두사가 모두 기본값으로 설정됩니다. 웹 콘솔에서 **일 CQ 워크플로우 이메일 알림 서비스**&#x200B;를 구성하여 이러한 값을 변경할 수 있습니다. 이 경우 리포지토리에서 변경 사항을 유지하는 것이 좋습니다.
 
@@ -94,7 +94,7 @@ AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200
 
 페이지 알림용 이메일 템플릿은 아래에 있습니다.
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 기본 영어 템플릿( `en.txt`)은 다음과 같이 정의됩니다.
 
@@ -121,7 +121,7 @@ This is an automatically generated message. Please do not reply.
 
 1. CRXDE에서 파일을 엽니다.
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. 필요에 따라 파일을 수정합니다.
 1. 변경 사항을 저장합니다.
@@ -150,7 +150,7 @@ This is an automatically generated message. Please do not reply.
 
    PageModified => /content/geometrixx/en/products
 
-### 포럼 알림용 전자 메일 템플릿 {#email-templates-for-forum-notification}
+### 포럼 알림용 이메일 템플릿 {#email-templates-for-forum-notification}
 
 포럼 알림용 이메일 템플릿은 다음 위치에 있습니다.
 
@@ -173,7 +173,7 @@ footer=\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### 포럼 알림에 대한 이메일 템플릿 사용자 정의 {#customizing-email-templates-for-forum-notification}
+#### 포럼 알림용 이메일 템플릿 사용자 정의 {#customizing-email-templates-for-forum-notification}
 
 포럼 알림에 대한 영어 이메일 템플릿을 사용자 지정하려면 다음을 수행하십시오.
 
@@ -205,7 +205,7 @@ This is an automatically generated message. Please do not reply.
 
 워크플로우 알림에 대한 이메일 템플릿(영어)은 다음 위치에 있습니다.
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 다음과 같이 정의됩니다.
 
@@ -234,7 +234,7 @@ This is an automatically generated message. Please do not reply.
 
 1. CRXDE에서 파일을 엽니다.
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. 필요에 따라 파일을 수정합니다.
 1. 변경 사항을 저장합니다.
@@ -254,7 +254,7 @@ subject=<text_1>
 >
 >템플릿 형식에 대한 자세한 내용은 Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) 메서드의 [javadocs에서 찾을 수 있습니다.
 
-`${payload.path.open}` 메서드는 작업 항목의 페이로드에 대한 경로를 표시합니다. 예를 들어 Sites의 페이지에 대해 `payload.path.open`은 `/bin/wcmcommand?cmd=open&path=…`과 비슷합니다.;서버 이름이 없으므로 템플릿에서 `${host.prefix}` 접두사가 붙습니다.
+`${payload.path.open}` 메서드는 작업 항목의 페이로드에 대한 경로를 표시합니다. 예를 들어 Sites의 페이지에 대해 `payload.path.open`은 `/bin/wcmcommand?cmd=open&path=…`과 비슷합니다.; 서버 이름이 없으므로 템플릿에서 `${host.prefix}` 접두사가 붙습니다.
 
 이메일 템플릿 내에서 다음 변수를 사용할 수 있습니다.
 
@@ -284,17 +284,17 @@ subject=<text_1>
 
 * `${payload.type}`, 페이로드 유형
 * `${payload.path}`, 페이로드 경로
-* `${host.prefix}`, 호스트 접두사, 예:http://localhost:4502
+* `${host.prefix}`, 호스트 접두사, 예: http://localhost:4502
 
-### 새 언어 {#adding-an-email-template-for-a-new-language}에 대한 이메일 템플릿 추가
+### 새 언어용 이메일 템플릿 추가 {#adding-an-email-template-for-a-new-language}
 
 새 언어의 템플릿을 추가하려면 다음을 수행합니다.
 
 1. CRXDE에서 아래 `<language-code>.txt` 파일을 추가합니다.
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` :페이지 알림용
-   * `/etc/notification/email/default/com.day.cq.collab.forum` :포럼 알림용
-   * `/etc/workflow/notification/email/default` :워크플로우 알림용
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : 페이지 알림용
+   * `/etc/notification/email/default/com.day.cq.collab.forum` : 포럼 알림용
+   * `/libs/settings/workflow/notification/email/default` : 워크플로우 알림용
 
 1. 언어에 맞게 파일을 조정합니다.
 1. 변경 사항을 저장합니다.
@@ -311,7 +311,7 @@ AEM Assets의 컬렉션이 공유되거나 공유되지 않으면 사용자는 A
 1. 관리자로 AEM에 로그인합니다. **도구** > **작업** > **웹 콘솔**&#x200B;을 클릭하여 웹 콘솔 구성을 엽니다.
 1. **일 CQ DAM 리소스 컬렉션 서블릿**&#x200B;을 편집합니다. **전자 메일 보내기**&#x200B;를 선택합니다. **저장**&#x200B;을 클릭합니다.
 
-## OAuth {#setting-up-oauth} 설정
+## OAuth 설정 {#setting-up-oauth}
 
 AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통합 Mail Service에 대한 OAuth2 지원을 제공합니다.
 
@@ -341,7 +341,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 1. 을(를) 찾은 다음 **일 CQ 메일 서비스**&#x200B;를 클릭합니다.
 1. 다음 설정을 추가합니다.
    * SMTP 서버 호스트 이름: `smtp.gmail.com`
-   * SMTP 서버 포트:요구 사항에 따라 `25` 또는 `587`
+   * SMTP 서버 포트: 요구 사항에 따라 `25` 또는 `587`
    * **SMPT에서 StarTLS** 및 **SMTP에 StarTLS**&#x200B;가 필요함 티켓확인란을 선택합니다.
    * **OAuth 흐름**&#x200B;을 선택하고 **저장**&#x200B;을 클릭합니다.
 
@@ -350,12 +350,12 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 1. `http://serveraddress:serverport/system/console/configMgr`(으)로 이동하여 AEM 웹 콘솔을 엽니다.
 1. 을(를) 찾은 다음 **CQ Mail SMTP OAuth2 공급자**&#x200B;를 클릭합니다.
 1. 다음과 같이 필요한 정보를 입력합니다.
-   * 인증 URL:`https://accounts.google.com/o/oauth2/auth`
-   * 토큰 URL:`https://accounts.google.com/o/oauth2/token`
-   * 범위:`https://www.googleapis.com/auth/gmail.send` 및 `https://mail.google.com/` 구성된 각 범위의 오른쪽에 **+** 단추를 눌러 두 개 이상의 범위를 추가할 수 있습니다.
-   * 클라이언트 ID 및 클라이언트 암호:위의 단락에 설명된 대로 검색한 값으로 이러한 필드를 구성합니다.
+   * 인증 URL: `https://accounts.google.com/o/oauth2/auth`
+   * 토큰 URL: `https://accounts.google.com/o/oauth2/token`
+   * 범위: `https://www.googleapis.com/auth/gmail.send` 및 `https://mail.google.com/` 구성된 각 범위의 오른쪽에 **+** 단추를 눌러 두 개 이상의 범위를 추가할 수 있습니다.
+   * 클라이언트 ID 및 클라이언트 암호: 위의 단락에 설명된 대로 검색한 값으로 이러한 필드를 구성합니다.
    * 새로 고침 토큰 URL: `https://accounts.google.com/o/oauth2/token`
-   * 새로 고침 토큰 만료:절대
+   * 새로 고침 토큰 만료: 절대
 1. **저장**&#x200B;을 클릭합니다.
 
 <!-- clarify refresh token expiry, currrently not present in the UI -->
@@ -366,7 +366,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 
 이제 OAuth 구성 요소를 활성화합니다. 다음을 통해 이 작업을 수행할 수 있습니다.
 
-1. 다음 URL을 방문하여 구성 요소 콘솔로 이동합니다.`http://serveraddress:serverport/system/console/components`
+1. 다음 URL을 방문하여 구성 요소 콘솔로 이동합니다. `http://serveraddress:serverport/system/console/components`
 1. 다음 구성 요소를 찾습니다
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeGenerateServlet`
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
@@ -379,7 +379,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 1. 게시 인스턴스의 주소로 이동하고 관리자로 로그인합니다.
 1. 브라우저에서 새 탭을 열고 `http://serveraddress:serverport/services/mailer/oauth2/authorize`(으)로 이동합니다. 이렇게 하면 SMTP 공급자의 페이지로 리디렉션됩니다(이 경우 Gmail).
 1. 필요한 권한을 부여하는 로그인 및 동의
-1. 동의하면 토큰이 저장소에 저장됩니다. 게시 인스턴스에서 이 URL에 직접 액세스하여 `accessToken` 아래에서 액세스할 수 있습니다.`http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
+1. 동의하면 토큰이 저장소에 저장됩니다. 게시 인스턴스에서 이 URL에 직접 액세스하여 `accessToken` 아래에서 액세스할 수 있습니다. `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
 1. 각 게시 인스턴스에 대해 위의 를 반복합니다
 
 <!-- clarify if the ip/server address in the last procedure is that of the publish instance -->
@@ -410,9 +410,9 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 
 다시 매핑하려면 AEM 측에서 Mail 서비스에 대해 OAuth2를 구성하려면 다음 정보가 필요합니다.
 
-* 테넌트 ID로 빌드되는 인증 URL입니다. 다음 양식이 있습니다.`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* 테넌트 ID로 구성될 토큰 URL입니다. 다음 양식이 있습니다.`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* 테넌트 ID로 빌드되는 새로 고침 URL입니다. 다음 양식이 있습니다.`https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 테넌트 ID로 빌드되는 인증 URL입니다. 다음 양식이 있습니다. `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* 테넌트 ID로 구성될 토큰 URL입니다. 다음 양식이 있습니다. `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* 테넌트 ID로 빌드되는 새로 고침 URL입니다. 다음 양식이 있습니다. `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * 클라이언트 ID
 * 클라이언트 암호
 
@@ -424,23 +424,23 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 1. **일 CQ 메일 서비스**&#x200B;를 찾아 클릭합니다.
 1. 다음 설정을 추가합니다.
    * SMTP 서버 호스트 이름: `smtp.office365.com`
-   * SMTP 사용자:이메일 형식의 사용자 이름
-   * &quot;보낸 사람&quot; 주소:메일러가 보낸 메시지의 &quot;보낸 사람:&quot; 필드에 사용할 전자 메일 주소입니다
-   * SMTP 서버 포트:요구 사항에 따라 `25` 또는 `587`
+   * SMTP 사용자: 이메일 형식의 사용자 이름
+   * &quot;보낸 사람&quot; 주소: 메일러가 보낸 메시지의 &quot;보낸 사람:&quot; 필드에 사용할 전자 메일 주소입니다
+   * SMTP 서버 포트: 요구 사항에 따라 `25` 또는 `587`
    * **SMPT에서 StarTLS** 및 **SMTP에 StarTLS**&#x200B;가 필요함 티켓확인란을 선택합니다.
    * **OAuth 흐름**&#x200B;을 선택하고 **저장**&#x200B;을 클릭합니다.
 1. 을(를) 찾은 다음 **CQ Mail SMTP OAuth2 공급자**&#x200B;를 클릭합니다.
 1. 다음과 같이 필요한 정보를 입력합니다.
    * 인증 URL, 토큰 URL 및 새로 고침 토큰 URL을 이 절차의 끝에 [에 설명된 대로 구성하여 입력합니다.](#microsoft-outlook)
-   * 클라이언트 ID 및 클라이언트 암호:위에서 설명한 대로 검색한 값으로 이러한 필드를 구성합니다.
+   * 클라이언트 ID 및 클라이언트 암호: 위에서 설명한 대로 검색한 값으로 이러한 필드를 구성합니다.
    * 구성에 다음 범위를 추가합니다.
       * openid
       * offline_access
       * `https://outlook.office365.com/Mail.Send`
       * `https://outlook.office365.com/Mail.Read`
       * `https://outlook.office365.com/SMTP.Send`
-   * AuthCode 리디렉션 Url:`http://localhost:4503/services/mailer/oauth2/token`
-   * 새로 고침 토큰 URL:위의 토큰 URL과 동일한 값이 있어야 합니다
+   * AuthCode 리디렉션 Url: `http://localhost:4503/services/mailer/oauth2/token`
+   * 새로 고침 토큰 URL: 위의 토큰 URL과 동일한 값이 있어야 합니다
 1. **저장**&#x200B;을 클릭합니다.
 
 구성이 완료되면 설정은 다음과 같습니다.
@@ -449,7 +449,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 
 이제 OAuth 구성 요소를 활성화합니다. 다음을 통해 이 작업을 수행할 수 있습니다.
 
-1. 다음 URL을 방문하여 구성 요소 콘솔로 이동합니다.`http://serveraddress:serverport/system/console/components`
+1. 다음 URL을 방문하여 구성 요소 콘솔로 이동합니다. `http://serveraddress:serverport/system/console/components`
 1. 다음 구성 요소를 찾습니다
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeGenerateServlet`
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
@@ -462,4 +462,4 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 1. 게시 인스턴스의 주소로 이동하고 관리자로 로그인합니다.
 1. 브라우저에서 새 탭을 열고 `http://serveraddress:serverport/services/mailer/oauth2/authorize`(으)로 이동합니다. 이렇게 하면 SMTP 공급자의 페이지로 리디렉션됩니다(이 경우 Gmail).
 1. 필요한 권한을 부여하는 로그인 및 동의
-1. 동의하면 토큰이 저장소에 저장됩니다. 게시 인스턴스에서 이 URL에 직접 액세스하여 `accessToken` 아래에서 액세스할 수 있습니다.`http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
+1. 동의하면 토큰이 저장소에 저장됩니다. 게시 인스턴스에서 이 URL에 직접 액세스하여 `accessToken` 아래에서 액세스할 수 있습니다. `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
