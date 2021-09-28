@@ -1,8 +1,8 @@
 ---
 title: 캡슐화된 토큰 지원
-seo-title: 캡슐화된 토큰 지원
+seo-title: Encapsulated Token Support
 description: AEM에서 캡슐화된 토큰 지원에 대해 알아봅니다.
-seo-description: AEM에서 캡슐화된 토큰 지원에 대해 알아봅니다.
+seo-description: Learn about the Encapsulated Token support in AEM.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 32e2a30d9f3327d26b81a07730ace04e4e68b0d1
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 게시 인스턴스를 사용할 수 없게 되면 해당 인스턴스에서 인증된 모든 사용자는 세션을 잃게 됩니다. 인증 쿠키의 유효성을 검사하려면 리포지토리 액세스 권한이 필요하기 때문입니다.
 
-## 캡슐화된 토큰 {#stateless-authentication-with-the-encapsulated-token}을 사용하는 상태 비저장 인증
+## 캡슐화된 토큰을 사용한 상태 비저장 인증 {#stateless-authentication-with-the-encapsulated-token}
 
 수평 확장성을 위한 솔루션은 AEM에서 새로운 캡슐화된 토큰 지원을 사용하여 상태를 저장하지 않는 인증입니다.
 
@@ -51,16 +51,14 @@ ht-degree: 0%
 >
 >예를 들어, 캡슐화된 토큰이 작동하는 방식으로 인해 새 사용자가 게시 인스턴스 번호 1에 만들어지는 경우 게시 번호 2에서 성공적으로 인증됩니다. 사용자가 두 번째 게시 인스턴스에 없는 경우 요청이 계속 성공하지 못합니다.
 
-
 ## 캡슐화된 토큰 구성 {#configuring-the-encapsulated-token}
 
 >[!NOTE]
 >사용자를 동기화하고 토큰 인증을 사용하는 모든 인증 핸들러(SAML 및 OAuth 등)는 다음과 같은 경우에만 캡슐화된 토큰과 작동합니다.
 >
 >* 고정 세션이 활성화되거나
-   >
-   >
-* 동기화가 시작될 때 사용자가 AEM에 이미 만들어져 있습니다. 즉, 동기화 프로세스 중에 핸들러 **create** 사용자가 있는 경우에는 캡슐화된 토큰이 지원되지 않습니다.
+>
+>* 동기화가 시작될 때 사용자가 AEM에 이미 만들어져 있습니다. 즉, 동기화 프로세스 중에 핸들러 **create** 사용자가 있는 경우에는 캡슐화된 토큰이 지원되지 않습니다.
 
 
 캡슐화된 토큰을 구성할 때 고려해야 할 몇 가지 사항이 있습니다.
@@ -68,7 +66,7 @@ ht-degree: 0%
 1. 암호화 관련 때문에 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3 이후 주요 자료는 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 이러한 점을 염두에 두고 키를 복제하는 가장 좋은 방법은 키를 복제할 소스 인스턴스의 파일 시스템에서 타겟 인스턴스의 SIS(Server Control Center Server Node Server) 로 키를 복사하는 것입니다. 아래의 &quot;HMAC 키 복제&quot;에서 자세한 내용을 참조하십시오.
 1. 캡슐화된 토큰을 활성화해야 합니다. 이 작업은 웹 콘솔을 통해 수행할 수 있습니다.
 
-### HMAC 키 {#replicating-the-hmac-key} 복제
+### HMAC 키 복제 {#replicating-the-hmac-key}
 
 HMAC 키는 저장소에 `/etc/key` 의 이진 속성으로 있습니다. 옆에 있는 **view** 링크를 눌러 별도로 다운로드할 수 있습니다.
 
@@ -97,10 +95,10 @@ HMAC 키는 저장소에 `/etc/key` 의 이진 속성으로 있습니다. 옆에
 
 1. 키를 복제할 모든 인스턴스에 대해 위의 단계를 반복합니다.
 
-#### 캡슐화된 토큰 {#enabling-the-encapsulated-token} 사용
+#### 캡슐화된 토큰 활성화 {#enabling-the-encapsulated-token}
 
 HMAC 키가 복제되면 웹 콘솔을 통해 캡슐화된 토큰을 활성화할 수 있습니다.
 
 1. 브라우저를 `https://serveraddress:port/system/console/configMgr`으로 보냅니다.
-1. **일 CRX 토큰 인증 핸들러**&#x200B;라는 항목을 찾아서 클릭합니다.
+1. **Adobe Granite 토큰 인증 핸들러**&#x200B;라는 항목을 찾아서 클릭합니다.
 1. 다음 창에서 **캡슐화된 토큰 지원 활성화** 상자를 열고 **Save** 키를 누릅니다.
