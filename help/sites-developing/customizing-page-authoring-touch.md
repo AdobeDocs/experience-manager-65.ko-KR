@@ -1,8 +1,8 @@
 ---
 title: 페이지 작성 사용자 지정
-seo-title: 페이지 작성 사용자 지정
+seo-title: Customizing Page Authoring
 description: AEM에서는 페이지 작성 기능을 사용자 지정할 수 있는 다양한 메커니즘을 제공합니다
-seo-description: AEM에서는 페이지 작성 기능을 사용자 지정할 수 있는 다양한 메커니즘을 제공합니다
+seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
 uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 273836ad0afd6466eac437bf7711e7dbabc1d5e9
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 3%
+source-wordcount: '1383'
+ht-degree: 2%
 
 ---
 
@@ -52,8 +52,7 @@ AEM에서는 작성 인스턴스의 [콘솔](/help/sites-developing/customizing-
 >* [AEM 터치 지원 ](/help/sites-developing/touch-ui-structure.md) UI의 구조 를 참조하십시오.
 
 >
->
-이 항목에서는 [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) 세션 - [AEM 6.0용 사용자 인터페이스 사용자 지정에서도 다룹니다.](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html)
+>이 항목에서는 [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) 세션 - [AEM 6.0용 사용자 인터페이스 사용자 지정에서도 다룹니다.](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html)
 
 >[!CAUTION]
 >
@@ -69,9 +68,9 @@ AEM에서는 작성 인스턴스의 [콘솔](/help/sites-developing/customizing-
 
 ## 새 레이어 추가(모드) {#add-new-layer-mode}
 
-페이지를 편집할 때 다양한 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용할 수 있습니다. 이러한 모드는 [레이어](/help/sites-developing/touch-ui-structure.md#layer)를 사용하여 구현됩니다. 이렇게 하면 동일한 페이지 컨텐츠에 대해 서로 다른 유형의 기능에 액세스할 수 있습니다. 표준 레이어는 다음과 같습니다.편집, 미리 보기, 주석 달기, 개발자 및 타깃팅.
+페이지를 편집할 때 다양한 [모드](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용할 수 있습니다. 이러한 모드는 [레이어](/help/sites-developing/touch-ui-structure.md#layer)를 사용하여 구현됩니다. 이렇게 하면 동일한 페이지 컨텐츠에 대해 서로 다른 유형의 기능에 액세스할 수 있습니다. 표준 레이어는 다음과 같습니다. 편집, 미리 보기, 주석 달기, 개발자 및 타깃팅.
 
-### 레이어 예:Live Copy 상태 {#layer-example-live-copy-status}
+### 레이어 예: Live Copy 상태 {#layer-example-live-copy-status}
 
 표준 AEM 인스턴스는 MSM 레이어를 제공합니다. 이렇게 하면 [다중 사이트 관리](/help/sites-administering/msm.md)와 관련된 데이터에 액세스하고 계층에서 강조 표시됩니다.
 
@@ -160,7 +159,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
          * 속성: `editorType`
 
-            해당 구성 요소에 대해 즉석 편집이 트리거될 때 사용할 인라인 편집기의 유형을 정의합니다.예`text`, `textimage`, `image`, `title`.
+            해당 구성 요소에 대해 즉석 편집이 트리거될 때 사용할 인라인 편집기의 유형을 정의합니다. 예 `text`, `textimage`, `image`, `title`.
 
 1. 편집기의 추가 구성 세부 사항은 필요한 플러그인 구성 세부 사항을 포함하도록 구성을 포함하는 `config` 노드 및 추가 `plugin` 노드를 사용하여 구성할 수 있습니다.
 
@@ -240,9 +239,13 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 * [GitHub에서 aem-authoring-extension-header-backtosites 프로젝트를 엽니다.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * 프로젝트를 [ZIP 파일](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)로 다운로드합니다
 
-## 활성화 요청 워크플로우 사용자 지정 {#customizing-the-request-for-activation-workflow}
+## 활성화 요청 워크플로우 사용자 정의 {#customizing-the-request-for-activation-workflow}
 
-기본 작업 과정 **활성화 요청**&#x200B;은 컨텐츠 작성자에게 적절한 복제 권한이 없을 때 자동으로 트리거됩니다.
+즉시 사용 가능한 워크플로우 **활성화 요청**:
+
+* 컨텐츠 작성자 **에 적절한 복제 권한이 없지만**&#x200B;에 DAM-사용자 및 작성자의&#x200B;**멤버십이 있으면 적절한 메뉴에 자동으로 표시됩니다.**
+
+* 복제 권한이 제거되므로 표시되지 않습니다.
 
 이러한 활성화에서 사용자 지정된 동작을 갖도록 하려면 **활성화 요청** 워크플로우를 오버레이할 수 있습니다.
 
@@ -257,4 +260,4 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. 필요에 따라 [워크플로우 모델](/help/sites-developing/workflows-models.md) 및 관련 구성/스크립트를 업데이트합니다.
-1. 모든 관련 페이지에 대한 적절한 사용자에서 [ `replicate` 작업](/help/sites-administering/security.md#actions)에 대한 권한을 제거합니다.사용자가 페이지를 게시(또는 복제하려고 할 때 이 워크플로우를 기본 작업으로 트리거하도록 합니다.
+1. 모든 관련 페이지에 대한 적절한 사용자에서 [ `replicate` 작업](/help/sites-administering/security.md#actions)에 대한 권한을 제거합니다. 사용자가 페이지를 게시(또는 복제하려고 할 때 이 워크플로우를 기본 작업으로 트리거하도록 합니다.
