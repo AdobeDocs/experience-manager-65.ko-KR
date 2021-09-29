@@ -1,19 +1,19 @@
 ---
 title: 번역 통합 프레임워크 구성
-seo-title: 번역 통합 프레임워크 구성
+seo-title: Configuring the Translation Integration Framework
 description: 번역 통합 프레임워크를 구성하는 방법을 알아봅니다.
-seo-description: 번역 통합 프레임워크를 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure the Translation Integration Framework.
 uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
-feature: 언어 복사
+feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: bed7ffd413c7826cf0e419fa1c31e3d3c325d4b1
+source-git-commit: cadf2e240327ef52ef57f8fb2e911f36fd003852
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1550'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 AEM의 컨텐츠 번역 기능에 대한 개요를 알려면 [다국어 사이트에 대한 컨텐츠 번역](/help/sites-administering/translation.md)을 참조하십시오.
 
-## 번역 서비스 공급자 {#connecting-to-a-translation-service-provider}에 연결
+## 번역 서비스 공급자에 연결 {#connecting-to-a-translation-service-provider}
 
 AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭니다. AEM에는 기본적으로 Microsoft Translator에 연결하는 기능이 포함되어 있습니다.
 다음 번역 공급업체는 번역 프로젝트에 대한 새로운 API를 구현합니다. 통합에 대해 자세히 알아보기 위한 링크:
@@ -38,7 +38,6 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [린고텍](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
@@ -56,7 +55,6 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 >* [AEM 기계 번역](https://www.adobe.com/go/aem-machine-translation-connectors)
 
 >
-
 
 
 커넥터 패키지를 설치한 후 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스를 사용하여 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft Translator 커넥터에 대한 클라우드 구성 추가에 대한 자세한 내용은 [Microsoft Translator와 통합](/help/sites-administering/tc-msconf.md)을 참조하십시오.
@@ -98,9 +96,9 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
    <td>번역 워크플로</td>
    <td><p>사이트 컨텐츠에 대해 프레임워크에서 수행하는 번역 방법을 선택합니다.</p>
     <ul>
-     <li>기계 번역:번역 제공자는 기계 번역을 실시간으로 이용하여 번역을 수행한다.</li>
-     <li>인간 번역:번역자가 번역하기 위해 콘텐츠가 번역 공급자에게 전송됩니다. </li>
-     <li>번역하지 않음:컨텐츠를 번역하도록 전송되지 않습니다. 이는 번역되지 않지만 최신 콘텐츠로 업데이트할 수 있는 특정 콘텐츠 분기를 건너리기 위한 것입니다.</li>
+     <li>기계 번역: 번역 제공자는 기계 번역을 실시간으로 이용하여 번역을 수행한다.</li>
+     <li>인간 번역: 번역자가 번역하기 위해 콘텐츠가 번역 공급자에게 전송됩니다. </li>
+     <li>번역하지 않음: 컨텐츠를 번역하도록 전송되지 않습니다. 이는 번역되지 않지만 최신 콘텐츠로 업데이트할 수 있는 특정 콘텐츠 분기를 건너리기 위한 것입니다.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -119,9 +117,9 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
    <td>페이지 자산 번역</td>
    <td><p>파일 시스템에서 구성 요소에 추가되거나 자산에서 참조되는 자산을 변환하는 방법을 선택합니다.</p>
     <ul>
-     <li>번역하지 않음:페이지 자산은 번역되지 않습니다.</li>
-     <li>사이트 번역 워크플로우 사용:자산은 사이트 탭의 구성 속성에 따라 처리됩니다.</li>
-     <li>자산 번역 워크플로우 사용:자산은 자산 탭에 있는 속성의 구성에 따라 처리됩니다.</li>
+     <li>번역하지 않음: 페이지 자산은 번역되지 않습니다.</li>
+     <li>사이트 번역 워크플로우 사용: 자산은 사이트 탭의 구성 속성에 따라 처리됩니다.</li>
+     <li>자산 번역 워크플로우 사용: 자산은 자산 탭에 있는 속성의 구성에 따라 처리됩니다.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -155,9 +153,9 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
    <td>번역 워크플로</td>
    <td><p>자산에 대해 프레임워크에서 수행하는 번역 유형을 선택합니다.</p>
     <ul>
-     <li>기계 번역:번역 공급자는 기계 번역을 사용하여 즉시 번역을 수행합니다.</li>
-     <li>인간 번역:컨텐츠를 수동으로 번역하려면 번역 공급자에게 자동으로 전송됩니다. </li>
-     <li>번역하지 않음:자산은 번역을 위해 전송되지 않습니다.</li>
+     <li>기계 번역: 번역 공급자는 기계 번역을 사용하여 즉시 번역을 수행합니다.</li>
+     <li>인간 번역: 컨텐츠를 수동으로 번역하려면 번역 공급자에게 자동으로 전송됩니다. </li>
+     <li>번역하지 않음: 자산은 번역을 위해 전송되지 않습니다.</li>
     </ul> </td>
   </tr>
   <tr>
