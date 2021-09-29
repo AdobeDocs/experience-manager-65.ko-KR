@@ -1,8 +1,8 @@
 ---
 title: Oak 쿼리 및 색인 지정
-seo-title: Oak 쿼리 및 색인 지정
+seo-title: Oak Queries and Indexing
 description: AEM에서 인덱스를 구성하는 방법을 알아봅니다.
-seo-description: AEM에서 인덱스를 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure indexes in AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,11 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
-feature: 구성
+feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7cd4b6918a8b0de68f9f5c6a79ab3b49e8ef6fc1
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2868'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Apache Oak 기반 백엔드를 사용하면 다양한 인덱서를 리포지토�
 >
 >대규모 저장소의 경우 인덱스를 만드는 작업은 시간이 많이 걸립니다. 인덱스를 처음 만들고 다시 인덱싱(정의를 변경한 후 인덱스를 다시 구축)에 대해 모두 적용됩니다. [Oak 색인 문제 해결](/help/sites-deploying/troubleshooting-oak-indexes.md) 및 [느린 재인덱싱 방지](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing)를 참조하십시오.
 
-매우 큰 저장소에서 재색인화가 필요한 경우, 특히 MongoDB를 사용하고 전체 텍스트 인덱스에 대해 재색인화가 필요한 경우 텍스트 사전 추출을 고려하고 oak-run을 사용하여 초기 색인을 작성하고 다시 색인화합니다.
+매우 큰 저장소에서 재색인화가 필요한 경우, 특히 MongoDB를 사용하고 전체 텍스트 인덱스의 경우 텍스트 사전 추출을 고려하고 oak-run을 사용하여 초기 인덱스를 작성하고 다시 색인화합니다.
 
 인덱스는 **oak:index** 노드 아래에 있는 저장소의 노드로 구성됩니다.
 
@@ -101,9 +101,9 @@ Apache Oak 기반 백엔드를 사용하면 다양한 인덱서를 리포지토�
 * **unique** 플래그는 **true**&#x200B;로 설정된 경우 속성 인덱스에 고유성 제약 조건을 추가합니다.
 
 * **progingNodeTypes** 속성을 사용하면 색인이 적용될 특정 노드 유형을 지정할 수 있습니다.
-* **reindex** 플래그를 **true**&#x200B;로 설정하면 전체 컨텐츠 재색인이 트리거됩니다.
+* **reindex** 플래그를 **true**&#x200B;로 설정하면 전체 컨텐츠의 재색인이 트리거됩니다.
 
-### 순서가 지정된 인덱스 {#the-ordered-index}
+### 순차 인덱스 {#the-ordered-index}
 
 Ordered 색인은 속성 인덱스의 확장입니다. 하지만 더 이상 사용되지 않습니다. 이 유형의 인덱스는 [Lucene 속성 인덱스](#the-lucene-property-index)로 대체해야 합니다.
 
@@ -115,7 +115,7 @@ AEM 6에서는 Apache Lucene을 기반으로 하는 전체 텍스트 인덱서�
 
 전체 텍스트 인덱스를 구성하지 않으면 전체 텍스트 조건이 있는 쿼리가 예상대로 작동하지 않습니다.
 
-인덱스가 비동기 배경 스레드를 통해 업데이트되므로 백그라운드 프로세스가 완료될 때까지 작은 기간 동안 일부 전체 텍스트 검색을 사용할 수 없습니다.
+인덱스가 비동기 백그라운드 스레드를 통해 업데이트되므로 백그라운드 프로세스가 완료될 때까지 작은 기간 동안 일부 전체 텍스트 검색을 사용할 수 없습니다.
 
 아래 절차에 따라 Lucene 전체 텍스트 인덱스를 구성할 수 있습니다.
 
@@ -157,19 +157,19 @@ select * from [nt:base] where [alias] = '/admin'
 
 * **유형:**
 
-   ```
+   ```xml
    lucene (of type String)
    ```
 
 * **비동기:**
 
-   ```
+   ```xml
    async (of type String)
    ```
 
 * **fulltextEnabled:**
 
-   ```
+   ```xml
    false (of type Boolean)
    ```
 
@@ -228,7 +228,7 @@ select * from [nt:base] where [alias] = '/admin'
    * **이름:** `stopwords`
    * **유형:** `nt:file`
 
-#### 컴포지션 {#creating-analyzers-via-composition}을 통해 분석기 만들기
+#### 컴포지션을 통해 분석기 만들기 {#creating-analyzers-via-composition}
 
 또한 분석기는 `Tokenizers`, `TokenFilters` 및 `CharFilters`를 기반으로 구성할 수 있습니다. 분석기를 지정하고 나열된 순서로 적용할 선택적 토큰기 및 필터의 하위 노드를 만들어 이 작업을 수행할 수 있습니다. [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)도 참조하십시오.
 
@@ -290,7 +290,7 @@ AEM의 통합은 저장소 수준에서 진행되므로 Solr이 AEM과 함께 �
 
 AEM 인스턴스가 포함된 서버로 또는 원격 서버로 작동하도록 구성할 수 있습니다.
 
-### 포함된 Solr 서버 {#configuring-aem-with-an-embedded-solr-server}로 AEM 구성
+### 포함된 Solr 서버를 사용하여 AEM 구성 {#configuring-aem-with-an-embedded-solr-server}
 
 >[!CAUTION]
 >
@@ -319,12 +319,12 @@ AEM은 웹 콘솔을 통해 구성할 수 있는 포함된 Solr 서버와 함께
 
 1. 변경 사항을 저장합니다.
 
-### 단일 원격 서버 {#configuring-aem-with-a-single-remote-solr-server}로 AEM 구성
+### 단일 원격 솔루션 서버로 AEM 구성 {#configuring-aem-with-a-single-remote-solr-server}
 
 원격 Solr 서버 인스턴스에서 작동하도록 AEM을 구성할 수도 있습니다.
 
 1. 최신 버전의 Solr를 다운로드하여 추출합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Apache Solr 설치 설명서](https://cwiki.apache.org/confluence/display/solr/Installing+Solr)를 참조하십시오.
-1. 이제 두 개의 Solr 섀드를 만듭니다. 이렇게 하려면 Solr이 업로드된 폴더의 각 공유된 폴더에 폴더를 만들면 됩니다.
+1. 이제 두 개의 Solr 섀드를 만듭니다. 이렇게 하려면 Solr이 압축을 푼 폴더에서 각 공유 폴더에 대해 폴더를 만들면 됩니다.
 
    * 첫 번째 공유의 경우 폴더를 만듭니다.
 
@@ -369,7 +369,7 @@ AEM은 웹 콘솔을 통해 구성할 수 있는 포함된 Solr 서버와 함께
 1. AEM을 시작하고 `http://localhost:4502/system/console/configMgr`에 있는 웹 콘솔로 이동합니다.
 1. **Oak Solr 원격 서버 구성**&#x200B;에서 다음 구성을 설정합니다.
 
-   * 솔루션 HTTP URL:`http://localhost:8983/solr/`
+   * 솔루션 HTTP URL: `http://localhost:8983/solr/`
 
 1. **Oak Solr** 서버 공급자 아래의 드롭다운 목록에서 **원격 솔루션**&#x200B;을(를) 선택합니다.
 
@@ -382,7 +382,7 @@ AEM은 웹 콘솔을 통해 구성할 수 있는 포함된 Solr 서버와 함께
 
 1. 변경 사항을 저장합니다.
 
-#### Solr {#recommended-configuration-for-solr}에 대한 권장 구성
+#### 솔루션에 대한 권장 구성 {#recommended-configuration-for-solr}
 
 다음은 이 문서에 설명된 세 가지 솔루션 배포와 함께 사용할 수 있는 기본 구성의 예입니다. AEM에 이미 있는 전용 속성 인덱스를 수용하며 다른 응용 프로그램과 함께 사용해서는 안 됩니다.
 
@@ -403,7 +403,7 @@ AEM 6.1은 또한 AEM 6.0에 있는 두 개의 색인 도구를 Adobe Consulting
 
 사용 방법에 대한 자세한 내용은 [작업 대시보드 설명서](/help/sites-administering/operations-dashboard.md)를 참조하십시오.
 
-#### OSGi {#creating-property-indexes-via-osgi}을 통해 속성 인덱스 만들기
+#### OSGi를 통해 속성 인덱스 만들기 {#creating-property-indexes-via-osgi}
 
 또한 ACS Commons 패키지는 속성 인덱스를 만드는 데 사용할 수 있는 OSGi 구성을 노출합니다.
 
@@ -411,13 +411,13 @@ AEM 6.1은 또한 AEM 6.0에 있는 두 개의 색인 도구를 Adobe Consulting
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
-### 인덱싱 문제 해결 {#troubleshooting-indexing-issues}
+### 색인 문제 해결 {#troubleshooting-indexing-issues}
 
 쿼리가 실행되는 데 시간이 오래 걸리고 일반 시스템 응답 시간이 느린 경우 상황이 발생할 수 있습니다.
 
 이 섹션에서는 이러한 문제의 원인을 추적하고 이를 해결하는 방법에 대한 조언을 얻기 위해 수행해야 하는 작업에 대한 일련의 권장 사항을 제공합니다.
 
-#### 분석을 위한 디버깅 정보 준비 중 {#preparing-debugging-info-for-analysis}
+#### 분석을 위한 디버깅 정보 준비 {#preparing-debugging-info-for-analysis}
 
 실행 중인 쿼리에 필요한 정보를 가져오는 가장 쉬운 방법은 [쿼리 설명 도구](/help/sites-administering/operations-dashboard.md#explain-query)를 사용하는 것입니다. 이렇게 하면 로그 수준 정보를 참조하지 않고도 느린 쿼리를 디버깅하는 데 필요한 정확한 정보를 수집할 수 있습니다. 디버깅 중인 쿼리를 알고 있는 경우에는 이 작업이 좋습니다.
 
@@ -487,4 +487,4 @@ AEM 6.1은 또한 AEM 6.0에 있는 두 개의 색인 도구를 Adobe Consulting
 다음과 같이 문제를 해결하는 데 도움이 되도록 추가 세부 정보를 수집할 수 있습니다.
 
 1. 인스턴스가 실행 중인 Oak 버전입니다. CRXDE를 열고 시작 페이지의 오른쪽 아래 모서리에 있는 버전을 확인하거나 `org.apache.jackrabbit.oak-core` 번들의 버전을 선택하여 이 버전을 확인할 수 있습니다.
-1. 문제 쿼리의 QueryBuilder 디버거 출력입니다. 디버거는 다음 위치에서 액세스할 수 있습니다.`https://serveraddress:port/libs/cq/search/content/querydebug.html`
+1. 문제 쿼리의 QueryBuilder 디버거 출력입니다. 디버거는 다음 위치에서 액세스할 수 있습니다. `https://serveraddress:port/libs/cq/search/content/querydebug.html`
