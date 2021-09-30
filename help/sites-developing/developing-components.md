@@ -1,8 +1,8 @@
 ---
 title: AEM 구성 요소 개발
-seo-title: AEM 구성 요소 개발
+seo-title: Developing AEM Components
 description: AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저장, 포맷 및 렌더링하는 데 사용됩니다.
-seo-description: AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저장, 포맷 및 렌더링하는 데 사용됩니다.
+seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 uuid: 1f39daa6-7277-45a2-adcc-74b58c93b8e4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: f2a208acfa28f23cbf63d055c5d28698df476892
 workflow-type: tm+mt
-source-wordcount: '3533'
-ht-degree: 1%
+source-wordcount: '3485'
+ht-degree: 2%
 
 ---
 
@@ -75,13 +75,13 @@ AEM 구성 요소는 웹 페이지에서 사용할 수 있는 컨텐츠를 저�
 
 자세한 내용은 [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)를 참조하십시오.
 
-## 마크업 {#defining-the-markup} 정의
+## 마크업 정의 {#defining-the-markup}
 
 구성 요소가 [HTML](https://www.w3schools.com/htmL/html_intro.asp)로 렌더링됩니다. 구성 요소는 필요한 컨텐츠를 가져온 다음 작성 환경과 게시 환경 모두에서 필요에 따라 렌더링하는 데 필요한 HTML을 정의해야 합니다.
 
-### HTML 템플릿 언어 사용 {#using-the-html-template-language}
+### HTML Template Language 사용 {#using-the-html-template-language}
 
-AEM 6.0에서 도입된 [HTML 템플릿 언어 (HTL)](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)는 HTML의 서버측 템플릿 시스템으로 JSP(Java 서버 페이지) 대신 선호되고 권장됩니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTL을 사용하면 보안 및 개발 효율성이 향상됩니다.
+AEM 6.0에서 도입된 [HTML 템플릿 언어 (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)는 HTML의 서버측 템플릿 시스템으로 JSP(Java 서버 페이지) 대신 선호되고 권장됩니다. 강력한 엔터프라이즈 웹 사이트를 구축해야 하는 웹 개발자의 경우 HTL을 사용하면 보안 및 개발 효율성이 향상됩니다.
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ AEM 6.0에서 도입된 [HTML 템플릿 언어 (HTL)](https://docs.adobe.com/con
 
 논리를 모양과 구분하기 위한 메커니즘은 주어진 보기에 대해 라는 것을 명확히 하는 데 도움이 됩니다. 또한 동일한 리소스의 다른 보기에 대해 다른 논리를 사용할 수도 있습니다.
 
-### Java {#using-java} 사용
+### Java 사용 {#using-java}
 
 [HTL Java Use-API를 사용하면 HTL 파일이 사용자 지정 Java 클래스의 보조 메서드에 액세스하도록 설정할 수 있습니다](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html). 구성 요소 컨텐츠를 선택하고 구성하는 로직을 구현하는 데 Java 코드를 사용할 수 있습니다.
 
@@ -131,11 +131,9 @@ WCM 모드에 민감한 렌더링을 사용하는 구성 요소의 경우 특별
 
 ### Coral UI 및 Granite UI {#coral-ui-and-granite-ui}
 
-[Coral ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) UI 및  [Granite ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) UI는 AEM의 최신 모양과 느낌을 정의합니다.
+[Coral ](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) UI 및  [Granite ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) UI는 AEM의 최신 모양과 느낌을 정의합니다.
 
 [Granite UI는 작성 환경에서 대화 상자를 만드는 데 ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) 필요한 다양한 기본 구성 요소(위젯)를 제공합니다. 필요한 경우 이 선택 항목을 확장하고 [고유한 위젯](#creatinganewwidget)을 만들 수 있습니다.
-
-Coral 및 Granite 리소스 유형을 사용하는 구성 요소 개발에 대한 자세한 내용은 다음을 참조하십시오.[Coral/Granite 리소스 유형을 사용하여 Experience Manager 구성 요소를 빌드합니다](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html).
 
 자세한 내용은 다음을 참조하십시오.
 
@@ -206,7 +204,6 @@ newComponent (cq:Component)
 >
 
 
-
 #### 새 필드 만들기 {#creating-a-new-field}
 
 터치 지원 UI에 대한 위젯은 Granite UI 구성 요소로 구현됩니다.
@@ -217,7 +214,7 @@ newComponent (cq:Component)
 >
 >Granite UI에 대한 자세한 내용은 [Granite UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)를 참조하십시오.
 
-대화 상자를 양식 요소의 단순 컨테이너로 간주하는 경우 대화 상자 컨텐츠의 기본 컨텐츠를 양식 필드로 볼 수도 있습니다. 새 양식 필드를 만들려면 리소스 유형을 만들어야 합니다.이는 새 구성 요소를 만드는 것과 같습니다. 해당 작업을 지원하기 위해 Granite UI는 상속할 일반 필드 구성 요소를 제공합니다(`sling:resourceSuperType` 사용).
+대화 상자를 양식 요소의 단순 컨테이너로 간주하는 경우 대화 상자 컨텐츠의 기본 컨텐츠를 양식 필드로 볼 수도 있습니다. 새 양식 필드를 만들려면 리소스 유형을 만들어야 합니다. 이는 새 구성 요소를 만드는 것과 같습니다. 해당 작업을 지원하기 위해 Granite UI는 상속할 일반 필드 구성 요소를 제공합니다(`sling:resourceSuperType` 사용).
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -243,7 +240,7 @@ newComponent (cq:Component)
 
    * [코드 샘플](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)에서 제공
 
-#### 필드 {#extending-inheriting-from-a-field}을 확장(상속함)
+#### 필드 확장(상속됨) {#extending-inheriting-from-a-field}
 
 요구 사항에 따라 다음 중 하나를 수행할 수 있습니다.
 
@@ -252,7 +249,7 @@ newComponent (cq:Component)
 
 #### 대화 상자 필드에 액세스 {#access-to-dialog-fields}
 
-또한 렌더링 조건( `rendercondition`)을 사용하여 대화 상자의 특정 탭/필드에 액세스할 수 있는 사용자를 제어할 수도 있습니다.예:
+또한 렌더링 조건( `rendercondition`)을 사용하여 대화 상자의 특정 탭/필드에 액세스할 수 있는 사용자를 제어할 수도 있습니다. 예:
 
 ```xml
 + mybutton
@@ -273,7 +270,7 @@ newComponent (cq:Component)
 1. 필드를 주어진 CSS 클래스( *hook*)로 표시하십시오.
 1. 클라이언트 라이브러리에서 해당 CSS 클래스 이름에 연결된 JS 리스너를 정의합니다. 이렇게 하면 사용자 지정 논리 범위가 필드에만 적용되며 동일한 유형의 다른 필드에 영향을 주지 않습니다.
 
-이를 위해서는 상호 작용할 기본 위젯 라이브러리에 대해 알고 있어야 합니다. 응답할 이벤트를 식별하려면 [Coral UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 를 참조하십시오. 이는 이전에 ExtJS를 사용하여 수행해야 했던 프로세스와 매우 유사합니다.주어진 위젯의 설명서 페이지를 찾은 다음 해당 이벤트 API의 세부 사항을 확인합니다.
+이를 위해서는 상호 작용할 기본 위젯 라이브러리에 대해 알고 있어야 합니다. 응답할 이벤트를 식별하려면 [Coral UI 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 를 참조하십시오. 이는 이전에 ExtJS를 사용하여 수행해야 했던 프로세스와 매우 유사합니다. 주어진 위젯의 설명서 페이지를 찾은 다음 해당 이벤트 API의 세부 사항을 확인합니다.
 
 예를 보려면 다음을 참조하십시오.
 
@@ -281,13 +278,13 @@ newComponent (cq:Component)
 
    * [코드 샘플](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)에서 제공
 
-#### 컨텐츠 구조 {#listeners-in-the-content-structure} 의 리스너
+#### 컨텐츠 구조의 청취자 {#listeners-in-the-content-structure}
 
 ExtJS를 사용하는 클래식 UI에서는 콘텐츠 구조에 주어진 위젯의 리스너를 갖는 것이 일반적이었습니다. 터치 활성화 UI에서 동일하게 구현하는 것은 JS 리스너 코드(또는 모든 코드)가 더 이상 컨텐츠에 정의되지 않은 것과 다릅니다.
 
-컨텐츠 구조는 시맨틱 구조를 설명합니다.기본 위젯의 특성을 의미해서는 안 됩니다(반드시). 컨텐츠 구조에 JS 코드가 없으므로 컨텐츠 구조를 변경하지 않고도 구현 세부 사항을 변경할 수 있습니다. 즉, 컨텐츠 구조를 터치하지 않고 위젯 라이브러리를 변경할 수 있습니다.
+컨텐츠 구조는 시맨틱 구조를 설명합니다. 기본 위젯의 특성을 의미해서는 안 됩니다(반드시). 컨텐츠 구조에 JS 코드가 없으므로 컨텐츠 구조를 변경하지 않고도 구현 세부 사항을 변경할 수 있습니다. 즉, 컨텐츠 구조를 터치하지 않고 위젯 라이브러리를 변경할 수 있습니다.
 
-#### 대화 상자 {#dialog-ready} 가용성 검색
+#### 대화 상자의 가용성 검색 {#dialog-ready}
 
 대화 상자를 사용할 수 있고 준비할 때만 실행해야 하는 사용자 지정 JavaScript가 있는 경우 `dialog-ready` 이벤트를 수신해야 합니다.
 
@@ -328,7 +325,7 @@ Granite UI 및 Granite UI 구성 요소(위젯과 같음)의 필드 유효성 �
 
 이 정의는 컨텐츠](#creating-a-new-dialog)를 편집하는 데 사용되는 [ 대화 상자의 정의와 매우 유사하며, 노드로 정의된 차이도 있습니다.
 
-* 노드 이름:`cq:design_dialog`
+* 노드 이름: `cq:design_dialog`
 * 유형: `nt:unstructured`
 
 ## 즉석 편집기 만들기 및 구성 {#creating-and-configuring-an-inplace-editor}
@@ -339,7 +336,7 @@ Granite UI 및 Granite UI 구성 요소(위젯과 같음)의 필드 유효성 �
 
 자세한 내용은 [페이지 작성 확장 - 새 즉석 편집기 추가](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor)를 참조하십시오.
 
-## 구성 요소 도구 모음 {#customizing-the-component-toolbar} 사용자 정의
+## 구성 요소 도구 모음 사용자 지정 {#customizing-the-component-toolbar}
 
 [구성 요소 도구 모음](/help/sites-developing/touch-ui-structure.md#component-toolbar)은 사용자가 편집, 구성, 복사 및 삭제와 같은 구성 요소에 대한 다양한 작업에 액세스할 수 있도록 합니다.
 
@@ -357,7 +354,7 @@ Granite UI 및 Granite UI 구성 요소(위젯과 같음)의 필드 유효성 �
 
 >[!NOTE]
 >
->AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다.자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
+>AEM을 사용하여 작업하는 경우 이러한 서비스에 대한 구성 설정을 관리하는 방법에는 여러 가지가 있습니다. 자세한 내용 및 권장 방법은 [OSGi](/help/sites-deploying/configuring-osgi.md) 구성 을 참조하십시오.
 
 ## 단락 시스템에 구성 요소 활성화 및 추가 {#enabling-and-adding-your-component-to-the-paragraph-system}
 
@@ -368,7 +365,7 @@ Granite UI 및 Granite UI 구성 요소(위젯과 같음)의 필드 유효성 �
 * 특정 페이지를 편집할 때 [디자인 모드](/help/sites-authoring/default-components-designmode.md) 사용
 * [템플릿 `components` 의 단락 시스템에서 속성 정의](/help/sites-developing/components-basics.md#adding-your-component-to-the-paragraph-system).
 
-## 단락 시스템 구성 및 자산 드래그를 통한 구성 요소 인스턴스 {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
+## 단락 시스템 구성 및 자산 드래그를 통한 구성 요소 인스턴스 생성 {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
 AEM에서는 사용자가 (적절한) 자산을 해당 페이지](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) 인스턴스에 드래그할 때 새 구성 요소의 인스턴스가 자동으로 생성되도록 페이지에서 단락 시스템을 구성할 수 있는 기능을 제공합니다(항상 빈 구성 요소를 페이지로 드래그하지 않아도 됨).[
 
@@ -391,7 +388,7 @@ AEM에서는 사용자가 (적절한) 자산을 해당 페이지](/help/sites-au
 
 1. 각 자산-구성 요소 매핑에 대해 노드를 만듭니다.
 
-   * 이름:text;이름은 자산 및 관련 구성 요소 유형을 나타내는 것이 좋습니다.예: 이미지
+   * 이름: text; 이름은 자산 및 관련 구성 요소 유형을 나타내는 것이 좋습니다. 예: 이미지
    * 유형: `nt:unstructured`
 
    각각 다음 속성을 사용합니다.
@@ -399,23 +396,23 @@ AEM에서는 사용자가 (적절한) 자산을 해당 페이지](/help/sites-au
    * `assetGroup`:
 
       * 유형: `String`
-      * 값:관련 자산이 속한 그룹;예: `media`
+      * 값: 관련 자산이 속한 그룹; 예: `media`
    * `assetMimetype`:
 
       * 유형: `String`
-      * 값:관련 자산의 mime 유형;예: `image/*`
+      * 값: 관련 자산의 mime 유형; 예: `image/*`
    * `droptarget`:
 
       * 유형: `String`
-      * 값:드롭 대상;예: `image`
+      * 값: 드롭 대상; 예: `image`
    * `resourceType`:
 
       * 유형: `String`
-      * 값:관련 구성 요소 리소스예: `foundation/components/image`
+      * 값: 관련 구성 요소 리소스 예: `foundation/components/image`
    * `type`:
 
       * 유형: `String`
-      * 값:유형(예: `Images`)
+      * 값: 유형(예: `Images`)
 
 
 
@@ -437,7 +434,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 
 >[!NOTE]
 >
->이제 [코어 구성 요소](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html) 및 편집 가능한 템플릿을 사용할 때 UI 내에서 구성 요소 인스턴스 자동 만들기를 쉽게 구성할 수 있습니다. 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 를 참조하십시오.
+>이제 [코어 구성 요소](https://docs.adobe.com/content/help/ko/experience-manager-core-components/using/introduction.html) 및 편집 가능한 템플릿을 사용할 때 UI 내에서 구성 요소 인스턴스 자동 만들기를 쉽게 구성할 수 있습니다. 지정된 미디어 유형과 자동으로 연결되는 구성 요소를 정의하는 방법에 대한 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 를 참조하십시오.
 
 ## AEM Brackets 확장 사용 {#using-the-aem-brackets-extension}
 
@@ -452,7 +449,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
 >
 >브래킷은 구성 요소를 만드는 데 권장되는 메커니즘입니다. 클래식 UI용으로 설계된 CRXDE Lite - 구성 요소 만들기 기능을 대체합니다.
 
-## 클래식 구성 요소 {#migrating-from-a-classic-component}에서 마이그레이션
+## 클래식 구성 요소에서 마이그레이션 {#migrating-from-a-classic-component}
 
 클래식 UI와 함께 사용하도록 디자인된 구성 요소를 터치 지원 UI와 함께 사용할 수 있는 구성 요소로 마이그레이션할 때 다음 문제를 고려해야 합니다.
 
@@ -475,7 +472,7 @@ GitHub에서 이 페이지의 코드를 찾을 수 있습니다
    * 유형에서 [Granite UI 유효성 검사](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)로 마이그레이션
    * JS 리스너를 사용하여 자세한 내용은 [필드 이벤트 처리](#handling-field-events) 및 [대화 상자 필드 사용자 지정](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)의 AEM Gems 세션을 참조하십시오.
 
-### cq:listener 코드 {#migrating-cq-listener-code} 마이그레이션
+### cq:listener 코드 마이그레이션 {#migrating-cq-listener-code}
 
 클래식 UI용으로 설계된 프로젝트를 마이그레이션하는 경우 `cq:listener` 코드(및 구성 요소 관련 clientlibs)는 클래식 UI(예: `CQ.wcm.*`)에 고유한 함수를 사용할 수 있습니다. 마이그레이션의 경우 터치 지원 UI에서 해당 개체/함수를 사용하여 해당 코드를 업데이트해야 합니다.
 
@@ -493,7 +490,7 @@ if (Granite.author) {
 }
 ```
 
-## 구성 요소 {#documenting-your-component} 문서화
+## 구성 요소 문서화 {#documenting-your-component}
 
 개발자는 구성 요소 설명서에 쉽게 액세스하여 다음 사항을 빠르게 이해할 수 있도록 해야 합니다.
 
