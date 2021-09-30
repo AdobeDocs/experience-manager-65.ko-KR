@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 0a4c27432e4005fa3999f7c6a776ef51b10d9746
+source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1591'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] 는 두 개의 별도 오퍼로 제공됩니다. [Adobe ](https://www.adobe.com/products/indesign.html) 인쇄 및 디지털 배포용 페이지 레이아웃을 디자인하는 데 사용되는 InDesign 데스크탑 앱입니다. [Adobe InDesign ](https://www.adobe.com/products/indesignserver.html) Services를 사용하면 만든 항목을 기반으로 프로그래밍 방식으로 자동화된 문서를 만들 수  [!DNL InDesign]있습니다. 이 스크립트는 [ExtendScript](https://www.adobe.com/devnet/scripting.html) 엔진에 인터페이스를 제공하는 서비스로 작동합니다.스크립트는 [!DNL JavaScript]와 비슷한 [!DNL ExtendScript]에 작성됩니다. [!DNL InDesign] 스크립트에 대한 자세한 내용은 [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)를 참조하십시오.
+>[!DNL Adobe InDesign] 는 두 개의 별도 오퍼로 제공됩니다. [Adobe ](https://www.adobe.com/products/indesign.html) 인쇄 및 디지털 배포용 페이지 레이아웃을 디자인하는 데 사용되는 InDesign 데스크탑 앱입니다. [Adobe InDesign ](https://www.adobe.com/products/indesignserver.html) Services를 사용하면 만든 항목을 기반으로 프로그래밍 방식으로 자동화된 문서를 만들 수  [!DNL InDesign]있습니다. 이 스크립트는 [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) 엔진에 인터페이스를 제공하는 서비스로 작동합니다.스크립트는 [!DNL JavaScript]와 비슷한 [!DNL ExtendScript]에 작성됩니다. [!DNL InDesign] 스크립트에 대한 자세한 내용은 [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)를 참조하십시오.
 
 ## 추출 작동 방식 {#how-the-extraction-works}
 
