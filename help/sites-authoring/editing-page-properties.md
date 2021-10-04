@@ -1,8 +1,8 @@
 ---
 title: 페이지 속성 편집
-seo-title: 페이지 속성 편집
+seo-title: Editing Page Properties
 description: 페이지의 필수 속성 정의
-seo-description: 페이지의 필수 속성 정의
+seo-description: Define the required properties for a page
 uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 85%
+source-wordcount: '1898'
+ht-degree: 82%
 
 ---
 
@@ -131,13 +131,10 @@ ht-degree: 85%
 
    이 페이지에 사용할 별칭을 지정합니다.
 
-   >[!NOTE]
-   >
-   >별칭은 리소스의 별칭 이름을 정의하기 위해 `sling:alias` 속성을 설정합니다. 이 이름은 경로에는 영향을 주지 않고 리소스에만 영향을 줍니다.
-   >
-   >예를 들어 `/content/we-retail/spanish` 노드에 대해 `latin-lang`이라는 별칭을 정의하면, 이 페이지는 `/content/we-retail/latin-language`를 통해 액세스할 수 있습니다.
-   >
-   >자세한 내용은 SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md#localized-page-names)에서 현지화된 페이지 이름 을 참조하십시오.[
+   * 예를 들어 `/content/wknd/us/en/magazine/members-only` 페이지에 대해 `private` 별칭을 정의하면, 이 페이지는 `/content/wknd/us/en/magazine/private` 를 통해 액세스할 수도 있습니다
+   * 별칭을 만들면 저장소 경로가 아니라 리소스에만 영향을 주는 페이지 노드에 `sling:alias` 속성을 설정합니다.
+   * 편집기에서 별칭으로 액세스한 페이지를 게시할 수 없습니다. [편집기](/help/sites-authoring/publishing-pages.md) 의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
+   * 자세한 내용은 SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md#localized-page-names)에서 현지화된 페이지 이름 을 참조하십시오.[
 
 * **&lt;*경로*>에서 상속됨**
 
@@ -257,7 +254,7 @@ ht-degree: 85%
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 Live Copy 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### 사이트 구조  {#site-structure}
+### 사이트 구조 {#site-structure}
 
 * **등록 페이지**, **오프라인 페이지** 등과 같이 사이트 전체 기능을 제공하는 페이지에 대한 링크를 제공합니다.
 

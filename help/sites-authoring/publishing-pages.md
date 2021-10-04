@@ -1,8 +1,8 @@
 ---
 title: 페이지 게시
-seo-title: 페이지 게시
+seo-title: Publishing Pages
 description: 페이지 게시
-seo-description: 'null'
+seo-description: null
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 89%
+source-wordcount: '1661'
+ht-degree: 87%
 
 ---
 
@@ -32,16 +32,13 @@ ht-degree: 89%
 >
 >* **게시/게시 취소**
    >  이 용어는 컨텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
-   >
-   >
-* **활성화/비활성화**
+>
+>* **활성화/비활성화**
    >  게시/게시 취소와 동의어입니다.
-   >
-   >
-* **복제**
+>
+>* **복제**
    >  사용자 댓글을 게시하거나 역복제할 때와 같이 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
 >
-
 
 
 >[!NOTE]
@@ -53,7 +50,6 @@ ht-degree: 89%
 >* 워크플로우가 트리거되었음을 알리는 메시지가 짧게 표시됩니다.
 
 >
-
 
 
 ## 페이지 게시 {#publishing-pages-1}
@@ -93,6 +89,10 @@ ht-degree: 89%
 >[!NOTE]
 >
 >편집기에서 게시하면 약식 공개가 아닙니다. 즉, 선택한 페이지만 게시되며 하위 페이지는 게시되지 않습니다.
+
+>[!NOTE]
+>
+>편집기에서 [별칭](/help/sites-authoring/editing-page-properties.md#advanced)이 액세스하는 페이지를 게시할 수 없습니다. 편집기의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
 
 ### 콘솔에서 게시 {#publishing-from-the-console}
 
@@ -218,6 +218,10 @@ ht-degree: 89%
 ### 편집기에서 게시 취소 {#unpublishing-from-the-editor}
 
 페이지를 편집할 때 해당 페이지의 게시를 취소하려는 경우 [페이지를 게시](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)한 만큼 **페이지 정보** 메뉴에서 **페이지 게시 취소**&#x200B;를 선택합니다.
+
+>[!NOTE]
+>
+>편집기에서 [별칭](/help/sites-authoring/editing-page-properties.md#advanced)이 액세스하는 페이지는 게시 취소할 수 없습니다. 편집기의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
 
 ### 콘솔에서 게시 취소 {#unpublishing-from-the-console}
 
