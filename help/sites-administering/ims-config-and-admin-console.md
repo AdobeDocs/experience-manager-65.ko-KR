@@ -1,8 +1,8 @@
 ---
 title: Adobe IMS 인증 및 [!DNL Admin Console] AEM Managed Services 지원
-seo-title: Adobe IMS 인증 및 [!DNL Admin Console] AEM Managed Services 지원
+seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
 description: AEM에서 [!DNL Admin Console] 을 사용하는 방법을 알아봅니다.
-seo-description: AEM에서 [!DNL Admin Console] 을 사용하는 방법을 알아봅니다.
+seo-description: Learn how to use the [!DNL Admin Console] in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
-feature: 보안
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Security
+source-git-commit: 3f55ebfe3b1603a573fcb77155227c449c6c0fbb
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1688'
 ht-degree: 13%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 13%
 >[!NOTE]
 >
 >이 기능은 Adobe Managed Services 고객만 사용할 수 있습니다.
+
+>[!NOTE]
+>
+>AEM에 대한 IMS 로그인은 Admin Console에서 중첩 그룹을 지원하지 않습니다.
 
 ## 소개 {#introduction}
 
@@ -48,9 +52,9 @@ IMS 인증은 AEM과 Adobe IMS 엔드포인트 간 OAuth 프로토콜을 사용�
 
 ![image2018-9-23_23-55-8](assets/image2018-9-23_23-55-8.png)
 
-## {#how-to-set-up} 설정 방법
+## 설정 방법 {#how-to-set-up}
 
-### 조직을 [!DNL Admin Console] {#onboarding-organizations-to-admin-console}에 온보딩
+### 조직을 [!DNL Admin Console]에 온보딩 {#onboarding-organizations-to-admin-console}
 
 [!DNL Admin Console]에 대한 고객 온보딩은 AEM 인증에 Adobe IMS를 사용하기 위한 전제 조건입니다.
 
@@ -76,7 +80,7 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 >
 >Enterprise 관리 및 [!DNL Admin Console]에 대한 자세한 내용은 문서 [이 페이지](https://helpx.adobe.com/kr/enterprise/managing/user-guide.html)를 참조하십시오.
 
-### 사용자를 [!DNL Admin Console] {#onboarding-users-to-the-admin-console}에 온보딩
+### 사용자를 [!DNL Admin Console]에 온보딩 {#onboarding-users-to-the-admin-console}
 
 사용자를 온보딩하는 방법은 고객의 규모와 선호에 따라 세 가지가 있습니다.
 
@@ -92,7 +96,7 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
-#### [!DNL Admin Console] UI {#file-upload-in-the-admin-console-ui}에서 파일 업로드
+#### [!DNL Admin Console] UI에서 파일 업로드 {#file-upload-in-the-admin-console-ui}
 
 사용자 생성을 쉽게 처리하기 위해 사용자를 일괄 추가할 수 있도록 CSV 파일을 업로드할 수 있습니다.
 
@@ -102,7 +106,7 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기타 테스트된 OpenLDAP 디렉토리 서비스를 사용하여 Adobe 사용자를 생성하거나 관리할 수 있습니다. 대상 사용자는 도구를 설치 및 구성할 수 있는 IT ID 관리자(Enterprise Directory 및 시스템 관리자)입니다. 오픈소스 도구는 개발자가 특정 요구 사항에 맞게 수정할 수 있도록 사용자 지정할 수 있습니다.
 
-사용자 동기화가 실행되면 이 기능은 조직의 Active Directory(또는 기타 호환되는 데이터 소스)의 사용자 목록을 가져와서 [!DNL Admin Console] 내의 사용자 목록과 비교합니다. 그런 다음 Adobe [!DNL User Management] API를 호출하여 [!DNL Admin Console] 가 조직의 디렉토리와 동기화되도록 합니다. 변경 흐름은 완전히 일방향입니다.[!DNL Admin Console]에서 편집한 내용은 디렉토리에 푸시되지 않습니다.
+사용자 동기화가 실행되면 이 기능은 조직의 Active Directory(또는 기타 호환되는 데이터 소스)의 사용자 목록을 가져와서 [!DNL Admin Console] 내의 사용자 목록과 비교합니다. 그런 다음 Adobe [!DNL User Management] API를 호출하여 [!DNL Admin Console] 가 조직의 디렉토리와 동기화되도록 합니다. 변경 흐름은 완전히 일방향입니다. [!DNL Admin Console]에서 편집한 내용은 디렉토리에 푸시되지 않습니다.
 
 시스템 관리자는 이 도구를 사용하여 고객 디렉토리에 있는 사용자 그룹을 [!DNL Admin Console]의 제품 구성 및 사용자 그룹과 매핑할 수 있습니다. 또한 새 UST 버전을 사용하면 [!DNL Admin Console]에서 사용자 그룹을 동적으로 만들 수도 있습니다.
 
@@ -114,7 +118,7 @@ UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
-시험판 버전 2.4RC1 은 동적 그룹 생성 지원과 함께 사용 가능하며 여기에서 찾을 수 있습니다.[https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
+시험판 버전 2.4RC1 은 동적 그룹 생성 지원과 함께 사용 가능하며 여기에서 찾을 수 있습니다. [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
 이 릴리스의 주요 기능은 [!DNL Admin Console]에서 사용자 멤버십에 대한 새 LDAP 그룹을 동적으로 매핑하고 동적 사용자 그룹 생성을 수행하는 기능입니다.
 
@@ -140,7 +144,7 @@ UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기
 
 ## 사용 방법 {#how-to-use}
 
-### [!DNL Admin Console] {#managing-products-and-user-access-in-admin-console}에서 제품 및 사용자 액세스 관리
+### [!DNL Admin Console]에서 제품 및 사용자 액세스 관리 {#managing-products-and-user-access-in-admin-console}
 
 고객 제품 관리자가 [!DNL Admin Console]에 로그인하면, 아래와 같이 AEM Managed Services 제품 컨텍스트의 여러 인스턴스가 표시됩니다.
 
@@ -162,7 +166,7 @@ UST(User Sync Tool)를 사용하면 기업 고객은 Active Directory 또는 기
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 
-### AEM {#logging-into-aem}에 로그인하는 중
+### AEM에 로그인 {#logging-into-aem}
 
 #### 로컬 관리자 로그인 {#local-admin-login}
 
@@ -198,7 +202,7 @@ LDAP 또는 SAML을 통해 로컬로 가져온 AEM 저장소의 기존 사용자
 
 이 유틸리티는 IMS 프로비저닝의 일부로서 AMS 팀이 실행합니다.
 
-### AEM {#managing-permissions-and-acls-in-aem}의 권한 및 ACL 관리
+### AEM의 권한 및 ACL 관리 {#managing-permissions-and-acls-in-aem}
 
 액세스 제어 및 권한은 AEM에서 계속 관리되며, 이 작업은 IMS(예: 아래 예에서 AEM-GRP-008)와 권한 및 액세스 제어가 정의된 로컬 그룹을 분리하여 수행할 수 있습니다. IMS에서 동기화된 사용자 그룹은 로컬 그룹에 할당하고 권한을 상속할 수 있습니다.
 
