@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 6.5 릴리스에서 사용 중단되거나 제거된 기능.
 description: Adobe Experience Manager 6.5의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: becdfee534e4464147811302ed67de74b8044a24
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 71%
+source-wordcount: '1744'
+ht-degree: 68%
 
 ---
 
@@ -29,7 +29,7 @@ AEM 기능을 제거하거나 교체하기 위해 다음 규칙이 적용됩니�
 | 영역 | 기능 | 대체 |
 |---|---|---|
 | [!DNL Sites] | 템플릿 기반 단순 컨텐츠 조각. | [모델 기반의 구조화된 컨텐츠 ](/help/assets/content-fragments/content-fragments-models.md) 조각. |
-| Creative Cloud 통합 | Creative Cloud 폴더 공유에 대한 AEM은 창의적 사용자에게 AEM의 자산에 대한 액세스 권한을 부여하는 방법으로 AEM 6.2에 도입되어, CC 애플리케이션에서 이를 열 수 있으며 새 파일을 업로드하거나 AEM에 변경 사항을 저장할 수 있습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 향후 Creative Cloud 폴더 공유 통합을 위해 AEM을 개선할 계획이 없습니다. 고객은 AEM에 해당 기능이 포함되어 있는 동안 교체 솔루션을 사용해 보시기 바랍니다. | 또한 Adobe Assset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환하는 것이 좋습니다. |
+| Creative Cloud 통합 | AEM-Creative Cloud 폴더 공유 는 창의적 사용자에게 AEM의 자산에 대한 액세스 권한을 부여하는 방법으로 AEM 6.2에 도입되어, [!DNL Creative Cloud] 애플리케이션에서 이를 열 수 있으며 새 파일을 업로드하거나 AEM에 변경 사항을 저장할 수 있습니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 향후 Creative Cloud 폴더 공유 통합을 위해 AEM을 개선할 계획이 없습니다. 고객은 AEM에 해당 기능이 포함되어 있는 동안 교체 솔루션을 사용해 보시기 바랍니다. | 또한 Adobe Assset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환하는 것이 좋습니다. |
 | 에셋 | `AssetDownloadServlet` 게시 인스턴스에 대해 기본적으로 가 비활성화되어 있습니다. 자세한 내용은 [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)을 참조하십시오. | [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)에 설명된 구성입니다. |
 | 에셋 | 사용자에게 `/content/dam/collections`에 대한 충분한(읽기 및 쓰기) 권한이 없는 경우에는 컬렉션을 만들 수 없습니다. | 사용자의 액세스 제어 설정을 적용하고 적합한 권한을 확인하십시오. |
 | Adobe Search &amp; Promote | Adobe Search &amp; Promote와의 통합이 더 이상 사용되지 않습니다. Adobe는 향후 Search &amp; Promote 통합을 개선할 계획이 없습니다. Search &amp; Promote 통합이 더 이상 사용되지 않는 동안에도 계속 지원됩니다. |  |

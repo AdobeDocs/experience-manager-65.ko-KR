@@ -3,12 +3,12 @@ title: ' [!DNL Adobe Experience Manager]에서 디지털 자산 및 이미지 �
 description: 필터 패널을 사용하여 [!DNL Adobe Experience Manager] 에서 필요한 자산을 찾는 방법과 검색에 표시되는 자산을 사용하는 방법을 알아봅니다.
 contentOwner: AG
 mini-toc-levels: 1
-feature: 검색, 메타데이터
+feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
-source-wordcount: '5573'
+source-wordcount: '5570'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 검색 인터페이스 및 사용 가능한 작업에 대해 숙지하십시오.
 
-![Experience Manager 자산 검색 결과 인터페이스 이해](assets/aem_search_results.png)
+![Experience Manager Assets 검색 결과 인터페이스 이해](assets/aem_search_results.png)
 
 *그림: 검색  [!DNL Experience Manager Assets] 결과 인터페이스를 이해합니다.*
 
@@ -161,7 +161,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 | 작성자 | 작성자:John |
 | 위치 | 위치:NA |
 | 설명 | description:&quot;샘플 이미지&quot; |
-| 작성자 도구 | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| 작성자 도구 | creatortool:&quot;Adobe Photoshop&quot; |
 | 저작권 소유자 | copyrightowner:&quot;Adobe Systems&quot; |
 | 내용 작성자 | 기여자:John |
 | 사용 약관 | usagterms:&quot;CopyRights Reserved&quot; |
@@ -206,7 +206,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 
 ### [!DNL Experience Manager] 데스크탑 앱에서 자산 검색 {#desktop-app}
 
-크리에이티브 전문가가 데스크탑 앱을 사용하여 로컬 데스크탑(Win 또는 Mac)에서 [!DNL Experience Manager Assets]을 손쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시하고, 데스크탑 애플리케이션에서 열고, 로컬로 변경할 수 있습니다. 변경 사항은 리포지토리에서 생성된 새 버전으로 다시 [!DNL Experience Manager]에 저장됩니다. 응용 프로그램은 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크탑 앱에서 [자산 찾아보기, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하십시오.
+크리에이티브 전문가가 데스크탑 앱을 사용하여 로컬 데스크탑(Win 또는 Mac)에서 [!DNL Experience Manager Assets] 을 손쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시하고, 데스크탑 애플리케이션에서 열고, 로컬로 변경할 수 있습니다. 변경 사항은 리포지토리에서 생성된 새 버전으로 다시 [!DNL Experience Manager]에 저장됩니다. 응용 프로그램은 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크탑 앱에서 [자산 찾아보기, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하십시오.
 
 ### [!DNL Brand Portal]에서 자산 검색 {#brand-portal}
 
@@ -299,7 +299,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 *그림: 따옴표가 있는 검색 동작과 없는 검색 동작입니다.*
 
-**별표 와일드카드를 사용하여 검색**: 검색을 확장하려면 검색어 앞이나 뒤에 별표를 사용하여 어떤 수의 문자든 일치시킵니다. 예를 들어 별표 없이 실행을 검색하면 단어의 변형이 포함된 자산(메타데이터에 포함)이 반환되지 않습니다. 별표는 여러 문자를 대체합니다. 예,
+**별표 와일드카드를 사용하여 검색**: 검색을 확장하려면 검색어 앞이나 뒤에 별표를 사용하여 어떤 수의 문자든 일치시킵니다. 예를 들어 별표 없이 실행을 검색하면 단어의 변형이 포함된 자산(메타데이터에 포함)이 반환되지 않습니다. 별표는 여러 문자를 대체합니다. 예를 들어
 
 * `run` 정확히 실행 키워드가 있는 자산 반환
 * `run*` ,  `running`,  `run`등이  `runaway`있는 자산을 반환합니다.

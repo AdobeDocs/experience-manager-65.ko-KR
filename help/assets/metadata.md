@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
 source-wordcount: '2336'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets] 모든 자산에 대한 메타데이터를 유지합니다. 자산을 보다 쉽게 분류하고 구성할 수 있으며 특정 자산을 찾는 사람에게 도움이 됩니다. [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 통해 메타데이터 관리는 크리에이티브 워크플로우와 통합됩니다. 자산으로 메타데이터를 유지 및 관리하는 기능을 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
+[!DNL Adobe Experience Manager Assets] 는 모든 자산에 대한 메타데이터를 유지합니다. 자산을 보다 쉽게 분류하고 구성할 수 있으며 특정 자산을 찾는 사람에게 도움이 됩니다. [!DNL Experience Manager Assets]에 업로드된 파일에서 메타데이터를 추출하는 기능을 통해 메타데이터 관리는 크리에이티브 워크플로우와 통합됩니다. 자산으로 메타데이터를 유지 및 관리하는 기능을 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다.
 
 ## 메타데이터 및 해당 원본 {#how-to-edit-or-add-metadata}
 
@@ -29,9 +29,9 @@ ht-degree: 2%
 
 다음 방법을 사용하여 디지털 자산에 메타데이터를 추가할 수 있습니다.
 
-* 먼저 자산을 만드는 기본 애플리케이션에서 메타데이터를 추가합니다. 예를 들어 [Acrobat은 일부 메타데이터](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html)을 PDF 파일에 추가하거나 카메라가 사진에 일부 기본 메타데이터를 추가합니다. 자산을 생성할 때 기본 애플리케이션 자체에 메타데이터를 추가할 수 있습니다. 예를 들어 Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)에서 [IPTC 메타데이터를 추가할 수 있습니다.
+* 먼저 자산을 만드는 기본 애플리케이션에서 메타데이터를 추가합니다. 예를 들어 [Acrobat은 일부 메타데이터](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html)을 PDF 파일에 추가하거나 카메라가 사진에 몇 가지 기본 메타데이터를 추가합니다. 자산을 생성할 때 기본 애플리케이션 자체에 메타데이터를 추가할 수 있습니다. 예를 들어 Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)에서 [IPTC 메타데이터를 추가할 수 있습니다.
 
-* 자산을 [!DNL Experience Manager]에 업로드하기 전에 자산을 만들거나 다른 메타데이터 편집 응용 프로그램을 사용하여 메타데이터를 편집하고 수정할 수 있습니다. 자산을 Experience Manager에 업로드하면 메타데이터가 처리됩니다. 예를 들어 [이 [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)에서 메타데이터를 사용하여 작업하는 방법을 참조하고, [!DNL Adobe Exchange]에서 [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)태그 패널을 참조하십시오.[
+* 자산을 [!DNL Experience Manager]에 업로드하기 전에 자산을 만들거나 다른 메타데이터 편집 응용 프로그램을 사용하여 메타데이터를 편집하고 수정할 수 있습니다. 자산을 Experience Manager에 업로드하면 메타데이터가 처리됩니다. 예를 들어 [이 [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)에서 메타데이터를 사용하여 작업하는 방법을 참조하고, [!DNL Adobe Exchange]에서 [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)태그 패널을 참조하십시오.[
 
 * [!DNL Experience Manager Assets]에서 [!UICONTROL 속성] 페이지에서 자산의 메타데이터를 수동으로 추가하거나 편집할 수 있습니다.
 
@@ -234,7 +234,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
 >* [여러 컬렉션의 메타데이터 속성 편집](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Experience Manager 자산에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
