@@ -2,7 +2,7 @@
 title: Tough Day
 seo-title: Tough Day
 description: Tough Day 테스트는 모든 작업이 동시에 진행되는 최악의 상황에서 약 1000명의 작성자가 매일 로드하는 것을 시뮬레이션합니다.
-seo-description: Tough Day 테스트는 모든 작업이 동시에 진행되는 최악의 상황에서 약 1000명의 작성자가 매일 로드하는 것을 시뮬레이션합니다.
+seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 uuid: 1b672182-40f5-4580-b038-2e3c8fbfb8b7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
 docset: aem65
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 3727b561a2ee9778d75f18530caf16c6c3ef846a
+source-git-commit: e1f9cf160892c2fa5c7cc7f80f998166dbc877e6
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1883'
 ht-degree: 2%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 2%
 
 ## Tough Day 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot;는 AEM 인스턴스의 한계를 테스트할 수 있는 애플리케이션입니다. 기본 테스트 세트로 즉시 실행하거나 테스트 요구 사항에 맞게 구성할 수 있습니다. 응용 프로그램 프레젠테이션을 보려면 [이 녹음](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html)을 시청하십시오.
+&quot;Tough Day 2&quot;는 AEM 인스턴스의 한계를 테스트할 수 있는 애플리케이션입니다. 기본 테스트 세트로 즉시 실행하거나 테스트 요구 사항에 맞게 구성할 수 있습니다. 응용 프로그램 프레젠테이션을 보려면 [이 녹음](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/)을 시청하십시오.
 
-## Tough Day 2를 실행하는 방법 {#how-to-run-tough-day}
+## Tough Day 2 실행 방법 {#how-to-run-tough-day}
 
 [Adobe 저장소](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/)에서 최신 버전의 Tough Day 2를 다운로드하십시오. 애플리케이션을 다운로드한 후에는 `host` 매개 변수를 제공하여 즉시 실행할 수 있습니다. 다음 예에서는 AEM 인스턴스가 로컬로 실행되어 `localhost` 값이 사용됩니다.
 
@@ -54,7 +54,6 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >
 >Tough Day 2 는 정리 단계를 포함하지 않습니다. 따라서 주 프로덕션 인스턴스가 아닌 복제된 스테이징 인스턴스에서 Tough Day 2를 실행하는 것이 좋습니다. 스테이징 인스턴스는 테스트 후에 삭제해야 합니다.
 
-
 ### 도움 받기 {#getting-help}
 
 Tough Day 2는 명령줄에서 액세스할 수 있는 다양한 도움말 옵션을 제공합니다. 예:
@@ -74,7 +73,7 @@ java -jar toughday2.jar --help_full
   </tr>
   <tr>
    <td>--도움말</td>
-   <td>다음과 같이 글로벌 정보를 인쇄합니다.사용 가능한 작업, 사전 정의된 세트, 실행 모드 및 글로벌 매개 변수.</td>
+   <td>다음과 같이 글로벌 정보를 인쇄합니다. 사용 가능한 작업, 사전 정의된 세트, 실행 모드 및 글로벌 매개 변수.</td>
    <td> </td>
   </tr>
   <tr>
@@ -115,7 +114,7 @@ java -jar toughday2.jar --help_full
  </tbody>
 </table>
 
-### 전역 매개 변수 {#global-parameters}
+### 글로벌 매개 변수 {#global-parameters}
 
 Tough Day 2는 테스트에 대한 환경을 설정하거나 변경하는 전역 매개 변수를 제공합니다. 여기에는 타겟팅된 호스트, 포트 번호, 사용된 프로토콜, 인스턴스에 대한 사용자 및 암호 등이 포함됩니다. 예:
 
@@ -143,7 +142,7 @@ java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m 
 
 ## 사용자 지정 {#customizing}
 
-사용자 지정은 다음 두 가지 방법으로 수행할 수 있습니다.명령줄 매개 변수 또는 yaml 구성 파일 **구성 파일은 일반적으로 큰 사용자 지정 세트에 사용되며 Tough Day 2 기본 매개 변수를 무시합니다. 명령줄 매개 변수는 구성 파일과 기본 매개 변수를 모두 덮어씁니다.**
+사용자 지정은 다음 두 가지 방법으로 수행할 수 있습니다. 명령줄 매개 변수 또는 yaml 구성 파일 **구성 파일은 일반적으로 큰 사용자 지정 세트에 사용되며 Tough Day 2 기본 매개 변수를 무시합니다. 명령줄 매개 변수는 구성 파일과 기본 매개 변수를 모두 덮어씁니다.**
 
 테스트 구성을 저장하는 유일한 방법은 yaml 형식으로 복사하는 것입니다. 자세한 내용은 아래 섹션에서 이 [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) 구성 및 yaml 구성 예를 참조하십시오.
 
@@ -166,7 +165,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### 동일한 테스트의 여러 인스턴스 추가 {#adding-multiple-instances-of-the-same-test}
+### 동일한 테스트의 여러 인스턴스 추가  {#adding-multiple-instances-of-the-same-test}
 
 동일한 테스트의 여러 인스턴스를 추가하고 실행할 수도 있지만 각 인스턴스의 이름은 고유해야 합니다. 아래 예제는 명령줄 매개 변수 또는 yaml 구성 파일을 사용하여 동일한 테스트의 두 인스턴스를 추가하는 방법을 보여줍니다.
 
@@ -283,7 +282,7 @@ tests:
 
 ### 실행 모드 {#run-modes}
 
-Tough Day 2는 다음 모드 중 하나로 실행될 수 있습니다.**normal** 및 **상수 로드**.
+Tough Day 2는 다음 모드 중 하나로 실행될 수 있습니다. **normal** 및 **상수 로드**.
 
 **일반** 실행 모드에는 두 개의 매개 변수가 있습니다.
 
@@ -308,9 +307,9 @@ runmode:
 
 **상수 로드** 실행 모드는 스레드 수가 일정하지 않고 시작 테스트 실행 횟수를 일정하게 생성하여 일반 실행 모드와 다릅니다. 동일한 이름의 실행 모드 매개 변수를 사용하여 로드를 설정할 수 있습니다.
 
-### 선택 항목 테스트 {#test-selection}
+### 선택 테스트 {#test-selection}
 
-테스트 선택 프로세스는 실행 모드 모두에 대해 동일하며 다음과 같습니다.모든 테스트에는 스레드에서 실행 가능성을 결정하는 `weight` 속성이 있습니다. 예를 들어, 두 개의 테스트가 있는데, 하나는 가중치가 5이고 다른 하나는 가중치가 10인 경우, 후자는 이전의 것보다 두 배 더 많이 실행될 가능성이 있습니다.
+테스트 선택 프로세스는 실행 모드 모두에 대해 동일하며 다음과 같습니다. 모든 테스트에는 스레드에서 실행 가능성을 결정하는 `weight` 속성이 있습니다. 예를 들어, 두 개의 테스트가 있는데, 하나는 가중치가 5이고 다른 하나는 가중치가 10인 경우, 후자는 이전의 것보다 두 배 더 많이 실행될 가능성이 있습니다.
 
 또한 테스트에는 지정된 수로 실행 횟수를 제한하는 `count` 속성이 있을 수 있습니다. 이 번호가 전달되면 더 이상 테스트가 실행되지 않습니다. 이미 실행 중인 모든 테스트 인스턴스는 구성된 대로 실행을 완료합니다. 다음 예제에서는 명령줄에 이러한 매개 변수를 추가하거나 yaml 구성 파일을 사용하여 이러한 매개 변수를 추가하는 방법을 보여 줍니다.
 
@@ -400,8 +399,8 @@ publishmode:
 
 Tough Day 2 는 Tough Day 2 를 실행한 동일한 디렉토리에 로그 폴더를 만듭니다. 이 폴더에는 두 가지 유형의 로그가 포함되어 있습니다.
 
-* **toughday.log**:응용 프로그램 상태, 디버깅 정보 및 글로벌 메시지와 관련된 메시지를 포함합니다.
-* **toughday_&lt;testname>.log**:지정된 테스트와 관련된 메시지입니다.
+* **toughday.log**: 응용 프로그램 상태, 디버깅 정보 및 글로벌 메시지와 관련된 메시지를 포함합니다.
+* **toughday_&lt;testname>.log**: 지정된 테스트와 관련된 메시지입니다.
 
 로그를 덮어쓰지 않고 후속 실행에서 기존 로그에 메시지를 추가합니다. 로그에는 여러 수준이 있습니다. 자세한 내용은 ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)` 을 참조하십시오.
 
