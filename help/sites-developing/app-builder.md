@@ -1,9 +1,9 @@
 ---
 title: 개발자 앱 빌더를 사용하여 [!DNL Adobe Experience Manager] 6.5를 확장합니다.
 description: 개발자 앱 빌더를 사용하여 [!DNL Adobe Experience Manager] 6.5를 확장합니다.
-source-git-commit: aab7d4aaf11b6aef3b729f906259a76c152fd6f0
+source-git-commit: e6153e1a816bb9169f96fa75827593485a6ddbd4
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -42,26 +42,26 @@ Adobe 개발자 앱 빌더는 기본적으로 제공되는 솔루션 대신 다�
 
 ![아키텍처](assets/firefly-architecture.jpg)
 
-App Builder 아키텍처에 대한 자세한 내용은 [아키텍처 개요](https://www.adobe.io/project-firefly/docs/guides/)를 참조하십시오.
+App Builder 아키텍처에 대한 자세한 내용은 [아키텍처 개요](https://www.adobe.io/app-builder/docs/guides/)를 참조하십시오.
 
 ## App Builder 시작 {#additional-resources}
 
 시작하는 데 도움이 되도록 다음과 같은 일련의 설명서를 만들었습니다.
 
-* [앱 빌더 시작](https://www.adobe.io/project-firefly/docs/getting_started/)
+* [앱 빌더 시작](https://www.adobe.io/app-builder/docs/getting_started/)
 
 ## 설명서 학습 계속 {#appbuilder-documentation}
 
 App Builder는 안내서와 참조 설명서를 비롯한 개발자를 위한 비디오 및 설명서를 제공하여 사용자 지정 애플리케이션을 개발할 수 있도록 지원합니다.
 
-* [App Builder 설명서](https://www.adobe.io/project-firefly/docs/overview/)
+* [App Builder 설명서](https://www.adobe.io/app-builder/docs/overview/)
 * [App Builder 비디오](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## 샘플 응용 프로그램 중 하나를 사용해 보십시오 {#appbuilder-codesamples}
 
 개발을 시작할 준비가 되었습니까? 신속한 지원을 위해 다양한 샘플 애플리케이션을 보유하고 있습니다.
 
-* [Adobe 개발자 웹 사이트의 App Builder 코드 Labs](https://www.adobe.io/project-firefly/docs/resources/)
+* [Adobe 개발자 웹 사이트의 App Builder 코드 Labs](https://www.adobe.io/app-builder/docs/resources/)
 
 ## 지원 {#support}
 
