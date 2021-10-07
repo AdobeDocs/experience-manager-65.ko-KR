@@ -5,21 +5,13 @@ contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-source-git-commit: 5462eb18c55a509712dab8fdbb653eb2d1889763
+source-git-commit: 64ac790579db921aa16f32c51592f0b701237df9
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
-<!--
-
-Define Media Lib
-Define req for it
-Define use cases
-Define what is not included
-
--->
 
 # 기본 자산 관리에 Media Library 사용 {#manage-assets-using-media-library}
 
@@ -43,9 +35,9 @@ Experience Manager Assets은 엔터프라이즈급 DAM 기능을 제공합니다
 
 ## Media Library 사용 {#use-media-library}
 
-Media Library은 다음과 같은 사용 사례를 광범위하게 다룹니다.
+Media Library은 다음 사용 사례에 대한 기본 DAM 기능을 제공합니다.
 
-* [!DNL Adobe Experience Manager Sites]을 사용하여 만든 웹 페이지에 대한 기본 DAM 기능을 제공합니다.
+* [!DNL Adobe Experience Manager Sites]을 사용하여 만든 웹 페이지입니다.
 * [!DNL Adobe Experience Manager Forms]을 사용하여 만든 적응형 양식 및 통신입니다.
 * [!DNL Adobe Experience Manager Screens]을 사용하여 만든 디지털 화면 경험입니다.
 * [!DNL Assets] 헤드리스 작업을 위한 HTTP REST API.
