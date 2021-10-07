@@ -1,8 +1,8 @@
 ---
 title: 적응형 양식 필드에 대한 사용자 지정 모양 만들기
-seo-title: 적응형 양식 필드에 대한 사용자 지정 모양 만들기
+seo-title: Create custom appearances for adaptive form fields
 description: 응용 Forms에서 기본 구성 요소의 모양을 사용자 지정합니다.
-seo-description: 응용 Forms에서 기본 구성 요소의 모양을 사용자 지정합니다.
+seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
 uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: customization
 discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -27,49 +27,49 @@ ht-degree: 0%
 
 이 문서에서 사용되는 주요 용어와 개념을 먼저 살펴보겠습니다.
 
-**** 모양적응형 양식 필드의 다양한 요소의 스타일, 모양 및 느낌 및 구성을 나타냅니다. 이 목록에는 보통 입력, 도움말 아이콘, 필드에 대한 짧고 긴 설명을 제공하는 레이블, 대화형 영역이 포함되어 있습니다. 이 문서에서 설명한 모양새 사용자 지정은 필드의 입력 영역 모양에 적용됩니다.
+**** 모양적응형 양식 필드의 다양한 요소의 스타일, 모양 및 느낌, 구성을 나타냅니다. 이 목록에는 보통 입력, 도움말 아이콘, 필드에 대한 짧고 긴 설명을 제공하는 레이블, 대화형 영역이 포함되어 있습니다. 이 문서에서 설명한 모양새 사용자 지정은 필드의 입력 영역 모양에 적용됩니다.
 
 **jQuery** 플러그인jQuery 위젯 프레임워크를 기반으로 대체 모양을 구현하는 표준 메커니즘을 제공합니다.
 
 **** ClientLib복잡한 JavaScript 및 CSS 코드로 구동되는 AEM 클라이언트 측 처리에서의 클라이언트 측 라이브러리 시스템입니다. 자세한 내용은 클라이언트측 라이브러리 사용 을 참조하십시오.
 
-**** ArchetypeMaven 프로젝트의 원래 패턴이나 모델로 정의된 Maven 프로젝트 템플릿 도구 키트입니다. 자세한 내용은 Archetypes 소개 를 참조하십시오.
+**** ArchetypeMaven 프로젝트의 원래 패턴이나 모델로 정의된 Maven 프로젝트 템플릿 툴킷입니다. 자세한 내용은 Archetypes 소개 를 참조하십시오.
 
 **사용자** 제어필드 값을 포함하는 위젯의 기본 요소를 나타내며, 사용자 지정 위젯 UI를 적응형 양식 모델과 결합하기 위해 모양 프레임워크에서 사용됩니다.
 
-## 사용자 지정 모양 {#steps-to-create-a-custom-appearance} 만들기 단계
+## 사용자 정의 모양을 만드는 절차 {#steps-to-create-a-custom-appearance}
 
 높은 수준에서 사용자 정의 모양을 만드는 단계는 다음과 같습니다.
 
-1. **프로젝트를 만듭니다**.AEM에 배포할 컨텐츠 패키지를 생성하는 Maven 프로젝트를 만듭니다.
-1. **기존 위젯 클래스 확장**:기존 위젯 클래스를 확장하고 필요한 클래스를 재정의합니다.
-1. **클라이언트 라이브러리 만들기**:라이브러리를  `clientLib: af.customwidget` 만들고 필요한 JavaScript 및 CSS 파일을 추가합니다.
+1. **프로젝트를 만듭니다**. AEM에 배포할 컨텐츠 패키지를 생성하는 Maven 프로젝트를 만듭니다.
+1. **기존 위젯 클래스 확장**: 기존 위젯 클래스를 확장하고 필요한 클래스를 재정의합니다.
+1. **클라이언트 라이브러리 만들기**: 라이브러리를  `clientLib: af.customwidget` 만들고 필요한 JavaScript 및 CSS 파일을 추가합니다.
 
-1. **프로젝트를 빌드하고 설치합니다**.Maven 프로젝트를 빌드하고 생성된 컨텐츠 패키지를 AEM에 설치합니다.
-1. **적응형 양식 업데이트**:적응형 양식 필드 속성을 업데이트하여 사용자 지정 모양을 사용합니다.
+1. **프로젝트를 빌드하고 설치합니다**. Maven 프로젝트를 빌드하고 생성된 컨텐츠 패키지를 AEM에 설치합니다.
+1. **적응형 양식 업데이트**: 적응형 양식 필드 속성을 업데이트하여 사용자 지정 모양을 사용합니다.
 
 ### 프로젝트 만들기 {#create-a-project}
 
 maven 원형은 사용자 지정 모양을 만드는 시작점입니다. 사용할 원형 세부 사항은 다음과 같습니다.
 
-* **저장소**:https://repo.adobe.com/nexus/content/groups/public/
-* **아티팩트 Id**:custom-appearance-archetype
-* **그룹 Id**:com.adobe.aemforms
-* **버전**:1.0.4
+* **저장소**: https://repo1.maven.org/maven2/com/adobe/
+* **아티팩트 Id**: custom-appearance-archetype
+* **그룹 Id**: com.adobe.aemforms
+* **버전**: 1.0.4
 
 다음 명령을 실행하여 원형 기반 로컬 프로젝트를 생성합니다.
 
-`mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
+`mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
 이 명령은 저장소에서 Maven 플러그인 및 원형 정보를 다운로드하고 다음 정보를 기반으로 프로젝트를 생성합니다.
 
-* **groupId**:생성된 Maven 프로젝트에서 사용하는 그룹 ID
-* **artifactId**:생성된 Maven 프로젝트에서 사용하는 아티팩트 ID입니다.
-* **버전**:생성된 Maven 프로젝트의 버전입니다.
-* **패키지**:파일 구조에 사용되는 패키지입니다.
-* **artifactName**:생성된 AEM 패키지의 아티팩트 이름입니다.
-* **packageGroup**:생성된 AEM 패키지의 패키지 그룹입니다.
-* **widgetName**:참조에 사용되는 모양새 이름입니다.
+* **groupId**: 생성된 Maven 프로젝트에서 사용하는 그룹 ID
+* **artifactId**: 생성된 Maven 프로젝트에서 사용하는 아티팩트 ID입니다.
+* **버전**: 생성된 Maven 프로젝트의 버전입니다.
+* **패키지**: 파일 구조에 사용되는 패키지입니다.
+* **artifactName**: 생성된 AEM 패키지의 아티팩트 이름입니다.
+* **packageGroup**: 생성된 AEM 패키지의 패키지 그룹입니다.
+* **widgetName**: 참조에 사용되는 모양새 이름입니다.
 
 생성된 프로젝트는 다음 구조를 갖습니다.
 
@@ -133,7 +133,7 @@ maven 원형은 사용자 지정 모양을 만드는 시작점입니다. 사용�
    <td><code>getEventMap</code></td>
    <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> 이 예는 HTML  <code>blur</code> 이벤트이고 해당 XFA  <code>XFA_EXIT_EVENT</code> 이벤트임을 보여줍니다. </td>
+      }</code><br /> 이 예는 HTML  <code>blur</code> 이벤트이며, 해당 XFA  <code>XFA_EXIT_EVENT</code> 이벤트임을 보여줍니다. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -168,11 +168,11 @@ maven 원형은 사용자 지정 모양을 만드는 시작점입니다. 사용�
 
    * 템플릿 파일은 다양한 방법에 대한 샘플 구현을 제공합니다. 확장되지 않을 메서드를 제거합니다.
 
-### 클라이언트 라이브러리 {#create-a-client-library} 만들기
+### 클라이언트 라이브러리 만들기 {#create-a-client-library}
 
 Maven Archetype에서 생성한 샘플 프로젝트는 필수 클라이언트 라이브러리를 자동으로 만들고 `af.customwidgets` 범주가 있는 클라이언트 라이브러리에 래핑합니다. `af.customwidgets`에서 사용할 수 있는 JavaScript 및 CSS 파일은 런타임 시 자동으로 포함됩니다.
 
-### {#build-and-install} 빌드 및 설치
+### 빌드 및 설치 {#build-and-install}
 
 프로젝트를 빌드하려면 셸에서 다음 명령을 실행하여 AEM 서버에 설치해야 하는 CRX 패키지를 생성합니다.
 
@@ -182,21 +182,21 @@ Maven Archetype에서 생성한 샘플 프로젝트는 필수 클라이언트 �
 >
 >maven 프로젝트가 POM 파일 내의 원격 저장소를 참조합니다. 이것은 참조용으로만 사용되며 Maven 표준에 따라 저장소 정보가 `settings.xml` 파일에 캡처됩니다.
 
-### 적응형 양식 {#update-the-adaptive-form} 업데이트
+### 적응형 양식 업데이트 {#update-the-adaptive-form}
 
 사용자 지정 모양을 적응형 양식 필드에 적용하려면:
 
 1. 편집 모드에서 적응형 양식을 엽니다.
 1. 사용자 지정 모양을 적용할 필드에 대해 **속성** 대화 상자를 엽니다.
-1. **스타일링** 탭에서 `CSS class` 속성을 업데이트하여 `widget_<widgetName>` 형식으로 모양 이름을 추가합니다. 예:**widget_numericstepper**
+1. **스타일링** 탭에서 `CSS class` 속성을 업데이트하여 `widget_<widgetName>` 형식으로 모양 이름을 추가합니다. 예: **widget_numericstepper**
 
-## 샘플:사용자 정의 모양 만들기   {#sample-create-a-custom-appearance-nbsp}
+## 샘플: 사용자 정의 모양 만들기   {#sample-create-a-custom-appearance-nbsp}
 
 이제 숫자 필드가 숫자 스테퍼 또는 슬라이더로 표시되는 사용자 지정 모양을 만드는 예를 살펴보겠습니다. 다음 단계를 수행합니다.
 
 1. 다음 명령을 실행하여 Maven 원형 기반의 로컬 프로젝트를 생성합니다.
 
-   `mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
+   `mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
    다음 매개 변수에 대한 값을 지정하라는 메시지가 표시됩니다.
    *이 샘플에 사용된 값은 굵게* 강조 표시되어 있습니다.

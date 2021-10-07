@@ -1,18 +1,13 @@
 ---
 title: 커뮤니티 배포
-seo-title: 커뮤니티 배포
+seo-title: Deploying Communities
 description: AEM Communities 배포 방법
-seo-description: AEM Communities 배포 방법
-uuid: 18d9b424-004d-43b2-968a-318e27a93759
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+seo-description: How to deploy AEM Communities
 content-type: reference
 topic-tags: deploying
-discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
-docset: aem65
-source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
+source-git-commit: 14a33b14043869614efcdbf8cb413333d0fa644b
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1881'
 ht-degree: 1%
 
 ---
@@ -106,8 +101,8 @@ AEM 6.4 이상에서 AEM Communities 기능 및 핫픽스는 AEM Communities 누
 
 두 가지 커뮤니티 기능은 MySQL 데이터베이스를 사용합니다.
 
-* [지원](/help/communities/enablement.md)의 경우:scorm 활동 및 학습자 기록
-* [DSRP](/help/communities/dsrp.md)의 경우:사용자 생성 컨텐츠 저장(UGC)
+* [지원](/help/communities/enablement.md)의 경우: scorm 활동 및 학습자 기록
+* [DSRP](/help/communities/dsrp.md)의 경우: 사용자 생성 컨텐츠 저장(UGC)
 
 MySQL 커넥터를 별도로 가져와서 설치해야 합니다.
 
@@ -135,7 +130,7 @@ MySQL 커넥터를 별도로 가져와서 설치해야 합니다.
 
 번들 설치에 대한 자세한 내용은 [웹 콘솔](/help/sites-deploying/web-console.md#bundles) 페이지에 있습니다.
 
-#### 예 :설치된 MySQL 커넥터 번들 {#example-installed-mysql-connector-bundle}
+#### 예 : 설치된 MySQL 커넥터 번들 {#example-installed-mysql-connector-bundle}
 
 ![](../assets/mysql-connector.png)
 
@@ -167,14 +162,14 @@ SRP 컬렉션(MSRP 또는 DSRP)에서 고급 다국어 검색(MLS)을 지원하�
 
 고급 MLS 다운로드(&#39;경로&#39;라고도 함)는 Adobe 저장소에서 사용할 수 있습니다.
 
-* [AEM-SOLR-MLS-phasetw](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
+* [AEM-SOLR-MLS-phasetw](https://repo1.maven.org/maven2/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
    * 버전 1.2.40, 2016년 4월 6일
    * AEM-SOLR-MLS-phasetwo-1.2.40.zip 다운로드
 
 자세한 내용 및 설치 정보는 SRP용 [Solr 구성](/help/communities/solr.md)을 참조하십시오.
 
-### 패키지 공유 링크 정보 {#about-links-to-package-share}
+### 패키지 공유에 대한 링크 정보 {#about-links-to-package-share}
 
 **Adobe AEM Cloud에 표시되는 패키지**
 
@@ -201,9 +196,9 @@ AEM Communities에서 공용 저장소는 UGC(사용자 생성 컨텐츠)를 저
 
 일반 저장소는 게시 환경에서 UGC를 조정하고 분석하는 것을 지원하지만 UGC의 [replication](/help/communities/sync.md)이 필요하지 않습니다.
 
-* [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) :AEM 커뮤니티의 SRP 스토리지 옵션에 대해 설명합니다.
+* [커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) : AEM 커뮤니티의 SRP 스토리지 옵션에 대해 설명합니다.
 
-* [권장 토폴로지](/help/communities/topologies.md) :사용 사례 및 SRP 선택에 따라 사용할 토폴로지에 대해 설명합니다.
+* [권장 토폴로지](/help/communities/topologies.md) : 사용 사례 및 SRP 선택에 따라 사용할 토폴로지에 대해 설명합니다.
 
 ## 업그레이드 {#upgrading}
 
@@ -247,7 +242,7 @@ AEM Communities에서 공용 저장소는 UGC(사용자 생성 컨텐츠)를 저
 
 * 작성자의 복제 콘솔에 액세스
 
-   * 전역 탐색에서:**작성자의 도구, 배포, 복제, 에이전트**
+   * 전역 탐색에서: **작성자의 도구, 배포, 복제, 에이전트**
 
 * 두 에이전트에 대해 동일한 절차를 따릅니다.
 
@@ -267,11 +262,11 @@ AEM Communities에서 공용 저장소는 UGC(사용자 생성 컨텐츠)를 저
 
 ![configure-limits](../assets/default-agent-publish.png)
 
-#### 역방향 복제 에이전트(게시 역방향) {#reverse-replication-agent-publish-reverse}
+#### 역방향 복제 에이전트(게시 취소) {#reverse-replication-agent-publish-reverse}
 
 ![](../assets/reverse-replication-agent.png)
 
-### 작성자 {#tunnel-service-on-author}의 터널 서비스
+### 작성자 기반 터널 서비스 {#tunnel-service-on-author}
 
 작성 환경을 사용하여 [사이트 만들기](/help/communities/sites-console.md), [사이트 속성 수정](/help/communities/sites-console.md#modifying-site-properties) 또는 [커뮤니티 구성원 관리](/help/communities/members.md)할 때는 작성자에 등록된 사용자가 아니라 게시 환경에 등록된 구성원(사용자)에 액세스해야 합니다.
 
@@ -294,7 +289,7 @@ AEM Communities에서 공용 저장소는 UGC(사용자 생성 컨텐츠)를 저
 
 ![](../assets/tunnel-service.png)
 
-### 암호화 키 {#replicate-the-crypto-key} 복제
+### 암호화 키 복제 {#replicate-the-crypto-key}
 
 모든 AEM 서버 인스턴스가 동일한 암호화 키를 사용해야 하는 AEM Communities의 두 가지 기능이 있습니다. [Analytics](/help/communities/analytics.md) 및 [ASRP](/help/communities/asrp.md)입니다.
 
@@ -306,7 +301,7 @@ AEM 6.3부터는 주요 자료가 파일 시스템에 저장되고 더 이상 �
 
    * 로컬 파일 시스템에서 `com.adobe.granite.crypto.file` 번들을 찾습니다
 
-      예,
+      예를 들어
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * `bundle.info` 파일은 번들을 식별합니다
@@ -334,7 +329,7 @@ AEM 6.3부터는 주요 자료가 파일 시스템에 저장되고 더 이상 �
 
 #### 저장소 복제 {#repository-replication}
 
-AEM 6.2 및 이전 버전의 경우와 마찬가지로, 저장소에 키 자료를 저장하는 경우, 각 AEM 인스턴스의 처음 시작 시 다음 시스템 속성을 지정하여(초기 리포지토리를 생성) 유지할 수 있습니다.
+AEM 6.2 및 이전 버전의 경우와 마찬가지로, 저장소에 키 자료를 저장하는 경우 각 AEM 인스턴스의 처음 시작 시 다음 시스템 속성을 지정하여(초기 리포지토리를 만드는) 유지할 수 있습니다.
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -355,7 +350,7 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로, 저장소에 키 자료�
 
 ![](../assets/replicare-repository.png)
 
-#### Granite Crypto 번들 {#refresh-the-granite-crypto-bundle} 새로 고침
+#### Granite Crypto 번들 새로 고침 {#refresh-the-granite-crypto-bundle}
 
 * 각 게시 인스턴스에서 [웹 콘솔](/help/sites-deploying/configuring-osgi.md)에 액세스합니다
 
@@ -369,7 +364,7 @@ AEM 6.2 및 이전 버전의 경우와 마찬가지로, 저장소에 키 자료�
 * 잠시 후 **성공** 대화 상자가 나타나야 합니다.
    `Operation completed successfully.`
 
-### Apache HTTP 서버 {#apache-http-server}
+### Apache HTTP Server {#apache-http-server}
 
 Apache HTTP 서버를 사용하는 경우 관련 모든 항목에 올바른 서버 이름을 사용해야 합니다.
 

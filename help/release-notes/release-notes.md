@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager] 6.5의 일반적인 릴리스 노트'
 description: '[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f8fcfa9e09167cd4dbaafe938bcbe3ee6ece270f
 workflow-type: tm+mt
 source-wordcount: '2150'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
-# [!DNL Adobe Experience Manager] 6.5{#general-release-notes-for-adobe-experience-manager}에 대한 일반 릴리스 노트
+# [!DNL Adobe Experience Manager] 6.5의 일반적인 릴리스 노트{#general-release-notes-for-adobe-experience-manager}
 
 ## 릴리스 정보 {#release-information}
 
@@ -38,7 +38,7 @@ ht-degree: 71%
 
 [AEM Foundation](/help/release-notes/wcm-platform.md)의 전체 변경 목록입니다.
 
-[!DNL Adobe Experience Manager] 6.5의 플랫폼은 OSGi 기반 프레임워크(Apache Sling 및 Apache Felix)의 업데이트된 버전과 Java 컨텐츠 리포지토리의 맨 위에 구축됩니다.Apache Jackrabbit Oak 1.10.2.
+[!DNL Adobe Experience Manager] 6.5의 플랫폼은 OSGi 기반 프레임워크(Apache Sling 및 Apache Felix)의 업데이트된 버전과 Java 컨텐츠 리포지토리의 맨 위에 구축됩니다. Apache Jackrabbit Oak 1.10.2.
 
 빠른 시작은 Eclipse Jetty 9.4.15를 서블릿 엔진으로 사용합니다.
 
@@ -64,9 +64,9 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 >[!CAUTION]
 >
->Adobe는 향후 클래식 UI를 개선할 계획이 없습니다. AEM 6.5에는 클래식 UI가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 클래식 UI는 더 이상 사용되지 않는 동안에도 계속 지원됩니다.[자세히 보기](/help/sites-deploying/ui-recommendations.md)
+>Adobe는 향후 클래식 UI를 개선할 계획이 없습니다. AEM 6.5에는 클래식 UI가 포함되어 있으며 이전 릴리스에서 업그레이드하는 고객은 있는 그대로 사용할 수 있습니다. 클래식 UI는 더 이상 사용되지 않는 동안에도 계속 지원됩니다. [자세히 보기](/help/sites-deploying/ui-recommendations.md)
 
-#### {#indexing-and-search} 검색 및 색인 지정
+#### 검색 및 색인 지정 {#indexing-and-search}
 
 * Oak에서의 검색이 이제 동적 패싯을 지원합니다. 예를 들어 자산 검색의 필터 레일은 예상되는 결과 양을 보여줍니다.
 * 동적 패싯과 함께 결과를 제공하기 위해 QueryBuilder 확장되었습니다.
@@ -129,7 +129,7 @@ AEM Screens 변경에 대한 자세한 내용은 [AEM Screens 사용자 안내�
 
 AEM 6.5에서는 AEM 사용자, DAM 역할 및 연관된 광고 및 마케팅 역할의 생산성을 향상시키기 위해 다음과 같은 기능과 개선 사항이 도입되었습니다.
 
-#### Adobe Creative Cloud와 통합  {#integration-with-adobe-creative-cloud}
+#### Adobe Creative Cloud와 통합 {#integration-with-adobe-creative-cloud}
 
 Photoshop, Illustrator 및 InDesign을 비롯한 Adobe Creative Cloud 애플리케이션으로 작업하는 창의적인 사용자를 위한 인앱 환경인 [Adobe Asset Link](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 도입으로 컨텐츠 작성 프로세스에서 광고 및 마케팅 담당자 간의 공동 작업을 간소화합니다. AEM 데스크탑 앱은 모든 파일 유형 및 데스크탑 애플리케이션을 사용하여 데스크탑에서 AEM의 자산으로 작업하는 사용자의 요구 사항을 계속 지원합니다.
 
@@ -194,21 +194,21 @@ Livefyre를 AEM 6.5 인스턴스와 통합할 수 있습니다. [Livefyre를 AEM
 
 Adobe는 고객 중심 개발 모델을 사용하여 고객이 사양, 개발 및 테스트 중에 개발 프로세스의 모든 단계에 기여할 수 있도록 합니다. 이 프로세스에 참여하신 모든 고객과 파트너에게 감사의 인사를 드립니다.
 
-Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 순위 지정 및 추적을 위한 절차와 프로세스를 마련했습니다. [Adobe Marketing Cloud 지원 포털](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html)은 Adobe 향상 및 결함 추적 시스템과 통합되었습니다. 고객 문의는 가능한 경우 고객 지원 센터에서 식별 및 해결합니다. R&amp;D로 에스컬레이션하면 모든 고객 정보가 캡처되고 우선 순위 지정 및 보고용으로 사용됩니다. 개발 시 유료 지원, 보증 문제 및 고객 유료 개선 사항에 우선 순위가 부여됩니다.
+Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 순위 지정 및 추적을 위한 절차와 프로세스를 마련했습니다. [Experience Manager 지원 포털](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)은 Adobe 개선 및 결함 추적 시스템과 통합되었습니다. 가능한 경우 고객 지원 팀에서 고객 질문을 확인하고 해결합니다. R&amp;D로 에스컬레이션하면 모든 고객 정보가 캡처되고 우선 순위 지정 및 보고용으로 사용됩니다. 개발 시 유료 지원, 보증 문제 및 고객 유료 개선 사항에 우선 순위가 부여됩니다.
 
 이러한 우선 순위 지정 프로세스를 통해 750가지 이상의 고객 중심 변경 사항이 AEM 6.5에서 수정되었습니다.
 
-## 릴리스의 일부인 파일 목록  {#list-of-files-that-are-part-of-the-release}
+## 릴리스의 일부인 파일 목록 {#list-of-files-that-are-part-of-the-release}
 
 **Foundation**
 
-* 독립형 빠른 시작:`cq-quickstart-6.5.0.jar`
-* 애플리케이션 서버 빠른 시작:`cq-quickstart-6.5.0.war`
+* 독립형 빠른 시작: `cq-quickstart-6.5.0.jar`
+* 애플리케이션 서버 빠른 시작: `cq-quickstart-6.5.0.war`
 * 다양한 웹 서버 및 플랫폼에 대한 4.3.2 이상 [다운로드 링크](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html)를 참조하십시오
 * Eclipse IDE용 플러그인([자세히 보기 및 다운로드](/help/sites-developing/aem-eclipse.md))
 
 * 괄호 코드 편집기 확장([자세히 보기 및 다운로드](/help/sites-developing/aem-brackets.md))
-* Maven/Gradle 종속성([다운로드 링크](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.5.0/))
+* Maven/Gradle 종속성([다운로드 링크](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.0/))
 
 **사이트**
 
@@ -237,8 +237,8 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 **양식**
 
-* ](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)AEM Forms 기능 패키지[
-* [AEM Forms OSGi 클라이언트 SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
+* ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)AEM Forms 기능 패키지[
+* [AEM Forms OSGi 클라이언트 SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## 언어 {#languages}
 
@@ -257,7 +257,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 [!DNL Experience Manager] 6.5에서는 중국어 인코딩 표준을 사용하도록 GB18030-2005 CITS에 대해 인증되었습니다.
 
-## {#install-update} 설치 및 업데이트
+## 설치 및 업데이트 {#install-update}
 
 설치 요구 사항에 대해서는 [설치 지침](/help/sites-deploying/custom-standalone-install.md)을 참조하십시오.
 
@@ -269,7 +269,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 
 >[!NOTE]
 >
->Oracle이 Oracle Java SE 제품에 대한 LTS(Long Term Support) 모델로 이동되었습니다. Java 9 및 10은 Oracle의 비 LTS 릴리스입니다.[Java SE 지원 로드맵 Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)을 참조하십시오. Adobe은 프로덕션에서 AEM만 실행하도록 Java의 LTS 릴리스를 지원합니다. AEM 6.5에서 사용할 권장 버전은 Java 11입니다.
+>Oracle이 Oracle Java SE 제품에 대한 LTS(Long Term Support) 모델로 이동되었습니다. Java 9 및 10은 Oracle의 비 LTS 릴리스입니다. [Java SE 지원 로드맵 Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)을 참조하십시오. Adobe은 프로덕션에서 AEM만 실행하도록 Java의 LTS 릴리스를 지원합니다. AEM 6.5에서 사용할 권장 버전은 Java 11입니다.
 
 ## 더 이상 사용되지 않는 및 제거된 기능 {#deprecated-and-removed-features}
 

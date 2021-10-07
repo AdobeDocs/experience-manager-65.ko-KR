@@ -1,21 +1,21 @@
 ---
 title: '이메일 알림에 메타데이터 사용 '
-seo-title: '이메일 알림에 메타데이터 사용 '
+seo-title: Use metadata in an email notification
 description: 메타데이터를 사용하여 Forms 워크플로우 이메일 알림의 정보를 채웁니다
-seo-description: 메타데이터를 사용하여 Forms 워크플로우 이메일 알림의 정보를 채웁니다
+seo-description: Use metadata to populate information in a forms workflow email notification
 uuid: 9075b64e-1934-44d5-8b16-aa6e95e93da9
 topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9cf4a68a2b3312fe53282e2fd4ec81988f2fd453
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
 
-# 전자 메일 알림에 메타데이터 사용 {#use-metadata-in-an-email-notification}
+# 이메일 알림에 메타데이터 사용 {#use-metadata-in-an-email-notification}
 
 작업 할당 단계를 사용하여 작업을 생성하고 사용자 또는 그룹에 지정할 수 있습니다. 작업이 사용자 또는 그룹에 할당되면 정의된 사용자 또는 정의된 그룹의 각 구성원에게 전자 메일 알림이 전송됩니다. 일반적인 [전자 메일 알림](../../forms/using/use-custom-email-template-assign-task-step.md)에는 할당된 작업의 링크와 작업과 관련된 정보가 포함되어 있습니다.
 
@@ -96,7 +96,7 @@ message=<html><body>\n\
 </html>\n\
 ```
 
-## 전자 메일 알림에서 시스템 생성 메타데이터 사용 {#using-system-generated-metadata-in-an-email-notification}
+## 이메일 알림에서 시스템 생성 메타데이터 사용 {#using-system-generated-metadata-in-an-email-notification}
 
 AEM Forms 애플리케이션은 즉시 여러 메타데이터 변수(키-값 쌍)를 제공합니다. 이메일 템플릿에서 이러한 변수를 사용할 수 있습니다. 변수 값은 연결된 양식 애플리케이션을 기반으로 합니다. 다음 표에는 기본적으로 사용 가능한 모든 메타데이터 변수가 나와 있습니다.
 
@@ -149,11 +149,11 @@ AEM Forms 애플리케이션은 즉시 여러 메타데이터 변수(키-값 쌍
  </tbody> 
 </table>
 
-## 전자 메일 알림에서 사용자 지정 메타데이터 사용 {#using-custom-metadata-in-an-email-notification}
+## 이메일 알림에서 사용자 지정 메타데이터 사용 {#using-custom-metadata-in-an-email-notification}
 
 이메일 알림에서 사용자 지정 메타데이터를 사용할 수도 있습니다. 사용자 지정 메타데이터에는 시스템에서 생성한 메타데이터 외에도 정보가 포함되어 있습니다. 예를 들어 데이터베이스에서 검색한 정책 세부 정보가 있습니다. ECMAScript 또는 OSGi 번들을 사용하여 crx-repository에 사용자 지정 메타데이터를 추가할 수 있습니다.
 
-### ECMAScript를 사용하여 사용자 지정 메타데이터 {#use-ecmascript-to-add-custom-metadata} 추가
+### ECMAScript를 사용하여 사용자 지정 메타데이터 추가  {#use-ecmascript-to-add-custom-metadata}
 
 [](https://en.wikipedia.org/wiki/ECMAScript) ECMAScripts는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 서버 애플리케이션에 사용됩니다. ECMAScript를 사용하여 이메일 템플릿에 대한 사용자 지정 메타데이터를 추가하려면 다음 단계를 수행하십시오.
 
@@ -191,14 +191,14 @@ AEM Forms 애플리케이션은 즉시 여러 메타데이터 변수(키-값 쌍
 
       | 이름 | jcr:title |
       |---|---|
-      | 유형 | 문자열 |
+      | 유형 | String |
       | 값 | 스크립트의 제목을 지정합니다. 예를 들어, 정책 보유자에 대한 사용자 지정 메타데이터입니다. 지정한 값이 작업 할당 단계에서 표시됩니다. |
 
-### OSGi 번들 및 Java 인터페이스를 사용하여 사용자 지정 메타데이터 {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata} 추가
+### OSGi 번들 및 Java 인터페이스를 사용하여 사용자 지정 메타데이터를 추가합니다 {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
 WorkitemUserMetadataService Java 인터페이스를 사용하여 전자 메일 템플릿에 대한 사용자 지정 메타데이터를 추가할 수 있습니다. WorkitemUserMetadataService Java 인터페이스를 사용하는 OSGi 번들을 만들고 AEM Forms 서버에 배포할 수 있습니다. 메타데이터를 작업 지정 단계에서 선택할 수 있도록 합니다.
 
-Java 인터페이스를 사용하여 OSGi 번들을 만들려면 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) jar 및 [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 파일을 OSGi 번들 프로젝트에 대한 외부 종속성으로 추가합니다. 모든 Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
+Java 인터페이스를 사용하여 OSGi 번들을 만들려면 [AEM Forms Client SDK](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) jar 및 [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 파일을 OSGi 번들 프로젝트에 대한 외부 종속성으로 추가합니다. 모든 Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
 
 1. Eclipse IDE를 엽니다. 파일 > 새 프로젝트로 이동합니다.
 

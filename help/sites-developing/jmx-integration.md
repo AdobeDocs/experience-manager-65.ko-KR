@@ -1,20 +1,15 @@
 ---
 title: JMX 콘솔과 서비스 통합
-seo-title: JMX 콘솔과 서비스 통합
+seo-title: Integrating Services with the JMX Console
 description: 서비스 속성 및 작업을 노출하여 JMX 콘솔을 사용하여 서비스를 관리할 MBean을 만들어 배포하여 관리 작업을 수행할 수 있도록 합니다
-seo-description: 서비스 속성 및 작업을 노출하여 JMX 콘솔을 사용하여 서비스를 관리할 MBean을 만들어 배포하여 관리 작업을 수행할 수 있도록 합니다
-uuid: 4a489a24-af10-4505-8333-aafc0c81dd3e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 83c590e0-2e6c-4499-a6ea-216e4c7bc43c
-docset: aem65
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2e5a5ae7585299de869dbf8744d7be4b86c5bf8
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 1%
+source-wordcount: '1659'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +25,7 @@ Apache Felix 플랫폼에서 MBeans를 OSGi 서비스로 배포합니다. OSGi �
 
 ![jmxwhiteboard](assets/jmxwhiteboard.png)
 
-## CQ5 및 CRX용 MBeans 만들기 {#creating-mbeans-for-cq-and-crx}
+## CQ5 및 CRX용 MBean 만들기 {#creating-mbeans-for-cq-and-crx}
 
 CQ5 또는 CRX 리소스를 관리하기 위해 만드는 MB는 javax.management.DynamicMBean 인터페이스를 기반으로 합니다. 이러한 패턴을 만들려면 JMX 사양에 명시된 일반적인 디자인 패턴을 따릅니다.
 
@@ -62,12 +57,12 @@ CQ5 또는 CRX 리소스를 관리하기 위해 만드는 MB는 javax.management
 * **AnnotatedStandardMBean:** JMX 콘솔에 주석 메타데이터를 자동으로 제공하는 javax.management.StandardMBean 클래스의 하위 클래스입니다.
 * **OpenAnnotatedStandardMBean:**  OpenTypeInfo 주석을 사용하는 Open Beans를 만들기 위한 AnnotatedStandardMBean 클래스의 하위 클래스입니다.
 
-### 개발 MBeans {#developing-mbeans}
+### MBeans 개발 {#developing-mbeans}
 
 일반적으로 MBean은 관리할 OSGi 서비스의 반영입니다. Felix 플랫폼에서 다른 Java 서버 플랫폼에서 배포할 MBean을 만들 수 있습니다. 가장 큰 차이점은 주석을 사용하여 MBean 정보를 지정할 수 있다는 것입니다.
 
-* 관리 인터페이스:getter, setter 및 is 메서드를 사용하여 속성을 정의합니다. 다른 공개 메서드를 사용하여 작업을 정의합니다. 주석을 사용하여 BeanInfo 객체에 대한 메타데이터를 제공합니다.
-* MBean 클래스:관리 인터페이스를 구현합니다. 인터페이스에서 주석을 처리하도록 AnnotatedStandardMBean 클래스를 확장합니다.
+* 관리 인터페이스: getter, setter 및 is 메서드를 사용하여 속성을 정의합니다. 다른 공개 메서드를 사용하여 작업을 정의합니다. 주석을 사용하여 BeanInfo 객체에 대한 메타데이터를 제공합니다.
+* MBean 클래스: 관리 인터페이스를 구현합니다. 인터페이스에서 주석을 처리하도록 AnnotatedStandardMBean 클래스를 확장합니다.
 
 다음 예제 MBean은 CRX 리포지토리에 대한 정보를 제공합니다. 인터페이스는 설명 주석을 사용하여 JMX 콘솔에 정보를 제공합니다.
 
@@ -133,7 +128,7 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 ![jmxdescription](assets/jmxdescription.png)
 
-### MBeans {#registering-mbeans} 등록
+### MBeans 등록 {#registering-mbeans}
 
 MBeans를 OSGi 서비스로 등록하면 MBean 서버에 자동으로 등록됩니다. CQ5에 MBean을 설치하려면 번들에 포함하여 다른 OSGi 서비스와 마찬가지로 MBean 서비스를 내보냅니다.
 
@@ -195,7 +190,7 @@ BundleContext를 사용하여 MBean을 OSGi 서비스로 등록합니다. Bundle
 
 다음 코드 예제에서 ExampleMBean 서비스는 프로그래밍 방식으로 등록됩니다. componentContext 개체는 BundleContext에 액세스할 수 있는 ComponentContext입니다.
 
-#### 코드 조각:프로그래밍 방식의 MBean 서비스 등록 {#code-snippet-programmatic-mbean-service-registration}
+#### 코드 조각: 프로그래밍 방식의 MBean 서비스 등록 {#code-snippet-programmatic-mbean-service-registration}
 
 ```java
 Dictionary mbeanProps = new Hashtable();
@@ -209,14 +204,14 @@ ServiceRegistration serviceregistration =
 
 MBean 서비스 관리자는 서비스 구성을 저장소에 저장할 때 유용합니다. 관리자는 서비스 정보를 검색하고 사용하여 해당 MBean을 구성하고 생성할 수 있습니다. 관리자 클래스는 저장소 변경 이벤트를 수신하고 그에 따라 MBean 서비스를 업데이트할 수도 있습니다.
 
-## 예:JMX {#example-monitoring-workflow-models-using-jmx}을 사용하여 워크플로우 모델 모니터링
+## 예: JMX를 사용한 워크플로우 모델 모니터링 {#example-monitoring-workflow-models-using-jmx}
 
 이 예제의 MBean은 저장소에 저장된 CQ5 워크플로우 모델에 대한 정보를 제공합니다. MBean 관리자 클래스는 저장소에 저장되고 런타임에 OSGi 서비스를 등록하는 워크플로우 모델을 기반으로 MBean을 만듭니다. 이 예는 다음 멤버를 포함하는 단일 번들로 구성됩니다.
 
-* WorkflowMBean:관리 인터페이스.
-* WorkflowMBeanImpl:MBean 구현 클래스입니다.
-* WorkflowMBeanManager:MBean 관리자 클래스의 인터페이스입니다.
-* WorkflowMBeanManagerImpl:MBean 관리자의 구현 클래스입니다.
+* WorkflowMBean: 관리 인터페이스.
+* WorkflowMBeanImpl: MBean 구현 클래스입니다.
+* WorkflowMBeanManager: MBean 관리자 클래스의 인터페이스입니다.
+* WorkflowMBeanManagerImpl: MBean 관리자의 구현 클래스입니다.
 
 **참고:** 단순하게 하기 위해 이 예제의 코드는 throw된 예외에 대해 로깅을 수행하거나 응답하지 않습니다.
 
@@ -281,14 +276,13 @@ public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements Workflo
 
 WorkflowMBeanManager 서비스에는 WorkflowMBean 서비스를 만드는 구성 요소 활성화 방법이 포함되어 있습니다. 서비스 구현에는 다음 방법이 포함되어 있습니다.
 
-* 활성화:구성 요소 활성화기입니다. WorkflowModel 구성 노드를 읽기 위한 JCR 세션을 만듭니다. 모델 구성이 저장되는 루트 노드는 정적 필드에 정의됩니다. 구성 노드의 이름은 정적 필드에서도 정의됩니다. 이 메서드는 노드 모델 경로를 가져와 모델 WorkflowMBeans를 만드는 다른 메서드를 호출합니다.
-* getModelIds:루트 노드 아래의 저장소를 트래버스하고 각 모델 노드의 경로를 검색합니다.
-* makeMBean:모델 경로를 사용하여 WorkflowModel 개체를 만들고 WorkflowMBean을 만들고 OSGi 서비스를 등록합니다.
+* 활성화: 구성 요소 활성화기입니다. WorkflowModel 구성 노드를 읽기 위한 JCR 세션을 만듭니다. 모델 구성이 저장되는 루트 노드는 정적 필드에 정의됩니다. 구성 노드의 이름은 정적 필드에서도 정의됩니다. 이 메서드는 노드 모델 경로를 가져와 모델 WorkflowMBeans를 만드는 다른 메서드를 호출합니다.
+* getModelIds: 루트 노드 아래의 저장소를 트래버스하고 각 모델 노드의 경로를 검색합니다.
+* makeMBean: 모델 경로를 사용하여 WorkflowModel 개체를 만들고 WorkflowMBean을 만들고 OSGi 서비스를 등록합니다.
 
 >[!NOTE]
 >
 >WorkflowMBeanManager 구현은 구성 요소가 활성화될 때 존재하는 모델 구성에 대한 MBean 서비스만 만듭니다. 더욱 강력한 구현은 새로운 모델 구성 및 기존 모델 구성의 변경 또는 삭제와 관련된 저장소 이벤트를 수신합니다. 변경 사항이 발생하면 관리자는 해당 WorkflowMBean 서비스를 생성, 수정 또는 제거할 수 있습니다.
-
 
 #### WorkflowMBeanManager 인터페이스 {#workflowmbeanmanager-interface}
 
@@ -425,19 +419,19 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 }
 ```
 
-### 예제 MBean {#the-pom-file-for-the-example-mbean}에 대한 POM 파일입니다.
+### 예제 MBean에 대한 POM 파일 {#the-pom-file-for-the-example-mbean}
 
 편의상, 다음 XML 코드를 복사하여 구성 요소 번들을 빌드하기 위한 프로젝트 pom.xml 파일에 붙여넣을 수 있습니다. POM은 몇 가지 필수 플러그인 및 종속성을 참조합니다.
 
 **플러그인:**
 
-* Apache Maven 컴파일러 플러그인:소스 코드에서 Java 클래스를 컴파일합니다.
-* Apache Felix Maven 번들 플러그인:번들 및 매니페스트를 만듭니다.
-* Apache Felix Maven SCR 플러그인:구성 요소 설명자 파일을 만들고 서비스 구성 요소 매니페스트 헤더를 구성합니다.
+* Apache Maven 컴파일러 플러그인: 소스 코드에서 Java 클래스를 컴파일합니다.
+* Apache Felix Maven 번들 플러그인: 번들 및 매니페스트를 만듭니다.
+* Apache Felix Maven SCR 플러그인: 구성 요소 설명자 파일을 만들고 서비스 구성 요소 매니페스트 헤더를 구성합니다.
 
 **참고:** 작성 시, maven scr 플러그인은 Eclipse용 m2e 플러그인과 호환되지 않습니다. ([Felix 버그 3170](https://issues.apache.org/jira/browse/FELIX-3170)을 참조하십시오.) Eclipse IDE를 사용하려면 Maven을 설치하고 명령줄 인터페이스를 사용하여 빌드를 수행합니다.
 
-#### 예제 POM 파일 {#example-pom-file}
+#### POM 파일 예 {#example-pom-file}
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -561,13 +555,13 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
     <properties>
          <releaseRepository-Id>adobe-public-releases</releaseRepository-Id>
          <releaseRepository-Name>Adobe Public Releases</releaseRepository-Name>
-         <releaseRepository-URL>https://repo.adobe.com/nexus/content/groups/public</releaseRepository-URL>
+         <releaseRepository-URL>https://repo1.maven.org/maven2/com/adobe/</releaseRepository-URL>
     </properties>
     <repositories>
          <repository>
              <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
+             <name>Adobe  Public Repository</name>
+             <url>https://repo1.maven.org/maven2/com/adobe/</url>
              <releases>
                  <enabled>true</enabled>
                  <updatePolicy>never</updatePolicy>
@@ -580,8 +574,8 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
      <pluginRepositories>
          <pluginRepository>
              <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
+             <name>Adobe Public Repository</name>
+             <url>https://repo1.maven.org/maven2/com/adobe/</url>
              <releases>
                  <enabled>true</enabled>
                  <updatePolicy>never</updatePolicy>
