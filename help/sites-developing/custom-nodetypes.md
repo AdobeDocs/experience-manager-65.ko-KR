@@ -1,8 +1,8 @@
 ---
 title: 사용자 지정 노드 유형
-seo-title: 사용자 지정 노드 유형
+seo-title: Custom Node Types
 description: AEM은 Sling을 기반으로 하며 두 가지 모두에서 제공하는 노드 유형으로 JCR 저장소를 사용하지만 AEM에서는 사용자 정의 노드 유형도 제공합니다
-seo-description: AEM은 Sling을 기반으로 하며 두 가지 모두에서 제공하는 노드 유형으로 JCR 저장소를 사용하지만 AEM에서는 사용자 정의 노드 유형도 제공합니다
+seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1877'
 ht-degree: 9%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 AEM은 Sling을 기반으로 하며 JCR 저장소를 사용하므로 두 노드 모두에서 제공하는 노드 유형을 사용할 수 있습니다.
 
-* [JCR 노드 유형](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [JCR 노드 유형](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling 노드 유형](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 여기에 더요 AEM에서는 다양한 사용자 지정 노드 유형을 제공합니다.
@@ -320,7 +320,7 @@ CQ 구성 요소를 mixin 유형으로 정의합니다.
 
 구성 요소의 한 드롭 대상을 구성합니다. 이 노드의 이름은 드래그 앤 드롭에 대한 ID로 사용됩니다.
 
-* `@prop accept` - 이 드롭 대상에서 허용되는 MIME 유형 목록예  `["image/*"]`
+* `@prop accept` - 이 드롭 대상에서 허용되는 MIME 유형 목록 예  `["image/*"]`
 * `@prop groups` - 소스를 허용하는 드래그 앤 드롭 그룹 목록입니다.
 * `@prop propertyName` - 참조를 저장하는 데 사용되는 속성의 이름입니다.
 
@@ -448,7 +448,7 @@ DAM 자산을 나타내는 축소판입니다.
 
 **설명**
 
-`cq:attributes` 는 ContentBus 버전 태그의 노드 유형입니다. 이 노드에는 일련의 속성만 있습니다.이 중 3개는 사전 정의된 &quot;생성됨&quot;, &quot;csd&quot; 및 &quot;timestampe&quot;입니다.
+`cq:attributes` 는 ContentBus 버전 태그의 노드 유형입니다. 이 노드에는 일련의 속성만 있습니다. 이 중 3개는 사전 정의된 &quot;생성됨&quot;, &quot;csd&quot; 및 &quot;timestampe&quot;입니다.
 
 * `@prop created (long) mandatory copy` - 버전 정보 작성 타임스탬프, 일반적으로 이전 버전을 체크 인한 시간 또는 페이지 작성 시간입니다.
 * `@prop csd (string) mandatory copy` - csd 표준 속성, 페이지 노드의 cq:csd 속성 사본
@@ -584,7 +584,7 @@ LiveSync mixin을 정의합니다. 노드가 기본 소스(제어) 노드 및 Li
 
 LiveSyncCanceled mixin을 정의합니다. 부모 중 하나로 인해 LiveRelationship에 포함될 수 있는 Live Copy(제어된) 노드의 LiveSync 동작을 취소합니다.
 
-* `@prop cq:isCancelledForChildren` - LiveSync가 취소되는지 여부를 정의합니다.또한 아이들을 위한 것입니다.
+* `@prop cq:isCancelledForChildren` - LiveSync가 취소되는지 여부를 정의합니다. 또한 아이들을 위한 것입니다.
 
 **정의**
 
@@ -656,7 +656,7 @@ AEM 5.4의 경우 목록 끝에 를 추가합니다.
 * `@prop cq:lastPublishedBy`- 페이지를 마지막으로 게시한 사용자(더 이상 사용되지 않음)입니다.
 * `@prop cq:lastReplicated` - 페이지를 마지막으로 복제한 날짜입니다.
 * `@prop cq:lastReplicatedBy` - 페이지를 마지막으로 복제한 사용자입니다.
-* `@prop cq:lastReplicationAction` - 복제 작업:활성화 또는 비활성화합니다.
+* `@prop cq:lastReplicationAction` - 복제 작업: 활성화 또는 비활성화합니다.
 * `@prop cq:lastReplicationStatus` - 복제 상태(더 이상 사용되지 않음).
 
 **정의**
@@ -766,7 +766,7 @@ AEM 5.4의 경우 목록 끝에 를 추가합니다.
 
 ## 태깅 {#tagging}
 
-### cq:Tag {#cq-tag}
+### cq:태그 {#cq-tag}
 
 **설명**
 
@@ -906,7 +906,7 @@ AEM 5.4의 경우 목록 끝에 를 추가합니다.
 
 * `[cq:Dialog] > cq:Widget orderable`
 
-### cq:Panel {#cq-panel}
+### cq:패널 {#cq-panel}
 
 **설명**
 
@@ -963,7 +963,7 @@ Wiki 항목
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:User {#wiki-user}
+### wiki:사용자 {#wiki-user}
 
 **설명**
 
@@ -974,7 +974,7 @@ Wiki 사용자
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:Properties {#wiki-properties}
+### wiki:속성 {#wiki-properties}
 
 **설명**
 
@@ -986,7 +986,7 @@ Wiki 속성
    * `- wiki:isGlobal (boolean)`
    * `- * (undefined)`
 
-## 워크플로우 {#workflow}
+## 워크플로 {#workflow}
 
 ### cq:Workflow {#cq-workflow}
 

@@ -1,8 +1,8 @@
 ---
 title: 워크플로우 시작
-seo-title: 워크플로우 시작
+seo-title: Starting Workflows
 description: AEM에서 워크플로우를 시작하는 방법을 알아봅니다.
-seo-description: AEM에서 워크플로우를 시작하는 방법을 알아봅니다.
+seo-description: Learn how to start Workflows in AEM.
 uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '794'
 ht-degree: 5%
 
 ---
@@ -28,17 +28,18 @@ ht-degree: 5%
 
 * 자동:
 
-   * 노드 변경에 응답하여[Launcher](#workflows-launchers) 사용.
+   * 노드 변경에 응답하여 [Launcher](#workflows-launchers) 사용.
 
 >[!NOTE]
 >
->작성자도 다른 방법을 사용할 수 있습니다.자세한 내용은 다음을 참조하십시오.
+>작성자도 다른 방법을 사용할 수 있습니다. 자세한 내용은 다음을 참조하십시오.
 >
 >* [페이지에 워크플로우 적용](/help/sites-authoring/workflows-applying.md)
-* [DAM 자산에 워크플로우를 적용하는 방법](/help/assets/assets-workflow.md)
-* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
-* [번역 프로젝트](/help/sites-administering/tc-manage.md)
+>* [DAM 자산에 워크플로우를 적용하는 방법](/help/assets/assets-workflow.md)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [번역 프로젝트](/help/sites-administering/tc-manage.md)
 
+>
 
 
 ## 워크플로우 모델 {#workflow-models}
@@ -67,7 +68,7 @@ ht-degree: 5%
 * `/var/mobile`
 * `/var/statistics`
 
-   * 예외:`/var/statistics/tracking` *do* 아래의 노드를 변경하면 워크플로우가 시작됩니다.
+   * 예외: `/var/statistics/tracking` *do* 아래의 노드를 변경하면 워크플로우가 시작됩니다.
 
 표준 설치에는 다양한 정의가 포함되어 있습니다. 디지털 자산 관리 및 소셜 협업 작업에 사용됩니다.
 
@@ -81,19 +82,20 @@ ht-degree: 5%
 
 * 일련의 리소스(예: 페이지, 자산)에 대한 링크를 포함합니다.
 * 생성 날짜, 패키지를 만든 사용자 및 간단한 설명과 같은 패키지 정보를 포함합니다.
-* 는 전문 페이지 템플릿을 사용하여 정의됩니다.이러한 페이지에서는 사용자가 패키지의 리소스를 지정할 수 있습니다.
+* 는 전문 페이지 템플릿을 사용하여 정의됩니다. 이러한 페이지에서는 사용자가 패키지의 리소스를 지정할 수 있습니다.
 * 여러 번 사용할 수 있습니다.
 * 워크플로우 인스턴스가 실제로 실행되는 동안 사용자가 변경할 수 있습니다(리소스 추가 또는 제거).
 
 ## 모델 콘솔에서 워크플로우 시작 {#starting-a-workflow-from-the-models-console}
 
 1. **도구**, **워크플로우**&#x200B;를 사용하여 **모델** 콘솔로 이동한 다음 **모델**&#x200B;으로 이동합니다.
-1. 워크플로우 선택(콘솔 보기에 따라);필요할 경우 검색(왼쪽 상단)을 사용할 수도 있습니다.
+1. 워크플로우 선택(콘솔 보기에 따라); 필요할 경우 검색(왼쪽 상단)을 사용할 수도 있습니다.
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
-   **[임시](/help/sites-developing/workflows.md#transient-workflows)** 표시기는 워크플로우 기록이 지속되지 않는 워크플로우를 보여줍니다.
+   >
+   >**[임시](/help/sites-developing/workflows.md#transient-workflows)** 표시기는 워크플로우 기록이 지속되지 않는 워크플로우를 보여줍니다.
 
 1. 도구 모음에서 **워크플로우 시작**&#x200B;을 선택합니다.
 1. 워크플로우 실행 대화 상자가 열려 다음 사항을 지정할 수 있습니다.
@@ -169,10 +171,10 @@ ht-degree: 5%
 
       워크플로우 트리거 여부를 결정할 때 제외할 JCR 이벤트(즉, 무시)를 지정합니다.
 
-      이 시작 관리자 속성은 쉼표로 구분된 항목 목록입니다.&quot;
+      이 시작 관리자 속성은 쉼표로 구분된 항목 목록입니다. &quot;
 
-      * `property-name` 지정된  `jcr` 속성 이름에서 트리거되는 모든 이벤트를 무시합니다.&quot;
-      * `event-user-data:<*someValue*>` 는  `*<someValue*`API `user-data` (https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String)을 통해  [ `ObservationManager` > ]설정된 이벤트를 포함하는 모든 이벤트를 무시합니다.
+      * `property-name` 지정된  `jcr` 속성 이름에서 트리거되는 모든 이벤트를 무시합니다. &quot;
+      * `event-user-data:<*someValue*>` 는  `*<someValue*`API `user-data` (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String)을 통해  [ `ObservationManager` > ]설정된 이벤트를 포함하는 모든 이벤트를 무시합니다.
 
       예:
 
@@ -190,6 +192,6 @@ ht-degree: 5%
 
    적절한 이벤트가 발생하면 실행 프로그램이 트리거되고 워크플로우가 시작됩니다.
 
-## 시작 관리자 구성 관리 {#managing-a-launcher-configuration}
+## 런처 구성 관리 {#managing-a-launcher-configuration}
 
 런처 구성을 만든 후 동일한 콘솔을 사용하여 인스턴스를 선택하고 **속성 보기**(및 편집) 또는 **삭제**&#x200B;를 선택할 수 있습니다.

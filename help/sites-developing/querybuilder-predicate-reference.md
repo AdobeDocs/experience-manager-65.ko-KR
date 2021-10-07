@@ -1,8 +1,8 @@
 ---
 title: Query Builder 설명 참조
-seo-title: Query Builder 설명 참조
+seo-title: Query Builder Predicate Reference
 description: Query Builder API에 대한 전체 설명 참조입니다.
-seo-description: Query Builder API에 대한 전체 설명 참조입니다.
+seo-description: Complete predicate reference for the Query Builder API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2310'
 ht-degree: 3%
 
 ---
@@ -61,11 +61,11 @@ JCR 부울 속성에 대해 일치합니다. 값 &quot; `true`&quot; 및 &quot; 
 #### 속성 {#properties}
 
 * ****
-속성 상대 경로(예: ) 
+boolproperty속성의 상대 경로(예: 
 `myFeatureEnabled` 또는 `jcr:content/myFeatureEnabled`
 
 * ****
-값: &quot; 
+value 값은 &quot; 
 `true`&quot; 또는 &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
@@ -79,7 +79,7 @@ JCR 부울 속성에 대해 일치합니다. 값 &quot; `true`&quot; 및 &quot; 
 #### 속성 {#properties-1}
 
 * ****
-컨텐츠 조각컨텐츠 조각을 확인하는 데 어떤 값으로든 사용할 수 있습니다.
+contentfragment어떤 값으로든 사용하여 컨텐츠 조각을 확인할 수 있습니다.
 
 ### dateComparison {#datecomparison}
 
@@ -221,7 +221,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-현재 세션에 지정된 [JCR 권한이 있는 항목으로 결과를 제한합니다.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+현재 세션에 지정된 [JCR 권한이 있는 항목으로 결과를 제한합니다.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 필터링 전용 조건이며 검색 색인을 활용할 수 없습니다. 패싯 추출을 지원하지 않습니다.
 
@@ -229,7 +229,7 @@ group.2_group.type=dam:Asset
 
 * **hasPermission**
 
-   해당 노드에 대해 현재 사용자 세션이 모두 가져야 하는 쉼표로 구분된 JCR 권한예: `jcr:write`, `jcr:modifyAccessControl`
+   해당 노드에 대해 현재 사용자 세션이 모두 가져야 하는 쉼표로 구분된 JCR 권한 예: `jcr:write`, `jcr:modifyAccessControl`
 
 ### 언어 {#language}
 
@@ -281,7 +281,7 @@ JCR 노드 이름에 일치합니다.
 
 * **노네임**
 
-   와일드카드를 사용할 수 있는 노드 이름 패턴:`*` = 임의 또는 임의 문자 없음, `?` = 임의 문자, `[abc]` = 대괄호 안의 문자만
+   와일드카드를 사용할 수 있는 노드 이름 패턴: `*` = 임의 또는 임의 문자 없음, `?` = 임의 문자, `[abc]` = 대괄호 안의 문자만
 
 ### 만료되지 않음 {#notexpired}
 
@@ -317,7 +317,7 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
 * **사례**
 
-   &quot; `ignore`&quot;로 설정하면 정렬 대소문자를 구분하지 않게 됩니다. 즉, &quot;a&quot;가 &quot;B&quot; 앞에 옵니다.비어 있거나 비워 두면 대소문자를 구분합니다. 즉, &quot;B&quot;가 &quot;a&quot; 앞에 옵니다.
+   &quot; `ignore`&quot;로 설정하면 정렬 대소문자를 구분하지 않게 됩니다. 즉, &quot;a&quot;가 &quot;B&quot; 앞에 옵니다. 비어 있거나 비워 두면 대소문자를 구분합니다. 즉, &quot;B&quot;가 &quot;a&quot; 앞에 옵니다.
 
 ### 경로 {#path}
 
@@ -329,11 +329,11 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
 * **경로**
 
-   경로 패턴;완전 하위 트리에는 정확히 일치합니다(예: xpath에 `//*` 추가). 하지만 여기에는 기본 경로가 포함되지 않습니다(exact=false, default). 또는 와일드카드( `*`)를 포함할 수 있는 정확한 경로 일치만 포함됩니다.자체 설정되면 기본 노드를 포함하는 전체 하위 트리가 검색됩니다
+   경로 패턴; 완전 하위 트리에는 정확히 일치합니다(예: xpath에 `//*` 추가). 하지만 여기에는 기본 경로가 포함되지 않습니다(exact=false, default). 또는 와일드카드( `*`)를 포함할 수 있는 정확한 경로 일치만 포함됩니다. 자체 설정되면 기본 노드를 포함하는 전체 하위 트리가 검색됩니다
 
 * **정확히**
 
-   `exact` 이 true/on이면 정확한 경로가 일치해야 하지만, 일치하는 이름인 단순 와일드카드( `*`)를 포함할 수 있지만 &quot; `/`&quot; 는 포함할 수 없습니다.false(기본값)이면 모든 하위 항목이 포함됩니다(선택 사항).
+   `exact` 이 true/on이면 정확한 경로가 일치해야 하지만, 일치하는 이름인 단순 와일드카드( `*`)를 포함할 수 있지만 &quot; `/`&quot; 는 포함할 수 없습니다. false(기본값)이면 모든 하위 항목이 포함됩니다(선택 사항).
 
 * **평면**
 
@@ -357,7 +357,7 @@ JCR 속성 및 해당 값에 일치합니다.
 
 * **정렬 단추**
 
-   속성을 확인하는 값입니다.는 JCR 속성 유형을 문자열 전환으로 따릅니다
+   속성을 확인하는 값입니다. 는 JCR 속성 유형을 문자열 전환으로 따릅니다
 
 * **N_value**
 
@@ -455,7 +455,7 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
 * **p.guessTotal**
 
-   권장 사항:비용이 많이 들 수 있는 전체 결과 합계를 계산하지 마십시오.최대 계산할 최대 총계를 나타내는 숫자(예: 1000, 대략적인 크기와 더 작은 결과를 위한 정확한 숫자를 사용자에게 제공하는 숫자) 또는 필요한 최소 `p.offset` + `p.limit`까지만 계산되도록 &quot; `true`&quot;
+   권장 사항: 비용이 많이 들 수 있는 전체 결과 합계를 계산하지 마십시오. 최대 계산할 최대 총계를 나타내는 숫자(예: 1000, 대략적인 크기와 더 작은 결과를 위한 정확한 숫자를 사용자에게 제공하는 숫자) 또는 필요한 최소 `p.offset` + `p.limit`까지만 계산되도록 &quot; `true`&quot;
 
 * **p.intract**
 
@@ -471,11 +471,11 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
    * **전체**:
 
-      히트의 경로를 나타내는 `jcr:path` 이 있는 노드의 sling JSON 렌더링:기본적으로 노드의 직접 속성을 나열하고 `p.nodedepth=N` 이 있는 더 깊은 트리를 포함하고 0은 전체 무한 하위 트리를 의미합니다.지정된 결과 항목에 현재 세션의 JCR 권한을 포함하도록 `p.acls=true` 추가(매핑:`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
+      히트의 경로를 나타내는 `jcr:path` 이 있는 노드의 sling JSON 렌더링: 기본적으로 노드의 직접 속성을 나열하고 `p.nodedepth=N` 이 있는 더 깊은 트리를 포함하고 0은 전체 무한 하위 트리를 의미합니다. 지정된 결과 항목에 현재 세션의 JCR 권한을 포함하도록 `p.acls=true` 추가(매핑: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
 
    * **선택적**:
 
-      `p.properties`에 지정된 등록 정보로서, URL에서 &quot;+&quot;를 사용하고 상대 경로 목록인 경우상대 경로에 깊이가 1보다 큰 경우 하위 개체로 표시됩니다.특수 jcr:path 속성은 히트의 경로를 포함합니다
+      `p.properties`에 지정된 등록 정보로서, URL에서 &quot;+&quot;를 사용하고 상대 경로 목록인 경우 상대 경로에 깊이가 1보다 큰 경우 하위 개체로 표시됩니다. 특수 jcr:path 속성은 히트의 경로를 포함합니다
 
 ### savedquery {#savedquery}
 
@@ -505,7 +505,7 @@ JCR XPath의 `rep:similar()`을 사용한 유사성 검색.
 유사한 노드를 찾을 노드의 유사 절대 경로
 
 * ****
-하위 노드 또는 하위 노드에 대한 로컬 상대 경로 
+하위 노드 또는 하위 노드의 로컬 상대 경로 
 `.` 현재 노드의 경우(선택 사항, 기본값은 &quot;  `.`&quot;)
 
 ### 태그 {#tag}
@@ -518,7 +518,7 @@ JCR XPath의 `rep:similar()`을 사용한 유사성 검색.
 
 * **태그**
 
-   찾을 태그 제목 경로(예: &quot;자산 속성 :방향/가로&quot;
+   찾을 태그 제목 경로(예: &quot;자산 속성 : 방향/가로&quot;
 
 * **N_value**
 
@@ -566,7 +566,7 @@ JCR XPath의 `rep:similar()`을 사용한 유사성 검색.
 
 * **lang**
 
-   현지화된 특정 태그 제목에서만 검색할 수 있습니다(예:&quot; `de`&quot;)
+   현지화된 특정 태그 제목에서만 검색할 수 있습니다(예: &quot; `de`&quot;)
 
 * **모두**
 

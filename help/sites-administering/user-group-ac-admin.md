@@ -1,8 +1,8 @@
 ---
 title: 사용자, 그룹 및 액세스 권한 관리
-seo-title: 사용자, 그룹 및 액세스 권한 관리
+seo-title: User, Group and Access Rights Administration
 description: AEM의 사용자, 그룹 및 액세스 권한 관리에 대해 알아봅니다.
-seo-description: AEM의 사용자, 그룹 및 액세스 권한 관리에 대해 알아봅니다.
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
-feature: 보안
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Security
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3120'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ CRX에서 그룹에는 다음 속성이 있습니다.
 
 * 공통 액세스 권한을 가진 사용자 그룹을 나타냅니다. 예를 들어 작성자 또는 개발자가 있습니다.
 * 해당 작업 공간에 적용할 수 있습니다.
-* 회원이 있을 수 있습니다.개별 사용자 또는 다른 그룹일 수 있습니다.
+* 회원이 있을 수 있습니다. 개별 사용자 또는 다른 그룹일 수 있습니다.
 * 멤버 관계를 사용하여 계층적 그룹화를 수행할 수 있습니다. 리포지토리의 다른 그룹 바로 아래에 그룹을 배치할 수 없습니다.
 * 모든 그룹 구성원의 액세스 권한을 정의할 수 있습니다.
 
@@ -62,11 +62,11 @@ CRX를 사용하면 사용자 및 그룹 계정 모두에 대한 액세스 권�
 
 >[!NOTE]
 >
->CRX는 JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html)에 의해 정의된 대로 [액세스 제어를 구현합니다.
+>CRX는 JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)에 의해 정의된 대로 [액세스 제어를 구현합니다.
 >
 >CRX 저장소의 표준 설치는 리소스 기반 액세스 제어 목록을 사용하도록 구성됩니다. 이는 JSR-283 액세스 제어의 가능한 구현과 Jackrabbit이 있는 구현 중 하나입니다.
 
-### 제목 및 주체 {#subjects-and-principals}
+### 주제 및 주도자 {#subjects-and-principals}
 
 CRX는 액세스 권한을 평가할 때 두 가지 주요 개념을 사용합니다.
 
@@ -90,7 +90,7 @@ CRX는 액세스 권한을 평가할 때 두 가지 주요 개념을 사용합�
       사용자가 속한 그룹에 할당된 모든 권한.
    그런 다음 요청된 리소스에 대한 액세스를 허용하거나 거부하는 데 결과를 사용합니다.
 
-#### 제목 {#compiling-the-list-of-access-rights-for-a-subject}에 대한 액세스 권한 목록 컴파일
+#### 제목에 대한 액세스 권한 목록 컴파일 {#compiling-the-list-of-access-rights-for-a-subject}
 
 CRX에서 제목은 다음에 따라 다릅니다.
 
@@ -111,7 +111,6 @@ CRX에서 제목은 다음에 따라 다릅니다.
 >* 그룹을 지정하는 순서는 액세스 권한에 영향을 주지 않습니다.
 
 >
-
 
 
 ### 요청 및 액세스 권한 해결 {#resolving-request-and-access-rights}
@@ -253,7 +252,7 @@ GroupID(사용 가능한 경우)를 클릭하면 해당 그룹에 대한 [그룹
 
 즉, 사용자 계정은 해당 계정으로 작업할 수 있는 다른 계정(사용자 또는 그룹)을 지정할 수 있습니다. 즉, 사용자-B가 사용자-A를 가장할 수 있는 경우, 사용자-B는 사용자-A의 전체 계정 세부 정보(ID, 이름 및 액세스 권한 포함)를 사용하여 작업을 수행할 수 있습니다.
 
-이를 통해 가장자 계정이 가장하고 있는 계정을 사용하는 것처럼 작업을 완료할 수 있습니다.예를 들어, 부재 중 또는 과도한 로드 단말을 공유하는 경우
+이를 통해 가장자 계정이 가장하고 있는 계정을 사용하는 것처럼 작업을 완료할 수 있습니다. 예를 들어, 부재 중 또는 과도한 로드 단말을 공유하는 경우
 
 만약 한 계좌가 다른 계좌에서 가장하면, 그것은 보기 매우 어렵다. 로그 파일에는 이벤트에서 가장이 발생했는지에 대한 정보가 없습니다. 따라서 사용자-B를 가장하는 경우 - 모든 이벤트는 사용자-A에 의해 개인적으로 수행된 것처럼 표시됩니다.
 
@@ -285,7 +284,6 @@ GroupID(사용 가능한 경우)를 클릭하면 해당 그룹에 대한 [그룹
 >
 
 
-
 ### 사용자 계정 업데이트 {#updating-a-user-account}
 
 1. **사용자 관리** 대화 상자에서 모든 계정의 목록 보기를 엽니다.
@@ -294,11 +292,11 @@ GroupID(사용 가능한 경우)를 클릭하면 해당 그룹에 대한 [그룹
 1. 변경한 다음 해당 항목에 대해 저장(녹색 눈금 기호)을 클릭합니다.
 1. **Close** 를 클릭하여 마치거나 **목록... 을 클릭하십시오.모든 사용자 계정 목록으로 돌아가려면** 를 클릭합니다.
 
-### 사용자 계정 제거 중 {#removing-a-user-account}
+### 사용자 계정 제거 {#removing-a-user-account}
 
 1. **사용자 관리** 대화 상자에서 모든 계정의 목록 보기를 엽니다.
 1. 트리 구조를 탐색합니다.
-1. 필요한 계정을 선택하고 **사용자 제거**;계정이 즉시 삭제됩니다.
+1. 필요한 계정을 선택하고 **사용자 제거**; 계정이 즉시 삭제됩니다.
 
 >[!NOTE]
 >
@@ -404,11 +402,11 @@ GroupID를 클릭하면 해당 그룹에 대한 대화 상자가 열립니다.
 1. 변경한 다음 해당 항목에 대해 저장(녹색 눈금 기호)을 클릭합니다.
 1. **Close** 를 클릭하여 마치거나 **목록... 을 클릭하십시오.모든 그룹 계정 목록으로 돌아가려면** 를 클릭합니다.
 
-### 그룹 계정 제거 중 {#removing-a-group-account}
+### 그룹 계정 제거 {#removing-a-group-account}
 
 1. **그룹 관리** 대화 상자에서 모든 계정의 목록 보기를 엽니다.
 1. 트리 구조를 탐색합니다.
-1. 필요한 계정을 선택하고 **그룹 제거**;계정이 즉시 삭제됩니다.
+1. 필요한 계정을 선택하고 **그룹 제거**; 계정이 즉시 삭제됩니다.
 
 >[!NOTE]
 >
@@ -536,7 +534,7 @@ CRXDE Lite의 **액세스 제어** 탭을 사용하여 액세스 제어 정책�
   </tr>
   <tr>
    <td><code>jcr:lockManagement</code></td>
-   <td>노드 잠금 및 잠금 해제;잠금을 새로 고칩니다.</td>
+   <td>노드 잠금 및 잠금 해제; 잠금을 새로 고칩니다.</td>
   </tr>
   <tr>
    <td><code>jcr:modifyAccessControl</code></td>
@@ -634,7 +632,7 @@ CRXDE Lite의 **액세스 제어** 탭을 사용하여 액세스 제어 정책�
    * **로컬 액세스 제어 정책** 아래에 나열됩니다.
    * 변경 내용은 **유효 액세스 제어 정책**&#x200B;에 반영됩니다.
 
-CRX가 선택 항목의 유효성을 검사합니다.주어진 주도자에 대해 주어진 노드에 대한 입력 허용(최대) 1 거부 및 1이 있습니다. 구현은 항상 중복 항목을 지우고 허용 및 거부 항목 모두에 동일한 권한이 나열되지 않는지 확인합니다.
+CRX가 선택 항목의 유효성을 검사합니다. 주어진 주도자에 대해 주어진 노드에 대한 입력 허용(최대) 1 거부 및 1이 있습니다. 구현은 항상 중복 항목을 지우고 허용 및 거부 항목 모두에 동일한 권한이 나열되지 않는지 확인합니다.
 
 ### 로컬 액세스 제어 정책 순서 지정 {#ordering-local-access-control-policies}
 
@@ -646,7 +644,7 @@ CRX가 선택 항목의 유효성을 검사합니다.주어진 주도자에 대�
 
 1. 변경 내용은 **Local** 및 **유효한 액세스 제어 정책**&#x200B;에 대한 두 표에 모두 표시됩니다.
 
-### 액세스 제어 정책 제거 중 {#removing-an-access-control-policy}
+### 액세스 제어 정책 제거 {#removing-an-access-control-policy}
 
 1. **로컬 액세스 제어 정책** 테이블의 항목 오른쪽에 있는 빨간색 아이콘(-)을 클릭합니다.
 1. **Local**&#x200B;과 **Effective Access Control Policy**&#x200B;의 두 테이블에서 항목이 제거됩니다.

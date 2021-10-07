@@ -1,8 +1,8 @@
 ---
 title: AEM에 기여
-seo-title: AEM에 기여
+seo-title: Contributing to AEM
 description: AEM은 대규모 오픈 소스 프로젝트에서 일반적으로 사용되는 검증된 방법론에 따라 개발되었습니다
-seo-description: AEM은 대규모 오픈 소스 프로젝트에서 일반적으로 사용되는 검증된 방법론에 따라 개발되었습니다
+seo-description: AEM is developed following proven methodologies commonly practiced in large open source projects
 uuid: ffef60ae-8a9a-4c4b-8cbd-3cd72792a42e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2726'
+source-wordcount: '2709'
 ht-degree: 1%
 
 ---
@@ -45,19 +45,19 @@ HTTP(HyperText Transfer Protocol)는 Adobe가 수행하는 모든 작업의 중�
 * 브라우저 쿠키
 * 및 기타 최신 웹 개발 개념
 
-Adobe Experience Manager의 기술 스택은 [Apache Felix](https://felix.apache.org/) 웹 프레임워크가 있는 OSGI 컨테이너를 기반으로 하며 [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html)을 기반으로 Java 컨텐츠 저장소([JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html))를 포함합니다. [](https://sling.apache.org/site/index.html) 기여하려는 영역에서 사용되는 다른 오픈 소스 구성 요소(예: Apache Lucene)는 물론 이러한 개별 프로젝트에 대해 숙지해야 합니다.
+Adobe Experience Manager의 기술 스택은 [Apache Felix](https://felix.apache.org/) 웹 프레임워크가 있는 OSGI 컨테이너를 기반으로 하며 [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html)을 기반으로 Java 컨텐츠 저장소([JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html))를 포함합니다. [](https://sling.apache.org/site/index.html) 기여하려는 영역에서 사용되는 다른 오픈 소스 구성 요소(예: Apache Lucene)는 물론 이러한 개별 프로젝트에 대해 숙지해야 합니다.
 
 ## 부족 지식 {#tribal-knowledge}
 
 어떤 개념과 지도 원칙은 이전 날의 문화에서 깊이 배어 있습니다. 이 섹션은 사용자가 알아야 할 &quot;깊이 있는 DNA 포함&quot; 문제들을 나열합니다.
 
-### 모든 내용이 {#everything-is-content} 컨텐츠입니다.
+### 모든 것이 콘텐츠입니다. {#everything-is-content}
 
 컨텐츠에는 웹 애플리케이션이 지속되는 모든 데이터가 포함됩니다. 모든 종류의 프로그램 코드, 라이브러리, 스크립트, 템플릿, HTML, CSS, 이미지 및 아티팩트는 컨텐츠 리포지토리에 유지되며 패키지 관리자 및 패키지 공유를 통해 패키지 형태로 가져오거나 내보냅니다.
 
-### David의 모델 {#david-s-model}
+### 데이비드 모델 {#david-s-model}
 
-Java Content Repository에서 컨텐츠를 모델링하는 방법은 관계형 환경에서 데이터 모델링을 위해 소프트웨어 업계에서 일반적으로 사용되는 방식과 완전히 다른 사고방식을 요구합니다. 컨텐츠 관리 분야의 새로운 고객을 위한 필수 독서는 [David&#39;s Model입니다.컨텐츠 모델링 안내서](https://wiki.apache.org/jackrabbit/DavidsModel).
+Java Content Repository에서 컨텐츠를 모델링하는 방법은 관계형 환경에서 데이터 모델링을 위해 소프트웨어 업계에서 일반적으로 사용되는 방식과 완전히 다른 사고방식을 요구합니다. 컨텐츠 관리 분야의 새로운 고객을 위한 필수 독서는 [David&#39;s Model입니다. 컨텐츠 모델링 안내서](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### RESTfulness {#restfulness}
 
@@ -75,35 +75,35 @@ Apache Sling의 요청 해상도에 대해 이해하기 위한 주요 측면은 
 
 ### Quickstart {#quickstart}
 
-3단계 없음:설치하고 실행하려면 Quickstart JAR 파일을 두 번 클릭하여 다운로드하면 됩니다. 3단계는 없습니다. 추가 옵션 기능은 패키지 공유에서 해당 패키지를 설치하는 것 외에는 필요하지 않습니다.
+3단계 없음: 설치하고 실행하려면 Quickstart JAR 파일을 두 번 클릭하여 다운로드하면 됩니다. 3단계는 없습니다. 추가 옵션 기능은 패키지 공유에서 해당 패키지를 설치하는 것 외에는 필요하지 않습니다.
 
-작은 빠른 시작 크기:Quickstart JAR 파일의 크기를 최소 수준으로 유지합니다. 라이브러리를 지능적이고 최적화된 상태로 사용하여 패키지 공유로 옵션 기능을 이동할 수 있습니다.
+작은 빠른 시작 크기: Quickstart JAR 파일의 크기를 최소 수준으로 유지합니다. 라이브러리를 지능적이고 최적화된 상태로 사용하여 패키지 공유로 옵션 기능을 이동할 수 있습니다.
 
-빠른 시작 시간:시작 시간에 영향을 줄 수 있는 변경 작업을 수행하는 경우 더 이상 짧지 않게 됩니다.
+빠른 시작 시간: 시작 시간에 영향을 줄 수 있는 변경 작업을 수행하는 경우 더 이상 짧지 않게 됩니다.
 
-### 평균 및 평균 {#lean-and-mean}
+### 린 및 평균 {#lean-and-mean}
 
 우리는 가볍고, 작고, 빠르고, 우아한 코드와 프로젝트를 선호합니다. &quot;충분히 좋다&quot;는 것은 충분하지 않다.
 
-코드 재사용:Adobe의 OSGi 기반 제품 아키텍처와 &quot;모든 것이 컨텐츠입니다&quot; 철학은 코드와 객체를 재사용할 수 있는 매우 좋은 기회를 가지고 있음을 의미합니다. 우리는 가능한 한 그 사실을 활용하기 위해 무뚝뚝한 성격을 유지하려고 노력한다.
+코드 재사용: Adobe의 OSGi 기반 제품 아키텍처와 &quot;모든 것이 컨텐츠입니다&quot; 철학은 코드와 객체를 재사용할 수 있는 매우 좋은 기회를 가지고 있음을 의미합니다. 우리는 가능한 한 그 사실을 활용하기 위해 무뚝뚝한 성격을 유지하려고 노력한다.
 
-느슨한 결합:우리는 느슨하게 결합된 상호작용과 &quot;원치 않는 친밀감&quot;을 좋아한다. 느슨한 결합을 통해 더 많은 코드를 다시 사용할 수 있습니다.
+느슨한 결합: 우리는 느슨하게 결합된 상호작용과 &quot;원치 않는 친밀감&quot;을 좋아한다. 느슨한 결합을 통해 더 많은 코드를 다시 사용할 수 있습니다.
 
-### 데모 {#don-t-break-the-demo} 중단 안 함
+### 데모 중단 안 함 {#don-t-break-the-demo}
 
 데모 시 가장 많이 표시되는 데모 스크립트 및 제품 기능에 익숙해지십시오. 최소한 &quot;데모 스크립트&quot; 기능을 중단해서는 안 됩니다. 핵심 제품은 개발 중에도 항상 데모 준비가 되어 있어야 합니다.
 
 ### 신뢰성 설계 {#design-for-reliability}
 
-Adobe는 예를 들어 단일 DOM 요소에 문제가 있는 경우 전체 페이지가 렌더링되지 않도록 fail-soft로 디자인 및 코드 기능을 설계하려고 합니다. 즉,치명적이고 치명적인 것들을 만들어라. 다른 모든 것을 생존할 수 있게 만듭니다. 제품을 &quot;용서하라&quot;로 만듭니다.
+Adobe는 예를 들어 단일 DOM 요소에 문제가 있는 경우 전체 페이지가 렌더링되지 않도록 fail-soft로 디자인 및 코드 기능을 설계하려고 합니다. 즉, 치명적이고 치명적인 것들을 만들어라. 다른 모든 것을 생존할 수 있게 만듭니다. 제품을 &quot;용서하라&quot;로 만듭니다.
 
-### 비정상 은 새로운 일반 {#abnormal-is-the-new-normal}입니다.
+### 비정상은 새로운 표준입니다 {#abnormal-is-the-new-normal}
 
 종료 후크에 의존하지 말고 시작 시 정리를 확인합니다. 비정상적인 종료는 정상적인 종결입니다.
 
 `shutdown == kill -9 == power outage`
 
-### 탄성 클러스터링 {#be-ready-for-elastic-clustering} 준비
+### 탄성 클러스터링 준비 {#be-ready-for-elastic-clustering}
 
 항상 탄력적인 클러스터링을 위해 준비하십시오. 항상 클러스터링이 있다고 가정하십시오. 일반적으로 컨텐츠 리포지토리에 있는 모든 것을 준수하는 것은 클러스터링 지원을 통해 구축됩니다.
 
@@ -157,17 +157,17 @@ JavaDoc 또는 JCR 사양 자체를 읽기 전에 Adobe Experience Services에�
 
 **게시 인스턴스**  - 보안, 거버넌스 및 기타 이유로 인해 프로덕션 사이트는 일반적으로 AEM 인스턴스를 작성자 및 게시 인스턴스로 분할합니다. 배포 아키텍처(작성자/게시 인스턴스 포함)에 대한 자세한 내용은 AEM 인스턴스에 대한 설명서를 참조하십시오.
 
-**Quickstart**  - 다른 많은 프로그램과 달리 하나의 &quot;Quickstart&quot; 자동 추출 JAR 파일을 사용하여 AEM을 설치합니다. 처음으로 JAR 파일을 두 번 클릭하면 필요한 모든 항목이 자동으로 설치됩니다. 빠른 시작 JAR에는 CRX 저장소(관리 시설 포함), 가상 저장소 서비스, 인덱스 및 검색 서비스, 워크플로우 서비스, 보안 및 웹 서버에 필요한 모든 파일과 CQ 서블릿 엔진(CQSE) 및 모든 AEM 서비스가 포함됩니다. 설치할 다른 파일이 없습니다.quickstart는 자체 포함되어 있습니다.
+**Quickstart**  - 다른 많은 프로그램과 달리 하나의 &quot;Quickstart&quot; 자동 추출 JAR 파일을 사용하여 AEM을 설치합니다. 처음으로 JAR 파일을 두 번 클릭하면 필요한 모든 항목이 자동으로 설치됩니다. 빠른 시작 JAR에는 CRX 저장소(관리 시설 포함), 가상 저장소 서비스, 인덱스 및 검색 서비스, 워크플로우 서비스, 보안 및 웹 서버에 필요한 모든 파일과 CQ 서블릿 엔진(CQSE) 및 모든 AEM 서비스가 포함됩니다. 설치할 다른 파일이 없습니다. quickstart는 자체 포함되어 있습니다.
 
 Quickstart를 처음 시작하면 배경에 전체 JCR 호환 리포지토리가 생성되며 몇 분이 걸릴 수 있습니다. 이 초기 시작 후 저장소 인프라가 이미 정리되어 있기 때문에 이후 스타트업이 훨씬 더 빠릅니다.
 
-많은 시작 옵션(예: 활성 포트 번호 및 해당 AEM 인스턴스가 게시 인스턴스와 작성자 인스턴스여야 하는지 여부)보다 많은 )은 Quickstart 파일의 이름을 적절하게 변경하여 제어할 수 있습니다. 이와 같은 옵션 목록을 보려면 명령줄에서 &quot;-help&quot;를 사용하여 JAR를 실행하십시오.
+많은 시작 옵션(예: 활성 포트 번호 및 해당 AEM 인스턴스가 게시 인스턴스와 작성자 인스턴스여야 하는지 여부) 보다 많은 )은 Quickstart 파일의 이름을 적절하게 변경하여 제어할 수 있습니다. 이와 같은 옵션 목록을 보려면 명령줄에서 &quot;-help&quot;를 사용하여 JAR를 실행하십시오.
 
 ```shell
 java -jar <quickstartfilename>.jar -help
 ```
 
-**복제 에이전트**  - 복제 에이전트는 작성자에서 게시 환경에 컨텐츠를 게시(활성화)하는 데 사용되는 메커니즘으로 AEM에 중심적입니다.디스패처 캐시에서 콘텐츠를 플러시합니다.게시 환경에서 작성 환경으로 사용자가 생성한 컨텐츠(예: 양식 입력)를 반환합니다.
+**복제 에이전트**  - 복제 에이전트는 작성자에서 게시 환경에 컨텐츠를 게시(활성화)하는 데 사용되는 메커니즘으로 AEM에 중심적입니다. 디스패처 캐시에서 콘텐츠를 플러시합니다. 게시 환경에서 작성 환경으로 사용자가 생성한 컨텐츠(예: 양식 입력)를 반환합니다.
 
 **스캐폴딩**  - 스캐폴딩을 사용하여 페이지에 사용할 구조를 반영하는 필드가 포함된 양식(스캐폴드)을 만든 다음 이 양식을 사용하여 이 구조를 기반으로 페이지를 쉽게 만들 수 있습니다.
 

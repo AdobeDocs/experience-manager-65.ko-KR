@@ -1,8 +1,8 @@
 ---
 title: AEM 코어 개념
-seo-title: 기본 사항
+seo-title: The Basics
 description: AEM 구성 방식에 대한 핵심 개념과 JCR, Sling, OSGi, 디스패처, 워크플로우 및 MSM을 이해하는 것을 포함하여 JCR 구성 방법과 이를 위에서 개발하는 방법에 대한 개요입니다
-seo-description: AEM 구성 방식에 대한 핵심 개념과 JCR, Sling, OSGi, 디스패처, 워크플로우 및 MSM을 이해하는 것을 포함하여 JCR 구성 방법과 이를 위에서 개발하는 방법에 대한 개요입니다
+seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3367'
-ht-degree: 0%
+source-wordcount: '3334'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 >
 >AEM의 핵심 개념으로 이동하기 전에 Adobe은 AEM 개발 프로세스에 대한 개요와 핵심 개념을 소개하기 위해 [AEM Sites 개발 시작](/help/sites-developing/getting-started.md) 문서에서 WKND 자습서를 완료하는 것을 권장합니다.
 
-## AEM {#prerequisites-for-developing-on-aem}에서 개발을 위한 사전 요구 사항
+## AEM에서 개발을 위한 사전 요구 사항 {#prerequisites-for-developing-on-aem}
 
 AEM을 기반으로 개발하는 데 다음 기술이 필요합니다.
 
@@ -39,13 +39,13 @@ AEM을 기반으로 개발하는 데 다음 기술이 필요합니다.
 
 또한 [지침 및 우수 사례](/help/sites-developing/dev-guidelines-bestpractices.md)를 읽고 따르는 것이 좋습니다.
 
-## Java 컨텐츠 저장소 {#java-content-repository}
+## Java Content Repository {#java-content-repository}
 
-JCR(Java Content Repository) 표준 [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) 은 컨텐츠 리포지토리 내의 세부 수준에서 양방향 컨텐츠에 액세스할 수 있도록 공급업체에 독립적이고 구현에 독립적인 방법을 지정합니다.
+JCR(Java Content Repository) 표준 [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) 은 컨텐츠 리포지토리 내의 세부 수준에서 양방향 컨텐츠에 액세스할 수 있도록 공급업체에 독립적이고 구현에 독립적인 방법을 지정합니다.
 
 Specification Lead는 Adobe Research(스위스) AG에 의해 소유됩니다.
 
-[JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, javax.jcr.amp;ast;저장소 컨텐츠에 대한 직접 액세스 및 조작에 사용됩니다.
+[JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지, javax.jcr.amp;ast; 저장소 컨텐츠에 대한 직접 액세스 및 조작에 사용됩니다.
 
 ## Experience Server(CRX) 및 Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -65,7 +65,7 @@ Sling을 사용하면 렌더링할 컨텐츠의 유형이 첫 번째 처리 고�
 
 Sling을 사용하여 개발하는 첫 번째 단계는 [15분 내에 Sling 검색](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html)을 참조하십시오.
 
-다음 다이어그램에서는 Sling 스크립트 해상도에 대해 설명합니다.이 보고서는 HTTP 요청에서 컨텐츠 노드로, 컨텐츠 노드에서 리소스 유형으로, 리소스 유형에서 스크립트로 가져오는 방법과 사용 가능한 스크립팅 변수를 보여줍니다.
+다음 다이어그램에서는 Sling 스크립트 해상도에 대해 설명합니다. 이 보고서는 HTTP 요청에서 컨텐츠 노드로, 컨텐츠 노드에서 리소스 유형으로, 리소스 유형에서 스크립트로 가져오는 방법과 사용 가능한 스크립팅 변수를 보여줍니다.
 
 ![Apache Sling 스크립트 해상도 이해](assets/sling-cheatsheet-01.png)
 
@@ -73,7 +73,7 @@ Sling을 사용하여 개발하는 첫 번째 단계는 [15분 내에 Sling 검�
 
 ![SlingPostServlet 사용](assets/sling-cheatsheet-02.png)
 
-### Sling은 컨텐츠 중심 {#sling-is-content-centric}
+### Sling은 컨텐츠 중심의 {#sling-is-content-centric}
 
 Sling은 *컨텐츠 중심의*&#x200B;입니다. 즉, 각(HTTP) 요청이 JCR 리소스(저장소 노드) 형식의 컨텐츠에 매핑될 때 처리에 중점을 둡니다.
 
@@ -84,11 +84,11 @@ Sling은 *컨텐츠 중심의*&#x200B;입니다. 즉, 각(HTTP) 요청이 JCR �
 
 컨텐츠 중심 철학으로 인해 Sling은 REST 기반 서버를 구현하므로 웹 애플리케이션 프레임워크의 새로운 개념을 제공합니다. 장점은 다음과 같습니다.
 
-* 표면이 아닌, 매우 좋습니다.리소스 및 표현은 서버 내부에서 올바르게 모델링됩니다
+* 표면이 아닌, 매우 좋습니다. 리소스 및 표현은 서버 내부에서 올바르게 모델링됩니다
 * 하나 이상의 데이터 모델 제거
 
-   * 이전에는 다음 항목이 필요했습니다.URL 구조, 비즈니스 객체, DB 스키마
-   * 이제 이 기능이 다음과 같이 향상되었습니다.URL = resource = JCR 구조
+   * 이전에는 다음 항목이 필요했습니다. URL 구조, 비즈니스 객체, DB 스키마
+   * 이제 이 기능이 다음과 같이 향상되었습니다. URL = resource = JCR 구조
 
 ### URL 분해 {#url-decomposition}
 
@@ -110,17 +110,17 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 **** 웹 사이트의 hostName입니다.
 
-**컨텐츠** 경로 렌더링할 컨텐츠를 지정하는 경로입니다. 확장과 함께 사용됩니다.이 예제에서는 tools/spy.html으로 변환됩니다.
+**컨텐츠** 경로 렌더링할 컨텐츠를 지정하는 경로입니다. 확장과 함께 사용됩니다. 이 예제에서는 tools/spy.html으로 변환됩니다.
 
-**선택기** 컨텐츠를 렌더링하는 대체 방법에 사용됩니다.이 예에서는 A4 형식의 프린터 친화형 버전입니다.
+**선택기** 컨텐츠를 렌더링하는 대체 방법에 사용됩니다. 이 예에서는 A4 형식의 프린터 친화형 버전입니다.
 
-**** extensionContent 형식;렌더링에 사용할 스크립트도 지정합니다.
+**** extensionContent 형식; 렌더링에 사용할 스크립트도 지정합니다.
 
-**** suffix추가 정보를 지정하는 데 사용할 수 있습니다.
+**** 접미사는 추가 정보를 지정하는 데 사용할 수 있습니다.
 
 **매개 변수** 동적 컨텐츠에 필요한 모든 매개 변수입니다.
 
-#### URL에서 컨텐츠 및 스크립트 {#from-url-to-content-and-scripts} 까지입니다.
+#### URL에서 콘텐츠 및 스크립트에 이르기까지 {#from-url-to-content-and-scripts}
 
 다음 원칙 사용:
 
@@ -133,17 +133,17 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 Sling을 사용하면 특정 엔티티를 렌더링하는 스크립트를 지정합니다(JCR 노드에서 `sling:resourceType` 속성을 설정하여). 이 메커니즘은 리소스가 여러 변환을 가질 수 있으므로 스크립트가 데이터 엔티티에 액세스하는 것보다 더 자유롭게 제공합니다(PHP 스크립트의 SQL 문처럼).
 
-#### 요청을 리소스 {#mapping-requests-to-resources}에 매핑
+#### 리소스에 요청 매핑 {#mapping-requests-to-resources}
 
 요청이 분류되고 필요한 정보가 추출됩니다. 저장소가 요청된 리소스(컨텐츠 노드)에 대해 검색됩니다.
 
-* 첫 번째 Sling은 요청에 지정된 위치에 노드가 있는지 확인합니다.예`../content/corporate/jobs/developer.html`
-* 노드를 찾을 수 없으면 확장이 삭제되고 검색이 반복됩니다.예`../content/corporate/jobs/developer`
+* 첫 번째 Sling은 요청에 지정된 위치에 노드가 있는지 확인합니다. 예 `../content/corporate/jobs/developer.html`
+* 노드를 찾을 수 없으면 확장이 삭제되고 검색이 반복됩니다. 예 `../content/corporate/jobs/developer`
 * 노드를 찾을 수 없으면 Sling은 http 코드 404(찾을 수 없음)를 반환합니다.
 
 Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 기능입니다.
 
-### 스크립트 {#locating-the-script} 찾기
+### 스크립트 찾기 {#locating-the-script}
 
 적절한 리소스(컨텐츠 노드)가 있으면 **sling 리소스 유형**&#x200B;이 추출됩니다. 컨텐츠 렌더링에 사용할 스크립트를 찾는 경로입니다.
 
@@ -161,11 +161,11 @@ Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 
 * 메서드(GET, POST)이 필요한 경우 HTTP 사양(예: jobs.POST.esp)에 따라 대문자로 지정됩니다(아래 참조)
 * 다양한 스크립트 엔진이 지원됩니다.
 
-   * HTL(HTML 템플릿 언어 - Adobe Experience Manager의 기본 및 권장 HTML의 서버측 템플릿 시스템):`.html`
-   * ECMAScript(JavaScript) 페이지(서버측 실행):`.esp, .ecma`
-   * Java Server 페이지(서버측 실행):`.jsp`
-   * Java 서블릿 컴파일러(서버측 실행):`.java`
-   * JavaScript 템플릿(클라이언트측 실행):`.jst`
+   * HTL(HTML 템플릿 언어 - Adobe Experience Manager의 기본 및 권장 HTML 서버측 템플릿 시스템): `.html`
+   * ECMAScript(JavaScript) 페이지(서버측 실행): `.esp, .ecma`
+   * Java Server 페이지(서버측 실행): `.jsp`
+   * Java 서블릿 컴파일러(서버측 실행): `.java`
+   * JavaScript 템플릿(클라이언트측 실행): `.jst`
 
 지정된 AEM 인스턴스에서 지원하는 스크립트 엔진 목록은 Felix Management Console( `http://<host>:<port>/system/console/slingscripting`)에 나열되어 있습니다.
 
@@ -175,7 +175,7 @@ Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 
 
 * GET/HEAD 요청 및 .html로 끝나는 URL(기본 요청 유형, 기본 형식)
 
-   스크립트는 /apps/hr/jobs/jobs.esp;sling:resourceType의 마지막 섹션은 파일 이름을 형성합니다.
+   스크립트는 /apps/hr/jobs/jobs.esp; sling:resourceType의 마지막 섹션은 파일 이름을 형성합니다.
 
 * POST 요청(GET/HEAD을 제외한 모든 요청 유형, 메서드 이름은 대문자여야 함)
 
@@ -187,15 +187,15 @@ Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 
 
    예 `../content/corporate/jobs/developer.pdf`
 
-   스크립트는 `/apps/hr/jobs/jobs.pdf.esp`;접미사가 스크립트 이름에 추가됩니다.
+   스크립트는 `/apps/hr/jobs/jobs.pdf.esp`; 접미사가 스크립트 이름에 추가됩니다.
 
 * 선택기가 있는 URL
 
    선택기를 사용하여 동일한 콘텐츠를 대체 형식으로 표시할 수 있습니다. 예를 들어 프린터에 적합한 버전, rss 피드 또는 요약이 있습니다.
 
-   선택기가 *print*&#x200B;일 수 있는 프린터 친화형 버전을 확인하면`../content/corporate/jobs/developer.print.html`
+   선택기가 *print*&#x200B;일 수 있는 프린터 친화형 버전을 확인하면 `../content/corporate/jobs/developer.print.html`
 
-   스크립트는 `/apps/hr/jobs/jobs.print.esp`;선택기가 스크립트 이름에 추가됩니다.
+   스크립트는 `/apps/hr/jobs/jobs.print.esp`; 선택기가 스크립트 이름에 추가됩니다.
 
 * sling:resourceType이 정의되지 않은 경우 다음을 수행합니다.
 
@@ -213,7 +213,7 @@ Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 
    * [사용자 지정된 스크립트](/help/sites-developing/customizing-errorhandler-pages.md)에 대한 위치 /apps/sling/servlet/errorhandler
    * 또는 표준 스크립트 /libs/sling/servlet/errorhandler/403.esp 또는 404.esp의 위치를 나타냅니다.
 
-지정된 요청에 여러 스크립트가 적용되는 경우 가장 일치하는 스크립트가 선택됩니다. 매치가 구체적일수록 효과적이다.즉, 요청 확장이나 메서드 이름이 일치하는 것과 관계없이 더 많은 선택기가 더 잘 일치합니다.
+지정된 요청에 여러 스크립트가 적용되는 경우 가장 일치하는 스크립트가 선택됩니다. 매치가 구체적일수록 효과적이다. 즉, 요청 확장이나 메서드 이름이 일치하는 것과 관계없이 더 많은 선택기가 더 잘 일치합니다.
 
 예를 들어 리소스에 액세스하기 위한 요청을 고려합니다
 `/content/corporate/jobs/developer.print.a4.html`
@@ -271,9 +271,9 @@ Sling은 JCR 노드 이외의 항목을 리소스화할 수도 있지만 고급 
 
 이것은 `/y`에 `sling:resourceSuperType` 속성이 있지만 `/x`은 이 없으므로 해당 리소스 유형에서 상위 형식이 가져오므로 발생합니다.
 
-#### Sling 스크립트를 직접 {#sling-scripts-cannot-be-called-directly} 호출할 수 없습니다.
+#### Sling 스크립트를 직접 호출할 수 없습니다 {#sling-scripts-cannot-be-called-directly}
 
-Sling 내에서 스크립트를 직접 호출할 수 없습니다. 이렇게 하면 REST 서버의 엄격한 개념이 중단됩니다.리소스와 표현을 혼합합니다.
+Sling 내에서 스크립트를 직접 호출할 수 없습니다. 이렇게 하면 REST 서버의 엄격한 개념이 중단됩니다. 리소스와 표현을 혼합합니다.
 
 표현(스크립트)을 직접 호출하는 경우 스크립트 내에 리소스를 숨겨 프레임워크(Sling)가 더 이상 이 리소스에 대해 알지 못합니다. 따라서 특정 기능을 잃게 됩니다.
 
@@ -282,13 +282,13 @@ Sling 내에서 스크립트를 직접 호출할 수 없습니다. 이렇게 하
    * sling 기본 구현으로 처리되는 POST, PUT, DELETE
    * sling:resourceType 위치의 `POST.jsp` 스크립트
 
-* 코드 아키텍처는 더 이상 깨끗하거나 구조화되지 않습니다.대규모 개발을 위한 가장 중요한 요소
+* 코드 아키텍처는 더 이상 깨끗하거나 구조화되지 않습니다. 대규모 개발을 위한 가장 중요한 요소
 
 ### Sling API {#sling-api}
 
 Sling API 패키지 org.apache.sling을 사용합니다.amp;ast; 및 태그 라이브러리(&amp;M).
 
-### sling:include {#referencing-existing-elements-using-sling-include} 를 사용하여 기존 요소 참조
+### sling:include를 사용하여 기존 요소 참조 {#referencing-existing-elements-using-sling-include}
 
 마지막으로 고려해야 할 사항은 스크립트 내에 기존 요소를 참조해야 하는 것입니다.
 
@@ -361,7 +361,7 @@ currentNode가 현재 노드 개체인 경우
 
 AEM은 위젯의 ExtJS 라이브러리를 사용하여 개발되었습니다.
 
-**** 대화 상자대화 상자는 특별한 유형의 위젯입니다.
+**** DialogA 대화 상자는 특별한 유형의 위젯입니다.
 
 컨텐츠를 편집하려면 AEM에서 애플리케이션 개발자가 정의한 대화 상자를 사용합니다. 일련의 위젯을 조합하여 사용자에게 관련 컨텐츠를 편집하는 데 필요한 모든 필드와 작업을 제공합니다.
 
@@ -369,14 +369,14 @@ AEM은 위젯의 ExtJS 라이브러리를 사용하여 개발되었습니다.
 
 **** 구성 요소소프트웨어 구성 요소는 사전 정의된 서비스 또는 이벤트를 제공하며 다른 구성 요소와 통신할 수 있는 시스템 요소입니다.
 
-AEM 내에서 구성 요소는 종종 리소스의 컨텐츠를 렌더링하는 데 사용됩니다. 리소스가 페이지인 경우, 렌더링을 수행하는 구성 요소를 최상위 구성 요소 또는 Pageconent라고 합니다. 그러나 구성 요소는 컨텐츠를 렌더링하거나 특정 리소스에 연결할 필요가 없습니다.예를 들어 탐색 구성 요소에는 여러 리소스에 대한 정보가 표시됩니다.
+AEM 내에서 구성 요소는 종종 리소스의 컨텐츠를 렌더링하는 데 사용됩니다. 리소스가 페이지인 경우, 렌더링을 수행하는 구성 요소를 최상위 구성 요소 또는 Pageconent라고 합니다. 그러나 구성 요소는 컨텐츠를 렌더링하거나 특정 리소스에 연결할 필요가 없습니다. 예를 들어 탐색 구성 요소에는 여러 리소스에 대한 정보가 표시됩니다.
 
 구성 요소의 정의에는 다음이 포함됩니다.
 
 * 컨텐츠를 렌더링하는 데 사용되는 코드
 * 사용자 입력과 결과 컨텐츠의 구성에 대한 대화 상자입니다.
 
-**** 템플릿템플릿은 특정 유형의 페이지에 대한 기준입니다. 웹 사이트 탭에서 페이지를 만들 때는 템플릿을 선택해야 합니다. 그런 다음 이 템플릿을 복사하여 새 페이지를 만듭니다.
+**** Template템플릿은 특정 유형의 페이지의 기본입니다. 웹 사이트 탭에서 페이지를 만들 때는 템플릿을 선택해야 합니다. 그런 다음 이 템플릿을 복사하여 새 페이지를 만듭니다.
 
 템플릿은 만들 페이지와 구조가 동일하지만 실제 컨텐츠는 없는 노드 계층 구조입니다.
 
@@ -392,7 +392,7 @@ AEM 내에서 구성 요소는 종종 리소스의 컨텐츠를 렌더링하는 
 
 S`tring pageName = currentPage.getName();`
 
-currentPage가 현재 페이지 개체인 경우 페이지 개체 조작에 대한 자세한 내용은 [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)를 참조하십시오.
+currentPage가 현재 페이지 개체인 경우 페이지 개체 조작에 대한 자세한 내용은 [Javadocs](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)를 참조하십시오.
 
 **페이지** 관리자페이지 관리자는 페이지 수준 작업을 위한 방법을 제공하는 인터페이스입니다.
 
@@ -400,9 +400,9 @@ currentPage가 현재 페이지 개체인 경우 페이지 개체 조작에 대�
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체인 경우. 페이지 관리자에서 제공하는 방법에 대한 자세한 내용은 [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 를 참조하십시오.
+pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체인 경우. 페이지 관리자에서 제공하는 방법에 대한 자세한 내용은 [Javadocs](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 를 참조하십시오.
 
-## 저장소 내의 구조 {#structure-within-the-repository}
+## 리포지토리 내의 구조 {#structure-within-the-repository}
 
 다음 목록은 리포지토리 내에 표시되는 구조에 대한 개요를 제공합니다.
 
@@ -418,7 +418,7 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 * `/apps`
 
-   응용 프로그램 관련웹 사이트와 관련된 구성 요소 정의를 포함합니다. 개발하는 구성 요소는 `/libs/foundation/components`에서 사용할 수 있는 기본 구성 요소를 기반으로 할 수 있습니다.
+   응용 프로그램 관련 웹 사이트와 관련된 구성 요소 정의를 포함합니다. 개발하는 구성 요소는 `/libs/foundation/components`에서 사용할 수 있는 기본 구성 요소를 기반으로 할 수 있습니다.
 
 * `/content`
 
@@ -440,13 +440,13 @@ pageManager가 페이지 관리자 개체이고 myResource가 리소스 개체�
 
 * `/var`
 
-   시스템이 변경하고 업데이트하는 파일감사 로그, 통계, 이벤트 처리 등.
+   시스템이 변경하고 업데이트하는 파일 감사 로그, 통계, 이벤트 처리 등.
 
 ## 환경 {#environments}
 
-AEM을 사용하는 프로덕션 환경은 종종 두 가지 유형의 인스턴스로 구성됩니다.[작성자 및 게시 인스턴스](/help/sites-deploying/deploy.md#author-and-publish-installs)
+AEM을 사용하는 프로덕션 환경은 종종 두 가지 유형의 인스턴스로 구성됩니다. [작성자 및 게시 인스턴스](/help/sites-deploying/deploy.md#author-and-publish-installs)
 
-## Dispatcher {#the-dispatcher}
+## 디스패처 {#the-dispatcher}
 
 Dispatcher는 캐싱 및/또는 로드 밸런싱 모두를 위한 Adobe의 도구입니다. 추가 정보는 Dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html)에서 찾을 수 있습니다.[
 

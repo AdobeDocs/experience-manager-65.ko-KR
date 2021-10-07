@@ -1,8 +1,8 @@
 ---
 title: OWASP 상위 10
-seo-title: OWASP 상위 10
+seo-title: OWASP Top 10
 description: AEM에서 상위 10개 OWASP 보안 위험을 처리하는 방법을 알아봅니다.
-seo-description: AEM에서 상위 10개 OWASP 보안 위험을 처리하는 방법을 알아봅니다.
+seo-description: Learn how AEM deals with the top 10 OWASP security risks.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
-feature: 보안
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Security
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 1. 주입 {#injection}
 
-* SQL - 설계에 의해 금지됨:기본 저장소 설정에는 일반 데이터베이스가 포함되어 있지 않고 필요하지 않습니다. 모든 데이터는 컨텐츠 저장소에 저장됩니다. 모든 액세스는 인증된 사용자로 제한되며 JCR API를 통해서만 수행할 수 있습니다. SQL은 검색 쿼리에만 지원됩니다(SELECT). 또한 SQL에서는 값 바인딩 지원을 제공합니다.
+* SQL - 설계에 의해 금지됨: 기본 저장소 설정에는 일반 데이터베이스가 포함되어 있지 않고 필요하지 않습니다. 모든 데이터는 컨텐츠 저장소에 저장됩니다. 모든 액세스는 인증된 사용자로 제한되며 JCR API를 통해서만 수행할 수 있습니다. SQL은 검색 쿼리에만 지원됩니다(SELECT). 또한 SQL에서는 값 바인딩 지원을 제공합니다.
 * LDAP - 인증 모듈은 입력을 필터링하고 바인드 방법을 사용하여 사용자 가져오기를 수행하므로 LDAP 주입을 수행할 수 없습니다.
 * OS - 애플리케이션 내에서 수행되는 셸 실행이 없습니다.
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 XSS는 테스트 및 개발 중 최우선 사항이며 발견된 모든 문제는 즉시 해결됩니다(일반적으로).
 
-## 3. 중단된 인증 및 세션 관리 {#broken-authentication-and-session-management}
+## 3. 인증 및 세션 관리 {#broken-authentication-and-session-management}
 
 AEM은 [Apache Jackrabbit](https://jackrabbit.apache.org/) 및 [Apache Sling](https://sling.apache.org/)에 의존하는 사운드와 검증된 인증 기술을 사용합니다. 브라우저/HTTP 세션은 AEM에서 사용되지 않습니다.
 
@@ -44,7 +44,7 @@ AEM은 [Apache Jackrabbit](https://jackrabbit.apache.org/) 및 [Apache Sling](ht
 
 데이터 객체에 대한 모든 액세스는 리포지토리에 의해 조정되므로 역할 기반 액세스 제어로 제한됩니다.
 
-## 5. CSRF(교차 사이트 요청 위조) {#cross-site-request-forgery-csrf}
+## 5. CSRF(크로스 사이트 요청 위조) {#cross-site-request-forgery-csrf}
 
 모든 양식 및 AJAX 요청에 암호화 토큰을 자동으로 주입하고 모든 POST에 대해 서버에서 이 토큰을 확인하여 CSRF(교차 사이트 요청 위조) 완화됩니다.
 
@@ -58,15 +58,15 @@ AEM은 [Apache Jackrabbit](https://jackrabbit.apache.org/) 및 [Apache Sling](ht
 
 ## 7. 비보안 암호화 저장소 {#insecure-cryptographic-storage}
 
-암호는 사용자 노드에 암호화 해시로 저장됩니다.기본적으로 이러한 노드는 관리자와 사용자가 직접 읽을 수 있습니다.
+암호는 사용자 노드에 암호화 해시로 저장됩니다. 기본적으로 이러한 노드는 관리자와 사용자가 직접 읽을 수 있습니다.
 
 타사 자격 증명과 같은 중요한 데이터는 FIPS 140-2 인증 암호화 라이브러리를 사용하여 암호화된 양식으로 저장됩니다.
 
-## 8. URL 액세스 {#failure-to-restrict-url-access} 제한 실패
+## 8. URL 액세스 제한 실패 {#failure-to-restrict-url-access}
 
-저장소는 액세스 제어 항목을 통해 지정된 경로에 있는 모든 사용자 또는 그룹에 대해 [세분화된 권한(JCR에 의해 지정된 대로)](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html)을 설정할 수 있도록 합니다. 액세스 제한 사항은 저장소에 의해 적용됩니다.
+저장소는 액세스 제어 항목을 통해 지정된 경로에 있는 모든 사용자 또는 그룹에 대해 [세분화된 권한(JCR에 의해 지정된 대로)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)을 설정할 수 있도록 합니다. 액세스 제한 사항은 저장소에 의해 적용됩니다.
 
-## 9. 전송 계층 보호 불충분 {#insufficient-transport-layer-protection}
+## 9. 전송 계층 보호 부족 {#insufficient-transport-layer-protection}
 
 서버 구성에 의해 완화됩니다(예: HTTPS만 사용).
 
