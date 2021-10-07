@@ -2,9 +2,9 @@
 title: AEM Content and Commerce 릴리스 노트 2021
 description: AEM Content and Commerce 릴리스 노트 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
+source-git-commit: a401955e4b163a8062a498ea897d4a3d95ae0208
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '1135'
 ht-degree: 11%
 
 ---
@@ -27,7 +27,35 @@ ht-degree: 11%
 |:-------|:-----:|
 | CIF 추가 기능 | 최소: AEM 6.5.7, Magento 2.3.5 GraphQL 스키마 |
 | CIF 코어 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
-| AEM 프로젝트 전형 | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+| AEM Project Archetype | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## 릴리스 날짜: 2021년 9월
+
+| 구성 요소 | 버전 | 세부 사항 |
+|:-------|:-----:|---------------------:|
+| CIF 추가 기능 | 2021.09.27 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| CIF 코어 구성 요소 | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
+| CIF Venia 참조 사이트 | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
+
+### 새로운 기능 {#what-is-new-september}
+
+* 사이트 편집기의 새로운 &quot;관련 전자 상거래 컨텐츠&quot; 탭은 현재 컨텍스트에 대한 관련 AEM 제품 컨텐츠에 빠르게 액세스함으로써 작성자 효율성을 높입니다
+
+   ![관련 상거래 콘텐츠](/help/assets/CIF/associated-commerce-content.png)
+
+* 제품 선택기 UI를 개선하여 사용자 경험 향상, 효율성 향상 및 복잡한 제품 카탈로그에 대한 지원
+
+   ![새 제품 선택기](/help/assets/CIF/product-picker.png)
+
+* 탐색 구성 요소에서 &quot;include_in_menu&quot; 속성을 준수합니다.
+
+### 버그 수정 {#bug-fixes-september}
+
+* 메뉴 캐시 플러시가 예상대로 작동하지 않습니다.
+
+* AEM CS 배포 단계 중 및 클라이언트측 구성 요소를 사용하지 않는 경우 JS 오류가 발생합니다
+
+* sling:configs 노드가 있는 폴더에서 CIF 클라우드 구성을 만들 수 없습니다
 
 ## 릴리스 날짜: 2021년 8월
 
@@ -70,7 +98,7 @@ ht-degree: 11%
    * 예정된 변경 사항을 더 잘 파악하기 위해 작성 모드에서 준비된 제품 데이터에 대한 시각적 지표
    * 컨텐츠 및 상거래 페이지를 위한 새 사이트 맵 구성 요소
 
-* 사전 정의된 권장 또는 즉석에서 만든 추천을 사용하여 AEM Storefront에서 Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html)에서 제공하는 [Adobe Commerce Sensei 제품 권장 사항을 지원합니다
+* 미리 정의되거나 즉시 작성된 추천을 사용하여 AEM Storefront에서 Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html)로 제공되는 [Adobe Commerce Sensei 제품 권장 사항을 지원합니다
 
 ## 릴리스 날짜: 2021년 6월
 
@@ -85,7 +113,7 @@ ht-degree: 11%
 * 컨텐츠 조각에 대한 새 CIF 제품 및 카테고리 참조 데이터 유형(Incl) 제품/카테고리 선택기 UI 지원)
 * 새 상거래 컨텐츠 조각 코어 구성 요소
 * AEM 백엔드에서 지원되는 전체 텍스트 상거래 검색
-* 상거래 핵심 구성 요소 지원 Adobe Commerce Sensei Recs 데이터 수집
+* 상거래 핵심 구성 요소 는 Adobe Commerce Sensei Recs 데이터 수집을 지원합니다
 * 카테고리 페이지의 SEO 기반 URL이 개선되었습니다
 * 사이트/구성당 사용자 지정 HTTP 헤더 지원
 
