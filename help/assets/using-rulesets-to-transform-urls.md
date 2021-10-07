@@ -7,10 +7,10 @@ topic-tags: dynamic-media
 content-type: reference
 role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
-feature: 구성,규칙 세트
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Configuration,Rulesets
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니
 * MIME 유형 접미사를 추가하는 중입니다. 대부분의 서비스 및 웹 사이트에는 URL에 `.jpg` 추가 등의 이미지 접미사가 필요합니다.
 * SEO(검색 엔진 최적화) 목적의 URL에 대한 폴더 경로 만들기
 
-   [Adobe Dynamic Media Classic이 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법 을 참조하십시오.
+   [Adobe Dynamic Media Classic에서 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
 
 * SEO(검색 엔진 최적화) 목적으로 URL에 메타데이터 추가.
 
-   [Adobe Dynamic Media Classic이 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법 을 참조하십시오.
+   [Adobe Dynamic Media Classic에서 SEO](/help/assets/assets/s7_seo.pdf)를 지원하는 방법을 참조하십시오.
 
 * 다운로드를 트리거하도록 컨텐츠 처리를 설정합니다.
 * 개인화를 위해 이미지 제공 템플릿 URL을 단순화합니다. 예를 들어 `rgb{XX,YY,ZZ}`을 RTF 지원 `\redXX\greenYY\blueZZ`으로 전환합니다.
@@ -50,7 +50,7 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 자산 정
 또한 라이브 프로덕션 환경에 영향을 주지 않는 스테이징 환경에서 규칙 세트를 먼저 테스트해야 합니다.
 프로덕션 환경 및 스테이징 환경에서는 일반적으로 다른 로그인이 필요합니다.
 
-로그인 정보](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)에 대해서는 [Adobe Dynamic Media Classic 데스크탑 응용 프로그램을 참조하십시오.
+로그인 정보는 [Adobe Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)을 참조하십시오.
 
 <!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -60,9 +60,9 @@ Dynamic Media 컨텍스트에서 XML 기반 시스템을 사용하여 자산 정
 
 **XML 규칙 세트를 배포하려면**
 
-1. [Dynamic Media Classic 데스크탑 응용 프로그램에 로그인](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+1. [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)에 로그인합니다.
 
-   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
+   자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
 1. 다음을 수행하여 규칙 세트 파일을 업로드합니다.
 

@@ -3,11 +3,11 @@ title: '배포 모니터링 우수 사례 [!DNL Assets] '
 description: 배포 후 [!DNL Adobe Experience Manager] 배포의 환경 및 성능을 모니터링하는 우수 사례입니다.
 contentOwner: AG
 role: Admin, Architect
-feature: 자산 관리
+feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1668'
 ht-degree: 1%
 
 ---
@@ -29,17 +29,17 @@ ht-degree: 1%
 
 개발 중 또는 로드가 많은 상황에서 라이브 모니터링을 수행하여 환경의 성능 특성을 이해해야 합니다. 일반적으로 라이브 모니터링은 도구 세트를 사용하여 수행해야 합니다. 다음은 몇 가지 권장 사항입니다.
 
-* [시각적 VM](https://visualvm.github.io/):Visual VM을 사용하면 CPU 사용, Java 메모리 사용 등 자세한 Java VM 정보를 볼 수 있습니다. 또한 배포에서 실행되는 코드를 샘플링하고 평가할 수 있습니다.
-* [상위](https://man7.org/linux/man-pages/man1/top.1.html):Top은 CPU, 메모리 및 IO 사용을 포함한 사용 통계를 표시하는 대시보드를 여는 Linux 명령입니다. 인스턴스에서 발생하는 상황에 대한 높은 수준의 개요를 제공합니다.
-* [상단](https://hisham.hm/htop/):상단 은 대화형 프로세스 뷰어입니다. Top이 제공할 수 있는 기능 외에도 자세한 CPU 및 메모리 사용을 제공합니다. Top은 `yum install htop` 또는 `apt-get install htop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
+* [시각적 VM](https://visualvm.github.io/): Visual VM을 사용하면 CPU 사용, Java 메모리 사용 등 자세한 Java VM 정보를 볼 수 있습니다. 또한 배포에서 실행되는 코드를 샘플링하고 평가할 수 있습니다.
+* [상위](https://man7.org/linux/man-pages/man1/top.1.html): Top은 CPU, 메모리 및 IO 사용을 포함한 사용 통계를 표시하는 대시보드를 여는 Linux 명령입니다. 인스턴스에서 발생하는 상황에 대한 높은 수준의 개요를 제공합니다.
+* [상단](https://hisham.hm/htop/): 상단 은 대화형 프로세스 뷰어입니다. Top이 제공할 수 있는 기능 외에도 자세한 CPU 및 메모리 사용을 제공합니다. Top은 `yum install htop` 또는 `apt-get install htop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
-* 상단:Iotop은 디스크 입출력 사용을 위한 세부 대시보드입니다. 여기에는 디스크 입출력(I/O)을 사용하는 프로세스와 사용 양을 나타내는 바와 미터(M)가 표시됩니다. Iotop은 `yum install iotop` 또는 `apt-get install iotop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
+* 상단: Iotop은 디스크 입출력 사용을 위한 세부 대시보드입니다. 여기에는 디스크 입출력(I/O)을 사용하는 프로세스와 사용 양을 나타내는 바와 미터(M)가 표시됩니다. Iotop은 `yum install iotop` 또는 `apt-get install iotop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
-* [Iftop](https://www.ex-parrot.com/pdw/iftop/):Iftop은 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이더넷을 사용하는 엔터티의 통신 채널 통계당 정보를 표시하는 경우 및 사용하는 대역폭의 양이 표시됩니다. Iftop은 `yum install iftop` 또는 `apt-get install iftop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
+* [Iftop](https://www.ex-parrot.com/pdw/iftop/): Iftop은 이더넷/네트워크 사용에 대한 자세한 정보를 표시합니다. 이더넷을 사용하는 엔터티의 통신 채널 통계당 정보를 표시하는 경우 및 사용하는 대역폭의 양을 나타냅니다. Iftop은 `yum install iftop` 또는 `apt-get install iftop`을 사용하여 대부분의 Linux 시스템에 설치할 수 있습니다.
 
-* Java 비행 기록(JFR):비프로덕션 환경에서 자유롭게 사용할 수 있는 Oracle의 상업적 도구입니다. 자세한 내용은 [Java Flight Recorder를 사용하여 CQ 런타임 문제를 진단하는 방법](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)을 참조하십시오.
-* [!DNL Experience Manager] `error.log` 파일:시스템에  [!DNL Experience Manager] `error.log` 기록된 오류에 대한 세부 정보를 파일에 조사할 수 있습니다. 조사할 오류를 식별하려면 `tail -F quickstart/logs/error.log` 명령을 사용합니다.
-* [워크플로우 콘솔](/help/sites-administering/workflows.md):워크플로우 콘솔을 활용하여 지연 또는 문제가 발생하는 워크플로우를 모니터링합니다.
+* Java 비행 기록(JFR): 비프로덕션 환경에서 자유롭게 사용할 수 있는 Oracle의 상업적 도구입니다. 자세한 내용은 [Java Flight Recorder를 사용하여 CQ 런타임 문제를 진단하는 방법](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)을 참조하십시오.
+* [!DNL Experience Manager] `error.log` 파일: 시스템에  [!DNL Experience Manager] `error.log` 기록된 오류에 대한 세부 정보를 파일에 조사할 수 있습니다. 조사할 오류를 식별하려면 `tail -F quickstart/logs/error.log` 명령을 사용합니다.
+* [워크플로우 콘솔](/help/sites-administering/workflows.md): 워크플로우 콘솔을 활용하여 지연 또는 문제가 발생하는 워크플로우를 모니터링합니다.
 
 일반적으로 이러한 도구를 함께 사용하여 [!DNL Experience Manager] 배포 성능에 대한 포괄적인 아이디어를 얻을 수 있습니다.
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ![chlimage_1-33](assets/chlimage_1-143.png)
 
-*그림:Visual VM 툴을 사용한 라이브 모니터링*
+*그림: Visual VM 툴을 사용한 라이브 모니터링*
 
 ![chlimage_1-32](assets/chlimage_1-142.png)
 
@@ -92,9 +92,9 @@ Java 기반 애플리케이션 스택과 마찬가지로 [!DNL Experience Manage
 
 * `MBean: lava.lang:type=Memory`
 * URL: `/system/console/jmx/java.lang:type=Memory`
-* 인스턴스:모든 서버
-* 경보 임계값:heap 또는 비heap 메모리 사용률이 해당 최대 메모리의 75%를 초과하는 경우
-* 경고 정의:시스템 메모리가 부족하거나 코드에 메모리 누수가 있습니다. 정의에 도달할 스레드 덤프를 분석합니다.
+* 인스턴스: 모든 서버
+* 경보 임계값: heap 또는 비heap 메모리 사용률이 해당 최대 메모리의 75%를 초과하는 경우
+* 경고 정의: 시스템 메모리가 부족하거나 코드에 메모리 누수가 있습니다. 정의에 도달할 스레드 덤프를 분석합니다.
 
 >[!NOTE]
 >
@@ -102,11 +102,11 @@ Java 기반 애플리케이션 스택과 마찬가지로 [!DNL Experience Manage
 
 스레드
 
-* MBean:`java.lang:type=Threading`
-* URL:`/system/console/jmx/java.lang:type=Threading`
-* 인스턴스:모든 서버
-* 경보 임계값:스레드 수가 기준 요소의 150%보다 큰 경우
-* 경고 정의:능동적으로 도망가는 과정이 있거나, 비효율적인 운영으로 많은 양의 자원이 소비되고 있다. 정의에 도달할 스레드 덤프를 분석합니다.
+* MBean: `java.lang:type=Threading`
+* URL: `/system/console/jmx/java.lang:type=Threading`
+* 인스턴스: 모든 서버
+* 경보 임계값: 스레드 수가 기준 요소의 150%보다 큰 경우
+* 경고 정의: 능동적으로 도망가는 과정이 있거나, 비효율적인 운영으로 많은 양의 자원이 소비되고 있다. 정의에 도달할 스레드 덤프를 분석합니다.
 
 **모니터[!DNL Experience Manager]**
 
@@ -116,12 +116,12 @@ Java 기반 애플리케이션 스택과 마찬가지로 [!DNL Experience Manage
 
 복제 에이전트
 
-* MBean:`com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
-* URL:`/system/console/jmx/com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>"`
-* 인스턴스:작성자 및 모든 게시 인스턴스 1개(플러시 에이전트)
-* 경보 임계값:`QueueBlocked` 값이 `true` 이거나 `QueueNumEntries` 값이 기준선의 150%보다 큰 경우.
+* MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
+* URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>"`
+* 인스턴스: 작성자 및 모든 게시 인스턴스 1개(플러시 에이전트)
+* 경보 임계값: `QueueBlocked` 값이 `true` 이거나 `QueueNumEntries` 값이 기준선의 150%보다 큰 경우.
 
-* 경고 정의:시스템에서 차단된 큐가 존재하여 복제 대상이 다운되었거나 접근할 수 없음을 나타냅니다. 네트워크 또는 인프라 문제로 인해 과도한 항목이 큐에 올라가 시스템 성능에 부정적인 영향을 줄 수 있습니다.
+* 경고 정의: 시스템에서 차단된 큐가 존재하여 복제 대상이 다운되었거나 접근할 수 없음을 나타냅니다. 네트워크 또는 인프라 문제로 인해 과도한 항목이 큐에 올라가 시스템 성능에 부정적인 영향을 줄 수 있습니다.
 
 >[!NOTE]
 >
@@ -129,11 +129,11 @@ Java 기반 애플리케이션 스택과 마찬가지로 [!DNL Experience Manage
 
 세션 카운터
 
-* MBean:`org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
-* URL:*/system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;OakRepository Statistics&quot;,type*=&quot;RepositoryStats&quot;
-* 인스턴스:모든 서버
-* 경보 임계값:열려 있는 세션이 기준 요소를 50% 이상 초과하는 경우
-* 경고 정의:세션은 코드 조각을 통해 열 수 있으며 닫히지 않습니다. 이것은 시간이 지남에 따라 천천히 일어날 수 있고 결국 시스템에서 메모리 누수를 일으킬 수 있다. 시스템에서 세션 수가 변동해야 하지만 지속적으로 증가해서는 안 됩니다.
+* MBean: `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
+* URL: */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;OakRepository Statistics&quot;,type*=&quot;RepositoryStats&quot;
+* 인스턴스: 모든 서버
+* 경보 임계값: 열려 있는 세션이 기준 요소를 50% 이상 초과하는 경우
+* 경고 정의: 세션은 코드 조각을 통해 열 수 있으며 닫히지 않습니다. 이것은 시간이 지남에 따라 천천히 일어날 수 있고 결국 시스템에서 메모리 누수를 일으킬 수 있다. 시스템에서 세션 수가 변동해야 하지만 지속적으로 증가해서는 안 됩니다.
 
 상태 검사
 
@@ -142,51 +142,51 @@ Java 기반 애플리케이션 스택과 마찬가지로 [!DNL Experience Manage
 다음은 모니터링에 유용한 몇 가지 기본 상태 확인입니다.
 
 * 시스템 확인
-   * MBean:`org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * URL:`/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * 인스턴스:작성자 1명, 모든 게시 서버
-   * 경보 임계값:상태가 좋지 않으면
-   * 경고 정의:지표 중 하나의 상태는 WARN 또는 CRITICAL입니다. 문제의 원인에 대한 자세한 내용은 로그 속성을 확인하십시오.
+   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+   * 인스턴스: 작성자 1명, 모든 게시 서버
+   * 경보 임계값: 상태가 좋지 않으면
+   * 경고 정의: 지표 중 하나의 상태는 WARN 또는 CRITICAL입니다. 문제의 원인에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
 * 복제 큐
 
-   * MBean:`org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * URL:`/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * 인스턴스:작성자 1명, 모든 게시 서버
-   * 경보 임계값:상태가 좋지 않으면
-   * 경고 정의:지표 중 하나의 상태는 WARN 또는 CRITICAL입니다. 문제를 일으킨 큐에 대한 자세한 내용은 로그 속성을 확인하십시오.
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+   * 인스턴스: 작성자 1명, 모든 게시 서버
+   * 경보 임계값: 상태가 좋지 않으면
+   * 경고 정의: 지표 중 하나의 상태는 WARN 또는 CRITICAL입니다. 문제를 일으킨 큐에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
 * 응답 성능
 
-   * MBean:`org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * URL:`/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * 인스턴스:모든 서버
-   * 경보 기간:상태가 좋지 않으면
-   * 경고 정의:지표 중 하나의 상태는 경고 또는 위기 상태입니다. 문제를 일으킨 큐에 대한 자세한 내용은 로그 속성을 확인하십시오.
+   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+   * 인스턴스: 모든 서버
+   * 경보 기간: 상태가 좋지 않으면
+   * 경고 정의: 지표 중 하나의 상태는 경고 또는 위기 상태입니다. 문제를 일으킨 큐에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
 * 쿼리 성능
 
-   * MBean:`org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
-   * URL:`/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
-   * 인스턴스:작성자 1명, 모든 게시 서버
-   * 경보 임계값:상태가 좋지 않으면
-   * 경고 정의:시스템에서 하나 이상의 쿼리가 느리게 실행됩니다. 문제를 일으킨 쿼리에 대한 자세한 내용은 로그 속성을 확인하십시오.
+   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
+   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
+   * 인스턴스: 작성자 1명, 모든 게시 서버
+   * 경보 임계값: 상태가 좋지 않으면
+   * 경고 정의: 시스템에서 하나 이상의 쿼리가 느리게 실행됩니다. 문제를 일으킨 쿼리에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
 * 활성 상태 번들
 
-   * MBean:`org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * URL:`/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * 인스턴스:모든 서버
-   * 경보 임계값:상태가 좋지 않으면
-   * 경고 정의:시스템에 비활성 또는 확인되지 않은 OSGi 번들이 있습니다. 문제를 일으킨 번들에 대한 자세한 내용은 로그 속성을 확인하십시오.
+   * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+   * 인스턴스: 모든 서버
+   * 경보 임계값: 상태가 좋지 않으면
+   * 경고 정의: 시스템에 비활성 또는 확인되지 않은 OSGi 번들이 있습니다. 문제를 일으킨 번들에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
 * 오류 로그
 
-   * MBean:`org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * URL:`/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * 인스턴스:모든 서버
-   * 경보 임계값:상태가 좋지 않으면
-   * 경고 정의:로그 파일에 오류가 있습니다. 문제의 원인에 대한 자세한 내용은 로그 속성을 확인하십시오.
+   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+   * 인스턴스: 모든 서버
+   * 경보 임계값: 상태가 좋지 않으면
+   * 경고 정의: 로그 파일에 오류가 있습니다. 문제의 원인에 대한 자세한 내용은 로그 속성을 확인하십시오.
 
 ## 일반적인 문제 및 해결 방법  {#common-issues-and-resolutions}
 
@@ -199,5 +199,5 @@ Java 기반 애플리케이션 스택과 마찬가지로 [!DNL Experience Manage
 * 워크플로우 콘솔을 사용하여 워크플로우가 예상대로 작동하는지 확인합니다. 가능하면 여러 워크플로우를 하나의 워크플로우로 압축합니다.
 * 라이브 모니터링을 재방문하여 특정 리소스의 병목 현상이나 높은 소비자에 대해 살펴봅니다.
 * 클라이언트 네트워크에서 송신 지점을 조사하고 수신 지점은 디스패처를 포함하여 [!DNL Experience Manager] 배포 네트워크를 가리킵니다. 주로 병목영역입니다. 자세한 내용은 [자산 네트워크 고려 사항](/help/assets/assets-network-considerations.md)을 참조하십시오.
-* [!DNL Experience Manager] 서버의 크기를 늘립니다. [!DNL Experience Manager] 배포 크기가 적합하지 않을 수 있습니다. Adobe 고객 지원 센터를 통해 서버의 크기가 더 작은지 확인할 수 있습니다.
+* [!DNL Experience Manager] 서버의 크기를 늘립니다. [!DNL Experience Manager] 배포 크기가 적합하지 않을 수 있습니다. Adobe 고객 지원 을 통해 서버의 크기가 더 작은지 확인할 수 있습니다.
 * 오류가 발생한 시간 이전의 항목에 대해 `access.log` 및 `error.log` 파일을 검사합니다. 사용자 지정 코드 예외 항목을 나타낼 수 있는 패턴을 찾습니다. 모니터링하는 이벤트 목록에 추가합니다.

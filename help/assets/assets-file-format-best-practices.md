@@ -3,11 +3,11 @@ title: 지원되는 파일 형식을 처리하는 우수 사례
 description: ' [!DNL Experience Manager Assets]을 사용하여 지원되는 다양한 파일 형식을 처리하는 우수 사례입니다.'
 contentOwner: AG
 role: Admin
-feature: 자산 관리,개발자 도구
+feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 1%
 
 >[!TIP]
 >
->AMS(Adobe Managed Services)에서 [!DNL Experience Manager] 을(를) 사용하는 경우 대용량 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager] 30000 x 23000 픽셀보다 큰 고해상도 PSB 파일을 처리할 수 없습니다.
+>AMS(Adobe Managed Services)에서 [!DNL Experience Manager]을(를) 사용하는 경우, 대규모 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager] 30000 x 23000 픽셀보다 큰 고해상도 PSB 파일을 처리할 수 없습니다.
 
 ## [!DNL Adobe Camera Raw] 라이브러리 {#adobe-camera-raw-library}
 
 최적의 성능을 위해 RAW 및 DNG 파일에 [!DNL Adobe Camera Raw] 라이브러리를 사용하는 것이 좋습니다.
 
-[!DNL Adobe Camera Raw] 라이브러리는 CMYK 색상 프로파일을 입력으로 지원합니다. 그러나 RGB 색상 공간으로 출력을 생성하고 JPEG 형식으로만 출력을 지원합니다. 원본 파일 색상 공간(예: CMYK)은 축소판에 유지되지 않습니다.
+[!DNL Adobe Camera Raw] 라이브러리는 CMYK 색상 프로파일을 입력으로 지원합니다. 그러나 RGB 색상 공간에서 출력을 생성하여 JPEG 형식으로만 출력을 지원합니다. 원본 파일 색상 공간(예: CMYK)은 축소판에 유지되지 않습니다.
 
 자세한 내용은 [Camera Raw 지원](/help/assets/camera-raw.md)을 참조하십시오.
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 * 미리 보기가 있는 AI 파일이 즉시 생성되지 않습니다
 * SPOT(PMS) 색상을 사용하는 AI 파일의 경우
 
-PDF Rasterizer를 사용하여 생성된 축소판 및 미리 보기는 기본 래스터 출력보다 품질이 향상됩니다. Adobe PDF Rasterizer 라이브러리는 색상 공간 변환을 지원하지 않습니다. 소스 PDF 파일의 색상 공간에 관계없이 Adobe PDF Rasterizer는 RGB 출력만 생성합니다.
+PDF 래스터라이저 기능을 사용하여 생성된 축소판 및 미리 보기는 기본 래스터 출력보다 품질이 향상됩니다. Adobe PDF Rasterizer 라이브러리는 색상 공간 변환을 지원하지 않습니다. 소스 PDF 파일의 색상 공간에 관계없이 Adobe PDF Rasterizer는 RGB 출력만 생성합니다.
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
@@ -57,7 +57,7 @@ Adobe은 다음 시나리오에서 ImageMagick 라이브러리를 사용하는 �
 * EPS 파일에 대한 축소판 변환을 생성하려면 다음을 수행합니다.
 * 이미지 프로필 정보를 보존하려면
 * 투명도를 유지하기 위해
-* PSD 및 PSB 파일을 처리하려면
+* PSD 및 PSB 파일을 처리하는 방법
 
 [!DNL Experience Manager]에서 [!DNL ImageMagick] 라이브러리를 설정하는 방법은 [ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick) 사용을 참조하십시오. 최적의 사용을 위해 [ImageMagick](/help/assets/best-practices-for-imagemagick.md) 구성에 대한 우수 사례 를 참조하십시오.
 
@@ -71,7 +71,7 @@ Adobe 이미징 코드 변환 라이브러리는 이미지 인코딩, 트랜스�
 * PNG(8비트 및 16비트)
 * GIF
 * BMP
-* TIFF/압축 TIFF(32비트 Tiff 및 PTiffs 제외).
+* TIFF/압축 TIFF(32비트 Tiff 및 PTiffs 제외)
 * 아이콘
 * ICN
 

@@ -8,9 +8,9 @@ content-type: reference
 feature: CDN Cache,Dynamic Media Classic
 role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Dynamic Media 자산은 CDN(Content Delivery Network)에서 캐시하여 빠른 
 >
 >다음 단계는 Adobe Experience Manager 6.5, 서비스 팩 5(Experience Manager 6.5.5) 또는 이전 버전의 Dynamic Media에만 적용됩니다.<br>Experience Manager 6.5, 서비스 팩 6(Experience Manager 6.5.6) 이상에서 Dynamic Media을 사용하는 경우 Dynamic Media을  [통해 CDN 캐시 무효화에 있는 단계를 따르십시오](/help/assets/invalidate-cdn-cache-dynamic-media.md).
 
-Dynamic Media Classic의 [캐시 개요(Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)도 참조하십시오.
+Dynamic Media Classic(Scene7)의 [캐시 개요](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)도 참조하십시오.
 
 **Dynamic Media Classic을 통해 CDN 캐시를 무효화하려면 다음을 수행하십시오.**
 
 1. [Dynamic Media Classic 데스크탑 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)을 연 다음 계정에 로그인합니다.
 
-   자격 증명과 로그온은 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 기술 지원 센터에 문의하십시오.
+   자격 증명과 로그온은 프로비저닝 시 Adobe에서 제공되었습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
 1. 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**&#x200B;으로 이동합니다.
 1. 응용 프로그램 일반 설정 페이지의 서버 그룹 제목 아래에서 **[!UICONTROL CDN 무효화 템플릿]** 텍스트 상자를 찾습니다.

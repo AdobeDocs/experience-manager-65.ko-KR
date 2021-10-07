@@ -4,11 +4,11 @@ description: ' [!DNL Experience Manager] 구성, 병목 현상을 제거하고 �
 contentOwner: AG
 mini-toc-levels: 1
 role: Architect, Admin
-feature: 자산 관리
+feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2741'
 ht-degree: 0%
 
 ---
@@ -118,10 +118,10 @@ Adobe은 많은 회사에 HTTP 트래픽을 감지하는 방화벽이 있어 이
 
 주로, 네트워크 최적화 전략은 사용 가능한 대역폭 및 [!DNL Experience Manager] 인스턴스의 로드에 따라 다릅니다. 방화벽 또는 프록시를 포함한 일반적인 구성 옵션은 네트워크 성능을 개선하는 데 도움이 될 수 있습니다. 다음은 기억해야 할 몇 가지 주요 사항입니다.
 
-* 인스턴스 유형(작은, 중간, 큰)에 따라 Experience Manager 인스턴스에 충분한 네트워크 대역폭이 있는지 확인하십시오. [!DNL Experience Manager] 이 AWS에서 호스팅되는 경우 대역폭 할당이 특히 중요합니다.
-* [!DNL Experience Manager] 인스턴스가 AWS에서 호스팅되는 경우 다양한 스케일링 정책을 통해 이점을 얻을 수 있습니다. 사용자가 높은 로드를 예상하는 경우 인스턴스의 크기를 변경합니다. 중간/낮은 로드를 위해 크기를 줄입니다.
-* HTTPS:대부분의 사용자에게는 HTTP 트래픽을 감지하는 방화벽이 있으므로 업로드 작업 중에 파일 업로드나 손상된 파일의 업로드에 부정적인 영향을 줄 수 있습니다.
-* 큰 파일 업로드:사용자가 네트워크에 유선 연결을 했는지 확인합니다(WiFi 연결이 빠르게 채워짐).
+* 인스턴스 유형(작은, 중간, 큰)에 따라 Experience Manager 인스턴스에 충분한 네트워크 대역폭이 있는지 확인하십시오. [!DNL Experience Manager] 이 AWS에서 호스팅되는 경우 적절한 대역폭 할당이 특히 중요합니다.
+* [!DNL Experience Manager] 인스턴스가 AWS에서 호스팅되는 경우 다양한 확장 정책을 통해 혜택을 볼 수 있습니다. 사용자가 높은 로드를 예상하는 경우 인스턴스의 크기를 변경합니다. 중간/낮은 로드를 위해 크기를 줄입니다.
+* HTTPS: 대부분의 사용자에게는 HTTP 트래픽을 감지하는 방화벽이 있으므로 업로드 작업 중에 파일 업로드나 손상된 파일의 업로드에 부정적인 영향을 줄 수 있습니다.
+* 큰 파일 업로드: 사용자가 네트워크에 유선 연결을 했는지 확인합니다(WiFi 연결이 빠르게 채워짐).
 
 ## 워크플로우 {#workflows}
 
@@ -212,7 +212,7 @@ Adobe은 많은 회사에 HTTP 트래픽을 감지하는 방화벽이 있어 이
 >
 >ImageMagick `policy.xml` 및 `configure.xml` 파일은 `/etc/ImageMagick/` 대신 `/usr/lib64/ImageMagick-&#42;/config/`에서 사용할 수 있습니다.구성 파일의 위치는 [ImageMagick 설명서](https://www.imagemagick.org/script/resources.php)를 참조하십시오.
 
-AMS(Adobe Managed Services)에서 [!DNL Experience Manager] 을(를) 사용하는 경우 대용량 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager] 30000 x 23000 픽셀보다 큰 고해상도 PSB 파일을 처리할 수 없습니다.
+AMS(Adobe Managed Services)에서 [!DNL Experience Manager]을(를) 사용하는 경우, 대규모 PSD 또는 PSB 파일을 많이 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe의 독점 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager] 30000 x 23000 픽셀보다 큰 고해상도 PSB 파일을 처리할 수 없습니다.
 
 ### XMP 원본에 쓰기 {#xmp-writeback}
 
@@ -255,7 +255,7 @@ XMP 원본에 쓰기 기능은 [!DNL Experience Manager]에서 메타데이터�
 1. `/var`, `/etc/workflow/instances` 및 `/etc/replication` 값이 있는 `String[]` 속성을 추가합니다.`excludedPaths`
 1. `/oak:index/damAssetLucene`(으)로 이동합니다. `/content/dam` 값을 사용하여 `String[]` 속성 `includedPaths`을 추가합니다. 변경 사항을 저장합니다.
 
-사용자가 자산의 전체 텍스트 검색을 수행하지 않아도 됩니다(예: PDF 문서에서 텍스트를 검색하는 경우). 전체 텍스트 인덱스를 비활성화하여 인덱스 성능을 향상시킬 수 있습니다. [!DNL Apache Lucene] 텍스트 추출을 비활성화하려면 다음 단계를 수행합니다.
+PDF 문서에서 텍스트를 검색하는 등 자산의 전체 텍스트 검색을 수행하지 않아도 되는 경우 자산을 비활성화합니다. 전체 텍스트 인덱스를 비활성화하여 인덱스 성능을 향상시킬 수 있습니다. [!DNL Apache Lucene] 텍스트 추출을 비활성화하려면 다음 단계를 수행합니다.
 
 1. [!DNL Experience Manager] 인터페이스에서 [!UICONTROL 패키지 관리자]에 액세스합니다.
 1. [disable_indexingbinarytextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip)에서 사용할 수 있는 패키지를 업로드하고 설치합니다.
@@ -306,6 +306,6 @@ XMP 원본에 쓰기 기능은 [!DNL Experience Manager]에서 메타데이터�
 * 리소스 소비를 제한하려면 [!DNL ImageMagick]을 구성합니다.
 * [!UICONTROL DAM 자산 업데이트] 워크플로우에서 불필요한 단계를 제거합니다.
 * 워크플로우 및 버전 제거를 구성합니다.
-* 최신 서비스 팩 및 핫픽스로 인덱스를 최적화합니다. 사용할 수 있는 추가 인덱스 최적화에 대해서는 Adobe 고객 지원 센터에 문의하십시오.
+* 최신 서비스 팩 및 핫픽스로 인덱스를 최적화합니다. 사용 가능한 추가 인덱스 최적화에 대해서는 Adobe 고객 지원 센터에 문의하십시오.
 * guessTotal을 사용하여 쿼리 성능을 최적화합니다.
 * 파일 컨텐츠에서 파일 유형을 검색하도록 [!DNL Experience Manager]을 구성하는 경우(**[!UICONTROL AEM Web Console]**&#x200B;에서 **[!UICONTROL Day CQ DAM MIME 유형 서비스]**&#x200B;를 활성화), 비스파이크 시간 동안 많은 파일을 리소스 집약이므로 대량으로 업로드하십시오.

@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 6.5 릴리스에서 사용 중단되거나 제거된 기능.
 description: Adobe Experience Manager 6.5의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 68%

@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '7792'
 ht-degree: 1%
@@ -267,7 +267,7 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제할 수 있도록
 
 **인증을 설정하려면 다음을 수행하십시오.**
 
-1. 아직 파일 및 암호가 없는 경우 Adobe 고객 지원 센터에서 KeyStore 파일 및 암호를 문의하십시오. 이 정보는 프로비저닝의 필수 부분입니다. 그것은 당신의 계정에 열쇠를 연결합니다.
+1. 파일 및 암호가 아직 없는 경우 KeyStore 파일 및 암호로 Adobe 고객 지원에 문의하십시오. 이 정보는 프로비저닝의 필수 부분입니다. 그것은 당신의 계정에 열쇠를 연결합니다.
 
 1. Experience Manager에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 보안]** > **[!UICONTROL 사용자]**&#x200B;로 이동합니다.
 
@@ -291,7 +291,7 @@ Dynamic Media 이미지 제공 서비스에 이미지를 복제할 수 있도록
    * **[!UICONTROL 새 별칭]** 필드에 나중에 복제 구성에서 사용할 별칭의 이름을 입력합니다. 예를 들어 `replication` 을 별칭으로 사용할 수 있습니다.
    * **[!UICONTROL KeyStore 파일]**&#x200B;을 선택합니다. Adobe이 제공한 KeyStore 파일로 이동하여 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 선택합니다.
    * **[!UICONTROL KeyStore 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 이 암호는 **5단계에서 만든 KeyStore 암호가 아닌**&#x200B;이지만 KeyStore 파일 암호 Adobe은 프로비저닝 중에 사용자에게 보낸 환영 전자 메일에 제공합니다. KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
-   * **[!UICONTROL 개인 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 동일한 개인 키 암호일 수 있음). Adobe은 프로비전 중에 사용자에게 보낸 시작 전자 메일에 있는 개인 키 암호를 제공합니다. 개인 키 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
+   * **[!UICONTROL 개인 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 제공한 동일한 개인 키 암호일 수 있음). Adobe은 프로비전 중에 사용자에게 보낸 시작 전자 메일에 있는 개인 키 암호를 제공합니다. 개인 키 암호를 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 개인 키 별칭]** 필드에 개인 키 별칭을 입력합니다. 예, `*companyname*-alias`. Adobe은 프로비전 중에 사용자에게 전송된 시작 전자 메일에 개인 키 별칭을 제공합니다. 개인 키 별칭을 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
@@ -697,8 +697,8 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
    <td><p><strong>image/</strong>로 시작</p> <p><strong>application/</strong>을 포함하고 <strong>set</strong>로 끝납니다.</p> <p><strong>video/</strong>로 시작합니다.</p> </td>
    <td><p>Adobe Dynamic Media 클라우드 복제 서비스 URL 대신 Experience Manager 게시 서버를 가리키도록 전송 URI를 구성합니다. 이 필터를 설정하면 Dynamic Media Classic에서 Experience Manager 게시 인스턴스 대신 자산을 제공할 수 있습니다.</p> <p>곧바로 사용할 수 있는 "필터 이미지", "필터 세트" 및 "필터 비디오"는 다음과 같습니다.</p>
     <ul>
-     <li>복제용 PTIFF 이미지, 프록시 비디오 표현물 및 메타데이터를 포함합니다. 그러나 이 변수는 실행 중인 Experience Manager의 JCR에 존재하지 않으므로 Dynamic Media Classic 통합 - 아무것도 효과적으로 수행하지 않습니다.</li>
-     <li>원본 이미지, 정적 이미지 표현물, 원본 비디오 및 정적 축소판 표현물 복제에서 제외합니다. 대신 Dynamic Media Classic에서 이미지 및 비디오 자산을 제공합니다.</li>
+     <li>복제용 PTIFF 이미지, 프록시 비디오 표현물 및 메타데이터를 포함합니다. 그러나 이 변수는 실행 중인 Experience Manager의 JCR에 존재하지 않으므로 Dynamic Media Classic 통합 - 은 효과적으로 아무 작업도 하지 않습니다.</li>
+     <li>원본 이미지, 정적 이미지 표현물, 원본 비디오 및 정적 축소판 표현물 복제에서 제외합니다. 대신 Dynamic Media Classic은 이미지 및 비디오 자산을 제공합니다.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -770,7 +770,7 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
    형식에 관계없이 모든 이미지에 이 필터를 적용하려면 값을 `image/*`(으)로 설정합니다. 여기서 `*` 은 모든 형식의 모든 이미지에 적용되는 정규식입니다.
 
-   JPEG 유형의 이미지에만 필터가 적용되도록 하려면 `image/jpeg` 값을 입력하십시오.
+   JPEG 유형의 이미지에만 필터를 적용하려면 `image/jpeg` 값을 입력합니다.
 
 1. 복제에서 포함하거나 제외할 변환을 정의합니다.
 
@@ -788,7 +788,7 @@ Dynamic Media이 아닌 배포에서는 Experience Manager 작성 환경에서 �
 
    ![chlimage_1-513](assets/chlimage_1-4.png)
 
-   위의 예를 사용하여 PTIFF(피라미드형 TIFF)를 복제하려는 경우 `cqdam`로 시작하는 모든 렌디션을 포함하는 `+cqdam,*`을 입력합니다. 이 예에서 해당 표현물은 `cqdam.pyramid.tiff`입니다.
+   위의 예를 사용하여 PTIFF(피라미드 TIFF)을 복제하려는 경우 `cqdam`로 시작하는 모든 렌디션을 포함하는 `+cqdam,*`을 입력합니다. 이 예에서 해당 표현물은 `cqdam.pyramid.tiff`입니다.
 
    원본만 복제하려면 `+original`을 입력합니다.
 
@@ -842,7 +842,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
 
 ### 기본 매니페스트 설정 {#default-manifest-settings}
 
-기본 매니페스트를 사용하면 Dynamic Media 게재 응답을 생성하는 데 사용되는 기본값을 구성할 수 있습니다. 품질(JPEG 품질, 해상도, 리샘플링 모드), 캐싱(만료)을 미세 조정하고, 너무 큰 이미지(defaultpix, defaultthumpix, maxpix)의 렌더링을 방지할 수 있습니다.
+기본 매니페스트를 사용하면 Dynamic Media 게재 응답을 생성하는 데 사용되는 기본값을 구성할 수 있습니다. 품질(JPEG 품질, 해상도, 재샘플링 모드), 캐싱(만료)을 미세 조정하고, 너무 큰 이미지(defaultpix, defaultthumpix, maxpix)의 렌더링을 방지할 수 있습니다.
 
 기본 매니페스트 구성의 위치는 **[!UICONTROL 카탈로그 루트]** 기본값(**[!UICONTROL Adobe CQ Scene7 PlatformServer]** 번들)에서 가져옵니다. 기본적으로 이 값은 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL CRXDE Lite]** 내에 있는 다음 경로에 있습니다
 
@@ -866,7 +866,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면:
 | `defaultpix` | `300,300` | 기본 보기 크기입니다. 서버가 wid=, hei= 또는 scl=를 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 이 너비와 높이보다 크지 않은 회신 이미지를 제한합니다.<br>쉼표로 구분된 0 이상의 정수 두 수로 지정됩니다. 너비와 높이(픽셀 단위)입니다. 두 값 중 하나 또는 둘 다 0으로 설정하여 제약 조건을 해제할 수 있습니다. 중첩/포함된 요청에는 적용되지 않습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) 제공 API의 DefaultPixin도 참조하십시오.<br>그러나 일반적으로 자산을 전달하는 데 뷰어 사전 설정 또는 이미지 사전 설정을 사용합니다. Defaultpix는 뷰어 사전 설정 또는 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다. |
 | `defaultthumbpix` | `100,100` | 기본 축소판 크기 축소판 요청에 대한 특성::DefaultPix 대신 사용됩니다(`req=tmb`).<br>서버가 이 너비와 높이보다 크지 않은 회신 이미지를 제한합니다. 축소판 요청(`req=tmb`)이 크기를 명시적으로 지정하지 않고 `wid=`, `hei=` 또는 `scl=`을 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 이 작업은 true입니다.<br>쉼표로 구분된 0 이상의 정수 두 수로 지정됩니다. 너비와 높이(픽셀 단위)입니다. 두 값 중 하나 또는 둘 다 0으로 설정하여 제약 조건을 해제할 수 있습니다.<br>중첩/포함된 요청에는 적용되지 않습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) 제공 API의 DefaultThumbPixin도 참조하십시오. |
 | `expiration` | `36000000` | 기본 클라이언트 캐시 사용 시간입니다. 특정 카탈로그 레코드에 유효한 카탈로그:만료 값이 없는 경우 기본 만료 간격을 제공합니다.<br>실수, 0 이상 회신 데이터가 생성된 이후 만료까지 남은 밀리초 수입니다. 항상 회신 이미지를 즉시 만료하려면 0으로 설정하여 클라이언트 캐싱을 효과적으로 사용하지 않도록 설정합니다. 기본적으로 이 값은 10시간으로 설정되어 있습니다. 즉, 새 이미지가 게시되면 이전 이미지가 사용자의 캐시를 나가는 데 10시간이 걸립니다. 캐시를 더 빨리 지워야 하는 경우 고객 지원 센터에 문의하십시오.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) 제공 API의 만료도 참조하십시오. |
-| `jpegquality` | `80` | 기본 JPEG 인코딩 속성입니다. JPEG 회신 이미지의 기본 속성을 지정합니다.<br>쉼표로 구분된 정수 및 플래그. 첫 번째 값은 1.100 범위에 있고 품질을 정의합니다. 두 번째 값은 일반 동작의 경우 0이거나, 1은 JPEG 인코딩에 사용되는 RGB 색상-도시화 다운 샘플링을 사용하지 않도록 설정할 수 있습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) 제공 API의 JpegQualitting도 참조하십시오. |
+| `jpegquality` | `80` | 기본 JPEG 인코딩 속성입니다. JPEG 회신 이미지의 기본 속성을 지정합니다.<br>쉼표로 구분된 정수 및 플래그. 첫 번째 값은 1.100 범위에 있고 품질을 정의합니다. 두 번째 값은 일반 동작의 경우 0이고, 1은 JPEG 인코더에 사용되는 RGB 색상 샘플링 다운샘플링을 비활성화할 수 있습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) 제공 API의 JpegQualitting도 참조하십시오. |
 | `maxpix` | `2000,2000` | 회신 이미지 크기 제한. 클라이언트에 반환되는 최대 회신 이미지 폭과 높이입니다.<br>폭이나 높이가 속성:MaxPix보다 큰 응답 이미지가 요청에 의해 발생하는 경우 서버에서 오류를 반환합니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) 제공 API의 MaxPixin도 참조하십시오. |
 | `resmode` | `SHARP2` | 기본 재샘플링 모드입니다. 이미지 데이터 크기 조절에 사용할 기본 리샘플링 및 보간 속성을 지정합니다.<br>요청에  `resMode=` 가 지정되지 않은 경우 사용됩니다.<br>허용되는 값은  `BILIN`,  `BICUB` 또는  `SHARP2`를 포함합니다.<br>열거형. `bilin`, `bicub` 의 경우 3, `sharp2` 보간 모드의 경우 4로 설정합니다. 최상의 결과를 얻으려면 `sharp2` 를 사용하십시오.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) 제공 API의 ResMode 를 참조하십시오. |
 | `resolution` | `72` | 기본 개체 해상도. 특정 카탈로그 레코드에 올바른 카탈로그::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.<br>0보다 큰 실수 일반적으로 인치당 픽셀로 표시되지만 미터 당 픽셀 등의 다른 단위로 표시될 수도 있습니다.<br>이미지  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) 제공 API의 확인도 참조하십시오. |
@@ -1175,7 +1175,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 12445을 설치
 * RGB 및 CMYK 이미지에 색상 교정을 활성화합니다.
 * 색상 프로필이 없는 RGB 이미지는 *sRGB* 색상 공간에 있는 것으로 간주됩니다.
 * 색상 프로파일이 없는 CMYK 이미지는 *WebCoated* 색상 공간에 있는 것으로 간주됩니다.
-* RGB 출력을 반환하는 동적 변환은 *sRGB *색상 공간에 반환됩니다.
+* RGB 출력을 반환하는 동적 변환은 *sRGB *색상 공간으로 반환됩니다.
 * CMYK 출력을 반환하는 동적 변환은 *WebCoated* 색상 공간에 반환합니다.
 
 ## 자산 제공 {#delivering-assets}
