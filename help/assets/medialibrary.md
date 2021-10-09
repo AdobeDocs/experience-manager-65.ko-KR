@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-source-git-commit: 64ac790579db921aa16f32c51592f0b701237df9
+source-git-commit: 823f36bb7eab6c74a07f90883fa040428d8f8420
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -42,18 +42,10 @@ Media Library은 다음 사용 사례에 대한 기본 DAM 기능을 제공합�
 * [!DNL Adobe Experience Manager Screens]을 사용하여 만든 디지털 화면 경험입니다.
 * [!DNL Assets] 헤드리스 작업을 위한 HTTP REST API.
 
-<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
-
-* Basic metadata properties
-* Tag management
-* Version control
+<!--
+ TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 * Static renditions
-* Projects, tasks, workflow authoring
-* Activity stream (timeline)
-* Query Builder (API)
-* Marketing Cloud integration
-* User interface customization and extension
-* Comments and annotation
+
 -->
 
 Media Library 기능을 사용하려면 기본 [!DNL Experience Manager] 사용자 인터페이스를 사용할 수 있습니다. Media Library은 [!DNL Experience Manager Sites] 설치의 일부이며 별도의 인터페이스나 추가 기능이 필요하지 않습니다. 기존 인터페이스를 사용하는 Media Library 사용자는 다음 작업을 수행할 수 있습니다.
@@ -76,6 +68,9 @@ Media Library 기능을 사용하려면 기본 [!DNL Experience Manager] 사용�
 * 자산 관리 사용자 인터페이스를 사용자 지정하고 확장합니다.
 * Query Builder(API)에 액세스하여 검색 기능을 확장합니다.
 * 정적 태그를 만듭니다.
+* 프로젝트 및 작업을 작성합니다.
+* 활동 스트림(타임라인).
+* 댓글 및 주석.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
@@ -86,7 +81,7 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 >
 >많은 고급 DAM 사용 사례가 [!DNL Experience Manager Assets]에 의해 이행됩니다. Media Library 라이센스를 사용하면 Media Library을 사용하여 나열된 사용 사례만 충족할 수 있습니다. 사용 사례가 나열되지 않은 경우 Media Library 라이센스에서 사용하지 마십시오. 질문이 있는 경우 Adobe 고객 지원에 문의하십시오.
 
-스마트 태그, [!DNL Asset] 링크, [!DNL Asset] 선택기, 벌크 태그 지정, [!DNL Assets] 라이센스 없이 자산 워크플로우 수정 등은 사용할 수 없습니다.
+스마트 태그, [!DNL Asset] 링크, [!DNL Asset] 선택기, 벌크 태그 지정, 자산 수정 워크플로우 또는 표준 [!DNL Adobe Experience Manager] 사용자 인터페이스를 사용하여 [!DNL Assets] 라이센스 없이 Media Library에 액세스할 수 없습니다.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
