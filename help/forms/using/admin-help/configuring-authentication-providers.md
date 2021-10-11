@@ -1,8 +1,8 @@
 ---
 title: 인증 공급자 구성
-seo-title: 인증 공급자 구성
+seo-title: Configuring authentication providers
 description: 인증 공급자를 추가, 편집 또는 삭제하고, 인증 설정을 변경하고, 사용자의 적시 프로비저닝에 대해 읽어 보십시오.
-seo-description: 인증 공급자를 추가, 편집 또는 삭제하고, 인증 설정을 변경하고, 사용자의 적시 프로비저닝에 대해 읽어 보십시오.
+seo-description: Add, edit, or delete authentication providers, change authentication settings, and read about just-in-time provisioning of users.
 uuid: 90e7690b-1ce0-4604-b58f-6dca4f2372cf
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1576'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerberos 인증 공급자와 LDAP 공급자를 백업으로 추가합니다. 이 구성에서는 SPNEGO가 작동하지 않는 경우 사용자 ID와 암호로 사용자 인증을 사용할 수 있습니다. ( [SPNEGO](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego)을 사용하여 SSO 활성화 를 참조하십시오.)
 
-## 인증 공급자 {#add-an-authentication-provider} 추가
+## 인증 공급자 추가 {#add-an-authentication-provider}
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 1. 목록에서 기존 도메인을 클릭합니다. 새 도메인에 대한 인증을 추가하는 경우 [엔터프라이즈 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) 또는 [하이브리드 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain)를 참조하십시오.
@@ -32,14 +32,14 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 1. (선택 사항) 테스트 를 클릭하여 구성을 테스트합니다.
 1. 확인 을 클릭한 다음 확인 을 다시 클릭합니다.
 
-## 기존 인증 공급자 {#edit-an-existing-authentication-provider} 편집
+## 기존 인증 공급자 편집 {#edit-an-existing-authentication-provider}
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 1. 목록에서 해당 도메인을 클릭합니다.
 1. 표시되는 페이지의 목록에서 적절한 인증 공급자를 선택하고 필요에 따라 변경합니다. ([인증 설정](configuring-authentication-providers.md#authentication-settings)을 참조하십시오.)
 1. 확인을 클릭합니다.
 
-## 인증 공급자 {#delete-an-authentication-provider} 삭제
+## 인증 공급자 삭제 {#delete-an-authentication-provider}
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 1. 목록에서 해당 도메인을 클릭합니다.
@@ -58,7 +58,7 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 
 다른 LDAP 서버를 사용하여 인증을 수행하려면 인증 공급자로 LDAP를 선택하고 사용자 정의 LDAP 인증 확인란을 선택합니다. 다음 구성 설정이 표시됩니다.
 
-**서버:**  (필수) 디렉터리 서버의 FQDN(정규화된 도메인 이름)입니다. 예를 들어 corp.example.com 네트워크에서 x 라는 컴퓨터의 경우 FQDN은 x.corp.example.com입니다. FQDN 서버 이름 대신 IP 주소를 사용할 수 있습니다.
+**서버:**  (필수) 디렉터리 서버의 FQDN(정규화된 도메인 이름)입니다. 예를 들어 example.com 네트워크의 x라는 컴퓨터의 경우 FQDN은 x.example.com입니다. FQDN 서버 이름 대신 IP 주소를 사용할 수 있습니다.
 
 **포트:**  (필수) 디렉토리 서버가 사용하는 포트입니다. 일반적으로 SSL(Secure Sockets Layer) 프로토콜을 사용하여 네트워크를 통해 인증 정보를 전송하는 경우 389 또는 636 입니다.
 
@@ -86,7 +86,7 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 
 **KDC 호스트:**  인증에 사용되는 Active Directory 서버의 정규화된 호스트 이름 또는 IP 주소입니다.
 
-**서비스 사용자:** Active Directory 2003을 사용하는 경우 이 값은 서비스 주체에 대해 생성된 매핑입니다.  `HTTP/<server name>` Active Directory 2008을 사용하는 경우 이 값은 서비스 주체의 로그인 ID입니다. 예를 들어 서비스 주도자의 이름이 um spnego 이고, 사용자 ID가 spnegodemo이며 매핑이 HTTP/example.corp.yourcompany.com이라고 가정합니다. Active Directory 2003에서는 서비스 사용자를 HTTP/example.corp.yourcompany.com으로 설정합니다. Active Directory 2008에서는 서비스 사용자를 spnegodemo로 설정합니다. (SPNEGO를 사용하여 SSO 활성화 를 참조하십시오.)
+**서비스 사용자:** Active Directory 2003을 사용하는 경우 이 값은 서비스 주체에 대해 생성된 매핑입니다.  `HTTP/<server name>` Active Directory 2008을 사용하는 경우 이 값은 서비스 주체의 로그인 ID입니다. 예를 들어 서비스 주도자의 이름이 um spnego 이고, 사용자 ID가 spnegodemo이며 매핑이 HTTP/example.yourcompany.com이라고 가정해 보겠습니다. Active Directory 2003에서는 서비스 사용자를 HTTP/example.yourcompany.com으로 설정합니다. Active Directory 2008에서는 서비스 사용자를 spnegodemo로 설정합니다. (SPNEGO를 사용하여 SSO 활성화 를 참조하십시오.)
 
 **서비스 영역:** Active Directory의 도메인 이름
 
@@ -121,7 +121,7 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 
 엔터프라이즈 또는 하이브리드 도메인에 대한 인증을 구성하고 사용자 지정 인증을 선택하는 경우 사용자 지정 인증 공급자의 이름을 선택합니다.
 
-## 사용자 {#just-in-time-provisioning-of-users}의 적시 프로비저닝
+## 사용자의 적시 프로비저닝 {#just-in-time-provisioning-of-users}
 
 사용자가 인증 공급자를 통해 성공적으로 인증되면 User Management 데이터베이스에 사용자가 자동으로 생성되게 합니다. 관련 역할 및 그룹도 새 사용자에게 동적으로 할당됩니다. 엔터프라이즈 및 하이브리드 도메인에 대해 적시 프로비저닝을 활성화할 수 있습니다.
 
@@ -144,7 +144,7 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 
 적시 프로비저닝 없이 사용자가 성공적으로 인증되었지만 사용자 관리 데이터베이스에 없는 경우 인증이 실패합니다. 적시 프로비저닝을 통해 인증 절차에 사용자를 만들고 사용자에게 역할 및 그룹을 할당합니다.
 
-### 도메인 {#enable-just-in-time-provisioning-for-a-domain}에 대해 적시 프로비저닝을 사용하도록 설정
+### 도메인에 대해 적시 프로비저닝 사용 {#enable-just-in-time-provisioning-for-a-domain}
 
 1. IdentityCreator 및 AssignmentProvider 인터페이스를 구현하는 서비스 컨테이너를 작성합니다. ([AEM Forms로 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63)을 참조하십시오.)
 1. Forms 서버에 서비스 컨테이너를 배포합니다.
@@ -155,7 +155,7 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 1. 도메인을 만들려면 새 Enterprise 도메인 또는 새 Hybrid 도메인을 클릭합니다. 기존 도메인을 편집하려면 도메인 이름을 클릭합니다.
 1. Enable Just In Time Provisioning 을 선택합니다.
 
-   ***참고&#x200B;**:Enable Just In Time Provisioning 확인란이 누락된 경우 홈 > 설정 > 사용자 관리 > 구성 > 고급 시스템 속성을 클릭한 다음 다시 로드를 클릭합니다.*
+   ***참고&#x200B;**: Enable Just In Time Provisioning 확인란이 누락된 경우 홈 > 설정 > 사용자 관리 > 구성 > 고급 시스템 속성을 클릭한 다음 다시 로드를 클릭합니다.*
 
 1. 인증 공급자를 추가합니다. 인증 공급자를 추가하는 동안 새 인증 화면에서 등록된 Identity Creator 및 할당 공급자를 선택합니다. ([인증 공급자 구성](configuring-authentication-providers.md#configuring-authentication-providers) 참조)
 1. 도메인을 저장합니다.

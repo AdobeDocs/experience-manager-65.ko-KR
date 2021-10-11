@@ -1,8 +1,8 @@
 ---
 title: 디렉토리 구성
-seo-title: 디렉토리 구성
+seo-title: Configuring directories
 description: 디렉터리를 추가, 편집 및 삭제하고 가상 목록 보기를 사용하도록 사용자 관리를 구성하는 방법을 알아봅니다.
-seo-description: 디렉터리를 추가, 편집 및 삭제하고 가상 목록 보기를 사용하도록 사용자 관리를 구성하는 방법을 알아봅니다.
+seo-description: Learn how to add, edit and delete directories and configure user management to use virtual list view.
 uuid: 0bf1a8a7-c917-4248-9937-d24e31c5ba17
 contentOwner: admin
 content-type: reference
@@ -10,22 +10,22 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
-source-wordcount: '3246'
+source-wordcount: '3227'
 ht-degree: 0%
 
 ---
 
-# 디렉터리 {#configuring-directories} 구성
+# 디렉토리 구성 {#configuring-directories}
 
 구성하는 각 엔터프라이즈 도메인에 대해 인증 공급자가 사용자 정보를 쿼리하는 디렉토리를 지정합니다. 한 도메인에 대해 여러 디렉토리를 구성할 수 있습니다.
 
-## 디렉터리 또는 사용자 지정 SPI {#adding-directories-or-custom-spis} 추가
+## 디렉토리 또는 사용자 지정 SPI 추가 {#adding-directories-or-custom-spis}
 
 구성하는 각 엔터프라이즈 도메인에 대해 인증 공급자가 사용자 정보를 쿼리하는 디렉토리를 지정합니다. 기존 엔터프라이즈 도메인 또는 추가할 새 엔터프라이즈 도메인에 디렉토리를 추가할 수 있습니다. 한 도메인에 대해 여러 디렉토리를 구성할 수 있습니다. 동기화에 사용자 지정 SPI(Service Provider Interface)를 사용하도록 도메인을 구성할 수도 있습니다.
 
-### 디렉터리 {#add-a-directory} 추가
+### 디렉토리 추가 {#add-a-directory}
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 1. 새 엔터프라이즈 도메인을 클릭하거나 기존 엔터프라이즈 도메인을 선택합니다.
@@ -36,12 +36,12 @@ ht-degree: 0%
 1. 사용자 설정 을 선택하고 필요에 따라 설정을 구성합니다. ([디렉토리 설정](configuring-directories.md#directory-settings)을 참조하십시오.)
 1. 기본 DN 및 기타 구성된 속성이 올바른 사용자 배치를 수집하는지 확인하려면 테스트를 누릅니다. LDAP는 제공된 설정(예: 기본 DN, 검색 필터 및 모든 속성)을 사용하여 처음 200개의 레코드를 검색하려고 합니다.
 
-   사용자가 반환되면 속성 세트에 따라 각 필드에 할당된 값이 결과에 표시됩니다. 존재하지 않는 서버 이름, 잘못된 인증 정보 또는 잘못된 속성으로 인해 테스트가 실패하면 다음 오류 메시지가 표시됩니다.&quot;지정한 검색 조건이 결과를 반환하지 않았습니다.&quot; 오류의 근본 원인을 확인하려면 Application Server 로그 파일에서 예외를 검토하십시오. 닫기 를 클릭하고 다음 을 클릭합니다.
+   사용자가 반환되면 속성 세트에 따라 각 필드에 할당된 값이 결과에 표시됩니다. 존재하지 않는 서버 이름, 잘못된 인증 정보 또는 잘못된 속성으로 인해 테스트가 실패하면 다음 오류 메시지가 표시됩니다. &quot;지정한 검색 조건이 결과를 반환하지 않았습니다.&quot; 오류의 근본 원인을 확인하려면 Application Server 로그 파일에서 예외를 검토하십시오. 닫기 를 클릭하고 다음 을 클릭합니다.
 
 1. 그룹 설정 을 선택하고 필요에 따라 설정을 구성합니다. ([디렉토리 설정](configuring-directories.md#directory-settings)을 참조하십시오.)
 1. 기본 DN 및 기타 구성된 속성이 올바른 그룹 배치를 수집하는지 확인하려면 테스트를 누릅니다. 그룹이 반환되면 속성 세트에 따라 각 필드에 할당된 값이 결과에 표시됩니다. 닫기를 클릭합니다.
 
-### 사용자 지정 SPI {#add-a-custom-spi} 추가
+### 사용자 지정 SPI 추가 {#add-a-custom-spi}
 
 사용자 지정 SPI 만들기에 대한 내용은 [AEM Forms로 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63)에서 &quot;AEM forms용 SPI 개발&quot;을 참조하십시오. 새로 배포된 사용자 지정 SPI를 도메인과 연결할 수 있도록 하려면 서버를 다시 시작합니다.
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 1. 필요에 따라 디렉토리, 사용자 및 그룹 설정을 구성합니다. ([디렉토리 설정](configuring-directories.md#directory-settings)을 참조하십시오.)
 1. 확인을 클릭합니다.
 
-## 디렉터리 {#delete-a-directory} 삭제
+## 디렉토리 삭제 {#delete-a-directory}
 
 디렉토리를 삭제한 후 도메인을 동기화할 때 해당 디렉토리의 모든 사용자와 그룹은 데이터베이스에서 더 이상 사용되지 않는 것으로 표시됩니다. Administration Console에서 검색하면 반환되지 않습니다.
 
@@ -74,11 +74,11 @@ ht-degree: 0%
 1. 해당 디렉토리에 대한 확인란을 선택하고 삭제를 누릅니다.
 1. 확인 페이지가 나타나면 확인 을 클릭하고 확인 을 다시 클릭합니다.
 
-## 디렉터리 설정 {#directory-settings}
+## 디렉토리 설정 {#directory-settings}
 
 도메인에 디렉토리를 추가할 때 다음 디렉토리 설정을 지정합니다.
 
-**서버:**  (필수) 디렉터리 서버의 FQDN(정규화된 도메인 이름)입니다. 예를 들어 corp.adobe.com 네트워크에서 x라는 컴퓨터의 경우 FQDN은 x.corp.adobe.com입니다. FQDN 서버 이름 대신 IP 주소를 사용할 수 있습니다.
+**서버:**  (필수) 디렉터리 서버의 FQDN(정규화된 도메인 이름)입니다. 예를 들어, adobe.com 네트워크에서 x라는 컴퓨터의 경우 FQDN은 x.adobe.com입니다. FQDN 서버 이름 대신 IP 주소를 사용할 수 있습니다.
 
 **포트:**  (필수) 디렉토리 서버가 사용하는 포트입니다. 일반적으로 SSL(Secure Sockets Layer) 프로토콜을 사용하여 네트워크를 통해 인증 정보를 전송하는 경우 389 또는 636 입니다.
 
@@ -216,13 +216,13 @@ DN이 고유 식별자로 지정된 경우 멤버 고유 식별자를 구성할 
 
 >[!NOTE]
 >
->사용자 관리에서 도메인 내의 중복 사용자 ID를 지원하지 않습니다.사용자 ID를 가진 사용자는 하나만 동기화됩니다.
+>사용자 관리에서 도메인 내의 중복 사용자 ID를 지원하지 않습니다. 사용자 ID를 가진 사용자는 하나만 동기화됩니다.
 
-## VLV(가상 목록 보기) {#configure-user-management-to-use-virtual-list-view-vlv}를 사용하도록 사용자 관리를 구성합니다.
+## VLV(가상 목록 보기)를 사용하도록 사용자 관리 구성 {#configure-user-management-to-use-virtual-list-view-vlv}
 
 디렉터리 동기화는 사용자 관리의 중요한 요구 사항입니다. 사용자 및 그룹은 역할 및 권한을 지정하기 위해 enterprise 디렉토리에서 AEM forms 데이터베이스로 동기화됩니다. 사용자 수는 요구 사항에 따라 100명에서 100000 이상으로 다양하며, 데이터를 효율적으로 동기화하기 위한 엔지니어링 상의 문제가 있습니다.
 
-LDAP 프로토콜은 요청 컨트롤을 사용하여 페이지 지정 방식으로 큰 데이터 세트를 쿼리하는 메커니즘을 제공합니다. Microsoft Active Directory를 사용할 때 AEM Forms 데이터베이스 동기화는 PagedResultsControl을 사용하여 특정 크기의 일괄 처리로 데이터를 검색합니다. Sun ONE Directory Server는 이 컨트롤을 지원하지 않습니다. Sun ONE Directory Server에 대한 페이지 지정 쿼리를 완료하려면 가상 목록 보기(VLV) 컨트롤을 사용합니다. 이 제어에는 디렉토리 서버측 구성과 클라이언트측 구현이 모두 포함됩니다.
+LDAP 프로토콜은 요청 컨트롤을 사용하여 페이지 지정 방식으로 큰 데이터 세트를 쿼리하는 메커니즘을 제공합니다. Microsoft Active Directory를 사용하는 경우 AEM Forms 데이터베이스 동기화에 LDAP는 PagedResultsControl을 사용하여 특정 크기의 일괄 처리로 데이터를 검색합니다. Sun ONE Directory Server는 이 컨트롤을 지원하지 않습니다. Sun ONE Directory Server에 대한 페이지 지정 쿼리를 완료하려면 가상 목록 보기(VLV) 컨트롤을 사용합니다. 이 제어에는 디렉토리 서버측 구성과 클라이언트측 구현이 모두 포함됩니다.
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ LDAP 프로토콜은 요청 컨트롤을 사용하여 페이지 지정 방식으
 1. Sun ONE 관리 콘솔 또는 명령줄 스크립트를 사용하여 사용자 및 그룹에 대한 LDAP VLV 항목을 생성합니다. 명령줄 스크립트를 사용하는 경우 샘플 사용자 및 그룹 LDIF 파일을 사용할 수 있습니다. ( [VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv)에 대한 Sun ONE Directory Server 구성 참조).
 1. 서버를 중지하고 필요한 인덱스를 만듭니다. ( [VLV](configuring-directories.md#create-the-directory-server-index-for-vlv)에 대한 디렉토리 서버 인덱스 만들기를 참조하십시오.)
 
-### VLV {#configuring-the-sun-one-directory-server-for-vlv}에 대한 Sun ONE Directory Server 구성
+### VLV용 Sun ONE Directory Server 구성 {#configuring-the-sun-one-directory-server-for-vlv}
 
 VLV를 만들려면 `vlvSearch` 및 `vlvIndex` 개체 클래스를 포함하는 항목 쌍이 필요합니다. vlvSearch 항목에는 정렬할 속성이 포함된 개체 클래스를 지정하는 검색 기본 및 `vlvFilter` 속성이 포함됩니다. `vlvIndex` 개체 클래스에는 정렬할 하나 이상의 특성과 정렬 순서를 지정하는 `vlvSort` 특성이 포함됩니다. (빼기 기호(-)는 역방향 알파벳 순서를 나타냅니다.) AEM Forms에서 VLV를 사용하려면 사용자 및 그룹에 대해 별도의 항목이 필요합니다.
 
@@ -285,7 +285,7 @@ VLV를 만들려면 `vlvSearch` 및 `vlvIndex` 개체 클래스를 포함하는 
 
    `D:\tools\ldap\sun\shared\bin> -v -a -h localhost -p 55850 -D "uid=admin,ou=administrators,ou=topologymanagement,o=netscaperoot" -w "admin" -f "D:\tools\ldap\data\vlv feature\users.ldif"`
 
-### VLV {#create-the-directory-server-index-for-vlv}에 대한 디렉터리 서버 인덱스를 만듭니다.
+### VLV용 디렉터리 서버 인덱스 만들기 {#create-the-directory-server-index-for-vlv}
 
 디렉터리 설정을 구성하고 사용자 및 그룹에 대한 LDAP VLV 항목을 만든 후 서버를 중지하고 필요한 인덱스를 만듭니다.
 

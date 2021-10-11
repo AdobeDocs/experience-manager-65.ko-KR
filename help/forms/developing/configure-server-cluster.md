@@ -1,7 +1,8 @@
 ---
 title: JEE 서버 클러스터에서 AEM Forms을 구성하고 문제를 해결하는 방법
 description: JEE 서버 클러스터에서 AEM Forms을 구성하고 문제를 해결하는 방법을 알아봅니다
-source-git-commit: 8502e0227819372db4120d3995fba51c7401d944
+exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
 source-wordcount: '4033'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 ## 전제 조건 지식 {#prerequisites}
 
-JEE, JBoss, WebSphere 및 Weblogic 애플리케이션 서버, Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX 또는 Sun Solaris 운영 체제, Oracle, IBM DB2 또는 SQL Server 데이터베이스 서버 및 웹 환경에 대한 AEM Forms에 대해 잘 알고 있습니다.
+JEE, JBoss, WebSphere 및 Weblogic 응용 프로그램 서버, Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX 또는 Sun Solaris 운영 체제, Oracle, IBM DB2 또는 SQL Server 데이터베이스 서버 및 웹 환경에 익숙한 AEM Forms
 
 ## 사용자 수준 {#user-level}
 
@@ -162,7 +163,7 @@ Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com
                 at com.adobe.livecycle.bootstrap.bootstrappers.DSCBootstrapper.bootstrap(DSCBootstrapper.java:68)
 ```
 
-이 경우 부트스트래퍼는 GemFire와 협력하여 필요한 테이블에 액세스하고 있으며, JDBC를 통해 액세스한 테이블과 다른 기본 데이터베이스를 사용하는 다른 클러스터에서 반환되는 GemFire에서 반환되는 캐시된 테이블 정보 간에 불일치가 있습니다.
+이 경우 부트스트래퍼는 GemFire와 함께 필수 테이블에 액세스하는 작업을 하고 있으며 JDBC를 통해 액세스한 테이블과 다른 기본 데이터베이스가 있는 다른 클러스터에서 반환되는 GemFire에서 반환되는 캐시된 테이블 정보 간에 불일치가 발생합니다.
 
 부트스트랩 중에 중복 포트가 두드러지는 경우가 많지만, 다른 클러스터의 부트스트랩이 발생한 후 클러스터를 다시 시작할 때 또는 이전에 분리된 클러스터를 멀티캐스트 목적으로 서로 보이도록 네트워크 구성을 변경할 때 나중에 이러한 상황이 표시될 수 있습니다.
 
@@ -266,7 +267,7 @@ Quartz가 자체적으로 구성된 방법을 결정하려면 시작 중에 JEE 
 INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSschedulerService onLoad
 일부 애플리케이션 서버에서도 Quartz를 사용하므로 해당 Quartz 인스턴스를 JEE Scheduler Service에서 AEM Forms이 사용하는 인스턴스와 혼동해서는 안 되므로 로그에서 이 첫 번째 줄을 찾는 것이 중요합니다. 이는 스케줄러 서비스가 시작됨을 나타내며 다음에 오는 줄은 클러스터 모드에서 제대로 시작하는지 여부를 알려줍니다. 여러 메시지가 이 시퀀스에 표시되며 Quartz 구성 방법을 보여주는 마지막 &quot;시작&quot; 메시지입니다.
 
-여기서는 Quartz 인스턴스의 이름이 지정됩니다. `IDPSchedulerService_$_ap-hp8.ottperflab.corp.adobe.com1312883903975` 스케줄러의 Quartz 인스턴스의 이름은 항상 `IDPSchedulerService_$_` 문자열로 시작됩니다. 이 끝단에 추가된 문자열은 Quartz가 클러스터된 모드에서 실행 중인지 여부를 알려줍니다. 노드의 호스트 이름에서 생성된 긴 고유 식별자와 여기서 `ap-hp8.ottperflab.corp.adobe.com1312883903975` 의 긴 자릿수는 클러스터에서 작동 중임을 나타냅니다. 단일 노드로 작동하는 경우 식별자는 두 자리 숫자인 &quot;20&quot;이 됩니다.
+여기서는 Quartz 인스턴스의 이름이 지정됩니다. `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975` 스케줄러의 Quartz 인스턴스의 이름은 항상 `IDPSchedulerService_$_` 문자열로 시작됩니다. 이 끝단에 추가된 문자열은 Quartz가 클러스터된 모드에서 실행 중인지 여부를 알려줍니다. 노드의 호스트 이름에서 생성된 긴 고유 식별자와 여기서 `ap-hp8.ottperflab.adobe.com1312883903975` 의 긴 자릿수는 클러스터에서 작동 중임을 나타냅니다. 단일 노드로 작동하는 경우 식별자는 두 자리 숫자인 &quot;20&quot;이 됩니다.
 
 정보 `[org.quartz.core.QuartzScheduler]` 스케줄러 `IDPSchedulerService_$_20`가 시작되었습니다.
 각 노드의 스케줄러가 독립적으로 클러스터 모드에서 작동 여부를 결정하므로 이 검사는 모든 클러스터 노드에서 별도로 수행해야 합니다.
@@ -332,19 +333,3 @@ JEE의 AEM Forms 내 특정 파일 경로 설정은 클러스터 전체에 설�
 특히 임시 디렉토리 경로는 노드 간에 공유하면 안 됩니다. GDS를 검증하기 위해 설명한 것과 유사한 절차를 사용하여 임시 디렉토리가 공유되지 않고 있는지 확인합니다. 각 노드로 이동하고 경로 설정으로 표시된 경로에 임시 파일을 만든 다음 다른 노드가 파일을 공유하지 않는지 확인합니다. 임시 디렉토리 경로는 가능한 경우 각 노드의 로컬 디스크 스토리지를 참조하며 선택해야 합니다.
 
 각 경로 설정에 대해 JEE에서 AEM Forms이 실행되는 유효한 사용 ID를 사용하여 경로가 실제로 존재하며 클러스터의 각 노드에서 액세스할 수 있는지 확인하십시오. 글꼴 디렉터리 내용을 읽을 수 있어야 합니다. temp 디렉터리는 읽기, 쓰기 및 제어를 허용해야 합니다.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,8 +1,8 @@
 ---
 title: 전자 메일 끝점 구성
-seo-title: 전자 메일 끝점 구성
+seo-title: Configuring email endpoints
 description: 전자 메일 끝점을 구성하는 방법을 알아봅니다.
-seo-description: 전자 메일 끝점을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure email endpoints.
 uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
-source-wordcount: '3766'
+source-wordcount: '3757'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 * 모든 전자 메일 종단점에 공통인 특성을 구성하려면
 * 모든 전자 메일 끝점에 대한 기본값을 제공하려면 다음을 수행하십시오
 
-## 전자 메일 종단점에 대한 SSL 구성 {#configure-ssl-for-an-email-endpoint}
+## 이메일 종단점에 대한 SSL 구성 {#configure-ssl-for-an-email-endpoint}
 
 전자 메일 끝점에 SSL(Secure Sockets Layer)을 사용하도록 POP3, IMAP 또는 SMTP를 구성할 수 있습니다.
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 1. 전자 메일 서버에서 클라이언트 인증서를 내보냅니다.
 1. 키 도구 프로그램을 사용하여 클라이언트 인증서 파일을 애플리케이션 서버의 JVM(Java Virtual Machine) 인증서 저장소로 가져옵니다. 이 단계에 대한 절차는 JVM 및 클라이언트 설치 경로에 따라 다릅니다.
 
-   예를 들어, Microsoft Windows Server® 2003에서 JDK 1.5.0과 함께 기본 Oracle WebLogic Server 설치를 사용하는 경우 명령 프롬프트에 다음 텍스트를 입력합니다.
+   예를 들어 Microsoft Windows Server® 2003에서 JDK 1.5.0과 함께 기본 Oracle WebLogic Server 설치를 사용하는 경우 명령 프롬프트에 다음 텍스트를 입력합니다.
 
    `keytool -import -file client_certificate -alias myalias -keystore BEA_HOME\jdk150_04\jre\security\cacerts`
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->팁:SSL을 사용할 때 문제가 발생하는 경우 Microsoft Outlook과 같은 전자 메일 클라이언트를 사용하여 SSL을 사용하여 전자 메일 서버에 액세스할 수 있는지 확인하십시오. 이메일 클라이언트가 이메일 서버에 액세스할 수 없는 경우, 이 문제는 인증서 또는 이메일 서버의 구성과 관련되어 있습니다.
+>팁: SSL을 사용할 때 문제가 발생하는 경우 Microsoft Outlook과 같은 이메일 클라이언트를 사용하여 SSL을 사용하여 이메일 서버에 액세스할 수 있는지 확인하십시오. 이메일 클라이언트가 이메일 서버에 액세스할 수 없는 경우, 이 문제는 인증서 또는 이메일 서버의 구성과 관련되어 있습니다.
 
 ## 기본 전자 메일 끝점 설정 구성 {#configure-default-email-endpoint-settings}
 
@@ -64,10 +64,10 @@ ht-degree: 0%
 
 Forms 워크플로우가 사용자로부터 들어오는 전자 메일 메시지를 받고 처리하려면 전체 작업 서비스를 위한 전자 메일 끝점을 만들어야 합니다. 이 전자 메일 종단점은 [전체 작업 서비스](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)에 설명된 대로 추가 설정이 필요합니다.
 
-### 전자 메일 끝점 {#change-the-default-values-for-email-endpoints} 기본값 변경
+### 전자 메일 끝점의 기본값 변경 {#change-the-default-values-for-email-endpoints}
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 서비스 관리를 클릭합니다.
-1. Service Management 페이지에서 Email:1.0(구성 요소 ID는 com.adobe.idp.dsc.provider.service.email.Email)입니다.
+1. Service Management 페이지에서 Email: 1.0(구성 요소 ID는 com.adobe.idp.dsc.provider.service.email.Email)입니다.
 1. 구성 탭에서 기본 전자 메일 끝점 설정을 지정한 다음 저장을 클릭합니다.
 
 ### 기본 전자 메일 끝점 설정 {#default-email-endpoint-settings}
@@ -84,7 +84,7 @@ Forms 워크플로우가 사용자로부터 들어오는 전자 메일 메시지
 
 **비동기:** 호출 유형을 비동기 또는 동기식으로 식별합니다. 임시 및 동기 프로세스는 동기식으로 호출할 수만 있습니다. 기본값은 비동기적입니다.
 
-**도메인 패턴:** 들어오는 이메일을 필터링하는 데 사용되는 도메인 이름 패턴입니다. 예를 들어 adobe.com을 사용하는 경우 adobe.com의 이메일만 처리됩니다.다른 도메인의 이메일은 무시됩니다.
+**도메인 패턴:** 들어오는 이메일을 필터링하는 데 사용되는 도메인 이름 패턴입니다. 예를 들어 adobe.com을 사용하는 경우 adobe.com의 이메일만 처리됩니다. 다른 도메인의 이메일은 무시됩니다.
 
 **파일 패턴:**  공급자가 허용하는 들어오는 파일 첨부 패턴입니다. 여기에는 특정 확장(&amp;ast;.dat, &amp;ast;.xml)이 있는 파일, 특정 이름(데이터) 및 확장()의 복합 표현식이 포함됩니다.[d][aA]&#39;port&#39;). 기본값은 &amp;ast;입니다.amp;ast;(&amp;M)
 
@@ -106,7 +106,7 @@ Forms 워크플로우가 사용자로부터 들어오는 전자 메일 메시지
 
 **POP3/IMAP SSL 사용:** 선택한 경우 SSL을 활성화합니다.
 
-**SMTP 호스트:**  이메일 공급자가 결과 및 오류 메시지를 보내는 데 사용하는 메일 서버의 호스트 이름입니다. 예를 들어 mail.corp.example.com입니다.
+**SMTP 호스트:**  이메일 공급자가 결과 및 오류 메시지를 보내는 데 사용하는 메일 서버의 호스트 이름입니다. 예를 들어 mail.example.com입니다.
 
 **SMTP 포트:**  메일 서버에 연결하는 데 사용되는 포트입니다. 기본값은 25입니다.
 
@@ -162,7 +162,7 @@ Forms 워크플로우가 사용자로부터 들어오는 전자 메일 메시지
 
 **도메인 이름:** 사용자의 도메인인 필수 설정입니다. 기본값은 DefaultDom입니다.
 
-**도메인 패턴:**  공급자가 허용하는 수신 전자 메일의 도메인 패턴을 지정합니다. 예를 들어 adobe.com을 사용하는 경우 adobe.com의 이메일만 처리됩니다.다른 도메인의 이메일은 무시됩니다.
+**도메인 패턴:**  공급자가 허용하는 수신 전자 메일의 도메인 패턴을 지정합니다. 예를 들어 adobe.com을 사용하는 경우 adobe.com의 이메일만 처리됩니다. 다른 도메인의 이메일은 무시됩니다.
 
 **파일 패턴:**  공급자가 허용하는 들어오는 파일 첨부 패턴을 지정합니다. 여기에는 이름 및 확장(&amp;ast;.dat, &amp;ast;.xml), 특정 이름(데이터) 또는 복합 표현식(&amp;ast;)이 있는 파일이 포함됩니다.[d][aA]&#39;port&#39;).
 
@@ -204,7 +204,7 @@ Forms 워크플로우가 사용자로부터 들어오는 전자 메일 메시지
 
 **비동기:** 동기식으로 설정하면 모든 입력 문서가 처리되고 단일 응답이 반환됩니다. 비동기식으로 설정하면 처리되는 각 문서에 대해 응답이 전송됩니다.
 
-예를 들어, 단일 Word 문서를 사용하고 해당 문서를 PDF 파일로 반환하는 서비스에 대해 전자 메일 종단점이 만들어집니다. 여러 (3) Word 문서가 포함된 끝점의 받은 편지함으로 이메일을 보낼 수 있습니다. 세 개의 문서가 모두 처리되면 종단점이 동기식으로 구성된 경우 세 개의 문서가 모두 첨부된 단일 응답 전자 메일이 전송됩니다. 종단점이 비동기식으로 설정되어 있으면 각 Word 문서가 PDF로 변환된 후 응답 전자 메일이 전송됩니다. 그 결과 세 개의 이메일이 발송되며 각각 하나의 PDF가 첨부됩니다.
+예를 들어, 단일 Word 문서를 사용하고 해당 문서를 PDF 파일로 반환하는 서비스에 대해 전자 메일 끝점이 만들어집니다. 여러 (3) Word 문서가 포함된 끝점의 받은 편지함으로 이메일을 보낼 수 있습니다. 세 개의 문서가 모두 처리되면 종단점이 동기식으로 구성된 경우 세 개의 문서가 모두 첨부된 단일 응답 전자 메일이 전송됩니다. 종단점이 비동기인 경우 각 Word 문서가 PDF으로 변환된 후 응답 전자 메일이 전송됩니다. 그 결과 세 개의 이메일이 있고 각각 하나의 PDF 첨부 파일이 있습니다.
 
 기본값은 비동기적입니다.
 
@@ -232,7 +232,7 @@ Forms 워크플로우가 사용자로부터 들어오는 전자 메일 메시지
 
 **문자:**  이메일은 표시되는 대로 필드에 입력된 값을 사용합니다.
 
-**변수:** 이메일 제목, 본문, 헤더 또는 발신자의 이메일 주소에서 문자열을 매핑할 수 있습니다. 이렇게 하려면 다음 키워드 중 하나를 사용합니다.%SUBJECT%, %BODY%, %HEADER% 또는 %SENDER%. 예를 들어 %SUBJECT%를 사용하는 경우 전자 메일 제목 콘텐츠는 입력 매개 변수로 사용됩니다. 첨부 파일을 선택하려면 전자 메일 끝점이 첨부 문서를 선택하는 데 사용할 수 있는 파일 패턴을 입력합니다. 예를 들어 &amp;ast;.pdf를 입력하면 확장명이 .pdf인 첨부된 모든 문서가 선택됩니다. amp;ast;입력(&amp;M)첨부 문서를 선택합니다. example.pdf를 입력하면 example.pdf라는 첨부 문서가 선택됩니다.
+**변수:** 이메일 제목, 본문, 헤더 또는 발신자의 이메일 주소에서 문자열을 매핑할 수 있습니다. 이렇게 하려면 다음 키워드 중 하나를 사용합니다. %SUBJECT%, %BODY%, %HEADER% 또는 %SENDER%. 예를 들어 %SUBJECT%를 사용하는 경우 전자 메일 제목 콘텐츠는 입력 매개 변수로 사용됩니다. 첨부 파일을 선택하려면 전자 메일 끝점이 첨부 문서를 선택하는 데 사용할 수 있는 파일 패턴을 입력합니다. 예를 들어 &amp;ast;.pdf를 입력하면 확장명이 .pdf인 첨부된 모든 문서가 선택됩니다. amp;ast;입력(&amp;M) 첨부 문서를 선택합니다. example.pdf를 입력하면 example.pdf라는 첨부 문서가 선택됩니다.
 
 **출력 매개 변수 매핑:**  서비스 및 작업의 출력을 구성하는 데 사용됩니다. 출력 매개 변수 매핑 값의 다음 문자가 첨부 파일 이름에서 확장됩니다.
 
@@ -242,17 +242,17 @@ Forms 워크플로우가 사용자로부터 들어오는 전자 메일 메시지
 
 모든 백슬래시(\)가 %%로 대체됩니다.
 
-***참고&#x200B;**:서비스 요청 메시지에 여러 첨부 파일이 포함된 경우 끝점의 출력 매개 변수 매핑 속성에 %F 및 %E 매개 변수를 사용할 수 없습니다. 서비스 응답이 여러 첨부 파일을 반환하는 경우 두 개 이상의 첨부 파일에 동일한 파일 이름을 지정할 수 없습니다. 이러한 권장 사항을 따르지 않으면 호출된 서비스가 반환된 파일의 이름을 만들고 이름을 예측할 수 없습니다.*
+***참고&#x200B;**: 서비스 요청 메시지에 여러 첨부 파일이 포함된 경우 끝점의 출력 매개 변수 매핑 속성에 %F 및 %E 매개 변수를 사용할 수 없습니다. 서비스 응답이 여러 첨부 파일을 반환하는 경우 두 개 이상의 첨부 파일에 동일한 파일 이름을 지정할 수 없습니다. 이러한 권장 사항을 따르지 않으면 호출된 서비스가 반환된 파일의 이름을 만들고 이름을 예측할 수 없습니다.*
 
 다음 값을 사용할 수 있습니다.
 
-**단일 개체:**  전자 메일 공급자에 소스 폴더 대상이 없습니다.결과는 첨부 파일로 반환됩니다. 패턴은 Result/%F.ps이며 파일 이름 첨부 파일로 Result%%sourcefilename.ps를 반환합니다.
+**단일 개체:**  전자 메일 공급자에 소스 폴더 대상이 없습니다. 결과는 첨부 파일로 반환됩니다. 패턴은 Result/%F.ps이며 파일 이름 첨부 파일로 Result%%sourcefilename.ps를 반환합니다.
 
 **목록:** 패턴은 결과/%F/ 이고 파일 이름 첨부 파일로 Result%%sourcefilename%%file1을 반환합니다.
 
 **맵:** 패턴은 결과/%F/ 이고 소스 대상은 결과%%sourcefilename%%file1 및 Result%%sourcefilename%%file2입니다. 맵에 둘 이상의 개체가 있고 패턴이 Result/%F.ps인 경우 응답 파일 첨부 파일은 Result%%sourcefilename1.ps(출력 1) 및 Result%%sourcefilename2.ps(출력 2)입니다.
 
-## 완료 작업 서비스 {#create-an-email-endpoint-for-the-complete-task-service}에 대한 전자 메일 끝점을 만듭니다.
+## 전체 작업 서비스에 대한 전자 메일 끝점 만들기 {#create-an-email-endpoint-for-the-complete-task-service}
 
 Forms 워크플로우가 사용자로부터 들어오는 전자 메일 메시지를 받고 처리하려면 전체 작업 서비스를 위한 전자 메일 끝점을 만들어야 합니다.
 
