@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 exl-id: 06b74770-1f96-4f6b-98c0-afef7000e42b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62544559020b0c0afd7bb31fb832b82ba3d47919
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 2014년 1월 31일부터 DHTML 뷰어 플랫폼은 공식적으로 사용이 종료됩니다.
 
-지원되는 최신 뷰어는 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)를 참조하십시오.
+지원되는 최신 뷰어는 [Dynamic Media 뷰어 참조 안내서](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)를 참조하십시오.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 
