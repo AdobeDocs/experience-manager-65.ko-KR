@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 52c8d4c425213718678543e9e9e8e5a4c2af4f95
+source-git-commit: 9f7bd996d2ec77d29fbee3ee51ac6469f94e9bd7
 workflow-type: tm+mt
-source-wordcount: '4684'
+source-wordcount: '4679'
 ht-degree: 0%
 
 ---
@@ -215,19 +215,19 @@ MongoDB 인스턴스에서 인덱스를 제거할 때 삭제 비용은 인덱스
 
 ### JCR 쿼리 치트 시트 {#jcrquerycheatsheet}
 
-효율적인 JCR 쿼리 및 색인 정의 만들기를 지원하려면 [JCR 쿼리 치트 시트|assets/JCR_query_cheatsheet-v1.0.pdf] 는 개발 중에 다운로드하여 참조로 사용할 수 있습니다. 여기에는 쿼리 성능 측면에서 다르게 동작하는 여러 시나리오를 다루는 QueryBuilder, XPath 및 SQL-2에 대한 샘플 쿼리가 포함되어 있습니다. 또한 Oak 인덱스를 작성하거나 사용자 지정하는 방법에 대한 권장 사항을 제공합니다. 이 치트 시트의 내용은 AEM 6.5 및 AEM as a Cloud Service에 적용됩니다.
+효율적인 JCR 쿼리 및 색인 정의 만들기를 지원하려면 [JCR 쿼리 치트 시트](assets/JCR_query_cheatsheet-v1.0.pdf) 는 개발 중에 다운로드하여 참조로 사용할 수 있습니다. 여기에는 쿼리 성능 측면에서 다르게 동작하는 여러 시나리오를 다루는 QueryBuilder, XPath 및 SQL-2에 대한 샘플 쿼리가 포함되어 있습니다. 또한 Oak 인덱스를 작성하거나 사용자 지정하는 방법에 대한 권장 사항을 제공합니다. 이 치트 시트의 내용은 AEM 6.5 및 AEM as a Cloud Service에 적용됩니다.
 
 ## 색인 재지정 {#re-indexing}
 
 이 섹션에서는 **전용** Oak 색인을 다시 색인화하는 데 적합한 이유입니다.
 
-아래에 요약된 이유 외에 Oak 인덱스의 재색인을 시작하면 **not** 동작을 변경하거나 문제를 해결하고 AEM의 로드를 일시적으로 늘립니다.
+아래에 요약된 이유 외에 Oak 인덱스의 재색인을 시작하면 **not** 동작을 변경하거나 문제를 해결하고 AEM의 로드를 불필요하게 증가시킵니다.
 
 아래 표에 있는 이유로 다루지 않는 한 Oak 인덱스의 재색인화를 방지합니다.
 
 >[!NOTE]
 >
->아래 표를 참조하여 색인화를 다시 정의하는 것이 유용하며, 항상 **를 확인하십시오.
+>아래 표를 참조하여 색인화를 확인하는 것은 유용하며, **항상** 확인:
 >
 >* 쿼리가 올바릅니다
 >* 쿼리가 예상 인덱스로 확인됩니다. [쿼리 설명](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
