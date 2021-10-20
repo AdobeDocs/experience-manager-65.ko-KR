@@ -9,9 +9,9 @@ topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
-source-git-commit: dc8e3ed70ebaf064993ef5af910430b7fc2e521d
+source-git-commit: 415744ca5c46a1495fe90369c162158c7fc2f1d4
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '486'
 ht-degree: 7%
 
 ---
@@ -42,13 +42,13 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 
 ### 워크플로 {#workflow}
 
-대화형 커뮤니케이션을 만들려면 대화형 커뮤니케이션용 [빌딩 블록](#buildingblocks)을 준비하여 다음 단계를 완료하십시오.
+대화형 커뮤니케이션을 만들려면 [빌딩 블록](#buildingblocks) 대화형 커뮤니케이션용 준비 후 다음 단계를 완료합니다.
 
-1. [대화형 통신 만들기](/help/forms/using/create-interactive-communication.md)를 선택합니다.
+1. 선택 [대화형 통신 만들기](/help/forms/using/create-interactive-communication.md).
 
-1. [양식 데이터 모델](/help/forms/using/data-integration.md), 미리 채우기 서비스 및 [인쇄 및 웹 채널 템플릿](/help/forms/using/web-channel-print-channel.md)을 지정합니다. 인쇄 채널에서 웹 채널을 생성하도록 선택할 수 있습니다.
+1. 을(를) 지정합니다. [양식 데이터 모델](/help/forms/using/data-integration.md), 미리 채우기 서비스 및 [인쇄 및 웹 채널 템플릿](/help/forms/using/web-channel-print-channel.md). 인쇄 채널에서 웹 채널을 생성하도록 선택할 수 있습니다.
 
-1. [드래그 앤 드롭 인터페이스](/help/forms/using/introduction-interactive-communication-authoring.md)를 사용하여 필요에 따라 문서 조각, 이미지, 구성 요소를 인쇄 및 대화형 커뮤니케이션의 웹 채널을 추가합니다.
+1. 사용 [끌어서 놓기 인터페이스](/help/forms/using/introduction-interactive-communication-authoring.md)필요한 경우 문서 조각, 이미지, 구성 요소를 추가하여 대화형 커뮤니케이션의 인쇄 및 웹 채널을 추가합니다.
 1. 다음과 같이 삽입된 구성 요소의 속성을 구성합니다.
 
    1. [이미지](/help/forms/using/create-interactive-communication.md#step2)
@@ -57,7 +57,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
    1. [문서 조각](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. 인쇄 및 웹 채널을 미리 보고 필요한 경우 대화형 커뮤니케이션을 편집합니다.
-1. 에이전트는 에이전트 UI를 사용하여 [대화형 통신](/help/forms/using/prepare-send-interactive-communication.md)을 준비하여 수신자/사후 프로세스에 보냅니다.
+1. 에이전트는 에이전트 UI를 사용하여 [대화형 통신 준비](/help/forms/using/prepare-send-interactive-communication.md) 수신자/게시물 프로세스에 보내는 데 사용됩니다.
 
 ### 빌딩 블록 {#buildingblocks}
 
@@ -67,11 +67,11 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 - [인쇄 및 웹 채널 템플릿](/help/forms/using/web-channel-print-channel.md)
 - [문서 조각](/help/forms/using/document-fragments.md)
 - 이미지
-- [](/help/forms/using/themes.md) 웹 채널의 테마
+- [테마](/help/forms/using/themes.md) 웹 채널용
 
 ## Interactive Communications와 서신 관리 {#interactive-communications-vs-correspondence-management}
 
-대화형 커뮤니케이션은 고객 커뮤니케이션을 만드는 기본적이고 권장되는 방법입니다. AEM 6.3 Forms 및 AEM 6.2 Forms에서 만드는 문자를 계속 사용하려면 [호환성 패키지](/help/forms/using/compatibility-package.md)를 설치해야 합니다. 다음은 Interactive Communication과 Letter의 기능을 비교한 것입니다.
+대화형 커뮤니케이션은 고객 커뮤니케이션을 만드는 기본적이고 권장되는 방법입니다. AEM 6.3 Forms 및 AEM 6.2 Forms에서 만든 문자를 계속 사용하려면 다음을 수행해야 합니다 [호환성 패키지 설치](/help/forms/using/compatibility-package.md). 다음은 Interactive Communication과 Letter의 기능을 비교한 것입니다.
 
 <table>
  <tbody>
@@ -124,6 +124,12 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
    <td>지원됨</td>
    <td>지원됨</td>
   </tr>
+   <tr>
+   <td>제출</td>
+   <td>지원됨</td>
+   <td>지원됨</td>
+  </tr>
+  <tr>
   <tr>
    <td>감사</td>
    <td>지원되지 않음</td>
@@ -134,12 +140,6 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
    <td>지원되지 않음</td>
    <td>지원됨</td>
   </tr>
-   <tr>
-   <td>임시 보관함 인스턴스 관리</td>
-   <td>지원되지 않음</td>
-   <td>지원됨</td>
-  </tr>
-  <tr>
    <td>일괄 처리</td>
    <td>지원됨 </td>
    <td>지원됨</td>
