@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 676299c741684708d420ac208f44b0c7a285de0c
+source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2116'
 ht-degree: 2%
 
 ---
@@ -319,7 +319,7 @@ AEM은 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통�
 
 >[!NOTE]
 >
->아래 요약된 절차는 게시 인스턴스의 예제입니다. 원할 경우 작성자 인스턴스에 대해 이 절차를 따를 수도 있습니다.
+>이 절차는 게시 인스턴스의 예제입니다. 작성자 인스턴스에서 이메일 알림을 활성화하려면 작성자에서 동일한 단계를 따라야 합니다.
 
 ### Gmail {#gmail}
 
