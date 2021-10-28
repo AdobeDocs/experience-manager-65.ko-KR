@@ -1,8 +1,8 @@
 ---
 title: API 안내서
-seo-title: API 안내서
+seo-title: API Guides
 description: AEM에서 애플리케이션 개발을 위해 제공하는 API에 대한 설명서
-seo-description: AEM에서 애플리케이션 개발을 위해 제공하는 API에 대한 설명서
+seo-description: Documentation for the APIs that AEM provides for developing applications
 uuid: d998b23c-5b0a-462f-a733-02cf979de2d0
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -12,10 +12,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
 docset: aem65
 exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d6c875e85d553b8ef557b811c9fa43f46824f297
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 2%
+source-wordcount: '263'
+ht-degree: 3%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 2%
 
 Adobe Experience Manager(AEM)은 애플리케이션 개발 및 AEM 확장을 위한 여러 API를 제공합니다. 다음 목록은 AEM에서 지원하는 API에 대한 설명서를 제공합니다.
 
-* [Adobe AEM 6.5.0 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)
-* [Granite UI(터치 지원) API 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
-* [Coral UI 안내서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
-* [위젯 API(클래식 UI) 설명서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
-* [UI 테스트 프레임워크 JavaScript API 참조](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
-* [편집기 핵심 JavaScript API 참조](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
+* [Adobe AEM 6.5.0 API](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/index.html)
+* [Granite UI(터치 지원) API 설명서](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
+* [Coral UI 안내서](https://www.adobe.io/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+* [위젯 API(클래식 UI) 설명서](https://www.adobe.io/experience-manager/reference-materials/6-5/widgets-api/index.html)
+* [UI 테스트 프레임워크 JavaScript API 참조](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
+* [편집기 핵심 JavaScript API 참조](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM SPA(단일 페이지 애플리케이션) 편집기 SDK 프레임워크 JavaScript API 참조:
 
@@ -43,15 +43,15 @@ AEM 배달 및 콘텐츠 관리 API:
 
    * [JSON 내보내기](/help/sites-developing/json-exporter.md)
    * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
-   * 자세한 내용은 개발 사용 안내서](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js)의 [구성 요소 섹션을 참조하십시오
+   * 자세한 내용은 [개발 사용 안내서의 구성 요소 섹션](/help/sites-developing/home.md) 자세한 정보
 
-* **자산**:Assets HTTP API를 사용하면 이진, 메타데이터, 표현물 및 주석을 포함하여 자산에 대한 CRUD(Create-Read-update-delete) 작업을 수행할 수 있습니다. [AEM Assets HTTP API](/help/assets/mac-api-assets.md) 를 참조하십시오
+* **자산**: Assets HTTP API를 사용하면 이진, 메타데이터, 표현물 및 주석을 포함하여 자산에 대한 CRUD(Create-Read-update-delete) 작업을 수행할 수 있습니다. 자세한 내용은 [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* **컨텐츠 조각** (CF): [Assets HTTP ](/help/assets/assets-api-content-fragments.md) API 및  [AEM Assets API의 CF 지원 - 컨텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* **컨텐츠 조각** (CF): [Assets HTTP API의 CF 지원](/help/assets/assets-api-content-fragments.md) 및 [AEM Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
 다음 외부 리소스는 참조용입니다.
 
 * [Apache Sling 11 API](https://sling.apache.org/apidocs/sling11/)
 * [Jackrabbit Oak API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
-* [Java Content Repository API](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)
+* [Java Content Repository API](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [Apache Jackrabbit API](https://jackrabbit.apache.org/api)
