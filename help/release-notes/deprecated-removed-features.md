@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 6.5 릴리스에서 사용 중단되거나 제거된 기능.
 description: Adobe Experience Manager 6.5의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: bfe5bb744223be1ff9a00c382734abd9bf4db59a
+source-git-commit: 1e02ad94459ff2893d96055c026d0873b1d69991
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 68%
@@ -63,7 +63,7 @@ AEM 기능을 제거하거나 교체하기 위해 다음 규칙이 적용됩니�
 | 통합 | Salesforce Force API 통합이 기본 배포(빠른 시작)에서 제거되었으며 이제 설치할 추가 패키지입니다. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | 이 기능은 계속 사용할 수 있습니다. |
 | 양식 | Adobe Central 제품이 더 이상 지원되지 않아 Adobe Central Migration Bridge 서비스 지원이 제거되었습니다. | 교체 없음. |  |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | 교체 없음. |  |
-| 양식 | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | 교체 없음 |
+| 양식 | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | 교체 없음 |  |
 | 양식 | LiveCycle ES4 SP1에서 JEE의 AEM 6.5 Forms로 한 번에 업그레이드할 수 없음 | AEM Forms 업그레이드 설명서의 [사용 가능한 업그레이드 경로](../forms/using/upgrade.md)를 참조하십시오. |  |
 | 양식 | JEE의 AEM Forms에서 UPD 기반 클러스터링 지원을 제거했습니다. | JEE의 AEM Forms에서는 TCP 기반 클러스터링만 사용할 수 있습니다. UDP 멀티캐스트 서버를 이전 버전에서 JEE의 AEM 5.5 Forms로 업그레이드하는 경우 수동 구성을 수행하여 TCP 기반 Gemfire 클러스터로 전환합니다. 자세한 지침은 [JEE의 AEM 6.5 양식으로 업그레이드](../forms/using/upgrade-forms-jee.md)를 참조하십시오. |  |
 | 개발자 | Firebug Lite가 기본 배포(빠른 시작)에서 제거되었습니다. | 브라우저 내장 개발자 콘솔 사용 |
