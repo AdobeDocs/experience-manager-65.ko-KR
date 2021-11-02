@@ -1,12 +1,12 @@
 ---
-sub-product: AEM Content 및 Commerce
+sub-product: AEM Content and Commerce
 user-guide-title: AEM Content 및 Commerce
 breadcrumb-title: Commerce 안내서
 user-guide-description: AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
-source-git-commit: a5bf6a1a6e9013e44209ea865145af1557445318
+source-git-commit: 5678d20fa0a7e8a709b02a2f6cbbeffbd4a26cbd
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 42%
+source-wordcount: '109'
+ht-degree: 40%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 42%
 + [AEM 컨텐츠 및 상거래에 대한 주요 변경 사항](cif/changes.md)
 + [소개 및 개요](cif/introduction.md)
 + 통합 {#integrations}
-   + [Adobe 상거래](cif/integrating/magento.md)
+   + [Adobe Commerce](cif/integrating/magento.md)
    + [타사 상거래 솔루션](cif/integrating/third-party.md)
 + AEM Storefront {#storefront}
    + [시작하기](cif/getting-started.md)
@@ -32,15 +32,16 @@ ht-degree: 42%
       + [스타일 지정 CIF 구성 요소](cif/customizing/style-cif-component.md)
       + [CIF 구성 요소 사용자 정의](cif/customizing/customize-cif-components.md)
       + [CIF 카탈로그 선택기 사용](cif/customizing/use-cif-pickers.md)
-+ [Adobe 상거래 PWA Studio](cif/pwa-studio/getting-started.md)
++ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [마이그레이션](cif/migration.md)
 + 릴리스 노트 {#release-notes}
    + [2021년](cif/release-notes/release-notes-2021.md)
    + [2020년](cif/release-notes/release-notes-2020.md)
    + [2019년](cif/release-notes/release-notes-2019.md)
 + [FAQ](cif/faq.md)
-+ 클래식 CIF {#classic}
-   + {#deploying} 배포
++ AEM CIF Classic {#classic}
+   + [개요](/help/commerce/cif-classic/home.md)
+   + 배포 {#deploying}
       + [eCommerce 개요](/help/commerce/cif-classic/deploying/ecommerce.md)
       + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
    + 관리 {#administering}
