@@ -6,11 +6,11 @@ audience: admin-user
 user-guide-title: AEM 6.5 관리 사용 안내서
 breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
-feature: 관리
+feature: Administering
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '623'
 ht-degree: 18%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 18%
    + [OWASP 상위 10](owasp-top10.md)
    + [프로덕션 준비 모드에서 AEM 실행](production-ready.md)
    + [ID 관리](identity-management.md)
-   + [AEM Managed Services을 위한 IMS 인증 및 Admin Console 지원](ims-config-and-admin-console.md)
+   + [AEM Managed Services을 위한 Adobe IMS 인증 및 Admin Console 지원](ims-config-and-admin-console.md)
    + [폐쇄된 사용자 그룹 생성](cug.md)
    + [AEM의 직렬화 문제 완화](mitigating-serialization-issues.md)
    + [사용자 동기화](sync.md)
@@ -157,7 +157,7 @@ ht-degree: 18%
    + [AEM Foundation에 대한 GDPR 요청 처리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce - GDPR 준비 완료](gdpr-compliance-commerce.md)
 + 컨텐츠 관리 {#contentmanagement}
-   + [패키지 작업 방법](package-manager.md)
+   + [설치할 수 있습니다](package-manager.md)
    + [태그 관리](tags.md)
    + [페이지 내보내기](page-exporter.md)
    + [클래식 UI 태깅 콘솔](classic-console.md)
