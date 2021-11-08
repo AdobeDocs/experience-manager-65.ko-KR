@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
+source-git-commit: d010b2a20e40fabe40f67d60ef0b6fab245be60f
 workflow-type: tm+mt
-source-wordcount: '3771'
+source-wordcount: '3777'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
    + [대화형 통신 소개](using/interactive-communications-overview.md)
    + [양식 관리 소개](using/introduction-managing-forms.md)
    + [자동 양식 전환 서비스 소개](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
-   + 자습서: 첫 번째 적응형 양식 {#create-first-adaptive-form} 만들기
+   + 자습서: 첫 번째 적응형 양식 만들기 {#create-first-adaptive-form}
       + [자습서: 첫 번째 적응형 양식 만들기](using/create-your-first-adaptive-form.md)
       + [자습서: 적응형 양식 만들기](using/create-adaptive-form.md)
       + [자습서: 양식 데이터 모델 만들기](using/create-form-data-model.md)
@@ -52,11 +52,11 @@ ht-degree: 4%
       + [적응형 양식 조각 참조](using/reference-adaptive-form-fragments.md)
       + [참조 테마](using/reference-themes.md)
       + [참조 문자 템플릿](using/reference-cm-layout-templates.md)
-      + [We.Finance 참조 사이트의 홈 모기지 워크플로에 대해 Microsoft Dynamics 365를 구성합니다](using/ms-dynamics-configuration-home-mortgage.md)
-+ AEM Forms {#install-aem-forms} 설치 및 구성
+      + [We.Finance 참조 사이트의 홈 모기지 워크플로우에 대한 Microsoft Dynamics 365를 구성합니다](using/ms-dynamics-configuration-home-mortgage.md)
++ AEM Forms 설치 및 구성 {#install-aem-forms}
    + [AEM Forms을 위한 아키텍처 및 배포 토폴로지](using/aem-forms-architecture-deployment.md)
    + [AEM Forms 설치에 대한 지속성 유형 선택](using/choosing-persistence-type-for-aem-forms.md)
-   + OSGi {#osgi-installation}에 AEM Forms 설치
+   + OSGi에 AEM Forms 설치 {#osgi-installation}
       + [OSGi에서 AEM 양식에 대해 지원되는 플랫폼](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
       + [문서 서비스 설치 및 구성](using/install-configure-document-services.md)
       + [데이터 캡처 기능 설치 및 구성](using/installing-configuring-aem-forms-osgi.md)
@@ -248,7 +248,7 @@ ht-degree: 4%
    + [프로세스 추적](using/tracking-processes.md)
    + [단일 사인온 및 시간 초과 핸들러](using/single-sign-timeout-handlers.md)
    + [HTML 작업 공간에서 적응형 양식 사용](using/using-adaptive-form-html-workspace.md)
-   + [Microsoft Office SharePoint Server와 AEM Forms 작업 영역 통합](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
+   + [AEM Forms 작업 공간과 Microsoft Office SharePoint Server 통합](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [할 일 목록 작업](using/todo-lists.md)
    + [AEM Forms 작업 공간 문제 해결 지침](using/troubleshooting-guidelines-html-workspace.md)
 + AEM Forms 앱 {#aem-forms-app}
@@ -279,22 +279,22 @@ ht-degree: 4%
 + HTML5 양식 {#html5-forms}
    + [HTML5 양식 소개](using/introduction.md)
    + [HTML5 양식 시작하기](using/get-started.md)
-   + [HTML5 양식의 아키텍처](using/html5-forms-architecture.md)
-   + [HTML5 양식과 PDF forms 간의 기능 차별화](using/feature-differentiation-html5-forms-pdf-forms.md)
+   + [HTML 5 양식의 아키텍처](using/html5-forms-architecture.md)
+   + [HTML 5 양식과 PDF forms 간의 기능 차별화](using/feature-differentiation-html5-forms-pdf-forms.md)
    + [HTML5 양식에 대한 FAQ](using/faq.md)
    + [HTML5 양식의 양식 템플릿 디자인](using/designing-form-template.md)
-   + [HTML5 양식에 대한 우수 사례](using/best-practices-for-html5-forms.md)
+   + [HTML 5 양식 우수 사례](using/best-practices-for-html5-forms.md)
    + [액세스 가능한 HTML5 양식 디자인](using/design-accessible-html5-forms.md)
-   + [XDP 양식의 HTML5 미리 보기 생성](using/preview-xdp-forms-html.md)
+   + [XDP 양식의 HTML 5 미리 보기 생성](using/preview-xdp-forms-html.md)
    + [HTML5 양식의 양식 템플릿 렌더링](using/rendering-form-template.md)
    + [HTML5 양식에 대한 첨부 파일 활성화](using/enabling-attachments-html5-form.md)
    + [HTML5 양식 서비스 프록시](using/service-proxy.md)
-   + [HTML5 양식 최적화](using/optimize-html5-forms.md)
+   + [HTML 5 양식 최적화](using/optimize-html5-forms.md)
    + [HTML5 양식에 대한 화면 판독기](using/screen-readers.md)
    + [HTML5 양식에 대한 사용자 지정 프로필 만들기](using/custom-profile.md)
    + [HTML5 양식의 오른쪽에서 왼쪽 쓰기 언어](using/right-left-languages.md)
-   + [HTML5 양식의 사용자 지정 포털과 양식 브리지 통합](using/integrate-form-bridge-forms-portal.md)
-   + [HTML5 양식에서 사용자 지정 모양 만들기](using/custom-widgets.md)
+   + [Forms Bridge와 HTML5 양식의 사용자 지정 포털 통합](using/integrate-form-bridge-forms-portal.md)
+   + [HTML5 양식에서 사용자 정의 모양 만들기](using/custom-widgets.md)
    + [HTML5 양식의 기본 스타일 변경](using/changing-default-styles.md)
    + [HTML5 양식에 대한 그림 절 지원](using/picture-clause-support.md)
    + [HTML5 양식에서 액세스 가능한 복잡한 표 만들기](using/accessible-tables.md)
@@ -302,10 +302,10 @@ ht-degree: 4%
    + [HTML5 양식에 대한 오류 메시지 사용자 지정](using/customzing-errors-html5-forms.md)
    + [HTML5 양식을 초안으로 저장](using/saving-html5-form-draft.md)
    + [HTML5 양식에 대한 로깅 활성화](using/enable-logs.md)
-   + [HTML5 양식 디버깅](using/debug.md)
+   + [HTML 5 양식 디버깅](using/debug.md)
    + [HTML5 양식에 대한 스크립팅 지원](using/scripting-support.md)
    + [AEM Forms의 양식 세트](using/formset-in-aem-forms.md)
-+ 문자 및 상대 {#letters-correspondences}
++ 문자 및 서신 {#letters-correspondences}
    + [서신 관리 개요](using/cm-overview.md)
    + [레이아웃 디자인](using/layout-design-details.md)
    + [데이터 사전](using/data-dictionary.md)
@@ -324,12 +324,12 @@ ht-degree: 4%
    + [편지 인스턴스에 액세스할 수 있는 API](using/cm-apis-to-access-letter-instances.md)
    + [사용자 지정 포털과 서신 만들기 UI 통합](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [서신 관리의 사용자 지정 특수 문자](using/custom-special-characters.md)
-   + [문자 PDF 미리 보기의 사용자 지정 워터마크](using/custom-watermark.md)
+   + [편지 PDF 미리 보기의 사용자 지정 워터마크](using/custom-watermark.md)
    + [서신 관리 솔루션 구성](using/configuring-a-cm-solution.md)
    + [인라인 조건 및 인터랙티브 통신 및 문자에서 반복](using/cm-inline-condition.md)
    + [문서 단편](using/lists.md)
    + [서신 관리 구성 속성](using/cm-configuration-properties.md)
-+ AEM Forms을 Experience Cloud 솔루션 {#integrate-aem-forms-with-experience-cloud-solutions}과 통합
++ AEM Forms과 Experience Cloud 솔루션 통합 {#integrate-aem-forms-with-experience-cloud-solutions}
    + [AEM Forms에서 타깃팅된 경험 만들기](/help/forms/using/experience-targeting-forms.md)
    + [양식의 효율성 측정 및 전환 개선](using/measure-improve-performance-forms-documents.md)
    + [분석 및 보고서 구성](using/configure-analytics-forms-documents.md)
@@ -368,7 +368,7 @@ ht-degree: 4%
    + [sendToPrinter API 사용](using/using-sendtoprinter-api.md)
 + 문서 보안 {#use-document-security}
    + [문서 보안 서비스](using/document-security-offerings.md)
-   + [AEM에서 문서 보안으로 보호된 PDF 문서를 검색할 수 있도록 설정](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
+   + [AEM에서 문서 보안 PDF 문서를 검색할 수 있도록 설정](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
    + [Portable Protection Library를 사용하여 정책으로 보호된 PDF 문서 Reader 확장](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [AEM에서 문서 보안 보호 PDF 및 Microsoft Office 문서를 검색할 수 있도록 설정](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [다른 사용자를 대신하여 Protect 문서](using/protect-document-on-behalf-of-another-user.md)
@@ -429,7 +429,7 @@ ht-degree: 4%
       + [그룹 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-groups.md)
       + [사용자 또는 그룹 검색](/help/forms/using/admin-help/search-user-or-group.md)
       + [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md)
-   + 컨텐츠 관리 시스템 {#connect-content-management-system}에 연결
+   + 콘텐츠 관리 시스템에 연결 {#connect-content-management-system}
       + [EMC Documentum용 커넥터 구성](/help/forms/using/admin-help/configuring-connector-emc-documentum.md)
       + [IBM FileNet용 커넥터 구성](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
       + [IBM Content Manager용 커넥터 구성](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
@@ -441,7 +441,7 @@ ht-degree: 4%
       + [인증서 관리](/help/forms/using/admin-help/certificates.md)
       + [HSM 자격 증명 관리](/help/forms/using/admin-help/hsm-credentials.md)
       + [로컬 자격 증명 관리](/help/forms/using/admin-help/local-credentials.md)
-   + 응용 프로그램 및 아카이브 가져오기 및 관리 {#import-manage-applications-archives}
+   + 애플리케이션 및 아카이브 가져오기 및 관리 {#import-manage-applications-archives}
       + [응용 프로그램 및 서비스 페이지에 표시되는 항목 수 변경](/help/forms/using/admin-help/change-number-items-displayed-applications.md)
       + [아카이브 가져오기 및 관리](/help/forms/using/admin-help/import-archives.md)
       + [애플리케이션 가져오기 및 관리](/help/forms/using/admin-help/import-applications.md)
@@ -464,19 +464,20 @@ ht-degree: 4%
       + [PDF 파일의 사용 권한 검토](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
       + [Adobe Reader 웹 브라우저 플러그인에 대한 온라인 주석 달기 활성화](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
       + [Acrobat Reader DC 확장에 사용할 시간 초과 값 설정](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
+      + [만료된 Reader 확장 서비스 인증서를 업데이트하는 중](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
    + PDF 생성기 작업 {#work-with-pdf-generator}
-      + [PDF Generator 작업 소개](/help/forms/using/admin-help/overview-5.md)
+      + [PDF 생성기 작업 소개](/help/forms/using/admin-help/overview-5.md)
       + [다중 스레드 파일 변환 활성화](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
       + [Adobe PDF 설정 구성](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [보안 설정 구성](/help/forms/using/admin-help/configuring-security-settings.md)
       + [파일 유형 설정 구성](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [PDF Generator 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [PDF 생성기 구성 파일 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [PDF/A 지원 활성화](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [PDFG 네트워크 프린터 설정(Windows만 해당)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [대체 글꼴 구성](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [PDF 내보내기 변환 설정 수정](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
-      + [PDF Generator를 사용하여 파일 변환](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
-   + SSL {#configure-ssl} 구성
+      + [PDF 생성기를 사용하여 파일 변환](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
+   + SSL 구성 {#configure-ssl}
       + [SSL 구성 개요](/help/forms/using/admin-help/overview-6.md)
       + [JBoss 애플리케이션 서버에 대한 SSL 구성](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
       + [Windows Vista에서 SSL 구성](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
@@ -511,7 +512,7 @@ ht-degree: 4%
       + [포함할 글꼴 지정](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [보안 설정 지정](/help/forms/using/admin-help/specify-security-settings.md)
       + [문자 세트 변경](/help/forms/using/admin-help/change-character-set.md)
-   + 양식 워크플로우 구성{#configure-forms-workflow}
+   + Forms 워크플로우 구성{#configure-forms-workflow}
       + [관리 및 프로세스 용어 기본 정보](/help/forms/using/admin-help/administration-process-terminology.md)
       + [프로세스 관리](/help/forms/using/admin-help/processes.md)
       + [업무 달력 구성](/help/forms/using/admin-help/configuring-business-calendars.md)
@@ -522,7 +523,7 @@ ht-degree: 4%
       + [정지된 작업 및 분기 작업](/help/forms/using/admin-help/stalled-operations-branches.md)
       + [공유 큐 구성](/help/forms/using/admin-help/configuring-shared-queues.md)
       + [작업](/help/forms/using/admin-help/tasks.md)
-   + 작업 공간 {#configure-workspace} 구성
+   + 작업 공간 구성 {#configure-workspace}
       + [작업 공간 개요](/help/forms/using/admin-help/overview-10.md)
       + [전역 설정 가져오기 및 내보내기](/help/forms/using/admin-help/importing-exporting-global-settings.md)
       + [오늘의 메시지 설정](/help/forms/using/admin-help/setting-message-day.md)
@@ -547,7 +548,7 @@ ht-degree: 4%
       + [프로세스 데이터 삭제](/help/forms/using/admin-help/purging-process-data.md)
       + [Microsoft SQL Server 데이터베이스: 구성 미세 조정](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
       + [데이터베이스 증가 최소화 팁](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
-   + 응용 프로그램 서버 유지 관리 {#manage-application-server}
+   + Application Server 유지 관리 {#manage-application-server}
       + [애플리케이션 서버 웹 사이트](/help/forms/using/admin-help/application-server-websites.md)
       + [글로벌 문서 저장소 디렉토리](/help/forms/using/admin-help/global-document-storage-directory.md)
       + [AdministrationConsole 실행 시 고려 사항](/help/forms/using/admin-help/considerations-running-administration-console.md)
@@ -559,7 +560,7 @@ ht-degree: 4%
       + [AEM Forms 데이터 백업](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [백업 및 복구할 파일](/help/forms/using/admin-help/files-back-recover.md)
       + [AEM 양식을 위한 백업 및 복구 전략](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [PDF Generator 백업 제한 사항](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [PDF 생성기 백업 제한 사항](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [감시 폴더의 백업 전략](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [AEM 양식 데이터 복구](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [EMC Documentum 사용자를 위한 Connector 백업 전략](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
@@ -577,15 +578,15 @@ ht-degree: 4%
    + [프로세스 보고 문제 해결](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + 개발자 참조 {#developer-reference}
    + [개발자 기본 사항](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)
-   + [HTML Template Language](https://docs.adobe.com/content/help/ko/experience-manager-htl/using/overview.html)
+   + [HTML 템플릿 언어](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
    + [적응형 양식을 디버깅하는 AEM 플러그인](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
    + [JEE Java API 참조의 AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
-   + [HTML5 양식의 Form Bridge API](using/form-bridge-apis.md)
+   + [Form Bridge API for HTML5 forms](using/form-bridge-apis.md)
    + [응용 Forms에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
    + [어셈블러 서비스 및 DDX 참조](http://www.adobe.com/go/learn_aemforms_ddxRef_65)
    + [Workbench 도움말](http://www.adobe.com/go/learn_aemforms_workbench_65)
-   + JEE에서 AEM Forms으로 프로그래밍 {#programming-aem-forms-jee}
+   + JEE에서 AEM Forms을 사용한 프로그래밍 {#programming-aem-forms-jee}
       + JEE에서 AEM Forms을 사용한 프로그래밍 소개 {#introduction-programming-aem-forms-jee}
          + [Java API QuickStart 소개](developing/introducing-java-api-soap-quick.md)
          + [API를 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-apis.md)
@@ -621,17 +622,17 @@ ht-degree: 4%
          + [작업 관리자 서비스 Java API QuickStart(SOAP)](developing/task-manager-service-java-api.md)
          + [사용자 관리자 Java API 빠른 시작(SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP 유틸리티 서비스 Java APIQ 빠른 시작(SOAP)](developing/xmp-utilities-service-java-api.md)
-      + API {#invoking-aem-forms-jee-apis}를 사용하여 JEE에서 AEM Forms 호출
+      + API를 사용하여 JEE에서 AEM Forms 호출 {#invoking-aem-forms-jee-apis}
          + [REST 요청을 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-rest.md)
          + [웹 서비스를 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-web.md)
          + [원격을 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-remoting.md)
          + [웹 서비스를 사용하여 AEM Forms 호출](developing/invoking-human-centric-long-lived.md)
          + [JavaAPI를 사용하여 AEM Forms 호출](developing/invoking-aem-forms-using-java.md)
          + [HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기](developing/creating-flash-builder-applications-perform.md)
-      + API {#performing-service-operations-using-apis}를 사용하여 서비스 작업 수행
+      + API를 사용하여 서비스 작업 수행 {#performing-service-operations-using-apis}
          + [API를 사용하여 서비스 작업 수행](developing/performing-service-operations-using-apis.md)
          + [Forms 렌더링](developing/rendering-forms.md)
-         + [PDF 문서 정리](developing/assembling-pdf-documents.md)
+         + [PDF 문서 조립](developing/assembling-pdf-documents.md)
          + [프로그래밍 방식으로 PDF 문서 조립](developing/programmatically-assembling-pdf-documents.md)
          + [파일 형식과 PDF 간 변환](developing/converting-file-formats-pdf.md)
          + [프로그래밍 방식으로 PDF 문서 분해](developing/programmatically-disassembling-pdf-documents.md)
@@ -639,14 +640,14 @@ ht-degree: 4%
          + [여러 XDP 조각 어셈블링](developing/assembling-multiple-xdp-fragments.md)
          + [Bates 번호 지정을 사용하여 문서 조립](developing/assembling-documents-using-bates-numbering.md)
          + [비대화형 PDF 문서 정리](developing/assembling-non-interactive-pdf-documents.md)
-         + [책갈피를 사용하여 PDF 문서 정리](developing/assembling-pdf-documents-bookmarks.md)
+         + [책갈피를 사용하여 PDF 문서 조립](developing/assembling-pdf-documents-bookmarks.md)
          + [사용 권한 할당](developing/assigning-usage-rights.md)
          + [PDF Portfolio 조립](developing/assembling-pdf-portfolios.md)
          + [양식 데이터 계산](developing/calculating-form-data.md)
          + [Forms을 렌더링하는 웹 애플리케이션 만들기](developing/creating-web-applications-renders-forms.md)
          + [SubmittedXML 데이터를 사용하여 PDF 문서 만들기](developing/creating-pdf-documents-submitted-xml.md)
          + [웹 서비스 API를 사용하여 PDF 문서 분해](developing/disassemble-pdf-document-using-web.md)
-         + [문서가 PDF/A 규격 인지 확인](developing/determining-whether-documents-pdf-a.md)
+         + [문서가 PDF/A 호환 여부 확인](developing/determining-whether-documents-pdf-a.md)
          + [동적으로 DDX 문서 만들기](developing/dynamically-creating-ddx-documents.md)
          + [제출된 Forms 처리](developing/handling-submitted-forms.md)
          + [Forms 서비스의 성능 최적화](developing/optimizing-performance-forms-service.md)
@@ -654,14 +655,14 @@ ht-degree: 4%
          + [유동형 레이아웃으로 Forms 미리 채우기](developing/prepopulating-forms-flowable-layouts.md)
          + [조각을 기반으로 Forms 렌더링](developing/rendering-forms-based-fragments.md)
          + [값별 Forms 렌더링](developing/rendering-forms-value.md)
-         + [Forms을 HTML로 렌더링](developing/rendering-forms-html.md)
+         + [Forms을 HTML으로 렌더링](developing/rendering-forms-html.md)
          + [클라이언트에서 Forms 렌더링](developing/rendering-forms-client.md)
          + [사용자 지정 CSS 파일을 사용하여 HTML Forms 렌더링](developing/rendering-html-forms-using-custom.md)
-         + [CustomToolbar를 사용하여 HTML Forms 렌더링](developing/rendering-html-forms-custom-toolbars.md)
+         + [사용자 지정 도구 모음을 사용하여 HTML Forms 렌더링](developing/rendering-html-forms-custom-toolbars.md)
          + [대화형 PDF forms 렌더링](developing/rendering-interactive-pdf-forms.md)
          + [렌더링 권한 사용 Forms](developing/rendering-rights-enabled-forms.md)
          + [DDX 문서 확인](developing/validating-ddx-documents.md)
-         + [PDF를 Postscript 및 이미지 파일로 변환](developing/converting-pdf-postscript-image-files.md)
+         + [PDF을 Postscript 및 이미지 파일로 변환](developing/converting-pdf-postscript-image-files.md)
          + [Postscript를 PDF 문서로 변환](developing/converting-postscript-pdf-documents.md)
          + [문서 출력 스트림 만들기](developing/creating-document-output-streams.md)
          + [문서 디지털 서명 및 인증](developing/digitally-signing-certifying-documents.md)
