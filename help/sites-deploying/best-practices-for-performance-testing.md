@@ -1,8 +1,8 @@
 ---
 title: 성능 테스트 우수 사례
-seo-title: 성능 테스트 우수 사례
+seo-title: Best Practices for Performance Testing
 description: 성능 테스트에 사용되는 전체 전략 및 방법론과 프로세스에 도움이 되는 툴 중 일부를 간략하게 설명합니다.
-seo-description: 성능 테스트에 사용되는 전체 전략 및 방법론과 프로세스에 도움이 되는 툴 중 일부를 간략하게 설명합니다.
+seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
 uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: b6de561422bc3533eef153b13d2c65b4cb7e0387
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -55,40 +55,40 @@ AEM의 많은 성능 측정(예: 쿼리 응답 시간)은 시스템의 컨텐츠
 
 #### 테스트 도구 {#testing-tools}
 
-* Adobe의 **Tough Day** 도구를 사용하여 AEM 인스턴스에서 로드를 생성하고 성능 데이터를 수집할 수 있습니다. Adobe의 AEM 엔지니어링 팀은 실제로 도구를 사용하여 AEM 제품 자체의 로드 테스트를 수행합니다. Tough Day에서 실행되는 스크립트는 속성 파일과 JMX XML 파일을 통해 구성됩니다. 자세한 내용은 [Tough Day 설명서](/help/sites-developing/tough-day.md)를 참조하십시오.
+* Adobe **Tough Day** AEM 인스턴스에서 로드를 생성하고 성능 데이터를 수집하는 데 도구를 사용할 수 있습니다. Adobe의 AEM 엔지니어링 팀은 실제로 도구를 사용하여 AEM 제품 자체의 로드 테스트를 수행합니다. Tough Day에서 실행되는 스크립트는 속성 파일과 JMX XML 파일을 통해 구성됩니다. 자세한 내용은 [Tough Day 설명서](/help/sites-developing/tough-day.md).
 
-* AEM은 문제 쿼리, 요청 및 오류 메시지를 빠르게 볼 수 있는 기본 도구를 제공합니다. 자세한 내용은 Operations Dashboard 설명서에서 [진단 도구](/help/sites-administering/operations-dashboard.md#diagnosis-tools) 섹션을 참조하십시오.
-* Apache는 기능 동작뿐만 아니라 성능 및 로드 테스트에 사용할 수 있는 **JMeter**&#x200B;라는 제품을 제공합니다. 오픈 소스 소프트웨어이며 자유롭게 사용할 수 있지만, 엔터프라이즈 제품보다 더 작은 기능 세트와 더 빠른 학습 곡선이 있습니다. JMeter는 Apache 웹 사이트( [https://jmeter.apache.org/](https://jmeter.apache.org/))에서 찾을 수 있습니다.
+* AEM은 문제 쿼리, 요청 및 오류 메시지를 빠르게 볼 수 있는 기본 도구를 제공합니다. 자세한 내용은 [진단 도구](/help/sites-administering/operations-dashboard.md#diagnosis-tools) 작업 대시보드 설명서의 섹션을 참조하십시오.
+* Apache는 **JMeter** 성능 및 로드 테스트와 기능 동작에 사용할 수 있습니다. 오픈 소스 소프트웨어이며 자유롭게 사용할 수 있지만, 엔터프라이즈 제품보다 더 작은 기능 세트와 더 빠른 학습 곡선이 있습니다. JMeter는 Apache 웹 사이트( )에서 찾을 수 있습니다. [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **로드** 실행은 엔터프라이즈 등급 로드 테스트 제품입니다. 무료 평가 버전이 제공됩니다. 자세한 내용은 [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)를 참조하십시오
+* **로드 런너** 는 엔터프라이즈급 로드 테스트 제품입니다. 무료 평가 버전이 제공됩니다. 자세한 내용은 [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
-* [Neustar](https://www.neustar.biz/services/web-performance/load-testing)과 같은 클라우드 기반 로드 테스트 도구도 사용할 수 있습니다.
+* 과 같은 클라우드 기반 로드 테스트 도구 [노이스타](https://www.neustar.biz/services/web-performance/load-testing) 사용할 수도 있습니다.
 * 모바일 또는 응답형 웹 사이트를 테스트할 때는 별도의 도구 세트를 사용해야 합니다. 네트워크 대역폭을 조절하여 3G 또는 EDGE와 같은 느린 모바일 연결을 시뮬레이션하여 작동합니다. 널리 사용되는 도구 중에는 다음과 같습니다.
 
-   * **[네트워크 링크 컨디셔너](https://nshipster.com/network-link-conditioner/)**  - 사용하기 쉬운 UI를 제공하며 네트워킹 스택에서 매우 낮은 수준에서 작동합니다. 여기에는 OS X 및 iOS용 버전이 포함되어 있습니다.
-   * [**Charles**](https://www.charlesproxy.com/)  - 여러 가지 다른 용도 외에 네트워크 조절 기능을 제공하는 웹 디버깅 프록시 애플리케이션입니다. 버전은 Windows, OS X 및 Linux용 제공됩니다.
+   * **[네트워크 링크 컨디셔너](https://nshipster.com/network-link-conditioner/)** - 사용하기 쉬운 UI를 제공하고 네트워킹 스택에서 매우 낮은 수준에서 작동합니다. 여기에는 OS X 및 iOS 버전이 포함되어 있습니다.
+   * [**Charles**](https://www.charlesproxy.com/) - 여러 가지 다른 용도 외에 네트워크 조절 기능을 제공하는 웹 디버깅 프록시 애플리케이션입니다. 버전은 Windows, OS X 및 Linux용 제공됩니다.
 
 #### 최적화 도구 {#optimization-tools}
 
 **모니터링**
 
-[성능 모니터링](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) 설명서는 문제를 진단하고 튜닝할 영역을 찾는 데 사용할 수 있는 도구와 방법에 적합한 리소스입니다.
+다음 [성능 모니터링](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) 설명서는 문제를 진단하고 튜닝할 영역을 파악하는 데 사용할 수 있는 도구와 방법에 대한 유용한 리소스입니다.
 
 **Touch UI의 개발자 모드**
 
-AEM 6의 터치 UI에 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리 보기 모드 간을 전환할 수 있듯이 개발자는 작성자 UI에서 개발자 모드로 전환하여 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류 스택의 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)을 참조하십시오.
+AEM 6의 터치 UI에 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리 보기 모드 간을 전환할 수 있듯이 개발자는 작성자 UI에서 개발자 모드로 전환하여 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류 스택의 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 다음을 참조하십시오 [CQ Gems 프레젠테이션](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
 
 **rlog.jar를 사용하여 요청 로그를 읽습니다.**
 
-AEM 시스템에서 요청 로그를 보다 포괄적으로 분석하기 위해 `rlog.jar` 을 사용하여 AEM에서 생성하는 `request.log` 파일을 검색하고 정렬할 수 있습니다. 이 jar 파일은 `/crx-quickstart/opt/helpers` 폴더의 AEM 설치에 포함되어 있습니다. 로그 도구 및 일반적으로 요청 로그에 대한 자세한 내용은 [모니터링 및 유지 관리](/help/sites-deploying/monitoring-and-maintaining.md) 설명서를 참조하십시오.
+AEM 시스템에서 요청 로그를 보다 포괄적으로 분석하려면 `rlog.jar` 를 사용하여 을 검색하고 정렬할 수 있습니다 `request.log` AEM에서 생성하는 파일입니다. 이 jar 파일은 의 AEM 설치에 포함되어 있습니다. `/crx-quickstart/opt/helpers` 폴더를 입력합니다. 로그 도구 및 일반적으로 요청 로그에 대한 자세한 내용은 [모니터링 및 유지 관리](/help/sites-deploying/monitoring-and-maintaining.md) 설명서.
 
 **쿼리 설명 도구**
 
-ACS AEM 도구의 [쿼리 설명 도구](/help/sites-administering/operations-dashboard.md#explain-query)를 사용하여 쿼리를 실행할 때 사용되는 인덱스를 볼 수 있습니다. 이 기능은 느린 실행 쿼리를 최적화할 때 매우 유용할 수 있습니다.
+다음 [쿼리 도구 설명](/help/sites-administering/operations-dashboard.md#explain-query) acs AEM 도구에서 쿼리를 실행할 때 사용되는 인덱스를 보는 데 사용할 수 있습니다. 이 기능은 느린 실행 쿼리를 최적화할 때 매우 유용할 수 있습니다.
 
 **PageSpeed 도구**
 
-Google의 PageSpeed 도구는 페이지 성능에 대한 우수 사례 및 추가적인 최적화를 위해 Apache 인스턴스에 Dispatcher와 함께 설치할 수 있는 플러그인을 준수하기 위해 사이트 분석을 제공합니다. 자세한 내용은 [PageSpeed 도구 웹 사이트](https://developers.google.com/speed/pagespeed/)를 참조하십시오.
+Google의 PageSpeed 도구는 페이지 성능에 대한 우수 사례 및 추가적인 최적화를 위해 Apache 인스턴스의 dispatcher와 함께 설치할 수 있는 플러그인을 준수하기 위해 사이트 분석을 제공합니다. 자세한 내용은 [PageSpeed 도구 웹 사이트](https://developers.google.com/speed/pagespeed/).
 
 ## 작성 환경 {#author-environment}
 
@@ -98,23 +98,31 @@ Google의 PageSpeed 도구는 페이지 성능에 대한 우수 사례 및 추�
 
 성능 및 로드 테스트를 위해 설계된 다양한 자동화 프레임워크를 사용할 수 있습니다. 사용자 지정 스크립트를 이러한 도구에 기록한 다음 다시 재생하여 유사한 컨텐츠 작성 및 활성화 활동을 동시에 수행하는 최대 수의 작성자를 시뮬레이션할 수 있습니다. 수천 개의 자산을 업로드하거나 많은 수의 페이지를 활성화하는 것과 같은 활동을 시뮬레이션하려면 거친 날 도구를 사용하는 것이 좋습니다.
 
-자산 로드 또는 페이지 작성 요구 사항이 많은 환경 유형의 경우 환경이 최대 로드 상태에서 효율적으로 작동할 수 있도록 Tough Day와 같은 도구를 사용해야 합니다. [](/help/sites-administering/webdav-access.md) WebDAV는 스크립팅이 필요하지 않으며 많은 양의 자산을 로드하는 데 사용할 수도 있는 도구입니다.
+자산 로드 또는 페이지 작성 요구 사항이 많은 환경 유형의 경우 환경이 최대 로드 상태에서 효율적으로 작동할 수 있도록 Tough Day와 같은 도구를 사용해야 합니다. [WebDAV](/help/sites-administering/webdav-access.md) 는 스크립팅이 필요하지 않으며 대량의 자산을 로드하는 데 사용할 수도 있는 도구입니다.
 
 #### MongoDB 특정 단계 {#mongodb-specific-steps}
 
-MongoDB 백엔드가 있는 시스템의 경우, AEM에서는 로드 또는 성능 테스트를 수행할 때 모니터링해야 하는 몇 가지 [JMX](/help/sites-administering/jmx-console.md) MBeans를 제공합니다.
+MongoDB 백엔드가 있는 시스템에서 AEM은 다음과 같은 몇 가지 기능을 제공합니다 [JMX](/help/sites-administering/jmx-console.md) 로드 또는 성능 테스트를 수행할 때 모니터링해야 하는 MB를 의미합니다.
 
-* **통합 캐시 통계** MBean입니다. 다음 위치로 이동하여 직접 액세스할 수 있습니다.
+* 다음 **통합 캐시 통계** MBean. 다음 위치로 이동하여 직접 액세스할 수 있습니다.
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-이름이 **Document-Diff**&#x200B;인 캐시의 경우 히트가 `.90`를 초과해야 합니다. 적중률이 90% 미만인 경우 `DocumentNodeStoreService` 구성을 수정해야 할 수 있습니다. Adobe 제품 지원을 통해 환경에 대한 최적의 설정을 추천할 수 있습니다.
+캐시 이름이 **Document-Diff**&#x200B;를 반환하고, 적중률은 넘어야 합니다 `.90`. 적중률이 90% 미만인 경우, 을 수정해야 할 수 있습니다 `DocumentNodeStoreService` 구성. Adobe 제품 지원을 통해 환경에 대한 최적의 설정을 추천할 수 있습니다.
 
-* **Oak 저장소 통계** Mbean. 다음 위치로 이동하여 직접 액세스할 수 있습니다.
+* 다음 **Oak 저장소 통계** Mbean. 다음 위치로 이동하여 직접 액세스할 수 있습니다.
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-**ObservequeueMaxLength** 섹션은 지난 시간, 분, 초 및 주 동안 Oak의 관찰 큐에 있는 이벤트 수를 보여줍니다. &quot;시간당&quot; 섹션에서 가장 큰 이벤트 수를 찾습니다. 이 숫자는 [OSGi 콘솔](/help/sites-deploying/web-console.md)의 **SlingRepositoryManager** 구성 요소에서 찾을 수 있는 `oak.observation.queue-length` 설정과 비교해야 합니다. 관찰 큐에 표시된 가장 큰 수가 `queue-length` 설정을 초과하는 경우 Adobe 지원 센터에 문의하여 설정을 높이는 데 도움을 받으십시오. 기본 설정은 1,000이지만, 대부분의 배포에서는 일반적으로 20,000 또는 50,000으로 늘려야 합니다.
+다음 **ObservationQueueMaxLength** 섹션에는 지난 시간, 분, 초 및 주 동안 Oak의 관찰 큐에 있는 이벤트 수가 표시됩니다. &quot;시간당&quot; 섹션에서 가장 큰 이벤트 수를 찾습니다. 이 숫자를 `oak.observation.queue-length` 설정 관찰큐에 표시된 최대 수가 `queue-length` 설정:
+
+1. 이름이 인 파일을 만듭니다. `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` 매개 변수 포함 `oak.observation.queue‐length=50000`
+1. /crx-quickstart/install 폴더 아래에 배치합니다.
+
+>[!NOTE]
+>KB 문서 참조 [AEM 6.x | 성능 조정 팁](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+
+기본 설정은 10,000이지만, 대부분의 배포에서는 일반적으로 20,000 또는 50,000으로 늘려야 합니다.
 
 ## 게시 환경 {#publish-environment}
 
@@ -128,22 +136,22 @@ MongoDB 백엔드가 있는 시스템의 경우, AEM에서는 로드 또는 성�
 
 높은 수준의 개인화가 필요하지 않은 시스템에서 디스패처는 대부분의 요청을 캐시해야 합니다. 따라서 게시 인스턴스의 로드는 상대적으로 균일하게 유지되어야 합니다. 높은 수준의 개인화가 필요한 경우 최대한 디스패처 캐싱을 허용하기 위해 개인화된 콘텐츠에 iFrame 또는 AJAX 요청 등의 기술을 사용하는 것이 좋습니다.
 
-기본 테스트의 경우 Apache Bench를 사용하여 웹 서버 응답 시간을 측정하고 메모리 누출과 같은 측정 작업을 위한 로드를 생성할 수 있습니다. 자세한 내용은 [모니터링 설명서](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench)에서 예제를 참조하십시오.
+기본 테스트의 경우 Apache Bench를 사용하여 웹 서버 응답 시간을 측정하고 메모리 누출과 같은 측정 작업을 위한 로드를 생성할 수 있습니다. 자세한 내용은 [모니터링 설명서](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
 ## 성능 문제 해결 {#troubleshooting-performance-issues}
 
 작성자 인스턴스에서 성능 테스트를 실행한 후 모든 문제를 조사, 진단 및 해결해야 합니다. 분석 및 문제 해결 시 몇 가지 도구와 기술을 사용할 수 있습니다.
 
-* 작업 대시보드에서 [요청 성능 로그](/help/sites-administering/operations-dashboard.md#request-performance)를 검사할 수 있습니다. 이 도구를 사용하여 느린 페이지 요청을 식별할 수 있습니다
-* [쿼리 성능 도구를 사용하여 느린 실행 쿼리 분석](/help/sites-administering/operations-dashboard.md#query-performance)
+* 검사를 할 수 있습니다 [성능 로그 요청](/help/sites-administering/operations-dashboard.md#request-performance) 를 클릭합니다. 이 도구를 사용하여 느린 페이지 요청을 식별할 수 있습니다
+* 를 사용하여 느린 실행 쿼리 분석 [쿼리 성능 도구](/help/sites-administering/operations-dashboard.md#query-performance)
 
-* 오류 또는 경고 오류를 확인하십시오. 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md)을 참조하십시오
+* 오류 또는 경고 오류를 확인하십시오. 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md)
 * 메모리 및 CPU 사용률, 디스크 I/O 또는 네트워크 I/O와 같은 시스템 하드웨어 리소스를 모니터링합니다. 이러한 리소스는 종종 성능 병목 현상을 야기합니다
 * 페이지의 아키텍처와 주소를 지정하여 URL 매개 변수의 사용을 최소화하여 가능한 한 많은 캐싱을 허용할 수 있습니다
-* [성능 최적화](/help/sites-deploying/configuring-performance.md) 및 [성능 조정 팁](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) 설명서를 따르십시오
+* 다음을 수행합니다 [성능 최적화](/help/sites-deploying/configuring-performance.md) 및 [성능 조정 팁](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) 설명서
 
 * 작성자 인스턴스에서 특정 페이지 또는 구성 요소를 편집하는 데 문제가 있는 경우 TouchUI 개발자 모드를 사용하여 해당 페이지를 검사합니다. 이렇게 하면 페이지의 각 콘텐츠 영역과 로드 시간이 분류됩니다
-* 사이트의 모든 JS 및 CSS를 축소합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 이 [블로그 게시물](https://blogs.adobe.com/foxes/enable-js-and-css-minification/)을 참조하십시오.
+* 사이트의 모든 JS 및 CSS를 축소합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 다음을 참조하십시오 [블로그 게시물](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
 * 구성 요소에서 포함된 CSS 및 JS를 제거합니다. 페이지를 렌더링하는 데 필요한 요청 수를 최소화하기 위해 클라이언트 측 라이브러리에 포함되고 축소해야 합니다
 * Chrome의 네트워크 탭과 같은 브라우저 도구를 사용하여 서버 요청을 검사하고 가장 오래 걸리는 항목을 확인할 수 있습니다.
 
