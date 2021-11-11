@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: 85736791b7a8f518b57180b0139d6a76ebf1c6dc
+source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 48%
+source-wordcount: '637'
+ht-degree: 47%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 48%
 + [[!DNL Experience Manager] 6.5 Assets 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [DAM 정보](assets.md)
 + [자산에 대한 우수 사례](best-practices-for-assets.md)
-+ [ [!DNL Assets]의 액세스 가능성](accessibility.md)
-+ Experience Manager 자산 사용 {#using}
++ [의 액세스 가능성 [!DNL Assets]](accessibility.md)
++ Experience Manager Assets 사용 {#using}
    + [[!DNL Assets] 홈 페이지 경험](assets-home-page.md)
    + [디지털 자산 검색](search-assets.md)
    + [자산 메타데이터 작업](metadata.md)
    + [다국어 자산](multilingual-assets.md)
-   + [자산에 [!DNL Adobe Stock] 자산 사용](aem-assets-adobe-stock.md)
+   + [사용 [!DNL Adobe Stock] 자산의 자산](aem-assets-adobe-stock.md)
    + [3D 자산 미리 보기](previewing-3d-assets.md)
    + [폴더 자산 및 컬렉션 검토](bulk-approval.md)
    + [향상된 스마트 태그](enhanced-smart-tags.md)
@@ -34,13 +34,15 @@ ht-degree: 48%
    + [자산 처리](assets-workflow.md)
    + [이미지 맵 추가](image-maps.md)
    + [MSM을 사용하여 자산 재사용](reuse-assets-using-msm.md)
-   + [연결된 자산( [!DNL Sites])](use-assets-across-connected-assets-instances.md)
+   + [연결된 자산 [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
-   + [Experience League별 Dynamic Media 뉴스레터 아카이브](dynamic-media-newsletter.md)
+   + [Experience League별 뉴스레터 아카이브](dynamic-media-newsletter.md)
    + [Dynamic Media 설정](administering-dynamic-media.md)
    + [Dynamic Media 작업](dynamic-media.md)
    + [Dynamic Media 구성 - Scene7 모드](config-dms7.md)
    + [Dynamic Media 구성 - 하이브리드 모드](config-dynamic.md)
+   + [Dynamic Media 일반 설정 구성](dm-general-settings.md)
+   + [Dynamic Media 게시 설정 구성](dm-publish-settings.md)
    + [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)
    + [Dynamic Media의 액세스 가능성](accessibility-dm.md)
    + [Dynamic Media - 하이브리드 모드에서 Dynamic Media - S7 모드로 마이그레이션](migrate-from-hybrid-to-dms7.md)
@@ -86,11 +88,11 @@ ht-degree: 48%
    + [사용자 지정 및 확장 [!DNL Assets]](extending-assets.md)
    + [미디어 핸들러 및 워크플로우를 사용하여 자산 처리](media-handlers.md)
    + [검색 기능 확장](searchx.md)
-   + [ [!DNL Assets]에서 작동하도록  [!DNL ImageMagick] 을 설치 및 구성합니다](best-practices-for-imagemagick.md)
+   + [설치 및 구성 [!DNL ImageMagick] 다음으로 작업 [!DNL Assets]](best-practices-for-imagemagick.md)
    + [자산과 활동 스트림 통합](extending-activity-stream.md)
    + [자산 편집기 확장](asseteditorx.md)
    + [[!DNL Assets] HTTP API](mac-api-assets.md)
-   + [ [!DNL Assets] HTTP API에서 컨텐츠 조각 지원](assets-api-content-fragments.md)
+   + [에서 컨텐츠 조각 지원 [!DNL Assets] HTTP API](assets-api-content-fragments.md)
    + [컨텐츠 조각용 GraphQL API](content-fragments/graphql-api-content-fragments.md)
    + [컨텐츠 조각에 대한 원격 GraphQL 쿼리에 대한 인증](content-fragments/graphql-authentication-content-fragments.md)
    + [컨텐츠 조각을 사용한 GraphQL API - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
@@ -116,7 +118,7 @@ ht-degree: 48%
    + [PDF 래스터라이저 사용](aem-pdf-rasterizer.md)
    + [업로드 제한 구성](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] 통합](aem-cc-integration-best-practices.md)
-   + [ [!DNL InDesign Server]과 통합](indesign.md)
+   + [통합 대상 [!DNL InDesign Server]](indesign.md)
    + [자산의 디지털 권한 관리](drm.md)
    + [자산 통찰력에 데모 패키지 사용](use-demo-package-for-asset-insights.md)
    + [Adobe InDesign에 대한 FPO 표현물 생성](configure-fpo-renditions.md)
@@ -129,10 +131,10 @@ ht-degree: 48%
    + [자산에 워터마크 지정](watermarking.md)
    + [자산 템플릿](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [ [!DNL Brand Portal]을 사용하여 [!DNL Assets] 구성](configure-aem-assets-with-brand-portal.md)
-   + [자산을 [!DNL Brand Portal]에 게시](brand-portal-publish-assets.md)
-   + [폴더를 [!DNL Brand Portal]에 게시](brand-portal-publish-folder.md)
-   + [컬렉션을  [!DNL Brand Portal]에 게시](brand-portal-publish-collection.md)
+   + [구성 [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [자산 게시 대상 [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [폴더 게시 대상 [!DNL Brand Portal]](brand-portal-publish-folder.md)
+   + [컬렉션 게시 대상 [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + 콘텐츠 조각 {#content-fragments}
    + [컨텐츠 조각을 사용한 작업](content-fragments/content-fragments.md)
    + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 게재](content-fragments/content-fragments-graphql.md)
