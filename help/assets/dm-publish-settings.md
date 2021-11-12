@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: e3067a17153864babaf0243c4c3f6cf9cd8d30bc
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3114'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 2%
 >* Scene7 모드에서 Dynamic Media을 실행하고 있습니다.
 >* 다음 항목이 있습니다. *기존* **[!UICONTROL Dynamic Media 구성]** (in) **[!UICONTROL Cloud Services]**) 내의 아무 곳에나 삽입할 수 있습니다.
 >* 관리자 권한을 가진 Experience Manager 시스템 관리자입니다.
-
 
 
 Dynamic Media 게시 설정 페이지 설정은 Adobe Dynamic Media 서버에서 웹 사이트 또는 응용 프로그램으로 자산이 기본적으로 전달되는 방법을 결정합니다. 지정된 설정이 없으면 Adobe Dynamic Media 서버는 게시 설정 페이지의 기본 설정에 따라 자산을 전달합니다. 예를 들어, 해상도 속성을 포함하지 않는 이미지 전달 요청에 따라 [이미지 서버] 페이지에서 [기본 객체 해상도] 설정이 있는 이미지가 생성됩니다.
@@ -50,6 +49,9 @@ Dynamic Media 게시 설정 페이지 설정은 Adobe Dynamic Media 서버에서
    * [요청 속성](#request-attributes-tab) 탭
    * [공통 축소판 속성](#common-thumbnail-attributes-tab) 탭
    * [색상 관리 속성](#color-management-attributes-tab) 탭
+
+   ![Dynamic Media 게시 설정 페이지](/help/assets/assets-dm/dm-publish-setup.png)
+   *Dynamic Media 게시 설정 페이지,**[!UICONTROL 요청 속성]**탭 선택.*<br><br>
 
 1. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 저장]**.
 

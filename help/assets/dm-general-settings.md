@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: bbced918e67c64c0bf2f5a3de8cbcb9063fff669
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2216'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 5%
 
 1. Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
 1. 왼쪽 레일에서 도구 아이콘을 선택한 다음 **[!UICONTROL 자산]** > **[!UICONTROL Dynamic Media 일반 설정]**.
-1. 서버 페이지에서 **[!UICONTROL 게시된 서버 이름]** 및 **[!UICONTROL 원본 서버 이름]** 5개의 탭을 사용하여 기본 게시 설정을 구성합니다.
+1. 서버 페이지에서 **[!UICONTROL 게시된 서버 이름]** 및 **[!UICONTROL 원본 서버 이름]**, 그런 다음 다섯 개의 탭을 사용하여 기본 게시 설정을 구성합니다.
 
    * [서버](#server-general-setting)
    * [애플리케이션에 업로드](#upload-to-application)
@@ -46,6 +46,9 @@ ht-degree: 5%
    * [Photoshop](#photoshop-tab) 탭
    * [PDF](#pdf-tab) 탭
    * [Illustrator](#illustrator-tab) 탭
+
+   ![Dynamic Media 일반 설정 페이지](/help/assets/assets-dm/dm-general-settings.png)
+   *Dynamic Media 일반 설정 페이지,**[!UICONTROL 이미지 편집]**탭 선택.*<br><br>
 
 1. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 저장]**.
 
