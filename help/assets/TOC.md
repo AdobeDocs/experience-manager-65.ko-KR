@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
+source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '641'
 ht-degree: 47%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 47%
    + [Dynamic Media 구성 - 하이브리드 모드](config-dynamic.md)
    + [Dynamic Media 일반 설정 구성](dm-general-settings.md)
    + [Dynamic Media 게시 설정 구성](dm-publish-settings.md)
+   + [옵션 A](option-a-config-dms7.md)
+   + [옵션 B](option-b-config-dms7.md)
    + [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)
    + [Dynamic Media의 액세스 가능성](accessibility-dm.md)
    + [Dynamic Media - 하이브리드 모드에서 Dynamic Media - S7 모드로 마이그레이션](migrate-from-hybrid-to-dms7.md)
