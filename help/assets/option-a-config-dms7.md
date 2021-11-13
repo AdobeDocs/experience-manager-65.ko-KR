@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: b6000516b88342d6abf8072623cfece43e2ba19d
 workflow-type: tm+mt
-source-wordcount: '11558'
+source-wordcount: '11571'
 ht-degree: 2%
 
 ---
@@ -170,11 +170,11 @@ Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더�
 Dynamic Media - Scene7 모드의 구성 및 설정을 추가 사용자 지정하거나 성능을 최적화하려는 경우 다음 중 하나 이상을 완료할 수 있습니다 *옵션* 작업:
 
 * [(선택 사항) 2GB보다 큰 자산을 업로드할 Dynamic Media - Scene7 모드 구성](#optional-config-dms7-assets-larger-than-2gb)
-
-* [(선택 사항) Dynamic Media 설정 및 구성 - Scene7 모드 설정](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
-
+* [(선택 사항) Dynamic Media 게시 설정 구성](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
+   * [(선택 사항) 자산을 공개하기 전에 테스트합니다](#test-assets-before-making-public)
+* [(선택 사항) Dynamic Media 일반 설정 구성](#configuring-application-general-settings)
+* [(선택 사항) 추가 구성 작업](#additional-configuration-tasks)
 * [(선택 사항) Dynamic Media - Scene7 모드의 성능 조정](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
-
 * [(선택 사항) 복제할 자산을 필터링합니다](#optional-filtering-assets-for-replication)
 
 ### (선택 사항) 2GB보다 큰 자산을 업로드할 Dynamic Media - Scene7 모드 구성 {#optional-config-dms7-assets-larger-than-2gb}
@@ -643,7 +643,7 @@ AI(Illustrator) 이미지 파일을 업로드할 때 다양한 방법으로 형�
 >[!NOTE]
 기본적으로, 선택하면 15개의 표현물이 표시됩니다 **[!UICONTROL 표현물]** 및 15개의 뷰어 사전 설정을 선택할 때 **[!UICONTROL 뷰어]** 를 클릭합니다. 이 제한을 늘릴 수 있습니다. 자세한 내용은 [표시되는 이미지 사전 설정 수를 늘립니다](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수를 늘립니다](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-### (선택 사항) 추가 구성 작업
+### (선택 사항) 추가 구성 작업 {#additional-configuration-tasks}
 
 옵션 설정 및 구성 작업은 다음과 같습니다.
 
