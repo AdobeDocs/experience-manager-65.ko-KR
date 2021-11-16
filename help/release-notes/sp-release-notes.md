@@ -4,9 +4,9 @@ description: 에 관한 릴리스 노트 [!DNL Adobe Experience Manager] 6.5 서
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 14339f6a34952c00351c6dee8537b5df6f6fbcd3
+source-git-commit: 0a35b26c5f790d67db55421b8f3e98e5ddb30528
 workflow-type: tm+mt
-source-wordcount: '4436'
+source-wordcount: '4430'
 ht-degree: 11%
 
 ---
@@ -92,7 +92,7 @@ ht-degree: 11%
 * 론치 홍보 시, 판촉된 론치의 변경 사항은 다른 론치에 두 번 롤아웃됩니다. 사용자가 이중 롤아웃된 론치를 홍보하면 두 개의 컨텐츠가 소스 페이지에 반영됩니다(NPR-36893).
 * [!DNL Experience Manager] 이미지 코어 구성 요소를 사용하여 페이지에 이미지를 추가하거나 기초 이미지 구성 요소를 사용하여 크기를 조정하는 경우 투명도가 있는 일부 PNG 이미지에 회색 테두리를 추가합니다(NPR-36879).
 * [!DNL Experience Manager Sites] 템플릿이 많은 관리자 UI가 있으면 탐색 속도가 느려집니다(NPR-36870).
-* 서비스 팩 9로 업그레이드하면 일부 구성 요소가 작성되지 않습니다. 이 문제로 인해 [!DNL Sites] 사용자가 새 페이지를 만듭니다(NPR-36857).
+* 링크가 사용자 지정 서블릿 필터 번들에 의해 수정되면 웹 페이지가 렌더링되지 않습니다(NPR-36857).
 * 다음 `ContextHubImpl` 메서드 만들기 `ResourceResolver` 닫히지 않았습니다. 이로 인해 장기간 실행 시 경고 메시지가 표시됩니다 `ResourceResolver` 및 서비스가 때때로 예기치 않은 결과를 반환합니다(NPR-36853).
 * 블루프린트 페이지 속성에서 단일 Live Copy를 동기화할 때 다른 모든 Live Copy도 동기화됩니다(NPR-36829, NPR-36522).
 * XLS MIME 유형만 사용하는 경우 파일 업로드 기능이 예상대로 작동하지 않습니다(NPR-36785).
