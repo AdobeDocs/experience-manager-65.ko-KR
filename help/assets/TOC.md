@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: 468a8d96153c67232524eea6f180c9ceb364d60a
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '649'
 ht-degree: 47%
 
 ---
@@ -171,3 +171,7 @@ ht-degree: 47%
    + [관련 자산](related-assets.md)
    + [비공개 폴더 공유](private-folder.md)
    + [비디오 표현물](video-renditions.md)
++ 다른 솔루션과 통합 {#integrations}
+   + [통합 [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [ 설치  [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-install.md)
+   + [구성 [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-configure.md)
