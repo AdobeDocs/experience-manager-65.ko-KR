@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-source-git-commit: 231c153fadceb08b4110ba7a41ef29d1bc9c458f
+source-git-commit: bfc4aa92770b001bdf89d89fa149d8e4ceefa6c2
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 10%
@@ -308,9 +308,9 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 | 사용자 | 그룹 | 권한 | 사용자 기본 설정에서 Stock 구성 수락 | 자산 액세스 | Adobe Stock 액세스 |
 | --- | --- | --- | --- | --- | --- |
 | admin | N/A | 모든 | 해당 없음 | 예 | 예 |
-| test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 예 | 예 | 예 |
-| test-doc1 | DAM 사용자 | /conf/global/settings/stock/cloud-config | 아니오 | 오류: 데이터를 로드하지 못했습니다. | 아니오 |
-| test-doc1 | DAM 사용자 | **허용**: /conf/global/settings/stock     **거부**: /cloud-config | 스톡 구성이 표시되지 않음 | 예 | 아니오 |
+| test-doc1 | DAM 사용자 | /conf/global /settings/stock/cloud-config | 예 | 예 | 예 |
+| test-doc1 | DAM 사용자 | /conf/global /settings/stock/cloud-config | 아니오 | 오류: 데이터를 로드하지 못했습니다. | 아니오 |
+| test-doc1 | DAM 사용자 | **허용**: /conf/global /settings/stock     **거부**: /cloud-config | 스톡 구성이 표시되지 않음 | 예 | 아니오 |
 
 
 ## 사용 및 관리 [!DNL Adobe Stock] 자산 [!DNL Experience Manager] {#usemanage}
