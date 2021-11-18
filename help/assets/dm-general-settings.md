@@ -7,37 +7,43 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
+mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
+source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 5%
+source-wordcount: '2454'
+ht-degree: 4%
 
 ---
 
 
 # Dynamic Media 일반 설정 구성
 
->[!IMPORTANT]
->
->Dynamic Media 일반 설정은 다음 경우에만 사용할 수 있습니다.
->
->* Scene7 모드에서 Dynamic Media을 실행하고 있습니다.
->* 다음 항목이 있습니다. *기존* **[!UICONTROL Dynamic Media 구성]** (in) **[!UICONTROL Cloud Services]**) 내의 아무 곳에나 삽입할 수 있습니다.
->* 관리자 권한을 가진 Experience Manager 시스템 관리자입니다.
+구성 **[!UICONTROL Dynamic Media 일반 설정]** 다음 경우에만 사용할 수 있습니다.
 
+* Scene7 모드에서 Dynamic Media을 실행하고 있습니다. 자세한 내용은 [Scene7 모드에서 Dynamic Media 활성화](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
+* 다음 항목이 있습니다. *기존* **[!UICONTROL Dynamic Media 구성]** (in) **[!UICONTROL Cloud Services]**) 내의 아무 곳에나 삽입할 수 있습니다.
+* 관리자 권한을 가진 Experience Manager 시스템 관리자입니다.
+
+Dynamic Media 일반 설정은 숙련된 웹 사이트 개발자와 프로그래머가 사용하기 위한 것입니다. Adobe Dynamic Media에서는 이러한 게시 설정을 변경하는 사용자가 Adobe Experience Manager의 Dynamic Media 및 기본 이미징 기술에 익숙할 것을 권장합니다.
 
 계정을 만들 때 Dynamic Media Adobe에서 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 애플리케이션에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 적용됩니다.
 
-참조 - [Secure Testing Service 테스트](/help/assets/dm-publish-settings.md#test-assets-before-making-public).
+Dynamic Media 게시 설정 페이지에서는 Dynamic Media Adobe 서버에서 웹 사이트 또는 응용 프로그램으로 자산을 전달하는 방법을 결정하는 기본 설정을 설정합니다. 설정이 지정되지 않은 경우 Adobe Dynamic Media 서버는 Dynamic Media 게시 설정 페이지에 구성된 기본 설정에 따라 자산을 전달합니다.
 
-**Dynamic Media 일반 설정을 구성하려면 다음을 수행하십시오.**
+참조 - [Dynamic Media 설정 및 구성 - Scene7 모드 설정](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+
+>[!NOTE]
+>
+>Adobe Experience Manager에서 Dynamic Media Classic으로 업그레이드하시겠습니까? Dynamic Media의 일반 설정 및 게시 설정 페이지는 Dynamic Media Classic 계정에서 가져온 값으로 미리 채워집니다. 예외는 **[!UICONTROL 기본 업로드 옵션]** 일반 설정 페이지의 영역. 해당 값은 이미 Experience Manager에 있습니다. 따라서 사용자가 변경한 사항이 **[!UICONTROL 기본 업로드 옵션]**, 5개 탭 모두에 Experience Manager 사용자 인터페이스가 Dynamic Media Classic이 아닌 Dynamic Media에 반영됩니다. 일반 설정 및 게시 설정 페이지의 다른 모든 설정 및 값은 Experience Manager의 Dynamic Media Classic과 Dynamic Media 간에 유지됩니다.
+
+**Dynamic Media 일반 설정을 구성하려면:**
 
 1. Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
 1. 왼쪽 레일에서 도구 아이콘을 선택한 다음 **[!UICONTROL 자산]** > **[!UICONTROL Dynamic Media 일반 설정]**.
-1. 서버 페이지에서 **[!UICONTROL 게시된 서버 이름]** 및 **[!UICONTROL 원본 서버 이름]**, 그런 다음 다섯 개의 탭을 사용하여 기본 게시 설정을 구성합니다.
+1. 서버 페이지에서 **[!UICONTROL 게시된 서버 이름]** 및 **[!UICONTROL 원본 서버 이름]**&#x200B;그런 다음 다섯 개의 탭을 사용하여 이미지 편집과 Postscript, Photoshop, PDF 및 Illustrator 파일에 대한 기본 업로드 옵션을 구성합니다.
 
    * [서버](#server-general-setting)
    * [애플리케이션에 업로드](#upload-to-application)
@@ -58,7 +64,7 @@ ht-degree: 5%
 
 | 옵션 | 설명 |
 | --- | --- |
-| **[!UICONTROL 게시된 서버 이름]** | 필수.<br>이 서버는 계정과 관련된 시스템에서 생성한 모든 URL 호출에 사용되는 라이브 CDN(Content Delivery Network) 서버입니다. Adobe 기술 지원에서 이 서버 이름을 변경하지 않도록 지시하는 경우가 아니면 변경하지 마십시오. 이름은 를 사용해야 합니다 `https://` 을 가리키도록 업데이트하는 것이 좋습니다. |
+| **[!UICONTROL 게시된 서버 이름]** | 필수.<br>이름은 를 사용해야 합니다 `https://` 을 가리키도록 업데이트하는 것이 좋습니다.<br>이 서버는 계정과 관련된 시스템에서 생성한 모든 URL 호출에 사용되는 라이브 CDN(Content Delivery Network) 서버입니다. Adobe 기술 지원에서 이 서버 이름을 변경하지 않도록 지시하는 경우가 아니면 변경하지 마십시오. |
 | **[!UICONTROL 원본 서버 이름]** | 필수.<br>이 서버는 품질 보증 테스트에만 사용됩니다. Adobe 기술 지원 센터에서 이 서버 이름을 변경하지 마십시오. |
 
 ## 애플리케이션에 업로드 {#upload-to-application}
@@ -69,7 +75,7 @@ ht-degree: 5%
 
    | 이미지 덮어쓰기 옵션 | 설명 |
    | --- | --- |
-   | **[!UICONTROL 동일한 기본 에셋 이름/확장명으로 현재 폴더에 덮어쓰기]** | 기본값.<br>이 옵션은 교체에 대한 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 확장명이 원본과 동일해야 합니다. 이러한 요구 사항을 충족하지 않으면 복제본이 만들어집니다. |
+   | **[!UICONTROL 동일한 기본 에셋 이름/확장명으로 현재 폴더에 덮어쓰기]** | 새 Dynamic Media 계정에만 적용되는 기본값입니다.<br>이 옵션은 교체에 대한 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 확장명이 원본과 동일해야 합니다. 이러한 요구 사항을 충족하지 않으면 복제본이 만들어집니다. |
    | **[!UICONTROL 확장명에 상관없이 동일한 기본 이름으로 현재 폴더에 덮어쓰기]** | 교체 이미지를 원본과 동일한 폴더로 업로드해야 하지만 파일 이름 확장명은 원본과 다를 수 있습니다. 예를 들어 chair.tif는 chair.jpg를 대체합니다. |
    | **[!UICONTROL 동일한 기본 에셋 이름/확장명으로 모든 폴더에 덮어쓰기]** | 교체 이미지의 파일 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg로 대체해야 함). 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다. 파일을 원래 위치에서 더 이상 찾을 수 없습니다. |
    | **[!UICONTROL 확장명에 상관없이 동일한 기본 에셋 이름으로 모든 폴더에 덮어쓰기]** | 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본과 다른 폴더에 업로드하고, 다른 파일 확장자를 가진 파일을 업로드하고, 원래 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다. |

@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media 게시 설정 구성
+title: 이미지 서버에 대한 Dynamic Media 게시 설정 구성
 description: Dynamic Media에서 게시를 설정하는 방법을 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -7,37 +7,37 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
+mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
+source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
 workflow-type: tm+mt
-source-wordcount: '3114'
-ht-degree: 2%
+source-wordcount: '3443'
+ht-degree: 3%
 
 ---
 
 
-# Dynamic Media 게시 설정 구성
+# 이미지 서버에 대한 Dynamic Media 게시 설정 구성
 
->[!IMPORTANT]
->
->Dynamic Media 게시 설정은 다음 경우에만 사용할 수 있습니다.
->
->* Scene7 모드에서 Dynamic Media을 실행하고 있습니다.
->* 다음 항목이 있습니다. *기존* **[!UICONTROL Dynamic Media 구성]** (in) **[!UICONTROL Cloud Services]**) 내의 아무 곳에나 삽입할 수 있습니다.
->* 관리자 권한을 가진 Experience Manager 시스템 관리자입니다.
+Dynamic Media 게시 설정 구성은 다음 경우에만 사용할 수 있습니다.
 
+* Scene7 모드에서 Dynamic Media을 실행하고 있습니다. 자세한 내용은 [Scene7 모드에서 Dynamic Media 활성화](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
+* 다음 항목이 있습니다. *기존* **[!UICONTROL Dynamic Media 구성]** (in) **[!UICONTROL Cloud Services]**) 내의 아무 곳에나 삽입할 수 있습니다.
+* 관리자 권한을 가진 Experience Manager 시스템 관리자입니다.
 
-Dynamic Media 게시 설정 페이지 설정은 Adobe Dynamic Media 서버에서 웹 사이트 또는 응용 프로그램으로 자산이 기본적으로 전달되는 방법을 결정합니다. 지정된 설정이 없으면 Adobe Dynamic Media 서버는 게시 설정 페이지의 기본 설정에 따라 자산을 전달합니다. 예를 들어, 해상도 속성을 포함하지 않는 이미지 전달 요청에 따라 [이미지 서버] 페이지에서 [기본 객체 해상도] 설정이 있는 이미지가 생성됩니다.
+Dynamic Media 게시 설정 은 숙련된 웹 사이트 개발자와 프로그래머가 사용하기 위한 것입니다. Adobe Dynamic Media에서는 이러한 게시 설정을 변경하는 사용자가 Adobe Dynamic Media, HTTP 프로토콜 표준 및 규칙, 기본 이미징 기술에 익숙할 것을 권장합니다.
 
-관리자는 이미지 서버, 이미지 렌더러 및 비네팅 페이지의 기본 설정을 변경하여 서버에서 자산을 전달하기 위한 기본 설정을 설정할 수 있습니다.
+Dynamic Media 게시 설정 페이지에서는 Dynamic Media Adobe 서버에서 웹 사이트 또는 응용 프로그램으로 자산을 전달하는 방법을 결정하는 기본 설정을 설정합니다. 설정이 지정되지 않은 경우 Adobe Dynamic Media 서버는 Dynamic Media 게시 설정 페이지에 구성된 기본 설정에 따라 자산을 전달합니다.
 
 >[!NOTE]
 >
->Dynamic Media 게시 설정 은 숙련된 웹 사이트 개발자와 프로그래머가 사용하기 위한 것입니다. Adobe Dynamic Media에서는 이러한 기본 게시 설정을 변경하는 사용자가 Adobe Dynamic Media, HTTP 프로토콜 표준 및 규칙, 기본 이미징 기술에 익숙하다고 가정합니다.
+>Adobe Experience Manager에서 Dynamic Media Classic으로 업그레이드하시겠습니까? Dynamic Media의 일반 설정 및 게시 설정 페이지는 Dynamic Media Classic 계정에서 가져온 값으로 미리 채워집니다. 예외는 **[!UICONTROL 기본 업로드 옵션]** 일반 설정 페이지의 영역. 해당 값은 이미 Experience Manager에 있습니다. 따라서 사용자가 변경한 사항이 **[!UICONTROL 기본 업로드 옵션]**, 5개 탭 모두에 Experience Manager 사용자 인터페이스가 Dynamic Media Classic이 아닌 Dynamic Media에 반영됩니다. 일반 설정 및 게시 설정 페이지의 다른 모든 설정 및 값은 Experience Manager의 Dynamic Media Classic과 Dynamic Media 간에 유지됩니다.
 
-**Dynamic Media 게시 설정을 구성하려면:**
+참조 - [Dynamic Media 설정 및 구성 - Scene7 모드 설정](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+
+**Dynamic Media 게시 설정 이미지 서버를 구성하려면:**
 
 1. Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
 1. 왼쪽 레일에서 도구 아이콘을 선택한 다음 **[!UICONTROL 자산]** > **[!UICONTROL Dynamic Media 게시 설정]**.
@@ -62,7 +62,7 @@ Dynamic Media 게시 설정 페이지 설정은 Adobe Dynamic Media 서버에서
 | 컨텍스트 게시 | 설명 |
 | --- | --- |
 | 이미지 제공 | 게시 설정의 컨텍스트를 지정합니다. |
-| 이미지 제공 테스트 | 게시 설정을 테스트할 컨텍스트를 지정합니다.<br>자세한 내용은 [자산을 공개하기 전에 테스트](#test-assets-before-making-public). |
+| 이미지 제공 테스트 | 게시 설정을 테스트할 컨텍스트를 지정합니다.<br>새 Dynamic Media 계정에만 적용되는 경우 기본값은 기본값입니다 **[!UICONTROL 클라이언트 주소]** 필드가 `127.0.0.1` 자동.<br>자세한 내용은 [자산을 공개하기 전에 테스트](#test-assets-before-making-public). |
 
 ### 보안 탭 {#security-tab}
 
@@ -74,27 +74,31 @@ Dynamic Media 게시 설정 페이지 설정은 Adobe Dynamic Media 서버에서
 
 참조 - [RuleSetFile](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-rulesetfile.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오.
 
+>[!NOTE]
+>
+>Dynamic Media Classic 계정에 이미 **[!UICONTROL 규칙 세트 정의 파일 경로]** 선택(아래에 설정된 대로) **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션]** > **[!UICONTROL 게시 설정]**, 아래에 **[!UICONTROL 카탈로그 관리]** 그룹), Experience Manager의 Dynamic Media 계정이 Dynamic Media Classic에서 파일을 가져옵니다. 그런 다음 파일을 열 때 파일이 저장되고 이 필드에서 사용할 수 있게 됩니다 **[!UICONTROL Dynamic Media 게시 설정]** 페이지를 처음 표시합니다.
+
 ### 요청 속성 탭 {#request-attributes-tab}
 
 이러한 설정은 이미지의 기본 모양과 관련이 있습니다.
 
 | 설정 | 설명 |
 | --- | --- |
-| **[!UICONTROL 응답 이미지 크기 제한]** | 필수.<br>클라이언트에 반환되는 최대 회신 이미지 너비와 높이를 지정합니다. 요청 시 폭이나 높이 또는 둘 다 이 설정보다 큰 회신 이미지가 발생하면 서버에서 오류를 반환합니다.<br>참조 - [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
+| **[!UICONTROL 응답 이미지 크기 제한]** | 필수.<br>새 Dynamic Media 계정만 사용하는 경우 기본 크기 제한이 자동으로 너비로 설정됩니다. `3000` 및 높이: `3000` 둘 다 **[!UICONTROL 이미지 제공]** 및 **[!UICONTROL 테스트 이미지 제공]**.<br>클라이언트에 반환되는 최대 회신 이미지 너비와 높이를 지정합니다. 요청 시 폭이나 높이 또는 둘 다 이 설정보다 큰 회신 이미지가 발생하면 서버에서 오류를 반환합니다.<br>참조 - [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 | **[!UICONTROL 난독화 모드 요청]** | base64 인코딩이 유효한 요청에 적용되도록 하려면 활성화합니다.<br>참조 - [RequestObfusation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 | **[!UICONTROL 잠금 모드 요청]** | 요청에 단순 해시 잠금이 포함되도록 하려면 활성화합니다.<br>참조 - [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 | **[!UICONTROL 기본 요청 특성]** |  |
 | **[!UICONTROL 기본 이미지 파일 접미사]** | 필수.<br>경로에 파일 접미사를 포함하지 않는 경우 카탈로그 경로 및 MaskPath 필드 값에 추가되는 기본 데이터 파일 확장입니다.<br>참조 - [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 | **[!UICONTROL 기본 글꼴 이름]** | 텍스트 레이어 요청에서 글꼴을 제공하지 않을 경우 사용할 글꼴을 지정합니다. 지정하면 이 이미지 카탈로그의 글꼴 맵이나 기본 카탈로그의 글꼴 맵에 유효한 글꼴 이름 값이어야 합니다.<br>참조 - [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
-| **[!UICONTROL 기본 이미지]** | 요청한 이미지를 찾을 수 없는 요청에 응답하여 반환할 기본 이미지를 제공합니다.<br>참조 - [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
+| **[!UICONTROL 기본 이미지]** | 요청한 이미지를 찾을 수 없는 요청에 응답하여 반환할 기본 이미지를 제공합니다.<br>참조 - [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오.<br>**참고**: Dynamic Media Classic 계정에 이미 **[!UICONTROL 기본 이미지]** 선택(아래에 설정된 대로) **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션]** > **[!UICONTROL 게시 설정]**, 아래에 **[!UICONTROL 기본 요청 속성]** 그룹), Experience Manager의 Dynamic Media 계정이 Dynamic Media Classic에서 파일을 가져옵니다. 그런 다음 파일이 저장되고 을 열 때 이 필드에서 사용할 수 있게 됩니다 **[!UICONTROL Dynamic Media 게시 설정]** 페이지를 처음 표시합니다. |
 | **[!UICONTROL 기본 이미지 모드]** | 슬라이더 상자(오른쪽 슬라이더)가 활성화되면 **[!UICONTROL 기본 이미지]** 소스 이미지에서 누락된 각 레이어를 기본 이미지로 바꾸고 컴포지션을 평소대로 반환합니다. 슬라이더 상자가 비활성화되면(왼쪽의 슬라이더) 누락된 이미지가 여러 레이어 중 하나에 불과하더라도 기본 이미지가 전체 합성 이미지를 대체합니다.<br>참조 - [DefaultImageMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
-| **[!UICONTROL 기본 보기 크기]** | 필수.<br>요청이 을 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 서버는 이 너비와 높이보다 크지 않은 회신 이미지를 제한합니다 `wid=`, `hei=`, 또는 `scl=`.<br>참조 - [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
+| **[!UICONTROL 기본 보기 크기]** | 필수.<br>새 Dynamic Media 계정만 사용하는 경우 기본 보기 크기가 자동으로 너비로 설정됩니다. `1280` 및 높이: `1280` 둘 다 **[!UICONTROL 이미지 제공]** 및 **[!UICONTROL 테스트 이미지 제공]**.<br>요청이 을 사용하여 보기 크기를 명시적으로 지정하지 않는 경우 서버는 이 너비와 높이보다 크지 않은 회신 이미지를 제한합니다 `wid=`, `hei=`, 또는 `scl=`.<br>참조 - [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 | **[!UICONTROL 기본 썸네일 크기]** | 필수.<br>속성 대신 사용됩니다. **[!UICONTROL 기본 보기 크기]** 축소판 요청(`req=tmb`). 서버는 축소판 요청(`req=tmb`)에서 을 사용하여 크기를 명시적으로 지정하지 않습니다 `wid=`, `hei=`, 또는 `scl=`.<br>참조 - [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 | **[!UICONTROL 기본 배경색]** | 실제 이미지 데이터를 포함하지 않는 회신 이미지의 영역을 채우는 데 사용되는 RGB 값을 지정합니다.<br>참조 - [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 | **[!UICONTROL JPEG 인코딩 특성]** |  |
-| **[!UICONTROL 품질]** | JPEG 회신 이미지의 기본 속성을 지정합니다. 다음 **[!UICONTROL 품질]** 필드는 1 - 100 범위에 정의됩니다.<br>참조 - [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
+| **[!UICONTROL 품질]** | <br>JPEG 회신 이미지의 기본 속성을 지정합니다.<br>새 Dynamic Media 계정에만 적용되는 경우, **[!UICONTROL 품질]** 기본값은 자동으로 `80` 둘 다 **[!UICONTROL 이미지 제공]** 및 **[!UICONTROL 테스트 이미지 제공]**.<br>이 필드는 1 - 100 범위에 정의됩니다.<br>참조 - [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 | **[!UICONTROL 채도 다운샘플링]** | JPEG 인코더에 사용되는 색상 변색 다운샘플링을 활성화하거나 비활성화합니다. |
-| **[!UICONTROL 기본 리샘플링 모드]** | 이미지 데이터 크기 조절에 사용할 기본 리샘플링 및 보간 속성을 지정합니다. 다음 경우에 사용 `resMode` 이 요청에 지정되지 않았습니다.<br>참조 - [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
+| **[!UICONTROL 기본 리샘플링 모드]** | 이미지 데이터 크기 조절에 사용할 기본 리샘플링 및 보간 속성을 지정합니다. 다음 경우에 사용 `resMode` 이 요청에 지정되지 않았습니다.<br>새 Dynamic Media 계정만 사용하는 경우 기본 재샘플링 모드가 자동으로 `Sharp2` 둘 다 **[!UICONTROL 이미지 제공]** 및 **[!UICONTROL 테스트 이미지 제공]**.<br>참조 - [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 
 ### 공통 축소판 속성 탭 {#common-thumbnail-attributes-tab}
 
@@ -102,11 +106,11 @@ Dynamic Media 게시 설정 페이지 설정은 Adobe Dynamic Media 서버에서
 
 | 설정 | 설명 |
 | --- | --- |
-| **[!UICONTROL 축소판의 기본 배경색]** | 실제 이미지 데이터가 포함되지 않은 출력 축소판 이미지의 영역을 채우는 데 사용되는 RGB 값을 지정합니다. 축소판 요청에만 사용됩니다(`req=tmb`) 및 **[!UICONTROL 기본 축소판 그림 유형]** 설정이 **[!UICONTROL Fit]** 또는 **[!UICONTROL 텍스처]**.<br>참조 - [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
-| **[!UICONTROL 가로 정렬]** | 지정된 회신 이미지 사각형에서 축소판 이미지의 가로 정렬을 지정합니다. `wid=` 및 `hei=` 값.<br>축소판 요청에만 사용됩니다(`req=tmb`) 및 **[!UICONTROL 기본 축소판 그림 유형]** 설정이 **[!UICONTROL Fit]**.<br>다음 세 가지 수평 정렬 중에서 선택할 수 있습니다. **[!UICONTROL 가운데 정렬]**, **[!UICONTROL 왼쪽 정렬]**, 및 **[!UICONTROL 오른쪽 정렬]**.<br>참조 - [ThumbHorizAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
-| **[!UICONTROL 세로 정렬]** | 지정된 회신 이미지 사각형에서 축소판 이미지의 세로 정렬을 지정합니다. `wid=` 및 `hei=` 값. 축소판 요청에만 사용됩니다(`req=tmb`) 및 **[!UICONTROL 기본 축소판 그림 유형]** 설정이 **[!UICONTROL Fit]**.<br>다음 세 가지 세로 정렬 중에서 선택할 수 있습니다. **[!UICONTROL 위쪽 정렬]**, **[!UICONTROL 가운데 정렬]**, 및 **[!UICONTROL 아래쪽 정렬]**.<br>참조 - [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
+| **[!UICONTROL 썸네일용 기본 배경색]** | 실제 이미지 데이터가 포함되지 않은 출력 축소판 이미지의 영역을 채우는 데 사용되는 RGB 값을 지정합니다. 축소판 요청에만 사용됩니다(`req=tmb`) 및 **[!UICONTROL 기본 축소판 그림 유형]** 설정이 **[!UICONTROL Fit]** 또는 **[!UICONTROL 텍스처]**.<br>참조 - [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
+| **[!UICONTROL 수평 정렬]** | 지정된 회신 이미지 사각형에서 축소판 이미지의 가로 정렬을 지정합니다. `wid=` 및 `hei=` 값.<br>축소판 요청에만 사용됩니다(`req=tmb`) 및 **[!UICONTROL 기본 축소판 그림 유형]** 설정이 **[!UICONTROL Fit]**.<br>다음 세 가지 수평 정렬 중에서 선택할 수 있습니다. **[!UICONTROL 가운데 정렬]**, **[!UICONTROL 왼쪽 정렬]**, 및 **[!UICONTROL 오른쪽 정렬]**.<br>참조 - [ThumbHorizAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
+| **[!UICONTROL 수직 정렬]** | 지정된 회신 이미지 사각형에서 축소판 이미지의 세로 정렬을 지정합니다. `wid=` 및 `hei=` 값. 축소판 요청에만 사용됩니다(`req=tmb`) 및 **[!UICONTROL 기본 축소판 그림 유형]** 설정이 **[!UICONTROL Fit]**.<br>다음 세 가지 세로 정렬 중에서 선택할 수 있습니다. **[!UICONTROL 위쪽 정렬]**, **[!UICONTROL 가운데 정렬]**, 및 **[!UICONTROL 아래쪽 정렬]**.<br>참조 - [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 | **[!UICONTROL 기본 캐시 사용 시간]** | 특정 카탈로그 레코드에 유효한 카탈로그 만료 값이 없는 경우 기본 만료 간격을 시간 단위로 제공합니다. 을 로 설정합니다. `-1` 만료되지 않은 것으로 표시합니다. <br>참조 - [만료](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
-| **[!UICONTROL 기본 축소판 그림 유형]** | 특정 카탈로그 레코드에 올바른 카탈로그 ThumbType 값이 없는 경우 축소판 유형에 대한 기본값을 제공합니다. 축소판 요청에만 사용됩니다(`req=tmb`).<br>다음 세 가지 축소판 유형을 선택할 수 있습니다. **[!UICONTROL 자르기]**, **[!UICONTROL Fit]**, 및 **[!UICONTROL 텍스처]**.<br>참조 - [ThumbType](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
+| **[!UICONTROL 기본 썸네일 유형]** | 특정 카탈로그 레코드에 올바른 카탈로그 ThumbType 값이 없는 경우 축소판 유형에 대한 기본값을 제공합니다. 축소판 요청에만 사용됩니다(`req=tmb`).<br>다음 세 가지 축소판 유형을 선택할 수 있습니다. **[!UICONTROL 자르기]**, **[!UICONTROL Fit]**, 및 **[!UICONTROL 텍스처]**.<br>참조 - [ThumbType](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 | **[!UICONTROL 기본 썸네일 해상도]** | 특정 카탈로그 레코드에 유효한 카탈로그 ThumbRes 값이 없는 경우 축소판 개체 해상도의 기본값을 제공합니다. 축소판 요청에만 사용됩니다(`req=tmb`) 및 **[!UICONTROL 기본 축소판 그림 유형]** 설정이 **[!UICONTROL 텍스처]**.<br>참조 - [ThumbRes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres.html) 매개 변수( Dynamic Media 뷰어 참조 안내서)를 참조하십시오. |
 
 ### 색상 관리 속성 탭 {#color-management-attributes-tab}
@@ -126,7 +130,7 @@ Dynamic Media 게시 설정 페이지 설정은 Adobe Dynamic Media 서버에서
 
 >[!NOTE]
 >
->일반적으로 업계 표준을 충족하기 위해 Adobe에서 테스트한 선택한 색상 설정에 기본 렌더링 의도를 사용하는 것이 가장 좋습니다. 예를 들어, 북미 또는 유럽에 대한 색상 설정을 선택하는 경우 기본 색상 변환 렌더링 목적은 입니다 **[!UICONTROL 상대 색상 지표]**. 일본에 대한 색상 설정을 선택하는 경우 기본 색상 변환 렌더링 의도는 다음과 같습니다 **[!UICONTROL 지각]**.
+>일반적으로 업계 표준을 충족하기 위해 Adobe에서 테스트한 선택한 색상 설정에 기본 렌더링 의도를 사용하는 것이 가장 좋습니다. 예를 들어, 북미 또는 유럽에 대한 색상 설정을 선택하는 경우 기본 색상 변환 렌더링 목적은 입니다 **[!UICONTROL 상대 색각]**. 일본에 대한 색상 설정을 선택하는 경우 기본 색상 변환 렌더링 의도는 다음과 같습니다 **[!UICONTROL 지각]**.
 
 | 설정 | 특성 |
 | --- | --- |
@@ -252,6 +256,3 @@ Secure Testing 서비스가 예상대로 작동하는지 확인하려면 다음�
    외부(예: 홈 컴퓨터 또는 4G/5G 연결)에서 네트워크에 액세스한 다음 사이트의 공개 버전에 게시된 모든 자산이 표시되지만 게시되지 않은 컨텐츠는 표시되지 않는지 확인합니다.
 
    승인되지 않은 IP 주소에서 Secure Testing 서비스에 액세스하고 있으므로 스테이징 버전에서 자산이 표시되지 않는지 확인합니다.
-
-
-
