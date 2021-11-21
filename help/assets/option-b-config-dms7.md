@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: b1f2a6b8fecd9ee98f345d1de8c26c6f42a44823
+source-git-commit: 3b5e65efc9aaedbc3385cc348ead80afecae2f06
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6063'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    선택 **[!UICONTROL Dynamic Media에 연결]**.
 
    >[!NOTE]
-   **릭: 그대로?** Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)그런 다음 계정에 로그인하여 암호를 변경합니다. 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
+   Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)그런 다음 계정에 로그인하여 암호를 변경합니다. 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
 
 1. 연결이 성공하면 다음을 설정합니다. 별표(*)가 있는 헤딩은 다음과 같습니다.
 
@@ -136,14 +136,13 @@ Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더�
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 Dynamic Media에 연결하려면 Experience Manager 작성자 인스턴스를 &quot;&quot;허용 목록에 추가하다해야 합니다.
 
-   * **릭: 새 게시 설정 주제에 대한 링크** 를 엽니다. [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)그런 다음 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
-
-   * 페이지 오른쪽 상단 근처에 있는 탐색 막대에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**.
-
-   * 이미지 서버 게시 페이지의 게시 컨텍스트 드롭다운 목록에서 을 선택합니다 **[!UICONTROL 테스트 이미지 제공]**.
-   * 클라이언트 주소 필터에 대해 다음을 선택합니다. **[!UICONTROL 추가]**.
-   * 주소를 활성화(설정)하려면 확인란을 선택합니다. Experience Manager 작성자 인스턴스(Dispatcher IP 아님)의 IP 주소를 입력합니다.
-   * **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+   * Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
+   * 왼쪽 레일에서 를 선택합니다. **[!UICONTROL 도구]** 아이콘, 다음 위치로 이동 **[!UICONTROL 자산]** > **[!UICONTROL Dynamic Media 게시 설정]**.
+   * Dynamic Media 이미지 서버 페이지의 **[!UICONTROL 게시 컨텍스트]** 드롭다운 목록에서 **[!UICONTROL 테스트 이미지 제공]**.
+   * 을(를) 선택합니다 **[!UICONTROL 보안]** 탭.
+   * 대상 **[!UICONTROL 클라이언트 주소]**, 선택 **[!UICONTROL 추가]**.
+   * Experience Manager 작성자 인스턴스(Dispatcher IP 아님)의 IP 주소를 입력합니다.
+   * 페이지의 오른쪽 위 모서리에서 을(를) 선택합니다 **[!UICONTROL 저장]**.
 
 이제 기본 구성을 완료했습니다. Dynamic Media - Scene7 모드를 사용할 준비가 되었습니다.
 
