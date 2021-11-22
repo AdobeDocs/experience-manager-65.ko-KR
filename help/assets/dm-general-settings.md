@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
+source-git-commit: f76f02f97de477af80666ea76a499578c36fb09e
 workflow-type: tm+mt
-source-wordcount: '2454'
+source-wordcount: '2461'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 구성 **[!UICONTROL Dynamic Media 일반 설정]** 다음 경우에만 사용할 수 있습니다.
 
-* Scene7 모드에서 Dynamic Media을 실행하고 있습니다. 자세한 내용은 [Scene7 모드에서 Dynamic Media 활성화](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
+* Scene7 모드에서 Dynamic Media을 실행하고 있습니다. 자세한 내용은 [Scene7 모드에서 Dynamic Media 활성화](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
 * 다음 항목이 있습니다. *기존* **[!UICONTROL Dynamic Media 구성]** (in) **[!UICONTROL Cloud Services]**) 내의 아무 곳에나 삽입할 수 있습니다.
 * 관리자 권한을 가진 Experience Manager 시스템 관리자입니다.
 
@@ -33,11 +33,11 @@ Dynamic Media 일반 설정은 숙련된 웹 사이트 개발자와 프로그래
 
 Dynamic Media 게시 설정 페이지에서는 Dynamic Media Adobe 서버에서 웹 사이트 또는 응용 프로그램으로 자산을 전달하는 방법을 결정하는 기본 설정을 설정합니다. 설정이 지정되지 않은 경우 Adobe Dynamic Media 서버는 Dynamic Media 게시 설정 페이지에 구성된 기본 설정에 따라 자산을 전달합니다.
 
-참조 - [Dynamic Media 설정 및 구성 - Scene7 모드 설정](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+참조 - [선택 사항 - Dynamic Media 설정 및 구성 - Scene7 모드 설정](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) fpr 추가 선택적 구성 작업.
 
 >[!NOTE]
 >
->Adobe Experience Manager에서 Dynamic Media Classic으로 업그레이드하시겠습니까? Dynamic Media의 일반 설정 및 게시 설정 페이지는 Dynamic Media Classic 계정에서 가져온 값으로 미리 채워집니다. 예외는 **[!UICONTROL 기본 업로드 옵션]** 일반 설정 페이지의 영역. 해당 값은 이미 Experience Manager에 있습니다. 따라서 사용자가 변경한 사항이 **[!UICONTROL 기본 업로드 옵션]**, 5개 탭 모두에 Experience Manager 사용자 인터페이스가 Dynamic Media Classic이 아닌 Dynamic Media에 반영됩니다. 일반 설정 및 게시 설정 페이지의 다른 모든 설정 및 값은 Experience Manager의 Dynamic Media Classic과 Dynamic Media 간에 유지됩니다.
+>Adobe Experience Manager에서 Dynamic Media Classic으로 업그레이드하시겠습니까? 일반 설정 페이지 및 [게시 설정](/help/assets/dm-publish-settings.md) Dynamic Media의 페이지는 Dynamic Media Classic 계정에서 가져온 값으로 미리 채워집니다. 예외는 **[!UICONTROL 기본 업로드 옵션]** 일반 설정 페이지의 영역. 해당 값은 이미 Experience Manager에 있습니다. 따라서 사용자가 변경한 사항이 **[!UICONTROL 기본 업로드 옵션]**, 5개의 탭 중 Experience Manager 사용자 인터페이스를 통해 Dynamic Media Classic이 아닌 Dynamic Media에 반영됩니다. 일반 설정 페이지 및 [게시 설정](/help/assets/dm-publish-settings.md) 페이지는 Experience Manager 시 Dynamic Media Classic과 Dynamic Media 간에 유지 관리됩니다.
 
 **Dynamic Media 일반 설정을 구성하려면:**
 
