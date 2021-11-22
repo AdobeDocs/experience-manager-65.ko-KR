@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: 3b5e65efc9aaedbc3385cc348ead80afecae2f06
+source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
 workflow-type: tm+mt
-source-wordcount: '6063'
+source-wordcount: '6082'
 ht-degree: 1%
 
 ---
@@ -265,7 +265,7 @@ Dynamic Media 게시 설정 페이지에서는 Dynamic Media Adobe 서버에서 
 
 #### Dynamic Media 일반 설정 구성 {#configuring-application-general-settings}
 
-이미지를 요청할 때 색상 교정이 활성화되도록 기본 색상 속성을 구성합니다.
+Dynamic Media 구성 **[!UICONTROL 게시 서버 이름]** URL 및 **[!UICONTROL 원본 서버 이름]** URL. 지정할 수도 있습니다 **[!UICONTROL 애플리케이션에 업로드]** 설정 및 **[!UICONTROL 기본 업로드 옵션]** 모두 특정 사용 사례를 기반으로 합니다.
 
 자세한 내용은 [Dynamic Media 일반 설정 구성](/help/assets/dm-general-settings.md).
 

@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: f76f02f97de477af80666ea76a499578c36fb09e
+source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
 workflow-type: tm+mt
 source-wordcount: '3450'
 ht-degree: 3%
@@ -24,7 +24,7 @@ ht-degree: 3%
 Dynamic Media 게시 설정 구성은 다음 경우에만 사용할 수 있습니다.
 
 * Scene7 모드에서 Dynamic Media을 실행하고 있습니다. 자세한 내용은 [Scene7 모드에서 Dynamic Media 활성화](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* 다음 항목이 있습니다. *기존* **[!UICONTROL Dynamic Media 구성]** (in) **[!UICONTROL Cloud Services]**) 내의 아무 곳에나 삽입할 수 있습니다.
+* 다음 항목이 있습니다. *기존* **[!UICONTROL Dynamic Media 구성]** (in) **[!UICONTROL Cloud Services]**)을 클릭하여 제품에서 사용할 수 있습니다.
 * 관리자 권한을 가진 Experience Manager 시스템 관리자입니다.
 
 Dynamic Media 게시 설정 은 숙련된 웹 사이트 개발자와 프로그래머가 사용하기 위한 것입니다. Adobe Dynamic Media에서는 이러한 게시 설정을 변경하는 사용자가 Adobe Dynamic Media, HTTP 프로토콜 표준 및 규칙, 기본 이미징 기술에 익숙할 것을 권장합니다.
