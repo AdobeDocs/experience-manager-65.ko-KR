@@ -8,10 +8,10 @@ breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature: Developing
 role: Developer
-source-git-commit: eda59d12d96ecc55bd58749985d2c15706344fe0
+source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 88%
+source-wordcount: '920'
+ht-degree: 87%
 
 ---
 
@@ -97,6 +97,7 @@ ht-degree: 88%
       + [xtype 사용(클래식 UI)](xtypes.md)
       + [양식 개발(클래식 UI)](developing-forms.md)
 + 헤드리스 환경 관리{#headless}
+   + [헤드리스 및 AEM](headless/introduction.md)
    + [AEM을 사용한 헤드리스 및 하이브리드](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [구성 요소에 대해 JSON 내보내기 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
    + SPA(Single Page Applications){#spas}
