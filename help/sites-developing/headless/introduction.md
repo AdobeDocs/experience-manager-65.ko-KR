@@ -1,9 +1,9 @@
 ---
 title: 'AEM 6.5 Sites용 헤드리스 개발 '
 description: 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 AEM 6.5의 강력한 헤드리스 기능이 함께 작동하여 경험을 중앙에서 관리하고 여러 채널에서 제공하는 방법을 살펴볼 수 있습니다.
-source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
+source-git-commit: 8c7acd06f3909897e5756170c606e00aead098b8
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 ## AEM 6.5 및 헤드리스 {#aem-headless}
 
-AEM as a Cloud Service 은 세 가지 강력한 서비스를 제공하여 헤드리스 구현 모델을 위한 유연한 도구입니다.
+AEM 6.5는 세 가지 강력한 서비스를 제공하여 헤드리스 구현 모델을 위한 유연한 도구입니다.
 
 1. 컨텐츠 모델
    * 컨텐츠 모델은 컨텐츠의 구조화된 표현입니다.
