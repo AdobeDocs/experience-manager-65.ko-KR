@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
+source-git-commit: f5989e182ee0d9075251b582fa618af5efcb9f8a
 workflow-type: tm+mt
 source-wordcount: '3450'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Dynamic Media 게시 설정 은 숙련된 웹 사이트 개발자와 프로그�
 
 Dynamic Media 게시 설정 페이지에서는 Dynamic Media Adobe 서버에서 웹 사이트 또는 응용 프로그램으로 자산을 전달하는 방법을 결정하는 기본 설정을 설정합니다. 설정이 지정되지 않은 경우 Adobe Dynamic Media 서버는 Dynamic Media 게시 설정 페이지에 구성된 기본 설정에 따라 자산을 전달합니다.
 
-참조 - [선택 사항 - Dynamic Media 설정 및 구성 - Scene7 모드 설정](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) 추가 선택적 구성 작업
+참조 - [선택 사항 - Dynamic Media 설정 및 구성 - Scene7 모드 설정](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) 추가 선택적 구성 작업
 
 >[!NOTE]
 >
