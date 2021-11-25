@@ -7,12 +7,12 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
-mini-toc-levels: 3
+mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b5835d16efb0f2112ec8a6917e8cf2529cbf19c7
+source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
 workflow-type: tm+mt
-source-wordcount: '6940'
+source-wordcount: '6080'
 ht-degree: 1%
 
 ---
@@ -128,20 +128,19 @@ Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더�
          * **[!UICONTROL 하위 폴더에 대해 사용 안 함]** - 이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다.
 
    >[!NOTE]
-   DMS7에서는 버전 관리를 지원하지 않습니다. 또한 지연된 활성화는 **[!UICONTROL 자산 게시]** Dynamic Media 구성 편집 페이지에서 이 **[!UICONTROL 활성화 시]**, 그리고 자산이 처음 활성화될 때까지 에만 해당합니다.
+   Dynamic Media - Scene7 모드에서는 버전 관리를 지원하지 않습니다. 또한 지연된 활성화는 **[!UICONTROL 자산 게시]** Dynamic Media 구성 편집 페이지에서 이 **[!UICONTROL 활성화 시]**, 그리고 자산이 처음 활성화될 때까지 에만 해당합니다.
    자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 실시간으로 게시됩니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 Dynamic Media에 연결하려면 Experience Manager 작성자 인스턴스를 &quot;&quot;허용 목록에 추가하다해야 합니다.
 
-   * 를 엽니다. [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)그런 다음 계정에 로그인합니다. 자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
-
-   * 페이지 오른쪽 상단 근처에 있는 탐색 막대에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**.
-
-   * 이미지 서버 게시 페이지의 게시 컨텍스트 드롭다운 목록에서 을 선택합니다 **[!UICONTROL 테스트 이미지 제공]**.
-   * 클라이언트 주소 필터에 대해 다음을 선택합니다. **[!UICONTROL 추가]**.
-   * 주소를 활성화(설정)하려면 확인란을 선택합니다. Experience Manager 작성자 인스턴스(Dispatcher IP 아님)의 IP 주소를 입력합니다.
-   * **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+   * Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
+   * 왼쪽 레일에서 를 선택합니다. **[!UICONTROL 도구]** 아이콘, 다음 위치로 이동 **[!UICONTROL 자산]** > **[!UICONTROL Dynamic Media 게시 설정]**.
+   * Dynamic Media 이미지 서버 페이지의 **[!UICONTROL 게시 컨텍스트]** 드롭다운 목록에서 **[!UICONTROL 테스트 이미지 제공]**.
+   * 을(를) 선택합니다 **[!UICONTROL 보안]** 탭.
+   * 대상 **[!UICONTROL 클라이언트 주소]**, 선택 **[!UICONTROL 추가]**.
+   * Experience Manager 작성자 인스턴스(Dispatcher IP 아님)의 IP 주소를 입력합니다.
+   * 페이지의 오른쪽 위 모서리에서 을(를) 선택합니다 **[!UICONTROL 저장]**.
 
 이제 기본 구성을 완료했습니다. Dynamic Media - Scene7 모드를 사용할 준비가 되었습니다.
 
@@ -212,7 +211,6 @@ Dynamic Media - Scene7 모드에서 기본 자산 업로드 파일 크기는 2GB
 1. 크기 제한을 원하는 최대 업로드 크기로 늘릴 수 있도록 적절한 값(바이트)을 입력합니다. 예를 들어 업로드 자산 크기 제한을 10GB로 늘리려면 를 입력합니다. `10737418240` 값 필드에 입력할 수 있습니다.
 최대 15GB(`2013265920` 바이트). 이 경우 15GB보다 큰 업로드된 자산은 업로드되지 않습니다.
 
-
    ![크기 제한 값](/help/assets/assets-dm/uploadassets15gb_c.png)
 
 1. CRXDE Lite 창의 왼쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 모두 저장]**.
@@ -248,85 +246,35 @@ Dynamic Media - Scene7 모드에서 기본 자산 업로드 파일 크기는 2GB
 
 ### (선택 사항) Dynamic Media 설정 및 구성 - Scene7 모드 설정 {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-실행 모드에 있는 경우 `dynamicmedia_scene7`Dynamic Media Classic 사용자 인터페이스를 사용하여 Dynamic Media 설정을 변경합니다.
+<!-- When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings. -->
 
-위의 작업 중 일부는 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)그런 다음 계정에 로그인합니다.
-
-설정 및 구성 작업은 다음과 같습니다.
-
-* [이미지 서버에 대한 게시 설정](#publishing-setup-for-image-server)
-* [응용 프로그램 일반 설정 구성](#configuring-application-general-settings)
+* [이미지 서버에 대한 Dynamic Media 게시 설정 구성](/help/assets/dm-publish-settings.md)
+* [Dynamic Media 일반 설정 구성](/help/assets/dm-general-settings.md)
 * [색상 관리 구성](#configuring-color-management)
 * [지원되는 형식에 대한 MIME 유형 편집](#editing-mime-types-for-supported-formats)
 * [지원되지 않는 형식에 대한 MIME 유형 추가](#adding-mime-types-for-unsupported-formats)
-* [일괄처리 집합 사전 설정을 만들어 이미지 세트 및 스핀 세트 자동 생성](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+* [일괄처리 집합 사전 설정을 만들어 이미지 세트 및 스핀 세트 자동 생성](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (Dynamic Media Classic 사용자 인터페이스에서 완료)
 
-#### 이미지 서버에 대한 게시 설정 {#publishing-setup-for-image-server}
+#### 이미지 서버에 대한 Dynamic Media 게시 설정 구성 {#publishing-setup-for-image-server}
 
-게시 설정 설정은 Dynamic Media에서 기본적으로 자산이 전달되는 방법을 결정합니다. 지정된 설정이 없으면 Dynamic Media은 게시 설정에 정의된 기본 설정에 따라 자산을 전달합니다. 예를 들어, 해상도 속성을 포함하지 않는 이미지 전달에 대한 요청에서 기본 개체 해상도 설정이 있는 이미지가 생성됩니다.
+Dynamic Media 게시 설정 페이지에서는 Dynamic Media Adobe 서버에서 웹 사이트 또는 응용 프로그램으로 자산을 전달하는 방법을 결정하는 기본 설정을 설정합니다.
 
-게시 설정을 구성하려면: Dynamic Media Classic에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 게시 설정]** > **[!UICONTROL 이미지 서버]**.
+자세한 내용은 [이미지 서버에 대한 Dynamic Media 게시 설정 구성](/help/assets/dm-publish-settings.md).
 
-이미지 서버 화면은 이미지 전달을 위한 기본 설정을 설정합니다. 각 설정에 대한 설명은 UI 화면을 참조하십시오.
+#### Dynamic Media 일반 설정 구성 {#configuring-application-general-settings}
 
-* **[!UICONTROL 요청 속성]** - 이러한 설정은 서버에서 전달할 수 있는 이미지에 제한을 적용합니다.
-* **[!UICONTROL 기본 요청 속성]** - 이 설정은 이미지의 기본 모양과 관련이 있습니다.
-* **[!UICONTROL 공통 축소판 속성]** - 이러한 설정은 축소판 이미지의 기본 모양과 관련이 있습니다.
-* **[!UICONTROL 카탈로그 필드의 기본값]**- 이 설정은 이미지의 해상도 및 기본 축소판 유형에 대한 설정입니다.
-* **[!UICONTROL 색상 관리 속성]** - 이러한 설정은 사용할 ICC 색상 프로파일을 결정합니다.
-* **[!UICONTROL 호환성 속성]** - 이 설정을 사용하면 이전 버전과의 호환성을 위해 텍스트 레이어의 선행 및 후행 단락을 버전 3.6의 단락과 동일하게 처리할 수 있습니다.
-* **[!UICONTROL 지역화 지원]** - 이 설정을 사용하면 여러 로케일 속성을 관리할 수 있습니다. 또한 로케일 맵 문자열을 지정하여 뷰어의 다양한 도구 설명에 대해 지원할 언어를 정의할 수 있습니다. 설정에 대한 자세한 정보 **[지역화 지원]**&#x200B;를 참조하십시오. [자산 현지화를 설정할 때의 고려 사항](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
+Dynamic Media 구성 **[!UICONTROL 게시 서버 이름]** URL 및 **[!UICONTROL 원본 서버 이름]** URL. 지정할 수도 있습니다 **[!UICONTROL 애플리케이션에 업로드]** 설정 및 **[!UICONTROL 기본 업로드 옵션]** 모두 특정 사용 사례를 기반으로 합니다.
 
-#### 응용 프로그램 일반 설정 구성 {#configuring-application-general-settings}
-
-응용 프로그램 일반 설정 페이지를 열려면 Dynamic Media Classic 전역 탐색 막대에서 다음 위치로 이동합니다 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 일반 설정]**.
-
-**[!UICONTROL 서버]** - 계정 프로비저닝 시 Dynamic Media에서 자동으로 회사에 할당된 서버를 제공합니다. 이러한 서버는 웹 사이트 및 애플리케이션에 대한 URL 문자열을 구성하는 데 사용됩니다. 이러한 URL 호출은 계정에만 적용됩니다. Adobe 고객 지원 센터에서 명시적으로 지시한 경우를 제외하고 서버 이름을 변경하지 마십시오.
-
-**[!UICONTROL 이미지 덮어쓰기]** - Dynamic Media에서는 두 파일의 이름이 같을 수 없습니다. 각 항목의 URL ID(파일 이름에서 확장자를 뺀 경우)는 고유해야 합니다. 다음 옵션은 교체 자산을 업로드하는 방법을 지정합니다. 원본과 중복이 되는지 여부 중복 자산은 &quot;-1&quot;로 이름이 변경됩니다(예를 들어 chair.tif는 chair-1.tif로 이름이 변경됨). 이러한 옵션은 원래 폴더와 다른 폴더에 업로드된 자산이나 원래 파일 확장명(예: JPG, TIF 또는 PNG)이 다른 자산에 영향을 줍니다.
-
-* **[!UICONTROL 현재 폴더에 동일한 기본 이미지 이름/확장명으로 덮어쓰기]** - 이 옵션은 교체를 위한 가장 엄격한 규칙입니다. 교체 이미지를 원본과 동일한 폴더에 업로드하고 교체 이미지의 파일 확장명이 원본과 동일해야 합니다. 이러한 요구 사항을 충족하지 않으면 복제본이 만들어집니다.
-
->[!NOTE]
-Experience Manager과 일관성을 유지하려면 항상 이 설정을 선택합니다. **현재 폴더에 동일한 기본 이미지 이름/확장명으로 덮어쓰기**
-
-* **[!UICONTROL 동일한 기본 자산 이름/확장에 있는 모든 폴더에 덮어쓰기]** - 대체 이미지의 파일 확장명이 원본 이미지와 동일해야 합니다(예: chair.jpg는 chair.tif가 아니라 chair.jpg로 대체해야 함). 그러나 대체 이미지를 원본과 다른 폴더에 업로드할 수 있습니다. 업데이트된 이미지는 새 폴더에 있습니다. 파일을 원래 위치에서 더 이상 찾을 수 없습니다.
-* **[!UICONTROL 확장에 관계없이 동일한 기본 자산 이름으로 모든 폴더에 덮어쓰기]** - 이 옵션은 가장 포괄적인 대체 규칙입니다. 대체 이미지를 원본과 다른 폴더에 업로드하고, 다른 파일 확장자를 가진 파일을 업로드하고, 원래 파일을 바꿀 수 있습니다. 원본 파일이 다른 폴더에 있는 경우 대체 이미지는 업로드된 새 폴더에 있습니다.
-
-**[!UICONTROL 기본 색상 프로필]** - 다음을 참조하십시오. [색상 관리 구성](#configuring-color-management) 추가 정보.
-
->[!NOTE]
-기본적으로, 선택하면 15개의 표현물이 표시됩니다 **[!UICONTROL 표현물]** 및 15개의 뷰어 사전 설정을 선택할 때 **[!UICONTROL 뷰어]** 를 클릭합니다. 이 제한을 늘릴 수 있습니다. 자세한 내용은 [표시되는 이미지 사전 설정 수를 늘립니다](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수를 늘립니다](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+자세한 내용은 [Dynamic Media 일반 설정 구성](/help/assets/dm-general-settings.md).
 
 #### 색상 관리 구성 {#configuring-color-management}
 
-Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할 수 있습니다. 색상 교정을 통해 수집된 자산은 색상 공간(RGB, CMYK, 회색)과 포함된 색상 프로파일을 유지합니다. 동적 변환을 요청하면 이미지 색상이 CMYK, RGB 또는 회색 출력을 사용하여 대상 색상 공간으로 수정됩니다. 자세한 내용은 [이미지 사전 설정 구성](/help/assets/managing-image-presets.md).
+Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할 수 있습니다. 색상 교정을 통해 수집된 자산은 색상 공간(RGB, CMYK, 회색)과 포함된 색상 프로파일을 유지합니다. 동적 변환을 요청하면 이미지 색상이 CMYK, RGB 또는 회색 출력을 사용하여 대상 색상 공간으로 수정됩니다.
 
-이미지를 요청할 때 색상 교정이 활성화되도록 기본 색상 속성을 구성하려면:
+자세한 내용은 [이미지 사전 설정 구성](/help/assets/managing-image-presets.md).
 
-1. 를 엽니다. [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)그런 다음 프로비저닝 중에 제공된 자격 증명을 사용하여 계정에 로그인합니다.
-1. 다음으로 이동 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]**.
-1. 를 확장합니다. **[!UICONTROL 게시 설정]** 영역 및 선택 **[!UICONTROL 이미지 서버]**. 설정 **[!UICONTROL 게시 컨텍스트]** to **[!UICONTROL 이미지 제공]** 게시 인스턴스의 기본값을 설정할 때
-1. 변경할 속성으로 스크롤합니다. 예를 들어 **[!UICONTROL 색상 관리 속성]** 영역.
-
-   다음 색상 교정 속성을 설정할 수 있습니다.
-
-   * **[!UICONTROL CMYK 기본 색상 공간]** - 기본 CMYK 색상 프로파일의 이름
-   * **[!UICONTROL 회색 음영 기본 색상 공간]** - 기본 회색 색상 프로필의 이름
-   * **[!UICONTROL RGB 기본 색상 공간]** - 기본 RGB 색상 프로필의 이름
-   * **[!UICONTROL 색상 변환 렌더링 의도]** - 렌더링 의도를 지정합니다. 허용되는 값은 다음과 같습니다. **[!UICONTROL 지각]**, **[!UICONTROL 상대 콜론]**, **[!UICONTROL 채도]**, **[!UICONTROL 절대 동량체]**. Adobe 권장 사항 **[!UICONTROL 상대적]** 을 기본값으로 사용합니다.
-
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-
-예를 들어 **[!UICONTROL RGB 기본 색상 공간]** to *sRGB*, 및 **[!UICONTROL CMYK 기본 색상 공간]** to *WebCoated*.
-
-이렇게 하면 다음 작업이 수행됩니다.
-
-* RGB 및 CMYK 이미지에 색상 교정을 활성화합니다.
-* 색상 프로필이 없는 RGB 이미지는 *sRGB* 색상 공간.
-* 색상 프로파일이 없는 CMYK 이미지는 *WebCoated* 색상 공간.
-* RGB 출력을 반환하고 *sRGB* 색상 공간.
-* CMYK 출력을 반환하는 동적 표현물 *WebCoated* 색상 공간.
+>[!NOTE]
+기본적으로, 선택하면 15개의 표현물이 표시됩니다 **[!UICONTROL 표현물]** 및 15개의 뷰어 사전 설정을 선택할 때 **[!UICONTROL 뷰어]** 를 클릭합니다. 이 제한을 늘릴 수 있습니다. 자세한 내용은 [표시되는 이미지 사전 설정 수를 늘립니다](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수를 늘립니다](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### 지원되는 형식에 대한 MIME 유형 편집 {#editing-mime-types-for-supported-formats}
 
@@ -458,6 +406,8 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
    * 선택 **[!UICONTROL 저장]** 기존 사전 설정을 편집하는 경우
 
 ##### 배치 집합 사전 설정 만들기
+
+
 
 Dynamic Media은 일괄처리 집합 사전 설정을 사용하여 뷰어에 표시할 이미지 세트(대체 이미지, 색상 옵션, 360spin)로 자산을 구성합니다. 일괄처리 집합 사전 설정은 Dynamic Media의 자산 업로드 프로세스와 함께 자동으로 실행됩니다.
 
