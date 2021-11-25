@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
+source-git-commit: e68f6203d7629cab16e59778ce64908f943d5b3f
 workflow-type: tm+mt
 source-wordcount: '2789'
 ht-degree: 1%
 
 ---
+
 
 # 컨텐츠 조각 사용자 지정 및 확장{#customizing-and-extending-content-fragments}
 
@@ -226,9 +227,9 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
    >
    >AEM 번역 워크플로우는에서 작동합니다. `/content`:
    >
-   >    * 컨텐츠 조각 모델은 `/conf`에는 이러한 번역이 포함되지 않습니다. 다음을 수행할 수 있습니다 [UI 문자열 다국어화](/help/sites-developing/i18n-dev.md).
+   >* 컨텐츠 조각 모델은 `/conf`에는 이러한 번역이 포함되지 않습니다. 다음을 수행할 수 있습니다 [UI 문자열 다국어화](/help/sites-developing/i18n-dev.md).
    >
-   >    * 템플릿이 복사되어 조각을 생성되므로 이것은 암시적입니다.
+   >* 템플릿이 복사되어 조각을 생성되므로 이것은 암시적입니다.
 
 
 * **메타데이터 스키마**
