@@ -4,14 +4,367 @@ description: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5 서비스 
 contentOwner: AK
 mini-toc-levels: 2
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: af5b8c6c795445c66b730a9cdcf53817ef0c586e
+source-git-commit: 45673270ec839377f941860c098f965f7b35c59e
 workflow-type: tm+mt
-source-wordcount: '23189'
-ht-degree: 50%
+source-wordcount: '26608'
+ht-degree: 44%
 
 ---
 
 # 이전 서비스 팩에 포함된 핫픽스 및 기능 팩 {#hotfixes-and-feature-packs-included-in-previous-service-packs}
+
+## [!DNL Adobe Experience Manager] 6.5.10.0 {#experience-manager-65100}
+
+[!DNL Adobe Experience Manager] 6.5.10.0에는 2019년 4월 6.5 릴리스의 공식 출시 이후 릴리스된 새로운 기능, 주요 고객이 요청한 향상된 기능 및 성능, 안정성, 보안 개선 사항이 포함됩니다. 서비스 팩이 [!DNL Adobe Experience Manager] 6.5.
+
+에 도입된 주요 기능 및 개선 사항 [!DNL Adobe Experience Manager] 6.5.10.0:
+
+* **향상된 기능 [!DNL Content Fragment] 모델 및 편집기**: 이제 중첩된 구조를 사용하여 구조화된 컨텐츠에 대해 복잡한 사용자 지정 모델을 만들 수 있습니다 [!DNL Content Fragment] 모델. 컨텐츠 구조는 하위 조각으로 모델링된 기본 요소로 모듈화됩니다. 높은 수준 조각이 이러한 하위 조각을 참조합니다. 고급 유효성 검사 규칙과 같은 더 많은 데이터 유형 개선 사항을 통해 컨텐츠 모델링의 유연성을 높일 수 있습니다 [!DNL Content Fragments]. 다음 [!DNL Experience Manager] [!DNL Content Fragment] 편집기는 구조 트리 보기 및 조각 계층을 통한 탭 탐색 표시 탐색과 같은 향상된 기능을 사용하여 공통 편집기 세션에서 중첩된 조각 구조를 지원합니다.
+
+* **GraphQL API 대상[!DNL Content Fragments]**: 새로운 GraphQL API는 구조화된 컨텐츠를 JSON 형식으로 제공하는 표준 방법입니다. GraphQL 쿼리를 사용하면 클라이언트가 경험을 렌더링하기 위해 관련 콘텐츠 항목만 요청할 수 있습니다. 이러한 선택을 통해 클라이언트 측에서 컨텐츠 구문 분석이 필요한 컨텐츠 over-delivery(HTTP REST API의 경우 가능성)가 제거됩니다. GraphQL 스키마는 [!DNL Content Fragment] 모델 및 API 응답은 JSON 형식으로 이루어집니다. in [!DNL Experience Manager] 로서의 [!DNL Cloud Service], [GraphQL 쿼리가 유지됩니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) 그리고 프로세스 캐시 친화적인 GET 요청을 처리합니다. 아직 에서는 불가능합니다 [!DNL Experience Manager] 6.5.10.0.
+
+* **계층 관리 및 향후 미리 보기**: 이제 사용자에게 컨텐츠 구조에 액세스할 수 있는 인터페이스가 제공됩니다 [!DNL Experience Manager] 론치에서 페이지를 추가 및 제거하는 기능을 포함한 론치입니다. 이 기능은 [!DNL Experience Manager] 향후 게시를 위해 타깃팅된 컨텐츠 버전을 작성할 론치입니다. [타임워프 기능](/help/sites-authoring/working-with-page-versions.md#timewarp) launch를 향후 컨텐츠 상태로 미리 볼 수 있습니다.
+
+* **연결된 자산**: [!DNL Experience Manager] extends [!DNL Connected Assets] 기능을 [!DNL Dynamic Media] 해당 핵심 구성 요소의 이미지. 자세한 내용은 [연결된 자산 사용](/help/assets/use-assets-across-connected-assets-instances.md).
+
+* **링크 공유 옵션을 사용하여 자산 또는 표현물을 다운로드합니다**: 자산 및 컬렉션을 링크로 공유할 때 사용자는 원본 자산의 다운로드를 허용할지, 렌디션을 허용할지 또는 공유 링크를 사용하여 둘 다 다운로드하도록 허용할지를 선택할 수 있습니다. 또한 링크를 통해 공유된 자산을 다운로드하는 사용자는 원본 자산만, 표현물만 또는 두 가지 모두를 다운로드할 수 있습니다.
+
+* **생성된 하위 자산 제한**: 관리자는 [!DNL Experience Manager] PDF, PowerPoint, InDesign 및 Keynote 파일과 같은 복합 자산에 대해 를 생성합니다. 자세한 내용은 [조합 자산 관리](/help/assets/managing-linked-subassets.md#generate-subassets).
+
+* **Camera Raw 지원**: 새로운 [!DNL Camera Raw] 를 지원하는 패키지를 사용할 수 있습니다. [!DNL Adobe Camera Raw] v10.4. 참조: [를 사용하여 이미지 처리 [!DNL Camera Raw]](/help/assets/camera-raw.md).
+
+* 내장된 저장소(Apache Jackrabbit Oak)가 1.22.8.
+
+* **접근성 개선**:
+
+   * [!DNL Dynamic Media] 에서는 뷰어에 대해 많은 액세스 가능성이 개선되었습니다. 자세한 내용은 [[!DNL Dynamic Media] 업데이트](#dynamic-media-65100).
+
+   * Platform은 몇 가지 액세스 가능성이 개선되었습니다. 자세한 내용은 [플랫폼 업데이트](#platform-65100).
+
+* **사용자 환경 개선 사항**:
+
+   * [!DNL Experience Manager] 컨텐츠 작성자가 파일 구조를 탐색하지 않고도 폴더 아래에 모든 컨텐츠 모델의 목록을 직접 표시합니다. 이제 이 기능을 사용하려면 클릭이 적고 작성 효율성이 향상됩니다.
+
+   * 의 경로 필드 [!DNL Sites] 편집기에서 작성자가 자산을 드래그할 수 있습니다 [!DNL Content Finder].
+
+* 에 대한 지원이 추가되었습니다 `GuideBridge#getGuidePath` 의 API [!DNL AEM Forms].
+
+* 이제 Automated forms conversion 서비스를 사용하여 다음을 수행할 수 있습니다 [프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어로 PDF forms 변환](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html#language-specific-meta-model) 적응형 양식에 추가할 수 있습니다.
+
+* **속성 브라우저의 오류 메시지**: 응용 Forms 속성 브라우저에 각 속성에 대한 오류 메시지가 추가되었습니다. 이러한 메시지는 필드에 대해 허용되는 값을 이해하는 데 도움이 됩니다.
+
+* **리터럴 옵션을 사용하여 JSON 유형 변수에 대한 값을 설정할 수 있도록 지원합니다**: AEM Workflow의 설정 변수 단계에서 리터럴 옵션을 사용하여 JSON 유형 변수의 값을 설정할 수 있습니다. 리터럴 옵션을 사용하면 문자열 형태로 JSON을 지정할 수 있습니다.
+
+* [플랫폼 업데이트](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE에서 다음 플랫폼에 대한 지원을 추가했습니다.
+   * [!DNL Adobe Acrobat 2020]
+   * [!DNL Ubuntu 20.04]
+   * [!DNL Open Office 4.1.10]
+   * [!DNL Microsoft Office 2019]
+   * [!DNL Microsoft Windows Server 2019]
+   * [!DNL RHEL8]
+
+에 도입된 모든 기능 및 개선 사항 목록 [!DNL Experience Manager] 6.5.10.0 [의 새로운 기능 [!DNL Adobe Experience Manager] 6.5 서비스 팩 10](new-features-latest-service-pack.md).
+
+다음은 [!DNL Experience Manager] 6.5.10.0 릴리스에서 제공된 수정 사항 목록입니다.
+
+### [!DNL Sites] {#sites-65100}
+
+* 에 입력하는 동안 포커스가 다른 필드로 이동합니다. **[!UICONTROL 기본값]** 아래의 필드 **[!UICONTROL 속성]** 컨텐츠 조각 편집기의 탭(NPR-36992).
+
+* 필터링하는 동안 [!DNL Content Fragment] 지정된 경로 아래의 모델, [!DNL Experience Manager] search: `cq:Template` 에 대해서만 경로 및 노드를 반환하는 대신 [!DNL Content Fragment] 모델(SITES-1453).
+* [!DNL Content Fragments] return `null` 를 폴더 상태로 설정합니다(SITES-1157).
+* [!DNL Experience Manager] 사용자가 비활성화하고 활성화하도록 허용하지 않음 [!DNL Content Fragment] 모델(SITES-1088).
+* 사용자가 이동, 이름 변경 또는 삭제할 때 [!DNL Content Fragments] 참조한 미디어 자산 [!DNL Content Fragments] 자동으로 업데이트되지 않습니다(SITES-196).
+* 한 페이지에서 다른 페이지에 구성 요소를 붙여넣으면 JavaScript 오류가 발생합니다(NPR-37030).
+* 페이지 속성을 빠르게 보면 다른 페이지에 대한 페이지 속성 이 열립니다(NPR-37025).
+* 컨텐츠 조각을 사용하면 컨텐츠 조각이 자신을 참조할 수 있습니다. 선택기가 작업을 지원하지 않습니다(NPR-36993).
+* 서비스 팩 9로 업그레이드한 후 일부 사용자는 Experience Manager에서 폴더를 이동할 수 없으며 로그에 오류가 표시됩니다(SITES-1481).
+* 편집 모드의 레이아웃 컨테이너에서 구성 요소의 너비를 조정하는 동안 깜박임이 관찰됩니다(NPR-36961).
+* 론치 홍보 시, 판촉된 론치의 변경 사항은 다른 론치에 두 번 롤아웃됩니다. 사용자가 이중 롤아웃된 론치를 홍보하면 두 개의 컨텐츠가 소스 페이지에 반영됩니다(NPR-36893).
+* [!DNL Experience Manager] 이미지 코어 구성 요소를 사용하여 페이지에 이미지를 추가하거나 기초 이미지 구성 요소를 사용하여 크기를 조정하는 경우 투명도가 있는 일부 PNG 이미지에 회색 테두리를 추가합니다(NPR-36879).
+* [!DNL Experience Manager Sites] 템플릿이 많은 관리자 UI가 있으면 탐색 속도가 느려집니다(NPR-36870).
+* 서비스 팩 9로 업그레이드하면 일부 구성 요소가 작성되지 않습니다. 이 문제로 인해 [!DNL Sites] 사용자가 새 페이지를 만듭니다(NPR-36857).
+* 다음 `ContextHubImpl` 메서드 만들기 `ResourceResolver` 닫히지 않았습니다. 이로 인해 장기간 실행 시 경고 메시지가 표시됩니다 `ResourceResolver` 및 서비스가 때때로 예기치 않은 결과를 반환합니다(NPR-36853).
+* 블루프린트 페이지 속성에서 단일 Live Copy를 동기화할 때 다른 모든 Live Copy도 동기화됩니다(NPR-36829, NPR-36522).
+* XLS MIME 유형만 사용하는 경우 파일 업로드 기능이 예상대로 작동하지 않습니다(NPR-36785).
+* 파스칼 대/소문자를 사용하는 새 태그는 내의 태그 필드에 모든 대문자 단어가 표시되지 않습니다 [!DNL Content Fragments] (NPR-36742).
+* 추가 시 단일 텍스트 요소 옵션 [!DNL Content Fragment] 이로 인해 텍스트가 누락되고 목록 및 중첩 목록과 관련된 홀수 서식이 만들어집니다(NPR-36565).
+* 작성자가 페이지의 구성 요소에 주석을 달고, 구성 요소를 삭제하고, 삭제 작업에 대한 실행 취소를 수행하면 사이트 콘솔에서 페이지의 타임라인 데이터를 확인하려고 할 때 오류가 발생합니다(NPR-36528).
+* 페이지 속성 벌크 편집기 [!UICONTROL 저장 및 닫기] 옵션이 변경 사항을 저장하지만 편집기를 닫지 않습니다(NPR-36527).
+* 사용자가 새 텍스트 구성 요소를 페이지에 끌어다 놓으려고 하면 구성 요소가 즉시 사라집니다(NPR-36442).
+* 사용자가 공간(시스템에 없는 태그)이 포함된 온디맨드 태그에 입력하고 enter 키를 누르면 태그가 필드 아래에 나타납니다. 하지만, [!DNL Content Fragment] 가 저장 및 다시 열리면서 온디맨드 태그가 표시되지 않습니다(NPR-36441).
+* Dispatcher를 통해 인스턴스에 액세스하면 템플릿을 삭제할 수 없습니다(NPR-36385).
+* 페이지를 이동할 때 변경 사항을 렌더링하려면 브라우저를 수동으로 새로 고쳐야 합니다(NPR-36381).
+* 구성 요소를 선택할 때 Ctrl+X 또는 Ctrl+C(Mac에서 Command+X 또는 Command+C)를 사용하여 구성 요소를 잘라내거나 복사할 수 있습니다. 다른 구성 요소를 클릭하면 도구 모음을 사용하여 붙여넣을 수 있지만 키보드(Ctrl+V 또는 Command+V)는 붙여넣을 수 없습니다(NPR-36379).
+* 사용자가 가위 아이콘을 사용하여 구성 요소를 잘라내어 다른 위치로 이동하려고 하면 콘솔 오류가 발생합니다. 또한 구성 요소를 한 개만 붙여넣을 경우 이동됩니다(NPR-36378).
+* [!DNL Experience Manager] wcm 또는 알림에 색인이 없는 쿼리가 있으면 성능이 저하됩니다(NPR-36303).
+* 작성자가 삭제된 상속된 구성 요소에서 상속을 복원할 때 사용 가능한 옵션은 모든 페이지 컨텐츠를 동기화하는 것입니다. 상속이 한 구성 요소에서만 복원되는 경우에도 컨텐츠 작성자는 전체 페이지를 동기화해야 합니다. 전체 동기화를 수행하면 원치 않는 콘텐츠가 동기화될 수 있습니다(NPR-34456, CQ-4310183).
+* 작성자 인스턴스에서 구성 요소의 라이브 사용량 이 모든 발생을 표시하지 않습니다. 일부 구성 요소는 1000개 이상의 페이지에서 사용되지만 보고서에는 약 40페이지만 표시됩니다(CQ-4323724).
+* 하위 페이지가 많은 사이트 구조가 있는 경우 열 보기에서 하위 페이지를 로드하는 데 Experience Manager 6.4.8.2와 비교하여 Experience Manager 6.5.8에서 더 많은 시간이 소요됩니다(CQ-4322766).
+* &#39;페이지 롤아웃&#39; 옵션에서 &#39;모두&#39;가 작동하지 않습니다(NPR-37070).
+* 페이지의 기존 v3 구성 요소 버전을 열 때 페이지 속성 대화 상자가 열리지 않고 `NullPointerException` 가 기록됩니다(SITES-1830).
+
+### [!DNL Assets] {#assets-65100}
+
+다음 문제는에서 수정되었습니다 [!DNL Assets]:
+
+* 속성 값 `jcr:title` 폴더가 이동되면 게시 인스턴스에서 업데이트되지 않습니다. 작성자 내에서 폴더 이름을 변경하고 다시 게시해도 `jcr:title` 게시 인스턴스에서 동일한 속성 값입니다(NPR-36369).
+
+* 두 개 이상의 자산을 선택하고 하나 이상의 메타데이터 필드를 편집하면 Safari 브라우저의 오류 코드 500으로 저장 작업이 실패합니다(NPR-36413).
+
+* 잘못된 날짜 포맷으로 인해 벌크 메타데이터 가져오기에 실패합니다(NPR-36428).
+
+* 에서 을(를) 선택하면 [!UICONTROL 속성] 메타데이터를 업데이트하는 페이지에 스키마에서 제공하는 옵션이 많이 있으면 인터페이스가 느리게 응답합니다(NPR-36430).
+
+* 을 사용하여 검색 필터 [!UICONTROL 만료 상태] 조건부가 작동하지 않습니다(NPR-36436).
+
+* 의 다양한 필드에 대한 팝업 메뉴 [!UICONTROL 폴더 메타데이터] 속성은 마지막으로 선택한 값을 표시하지 않습니다(NPR-36937, CQ-4314429).
+
+* 파일 및 폴더를 검색할 때 사용자가 필터를 적용하고 [!UICONTROL 파일 및 폴더]에는 파일만 표시되지만 폴더는 표시되지 않습니다(CQ-4319543, NPR-36627).
+
+* 도구 모음 옵션은 폴더 내에서 동일한 컬렉션을 선택하고 검색 결과에서 선택되면 다릅니다(NPR-36620).
+
+* 다음 [!UICONTROL 빠른 게시] 검색 결과 페이지에서 옵션을 사용할 수 없습니다(NPR-36904, CQ-4317748).
+
+* 사용자가 확장을 지정하지 않고 자산의 Live Copy를 만들면 Live Copy 파일을 다운로드한 후에는 사용할 수 없습니다(NPR-36903, CQ-4326305).
+
+* 사용자가 하위 폴더의 소유자로 추가되면 사용자는 상위 폴더의 소유자 권한도 부여받아 상위의 다른 하위 폴더도 갖게 됩니다. 또한 사용자를 제거하려고 할 때 상위 폴더의 소유자로 제거되지 않습니다. (NPR-36801, CQ-4323737).
+
+* [!DNL Experience Manager] powerPoint 프레젠테이션과 같은 복합 자산에 대한 하위 자산을 만들려고 하면 메모리 부족 예외가 발생합니다(NPR-36668).
+
+* 게시된 사이트 페이지에서 이미 사용된 자산을 이동하면 게시할 옵션이 선택되어 있지 않더라도 사이트 페이지가 다시 게시됩니다(NPR-36636, CQ-4323500).
+
+* Apache Tika MIME 유형 탐지 기능을 사용할 때 를 사용하여 업로드한 자산입니다. `AssetManager.createAsset` 메서드, 이름이 인 임시 파일 남기기 `apache-tika-*.tmp` 파일을 임시 디렉토리에 저장합니다. 이 임시 파일은 사용 가능한 모든 디스크 공간을 사용합니다(NPR-36545).
+
+* 모든 DRM 보호 자산이 다운로드되고 특정 자산을 다운로드할 사용자 선택이 수행되지 않습니다(CQ-4327422).
+
+* 자산을 로 드래그할 수 없습니다. `pathfield` (NPR-36849)을 참조하십시오.
+
+* 열 보기에서 자산을 선택하면 자산 세부 사항 패널이 사라집니다(NPR-36667).
+
+### [!DNL Dynamic Media] {#dynamic-media-65100}
+
+**접근성 개선**
+
+다음과 같은 액세스 가능성이 개선되었습니다. [!DNL Dynamic Media Viewers].
+
+* 이제 화면 판독기는 검색할 자리 표시자 텍스트에 나레이션을 지정하고 링크 대화 상자로 자산 공유 시 필수 필드로 이메일 주소를 추가하고 또한 [!UICONTROL 이 필드를 기입해 주십시오] 도구 설명(CQ-4327761).
+
+* 이제 화면 판독기에서 [!UICONTROL 이미지 사전 설정 편집기] 키보드를 사용하여 사용자 인터페이스 필드에 액세스할 때(CQ-4325677).
+
+* 이제 키보드 포커스가 의 검색 탭으로 적절하게 이동합니다. [!UICONTROL 뷰어 사전 설정] 자산 선택기의 대화 상자 [!UICONTROL 리치 미디어 유형] 옵션(CQ-4324736).
+
+* 키보드 키를 사용하여 양식 모드로 이동할 때 화면 판독기는 증가 및 감소 옵션에 해당하는 레이블의 내레이션을 수행합니다 [!UICONTROL 만들기] 탭 [!UICONTROL 이미지 사전 설정] (CQ-4323900).
+
+* 이제 화면 판독기에 가 표시됩니다 [!UICONTROL 이메일 주소 검색 및 추가] 링크로 자산 공유 대화 상자의 옵션(CQ-4323352).
+
+* 키보드 키를 사용하여 자산을 탐색할 때 도구 모음에 키보드 포커스가 유지됩니다(CQ-4322037).
+
+* 이제 화면 판독기에서 새로 추가된 내용에 대해 나레이트합니다 [!UICONTROL 편집] 선택 후 필드 정보 [!UICONTROL 자르기 추가] 내 옵션 [!UICONTROL 응답형 이미지 자르기] on [!UICONTROL 이미지 처리 프로필 편집] 페이지(CQ-4290734).
+
+* 설정 [!UICONTROL 이미지 사전 설정 편집] 및 [!UICONTROL 대화형 비디오 만들기] 이제 페이지, 화면 판독기에서 제목 키보드 단축키 를 사용하여 페이지를 탐색할 때 페이지 머리글을 적절히 알려줍니다(CQ-4290730)(CQ-4290701).
+
+* 이제 화면 판독기에서 다음 페이지를 탐색할 때 랜드마크 및 영역 단축키를 사용하여 화면의 다양한 영역(예: 오른쪽 패널 영역, 왼쪽 패널, 작업 도구 모음, 뷰어 도구 모음 랜드마크 및 확대/축소 가능한 이미지 랜드마크)을 인식할 수 있습니다.
+
+   * [!UICONTROL 뷰어 사전 설정 편집기] (CQ-4290729)
+
+   * [!UICONTROL 이미지 세트 편집기] (CQ-4290710)
+
+   * [!UICONTROL 대화형 비디오 만들기] (CQ-4290702).
+
+* 이제 화면 판독기에서 아래쪽 화살표 키를 사용하여 탐색할 때 비디오 프레임에 공유 옵션의 이름이 표시됩니다(CQ-4290728).
+
+* 이제 화면 판독기에서 의 다양한 옵션에 대한 이름을 내레이션합니다 [!UICONTROL Sprite] 및 [!UICONTROL 배경] 탭 [!UICONTROL 모양] 탭 [!UICONTROL 뷰어 사전 설정 편집기] (CQ-4290727).
+
+* 편집할 필드와 같은 필수 필드 [!UICONTROL 너비]에서 [!UICONTROL 기본] 탭 [!UICONTROL 비디오 인코딩 편집] 페이지에는 이제 별표 기호(*)가 있습니다(CQ-4290725).
+
+* 이제 화면 판독기에 의 옵션에 대한 레이블이 표시됩니다 [!UICONTROL 이미지 프로필] 페이지(CQ-4290723).
+
+* 이제 Windows 사용자는 확장된 CSS 편집기 를 [!UICONTROL 뷰어 사전 설정 편집기] css 편집기에 포커스가 있는 경우(CQ-4290720).
+
+* 설정 [!UICONTROL 기본] 탭 [!UICONTROL 이미지 사전 설정 편집] 이제 양식 모드에서 탐색할 때 화면 판독기에서 다양한 편집 필드 및 옵션에 대한 레이블에 내레이션이 적용됩니다(CQ-4290717).
+
+* 이제 화면 판독기는 자산의 세부 사항 페이지에서 왼쪽 탐색 영역에서 사용자 인터페이스 옵션에 대한 역할 및 상태(선택 또는 선택되지 않음)에 내레이션합니다(CQ-4290709).
+
+* 이제 화면 판독기에서 이미지의 상태(선택 또는 선택 안 함)를 올바르게 내레이트하고 [!UICONTROL 컨텐츠] 탭 [!UICONTROL 대화형 비디오 만들기] 페이지(CQ-4290707).
+
+* 이제 화면 판독기는 의 아래쪽 화살표 키를 사용하여 탐색할 때 비디오 타임라인 배율에 있는 다양한 세그먼트의 이름, 역할 및 상태에 내레이션이 올바르게 적용됩니다 [!UICONTROL 대화형 비디오 만들기] 페이지(CQ-4290706).
+
+* 이제 화면 판독기에서 옵션을 탐색할 때 이름, 역할 및 기본 상태(선택 또는 선택되지 않음)와 속성에 내레이션이 적용됩니다 [!UICONTROL 대화형 비디오 만들기] 페이지(CQ-4290704).
+
+* 이제 화면 판독기에서 의 옵션 이름, 역할 및 기본 상태(선택 또는 선택되지 않음)에 내레이션이 적용됩니다 [!UICONTROL 모든 자산] 및 [!UICONTROL 모든 컬렉션] 선택 사항 [!UICONTROL 게시] 페이지(CQ-4290705).
+
+* 에서 지원되지 않는 비디오 형식(MP4 제외)을 업로드할 때 [!UICONTROL 대화형 비디오 만들기] 페이지가 표시되고 Experience Manager에 오류 메시지가 표시됩니다(CQ-4290700).
+
+* 타임라인에서 숫자(초)의 대비가 켜집니다 [!UICONTROL 대화형 비디오 만들기] 이제 페이지가 필요한 최소 광도 비율을 충족하므로 색상을 인식하지 못하는 사용자가 쉽게 읽을 수 있습니다(CQ-4290699).
+
+* 이제 화면 판독기에 의 레이블이 표시됩니다 [!UICONTROL 제품 이름] 탐색 시 필드 [!UICONTROL 대화형 비디오 만들기] 페이지(CQ-4290697).
+
+**해결된 문제**
+
+다음 버그 수정은에서 사용할 수 있습니다. [!DNL Dynamic Media].
+
+* 업로드한 비디오 [!DNL Experience Manager] 디스플레이 `Process failed` after `dynamicmedia_scene7` runmode가 활성화되고 동기화가 비활성화됩니다(CQ-4327791).
+
+### 플랫폼 {#platform-65100}
+
+이 서비스 팩에는 다음과 같은 향상된 기능이 제공됩니다.
+
+* 사용자가 트리 보기에서 항목을 선택하면 화면 판독기에 선택 사항과 맨 위에 표시되는 도구 모음 옵션이 표시됩니다(NPR-36504).
+* 광도 비율이 필요한 최소 4.5:1 비율을 충족하므로 일부 텍스트 및 컨트롤 이름은 비전 문제가 있는 사용자가 쉽게 읽을 수 있습니다(NPR-36503).
+* 사용자가 달력 컨트롤을 사용하면 화면 판독기에서 설명 날짜, 월 및 요일 정보에 내레이션이 적용됩니다. 사용자가 달력 단축키를 사용하면 화면 판독기에 날짜, 월 및 연도의 변경 내용이 내레이션됩니다(NPR-36498).
+* 사용자 지정 JavaScript를 실행하도록 지원되는 경우 `Clientlibs` 엄격한 모드를 사용하지 않고 ECMAScript 6 기능 사용. 특히, `emitUseStrict` 플래그가 `GCCScriptProcessor` (NPR-36411).
+
+다음 버그 수정이 이 서비스 팩의 일부입니다.
+
+* 사용자 지정 상태 검사가 예약보다 더 자주 실행됩니다(NPR-36985).
+* 다음 `Resourceresolver map` 메서드는 별칭 페이지에 대해 잘못된 결과를 반환합니다(NPR-36767).
+* [!DNL Experience Manager] 워크플로우 로드로 인해 시작 지연이 발생합니다(NPR-36615).
+
+### 통합 {#integrations-65100}
+
+* 기본 MongoDB 노드가 다른 노드로 전환되면 Experience Manager이 응답하지 않습니다(NPR-36566).
+* [!DNL Sling content distribution] 컬렉션 구성원 삭제 작업을 수행할 때 실패합니다(NPR-36521, CQ-4323578).
+
+### 사용자 인터페이스 {#user-interface-65100}
+
+* 다음 **[!UICONTROL 참조]** 사이드 패널에는 자산 및 사이트 참조가 표시되지 않습니다(GRANITE-35078, GRANITE-34892).
+
+### 번역 프로젝트 {#translation-65100}
+
+* 다중 번역 프로젝트의 언어 복사본에 추가 하위 페이지가 삭제됩니다(NPR-36622).
+
+### 워크플로 {#workflow-65100}
+
+* 서버가 부재 중 메시지를 받으면 메모리 경고를 보고하고 응답을 중지합니다(NPR-36768).
+
+### [!DNL Communities] {#communities-65100}
+
+* 커뮤니티 사이트 페이지가 여는 위치 `LoggedIn` 익명 게스트 사용자에 대한 상태입니다(NPR-36908).
+
+* 에 페이지가 두 개 이상 있는 경우 **[!UICONTROL 커뮤니티]** > **[!UICONTROL 아이디어]** > **[!UICONTROL 댓글]** 페이지에서 페이지 탐색 기능이 작동하지 않습니다(NPR-36541).
+
+<!--
+Need to verify with Engineering, the status is currently showing as Resolved
+-->
+
+
+<!--
+### [!DNL Brand Portal] {#brandportal-65100}
+
+*
+-->
+
+### [!DNL Forms] {#forms-65100}
+
+
+>[!NOTE]
+>
+>* [!DNL Experience Manager Forms] 는 예약된 후 1주일 후에 추가 기능 패키지를 출시합니다 [!DNL Experience Manager] 서비스 팩 릴리스 날짜입니다.
+
+
+[!DNL AEM 6.5.10.0 Forms] 에는 다음 버그 수정 사항이 포함되어 있습니다.
+
+* 설치 시 [!DNL AEM 6.5 Forms]로 지정하는 경우 다음 타사 라이브러리가 자동으로 설치됩니다(CQDOC-18373).
+   * [!DNL Microsoft Visual C++ 2008 Service Pack 1 (x86)]
+   * [!DNL Microsoft Visual C++ 2010 Service Pack 1 (x86)]
+
+**적응형 양식**
+
+* 적응형 양식의 필드 값에 대해 수행된 유효성 검사가 성공하면 [!DNL AEM Forms] 양식 데이터 모델을 호출하지 못했습니다(CQ-4325491).
+
+* 번역 프로젝트에 언어 사전을 추가한 다음 프로젝트를 열면 [!DNL AEM Forms] 오류 메시지를 표시합니다(CQ-4324933).
+
+   ```TXT
+   Uncaught TypeError: Cannot read property 'PROJECT_LISTING_PATH' of undefined
+   at openButtonClickHandler (clientlibs.js:245)
+   at HTMLButtonElement.onclick (clientlibs.js:258)
+   ```
+
+* 설치 후 성능 문제 [!DNL AEM Forms] 서비스 팩 7(CQ-4326828).
+
+**서신 관리**
+
+* 에서 문자 표시 지연 [!UICONTROL 데이터] 탭과 HTML 편지 미리 보기(NPR-37020)에서 사용할 수 있습니다.
+
+* 텍스트 문서 조각을 편집하는 경우 조각을 저장한 후 새 단어가 HTML 태그로 표시됩니다(NPR-36837).
+
+* 초안으로 저장된 문자를 볼 수 없습니다(NPR-36816).
+
+* 텍스트 문서 조각을 편집한 다음 편지를 미리 보면 AEM Forms에서 HTML 편지 미리 보기에 표현식 언어가 표시됩니다(CQ-4322331).
+
+* 셀프서비스 편지 템플릿으로 데이터를 렌더링하는 동안 문제가 발생합니다(NPR-37161).
+
+
+**대화형 통신**
+
+* 텍스트 문서 조각을 편집한 후 대화형 커뮤니케이션을 미리 볼 때 인쇄할 때마다 탭 문자가 두 단어 간에 중복됩니다(NPR-37021).
+
+* [!DNL AEM Forms] 최대 크기 제한을 초과하는 텍스트 문서 조각을 저장할 때 오류가 표시됩니다(NPR-36874).
+
+* 대화형 커뮤니케이션에 이미지를 추가하면 이미지 뒤에 빈 블록이 추가로 표시됩니다(NPR-36659).
+
+* 편집기에서 모든 텍스트를 선택하면 글꼴 텍스트를 Arial로 변경할 수 없습니다(NPR-36646).
+
+* 편집기에서 URL을 만들고 변경 사항을 미리 볼 때 URL 텍스트 대신 검은색 배경이 표시됩니다(NPR-36640).
+
+* 텍스트를 편집기에 복사하여 붙여넣을 때 문서에서 사용할 수 있는 글머리 기호의 글꼴을 Arial로 변경하는 동안 문제가 발생합니다(NPR-36628).
+
+* 텍스트 편집기의 글머리 기호에 대한 들여쓰기 문제가 발생합니다(NPR-36513).
+
+**디자이너**
+
+* 화면 Reader이 기본 페이지의 텍스트 레이블 내에 배치된 부동 필드 데이터 또는 동적 PDF의 하위 양식 페이지에서 가져온 부동 필드 데이터를 읽지 못합니다(CQ-4321587).
+
+**문서 서비스**
+
+* XDP 파일을 PDF 파일로 변환한 다음 결과 PDF을 어셈블하면 PDF 세대가 실패하고 다음 오류 메시지가 표시됩니다.
+
+   ```TXT
+   Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
+   ```
+
+**양식 워크플로우**
+
+* AEM Forms 서비스 팩 8로 업그레이드한 후 Workbench 프로세스에 양식을 제출할 수 없습니다(CQ-4325846).
+
+**HTML5 양식**
+
+* 에 대한 값을 설정할 때 `mfAllowAttachments` property as `True` CRX DE 저장소에서 `dataXml` HTML5 양식 제출 시 손상됩니다(NPR-37035).
+
+* 를 사용하여 XDP를 HTML으로 렌더링할 때 `dataXml`, [!DNL AEM Forms] 표시 `Page Unresponsive` 오류(NPR-36631).
+
+### 상거래 {#commerce-65100}
+
+* 의 값 **[!UICONTROL 게시자]** 열 보기에서 필드가 잘못되었습니다(NPR-36902).
+* 카탈로그가 롤아웃되면 새 제품이 수정된 제품으로 잘못 표시됩니다(NPR-36666).
+* 삭제된 제품을 다시 만들 때 제품 페이지가 다시 만들어지지 않습니다(NPR-36665).
+* 수정된 페이지가 업데이트되지만 연결된 해당 제품이 카탈로그 롤아웃 시 업데이트되지 않습니다(CQ-4321409, NPR-36422).
+* 다음 **[!UICONTROL 나중에 게시]** 및 **[!UICONTROL 나중에 게시 취소]** 워크플로우가 작동하지 않습니다(CQ-4327679).
+
+보안 업데이트에 대한 자세한 내용은 [[!DNL Experience Manager] 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html).
+
+## Experience Manager 6.5.10.0의 알려진 문제 {#known-issues}
+
+* 로서의 [!DNL Microsoft Windows Server 2019] 을 지원하지 않음 [!DNL MySQL 5.7] 및 [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] 에 대한 턴키 설치를 지원하지 않습니다. [!DNL AEM Forms 6.5.10.0].
+
+* 를 업그레이드하는 경우 [!DNL Experience Manager] 인스턴스(6.5에서 6.5.10.0 버전)를 `RRD4JReporter` 의 예외 `error.log` 파일. 문제를 해결하려면 인스턴스를 다시 시작합니다.
+
+* 설치하는 경우 [!DNL Experience Manager] 6.5 서비스 팩 10 또는 이전 서비스 팩 [!DNL Experience Manager] 6.5, 자산 사용자 지정 워크플로우 모델의 런타임 사본(에서 생성) `/var/workflow/models/dam`)이 삭제됩니다.
+런타임 복사본을 검색하려면 Adobe에서 HTTP API를 사용하여 사용자 지정 워크플로우 모델의 디자인 타임 사본을 해당 런타임 복사와 동기화하는 것이 좋습니다.
+   `<designModelPath>/jcr:content.generate.json`.
+
+* 사용자는 의 계층 구조에서 폴더의 이름을 바꿀 수 있습니다 [!DNL Assets] 중첩된 폴더를 [!DNL Brand Portal]. 그러나 폴더의 제목은에서 업데이트되지 않습니다 [!DNL Brand Portal] 루트 폴더를 다시 게시할 때까지 .
+
+* 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
+
+* 6.5.x.x Experience Manager 설치 중에 다음 오류 및 경고 메시지가 표시될 수 있습니다.
+   * Target Standard API(IMS 인증)를 사용하여 Experience Manager에 Adobe Target 통합이 구성된 경우 환경 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. 경험 조각/소스 Adobe Experience Manager 유형 대신 Target은 HTML/소스 Adobe Target Classic 유형으로 여러 가지 오퍼를 작성합니다.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`: granite/operations/maintenance에 유지 관리 창이 없습니다.
+   * SUM, MAX 및 MIN과 같은 집계 함수를 사용하는 경우 적용형 양식 서버측 유효성 검사가 실패합니다(CQ-4274424).
+   * `com.adobe.granite.maintenance.impl.TaskScheduler` - granite/operations/maintenance에 유지 관리 창이 없습니다.
+   * 쇼퍼블 배너 뷰어를 통해 자산을 미리 볼 때 Dynamic Media 대화형 이미지의 핫스팟이 표시되지 않습니다.
+   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : 등록 변경으로 등록 취소를 완료할 때까지 기다리는 중 시간이 초과되었습니다.
 
 ## [!DNL Adobe Experience Manager] 6.5.9.0 {#experience-manager-6590}
 
@@ -385,7 +738,7 @@ Adobe Experience Manager 6.5.9.0 Assets에서는 다음 문제가 해결되었�
 * 사이드 레일에서 특정 자산을 검색할 때 결과에 검색되지 않은 자산이 포함됩니다(NPR-35524).
 * Experience Manager 인스턴스에 대해 SSL을 사용하도록 설정하면 컨텍스트 경로가 제거됩니다(NPR-35477).
 * 목록을 만들고, 일부 텍스트를 첫 번째 요소로 추가하고, 테이블을 두 번째 요소로 추가하고, 표 내에 목록을 추가하면 상위 목록이 왜곡됩니다(NPR-35465).
-* 연속된 목록 항목에서 다른 플러그인을 사용하는 경우 추가로 <br> 태그가 목록 항목에 추가됩니다(NPR-35464).
+* 연속된 목록 항목에서 서로 다른 플러그인을 사용하는 경우 추가로 <br> 태그가 목록 항목에 추가됩니다(NPR-35464).
 * 두 단락 사이에 목록을 배치하면 목록에 테이블을 추가할 수 없습니다(NPR-35356).
 * AEM 인스턴스 업그레이드를 AEM 6.3에서 AEM 6.5로 시작하면 업그레이드 인스턴스를 시작하는 데 시간이 오래 걸립니다(NPR-35323).
 * 브라켓()을 포함하는 AEM 자산을 복제할 때. 이름에서 복제가 실패합니다(GRANITE-27004, NPR-35315).
@@ -657,7 +1010,7 @@ Adobe Experience Manager 6.5.9.0 Assets에서는 다음 문제가 해결되었�
 
 * 사용자가 `Enter` 키 [!UICONTROL 모두 선택] 옵션을 선택하면 키보드 포커스가 [!UICONTROL 컨트롤 만들기] 옵션(CQ-4293599).
 
-* 을(를) 선택하는 경우 `Esc` 키, 포커스가 상위 컨트롤로 복원되지 않습니다(CQ-4293593, CQ-4293590).
+* 을(를) 선택하는 경우 `Esc` 키. 포커스가 상위 컨트롤로 복원되지 않습니다(CQ-4293593, CQ-4293590).
 
 * 에 대한 WCAG 규정 준수 개선 [!DNL Sites] UI 및 핵심 구성 요소(CQ-4293448).
 
