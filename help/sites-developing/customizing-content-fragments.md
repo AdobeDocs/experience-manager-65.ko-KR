@@ -3,17 +3,13 @@ title: 컨텐츠 조각 사용자 지정 및 확장
 seo-title: Customizing and Extending Content Fragments
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 seo-description: A content fragment extends a standard asset.
-uuid: f72c3a23-9b0d-4fab-a960-bb1350f01175
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: e68f6203d7629cab16e59778ce64908f943d5b3f
+source-git-commit: 9ad531738ac5e3c9d888f685b47c8b322712a89e
 workflow-type: tm+mt
-source-wordcount: '2789'
+source-wordcount: '2778'
 ht-degree: 1%
 
 ---
@@ -133,9 +129,9 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
 >[!CAUTION]
 >
->다음 [컨텐츠 조각 코어 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) 이제 이 권장됩니다. 자세한 내용은 [핵심 구성 요소 개발](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 자세한 내용
+>다음 [컨텐츠 조각 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) 이제 이 권장됩니다. 자세한 내용은 [핵심 구성 요소 개발](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) 자세한 내용
 
-컨텐츠 조각은 다른 자산 유형처럼 AEM 페이지에서 참조할 수 있습니다. AEM에서 [**컨텐츠 조각** 코어 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) - a [페이지에 컨텐츠 조각을 포함할 수 있는 구성 요소](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). 확장도 가능합니다 **컨텐츠 조각** 코어 구성 요소입니다.
+컨텐츠 조각은 다른 자산 유형처럼 AEM 페이지에서 참조할 수 있습니다. AEM에서 [**컨텐츠 조각** 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) - a [페이지에 컨텐츠 조각을 포함할 수 있는 구성 요소](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). 확장도 가능합니다 **컨텐츠 조각** 코어 구성 요소입니다.
 
 * 구성 요소는 `fragmentPath` 실제 컨텐츠 조각을 참조하는 속성입니다. 다음 `fragmentPath` 속성은 다른 자산 유형의 속성과 유사한 방식으로 처리됩니다. 예를 들어 컨텐츠 조각을 다른 위치로 이동할 때.
 
@@ -247,7 +243,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
 서버측 API를 사용하여 컨텐츠 조각에 액세스할 수 있습니다. 다음을 참조하십시오.
 
-[com.adobe.cq.dam.cfm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -257,7 +253,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
 다음 세 개의 인터페이스가 시작 지점으로 사용될 수 있습니다.
 
-* **조각 템플릿** ([조각 템플릿](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **조각 템플릿** ([조각 템플릿](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
    사용 `FragmentTemplate.createFragment()` 새 조각을 생성하기 위한 것입니다.
 
@@ -302,7 +298,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
 
 
-* **컨텐츠 조각** ([컨텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **컨텐츠 조각** ([컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    이 인터페이스를 사용하면 컨텐츠 조각을 추상적으로 사용할 수 있습니다.
 
@@ -332,7 +328,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
    조각의 주요 요소를 나타내는 인터페이스는 다음과 같습니다.
 
-   * **콘텐츠 요소** ([ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **콘텐츠 요소** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * 기본 데이터 가져오기(이름, 제목, 설명)
       * 콘텐츠 가져오기/설정
@@ -344,7 +340,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
          * 변형 제거(참조) [경고](#caveats))
          * 변형 데이터에 액세스( `ContentVariation`)
       * 변형 해결을 위한 바로 가기(지정된 변형을 요소에 사용할 수 없는 경우 몇 가지 추가 구현별 폴백 논리 적용)
-   * **컨텐츠 변형** ([컨텐츠 변형](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **컨텐츠 변형** ([컨텐츠 변형](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * 기본 데이터 가져오기(이름, 제목, 설명)
       * 콘텐츠 가져오기/설정
@@ -542,5 +538,5 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 자세한 내용은
 
-* [핵심 구성 요소 - 컨텐츠 조각 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) (권장)
+* [핵심 구성 요소 - 컨텐츠 조각 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (권장)
 * [컨텐츠 조각 구성 요소 - 페이지 작성을 위한 구성 요소](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)
