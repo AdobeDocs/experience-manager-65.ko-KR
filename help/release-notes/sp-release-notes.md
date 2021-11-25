@@ -4,9 +4,9 @@ description: 에 관한 릴리스 노트 [!DNL Adobe Experience Manager] 6.5 서
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: c0393e614cf96066dfd765cc00dc8ad370755a27
+source-git-commit: 35260325b583bd047f22ffa88afb9469b2023e60
 workflow-type: tm+mt
-source-wordcount: '3368'
+source-wordcount: '3367'
 ht-degree: 12%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 12%
 
 * 사용자 경험 개선 사항은 폴더에 있는 자산 수를 표시합니다. 폴더에 있는 1000개 이상의 자산의 경우, [!DNL Assets] 1000 이상을 표시합니다.
 
-* 이제 카드 및 열 보기에서 정렬 옵션을 렌더링할 수 있습니다(NPR-37199).
+* 이제 카드 및 열 보기에서 정렬 옵션을 렌더링할 수 있습니다.
 
 * 이제 다음을 사용할 수 있습니다 [!DNL Dynamic Media] 일반 설정을 구성하는 것이 아니라 [!DNL Dynamic Media Classic] 데스크탑 응용 프로그램입니다. 자세한 내용은 [Dynamic Media 일반 설정 구성](/help/assets/dm-general-settings.md).
 
