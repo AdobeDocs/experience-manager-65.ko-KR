@@ -1,20 +1,16 @@
 ---
 title: SEO 및 URL 관리 우수 사례
-seo-title: SEO 및 URL 관리 우수 사례
+seo-title: SEO and URL Management Best Practices
 description: AEM 구현에서 이를 수행하기 위한 SEO 우수 사례 및 권장 사항에 대해 알아봅니다.
-seo-description: AEM 구현에서 이를 수행하기 위한 SEO 우수 사례 및 권장 사항에 대해 알아봅니다.
-uuid: 943e76c4-bd88-4b52-bb43-db375eb89d23
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
+seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
 topic-tags: managing
 content-type: reference
-discoiquuid: 7c8f2cec-870b-41a8-8d98-70e29b495587
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8cb016eefc2699ffb3dfa926a289123b96927055
 workflow-type: tm+mt
-source-wordcount: '3119'
-ht-degree: 98%
+source-wordcount: '3802'
+ht-degree: 76%
 
 ---
 
@@ -125,7 +121,7 @@ AEM에서는 서블릿을 작성할 때 두 가지 옵션을 제공합니다.
 
 다음 예는 이러한 패턴을 따르는 서블릿을 등록하는 방법과 Sling 서블릿을 사용하여 얻게 되는 혜택을 보여 줍니다.
 
-#### Bin 서블릿(한 수준 아래로){#bin-servlets-one-level-down}
+#### Bin 서블릿(한 수준 아래로) {#bin-servlets-one-level-down}
 
 **Bin** 서블릿은 많은 개발자들이 J2EE 프로그래밍에서 익숙한 패턴을 따릅니다. 서블릿은 특정 경로에 등록되는데 AEM에서는 일반적으로 `/bin` 아래에 있으며 쿼리 문자열에서 필요한 요청 매개 변수를 추출하게 됩니다.
 
@@ -152,7 +148,7 @@ String myParam = req.getParameter("myParam");
 * 이 서블릿을 보호하려면 서블릿에 사용자 지정 보안 로직을 구현해야 합니다.
 * 디스패처는 `/bin/myApp/myServlet`을 노출하도록 (신중하게) 구성되어야 합니다. 단순히 `/bin`을 노출하면 사이트 방문자에게 공개되어서는 안 되는 특정 서블릿에 대한 액세스가 허용될 수 있습니다.
 
-#### Sling 서블릿(한 수준 아래로){#sling-servlets-one-level-down}
+#### Sling 서블릿(한 수준 아래로) {#sling-servlets-one-level-down}
 
 **Sling** 서블릿을 사용하면 반대 방식으로 서블릿을 등록할 수 있습니다. 서블릿 주소를 지정하고 쿼리 매개 변수를 기반으로 서블릿이 렌더링할 컨텐츠를 지정하는 대신 원하는 컨텐츠의 주소를 지정하고 Sling 선택기를 기반으로 컨텐츠를 렌더링해야 하는 서블릿을 지정하십시오.
 
@@ -365,14 +361,117 @@ Disallow: /
 
 크롤러는 웹 사이트의 구조를 더 잘 파악하기 위해 XML 사이트 맵을 사용합니다. 사이트 맵을 제공하는 것이 SEO 등급을 개선한다는 보장은 없지만, 이것은 합의된 우수 사례입니다. 사이트 맵으로 사용할 XML 파일은 웹 서버에서 수동으로 유지 관리할 수 있지만, 사이트 맵은 프로그래밍 방식으로 생성하는 것이 좋습니다. 이렇게 하면 작성자가 새 컨텐츠를 만들 때 사이트 맵이 변경 사항을 자동으로 반영하게 됩니다.
 
-사이트 맵을 프로그래밍 방식으로 생성하려면 `sitemap.xml` 호출을 수신하는 Sling 서블릿을 등록하십시오. 그러면 서블릿은 서블릿 API를 통해 제공된 리소스를 사용하여 현재 페이지와 그 하위 페이지를 보고 XML을 출력할 수 있습니다. 그러면 XML이 디스패처에서 캐시됩니다. 이 위치는 `robots.txt` 파일의 사이트 맵 속성에서 참조되어야 합니다. 또한 새 페이지가 활성화될 때마다 이 파일을 초기화하도록 사용자 지정 초기화 규칙을 구현해야 합니다.
+AEM에서 [Apache Sling Sitemap 모듈](https://github.com/apache/sling-org-apache-sling-sitemap) 를 사용하여 XML 사이트 맵을 생성할 수 있습니다. 이 사이트에서는 개발자와 편집자가 사이트 XML 사이트 맵을 최신 상태로 유지할 수 있는 다양한 옵션을 제공합니다.
 
 >[!NOTE]
 >
->Sling 서블릿을 등록하여 확장자가 `sitemap`인 선택기 `xml`을 수신 대기할 수 있습니다. 이렇게 하면 다음과 같이 끝나는 URL이 요청될 때마다 서블릿이 요청을 처리하게 됩니다.
->    `/<path-to>/page.sitemap.xml`
-그러면 요청에서 요청된 리소스를 가져와 JCR API를 사용하여 컨텐츠 트리의 해당 지점에서 사이트 맵을 생성할 수 있습니다.
-이같은 접근 방식의 이점은 동일한 인스턴스에서 여러 사이트를 제공하는 경우입니다. `/content/siteA.sitemap.xml`에 대한 요청은 `siteA`에 대한 사이트 맵을 생성하는 반면 `/content/siteB.sitemap.xml`에 대한 요청은 추가적인 코드를 작성하지 않아도 `siteB`에 대한 사이트 맵을 생성합니다.
+> Adobe Experience Manager 버전 6.5.11.0 이후 제품 기능으로 사용할 수 있습니다.
+> 
+> 이전 버전의 경우 Sling 서블릿을 직접 등록하여 을 수신 대기할 수 있습니다 `sitemap.xml` 서블릿 API를 통해 제공된 리소스를 사용하여 현재 페이지와 해당 하위 페이지를 조회하여 sitemap.xml 파일을 출력합니다.
+
+Apache Sling Sitemap 모듈은 최상위 사이트 맵과 중첩된 사이트 맵을 구별하며, 둘 다 가 있는 리소스에 대해 생성됩니다 `sling:sitemapRoot` 속성 설정 `true`. 일반적으로 사이트 맵은 다른 사이트 맵 루트 상위 항목이 없는 리소스인 트리의 최상위 사이트 맵 경로에 있는 선택기를 사용하여 렌더링됩니다. 이 최상위 사이트 맵 루트는 사이트 맵 인덱스를 노출하기도 합니다. 사이트 인덱스는 일반적으로 사이트 소유자가 검색 엔진의 구성 포털에서 구성하거나 사이트의 사이트에 추가하는 것입니다 `robots.txt`.
+
+예를 들어, 다음 위치에 최상위 사이트 맵 루트를 정의하는 사이트를 생각해 보십시오. `my-page` 및 중첩된 사이트 맵 루트( `my-page/news`를 눌러 뉴스 하위 트리의 페이지에 대한 전용 사이트 맵을 생성합니다. 따라서 관련 URL은
+
+* https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
+* https://www.mydomain.com/my-brand/my-page.sitemap.xml
+* https://www.mydomain.com/my-brand/my-page.sitemap.news-sitemap.html
+
+>[!NOTE]
+>
+> 선택기 `sitemap` 및 `sitemap-index` 사용자 지정 구현을 방해할 수 있습니다. 제품 기능을 사용하지 않으려면 로 이러한 선택기를 제공하는 자체 서블릿을 구성하십시오 `service.ranking` 0보다 높음.
+
+기본 구성에서 페이지 속성 대화 상자는 페이지를 사이트 맵 루트로 표시하는 옵션을 제공하며 위에 설명된 대로 자신 및 해당 하위 항목의 사이트 맵을 생성합니다. 이 동작은 `SitemapGenerator` 인터페이스 및 는 대체 구현을 추가하여 확장할 수 있습니다. 그러나 XML 사이트 맵을 재생성할 빈도는 컨텐츠 작성 워크플로우 및 작업 로드에 따라 크게 다르므로 제품은 출하되지 않습니다 `SitemapScheduler` 구성. 따라서 이 기능이 효과적으로 옵트인됩니다.
+
+XML 사이트 맵을 생성하는 백그라운드 작업을 활성화하려면 `SitemapScheduler` 구성해야 합니다. 이렇게 하려면 PID에 대한 OSGI 구성을 만듭니다 `org.apache.sling.sitemap.impl.SitemapScheduler`. 스케줄러 표현식 `0 0 0 * * ?` 는 매일 자정에 모든 XML 사이트 맵을 다시 생성하는 시작점으로 사용할 수 있습니다.
+
+![Apache Sling Sitemap - 스케줄러](assets/sling-sitemap-scheduler.png)
+
+사이트 맵 생성 작업은 작성 및 게시 계층 인스턴스 둘 다에서 실행할 수 있습니다. 적절한 정식 URL은 게시 계층 인스턴스에만 있기 때문에(일반적으로 게시 계층 인스턴스에만 존재하기 때문에) 게시 계층 인스턴스에서 생성을 실행하는 것이 좋습니다. 그러나 를 구현하여 표준 URL을 생성하는 데 사용되는 외부화 메커니즘의 사용자 지정 구현을 플러그인할 수 있습니다 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 인터페이스. 사용자 지정 구현에서 작성 계층 인스턴스에서 사이트 맵의 정식 URL을 생성할 수 있는 경우, `SitemapScheduler` 작성자 실행 모드에 대해 구성할 수 있으며, 작성 서비스 클러스터의 인스턴스에 XML 사이트 맵 생성 작업 로드를 배포할 수 있습니다. 이 시나리오에서는 아직 게시되지 않았거나, 수정되었거나, 제한된 사용자 그룹에만 표시되는 컨텐츠를 처리하는 데 특별한 주의를 기울여야 합니다.
+
+AEM Sites에는 `SitemapGenerator` 사이트 맵을 생성하기 위해 페이지 트리를 트래버스합니다. 사이트의 정식 URL 및 언어 대체 요소만 출력하도록 사전 구성되어 있습니다. 필요한 경우 페이지의 마지막 수정 날짜를 포함하도록 구성할 수도 있습니다. 이를 위해 _마지막으로 수정한 날짜 추가_ 옵션 _Adobe AEM SEO - 페이지 트리 사이트 맵 생성기_ 구성 및 선택 _마지막으로 수정한 원본_. 게시 계층에서 사이트 맵을 생성하면 `cq:lastModified` 날짜.
+
+![Adobe AEM SEO - 페이지 트리 사이트 맵 생성기 구성](assets/sling-sitemap-pagetreegenerator.png)
+
+사이트 맵의 컨텐츠를 제한하려면 필요한 경우 다음 서비스 인터페이스를 구현할 수 있습니다.
+
+* a [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) 에서는 AEM Sites 특정 사이트 맵 생성기에서 생성된 XML 사이트 맵에서 페이지를 숨기도록 구현할 수 있습니다
+* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 또는 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) 는 [Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) 특정 사이트맵 생성기
+
+기본 구현이 특정 사용 사례에서 작동하지 않거나 확장 포인트가 유연하지 않으면 사용자 지정 구현이 됩니다 `SitemapGenerator` 생성된 사이트 맵의 컨텐츠를 완벽하게 제어하도록 를 구현할 수 있습니다. 다음 예는 AEM Sites에 대한 기본 구현의 논리를 사용하여 이 작업을 수행하는 방법을 보여줍니다. 이 템플릿은 를 사용합니다 [리소스 트리 사이트맵 생성기](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) 페이지 트리를 트래버스하기 위한 시작점으로:
+
+```
+import java.util.Optional;
+
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.sitemap.SitemapException;
+import org.apache.sling.sitemap.builder.Sitemap;
+import org.apache.sling.sitemap.builder.Url;
+import org.apache.sling.sitemap.spi.common.SitemapLinkExternalizer;
+import org.apache.sling.sitemap.spi.generator.ResourceTreeSitemapGenerator;
+import org.apache.sling.sitemap.spi.generator.SitemapGenerator;
+import org.jetbrains.annotations.NotNull;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.adobe.aem.wcm.seo.sitemap.PageTreeSitemapGenerator;
+import com.day.cq.wcm.api.Page;
+
+@Component(
+    service = SitemapGenerator.class,
+    property = { "service.ranking:Integer=20" }
+)
+public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
+
+    private static final Logger LOG = LoggerFactory.getLogger(SitemapGeneratorImpl.class);
+
+    @Reference
+    private SitemapLinkExternalizer externalizer;
+    @Reference
+    private PageTreeSitemapGenerator defaultGenerator;
+
+    @Override
+    protected void addResource(@NotNull String name, @NotNull Sitemap sitemap, Resource resource) throws SitemapException {
+        Page page = resource.adaptTo(Page.class);
+        if (page == null) {
+            LOG.debug("Skipping resource at {}: not a page", resource.getPath());
+            return;
+        }
+        String location = externalizer.externalize(resource);
+        Url url = sitemap.addUrl(location + ".html");
+        // add any additional content to the Url like lastmod, change frequency, etc
+    }
+
+    @Override
+    protected final boolean shouldFollow(@NotNull Resource resource) {
+        return super.shouldFollow(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldFollow).orElse(Boolean.TRUE);
+    }
+
+    private boolean shouldFollow(Page page) {
+        // add additional conditions to stop traversing some pages
+        return !defaultGenerator.isProtected(page);
+    }
+
+    @Override
+    protected final boolean shouldInclude(@NotNull Resource resource) {
+        return super.shouldInclude(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldInclude).orElse(Boolean.FALSE);
+    }
+
+    private boolean shouldInclude(Page page) {
+        // add additional conditions to stop including some pages
+        return defaultGenerator.isPublished(page)
+            && !defaultGenerator.isNoIndex(page)
+            && !defaultGenerator.isRedirect(page)
+            && !defaultGenerator.isProtected(page);
+    }
+}
+```
+
+또한 XML 사이트 맵에 구현된 기능은 다양한 사용 사례에도 사용할 수 있습니다. 예를 들어 정식 링크나 언어가 페이지 헤드에 대체됩니다. 자세한 내용은 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) 인터페이스 를 참조하십시오.
 
 ### 레거시 URL에 대해 301 리디렉션 생성 {#creating-redirects-for-legacy-urls}
 
