@@ -1,21 +1,21 @@
 ---
 title: 지원되는 파일 형식 및 MIME 유형
-description: ' [!DNL Assets] and [!DNL Dynamic Media] 에서 지원하는 파일 형식 및 MIME 유형과 각 형식에 대해 지원되는 기능입니다.'
+description: 에서 지원하는 파일 형식 및 MIME 유형 [!DNL Assets] and [!DNL Dynamic Media] 및 각 형식에 대해 지원되는 기능입니다.
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: c8e83622070572d104f2cdc20c592ac2e9d0d31b
+source-git-commit: 7c2fcb94475eccfff5373a1dd28707bbe50ee078
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1539'
 ht-degree: 10%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets]에서 지원되는 형식 {#assets-supported-formats}
+# 에서 지원되는 형식 [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-[!DNL Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형에 대한 다양한 지원을 제공합니다. [!DNL Assets]을 다른 표준 호환 DAM(디지털 자산 관리) 솔루션 및 데스크탑 소프트웨어와 통합하려면 Adobe의 [!DNL Extensible Metadata Platform] (XMP)을 사용하십시오.
+[!DNL Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형에 대한 다양한 지원을 제공합니다. 통합하려면 [!DNL Assets] 다른 표준 준수 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 함께 Adobe의 [!DNL Extensible Metadata Platform] (XMP).
 
 지원 수준을 이해하려면 범례를 사용합니다.
 
@@ -25,9 +25,9 @@ ht-degree: 10%
 | * | 추가 기능 지원 |
 | - | 해당 사항 없음 |
 
-## [!DNL Experience Manager]에서 지원되는 래스터 이미지 형식 {#supported-raster-image-formats}
+## 에서 지원되는 래스터 이미지 형식 [!DNL Experience Manager] {#supported-raster-image-formats}
 
-[!DNL Assets]에서 지원되는 래스터 이미지 형식은 다음과 같습니다.
+에서 지원되는 래스터 이미지 형식 [!DNL Assets] 입니다.
 
 | 형식 | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | 편집 | 메타데이터 원본에 쓰기 | 인사이트 |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
@@ -47,9 +47,9 @@ ht-degree: 10%
 
 병합된 ‡ 이미지가 PSD 파일에서 추출됩니다. 이 이미지는 Adobe Photoshop에서 생성되며 PSD 파일에 포함되어 있습니다. 설정에 따라 병합된 이미지가 실제 이미지이거나 아닐 수 있습니다.
 
-[!DNL Dynamic Media]에서 지원되는 래스터 이미지 형식은 다음과 같습니다.
+에서 지원되는 래스터 이미지 형식 [!DNL Dynamic Media] 입니다.
 
-| 형식 | 업로드<br> (입력 형식) | <br> 이미지<br> 사전 설정<br>(출력 형식) 만들기 | 미리 보기<br> 동적<br> 변환 | 배달<br> 동적<br> 변환 | <br> dynamic<br> 변환 다운로드 |
+| 형식 | 업로드<br> (입력 형식) | 만들기<br> 이미지<br> 사전 설정<br> (출력 형식) | 미리 보기<br> 동적<br> 렌디션 | 배달<br> 동적<br> 렌디션 | 다운로드<br> 동적<br> 렌디션 |
 |---|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -64,11 +64,11 @@ ht-degree: 10%
 
 위의 정보 외에 다음 사항을 고려하십시오.
 
-* EPS 파일에 대한 지원은 래스터 이미지만 적용됩니다. 예를 들어 EPS 벡터 이미지에 대한 축소판 생성은 기본적으로 지원되지 않습니다. 지원을 추가하려면 [ImageMagick](best-practices-for-imagemagick.md)을 구성합니다. 타사 도구를 통합하여 추가 기능을 활성화하려면 [명령줄 기반 미디어 핸들러](media-handlers.md#command-line-based-media-handler)를 참조하십시오.
+* EPS 파일에 대한 지원은 래스터 이미지만 적용됩니다. 예를 들어 EPS 벡터 이미지에 대한 축소판 생성은 기본적으로 지원되지 않습니다. 지원을 추가하려면 [imageMagick 구성](best-practices-for-imagemagick.md). 타사 도구를 통합하여 추가 기능을 활성화하려면 [명령줄 기반 미디어 핸들러](media-handlers.md#command-line-based-media-handler).
 
-* 메타데이터 원본에 쓰기 저장(writeback)은 PSB 파일 형식이 `NComm` 처리기에 추가되면 작동합니다.
+* 메타데이터 원본에 쓰기 작업은 PSB 파일 형식이 PSB에 추가될 때 작동합니다 `NComm` 핸들러.
 
-* [!DNL Dynamic Media] 을 사용하여 EPS 파일에 대한 동적 렌디션을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 를 사용하려면 [!DNL Dynamic Media] EPS 파일에 대한 동적 변환을 미리 보고 생성하려면 다음을 참조하십시오. [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * EPS 파일의 경우 PS-Adobe(PostScript Document Structuring Convention) 버전 3.0 이상에서 메타데이터 원본에 대한 쓰기 작업이 지원됩니다.
 
@@ -76,7 +76,7 @@ ht-degree: 10%
 
 다음 3D 형식 목록이 지원됩니다.
 
-또한 [Dynamic Media에서 3D 자산 작업](/help/assets/assets-3d.md)을 참조하십시오.
+참조 - [Dynamic Media에서 3D 자산 작업.](/help/assets/assets-3d.md)
 
 | 형식 | 저장 용량 | 버전 관리 | 워크플로 | 게시 | 액세스 제어 | 축소판 미리 보기 | 3D 미리 보기 | Dynamic Media 게재 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -89,9 +89,9 @@ ht-degree: 10%
 
 ## Dynamic Media에서 지원되지 않는 래스터 이미지 형식 {#unsupported-image-formats-dynamic-media}
 
-다음 목록에서는 Dynamic Media에서 지원되지 않는 *래스터 이미지 파일 형식의 하위 유형을 설명합니다.*
+다음 목록에서는 래스터 이미지 파일 형식의 하위 유형을 설명합니다 *not* Dynamic Media에서 지원됩니다.
 
-또한 [Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)에 대해 지원되지 않는 파일 형식 감지를 참조하십시오.
+참조 - [Dynamic Media에 대해 지원되지 않는 파일 형식 감지](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * IDAT 청크 크기가 100MB보다 큰 PNG 파일.
 * PSB 파일.
@@ -120,13 +120,13 @@ The following table describes the sub-types of raster image formats that are *no
 
 ## 지원되는 PDF 래스터라이저 라이브러리 {#supported-pdf-rasterizer-library}
 
-Adobe PDF Rasterizer 라이브러리는 크고 컨텐츠가 많은 [!DNL Adobe Illustrator] 및 PDF 파일에 대한 고품질 축소판 및 미리 보기를 생성합니다. Adobe은 다음 경우 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
+Adobe PDF Rasterizer 라이브러리에서는 크고 컨텐츠가 많이 사용되는 고품질의 축소판 및 미리 보기를 생성합니다 [!DNL Adobe Illustrator] 및 PDF 파일. Adobe은 다음 경우 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
 * 리소스를 많이 사용하는 AI/PDF 파일을 처리할 수 있습니다.
 * 축소판이 기본적으로 생성되지 않는 AI/PDF 파일입니다.
 * PMS(Pantone Matching System) 색상이 있는 AI 파일입니다.
 
-[PDF 래스터라이저 사용](aem-pdf-rasterizer.md)을 참조하십시오.
+자세한 내용은 [PDF 래스터라이저 사용](aem-pdf-rasterizer.md).
 
 ## 지원되는 이미지 코드 변환 라이브러리 {#supported-image-transcoding-library}
 
@@ -134,17 +134,17 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 이미징 코드 변환 라이브러리는 JPG/JPEG, PNG(8비트 및 16비트), GIF, BMP, TIFF/압축 TIFF(32비트 TIFF 파일 및 PTIFF 파일 제외), ICO 및 ICN MIME 유형을 지원합니다.
 
-[이미징 코드 변환 라이브러리](imaging-transcoding-library.md)를 참조하십시오.
+자세한 내용은 [이미징 코드 변환 라이브러리](imaging-transcoding-library.md).
 
 ## 지원되는 Camera Raw {#supported-camera-raw}
 
-[!DNL Adobe Camera Raw] 라이브러리를 사용하면 [!DNL Assets]에서 원시 이미지를 수집할 수 있습니다. [Camera Raw 지원](camera-raw.md)을 참조하십시오.
+다음 [!DNL Adobe Camera Raw] 라이브러리 사용 [!DNL Assets] 원시 이미지를 수집할 수 있습니다. 자세한 내용은 [Camera Raw 지원](camera-raw.md).
 
-## 지원되는 [!DNL Assets] 문서 형식 {#supported-document-formats}
+## 지원됨 [!DNL Assets] 문서 형식 {#supported-document-formats}
 
 자산 관리 기능에 대해 지원되는 문서 형식은 다음과 같습니다.
 
-| 형식 | 저장 용량 | [메타데이터 관리](metadata.md) | 전체 텍스트<br> 추출 | [메타데이터 추출](metadata.md) | 축소판 그림<br> 생성 | [하위 자산 추출](managing-linked-subassets.md) | [메타데이터 원본에 쓰기](xmp-writeback.md) | [연결된 자산](use-assets-across-connected-assets-instances.md) |
+| 형식 | 저장 용량 | [메타데이터 관리](metadata.md) | 전체 텍스트<br> 추출 | [메타데이터 추출](metadata.md) | 축소판<br> 세대 | [하위 자산 추출](managing-linked-subassets.md) | [메타데이터 원본에 쓰기](xmp-writeback.md) | [연결된 자산](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
 | DOC | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
@@ -167,19 +167,19 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 ## Dynamic Media에서 지원되는 문서 형식 {#supported-document-formats-dynamic-media}
 
-| 형식 | 업로드<br> (입력 형식) | <br> 이미지<br> 사전 설정<br>(출력 형식) 만들기 | 미리 보기<br> 동적<br> 변환 | 배달<br> 동적<br> 변환 | <br> dynamic<br> 변환 다운로드 |
+| 형식 | 업로드<br> (입력 형식) | 만들기<br> 이미지<br> 사전 설정<br> (출력 형식) | 미리 보기<br> 동적<br> 렌디션 | 배달<br> 동적<br> 렌디션 | 다운로드<br> 동적<br> 렌디션 |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 위의 기능 외에 다음 사항을 고려하십시오.
 
-* Dynamic Media을 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media을 사용하여 PDF 파일에 대한 동적 변환을 생성하려면 다음을 참조하십시오 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media을 사용하여 AI 파일에 대한 동적 렌디션을 미리 보고 생성하려면 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식을 참조하십시오.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Dynamic Media을 사용하여 AI 파일에 대한 동적 렌디션을 미리 보고 생성하려면 를 참조하십시오 [Adobe Illustrator(AI), Postscript(EPS) 및 PDF 파일 형식.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Dynamic Media을 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 [InDesign(INDD) 파일 형식](../assets/managing-image-presets.md#indesign-indd-file-format)을 참조하십시오.
+* Dynamic Media을 사용하여 INDD 파일에 대한 동적 변환을 생성하려면 다음을 참조하십시오 [InDesign(INDD) 파일 형식](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## 지원되는 멀티미디어 형식 {#supported-multimedia-formats}
 
@@ -208,16 +208,17 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 | 비디오 파일 확장 | 컨테이너 | 권장 비디오 코덱스 | 지원되지 않는 비디오 코덱입니다 |
 |---|---|---|---|
-| MP4 | MPEG-4 | H264/AVC(모든 프로필) | - |
-| 이동, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV(DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
-| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF(벡터 애니메이션 파일) |
-| WMV | Windows Media 9 | WMV3(v9), WMV2(v8), WMV1(v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® 화면(MSS2), Microsoft® 사진 스토리(WVP2) |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| M4V | Apple iTunes | H264/AVC | - |
 | AVI | A/V 인터리브 | XVID, DIVX, HDV, MiniDV(DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3(IV30), MJPEG, Microsoft® 비디오 1(MS-CRAM) |
-| WebM | WebM | Google VP8 | - |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF(벡터 애니메이션 파일) |
+| M4V | Apple iTunes | H264/AVC | - |
+| MFX | MPEG-2 | Apple ProRes422 | - |
 | MKV | 마트로스카 | H264/AVC | - |
+| 이동, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV(DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
+| MP4 | MPEG-4 | H264/AVC(모든 프로필) | - |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| WebM | WebM | Google VP8 | - |
+| WMV | Windows Media 9 | WMV3(v9), WMV2(v8), WMV1(v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® 화면(MSS2), Microsoft® 사진 스토리(WVP2) |
 
 ## 지원되는 아카이브 형식 {#supported-archive-formats}
 
@@ -249,9 +250,9 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 ## 지원되는 MIME 유형 {#supported-mime-types}
 
-기본적으로 [!DNL Experience Manager]은 파일 확장자를 사용하여 파일 유형을 감지합니다. [!DNL Experience Manager] 은 파일의 내용에서 검색할 수 있습니다. 후자의 경우 [!DNL Experience Manager] 웹 콘솔에서 [!UICONTROL 일 CQ DAM MIME 유형 서비스]에서 [!UICONTROL 컨텐츠에서 MIME 감지 옵션을 선택합니다.]
+기본적으로 [!DNL Experience Manager] 는 파일 확장자를 사용하여 파일 유형을 검색합니다. [!DNL Experience Manager] 은 파일의 내용에서 검색할 수 있습니다. 후자에 대해 을 선택합니다. [!UICONTROL 콘텐츠에서 MIME 검색] 옵션 [!UICONTROL 일 CQ DAM Mime 유형 서비스] 에서 [!DNL Experience Manager] 웹 콘솔.
 
-지원되는 MIME 유형 목록은 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes` CRXDE Lite에서 사용할 수 있습니다.
+지원되는 MIME 유형 목록은 CRXDE Lite에서 확인할 수 있습니다. `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | 파일 확장명 | MIME 유형/인터넷 미디어 유형 | 기본 jobParam 값 | 허용되는 jobParam 값 |
 |---|---|---|---|
@@ -313,6 +314,6 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 >[!MORELIKETHIS]
 >
->* [MIME 유형 기반 자산 및 Dynamic Media Classic 업로드 작업 매개 변수 지원을 활성화합니다](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
->* [업로드 작업 매개 변수 지원을 위해 MIME 유형 기반의 를 구성합니다](config-dynamic.md).
+>* [MIME 유형 기반 자산 및 Dynamic Media Classic 업로드 작업 매개 변수 지원](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [업로드 작업 매개 변수 지원을 위해 MIME 유형 기반 구성](config-dynamic.md).
 
