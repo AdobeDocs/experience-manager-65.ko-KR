@@ -1,7 +1,7 @@
 ---
 title: 'AEM 6.5 Sites용 헤드리스 개발 '
 description: 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 AEM 6.5의 강력한 헤드리스 기능이 함께 작동하여 경험을 중앙에서 관리하고 여러 채널에서 제공하는 방법을 살펴볼 수 있습니다.
-source-git-commit: 8c7acd06f3909897e5756170c606e00aead098b8
+source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 이 문서는 AEM의 헤드리스 전체 구현 모델에 중점을 둡니다. 하지만 headful과 headless는 AEM에서 이진 선택이 될 필요가 없습니다. 헤드리스 기능을 사용하여 콘텐츠를 관리하고 다양한 종단점으로 전달하면서 콘텐츠 작성자가 단일 페이지 애플리케이션을 편집할 수도 있습니다. 모두 AEM에서
 
-<!--
+<!-- HM-Links
 >[!TIP]
 >
 >See the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) for more information.
@@ -56,7 +56,7 @@ AEM 헤드리스 기능을 시작할 수 있는 리소스는 많습니다. 이 �
 |---|---|---|---|---|
 | [AEM Headless 실습 자습서 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **실습 방법을 선호하며 AEM에 익숙하다면**, 이 자습서에서는 간단한 헤드리스 프로젝트를 제작하기 위해 바로 안내합니다. | 튜토리얼 | 개발자 | 2시간 |
 
-<!--
+<!-- HM-Links
 |Resource|Description|Type|Audience|Est. Time|
 |---|---|---|---|---|
 |[Headless Developer Journey](/help/journey-headless/developer/overview.md)|**For users new to AEM and headless** technologies, start here for a comprehensive introduction to AEM and its headless features from the theory of headless through going live with your first headless project.|Guide|Developers **new to AEM and headless**|1 hour|

@@ -8,10 +8,10 @@ breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature: Developing
 role: Developer
-source-git-commit: fccfcc71d61b483273cc3501fbcc411fce5c1424
+source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 74%
+source-wordcount: '1080'
+ht-degree: 73%
 
 ---
 
@@ -98,6 +98,13 @@ ht-degree: 74%
       + [양식 개발(클래식 UI)](developing-forms.md)
 + 헤드리스 환경 관리{#headless}
    + [헤드리스 및 AEM](headless/introduction.md)
+   + 시작 안내서 {#getting-started}
+      + [소개](headless/getting-started/introduction.md)
+      + [구성 만들기](headless/getting-started/create-configuration.md)
+      + [컨텐츠 조각 모델 만들기](headless/getting-started/create-content-model.md)
+      + [자산 폴더 만들기](headless/getting-started/create-assets-folder.md)
+      + [컨텐츠 조각 만들기](headless/getting-started/create-content-fragment.md)
+      + [컨텐츠 조각 액세스 및 제공](headless/getting-started/create-api-request.md)
    + 콘텐츠 조각{#content-fragments}
       + [컨텐츠 조각 및 GraphQL을 사용한 헤드리스 게재](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-graphql.html)
       + [콘텐츠 조각을 사용한 작업](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
