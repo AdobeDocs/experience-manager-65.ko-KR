@@ -2,7 +2,7 @@
 title: 컨텐츠 조각 액세스 및 제공 헤드리스 빠른 시작 안내서
 description: 컨텐츠 조각 컨텐츠의 헤드리스 전달을 위해 AEM Assets REST API를 사용하여 컨텐츠 조각과 GraphQL API를 관리하는 방법을 알아봅니다.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 [이제 일부 컨텐츠 조각을 생성했으므로,](create-content-fragment.md) AEM API를 사용하여 헤더없이 제공할 수 있습니다.
 
 * [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) 컨텐츠 조각에 액세스하고 전달할 요청을 만들 수 있습니다.
-   * 이를 사용하려면 엔드포인트를 AEM에서 정의하고 활성화해야 하며 필요한 경우 GraphiQL 인터페이스가 설치되어 있어야 합니다.
+   * 이걸 사용하려면 [엔드포인트는 AEM에서 정의하고 활성화해야 합니다](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint), 및 필요한 경우 [GraphiQL 인터페이스 설치](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [자산 REST API](/help/assets/assets-api-content-fragments.md) 컨텐츠 조각(및 기타 자산)을 만들고 수정할 수 있습니다.
 
 이 안내서의 나머지 부분은 GraphQL 액세스 및 컨텐츠 조각 전달에 중점을 둡니다.
