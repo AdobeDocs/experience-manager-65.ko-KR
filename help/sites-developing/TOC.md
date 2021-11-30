@@ -8,9 +8,9 @@ breadcrumb-title: Developing 안내서
 user-guide-description: 이 안내서에서는 AEM 인스턴스를 빌드하는 방법을 다룹니다.
 feature: Developing
 role: Developer
-source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
+source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1085'
 ht-degree: 73%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 73%
       + [위젯 사용 및 확장(클래식 UI)](widgets.md)
       + [xtype 사용(클래식 UI)](xtypes.md)
       + [양식 개발(클래식 UI)](developing-forms.md)
++ [AEM의 헤드리스 및 헤드리스](headful-headless.md)
 + 헤드리스 환경 관리{#headless}
    + [헤드리스 및 AEM](headless/introduction.md)
    + 시작 안내서 {#getting-started}
