@@ -4,10 +4,10 @@ description: 에 관한 릴리스 노트 [!DNL Adobe Experience Manager] 6.5 서
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 35260325b583bd047f22ffa88afb9469b2023e60
+source-git-commit: c7fdfeae785ad044437d065a8da6bdcbaf00d4c4
 workflow-type: tm+mt
-source-wordcount: '3367'
-ht-degree: 12%
+source-wordcount: '3674'
+ht-degree: 11%
 
 ---
 
@@ -320,91 +320,58 @@ Need to verify with Engineering, the status is currently showing as Resolved
 >* [!DNL Experience Manager Forms] 는 예약된 후 1주일 후에 추가 기능 패키지를 출시합니다 [!DNL Experience Manager] 서비스 팩 릴리스 날짜입니다.
 
 
-<!--
+**적응형 양식**
 
-[!DNL AEM 6.5.10.0 Forms] includes the following bug fixes:
+* 액세스 가능성 - `Wizard` 적응형 양식의 패널에 대한 레이아웃에는 Aria 레이블과 역할이 없습니다(NPR-37613).
 
-* When you install [!DNL AEM 6.5 Forms], the following third-party libraries are installed automatically (CQDOC-18373):
-  * [!DNL Microsoft Visual C++ 2008 Service Pack 1 (x86)]
-  * [!DNL Microsoft Visual C++ 2010 Service Pack 1 (x86)]
+* 적응형 양식의 날짜 필드에 대한 유효성 검사가 예상대로 작동하지 않습니다(NPR-37556).
 
-**Adaptive Forms**
+* 확인란 및 라디오 단추 구성 요소에 대한 레이블 텍스트가 길면 텍스트가 적절히 맞지 않습니다(NPR-37294).
 
-* If the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
+* AEM Forms 컨테이너 구성 요소의 감사 메시지에 스타일 변경 사항을 적용할 때 변경 사항이 소스 적응형 양식에 복제되지 않습니다(NPR-37284).
 
-* When you add a language dictionary to a translation project and then open the project, [!DNL AEM Forms] displays an error message (CQ-4324933):
+* 값의 차이 `Switch` 사용자 인터페이스 및 백엔드에 있는 구성 요소입니다(NPR-37268).
 
-   ```TXT
-   Uncaught TypeError: Cannot read property 'PROJECT_LISTING_PATH' of undefined
-   at openButtonClickHandler (clientlibs.js:245)
-   at HTMLButtonElement.onclick (clientlibs.js:258)
+* 키보드 키를 사용하여 `Submit` 옵션을 선택하고 키를 누릅니다 `Enter` 키를 사용하면 적응형 양식을 여러 번 제출할 수 있습니다(CQ-4333993).
 
-   ```
+* 첨부 파일 구성 요소에 대한 제거 작업이 예상대로 작동하지 않습니다(NPR-37376).
 
-* Performance issues after installing [!DNL AEM Forms] Service Pack 7 (CQ-4326828).
+* 필드에 대한 레이블이 다양한 언어로 해석되는 적응형 양식에서 1000자를 초과하는 경우 사전이 레이블의 번역을 검색하지 못합니다(CQ-4329290).
 
-* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. Apple iOS 15.1 provides a fix for the issue (CQ-4325361).
+**문서 서비스**
 
-**Correspondence Management**
-
-* Delay in the display of characters in the [!UICONTROL Data] tab as well as in the HTML letter preview (NPR-37020).
-
-* When you are editing a text document fragment, the new words display as HTML tags after saving the fragment (NPR-36837).
-
-* Unable to view the letters that are saved as drafts (NPR-36816).
-
-* When you edit a text document fragment and then preview the letter, AEM Forms displays the expression language in the HTML letter preview (CQ-4322331).
-
-* Issues while rendering data with a self-service letter template (NPR-37161).
-
-
-**Interactive Communications**
-
-* A tab character duplicates between two words each time you print preview an Interactive Communication after editing a text document fragment (NPR-37021).
-
-* [!DNL AEM Forms] displays an error when you save a text document fragment that exceeds the maximum size limit (NPR-36874).
-
-* When you add an image to an Interactive Communication, an additional empty block displays after the image (NPR-36659).
-
-* When you select all text in an editor, you cannot change the font text to Arial (NPR-36646).
-
-* When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
-
-* When you copy and paste text to an editor, there are issues while changing the font to Arial for bullets available in the document (NPR-36628). 
-
-* Indentation issues for bullets in the text editor (NPR-36513).
-
-**Designer**
-
-* Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
-
-**Document Services**
-
-* When you convert XDP files to PDF files and then assemble the resultant PDF, the PDF generations fails and displays the following error message:
+* 어셈블러 서비스를 사용하는 동안 오류가 표시됩니다(NPR-37606).
 
    ```TXT
-   Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
+     500 Internal Server Error
    ```
 
-**Forms Workflow**
+* 문서 첨부 파일이 어셈블러 서비스에 전달되면 다음 예외가 표시됩니다(NPR-37582).
 
-* Unable to submit a form to a Workbench process after upgrading to AEM Forms Service Pack 8 (CQ-4325846).
+   ```TXT
+     com.adobe.livecycle.assembler.client.ProcessingException: ⁪: Failed to execute the DDX
+   ```
 
-**HTML5 Forms**
+* PDF 문서를 PDF-A/1B PDF 문서로 변환한 후 데이터에서 닫는 괄호가 누락되었습니다(NPR-37608).
 
-* When you set the value for the `mfAllowAttachments` property as `True` in the CRX DE repository, the `dataXml` gets corrupted on submitting the HTML5 form (NPR-37035).
+**HTML5 양식**
 
-* When you render an XDP as HTML using `dataXml`, [!DNL AEM Forms] displays a `Page Unresponsive` error (NPR-36631).
+* AEM 6.5.10.0을 설치하면 XDP 양식에 대한 HTML 미리 보기가 작동하지 않습니다(NPR-37503, CQ-4331926).
 
-### Commerce {#commerce-65110}
+* 여러 언어로 HTML 5 양식으로 PDF forms을 마이그레이션하는 동안 텍스트가 겹치는 문제가 발생합니다(NPR-37173).
 
-* The value in the **[!UICONTROL Published By]** field displayed is incorrect in the Column view (NPR-36902).
-* When a Catalog is rolled out, new products are incorrectly marked as modified products (NPR-36666).
-* When you recreate a deleted product, the product page is not recreated (NPR-36665).
-* Modified pages are updated but the corresponding linked products are not updated on Catalog rollout (CQ-4321409, NPR-36422).
-* The **[!UICONTROL Publish later]** and **[!UICONTROL Unpublish later]** workflows do not work (CQ-4327679).
+**편지**
 
--->
+* 편지를 제출하고 HTML 보기에서 다시 열면 텍스트 문서 조각의 위치가 동일하게 유지되지 않습니다(NPR-37307).
+
+**양식 워크플로우**
+
+* 포함된 컨테이너 워크플로우의 경우, 을(를) 선택한 후에도 여러 워크플로우 완료 이메일을 받게 됩니다 `Notify on Complete of Container Workflow` 옵션(NPR-37280).
+
+**Foundation JEE**
+
+* AEM 6.5 Forms 서비스 팩 9를 설치한 후 CRX 저장소 URL을 더 이상 사용할 수 없습니다(NPR-37592).
+
 
 보안 업데이트에 대한 자세한 내용은 [[!DNL Experience Manager] 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html).
 
