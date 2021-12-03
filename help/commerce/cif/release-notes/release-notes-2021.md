@@ -2,10 +2,10 @@
 title: AEM Content and Commerce 릴리스 노트 2021
 description: AEM Content and Commerce 릴리스 노트 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 7261a71769dfb968c768e0cb4835d7d4cca97b1a
+source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 10%
+source-wordcount: '1311'
+ht-degree: 11%
 
 ---
 
@@ -15,19 +15,29 @@ ht-degree: 10%
 
 현재 사용 중인 CIF 버전 또는 향후 사용할 예정인 최소 시스템 요구 사항을 아래 표에서 검토하십시오.
 
-**4월 릴리스에서는 GitHub의 CIF 커넥터를 CIF 추가 기능으로 대체했습니다** 사용 가능한 [Adobe 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 추가 기능으로 전환하면 프로젝트에 큰 이점이 있습니다.
-
-* 대부분의 새로운 기능은 AEM 6.5에서 즉시 사용할 수 있습니다(기능 사이드 포트를 기다리지 않음).
-* 새로운 추가 기능 버전으로 쉽게 업그레이드 가능
-* Cloud Service 준비
-
-이전 AEM CIF 커넥터가 유지 관리 모드로 전환되고 있으므로 더 이상 사용하지 않아야 합니다. CIF 커넥터를 새 CIF 추가 기능으로 바꾸십시오. 대부분의 프로젝트에 대해 단순히 패키지를 대체할 수 있어야 합니다.
-
 | 구성 요소 | 시스템 요구 사항 |
 |:-------|:-----:|
 | CIF 추가 기능 | 최소: AEM 6.5.7, Magento 2.3.5 GraphQL 스키마 |
 | CIF 코어 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM Project Archetype | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## 릴리스 날짜: 2021년 11월
+
+| 구성 요소 | 버전 | 세부 사항 |
+|:-------|:-----:|---------------------:|
+| CIF 추가 기능 | 2021.11.18.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
+| CIF 코어 구성 요소 | 2.4.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
+| CIF Venia 참조 사이트 | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
+
+### 새로운 기능 {#what-is-new-november}
+
+* Commerce의 확장 가능한 상위 구성 요소를 기반으로 하는 myAccount 구성 요소를 확장했습니다
+
+![확장 myAccount 구성 요소](/help/assets/CIF/extended-myAccount-components.png)
+
+* 작성자는 추가 권장 사항 유형을 사용하여 Ad-Hoc Commerce 제품 Recommendations을 만들 수 있습니다
+
+* AEM Storefront에서 기프트 카드 지원
 
 ## 릴리스 날짜: 2021년 10월
 
@@ -43,7 +53,7 @@ ht-degree: 10%
 
 * 작성자는 리치 텍스트 편집기(RTE)를 사용하여 텍스트 필드에 제품 및 카탈로그 페이지에 대한 링크를 추가할 수 있습니다. CIF 아이콘이 RTE 도구 모음에 추가되어 컨텍스트를 종료하지 않고 제품이나 카테고리를 빠르게 검색하고 선택할 수 있는 선택기가 열립니다.
 
-* 기존 팝업 장바구니 및 체크아웃이 전용 AEM 장바구니 및 체크아웃 페이지로 대체되었습니다. 이러한 페이지의 구성 요소는 Magento의 확장 가능한 상위 구성 요소를 사용하여 만들어집니다
+* 기존 팝업 장바구니 및 체크아웃이 전용 AEM 장바구니 및 체크아웃 페이지로 대체되었습니다. 이러한 페이지에 있는 구성 요소는 Magento의 확장 가능한 상위 구성 요소를 사용하여 만들어집니다
 
 * 상인은 상거래 백엔드를 사용하여 탐색에서 특정 제품 카탈로그 카테고리를 숨길 수 있습니다. CIF 탐색 코어 구성 요소는 탐색에서 카테고리를 표시하거나 숨기기 위해 상거래 백엔드 구성 &quot;include in menu&quot;를 따릅니다
 
