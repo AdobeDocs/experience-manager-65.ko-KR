@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: 71c91d0284508463ea7746b6fe0ba82372005c81
+source-git-commit: a98ee0c090c299bc86bf027f69b2e191b716707a
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '657'
 ht-degree: 46%
 
 ---
@@ -121,6 +121,7 @@ ht-degree: 46%
    + [통합 대상 [!DNL InDesign Server]](indesign.md)
    + [자산의 디지털 권한 관리](drm.md)
    + [자산 통찰력에 데모 패키지 사용](use-demo-package-for-asset-insights.md)
+   + [Adobe 자산 링크 구성](configure-asset-link.md)
    + [Adobe InDesign에 대한 FPO 표현물 생성](configure-fpo-renditions.md)
    + [자산 파일 형식 우수 사례](assets-file-format-best-practices.md)
    + [자산 모니터링 우수 사례](assets-monitoring-best-practices.md)
