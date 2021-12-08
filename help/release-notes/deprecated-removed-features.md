@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 6.5 릴리스에서 사용 중단되거나 제거된 기능.
 description: Adobe Experience Manager 6.5의 더 이상 사용되지 않는 및 제거된 기능에 관한 릴리스 노트입니다.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: c9db5a1764d98bb049c08a0e6962b7ed5e1bfe5c
+source-git-commit: 6ec25e3c59a841a6734f1d0e9d4347557d89e79a
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1761'
 ht-degree: 68%
 
 ---
@@ -28,6 +28,7 @@ AEM 기능을 제거하거나 교체하기 위해 다음 규칙이 적용됩니�
 
 | 영역 | 기능 | 대체 | 버전 (SP) |
 |---|---|---|---|
+| [!DNL Sites] | 에 대한 경험 조각 속성 **소셜 미디어 상태**. |  | 6.5.11.0 |
 | [!DNL Sites] | 단순 컨텐츠 조각을 만드는 컨텐츠 조각 템플릿. | [모델 기반의 구조화된 컨텐츠 조각](/help/assets/content-fragments/content-fragments-models.md) 지금 | 6.5.11.0 |
 | Creative Cloud 통합 | AEM에서 Creative Cloud으로 폴더 공유 는 Creative 사용자에게 AEM의 자산에 대한 액세스 권한을 부여하는 방법으로 AEM 6.2에서 도입되어, [!DNL Creative Cloud] 애플리케이션을 실행하고 새 파일을 업로드하거나 AEM에 변경 사항을 저장합니다. Creative Cloud 애플리케이션에서 새롭게 출시된 기능인 Adobe Asset Link는 Photoshop, InDesign 및 Illustrator에서 직접 AEM 자산에 액세스할 수 있는 강력한 권한과 함께 우수한 사용자 경험을 제공합니다. Adobe는 향후 Creative Cloud 폴더 공유 통합을 위해 AEM을 개선할 계획이 없습니다. 고객은 AEM에 해당 기능이 포함되어 있는 동안 교체 솔루션을 사용해 보시기 바랍니다. | 또한 Adobe Assset Link 또는 AEM 데스크탑 앱을 비롯한 새로운 Creative Cloud 통합 기능으로 전환하는 것이 좋습니다. |  |
 | 에셋 | `AssetDownloadServlet` 게시 인스턴스에 대해 기본적으로 가 비활성화되어 있습니다. 자세한 내용은 [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)을 참조하십시오. | [AEM 보안 검사 목록](/help/sites-administering/security-checklist.md)에 설명된 구성입니다. |  |
