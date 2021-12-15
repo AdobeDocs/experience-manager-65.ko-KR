@@ -2,10 +2,10 @@
 title: 헤드리스 시작 안내서
 description: 이 빠른 시작 안내서를 통해 컨텐츠 모델, 컨텐츠 조각 및 GraphQL API와 같은 AEM 6.5의 강력한 헤드리스 기능의 핵심 사항을 살펴볼 수 있습니다.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
+source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 5%
+source-wordcount: '301'
+ht-degree: 4%
 
 ---
 
@@ -22,11 +22,8 @@ ht-degree: 5%
 >[!TIP]
 >
 >이 시작 안내서에서는 AEM 및 헤드리스 기술에 대한 지식을 가정합니다.
-
-<!-- HM-Links
 >
->If you are new to either AEM or headless, please refer to our [Headless Documentation Journeys](/help/journey-headless/home.md) for an end-to-end introduction to both headless and how AEM supports it.
--->
+>AEM 또는 헤드리스를 처음 사용하는 경우 [헤드리스 설명서 여정](/help/journey-headless/home.md) headless와 AEM에서 이를 지원하는 방법에 대한 철저한 소개입니다.
 
 ## 속성을 확인하는 {#audience}
 
