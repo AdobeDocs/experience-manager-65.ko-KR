@@ -1,7 +1,7 @@
 ---
 title: AEM 헤드리스 시작하기
 description: AEM Headless Developer 여정의 이 부분에서 AEM Headless 사전 요구 사항에 대해 알아봅니다.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 1%
@@ -273,11 +273,6 @@ AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수�
 ## 추가 리소스 {#additional-resources}
 
 문서를 검토하여 헤드리스 개발 여정의 다음 부분으로 이동하는 것이 좋습니다 [AEM Headless를 사용하여 첫 번째 경험에 대한 경로,](path-to-first-experience.md) 다음은 이 문서에서 언급된 일부 개념을 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 하지만 헤드리스 여정을 계속 진행할 필요는 없습니다.
-
-<!-- HM-Links
-* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
-* [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure
--->
 
 * [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md) - 이 설명서 여정은 헤드리스 기술, AEM에서 헤드리스 콘텐츠를 제공하는 방법 및 이를 번역할 수 있는 방법에 대한 광범위한 이해를 제공합니다.
 * [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 자습서를 통해 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.

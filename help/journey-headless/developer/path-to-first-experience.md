@@ -1,7 +1,7 @@
 ---
 title: AEM Headless를 사용하여 첫 번째 경험에 대한 경로
 description: AEM Headless Developer 여정의 이 부분에서 계획 고려 사항을 포함하여 AEM에서 첫 번째 헤드리스 경험을 구현하는 단계를 이해하고, 가능한 한 원활한 경로를 만드는 우수 사례를 알아봅니다.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
 workflow-type: tm+mt
 source-wordcount: '1982'
 ht-degree: 0%
@@ -150,12 +150,3 @@ Adobe은 학습 스타일이 무엇이든 AEM Headless 프로젝트를 시작할
 * [컨텐츠 조각 모델 만들기](/help/assets/content-fragments/content-fragments-models.md) - 컨텐츠 조각 모델에 대한 기술 설명서
 * [컨텐츠 조각 만들기](/help/assets/content-fragments/content-fragments.md) - 컨텐츠 조각에 대한 기술 설명서
 * [GraphQL을 사용하여 쿼리 컨텐츠](/help/assets/content-fragments/graphql-api-content-fragments.md) - GraphQL API에 대한 기술 설명서
-
-<!-- HM-Links
-* [Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - A complete overview of AEM's architecture
-* [Headless Getting Started Guide](/help/implementing/developing/headless/introduction.md#getting-started) - A quick introduction to AEM's headless features for users already knowledgeable of AEM.
-* [Create Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Technical documentation on Content Fragment Models
-* [Create Content Fragments](/help/assets/content-fragments/content-fragments.md) - Technical documentation on Content Fragments
-* [Query content with GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technical documentation on the GraphQL API
-
--->

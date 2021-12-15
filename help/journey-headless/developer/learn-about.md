@@ -1,7 +1,7 @@
 ---
 title: CMS 헤드리스 개발에 대해 알아보기
 description: AEM Headless Developer 여정의 이 부분에서 헤드리스 기술과 왜 이 기술을 사용하는지 알아봅니다.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 0%
@@ -124,9 +124,5 @@ AEM 헤드리스 여정을 시작해 주셔서 감사합니다! 이 문서를 �
 ## 추가 리소스 {#additional-resources}
 
 문서를 검토하여 헤드리스 개발 여정의 다음 부분으로 이동하는 것이 좋습니다 [AEM Headless 시작하기](getting-started.md)다음은 이 문서에서 언급된 일부 개념을 자세히 설명하는 몇 가지 추가 선택적 리소스입니다. 하지만 헤드리스 여정을 계속 진행할 필요는 없습니다.
-
-<!-- HM-Links
-* [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure
--->
 
 * [AEM 헤드리스 Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 자습서를 통해 AEM을 사용하여 헤드리스 종단점에 콘텐츠를 전달하는 데 다양한 옵션을 사용하는 방법을 탐색하고 자신에게 적합한 콘텐츠를 선택합니다.
