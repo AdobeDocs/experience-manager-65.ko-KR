@@ -4,9 +4,9 @@ description: 에 관한 릴리스 노트 [!DNL Adobe Experience Manager] 6.5 서
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f2ccc77393e7fc1f53f9976076ec3c66c3f74189
+source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
 workflow-type: tm+mt
-source-wordcount: '3728'
+source-wordcount: '3822'
 ht-degree: 11%
 
 ---
@@ -371,6 +371,17 @@ Need to verify with Engineering, the status is currently showing as Resolved
 **Foundation JEE**
 
 * AEM 6.5 Forms 서비스 팩 9를 설치한 후 CRX 저장소 URL을 더 이상 사용할 수 없습니다(NPR-37592).
+
+**AEM Forms 6.5.11.1에서 해결된 문제**
+
+>[!NOTE]
+>
+>AEM 6.5.11.0 Forms으로 업그레이드하지 않은 경우 AEM Forms 6.5.11.1 추가 기능 패키지를 직접 설치하십시오. AEM 6.5.11.0 Forms을 설치한 경우 AEM 6.5.11.1 Forms으로 업그레이드하는 것이 좋습니다.
+
+* Forms 6.5.11.0 추가 기능 패키지를 설치한 후 작업 제출, 이메일 보내기 및 AEM 워크플로우 호출 작업이 중지됩니다.
+* Forms 6.5.11.0 추가 기능 패키지를 설치한 후 CreatePDF 작업이 Microsoft Word 문서를 PDF 문서로 변환하는 작업을 중지합니다.
+* (JEE만 해당) Apache Log4j2에 대해 보고된 중요한 보안 취약점(CVE-2021-44228 및 CVE-2021-45046)입니다.
+* (JEE만 해당) 6.5.11.0 패치의 어셈블러 DSC에 사양 버전 및 impl 버전과 같은 잘못된 메타포가 포함되어 있습니다.
 
 
 보안 업데이트에 대한 자세한 내용은 [[!DNL Experience Manager] 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html).
