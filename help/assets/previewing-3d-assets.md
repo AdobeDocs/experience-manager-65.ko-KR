@@ -1,14 +1,14 @@
 ---
 title: 3D 자산 미리 보기
-description: 3D 자산을 미리 보는 방법 알아보기
+description: Experience Manager에서 3D 자산을 미리 보는 방법을 알아봅니다.
 contentOwner: Rick Brough
 docset: aem65
-feature: 3D 자산
+feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 32e637463a2f68a48b39c5dea9cc3cc4d1596d9b
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 10%
 
 ---
@@ -28,7 +28,7 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
 | 3D 파일 확장명 | 파일 형식 | MIME 유형 | 메모 |
 |---|---|---|---|
 | GLB | 이진 GL 전송 | model/gltf-binary |  |
-| GLTF | GL 전송 형식 | model/gltf+json | 아래의 **참고**&#x200B;를 참조하십시오. |
+| GLTF | GL 전송 형식 | model/gltf+json | 자세한 내용은 **참고** 아래의 제품에서 사용할 수 있습니다. |
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
 | STL | 입체광조형 | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | 수집만 지원 미리 보기를 사용할 수 없습니다. |
@@ -36,14 +36,14 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
 
 >[!NOTE]
 >
->GLTF 모델의 미리 보기에서 재료가 렌더링되지 않는 경우 다음과 같이 모델과 동일한 루트 폴더의 `textures` 폴더에 재료 이름이 올바르게 지정되었는지 확인합니다.
+>자료가 gLTF 모델의 미리 보기에서 렌더링되지 않는 경우 재료 이름이 올바르게 지정되었는지 확인합니다. `textures` 모델과 동일한 루트 폴더의 폴더(다음과 유사):
 
     자산(폴더)
-    model.
-    gltfmodel.
-    bitries(폴더)
-    material_0_baseColor.
-    jpegmaterial_0_normal.jpeg
+    model.gltf
+    model.bin
+    텍스처(폴더)
+    material_0_baseColor.jpeg
+    material_0_normal.jpeg
 
 ## Experience Manager에서 3D 자산을 미리 볼 때의 성능 고려 사항{#performance-3d-previewing-assets}
 
@@ -54,12 +54,12 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
 **Experience Manager에서 3D 자산을 미리 보려면 다음을 수행하십시오.**
 
 1. 3D 자산을 Experience Manager에 업로드했는지 확인합니다.
-[3D 미리 보기](#supported-3d-previewing-assets) 및 [자산 업로드](/help/assets/manage-assets.md#uploading-assets)에 대해 지원되는 형식을 참조하십시오.
-1. Experience Manager의 **[!UICONTROL 탐색]** 페이지에서 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**&#x200B;을 선택합니다.
+자세한 내용은 [3D 미리 보기에 대해 지원되는 형식](#supported-3d-previewing-assets) 및 [자산 업로드](/help/assets/manage-assets.md#uploading-assets).
+1. Experience Manager에서 **[!UICONTROL 탐색]** 페이지를 선택하고 **[!UICONTROL 자산]** > **[!UICONTROL 파일]**.
 
    ![탐색 페이지](/help/assets/assets-dm/navigation-assets.png)
 
-1. 페이지의 오른쪽 위 모서리 근처에 있는 보기 드롭다운 목록에서 **[!UICONTROL 카드 보기]**&#x200B;를 선택한 다음, 미리 보려는 3D 자산으로 이동합니다.
+1. 페이지의 오른쪽 위 모서리 근처에 있는 보기 드롭다운 목록에서 을(를) 선택합니다 **[!UICONTROL 카드 보기]**&#x200B;를 클릭한 다음 미리 보려는 3D 자산으로 이동합니다.
 
    ![3D 카드 선택](/help/assets/assets-dm/3d-card-select.png)
    _카드 보기에서 미리 보려는 3D 자산의 카드를 선택합니다._
@@ -79,4 +79,4 @@ Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전�
    | **재설정** | 페이지의 오른쪽 아래 모서리 근처에 있는 재설정 아이콘을 선택하여 보기 대상 포인트를 3D 자산의 중심으로 복원합니다. 또한 재설정을 수행하면 카메라가 더 가깝거나 더 멀게 이동되어 자산이 전체적으로 적절한 보기 크기로 표시됩니다. |  |  |
    | **전체 화면 모드** | 전체 화면 모드로 전환하려면 페이지의 오른쪽 아래 모서리에서 전체 화면 아이콘을 선택합니다. |  |  |
 
-1. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.
+1. 완료되면 페이지의 오른쪽 위 모서리 근처에 있는 를 선택합니다. **[!UICONTROL 닫기]**.
