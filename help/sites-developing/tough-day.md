@@ -6,9 +6,9 @@ seo-description: The Tough Day test simulates the daily load of around 1000 auth
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 36c0728908e24a13d08c1eaed4e39542f5b61df5
+source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1879'
 ht-degree: 2%
 
 ---
@@ -289,7 +289,7 @@ Tough Day 2는 다음 모드 중 하나로 실행될 수 있습니다. **정상*
 
 * `waittime` - 동일한 스레드에서 두 개의 연속 테스트 실행 사이의 대기 시간입니다. 값은 밀리초 단위로 표시되어야 합니다.
 
-아래 예는 명령줄을 사용하여 매개 변수를 추가하는 방법을 보여줍니다.
+아래 예제는 명령줄을 사용하여 매개 변수를 추가하는 방법을 보여 줍니다.
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest --runmode=normal concurrency=20
@@ -403,8 +403,10 @@ Tough Day 2 는 Tough Day 2 를 실행한 동일한 디렉토리에 로그 폴�
 
 로그를 덮어쓰지 않고 후속 실행에서 기존 로그에 메시지를 추가합니다. 로그에는 몇 가지 수준이 있습니다. 자세한 내용은 ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### 사용 예 {#example-usage}
+<!--
+#### Example Usage {#example-usage}
 
-#### 알려진 문제 {#known-issues}
+#### Known Issues {#known-issues}
 
-[파일 가져오기](assets/toughday-6_1.jar)
+[Get File](assets/toughday-6_1.jar)
+-->
