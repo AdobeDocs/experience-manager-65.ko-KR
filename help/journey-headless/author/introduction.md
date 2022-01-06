@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ## CMS(콘텐츠 관리 시스템) {#content-management-system}
 
-컨텐츠 관리 시스템이란 무엇입니까?
+What is a Content Management System?
 
-CMS(Content Management System)는 컨텐츠 관리에 사용되는 컴퓨터 시스템이라는 뜻입니다. 이는 일반적으로 웹 사이트에서 사용할 수 있도록 하려는 컨텐츠를 관리하는 데 사용됩니다. 더 자세하게는 일반적으로 웹 사이트에서 사용할 수 있는 컨텐츠를 관리하는 데 사용됩니다.
+A Content Management System (CMS) is just what it says it is - a computer system used to manage content. That&#39;s a bit general, so to be more precise, it is (typically) used for managing content that you want to make available on your website(s).
 
 ## 헤드리스 CMS {#headless-cms}
 
@@ -35,11 +35,11 @@ CMS(Content Management System)는 컨텐츠 관리에 사용되는 컴퓨터 시
 
 >[!NOTE]
 >
->헤드리스 CMS의 기술적인 세부 사항에 대해 자세히 알아보려면 CMS 헤드리스 개발에 대한 학습 을 참조하십시오.
+>If you want to learn more about the technical details of Headless CMS you can read more at Learn About CMS Headless Development.
 
 ## Adobe Experience Manager {#aem-cms}
 
-그러면 AEM은 무엇일까요?
+So what is AEM?
 
 우선, AEM은 요구 사항을 충족하도록 사용자 지정할 수 있는 다양한 기능을 갖춘 컨텐츠 관리 시스템입니다.
 
@@ -56,11 +56,11 @@ CMS(Content Management System)는 컨텐츠 관리에 사용되는 컴퓨터 시
 
 ## 컨텐츠 모델링 {#content-modeling}
 
-따라서 컨텐츠 모델링(데이터 모델링이라고도 함)은 또 다른 기술 용어입니다. 작성자로서 흥미를 느껴야 하는 이유는 무엇입니까?
+So content modeling (also known as data modeling) is another technical term - why should it interest you as an author?
 
-헤드리스 애플리케이션에서 사용자 컨텐츠에 액세스하고 이를 사용하여 작업을 수행하려면 컨텐츠가 사전 정의된 구조를 가져야 합니다. 여러분의 컨텐츠가 자유형처럼 될 수 있지만, 그것은 생명을 만들 것입니다 *매우* 응용 프로그램에 대해 복잡합니다.
+헤드리스 애플리케이션에서 사용자 컨텐츠에 액세스하고 이를 사용하여 작업을 수행하려면 컨텐츠가 사전 정의된 구조를 가져야 합니다. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
 
-기본적으로 컨텐츠를 준수하기 위한 구조를 정의하는 과정에는 모델을 디자인하는 작업이 포함되며 이를 데이터 모델링이라고 합니다.
+Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling.
 
 AEM의 경우 컨텐츠 설계자 역할(종종 다른 사람)은 데이터 모델링을 수행하여 다양한 **컨텐츠 조각 모델** - 을 사용하여 컨텐츠의 기반으로 사용할 수 있습니다. **컨텐츠 조각**.
 
@@ -75,7 +75,7 @@ AEM의 경우 컨텐츠 설계자 역할(종종 다른 사람)은 데이터 모�
 ## 추가 리소스 {#additional-resources}
 
 * AEM Headless Developer 여정
-   * [CMS 헤드리스 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
+   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
 
 * [AEM Headless Content Architect 여정](/help/journey-headless/architect/overview.md)
 
