@@ -1,10 +1,7 @@
 ---
 title: 번역 규칙 구성
 description: 번역 규칙을 정의하여 번역 콘텐츠를 식별하는 방법을 알아봅니다.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 7cf68868e0963930bde9fcda647822a03914b61d
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%

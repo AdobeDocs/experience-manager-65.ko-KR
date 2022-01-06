@@ -1,10 +1,7 @@
 ---
 title: AEM에서 컨텐츠 조각 모델 생성에 대해 알아봅니다
 description: 컨텐츠 조각 모델을 사용하여 헤드리스 CMS용 컨텐츠 모델링 컨텐츠의 개념과 역학에 대해 알아봅니다.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 99e7bb800da659fb8494eef2d9b9b87a6f263c21
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 7%

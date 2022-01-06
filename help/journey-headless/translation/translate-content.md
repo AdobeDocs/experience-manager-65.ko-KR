@@ -1,10 +1,7 @@
 ---
 title: 컨텐츠 번역
 description: 번역 커넥터와 규칙을 사용하여 헤드리스 콘텐츠를 번역합니다.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 7cf68868e0963930bde9fcda647822a03914b61d
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '2174'
 ht-degree: 0%

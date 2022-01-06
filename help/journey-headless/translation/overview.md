@@ -1,10 +1,7 @@
 ---
 title: AEM 헤드리스 번역 여정
 description: AEM의 강력한 번역 도구를 사용하여 헤드리스 콘텐츠를 번역하여 안내식 여정을 살펴보려면 여기에서 시작하십시오.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 7cf68868e0963930bde9fcda647822a03914b61d
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 2%

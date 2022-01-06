@@ -1,10 +1,7 @@
 ---
 title: 번역 커넥터 구성
 description: AEM을 번역 서비스에 연결하는 방법을 알아봅니다.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 7cf68868e0963930bde9fcda647822a03914b61d
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 0%

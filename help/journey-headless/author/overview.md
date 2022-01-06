@@ -1,10 +1,7 @@
 ---
 title: AEM Headless Content Author 여정
 description: AEM의 강력하고 유연한 헤드리스 기능 및 프로젝트용 컨텐츠를 작성하는 방법을 통해 안내식 여정을 살펴보려면 여기에서 시작하십시오.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 867b0a5a4c660a069e54094ed003cd93289048c7
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 1%
