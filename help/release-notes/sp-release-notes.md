@@ -4,9 +4,9 @@ description: 에 관한 릴리스 노트 [!DNL Adobe Experience Manager] 6.5 서
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
+source-git-commit: 282f634e84b7c6c5e281d2b425953853790f225c
 workflow-type: tm+mt
-source-wordcount: '3822'
+source-wordcount: '3829'
 ht-degree: 11%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 11%
 * 사용자 경험 개선 사항은 폴더에 있는 자산 수를 표시합니다. 폴더에 있는 1000개 이상의 자산의 경우, [!DNL Assets] 1000 이상을 표시합니다.
 
 * 이제 카드 및 열 보기에서 정렬 옵션을 렌더링할 수 있습니다.
+
+* 비즈니스 프로필은 Adobe 자산 링크를 지원합니다.
 
 * 이제 다음을 사용할 수 있습니다 [!DNL Dynamic Media] 일반 설정을 구성하는 것이 아니라 [!DNL Dynamic Media Classic] 데스크탑 응용 프로그램입니다. 자세한 내용은 [Dynamic Media 일반 설정 구성](/help/assets/dm-general-settings.md).
 
@@ -380,7 +382,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Forms 6.5.11.0 추가 기능 패키지를 설치한 후 작업 제출, 이메일 보내기 및 AEM 워크플로우 호출 작업이 중지됩니다.
 * Forms 6.5.11.0 추가 기능 패키지를 설치한 후 CreatePDF 작업이 Microsoft Word 문서를 PDF 문서로 변환하는 작업을 중지합니다.
-* (JEE만 해당) Apache Log4j2에 대해 보고된 중요한 보안 취약점(CVE-2021-44228 및 CVE-2021-45046)입니다.
+* (JEE만 해당) Apache Log4j2에 대해 심각한 보안 취약성(CVE-2021-44228 및 CVE-2021-45046)이 보고되었습니다.
 * (JEE만 해당) 6.5.11.0 패치의 어셈블러 DSC에 사양 버전 및 impl 버전과 같은 잘못된 메타포가 포함되어 있습니다.
 
 
