@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 0a28a2cf1184ebdbbc907a661f2d0a2c18775822
+source-git-commit: 41a9ab1dd37c135be73fe47bc36ceb4845e13379
 workflow-type: tm+mt
-source-wordcount: '3486'
+source-wordcount: '3427'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Adobe은 이 문서의 다음 정보에 자세히 설명된 대로 플랫폼에서 Adobe Experience Manager(AEM)을 지원합니다.
 
-For any issues that are specifically related to the platform, contact the platform vendor.
+플랫폼과 특별히 관련된 문제는 플랫폼 공급업체에 문의하십시오.
 
 >[!NOTE]
 >
@@ -32,14 +32,14 @@ Adobe Experience Manager 설치를 위한 최소 요구 사항:
 
 ### 최소 크기 조정 요구 사항 {#minimum-sizing-requirements}
 
-Minimum requirements for running Adobe Experience Manager:
+Adobe Experience Manager 실행을 위한 최소 요구 사항:
 
-* 5 GB free disk space in the installation directory
+* 설치 디렉터리에서 5GB의 사용 가능한 디스크 공간
 * 2GB 메모리
 
 >[!NOTE]
 >
->* 디지털 자산 사용 사례에는 더 많은 기본 메모리가 필요합니다. See [Deploying and Maintaining](/help/sites-deploying/deploy.md#default-local-install) for details.
+>* 디지털 자산 사용 사례에는 더 많은 기본 메모리가 필요합니다. 자세한 내용은 [배포 및 유지 관리](/help/sites-deploying/deploy.md#default-local-install) 자세한 내용
 >* [AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md) 15GB의 임시 공간이 필요합니다.
 
 >
@@ -47,9 +47,9 @@ Minimum requirements for running Adobe Experience Manager:
 
 자세한 내용은 [하드웨어 크기 조정 지침](/help/managing/hardware-sizing-guidelines.md).
 
-### Support Levels {#support-levels}
+### 지원 수준 {#support-levels}
 
-This document lists the supported client and server platforms for Adobe Experience Manager. Adobe은 권장 구성 및 기타 구성을 위해 몇 가지 수준의 지원을 제공합니다.
+이 문서에서는 Adobe Experience Manager에 대해 지원되는 클라이언트 및 서버 플랫폼을 나열합니다. Adobe은 권장 구성 및 기타 구성을 위해 몇 가지 수준의 지원을 제공합니다.
 
 ### 지원되는 구성 {#supported-configurations}
 
@@ -90,60 +90,60 @@ Adobe Experience Manager은 다음 버전의 Java Virtual Machine을 사용하�
 >
 >프로덕션 환경의 안전과 보안을 보장하고 최신 Java 업데이트를 설치하려면 Java 공급업체의 보안 게시판을 추적하는 것이 좋습니다.
 
-<table>
+<!--- <table>
  <tbody>
   <tr>
-   <td><strong>플랫폼</strong></td>
-   <td><strong>지원 수준</strong></td>
-   <td><strong>링크</strong></td>
+   <td><strong>Platform</strong></td>
+   <td><strong>Support Level</strong></td>
+   <td><strong>Link</strong></td>
   </tr>
   <tr>
-   <td>아줄 줄루 오픈JDK 11 - 64비트</td>
-   <td>A: 지원되는 [1]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24</td>
+   <td>Azul Zulu OpenJDK 11 - 64bit</td>
+   <td>A: Supported [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24</td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 8 - 64bit</td>
-   <td>A: 지원되는 [1]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18</td>
+   <td>A: Supported [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=18</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 11 JDK - 64비트</td>
-   <td>A: 지원되는 [2]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24<td>
+   <td>Oracle Java SE 11 JDK - 64bit</td>
+   <td>A: Supported [2]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>
   </tr>
   <tr>
    <td>Oracle Java SE 10 JDK</td>
-   <td>Z: 지원되지 않음 [2]</td>
+   <td>Z: Not supported [2]</td>
   </tr>
   <tr>
    <td>Oracle Java SE 9 JDK</td>
-   <td>Z: 지원되지 않음 [2]</td>
+   <td>Z: Not supported [2]</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 8 JDK - 64비트</td>
-   <td>A: 지원되는 [2]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10<td>
+   <td>Oracle Java SE 8 JDK - 64bit</td>
+   <td>A: Supported [2]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10<td>
   </tr>
   <tr>
-   <td>IBM J9 VM - 빌드 2.9, JRE 1.8.0</td>
-   <td>A: 지원되는 [3]</td>
+   <td>IBM J9 VM - build 2.9, JRE 1.8.0</td>
+   <td>A: Supported [3]</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - 빌드 2.8, JRE 1.8.0</td>
-   <td>A: 지원되는 [3]</td>
+   <td>IBM J9 VM - build 2.8, JRE 1.8.0</td>
+   <td>A: Supported [3]</td>
   </tr>
  </tbody>
-</table>
+</table> --->
 
 | **플랫폼** | **지원 수준** | **링크** |
 |---|---|---|
-| Azul Zulu OpenJDK 11 - 64bit | A: 지원됨 `[1]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) |
-| Azul Zulu OpenJDK 8 - 64bit | A: 지원됨 `[1]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18) |
-| Oracle Java SE 11 JDK - 64비트 | A: Supported `[2]` |
+| 아줄 줄루 오픈JDK 11 - 64비트 | A: 지원됨 `[1]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) |
+| 아줄 줄루 오픈JDK 8 - 64비트 | A: 지원됨 `[1]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18) |
+| Oracle Java SE 11 JDK - 64비트 | A: 지원됨 `[2]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java SE 10 JDK | Z: 지원되지 않음 `[2]` |
 | Oracle Java SE 9 JDK | Z: 지원되지 않음 `[2]` |
-| Oracle Java SE 8 JDK - 64비트 | A: Supported `[2]` |
+| Oracle Java SE 8 JDK - 64비트 | A: 지원됨 `[2]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | IBM J9 VM - 빌드 2.9, JRE 1.8.0 | A: 지원됨 `[3]` |
 | IBM J9 VM - 빌드 2.8, JRE 1.8.0 | A: 지원됨 `[3]` |
 
@@ -171,7 +171,7 @@ Adobe Experience Manager 리포지토리를 배포하는 다양한 옵션이 있
 | IBM DB2 10.5 | 저장소 및 Forms 데이터베이스 | R: 제한된 지원 `[4]` |
 | Oracle 데이터베이스 12c(12.1.x) | 저장소 및 Forms 데이터베이스 | R: 제한된 지원 |
 | Microsoft SQL Server 2016 | Forms 데이터베이스 | A: 지원됨 |
-| **Apache Lucene (Quickstart built-in)** | 검색 서비스 | A: 지원됨 |
+| **Apache Lucene(Quickstart 기본 제공)** | 검색 서비스 | A: 지원됨 |
 | Apache 솔루션 | 검색 서비스 | A: 지원됨 |
 
 1. &#39;파일 시스템&#39;에는 POSIX 호환 블록 저장소가 포함됩니다. 여기에는 네트워크 스토리지 기술이 포함됩니다. 파일 시스템 성능은 다를 수 있으며 전체 성능에 영향을 줄 수 있습니다. 네트워크/원격 파일 시스템과 함께 테스트 AEM을 로드하는 것이 좋습니다.
@@ -219,7 +219,7 @@ Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)나 타사 �
 | IBM WebSphere Application Server 9.0 및 IBM JRE 1.8 | R: 신규 계약에 대한 제한된 지원 `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R: 신규 계약에 대한 제한된 지원 `[2]` |
 | JBoss 애플리케이션 서버를 사용하는 JBoss EAP 7.2.x | Z: 지원되지 않음 |
-| JBoss EAP 7.1.4 with JBoss Application Server | R: 신규 계약에 대한 제한된 지원 `[1]` `[2]` |
+| JBoss 애플리케이션 서버를 사용하는 JBoss EAP 7.1.4 | R: 신규 계약에 대한 제한된 지원 `[1]` `[2]` |
 | JBoss Application Server가 포함된 JBoss EAP 7.0.x | Z: 지원되지 않음 |
 
 1. AEM Forms을 사용한 배포에 권장됩니다.
@@ -287,19 +287,19 @@ AEM 사용자 인터페이스는 더 큰 화면(일반적으로 노트북 및 �
 >
 >**릴리스 주기가 빠른 브라우저 지원:**
 >
->Mozilla Firefox, Google Chrome 및 Microsoft Edge 릴리스는 몇 개월마다 업데이트됩니다. Adobe is committed to provide updates for Adobe Experience Manager to maintain the support level as stated below with upcoming versions of these browsers.
+>Mozilla Firefox, Google Chrome 및 Microsoft Edge 릴리스는 몇 개월마다 업데이트됩니다. Adobe은 향후 출시될 버전의 이러한 브라우저에서 아래에 명시된 지원 수준을 유지하기 위해 Adobe Experience Manager에 대한 업데이트를 제공하기 위해 노력하고 있습니다.
 
 <table>
  <tbody>
   <tr>
    <td><strong>브라우저</strong></td>
-   <td><strong>Support for UI<br /> </strong></td>
-   <td><strong>Support for Classic UI</strong></td>
+   <td><strong>UI 지원<br /> </strong></td>
+   <td><strong>클래식 UI 지원</strong></td>
   </tr>
   <tr>
    <td><strong>Google Chrome(Evergreen)</strong></td>
    <td>A: 지원됨</td>
-   <td>A: Supported</td>
+   <td>A: 지원됨</td>
   </tr>
   <tr>
    <td>Microsoft Edge(에버그린)</td>
@@ -373,45 +373,43 @@ Windows에서 WebDav 클라이언트의 책임을 개선하려면 다음을 참�
 
 Adobe Experience Manager(인스턴스, Dispatcher)의 모든 요소는 IPv4 및 IPv6 네트워크 모두에 설치할 수 있습니다.
 
-별도의 구성이 필요 없으므로 작업이 원활하게 수행됩니다. You can simply specify an IP address using the format that is appropriate to your network type, if necessary.
+별도의 구성이 필요 없으므로 작업이 원활하게 수행됩니다. 필요한 경우 네트워크 유형에 적합한 형식을 사용하여 IP 주소를 지정할 수 있습니다.
 
 즉, IP 주소를 지정해야 할 경우에는 다음 중에서 선택할 수 있습니다.
 
 * 예를 들어 IPv6 주소 `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* an IPv4 address
-for example `https://123.1.1.4:4502`
+* 예를 들어 IPv4 주소 `https://123.1.1.4:4502`
 
-* a server name
-for example, `https://www.yourserver.com:4502`
+* 서버 이름(예: `https://www.yourserver.com:4502`
 
 * 기본 사례 `localhost` 은 예를 들어, IPv4 및 IPv6 네트워크 설치에 대해 해석됩니다. `https://localhost:4502`
 
-### Requirements for AEM Dynamic Media Add-on {#requirements-for-aem-dynamic-media-add-on}
+### AEM Dynamic Media 추가 기능 요구 사항 {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamic Media is disabled by default. See here to [enable Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+AEM Dynamic Media은 기본적으로 비활성화됩니다. 다음 작업을 보려면 여기를 참조하십시오. [Dynamic Media 활성화](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
-With Dynamic Media enabled, the following additional technical requirements apply.
+Dynamic Media이 활성화되면 다음과 같은 추가 기술 요구 사항이 적용됩니다.
 
 >[!NOTE]
 >
 >이러한 시스템 요구 사항 **전용** Dynamic Media - 하이브리드 모드를 사용하는 경우 적용; Dynamic Media - 하이브리드 모드에서는 특정 운영 체제에서만 인증되는 내장 이미지 서버가 있습니다.
 >
->For Dynamic Media customers who run Dynamic Media - Scene7 mode (that is, **dynamicmedia_scene7** runmode), there are no additional system requirements; only the same system requirements as AEM. Dynamic Media - Scene7 모드 아키텍처는 AEM에 포함된 서비스가 아니라 클라우드 기반 이미지 서비스를 사용합니다.
+>Dynamic Media - Scene7 모드(즉, **dynamic media_scene7** runmode)를 사용할 경우 추가적인 시스템 요구 사항이 없습니다. AEM과 동일한 시스템 요구 사항만 해당됩니다. Dynamic Media - Scene7 모드 아키텍처는 AEM에 포함된 서비스가 아니라 클라우드 기반 이미지 서비스를 사용합니다.
 
-#### Hardware {#hardware}
+#### 하드웨어 {#hardware}
 
 다음 하드웨어 요구 사항은 Linux와 Windows 모두에 적용됩니다.
 
-* Intel Xeon or AMD Opteron CPU with at least 4 cores
+* 4개 이상의 코어가 있는 Intel Xeon 또는 AMD Opteron CPU
 * 적어도 16GB RAM
 
 #### Linux {#linux}
 
 Linux에서 Dynamic Media을 사용하는 경우 다음 사전 요구 사항을 충족해야 합니다.
 
-* RedHat Enterprise 7 or CentOS 7 and later with latest fix patches
-* 64-bit Operating System
+* RedHat Enterprise 7 또는 CentOS 7 이상(최신 수정 패치 포함)
+* 64비트 운영 체제
 * 사용 안 함 교환(권장)
 * SELinux가 비활성화됨(다음 참고 참조)
 
@@ -508,21 +506,21 @@ Windows x86의 경우:
 >
 >또한
 >
->* PDF Generator requires 32-bit version of [Acrobat 2017 classic track version 17.011.30078 or later](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
+>* PDF 생성기를 사용하려면 32비트 버전의 [Acrobat 2017 classic track 버전 17.011.30078 이상](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 변환을 수행합니다.
 >* PDF 생성기는 전환에 필요한 32비트 Retail 버전의 Microsoft Office Professional Plus와 기타 소프트웨어만 지원합니다.
->* PDF Generator does not support Microsoft Office 365.
+>* PDF 생성기는 Microsoft Office 365를 지원하지 않습니다.
 >* OpenOffice용 PDF 생성기 전환은 Windows 및 Linux에서만 지원됩니다.
 >* OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
->* A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+>* Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
->* PDF Generator service does not support Microsoft Windows 10.
+>* PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
 
 >
 
 
-### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
+### AEM Forms 디자이너 요구 사항 {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, or Microsoft® Windows® 10
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server 또는 Microsoft® Windows® 10
 * PAE, NX 및 SSE2를 지원하는 1GHz 이상의 프로세서
 * 64비트 OS용 32비트 또는 2GB RAM의 경우 1GB
 * 32비트 또는 64비트 OS용 20GB 디스크 공간의 경우 16GB 디스크 공간
