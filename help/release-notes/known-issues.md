@@ -2,10 +2,10 @@
 title: 알려진 문제
 description: Adobe Experience Manager 6.5의 알려진 문제에 관한 릴리스 노트입니다.
 exl-id: 736037cf-af8c-4ce2-969e-c100a939a038
-source-git-commit: e0f024c2e1dc9fc7908382d406844575b4b38363
+source-git-commit: d87e48070329518117f84252ea0cab0471d74a29
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 73%
+source-wordcount: '661'
+ht-degree: 77%
 
 ---
 
@@ -46,6 +46,10 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 1. 파일을 저장하고 AEM 인스턴스를 다시 시작합니다.
 
+## 사이트 {#sites}
+
+* **페이지 버전 사용**: 페이지가 이동되면 이동 전에 만들어진 버전에서 더 이상 미리 보기를 수행할 수 없습니다.
+
 ## 에셋 {#assets}
 
 * **검색:** 검색 시, 검색 문자열에 선행 공백([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))이 포함된 경우 결과를 반환하지 않습니다.
@@ -80,4 +84,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * AEM Forms가 시작되면 `SAX Security Manager could not be setup`라는 경고가 나타납니다.
 * Adobe Acrobat Reader 버전 20.10.00을 실행하는 Apple iOS 또는 iPadOS에서 AEM Forms 문서 보안으로 보호된 PDF을 여는 경우.
-* Apple iOS 장치에서 표준 HTML 업로드 필드가 포함된 양식을 제출하는 경우 때로 파일의 컨텐츠가 전송되지 않고 다른 끝에는 0바이트 파일이 수신됩니다. Apple iOS 15.1에서는 문제에 대한 수정 사항을 제공합니다.
+* Apple iOS 디바이스에서 표준 HTML 업로드 필드가 포함된 양식을 제출할 경우, 때때로 파일의 콘텐츠가 전송되지 않고 반대편에서 0바이트 파일이 수신됩니다. Apple iOS 15.1은 이 문제에 대한 해결 방법을 제공합니다.
