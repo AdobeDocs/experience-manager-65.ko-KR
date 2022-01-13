@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: eb7051582a51d983851c876025770668b258bff5
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '9878'
 ht-degree: 4%
@@ -338,7 +338,7 @@ PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 �
 * 대상에 이름이 같은 폴더가 있는 경우 ZIP 파일의 자산은 기존 폴더에서 추출됩니다.
 * 추출을 취소하면 이미 추출된 자산이 삭제되지 않습니다.
 * ZIP 파일 두 개를 동시에 선택하고 추출할 수 없습니다. 한 번에 하나의 ZIP 아카이브를 추출할 수 있습니다.
-* ZIP 아카이브를 업로드할 때 업로드 대화 상자에 500 서버 오류가 표시되면 설치 후 다시 시도하십시오 [최신 서비스 팩](/help/release-notes/sp-release-notes.md).
+* ZIP 아카이브를 업로드할 때 업로드 대화 상자에 500 서버 오류가 표시되면 설치 후 다시 시도하십시오 [최신 서비스 팩](/help/release-notes/release-notes.md).
 
 ## 자산 미리 보기 {#previewing-assets}
 

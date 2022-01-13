@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: d010b2a20e40fabe40f67d60ef0b6fab245be60f
+source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
 workflow-type: tm+mt
-source-wordcount: '3777'
+source-wordcount: '3772'
 ht-degree: 4%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 4%
 
 + [AEM 6.5 Forms 안내서](home.md)
 + 릴리스 노트 {#release-notes-new-features}
-   + [릴리스 노트](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
+   + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
    + [새로운 기능 요약](using/whats-new.md)
-   + [이제 사용되지 않는 기능](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/deprecated-removed-features.html)
+   + [이제 사용되지 않는 기능](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + 시작하기 {#getting-started}
    + [AEM Forms 소개](using/introduction-aem-forms.md)
    + [적응형 양식 작성 소개](using/introduction-forms-authoring.md)
@@ -281,7 +281,7 @@ ht-degree: 4%
    + [HTML5 양식 시작하기](using/get-started.md)
    + [HTML 5 양식의 아키텍처](using/html5-forms-architecture.md)
    + [HTML 5 양식과 PDF forms 간의 기능 차별화](using/feature-differentiation-html5-forms-pdf-forms.md)
-   + [HTML5 양식에 대한 FAQ](using/faq.md)
+   + [HTML5 양식에 대한 FAQ(자주 묻는 질문)](using/faq.md)
    + [HTML5 양식의 양식 템플릿 디자인](using/designing-form-template.md)
    + [HTML 5 양식 우수 사례](using/best-practices-for-html5-forms.md)
    + [액세스 가능한 HTML5 양식 디자인](using/design-accessible-html5-forms.md)
@@ -681,7 +681,7 @@ ht-degree: 4%
          + [정책으로 문서 보호](developing/protecting-documents-policies.md)
          + [웹 서비스 API를 사용하여 DDX 문서의 유효성 검사](developing/validate-ddx-document-using-web.md)
       + 이전 설명서 {#legacy-documentation}
-         + [JEE Workbench에서 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 작성](developing/building-xml.md)
+         + [JEE Workbench의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 작성](developing/building-xml.md)
          + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](developing/compressing-decompressing-custom-dsc.md)
          + [JEE 서버 클러스터에서 AEM Forms 구성 및 문제 해결](developing/configure-server-cluster.md)
          + [동적 PDF forms에서 해시 생성 및 작업](developing/hashing-forms.md)

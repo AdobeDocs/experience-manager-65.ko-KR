@@ -1,8 +1,8 @@
 ---
 title: 작성 시의 AEM 문제 해결
-seo-title: 작성 시의 AEM 문제 해결
+seo-title: Troubleshooting AEM when Authoring
 description: 다음 섹션에서는 AEM 사용 시 발생할 수 있는 문제들과 이러한 문제의 해결 방법에 대한 제안 사항을 다룹니다.
-seo-description: 다음 섹션에서는 AEM 사용 시 발생할 수 있는 문제들과 이러한 문제의 해결 방법에 대한 제안 사항을 다룹니다.
+seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '430'
 ht-degree: 95%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->문제가 발생하는 경우 인스턴스(릴리스 및 서비스 팩)에 대한 [알려진 문제](/help/release-notes/known-issues.md) 목록을 확인하는 것이 유용할 수 있습니다.
+>문제가 발생하는 경우 인스턴스(릴리스 및 서비스 팩)에 대한 [알려진 문제](/help/release-notes/release-notes.md) 목록을 확인하는 것이 유용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ ht-degree: 95%
 
 * **문제:**
 
-   * **찾기 및 바꾸기** 옵션을 사용하는 경우 페이지에서 `find` 용어의 일부 인스턴스가 바뀌지 않을 수 있습니다.
+   * 를 사용할 때 **찾기 및 바꾸기** 선택 사항: `find` 페이지에서 용어가 대체됩니다.
 
 * **이유**:
 

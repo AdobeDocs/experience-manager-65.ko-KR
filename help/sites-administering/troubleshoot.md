@@ -1,8 +1,8 @@
 ---
 title: AEM 문제 해결
-seo-title: AEM 문제 해결
+seo-title: Troubleshooting AEM
 description: AEM의 문제 해결에 대해 알아봅니다.
-seo-description: AEM의 문제 해결에 대해 알아봅니다.
+seo-description: Learn about troubleshooting issues with AEM.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '547'
 ht-degree: 12%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->AEM에서 작성 문제를 해결하는 경우 [작성자에 대한 문제 해결](/help/sites-authoring/troubleshooting.md) 을 참조하십시오.
+>AEM에서 작성 문제를 해결하는 경우 [작성자를 위한 문제 해결.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
->문제가 발생하는 경우 인스턴스(릴리스 및 서비스 팩)에 대한 [알려진 문제](/help/release-notes/known-issues.md) 목록을 확인하는 것이 유용할 수 있습니다.
+>문제가 발생하는 경우 인스턴스(릴리스 및 서비스 팩)에 대한 [알려진 문제](/help/release-notes/release-notes.md) 목록을 확인하는 것이 유용할 수 있습니다.
 
 ## 관리자에 대한 문제 해결 시나리오 {#troubleshooting-scenarios-for-administrators}
 
@@ -65,7 +65,7 @@ ht-degree: 12%
 
 ## 설치 문제 {#installation-issues}
 
-다음 문제 해결 시나리오에 대한 자세한 내용은 [일반적인 설치 문제](/help/sites-deploying/troubleshooting.md#common-installation-issues)를 참조하십시오.
+자세한 내용은 [일반적인 설치 문제](/help/sites-deploying/troubleshooting.md#common-installation-issues) 다음 문제 해결 시나리오에 대한 자세한 내용은
 
 * 빠른 시작 jar를 두 번 클릭해도 영향을 주지 않거나 JAR 파일이 다른 프로그램(예: 아카이브 관리자)에서 실행됩니다.
 * CRX에서 애플리케이션을 실행하면 메모리 부족 오류가 발생합니다.
@@ -79,8 +79,8 @@ ht-degree: 12%
 
 ### Sling 스레드 덤퍼 사용 {#using-sling-thread-dumper}
 
-1. **AEM Web Console**;예: `https://localhost:4502/system/console/`
-1. **상태** 탭에서 **스레드**&#x200B;를 선택합니다.
+1. 를 엽니다. **AEM 웹 콘솔**; 예를 들어 `https://localhost:4502/system/console/`.
+1. 을(를) 선택합니다 **스레드**&#x200B;아래에&#x200B;**상태** 탭.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -88,7 +88,7 @@ ht-degree: 12%
 
 1. AEM Java 인스턴스의 PID(프로세스 ID)를 찾습니다.
 
-   예를 들어 `ps -ef` 또는 `jps`을 사용할 수 있습니다.
+   예를 들어 `ps -ef` 또는 `jps`.
 
 1. 실행:
 
@@ -98,28 +98,28 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->`>>` 출력 리디렉션을 사용하여 스레드 덤프를 로그 파일에 추가할 수 있습니다.
+>를 사용하여 스레드 덤프를 로그 파일에 추가할 수 있습니다 `>>` 출력 리디렉션:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-자세한 내용은 [JVM에서 스레드 덤프를 가져오는 방법](https://helpx.adobe.com/cq/kb/TakeThreadDump.html) 설명서를 참조하십시오
+자세한 내용은 [JVM에서 스레드 덤프를 가져오는 방법](https://helpx.adobe.com/cq/kb/TakeThreadDump.html) 자세한 내용은 설명서 를 참조하십시오
 
-### 닫히지 않은 JCR 세션 {#checking-for-unclosed-jcr-sessions} 확인
+### 닫히지 않은 JCR 세션 확인 {#checking-for-unclosed-jcr-sessions}
 
 AEM WCM용 기능을 개발하면 JCR 세션을 열 수 있습니다(데이터베이스 연결을 여는 것과 유사). 열린 세션이 종료되지 않으면 시스템에 다음과 같은 증상이 나타날 수 있습니다.
 
 * 시스템이 느려집니다.
-* 많은 CacheManager를 볼 수 있습니다.크기 조정 로그 파일의 모든 항목다음 숫자(size=&lt;x>)는 캐시 수를 표시하며 각 세션은 여러 캐시를 엽니다.
+* 많은 CacheManager를 볼 수 있습니다. 크기 조정 로그 파일의 모든 항목 다음 숫자(size=&lt;x>)에 캐시 수가 표시되고 각 세션은 여러 캐시를 엽니다.
 * 시스템이 때때로 메모리가 부족합니다(심각도에 따라 몇 시간, 일 또는 몇 주 후).
 
-닫히지 않은 세션을 분석하고 세션을 닫지 않는 코드를 찾으려면 기술 자료 문서 [닫히지 않은 세션 분석](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html)을 참조하십시오.
+닫히지 않은 세션을 분석하고 세션을 닫지 않는 코드를 확인하려면 기술 자료 문서를 참조하십시오 [닫히지 않은 세션 분석](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html).
 
 ### Adobe Experience Manager 웹 콘솔 사용 {#using-the-adobe-experience-manager-web-console}
 
 OSGi 번들의 상태는 가능한 문제를 조기에 나타낼 수도 있습니다.
 
-1. **AEM Web Console**;예: `https://localhost:4502/system/console/`
-1. **OSGI** 탭에서 **번들**&#x200B;을 선택합니다.
+1. 를 엽니다. **AEM 웹 콘솔**; 예를 들어 `https://localhost:4502/system/console/`.
+1. 선택 **번들** 아래에 **OSGI** 탭.
 1. 확인:
 
    * 번들 상태. 비활성 또는 충족되지 않은 경우 번들을 중지하고 다시 시작하려고 합니다. 문제가 지속되면 다른 방법을 사용하여 더 자세히 조사해야 할 수 있습니다.
