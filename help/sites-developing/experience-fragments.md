@@ -32,8 +32,7 @@ ht-degree: 3%
 
 * `sling:resourceSuperType` : `wcm/foundation/components/page`
 
-## 일반 HTML 렌디션 
- {#the-plain-html-rendition}
+## 일반 HTML 렌디션 {#the-plain-html-rendition}
 
 사용 `.plain.` 선택기를 사용하여 일반 HTML 표현물에 액세스할 수 있습니다.
 
