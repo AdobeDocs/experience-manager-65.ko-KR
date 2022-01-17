@@ -2,9 +2,10 @@
 title: AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리
 description: 샘플 컨텐츠 및 쿼리를 탐색하여 GraphQL과 AEM을 함께 사용하여 헤더없이 컨텐츠를 제공하는 방법을 알아봅니다.
 feature: Content Fragments,GraphQL API
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
+source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 6%
 
 ---
@@ -26,9 +27,9 @@ GraphQL 쿼리 및 AEM 컨텐츠 조각으로 작동하는 방식을 시작하�
 
 도움이 필요하면 다음을 참조하십시오.
 
-* [샘플 컨텐츠 조각 구조](#content-fragment-structure-graphql)
+* A [샘플 컨텐츠 조각 구조](#content-fragment-structure-graphql)
 
-* 및 일부 [샘플 GraphQL 쿼리](#graphql-sample-queries)은 샘플 컨텐츠 조각 구조(컨텐츠 조각 모델 및 관련 컨텐츠 조각)를 기반으로 합니다.
+* 그리고 [샘플 GraphQL 쿼리](#graphql-sample-queries)샘플 컨텐츠 조각 구조(컨텐츠 조각 모델 및 관련 컨텐츠 조각)를 기반으로 합니다.
 
 
 ## GraphQL - 샘플 컨텐츠 조각 구조를 사용하는 샘플 쿼리 {#graphql-sample-queries-sample-content-fragment-structure}
@@ -37,17 +38,17 @@ GraphQL 쿼리 및 AEM 컨텐츠 조각으로 작동하는 방식을 시작하�
 
 >[!NOTE]
 >
->인스턴스에 따라 AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)에 포함된 [Graph *i* QL 인터페이스에 직접 액세스하여 쿼리를 제출하고 테스트할 수 있습니다.
+>인스턴스에 따라 페이지에 직접 액세스할 수 있습니다. [AEM GraphQL API에 포함된 GraphiQL 인터페이스](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) 을 참조하십시오.
 >
 >예를 들어,`http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
 >
->샘플 쿼리는 GraphQL](#content-fragment-structure-graphql)에 사용할 [샘플 컨텐츠 조각 구조를 기반으로 합니다
+>샘플 쿼리는 [GraphQL에서 사용할 샘플 컨텐츠 조각 구조](#content-fragment-structure-graphql)
 
 ### 샘플 쿼리 - 사용 가능한 모든 스키마 및 데이터 유형 {#sample-all-schemes-datatypes}
 
-이렇게 하면 사용 가능한 모든 스키마에 대한 모든 `types`이 반환됩니다.
+그러면 모두 반환됩니다 `types` 사용 가능한 모든 스키마에 대해 를 참조하십시오.
 
 **샘플 쿼리**
 
@@ -223,7 +224,7 @@ GraphQL 쿼리 및 AEM 컨텐츠 조각으로 작동하는 방식을 시작하�
 
 ### 샘플 쿼리 - 모든 도시의 이름 {#sample-names-all-cities}
 
-`city`스키마에 있는 모든 항목의 `name`을 반환하기 위한 간단한 쿼리입니다.
+이는 를 반환하기 위한 간단한 쿼리입니다 `name`의 모든 항목 `city`스키마.
 
 **샘플 쿼리**
 
@@ -314,7 +315,7 @@ query {
 
 ### 샘플 쿼리 - 명명된 변형을 가진 모든 도시 {#sample-cities-named-variation}
 
-`city` 베를린에 대해 &quot;Berlin Center&quot;(`berlin_centre`)라는 새 변형을 만드는 경우 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
+새 변형을 만드는 경우, 이름이 &quot;베를린 센터&quot;(`berlin_centre`) 내의 아무 곳에나 삽입할 수 있습니다. `city` 그런 다음 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
 
 **샘플 쿼리**
 
@@ -485,7 +486,7 @@ query {
 
 ### 샘플 쿼리 - &quot;Job&quot; 또는 &quot;Smith&quot;라는 이름을 가진 모든 개인 {#sample-all-persons-jobs-smith}
 
-이 옵션은 `Jobs` 또는 `Smith` 이름이 있는 모든 항목에 대해 모든 `persons`을 필터링합니다.
+모두 필터링됩니다. `persons` 이름이 `Jobs`또는 `Smith`.
 
 **샘플 쿼리**
 
@@ -539,7 +540,7 @@ query {
 
 ### 샘플 쿼리 - &quot;Job&quot;이라는 이름이 없는 모든 개인 {#sample-all-persons-not-jobs}
 
-이 옵션은 `Jobs` 또는 `Smith` 이름이 있는 모든 항목에 대해 모든 `persons`을 필터링합니다.
+모두 필터링됩니다. `persons` 이름이 `Jobs`또는 `Smith`.
 
 **샘플 쿼리**
 
@@ -604,9 +605,9 @@ query {
 }
 ```
 
-### 샘플 쿼리 - `_path`이(가) 특정 접두사로 시작하는 모든 모험 {#sample-wknd-all-adventures-cycling-path-filter}
+### 샘플 쿼리 - `_path` 특정 접두사로 시작하는 경우 {#sample-wknd-all-adventures-cycling-path-filter}
 
-모든 `adventures` 여기서 `_path`은 특정 접두사(`/content/dam/wknd/en/adventures/cycling`)로 시작합니다.
+모두 `adventures` 여기서 `_path` 특정 접두사로 시작(`/content/dam/wknd/en/adventures/cycling`).
 
 **샘플 쿼리**
 
@@ -651,7 +652,7 @@ query {
 
 ### 샘플 쿼리 - 400000과 999999 사이의 모집단이 있는 독일 또는 스위스에 있는 모든 도시 {#sample-all-cities-d-ch-population}
 
-여기서는 필드 조합이 필터링됩니다. `AND`(암시적)은 `population`범위를 선택하는 데 사용되고 `OR`(명시적)은 필요한 도시를 선택하는 데 사용됩니다.
+여기서는 필드 조합이 필터링됩니다. An `AND` (암시적)은 `population`범위, `OR` 필요한 도시를 선택하는 데 ( 명시적 ) 이 사용됩니다.
 
 **샘플 쿼리**
 
@@ -714,7 +715,7 @@ query {
 
 ### 샘플 쿼리 - 사례에 상관없이 이름에 SAN이 있는 모든 도시 {#sample-all-cities-san-ignore-case}
 
-이 쿼리는 사례에 관계없이 이름에 `SAN`이 있는 모든 도시에 대해 상호 작용합니다.
+이 쿼리는 `SAN` 경우에 관계없이 이름으로 지정합니다.
 
 **샘플 쿼리**
 
@@ -765,7 +766,7 @@ query {
 
 ### 샘플 쿼리 - 한 번 이상 발생해야 하는 항목이 있는 배열에 필터링 {#sample-array-item-occur-at-least-once}
 
-이 쿼리 필터는 항목(`city:na`)이 한 번 이상 있어야 하는 배열의 필터입니다.
+이 쿼리는 항목이 있는 배열에서 필터링합니다(`city:na`)에 대해 최소 한 번 이상 표시되어야 합니다.
 
 **샘플 쿼리**
 
@@ -875,7 +876,7 @@ query {
 
 ### 중첩된 컨텐츠 조각에 대한 샘플 쿼리 - &quot;Smith&quot;라는 이름을 가진 직원이 하나 이상 있는 모든 회사입니다 {#sample-companies-employee-smith}
 
-이 쿼리는 `name` &quot;Smith&quot;의 `person`에 대한 필터링을 보여 주고, 두 중첩 조각(`company` 및 `employee`에서 정보를 반환합니다.
+이 쿼리는 `person` 의 `name` &quot;Smith&quot;, 두 중첩 조각에서 정보를 반환합니다. `company` 및 `employee`.
 
 **샘플 쿼리**
 
@@ -941,7 +942,7 @@ query {
 
 ### 중첩된 컨텐츠 조각에 대한 샘플 쿼리 - 모든 직원이 &quot;Gamestar&quot; 상을 수상한 모든 회사 {#sample-all-companies-employee-gamestar-award}
 
-이 쿼리는 세 개의 중첩 조각( `company`, `employee` 및 `award`)에 대한 필터링을 보여줍니다.
+이 쿼리는 세 개의 중첩된 조각에 대한 필터링을 보여줍니다. `company`, `employee`, 및 `award`.
 
 **샘플 쿼리**
 
@@ -1033,7 +1034,7 @@ query {
 
 ### 메타데이터에 대한 샘플 쿼리 - GB라는 이름의 시상식에 대한 메타데이터 나열 {#sample-metadata-awards-gb}
 
-이 쿼리는 세 개의 중첩 조각( `company`, `employee` 및 `award`)에 대한 필터링을 보여줍니다.
+이 쿼리는 세 개의 중첩된 조각에 대한 필터링을 보여줍니다. `company`, `employee`, 및 `award`.
 
 **샘플 쿼리**
 
@@ -1109,8 +1110,8 @@ query {
 
 이 샘플 쿼리 인터페이스:
 
-* `article` 유형의 모든 컨텐츠 조각에 대해
-* ( `path` 및 `author` 속성 사용)
+* 모든 컨텐츠 조각 유형 `article`
+* 사용 `path`및 `author` 속성을 사용합니다.
 
 **샘플 쿼리**
 
@@ -1129,7 +1130,7 @@ query {
 
 이 쿼리 상호 작용:
 
-* `adventure` 유형의 모든 컨텐츠 조각에 대해
+* 모든 컨텐츠 조각 유형 `adventure`
 * 메타데이터
 
 **샘플 쿼리**
@@ -1190,7 +1191,7 @@ query {
 
 이 샘플 쿼리 인터페이스:
 
-* 특정 경로에 있는 `article` 유형의 단일 컨텐츠 조각
+* 단일 컨텐츠 조각 유형의 경우 `article` 특정 경로에서
    * 컨텐츠 내의 모든 형식은 다음과 같습니다.
       * HTML
       * Markdown
@@ -1244,12 +1245,12 @@ query {
 
 이 쿼리 상호 작용:
 
-* 특정 경로에 있는 `article` 유형의 단일 컨텐츠 조각
+* 단일 컨텐츠 조각 유형의 경우 `article` 특정 경로에서
    * 내에서 참조된(중첩된) 조각의 경로 및 작성자입니다
 
 >[!NOTE]
 >
->필드 `referencearticle`에 데이터 유형이 `fragment-reference`입니다.
+>필드 `referencearticle` 에는 데이터 유형이 있습니다 `fragment-reference`.
 
 **샘플 쿼리**
 
@@ -1272,12 +1273,12 @@ query {
 
 이 쿼리 상호 작용:
 
-* `bookmark` 유형의 여러 컨텐츠 조각에 대해
-   * 를 사용하여 특정 모델 유형의 다른 조각에 대한 조각 참조 `article` 및 `adventure`
+* 여러 컨텐츠 조각 유형 `bookmark`
+   * 조각 참조 를 사용하여 특정 모델 유형의 다른 조각에 대한 참조 `article` 및 `adventure`
 
 >[!NOTE]
 >
->`fragments` 필드에 `fragment-reference` 데이터 유형이 있습니다. 모델 `Article`, `Adventure`이 선택되어 있습니다.
+>필드 `fragments` 에는 데이터 유형이 있습니다 `fragment-reference`, 모델 사용 `Article`, `Adventure` 선택됨.
 
 ```xml
 {
@@ -1303,16 +1304,16 @@ query {
 이 쿼리에는 두 가지 맛이 있습니다.
 
 1. 모든 컨텐츠 참조를 반환하려면 다음을 수행하십시오.
-1. `attachments` 유형의 특정 컨텐츠 참조를 반환하려면
+1. 유형의 특정 컨텐츠 참조를 반환하려면 `attachments`.
 
 다음 쿼리는 다음과 같이 질문합니다.
 
-* `bookmark` 유형의 여러 컨텐츠 조각에 대해
+* 여러 컨텐츠 조각 유형 `bookmark`
    * 다른 조각에 대한 컨텐츠 참조 사용
 
 #### 프리페치된 참조가 있는 여러 컨텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-multiple-fragments-prefetched-references}
 
-다음 쿼리는 `_references` 을 사용하여 모든 컨텐츠 참조를 반환합니다.
+다음 쿼리는 `_references`:
 
 ```xml
 {
@@ -1348,11 +1349,11 @@ query {
 
 #### 첨부 파일이 있는 여러 컨텐츠 조각에 대한 샘플 쿼리 {#sample-wknd-multiple-fragments-attachments}
 
-다음 쿼리는 `content-reference` 유형의 모든 `attachments` - 특정 필드(하위 그룹)를 반환합니다.
+다음 쿼리는 모두 반환합니다 `attachments` - 유형의 특정 필드(하위 그룹) `content-reference`:
 
 >[!NOTE]
 >
->필드 `attachments`에 데이터 형식 `content-reference`이 있으며, 여러 양식이 선택되어 있습니다.
+>필드 `attachments` 에는 데이터 유형이 있습니다 `content-reference`다양한 양식이 선택되어 있을 때
 
 ```xml
 {
@@ -1389,12 +1390,12 @@ query {
 
 이 쿼리 상호 작용:
 
-* 특정 경로에 있는 `bookmark` 유형의 단일 컨텐츠 조각
+* 단일 컨텐츠 조각 유형의 경우 `bookmark` 특정 경로에서
    * 내에서 RTE 인라인 참조
 
 >[!NOTE]
 >
->RTE 인라인 참조는 `_references`에서 하이드레이션됩니다.
+>RTE 인라인 참조는 `_references`.
 
 **샘플 쿼리**
 
@@ -1435,7 +1436,7 @@ query {
 
 이 쿼리 상호 작용:
 
-* 특정 경로에 있는 `article` 유형의 단일 컨텐츠 조각
+* 단일 컨텐츠 조각 유형의 경우 `article` 특정 경로에서
    * 그 내에서 변형과 관련된 데이터는 다음과 같습니다. `variation1`
 
 **샘플 쿼리**
@@ -1461,7 +1462,7 @@ query {
 
 이 쿼리 상호 작용:
 
-* 특정 변형이 있는 `article` 유형의 컨텐츠 조각에 대해 다음을 수행합니다. `variation1`
+* 컨텐츠 조각 유형의 경우 `article` 특정 변형 사용: `variation1`
 
 **샘플 쿼리**
 
@@ -1486,7 +1487,7 @@ query {
 
 이 쿼리 상호 작용:
 
-* `fr` 로케일 내의 `article` 유형의 컨텐츠 조각에 대해 설명합니다.
+* 컨텐츠 조각 유형의 경우 `article` 내 `fr` 로케일
 
 **샘플 쿼리**
 
@@ -1511,17 +1512,17 @@ query {
 
 샘플 쿼리는 을 사용하는 다음 구조를 기반으로 합니다.
 
-* 하나 이상의 [샘플 컨텐츠 조각 모델](#sample-content-fragment-models-schemas) - GraphQL 스키마 기준을 형성합니다
+* 하나 이상, [샘플 컨텐츠 조각 모델](#sample-content-fragment-models-schemas) - GraphQL 스키마를 기반으로 합니다.
 
-* [위의 ](#sample-content-fragments) 모델을 기반으로 하는 샘플 컨텐츠 조각
+* [샘플 컨텐츠 조각](#sample-content-fragments) 위의 모델을 기반으로 합니다
 
 ### 샘플 컨텐츠 조각 모델(스키마) {#sample-content-fragment-models-schemas}
 
 샘플 쿼리는 다음 컨텐츠 모델 및 상호 관계(참조 ->)를 사용합니다.
 
 * [회사](#model-company)
- ->  [개인](#model-person)
-     ->  [포상](#model-award)
+-> [개인](#model-person)
+    -> [수상](#model-award)
 
 * [도시](#model-city)
 
@@ -1573,9 +1574,9 @@ query {
 
 | 회사 이름 | CEO | 직원 |
 |--- |--- |--- |
-| Apple | 스티브 잡스 | 듀크 마쉬<br>Max Caulfield |
+| Apple | 스티브 잡스 | 듀크 마시<br>맥스 콜필드 |
 |  리틀 포니 | 아담 스미스 | 라라 크로프트<br>커터 슬래드 |
-| NextStep Inc. | 스티브 잡스 | 조 스미스<br>아베 링컨 |
+| NextStep Inc. | 스티브 잡스 | 조 스미스<br>에이브 링컨 |
 
 #### 개인 {#fragment-person}
 
@@ -1583,7 +1584,7 @@ query {
 |--- |--- |--- |
 | 링컨 |  아베 |  |
 | 스미스 | Adam |   |
-| 슬래드 |  커터 |  Gamerblicz<br>Gamestar |
+| 슬래드 |  커터 |  게임블리츠<br>가메스타르 |
 | 마시 |  듀크 |   |   |
 |  스미스 |  조 |   |
 | 크로프트 |  라라 | 가메스타르 |
