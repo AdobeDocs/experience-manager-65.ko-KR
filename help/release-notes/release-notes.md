@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 13c76122a38e32783bca248597a16f0512dae44c
+source-git-commit: 1cfa01544ad8bf0adafd55e696a6844a8edf1007
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3894'
 ht-degree: 11%
 
 ---
@@ -35,8 +35,6 @@ ht-degree: 11%
 * 사용자 경험 개선 사항은 폴더에 있는 자산 수를 표시합니다. 폴더에 있는 1000개 이상의 자산의 경우, [!DNL Assets] 1000 이상을 표시합니다.
 
    ![폴더의 자산 수](/help/assets/assets/browse-folder-number-of-assets.png)
-
-* 이제 카드 및 열 보기에서 정렬 옵션을 렌더링할 수 있습니다.
 
 * 비즈니스 프로필은 Adobe 자산 링크를 지원합니다.
 
@@ -504,7 +502,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 | 영역 | 기능 | 대체 |
 |---|---|---|
 | 통합 | 다음 **[!UICONTROL AEM 클라우드 서비스 옵트인]** 화면은 다음부터 사용되지 않습니다 [!DNL Experience Manager] 및 [!DNL Adobe Target] 통합이 Experience Manager 6.5에서 업데이트되었습니다. 통합이 Adobe Target Standard API를 지원합니다. API는 Adobe IMS를 통한 인증 및 [!DNL Adobe I/O] 및 은 인스트루먼트에 대한 Adobe Launch의 늘어나는 역할을 지원합니다 [!DNL Experience Manager] 분석 및 개인화를 위한 페이지인 옵트인 마법사는 기능적으로 관련이 없습니다. | 시스템 연결, Adobe IMS 인증 및 구성 [!DNL Adobe I/O] 해당 [!DNL Experience Manager] 클라우드 서비스. |
-| 커넥터 | Microsoft® SharePoint 2010 및 Microsoft® SharePoint 2013용 Adobe JCR 커넥터는 Experience Manager 6.5에서 더 이상 사용되지 않습니다. | N/A |
+| 커넥터 | Microsoft® SharePoint 2010 및 Microsoft® SharePoint 2013용 Adobe JCR 커넥터는 Experience Manager 6.5에서 더 이상 사용되지 않습니다. | 해당 없음 |
 
 ## 알려진 문제 {#known-issues}
 
@@ -569,6 +567,6 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
+>* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 >* [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html) 구독
 
