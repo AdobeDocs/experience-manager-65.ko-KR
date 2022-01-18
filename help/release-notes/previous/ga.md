@@ -1,7 +1,7 @@
 ---
 title: 용 일반 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다.'
-source-git-commit: 9b15215a68495a800e94a58b523e1b7baa0c0203
+source-git-commit: 37f1df9f9421ff18fff45723b6eb081f0192520a
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 74%
@@ -101,7 +101,7 @@ UI의 생산성과 사용 편의성을 향상시키기 위해 UI에 다양한 �
 
 * 빠른 시작 배포는 Eclipse Jetty 9.4.15를 서블릿 엔진(9.3.22와 함께 제공된 AEM 6.4)으로 사용합니다.
 
-### [!DNL Experience Manager] 사이트 {#experience-manager-sites}
+### [!DNL Experience Manager] Sites {#experience-manager-sites}
 
 #### 관리된 단일 페이지 앱 {#managed-single-page-apps}
 
@@ -359,7 +359,7 @@ AEM 6.5에서는 AEM 사용자, DAM 역할 및 연관된 광고 및 마케팅 �
 
 자세한 내용은 [Brand Portal의 새로운 기능](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ko-KR).
 
-#### 연결된 자산 {#connectedassets}
+#### 연결된 에셋 {#connectedassets}
 
 대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 분배할 수 있습니다. 간혹 웹 사이트 작성 기능과 필수 디지털 자산이 다른 사일로에 상주하는 경우가 있습니다.
 
@@ -452,7 +452,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 * 괄호 코드 편집기 확장([자세히 보기 및 다운로드](/help/sites-developing/aem-brackets.md))
 * Maven/Gradle 종속성([다운로드 링크](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.0/))
 
-**사이트**
+**Sites**
 
 * 쿠어 구성 요소([GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components))
 * We.Retail 참조 구현([자세히 보기](/help/sites-developing/we-retail.md))
@@ -513,7 +513,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 >
 >Oracle이 Oracle Java SE 제품에 대한 LTS(Long Term Support) 모델로 이동되었습니다. Java 9 및 10은 Oracle의 비 LTS 릴리스입니다. 자세한 내용은 [Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe은 프로덕션에서 AEM만 실행하도록 Java의 LTS 릴리스를 지원합니다. AEM 6.5에서 사용할 권장 버전은 Java 11입니다.
 
-## 더 이상 사용되지 않는 및 제거된 기능 {#deprecated-and-removed-features}
+## 더 이상 사용되지 않는/제거된 기능 {#deprecated-and-removed-features}
 
 Adobe는 제품 기능을 지속적으로 평가하고 시간이 흘러도 더욱 강력한 버전으로 기능을 대체할 계획을 세우거나 이후 기대치나 확장에 효율적으로 대비할 수 있도록 선택된 부분을 재구현할 수 있습니다.
 
@@ -552,9 +552,9 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 1. 파일을 저장하고 AEM 인스턴스를 다시 시작합니다.
 
-## 사이트 {#sites}
+### 사이트 {#sites}
 
-* **페이지 버전 사용**: 페이지가 이동되면 이동 전에 만들어진 버전에서 더 이상 미리 보기를 수행할 수 없습니다.
+* **페이지 버전 사용**: [페이지가 이동되면 이동 전에 만들어진 버전에서 더 이상 미리 보기를 수행할 수 없습니다](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 
 ### 에셋 {#assets}
 
