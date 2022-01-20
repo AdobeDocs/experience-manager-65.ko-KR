@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 610e37571df168bba91f2c2fe5b41e2f70ba748e
+source-git-commit: ab89683610a896e73c219c1fde4dde16dd8fbec6
 workflow-type: tm+mt
-source-wordcount: '3345'
+source-wordcount: '3358'
 ht-degree: 1%
 
 ---
@@ -165,16 +165,18 @@ Adobe Experience Manager 리포지토리를 배포하는 다양한 옵션이 있
 | 파일 시스템의 TAR 파일에 바이너리 저장 `[1]` | 바이너리 | Z: 프로덕션에서 지원되지 않음 |
 | Amazon S3 | 바이너리 | A: 지원됨 |
 | Microsoft Azure Blob 저장소 | 바이너리 | A: 지원됨 |
-| MongoDB Enterprise 4.0 | 저장소 | A: 지원됨 `[2, 3]` |
+| MongoDB Enterprise 4.2 | 저장소 | A: 지원됨 `[2, 3, 4]` |
+| MongoDB Enterprise 4.0 | 저장소 | Z: 지원되지 않음 |
 | MongoDB Enterprise 3.6 | 저장소 | Z: 지원되지 않음 |
 | MongoDB Enterprise 3.4 | 저장소 | Z: 지원되지 않음 |
-| IBM DB2 10.5 | 저장소 및 Forms 데이터베이스 | R: 제한된 지원 `[4]` |
+| IBM DB2 10.5 | 저장소 및 Forms 데이터베이스 | R: 제한된 지원 `[5]` |
 | Oracle 데이터베이스 12c(12.1.x) | 저장소 및 Forms 데이터베이스 | R: 제한된 지원 |
 | Microsoft SQL Server 2016 | Forms 데이터베이스 | A: 지원됨 |
 | **Apache Lucene(Quickstart 기본 제공)** | 검색 서비스 | A: 지원됨 |
 | Apache 솔루션 | 검색 서비스 | A: 지원됨 |
 
 1. &#39;파일 시스템&#39;에는 POSIX 호환 블록 저장소가 포함됩니다. 여기에는 네트워크 스토리지 기술이 포함됩니다. 파일 시스템 성능은 다를 수 있으며 전체 성능에 영향을 줄 수 있습니다. 네트워크/원격 파일 시스템과 함께 테스트 AEM을 로드하는 것이 좋습니다.
+1. MongoDB Enterprise 4.2를 사용하려면 최소 AEM 6.5 SP9가 필요합니다.
 1. MongoDB 공유는 AEM에서 지원되지 않습니다.
 1. MongoDB Storage Engine WiredTiger만 지원됩니다.
 1. AEM Forms 업그레이드 고객을 지원합니다. 새 설치에는 지원되지 않습니다.
