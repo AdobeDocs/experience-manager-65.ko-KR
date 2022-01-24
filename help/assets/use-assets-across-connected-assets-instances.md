@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: f1c8660d36a1e84b57d4d1a65a54d153bc373dc6
+source-git-commit: b4c3f4c393d9b34acaadc375d20738ead42e481d
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2979'
 ht-degree: 26%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 26%
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자는 각 배포에 적절한 사용자 그룹의 일부입니다.
-* 대상 [!DNL Adobe Experience Manager] 배포 유형인 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] 6.5 [!DNL Assets] 작업 [!DNL Experience Manager] as a Cloud Service. 에서 이 기능이 작동하는 방식에 대한 자세한 정보 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]를 참조하십시오. [의 연결된 자산 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* 대상 [!DNL Adobe Experience Manager] 배포 유형인 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] 6.5 [!DNL Assets] 작업 [!DNL Experience Manager] as a Cloud Service. 에서 이 기능이 작동하는 방식에 대한 자세한 정보 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]를 참조하십시오. [Experience Manager as a Cloud Service의 연결된 자산](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS에서 | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
