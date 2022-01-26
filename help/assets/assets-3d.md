@@ -1,8 +1,6 @@
 ---
 title: Dynamic Media에서 3D 자산 작업
-seo-title: Working with 3D assets in Dynamic Media
 description: Dynamic Media에서 3D 자산으로 작업하는 방법 알아보기
-seo-description: Learn how to work with 3D assets in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -10,10 +8,10 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 9f08d529af0ec37d2bd2a4f479a172c6c950c47d
+source-git-commit: a13d6d10dd10605d2cb83a8622fae3a7e2590c93
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 3%
+source-wordcount: '2317'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +25,7 @@ Dynamic Media을 사용하면 3D 자산을 업로드, 관리, 보고 몰입형 �
 
 Dynamic Media에서 3D 자산을 사용하는 데 필요한 추가 구성이 없습니다.
 
-![3d 신발](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![3d 신발](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png) *3차원 신발의 세부 정보 페이지입니다.*
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -43,6 +41,10 @@ Dynamic Media은 다음 3D 형식을 지원합니다.
 | OBJ | WaveFront 3D 개체 파일 | application/x-tgif |  |
 | STL | 입체광조형 | application/vnd.ms-pki.stl |  |
 | USDZ | 범용 장면 설명 Zip 아카이브 | model/vnd.usdz+zip | *수집만 지원 보거나 상호 작용을 사용할 수 없습니다.* USDZ는 Safari 및 iOS 장치에서 기본적으로 볼 수 있는 전용 3D 포맷입니다. |
+
+<!-- >[!NOTE]
+>
+>The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). -->
 
 ## 빠른 시작: Dynamic Media의 3D 자산 {#quick-start-three-d}
 
@@ -86,7 +88,7 @@ Dynamic Media에서 3D 자산으로 작업하기 전에 Experience Manager 관�
 
 ## 3D 자산 보기 및 상호 작용 정보 {#viewing-three-d-assets}
 
-이 섹션에서는 다음 두 가지 방법으로 3D 자산을 보고 상호 작용하는 방법을 설명합니다. 자산 세부 사항 페이지 내와 사이트의 3D 미디어 구성 요소 내에서 를 참조하십시오.
+이 섹션에서는 다음 두 가지 방법으로 3D 자산을 보고 상호 작용하는 방법을 설명합니다. 자산 세부 사항 페이지 내와 Experience Manager Sites의 3D Media 구성 요소 내에서 를 참조하십시오.
 
 대화형 3D 뷰어에는 특히 3D 자산을 궤도 회전, 확대/축소 및 이동할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
 
@@ -250,7 +252,7 @@ Dynamic Media은 다음과 같이 지원되는 다양한 3D 파일 형식을 허
 
 참조 - [정적 자산의 URL 가져오기](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
 
-에서 **[!UICONTROL 카드 보기]**&#x200B;를 입력하면 자산 이름 바로 아래에 작은 지구본 아이콘이 표시되고, 그 날짜 및 시간 왼쪽에는 게시되었음을 나타냅니다. 에서 **[!UICONTROL 목록 보기]**, **[!UICONTROL 게시됨]** 열은 게시되거나 게시되지 않는 자산을 나타냅니다.
+에서 **[!UICONTROL 카드 보기]**&#x200B;를 입력하면 자산 이름 바로 아래에 작은 지구본 아이콘이 표시되고, 그 날짜 및 시간 왼쪽에는 게시되었음을 나타냅니다. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
 
 Experience Manager을 WCM으로 사용하는 경우 이 게시 방법을 사용하여 웹 페이지에서 바로 Dynamic Media 3D 자산을 추가합니다.
 
@@ -287,6 +289,6 @@ Dynamic Media 3D 자산을 게시하는 경우 다음 두 가지 방법을 사�
 
    자세한 내용은 [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL 포함]** - 사용 **[!UICONTROL 포함]** 차원 뷰어를 사용하여 웹 페이지에 포함된 Dynamic Media 3D 자산을 보려는 경우. 포함 코드를 클립보드에 복사하여 웹 페이지에 붙여넣을 수 있습니다. 코드는에서 편집할 수 없습니다 **[!UICONTROL 포함]** 대화 상자
+* **[!UICONTROL 포함]** - 사용 **[!UICONTROL 포함]** 차원 뷰어를 사용하여 웹 페이지에 포함된 Dynamic Media 3D 자산을 보려는 경우. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the is not permitted in the **[!UICONTROL Embed Code]** dialog box.
 
    자세한 내용은 [웹 페이지에 Dynamic Media 비디오, 이미지 뷰어 또는 차원 뷰어 포함](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
