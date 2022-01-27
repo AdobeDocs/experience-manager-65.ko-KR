@@ -2,10 +2,10 @@
 title: AEM Content and Commerce 릴리스 노트 2021
 description: AEM Content and Commerce 릴리스 노트 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 11%
+source-wordcount: '1314'
+ht-degree: 13%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 11%
 
 | 구성 요소 | 시스템 요구 사항 |
 |:-------|:-----:|
-| CIF 추가 기능 | 최소: AEM 6.5.7, Magento 2.3.5 GraphQL 스키마 |
-| CIF 코어 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
+| CIF 추가 기능 | 최소: AEM 6.5.7, Adobe Commerce 2.3.5 GraphQL 스키마 |
+| CIF Core Components | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM Project Archetype | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
 ## 릴리스 날짜: 2021년 11월
@@ -31,13 +31,13 @@ ht-degree: 11%
 
 ### 새로운 기능 {#what-is-new-november}
 
-* Commerce의 확장 가능한 상위 구성 요소를 기반으로 하는 myAccount 구성 요소를 확장했습니다
+* Commerce의 확장 가능한 Peregrine 구성 요소를 기반으로 하는 확장 myAccount 구성 요소
 
 ![확장 myAccount 구성 요소](/help/assets/CIF/extended-myAccount-components.png)
 
-* 작성자는 추가 권장 사항 유형을 사용하여 Ad-Hoc Commerce 제품 Recommendations을 만들 수 있습니다
+* 작성자는 추가 권장 사항 유형을 사용하여 애드혹 Commerce 제품 권장 사항을 생성할 수 있습니다.
 
-* AEM Storefront에서 기프트 카드 지원
+* AEM 상점에서의 기프트 카드 지원
 
 ## 릴리스 날짜: 2021년 10월
 
@@ -53,7 +53,7 @@ ht-degree: 11%
 
 * 작성자는 리치 텍스트 편집기(RTE)를 사용하여 텍스트 필드에 제품 및 카탈로그 페이지에 대한 링크를 추가할 수 있습니다. CIF 아이콘이 RTE 도구 모음에 추가되어 컨텍스트를 종료하지 않고 제품이나 카테고리를 빠르게 검색하고 선택할 수 있는 선택기가 열립니다.
 
-* 기존 팝업 장바구니 및 체크아웃이 전용 AEM 장바구니 및 체크아웃 페이지로 대체되었습니다. 이러한 페이지에 있는 구성 요소는 Magento의 확장 가능한 상위 구성 요소를 사용하여 만들어집니다
+* 기존 팝업 장바구니 및 체크아웃이 전용 AEM 장바구니 및 체크아웃 페이지로 대체되었습니다. 이러한 페이지에 있는 구성 요소는 Adobe Commerce의 확장 가능한 페레라 구성 요소를 사용하여 작성됩니다
 
 * 상인은 상거래 백엔드를 사용하여 탐색에서 특정 제품 카탈로그 카테고리를 숨길 수 있습니다. CIF 탐색 코어 구성 요소는 탐색에서 카테고리를 표시하거나 숨기기 위해 상거래 백엔드 구성 &quot;include in menu&quot;를 따릅니다
 
@@ -117,7 +117,7 @@ ht-degree: 11%
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
-| CIF 추가 기능 | 2021.07.21 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| CIF add-on | 2021.07.21 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
 | CIF 코어 구성 요소 | 2.0.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
 | CIF Venia 참조 사이트 | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
@@ -170,7 +170,7 @@ ht-degree: 11%
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
 | CIF 추가 기능 | 2021.04.22 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
-| CIF 코어 구성 요소 | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Core Components | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia 참조 사이트 | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### 새로운 기능 {#what-is-new-april}
@@ -190,12 +190,12 @@ ht-degree: 11%
 | GitHub | 버전 | 자세한 릴리스 노트 |
 |:-------|:-----:|---------------------:|
 | CIF 커넥터 | 1.9.0 | [릴리스 정보](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF 코어 구성 요소 | 1.9.0 | [릴리스 정보](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Core Components | 1.9.0 | [릴리스 정보](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia 참조 사이트 | 2021.03.25 | [릴리스 정보](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### 새로운 기능
 
-* Magento 2.4.2 지원
+* Adobe Commerce 2.4.2 지원
 
 ### 개선 사항
 
@@ -219,7 +219,7 @@ ht-degree: 11%
 
 * 연결된 컨텐츠로 빠르게 이동하는 작업을 포함하여 연결된 자산 및 경험 조각을 표시하도록 확장된 제품 콘솔 속성입니다.
 
-### 개선 사항  {#what-is-improved-february}
+### What&#39;s Improved  {#what-is-improved-february}
 
 * 제품 이미지 URL 및 카테고리 정보로 향상된 클라이언트측 데이터 레이어.
 
@@ -235,7 +235,7 @@ ht-degree: 11%
 
 ### 새로운 기능 {#what-is-new-january}
 
-* 제품 경험 관리: 자산 및 경험 조각에 대한 새 &#39;상거래&#39; 속성 탭입니다. 이 탭에서는 자산 및 경험 조각을 제품 및 카테고리에 연결할 수 있습니다. 또한 탭에는 연결된 상거래 개체에 대한 실시간 데이터와 제품 콘솔에 세부 정보를 표시하는 링크도 표시됩니다.
+* 제품 경험 관리: 자산 및 경험 조각에 대한 새 &#39;상거래&#39; 속성 탭입니다. This tab enables you to link Assets and Experience Fragments to products &amp; categories. 또한 탭에는 연결된 상거래 개체에 대한 실시간 데이터와 제품 콘솔에 세부 정보를 표시하는 링크도 표시됩니다.
 
 ### 개선 사항  {#what-is-improved-january}
 

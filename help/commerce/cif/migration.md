@@ -1,9 +1,10 @@
 ---
 title: AEM CIF(Commerce Integration Framework) 추가 기능으로 마이그레이션
 description: 이전 버전에서 CIF(AEM Commerce Integration Framework) 추가 기능으로 마이그레이션하는 방법
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '265'
 ht-degree: 4%
 
 ---
@@ -14,11 +15,11 @@ ht-degree: 4%
 
 ## CIF 추가 기능
 
-CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)을 통해 AEM 6.5에 사용할 수 있습니다. 호환되며 Cloud Service으로 Experience Manager에 대한 CIF 추가 기능과 동일한 기능을 제공합니다.
+CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 호환되며 Experience Manager as a Cloud Service용 CIF 추가 기능과 동일한 기능을 제공합니다.
 
-[AEM Content and Commerce](getting-started.md) 시작 을 참조하십시오.
+자세한 내용은 [AEM Content and Commerce 시작하기](getting-started.md).
 
-CIF 배포를 지원하기 위해 Adobe은 [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components)를 제공합니다.
+CIF 배포를 지원하기 위해 Adobe은 다음을 제공합니다 [AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components).
 
 ## 제품 카탈로그
 
@@ -26,7 +27,7 @@ CIF 추가 기능에서는 제품 카탈로그 데이터를 가져올 수 없습
 
 >[!TIP]
 >
->실시간 API를 사용할 수 없는 경우 통합에 API가 있는 외부 제품 캐시를 사용해야 합니다. 예 [Magento open-source](https://magento.com/products/magento-open-source).
+>실시간 API를 사용할 수 없는 경우 통합에 API가 있는 외부 제품 캐시를 사용해야 합니다. 예 [Magento 오픈 소스](https://business.adobe.com/products/magento/open-source.html).
 
 ## AEM 렌더링을 사용한 제품 카탈로그 경험
 

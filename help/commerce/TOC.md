@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce
 user-guide-title: AEM Content 및 Commerce
 breadcrumb-title: Commerce 안내서
 user-guide-description: AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
-source-git-commit: 5678d20fa0a7e8a709b02a2f6cbbeffbd4a26cbd
+source-git-commit: f3e286c7b5404812655f3b257de17be7bfde7487
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 40%
+source-wordcount: '120'
+ht-degree: 75%
 
 ---
 
@@ -18,23 +18,27 @@ ht-degree: 40%
 + [소개 및 개요](cif/introduction.md)
 + 통합 {#integrations}
    + [Adobe Commerce](cif/integrating/magento.md)
-   + [타사 상거래 솔루션](cif/integrating/third-party.md)
-+ AEM Storefront {#storefront}
+   + [서드파티 상거래 솔루션](cif/integrating/third-party.md)
++ AEM 상점 첫 화면 {#storefront}
    + [시작하기](cif/getting-started.md)
+   + 작성 {#authoring}
+      + [상거래 경험](cif/authoring/authoring-commerce-experiences.md)
+      + [제품 관리실](cif/authoring/product-cockpit.md)
+      + [관련 콘텐츠를 사용하여 제품 데이터 강화](cif/authoring/enrich-product-associated-content.md)
    + 관리 {#administering}
-      + [다중 저장소 설정](cif/configuring/multi-store-setup.md)
+      + [다중 스토어 설정](cif/configuring/multi-store-setup.md)
       + [다중 템플릿 사용](cif/configuring/multi-template-usage.md)
-      + [SEO용 URL 구성](cif/configuring/advanced-url-configuration.md)
+      + [SEO에 대한 URL 구성](cif/configuring/advanced-url-configuration.md)
       + [캐싱 옵션](cif/configuring/caching.md)
-      + [사용자 지정 HTTP 헤더](/help/commerce/cif/configuring/custom-http-headers.md)
+      + [맞춤형 HTTP 헤더](/help/commerce/cif/configuring/custom-http-headers.md)
    + 개발 {#developing}
       + [AEM을 사용한 개발](cif/develop.md)
-      + [스타일 지정 CIF 구성 요소](cif/customizing/style-cif-component.md)
-      + [CIF 구성 요소 사용자 정의](cif/customizing/customize-cif-components.md)
+      + [CIF 구성 요소 스타일링](cif/customizing/style-cif-component.md)
+      + [CIF 구성 요소 맞춤화](cif/customizing/customize-cif-components.md)
       + [CIF 카탈로그 선택기 사용](cif/customizing/use-cif-pickers.md)
 + [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [마이그레이션](cif/migration.md)
-+ 릴리스 노트 {#release-notes}
++ 릴리스 정보 {#release-notes}
    + [2021년](cif/release-notes/release-notes-2021.md)
    + [2020년](cif/release-notes/release-notes-2020.md)
    + [2019년](cif/release-notes/release-notes-2019.md)

@@ -4,10 +4,11 @@ description: AEM eCommerce는 마케터가 웹, 모바일 및 소셜 터치포�
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -40,7 +41,7 @@ Adobe은 두 가지 버전의 Commerce Integration Framework를 제공합니다.
     </ul> </td>
    <td>
     <ul>
-     <li>Magento</li>
+     <li>Adobe Commerce</li>
      <li>Java 및 Javascript</li>
      <li>JCR 저장소에 저장된 상거래 데이터가 없습니다</li>
     </ul> </td>
@@ -80,16 +81,16 @@ Adobe은 두 가지 버전의 Commerce Integration Framework를 제공합니다.
   <tr>
    <td>표준화된 데이터 모델</td>
    <td>아니오</td>
-   <td>예, Magento GraphQL 스키마</td>
+   <td>예, Adobe Commerce GraphQL 스키마</td>
   </tr>
   <tr>
    <td>사용 가능</td>
    <td><p>예. SAP Commerce Cloud(AEM 6.4 및 Hybris 5(기본값)를 지원하도록 확장이 업데이트되었으며 Hybris 4와의 호환성을 유지합니다</p> <p>Salesforce Commerce Cloud(AEM 6.4를 지원하도록 커넥터가 열려 있음)</p> </td>
-   <td>GitHub를 통해 오픈 소스를 통해 지원. Magento Commerce(Magento 2.3.2(기본값)를 지원하고 Magento 2.3.1과 호환됩니다.)</td>
+   <td>GitHub를 통해 오픈 소스를 통해 지원. Adobe Commerce(2.3.2(기본값)를 지원하고 2.3.1과 호환됩니다.)</td>
   </tr>
   <tr>
    <td>사용 시기</td>
-   <td>제한된 사용 사례:예를 들어 작은 정적 카탈로그를 가져와야 하는 경우가 있는 경우가 있습니다</td>
+   <td>제한된 사용 사례: 예를 들어 작은 정적 카탈로그를 가져와야 하는 경우가 있습니다</td>
    <td>대부분의 사용 사례에서 선호하는 솔루션</td>
   </tr>
  </tbody>
@@ -104,7 +105,7 @@ eCommerce는 PIM(제품 정보 관리)과 함께 온라인 스토어를 통해 �
 * 라이브 및 중앙 집중식 스토리지 레코드
 * 웹 인터페이스
 
-AEM eCommerce는 마케터가 웹, 모바일 및 소셜 터치포인트 간에 브랜딩되고 개인화된 쇼핑 경험을 제공하는 데 도움이 됩니다. AEM 작성 환경에서는 Target 방문자 컨텍스트 및 머천다이징 전략을 기반으로 페이지 및 구성 요소를 사용자 지정할 수 있습니다.예:
+AEM eCommerce는 마케터가 웹, 모바일 및 소셜 터치포인트 간에 브랜딩되고 개인화된 쇼핑 경험을 제공하는 데 도움이 됩니다. AEM 작성 환경에서는 Target 방문자 컨텍스트 및 머천다이징 전략을 기반으로 페이지 및 구성 요소를 사용자 지정할 수 있습니다. 예:
 
 * 제품 페이지
 * 장바구니 구성 요소
@@ -119,15 +120,15 @@ AEM eCommerce는 마케터가 웹, 모바일 및 소셜 터치포인트 간에 �
 
 >[!NOTE]
 >
->외부 eCommerce 공급자와 통합 프레임워크를 사용하려면 먼저 필요한 패키지를 설치해야 합니다. 자세한 내용은 [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md) 배포를 참조하십시오.
+>외부 eCommerce 공급자와 통합 프레임워크를 사용하려면 먼저 필요한 패키지를 설치해야 합니다. 자세한 내용은 [eCommerce 배포](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->eCommerce 기능 확장에 대한 자세한 내용은 [eCommerce 개발](/help/commerce/cif-classic/developing/ecommerce.md)을 참조하십시오.
+>eCommerce 기능 확장에 대한 자세한 내용은 [eCommerce 개발](/help/commerce/cif-classic/developing/ecommerce.md).
 
-## 기본 기능 {#main-features}
+## 주요 기능 {#main-features}
 
 AEM eCommerce는 다음을 제공합니다.
 
-* 프로젝트에 대해 수행할 수 있는 사항을 보여주는 **기본 제공 AEM 구성 요소** 개수입니다.
+* 숫자 **즉시 사용 가능한 AEM 구성 요소** 프로젝트에 대해 수행할 수 있는 사항을 설명하려면:
 
    * 제품 표시
    * 장바구니
@@ -142,7 +143,7 @@ AEM eCommerce는 다음을 제공합니다.
    >
    >또한 AEM에서 제공하는 통합 프레임워크를 사용하면 특정 eCommerce 엔진과 독립적으로 상거래 기능을 위한 추가 AEM 구성 요소를 작성할 수 있습니다.
 
-* **검색**  - 다음 중 하나를 사용합니다.
+* **검색** - 다음 중 하나를 사용합니다.
 
    * AEM 검색
    * 전자 상거래 시스템 검색
@@ -151,15 +152,15 @@ AEM eCommerce는 다음을 제공합니다.
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* AEM 기능을 사용하여 컨텐츠를 여러 채널&#x200B;**에 표시하고 전체 브라우저 창이나 모바일 장치가 되도록 합니다.** 이렇게 하면 방문자가 필요로 하는 형식으로 콘텐츠가 전달됩니다.
+* 다음 작업을 수행할 AEM 기능을 사용합니다. **여러 채널에서 컨텐츠 제공**&#x200B;를 채울 수 있습니다. 이렇게 하면 방문자가 필요로 하는 형식으로 콘텐츠가 전달됩니다.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 
-* **AEM eCommerce framework](#the-framework)**&#x200B;를 기반으로 자체 통합 구현을 개발할 수 있는 기능.[
+* 다음 기능 **를 기반으로 자체 통합 구현 개발 [AEM eCommerce 프레임워크](#the-framework)**.
 
    현재 사용할 수 있는 두 구현은 모두 일반적인 API(프레임워크)의 맨 위에 같은 기준으로 빌드됩니다. 새 통합 구현에는 통합에 필요한 기능만 구현됩니다. 프런트엔드 구성 요소는 새로운 구현에서 인터페이스를 사용하여 사용할 수 있습니다. 즉, 구현과 독립적입니다.
 
-* 쇼핑객의 데이터 및 활동&#x200B;**을(를) 기반으로 하여**&#x200B;경험 기반 상거래를 개발할 수 있습니다. 이를 통해 다음과 같은 많은 시나리오를 실현할 수 있습니다.
+* 개발 가능성 **구매 데이터 및 활동을 기반으로 한 경험 기반의 상거래**. 이를 통해 다음과 같은 많은 시나리오를 실현할 수 있습니다.
 
    * 한 가지 예를 들자면 총 주문이 특정 금액을 초과하는 경우 운송 비용을 줄일 수 있습니다.
    * 프로필 데이터(예: 위치)를 사용하는 계절별 오퍼를 제공할 수도 있습니다. 그런 다음 필요할 때 다른 요소에 따라 이러한 매개 변수를 다시 강조 표시할 수 있습니다.
@@ -180,7 +181,7 @@ AEM eCommerce는 다음을 제공합니다.
 
 ## 프레임워크 {#the-framework}
 
-[개념](/help/commerce/cif-classic/administering/concepts.md) 섹션에서는 프레임워크를 보다 자세히 설명하지만, 다음은 프레임워크의 고속 보기를 제공합니다.
+다음 [개념](/help/commerce/cif-classic/administering/concepts.md) 섹션에서는 프레임워크를 자세히 설명하지만, 다음은 프레임워크에 대한 높은 수준의 고속 보기를 제공합니다.
 
 ### 뭐? {#what}
 

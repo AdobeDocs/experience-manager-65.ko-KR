@@ -1,10 +1,10 @@
 ---
 title: AEM - Commerce Integration Framework를 사용하여 상거래 통합 FAQ
 description: AEM - Commerce Integration Framework를 사용하여 상거래 통합 FAQ
-exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45,aece1190-9530-4060-9b08-022da7068987
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 ## 1. CIF GraphQL은 상거래에 대해서만 사용되거나 AEM에서 작성된 콘텐츠를 쿼리하는 데 사용할 수 있습니까? JCR?
 
-Adobe은 모든 상거래 관련 데이터에 대한 공식 상거래 API로 Magento의 GraphQL API를 채택했습니다. 따라서 AEM은 GraphQL을 사용하여 I/O Runtime을 통해 Magento 및 모든 상거래 엔진과 상거래 데이터를 교환합니다. 이 GraphQL API는 AEM GraphQL API와 독립적으로 컨텐츠 조각에 액세스합니다.
+Adobe은 모든 상거래 관련 데이터에 대한 공식 상거래 API로 Adobe Commerce의 GraphQL API를 채택했습니다. 따라서 AEM은 GraphQL을 사용하여 I/O Runtime을 통해 Adobe Commerce 및 모든 상거래 엔진과 상거래 데이터를 교환합니다. 이 GraphQL API는 AEM GraphQL API와 독립적으로 컨텐츠 조각에 액세스합니다.
 
-## 2. 제품 자산(이미지)을 Adobe Commerce(Magento) 관리자를 통해 AEM에서 저장하고 참조할 수 있습니까? Dynamic Media의 자산을 어떻게 사용할 수 있습니까?
+## 2. 제품 자산(이미지)을 Adobe Commerce 관리자를 통해 AEM에서 저장 및 참조할 수 있습니까? Dynamic Media의 자산을 어떻게 사용할 수 있습니까?
 
-공식 AEM Assets - Magento 통합을 사용할 수 없습니다. [marketplace](https://marketplace.magento.com/bounteous-dam.html)에 사용할 수 있는 파트너 커넥터가 있습니다.
+공식적인 AEM Assets - Adobe Commerce 통합을 사용할 수 없습니다. 에는 파트너 커넥터가 있습니다 [marketplace](https://marketplace.magento.com/bounteous-dam.html).
 
-또는 해결 방법으로, 제품 자산(이미지)을 AEM Assets에 저장할 수 있지만, Magento에 자산 URL을 수동으로 저장해야 합니다. Dynamic Media은 현재 AEM Assets의 일부이며 동일한 방식으로 작동합니다.
+또는 해결 방법으로, 제품 자산(이미지)을 AEM Assets에 저장할 수 있지만, Adobe Commerce에 자산 URL을 수동으로 저장해야 합니다. Dynamic Media은 현재 AEM Assets의 일부이며 동일한 방식으로 작동합니다.
 
 ## 3. 상거래 솔루션이 배포되는 위치에 문제가 있습니까? (온프레미스 또는 클라우드에서)
 
@@ -39,7 +39,7 @@ AEM과 함께 사용되는 CIF 추가 기능을 사용하면 데이터를 상거
 
 ## 7. PIM은 이 프레임워크로 어떻게 재생됩니까?
 
-PIM 데이터는 GraphQL 요청을 통해 AEM 및 클라이언트에 노출됩니다. 상거래 엔진에서 PIM 데이터를 검색할 수 있도록 PIM을 상거래 엔진(Magento 또는 기타)과 통합하는 것이 좋습니다.
+PIM 데이터는 GraphQL 요청을 통해 AEM 및 클라이언트에 노출됩니다. PIM을 상거래 엔진(Adobe Commerce 등)과 통합하여 상거래 엔진에서 PIM 데이터를 검색할 수 있도록 하는 것이 좋습니다.
 
 ## 8. Dispatcher를 통해 가격 및 기타 데이터를 캐시합니까? 이 경우 캐시 무효화 문제가 자주 발생합니까?
 
@@ -47,7 +47,7 @@ PIM 데이터는 GraphQL 요청을 통해 AEM 및 클라이언트에 노출됩�
 
 ## 9. AEM Dispatcher에 대한 캐시 무효화는 AEM 및 Commerce에서 어떻게 작동합니까?
 
-Dispatcher에 캐시된 페이지에 대해 TTL 기반 캐시 무효화를 설정하는 것이 좋습니다. 가격 또는 주식 등의 동적 정보는 클라이언트측에서 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html) 를 참조하십시오.
+Dispatcher에 캐시된 페이지에 대해 TTL 기반 캐시 무효화를 설정하는 것이 좋습니다. 가격 또는 주식 등의 동적 정보는 클라이언트측에서 렌더링하는 것이 좋습니다. TTL 기반 캐시 무효화에 대한 자세한 내용은 다음을 참조하십시오. [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 10. Commerce를 사용하여 AEM 컨텐츠 간에 통합 검색에 대한 권장 사항이 있습니까?
 
@@ -59,7 +59,7 @@ CIF에서는 검색 창 및 검색 결과 구성 요소를 제공합니다. 검�
 
 ## 12. MSM 또는 번역에서 제품 데이터를 어떻게 사용할 수 있습니까?
 
-제품 데이터는 일반적으로 PIM 또는 Magento에서 이미 번역됩니다. AEM - Magento 통합은 여러 Magento 저장소 및 저장소 보기에 대한 연결을 지원합니다. MSM 설정에서 일반적으로 하나의 AEM 사이트가 하나의 Magento 저장소 보기에 연결됩니다.
+제품 데이터는 일반적으로 PIM 또는 Adobe Commerce에서 이미 번역됩니다. AEM - Adobe Commerce 통합은 여러 Adobe Commerce 스토어 및 저장소 보기에 대한 연결을 지원합니다. MSM 설정에서 일반적으로 하나의 AEM 사이트가 하나의 Adobe Commerce 저장소 보기에 연결됩니다.
 
 ## 13. 상업용 텍스트로 제품 데이터를 향상시키는 방법이 있습니까? 이 작업은 어디에서 수행합니까? AEM에서 또는 상거래 솔루션에서는?
 
@@ -67,12 +67,12 @@ AEM에서 마케팅 관련 데이터 및 컨텐츠를 관리하는 것이 좋습
 
 ## 14. 전체 프레젠테이션 계층에서 AEM을 사용할 때 PCI 규정 준수를 어떻게 보장할 수 있습니까?
 
-추상적인 결제 방법을 사용하는 것이 좋습니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션도 카드 소지자 데이터를 보유하거나 전달할 수 없습니다. 이 접근 방식에서는 레벨 3 PCI 규정 준수가 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방법과 같이 PCI를 완벽하게 준수하도록 고려해야 할 추가 사항이 있습니다. Magento PCI 준수에 대한 자세한 내용은 <https://magento.com/pci-compliance> 을 참조하십시오.
+추상적인 결제 방법을 사용하는 것이 좋습니다. 이렇게 하면 브라우저 클라이언트가 결제 게이트웨이 공급자와 직접 통신하므로 Adobe 또는 상거래 솔루션도 카드 소지자 데이터를 보유하거나 전달할 수 없습니다. 이 접근 방식에서는 레벨 3 PCI 규정 준수가 필요합니다. 그러나 직원이 시스템 및 데이터와 상호 작용하는 방법과 같이 PCI를 완벽하게 준수하도록 고려해야 할 추가 사항이 있습니다. Adobe Commerce PCI 준수에 대한 자세한 내용은 다음을 참조하십시오. [PCI 규정 준수](https://business.adobe.com/products/magento/pci-compliance.html)
 
-## 15. AEM 및 Magento 클라우드 버전을 사용하는 경우 이 공동 솔루션 PCI를 준수합니까?
+## 15. AEM 및 Adobe Commerce 클라우드 버전을 사용하는 경우 이 공동 솔루션 PCI를 준수합니까?
 
 예. 요청 시 자체 평가 질문 D 및 규정 준수 증명을 사용할 수 있습니다.
 
 ## 16. I/O Runtime 평가판 라이센스를 요청하려면 어떻게 해야 합니까?
 
-I/O Runtime [여기](https://adobeio.typeform.com/to/obqgRm)을 사용하도록 평가판 라이센스를 요청할 수 있습니다.
+I/O Runtime을 사용하도록 평가판 라이센스를 요청할 수 있습니다 [여기](https://adobeio.typeform.com/to/obqgRm).

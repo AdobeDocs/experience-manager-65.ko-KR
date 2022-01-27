@@ -2,16 +2,17 @@
 title: Commerce Integration Framework를 사용하여 AEM 및 타사 상거래 통합
 description: 엔터프라이즈 기업은 상점 전원을 공급하기 위해 추가 타사 상거래 솔루션을 필요로 할 수 있습니다. 이러한 통합 시나리오에서 CIF(Commerce Integration Framework)를 사용하여 I/O Runtime을 사용하여 타사 상거래 솔루션을 Adobe Experience Manager에 연결할 수 있습니다.
 thumbnail: cif-third-party-architecture.jpg
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: e99899a4-df86-4108-991a-8b30d303a279
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 1%
 
 ---
 
-# 전자 상거래 통합 프레임워크를 사용하여 AEM 및 타사 상거래 통합 {#aem-third-party}
+# Commerce Integration Framework를 사용하여 AEM 및 타사 상거래 통합 {#aem-third-party}
 
-비Adobe Commerce 솔루션의 통합은 CIF를 위한 일반적인 시나리오입니다. 다양한 API 및 스키마를 사용하는 타사 솔루션은 통합 레이어를 통해 연결됩니다.
+비Adobe Commerce 솔루션의 통합은 CIF에 대한 일반적인 시나리오입니다. 다양한 API 및 스키마를 사용하는 타사 솔루션은 통합 레이어를 통해 연결됩니다.
 
 ## 아키텍처 {#architecture}
 
@@ -27,7 +28,7 @@ Experience Manager이 데이터를 온디맨드로 검색하므로 제품 카탈
 
 >[!TIP]
 >
->실시간 API를 사용할 수 없는 경우 통합에 API가 있는 외부 제품 캐시를 사용해야 합니다. 예 [Magento open-source](https://magento.com/products/magento-open-source).
+>실시간 API를 사용할 수 없는 경우 통합에 API가 있는 외부 제품 캐시를 사용해야 합니다. 예 [Magento 오픈 소스](https://business.adobe.com/products/magento/open-source.html).
 
 원하는 사용 사례를 활성화하기 위해 전체 GraphQL 스키마를 구현할 필요가 없으며 스키마 객체만 구현할 수 있습니다.
 
@@ -39,14 +40,14 @@ CIF는 실시간 제품 카탈로그 액세스 및 제품 경험 관리 도구�
 
 ## 프런트 엔드 사용 사례
 
-[AEM CIF 코어 ](https://github.com/adobe/aem-core-cif-components) 구성 요소CIF 지원 Adobe Commerce API를 통해 데이터를 검색하고 교환합니다. 구성 요소를 다시 사용하려면 각 API를 구현해야 합니다.
+[AEM CIF 코어 구성 요소](https://github.com/adobe/aem-core-cif-components) cif 지원 Adobe Commerce API를 통해 데이터를 검색하고 교환합니다. 구성 요소를 다시 사용하려면 각 API를 구현해야 합니다.
 
 성능 중요한 클라이언트측 구성 요소에 대한 권장 사항은 지연을 방지하기 위해 타사 솔루션과 직접 통신하는 것입니다.
 
 ## 통합 개발 {#develop-integration}
 
-통합 레이어에 [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)을 사용하는 것이 좋습니다. 타사의 CIF 추가 기능에 포함되어 있습니다. 마이크로 서비스와 같은 접근 방식으로 작동하므로 여러 솔루션을 쉽게 통합하는 것이 적합합니다.
+을 사용하는 것이 좋습니다 [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) 통합 레이어의 경우 타사의 CIF 추가 기능에 포함되어 있습니다. 마이크로 서비스와 같은 접근 방식으로 작동하므로 여러 솔루션을 쉽게 통합하는 것이 적합합니다.
 
-[참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference)은 상거래 솔루션에 대한 통합을 구축하는 좋은 시작점입니다. GraphQL을 지원하지만 REST 등 다른 유형의 API와 통합할 수도 있습니다.
+다음 [참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference) 는 상거래 솔루션에 대한 통합을 구축하는 중요한 시작점입니다. GraphQL을 지원하지만 REST 등 다른 유형의 API와 통합할 수도 있습니다.
 
 타사 계층(예: Mulesoft)을 사용할 수 있거나 통합 이 타사 솔루션을 기반으로 구축된 경우에는 이 통합 레이어가 필요하지 않습니다.
