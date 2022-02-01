@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
+source-git-commit: 270219c8baedd4b72a256e6318d89154d6dadb0b
 workflow-type: tm+mt
-source-wordcount: '6080'
-ht-degree: 1%
+source-wordcount: '6110'
+ht-degree: 3%
 
 ---
 
@@ -128,11 +128,11 @@ Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더�
          * **[!UICONTROL 하위 폴더에 대해 사용 안 함]** - 이 하위 트리의 모든 항목을 Dynamic Media에 동기화하지 않도록 제외합니다.
 
    >[!NOTE]
-   Dynamic Media - Scene7 모드에서는 버전 관리를 지원하지 않습니다. 또한 지연된 활성화는 **[!UICONTROL 자산 게시]** Dynamic Media 구성 편집 페이지에서 이 **[!UICONTROL 활성화 시]**, 그리고 자산이 처음 활성화될 때까지 에만 해당합니다.
+   Dynamic Media - Scene7 모드에서는 버전 관리를 지원하지 않습니다. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
    자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 실시간으로 게시됩니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 Dynamic Media에 연결하려면 Experience Manager 작성자 인스턴스를 &quot;&quot;허용 목록에 추가하다해야 합니다.
+1. 기본적으로 Experience Manager 작성자는 Dynamic Media 컨텐츠를 미리 볼 수 없습니다. 따라서 Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 *허용 목록에 추가하다* Dynamic Media에 연결할 Experience Manager 작성자 인스턴스. 또한 사용자에게 컨텐츠를 안전하게 미리 볼 수 있는 액세스 권한을 제공하려는 경우 다음을 수행할 수 있습니다 *허용 목록에 추가하다* 추가 IP 주소:
 
    * Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
    * 왼쪽 레일에서 를 선택합니다. **[!UICONTROL 도구]** 아이콘, 다음 위치로 이동 **[!UICONTROL 자산]** > **[!UICONTROL Dynamic Media 게시 설정]**.
@@ -274,7 +274,7 @@ Dynamic Media 색상 관리를 통해 자산의 색상을 올바르게 지정할
 자세한 내용은 [이미지 사전 설정 구성](/help/assets/managing-image-presets.md).
 
 >[!NOTE]
-기본적으로, 선택하면 15개의 표현물이 표시됩니다 **[!UICONTROL 표현물]** 및 15개의 뷰어 사전 설정을 선택할 때 **[!UICONTROL 뷰어]** 를 클릭합니다. 이 제한을 늘릴 수 있습니다. 자세한 내용은 [표시되는 이미지 사전 설정 수를 늘립니다](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수를 늘립니다](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+기본적으로, 선택하면 15개의 표현물이 표시됩니다 **[!UICONTROL 표현물]** 및 15개의 뷰어 사전 설정을 선택할 때 **[!UICONTROL 뷰어]** 를 클릭합니다. You can increase this limit. 자세한 내용은 [표시되는 이미지 사전 설정 수를 늘립니다](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) 또는 [표시되는 뷰어 사전 설정 수를 늘립니다](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### 지원되는 형식에 대한 MIME 유형 편집 {#editing-mime-types-for-supported-formats}
 
@@ -324,7 +324,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. 페이지에서 아래로 스크롤하여 이름으로 이동합니다. *Adobe CQ Scene7 Asset MIME 유형 서비스* 다음 스크린샷과 같습니다. 이름 오른쪽에서 을(를) 선택합니다. **[!UICONTROL 구성 값 편집]** (연필 아이콘).
+1. On the page, scroll down to the name *Adobe CQ Scene7 Asset MIME type Service* as seen the following screenshot. 이름 오른쪽에서 을(를) 선택합니다. **[!UICONTROL 구성 값 편집]** (연필 아이콘).
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
@@ -387,7 +387,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe이 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
 1. 페이지 상단 근처에 있는 탐색 막대에서 **[!UICONTROL 설정]** > **[!UICONTROL 애플리케이션 설정]** > **[!UICONTROL 일괄처리 집합 사전 설정]** > **[!UICONTROL 기본 이름 지정]**.
-1. 선택 **[!UICONTROL 양식 보기]** 또는 **[!UICONTROL 코드 보기]** 를 입력하여 각 요소에 대한 정보를 보고 입력할 수 있습니다.
+1. Select **[!UICONTROL View Form]** or **[!UICONTROL View Code]** to specify how you want to view and enter information about each element.
 
    을(를) 선택할 수 있습니다 **[!UICONTROL 코드 보기]** 양식 선택과 함께 정규 표현식 값 작성을 보려면 확인란을 선택합니다. 양식 보기에서 어떤 이유로든 사용자를 제한하는 경우 이름 지정 규칙의 요소를 정의하는 데 도움이 되도록 이러한 값을 입력하거나 변경할 수 있습니다. 값을 양식 보기에서 구문 분석할 수 없는 경우 양식 필드는 비활성 상태가 됩니다.
 
@@ -467,9 +467,9 @@ spin-01-01
 
 ![chlimage_1-560](assets/chlimage_1-560.png)
 
-스핀 세트의 공유 자산 이름 부분에 대한 그룹이 **[!UICONTROL 일치]** 필드(강조 표시됨) 행 및 열이 포함된 자산 이름의 변수 부분이 **[!UICONTROL 행]** 및 **[!UICONTROL 열]** 필드(각각)를 반환합니다.
+스핀 세트의 공유 자산 이름 부분에 대한 그룹이 **[!UICONTROL 일치]** 필드(강조 표시됨) The variable part of the asset name containing the row and column is added to the **[!UICONTROL Row]** and **[!UICONTROL Column]** fields, respectively.
 
-스핀 세트를 업로드하고 게시하면 아래에 나열된 2D 스핀 세트 레서피의 이름을 활성화합니다 **[!UICONTROL 일괄처리 집합 사전 설정]** 에서 **[!UICONTROL 업로드 작업 옵션]** 대화 상자
+When the Spin Set is uploaded and published, you would activate the name of the 2D Spin Set recipe that is listed under **[!UICONTROL Batch Set Presets]** in the **[!UICONTROL Upload Job Options]** dialog box.
 
 **2D 스핀 세트의 자동 생성을 위한 배치 세트 사전 설정을 생성하려면:**
 
@@ -483,10 +483,10 @@ spin-01-01
 
 1. 사전 설정 목록 패널에서 **[!UICONTROL 추가]** 화면 오른쪽의 [세부 정보] 패널에서 정의 필드를 활성화하려면
 1. 세부 정보 패널의 사전 설정 이름 필드에 사전 설정 이름을 입력합니다.
-1. 배치 세트 유형 드롭다운 메뉴에서 **[!UICONTROL 자산 세트]**.
+1. In the Batch Set Type drop-down menu, select **[!UICONTROL Asset Set]**.
 1. 하위 유형 드롭다운 목록에서 을 선택합니다 **[!UICONTROL 다축 스핀 세트]**.
 1. 확장 **[!UICONTROL 자산 이름 지정 규칙]**&#x200B;를 입력한 다음 파일 이름 지정 드롭다운 목록에서 **[!UICONTROL 사용자 지정]**.
-1. 를 사용하십시오 **[!UICONTROL 일치]** 그리고 선택적으로 **[!UICONTROL 기본 이름]** 속성을 사용하여 그룹을 구성하는 이미지 자산 이름에 대한 정규 표현식을 정의합니다.
+1. Use the **[!UICONTROL Match]** and, optionally, **[!UICONTROL Base Name]** attributes to define a regular expression for the naming of image assets that make up the grouping.
 
    예를 들어 리터럴 Match 정규 표현식은 다음과 같을 수 있습니다.
 
