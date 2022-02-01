@@ -11,7 +11,7 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 9fbf338b18e73fbd272af061381baf34b694239a
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 1%
@@ -152,7 +152,7 @@ Adobe I/O 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 볼 수
 
 * [https://console.adobe.io/projects](https://console.adobe.io/projects)
 
-선택 **보기** (특정 프로젝트 항목 오른쪽에 있음)를 클릭하여 구성에 대한 세부 정보를 표시합니다. 이러한 쿠키에는 다음이 포함됩니다.
+선택 **보기** (특정 프로젝트 항목 오른쪽에 있음)를 클릭하여 구성에 대한 세부 정보를 표시합니다. 여기에는 다음이 포함됩니다.
 
 * 프로젝트 개요
 * 인사이트
@@ -175,7 +175,7 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
 1. 여기에서 을 사용할 수 있습니다 [Adobe I/O 세부 정보](#details-stored-for-the-adobe-io-integration-project):
 
    * **제목**: 텍스트.
-   * **인증 서버**: 에서 이 복사/붙여넣기 `"aud"` 라인 **페이로드** 섹션을 참조하십시오. `"https://ims-na1.adobelogin.com"` 아래 예에서
+   * **인증 서버**: 에서 이 복사/붙여넣기 `aud` 라인 **페이로드** 섹션을 참조하십시오. `https://ims-na1.adobelogin.com` 아래 예에서
    * **API 키**: 다음에서 이 복사 [개요](#details-stored-for-the-adobe-io-integration-project) Target에 대한 Adobe I/O 통합 섹션
    * **클라이언트 암호**: 에서 이 필드를 생성합니다. [개요](#details-stored-for-the-adobe-io-integration-project) Target에 대한 Adobe I/O 통합 섹션 및 복사
    * **페이로드**: 다음에서 이 복사 [JWT 생성](#details-stored-for-the-adobe-io-integration-project) Target에 대한 Adobe I/O 통합 섹션
@@ -230,6 +230,7 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
 1. 에 세부 사항을 입력합니다. **Adobe Target 설정** 탭:
 
    * **인증**: IMS
+
    * **테넌트 ID**: adobe IMS 테넌트 ID입니다. 다음을 참조하십시오. [테넌트 ID 및 클라이언트 코드](#tenant-client) 섹션을 참조하십시오.
 
       >[!NOTE]
@@ -241,24 +242,34 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >그러면 `yourtenantid`.
-   * **클라이언트 코드**: 자세한 내용은 [테넌트 ID 및 클라이언트 코드](#tenant-client) 섹션을 참조하십시오.
-   * **IMS 구성**: ims 구성 이름을 선택합니다.
-   * **API 유형**: REST
-   * **A4T Analytics Cloud 구성**: Target 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 컨텐츠를 타깃팅할 때 Adobe Analytics을 보고 소스로 사용하는 경우 이 작업이 필요합니다. 클라우드 구성이 표시되지 않으면 [A4T Analytics Cloud 구성 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
-   * **정확한 타겟 지정 사용**: 기본적으로 이 확인란은 선택되어 있습니다. 이 옵션을 선택하면 클라우드 서비스 구성이 컨텍스트를 로드한 후 컨텐츠를 로드합니다. 다음을 참조하십시오.
-   * **Adobe Target에서 세그먼트 동기화**: AEM에서 사용할 Target에 정의된 세그먼트를 다운로드하려면 이 옵션을 선택합니다. 인라인 세그먼트는 지원되지 않으며 항상 Target의 세그먼트를 사용해야 하므로 API 유형 속성이 REST일 때 이 옵션을 선택해야 합니다. (&#39;세그먼트&#39;의 AEM 용어는 &#39;대상&#39; Target과 같습니다.)
-   * **클라이언트 라이브러리**: AT.js 클라이언트 라이브러리나 mbox.js(더 이상 사용되지 않음)를 원하는지 선택합니다.
-   * **Tag Management System을 사용하여 클라이언트 라이브러리를 제공합니다**: DTM(더 이상 사용되지 않음), Launch 또는 기타 태그 관리 시스템을 사용합니다.
-   * **사용자 지정 AT.js**: 태그 관리 상자를 선택했거나 기본 AT.js를 사용하려면 비워 둡니다. 또는 사용자 지정 AT.js를 업로드합니다. AT.js를 선택한 경우에만 나타납니다.
 
+   * **클라이언트 코드**: 자세한 내용은 [테넌트 ID 및 클라이언트 코드](#tenant-client) 섹션을 참조하십시오.
+
+   * **IMS 구성**: ims 구성 이름을 선택합니다.
+
+   * **API 유형**: REST
+
+   * **A4T Analytics Cloud 구성**: Target 활동 목표 및 지표에 사용되는 Analytics 클라우드 구성을 선택합니다. 컨텐츠를 타깃팅할 때 Adobe Analytics을 보고 소스로 사용하는 경우 이 작업이 필요합니다. 클라우드 구성이 표시되지 않으면 [A4T Analytics Cloud 구성 구성](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+
+   * **정확한 타겟 지정 사용**: 기본적으로 이 확인란은 선택되어 있습니다. 이 옵션을 선택하면 클라우드 서비스 구성이 컨텍스트를 로드한 후 컨텐츠를 로드합니다. 다음을 참조하십시오.
+
+   * **Adobe Target에서 세그먼트 동기화**: AEM에서 사용할 Target에 정의된 세그먼트를 다운로드하려면 이 옵션을 선택합니다. 인라인 세그먼트는 지원되지 않으며 항상 Target의 세그먼트를 사용해야 하므로 API 유형 속성이 REST일 때 이 옵션을 선택해야 합니다. (&#39;세그먼트&#39;의 AEM 용어는 &#39;대상&#39; Target과 같습니다.)
+
+   * **클라이언트 라이브러리**: AT.js 클라이언트 라이브러리나 mbox.js(더 이상 사용되지 않음)를 원하는지 선택합니다.
+
+   * **Tag Management System을 사용하여 클라이언트 라이브러리를 제공합니다**: DTM(더 이상 사용되지 않음), Launch 또는 기타 태그 관리 시스템을 사용합니다.
+
+   * **사용자 지정 AT.js**: 태그 관리 상자를 선택했거나 기본 AT.js를 사용하려면 비워 둡니다. 또는 사용자 지정 AT.js를 업로드합니다. AT.js를 선택한 경우에만 나타납니다.
    >[!NOTE]
    >
    >[Target Classic API를 사용할 Cloud Service 구성](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) 은 더 이상 사용되지 않습니다(Adobe Recommendations 설정 탭 사용).
+
 1. 클릭 **Target에 연결** 를 눌러 Adobe Target과의 연결을 초기화합니다.
 
    연결에 성공하면 메시지가 나타납니다 **연결 성공** 이 표시됩니다.
 
 1. 선택 **확인** 메시지 다음에 **확인** 대화 상자에서 구성을 확인합니다.
+
 1. 이제 다음을 수행할 수 있습니다 [Target 프레임워크 추가](/help/sites-administering/target-configuring.md#adding-a-target-framework) Target으로 전송할 ContextHub 또는 ClientContext 매개 변수를 구성하려면 다음을 수행하십시오. AEM 경험 구성요소를 Target으로 내보내는 데에는 필요하지 않을 수 있습니다.
 
 ### 테넌트 ID 및 클라이언트 코드 {#tenant-client}
