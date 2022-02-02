@@ -3,9 +3,9 @@ sub-product: AEM Content and Commerce
 user-guide-title: AEM Content 및 Commerce
 breadcrumb-title: Commerce 안내서
 user-guide-description: AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
-source-git-commit: 9c4edf1d1482923856e56cdadfe1a2a903e782bc
+source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 76%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 76%
       + [상거래 경험](cif/authoring/authoring-commerce-experiences.md)
       + [제품 관리실](cif/authoring/product-cockpit.md)
       + [관련 콘텐츠를 사용하여 제품 데이터 강화](cif/authoring/enrich-product-associated-content.md)
+      + [제품 추천](cif/authoring/product-recommendations.md)
    + 관리 {#administering}
       + [다중 스토어 설정](cif/configuring/multi-store-setup.md)
       + [다중 템플릿 사용](cif/configuring/multi-template-usage.md)
