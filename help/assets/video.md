@@ -1,5 +1,5 @@
 ---
-title: 다이내믹 미디어의 비디오
+title: Dynamic Media의 비디오
 description: 비디오 인코딩, YouTube에 비디오 게시, 비디오 보고서 보기 우수 사례와 같이 Dynamic Media에서 비디오를 사용하여 작업하는 방법을 알아봅니다. 비디오에 자막, 자막 또는 장 마커를 추가하는 방법도 알아봅니다.
 mini-toc-levels: 3
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
@@ -12,14 +12,14 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: e8270ad3f658236184467eda9f25c2ec0e6787ba
+source-git-commit: 128358e17aa6166c81e0979825ee81d029418f22
 workflow-type: tm+mt
 source-wordcount: '11766'
 ht-degree: 5%
 
 ---
 
-# 다이내믹 미디어의 비디오 {#video}
+# Dynamic Media의 비디오 {#video}
 
 이 섹션에서는 Dynamic Media에서 비디오 작업을 설명합니다.
 
@@ -34,12 +34,10 @@ ht-degree: 5%
 >* 자세한 내용은 [Dynamic Media Cloud Services 구성](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) Dynamic Media 구성 - Scene7 모드 및 [Dynamic Media 문제 해결 - Scene7 모드](/help/assets/troubleshoot-dms7.md).
 >
 >* 자세한 내용은 [Dynamic Media Cloud Services 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) Dynamic Media 구성 - 하이브리드 모드에서 을 참조하십시오.
-
 >
 >현재 Dynamic Media에서 알려진 비디오 재생 문제 *Experience Manager 6.5.9.0에서만*:
 >
 >* 게시된 비디오가 업데이트되면 게재의 변경 사항을 반영하려면 다시 게시해야 합니다.
-
 >
 
 
@@ -56,7 +54,7 @@ ht-degree: 5%
       * 추가 정보 [디지털 자산 구성](/help/assets/organize-assets.md).
    * 기본 소스 비디오를 폴더에 업로드합니다. 폴더에 비디오를 추가하면 폴더에 할당한 비디오 처리 프로필에 따라 인코딩됩니다.
 
-      * Dynamic Media은 주로 최대 30분 길이의 짧은 비디오와 50x 50보다 큰 최소 해상도를 지원합니다.
+      * Dynamic Media은 주로 최대 30분 길이의 짧은 비디오와 25x 25보다 큰 최소 해상도를 지원합니다.
       * 각각 최대 15GB의 비디오 파일을 업로드할 수 있습니다.
       * [비디오 업로드](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * 추가 정보 [지원되는 입력 파일 형식](/help/assets/assets-formats.md#supported-multimedia-formats).
@@ -300,7 +298,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 비디오 파일을 인코딩할 때 가능한 가장 높은 품질의 소스 비디오 파일을 사용하십시오. 이전에 인코딩된 비디오 파일은 이미 압축되었으므로 해당 파일을 사용하지 마십시오. 또한 인코딩을 통해 하위 품질의 비디오가 생성됩니다.
 
-* Dynamic Media은 주로 최대 30분 길이의 짧은 비디오와 50x 50보다 큰 최소 해상도를 지원합니다.
+* Dynamic Media은 주로 최대 30분 길이의 짧은 비디오와 25x 25보다 큰 최소 해상도를 지원합니다.
 * 각각 최대 15GB의 기본 소스 비디오 파일을 업로드할 수 있습니다.
 
 다음 표에서는 소스 비디오 파일을 인코딩하기 전에 사용해야 하는 권장 크기, 종횡비 및 최소 비트 전송률에 대해 설명합니다.
