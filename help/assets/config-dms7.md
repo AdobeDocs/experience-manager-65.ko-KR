@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 270219c8baedd4b72a256e6318d89154d6dadb0b
+source-git-commit: cfd08526fd1dccf461b13747b4a7496849243669
 workflow-type: tm+mt
-source-wordcount: '6110'
-ht-degree: 3%
+source-wordcount: '6035'
+ht-degree: 4%
 
 ---
 
@@ -132,16 +132,17 @@ Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더�
    자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 실시간으로 게시됩니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-1. 기본적으로 Experience Manager 작성자는 Dynamic Media 컨텐츠를 미리 볼 수 없습니다. 따라서 Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 *허용 목록에 추가하다* Dynamic Media에 연결할 Experience Manager 작성자 인스턴스. 또한 사용자에게 컨텐츠를 안전하게 미리 볼 수 있는 액세스 권한을 제공하려는 경우 다음을 수행할 수 있습니다 *허용 목록에 추가하다* 추가 IP 주소:
+1. Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보기 위해 Experience Manager은 토큰 기반 유효성 검사를 사용하므로 Experience Manager 작성자는 기본적으로 Dynamic Media 컨텐츠를 미리 봅니다. 그러나 다음을 수행할 수 있습니다 *허용 목록에 추가하다* 사용자에게 컨텐츠를 안전하게 미리 볼 수 있는 액세스 권한을 제공하는 추가 IP. Experience Manager에서 이 작업을 설정하려면 다음을 참조하십시오 [이미지 서버에 대한 Dynamic Media 게시 설정 구성 - 보안 탭](/help/assets/dm-publish-settings.md#security-tab).
+<!-- 1. By default Experience Manager Author cannot preview Dynamic Media content. Therefore, to securely preview Dynamic Media content before it gets published, you must *allowlist* the Experience Manager Author instance to connect to Dynamic Media. In addition, if you want to provide users access to securely preview content, you can *allowlist* additional IP addresses:
 
-   * Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
-   * 왼쪽 레일에서 를 선택합니다. **[!UICONTROL 도구]** 아이콘, 다음 위치로 이동 **[!UICONTROL 자산]** > **[!UICONTROL Dynamic Media 게시 설정]**.
-   * Dynamic Media 이미지 서버 페이지의 **[!UICONTROL 게시 컨텍스트]** 드롭다운 목록에서 **[!UICONTROL 테스트 이미지 제공]**.
-   * 을(를) 선택합니다 **[!UICONTROL 보안]** 탭.
-   * 대상 **[!UICONTROL 클라이언트 주소]**, 선택 **[!UICONTROL 추가]**.
-   * Experience Manager 작성자 인스턴스(Dispatcher IP 아님)의 IP 주소를 입력합니다.
-   * 페이지의 오른쪽 위 모서리에서 을(를) 선택합니다 **[!UICONTROL 저장]**.
-
+    * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+    * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
+    * On the Dynamic Media Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
+    * Select the **[!UICONTROL Security]** tab.
+    * For the **[!UICONTROL Client address]**, select **[!UICONTROL Add]**.
+    * Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
+    * In the upper-right corner of the page, select **[!UICONTROL Save]**.
+ -->
 이제 기본 구성을 완료했습니다. Dynamic Media - Scene7 모드를 사용할 준비가 되었습니다.
 
 구성을 추가로 사용자 지정하려면 아래의 작업을 선택적으로 완료할 수 있습니다 [(선택 사항) Dynamic Media - Scene7 모드에서 고급 설정 구성](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
