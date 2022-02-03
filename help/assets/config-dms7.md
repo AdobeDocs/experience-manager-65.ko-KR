@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: cfd08526fd1dccf461b13747b4a7496849243669
+source-git-commit: 2706a069bea731da1f84c15e2da02b53a9db4d28
 workflow-type: tm+mt
 source-wordcount: '6035'
 ht-degree: 4%
@@ -104,6 +104,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 1. 연결이 성공하면 다음을 설정합니다. 별표(*)가 있는 헤딩은 다음과 같습니다.
 
    * **[!UICONTROL 회사]** - Dynamic Media 계정의 이름입니다. 여러 Dynamic Media 계정이 있습니다. 예를 들어 서로 다른 하위 브랜드, 사업부, 스테이징 또는 프로덕션 환경이 있을 수 있습니다.
+
+   <!-- UNHIDE FEBRUARY 24, 2022 See also [Configure Dynamic Media company alias account](/help/assets/dm-alias-account.md). -->
 
    * **[!UICONTROL 회사 루트 폴더 경로]**
 
