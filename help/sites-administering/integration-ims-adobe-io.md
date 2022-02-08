@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-source-git-commit: 9fbf338b18e73fbd272af061381baf34b694239a
+source-git-commit: bf55553f48c1eddf5dec503fb105cf35ff26677d
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1539'
 ht-degree: 1%
 
 ---
@@ -143,7 +143,7 @@ AEM에서 사용할 Adobe Target으로 I/O 프로젝트를 만들려면 Adobe I/
 
 1. 다음으로 이동 **제품** (위쪽 도구 모음)를 선택한 다음 **Adobe Target - &lt;*your-tenant-id*>** (왼쪽 패널에서)
 1. 선택 **제품 프로필**&#x200B;그런 다음 제공된 목록에서 필요한 작업 공간을 만듭니다. 예를 들어, 기본 작업 영역입니다.
-1. 선택 **통합**, 그런 다음 필요한 통합 구성을 선택합니다.
+1. 선택 **API 자격 증명**, 그런 다음 필요한 통합 구성을 선택합니다.
 1. 선택 **편집자** 로서의 **제품 역할**; 대신 **관찰자**.
 
 ## Adobe I/O 통합 프로젝트에 대해 저장된 세부 사항 {#details-stored-for-the-adobe-io-integration-project}
