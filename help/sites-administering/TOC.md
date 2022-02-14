@@ -8,10 +8,10 @@ breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
+source-git-commit: 7af09e73f40c2d947c9ccce000174155ef67137f
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 18%
+source-wordcount: '631'
+ht-degree: 29%
 
 ---
 
@@ -23,21 +23,21 @@ ht-degree: 18%
    + [웹 사이트 관리](msm-and-translation.md)
    + [비동기 작업](asynchronous-jobs.md)
    + [컨텐츠 재사용: 다중 사이트 관리자 및 Live Copy](msm.md)
-   + [Live Copy 개요 콘솔](msm-livecopy-overview.md)
-   + [Live Copy 동기화 구성](msm-sync.md)
-   + [Live Copy 생성 및 동기화](msm-livecopy.md)
+   + [라이브 카피 개요 콘솔](msm-livecopy-overview.md)
+   + [라이브 카피 동기화 구성](msm-sync.md)
+   + [라이브 카피 생성 및 동기화](msm-livecopy.md)
    + [MSM 롤아웃 충돌](msm-rollout-conflicts.md)
-   + [MSM 우수 사례](msm-best-practices.md)
-   + [다국어 사이트의 컨텐츠 번역](translation.md)
+   + [MSM 모범 사례](msm-best-practices.md)
+   + [다국어 사이트를 위한 콘텐츠 번역](translation.md)
    + [번역 프로젝트 관리](tc-manage.md)
-   + [번역할 컨텐츠 식별](tc-rules.md)
-   + [컨텐츠 번역 준비](tc-prep.md)
+   + [번역할 콘텐츠 식별](tc-rules.md)
+   + [번역을 위한 콘텐츠 준비](tc-prep.md)
    + [클래식 UI를 사용하여 언어 루트 만들기](tc-lroot-classic.md)
    + [Microsoft Translator에 연결](tc-msconf.md)
    + [번역 통합 프레임워크 구성](tc-tic.md)
    + [언어 복사 마법사](tc-wizard.md)
    + [번역 개선 사항](tc-enhancements.md)
-   + [번역 우수 사례](tc-bp.md)
+   + [번역 모범 사례](tc-bp.md)
    + [구성 및 구성 브라우저](configurations.md)
    + [AEM FAQ](aem-faqs.md)
 + 작업 {#operations}
@@ -59,7 +59,7 @@ ht-degree: 18%
    + [AEM 문제 해결](troubleshoot.md)
    + [워크플로우에 대한 액세스 관리](workflows-managing.md)
    + [워크플로우 시작](workflows-starting.md)
-   + [워크플로우 관리](workflows.md)
+   + [워크플로 관리](workflows.md)
    + [워크플로우 인스턴스 관리](workflows-administering.md)
    + [AEM에서 cURL 사용](curl.md)
    + [프록시 서버 도구(proxy.jar)](proxy-jar.md)
@@ -99,12 +99,12 @@ ht-degree: 18%
    + [컨텐츠 처리 필터](content-disposition-filter.md)
    + [AEM 6.5의 사용자 지정 사용자 그룹 매핑](/help/sites-administering/cug-mapping.md)
    + [동일한 사이트 쿠키 지원](same-site-cookie-support.md)
-+ 개인화 {#personalization}
++ 개인 맞춤화 {#personalization}
    + [개인화](personalization.md)
    + [ContextHub 구성](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [Client Context](client-context.md)
    + [캠페인](campaigns.md)
-   + [ContextHub로 세그멘테이션 구성](segmentation.md)
+   + [ContextHub를 사용하여 세그먼테이션 구성](segmentation.md)
    + [세그멘테이션 구성](campaign-segmentation.md)
    + [랜딩 페이지용 디자인 Importer 확장 및 구성](extending-the-design-importer-for-landingpages.md)
    + [랜딩 페이지와 Adobe Analytics 통합](integrating-landing-pages-with-adobe-analytics.md)
@@ -117,7 +117,7 @@ ht-degree: 18%
    + [Adobe Analytics에 대한 링크 추적 구성](adobeanalytics-link.md)
    + [구성 요소 데이터를 Adobe Analytics 속성과 매핑](adobeanalytics-mapping.md)
    + [Adobe Analytics에 대한 비디오 추적 구성](adobeanalytics-video.md)
-   + [콘텐츠의 HTTP2 전달 FAQ](scene7-http2faq.md)
+   + [콘텐츠 FAQ의 HTTP2 전송](scene7-http2faq.md)
    + [Adobe Campaign 통합 문제 해결](troubleshooting-campaignintegration.md)
    + [SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항](sharepoint-connector-licenses.md)
    + [SharePoint 커넥터](sharepoint-connector.md)
@@ -143,6 +143,7 @@ ht-degree: 18%
    + [Adobe Target과 통합 수동 구성](target-configuring.md)
    + [Adobe Target과 통합하기 위한 사전 요구 사항](target-requirements.md)
    + [Adobe I/O을 사용하여 Adobe Target과 통합](integration-ims-adobe-io.md)
+   + [Adobe I/O을 사용하여 Adobe Target과 통합](integration-target-ims-adobe-io.md)
    + [Adobe 분류](adobeanalytics-classifications.md)
    + [Adobe Search &amp; Promote과 통합](search-and-promote.md)
    + [솔루션 통합](integration.md)
@@ -151,13 +152,13 @@ ht-degree: 18%
    + [Livefyre와 통합하기](livefyre.md)
 + 우수 사례 {#bestpractices}
    + [우수 사례](administer-best-practices.md)
-   + [번역 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
-   + [MSM 우수 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
+   + [번역 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
+   + [MSM 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
    + [AEM Sites - GDPR 준비 완료](gdpr-compliance-sites.md)
    + [AEM Foundation에 대한 GDPR 요청 처리](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce - GDPR 준비 완료](gdpr-compliance-commerce.md)
 + 컨텐츠 관리 {#contentmanagement}
-   + [설치할 수 있습니다](package-manager.md)
+   + [패키지 관리자](package-manager.md)
    + [태그 관리](tags.md)
    + [페이지 내보내기](page-exporter.md)
    + [클래식 UI 태깅 콘솔](classic-console.md)

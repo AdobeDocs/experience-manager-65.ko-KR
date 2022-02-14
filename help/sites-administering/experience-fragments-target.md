@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: cc19ddcf032457091ea1341ea37fba93a0e56fc1
+source-git-commit: a33d46bcfcf901fb774b742c0fc972265401a56e
 workflow-type: tm+mt
 source-wordcount: '1223'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -37,8 +37,7 @@ ht-degree: 0%
    >   * 클라우드 구성에 지정된 명명된 작업 공간입니다.
    >   * **참고:** 특정 작업 공간으로 내보내려면 Adobe Target Premium이 필요합니다.
 >
->* AEM이 있어야 함 [Adobe I/O을 사용하여 Adobe Target과 통합](/help/sites-administering/integration-ims-adobe-io.md).
-
+>* AEM이 있어야 함 [Adobe I/O을 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims-adobe-io.md).
 >
 >AEM 6.5.0.0 및 6.5.1.0:
 >
@@ -54,7 +53,7 @@ Adobe Target으로 경험 조각을 내보내는 데 사용할 수 있는 세 �
 * JSON: 헤드리스 컨텐츠 전달 지원
 * HTML 및 JSON
 
-AEM 경험 구성요소를 Adobe Target의 기본 작업 공간으로 내보내거나 Adobe Target의 사용자 지정 작업 공간으로 내보낼 수 있습니다. 이 작업은 Adobe I/O을 통해 수행되며, AEM은 [Adobe I/O을 사용하여 Adobe Target과 통합](/help/sites-administering/integration-ims-adobe-io.md).
+AEM 경험 구성요소를 Adobe Target의 기본 작업 공간으로 내보내거나 Adobe Target의 사용자 지정 작업 공간으로 내보낼 수 있습니다. 이 작업은 Adobe I/O을 통해 수행되며, AEM은 [Adobe I/O을 사용하여 Adobe Target과 통합](/help/sites-administering/integration-target-ims-adobe-io.md).
 
 >[!NOTE]
 >
@@ -70,7 +69,6 @@ AEM 경험 구성요소를 Adobe Target의 기본 작업 공간으로 내보내�
 >
 >* [Adobe Target 개발](https://www.adobe.io/apis/experiencecloud/target.html)
 >* [핵심 구성 요소 - 경험 조각](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
-
 >
 
 
@@ -82,7 +80,7 @@ AEM 경험 구성요소를 Adobe Target의 기본 작업 공간으로 내보내�
 
 다양한 작업이 필요합니다.
 
-1. 당신은 [Adobe I/O을 사용하여 AEM과 Adobe Target 통합](/help/sites-administering/integration-ims-adobe-io.md).
+1. 당신은 [Adobe I/O을 사용하여 AEM과 Adobe Target 통합](/help/sites-administering/integration-target-ims-adobe-io.md).
 2. 경험 조각은 AEM 작성자 인스턴스에서 내보내지므로 다음 작업을 수행해야 합니다 [AEM Link Externalizer 구성](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) 작성 인스턴스에서 경험 조각 내의 모든 참조가 웹 게재에 대해 외부화되었는지 확인합니다.
 
    >[!NOTE]
