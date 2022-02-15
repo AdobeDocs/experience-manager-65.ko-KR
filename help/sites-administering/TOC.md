@@ -8,9 +8,9 @@ breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 7af09e73f40c2d947c9ccce000174155ef67137f
+source-git-commit: d4f5cebc76ed9348a17efc07443cd82317f24368
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 29%
 
 ---
@@ -142,7 +142,6 @@ ht-degree: 29%
    + [Adobe Marketing Cloud과 통합](marketing-cloud.md)
    + [Adobe Target과 통합 수동 구성](target-configuring.md)
    + [Adobe Target과 통합하기 위한 사전 요구 사항](target-requirements.md)
-   + [Adobe I/O을 사용하여 Adobe Target과 통합](integration-ims-adobe-io.md)
    + [Adobe I/O을 사용하여 Adobe Target과 통합](integration-target-ims-adobe-io.md)
    + [Adobe 분류](adobeanalytics-classifications.md)
    + [Adobe Search &amp; Promote과 통합](search-and-promote.md)
