@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1cfa01544ad8bf0adafd55e696a6844a8edf1007
+source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
 workflow-type: tm+mt
-source-wordcount: '3894'
+source-wordcount: '3884'
 ht-degree: 11%
 
 ---
@@ -52,14 +52,17 @@ ht-degree: 11%
 
 ### [!DNL Sites] {#sites-65110}
 
-GraphQL에서 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 게재에 액세스하고 향상된 컨텐츠 조각 모델 및 편집기 기능을 사용하려면 [인덱스 정의 패키지](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.0.0.zip), 및 다음 비동기 AEM 색인 정의를 다시 색인화합니다.
+>[!WARNING]
+>
+>이 패키지의 새 버전이 개발 중입니다. 링크가 사용되면 바로 게시됩니다.
 
-* /oak:index/assetPrefixNodename
+GraphQL과 함께 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 게재에 액세스하고 향상된 컨텐츠 조각 모델 및 편집기 기능을 사용하려면 색인 정의 패키지를 설치하고 다음 비동기 AEM 색인 정의를 다시 색인화합니다.
 
-* /oak:index/fragments
+* `/oak:index/assetPrefixNodename`
 
-* /oak:index/graphqlConfig
+* `/oak:index/fragments`
 
+* `/oak:index/graphqlConfig`
 
 다음 문제는에서 수정되었습니다 [!DNL Sites]:
 
@@ -567,6 +570,6 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 제품 페이지](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+>* [[!DNL Experience Manager] 6.5 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
 >* [Adobe 우선 순위 제품 업데이트](https://www.adobe.com/kr/subscription/priority-product-update.html) 구독
 
