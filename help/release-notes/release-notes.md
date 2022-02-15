@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
+source-git-commit: b36b7b0dafbce3aa75afff60fae3cc714b6ac902
 workflow-type: tm+mt
-source-wordcount: '3884'
+source-wordcount: '3887'
 ht-degree: 11%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 11%
 
 >[!WARNING]
 >
->이 패키지의 새 버전이 개발 중입니다. 링크가 사용되면 바로 게시됩니다.
+>색인 정의 패키지의 새 버전이 개발 중입니다. 아래 링크는 사용 가능해지는 즉시 게시됩니다.
 
 GraphQL과 함께 컨텐츠 조각을 사용하여 헤드리스 컨텐츠 게재에 액세스하고 향상된 컨텐츠 조각 모델 및 편집기 기능을 사용하려면 색인 정의 패키지를 설치하고 다음 비동기 AEM 색인 정의를 다시 색인화합니다.
 
