@@ -1,11 +1,10 @@
 ---
 title: AEM Content and Commerce 릴리스 노트 2022
 description: AEM Content and Commerce 릴리스 노트 2022
-exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 26df21270e8c586ba21b9bf3e9fc5003facbaade
+source-git-commit: 84ac40a5cd18b1a5c8bb7a93af4106be6bda7631
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 13%
+ht-degree: 45%
 
 ---
 
@@ -32,12 +31,12 @@ ht-degree: 13%
 ### 새로운 기능 {#what-is-new-january}
 
 * 향상된 myAccount 구성 요소
-* 제품 권장 사항 구성 요소는 추가 페이지 유형(홈 페이지, 장바구니, 주문 확인)을 지원합니다
+* 제품 추천 구성 요소는 추가 페이지 유형(홈 페이지, 장바구니, 주문 확인)을 지원합니다.
 * **위시리스트**
-   * 로그인한 방문자는 wishlist에 제품을 추가할 수 있습니다
-   * myAccount를 통해 Wishlist와 그 제품의 관리 가능
-   * &quot;wishlist에 추가&quot; 단추는 정책을 통해 구성 요소 수준에서 활성화/비활성화할 수 있습니다(예: 제품 티저, 제품 세부 사항)
-   * 코어 구성 요소 및 AEM Venia Storefront에서 사용할 수 있습니다.
+   * 로그인한 방문자는 위시리스트에 제품을 추가할 수 있습니다.
+   * myAccount를 통해 위시리스트 및 해당 제품을 관리할 수 있습니다.
+   * “위시리스트에 추가” 버튼은 정책을 통해 구성 요소 수준에서 활성화/비활성화할 수 있습니다(예: 제품 티저, 제품 세부 사항).
+   * 핵심 구성 요소 및 AEM Venia Storefront에서 사용 가능
 
 ![위시리스트](/help/assets/CIF/wishlist.png)
 
