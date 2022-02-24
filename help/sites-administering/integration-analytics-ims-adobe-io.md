@@ -1,10 +1,10 @@
 ---
 title: Adobe I/O을 사용하여 Adobe Analytics과 통합
 description: Adobe I/O을 사용하여 AEM과 Adobe Analytics 통합에 대해 알아봅니다
-source-git-commit: c2c7c3f745a5f1edc1a8d2a73922f86f0b952ff7
+source-git-commit: 5a253147baf64bf1b12b3ea6387f4b377e5d421f
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -66,7 +66,7 @@ AEM에서 사용할 Adobe Analytics과 Adobe I/O 프로젝트(통합)를 만든 
 
 ### 프로젝트 만들기 {#creating-the-project}
 
-AEM에서 사용할 Adobe Target으로 I/O 프로젝트를 만들려면 Adobe I/O 콘솔을 엽니다.
+AEM에서 사용할 Adobe Analytics으로 I/O 프로젝트를 만들려면 Adobe I/O 콘솔을 엽니다.
 
 <!--
 >[!NOTE]
@@ -112,23 +112,9 @@ AEM에서 사용할 Adobe Target으로 I/O 프로젝트를 만들려면 Adobe I/
 
 1. 필요한 제품 프로필을 선택하고 계속 **구성된 API 저장**:
 
-   >[!NOTE]
-   >
-   >와 함께 표시되는 제품 프로필은 다음 조건을 충족하는지에 따라 다릅니다.
-   >
-   >* Adobe Target Standard - 전용 **기본 작업 공간** 사용 가능
-   >* Adobe Target Premium - 사용 가능한 모든 작업 공간이 아래와 같이 나열됩니다
-
-
    ![필요한 제품 프로필 선택](assets/integration-analytics-io-16.png)
 
 1. 구성이 확인됩니다.
-
-<!--
-1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
-
-   ![](assets/integrate-target-io-07.png)
--->
 
 ### 통합에 권한 지정 {#assigning-privileges-to-the-integration}
 
@@ -164,7 +150,7 @@ Adobe I/O 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 볼 수
 
 ## AEM에서 IMS 구성 완료 {#completing-the-ims-configuration-in-aem}
 
-AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추가하여 IMS 구성을 완료할 수 있습니다.
+AEM으로 돌아가면 Analytics에 대한 Adobe I/O 통합에서 필수 값을 추가하여 IMS 구성을 완료할 수 있습니다.
 
 1. 로 돌아갑니다. [AEM에서 열린 IMS 구성](#configuring-an-ims-configuration-generating-a-public-key).
 1. **다음**&#x200B;을 선택합니다.
@@ -181,7 +167,7 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
 
 1. 다음으로 확인 **만들기**.
 
-1. Adobe Target 구성이 AEM 콘솔에 표시됩니다.
+1. Adobe Analytics 구성이 AEM 콘솔에 표시됩니다.
 
    ![IMS 구성](assets/integrate-analytics-io-11.png)
 
@@ -204,10 +190,6 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
    ![IMS 구성 - 상태 확인](assets/integrate-analytics-io-12.png)
 
 1. 성공하면 확인 메시지가 표시됩니다.
-
-   <!--
-   ![](assets/integrate-target-io-13.png)
-   -->
 
 ## Adobe Analytics Cloud 서비스 구성 {#configuring-the-adobe-analytics-cloud-service}
 
@@ -232,7 +214,7 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
 
    * **IMS 구성**: ims 구성 이름을 선택합니다.
 
-1. 클릭 **Analytics에 연결** 를 눌러 Adobe Target과의 연결을 초기화합니다.
+1. 클릭 **Analytics에 연결** 를 눌러 Adobe Analytics과의 연결을 초기화합니다.
 
    연결에 성공하면 메시지가 나타납니다 **연결 성공** 이 표시됩니다.
 
