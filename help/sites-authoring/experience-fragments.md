@@ -1,8 +1,8 @@
 ---
-title: 경험 구성요소
-seo-title: 경험 구성요소
-description: 경험 구성요소
-seo-description: 'null'
+title: 경험 조각
+seo-title: Experience Fragments
+description: 경험 조각
+seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 96%
+source-wordcount: '1440'
+ht-degree: 92%
 
 ---
 
-# 경험 구성요소{#experience-fragments}
+# 경험 조각{#experience-fragments}
 
 경험 조각은 페이지 내에서 참조할 수 있는 컨텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다. 모든 구성 요소를 포함할 수 있습니다.
 
@@ -27,10 +27,12 @@ ht-degree: 96%
 * 경험(페이지)의 일부입니다.
 * 여러 페이지에서 사용할 수 있습니다.
 * 구조 및 구성 요소를 정의하기 위한 템플릿(편집만 가능)을 기반으로 합니다.
+* 이 템플릿은 *루트 페이지* 경험 조각 의 하위 섹션을 참조하십시오.
 * 단락 시스템에서 레이아웃이 있는 하나 이상의 구성 요소로 구성되어 있습니다.
 * 다른 경험 조각을 포함할 수 있습니다.
 * 다른 조각(다른 경험 조각 포함)과 결합하여 전체 페이지(경험)를 형성할 수 있습니다.
-* 다른 변형이 있을 수 있으며, 이 변형이 컨텐츠 및/또는 구성 요소를 공유할 수 있습니다.
+* 루트 페이지를 기반으로 하나 이상의 변형을 만들 수 있습니다.
+* 이러한 변형은 컨텐츠 및/또는 구성 요소를 공유할 수 있습니다.
 * 조각의 여러 변형에서 사용할 수 있는 빌딩 블록으로 분할할 수 있습니다.
 
 경험 조각을 사용할 수 있습니다.
@@ -159,7 +161,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    ![xf-01](assets/xf-01.png)
 
-1. 필요한 폴더로 이동하고 **만들기**&#x200B;를 선택합니다.
+1. 필요한 폴더로 이동하고 을 선택합니다 **만들기**.
 
    ![xf-02](assets/xf-02.png)
 
@@ -174,6 +176,10 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    **제목**&#x200B;은 필수입니다. **이름**&#x200B;을 비워 두면 **제목**&#x200B;에서 파생됩니다.
 
    ![xf-04](assets/xf-04.png)
+
+   >[!NOTE]
+   경험 조각 템플릿의 태그는 이 경험 조각 루트 페이지의 태그와 병합되지 않습니다.
+   이건 완전히 별개입니다
 
 1. **만들기**&#x200B;를 클릭합니다.
 
@@ -197,7 +203,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
    ![xf-05](assets/xf-05.png)
 
 1. 구성 요소 도구 모음에서 **[구성](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**&#x200B;을 선택합니다.
-1. **자산**&#x200B;을 추가하고 필요에 따라 **속성**&#x200B;을 정의합니다.
+1. Add the **Asset** and define the **Properties** as required.
 1. **완료**(틱 아이콘)로 정의를 확인합니다.
 1. 필요에 따라 구성 요소를 더 추가합니다.
 
@@ -212,7 +218,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. **만들기**&#x200B;를 사용하여 다음을 생성할 수 있습니다.
 
-   * **변형**
+   * **Variation**
    * **변형을 Live Copy로**.
 
 1. 필수 속성을 정의합니다.
@@ -235,7 +241,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 1. 편집할 페이지를 엽니다.
 
-   예:[https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   예: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. 구성 요소 브라우저에서 페이지 단락 시스템으로 구성 요소를 끌어 와서 경험 조각 구성 요소의 인스턴스를 생성합니다.
 
@@ -271,7 +277,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
    ![xf-11](assets/xf-11.png)
 
-1. **빌딩 블록**&#x200B;이 탭에 표시되며, 단락 시스템에서 선택할 수 있습니다.
+1. The **Building Block** will be shown in the tab, and can be selected in the paragraph system:
 
    ![xf-12](assets/xf-12.png)
 
@@ -279,7 +285,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 빌딩 블록은 **빌딩 블록** 탭에서 볼 수 있습니다. 각 블록에서 다음 작업을 수행할 수 있습니다.
 
-* 마스터로 이동: 새 탭에서 마스터 변형을 엽니다.
+* 마스터로 이동: 새 탭에서 루트 페이지 변형을 엽니다.
 * 이름 변경
 * 삭제
 
@@ -293,7 +299,7 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 조각의 세부 사항을 볼 수 있습니다.
 
-1. 세부 사항은 [Target으로 내보내기](/help/sites-administering/experience-fragments-target.md)의 세부 사항을 포함하여 **목록 보기**&#x200B;와 함께 **경험 조각** 콘솔의 모두 보기에 표시됩니다.
+1. Details are shown in all views of the **Experience Fragments** console, with the **List View**[ including details of an export to Target](/help/sites-administering/experience-fragments-target.md):
 
    ![ef-03](assets/ef-03.png)
 
@@ -339,13 +345,12 @@ WKND 프로젝트는 `Contributors`에 따라 일부 경험 조각을 구조화�
 
 ## 일반 HTML 렌디션 {#the-plain-html-rendition}
 
-
 URL에서 `.plain.` 선택기를 사용하여 브라우저에서 일반 HTML 렌디션에 액세스할 수 있습니다.
 
 >[!NOTE]
 브라우저에서 직접 사용할 수 있지만 [기본 목적은 다른 애플리케이션(예: 타사 웹 앱, 사용자 지정 모바일 구현)이 URL만 사용하여 경험 조각의 컨텐츠에 직접 액세스할 수 있도록 하는 것입니다.](/help/sites-developing/experience-fragments.md#the-plain-html-rendition)
 
-## 경험 조각 내보내기  {#exporting-experience-fragments}
+## 경험 조각 내보내기 {#exporting-experience-fragments}
 
 기본적으로 경험 조각은 HTML 형식으로 제공됩니다. 이는 AEM과 타사 채널에서 모두 동일하게 사용할 수 있습니다.
 

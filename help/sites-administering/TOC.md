@@ -8,9 +8,9 @@ breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: d4f5cebc76ed9348a17efc07443cd82317f24368
+source-git-commit: 206df4237e0e6959389dd0128c79c8f64bc4a0e4
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '631'
 ht-degree: 29%
 
 ---
@@ -117,6 +117,7 @@ ht-degree: 29%
    + [Adobe Analytics에 대한 링크 추적 구성](adobeanalytics-link.md)
    + [구성 요소 데이터를 Adobe Analytics 속성과 매핑](adobeanalytics-mapping.md)
    + [Adobe Analytics에 대한 비디오 추적 구성](adobeanalytics-video.md)
+   + [Adobe I/O을 사용하여 Adobe Analytics과 통합](integration-analytics-ims-adobe-io.md)
    + [콘텐츠 FAQ의 HTTP2 전송](scene7-http2faq.md)
    + [Adobe Campaign 통합 문제 해결](troubleshooting-campaignintegration.md)
    + [SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항](sharepoint-connector-licenses.md)

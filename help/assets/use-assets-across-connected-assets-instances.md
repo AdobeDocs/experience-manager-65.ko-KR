@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b4c3f4c393d9b34acaadc375d20738ead42e481d
+source-git-commit: 72b39fd0263347c5bfe98fe2fdaf8999d7d40a96
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 26%
+source-wordcount: '3215'
+ht-degree: 24%
 
 ---
 
@@ -197,6 +197,22 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 1. 사용자는 자산을 이동하거나 삭제할 수 있습니다. 자산을 이동하거나 삭제할 때 선택한 모든 자산/폴더의 총 참조 수가 경고 대화 상자에 표시됩니다. 참조가 아직 표시되지 않은 자산을 삭제하면 경고 대화 상자가 표시됩니다.
 
    ![강제 삭제 경고](assets/delete-referenced-asset.png)
+
+### 원격 DAM의 자산에 대한 업데이트 관리 {#manage-updates-in-remote-dam}
+
+후 [연결 구성](#configure-a-connection-between-sites-and-assets-deployments) 원격 DAM과 [!DNL Sites] 배포하면 원격 DAM의 자산을 [!DNL Sites] 배포. 그런 다음 원격 DAM 자산 또는 폴더에서 업데이트, 삭제, 이름 변경 및 이동 작업을 수행할 수 있습니다. 이 업데이트는 다음에 자동으로 제공됩니다 [!DNL Sites] 배포. 또한 원격 DAM의 자산이 로컬 DAM에서 사용되는 경우 [!DNL Experience Manager Sites] 페이지에 원격 DAM의 자산에 대한 업데이트가 표시됩니다 [!DNL Sites] 페이지.
+
+자산을 한 위치에서 다른 위치로 이동하는 동안 다음을 확인하십시오 [참조 조정](/help/assets/manage-assets.md) 자산이 [!DNL Sites] 페이지. 자산을 로컬에서 액세스할 수 없는 위치로 이동하는 경우 [!DNL Sites] 배포에서 자산이 사이트 배포에 표시되지 않습니다.
+
+원격 DAM에서 자산에 대한 메타데이터 속성을 업데이트할 수 있으며 변경 사항은 로컬에서 사용할 수 있습니다 [!DNL Sites] 배포.
+
+[!DNL Sites] 작성자는 [!DNL Sites] 배포 후 다시 게시하여 [!DNL Experience Manager] 게시 인스턴스.
+
+[!DNL Experience Manager] 의 자산에 대해 만료된 상태 시각적 표시기를 표시합니다. `Remote Assets Content Finder` 사이트 작성자가 [!DNL Sites] 페이지. 에서 만료된 상태의 자산을 사용하는 경우 [!DNL Sites] 페이지에 자산이 표시되지 않습니다 [!DNL Experience Manager] 게시 인스턴스.
+
+>[!NOTE]
+>
+>원격 DAM의 자산에 대한 업데이트를 [!DNL Sites] 원격 DAM과 [!DNL Sites] 배포 [!DNL Experience Manager].
 
 ## 제한 사항 및 우수 사례 {#tip-and-limitations}
 
