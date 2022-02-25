@@ -1,7 +1,7 @@
 ---
 title: 용 일반 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
-description: '[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다.'
-source-git-commit: 37f1df9f9421ff18fff45723b6eb081f0192520a
+description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 74%
