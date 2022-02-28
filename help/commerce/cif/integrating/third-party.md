@@ -3,10 +3,10 @@ title: Commerce Integration Framework를 사용하여 AEM 및 타사 상거래 �
 description: 엔터프라이즈 기업은 상점 전원을 공급하기 위해 추가 타사 상거래 솔루션을 필요로 할 수 있습니다. 이러한 통합 시나리오에서 CIF(Commerce Integration Framework)를 사용하여 I/O Runtime을 사용하여 타사 상거래 솔루션을 Adobe Experience Manager에 연결할 수 있습니다.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 885d0763fca9ad4eab499081adca9b83875b27e1
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 1%
+source-wordcount: '521'
+ht-degree: 0%
 
 ---
 
@@ -51,3 +51,14 @@ CIF는 실시간 제품 카탈로그 액세스 및 제품 경험 관리 도구�
 다음 [참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference) 는 상거래 솔루션에 대한 통합을 구축하는 중요한 시작점입니다. GraphQL을 지원하지만 REST 등 다른 유형의 API와 통합할 수도 있습니다.
 
 타사 계층(예: Mulesoft)을 사용할 수 있거나 통합 이 타사 솔루션을 기반으로 구축된 경우에는 이 통합 레이어가 필요하지 않습니다.
+
+## 사전 설치된 커넥터 {#connectors}
+
+커넥터는 프로젝트에 좋은 시작을 제공합니다. 여기에는 상거래 솔루션별 연결 및 기본 API 매핑이 제공됩니다. 이러한 커넥터는 Adobe에 의해 유지 관리되지 않고 타사에 의해 구축됩니다. 자세한 내용은 해당 파트너에게 문의하십시오.
+
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris)사전 설정된
+* [상거래 도구](https://github.com/diconium/commerce-cif-graphql-integration-commercetool)사전 설정된
+
+>[!TIP]
+>
+>커넥터는 커머스 통합을 가속화하기 위해 프로젝트를 지원하지만 플러그인은 아닙니다. 엔터프라이즈 커머스 솔루션은 일반적으로 사용자 지정 수준이 높으며 사용자 지정 통합이 필요합니다. 상거래 플랫폼, Adobe Commerce GraphQL 스키마 및 Adobe I/O Runtime에 대한 올바른 지식이 필요합니다.
