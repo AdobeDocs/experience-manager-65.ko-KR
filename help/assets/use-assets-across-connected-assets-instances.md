@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 72b39fd0263347c5bfe98fe2fdaf8999d7d40a96
+source-git-commit: 6b9f0836ae61fdaa1aaf89434d76be5925970088
 workflow-type: tm+mt
-source-wordcount: '3215'
-ht-degree: 24%
+source-wordcount: '3811'
+ht-degree: 20%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 24%
 대기업에서는 웹 사이트를 구축하는 데 필요한 인프라를 배포할 수 있습니다. 이러한 웹 사이트를 만드는 데 사용되는 웹 사이트 제작 기능과 디지털 자산이 서로 다른 배포에 있을 수 있습니다. 함께 작업하는 데 필요한 기존 배포를 지리적으로 배포할 수 있습니다. 또 다른 이유는 서로 다른 인프라를 포함하여 이기종 인프라를 구축할 수 있는 인수입니다 [!DNL Experience Manager] 상위 회사에서 함께 사용하려는 버전입니다.
 
 연결된 자산 기능은 통합을 통해 위의 사용 사례를 지원합니다 [!DNL Experience Manager Sites] 및 [!DNL Experience Manager Assets]. 사용자는 [!DNL Sites] 디지털 자산을 [!DNL Assets] 배포.
+
+>[!NOTE]
+>
+>웹 페이지를 작성하기 위해 별도의 사이트 배포에서 원격 DAM 배포에 사용할 수 있는 자산을 사용해야 하는 경우에만 연결된 자산을 구성합니다.
 
 ## 연결된 자산 개요 {#overview-of-connected-assets}
 
@@ -56,6 +60,18 @@ ht-degree: 24%
 | [!DNL Assets] 관리자 | 원격 | [!DNL Experience Manager] `administrators` | `admin` 원격 [!DNL Experience Manager] | CORS(원본 간 리소스 공유)를 구성합니다. |
 | DAM 사용자 | 원격 | `Authors` | `ksaner` 원격 [!DNL Experience Manager] | 원격에서 작성자 역할 [!DNL Experience Manager] 배포. 를 사용하여 연결된 자산에서 자산을 검색하고 찾아봅니다. [!UICONTROL 컨텐츠 파인더]. |
 | DAM 배포자(기술 사용자) | 원격 | [!DNL Sites] `Authors` | `ksaner` 원격 [!DNL Experience Manager] | 원격 배포에 있는 이 사용자는 [!DNL Experience Manager] 로컬 서버(아님) [!DNL Sites] 작성자 역할) 을 대신하여 원격 자산을 가져옵니다. [!DNL Sites] 작성자. 이 역할은 위의 두 `ksaner` 역할과 동일하지 않으며 다른 사용자 그룹에 속합니다. |
+
+### 연결된 자산 아키텍처 {#connected-assets-architecture}
+
+Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experience Manager에 연결할 수 있습니다 [!DNL Sites] 배포. 최대 4개를 연결할 수 있습니다 [!DNL Sites] 소스 원격 DAM에 배포 그러나 [!DNL Sites] 원격 DAM 배포만 사용하는 배포.
+
+다음 다이어그램은 지원되는 시나리오를 보여 줍니다.
+
+![연결된 자산 아키텍처](assets/connected-assets-architecture.png)
+
+다음 다이어그램은 지원되지 않는 시나리오를 보여줍니다.
+
+![연결된 자산 아키텍처](assets/connected-assets-architecture-unsupported.png)
 
 ## 다음 사이 연결 구성 [!DNL Sites] 및 [!DNL Assets] 배포 {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -116,11 +132,24 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 ![구성된 연결된 자산에 대한 연결 테스트 [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *그림: 구성된 연결된 자산에 대한 연결 테스트 [!DNL Sites].*
 
-### Dynamic Media 자산에 대한 연결 구성 {#sites-dynamic-media-connected-assets}
+## Dynamic Media 자산 사용 {#dynamic-media-assets}
 
-사이에 연결을 구성할 수 있습니다 [!DNL Sites] 배포 및 [!DNL Dynamic Media] 웹 페이지 작성자가 사용할 수 있는 배포 [!DNL Dynamic Media] 이미지를 참조하십시오. 웹 페이지를 작성하는 동안 원격 자산 및 원격 사용 환경 [!DNL Dynamic Media] 배포는 동일하게 유지됩니다.
 
-다이내믹 미디어 배포를 위해 연결된 자산 기능을 구성하려면 다음 단계를 수행합니다.
+연결된 자산에서 처리된 이미지 자산을 사용할 수 있습니다 [!DNL Dynamic Media] 사이트 페이지에서 원격 DAM 배포에서 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 활용할 수 있습니다.
+
+를 사용하려면 [!DNL Dynamic Media] 연결된 자산 사용:
+
+1. 구성 [!DNL Dynamic Media] 동기화 모드를 사용한 원격 DAM 배포 설정.
+1. 구성 [연결된 자산](#configure-a-connection-between-sites-and-assets-deployments).
+1. 구성 [!DNL Dynamic Media] ( 원격 DAM에 구성된 것과 동일한 회사 이름을 사용하는 사이트 인스턴스). 연결된 자산으로 작동하려면 사이트 배포에서 Dynamic Media 계정에 대한 읽기 전용 액세스 권한이 있어야 합니다. 따라서 사이트 인스턴스의 Dynamic Media 구성에서 동기화 모드를 비활성화해야 합니다.
+
+>[!CAUTION]
+>
+>연결된 자산 및 [!DNL Dynamic Media] 구성, [!DNL Dynamic Media] 에서 사용 가능한 로컬 자산을 처리하려면 [!DNL Sites] 배포.
+
+## 구성 [!DNL Dynamic Media] {#configure-dynamic-media}
+
+구성하려면 [!DNL Dynamic Media] on [!DNL Assets] 및 [!DNL Sites] 배포:
 
 1. 활성화 및 구성 [!DNL Dynamic Media] 원격에서 글로벌 구성으로 사용 [!DNL Assets] 작성자 배포. Dynamic Media을 구성하려면 다음을 참조하십시오 [Dynamic Media 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).<br/>
 원격 [!DNL Assets] 배포, [!UICONTROL Dynamic Media 동기화 모드], 선택 **[!UICONTROL 기본적으로 활성화됨]**.
@@ -213,6 +242,48 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 >[!NOTE]
 >
 >원격 DAM의 자산에 대한 업데이트를 [!DNL Sites] 원격 DAM과 [!DNL Sites] 배포 [!DNL Experience Manager].
+
+## FAQ {#frequently-asked-questions}
+
+### 에서 사용 가능한 자산을 사용해야 하는 경우 연결된 자산을 구성해야 합니다 [!DNL Sites] 배포?
+
+연결된 자산을 구성할 필요가 없습니다. 에서 사용할 수 있는 자산을 사용할 수 있습니다 [!DNL Sites] 배포.
+
+### 연결된 자산 기능은 언제 구성해야 합니까?
+
+의 원격 DAM 배포에서 사용할 수 있는 자산을 사용해야 하는 경우에만 연결된 자산 기능을 구성합니다 [!DNL Sites] 배포.
+
+### 몇 명입니까 [!DNL Sites] 연결된 자산을 구성한 후 원격 DAM 배포에 연결할 수 있습니까?
+
+최대 4개를 연결할 수 있습니다 [!DNL Sites] 연결된 자산을 구성한 후 원격 DAM 배포에 배포하는 것입니다. 자세한 내용은 [연결된 자산 아키텍처](#connected-assets-architecture).
+
+### 에 연결할 수 있는 원격 DAM 배포 수 [!DNL Sites] 연결된 자산을 구성한 후 배포하시겠습니까?
+
+하나의 원격 DAM 배포를 [!DNL Sites] 연결된 자산을 구성한 후 배포합니다. 자세한 내용은 [연결된 자산 아키텍처](#connected-assets-architecture).
+
+### 에서 Dynamic Media 자산을 사용할 수 있습니까? [!DNL Sites] 연결된 자산을 구성한 후 배포하시겠습니까?
+
+연결된 자산을 구성한 후 [!DNL Dynamic Media] 다음에서 자산을 사용할 수 있습니다. [!DNL Sites] 읽기 전용 모드로 배포합니다. 따라서 를 사용할 수 없습니다 [!DNL Dynamic Media] 에서 자산을 처리하려면 [!DNL Sites] 배포. 자세한 내용은 [사이트 및 Dynamic Media 배포 간 연결 구성](#dynamic-media-assets).
+
+### 의 원격 DAM 배포에서 이미지 및 문서 형식 유형의 자산을 사용할 수 있습니까? [!DNL Sites] 연결된 자산을 구성한 후 배포하시겠습니까?
+
+예. 의 원격 DAM 배포에서 이미지 및 문서 형식 유형의 자산을 사용할 수 있습니다. [!DNL Sites] 연결된 자산을 구성한 후 배포합니다.
+
+### 에서 원격 DAM 배포의 컨텐츠 조각과 비디오 자산을 사용할 수 있습니까? [!DNL Sites] 연결된 자산을 구성한 후 배포하시겠습니까?
+
+아니요. [!DNL Sites] 연결된 자산을 구성한 후 배포합니다.
+
+### 에서 원격 DAM 배포에서 Dynamic Media 자산을 사용할 수 있습니까? [!DNL Sites] 연결된 자산을 구성한 후 배포하시겠습니까?
+
+예. 의 원격 DAM 배포에서 Dynamic Media 자산을 구성하고 사용할 수 있습니다. [!DNL Sites] 연결된 자산을 구성한 후 배포합니다. 자세한 내용은 [사이트 및 Dynamic Media 배포 간 연결 구성](#dynamic-media-assets).
+
+### 연결된 자산을 구성한 후 원격 DAM 자산 또는 폴더에서 업데이트, 삭제, 이름 변경 및 이동 작업을 수행할 수 있습니까?
+
+예. 연결된 자산을 구성한 후 원격 DAM 자산 또는 폴더에서 업데이트, 삭제, 이름 변경 및 이동 작업을 수행할 수 있습니다. 업데이트는 약간의 지연과 함께 Sites 배포에서 자동으로 사용할 수 있습니다. 자세한 내용은 [원격 DAM의 자산에 대한 업데이트 관리](#handling-updates-to-remote-assets).
+
+### 연결된 자산을 구성한 후 자산에서 자산을 추가하거나 수정할 수 있습니다 [!DNL Sites] 원격 DAM 배포에서 배포하고 사용할 수 있도록 설정하시겠습니까?
+
+에 자산을 추가할 수 있습니다 [!DNL Sites] 배포에 이러한 자산을 원격 DAM 배포에 사용할 수 없습니다.
 
 ## 제한 사항 및 우수 사례 {#tip-and-limitations}
 
