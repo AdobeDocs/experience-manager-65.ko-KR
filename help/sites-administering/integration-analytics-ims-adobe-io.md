@@ -1,16 +1,16 @@
 ---
-title: Adobe I/O을 사용하여 Adobe Analytics과 통합
-description: Adobe I/O을 사용하여 AEM과 Adobe Analytics 통합에 대해 알아봅니다
-source-git-commit: 5a253147baf64bf1b12b3ea6387f4b377e5d421f
+title: IMS를 사용하여 Adobe Analytics과 통합
+description: IMS를 사용하여 AEM과 Adobe Analytics을 통합하는 방법에 대해 알아봅니다.
+source-git-commit: e3f99c250934f796be404d947503d9367f2c510d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1040'
+ht-degree: 2%
 
 ---
 
-# Adobe I/O을 사용하여 Adobe Analytics과 통합 {#integration-with-adobe-analytics-using-adobe-i-o}
+# IMS를 사용하여 Adobe Analytics과 통합 {#integration-with-adobe-analytics-using-ims}
 
-Analytics Standard API를 통해 AEM과 Adobe Analytics을 통합하려면 Adobe IMS(Identity Management 시스템) 및 Adobe I/O을 구성해야 합니다.
+Analytics Standard API를 통해 AEM과 Adobe Analytics을 통합하려면 Adobe 개발자 콘솔을 사용하여 Adobe IMS(Identity Management 시스템)를 구성해야 합니다.
 
 >[!NOTE]
 >
@@ -29,13 +29,13 @@ Analytics Standard API를 통해 AEM과 Adobe Analytics을 통합하려면 Adobe
 * [Adobe 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 다음에 대한 계정을 프로비저닝해야 합니다.
 
    * Adobe 콘솔
-   * Adobe I/O
+   * Adobe Developer Console
    * Adobe Analytics 및
    * Adobe IMS(Identity Management 시스템)
 
 * 조직의 시스템 관리자는 Admin Console을 사용하여 조직의 필수 개발자를 관련 제품 프로필에 추가해야 합니다.
 
-   * 이렇게 하면 특정 개발자에게 Adobe I/O 내의 통합을 활성화할 수 있는 권한이 제공됩니다.
+   * 이렇게 하면 특정 개발자에게 Adobe 개발자 콘솔 내에서 통합을 활성화할 수 있는 권한이 제공됩니다.
    * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -52,7 +52,7 @@ Analytics Standard API를 통해 AEM과 Adobe Analytics을 통합하려면 Adobe
 
    ![](assets/integrate-analytics-io-01.png)
 
-1. 선택 **다운로드** 또는 **공개 키 다운로드**)를 클릭하여 파일을 로컬 드라이브에 다운로드하므로 [AEM과 Adobe Analytics 통합을 위한 Adobe I/O 구성](#configuring-adobe-i-o-for-adobe-analytics-integration-with-aem).
+1. 선택 **다운로드** 또는 **공개 키 다운로드**)를 클릭하여 파일을 로컬 드라이브에 다운로드하므로 [AEM과 Adobe Analytics 통합을 위한 IMS 구성](#configuring-ims-for-adobe-analytics-integration-with-aem).
 
    >[!CAUTION]
    >
@@ -60,23 +60,17 @@ Analytics Standard API를 통해 AEM과 Adobe Analytics을 통합하려면 Adobe
 
    ![](assets/integrate-analytics-io-02.png)
 
-## AEM과 Adobe Analytics 통합을 위한 Adobe I/O 구성 {#configuring-adobe-i-o-for-adobe-analytics-integration-with-aem}
+## AEM과 Adobe Analytics 통합을 위한 IMS 구성 {#configuring-ims-for-adobe-analytics-integration-with-aem}
 
-AEM에서 사용할 Adobe Analytics과 Adobe I/O 프로젝트(통합)를 만든 다음 필요한 권한을 지정해야 합니다.
+Adobe 개발자 콘솔을 사용하여 Adobe Analytics(AEM에서 사용)와 프로젝트(통합)를 생성한 다음 필요한 권한을 지정해야 합니다.
 
 ### 프로젝트 만들기 {#creating-the-project}
 
-AEM에서 사용할 Adobe Analytics으로 I/O 프로젝트를 만들려면 Adobe I/O 콘솔을 엽니다.
+AEM에서 사용할 Adobe Analytics으로 프로젝트를 만들려면 Adobe 개발자 콘솔을 엽니다.
 
-<!--
->[!NOTE]
->
->See also the [Adobe I/O tutorials](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html).
--->
+1. 프로젝트용 Adobe 개발자 콘솔을 엽니다.
 
-1. 프로젝트용 Adobe I/O 콘솔을 엽니다.
-
-   [https://console.adobe.io/projects](https://console.adobe.io/projects)
+   [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 1. 보유한 모든 프로젝트가 표시됩니다. 선택 **새 프로젝트 만들기** - 위치 및 사용법은 다음과 같이 달라집니다.
 
@@ -129,11 +123,11 @@ AEM에서 사용할 Adobe Analytics으로 I/O 프로젝트를 만들려면 Adobe
 1. 선택 **API 자격 증명**, 그런 다음 필요한 통합 구성을 선택합니다.
 1. 선택 **편집자** 로서의 **제품 역할**; 대신 **관찰자**.
 
-## Adobe I/O 통합 프로젝트에 대해 저장된 세부 사항 {#details-stored-for-the-adobe-io-integration-project}
+## Adobe 개발자 콘솔 통합 프로젝트에 대해 저장된 세부 사항 {#details-stored-for-the-ims-integration-project}
 
-Adobe I/O 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 볼 수 있습니다.
+Adobe 개발자 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 볼 수 있습니다.
 
-* [https://console.adobe.io/projects](https://console.adobe.io/projects)
+* [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 구성에 대한 세부 정보를 표시하려면 특정 프로젝트 항목을 선택합니다. 여기에는 다음이 포함됩니다.
 
@@ -146,26 +140,26 @@ Adobe I/O 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 볼 수
 * API
    * 예: Adobe Analytics
 
-이러한 중 일부는 AEM에서 Adobe Analytics에 대한 Adobe I/O 통합을 완료해야 합니다.
+이러한 중 일부는 AEM에서 Adobe Analytics 통합을 완료해야 합니다.
 
 ## AEM에서 IMS 구성 완료 {#completing-the-ims-configuration-in-aem}
 
-AEM으로 돌아가면 Analytics에 대한 Adobe I/O 통합에서 필수 값을 추가하여 IMS 구성을 완료할 수 있습니다.
+AEM으로 돌아가면 Analytics에 대한 통합 프로젝트에서 필수 값을 추가하여 IMS 구성을 완료할 수 있습니다.
 
 1. 로 돌아갑니다. [AEM에서 열린 IMS 구성](#configuring-an-ims-configuration-generating-a-public-key).
 1. **다음**&#x200B;을 선택합니다.
 
-1. 여기에서 을 사용할 수 있습니다 [Adobe I/O의 프로젝트 구성 세부 사항](#details-stored-for-the-adobe-io-integration-project):
+1. 여기에서 을 사용할 수 있습니다 [Adobe 개발자 콘솔 통합 프로젝트에 대해 저장된 세부 사항](#details-stored-for-the-ims-integration-project):
 
    * **제목**: 텍스트.
    * **인증 서버**: 에서 이 복사/붙여넣기 `aud` 라인 **페이로드** 섹션을 참조하십시오. `https://ims-na1.adobelogin.com` 아래 예에서
-   * **API 키**: 다음에서 이 복사 **자격 증명** 섹션 [프로젝트 개요](#details-stored-for-the-adobe-io-integration-project)
-   * **클라이언트 암호**: 에서 이 필드를 생성합니다. [서비스 계정(JWT) 섹션의 클라이언트 암호 탭](#details-stored-for-the-adobe-io-integration-project), 및 복사
-   * **페이로드**: 다음에서 이 복사 [서비스 계정(JWT) 섹션의 JWT 탭 생성](#details-stored-for-the-adobe-io-integration-project)
+   * **API 키**: 다음에서 이 복사 **자격 증명** 섹션 [프로젝트 개요](#details-stored-for-the-ims-integration-project)
+   * **클라이언트 암호**: 에서 이 필드를 생성합니다. [서비스 계정(JWT) 섹션의 클라이언트 암호 탭](#details-stored-for-the-ims-integration-project), 및 복사
+   * **페이로드**: 다음에서 이 복사 [서비스 계정(JWT) 섹션의 JWT 탭 생성](#details-stored-for-the-ims-integration-project)
 
    ![AEM IMS 구성 세부 사항](assets/integrate-analytics-io-10.png)
 
-1. 다음으로 확인 **만들기**.
+1. **만들기**&#x200B;를 사용하여 확인합니다.
 
 1. Adobe Analytics 구성이 AEM 콘솔에 표시됩니다.
 
@@ -204,7 +198,7 @@ AEM으로 돌아가면 Analytics에 대한 Adobe I/O 통합에서 필수 값을 
 
    필요한 템플릿을 선택할 수도 있습니다(둘 이상의 템플릿을 사용할 수 있는 경우).
 
-1. 다음으로 확인 **만들기**.
+1. **만들기**&#x200B;를 사용하여 확인합니다.
 
    다음 **구성 요소 편집** 대화 상자가 열립니다.
 

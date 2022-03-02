@@ -1,25 +1,17 @@
 ---
-title: Adobe I/O을 사용하여 Adobe Target과 통합
-seo-title: Integration with Adobe Target using Adobe I/O
-description: Adobe I/O을 사용하여 AEM과 Adobe Target 통합에 대해 알아봅니다
-seo-description: Learn about integrating AEM with Adobe Target using Adobe I/O
-uuid: dd4ed638-e182-4d7e-9c98-282431812467
-contentOwner: aheimoz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: integration
-discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
-docset: aem65
-source-git-commit: e6f4f3cf31c39853b45450e0c925694fc45f7aec
+title: IMS를 사용하여 Adobe Target과 통합
+description: IMS를 사용하여 AEM과 Adobe Target을 통합하는 방법에 대해 알아봅니다.
+exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
+source-git-commit: e3f99c250934f796be404d947503d9367f2c510d
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
 
-# Adobe I/O을 사용하여 Adobe Target과 통합{#integration-with-adobe-target-using-adobe-i-o}
+# IMS를 사용하여 Adobe Target과 통합{#integration-with-adobe-target-using-ims}
 
-Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(Identity Management 시스템) 및 Adobe I/O을 구성해야 합니다.
+Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe 개발자 콘솔을 사용하여 Adobe IMS(Identity Management 시스템)를 구성해야 합니다.
 
 >[!NOTE]
 >
@@ -37,13 +29,13 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(I
 * [Adobe 지원](https://helpx.adobe.com/kr/contact/enterprise-support.ec.html) 다음에 대한 계정을 프로비저닝해야 합니다.
 
    * Adobe 콘솔
-   * Adobe I/O
+   * Adobe Developer Console
    * Adobe Target 및
    * Adobe IMS(Identity Management 시스템)
 
 * 조직의 시스템 관리자는 Admin Console을 사용하여 조직의 필수 개발자를 관련 제품 프로필에 추가해야 합니다.
 
-   * 이렇게 하면 특정 개발자에게 Adobe I/O 내의 통합을 활성화할 수 있는 권한이 제공됩니다.
+   * 이렇게 하면 특정 개발자에게 Adobe 개발자 콘솔 내에서 통합을 활성화할 수 있는 권한이 제공됩니다.
    * 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -60,7 +52,7 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(I
 
    ![](assets/integrate-target-io-01.png)
 
-1. 선택 **다운로드** 또는 **공개 키 다운로드**)를 클릭하여 파일을 로컬 드라이브에 다운로드하므로 [AEM과 Adobe Target 통합을 위한 Adobe I/O 구성](#configuring-adobe-i-o-for-adobe-target-integration-with-aem).
+1. 선택 **다운로드** 또는 **공개 키 다운로드**)를 클릭하여 파일을 로컬 드라이브에 다운로드하므로 [AEM과 Adobe Target 통합을 위한 IMS 구성](#configuring-ims-for-adobe-target-integration-with-aem).
 
    >[!CAUTION]
    >
@@ -68,21 +60,17 @@ Target Standard API를 통해 AEM과 Adobe Target을 통합하려면 Adobe IMS(I
 
    ![](assets/integrate-target-io-02.png)
 
-## AEM과 Adobe Target 통합을 위한 Adobe I/O 구성 {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}
+## AEM과 Adobe Target 통합을 위한 IMS 구성 {#configuring-ims-for-adobe-target-integration-with-aem}
 
-AEM에서 사용할 Adobe Target과 Adobe I/O 프로젝트(통합)를 만든 다음 필요한 권한을 지정해야 합니다.
+Adobe 개발자 콘솔을 사용하여 AEM에서 사용할 Adobe Target과 프로젝트(통합)를 생성한 다음 필요한 권한을 지정해야 합니다.
 
 ### 프로젝트 만들기 {#creating-the-project}
 
-AEM에서 사용할 Adobe Target으로 I/O 프로젝트를 만들려면 Adobe I/O 콘솔을 엽니다.
+AEM에서 사용할 Adobe Target으로 프로젝트를 만들려면 Adobe 개발자 콘솔을 엽니다.
 
->[!NOTE]
->
->다음을 참조하십시오. [Adobe I/O 자습서](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html).
+1. 프로젝트용 Adobe 개발자 콘솔을 엽니다.
 
-1. 프로젝트용 Adobe I/O 콘솔을 엽니다.
-
-   [https://console.adobe.io/projects](https://console.adobe.io/projects)
+   [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 1. 보유한 모든 프로젝트가 표시됩니다. 선택 **새 프로젝트 만들기** - 위치 및 사용법은 다음과 같이 달라집니다.
 
@@ -145,11 +133,11 @@ AEM에서 사용할 Adobe Target으로 I/O 프로젝트를 만들려면 Adobe I/
 1. 선택 **API 자격 증명**, 그런 다음 필요한 통합 구성을 선택합니다.
 1. 선택 **편집자** 로서의 **제품 역할**; 대신 **관찰자**.
 
-## Adobe I/O 통합 프로젝트에 대해 저장된 세부 사항 {#details-stored-for-the-adobe-io-integration-project}
+## Adobe 개발자 콘솔 통합 프로젝트에 대해 저장된 세부 사항 {#details-stored-for-the-ims-integration-project}
 
-Adobe I/O 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 볼 수 있습니다.
+Adobe 개발자 콘솔 - 프로젝트에서 모든 통합 프로젝트 목록을 볼 수 있습니다.
 
-* [https://console.adobe.io/projects](https://console.adobe.io/projects)
+* [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 선택 **보기** (특정 프로젝트 항목 오른쪽에 있음)를 클릭하여 구성에 대한 세부 정보를 표시합니다. 여기에는 다음이 포함됩니다.
 
@@ -162,26 +150,26 @@ Adobe I/O 프로젝트 콘솔에서 모든 통합 프로젝트 목록을 볼 수
 * API
    * 예: Adobe Target
 
-이러한 중 일부는 AEM에서 Target을 위한 Adobe I/O 통합을 완료해야 합니다.
+이러한 중 일부는 IMS를 기반으로 AEM에서 Adobe Target 통합을 완료해야 합니다.
 
 ## AEM에서 IMS 구성 완료 {#completing-the-ims-configuration-in-aem}
 
-AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추가하여 IMS 구성을 완료할 수 있습니다.
+AEM으로 돌아가면 Target을 위한 Adobe 개발자 콘솔 통합에서 필요한 값을 추가하여 IMS 구성을 완료할 수 있습니다.
 
 1. 로 돌아갑니다. [AEM에서 열린 IMS 구성](#configuring-an-ims-configuration-generating-a-public-key).
 1. **다음**&#x200B;을 선택합니다.
 
-1. 여기에서 을 사용할 수 있습니다 [Adobe I/O 세부 정보](#details-stored-for-the-adobe-io-integration-project):
+1. 여기에서 을 사용할 수 있습니다 [개발자 콘솔의 프로젝트 구성 세부 사항](#details-stored-for-the-ims-integration-project):
 
    * **제목**: 텍스트.
    * **인증 서버**: 에서 이 복사/붙여넣기 `aud` 라인 **페이로드** 섹션을 참조하십시오. `https://ims-na1.adobelogin.com` 아래 예에서
-   * **API 키**: 다음에서 이 복사 [개요](#details-stored-for-the-adobe-io-integration-project) Target에 대한 Adobe I/O 통합 섹션
-   * **클라이언트 암호**: 에서 이 필드를 생성합니다. [개요](#details-stored-for-the-adobe-io-integration-project) Target에 대한 Adobe I/O 통합 섹션 및 복사
-   * **페이로드**: 다음에서 이 복사 [JWT 생성](#details-stored-for-the-adobe-io-integration-project) Target에 대한 Adobe I/O 통합 섹션
+   * **API 키**: 다음에서 이 복사 [개요](#details-stored-for-the-ims-integration-project) 섹션
+   * **클라이언트 암호**: 에서 이 필드를 생성합니다. [개요](#details-stored-for-the-ims-integration-project) 섹션 및 복사
+   * **페이로드**: 다음에서 이 복사 [JWT 생성](#details-stored-for-the-ims-integration-project) 섹션
 
    ![](assets/integrate-target-io-10.png)
 
-1. 다음으로 확인 **만들기**.
+1. **만들기**&#x200B;를 사용하여 확인합니다.
 
 1. Adobe Target 구성이 AEM 콘솔에 표시됩니다.
 
@@ -222,7 +210,7 @@ AEM으로 돌아가면 Target을 위한 Adobe I/O 통합에서 필수 값을 추
 
    필요한 템플릿을 선택할 수도 있습니다(둘 이상의 템플릿을 사용할 수 있는 경우).
 
-1. 다음으로 확인 **만들기**.
+1. **만들기**&#x200B;를 사용하여 확인합니다.
 
    다음 **구성 요소 편집** 대화 상자가 열립니다.
 
