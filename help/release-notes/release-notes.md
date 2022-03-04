@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: b02ec58b94e37e0d9902078bbd2387c7b75a208b
+source-git-commit: 7649b9a36fbf47ec92bd4c33cd7590d9934aa169
 workflow-type: tm+mt
-source-wordcount: '3071'
+source-wordcount: '3204'
 ht-degree: 17%
 
 ---
@@ -153,6 +153,10 @@ The following accessibility enhancements are available in [!DNL Assets]:
 
 * 적응형 양식의 구성 요소를 복사할 때 CSS 문제가 발생합니다(NPR-37812).
 
+**양식 데이터 모델**
+
+* 양식 데이터 모델에 연결된 적응형 양식 첨부 파일을 데이터베이스에 저장하는 동안 문제가 발생했습니다(CQ-4338561).
+
 **대화형 통신**
 
 * 참조 탭에는 대화형 커뮤니케이션의 참조가 나열되지 않습니다(NPR-37995).
@@ -163,15 +167,38 @@ The following accessibility enhancements are available in [!DNL Assets]:
 
 * Workbench를 사용하여 PDF을 PDFA로 변환할 수 없습니다(NPR-37879).
 
+* AEM 6.5.7.0 Forms에서 AEM 6.5.10.0 Forms으로 업그레이드한 후 PDF 생성기 서비스를 사용하는 동안 Office 문서에 문제가 발생합니다(NPR-37758).
+
 **문서 보안**
 
 * java 버전 1.8.0_281로 업그레이드한 후 PDF 암호화가 작동하지 않습니다(NPR-37716).
 
 **Foundation JEE**
 
-* AEM Forms 6.5.7.0에 대해 임의 시간 후 다중 스레드 PDF 생성기 서비스 교착 상태가 발생합니다(NPR-38053).
+* AEM 6.5.7.0 Forms에 대해 임의 시간 후 다중 스레드 PDF 생성기 서비스 교착 상태가 발생합니다(NPR-38053).
 
-* AEM Workbench 버전 6.5.0.20210518.1.338459에서 이메일 시작점을 사용하고 사용자 이름과 암호를 편집하면 구성이 저장되지 않습니다(NPR-37967).
+* AEM Workbench 버전 6.5.0.20210518.1.338459에서 이메일 시작점을 사용하고 사용자 이름과 암호를 편집하면 구성이 저장되지 않습니다(NPR-37967, CQ-4336081).
+
+* 로그를 저장하면 서버를 다시 시작해야 하는 CPU 사용률이 높아집니다(NPR-37868).
+
+* `Gemfire.log` 에서 생성되지 않습니다. `temp\adobejb_server1\Caching` 폴더를 설치하고 AEM Forms-6.5.0-0038을 설치합니다(CQ-4340237).
+
+* 다음 오류는 `ConfigurationManager.sh` 명령(CQ-4338323):
+
+   ```TXT
+     [root@localhost bin]# ./ConfigurationManager.sh 
+     bash: ./ConfigurationManagerCLI.sh: /bin/sh^M: bad interpreter: No such file or directory
+   ```
+
+* RHEL8의 AEM 6.5 Forms은 JBOSS EAP 7.3 및 MySQL8을 지원하지 않습니다(CQ-4331770).
+
+**워크플로우**
+
+* AEM 6.5.10.0 Forms 게시 인스턴스에서 워크플로우의 일부로 UTF-8 특수 문자를 저장하는 동안 문제가 발생합니다(NPR-37673).
+
+* ArrayList 유형 및 JSON 하위 유형의 변수를 만드는 동안 문제가 발생합니다(NPR-37600).
+
+* AEM 6.5.9.0 Forms 및 AEM 6.5.10.0 Forms의 워크플로우에서 변수 설정 단계가 있는 XPath/점 표기법 브라우저의 문제(CQ-4336582).
 
 
 보안 업데이트에 대한 자세한 내용은 [[!DNL Experience Manager] 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html).
@@ -292,7 +319,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 
    * [AEM 6.5.12 Sites 핫픽스-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip)
 
-   * [GraphQL 색인 패키지 1.0.4가 있는 AEM 컨텐츠 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.4.zip)
+   * [GraphQL 색인 패키지 1.0.3이 있는 AEM 컨텐츠 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
 
 * 로서의 [!DNL Microsoft Windows Server 2019] 을 지원하지 않음 [!DNL MySQL 5.7] 및 [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] 에 대한 턴키 설치를 지원하지 않습니다. [!DNL AEM Forms 6.5.10.0].
 
