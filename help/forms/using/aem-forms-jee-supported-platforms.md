@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 41fb9099ef81b84bcf9fa7b6f153ab1a27953795
+source-git-commit: 45a26c34ba879e1948ace785e861d38cce71e3a6
 workflow-type: tm+mt
-source-wordcount: '3488'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -111,12 +111,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <td>사소한 릴리스 및 업데이트</td>
   </tr>
   <tr>
-   <td>IBM® J9 가상 컴퓨터(빌드 2.8, JRE 1.8.0)</td>
-   <td>A: 지원됨</td>
-   <td>사소한 릴리스 및 업데이트</td>
-  </tr>
-  <tr>
-   <td>IBM® J9 가상 컴퓨터(빌드 2.9, JRE 1.8.0)<br /> </td>
+   <td>IBM® J9 가상 컴퓨터(빌드 2.9, JRE 1.8.0) IBM® JDK SR6-FP26<br /> </td>
    <td>A: 지원됨</td>
    <td>사소한 릴리스 및 업데이트</td>
   </tr>
@@ -144,25 +139,20 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <td><p>지원됨</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.0 </p> </td>
+   <td><p> MongoDB Enterprise 4.0(사용 중지) </p> </td>
    <td><p>저장소 마이크로커널</p> </td>
    <td><p>지원됨</p> </td>
   </tr>
   <tr>
-   <td><p>Oracle 데이터베이스 12c 릴리스 1</p> </td>
-   <td><p>저장소 마이크로커널</p> </td>
-   <td><p>지원됨</p> </td>
-  </tr>
-   <tr>
-   <td><p>Oracle 데이터베이스 12c 릴리스 2(12.2.0.1.0)</p> </td>
+   <td><p>MongoDB Enterprise 4.2 </p> </td>
    <td><p>저장소 마이크로커널</p> </td>
    <td><p>지원됨</p> </td>
   </tr>
   <tr>
-   <td>Oracle 데이터베이스 18c </td>
-   <td>저장소 마이크로커널</td>
-   <td>지원됨</td>
-  </tr> 
+   <td><p>Oracle 데이터베이스 12c 릴리스 2(12.2.0.1.0)(더 이상 사용되지 않음)</p> </td>
+   <td><p>저장소 마이크로커널</p> </td>
+   <td><p>지원됨</p> </td>
+  </tr>
    <tr>
    <td>Oracle 데이터베이스 19c(표준, RAC(Real Application Clusters) 및 Enterprise 버전) </td>
    <td>리포지토리 마이크로커널 </td>
@@ -179,15 +169,20 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <td><p>지원됨</p> </td>
   </tr>
   <tr>
-   <td>IBM DB2 11.1</td>
+   <td>IBM DB2 11.1(사용 중지)</td>
    <td>저장소 마이크로커널</td>
    <td>R: 제한된 지원</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.35 </td>
+   <td>MySQL 5.7.35(사용 중지) </td>
    <td>-</td>
    <td>R: 제한된 지원</td>
-  </tr>  
+  </tr>
+  <tr>
+   <td>MySQL 8.0.27</td>
+   <td>-</td>
+   <td>R: 제한된 지원</td>
+  </tr>
  </tbody>
 </table>
 
@@ -218,7 +213,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
   </tr>
   <tr>
    <td>Microsoft SQL Server<br /> </td>
-   <td><p>Microsoft® SQL Server JDBC 드라이버 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td>
+   <td><p>Microsoft® SQL Server JDBC 드라이버 6.2.1.0(사용되지 않음) <br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>JEE 설치 시 AEM Forms과 함께 제공됩니다.</p> </td>
   </tr>
   <tr>
@@ -254,7 +249,12 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <td>서비스 팩 및 중요 업데이트</td>
   </tr>
   <tr>
-   <td><p>JBoss® EAP(Enterprise Application Platform) 7.1.4 <sup>[2] [3] [7]</sup></p> </td>
+   <td><p>JBoss® EAP(Enterprise Application Platform) 7.1.4 <sup>[2] [3] [7]</sup> (더 이상 사용되지 않음) </p> </td>
+   <td><p>A: 지원됨</p> </td>
+   <td><p>지원되는 EAP 버전에 대한 패치 및 누적 패치</p> </td>
+  </tr>
+  <tr>
+   <td><p>JBoss® EAP(Enterprise Application Platform) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
    <td><p>A: 지원됨</p> </td>
    <td><p>지원되는 EAP 버전에 대한 패치 및 누적 패치</p> </td>
   </tr>
@@ -287,7 +287,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <td>서비스 팩 및 중요 업데이트</td>
   </tr>
   <tr>
-   <td>Microsoft Windows Server 2016(64비트)(더 이상 사용되지 않음)</td>
+   <td> Microsoft Windows Server 2016(64비트)(더 이상 사용되지 않음)</td>
    <td>A: 지원됨</td>
    <td>서비스 팩 및 중요 업데이트</td>
   </tr>
@@ -372,10 +372,6 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택하는 동안 다음 
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
   <tr>
-   <td>Oracle UD(Unified Directory) 11g 릴리스 2</td>
-   <td>서비스 팩</td>
-  </tr>
-  <tr>
    <td>Microsoft Active Directory 2016</td>
    <td>유지 관리 릴리스 및 수정 팩</td>
   </tr>
@@ -390,7 +386,6 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택하는 동안 다음 
 
 | 제품 |
 | ----------------------- |
-| IBM Lotus Domino 9.0 |
 | Microsoft Exchange 2013 |
 | Microsoft Office 365 |
 
@@ -408,18 +403,14 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택하는 동안 다음 
   </tr>
   <tr>
    <td>IBM 파일 이름</td>
-   <td>5.2</td>
-  </tr>
-  <tr>
-   <td>IBM 파일 이름</td>
    <td>5.5.2</td>
   </tr>
   <tr>
-   <td>IBM Content Manager Server</td>
+   <td>IBM Content Manager Server(사용 중지) </td>
    <td>8.5 수정 팩 2</td>
   </tr>
   <tr>
-   <td>IBM Content Manager Client</td>
+   <td> IBM Content Manager 클라이언트(더 이상 사용되지 않음)</td>
    <td>8.5 </td>
   </tr>
   <tr>
@@ -463,7 +454,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 다음은 지원되�
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF 및 TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect X7</td>
+   <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
@@ -683,7 +674,6 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 >
 > 데스크탑에 대한 일부 브라우저 관련 예외는 다음과 같습니다.
 >
-> - 대부분의 최신 브라우저는 더 이상 NPAPI 기반 플러그인을 지원하지 않습니다. AEM Forms 애플리케이션 및 워크플로우에 미치는 영향에 대한 자세한 내용은 [NPAPI 브라우저 플러그인의 중단 및 영향](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 > - Safari는 Macintosh OS X에서만 지원됩니다.
 > - Workspace는 Acrobat DC 이상 버전의 Macintosh OS X 10.6 및 10.7에서 Safari 5.1을 지원합니다. Safari 5.1 Adobe Reader, Acrobat과의 호환성에 대한 자세한 내용은 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 > - Safari에서는 관리 콘솔이 지원되지 않습니다.
@@ -735,25 +725,6 @@ AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 | Google Android | Android 5.1 이상. AEM Forms 앱은 7, 10인치 삼성 갤럭시 태블릿과 인기 스마트폰으로 인증됐다. |
 | Microsoft Windows | Microsoft Windows 10 운영 체제를 실행하는 Microsoft Surface 장치, 태블릿, 노트북 및 데스크탑. |
 
-### Adobe Flash Player {#adobe-flash-player}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Flash Player(기본)</strong></p> </th>
-   <th><p><strong>지원되는 패치 정의</strong></p> </th>
-  </tr>
-  <tr>
-   <td><p>최신 버전 Flash Player</p> </td>
-   <td><p>부 버전 및 업데이트</p> </td>
-  </tr>
- </tbody>
-</table>
-
->[!NOTE]
->
-> Adobe [2020년 말에 Flash Player 업데이트 및 배포 중지](https://theblog.adobe.com/adobe-flash-update/).
-
 ### Microsoft Office용 Adobe 문서 보안 확장 {#adobe-rights-management-extension-for-microsoft-office}
 
 클릭 [여기](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html) Microsoft® Office용 문서 보안 확장 Adobe에 대한 시스템 요구 사항을 보려면
@@ -780,29 +751,45 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 
 ## 플랫폼 업데이트 {#platform-updates}
 
+다음 플랫폼은 2022년 2월 3일에 AEM Forms 6.5.12.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
+
+- MongoDB Enterprise 4.0
+- IBM DB2 11.1
+- Oracle 데이터베이스 12c 릴리스 2
+- MySQL 5.7.35
+- Microsoft® SQL Server JDBC 드라이버 6.2.1.0
+- JBoss® EAP(Enterprise Application Platform) 7.1.4
+- IBM Content Manager Server 8.5 수정 팩 2
+- IBM Content Manager Client 8.5
+
 다음 플랫폼은 2021년 9월 7일에 AEM Forms 6.5.10.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
 
 - Adobe Acrobat 2017 - [Adobe Acrobat 2017에 대한 핵심 지원은 2022년 6월 6일에 종료됩니다](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
-
 - Microsoft Windows Server 2016(64비트)
-
 - Red Hat Enterprise Linux 7(커널 3.x)(64비트)
-
 - Microsoft® Office 2016
-
 - OpenOffice 4.1.2
 
 >[!NOTE]
 >
-> 플랫폼은 [AEM Forms 6.5 서비스 팩 15(6.5.15.0) 릴리스까지 더 이상 지원되지 않습니다](https://helpx.adobe.com/support/programs/eol-matrix.html).
+> 플랫폼은 [AEM Forms 6.5.12.0 및 6.5.10.0에서 더 이상 사용되지 않는 항목은 AEM Forms 6.5 서비스 팩 18(6.5.18.0) 릴리스까지 지원 상태로 유지됩니다](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## 개정 내역 {#revision-history}
 
+- 2022년 2월 03일
+
+   - 다음에 대한 지원이 제거되었습니다.
+      - IBM® J9 가상 컴퓨터(빌드 2.8, JRE 1.8.0)
+      - Oracle 데이터베이스 12c 릴리스 2
+      - Oracle 데이터베이스 18c
+      - Oracle UD(Unified Directory) 11g 릴리스 2
+      - IBM Lotus Domino 9.0
+      - IBM Filenet 5.2
+      - Adobe Flash Player
 
 - 2021년 10월 10일
 
    - AEM Forms 앱의 지원되는 iOS 버전을 iOS 15.1로 변경했습니다. 이전 버전은 iOS 12였습니다.
-
 
 - 2021년 9월 7일
    - **플랫폼 업데이트**: [!DNL Adobe Experience Manager Forms] on JEE에서 다음 플랫폼에 대한 지원을 추가했습니다.
@@ -815,5 +802,3 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
    - 2020년 9월 9일
 
       - AEM Forms 앱의 지원되는 iOS 버전을 iOS 12로 변경했습니다. 이전 버전은 iOS 11입니다.
-
-
