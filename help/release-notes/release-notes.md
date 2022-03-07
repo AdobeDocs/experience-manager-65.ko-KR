@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 7649b9a36fbf47ec92bd4c33cd7590d9934aa169
+source-git-commit: 23b5f83e598210f14ee20e8fa5fb01434b93faae
 workflow-type: tm+mt
-source-wordcount: '3204'
+source-wordcount: '3154'
 ht-degree: 17%
 
 ---
@@ -111,7 +111,6 @@ The following accessibility enhancements are available in [!DNL Assets]:
    * 상위 필드의 마지막 선택만 종속 편집할 수 없는 필드에 대해 저장됩니다(NPR-37858).
    * 종속 드롭다운(다중 값 필드)은 선택한 상위 드롭다운에 대해 간헐적으로 기본값을 반영합니다(NPR-37791).
 
-
 ### [!DNL Dynamic Media] {#dynamic-media-65120}
 
 다음 문제는에서 수정되었습니다 [!DNL Dynamic Media]:
@@ -128,9 +127,7 @@ The following accessibility enhancements are available in [!DNL Assets]:
 
 * 받은 편지함 항목에 필터를 적용하는 경우 스크롤이 예상대로 작동하지 않습니다(CQ-4333594).
 
-
 ### [!DNL Forms] {#forms-65120}
-
 
 >[!NOTE]
 >
@@ -200,7 +197,6 @@ The following accessibility enhancements are available in [!DNL Assets]:
 
 * AEM 6.5.9.0 Forms 및 AEM 6.5.10.0 Forms의 워크플로우에서 변수 설정 단계가 있는 XPath/점 표기법 브라우저의 문제(CQ-4336582).
 
-
 보안 업데이트에 대한 자세한 내용은 [[!DNL Experience Manager] 보안 게시판 페이지](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## 6.5.12.0 설치 {#install}
@@ -266,10 +262,6 @@ B. [패키지 관리자에서 HTTP API](/help/sites-administering/package-manage
 1. Adobe Experience Manager 서비스 팩을 설치했는지 확인합니다.
 1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
 1. [AEM Forms 추가 기능 패키지 설치](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
-
->[!NOTE]
->
->Experience Manager 6.5.12.0에는 새 버전의 [AEM Forms 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). 이전 버전의 AEM Forms 호환성 패키지를 사용하고 Experience Manager 6.5.10.0으로 업데이트하는 경우 Forms 추가 기능 패키지의 패키지 사후 설치 최신 버전을 설치하십시오.
 
 ### JEE에 Adobe Experience Manager Forms 설치 {#install-aem-forms-jee-installer}
 
