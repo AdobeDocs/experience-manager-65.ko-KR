@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 23b5f83e598210f14ee20e8fa5fb01434b93faae
+source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
 workflow-type: tm+mt
-source-wordcount: '3154'
+source-wordcount: '3180'
 ht-degree: 17%
 
 ---
@@ -84,6 +84,7 @@ ht-degree: 17%
 * [커뮤니티] 그룹 구성원의 테이블 내 콘텐츠를 클릭할 수 없습니다(CQ-4334404).
 * [Oak] 콜드 대기 동기화 프로세스가 작동하지 않고 로깅 오류를 기록하고 있습니다(CQ-4333868).
 * [Platform Foundation UI] [!DNL Experience Manager] 사용자가 페이지를 선택하면 시작 페이지가 다시 나타납니다 [!DNL Adobe Experience Manager] 아이콘을 이미 시작 페이지에 표시하고 있습니다(CQ-4317409).
+* 복제 권한이 없는 사용자가 페이지를 삭제하거나 이동하는 경우(페이지가 활성화되지 않은 경우에도) `Page Subtree Activation Check` 구성 `Page Manager Factory` 를 활성화해야 합니다(NPR-37936).
 
 ### [!DNL Assets] {#assets-65120}
 
