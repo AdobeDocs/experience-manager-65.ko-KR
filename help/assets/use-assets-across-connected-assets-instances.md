@@ -1,14 +1,15 @@
 ---
 title: 연결된 자산을 사용하여 DAM 자산을 [!DNL Sites]
 description: 원격에서 사용할 수 있는 자산 사용 [!DNL Adobe Experience Manager Assets] 다른 웹 페이지에서 웹 페이지를 만들 때 배포 [!DNL Adobe Experience Manager Sites] 배포.
-contentOwner: AG
+contentOwner: AK
+mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 6b9f0836ae61fdaa1aaf89434d76be5925970088
+source-git-commit: 19eaabb55f11ea8080a545d994795e30817a51fb
 workflow-type: tm+mt
-source-wordcount: '3811'
-ht-degree: 20%
+source-wordcount: '3786'
+ht-degree: 17%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 20%
 
 에서 페이지 편집 시 [!UICONTROL 페이지 편집기] 작성자가 대상 대상으로 다른 위치에서 자산을 원활하게 검색, 탐색 및 포함할 수 있습니다 [!DNL Assets] 자산의 소스 역할을 하는 배포입니다. 관리자는 배포의 1회 통합을 만듭니다. [!DNL Experience Manager] with [!DNL Sites] 다른 배포를 통한 기능 [!DNL Experience Manager] with [!DNL Assets] 기능. 사이트 작성자는 연결된 자산을 통해 사이트의 웹 페이지에서 Dynamic Media 이미지를 사용하고 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 활용할 수도 있습니다.
 
-대상 [!DNL Sites] 작성자는 원격 자산을 읽기 전용 로컬 자산으로 사용할 수 있습니다. 이 기능은 한 번에 여러 개의 원격 자산을 원활하게 검색하고 사용할 수 있도록 지원합니다. 많은 원격 자산을 [!DNL Sites] 한 번에 배포하려면 자산을 일괄적으로 마이그레이션하는 것이 좋습니다. 자세한 내용은 [Experience Manager Assets 마이그레이션 안내서](/help/assets/assets-migration-guide.md).
+대상 [!DNL Sites] 작성자는 원격 자산을 읽기 전용 로컬 자산으로 사용할 수 있습니다. 이 기능은 사이트 편집기에서 원격 자산을 원활하게 검색하고 액세스할 수 있도록 지원합니다. 사이트에서 전체 자산 말뭉치를 사용할 수 있어야 하는 기타 사용 사례의 경우, 연결된 자산을 활용하는 대신 자산을 일괄적으로 마이그레이션하는 것이 좋습니다. 자세한 내용은 [Experience Manager Assets 마이그레이션 안내서](/help/assets/assets-migration-guide.md).
 
 ### 사전 요구 사항 및 지원되는 배포 {#prerequisites}
 
@@ -43,7 +44,7 @@ ht-degree: 20%
 
 ### 지원되는 파일 형식 {#mimetypes}
 
-작성자는 콘텐츠 파인더에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 사용합니다. 문서가 `Download` 구성 요소 및 이미지를 `Image` 구성 요소. 작성자가 사용자 지정 항목에도 원격 자산을 추가합니다 [!DNL Experience Manager] 기본값을 확장하는 구성 요소 `Download` 또는 `Image` 구성 요소. 지원되는 형식은 다음과 같습니다.
+작성자는 콘텐츠 파인더에서 이미지와 다음 유형의 문서를 검색하고 페이지 편집기에서 검색된 자산을 드래그합니다. 문서가 `Download` 구성 요소 및 이미지를 `Image` 구성 요소. 작성자가 사용자 지정 항목에 원격 자산을 추가할 수도 있습니다 [!DNL Experience Manager] 기본값을 확장하는 구성 요소 `Download` 또는 `Image` 구성 요소. 지원되는 형식은 다음과 같습니다.
 
 * **이미지 형식**: 다음 형식의 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 을 지원합니다.
 * **문서 형식**: 자세한 내용은 [지원되는 문서 형식](assets-formats.md#supported-document-formats).
@@ -52,7 +53,7 @@ ht-degree: 20%
 
 기능 및 해당 사용자 그룹을 구성하고 사용하는 데 관련된 여러 가지 역할이 아래에 설명되어 있습니다. 로컬 범위는 작성자가 웹 페이지를 만드는 사용 사례에 사용됩니다. 원격 범위는 필요한 자산을 호스팅하는 DAM 배포에 사용됩니다. 다음 [!DNL Sites] 작성자가 이러한 원격 자산을 가져옵니다.
 
-| 역할 | 범위 | 사용자 그룹 | 연습의 사용자 이름 | 요구 사항 |
+| 역할 | 범위 | 사용자 그룹 | 연습의 사용자 이름 | 설명 |
 |---|---|---|---|---|
 | [!DNL Sites] administrator | 로컬 | [!DNL Experience Manager] `administrators` | `admin` | 설정 [!DNL Experience Manager] 원격 사이트와의 통합 구성 [!DNL Assets] 배포. |
 | DAM 사용자 | 로컬 | `Authors` | `ksaner` | `/content/DAM/connectedassets/`에서 가져온 자산을 보고 복제하는 데 사용됩니다. |
@@ -97,7 +98,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
    1. **[!UICONTROL 로컬 사이트 URL]** 은 [!DNL Sites] 배포. [!DNL Assets] 배포에서는 이 값을 사용하여 이 방법으로 가져온 디지털 자산에 대한 참조를 유지합니다 [!DNL Sites] 배포.
    1. 자격 증명 [!DNL Sites] 기술 사용자.
    1. 다음 값 **[!UICONTROL 원본 이진 전송 최적화 임계값]** 필드는 원본 자산(표현물 포함)이 동기식으로 전송되는지 여부를 지정합니다. 파일 크기가 작은 자산을 쉽게 가져올 수 있지만 파일 크기가 상대적으로 큰 자산은 비동기식으로 가장 잘 동기화됩니다. 값은 네트워크 기능에 따라 다릅니다.
-   1. 데이터 저장소를 사용하여 자산을 저장하고 데이터 저장소가 두 배포의 공통 저장소인 경우 **[!UICONTROL 연결된 자산과 공유되는 데이터 저장소]**&#x200B;를 선택합니다. 이 경우 실제 자산 바이너리를 데이터 저장소에서 사용할 수 있고 전송되지 않으므로 임계값 제한은 문제가 되지 않습니다.
+   1. 선택 **[!UICONTROL 연결된 자산과 공유된 데이터 저장소]**&#x200B;데이터 저장소를 사용하여 자산을 저장하고 데이터 저장소가 두 배포 간에 공유되는 경우 이 경우 실제 자산 바이너리를 데이터 저장소에서 사용할 수 있고 전송되지 않으므로 임계값 제한은 문제가 되지 않습니다.
 
    ![연결된 자산 기능에 대한 일반적인 구성](assets/connected-assets-typical-config.png)
 
@@ -166,7 +167,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
 ## 원격 자산 사용 {#use-remote-assets}
 
-웹 사이트 작성자가 콘텐츠 파인더를 사용하여 DAM 배포에 연결합니다. 작성자는 구성 요소에서 원격 자산을 찾아보고 검색하고 드래그할 수 있습니다. 원격 DAM을 인증하려면 관리자가 제공한 DAM 사용자의 자격 증명을 가까이 보관합니다.
+웹 사이트 작성자가 콘텐츠 파인더를 사용하여 DAM 배포에 연결합니다. 작성자는 구성 요소에서 원격 자산을 찾아보고 검색하고 드래그할 수 있습니다. 원격 DAM을 인증하려면 관리자가 제공한 자격 증명을 가까이 보관합니다(있는 경우).
 
 작성자는 로컬 DAM과 원격 DAM 배포에서 사용할 수 있는 자산을 단일 웹 페이지에서 사용할 수 있습니다. 콘텐츠 파인더를 사용하여 로컬 DAM을 검색하거나 원격 DAM을 검색합니다.
 
@@ -182,7 +183,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
    페이지의 왼쪽 위 모서리에서 **[!UICONTROL 사이드 패널 전환]**&#x200B;을 클릭합니다.
 
-1. 를 엽니다. [!UICONTROL 자산] 탭을 클릭하고 **[!UICONTROL 연결된 자산에 로그인]**.
+1. 를 엽니다. [!UICONTROL 자산] 탭(원격 컨텐츠 파인더)을 클릭하고 **[!UICONTROL 연결된 자산에 로그인]**.
 1. 자격 증명을 제공합니다(사용자 이름: `ksaner`, 암호: `password`). 이 사용자에게는 두 페이지의 [!DNL Experience Manager] 배포.
 1. DAM에 추가한 자산을 검색합니다. 원격 자산이 왼쪽 패널에 표시됩니다. 이미지 또는 문서를 필터링하고 지원되는 문서 유형을 추가로 필터링합니다. 이미지를 `Image` 구성 요소로, 문서를 `Download` 구성 요소로 드래그합니다.
 
@@ -192,7 +193,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
    *그림: 원격 DAM에서 자산을 검색할 때 문서 유형 및 이미지를 필터링하는 옵션.*
 
-1. 자산을 비동기적으로 가져오는 경우 및 가져오기 작업이 실패할 경우 사이트 작성자에게 알립니다. 작성자는 작성 중이나 작성 후에도 [비동기 작업](/help/sites-administering/asynchronous-jobs.md) 사용자 인터페이스.
+1. 자산의 원본을 비동기적으로 가져오는 경우 및 가져오기 작업이 실패할 경우 사이트 작성자에게 알립니다. 작성자는 작성 중이나 작성 후에도 [비동기 작업](/help/sites-administering/asynchronous-jobs.md) 사용자 인터페이스.
 
    ![백그라운드에서 발생하는 자산의 비동기적 가져오기에 대한 알림.](assets/assets_async_transfer_fails.png)
 
@@ -202,7 +203,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
    >[!NOTE]
    >
-   >하나 이상의 원격 자산을 가져오지 않더라도 페이지가 게시됩니다. 원격 자산을 사용하는 구성 요소가 빈 채로 게시됩니다. 다음 [!DNL Experience Manager] 알림 영역에는 비동기 작업 페이지에 표시되는 오류에 대한 알림이 표시됩니다.
+   >하나 이상의 원격 자산을 완전히 가져오지 않더라도 페이지가 게시됩니다. 다음 [!DNL Experience Manager] 알림 영역에는 비동기 작업 페이지에 표시되는 오류에 대한 알림이 표시됩니다.
 
 >[!CAUTION]
 >
@@ -223,7 +224,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
 1. 에 대한 참조 [!DNL Sites] 페이지에는 각 로컬 참조의 총 참조 수가 표시됩니다 [!DNL Sites]. 모든 참조를 찾고 총 참조 수를 표시하는 데 시간이 걸릴 수 있습니다.
 1. 참조 목록은 대화형 이며 DAM 사용자는 참조를 클릭하여 참조 페이지를 열 수 있습니다. 어떤 이유로 원격 참조를 가져올 수 없는 경우 사용자에게 실패를 알리는 알림이 표시됩니다.
-1. 사용자는 자산을 이동하거나 삭제할 수 있습니다. 자산을 이동하거나 삭제할 때 선택한 모든 자산/폴더의 총 참조 수가 경고 대화 상자에 표시됩니다. 참조가 아직 표시되지 않은 자산을 삭제하면 경고 대화 상자가 표시됩니다.
+1. 사용자는 자산을 이동하거나 삭제할 수 있습니다. 자산을 이동하거나 삭제할 때 선택한 모든 자산/폴더의 총 참조 수가 경고 대화 상자에 표시됩니다. 참조가 아직 검색되지 않은 자산을 삭제하면 경고 대화 상자가 표시됩니다.
 
    ![강제 삭제 경고](assets/delete-referenced-asset.png)
 
@@ -275,7 +276,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
 ### 에서 원격 DAM 배포에서 Dynamic Media 자산을 사용할 수 있습니까? [!DNL Sites] 연결된 자산을 구성한 후 배포하시겠습니까?
 
-예. 의 원격 DAM 배포에서 Dynamic Media 자산을 구성하고 사용할 수 있습니다. [!DNL Sites] 연결된 자산을 구성한 후 배포합니다. 자세한 내용은 [사이트 및 Dynamic Media 배포 간 연결 구성](#dynamic-media-assets).
+예. 의 원격 DAM 배포에서 Dynamic Media 이미지 자산을 구성하고 사용할 수 있습니다. [!DNL Sites] 연결된 자산을 구성한 후 배포합니다. 자세한 내용은 [사이트 및 Dynamic Media 배포 간 연결 구성](#dynamic-media-assets).
 
 ### 연결된 자산을 구성한 후 원격 DAM 자산 또는 폴더에서 업데이트, 삭제, 이름 변경 및 이동 작업을 수행할 수 있습니까?
 
@@ -291,7 +292,6 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
 ### 권한 및 자산 관리 {#permissions-and-managing-assets}
 
-* 로컬 자산은 원격 배포의 원본 자산과 동기화되지 않습니다. DAM 배포에 대한 권한 편집, 삭제 또는 취소는 다운스트림으로 전파되지 않습니다.
 * 로컬 자산은 읽기 전용 복사본입니다. [!DNL Experience Manager] 구성 요소는 변경되지 않은 상태로 자산을 유지한 채 편집합니다. 다른 편집 작업은 허용되지 않습니다.
 * 로컬로 가져온 자산은 작성용으로만 사용할 수 있습니다. 자산 업데이트 워크플로우를 적용할 수 없고 메타데이터를 편집할 수 없습니다.
 * 이미지 및 나열된 문서 형식만 지원됩니다. [!DNL Content Fragments] 및 [!DNL Experience Fragments] 지원되지 않습니다.
@@ -304,7 +304,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 ### 설정 및 라이선스 {#setup-licensing}
 
 * [!DNL Assets] 배포 [!DNL Adobe Managed Services] 가 지원됩니다.
-* [!DNL Sites] 단일 [!DNL Assets] 한 번에 저장소와 연결할 수 있습니다.
+* [!DNL Sites] 단일 [!DNL Assets] 한 번에 배포합니다.
 * 라이센스 [!DNL Assets] 원격 저장소로 작업해야 합니다.
 * 하나 이상의 [!DNL Sites] 로컬 작성 배포로 작업해야 합니다.
 
