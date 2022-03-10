@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 45a26c34ba879e1948ace785e861d38cce71e3a6
+source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3515'
+ht-degree: 1%
 
 ---
 
@@ -115,7 +115,13 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <td>A: 지원됨</td>
    <td>사소한 릴리스 및 업데이트</td>
   </tr>
- </tbody>
+  <tr>
+   <td> IBM JAVA1.8.0_291(빌드 8.0.6.30)<br /> </td>
+   <td>A: 지원됨</td>
+   <td>사소한 릴리스 및 업데이트</td>
+  </tr>
+
+</tbody>
 </table>
 
 >[!NOTE]
@@ -159,7 +165,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <td>지원됨</td>
   </tr>
   <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
+   <td><p>Microsoft SQL Server 2016(사용 중지)</p> </td>
    <td><p>저장소 마이크로커널</p> </td>
    <td><p>지원됨</p> </td>
   </tr>
@@ -244,7 +250,7 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <td>서비스 팩 및 중요 업데이트</td>
   </tr>
   <tr>
-   <td>IBM® WebSphere® Application Server 9.0 <sup>[1] [4]</sup><br /> </td>
+   <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
    <td>A: 지원됨</td>
    <td>서비스 팩 및 중요 업데이트</td>
   </tr>
@@ -751,7 +757,7 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 
 ## 플랫폼 업데이트 {#platform-updates}
 
-다음 플랫폼은 2022년 2월 3일에 AEM Forms 6.5.12.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
+다음 플랫폼은 2022년 3월 3일에 AEM Forms 6.5.12.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
 
 - MongoDB Enterprise 4.0
 - IBM DB2 11.1
@@ -761,6 +767,7 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 - JBoss® EAP(Enterprise Application Platform) 7.1.4
 - IBM Content Manager Server 8.5 수정 팩 2
 - IBM Content Manager Client 8.5
+- Microsoft SQL Server 2016
 
 다음 플랫폼은 2021년 9월 7일에 AEM Forms 6.5.10.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
 
@@ -776,11 +783,11 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 
 ## 개정 내역 {#revision-history}
 
-- 2022년 2월 03일
+- 2022년 3월 3일
 
    - 다음에 대한 지원이 제거되었습니다.
       - IBM® J9 가상 컴퓨터(빌드 2.8, JRE 1.8.0)
-      - Oracle 데이터베이스 12c 릴리스 2
+      - Oracle 데이터베이스 12c 릴리스 1
       - Oracle 데이터베이스 18c
       - Oracle UD(Unified Directory) 11g 릴리스 2
       - IBM Lotus Domino 9.0

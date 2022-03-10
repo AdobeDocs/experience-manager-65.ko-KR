@@ -2,10 +2,10 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
 workflow-type: tm+mt
-source-wordcount: '3180'
-ht-degree: 17%
+source-wordcount: '3318'
+ht-degree: 16%
 
 ---
 
@@ -150,6 +150,12 @@ The following accessibility enhancements are available in [!DNL Assets]:
 * 텍스트 상자에 대해 리치 텍스트 허용 속성을 활성화하면 허용되는 최대 문자 길이에 문제가 있습니다(NPR-37825).
 
 * 적응형 양식의 구성 요소를 복사할 때 CSS 문제가 발생합니다(NPR-37812).
+
+* 적응형 양식 변환을 생성하는 동안 생성된 XLIFF 파일에는 적응형 양식과 동일한 텍스트 시퀀스가 포함되어 있지 않습니다. 경우에 따라 텍스트 컨텍스트를 확인해야 합니다. XLIFF의 시퀀스가 알파벳인 경우에는 가능하지 않습니다. (NPR-37435).
+
+* 적응형 양식이 번역되면 HTML 태그는 번역의 일부입니다. 사용자가 실수로 태그를 유효하지 않은 경우 전체 텍스트가 레코드 문서에 표시되지 않습니다. (NPR-37499)
+
+* 적응형 양식을 만들어 기본 언어 및 번역으로 완료하면 외부 팀에서 수행하고 가져옵니다. 추가 또는 누락된 점(.)과 같이 텍스트가 약간 변경되는 경우 이 기본 언어용에서 수행되면 다른 모든 언어에 대해 전체 번역이 누락됩니다. (NPR-37189)
 
 **양식 데이터 모델**
 
