@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
-source-git-commit: 10e46fe60edcaa116978173b8c61542653f6a551
+source-git-commit: 084e5d561e25dcbaee4489b65f423fc9166832be
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 99%
+source-wordcount: '2000'
+ht-degree: 98%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 99%
 
 활동을 추가하려면 다음을 수행하십시오.
 
-1. Click or tap the brand for which you are creating the activity, and then click or tap **Create** then **Create Activity**. 편집 중인 경우 활동을 선택한 다음 을(를) 클릭하거나 탭합니다 **편집**.
+1. 활동을 만들 브랜드를 클릭하거나 탭하고, 클릭하거나 탭합니다 **만들기** 그리고 **활동 만들기**. 편집 중인 경우 활동을 선택한 다음 을(를) 클릭하거나 탭합니다 **편집**.
 1. 다음 정보를 제공한 후, **다음**&#x200B;을 클릭하거나 탭합니다.
 
    * 활동의 이름.
