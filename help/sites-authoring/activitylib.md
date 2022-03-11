@@ -1,8 +1,8 @@
 ---
 title: 활동 관리
-seo-title: 활동 관리
+seo-title: Managing Activities
 description: 활동 콘솔을 사용하면 브랜드의 마케팅 활동을 만들고, 구성하고, 관리할 수 있습니다.
-seo-description: 활동 콘솔을 사용하면 브랜드의 마케팅 활동을 만들고, 구성하고, 관리할 수 있습니다.
+seo-description: The Activities console enables you to create, organize, and manage the marketing activities of your brands
 uuid: 0aebf88e-f298-410a-8c82-4076b671624f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10e46fe60edcaa116978173b8c61542653f6a551
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 100%
+source-wordcount: '2001'
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 100%
 >
 >* Adobe Target 임차인(clientcode)에서 **xt_only** 선택 사항이 활성화되지 **않으면** AEM에서에서 XT 활동과 A/B 활동을 **모두** 만들 수 있습니다.
 >
->**추가 참고:** **xt_only** 선택 사항은 특정 Target 임차인(clientcode)에 적용되는 설정이며, Adobe Target에서 직접 수정하는 것만 가능합니다. 이 선택 사항은 AEM에서 활성하거나 비활성화할 수 없습니다.
+>**추가 참고:** **xt_only** 선택 사항은 특정 Target 임차인(clientcode)에 적용되는 설정이며, Adobe Target에서 직접 수정하는 것만 가능합니다. You cannot enable or disable this option in AEM.
 
 >[!CAUTION]
 >
@@ -77,27 +77,27 @@ ht-degree: 100%
 
 활동을 추가하거나 기존 활동을 편집하여 마케팅 활동을 특정 대상에 집중할 수 있습니다. 활동을 만들거나 편집할 때 다음 정보를 지정합니다.
 
-* **이름:** 활동의 이름입니다.
-* **타깃팅 엔진:** 타깃팅된 컨텐츠를 위한 엔진으로서 [AEM](/help/sites-authoring/personalization.md#aem) 또는 [Adobe Target](/help/sites-authoring/personalization.md#adobe-target)입니다.
+* **Name:** The name of the activity.
+* **Targeting Engine:** Either [AEM](/help/sites-authoring/personalization.md#aem) or [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) as the engine for targeted content.
 
-* **Target 구성 선택:**(Adobe Target만 해당) 이 활동에서 Adobe Target에 연결하는 데 사용해야 하는 클라우드 구성입니다. 이 선택 사항은 타깃팅 엔진용으로 Adobe Target을 선택한 경우에만 나타납니다.
+* **Select a Target Configuration:** (Adobe Target only) The cloud configuration that this activity should use to connect to Adobe Target. This option appears only when Adobe Target is selected for Targeting Engine.
 * **활동 유형: **활동 유형 - A/B 테스트 또는 경험 타깃팅
-* **목표:**(선택 사항) 활동에 대한 설명입니다.
-* **경험:** 대상 이름과 사용자가 타깃팅하는 마케팅 세그먼트 간의 매핑입니다.
+* **Objective:** (Optional) A description of the activity.
+* **Experiences:** Mappings between audience names and the marketing segments that you are targeting.
 * **트래픽 비율:** A/B 테스트가 선택되면 각 경험에 대한 트래픽 크기(%)를 변경할 수 있습니다.
-* **지속 기간:** 활동이 적용되는 기간입니다.
-* **우선 순위:** 활동의 상대적 우선 순위입니다. 활동에서 동일한 사용자 세그먼트에 대한 컨텐츠를 제공하면 우선 순위가 높은 활동이 우선권을 갖습니다.
-* **목표 지표:** 타깃팅 엔진으로 Adobe Target이 선택되면 활동에 성공 지표를 추가할 수 있습니다. 성공 지표 1개가 필요합니다.
+* **Duration:** The period of time when the activity is applied.
+* **Priority:** The relative priority of the activity. When activities provide content for the same user segments, the activity of the higher priority takes precedence.
+* **목표 지표:** 타깃팅 엔진으로 Adobe Target이 선택되면 활동에 성공 지표를 추가할 수 있습니다. One success metric is required.
 
 >[!NOTE]
 >
->Adobe Target에 대한 동기화가 실패하게 되면 **활동** 콘솔이 아니라 타깃팅된 컨텐츠 편집기에서 새 Adobe Target 활동을 ***만들어야*** 합니다.
+>New Adobe Target activities need to be ***created*** in the targeted content editor, not in the **Activities** console, as synchronization to Adobe Target will fail.
 >
 >그러나 콘솔에서 기존의 Adobe Target 활동을 편집할 수는 있습니다.
 
 활동을 추가하려면 다음을 수행하십시오.
 
-1. 활동을 만들 브랜드를 클릭하거나 탭한 다음, **만들기&#x200B;**와**&#x200B;활동 만들기 를 차례로 클릭하거나 탭합니다. 편집 중이라면 마스터 영역 화면에서 활동을 선택하고 **활동 편집**&#x200B;을 클릭하거나 탭하십시오.
+1. Click or tap the brand for which you are creating the activity, and then click or tap **Create** then **Create Activity**. 편집 중인 경우 활동을 선택한 다음 을(를) 클릭하거나 탭합니다 **편집**.
 1. 다음 정보를 제공한 후, **다음**&#x200B;을 클릭하거나 탭합니다.
 
    * 활동의 이름.
@@ -106,7 +106,7 @@ ht-degree: 100%
    * (선택 사항) 활동의 목표 또는 설명입니다.
    * 활동 유형을 선택하십시오.
 
-1. 활동에 하나 이상의 경험을 추가합니다. **경험 추가**&#x200B;를 클릭하거나 탭합니다.
+1. Add one or more experiences to the activity. Click or tap **Add Experience**.
 1. AEM 타깃팅 또는 Adobe Target 경험 타깃팅을 사용하는 경우:
 
    1. **대상 선택**을 클릭하거나 탭하고 사용자의 경험이 타깃팅하는 세그먼트를 선택합니다.
@@ -126,7 +126,7 @@ ht-degree: 100%
 1. 활동이 시작되는 시점을 지정하려면 **시작** 드롭다운 메뉴를 사용하여 다음 값 중 하나를 선택하십시오.
 
    * **활성화 시:** 타깃팅된 컨텐츠가 포함된 페이지가 활성화되면 활동이 시작됩니다.
-   * **지정한 날짜 및 시간:** 구체적인 시점입니다. 이 선택 사항을 선택하면 달력 아이콘을 클릭하거나 탭하고 날짜를 선택한 다음, 활동을 시작할 시간을 지정하십시오.
+   * **지정한 날짜 및 시간:** 구체적인 시점입니다. When you select this option, click or tap the calendar icon, select a date, and specify the time to start the activity.
 
 1. 활동이 끝나는 시점을 지정하려면 [끝] 드롭다운 메뉴를 사용하여 다음 값 중 하나를 선택하십시오.
 
@@ -158,14 +158,14 @@ ht-degree: 100%
 
 1. 게시하려면 **게시**&#x200B;를 탭하거나 클릭하고, 게시를 취소하려면 **게시 취소**&#x200B;를 탭하거나 클릭합니다. 활동이 게시되거나 게시 취소되고, 활동 콘솔에서 활동 상태가 변합니다(새로 고침이 필요할 수 있음).
 
-## 작성 및 게시 인스턴스에서의 활동  {#activities-on-author-and-publish-instances}
+## 작성 및 게시 인스턴스에서의 활동 {#activities-on-author-and-publish-instances}
 
 Adobe Target 타깃팅 엔진을 사용하는 활동이 활성화되면 게시 인스턴스에서 두 번째 활동이 만들어집니다.
 
 * 작성 인스턴스에서의 활동은 작성 인스턴스에서의 활동을 추적하고 방문자 경험을 시뮬레이션하는 데 유용합니다. 이 활동에 대해 기록된 분석은 작성 인스턴스에서 발생하는 사항만 반영합니다.
 * 게시 인스턴스의 활동은 게시 서버의 활동을 반영하고 게시 서버의 활동에 응답합니다. 이 활동은 공개 웹 사이트에서 실행되는 활동입니다. 게시 활동만 실제 공개 사이트의 사용에 대한 추적 및 분석과 관련이 있습니다.
 
-## 성능 보기 및 우승 경험 전환(A/B 테스트)  {#viewing-performance-and-converting-winning-experiences-a-b-test}
+## 성능 보기 및 우승 경험 전환(A/B 테스트) {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 모든 Adobe Target 활동(XT 또는 A/B)의 성능을 볼 수 있습니다. A/B 테스트를 사용하는 경우에는 우승 경험을 전환할 수도 있으며, 전환된 후에는 기본 경험이 됩니다.
 
@@ -190,7 +190,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동이 활성화되면 게시 �
 
 1. **예**&#x200B;를 클릭하거나 탭하여 우승자를 전환할 것임을 확인합니다. 우승자를 전환하면 현재 경험이 비활성화되어 우승 경험의 컨텐츠로 교체됩니다.
 
-## 활동을 Adobe Target과 동기화  {#synchronizing-activities-with-adobe-target}
+## 활동을 Adobe Target과 동기화 {#synchronizing-activities-with-adobe-target}
 
 Adobe Target 타깃팅 엔진을 사용하는 활동은 Adobe Target 캠페인과 동기화됩니다. 다음 조건이 충족되면 활동이 자동으로 Adobe Target에 동기화됩니다.
 
@@ -211,7 +211,7 @@ Adobe Target 타깃팅 엔진을 사용하는 활동은 Adobe Target 캠페인�
 
 게시 활동은 활동이 AEM 게시 인스턴스에 게시되면 동기화됩니다.
 
-## 활동 동기화 문제 해결  {#troubleshooting-activity-synchronization}
+## 활동 동기화 문제 해결 {#troubleshooting-activity-synchronization}
 
 AEM이 활동을 Adobe Target과 동기화할 때 AEM은 `thirdPartyId`라는 활동의 속성을 포함합니다. 이 속성의 값은 AEM 저장소의 활동 경로를 기반으로 합니다. Adobe Target에 있는 두 개의 캠페인이 `thirdPartyId` 속성에 대해 동일한 값을 가질 수는 없습니다. 따라서 Adobe Target의 기존 캠페인(다른 유형 AB, XT)이 `thirdPartyId`에 대해 동일한 값을 사용하는 경우에는 활동이 실패하게 됩니다.
 
