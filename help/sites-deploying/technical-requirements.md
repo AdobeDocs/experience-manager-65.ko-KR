@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: cda5e0b545903333d928f14e043a931898d87dc3
+source-git-commit: 077540ed65f31f1bb4f0063fb6ac8bddb76595da
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3314'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,6 @@ Adobe Experience Manager 실행을 위한 최소 요구 사항:
 >
 >* 디지털 자산 사용 사례에는 더 많은 기본 메모리가 필요합니다. 자세한 내용은 [배포 및 유지 관리](/help/sites-deploying/deploy.md#default-local-install) 자세한 내용
 >* [AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md) 15GB의 임시 공간이 필요합니다.
-
 >
 
 
@@ -138,8 +137,8 @@ Adobe Experience Manager은 다음 버전의 Java Virtual Machine을 사용하�
 
 | **플랫폼** | **지원 수준** | **링크** |
 |---|---|---|
-| 아줄 줄루 오픈JDK 11 - 64비트 | A: 지원됨 `[1]` | [다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) |
-| 아줄 줄루 오픈JDK 8 - 64비트 | A: 지원됨 `[1]` | [다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18) |
+| 아줄 줄루 오픈JDK 11 - 64비트 | A: 지원됨 `[1]` |  |
+| 아줄 줄루 오픈JDK 8 - 64비트 | A: 지원됨 `[1]` |  |
 | Oracle Java SE 11 JDK - 64비트 | A: 지원됨 `[2]` | [다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java SE 10 JDK | Z: 지원되지 않음 `[2]` |
 | Oracle Java SE 9 JDK | Z: 지원되지 않음 `[2]` |
@@ -149,7 +148,7 @@ Adobe Experience Manager은 다음 버전의 Java Virtual Machine을 사용하�
 
 1. AEM 6.5 SP9 반응부터 OpenJDK의 Azul Zulu 빌드를 사용하는 모든 AEM 고객을 위해 LTS 릴리스의 모든 유지보수 업데이트를 포함하여 OpenJDK의 Azul Zulu 빌드의 지원 및 배포가 Adobe에서 직접 지원됩니다. 자세한 내용은 [Adobe Experience Manager Q&amp;A에 대한 Azul Java 지원](assets/adobe-azul-openjdk-license-agreement.pdf) 추가 정보.
 
-1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle에 의한 비 LTS 릴리스입니다(참조) [Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html)). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다. 공개 업데이트 종료 이후 LTS 릴리스의 모든 유지 관리 업데이트를 포함하여 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술을 사용하는 모든 AEM 고객을 위해 Adobe에서 직접 지원합니다 **2022년 12월까지**. 자세한 내용은 [Adobe Experience Manager Q&amp;A에 대한 Java oracle 지원](assets/adobe-oracle-java-license-agreement.pdf) 추가 정보.
+1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle에 의한 비 LTS 릴리스입니다(참조) [Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html)). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다. 공개 업데이트 종료 이후 LTS 릴리스의 모든 유지 관리 업데이트를 포함하여 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술을 사용하는 모든 AEM 고객을 위해 Adobe에서 직접 지원합니다. 자세한 내용은 [Adobe Experience Manager Q&amp;A에 대한 Java oracle 지원](assets/adobe-oracle-java-license-agreement.pdf) 추가 정보.
 
 1. IBM JRE는 WebSphere Application Server에서만 지원됩니다.
 
@@ -517,7 +516,6 @@ Windows x86의 경우:
 >* Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >* PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
-
 >
 
 
