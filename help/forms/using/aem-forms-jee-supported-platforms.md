@@ -11,7 +11,7 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
+source-git-commit: 73d5b894dfa1bbb3ae3f2973cc4f9db1ace90ef8
 workflow-type: tm+mt
 source-wordcount: '3515'
 ht-degree: 1%
@@ -116,12 +116,11 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <td>사소한 릴리스 및 업데이트</td>
   </tr>
   <tr>
-   <td> IBM JAVA1.8.0_291(빌드 8.0.6.30)<br /> </td>
+   <td>IBM JAVA1.8.0_291(빌드 8.0.6.30)<br /> </td>
    <td>A: 지원됨</td>
    <td>사소한 릴리스 및 업데이트</td>
   </tr>
-
-</tbody>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -649,7 +648,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
    <td>모든 업데이트</td>
   </tr>
   <tr>
-   <td>Microsoft Firefox ESR</td>
+   <td>Mozilla Firefox ESR</td>
    <td>E: 작동해야 함</td>
    <td> 모든 업데이트</td>
   </tr>
@@ -687,7 +686,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 > - Forms 포털은 Internet Explorer 11에서 접근성을 위해 JAWS 14.0 화면 판독기 소프트웨어를 지원합니다.
 
 
-#### 모바일 클라이언트 {#mobile-clients}
+#### Mobile 클라이언트 {#mobile-clients}
 
 <table>
  <tbody>
@@ -721,7 +720,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 
 ### AEM Forms 앱 {#aem-forms-workspace-app}
 
-#### 모바일 장치 지원 {#mobile-device-support}
+#### Mobile 장치 지원 {#mobile-device-support}
 
 AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 
