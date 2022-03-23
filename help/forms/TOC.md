@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
+source-git-commit: 290ae422e1136ea28ab21c3031ab66fb5405f1d3
 workflow-type: tm+mt
-source-wordcount: '3772'
-ht-degree: 4%
+source-wordcount: '3775'
+ht-degree: 5%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 4%
       + [WebSphere용 JEE에 Adobe Experience Manager Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
       + [WebLogic용 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebLogic_65)
       + [AEM Forms Workbench 설치](using/install-workbench.md)
-      + [디자이너 설치 및 구성](using/installing-configuring-designer.md)
+      + [ Designer 설치 및 구성](using/installing-configuring-designer.md)
       + [AEM Forms(서버 클러스터) 설치 준비](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
       + [JBoss 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](http://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
       + [WebSphere 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
@@ -155,7 +155,7 @@ ht-degree: 4%
    + [AEM Forms 키보드 단축키](using/keyboard-shortcuts.md)
    + [제출 검토자와 양식 연결](using/adding-reviewers-form.md)
    + [양식 필드에 대한 컨텍스트 내 도움말 작성](using/authoring-in-field-help.md)
-   + [레이아웃 모드를 사용하여 구성 요소 크기 조정](/help/forms/using/resize-using-layout-mode.md)
+   + [레이아웃 모드를 사용하여 구성 요소 크기 변경](/help/forms/using/resize-using-layout-mode.md)
 + 적응형 Forms - 고급 작성 {#adaptive-forms-advanced-authoring}
    + [JSON 스키마를 사용하여 적응형 양식 만들기](using/adaptive-form-json-schema-form-model.md)
    + [XML 스키마를 사용하여 적응형 양식 만들기](using/adaptive-form-xml-schema-form-model.md)
@@ -168,12 +168,11 @@ ht-degree: 4%
    + [적응형 양식 템플릿](using/template-editor.md)
    + [적응형 양식 표현식](using/adaptive-form-expressions.md)
    + [적응형 양식에 대한 기록 문서 생성](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-   + [지연 로딩으로 대용량 양식의 성능 향상](using/lazy-loading-adaptive-forms.md)
+   + [소극적 로드 옵션이 있는 대용량 양식의 성능 향상](using/lazy-loading-adaptive-forms.md)
    + [적응형 양식 필드 미리 채우기](using/prepopulate-adaptive-form-fields.md)
    + [적응형 양식에서 SOM 표현식 사용](using/using-som-expressions-adaptive-forms.md)
    + [사용자 데이터의 정보를 양식 제출 메타데이터에 추가](using/form-submission-metadata.md)
    + [XDP 기반 적응형 양식의 XFA 지원](using/xfa-api-supported-in-adaptive-form.md)
-   + [디자이너에서 페이지 제로 콘텐츠 변경](using/changing-page-zero-content-designer.md)
    + [사용자 그룹을 선택하는 규칙 편집기 액세스 부여](using/rule-editor-access-user-groups.md)
    + [AEM 번역 워크플로우를 사용하여 적응형 양식 및 레코드 문서를 현지화합니다](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
    + [적응형 양식 테스트 자동화](using/calvin.md)
@@ -193,8 +192,8 @@ ht-degree: 4%
    + [채널 및 웹 채널 인쇄](using/web-channel-print-channel.md)
    + [대화형 통신 구성 속성](using/interactive-communication-configuration-properties.md)
    + [여러 대화형 커뮤니케이션 생성](using/generate-multiple-interactive-communication-using-batch-api.md)
-   + [레이아웃 모드를 사용하여 구성 요소 크기 조정](using/resize-using-layout-mode-interactive-communication.md)
-+ 워크플로우 {#workflows}
+   + [레이아웃 모드를 사용하여 구성 요소 크기 변경](using/resize-using-layout-mode-interactive-communication.md)
++ 워크플로 {#workflows}
    + [OSGi의 Forms 중심 워크플로우](using/aem-forms-workflow.md)
    + [OSGi의 Forms 중심 워크플로우 - 단계 참조](using/aem-forms-workflow-step-reference.md)
    + [AEM Forms 중심 워크플로우 단계의 사용자 또는 그룹을 동적으로 선택](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
@@ -373,6 +372,7 @@ ht-degree: 4%
    + [AEM에서 문서 보안 보호 PDF 및 Microsoft Office 문서를 검색할 수 있도록 설정](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [다른 사용자를 대신하여 Protect 문서](using/protect-document-on-behalf-of-another-user.md)
 + Forms 디자이너 {#use-forms-designer}
+   + [Forms 디자이너 도움말](using/forms-designer-help.md)
    + [디자이너 사용](http://www.adobe.com/go/learn_aemforms_designer_65)
    + [디자이너 빠른 시작 Tutorials](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
    + [디자이너 샘플](http://www.adobe.com/go/learn_aemforms_designer_samples_65)
@@ -380,6 +380,7 @@ ht-degree: 4%
    + [디자이너 스크립팅 참조](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
    + [디자이너 양식 계산 참조](http://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [HTML5 양식에서 스크리블 서명 사용](using/scribble-signature.md)
+   + [디자이너에서 페이지 제로 콘텐츠 변경](using/changing-page-zero-content-designer.md)
 + AEM Forms 사용자 지정 {#customize-aem-forms}
    + [적응형 및 HTML5 양식의 모양 프레임워크](using/introduction-widgets.md)
    + [사용자 지정 적응형 양식 템플릿 만들기](using/custom-adaptive-forms-templates.md)
@@ -686,4 +687,3 @@ ht-degree: 4%
          + [JEE 서버 클러스터에서 AEM Forms 구성 및 문제 해결](developing/configure-server-cluster.md)
          + [동적 PDF forms에서 해시 생성 및 작업](developing/hashing-forms.md)
          + [WS-Security 헤더를 사용하여 자격 증명 전달](developing/passing-credentials.md)
-
