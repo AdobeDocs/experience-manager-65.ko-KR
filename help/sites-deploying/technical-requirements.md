@@ -6,7 +6,7 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 9e9a01cddf56d23bfe4e84812534c295be1595f4
+source-git-commit: cffec7ce415d00ab483b31d763ff2cdaa1eb16de
 workflow-type: tm+mt
 source-wordcount: '3294'
 ht-degree: 1%
@@ -100,7 +100,8 @@ Adobe Experience Manager은 다음 버전의 Java Virtual Machine을 사용하�
 | 아줄 줄루 오픈JDK 11 - 64비트 | A: 지원됨 `[3]` |  |
 | 아줄 줄루 오픈JDK 8 - 64비트 | A: 지원됨 `[3]` |  |
 
-1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle에 의한 비 LTS 릴리스입니다(참조) [Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html)). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다. 공개 업데이트 종료 이후 LTS 릴리스의 모든 유지 관리 업데이트를 포함하여 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술을 사용하는 모든 AEM 고객을 위해 Adobe에서 직접 지원합니다. 자세한 내용은 [Adobe Experience Manager Q&amp;A에 대한 Java oracle 지원](assets/adobe-oracle-java-license-agreement.pdf) 추가 정보.
+1. Oracle은 Oracle Java SE 제품에 대한 &quot;장기 지원&quot;(LTS) 모델로 이동되었습니다. Java 9, Java 10 및 Java 12는 Oracle에 의한 비 LTS 릴리스입니다(참조) [Oracle Java SE 지원 로드맵](https://www.oracle.com/technetwork/java/eol-135779.html)). 프로덕션 환경에 AEM을 배포하기 위해 Adobe은 Java의 LTS 릴리스에 대해서만 지원을 제공합니다. 공개 업데이트 종료 이후 LTS 릴리스의 모든 유지 관리 업데이트를 포함하여 Oracle Java SE JDK의 지원 및 배포는 Oracle Java SE 기술을 사용하는 모든 AEM 고객을 위해 Adobe에서 직접 지원합니다 **2022년 12월까지**. 자세한 내용은 [Adobe Experience Manager에 대한 Java 지원 정책](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) 추가 정보.
+
 
 1. IBM JRE는 WebSphere Application Server에서만 지원됩니다.
 
