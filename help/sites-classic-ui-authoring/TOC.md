@@ -1,16 +1,16 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 클래식 UI 작성 사용 안내서
 user-guide-description: 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다.
-feature: 작성
+feature: Authoring
 role: User
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 94%
+source-wordcount: '271'
+ht-degree: 93%
 
 ---
 
@@ -27,12 +27,12 @@ ht-degree: 94%
    + [UI 선택](author-env-select-ui.md)
    + [검색](author-env-search.md)
    + [받은 편지함](author-env-inbox.md)
-   + [콘솔용 키보드 단축키](author-env-keyboard-shortcuts.md)
+   + [키보드 단축키 콘솔](author-env-keyboard-shortcuts.md)
 + 작성 {#authoring}
    + [페이지 작성](classic-page-author.md)
    + [작성 - 환경 및 도구](classic-page-author-env-tools.md)
    + [페이지 생성 및 구성](classic-page-author-manage-pages.md)
-   + [페이지 컨텐츠 편집](classic-page-author-edit-content.md)
+   + [페이지 콘텐츠 편집](classic-page-author-edit-content.md)
    + [리치 텍스트 편집기](classic-page-author-rich-text-editor.md)
    + [페이지 게시](classic-page-author-publish-pages.md)
    + [페이지 속성 편집](classic-page-author-edit-page-properties.md)
@@ -51,17 +51,17 @@ ht-degree: 94%
    + [디자인 모드에서 구성 요소 구성](classic-page-author-design-mode.md)
    + [Search&amp;Promote 기능을 페이지에 추가](classic-feature-search-promote.md)
    + [구성 요소](classic-page-author-default-components.md)
-+ 워크플로우 {#workflows}
-   + [워크플로우에 참여](classic-workflows-participating.md)
-   + [워크플로우 작업](classic-workflows.md)
-   + [페이지에 워크플로우 적용](classic-workflows-applying.md)
-+ 론치 {#launches}
++ 워크플로 {#workflows}
+   + [워크플로에 참여](classic-workflows-participating.md)
+   + [워크플로를 사용하여 작업](classic-workflows.md)
+   + [페이지에 워크플로 적용](classic-workflows-applying.md)
++ 런치 {#launches}
    + [론치](classic-launches.md)
-   + [론치 만들기](classic-launches-creating.md)
-   + [론치 편집](classic-launches-editing.md)
-   + [론치 홍보](classic-launches-promoting.md)
-+ 개인화 {#personalization}
-   + [세그멘테이션 이해](classic-personalization-campaigns-segmentation.md)
+   + [런치 만들기](classic-launches-creating.md)
+   + [런치 편집](classic-launches-editing.md)
+   + [런치 홍보](classic-launches-promoting.md)
++ 개인 맞춤화 {#personalization}
+   + [세그먼테이션 이해](classic-personalization-campaigns-segmentation.md)
    + [캠페인 관리](classic-personalization-campaigns.md)
    + [랜딩 페이지](classic-personalization-campaigns-landingpage.md)
    + [Target 오퍼](classic-personalization-campaigns-target-offers.md)

@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: admin-user
 user-guide-title: AEM 6.5 관리 사용 안내서
 breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: eb05fb92491932e4c2489c5adb533bbbae1d2870
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 29%
@@ -128,7 +128,7 @@ ht-degree: 29%
    + [Adobe Campaign Standard과 통합](campaignstandard.md)
    + [Flash 뷰어 지원 중단 알림](flash-viewers-eol.md)
    + [제품 피드](product-feed.md)
-   + [Dynamic Tag Management와 통합 Adobe](dtm.md)
+   + [Adobe Dynamic Tag Management과 통합](dtm.md)
    + [Adobe Analytics 및 Adobe Target 선택](opt-in.md)
    + [AEM 포털 및 포틀릿](aem-as-portal.md)
    + [Dynamic Media Classic(Scene7)과 통합](scene7.md)
