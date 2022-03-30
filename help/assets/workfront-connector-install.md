@@ -3,17 +3,21 @@ title: ' 설치  [!DNL Workfront for Experience Manager enhanced connector]'
 description: ' 설치  [!DNL Workfront for Experience Manager enhanced connector]'
 role: Admin
 feature: Integrations
-source-git-commit: 8d39e1c86e5185a181400f10b7822a57c9d3aeae
+exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
+source-git-commit: a589836c77fd919838dce60a1eaf676683c165c0
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-
 #  설치 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 에 관리자 액세스 권한이 있는 사용자 [!DNL Adobe Experience Manager] 향상된 커넥터를 설치합니다. 설치하기 전에 플랫폼 지원 및 기타 를 검토하십시오 [커넥터를 위한 사전 요구 사항](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+
+>[!TIP]
+>
+>을(를) 찾고 있습니까? [!DNL Workfront for Experience Manager enhanced connector] AEM as a Cloud Service 설명서? 클릭 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en).
 
 >[!IMPORTANT]
 >
@@ -56,3 +60,15 @@ Workfront과의 연결을 만들려면 다음 단계를 수행하십시오.
    ![Connect [!DNL Experience Manager] 및 [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
 1. 연결을 확인하려면 [!DNL Workfront] 및 API 키가 동일하고 연결이 **[!UICONTROL 활성화됨]**. 이렇게 하려면 을(를) 선택합니다. **[!UICONTROL 설정]** > **[!UICONTROL 문서]** > **[!UICONTROL 사용자 지정 통합]** in [!DNL Workfront].
+
+## 업데이트 [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
+
+Experience Manager Assets을 사용하면 [!DNL Workfront for Experience Manager enhanced connector] 이전 버전에서 최신 버전으로 마이그레이션 하는 것이 좋습니다.
+
+를 업데이트하려면 [!DNL Workfront for Experience Manager enhanced connector] 최신 버전으로 마이그레이션:
+
+1. 향상된 커넥터의 최신 버전을 다운로드하십시오. [[!DNL Software Distribution] 링크](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. 를 사용하여 패키지 설치 [!UICONTROL 패키지 관리자]. 패키지를 설치하는 방법은 다음을 참조하십시오 [패키지 관리자 설명서](/help/sites-administering/package-manager.md).
+
+
