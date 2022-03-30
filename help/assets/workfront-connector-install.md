@@ -4,7 +4,7 @@ description: ' 설치  [!DNL Workfront for Experience Manager enhanced connector
 role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
-source-git-commit: a589836c77fd919838dce60a1eaf676683c165c0
+source-git-commit: 679ad8f1fec1abe97dfc90b6318c3f3c4ab85b7f
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -28,11 +28,8 @@ ht-degree: 0%
 커넥터를 설치하려면 다음 단계를 수행하십시오.
 
 1. 커넥터 다운로드 위치 [[!DNL Software Distribution] 링크](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-
 1. [방화벽 구성](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
-
 1. 디스패처에서 이름이 인 HTTP 헤더를 허용합니다. `authorization`, `username`, 및 `apikey`. 허용 `GET`, `POST`, 및 `PUT` 요청 `/bin/workfront-tools`.
-
 1. 다음 경로가 [!DNL Experience Manager] 저장소:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
@@ -42,7 +39,6 @@ ht-degree: 0%
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
 
 1. 를 사용하여 패키지 설치 [!UICONTROL 패키지 관리자]. 패키지를 설치하는 방법은 다음을 참조하십시오 [패키지 관리자 설명서](/help/sites-administering/package-manager.md).
-
 1. 만들기 `wf-workfront-users` in [!DNL Experience Manager] 사용자 그룹 및 권한 할당 `jcr:all` to `/content/dam`.
 
 시스템 사용자 `workfront-tools` 는 자동으로 만들어지며 필요한 권한은 자동으로 관리됩니다. 의 모든 사용자 [!DNL Workfront] 커넥터를 사용하는 사용자는 자동으로 이 그룹의 일부로 추가됩니다.
@@ -68,7 +64,4 @@ Experience Manager Assets을 사용하면 [!DNL Workfront for Experience Manager
 를 업데이트하려면 [!DNL Workfront for Experience Manager enhanced connector] 최신 버전으로 마이그레이션:
 
 1. 향상된 커넥터의 최신 버전을 다운로드하십시오. [[!DNL Software Distribution] 링크](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-
 1. 를 사용하여 패키지 설치 [!UICONTROL 패키지 관리자]. 패키지를 설치하는 방법은 다음을 참조하십시오 [패키지 관리자 설명서](/help/sites-administering/package-manager.md).
-
-
