@@ -1,25 +1,25 @@
 ---
 title: AEM 6.5 작성 사용 안내서
-seo-title: AEM 6.5 작성 사용 안내서
-description: '이 안내서에서는 AEM의 작성 개념을 설명합니다. '
-seo-description: 'AEM에서의 작성에 대한 개념들을 설명합니다. '
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Authoring User Guide
+description: Explore the key concepts of creating content and authoring in AEM 6.5. You will also find information around using tags, templates and other page features.
+seo-description: Explains the concepts of authoring in AEM.
+exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 97%
+source-wordcount: '373'
+ht-degree: 85%
 
 ---
 
-
 # AEM 6.5 작성 사용 안내서
 
-이 안내서에서는 AEM의 작성 개념을 설명합니다.
+AEM 6.5에서 컨텐츠 작성 및 작성에 대한 주요 개념을 알아봅니다. 태그, 템플릿 및 기타 페이지 기능 사용에 대한 정보도 찾을 수 있습니다.
 
 ## 주요 AEM 문서
 
 * [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
-* [최근 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
+* [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.5 사용 안내서
@@ -37,7 +37,7 @@ ht-degree: 97%
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [상거래 사용 안내서](/help/commerce/home.md) | AEM에서 Commerce Integration Framework에 대해 알아봅니다. |
+| [Commerce 사용 안내서](/help/commerce/home.md) | Learn about Commerce Integration Framework on AEM. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
@@ -48,6 +48,6 @@ ht-degree: 97%
 * [HTL 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
 * [코어 구성 요소 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
+* [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

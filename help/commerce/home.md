@@ -1,22 +1,21 @@
 ---
-title: AEM Content 및 Commerce
-description: AEM 컨텐츠 및 Commerce 자습 리소스 및 설명서 링크
-source-git-commit: 809789d268deb4d77bbb5101265a1a0d7268b748
+title: AEM Content and Commerce
+description: 통합 및 AEM Storefront 사용을 시작하는 방법에 대한 유용한 문서를 통해 AEM Content and Commerce를 사용하고 관리하는 방법을 이해합니다.
+exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 84%
+source-wordcount: '367'
+ht-degree: 79%
 
 ---
 
+# AEM Content and Commerce {#commerce-guide}
 
-# AEM Content 및 Commerce {#commerce-guide}
-
-이 페이지에는 AEM Commerce와 관련된 자습 리소스들이 나열됩니다.
+통합 및 AEM Storefront 사용을 시작하는 방법에 대한 유용한 문서를 통해 AEM Content and Commerce를 사용하고 관리하는 방법을 이해합니다.
 
 >[!NOTE]
 >
->AEM을 Cloud Service으로 사용하는 AEM 컨텐츠 및 상거래에 대해서는 [AEM 컨텐츠 및 상거래](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)를 참조하십시오.
-
+>AEM as a Cloud Service이 있는 AEM 컨텐츠 및 Commerce의 경우 를 참조하십시오. [AEM Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html).
 
 ## 주요 상거래 문서 {#key-articles}
 
@@ -48,6 +47,6 @@ ht-degree: 84%
 * [HTL 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
 * [코어 구성 요소 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
+* [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 커뮤니티 포럼](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

@@ -1,25 +1,25 @@
 ---
 title: Assets 안내서
-description: 이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 Experience Manager 자산 작업을 다룹니다.
+description: Experience Manager에서 디지털 자산을 생성, 관리, 처리 및 배포할 수 있습니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산을 사용하는 방법에 대해 설명합니다.
 user-guide-title: Assets 안내서
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 883c279330b199d4e3a301e240cae02a6e04fd20
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 69%
+source-wordcount: '344'
+ht-degree: 64%
 
 ---
 
 # Assets 안내서
 
-이 안내서에서는 디지털 자산 만들기, 관리, 제공 및 최적화 방법과 같은 모든 [!DNL Experience Manager Assets] 작업을 다룹니다.
+Experience Manager에서 디지털 자산을 생성, 관리, 처리 및 배포할 수 있습니다. 이 안내서에서는 모범 사례, 접근성 기능 및 AEM 6.5 자산을 사용하는 방법에 대해 설명합니다.
 
 ## 키 [!DNL Experience Manager] 문서
 
 * [Experience Manager 6.5 릴리스 노트](/help/release-notes/home.md)
-* [최근 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko-KR)
 * [Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6.5 안내서
@@ -36,14 +36,14 @@ ht-degree: 69%
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 Experience Manager의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | Experience Manager 배포를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 Experience Manager 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [상거래 사용 안내서](/help/commerce/home.md) | Experience Manager에서 Commerce Integration Framework에 대해 알아봅니다. |
+| [Commerce 사용 안내서](/help/commerce/home.md) | Experience Manager에서 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 [!DNL Livefyre]와 공유하는 방법을 보여 줍니다. |
 
 ## 키 [!DNL Experience Manager] 리소스
 
 * [Experience Manager 비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
-* [GDPR 준비 완료](/help/managing/data-protection-and-privacy.md)
+* [GDPR 준비](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Experience Manager 자산 커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-assets/ct-p/experience-manager-assets-community)
 * [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
