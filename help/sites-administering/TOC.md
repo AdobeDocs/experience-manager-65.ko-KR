@@ -8,10 +8,10 @@ breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 29%
+source-wordcount: '632'
+ht-degree: 28%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 29%
    + [라이브 카피 동기화 구성](msm-sync.md)
    + [라이브 카피 생성 및 동기화](msm-livecopy.md)
    + [MSM 롤아웃 충돌](msm-rollout-conflicts.md)
+   + [MSM 문제 해결 및 FAQ](troubleshoot-msm.md)
    + [MSM 모범 사례](msm-best-practices.md)
    + [다국어 사이트를 위한 콘텐츠 번역](translation.md)
    + [번역 프로젝트 관리](tc-manage.md)
