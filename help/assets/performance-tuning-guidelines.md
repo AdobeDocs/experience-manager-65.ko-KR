@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 35639a818f58923ae9ad099752d359e7795be60b
 workflow-type: tm+mt
 source-wordcount: '2741'
 ht-degree: 0%
@@ -202,7 +202,7 @@ Adobe은 많은 회사에 HTTP 트래픽을 감지하는 방화벽이 있어 이
 </policymap>
 ```
 
-또한 ImageMagick의 임시 폴더의 경로를 `configure.xml` 파일(또는 환경 변수를 설정하여) `MAGIC_TEMPORARY_PATH`)를 사용 할 수 있습니다.
+또한 ImageMagick의 임시 폴더의 경로를 `configure.xml` 파일(또는 환경 변수를 설정하여) `MAGICK_TEMPORARY_PATH`)를 사용 할 수 있습니다.
 
 >[!CAUTION]
 >
