@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 0f4207564645ef7ba7da9064e971248b59f5a9b3
+source-git-commit: a23b3648b2687bcdbb46ea5e0bb42090822e1dd9
 workflow-type: tm+mt
-source-wordcount: '5381'
+source-wordcount: '5420'
 ht-degree: 2%
 
 ---
@@ -203,7 +203,7 @@ PDF 생성기 서비스를 사용하여 Microsoft® Word, Microsoft® Excel, Mic
 >* Adobe Acrobat, Microsoft® Word, Excel 및 Powerpoint는 Microsoft® Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 Microsoft® Office 파일을 PDF 문서로 변환합니다.
 >* PDF 생성기 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
 >* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF 생성기 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 닫습니다.
->
+>* [Adobe Acrobat 일련 번호의 만료 날짜를 확인합니다](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) 라이센스를 업데이트하거나 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) 만료 날짜를 기준으로 합니다.
 
 
 Acrobat을 설치한 후 Microsoft® Word를 엽니다. 설정 **Acrobat** 탭, **PDF 만들기** 컴퓨터에서 사용할 수 있는 .doc 또는 .docx 파일을 PDF 문서로 변환합니다. 전환이 성공적으로 수행되면 AEM Forms에서는 PDF 생성기 서비스와 함께 Acrobat을 사용할 준비가 되었습니다.
