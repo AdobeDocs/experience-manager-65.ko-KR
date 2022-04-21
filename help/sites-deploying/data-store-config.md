@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 9d8387934e2eab61191bd66c625a9fa52b686e37
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3471'
 ht-degree: 1%
 
 ---
@@ -206,7 +206,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
    >
    >위에 표시된 파일 이름은 일러스트레이션용으로만 사용됩니다.
 
-1. 에서 최신 버전의 1.8.x 기능 팩을 다운로드합니다 [Adobe 저장소](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. 에서 최신 버전의 1.8.x 기능 팩을 다운로드합니다 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
 1. 컨텐츠를 별도의 폴더로 압축 해제한 다음 `jcr_root/libs/system/install/15`.
 1. jar 파일을에 복사합니다. **&lt;aem-install>**/crx-quickstart/install/15 를 클릭합니다.
 1. AEM을 시작하고 커넥터 기능을 확인합니다.
@@ -286,7 +286,7 @@ DataStore에서 액세스하기 전에 로컬 캐시가 요청된 파일/blob의
 
 **비동기 업로드**
 
-캐시는 DataStore에 대한 비동기 업로드를 지원합니다. 파일은 로컬에서 캐시(파일 시스템)에 스테이징되고 비동기 작업이 파일 업로드를 시작합니다. 비동기 업로드 수는 스테이징 캐시의 크기에 따라 제한됩니다. 스테이징 캐시의 크기는 `stagingSplitPercentage` 매개 변수. 이 매개 변수는 스테이징 캐시에 사용할 캐시 크기의 백분율을 정의합니다. 또한 다운로드에 사용할 수 있는 캐시 백분율은 **(100 - `stagingSplitPercentage`) *`cacheSize`**.
+캐시는 DataStore에 대한 비동기 업로드를 지원합니다. 파일은 로컬에서 캐시(파일 시스템)에 스테이징되고 비동기 작업이 파일 업로드를 시작합니다. 비동기 업로드 수는 스테이징 캐시의 크기에 따라 제한됩니다. 스테이징 캐시의 크기는 `stagingSplitPercentage` 매개 변수. 이 매개 변수는 스테이징 캐시에 사용할 캐시 크기의 백분율을 정의합니다. 또한 다운로드에 사용할 수 있는 캐시 백분율은 **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
 비동기 업로드는 다중 스레드이며 `uploadThreads` 매개 변수.
 
