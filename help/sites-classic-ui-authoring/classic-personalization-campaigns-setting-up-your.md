@@ -1,8 +1,8 @@
 ---
 title: 캠페인 설정
-seo-title: 캠페인 설정
+seo-title: Setting up your campaign
 description: 새 캠페인을 설정하려면 캠페인을 개최할 브랜드를 만들고, 경험을 제공할 캠페인을 만들고, 마지막으로 새 캠페인에 대한 속성을 정의해야 합니다.
-seo-description: 새 캠페인을 설정하려면 캠페인을 개최할 브랜드를 만들고, 경험을 제공할 캠페인을 만들고, 마지막으로 새 캠페인에 대한 속성을 정의해야 합니다.
+seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
 uuid: 244a150e-7b5e-4eff-bd15-e3b04be6a3e9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2257'
 ht-degree: 98%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 98%
 
 1. **확인**&#x200B;을 클릭하여 저장합니다.
 
-### 새 캠페인 만들기  {#creating-a-new-campaign}
+### 새 캠페인 만들기 {#creating-a-new-campaign}
 
 새 캠페인을 만드는 방법은 다음과 같습니다.
 
@@ -88,7 +88,7 @@ ht-degree: 98%
 
 1. **만들기**&#x200B;를 클릭합니다. 새 캠페인이 MCM에 표시됩니다.
 
-### 새 캠페인에 대한 속성 정의  {#defining-the-properties-for-your-new-campaign}
+### 새 캠페인에 대한 속성 정의 {#defining-the-properties-for-your-new-campaign}
 
 행동을 제어하는 캠페인 속성을 구성하십시오.
 
@@ -99,7 +99,7 @@ ht-degree: 98%
 
 * **Adobe Target:** Adobe Target과 통합된 캠페인을 구성하는 속성입니다. ([Adobe Target과 통합](/help/sites-administering/target.md)을 참조하십시오.)
 
-1. **캠페인**&#x200B;에서 귀사의 브랜드를 선택합니다. 오른쪽 창에서 캠페인을 선택하고 **속성**&#x200B;을 클릭하십시오.
+1. **캠페인**&#x200B;에서 귀사의 브랜드를 선택합니다. 오른쪽 창에서 캠페인을 선택하고 을(를) 클릭합니다 **속성**.
 
    **제목**, **설명** 및 원하는 **클라우드 서비스**&#x200B;를 포함하여 원하는 다양한 속성을 입력할 수 있습니다.
 
@@ -107,7 +107,7 @@ ht-degree: 98%
 
 1. **확인**&#x200B;을 클릭하여 저장합니다.
 
-### 새 경험 만들기  {#creating-a-new-experience}
+### 새 경험 만들기 {#creating-a-new-experience}
 
 새 경험을 만드는 절차는 경험 유형에 좌우됩니다.
 
@@ -121,7 +121,7 @@ ht-degree: 98%
 >
 >지금은 경험을 만들 때 MCM을 사용하는 방법을 권장합니다.
 
-### 새 경험 구성  {#configuring-your-new-experience}
+### 새 경험 구성 {#configuring-your-new-experience}
 
 경험에 대한 기본 골격을 만들었으므로 이제 경험 유형에 따라 다음 작업을 계속 진행해야 합니다.
 
@@ -172,7 +172,7 @@ AEM MCM에서는 리드를 직접 입력하거나 메일링 목록과 같이 쉼
 >
 >사용자 아바타를 추가하거나 수정하려면 Clickstream Cloud(Ctrl+Alt+c)를 열고 프로필을 로드한 다음 **편집**&#x200B;을 클릭합니다.
 
-### 새 리드 만들기  {#creating-new-leads}
+### 새 리드 만들기 {#creating-new-leads}
 
 새 리드를 만든 후에는 [리드를 활성화](#activating-or-deactivating-leads)해야 게시 인스턴스에서 리드의 활동을 추적하고 리드의 경험을 개인화(개인의 필요에 맞게 만들기)할 수 있습니다.
 
@@ -221,12 +221,8 @@ AEM MCM에서는 리드를 직접 입력하거나 메일링 목록과 같이 쉼
    >
    >다음 방법 중 하나로 리드를 가져올 수도 있습니다.
    >
-   >
-   >
-   >    * 대시보드의 **목록** 창에서 **리드 가져오기**&#x200B;를 클릭합니다.
-      >
-      >    
-   * **목록**&#x200B;을 클릭하고 **도구** 메뉴에서 **리드 가져오기**&#x200B;를 클릭합니다.
+   >* 대시보드의 **목록** 창에서 **리드 가져오기**&#x200B;를 클릭합니다.
+   >* **목록**&#x200B;을 클릭하고 **도구** 메뉴에서 **리드 가져오기**&#x200B;를 클릭합니다.
 
 
 1. **도구** 메뉴에서 **리드** **가져오기**&#x200B;를 클릭합니다.
@@ -238,7 +234,7 @@ AEM MCM에서는 리드를 직접 입력하거나 메일링 목록과 같이 쉼
    >CSV 목록의 첫 번째 행은 사전 정의된 레이블로 예제와 동일하게 작성되어야 합니다.
    >
    >
-   >`email,givenName,familyName` - 예를  `givenname`들어 로 작성하면 시스템에서 인식하지 못합니다.
+   >`email,givenName,familyName` -으로 작성된 경우 `givenname`예를 들어 시스템은 이를 인식하지 못합니다.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -252,7 +248,7 @@ AEM MCM에서는 리드를 직접 입력하거나 메일링 목록과 같이 쉼
 
    리드 창에 새 리드가 나타납니다. 항목을 클릭하면 입력된 모든 정보가 오른쪽 창에 표시됩니다. 리드를 만든 후 목록에 추가할 수 있습니다.
 
-### 목록에 리드 추가  {#adding-leads-to-lists}
+### 목록에 리드 추가 {#adding-leads-to-lists}
 
 기존 목록에 리드를 추가하는 방법은 다음과 같습니다.
 
@@ -268,7 +264,7 @@ AEM MCM에서는 리드를 직접 입력하거나 메일링 목록과 같이 쉼
 
 1. 리드를 추가할 목록을 선택하고 **확인**&#x200B;을 클릭합니다. 해당 목록에 리드가 추가됩니다.
 
-### 리드 정보 확인  {#viewing-lead-information}
+### 리드 정보 확인 {#viewing-lead-information}
 
 리드 정보를 확인하려는 경우 MCM에서 리드 옆의 확인란을 클릭하면 오른쪽 창에 소속된 목록을 비롯하여 리드의 모든 정보가 표시됩니다.
 
@@ -296,7 +292,7 @@ AEM MCM에서는 리드를 직접 입력하거나 메일링 목록과 같이 쉼
    >
    >리드 아바타를 변경하려면 사용자 프로필로 이동합니다. Clickstream Cloud에 프로필을 로드하려면 Ctrl+Alt+C를 누르고 **로드**&#x200B;를 클릭한 다음 프로필을 선택합니다.
 
-### 기존 리드 삭제  {#deleting-existing-leads}
+### 기존 리드 삭제 {#deleting-existing-leads}
 
 MCM에서 기존 리드를 삭제하려면 리드 옆의 확인란을 선택하고 **삭제**&#x200B;를 클릭합니다. 리드가 리드 목록과 모든 관련 목록에서 제거됩니다.
 
@@ -304,7 +300,7 @@ MCM에서 기존 리드를 삭제하려면 리드 옆의 확인란을 선택하�
 >
 >삭제가 실행되기 전에 기존 리드를 삭제할지 확인하는 메시지가 나타납니다. 삭제된 항목은 복원할 수 없습니다.
 
-## 목록 작업  {#working-with-lists}
+## 목록 작업 {#working-with-lists}
 
 >[!NOTE]
 >
@@ -347,7 +343,7 @@ MCM에서 기존 리드를 삭제하려면 리드 옆의 확인란을 선택하�
 
 1. 필요에 따라 편집하고 **저장**&#x200B;을 클릭하여 변경 사항을 저장합니다.
 
-### 기존 목록 삭제  {#deleting-existing-lists}
+### 기존 목록 삭제 {#deleting-existing-lists}
 
 기존 목록을 삭제하려면 MCM에서 목록 옆의 확인란을 선택하고 **삭제**&#x200B;를 클릭합니다. 목록이 제거됩니다. 목록에 속한 리드는 제거되지 않으며 단순히 목록에서 제외됩니다.
 
@@ -355,7 +351,7 @@ MCM에서 기존 리드를 삭제하려면 리드 옆의 확인란을 선택하�
 >
 >삭제가 실행되기 전에 기존 목록을 삭제할지 확인하는 메시지가 나타납니다. 삭제된 항목은 복원할 수 없습니다.
 
-### 목록 병합  {#merging-lists}
+### 목록 병합 {#merging-lists}
 
 기존 목록을 다른 목록과 병합할 수 있습니다. 이때 병합하는 목록은 다른 목록에 속하게 됩니다. 이 목록은 별도의 항목으로 계속 유지되므로 삭제해서는 안 됩니다.
 
@@ -387,7 +383,7 @@ MCM에서 기존 리드를 삭제하려면 리드 옆의 확인란을 선택하�
 >
 >병합된 목록을 구성원에서 제외하는 방법은 목록에서 리드를 제외하는 방법과 동일합니다. **목록** 탭을 열고 병합된 목록을 포함하는 목록을 선택한 후 목록 옆의 빨간색 원을 클릭하여 목록에서 제외합니다.
 
-### 목록의 리드 확인  {#viewing-leads-in-lists}
+### 목록의 리드 확인 {#viewing-leads-in-lists}
 
 언제든지 구성원을 찾아보거나 검색하여 특정 목록에 속한 리드를 확인할 수 있습니다.
 
