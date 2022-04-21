@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a23b3648b2687bcdbb46ea5e0bb42090822e1dd9
+source-git-commit: 4b3327ed46024662813bb538f8338c59e508e10e
 workflow-type: tm+mt
-source-wordcount: '5420'
+source-wordcount: '5330'
 ht-degree: 2%
 
 ---
@@ -223,11 +223,6 @@ Acrobat을 설치한 후 Microsoft® Word를 엽니다. 설정 **Acrobat** 탭, 
    <td><p><strong>JDK(64비트)</strong></p> </td>
    <td><p>JAVA_HOME</p> </td>
    <td><p>C:\Program Files\Java\jdk1.8.0_74</p> </td>
-  </tr>
-  <tr>
-   <td><p><strong>JDK(32비트)</strong></p> </td>
-   <td><p>JAVA_HOME_32</p> </td>
-   <td><p>C:\Program Files (x86)\Java\jdk1.8.0_74</p> </td>
   </tr>
   <tr>
    <td><p><strong>Adobe Acrobat</strong></p> </td>
@@ -596,7 +591,20 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
 
 시스템 준비 도구는 시스템이 PDF 생성기 전환을 실행하도록 제대로 구성되어 있는지 확인합니다. 지정된 경로에서 보고서가 생성됩니다. 도구를 실행하려면
 
-1. 시스템 준비 도구용 구성 파일을 만듭니다. 예를 들어 srt_config.yaml입니다. 파일의 형식은 다음과 같습니다.
+1. 명령 프롬프트를 엽니다. 로 이동합니다 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` 폴더를 입력합니다.
+
+1. 명령 프롬프트에서 다음 명령을 실행합니다.
+
+   `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
+
+   명령은 보고서를 생성하고 srt_config.yaml 파일도 생성합니다.
+
+   >[!NOTE]
+   >
+   > * 시스템 준비 도구에서 Acrobat 플러그인 폴더에서 pdfgen.api 파일을 사용할 수 없다고 보고하는 경우 의 pdfgen.api 파일을 복사합니다 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` 디렉토리 `[Acrobat_root]\Acrobat\plug_ins` 디렉토리.
+   >
+   > * srt_config.yaml 파일을 사용하여 의 다양한 설정을 구성할 수 있습니다. 파일의 형식은 다음과 같습니다.
+
 
    ```
       # =================================================================
@@ -623,19 +631,13 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
       outputDir:
    ```
 
-1. 명령 프롬프트를 엽니다. 로 이동합니다 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` 폴더를 입력합니다. 명령 프롬프트에서 다음 명령을 실행합니다.
-
-   `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
-
-   >[!NOTE]
-   >
-   >시스템 준비 도구에서 Acrobat 플러그인 폴더에서 pdfgen.api 파일을 사용할 수 없다고 보고하는 경우 의 pdfgen.api 파일을 복사합니다 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` 디렉토리 `[Acrobat_root]\Acrobat\plug_ins` 디렉토리.
-
 1. 다음으로 이동 `[Path_of_reports_folder]`. SystemReadinessTool.html 파일을 엽니다. 보고서를 확인하고 언급된 문제를 수정합니다.
 
 ## 문제 해결
 
 SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생하는 경우 다음 검사를 수행하십시오.
+
+다음 검사를 수행하기 전에 [시스템 준비 도구](#SRT) 오류를 보고하지 않습니다.
 
 +++ Adobe Acrobat
 
@@ -644,9 +646,7 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 * 다음을 확인합니다. [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) 관리자 권한으로 배치 파일을 실행했습니다.
 * PDF 생성기 사용자가 PDF 구성 UI에 추가되었는지 확인합니다.
 * 다음을 확인합니다. [프로세스 수준 토큰 바꾸기](#grant-the-replace-a-process-level-token-privilege) PDF 생성기 사용자에 대한 권한이 추가되었습니다.
-* (앱 서버 기반 설치의 경우) 애플리케이션 서버가 서비스로 실행 중인지 확인합니다.
-* PDF 생성기의 temp 및 운영 체제 temp 디렉터리에 대한 읽기 및 쓰기 권한이 사용자에게 있는지 확인합니다. 예, `<crx-quickstart-home>\temp` 및 `C:\Windows\Temp`
-* Microsoft Office 응용 프로그램에 Acrobat PDFMaker Office COM Addin이 활성화되어 있는지 확인합니다. 추가 기능이 활성화되어 있지 않으면 Adobe Acrobat 복구를 실행하고 [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) 파일을 만든 후 AEM Forms 서버를 다시 시작합니다.
+* Microsoft Office 응용 프로그램에 Acrobat PDFMaker Office COM Addin이 활성화되어 있는지 확인합니다.
 
 +++
 
@@ -654,12 +654,9 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 
 **Microsoft® Windows**
 
-* 확인 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) Office 열기 대화 상자가 설치되어 모든 응용 프로그램에 대해 열려 있습니다.
+* 확인 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) Microsoft Office의 대화 상자가 설치되고 모든 응용 프로그램에 대해 열기 대화 상자가 취소됩니다.
 * PDF 생성기 사용자가 PDF 구성 UI에 추가되었는지 확인합니다.
-* 확인 [시스템 준비 도구](#SRT) 오류를 보고하지 않습니다.
 * PDF 생성기 사용자가 관리자 그룹의 구성원이고 [프로세스 수준 토큰 바꾸기](#grant-the-replace-a-process-level-token-privilege) 사용자에 대해 권한이 설정됩니다.
-* 다음을 확인합니다. `\Windows\SysWOW64\config\systemprofile\Deskop` 폴더가 있습니다. 폴더가 없으면 폴더를 만듭니다.
-* 전체 제어 권한 부여 `\Windows\SysWOW64\config\systemprofile`, `<crx-quickstart-home>\temp`, 및 `\Windows\Temp` 폴더를 PDF 생성기 사용자에게 추가합니다.
 * 사용자가 PDF 생성기 UI에 구성되어 있는지 확인하고 다음 작업을 수행하십시오.
    1. PDF 생성기 사용자를 사용하여 Microsoft® Windows에 로그인합니다.
    1. Microsoft® Office 또는 Open Office 응용 프로그램을 열고 모든 대화 상자를 취소합니다.
@@ -673,7 +670,6 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 
 * 확인 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 열려 있는 Office가 설치되어 있으면 모든 응용 프로그램에 대해 열기 대화 상자가 취소되고 Office 응용 프로그램이 성공적으로 실행됩니다.
 * 환경 변수 만들기 `OpenOffice_PATH` OpenOffice 설치는 [콘솔](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) 또는 dt(장치 트리) 프로필을 참조하십시오.
-* 32비트 Java™을 사용하여 AEM Forms Server를 시작합니다.
 * OpenOffice 설치에 문제가 있는 경우 [32비트 라이브러리](#extrarequirements) OpenOffice 설치에 필요한 를 사용할 수 있습니다.
 
 +++
@@ -709,7 +705,7 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 * 32비트 lib curl, libcrypto 및 libssl 라이브러리의 최신 버전이 시스템에 설치되어 있는지 확인하십시오. symlink도 만듭니다 `/usr/lib/libcurl.so` (또는 libcurl.a for AIX®), `/usr/lib/libcrypto.so` (또는 libcrypto.a for AIX®) 및 `/usr/lib/libssl.so` (또는 AIX®용 libssl.a)에서 각 라이브러리의 최신 버전(32비트)을 가리킵니다.
 
 * IBM® SSL 소켓 공급자에 대해 다음 단계를 수행하십시오.
-   1. 다음 위치에서 java.security 파일 복사 `<WAS_Installed_JAVA>\jre\lib\security` AEM Forms 서버에 있는 모든 위치에 연결할 수 있습니다. 기본 위치는 Default Location입니다. = `<WAS_Installed>\Appserver\java_1.7_64\jre\lib\security`.
+   1. 다음 위치에서 java.security 파일 복사 `<WAS_Installed_JAVA>\jre\lib\security` AEM Forms 서버에 있는 모든 위치에 연결할 수 있습니다. 기본 위치는 Default Location입니다. = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
    1. 복사된 위치에서 java.security 파일을 편집하고 JSSE2 팩토리가 있는 기본 SSL 소켓 팩토리를 변경합니다(WebSphere® 대신 JSSE2 팩토리를 사용).
 
@@ -737,7 +733,7 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 
 +++ PDFG(PDF 생성기) 사용자를 추가할 수 없습니다.
 
-* Windows에 Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86 및 Microsoft® Visual C++ 2013 x86(32비트) 재배포 가능 패키지를 설치했는지 확인합니다.
+* Windows에 Microsoft® Visual C++ 2012 x86 및 Microsoft® Visual C++ 2013 x86(32비트) 재배포 가능 패키지가 설치되어 있는지 확인합니다.
 
 +++
 
