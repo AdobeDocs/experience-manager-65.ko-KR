@@ -1,21 +1,14 @@
 ---
 title: AEM 6에서 노드 저장소 및 데이터 저장소 구성
-seo-title: Configuring node stores and data stores in AEM 6
 description: 노드 저장소 및 데이터 저장소를 구성하는 방법과 데이터 저장소 가비지 수집을 수행하는 방법을 알아봅니다.
-seo-description: Learn how to configure node stores and data stores and how to perform data store garbage collection.
-uuid: 1a58c0ba-1c32-4539-ad0d-0a27c8c4ff5e
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
-legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 9d8387934e2eab61191bd66c625a9fa52b686e37
+source-git-commit: 0c9d436d863d55f94e16f5c0f570251e2fb3d805
 workflow-type: tm+mt
-source-wordcount: '3471'
+source-wordcount: '3467'
 ht-degree: 1%
 
 ---
@@ -146,7 +139,7 @@ customBlobStore=B"false"
 
 AEM은 Amazon의 Simple Storage Service (S3)에 데이터를 저장하도록 구성할 수 있습니다. 이 템플릿은 를 사용합니다 `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` 구성에 대한 PID입니다.
 
-S3 데이터 저장소 기능을 활성화하려면 S3 데이터 저장소 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. 로 이동합니다. [Adobe 저장소](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) 및 기능 팩 1.10.x 버전(예: com.adobe.granite.oak.s3connector-1.10.0.zip)에서 최신 버전을 다운로드합니다. 또한 [AEM 6.5 릴리스 노트](/help/release-notes/release-notes.md) 페이지.
+S3 데이터 저장소 기능을 활성화하려면 S3 데이터 저장소 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. 로 이동합니다. [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) 및 기능 팩 1.10.x 버전(예: com.adobe.granite.oak.s3connector-1.10.0.zip)에서 최신 버전을 다운로드합니다. 또한 [AEM 6.5 릴리스 노트](/help/release-notes/release-notes.md) 페이지.
 
 >[!NOTE]
 >
@@ -382,7 +375,7 @@ S3를 사용하여 바인더리스 복제를 구성하려면 다음 단계를 �
 
 AEM은 Microsoft의 Azure 저장 공간 서비스에 데이터를 저장하도록 구성할 수 있습니다. 이 템플릿은 를 사용합니다 `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` 구성에 대한 PID입니다.
 
-Azure 데이터 저장소 기능을 사용하려면 Azure 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. 로 이동합니다. [Adobe 저장소](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) 및 기능 팩의 1.6.x 버전(예: com.adobe.granite.oak.azurebconnector-1.6.3.zip)에서 최신 버전을 다운로드합니다.
+Azure 데이터 저장소 기능을 사용하려면 Azure 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. 로 이동합니다. [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) 및 기능 팩의 1.6.x 버전(예: com.adobe.granite.oak.azurebconnector-1.6.3.zip)에서 최신 버전을 다운로드합니다.
 
 >[!NOTE]
 >

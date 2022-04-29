@@ -2,9 +2,9 @@
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 70280ec60e8bc4cc139a44c379adca7541856997
+source-git-commit: fe31483555cbecffe067f920b5ed6bbf82f1ae58
 workflow-type: tm+mt
-source-wordcount: '3329'
+source-wordcount: '3330'
 ht-degree: 16%
 
 ---
@@ -73,9 +73,9 @@ ht-degree: 16%
 * 파일을 업로드하고 대화 상자를 저장할 때 파일 업로드 위젯에 파일 이름이 표시되지 않습니다(NPR-37634).
 * 자산의 예약된 활성화(게시)가 해당 자산이 포함된 폴더를 이동하는 경우 예약된 시간에 트리거되지 않습니다(NPR-37621).
 * [플랫폼] 외부 링크 확인 대시보드에서 결과를 렌더링하지 못했습니다. [!DNL Adobe Experience Manager] WCM(NPR-37614).
-* Content fragment editor does not work correctly when capital case letters are used in tag names when editing tags in the editor (NPR-37601).
+* 편집기에서 태그를 편집할 때 태그 이름에 대문자 대/소문자를 사용하는 경우 컨텐츠 조각 편집기가 제대로 작동하지 않습니다(NPR-37601).
 * 클래식 사용자 인터페이스 편집기가 터치 사용자 인터페이스 비교 보기에서처럼 표시되지 않습니다(NPR-37588).
-* Intermittent 500 error is logged on adding an experience fragment to translation jobs (NPR-37587).
+* 번역 작업에 경험 조각을 추가할 때 간헐적인 500 오류가 기록됩니다(NPR-37587).
 * 작성자는 비활성화된 날짜 선택기에서 날짜 선택기 날짜를 선택하고 사용할 수 있습니다(NPR-37583).
 * [Foundation] 작성자가 터치 사용자 인터페이스의 구성 요소 대화 상자 구조에서 숫자 필드 리소스 유형에 몇 가지 십진수 값을 입력할 수 없습니다(NPR-37059).
 * 이전 서비스 팩을 설치할 때 libs 폴더의 경로가 삭제됩니다(NPR-36815).
@@ -169,9 +169,9 @@ The following accessibility enhancements are available in [!DNL Assets]:
 
 * 어셈블러는 예상대로 글꼴을 포함하지 않습니다(NPR-38056).
 
-* Unable to convert PDF to PDFA using workbench (NPR-37879).
+* Workbench를 사용하여 PDF을 PDFA로 변환할 수 없습니다(NPR-37879).
 
-* Issues with office documents while using the PDF Generator service after upgrading from AEM 6.5.7.0 Forms to AEM 6.5.10.0 Forms (NPR-37758).
+* AEM 6.5.7.0 Forms에서 AEM 6.5.10.0 Forms으로 업그레이드한 후 PDF 생성기 서비스를 사용하는 동안 Office 문서에 문제가 발생합니다(NPR-37758).
 
 **문서 보안**
 
@@ -208,11 +208,11 @@ The following accessibility enhancements are available in [!DNL Assets]:
 
 ## 6.5.12.0 설치 {#install}
 
-**Setup requirements and more information**
+**설치 요구 사항 및 추가 정보**
 
-* Experience Manager 6.5.12.0 requires Experience Manager 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
+* Experience Manager 6.5.12.0을 사용하려면 Experience Manager 6.5가 필요합니다. [업그레이드 설명서](/help/sites-deploying/upgrade.md) 자세한 지침
 * 서비스 팩은 Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 다운로드할 수 있습니다.
-* On a deployment with MongoDB and multiple instances, install Experience Manager 6.5.12.0 on one of the Author instances using the Package Manager.
+* MongoDB 및 여러 인스턴스가 포함된 배포에서 패키지 관리자를 사용하여 작성자 인스턴스 중 하나에 Experience Manager 6.5.12.0을 설치합니다.
 
 >[!NOTE]
 >
@@ -284,7 +284,7 @@ JEE의 Experience Manager Forms용 누적 설치 프로그램 설치 및 배포 
 
 ### UberJar {#uber-jar}
 
-Experience Manager 6.5.12.0용 UberJar는 [Maven 중앙 저장소](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
+Experience Manager 6.5.12.0용 UberJar는 [Maven 중앙 저장소](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
 
 Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/help/sites-developing/ht-projects-maven.md)을 참조하여 프로젝트 POM에 다음 종속성을 포함하십시오.
 
@@ -303,7 +303,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 
 ## 이제 사용되지 않는 기능 {#removed-deprecated-features}
 
-Below is a list of features and capabilities that are marked as deprecated with [!DNL Experience Manager] 6.5.7.0. Features are marked deprecated initially and later removed in a future release. 다른 옵션이 제공됩니다.
+다음은 사용 중단되는 것으로 표시된 기능 및 기능 목록입니다 [!DNL Experience Manager] 6.5.7.0. 기능은 처음에 더 이상 사용되지 않음으로 표시되고 이후 릴리스에서 이후에 제거됩니다. 다른 옵션이 제공됩니다.
 
 배포에서 기능 또는 기능을 사용하는지 검토합니다. 또한 대체 옵션을 사용하도록 구현을 변경할 계획입니다.
 
@@ -318,13 +318,13 @@ Below is a list of features and capabilities that are marked as deprecated with 
 
    * [AEM 6.5.12 Sites 핫픽스-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (SP12를 대체하지만 SP12 맨 위에 설치할 수 있음)
 
-   * [AEM Content Fragment with GraphQL Index Package 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
+   * [GraphQL 색인 패키지 1.0.3이 있는 AEM 컨텐츠 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
 
 * 로서의 [!DNL Microsoft Windows Server 2019] 을 지원하지 않음 [!DNL MySQL 5.7] 및 [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] 에 대한 턴키 설치를 지원하지 않습니다. [!DNL AEM Forms 6.5.10.0].
 
-* If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.10.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. 문제를 해결하려면 인스턴스를 다시 시작합니다.
+* 를 업그레이드하는 경우 [!DNL Experience Manager] 인스턴스(6.5에서 6.5.10.0 버전)를 `RRD4JReporter` 의 예외 `error.log` 파일. 문제를 해결하려면 인스턴스를 다시 시작합니다.
 
-* If you install [!DNL Experience Manager] 6.5 Service Pack 10 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
+* 설치하는 경우 [!DNL Experience Manager] 6.5 서비스 팩 10 또는 이전 서비스 팩 [!DNL Experience Manager] 6.5, 자산 사용자 지정 워크플로우 모델의 런타임 사본(에서 생성) `/var/workflow/models/dam`)이 삭제됩니다.
 런타임 복사본을 검색하려면 Adobe에서 HTTP API를 사용하여 사용자 지정 워크플로우 모델의 디자인 타임 사본을 해당 런타임 복사와 동기화하는 것이 좋습니다.
    `<designModelPath>/jcr:content.generate.json`.
 

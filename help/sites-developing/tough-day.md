@@ -1,14 +1,12 @@
 ---
 title: Tough Day
-seo-title: Tough Day
 description: Tough Day 테스트는 모든 작업이 동시에 진행되는 최악의 상황에서 약 1000명의 작성자가 매일 로드하는 것을 시뮬레이션합니다.
-seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
+source-git-commit: ca6d41740dbb24dbba7cf7691c51435cc40d3ead
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1849'
 ht-degree: 2%
 
 ---
@@ -143,7 +141,7 @@ java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m 
 
 사용자 지정은 다음 두 가지 방법으로 수행할 수 있습니다. 명령줄 매개 변수 또는 yaml 구성 파일 **구성 파일은 일반적으로 큰 사용자 지정 세트에 사용되며 Tough Day 2 기본 매개 변수를 무시합니다. 명령줄 매개 변수는 구성 파일과 기본 매개 변수를 모두 덮어씁니다.**
 
-테스트 구성을 저장하는 유일한 방법은 yaml 형식으로 복사하는 것입니다. 자세한 내용은 다음을 참조하십시오 [touday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) 구성 및 기본 구성 예는 아래 섹션에 있습니다.
+테스트 구성을 저장하는 유일한 방법은 yaml 형식으로 복사하는 것입니다.
 
 ### 새 테스트 추가 {#adding-a-new-test}
 
@@ -347,22 +345,22 @@ Tough Day 2는 테스트 지표와 로그를 모두 출력합니다. 자세한 �
 
 ### 테스트 지표 {#test-metrics}
 
-Tough Day 2 는 현재 사용자가 평가할 수 있는 9개의 테스트 지표를 보고합니다. 을 사용하는 지표 ***** 기호는 성공적인 실행 후에만 보고됩니다.
+Tough Day 2 는 현재 사용자가 평가할 수 있는 9개의 테스트 지표를 보고합니다. 을 사용하는 지표 **&#42;** 기호는 성공적인 실행 후에만 보고됩니다.
 
 | **이름** | **설명** |
 |---|---|
 | Timestamp | 마지막으로 완료된 테스트 실행의 타임스탬프입니다. |
 | 전달됨 | 성공한 실행 수입니다. |
 | 실패 | 실패한 실행 수입니다. |
-| 최소* | 테스트 실행 시간이 가장 짧습니다. |
-| 최대* | 테스트 실행 최대 기간입니다. |
-| 중간* | 모든 테스트 실행의 평균 기간을 계산했습니다. |
-| 평균* | 모든 테스트 실행의 계산된 평균 기간입니다. |
-| StdDev* | 표준 편차. |
-| 90p* | 90번째 백분위수. |
-| 99p* | 99번째 백분위수. |
-| 99.9p* | 99.9백분위수. |
-| 실제 처리량* | 경과된 실행 시간으로 나눈 실행 수입니다. |
+| 최소&#42; | 테스트 실행 시간이 가장 짧습니다. |
+| Max&#42; | 테스트 실행 최대 기간입니다. |
+| 중간&#42; | 모든 테스트 실행의 평균 기간을 계산했습니다. |
+| 평균&#42; | 모든 테스트 실행의 계산된 평균 기간입니다. |
+| StdDev&#42; | 표준 편차. |
+| 90p&#42; | 90번째 백분위수. |
+| 99p&#42; | 99번째 백분위수. |
+| 99.9p&#42; | 99.9백분위수. |
+| 실제 처리량&#42; | 경과된 실행 시간으로 나눈 실행 수입니다. |
 
 이러한 지표는 와 함께 추가할 수 있는 게시자의 도움을 받아 작성됩니다 `add` 매개 변수(테스트 추가와 유사) 현재, 다음 두 가지 옵션이 있습니다.
 
