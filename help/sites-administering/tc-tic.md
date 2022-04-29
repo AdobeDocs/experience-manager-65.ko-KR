@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: cadf2e240327ef52ef57f8fb2e911f36fd003852
+source-git-commit: e5bdf1218d3b747e2317481a67ae74e7855cda0b
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 1%
+source-wordcount: '1552'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 * 번역 통합 프레임워크 구성을 만듭니다.
 * 클라우드 구성을 페이지와 연결합니다.
 
-AEM의 컨텐츠 번역 기능에 대한 개요를 알려면 [다국어 사이트에 대한 컨텐츠 번역](/help/sites-administering/translation.md)을 참조하십시오.
+AEM의 컨텐츠 번역 기능에 대한 개요는 다음을 참조하십시오 [다국어 사이트의 컨텐츠 번역](/help/sites-administering/translation.md).
 
 ## 번역 서비스 공급자에 연결 {#connecting-to-a-translation-service-provider}
 
@@ -40,8 +40,8 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [린고텍](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [RWS](https://partners.adobe.com/exchangeprogram/experiencecloud/exchange.details.108277.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
-* [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [시스트란](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 * [알틀랑](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft(Microsoft Translator가 AEM에 사전 설치되어 있음)
@@ -53,11 +53,10 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 >
 >* [AEM Human Translation](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [AEM 기계 번역](https://www.adobe.com/go/aem-machine-translation-connectors)
-
 >
 
 
-커넥터 패키지를 설치한 후 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스를 사용하여 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft Translator 커넥터에 대한 클라우드 구성 추가에 대한 자세한 내용은 [Microsoft Translator와 통합](/help/sites-administering/tc-msconf.md)을 참조하십시오.
+커넥터 패키지를 설치한 후 커넥터에 대한 클라우드 구성을 만들 수 있습니다. 일반적으로 번역 서비스를 사용하여 인증하기 위해 자격 증명을 제공해야 합니다. Microsoft Translator 커넥터에 대한 클라우드 구성 추가에 대한 자세한 내용은 [Microsoft Translator와 통합](/help/sites-administering/tc-msconf.md).
 
 필요한 경우 동일한 커넥터에 대한 여러 클라우드 구성을 만들 수 있습니다. 예를 들어, 동일한 공급업체와 함께 있는 각 계정 또는 프로젝트에 대해 하나의 구성을 만듭니다.
 
@@ -75,9 +74,9 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 
 웹 사이트의 여러 섹션에 다양한 번역 요구 사항이 있는 경우 그에 따라 여러 프레임워크 구성을 만드십시오. 예를 들어 다국어 웹 사이트에는 영어, 스페인어 및 일본어 복사본이 포함됩니다. 사이트 소유자는 스페인어 및 일본어 번역에 두 개의 서로 다른 번역 서비스 공급자를 사용합니다. 따라서 프레임워크의 두 가지 구성이 구성됩니다. 각 구성에서는 다른 번역 서비스 공급자를 사용합니다.
 
-번역 통합 프레임워크를 구성한 후에는 [을 사용하는 페이지](/help/sites-administering/tc-prep.md)와 연결할 수 있습니다.
+번역 통합 프레임워크를 구성한 후 다음을 수행할 수 있습니다 [페이지와 연결](/help/sites-administering/tc-prep.md) 그걸 사용해요
 
-**참고:** AEM의 컨텐츠 번역 기능에 대한 개요를 알려면 다국어  [사이트에 대한 컨텐츠 번역](/help/sites-administering/translation.md)을 참조하십시오.
+**참고:** AEM의 컨텐츠 번역 기능에 대한 개요는 다음을 참조하십시오 [다국어 사이트의 컨텐츠 번역](/help/sites-administering/translation.md).
 
 프레임워크의 단일 구성은 페이지 컨텐츠, 커뮤니티 컨텐츠 및 자산을 변환하는 방법을 제어합니다.
 ![chlimage_1-386](assets/translation-config-65.jpg)
@@ -131,17 +130,17 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 
 ### 커뮤니티 구성 속성 {#communities-configuration-properties}
 
-커뮤니티 속성은 사용자가 생성한 컨텐츠를 변환하는 방법을 제어합니다. 사용자가 생성한 컨텐츠를 번역하면 항상 기계 번역이 사용됩니다. 자세한 내용은 [사용자 생성 컨텐츠 번역](/help/communities/translate-ugc.md)을 참조하십시오.
+커뮤니티 속성은 사용자가 생성한 컨텐츠를 변환하는 방법을 제어합니다. 사용자가 생성한 컨텐츠를 번역하면 항상 기계 번역이 사용됩니다. 자세한 내용은 [사용자가 생성한 컨텐츠 번역](/help/communities/translate-ugc.md).
 
 | 속성 | 설명 |
 |---|---|
 | 번역 공급자 | 번역을 수행할 번역 공급자를 선택합니다. 클라우드 구성이 생성된 공급자가 목록에 나타납니다. |
 | 컨텐츠 카테고리 | 번역하고 있는 컨텐츠를 설명하는 카테고리입니다. 카테고리는 컨텐츠를 번역할 때 용어 및 표현식의 선택에 영향을 줄 수 있습니다. |
-| 글로벌 공유 저장소로 사용할 로케일 선택 | (선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화에 나타납니다. 규칙에 따라 웹 사이트의 [기본 언어](/help/communities/sites-console.md#translation)에 대한 로케일을 선택합니다. 공통 저장소 없음을 선택하면 전역 번역이 비활성화됩니다. 기본적으로 글로벌 번역은 비활성화됩니다. |
+| 글로벌 공유 저장소로 사용할 로케일 선택 | (선택 사항) UGC를 저장할 로케일을 선택하면 모든 언어 사본의 게시물이 하나의 글로벌 대화에 나타납니다. 규칙에 따라 [기본 언어](/help/communities/sites-console.md#translation) 참조하십시오. 공통 저장소 없음을 선택하면 전역 번역이 비활성화됩니다. 기본적으로 글로벌 번역은 비활성화됩니다. |
 
 ### 자산 구성 속성 {#assets-configuration-properties}
 
-자산 속성은 자산을 구성하는 방법을 제어합니다. 자산 번역에 대한 자세한 내용은 [Assets](/help/assets/translation-projects.md)에 대한 언어 사본 만들기를 참조하십시오.
+자산 속성은 자산을 구성하는 방법을 제어합니다. 자산 번역에 대한 자세한 내용은 [자산에 대한 언어 사본 만들기](/help/assets/translation-projects.md).
 
 <table>
  <tbody>
@@ -207,7 +206,7 @@ AEM을 번역 서비스 공급자에 연결하는 클라우드 구성을 만듭�
 
 필요한 경우 하위 페이지에서 연결을 재정의할 수 있습니다. 예를 들어, 웹 사이트의 컨텐츠는 대부분 의류에 관한 것입니다. 하지만, 페이지의 한 분기에서 회사를 설명합니다. 사이트의 루트 페이지는 Clothing 카테고리를 사용하여 기계 번역을 지정하는 Translation Integration Framework와 연결됩니다. 회사를 설명하는 분기는 일반 범주를 사용하여 기계 번역을 수행하는 프레임워크를 사용합니다.
 
-또한 페이지의 모든 커뮤니티 [SCF 구성 요소](/help/communities/scf.md)에 대해 사용자가 생성한 컨텐츠(UGC)에는 사용자가 컨텐츠를 번역하는 기능이 포함됩니다. 자세한 내용은 [사용자 생성 컨텐츠 번역](/help/communities/translate-ugc.md)을 참조하십시오.
+또한, 모든 커뮤니티에 대해 [SCF 구성 요소](/help/communities/scf.md) 페이지에서 사용자가 생성한 컨텐츠(UGC)에는 사용자가 컨텐츠를 번역하는 기능이 포함됩니다. 자세한 내용은 [사용자 생성 컨텐츠 번역](/help/communities/translate-ugc.md).
 
 ### 페이지를 번역 공급자와 연결 {#associating-a-page-with-a-translation-provider}
 
