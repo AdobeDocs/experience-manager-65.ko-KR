@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 0c9d436d863d55f94e16f5c0f570251e2fb3d805
+source-git-commit: 6257b56c61ae14889d9ecefed5030e123a415fd7
 workflow-type: tm+mt
-source-wordcount: '3467'
+source-wordcount: '3455'
 ht-degree: 1%
 
 ---
@@ -199,7 +199,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
    >
    >위에 표시된 파일 이름은 일러스트레이션용으로만 사용됩니다.
 
-1. 에서 최신 버전의 1.8.x 기능 팩을 다운로드합니다 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
+1. 에서 최신 버전의 1.10.x 기능 팩을 다운로드합니다 [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. 컨텐츠를 별도의 폴더로 압축 해제한 다음 `jcr_root/libs/system/install/15`.
 1. jar 파일을에 복사합니다. **&lt;aem-install>**/crx-quickstart/install/15 를 클릭합니다.
 1. AEM을 시작하고 커넥터 기능을 확인합니다.
