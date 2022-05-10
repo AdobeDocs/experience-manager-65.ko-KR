@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: e3743b7ecbd8266abfaee36dcee94bcd2b260cac
+source-git-commit: fcbfd8b378282d908b68c61ab235e9b80fd6644c
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1751'
 ht-degree: 9%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 9%
 
 [!DNL Experience Manager Assets] 는 다양한 파일 형식을 지원하며 각 기능은 다양한 MIME 유형에 대한 다양한 지원을 제공합니다. 통합하려면 [!DNL Assets] 다른 표준 준수 DAM(Digital Asset Management) 솔루션 및 데스크탑 소프트웨어와 함께 Adobe의 [!DNL Extensible Metadata Platform] (XMP).
 
-지원 수준을 이해하려면 범례를 사용합니다.
+범례를 사용하여 지원 수준을 이해할 수 있습니다.
 
 | 지원 수준 | 설명 |
 | :-----------: | ------------------------------ |
 | ✓ | 지원됨 |
-| * | 추가 기능 지원 |
-| - | 해당 사항 없음 |
+| &#42; | 추가 기능 지원 |
+| − | 해당되지 않음 |
 
 ## 에서 지원되는 래스터 이미지 형식 [!DNL Experience Manager] {#supported-raster-image-formats}
 
@@ -121,23 +121,23 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 
 |  | 저장 용량 | 메타데이터 관리 | 메타데이터 추출 | 축소판 생성 | FFmpeg 코드 변환 |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ | - | - | * |
-| MIDI | ✓ | ✓ | - | - | * |
-| 3GP | ✓ | ✓ | - | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ | - | - | * |
-| OGA | ✓ | ✓ | - | - | * |
-| OGG | ✓ | ✓ | - | - | * |
-| RA | ✓ | ✓ | - | - | * |
-| WAV | ✓ | ✓ | - | - | * |
-| WMA | ✓ | ✓ | - | - | * |
-| DVI | ✓ | ✓ | - | * | * |
-| FLV | ✓ | ✓ | - | * | * |
-| M4V | ✓ | ✓ | - | * | * |
-| MPEG | ✓ | ✓ | - | * | * |
-| OGV | ✓ | ✓ | - | * | * |
-| 이동 | ✓ | ✓ | - | * | * |
-| WMV | ✓ | ✓ | - | * | * |
+| AAC | ✓ | ✓ | - | - | &#42; |
+| MIDI | ✓ | ✓ | - | - | &#42; |
+| 3GP | ✓ | ✓ | - | - | &#42; |
+| MP3 | ✓ | ✓ | ✓ | - | &#42; |
+| MPG | ✓ | ✓ | - | - | &#42; |
+| OGA | ✓ | ✓ | - | - | &#42; |
+| OGG | ✓ | ✓ | - | - | &#42; |
+| RA | ✓ | ✓ | - | - | &#42; |
+| WAV | ✓ | ✓ | - | - | &#42; |
+| WMA | ✓ | ✓ | - | - | &#42; |
+| DVI | ✓ | ✓ | - | &#42; | &#42; |
+| FLV | ✓ | ✓ | - | &#42; | &#42; |
+| M4V | ✓ | ✓ | - | &#42; | &#42; |
+| MPEG | ✓ | ✓ | - | &#42; | &#42; |
+| OGV | ✓ | ✓ | - | &#42; | &#42; |
+| 이동 | ✓ | ✓ | - | &#42; | &#42; |
+| WMV | ✓ | ✓ | - | &#42; | &#42; |
 | SWF | ✓ | ✓ | - | - | - |
 
 ## 지원되는 아카이브 형식 {#supported-archive-formats}
@@ -256,7 +256,11 @@ Adobe 이미징 코드 변환 라이브러리는 인코딩, 코드 변환, 리�
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (아래 참고 참조) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>보안 PDF의 경우 업로드만 지원됩니다.
 
 위의 기능 외에 다음 사항을 고려하십시오.
 
