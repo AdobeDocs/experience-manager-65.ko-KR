@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: f2cfe62c561e772a10ede4f76314a5904d6d64ff
+source-git-commit: 5c29ac6b87b818e168a746827624b65c6ba3b2f7
 workflow-type: tm+mt
-source-wordcount: '6048'
+source-wordcount: '6049'
 ht-degree: 4%
 
 ---
@@ -134,7 +134,7 @@ Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더�
    자산이 활성화되면 모든 업데이트가 즉시 S7 Delivery에 실시간으로 게시됩니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-1. 기본적으로 Experience Manager 작성자는 Dynamic Media 컨텐츠를 미리 볼 수 없습니다. 따라서 Dynamic Media 컨텐츠를 게시하기 전에 안전하게 미리 보려면 *허용 목록에 추가하다* Dynamic Media에 연결할 Experience Manager 작성자 인스턴스. 또한 사용자에게 컨텐츠를 안전하게 미리 볼 수 있는 액세스 권한을 제공하려는 경우 다음을 수행할 수 있습니다 *허용 목록에 추가하다* 추가 IP 주소.
+1. 기본적으로 Experience Manager 작성자는 Dynamic Media 컨텐츠를 미리 볼 수 없습니다. 따라서 Dynamic Media 컨텐츠가 게시되기 전에 안전하게 미리 보려면 Experience Manager 작성자 인스턴스허용 목록에 추가하다를 게시하여 Dynamic Media에 연결해야 합니다. 또한 사용자에게 컨텐츠를 안전하게 미리 볼 수 있는 액세스 권한을 제공하려는 경우 추가 IP 주소를 검색할 허용 목록에 추가하다 수 있습니다. <!-- CQDOC-19254 UNHIDE ON MAY 26, 2022 To securely preview Dynamic Media content before it gets published, Experience Manager Author uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can allowlist more IPs to provide users access to securely preview content. -->
 Experience Manager에서 이 작업을 설정하려면 다음을 참조하십시오 [이미지 서버에 대한 Dynamic Media 게시 설정 구성 - 보안 탭](/help/assets/dm-publish-settings.md#security-tab).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
@@ -304,7 +304,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
    * 를 두 번 클릭합니다. **[!UICONTROL 활성화됨]** 필드. 기본적으로 모든 자산 MIME 유형이 활성화되어 있습니다(다음으로 설정). **[!UICONTROL true]**)으로 그룹화됩니다. 즉, 자산이 Dynamic Media에 동기화되어 처리됩니다. 이 자산 MIME 유형을 처리하지 않도록 하려면 이 설정을 다음으로 변경하십시오 **[!UICONTROL false]**.
 
-   * 두 번 탭 **[!UICONTROL jobParam]** 연결된 텍스트 필드를 엽니다. 자세한 내용은 [지원되는 Mime 유형](/help/assets/assets-formats.md#supported-mime-types) 허용되는 처리 매개 변수 값 목록의 경우 주어진 mime 유형에 사용할 수 있습니다.
+   * 두 번 탭 **[!UICONTROL jobParam]** 연결된 텍스트 필드를 엽니다. 자세한 내용은 [지원되는 Mime 유형](/help/assets/assets-formats.md#supported-mime-types) 지정된 mime 유형에 사용할 수 있는 허용되는 처리 매개 변수 값 목록입니다.
 
 1. 다음 중 하나를 수행하십시오.
 
@@ -315,7 +315,7 @@ Dynamic Media에서 처리할 자산 유형을 정의하고 고급 자산 처리
 
 #### 지원되지 않는 형식에 대한 MIME 유형 추가 {#adding-mime-types-for-unsupported-formats}
 
-Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. 이전에 MIME 유형을 이동하여 CRXDE Lite에 추가하는 새 노드가 Experience Manager에서 삭제되지 않도록 하십시오 `image_`. 또한 이 활성화된 값이 **[!UICONTROL false]**.
+Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 지정 MIME 유형을 추가할 수 있습니다. 이전에 MIME 유형을 이동하여 CRXDE Lite에 추가한 새 노드를 Experience Manager이 삭제하지 않는지 확인합니다 `image_`. 또한 이 활성화된 값이 **[!UICONTROL false]**.
 
 **지원되지 않는 형식에 대한 MIME 유형을 추가하려면 다음을 수행합니다.**
 
@@ -395,7 +395,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
    을(를) 선택할 수 있습니다 **[!UICONTROL 코드 보기]** 양식 선택과 함께 정규 표현식 값 작성을 보려면 확인란을 선택합니다. 양식 보기에서 어떤 이유로든 사용자를 제한하는 경우 이름 지정 규칙의 요소를 정의하는 데 도움이 되도록 이러한 값을 입력하거나 변경할 수 있습니다. 값을 양식 보기에서 구문 분석할 수 없는 경우 양식 필드는 비활성 상태가 됩니다.
 
    >[!NOTE]
-   비활성화된 양식 필드는 정규 표현식이 올바른지 확인하지 않습니다. 결과 라인 뒤에 각 요소에 대해 작성하는 정규 표현식의 결과가 표시됩니다. 전체 정규 표현식은 페이지 하단에 표시됩니다.
+   비활성화된 양식 필드는 정규 표현식이 올바른지 확인하지 않습니다. 결과 라인 뒤에 각 요소에 대해 빌드하는 정규 표현식의 결과가 표시됩니다. 전체 정규 표현식은 페이지 하단에 표시됩니다.
 
 1. 필요에 따라 각 요소를 확장하고 사용할 이름 지정 규칙을 입력합니다.
 1. 필요에 따라 다음 중 하나를 수행합니다.
@@ -409,8 +409,6 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
    * 선택 **[!UICONTROL 저장]** 기존 사전 설정을 편집하는 경우
 
 ##### 배치 집합 사전 설정 만들기
-
-
 
 Dynamic Media은 일괄처리 집합 사전 설정을 사용하여 뷰어에 표시할 이미지 세트(대체 이미지, 색상 옵션, 360spin)로 자산을 구성합니다. 일괄처리 집합 사전 설정은 Dynamic Media의 자산 업로드 프로세스와 함께 자동으로 실행됩니다.
 
@@ -637,7 +635,7 @@ Dynamic Media이 아닌 배포에서는 *모두* Experience Manager 작성 환�
 
 이미징, 비디오 또는 둘 다에 Dynamic Media을 사용하는 경우, Adobe이 제공하는 기본 필터를 그대로 사용할 수 있습니다. 다음 필터는 기본적으로 활성화되어 있습니다.
 
-|  | 필터 | MIME 유형 | 표현물 |
+|  | 필터 | MIME 유형 | 렌디션 |
 | --- | --- | --- | --- |
 | Dynamic Media 이미지 제공 | 필터 이미지<br>필터 세트 | 다음으로 시작 **image/**<br>&#x200B;다음 포함 **애플리케이션/** 다음으로 끝남 **설정**. | 곧바로 사용할 수 있는 &quot;필터 이미지&quot;(대화형 이미지를 포함하여 단일 이미지 자산에 적용) 및 &quot;필터 세트&quot;(스핀 세트, 이미지 세트, 혼합 미디어 세트 및 회전 메뉴 세트에 적용)는 다음과 같습니다.<br>・ 원본 이미지 및 정적 이미지 표현물 복제에서 제외합니다. |
 | Dynamic Media 비디오 제공 | 필터 비디오 | 다음으로 시작 **video/** | 즉시 사용 가능한 &quot;필터 비디오&quot;는 다음과 같습니다.<br>・ 원본 비디오 및 정적 축소판 그림 표현물 복제에서 제외합니다. |
