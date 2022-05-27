@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 안내서
 breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
-source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
+source-git-commit: 66958dc5328177d27dbdddf0c8983096e38f76b6
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 74%
+source-wordcount: '672'
+ht-degree: 73%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 74%
    + [Dynamic Media 비디오 프로필](video-profiles.md)
    + [Dynamic Media 이미지 프로필](image-profiles.md)
    + [스마트 이미징](imaging-faq.md)
+   + [클라이언트 측 장치 픽셀 비율을 갖는 스마트 이미징](client-side-dpr.md)
    + [비디오](s7-video.md)
    + [컨텐츠의 HTTP2 전달](http2.md)
    + [Dynamic Media 에셋 전송](delivering-dynamic-media-assets.md)
