@@ -3,9 +3,9 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: a45d66dc2226dbe2879aa61d95cc5379dce882bb
+source-git-commit: f78d12d6fa1daa1c1b3afdfe22ecb8c183e8e1d0
 workflow-type: tm+mt
-source-wordcount: '3774'
+source-wordcount: '3737'
 ht-degree: 14%
 
 ---
@@ -92,9 +92,9 @@ ht-degree: 14%
 
 ## [!DNL Forms] {#forms-65130}
 
-* 미리 채우기 서비스를 사용하여 조각을 포함하는 적응형 양식을 작성하고 조각에 리치 텍스트를 지원하는 텍스트 상자가 포함된 경우 양식이 제출되지 않으며 다음 오류가 발생합니다.
+<!-- * When you use the prefill service to fill an adaptive form that contains a fragment and the fragment contains a Text box that supports rich text, the form fails to submit, and the following error occurs:
 
-   `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542)
+  `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542) -->
 
 * 라디오 단추, 확인란 및 파일 업로드 구성 요소가 독일어 언어로 올바르게 번역되지 않습니다. (NPR-38527)
 * PDF417 바코드 인코딩에서 생성한 [!DNL Experience Manager] 라디오 단추 그룹에 대한 Forms이 잘못되었습니다. (NPR-38525)
