@@ -3,9 +3,9 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: db94e464b130c6ca223314c3c5ffb8893a92a142
+source-git-commit: a45d66dc2226dbe2879aa61d95cc5379dce882bb
 workflow-type: tm+mt
-source-wordcount: '3752'
+source-wordcount: '3774'
 ht-degree: 14%
 
 ---
@@ -371,6 +371,7 @@ ht-degree: 14%
 1. 를 설치했는지 확인합니다. [!DNL Experience Manager] 서비스 팩.
 1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.
 1. [AEM Forms 추가 기능 패키지 설치](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)에 설명된 대로 양식 추가 기능 패키지를 설치합니다.
+1. Experience Manager 6.5 Forms에서 문자를 사용하는 경우 [최신 AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
 
 ### 설치 [!DNL Experience Manager] JEE의 Forms {#install-aem-forms-jee-installer}
 
