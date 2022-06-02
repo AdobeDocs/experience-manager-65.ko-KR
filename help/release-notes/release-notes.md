@@ -3,10 +3,10 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6c9e8f1e62fe1a193cb9938e5f789e1e08b8339d
+source-git-commit: db94e464b130c6ca223314c3c5ffb8893a92a142
 workflow-type: tm+mt
-source-wordcount: '3546'
-ht-degree: 15%
+source-wordcount: '3752'
+ht-degree: 14%
 
 ---
 
@@ -24,6 +24,22 @@ ht-degree: 15%
 ## 에 포함된 사항 [!DNL Experience Manager] 6.5.13.0 {#what-is-included-in-aem}
 
 [!DNL Experience Manager] 6.5.13.0에는 2019년 4월에 6.5의 초기 가용성 이후 릴리스된 새로운 기능, 주요 고객이 요청한 향상된 기능 및 성능, 안정성, 보안 개선 사항이 포함됩니다. [이 서비스 팩 설치](#install) on [!DNL Experience Manager] 6.5.
+
+에 도입된 주요 기능 및 개선 사항 [!DNL Adobe Experience Manager] 6.5.13.0:
+
+* 적응형 양식에서 보이지 않는 CAPTCHA를 사용합니다. 이제 보이지 않는 CAPTCHA를 사용하여 의심스러운 활동의 경우에만 CAPTCHA 문제를 표시할 수 있습니다. 의심스러운 활동이 없으면 CAPTCHA 문제가 표시되지 않습니다. Adobe Campaign은 확인란 요구 사항 없이 사람 양식을 완성했는지 평가하고 사용자 지정 노력을 줄이고 최종 사용자 경험을 개선하는 데 도움이 됩니다. (NPR-38500)
+
+* REST 끝점에 대한 양식 데이터 모델 사후 처리에서 응답 헤더를 가져오도록 지원이 추가되었습니다. (NPR-38275)
+
+* 이제 적응형 양식 번역 파일을 생성할 때 생성된 XLIFF 파일의 동일한 텍스트 시퀀스는 해당 적응형 양식의 구성 요소 시퀀스와 동일합니다. (NPR-37700)
+
+* 적응형 양식을 현지화하고 기본 언어 텍스트를 변경하는 경우에도 다른 모든 언어에 대해 전체 번역이 누락됩니다. 이 문제는에서 수정되었습니다. [!DNL Experience Manager] 6.5.13.0. (NPR-37189)
+
+* Forms의 접근성 개선:
+
+   * 계속적이고 연결된 엔티티로 테이블의 머리글과 본문을 인식할 수 있도록 화면 판독기에 대한 지원이 추가되었습니다. 화면 판독기가 테이블을 제대로 탐색하는 데 도움이 됩니다. (NPR-37139)
+   * 대화 상자가 열릴 때까지 HTML 작업 공간 탐색을 중지하도록 화면 판독기에 대한 지원을 추가했습니다. (NPR-37134)
+   * Forms 디자이너에서 하이퍼링크의 화면 Reader 텍스트를 지정하는 기능이 추가되었습니다.(NPR-36221)
 
 다음 버그 수정, 주요 기능 및 개선 사항이 [!DNL Experience Manager] 6.5.13.0:
 
@@ -120,20 +136,6 @@ ht-degree: 15%
 >
 >* [!DNL Experience Manager Forms] 는 예약된 후 1주일 후에 추가 기능 패키지를 출시합니다 [!DNL Experience Manager] 서비스 팩 릴리스 날짜입니다.
 
-
-<!-- **Adaptive Forms**
-
-**Form Data Model**
-
-**Interactive Communication**
-
-**Document Services**
-
-**Document Security**
-
-**Foundation JEE**
-
-**Workflow** -->
 
 ## Granite {#granite-6513}
 

@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3788'
 ht-degree: 5%
 
 ---
@@ -681,9 +681,12 @@ ht-degree: 5%
          + [환경 설정 노드를 프로그래밍 방식으로 관리](developing/programmatically-preferences-nodes.md)
          + [정책으로 문서 보호](developing/protecting-documents-policies.md)
          + [웹 서비스 API를 사용하여 DDX 문서의 유효성 검사](developing/validate-ddx-document-using-web.md)
-      + 이전 설명서 {#legacy-documentation}
-         + [JEE Workbench의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 작성](developing/building-xml.md)
-         + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](developing/compressing-decompressing-custom-dsc.md)
-         + [JEE 서버 클러스터에서 AEM Forms 구성 및 문제 해결](developing/configure-server-cluster.md)
-         + [동적 PDF forms에서 해시 생성 및 작업](developing/hashing-forms.md)
-         + [WS-Security 헤더를 사용하여 자격 증명 전달](developing/passing-credentials.md)
++ 문제 해결 {#troubleshooting}
+   + [특정 버전의 Oracle JDK에서 일부 양식 기능을 사용할 수 없습니다](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
++ 이전 설명서 {#legacy-documentation}
+   + [JEE Workbench의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 작성](developing/building-xml.md)
+   + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](developing/compressing-decompressing-custom-dsc.md)
+   + [JEE 서버 클러스터에서 AEM Forms 구성 및 문제 해결](developing/configure-server-cluster.md)
+   + [동적 PDF forms에서 해시 생성 및 작업](developing/hashing-forms.md)
+   + [WS-Security 헤더를 사용하여 자격 증명 전달](developing/passing-credentials.md)
+

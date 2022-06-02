@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 73d5b894dfa1bbb3ae3f2973cc4f9db1ace90ef8
+source-git-commit: dab643ffd64217018bf2f5544ae3c417963cea82
 workflow-type: tm+mt
-source-wordcount: '3515'
+source-wordcount: '3533'
 ht-degree: 1%
 
 ---
@@ -419,8 +419,12 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택하는 동안 다음 
    <td>8.5 </td>
   </tr>
   <tr>
-   <td>Microsoft Sharepoint</td>
-   <td>2016년<br /> </td>
+   <td>Microsoft Sharepoint </td>
+   <td>2016(사용 중지)<br /> </td>
+  </tr>
+  <tr>
+   <td>Microsoft Sharepoint </td>
+   <td>2019년<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -686,7 +690,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 > - Forms 포털은 Internet Explorer 11에서 접근성을 위해 JAWS 14.0 화면 판독기 소프트웨어를 지원합니다.
 
 
-#### Mobile 클라이언트 {#mobile-clients}
+#### 모바일 클라이언트 {#mobile-clients}
 
 <table>
  <tbody>
@@ -720,7 +724,7 @@ AEM Forms의 다음 하위 시스템은 [508년](https://www.section508.gov/) �
 
 ### AEM Forms 앱 {#aem-forms-workspace-app}
 
-#### Mobile 장치 지원 {#mobile-device-support}
+#### 모바일 장치 지원 {#mobile-device-support}
 
 AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 
@@ -755,6 +759,10 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 타사 패치에 대한 추가 정보는 Adobe 엔터프라이즈 지원 사이트에서 제품과 관련된 기술 자료를 검색하여 찾을 수도 있습니다.
 
 ## 플랫폼 업데이트 {#platform-updates}
+
+다음 플랫폼은 2022년 6월 2일에 AEM Forms 6.5.13.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
+
+- Microsoft SharePoint 2016
 
 다음 플랫폼은 2022년 3월 3일에 AEM Forms 6.5.12.0 릴리스에서 더 이상 사용되지 않는 것으로 표시됩니다.
 
