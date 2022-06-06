@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Managing User Guide
 description: '주요 리소스와 AEM 6.5 사용 안내서의 포괄적인 컬렉션을 통해 AEM 프로젝트를 성공적으로 관리하는 방법을 알아봅니다. '
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '368'
 ht-degree: 86%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 ## 주요 AEM 문서
 
-* [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
+* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
 * [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)

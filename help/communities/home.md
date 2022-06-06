@@ -4,9 +4,9 @@ seo-title: Adobe Experience Manager 6.5 Communities Guide
 description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다. Communities 배포, 관리, 개발 및 작성 방법을 설명하는 안내서를 찾아봅니다.
 seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 88%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 88%
 
 ## 주요 AEM 문서
 
-* [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
+* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
 * [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)

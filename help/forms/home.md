@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Forms Guide
 description: 이 AEM 6.5 안내서를 사용하여 디지털 양식을 작성, 관리, 게시 및 업데이트할 수 있습니다. 설치, 업그레이드 및 구성에 대한 도움말을 찾고 적응형 양식 작성에 대해 알아봅니다.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '379'
 ht-degree: 83%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 83%
 
 ## 주요 AEM 문서
 
-* [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
+* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
 * [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)

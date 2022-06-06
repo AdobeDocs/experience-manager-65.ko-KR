@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Developing User Guide
 description: AEM 인스턴스를 빌드하는 방법을 알아봅니다. 플랫폼 및 구성 요소에 대해 자세히 알아보고 개발 도구 및 개인화에 대한 정보를 찾습니다.
 seo-description: Covers how to build out your AEM instance.
 exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 90%
 
 ---
@@ -17,7 +17,7 @@ AEM 인스턴스를 빌드하는 방법을 알아봅니다. 플랫폼 및 구성
 
 ## 주요 AEM 문서
 
-* [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
+* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
 * [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)

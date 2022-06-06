@@ -1,12 +1,12 @@
 ---
 title: AEM 6.5 작성 사용 안내서
 seo-title: AEM 6.5 Authoring User Guide
-description: Explore the key concepts of creating content and authoring in AEM 6.5. You will also find information around using tags, templates and other page features.
+description: AEM 6.5에서 컨텐츠 작성 및 작성에 대한 주요 개념을 알아봅니다. 태그, 템플릿 및 기타 페이지 기능 사용에 대한 정보도 찾을 수 있습니다.
 seo-description: Explains the concepts of authoring in AEM.
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '374'
 ht-degree: 85%
 
 ---
@@ -17,7 +17,7 @@ AEM 6.5에서 컨텐츠 작성 및 작성에 대한 주요 개념을 알아봅�
 
 ## 주요 AEM 문서
 
-* [AEM 시작하기](https://helpx.adobe.com/kr/experience-manager/get-started.html)
+* [AEM 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko-KR)
 * [AEM 6.5 릴리스 노트](/help/release-notes/home.md)
 * [최신 설명서 업데이트](https://helpx.adobe.com/kr/experience-manager/documentation-updates.html)
 * [AEM Security 검사 목록](/help/sites-administering/security-checklist.md)
@@ -37,7 +37,7 @@ AEM 6.5에서 컨텐츠 작성 및 작성에 대한 주요 개념을 알아봅�
 | [배포 사용 안내서](/help/sites-deploying/home.md) | 이 안내서에서는 AEM의 기본 사항을 보여줍니다. |
 | [개발 사용 안내서](/help/sites-developing/home.md) | AEM 인스턴스를 빌드하는 방법을 알아봅니다. |
 | [관리 사용 안내서](/help/managing/home.md) | 이 안내서에서는 AEM 프로젝트를 성공적으로 관리하는 방법을 설명합니다. |
-| [Commerce 사용 안내서](/help/commerce/home.md) | Learn about Commerce Integration Framework on AEM. |
+| [Commerce 사용 안내서](/help/commerce/home.md) | AEM에서 Commerce Integration Framework에 대해 알아봅니다. |
 | [모바일 사용 안내서](/help/mobile/home.md) | 이 안내서에서는 모바일 애플리케이션용 컨텐츠를 만들고 관리하는 방법을 설명합니다. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/ko-KR/livefyre/using/home.html) | 이 안내서에서는 사용자가 생성한 컨텐츠를 Livefyre와 공유하는 방법을 보여 줍니다. |
 
