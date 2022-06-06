@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
 workflow-type: tm+mt
-source-wordcount: '3558'
+source-wordcount: '3557'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ JSON을 비활성화하면 안 됩니다.
 
 특정 설정은 성능에 영향을 줄 수 있으며, 가능한 경우, 특히 프로덕션 인스턴스의 경우 비활성화해야 합니다.
 
-* S **소스 VM** 및 **VM Target**&#x200B;를 런타임 JVM으로 사용되는 JDK 버전으로 정의합니다.
+* **소스 VM** 및 **VM Target**&#x200B;를 런타임 JVM으로 사용되는 JDK 버전으로 정의합니다.
 
 * 프로덕션 인스턴스의 경우:
 
@@ -117,7 +117,7 @@ JSON을 비활성화하면 안 됩니다.
 
 **Apache Sling JCR 설치 프로그램** 이러한 매개 변수는 구성이 필요하지 않지만 개발 또는 디버깅할 때 유용할 수 있습니다. 예를 들어 설치 폴더는 패키지를 체크 인하거나 체크 아웃하는 데 유용할 수 있습니다.
 
-* **설치 폴더 이름 regexp** 및 **설치 폴더의 최대 계층 깊이** - 설치할 리소스를 검색할 위치 및 깊이를 지정합니다. 와일드카드를 사용할 때(에서와 같이)*/install) 과 같은 모든 적절한 일치 항목을 검색합니다. `/libs/sling/install` 및 `/libs/cq/core/install`.
+* **설치 폴더 이름 regexp** 및 **설치 폴더의 최대 계층 깊이** - 설치할 리소스를 검색할 위치 및 깊이를 지정합니다. 와일드카드를 사용할 때(에서와 같이)&#42;/install) 모든 적절한 일치 항목(예: `/libs/sling/install` 및 `/libs/cq/core/install`.
 
 * **검색 경로**, jcrinstall에서 설치할 리소스를 검색하는 경로 목록과 해당 경로의 가중치 요소를 나타내는 숫자.
 
@@ -320,19 +320,19 @@ JSON을 비활성화하면 안 됩니다.
 AEM에는 두 가지 UI가 있습니다.
 
 * 터치 지원 UI는 표준 UI입니다
-* 기본 클래식 UI는 여전히 완벽하게 작동합니다
+* 그리고 더 이상 사용되지 않는 클래식 UI는 계속 작동합니다
 
 AEM 루트 매핑 을 사용하여 인스턴스에 대한 기본값으로 사용할 UI를 구성할 수 있습니다.
 
 * 터치 활성화 UI를 기본 UI로 만들려면 **Target 경로** 다음을 가리킵니다.
 
-   ```
+   ```shell
       /projects.html
    ```
 
 * 클래식 UI를 기본 UI로 만들려면 **Target 경로** 다음을 가리킵니다.
 
-   ```
+   ```shell
       /welcome.html
    ```
 
