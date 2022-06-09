@@ -10,9 +10,9 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: c92b5b5dd70e7a4e696d8d75282edbc88a13ba51
+source-git-commit: 98854fa3b852f511cf95adc13b945c06b1afff96
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2011'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구성하고 연결할 수 있습니다. 기본적으로 지원되는 유형은 다음과 같습니다. 그러나 사용자 지정이 거의 없는 경우에도 다른 데이터 소스를 통합할 수 있습니다.
 
-* 관계형 데이터베이스 - MySQL, Microsoft SQL Server, IBM DB2 및 Oracle RDBMS
+* 관계형 데이터베이스 - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS 및 Sybase
 * AEM 사용자 프로필
 * RESTful 웹 서비스
 * SOAP 기반 웹 서비스

@@ -10,25 +10,26 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 79dcba8e14eac39467510416bf31737ac721b07f
+source-git-commit: 44f866e1435bd98f7dbe3f4ba8500830075db001
 workflow-type: tm+mt
-source-wordcount: '7118'
+source-wordcount: '7149'
 ht-degree: 0%
 
 ---
 
 # AEM Forms의 감시 폴더{#watched-folder-in-aem-forms}
 
-관리자는 사용자가 감시 폴더에 파일(예: PDF 파일)을 배치할 때 사전 구성된 워크플로우, 서비스 또는 스크립트 작업을 시작하여 추가된 파일을 처리하도록 감시 폴더라는 네트워크 폴더를 구성할 수 있습니다. 서비스가 지정한 작업을 수행하면 결과 파일이 지정된 출력 폴더에 저장됩니다. 워크플로우, 서비스 및 스크립트에 대한 자세한 내용은 [파일 처리를 위한 다양한 방법](#variousmethodsforprocessingfiles)을 참조하십시오.
+관리자는 사용자가 감시 폴더에 파일(예: PDF 파일)을 배치할 때 사전 구성된 워크플로우, 서비스 또는 스크립트 작업을 시작하여 추가된 파일을 처리하도록 감시 폴더라는 네트워크 폴더를 구성할 수 있습니다. 서비스가 지정한 작업을 수행하면 결과 파일이 지정된 출력 폴더에 저장됩니다. 워크플로우, 서비스 및 스크립트에 대한 자세한 내용은 [다양한 파일 처리 방법](#variousmethodsforprocessingfiles).
 
 ## 감시 폴더 만들기 {#create-a-watched-folder}
 
 다음 방법 중 하나를 사용하여 파일 시스템에서 감시 폴더를 생성할 수 있습니다.
 
 * 감시 폴더 구성 노드의 속성을 구성하는 동안 folderPath 속성에 상위 디렉토리의 전체 경로를 입력하고 다음 예제와 같이 생성할 감시 폴더의 이름을 추가합니다. `C:/MyPDFs/MyWatchedFolder`
-`MyWatchedFolder`폴더가 없는 경우 AEM Forms은 지정된 경로에 폴더를 만들려고 합니다.
+다음 
+`MyWatchedFolder`폴더가 없으면 AEM Forms에서 지정된 경로에 폴더를 만듭니다.
 
-* 감시 폴더 끝점을 구성하기 전에 파일 시스템에 폴더를 만든 다음 folderPath 속성에 전체 경로를 제공합니다. folderPath 속성에 대한 자세한 내용은 [감시 폴더 속성](#watchedfolderproperties)을 참조하십시오.
+* 감시 폴더 끝점을 구성하기 전에 파일 시스템에 폴더를 만든 다음 folderPath 속성에 전체 경로를 제공합니다. folderPath 속성에 대한 자세한 내용은 [감시 폴더 속성](#watchedfolderproperties).
 
 >[!NOTE]
 >
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 1. 관리자로 CRX-DE Lite에 로그인하고 /etc/fd/watchfolder/config 폴더로 이동합니다.
 
-1. `nt:unstructured` 유형의 노드를 만듭니다. 예를 들어 watchedfolder 입니다
+1. 유형의 노드 만들기 `nt:unstructured`. 예를 들어, watchedfolder
 
    >[!NOTE]
    >
@@ -52,9 +53,10 @@ ht-degree: 0%
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   지원되는 속성의 전체 목록은 [감시 폴더 속성](#watchedfolderproperties)을 참조하십시오.
 
-1. **모두 저장**&#x200B;을 클릭합니다. 노드가 만들어지고 속성이 저장되면 그 다음, `input`, `result`, `failure`, `preserve` 및 `stage`폴더가 `folderPath` 속성에 지정된 경로에 생성됩니다.
+   지원되는 속성의 전체 목록에 대해서는 다음을 참조하십시오 [감시 폴더 속성](#watchedfolderproperties).
+
+1. 클릭 **모두 저장**. 노드가 만들어지고 속성이 저장되면 그 다음, 다음 `input`, `result`, `failure`, `preserve`, 및 `stage`폴더에 지정된 경로에 폴더가 생성됩니다. `folderPath` 속성을 사용합니다.
 
    검색 작업은 정의된 시간 간격에 따라 감시 폴더의 검색을 시작합니다.
 
@@ -63,8 +65,8 @@ ht-degree: 0%
 감시 폴더에 대해 다음 속성을 구성할 수 있습니다.
 
 * **folderPath(String)**: 정의된 시간 간격으로 검색할 폴더의 경로입니다. 클러스터형 환경의 경우 폴더는 서버에 대한 전체 액세스 권한이 있는 모든 서버와 공유된 위치에 있어야 합니다. 필수 속성입니다.
-* **inputProcessorType(문자열)**: 시작할 프로세스의 유형입니다. 워크플로우, 스크립트 또는 서비스를 지정할 수 있습니다. 필수 속성입니다.
-* **inputProcessorId(문자열)**: inputProcessorId 속성의 동작은 inputProcessorType 속성에 지정된 값을 기반으로 합니다. 필수 속성입니다. 다음 목록에서는 inputProcessorType 속성의 가능한 모든 값과 inputProcessorType 속성의 해당 필수 조건을 자세히 설명합니다.
+* **inputProcessorType(String)**: 시작할 프로세스의 유형입니다. 워크플로우, 스크립트 또는 서비스를 지정할 수 있습니다. 필수 속성입니다.
+* **inputProcessorId(String)**: inputProcessorId 속성의 동작은 inputProcessorType 속성에 지정된 값을 기반으로 합니다. 필수 속성입니다. 다음 목록에서는 inputProcessorType 속성의 가능한 모든 값과 inputProcessorType 속성의 해당 필수 조건을 자세히 설명합니다.
 
    * 워크플로우의 경우 실행할 워크플로우 모델을 지정합니다. 예: /etc/workflow/models/&lt;workflow_name>/jcr:content/model
    * 스크립트의 경우 실행할 스크립트의 JCR 경로를 지정합니다. 예: /etc/fd/watchfolder/test/testScript.ecma
@@ -84,47 +86,47 @@ ht-degree: 0%
 >
 >감시 폴더를 호스팅하는 서버에 지정된 실행 모드가 없으면 감시 폴더는 서버의 실행 모드에 관계없이 항상 활성화됩니다.
 
-* **outputFilePattern(문자열)**: 출력 파일의 패턴입니다. 폴더 또는 파일 패턴을 지정할 수 있습니다. 폴더 패턴을 지정하면 출력 파일의 이름이 워크플로우에 설명된 대로 지정됩니다. 파일 패턴을 지정하면 출력 파일의 이름이 파일 패턴에 설명된 대로 지정됩니다. [파일 및 폴더 ](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) 패턴은 출력 파일의 디렉토리 구조를 지정할 수도 있습니다. 필수 속성입니다.
+* **outputFilePattern(String)**: 출력 파일의 패턴입니다. 폴더 또는 파일 패턴을 지정할 수 있습니다. 폴더 패턴을 지정하면 출력 파일의 이름이 워크플로우에 설명된 대로 지정됩니다. 파일 패턴을 지정하면 출력 파일의 이름이 파일 패턴에 설명된 대로 지정됩니다. [파일 및 폴더 패턴](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) 출력 파일에 대한 디렉토리 구조를 지정할 수도 있습니다. 필수 속성입니다.
 
 * **stageFileExpirationDuration(Long, default -1)**: 처리를 위해 이미 선택된 입력 파일/폴더가 시간 초과된 것으로 처리되고 오류로 표시되기 전에 대기할 시간(초)을 지정합니다. 이 만료 메커니즘은 이 속성의 값이 양수일 때만 활성화됩니다.
 
 >[!NOTE]
 >
->이 메커니즘을 사용하여 입력 시간이 초과된 것으로 표시되더라도 백그라운드에서 처리 중일 수 있지만 예상보다 많은 시간이 소요됩니다. 입력 컨텐츠를 시간 제한 메커니즘이 시작되기 전에 소비한 경우 처리가 나중에 완료되어 출력이 결과 폴더로 덤프될 수 있습니다. 컨텐츠가 시간 초과 전에 소비되지 않은 경우 컨텐츠를 소비하려고 할 때 처리 오류가 나중에 발생할 수 있으며 이 오류는 동일한 입력을 위해 실패 폴더에도 기록됩니다. 반면, 간헐적인 작업/워크플로우 오류로 인해 입력 처리가 활성화되지 않은 경우(만료 메커니즘이 처리하는 시나리오) 이러한 두 가지 이벤트가 발생하지 않습니다. 따라서 시간 초과로 인해 실패로 표시된 실패 폴더의 모든 항목에 대해 &quot;상당한 시간 후에 처리되지 않은 파일&quot; 형식의 메시지를 찾아 실패로 표시됩니다. 실패 로그)에서 결과 폴더(및 실패 폴더 자체도 동일한 입력에 다른 항목에 대해 검색)하여 이전에 설명된 이벤트가 실제로 발생했는지 확인하는 것이 좋습니다.
+>이 메커니즘을 사용하여 입력 시간이 초과된 것으로 표시되더라도 백그라운드에서 처리 중일 수 있지만 예상보다 많은 시간이 소요됩니다. 입력 컨텐츠를 시간 제한 메커니즘이 시작되기 전에 소비한 경우 처리가 나중에 완료되어 출력이 결과 폴더로 덤프될 수 있습니다. 컨텐츠가 시간 초과 전에 소비되지 않은 경우 컨텐츠를 소비하려고 할 때 처리 오류가 나중에 발생할 수 있으며 이 오류는 동일한 입력을 위해 실패 폴더에도 기록됩니다. 반면, 간헐적인 작업/워크플로우 오류로 인해 입력 처리가 활성화되지 않은 경우(만료 메커니즘이 처리하는 시나리오) 이러한 두 가지 이벤트가 발생하지 않습니다. 따라서 시간 초과로 인해 실패로 표시된 실패 폴더의 모든 항목에 대해 &quot;상당한 시간 후에 처리되지 않은 파일&quot; 형식의 메시지를 찾아 실패로 표시됩니다. 실패 로그)에서 결과 폴더(및 실패 폴더 자체도 동일한 입력에 다른 항목을 찾습니다. 이 경우 이전에 설명된 이벤트가 실제로 발생했는지 확인하는 것이 좋습니다.
 
-* **deleteExpiredStageFileOnlyWhenThrottled(부울, 기본 true):** watch-folder가 제한될 때만 만료 메커니즘이 활성화되어야 하는지 여부입니다. 조절이 활성화되면 처리되지 않은 상태(간헐적인 작업/워크플로우 불발로 인해)에 남아 있는 파일 수가 적으므로 제한된 감시 폴더에 보다 적합합니다. 이 속성이 true(기본값)로 유지되면 제한 없는 감시 폴더에 대해 만료 메커니즘이 활성화되지 않습니다. 속성이 false로 유지되면 stageFileExpirationDuration 속성이 양수인 한 메커니즘이 항상 활성화됩니다.
+* **deleteExpiredStageFileOnlyWhenThrottled(부울, 기본 true):** watch-folder가 제한될 때만 만료 메커니즘이 활성화되는지 여부. 조절이 활성화되면 처리되지 않은 상태(간헐적인 작업/워크플로우 불발로 인해)에 남아 있는 파일 수가 적으므로 제한된 감시 폴더에 보다 적합합니다. 이 속성이 true(기본값)로 유지되면 제한 없는 감시 폴더에 대해 만료 메커니즘이 활성화되지 않습니다. 속성이 false로 유지되면 stageFileExpirationDuration 속성이 양수인 한 메커니즘이 항상 활성화됩니다.
 
 * **pollInterval(Long)**: 감시 폴더의 입력을 검색하는 간격(초)입니다. [스로틀] 설정을 사용하지 않는 경우 [폴링 간격]이 평균 작업을 처리하는 시간보다 길어야 합니다. 그렇지 않으면 시스템이 오버로드될 수 있습니다. 기본값은 5입니다. 자세한 내용은 배치 크기에 대한 설명을 참조하십시오. 폴링 간격 값은 1보다 크거나 같아야 합니다.
 * **excludeFilePattern(String)**: 감시 폴더에서 검색하고 선택할 파일과 폴더를 결정하는 데 사용하는 패턴의 세미콜론(;)으로 구분된 목록입니다. 이 패턴이 있는 모든 파일 또는 폴더는 처리를 위해 검사되지 않습니다. 이 설정은 입력이 여러 파일이 있는 폴더일 때 유용합니다. 폴더의 컨텐츠를 감시 폴더에서 선택한 이름의 폴더에 복사할 수 있습니다. 이렇게 하면 폴더를 입력 폴더로 완전히 복사하기 전에 감시 폴더가 처리할 폴더를 선택할 수 없습니다. 기본값은 null입니다.
-[파일 패턴](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)을 사용하여 다음을 제외할 수 있습니다.
+다음을 사용할 수 있습니다 [파일 패턴](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) 제외하려면 다음을 수행하십시오.
 
-   * 특정 파일 이름 확장자를 갖는 파일 예: *.dat, *.xml, .pdf, **
-   * 특정 이름을 갖는 파일 예를 들어 data*는 data1, data2 등의 파일과 폴더를 제외합니다.
+   * 특정 파일 이름 확장자를 갖는 파일 예 &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+   * 특정 이름을 갖는 파일 예: 데이터&#42; 에서는 data1, data2 등의 파일과 폴더를 제외합니다.
    * 다음 예와 같이 이름 및 확장명에 복합 표현식이 있는 파일:
 
-      * Data[0-9][0-9][0-9].[d][aA]&#39;port&#39;
-      * *.[d][Aa]&#39;port&#39;
-      * *.[Xx][Mm][Ll]
+      * 데이터[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+      * &#42;.[dD][Aa]&#39;port&#39;
+      * &#42;.[Xx][Mm][Ll]
 
-파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)를 참조하십시오.
+파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
-* **includeFilePattern(String)**: 감시 폴더에서 검색하고 선택할 폴더와 파일을 결정하는 데 사용하는 세미콜론(;)으로 구분된 패턴 목록입니다. 예를 들어 IncludeFilePattern이 input*인 경우 input*과 일치하는 모든 파일과 폴더를 선택합니다. 여기에는 input1, input2 등의 파일과 폴더가 포함됩니다. 기본값은 *이며, 모든 파일 및 폴더를 나타냅니다. 파일 패턴을 사용하여 다음을 포함할 수 있습니다.
+* **includeFilePattern(String)**: 감시 폴더에서 검색하고 선택할 폴더와 파일을 결정하는 데 사용하는 세미콜론(;)으로 구분된 패턴 목록입니다. 예를 들어 IncludeFilePattern이 입력되는 경우&#42;, 입력과 일치하는 모든 파일 및 폴더&#42; 다 찍혔어 여기에는 input1, input2 등의 파일과 폴더가 포함됩니다. 기본값은 입니다. &#42; 및 은 모든 파일과 폴더를 나타냅니다. 파일 패턴을 사용하여 다음을 포함할 수 있습니다.
 
-   * 특정 파일 이름 확장자를 갖는 파일 예: *.dat, *.xml, .pdf, **
-   * 특정 이름을 갖는 파일 예를 들어, 데이터.* 에는 data1, data2 등의 파일과 폴더가 포함됩니다.
+   * 특정 파일 이름 확장자를 갖는 파일 예 &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+   * 특정 이름을 갖는 파일 예를 들어, 데이터.&#42; 에는 data1, data2 등의 파일과 폴더가 포함됩니다.
 
 * 다음 예와 같이 이름 및 확장명에 복합 표현식이 있는 파일:
 
-   * Data[0-9][0-9][0-9].[d][aA]&#39;port&#39;
+   * 데이터[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
 
-      * *.[d][Aa]&#39;port&#39;
-      * *.[Xx][Mm][Ll]
+      * &#42;.[dD][Aa]&#39;port&#39;
+      * &#42;.[Xx][Mm][Ll]
 
-파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)를 참조하십시오
+파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
-* **waitTime(Long)**: 폴더 또는 파일을 만든 후 스캔하기 전에 대기할 시간(밀리초 단위)입니다. 예를 들어 대기 시간이 3,600,000밀리초(1시간)이고 파일이 1분 전에 만들어진 경우 이 파일은 59분 이상 경과하면 선택됩니다. 기본값은 0입니다. 이 설정은 파일이나 폴더가 입력 폴더에 완전히 복사되도록 하는 데 유용합니다. 예를 들어 처리할 대용량 파일이 있고 파일을 다운로드하는 데 10분이 걸리는 경우 대기 시간을 10*60 *1000밀리초로 설정합니다. 이렇게 하면 감시 폴더가 10분이 채 되지 않은 경우 해당 파일을 스캔하지 못합니다.
-* **purgeDuration(Long)**: 결과 폴더의 파일과 폴더는 이 값보다 오래되면 삭제됩니다. 이 값은 일 단위로 측정됩니다. 이 설정은 결과 폴더가 꽉 차지 않도록 하는 데 유용합니다. -1일 값은 결과 폴더를 삭제하지 않음을 나타냅니다. 기본값은 -1입니다.
-* **resultFolderName(문자열)**: 저장된 결과가 저장되는 폴더입니다. 결과가 이 폴더에 나타나지 않으면 실패 폴더를 확인하십시오. 읽기 전용 파일은 처리되지 않고 실패 폴더에 저장됩니다. 이 값은 다음 파일 패턴을 사용하는 절대 또는 상대 경로일 수 있습니다.
+* **waitTime(Long)**: 폴더나 파일을 만든 후 스캔하기 전에 대기할 시간(밀리초)입니다. 예를 들어 대기 시간이 3,600,000밀리초(1시간)이고 파일이 1분 전에 만들어진 경우 이 파일은 59분 이상 경과하면 선택됩니다. 기본값은 0입니다. 이 설정은 파일이나 폴더가 입력 폴더에 완전히 복사되도록 하는 데 유용합니다. 예를 들어 처리할 대용량 파일이 있고 파일을 다운로드하는 데 10분이 걸리는 경우 대기 시간을 10으로 설정합니다&#42;60 &#42;1000밀리초. 이렇게 하면 감시 폴더가 10분이 채 되지 않은 경우 해당 파일을 스캔하지 못합니다.
+* **purgeDuration(긴 시간)**: 결과 폴더의 파일과 폴더는 이 값보다 오래되면 삭제됩니다. 이 값은 일 단위로 측정됩니다. 이 설정은 결과 폴더가 꽉 차지 않도록 하는 데 유용합니다. -1일 값은 결과 폴더를 삭제하지 않음을 나타냅니다. 기본값은 -1입니다.
+* **resultFolderName(String)**: 저장된 결과가 저장되는 폴더입니다. 결과가 이 폴더에 나타나지 않으면 실패 폴더를 확인하십시오. 읽기 전용 파일은 처리되지 않고 실패 폴더에 저장됩니다. 이 값은 다음 파일 패턴을 사용하는 절대 또는 상대 경로일 수 있습니다.
 
    * %F = 파일 이름 접두사
    * %E = 파일 이름 확장명
@@ -140,15 +142,16 @@ ht-degree: 0%
    * %l = 밀리초
    * %R = 난수(0에서 9 사이)
    * %P = 프로세스 또는 작업 ID
+
    예를 들어, 2009년 7월 17일 오후 8시이고 C:/Test/WF0/failure/%Y/%M/%D/%H/ 결과 폴더는 C:/Test/WF0/failure/2009/07/17/20입니다.
 
-   경로가 절대 경로가 아닌 상대적인 경우에는 감시 폴더 내에 폴더가 만들어집니다. 기본값은 감시 폴더 내의 결과 폴더인 결과/%Y/%M/%D/입니다. 파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)를 참조하십시오.
+   경로가 절대 경로가 아닌 상대적인 경우에는 감시 폴더 내에 폴더가 만들어집니다. 기본값은 감시 폴더 내의 결과 폴더인 결과/%Y/%M/%D/입니다. 파일 패턴에 대한 자세한 내용은 [파일 패턴 정보](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 >[!NOTE]
 >
 >결과 폴더의 크기가 작을수록 더 나은 감시 폴더가 수행됩니다. 예를 들어 감시 폴더의 예상 로드가 매시간마다 1000개 파일인 경우 매시간마다 새 하위 폴더가 만들어지도록 결과/%Y%M%D%H와 같은 패턴을 시도합니다. 로드가 작은 경우(예: 하루에 1000개 파일) 결과/%Y%M%D와 같은 패턴을 사용할 수 있습니다.
 
-* **failureFolderName(문자열)**: 실패 파일이 저장되는 폴더입니다. 이 위치는 항상 감시 폴더를 기준으로 합니다. 결과 폴더에 대해 설명된 대로 파일 패턴을 사용할 수 있습니다. 읽기 전용 파일은 처리되지 않고 실패 폴더에 저장됩니다. 기본값은 오류입니다/%Y/%M/%D/.
+* **failureFolderName(String)**: 실패 파일이 저장되는 폴더입니다. 이 위치는 항상 감시 폴더를 기준으로 합니다. 결과 폴더에 대해 설명된 대로 파일 패턴을 사용할 수 있습니다. 읽기 전용 파일은 처리되지 않고 실패 폴더에 저장됩니다. 기본값은 오류입니다/%Y/%M/%D/.
 * **preserveFolderName(문자열):** 성공적으로 처리한 후 파일이 저장되는 위치입니다. 경로는 절대, 상대 또는 null 디렉토리 경로일 수 있습니다. 결과 폴더에 대해 설명된 대로 파일 패턴을 사용할 수 있습니다. 기본값은 preserve/%Y/%M/%D/입니다.
 * **batchSize(Long)**: 스캔당 선택할 파일 또는 폴더의 수입니다. 시스템에 과부하를 방지하는 데 사용 한 번에 너무 많은 파일을 검사하면 충돌이 발생할 수 있습니다. 기본값은 2입니다.
 
@@ -158,11 +161,11 @@ ht-degree: 0%
 
    파일이 감시 폴더에 드롭되면 입력에 파일이 나열되므로 스캐닝 수행 시 성능이 저하될 수 있습니다. 스캔 간격을 늘리면 성능이 향상됩니다. 삭제되는 파일의 크기가 작은 경우 그에 따라 [일괄 처리 크기] 및 [폴링 간격]을 조정합니다. 예를 들어 매초마다 10개의 파일이 삭제되는 경우 pollInterval을 1초로 설정하고 [일괄 처리 크기]를 10으로 설정하십시오
 
-* **throttleOn(부울)**: 이 옵션을 선택하면 지정된 시간에 AEM Forms이 처리하는 감시 폴더 작업 수를 제한합니다. 최대 작업 수는 배치 크기 값으로 결정됩니다. 기본값은 true입니다. ([조정 정보](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p) 참조)
+* **throttleOn(부울)**: 이 옵션을 선택하면 지정된 시간에 AEM Forms이 처리하는 감시 폴더 작업 수를 제한합니다. 최대 작업 수는 배치 크기 값으로 결정됩니다. 기본값은 true입니다. (자세한 내용은 [제한 정보](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p))
 
 * **overwriteDuplicateFilename(부울)**: True로 설정하면 결과 폴더 및 보존 폴더의 파일을 덮어씁니다. False로 설정하면 이름에 숫자 인덱스 접미어가 있는 파일 및 폴더가 사용됩니다. 기본값은 False입니다.
 * **preserveOnFailure(부울)**: 서비스에서 작업을 실행하지 못하는 경우 입력 파일을 유지합니다. 기본값은 true입니다.
-* **inputFilePattern(문자열)**: 감시 폴더의 입력 파일 패턴을 지정합니다. 파일의허용 목록에 추가하다를 만듭니다.
+* **inputFilePattern(String)**: 감시 폴더의 입력 파일 패턴을 지정합니다. 파일의허용 목록에 추가하다를 만듭니다.
 * **비동기(부울)**: 호출 유형을 비동기 또는 동기식으로 식별합니다. 기본값은 true(비동기)입니다. 파일 처리는 리소스를 사용하는 작업이며, 스캔 작업의 기본 스레드를 차단하려면 비동기 플래그 값을 true로 유지합니다. 클러스터형 환경에서는 사용 가능한 서버에서 처리되는 파일에 대해 로드 밸런싱을 활성화하려면 플래그를 true 로 유지하는 것이 중요합니다. 플래그가 false인 경우 스캔 작업은 자체 스레드 내에서 각 최상위 파일/폴더에 대해 순차적으로 처리를 시도합니다. 단일 서버 설정의 워크플로우 기반 처리와 같은 특별한 이유 없이 플래그를 false로 설정하지 마십시오.
 
 >[!NOTE]
@@ -170,11 +173,11 @@ ht-degree: 0%
 >설계에서는 워크플로우가 비동기적입니다. 값을 false로 설정하더라도 워크플로우는 비동기 모드에서 실행됩니다.
 
 * **활성화됨(부울)**: 감시 폴더에 대한 검색을 비활성화하고 활성화합니다. 감시 폴더 스캔을 시작하려면 enabled를 true로 설정합니다. 기본값은 true입니다.
-* **payloadMapperFilter:**  폴더가 감시 폴더로 구성되면 감시 폴더 내에 폴더 구조가 만들어집니다. 이러한 구조에는 입력 제공, 출력(결과) 수신, 장애에 대한 데이터 저장, 장기 프로세스에 대한 데이터 보존, 다양한 단계에 대한 데이터 저장 등의 폴더가 제공됩니다. 감시 폴더의 폴더 구조는 Forms 중심 워크플로우의 페이로드 역할을 할 수 있습니다. 페이로드 매퍼에서는 입력, 출력 및 처리에 감시 폴더를 사용하는 페이로드 구조를 정의할 수 있습니다. 예를 들어 기본 매퍼를 사용하는 경우 감시 폴더의 컨텐츠를 [페이로드]\input 및 [페이로드]\output 폴더와 매핑합니다. 두 가지 기본 페이로드 매퍼 구현을 사용할 수 있습니다. [사용자 지정 구현](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)이 없는 경우, 기본 구현 중 하나를 사용하십시오.
+* **payloadMapperFilter:** 폴더를 감시 폴더로 구성하면 감시 폴더 구조가 감시 폴더 내에 만들어집니다. 이러한 구조에는 입력 제공, 출력(결과) 수신, 장애에 대한 데이터 저장, 장기 프로세스에 대한 데이터 보존, 다양한 단계에 대한 데이터 저장 등의 폴더가 제공됩니다. 감시 폴더의 폴더 구조는 Forms 중심 워크플로우의 페이로드 역할을 할 수 있습니다. 페이로드 매퍼에서는 입력, 출력 및 처리에 감시 폴더를 사용하는 페이로드 구조를 정의할 수 있습니다. 예를 들어 기본 매퍼를 사용하는 경우 감시 폴더의 컨텐츠를 [페이로드]\input 및 [페이로드]\output 폴더. 두 가지 기본 페이로드 매퍼 구현을 사용할 수 있습니다. 없는 경우 [사용자 지정 구현](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), 에서는 최신 구현 중 하나를 사용하십시오.
 
-   * **기본 매퍼:** 기본 페이로드 매퍼를 사용하여 감시 폴더의 입력 및 출력 컨텐츠를 페이로드의 개별 입력 및 출력 폴더에 유지합니다. 또한 워크플로우의 페이로드 경로에서 [페이로드]/input/ 및 [페이로드]/출력 경로를 사용하여 컨텐츠를 검색하고 저장합니다.
+   * **기본 매퍼:** 기본 페이로드 매퍼를 사용하여 감시 폴더의 입력 및 출력 컨텐츠를 페이로드의 개별 입력 및 출력 폴더에 유지합니다. 또한 워크플로우의 페이로드 경로에서 을 사용합니다. [페이로드]/input/ 및 [페이로드]/output 경로에 콘텐츠를 검색하고 저장합니다.
 
-   * **단순 파일 기반 페이로드 매퍼:**  단순 파일 기반 페이로드 매퍼를 사용하여 입력 및 출력 컨텐츠를 페이로드 폴더에서 직접 유지합니다. 기본 매퍼와 같은 추가 계층은 생성되지 않습니다.
+   * **단순 파일 기반 페이로드 매퍼:** 단순 파일 기반 페이로드 매퍼를 사용하여 입력 및 출력 컨텐츠를 페이로드 폴더에서 직접 유지합니다. 기본 매퍼와 같은 추가 계층은 생성되지 않습니다.
 
 ### 사용자 지정 구성 매개 변수 {#custom-configuration-parameters}
 
@@ -185,9 +188,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->속성의 데이터 유형이 Double인 경우 해당 속성의 값에 소수점 을 지정합니다. 데이터 형식이 Double이고 값에 소수점 값이 지정되지 않은 모든 속성의 경우 유형이 Long으로 변환됩니다.
+>속성의 데이터 유형이 Double인 경우 해당 속성의 값에 소수점 값을 지정합니다. 데이터 형식이 Double이고 값에 소수점 값이 지정되지 않은 모든 속성의 경우 유형이 Long으로 변환됩니다.
 
-이러한 속성은 처리 코드에 Map&lt;String, Object> 유형의 변경할 수 없는 맵으로 전달됩니다. 처리 코드는 ECMAScript, Workflow 또는 Service일 수 있습니다. 속성에 대해 제공된 값은 맵에서 키-값 쌍으로 사용할 수 있습니다. 키는 속성의 이름이고 값은 속성 값입니다. 사용자 지정 구성 매개 변수에 대한 자세한 내용은 다음 이미지를 참조하십시오.
+이러한 속성은 맵 유형의 변경할 수 없는 맵으로 전달됩니다&lt;string object=&quot;&quot;> 참조하십시오. 처리 코드는 ECMAScript, Workflow 또는 Service일 수 있습니다. 속성에 대해 제공된 값은 맵에서 키-값 쌍으로 사용할 수 있습니다. 키는 속성의 이름이고 값은 속성 값입니다. 사용자 지정 구성 매개 변수에 대한 자세한 내용은 다음 이미지를 참조하십시오.
 
 ![필수 속성, 선택적 속성, 몇 가지 구성 매개 변수가 있는 샘플 감시 폴더 구성 노드](assets/custom-configuration-parameters.png)
 
@@ -205,7 +208,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >속성의 데이터 유형이 Double인 경우 해당 속성의 값에 소수점 을 지정합니다. 데이터 형식이 Double이고 값에 소수점 값이 지정되지 않은 모든 속성의 경우 유형이 Long으로 변환됩니다.
+   >속성의 데이터 유형이 Double인 경우 해당 속성의 값에 소수점 값을 지정합니다. 데이터 형식이 Double이고 값에 소수점 값이 지정되지 않은 모든 속성의 경우 유형이 Long으로 변환됩니다.
 
 >[!NOTE]
 >
@@ -219,17 +222,15 @@ ht-degree: 0%
 
 ### 서비스를 사용하여 감시 폴더의 파일 처리   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
-서비스는 `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` 인터페이스의 사용자 지정 구현입니다. 몇 가지 사용자 지정 속성과 함께 OSGi에 등록됩니다. 구현의 사용자 지정 속성을 사용하면 구현이 고유하고 구현을 식별하는 데 도움이 됩니다.
+서비스는 `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` 인터페이스. 몇 가지 사용자 지정 속성과 함께 OSGi에 등록됩니다. 구현의 사용자 지정 속성을 사용하면 구현이 고유하고 구현을 식별하는 데 도움이 됩니다.
 
 #### ContentProcessor 인터페이스의 사용자 지정 구현 {#custom-implementation-of-the-contentprocessor-interface}
 
-사용자 지정 구현은 처리 컨텍스트(com.adobe.aemfd.watchfolder.service.api.ProcessorContext 유형의 개체)를 수락하고, 컨텍스트에서 입력 문서 및 구성 매개 변수를 읽고, 입력을 처리하고, 출력을 다시
-컨텍스트. ProcessorContext에는 다음 API가 있습니다.
+사용자 지정 구현은 처리 컨텍스트(com.adobe.aemfd.watchfolder.service.api.ProcessorContext 유형의 개체)를 수락하고, 컨텍스트에서 입력 문서 및 구성 매개 변수를 읽고, 입력을 처리하고, 출력을 다시 컨텍스트에 추가합니다. ProcessorContext에는 다음 API가 있습니다.
 
 * **getWatchFolderId**: 감시 폴더의 ID를 반환합니다.
 * **getInputMap**: 맵 유형의 맵을 반환합니다. 맵의 키는 입력 파일의 파일 이름이고 파일의 내용을 포함하는 문서 개체입니다. getinputMap API를 사용하여 입력 파일을 읽습니다.
-* **getConfigParameters**: 맵 유형의 변경할 수 없는 맵을 반환합니다. 맵에는 다음이 포함되어 있습니다
-감시 폴더의 구성 매개 변수.
+* **getConfigParameters**: 맵 유형의 변경할 수 없는 맵을 반환합니다. 맵에는 감시 폴더의 구성 매개 변수가 포함되어 있습니다.
 
 * **setResult**: ContentProcessor 구현에서는 API를 사용하여 출력 문서를 결과 폴더에 씁니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시하도록 선택할 수 있습니다. 폴더 패턴을 지정하면 출력 파일의 이름이 워크플로우에 설명된 대로 지정됩니다. 파일 패턴을 지정하면 출력 파일의 이름이 파일 패턴에 설명된 대로 지정됩니다.
 
@@ -242,9 +243,9 @@ ht-degree: 0%
 public class OutputWriter implements ContentProcessor {
 ```
 
-[감시 폴더를 구성하는 동안 inputProcessorId 속성을 (foo=bar)로 지정하고 inputProcessorType 속성을 서비스로 지정하면 위에 언급된 서비스(사용자 지정 구현)를 사용하여 감시 폴더의 입력 파일을 처리합니다.](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)
+While [감시 폴더 구성](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)를 지정하면 inputProcessorId 속성을 (foo=bar)로 지정하고 inputProcessorType 속성을 서비스로 지정하면 위에 언급된 서비스(사용자 정의 구현)를 사용하여 감시 폴더의 입력 파일을 처리합니다.
 
-다음 예제는 ContentProcessor 인터페이스의 사용자 지정 구현입니다. 이 예제에서 서비스는 입력 파일을 수락하고 파일을 임시 위치에 복사하고 파일의 내용이 포함된 문서 개체를 반환합니다. 문서 객체의 내용은 결과 폴더에 저장됩니다. 결과 폴더의 실제 경로는 [감시 폴더 구성 노드](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)에 구성됩니다.
+다음 예제는 ContentProcessor 인터페이스의 사용자 지정 구현입니다. 이 예제에서 서비스는 입력 파일을 수락하고 파일을 임시 위치에 복사하고 파일의 내용이 포함된 문서 개체를 반환합니다. 문서 객체의 내용은 결과 폴더에 저장됩니다. 결과 폴더의 실제 경로는 [감시 폴더 구성 노드](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
 ```java
 @Component(immediate = true)
@@ -271,7 +272,7 @@ public class TestContentProcessor1 implements ContentProcessor {
 * **getConfigParameters**: 맵 유형의 변경할 수 없는 맵을 반환합니다. 맵에는 감시 폴더의 구성 매개 변수가 포함되어 있습니다.
 * **setResult**: ContentProcessor 구현에서는 API를 사용하여 출력 문서를 결과 폴더에 씁니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시하도록 선택할 수 있습니다. 폴더 패턴을 지정하면 출력 파일의 이름이 워크플로우에 설명된 대로 지정됩니다. 파일 패턴을 지정하면 출력 파일의 이름이 파일 패턴에 설명된 대로 지정됩니다.
 
-다음 코드는 ECMAScript 예입니다. 입력 파일을 승인하고 파일을 임시 위치에 복사하고 파일의 내용이 포함된 문서 개체를 반환합니다. 문서 객체의 내용은 결과 폴더에 저장됩니다. 결과 폴더의 실제 경로는 [감시 폴더 구성 노드](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)에 구성됩니다.
+다음 코드는 ECMAScript 예입니다. 입력 파일을 승인하고 파일을 임시 위치에 복사하고 파일의 내용이 포함된 문서 개체를 반환합니다. 문서 객체의 내용은 결과 폴더에 저장됩니다. 결과 폴더의 실제 경로는 [감시 폴더 구성 노드](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
 >[!NOTE]
 >
@@ -292,7 +293,7 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 
 스크립트를 사용자 지정 위치에 배치하려는 경우 기본 서비스 사용자에게 사용자 지정 위치에 대한 읽기 권한이 없을 수 있습니다. 이러한 시나리오의 경우 다음 단계를 수행하여 사용자 지정 위치에 필요한 권한을 제공합니다.
 
-1. 프로그래밍 방식으로 또는 콘솔 https://&#39;[server]:[port]&#39;/crx/explorer를 통해 시스템 사용자를 만듭니다. 기존 시스템 사용자를 사용할 수도 있습니다. 일반 사용자 대신 여기에서 시스템 사용자와 작업하는 것이 중요합니다.
+1. 프로그래밍 방식으로 또는 콘솔을 통해 시스템 사용자 만들기 https://&#39;[server]:[포트]&#39;/crx/explorer. 기존 시스템 사용자를 사용할 수도 있습니다. 일반 사용자 대신 여기에서 시스템 사용자와 작업하는 것이 중요합니다.
 1. 스크립트가 저장되는 사용자 지정 위치에서 새로 만들거나 기존 시스템 사용자에게 읽기 권한을 제공합니다. 여러 사용자 지정 위치를 가질 수 있습니다. 모든 사용자 지정 위치에 최소 읽기 권한을 제공합니다.
 1. Felix 구성 콘솔(/system/console/configMgr)에서 감시 폴더에 대한 서비스 사용자 매핑을 찾습니다. 이 매핑은 &#39;매핑: adobe-aemds-core-watch-folder=..&#39;.
 1. 매핑을 클릭합니다. &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39; 항목의 경우 fd-service를 사용자 지정 시스템 사용자의 ID로 변경합니다. 저장을 클릭합니다.
@@ -310,7 +311,7 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 
 워크플로우를 사용하여 파일을 처리하려면 다음 단계를 수행하십시오.
 
-1. `com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor` 인터페이스의 구현을 만듭니다. 이는 서비스용으로 생성된 구현과 유사합니다.
+1. 의 구현 만들기 `com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor` 인터페이스. 이는 서비스용으로 생성된 구현과 유사합니다.
 
    >[!NOTE]
    >
@@ -334,13 +335,13 @@ processWorkflowContext() 인수는 com.adobe.aemfd.watchfolder.workflow.api.Work
 * getMetadata: 메타데이터 변수의 값을 반환합니다. 변수가 WorkflowContextService.execute() 메서드에 전달됩니다.
 * getCommittedVariables: 이전 단계에서 설정한 변수를 나타내는 읽기 전용 개체 맵을 반환합니다. 변수가 이전 단계에서 수정되지 않으면 감시 폴더를 구성하는 동안 지정된 기본값이 반환됩니다.
 * getCommittedResults: 읽기 전용 문서 맵을 반환합니다. 맵은 이전 단계에서 생성된 출력 파일을 나타냅니다.
-* setVariable: WorkflowContextProcessor 구현에서는 변수를 사용하여 단계 사이에 흐르는 사용자 지정 동적 데이터를 나타내는 변수를 조작합니다. 변수의 이름 및 유형은 [감시 폴더](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)를 구성하는 동안 지정된 변수의 이름과 동일합니다. 변수의 값을 변경하려면 null이 아닌 값을 사용하여 setVariable API를 호출합니다. 변수를 제거하려면 null 값을 사용하여 setVariable() 를 호출합니다.
+* setVariable: WorkflowContextProcessor 구현에서는 변수를 사용하여 단계 사이에 흐르는 사용자 지정 동적 데이터를 나타내는 변수를 조작합니다. 변수의 이름 및 유형은 [감시 폴더 구성](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). 변수의 값을 변경하려면 null이 아닌 값을 사용하여 setVariable API를 호출합니다. 변수를 제거하려면 null 값을 사용하여 setVariable() 를 호출합니다.
 
 다음 ProcessorContext API도 사용할 수 있습니다.
 
 * getWatchFolderId: 감시 폴더의 ID를 반환합니다.
-* getInputMap: Map&lt;String, Document> 유형의 맵을 반환합니다. 맵의 키는 입력 파일의 파일 이름이고 파일의 내용을 포함하는 문서 개체입니다. getinputMap API를 사용하여 입력 파일을 읽습니다.
-* getConfigParameters: Map&lt;String, Object> 유형의 변경할 수 없는 맵을 반환합니다. 맵에는 감시 폴더의 구성 매개 변수가 포함되어 있습니다.
+* getInputMap: 맵 유형의 맵 반환&lt;string document=&quot;&quot;>. 맵의 키는 입력 파일의 파일 이름이고 파일의 내용을 포함하는 문서 개체입니다. getinputMap API를 사용하여 입력 파일을 읽습니다.
+* getConfigParameters: 맵 유형의 변경할 수 없는 맵 반환&lt;string object=&quot;&quot;>. 맵에는 감시 폴더의 구성 매개 변수가 포함되어 있습니다.
 * setResult: ContentProcessor 구현에서는 API를 사용하여 결과 폴더에 출력 문서를 작성합니다. setResult API에 출력 파일의 이름을 제공할 수 있습니다. API는 지정된 출력 폴더/파일 패턴에 따라 제공된 파일을 사용하거나 무시하도록 선택할 수 있습니다. 폴더 패턴을 지정하면 출력 파일의 이름이 워크플로우에 설명된 대로 지정됩니다. 파일 패턴을 지정하면 출력 파일의 이름이 파일 패턴에 설명된 대로 지정됩니다
 
 워크플로우에서 사용할 경우 setResult API를 고려합니다.
@@ -400,11 +401,11 @@ log.info("Exiting workflow script!")
 
 #### 사용자 지정 페이로드 매퍼 필터 만들기 {#creating-a-custom-payload-mapper-filter}
 
-1. [Adobe 클라이언트 SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)를 다운로드합니다.
+1. 다운로드 [Adobe 클라이언트 SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/).
 1. maven 기반 프로젝트의 빌드 경로에서 클라이언트 SDK를 설정합니다. 시작하려면 선택한 IDE에서 다음 전문 기반 프로젝트를 다운로드하여 열 수 있습니다.
 1. 요구 사항에 맞게 샘플 번들에서 사용할 수 있는 페이로드 매퍼 필터 코드를 편집합니다.
 1. 사용자 지정 페이로드 매퍼 필터의 번들을 만들려면 maven을 사용하십시오.
-1. [AEM 번들 콘솔](https://localhost:4502/system/console/bundles)을 사용하여 번들을 설치합니다.
+1. 사용 [AEM 번들 콘솔](https://localhost:4502/system/console/bundles) 을 눌러 번들을 설치합니다.
 
    이제 사용자 지정 페이로드 매퍼 필터가 AEM 감시 폴더 UI에 나열됩니다. 워크플로우에서 사용할 수 있습니다.
 
@@ -513,8 +514,8 @@ log.info("Exiting workflow script!")
 전송률 조절은 이전 작업이 완료되지 않은 경우 감시 폴더가 새 작업을 호출하지 못하도록 합니다. 감시 폴더는 진행 중인 작업을 감지하고 진행 중인 작업을 제외한 일괄 처리 크기에 따라 새 작업을 처리합니다. 예를 들어, 두 번째 호출에서 완료된 작업 수가 3개이고 작업이 아직 진행 중인 경우 감시 폴더는 3개의 작업만 추가로 호출합니다.
 
 * 감시 폴더는 진행 중인 작업 수를 확인하기 위해 단계 폴더에 있는 파일 수를 사용합니다. 스테이지 폴더에서 파일이 처리되지 않은 상태로 남아 있는 경우 감시 폴더는 더 이상 작업을 호출하지 않습니다. 예를 들어 배치 크기가 4이고 3개의 작업이 정지된 경우 감시 폴더는 후속 호출에서 하나의 작업만 호출합니다. 스테이지 폴더에서 파일이 처리되지 않은 상태로 유지될 수 있는 여러 가지 시나리오가 있습니다. 작업이 정지된 경우 Watched Folder가 파일을 스테이지 폴더 밖으로 이동하도록 관리자가 프로세스 관리 페이지에서 프로세스를 종료할 수 있습니다.
-* 감시 폴더가 작업을 호출하기 전에 AEM Forms 서버가 다운되면 관리자는 파일을 스테이지 폴더에서 이동할 수 있습니다. 자세한 내용은 [실패 지점 및 복구](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)를 참조하십시오.
-* AEM Forms 서버가 실행 중이지만 Job Manager 서비스가 다시 호출될 때 Watched Folder가 실행되고 있지 않으면 순서가 지정된 시퀀스에서 서비스가 시작되지 않을 때 관리자가 파일을 스테이지 폴더에서 이동할 수 있습니다. 자세한 내용은 [실패 지점 및 복구](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)를 참조하십시오.
+* 감시 폴더가 작업을 호출하기 전에 AEM Forms 서버가 다운되면 관리자는 파일을 스테이지 폴더에서 이동할 수 있습니다. 자세한 내용은 [장애 지점 및 복구](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* AEM Forms 서버가 실행 중이지만 Job Manager 서비스가 다시 호출될 때 Watched Folder가 실행되고 있지 않으면 순서가 지정된 시퀀스에서 서비스가 시작되지 않을 때 관리자가 파일을 스테이지 폴더에서 이동할 수 있습니다. 자세한 내용은 [장애 지점 및 복구](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
 ### 장애 지점 및 복구 장애 지점 및 복구 {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -535,10 +536,11 @@ log.info("Exiting workflow script!")
 
 1. 응용 프로그램 서버 또는 노드를 다시 시작합니다.
 
-1. 감시 폴더의 새 입력 파일 처리를 중지합니다. 이 단계를 건너뛰면 스테이지 폴더에서 처리되지 않은 파일을 확인하는 것이 훨씬 어렵습니다. 감시 폴더에서 새 입력 파일을 처리하지 못하게 하려면 다음 작업 중 하나를 수행합니다.
+1. 감시 폴더의 새 입력 파일 처리를 중지합니다. 이 단계를 건너뛸 경우 단계 폴더에서 처리되지 않은 파일을 확인하는 것이 훨씬 어렵습니다. 감시 폴더에서 새 입력 파일을 처리하지 못하게 하려면 다음 작업 중 하나를 수행합니다.
 
    * 감시 폴더의 includeFilePattern 속성을 새 입력 파일과 일치하지 않는 것으로 변경합니다(예: NOMATCH 입력).
    * 새 입력 파일을 만드는 프로세스를 일시 중지합니다.
+
    AEM Forms이 모든 파일을 복구하고 처리할 때까지 기다립니다. 대부분의 파일은 복구되고 새 입력 파일은 올바르게 처리되어야 합니다. 감시 폴더에서 파일을 복구하고 처리할 때까지 대기하는 시간은 호출하는 작업의 길이와 복구할 파일 수에 따라 달라집니다.
 
 1. 처리할 수 없는 파일을 확인합니다. 적절한 시간을 기다린 후 이전 단계를 완료하고 단계 폴더에 아직 처리되지 않은 파일이 남아 있는 경우 다음 단계로 이동합니다.
@@ -555,19 +557,19 @@ log.info("Exiting workflow script!")
 
 감시 폴더를 함께 체인화할 수 있으므로 하나의 감시 폴더의 결과 문서가 다음 감시 폴더의 입력 문서입니다. 각 감시 폴더는 다른 서비스를 호출할 수 있습니다. 이러한 방식으로 감시 폴더를 구성하면 여러 서비스를 호출할 수 있습니다. 예를 들어, 한 감시 폴더는 PDF 파일을 Adobe PostScript®로 변환할 수 있고, 두 번째 감시 폴더는 PostScript 파일을 PDF/A 형식으로 변환할 수 있습니다. 이렇게 하려면 첫 번째 종단점에 의해 정의된 감시 폴더의 결과 폴더를 설정하여 두 번째 종단점에 의해 정의된 감시 폴더의 입력 폴더를 가리키면 됩니다.
 
-첫 번째 전환에서 출력하는 위치는 \path\result입니다. 두 번째 변환에 대한 입력은 \path\result이고, 두 번째 변환에서 출력되는 값은 \path\result\result (또는 두 번째 변환에 대한 [결과 폴더] 상자에서 정의하는 디렉토리)로 이동합니다.
+첫 번째 전환에서 출력하면 \path\result로 이동합니다. 두 번째 변환에 대한 입력은 \path\result이고 두 번째 변환에서 출력되는 값은 \path\result\result (또는 두 번째 변환에 대한 [결과 폴더] 상자에 정의하는 디렉토리)로 이동합니다.
 
 ### 파일 및 폴더 패턴 {#file-and-folder-patterns}
 
 관리자는 서비스를 호출할 수 있는 파일 유형을 지정할 수 있습니다. 각 감시 폴더에 대해 여러 파일 패턴을 설정할 수 있습니다. 파일 패턴은 다음 파일 속성 중 하나일 수 있습니다.
 
-* 특정 파일 이름 확장자를 가진 파일 예: *.dat, *.xml, .pdf, **
-* 특정 이름을 갖는 파일 예를 들어, 데이터.*
+* 특정 파일 이름 확장자를 가진 파일 예 &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+* 특정 이름을 갖는 파일 예를 들어, 데이터.&#42;
 * 다음 예와 같이 이름 및 확장명에 복합 표현식이 있는 파일:
 
-   * Data[0-9][0-9][0-9].[d][aA]&#39;port&#39;
-   * *.[d][Aa]&#39;port&#39;
-   * *.[Xx][Mm][Ll]
+   * 데이터[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * &#42;.[dD][Aa]&#39;port&#39;
+   * &#42;.[Xx][Mm][Ll]
 
 * 관리자는 결과를 저장할 출력 폴더의 파일 패턴을 정의할 수 있습니다. 출력 폴더(결과, 보존 및 실패)에 대해 관리자는 다음 파일 패턴을 지정할 수 있습니다.
 * %Y = 년(전체)
@@ -604,7 +606,7 @@ PDF 생성기를 사용하여 감시 폴더를 구성하려면 다음 단계를 
 
 ECMAScript는 PDF 생성기의 createPDF API를 사용하여 Microsoft Word(.docx) 문서를 PDF 문서로 변환합니다. 스크립트를 만들려면 다음 단계를 수행하십시오.
 
-1. 브라우저 창에서 CRXDE Lite를 엽니다. URL은 https://&#39;[server]:[port]&#39;/crx/de입니다.
+1. 브라우저 창에서 CRXDE Lite를 엽니다. URL은 https://&#39; 입니다.[server]:[포트]&#39;/crx/de.
 
 1. /etc/workflow/scripts 로 이동하고 PDFG라는 폴더를 만듭니다.
 
@@ -638,27 +640,27 @@ ECMAScript는 PDF 생성기의 createPDF API를 사용하여 Microsoft Word(.doc
 ### 워크플로우 만들기 {#create-a-workflow}
 
 1. 브라우저 창에서 AEM 워크플로우 UI를 엽니다.
-https://[servername]:&#39;port&#39;/workflow
+   <https://[servername>]:&#39;port&#39;/workflow
 
-1. 모델 보기에서 **새로 만들기**&#x200B;를 클릭합니다. 새 워크플로우 대화 상자에서 **제목**&#x200B;을 지정하고 **확인**&#x200B;을 클릭합니다.
+1. 모델 뷰에서 **새로 만들기**. 새 워크플로우 대화 상자에서 **제목**&#x200B;를 클릭하고 **확인**.
 
    ![create-a-workflow-pdf](assets/create-a-workflow-pdf.png)
 
-1. 새로 만든 워크플로우를 선택하고 **편집**&#x200B;을 클릭합니다. 워크플로우가 새 창에서 열립니다.
+1. 새로 만든 워크플로우를 선택하고 을(를) 클릭합니다 **편집**. 워크플로우가 새 창에서 열립니다.
 
 1. 기본 워크플로우 단계를 삭제합니다. 사이드 킥의 프로세스 단계를 워크플로우 로 드래그 앤 드롭합니다.
 
    ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
-1. 프로세스 단계를 마우스 오른쪽 단추로 클릭하고 **편집**&#x200B;을 선택합니다. 단계 속성 창이 나타납니다.
+1. 프로세스 단계를 마우스 오른쪽 버튼으로 클릭하고 **편집**. 단계 속성 창이 나타납니다.
 
-1. 프로세스 탭에서 ECMAScript를 선택합니다. 예를 들어, [ECMAScript 만들기](#p-create-an-ecmascript-p)에서 작성된 pdfg-openOffice-sample.ecma 스크립트가 있습니다. **핸들러 고급** 옵션을 활성화하고 **확인**&#x200B;을 클릭합니다.
+1. 프로세스 탭에서 ECMAScript를 선택합니다. 예를 들어에서 만들어진 pdfg-openOffice-sample.ecma 스크립트 [ECMAScript 만들기](#p-create-an-ecmascript-p). 를 활성화합니다 **핸들러 고급** 옵션을 선택하고 **확인**.
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
 ### 감시 폴더 구성 {#configure-the-watched-folder}
 
-1. 브라우저 창에서 CRXDE Lite를 엽니다. https://&#39;[server]:[port]&#39;/crx/de/
+1. 브라우저 창에서 CRXDE Lite를 엽니다. https://&#39;[server]:[포트]&#39;/crx/de/
 
 1. /etc/fd/watchfolder/config/ 폴더로 이동하고 nt:unrecrugend 유형의 노드를 만듭니다.
 
@@ -672,4 +674,8 @@ inputProcessorType(문자열): 시작할 프로세스의 유형입니다. 이 �
    * inputProcessorId(문자열): inputProcessorId 속성의 동작은 inputProcessorType 속성에 지정된 값을 기반으로 합니다. 이 예에서 inputProcessorType 속성 값은 워크플로입니다. 따라서 inputProcessorId 속성에 대해 PDFG 워크플로우의 다음 경로를 지정합니다. /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern(문자열): 출력 파일의 패턴입니다. 폴더 또는 파일 패턴을 지정할 수 있습니다. 폴더 패턴을 지정하면 출력 파일의 이름이 워크플로우에 설명된 대로 지정됩니다. 파일 패턴을 지정하면 출력 파일의 이름이 파일 패턴에 설명된 대로 지정됩니다.
-   위에 언급된 필수 속성 외에도 감시 폴더는 몇 가지 선택적 속성을 지원합니다. 선택적 속성의 전체 목록 및 설명은 [감시 폴더 속성](#watchedfolderproperties)을 참조하십시오.
+   위에 언급된 필수 속성 외에도 감시 폴더는 몇 가지 선택적 속성을 지원합니다. 선택적 속성의 전체 목록 및 설명은 다음을 참조하십시오 [감시 폴더 속성](#watchedfolderproperties).
+
+## 알려진 문제 {#watched-folder-known-issues}
+
+JEE에서 AEM 6.5 Forms을 시작하면 JBoss가 완전히 시작되고 파일이 처리되지 않기 전에 파일이 처리됩니다. 이를 방지하려면 JBoss를 시작하기 전에 감시 폴더를 모두 지웁니다.
