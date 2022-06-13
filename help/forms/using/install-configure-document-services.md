@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 4b3327ed46024662813bb538f8338c59e508e10e
+source-git-commit: 57bccab9b95d328591e6cbb1070fd9e59712c016
 workflow-type: tm+mt
-source-wordcount: '5330'
+source-wordcount: '5364'
 ht-degree: 2%
 
 ---
@@ -765,18 +765,19 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 
    * 다음 명령을 사용하여 prov.xml을 생성하고 prov.xml 파일을 사용하여 기존 설치를 재직렬화하십시오. [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) 번호 문서.
 
-      * prov.xml 생성
+          &quot;
+          
+          adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;leid>] [—regsuppress=ss] [—eulasuppress] [—locales=제한된 로케일 목록 xx_XX 형식 또는 ALL>] [—profile=&lt;absolute path=&quot;&quot; to=&quot;&quot; prov.xml=&quot;&quot;>]
+          
+          &quot;
+      
+   * 볼륨을 사용하여 패키지를 serialize(prov.xml 파일과 새 일련 번호를 사용하여 기존 설치를 다시 serialize)합니다. PRTK 설치 폴더에서 관리자로 다음 명령을 실행하여 클라이언트 컴퓨터에서 배포된 패키지를 serialize 및 활성화합니다.
 
-         ```
-         adobe_prtk --tool=VolumeSerialize --generate --serial=<serialnum> [--leid=<LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=<Absolute path to prov.xml>]
-         ```
-
-      * 볼륨을 사용하여 패키지를 serialize(prov.xml 파일과 새 일련 번호를 사용하여 기존 설치를 다시 serialize)합니다. PRTK 설치 폴더에서 관리자로 다음 명령을 실행하여 클라이언트 컴퓨터에서 배포된 패키지를 serialize 및 활성화합니다.
-
-         ```
-         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
-         ```
-
+          &quot;
+          adobe_prtk —tool=VolumeSerialize —profile=C:\prov.xml -stream
+          
+          &quot;
+      
 * 대규모 설치의 경우 [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) 이전 버전의 Reader 및 Acrobat을 제거하려면 다음을 수행하십시오. 설치 관리자를 사용자 지정하고 조직의 모든 컴퓨터에 배포합니다.
 
 +++
