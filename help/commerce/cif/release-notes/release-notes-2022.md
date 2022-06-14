@@ -2,10 +2,10 @@
 title: AEM Content and Commerce 릴리스 노트 2022
 description: AEM Content and Commerce 릴리스 노트 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: aacb497b10f46be3157aae86a5973aa277fda967
+source-git-commit: f6a16e5744222600b3a1760efe3c61619160b6cd
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 45%
+source-wordcount: '573'
+ht-degree: 38%
 
 ---
 
@@ -21,6 +21,30 @@ ht-degree: 45%
 | CIF 코어 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM Project Archetype | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## 릴리스 날짜: 2022년 5월
+
+| 구성 요소 | 버전 | 세부 사항 |
+|:-------|:-----:|---------------------:|
+| CIF 추가 기능 | 2022.05.31.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.05.31.00.zip) |
+| CIF 코어 구성 요소 | 2.9.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.9.0) |
+| CIF Venia 참조 사이트 | 2022.05.30 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.05.30) |
+
+### 새로운 기능 {#what-is-new-may}
+
+* 새롭고 간편해진 개요를 위한 제품 조종실 속성 페이지
+
+![제품 조종실 속성 개요](/help/assets/CIF/product_cockpit_properties_overview.png)
+
+* I/O Runtime에서 타사 커넥터에 대한 향상된 호환성 및 견고성
+
+* GQL 클라이언트 구성 덮어쓰기(예: 사용자 지정 캐싱 동작 설정)에 대한 지원을 개선합니다
+
+### 버그 수정 {#bug-fixes-may}
+
+* 다중 값 제품 선택기 필드에 두 번째 제품과 다른 제품이 잘못된 것으로 표시됩니다
+
+* 구성 요소 뒤에 제품 선택기가 숨겨지는 경우가 있습니다
+
 ## 릴리스 날짜: 2022년 4월
 
 | 구성 요소 | 버전 | 세부 사항 |
@@ -29,7 +53,7 @@ ht-degree: 45%
 | CIF 코어 구성 요소 | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
 | CIF Venia 참조 사이트 | 2022.04.28 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
 
-### 새로운 기능 {#what-is-new}
+### 새로운 기능 {#what-is-new-april}
 
 * 제품 조종실에 대한 빠른 액세스: 사이트 편집기에서 한 번의 클릭으로 전체 세부 제품 정보에 쉽게 액세스할 수 있습니다
 
