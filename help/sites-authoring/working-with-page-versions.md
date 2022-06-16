@@ -1,8 +1,8 @@
 ---
 title: 페이지 버전 사용
-seo-title: 페이지 버전 사용
+seo-title: Working with Page Versions
 description: 페이지 버전 생성, 비교 및 복원
-seo-description: 페이지 버전 생성, 비교 및 복원
+seo-description: Create, compare, and restore versions of a page
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 4d5f7057178ea0a1f00ea363b76dacdfb714b5e3
+source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 69%
+source-wordcount: '1491'
+ht-degree: 68%
 
 ---
 
@@ -64,23 +64,23 @@ ht-degree: 69%
 
    새 버전을 나타내기 위해 업데이트된 정보가 포함된 타임라인이 열립니다.
 
-## 버전 {#reinstating-versions} 복원
+## 버전 복원 {#reinstating-versions}
 
 페이지의 버전을 만들면 이전 버전을 활성화하는 다양한 방법이 있습니다.
 
-* **이 [타임라인](/help/sites-authoring/basic-handling.md#timeline) 레일의** 옵션으로 되돌리기
+* a **이 버전으로 되돌리기** 옵션 [타임라인](/help/sites-authoring/basic-handling.md#timeline) 레일
 
    선택한 페이지의 이전 버전을 복원합니다.
 
-* 맨 위의 [작업 도구 모음](/help/sites-authoring/basic-handling.md#actions-toolbar)에서 **복원** 옵션
+* a **복원** 맨 위의 옵션 [작업 도구 모음](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
    * **버전 복원**
 
-      현재 선택한 폴더에 지정된 페이지의 버전을 복원합니다.또한 이전에 삭제한 페이지 복원을 포함할 수 있습니다.
+      현재 선택한 폴더에 지정된 페이지의 버전을 복원합니다. 또한 이전에 삭제한 페이지 복원을 포함할 수 있습니다.
 
    * **트리 복원**
 
-      지정된 날짜 및 시간으로 전체 트리 버전을 복원합니다.여기에는 이전에 삭제한 페이지가 포함될 수 있습니다.
+      지정된 날짜 및 시간으로 전체 트리 버전을 복원합니다. 여기에는 이전에 삭제한 페이지가 포함될 수 있습니다.
 
 >[!NOTE]
 >
@@ -90,18 +90,18 @@ ht-degree: 69%
 >
 >1. 페이지의 버전을 임의로 만듭니다.
 >1. 초기 레이블 및 버전 노드 이름은 1.0, 1.1, 1.2 등이 됩니다.
->1. 첫 번째 버전을 복원합니다.예: 1.0
+>1. 첫 번째 버전을 복원합니다. 예: 1.0
 >1. 다시 새 버전을 만듭니다.
 >1. 생성된 레이블 및 노드 이름은 이제 1.0.0, 1.0.1, 1.0.2 등이 됩니다.
 
 
-### 버전 {#revert-to-a-version}으로 되돌리기
+### 버전으로 되돌리기 {#revert-to-a-version}
 
-**선택한 페이지를 이전 버전으로 되돌리기**&#x200B;하십시오.
+종료 **되돌리기** 선택한 페이지를 이전 버전으로 변환:
 
 1. 이전 버전으로 되돌릴 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다 .
-1. **타임라인** 열을 열고, **모두 표시** 또는 **버전**&#x200B;을 선택합니다. 선택한 페이지의 이전 버전이 나열됩니다.
+1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page will be listed.
 1. 되돌아갈 버전을 선택합니다. 가능한 옵션이 표시됩니다.
 
    ![이 버전으로 되돌리기](assets/screen-shot_2019-03-05at112505.png)
@@ -110,11 +110,11 @@ ht-degree: 69%
 
 ### 버전 복원 {#restore-version}
 
-이 방법은 현재 폴더 내에서 지정된 페이지의 버전을 복원하는 데 사용할 수 있습니다.이전에 삭제한 페이지 복원을 포함할 수도 있습니다.
+이 방법은 현재 폴더 내에서 지정된 페이지의 버전을 복원하는 데 사용할 수 있습니다. 이전에 삭제한 페이지 복원을 포함할 수도 있습니다.
 
-1. 필요한 폴더로 이동하고 [을(를) 선택합니다.](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+1. 및 로 이동합니다. [선택](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources): 필수 폴더입니다.
 
-1. **복원**&#x200B;을 선택한 다음 맨 위의 [작업 도구 모음](/help/sites-authoring/basic-handling.md#actions-toolbar)에서 **버전 복원**&#x200B;을 선택합니다.
+1. 선택 **복원**, 그런 다음 **버전 복원** 맨 위에서 [작업 도구 모음](/help/sites-authoring/basic-handling.md#actions-toolbar).
 
    >[!NOTE]
    >
@@ -130,7 +130,7 @@ ht-degree: 69%
 
    ![버전 복원 - 폴더의 모든 페이지 목록](/help/sites-authoring/assets/versions-restore-version-01.png)
 
-1. 특정 페이지의 경우 **RESTORE TO VERSION** 아래의 드롭다운 선택기를 사용하여 해당 페이지에 필요한 버전을 선택합니다.
+1. 특정 페이지의 경우 아래의 드롭다운 선택기를 사용하십시오 **버전으로 복원** 을 눌러 해당 페이지에 필요한 버전을 선택합니다.
 
    ![버전 복원 - 버전 선택](/help/sites-authoring/assets/versions-restore-version-02.png)
 
@@ -138,7 +138,7 @@ ht-degree: 69%
 
    ![버전 복원 - 페이지 선택](/help/sites-authoring/assets/versions-restore-version-03.png)
 
-1. 선택한 버전의 선택한 페이지에 대해 **복원**&#x200B;을 선택하여 현재 버전으로 복원합니다.
+1. 선택 **복원** 선택한 버전의 선택한 페이지에 대해 현재 버전으로 복원할 수 있습니다.
 
 >[!NOTE]
 >
@@ -146,23 +146,23 @@ ht-degree: 69%
 
 ### 트리 복원 {#restore-tree}
 
-이 방법은 지정된 날짜 및 시간에 트리 버전을 복원하는 데 사용할 수 있습니다.여기에는 이전에 삭제한 페이지가 포함될 수 있습니다.
+이 방법은 지정된 날짜 및 시간에 트리 버전을 복원하는 데 사용할 수 있습니다. 여기에는 이전에 삭제한 페이지가 포함될 수 있습니다.
 
-1. 필요한 폴더로 이동하고 [을(를) 선택합니다.](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+1. 및 로 이동합니다. [선택](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources): 필수 폴더입니다.
 
-1. **복원**&#x200B;을 선택한 다음 맨 위의 [작업 도구 모음](/help/sites-authoring/basic-handling.md#actions-toolbar)에서 **트리 복원**&#x200B;을 선택합니다. 트리의 최신 버전이 표시됩니다.
+1. 선택 **복원**, 그런 다음 **트리 복원** 맨 위에서 [작업 도구 모음](/help/sites-authoring/basic-handling.md#actions-toolbar). 트리의 최신 버전이 표시됩니다.
 
    ![트리 복원](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
-1. **Latest**&#x200B;의 Latest Versions에 있는 날짜 및 시간 선택기를 사용하여 복원할 트리의 다른 버전을 선택합니다.
+1. 에서 날짜 및 시간 선택기를 사용합니다. **날짜의 최신 버전** 트리의 다른 버전을 선택하려면 복원할 트리입니다.
 
-1. 플래그 **버전 관리되지 않는 페이지**&#x200B;를 필요에 따라 설정합니다.
+1. 플래그 설정 **보존된 버전이 없는 페이지** 필요한 경우:
 
    * 활성(선택) 상태인 경우, 버전이 지정되지 않은 페이지는 그대로 유지되며 복원의 영향을 받지 않습니다.
 
-   * 비활성(선택 안 됨) 경우, 버전이 관리되지 않는 페이지가 버전이 지정된 트리에 없으므로 제거됩니다.
+   * 비활성(선택되지 않음)이면 버전이 지정되지 않은 페이지가 버전이 지정된 트리에 없으므로 제거됩니다.
 
-1. 선택한 버전의 트리를 *현재* 버전으로 복원할 **복원**&#x200B;을 선택합니다.
+1. 선택 **복원** 선택한 버전의 트리가 *현재* 버전.
 
 ## 버전 미리 보기 {#previewing-a-version}
 
@@ -170,7 +170,7 @@ ht-degree: 69%
 
 1. 비교할 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다 .
-1. **타임라인** 열을 열고, **모두 표시** 또는 **버전**&#x200B;을 선택합니다. 
+1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. 페이지 버전이 나열됩니다. 미리 볼 버전을 선택합니다.
 
    ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
@@ -190,7 +190,7 @@ ht-degree: 69%
 
 1. 비교할 페이지로 이동하여 표시합니다.
 1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다 .
-1. **타임라인** 열을 열고, **모두 표시** 또는 **버전**&#x200B;을 선택합니다. 
+1. 를 엽니다. **타임라인** 열을 선택하고 **모두 표시** 또는 **버전**.
 1. 페이지 버전이 나열됩니다. 비교할 버전을 선택합니다.
 
    ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
@@ -200,6 +200,10 @@ ht-degree: 69%
 ## 타임워프 {#timewarp}
 
 타임워프는 과거의 특정 시점에 *게시된* 페이지의 상태를 시뮬레이션하도록 디자인된 기능입니다.
+
+>[!TIP]
+>
+>[타임워프는 론치와 함께 사용하여 미래를 미리 볼 수도 있습니다](/help/sites-authoring/launches.md) AEM 6.5.10.0 이상을 실행할 때
 
 컨텐츠 작성은 지속적인 공동 작업 프로세스이므로 타임워프는 컨텐츠 작성자가 컨텐츠가 변경된 방식을 파악하기 위해 시간에 따라 게시된 웹 사이트를 추적할 수 있도록 하는 데 목적이 있습니다. 이 기능은 페이지 버전을 사용하여 게시 환경의 상태를 확인합니다.
 
@@ -218,7 +222,7 @@ ht-degree: 69%
 
    ![wwpv-01](assets/wwpv-01.png)
 
-1. 대화 상자에서 대상 날짜 및 시간을 설정하고 **날짜 설정**&#x200B;을 클릭하거나 탭합니다. 시간을 선택하지 않으면 현재 시간이 기본값이 됩니다.
+1. In the dialogue set a target date and time and click or tap **Set Date**. If you do not select a time, the current time will default.
 
    ![wwpv-02](assets/wwpv-02.png)
 
