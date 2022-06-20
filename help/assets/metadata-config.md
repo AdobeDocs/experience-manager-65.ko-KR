@@ -5,14 +5,20 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: f854960dbb35cfb0f88d209a711f623099960edc
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '1977'
-ht-degree: 3%
+source-wordcount: '2012'
+ht-degree: 5%
 
 ---
 
 # 의 메타데이터 기능 구성 및 관리 [!DNL Assets] {#config-metadata}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM 6.5 | 이 문서 |
+| AEM 6.4 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/metadata-profiles.html?lang=en) |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -20,7 +26,7 @@ ht-degree: 3%
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets] 는 모든 자산에 대한 메타데이터를 유지합니다. 자산을 보다 쉽게 분류하고 구성할 수 있으며 특정 자산을 찾는 사람에게 도움이 됩니다. 자산으로 메타데이터를 유지 및 관리하는 기능을 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다. [!DNL Adobe Experience Manager Assets] 관리자는 기본 Adobe 오퍼링을 수정할 메타데이터 기능을 구성하고 사용자 지정할 수 있습니다.
+[!DNL Adobe Experience Manager Assets] 모든 자산에 대한 메타데이터를 유지합니다. 자산을 보다 쉽게 분류하고 구성할 수 있으며 특정 자산을 찾는 사람에게 도움이 됩니다. 자산으로 메타데이터를 유지 및 관리하는 기능을 사용하면 메타데이터를 기반으로 자산을 자동으로 구성하고 처리할 수 있습니다. [!DNL Adobe Experience Manager Assets] 관리자는 기본 Adobe 오퍼링을 수정할 메타데이터 기능을 구성하고 사용자 지정할 수 있습니다.
 
 ## 메타데이터 스키마 편집 {#metadata-schema}
 
@@ -99,7 +105,7 @@ ht-degree: 3%
 
 1. 클릭 **[!UICONTROL 복사]** 를 클릭합니다.
 1. 에서 **[!UICONTROL 메타데이터 프로필 복사]** 대화 상자에서 메타데이터 프로필의 새 사본의 제목을 입력합니다.
-1. **[!UICONTROL 복사]**&#x200B;를 클릭합니다. 메타데이터 프로필의 사본이 **[!UICONTROL 메타데이터 프로필]** 페이지.
+1. **[!UICONTROL 복사]**&#x200B;를 클릭합니다. The copy of the Metadata Profile appears in the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
 
    ![메타데이터 프로필 페이지에 추가된 메타데이터 프로필 사본](assets/copy-metadata-profile.png)
 
@@ -255,7 +261,7 @@ To apply a metadata profile globally, follow these steps:
 
 ### 폴더 메타데이터 스키마 사용 {#use-the-folder-metadata-schema}
 
-폴더 메타데이터 스키마로 구성된 폴더의 속성을 엽니다. A **[!UICONTROL 폴더 메타데이터]** 탭이 폴더에 표시됩니다 [!UICONTROL 속성] 페이지. 폴더 메타데이터 스키마 양식을 보려면 이 탭을 선택합니다.
+Open the properties for a folder configured with a folder metadata schema. A **[!UICONTROL 폴더 메타데이터]** 탭이 폴더에 표시됩니다 [!UICONTROL 속성] 페이지. To view the folder metadata schema form, select this tab.
 
 다양한 필드에 메타데이터 값을 입력하고 **[!UICONTROL 저장]** 값을 저장합니다. 지정하는 값은 CRX 저장소의 폴더 노드에 저장됩니다.
 

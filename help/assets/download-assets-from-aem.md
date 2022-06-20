@@ -1,18 +1,24 @@
 ---
-title: 자산 다운로드
+title: 에셋 다운로드
 description: 다음에서 자산을 다운로드하는 방법을 알아봅니다. [!DNL Adobe Experience Manager] 다운로드 기능을 활성화하거나 비활성화합니다.
 contentOwner: AG
 role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: f9d82edbb7469fab96629fc6cf4f138a082691fd
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 5%
 
 ---
 
 # 다음에서 자산 다운로드 [!DNL Adobe Experience Manager] {#download-assets-from-aem}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
+| AEM 6.5 | 이 문서 |
+| AEM 6.4 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/download-assets-from-aem.html?lang=en) |
 
 정적 및 동적 표현물을 포함한 자산을 다운로드할 수 있습니다. 또는 다음에서 바로 자산에 대한 링크가 있는 이메일을 보낼 수 있습니다 [!DNL Adobe Experience Manager Assets]. 다운로드한 자산은 ZIP 파일에 번들로 제공됩니다. 압축 ZIP 파일의 최대 파일 크기는 내보내기 작업의 1GB입니다. 내보내기 작업당 최대 500개의 총 자산이 허용됩니다.
 

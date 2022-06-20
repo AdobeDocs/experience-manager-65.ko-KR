@@ -4,14 +4,20 @@ description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
-source-git-commit: 00713ea7fe06d4e180232e48a9e3f11b53f4326f
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 0%
+source-wordcount: '1749'
+ht-degree: 1%
 
 ---
 
 # 구성 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
+| AEM 6.5 | 이 문서 |
+| AEM 6.4 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-configure.html?lang=en) |
 
 에 관리자 액세스 권한이 있는 사용자 [!DNL Adobe Experience Manager] 설치 후 고급 커넥터를 구성합니다. 설치 지침은 [커넥터 설치](/help/assets/workfront-integrations.md).
 

@@ -5,14 +5,20 @@ contentOwner: AG
 role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: fb9de8a0303edd7e54639f7bb9c8a4f8e9227fa8
+source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 5%
+source-wordcount: '1043'
+ht-degree: 6%
 
 ---
 
 # 링크로 자산 공유 {#asset-link-sharing}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
+| AEM 6.5 | 이 문서 |
+| AEM 6.4 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/link-sharing.html?lang=en) |
 
 [!DNL Adobe Experience Manager Assets] 자산, 폴더 및 컬렉션을 조직 및 외부 엔티티(파트너 및 공급업체 등)의 멤버와 URL로 공유할 수 있습니다. 링크를 통해 자산을 공유하는 것은 자산을 처음 로그인하지 않고도 외부 당사자가 리소스를 사용할 수 있도록 하는 편리한 방법입니다 [!DNL Assets].
 
@@ -22,7 +28,7 @@ ht-degree: 5%
 >* 사용자에게 전자 메일을 보내려면 [일 CQ 메일 서비스](#configmailservice).
 
 
-## 자산 공유 {#share-assets}
+## 에셋 공유 {#share-assets}
 
 사용자와 공유할 자산의 URL을 생성하려면 [!UICONTROL 링크 공유] 대화 상자.
 

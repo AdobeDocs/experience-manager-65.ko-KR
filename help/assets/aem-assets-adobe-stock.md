@@ -5,14 +5,20 @@ contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-source-git-commit: bfc4aa92770b001bdf89d89fa149d8e4ceefa6c2
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '2458'
-ht-degree: 10%
+source-wordcount: '2493'
+ht-degree: 14%
 
 ---
 
 # 사용 [!DNL Adobe Stock] 자산 [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
+| AEM 6.5 | 이 문서 |
+| AEM 6.4 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/aem-assets-adobe-stock.html?lang=en) |
 
 <!-- old content
 
@@ -48,7 +54,7 @@ The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stocken
 
 * An [enterprise [!DNL Adobe Stock] 계획](https://stockenterprise.adobe.com/)
 * 기본 Stock 제품 프로필에 대한 Admin Console 권한이 있는 사용자
-* 개발자 콘솔에서 통합을 만들기 위해 개발자 액세스 프로필에 대한 권한이 있는 사용자
+* Adobe Developer 콘솔에서 통합을 만들기 위해 개발자 액세스 프로필에 대한 권한이 있는 사용자
 
 엔터프라이즈 [!DNL Adobe Stock] 계획,
 
@@ -105,7 +111,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 ### 공개 인증서 받기 {#public-certificate}
 
-공개 키(인증서)는 Adobe 개발자 콘솔에서 제품 프로필을 인증합니다.
+공개 키(인증서)는 Adobe Developer 콘솔에서 제품 프로필을 인증합니다.
 
 1. 에 로그인합니다. [!DNL Experience Manager Assets] 작성자 인스턴스. 기본 URL은 `http://localhost:4502/aem/start.html`.
 
@@ -121,7 +127,7 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. **[!UICONTROL 인증서 만들기]**&#x200B;를 클릭합니다. 그런 다음 **[!UICONTROL 확인]** 공개 키를 생성합니다.
 
-1. 을(를) 클릭합니다. **[!UICONTROL 공개 키 다운로드]** 아이콘을 클릭하고 공개 키(.crt) 파일을 컴퓨터에 저장합니다. 공개 키는 나중에 Brand Portal 테넌트에 대한 API를 구성하고 Adobe 개발자 콘솔에서 서비스 계정 자격 증명을 생성하는 데 사용됩니다.
+1. 을(를) 클릭합니다. **[!UICONTROL 공개 키 다운로드]** 아이콘을 클릭하고 공개 키(.crt) 파일을 컴퓨터에 저장합니다. 공개 키는 나중에 Brand Portal 테넌트에 대한 API를 구성하고 Adobe Developer 콘솔에서 서비스 계정 자격 증명을 생성하는 데 사용됩니다.
 
    **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
@@ -129,15 +135,15 @@ IMS 구성에는 두 단계가 포함됩니다.
 
 1. 에서 **계정** 탭에서 서비스 계정 자격 증명이 필요한 Adobe IMS 계정이 만들어집니다.
 
-   새 탭을 열고 [Adobe 개발자 콘솔에서 서비스 계정(JWT) 연결 만들기](#createnewintegration).
+   새 탭을 열고 [Adobe Developer 콘솔에서 서비스 계정(JWT) 연결 만들기](#createnewintegration).
 
 ### 서비스 계정(JWT) 연결 만들기 {#createnewintegration}
 
-Adobe 개발자 콘솔에서 프로젝트 및 API는 조직 수준에서 구성됩니다. API를 구성하면 서비스 계정(JWT) 연결이 만들어집니다. 키 쌍(개인 및 공개 키)을 생성하거나 공개 키를 업로드하여 API를 구성하는 두 가지 방법이 있습니다. 이 예에서는 서비스 계정 자격 증명이 공개 키를 업로드하여 생성됩니다.
+Adobe Developer 콘솔에서 프로젝트 및 API는 조직 수준에서 구성됩니다. API를 구성하면 서비스 계정(JWT) 연결이 만들어집니다. 키 쌍(개인 및 공개 키)을 생성하거나 공개 키를 업로드하여 API를 구성하는 두 가지 방법이 있습니다. 이 예에서는 서비스 계정 자격 증명이 공개 키를 업로드하여 생성됩니다.
 
 서비스 계정 자격 증명과 JWT 페이로드를 생성하려면 다음을 수행합니다.
 
-1. 시스템 관리자 권한으로 Developer Console에 로그인합니다. 기본 URL은 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. 시스템 관리자 권한으로 Adobe Developer 콘솔에 로그인합니다. 기본 URL은 [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    드롭다운(조직) 목록에서 올바른 IMS 조직(Stock entitlement)을 선택했는지 확인합니다.
@@ -307,10 +313,10 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
 | 사용자 | 그룹 | 권한 | 사용자 기본 설정에서 Stock 구성 수락 | 자산 액세스 | Adobe Stock 액세스 |
 | --- | --- | --- | --- | --- | --- |
-| admin | N/A | 모든 | 해당 없음 | 예 | 예 |
+| admin | 해당 없음 | 모든 | 해당 없음 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global /settings/stock/cloud-config | 예 | 예 | 예 |
-| test-doc1 | DAM 사용자 | /conf/global /settings/stock/cloud-config | 아니오 | 오류: 데이터를 로드하지 못했습니다. | 아니오 |
-| test-doc1 | DAM 사용자 | **허용**: /conf/global /settings/stock     **거부**: /cloud-config | 스톡 구성이 표시되지 않음 | 예 | 아니오 |
+| test-doc1 | DAM 사용자 | /conf/global /settings/stock/cloud-config | 아니요 | 오류: 데이터를 로드하지 못했습니다. | 아니요 |
+| test-doc1 | DAM 사용자 | **허용**: /conf/global /settings/stock     **거부**: /cloud-config | 스톡 구성이 표시되지 않음 | 예 | 아니요 |
 
 
 ## 사용 및 관리 [!DNL Adobe Stock] 자산 [!DNL Experience Manager] {#usemanage}
@@ -321,7 +327,7 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
 ![검색 대상 [!DNL Adobe Stock] 자산 및 결과의 필터링 [!DNL Adobe Experience Manager] 작업 영역](assets/adobe-stock-search-results-workspace.png)
 
-**A.** 자산을 검색하는 [!DNL Adobe Stock] ID가 제공됩니다. **B.** 선택한 모양 또는 방향과 일치하는 자산을 검색합니다. **C.** 지원되는 자산 유형 중 하나를 검색합니다 **D.** 필터 창을 열거나 축소합니다. **E.** 선택한 자산에 대한 라이선스 및 저장 [!DNL Experience Manager] **F.** 자산 저장 위치 [!DNL Experience Manager] 워터마크 **G.** 에서 자산 탐색 [!DNL Adobe Stock] 선택한 자산과 유사한 웹 사이트 **H.** 에서 선택한 자산 보기 [!DNL Adobe Stock] 웹 사이트 **나.** 검색 결과에서 선택한 자산 수 **J.** 카드 보기와 목록 보기 간 전환
+**A.**[!DNL Adobe Stock] Search assets similar to the assets whose ID is provided. **B.** Search assets that match your selection of shape or orientation. **C.** Search for one of more supported asset types **D.** Open or collapse the filters pane **E.** License and save the selected asset in [!DNL Experience Manager]**F.**[!DNL Experience Manager] Save the asset in with watermark **G.**[!DNL Adobe Stock] Explore assets on website that are similar to the selected asset **H.**[!DNL Adobe Stock] View the selected assets on website **I.** Number of selected assets from the search results **J.** Switch between Card view and List view
 
 ### 자산 찾기 {#find-assets}
 

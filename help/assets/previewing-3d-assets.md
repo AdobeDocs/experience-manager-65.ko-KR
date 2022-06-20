@@ -1,23 +1,28 @@
 ---
-title: 3D 자산 미리 보기
+title: 3D 에셋 미리보기
 description: Experience Manager에서 3D 자산을 미리 보는 방법을 알아봅니다.
 contentOwner: Rick Brough
 docset: aem65
 feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 32e637463a2f68a48b39c5dea9cc3cc4d1596d9b
+source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 10%
+source-wordcount: '580'
+ht-degree: 12%
 
 ---
 
 # Adobe Experience Manager에서 3D 자산 미리 보기 {#previewing-3d-assets-aem}
 
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM 6.5 | 이 문서 |
+
 Experience Manager은 작성 프로세스의 일부로 3D 자산 업로드, 전달 및 대화형 미리 보기를 지원합니다.
 
-대화형 3D 뷰어는 Experience Manager의 자산 세부 사항 페이지에서 사용할 수 있습니다. 이 뷰어에는 3D 자산을 궤도를 따라 이동하고, 확대/축소하고, 패닝할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
+대화형 3D 뷰어는 Experience Manager의 자산 세부 사항 페이지에서 사용할 수 있습니다. 이 뷰어에는 3D 에셋을 궤도를 따라 이동하고, 확대/축소하고, 패닝할 수 있는 대화형 카메라 컨트롤 컬렉션이 포함되어 있습니다.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 

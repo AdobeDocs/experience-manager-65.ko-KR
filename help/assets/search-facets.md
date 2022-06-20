@@ -5,14 +5,20 @@ contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: b9def70b86d3313a5f6d429ae49ba6ef3947a35a
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '2394'
-ht-degree: 3%
+source-wordcount: '2429'
+ht-degree: 17%
 
 ---
 
 # 검색 패싯 {#search-facets}
+
+| 버전 | 문서 링크 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
+| AEM 6.5 | 이 문서 |
+| AEM 6.4 | [여기를 클릭하십시오.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/search-facets.html?lang=en) |
 
 전사적 구축 [!DNL Adobe Experience Manager Assets] 는 많은 자산을 저장할 수 있는 능력이 있습니다. 다음의 일반 검색 기능만 사용하는 경우 적절한 자산을 찾는 것은 어렵고 시간이 걸릴 수 있습니다. [!DNL Experience Manager].
 
@@ -49,7 +55,7 @@ ht-degree: 3%
 
 1. 에서 [!UICONTROL 설정] 탭에서 필드 레이블, 자리 표시자 텍스트 및 조건자에 대한 설명을 입력합니다. 조건자와 연결할 메타데이터 속성의 올바른 이름을 지정합니다. 의 헤더 레이블입니다 [!UICONTROL 설정] 탭은 선택한 조건부의 유형을 식별합니다.
 
-1. 에서 [!UICONTROL 속성 이름] 필드에서 조건자와 연결할 메타데이터 속성의 올바른 이름을 지정합니다. 이 이름은 검색이 수행되는 기준 이름입니다. 예를 들어, 을 입력합니다. `jcr:content/metadata/dc:description` 또는 `./jcr:content/metadata/dc:description`.
+1. In the [!UICONTROL Property Name] field, specify a valid name for the metadata property you want to associate with the predicate. It is the name based on which the search is performed. For example, enter `jcr:content/metadata/dc:description` or `./jcr:content/metadata/dc:description`.
 
    선택 대화 상자에서 기존 노드를 선택할 수도 있습니다.
 
@@ -79,13 +85,13 @@ ht-degree: 3%
 
 옵션을 선택하면 `value` 옵션 노드 및 그 하위 노드의 등록 정보(있는 경우)입니다. 옵션 노드 아래의 전체 트리가 탐색되고 `value` 각 하위 노드의 속성은 OR 작업을 사용하여 검색 쿼리를 형성합니다.
 
-예를 들어 파일 유형에 대해 &quot;이미지&quot;를 선택하면 자산에 대한 검색 쿼리가 를 결합하여 빌드됩니다 `value` 또는 작업을 사용하는 속성입니다. 예를 들어 이미지에 대한 검색 쿼리는 일치하는 결과를 결합하여 만들어집니다 *이미지/jpeg*, *이미지/gif*, *이미지/png*, *이미지/pjpeg*, 및 *이미지/tiff* 속성 `jcr:content/metadata/dc:format` OR 작업 사용.
+For example, if you select &quot;Images&quot; for file types, the search query for the assets is built by combining the `value` property using an OR operation. For example, the search query for images is built by combining the results matched for *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg*, and *image/tiff* for the property `jcr:content/metadata/dc:format` using an OR operation.
 
 ![CRXDE에서와 같이 파일 형식의 값 속성은 검색 쿼리가 작동하는 데 사용됩니다](assets/filetype-value-property.png)
 
 CRXDE에서와 같이 파일 형식의 값 속성은 검색 쿼리가 작동하는 데 사용됩니다
 
-CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대신 해당 키-값 쌍을 지정하여 JSON 파일에서 옵션을 정의할 수 있습니다. 에서 JSON 파일의 경로를 지정합니다 **[!UICONTROL 속성 이름]** 필드. 예를 들어 키-값 쌍을 정의할 수 있습니다. `image/bmp`, `image/gif`, `image/jpeg`, 및 `image/png` 및 다음 샘플 JSON 파일에 표시된 대로 해당 값을 지정합니다. 에서 **[!UICONTROL 속성 이름]** 필드에서 이 파일의 CRXDE 경로를 지정할 수 있습니다.
+CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대신 해당 키-값 쌍을 지정하여 JSON 파일에서 옵션을 정의할 수 있습니다. Specify the path of the JSON file in the **[!UICONTROL Property Name]** field. For example, you can define the key-value pairs, `image/bmp`, `image/gif`, `image/jpeg`, and `image/png` and specify their values as shown in the following sample JSON file. 에서 **[!UICONTROL 속성 이름]** 필드에서 이 파일의 CRXDE 경로를 지정할 수 있습니다.
 
 ```json
 {
@@ -107,14 +113,14 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 
 1. 을(를) 클릭합니다. [!DNL Experience Manager] 로고로 이동한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms 검색]**.
 1. 에서 **[!UICONTROL Forms 검색]** 페이지를 선택하고 **[!UICONTROL Assets 관리 검색 레일]**&#x200B;를 클릭한 다음 **[!UICONTROL 편집]**.
-1. 에서 **[!UICONTROL 검색 양식 편집]** 페이지, 드래그 **[!UICONTROL 옵션 설명]** 에서 **[!UICONTROL 설명 선택]** 기본 창으로 이동합니다.
-1. 에서 **[!UICONTROL 설정]** 탭에서 레이블과 속성 이름을 입력합니다. 예를 들어 해당 형식을 기준으로 자산을 검색하려면 레이블에 대해 사용자에게 친숙한 이름을 지정합니다 **[!UICONTROL 파일 유형]**. 예를 들어 속성 필드에서 검색을 수행할 속성을 지정합니다 `jcr:content/metadata/dc:format.`
+1. In the **[!UICONTROL Edit Search Form]** page, drag **[!UICONTROL Options Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
+1. In the **[!UICONTROL Settings]** tab, enter a label and a name for the property. For example, to search assets based on their format, specify a user-friendly name for the label, for example **[!UICONTROL File Type]**. Specify the property based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:format.`
 1. 다음 중 하나를 수행하십시오.
 
    * 에서 **[!UICONTROL 속성 이름]** 필드에 옵션에 대한 노드를 정의하고 해당 키-값 쌍을 지정하는 JSON 파일의 경로가 설명되어 있습니다.
    * 을(를) 클릭합니다. `+` [옵션] 필드 옆에 있는 기호를 사용하여 [필터] 패널에서 제공할 옵션에 대한 표시 텍스트와 값을 지정합니다. 다른 옵션을 추가하려면 `+` 심볼과 단계를 반복합니다.
 
-1. 확인 **[!UICONTROL 단일 선택]** 는 사용자가 한 번에 여러 파일 유형(예: 이미지, 문서, 멀티미디어 및 아카이브)에 대한 옵션을 선택할 수 있도록 선택 취소됩니다. 선택하는 경우 **[!UICONTROL 단일 선택]**&#x200B;에서는 파일 유형에 대해 한 번에 하나의 옵션만 선택할 수 있습니다.
+1. Ensure that **[!UICONTROL Single Select]** is cleared to let the user select multiple options for file types at a time (for example, Images, Documents, Multimedia, and Archives). If you select **[!UICONTROL Single Select]**, the user can select only one option for file types at a time.
 
    ![옵션 조건부의 사용 가능한 필드](assets/options_predicate.png)
 
@@ -129,11 +135,11 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 
 1. 을(를) 클릭합니다. [!DNL Experience Manager] 로고로 이동한 다음 **[!UICONTROL 도구]** > **[!UICONTROL 일반]** > **[!UICONTROL Forms 검색]**.
 1. Forms 검색 페이지에서 **[!UICONTROL Assets 관리 검색 레일]**, 클릭 **[!UICONTROL 편집]** ![편집 아이콘](assets/do-not-localize/aemassets_edit.png).
-1. 검색 양식 편집 페이지에서 **[!UICONTROL 다중 값 속성 설명]** 에서 **[!UICONTROL 설명 선택]** 기본 창으로 이동합니다.
+1. In the Edit Search Form page, drag a **[!UICONTROL Multi Value Property Predicate]** from the **[!UICONTROL Select Predicate]** tab to the main pane.
 1. 에서 **[!UICONTROL 설정]** 탭에서 조건자의 레이블과 자리 표시자 텍스트를 입력합니다. 속성 필드에서 검색을 수행할 속성 이름을 지정합니다(예: ) `jcr:content/metadata/dc:value`. 선택 대화 상자에서 노드를 선택할 수도 있습니다.
-1. 확인 **[!UICONTROL 구분 기호 지원]** 이 선택되어 있습니다. 에서 **[!UICONTROL 입력 구분 기호]** 필드에서 구분 기호를 지정하여 개별 값을 구분합니다. 기본적으로 쉼표는 구분 기호로 지정됩니다. 다른 구분 기호를 지정할 수 있습니다.
+1. Ensure that **[!UICONTROL Delimiter Support]** is selected. In the **[!UICONTROL Input Delimiters]** field, specify delimiters to separate individual values. By default, comma is specified as the delimiter. You can specify a different delimiter.
 1. 에서 **설명** 필드, 선택적 설명을 입력한 다음 **[!UICONTROL 완료]**.
-1. 에서 필터 패널로 이동합니다 [!DNL Assets] 사용자 인터페이스. 다음 **[!UICONTROL 다중 값 속성]** 조건부가 패널에 추가됩니다.
+1. 에서 필터 패널로 이동합니다 [!DNL Assets] 사용자 인터페이스. The **[!UICONTROL Multi Value Property]** predicate is added to the panel.
 1. 복수 값 필드에 구분 기호로 구분된 여러 값을 지정하고 검색을 수행합니다. 조건부는 지정한 값에 대해 정확한 텍스트 일치를 가져옵니다.
 
 ## 태그 설명 추가 {#adding-a-tags-predicate}
@@ -145,7 +151,7 @@ CRXDE 저장소의 옵션에 대한 노드 구조를 수동으로 만드는 대�
 1. 검색 양식 편집 페이지에서 **[!UICONTROL 태그 설명]** 설명 선택 탭에서 기본 창으로 이동합니다.
 1. 설정 탭에서 조건자의 자리 표시자 텍스트를 입력합니다. 속성 필드에서 검색을 수행할 속성 이름을 지정합니다(예: ) *jcr:content/metadata/cq:tags*. 또는 선택 대화 상자에서 CRXDE의 노드를 선택할 수 있습니다.
 1. 태그 목록에서 다양한 태그를 채우도록 이 술어의 루트 태그 경로 속성을 구성합니다.
-1. 선택 **[!UICONTROL 모든 태그 일치 표시 옵션]** 지정하는 모든 태그를 포함하는 자산을 검색하려면 다음을 수행하십시오.
+1. Select **[!UICONTROL Show match all tags option]** to search for assets that include all tags that you specify.
 
 1. 에서 **[!UICONTROL 설명]** 필드, 선택적 설명을 입력한 다음 **[!UICONTROL 완료]**.
 1. 검색 패널로 이동합니다. 다음 **[!UICONTROL 태그]** 설명이 [검색] 패널에 추가됩니다.
