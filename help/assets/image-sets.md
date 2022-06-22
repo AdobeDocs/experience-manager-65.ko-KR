@@ -11,9 +11,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2194'
 ht-degree: 7%
 
 ---
@@ -35,6 +35,15 @@ ht-degree: 7%
 >[!NOTE]
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [자산 관리](/help/assets/manage-assets.md).
+
+이미지 세트를 생성할 때 Adobe은 다음 우수 사례를 권장하고 다음 제한을 적용합니다.
+
+| 자산 - 제한 유형 | 우수 사례 | 구현된 제한 | 제한 변경: 2022년 12월 31일 |
+| --- | --- | --- | --- |
+| **이미지 세트** - 세트당 중복 자산 수 | 중복 없음 | 100 | 20 |
+| **이미지 세트** - 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000 |
+
+참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
 ## 빠른 시작: 이미지 세트 {#quick-start-image-sets}
 
@@ -130,6 +139,15 @@ ht-degree: 7%
 >[!NOTE]
 >
 >파일 이름에 &quot;,&quot;(쉼표)가 있는 자산에 대해 이미지 세트가 지원되지 않습니다.
+
+이미지 세트를 생성할 때 Adobe은 다음 우수 사례를 권장하고 다음 제한을 적용합니다.
+
+| 자산 - 제한 유형 | 우수 사례 | 구현된 제한 | 제한 변경: 2022년 12월 31일 |
+| --- | --- | --- | --- |
+| **이미지 세트** - 세트당 중복 자산 수 | 중복 없음 | 100년 | 20년 |
+| **이미지 세트** - 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000년 |
+
+참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
 **이미지 세트를 만들려면 다음을 수행하십시오.**
 

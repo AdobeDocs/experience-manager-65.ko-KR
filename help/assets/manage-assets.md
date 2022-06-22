@@ -2,13 +2,13 @@
 title: 디지털 에셋 관리
 description: 디지털 자산 업로드, 다운로드, 편집, 검색, 삭제, 주석 달기 및 버전과 같은 자산 관리 작업을 알아봅니다.
 contentOwner: AG
-mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
+mini-toc-levels: 3
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: dd1e08bee03a6c7b07b32b0fb929d02dad467744
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '9913'
+source-wordcount: '9974'
 ht-degree: 4%
 
 ---
@@ -210,7 +210,7 @@ Dynamic Media을 사용하면 FTP 서버를 통해 자산을 일괄 업로드할
 |  | 이미지 편집 옵션 | 이미지의 클리핑 마스크를 유지하고 색상 프로파일을 선택할 수 있습니다.<br> 자세한 내용은 [업로드 시 이미지 편집 옵션을 설정합니다.](#setting-image-editing-options-at-upload). |
 |  | Postscript 옵션 | PostScript® 파일을 래스터화하고, 파일을 자르며, 투명한 배경을 유지하고, 해상도를 선택하고, 색상 공간을 선택할 수 있습니다.<br> 자세한 내용은 [PostScript 및 Illustrator 업로드 옵션 설정](#setting-postscript-and-illustrator-upload-options). |
 |  | Photoshop 옵션 | Adobe® Photoshop® 파일에서 템플릿을 만들고, 레이어를 유지 관리하며, 레이어의 이름을 지정하는 방법을 지정하고, 텍스트를 추출하고, 이미지가 템플릿에 고정된 방식을 지정할 수 있습니다.<br> 템플릿은 [!DNL Experience Manager].<br> 자세한 내용은 [Photoshop 업로드 옵션 설정](#setting-photoshop-upload-options). |
-|  | PDF 옵션 | 파일을 래스터화하고, 검색어와 링크를 추출하고, eCatalog를 자동으로 생성하고, 해상도를 설정하고, 색상 공간을 선택할 수 있습니다.<br>eCatalog는에서 지원되지 않습니다. [!DNL Experience Manager]. <br> 자세한 내용은 [PDF 업로드 옵션 설정](#setting-pdf-upload-options). |
+|  | PDF 옵션 | 파일을 래스터화하고, 검색어와 링크를 추출하고, eCatalog를 자동으로 생성하고, 해상도를 설정하고, 색상 공간을 선택할 수 있습니다.<br>eCatalog는에서 지원되지 않습니다. [!DNL Experience Manager]. <br> 자세한 내용은 [PDF 업로드 옵션 설정](#setting-pdf-upload-options).<br>**참고**: 추출을 위해 고려할 PDF의 최대 페이지 수는 새 업로드를 위해 5000개입니다. 이 제한은 2022년 12월 31일에 100페이지로 변경됩니다. 참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md). |
 |  | Illustrator 옵션 | Adobe Illustrator® 파일을 래스터화하고 투명한 배경을 유지하고 해상도를 선택한 다음 색상 공간을 선택할 수 있습니다.<br> 자세한 내용은 [PostScript 및 Illustrator 업로드 옵션 설정](#setting-postscript-and-illustrator-upload-options). |
 |  | 비디오 옵션 | 비디오 사전 설정을 선택하여 비디오 파일을 변환할 수 있습니다.<br> 자세한 내용은 [eVideo 업로드 옵션 설정](#setting-evideo-upload-options). |
 |  | 일괄 처리 집합 사전 설정 | 업로드된 파일에서 이미지 세트 또는 스핀 세트를 만들려면 사용할 사전 설정에 대해 활성 열을 클릭합니다. 두 개 이상의 사전 설정을 선택할 수 있습니다. Dynamic Media Classic의 애플리케이션 설정/일괄처리 세트 사전 설정 페이지에서 사전 설정을 만듭니다.<br> 자세한 내용은 [이미지 세트 및 스핀 세트를 자동으로 생성하도록 일괄처리 집합 사전 설정 구성](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 일괄처리 집합 사전 설정 만들기에 대해 자세히 알아보십시오.<br> 자세한 내용은 [업로드 시 일괄처리 집합 사전 설정 설정 설정](#setting-batch-set-presets-at-upload). |
@@ -283,6 +283,8 @@ Dynamic Media은 파일을 사용하여 템플릿을 만들 경우 레이어가 
 #### PDF 업로드 옵션 설정 {#setting-pdf-upload-options}
 
 PDF 파일을 업로드할 때 다양한 방법으로 형식을 지정할 수 있습니다. 페이지를 자릅니다. 검색 단어를 추출하고 인치당 픽셀 수를 입력하고 색상 공간을 선택합니다. PDF 파일에는 트림 여백, 재단선 표시, 등록 표시 및 기타 프린터 표시가 들어 있습니다. PDF 파일을 업로드할 때 페이지 양쪽에서 이러한 표시를 자를 수 있습니다.
+
+추출을 위해 고려할 PDF의 최대 페이지 수는 새 업로드를 위해 5000개입니다. 이 제한은 2022년 12월 31일에 100페이지로 변경됩니다. 참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
 >[!NOTE]
 >

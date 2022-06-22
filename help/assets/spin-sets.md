@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1946'
 ht-degree: 9%
 
 ---
@@ -31,6 +31,14 @@ ht-degree: 9%
 >[!NOTE]
 >
 >Assets 사용자 인터페이스에 대한 자세한 내용은 [자산 관리](/help/assets/manage-assets.md).
+
+스핀 세트를 만들 때, Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
+
+| 제한 유형 | 우수 사례 | 구현된 제한 |
+| --- | --- | --- |
+| 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000 |
+
+참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
 ## 빠른 시작: 스핀 세트 {#quick-start-spin-sets}
 
@@ -113,6 +121,14 @@ ht-degree: 9%
 >[!NOTE]
 >
 >스핀 세트 물질에 이미지가 표시되는 순서입니다. 회전 방향이 매끄러운 360° 보기라면 반드시 주문하십시오.
+
+스핀 세트를 만들 때, Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
+
+| 제한 유형 | 우수 사례 | 구현된 제한 |
+| --- | --- | --- |
+| 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000년 |
+
+참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
 **스핀 세트를 만들려면:**
 
