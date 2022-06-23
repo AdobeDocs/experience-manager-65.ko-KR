@@ -4,7 +4,7 @@ description: 즉각적인 업그레이드를 수행하는 방법을 알아봅니
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 64c9296554c55b539145dd59a14b2255b1750e47
+source-git-commit: 6d2b7e341dcdedf3c000b9fb0ecd21722bdf2a27
 workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 0%
@@ -187,7 +187,7 @@ While `FileDataStore` 는 외부 데이터 저장소를 사용하는 AEM 6.3 설
 1. 기존 jar( `crx-quickstart/app/aem-quickstart*.jar` 이 경우))에 새 jar이 포함된 경우 `crx-quickstart` 폴더를 입력합니다. 이전 명령을 예로 사용하면 다음과 같은 명령을 사용할 수 있습니다.
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    이렇게 하면 업그레이드에 모든 적절한 메모리 설정, 사용자 지정 실행 모드 및 기타 환경 매개 변수가 적용됩니다. 업그레이드가 완료되면 이후 시작 시 시작 스크립트에서 인스턴스가 시작될 수 있습니다.
