@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '2825'
+source-wordcount: '2831'
 ht-degree: 10%
 
 ---
@@ -33,9 +33,9 @@ ht-degree: 10%
 
 이미지에서 스마트 자르기를 구현할 때 Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
 
-| 제한 유형 | 우수 사례 | 구현된 제한 |
-| --- | --- | --- |
-| 이미지당 스마트 자르기 수 | 5 | 100 |
+| 제한 유형 | 우수 사례 | 제한 적용 | 2022년 12월 31일에 제한하는 것으로 변경 |
+| --- | --- | --- | --- |
+| 이미지당 스마트 자르기 수 | 5 | 100 | 20 |
 
 참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 

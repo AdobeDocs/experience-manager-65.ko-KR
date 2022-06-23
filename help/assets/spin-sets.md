@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1952'
 ht-degree: 9%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 9%
 
 스핀 세트를 만들 때, Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
 
-| 제한 유형 | 우수 사례 | 구현된 제한 |
+| 제한 유형 | 우수 사례 | 제한 적용 |
 | --- | --- | --- |
 | 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000 |
 
@@ -124,7 +124,7 @@ ht-degree: 9%
 
 스핀 세트를 만들 때, Adobe은 다음 모범 사례를 권장하고 다음 제한을 적용합니다.
 
-| 제한 유형 | 우수 사례 | 구현된 제한 |
+| 제한 유형 | 우수 사례 | 제한적 적용 |
 | --- | --- | --- |
 | 2D 세트당 최대 행/열 수 | 세트당 12-18개 이미지 | 1000년 |
 

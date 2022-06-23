@@ -11,9 +11,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2184'
 ht-degree: 7%
 
 ---
@@ -38,10 +38,10 @@ ht-degree: 7%
 
 이미지 세트를 생성할 때 Adobe은 다음 우수 사례를 권장하고 다음 제한을 적용합니다.
 
-| 자산 - 제한 유형 | 우수 사례 | 구현된 제한 | 제한 변경: 2022년 12월 31일 |
-| --- | --- | --- | --- |
-| **이미지 세트** - 세트당 중복 자산 수 | 중복 없음 | 100 | 20 |
-| **이미지 세트** - 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000 |
+| 제한 유형 | 우수 사례 | 제한 적용 |
+| --- | --- | --- |
+| 세트당 중복 자산 수 | 중복 없음 | 20 |
+| 설정당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000 |
 
 참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
@@ -78,12 +78,12 @@ ht-degree: 7%
 
    다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL 자산]** > **[!UICONTROL 뷰어 사전 설정]** 뷰어 사전 설정을 만들거나 편집하려면
 
-1. (선택 사항) [이미지 집합 보기](/help/assets/image-sets.md#viewing-image-sets) 일괄처리 집합 사전 설정을 사용하여 만들었습니다.
+1. (선택 사항) [이미지 세트 보기](/help/assets/image-sets.md#viewing-image-sets) 일괄처리 집합 사전 설정을 사용하여 만들었습니다.
 1. [이미지 세트 미리 보기](/help/assets/previewing-assets.md).
 
    이미지 세트를 선택하고 미리 볼 수 있습니다. 선택한 뷰어에서 이미지 세트를 검사할 수 있도록 축소판 아이콘을 선택합니다. 에서 다른 뷰어를 선택할 수 있습니다 **[!UICONTROL 뷰어]** 메뉴 아래의 왼쪽 레일 드롭다운 메뉴에서 사용할 수 있습니다.
 
-1. [이미지 집합 게시](/help/assets/publishing-dynamicmedia-assets.md).
+1. [이미지 세트 게시](/help/assets/publishing-dynamicmedia-assets.md).
 
    이미지 세트를 게시하면 URL 및 포함 코드가 활성화됩니다. 또한 다음을 수행해야 합니다 [모든 사용자 지정 뷰어 사전 설정 게시](/help/assets/managing-viewer-presets.md) 생성되었습니다. 즉시 사용 가능한 뷰어 사전 설정이 이미 게시되었습니다.
 
@@ -142,10 +142,10 @@ ht-degree: 7%
 
 이미지 세트를 생성할 때 Adobe은 다음 우수 사례를 권장하고 다음 제한을 적용합니다.
 
-| 자산 - 제한 유형 | 우수 사례 | 구현된 제한 | 제한 변경: 2022년 12월 31일 |
-| --- | --- | --- | --- |
-| **이미지 세트** - 세트당 중복 자산 수 | 중복 없음 | 100년 | 20년 |
-| **이미지 세트** - 세트당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000년 |
+| 제한 유형 | 우수 사례 | 제한 적용 |
+| --- | --- | --- |
+| 세트당 중복 자산 수 | 중복 없음 | 20년 |
+| 설정당 최대 이미지 수 | 세트당 5-10개 이미지 | 1000년 |
 
 참조 - [Dynamic Media 제한 사항](/help/assets/limitations.md).
 
@@ -193,7 +193,7 @@ ht-degree: 7%
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다. 새로 만든 이미지 세트가 만든 폴더에 나타납니다.
 
-## 이미지 집합 보기 {#viewing-image-sets}
+## 이미지 세트 보기 {#viewing-image-sets}
 
 사용자 인터페이스에서 또는 를 사용하여 자동으로 이미지 세트를 만들 수 있습니다 [일괄처리 집합 사전 설정](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -221,7 +221,7 @@ ht-degree: 7%
 >
 >에 설명된 대로 사용자 인터페이스를 통해 세트를 볼 수 있습니다. [이미지 집합 편집](#editing-image-sets).
 
-## 이미지 집합 편집 {#editing-image-sets}
+## 이미지 세트 편집 {#editing-image-sets}
 
 다음과 같이 이미지 세트에서 다양한 편집 작업을 수행할 수 있습니다.
 
@@ -231,7 +231,7 @@ ht-degree: 7%
 * 뷰어 사전 설정을 적용합니다.
 * 이미지 세트를 삭제합니다.
 
-**이미지 세트를 편집하려면**
+**이미지 세트를 편집하려면 다음을 수행하십시오.**
 
 1. 다음 중 하나를 수행합니다.
 
@@ -263,6 +263,6 @@ ht-degree: 7%
 
 자세한 내용은 [자산 미리 보기](/help/assets/previewing-assets.md).
 
-## 이미지 집합 게시 {#publishing-image-sets}
+## 이미지 세트 게시 {#publishing-image-sets}
 
 자세한 내용은 [자산 게시](/help/assets/publishing-dynamicmedia-assets.md).
