@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 80298613370c7187288b33e5a665a074ccb5cd3e
+source-git-commit: 3643534fa0f24a1c2ea00c35853a2671b156bf9a
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3329'
 ht-degree: 1%
 
 ---
@@ -207,7 +207,9 @@ Adobe Experience Manager은 프로덕션 환경에 대해 다음 서버 플랫�
 
 Adobe Experience Manager은 이 페이지에 나열된 기술 요구 사항 및 Adobe의 표준 지원 약관에 따라 Microsoft Azure 및 Amazon Web Services(AWS)과 같은 클라우드 컴퓨팅 환경의 가상 컴퓨터에서 실행되는 것을 지원합니다.
 
-Adobe은 Adobe Managed Services를 사용하여 Azure 또는 AWS에 AEM을 배포할 것을 권장합니다. Adobe Managed Services는 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영하는 경험과 기술을 전문가에게 제공합니다. 자세한 내용은 [Adobe Managed Services에 대한 추가 설명서](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+클라우드 기반의 환경의 경우 AEM 제품 라인에서 최신 서비스를 검토하십시오. Adobe Experience Manager as a Cloud Service. 자세한 내용은 [Adobe Experience Manager as a Cloud Service 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) 자세한 내용
+
+또한 Adobe은 Azure 또는 AWS에 AEM을 배포할 Adobe Managed Services를 제공합니다. Adobe Managed Services는 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영하는 경험과 기술을 전문가에게 제공합니다. 자세한 내용은 [Adobe Managed Services에 대한 추가 설명서](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 
 Azure 또는 AWS에 AEM을 배포하거나 기타 모든 클라우드 컴퓨팅 환경에서 배포하는 다른 모든 경우에는 이 페이지에 나열된 기술 사양을 준수하는 Adobe의 지원이 가상 컴퓨팅 환경에 포함됩니다. 이러한 클라우드 환경에서 실행되는 AEM과 관련하여 보고된 모든 문제는 클라우드 서비스가 이 페이지에 나열된 기술 요구 사항(예: Azure Blob 저장 공간 또는 AWS S3)의 일부로 특별히 지원되지 않는 한 클라우드 컴퓨팅 환경과 관련된 모든 클라우드 서비스와 독립적으로 재현할 수 있어야 합니다.
 
