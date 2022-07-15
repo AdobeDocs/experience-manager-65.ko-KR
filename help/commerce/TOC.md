@@ -1,8 +1,8 @@
 ---
 sub-product: AEM Content and Commerce
-user-guide-title: AEM Content 및 Commerce
+user-guide-title: AEM Content and Commerce
 breadcrumb-title: Commerce 안내서
-user-guide-description: AEM Content 및 Commerce를 사용하고 관리하는 방법을 이해합니다.
+user-guide-description: AEM 콘텐츠 및 상거래를 사용하고 관리하는 방법을 이해합니다.
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
 source-wordcount: '123'
@@ -13,13 +13,13 @@ ht-degree: 76%
 
 # 상거래 {#commerce}
 
-+ [AEM Content 및 Commerce](/help/commerce/home.md)
++ [AEM Content and Commerce](/help/commerce/home.md)
 + [AEM 컨텐츠 및 상거래에 대한 주요 변경 사항](cif/changes.md)
 + [소개 및 개요](cif/introduction.md)
 + 통합 {#integrations}
    + [Adobe Commerce](cif/integrating/magento.md)
    + [서드파티 상거래 솔루션](cif/integrating/third-party.md)
-+ AEM 상점 첫 화면 {#storefront}
++ AEM Storefront {#storefront}
    + [시작하기](cif/getting-started.md)
    + 작성 {#authoring}
       + [상거래 경험](cif/authoring/authoring-commerce-experiences.md)

@@ -5,11 +5,11 @@ audience: end-user
 user-guide-title: AEM 6.5 Communities 사용 안내서
 breadcrumb-title: Communities 안내서
 user-guide-description: 포럼, 사용자 그룹, 학습 리소스 및 기타 소셜 기능과 같은 온라인 경험을 만들 수 있습니다.
-feature: 커뮤니티
+feature: Communities
 role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '501'
 ht-degree: 12%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 12%
    + [활성화를 위해 새 커뮤니티 사이트 작성](enablement-create-site.md)
    + [사용 리소스 만들기 및 할당](resource.md)
    + [게시된 지원 사이트를 경험하십시오.](enablement-published-site.md)
-+ {#deploy} 배포
++ 배포 {#deploy}
    + [커뮤니티 배포](deploy-communities.md)
    + [AEM 6.5 Communities로 업그레이드](upgrade.md)
    + [커뮤니티에 대한 권장 토폴로지](topologies.md)

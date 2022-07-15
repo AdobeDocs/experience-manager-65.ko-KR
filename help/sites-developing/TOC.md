@@ -200,13 +200,13 @@ ht-degree: 79%
    + [렌더링용 구성 요소를 구성하는 콘텐츠 조각](content-fragments-config-components-rendering.md)
    + [경험 조각](experience-fragments.md)
    + 워크플로우 확장{#extending-workflows}
-      + [워크플로우 개발 및 확장](workflows.md)
-      + [워크플로우 모델 만들기](workflows-models.md)
-      + [워크플로우 기능 확장](workflows-customizing-extending.md)
+      + [워크플로 개발 및 확장](workflows.md)
+      + [워크플로 모델 만들기](workflows-models.md)
+      + [워크플로 기능 확장](workflows-customizing-extending.md)
       + [프로그래밍 방식으로 워크플로우와 상호 작용](workflows-program-interaction.md)
-      + [워크플로우 단계 참조](workflows-step-ref.md)
+      + [워크플로 단계 참조](workflows-step-ref.md)
       + [워크플로우 우수 사례](workflows-best-practices.md)
-      + [워크플로우 프로세스 참조](workflows-process-ref.md)
+      + [워크플로 프로세스 참조](workflows-process-ref.md)
       + [AEM 워크플로우의 변수](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [다중 사이트 관리자 확장](extending-msm.md)
    + 추적 및 분석{#extending-analytics}

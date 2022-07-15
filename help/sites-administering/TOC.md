@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 28%
+ht-degree: 35%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 28%
 + 사이트 기능 {#introduction}
    + [웹 사이트 관리](msm-and-translation.md)
    + [비동기 작업](asynchronous-jobs.md)
-   + [컨텐츠 재사용: 다중 사이트 관리자 및 Live Copy](msm.md)
+   + [콘텐츠 재사용: 다중 사이트 관리자 및 라이브 카피](msm.md)
    + [라이브 카피 개요 콘솔](msm-livecopy-overview.md)
    + [라이브 카피 동기화 구성](msm-sync.md)
    + [라이브 카피 생성 및 동기화](msm-livecopy.md)
@@ -58,10 +58,10 @@ ht-degree: 28%
    + [전자 메일 알림 구성](notification.md)
    + [링크 확인](external-link-checker.md)
    + [AEM 문제 해결](troubleshoot.md)
-   + [워크플로우에 대한 액세스 관리](workflows-managing.md)
-   + [워크플로우 시작](workflows-starting.md)
+   + [워크플로에 대한 액세스 관리](workflows-managing.md)
+   + [워크플로 시작](workflows-starting.md)
    + [워크플로 관리](workflows.md)
-   + [워크플로우 인스턴스 관리](workflows-administering.md)
+   + [워크플로 인스턴스 관리](workflows-administering.md)
    + [AEM에서 cURL 사용](curl.md)
    + [프록시 서버 도구(proxy.jar)](proxy-jar.md)
    + [AEM 앱 구성](config-apps.md)
@@ -115,9 +115,9 @@ ht-degree: 28%
    + [Adobe Target과 통합](target.md)
    + [Adobe Analytics와 통합](adobeanalytics.md)
    + [Adobe Analytics 연결 및 프레임워크 생성](adobeanalytics-connect.md)
-   + [Adobe Analytics에 대한 링크 추적 구성](adobeanalytics-link.md)
-   + [구성 요소 데이터를 Adobe Analytics 속성과 매핑](adobeanalytics-mapping.md)
-   + [Adobe Analytics에 대한 비디오 추적 구성](adobeanalytics-video.md)
+   + [Adobe Analytics를 위한 링크 추적 구성](adobeanalytics-link.md)
+   + [Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑](adobeanalytics-mapping.md)
+   + [Adobe Analytics를 위한 비디오 추적 구성](adobeanalytics-video.md)
    + [IMS를 사용하여 Adobe Analytics과 통합](integration-analytics-ims.md)
    + [콘텐츠 FAQ의 HTTP2 전송](scene7-http2faq.md)
    + [Adobe Campaign 통합 문제 해결](troubleshooting-campaignintegration.md)
@@ -152,7 +152,7 @@ ht-degree: 28%
    + [이메일 템플릿 우수 사례](best-practices-for-email-templates.md)
    + [Livefyre와 통합하기](livefyre.md)
 + 우수 사례 {#bestpractices}
-   + [우수 사례](administer-best-practices.md)
+   + [모범 사례](administer-best-practices.md)
    + [번역 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
    + [MSM 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
    + [AEM Sites - GDPR 준비 완료](gdpr-compliance-sites.md)

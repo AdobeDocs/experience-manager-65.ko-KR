@@ -5,11 +5,11 @@ audience: end-user
 user-guide-title: AEM 6.5 모바일 사용 안내서
 breadcrumb-title: Mobile 안내서
 user-guide-description: 모바일 앱용 컨텐츠를 생성 및 관리합니다.
-feature: 모바일
+feature: Mobile
 role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '331'
 ht-degree: 12%
 
 ---
@@ -25,8 +25,8 @@ ht-degree: 12%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - GDPR 준비 완료](aem-mobile-gdpr-compliance.md)
    + [모바일 앱 개발](develop-mobile-apps.md)
-+ 주문형 서비스 앱 작성 {#authoring}
-   + [Mobile On-Demand](mobile-apps-ondemand.md)
++ On-Demand Services 앱 작성 {#authoring}
+   + [모바일 온디맨드](mobile-apps-ondemand.md)
    + [콘텐츠 관리](mobile-apps-ondemand-manage-content-ondemand.md)
    + [게시 취소 컨텐츠](mobile-on-demand-publishing-unpublishing.md)
    + [AEM Mobile 애플리케이션 대시보드](mobile-apps-ondemand-application-dashboard.md)
@@ -41,7 +41,7 @@ ht-degree: 12%
    + [컨텐츠 속성 및 노드](content-properties.md)
    + [공유 리소스 내보내기 구성 만들기](creating-shared-resources-export-configuration.md)
    + [템플릿 및 구성 요소 만들기 및 추가](mobile-ondemand-app-templates.md)
-   + [우수 사례](best-practices-aem-mobile.md)
+   + [모범 사례](best-practices-aem-mobile.md)
    + [문서 내보내기 구성 만들기](creating-article-export-configuration.md)
    + [콘텐츠 동기화가 있는 모바일](mobile-ondemand-contentsync.md)
    + [모바일 앱용 페이지 템플릿](apps-architecture.md)
@@ -49,7 +49,7 @@ ht-degree: 12%
    + [렌더링 및 전달](rendering-and-delivery.md)
    + [컨텐츠 서비스](developing-content-services.md)
    + [컨텐츠 전달](develop-content-as-a-service.md)
-+ 온디맨드 서비스 앱 관리 {#administering}
++ On-Demand Services 앱 관리 {#administering}
    + [AEM Mobile On-Demand](aem-mobile.md)
    + [AEM Mobile 설정](aem-mobile-setup.md)
    + [사용자 및 사용자 그룹 구성](aem-mobile-configure-users.md)
@@ -58,7 +58,7 @@ ht-degree: 12%
    + [모델 개요](model-management.md)
    + [스페이스 및 엔티티](spaces-and-entities.md)
    + [컬렉션 관리](mobile-on-demand-managing-collections.md)
-+ Adobe PhoneGap Enterprise 작성 {#author-phonegap}
++ Authoring Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [앱 메타데이터 편집](phonegap-editmetadata.md)
    + [앱 정의](phonegap-app-definitions.md)
