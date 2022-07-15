@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 64ba9b1082e39552cd27e5616de2a35f7870270b
+source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
 workflow-type: tm+mt
-source-wordcount: '4398'
+source-wordcount: '4322'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ AEM Forms은 다음을 제공합니다 [규칙 편집기](/help/forms/using/rule
    * 또한 다음 필드 속성을 사용할 수 있습니다.
 
       * `field.value` 필드의 값을 변경하려면 다음을 수행하십시오.
-      * f `ield.enabled` 필드를 활성화/비활성화합니다.
+      * `field.enabled` 필드를 활성화/비활성화합니다.
       * `field.visible` 필드의 표시 여부를 변경하려면 다음을 수행하십시오.
 
 * 적응형 양식 작성자는 비즈니스 논리를 양식으로 구축하려면 JavaScript 코드를 작성해야 할 수 있습니다. JavaScript는 강력하고 효과적이지만, 보안 기대치를 손상시킬 수 있습니다. 따라서 양식을 프로덕션에 넣기 전에 양식 작성자가 신뢰할 수 있는 인물이고 JavaScript 코드를 검토하고 승인하는 프로세스가 있는지 확인해야 합니다. 관리자는 역할 또는 기능을 기반으로 사용자 그룹에 대한 규칙 편집기 액세스 권한을 제한할 수 있습니다. 자세한 내용은 [사용자 그룹을 선택하는 규칙 편집기 액세스 권한 부여](/help/forms/using/rule-editor-access-user-groups.md).
@@ -228,17 +228,6 @@ AEM Forms은 다음을 제공합니다 [규칙 편집기](/help/forms/using/rule
 * 안내서 Bridge API에 대한 탐색 및 학습
 
 자세한 내용은 [AEM Chrome 플러그인 - 적응형 양식](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
-
-Calvin SDK는 응용 Forms 개발자가 응용 Forms을 테스트할 수 있는 유틸리티 API입니다. Calvin SDK는 [Hobbes.js 테스트 프레임워크](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). 프레임워크를 사용하여 다음을 테스트할 수 있습니다.
-
-* 적응형 양식의 표현물 경험
-* 적응형 양식의 미리 채우기 경험
-* 적응형 양식의 경험 제출
-* 표현식 규칙
-* 유효성 검사
-* 지연 로드
-
-자세한 내용은 [적응형 양식 테스트 자동화](/help/forms/using/calvin.md).
 
 ### AEM 서버에서 적응형 양식 유효성 검사 {#validating-adaptive-forms-on-aem-server}
 

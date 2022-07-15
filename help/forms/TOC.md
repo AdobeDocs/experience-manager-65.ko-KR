@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
+source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3778'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 + [AEM 6.5 Forms 안내서](home.md)
 + 릴리스 노트 {#release-notes-new-features}
-   + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
+   + [릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
    + [새로운 기능 요약](using/whats-new.md)
    + [이제 사용되지 않는 기능](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + 시작하기 {#getting-started}
@@ -35,7 +35,6 @@ ht-degree: 5%
       + [자습서: 적응형 양식 필드에 규칙 적용](using/apply-rules-to-adaptive-form-fields.md)
       + [자습서: 적응형 양식 스타일 지정](using/style-your-adaptive-form.md)
       + [자습서: 적응형 양식 게시](/help/forms/using/publish-your-adaptive-form.md)
-      + [자습서: 적응형 양식 테스트](/help/forms/using/testing-your-adaptive-form.md)
    + 자습서: 첫 번째 대화형 통신 만들기 {#create-first-interactive-communication}
       + [자습서: 첫 번째 대화형 통신 만들기](using/create-your-first-interactive-communication.md)
       + [자습서: 대화형 통신 계획](using/planning-interactive-communications.md)
@@ -91,7 +90,7 @@ ht-degree: 5%
    + OSGi에서 AEM Forms 업그레이드 {#aem-forms-osgi-upgrade}
       + [OSGi에서 AEM 6.5 양식으로 업그레이드](using/upgrade-forms-osgi.md)
       + [호환성 패키지 설치](using/compatibility-package.md)
-      + [AEM Forms 자산 및 문서 마이그레이션](using/migration-utility.md)
+      + [AEM Forms 에셋 및 문서 마이그레이션](using/migration-utility.md)
    + JEE에서 AEM Forms 업그레이드 {#aem-forms-jee-upgrade}
       + [AEM Forms 업그레이드 준비](http://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
       + [JEE의 Adobe Experience Manager Forms 업그레이드 체크리스트 및 계획](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
@@ -143,7 +142,7 @@ ht-degree: 5%
    + [액세스 가능한 적응형 양식 만들기](using/creating-accessible-adaptive-forms.md)
    + [반복 가능한 섹션을 사용하여 양식 만들기](using/creating-forms-repeatable-sections.md)
    + [AEM Sites 페이지에 적응형 양식 또는 대화형 커뮤니케이션 포함](using/embed-adaptive-form-aem-sites.md)
-   + [외부 웹 페이지에 적응형 양식 포함](using/embed-adaptive-form-external-web-page.md)
+   + [외부 웹 페이지에 적응형 양식 임베드](using/embed-adaptive-form-external-web-page.md)
    + [적응형 양식 구성 요소의 인라인 스타일](using/inline-style-adaptive-forms.md)
    + [여러 단계 양식 시퀀스 소개](using/introduction-form-sequence.md)
    + [적응형 양식의 레이아웃 기능](using/layout-capabilities-adaptive-forms.md)
@@ -175,7 +174,6 @@ ht-degree: 5%
    + [XDP 기반 적응형 양식의 XFA 지원](using/xfa-api-supported-in-adaptive-form.md)
    + [사용자 그룹을 선택하는 규칙 편집기 액세스 부여](using/rule-editor-access-user-groups.md)
    + [AEM 번역 워크플로우를 사용하여 적응형 양식 및 레코드 문서를 현지화합니다](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
-   + [적응형 양식 테스트 자동화](using/calvin.md)
    + [적응형 양식의 스타일 지정 구문](using/styling-constructs-adaptive-forms.md)
    + [적응형 Forms과 XFA 양식 템플릿 동기화](using/synchronizing-adaptive-forms-xfa.md)
    + [Adobe Sign과 AEM Forms 통합](using/adobe-sign-integration-adaptive-forms.md)
