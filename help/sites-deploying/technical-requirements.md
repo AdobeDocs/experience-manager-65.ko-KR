@@ -6,7 +6,7 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 3643534fa0f24a1c2ea00c35853a2671b156bf9a
+source-git-commit: a1e620103290f8c704f2b8782be495ab7aec5fe2
 workflow-type: tm+mt
 source-wordcount: '3329'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Adobe은 이 문서의 다음 정보에 자세히 설명된 대로 플랫폼에�
 >
 >AEM을 설치하는 플랫폼에 따라 사용자 관리를 위한 다양한 요구 사항 세트가 있을 수 있습니다.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 Adobe Experience Manager 설치를 위한 최소 요구 사항:
 
@@ -190,7 +190,7 @@ Adobe Experience Manager은 프로덕션 환경에 대해 다음 서버 플랫�
 | **Red Hat 배포 기반 Linux** | A: 지원됨 `[1]` `[3]` |
 | Debian 배포 incl 기반 Linux. 우분투 | A: 지원됨 `[2]` |
 | Linux, SUSE 배포 기반 | A: 지원됨 |
-| Microsoft Windows Server 2019 `[4]` | R: 신규 계약에 대한 제한된 지원 |
+| Microsoft Windows Server 2019 `[4]` | R: 신규 계약에 대한 제한된 지원 `[5]` |
 | Microsoft Windows Server 2016 `[4]` | R: 신규 계약에 대한 제한된 지원 `[5]` |
 | Microsoft Windows Server 2012 R2 | Z: 지원되지 않음 |
 | Oracle Solaris 11 | Z: 지원되지 않음 |
