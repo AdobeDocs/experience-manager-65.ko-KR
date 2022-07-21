@@ -8,10 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 7a800199b0d3a9dce0a8a31d14f07326b56050ba
+source-git-commit: d4eae7774cb657713a06261deeef0fd2ad542836
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 6%
+source-wordcount: '254'
+ht-degree: 4%
 
 ---
 
@@ -21,11 +21,10 @@ ht-degree: 6%
 
 이 주제에는 다음 섹션이 포함됩니다.
 
-* 자산 유형에 대한 Dynamic Media의 우수 사례 및 강제 제한
+* [자산 유형에 대한 Dynamic Media의 우수 사례 및 강제 제한](#best-practice-enforced-limits)
+* [Dynamic Media 뷰어용 지원되지 않는 웹 브라우저 및 운영 체제 조합](#unsupported-browser-os)
 
-<!-- * Unsupported web browser and operating system combinations for Dynamic Media Viewers -->
-
-## 자산 유형에 대한 Dynamic Media의 우수 사례 및 강제 제한
+## 자산 유형에 대한 Dynamic Media의 우수 사례 및 강제 제한 {#best-practice-enforced-limits}
 
 스핀 세트 또는 이미지 세트를 만들거나 페이지 추출을 위해 PDF을 업로드할 때 Adobe은 다음 우수 사례를 권장하고 다음 제한을 적용합니다.
 
@@ -39,16 +38,16 @@ ht-degree: 6%
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-<!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
+## Dynamic Media 뷰어용 지원되지 않는 웹 브라우저 및 운영 체제 조합 {#unsupported-browser-os}
 
-Dynamic Media Viewers do not support following combinations of web browser and operating system.
+Dynamic Media 뷰어는 다음 웹 브라우저 및 운영 체제 조합을 지원하지 않습니다.
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
 * Internet Explorer 11 + Windows Phone 8.1
-* Internet Explorer 11 + Windows Phone 8.1 Update
+* Internet Explorer 11 + Windows Phone 8.1 업데이트
 * Safari 6 + iOS 6.0.1
 * Safari 7 + iOS 7.1
-* Safari 7 + macOS X 10.9 Mavericks
+* Safari 7 + OS X 10.9 Mavericks
 * Safari 8 + iOS 8.4
-* Safari 8 + macOS X 10.10 Yosemite -->
+* Safari 8 + OS X 10.10 Yosemite
