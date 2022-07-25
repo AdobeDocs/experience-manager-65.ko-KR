@@ -2,9 +2,9 @@
 title: AEM Content and Commerce 릴리스 노트 2022
 description: AEM Content and Commerce 릴리스 노트 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 600a836ff7ae0be9fde107ff2828bb41e8eed98f
+source-git-commit: b493e7bd73d679aa46bf41fad105f13215226dd4
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '663'
 ht-degree: 34%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 34%
 
 ### 새로운 기능 {#what-is-new-june}
 
-* 이제 제품 카탈로그 템플릿을 작성할 때 사이트 편집기에 템플릿 이름이 표시됩니다
+* 제품 카탈로그 강화는 이제 AEM 페이지를 지원합니다. 이렇게 하면 작성자가 페이지 - 제품 연결을 관리할 수 있습니다.
 
 * 다양한 CIF 코어 구성 요소 개선 사항
 
