@@ -12,9 +12,9 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: bfb02e79d6895be498e6e40888c6d8d4e3a8fcd4
+source-git-commit: 49a74d8c14c79e72f9df1e2ec41652ebc6fe76b6
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2312'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ REST API는 JSON으로 전송되는 응답을 사용하여 HTTP를 통해 정확
 
 ## Gem 세션 {#gem-session}
 
-[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) 는 Adobe 전문가가 제공하는 Adobe Experience Manager에 대한 일련의 기술적인 분석입니다. 쿼리 빌더에 전용 이 세션은 도구의 개요 및 사용에 매우 유용합니다.
+[AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) 는 Adobe 전문가가 제공하는 Adobe Experience Manager에 대한 일련의 기술적인 분석입니다. 쿼리 빌더에 전용 이 세션은 도구의 개요 및 사용에 매우 유용합니다.
 
 >[!NOTE]
 >
