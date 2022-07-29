@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 3af8a2425596ff6c15fb49fed66e9fbd0e9d391e
+source-git-commit: 2c2277f43fe12c4d4fa655c0666519e3608ba3f9
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '493'
 ht-degree: 29%
 
 ---
@@ -71,8 +71,9 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 
 1. (JBoss만 해당) 패치를 설치하고 서버를 구성한 후 JBoss 애플리케이션 서버의 임시 및 작업 디렉토리를 삭제합니다.
 
->**참고:** 시작하기 전에 **구성 관리자**, 다운로드 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 파일.
->
+>[!NOTE]
+>시작하기 전에 **구성 관리자**, 다운로드 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 파일.
+
 ## 배포 후 구성 {#post-deployment-configurations}
 
 ### SAML 구성 {#saml-configurations}
