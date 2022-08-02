@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 2c2277f43fe12c4d4fa655c0666519e3608ba3f9
+source-git-commit: c425caa9aadd8bae3c2863f24e73b5265ec0b358
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '475'
 ht-degree: 29%
 
 ---
@@ -52,17 +52,12 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 1. 사전 설치 요약 정보를 읽고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 1. 설치가 완료되면 **[!UICONTROL 다음]**&#x200B;을 클릭하여 설치된 파일에 빠른 수정 업데이트를 적용합니다.
 
-1. 완료 를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. 구성 관리자를 실행하기 전에 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음 위치로 이동합니다. *&lt;aemforms_install_dir>\configurationManager\bin* 디렉토리 및 업데이트 `ConfigurationManager.lax` 및 `ConfigurationManager_IPv6.lax` 다음 이름 변경 작업이 있는 파일:
+1. **[Windows 전용]** 다음 단계를 수행합니다.
 
-   * `axis.jar` 끝 `axis-1.4.1.1.jar`
-   * `serializer-2.7.1.jar` 끝 `serializer-2.7.2.jar`
-   * `xalan-2.7.1.jar` 끝 `xalan-2.7.2.jar`
-   * `xercesImpl-2.9.1.jar` 끝 `xercesImpl-2.12.0.jar`
-   * `xml-apis-2.7.1.jar` 끝 `xml-apis-2.7.2.jar`
-
+   선택 취소 **구성 관리자 시작** 옵션 **[!UICONTROL 완료]**. 구성 관리자를 실행하기 전에 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음 위치로 이동합니다. `<AEMForms_Install_Dir>\configurationManager\bin` 디렉토리 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 파일.
 1. 기본적으로 구성 관리자 시작 확인란이 선택됩니다. **[!UICONTROL 완료]**&#x200B;를 클릭하여 구성 관리자를 실행합니다.
 
-1. 나중에 구성 관리자를 실행하려면 완료를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. 에서 적절한 스크립트를 사용하여 나중에 구성 관리자를 시작할 수 있습니다 `[AEM_forms_root]/configurationManager/bin` 디렉토리.
+1. 나중에 구성 관리자를 실행하려면 **[!UICONTROL 완료]**&#x200B;를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. 에서 적절한 스크립트를 사용하여 나중에 구성 관리자를 시작할 수 있습니다 `[AEM_forms_root]/configurationManager/bin` 디렉토리.
 
 1. 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 *AEM 양식 구성 및 배포* 섹션을 참조하십시오.
 
@@ -70,9 +65,6 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
    * [WebSphere용 AEM 양식 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebSphere_65_kr)
 
 1. (JBoss만 해당) 패치를 설치하고 서버를 구성한 후 JBoss 애플리케이션 서버의 임시 및 작업 디렉토리를 삭제합니다.
-
->[!NOTE]
->시작하기 전에 **구성 관리자**, 다운로드 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 파일.
 
 ## 배포 후 구성 {#post-deployment-configurations}
 
