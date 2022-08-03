@@ -5,8 +5,8 @@ breadcrumb-title: Commerce 안내서
 user-guide-description: AEM 콘텐츠 및 상거래를 사용하고 관리하는 방법을 이해합니다.
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 76%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
