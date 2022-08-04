@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
+source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
 workflow-type: tm+mt
-source-wordcount: '4322'
+source-wordcount: '4529'
 ht-degree: 0%
 
 ---
@@ -95,6 +95,19 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
    * 사용자 지정 위젯 또는 모양을 만들어 사용자 지정 상호 작용을 도입합니다. 기본 구성 요소를 수정하지 않는 것이 좋습니다. 자세한 내용은 [모양 프레임워크](/help/forms/using/introduction-widgets.md).
 
 * 자세한 내용은 [개인 식별 정보 처리](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) 참조하십시오.
+
+### 양식 템플릿 만들기
+
+에서 활성화된 양식 템플릿을 사용하여 적응형 양식을 만들 수 있습니다 **구성 브라우저**. 양식 템플릿을 사용하려면 다음을 참조하십시오 [적응형 양식 템플릿 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
+
+다른 작성자 컴퓨터에 생성된 적응형 양식 패키지에서 양식 템플릿을 업로드할 수도 있습니다. 양식 템플릿은 [aemforms-references-* 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 권장되는 몇 가지 우수 사례는 다음과 같습니다.
+* 다음 **nosamplecontent** 실행 모드는 작성자에만 권장되며 게시 노드에는 권장되지 않습니다.
+* 적응형 양식, 테마, 템플릿 또는 클라우드 구성과 같은 자산을 작성하는 작업은 작성 노드에서만 수행되며, 구성된 게시 노드에 게시할 수 있습니다.
+자세한 내용은 [양식 및 문서 게시 및 게시 취소](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+* 문서 서비스 작업을 지원하려면 Publishing뿐만 아니라 작성에는 Forms 추가 패키지가 필요합니다. 따라서 종속으로 간주될 수 있습니다.
+Forms 관련 샘플 템플릿, 테마 및 DOR 패키지만 원하는 경우 [aemforms-references-* 패키지](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+
+자세한 내용은 의 모범 사례를 참조하십시오. [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md).
 
 ## 적응형 양식 작성 {#author-adaptive-forms}
 
@@ -309,3 +322,5 @@ AEM 프로젝트를 한 환경에서 다른 환경으로 이동해야 하는 경
 
 * 데이터베이스와 같은 안전한 외부 저장소를 사용하여 초안 및 제출된 양식의 데이터를 저장합니다. 자세한 내용은 [초안 및 제출된 양식 데이터에 대한 외부 저장소 구성](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * 자동 저장을 활성화하기 전에 사용자의 명시적 동의를 받으려면 약관 양식 구성 요소를 사용하십시오. 이 경우 사용자가 약관 구성 요소의 조건에 동의하는 경우에만 자동 저장을 활성화합니다.
+
+
