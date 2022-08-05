@@ -4,7 +4,7 @@ description: Tough Day 테스트는 모든 작업이 동시에 진행되는 최�
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: ca6d41740dbb24dbba7cf7691c51435cc40d3ead
+source-git-commit: 1b92b973209fdbd2509b1c644c1064a1e9224a9e
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## Tough Day 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot;는 AEM 인스턴스의 한계를 테스트할 수 있는 애플리케이션입니다. 기본 테스트 세트로 즉시 실행하거나 테스트 요구 사항에 맞게 구성할 수 있습니다. 구경하실 수 있습니다 [이 기록](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-toughday2-stress-testing-benchmarking-tool.html) 응용 프로그램 프레젠테이션
+&quot;Tough Day 2&quot;는 AEM 인스턴스의 한계를 테스트할 수 있는 애플리케이션입니다. 기본 테스트 세트로 즉시 실행하거나 테스트 요구 사항에 맞게 구성할 수 있습니다. 구경하실 수 있습니다 [이 기록](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) 응용 프로그램 프레젠테이션
 
 >[!CAUTION]
 >
@@ -64,7 +64,7 @@ java -jar toughday2.jar --help_full
 <table>
  <tbody>
   <tr>
-   <td><strong>매개 변수</strong></td>
+   <td><strong>매개변수</strong></td>
    <td><strong>설명</strong></td>
    <td><strong>예</strong></td>
   </tr>
@@ -121,7 +121,7 @@ java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m 
 
 아래의 목록에서 관련 매개 변수를 찾을 수 있습니다.
 
-| **매개 변수** | **설명** | **기본 값** | **가능한 값** |
+| **매개변수** | **설명** | **기본 값** | **가능한 값** |
 |---|---|---|---|
 | `--installsamplecontent=<Val>` | 기본 Tough Day 2 컨텐츠 패키지를 설치하거나 건너뜁니다. | true | true 또는 false |
 | `--protocol=<Val>` | 호스트에 사용되는 프로토콜입니다. | http | http 또는 https |
