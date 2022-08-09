@@ -8,13 +8,12 @@ breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 9a164f92b6d5a927d1cb4ead2f119cc094180713
+source-git-commit: 8e8c829779e172441605a8abd2ef73623b95462d
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 35%
 
 ---
-
 
 # AEM 6.5 관리 사용 안내서 {#administering}
 
