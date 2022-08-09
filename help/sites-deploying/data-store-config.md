@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 6257b56c61ae14889d9ecefed5030e123a415fd7
+source-git-commit: 4e68a8a8d84d0ffa1d28ab13c196731e58b4cf9a
 workflow-type: tm+mt
-source-wordcount: '3455'
+source-wordcount: '3447'
 ht-degree: 1%
 
 ---
@@ -207,8 +207,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 다음 옵션과 함께 구성 파일을 사용할 수 있습니다.
 
 * accessKey: AWS 액세스 키.
-* secretKey: AWS 암호 액세스 키. **참고:** 또는, [IAM 역할](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) 인증에 사용할 수 있습니다. IAM 역할을 사용하는 경우에는 더 이상 `accessKey` 및 `secretKey`.
-
+* secretKey: AWS 암호 액세스 키. **참고:** 이 `accessKey` 또는 `secretKey` 이 지정되지 않은 경우 [IAM 역할](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) 는 인증에 사용됩니다.
 * s3Bucket: 버킷 이름입니다.
 * s3지역: 버킷 영역입니다.
 * 경로: 데이터 저장소의 경로입니다. 기본값은 입니다. **&lt;aem install=&quot;&quot; folder=&quot;&quot;>/repository/datastore**
