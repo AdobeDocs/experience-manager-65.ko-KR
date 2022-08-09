@@ -3,10 +3,10 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
+source-git-commit: e51cf7a5b7d14bc4aed053496c7fe6685dd2b0b8
 workflow-type: tm+mt
-source-wordcount: '3742'
-ht-degree: 14%
+source-wordcount: '3653'
+ht-degree: 15%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 14%
 
 에 도입된 주요 기능 및 개선 사항 [!DNL Adobe Experience Manager] 6.5.13.0:
 
-* 적응형 양식에서 보이지 않는 CAPTCHA를 사용합니다. 이제 보이지 않는 CAPTCHA를 사용하여 의심스러운 활동의 경우에만 CAPTCHA 문제를 표시할 수 있습니다. 의심스러운 활동이 없으면 CAPTCHA 문제가 표시되지 않습니다. Adobe Campaign은 확인란 요구 사항 없이 사람 양식을 완성했는지 평가하고 사용자 지정 노력을 줄이고 최종 사용자 경험을 개선하는 데 도움이 됩니다. (NPR-38500)
+* 적응형 양식에서 보이지 않는 CAPTCHA를 사용합니다. 이제 보이지 않는 CAPTCHA를 사용하여 의심스러운 활동의 경우에만 CAPTCHA 문제를 표시할 수 있습니다. 의심스러운 활동이 없으면 CAPTCHA 문제가 표시되지 않습니다. 이는 확인란 요구 사항 없이 사람의 양식 완성을 평가하고, 맞춤화 노력을 줄이고, 최종 사용자 경험을 개선하는 데 도움이 됩니다. (NPR-38500)
 
 * REST 끝점에 대한 양식 데이터 모델 사후 처리에서 응답 헤더를 가져오도록 지원이 추가되었습니다. (NPR-38275)
 
@@ -39,7 +39,12 @@ ht-degree: 14%
 
    * 계속적이고 연결된 엔티티로 테이블의 머리글과 본문을 인식할 수 있도록 화면 판독기에 대한 지원이 추가되었습니다. 화면 판독기가 테이블을 제대로 탐색하는 데 도움이 됩니다. (NPR-37139)
    * 대화 상자가 열릴 때까지 HTML 작업 공간 탐색을 중지하도록 화면 판독기에 대한 지원을 추가했습니다. (NPR-37134)
-   * Forms 디자이너에서 하이퍼링크의 화면 Reader 텍스트를 지정하는 기능이 추가되었습니다.(NPR-36221)
+
+   <!-- 
+
+    * Added ability to specify Screen Reader Text for Hyperlinks in Forms Designer.(NPR-36221)
+  
+  -->
 
 다음 버그 수정, 주요 기능 및 개선 사항이 [!DNL Experience Manager] 6.5.13.0:
 
@@ -123,11 +128,19 @@ ht-degree: 14%
 * 사용자가 워크플로우를 실행하는 동안 주석 섹션에 HTML 태그를 추가하면 HTML 태그가 렌더링됩니다. (NPR-37591)
 * 새 XDP 파일이 포함된 문자를 가져오고 게시할 때 게시 인스턴스에서 문자가 미리 표시되지 않습니다. 그러나 동일한 CMP 파일을 사용하여 편지를 가져와서 두 번째로 게시한 경우 편지를 미리 보기합니다. (CQ-4343599)
 * 데이터 준비 프로세스 속성이 설정된 양식이 HTML 작업 공간에서 렌더링되지 않습니다. (CQ-4343294)
-* Forms 6.5 Designer로 작성된 정적 PDF forms의 경우 PDF 액세스 가능성이 오류로 실패합니다 `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+<!--
+For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117) 
+ -->
 * AEMForms-6.5.0-0038(log4jv2.16) 패치를 적용한 후 OCR을 사용하여 PDFG 서비스를 사용하여 이미지를 PDF으로 변환할 수 없습니다. (CQ-4342450)
-* 바코드 SSCC-18에 대해 잘못된 값이 표시됩니다. Forms 서버에서는 바코드의 오른쪽 부분에 있는 값을 생략합니다. (CQ-4342400)
+
+<!-- 
+* Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
+-->
 * Microsoft® Word 파일을 Forms Designer로 가져올 수 없습니다. 사용자에게 오류가 발생합니다 `Word (version XP or onwards) could not be found on the machine`. (CQ-4342146)
-* Forms 6.5 Designer에서 Forms 6.1 Designer로 만든 양식을 열고 텍스트 상자를 편집하면 단락 간격이 지정된 공간을 초과합니다. 스페이스에 대한 이전 설정이 모두 제거되고 텍스트 상자의 수동 재서식이 필요합니다. (CQ-4341899)
+
+<!-- 
+* In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899) 
+-->
 * 사용자가 작업 제거 스케줄러에서 사용자 지정 시간을 설정할 수 없습니다. (CQ-4339192)
 * 사용자가 끝점 관리 UI에서 구성을 업데이트할 수 없으며 오류가 발생했습니다 ` Uncaught ReferenceError: updateEndpoint_required is not defined`. (CQ-4331523)
 * 잘못된 태그의 경우 오류 메시지의 정상 처리가 예상대로 작동하지 않습니다. (NPR-38106 및 CQ-4337173)
