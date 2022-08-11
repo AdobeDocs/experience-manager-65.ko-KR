@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: c425caa9aadd8bae3c2863f24e73b5265ec0b358
+source-git-commit: 6c6ddaba0e42df4b4701670e8abfdabe5205879c
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 29%
+source-wordcount: '525'
+ht-degree: 22%
 
 ---
 
@@ -47,17 +47,23 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
    설치 과정을 안내하는 설치 마법사가 시작됩니다.
 
 1. 소개 패널에서 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
-1. 설치 폴더 선택 화면에서 표시되는 기본 위치가 기존 설치에 맞는지 확인하거나 을 클릭합니다 **[!UICONTROL 찾아보기]** AEM Forms가 설치된 대체 폴더를 선택하려면 **[!UICONTROL 다음]**.
+1. 설정 **설치 폴더 선택** 화면에서 표시되는 기본 위치가 기존 설치에 맞는지 확인하거나 **[!UICONTROL 찾아보기]** AEM Forms가 설치된 대체 폴더를 선택하려면 **[!UICONTROL 다음]**.
 1. 빠른 수정 패치 요약 정보를 읽고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. 사전 설치 요약 정보를 읽고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 1. 설치가 완료되면 **[!UICONTROL 다음]**&#x200B;을 클릭하여 설치된 파일에 빠른 수정 업데이트를 적용합니다.
 
-1. **[Windows 전용]** 다음 단계를 수행합니다.
+1. **[Windows 전용]:** 다음 단계 중 하나를 수행합니다.
+   * 선택 취소 **구성 관리자 시작** 누르기 전에 옵션 **[!UICONTROL 완료]**. 실행 **구성 관리자** 사용 **ConfigurationManager.bat** 에 있는 파일 `[aem-forms root]\configurationManager\bin`.
 
-   선택 취소 **구성 관리자 시작** 옵션 **[!UICONTROL 완료]**. 구성 관리자를 실행하기 전에 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음 위치로 이동합니다. `<AEMForms_Install_Dir>\configurationManager\bin` 디렉토리 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 파일.
-1. 기본적으로 구성 관리자 시작 확인란이 선택됩니다. **[!UICONTROL 완료]**&#x200B;를 클릭하여 구성 관리자를 실행합니다.
+   * 선택 취소 **구성 관리자 시작** 누르기 전에 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음 위치로 이동합니다. *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉토리 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일.
+   >[!NOTE]
+   >사용 **ConfigurationManager.bat** 파일을 사용하면 .lax 파일의 이름을 수동으로 업데이트하지 않아도 됩니다.
 
-1. 나중에 구성 관리자를 실행하려면 **[!UICONTROL 완료]**&#x200B;를 클릭하기 전에 구성 관리자 시작 옵션을 선택 해제합니다. 에서 적절한 스크립트를 사용하여 나중에 구성 관리자를 시작할 수 있습니다 `[AEM_forms_root]/configurationManager/bin` 디렉토리.
+1. **[Unix 기반 전용]:** 다음 단계 중 하나를 수행합니다.
+
+   * 다음 **구성 관리자 시작** 기본적으로 확인란이 선택됩니다. 클릭 **[!UICONTROL 완료]** 구성 관리자를 즉시 실행할 수 있습니다.
+
+   * 를 실행하려면 **구성 관리자** 나중에 선택을 취소합니다 **구성 관리자 시작** 누르기 전에 옵션 **[!UICONTROL 완료]**. 시작할 수 있습니다 **구성 관리자** 나중에 에서 적절한 스크립트를 사용하여 `[AEM_forms_root]/configurationManager/bin` 디렉토리.
 
 1. 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 *AEM 양식 구성 및 배포* 섹션을 참조하십시오.
 
