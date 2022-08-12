@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: a1e620103290f8c704f2b8782be495ab7aec5fe2
+source-git-commit: 9faad7562a85f368ae47bb0c3a381bebe4c8c612
 workflow-type: tm+mt
-source-wordcount: '3329'
+source-wordcount: '3434'
 ht-degree: 1%
 
 ---
@@ -422,6 +422,8 @@ Windows x86의 경우:
 
 ### AEM Forms PDF 생성기 요구 사항 {#requirements-for-aem-forms-pdf-generator}
 
+### PDF 생성기를 위한 소프트웨어 지원 {#software-support-for-pdf-generator}
+
 <table>
  <tbody>
   <tr>
@@ -429,51 +431,74 @@ Windows x86의 경우:
    <th><p><strong>PDF으로 변환을 위한 지원되는 형식</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 클래식 트랙</a> 최신 버전</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF)</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 클래식 트랙</a> 최신 버전(더 이상 사용되지 않음)</td>
+   <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF)</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2019</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF 및 TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect X7</td>
+   <td>Microsoft® Office 2016(지원 중단됨)</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF 및 TXT</td>
+  </tr>
+  <tr>
+   <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016<br /> </td>
+   <td>Microsoft® Office Visio 2019<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
   <tr>
-   <td>Microsoft® Publisher 2016<br /> </td>
+   <td>Microsoft® Office Visio 2016(지원 중단됨)<br /> </td>
+   <td>VSD, VSDX</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Project 2016<br /> </td>
+   <td>Microsoft® Publisher 2016(지원 중단됨)<br /> </td>
+   <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® 프로젝트 2019<br /> </td>
    <td>MPP</td>
   </tr>
   <tr>
-   <td>OpenOffice 4.1.2</td>
+   <td>Microsoft® Project 2016(지원 중단됨)<br /> </td>
+   <td>MPP</td>
+  </tr>
+  <tr>
+   <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, SXW, SXW, SXD, SXD, XLS, DOC, DOCX, PPT, PPTX, PPTX, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPX, JPX, JPX, JPC2, J2C, JPC, RTF, TXT, RTF, TXT, TXT, TXT, RTF, TXT, TXT, RTF, TXT, RTF, TXT, TXT, RTF, RTF</td>
   </tr>
+  <tr>
+   <td>OpenOffice 4.1.2(사용 중지)</td>
+   <td>ODT, ODP, ODS, ODG, SXW, SXW, SXD, SXD, XLS, DOC, DOCX, PPT, PPTX, PPTX, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPX, JPX, JPX, JPC2, J2C, JPC, RTF, TXT, RTF, TXT, TXT, TXT, RTF, TXT, TXT, RTF, TXT, RTF, TXT, TXT, RTF, RTF</td>
+  </tr>  
  </tbody>
 </table>
 
 >[!NOTE]
 >
->PDF 생성기는 지원되는 운영 체제 및 응용 프로그램의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
+> PDF 생성기는 지원되는 운영 체제 및 응용 프로그램의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
 >
->또한
+> 또한
 >
->* PDF 생성기를 사용하려면 32비트 버전의 [Acrobat 2017 classic track 버전 17.011.30078 이상](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 변환을 수행합니다.
->* PDF 생성기는 전환에 필요한 32비트 Retail 버전의 Microsoft Office Professional Plus와 기타 소프트웨어만 지원합니다.
->* PDF 생성기는 Microsoft Office 365를 지원하지 않습니다.
->* OpenOffice용 PDF 생성기 전환은 Windows 및 Linux에서만 지원됩니다.
->* OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
->* Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+> * PDF 생성기를 사용하려면 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 또는 Acrobat 2017 버전 17.011.30078에서 전환을 수행합니다.
+> * PDF 생성기는 전환에 필요한 32비트 Retail 버전의 Microsoft Office Professional Plus와 기타 소프트웨어만 지원합니다.
+> * PDF 생성기는 Microsoft Office 365를 지원하지 않습니다.
+> * OpenOffice용 PDF 생성기 전환은 Windows 및 Linux에서만 지원됩니다.
+> * OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
+> * Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >
->* PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
->
+> * PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
 
 
 ### AEM Forms 디자이너 요구 사항 {#requirements-for-aem-forms-designer}
