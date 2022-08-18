@@ -1,8 +1,8 @@
 ---
-title: 워크플로우 기능 확장
-seo-title: 워크플로우 기능 확장
-description: 워크플로우 기능 확장
-seo-description: 'null'
+title: 워크플로 기능 확장
+seo-title: Extending Workflow Functionality
+description: 워크플로 기능 확장
+seo-description: null
 uuid: 9f4ea2a8-8b21-4e7c-ac73-dd37d9ada111
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 13f15bee38b6b4af4cd59376849810a788f0c467
 workflow-type: tm+mt
-source-wordcount: '3587'
+source-wordcount: '3583'
 ht-degree: 2%
 
 ---
 
-# 워크플로우 기능 확장{#extending-workflow-functionality}
+# 워크플로 기능 확장{#extending-workflow-functionality}
 
 이 항목에서는 워크플로우에 대한 사용자 지정 단계 구성 요소를 개발하는 방법과 워크플로우와 프로그래밍 방식으로 상호 작용하는 방법을 설명합니다.
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 * 워크플로우 단계 구성 요소를 개발합니다.
 * OSGi 서비스 또는 ECMA 스크립트로 단계 기능을 구현합니다.
 
-프로그램 및 스크립트](/help/sites-developing/workflows-program-interaction.md)에서 워크플로우와 상호 작용할 수도 있습니다.[
+다음을 수행할 수도 있습니다 [프로그램 및 스크립트에서 워크플로우와 상호 작용할 수 있습니다](/help/sites-developing/workflows-program-interaction.md).
 
 ## 워크플로우 단계 구성 요소 - 기본 사항 {#workflow-step-components-the-basics}
 
@@ -37,27 +37,27 @@ ht-degree: 2%
 * 구성 요소 속성을 구성하기 위한 편집 대화 상자
 * 런타임 시 실행되는 서비스 또는 스크립트입니다.
 
-[모든 구성 요소](/help/sites-developing/components.md)와 마찬가지로 워크플로우 단계 구성 요소는 `sling:resourceSuperType` 속성에 지정된 구성 요소에서 상속됩니다. 다음 다이어그램은 모든 워크플로우 단계 구성 요소의 기초가 되는 `cq:component` 노드의 계층을 보여줍니다. 또한, 이 다이어그램은 사용자 지정 단계 구성 요소를 개발하기 위한 가장 일반적인(및 기본) 시작 지점이므로, **프로세스 단계**, **참가자 단계** 및 **동적 참가자 단계** 구성 요소도 포함합니다.
+과 함께 [모든 구성 요소](/help/sites-developing/components.md), 워크플로우 단계 구성 요소는 `sling:resourceSuperType` 속성을 사용합니다. 다음 다이어그램은 `cq:component` 모든 워크플로우 단계 구성 요소를 기반으로 하는 노드입니다. 다이어그램에는 **프로세스 단계**, **참가자 단계**, 및 **동적 참가자 단계** 구성 요소는 사용자 지정 단계 구성 요소를 개발하기 위한 가장 일반적인(및 기본) 시작점입니다.
 
 ![aem_wf_componentinherit](assets/aem_wf_componentinherit.png)
 
 >[!CAUTION]
 >
->***은 `/libs` 경로에서 아무 것도 변경하지 않아야 합니다.***
+>사용자 ***반드시*** 에서 아무것도 변경하지 않음 `/libs` 경로.
 >
->이는 다음 번에 인스턴스를 업그레이드할 때 `/libs` 컨텐츠를 덮어쓰게 되기 때문입니다(핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있음).
+>왜냐하면 `/libs` 는 다음에 인스턴스를 업그레이드할 때 덮어쓰여지며, 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수 있습니다.
 >
 >구성 및 기타 변경에 대해 권장되는 방법은 다음과 같습니다.
 >
->1. 필요한 항목(즉, `/apps` 아래의 `/libs`에 있는 대로)을 다시 만드십시오
->2. `/apps` 내에서 변경
+>1. 필요한 항목(즉, 가 존재함에 따라)을 다시 만듭니다 `/libs` 아래에 `/apps`
+>2. 내에서 변경 `/apps`
 
 
-`/libs/cq/workflow/components/model/step` 구성 요소는 **프로세스 단계**, **참가자 단계** 및 **동적 참가자 단계**&#x200B;의 가장 가까운 공통 상위 항목으로서, 모두 다음 항목을 상속합니다.
+다음 `/libs/cq/workflow/components/model/step` 구성 요소는 가장 일반적인 **프로세스 단계**, **참가자 단계**, 및 **동적 참가자 단계**- 모두 다음 항목을 상속합니다.
 
 * `step.jsp`
 
-   `step.jsp` 스크립트는 모델에 추가될 때 단계 구성 요소의 제목을 렌더링합니다.
+   다음 `step.jsp` 스크립트는 단계 구성 요소가 모델에 추가될 때 해당 구성 요소의 제목을 렌더링합니다.
 
    ![wf-22-1](assets/wf-22-1.png)
 
@@ -65,8 +65,8 @@ ht-degree: 2%
 
    다음 탭이 있는 대화 상자:
 
-   * **일반**:제목 및 설명을 편집합니다.
-   * **고급**:전자 메일 알림 속성을 편집할 때 사용됩니다.
+   * **공통**: 제목 및 설명을 편집합니다.
+   * **고급**: 전자 메일 알림 속성을 편집할 때 사용됩니다.
 
    ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -78,85 +78,83 @@ ht-degree: 2%
 
 ECMA 스크립트 내에서 다음 개체를 사용할 수 있습니다(단계 유형에 따라 다름).
 
-* [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) WorkItemworkItem
-* [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) WorkflowSessionworkflowSession
-* [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) WorkflowDataworkflowData
-* `args`:배열에 프로세스 인수가 있습니다.
+* [작업 항목](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkItem.html) workItem
+* [WorkflowSession](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/WorkflowSession.html) workflowSession
+* [WorkflowData](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
+* `args`: 배열에 프로세스 인수가 있습니다.
 
-* `sling`:다른 osgi 서비스에 액세스하려면
+* `sling`: 다른 osgi 서비스에 액세스하려면
 * `jcrSession`
 
 ### MetaDataMap {#metadatamaps}
 
 워크플로우 메타데이터를 사용하여 워크플로우 수명 동안 필요한 정보를 유지할 수 있습니다. 워크플로우 단계의 일반적인 요구 사항은 워크플로우에서 나중에 사용할 수 있도록 데이터를 유지하거나 지속되는 데이터를 검색하는 것입니다.
 
-`Workflow`, `WorkflowData` 및 `WorkItem` 개체의 세 가지 MetaDataMap 개체가 있습니다. 메타데이터의 저장 목적이 모두 동일합니다.
+MetaDataMap 개체에는 세 가지 유형이 있습니다. `Workflow`, `WorkflowData` 및 `WorkItem` 개체. 메타데이터의 저장 목적이 모두 동일합니다.
 
 작업 항목에는 해당 작업 항목(예: 단계)이 실행되는 동안에만 사용할 수 있는 고유한 MetaDataMap이 있습니다.
 
-`Workflow` 및 `WorkflowData` 메타데이터 맵은 모두 전체 워크플로우에서 공유됩니다. 이러한 경우 `WorkflowData` 메타데이터 맵만 사용하는 것이 좋습니다.
+둘 다 `Workflow` 및 `WorkflowData` 메타데이터는 전체 워크플로우에서 공유됩니다. 이러한 경우 `WorkflowData` 메타데이터 맵.
 
 ## 사용자 지정 워크플로우 단계 구성 요소 만들기 {#creating-custom-workflow-step-components}
 
-워크플로우 단계 구성 요소는 [다른 구성 요소](/help/sites-developing/components.md)와 동일한 방식으로 만들 수 있습니다.
+워크플로우 단계 구성 요소는 [다른 구성 요소와 동일한 방식으로](/help/sites-developing/components.md).
 
-(기존) 기본 단계 구성 요소 중 하나에서 상속하려면 다음 속성을 `cq:Component` 노드에 추가합니다.
+(기존) 기본 단계 구성 요소 중 하나에서 상속하려면 다음 속성을 `cq:Component` 노드:
 
 * 이름: `sling:resourceSuperType`
 * 유형: `String`
-* 값:다음 경로 중 하나가 기본 구성 요소로 확인됩니다.
+* 값: 다음 경로 중 하나가 기본 구성 요소로 확인됩니다.
 
    * `cq/workflow/components/model/process`
    * `cq/workflow/components/model/participant`
    * `cq/workflow/components/model/dynamic_participant`
 
-### 단계 인스턴스 {#specifying-the-default-title-and-description-for-step-instances}에 대한 기본 제목 및 설명 지정
+### 단계 인스턴스에 대한 기본 제목 및 설명 지정 {#specifying-the-default-title-and-description-for-step-instances}
 
-다음 절차를 사용하여 **공통** 탭의 **제목** 및 **설명** 필드에 기본값을 지정합니다.
+다음 절차에 따라 **제목** 및 **설명** 의 필드 **공통** 탭.
 
 >[!NOTE]
 >
 >다음 요구 사항을 모두 충족하면 필드 값이 단계 인스턴스에 표시됩니다.
 >
->* 단계의 편집 대화 상자에는 제목과 설명이 다음 위치에 저장됩니다.>
+>* 단계의 편집 대화 상자에는 제목과 설명이 다음 위치에 저장됩니다. >
 >* `./jcr:title`
->* `./jcr:description` 위치
-
+>* `./jcr:description`개 위치
 >
->  
-이 요구 사항은 편집 대화 상자에서 `/libs/cq/flow/components/step/step` 구성 요소가 구현하는 공통 탭을 사용할 때 충족됩니다.
+>  이 요구 사항은 편집 대화 상자에서 `/libs/cq/flow/components/step/step` 구성 요소가 구현합니다.
 >
->* 단계 구성 요소나 구성 요소의 상위 항목은 `/libs/cq/flow/components/step/step` 구성 요소가 구현하는 `step.jsp` 스크립트를 재정의하지 않습니다.
+>* 단계 구성 요소나 구성 요소의 상위 항목은 `step.jsp` 스크립트를 `/libs/cq/flow/components/step/step` 구성 요소가 구현합니다.
 
 
-1. `cq:Component` 노드 아래에 다음 노드를 추가합니다.
+1. 아래의 `cq:Component` 노드, 다음 노드를 추가합니다.
 
    * 이름: `cq:editConfig`
    * 유형: `cq:EditConfig`
 
    >[!NOTE]
    >
-   >cq:editConfig 노드에 대한 자세한 내용은 [구성 요소의 편집 동작 구성](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)을 참조하십시오.
+   >cq:editConfig 노드에 대한 자세한 내용은 [구성 요소의 편집 동작 구성](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
-1. `cq:EditConfig` 노드 아래에 다음 노드를 추가합니다.
+1. 아래의 `cq:EditConfig` 노드, 다음 노드를 추가합니다.
 
    * 이름: `cq:formParameters`
    * 유형: `nt:unstructured`
 
-1. 다음 이름의 `String` 속성을 `cq:formParameters` 노드에 추가합니다.
+1. 추가 `String` 다음 이름의 속성을 `cq:formParameters` 노드:
 
-   * `jcr:title`:값은  **** 공통 탭의 제목 필드 **** 를 채웁니다.
-   * `jcr:description`:이 값은  **** Commontab의 Description 필드 **** 를 채웁니다.
+   * `jcr:title`: 이 값은 **제목** 필드 **공통** 탭.
+   * `jcr:description`: 이 값은 **설명** 필드 **공통** 탭.
 
-### 워크플로우 메타데이터 {#saving-property-values-in-workflow-metadata}에 속성 값 저장
+### 워크플로우 메타데이터에 속성 값 저장 {#saving-property-values-in-workflow-metadata}
 
 >[!NOTE]
 >
->[데이터 유지 및 액세스](#persisting-and-accessing-data)를 참조하십시오. 특히 런타임 시 속성 값에 액세스하는 방법에 대한 자세한 내용은 [런타임 시 대화 상자 속성 값에 액세스](#accessing-dialog-property-values-at-runtime)를 참조하십시오.
+>자세한 내용은 [데이터 유지 및 액세스](#persisting-and-accessing-data). 특히 런타임 시 속성 값에 액세스하는 방법에 대한 자세한 내용은 [런타임 시 대화 상자 속성 값에 액세스](#accessing-dialog-property-values-at-runtime).
 
-`cq:Widget` 항목의 이름 속성은 위젯의 값을 저장하는 JCR 노드를 지정합니다. 워크플로우 단계 구성 요소의 대화 상자에 있는 위젯이 `./metaData` 노드 아래에 값을 저장하면 값이 워크플로우 `MetaDataMap`에 추가됩니다.
+의 이름 속성입니다. `cq:Widget` 항목은 위젯의 값을 저장하는 JCR 노드를 지정합니다. 워크플로우 단계 구성 요소의 대화 상자에서 위젯은 `./metaData` node이면 값이 워크플로우에 추가됩니다 `MetaDataMap`.
 
-예를 들어 대화 상자의 텍스트 필드는 다음 속성을 갖는 `cq:Widget` 노드입니다.
+예를 들어 대화 상자의 텍스트 필드는 `cq:Widget` 다음 속성을 갖는 노드:
 
 | 이름 | 유형 | 값 |
 |---|---|---|
@@ -164,19 +162,19 @@ ECMA 스크립트 내에서 다음 개체를 사용할 수 있습니다(단계 �
 | `name` | `String` | `./metaData/subject` |
 | `fieldLabel` | `String` | `Email Subject` |
 
-이 텍스트 필드에 지정된 값이 워크플로우 인스턴스의 ` [MetaDataMap](#metadatamaps)` 개체에 추가되고 `subject` 키와 연결됩니다.
+이 텍스트 필드에 지정된 값이 워크플로우 인스턴스의 ` [MetaDataMap](#metadatamaps)` 객체, 및 는 `subject` 키.
 
 >[!NOTE]
 >
->키가 `PROCESS_ARGS`이면 `args` 변수를 통해 ECMA 스크립트 구현에서 값을 사용할 수 있습니다. 이 경우 이름 속성의 값은 `./metaData/PROCESS_ARGS.`입니다
+>키가 `PROCESS_ARGS`를 통해 값을 ECMA 스크립트 구현에서 쉽게 사용할 수 있습니다 `args` 변수를 채우는 방법을 설명합니다. 이 경우 name 속성의 값은 `./metaData/PROCESS_ARGS.`
 
 ### 단계 구현 재정의 {#overriding-the-step-implementation}
 
 각 기본 단계 구성 요소를 통해 워크플로우 모델 개발자는 디자인 타임에 다음과 같은 주요 기능을 구성할 수 있습니다.
 
-* 프로세스 단계:런타임에 실행할 서비스 또는 ECMA 스크립트입니다.
-* 참가자 단계:생성된 작업 항목이 지정된 사용자의 ID입니다.
-* 동적 참가자 단계:작업 항목이 지정된 사용자의 ID를 선택하는 서비스 또는 ECMA 스크립트입니다.
+* 프로세스 단계: 런타임에 실행할 서비스 또는 ECMA 스크립트입니다.
+* 참가자 단계: 생성된 작업 항목이 지정된 사용자의 ID입니다.
+* 동적 참가자 단계: 작업 항목이 지정된 사용자의 ID를 선택하는 서비스 또는 ECMA 스크립트입니다.
 
 특정 워크플로우 시나리오에서 사용할 구성 요소에 초점을 맞추려면 디자인에서 주요 기능을 구성하고 모델 개발자가 이를 변경할 수 있는 기능을 제거합니다.
 
@@ -185,14 +183,14 @@ ECMA 스크립트 내에서 다음 개체를 사용할 수 있습니다(단계 �
    * 이름: `cq:editConfig`
    * 유형: `cq:EditConfig`
 
-   cq:editConfig 노드에 대한 자세한 내용은 [구성 요소의 편집 동작 구성](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)을 참조하십시오.
+   cq:editConfig 노드에 대한 자세한 내용은 [구성 요소의 편집 동작 구성](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. cq:EditConfig 노드 아래에 다음 노드를 추가합니다.
 
    * 이름: `cq:formParameters`
    * 유형: `nt:unstructured`
 
-1. `cq:formParameters` 노드에 `String` 속성을 추가합니다. 구성 요소 수퍼 유형은 속성의 이름을 결정합니다.
+1. 추가 `String` 속성을 `cq:formParameters` 노드 아래에 있어야 합니다. 구성 요소 수퍼 유형은 속성의 이름을 결정합니다.
 
    * 프로세스 단계: `PROCESS`
    * 참가자 단계: `PARTICIPANT`
@@ -200,73 +198,73 @@ ECMA 스크립트 내에서 다음 개체를 사용할 수 있습니다(단계 �
 
 1. 속성 값을 지정합니다.
 
-   * `PROCESS`:ECMA 스크립트의 경로 또는 단계 동작을 구현하는 서비스의 PID입니다.
-   * `PARTICIPANT`:작업 항목이 지정된 사용자의 ID입니다.
-   * `DYNAMIC_PARTICIPANT`:작업 항목을 할당할 사용자를 선택하는 ECMA 스크립트의 경로 또는 서비스의 PID입니다.
+   * `PROCESS`: ECMA 스크립트의 경로 또는 단계 동작을 구현하는 서비스의 PID입니다.
+   * `PARTICIPANT`: 작업 항목이 지정된 사용자의 ID입니다.
+   * `DYNAMIC_PARTICIPANT`: 작업 항목을 할당할 사용자를 선택하는 ECMA 스크립트의 경로 또는 서비스의 PID입니다.
 
 1. 모델 개발자가 속성 값을 변경하는 기능을 제거하려면 구성 요소 수퍼 유형의 대화 상자를 덮어씁니다.
 
 ### 참가자 단계에 Forms 및 대화 상자 추가 {#adding-forms-and-dialogs-to-participant-steps}
 
-참가자 단계 구성 요소를 사용자 지정하여 [양식 참가자 단계](/help/sites-developing/workflows-step-ref.md#form-participant-step) 및 [대화 상자 참가자 단계](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) 구성 요소에 있는 기능을 제공합니다.
+참가자 단계 구성 요소를 사용자 지정하여 [양식 참가자 단계](/help/sites-developing/workflows-step-ref.md#form-participant-step) 및 [대화 상자 참가자 단계](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) 구성 요소:
 
 * 생성된 작업 항목을 열 때 사용자에게 양식을 제공합니다.
 * 사용자가 생성된 작업 항목을 완료하면 사용자 지정 대화 상자를 표시합니다.
 
-새 구성 요소에서 다음 절차를 수행하십시오( [사용자 지정 워크플로우 단계 구성 요소 만들기](#creating-custom-workflow-step-components) 참조).
+새 구성 요소에 대해 다음 절차를 수행하십시오( [사용자 지정 워크플로우 단계 구성 요소 만들기](#creating-custom-workflow-step-components)):
 
-1. `cq:Component` 노드 아래에 다음 노드를 추가합니다.
+1. 아래의 `cq:Component` 노드, 다음 노드를 추가합니다.
 
    * 이름: `cq:editConfig`
    * 유형: `cq:EditConfig`
 
-   cq:editConfig 노드에 대한 자세한 내용은 [구성 요소의 편집 동작 구성](/help/sites-developing/components-basics.md#edit-behavior)을 참조하십시오.
+   cq:editConfig 노드에 대한 자세한 내용은 [구성 요소의 편집 동작 구성](/help/sites-developing/components-basics.md#edit-behavior).
 
 1. cq:EditConfig 노드 아래에 다음 노드를 추가합니다.
 
    * 이름: `cq:formParameters`
    * 유형: `nt:unstructured`
 
-1. 사용자가 작업 항목을 열 때 양식을 표시하려면 다음 속성을 `cq:formParameters` 노드에 추가합니다.
+1. 사용자가 작업 항목을 열 때 양식을 표시하려면 다음 속성을 `cq:formParameters` 노드:
 
    * 이름: `FORM_PATH`
    * 유형: `String`
-   * 값:양식에 확인되는 경로입니다
+   * 값: 양식에 확인되는 경로입니다
 
-1. 사용자가 작업 항목을 완료할 때 사용자 지정 대화 상자를 표시하려면 다음 속성을 `cq:formParameters` 노드에 추가하십시오
+1. 사용자가 작업 항목을 완료할 때 사용자 지정 대화 상자를 표시하려면 다음 속성을 `cq:formParameters` 노드
 
    * 이름: `DIALOG_PATH`
    * 유형: `String`
-   * 값:대화 상자로 확인되는 경로
+   * 값: 대화 상자로 확인되는 경로
 
 ### 워크플로우 단계 런타임 동작 구성 {#configuring-the-workflow-step-runtime-behavior}
 
-`cq:Component` 노드 아래에 `cq:EditConfig` 노드를 추가합니다. 아래에 `nt:unstructured` 노드(이름이 `cq:formParameters`여야 함)를 추가하고 해당 노드에 다음 속성을 추가합니다.
+아래의 `cq:Component` 노드, 추가 `cq:EditConfig` 노드 아래에 있어야 합니다. 아래에 추가 `nt:unstructured` 노드(이름을 지정해야 함) `cq:formParameters`) 및 를 해당 노드에 추가하고 다음 속성을 추가합니다.
 
 * 이름: `PROCESS_AUTO_ADVANCE`
 
    * 유형: `Boolean`
    * 값:
 
-      * `true` 로 설정하면 워크플로우는 해당 단계를 실행하고 계속합니다. 이 단계는 기본값이며 권장됩니다
-      * `false`이 실행되면 워크플로우가 실행되고 중지됩니다.이 작업은 추가 처리가 필요하므로 `true`이(가) 권장됩니다
+      * 설정 `true` 워크플로우는 해당 단계를 실행하고 계속합니다. 이것은 기본값이며 권장됩니다
+      * when `false`, 워크플로우가 실행되고 중지됩니다. 이 일을 처리하려면 추가 처리가 필요하니 `true` 이 권장됩니다.
 
 * 이름: `DO_NOTIFY`
 
    * 유형: `Boolean`
-   * 값:사용자 참여 단계에 대해 이메일 알림을 전송해야 하는지를 나타냅니다(및 메일 서버가 올바르게 구성되어 있다고 가정).
+   * 값: 사용자 참여 단계에 대해 이메일 알림을 전송해야 하는지를 나타냅니다(및 메일 서버가 올바르게 구성되어 있다고 가정).
 
-## 데이터 {#persisting-and-accessing-data} 유지 및 액세스
+## 데이터 유지 및 액세스 {#persisting-and-accessing-data}
 
 ### 후속 워크플로우 단계에 대한 데이터 유지 {#persisting-data-for-subsequent-workflow-steps}
 
 워크플로우 메타데이터를 사용하여 워크플로우 수명 동안 및 단계 간에 필요한 정보를 유지할 수 있습니다. 워크플로우 단계의 일반적인 요구 사항은 향후 사용하기 위해 데이터를 지속하거나 이전 단계에서 지속된 데이터를 검색하는 것입니다.
 
-워크플로우 메타데이터는 [`MetaDataMap`](#metadatamaps) 개체에 저장됩니다. Java API는 적절한 `MetaDataMap` 개체를 제공하는 [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) 개체를 반환하는 [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) 메서드를 제공합니다. 이 `WorkflowData` `MetaDataMap` 개체는 단계 구성 요소의 OSGi 서비스 또는 ECMA 스크립트에 사용할 수 있습니다.
+워크플로우 메타데이터는 [`MetaDataMap`](#metadatamaps) 개체. Java API는 [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) 반환 방법 [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) 적절한 `MetaDataMap` 개체. 이 `WorkflowData` `MetaDataMap` 개체는 단계 구성 요소의 OSGi 서비스 또는 ECMA 스크립트에서 사용할 수 있습니다.
 
 #### Java {#java}
 
-`WorkflowProcess` 구현의 execute 메서드가 `WorkItem` 개체에 전달됩니다. 이 개체를 사용하여 현재 워크플로 인스턴스에 대한 `WorkflowData` 개체를 가져옵니다. 다음 예제에서는 워크플로우 `MetaDataMap` 개체에 항목을 추가한 다음 각 항목을 기록합니다. (&quot;mykey&quot;, &quot;My Step Value&quot;) 항목은 워크플로우의 후속 단계에서 사용할 수 있습니다.
+의 execute 메서드 `WorkflowProcess` 구현이 전달됩니다 `WorkItem` 개체. 이 개체를 사용하여 `WorkflowData` 현재 워크플로 인스턴스의 개체입니다. 다음 예제에서는 워크플로우에 항목을 추가합니다 `MetaDataMap` 개체를 만든 다음 각 항목을 기록합니다. (&quot;mykey&quot;, &quot;My Step Value&quot;) 항목은 워크플로우의 후속 단계에서 사용할 수 있습니다.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -286,11 +284,11 @@ public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) th
 
 #### ECMA 스크립트 {#ecma-script}
 
-`graniteWorkItem` 변수는 현재 `WorkItem` Java 개체의 ECMA 스크립트 표현입니다. 따라서 `graniteWorkItem` 변수를 사용하여 워크플로우 메타데이터를 가져올 수 있습니다. 다음 ECMA 스크립트를 사용하여 **프로세스 단계**&#x200B;를 구현하여 워크플로우 `MetaDataMap` 개체에 항목을 추가한 다음 각 항목을 기록할 수 있습니다. 그런 다음 워크플로우의 후속 단계에서 이러한 항목을 사용할 수 있습니다.
+다음 `graniteWorkItem` 변수는 현재 ECMA 스크립트 표현입니다 `WorkItem` Java 개체. 따라서 `graniteWorkItem` 변수를 사용하여 워크플로우 메타데이터를 가져옵니다. 다음 ECMA 스크립트를 사용하여 **프로세스 단계** 워크플로우에 항목을 추가하려면 `MetaDataMap` 개체를 만든 다음 각 항목을 기록합니다. 그런 다음 워크플로우의 후속 단계에서 이러한 항목을 사용할 수 있습니다.
 
 >[!NOTE]
 >
->단계 스크립트에서 즉시 사용할 수 있는 `metaData` 변수는 단계의 메타데이터입니다. 단계 메타데이터는 워크플로우 메타데이터와 다릅니다.
+>다음 `metaData` 단계 스크립트에서 즉시 사용할 수 있는 변수는 단계의 메타데이터입니다. 단계 메타데이터는 워크플로우 메타데이터와 다릅니다.
 
 ```
 var currentDateInMillis = new Date().getTime();
@@ -308,29 +306,29 @@ while (iterator.hasNext()){
 
 ### 런타임 시 대화 상자 속성 값에 액세스 {#accessing-dialog-property-values-at-runtime}
 
-워크플로우 인스턴스의 `MetaDataMap` 개체는 워크플로우의 수명 동안 데이터를 저장하고 검색하는 데 유용합니다. 워크플로우 단계 구성 요소 구현의 경우 특히 `MetaDataMap`은 런타임 시 구성 요소 속성 값을 검색하는 데 유용합니다.
+다음 `MetaDataMap` 워크플로우 인스턴스 개체는 워크플로우의 수명 동안 데이터를 저장하고 검색하는 데 유용합니다. 워크플로우 단계 구성 요소 구현의 경우 `MetaDataMap` 는 특히 런타임 시 구성 요소 속성 값을 검색하는 데 유용합니다.
 
 >[!NOTE]
 >
->속성을 워크플로우 메타데이터로 저장하도록 구성 요소 대화 상자를 구성하는 방법에 대한 자세한 내용은 [워크플로우 메타데이터에 속성 값 저장](#saving-property-values-in-workflow-metadata)을 참조하십시오.
+>속성을 워크플로우 메타데이터로 저장하도록 구성 요소 대화 상자를 구성하는 방법에 대한 자세한 내용은 [워크플로우 메타데이터에 속성 값 저장](#saving-property-values-in-workflow-metadata).
 
-워크플로우 `MetaDataMap`은 Java 및 ECMA 스크립트 프로세스 구현에서 사용할 수 있습니다.
+워크플로우 `MetaDataMap` 는 Java 및 ECMA 스크립트 프로세스 구현에서 사용할 수 있습니다.
 
-* WorkflowProcess 인터페이스의 Java 구현에서 `args` 매개 변수는 워크플로우의 `MetaDataMap` 개체입니다.
+* WorkflowProcess 인터페이스의 Java 구현에서 `args` 매개 변수는 `MetaDataMap` 워크플로우에 대한 객체입니다.
 
-* ECMA 스크립트 구현에서 값은 `args` 및 `metadata` 변수를 사용하여 사용할 수 있습니다.
+* ECMA 스크립트 구현에서 값은 `args` 및 `metadata` 변수를 채우는 방법을 설명합니다.
 
-### 예:프로세스 단계 구성 요소 {#example-retrieving-the-arguments-of-the-process-step-component}의 인수 검색
+### 예: 프로세스 단계 구성 요소의 인수 검색 {#example-retrieving-the-arguments-of-the-process-step-component}
 
-**프로세스 단계** 구성 요소의 편집 대화 상자에는 **인수** 속성이 포함되어 있습니다. **Arguments** 속성 값은 워크플로우 메타데이터에 저장되고 `PROCESS_ARGS` 키와 연결됩니다.
+의 편집 대화 상자 **프로세스 단계** 구성 요소에 포함되는 항목 **인수** 속성을 사용합니다. 의 값 **인수** 속성은 워크플로우 메타데이터에 저장되고 와 연결됩니다 `PROCESS_ARGS` 키.
 
-다음 다이어그램에서 **Arguments** 속성 값은 `argument1, argument2`입니다.
+다음 다이어그램에서 **인수** property `argument1, argument2`:
 
 ![wf-24](assets/wf-24.png)
 
 #### Java {#java-1}
 
-다음 Java 코드는 `WorkflowProcess` 구현을 위한 `execute` 메서드입니다. 이 메서드는 `PROCESS_ARGS` 키와 연결된 `args` `MetaDataMap`에 값을 기록합니다.
+다음 Java 코드는 다음과 같습니다 `execute` 에 대한 방법 `WorkflowProcess` 구현 을 참조하십시오. 메서드는 `args` `MetaDataMap` 와 관련된 `PROCESS_ARGS` 키.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -348,7 +346,7 @@ public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) th
 
 #### ECMA 스크립트 {#ecma-script-1}
 
-다음 ECMA 스크립트는 **프로세스 단계**&#x200B;에 대한 프로세스로 사용됩니다. 인수 개수와 인수 값을 기록합니다.
+다음 ECMA 스크립트는 **프로세스 단계**. 인수 개수와 인수 값을 기록합니다.
 
 ```
 var iterator = graniteWorkItem.getWorkflowData().getMetaDataMap().keySet().iterator();
@@ -365,13 +363,13 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 >이 섹션에서는 프로세스 단계에 대한 인수를 사용하여 작업하는 방법을 설명합니다. 이 정보는 동적 참가자 선택기에도 적용됩니다.
 
 >[!NOTE]
->워크플로우 메타데이터에 구성 요소 속성을 저장하는 다른 예는 예를 참조하십시오.로거 워크플로우 단계를 만듭니다. 이 예제에서는 메타데이터 값을 PROCESS_ARGS 이외의 키와 연결하는 대화 상자를 제공합니다.
+>워크플로우 메타데이터에 구성 요소 속성을 저장하는 다른 예는 예를 참조하십시오. 로거 워크플로우 단계를 만듭니다. 이 예제에서는 메타데이터 값을 PROCESS_ARGS 이외의 키와 연결하는 대화 상자를 제공합니다.
 
 ### 스크립트 및 프로세스 인수 {#scripts-and-process-arguments}
 
-**프로세스 단계** 구성 요소에 대한 스크립트 내에서 인수를 `args` 개체를 통해 사용할 수 있습니다.
+스크립트 내에서 **프로세스 단계** 구성 요소에서는 인수를 통해 사용할 수 있습니다. `args` 개체.
 
-사용자 지정 단계 구성 요소를 만들 때 스크립트에서 개체 `metaData`을 사용할 수 있습니다. 이 개체는 단일 문자열 인수로 제한됩니다.
+사용자 지정 단계 구성 요소를 만들 때 개체가 `metaData` 는 스크립트로 사용할 수 있습니다. 이 개체는 단일 문자열 인수로 제한됩니다.
 
 ## 프로세스 단계 구현 개발 {#developing-process-step-implementations}
 
@@ -379,31 +377,31 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 
 >[!NOTE]
 >
->프로세스 단계 구성 요소를 서비스 또는 스크립트와 연결하는 방법은 [프로세스 단계](/help/sites-developing/workflows-step-ref.md#process-step) 또는 [단계 구현 대체](#overriding-the-step-implementation)를 참조하십시오.
+>프로세스 단계 구성 요소를 서비스 또는 스크립트와 연관시키는 방법에 대한 자세한 내용은 [프로세스 단계](/help/sites-developing/workflows-step-ref.md#process-step) 또는 [단계 구현 재정의](#overriding-the-step-implementation).
 
-### Java 클래스 {#implementing-a-process-step-with-a-java-class}로 프로세스 단계 구현
+### Java 클래스를 사용한 프로세스 단계 구현 {#implementing-a-process-step-with-a-java-class}
 
 프로세스 단계를 OSGI 서비스 구성 요소(Java 번들)로 정의하려면
 
-1. 번들을 만들고 OSGI 컨테이너에 배포합니다. [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 또는 [Eclipse](/help/sites-developing/howto-projects-eclipse.md)로 번들을 만드는 방법에 대한 설명서를 참조하십시오.
+1. 번들을 만들고 OSGI 컨테이너에 배포합니다. 을 사용하여 번들 만들기에 대한 설명서를 참조하십시오. [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 또는 [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
 
    >[!NOTE]
    >
-   >OSGI 구성 요소는 `execute()` 메서드를 사용하여 `WorkflowProcess` 인터페이스를 구현해야 합니다. 아래의 예제 코드를 참조하십시오.
+   >OSGI 구성 요소는 `WorkflowProcess` 인터페이스 `execute()` 메서드를 사용합니다. 아래의 예제 코드를 참조하십시오.
 
    >[!NOTE]
    >
-   >패키지 이름을 `maven-bundle-plugin` 구성의 `<*Private-Package*>` 섹션에 추가해야 합니다.
+   >패키지 이름을 `<*Private-Package*>` 섹션 `maven-bundle-plugin` 구성.
 
-1. SCR 속성 `process.label`을 추가하고 필요에 따라 값을 설정합니다. 일반 **프로세스 단계** 구성 요소를 사용할 때 프로세스 단계가 나열되는 이름이 됩니다. 아래 예를 참조하십시오.
-1. **모델** 편집기에서 일반 **프로세스 단계** 구성 요소를 사용하여 프로세스 단계를 워크플로우에 추가합니다.
-1. **프로세스 단계**&#x200B;의 편집 대화 상자에서 **프로세스** 탭으로 이동하여 프로세스 구현을 선택합니다.
-1. 코드에서 인수를 사용하는 경우 **프로세스 인수**&#x200B;를 설정합니다. 예:false.
+1. SCR 속성 추가 `process.label`  필요한 대로 값을 설정합니다. 이는 일반 을 사용할 때와 같이 프로세스 단계가 나열된 이름입니다 **프로세스 단계** 구성 요소. 아래 예를 참조하십시오.
+1. 에서 **모델** 편집기에서 일반 을 사용하여 워크플로우에 프로세스 단계를 추가합니다 **프로세스 단계** 구성 요소.
+1. 편집 대화 상자( **프로세스 단계**), 로 이동합니다. **프로세스** 탭을 선택하고 프로세스 구현을 선택합니다.
+1. 코드에서 인수를 사용하는 경우 **프로세스 인수**. 예: false.
 1. 단계 및 워크플로우 모델(모델 편집기의 왼쪽 상단 모서리)에 대한 변경 사항을 저장합니다.
 
 실행 가능한 Java 메서드를 구현하는 각 Java 메서드는 OSGI 서비스로 등록되므로 런타임 중에 언제든지 메서드를 추가할 수 있습니다.
 
-다음 OSGI 구성 요소는 페이로드가 페이지일 때 속성 `approved`을 페이지 컨텐츠 노드에 추가합니다.
+다음 OSGI 구성 요소는 속성을 추가합니다 `approved` 페이로드가 페이지일 때 페이지 컨텐츠 노드에 추가합니다.
 
 ```java
 package com.adobe.example.workflow.impl.process;
@@ -469,7 +467,7 @@ public class MyProcess implements WorkflowProcess {
 >
 >프로세스가 한 행에서 세 번 실패하면 항목이 워크플로우 관리자의 받은 편지함에 배치됩니다.
 
-### ECMAScript {#using-ecmascript} 사용
+### ECMAScript 사용 {#using-ecmascript}
 
 ECMA 스크립트를 통해 스크립트 개발자가 프로세스 단계를 구현할 수 있습니다. 스크립트는 JCR 저장소에 있으며 여기에서 실행됩니다.
 
@@ -483,7 +481,7 @@ ECMA 스크립트를 통해 스크립트 개발자가 프로세스 단계를 구
 | `com.adobe.granite.workflow.metadata.MetaDataMap` | `metaData` | 현재 단계 인스턴스의 메타 데이터입니다. |
 | `org.apache.sling.scripting.core.impl.InternalScriptHelper` | `sling` | Sling 런타임 환경에 대한 액세스를 제공합니다. |
 
-다음 예제 스크립트는 워크플로우 페이로드를 나타내는 JCR 노드에 액세스하는 방법을 보여줍니다. `graniteWorkflowSession` 변수는 페이로드 경로에서 노드를 가져오는 데 사용되는 JCR 세션 변수에 맞게 조정되었습니다.
+다음 예제 스크립트는 워크플로우 페이로드를 나타내는 JCR 노드에 액세스하는 방법을 보여줍니다. 다음 `graniteWorkflowSession` 변수를 페이로드 경로에서 노드를 가져오는 데 사용되는 JCR 세션 변수에 채택했습니다.
 
 ```
 var workflowData = graniteWorkItem.getWorkflowData();
@@ -498,7 +496,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 }
 ```
 
-다음 스크립트는 페이로드가 이미지( `.png` 파일)인지 확인하고, 이 스크립트에서 흑백 이미지를 생성한 후 동위 노드로 저장합니다.
+다음 스크립트는 페이로드가 이미지인지 확인합니다( `.png` 파일)에서 흑백 이미지를 만들어 동위 노드로 저장합니다.
 
 ```
 var workflowData = graniteWorkItem.getWorkflowData();
@@ -532,21 +530,21 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 스크립트를 사용하려면
 
-1. 스크립트(예: CRXDE Lite)을 만들고 `/apps/myapp/workflow/scripts` 아래 저장소에 저장합니다
-1. **프로세스 단계** 편집 대화 상자에서 스크립트를 식별하는 제목을 지정하려면 스크립트의 `jcr:content` 노드에 다음 속성을 추가하십시오.
+1. 스크립트(예: CRXDE Lite)을 만들고 아래 저장소에 저장합니다 `//apps/workflow/scripts/`
+1. 에서 스크립트를 식별하는 제목을 지정하려면 **프로세스 단계** 편집 대화 상자에서 다음 속성을 `jcr:content` 스크립트 노드:
 
    | 이름 | 유형 | 값 |
    |---|---|---|
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | 편집 대화 상자에 표시할 이름입니다. |
 
-1. **프로세스 단계** 인스턴스를 편집하고 사용할 스크립트를 지정합니다.
+1. 편집 **프로세스 단계** 인스턴스 및 사용할 스크립트를 지정합니다.
 
-## 참가자 선택기 개발 중 {#developing-participant-choosers}
+## 참가자 선택기 개발 {#developing-participant-choosers}
 
-**동적 참가자 단계** 구성 요소에 대한 참가자 선택기를 개발할 수 있습니다.
+에 대한 참가자 선택기를 개발할 수 있습니다 **동적 참가자 단계** 구성 요소.
 
-워크플로우 중에 **동적 참가자 단계** 구성 요소가 시작되면, 생성된 작업 항목을 지정할 참여자를 결정해야 합니다. 이렇게 하려면 다음 중 하나를 수행합니다.
+다음의 경우 **동적 참가자 단계** 구성 요소는 워크플로우 중에 시작되며, 생성된 작업 항목을 지정할 참여자를 결정해야 합니다. 이렇게 하려면 다음 중 하나를 수행합니다.
 
 * OSGi 서비스에 요청을 보냅니다.
 * 는 ECMA 스크립트를 실행하여 참여자를 선택합니다
@@ -555,17 +553,17 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 >[!NOTE]
 >
->**동적 참가자 단계** 구성 요소를 서비스 또는 스크립트와 연결하는 방법은 [동적 참가자 단계](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) 또는 [단계 구현 대체](#persisting-and-accessing-data)를 참조하십시오.
+>연결에 대한 정보 **동적 참가자 단계** 서비스 또는 스크립트가 있는 구성 요소 [동적 참가자 단계](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) 또는 [단계 구현 재정의](#persisting-and-accessing-data).
 
-### Java 클래스 {#developing-a-participant-chooser-using-a-java-class}를 사용하여 참가자 선택기 개발
+### Java 클래스를 사용한 참가자 선택기 개발 {#developing-a-participant-chooser-using-a-java-class}
 
 참가자 단계를 OSGI 서비스 구성 요소(Java 클래스)로 정의하려면
 
-1. OSGI 구성 요소는 `getParticipant()` 메서드를 사용하여 `ParticipantStepChooser` 인터페이스를 구현해야 합니다. 아래의 예제 코드를 참조하십시오.
+1. OSGI 구성 요소는 `ParticipantStepChooser` 인터페이스 `getParticipant()` 메서드를 사용합니다. 아래의 예제 코드를 참조하십시오.
 
    번들을 만들고 OSGI 컨테이너에 배포합니다.
 
-1. SCR 속성 `chooser.label`을 추가하고 필요에 따라 값을 설정합니다. 이 이름은 **동적 참가자 단계** 구성 요소를 사용하여 참가자 선택기가 나열된 이름입니다. 예제를 참조하십시오.
+1. SCR 속성 추가 `chooser.label` 값을 필요에 따라 설정합니다. 참여자 선택기가 나열되는 이름으로, **동적 참가자 단계** 구성 요소. 예제를 참조하십시오.
 
    ```java
    package com.adobe.example.workflow.impl.process;
@@ -614,14 +612,14 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
    }
    ```
 
-1. **모델** 편집기에서 일반 **동적 참가자 단계** 구성 요소를 사용하여 워크플로우에 동적 참가자 단계를 추가합니다.
-1. 편집 대화 상자에서 **참가자 선택기** 탭을 선택하고 선택한 구현을 선택합니다.
-1. 코드에서 인수를 사용하는 경우 **프로세스 인수**&#x200B;를 설정합니다. 이 예제는`/content/we-retail/de`
+1. 에서 **모델** 편집기에서 일반 을 사용하여 워크플로우에 동적 참가자 단계를 추가합니다 **동적 참가자 단계** 구성 요소.
+1. 편집 대화 상자에서 **참가자 선택기** 탭하고 선택한 구현을 선택합니다.
+1. 코드에서 인수를 사용하는 경우 **프로세스 인수**. 이 예제는 `/content/we-retail/de`.
 1. 단계 및 워크플로우 모델에 대한 변경 사항을 저장합니다.
 
-### ECMA Script {#developing-a-participant-chooser-using-an-ecma-script}를 사용하여 참가자 선택기 개발
+### ECMA 스크립트를 사용하여 참가자 선택기 개발 {#developing-a-participant-chooser-using-an-ecma-script}
 
-**참가자 단계**&#x200B;에서 생성하는 작업 항목이 지정된 사용자를 선택하는 ECMA 스크립트를 만들 수 있습니다. 스크립트는 인수가 필요하지 않은 `getParticipant` 함수를 포함해야 하며 사용자 또는 그룹의 ID를 포함하는 `String` 를 반환해야 합니다.
+작업 항목이 지정된 사용자를 선택하는 ECMA 스크립트를 만들 수 있습니다 **참가자 단계** 생성합니다. 스크립트는 `getParticipant` 인수가 필요하지 않고 를 반환합니다 `String` 에는 사용자 또는 그룹의 ID가 포함되어 있습니다.
 
 스크립트는 JCR 저장소에 있으며 여기에서 실행됩니다.
 
@@ -649,19 +647,19 @@ function getParticipant() {
 }
 ```
 
-1. 스크립트(예: CRXDE Lite)을 만들고 `/apps/myapp/workflow/scripts` 아래 저장소에 저장합니다
-1. **프로세스 단계** 편집 대화 상자에서 스크립트를 식별하는 제목을 지정하려면 스크립트의 `jcr:content` 노드에 다음 속성을 추가하십시오.
+1. 스크립트(예: CRXDE Lite)을 만들고 아래 저장소에 저장합니다 `//apps/workflow/scripts`
+1. 에서 스크립트를 식별하는 제목을 지정하려면 **프로세스 단계** 편집 대화 상자에서 다음 속성을 `jcr:content` 스크립트 노드:
 
    | 이름 | 유형 | 값 |
    |---|---|---|
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | 편집 대화 상자에 표시할 이름입니다. |
 
-1. [동적 참가자 단계](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) 인스턴스를 편집하고 사용할 스크립트를 지정합니다.
+1. 편집 [동적 참가자 단계](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) 인스턴스 및 사용할 스크립트를 지정합니다.
 
 ## 워크플로우 패키지 처리 {#handling-workflow-packages}
 
-[워크플로우 ](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) 패키지를 처리를 위해 워크플로우에 전달할 수 있습니다. 워크플로우 패키지에는 페이지 및 자산과 같은 리소스에 대한 참조가 들어 있습니다.
+[워크플로우 패키지](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) 을 처리를 위해 워크플로우에 전달할 수 있습니다. 워크플로우 패키지에는 페이지 및 자산과 같은 리소스에 대한 참조가 들어 있습니다.
 
 >[!NOTE]
 >
@@ -669,16 +667,14 @@ function getParticipant() {
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
-
 >
 
 
+패키지 리소스를 가져와 처리하는 워크플로우 단계를 개발할 수 있습니다. 의 다음 멤버 `com.day.cq.workflow.collection` 패키지를 통해 워크플로우 패키지에 대한 액세스 권한을 제공합니다.
 
-패키지 리소스를 가져와 처리하는 워크플로우 단계를 개발할 수 있습니다. `com.day.cq.workflow.collection` 패키지의 다음 구성원은 워크플로우 패키지에 액세스할 수 있습니다.
-
-* `ResourceCollection`:워크플로 패키지 클래스입니다.
-* `ResourceCollectionUtil`:ResourceCollection 개체를 검색하는 데 사용합니다.
-* `ResourceCollectionManager`:컬렉션을 만들고 검색합니다. 구현은 OSGi 서비스로 배포됩니다.
+* `ResourceCollection`: 워크플로 패키지 클래스입니다.
+* `ResourceCollectionUtil`: ResourceCollection 개체를 검색하는 데 사용합니다.
+* `ResourceCollectionManager`: 컬렉션을 만들고 검색합니다. 구현은 OSGi 서비스로 배포됩니다.
 
 다음 예제 Java 클래스는 패키지 리소스를 가져오는 방법을 보여 줍니다.
 
@@ -784,19 +780,19 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 }
 ```
 
-## 예:사용자 지정 단계 {#example-creating-a-custom-step} 만들기
+## 예: 사용자 지정 단계 만들기 {#example-creating-a-custom-step}
 
 자신만의 사용자 지정 단계를 만들기 쉽게 시작하는 방법은 다음에서 기존 단계를 복사하는 것입니다.
 
 `/libs/cq/workflow/components/model`
 
-### 기본 단계 {#creating-the-basic-step} 만들기
+### 기본 단계 만들기 {#creating-the-basic-step}
 
-1. /apps 아래의 경로를 다시 만듭니다.예:
+1. /apps 아래의 경로를 다시 만듭니다. 예:
 
    `/apps/cq/workflow/components/model`
 
-   새 폴더는 `nt:folder` 형식입니다.
+   새 폴더는 다음과 같습니다 `nt:folder`:
 
    ```xml
    - apps
@@ -810,7 +806,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
    >
    >이 단계는 클래식 UI 모델 편집기에 적용되지 않습니다.
 
-1. 그런 다음 복사한 단계를 /apps 폴더에 넣습니다.예:
+1. 그런 다음 복사한 단계를 /apps 폴더에 넣습니다. 예:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -820,7 +816,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    >[!CAUTION]
    >
-   >표준 UI에서는 제목만 표시되고 세부 정보는 카드에 표시되지 않으므로 클래식 UI 편집기용이므로 `details.jsp` 이 필요하지 않습니다.
+   >표준 UI에서는 제목만 표시되고 세부 사항은 카드에 표시되지 않으므로 `details.jsp` 클래식 UI 편집기용이므로 필요하지 않습니다.
 
 1. 노드에 다음 속성을 적용합니다.
 
@@ -832,7 +828,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
       기존 단계에서 상속해야 합니다.
 
-      이 예에서는 기본 단계의 `cq/workflow/components/model/step`에서 상속되지만 `participant`, `process` 등과 같은 다른 슈퍼 유형을 사용할 수 있습니다.
+      이 예제에서는 의 기본 단계에서 상속합니다 `cq/workflow/components/model/step`와 같은 다른 슈퍼 유형을 사용할 수 있습니다. `participant`, `process`등
 
    * `jcr:title`
 
@@ -840,7 +836,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    * `cq:icon`
 
-      단계에 대해 [Coral 아이콘](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)을 지정하는 데 사용됩니다.
+      를 지정하는 데 사용됩니다. [Coral 아이콘](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 참조하십시오.
 
    * `componentGroup`
 
@@ -851,54 +847,54 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
       * 양식 워크플로우
       * 프로젝트
       * WCM 워크플로우
-      * 워크플로우
+      * 워크플로
 
    ![wf-35](assets/wf-35.png)
 
-1. 이제 편집을 위해 워크플로우 모델을 열 수 있습니다. 단계 브라우저에서 필터링하여 **내 사용자 지정 단계**&#x200B;를 볼 수 있습니다.
+1. 이제 편집을 위해 워크플로우 모델을 열 수 있습니다. 단계 브라우저에서 필터링하여 볼 수 있습니다. **내 사용자 지정 단계**:
 
    ![wf-36](assets/wf-36.png)
 
-   **내 사용자 지정 단계**&#x200B;를 모델로 드래그하면 카드가 표시됩니다.
+   드래그 **내 사용자 지정 단계** on-to-model에 카드가 표시됩니다.
 
    ![wf-37](assets/wf-37.png)
 
-   단계에 대해 `cq:icon` 이 정의되지 않은 경우 제목의 처음 두 문자를 사용하여 기본 아이콘이 렌더링됩니다. 예:
+   없는 경우 `cq:icon` 가 단계에 대해 정의된 경우 제목의 처음 두 문자를 사용하여 기본 아이콘이 렌더링됩니다. 예:
 
    ![wf-38](assets/wf-38.png)
 
 #### 단계 구성 대화 상자 정의 {#defining-the-step-configure-dialog}
 
-[기본 단계 만들기](#creating-the-basic-step) 후에는 **구성** 단계를 다음과 같이 정의합니다.
+후 [기본 단계 만들기](#creating-the-basic-step)에서 단계를 정의합니다. **구성** 대화 상자는 다음과 같습니다.
 
-1. `cq:editConfig` 노드에서 속성을 다음과 같이 구성합니다.
+1. 노드에서 속성을 구성합니다 `cq:editConfig` 아래와 같이 변경하는 것을 의미합니다.
 
    **관심 속성:**
 
    * `cq:inherit`
 
-      `true`으로 설정하면 단계 구성 요소는 `sling:resourceSuperType`에 지정한 단계에서 속성을 상속합니다.
+      로 설정된 경우 `true`로 지정하는 경우 단계 구성 요소는 지정된 단계에서 속성을 상속합니다. `sling:resourceSuperType`.
 
    * `cq:disableTargeting`
 
       필요에 따라 설정합니다.
    ![wf-39](assets/wf-39.png)
 
-1. `cq:formsParameter` 노드에서 속성을 다음과 같이 구성합니다.
+1. 노드에서 속성을 구성합니다 `cq:formsParameter` 아래와 같이 변경하는 것을 의미합니다.
 
    **관심 속성:**
 
    * `jcr:title`
 
-      모델 맵의 단계 카드 및 **내 사용자 지정 - 단계 속성** 구성 대화 상자의 **제목** 필드에서 기본 제목을 설정합니다.
+      모델 맵과 **제목** 필드 **내 사용자 지정 - 단계 속성** 구성 대화 상자
 
    * 자신만의 사용자 지정 속성을 정의할 수도 있습니다.
 
    ![wf-40](assets/wf-40.png)
 
-1. 노드 `cq:listeners`에 속성을 구성합니다.
+1. 노드에서 속성을 구성합니다 `cq:listeners`.
 
-   `cq:listener` 노드 및 해당 속성을 사용하면 터치 지원 UI 모델 편집기에서 이벤트에 반응하는 이벤트 처리기를 설정할 수 있습니다.모델 페이지로 단계를 드래그하거나 단계 속성 편집과 같이,
+   다음 `cq:listener` 노드 및 해당 속성을 사용하면 터치 지원 UI 모델 편집기에서 이벤트에 반응하는 이벤트 처리기를 설정할 수 있습니다. 모델 페이지로 단계를 드래그하거나 단계 속성 편집과 같이,
 
    **관심 영역 속성:**
 
@@ -909,19 +905,19 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    이 구성은 편집기에서 제대로 작동하는 데 필수입니다. 대부분의 경우 이 구성을 변경하지 않아야 합니다.
 
-   그러나 `cq:inherit`을 true(를 &quot;/> 노드에서 위 참조)로 설정하면 단계 정의에 명시적으로 포함하지 않아도 이 구성을 상속할 수 있습니다. `cq:editConfig` 상속이 없는 경우에는 다음 속성 및 값으로 이 노드를 추가해야 합니다.
+   하지만, `cq:inherit` true(on) `cq:editConfig` 노드, 위의 참조)에서는 단계 정의에 명시적으로 포함할 필요 없이 이 구성을 상속할 수 있습니다. 상속이 없는 경우에는 다음 속성 및 값으로 이 노드를 추가해야 합니다.
 
-   이 예에서 상속이 활성화되어 `cq:listeners` 노드를 제거할 수 있으며, 단계가 여전히 올바르게 작동합니다.
+   이 예에서는 상속이 활성화되었으므로 `cq:listeners` 노드 및 단계가 여전히 올바르게 작동합니다.
 
    ![wf-41](assets/wf-41.png)
 
-1. 이제 단계의 인스턴스를 워크플로우 모델에 추가할 수 있습니다. **구성**&#x200B;하면 대화 상자가 표시됩니다.
+1. 이제 단계의 인스턴스를 워크플로우 모델에 추가할 수 있습니다. 다음 경우에 **구성** 대화 상자가 표시되는 단계입니다.
 
    ![wf-42](assets/wf-42.png) ![wf-43](assets/wf-43.png)
 
 #### 이 예제에 사용된 샘플 마크업 {#sample-markup-used-in-this-example}
 
-사용자 지정 단계의 마크업은 구성 요소 루트 노드의 `.content.xml`에 표시됩니다. 이 예제에 사용되는 샘플 `.content.xml`:
+사용자 지정 단계의 마크업은 `.content.xml` 구성 요소 루트 노드 샘플 `.content.xml` 다음 예제에 사용됩니다.
 
 `/apps/cq/workflow/components/model/myCustomStep/.content.xml`
 
@@ -936,7 +932,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
     componentGroup="Workflow"/>
 ```
 
-이 예제에서 사용되는 `_cq_editConfig.xml` 샘플입니다.
+다음 `_cq_editConfig.xml` 이 예제에 사용되는 샘플:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -957,7 +953,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 </jcr:root>
 ```
 
-이 예제에서 사용되는 `_cq_dialog/.content.xml` 샘플입니다.
+다음 `_cq_dialog/.content.xml` 이 예제에 사용되는 샘플:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1038,17 +1034,14 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >
 >클래식 UI 모델 편집기 대화 상자는 터치 지원 표준 UI 편집기에서 계속 작동합니다.
 >
->클래식 UI 단계 대화 상자를 표준 UI 대화 상자로 업그레이드하려면 AEM에는 [현대화 도구](/help/sites-developing/modernization-tools.md)가 있습니다. 변환 후에도 일부 수동 개선 사항이 여전히 있으며 특정 사례에 대해 대화 상자에 수행할 수 있습니다.
+>AEM에는 [현대화 도구](/help/sites-developing/modernization-tools.md) 클래식 UI 단계 대화 상자를 표준 UI 대화 상자로 업그레이드하려면 변환 후에도 일부 수동 개선 사항이 여전히 있으며 특정 사례에 대해 대화 상자에 수행할 수 있습니다.
 >
->* 업그레이드된 대화 상자가 비어 있는 경우 솔루션 제공 방법의 예와 유사한 기능이 있는 `/libs`의 대화 상자를 볼 수 있습니다. 예:
-   >
-   >
-* `/libs/cq/workflow/components/model`
+>* 업그레이드된 대화 상자가 비어 있는 경우 `/libs` 에는 솔루션을 제공하는 방법의 예와 유사한 기능이 있습니다. 예:
+>
+>* `/libs/cq/workflow/components/model`
 >* `/libs/cq/workflow/components/workflow`
 >* `/libs/dam/components`
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
-
 >
->  
-`/libs`에서 어떤 것도 수정하지 말고, 예로 사용하십시오. 기존 단계를 활용하려면 해당 단계를 `/apps`에 복사한 다음 여기에서 수정합니다.
+>  에서 아무것도 수정하지 마십시오 `/libs`를 예로 사용하면 됩니다. 기존 단계를 활용하려면 다음 위치에 복사합니다. `/apps` 그리고 거기에서 수정할 수 있습니다.

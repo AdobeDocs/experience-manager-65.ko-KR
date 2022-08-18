@@ -12,9 +12,9 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 49a74d8c14c79e72f9df1e2ec41652ebc6fe76b6
+source-git-commit: 13f15bee38b6b4af4cd59376849810a788f0c467
 workflow-type: tm+mt
-source-wordcount: '2312'
+source-wordcount: '2313'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ REST API는 JSON으로 전송되는 응답을 사용하여 HTTP를 통해 정확
 
 >[!NOTE]
 >
->QueryBuilder API는 JCR API를 사용하여 빌드됩니다. OSGi 번들 내에서 JCR API를 사용하여 Adobe Experience Manager JCR을 쿼리할 수도 있습니다. 자세한 내용은 [JCR API를 사용하여 Adobe Experience Manager 데이터 쿼리](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+>QueryBuilder API는 JCR API를 사용하여 빌드됩니다. OSGi 번들 내에서 JCR API를 사용하여 Adobe Experience Manager JCR을 쿼리할 수도 있습니다. 자세한 내용은 [JCR API를 사용하는 Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=en).
 
 ## Gem 세션 {#gem-session}
 
