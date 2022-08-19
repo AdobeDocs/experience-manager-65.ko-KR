@@ -2,10 +2,10 @@
 title: AEM Content and Commerce 릴리스 노트 2022
 description: AEM Content and Commerce 릴리스 노트 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: b493e7bd73d679aa46bf41fad105f13215226dd4
+source-git-commit: 6c5c37c1c365e1f03ea9b5c935adf63a33faba5d
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 34%
+source-wordcount: '715'
+ht-degree: 45%
 
 ---
 
@@ -21,11 +21,22 @@ ht-degree: 34%
 | CIF 코어 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM Project Archetype | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## 릴리스 날짜: 2022년 7월
+
+| 구성 요소 | 버전 | 세부 사항 |
+|:-------|:-----:|---------------------:|
+| CIF 추가 기능 | 2022.08.02.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.08.02.00.zip) |
+
+### 새로운 기능 {#what-is-new-july}
+
+* AEM 페이지 속성 및 제품 조종실의 개요를 통해 제품 및 카테고리에 대한 AEM 페이지 연결
+   ![제품 조종실 페이지 협회](/help/assets/CIF/product_cockpit_page_association.png)
+
 ## 릴리스 날짜: 2022년 6월
 
 | 구성 요소 | 버전 | 세부 사항 |
 |:-------|:-----:|---------------------:|
-| CIF 추가 기능 | 2022.06.xx.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
+| CIF 추가 기능 | 2022.07.05.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
 | CIF 코어 구성 요소 | 2.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
 | CIF Venia 참조 사이트 | 2022.07.04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
 
@@ -51,19 +62,19 @@ ht-degree: 34%
 
 ### 새로운 기능 {#what-is-new-may}
 
-* 새롭고 간편해진 개요를 위한 제품 조종실 속성 페이지
+* 새롭고 간편해진 개요를 위한 제품 관리실 속성 페이지
 
-![제품 조종실 속성 개요](/help/assets/CIF/product_cockpit_properties_overview.png)
+![제품 관리실 속성 개요](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* I/O Runtime에서 타사 커넥터에 대한 향상된 호환성 및 견고성
+* I/O Runtime의 서드파티 커넥터에 대한 호환성 및 견고함이 개선되었습니다.
 
 * GQL 클라이언트 구성 덮어쓰기(예: 사용자 지정 캐싱 동작 설정)에 대한 지원을 개선합니다
 
 ### 버그 수정 {#bug-fixes-may}
 
-* 다중 값 제품 선택기 필드에 두 번째 제품과 다른 제품이 잘못된 것으로 표시됩니다
+* 다중 값 제품 선택기 필드에 두 번째 제품과 다른 제품이 잘못된 것으로 표시됩니다.
 
-* 구성 요소 뒤에 제품 선택기가 숨겨지는 경우가 있습니다
+* 구성 요소 뒤에 제품 선택기가 숨겨지는 경우가 있습니다.
 
 ## 릴리스 날짜: 2022년 4월
 
@@ -75,13 +86,13 @@ ht-degree: 34%
 
 ### 새로운 기능 {#what-is-new-april}
 
-* 제품 조종실에 대한 빠른 액세스: 사이트 편집기에서 한 번의 클릭으로 전체 세부 제품 정보에 쉽게 액세스할 수 있습니다
+* 제품 관리실에 대한 빠른 액세스: 사이트 편집기에서 한 번의 클릭으로 전체 세부 제품 정보에 쉽게 액세스할 수 있습니다.
 
-   ![wishlist 사용](/help/assets/CIF/enable-wishlist.png)
+   ![위시리스트 사용](/help/assets/CIF/enable-wishlist.png)
 
-* 추가 마케팅 상거래 구성 요소에 대한 지원: 장바구니에 추가 및 wishlist 호출에 대한 작업을 표시하도록 구성 요소를 구성할 수 있습니다
+* 추가 마케팅 상거래 구성 요소에 대한 지원: 장바구니에 추가 및 위시리스트 콜 투 액션을 표시하도록 구성 요소를 구성할 수 있습니다.
 
-   ![제품 조종실에 대한 사이트 편집기 바로 가기](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+   ![제품 관리실에 대한 사이트 편집기 단축키](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## 릴리스 날짜: 2022년 2월
 
