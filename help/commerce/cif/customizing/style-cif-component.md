@@ -3,13 +3,13 @@ title: AEM CIF 핵심 구성 요소 스타일 지정
 description: AEM CIF 코어 구성 요소 스타일을 지정하는 방법을 알아봅니다. 이 자습서에서는 클라이언트측 라이브러리 또는 clientlibs를 사용하여 AEM(Adobe Experience Manager) Commerce 구현을 위한 CSS 및 Javascript를 배포하고 관리하는 방법을 설명합니다. 또한 이 자습서에서는 ui.frontend 모듈 및 웹 팩 프로젝트를 엔드 투 엔드 빌드 프로세스에 통합하는 방법을 다룹니다.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 3%
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 ![빌드할 내용](../assets/style-cif-component/what-you-will-build.png)
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 이 자습서를 완료하려면 로컬 개발 환경이 필요합니다. 여기에는 Adobe Commerce 인스턴스에 구성 및 연결된 AEM의 실행 인스턴스가 포함됩니다. 다음 요구 사항 및 단계를 검토하십시오 [AEM을 사용하여 로컬 개발 설정](../develop.md).
 
