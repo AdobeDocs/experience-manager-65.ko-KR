@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 6c6ddaba0e42df4b4701670e8abfdabe5205879c
+source-git-commit: 495b9a006f5288ad6579e13aaea82ace6d6f0e91
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '522'
 ht-degree: 22%
 
 ---
@@ -55,15 +55,13 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 1. **[Windows 전용]:** 다음 단계 중 하나를 수행합니다.
    * 선택 취소 **구성 관리자 시작** 누르기 전에 옵션 **[!UICONTROL 완료]**. 실행 **구성 관리자** 사용 **ConfigurationManager.bat** 에 있는 파일 `[aem-forms root]\configurationManager\bin`.
 
-   * 선택 취소 **구성 관리자 시작** 누르기 전에 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음 위치로 이동합니다. *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉토리 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일.
+   * 또는 **구성 관리자 시작** 누르기 전에 옵션 **[!UICONTROL 완료]**. 실행 전 **구성 관리자** 사용 **ConfigurationManager.exe** 또는 **ConfigurationManager_IPv6.exe**, 다음 위치로 이동합니다. *`<AEMForms_Install_Dir>\configurationManager\bin`* 디렉토리 및 바꾸기 [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) 및 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 파일.
    >[!NOTE]
    >사용 **ConfigurationManager.bat** 파일을 사용하면 .lax 파일의 이름을 수동으로 업데이트하지 않아도 됩니다.
 
-1. **[Unix 기반 전용]:** 다음 단계 중 하나를 수행합니다.
+1. **[Unix 기반 전용]:**
 
-   * 다음 **구성 관리자 시작** 기본적으로 확인란이 선택됩니다. 클릭 **[!UICONTROL 완료]** 구성 관리자를 즉시 실행할 수 있습니다.
-
-   * 를 실행하려면 **구성 관리자** 나중에 선택을 취소합니다 **구성 관리자 시작** 누르기 전에 옵션 **[!UICONTROL 완료]**. 시작할 수 있습니다 **구성 관리자** 나중에 에서 적절한 스크립트를 사용하여 `[AEM_forms_root]/configurationManager/bin` 디렉토리.
+   * 다음 **구성 관리자 시작** 기본적으로 확인란이 선택됩니다. 클릭 **[!UICONTROL 완료]** 구성 관리자를 즉시 실행하거나 **구성 관리자** 나중에 선택을 취소합니다 **구성 관리자 시작** 누르기 전에 옵션 **[!UICONTROL 완료]**. 시작할 수 있습니다 **구성 관리자** 나중에 에서 적절한 스크립트를 사용하여 `[AEM_forms_root]/configurationManager/bin` 디렉토리.
 
 1. 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 *AEM 양식 구성 및 배포* 섹션을 참조하십시오.
 
