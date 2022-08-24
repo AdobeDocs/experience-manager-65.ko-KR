@@ -1,19 +1,19 @@
 ---
 title: 서신 관리의 사용자 지정 특수 문자
-seo-title: 서신 관리의 사용자 지정 특수 문자
+seo-title: Custom special characters in Correspondence Management
 description: 서신 관리에서 사용자 지정 특수 문자를 추가하는 방법을 알아봅니다.
-seo-description: 서신 관리에서 사용자 지정 특수 문자를 추가하는 방법을 알아봅니다.
+seo-description: Learn how to add custom special characters in Correspondence Management.
 uuid: a1890f6d-8e0c-471f-a9bd-861acf1f17e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
-feature: 서신 관리
+feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
@@ -28,12 +28,12 @@ ht-degree: 1%
 
 * 통화 기호(예:, ¥, £)
 * ∑, √, ∂ 및 과 같은 수학 기호
-* 문장 부호 기호‟은 및&quot;
+* 구두점 기호 ‟ 및 &quot;
 
 편지에 다음과 같은 특수 문자를 삽입할 수 있습니다.
 
-* [텍스트 편집기에서](/help/forms/using/document-fragments.md#createtext)
-* [편집 가능한 서신](../../forms/using/create-correspondence.md#managecontent)의 인라인 모듈
+* 에서 [텍스트 편집기](/help/forms/using/document-fragments.md#createtext)
+* 에서 [서신 시 편집 가능한 인라인 모듈](../../forms/using/create-correspondence.md#managecontent)
 
 ![specialcharsinlinemodule](assets/specialcharactersinlinemodule.png)
 
@@ -41,12 +41,12 @@ ht-degree: 1%
 
 ## 서신 관리에서 사용자 지정 특수 문자에 대한 지원을 추가하거나 수정합니다 {#creatingfolderstructure}
 
-사용자 지정 특수 문자에 대한 지원을 추가하려면 다음 단계를 따르십시오.
+다음 단계를 사용하여 사용자 지정 특수 문자 지원을 추가합니다.
 
-1. `https://'[server]:[port]'/[ContextPath]/crx/de`(으)로 이동하여 관리자로 로그인합니다.
-1. apps 폴더에서 특수 문자 폴더(libs 아래의 textEditorConfig 폴더에 있음)와 유사한 경로/구조로 **[!UICONTROL specialcharacters]**&#x200B;라는 폴더를 만듭니다.
+1. 이동 `https://'[server]:[port]'/[ContextPath]/crx/de` 관리자로 로그인합니다.
+1. apps 폴더에서 **[!UICONTROL 특수 문자]** 특수 문자 폴더(libs 아래의 textEditorConfig 폴더에 있음)와 유사한 경로/구조 사용:
 
-   1. 다음 경로에서 **specialcharacters** 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **특수 문자** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **오버레이 노드**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
@@ -69,25 +69,23 @@ ht-degree: 1%
       >    * 기능 팩 설치
 
 
-   1. **확인**&#x200B;을 클릭한 다음 **모두 저장**&#x200B;을 클릭합니다. 특수 문자 폴더가 지정된 경로에 만들어집니다.
+   1. 클릭 **확인** 을 클릭한 다음 **모두 저장**. 특수 문자 폴더가 지정된 경로에 만들어집니다.
 
       오버레이를 만든 후 노드 구조 태그를 확인합니다. 오버레이를 사용하여 /apps에서 만든 각 노드는 해당 노드의 /libs에 정의된 것과 동일한 클래스 및 속성을 가져야 합니다. /apps 위치 아래의 노드 구조에 속성 또는 태그가 없으면 /libs의 해당 노드와 태그를 동기화하십시오.
 
-
-
-1. **[!UICONTROL textEditorConfig]** 노드에 다음 속성 및 값이 있는지 확인합니다.
+1. 다음을 확인합니다. **[!UICONTROL textEditorConfig]** 노드에는 다음 속성 및 값이 있습니다.
 
    | 이름 | 유형 | 값 |
    |---|---|---|
    | cmConfigurationType | 문자열 | cmTextEditorConfiguration |
    | cssPath | 문자열 | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. 다음 경로에서 **[!UICONTROL specialcharacters]** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 하위 노드**&#x200B;를 선택한 다음 **모두 저장**&#x200B;을 클릭합니다.
+1. 마우스 오른쪽 단추를 클릭합니다. **[!UICONTROL 특수 문자]** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **만들기 > 하위 노드** 을 클릭한 다음 **모두 저장**:
 
-   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
+   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;yourchildnode>
 
 1. 텍스트 편집기 새로 고침\서신 UI 만들기 페이지를 새로 고칩니다. 추가한 노드는 UI의 특수 문자 목록에서 마지막 노드입니다.
-1. **모두 저장**&#x200B;을 클릭합니다.
+1. 클릭 **모두 저장**.
 1. 필요에 따라 특수 문자를 변경합니다.
 
 <table>

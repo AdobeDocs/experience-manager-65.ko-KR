@@ -12,7 +12,7 @@ discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: 88e4d8b56aa844e9a264615250971d0afdb68137
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '2730'
 ht-degree: 0%
@@ -90,7 +90,6 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 >
 >* org.apache.jackrabbit.oak에서 생성합니다.**plugins**.segment.standby.store.StandbyStoreService to org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* org.apache.jackrabbit.oak에서 생성합니다.**plugins**.segment.SegmentNodeStoreService to org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
-
 >
 >이 변경 사항을 반영하려면 필요한 구성 조정을 해야 합니다.
 

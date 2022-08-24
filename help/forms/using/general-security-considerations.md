@@ -1,8 +1,8 @@
 ---
 title: JEE에서 AEM Forms에 대한 일반 보안 고려 사항
-seo-title: JEE에서 AEM Forms에 대한 일반 보안 고려 사항
+seo-title: General Security Considerations for AEM Forms on JEE
 description: JEE 환경에서 AEM Forms 강화 준비 방법을 알아봅니다.
-seo-description: JEE 환경에서 AEM Forms 강화 준비 방법을 알아봅니다.
+seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
 content-type: reference
 topic-tags: Security
@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1062'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ JEE에서 AEM Forms이 지원하는 애플리케이션 서버에 대한 보안 �
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p><a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>에서 WebLogic Security 이해 를 검색하십시오.</p> </td>
+   <td><p>에서 WebLogic Security 이해 검색 <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
   </tr>
   <tr>
    <td><p>IBM WebSphere®</p> </td>
@@ -144,12 +144,12 @@ JEE에서 AEM Forms이 지원하는 데이터베이스에 대한 보안 정보�
   </tr>
   <tr>
    <td><p>Oracle® 12c</p> </td>
-   <td><p><a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g 설명서에서 보안 장</a>을 참조하십시오</p> </td>
+   <td><p>의 보안 장을 참조하십시오. <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g 설명서</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-이 표에서는 JEE에서 AEM Forms 구성 프로세스 중에 열어야 하는 기본 포트를 설명합니다. https를 통해 연결하는 경우 포트 정보와 IP 주소를 적절하게 조정합니다. 포트 구성에 대한 자세한 내용은 애플리케이션 서버의 *AEM Forms 설치 및 배포* 문서를 참조하십시오.
+이 표에서는 JEE에서 AEM Forms 구성 프로세스 중에 열어야 하는 기본 포트를 설명합니다. https를 통해 연결하는 경우 포트 정보와 IP 주소를 적절하게 조정합니다. 포트 구성에 대한 자세한 내용은 *JEE에 AEM Forms 설치 및 배포* 애플리케이션 서버에 대한 문서입니다.
 
 <table>
  <thead>
@@ -216,9 +216,9 @@ JBoss Application Server는 기본 HTTP 포트로 8080을 사용합니다. 또�
 
    클러스터 설치: [JBoss 루트]/domain/configuration/domain.xml
 
-1. **&lt;socket-binding>** 태그의 **port** 속성 값을 사용자 지정 포트 번호로 변경합니다. 예를 들어, 다음은 포트 8090을 사용합니다.
+1. 값 변경 **포트** 의 속성 **&lt;socket-binding>** 태그로 지정합니다. 예를 들어, 다음은 포트 8090을 사용합니다.
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. 파일을 저장하고 닫습니다.
 1. JBoss 애플리케이션 서버를 다시 시작합니다.
@@ -239,13 +239,13 @@ AEM Forms on JEE는 JEE 데이터베이스의 AEM Forms을 사용하여 정책 �
 
 JEE에서 AEM Forms을 실행하는 데 사용되는 애플리케이션 서버에는 애플리케이션 서버에 구성된 데이터 소스를 통해 데이터베이스에 액세스할 수 있는 자체 구성이 필요합니다. 응용 프로그램 서버가 해당 데이터 소스 구성 파일의 일반 텍스트로 데이터베이스 암호를 표시하지 않는지 확인합니다.
 
-lc_[database].xml 파일에는 명확한 텍스트 형식의 암호를 포함할 수 없습니다. 애플리케이션 서버의 이러한 암호를 암호화하는 방법은 애플리케이션 서버 공급업체에 문의하십시오.
+lc_[데이터베이스].xml 파일에는 암호를 일반 텍스트 형식으로 포함할 수 없습니다. 애플리케이션 서버의 이러한 암호를 암호화하는 방법은 애플리케이션 서버 공급업체에 문의하십시오.
 
 >[!NOTE]
 >
 >JEE JBoss 턴키 설치 프로그램의 AEM Forms은 데이터베이스 암호를 암호화합니다.
 
-IBM WebSphere Application Server 및 Oracle WebLogic Server는 기본적으로 데이터 소스 암호를 암호화할 수 있습니다. 그러나 애플리케이션 서버 설명서에서 이 문제가 발생하는지 확인합니다.
+IBM WebSphere Application Server 및 WebLogic Server는 기본적으로 데이터 소스 암호를 암호화할 수 있습니다. 그러나 애플리케이션 서버 설명서에서 이 문제가 발생하는지 확인합니다.
 
 ### Trust Store에 저장된 개인 키 보호 {#protecting-the-private-key-stored-in-trust-store}
 

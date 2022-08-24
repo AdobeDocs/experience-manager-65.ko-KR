@@ -1,8 +1,8 @@
 ---
 title: JEE에서 AEM Forms에 대한 보안 관리 설정 구성
-seo-title: JEE에서 AEM Forms에 대한 보안 관리 설정 구성
+seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
 description: 개인 개발 환경에서 필요하지만 JEE의 AEM Forms 프로덕션 환경에서 필요하지 않은 사용자 계정 및 서비스를 관리하는 방법을 알아봅니다.
-seo-description: 개인 개발 환경에서 필요하지만 JEE의 AEM Forms 프로덕션 환경에서 필요하지 않은 사용자 계정 및 서비스를 관리하는 방법을 알아봅니다.
+seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -41,14 +41,14 @@ JEE 서비스의 AEM Forms은 항상 적어도 SOAP 액세스가 필요합니다
             https://[host name]:'port'/adminui
    ```
 
-1. **서비스 > 응용 프로그램 및 서비스 > 환경 설정**&#x200B;을 클릭합니다.
+1. 클릭 **서비스 > 응용 프로그램 및 서비스 > 기본 설정**.
 1. 동일한 페이지에서 최대 200개의 서비스 및 종단점을 표시하도록 환경 설정 을 설정하십시오.
-1. **서비스** > **응용 프로그램 및 서비스** > **끝점 관리**&#x200B;를 클릭합니다.
-1. **공급자** 목록에서 **EJB**&#x200B;을 선택한 다음 **필터**&#x200B;를 클릭합니다.
-1. 모든 EJB 끝점을 비활성화하려면 목록에서 각 끝점 옆의 확인란을 선택하고 **비활성화**&#x200B;를 클릭합니다.
-1. **다음**&#x200B;을 클릭하고 모든 EJB 엔드포인트에 대해 이전 단계를 반복합니다. 끝점을 비활성화하기 전에 EJB가 공급자 열에 나열되는지 확인합니다.
-1. **공급자** 목록에서 **SOAP**&#x200B;을 선택한 다음 **필터**&#x200B;를 클릭합니다.
-1. SOAP 끝점을 제거하려면 목록에서 각 끝점 옆의 확인란을 선택하고 **제거**&#x200B;를 클릭합니다. 다음 끝점을 제거하지 마십시오.
+1. 클릭 **서비스** > **응용 프로그램 및 서비스** > **Endpoint Management**.
+1. 선택 **EJB** 에서 **공급자** 목록을 만든 다음 **필터**.
+1. 모든 EJB 끝점을 비활성화하려면 목록에서 각 끝점 옆의 확인란을 선택하고 **비활성화**.
+1. 클릭 **다음** 모든 EJB 엔드포인트에 대해 이전 단계를 반복합니다. 끝점을 비활성화하기 전에 EJB가 공급자 열에 나열되는지 확인합니다.
+1. 선택 **SOAP** 에서 **공급자** 목록을 만든 다음 **필터**.
+1. SOAP 끝점을 제거하려면 목록에서 각 끝점 옆의 확인란을 선택하고 를 클릭합니다 **제거**. 다음 끝점을 제거하지 마십시오.
 
    * AuthenticationManagerService
    * DirectoryManagerService
@@ -64,7 +64,7 @@ JEE 서비스의 AEM Forms은 항상 적어도 SOAP 액세스가 필요합니다
    * 작업 공간 단일 사인온
    * ApplicationManager
 
-1. **다음**&#x200B;을 클릭하고 위의 목록에 없는 SOAP 끝점에 대한 이전 단계를 반복합니다. 끝점을 제거하기 전에 공급자 열에 SOAP가 나열되는지 확인하십시오.
+1. 클릭 **다음** 위의 목록에 없는 SOAP 종단점에 대해 이전 단계를 반복합니다. 끝점을 제거하기 전에 공급자 열에 SOAP가 나열되는지 확인하십시오.
 
 ## 서비스에 대한 필수 불가결한 익명 액세스 사용 안 함 {#disabling-non-essential-anonymous-access-to-services}
 
@@ -76,9 +76,9 @@ JEE 서비스의 AEM Forms은 항상 적어도 SOAP 액세스가 필요합니다
             https://[host name]:'port'/adminui
    ```
 
-1. **서비스 > 응용 프로그램 및 서비스 > 서비스 관리**&#x200B;를 클릭합니다.
+1. 클릭 **서비스 > 애플리케이션 및 서비스 > 서비스 관리**.
 1. 비활성화할 서비스 이름(예: AuthenticationManagerService)을 클릭합니다.
-1. **보안 탭**&#x200B;을 클릭하고 **익명 액세스 허용**&#x200B;을 선택 취소한 다음 **저장**&#x200B;을 클릭합니다.
+1. 을(를) 클릭합니다. **보안 탭**, 선택 취소 **익명 액세스 허용**&#x200B;를 클릭하고 **저장**.
 1. 다음 서비스에 대해 3단계 및 4단계를 완료합니다.
 
    * AuthenticationManagerService
@@ -119,13 +119,13 @@ JEE 서비스의 AEM Forms은 항상 적어도 SOAP 액세스가 필요합니다
             https://[host name]:'port'/adminui
    ```
 
-1. **설정 > 사용자 관리 > 구성 > 구성 파일 가져오기 및 내보내기**&#x200B;를 클릭합니다.
-1. **내보내기**&#x200B;를 클릭하여 기존 AEM Forms 설정으로 config.xml 파일을 생성합니다.
+1. 클릭 **설정 > 사용자 관리 > 구성 > 구성 파일 가져오기 및 내보내기**.
+1. 클릭 **내보내기** 기존 AEM Forms 설정으로 config.xml 파일을 생성합니다.
 1. 편집기에서 XML 파일을 열고 다음 항목을 찾습니다.
 
-   `<entry key=”assertionValidityInMinutes” value=”120”/>`
+   `<entry key="assertionValidityInMinutes" value="120"/>`
 
 1. 값을 5보다 큰 숫자(분)로 변경하고 파일을 저장합니다.
 1. 관리 콘솔에서 구성 파일 가져오기 및 내보내기 페이지로 이동합니다.
 1. 수정된 config.xml 파일의 경로를 입력하거나 찾아보기 를 클릭하여 해당 파일로 이동합니다.
-1. **가져오기** 를 클릭하여 수정된 config.xml 파일을 업로드한 다음 **확인**&#x200B;을 클릭합니다.
+1. 클릭 **가져오기** 수정된 config.xml 파일을 업로드하려면 **확인**.

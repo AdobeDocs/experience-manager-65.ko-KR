@@ -12,7 +12,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 128358e17aa6166c81e0979825ee81d029418f22
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '11766'
 ht-degree: 5%
@@ -1146,7 +1146,7 @@ Dynamic Media은 캡션 파일을 JSON(JavaScript 개체 표기법) 형식으로
 
 원할 경우 비디오 뷰어 사전 설정을 사용하는 대신 장을 사용하여 자신만의 사용자 지정 비디오 뷰어를 만들고 브랜드화할 수 있습니다. 장 탐색을 사용하여 고유한 HTML5 뷰어를 만드는 방법에 대한 지침은 Adobe HTML5 Viewer SDK API에서 클래스 아래의 &quot;Customizing Behavior Using Modifiers&quot; 제목을 참조하십시오 `s7sdk.video.VideoPlayer` 및 `s7sdk.video.VideoScrubber`. 자세한 내용은 [HTML5 뷰어 SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) 설명서.
 
-<!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+<!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 캡션을 만드는 것과 거의 동일한 방식으로 비디오에 대한 장 목록을 만듭니다. 즉, WebVTT 파일을 만듭니다. 그러나 이 파일은 또한 사용 중인 WebVTT 캡션 파일과 구분해야 합니다. 캡션과 장을 하나의 WebVTT 파일에 결합할 수 없습니다.
 

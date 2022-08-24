@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 자산 및 문서 마이그레이션
+title: AEM Forms 에셋 및 문서 마이그레이션
 seo-title: Migrate AEM Forms assets and documents
 description: 마이그레이션 유틸리티를 사용하면 AEM 6.3 Forms 또는 이전 버전에서 AEM 6.4 Forms으로 AEM Forms 자산 및 문서를 마이그레이션할 수 있습니다.
 seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
@@ -13,14 +13,14 @@ discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 547772f7e989ebe2e8c1be73b3dfbfdb85228a3c
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1743'
 ht-degree: 2%
 
 ---
 
-# AEM Forms 자산 및 문서 마이그레이션{#migrate-aem-forms-assets-and-documents}
+# AEM Forms 에셋 및 문서 마이그레이션{#migrate-aem-forms-assets-and-documents}
 
 마이그레이션 유틸리티는 [적응형 Forms 자산](../../forms/using/introduction-forms-authoring.md), [클라우드 구성](/help/sites-developing/extending-cloud-config.md), 및 [서신 관리 자산](/help/forms/using/cm-overview.md) 이전 버전에서 AEM 6.5 Forms에 사용된 형식으로 변환했습니다. 마이그레이션 유틸리티를 실행하면 다음 항목이 마이그레이션됩니다.
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 즉석 업그레이드를 수행한 경우 업그레이드된 인스턴스에 이미 자산 및 문서가 있습니다. 그러나 자산 및 문서를 사용하려면 먼저 를 설치해야 합니다 [AEMFD 호환성 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) (서신 관리 호환성 패키지 포함)
 
-그런 다음 다음을 수행하여 자산 및 문서를 업데이트해야 합니다. [마이그레이션 유틸리티 실행](#runningmigrationutility).
+그런 다음 다음을 기준으로 자산 및 문서를 업데이트해야 합니다 [마이그레이션 유틸리티 실행](#runningmigrationutility).
 
 **부재 설치 시**
 

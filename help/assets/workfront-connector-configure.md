@@ -4,7 +4,7 @@ description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 1%
@@ -88,7 +88,7 @@ Workfront 프로젝트와 AEM 폴더 간의 메타데이터 매핑은 AEM 폴더
 
 ![메타데이터 매핑 구성](/help/assets/assets/wf-metadata-mapping-config2.png)
 
-### 자산 메타데이터 매핑 구성 {#asset-metadata-mapping}
+### 에셋 메타데이터 매핑 구성 {#asset-metadata-mapping}
 
 Adobe Workfront 문서와 자산 간의 메타데이터 매핑은 AEM 메타데이터 스키마 내에 정의됩니다. AEM에서 평소대로 메타데이터 스키마를 생성 및 구성해야 합니다. Workfront 도구는 각 메타데이터 스키마 양식 필드의 설정 구성 탭에 구성 옵션을 추가합니다. 이러한 옵션을 사용하면 각 AEM 속성을 매핑해야 하는 Workfront 필드를 지정할 수 있습니다.
 
@@ -130,14 +130,14 @@ Adobe Workfront 문서와 자산 간의 메타데이터 매핑은 AEM 메타데�
    * AEM 속성입니다. 이 참조는 워크플로우 페이로드를 기준으로 해야 합니다.
    * 이름이 지정된 값입니다. 이러한 요소는 대괄호로 둘러싸야 합니다.
    * 위의 3개 항목의 연결. 을 사용하여 지정합니다. `{+}`.
-   * 값을 다음으로 둘러싸서 위의 3개 항목의 변경 `{replace(<value>,”old-char”,”new-char”)}`.
+   * 값을 다음으로 둘러싸서 위의 3개 항목의 변경 `{replace(<value>,"old-char","new-char")}`.
 
 * 예를 들면 다음과 같습니다.
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![속성을 매핑하기 위한 구성](/help/assets/assets/wf-map-property-config.png)
 

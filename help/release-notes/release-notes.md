@@ -3,7 +3,7 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"릴리스 정보, 새로운 기능, 사용 방법 설치 및 자세한 변경 목록 찾기 [!DNL Adobe Experience Manager] 6.5"'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 3c3efe108b020d9c64e456d409f114c8969f2723
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '3652'
 ht-degree: 14%
@@ -260,7 +260,7 @@ For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility
 <!-- version 2 of the description above * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361) -->
 * 스타일 시스템 드롭다운이 구성 요소를 사용하는 구성 요소에 대해 구성 요소의 컨텍스트 대신 페이지 맨 위에 배치되었을 수 있습니다 `cq:editConfig` &quot;AFTERED: REFRESH_PAGE&quot;. 이제 이 문제가 해결되었습니다. (NPR-38384)
 
-<!-- version 2 of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig “afteredit: REFRESH_PAGE”. (NPR-38384) -->
+<!-- version 2 of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig "afteredit: REFRESH_PAGE". (NPR-38384) -->
 * 중첩된 레이아웃 컨테이너에 추가할 때 텍스트 구성 요소가 잘못 정렬되었습니다. (NPR-38193)
 * 구성 요소에 대한 스타일 시스템 구성이 없을 때 빈 스타일 탭이 표시되었습니다. 이제 구성이 없을 때 탭이 숨겨집니다. (NPR-38218)
 <!-- version 2 of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
@@ -453,7 +453,7 @@ Maven 프로젝트에서 UberJar를 사용하려면 [Uberjar 사용 방법](/hel
 * 사용자가 적응형 양식에서 처음으로 필드를 구성하도록 선택하면 구성 저장 옵션이 속성 브라우저에 표시되지 않습니다. 동일한 편집기에서 적응형 양식의 다른 필드 일부를 구성하도록 선택하면 문제가 해결됩니다.
 
 * 설치 중에 다음 오류 및 경고 메시지가 표시될 수 있습니다 [!DNL Experience Manager] 6.5.x.x:
-   * Adobe Target 통합이 [!DNL Experience Manager] target Standard API(IMS 인증)를 사용한 다음, 경험 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. 경험 조각/소스 Adobe Experience Manager 유형 대신 Target은 HTML/소스 Adobe Target Classic 유형으로 여러 가지 오퍼를 작성합니다.
+   * Adobe Target 통합이 [!DNL Experience Manager] target Standard API(IMS 인증)를 사용한 다음, 경험 조각을 Target으로 내보내면 잘못된 오퍼 유형이 생성됩니다. 경험 조각/소스 Adobe Experience Manager 유형 대신 Target은 &quot;HTML&quot;/소스 &quot;Adobe Target Classic&quot; 유형으로 여러 가지 오퍼를 작성합니다.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: granite/operations/maintenance에 유지 관리 창이 없습니다.
    * SUM, MAX 및 MIN과 같은 집계 함수를 사용하는 경우 적용형 양식 서버측 유효성 검사가 실패합니다(CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - granite/operations/maintenance에 유지 관리 창이 없습니다.

@@ -1,13 +1,13 @@
 ---
 title: 만료된 Reader 확장 서비스 인증서를 업데이트하는 중
-description: 'Reader 확장 문서가 작동하지 않습니다. 인증서 업데이트 '
-source-git-commit: a26e4fb53458beae9b259e5ee5dc74a95264f9e1
+description: Reader 확장 문서가 작동하지 않습니다. 인증서 업데이트
+exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 0%
 
 ---
-
 
 # 만료된 Reader 확장 서비스 인증서를 업데이트하는 중 {#Updating-expired-Reader-Extension-service-certificates}
 

@@ -1,20 +1,20 @@
 ---
 title: 성능 지침
-seo-title: 성능 지침
+seo-title: Performance Guidelines
 description: 이 문서에서는 AEM 배포 성능을 최적화하는 방법에 대한 일반적인 지침을 제공합니다.
-seo-description: 이 문서에서는 AEM 배포 성능을 최적화하는 방법에 대한 일반적인 지침을 제공합니다.
+seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
 uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
-feature: 구성
+feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '2994'
-ht-degree: 5%
+source-wordcount: '2976'
+ht-degree: 6%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 5%
    <td><p><strong>Marketing Cloud</strong></p> </td>
   </tr>
   <tr>
-   <td><p>사이트</p> </td>
+   <td><p>Sites</p> </td>
    <td><p>비-HA</p> </td>
    <td><p>Windows</p> </td>
    <td><p>CQSE</p> </td>
@@ -57,10 +57,10 @@ ht-degree: 5%
    <td><p>속성</p> </td>
    <td><p>Apache</p> </td>
    <td><p>Edge</p> </td>
-   <td><p>타겟</p> </td>
+   <td><p>대상</p> </td>
   </tr>
   <tr>
-   <td><p>자산</p> </td>
+   <td><p>에셋</p> </td>
    <td><p>Publish-HA</p> </td>
    <td><p>Solaris</p> </td>
    <td><p>WebLogic</p> </td>
@@ -88,7 +88,7 @@ ht-degree: 5%
    <td><p>캠페인</p> </td>
   </tr>
   <tr>
-   <td><p>양식</p> </td>
+   <td><p>Forms</p> </td>
    <td><p>작성자 오프로드</p> </td>
    <td><p>HP-UX</p> </td>
    <td><p>Tomcat</p> </td>
@@ -113,7 +113,7 @@ ht-degree: 5%
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p>Safari</p> </td>
-   <td><p>속성을 확인하는</p> </td>
+   <td><p>대상자</p> </td>
   </tr>
   <tr>
    <td><p>다중 사이트</p> </td>
@@ -127,7 +127,7 @@ ht-degree: 5%
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
-   <td><p>자산</p> </td>
+   <td><p>에셋</p> </td>
   </tr>
   <tr>
    <td><p>상거래</p> </td>
@@ -144,7 +144,7 @@ ht-degree: 5%
    <td><p>활성화</p> </td>
   </tr>
   <tr>
-   <td><p>다이내믹 미디어</p> </td>
+   <td><p>Dynamic Media</p> </td>
    <td><p>JSRP</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -266,11 +266,11 @@ ht-degree: 5%
 
 다음과 같은 경우에는 성능 지침을 사용해야 합니다.
 
-* **처음 배포**:처음으로 AEM Sites 또는 자산을 배포하려고 할 때 마이크로 커널, 노드 저장소 및 데이터 저장소를 구성할 때 사용할 수 있는 옵션을 이해하는 것이 중요합니다(기본 설정과 비교). 예를 들어 TarMK용 데이터 저장소의 기본 설정을 파일 데이터 저장소로 변경하는 경우가 있습니다.
-* **새 버전으로 업그레이드**:새 버전으로 업그레이드할 때는 실행 중인 환경과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예를 들어, AEM 6.1에서 6.2로 업그레이드 하거나 AEM 6.0 CRX2에서 6.2 OAK로 업그레이드
-* **응답 시간이 느립니다**.선택한 Nodestore 아키텍처가 요구 사항을 충족하지 않는 경우 다른 토폴로지 옵션과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예를 들어 MongoMK 대신 TarMK를 배포하거나 Amazon S3 또는 Microsoft Azure Data Store 대신 파일 데이터 저장소를 사용하는 경우가 있습니다.
-* **추가 작성자**:권장 TarMK 토폴로지가 성능 요구 사항을 충족하지 않고 작성자 노드를 업사이징하면 사용 가능한 최대 용량이 되면 3개 이상의 작성자 노드에서 MongoMK를 사용하는 것과 비교하여 성능 차이점을 이해하는 것이 중요합니다. 예를 들어 TarMK 대신 MongoMK를 배포합니다.
-* **추가 컨텐츠**:권장 데이터 저장소 아키텍처가 요구 사항을 충족하지 않는 경우 다른 데이터 저장소 옵션과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예:파일 데이터 저장소 대신 Amazon S3 또는 Microsoft Azure 데이터 저장소 사용.
+* **최초 배포**: 처음으로 AEM Sites 또는 자산을 배포하려고 할 때 마이크로 커널, 노드 저장소 및 데이터 저장소를 구성할 때 사용할 수 있는 옵션을 이해하는 것이 중요합니다(기본 설정과 비교). 예를 들어 TarMK용 데이터 저장소의 기본 설정을 파일 데이터 저장소로 변경하는 경우가 있습니다.
+* **새 버전으로 업그레이드**: 새 버전으로 업그레이드할 때는 실행 중인 환경과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예를 들어, AEM 6.1에서 6.2로 업그레이드 하거나 AEM 6.0 CRX2에서 6.2 OAK로 업그레이드
+* **응답 시간이 느립니다.**: 선택한 Nodestore 아키텍처가 요구 사항을 충족하지 않는 경우 다른 토폴로지 옵션과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예를 들어 MongoMK 대신 TarMK를 배포하거나 Amazon S3 또는 Microsoft Azure 데이터 저장소 대신 파일 데이터 저장소를 사용하는 경우가 있습니다.
+* **추가 작성자**: 권장 TarMK 토폴로지가 성능 요구 사항을 충족하지 않고 작성자 노드를 업사이징하면 사용 가능한 최대 용량이 되면 3개 이상의 작성자 노드에서 MongoMK를 사용하는 것과 비교하여 성능 차이점을 이해하는 것이 중요합니다. 예를 들어 TarMK 대신 MongoMK를 배포합니다.
+* **추가 콘텐츠**: 권장 데이터 저장소 아키텍처가 요구 사항을 충족하지 않는 경우 다른 데이터 저장소 옵션과 비교하여 성능 차이를 이해하는 것이 중요합니다. 예: 파일 데이터 저장소 대신 Amazon S3 또는 Microsoft Azure 데이터 저장소 사용.
 
 ## 소개 {#introduction}
 
@@ -282,23 +282,23 @@ AEM 플랫폼은 다음 구성 요소로 구성됩니다.
 
 ![chlimage_1](assets/chlimage_1a.png)
 
-AEM 플랫폼에 대한 자세한 내용은 [AEM이란?](/help/sites-deploying/deploy.md#what-is-aem)을 참조하십시오.
+AEM 플랫폼에 대한 자세한 내용은 [AEM 소개](/help/sites-deploying/deploy.md#what-is-aem).
 
 ### AEM 아키텍처 {#the-aem-architecture}
 
-AEM 배포에는 세 가지 중요한 구성 요소가 있습니다. 컨텐츠 작성자, 편집기 및 승인자가 컨텐츠를 만들고 검토하는 데 사용하는 **작성자 인스턴스** 컨텐츠가 승인되면 최종 사용자가 액세스한 **Publish Instance**&#x200B;라는 두 번째 인스턴스 유형에 게시됩니다. 세 번째 빌딩 블록은 캐싱 및 URL 필터링을 처리하는 모듈이며 웹 서버에 설치된 **Dispatcher**&#x200B;입니다. AEM 아키텍처에 대한 자세한 내용은 [일반적인 배포 시나리오](/help/sites-deploying/deploy.md#typical-deployment-scenarios)를 참조하십시오.
+AEM 배포에는 세 가지 중요한 구성 요소가 있습니다. 다음 **작성자 인스턴스** 컨텐츠 작성자, 편집자 및 승인자가 컨텐츠를 만들고 검토하는 데 사용하는 컨텐츠입니다. 컨텐츠가 승인되면 이름이 **게시 인스턴스** 최종 사용자가 액세스할 수 있는 위치. 세 번째 빌딩 블록은 **Dispatcher** 캐싱 및 URL 필터링을 처리하는 모듈이며 웹 서버에 설치됩니다. AEM 아키텍처에 대한 자세한 내용은 [일반적인 배포 시나리오](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
 
 ![chlimage_1-1](assets/chlimage_1-1a.png)
 
-### 마이크로 커널 {#micro-kernels}
+### 마이크로 커널들 {#micro-kernels}
 
-Micro Kernels는 AEM에서 지속성 관리자 역할을 합니다. AEM에 사용되는 세 가지 유형의 마이크로 커널이 있습니다.TarMK, MongoDB 및 관계형 데이터베이스(제한된 지원 아래). 고려하고 있는 인스턴스의 목적 및 배포 유형에 따라 본인의 요구에 맞는 것을 하나 선택합니다. 마이크로 커널에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md) 페이지를 참조하십시오.
+Micro Kernels는 AEM에서 지속성 관리자 역할을 합니다. AEM에 사용되는 세 가지 유형의 마이크로 커널이 있습니다. TarMK, MongoDB 및 관계형 데이터베이스(제한된 지원 아래). 고려하고 있는 인스턴스의 목적 및 배포 유형에 따라 본인의 요구에 맞는 것을 하나 선택합니다. 마이크로 커널에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md) 페이지.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
 ### 노데스토르 {#nodestore}
 
-AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 있습니다. 이진 데이터가 저장되는 위치를 **데이터 저장소**&#x200B;라고 하며, 컨텐츠 노드와 속성의 위치를 **노드 저장소**&#x200B;라고 합니다.
+AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 있습니다. 이진 데이터가 저장되는 위치를 **데이터 저장소**&#x200B;인 반면 컨텐츠 노드 및 속성의 위치는 **노드 저장소**.
 
 >[!NOTE]
 >
@@ -306,7 +306,7 @@ AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 
 
 >[!CAUTION]
 >
->관계형 데이터베이스 마이크로 커널은 제한된 지원 하에 있습니다. 이러한 유형의 마이크로 커널을 사용하기 전에 [Adobe 고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)에 문의하십시오.
+>관계형 데이터베이스 마이크로 커널은 제한된 지원 하에 있습니다. 연락처 [고객 지원 Adobe](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) 이러한 유형의 마이크로 커널을 사용하기 전에
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -314,19 +314,19 @@ AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 
 
 많은 바이너리를 처리할 때 성능을 최대화하기 위해 기본 노드 저장소 대신 외부 데이터 저장소를 사용하는 것이 좋습니다. 예를 들어 프로젝트에 많은 미디어 자산이 필요한 경우 파일 또는 Azure/S3 데이터 저장소 아래에 저장하면 MongoDB에 직접 저장하는 것보다 더 빠르게 미디어 자산에 액세스할 수 있습니다.
 
-사용 가능한 구성 옵션에 대한 자세한 내용은 [노드 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md)을 참조하십시오.
+사용 가능한 구성 옵션에 대한 자세한 내용은 [노드 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md).
 
 >[!NOTE]
 >
->Adobe은 Adobe Managed Services를 사용하여 AEM을 Azure에 배포하거나 AWS(Amazon Web Services)를 배포하는 옵션을 선택할 것을 권장합니다. 이 옵션은 고객이 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포 및 운영하는 경험과 기술을 갖춘 팀으로부터 혜택을 받을 수 있습니다. Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)에 대한 추가 설명서는 [을 참조하십시오.
+>Adobe은 Adobe Managed Services를 사용하여 AEM을 Azure에 배포하거나 Amazon Web Services(AWS)에 배포하는 옵션을 선택할 것을 권장합니다. 이 경우 고객은 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영하는 경험과 기술을 갖춘 팀으로부터 혜택을 받을 수 있습니다. 다음을 확인하십시오 [Adobe Managed Services에 대한 추가 설명서](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 >
->Adobe Managed Services를 제외하고 Azure 또는 AWS에서 AEM을 배포하는 방법에 대한 권장 사항을 제공하려면 클라우드 제공업체 또는 선택한 클라우드 환경에서 AEM을 배포하도록 지원하는 Adobe 파트너 중 하나와 직접 작업하는 것이 좋습니다. 선택한 클라우드 제공업체 또는 파트너는 특정 성능, 로드, 확장성 및 보안 요구 사항을 충족하기 위해 지원할 아키텍처의 크기 조정 사양, 디자인 및 구현을 책임집니다.
+>Adobe Managed Services의 외부에서 Azure 또는 AWS에 AEM을 배포하는 방법에 대한 권장 사항을 제공하려면 클라우드 제공업체 또는 선택한 클라우드 환경에서 AEM을 배포하도록 지원하는 Adobe 파트너 중 하나와 직접 작업하는 것이 좋습니다. 선택한 클라우드 제공업체 또는 파트너는 특정 성능, 로드, 확장성 및 보안 요구 사항을 충족하기 위해 지원할 아키텍처의 크기 조정 사양, 디자인 및 구현을 책임집니다.
 >
->자세한 내용은 [기술 요구 사항](/help/sites-deploying/technical-requirements.md#supported-platforms) 페이지를 참조하십시오.
+>자세한 내용은 [기술 요구 사항](/help/sites-deploying/technical-requirements.md#supported-platforms) 페이지.
 
 ### 검색 {#search-features}
 
-이 섹션에 나열된 항목은 AEM과 함께 사용되는 사용자 지정 인덱스 공급자입니다. 색인에 대한 자세한 내용은 [Oak 쿼리 및 색인 지정](/help/sites-deploying/queries-and-indexing.md)을 참조하십시오.
+이 섹션에 나열된 항목은 AEM과 함께 사용되는 사용자 지정 인덱스 공급자입니다. 색인에 대한 자세한 내용은 [Oak 쿼리 및 색인 지정](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
 >
@@ -336,15 +336,15 @@ AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 
 
 ### 개발 지침 {#development-guidelines}
 
-**성능 및 확장성**&#x200B;을 목표로 하는 AEM용으로 개발해야 합니다. 다음은 따라야 할 많은 모범 사례입니다.
+타겟 AEM용으로 개발해야 합니다 **성능 및 확장성**. 다음은 따라야 할 많은 모범 사례입니다.
 
 **DO**
 
 * 프레젠테이션, 논리 및 컨텐츠 분리 적용
-* 기존 AEM API 사용(예:Sling) 및 툴(예:복제)
+* 기존 AEM API 사용(예: Sling) 및 툴(예: 복제)
 * 실제 컨텐츠 컨텍스트에서 개발
 * 최적의 캐시 성능을 위한 개발
-* 저장 횟수 최소화(예:임시 워크플로우 사용
+* 저장 횟수 최소화(예: 임시 워크플로우 사용
 * 모든 HTTP 종료 포인트가 RESTful인지 확인합니다.
 * JCR 관찰 범위 제한
 * 비동기 스레드에 주의하십시오
@@ -363,7 +363,7 @@ AEM에서 이진 데이터는 컨텐츠 노드와 독립적으로 저장할 수 
    * a ServiceTracker
    * OSGi 서비스 레지스트리에 대한 직접 액세스
 
-AEM 개발에 대한 자세한 내용은 [개발 - 기본 사항](/help/sites-developing/the-basics.md)을 참조하십시오. 추가 우수 사례를 보려면 [개발 우수 사례](/help/sites-developing/best-practices.md)를 참조하십시오.
+AEM 개발에 대한 자세한 내용은 [개발 - 기본 사항](/help/sites-developing/the-basics.md). 추가 우수 사례에 대해서는 [개발 우수 사례](/help/sites-developing/best-practices.md).
 
 ### 벤치마크 시나리오 {#benchmark-scenarios}
 
@@ -371,29 +371,29 @@ AEM 개발에 대한 자세한 내용은 [개발 - 기본 사항](/help/sites-de
 >
 >이 페이지에 표시되는 모든 벤치마크 테스트는 실험 설정에서 수행되었습니다.
 
-아래에 자세히 설명된 테스트 시나리오는 TarMK, MongoMk 및 TarMK 및 MongoMk 장의 벤치마크 섹션에 사용됩니다. 특정 벤치마크 테스트에 사용된 시나리오를 보려면 [기술 사양](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) 테이블에서 시나리오 필드를 참조하십시오.
+아래에 자세히 설명된 테스트 시나리오는 TarMK, MongoMk 및 TarMK 및 MongoMk 장의 벤치마크 섹션에 사용됩니다. 특정 벤치마크 테스트에 사용된 시나리오를 보려면 [기술 사양](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) 테이블.
 
 **단일 제품 시나리오**
 
 AEM Assets:
 
-* 사용자 상호 작용:자산 찾아보기 / 자산 검색 / 자산 다운로드 / 자산 메타데이터 읽기 / 자산 메타데이터 업데이트 / 자산 업로드 / 자산 업로드 워크플로우 실행
-* 실행 모드:동시 사용자, 사용자당 단일 상호 작용
+* 사용자 상호 작용: 자산 찾아보기 / 자산 검색 / 자산 다운로드 / 자산 메타데이터 읽기 / 자산 메타데이터 업데이트 / 자산 업로드 / 자산 업로드 워크플로우 실행
+* 실행 모드: 동시 사용자, 사용자당 단일 상호 작용
 
 **혼합 제품 시나리오**
 
 AEM Sites + 자산:
 
-* 사이트 사용자 상호 작용:문서 페이지 읽기 / 페이지 읽기 / 단락 만들기 / 단락 편집 / 컨텐츠 페이지 만들기 / 컨텐츠 페이지 활성화 / 작성자 검색
-* 자산 사용자 상호 작용:자산 찾아보기 / 자산 검색 / 자산 다운로드 / 자산 메타데이터 읽기 / 자산 메타데이터 업데이트 / 자산 업로드 / 자산 업로드 워크플로우 실행
-* 실행 모드:동시 사용자, 사용자당 혼합 상호 작용
+* 사이트 사용자 상호 작용: 문서 페이지 읽기 / 페이지 읽기 / 단락 만들기 / 단락 편집 / 컨텐츠 페이지 만들기 / 컨텐츠 페이지 활성화 / 작성자 검색
+* 자산 사용자 상호 작용: 자산 찾아보기 / 자산 검색 / 자산 다운로드 / 자산 메타데이터 읽기 / 자산 메타데이터 업데이트 / 자산 업로드 / 자산 업로드 워크플로우 실행
+* 실행 모드: 동시 사용자, 사용자당 혼합 상호 작용
 
 **세로 사용 사례 시나리오**
 
 미디어:
 
 * 문서 페이지 읽기(27.4%), 읽기 페이지(10.9%), 세션 만들기(2.6%), 컨텐츠 페이지 활성화(1.7%), 컨텐츠 페이지 작성(0.4%), 단락 만들기(4.3%), 단락 편집(0.9%), 이미지 구성 요소(0.9%), 자산 읽기(20%), 자산 다운로드(4.5%), 자산 다운로드(4.2%), 자산 업데이트(2.0%), 자산 검색(2.0%), 자산 업데이트(2.0%) (2.4%), 자산 업로드(1.2%), 탐색 프로젝트(4.9%), 프로젝트 읽기(6.6%), 프로젝트 추가 자산(1.2%), 프로젝트 추가 사이트(1.2%), 프로젝트 만들기(0.1%), 작성자 검색(0.4%)
-* 실행 모드:동시 사용자, 사용자당 혼합 상호 작용
+* 실행 모드: 동시 사용자, 사용자당 혼합 상호 작용
 
 ## TarMK {#tarmk}
 
@@ -401,13 +401,13 @@ AEM Sites + 자산:
 
 Adobe은 TarMK를 AEM 작성자 및 게시 인스턴스 모두에 대해 모든 배포 시나리오에서 고객이 사용하는 기본 지속성 기술로 권장합니다.
 
-TarMK에 대한 자세한 내용은 [배포 시나리오](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 및 [Tar 저장소](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage)를 참조하십시오.
+TarMK에 대한 자세한 내용은 [배포 시나리오](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 및 [Tar 저장소](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
 ### TarMK 최소 아키텍처 지침 {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
 >
->아래에 나와 있는 최소 아키텍처 지침은 프로덕션 환경과 높은 트래픽 사이트에 대한 것입니다. AEM을 실행하는 데 필요한 [최소 사양](/help/sites-deploying/technical-requirements.md#prerequisites)이 아닌 **입니다.**
+>아래에 나와 있는 최소 아키텍처 지침은 프로덕션 환경과 높은 트래픽 사이트에 대한 것입니다. 이것들은 **not** a [최소 사양](/help/sites-deploying/technical-requirements.md#prerequisites) AEM을 실행하는 데 필요합니다.
 
 TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처에서 시작해야 합니다.
 
@@ -419,7 +419,7 @@ TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처�
 
 >[!NOTE]
 >
->파일 데이터 저장소가 공유되는 경우 바이너리 없는 복제를 **ON**&#x200B;으로 설정해야 합니다.
+>바이너리 없는 복제 기능 사용 **설정** 파일 데이터 저장소가 공유되는 경우
 
 **AEM Sites에 대한 Tar 아키텍처 지침**
 
@@ -431,13 +431,13 @@ TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처�
 
 ### TarMK 설정 지침 {#tarmk-settings-guideline}
 
-성능을 향상시키기 위해 아래에 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)를 참조하십시오.
+성능을 향상시키기 위해 아래에 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지 보기](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
 <table>
  <tbody>
   <tr>
    <td><strong>설정</strong></td>
-   <td><strong>매개 변수</strong></td>
+   <td><strong>매개변수</strong></td>
    <td><strong>값</strong></td>
    <td><strong>설명</strong></td>
   </tr>
@@ -463,13 +463,13 @@ TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처�
    <td>Lucene 인덱스 구성</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
    <td><p>활성화됨</p> <p>활성화됨</p> <p>활성화됨</p> </td>
-   <td>사용 가능한 매개 변수에 대한 자세한 내용은 <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">이 페이지</a>를 참조하십시오.</td>
+   <td>사용 가능한 매개 변수에 대한 자세한 내용은 <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">이 페이지</a>.</td>
   </tr>
   <tr>
    <td>데이터 저장소 = S3 데이터 저장소</td>
    <td><p><code>maxCachedBinarySize</code></p> <p><code>cacheSizeInMB</code></p> </td>
    <td><p>1048576(1MB) 이하</p> <p>최대 heap 크기의 2-10%</p> </td>
-   <td><a href="/help/sites-deploying/data-store-config.md#data-store-configurations">데이터 저장소 구성</a>도 참조하십시오.</td>
+   <td>참조 - <a href="/help/sites-deploying/data-store-config.md#data-store-configurations">데이터 저장소 구성</a>.</td>
   </tr>
   <tr>
    <td>DAM 자산 업데이트 워크플로우</td>
@@ -504,7 +504,7 @@ TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처�
 | 제품 | AEM 6.2 |
 | 노데스토르 | TarMK |
 | 데이터 저장소 | 파일 DS |
-| 시나리오 | 단일 제품:자산 / 30개의 동시 스레드 |
+| 시나리오 | 단일 제품: 자산 / 30개의 동시 스레드 |
 
 #### 성능 벤치마크 결과 {#performance-benchmark-results}
 
@@ -518,7 +518,7 @@ TarMK를 사용할 때 성능을 제대로 설정하려면 다음 아키텍처�
 
 TarMK보다 MongoMK 지속성 백엔드를 선택하는 주된 이유는 인스턴스를 가로로 크기 조절하기 위한 것입니다. 즉, 두 개 이상의 활성 작성자 인스턴스가 항상 실행되고 MongoDB를 지속성 스토리지 시스템으로 사용합니다. 일반적으로 두 개 이상의 작성 인스턴스를 실행해야 하는 이유는 모든 동시 작성 활동을 지원하는 단일 서버의 CPU 및 메모리 용량이 더 이상 지속되지 않기 때문입니다.
 
-TarMK에 대한 자세한 내용은 [배포 시나리오](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 및 [Mongo 저장소](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage)를 참조하십시오.
+TarMK에 대한 자세한 내용은 [배포 시나리오](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 및 [Mongo 저장소](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).
 
 ### MongoMK 최소 아키텍처 지침 {#mongomk-minimum-architecture-guidelines}
 
@@ -535,19 +535,19 @@ MongoMK를 사용할 때 좋은 성능을 설정하려면 다음 아키텍처에
 
 >[!NOTE]
 >
->파일 데이터 저장소가 공유되는 경우 바이너리 없는 복제를 **ON**&#x200B;으로 설정해야 합니다.
+>바이너리 없는 복제 기능 사용 **설정** 파일 데이터 저장소가 공유되는 경우
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ### MongoMK 설정 지침 {#mongomk-settings-guidelines}
 
-성능을 향상시키기 위해 아래에 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)를 참조하십시오.
+성능을 향상시키기 위해 아래에 표시된 설정 지침을 따라야 합니다. 설정을 변경하는 방법에 대한 지침은 [이 페이지 보기](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
 <table>
  <tbody>
   <tr>
    <td><strong>설정</strong></td>
-   <td><strong>매개 변수</strong></td>
+   <td><strong>매개변수</strong></td>
    <td><strong>값(기본값)</strong></td>
    <td><strong>설명</strong></td>
   </tr>
@@ -573,13 +573,13 @@ MongoMK를 사용할 때 좋은 성능을 설정하려면 다음 아키텍처에
    <td>Lucene 인덱스 구성</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
    <td><p>활성화됨</p> <p>활성화됨</p> <p>활성화됨</p> </td>
-   <td>사용 가능한 매개 변수에 대한 자세한 내용은 <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">이 페이지</a>를 참조하십시오.</td>
+   <td>사용 가능한 매개 변수에 대한 자세한 내용은 <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">이 페이지</a>.</td>
   </tr>
   <tr>
    <td>데이터 저장소 = S3 데이터 저장소</td>
    <td><p><code>maxCachedBinarySize</code></p> <p><code>cacheSizeInMB</code></p> </td>
    <td><p>1048576(1MB) 이하</p> <p>최대 heap 크기의 2-10%</p> </td>
-   <td><a href="/help/sites-deploying/data-store-config.md#data-store-configurations">데이터 저장소 구성</a>도 참조하십시오.</td>
+   <td>참조 - <a href="/help/sites-deploying/data-store-config.md#data-store-configurations">데이터 저장소 구성</a>.</td>
   </tr>
   <tr>
    <td>DocumentNodeStoreService</td>
@@ -609,12 +609,12 @@ MongoMK를 사용할 때 좋은 성능을 설정하려면 다음 아키텍처에
 | CPU/코어 | Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8개 코어 | Intel(R) Xeon(R) CPU E5-2407 @2.40GHz, 8개 코어 |
 | RAM | 32GB | 32GB |
 | 디스크 | 마그네틱 - 1k IOPS 이상 | 마그네틱 - 1k IOPS 이상 |
-| Java | Oracle JRE 버전 8 | N/A |
+| Java | Oracle JRE 버전 8 | 해당 없음 |
 | JVM Heap | 16GB | 해당 없음 |
 | 제품 | AEM 6.2 | MongoDB 3.2 WiredTiger |
 | 노데스토르 | MongoMK | 해당 없음 |
 | 데이터 저장소 | 파일 DS | 해당 없음 |
-| 시나리오 | 단일 제품:자산 / 30개의 동시 스레드 | 단일 제품:자산 / 30개의 동시 스레드 |
+| 시나리오 | 단일 제품: 자산 / 30개의 동시 스레드 | 단일 제품: 자산 / 30개의 동시 스레드 |
 
 ### 성능 벤치마크 결과 {#performance-benchmark-results-1}
 
@@ -624,13 +624,13 @@ MongoMK를 사용할 때 좋은 성능을 설정하려면 다음 아키텍처에
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
-## TarMK와 MongoMK {#tarmk-vs-mongomk}
+## TarMK와 MongoMK 비교 {#tarmk-vs-mongomk}
 
 두 가지 중 하나를 선택할 때 고려해야 하는 기본 규칙은 TarMK가 성능용으로 설계된 반면 MongoMK는 확장성을 위해 사용됩니다. Adobe은 TarMK를 AEM 작성자 및 게시 인스턴스 모두에 대해 모든 배포 시나리오에서 고객이 사용하는 기본 지속성 기술로 권장합니다.
 
 TarMK보다 MongoMK 지속성 백엔드를 선택하는 주된 이유는 인스턴스를 가로로 크기 조절하기 위한 것입니다. 즉, 두 개 이상의 활성 작성자 인스턴스가 항상 실행되고 MongoDB를 지속성 스토리지 시스템으로 사용합니다. 일반적으로 두 개 이상의 작성 인스턴스를 실행해야 하는 이유는 모든 동시 작성 활동을 지원하는 단일 서버의 CPU 및 메모리 용량이 더 이상 지속되지 않기 때문입니다.
 
-TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md#microkernels-which-one-to-use)를 참조하십시오.
+TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md#microkernels-which-one-to-use).
 
 ### TarMK와 MongoMk 지침 {#tarmk-vs-mongomk-guidelines}
 
@@ -638,17 +638,17 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
 
 * 콘텐츠 관리 애플리케이션을 위한 용도
 * 파일은 항상 일관되며 파일 기반 백업 툴을 사용하여 백업할 수 있습니다
-* 페일오버 메커니즘을 제공합니다. 자세한 내용은 [Cold Standby](/help/sites-deploying/tarmk-cold-standby.md) 를 참조하십시오
+* 페일오버 메커니즘을 제공합니다. 자세한 내용은 [콜드 대기](/help/sites-deploying/tarmk-cold-standby.md) 자세한 내용
 * 운영 오버헤드를 최소화하면서 고성능 및 안정적인 데이터 스토리지 제공
 * TCO 절감(총 소유 비용)
 
 **MongoMK 선택 기준**
 
-* 하루에 연결된 명명된 사용자 수:수천, 그 이상으로
-* 동시 사용자 수:100개 이상
-* 일별 자산 수집 볼륨:수십만이나 그 이상
-* 일별 페이지 편집 볼륨:수십만이나 그 이상
-* 일일 검색 양:수만 혹은 그 이상
+* 하루에 연결된 명명된 사용자 수: 수천, 그 이상으로
+* 동시 사용자 수: 100개 이상
+* 일별 자산 수집 볼륨: 수십만이나 그 이상
+* 일별 페이지 편집 볼륨: 수십만이나 그 이상
+* 일일 검색 양: 수만 혹은 그 이상
 
 ### TarMK와 MongoMK 벤치마크 비교 {#tarmk-vs-mongomk-benchmarks}
 
@@ -728,7 +728,7 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
   </tr>
   <tr>
    <td>시나리오</td>
-   <td><p><br /> 단일 제품:실행당 자산 / 30개의 동시 스레드 수</p> </td>
+   <td><p><br /> 단일 제품: 실행당 자산 / 30개의 동시 스레드 수</p> </td>
    <td> </td>
    <td> </td>
   </tr>
@@ -815,7 +815,7 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
   </tr>
   <tr>
    <td>시나리오</td>
-   <td><p><br /> <br /> 세로 사용 사례:미디어 / 2000개의 동시 스레드</p> </td>
+   <td><p><br /> <br /> 세로 사용 사례: 미디어 / 2000개의 동시 스레드</p> </td>
    <td></td>
    <td></td>
   </tr>
@@ -826,35 +826,35 @@ TarMK와 MongoMK에 대한 자세한 내용은 [권장 배포](/help/sites-deplo
 
 ![chlimage_1-13](assets/chlimage_1-13a.png)
 
-### AEM Sites 및 자산에 대한 아키텍처 확장성 지침 {#architecture-scalability-guidelines-for-aem-sites-and-assets}
+### AEM Sites 및 자산을 위한 아키텍처 확장성 지침 {#architecture-scalability-guidelines-for-aem-sites-and-assets}
 
 ![chlimage_1-14](assets/chlimage_1-14a.png)
 
-## 성능 지침 요약 {#summary-of-performance-guidelines}
+## 성능 지침 요약  {#summary-of-performance-guidelines}
 
 이 페이지에 제시된 지침은 다음과 같이 요약할 수 있습니다.
 
-* **파일 데이터 저장소가** 있는 TarMK는 대부분의 고객에게 권장되는 아키텍처입니다.
+* **파일 데이터 저장소가 있는 TarMK** 대부분의 고객을 위한 권장 아키텍처입니다.
 
-   * 최소 토폴로지:작성자 인스턴스 1개, 게시 인스턴스 2개, Dispatcher 2개
+   * 최소 토폴로지: 작성자 인스턴스 1개, 게시 인스턴스 2개, Dispatcher 2개
    * 파일 데이터 저장소가 공유되면 바이너리 없는 복제가 켜집니다
 
-* **파일 데이터 저장소가** 있는 MongoMK는 작성자 계층의 수평 확장성을 위한 권장 아키텍처입니다.
+* **파일 데이터 저장소가 있는 MongoMK** 작성 계층의 수평 확장성을 위한 권장 아키텍처입니다.
 
-   * 최소 토폴로지:작성자 인스턴스 3개, MongoDB 인스턴스 3개, 게시 인스턴스 2개, Dispatcher 2개
+   * 최소 토폴로지: 작성자 인스턴스 3개, MongoDB 인스턴스 3개, 게시 인스턴스 2개, Dispatcher 2개
    * 파일 데이터 저장소가 공유되면 바이너리 없는 복제가 켜집니다
 
-* **** Nodestinesoresis 는 NAS(Network Attached Storage)가 아니라 로컬 디스크에 저장해야 합니다
-* **Amazon S3**&#x200B;을 사용하는 경우:
+* **노데스토르** NAS(Network Attached Storage)가 아니라 로컬 디스크에 저장해야 합니다.
+* 사용 시 **Amazon S3**:
 
    * Amazon S3 데이터 저장소는 작성자와 게시 계층 간에 공유됩니다
    * 바이너리 없는 복제를 설정해야 합니다.
    * 데이터 저장소 가비지 수집에서는 모든 작성자 및 게시 노드에서 먼저 실행한 다음 작성자에서 두 번째 실행이 필요합니다
 
-* **대부분의 일반적인 검색을 기반으로 기본** 인덱스와 함께 사용자 지정 인덱스를 만들어야 합니다
+* **기본 색인과 함께 사용자 지정 색인을 만들어야 합니다** 가장 일반적인 검색 기준
 
    * Lucene 인덱스는 사용자 지정 인덱스에 사용해야 합니다
 
-* **워크플로우를 사용자 지정하면 성능을 크게 향상시킬** 수 있습니다. 예를 들어 &quot;자산 업데이트&quot; 워크플로우에서 비디오 단계를 제거하거나 사용하지 않는 수신기를 비활성화하는 등의 작업이 가능합니다.
+* **워크플로우를 사용자 지정하여 성능을 크게 향상시킬 수 있습니다**&#x200B;예를 들어 &quot;자산 업데이트&quot; 워크플로우에서 비디오 단계를 제거하여 사용하지 않는 수신기를 비활성화하는 등의 작업을 수행합니다.
 
-자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md) 페이지를 참조하십시오.
+자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md) 페이지.

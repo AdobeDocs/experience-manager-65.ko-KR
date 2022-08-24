@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 44f866e1435bd98f7dbe3f4ba8500830075db001
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '7149'
 ht-degree: 0%
@@ -190,7 +190,7 @@ ht-degree: 0%
 >
 >속성의 데이터 유형이 Double인 경우 해당 속성의 값에 소수점 값을 지정합니다. 데이터 형식이 Double이고 값에 소수점 값이 지정되지 않은 모든 속성의 경우 유형이 Long으로 변환됩니다.
 
-이러한 속성은 맵 유형의 변경할 수 없는 맵으로 전달됩니다&lt;string object=&quot;&quot;> 참조하십시오. 처리 코드는 ECMAScript, Workflow 또는 Service일 수 있습니다. 속성에 대해 제공된 값은 맵에서 키-값 쌍으로 사용할 수 있습니다. 키는 속성의 이름이고 값은 속성 값입니다. 사용자 지정 구성 매개 변수에 대한 자세한 내용은 다음 이미지를 참조하십시오.
+이러한 속성은 맵 유형의 변경할 수 없는 맵으로 전달됩니다&lt;string object=&quot;&quot;> 를 처리 코드에 추가합니다. 처리 코드는 ECMAScript, Workflow 또는 Service일 수 있습니다. 속성에 대해 제공된 값은 맵에서 키-값 쌍으로 사용할 수 있습니다. 키는 속성의 이름이고 값은 속성 값입니다. 사용자 지정 구성 매개 변수에 대한 자세한 내용은 다음 이미지를 참조하십시오.
 
 ![필수 속성, 선택적 속성, 몇 가지 구성 매개 변수가 있는 샘플 감시 폴더 구성 노드](assets/custom-configuration-parameters.png)
 

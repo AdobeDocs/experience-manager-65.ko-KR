@@ -3,16 +3,17 @@ title: Markdown
 description: 컨텐츠 조각 편집기에서 Markdown 구문을 사용하여 헤드리스 컨텐츠를 쉽게 만들 수 있는 방법을 이해합니다.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
 # Markdown {#markdown}
 
-[authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)인 경우 컨텐츠 조각 편집기에서는 *markdown* 구문을 사용하여 헤드리스 컨텐츠를 쉽게 작성할 수 있습니다.
+있을 때 [작성](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), 컨텐츠 조각 편집기에서는 을 사용합니다 *markdown* 헤드리스 컨텐츠를 쉽게 작성할 수 있는 구문:
 
 ![Markdown 편집기](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -164,7 +165,7 @@ ht-degree: 90%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-코드 범위를 나타내려면 백틱 따옴표(&amp;grave;)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
+코드 범위를 나타내려면 백틱 따옴표(&grave;)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
 
 예:
 

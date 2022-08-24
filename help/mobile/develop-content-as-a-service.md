@@ -1,17 +1,17 @@
 ---
 title: 컨텐츠 전달
-seo-title: 컨텐츠 전달
+seo-title: Content Delivery
 description: 컨텐츠 전달
-seo-description: 'null'
+seo-description: null
 uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '968'
 ht-degree: 1%
 
 ---
@@ -28,17 +28,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->**Over-the-Air** 콘텐츠는 ContentSync 핸들러를 통해 위의 모든 위치에서 가져올 수 있습니다. 이 플러그인은 업데이트 또는 패키지를 유지 관리할 뿐만 아니라 zips를 통해 패키지 및 전달을 일괄 처리하는 데 사용할 수 있습니다.
+>**방송 내용** 은 ContentSync 핸들러를 통해 위의 모든 위치에서 가져올 수 있습니다. 이 플러그인은 업데이트 또는 패키지를 유지 관리할 뿐만 아니라 zips를 통해 패키지 및 전달을 일괄 처리하는 데 사용할 수 있습니다.
 
 Content Services가 제공하는 자료는 다음과 같은 세 가지 주요 유형이 있습니다.
 
 1. **에셋**
-1. **패키지된 HTML 콘텐츠(HTML/CSS/JS)**
+1. **패키지된 HTML 컨텐츠(HTML/CSS/JS)**
 1. **채널 독립 컨텐츠**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## 자산 {#assets}
+## 에셋 {#assets}
 
 자산 컬렉션은 다른 컬렉션에 대한 참조를 포함하는 AEM 구문입니다.
 
@@ -64,7 +64,7 @@ Content Services가 제공하는 자료는 다음과 같은 세 가지 주요 �
    1. 자산 또는 자산 수집 선택
    1. JSON 렌더링 사용자 지정
 
-다음 다이어그램은 **자산 참조 워크플로우**&#x200B;를 보여줍니다.
+다음 다이어그램은 **자산 참조 워크플로우**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -108,16 +108,16 @@ JSON은 Content Services에서 이미지에 생성한 각 이미지의 URL을 �
 
 &quot;장바구니&quot; 이미지에 대한 바이너리를 가져오려면 클라이언트 라이브러리가 다시 사용됩니다.
 
-## 패키지된 HTML 콘텐츠 {#packaged-html-content}
+## 패키지된 HTML 컨텐츠 {#packaged-html-content}
 
-콘텐츠 레이아웃을 유지해야 하는 고객을 위해 HTML 콘텐츠가 필요합니다. Cordova 웹뷰와 같은 웹 컨테이너를 사용하여 컨텐츠를 표시하는 기본 애플리케이션에 유용합니다.
+콘텐츠 레이아웃을 유지해야 하는 고객을 위해 HTML 컨텐츠가 필요합니다. Cordova 웹뷰와 같은 웹 컨테이너를 사용하여 컨텐츠를 표시하는 기본 애플리케이션에 유용합니다.
 
-AEM Content Services는 API를 통해 모바일 앱에 HTML 콘텐츠를 제공할 수 있습니다. AEM 컨텐츠를 HTML로 노출하려는 고객은 AEM 컨텐츠 소스를 가리키는 HTML 페이지 엔티티를 만듭니다.
+AEM Content Services는 API를 통해 모바일 앱에 HTML 콘텐츠를 제공할 수 있습니다. AEM 컨텐츠를 HTML으로 노출하려는 고객은 AEM 컨텐츠 소스를 가리키는 HTML 페이지 엔티티를 만듭니다.
 
 다음 옵션이 고려됩니다.
 
-* **Zip 파일:** 장치에서 올바르게 표시할 수 있는 최상의 기회를 얻기 위해 페이지의 모든 참조 자료(css, JavaScript, 자산 등)가 여기에 해당합니다. - 응답이 있는 단일 압축 파일에 포함됩니다. HTML 페이지의 참조는 이러한 파일의 상대 경로를 사용하도록 조정됩니다.
-* **스트리밍:** AEM에서 필요한 파일의 매니페스트를 가져옵니다. 그런 다음 해당 매니페스트를 사용하여 모든 파일(HTML, CSS, JS 등)을 요청하고 후속 요청 사용.
+* **Zip 파일:** 페이지에서 참조되는 모든 자료(css, JavaScript, 자산 등)를 장치에서 제대로 표시할 수 있는 최상의 기회 - 응답이 있는 단일 압축 파일에 포함됩니다. HTML 페이지의 참조는 이러한 파일의 상대 경로를 사용하도록 조정됩니다.
+* **스트리밍:** AEM에서 필요한 파일의 매니페스트를 가져오는 중입니다. 그런 다음 해당 매니페스트를 사용하여 모든 파일(HTML, CSS, JS 등)을 요청하고 후속 요청 사용.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 

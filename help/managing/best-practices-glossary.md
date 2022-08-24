@@ -1,8 +1,8 @@
 ---
 title: 용어 설명
-seo-title: 용어 설명
+seo-title: Glossary
 description: 이 용어집에서는 프로젝트 체크리스트에 있는 모든 산출물 문서의 상세내역을 알파벳순으로 나열합니다.
-seo-description: 이 용어집에서는 프로젝트 체크리스트에 있는 모든 산출물 문서의 상세내역을 알파벳순으로 나열합니다.
+seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
 uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7050'
+source-wordcount: '7036'
 ht-degree: 0%
 
 ---
 
 # 용어 설명{#glossary}
 
-이 용어집에서는 [프로젝트 체크리스트](/help/managing/best-practices-checklist.md)의 모든 산출물 문서의 세부 정보를 나열합니다.
+이 용어집에서는 [프로젝트 검사 목록](/help/managing/best-practices-checklist.md).
 
 ## 비즈니스 이해 관계자의 수락 {#acceptance-from-business-stakeholders}
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ### Adobe 보안 검사 목록 {#adobe-security-checklist}
 
-[Adobe 보안 검사 목록](/help/sites-administering/security-checklist.md)은 AEM이 설치 시 안전한지 확인하기 위해 제공된 공식 체크리스트입니다. 인스턴스의 무결성을 유지하기 위해 수행해야 하는 보안 조치와 확인 단계가 포함되어 있습니다.
+다음 [Adobe 보안 검사 목록](/help/sites-administering/security-checklist.md) 는 AEM이 설치 시 안전한지 확인하기 위해 제공된 공식 확인 목록입니다. 인스턴스의 무결성을 유지하기 위해 수행해야 하는 보안 조치와 확인 단계가 포함되어 있습니다.
 
 ### Adobe 지원 포털 프로젝트 설정 {#adobe-support-portal-project-set-up}
 
@@ -57,19 +57,19 @@ Adobe 지원 포털을 통해 구현 파트너와 고객은 지원 포털에서 
 
 ### AEM 관리자 교육 {#aem-administrator-training}
 
-솔루션 관리자 교육 자세한 내용은 [Adobe 교육 서비스](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)를 참조하십시오.
+솔루션 관리자 교육 자세한 내용은 [Adobe 교육 서비스](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) 추가 정보.
 
 ### AEM 작성자 교육 {#aem-author-training}
 
-솔루션에 대한 컨텐츠를 제작(작성)할 직원을 위한 교육. 자세한 내용은 [Adobe 교육 서비스](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)를 참조하십시오.
+솔루션에 대한 컨텐츠를 제작(작성)할 직원을 위한 교육. 자세한 내용은 [Adobe 교육 서비스](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) 추가 정보.
 
 ### AEM 인증 시험 {#aem-certification-exam}
 
-관련 [인증 시험을 보기 위해 적절한 사람이 등록되었는지 확인합니다](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+해당 가상 사용자를 등록하여 [인증 시험](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### AEM Certified {#aem-certified}
 
-해당 사용자가 관련 [인증 시험에 통과했는지 확인합니다](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+해당 가상 사용자가 [인증 시험](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### AEM 기술 교육 {#aem-technical-training}
 
@@ -93,7 +93,7 @@ KPI(주요 성과 지표)는 조직이 조직의 목표 및 목표에 대한 진
 
 ### 애플리케이션 아키텍처 정의 {#application-architecture-definition}
 
-[응용 프로그램 아키텍처](/help/managing/best-practices.md#development-preparation)는 제안된 응용 프로그램의 동작을 명확하게 정의해야 합니다.
+다음 [애플리케이션 아키텍처](/help/managing/best-practices.md#development-preparation) 제안된 애플리케이션의 동작을 명확하게 정의해야 합니다.
 
 핵심 사항:
 
@@ -110,8 +110,7 @@ KPI(주요 성과 지표)는 조직이 조직의 목표 및 목표에 대한 진
 
 * 적어도 하나 이상의 AEM 공인 리드 개발자
 * 적어도 하나 이상의 AEM certified architect
-* 개발자의 75% 이상이 AEM 인증을 받았습니다.
-이를 통해 인증된 개발자가 주니어 개발자를 멘토할 수 있고 지식 공유와 투명성을 확보할 수 있습니다
+* 개발자의 75% 이상이 AEM 인증을 받았습니다. 이를 통해 인증된 개발자가 주니어 개발자를 멘토할 수 있고 지식 공유와 투명성을 확보할 수 있습니다
 
 ### 아키텍처 다이어그램 {#architecture-diagram}
 
@@ -208,8 +207,7 @@ Backup and Restore Concept는 솔루션에 구현될 기술 기능을 간략하�
 
 비즈니스 요구 사항 문서(BRD)는 프로젝트에 대한 비즈니스 솔루션을 자세히 설명하며 고객의 비즈니스 요구 사항과 기대치를 명확하게 설명합니다. BRD는 또한 비즈니스 솔루션과 기술 솔루션을 구별한다.
 
-비즈니스 솔루션을 검토할 때 BRD는 다음 질문에 답해야 합니다.
-&quot;기업이 원하는 것은 무엇입니까?&quot;
+비즈니스 솔루션을 검토할 때 BRD는 다음 질문에 답해야 합니다. &quot;기업이 원하는 것은 무엇입니까?&quot;
 
 ### ROI 및 KPI 기대치에 따라 파악되고 조정된 솔루션 또는 아키텍처에 대한 요구 사항에 대한 비즈니스 승인 {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -505,7 +503,7 @@ AEM과 고수준 솔루션 설계를 위한 타당성 조사 결과. KPI에 대�
 
 ### 최종 계약 {#finalized-contract}
 
-그 프로젝트를 진행하기 전에 확정되고 서명된 계약이 필요하다. 이것은 [계약 초안](#contract-draft)을 기반으로 합니다.
+그 프로젝트를 진행하기 전에 확정되고 서명된 계약이 필요하다. 이것은 [계약 초안](#contract-draft).
 
 ### 이해 관계자가 수락한 솔루션의 기능 {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -804,7 +802,7 @@ Adobe 지원 포털에 액세스해야 하는 모든 사용자 및 역할 목록
 
 ### 보고서 모니터링 - 적합한 구조 {#monitoring-reports-structure-in-place}
 
-정의:
+다음을 정의합니다.
 
 * 모니터링 보고서를 생성해야 하는 시기
 * EMC DL 시리즈의
@@ -904,7 +902,7 @@ AEM의 표준 설치에서 기준 테스트를 실행하는 것이 일반적입�
 
 ### 프로젝트 작업 - 최종 예상 {#project-efforts-final-estimates}
 
-[초기 예상](#project-efforts-initial-estimates)은 높은 수준이었으며 구현을 위한 높은 수준의 요구 사항에 따라 만들어졌습니다.
+다음 [초기 예상](#project-efforts-initial-estimates) 는 구현에 대한 높은 수준의 요구 사항에 따라 높은 수준으로 제작되었습니다.
 
 이제 최종 예측을 제공하기 위해 검토, 조정 및 확장됩니다. 프로젝트 관리, 컨설팅, 아키텍처, 테스트 및 개발 등 적절한 각 프로젝트 리드 별로 추정이 전달되어야 합니다.
 
@@ -956,7 +954,7 @@ AEM은 여러 버전의 자산 및 컨텐츠를 유지 관리합니다. 제거 �
 
 프로젝트 관리자는 프로덕션에 릴리스에 필요한 모든 역할을 조정합니다.
 
-### 릴리스 노트 {#release-notes}
+### 릴리스 정보 {#release-notes}
 
 릴리스 노트는 릴리스에 대한 설명서의 일부입니다. 릴리스 노트는 다음 내용을 다룹니다.
 
@@ -969,7 +967,7 @@ Runbook과 함께 사용하여 설치 전 단계 및 후 단계 및 확인을 �
 
 >[!NOTE]
 >
->예를 보려면 [AEM 릴리스 노트](/help/release-notes/release-notes.md)를 참조하십시오.
+>예를 보려면 [AEM 릴리스 노트](/help/release-notes/release-notes.md).
 
 ### 프로덕션 환경에서 실행되는 릴리스 {#release-running-on-production-environment}
 
@@ -1288,7 +1286,7 @@ Dell의 모든 팀원이 고객과 소통할 사용자를 알고 있으며 방�
 
 ### 테스트 계획 {#testing-plans}
 
-이러한 계획은 개발 각 단계에 대한 테스트 실행을 보다 자세히 설명하고 [테스트 전략](#testing-strategy)을 기반으로 합니다.
+이러한 계획은 개발 단계별로 테스트 실행을 보다 자세히 설명하고 [테스트 전략](#testing-strategy).
 
 ### 테스트 범위 {#testing-scope}
 

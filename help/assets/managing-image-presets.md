@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 0d3bcdaa10d16c292aa0dd60254302d30fd700d6
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '3839'
 ht-degree: 9%
@@ -396,7 +396,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
     <ul>
      <li>선택 <strong>없음</strong> 선명하게 하기를 사용하지 않으려면</li>
      <li>선택 <strong>선명 효과</strong> 모든 크기 조절이 수행된 후 이미지에 기본 선명하게 하기 필터를 적용하려면, 선명하게 하면 이미지를 다른 크기로 표시할 때 나타날 수 있는 흐림 효과를 보상하는 데 도움이 됩니다. </li>
-     <li>선택<strong> 언샵 마스크</strong> 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하려면 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. This effect uses the same options as Photoshop’s “Unsharp Mask” filter.</li>
+     <li>선택<strong> 언샵 마스크</strong> 최종 다운샘플링된 이미지에 선명도 필터 효과를 세밀하게 조정하려면 효과의 강도, 효과의 반경(픽셀 단위 측정) 및 무시되는 조명의 임계값을 제어할 수 있습니다. 이 효과는 Photoshop의 "언샵 마스크" 필터와 동일한 옵션을 사용합니다.</li>
     </ul> <p>in <strong>언샵 마스크</strong>에는 다음 선택 사항이 있습니다.</p>
     <ul>
      <li><strong>금액</strong> - 가장자리 픽셀에 적용된 대비 크기를 제어합니다. 기본 실수 값은 1.0입니다. 고해상도 이미지의 경우 최대 5.0까지 늘릴 수 있습니다. [금액]을 필터 강도 측정에 대해 생각해 보십시오.</li>

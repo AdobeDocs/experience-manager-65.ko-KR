@@ -1,8 +1,8 @@
 ---
 title: JEE 환경에서 AEM Forms 강화
-seo-title: JEE 환경에서 AEM Forms 강화
+seo-title: Hardening Your AEM Forms on JEE Environment
 description: 회사 인트라넷에서 실행 중인 JEE에서 AEM Forms의 보안을 강화하기 위해 다양한 보안 강화 설정을 알아봅니다.
-seo-description: 회사 인트라넷에서 실행 중인 JEE에서 AEM Forms의 보안을 강화하기 위해 다양한 보안 강화 설정을 알아봅니다.
+seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7696'
-ht-degree: 0%
+source-wordcount: '7665'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * **사전 설치:** JEE에 AEM Forms을 설치하기 전에 다음 기술을 사용하십시오.
 * **설치:** JEE의 AEM Forms 설치 프로세스 중에 이러한 기술을 사용합니다.
-* **설치 후:** 설치 후 이러한 기술을 사용하며 그 후에 주기적으로 사용합니다.
+* **설치 후:** 설치 후 주기적으로 이러한 기술을 사용합니다.
 
 AEM Forms on JEE는 사용자 지정이 매우 편리하며 다양한 환경에서 작업할 수 있습니다. 일부 권장 사항은 조직의 요구 사항에 맞지 않을 수 있습니다.
 
@@ -41,7 +41,7 @@ JEE에 AEM Forms 를 설치하기 전에 네트워크 계층 및 운영 체제�
 
 **Windows의 설치 및 구성**
 
-턴키 방법을 사용하여 JBoss의 JEE에 AEM Forms을 설치하거나 PDF Generator를 설치하는 경우 관리자로 Windows에 설치를 수행해야 합니다. 또한 기본 응용 프로그램을 지원하는 Windows에 PDF Generator를 설치할 때는 Microsoft Office를 설치한 Windows 사용자와 동일한 설치 프로그램을 실행해야 합니다. 설치 권한에 대한 자세한 내용은 애플리케이션 서버의 JEE에 AEM Forms 설치 및 배포* 문서를 참조하십시오.
+턴키 방법을 사용하여 JBoss의 JEE에 AEM Forms을 설치하거나 PDF Generator를 설치하는 경우 관리자로 Windows에 설치를 수행해야 합니다. 또한 기본 응용 프로그램을 지원하는 Windows에 PDF 생성기를 설치할 때는 Microsoft Office를 설치한 Windows 사용자와 동일한 설치 프로그램을 실행해야 합니다. 설치 권한에 대한 자세한 내용은 애플리케이션 서버의 JEE에 AEM Forms 설치 및 배포* 문서를 참조하십시오.
 
 ### 네트워크 계층 보안 {#network-layer-security}
 
@@ -69,14 +69,14 @@ JEE에 AEM Forms 를 설치하기 전에 네트워크 계층 및 운영 체제�
    <td><p>방화벽</p> </td> 
    <td><p>다음 기준을 사용하여 방화벽 솔루션을 선택합니다.</p> 
     <ul> 
-     <li><p>단순 패킷 필터링 솔루션 대신 프록시 서버 및/또는 <em>상태 검사</em>를 지원하는 방화벽을 구현합니다.</p> </li> 
-     <li><p><em>을 지원하는 방화벽을 사용하여 명시적으로 허용된 </em> 보안 패러다임을 제외한 모든 서비스를 거부하십시오.</p> </li> 
+     <li><p>프록시 서버 및/또는 를 지원하는 방화벽 구현 <em>상태 점검</em> 간단한 패킷 필터링 솔루션 대신</p> </li> 
+     <li><p>을 지원하는 방화벽 사용 <em>명시적으로 허용된 서비스를 제외한 모든 서비스 거부</em> 보안 패러다임</p> </li> 
      <li><p>이중 홈 또는 다중 홈인 방화벽 솔루션을 구현합니다. 이 아키텍처는 최고의 보안 수준을 제공하며 권한이 없는 사용자가 방화벽 보안을 우회하지 못하도록 합니다.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>데이터베이스 포트</p> </td> 
-   <td><p>데이터베이스의 기본 수신 포트를 사용하지 마십시오(MySQL - 3306, Oracle - 1521, MS SQL - 1433). 데이터베이스 포트 변경에 대한 자세한 내용은 데이터베이스 설명서를 참조하십시오.</p> <p>다른 데이터베이스 포트를 사용하는 것은 JEE 구성의 전체 AEM Forms에 영향을 줍니다. 기본 포트를 변경하는 경우 JEE의 AEM Forms용 데이터 소스 등의 구성 영역에서 해당 수정 작업을 수행해야 합니다.</p> <p>JEE의 AEM Forms에서 데이터 소스를 구성하는 방법은 JEE에서 AEM Forms 설치 및 업그레이드 또는 <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">AEM Forms 사용 안내서</a>에서 애플리케이션 서버의 JEE에서 AEM Forms으로 업그레이드 를 참조하십시오.</p> </td> 
+   <td><p>데이터베이스의 기본 수신 포트를 사용하지 마십시오(MySQL - 3306, Oracle - 1521, MS SQL - 1433). 데이터베이스 포트 변경에 대한 자세한 내용은 데이터베이스 설명서를 참조하십시오.</p> <p>다른 데이터베이스 포트를 사용하는 것은 JEE 구성의 전체 AEM Forms에 영향을 줍니다. 기본 포트를 변경하는 경우 JEE의 AEM Forms용 데이터 소스 등의 구성 영역에서 해당 수정 작업을 수행해야 합니다.</p> <p>JEE의 AEM Forms에서 데이터 소스를 구성하는 방법은 JEE에서 AEM Forms 설치 및 업그레이드 또는 의 애플리케이션 서버용 JEE의 AEM Forms으로 업그레이드 를 참조하십시오. <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">AEM Forms 사용 안내서</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -108,7 +108,7 @@ JEE에 AEM Forms 를 설치하기 전에 네트워크 계층 및 운영 체제�
  </tbody> 
 </table>
 
-운영 체제에 대한 추가 보안 정보는 [&quot;운영 체제 보안 정보&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information)를 참조하십시오.
+운영 체제에 대한 추가 보안 정보는 [&quot;운영 체제 보안 정보&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## 설치 {#installation}
 
@@ -124,7 +124,7 @@ JEE에 AEM Forms 를 설치하기 전에 네트워크 계층 및 운영 체제�
  <tbody>
   <tr> 
    <td><p>권한</p> </td> 
-   <td><p>소프트웨어를 설치하는 데 필요한 최소한의 권한을 사용합니다. 관리자 그룹에 없는 계정을 사용하여 컴퓨터에 로그인합니다. Windows에서는 실행 명령을 사용하여 JEE 설치 프로그램에서 AEM Forms을 관리 사용자로 실행할 수 있습니다. UNIX 및 Linux 시스템에서는 <code>sudo</code> 등의 명령을 사용하여 소프트웨어를 설치합니다.</p> </td> 
+   <td><p>소프트웨어를 설치하는 데 필요한 최소한의 권한을 사용합니다. 관리자 그룹에 없는 계정을 사용하여 컴퓨터에 로그인합니다. Windows에서는 실행 명령을 사용하여 JEE 설치 프로그램에서 AEM Forms을 관리 사용자로 실행할 수 있습니다. UNIX 및 Linux 시스템에서는 다음과 같은 명령을 사용합니다. <code>sudo</code> 소프트웨어를 설치하려면 다음을 수행하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td><p>소프트웨어 소스</p> </td> 
@@ -140,11 +140,11 @@ JEE에 AEM Forms 를 설치하기 전에 네트워크 계층 및 운영 체제�
   </tr> 
   <tr> 
    <td><p>도메인 간 정책 파일</p> </td> 
-   <td><p>서버에 <code>crossdomain.xml</code> 파일이 있으면 해당 서버가 즉시 약화될 수 있습니다. 도메인 목록을 가능한 한 제한하는 것으로 만드는 것이 좋습니다. 안내서 <em>(사용 중지)</em>를 사용할 때 개발 중에 사용된 <code>crossdomain.xml</code> 파일을 프로덕션에 배치하지 마십시오. 웹 서비스를 사용하는 가이드의 경우, 서비스가 가이드를 제공한 동일한 서버에 있는 경우 <code>crossdomain.xml</code> 파일이 전혀 필요하지 않습니다. 그러나 서비스가 다른 서버에 있거나 클러스터와 관련된 경우 <code>crossdomain.xml</code> 파일이 있어야 합니다. crossdomain.xml 파일에 대한 자세한 내용은 <a href="https://kb2.adobe.com/cps/142/tn_14213.html">https://kb2.adobe.com/cps/142/tn_14213.html</a> 을 참조하십시오.</p> </td> 
+   <td><p>의 존재 <code>crossdomain.xml</code> 서버의 파일은 해당 서버를 즉시 약화시킬 수 있습니다. 도메인 목록을 가능한 한 제한하는 것으로 만드는 것이 좋습니다. 위치 지정 안 함 <code>crossdomain.xml</code> 가이드를 사용할 때 프로덕션으로 개발 중에 사용되는 파일 <em>(사용하지 않음)</em>. 웹 서비스를 사용하는 안내서의 경우, 해당 서비스가 가이드를 제공하는 동일한 서버에 있는 경우, <code>crossdomain.xml</code> 파일이 전혀 필요하지 않습니다. 그러나 서비스가 다른 서버에 있거나 클러스터와 관련된 경우 <code>crossdomain.xml</code> 파일이 필요합니다. 을(를) 참조하십시오. <a href="https://kb2.adobe.com/cps/142/tn_14213.html">https://kb2.adobe.com/cps/142/tn_14213.html</a>- crossdomain.xml 파일에 대한 자세한 내용을 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td><p>운영 체제 보안 설정</p> </td> 
-   <td><p>Solaris 플랫폼에서 192비트 또는 256비트 XML 암호화를 사용해야 하는 경우 <code>pkcs11_softtoken.so</code> 대신 <code>pkcs11_softtoken_extra.so</code>을 설치하십시오.</p> </td> 
+   <td><p>Solaris 플랫폼에서 192비트 또는 256비트 XML 암호화를 사용해야 하는 경우 <code>pkcs11_softtoken_extra.so</code> 대신 <code>pkcs11_softtoken.so</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -169,19 +169,19 @@ AEM Forms on JEE는 기본적으로 LocalSystem 계정을 사용하여 서비스
 
 관리 이외의 특정 계정을 사용하여 JEE에서 AEM Forms이 배포된 애플리케이션 서버를 실행하려면 다음 지침을 따르십시오.
 
-1. Microsoft Management Console(MMC)에서 다음과 같이 로그인할 Forms Server 서비스의 로컬 사용자를 만듭니다.
+1. MMC(Microsoft Management Console)에서 다음과 같이 로그인할 Forms 서버 서비스의 로컬 사용자를 만듭니다.
 
-   * **사용자가 암호를 변경할 수 없습니다**.
-   * **Member Of** 탭에서 **Users** 그룹이 나열되는지 확인합니다.
+   * 선택 **사용자가 암호를 변경할 수 없습니다.**.
+   * 설정 **멤버** 탭에서 다음을 확인합니다 **사용자** 그룹이 나열됩니다.
 
    >[!NOTE]
    >
-   >PDF Generator에 대해서는 이 설정을 변경할 수 없습니다.
+   >PDF 생성기에 대해 이 설정을 변경할 수 없습니다.
 
-1. **시작** > **설정** > **관리 도구** > **서비스**&#x200B;를 선택합니다.
+1. 선택 **시작** > **설정** > **관리 도구** > **서비스**.
 1. JEE에서 AEM Forms용 JBoss를 두 번 클릭하고 서비스를 중지합니다.
-1. **로그온** 탭에서 **이 계정**&#x200B;을 선택하고 생성한 사용자 계정을 찾은 다음 계정에 대한 암호를 입력합니다.
-1. MMC에서 **로컬 보안 설정**&#x200B;을 열고 **로컬 정책** > **사용자 권한 지정**&#x200B;을 선택합니다.
+1. 설정 **로그온** 탭, 선택 **이 계정**&#x200B;만든 사용자 계정을 찾아 계정의 암호를 입력합니다.
+1. MMC에서 **로컬 보안 설정** 을(를) 선택합니다. **로컬 정책** > **사용자 권한 할당**.
 1. Forms 서버가 실행 중인 사용자 계정에 다음 권한을 할당합니다.
 
    * 터미널 서비스를 통해 로그온 거부
@@ -189,12 +189,11 @@ AEM Forms on JEE는 기본적으로 LocalSystem 계정을 사용하여 서비스
    * 서비스로 로그온(이미 설정되어야 함)
 
 1. 새 사용자 계정에 다음 디렉토리에 대한 수정 권한을 부여합니다.
-   * **GDS(Global Document Storage) 디렉토리**: GDS 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 경우 이 위치는 기본적으로 `[JBoss root]/server/[type]/svcnative/DocumentStorage`에 있는 응용 프로그램 서버 설치 아래의 디렉터리로 설정됩니다
-   * **CRX-Repository 디렉토리**: 기본 위치는 입니다.  `[AEM-Forms-installation-location]\crx-repository`
+   * **GDS(글로벌 문서 저장소) 디렉토리**: GDS 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 경우 이 위치는 응용 프로그램 서버 설치 시 기본적으로 디렉터리로 설정됩니다. `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **CRX-Repository 디렉토리**: 기본 위치는 입니다. `[AEM-Forms-installation-location]\crx-repository`
    * **AEM Forms 임시 디렉토리**:
       * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
-      * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
-UNIX 기반 시스템에서는 비루트 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
+      * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리 UNIX 기반 시스템에서는 루트 이외의 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
       * (Linux) /var/tmp 또는 /usr/tmp
       * (AIX) /tmp 또는 /usr/tmp
       * (Solaris) /var/tmp 또는 /usr/tmp
@@ -215,7 +214,7 @@ UNIX 기반 시스템에서는 비루트 사용자가 다음 디렉토리를 임
 
 Configuration Manager는 JEE 데이터베이스에서 AEM Forms의 부트스트래핑 작업을 수행하기 위해 애플리케이션 서버에 배포된 서블릿을 사용했습니다. 구성이 완료되기 전에 Configuration Manager가 이 서블릿에 액세스하여 인증된 사용자에 대한 액세스 권한이 확보되지 않았으므로 Configuration Manager를 사용하여 JEE에서 AEM Forms을 구성한 후에는 이 서블릿에 대한 액세스 권한을 비활성화해야 합니다.
 
-1. adobe-livecycle-[appserver].ear 파일의 압축을 해제합니다.
+1. adobe-livecycle- 압축 해제[appserver].ear 파일.
 1. META-INF/application.xml 파일을 엽니다.
 1. adobe-bootstrapper.war 섹션을 검색합니다.
 
@@ -269,15 +268,15 @@ Configuration Manager는 JEE 데이터베이스에서 AEM Forms의 부트스트�
 
 구성 관리자를 사용하여 Acrobat Reader DC 확장 자격 증명을 JEE 트러스트 저장소의 AEM Forms에 업로드할 수 있습니다. 즉, 원격 프로토콜(SOAP 및 EJB)을 통해 Trust Store Credential Service에 대한 액세스가 기본적으로 활성화되어 있습니다. 구성 관리자를 사용하여 권한 자격 증명을 업로드하거나 나중에 관리 콘솔을 사용하여 자격 증명을 관리하기로 결정한 후에는 이 액세스가 더 이상 필요하지 않습니다.
 
-[서비스](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services) 섹션에 있는 단계에 따라 모든 Trust Store 서비스에 대한 원격 액세스를 비활성화할 수 있습니다.
+섹션의 단계를 수행하여 모든 Trust Store 서비스에 대한 원격 액세스를 비활성화할 수 있습니다 [서비스 원격 액세스를 사용하지 않도록 설정](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **필수 불가결한 익명 액세스 모두 사용 안 함**
 
-일부 양식 서버 서비스에는 익명 호출자가 호출할 수 있는 작업이 있습니다. 이러한 서비스에 대한 익명 액세스가 필요하지 않으면 [서비스](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services)에 대한 중요하지 않은 익명 액세스를 비활성화하는 단계에 따라 비활성화하십시오.
+일부 양식 서버 서비스에는 익명 호출자가 호출할 수 있는 작업이 있습니다. 이러한 서비스에 대한 익명 액세스가 필요하지 않은 경우 [서비스에 대한 필수 불가결한 익명 액세스 사용 안 함](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### 기본 관리자 암호 변경 {#change-the-default-administrator-password}
 
-JEE의 AEM Forms이 설치되면, 기본 사용자 계정이 *password*&#x200B;인 기본 암호로 Super Administrator/ login-id Administrator에 대해 구성됩니다. 구성 관리자를 사용하여 이 암호를 즉시 변경해야 합니다.
+JEE의 AEM Forms이 설치되면 기본 암호가 인 Super Administrator/login-id Administrator에 대해 단일 기본 사용자 계정이 구성됩니다 *암호*. 구성 관리자를 사용하여 이 암호를 즉시 변경해야 합니다.
 
 1. 웹 브라우저에 다음 URL을 입력합니다.
 
@@ -287,25 +286,25 @@ JEE의 AEM Forms이 설치되면, 기본 사용자 계정이 *password*&#x200B;�
 
    기본 포트 번호는 다음 중 하나입니다.
 
-   **JBoss:** 8080
+   **JBoss:** 8080년
 
-   **WebLogic Server:** 7001
+   **WebLogic Server:** 7001년
 
-   **WebSphere:** 9080.
+   **WebSphere:** 9080년.
 
-1. **사용자 이름** 필드에 `administrator`를 입력하고 **암호** 필드에 `password`를 입력합니다.
-1. **설정** > **사용자 관리** > **사용자 및 그룹**&#x200B;을 클릭합니다.
-1. **찾기** 필드에 `administrator`을 입력하고 **찾기**&#x200B;를 클릭합니다.
-1. 사용자 목록에서 **수퍼 관리자**&#x200B;를 클릭합니다.
-1. 사용자 편집 페이지에서 **암호 변경**&#x200B;을 클릭합니다.
-1. 새 암호를 지정하고 **저장**&#x200B;을 클릭합니다.
+1. 에서 **사용자 이름** 필드, 유형 `administrator` 그리고 **암호** 필드, 유형 `password`.
+1. 클릭 **설정** > **사용자 관리** > **사용자 및 그룹**.
+1. 유형 `administrator` 에서 **찾기** 필드를 입력하고 **찾기**.
+1. 클릭 **수퍼 관리자** 사용자 목록에서 삭제할 수 있습니다.
+1. 클릭 **암호 변경** 를 클릭합니다.
+1. 새 암호를 지정하고 **저장**.
 
 또한 다음 단계를 수행하여 CRX 관리자의 기본 암호를 변경하는 것이 좋습니다.
 
-1. 기본 사용자 이름/암호를 사용하여 `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html`에 로그인합니다.
-1. 검색 필드에 Administrator를 입력하고 **Go**&#x200B;를 클릭합니다.
-1. 검색 결과에서 **관리자**&#x200B;를 선택하고 사용자 인터페이스의 오른쪽 아래에 있는 **편집** 아이콘을 클릭합니다.
-1. **새 암호** 필드에 새 암호를 지정하고 **암호** 필드에 이전 암호를 지정합니다.
+1. 에 로그인합니다. `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` 기본 사용자 이름/암호 사용.
+1. 검색 필드에 Administrator 를 입력하고 **이동**.
+1. 선택 **관리자** 검색 결과에서 을(를) 클릭하고 **편집** 사용자 인터페이스의 오른쪽 아래에 있는 아이콘을 클릭합니다.
+1. 에서 새 암호를 지정합니다. **새 암호** 필드 및 의 이전 암호 **암호** 필드.
 1. 사용자 인터페이스의 오른쪽 아래에 있는 저장 아이콘을 클릭합니다.
 
 #### WSDL 생성 비활성화 {#disable-wsdl-generation}
@@ -318,8 +317,8 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 응
    https://[host name]:[port]/adminui
    ```
 
-1. **설정 > 코어 시스템 설정 > 구성**&#x200B;을 클릭합니다.
-1. **WSDL**&#x200B;을 선택 취소하고 **확인**&#x200B;을 클릭합니다.
+1. 클릭 **설정 > 핵심 시스템 설정 > 구성**.
+1. 선택 취소 **WSDL 사용** 을(를) 클릭합니다. **확인**.
 
 ### 애플리케이션 서버 보안 {#application-server-security}
 
@@ -339,11 +338,11 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 응
   </tr> 
   <tr> 
    <td><p>애플리케이션 서버 쿠키 설정</p> </td> 
-   <td><p>애플리케이션 쿠키는 애플리케이션 서버에서 제어합니다. 애플리케이션을 배포할 때 애플리케이션 서버 관리자는 서버 전체 또는 애플리케이션별로 쿠키 환경 설정을 지정할 수 있습니다. 기본적으로 서버 설정이 우선합니다.</p> <p>애플리케이션 서버에서 생성된 모든 세션 쿠키에는 <code>HttpOnly</code> 속성이 포함되어야 합니다. 예를 들어 JBoss Application Server를 사용할 때 <code>WEB-INF/web.xml</code> 파일에서 SessionCookie 요소를 <code>httpOnly="true"</code> 로 수정할 수 있습니다.</p> <p>HTTPS 전용 을 사용하여 쿠키를 전송하도록 제한할 수 있습니다. 따라서 HTTP를 통해 암호화되지 않은 상태로 전송됩니다. 애플리케이션 서버 관리자는 전역 기반으로 서버에 대한 보안 쿠키를 활성화해야 합니다. 예를 들어 JBoss Application Server를 사용하는 경우 <code>server.xml</code> 파일에서 커넥터 요소를 <code>secure=true</code> 로 수정할 수 있습니다.</p> <p>쿠키 설정에 대한 자세한 내용은 애플리케이션 서버 설명서 를 참조하십시오.</p> </td> 
+   <td><p>애플리케이션 쿠키는 애플리케이션 서버에서 제어합니다. 애플리케이션을 배포할 때 애플리케이션 서버 관리자는 서버 전체 또는 애플리케이션별로 쿠키 환경 설정을 지정할 수 있습니다. 기본적으로 서버 설정이 우선합니다.</p> <p>애플리케이션 서버에서 생성된 모든 세션 쿠키에는 <code>HttpOnly</code> 속성을 사용합니다. 예를 들어 JBoss 애플리케이션 서버를 사용할 때 SessionCookie 요소를 다음으로 수정할 수 있습니다. <code>httpOnly="true"</code> 에서 <code>WEB-INF/web.xml</code> 파일.</p> <p>HTTPS 전용 을 사용하여 쿠키를 전송하도록 제한할 수 있습니다. 따라서 HTTP를 통해 암호화되지 않은 상태로 전송됩니다. 애플리케이션 서버 관리자는 전역 기반으로 서버에 대한 보안 쿠키를 활성화해야 합니다. 예를 들어 JBoss Application Server를 사용할 때 커넥터 요소를 다음으로 수정할 수 있습니다. <code>secure=true</code> 에서 <code>server.xml</code> 파일.</p> <p>쿠키 설정에 대한 자세한 내용은 애플리케이션 서버 설명서 를 참조하십시오.</p> </td> 
   </tr> 
   <tr> 
    <td><p>디렉토리 검색</p> </td> 
-   <td><p>존재하지 않는 페이지를 요청하거나 디렉터의 이름을 요청할 때(요청 문자열은 슬래시(/)로 끝남), 응용 프로그램 서버는 해당 디렉토리의 내용을 반환하지 않아야 합니다. 이를 방지하기 위해 애플리케이션 서버에서 디렉토리 탐색을 비활성화할 수 있습니다. 관리 콘솔 응용 프로그램 및 서버에서 실행 중인 다른 응용 프로그램에 대해 이 작업을 수행해야 합니다.</p> <p>JBoss의 경우, 다음 예제와 같이 web.xml 파일에서 <code>DefaultServlet</code> 속성의 목록 초기화 매개변수 값을 <code>false</code>로 설정합니다.</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;기본&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;목록&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>WebSphere의 경우 ibm-web-ext.xmi 파일의 <code>directoryBrowsingEnabled</code> 속성을 <code>false</code>로 설정합니다.</p> <p>WebLogic의 경우 다음 예제와 같이 weblogic.xml 파일의 index-directories 속성을 <code>false</code>로 설정합니다.</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>존재하지 않는 페이지를 요청하거나 디렉터의 이름을 요청할 때(요청 문자열은 슬래시(/)로 끝남), 응용 프로그램 서버는 해당 디렉토리의 내용을 반환하지 않아야 합니다. 이를 방지하기 위해 애플리케이션 서버에서 디렉토리 탐색을 비활성화할 수 있습니다. 관리 콘솔 응용 프로그램 및 서버에서 실행 중인 다른 응용 프로그램에 대해 이 작업을 수행해야 합니다.</p> <p>JBoss의 경우 <code>DefaultServlet</code> 속성 대상 <code>false</code> 다음 예제와 같이 web.xml 파일에서 다음을 수행합니다.</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;기본&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;목록&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>WebSphere의 경우 <code>directoryBrowsingEnabled</code> ibm-web-ext.xmi 파일의 속성을 <code>false</code>.</p> <p>WebLogic의 경우 weblogic.xml 파일의 index-directories 속성을 로 설정합니다. <code>false</code>를 채울 수 있습니다.</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -352,19 +351,19 @@ WSDL(Web Service Definition Language) 생성은 개발자가 클라이언트 응
 
 데이터베이스를 보호할 때 데이터베이스 공급업체에서 설명하는 측정값을 구현해야 합니다. JEE의 AEM Forms에서 사용하기 위해 부여된 최소 필수 데이터베이스 권한으로 데이터베이스 사용자를 할당해야 합니다. 예를 들어 데이터베이스 관리자 권한이 있는 계정을 사용하지 마십시오.
 
-oracle에서 사용하는 데이터베이스 계정에는 CONNECT, 리소스 및 뷰 생성 권한만 필요합니다. 다른 데이터베이스에 대한 유사한 요구 사항에 대해서는 [JEE에 AEM Forms 설치 준비 (단일 서버)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)를 참조하십시오.
+oracle에서 사용하는 데이터베이스 계정에는 CONNECT, 리소스 및 뷰 생성 권한만 필요합니다. 다른 데이터베이스에 대한 유사한 요구 사항에 대해서는 [JEE에 AEM Forms 설치 준비(단일 서버)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
 #### JBoss용 Windows의 SQL Server에 대한 통합 보안 구성 {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
-1. 다음 예제와 같이 [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml}을 수정하여 연결 URL에 `integratedSecurity=true`을 추가합니다.
+1. 수정 [JBOSS_HOME]추가할 \\standalone\configuration\lc_{datasource.xml} `integratedSecurity=true` 아래와 같이 연결 URL에 추가합니다.
 
    ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
    ```
 
-1. 응용 프로그램 서버를 실행 중인 컴퓨터의 Windows 시스템 경로에 sqljdbc_auth.dll 파일을 추가합니다. sqljdbc_auth.dll 파일은 Microsoft SQL JDBC 6.2.1.0 드라이버 설치 시 나타납니다.
+1. 응용 프로그램 서버를 실행 중인 컴퓨터의 Windows 시스템 경로에 sqljdbc_auth.dll 파일을 추가합니다. sqljdbc_auth.dll 파일은 Microsoft SQL JDBC 6.2.1.0 드라이버 설치와 함께 있습니다.
 1. 로컬 시스템에서 로그온 방법에 대한 JBoss Windows 서비스(JEE의 AEM Forms용 JBoss) 속성을 AEM Forms 데이터베이스 및 최소 권한 세트가 있는 로그인 계정으로 수정합니다. Windows 서비스 대신 명령줄에서 JBoss를 실행하는 경우에는 이 단계를 수행할 필요가 없습니다.
-1. **혼합** 모드에서 **Windows 인증만**&#x200B;으로 SQL Server 보안을 설정합니다.
+1. SQL Server 보안 설정 **혼합** 다음으로 모드 **Windows 인증만**.
 
 #### WebLogic용 Windows에서 SQL Server에 대한 통합 보안 구성 {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
 
@@ -374,30 +373,30 @@ oracle에서 사용하는 데이터베이스 계정에는 CONNECT, 리소스 및
    https://[host name]:7001/console
    ```
 
-1. 변경 센터에서 **잠금 및 편집**&#x200B;을 클릭합니다.
-1. 도메인 구조에서 *[base_domain]* > **서비스** > **JDBC** > **데이터 소스**&#x200B;를 클릭하고 오른쪽 창에서 **IDP_DS**&#x200B;를 클릭합니다.
-1. 다음 화면의 **구성** 탭에서 **연결 풀** 탭을 클릭하고 **속성** 상자에서 `integratedSecurity=true`를 입력합니다.
-1. 도메인 구조에서 **[base_domain]** > **서비스** > **JDBC** > **데이터 소스**&#x200B;를 클릭하고 오른쪽 창에서 **RM_DS**&#x200B;를 클릭합니다.
-1. 다음 화면의 **구성** 탭에서 **연결 풀** 탭을 클릭하고 **속성** 상자에서 `integratedSecurity=true`를 입력합니다.
-1. 응용 프로그램 서버를 실행 중인 컴퓨터의 Windows 시스템 경로에 sqljdbc_auth.dll 파일을 추가합니다. sqljdbc_auth.dll 파일은 Microsoft SQL JDBC 6.2.1.0 드라이버 설치 시 나타납니다.
-1. **혼합** 모드에서 **Windows 인증만**&#x200B;으로 SQL Server 보안을 설정합니다.
+1. Change Center에서 **잠금 및 편집**.
+1. 도메인 구조에서 *[base_domain]* > **서비스** > **JDBC** > **데이터 소스** 오른쪽 창에서 **IDP_DS**.
+1. 다음 화면에서 **구성** 탭에서 **연결 풀** 탭하고, **속성** 상자, 유형 `integratedSecurity=true`.
+1. 도메인 구조에서 **[base_domain]** > **서비스** > **JDBC** > **데이터 소스** 오른쪽 창에서 **RM_DS**.
+1. 다음 화면에서 **구성** 탭에서 **연결 풀** 탭하고, **속성** 상자, 유형 `integratedSecurity=true`.
+1. 응용 프로그램 서버를 실행 중인 컴퓨터의 Windows 시스템 경로에 sqljdbc_auth.dll 파일을 추가합니다. sqljdbc_auth.dll 파일은 Microsoft SQL JDBC 6.2.1.0 드라이버 설치와 함께 있습니다.
+1. SQL Server 보안 설정 **혼합** 다음으로 모드 **Windows 인증만**.
 
 #### WebSphere용 Windows에서 SQL Server에 대한 통합 보안 구성 {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
 
 WebSphere에서는 WebSphere에 포함된 SQL Server JDBC 드라이버가 아니라 외부 SQL Server JDBC 드라이버를 사용하는 경우에만 통합 보안을 구성할 수 있습니다.
 
 1. WebSphere 관리 콘솔에 로그인합니다.
-1. 탐색 트리에서 **리소스** > **JDBC** > **데이터 소스**&#x200B;를 클릭하고 오른쪽 창에서 **IDP_DS**&#x200B;을(를) 클릭합니다.
-1. 오른쪽 창의 추가 속성에서 **사용자 지정 속성**&#x200B;을 클릭한 다음 **새로 만들기**&#x200B;를 클릭합니다.
-1. **이름** 상자에 `integratedSecurity`를 입력하고 **값** 상자에 `true`를 입력합니다.
-1. 탐색 트리에서 **리소스** > **JDBC** > **데이터 소스**&#x200B;를 클릭하고 오른쪽 창에서 **RM_DS**&#x200B;을 클릭합니다.
-1. 오른쪽 창의 추가 속성에서 **사용자 지정 속성**&#x200B;을 클릭한 다음 **새로 만들기**&#x200B;를 클릭합니다.
-1. **이름** 상자에 `integratedSecurity`를 입력하고 **값** 상자에 `true`를 입력합니다.
-1. WebSphere가 설치된 컴퓨터에서 Windows 시스템 경로(C:\Windows)에 sqljdbc_auth.dll 파일을 추가합니다. sqljdbc_auth.dll 파일은 Microsoft SQL JDBC 1.2 드라이버 설치 위치와 동일한 위치에 있습니다(기본값은 *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
-1. **시작** > **Campaign 컨트롤 패널** > **서비스**&#x200B;를 선택하고 WebSphere용 Windows 서비스(IBM WebSphere Application Server &lt;version> - &lt;node>)를 마우스 오른쪽 단추로 클릭한 다음 **속성**&#x200B;을 선택합니다.
-1. 속성 대화 상자에서 **로그온** 탭을 클릭합니다.
-1. **이 계정**&#x200B;을 선택하고 사용할 로그인 계정을 설정하는 데 필요한 정보를 제공합니다.
-1. **혼합** 모드에서 **Windows 인증만**&#x200B;으로 SQL Server의 보안을 설정합니다.
+1. 탐색 트리에서 **리소스** > **JDBC** > **데이터 소스** 오른쪽 창에서 **IDP_DS**.
+1. 오른쪽 창의 추가 속성에서 **사용자 지정 속성**&#x200B;를 클릭한 다음 **새로 만들기**.
+1. 에서 **이름** 상자, 유형 `integratedSecurity` 그리고 **값** 상자, 유형 `true`.
+1. 탐색 트리에서 **리소스** > **JDBC** > **데이터 소스** 오른쪽 창에서 **RM_DS**.
+1. 오른쪽 창의 추가 속성에서 **사용자 지정 속성**&#x200B;를 클릭한 다음 **새로 만들기**.
+1. 에서 **이름** 상자, 유형 `integratedSecurity` 그리고 **값** 상자, 유형 `true`.
+1. WebSphere가 설치된 컴퓨터에서 Windows 시스템 경로(C:\Windows)에 sqljdbc_auth.dll 파일을 추가합니다. sqljdbc_auth.dll 파일은 Microsoft SQL JDBC 1.2 드라이버 설치 위치와 동일한 위치에 있습니다(기본값은 임) *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
+1. 선택 **시작** > **Campaign 컨트롤 패널** > **서비스** WebSphere용 Windows 서비스(IBM WebSphere Application Server)를 마우스 오른쪽 버튼으로 클릭합니다. &lt;version> - &lt;node>) 를 선택하고 을 선택합니다. **속성**.
+1. 속성 대화 상자에서 **로그온** 탭.
+1. 선택 **이 계정** 사용할 로그인 계정을 설정하는 데 필요한 정보를 제공합니다.
+1. SQL Server의 보안 설정 **혼합** 다음으로 모드 **Windows 인증만**.
 
 ### 데이터베이스의 중요한 콘텐츠에 대한 액세스 보호 {#protecting-access-to-sensitive-content-in-the-database}
 
@@ -409,7 +408,7 @@ AEM Forms 데이터베이스 스키마에는 시스템 구성 및 비즈니스 �
 * Trust Store HSM PIN 암호화 키
 * 로컬 사용자 암호 해시
 
-공급업체별 도구에 대한 자세한 내용은 [&quot;데이터베이스 보안 정보&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information)를 참조하십시오.
+공급업체별 도구에 대한 자세한 내용은 [&quot;데이터베이스 보안 정보&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### LDAP 보안 {#ldap-security}
 
@@ -424,13 +423,13 @@ LDAP를 사용하는 일반적인 공격에는 공격자가 의도적으로 여�
 #### 자동 계정 잠금 설정 {#set-automatic-account-locking}
 
 1. 관리 콘솔에 로그인합니다.
-1. **설정** > **사용자 관리** > **도메인 관리**&#x200B;를 클릭합니다.
-1. 자동 계정 잠금 설정에서 **최대 연속 인증 실패**&#x200B;를 낮은 숫자로 설정합니다(예: 3).
+1. 클릭 **설정** > **사용자 관리** > **도메인 관리**.
+1. 자동 계정 잠금 설정에서 을 설정합니다. **최대 연속 인증 실패** 최소값(예: 3).
 1. **저장**&#x200B;을 클릭합니다.
 
 ### 감사 및 로깅 {#auditing-and-logging}
 
-응용 프로그램 감사 및 로깅을 적절하고 안전하게 사용하면 보안 및 기타 예외 이벤트를 가능한 한 빨리 추적하고 감지할 수 있습니다. 애플리케이션 내에서 감사 및 로깅을 효과적으로 사용하는 경우 성공적인 로그인 및 실패한 로그인 추적과 같은 항목과 주요 레코드 작성 또는 삭제와 같은 주요 애플리케이션 이벤트가 포함됩니다.
+응용 프로그램 감사 및 로깅을 적절하고 안전하게 사용하면 보안 및 기타 예외 이벤트를 가능한 한 빨리 추적하고 탐지할 수 있습니다. 애플리케이션 내에서 감사 및 로깅을 효과적으로 사용하는 경우 성공적인 로그인 및 실패한 로그인 추적과 같은 항목과 주요 레코드 작성 또는 삭제와 같은 주요 애플리케이션 이벤트가 포함됩니다.
 
 감사를 사용하여 다음과 같은 다양한 유형의 공격을 감지할 수 있습니다.
 
@@ -454,14 +453,14 @@ LDAP를 사용하는 일반적인 공격에는 공격자가 의도적으로 여�
   </tr> 
   <tr> 
    <td><p>로그 파일 중복</p> </td> 
-   <td><p>리소스가 허용되면 Syslog, Tivoli, Microsoft Operations Manager(MOM) Server 또는 다른 메커니즘을 사용하여 공격자가 액세스할 수 없는(쓰기 전용) 다른 서버로 로그를 실시간으로 보냅니다.</p> <p>로그를 이렇게 보호하면 탬퍼링을 방지할 수 있습니다. 또한 중앙 리포지토리에 로그를 저장하면 상관 관계 및 모니터링에 도움이 됩니다(예를 들어 여러 Forms 서버가 사용 중이고 각 컴퓨터에 암호를 묻는 여러 컴퓨터에서 암호 추측 공격이 발생하는 경우).</p> </td> 
+   <td><p>리소스가 허용되면 Syslog, Tivoli, MOM(Microsoft Operations Manager) Server 또는 다른 메커니즘을 사용하여 공격자가 액세스할 수 없는(쓰기 전용) 다른 서버로 로그를 실시간으로 보냅니다.</p> <p>로그를 이렇게 보호하면 탬퍼링을 방지할 수 있습니다. 또한 중앙 저장소에 로그를 저장하면 상관 관계 및 모니터링에 도움이 됩니다(예를 들어 여러 Forms 서버가 사용 중이고 각 컴퓨터에 암호를 묻는 여러 컴퓨터에서 암호 추측 공격이 발생하는 경우).</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 관리자가 아닌 사용자가 PDF Generator를 실행할 수 있도록 설정
+### 관리자가 아닌 사용자가 PDF 생성기를 실행할 수 있도록 설정
 
-관리자가 아닌 사용자가 PDF Generator를 사용할 수 있도록 설정할 수 있습니다. 일반적으로 관리자 권한이 있는 사용자만 PDF Generator를 사용할 수 있습니다. 관리자가 아닌 사용자가 PDF Generator를 실행할 수 있도록 하려면 다음 단계를 수행하십시오.
+관리자가 아닌 사용자가 PDF 생성기를 사용할 수 있도록 설정할 수 있습니다. 일반적으로 관리자 권한이 있는 사용자만 PDF 생성기를 사용할 수 있습니다. 관리자가 아닌 사용자가 PDF 생성기를 실행할 수 있도록 하려면 다음 단계를 수행하십시오.
 
 1. 환경 변수 이름 PDFG_NON_ADMIN_ENABLED를 만듭니다.
 
@@ -475,7 +474,7 @@ JEE에 AEM Forms을 성공적으로 설치한 후에는 환경 보안을 정기�
 
 ### 웹 액세스를 위한 역방향 프록시 설정 {#setting-up-a-reverse-proxy-for-web-access}
 
-*역방향 프록시*&#x200B;를 사용하여 JEE 웹 애플리케이션의 AEM Forms용 URL 세트를 외부 사용자와 내부 사용자 모두 사용할 수 있도록 할 수 있습니다. 이 구성은 사용자가 JEE의 AEM Forms이 실행 중인 애플리케이션 서버에 직접 연결할 수 있도록 하는 것보다 더 안전합니다. 역방향 프록시는 JEE에서 AEM Forms을 실행 중인 애플리케이션 서버에 대한 모든 HTTP 요청을 수행합니다. 사용자는 역방향 프록시에 대한 네트워크 액세스 권한만 가지며 역방향 프록시에서 지원하는 URL 연결만 시도할 수 있습니다.
+A *역방향 프록시* 는 JEE 웹 애플리케이션의 AEM Forms용 URL 세트 중 하나를 외부 사용자와 내부 사용자가 모두 사용할 수 있도록 하는 데 사용할 수 있습니다. 이 구성은 사용자가 JEE의 AEM Forms이 실행 중인 애플리케이션 서버에 직접 연결할 수 있도록 하는 것보다 더 안전합니다. 역방향 프록시는 JEE에서 AEM Forms을 실행 중인 애플리케이션 서버에 대한 모든 HTTP 요청을 수행합니다. 사용자는 역방향 프록시에 대한 네트워크 액세스 권한만 가지며 역방향 프록시에서 지원하는 URL 연결만 시도할 수 있습니다.
 
 **역방향 프록시 서버와 함께 사용할 JEE 루트 URL의 AEM Forms**
 
@@ -508,12 +507,12 @@ JEE 웹 애플리케이션의 각 AEM Forms에 대한 다음 애플리케이션 
   <tr> 
    <td><p>/edcws/*</p> </td> 
    <td><p>Rights Management에 대한 웹 서비스 URL</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
    <td><p>예</p> </td> 
   </tr> 
   <tr> 
    <td><p>/pdfgui/*</p> </td> 
-   <td><p>PDF Generator 관리 웹 애플리케이션</p> </td> 
+   <td><p>PDF 생성기 관리 웹 애플리케이션</p> </td> 
    <td><p>예</p> </td> 
    <td><p>예</p> </td> 
   </tr> 
@@ -532,122 +531,122 @@ JEE 웹 애플리케이션의 각 AEM Forms에 대한 다음 애플리케이션 
   <tr> 
    <td><p>/adobe-bootstrapper/*</p> </td> 
    <td><p>JEE 저장소의 AEM Forms을 부트스트래핑하는 서블릿</p> </td> 
-   <td><p>아니오</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/soap/*</p> </td> 
    <td><p>Forms Server 웹 서비스에 대한 정보 페이지</p> </td> 
-   <td><p>아니오</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/soap/services/*</p> </td> 
    <td><p>모든 양식 서버 서비스의 웹 서비스 URL</p> </td> 
-   <td><p>아니오</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/edc/admin/*</p> </td> 
    <td><p>Rights Management 관리 웹 애플리케이션</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/adminui/*</p> </td> 
    <td><p>관리 콘솔 홈 페이지</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/TruststoreComponent/</p> <p>보안/*</p> </td> 
    <td><p>저장소 관리 관리 페이지</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/FormsIVS/*</p> </td> 
    <td><p>양식 렌더링 테스트 및 디버깅을 위한 Forms IVS 애플리케이션</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/OutputIVS/*</p> </td> 
    <td><p>출력 출력 서비스 테스트 및 디버깅을 위한 IVS 애플리케이션 출력</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/rmws/*</p> </td> 
    <td><p>Rights Management REST URL</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
    <td><p>예</p> </td> 
   </tr> 
   <tr> 
    <td><p>/OutputAdmin/*</p> </td> 
    <td><p>출력 관리 페이지</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/FormServer/*</p> </td> 
    <td><p>Forms 웹 애플리케이션 파일</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/FormServer/GetImage</p> <p>서블릿</p> </td> 
    <td><p>HTML 변환 중 JavaScript를 가져오는 데 사용됩니다.</p> </td> 
-   <td><p>아니오</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/FormServerAdmin/*</p> </td> 
    <td><p>Forms 관리 페이지</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/repository/*</p> </td> 
    <td><p>WebDAV(디버깅) 액세스에 대한 URL</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/AACComponent/*</p> </td> 
    <td><p>애플리케이션 및 서비스 사용자 인터페이스</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/WorkspaceAdmin/*</p> </td> 
    <td><p>작업 공간 관리 페이지</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/rest/*</p> </td> 
    <td><p>나머지 지원 페이지</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/CoreSystemConfig/*</p> </td> 
    <td><p>JEE 코어 구성 설정 페이지의 AEM Forms</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/um/</p> </td> 
    <td><p>사용자 관리 인증</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
    <td><p>예</p> </td> 
   </tr> 
   <tr> 
    <td><p>/um/*</p> </td> 
    <td><p>사용자 관리 관리 인터페이스</p> </td> 
    <td><p>예</p> </td> 
-   <td><p>아니오</p> </td> 
+   <td><p>아니요</p> </td> 
   </tr> 
   <tr> 
    <td><p>/DocumentManager/*</p> </td> 
@@ -662,7 +661,7 @@ JEE 웹 애플리케이션의 각 AEM Forms에 대한 다음 애플리케이션 
 
 CSRF(Cross-Site Request Forgery) 공격에서는 웹 사이트에서 사용자에 대해 가지는 트러스트를 이용하여 사용자가 허가되지 않고 의도하지 않은 명령을 전송합니다. 이 공격은 웹 페이지에 링크 또는 스크립트, 또는 이메일 메시지의 URL을 포함하여 사용자가 이미 인증된 다른 사이트에 액세스하도록 설정되어 있습니다.
 
-예를 들어, 다른 웹 사이트를 동시에 탐색하면서 Administration Console에 로그인할 수 있습니다. 웹 페이지 중 하나는 희생자 웹 사이트에서 서버측 스크립트를 타겟팅하는 `src` 특성이 있는 HTML 이미지 태그를 포함할 수 있습니다. 웹 브라우저가 제공하는 쿠키 기반 세션 인증 메커니즘을 활용함으로써, 공격 웹 사이트는 피해 서버측 스크립트에 악성 요청을 전송하여 정당한 사용자로 가장할 수 있습니다. 자세한 예는 [https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples)을 참조하십시오.
+예를 들어, 다른 웹 사이트를 동시에 탐색하면서 Administration Console에 로그인할 수 있습니다. 웹 페이지 중 하나에는 `src` 피해자 웹 사이트에서 서버측 스크립트를 타겟팅하는 속성. 웹 브라우저가 제공하는 쿠키 기반 세션 인증 메커니즘을 활용함으로써, 공격 웹 사이트는 피해 서버측 스크립트에 악성 요청을 전송하여 정당한 사용자로 가장할 수 있습니다. 자세한 내용은 [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 CSRF에는 다음과 같은 특성이 일반적입니다.
 
@@ -673,9 +672,9 @@ CSRF에는 다음과 같은 특성이 일반적입니다.
 
 JEE의 AEM Forms은 레퍼러 필터 기능을 사용하여 CSRF 공격을 차단합니다. 이 섹션에서는 레퍼러 필터링 메커니즘을 설명하는 데 다음과 같은 용어가 사용됩니다.
 
-* **허용된 레퍼러:**  레퍼러는 서버에 요청을 보내는 소스 페이지의 주소입니다. JSP 페이지 또는 Forms의 경우 레퍼러는 일반적으로 검색 내역에서 이전 페이지입니다. 이미지용 레퍼러는 일반적으로 이미지가 표시되는 페이지입니다. 서버 리소스에 대한 액세스가 허용되는 레퍼러를 허용된 레퍼러 목록에 추가하여 식별할 수 있습니다.
-* **허용된 레퍼러 예외:**  허용된 레퍼러 목록에서 특정 레퍼러에 대한 액세스 범위를 제한할 수 있습니다. 이 제한을 적용하려면 해당 레퍼러의 개별 경로를 허용된 레퍼러 예외 목록에 추가할 수 있습니다. 허용된 레퍼러 예외 목록에서 경로로부터 시작된 요청이 Forms 서버에서 리소스를 호출하지 못하도록 합니다. 특정 응용 프로그램에 대해 허용되는 레퍼러 예외를 정의하고 모든 응용 프로그램에 적용되는 전역 예외 목록을 사용할 수도 있습니다.
-* **허용된 URI:**  레퍼러 헤더를 확인하지 않고 제공할 리소스 목록입니다. 예를 들어, 서버에서 상태 변경을 초래하지 않는 도움말 페이지를 이 목록에 추가할 수 있습니다. 허용된 URI 목록의 리소스는 레퍼러가 누구인지에 관계없이 레퍼러 필터에 의해 차단되지 않습니다.
+* **허용된 레퍼러:** 레퍼러는 서버로 요청을 보내는 소스 페이지의 주소입니다. JSP 페이지 또는 Forms의 경우 레퍼러는 일반적으로 검색 내역에서 이전 페이지입니다. 이미지용 레퍼러는 일반적으로 이미지가 표시되는 페이지입니다. 서버 리소스에 대한 액세스가 허용되는 레퍼러를 허용된 레퍼러 목록에 추가하여 식별할 수 있습니다.
+* **허용된 레퍼러 예외:** 허용된 레퍼러 목록에서 특정 레퍼러에 대한 액세스 범위를 제한할 수 있습니다. 이 제한을 적용하려면 해당 레퍼러의 개별 경로를 허용된 레퍼러 예외 목록에 추가할 수 있습니다. 허용된 레퍼러 예외 목록에서 경로로부터 시작된 요청이 Forms 서버에서 리소스를 호출하지 못하도록 합니다. 특정 응용 프로그램에 대해 허용되는 레퍼러 예외를 정의하고 모든 응용 프로그램에 적용되는 전역 예외 목록을 사용할 수도 있습니다.
+* **허용되는 URI:** 레퍼러 헤더를 확인하지 않고 제공할 리소스 목록입니다. 예를 들어, 서버에서 상태 변경을 초래하지 않는 도움말 페이지를 이 목록에 추가할 수 있습니다. 허용된 URI 목록의 리소스는 레퍼러가 누구인지에 관계없이 레퍼러 필터에 의해 차단되지 않습니다.
 * **Null 레퍼러:** 상위 웹 페이지에서 연결되지 않거나 발생하지 않는 서버 요청은 Null 레퍼러의 요청으로 간주됩니다. 예를 들어 새 브라우저 창을 열고 주소를 입력한 다음 Enter 키를 누르면 서버로 전송된 레퍼러가 null입니다. 웹 서버에 HTTP 요청을 만드는 데스크탑 애플리케이션(.NET 또는 SWING)도 Null 레퍼러를 서버로 전송합니다.
 
 ### 레퍼러 필터링 {#referer-filtering}
@@ -685,7 +684,7 @@ JEE의 AEM Forms은 레퍼러 필터 기능을 사용하여 CSRF 공격을 차�
 1. Forms 서버는 호출에 사용된 HTTP 메서드를 확인합니다.
 
    1. POST인 경우 Forms 서버에서 레퍼러 헤더 검사를 수행합니다.
-   1. GET인 경우, Forms 서버는 *CSRF_CHECK_GETS* 가 true로 설정되어 있는 한 레퍼러 검사를 무시하며, 이 경우 레퍼러 헤더 검사를 수행합니다. *CSRF_CHECK_* GETS가 응용 프로그램의  *web.* xmlfile에 지정됩니다.
+   1. GET인 경우 Forms 서버가 레퍼러 검사를 무시하지 않는 한 *CSRF_CHECK_GETS* 가 true로 설정된 경우, 이 경우 레퍼러 헤더 검사를 수행합니다. *CSRF_CHECK_GETS* 이(가) *web.xml* 파일을 만들 수 있습니다.
 
 1. Forms 서버는 요청된 URI가에 있는지 허용 목록에 추가하다 확인합니다.
 
@@ -704,13 +703,13 @@ JEE의 AEM Forms은 레퍼러 필터 기능을 사용하여 CSRF 공격을 차�
 
 ### 레퍼러 필터링 관리 {#managing-referer-filtering}
 
-JEE의 AEM Forms은 서버 리소스에 대한 액세스가 허용되는 레퍼러를 지정하는 레퍼러 필터를 제공합니다. 기본적으로 레퍼러 필터는 *CSRF_CHECK_GETS*&#x200B;가 true로 설정된 경우가 아니면 안전한 HTTP 메서드(예: GET)을 사용하는 요청을 필터링하지 않습니다. 허용된 레퍼러 항목의 포트 번호가 0으로 설정된 경우, JEE의 AEM Forms에서는 포트 번호에 관계없이 해당 호스트의 레퍼러가 있는 모든 요청을 허용합니다. 포트 번호를 지정하지 않으면 기본 포트 80(HTTP) 또는 포트 443(HTTPS)의 요청만 허용됩니다. 허용된 레퍼러 목록의 모든 항목이 삭제된 경우 레퍼러 필터링이 비활성화됩니다.
+JEE의 AEM Forms은 서버 리소스에 대한 액세스가 허용되는 레퍼러를 지정하는 레퍼러 필터를 제공합니다. 기본적으로 레퍼러 필터는 안전한 HTTP 메서드(예: GET)을 사용하는 요청을 필터링하지 않습니다 *CSRF_CHECK_GETS* 가 true로 설정된 경우에만 추적됩니다. 허용된 레퍼러 항목의 포트 번호가 0으로 설정된 경우, JEE의 AEM Forms에서는 포트 번호에 관계없이 해당 호스트의 레퍼러가 있는 모든 요청을 허용합니다. 포트 번호를 지정하지 않으면 기본 포트 80(HTTP) 또는 포트 443(HTTPS)의 요청만 허용됩니다. 허용된 레퍼러 목록의 모든 항목이 삭제된 경우 레퍼러 필터링이 비활성화됩니다.
 
-문서 서비스를 처음 설치하면 허용된 레퍼러 목록이 문서 서비스가 설치된 서버의 주소로 업데이트됩니다. 서버 항목에는 서버 이름, IPv4 주소, IPv6이 활성화된 경우 IPv6 주소, 루프백 주소 및 localhost 항목이 포함됩니다. 허용된 레퍼러 목록에 추가된 이름은 호스트 운영 체제에서 반환됩니다. 예를 들어 IP 주소가 10.40.54.187인 서버에는 다음 항목이 포함됩니다. `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0` 호스트 운영 체제에서 참조하는 정규화되지 않은 이름(IPv4 주소, IPv6 주소 또는 정규화된 도메인 이름이 없는 이름)에 대해서는 허용 목록에 추가하다 업데이트되지 않습니다. 비즈니스 환경에 맞게 허용된 레퍼러 목록을 수정합니다. 기본 허용된 레퍼러 목록과 함께 프로덕션 환경에 양식 서버를 배포하지 마십시오. 허용된 레퍼러, 레퍼러 예외 또는 URI를 수정한 후 변경 사항이 적용되도록 서버를 다시 시작해야 합니다.
+문서 서비스를 처음 설치하면 허용된 레퍼러 목록이 문서 서비스가 설치된 서버의 주소로 업데이트됩니다. 서버 항목에는 서버 이름, IPv4 주소, IPv6이 활성화된 경우 IPv6 주소, 루프백 주소 및 localhost 항목이 포함됩니다. 허용된 레퍼러 목록에 추가된 이름은 호스트 운영 체제에서 반환됩니다. 예를 들어 IP 주소가 10.40.54.187인 서버에는 다음 항목이 포함됩니다. `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. 호스트 운영 체제에서 참조하는 정규화되지 않은 이름(IPv4 주소, IPv6 주소 또는 정규화된 도메인 이름이 없는 이름)에 대해서는 허용 목록에 추가하다 업데이트되지 않습니다. 비즈니스 환경에 맞게 허용된 레퍼러 목록을 수정합니다. 기본 허용된 레퍼러 목록과 함께 프로덕션 환경에 양식 서버를 배포하지 마십시오. 허용된 레퍼러, 레퍼러 예외 또는 URI를 수정한 후 변경 사항이 적용되도록 서버를 다시 시작해야 합니다.
 
 **허용된 레퍼러 목록 관리**
 
-관리 콘솔의 사용자 관리 인터페이스에서 허용되는 레퍼러 목록을 관리할 수 있습니다. 사용자 관리 인터페이스는 목록을 생성, 편집 또는 삭제하는 기능을 제공합니다. 허용되는 레퍼러 목록 작업에 대한 자세한 내용은 *관리 도움말*&#x200B;의 * [CSRF 공격 방지](/help/forms/using/admin-help/preventing-csrf-attacks.md)* 섹션을 참조하십시오.
+관리 콘솔의 사용자 관리 인터페이스에서 허용되는 레퍼러 목록을 관리할 수 있습니다. 사용자 관리 인터페이스는 목록을 생성, 편집 또는 삭제하는 기능을 제공합니다. * 를 참조하십시오. [CSRF 공격 방지](/help/forms/using/admin-help/preventing-csrf-attacks.md)* 섹션 *관리 도움말* 를 참조하십시오.
 
 **허용된 레퍼러 예외 및 허용된 URI 목록 관리**
 
@@ -727,37 +726,37 @@ JEE의 AEM Forms에서는 허용된 레퍼러 예외 목록 및 허용된 URI �
 
 API에 대한 자세한 내용은* JEE API Reference에서 AEM Forms 를 참조하십시오.
 
-글로벌 수준의 허용된 레퍼러 예외에 대해 ***LC_GLOBAL_ALLOWED_REFERRER_EXCEPTION*** 목록을 사용하여 모든 응용 프로그램에 적용할 수 있는 예외를 정의합니다. 이 목록에는 절대 경로(예: `/index.html`) 또는 상대 경로(예: `/sample/`) 정규 표현식을 상대 URI 끝에 추가할 수도 있습니다(예: ). `/sample/(.)*`
+를 사용하십시오 ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** 모든 응용 프로그램에 적용할 수 있는 예외를 정의하기 위한 글로벌 수준의 허용된 레퍼러 예외 목록 이 목록에는 절대 경로(예: `/index.html`) 또는 상대 경로(예: `/sample/`). 정규 표현식을 상대 URI 끝에 추가할 수도 있습니다(예: ). `/sample/(.)*`.
 
-***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** 목록 ID는 `adobe-usermanager-client.jar`에 있는 `com.adobe.idp.um.api` 네임스페이스의 `UMConstants` 클래스에 상수로 정의됩니다. AEM Forms API를 사용하여 이 목록을 생성, 수정 또는 편집할 수 있습니다. 예를 들어, 전역 허용 레퍼러 예외 목록을 만들려면 다음을 사용합니다.
+다음 ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** 목록 ID는 `UMConstants` 클래스 `com.adobe.idp.um.api` 네임스페이스, 에 있음 `adobe-usermanager-client.jar`. AEM Forms API를 사용하여 이 목록을 생성, 수정 또는 편집할 수 있습니다. 예를 들어, 전역 허용 레퍼러 예외 목록을 만들려면 다음을 사용합니다.
 
 ```java
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
 ```
 
-응용 프로그램별 예외에 대해 ***CSRF_ALLOWED_REFERRER_EXCEPTIONS*** 목록을 사용합니다.
+를 사용하십시오 ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** 애플리케이션별 예외 목록
 
 **레퍼러 필터 비활성화**
 
 레퍼러 필터가 Forms 서버에 대한 액세스를 완전히 차단하고 허용된 레퍼러 목록을 편집할 수 없는 경우 서버 시작 스크립트를 업데이트하고 레퍼러 필터링을 비활성화할 수 있습니다.
 
-시작 스크립트에 `-Dlc.um.csrffilter.disabled=true` JAVA 인수를 포함하고 서버를 다시 시작합니다. 허용된 레퍼러 목록을 적절히 다시 구성한 후 JAVA 인수를 삭제해야 합니다.
+다음을 포함합니다 `-Dlc.um.csrffilter.disabled=true` 시작 스크립트의 JAVA 인수를 사용하고 서버를 다시 시작합니다. 허용된 레퍼러 목록을 적절히 다시 구성한 후 JAVA 인수를 삭제해야 합니다.
 
 **사용자 지정 WAR 파일에 대한 레퍼러 필터링**
 
-비즈니스 요구 사항을 충족하기 위해 JEE의 AEM Forms에서 사용할 사용자 정의 WAR 파일을 만들었을지도 모릅니다. 사용자 지정 WAR 파일에 대해 레퍼러 필터링을 활성화하려면 WAR의 클래스 경로에 ***adobe-usermanager-client.jar***&#x200B;을 포함시키고 다음 매개 변수를 사용하여* web.xml* 파일에 필터 항목을 포함하십시오.
+비즈니스 요구 사항을 충족하기 위해 JEE의 AEM Forms에서 사용할 사용자 정의 WAR 파일을 만들었을지도 모릅니다. 사용자 지정 WAR 파일에 대해 레퍼러 필터링을 활성화하려면 다음을 포함합니다. ***adobe-usermanager-client.jar*** WAR의 클래스 경로에서 다음 매개 변수를 사용하여* web.xml* 파일에 필터 항목을 포함합니다.
 
-**CSRF_CHECK_** GETS는 GET 요청에 대한 레퍼러 확인을 제어합니다. 이 매개 변수가 정의되지 않으면 기본값이 false로 설정됩니다. 이 매개 변수는 GET 요청을 필터링하려는 경우에만 포함합니다.
+**CSRF_CHECK_GETS** 는 GET 요청에 대한 레퍼러 확인을 제어합니다. 이 매개 변수가 정의되지 않으면 기본값이 false로 설정됩니다. 이 매개 변수는 GET 요청을 필터링하려는 경우에만 포함합니다.
 
-**CSRF_ALLOWED_REFERER_** EXCEPTIONS는 허용된 레퍼러 예외 목록의 ID입니다. 레퍼러 필터는 목록 ID로 식별된 목록의 레퍼러에서 시작된 요청이 Forms 서버에서 리소스를 호출하지 못하도록 합니다.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** 는 허용된 레퍼러 예외 목록의 ID입니다. 레퍼러 필터는 목록 ID로 식별된 목록의 레퍼러에서 시작된 요청이 Forms 서버에서 리소스를 호출하지 못하도록 합니다.
 
-**CSRF_ALLOWED_URIS_LIST_** NAME은 허용된 URI 목록의 ID입니다. 레퍼러 필터는 요청에 있는 레퍼러 헤더의 값에 관계없이 목록 ID로 식별되는 목록에 있는 리소스에 대한 요청을 차단하지 않습니다.
+**CSRF_ALLOWED_URIS_LIST_NAME** 는 허용된 URI 목록의 ID입니다. 레퍼러 필터는 요청에 있는 레퍼러 헤더의 값에 관계없이 목록 ID로 식별되는 목록에 있는 리소스에 대한 요청을 차단하지 않습니다.
 
-**CSRF_ALLOW_NULL_** REFERRER는 레퍼러가 null이거나 없을 때 레퍼러 필터 동작을 제어합니다. 이 매개 변수가 정의되지 않으면 기본값이 false로 설정됩니다. Null 레퍼러를 허용하려는 경우에만 이 매개 변수를 포함하십시오. null 레퍼러를 허용하면 일부 유형의 교차 사이트 요청 위조 공격이 허용될 수 있습니다.
+**CSRF_ALLOW_NULL_REFERER** 레퍼러가 null이거나 없을 때 레퍼러 필터 동작을 제어합니다. 이 매개 변수가 정의되지 않으면 기본값이 false로 설정됩니다. Null 레퍼러를 허용하려는 경우에만 이 매개 변수를 포함하십시오. null 레퍼러를 허용하면 일부 유형의 교차 사이트 요청 위조 공격이 허용될 수 있습니다.
 
-**CSRF_NULL_REFERRER_** EXCEPTIONS는 레퍼러가 null일 때 레퍼러 검사가 수행되지 않는 URI 목록입니다. 이 매개 변수는 *CSRF_ALLOW_NULL_REFERER*&#x200B;이 false로 설정된 경우에만 활성화됩니다. 목록에서 여러 URI를 쉼표로 구분합니다.
+**CSRF_NULL_REFERER_EXCEPTIONS** 는 레퍼러가 null일 때 레퍼러 검사가 수행되지 않는 URI 목록입니다. 이 매개 변수는 *CSRF_ALLOW_NULL_REFERER* 가 false로 설정되어 있습니다. 목록에서 여러 URI를 쉼표로 구분합니다.
 
-다음은 ***SAMPLE*** WAR 파일에 대한 *web.xml* 파일의 필터 항목의 예입니다.
+다음은 *web.xml* 파일 ***샘플*** WAR 파일:
 
 ```java
 <filter> 
@@ -889,7 +888,7 @@ CSRF 필터에 의해 올바른 서버 요청이 차단되는 경우 다음 중 
 
 ### 애플리케이션 서버의 포트 {#ports-for-application-servers}
 
-이 섹션에서는 지원되는 각 애플리케이션 서버 유형에 대한 기본 포트(및 대체 구성 범위)에 대해 설명합니다. 이러한 포트는 JEE에서 AEM Forms을 실행하는 애플리케이션 서버에 연결할 수 있도록 허용하려는 네트워크 기능에 따라 내부 방화벽에서 활성화하거나 비활성화해야 합니다.
+이 섹션에서는 지원되는 각 애플리케이션 서버 유형에 대한 기본 포트(및 대체 구성 범위)에 대해 설명합니다. 이러한 포트는 JEE에서 AEM Forms을 실행하는 애플리케이션 서버에 연결하는 클라이언트를 허용하려는 네트워크 기능에 따라 내부 방화벽에서 활성화하거나 비활성화해야 합니다.
 
 >[!NOTE]
 >
@@ -953,11 +952,11 @@ JEE의 AEM Forms에 필요한 WebSphere 포트에 대한 자세한 내용은 Web
 
 ### SSL 구성 {#configuring-ssl}
 
-JEE 물리적 아키텍처의 [AEM Forms 섹션에 설명된 물리적 아키텍처를 참조하려면 사용하려는 모든 연결에 대해 SSL을 구성해야 합니다](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture). 특히 네트워크에서 사용자 자격 증명이 노출되지 않도록 모든 SOAP 연결을 SSL을 통해 수행해야 합니다.
+섹션에 설명된 물리적 아키텍처를 참조합니다. [JEE 물리적 아키텍처의 AEM Forms](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)를 사용하려는 모든 연결에 대해 SSL을 구성해야 합니다. 특히 네트워크에서 사용자 자격 증명이 노출되지 않도록 모든 SOAP 연결을 SSL을 통해 수행해야 합니다.
 
-JBoss, WebLogic 및 WebSphere에서 SSL을 구성하는 방법에 대한 지침은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_64)에서 &quot;SSL 구성&quot;을 참조하십시오.
+JBoss, WebLogic 및 WebSphere에서 SSL을 구성하는 방법에 대한 지침은 [관리 도움말](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-AEM Forms 서버에 대해 구성된 JVM(Java Virtual Machine)으로 인증서를 가져오는 방법에 대한 지침은 [AEM Forms Workbench 도움말](http://www.adobe.com/go/learn_aemforms_workbench_65)에서 상호 인증 섹션을 참조하십시오.
+AEM Forms 서버에 대해 구성된 JVM(Java Virtual Machine)으로 인증서를 가져오는 방법에 대한 지침은 [AEM Forms Workbench 도움말](http://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### SSL 리디렉션 구성 {#configuring-ssl-redirect}
 
@@ -971,9 +970,9 @@ WebSphere 또는 WebLogic에 대한 SSL 리디렉션을 구성하려면 애플�
 
 1. 편집할 JBOSS_HOME/standalone/configuration/standalone.xml 파일을 엽니다.
 
-   &lt;하위 시스템 xmlns=&quot;urn:jboss:domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;> 요소 다음에 다음 세부 정보를 추가합니다.
+   다음 이후 &lt;subsystem xmlns=&quot;urn&lt;span id=&quot; translate=&quot;no&quot; />도메인:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;> 요소에서 다음 세부 정보를 추가합니다.:jboss:
 
-   &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot; />
+   &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot;/>
 
 1. https 커넥터 요소에 다음 코드를 추가합니다.
 
@@ -995,14 +994,14 @@ JEE의 AEM Forms 턴키 설치는 기본적으로 로컬 시스템 계정을 사
 
 #### 관리자가 아닌 계정을 사용하여 응용 프로그램 서버 실행 {#run-the-application-server-using-a-non-administrative-account}
 
-1. Microsoft Management Console(MMC)에서 다음과 같이 로그인할 Forms Server 서비스의 로컬 사용자를 만듭니다.
+1. MMC(Microsoft Management Console)에서 다음과 같이 로그인할 Forms 서버 서비스의 로컬 사용자를 만듭니다.
 
-   * **사용자가 암호를 변경할 수 없습니다**.
-   * **Member Of** 탭에서 사용자 그룹이 나열되는지 확인합니다.
+   * 선택 **사용자가 암호를 변경할 수 없습니다.**.
+   * 설정 **멤버** 탭에서 사용자 그룹이 나열되는지 확인합니다.
 
-1. **설정** > **관리 도구** > **서비스**&#x200B;를 선택합니다.
+1. 선택 **설정** > **관리 도구** > **서비스**.
 1. 응용 프로그램 서버 서비스를 두 번 클릭하고 서비스를 중지합니다.
-1. **로그온** 탭에서 **이 계정**&#x200B;을 선택하고 생성한 사용자 계정을 찾은 다음 계정에 대한 암호를 입력합니다.
+1. 설정 **로그온** 탭, 선택 **이 계정**&#x200B;만든 사용자 계정을 찾아 계정의 암호를 입력합니다.
 1. 로컬 보안 설정 창의 사용자 권한 할당에서 Forms 서버가 실행 중인 사용자 계정에 다음 권한을 지정합니다.
 
    * 터미널 서비스를 통해 로그온 거부
@@ -1010,12 +1009,11 @@ JEE의 AEM Forms 턴키 설치는 기본적으로 로컬 시스템 계정을 사
    * 서비스로 로그온(이미 설정되어야 함)
 
 1. 새 사용자 계정에 다음 디렉토리에 대한 수정 권한을 부여합니다.
-   * **GDS(Global Document Storage) 디렉토리**: GDS 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 경우 이 위치는 기본적으로 `[JBoss root]/server/[type]/svcnative/DocumentStorage`에 있는 응용 프로그램 서버 설치 아래의 디렉터리로 설정됩니다
-   * **CRX-Repository 디렉토리**: 기본 위치는 입니다.  `[AEM-Forms-installation-location]\crx-repository`
+   * **GDS(글로벌 문서 저장소) 디렉토리**: GDS 디렉토리의 위치는 AEM Forms 설치 프로세스 중에 수동으로 구성됩니다. 설치 중에 위치 설정이 비어 있는 경우 이 위치는 응용 프로그램 서버 설치 시 기본적으로 디렉터리로 설정됩니다. `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **CRX-Repository 디렉토리**: 기본 위치는 입니다. `[AEM-Forms-installation-location]\crx-repository`
    * **AEM Forms 임시 디렉토리**:
       * (Windows) 환경 변수에 설정된 TMP 또는 TEMP 경로
-      * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리
-UNIX 기반 시스템에서는 비루트 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
+      * (AIX, Linux 또는 Solaris) 로그인한 사용자의 홈 디렉토리 UNIX 기반 시스템에서는 루트 이외의 사용자가 다음 디렉토리를 임시 디렉토리로 사용할 수 있습니다.
       * (Linux) /var/tmp 또는 /usr/tmp
       * (AIX) /tmp 또는 /usr/tmp
       * (Solaris) /var/tmp 또는 /usr/tmp
@@ -1066,7 +1064,7 @@ https://<servername>:8080/um/
 
 ### 디렉터리 검색 사용 안 함 {#disable_directory_browsing-1}
 
-다음 예제와 같이 weblogic.xml 파일의 index-directories 속성을 `false`로 설정합니다.
+weblogic.xml 파일의 index-directories 속성을 로 설정합니다. `false`를 채울 수 있습니다.
 
 ```xml
 <container-descriptor> 
@@ -1085,13 +1083,13 @@ https://<servername>:8080/um/
 
 ### 디렉터리 검색 사용 안 함 {#disable_directory_browsing-2}
 
-ibm-web-ext.xml 파일의 `directoryBrowsingEnabled` 속성을 `false`로 설정합니다.
+설정 `directoryBrowsingEnabled` ibm-web-ext.xml 파일의 속성을 `false`.
 
 ### WebSphere 관리 보안 사용 {#enable-websphere-administrative-security}
 
 1. WebSphere 관리 콘솔에 로그인합니다.
-1. 탐색 트리에서 **Security** > **전역 보안**&#x200B;으로 이동합니다.
-1. **관리 보안 사용**&#x200B;을 선택합니다.
-1. **응용 프로그램 보안 사용** 및 **Java 2 보안 사용**&#x200B;을 모두 선택 취소합니다.
-1. **확인** 또는 **적용**&#x200B;을 클릭합니다.
-1. **메시지** 상자에서 **마스터 구성에 직접 저장**&#x200B;을 클릭합니다.
+1. 탐색 트리에서 로 이동합니다. **보안** > **글로벌 보안**
+1. 선택 **관리 보안 활성화**.
+1. 둘 다 선택 취소합니다 **응용 프로그램 보안 사용** 및 **Java 2 보안 사용**.
+1. 클릭 **확인** 또는 **적용**.
+1. 에서 **메시지** 상자를 클릭하여 **마스터 구성에 직접 저장**.

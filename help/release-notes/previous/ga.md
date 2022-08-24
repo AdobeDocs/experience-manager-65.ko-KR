@@ -1,7 +1,8 @@
 ---
 title: 용 일반 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 74%
@@ -452,7 +453,7 @@ Adobe는 고객 중심 버그 해결 및 개선 요청 개발의 수집, 우선 
 * 괄호 코드 편집기 확장([자세히 보기 및 다운로드](/help/sites-developing/aem-brackets.md))
 * Maven/Gradle 종속성([다운로드 링크](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.0/))
 
-**Sites**
+**사이트**
 
 * 쿠어 구성 요소([GitHub 프로젝트](https://github.com/adobe/aem-core-wcm-components))
 * We.Retail 참조 구현([자세히 보기](/help/sites-developing/we-retail.md))
@@ -552,7 +553,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 1. 파일을 저장하고 AEM 인스턴스를 다시 시작합니다.
 
-### 사이트 {#sites}
+### Sites {#sites}
 
 * **페이지 버전 사용**: [페이지가 이동되면 이동 전에 만들어진 버전에서 더 이상 미리 보기를 수행할 수 없습니다](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 

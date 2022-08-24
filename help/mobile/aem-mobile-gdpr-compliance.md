@@ -1,20 +1,20 @@
 ---
 title: AEM Mobile - GDPR 준비 완료
-seo-title: AEM Mobile - GDPR 준비 완료
+seo-title: AEM Mobile - GDPR Readiness
 description: '"AEM Mobile - GDPR 준비 완료"'
-seo-description: 'null'
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '692'
 ht-degree: 5%
 
 ---
 
-# AEM Mobile - GDPR 준비 {#aem-mobile-gdpr-readiness}
+# AEM Mobile - GDPR 준비 완료 {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -28,7 +28,7 @@ AEM Mobile은 GDPR 준수 의무와 관련하여 고객을 지원할 준비가 �
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe의 디지털 게시 제품(AEM Mobile보다 우선함)은 Adobe의 GDPR 준비 이니셔티브를 지원합니다. [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html)을 참조하십시오. 다음은 GDPR 요청을 시작하는 Adobe 작업 방법을 포함하여 Digital Publishing Suite 제품의 GDPR 관련 기능에 대한 지원에 대한 세부 사항을 제공합니다.
+Adobe의 디지털 게시 제품(AEM Mobile보다 우선함)은 Adobe의 GDPR 준비 이니셔티브를 지원합니다. 자세한 내용은 [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). 다음은 GDPR 요청을 시작하는 Adobe 작업 방법을 포함하여 Digital Publishing Suite 제품의 GDPR 관련 기능에 대한 지원에 대한 세부 사항을 제공합니다.
 
 AEM Mobile이 이전 Digital Publishing Suite 제품과 혼동하지 않도록 하려면 여기에서 Digital Publishing Suite 제품에 로그인할 수 있습니다.
 
@@ -42,17 +42,17 @@ Digital Publishing Suite에 대한 GDPR 요청을 시작하려면 Adobe 고객 �
 
 필수:
 
-* 고객의 계약 ID:*dpsc-contractId*
+* 고객의 계약 ID: *dpsc-contractId*
 
 다음 중 하나 이상을 제공합니다.
 
-* 최종 사용자의 고객이 제공한 OAuth ID(고객의 직접 자격 시스템에서 사용되는 ID):*dpsc-directEntitlementId*
-* Windows 앱 사용자의 경우 최종 사용자의 앱스토어 ID는 다음과 같습니다.*dpsc-windowsAppStoreId*
-* 최종 사용자가 DPS 앱과 상호 작용하는 데 사용한 이메일 주소입니다.*전자 메일*
+* 최종 사용자의 고객이 제공한 OAuth ID(고객의 직접 자격 시스템에서 사용되는 ID): *dpsc-directEntitlementId*
+* Windows 앱 사용자의 경우 최종 사용자의 App Store ID는 다음과 같습니다. *dpsc-windowsAppStoreId*
+* 최종 사용자가 DPS 앱과 상호 작용하는 데 사용한 이메일 주소입니다. *이메일*
 
 ### 자주 묻는 질문(FAQ) {#frequently-asked-questions-faq}
 
-**Adobe이 DELETE 요청을 시작할 때 내 앱스토어 구매를 삭제합니까?**
+**Adobe이 DELETE 요청을 시작할 때 내 App Store 구매를 삭제합니까?**
 
 Adobe은 앱스토어 구매(구독 등)에 대한 정보를 삭제합니다. 그러나 앱스토어에서는 여전히 구매를 기록하게 될 것이다. 앱(최종 사용자)이 앱스토어에 로그인되어 있으면 해당 수금을 다시 주운 다음 Adobe으로 전송되고, 그 다음 구매는 새 구매로 간주되어 다시 액세스할 수 있도록 앱에서 복원됩니다.
 
@@ -72,7 +72,7 @@ Adobe에는 특정 사용자에게 직접 연결하는 정보가 거의 없습�
 
 없음. 추적되는 데이터가 있지만 앱 수준(개인 아님)에 있습니다. 여기에는 시작, 충돌, 닫기, 활동, 구매 또는 Folio 오버레이와 같은 이벤트가 포함됩니다. 지리적 위치, 이름, 장치 ID 또는 IP 주소는 추적되지 않습니다.
 
-**최종 사용자가 정보를 제공했지만 찾을 수 없습니다. 왜?**
+**최종 사용자가 정보를 제공했지만 찾을 수 없습니다. 왜 안되죠?**
 
 Digital Publishing Suite 제품이 발전함에 따라 서비스 구현이 변경되었으며 더 많은 데이터가 난독화되었습니다. 사용자가 제공한 데이터를 사용하여 데이터를 찾을 수 없는 경우 사용자의 데이터를 해당 사람에게 다시 추적할 수 없음을 의미합니다.
 
@@ -85,10 +85,10 @@ GDPR 요청을 시작하려면 Adobe 고객 지원 센터에 문의하십시오.
 #### 입력: {#inputs}
 
 ```
-dpsc-contractId = “12345-1234-12416234” 
-directEntitlementId = “1234-1234-1234” 
-windowsAppStoreId = “testWinAppStoreId” 
-email = “test@what.com”
+dpsc-contractId = "12345-1234-12416234" 
+directEntitlementId = "1234-1234-1234" 
+windowsAppStoreId = "testWinAppStoreId" 
+email = "test@what.com"
 ```
 
 #### 출력 {#outputs}

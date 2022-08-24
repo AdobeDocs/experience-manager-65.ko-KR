@@ -1,8 +1,8 @@
 ---
 title: 원격을 사용하여 AEM Forms 호출
-seo-title: 원격을 사용하여 AEM Forms 호출
+seo-title: Invoking AEM Forms using Remoting
 description: Remoting을 사용하여 AEM Forms 프로세스를 호출하여 Workbench에서 만든 프로세스를 호출합니다. Flex으로 빌드된 클라이언트 애플리케이션에서 AEM Forms 프로세스를 호출할 수 있습니다.
-seo-description: Remoting을 사용하여 AEM Forms 프로세스를 호출하여 Workbench에서 만든 프로세스를 호출합니다. Flex으로 빌드된 클라이언트 애플리케이션에서 AEM Forms 프로세스를 호출할 수 있습니다.
+seo-description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
 uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
-source-wordcount: '4661'
+source-wordcount: '4628'
 ht-degree: 0%
 
 ---
 
-# Remoting {#invoking-aem-forms-using-remoting}을(를) 사용하여 AEM Forms 호출
+# 원격을 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-remoting}
 
 **이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms용입니다.**
 
@@ -32,7 +32,7 @@ Workbench에서 만든 프로세스는 원격을 사용하여 호출할 수 있�
 >
 >AEM Forms 서비스가 익명 액세스를 허용하도록 구성되지 않은 경우 Flex 클라이언트의 요청이 웹 브라우저 문제를 초래할 수 있습니다. 사용자는 사용자 이름과 암호 자격 증명을 입력해야 합니다.
 
-Remoting을 사용하여 이름이 `MyApplication/EncryptDocument`인 다음 AEM Forms 단기 프로세스를 호출할 수 있습니다. 입력 및 출력 값과 같은 이 프로세스에 대한 자세한 내용은 [단기 프로세스 예](/help/forms/developing/aem-forms-processes.md)를 참조하십시오.
+다음과 같은 AEM Forms 단기 프로세스가 이름이 지정됩니다. `MyApplication/EncryptDocument`원격 을 사용하여 호출할 수 있습니다. 입력 및 출력 값과 같은 이 프로세스에 대한 자세한 내용은 [단기 프로세스 예](/help/forms/developing/aem-forms-processes.md))
 
 ![iu_iu_encryptdocumprocess2](assets/iu_iu_encryptdocumentprocess2.png)
 
@@ -42,19 +42,19 @@ Remoting을 사용하여 이름이 `MyApplication/EncryptDocument`인 다음 AEM
 
 이 프로세스가 호출되면 다음 작업을 수행합니다.
 
-1. 입력 값으로 전달된 보안되지 않은 PDF 문서를 가져옵니다. 이 작업은 `SetValue` 작업을 기반으로 합니다. 입력 매개 변수의 이름은 `inDoc`이고 해당 데이터 유형은 `document`입니다. (`document` 데이터 유형은 Workbench 내에서 사용할 수 있는 데이터 유형입니다.)
-1. 암호로 PDF 문서를 암호화합니다. 이 작업은 `PasswordEncryptPDF` 작업을 기반으로 합니다. 이 프로세스의 출력 값 이름은 `outDoc`이며, 암호로 암호화된 PDF 문서를 나타냅니다. outDoc의 데이터 유형은 `document`입니다.
-1. 암호로 암호화된 PDF 문서를 PDF 파일로 로컬 파일 시스템에 저장합니다. 이 작업은 `WriteDocument` 작업을 기반으로 합니다.
+1. 입력 값으로 전달되는 비보안 PDF 문서를 가져옵니다. 이 작업은 `SetValue` 작업. 입력 매개 변수의 이름은 `inDoc` 및 해당 데이터 유형이 `document`. (다음 `document` 데이터 유형은 Workbench 내에서 사용할 수 있는 데이터 유형입니다.
+1. 암호로 PDF 문서를 암호화합니다. 이 작업은 `PasswordEncryptPDF` 작업. 이 프로세스의 출력 값 이름은 다음과 같습니다 `outDoc` 및 은 암호로 암호화된 PDF 문서를 나타냅니다. outDoc의 데이터 유형은 다음과 같습니다 `document`.
+1. 암호로 암호화된 PDF 문서를 PDF 파일로 로컬 파일 시스템에 저장합니다. 이 작업은 `WriteDocument` 작업.
 
 >[!NOTE]
 >
->`MyApplication/EncryptDocument` 프로세스는 기존 AEM Forms 프로세스를 기반으로 하지 않습니다. 코드 예제와 함께 진행하려면 Workbench를 사용하여 `MyApplication/EncryptDocument` 프로세스를 만듭니다.
+>다음 `MyApplication/EncryptDocument` 프로세스는 기존 AEM Forms 프로세스를 기반으로 하지 않습니다. 코드 예제와 함께 따르려면 다음과 같은 프로세스를 만드십시오. `MyApplication/EncryptDocument` 워크벤치 사용.
 
 >[!NOTE]
 >
->Remoting을 사용하여 오래 지속되는 프로세스를 호출하는 방법에 대한 자세한 내용은 [인간 중심의 장기 프로세스 호출](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)을 참조하십시오.
+>원격을 사용하여 오래 지속되는 프로세스를 호출하는 방법에 대한 자세한 내용은 [인간 중심 장기 프로세스 호출](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
-**참고 항목**
+**추가 참조**
 
 [AEM Forms Flex 라이브러리 파일 포함](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
@@ -72,21 +72,21 @@ Remoting을 사용하여 이름이 `MyApplication/EncryptDocument`인 다음 AEM
 
 [HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
-Flex 그래프 컨트롤에서 프로세스 데이터를 표시하는 방법에 대한 자세한 내용은 [Flex 그래프에 AEM Forms 프로세스 데이터 표시](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html)를 참조하십시오.
+Flex 그래프 컨트롤에서 프로세스 데이터를 표시하는 방법에 대한 자세한 내용은 [Flex 그래프에 AEM Forms 프로세스 데이터 표시](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html).
 
 >[!NOTE]
 >
->*crossdomain.xml 파일을 적절한 위치에 배치해야 합니다. 예를 들어, JBoss에 AEM Forms을 배포한 경우 이 파일을 다음 위치에 배치하십시오.&lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war.*
+>*crossdomain.xml 파일을 적절한 위치에 배치해야 합니다. 예를 들어, JBoss에 AEM Forms을 배포한 경우 이 파일을 다음 위치에 배치하십시오. &lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war*
 
-## AEM Forms Flex 라이브러리 파일 {#including-the-aem-forms-flex-library-file} 포함
+## AEM Forms Flex 라이브러리 파일 포함 {#including-the-aem-forms-flex-library-file}
 
 Remoting을 사용하여 AEM Forms 프로세스를 프로그래밍 방식으로 호출하려면 adobe-remoting-provider.swc 파일을 Flex 프로젝트의 클래스 경로에 추가합니다. 이 SWC 파일은 다음 위치에 있습니다.
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-   여기서 &lt;*install_directory* 는 AEM Forms이 설치된 디렉토리입니다.
+   위치 &lt;*install_directory*> 는 AEM Forms이 설치된 디렉토리입니다.
 
-**참고 항목**
+**추가 참조**
 
 [AEM Forms Remoting을 사용하여 AEM Forms 호출(AEM Forms에서 더 이상 사용되지 않음)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -96,15 +96,15 @@ Remoting을 사용하여 AEM Forms 프로세스를 프로그래밍 방식으로 
 
 [Flex으로 빌드된 클라이언트 애플리케이션 인증](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
-## 원격 {#handling-documents-with-remoting} 을 사용하여 문서 처리
+## 원격을 사용하여 문서 처리 {#handling-documents-with-remoting}
 
-AEM Forms에서 사용되는 가장 중요한 비원시 Java 유형 중 하나는 `com.adobe.idp.Document` 클래스입니다. AEM Forms 작업을 호출하는 데에는 일반적으로 문서가 필요합니다. 주로 PDF 문서이지만 SWF, HTML, XML 또는 DOC 파일과 같은 다른 문서 유형을 포함할 수 있습니다. (Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)를 사용하여 AEM Forms 서비스에 데이터 전달 을 참조하십시오.)[
+AEM Forms에서 사용되는 가장 중요한 비원시 Java 유형 중 하나는 `com.adobe.idp.Document` 클래스 이름을 지정합니다. AEM Forms 작업을 호출하는 데에는 일반적으로 문서가 필요합니다. 주로 PDF 문서이지만 SWF, HTML, XML 또는 DOC 파일과 같은 다른 문서 유형을 포함할 수 있습니다. (자세한 내용은 [Java API를 사용하여 AEM Forms 서비스에 데이터 전달](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api))
 
-Flex으로 빌드된 클라이언트 응용 프로그램은 문서를 직접 요청할 수 없습니다. 예를 들어 Adobe Reader을 시작하여 PDF 파일을 만드는 URL을 요청할 수 없습니다. PDF 및 Microsoft Word 문서와 같은 문서 유형에 대한 요청은 URL인 결과를 반환합니다. URL의 컨텐츠를 표시하는 것은 클라이언트의 책임입니다. 문서 관리 서비스는 URL 및 콘텐츠 유형 정보를 생성하는 데 도움이 됩니다. XML 문서에 대한 요청은 결과에 있는 전체 XML 문서를 반환합니다.
+Flex으로 빌드된 클라이언트 응용 프로그램은 문서를 직접 요청할 수 없습니다. 예를 들어 Adobe Reader을 실행하여 PDF 파일을 생성하는 URL을 요청할 수 없습니다. PDF 및 Microsoft Word 문서와 같은 문서 유형에 대한 요청은 URL인 결과를 반환합니다. URL의 컨텐츠를 표시하는 것은 클라이언트의 책임입니다. 문서 관리 서비스는 URL 및 콘텐츠 유형 정보를 생성하는 데 도움이 됩니다. XML 문서에 대한 요청은 결과에 있는 전체 XML 문서를 반환합니다.
 
-### 문서를 입력 매개 변수 {#passing-a-document-as-an-input-parameter} 로 전달
+### 문서를 입력 매개 변수로 전달 {#passing-a-document-as-an-input-parameter}
 
-Flex으로 빌드된 클라이언트 애플리케이션은 문서를 AEM Forms 프로세스에 직접 전달할 수 없습니다. 대신 클라이언트 응용 프로그램은 `mx.rpc.livecycle.DocumentReference` ActionScript 클래스의 인스턴스를 사용하여 입력 매개 변수를 `com.adobe.idp.Document` 인스턴스가 필요한 작업에 전달합니다. Flex 클라이언트 응용 프로그램에는 `DocumentReference` 개체를 설정하는 여러 가지 옵션이 있습니다.
+Flex으로 빌드된 클라이언트 애플리케이션은 문서를 AEM Forms 프로세스에 직접 전달할 수 없습니다. 대신 클라이언트 응용 프로그램은 `mx.rpc.livecycle.DocumentReference` 입력 매개 변수를 필요한 작업에 전달하도록 ActionScript 클래스 `com.adobe.idp.Document` 인스턴스. Flex 클라이언트 응용 프로그램에는 `DocumentReference` 개체:
 
 * 문서가 서버에 있고 해당 파일 위치를 알 수 있으면 DocumentReference 개체의 referenceType 속성을 REF_TYPE_FILE로 설정합니다. 다음 예제와 같이 fileRef 속성을 파일의 위치로 설정합니다.
 
@@ -130,13 +130,13 @@ docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
 docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
-* 문서가 서버에 없는 경우 원격 업로드 서블릿을 사용하여 문서를 AEM Forms에 업로드하십시오. AEM Forms의 새로운 기능은 보안 문서를 업로드할 수 있는 기능입니다. 보안 문서를 업로드할 때 *문서 업로드 응용 프로그램 사용자* 역할이 있는 사용자를 사용해야 합니다. 이 역할이 없으면 보안 문서를 업로드할 수 없습니다. 단일 사인온을 사용하여 보안 문서를 업로드하는 것이 좋습니다. ([Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)을 사용하여 프로세스를 호출하려면 보안 문서 전달 을 참조하십시오.)
+* 문서가 서버에 없는 경우 원격 업로드 서블릿을 사용하여 문서를 AEM Forms에 업로드하십시오. AEM Forms의 새로운 기능은 보안 문서를 업로드할 수 있는 기능입니다. 보안 문서를 업로드할 때 *문서 업로드 응용 프로그램 사용자* 역할. 이 역할이 없으면 보안 문서를 업로드할 수 없습니다. 단일 사인온을 사용하여 보안 문서를 업로드하는 것이 좋습니다. (자세한 내용은 [Remoting을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting))
 
 >[!NOTE]
-AEM Forms이 비보안 문서를 업로드할 수 있도록 구성된 경우 문서 업로드 애플리케이션 사용자 역할이 없는 사용자를 사용하여 문서를 업로드할 수 있습니다. 사용자에게 문서 업로드 권한이 있을 수도 있습니다. 그러나 AEM Forms이 보안 문서만 허용하도록 구성된 경우 사용자에게 문서 업로드 애플리케이션 사용자 역할이나 문서 업로드 권한이 있는지 확인합니다. ([보안 및 비보안 문서를 수락하도록 AEM Forms 구성](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)을 참조하십시오.)
+AEM Forms이 비보안 문서를 업로드할 수 있도록 구성된 경우 문서 업로드 애플리케이션 사용자 역할이 없는 사용자를 사용하여 문서를 업로드할 수 있습니다. 사용자에게 문서 업로드 권한이 있을 수도 있습니다. 그러나 AEM Forms이 보안 문서만 허용하도록 구성된 경우 사용자에게 문서 업로드 애플리케이션 사용자 역할이나 문서 업로드 권한이 있는지 확인합니다. (자세한 내용은 [보안 및 비보안 문서를 수락하도록 AEM Forms 구성](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
-지정된 업로드 URL에 표준 Flash 업로드 기능을 사용합니다.`https://SERVER:PORT/remoting/lcfileupload` 그런 다음 `Document` 유형의 입력 매개 변수가 필요한 경우 `DocumentReference` 개체를 사용할 수 있습니다
-` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`원격 빠른 시작은 원격 업로드 서블릿을 사용하여 PDF 파일을 `MyApplication/EncryptDocument`프로세스에 전달합니다. ([AEM Forms에 사용되지 않음) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출 을 참조하십시오.)
+지정된 업로드 URL에 표준 Flash 업로드 기능을 사용합니다. `https://SERVER:PORT/remoting/lcfileupload`. 그런 다음 `DocumentReference` 유형의 입력 매개 변수에 관계없이 개체를 개체 `Document` 예상됨
+` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`원격 빠른 시작은 원격 업로드 서블릿을 사용하여 PDF 파일을 `MyApplication/EncryptDocument`프로세스. (자세한 내용은 [AEM Forms Remoting을 사용하여 (AEM Forms에서 더 이상 사용되지 않음) 비보안 문서를 전달하여 단기 프로세스 호출](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting))
 
 ```java
  
@@ -169,13 +169,13 @@ function completeHandler(event: DataEvent): void  { 
 }
 ```
 
-원격 빠른 시작은 원격 업로드 서블릿을 사용하여 PDF 파일을 `MyApplication/EncryptDocument`프로세스에 전달합니다. ([AEM Forms에 사용되지 않음) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출 을 참조하십시오.)
+원격 빠른 시작은 원격 업로드 서블릿을 사용하여 PDF 파일을 `MyApplication/EncryptDocument`프로세스. (자세한 내용은 [AEM Forms Remoting을 사용하여 (AEM Forms에서 더 이상 사용되지 않음) 비보안 문서를 전달하여 단기 프로세스 호출](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting))
 
-### 문서를 클라이언트 응용 프로그램 {#passing-a-document-back-to-a-client-application}에 다시 전달
+### 클라이언트 응용 프로그램으로 문서를 다시 전달 {#passing-a-document-back-to-a-client-application}
 
-클라이언트 응용 프로그램은 `com.adobe.idp.Document` 인스턴스를 출력 매개 변수로 반환하는 서비스 작업에 대해 `mx.rpc.livecycle.DocumentReference` 유형의 개체를 수신합니다. 클라이언트 응용 프로그램은 Java가 아닌 ActionScript 개체를 처리하므로 Java 기반 Document 개체를 다시 Flex 클라이언트에 전달할 수 없습니다. 대신 서버가 문서의 URL을 생성하여 클라이언트로 다시 전달합니다. `DocumentReference` 개체의 `referenceType` 속성은 컨텐츠가 `DocumentReference` 개체에 있는지 아니면 `DocumentReference.url` 속성의 URL에서 검색해야 하는지를 지정합니다. `DocumentReference.contentType` 속성은 문서의 유형을 지정합니다.
+클라이언트 응용 프로그램이 유형 객체를 수신합니다 `mx.rpc.livecycle.DocumentReference` 를 반환하는 서비스 작업의 경우 `com.adobe.idp.Document` 인스턴스를 출력 매개 변수로 사용합니다. 클라이언트 응용 프로그램은 Java가 아닌 ActionScript 개체를 처리하므로 Java 기반 Document 개체를 다시 Flex 클라이언트에 전달할 수 없습니다. 대신 서버가 문서의 URL을 생성하여 클라이언트로 다시 전달합니다. 다음 `DocumentReference` 개체 `referenceType` 속성은 컨텐츠가 `DocumentReference` 또는 는 `DocumentReference.url` 속성을 사용합니다. 다음 `DocumentReference.contentType` 속성은 문서의 유형을 지정합니다.
 
-**참고 항목**
+**추가 참조**
 
 [AEM Forms Remoting을 사용하여 AEM Forms 호출(AEM Forms에서 더 이상 사용되지 않음)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -187,29 +187,29 @@ function completeHandler(event: DataEvent): void  { 
 
 [Remoting을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
 
-## Remoting {#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting}을 사용하여 비보안 문서를 전달하여 단기 프로세스를 호출하는 중
+## Remoting을 사용하여 비보안 문서를 전달하여 단기 프로세스 호출 {#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting}
 
 Flex으로 빌드된 애플리케이션에서 AEM Forms 프로세스를 호출하려면 다음 작업을 수행합니다.
 
-1. `mx:RemoteObject` 인스턴스를 만듭니다.
-1. `ChannelSet` 인스턴스를 만듭니다.
+1. 만들기 `mx:RemoteObject` 인스턴스.
+1. 만들기 `ChannelSet` 인스턴스.
 1. 필수 입력 값을 전달합니다.
 1. 반환 값을 처리합니다.
 
 >[!NOTE]
-이 섹션에서는 AEM Forms이 비보안 문서를 업로드하도록 구성된 경우 AEM Forms 프로세스를 호출하고 문서를 업로드하는 방법을 설명합니다. AEM Forms 프로세스 호출 및 보안 문서 업로드 방법과 보안 및 비보안 문서를 수락하도록 AEM Forms을 구성하는 방법에 대한 자세한 내용은 [보안 문서 전달을 통해 Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)을 사용하여 프로세스를 호출합니다.
+이 섹션에서는 AEM Forms이 비보안 문서를 업로드하도록 구성된 경우 AEM Forms 프로세스를 호출하고 문서를 업로드하는 방법을 설명합니다. AEM Forms 프로세스를 호출하고 보안 문서를 업로드하는 방법과 보안 및 비보안 문서를 수락하도록 AEM Forms을 구성하는 방법에 대한 자세한 내용은 다음을 참조하십시오 [Remoting을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **mx:RemoteObject 인스턴스 만들기**
 
-Workbench에서 만든 AEM Forms 프로세스를 호출할 `mx:RemoteObject` 인스턴스를 만듭니다. `mx:RemoteObject` 인스턴스를 생성하려면 다음 값을 지정합니다.
+을(를) 만듭니다 `mx:RemoteObject` 워크벤치에 생성된 AEM Forms 프로세스를 호출하는 인스턴스입니다. 을(를) 만들려면 `mx:RemoteObject` 예를 들어 다음 값을 지정합니다.
 
-* **id:**  호출할  `mx:RemoteObject` 프로세스를 나타내는 인스턴스의 이름입니다.
-* **대상:** 호출할 AEM Forms 프로세스의 이름입니다. 예를 들어 `MyApplication/EncryptDocument` 프로세스를 호출하려면 `MyApplication/EncryptDocument` 을 지정합니다.
+* **id:** 의 이름 `mx:RemoteObject` 호출할 프로세스를 나타내는 인스턴스입니다.
+* **대상:** 호출할 AEM Forms 프로세스의 이름입니다. 예를 들어 `MyApplication/EncryptDocument` 프로세스, 지정 `MyApplication/EncryptDocument`.
 * **결과:** 결과를 처리하는 Flex 메서드의 이름입니다.
 
-`mx:RemoteObject` 태그 내에 프로세스의 호출 메소드의 이름을 지정하는 `<mx:method>` 태그를 지정합니다. 일반적으로 Forms 호출 메서드의 이름은 `invoke`입니다.
+내 `mx:RemoteObject` 태그, 지정 `<mx:method>` 프로세스의 호출 메서드 이름을 지정하는 태그입니다. 일반적으로 Forms 호출 메서드의 이름은 `invoke`.
 
-다음 코드 예제에서는 `MyApplication/EncryptDocument` 프로세스를 호출하는 `mx:RemoteObject` 인스턴스를 만듭니다.
+다음 코드 예제에서는 `mx:RemoteObject` 를 호출하는 인스턴스 `MyApplication/EncryptDocument` 프로세스.
 
 ```java
  <mx:RemoteObject id="EncryptDocument" destination="MyApplication/EncryptDocument" result="resultHandler(event);">
@@ -219,7 +219,7 @@ Workbench에서 만든 AEM Forms 프로세스를 호출할 `mx:RemoteObject` 인
 
 **AEM Forms에 채널 만들기**
 
-다음 ActionScript 예제과 같이 클라이언트 애플리케이션은 MXML 또는 ActionScript에서 채널을 지정하여 AEM Forms을 호출할 수 있습니다. 채널은 `AMFChannel`, `SecureAMFChannel`, `HTTPChannel` 또는 `SecureHTTPChannel`여야 합니다.
+다음 ActionScript 예제과 같이 클라이언트 애플리케이션은 MXML 또는 ActionScript에서 채널을 지정하여 AEM Forms을 호출할 수 있습니다. 채널은 `AMFChannel`, `SecureAMFChannel`, `HTTPChannel`, 또는 `SecureHTTPChannel`.
 
 ```java
      ...
@@ -233,13 +233,13 @@ Workbench에서 만든 AEM Forms 프로세스를 호출할 `mx:RemoteObject` 인
      ...
 ```
 
-`ChannelSet` 인스턴스를 `mx:RemoteObject` 인스턴스의 `channelSet` 필드에 할당합니다(이전 코드 예제에서 보듯이). 일반적으로 `ChannelSet.addChannel` 메서드를 호출할 때 정규화된 이름을 지정하지 않고 가져오기 문으로 채널 클래스를 가져옵니다.
+을(를) 지정합니다. `ChannelSet` 에 인스턴스 `mx:RemoteObject` 인스턴스 `channelSet` 필드(이전 코드 예에 표시된 대로). 일반적으로, `ChannelSet.addChannel` 메서드를 사용합니다.
 
 **입력 값 전달**
 
-Workbench에서 만든 프로세스는 0개 이상의 입력 매개 변수를 사용하고 출력 값을 반환할 수 있습니다. 클라이언트 애플리케이션은 `ActionScript` 개체 내에 입력 매개 변수를 AEM Forms 프로세스에 속하는 매개 변수에 해당하는 필드와 함께 전달합니다. `MyApplication/EncryptDocument`(이)라는 단기 프로세스에는 `inDoc`(이)라는 하나의 입력 매개 변수가 필요합니다. 프로세스에 의해 노출된 작업의 이름은 `invoke` (단기 프로세스의 기본 이름)입니다. ([AEM Forms에서 더 이상 사용되지 않는 AEM Forms 호출) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)을 참조하십시오.)
+Workbench에서 만든 프로세스는 0개 이상의 입력 매개 변수를 사용하고 출력 값을 반환할 수 있습니다. 클라이언트 애플리케이션은 `ActionScript` AEM Forms 프로세스에 속하는 매개 변수에 해당하는 필드가 있는 객체입니다. 이름이 인 단기 프로세스 `MyApplication/EncryptDocument`에는 라는 하나의 입력 매개 변수가 필요합니다. `inDoc`. 프로세스에 의해 노출된 작업의 이름은 다음과 같습니다 `invoke` (단기 프로세스의 기본 이름) (자세한 내용은 [AEM Forms Remoting을 사용하여 AEM Forms 호출(AEM Forms에서 더 이상 사용되지 않음)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting))
 
-다음 코드 예제에서는 PDF 문서를 `MyApplication/EncryptDocument` 프로세스에 전달합니다.
+다음 코드 예제에서는 PDF 문서를 `MyApplication/EncryptDocument` 프로세스:
 
 ```java
      ...
@@ -254,11 +254,11 @@ Workbench에서 만든 프로세스는 0개 이상의 입력 매개 변수를 �
      ...
 ```
 
-이 코드 예제에서 `pdfDocument`은 보안되지 않은 PDF 문서를 포함하는 `DocumentReference` 인스턴스입니다. `DocumentReference`에 대한 자세한 내용은 [AEM Forms Remoting](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)을(를) 사용하여 문서 처리(AEM Forms에 사용되지 않음)를 참조하십시오.
+이 코드 예제에서 `pdfDocument` is `DocumentReference` 비보안 PDF 문서를 포함하는 인스턴스입니다. 에 대한 정보 `DocumentReference`를 참조하십시오. [AEM Forms Remoting을 사용하여 문서 처리(AEM Forms에서 더 이상 사용되지 않음)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting).
 
 **특정 버전의 서비스를 호출하는 중**
 
-호출의 매개 변수 맵에서 `_version` 매개 변수를 사용하여 특정 버전의 Forms 서비스를 호출할 수 있습니다. 예를 들어 `MyApplication/EncryptDocument` 서비스의 버전 1.2를 호출하려면 다음을 수행하십시오.
+를 사용하여 특정 버전의 Forms 서비스를 호출할 수 있습니다 `_version` 매개 변수 맵 매개 변수 예를 들어 의 버전 1.2를 호출하려면 `MyApplication/EncryptDocument` 서비스:
 
 ```java
  var params:Object = new Object();
@@ -267,11 +267,11 @@ Workbench에서 만든 프로세스는 0개 이상의 입력 매개 변수를 �
  var token:AsyncToken = echoService.echoString(params);
 ```
 
-`version` 매개 변수는 단일 마침표를 포함하는 문자열이어야 합니다. 마침표의 왼쪽, 주 버전 및 오른쪽, 부 버전 값은 정수여야 합니다. 이 매개 변수를 지정하지 않으면 헤드 활성 버전이 호출됩니다.
+다음 `version` 매개 변수는 단일 마침표를 포함하는 문자열이어야 합니다. 마침표의 왼쪽, 주 버전 및 오른쪽, 부 버전 값은 정수여야 합니다. 이 매개 변수를 지정하지 않으면 헤드 활성 버전이 호출됩니다.
 
 **반환 값 처리**
 
-AEM Forms 프로세스 출력 매개 변수는 다음 예제와 같이 클라이언트 응용 프로그램이 이름별로 특정 매개 변수를 추출하는 ActionScript 개체로 deserialize됩니다. ( `MyApplication/EncryptDocument` 프로세스의 출력 값은 `outDoc` 입니다.)
+AEM Forms 프로세스 출력 매개 변수는 다음 예제와 같이 클라이언트 응용 프로그램이 이름별로 특정 매개 변수를 추출하는 ActionScript 개체로 deserialize됩니다. (의 출력 값 `MyApplication/EncryptDocument` 프로세스의 이름이 지정됨 `outDoc`)
 
 ```java
      ...
@@ -282,50 +282,50 @@ AEM Forms 프로세스 출력 매개 변수는 다음 예제와 같이 클라이
 
 **MyApplication/EncryptDocument 프로세스 호출**
 
-다음 단계를 수행하여 `MyApplication/EncryptDocument` 프로세스를 호출할 수 있습니다.
+를 호출할 수 있습니다 `MyApplication/EncryptDocument` 다음 단계를 수행하여 프로세스를 수행합니다.
 
-1. ActionScript 또는 MXML을 통해 `mx:RemoteObject` 인스턴스를 만듭니다. mx:RemoteObject 인스턴스 만들기를 참조하십시오.
-1. AEM Forms과 통신하고 `mx:RemoteObject` 인스턴스와 연결하도록 `ChannelSet` 인스턴스를 설정합니다. AEM Forms에 채널 만들기 를 참조하십시오.
-1. ChannelSet의 `login` 메서드 또는 서비스의 `setCredentials` 메서드를 호출하여 사용자 식별자 값과 암호를 지정합니다. ([단일 사인온 사용](invoking-aem-forms-using-remoting.md#using-single-sign-on) 참조)
-1. `mx.rpc.livecycle.DocumentReference` 인스턴스를 비보안 PDF 문서로 채워 `MyApplication/EncryptDocument` 프로세스에 전달합니다. ([문서를 입력 매개 변수로 전달](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter)을 참조하십시오.)
-1. `mx:RemoteObject` 인스턴스의 `invoke` 메서드를 호출하여 PDF 문서를 암호화합니다. 입력 매개 변수(보안되지 않은 PDF 문서)가 포함된 `Object`을 전달합니다. 입력 값 전달을 참조하십시오.
+1. 만들기 `mx:RemoteObject` ActionScript 또는 MXML을 통해 인스턴스를 생성합니다. mx:RemoteObject 인스턴스 만들기를 참조하십시오.
+1. 설정 `ChannelSet` 인스턴스를 사용하여 AEM Forms과 통신하고 `mx:RemoteObject` 인스턴스. AEM Forms에 채널 만들기 를 참조하십시오.
+1. ChannelSet 호출 `login` 서비스 메서드 또는 `setCredentials` 사용자 식별자 값 및 암호를 지정하는 방법입니다. (자세한 내용은 [단일 사인온 사용](invoking-aem-forms-using-remoting.md#using-single-sign-on))
+1. 채우기 `mx.rpc.livecycle.DocumentReference` 에 전달할 비보안 PDF 문서가 있는 인스턴스 `MyApplication/EncryptDocument` 프로세스. (자세한 내용은 [문서를 입력 매개 변수로 전달](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter))
+1. 를 호출하여 PDF 문서를 암호화합니다 `mx:RemoteObject` 인스턴스 `invoke` 메서드를 사용합니다. 전달 `Object` 입력 매개 변수(비보안 PDF 문서)를 포함합니다. 입력 값 전달을 참조하십시오.
 1. 프로세스에서 반환되는 암호로 암호화된 PDF 문서를 검색합니다. 반환 값 처리를 참조하십시오.
 
-[빠른 시작:AEM Forms Remoting을 사용하여 (AEM Forms에서 더 이상 사용되지 않음) 비보안 문서를 전달하여 단기 프로세스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
+[빠른 시작: AEM Forms Remoting을 사용하여 (AEM Forms에서 더 이상 사용되지 않음) 비보안 문서를 전달하여 단기 프로세스 호출](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
 
-## Flex {#authenticating-client-applications-built-with-flex}으로 빌드된 클라이언트 애플리케이션 인증
+## Flex으로 빌드된 클라이언트 애플리케이션 인증 {#authenticating-client-applications-built-with-flex}
 
-AEM Forms 사용자 관리자가 중앙 로그인 서비스, 기본 인증 및 사용자 지정 인증을 통해 AEM Forms 단일 사인온을 포함하여 Flex 응용 프로그램에서 원격 요청을 인증할 수 있는 방법에는 여러 가지가 있습니다. Single Sign-On 및 익명 액세스를 사용하지 않는 경우 원격 요청은 기본 인증(기본값) 또는 사용자 지정 인증을 받습니다.
+AEM Forms 사용자 관리자가 중앙 로그인 서비스, 기본 인증 및 사용자 지정 인증을 통해 AEM Forms 단일 사인온을 포함하여 Flex 응용 프로그램에서 원격 요청을 인증할 수 있는 방법에는 여러 가지가 있습니다. Single Sign-On 및 익명 액세스를 사용하지 않는 경우 원격 요청은 기본 인증(기본값) 또는 사용자 지정 인증을 만듭니다.
 
 기본 인증은 웹 응용 프로그램 컨테이너에서 표준 J2EE 기본 인증을 사용합니다. 기본 인증의 경우 HTTP 401 오류로 인해 브라우저 문제가 발생합니다. 즉, RemoteObject를 사용하여 Forms 애플리케이션에 연결하려고 하며 아직 Flex 애플리케이션에서 로그인하지 않은 경우 브라우저에서 사용자 이름과 암호를 묻는 메시지가 표시됩니다.
 
 사용자 지정 인증의 경우 서버는 인증이 필요하다는 것을 나타내기 위해 클라이언트에 오류를 보냅니다.
 
 >[!NOTE]
-HTTP 토큰을 사용하여 인증을 수행하는 방법에 대한 자세한 내용은 [HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)를 참조하십시오.
+HTTP 토큰을 사용하여 인증을 수행하는 방법에 대한 자세한 내용은 [HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
 ### 사용자 지정 인증 사용 {#using-custom-authentication}
 
-원격 끝점에서 인증 방법을 Basic에서 Custom으로 변경하여 관리 콘솔에서 사용자 지정 인증을 사용하도록 설정합니다. 사용자 지정 인증을 사용하는 경우 클라이언트 응용 프로그램은 `ChannelSet.login` 메서드를 호출하여 로그인하고 `ChannelSet.logout` 메서드를 호출하여 로그아웃합니다.
+원격 끝점에서 인증 방법을 Basic에서 Custom으로 변경하여 관리 콘솔에서 사용자 지정 인증을 사용하도록 설정합니다. 사용자 지정 인증을 사용하는 경우 클라이언트 응용 프로그램에서 `ChannelSet.login` 로그인 방법 및 `ChannelSet.logout` 로그아웃할 방법입니다.
 
 >[!NOTE]
-AEM Forms의 이전 릴리스에서는 `RemoteObject.setCredentials` 메서드를 호출하여 자격 증명을 대상에 전송했습니다. `setCredentials` 메서드는 구성 요소가 서버에 연결하기 위해 첫 번째 시도가 있을 때까지 자격 증명을 서버에 실제로 전달하지 않았습니다. 따라서 구성 요소에서 오류 이벤트를 발생시킨 경우, 인증 오류 또는 다른 이유로 인해 오류가 발생했는지 확실하지 않을 수 있습니다. 인증 문제를 즉시 처리할 수 있도록 `ChannelSet.login` 메서드는 호출 시 서버에 연결됩니다. `setCredentials` 메서드를 계속 사용할 수는 있지만 `ChannelSet.login` 메서드를 사용하는 것이 좋습니다.
+AEM Forms의 이전 릴리스에서는 `RemoteObject.setCredentials` 메서드를 사용합니다. 다음 `setCredentials` 이 메서드는 구성 요소가 서버에 연결하기 위해 첫 번째 시도가 있을 때까지 실제로 서버에 자격 증명을 전달하지 않았습니다. 따라서 구성 요소에서 오류 이벤트를 발생시킨 경우, 인증 오류 또는 다른 이유로 인해 오류가 발생했는지 확실하지 않을 수 있습니다. 다음 `ChannelSet.login` 메서드는 호출 시 서버에 연결되므로 인증 문제를 즉시 처리할 수 있습니다. 을 계속 사용할 수 있지만 `setCredentials` 메서드를 사용하는 것이 좋습니다 `ChannelSet.login` 메서드를 사용합니다.
 
-여러 대상은 동일한 채널 및 해당 ChannelSet 개체를 사용할 수 있으므로 한 대상에 로그인하면 동일한 채널 또는 채널을 사용하는 다른 대상에 로그인됩니다. 두 구성 요소가 동일한 ChannelSet 개체에 서로 다른 자격 증명을 적용하는 경우 적용된 마지막 자격 증명이 사용됩니다. 여러 구성 요소가 동일한 인증된 ChannelSet 개체를 사용하는 경우 `logout` 메서드를 호출하면 모든 구성 요소가 대상에서 기록됩니다.
+여러 대상은 동일한 채널 및 해당 ChannelSet 개체를 사용할 수 있으므로 한 대상에 로그인하면 동일한 채널 또는 채널을 사용하는 다른 대상에 로그인됩니다. 두 구성 요소가 동일한 ChannelSet 개체에 서로 다른 자격 증명을 적용하는 경우 적용된 마지막 자격 증명이 사용됩니다. 여러 구성 요소가 동일한 인증된 ChannelSet 개체를 사용하는 경우 `logout` 메서드는 모든 구성 요소를 대상에서 기록합니다.
 
-다음 예제에서는 RemoteObject 컨트롤에 `ChannelSet.login` 및 `ChannelSet.logout` 메서드를 사용합니다. 이 응용 프로그램은 다음 작업을 수행합니다.
+다음 예제에서는 `ChannelSet.login` 및 `ChannelSet.logout` 메서드를 사용합니다. 이 응용 프로그램은 다음 작업을 수행합니다.
 
-* `RemoteObject` 구성 요소에서 사용하는 채널을 나타내는 `creationComplete` 처리기에 `ChannelSet` 개체를 만듭니다
-* Button 클릭 이벤트에 대한 응답으로 `ROLogin` 함수를 호출하여 서버에 자격 증명을 전달합니다
+* 만들기 `ChannelSet` 의 개체 `creationComplete` 에 사용되는 채널을 나타내는 처리기입니다. `RemoteObject` 구성 요소
+* 를 호출하여 서버에 자격 증명을 전달합니다 `ROLogin` 버튼 클릭 이벤트에 응답하는 함수
 * RemoteObject 구성 요소를 사용하여 Button 클릭 이벤트에 대한 응답으로 서버에 문자열을 보냅니다. 서버가 동일한 문자열을 다시 RemoteObject 구성 요소에 반환합니다
 * RemoteObject 구성 요소의 결과 이벤트를 사용하여 TextArea 컨트롤에 String을 표시합니다
-* Button 클릭 이벤트에 대한 응답으로 `ROLogout` 함수를 호출하여 서버에서 로그아웃합니다.
+* 를 호출하여 서버에서 로그아웃됩니다. `ROLogout` 버튼 클릭 이벤트에 응답하는 함수
 
 ```java
- <?xml version=”1.0”?>
+ <?xml version="1.0"?>
  <!-- security/SecurityConstraintCustom.mxml -->
- <mx:Application xmlns:mx=”https://www.adobe.com/2006/mxml” width=”100%”
-     height=”100%” creationComplete=”creationCompleteHandler();”>
+ <mx:Application xmlns:mx="https://www.adobe.com/2006/mxml" width="100%"
+     height="100%" creationComplete="creationCompleteHandler();">
  
      <mx:Script>
          <![CDATA[
@@ -354,7 +354,7 @@ AEM Forms의 이전 릴리스에서는 `RemoteObject.setCredentials` 메서드�
              private function ROLogin():void {
                  // Make sure that the user is not already logged in.
                  if (cs.authenticated == false) {
-                     token = cs.login(“sampleuser”, “samplepassword”);
+                     token = cs.login("sampleuser", "samplepassword");
                      // Add result and fault handlers.
                      token.addResponder(new AsyncResponder(LoginResultEvent,
                      LoginFaultEvent));
@@ -365,7 +365,7 @@ AEM Forms의 이전 릴리스에서는 `RemoteObject.setCredentials` 메서드�
              private function LoginResultEvent(event:ResultEvent,
                  token:Object=null):void  {
                      switch(event.result) {
-                         case “success”:
+                         case "success":
                              authenticatedCB.selected = true;
                              break;
                              default:
@@ -376,10 +376,10 @@ AEM Forms의 이전 릴리스에서는 `RemoteObject.setCredentials` 메서드�
                  private function LoginFaultEvent(event:FaultEvent,
                      token:Object=null):void {
                          switch(event.fault.faultCode) {
-                             case “Client.Authentication”:
+                             case "Client.Authentication":
                                  default:
                                  authenticatedCB.selected = false;
-                                 Alert.show(“Login failure: “ + event.fault.faultString);
+                                 Alert.show("Login failure: " + event.fault.faultString);
                      }
                  }
  
@@ -395,7 +395,7 @@ AEM Forms의 이전 릴리스에서는 `RemoteObject.setCredentials` 메서드�
                  private function LogoutResultEvent(event:ResultEvent,
                      token:Object=null):void {
                          switch (event.result) {
-                             case “success”:
+                             case "success":
                                  authenticatedCB.selected = false;
                                  break;
                                  default:
@@ -405,43 +405,43 @@ AEM Forms의 이전 릴리스에서는 `RemoteObject.setCredentials` 메서드�
                  // Handle logout failure.
                  private function LogoutFaultEvent(event:FaultEvent,
                      token:Object=null):void {
-                         Alert.show(“Logout failure: “ + event.fault.faultString);
+                         Alert.show("Logout failure: " + event.fault.faultString);
                  }
                  // Handle message recevied by RemoteObject component.
                  private function resultHandler(event:ResultEvent):void {
-                     ta.text += “Server responded: “+ event.result + “\n”;
+                     ta.text += "Server responded: "+ event.result + "\n";
                  }
  
                  // Handle fault from RemoteObject component.
                  private function faultHandler(event:FaultEvent):void {
-                     ta.text += “Received fault: “ + event.fault + “\n”;
+                     ta.text += "Received fault: " + event.fault + "\n";
                  }
              ]]>
      </mx:Script>
      <mx:HBox>
-         <mx:Label text=”Enter a text for the server to echo”/>
-         <mx:TextInput id=”ti” text=”Hello World!”/>
-         <mx:Button label=”Login”
-             click=”ROLogin();”/>
-         <mx:Button label=”Echo”
-             enabled=”{authenticatedCB.selected}”
-             click=”remoteObject.echo(ti.text);”/>
-         <mx:Button label=”Logout”
-             click=”ROLogout();”/>
-         <mx:CheckBox id=”authenticatedCB”
-             label=”Authenticated?”
-             enabled=”false”/>
+         <mx:Label text="Enter a text for the server to echo"/>
+         <mx:TextInput id="ti" text="Hello World!"/>
+         <mx:Button label="Login"
+             click="ROLogin();"/>
+         <mx:Button label="Echo"
+             enabled="{authenticatedCB.selected}"
+             click="remoteObject.echo(ti.text);"/>
+         <mx:Button label="Logout"
+             click="ROLogout();"/>
+         <mx:CheckBox id="authenticatedCB"
+             label="Authenticated?"
+             enabled="false"/>
      </mx:HBox>
-     <mx:TextArea id=”ta” width=”100%” height=”100%”/>
+     <mx:TextArea id="ta" width="100%" height="100%"/>
  
-     <mx:RemoteObject id=”remoteObject”
-         destination=”myDest”
-         result=”resultHandler(event);”
-         fault=”faultHandler(event);”/>
+     <mx:RemoteObject id="remoteObject"
+         destination="myDest"
+         result="resultHandler(event);"
+         fault="faultHandler(event);"/>
  </mx:Application>
 ```
 
-`login` 및 `logout` 메서드는 AsyncToken 개체를 반환합니다. AsyncToken 개체에 이벤트 처리기를 할당하여 결과 이벤트가 성공적인 호출을 처리하고 오류 이벤트가 오류를 처리할 수 있습니다.
+다음 `login` 및 `logout` 메서드는 AsyncToken 개체를 반환합니다. AsyncToken 개체에 이벤트 처리기를 할당하여 결과 이벤트가 성공적인 호출을 처리하고 오류 이벤트가 오류를 처리할 수 있습니다.
 
 ### 단일 사인온 사용 {#using-single-sign-on}
 
@@ -458,19 +458,19 @@ AEM Forms 서비스가 (AEM Forms에서는 더 이상 사용되지 않음) AEM F
 
 로그인하고 자체적으로 로그아웃하는 클라이언트 응용 프로그램을 작성하여 AEM Forms 단일 사인온 메커니즘을 무시할 수 있습니다. Single Sign-On 메커니즘을 무시하면 응용 프로그램에서 기본 또는 사용자 지정 인증을 사용할 수 있습니다.
 
-이 메커니즘은 AEM Forms Single Sign-On 메커니즘을 사용하지 않으므로 클라이언트에 인증 쿠키가 기록되지 않습니다. 로그인 자격 증명은 원격 채널의 `ChannelSet` 개체에 저장됩니다. 따라서 동일한 `ChannelSet`을 통해 수행하는 모든 `RemoteObject` 호출은 해당 자격 증명의 컨텍스트에서 수행됩니다.
+이 메커니즘은 AEM Forms Single Sign-On 메커니즘을 사용하지 않으므로 클라이언트에 인증 쿠키가 기록되지 않습니다. 로그인 자격 증명은 `ChannelSet` 원격 채널에 대한 개체입니다. 따라서, 모든 `RemoteObject` 동일한 호출로 `ChannelSet` 자격 증명의 컨텍스트에서 수행됩니다.
 
-### AEM Forms {#setting-up-single-sign-on-in-aem-forms}에서 단일 사인온 설정
+### AEM Forms에서 단일 사인온 설정 {#setting-up-single-sign-on-in-aem-forms}
 
 AEM Forms에서 단일 사인온을 사용하려면 중앙 로그인 서비스가 포함된 Forms 워크플로우 구성 요소를 설치하십시오. 사용자가 성공적으로 로그인하면 중앙 로그인 서비스는 사용자에게 인증 쿠키를 반환합니다. Forms 웹 애플리케이션에 대한 후속 요청마다 쿠키가 포함됩니다. 쿠키가 유효하면 사용자가 인증된 것으로 간주되며 다시 로그인할 필요가 없습니다.
 
-### 단일 사인온을 사용하는 클라이언트 응용 프로그램 쓰기 {#writing-a-client-application-that-uses-single-sign-on}
+### Single Sign-On을 사용하는 클라이언트 응용 프로그램 쓰기 {#writing-a-client-application-that-uses-single-sign-on}
 
-Single Sign-On 메커니즘을 사용하면 클라이언트 응용 프로그램을 시작하기 전에 중앙 로그인 서비스를 사용하여 사용자가 로그인할 수 있습니다. 즉, 클라이언트 응용 프로그램은 브라우저를 통해 로그인하거나 `ChannelSet.login` 메서드를 호출하여 로그인하지 않습니다.
+Single Sign-On 메커니즘을 사용하면 클라이언트 응용 프로그램을 시작하기 전에 중앙 로그인 서비스를 사용하여 사용자가 로그인할 수 있습니다. 즉, 클라이언트 애플리케이션은 브라우저를 통해 로그인하거나 `ChannelSet.login` 메서드를 사용합니다.
 
 AEM Forms Single Sign-On 메커니즘을 사용하는 경우 기본 인증이 아닌 사용자 지정 인증을 사용하도록 원격 끝점을 구성합니다. 그렇지 않으면 기본 인증을 사용할 때 인증 오류로 인해 사용자에게 표시되지 않는 브라우저 문제가 발생합니다. 대신 응용 프로그램에서 인증 오류를 감지한 다음 사용자가 중앙 로그인 서비스를 사용하여 로그인하도록 지시하는 메시지를 표시합니다.
 
-클라이언트 응용 프로그램은 다음 예와 같이 `RemoteObject` 구성 요소를 사용하여 원격 끝점을 통해 AEM Forms에 액세스합니다.
+클라이언트 응용 프로그램은 `RemoteObject` 다음 예와 같이 구성 요소를 생성하지 마십시오.
 
 ```java
  <?xml version="1.0"?>
@@ -523,13 +523,13 @@ Flex으로 빌드된 응용 프로그램에는 AEM Forms 서비스에 대한 모
 
 AEM Forms에서 로그아웃하고 세션을 무효화하려면 클라이언트 컴퓨터에서 인증 쿠키를 삭제해야 합니다. Single Sign-On의 목적은 사용자가 한 번 로그인할 수 있도록 하는 것이므로 클라이언트 응용 프로그램에서 쿠키를 삭제하지 않도록 하는 것입니다. 이 작업은 사용자를 효과적으로 로그아웃합니다.
 
-따라서 클라이언트 응용 프로그램에서 `RemoteObject.logout` 메서드를 호출하면 세션이 로그아웃되지 않았다는 오류 메시지가 클라이언트에 생성됩니다. 대신 중앙 로그인 서비스를 사용하여 인증 쿠키를 로그아웃하고 삭제할 수 있습니다.
+따라서 를 `RemoteObject.logout` 클라이언트 응용 프로그램의 메서드는 세션이 로그아웃되지 않았다는 오류 메시지를 클라이언트에 생성합니다. 대신 중앙 로그인 서비스를 사용하여 인증 쿠키를 로그아웃하고 삭제할 수 있습니다.
 
 **Flex 애플리케이션이 실행되는 동안 로그아웃합니다.**
 
 Flex으로 빌드된 클라이언트 애플리케이션을 시작하고 중앙 로그인 서비스를 사용하여 로그아웃할 수 있습니다. 로그아웃 프로세스의 일부로 인증 쿠키가 삭제됩니다. 쿠키 없이 또는 잘못된 쿠키가 있는 원격 요청이 수행된 경우 사용자 세션이 무효화됩니다. 이 작업은 실제로 로그아웃됩니다. 다음에 클라이언트 응용 프로그램이 AEM Forms 서비스에 연결하려고 하면 사용자에게 로그인 요청이 표시됩니다.
 
-**참고 항목**
+**추가 참조**
 
 [AEM Forms Remoting을 사용하여 AEM Forms 호출(AEM Forms에서 더 이상 사용되지 않음)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -541,16 +541,16 @@ Flex으로 빌드된 클라이언트 애플리케이션을 시작하고 중앙 �
 
 [Remoting을 사용하여 프로세스를 호출하는 보안 문서 전달](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
 
-## 원격 {#passing-secure-documents-to-invoke-processes-using-remoting}을 사용하여 프로세스를 호출하는 보안 문서 전달
+## Remoting을 사용하여 프로세스를 호출하는 보안 문서 전달 {#passing-secure-documents-to-invoke-processes-using-remoting}
 
-하나 이상의 문서가 필요한 프로세스를 호출할 때 보안 문서를 AEM Forms에 전달할 수 있습니다. 보안 문서를 전달하면 비즈니스 정보와 기밀 문서를 보호할 수 있습니다. 이 경우 문서는 PDF 문서, XML 문서, Word 문서 등을 참조할 수 있습니다. AEM Forms이 보안 문서를 허용하도록 구성된 경우 Flex에 작성된 클라이언트 애플리케이션에서 AEM Forms으로 보안 문서를 전달해야 합니다. ([보안 및 비보안 문서를 수락하도록 AEM Forms 구성](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)을 참조하십시오.)
+하나 이상의 문서가 필요한 프로세스를 호출할 때 보안 문서를 AEM Forms에 전달할 수 있습니다. 보안 문서를 전달하면 비즈니스 정보와 기밀 문서를 보호할 수 있습니다. 이 경우 문서는 PDF 문서, XML 문서, Word 문서 등을 참조할 수 있습니다. 보안 문서를 허용하도록 AEM Forms이 구성된 경우 Flex에 작성된 클라이언트 애플리케이션에서 AEM Forms으로 보안 문서를 전달해야 합니다. (자세한 내용은 [보안 및 비보안 문서를 수락하도록 AEM Forms 구성](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents))
 
-보안 문서를 전달할 때 단일 사인온을 사용하고 *문서 업로드 응용 프로그램 사용자* 역할을 가진 AEM Forms 사용자를 지정합니다. 이 역할이 없으면 보안 문서를 업로드할 수 없습니다. 프로그래밍 방식으로 사용자에게 역할을 할당할 수 있습니다. ([역할 및 권한 관리](/help/forms/developing/users.md#managing-roles-and-permissions) 참조)
+보안 문서를 전달할 때 단일 사인온을 사용하고 *문서 업로드 응용 프로그램 사용자* 역할. 이 역할이 없으면 보안 문서를 업로드할 수 없습니다. 프로그래밍 방식으로 사용자에게 역할을 할당할 수 있습니다. (자세한 내용은 [역할 및 권한 관리](/help/forms/developing/users.md#managing-roles-and-permissions))
 
 >[!NOTE]
 새 역할을 만들고 해당 역할의 구성원이 보안 문서를 업로드하도록 하려면 문서 업로드 권한을 지정해야 합니다.
 
-AEM Forms은 업로드 서블릿에 전달되는 토큰을 반환하는 `getFileUploadToken` 작업을 지원합니다. `DocumentReference.constructRequestForUpload` 메서드는 `LC.FileUploadAuthenticator.getFileUploadToken` 메서드에서 반환된 토큰과 함께 AEM Forms에 대한 URL이 필요합니다. 이 메서드는 업로드 서블릿에 대한 호출에 사용되는 `URLRequest` 개체를 반환합니다. 다음 코드는 이 응용 프로그램 논리를 보여 줍니다.
+AEM Forms은 명명된 작업을 지원합니다. `getFileUploadToken` 업로드 서블릿에 전달되는 토큰을 반환합니다. 다음 `DocumentReference.constructRequestForUpload` 메서드에는 에서 반환된 토큰과 함께 AEM Forms에 대한 URL이 필요합니다 `LC.FileUploadAuthenticator.getFileUploadToken` 메서드를 사용합니다. 이 메서드는 `URLRequest` 업로드 서블릿에 대한 호출에 사용되는 객체입니다. 다음 코드는 이 응용 프로그램 논리를 보여 줍니다.
 
 ```java
      ...
@@ -610,21 +610,21 @@ AEM Forms은 업로드 서블릿에 전달되는 토큰을 반환하는 `getFile
 Flex 클라이언트 응용 프로그램에서 AEM Forms 프로세스에 문서를 전달할 때 관리 콘솔을 사용하여 문서의 보안 여부를 지정할 수 있습니다. 기본적으로 AEM Forms은 보안 문서를 허용하도록 구성됩니다. 다음 단계를 수행하여 보안 문서를 수락하도록 AEM Forms을 구성할 수 있습니다.
 
 1. 관리 콘솔에 로그인합니다.
-1. **설정**&#x200B;을 클릭합니다.
-1. **핵심 시스템 설정을 클릭합니다.**
+1. 클릭 **설정**.
+1. 클릭 **핵심 시스템 설정.**
 1. 구성을 클릭합니다.
 1. Flex 애플리케이션에서 비보안 문서 업로드 허용 옵션이 선택되어 있지 않은지 확인합니다.
 
 >[!NOTE]
 비보안 문서를 허용하도록 AEM Forms을 구성하려면 Flex 애플리케이션에서 비보안 문서 업로드 허용 옵션을 선택합니다. 그런 다음 응용 프로그램 또는 서비스를 다시 시작하여 설정이 적용되는지 확인합니다.
 
-### 빠른 시작:Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}을 사용하여 보안 문서를 전달하여 단기 프로세스를 호출하는 중
+### 빠른 시작: Remoting을 사용하여 보안 문서를 전달하여 단기 프로세스 호출 {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 
-다음 코드 예제에서는 `MyApplication/EncryptDocument.`사용자가 로그인해야 PDF 파일을 업로드하고 프로세스를 호출하는 데 사용되는 파일 선택 단추를 클릭할 수 있습니다. 즉, 사용자가 인증되면 파일 선택 단추가 활성화됩니다. 다음 그림은 사용자가 인증된 후 Flex 클라이언트 응용 프로그램을 보여줍니다. 인증된 확인란은 활성화되어 있습니다.
+다음 코드 예는 를 호출합니다 `MyApplication/EncryptDocument.`PDF 파일을 업로드하고 프로세스를 호출하는 데 사용되는 파일 선택 단추를 클릭하려면 로그인해야 합니다. 즉, 사용자가 인증되면 파일 선택 단추가 활성화됩니다. 다음 그림은 사용자가 인증된 후 Flex 클라이언트 응용 프로그램을 보여줍니다. 인증된 확인란은 활성화되어 있습니다.
 
 ![iu_iu_secureremotelogin](assets/iu_iu_secureremotelogin.png)
 
-AEM Forms이 보안 문서를 업로드만 허용하도록 구성되어 있고 사용자에게 *문서 업로드 응용 프로그램 사용자* 역할이 없는 경우 예외가 발생합니다. 사용자에게 이 역할이 있는 경우 파일이 업로드되고 프로세스가 호출됩니다.
+AEM Forms이 보안 문서를 업로드하고 사용자에게 *문서 업로드 응용 프로그램 사용자* 역할 을 수행하면 예외가 발생합니다. 사용자에게 이 역할이 있는 경우 파일이 업로드되고 프로세스가 호출됩니다.
 
 ```java
  <?xml version="1.0" encoding="utf-8"?>
@@ -872,7 +872,7 @@ AEM Forms이 보안 문서를 업로드만 허용하도록 구성되어 있고 �
  </mx:Application>
 ```
 
-**참고 항목**
+**추가 참조**
 
 [AEM Forms Remoting을 사용하여 AEM Forms 호출(AEM Forms에서 더 이상 사용되지 않음)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -884,11 +884,11 @@ AEM Forms이 보안 문서를 업로드만 허용하도록 구성되어 있고 �
 
 [Flex으로 빌드된 클라이언트 애플리케이션 인증](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
-## Remoting {#invoking-custom-component-services-using-remoting}을 사용하여 사용자 지정 구성 요소 서비스를 호출하는 중
+## 원격을 사용하여 사용자 지정 구성 요소 서비스 호출 {#invoking-custom-component-services-using-remoting}
 
 원격을 사용하여 사용자 지정 구성 요소에 있는 서비스를 호출할 수 있습니다. 예를 들어, 고객 서비스를 포함하는 은행 구성 요소를 생각해 보십시오. Flex에 작성된 클라이언트 응용 프로그램을 사용하여 고객 서비스에 속하는 작업을 호출할 수 있습니다. 이 섹션과 연결된 빠른 시작을 실행하려면 먼저 은행 사용자 지정 구성 요소를 만들어야 합니다.
 
-고객 서비스는 `createCustomer` 작업을 노출합니다. 이 설명에서는 고객 서비스를 호출하고 고객을 만드는 Flex 클라이언트 응용 프로그램을 만드는 방법을 설명합니다. 이 작업을 수행하려면 새 고객을 나타내는 `com.adobe.livecycle.sample.customer.Customer` 유형의 복잡한 개체가 필요합니다. 다음 그림은 고객 서비스를 호출하고 새 고객을 생성하는 클라이언트 애플리케이션을 보여 줍니다. `createCustomer` 작업은 고객 식별자 값을 반환합니다. 식별자 값은 고객 식별자 텍스트 상자에 표시됩니다.
+고객 서비스는 라는 작업을 노출합니다 `createCustomer`. 이 논의에서는 고객 서비스를 호출하고 고객을 만드는 Flex 클라이언트 응용 프로그램을 만드는 방법을 설명합니다. 이 작업을 수행하려면 형식의 복잡한 개체가 필요합니다. `com.adobe.livecycle.sample.customer.Customer` 새 고객을 나타냅니다. 다음 그림은 고객 서비스를 호출하고 새 고객을 생성하는 클라이언트 애플리케이션을 보여 줍니다. 다음 `createCustomer` 작업이 고객 식별자 값을 반환합니다. 식별자 값은 고객 식별자 텍스트 상자에 표시됩니다.
 
 ![iu_iu_flexnewust](assets/iu_iu_flexnewcust.png)
 
@@ -932,20 +932,20 @@ AEM Forms이 보안 문서를 업로드만 허용하도록 구성되어 있고 �
   </tr>
   <tr>
    <td><p>txtCustId</p></td>
-   <td><p>새 계정이 속한 고객 식별자 값을 지정합니다. 이 텍스트 상자는 고객 서비스의 <code>createCustomer</code> 작업의 반환 값으로 채워집니다. </p></td>
+   <td><p>새 계정이 속한 고객 식별자 값을 지정합니다. 이 텍스트 상자는 고객 서비스의 반환 값으로 채워집니다 <code>createCustomer</code> 작업. </p></td>
   </tr>
  </tbody>
 </table>
 
 ### AEM Forms 복합 데이터 유형 매핑 {#mapping-aem-forms-complex-data-types}
 
-일부 AEM Forms 작업에는 입력 값으로 복잡한 데이터 유형이 필요합니다. 이러한 복잡한 데이터 유형은 작업에 사용되는 런타임 값을 정의합니다. 예를 들어 고객 서비스의 `createCustomer` 작업에는 서비스에 필요한 런타임 값을 포함하는 `Customer` 인스턴스가 필요합니다. 복잡한 유형이 없으면 고객 서비스에서는 예외가 발생하고 작업을 수행하지 않습니다.
+일부 AEM Forms 작업에는 입력 값으로 복잡한 데이터 유형이 필요합니다. 이러한 복잡한 데이터 유형은 작업에 사용되는 런타임 값을 정의합니다. 예를 들어 고객 서비스의 `createCustomer` 작업을 수행하려면 `Customer` 서비스에 필요한 런타임 값을 포함하는 인스턴스입니다. 복잡한 유형이 없으면 고객 서비스에서는 예외가 발생하고 작업을 수행하지 않습니다.
 
 AEM Forms 서비스를 호출할 때 필요한 AEM Forms 복합 유형에 매핑되는 ActionScript 개체를 만드십시오. 작업에 필요한 각 복잡한 데이터 유형에 대해 별도의 ActionScript 개체를 만듭니다.
 
-ActionScript 클래스에서 `RemoteClass` 메타데이터 태그를 사용하여 AEM Forms 복합 유형에 매핑합니다. 예를 들어 고객 서비스의 `createCustomer` 작업을 호출할 때 `com.adobe.livecycle.sample.customer.Customer` 데이터 유형에 매핑되는 ActionScript 클래스를 만듭니다.
+ActionScript 클래스에서 `RemoteClass` AEM Forms 복합 유형에 매핑할 메타데이터 태그입니다. 예를 들어, 고객 서비스의 `createCustomer` 작업을 수행하고, `com.adobe.livecycle.sample.customer.Customer` 데이터 유형.
 
-Customer라는 다음 ActionScript 클래스는 AEM Forms 데이터 유형 `com.adobe.livecycle.sample.customer.Customer`에 매핑하는 방법을 보여줍니다.
+Customer라는 다음 ActionScript 클래스는 AEM Forms 데이터 유형에 매핑하는 방법을 보여줍니다 `com.adobe.livecycle.sample.customer.Customer`.
 
 ```java
  package customer
@@ -966,18 +966,18 @@ Customer라는 다음 ActionScript 클래스는 AEM Forms 데이터 유형 `com.
 
 AEM Forms 복합 유형의 정규화된 데이터 유형이 별칭 태그에 할당됩니다.
 
-ActionScript 클래스의 필드는 AEM Forms 복합 유형에 속하는 필드와 일치합니다. 고객 ActionScript 클래스에 있는 6개의 필드는 `com.adobe.livecycle.sample.customer.Customer`에 속하는 필드와 일치합니다.
+ActionScript 클래스의 필드는 AEM Forms 복합 유형에 속하는 필드와 일치합니다. 고객 ActionScript 클래스에 있는 6개의 필드는 에 속하는 필드와 일치합니다 `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
-Forms 복합 유형에 속하는 필드 이름을 확인하는 좋은 방법은 웹 브라우저에서 서비스의 WSDL을 보는 것입니다. WSDL은 서비스의 복합 형식과 해당 데이터 멤버를 지정합니다. 고객 서비스에 사용되는 WSDL은 다음과 같습니다.`https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
+Forms 복합 유형에 속하는 필드 이름을 확인하는 좋은 방법은 웹 브라우저에서 서비스의 WSDL을 보는 것입니다. WSDL은 서비스의 복합 형식과 해당 데이터 멤버를 지정합니다. 고객 서비스에 사용되는 WSDL은 다음과 같습니다. `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 고객 ActionScript 클래스는 customer라는 패키지에 속합니다. 복잡한 AEM Forms 데이터 유형에 매핑되는 모든 ActionScript 클래스를 자체 패키지에 배치하는 것이 좋습니다. 다음 그림과 같이 Flex 프로젝트의 src 폴더에서 폴더를 만들고 ActionScript 파일을 폴더에 넣습니다.
 
 ![iu_iu_customeras](assets/iu_iu_customeras.png)
 
-### 빠른 시작:Remoting {#quick-start-invoking-the-customer-custom-service-using-remoting}을 사용하여 고객 사용자 지정 서비스를 호출하는 중
+### 빠른 시작: Remoting을 사용하여 고객 사용자 지정 서비스 호출 {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-다음 코드 예는 고객 서비스를 호출하고 새 고객을 만듭니다. 이 코드 예제를 실행할 때는 모든 텍스트 상자를 입력해야 합니다. 또한 `com.adobe.livecycle.sample.customer.Customer`에 매핑되는 Customer.as 파일을 만들어야 합니다.
+다음 코드 예는 고객 서비스를 호출하고 새 고객을 만듭니다. 이 코드 예제를 실행할 때는 모든 텍스트 상자를 입력해야 합니다. 또한 Customer.as 파일이 `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 이 빠른 시작을 실행하려면 먼저 Bank 사용자 지정 구성 요소를 만들고 배포해야 합니다.
@@ -1173,7 +1173,7 @@ Forms 복합 유형에 속하는 필드 이름을 확인하는 좋은 방법은 
 
 **스타일 시트**
 
-이 빠른 시작에는 *bank.css*&#x200B;라는 스타일 시트가 포함되어 있습니다. 다음 코드는 사용되는 스타일 시트를 나타냅니다.
+이 빠른 시작에는 이름이 인 스타일 시트가 포함되어 있습니다. *bank.css*. 다음 코드는 사용되는 스타일 시트를 나타냅니다.
 
 ```css
  /* CSS file */
@@ -1257,7 +1257,7 @@ Forms 복합 유형에 속하는 필드 이름을 확인하는 좋은 방법은 
  }
 ```
 
-**참고 항목**
+**추가 참조**
 
 [AEM Forms Remoting을 사용하여 AEM Forms 호출(AEM Forms에서 더 이상 사용되지 않음)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
