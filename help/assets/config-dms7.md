@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b14cbc4cad15b06754db8b8c992a596d4d64c096
+source-git-commit: 6c6f67929b774492d8caa052598b8c33e9a41710
 workflow-type: tm+mt
-source-wordcount: '6037'
-ht-degree: 4%
+source-wordcount: '6253'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 4%
 >* [스마트 이미징](/help/assets/imaging-faq.md)
 >* [캐시 무효화](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [핫링크 보호](/help/assets/hotlink-protection.md)
->* [컨텐츠의 HTTP/2 전달](/help/assets/http2.md)
+>* [콘텐츠의 HTTP/2 전달](/help/assets/http2.md)
 >* CDN 수준에서 URL 리디렉션
 >* Akamai ChinaCDN(중국에서 최적의 전달을 위한)
 
@@ -86,11 +86,11 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## Cloud Services에서 Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
-**Dynamic Media 구성 전** - Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)그런 다음 계정에 로그인하여 암호를 변경합니다. 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
-![dynamicmediaconfiguration2업데이트됨](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Cloud Services에서 Dynamic Media 구성을 만들려면:**
+**To create a Dynamic Media Configuration in Cloud Services:** -->
 
 1. Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스하고 도구 아이콘을 선택한 다음 로 이동합니다 **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media 구성]**.
 1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL 글로벌]** (폴더 아이콘을 의 왼쪽에 선택하지 마십시오.) **[!UICONTROL 글로벌]**)를 선택한 다음 을 선택합니다. **[!UICONTROL 만들기]**.
@@ -98,8 +98,24 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    선택 **[!UICONTROL Dynamic Media에 연결]**.
 
-   >[!NOTE]
-   Dynamic Media 자격 증명으로 프로비저닝 이메일을 받은 후 [Dynamic Media Classic 데스크탑 애플리케이션](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)그런 다음 계정에 로그인하여 암호를 변경합니다. 프로비저닝 전자 메일에 제공된 암호는 시스템에서 생성되며 임시 암호만 사용할 수 있습니다. Dynamic Media Cloud Service이 올바른 자격 증명으로 설정되도록 암호를 업데이트하는 것이 중요합니다.
+1. 에서 **[!UICONTROL 암호 변경]** 대화 상자, **[!UICONTROL 새 암호]** 필드에 8-25자로 구성된 새 암호를 입력합니다. 암호는 다음 중 적어도 하나를 포함해야 합니다.
+
+   * 대문자
+   * 소문자
+   * 숫자
+   * 특수 문자: `# $ & . - _ : { }`
+
+   다음 **[!UICONTROL 현재 암호]** 필드는 의도적으로 상호 작용에서 사전에 채워지고 숨겨집니다.
+
+   필요한 경우 암호를 표시하기 위해 암호 눈 아이콘을 선택하여 입력하거나 다시 입력한 암호 철자를 확인할 수 있습니다. 암호를 숨기려면 아이콘을 다시 선택합니다.
+
+1. 에서 **[!UICONTROL 암호 반복]** 필드에서 새 암호를 다시 입력한 다음 **[!UICONTROL 완료]**.
+
+   새 암호는 **[!UICONTROL 저장]** 오른쪽 위 모서리에서 **[!UICONTROL Dynamic Media 구성 만들기]** 페이지.
+
+   선택한 경우 **[!UICONTROL 취소]** 에서 **[!UICONTROL 암호 변경]** 대화 상자에서는 새로 만든 Dynamic Media 구성을 저장할 때 새 암호를 입력해야 합니다.
+
+   참조 - [암호를 Dynamic Media으로 변경](#change-dm-password).
 
 1. 연결이 성공하면 다음을 설정합니다. 별표(*)가 있는 헤딩은 다음과 같습니다.
 
@@ -147,6 +163,37 @@ Dynamic Media에 동기화할 선택한 폴더를 표시하려면 자산 폴더�
 이제 기본 구성을 완료했습니다. Dynamic Media - Scene7 모드를 사용할 준비가 되었습니다.
 
 구성을 추가로 사용자 지정하려면 아래의 작업을 선택적으로 완료할 수 있습니다 [(선택 사항) Dynamic Media - Scene7 모드에서 고급 설정 구성](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+
+### 암호를 Dynamic Media으로 변경 {#change-dm-password}
+
+Dynamic Media의 암호 만료는 현재 시스템 날짜로부터 100년으로 설정됩니다.
+
+암호는 다음 중 적어도 하나를 포함해야 합니다.
+
+* 대문자
+* 소문자
+* 숫자
+* 특수 문자: `# $ & . - _ : { }`
+
+필요한 경우 암호를 표시하기 위해 암호 눈 아이콘을 선택하여 입력하거나 다시 입력한 암호 철자를 확인할 수 있습니다. 암호를 숨기려면 아이콘을 다시 선택합니다.
+
+선택한 경우 변경된 암호가 저장됩니다 **[!UICONTROL 저장]** 오른쪽 위 모서리에서 **[!UICONTROL Dynamic Media 구성 편집]** 페이지.
+
+**암호를 Dynamic Media으로 변경하려면 다음을 수행하십시오.**
+
+1. Experience Manager 작성자 모드에서 Experience Manager 로고를 선택하여 전역 탐색 콘솔에 액세스합니다.
+1. 콘솔 왼쪽에서 도구 아이콘을 선택한 다음 로 이동합니다 **[!UICONTROL Cloud Services] > [!UICONTROL Dynamic Media 구성]**.
+1. Dynamic Media 구성 브라우저 페이지의 왼쪽 창에서 **[!UICONTROL 글로벌]**. 왼쪽의 폴더 아이콘을 선택하지 마십시오 **[!UICONTROL 글로벌]**. 그런 다음 **[!UICONTROL 편집]**.
+1. 설정 **[!UICONTROL Dynamic Media 구성 편집]** 페이지, 바로 아래 **[!UICONTROL 암호]** 필드, 선택 **[!UICONTROL 암호 변경]**.
+1. 에서 **[!UICONTROL 암호 변경]** 대화 상자에서 다음을 수행합니다.
+
+   * 에서 **[!UICONTROL 새 암호]** 필드에 새 암호를 입력합니다.
+
+      다음 **[!UICONTROL 현재 암호]** 필드는 의도적으로 상호 작용에서 사전에 채워지고 숨겨집니다.
+
+   * 에서 **[!UICONTROL 암호 반복]** 필드에서 새 암호를 다시 입력한 다음 **[!UICONTROL 완료]**.
+
+1. 의 오른쪽 위 모서리에서 **[!UICONTROL Dynamic Media 구성 편집]** 페이지를 선택하고 **[!UICONTROL 저장]**&#x200B;를 선택하고 을 선택합니다. **[!UICONTROL 확인]**.
 
 ## (선택 사항) Dynamic Media - Scene7 모드에서 고급 설정 구성 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
