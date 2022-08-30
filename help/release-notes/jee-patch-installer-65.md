@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 495b9a006f5288ad6579e13aaea82ace6d6f0e91
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 22%
+ht-degree: 20%
 
 ---
 
@@ -65,8 +65,8 @@ AEM 6.5 Forms JEE 패치 설치 프로그램에는 이 패치가 릴리스될 �
 
 1. 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 *AEM 양식 구성 및 배포* 섹션을 참조하십시오.
 
-   * [JBoss용 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installJBoss_65_kr)
-   * [WebSphere용 AEM 양식 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebSphere_65_kr)
+   * [JBoss용 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [WebSphere용 AEM 양식 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (JBoss만 해당) 패치를 설치하고 서버를 구성한 후 JBoss 애플리케이션 서버의 임시 및 작업 디렉토리를 삭제합니다.
 

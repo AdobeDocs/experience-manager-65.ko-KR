@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 35639a818f58923ae9ad099752d359e7795be60b
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '2741'
+source-wordcount: '2753'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Adobe은 많은 회사에 HTTP 트래픽을 감지하는 방화벽이 있어 이
 * HTTPS: 대부분의 사용자에게는 HTTP 트래픽을 감지하는 방화벽이 있으므로 업로드 작업 중에 파일 업로드나 손상된 파일의 업로드에 부정적인 영향을 줄 수 있습니다.
 * 큰 파일 업로드: 사용자가 네트워크에 유선 연결을 했는지 확인합니다(WiFi 연결이 빠르게 채워짐).
 
-## 워크플로우 {#workflows}
+## 워크플로 {#workflows}
 
 ### 임시 워크플로우 {#transient-workflows}
 
@@ -222,7 +222,7 @@ XMP 원본에 쓰기 는 메타데이터가 [!DNL Experience Manager]를 입력�
 * 자산의 버전이 만들어집니다
 * [!UICONTROL DAM 자산 업데이트] 자산에 대해 실행됩니다
 
-나열된 결과는 상당한 자원을 소모한다. 따라서 Adobe은 다음을 권장합니다 [XMP 원본에 쓰기 비활성화](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)필요한 경우 ).
+나열된 결과는 상당한 자원을 소모한다. 따라서 Adobe은 필요하지 않은 경우 XMP 원본에 쓰기 기능을 사용하지 않도록 설정하는 것이 좋습니다. 자세한 내용은 [XMP 원본에 쓰기](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html).
 
 워크플로우 실행 플래그를 선택하면 대량의 메타데이터를 가져오면 리소스 집약적인 XMP 원본에 쓰기 활동이 발생할 수 있습니다. 다른 사용자의 성능에 영향을 주지 않도록 서버 사용 공간을 적게 사용하는 동안 이러한 가져오기를 계획합니다.
 
@@ -242,7 +242,7 @@ XMP 원본에 쓰기 는 메타데이터가 [!DNL Experience Manager]를 입력�
 
 ## 인덱스 검색 {#search-indexes}
 
-설치 [최신 서비스 팩](/help/release-notes/release-notes.md) 및 성능 관련 핫픽스에는 시스템 인덱스에 대한 업데이트가 자주 포함됩니다. 자세한 내용은 [성능 조정 팁](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) 일부 색인이 최적화되었습니다.
+설치 [최신 서비스 팩](/help/release-notes/release-notes.md) 및 성능 관련 핫픽스에는 시스템 인덱스에 대한 업데이트가 자주 포함됩니다. 자세한 내용은 [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=en) 일부 색인이 최적화되었습니다.
 
 자주 실행하는 쿼리에 대한 사용자 지정 인덱스를 만듭니다. 자세한 내용은 [슬로우 쿼리 분석 방법](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) 및 [사용자 지정 인덱스 작성](/help/sites-deploying/queries-and-indexing.md). 쿼리 및 색인 우수 사례에 대한 추가 인사이트를 보려면 [쿼리 및 색인 생성에 대한 우수 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

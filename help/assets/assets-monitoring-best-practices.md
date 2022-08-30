@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1670'
 ht-degree: 1%
 
 ---
@@ -193,7 +193,7 @@ Java 기반 애플리케이션 스택과 마찬가지로 [!DNL Experience Manage
 모니터링 과정에서 문제가 발생하면 다음과 같은 몇 가지 문제 해결 작업을 수행하여 [!DNL Experience Manager] 배포:
 
 * TarMK를 사용하는 경우 Tar 압축을 자주 실행합니다. 자세한 내용은 [저장소 유지 관리](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* 확인 `OutOfMemoryError` 로그. 자세한 내용은 [메모리 문제 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+* 확인 `OutOfMemoryError` 로그. 자세한 내용은 [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * 색인화되지 않은 쿼리, 트리 순회 또는 인덱스 순번에 대한 참조가 로그에 있는지 확인합니다. 색인화되지 않은 쿼리 또는 제대로 인덱싱되지 않은 쿼리를 나타냅니다. 쿼리 및 색인 지정 성능 최적화에 대한 우수 사례가 필요하면 를 참조하십시오 [쿼리 및 색인 생성에 대한 우수 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * 워크플로우 콘솔을 사용하여 워크플로우가 예상대로 작동하는지 확인합니다. 가능하면 여러 워크플로우를 하나의 워크플로우로 압축합니다.

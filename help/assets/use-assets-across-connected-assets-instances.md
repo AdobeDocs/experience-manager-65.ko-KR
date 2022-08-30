@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '3802'
+source-wordcount: '3803'
 ht-degree: 17%
 
 ---
@@ -33,14 +33,14 @@ ht-degree: 17%
 
 에서 페이지 편집 시 [!UICONTROL 페이지 편집기] 작성자가 대상 대상으로 다른 위치에서 자산을 원활하게 검색, 탐색 및 포함할 수 있습니다 [!DNL Assets] 자산의 소스 역할을 하는 배포입니다. 관리자는 배포의 1회 통합을 만듭니다. [!DNL Experience Manager] with [!DNL Sites] 다른 배포를 통한 기능 [!DNL Experience Manager] with [!DNL Assets] 기능. 사이트 작성자는 연결된 자산을 통해 사이트의 웹 페이지에서 Dynamic Media 이미지를 사용하고 스마트 자르기 및 이미지 사전 설정과 같은 Dynamic Media 기능을 활용할 수도 있습니다.
 
-대상 [!DNL Sites] 작성자는 원격 자산을 읽기 전용 로컬 자산으로 사용할 수 있습니다. 이 기능은 사이트 편집기에서 원격 자산을 원활하게 검색하고 액세스할 수 있도록 지원합니다. 사이트에서 전체 자산 말뭉치를 사용할 수 있어야 하는 기타 사용 사례의 경우, 연결된 자산을 활용하는 대신 자산을 일괄적으로 마이그레이션하는 것이 좋습니다. 자세한 내용은 [Experience Manager Assets 마이그레이션 안내서](/help/assets/assets-migration-guide.md).
+대상 [!DNL Sites] 작성자는 원격 자산을 읽기 전용 로컬 자산으로 사용할 수 있습니다. 이 기능은 사이트 편집기에서 원격 자산을 원활하게 검색하고 액세스할 수 있도록 지원합니다. Sites에서 전체 자산 말뭉치를 사용할 수 있어야 하는 기타 사용 사례에 대해서는 연결된 자산을 사용하는 대신 자산을 일괄적으로 마이그레이션하는 것이 좋습니다. 자세한 내용은 [Experience Manager Assets 마이그레이션 안내서](/help/assets/assets-migration-guide.md).
 
 ### 사전 요구 사항 및 지원되는 배포 {#prerequisites}
 
 이 기능을 사용하거나 구성하기 전에 다음을 확인하십시오.
 
 * 사용자는 각 배포에 적절한 사용자 그룹의 일부입니다.
-* 대상 [!DNL Adobe Experience Manager] 배포 유형인 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] 6.5 [!DNL Assets] 작업 [!DNL Experience Manager] as a Cloud Service. 에서 이 기능이 작동하는 방식에 대한 자세한 정보 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]를 참조하십시오. [Experience Manager as a Cloud Service의 연결된 자산](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* 대상 [!DNL Adobe Experience Manager] 배포 유형인 지원되는 기준 중 하나가 충족됩니다. [!DNL Experience Manager] 6.5 [!DNL Assets] 작업 [!DNL Experience Manager] as a Cloud Service. 에서 이 기능이 작동하는 방식에 대한 자세한 정보 [!DNL Experience Manager] 로서의 [!DNL Cloud Service]를 참조하십시오. [Experience Manager as a Cloud Service의 연결된 자산](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] AMS에서 | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
    |---|---|---|---|
@@ -158,7 +158,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
 구성하려면 [!DNL Dynamic Media] on [!DNL Assets] 및 [!DNL Sites] 배포:
 
-1. 활성화 및 구성 [!DNL Dynamic Media] 원격에서 글로벌 구성으로 사용 [!DNL Assets] 작성자 배포. Dynamic Media을 구성하려면 다음을 참조하십시오 [Dynamic Media 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).<br/>
+1. 활성화 및 구성 [!DNL Dynamic Media] 원격에서 글로벌 구성으로 사용 [!DNL Assets] 작성자 배포. Dynamic Media을 구성하려면 다음을 참조하십시오 [Dynamic Media 구성](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
 원격 [!DNL Assets] 배포, [!UICONTROL Dynamic Media 동기화 모드], 선택 **[!UICONTROL 기본적으로 활성화됨]**.
 
 1. 에 설명된 대로 연결된 자산 구성 만들기 [사이트 및 자산 배포 간 연결 구성](#configure-a-connection-between-sites-and-assets-deployments). 또한, **[!UICONTROL Dynamic Media 연결된 자산에 대한 원본 렌디션 가져오기]** 선택 사항입니다.
@@ -169,7 +169,7 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
    * 로컬 [!DNL Sites], in [!UICONTROL Dynamic Media 동기화 모드], 선택 **[!UICONTROL 기본적으로 비활성화됨]**. 다음 [!DNL Sites] 배포에 대한 읽기 전용 액세스 권한이 있어야 합니다. [!DNL Dynamic Media] 계정이 필요합니다.
    * 로컬 [!DNL Sites]에서 **[!UICONTROL 자산 게시]** 선택 **[!UICONTROL 선택적 게시]**. 선택하지 않음 **[!UICONTROL 모든 콘텐츠 동기화]**.
 
-1. 활성화 [[!DNL Dynamic Media] 이미지 코어 구성 요소 의 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). 이 기능은 기본값을 활성화합니다 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) 표시 [!DNL Dynamic Media] 이미지 이미지 [!DNL Dynamic Media] 로컬 웹 페이지의 작성자가 이미지를 사용합니다 [!DNL Sites] 배포.
+1. 활성화 [[!DNL Dynamic Media] 이미지 코어 구성 요소 의 지원](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). 이 기능은 기본값을 활성화합니다 [이미지 구성 요소](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) 표시 [!DNL Dynamic Media] 이미지 이미지 [!DNL Dynamic Media] 로컬 웹 페이지의 작성자가 이미지를 사용합니다 [!DNL Sites] 배포.
 
 ## 원격 자산 사용 {#use-remote-assets}
 
