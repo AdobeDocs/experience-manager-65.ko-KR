@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
 workflow-type: tm+mt
-source-wordcount: '5904'
+source-wordcount: '5912'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ AEM 6.3에서는 온라인 개정 정리 라는 이 기능의 온라인 버전�
 
 * [온라인 개정 정리 실행 방법](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup)
 * [온라인 개정 정리 FAQ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions)
-* [오프라인 개정 정리를 실행하는 방법](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)
+* [오프라인 개정 정리 실행 방법](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)
 
 또한 [공식 Oak 문서입니다.](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html)
 
@@ -128,7 +128,7 @@ TarMK GC: no base state available, running full compaction instead
 
 ### AEM 6.5 업그레이드 고려 사항 {#aem-upgrade-considerations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td>질문 </td>
@@ -143,7 +143,7 @@ TarMK GC: no base state available, running full compaction instead
 
 ### Oak 세그먼트 Tar로 마이그레이션 {#migrating-to-oak-segment-tar}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>질문</strong></td>
@@ -205,7 +205,7 @@ TarMK GC: no base state available, running full compaction instead
 
 ### 온라인 개정 정리 실행 {#running-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>질문</strong></td>
@@ -368,7 +368,7 @@ TarMK GC: no base state available, running full compaction instead
 
 ### 온라인 개정 정리 모니터링 {#monitoring-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>온라인 개정 정리 중에 모니터링해야 하는 것은 무엇입니까?</strong></td>
@@ -453,7 +453,7 @@ TarMK GC: no base state available, running full compaction instead
 
 ### 온라인 개정 정리 문제 해결 {#troubleshooting-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>온라인 개정 정리를 실행하지 않을 경우 발생할 수 있는 최악의 상황은 무엇입니까?</strong></td>
@@ -507,15 +507,68 @@ TarMK GC: no base state available, running full compaction instead
 
 온라인 개정 정리 프로세스 중에 사고가 발생하면 error.log가 자세히 표시됩니다. 다음 매트릭스는 가장 일반적인 메시지를 설명하고 가능한 솔루션을 제공하는 것을 목표로 합니다.
 
-| **단계** | **로그 메시지** | **설명** | **다음 단계** |
+<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
-|  |  |  |  |
-| 예측 | TarMK GC #2: 압축이 일시 중지되었으므로 예측을 건너뜁니다. | 구성에 의해 시스템에서 압축이 비활성화된 경우 추정 단계를 건너뜁니다. | 온라인 개정 정리를 활성화합니다. |
-|  | TarMK GC #2: 중단된 항목: ${REASON}. 압축을 건너뜁니다. | 추정 단계가 너무 빨리 종료되었습니다. 추정 단계를 방해할 수 있는 이벤트의 일부 예: 호스트 시스템의 메모리 또는 디스크 공간이 부족합니다. | 주어진 이유에 따라 다릅니다. |
-| 압축 | TarMK GC #2: 압축 일시 중지됨 | 구성 시 압축 단계가 일시 중지된 경우에는 추정 단계와 압축 단계가 실행되지 않습니다. | 온라인 개정 정리를 활성화합니다. |
-|  | TarMK GC #2: 압축 취소됨: ${REASON}. | 압축 단계가 너무 빨리 종료되었습니다. 압축 단계를 방해할 수 있는 이벤트의 일부 예: 호스트 시스템의 메모리 또는 디스크 공간이 부족합니다. 또한 시스템을 종료하거나 작업 대시보드 내의 유지 관리 창과 같은 관리 인터페이스를 통해 명시적으로 취소하여 압축 기능을 취소할 수도 있습니다. | 주어진 이유에 따라 다릅니다. |
-|  | TarMK GC #2: 5회 후 32.902분(1974140ms)에 압축이 실패했습니다. | 이 메시지는 복구할 수 없는 오류가 있다는 것을 의미하지는 않지만 특정 양의 시도 후에 압축만 종료되었습니다. 또한, [다음 단락을 참조하십시오.](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). | 다음을 참조하십시오 [Oak 설명서](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), 및 의 마지막 질문 [온라인 개정 정리 실행](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) 섹션을 참조하십시오. |
-| 정리 | TarMK GC #2: 정리 중단 | 저장소를 종료하여 정리를 취소했습니다. 일관성에 영향을 주지 않습니다. 또한 디스크 공간이 완전히 재생되지 않을 가능성이 높습니다. 다음 개정 정리 주기 동안 회수됩니다. | 리포지토리가 종료된 이유를 조사하고 유지 관리 기간 동안 리포지토리를 종료하지 않도록 계속 시도합니다. |
+|   |  |  |  |
+| Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
+|   |TarMK GC #2: estimation interrupted: ${REASON}. Skipping compaction. |The estimation phase terminated prematurely. Some examples of events that could interrupt the estimation phase: not enough memory or disk space on the host system. |Depends on the given reason. |
+| Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
+|   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
+|   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message doesn’t mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>단계</th>
+    <th>로그 메시지</th>
+    <th>설명</th>
+    <th>다음 단계</th>
+  </tr>  
+  <tr>
+    <td>예측</td>
+    <td>TarMK GC #2: 압축이 일시 중지되었으므로 예측을 건너뜁니다.</td>
+    <td>구성에 의해 시스템에서 압축이 비활성화된 경우 추정 단계를 건너뜁니다.</td>
+    <td>온라인 개정 정리를 활성화합니다.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>해당 없음</td>
+    <td>TarMK GC #2: 중단된 항목: ${REASON}. 압축을 건너뜁니다.</td>
+    <td>추정 단계가 너무 빨리 종료되었습니다. 추정 단계를 방해할 수 있는 이벤트의 일부 예: 호스트 시스템의 메모리 또는 디스크 공간이 부족합니다.</td>
+    <td>주어진 이유에 따라 다릅니다.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>압축</td>
+    <td>TarMK GC #2: 압축이 일시 중지되었습니다.</td>
+    <td>구성 시 압축 단계가 일시 중지된 경우에는 추정 단계와 압축 단계가 실행되지 않습니다.</td>
+    <td>온라인 개정 정리를 활성화합니다.</td>
+  </td>
+  </tr>
+   <tr>
+    <td>해당 없음</td>
+    <td>TarMK GC #2: 압축 취소됨: ${REASON}.</td>
+    <td>압축 단계가 너무 빨리 종료되었습니다. 압축 단계를 방해할 수 있는 이벤트의 일부 예: 호스트 시스템의 메모리 또는 디스크 공간이 부족합니다. 또한 시스템을 종료하거나 작업 대시보드 내의 유지 관리 창과 같은 관리 인터페이스를 통해 명시적으로 취소하여 압축 기능을 취소할 수도 있습니다.</td>
+    <td>주어진 이유에 따라 다릅니다.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>해당 없음</td>
+    <td>TarMK GC #2: 5회 후 32.902분(1974140ms)에 압축이 실패했습니다.</td>
+    <td>이 메시지는 복구할 수 없는 오류가 있다는 것을 의미하지는 않지만 특정 양의 시도 후에 압축만 종료되었습니다. 또한, <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">다음 단락을 참조하십시오.</a></td>
+    <td>다음을 참조하십시오 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak 설명서</a>, 및 온라인 개정 정리 실행 섹션의 마지막 질문입니다.</a></td>
+  </td>
+  </tr>
+  <tr>
+    <td>정리</td>
+    <td>TarMK GC #2: 정리가 중단되었습니다.</td>
+    <td>저장소를 종료하여 정리를 취소했습니다. 일관성에 영향을 주지 않습니다. 또한 디스크 공간은 최대한 복구되지 않을 가능성이 높습니다. 다음 개정 정리 주기 동안 회수됩니다.</td>
+    <td>리포지토리가 종료된 이유를 조사하고 앞으로 유지 관리 기간 동안 리포지토리를 종료하지 않도록 합니다.</td>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 ## 오프라인 개정 정리를 실행하는 방법 {#how-to-run-offline-revision-cleanup}
 
@@ -601,7 +654,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 ### 오프라인 개정 정리 FAQ {#offline-revision-cleanup-frequently-asked-questions}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>오프라인 개정 정리 기간을 결정하는 요소는 무엇입니까?</strong></td>
