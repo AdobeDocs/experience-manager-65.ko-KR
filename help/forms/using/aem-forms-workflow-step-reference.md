@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: de7b1d2d0f3863f9554b346204c18cc57d4bf814
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '7575'
 ht-degree: 0%
@@ -442,9 +442,9 @@ XDP(양식 디자이너)에서 만든 양식을 PDF 양식으로 렌더링합니
 * **[!UICONTROL 다음을 사용하여 XCI 파일 선택]**: XCI 파일은 양식 디자인 요소에 사용되는 글꼴과 기타 속성을 설명하는 데 사용됩니다. 페이로드에 대해 XCI 파일을 절대 경로 또는 문서 데이터 유형의 변수를 사용하여 유지할 수 있습니다.
 
 * **[!UICONTROL 로케일]**: PDF 문서를 생성하는 데 사용되는 언어를 지정합니다. 리터럴 값을 제공하는 경우 목록에서 언어를 선택하거나 다음 값 중 하나를 선택합니다.
-   * **서버 기본값을 사용하려면**: (기본값) AEM Forms 서버에 구성된 로케일 설정을 사용합니다. 로케일 설정은 관리 콘솔을 사용하여 구성됩니다. (자세한 내용은 [디자이너 도움말](http://www.adobe.com/go/learn_aemforms_designer_65_kr))
+   * **서버 기본값을 사용하려면**: (기본값) AEM Forms 서버에 구성된 로케일 설정을 사용합니다. 로케일 설정은 관리 콘솔을 사용하여 구성됩니다. (자세한 내용은 [디자이너 도움말](https://www.adobe.com/go/learn_aemforms_designer_65))
 
-   * **사용자 지정 값을 사용하려면**: 리터럴 상자에 로케일 코드를 입력하거나 로케일 코드를 포함하는 문자열 변수를 선택합니다. 지원되는 로케일 코드의 전체 목록은 http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html 을 참조하십시오.
+   * **사용자 지정 값을 사용하려면**: 리터럴 상자에 로케일 코드를 입력하거나 로케일 코드를 포함하는 문자열 변수를 선택합니다. 지원되는 로케일 코드의 전체 목록은 https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html 을 참조하십시오.
 
 * **[!UICONTROL 복사]**: 출력에 대해 생성할 복사본 수를 지정하는 정수 값입니다. 기본값은 1입니다.
 

@@ -2,7 +2,7 @@
 title: Adobe Experience Manager용 액세스 가능한 컨텐츠 만들기(WCAG 2.1 적합성)
 description: AEM을 사용하여 장애가 있는 사람이 액세스하여 사용 가능한 웹 컨텐츠 제작 관련
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '13956'
 ht-degree: 99%
@@ -563,7 +563,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 의미상 웹 콘텐�
 >
 >* [Px에서 Em으로 계산기 - 옴니](https://www.omnicalculator.com/conversion/px-to-em)
 >* [글꼴 크기 변환: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX에서 EM으로 간단하게 변환](http://pxtoem.com)
+>* [PMtoEM.com: PX에서 EM으로 간단하게 변환](https://pxtoem.com)
 
 
 대비율을 확인하려면 [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html)나 [WebAIM 색상 대비 검사기와 같은 색상 대비 도구](https://www.webaim.org/resources/contrastchecker/)를 사용하십시오. 이러한 도구를 사용하면 색상 쌍을 검사하고 대비 문제에 대해 보고할 수 있습니다.

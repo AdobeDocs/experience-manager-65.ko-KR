@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '3982'
 ht-degree: 2%
@@ -230,7 +230,7 @@ ht-degree: 2%
 
 * [호환성 패키지](compatibility-package.md). 호환성 패키지를 설치하여 **문자** 옵션 **Forms** 페이지.
 * XDP([레이아웃](/help/forms/using/document-fragments.md)).
-* 기타 XDP([레이아웃 조각](document-fragments.md#document-fragments)) 글자의 일부를 형성합니다. XDP\Layout은 [디자이너](http://www.adobe.com/go/learn_aemforms_designer_65_kr).
+* 기타 XDP([레이아웃 조각](document-fragments.md#document-fragments)) 글자의 일부를 형성합니다. XDP\Layout은 [디자이너](https://www.adobe.com/go/learn_aemforms_designer_65).
 * 관련 [데이터 사전](/help/forms/using/data-dictionary.md) (선택 사항).
 * 다음 [데이터 모듈](/help/forms/using/document-fragments.md) 서신 시 사용하고 싶습니다.
 * [테스트 데이터](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) 는 테스트 데이터가 포팅된 XML 파일입니다. 데이터 사전을 사용하는 경우 테스트 데이터가 필요합니다.

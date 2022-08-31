@@ -1,13 +1,13 @@
 ---
 title: AEM 6.5 사용 안내서 허브
-seo-title: AEM 6.5 사용 안내서 허브
+seo-title: AEM 6.5 User Guide Hub
 description: AEM 6.5를 이해, 설치, 관리 및 사용하는 데 필요한 모든 리소스에 대한 개요입니다
-seo-description: AEM 6.5를 이해, 설치, 관리 및 사용하는 데 필요한 모든 리소스에 대한 개요입니다
+seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
 exl-id: 51788662-6214-408e-98d9-692950c366be
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 33%
+source-wordcount: '214'
+ht-degree: 21%
 
 ---
 
@@ -37,19 +37,19 @@ ht-degree: 33%
 
 지원 위임자는 다음을 통해 지원을 받을 수 있습니다.
 
-* 웹:Experience Manager 지원 포털
-* 전화:[지역의 전화 번호를 찾습니다.](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)
+* 웹: Experience Manager 지원 포털
+* 전화: [지역 전화 번호를 찾으십시오.](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)
 
 >[!NOTE]
 >
->**지원 대리자**&#x200B;인지 확실하지 않습니다. 이 [사용자 유형이](https://helpx.adobe.com/experience-cloud/supported-users.html)에 적용되는지 확인하고 [엔터프라이즈 지원 약관](https://helpx.adobe.com/support/programs/enterprise-support-terms.html)에 대해 알아봅니다.
+>당신이 **지원 위임**? 이 문제가 [사용자 유형이](https://helpx.adobe.com/experience-cloud/supported-users.html) 에 대해 [엔터프라이즈 지원 용어](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
 
 ## 커뮤니티 {#community}
 
 대화에 참여하십시오!
 
-* [AEM Sites 포럼](http://help-forums.adobe.com/content/adobeforums/kr/experience-manager-forum/adobe-experience-manager.html)
-* [AEM Communities 포럼](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-communities.html)
-* [AEM Forms 포럼](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-forms.html)
-* [AEM Assets 포럼](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-assets.html)
-* [AEM Mobile 포럼](http://forums.adobe.com/community/experiencemanagermobile)
+* [AEM Sites 포럼](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+* [AEM Communities 포럼](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-communities.html)
+* [AEM Forms 포럼](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-forms.html)
+* [AEM Assets 포럼](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-assets.html)
+* [AEM Mobile 포럼](https://forums.adobe.com/community/experiencemanagermobile)

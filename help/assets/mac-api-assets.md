@@ -5,7 +5,7 @@ contentOwner: AG
 role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1758'
 ht-degree: 2%
@@ -289,7 +289,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 사용 안 함 `/content/dam` 를 입력합니다. 자산을 이동하고 기존 자산을 덮어쓰는 샘플 명령은 다음과 같습니다.
 
 ```shell
-curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
+curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: https://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
 ```
 
 **응답 코드**: 응답 코드는 다음과 같습니다.

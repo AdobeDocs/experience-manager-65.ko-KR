@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2244'
 ht-degree: 0%
@@ -36,11 +36,11 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p>AEM Forms 및 다른 Adobe 제품과 통합하는 방법에 대한 일반 정보</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms 개요</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms 개요</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>AEM Forms에 사용할 수 있는 모든 설명서</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms 설명서</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms 설명서</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>이 제품 버전에 대한 패치 업데이트, 기술 정보 및 추가 정보</p> </td>
@@ -98,7 +98,7 @@ Workbench는 개발자와 양식 작성자가 자동화된 비즈니스 프로�
 
 ### 지원되는 플랫폼 {#supported-platforms}
 
-Workbench에 대해 지원되는 플랫폼 전체 목록을 참조 하십시오. [AEM Forms 지원 플랫폼](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Workbench에 대해 지원되는 플랫폼 전체 목록을 참조 하십시오. [AEM Forms 지원 플랫폼](https://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## 디자이너 설치 고려 사항 {#designer-installation-considerations}
 
@@ -173,7 +173,7 @@ Workbench를 설치하기 전에 환경에 Workbench를 실행하는 데 필요�
 1. 이제 컴퓨터에 다음 항목이 설치됩니다.
    * **Workbench**: 시작 메뉴에서 Workbench를 실행하려면 바로 가기 폴더를 저장하도록 선택한 경우 모든 프로그램 > AEM Forms > 워크벤치를 선택합니다. 자세한 내용은 <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Workbench 사용</a> 설명서.
    * **디자이너**: Workbench 내에서 디자이너에 액세스할 수 있습니다. 자세한 내용은 의 시작하기 항목을 참조하십시오. <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">디자이너 도움말</a>.
-   * **AEM Forms SDK**: SDK 사용에 대한 자세한 내용은 <a href="http://www.adobe.com/go/learn_aemforms_programming_65">AEM Forms을 사용한 프로그래밍</a>.
+   * **AEM Forms SDK**: SDK 사용에 대한 자세한 내용은 <a href="https://www.adobe.com/go/learn_aemforms_programming_65">AEM Forms을 사용한 프로그래밍</a>.
 
 ## 프로세스 업그레이드 {#upgrading-processes}
 
@@ -232,7 +232,7 @@ Forms 생성기 또는 출력으로 특정 양식 서식 파일의 캐시 항목
 * **템플릿 UUID**: 디자이너는 각 템플릿에 양식 및 해당 버전에 대한 고유 식별자(UUID)를 삽입합니다. 양식이 업데이트될 때마다 포함된 UUID가 업데이트됩니다. 예를 들어 XDP 템플릿에 다음 컨텐츠가 표시될 수 있습니다.
 
    `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
+   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **렌더링 옵션**: 렌더링된 양식 캐시 내에서 캐시 컨텐츠는 각 고유한 렌더링 옵션 세트에 대해 별도로 저장됩니다.
 
@@ -267,7 +267,7 @@ Campaign 컨트롤 패널에서 프로그램 추가 또는 제거 기능을 사�
 네트워크 프린터 관리자가 XDC 편집기를 사용하기 전에 샘플 XDC 파일의 위치를 변경하고 XDC 편집기를 사용하여 장치 프로필 만들기를 참조하십시오.
 
 **샘플 XDC 파일을 가져오려면**:
-1. AEM Forms 서버에서 [AEM Forms 루트]\sdk\samples\Output\IVS
+1. AEM Forms 서버에서 XDC 폴더를 찾습니다. [AEM Forms 루트]\sdk\samples\Output\IVS
 1. 이 폴더의 컨텐츠를 Workbench 또는 Eclipse 시스템에서 액세스할 수 있는 디렉토리에 복사합니다.
 
 **XDC 편집기 도움말을 확인하려면**:

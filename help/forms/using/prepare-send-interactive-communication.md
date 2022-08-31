@@ -1,17 +1,17 @@
 ---
 title: 에이전트 UI를 사용하여 대화형 통신 준비 및 보내기
-seo-title: 에이전트 UI를 사용하여 대화형 통신 준비 및 보내기
+seo-title: Prepare and send Interactive Communication using the Agent UI
 description: 에이전트 UI를 사용하여 에이전트가 대화형 커뮤니케이션을 준비하고 사후 프로세스로 전송할 수 있습니다. 에이전트는 필요한 수정 사항을 가능한 한 수행하고 전자 메일 또는 인쇄와 같은 사후 프로세스에 대화형 커뮤니케이션을 제출합니다.
-seo-description: 에이전트 UI를 사용하여 대화형 통신 준비 및 보내기
+seo-description: Prepare and send Interactive Communication using the Agent UI
 uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
-feature: 대화형 통신
+feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: b6774acc4ec32c87a5ad5f5b2ea885e1e1aa867e
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2021'
 ht-degree: 2%
 
 ---
@@ -32,8 +32,8 @@ ht-degree: 2%
 
 ## 에이전트 UI를 사용하여 대화형 통신 준비 {#prepare-interactive-communication-using-the-agent-ui}
 
-1. **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
-1. 적절한 대화형 커뮤니케이션을 선택하고 **[!UICONTROL 에이전트 UI 열기]**&#x200B;를 누릅니다.
+1. 선택 **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**.
+1. 적절한 대화형 커뮤니케이션을 선택하고 탭하기 **[!UICONTROL 에이전트 UI 열기]**.
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 ### 데이터 입력 {#enter-data}
 
-1. 데이터 탭에서 필요에 따라 변수, 양식 데이터 모델 속성 및 인쇄 템플릿(XDP) 필드에 데이터를 입력합니다. 별표(&amp;ast;)로 표시된 모든 필수 필드를 채워 **Submit** 단추를 활성화합니다.
+1. 데이터 탭에서 필요에 따라 변수, 양식 데이터 모델 속성 및 인쇄 템플릿(XDP) 필드에 데이터를 입력합니다. 별표(&amp;ast;)로 표시된 모든 필수 필드를 채워 **제출** 버튼을 클릭합니다.
 
    대화형 통신 미리 보기에서 데이터 필드 값을 탭하여 데이터 탭에서 해당 데이터 필드를 강조 표시하거나 그 반대의 경우도 마찬가지입니다.
 
@@ -57,7 +57,7 @@ ht-degree: 2%
 
 콘텐츠 탭에서 대화형 커뮤니케이션에서 문서 조각 및 콘텐츠 변수와 같은 콘텐츠를 관리합니다.
 
-1. **[!UICONTROL 컨텐츠]**&#x200B;를 선택합니다. 대화형 커뮤니케이션의 콘텐츠 탭이 나타납니다.
+1. 선택 **[!UICONTROL 컨텐츠]**. 대화형 커뮤니케이션의 콘텐츠 탭이 나타납니다.
 
    ![aguicontenttab](assets/agentuicontenttab.png)
 
@@ -67,9 +67,9 @@ ht-degree: 2%
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
-   컨텐츠 또는 데이터 탭의 미리 보기 왼쪽 상단에 있는 컨텐츠에서 선택한 모듈 강조 표시( ![highlightedmodulesincontentcr](assets/highlightselectedmodulesincontentccr.png))를 탭하여 미리 보기에서 관련 텍스트, 단락 또는 데이터 필드를 탭/선택하면 문서 조각으로 이동하는 기능을 비활성화하거나 활성화할 수 있습니다.
+   컨텐츠 또는 데이터 탭에서 컨텐츠( ![highlightselectedmoulesincontentcr](assets/highlightselectedmodulesincontentccr.png)) 미리 보기 왼쪽 위에서 관련 텍스트, 단락 또는 데이터 필드를 미리 보기에서 탭/선택하면 문서 조각으로 이동하는 기능을 비활성화하거나 활성화할 수 있습니다.
 
-   대화형 커뮤니케이션을 만드는 동안 에이전트가 편집할 수 있는 조각에는 선택한 컨텐츠 편집( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) 아이콘이 있습니다. 선택한 컨텐츠 편집 아이콘을 탭하여 편집 모드에서 조각을 실행하고 변경합니다. 텍스트 서식 지정 및 관리에 다음 옵션을 사용합니다.
+   대화형 커뮤니케이션을 만드는 동안 에이전트가 편집할 수 있는 조각에는 선택한 컨텐츠 편집( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) 아이콘을 클릭합니다. 선택한 컨텐츠 편집 아이콘을 탭하여 편집 모드에서 조각을 실행하고 변경합니다. 텍스트 서식 지정 및 관리에 다음 옵션을 사용합니다.
 
    * [서식 옵션](#formattingtext)
 
@@ -78,9 +78,9 @@ ht-degree: 2%
    * [특수 문자](#specialcharacters)
    * [키보드 단축키](/help/forms/using/keyboard-shortcuts.md)
 
-   에이전트 사용자 인터페이스의 다양한 문서 조각에 사용할 수 있는 작업에 대한 자세한 내용은 에이전트 사용자 인터페이스](#actionsagentui)에서 사용할 수 있는 작업 및 정보를 참조하십시오.[
+   에이전트 사용자 인터페이스의 다양한 문서 조각에 사용할 수 있는 작업에 대한 자세한 내용은 [에이전트 사용자 인터페이스에서 사용할 수 있는 작업 및 정보](#actionsagentui).
 
-1. Interactive Communication의 인쇄 출력에 페이지 나누기를 추가하려면 페이지 나누기를 삽입할 위치에 커서를 놓고 다음 페이지 나누기 또는 다음 페이지 나누기( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png))를 선택합니다.
+1. Interactive Communication의 인쇄 출력에 페이지 나누기를 추가하려면 페이지 나누기를 삽입할 위치에 커서를 놓고 다음 페이지 나누기 전에 또는 다음 페이지 나누기를 선택합니다( ![pagebreveforeafter](assets/pagebreakbeforeafter.png)).
 
    대화형 커뮤니케이션에 명시적 페이지 브레이크 자리 표시자가 삽입됩니다. 명시적 페이지 나누기가 대화형 커뮤니케이션에 미치는 영향을 보려면 인쇄 미리 보기를 참조하십시오.
 
@@ -90,13 +90,13 @@ ht-degree: 2%
 
 ### 첨부 파일 관리 {#manage-attachments}
 
-1. **[!UICONTROL 첨부 파일]**&#x200B;을 선택합니다. Agent UI는 Interactive Communication을 생성하는 동안 설정된 대로 사용 가능한 첨부 파일을 표시합니다.
+1. 선택 **[!UICONTROL 첨부 파일]**. Agent UI는 Interactive Communication을 생성하는 동안 설정된 대로 사용 가능한 첨부 파일을 표시합니다.
 
    보기 아이콘을 탭하여 Interactive Communication과 함께 첨부 파일을 제출하지 않도록 선택할 수 있으며, 첨부 파일에서 십자를 탭하여 Interactive Communication에서 해당 첨부 파일을 삭제할 수 있습니다(에이전트가 첨부 파일을 삭제하거나 숨길 수 있는 경우). 대화형 커뮤니케이션을 만드는 동안 필수로 지정된 첨부 파일의 경우 보기 및 삭제 아이콘이 비활성화됩니다.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. 라이브러리 액세스( ![라이브러리 액세스](assets/libraryaccess.png)) 아이콘을 탭하여 콘텐츠 라이브러리에 액세스하여 DAM 자산을 첨부 파일로 삽입합니다.
+1. 라이브러리 액세스( ![libraryaccess](assets/libraryaccess.png)) 아이콘을 사용하여 컨텐츠 라이브러리에 액세스하여 DAM 자산을 첨부 파일로 삽입합니다.
 
    >[!NOTE]
    >
@@ -105,13 +105,13 @@ ht-degree: 2%
 1. Interactive Communication을 생성하는 동안 첨부 파일의 순서가 잠겨 있지 않은 경우 첨부 파일을 선택하고 아래쪽 및 위쪽 화살표를 탭하여 첨부 파일의 순서를 변경할 수 있습니다.
 1. Web Preview 및 Print Preview를 사용하여 두 출력이 요구 사항에 해당하는지 확인합니다.
 
-   미리 보기가 만족스러우면 **[!UICONTROL 제출]**&#x200B;을 눌러 대화형 커뮤니케이션을 게시물 프로세스에 제출/전송합니다. 또는 변경을 수행하려면 미리 보기를 종료하여 변경 사항으로 돌아갑니다.
+   미리 보기가 만족스러우면 을 누릅니다 **[!UICONTROL 제출]** 인터랙티브한 커뮤니케이션을 게시물 프로세스에 제출/전송합니다. 또는 변경을 수행하려면 미리 보기를 종료하여 변경 사항으로 돌아갑니다.
 
 ## 텍스트 서식 지정 {#formattingtext}
 
 에이전트 UI에서 텍스트 조각을 편집하는 동안 도구 모음은 사용자가 선택한 편집 유형에 따라 변경됩니다. 글꼴, 단락 또는 목록:
 
-![](assets/typeofformattingtoolbar.png) ![typeformatingtoolbar글꼴 도구 모음](do-not-localize/fonttoolbar.png)
+![typoformingtoolbar](assets/typeofformattingtoolbar.png) ![글꼴 도구 모음](do-not-localize/fonttoolbar.png)
 
 글꼴 도구 모음
 
@@ -135,13 +135,13 @@ ht-degree: 2%
 
 ### 텍스트에 특수 문자 삽입 {#specialcharacters}
 
-에이전트 UI가 210개의 특수 문자를 지원합니다. 관리자는 [사용자 지정](/help/forms/using/custom-special-characters.md)을 통해 추가/사용자 지정 특수 문자에 대한 지원을 추가할 수 있습니다.
+에이전트 UI가 210개의 특수 문자를 지원합니다. 관리자는 다음을 수행할 수 있습니다 [사용자 지정별 추가/사용자 지정 특수 문자 지원 추가](/help/forms/using/custom-special-characters.md).
 
 #### 첨부 파일 게재 {#attachmentdelivery}
 
-* 서버측 API를 대화형 또는 비대화형 PDF로 사용하여 대화형 커뮤니케이션을 렌더링하면 렌더링된 PDF에 첨부 파일이 PDF 첨부 파일로 포함됩니다.
-* Interactive Communication과 연결된 사후 프로세스가 에이전트 UI를 사용하여 제출 의 일부로 로드되면 첨부 파일이 AttachmentDocs 매개 변수의 List&lt;com.adobe.idp.Document>로 전달됩니다.
-* 전자 메일 및 인쇄와 같은 게재 메커니즘 워크플로우도 PDF 버전의 Interactive Communication과 함께 첨부 파일을 제공합니다.
+* 서버측 API를 대화형 또는 비대화형 PDF으로 사용하여 대화형 커뮤니케이션을 렌더링하면 렌더링된 PDF에 첨부 파일이 PDF 첨부 파일로 포함됩니다.
+* Interactive Communication과 연관된 사후 프로세스가 에이전트 UI를 사용하여 제출 의 일부로 로드되면 첨부 파일이 목록으로 전달됩니다&lt;com.adobe.idp.document> inAttachmentDocs 매개 변수.
+* 전자 메일 및 인쇄와 같은 게재 메커니즘 워크플로우도 Interactive Communication PDF 버전과 함께 첨부 파일을 제공합니다.
 
 ## 에이전트 사용자 인터페이스에서 사용할 수 있는 작업 및 정보 {#actionsagentui}
 
@@ -151,13 +151,13 @@ ht-degree: 2%
 
 * **위쪽/아래쪽 화살표**: 대화형 커뮤니케이션에서 문서 조각을 위 또는 아래로 이동하는 화살표
 * **삭제**: 허용되는 경우 Interactive Communication에서 문서 조각을 삭제합니다.
-* **이전 페이지 브레이크** (대상 영역의 하위 조각에 적용 가능): 문서 조각 앞에 페이지 나누기를 삽입합니다.
+* **앞에 페이지 나누기** (대상 영역의 하위 조각에 적용 가능): 문서 조각 앞에 페이지 나누기를 삽입합니다.
 * **들여쓰기**: 문서 조각의 들여쓰기를 늘리거나 줄입니다.
 * **다음 이후 페이지 나누기** (대상 영역의 하위 조각에 적용 가능): 문서 조각 뒤에 페이지 나누기를 삽입합니다.
 
 ![docfragoptions](assets/docfragoptions.png)
 
-* 편집(텍스트 조각만): 텍스트 문서 조각을 편집할 리치 텍스트 편집기를 엽니다. 자세한 내용은 [텍스트 형식 지정](#formattingtext)을 참조하십시오.
+* 편집(텍스트 조각만): 텍스트 문서 조각을 편집할 리치 텍스트 편집기를 엽니다. 자세한 내용은 [텍스트 서식 지정](#formattingtext).
 
 * 선택(눈 모양 아이콘): 대화형 커뮤니케이션에서 문서 조각을 포함\제외합니다.
 * 입력되지 않은 값(정보): 문서 조각에서 채워지지 않은 변수의 수를 나타냅니다.
@@ -181,27 +181,27 @@ Adobe은 대화형 커뮤니케이션을 초안으로 성공적으로 저장하�
 
 초안으로 저장 기능은 기본적으로 활성화되지 않습니다. 다음 단계를 수행하여 기능을 활성화합니다.
 
-1. [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) SPI(Service Provider Interface)를 구현합니다.
+1. 구현 [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) SPI(서비스 공급자 인터페이스).
 
    SPI를 사용하면 대화형 커뮤니케이션의 초안 버전을 초안 ID를 고유 식별자로 사용하여 데이터베이스에 저장할 수 있습니다. 이러한 지침은 Maven 프로젝트를 사용하여 OSGi 번들을 빌드하는 방법에 대한 이전 지식이 있다고 가정합니다.
 
-   샘플 SPI 구현에 대해서는 [샘플 ccrDocumentInstance SPI 구현](#sample-ccrDocumentInstance-spi)을 참조하십시오.
-1. `http://<hostname>:<port>/ system/console/bundles` 을 열고 **[!UICONTROL Install/Update]** 를 탭하여 OSGi 번들을 업로드합니다. 업로드된 패키지의 상태가 **Active**&#x200B;로 표시되는지 확인합니다. 패키지 상태가 **Active**&#x200B;로 표시되지 않으면 서버를 다시 시작합니다.
+   샘플 SPI 구현에 대해서는 다음을 참조하십시오 [샘플 ccrDocumentInstance SPI 구현](#sample-ccrDocumentInstance-spi).
+1. 열기 `http://<hostname>:<port>/ system/console/bundles` 탭 **[!UICONTROL 설치/업데이트]** OSGi 번들을 업로드합니다. 업로드된 패키지의 상태가 **활성**. 패키지의 상태가 (으)로 표시되지 않으면 서버를 다시 시작합니다 **활성**.
 1. 이동 `https://'[server]:[port]'/system/console/configMgr`.
-1. **[!UICONTROL 서신 구성 만들기]**&#x200B;를 누릅니다.
-1. **[!UICONTROL CCRDocumentInstanceService]**&#x200B;를 선택하고 **[!UICONTROL Save]**&#x200B;를 탭합니다.
+1. 탭 **[!UICONTROL 서신 구성 만들기]**.
+1. 선택 **[!UICONTROL CCRDocumentInstanceService를 사용하여 저장 활성화]** 탭 **[!UICONTROL 저장]**.
 
 ### 대화형 커뮤니케이션을 초안으로 저장 {#save-as-draft-agent-ui}
 
 대화형 커뮤니케이션을 초안으로 저장하려면 다음 단계를 수행합니다.
 
-1. Forms Manager에서 대화형 커뮤니케이션을 선택하고 **[!UICONTROL 에이전트 UI 열기]**&#x200B;를 누릅니다.
+1. Forms Manager에서 대화형 통신 을 선택하고 탭합니다 **[!UICONTROL 에이전트 UI 열기]**.
 
-1. 에이전트 UI에서 적절한 변경을 수행하고 **[!UICONTROL 초안으로 저장]**&#x200B;을 누릅니다.
+1. 에이전트 UI에서 적절한 변경 작업을 수행하고 탭하기 **[!UICONTROL 초안으로 저장]**.
 
-1. **[!UICONTROL 이름]** 필드에 초안의 이름을 지정하고 **[!UICONTROL 완료]**&#x200B;를 누릅니다.
+1. 에서 초안 이름을 지정합니다 **[!UICONTROL 이름]** 필드 및 탭 **[!UICONTROL 완료]**.
 
-대화형 커뮤니케이션을 초안으로 저장하면 **[!UICONTROL 변경 내용 저장]**&#x200B;을 눌러 초안의 추가 변경 사항을 저장합니다.
+대화형 커뮤니케이션을 초안으로 저장하면 **[!UICONTROL 변경 내용 저장]** 초안의 추가 변경 사항을 저장하려면
 
 ### 대화형 커뮤니케이션의 초안 검색 {#retrieve-draft}
 
@@ -209,11 +209,11 @@ Adobe은 대화형 커뮤니케이션을 초안으로 성공적으로 저장하�
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
-[] draft는 Interactive Communication을 초안으로 저장한 후 생성된 초안 버전에 대한 고유 식별자를 나타냅니다.
+[기체] 는 대화형 커뮤니케이션을 초안으로 저장한 후 생성된 초안 버전에 대한 고유 식별자를 나타냅니다.
 
 ### 샘플 ccrDocumentInstance SPI 구현 {#sample-ccrDocumentInstance-spi}
 
-대화형 커뮤니케이션을 초안으로 저장하려면 `ccrDocumentInstance` SPI를 구현합니다. 다음은 `ccrDocumentInstance` SPI의 샘플 구현입니다.
+구현 `ccrDocumentInstance` 대화형 커뮤니케이션을 초안으로 저장하는 SPI. 다음은 의 샘플 구현입니다 `ccrDocumentInstance` SPI.
 
 ```javascript
 package Implementation;
@@ -313,9 +313,9 @@ public class CCRDraftService implements CCRDocumentInstanceService {
 }
 ```
 
-`save`, `update`, `get` 및 `getAll` 작업은 데이터베이스 서비스를 호출하여 대화형 커뮤니케이션을 초안으로 저장하고, 대화형 커뮤니케이션을 업데이트하고, 데이터베이스에서 데이터를 검색하고, 데이터베이스에서 사용 가능한 모든 대화형 커뮤니케이션에 대한 데이터를 검색합니다. 이 샘플은 `mySQLDataBaseServiceCRUD`을 데이터베이스 서비스의 이름으로 사용합니다.
+다음 `save`, `update`, `get`, 및 `getAll` 작업에서 데이터베이스 서비스를 호출하여 대화형 커뮤니케이션을 초안으로 저장하고, 대화형 커뮤니케이션을 업데이트하고, 데이터베이스에서 데이터를 검색하고, 데이터베이스에서 사용 가능한 모든 대화형 커뮤니케이션에 대한 데이터를 검색합니다. 이 샘플은 `mySQLDataBaseServiceCRUD` 을 데이터베이스 서비스의 이름으로 지정합니다.
 
-다음 표에서는 샘플 `ccrDocumentInstance` SPI 구현에 대해 설명합니다. 샘플 구현에서 `save`, `update`, `get` 및 `getAll` 작업이 데이터베이스 서비스를 호출하는 방법을 보여 줍니다.
+다음 표에서는 샘플을 설명합니다 `ccrDocumentInstance` SPI 구현. 이 URL은 `save`, `update`, `get`, 및 `getAll` 작업은 샘플 구현에서 데이터베이스 서비스를 호출합니다.
 
 <table> 
  <tbody>
@@ -342,13 +342,13 @@ public class CCRDraftService implements CCRDocumentInstanceService {
   </tbody>
 </table>
 
-다음은 구현의 일부인 `pom.xml` 파일의 예입니다.
+다음은 의 예입니다 `pom.xml` 구현의 일부인 파일:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.adobe.livecycle</groupId>
@@ -439,4 +439,4 @@ public class CCRDraftService implements CCRDocumentInstanceService {
 
 >[!NOTE]
 >
->`pom.xml` 파일에서 `aemfd-client-sdk` 종속성을 6.0.160으로 업데이트해야 합니다.
+>를 업데이트해야 합니다 `aemfd-client-sdk` 의 6.0.160에 대한 종속성 `pom.xml` 파일.

@@ -1,7 +1,8 @@
 ---
 title: WS-security 헤더를 사용하여 자격 증명을 전달하는 방법
 description: WS-security 헤더를 사용하여 자격 증명을 전달하는 방법을 알아봅니다.
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
+exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -16,7 +17,7 @@ JEE Process Management에서 AEM Forms을 사용하고, 기본 Java 프로그래
 
 **기타 필수 추가 제품**
 
-[Eclipse](https://www.eclipse.org/) 또는 [Netbeans IDE](https://netbeans.apache.org/)와 같은 Java 편집기
+와 같은 Java 편집기 [Eclipse](https://www.eclipse.org/) 또는 [Netbeans IDE](https://netbeans.apache.org/)
 
 ## 사용자 수준 {#user-level}
 
@@ -127,7 +128,7 @@ component.xml 파일은 다음과 같습니다.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<component xmlns="http://adobe.com/idp/dsc/component/document">
+<component xmlns="https://adobe.com/idp/dsc/component/document">
 <!-- Unique id identifying this component -->
    <component-id>ZipService</component-id>
 
@@ -212,13 +213,10 @@ component.xml 파일은 다음과 같습니다.
 
 * 지정된 폴더에서 모든 파일을 찾아 압축 문서로 반환합니다.
 
-* PDF 문서를 압축 해제한 후 리더기를 확장할 수 있는 많은 PDF 문서가 포함된 ZIP 파일을 제공합니다. 이렇게 하려면 JEE Reader 확장 모듈에 있는 AEM Forms이 필요합니다.
+* 압축을 해제한 후 판독기를 확장할 수 있는 많은 PDF 문서가 포함된 ZIP 파일을 제공합니다. 이렇게 하려면 JEE Reader 확장 모듈에 있는 AEM Forms이 필요합니다.
 
-* PDF 생성 서비스를 사용하여 PDF 문서로 압축 및 변환할 수 있는 이기종 유형의 문서가 포함된 ZIP 파일을 제공합니다.
+* PDF 서비스 생성을 사용하여 PDF 문서로 압축 및 변환할 수 있는 이기종 유형의 문서가 포함된 ZIP 파일을 제공합니다.
 
 * 정책은 문서 목록을 보호하고 ZIP 파일로 반환합니다.
 
 * 사용자가 프로세스 인스턴스의 모든 첨부 파일을 단일 ZIP 파일로 다운로드할 수 있습니다.
-
-
-

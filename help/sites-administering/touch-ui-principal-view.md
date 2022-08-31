@@ -11,7 +11,7 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 4ea49fe6745b23f01f46edfe07ff3dd8c8299729
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -88,7 +88,7 @@ ACE 추가 단추를 클릭하여 새 액세스 제어 항목을 추가하여 �
 
 >[!NOTE]
 >
->각 제한 사항의 의미에 대한 자세한 내용은 다음을 참조하십시오 [Jackrabbit Oak 설명서](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>각 제한 사항의 의미에 대한 자세한 내용은 다음을 참조하십시오 [Jackrabbit Oak 설명서](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 제한 유형을 선택하고 값을 입력한 다음 을 눌러 다음과 같이 제한 사항을 추가할 수 있습니다 **+** 아이콘.
 

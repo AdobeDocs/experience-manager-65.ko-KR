@@ -11,10 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
-source-git-commit: 2e6d688818e9cc337444bcda2a49485e9167a113
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '375'
+ht-degree: 2%
 
 ---
 
@@ -37,8 +37,8 @@ JEE의 AEM 6.5.12.0 Forms은 두 가지 유형의 설치 프로그램을 제공�
 1. 자세한 내용은 [AEM Forms으로 업그레이드 준비](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65) 서버 다운타임을 최소화하면서 업그레이드가 올바르게 실행되도록 하는 작업을 배우고 수행하려면 다음을 수행하십시오.
 1. 기존 환경과 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 지침을 따릅니다.
 
-   * [AEM 6.3 또는 AEM 6.4 Forms에서 JBoss용 AEM 6.5 Forms으로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-   * [AEM 6.3 또는 AEM 6.4 Forms에서 WebSphere용 AEM 6.5 Forms으로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-   * [AEM 6.3 또는 AEM 6.4 Forms에서 JBoss 턴키용 AEM 6.5 Forms으로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
+   * [AEM 6.3 또는 AEM 6.4 Forms에서 JBoss용 AEM 6.5 Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
+   * [AEM 6.3 또는 AEM 6.4 Forms에서 WebSphere용 AEM 6.5 Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
+   * [AEM 6.3 또는 AEM 6.4 Forms에서 JBoss 턴키용 AEM 6.5 Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
 
 LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms에서 AEM 6.5로 직접 업그레이드할 Forms 수 없습니다. 하나 이상의 LiveCycle 또는 AEM Forms 버전으로 중간 업그레이드를 수행한 다음, AEM 6.5 Forms으로 업그레이드할 수 있습니다. 중간 버전 및 해당 업그레이드 지침에 대해서는 [업그레이드 경로 선택](upgrade.md).

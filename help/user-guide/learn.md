@@ -4,7 +4,7 @@ seo-title: Learn About AEM 6.5 Capabilities
 description: AEM 6.5의 필수 기능에 대한 설명입니다
 seo-description: An description of the essential capabilities of AEM 6.5
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 30%
@@ -15,7 +15,7 @@ ht-degree: 30%
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites은 Adobe Experience Manager 내의 컨텐츠 관리 시스템으로 웹 사이트, 모바일 사이트 및 온사이트 화면에서 디지털 경험을 생성하고, 관리하고, 전달할 수 있는 한 개의 장소를 제공하여 글로벌 경험을 제공할 수 있지만, 개인적으로는 연관성이 있고, 매력적인 경험을 제공할 수 있습니다. [추가 정보](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) 또는 [새로운 비디오 기능 자습서 중 일부를 살펴보십시오.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+AEM Sites은 Adobe Experience Manager 내의 컨텐츠 관리 시스템으로 웹 사이트, 모바일 사이트 및 온사이트 화면에서 디지털 경험을 생성하고, 관리하고, 전달할 수 있는 한 개의 장소를 제공하여 글로벌 경험을 제공할 수 있지만, 개인적으로는 연관성이 있고, 매력적인 경험을 제공할 수 있습니다. [추가 정보](https://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) 또는 [새로운 비디오 기능 자습서 중 일부를 살펴보십시오.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
 ## AEM Assets {#aem-assets}
 
@@ -42,11 +42,11 @@ Screens는 포괄적인 디지털 마케팅 플랫폼과 함께 다양한 유형
 
 ## AEM Communities {#aem-communities}
 
-커뮤니티는 포럼, 사용자 그룹, 학습 리소스 및 고객, 직원 및 브랜드에게 유용한 기타 소셜 기능을 포함한 온라인 커뮤니티 경험을 만드는 데 도움이 되는 Adobe Experience Manager 기능입니다. [추가 정보.](http://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
+커뮤니티는 포럼, 사용자 그룹, 학습 리소스 및 고객, 직원 및 브랜드에게 유용한 기타 소셜 기능을 포함한 온라인 커뮤니티 경험을 만드는 데 도움이 되는 Adobe Experience Manager 기능입니다. [추가 정보.](https://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre는 웹에서 공유되는 모든 것을 탭하여 자체 사이트에서 신선하고 고품질 컨텐츠의 지속적인 흐름을 만들 수 있는 완전히 새로운 Adobe Experience Manager 기능입니다. [추가 정보](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) 또는 [가이드에 바로 들어가세요.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre는 웹에서 공유되는 모든 것을 탭하여 자체 사이트에서 신선하고 고품질 컨텐츠의 지속적인 흐름을 만들 수 있는 완전히 새로운 Adobe Experience Manager 기능입니다. [추가 정보](https://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) 또는 [가이드에 바로 들어가세요.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
 ## AEM 기반 정보 {#aem-foundation}
 

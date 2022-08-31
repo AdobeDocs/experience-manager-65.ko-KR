@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3778'
+ht-degree: 4%
 
 ---
 
@@ -64,24 +64,24 @@ ht-degree: 0%
       + [automated forms conversion 서비스 설치 및 구성](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + JEE에 AEM Forms 설치 {#jee-installation}
       + [JEE에서 AEM Forms에 대해 지원되는 플랫폼](using/aem-forms-jee-supported-platforms.md)
-      + [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
+      + [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
       + [AEM Forms Document Security 서버 설치 및 구성](using/installing-and-configuring-the-document-security-server.md)
-      + [AEM Forms 설치 준비 중(단일 서버)](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
-      + [JBoss용 JEE에 Adobe Experience Manager Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-      + [WebSphere용 JEE에 Adobe Experience Manager Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-      + [WebLogic용 JEE에 AEM Forms 설치 및 배포](http://www.adobe.com/go/learn_aemforms_installWebLogic_65)
+      + [AEM Forms 설치 준비 중(단일 서버)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
+      + [JBoss용 JEE에 Adobe Experience Manager Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+      + [WebSphere용 JEE에 Adobe Experience Manager Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+      + [WebLogic용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
       + [AEM Forms Workbench 설치](using/install-workbench.md)
       + [ Designer 설치 및 구성](using/installing-configuring-designer.md)
-      + [AEM Forms(서버 클러스터) 설치 준비](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
-      + [JBoss 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](http://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
-      + [WebSphere 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
-      + [WebLogic 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
+      + [AEM Forms(서버 클러스터) 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
+      + [JBoss 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
+      + [WebSphere 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
+      + [WebLogic 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
    + AEM Forms 구성 {#configure-aem-forms}
       + [AEM Forms 서버의 성능 조정](using/performance-tuning-aem-forms.md)
       + [적응형 양식 캐시 구성](using/configure-adaptive-forms-cache.md)
       + [AEM DS 설정 구성](using/configuring-the-processing-server-url-.md)
       + [동기화 스케줄러 구성](using/configure-synchronization-scheduler.md)
-      + [Microsoft SharePoint용 커넥터 구성](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
+      + [Microsoft SharePoint용 커넥터 구성](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [AEM Forms과 Adobe LiveCycle 연결](using/aem-livecycle-connector.md)
       + [JEE 프로세스에서 AEM Forms에 양식 데이터를 제출하도록 AEM Forms 구성](using/submit-form-data-livecycle-process.md)
       + [AEM Forms용 AEM 데스크탑 앱](/help/forms/using/aem-desktop-app-for-aem-forms.md)
@@ -92,13 +92,13 @@ ht-degree: 0%
       + [호환성 패키지 설치](using/compatibility-package.md)
       + [AEM Forms 에셋 및 문서 마이그레이션](using/migration-utility.md)
    + JEE에서 AEM Forms 업그레이드 {#aem-forms-jee-upgrade}
-      + [AEM Forms 업그레이드 준비](http://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
-      + [JEE의 Adobe Experience Manager Forms 업그레이드 체크리스트 및 계획](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
+      + [AEM Forms 업그레이드 준비](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
+      + [JEE의 Adobe Experience Manager Forms 업그레이드 체크리스트 및 계획](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
       + [JEE의 AEM 6.5 양식으로 업그레이드](using/upgrade-forms-jee.md)
-      + [JBoss용 JEE의 Adobe Experience Manager Forms으로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-      + [JBoss 턴키용 JEE의 AEM Forms으로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
-      + [WebSphere용 JEE의 Adobe Experience Manager Forms으로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-      + [WebLogic용 JEE의 Adobe Experience Manager Forms으로 업그레이드](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
+      + [JBoss용 JEE의 Adobe Experience Manager Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
+      + [JBoss 턴키용 JEE의 AEM Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
+      + [WebSphere용 JEE의 Adobe Experience Manager Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
+      + [WebLogic용 JEE의 Adobe Experience Manager Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
 + AEM Forms 관리 {#manage-administer-aem-forms}
    + [OSGi 그룹 및 권한의 AEM Forms](using/forms-groups-privileges-tasks.md)
    + [양식을 분류할 새 폴더 만들기](using/creating-new-folders-categorize-forms.md)
@@ -371,12 +371,12 @@ ht-degree: 0%
    + [다른 사용자를 대신하여 Protect 문서](using/protect-document-on-behalf-of-another-user.md)
 + Forms 디자이너 {#use-forms-designer}
    + [Forms 디자이너 도움말](using/forms-designer-help.md)
-   + [디자이너 사용](http://www.adobe.com/go/learn_aemforms_designer_65)
-   + [디자이너 빠른 시작 Tutorials](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-   + [디자이너 샘플](http://www.adobe.com/go/learn_aemforms_designer_samples_65)
-   + [디자이너 스크립팅 기본 사항](http://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-   + [디자이너 스크립팅 참조](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-   + [디자이너 양식 계산 참조](http://www.adobe.com/go/learn_aemforms_formCalc_65)
+   + [디자이너 사용](https://www.adobe.com/go/learn_aemforms_designer_65)
+   + [디자이너 빠른 시작 Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+   + [디자이너 샘플](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+   + [디자이너 스크립팅 기본 사항](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+   + [디자이너 스크립팅 참조](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+   + [디자이너 양식 계산 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [HTML5 양식에서 스크리블 서명 사용](using/scribble-signature.md)
    + [디자이너에서 페이지 제로 콘텐츠 변경](using/changing-page-zero-content-designer.md)
 + AEM Forms 사용자 지정 {#customize-aem-forms}
@@ -583,8 +583,8 @@ ht-degree: 0%
    + [JEE Java API 참조의 AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
    + [Form Bridge API for HTML5 forms](using/form-bridge-apis.md)
    + [응용 Forms에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
-   + [어셈블러 서비스 및 DDX 참조](http://www.adobe.com/go/learn_aemforms_ddxRef_65)
-   + [Workbench 도움말](http://www.adobe.com/go/learn_aemforms_workbench_65)
+   + [어셈블러 서비스 및 DDX 참조](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
+   + [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_65)
    + JEE에서 AEM Forms을 사용한 프로그래밍 {#programming-aem-forms-jee}
       + JEE에서 AEM Forms을 사용한 프로그래밍 소개 {#introduction-programming-aem-forms-jee}
          + [Java API QuickStart 소개](developing/introducing-java-api-soap-quick.md)

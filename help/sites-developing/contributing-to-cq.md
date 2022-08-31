@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 1%
@@ -143,7 +143,7 @@ Adobe는 예를 들어 단일 DOM 요소에 문제가 있는 경우 전체 페�
 
 JCR에는 사전 정의된 노드 유형 및 속성 유형이 많지만, 일반적으로 유형 지정 시스템은 매우 유연하며, JCR의 장점 중 하나는 구조화된 컨텐츠와 구조화되지 않은 컨텐츠를 동일한 방식으로 저장/관리할 수 있다는 것입니다. 즉, JCR은 고도로 구조화된 데이터를 수용할 수 있지만 스키마 제약 없이 임의의 동적 데이터 구조를 수용할 수도 있습니다.
 
-JCR의 Java API에 대한 JavaDoc는 [여기](http://jackrabbit.apache.org/jcr/jcr-api.html).
+JCR의 Java API에 대한 JavaDoc는 [여기](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 JavaDoc나 JCR 사양 자체를 읽기 전에 [이 높은 수준의 설명](/help/sites-developing/the-basics.md#java-content-repository) Adobe Experience Services에서 구현한 JCR의 수입니다.
 

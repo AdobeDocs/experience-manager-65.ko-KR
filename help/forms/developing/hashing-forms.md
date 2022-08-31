@@ -2,7 +2,7 @@
 title: 동적 PDF forms에서 해시를 생성하고 사용하는 방법
 description: 동적 PDF forms에서 해시 생성 및 작업
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 0%
@@ -120,5 +120,5 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [해시 충돌](https://en.wikipedia.org/wiki/Hash_collision)
 * [무지개 테이블](https://en.wikipedia.org/wiki/Rainbow_table)
-* [JavaScript MD5 프로젝트 홈 페이지](http://pajhome.org.uk/crypt/md5/)
+* [JavaScript MD5 프로젝트 홈 페이지](https://pajhome.org.uk/crypt/md5/)
 * [jsSHA2 프로젝트 홈 페이지](https://anmar.eu.org/projects/jssha2/)
