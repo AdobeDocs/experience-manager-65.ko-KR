@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '3778'
+source-wordcount: '3801'
 ht-degree: 4%
 
 ---
@@ -122,6 +122,7 @@ ht-degree: 4%
       + [JEE에서 AEM Forms에 대한 일반 보안 고려 사항](using/general-security-considerations.md)
       + [JEE 환경에서 AEM Forms 강화](using/hardening-aem-forms-jee-environment.md)
       + [JEE에서 AEM Forms에 대한 보안 관리 설정 구성](using/configuring-secure-administration-settings-aem.md)
+      + [메일 서비스에 대한 OAuth2 지원](using/oauth2-support-for-mail-service.md)
 + 양식 데이터 모델 {#form-data-model}
    + [AEM Forms 데이터 통합 소개](using/data-integration.md)
    + [데이터 소스 구성](using/configure-data-sources.md)
@@ -332,6 +333,7 @@ ht-degree: 4%
    + [분석 및 보고서 구성](using/configure-analytics-forms-documents.md)
    + [AEM Forms 분석 보고서 보기 및 이해](using/view-understand-aem-forms-analytics-reports.md)
    + [적응형 양식에 대한 A/B 테스트 만들기 및 관리](using/ab-testing-adaptive-forms.md)
+   + [Adobe Analytics와 통합](using/integrate-aem-forms-with-adobe-analytics.md)
 + AEM Forms 게시 및 처리 {#publish-process-aem-forms}
    + [포털에서 양식 게시 소개](using/introduction-publishing-forms.md)
    + [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](using/integrate-draft-submission-database.md)
@@ -681,6 +683,7 @@ ht-degree: 4%
          + [웹 서비스 API를 사용하여 DDX 문서의 유효성 검사](developing/validate-ddx-document-using-web.md)
 + 문제 해결 {#troubleshooting}
    + [특정 버전의 Oracle JDK에서 일부 양식 기능을 사용할 수 없습니다](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
+   + [JEE 버전의 응용 Forms에 대한 첨부 파일이 포함된 이메일을 가져오는 추가 단계](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
 + 이전 설명서 {#legacy-documentation}
    + [JEE Workbench의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 작성](developing/building-xml.md)
    + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](developing/compressing-decompressing-custom-dsc.md)

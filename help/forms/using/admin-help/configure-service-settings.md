@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '10683'
+source-wordcount: '10769'
 ht-degree: 0%
 
 ---
@@ -186,6 +186,16 @@ PDF 생성기 사용자 인터페이스를 통해 새로운 설정을 만들 수
 **SMTP 사용자:** SMTP 서버에 로그인하는 데 사용할 사용자 계정의 사용자 이름입니다.
 
 **SMTP 암호:** SMTP 사용자 계정과 연결된 암호입니다.
+
+**0Auth2.0 인증:** Auth2.0 인증 서비스는 조직이 보안 이메일 요구 사항을 준수할 수 있도록 통합 메일 서비스를 지원합니다.
+
+**클라이언트 ID:** Azure 포털은 인증에 사용되는 응용 프로그램 ID를 생성합니다.
+
+**클라이언트 암호:** Azure 포털은 인증에 사용되는 비밀 키를 생성합니다.
+
+**새로 고침 토큰:**  OAuth 클라이언트는 문자열을 사용하여 사용자의 상호 작용 없이 새 액세스 토큰을 가져옵니다.
+
+클라이언트 ID, 클라이언트 암호 및 새로 고침 토큰을 검색하고 사용하는 방법에 대한 자세한 내용은 [이메일 서비스를 위한 OAuth2.0 인증 지원](/help/forms/using/oauth2-support-for-mail-service.md).
 
 **SMTP 전송 보안:** SMTP 서버 연결에 사용할 보안 프로토콜:
 
