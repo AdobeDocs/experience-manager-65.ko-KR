@@ -1,10 +1,11 @@
 ---
 title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
-description: '"릴리스 정보, 새로운 기능, 사용 방법 설치 및 자세한 변경 목록 찾기 [!DNL Adobe Experience Manager] 6.5"'
+description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 783edcdf0f96426008b6f824a7aa0aa0deb5c613
+exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
+source-git-commit: 0bd7c444bf0424b60c11b7171b7ea7ae9d7f3926
 workflow-type: tm+mt
-source-wordcount: '2623'
+source-wordcount: '2624'
 ht-degree: 14%
 
 ---
@@ -52,7 +53,7 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->2022년 9월 1일부터 새로운 Experience Manager Assets 온-프레미스 고객은 스마트 컨텐츠 서비스를 사용할 수 없습니다. 이 기능을 이미 활성화한 기존 온-프레미스 및 Adobe Managed Services 고객에게 영향을 주지 않습니다.
+>2022년 9월 1일부터 새로운 Experience Manager Assets 온-프레미스 고객은 스마트 컨텐츠 서비스를 사용할 수 없습니다. 이 기능이 이미 활성화되어 있는 기존 On-Premise 및 Adobe Managed Services 고객에게 영향을 주지 않습니다.
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
