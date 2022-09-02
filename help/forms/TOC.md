@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 3f7191ecdddf7325f2c1153f1ec733893cc649dc
+source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
 workflow-type: tm+mt
-source-wordcount: '3795'
+source-wordcount: '3791'
 ht-degree: 4%
 
 ---
@@ -332,7 +332,6 @@ ht-degree: 4%
    + [분석 및 보고서 구성](using/configure-analytics-forms-documents.md)
    + [AEM Forms 분석 보고서 보기 및 이해](using/view-understand-aem-forms-analytics-reports.md)
    + [적응형 양식에 대한 A/B 테스트 만들기 및 관리](using/ab-testing-adaptive-forms.md)
-   + [Adobe Analytics와 통합](using/integrate-aem-forms-with-adobe-analytics.md)
 + AEM Forms 게시 및 처리 {#publish-process-aem-forms}
    + [포털에서 양식 게시 소개](using/introduction-publishing-forms.md)
    + [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](using/integrate-draft-submission-database.md)
