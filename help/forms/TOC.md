@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 3f7191ecdddf7325f2c1153f1ec733893cc649dc
 workflow-type: tm+mt
-source-wordcount: '3801'
+source-wordcount: '3795'
 ht-degree: 4%
 
 ---
@@ -122,7 +122,6 @@ ht-degree: 4%
       + [JEE에서 AEM Forms에 대한 일반 보안 고려 사항](using/general-security-considerations.md)
       + [JEE 환경에서 AEM Forms 강화](using/hardening-aem-forms-jee-environment.md)
       + [JEE에서 AEM Forms에 대한 보안 관리 설정 구성](using/configuring-secure-administration-settings-aem.md)
-      + [메일 서비스에 대한 OAuth2 지원](using/oauth2-support-for-mail-service.md)
 + 양식 데이터 모델 {#form-data-model}
    + [AEM Forms 데이터 통합 소개](using/data-integration.md)
    + [데이터 소스 구성](using/configure-data-sources.md)
