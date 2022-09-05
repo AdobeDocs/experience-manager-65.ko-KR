@@ -3,10 +3,10 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
+source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
 workflow-type: tm+mt
-source-wordcount: '2603'
-ht-degree: 15%
+source-wordcount: '3237'
+ht-degree: 13%
 
 ---
 
@@ -80,9 +80,49 @@ ht-degree: 15%
 
 ## [!DNL Forms] {#forms-6514}
 
+<!--
+
 >[!NOTE]
 >
-> 의 수정 사항 [!DNL Experience Manager] Forms은 예약된 후 1주일 후에 별도의 추가 기능 패키지를 통해 전달됩니다 [!DNL Experience Manager] 서비스 팩 릴리스.
+> Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+
+>[!NOTE]
+>
+>* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, September 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
+
+-->
+
+* 파일이 다중 패널 적응형 양식에 첨부되고 적응형 양식의 초안이 저장되면 오류가 발생합니다. (NPR-38978)
+* 사용자가 AdobePDF 설정으로 createPDF2 Java API를 사용하여 RGB 프로필을 CMYK 프로필로 변환하면 Java API에서 옵션이 작동하지 않습니다. 이 옵션은 독립 실행형 DistillerClient 응용 프로그램에서 잘 작동합니다. (NPR-38858, CQ-4346181)
+* AEM 6.5 Forms 서비스 팩 12(6.5.12.0)을 설치한 후 AEM Workflows의 작업 할당 단계에서 작업을 닫으려는 옵션을 제외한 모든 옵션을 사용할 수 없게 됩니다. (NPR-38743)
+* 레코드 문서(DoR)에서 테이블의 일부 값은 잘립니다. (NPR-38657)
+* 데이터 XML로 FormSet을 미리 보는 동안 XDP에 부동 필드가 포함되어 있으면 FormSet 미리 볼 때 데이터가 표시되지 않지만 미리 보기 PDF 옵션을 사용하면 데이터가 표시됩니다.
+* 응용 Forms에서 라디오 단추 및 확인란이 탭 순서가 아닙니다. (NPR-38645)
+* 를 사용하는 경우 `Summary Step` 양식을 제출한 후 번역된 적응형 양식에 대한 기록 문서(DoR)를 생성하려면 현지화된 언어로 번역되지 않습니다. (NPR-38567)
+* AEM 워크플로우 단계의 다시 시도 비활성화 옵션이 예상대로 작동하지 않습니다. 문제가 간헐적으로 나타납니다. (NPR-38547)
+* 적응형 양식이 리치 텍스트 필드로 제출되면 `an Internal Error while Submitting a Form` 오류가 발생합니다. 사용자가 양식을 제출하기 전에 리치 텍스트 필드에 포커스를 두면 오류가 발생하지 않습니다. (NPR-38542)
+* 오류 `sling-default-3-AdobeSignRefreshTokenScheduleJob com.adobe.forms.foundation.oauth.model.OAuthConfigSlingModel Refresh Token not present for: /conf/gws-eform/cashlite/settings/cloudconfigs/fdm/cashlite/jcr:content occurs` 이(가) 로그인되어 있습니다. (NPR-38541)
+* 사용자가 적응형 양식에 PDF을 업로드하면 AEM Forms 서버가 응답하지 않습니다. (NPR-38398)
+* OSGi 서버의 AEM Forms에서 문서 서비스 API를 사용하여 PDF을 인증하는 경우 다음 오류가 발생하여 실패합니다. com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311. (CQ-4346252)
+* 초안의 제출 시 `Could not upload asset from xml input` 오류가 발생합니다. 기능에는 영향을 주지 않습니다. 초안을 열었을 때, 편지가 올바르게 렌더링됩니다. (CQ-4345979, CQ-4344418)
+* 날짜를 독일어 형식으로 입력하고 `Preview with Data` 옵션이 편지에 사용되면 날짜 필드가 렌더링되지 않습니다. (CQ-4345783)
+* 웹 포털을 만들고 데이터를 기반으로 바코드를 생성할 때 일부 바코드가 올바르게 디코딩되지 않습니다. (CQ-4345743)
+* PDF으로 포스트스크립트 변환을 수행하면 출력 문서가 예상 색상으로 렌더링되지 않습니다. (CQ-4345074)
+* 리소스 확인자가 간헐적인 제출 오류를 발생시키고 단일 제출 시 동일한 스택 추적이 여러 번 나타납니다. (CQ-4344764)
+* 사용자는 `cmDataUrl` 매개 변수. 초안이 처음 열립니다. 이후 시도 시 문제가 나타나기 시작합니다. (CQ-4344418)
+* 사용자가 `&` IC(Interactive Communication)에서 기호 를 로드할 수 없습니다. (CQ-4343969)
+* AEM Forms 디자이너의 스타일 옵션을 사용하여 PCL 파일을 생성하는 경우 지정된 스타일이 생성된 파일에 적용되지 않습니다. (CQ-4339573)
+* 페이지 수가 15개를 초과하는 경우 동적 XDP 양식을 적응형 양식으로 자동 변환할 수 없습니다. 페이지 카운트가 15개 미만인 경우 잘 작동합니다. (NPR-35337)
+* 즐겨찾기에 추가 옵션을 사용하면 화면 판독기에 전환 상태를 나타내지 않습니다. (NPR-37137)
+* 양식 데이터 모델에서 데이터베이스 지원 양식 데이터 모델의 소수 이후의 값은 비용 및 작은 비용 데이터 유형에 대해 잘립니다. . (CQDOC-19509)
+* Analysis Workspace에서 워크플로우에 대한 탐색 링크를 선택하면 탐색 링크가 선택되어 있음을 나타내지 않습니다. (NPR-37138)
+* 스크리블 서명 기능은 접근성 지침과 호환되지 않습니다. (NPR-37596)
+* AEM Forms은 log4j 1.x를 사용합니다. log4j 1.x에 대한 지원이 종료되었습니다. (NPR-38273)
+* 양식 데이터 모델에서 MSSQL 데이터베이스를 데이터 소스로 사용하고 값을 검색하는 경우 검색 값에 있는 소수 이후의 숫자가 반환됩니다. (CQ-4346190)
+* Forms 6.5 Designer에서 Forms 6.1 Designer로 만든 양식을 열고 텍스트 상자를 편집하면 단락 간격이 지정된 공간을 초과합니다. 스페이스에 대한 이전 설정이 모두 제거되고 텍스트 상자의 수동 재서식이 필요합니다. (CQ-4341899)
+* 바코드 SSCC-18에 대해 잘못된 값이 표시됩니다. Forms 서버에서는 바코드의 오른쪽 부분에 있는 값을 생략합니다. (CQ-4342400)
+* Forms 6.5 Designer로 작성된 정적 PDF forms의 경우 PDF 액세스 가능성이 오류로 실패합니다 `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+* Forms 디자이너에서 하이퍼링크의 화면 Reader 텍스트를 지정하는 기능이 추가되었습니다.(NPR-36221)
 
 ## 통합 {#integrations-6514}
 
@@ -215,7 +255,11 @@ ht-degree: 15%
 >
 >을 사용하지 않는 경우 건너뜁니다 [!DNL Experience Manager] Forms.
 
-의 수정 사항 [!DNL Experience Manager] Forms은 예약된 후 1주일 후에 별도의 추가 기능 패키지를 통해 전달됩니다 [!DNL Experience Manager] 서비스 팩 릴리스.
+<!-- 
+
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+
+-->
 
 1. 를 설치했는지 확인합니다. [!DNL Experience Manager] 서비스 팩.
 1. 운영 체제에 대한 [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates)에 나열된 해당 양식 추가 기능 패키지를 다운로드합니다.

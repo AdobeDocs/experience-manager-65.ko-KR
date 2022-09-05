@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
+source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3583'
 ht-degree: 1%
 
 ---
@@ -89,6 +89,11 @@ Adobe Experience Manager Forms을 사용하려면 JDK(Java Development Kit) 배�
    <th><p><strong>플랫폼</strong></p> </th>
    <th><p><strong>지원 수준</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
+  </tr>
+  <tr> 
+   <td><p>Oracle Java™ SE 11(64비트) <sup> [8] </sup> </p>  </td>
+   <td><p>A: 지원됨</p> </td>
+   <td><p>사소한 릴리스 및 업데이트 </p> </td>
   </tr>
   <tr>
    <td>아줄 줄루 오픈JDK 11 - 64비트</td>
@@ -791,12 +796,9 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
 
 ## 개정 내역 {#revision-history}
 
-<!-- 
-- Sep 01, 2022
-  
-  - Added support for Oracle Java™ SE 11 (64 bit) SDK for application server JBoss EAP 7.4.
+- 2022년 9월 1일
 
-  -->
+   - 애플리케이션 서버 JBoss EAP 7.4용 Oracle Java™ SE 11(64비트) SDK에 대한 지원을 추가했습니다.
 
 - 2022년 3월 3일
 

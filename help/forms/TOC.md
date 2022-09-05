@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
+source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
 workflow-type: tm+mt
-source-wordcount: '3791'
+source-wordcount: '3797'
 ht-degree: 4%
 
 ---
@@ -85,6 +85,7 @@ ht-degree: 4%
       + [AEM Forms과 Adobe LiveCycle 연결](using/aem-livecycle-connector.md)
       + [JEE 프로세스에서 AEM Forms에 양식 데이터를 제출하도록 AEM Forms 구성](using/submit-form-data-livecycle-process.md)
       + [AEM Forms용 AEM 데스크탑 앱](/help/forms/using/aem-desktop-app-for-aem-forms.md)
+      + [메일링 서비스에 대한 OAuth2 지원](/help/forms/using//oauth2-support-for-mail-service.md)
 + AEM Forms 업그레이드 {#upgrade-aem-forms}
    + [사용 가능한 업그레이드 경로](using/upgrade.md)
    + OSGi에서 AEM Forms 업그레이드 {#aem-forms-osgi-upgrade}
