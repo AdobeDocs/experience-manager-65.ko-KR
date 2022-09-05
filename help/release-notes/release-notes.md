@@ -3,9 +3,9 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 381ab110ccf5605b17382b9c77693c819e31e3b6
 workflow-type: tm+mt
-source-wordcount: '3237'
+source-wordcount: '3224'
 ht-degree: 13%
 
 ---
@@ -152,7 +152,6 @@ ht-degree: 13%
 * 중첩된 레이아웃 컨테이너에 추가할 때 텍스트 구성 요소가 잘못 정렬되었습니다. (NPR-38193)
 * 구성 요소에 대한 스타일 시스템 구성이 없을 때 빈 스타일 탭이 표시되었습니다. 구성이 없을 때 이제 탭이 숨겨집니다. (NPR-38218) <!-- version 2 (old) of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
 * 속성 `useLegacyResponsiveBehaviour` 는 인증된 경우에만 작동합니다. (NPR-37996)
-* jquery-ui를 최신 버전으로 업그레이드하면 편집기가 중단됩니다. (SITES-5647)
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6514}
 
