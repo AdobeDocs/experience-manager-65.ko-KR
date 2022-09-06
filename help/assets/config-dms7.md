@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 74e3d4204166280e8624298098042b8cb222c034
+source-git-commit: b33c42edb44617d26ead0df3a9de7bdb39c2e9f4
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6282'
 ht-degree: 3%
 
 ---
@@ -119,7 +119,11 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 1. 연결이 성공하면 다음을 설정합니다. 별표(*)가 있는 헤딩은 다음과 같습니다.
 
-   * **[!UICONTROL 회사]** - Dynamic Media 계정의 이름입니다. Experience Manager에 하나의 Dynamic Media 계정이 있을 수 있습니다. <!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL 회사]** - Dynamic Media 계정의 이름입니다.
+      >[!IMPORTANT]
+      Experience Manager 인스턴스에서는 Cloud Services에서 하나의 Dynamic Media 구성만 지원됩니다. 두 개 이상의 구성을 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성은 _not_ Adobe이 지원하거나 권장합니다.
+
+      <!-- CQDOC-19579 and CQDOC-19612 -->
 
       참조 - [Dynamic Media 회사 별칭 계정 구성](/help/assets/dm-alias-account.md).
 
