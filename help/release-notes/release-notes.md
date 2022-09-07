@@ -3,10 +3,10 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 381ab110ccf5605b17382b9c77693c819e31e3b6
+source-git-commit: 935698e6c8caabccb7bbe0aa9f45012d07163660
 workflow-type: tm+mt
-source-wordcount: '3224'
-ht-degree: 13%
+source-wordcount: '3257'
+ht-degree: 12%
 
 ---
 
@@ -123,6 +123,7 @@ ht-degree: 13%
 * 바코드 SSCC-18에 대해 잘못된 값이 표시됩니다. Forms 서버에서는 바코드의 오른쪽 부분에 있는 값을 생략합니다. (CQ-4342400)
 * Forms 6.5 Designer로 작성된 정적 PDF forms의 경우 PDF 액세스 가능성이 오류로 실패합니다 `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
 * Forms 디자이너에서 하이퍼링크의 화면 Reader 텍스트를 지정하는 기능이 추가되었습니다.(NPR-36221)
+* XFA가 아닌 적응형 양식에 반복 가능한 패널을 추가하고 XFA가 아닌 양식에서 반복 가능한 패널의 수를 15개를 초과하는 경우 새 인스턴스를 추가하는 데에는 최대 7~8초가 걸릴 수 있습니다. (NPR-37346)
 
 ## 통합 {#integrations-6514}
 
