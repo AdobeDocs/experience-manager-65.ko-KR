@@ -1,5 +1,5 @@
 ---
-title: 구성 요소 데이터를 Adobe Analytics 속성과 매핑
+title: Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑
 seo-title: Mapping Component Data with Adobe Analytics Properties
 description: 구성 요소 데이터를 SiteCatalyst 속성에 매핑하는 방법을 알아봅니다.
 seo-description: Learn how to map component data with SiteCatalyst properties.
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 085e77b7b831d6be626a46d3de215aedb50f6178
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '1457'
-ht-degree: 0%
+source-wordcount: '1445'
+ht-degree: 1%
 
 ---
 
-# 구성 요소 데이터를 Adobe Analytics 속성과 매핑{#mapping-component-data-with-adobe-analytics-properties}
+# Adobe Analytics 속성을 사용하여 구성 요소 데이터 매핑{#mapping-component-data-with-adobe-analytics-properties}
 
 Adobe Analytics에 보낼 데이터를 수집하는 프레임워크에 구성 요소를 추가합니다. 분석 데이터를 수집하도록 디자인된 구성 요소는 데이터를 적절한 위치에 저장합니다 **CQ 변수**. 이러한 구성 요소를 프레임워크에 추가하면 프레임워크에 CQ 변수 목록이 표시되므로 각 구성 요소를 적절하게 표시할 수 있습니다 **Analytics 변수**.
 
@@ -43,7 +43,7 @@ Adobe Analytics에 보낼 데이터를 수집하는 프레임워크에 구성 �
 
    ![aa-13](assets/aa-13.png)
 
-   다음과 같은 몇 가지 기본 구성 요소 그룹이 있습니다. **일반**, **상거래**, **커뮤니티**, **Search &amp; Promote**, 및 **기타**. AEM 인스턴스는 다른 그룹 및 구성 요소를 표시하도록 구성할 수 있습니다.
+   다음과 같은 몇 가지 기본 구성 요소 그룹이 있습니다. **일반**, **상거래**, **커뮤니티**, 및 **기타**. AEM 인스턴스는 다른 그룹 및 구성 요소를 표시하도록 구성할 수 있습니다.
 
 1. Adobe Analytics 변수를 구성 요소에 정의된 변수와 매핑하려면 **Analytics 변수** 컨텐츠 파인더에서 추적 구성 요소의 필드로 이동합니다. 예를 들어 `Page Name (pageName)` to `pagedata.title`.
 
@@ -121,10 +121,6 @@ RSID를 선택하면 해당 RSID에 속하는 모든 변수가 목록에 추가�
    >[!NOTE]
    >
    >한 번에 하나의 필터 단추만 활성화할 수 있습니다.
-
-   >[!NOTE]
-   >
-   >Search &amp; Promote 변수는 전환 섹션에도 속합니다.
 
    1. 검색 필드에는 검색 필드에 입력한 텍스트에 따라 요소를 필터링하는 검색 기능도 있습니다.
    1. 목록에서 요소를 검색하는 동안 필터 옵션이 활성화되면 표시되는 결과도 활성 단추에 따라 필터링됩니다.

@@ -7,10 +7,10 @@ user-guide-title: AEM 6.5 클래식 UI 작성 사용 안내서
 user-guide-description: 이 안내서에서는 클래식 사용자 인터페이스에서 AEM의 작성 개념을 다룹니다.
 feature: Authoring
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 93%
+source-wordcount: '264'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 93%
    + [UI 선택](author-env-select-ui.md)
    + [검색](author-env-search.md)
    + [받은 편지함](author-env-inbox.md)
-   + [키보드 단축키 콘솔](author-env-keyboard-shortcuts.md)
+   + [콘솔용 키보드 단축키](author-env-keyboard-shortcuts.md)
 + 작성 {#authoring}
    + [페이지 작성](classic-page-author.md)
    + [작성 - 환경 및 도구](classic-page-author-env-tools.md)
@@ -39,17 +39,16 @@ ht-degree: 93%
    + [페이지 편집 시 주석](classic-page-author-annotations.md)
    + [작성 시의 AEM 문제 해결](classic-page-author-troubleshooting.md)
    + [액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성)](classic-page-author-accessible-content.md)
-   + [모바일 장치용 페이지 작성](classic-feature-mobile.md)
+   + [모바일 디바이스용 페이지 작성](classic-feature-mobile.md)
    + [페이지 작성용 구성 요소](classic-page-author-edit-mode.md)
    + [페이지 편집 시 키보드 단축키](classic-page-author-keyboard-shortcuts.md)
 + 사이트 및 페이지 기능 {#siteandpage}
    + [컨텐츠 조각으로 페이지 작성](classic-page-author-content-fragments.md)
-   + [응답형 레이아웃](classic-page-author-responsive-layout.md)
-   + [페이지 버전 사용](classic-page-author-work-with-versions.md)
+   + [반응형 레이아웃](classic-page-author-responsive-layout.md)
+   + [페이지 버전을 사용하여 작업](classic-page-author-work-with-versions.md)
    + [태그 사용](classic-feature-tags.md)
    + [스캐폴딩](classic-feature-scaffolding.md)
    + [디자인 모드에서 구성 요소 구성](classic-page-author-design-mode.md)
-   + [Search&amp;Promote 기능을 페이지에 추가](classic-feature-search-promote.md)
    + [구성 요소](classic-page-author-default-components.md)
 + 워크플로 {#workflows}
    + [워크플로에 참여](classic-workflows-participating.md)
@@ -57,9 +56,9 @@ ht-degree: 93%
    + [페이지에 워크플로 적용](classic-workflows-applying.md)
 + 런치 {#launches}
    + [론치](classic-launches.md)
-   + [런치 만들기](classic-launches-creating.md)
-   + [런치 편집](classic-launches-editing.md)
-   + [런치 홍보](classic-launches-promoting.md)
+   + [론치 만들기](classic-launches-creating.md)
+   + [론치 편집](classic-launches-editing.md)
+   + [론치 홍보](classic-launches-promoting.md)
 + 개인 맞춤화 {#personalization}
    + [세그먼테이션 이해](classic-personalization-campaigns-segmentation.md)
    + [캠페인 관리](classic-personalization-campaigns.md)

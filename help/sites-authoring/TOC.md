@@ -8,10 +8,10 @@ breadcrumb-title: 작성 안내서
 user-guide-description: AEM에서의 컨텐츠 생성 및 작성에 대한 주요 개념을 알아봅니다.
 feature: Authoring
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '291'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 0%
    + [구성 요소 콘솔](default-components-console.md)
    + [응답형 레이아웃](responsive-layout.md)
    + [컨텐츠 인사이트](content-insights.md)
-   + [액세스 가능한 콘텐츠 제작(WCAG 2.1 적합성)](creating-accessible-content.md)
+   + [액세스 가능한 콘텐츠 제작 (WCAG 2.1 적합성)](creating-accessible-content.md)
    + [디자인 모드에서 구성 요소 구성](default-components-designmode.md)
    + [기초 구성 요소](default-components-foundation.md)
    + [스캐폴딩](scaffolding.md)
@@ -80,11 +80,10 @@ ht-degree: 0%
    + [컨텐츠 인사이트](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
    + [페이지 성능 분석](ci-analyze.md)
    + [페이지 분석 데이터 보기](pa-using.md)
-   + [Search&amp;Promote 기능을 페이지에 추가](search-and-promote.md)
 + 개인 맞춤화 {#personalization}
    + [개인화](personalization.md)
    + [ContextHub 데이터를 사용하여 페이지 미리보기](ch-previewing.md)
-   + [타기팅 모드를 사용하여 대상 콘텐츠 작성](content-targeting-touch.md)
+   + [타겟팅 모드를 사용하여 대상 콘텐츠 작성](content-targeting-touch.md)
    + [다중 사이트에서 대상 콘텐츠를 사용하여 작업](multisite-support-targeted-content.md)
    + [대상 콘텐츠에 대한 다중 사이트 관리 구성 방식](technical-multisite-targeted.md)
    + [활동 관리](activitylib.md)

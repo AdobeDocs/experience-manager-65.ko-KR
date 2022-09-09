@@ -8,10 +8,10 @@ breadcrumb-title: 관리 안내서
 user-guide-description: AEM 관리에 대해 알아봅니다.
 feature: Administering
 role: Admin
-source-git-commit: 8e8c829779e172441605a8abd2ef73623b95462d
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 35%
+source-wordcount: '630'
+ht-degree: 37%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 35%
    + [타사 서비스와 통합](third-party-services.md)
    + [Salesforce와 통합](salesforce.md)
    + [Adobe Target과 통합](target.md)
-   + [Adobe Learning Manager와 통합 사용](adobe-learningmanager.md)
+   + [Adobe Learning Manager와 통합](adobe-learningmanager.md)
    + [Adobe Analytics와 통합](adobeanalytics.md)
    + [Adobe Analytics 연결 및 프레임워크 생성](adobeanalytics-connect.md)
    + [Adobe Analytics를 위한 링크 추적 구성](adobeanalytics-link.md)
@@ -128,7 +128,6 @@ ht-degree: 35%
    + [관련 커뮤니티 문서](related-community-articles.md)
    + [Adobe Campaign Standard과 통합](campaignstandard.md)
    + [Flash 뷰어 지원 중단 알림](flash-viewers-eol.md)
-   + [제품 피드](product-feed.md)
    + [Adobe Dynamic Tag Management과 통합](dtm.md)
    + [Adobe Analytics 및 Adobe Target 선택](opt-in.md)
    + [AEM 포털 및 포틀릿](aem-as-portal.md)
@@ -146,7 +145,6 @@ ht-degree: 35%
    + [Adobe Target과 통합하기 위한 사전 요구 사항](target-requirements.md)
    + [IMS를 사용하여 Adobe Target과 통합](integration-target-ims.md)
    + [Adobe 분류](adobeanalytics-classifications.md)
-   + [Adobe Search &amp; Promote과 통합](search-and-promote.md)
    + [솔루션 통합](integration.md)
    + [Adobe Target으로 경험 조각 내보내기](experience-fragments-target.md)
    + [이메일 템플릿 우수 사례](best-practices-for-email-templates.md)

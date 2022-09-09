@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '729'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ Adobe은 두 가지 버전의 Commerce Integration Framework를 제공합니다.
   </tr>
   <tr>
    <td>표준화된 데이터 모델</td>
-   <td>아니오</td>
+   <td>아니요</td>
    <td>예, Adobe Commerce GraphQL 스키마</td>
   </tr>
   <tr>
@@ -147,7 +147,7 @@ AEM eCommerce는 다음을 제공합니다.
 
    * AEM 검색
    * 전자 상거래 시스템 검색
-   * 타사 검색(예: Search &amp; Promote)
+   * 타사 검색
    * 또는 그 조합입니다.
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
