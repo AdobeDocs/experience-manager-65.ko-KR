@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: ffabf5a9e3b08f60394cecfe540692b161437362
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '829'
 ht-degree: 1%
 
 ---
@@ -31,8 +31,6 @@ AEM이 [SAML](https://saml.xml.org/saml-specifications) 인증 처리기입니�
 이 처리기는 사용자 노드( `usernode/samlResponse`)을 사용하여 타사 서비스 공급자와의 통신을 용이하게 할 수 있습니다.
 
 >[!NOTE]
->
->자세한 내용은 [AEM 및 SAML 통합 데모](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html).
 >
 >최종 커뮤니티 문서를 읽으려면 다음을 클릭합니다. [SAML과 Adobe Experience Manager 통합](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
