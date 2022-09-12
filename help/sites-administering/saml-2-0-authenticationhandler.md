@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: ffabf5a9e3b08f60394cecfe540692b161437362
+source-git-commit: c73d39a1c88c914cd63bc08fe8daf0ff37b4bf7c
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ AEM이 [SAML](https://saml.xml.org/saml-specifications) 인증 처리기입니�
 >
 >SAML 2.0 인증 핸들러는 기본적으로 비활성화되어 있습니다. 핸들러를 사용하려면 다음 속성 중 하나 이상을 설정해야 합니다.
 >
->* ID 공급자 POST URL입니다.
+>* ID 공급자 POST URL 또는 IDP URL입니다.
 >* 서비스 공급자 엔티티 ID입니다.
 >
 
@@ -57,7 +57,7 @@ AEM이 [SAML](https://saml.xml.org/saml-specifications) 인증 처리기입니�
 
 **IDP 인증서 별칭** 글로벌 truststore에서 IdP 인증서의 별칭. 이 속성이 비어 있으면 인증 처리기가 비활성화됩니다. 설정 방법에 대해서는 아래의 &quot;AEM TrustStore에 IdP 인증서 추가&quot; 장을 참조하십시오.
 
-**ID 공급자 URL** SAML 인증 요청을 전송해야 하는 IDP의 URL입니다. 이 속성이 비어 있으면 인증 처리기가 비활성화됩니다.
+**IDP URL** SAML 인증 요청을 전송해야 하는 IDP의 URL입니다. 이 속성이 비어 있으면 인증 처리기가 비활성화됩니다.
 
 >[!CAUTION]
 >
