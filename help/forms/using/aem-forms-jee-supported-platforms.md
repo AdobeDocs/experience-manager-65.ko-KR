@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 060bfb2ed3288b0ef9fbb5ba7f6b06ee027062b6
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3624'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,14 @@ ht-degree: 1%
 # JEE에서 AEM Forms에 대해 지원되는 플랫폼 {#supported-platforms-for-aem-forms-on-jee}
 
 ## 지원되는 플랫폼 {#supported-platforms}
+
+<div class="preview">
+
+AEM 6.5 Forms 서비스 팩 12(6.5.12.0)은 JEE의 AEM 6.5 Forms용 최신 전체 설치 프로그램을 제공합니다.
+
+Adobe은 <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html"> JEE의 AEM 6.5.12.0 Forms </a> AEM 6.5. 설치 관리자(2019년 4월 8일에 릴리스됨) 대신 전체 설치 프로그램(2022년 3월 3일에 릴리스됨)입니다.
+
+</div>
 
 ### 지원 수준 {#support-levels}
 
