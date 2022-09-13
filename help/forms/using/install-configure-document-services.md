@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2d12f1652a3b8ec4e6ca9c737dc844d1f53f7d08
+source-git-commit: 2bad64ebc94cf5b09149a8216648de763a6e30d0
 workflow-type: tm+mt
-source-wordcount: '5365'
+source-wordcount: '5369'
 ht-degree: 2%
 
 ---
@@ -654,7 +654,7 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 
 **Microsoft® Windows**
 
-* 확인 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) Microsoft Office의 대화 상자가 설치되고 모든 응용 프로그램에 대해 열기 대화 상자가 취소됩니다.
+* 32비트 [지원되는 버전 ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) Microsoft Office의 대화 상자가 설치되고 모든 응용 프로그램에 대해 열기 대화 상자가 취소됩니다.
 * PDF 생성기 사용자가 PDF 구성 UI에 추가되었는지 확인합니다.
 * PDF 생성기 사용자가 관리자 그룹의 구성원이고 [프로세스 수준 토큰 바꾸기](#grant-the-replace-a-process-level-token-privilege) 사용자에 대해 권한이 설정됩니다.
 * 사용자가 PDF 생성기 UI에 구성되어 있는지 확인하고 다음 작업을 수행하십시오.
@@ -668,7 +668,7 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 
 **Linux®**
 
-* 확인 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 열려 있는 Office가 설치되어 있으면 모든 응용 프로그램에 대해 열기 대화 상자가 취소되고 Office 응용 프로그램이 성공적으로 실행됩니다.
+* 32비트 또는 64비트가 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 열려 있는 Office가 설치되어 있으면 모든 응용 프로그램에 대해 열기 대화 상자가 취소되고 Office 응용 프로그램이 성공적으로 실행됩니다.
 * 환경 변수 만들기 `OpenOffice_PATH` OpenOffice 설치는 [콘솔](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) 또는 dt(장치 트리) 프로필을 참조하십시오.
 * OpenOffice 설치에 문제가 있는 경우 [32비트 라이브러리](#extrarequirements) OpenOffice 설치에 필요한 를 사용할 수 있습니다.
 
