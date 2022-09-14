@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 477e3d6d7e64a86726a71a8c554593441c94d5bc
+source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
 workflow-type: tm+mt
-source-wordcount: '5388'
+source-wordcount: '5461'
 ht-degree: 2%
 
 ---
@@ -605,32 +605,29 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
    >
    > * srt_config.yaml 파일을 사용하여 의 다양한 설정을 구성할 수 있습니다. 파일의 형식은 다음과 같습니다.
 
-
-   ```
-      # =================================================================
-      # SRT Configuration
-      # =================================================================
-      #Note - follow correct format to avoid parsing failures
-      #e.g. <param name>:<space><param value> 
-      #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
-      locale: en
-   
-      #aemTempDir: AEM Temp direcotry
-      aemTempDir:
-   
-      #users: provide PDFG converting users list
-      #users:
-      # - user1
-      # - user2
-      users:
-   
-      #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
-      profile:
-   
-      #outputDir: directory where output files will be saved
-      outputDir:
-   ```
-
+       #=================================================================
+       # SRT 구성
+       #=================================================================
+       #Note - 구문 분석 오류를 방지하기 위해 올바른 형식을 따르십시오
+       #e.g. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       #locale: (필수 필드)SRT에 사용할 로케일입니다. 지원되는 로케일 [en/fr/de/ja].
+       로케일: en
+       
+       #aemTempDir: AEM Temp 디렉토리
+       aemTempDir:
+       
+       #users: PDFG 변환 사용자 목록 제공
+       #users:
+       # - user1
+       # - user2
+       사용자:
+       
+       #profile: 프로파일을 선택하여 특정 검사를 실행합니다. [LCM]에서 선택하십시오. 더 많은 항목이 곧 추가됩니다
+       프로필:
+       
+       #outputDir: 출력 파일을 저장할 디렉토리
+       outputDir:
+   >
 1. 다음으로 이동 `[Path_of_reports_folder]`. SystemReadinessTool.html 파일을 엽니다. 보고서를 확인하고 언급된 문제를 수정합니다.
 
 ## 문제 해결
