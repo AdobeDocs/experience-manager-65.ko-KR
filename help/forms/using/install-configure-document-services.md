@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 32b97aeff398a19556d46ff6c905dc3019988bc1
+source-git-commit: e5b78a6f84fa0f9de746ca4ae69a8df4f474e305
 workflow-type: tm+mt
-source-wordcount: '5389'
+source-wordcount: '5388'
 ht-degree: 2%
 
 ---
@@ -659,7 +659,7 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 * PDF 생성기 사용자가 관리자 그룹의 구성원이고 [프로세스 수준 토큰 바꾸기](#grant-the-replace-a-process-level-token-privilege) 사용자에 대해 권한이 설정됩니다.
 * 사용자가 PDF 생성기 UI에 구성되어 있는지 확인하고 다음 작업을 수행하십시오.
    1. PDF 생성기 사용자를 사용하여 Microsoft® Windows에 로그인합니다.
-   1. Microsoft® Office 또는 Open Office 응용 프로그램을 열고 모든 대화 상자를 취소합니다.
+   1. Microsoft® Office 또는 OpenOffice 응용 프로그램을 열고 모든 대화 상자를 취소합니다.
    1. AdobePDF를 기본 프린터로 설정합니다.
    1. Acrobat을 PDF 파일에 대한 기본 프로그램으로 설정합니다.
    1. Microsoft Office 응용 프로그램에서 파일 > 인쇄 및 Acrobat 리본 옵션을 사용하여 수동 변환을 수행하고 모든 대화 상자를 취소합니다.

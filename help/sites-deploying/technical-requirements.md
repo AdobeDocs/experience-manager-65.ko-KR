@@ -6,7 +6,7 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 0194abbdd9da1f89491678e0ad688d392af56423
+source-git-commit: 9a74a92262a1ee8dd651965b3a770c4c843f7980
 workflow-type: tm+mt
 source-wordcount: '3452'
 ht-degree: 1%
@@ -492,15 +492,14 @@ Windows x86의 경우:
 > 또한
 >
 > * PDF 생성기를 사용하려면 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 또는 Acrobat 2017 버전 17.011.30078에서 전환을 수행합니다.
-> > * OpenOffice용 PDF 생성기 전환은 Windows 및 Linux에서만 지원됩니다.
-
+> * OpenOffice용 PDF 생성기 전환은 Windows 및 Linux에서만 지원됩니다.
 > * PDF 생성기는 Microsoft Office Professional Plus의 32비트 소매 버전과 Windows 운영 체제에서 변환하는 데 필요한 기타 소프트웨어만 지원합니다.
 > * PDF 생성기는 Linux 운영 체제에서 32비트 및 64비트 버전의 OpenOffice를 지원합니다.
 > * PDF 생성기는 Microsoft Office 365를 지원하지 않습니다.
 > * OCR PDF, Optimize PDF 및 Export PDF 기능은 Windows에서만 지원됩니다.
 > * Acrobat 버전은 PDF 생성기 기능을 활성화하기 위해 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 번들로 제공되는 버전은 AEM Forms 라이센스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스할 수 있습니다. 자세한 내용은 배포에 따라 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
->
 > * PDF 생성기 서비스는 Microsoft Windows 10을 지원하지 않습니다.
+>
 
 
 ### AEM Forms 디자이너 요구 사항 {#requirements-for-aem-forms-designer}
