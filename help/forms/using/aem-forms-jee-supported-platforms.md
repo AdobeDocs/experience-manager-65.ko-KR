@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 060bfb2ed3288b0ef9fbb5ba7f6b06ee027062b6
+source-git-commit: bc9168eb22f2ebe7ae5408d5e033e085e47c7438
 workflow-type: tm+mt
-source-wordcount: '3624'
+source-wordcount: '3636'
 ht-degree: 1%
 
 ---
@@ -831,6 +831,12 @@ Adobe은 JEE 릴리스에서 AEM Forms이 지원하는 타사 참조 플랫폼 �
       - [!DNL Microsoft Office 2019]
       - [!DNL Microsoft Windows Server 2019]
       - [!DNL RHEL8]
-   - 2020년 9월 9일
 
-      - AEM Forms 앱의 지원되는 iOS 버전을 iOS 12로 변경했습니다. 이전 버전은 iOS 11입니다.
+- 2020년 12월 3일
+   - 다음 플랫폼에 대한 AEM Forms 6.5.7.0 이상에서 지원이 추가되었습니다.
+      - [!DNL Microsoft SQL Server 2019]
+
+- 2020년 9월 9일
+
+   - AEM Forms 앱의 지원되는 iOS 버전을 iOS 12로 변경했습니다. 이전 버전은 iOS 11입니다.
+
