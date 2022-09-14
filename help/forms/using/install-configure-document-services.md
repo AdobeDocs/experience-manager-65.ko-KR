@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2bad64ebc94cf5b09149a8216648de763a6e30d0
+source-git-commit: 32b97aeff398a19556d46ff6c905dc3019988bc1
 workflow-type: tm+mt
-source-wordcount: '5369'
+source-wordcount: '5389'
 ht-degree: 2%
 
 ---
@@ -650,7 +650,7 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 
 +++
 
-+++Office 열기
++++OpenOffice
 
 **Microsoft® Windows**
 
@@ -668,7 +668,8 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 
 **Linux®**
 
-* 32비트 또는 64비트가 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 열려 있는 Office가 설치되어 있으면 모든 응용 프로그램에 대해 열기 대화 상자가 취소되고 Office 응용 프로그램이 성공적으로 실행됩니다.
+* 설치 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) OpenOffice의 URL 섹션을 참조하십시오. AEM Forms은 32비트 및 64비트 버전을 모두 지원합니다. 설치 후 OpenOffice 응용 프로그램을 모두 열고 대화 상자 창을 모두 취소하고 응용 프로그램을 닫습니다. 응용 프로그램을 다시 열고 OpenOffice 응용 프로그램을 열 때 대화 상자가 표시되지 않도록 합니다.
+
 * 환경 변수 만들기 `OpenOffice_PATH` OpenOffice 설치는 [콘솔](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) 또는 dt(장치 트리) 프로필을 참조하십시오.
 * OpenOffice 설치에 문제가 있는 경우 [32비트 라이브러리](#extrarequirements) OpenOffice 설치에 필요한 를 사용할 수 있습니다.
 
