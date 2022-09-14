@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
+source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
 workflow-type: tm+mt
 source-wordcount: '5461'
 ht-degree: 2%
@@ -605,11 +605,12 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
    >
    > * srt_config.yaml 파일을 사용하여 의 다양한 설정을 구성할 수 있습니다. 파일의 형식은 다음과 같습니다.
 
-       #=================================================================
        # SRT 구성
-       #=================================================================
-       #Note - 구문 분석 오류를 방지하기 위해 올바른 형식을 따르십시오
-       #e.g. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
+       # 참고 - 구문 분석 오류를 방지하려면 올바른 형식을 따르십시오
+       
+       예: &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
        #locale: (필수 필드)SRT에 사용할 로케일입니다. 지원되는 로케일 [en/fr/de/ja].
        로케일: en
        
