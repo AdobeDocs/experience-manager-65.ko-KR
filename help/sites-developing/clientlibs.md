@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 684474d764ac2a2c187827382e0180e6c0d5259b
+source-git-commit: 7ceee6819618d785f04029b9ac1c6f763995b3ac
 workflow-type: tm+mt
 source-wordcount: '2861'
 ht-degree: 1%
@@ -224,7 +224,7 @@ JS, CSS 또는 테마 라이브러리 필터링을 위한 특성을 포함한 �
 
 #### 앱별 클라이언트 라이브러리 폴더 {#app-specific-client-library-folders}
 
-모든 응용 프로그램 관련 파일을 아래의 응용 프로그램 폴더에 보관하는 것이 가장 좋습니다 `/apps`. 또한 웹 사이트 방문자가 `/app` 폴더를 입력합니다. 두 가지 모범 사례를 모두 충족하려면 아래에 클라이언트 라이브러리 폴더를 만드십시오 `/apps`, 및에 설명된 대로 프록시 서블릿을 통해 액세스할 수 있도록 합니다. [클라이언트 라이브러리 폴더 찾기 및 프록시 클라이언트 라이브러리 서블릿 사용](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
+모든 응용 프로그램 관련 파일을 아래의 응용 프로그램 폴더에 보관하는 것이 가장 좋습니다 `/apps`. 또한 웹 사이트 방문자가 `/apps` 폴더를 입력합니다. 두 가지 모범 사례를 모두 충족하려면 아래에 클라이언트 라이브러리 폴더를 만드십시오 `/apps`, 및에 설명된 대로 프록시 서블릿을 통해 액세스할 수 있도록 합니다. [클라이언트 라이브러리 폴더 찾기 및 프록시 클라이언트 라이브러리 서블릿 사용](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
 
 categories 속성을 사용하여 포함할 클라이언트 라이브러리 폴더를 식별합니다. 라이브러리를 포함하려면 포함에 속성을 추가합니다 `cq:ClientLibraryFolder` 노드(다음 속성 속성 사용)
 
