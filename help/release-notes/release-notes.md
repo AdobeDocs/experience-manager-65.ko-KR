@@ -3,9 +3,9 @@ title: 용 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
 description: 릴리스 정보, 새로운 기능, 사용 방법 설치 및 다음에 대한 자세한 변경 목록을 찾습니다. [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 935698e6c8caabccb7bbe0aa9f45012d07163660
+source-git-commit: 48f898a774d2ddd6d2c31f6a4107c71e4032cfc2
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3281'
 ht-degree: 12%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 12%
 * Analysis Workspace에서 워크플로우에 대한 탐색 링크를 선택하면 탐색 링크가 선택되어 있음을 나타내지 않습니다. (NPR-37138)
 * 스크리블 서명 기능은 접근성 지침과 호환되지 않습니다. (NPR-37596)
 * AEM Forms은 log4j 1.x를 사용합니다. log4j 1.x에 대한 지원이 종료되었습니다. (NPR-38273)
-* 양식 데이터 모델에서 MSSQL 데이터베이스를 데이터 소스로 사용하고 값을 검색하는 경우 검색 값에 있는 소수 이후의 숫자가 반환됩니다. (CQ-4346190)
+* 양식 데이터 모델에서 MSSQL 데이터베이스를 데이터 소스로 사용하고 값을 검색하는 경우 검색 값의 소수 이후의 숫자가 잘립니다. (CQ-4346190)
 * Forms 6.5 Designer에서 Forms 6.1 Designer로 만든 양식을 열고 텍스트 상자를 편집하면 단락 간격이 지정된 공간을 초과합니다. 스페이스에 대한 이전 설정이 모두 제거되고 텍스트 상자의 수동 재서식이 필요합니다. (CQ-4341899)
 * 바코드 SSCC-18에 대해 잘못된 값이 표시됩니다. Forms 서버에서는 바코드의 오른쪽 부분에 있는 값을 생략합니다. (CQ-4342400)
 * Forms 6.5 Designer로 작성된 정적 PDF forms의 경우 PDF 액세스 가능성이 오류로 실패합니다 `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
@@ -317,7 +317,8 @@ Maven 프로젝트에서 UberJar를 사용하려면 다음을 참조하십시오
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THE LIST.
  -->
 
-* [GraphQL 색인 패키지 1.0.3이 있는 AEM 컨텐츠 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
+* [GraphQL 색인 패키지 1.0.5가 있는 AEM 컨텐츠 조각](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+이 패키지는 GraphQL을 사용하는 고객에게 필요합니다. 따라서 실제로 사용하는 기능을 기반으로 필요한 인덱스 정의를 추가할 수 있습니다.
 
 * 로서의 [!DNL Microsoft® Windows Server 2019] 을 지원하지 않음 [!DNL MySQL 5.7] 및 [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] 에 대한 턴키 설치를 지원하지 않습니다. [!DNL AEM Forms 6.5.10.0].
 
