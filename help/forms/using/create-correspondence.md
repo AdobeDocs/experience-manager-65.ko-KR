@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
 workflow-type: tm+mt
-source-wordcount: '3695'
+source-wordcount: '3826'
 ht-degree: 0%
 
 ---
@@ -288,6 +288,22 @@ ht-degree: 0%
 1. AEM에서 다음 URL을 사용하여 서버에 대한 Adobe Experience Manager 웹 콘솔 구성 을 엽니다. https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. 찾기 **[!UICONTROL 서신 관리 구성]** 클릭하여 선택합니다.
 1. 확인 **[!UICONTROL 게시할 때 편지 인스턴스 관리]** 구성을 설정한 다음 **[!UICONTROL 저장]**.
+
+### 초안 저장 기능 활성화 {#enable-save-draft-feature}
+
+편지를 게시하거나 게시 인스턴스에 초안을 저장하기 전에 다음 단계를 수행하여 초안으로 저장 기능을 활성화합니다.
+
+1. 다음 URL을 사용하여 서버의 웹 콘솔 구성을 엽니다. https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+
+1. 을(를) 찾아 클릭합니다. **편집** 아이콘 옆에 있는 를 클릭합니다. *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* 설정
+
+1. 에서 *VersionRestoreManager 작성자 URL* 필드에서 해당 작성자 인스턴스의 URL을 지정합니다.
+
+1. 저장을 클릭합니다 .
+
+다음 *cq:lastReplicationAction*, *cq:lastreplicated* 및 *cq:lastReplicatedBy* 속성은 기본적으로 게시 인스턴스에 전달되지 않습니다. 게시 인스턴스에서 초안을 다시 로드할 수 있도록 하려면 게시 인스턴스에서 이러한 속성이 필요합니다.
+
+계속 진행하려면 *cq:lastReplicationAction*, *cq:lastreplicated* 및 *cq:lastReplicatedBy* 인스턴스에 게시할 속성, 구성 요소를 다음으로 비활성화합니다 *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* URL을 사용하여 작성자 인스턴스에서 다음을 수행합니다.`http://server:port/system/console/components`
 
 편지 인스턴스 저장을 켜면 편지 인스턴스를 저장할 위치를 선택할 수 있습니다. 편지 인스턴스를 저장하는 두 가지 옵션이 있습니다. 로컬 저장 또는 원격 저장.
 
