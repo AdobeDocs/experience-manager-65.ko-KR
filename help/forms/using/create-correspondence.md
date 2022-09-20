@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
+source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3867'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 1. 편지를 제출할 때 정확한 레이아웃과 페이지 나누기가 있는 납작한 PDF으로 미리 보려면 ()를 누릅니다. ![미리 보기](assets/preview.png)) 미리 보기.
 
-   편지는 납작한 PDF으로 표시됩니다. 병합된 PDF은 정확한 글꼴과 구분선 및 편지 레이아웃으로 제출되므로 문자의 정확한 표현입니다.
+   이 문자는 납작한 PDF으로 나타납니다. 병합된 PDF은 정확한 글꼴과 구분선 및 편지 레이아웃으로 제출되므로 문자의 정확한 표현입니다.
 
    >[!NOTE]
    >
@@ -291,19 +291,29 @@ ht-degree: 0%
 
 ### 초안 저장 기능 활성화 {#enable-save-draft-feature}
 
-편지를 게시하거나 게시 인스턴스에 초안을 저장하기 전에 다음 단계를 수행하여 초안으로 저장 기능을 활성화합니다.
+편지를 게시하거나 게시 인스턴스에 초안을 저장하기 전에 작성 및 게시 인스턴스에서 다음 단계를 수행하여 초안으로 저장 기능을 활성화합니다.
 
-1. 다음 URL을 사용하여 서버의 웹 콘솔 구성을 엽니다. https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+다음 *cq:lastReplicationAction*, *cq:lastreplicated* 및 *cq:lastReplicatedBy* 속성은 기본적으로 게시 인스턴스에 전달되지 않습니다. 계속 진행하려면 *cq:lastReplicationAction*, *cq:lastreplicated* 및 *cq:lastReplicatedBy* 인스턴스에 게시할 속성, disable [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] 구성 요소. 구성 요소를 비활성화하려면
 
-1. 을(를) 찾아 클릭합니다. **편집** 아이콘 옆에 있는 를 클릭합니다. *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* 설정
+1. 작성자 인스턴스에서 Adobe Experience Manager 웹 콘솔 구성 요소 콘솔을 엽니다. 기본 URL은 `http://author-server:port/system/console/components`
 
-1. 에서 *VersionRestoreManager 작성자 URL* 필드에서 해당 작성자 인스턴스의 URL을 지정합니다.
+1. 을 검색합니다. **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** 구성 요소.
 
-1. 저장을 클릭합니다 .
+1. 클릭 ![비활성화 단추](/help/forms/using/assets/enablebutton.png) 아이콘 사용 안 함 [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] 구성 요소.
 
-다음 *cq:lastReplicationAction*, *cq:lastreplicated* 및 *cq:lastReplicatedBy* 속성은 기본적으로 게시 인스턴스에 전달되지 않습니다. 게시 인스턴스에서 초안을 다시 로드할 수 있도록 하려면 게시 인스턴스에서 이러한 속성이 필요합니다.
+![작성자 인스턴스](/help/forms/using/assets/replicationproperties.png)
 
-계속 진행하려면 *cq:lastReplicationAction*, *cq:lastreplicated* 및 *cq:lastReplicatedBy* 인스턴스에 게시할 속성, 구성 요소를 다음으로 비활성화합니다 *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* URL을 사용하여 작성자 인스턴스에서 다음을 수행합니다.`http://server:port/system/console/components`
+초안으로 저장 기능을 활성화하려면 기존 URL을 [!UICONTROL VersionRestoreManager 작성자 URL] 작성자 인스턴스의 URL을 사용하는 경우 URL을 바꾸려면 다음을 수행하십시오.
+
+1. 게시 인스턴스에서 를 엽니다. [!UICONTROL Adobe Manager 웹 콘솔 구성]. 기본 URL은 `https://publish-server:port/system/console/configMgr`
+
+1. 을(를) 검색하고 엽니다. **[!UICONTROL 서신 관리 - 작성자 인스턴스 버전 복원 구성]** 구성 요소.
+
+1. 을(를) 찾습니다 **[!UICONTROL VersionRestoreManager 작성자 URL]** 필드를 작성하고 작성자 인스턴스의 URL을 지정합니다.
+
+1. 저장을 클릭합니다.
+
+![게시 인스턴스](/help/forms/using/assets/correspondencemanagement.png)
 
 편지 인스턴스 저장을 켜면 편지 인스턴스를 저장할 위치를 선택할 수 있습니다. 편지 인스턴스를 저장하는 두 가지 옵션이 있습니다. 로컬 저장 또는 원격 저장.
 
@@ -323,7 +333,7 @@ ht-degree: 0%
 
 #### 처리 작성자 설정 지정 {#specify-processing-author-settings}
 
-1. AEM에서 다음 URL을 사용하여 서버에 대한 Adobe Experience Manager 웹 콘솔 구성 을 엽니다. `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. AEM에서 다음 URL을 사용하여 서버에 대한 Adobe Experience Manager 웹 콘솔 구성 을 엽니다. `https://<server>:<port>/system/console/configMgr`
 
    ![Adobe Experience Manager 웹 콘솔 구성](assets/2configmanager.png)
 
