@@ -10,9 +10,9 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 126d5309fe3c3b6474e180d21f5c7d1697d9e08a
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1884'
 ht-degree: 9%
 
 ---
@@ -105,6 +105,9 @@ AEM Forms의 데이터 캡처 기능을 설치 및 구성하기 전에 다음을
 
    * libicu
 
+* 설치 [Microsoft Visual Studio 2019 32비트 재배포 가능](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+
+
 ## AEM Forms 추가 기능 패키지 설치 {#install-aem-forms-add-on-package}
 
 AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니다. 이 패키지에는 AEM Forms 데이터 캡처 및 기타 기능이 포함되어 있습니다. 추가 기능 패키지를 설치하려면 다음 단계를 수행하십시오.
@@ -124,7 +127,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 
 ### (Windows 전용) Visual Studio 재배포용 파일을 자동으로 설치합니다. {#automatic-installation-visual-studio-redistributables}
 
-상위 모드에서 AEM 인스턴스를 설치하면 AEM Forms 추가 기능 패키지를 설치하는 동안 누락된 Visual Studio 재배포용 변수가 자동으로 설치됩니다.
+상위 모드에서 AEM 인스턴스를 설치하면 AEM Forms 추가 기능 패키지를 설치하는 동안 32비트 Visual Studio 재배포용 변수가 자동으로 설치됩니다.
 
 Visual Studio 재배포용 파일을 자동으로 설치했는지 확인하려면 `error.log` 파일에서 사용 가능한 파일 `/crx-repository/logs/` 디렉토리. 로그에는 다음 메시지가 포함됩니다.
 
