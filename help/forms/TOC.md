@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms 안내서
 breadcrumb-title: Forms 안내서
 user-guide-description: 디지털 양식을 작성, 관리, 게시 및 업데이트합니다.
 role: User
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 633a9b6d972cf8b0bb102a7efd5eeb8e0b71a19e
 workflow-type: tm+mt
-source-wordcount: '3797'
+source-wordcount: '3814'
 ht-degree: 4%
 
 ---
@@ -330,7 +330,8 @@ ht-degree: 4%
 + AEM Forms과 Experience Cloud 솔루션 통합 {#integrate-aem-forms-with-experience-cloud-solutions}
    + [AEM Forms에서 타깃팅된 경험 만들기](/help/forms/using/experience-targeting-forms.md)
    + [양식의 효율성 측정 및 전환 개선](using/measure-improve-performance-forms-documents.md)
-   + [분석 및 보고서 구성](using/configure-analytics-forms-documents.md)
+   + [Cloud Service 프레임워크을 사용한 Analytics](using/configure-analytics-forms-documents.md)
+   + [Launch를 사용한 Analytics](using/integrate-aem-forms-with-adobe-analytics.md)
    + [AEM Forms 분석 보고서 보기 및 이해](using/view-understand-aem-forms-analytics-reports.md)
    + [적응형 양식에 대한 A/B 테스트 만들기 및 관리](using/ab-testing-adaptive-forms.md)
 + AEM Forms 게시 및 처리 {#publish-process-aem-forms}
@@ -683,6 +684,7 @@ ht-degree: 4%
 + 문제 해결 {#troubleshooting}
    + [특정 버전의 Oracle JDK에서 일부 양식 기능을 사용할 수 없습니다](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
    + [JEE 버전의 응용 Forms에 대한 첨부 파일이 포함된 이메일을 가져오는 추가 단계](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
+   + [Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환할 수 없습니다.](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
 + 이전 설명서 {#legacy-documentation}
    + [JEE Workbench의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 작성](developing/building-xml.md)
    + [JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](developing/compressing-decompressing-custom-dsc.md)

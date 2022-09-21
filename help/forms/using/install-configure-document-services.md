@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
+source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
 workflow-type: tm+mt
-source-wordcount: '5461'
+source-wordcount: '5535'
 ht-degree: 2%
 
 ---
@@ -786,6 +786,15 @@ SRT 도구에서 보고한 모든 문제를 수정한 후에도 문제가 발생
 * Adobe 제품을 처음 실행한 후 7일 이내에 온라인으로 이동하여 온라인 활성화 및 등록을 완료하거나 인터넷 사용 장치 및 제품의 일련 번호를 사용하여 이 프로세스를 완료할 수 있습니다. 자세한 지침은 [오프라인 활성화](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
+
++++ Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환할 수 없습니다.
+
+사용자가 Microsoft Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환하려고 하면 다음과 같은 오류가 발생합니다.
+
+*기본 변환기의 오류 메시지: ALC-PDG-015-003-The 시스템에서 입력 파일을 열 수 없습니다. 파일을 다시 제출하거나 시스템 관리자에게 문의하십시오.*
+
+이 문제를 해결하려면 [Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환할 수 없습니다.](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
 
 ## 다음 단계 {#next-steps}
 
