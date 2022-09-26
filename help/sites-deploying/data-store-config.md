@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 4e68a8a8d84d0ffa1d28ab13c196731e58b4cf9a
+source-git-commit: 1a383f0e620adf6968d912a9a1759e5ee020c908
 workflow-type: tm+mt
 source-wordcount: '3447'
 ht-degree: 1%
@@ -183,7 +183,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 1. 파일을 편집하고 설정에 필요한 구성 옵션을 추가합니다.
 1. AEM을 시작합니다.
 
-### 1.10.x S3 Connector의 새 버전으로 업그레이드 {#upgrading-to-a-new-version-of-the-s-connector}
+## 1.10.x S3 Connector의 새 버전으로 업그레이드 {#upgrading-to-a-new-version-of-the-s-connector}
 
 새 버전의 1.10.x S3 커넥터로 업그레이드해야 하는 경우(예: 1.10.0에서 1.10.4) 다음 단계를 따르십시오.
 
@@ -260,7 +260,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
  </tbody>
 </table>
 
-**데이터 저장소 캐싱**
+### 데이터 저장소 캐싱 {#data-store-caching}
 
 >[!NOTE]
 >
@@ -272,11 +272,11 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 캐시에 크기 제한이 있으며 cacheSize 매개 변수를 사용하여 구성할 수 있습니다.
 
-**다운로드**
+#### 다운로드 {#downloads}
 
 DataStore에서 액세스하기 전에 로컬 캐시가 요청된 파일/blob의 레코드를 확인합니다. 캐시가 구성된 제한을 초과하는 경우(참조: `cacheSize` 매개 변수)를 사용하여 파일을 캐시에 추가하면 일부 파일이 제거되어 공간을 재확보할 수 있습니다.
 
-**비동기 업로드**
+#### 비동기 업로드 {#async-upload}
 
 캐시는 DataStore에 대한 비동기 업로드를 지원합니다. 파일은 로컬에서 캐시(파일 시스템)에 스테이징되고 비동기 작업이 파일 업로드를 시작합니다. 비동기 업로드 수는 스테이징 캐시의 크기에 따라 제한됩니다. 스테이징 캐시의 크기는 `stagingSplitPercentage` 매개 변수. 이 매개 변수는 스테이징 캐시에 사용할 캐시 크기의 백분율을 정의합니다. 또한 다운로드에 사용할 수 있는 캐시 백분율은 **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
