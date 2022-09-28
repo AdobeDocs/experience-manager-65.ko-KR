@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
 workflow-type: tm+mt
-source-wordcount: '3557'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -59,8 +59,6 @@ OSGi &quot;*작은 구성 요소, 재사용 가능한 공동 작업 구성 요�
 
 * 다음 **관리자 암호** 설치 후 를 변경해야 [보안](/help/sites-administering/security-checklist.md) 섹션에 있는 마지막 항목이 될 필요가 없습니다.
 * 다른 변경 사항은 필요하지 않으며 저장소 액세스에 영향을 줄 수 있으므로 주의해야 합니다.
-
-**Wiki 메일 서비스** Wiki에서 보낸 이메일에 대한 이메일 설정을 구성합니다.
 
 **Apache Felix OSGi Management Console** 구성:
 
@@ -249,7 +247,7 @@ JSON을 비활성화하면 안 됩니다.
 **Day Commons GFX Font Helper** 그래픽을 렌더링할 때 DrawText를 사용하여 텍스트를 포함할 수 있습니다. 이를 위해 고유한 글꼴을 설치할 수도 있습니다.
 
 * 을(를) 정의합니다 **글꼴 경로** 프로젝트별 글꼴을 검색할 수 있습니다.
-예, `/apps/myapp/fonts`.
+(예: `/apps/myapp/fonts`)
 
 **Apache HTTP 구성 요소 프록시 구성** HTTP를 만들 때 사용되는 Apache HTTP 클라이언트를 사용하는 모든 코드에 대한 프록시 구성 예를 들어 복제 시
 
@@ -447,10 +445,6 @@ CQ 다시 작성기에 대한 HTML 파서를 제어합니다.
 **Day Commons JDBC 접속 풀** 컨텐츠의 소스로 사용되는 외부 데이터베이스에 대한 액세스를 구성합니다.
 
 출하 시 구성이므로 여러 인스턴스를 구성할 수 있습니다.
-
-**Adobe CQ Media DPS 세션 서비스** 게시에서 사용할 DPS 세션을 관리합니다.
-
-특히 `dps.session.service.url.name`: 기본값은 [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **CDN 재작성기** 자산/바이너리가 안전한 방식으로 최종 사용자에게 전달되도록 AEM과 CDN 간의 통신을 보장해야 합니다. 여기에는 두 가지 작업이 포함됩니다.
 
