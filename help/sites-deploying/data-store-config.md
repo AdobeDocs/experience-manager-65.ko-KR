@@ -6,10 +6,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 1a383f0e620adf6968d912a9a1759e5ee020c908
+source-git-commit: 1a741ff01fcf17dfdcc8c1cebcd858052d07361c
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 1%
+source-wordcount: '3583'
+ht-degree: 2%
 
 ---
 
@@ -204,61 +204,93 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 1. jar 파일을에 복사합니다. **&lt;aem-install>**/crx-quickstart/install/15 를 클릭합니다.
 1. AEM을 시작하고 커넥터 기능을 확인합니다.
 
-다음 옵션과 함께 구성 파일을 사용할 수 있습니다.
+아래에 자세히 설명된 옵션과 함께 구성 파일을 사용할 수 있습니다.
 
-* accessKey: AWS 액세스 키.
-* secretKey: AWS 암호 액세스 키. **참고:** 이 `accessKey` 또는 `secretKey` 이 지정되지 않은 경우 [IAM 역할](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) 는 인증에 사용됩니다.
-* s3Bucket: 버킷 이름입니다.
-* s3지역: 버킷 영역입니다.
-* 경로: 데이터 저장소의 경로입니다. 기본값은 입니다. **&lt;aem install=&quot;&quot; folder=&quot;&quot;>/repository/datastore**
-* minRecordLength: 데이터 저장소에 저장해야 하는 개체의 최소 크기입니다. 최소/기본값은 입니다. **16KB.**
-* maxCachedBinarySize: 이 크기보다 작거나 같은 바이너리는 메모리 캐시에 저장됩니다. 크기는 바이트 단위입니다. 기본값은 **17408 **(17KB)입니다.
+<!--
+* accessKey: The AWS access key.
+* secretKey: The AWS secret access key. **Note:** When the `accessKey` or `secretKey` is not specified then the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) is used for authentication.
+* s3Bucket: The bucket name.
+* s3Region: The bucket region.
+* path: The path of the data store. The default is **&lt;AEM install folder&gt;/repository/datastore**
+* minRecordLength: The minimum size of an object that should be stored in the data store. The minimum/default is **16KB.**
+* maxCachedBinarySize: Binaries with size less than or equal to this size will be stored in memory cache. The size is in bytes. The default is **17408 **(17 KB).
+* cacheSize: The size of the cache. The value is specified in bytes. The default is **64GB**.
+* secret: Only to be used if using binaryless replication for shared datastore setup.
+* stagingSplitPercentage: The percentage of cache size configured to be used for staging asynchronous uploads. The default value is **10**.
+* uploadThreads: The number of uploads threads that are used for asynchronous uploads. The default value is **10**.
+* stagingPurgeInterval: The interval in seconds for purging finished uploads from the staging cache. The default value is **300** seconds (5 minutes).
+* stagingRetryInterval: The retry interval in seconds for failed uploads. The default value is **600** seconds (10 minutes).
+-->
 
-* cacheSize: 캐시의 크기입니다. 값이 바이트 단위로 지정됩니다. 기본값은 입니다. **64GB**.
-* 비밀: 공유 데이터 저장소 설정에 이진 없는 복제를 사용하는 경우에만 사용합니다.
-* stagingSplitPercentage: 스테이징 비동기 업로드를 위해 사용하도록 구성된 캐시 크기의 백분율입니다. 기본값은 입니다. **10**.
-* uploadThreads: 비동기 업로드에 사용되는 업로드 스레드 수입니다. 기본값은 입니다. **10**.
-* stagingPurgeInterval: 스테이징 캐시에서 완료된 업로드를 제거하는 간격(초)입니다. 기본값은 입니다. **300년** 초(5분).
-* stagingRetryInterval: 실패한 업로드에 대한 다시 시도 간격(초)입니다. 기본값은 입니다. **600년** 초(10분).
+### S3 커넥터 구성 파일 옵션 {#s3-connector-configuration-file-options}
 
-### 버킷 영역 옵션 {#bucket-region-options}
+>[!NOTE]
+>
+>S3 커넥터는 IAM 사용자 인증과 IAM 역할 인증을 모두 지원합니다. IAM 역할 인증을 사용하려면 `accessKey` 및 `secretKey` 구성 파일의 값. 그러면 S3 커넥터가 기본적으로 로 설정됩니다. [IAM 역할](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) 인스턴스에 할당됩니다.
+
+| 키 | 설명 | 기본값 | 필수 |
+| --- | --- | --- | --- |
+| accessKey | 버킷에 액세스할 수 있는 IAM 사용자의 키 ID에 액세스합니다. |  | 예, IAM 역할을 사용하지 않는 경우 |
+| secretKey | 버킷에 액세스할 수 있는 IAM 사용자의 비밀 액세스 키. |  | 예, IAM 역할을 사용하지 않는 경우 |
+| cacheSize | 로컬 캐시의 크기(바이트)입니다. | 64GB | 아니요. |
+| connectionTimeout | 연결을 처음 설정할 때 시간 초과되기 전에 대기할 시간(밀리초)을 설정합니다. | 10000 | 아니요. |
+| maxCachedBinarySize | 크기가 이 값보다 작거나 같은 바이너리는 메모리 캐시에 저장됩니다. | 17408 (17KB) | 아니요. |
+| maxConnections | 열린 HTTP 연결의 최대 수를 설정합니다. | 50 | 아니요. |
+| maxErrorRetry | 실패한(다시 시도) 요청에 대한 최대 재시도 횟수를 설정합니다. | 3 | 아니요. |
+| minRecordLength | 데이터 저장소에 저장해야 하는 개체의 최소 크기(바이트)입니다. | 16384 | 아니요. |
+| 경로 | AEM 데이터 저장소의 로컬 경로입니다. | `crx-quickstart/repository/datastore` | 아니요. |
+| proxyHost | 클라이언트가 연결할 선택적 프록시 호스트를 설정합니다. |  | 아니요. |
+| proxyPort | 클라이언트가 연결할 선택적 프록시 포트를 설정합니다. |  | 아니요. |
+| s3Bucket | S3 버킷의 이름입니다. |  | 예 |
+| s3EndPoint | S3 REST API 끝점입니다. |  | 아니요. |
+| s3Region | 버켓이 있는 지역. 다음 보기 [페이지](https://docs.aws.amazon.com/general/latest/gr/s3.html) 자세한 내용 | AWS 인스턴스가 실행 중인 지역. | 아니요. |
+| socketTimeout | 연결 시간이 초과되어 닫히기 전에 설정된 연결을 통해 데이터를 전송할 때까지 대기하는 시간(밀리초)을 설정합니다. | 50000 | 아니요. |
+| stagingPurgeInterval | 스테이징 캐시에서 완료된 업로드를 제거하는 간격(초)입니다. | 300 | 아니요. |
+| stagingRetryInterval | 실패한 업로드를 다시 시도하는 간격(초)입니다. | 600 | 아니요. |
+| stagingSplitPercentage | 백분율 `cacheSize` 스테이징 비동기 업로드를 위해 사용됩니다. | 10 | 아니요. |
+| uploadThreads | 비동기 업로드에 사용되는 업로드 스레드 수입니다. | 10 | 아니요. |
+| writeThreads | S3 전송 관리자를 통해 쓰는 데 사용되는 동시 스레드 수입니다. | 10 | 아니요. |
+
+<!---
+### Bucket region options {#bucket-region-options}
 
 <table>
  <tbody>
   <tr>
-   <td>미국 표준</td>
+   <td>US Standard</td>
    <td><code>us-standard</code></td>
   </tr>
   <tr>
-   <td>미국 서부</td>
+   <td>US West</td>
    <td><code>us-west-2</code></td>
   </tr>
   <tr>
-   <td>미국 서부(북부 캘리포니아)</td>
+   <td>US West (Northern California)</td>
    <td><code>us-west-1</code></td>
   </tr>
   <tr>
-   <td>EU(아일랜드)<br /> </td>
+   <td>EU (Ireland)<br /> </td>
    <td><code>EU</code></td>
   </tr>
   <tr>
-   <td>아시아 태평양(싱가포르)<br /> </td>
+   <td>Asia Pacific (Singapore)<br /> </td>
    <td><code>ap-southeast-1</code></td>
   </tr>
   <tr>
-   <td>아시아 태평양(시드니)<br /> </td>
+   <td>Asia Pacific (Sydney)<br /> </td>
    <td><code>ap-southeast-2</code></td>
   </tr>
   <tr>
-   <td>아시아 태평양(도쿄)</td>
+   <td>Asia Pacific (Tokyo)</td>
    <td><code>ap-northeast-1</code></td>
   </tr>
   <tr>
-   <td>남아메리카(상파울루)<br /> </td>
+   <td>South America (Sao Paolo)<br /> </td>
    <td><code>sa-east-1</code></td>
   </tr>
  </tbody>
 </table>
+-->
 
 ### 데이터 저장소 캐싱 {#data-store-caching}
 
