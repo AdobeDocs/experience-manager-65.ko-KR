@@ -2,10 +2,10 @@
 title: AEM Content and Commerce 릴리스 노트 2022
 description: AEM Content and Commerce 릴리스 노트 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 6c5c37c1c365e1f03ea9b5c935adf63a33faba5d
+source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 45%
+source-wordcount: '812'
+ht-degree: 47%
 
 ---
 
@@ -21,6 +21,21 @@ ht-degree: 45%
 | CIF 코어 구성 요소 | [시스템 요구 사항](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM Project Archetype | [시스템 요구 사항](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## 릴리스 날짜: 2022년 9월
+
+| 구성 요소 | 버전 | 세부 사항 |
+|:-------|:-----:|---------------------:|
+| CIF 추가 기능 | 2022.09.20.00 | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.09.20.00.zip) |
+| CIF 코어 구성 요소 | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
+| CIF Venia 참조 사이트 | 2022.09.02 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.09.02) |
+
+### 새로운 기능 {#what-is-new-september}
+
+* 작성자는 경험 조각으로 제품 목록을 동적으로 보강할 수 있습니다(예: 제품 목록 사이에 배너 배치)
+* 목록 구성 요소는 관련 페이지를 동적으로 표시하도록 관련 제품/카테고리 페이지를 지원합니다
+* Pergrine 12.5 구성 요소 지원
+* 제품 티저 및 회전판에서 클라이언트측 가격 로드 지원
+
 ## 릴리스 날짜: 2022년 7월
 
 | 구성 요소 | 버전 | 세부 사항 |
@@ -29,8 +44,8 @@ ht-degree: 45%
 
 ### 새로운 기능 {#what-is-new-july}
 
-* AEM 페이지 속성 및 제품 조종실의 개요를 통해 제품 및 카테고리에 대한 AEM 페이지 연결
-   ![제품 조종실 페이지 협회](/help/assets/CIF/product_cockpit_page_association.png)
+* AEM 페이지 속성과 제품 관리실 개요를 통해 AEM 페이지를 제품 및 카테고리에 연결
+   ![제품 관리실 페이지 연결](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## 릴리스 날짜: 2022년 6월
 
@@ -42,15 +57,15 @@ ht-degree: 45%
 
 ### 새로운 기능 {#what-is-new-june}
 
-* 제품 카탈로그 강화는 이제 AEM 페이지를 지원합니다. 이렇게 하면 작성자가 페이지 - 제품 연결을 관리할 수 있습니다.
+* 제품 카탈로그 보강으로 이제 AEM 페이지가 지원됩니다. 이에 따라 제작자가 페이지-제품 연계를 관리할 수 있습니다.
 
-* 다양한 CIF 코어 구성 요소 개선 사항
+* 다양한 CIF 핵심 구성 요소 개선
 
 ### 버그 수정 {#bug-fixes-june}
 
 * 클라이언트측 가격 가져오기에 로그인 토큰 추가
 
-* 데이터 계층에 잘못된 페이지 구성 요소가 있습니다.
+* 데이터레이어 내 잘못된 페이지 구성 요소
 
 ## 릴리스 날짜: 2022년 5월
 
