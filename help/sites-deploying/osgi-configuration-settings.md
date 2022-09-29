@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
+source-git-commit: 71c318e59f39b091f52650853be2d472354c2f1c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3474'
 ht-degree: 0%
 
 ---
@@ -243,11 +243,6 @@ JSON을 비활성화하면 안 됩니다.
 * **스크립트 사용자** - 이 선택적 속성은 스크립트를 읽는 데 사용되는 저장소 사용자 계정을 지정할 수 있습니다. 계정이 지정되지 않은 경우 `admin` 사용자는 기본적으로 사용됩니다.
 
 * **기본 확장** 기본 동작을 사용할 확장 목록입니다. 즉, 리소스 유형의 마지막 경로 세그먼트를 스크립트 이름으로 사용할 수 있습니다.
-
-**Day Commons GFX Font Helper** 그래픽을 렌더링할 때 DrawText를 사용하여 텍스트를 포함할 수 있습니다. 이를 위해 고유한 글꼴을 설치할 수도 있습니다.
-
-* 을(를) 정의합니다 **글꼴 경로** 프로젝트별 글꼴을 검색할 수 있습니다.
-(예: `/apps/myapp/fonts`)
 
 **Apache HTTP 구성 요소 프록시 구성** HTTP를 만들 때 사용되는 Apache HTTP 클라이언트를 사용하는 모든 코드에 대한 프록시 구성 예를 들어 복제 시
 
