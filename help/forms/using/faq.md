@@ -12,7 +12,7 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
+source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
 workflow-type: tm+mt
 source-wordcount: '1995'
 ht-degree: 0%
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 1. 일부 글꼴이 양식을 디자인하는 동안 HTML 양식에 표시되는 글꼴과 다른 이유는 무엇입니까?
 
-   답변: HTML5 양식은 글꼴을 포함하지 않습니다(양식 내에 글꼴이 포함된 PDF forms과 대조적으로). 양식의 HTML 버전이 예상대로 렌더링되도록 하려면 XDP에 지정된 글꼴이 서버 및 클라이언트 컴퓨터에서 사용할 수 있는지 확인하십시오. 필요한 글꼴을 서버에서 사용할 수 없으면 폴백 글꼴이 사용됩니다. 또한 클라이언트 장치에서 사용할 수 없는 양식 서식 파일에서 글꼴을 사용하는 경우 브라우저의 기본 글꼴이 텍스트를 렌더링하는 데 사용됩니다.
+   답변: HTML5 Forms에서는 글꼴을 포함할 수 없습니다(양식 내에 글꼴이 포함된 PDF forms과 대조적으로). 양식의 HTML 버전이 예상대로 렌더링되도록 하려면 AEM Forms 서버의 CRX 저장소(AEM Content Repository)와 AEM Designer가 설치된 시스템에서 글꼴을 사용할 수 있는지 확인합니다. AEM Forms 서버의 CRX 저장소나 AEM Designer가 설치된 위치에서 글꼴을 사용할 수 없으면 양식이 대체 글꼴로 렌더링됩니다.
 
 1. HTML 양식에서 vAlign 및 hAlign 특성이 지원됩니까?
 
