@@ -1,5 +1,5 @@
 ---
-title: Query Builder 설명 참조
+title: 쿼리 빌더 술어 참조
 seo-title: Query Builder Predicate Reference
 description: Query Builder API에 대한 전체 설명 참조입니다.
 seo-description: Complete predicate reference for the Query Builder API.
@@ -10,14 +10,26 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: f97eb2e028263016131b0c86be5a0508ae4def9b
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 3%
+source-wordcount: '2371'
+ht-degree: 2%
 
 ---
 
-# Query Builder 설명 참조{#query-builder-predicate-reference}
+# 쿼리 빌더 술어 참조{#query-builder-predicate-reference}
+
+>[!CAUTION]
+>
+>이 페이지의 정보는 완벽하지 않습니다.
+>
+>자세한 내용은 아래의 목록을 참조하십시오 **사용 가능한 설명** Query Builder 디버거 콘솔에서 다음을 수행하십시오. 예를 들어, at:
+>* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+>
+>예를 들어 다음을 참조하십시오.
+>
+>* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+
 
 ## 일반 {#general}
 
@@ -52,20 +64,20 @@ ht-degree: 3%
 
 ### 부울 속성 {#boolproperty}
 
-JCR 부울 속성에 대해 일치합니다. 값 &quot; `true`&quot; 및 &quot; `false`&quot;만 허용합니다. &quot; `false`&quot;의 경우 속성에 &quot; `false`&quot; 값이 있거나 값이 전혀 없는 경우 일치합니다. 이 기능은 활성화되었을 때만 설정되는 부울 플래그를 확인하는 데 유용합니다.
+JCR 부울 속성에 대해 일치합니다. 값은 &quot; `true`&quot; 및 &quot; `false`&quot;. 의 경우 `false`&quot;. 속성에 &quot; 값이 있으면 일치합니다. `false`또는 전혀 존재하지 않는 경우 이 기능은 활성화되었을 때만 설정되는 부울 플래그를 확인하는 데 유용합니다.
 
-상속된 &quot; `operation`&quot; 매개 변수는 의미가 없습니다.
+상속된 &quot; `operation`매개 변수에는 의미가 없습니다.
 
-패싯 추출을 지원합니다. 은 각 `true` 또는 `false` 값에 대한 버킷을 제공하지만 기존 속성에 대해서만 버킷을 제공합니다.
+패싯 추출을 지원합니다. 은 각 `true` 또는 `false` 값을 지정한 경우 이해할 수 있도록 해줍니다.
 
 #### 속성 {#properties}
 
-* ****
-boolproperty속성의 상대 경로(예: 
+* **부울 속성**
+속성에 대한 상대 경로(예: 
 `myFeatureEnabled` 또는 `jcr:content/myFeatureEnabled`
 
-* ****
-value 값은 &quot; 
+* **value**
+속성을 확인할 값, 
 `true`&quot; 또는 &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
@@ -78,8 +90,8 @@ value 값은 &quot;
 
 #### 속성 {#properties-1}
 
-* ****
-contentfragment어떤 값으로든 사용하여 컨텐츠 조각을 확인할 수 있습니다.
+* **contentfragment**
+값과 함께 사용하여 컨텐츠 조각을 확인할 수 있습니다.
 
 ### dateComparison {#datecomparison}
 
@@ -99,12 +111,11 @@ contentfragment어떤 값으로든 사용하여 컨텐츠 조각을 확인할 �
 
 * **작업**
 
-   &quot; 정확히 일치하려면 `equals`&quot;, 비균일 비교의 경우 &quot; `!=`&quot;, property1보다 큰 속성의 경우 &quot; `greater`&quot;, property1보다 크거나 같은 속성의 경우 &quot; `>=`&quot;.2 기본값은 &quot; `equals`&quot;입니다.
+   &quot; `equals`&quot; 정확히 일치하려면 &quot; `!=`&quot; 비같음 비교의 경우 &quot; `greater`&quot; property1이 property2보다 큰 경우 &quot; `>=`속성1이 property2보다 크거나 같음 &quot;입니다. 기본값은 &quot; 입니다. `equals`&quot;.
 
 ### daterange {#daterange}
 
-날짜/시간 간격에 대해 JCR 날짜 속성을 일치시킵니다. 여기서는 ISO8601을 사용합니다
-날짜 및 시간 형식( `YYYY-MM-DDTHH:mm:ss.SSSZ`)을 설정하고 `YYYY-MM-DD` 등의 부분 표현을 사용할 수 있습니다. 또는 타임스탬프를 UTC 시간대(unix 시간 형식)에서 1970년부터 밀리초 수로 제공할 수 있습니다.
+날짜/시간 간격에 대해 JCR 날짜 속성을 일치시킵니다. 날짜 및 시간에 ISO8601 형식을 사용합니다( `YYYY-MM-DDTHH:mm:ss.SSSZ`) 및 는 다음과 같은 부분 표현을 허용합니다 `YYYY-MM-DD`. 또는 타임스탬프를 UTC 시간대(unix 시간 형식)에서 1970년부터 밀리초 수로 제공할 수 있습니다.
 
 두 개의 타임스탬프(지정된 날짜보다 최신 또는 이전 항목) 사이의 항목을 찾고, 포함 및 열기 간격 중에서 선택할 수도 있습니다.
 
@@ -116,23 +127,23 @@ contentfragment어떤 값으로든 사용하여 컨텐츠 조각을 확인할 �
 
 * **속성**
 
-   `DATE` 속성의 상대 경로(예: `jcr:lastModified`)
+   에 대한 상대 경로 `DATE` 속성(예: `jcr:lastModified`
 
 * **lowerBound**
 
-   체크 속성에 바인딩된 낮은 날짜(예: `2014-10-01`)
+   예를 들어, check 속성에 바인딩된 보다 낮은 날짜 `2014-10-01`
 
 * **lowerOperation**
 
-   &quot; `>`&quot;(최신) 또는 &quot; `>=`&quot;(이상)은 `lowerBound`에 적용됩니다. 기본값은 &quot; `>`&quot;입니다.
+   &quot; `>`&quot;(최신) 또는 &quot; `>=`&quot;(또는 그 이상)은 `lowerBound`. 기본값은 &quot; 입니다. `>`&quot;.
 
 * **upperBound**
 
-   `2014-10-01T12:15:00` 등의 속성을 확인하도록 상한선이 있습니다.
+   예를 들어 속성을 확인하도록 상한을 지정합니다. `2014-10-01T12:15:00`
 
 * **upperOperation**
 
-   &quot; `<`&quot;(이전 버전) 또는 &quot; `<=`&quot;(at 또는 이전 버전)는 `upperBound`에 적용됩니다. 기본값은 &quot; `<`&quot;입니다.
+   &quot; `<`&quot; (이전) 또는 &quot; `<=`&quot;(또는 그 이상)은 `upperBound`. 기본값은 &quot; 입니다. `<`&quot;.
 
 * **timeZone**
 
@@ -172,7 +183,7 @@ contentfragment어떤 값으로든 사용하여 컨텐츠 조각을 확인할 �
 
 ### 그룹 {#group}
 
-중첩된 조건을 만들 수 있습니다. 그룹에는 중첩된 그룹이 포함될 수 있습니다. QueryBuilder 쿼리의 모든 항목이 암시적으로 루트 그룹에 있습니다. 이 그룹은 `p.or` 및 `p.not` 매개 변수도 가질 수 있습니다.
+중첩된 조건을 만들 수 있습니다. 그룹에는 중첩된 그룹이 포함될 수 있습니다. QueryBuilder 쿼리의 모든 항목이 암시적으로 루트 그룹에 있으며 이는 `p.or` 및 `p.not` 매개 변수도 참조하십시오.
 
 값에 대해 두 속성 중 하나를 일치시키는 예:
 
@@ -184,7 +195,7 @@ group.2_property=navTitle
 group.2_property.value=My Page
 ```
 
-개념적으로 `(1_property` 또는 `2_property)`입니다.
+개념적으로 `(1_property` 또는 `2_property)`.
 
 중첩 그룹의 예:
 
@@ -197,19 +208,19 @@ group.2_group.path=/content/dam/geometrixx
 group.2_group.type=dam:Asset
 ```
 
-`/content/geometrixx/en`의 페이지 내에서 또는 `/content/dam/geometrixx`의 자산에서 &quot;**Management**&quot;라는 용어를 검색합니다.
+검색어 &quot;**관리**&quot; `/content/geometrixx/en` 또는 의 자산 `/content/dam/geometrixx`.
 
-개념적으로는 `fulltext AND ( (path AND type) OR (path AND type) )`입니다. 이러한 OR 조인은 성능에 좋은 인덱스가 필요합니다.
+개념적으로 `fulltext AND ( (path AND type) OR (path AND type) )`. 이러한 OR 조인은 성능에 좋은 인덱스가 필요합니다.
 
 #### 속성 {#properties-6}
 
 * **p.또는**
 
-   &quot; `true`&quot;로 설정하면 그룹의 술어가 하나만 일치해야 합니다. 기본값은 &quot; `false`&quot;입니다. 이것은 모두 일치해야 함을 의미합니다
+   을(를) &quot;로 설정합니다. `true`&quot;, 그룹의 술어는 하나만 일치해야 합니다. 기본값은 &quot;입니다. `false`&quot;, 즉 모두 일치해야 함
 
 * **p.not**
 
-   &quot; `true`&quot;로 설정하면 그룹을 무효화합니다(기본값은 &quot; `false`&quot;).
+   을(를) &quot;로 설정합니다. `true`&quot;, 이 값은 그룹을 무효화합니다(기본값은 &quot; `false`&quot;)
 
 * **&lt;predicate>**
 
@@ -217,11 +228,11 @@ group.2_group.type=dam:Asset
 
 * **N_&lt;predicate>**
 
-   `1_property, 2_property, ...` 과 같이 동시에 여러 중첩 설명을 추가합니다.
+   과 같이 여러 중첩 설명을 동시에 추가합니다. `1_property, 2_property, ...`
 
 ### hasPermission {#haspermission}
 
-현재 세션에 지정된 [JCR 권한이 있는 항목으로 결과를 제한합니다.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+현재 세션에 지정된 항목이 있는 항목으로 결과를 제한합니다 [JCR 권한.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 필터링 전용 조건이며 검색 색인을 활용할 수 없습니다. 패싯 추출을 지원하지 않습니다.
 
@@ -229,7 +240,7 @@ group.2_group.type=dam:Asset
 
 * **hasPermission**
 
-   해당 노드에 대해 현재 사용자 세션이 모두 가져야 하는 쉼표로 구분된 JCR 권한 예: `jcr:write`, `jcr:modifyAccessControl`
+   해당 노드에 대해 현재 사용자 세션이 모두 가져야 하는 쉼표로 구분된 JCR 권한 예 `jcr:write`, `jcr:modifyAccessControl`
 
 ### 언어 {#language}
 
@@ -243,11 +254,11 @@ group.2_group.type=dam:Asset
 
 * **언어**
 
-   ISO 언어 코드(예: &quot; `de`&quot;)
+   ISO 언어 코드(예: &quot;) `de`&quot;
 
 ### 유지 관리 {#mainasset}
 
-노드가 하위 자산이 아니라 DAM 주 자산인지 확인합니다. 이것은 기본적으로 &quot;하위 자산&quot; 노드 내에 없는 모든 노드입니다. 이 옵션은 `dam:Asset` 노드 유형을 확인하지 않습니다. 이 설명을 사용하려면 &quot; `mainasset=true`&quot; 또는 &quot; `mainasset=false`&quot;를 설정하기만 하면 됩니다. 더 이상 속성이 없습니다.
+노드가 하위 자산이 아니라 DAM 주 자산인지 확인합니다. 이것은 기본적으로 &quot;하위 자산&quot; 노드 내에 없는 모든 노드입니다. 이 옵션을 선택하면 `dam:Asset` 노드 유형입니다. 이 설명을 사용하려면 &quot; `mainasset=true`&quot; 또는 &quot; `mainasset=false`&quot;더 이상 속성이 없습니다.
 
 필터링 전용 조건이며 검색 색인을 활용할 수 없습니다.
 
@@ -257,11 +268,11 @@ group.2_group.type=dam:Asset
 
 * **유지 관리**
 
-   부울, 기본 자산의 경우 &quot; `true`&quot;, 하위 자산의 경우 &quot; `false`&quot;
+   부울, &quot; `true`&quot; 기본 자산의 경우 &quot; `false`하위 자산
 
 ### memberOf {#memberof}
 
-특정 [sling 리소스 컬렉션](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)의 멤버인 항목을 찾습니다.
+특정 항목의 멤버인 항목을 찾습니다. [sling 리소스 컬렉션](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 필터링 전용 조건이며 검색 색인을 활용할 수 없습니다. 패싯 추출을 지원하지 않습니다.
 
@@ -281,11 +292,11 @@ JCR 노드 이름에 일치합니다.
 
 * **노네임**
 
-   와일드카드를 사용할 수 있는 노드 이름 패턴: `*` = 임의 또는 임의 문자 없음, `?` = 임의 문자, `[abc]` = 대괄호 안의 문자만
+   와일드카드를 사용할 수 있는 노드 이름 패턴: `*` = 임의 또는 문자 없음 `?` = any char, `[abc]` = 대괄호로 묶인 문자만
 
 ### 만료되지 않음 {#notexpired}
 
-JCR DATE 속성이 현재 서버 시간보다 크거나 같은지 확인하여 항목과 일치합니다. 날짜 속성과 같은 &quot; `expiresAt`&quot;을 확인하고 아직 만료되지 않았거나( `notexpired=true`) 이미 만료된 것( `notexpired=false`)만 제한하는 데 사용할 수 있습니다.
+JCR DATE 속성이 현재 서버 시간보다 크거나 같은지 확인하여 항목과 일치합니다. 이를 사용하여 &quot; `expiresAt`&quot; 날짜 속성과 비슷하며 아직 만료되지 않은 속성( `notexpired=true`) 또는 이미 만료된 파일( `notexpired=false`).
 
 필터링을 지원하지 않습니다.
 
@@ -295,29 +306,29 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
 * **만료되지 않음**
 
-   부울, 아직 만료되지 않은 경우 &quot; `true`&quot;(미래의 날짜 또는 그 이상의 날짜), &quot; `false`&quot;(만료한 날짜의 경우)(필수)
+   부울, &quot; `true`&quot; 아직 만료되지 않은 경우(미래 또는 같은 날짜), &quot; `false`&quot; 만료됨(과거 날짜)(필수)
 
 * **속성**
 
-   확인할 `DATE` 속성의 상대 경로(필수)
+   의 상대 경로 `DATE` 확인할 속성(필수)
 
 ### orderby {#orderby}
 
-결과를 정렬할 수 있습니다. 여러 속성으로 순서를 지정해야 하는 경우 `1_orderby=first`, `2_oderby=second` 등의 숫자 접두어를 사용하여 이 조건자를 여러 번 추가해야 합니다.
+결과를 정렬할 수 있습니다. 여러 속성별 순서가 필요한 경우 다음과 같이 숫자 접두어를 사용하여 이 조건자를 여러 번 추가해야 합니다 `1_orderby=first`, `2_oderby=second`.
 
 #### 속성 {#properties-13}
 
 * **orderby**
 
-   선행 @(예: `@jcr:lastModified` 또는 `@jcr:content/jcr:title`)로 표시되거나, 쿼리의 다른 조건자(예: 정렬할 `2_property`)로 표시되거나,
+   선행 @(예: )로 표시된 JCR 속성 이름 `@jcr:lastModified` 또는 `@jcr:content/jcr:title`또는 쿼리의 다른 조건자(예: `2_property`, 정렬 대상
 
 * **정렬**
 
-   정렬 방향, 내림차순 &quot; `desc`&quot; 또는 오름차순 &quot; `asc`&quot;(기본값)
+   정렬 방향: `desc`&quot; 내림차순 또는 &quot; `asc`오름차순(기본값)
 
 * **사례**
 
-   &quot; `ignore`&quot;로 설정하면 정렬 대소문자를 구분하지 않게 됩니다. 즉, &quot;a&quot;가 &quot;B&quot; 앞에 옵니다. 비어 있거나 비워 두면 대소문자를 구분합니다. 즉, &quot;B&quot;가 &quot;a&quot; 앞에 옵니다.
+   을(를) &quot;로 설정합니다. `ignore`&quot;은 대소문자를 구분하지 않게 합니다. 즉, &quot;a&quot;가 &quot;B&quot; 앞에 옵니다. 비어 있거나 비워 두면 대소문자를 구분합니다. 즉, &quot;B&quot;가 &quot;a&quot; 앞에 옵니다.
 
 ### 경로 {#path}
 
@@ -329,15 +340,15 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
 * **경로**
 
-   경로 패턴; 완전 하위 트리에는 정확히 일치합니다(예: xpath에 `//*` 추가). 하지만 여기에는 기본 경로가 포함되지 않습니다(exact=false, default). 또는 와일드카드( `*`)를 포함할 수 있는 정확한 경로 일치만 포함됩니다. 자체 설정되면 기본 노드를 포함하는 전체 하위 트리가 검색됩니다
+   경로 패턴; 완전 하위 트리는 정확히 일치하고 `//*` xpath에는 기본 경로가 포함되지 않지만 exact=false, default) 또는 와일드카드( `*`); 자체 설정되면 기본 노드를 포함하는 전체 하위 트리가 검색됩니다
 
 * **정확히**
 
-   `exact` 이 true/on이면 정확한 경로가 일치해야 하지만, 일치하는 이름인 단순 와일드카드( `*`)를 포함할 수 있지만 &quot; `/`&quot; 는 포함할 수 없습니다. false(기본값)이면 모든 하위 항목이 포함됩니다(선택 사항).
+   if `exact` 가 true/on이면 정확한 경로가 일치해야 하지만, 단순 와일드카드( `*`), 이름이 일치하지만 &quot; `/`&quot;; false(기본값)이면 모든 하위 항목이 포함됩니다(선택 사항).
 
 * **평면**
 
-   직접 하위 항목만 검색(예: xpath에 &quot; `/*`&quot; 추가)합니다(&#39; `exact`&#39;이 true가 아닌 경우에만 사용됨, 선택 사항)
+   직접 하위 항목만 검색합니다(예: &quot; 추가 `/*`&quot; in xpath (xpath에서) ( &#39; `exact`&#39; 는 true가 아닙니다. 선택 사항입니다)
 
 * **self**
 
@@ -353,7 +364,7 @@ JCR 속성 및 해당 값에 일치합니다.
 
 * **속성**
 
-   속성에 대한 상대 경로(예: `jcr:title`)
+   속성에 대한 상대 경로(예: `jcr:title`
 
 * **정렬 단추**
 
@@ -361,23 +372,23 @@ JCR 속성 및 해당 값에 일치합니다.
 
 * **N_value**
 
-   `1_value`, `2_value`, ...을 사용하여 여러 값(기본적으로 `OR`와 결합되고 `AND` if 및=true)이 있는지 확인합니다(5.3 이후).
+   사용 `1_value`, `2_value`, ... 여러 값(과 결합됨)을 확인하는 데 사용됩니다. `OR` 기본적으로 `AND` if 및=true)(5.3 이후)
 
 * **및**
 
-   여러 값( `N_value`)을 AND와 결합하려면 true로 설정합니다(5.3 이후).
+   여러 값을 결합하려면 true로 설정합니다( `N_value`) 및 AND(5.3 이후)
 
 * **작업**
 
-   &quot;`equals`&quot;은 완전 일치(기본값), &quot; `unequals`&quot;는 비정상 비교를, &quot; `jcr:like` xpath 함수를 사용하려면 &quot; `like`&quot;(선택 사항), 일치하지 않으면 &quot; `not`&quot;(예: xpath의 &quot;`not(@prop)`&quot;은(는) 무시됩니다.&quot; 또는 &quot; `exists`&quot; for existance check(값은 true일 수 있습니다. 속성이 반드시 있어야 함, 기본값 또는 false - &quot; `not`&quot;와 동일함)
+   &quot;`equals`&quot; 정확히 일치하려면(기본값), &quot; `unequals`&quot; 비같음 비교의 경우 &quot; `like`&quot; `jcr:like` xpath 함수(선택 사항), &quot; `not`&quot; 를 입력합니다(예: &quot;`not(@prop)`&quot; xpath에서 값 매개 변수는 무시됩니다.) 또는 &quot; `exists`&quot; 존재 확인을 위해(값은 true일 수 있음 - 속성이 있어야 함, 기본값 - 또는 false - 와 동일함 `not`&quot;)
 
 * **깊이**
 
-   속성/상대 경로가 존재할 수 있는 와일드카드 레벨 수(예: `property=size depth=2`이 노드/크기, 노드/&amp;ast;/size 및 node/&amp;ast;/&amp;ast;/size)를 확인합니다.
+   속성/상대 경로가 존재할 수 있는 와일드카드 레벨 수(예: `property=size depth=2` 노드/크기, node/&amp;ast;/size and node/&amp;ast;/&amp;ast;/size)를 확인합니다.
 
 ### rangeproperty {#rangeproperty}
 
-JCR 속성과 간격을 일치시킵니다. 이는 `LONG`, `DOUBLE` 및 `DECIMAL` 등의 선형 유형을 사용하는 속성에 적용됩니다. `DATE`에 대해서는 최적화된 날짜 형식 입력이 있는 날짜 범위 설명을 참조하십시오.
+JCR 속성과 간격을 일치시킵니다. 이는 다음과 같은 선형 유형을 사용하는 속성에 적용됩니다. `LONG`, `DOUBLE` 및 `DECIMAL`. 대상 `DATE` 날짜 형식 입력이 최적화된 날짜 범위 설명을 참조하십시오.
 
 하한을 정의하거나 상한을 정의하거나 그 중 하나만을 정의할 수 있습니다. 작업(예: &quot;less than&quot; 또는 &quot;lower or equals&quot;)도 각각 하한 및 상한(하한)에 대해 지정할 수 있습니다.
 
@@ -395,7 +406,7 @@ JCR 속성과 간격을 일치시킵니다. 이는 `LONG`, `DOUBLE` 및 `DECIMAL
 
 * **lowerOperation**
 
-   &quot; `>`&quot;(기본값) 또는 &quot; `>=`&quot;이 `lowerValue`에 적용됩니다.>
+   &quot; `>`&quot; (기본값) 또는 &quot; `>=`&quot;, 이 `lowerValue`
 
 * **upperBound**
 
@@ -403,23 +414,23 @@ JCR 속성과 간격을 일치시킵니다. 이는 `LONG`, `DOUBLE` 및 `DECIMAL
 
 * **upperOperation**
 
-   &quot; `<`&quot;(기본값) 또는 &quot; `<=`&quot;이 `lowerValue`에 적용됩니다.>
+   &quot; `<`&quot; (기본값) 또는 &quot; `<=`&quot;, 이 `lowerValue`
 
 * **십진수**
 
-   &quot; `true`&quot; if checked 속성이 Decimal 형식이면
+   &quot; `true`&quot;선택된 속성이 Decimal 형식이면
 
 ### relativedaterange {#relativedaterange}
 
-현재 서버 시간을 기준으로 시간 오프셋을 사용하여 날짜/시간 간격에 대해 `JCR DATE` 속성을 일치시킵니다. 밀리초 값 또는 bugzilla 구문 `1s 2m 3h 4d 5w 6M 7y` (1초, 2분, 3시간, 4일, 5주, 6개월, 7년)을 사용하여 `lowerBound` 및 `upperBound`을 지정할 수 있습니다. 현재 시간 이전의 음수 오프셋을 나타내는 접두사는 &quot; `-`&quot;입니다. `lowerBound` 또는 `upperBound`만 지정하는 경우 다른 하나는 기본적으로 0으로 설정되며, 이것은 현재 시간을 의미합니다.
+일치 `JCR DATE` 현재 서버 시간을 기준으로 시간 오프셋을 사용하는 날짜/시간 간격에 대한 속성입니다. 다음을 지정할 수 있습니다 `lowerBound` 및 `upperBound` 밀리초 값 또는 bugzilla 구문 사용 `1s 2m 3h 4d 5w 6M 7y` (1초, 2분, 3시간, 4일, 5주, 6개월, 7년) 접두사가 &quot; `-`&quot;을 눌러 현재 시간 이전의 음수 오프셋을 나타냅니다. 다음과 같은 경우에만 `lowerBound` 또는 `upperBound`를 입력하면 다른 하나는 기본적으로 0으로 설정되며, 이것은 현재 시간을 의미합니다.
 
 예:
 
-* `upperBound=1h` (그리고 아니요  `lowerBound`)가 다음 시간 내에 어떤 것이든 선택합니다.
-* `lowerBound=-1d` (그리고 아니요  `upperBound`)가 지난 24시간 동안 어떤 것도 선택할 수 없습니다
-* `lowerBound=-6M` 6개월에서 3개월까지  `upperBound=-3M` 어떤 것도 선택할 수 있습니다
-* `lowerBound=-1500` 그리고  `upperBound=5500` 는 과거 1500밀리초와 미래의 5500밀리초 사이의 어떤 것을 선택할 것입니다
-* `lowerBound=1d` 그리고  `upperBound=2d` 내일 모레 어떤 것이라도
+* `upperBound=1h` (및 아니요) `lowerBound`)을 선택하면 다음 시간 안에 아무 것도 선택됩니다
+* `lowerBound=-1d` (및 아니요) `upperBound`)을 선택하면 지난 24시간 동안 아무 것도 선택됩니다
+* `lowerBound=-6M` 및 `upperBound=-3M` 6개월에서 3개월까지 어떤 것도 선택할 수 있습니다
+* `lowerBound=-1500` 및 `upperBound=5500` 과거 1500밀리초와 향후 5500밀리초 사이의 항목을 선택할 수 있습니다
+* `lowerBound=1d` 및 `upperBound=2d` 내일 모레 어떤 것을 선택해도
 
 윤년은 고려하지 않고 모든 달은 30일입니다.
 
@@ -431,11 +442,11 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
 * **upperBound**
 
-   현재 서버 시간을 기준으로 한 상위 날짜(밀리초) 또는 `1s 2m 3h 4d 5w 6M 7y`(1초, 2분, 3시간, 4일, 5주, 6개월, 7년)는 음수 오프셋을 사용하려면 &quot;-&quot;를 사용하십시오
+   밀리초 단위로 바인딩된 상위 날짜 `1s 2m 3h 4d 5w 6M 7y` 현재 서버 시간을 기준으로 한 1초, 2분, 3시간, 4일, 5주, 6개월, 7년)은 음수 오프셋을 사용하려면 &quot;-&quot;를 사용하십시오
 
 * **lowerBound**
 
-   밀리초 단위 또는 현재 서버 시간에 대한 `1s 2m 3h 4d 5w 6M 7y`(1초, 2분, 3시간, 4일, 5주, 6개월, 7년)의 하한 날짜, 음수 오프셋에는 &quot;-&quot;를 사용하십시오
+   밀리초 이하로 바인딩된 날짜 `1s 2m 3h 4d 5w 6M 7y` 현재 서버 시간을 기준으로 한 1초, 2분, 3시간, 4일, 5주, 6개월, 7년)은 음수 오프셋을 사용하려면 &quot;-&quot;를 사용하십시오
 
 ### 루트 {#root}
 
@@ -455,11 +466,11 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
 * **p.guessTotal**
 
-   권장 사항: 비용이 많이 들 수 있는 전체 결과 합계를 계산하지 마십시오. 최대 계산할 최대 총계를 나타내는 숫자(예: 1000, 대략적인 크기와 더 작은 결과를 위한 정확한 숫자를 사용자에게 제공하는 숫자) 또는 필요한 최소 `p.offset` + `p.limit`까지만 계산되도록 &quot; `true`&quot;
+   권장 사항: 비용이 많이 들 수 있는 전체 결과 합계를 계산하지 마십시오. 최대 계산할 최대 총계를 나타내는 숫자(예: 1000, 대략적인 크기와 더 작은 결과를 위한 정확한 숫자를 사용자에게 제공하는 숫자) 또는 &quot; `true`&quot;을 사용하여 필요한 최소값만 카운트합니다. `p.offset` + `p.limit`
 
 * **p.intract**
 
-   &quot; `true`&quot;로 설정하면 결과에 전체 텍스트 발췌문을 포함합니다
+   을(를) &quot;로 설정합니다. `true`&quot;, 결과에 전체 텍스트 발췌문을 포함합니다
 
 * **p.hits**
 
@@ -467,15 +478,15 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
    * **단순한**:
 
-      `path`, `title`, `lastmodified`, `excerpt`(설정된 경우)와 같은 최소 항목
+      다음과 같은 항목 `path`, `title`, `lastmodified`, `excerpt` (설정된 경우)
 
    * **전체**:
 
-      히트의 경로를 나타내는 `jcr:path` 이 있는 노드의 sling JSON 렌더링: 기본적으로 노드의 직접 속성을 나열하고 `p.nodedepth=N` 이 있는 더 깊은 트리를 포함하고 0은 전체 무한 하위 트리를 의미합니다. 지정된 결과 항목에 현재 세션의 JCR 권한을 포함하도록 `p.acls=true` 추가(매핑: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
+      노드의 sling JSON 렌더링, `jcr:path` 히트의 경로를 나타냅니다. 기본적으로 노드의 직접 속성을 나열하고 `p.nodedepth=N`과 함께 0은 전체 무한 하위 트리를 의미합니다. 추가 `p.acls=true` 지정된 결과 항목에 현재 세션의 JCR 권한을 포함하려면 다음을 수행하십시오. `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
 
    * **선택적**:
 
-      `p.properties`에 지정된 등록 정보로서, URL에서 &quot;+&quot;를 사용하고 상대 경로 목록인 경우 상대 경로에 깊이가 1보다 큰 경우 하위 개체로 표시됩니다. 특수 jcr:path 속성은 히트의 경로를 포함합니다
+      에 지정된 속성만 `p.properties`: 상대 경로의 목록으로 구분된 공간(URL에서 &quot;+&quot; 사용) 목록입니다. 상대 경로에 깊이가 1보다 큰 경우 하위 개체로 표시됩니다. 특수 jcr:path 속성은 히트의 경로를 포함합니다
 
 ### savedquery {#savedquery}
 
@@ -483,7 +494,7 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
 추가 쿼리는 실행되지 않고 현재 쿼리를 확장합니다.
 
-쿼리는 `QueryBuilder#storeQuery()` 을 사용하여 프로그래밍 방식으로 유지할 수 있습니다. 형식은 여러 줄 String 속성 또는 쿼리를 Java 속성 형식의 텍스트 파일로 포함하는 `nt:file` 노드일 수 있습니다.
+쿼리는 `QueryBuilder#storeQuery()`. 형식은 여러 줄 String 속성이나 `nt:file` 쿼리를 Java 속성 형식의 텍스트 파일로 포함하는 노드입니다.
 
 저장된 쿼리의 조건자에 대한 패싯 추출을 지원하지 않습니다.
 
@@ -491,22 +502,22 @@ daterange 설명과 동일한 방식으로 면 추출을 지원합니다.
 
 * **savedquery**
 
-   저장된 쿼리의 경로(문자열 속성 또는 `nt:file` 노드)
+   저장된 쿼리의 경로(문자열 속성 또는 `nt:file` node)
 
 ### 유사 {#similar}
 
-JCR XPath의 `rep:similar()`을 사용한 유사성 검색.
+JCR XPath를 사용한 유사성 검색 `rep:similar()`.
 
 필터링을 지원하지 않습니다. 패싯 추출을 지원하지 않습니다.
 
 #### 속성 {#properties-20}
 
-* ****
-유사한 노드를 찾을 노드의 유사 절대 경로
+* **유사**
+유사한 노드를 찾을 노드의 절대 경로
 
-* ****
-하위 노드 또는 하위 노드의 로컬 상대 경로 
-`.` 현재 노드의 경우(선택 사항, 기본값은 &quot;  `.`&quot;)
+* **로컬**
+하위 노드 또는 
+`.` 현재 노드의 경우(선택 사항, 기본값은 &quot; 임) `.`&quot;)
 
 ### 태그 {#tag}
 
@@ -522,7 +533,7 @@ JCR XPath의 `rep:similar()`을 사용한 유사성 검색.
 
 * **N_value**
 
-   `1_value`, `2_value`, ...을 사용하여 여러 태그(기본적으로 `OR`와 결합되고 `AND` if 및=true)를 사용(5.6 이후)할 수 있습니다.
+   사용 `1_value`, `2_value`, ... 여러 태그( 와 결합) 확인 `OR` 기본적으로 `AND` if 및=true)(5.6 이후)
 
 * **속성**
 
@@ -538,11 +549,11 @@ JCR XPath의 `rep:similar()`을 사용한 유사성 검색.
 
 * **tagid**
 
-   찾을 태그 id(예: &quot; `properties:orientation/landscape`&quot;)
+   찾을 태그 id(예: &quot; &quot;) `properties:orientation/landscape`&quot;
 
 * **N_value**
 
-   `1_value`, `2_value`, ...을 사용하여 여러 개의 tagid(기본적으로 `OR`와 결합되고 `AND` if 및=true)를 확인합니다(5.6 이후).
+   사용 `1_value`, `2_value`, .. 여러 태그 id(와 결합됨)를 확인합니다. `OR` 기본적으로 `AND` if 및=true)(5.6 이후)
 
 * **속성**
 
@@ -570,7 +581,7 @@ JCR XPath의 `rep:similar()`을 사용한 유사성 검색.
 
 * **모두**
 
-   (bool) 전체 태그 전체 텍스트, 즉 모든 제목, 설명 등을 검색합니다. (는 &quot;l `ang`&quot;보다 우선함)
+   (bool) 전체 태그 전체 텍스트, 즉 모든 제목, 설명 등을 검색합니다. (&quot;l&quot;보다 우선함) `ang`&quot;)
 
 ### 유형 {#type}
 
@@ -582,4 +593,4 @@ JCR XPath의 `rep:similar()`을 사용한 유사성 검색.
 
 * **유형**
 
-   검색할 노드 유형 또는 mixin 이름(예: `cq:Page`)
+   검색할 노드 유형 또는 mixin 이름(예: `cq:Page`
