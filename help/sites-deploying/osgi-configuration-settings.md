@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 71c318e59f39b091f52650853be2d472354c2f1c
+source-git-commit: 73fba5249a05b0bdb9871a6e19c6bed10a7e7e4b
 workflow-type: tm+mt
-source-wordcount: '3474'
+source-wordcount: '3476'
 ht-degree: 0%
 
 ---
@@ -276,7 +276,7 @@ JSON을 비활성화하면 안 됩니다.
 
 >[!CAUTION]
 >
->다음 중 하나에 대한 설정을 변경하는 경우 **축소** 또는 **Gzip** 또한 `/var/clientlibs`. clientlibs의 캐싱된 버전이며 다음 요청이 있을 때 다시 빌드됩니다.
+>다음 중 하나에 대한 설정을 변경하는 경우 **축소** 또는 **Gzip** clientlibs 캐시의 내용을 삭제해야 합니다. 다음을 참조하십시오 [기술 자료 문서](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) 자세한 내용
 
 >[!NOTE]
 >
