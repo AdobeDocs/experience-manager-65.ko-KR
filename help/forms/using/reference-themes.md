@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 참조 테마{#reference-themes}
 
-[](../../forms/using/themes.md) CSS에 대해 자세히 알지 못하고 양식 스타일을 지정할 수 있습니다. 기본 테마 외에 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)를 설치하면 다음 테마를 얻을 수 있습니다.
+[테마](../../forms/using/themes.md) css에 대한 자세한 지식이 없는 경우 양식의 스타일을 지정할 수 있습니다. 기본 테마 외에 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
 * 베릴
 * 경영진
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 이 패키지에 포함된 테마는 응답형이며, 이러한 테마의 스타일링은 모바일 및 데스크톱 디스플레이에 대해 정의됩니다. 다양한 장치의 최신 브라우저는 이러한 테마 중 하나로 적용된 양식을 간편하게 렌더링할 수 있습니다.
 
-패키지 설치에 대한 자세한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md)을 참조하십시오.
+패키지 설치에 대한 자세한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md).
 
 ## 베릴 {#beryl}
 

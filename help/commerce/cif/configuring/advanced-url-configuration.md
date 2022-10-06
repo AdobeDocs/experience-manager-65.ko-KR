@@ -103,7 +103,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 프로젝트에 대한 구성.
+>이 구성은 프로젝트에서 사용하는 외부 도메인으로 조정해야 합니다. Sling 매핑은 호스트 이름 및 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되어 있으므로 배포 전에 활성화해야 합니다. 이렇게 하려면 Sling 매핑의 이름을 변경합니다 `hostname.adobeaemcloud.com` 폴더 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 사용된 도메인 이름에 따라 다음을 추가하여 이 구성을 활성화하십시오. `resource.resolver.map.location="/etc/map.publish"` 변환 후 `JcrResourceResolver` 구성 을 참조하십시오.
 
 ## 추가 리소스
 

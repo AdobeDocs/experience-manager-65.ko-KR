@@ -1,8 +1,8 @@
 ---
 title: SAML 서비스 공급자 설정 구성
-seo-title: SAML 서비스 공급자 설정 구성
+seo-title: Configure SAML service provider settings
 description: 사용자가 지정된 타사 ID 공급자(IDP)를 통해 AEM 양식에 로그인하고 인증할 수 있도록 SAML 서비스 공급자 설정을 구성할 수 있습니다.
-seo-description: 사용자가 지정된 타사 ID 공급자(IDP)를 통해 AEM 양식에 로그인하고 인증할 수 있도록 SAML 서비스 공급자 설정을 구성할 수 있습니다.
+seo-description: You can configure SAML service provider settings to allow users to login and authenticate to AEM forms via a specified third-party identity provider (IDP).
 uuid: 14c706ad-8b1c-4c03-9cd4-97424f2162bc
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 SAML(Security Assertion Markup Language)은 엔터프라이즈 또는 하이브리드 도메인에 대한 인증을 구성할 때 선택할 수 있는 옵션 중 하나입니다. SAML은 주로 여러 도메인에서 SSO를 지원하는 데 사용됩니다. SAML이 인증 공급자로 구성된 경우 사용자는 로그인하고 지정된 타사 ID 공급자(IDP)를 통해 AEM 양식을 인증합니다.
 
-SAML에 대한 설명은 [보안 검증 마크업 언어(SAML) V2.0 기술 개요](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf)를 참조하십시오.
+SAML에 대한 자세한 내용은 [SAML(보안 검증 마크업 언어) V2.0 기술 개요](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > SAML 서비스 공급자 설정 을 클릭합니다.
-1. 서비스 공급자 엔티티 ID 상자에서 AEM Forms 서비스 공급자 구현의 식별자로 사용할 고유 ID를 입력합니다. IDP를 구성할 때 이 고유 ID를 지정합니다(예: `um.lc.com`). AEM 양식에 액세스하는 데 사용되는 URL을 사용할 수도 있습니다(예: `https://AEMformsserver`).
-1. 서비스 공급자 기본 URL 상자에 양식 서버의 기본 URL(예: `https://AEMformsserver:8080`)을 입력합니다.
+1. 서비스 공급자 엔티티 ID 상자에서 AEM Forms 서비스 공급자 구현의 식별자로 사용할 고유 ID를 입력합니다. IDP를 구성할 때 이 고유 ID를 지정할 수도 있습니다(예: `um.lc.com`) AEM 양식에 액세스하는 데 사용되는 URL을 사용할 수도 있습니다(예: `https://AEMformsserver`).
+1. 서비스 공급자 기본 URL 상자에 양식 서버의 기본 URL을 입력합니다(예: `https://AEMformsserver:8080`).
 1. (선택 사항) AEM Forms에서 IDP에 서명된 인증 요청을 보낼 수 있도록 하려면 다음 작업을 수행합니다.
 
-   * 신뢰 저장소 유형으로 선택된 문서 서명 자격 증명을 사용하여 PKCS #12 형식으로 자격 증명을 가져오려면 신뢰 관리자를 사용하십시오. ([로컬 자격 증명 관리](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials) 참조)
+   * 신뢰 저장소 유형으로 선택된 문서 서명 자격 증명을 사용하여 PKCS #12 형식으로 자격 증명을 가져오려면 신뢰 관리자를 사용하십시오. (자세한 내용은 [로컬 자격 증명 관리](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials))
    * 서비스 공급자 자격 증명 키 별칭 목록에서 신뢰 저장소에서 자격 증명에 할당한 별칭을 선택합니다.
    * 내보내기 를 클릭하여 URL 컨텐츠를 파일에 저장한 다음 해당 파일을 IDP로 가져옵니다.
 
@@ -38,7 +38,7 @@ SAML에 대한 설명은 [보안 검증 마크업 언어(SAML) V2.0 기술 개�
    >
    >이름 형식은 대/소문자를 구분하지 않습니다.
 
-1. (선택 사항) 로컬 사용자에 대해 인증 프롬프트 활성화 를 선택합니다. 이 옵션을 선택하면 사용자에게 다음 두 개의 링크가 표시됩니다.
+1. (선택 사항) 로컬 사용자에 대해 인증 프롬프트 사용을 선택합니다. 이 옵션을 선택하면 사용자에게 다음 두 개의 링크가 표시됩니다.
 
    * Enterprise 도메인에 속한 사용자가 인증할 수 있는 타사 SAML ID 공급자의 로그인 페이지에 대한 링크.
    * 로컬 도메인에 속한 사용자가 인증할 수 있는 AEM forms 로그인 페이지에 대한 링크.

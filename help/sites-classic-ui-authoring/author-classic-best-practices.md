@@ -1,8 +1,8 @@
 ---
-title: 우수 사례
-seo-title: 우수 사례
+title: 모범 사례
+seo-title: Best Practices
 description: 작성 우수 사례는 가장 효율적이고 효과적인 방법으로 AEM을 사용하는 방법을 설명합니다. 계속 증가하고 있는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
-seo-description: 작성 우수 사례는 가장 효율적이고 효과적인 방법으로 AEM을 사용하는 방법을 설명합니다. 계속 증가하고 있는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
+seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,21 +11,21 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 65%
+source-wordcount: '282'
+ht-degree: 62%
 
 ---
 
 
-# 우수 사례{#best-practices}
+# 모범 사례{#best-practices}
 
 작성 우수 사례는 가장 효율적이고 효과적인 방법으로 AEM을 사용하는 방법을 설명합니다. 계속 증가하고 있는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
 
 다음 영역에는 우수 사례에 관해 참조할 수 있는 문서가 있습니다.
 
-* [자산](#assets)
-* [사이트](#sites)
-* [양식](#forms)
+* [에셋](#assets)
+* [Sites](#sites)
+* [Forms](#forms)
 
 관리, 배포 및 유지 관리 또는 개발에 대한 우수 사례를 보려면 다음 중 하나를 참조하십시오.
 
@@ -35,7 +35,7 @@ ht-degree: 65%
 
 관련된 구체적인 문서에 대한 설명과 링크는 다음 표에 나와 있습니다.
 
-## 자산 {#assets}
+## 에셋 {#assets}
 
 Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함한 Assets에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
 
@@ -64,14 +64,14 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함한 Assets에 대
  </tbody>
 </table>
 
-## 사이트 {#sites}
+## Sites {#sites}
 
 웹 사이트 컨텐츠 관리 및 작성에는 다음과 같은 몇 가지 우수 사례가 요약되어 있습니다.
 
-작성:[작성 환경 및 도구](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - 페이지를 작성하는 방법에 대한 개요를 제공합니다.
+작성: [작성 환경 및 도구](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - 페이지를 작성하는 방법에 대한 개요를 제공합니다.
 
-## 양식 {#forms}
+## Forms {#forms}
 
-적응형 양식:[적응형 양식 작업에 대한 우수 사례](/help/forms/using/adaptive-forms-best-practices.md) - 적응형 양식 설정, 작성 및 사용자 지정에 대한 우수 사례를 설명합니다.
+적응형 양식: [적응형 양식 작업에 대한 우수 사례](/help/forms/using/adaptive-forms-best-practices.md) - 적응형 양식 설정, 작성 및 사용자 지정에 대한 우수 사례를 설명합니다.
 
-HTML5 양식:[HTML5 양식 디자인에 대한 우수 사례](/help/forms/using/best-practices-for-html5-forms.md) - HTML5 양식의 레이아웃 및 디자인 작업에 대한 우수 사례를 설명합니다.
+HTML 5 양식: [HTML 5 양식 디자인을 위한 우수 사례](/help/forms/using/best-practices-for-html5-forms.md) - HTML5 양식의 레이아웃 및 디자인 작업에 대한 우수 사례를 설명합니다.

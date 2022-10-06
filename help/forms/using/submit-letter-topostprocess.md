@@ -1,24 +1,24 @@
 ---
 title: 편지 및 대화형 커뮤니케이션의 사후 처리
-seo-title: 편지 후 처리
+seo-title: Post Processing of Letters
 description: Correspondence Management에서 편지 사후 처리를 사용하면 인쇄 및 이메일과 같은 AEM 및 Forms 게시 프로세스를 만들고 편지에 통합할 수 있습니다.
-seo-description: Correspondence Management에서 편지 사후 처리를 사용하면 인쇄 및 이메일과 같은 AEM 및 Forms 게시 프로세스를 만들고 편지에 통합할 수 있습니다.
+seo-description: Post Processing of Letters in Correspondence Management lets you create AEM and Forms post processes, such as print and email, and integrate them with your letters.
 uuid: 40cb349d-6ba2-4794-9ec6-dcab15c35b8d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
-feature: 서신 관리
+feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
 
-# 문자 및 대화형 통신 사후 처리{#post-processing-of-letters-and-interactive-communications}
+# 편지 및 대화형 커뮤니케이션의 사후 처리{#post-processing-of-letters-and-interactive-communications}
 
 ## 사후 처리 {#post-processing}
 
@@ -28,18 +28,18 @@ ht-degree: 0%
 
 게시 프로세스를 편지 또는 대화형 커뮤니케이션과 연결하려면 먼저 사후 프로세스를 설정해야 합니다. 제출된 편지에 두 가지 유형의 워크플로우를 실행할 수 있습니다.
 
-1. **Forms Workflow:** JEE 프로세스 관리 워크플로우의 AEM Forms입니다. [Forms Workflow](#formsworkflow)을 설정하는 지침입니다.
+1. **Forms Workflow:** JEE 프로세스 관리 워크플로우의 AEM Forms입니다. 설정 지침 [Forms Workflow](#formsworkflow).
 
-1. **AEM 워크플로우:** AEM 워크플로우는 제출된 편지에 대한 사후 처리로도 사용할 수 있습니다. [AEM Workflow](../../forms/using/aem-forms-workflow.md) 설정에 대한 지침입니다.
+1. **AEM 워크플로우:** AEM 워크플로우는 제출된 편지에 대한 사후 처리로도 사용할 수 있습니다. 설정 지침 [AEM 워크플로우](../../forms/using/aem-forms-workflow.md).
 
 ## 양식 워크플로우 {#formsworkflow}
 
-1. AEM에서 다음 URL을 사용하여 서버에 대한 Adobe Experience Manager 웹 콘솔 구성 을 엽니다.`https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. AEM에서 다음 URL을 사용하여 서버에 대한 Adobe Experience Manager 웹 콘솔 구성 을 엽니다. `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![구성 관리자](assets/2configmanager-1.png)
 
 1. 이 페이지에서 AEM Forms 클라이언트 SDK 구성을 찾아 클릭하여 확장합니다.
-1. 서버 URL에서 JEE 서버의 AEM Forms 이름을 입력하고 로그인 세부 정보를 입력한 다음 **저장**&#x200B;을 클릭합니다.
+1. 서버 URL에서 JEE 서버의 AEM Forms 이름과 로그인 세부 사항을 입력한 다음 를 클릭합니다 **저장**.
 
    ![LiveCycle 서버의 이름을 입력합니다](assets/1cofigmanager.png)
 
@@ -54,25 +54,25 @@ ht-degree: 0%
 
 1. 프로세스/서비스를 인증하려면 프로세스 이름을 복사하여 Adobe Experience Manager Web Console 구성 페이지 > AEM Forms Client SDK 구성으로 이동한 후 프로세스를 새 서비스로 추가합니다.
 
-   예를 들어, 문자의 속성 페이지에 있는 드롭다운에 프로세스 이름이 Forms Workflow -> ValidCCPostProcess/SaveXML로 표시되는 경우 서비스 이름을 `ValidCCPostProcess/SaveXML`으로 추가합니다.
+   예를 들어, 문자의 속성 페이지에 있는 드롭다운에 프로세스 이름이 Forms Workflow -> ValidCCPostProcess/SaveXML로 표시되면 서비스 이름을 로 추가합니다. `ValidCCPostProcess/SaveXML`.
 
 1. 사후 처리를 위해 JEE 워크플로우에서 AEM Forms을 사용하려면 필요한 매개 변수 및 출력을 설정합니다. 매개 변수의 기본값은 아래에 표시되어 있습니다.
 
-   Adobe Experience Manager 웹 콘솔 구성 페이지 > **[!UICONTROL 서신 관리 구성]**&#x200B;으로 이동하여 다음 매개 변수를 설정합니다.
+   Adobe Experience Manager 웹 콘솔 구성 페이지로 이동 > **[!UICONTROL 서신 관리 구성]** 다음 매개 변수를 설정합니다.
 
-   1. **inPDFDoc(PDF 문서 매개 변수):** 입력으로 PDF 문서입니다. 이 입력에는 렌더링된 문자가 입력으로 포함됩니다. 표시된 매개변수 이름은 구성할 수 있습니다. 서신 관리 구성에서 구성할 수 있습니다.
+   1. **inPDFDoc(PDF 문서 매개 변수):** PDF 문서를 입력으로 사용합니다. 이 입력에는 렌더링된 문자가 입력으로 포함됩니다. 표시된 매개변수 이름은 구성할 수 있습니다. 서신 관리 구성에서 구성할 수 있습니다.
    1. **inXMLDoc(XML 데이터 매개 변수):** XML 문서를 입력으로 사용합니다. 이 입력에는 사용자가 입력한 데이터가 XML 형식으로 포함되어 있습니다.
-   1. **inXDPDoc(XDP 문서 매개 변수):** 입력되는 XML 문서입니다. 이 입력에 기본 레이아웃(XDP)이 포함되어 있습니다.
+   1. **inXDPDoc(XDP 문서 매개 변수):** XML 문서를 입력으로 사용합니다. 이 입력에 기본 레이아웃(XDP)이 포함되어 있습니다.
    1. **inAttachmentDocs(첨부 문서 매개 변수):** 목록 입력 매개 변수입니다. 이 입력에는 모든 첨부 파일이 입력으로 포함됩니다.
    1. **redirectURL(리디렉션 URL 출력):** 리디렉션할 URL을 나타내는 출력 유형입니다.
 
-   양식 워크플로우에는 **[!UICONTROL 서신 관리 구성]**&#x200B;에 지정된 것과 동일한 이름의 입력으로 PDF 문서 매개 변수 또는 XML 데이터 매개 변수가 있어야 합니다. 이 단계는 게시 프로세스 드롭다운에 나열된 프로세스를 위해 필요합니다.
+   양식 워크플로우에는 PDF 문서 매개 변수 또는 XML 데이터 매개 변수가 지정된 이름과 동일한 이름으로 입력되어 있어야 합니다. **[!UICONTROL 서신 관리 구성]**. 이 단계는 게시 프로세스 드롭다운에 나열된 프로세스를 위해 필요합니다.
 
-## 게시 인스턴스 {#settings-on-the-publish-instance}에 대한 설정
+## 게시 인스턴스의 설정 {#settings-on-the-publish-instance}
 
-1. `https://localhost:publishport/aem/forms`에 로그인합니다.
-1. 게시 인스턴스에서 사용할 수 있는 게시된 문자를 보려면 **[!UICONTROL Letters]**&#x200B;로 이동합니다.
-1. AEM DS 설정을 구성합니다. [AEM DS 설정 구성](../../forms/using/configuring-the-processing-server-url-.md)을 참조하십시오.
+1. 로그인 `https://localhost:publishport/aem/forms`.
+1. 다음으로 이동 **[!UICONTROL 문자]** 게시 인스턴스에서 사용할 수 있는 게시된 문자를 보려면 다음을 수행하십시오.
+1. AEM DS 설정을 구성합니다. 자세한 내용은 [AEM DS 설정 구성](../../forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
@@ -112,14 +112,14 @@ LetterInstanceService에 정의된 다음 API를 사용하여 편지 인스턴�
  </tbody>
 </table>
 
-## 게시물 프로세스를 문자 {#associating-a-post-process-with-a-letter}와 연결
+## 게시물 프로세스를 편지와 연결 {#associating-a-post-process-with-a-letter}
 
 CCR 사용자 인터페이스에서 다음 단계를 완료하여 게시 프로세스를 편지와 연결합니다.
 
-1. 문자 위로 마우스를 가져간 후 **속성 보기**&#x200B;를 탭합니다.
+1. 편지 위로 마우스를 가져간 다음 탭하기 **속성 보기**.
 1. **편집**&#x200B;을 선택하십시오.
 1. 기본 속성에서 게시 프로세스 드롭다운을 사용하여 편지에 연결할 사후 프로세스를 선택합니다. AEM 및 Forms 관련 게시물 프로세스가 모두 드롭다운에 나열됩니다.
-1. **저장**&#x200B;을 누릅니다.
+1. 탭 **저장**.
 1. 게시 프로세스를 사용하여 편지를 구성한 후 편지를 게시하고 선택적으로 게시 인스턴스에서 처리 URL을 AEM DS 설정 서비스에 지정합니다. 이렇게 하면 처리 인스턴스에서 사후 프로세스가 실행됩니다.
 
 ## 초안 편지 인스턴스 다시 로드  {#reloaddraft}
@@ -130,6 +130,6 @@ CCR 사용자 인터페이스에서 다음 단계를 완료하여 게시 프로�
 
 `createcorrespondence.html?/random=$&cmLetterInstanceId=$<LetterInstanceId>`
 
-LetterInstanceID:제출된 편지 인스턴스의 고유 ID입니다.
+LetterInstanceID: 제출된 편지 인스턴스의 고유 ID입니다.
 
-초안 편지 저장에 대한 자세한 내용은 [초안 저장 및 편지 인스턴스 제출](../../forms/using/create-correspondence.md#savingdrafts)을 참조하십시오.
+초안 편지 저장에 대한 자세한 내용은 [초안 저장 및 편지 인스턴스 제출](../../forms/using/create-correspondence.md#savingdrafts).

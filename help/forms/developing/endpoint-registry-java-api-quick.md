@@ -1,6 +1,6 @@
 ---
 title: 끝점 레지스트리 Java API QuickStart(SOAP)
-seo-title: 끝점 레지스트리 Java API QuickStart(SOAP)
+seo-title: Endpoint Registry Java API QuickStart(SOAP)
 description: 끝점 레지스트리 Java API QuickStart(SOAP)
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
@@ -12,7 +12,7 @@ role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -21,37 +21,37 @@ ht-degree: 0%
 
 Endpoint Registry에 Java API 빠른 시작(SOAP) 을 사용할 수 있습니다.
 
-[빠른 시작:Java API를 사용하여 EJB 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[빠른 시작: Java API를 사용하여 EJB 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[빠른 시작:Java API를 사용하여 SOAP 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[빠른 시작: Java API를 사용하여 SOAP 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[빠른 시작:Java API를 사용하여 감시 폴더 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[빠른 시작: Java API를 사용하여 감시 폴더 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[빠른 시작:Java API를 사용하여 이메일 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[빠른 시작: Java API를 사용하여 이메일 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
-[빠른 시작:Java API를 사용하여 원격 끝점 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
+[빠른 시작: Java API를 사용하여 원격 끝점 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[빠른 시작:Java API를 사용하여 TaskManager 끝점 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[빠른 시작: Java API를 사용하여 TaskManager 끝점 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[빠른 시작:Java API를 사용하여 엔드포인트 수정](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
+[빠른 시작: Java API를 사용하여 엔드포인트 수정](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[빠른 시작:Java API를 사용하여 끝점 제거](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
+[빠른 시작: Java API를 사용하여 끝점 제거](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[빠른 시작:Java API를 사용하여 끝점 커넥터 정보 검색](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
+[빠른 시작: Java API를 사용하여 끝점 커넥터 정보 검색](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM Forms로 프로그래밍에 있는 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하는 경우 Forms을 기반으로 하며 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM Forms로 프로그래밍에 있는 빠른 시작은 Unix와 같은 다른 운영 체제를 사용하는 경우 Forms을 기반으로 하며 Windows 특정 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
 >웹 서비스를 사용하여 끝점으로 작업할 수 없습니다.
 
-## 빠른 시작:Java API {#quickstart-adding-an-ejb-endpoint-using-the-java-api}를 사용하여 EJB 엔드포인트 추가
+## 빠른 시작: Java API를 사용하여 EJB 엔드포인트 추가 {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-다음 Java 코드 예제에서는 EJB 끝점을 *MyApplication/EncryptDocument* 서비스에 추가합니다. ([EJB 엔드포인트 추가](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)를 참조하십시오.)
+다음 Java 코드 예제에서는 EJB 끝점을 라는 서비스에 추가합니다 *MyApplication/EncryptDocument*. (자세한 내용은 [EJB 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints))
 
 ```java
  /*
@@ -148,9 +148,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작:Java API {#quickstart-adding-a-soap-endpoint-using-the-java-api}를 사용하여 SOAP 엔드포인트 추가
+## 빠른 시작: Java API를 사용하여 SOAP 엔드포인트 추가 {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-다음 Java 코드 예제에서는 SOAP 끝점을 *MyApplication/EncryptDocument* 서비스에 추가합니다. ( [SOAP 엔드포인트 추가](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints) 참조).
+다음 Java 코드 예제에서는 SOAP 끝점을 라는 서비스에 추가합니다 *MyApplication/EncryptDocument*. (자세한 내용은 [SOAP 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints))
 
 ```java
  /*
@@ -248,13 +248,13 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작:Java API {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}를 사용하여 감시 폴더 엔드포인트 추가
+## 빠른 시작: Java API를 사용하여 감시 폴더 엔드포인트 추가 {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-다음 Java 코드 예제에서는 감시 폴더 끝점을 *MyApplication/EncryptDocument* 서비스에 추가합니다. ([감시 폴더 엔드포인트 추가](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints)를 참조하십시오.)
+다음 Java 코드 예제에서는 감시 폴더 끝점을 라는 서비스에 추가합니다 *MyApplication/EncryptDocument*. (자세한 내용은 [감시 폴더 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints))
 
 >[!NOTE]
 >
->다음 빠른 시작을 컴파일하고 실행하려면 프로젝트에 ObservedFolderEndpointConfigConstants.java 파일을 포함해야 합니다. ([감시 폴더 구성 값 상수 파일](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)을 참조하십시오.)
+>다음 빠른 시작을 컴파일하고 실행하려면 프로젝트에 ObservedFolderEndpointConfigConstants.java 파일을 포함해야 합니다. (자세한 내용은 [감시 폴더 구성 값 상수 파일](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file))
 
 ```java
  /*
@@ -383,13 +383,13 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작:Java API {#quickstart-adding-an-email-endpoint-using-the-java-api}를 사용하여 이메일 엔드포인트 추가
+## 빠른 시작: Java API를 사용하여 이메일 엔드포인트 추가 {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-다음 Java 코드 예제에서는 Email 끝점을 *MyApplication/EncryptDocument* t라는 서비스에 추가합니다.([전자 메일 엔드포인트 추가](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)를 참조하십시오.)
+다음 Java 코드 예는 라는 서비스에 이메일 끝점을 추가합니다 *MyApplication/EncryptDocument* t. (자세한 내용은 [전자 메일 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints))
 
 >[!NOTE]
 >
->다음 빠른 시작을 컴파일하고 실행하려면 프로젝트에 EmailEndpointConfigConstants.java 파일을 포함해야 합니다. ([전자 메일 구성 값 상수 파일](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)을 참조하십시오.)
+>다음 빠른 시작을 컴파일하고 실행하려면 프로젝트에 EmailEndpointConfigConstants.java 파일을 포함해야 합니다. (자세한 내용은 [전자 메일 구성 값 상수 파일](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file))
 
 ```java
  /*
@@ -526,9 +526,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작:Java API {#quickstart-adding-a-remoting-endpoint-using-the-java-api}를 사용하여 원격 끝점 추가
+## 빠른 시작: Java API를 사용하여 원격 끝점 추가 {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-다음 Java 코드 예제에서는 원격 끝점을 *MyApplication/EncryptDocument* 서비스에 추가합니다. ([원격 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints) 참조)
+다음 Java 코드 예제에서는 원격 끝점을 라는 서비스에 추가합니다 *MyApplication/EncryptDocument*. (자세한 내용은 [원격 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints))
 
 ```java
  /*
@@ -631,9 +631,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작:Java API {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}를 사용하여 TaskManager 끝점 추가
+## 빠른 시작: Java API를 사용하여 TaskManager 끝점 추가 {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-다음 Java 코드 예제에서는 TaskManager 끝점을 *MyApplication/EncryptDocument* 서비스에 추가합니다. 범주 이름은 *EncryptProcess*&#x200B;입니다. ( [TaskManager 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints) 참조)
+다음 Java 코드 예제에서는 TaskManager 끝점을 라는 서비스에 추가합니다 *MyApplication/EncryptDocument*. 카테고리의 이름은 다음과 같습니다 *EncryptProcess*. (자세한 내용은 [TaskManager 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints))
 
 ```java
  /*
@@ -740,9 +740,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작:Java API {#quickstart-modifying-an-endpoint-using-the-java-api}를 사용하여 엔드포인트 수정
+## 빠른 시작: Java API를 사용하여 엔드포인트 수정 {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-다음 Java 코드 예제에서는 감시 폴더 끝점을 수정합니다. 끝점은 *MyApplication/EncryptDocument* 프로세스에 사용됩니다. 감시 폴더가 `C:\NewWatchedFolder`(으)로 변경되었습니다. ( [끝점 수정](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints) 참조)
+다음 Java 코드 예제에서는 감시 폴더 끝점을 수정합니다. 끝점은 *MyApplication/EncryptDocument* 프로세스. 감시 폴더가 `C:\NewWatchedFolder`. (자세한 내용은 [끝점 수정](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints))
 
 ```java
  /*
@@ -890,9 +890,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작:Java API {#quickstart-removing-an-endpoint-using-the-java-api}를 사용하여 엔드포인트 제거
+## 빠른 시작: Java API를 사용하여 끝점 제거 {#quickstart-removing-an-endpoint-using-the-java-api}
 
-다음 Java 코드는 *MyApplication/EncryptDocument*&#x200B;라는 서비스에서 EJB 끝점을 제거합니다. ( [끝점 제거](/help/forms/developing/programmatically-endpoints.md#removing-endpoints) 참조)
+다음 Java 코드는 이름이 지정된 서비스에서 EJB 끝점을 제거합니다 *MyApplication/EncryptDocument*. (자세한 내용은 [끝점 제거 중](/help/forms/developing/programmatically-endpoints.md#removing-endpoints))
 
 ```java
  /*
@@ -1009,9 +1009,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작:Java API {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}를 사용하여 끝점 커넥터 정보를 검색하는 중
+## 빠른 시작: Java API를 사용하여 끝점 커넥터 정보 검색 {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-다음 Java 코드는 감시 폴더 엔드포인트에 대한 정보를 검색합니다. 각 구성 값에 대한 정보가 검색 및 표시됩니다. 이 코드 목록은 각 구성 값이 필수인지 아니면 선택 사항인지를 지정합니다. 또한 각 구성 값의 이름과 값이 표시됩니다. ( [끝점 커넥터 정보 검색](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information) 참조)
+다음 Java 코드는 감시 폴더 엔드포인트에 대한 정보를 검색합니다. 각 구성 값에 대한 정보가 검색 및 표시됩니다. 이 코드 목록은 각 구성 값이 필수인지 아니면 선택 사항인지를 지정합니다. 또한 각 구성 값의 이름과 값이 표시됩니다. (자세한 내용은 [끝점 커넥터 정보 검색](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information))
 
 ```java
  /*

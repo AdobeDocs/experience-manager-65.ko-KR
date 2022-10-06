@@ -1,8 +1,8 @@
 ---
 title: 효과적인 뉴스레터 랜딩 페이지 만들기
-seo-title: 효과적인 뉴스레터 랜딩 페이지 만들기
+seo-title: Creating an Effective Newsletter Landing Page
 description: 효과적인 뉴스레터 랜딩 페이지는 뉴스레터 또는 기타 이메일 마케팅 캠페인의 가입자를 최대한으로 늘리는 데 도움이 됩니다. 뉴스레터에 등록한 가입자의 정보를 사용하여 리드를 생성할 수 있습니다.
-seo-description: 효과적인 뉴스레터 랜딩 페이지는 뉴스레터 또는 기타 이메일 마케팅 캠페인의 가입자를 최대한으로 늘리는 데 도움이 됩니다. 뉴스레터에 등록한 가입자의 정보를 사용하여 리드를 생성할 수 있습니다.
+seo-description: An effective newsletter landing page helps you get as many people as possible to sign up for your newsletter (or other email marketing campaign). You can use the information you gather from your newsletter sign ups to get leads.
 uuid: 0799b954-076b-4e95-8724-3661ae8fddb6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 93%
+source-wordcount: '613'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 93%
 >[!NOTE]
 >
 >Adobe는 이 기능(리드 및 목록 관리)을 추가로 개선할 계획이 없습니다.
->[Adobe Campaign을 활용하고 AEM](/help/sites-administering/campaign.md)에 통합하는 것이 좋습니다.
+>활용 [Adobe Campaign과 AEM 통합](/help/sites-administering/campaign.md).
 
 ## 뉴스레터 목록 만들기 {#creating-a-list-for-the-newsletter}
 

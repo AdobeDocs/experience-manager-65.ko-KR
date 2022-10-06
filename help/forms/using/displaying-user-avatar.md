@@ -1,8 +1,8 @@
 ---
 title: 사용자 아바타 표시
-seo-title: 사용자 아바타 표시
+seo-title: Displaying the user avatar
 description: 로그인한 사용자의 이미지를 표시하기 위해 AEM Forms 작업 영역을 사용자 지정하는 방법입니다.
-seo-description: 로그인한 사용자의 이미지를 표시하기 위해 AEM Forms 작업 영역을 사용자 지정하는 방법입니다.
+seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
 uuid: 2961dc93-f0d0-4842-80f1-3c239a20e348
 contentOwner: robhagat
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 exl-id: ee0708b0-b630-4a2b-84b6-3c0b92dd7777
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >사용자 이미지의 지원되는 종횡비는 1:1입니다.
 
-1. 다음 단계에서 언급한 세부 사항을 사용하여 DSC를 만듭니다. 자세한 내용은 [AEM Forms을 사용한 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63) 안내서의 &#39;AEM Forms용 구성 요소 개발&#39; 항목을 참조하십시오.
+1. 다음 단계에서 언급한 세부 사항을 사용하여 DSC를 만듭니다. 자세한 내용은 의 &#39;AEM Forms용 구성 요소 개발&#39; 항목을 참조하십시오. [AEM Forms을 사용한 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63) 안내서.
 1. DSC에서는 AEM Forms 사용자의 이미지 URL을 가져오기 위해 getCurrentUserImageUrl 및 getUserImageUrl 메서드를 노출하는 새 SPI를 정의합니다. 다음은 샘플 Java™ 코드 조각입니다.
 
    ```java
@@ -83,5 +83,5 @@ ht-degree: 0%
    </component>
    ```
 
-1. Workbench를 통해 DSC를 배포합니다. `ProcessManagementClientSessionService` 서비스를 다시 시작합니다.
+1. Workbench를 통해 DSC를 배포합니다. 다시 시작 `ProcessManagementClientSessionService` 서비스.
 1. 브라우저를 새로 고치거나 사용자와 로그아웃/로그인해야 할 수 있습니다.

@@ -1,5 +1,5 @@
 ---
-title: '이메일 알림에 메타데이터 사용 '
+title: 이메일 알림에 메타데이터 사용
 seo-title: Use metadata in an email notification
 description: 메타데이터를 사용하여 Forms 워크플로우 이메일 알림의 정보를 채웁니다
 seo-description: Use metadata to populate information in a forms workflow email notification

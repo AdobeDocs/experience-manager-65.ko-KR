@@ -1,8 +1,8 @@
 ---
 title: SSL 구성 개요
-seo-title: SSL 구성 개요
+seo-title: Overview of configuring SSL
 description: SSL을 구성하여 통신 보안을 강화하는 방법에 대해 배웁니다.
-seo-description: SSL을 구성하여 통신 보안을 강화하는 방법에 대해 배웁니다.
+seo-description: Learn about how to enhance security of communication by configuring SSL.
 uuid: 3e99d2bf-137b-45ba-8384-309624094623
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 exl-id: fbe1487e-c830-4be8-9841-6022e6a98ae7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
 
-# SSL {#overview-of-configuring-ssl} 구성 개요
+# SSL 구성 개요 {#overview-of-configuring-ssl}
 
 SSL(Secure Sockets Layer) 자격 증명을 만들고 응용 프로그램 서버에서 SSL을 구성하여 응용 프로그램 서버와의 통신 보안을 강화할 수 있습니다.
 
@@ -33,4 +33,4 @@ SSL(Secure Sockets Layer) 자격 증명을 만들고 응용 프로그램 서버�
 >
 >SSL 보안 인증서 및 인증서를 생성할 때 응용 프로그램 서버를 실행하는 데 사용한 것과 동일한 사용자 계정 권한을 사용합니다. 다른 사용자 권한을 사용하여 응용 프로그램 서버를 실행하는 경우 ContentRootURI가 https를 가리키면 양식이 PDFForm 표현물에 대해 올바르게 렌더링되지 않을 수 있습니다.
 
-SSL을 사용하는 LDAP 서버가 있는 경우 User Management가 작동하도록 구성합니다. ([SSL이 활성화된 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)을 참조하십시오.)
+SSL을 사용하는 LDAP 서버가 있는 경우 User Management가 작동하도록 구성합니다. (자세한 내용은 [SSL 사용 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server))

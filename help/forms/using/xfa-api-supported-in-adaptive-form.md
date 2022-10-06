@@ -1,23 +1,23 @@
 ---
 title: XDP 기반 적응형 양식의 XFA 지원
-seo-title: XDP 기반 적응형 양식의 XFA 지원
+seo-title: XFA support in XDP-based adaptive forms
 description: 응용 양식에 지원되는 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 나열합니다.
-seo-description: 응용 양식에 지원되는 XFA 이벤트, 속성, 스크립트 및 유효성 검사를 나열합니다.
+seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '683'
 ht-degree: 5%
 
 ---
 
-# XDP 기반 적응형 양식{#xfa-support-in-xdp-based-adaptive-forms}에서 XFA 지원
+# XDP 기반 적응형 양식의 XFA 지원{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## 소개 {#introduction}
 
@@ -31,7 +31,7 @@ XDP 파일을 기반으로 적응형 양식을 만들면 속성, 이벤트 및 �
 
 이 문서에서는 적응형 양식에 적용된 지원되는 XFA 이벤트, 속성 및 유효성 검사를 나열하고 적응형 양식에서 이러한 이벤트를 재정의하는 방법을 설명합니다.
 
-## 적응형 양식 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}에서 지원되는 XFA 요소 및 해당 매핑
+## 적응형 양식에서 지원되는 XFA 요소 및 해당 매핑 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### 필드 {#fields}
 
@@ -44,8 +44,8 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
    <td><p><strong>해당 적응형 양식 구성 요소</strong></p> </td>
   </tr>
   <tr>
-   <td><p>단추 </p> </td>
-   <td><p>단추</p> </td>
+   <td><p>버튼 </p> </td>
+   <td><p>버튼</p> </td>
   </tr>
   <tr>
    <td><p>체크 상자 </p> </td>
@@ -125,35 +125,35 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
    <td><p>적응형 양식의 활성화된 속성에 매핑됩니다. Access 표현식을 사용하여 재정의할 수 있습니다.</p> </td>
   </tr>
   <tr>
-   <td><p>액세스 가능성:역할 </p> </td>
+   <td><p>액세스 가능성: 역할 </p> </td>
    <td><p>적응형 양식의 역할 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>액세스 가능성:speakPriority </p> </td>
+   <td><p>액세스 가능성: speakPriority </p> </td>
    <td><p>적응형 양식의 speakPriority 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>액세스 가능성:speakText</p> </td>
+   <td><p>액세스 가능성: speakText</p> </td>
    <td><p>적응형 양식의 사용자 지정 액세서빌러티 텍스트에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>액세스 가능성:toolTip </p> </td>
+   <td><p>액세스 가능성: toolTip </p> </td>
    <td><p>적응형 양식의 짧은 설명 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>caption<em>(모든 필드 유형)</em></p> </td>
+   <td><p>캡션<em> (모든 필드 유형)</em></p> </td>
    <td><p>적응형 양식의 제목 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em>(모든 필드 유형)</em></p> </td>
+   <td><p>displayFormat<em> (모든 필드 유형)</em></p> </td>
    <td><p>적응형 양식의 표시 패턴에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em>(모든 필드 유형)</em></p> </td>
+   <td><p>rawValue<em> (모든 필드 유형)</em></p> </td>
    <td><p>적응형 양식의 값 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (List Box, Check Box)</em></p> </td>
+   <td><p>항목<em> (목록 상자, 확인란)</em></p> </td>
    <td><p>적응형 양식의 옵션 속성에 매핑됩니다. 옵션 표현식을 사용하여 재정의할 수 있습니다.</p> </td>
   </tr>
   <tr>
@@ -161,15 +161,15 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
    <td><p>적응형 양식의 허용되는 최대 문자 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>multiline<em> (텍스트 필드)</em></p> </td>
+   <td><p>여러 줄<em> (텍스트 필드)</em></p> </td>
    <td><p>적응형 양식의 여러 줄 허용 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>frcDigit<em>(숫자 필드, 십진수 필드)</em></p> </td>
+   <td><p>frcDigit<em> (숫자 필드, 십진수 필드)</em></p> </td>
    <td><p>적응형 양식의 프레임 자릿수 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em>(숫자 필드, 십진수 필드)</em></p> </td>
+   <td><p>leadDigit<em> (숫자 필드, 십진수 필드)</em></p> </td>
    <td><p>적응형 양식의 리드 자릿수 속성에 매핑됩니다.</p> </td>
   </tr>
   <tr>
@@ -203,7 +203,7 @@ XDP 파일을 사용하여 적응형 양식을 만들 때 XFA 필드를 적응�
   </tr>
   <tr>
    <td><p>validationState </p> </td>
-   <td><p>이 스크립트는 런타임에 실행되며 적응형 형식으로 재정의할 수 없습니다.<br /> </p> </td>
+   <td><p>이 스크립트는 런타임에 실행되며 적응형 양식으로 재정의할 수 없습니다.<br /> </p> </td>
   </tr>
   <tr>
    <td><p>종료 </p> </td>

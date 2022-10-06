@@ -1,8 +1,8 @@
 ---
 title: 티저 및 전략
-seo-title: 티저 및 전략
+seo-title: Teasers and Strategies
 description: 캠페인에서는 특정한 방문자 세그먼트를 관심사에 맞는 컨텐츠로 유도하기 위한 메커니즘으로 티저를 사용하는 경우가 많습니다. 특정 캠페인에 하나 이상의 티저가 정의될 수 있습니다.
-seo-description: 캠페인에서는 특정한 방문자 세그먼트를 관심사에 맞는 컨텐츠로 유도하기 위한 메커니즘으로 티저를 사용하는 경우가 많습니다. 특정 캠페인에 하나 이상의 티저가 정의될 수 있습니다.
+seo-description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
 uuid: c78ec858-4b0a-48d5-99b2-5ddd9e15183d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 90%
+source-wordcount: '1216'
+ht-degree: 89%
 
 ---
 
@@ -26,27 +26,27 @@ ht-degree: 90%
 >
 >티저 구성 요소는 AEM 6.2에서 더 이상 사용되지 않습니다. 대신 [Target 구성 요소](/help/sites-authoring/content-targeting-touch.md)를 사용하십시오.
 
-* **브랜드** 페이지는 웹 사이트의 캠페인 섹션에 저장됩니다. 브랜드에는 개별 캠페인이 포함되어 있습니다.
-* **캠페인** 페이지는 웹 사이트의 캠페인 섹션에 저장됩니다. 각 캠페인에는 개별 페이지가 있고, 개별 페이지에 티저 정의가 있습니다. 또한 컨테이너 또는 개요 페이지는 개별 티저 페이지에 대한 특정 정보 및 통계를 포함합니다.
+* **브랜드 페이지** 는 웹 사이트의 캠페인 섹션에 저장됩니다. 브랜드에는 개별 캠페인이 포함되어 있습니다.
+* **캠페인 페이지** 는 웹 사이트의 캠페인 섹션에 저장됩니다. 각 캠페인에는 개별 페이지가 있고, 개별 페이지에 티저 정의가 있습니다. 또한 컨테이너 또는 개요 페이지는 개별 티저 페이지에 대한 특정 정보 및 통계를 포함합니다.
 
 AEM의 티저는 여러 부분으로 구성됩니다.
 
-* **Teaser** 페이지는 해당 캠페인 페이지에 저장되며 특정 캠페인에서 사용 가능한 Teaser 단락의 정의를 포함합니다. 이러한 정의는 티저 단락을 표시할 때 사용되며 컨텐츠 변형, 변형을 선택하는 데 사용할 세그먼트 및 증폭 인수를 포함합니다.
-* **티저 구성 요소**&#x200B;는 기본적으로 제공되며 컨텐츠 페이지에 특정 티저 단락의 인스턴스를 만들 수 있게 합니다. 사이드킥에서 티저 구성 요소를 드래그한 다음 티저 정의를 지정하여 티저 단락을 직접 만들 수 있습니다. **참고:** 티저 구성 요소는 AEM 6.2에서 더 이상 사용되지 않습니다. 대신  [Target 구성 ](/help/sites-authoring/content-targeting-touch.md) 요소를 사용하십시오.
+* **티저 페이지** 는 해당 캠페인 페이지에 저장되며 특정 캠페인에서 사용할 수 있는 티저 단락의 정의를 포함합니다. 이러한 정의는 티저 단락을 표시할 때 사용되며 컨텐츠 변형, 변형을 선택하는 데 사용할 세그먼트 및 증폭 인수를 포함합니다.
+* **티저 구성 요소**&#x200B;는 기본적으로 제공되며 컨텐츠 페이지에 특정 티저 단락의 인스턴스를 만들 수 있게 합니다. 사이드킥에서 티저 구성 요소를 드래그한 다음 티저 정의를 지정하여 티저 단락을 직접 만들 수 있습니다. **참고:** Teaser 구성 요소는 AEM 6.2에서 더 이상 사용되지 않습니다. [Target 구성 요소](/help/sites-authoring/content-targeting-touch.md) 을 가리키도록 업데이트하는 것이 좋습니다.
 * **티저 단락**&#x200B;은 컨텐츠 페이지에 포함된 티저의 실제 인스턴스입니다. 이 단락은 특정 방문자 세그먼트를 관심사에 맞는 컨텐츠로 유도합니다.
 * 특정 방문자 세그먼트를 위한 맞춤 캠페인 컨텐츠를 포함하는 페이지입니다. 일반적으로 티저 단락은 방문자를 이러한 페이지로 유도합니다.
 
 ## 전략 {#strategies}
 
-페이지에 Teaser 단락을 추가할 때는 **전략**&#x200B;을 정의해야 합니다.
+페이지에 Teaser 단락을 추가할 때는 **전략**.
 
 이는 여러 티저에 지정된 세그먼트가 모두 성공적으로 해결되어 선택이 가능해질 수 있기 때문입니다. 이러한 경우에 **전략**&#x200B;에 지정된 추가 기준을 통해 표시할 티저가 선택됩니다.
 
 * **Clickstream 점수**: 방문자의 클라이언트 컨텍스트(방문자가 각 태그가 포함된 페이지를 몇 번 클릭했는지 표시)에 포함된 태그 및 관련 태그 조회수를 기준으로 합니다. 티저 페이지에 정의된 태그의 조회수가 비교됩니다.
-* **임의**, &quot;임의&quot; 선택을 위한 경우페이지에 생성된 무작위 인수를 사용합니다.  [client context](/help/sites-administering/client-context.md)에서 확인할 수 있습니다.
-* **** 해결된 세그먼트 목록 시작 이 순서는 캠페인 컨테이너 페이지에 포함된 티저 순서와 같습니다.
+* **Random**: &quot;random selection&quot; 페이지에 생성된 무작위 인수를 사용합니다. 이 인수를 [클라이언트 컨텍스트](/help/sites-administering/client-context.md).
+* **첫 번째** 로 나열된 상태로 남아 있는 문제를 해결했습니다. 이 순서는 캠페인 컨테이너 페이지에 포함된 티저 순서와 같습니다.
 
-세그먼트의 [증폭 인수](/help/sites-administering/campaign-segmentation.md#boost-factor)도 선택에 영향을 줍니다. 이 인수는 세그먼트 정의에 추가되어 상대적인 선택 가능성을 높이거나 낮추는 가중치입니다.
+다음 [증폭 인수](/help/sites-administering/campaign-segmentation.md#boost-factor) 세그먼트의 선택 부분에도 영향을 줍니다. 이 인수는 세그먼트 정의에 추가되어 상대적인 선택 가능성을 높이거나 낮추는 가중치입니다.
 
 다양한 선택 기준의 처리와 상호 관계를 알기 쉽게 예제로 설명하겠습니다. 이 방법을 티저가 의도한 대상에게 도달하는지 확인하는 데 사용할 수도 있습니다.
 
@@ -73,36 +73,36 @@ AEM의 티저는 여러 부분으로 구성됩니다.
   </tr>
   <tr>
    <td>C1</td>
-   <td>T3</td>
+   <td>T1</td>
    <td>S1, S2</td>
    <td>비즈니스, 마케팅</td>
   </tr>
   <tr>
-   <td>C3</td>
+   <td>C1</td>
    <td>T2 </td>
    <td>S1</td>
    <td><br /> </td>
   </tr>
   <tr>
-   <td>C3 </td>
+   <td>C1 </td>
    <td>T3</td>
    <td>, S3, S4</td>
    <td><br /> </td>
   </tr>
   <tr>
-   <td>C3 </td>
+   <td>C1 </td>
    <td>T4</td>
    <td>, S2, S5</td>
    <td><br /> </td>
   </tr>
   <tr>
-   <td>C3 </td>
+   <td>C1 </td>
    <td>T5</td>
    <td>S1, S2, S6</td>
    <td>마케팅</td>
   </tr>
   <tr>
-   <td>C3 </td>
+   <td>C1 </td>
    <td>T6</td>
    <td>S6</td>
    <td>비즈니스<br /> </td>
@@ -112,7 +112,7 @@ AEM의 티저는 여러 부분으로 구성됩니다.
 
 다음과 같은 방문자에게 적용합니다.
 
-* **S1**,  **S2** 및  **S6** 해결 성공
+* **S1**, **S2** 및 **S6** 해결 성공
 
 * **마케팅** 태그의 조회수 3회
 * **비즈니스** 태그의 조회수 6회
@@ -137,8 +137,8 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td>결과 클릭스트림 점수 </td>
   </tr>
   <tr>
-   <td>C3</td>
-   <td>T3</td>
+   <td>C1</td>
+   <td>T1</td>
    <td>S1, S2</td>
    <td>비즈니스, 마케팅</td>
    <td>예</td>
@@ -146,7 +146,7 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td>9</td>
   </tr>
   <tr>
-   <td>C3</td>
+   <td>C1</td>
    <td>T2개 </td>
    <td>S1</td>
    <td><br /> </td>
@@ -155,7 +155,7 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td><br /> </td>
   </tr>
   <tr>
-   <td>C3 </td>
+   <td>C1 </td>
    <td>T3</td>
    <td>, S3, S4</td>
    <td><br /> </td>
@@ -164,7 +164,7 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td><br /> </td>
   </tr>
   <tr>
-   <td>C3 </td>
+   <td>C1 </td>
    <td>T4</td>
    <td>, S2, S5</td>
    <td><br /> </td>
@@ -173,7 +173,7 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td><br /> </td>
   </tr>
   <tr>
-   <td>C3 </td>
+   <td>C1 </td>
    <td>T5</td>
    <td>S1, S2, S6</td>
    <td>마케팅</td>
@@ -182,7 +182,7 @@ AEM의 티저는 여러 부분으로 구성됩니다.
    <td>3</td>
   </tr>
   <tr>
-   <td>C3 </td>
+   <td>C1 </td>
    <td>T6</td>
    <td>S6</td>
    <td>비즈니스</td>

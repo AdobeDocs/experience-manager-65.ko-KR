@@ -1,8 +1,8 @@
 ---
 title: 양식 작업
-seo-title: 양식 작업
+seo-title: Working with a Form
 description: AEM Forms 앱의 작업 또는 시작점과 연관된 양식을 보고 업데이트합니다
-seo-description: AEM Forms 앱의 작업 또는 시작점과 연관된 양식을 보고 업데이트합니다
+seo-description: View and update the form associated with a task or Startpoint in the AEM Forms app
 uuid: 7481ca5c-a2c0-4697-9008-1e51bce2012e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
 
-# {#working-with-a-form} 양식 작업
+# 양식 작업 {#working-with-a-form}
 
 양식 앱에서 동기화를 위해 양식이 활성화된 경우 양식이 다운로드되며 직접 작업할 수 있습니다.
 
@@ -24,11 +24,11 @@ ht-degree: 0%
 
 AEM Forms 앱에서 양식을 동기화하려면 다음을 수행하십시오.
 
-1. 작성자 인스턴스에서 양식을 선택하고 **속성 보기**&#x200B;를 클릭합니다.
+1. 작성자 인스턴스에서 양식을 선택하고 **속성 보기**.
 1. 속성 페이지에서 **고급.**
-1. 고급 아래에서 옵션을 활성화합니다.**AEM Forms 앱과 동기화**, **저장**&#x200B;을 탭합니다.
+1. 고급 아래에서 옵션을 활성화합니다. **AEM Forms 앱과 동기화**, 탭 **저장**.
 
-여러 양식을 동기화하려면 작성자 인스턴스에서 Forms Manager에서 여러 양식을 선택하고 **AEM Forms 앱과 동기화**&#x200B;를 누릅니다. 양식이 게시되면 AEM Forms 앱은 게시 서버에 연결하고 양식을 가져올 수 있습니다.
+여러 양식을 동기화하려면 작성자 인스턴스에서 Forms Manager에서 여러 양식을 선택하고 **AEM Forms 앱과 동기화**. 양식이 게시되면 AEM Forms 앱은 게시 서버에 연결하고 양식을 가져올 수 있습니다.
 
 >[!NOTE]
 >
@@ -36,10 +36,8 @@ AEM Forms 앱에서 양식을 동기화하려면 다음을 수행하십시오.
 >
 >* 적응형 양식(지연 로드 없음)
 >* 모바일 양식
-
 >
->
-AEM Forms OSGi 서버와 동기화된 AEM Forms 앱에서 가져온 적응형 양식에서는 양식 수준 첨부 파일이 지원되지 않습니다. 작성자가 양식을 작성할 때 필드 수준의 첨부 파일을 활성화한 경우 사용자는 필드에 파일을 첨부할 수 있습니다.
+>AEM Forms OSGi 서버와 동기화된 AEM Forms 앱에서 가져온 적응형 양식에서는 양식 수준 첨부 파일이 지원되지 않습니다. 작성자가 양식을 작성할 때 필드 수준의 첨부 파일을 활성화한 경우 사용자는 필드에 파일을 첨부할 수 있습니다.
 
 **양식을 열고 업데이트하려면**
 

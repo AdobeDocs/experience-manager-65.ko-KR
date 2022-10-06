@@ -1,8 +1,8 @@
 ---
 title: 모바일 앱
-seo-title: 모바일 앱
+seo-title: Mobile Apps
 description: 모바일 앱에 대한 콘텐츠 관리를 시작하려면 이 페이지를 따르십시오.
-seo-description: 모바일 앱에 대한 콘텐츠 관리를 시작하려면 이 페이지를 따르십시오.
+seo-description: Follow this page to get started with administering content for mobile apps.
 uuid: 0ef31513-b720-46cb-b162-35883ae48912
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -12,8 +12,8 @@ discoiquuid: 302d1bd9-fdb3-4db6-a446-6ed85ad9fba5
 exl-id: dc7ba6ad-9df9-4312-a82f-5f3405dea684
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 5%
+source-wordcount: '131'
+ht-degree: 4%
 
 ---
 
@@ -32,4 +32,4 @@ AEM Mobile에서는 앱을 만드는 여러 방법을 제공합니다. 앱을 �
 
 >[!NOTE]
 >
->Adobe Experience Manager을 처음 사용하는 경우 [AEM 시작하기](/help/sites-deploying/deploy.md)를 살펴볼 수 있습니다.
+>Adobe Experience Manager을 처음 사용하는 경우 다음을 살펴볼 수 있습니다 [AEM 시작하기](/help/sites-deploying/deploy.md).

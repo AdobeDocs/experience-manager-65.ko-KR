@@ -1,19 +1,19 @@
 ---
 title: 적응형 양식 비동기 제출
-seo-title: 적응형 양식 비동기 제출
+seo-title: Asynchronous submission of adaptive forms
 description: 적응형 양식에 대한 비동기 제출을 구성하는 방법을 알아봅니다.
-seo-description: 적응형 양식에 대한 비동기 제출을 구성하는 방법을 알아봅니다.
+seo-description: Learn to configure asynchronous submission for adaptive forms.
 uuid: 6555ac63-4d99-4b39-a2d0-a7e61909106b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -30,20 +30,20 @@ ht-degree: 0%
 
 적응형 양식에 대한 비동기 제출을 구성하려면 다음을 수행하십시오.
 
-1. 적응형 양식 작성 모드에서 양식 컨테이너 개체를 선택하고 ![cmppr1](assets/cmppr1.png)을 눌러 해당 속성을 엽니다.
-1. **[!UICONTROL 제출]** 속성 섹션에서 **[!UICONTROL 비동기 제출]** 사용을 활성화합니다.
-1. **[!UICONTROL On Submit]** 섹션에서 다음 옵션 중 하나를 선택하여 양식 제출 시 성공적으로 수행할 수 있습니다.
+1. 적응형 양식 작성 모드에서 양식 컨테이너 개체를 선택하고 ![cmppr1](assets/cmppr1.png) 속성을 엽니다.
+1. 에서 **[!UICONTROL 제출]** 속성 섹션, 활성화 **[!UICONTROL 비동기 제출 사용]**.
+1. 에서 **[!UICONTROL 제출 시]** 섹션에서 다음 옵션 중 하나를 선택하여 양식 제출 시 수행할 수 있습니다.
 
-   * **[!UICONTROL URL로 리디렉션]**:양식을 제출할 때 지정된 URL 또는 페이지로 리디렉션합니다. URL을 지정하거나 **[!UICONTROL 리디렉션 URL/경로]** 필드에서 페이지의 경로를 찾아 선택할 수 있습니다.
-   * **[!UICONTROL 메시지 표시]**:양식 제출 시 메시지를 표시합니다. 메시지 표시 옵션 아래의 텍스트 필드에 메시지를 작성할 수 있습니다. 텍스트 필드는 리치 텍스트 서식을 지원합니다.
+   * **[!UICONTROL URL로 리디렉션]**: 양식을 제출할 때 지정된 URL 또는 페이지로 리디렉션합니다. URL을 지정하거나 다음 위치에서 페이지의 경로를 찾아볼 수 있습니다 **[!UICONTROL 리디렉션 URL/경로]** 필드.
+   * **[!UICONTROL 메시지 표시]**: 양식 제출 시 메시지를 표시합니다. 메시지 표시 옵션 아래의 텍스트 필드에 메시지를 작성할 수 있습니다. 텍스트 필드는 리치 텍스트 서식을 지원합니다.
 
-1. ![check-button1](assets/check-button1.png)을 눌러 속성을 저장합니다.
+1. 탭 ![check-button1](assets/check-button1.png) 속성을 저장합니다.
 
 ## 비동기 제출 작동 방식 {#how-asynchronous-submission-works}
 
 AEM Forms은 양식 제출을 위한 기본 성공 및 오류 핸들러를 제공합니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. 양식이 제출되면 데이터가 서버에 전송되어 유효성 검사를 위해 서버에 전송되며, 클라이언트에게 전송하기 위해 성공 또는 오류 이벤트에 대한 정보를 제공합니다. 이 정보는 함수를 실행하기 위해 관련 처리기에 매개 변수로 전달됩니다.
 
-또한 양식 작성자와 개발자는 양식 수준에서 규칙을 작성하여 기본 핸들러를 재정의할 수 있습니다. 자세한 내용은 [규칙](#custom)을 사용하여 기본 처리기 재정의 를 참조하십시오.
+또한 양식 작성자와 개발자는 양식 수준에서 규칙을 작성하여 기본 핸들러를 재정의할 수 있습니다. 자세한 내용은 [규칙을 사용하여 기본 처리기 재정의](#custom).
 
 먼저 성공 및 오류 이벤트에 대한 서버 응답을 검토할 수 있습니다.
 
@@ -62,14 +62,14 @@ AEM Forms은 양식 제출을 위한 기본 성공 및 오류 핸들러를 제�
 
 양식 제출이 성공하면 서버 응답에는 다음이 포함됩니다.
 
-* 양식 데이터 형식 유형:XML 또는 JSON
+* 양식 데이터 형식 유형: XML 또는 JSON
 * XML 또는 JSON 형식의 양식 데이터
 * 페이지로 리디렉션하거나 양식에 구성된 대로 메시지를 표시하는 선택 사항입니다
 * 양식에 구성된 페이지 URL 또는 메시지 콘텐츠
 
 성공 처리기는 서버 응답을 읽고 구성된 페이지 URL로 리디렉션하거나 메시지를 표시합니다.
 
-### 제출 오류 이벤트 {#server-response-for-submission-error-event}에 대한 서버 응답
+### 제출 오류 이벤트에 대한 서버 응답 {#server-response-for-submission-error-event}
 
 제출 오류 이벤트에 대한 서버 응답의 구조는 다음과 같습니다.
 
@@ -95,13 +95,13 @@ AEM Forms은 양식 제출을 위한 기본 성공 및 오류 핸들러를 제�
 
 ## 규칙을 사용하여 기본 처리기 재정의 {#custom}
 
-양식 개발자와 작성자는 기본 핸들러를 재정의하기 위해 코드 편집기에서 양식 수준에서 규칙을 작성할 수 있습니다. 성공 및 오류 이벤트에 대한 서버 응답이 양식 수준에서 노출되어 개발자는 이 규칙에서 `$event.data`을 사용하여 액세스할 수 있습니다.
+양식 개발자와 작성자는 기본 핸들러를 재정의하기 위해 코드 편집기에서 양식 수준에서 규칙을 작성할 수 있습니다. 성공 및 오류 이벤트에 대한 서버 응답은 개발자가 다음을 사용하여 액세스할 수 있는 양식 수준에서 표시됩니다 `$event.data` 규칙 아래에 그룹화됩니다.
 
 성공 및 오류 이벤트를 처리하도록 코드 편집기에 규칙을 작성하려면 다음 단계를 수행하십시오.
 
-1. 작성 모드에서 적응형 양식을 열고 양식 개체를 선택한 다음 ![edit-rules1](assets/edit-rules1.png) 를 탭하여 규칙 편집기를 엽니다.
-1. 양식 개체 트리에서 **[!UICONTROL 양식]**&#x200B;을 선택하고 **[!UICONTROL 만들기]**&#x200B;를 탭합니다.
-1. 모드 선택 드롭다운에서 **[!UICONTROL 코드 편집기]**&#x200B;를 선택합니다.
-1. 코드 편집기에서 **[!UICONTROL 코드 편집]**&#x200B;을 누릅니다. 확인 대화 상자에서 **[!UICONTROL 편집]**&#x200B;을 누릅니다.
-1. **[!UICONTROL Event]** 드롭다운에서 **[!UICONTROL Successful Submission]** 또는 **[!UICONTROL Error in Submission]**&#x200B;을 선택합니다.
-1. 선택한 이벤트에 대한 규칙을 작성하고 **[!UICONTROL 완료]**&#x200B;를 눌러 규칙을 저장합니다.
+1. 작성 모드에서 적응형 양식을 열고 양식 개체를 선택한 다음 ![edit-rules1](assets/edit-rules1.png) 규칙 편집기를 엽니다.
+1. 선택 **[!UICONTROL 양식]** 양식 객체 트리에서 **[!UICONTROL 만들기]**.
+1. 선택 **[!UICONTROL 코드 편집기]** 모드 선택 드롭다운에서 을 선택합니다.
+1. 코드 편집기에서 **[!UICONTROL 코드 편집]**. 탭 **[!UICONTROL 편집]** 확인 대화 상자에 표시됩니다.
+1. 선택 **[!UICONTROL 전송 성공]** 또는 **[!UICONTROL 제출 오류]** 에서 **[!UICONTROL 이벤트]** 드롭다운.
+1. 선택한 이벤트에 대한 규칙을 작성하고 탭합니다. **[!UICONTROL 완료]** 규칙을 저장하려면 을 클릭합니다.

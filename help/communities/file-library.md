@@ -1,8 +1,8 @@
 ---
 title: 파일 라이브러리 기능
-seo-title: 파일 라이브러리 기능
+seo-title: File Library Feature
 description: 파일 라이브러리 기능을 사용하면 로그인한 사이트 방문자가 파일을 업로드, 관리 및 다운로드할 수 있습니다
-seo-description: 파일 라이브러리 기능을 사용하면 로그인한 사이트 방문자가 파일을 업로드, 관리 및 다운로드할 수 있습니다
+seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '735'
 ht-degree: 8%
 
 ---
@@ -27,25 +27,25 @@ ht-degree: 8%
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
 * AEM 사이트에 파일 라이브러리 기능 추가.
-* `File Library` 구성 요소에 대한 구성 설정입니다.
+* 에 대한 구성 설정 `File Library` 구성 요소.
 
 ### 페이지에 파일 라이브러리 추가 {#adding-a-file-library-to-a-page}
 
-작성자 모드의 페이지에 `File Library` 구성 요소를 추가하려면 구성 요소를 찾습니다.
+을(를) 추가하려면 `File Library` 구성 요소를 작성자 모드에서 페이지에 배치하여 구성 요소를 찾습니다.
 
 * `Communities / File Library`
 
 페이지로 끌어서 놓습니다.
 
-필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 방문하십시오.
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md).
 
-필요한 [클라이언트 측 라이브러리](/help/communities/essentials-file-library.md#essentials-for-client-side)가 포함된 경우 이 방법으로 `File Library` 구성 요소가 표시됩니다.
+이 [필수 클라이언트 측 라이브러리](/help/communities/essentials-file-library.md#essentials-for-client-side) 포함된 경우, 다음과 같이 하십시오 `File Library` 구성 요소가 표시됩니다.
 
 ![file-library1](assets/file-library1.png)
 
 ### 파일 라이브러리 구성 {#configuring-file-library}
 
-액세스할 배치된 `File Library` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
+배치된 항목을 선택합니다 `File Library` 액세스하여 선택할 구성 요소 `Configure` 아이콘 편집 대화 상자를 엽니다.
 
 ![configure-new](assets/configure-new.png)
 
@@ -53,7 +53,7 @@ ht-degree: 8%
 
 #### 댓글 탭 {#comments-tab}
 
-**댓글** 탭에서 업로드된 파일에 대한 주석이 표시되는 여부와 방법을 지정합니다.
+아래에 **댓글** 탭에서 업로드된 파일에 대한 주석이 표시되는 여부와 방법을 지정합니다.
 
 * **파일에 대한 주석 허용**
 
@@ -61,7 +61,7 @@ ht-degree: 8%
 
 * **페이지당 댓글**
 
-   표시된 답글 수와 페이지당 표시되는 댓글 수를 제한합니다. 기본값은 **10**&#x200B;입니다.
+   표시된 답글 수와 페이지당 표시되는 댓글 수를 제한합니다. 기본값은 입니다. **10**.
 
 * **최대 파일 크기**
 
@@ -73,7 +73,7 @@ ht-degree: 8%
 
 * **허용되는 파일 유형**
 
-   점이 구분되어 있는 쉼표로 구분된 파일 확장자 목록입니다. 예 :.jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정하면 지정되지 않은 파일 유형이 허용되지 않습니다. 모든 파일 형식이 허용되도록 기본값이 지정되지 않았습니다.
+   점이 구분되어 있는 쉼표로 구분된 파일 확장자 목록입니다. 예 : .jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정하면 지정되지 않은 파일 유형이 허용되지 않습니다. 모든 파일 형식이 허용되도록 기본값이 지정되지 않았습니다.
 
 * **리치 텍스트 편집기**
 
@@ -101,7 +101,7 @@ ht-degree: 8%
 
 * **다음 허용**
 
-   이 확인란을 선택하면 구성원이 새 게시물의 [notified](/help/communities/notifications.md)가 될 수 있는 블로그 문서에 다음 기능을 포함하십시오. 기본값은 선택 취소되어 있습니다.
+   이 옵션을 선택하면 구성원이 게시될 수 있는 블로그 문서에 다음 기능을 포함하십시오 [알림](/help/communities/notifications.md) 새 게시물입니다. 기본값은 선택 취소되어 있습니다.
 
 * **언급 활성화**
 
@@ -113,7 +113,7 @@ ht-degree: 8%
 
 * **UI 언급 패턴**
 
-   등록된 사용자를 게시물에 태그 지정(@mention)할 허용된 패턴 문자열을 지정합니다. 예: ~{{familyName}}{{givenName}}.
+   등록된 사용자를 게시물에 태그 지정(@mention)할 허용된 패턴 문자열을 지정합니다. 예 ~{{familyName}}{{givenName}}.
 
 * **스레드된 회신 허용**
 
@@ -121,7 +121,7 @@ ht-degree: 8%
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
-**사용자 중재** 탭 아래에서, 댓글이 허용된 경우 댓글의 조정을 구성합니다.
+아래에 **사용자 중재** 탭에서 댓글이 허용된 경우 댓글 조정을 구성합니다.
 
 * **사전 관리**
 
@@ -153,11 +153,11 @@ ht-degree: 8%
 
 * **관리 임계값**
 
-   중재자에게 알리기 전에 방문자가 댓글에 플래그를 지정해야 하는 횟수를 입력합니다. 기본값은 한 번(**1**)입니다.
+   중재자에게 알리기 전에 방문자가 댓글에 플래그를 지정해야 하는 횟수를 입력합니다. 기본값은 한 번입니다(**1**).
 
 * **플래그 지정 제한**
 
-   공개 보기에서 주석이 숨겨지기 전에 플래그를 지정해야 하는 횟수를 입력합니다. 이 숫자는 **중재 임계값**&#x200B;보다 크거나 같아야 합니다. 기본값은 5입니다.
+   공개 보기에서 주석이 숨겨지기 전에 플래그를 지정해야 하는 횟수를 입력합니다. 이 숫자는 다음보다 크거나 같아야 합니다 **중재 임계값**. 기본값은 5입니다.
 
 ### 정렬 설정 탭 {#sort-settings-tab}
 
@@ -167,8 +167,8 @@ ht-degree: 8%
 
 ### 추가 정보 {#additional-information}
 
-개발자를 위한 [파일 라이브러리 필수 패키지](/help/communities/essentials-file-library.md) 페이지에서 자세한 정보를 찾을 수 있습니다.
+자세한 내용은 [파일 라이브러리 필수 사항](/help/communities/essentials-file-library.md) 개발자를 위한 페이지입니다.
 
-게시된 항목 및 댓글에 대한 중복을 보려면 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
+게시된 항목 및 댓글에 대한 중량은 [사용자가 생성한 컨텐츠 중재](/help/communities/moderate-ugc.md).
 
-게시된 항목 및 댓글에 태깅하려면 [사용자 생성 컨텐츠 태깅](/help/communities/tag-ugc.md)을 참조하십시오.
+게시된 항목 및 댓글에 태깅하려면 다음을 참조하십시오 [사용자 생성 컨텐츠에 태깅](/help/communities/tag-ugc.md).

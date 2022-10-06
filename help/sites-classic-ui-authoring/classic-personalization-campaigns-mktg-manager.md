@@ -1,8 +1,8 @@
 ---
 title: 마케팅 캠페인 관리자 작업
-seo-title: 마케팅 캠페인 관리자 작업
+seo-title: Working with the Marketing Campaign Manager
 description: MCM(마케팅 캠페인 관리자)은 다중 채널 캠페인을 관리하는 데 도움이 되는 콘솔입니다 이 마케팅 자동화 소프트웨어를 사용하여 모든 브랜드, 캠페인 및 경험은 물론 관련된 세그먼트, 목록, 리드 및 보고서를 관리할 수 있습니다.
-seo-description: MCM(마케팅 캠페인 관리자)은 다중 채널 캠페인을 관리하는 데 도움이 되는 콘솔입니다 이 마케팅 자동화 소프트웨어를 사용하여 모든 브랜드, 캠페인 및 경험은 물론 관련된 세그먼트, 목록, 리드 및 보고서를 관리할 수 있습니다.
+seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
 uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 95%
+source-wordcount: '1175'
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ MCM에서 다음에 액세스할 수 있습니다.
 >[!NOTE]
 >
 >Adobe는 이 기능(리드 관리)을 추가로 개선할 계획이 없습니다.
->[Adobe Campaign을 활용하고 AEM](/help/sites-administering/campaign.md)에 통합하는 것이 좋습니다.
+>활용 [Adobe Campaign과 AEM 통합](/help/sites-administering/campaign.md).
 
 AEM MCM에서는 리드를 수동으로 입력하거나 메일링 목록과 같이 쉼표로 구분된 목록을 가져와서 리드를 구성하고 추가할 수 있습니다. 리드를 생성하는 또 다른 방법은 뉴스레터 등록 또는 커뮤니티 등록입니다. 적절한 구성을 통해 이러한 등록으로부터 리드를 생성하는 워크플로우를 시작할 수 있습니다. 리드는 일반적으로 분류되어 목록에 배치되므로 이후에 목록 단위로 작업을 수행할 수 있습니다. 예를 들어 특정 목록에 사용자 지정 이메일을 보낼 수 있습니다.
 
@@ -83,7 +83,7 @@ AEM MCM에서는 리드를 수동으로 입력하거나 메일링 목록과 같�
 >[!NOTE]
 >
 >Adobe는 이 기능(목록 관리)을 추가로 개선할 계획이 없습니다.
->[Adobe Campaign을 활용하고 AEM](/help/sites-administering/campaign.md)에 통합하는 것이 좋습니다.
+>활용 [Adobe Campaign과 AEM 통합](/help/sites-administering/campaign.md).
 
 목록을 통해 리드를 여러 그룹으로 정리할 수 있습니다. 목록을 사용하여 마케팅 캠페인을 특정 사용자 그룹으로 타게팅할 수 있습니다. 예를 들어 특정 목록에 타게팅된 뉴스레터를 보낼 수 있습니다.
 
@@ -132,11 +132,11 @@ AEM MCM에서는 리드를 수동으로 입력하거나 메일링 목록과 같�
 
 * 캠페인 개요를 엽니다(오른쪽 창에서 캠페인을 두 번 클릭하거나 왼쪽 창에서 한 번 클릭).
 
-#### 캠페인 개요  {#campaign-overview}
+#### 캠페인 개요 {#campaign-overview}
 
 개별 캠페인의 경우 다음 두 가지 보기를 사용할 수 있습니다.
 
-1. **달력 보기**
+1. **캘린더 보기**
 
    다음 아이콘을 사용합니다.
 
@@ -166,7 +166,7 @@ AEM MCM에서는 리드를 수동으로 입력하거나 메일링 목록과 같�
 
    여기에서 다음 작업을 수행할 수 있습니다.
 
-   * **새로 만들기...** 경험;예를 들어 Adobe Target에서 오퍼, 티저 및 뉴스레터를 제공합니다.
+   * 만들기 **새로 만들기...** 경험; 예를 들어 Adobe Target에서 오퍼, 티저 및 뉴스레터를 제공합니다.
    * 특정 티저 페이지 또는 뉴스레터의 세부 정보를 **편집**&#x200B;합니다(두 번 클릭을 사용할 수도 있음).
    * 특정 티저 페이지 또는 뉴스레터에 대한 **속성...**&#x200B;을 정의합니다.
    * 경험(티저 페이지 또는 뉴스레터)의 모양과 분위기를 **시뮬레이션**합니다.
@@ -178,7 +178,7 @@ AEM MCM에서는 리드를 수동으로 입력하거나 메일링 목록과 같�
    * 텍스트를 **검색**&#x200B;합니다(경험의 제목 필드가 검색됨).
    * 검색에 필터를 적용하려면 **고급** 검색을 사용합니다.
 
-### 캠페인 경험 시뮬레이션  {#simulating-your-campaign-experiences}
+### 캠페인 경험 시뮬레이션 {#simulating-your-campaign-experiences}
 
 MCM에서 **캠페인**&#x200B;을 클릭합니다. 목록 보기가 활성화되었는지 확인하고 필요한 캠페인 경험을 선택한 후 **시뮬레이션**&#x200B;을 클릭합니다. 터치포인트(티저 또는 뉴스레터 페이지)가 열리면서 선택한 경험이 표시됩니다. 방문자도 이러한 내용을 볼 수 있습니다.
 
@@ -186,7 +186,7 @@ MCM에서 **캠페인**&#x200B;을 클릭합니다. 목록 보기가 활성화�
 
 여기에서 사이드킥을 열어(작은 아래쪽 화살표 클릭) 페이지 업데이트를 위한 편집 모드로 전환할 수도 있습니다.
 
-### 캠페인 경험 분석  {#analyzing-your-campaign-experiences}
+### 캠페인 경험 분석 {#analyzing-your-campaign-experiences}
 
 MCM에서 **캠페인**&#x200B;을 클릭합니다. 목록 보기가 활성화되었는지 확인하고 필요한 캠페인 경험을 선택한 후 **분석...**&#x200B;을 선택합니다. 시간에 따른 페이지 노출 차트가 표시됩니다.
 

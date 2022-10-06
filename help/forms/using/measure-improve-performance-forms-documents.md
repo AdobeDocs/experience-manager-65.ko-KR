@@ -1,8 +1,8 @@
 ---
 title: 양식의 효율성 측정 및 전환 개선
-seo-title: 양식의 효율성 측정 및 전환 개선
+seo-title: Measure and improve effectiveness and conversion of forms
 description: AEM Forms은 Adobe Target 및 Adobe Analytics 솔루션과 통합되어 있으므로 양식의 성능 및 전환율을 측정하고 향상시킬 수 있습니다.
-seo-description: AEM Forms은 Adobe Target 및 Adobe Analytics 솔루션과 통합되어 있으므로 양식의 성능 및 전환율을 측정하고 향상시킬 수 있습니다.
+seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that allows you to measure and improve the performance and conversion rate of your forms.
 uuid: fd2f087c-39f5-457d-8b44-c3ec4400b3fc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,12 +12,12 @@ docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
 
-# 양식{#measure-and-improve-effectiveness-and-conversion-of-forms}의 효율성 및 변환 측정 및 개선
+# 양식의 효율성 측정 및 전환 개선{#measure-and-improve-effectiveness-and-conversion-of-forms}
 
 ## 과제 {#the-challenge-br}
 
@@ -33,7 +33,7 @@ ROI를 극대화하려면 고객이 서비스와 상호 작용하는 방법을 �
 
 ## 솔루션 {#the-solution}
 
-AEM Forms은 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) 솔루션 - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) 및 [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html)과 통합됩니다. 이 기능을 통해 양식의 수행 방식을 모니터링하고 분석하여 전환율을 높이는 경험을 테스트하고 식별할 수 있습니다.
+AEM Forms과 통합 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) 솔루션 - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) 및 [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - 양식의 성과를 모니터링하고 분석하는 데 도움이 되며, 전환율을 높이는 경험을 실험하고 식별할 수 있습니다.
 
 ## 워크플로우 {#the-workflow}
 
@@ -57,7 +57,7 @@ AEM Forms은 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)
 
 ### 워크플로우 단계 {#workflow-steps}
 
-#### 1단계:AEM Forms {#step-configure-analytics-and-target-in-aem-forms-br}에서 Analytics 및 Target 구성
+#### 1단계: AEM Forms에서 Analytics 및 Target 구성  {#step-configure-analytics-and-target-in-aem-forms-br}
 
 **Analytics 구성**
 
@@ -69,19 +69,19 @@ AEM Forms은 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)
 1. AEM에서 AEM Forms Analytics 구성 서비스 구성
 1. AEM의 양식에서 분석 활성화
 
-자세한 단계는 [적응형 양식에 대한 분석 및 보고서 구성](../../forms/using/configure-analytics-forms-documents.md)을 참조하십시오.
+자세한 단계는 [적응형 양식에 대한 분석 및 보고서 구성](../../forms/using/configure-analytics-forms-documents.md).
 
 **Target 구성**
 
-적응형 양식에 대한 A/B 테스트를 만들고 실행하려면 [AEM Forms에서 Target 설정 및 통합 설정에 설명된 대로 AEM Forms에서 Target을 구성하십시오](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+적응형 양식에 대한 A/B 테스트를 만들고 실행하려면 의 설명에 따라 AEM Forms에서 Target을 구성하십시오 [AEM Forms에서 Target 설정 및 통합](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
-#### 2단계:Analytics 보고서 보기 {#step-view-analytics-report-br}
+#### 2단계: 분석 보고서 보기 {#step-view-analytics-report-br}
 
 고객이 Analytics를 활성화한 양식에 액세스하고 상호 작용하면 고객의 상호 작용이 고도로 안전한 Analytics 데이터베이스에 캡처됩니다. 데이터베이스는 클라이언트에 의해 세그먼트화되고 보안 연결을 통해 액세스할 수 있습니다.
 
 AEM 내에서 Analytics가 활성화된 양식을 보고 데이터를 분석할 수 있습니다. 보고서를 보려면 다음을 수행하십시오.
 
-1. AEM 서버에서 **Forms > Forms 및 문서**&#x200B;로 이동합니다.
+1. AEM 서버에서 **Forms > Forms 및 문서**.
 1. Analytics 보고서를 받을 양식을 선택합니다.
 1. Analytics 보고서 아이콘을 클릭합니다. 보고서가 표시됩니다.
 
@@ -91,33 +91,33 @@ Analytics에서 양식에 대해 수집하고 보고하는 데이터 포인트�
 
 적응형 양식에 대한 분석 보고서는 양식 수준에서 다음 주요 성과 지표(KPI)를 캡처합니다.
 
-* **평균 채우기 시간**:양식 채우기에 걸린 평균 시간
-* **노출 횟수**:검색 결과에 양식이 표시된 횟수입니다
+* **평균 채우기 시간**: 양식 채우기에 걸린 평균 시간
+* **노출 횟수**: 검색 결과에 양식이 표시된 횟수입니다
 
-* **표현물**:양식을 렌더링하거나 연 횟수입니다
-* **초안**:양식을 초안으로 저장한 횟수입니다
+* **표현물**: 양식을 렌더링하거나 연 횟수입니다
+* **초안**: 양식을 초안으로 저장한 횟수입니다
 
-* **제출**:양식을 제출한 횟수
-* **중단**:사용자가 양식을 완료하지 않고 떠난 횟수입니다
-* **방문/제출**:제출당 방문 비율
+* **제출**: 양식을 제출한 횟수
+* **Abort**: 사용자가 양식을 완료하지 않고 떠난 횟수입니다
+* **방문/제출**: 제출당 방문 비율
 
 또한 양식의 각 패널에 대한 다음 세부 정보가 제공됩니다.
 
-* **시간**:패널 및 해당 필드에서 보낸 평균 시간(초)
+* **시간**: 패널 및 해당 필드에서 보낸 평균 시간(초)
 
-* **오류**:1000개의 양식 변환당 패널 및 해당 필드에서 발생한 오류 수
+* **오류**: 1000개의 양식 변환당 패널 및 해당 필드에서 발생한 오류 수
 
-* **도움말**:사용자가 1000개의 양식 변환당 패널 및 해당 필드에 대한 컨텍스트 내 도움말에 액세스한 횟수입니다
+* **도움말**: 사용자가 1000개의 양식 변환당 패널 및 해당 필드에 대한 컨텍스트 내 도움말에 액세스한 횟수입니다
 
 ![적응형 양식에 대한 샘플 분석 보고서](assets/summary-report.png)
 
-Forms Analytics 보고서에 대한 자세한 내용은 [AEM Forms Analytics 보고서 보기 및 이해](../../forms/using/view-understand-aem-forms-analytics-reports.md)를 참조하십시오.
+Forms Analytics 보고서에 대한 자세한 내용은 [AEM Forms 분석 보고서 보기 및 이해](../../forms/using/view-understand-aem-forms-analytics-reports.md).
 
 >[!NOTE]
 >
 >Adobe Marketing Cloud의 Analytics 계정에서 고객 및 양식과의 상호 작용에 대한 자세한 보고서를 보고 심층적인 통찰력을 얻을 수 있습니다.
 
-#### 3단계:데이터 포인트 분석 {#step-analyze-data-points}
+#### 3단계: 데이터 포인트 분석 {#step-analyze-data-points}
 
 이 단계에서는 분석 보고서의 데이터 포인트를 분석하고 양식이 어떻게 작동하는지 유추하게 됩니다. 성공 KPI를 충족하지 않는 경우 데이터를 기반으로 가설을 만들고 가능한 해결 방법을 찾아 문제를 해결합니다. 예:
 
@@ -127,7 +127,7 @@ Forms Analytics 보고서에 대한 자세한 내용은 [AEM Forms Analytics 보
 
 이러한 데이터 포인트를 분석하고 가설에 도달하면 양식에서 필요한 변경 작업을 수행합니다.
 
-#### 4단계:분석 유효성 검사 및 수정 사항 {#step-validate-your-analysis-and-fixes}
+#### 4단계: 분석 및 수정 사항의 유효성 검사 {#step-validate-your-analysis-and-fixes}
 
 이 단계에서는 양식의 변경 사항에 대한 유효성을 확인하고 변경 내용이 전환율에 영향을 주는지 확인합니다.
 
@@ -135,7 +135,7 @@ Forms Analytics 보고서에 대한 자세한 내용은 [AEM Forms Analytics 보
 
 AEM Forms과 Target을 통합하면 적응형 양식에 대한 A/B 테스트를 만들 수 있습니다. A/B 테스트에서는 어떤 경험이 더 효과적인지 또는 더 많은 전환의 원인이 되는지 확인하기 위해 고객에게 양식의 다른 경험을 임의로 실시간 제공합니다. 한 경험이 다른 경험보다 나은 전환을 제공하는 경험을 나타내는 중요한 데이터가 있으면 해당 경험을 승자로 선언할 수 있으며, 앞으로는 모든 고객에게 표시되는 기본 경험이 됩니다.
 
-적응형 양식에 대한 A/B 테스트를 만드는 방법에 대한 자세한 내용은 [적응형 양식](../../forms/using/ab-testing-adaptive-forms.md) A/B 테스트 를 참조하십시오.
+적응형 양식에 대한 A/B 테스트 만들기에 대한 자세한 내용은 [적응형 양식 A/B 테스트](../../forms/using/ab-testing-adaptive-forms.md).
 
 ![적응형 양식에 대한 A/B 테스트의 샘플 요약 보고서](assets/ab-test-report-4.png)
 

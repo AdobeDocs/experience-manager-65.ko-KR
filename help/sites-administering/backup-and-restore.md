@@ -1,8 +1,8 @@
 ---
 title: 백업 및 복원
-seo-title: 백업 및 복원
+seo-title: Backup and Restore
 description: AEM 컨텐츠를 백업 및 복원하는 방법을 알아봅니다.
-seo-description: AEM 컨텐츠를 백업 및 복원하는 방법을 알아봅니다.
+seo-description: Learn how to backup and restore your AEM content.
 uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ AEM에서 저장소 컨텐츠를 백업 및 복원하는 방법에는 두 가지
 * 패키지를 통해 다른 시스템에서 데이터를 가져올 수 있습니다
 * 또는 임시 시스템에서 백업을 복원하고 컨텐츠 패키지를 만들어 이 컨텐츠가 누락된 시스템에 배포합니다.
 
-자세한 내용은 아래의 [패키지 백업](/help/sites-administering/backup-and-restore.md#package-backup)을 참조하십시오.
+자세한 내용은 [패키지 백업](/help/sites-administering/backup-and-restore.md#package-backup) 아래의 제품에서 사용할 수 있습니다.
 
 ## 타이밍 {#timing}
 
@@ -53,7 +53,7 @@ AEM에서 저장소 컨텐츠를 백업 및 복원하는 방법에는 두 가지
 
 ## 온라인 백업 {#online-backup}
 
-이 백업 방법은 AEM과 같이 그 아래에 배치된 애플리케이션을 포함하여 전체 리포지토리의 백업을 생성합니다. 백업에는 컨텐츠, 버전 기록, 구성, 소프트웨어, 핫픽스, 사용자 정의 애플리케이션, 로그 파일, 검색 인덱스 등이 포함됩니다. 클러스터링을 사용하고 있으며 공유 폴더가 `crx-quickstart` 의 하위 디렉토리인 경우(물리적으로 사용되거나 소프트링크를 사용하는 경우) 공유 디렉토리도 백업됩니다.
+이 백업 방법은 AEM과 같이 그 아래에 배치된 애플리케이션을 포함하여 전체 리포지토리의 백업을 생성합니다. 백업에는 컨텐츠, 버전 기록, 구성, 소프트웨어, 핫픽스, 사용자 정의 애플리케이션, 로그 파일, 검색 인덱스 등이 포함됩니다. 클러스터링을 사용하고 있으며 공유 폴더가 의 하위 디렉토리인 경우 `crx-quickstart` (물리적으로 또는 소프트링크를 사용하여) 공유 디렉토리도 백업됩니다.
 
 전체 저장소(및 모든 응용 프로그램)를 나중에 복원할 수 있습니다.
 
@@ -68,25 +68,25 @@ AEM에서 저장소 컨텐츠를 백업 및 복원하는 방법에는 두 가지
 
 >[!NOTE]
 >
->사용자 지정 Blob 저장소 구성이 있는 AEM 인스턴스에서 AEM Online Backup 기능을 사용하는 경우 데이터 저장소의 경로를 &quot; `crx-quickstart`&quot; 디렉토리 외부로 구성하고 데이터 저장소를 별도로 백업하는 것이 좋습니다.
+>사용자 지정 Blob 저장소 구성이 있는 AEM 인스턴스에서 AEM Online Backup 기능을 사용하는 경우 데이터 저장소의 경로를 &quot; `crx-quickstart`&quot; 디렉토리를 지정하고 데이터 저장소를 별도로 백업합니다.
 
 >[!CAUTION]
 >
->온라인 백업은 파일 시스템만 백업합니다. 저장소 컨텐츠 및/또는 저장소 파일을 데이터베이스에 저장하는 경우 해당 데이터베이스는 별도로 백업해야 합니다. MongoDB와 함께 AEM을 사용하는 경우 [MongoDB 기본 백업 도구](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/)를 사용하는 방법에 대한 설명서를 참조하십시오.
+>온라인 백업은 파일 시스템만 백업합니다. 저장소 컨텐츠 및/또는 저장소 파일을 데이터베이스에 저장하는 경우 해당 데이터베이스는 별도로 백업해야 합니다. MongoDB와 함께 AEM을 사용하는 경우 설명서 를 참조하십시오. [MongoDB 기본 백업 도구](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
 
-### AEM 온라인 백업 {#aem-online-backup}
+### AEM Online Backup {#aem-online-backup}
 
 리포지토리의 온라인 백업을 사용하면 백업 파일을 생성, 다운로드 및 삭제할 수 있습니다. &quot;핫&quot; 또는 &quot;온라인&quot; 백업 기능이므로 리포지토리가 읽기-쓰기 모드에서 정상적으로 사용되는 동안 실행할 수 있습니다.
 
 >[!CAUTION]
 >
->[데이터 저장소 가비지 컬렉션](/help/sites-administering/data-store-garbage-collection.md) 또는 [개정 정리](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)와 동시에 AEM Online Backup을 실행하지 마십시오. 시스템 성능에 부정적인 영향을 줄 것입니다.
+>AEM Online Backup을 [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md) 또는 [개정 정리](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). 시스템 성능에 부정적인 영향을 줄 것입니다.
 
-백업을 시작할 때 **Target 경로** 및/또는 **지연**&#x200B;을 지정할 수 있습니다.
+백업을 시작할 때 **Target 경로** 및/또는 **지연**.
 
-**Target** 경로 일반적으로 백업 파일은 quickstart jar 파일(.jar)이 있는 폴더의 상위 폴더에 저장됩니다. 예를 들어 /InstallationKits/AEM 아래에 AEM jar 파일이 있으면 /InstallationKits 아래에 백업이 생성됩니다. 원하는 위치에 대상을 지정할 수도 있습니다.
+**Target 경로** 백업 파일은 일반적으로 quickstart jar 파일(.jar)이 있는 폴더의 상위 폴더에 저장됩니다. 예를 들어 /InstallationKits/AEM 아래에 AEM jar 파일이 있으면 /InstallationKits 아래에 백업이 생성됩니다. 원하는 위치에 대상을 지정할 수도 있습니다.
 
-**TargetPath**&#x200B;가 디렉터리인 경우 저장소의 이미지가 이 디렉토리에 생성됩니다. 동일한 디렉토리를 여러 번 사용하여 백업을 저장하는 경우
+만약 **TargetPath** 디렉토리인 저장소 이미지가 이 디렉토리에 생성됩니다. 동일한 디렉토리를 여러 번 사용하여 백업을 저장하는 경우
 
 * 리포지토리의 수정된 파일은 TargetPath에서 그에 따라 수정됩니다
 * 저장소에서 삭제된 파일은 TargetPath에서 삭제됩니다
@@ -94,7 +94,7 @@ AEM에서 저장소 컨텐츠를 백업 및 복원하는 방법에는 두 가지
 
 >[!NOTE]
 >
->**TargetPath**&#x200B;가 확장명이 **.zip**&#x200B;인 파일 이름으로 설정된 경우 저장소가 임시 디렉토리에 백업된 다음 이 임시 디렉토리의 컨텐츠가 압축되어 ZIP 파일에 저장됩니다.
+>If **TargetPath** 확장자가 인 파일 이름으로 설정됩니다. **.zip**&#x200B;저장소는 임시 디렉토리에 백업되고, 그 다음 이 임시 디렉토리의 컨텐츠는 압축되어 ZIP 파일에 저장됩니다.
 >
 >이 접근법은 좌절되었습니다. 왜냐하면
 >
@@ -102,30 +102,28 @@ AEM에서 저장소 컨텐츠를 백업 및 복원하는 방법에는 두 가지
 >* 압축 프로세스는 저장소에서 수행되며 성능에 영향을 줄 수 있습니다.
 >* 백업 프로세스가 지연됩니다.
 >* 최대 Java 1.6 Java는 최대 4GB의 ZIP 파일만 만들 수 있습니다.
-
 >
->
-ZIP을 백업 형식으로 만들어야 하는 경우 디렉토리에 백업한 다음 압축 프로그램을 사용하여 zip 파일을 만들어야 합니다.
+>ZIP을 백업 형식으로 만들어야 하는 경우 디렉토리에 백업한 다음 압축 프로그램을 사용하여 zip 파일을 만들어야 합니다.
 
-**** 지연저장소 성능에 영향을 주지 않도록 시간 지연(밀리초)을 나타냅니다. 기본적으로 저장소 백업은 전체 속도로 실행됩니다. 다른 작업의 속도가 느려지지 않도록 온라인 백업 생성 속도를 줄일 수 있습니다.
+**지연** 저장소 성능에 영향을 주지 않도록 시간 지연(밀리초)을 나타냅니다. 기본적으로 저장소 백업은 전체 속도로 실행됩니다. 다른 작업의 속도가 느려지지 않도록 온라인 백업 생성 속도를 줄일 수 있습니다.
 
 매우 큰 지연을 사용하는 경우 온라인 백업이 24시간 이상 걸리지 않도록 하십시오. 모든 바이너리가 포함되지 않았을 수 있으므로 이 백업을 폐기하십시오.
-1밀리초의 지연은 일반적으로 CPU 사용률을 10%로 만들고 10밀리초의 지연은 일반적으로 CPU 사용률을 3% 미만으로 합니다. 총 지연 시간(초)은 다음과 같이 예상할 수 있습니다.저장소 크기(MB), 지연 시간(밀리초), 2로 나누기(zip 옵션이 사용되는 경우) 또는 4로 나누기(디렉토리에 백업할 때). 즉, 200MB 저장소의 디렉터리로 백업하고 1ms 지연을 갖는 경우 백업 시간이 약 50초씩 증가합니다.
+1밀리초의 지연은 일반적으로 CPU 사용률을 10%로 만들고 10밀리초의 지연은 일반적으로 CPU 사용률을 3% 미만으로 합니다. 총 지연 시간(초)은 다음과 같이 예상할 수 있습니다. 저장소 크기(MB), 지연 시간(밀리초), 2로 나누기(zip 옵션이 사용되는 경우) 또는 4로 나누기(디렉토리에 백업할 때). 즉, 200MB 저장소의 디렉터리로 백업하고 1ms 지연을 갖는 경우 백업 시간이 약 50초씩 증가합니다.
 
 >[!NOTE]
 >
->프로세스의 내부 세부 정보는 [AEM Online Backup 작동 방식](#how-aem-online-backup-works)을 참조하십시오.
+>자세한 내용은 [AEM Online Backup 작동 방식](#how-aem-online-backup-works) 를 참조하십시오.
 
 백업을 생성하려면 다음을 수행합니다.
 
 1. 관리자로 AEM에 로그인합니다.
 
-1. **도구 - 작업 - 백업으로 이동합니다.**
+1. 이동 **도구 - 작업 - 백업**
 1. **만들기**&#x200B;를 클릭합니다. 백업 콘솔이 열립니다.
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
 
-1. 백업 콘솔에서 **[Target 경로](#aem-online-backup)** 및 **[지연](#aem-online-backup)**&#x200B;을 지정합니다.
+1. 백업 콘솔에서 **[Target 경로](#aem-online-backup)** 및 **[지연](#aem-online-backup)**.
 
    ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -136,11 +134,11 @@ ZIP을 백업 형식으로 만들어야 하는 경우 디렉토리에 백업한 
    >
    >` https://<*hostname*>:<*port-number*>/libs/granite/backup/content/admin.html`
 
-1. **저장**&#x200B;을 클릭하면 진행률 표시줄이 백업 진행 상태를 나타냅니다.
+1. 클릭 **저장**&#x200B;를 선택하면 진행률 표시줄이 백업 진행 상태를 나타냅니다.
 
    >[!NOTE]
    >
-   >실행 중인 백업을 언제든지 **취소**&#x200B;할 수 있습니다.
+   >다음을 수행할 수 있습니다 **취소** 언제든지 실행 중인 백업
 
 1. 백업이 완료되면 백업 창에 zip 파일이 나열됩니다.
 
@@ -148,42 +146,42 @@ ZIP을 백업 형식으로 만들어야 하는 경우 디렉토리에 백업한 
 
    >[!NOTE]
    >
-   >더 이상 필요하지 않은 백업 파일은 콘솔을 사용하여 제거할 수 있습니다. 왼쪽 창에서 백업 파일을 선택한 다음 **삭제**&#x200B;를 클릭합니다.
+   >더 이상 필요하지 않은 백업 파일은 콘솔을 사용하여 제거할 수 있습니다. 왼쪽 창에서 백업 파일을 선택한 다음 **삭제**.
 
    >[!NOTE]
    >
-   >디렉토리에 백업한 경우:백업 프로세스가 완료되면 AEM이 대상 디렉토리에 쓰이지 않습니다.
+   >디렉토리에 백업한 경우: 백업 프로세스가 완료되면 AEM이 대상 디렉토리에 쓰이지 않습니다.
 
 ### AEM 온라인 백업 자동화 {#automating-aem-online-backup}
 
 가능한 경우 시스템에 로드가 거의 없는 경우(예: 아침) 온라인 백업을 실행해야 합니다.
 
-`wget` 또는 `curl` HTTP 클라이언트를 사용하여 백업을 자동화할 수 있습니다. 다음은 curl을 사용하여 백업을 자동화하는 방법에 대한 예입니다.
+백업을 자동화할 수 있습니다. `wget` 또는 `curl` HTTP 클라이언트. 다음은 curl을 사용하여 백업을 자동화하는 방법에 대한 예입니다.
 
-#### 기본 Target 디렉터리 {#backing-up-to-the-default-target-directory}에 백업
+#### 기본 Target 디렉터리에 백업 {#backing-up-to-the-default-target-directory}
 
 >[!CAUTION]
 >
->다음 예제에서는 인스턴스에 대해 `curl` 명령의 다양한 매개 변수를 구성해야 할 수 있습니다.예를 들어 호스트 이름( `localhost`), 포트( `4502`), 관리자 암호( `xyz`) 및 파일 이름( `backup.zip`)이 있습니다.
+>다음 예에서는 `curl` 인스턴스에 대해 명령을 구성해야 할 수 있습니다. 예를 들어 호스트 이름 ( `localhost`), 포트 ( ) `4502`), 관리자 암호 ( ) `xyz`) 및 파일 이름( )입니다. `backup.zip`).
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=backup.zip
 ```
 
-백업 파일/디렉터리는 `crx-quickstart` 폴더가 포함된 폴더의 상위 폴더에 있는 서버에서 만들어집니다(브라우저를 사용하여 백업을 만드는 것과 동일). 예를 들어 `/InstallationKits/crx-quickstart/` 디렉토리에 AEM을 설치한 경우 백업이 `/InstallationKits` 디렉토리에 생성됩니다.
+백업 파일/디렉토리는 서버가 포함된 폴더의 상위 폴더에 생성됩니다 `crx-quickstart` 폴더(브라우저를 사용하여 백업을 만드는 것과 동일) 예를 들어, 디렉토리에 AEM을 설치한 경우 `/InstallationKits/crx-quickstart/`를 입력하면 `/InstallationKits` 디렉토리.
 
 curl 명령은 즉시 반환되므로 이 디렉토리를 모니터링하여 zip 파일이 준비되었는지 확인해야 합니다. 백업이 작성되고 있는 동안(최종 zip 파일의 이름을 기반으로 하는 이름 포함) 임시 디렉토리를 볼 수 있으며 끝 부분에 이 디렉토리가 압축됩니다. 예:
 
-* 결과 zip 파일 이름:`backup.zip`
-* 임시 디렉터리 이름:`backup.f4d5.temp`
+* 결과 zip 파일 이름: `backup.zip`
+* 임시 디렉터리 이름: `backup.f4d5.temp`
 
-#### 기본이 아닌 Target 디렉터리 {#backing-up-to-a-non-default-target-directory}에 백업
+#### 기본이 아닌 Target 디렉토리에 백업 {#backing-up-to-a-non-default-target-directory}
 
-일반적으로 백업 파일/디렉터리는 `crx-quickstart` 폴더가 포함된 폴더의 상위 폴더에 서버에 만들어집니다.
+일반적으로 백업 파일/디렉토리는 서버가 포함된 폴더의 상위 폴더에 생성됩니다 `crx-quickstart` 폴더를 입력합니다.
 
-백업을 다른 위치에 저장하려면 `curl` 명령의 `target` 매개 변수에 절대 경로 &quot;를 설정할 수 있습니다.
+백업을 다른 위치에 저장하려면 절대 경로 &quot;을 `target` 의 매개 변수 `curl` 명령.
 
-예를 들어 `/Backups/2012` 디렉토리에서 `backupJune.zip`을 생성하려면 다음을 수행합니다.
+예를 들어, `backupJune.zip` 디렉토리 `/Backups/2012`:
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=/Backups/2012/backupJune.zip"
@@ -195,7 +193,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->AEM](/help/sites-administering/jmx-console.md)에서 제공하는 MBeans를 사용하여 백업을 트리거할 수도 있습니다.[
+>백업을 트리거할 수도 있습니다 [AEM에서 제공하는 MBean 사용](/help/sites-administering/jmx-console.md).
 
 ### 파일 시스템 스냅샷 백업 {#filesystem-snapshot-backup}
 
@@ -218,12 +216,12 @@ AEM Online Backup은 백업되는 데이터와 작성되는 백업 파일의 무
 
 1. zip 파일을 만들 때 첫 번째 단계는 대상 디렉토리를 만들거나 찾는 것입니다.
 
-   * zip 파일로 백업하는 경우 임시 디렉토리가 만들어집니다. 디렉터리 이름은 `backup.`으로 시작하고 `.temp`;예: `backup.f4d3.temp`
+   * zip 파일로 백업하는 경우 임시 디렉토리가 만들어집니다. 디렉토리 이름은 `backup.` 다음으로 끝남 `.temp`; 예 `backup.f4d3.temp`.
    * 디렉토리에 백업하는 경우 대상 경로에 지정된 이름이 사용됩니다. 기존 디렉토리를 사용할 수 있습니다. 그렇지 않으면 새 디렉토리가 생성됩니다.
 
-      백업이 시작될 때 대상 디렉터리에 이름이 `backupInProgress.txt`인 빈 파일이 만들어집니다. 백업이 완료되면 이 파일이 삭제됩니다.
+      이름이 인 빈 파일 `backupInProgress.txt` 백업이 시작될 때 대상 디렉토리에 생성됩니다. 백업이 완료되면 이 파일이 삭제됩니다.
 
-1. 파일은 소스 디렉토리에서 대상 디렉토리(또는 zip 파일을 만들 때 임시 디렉토리)로 복사됩니다. 저장소 손상을 방지하기 위해 세그먼트저장소는 데이터 저장소 앞에 복사됩니다. 백업을 만들 때 인덱스 및 캐시 데이터가 생략됩니다. 따라서 `crx-quickstart/repository/cache` 및 `crx-quickstart/repository/index`의 데이터는 백업에 포함되지 않습니다. zip 파일을 만들 때 프로세스의 진행률 표시줄 표시기는 0% - 70% 또는 zip 파일이 만들어지지 않을 경우 0% - 100% 사이입니다.
+1. 파일은 소스 디렉토리에서 대상 디렉토리(또는 zip 파일을 만들 때 임시 디렉토리)로 복사됩니다. 저장소 손상을 방지하기 위해 세그먼트저장소는 데이터 저장소 앞에 복사됩니다. 백업을 만들 때 인덱스 및 캐시 데이터가 생략됩니다. 그 결과, `crx-quickstart/repository/cache` 및 `crx-quickstart/repository/index` 백업에 포함되지 않습니다. zip 파일을 만들 때 프로세스의 진행률 표시줄 표시기는 0% - 70% 또는 zip 파일이 만들어지지 않을 경우 0% - 100% 사이입니다.
 
 1. 기존 디렉토리에 백업이 수행되는 경우 대상 디렉토리의 &quot;이전&quot; 파일이 삭제됩니다. 이전 파일은 소스 디렉토리에 없는 파일입니다.
 
@@ -240,9 +238,9 @@ AEM Online Backup은 백업되는 데이터와 작성되는 백업 파일의 무
 1. 대상에 따라 다음을 수행합니다.
 
    * zip 파일이 지정된 경우 이제 임시 디렉터리에서 만들어집니다. 진행률 표시기 70% - 100% 그런 다음 임시 디렉터리가 삭제됩니다.
-   * 대상이 디렉터리인 경우 백업이 완료되었음을 나타내기 위해 이름이 `backupInProgress.txt`인 빈 파일이 삭제됩니다.
+   * 대상이 디렉토리인 경우 이름이 지정된 빈 파일 `backupInProgress.txt` 백업이 완료되었음을 나타내기 위해 가 삭제됩니다.
 
-## 백업 {#restoring-the-backup} 복원
+## 백업 복원 {#restoring-the-backup}
 
 다음과 같이 백업을 복원할 수 있습니다.
 
@@ -253,7 +251,7 @@ AEM Online Backup은 백업되는 데이터와 작성되는 백업 파일의 무
 
 컨텐츠를 백업 및 복원하려면 컨텐츠 패키지 형식을 사용하여 컨텐츠를 백업 및 복원하는 패키지 관리자 중 하나를 사용할 수 있습니다. 패키지 관리자는 패키지를 보다 유연하게 정의하고 관리할 수 있습니다.
 
-이러한 각 개별 컨텐츠 패키지 형식의 기능 및 장단점에 대한 자세한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md)을 참조하십시오.
+이러한 각 개별 컨텐츠 패키지 형식의 기능 및 장점에 대한 자세한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md).
 
 ### 백업 범위 {#scope-of-backup}
 

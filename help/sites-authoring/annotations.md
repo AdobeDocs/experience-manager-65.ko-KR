@@ -1,8 +1,8 @@
 ---
 title: 페이지 편집 시 주석
-seo-title: 페이지 편집 시 주석
+seo-title: Annotations when Editing a Page
 description: 컨텐츠와 직접 관련된 많은 구성 요소를 사용하여 주석을 추가할 수 있습니다.
-seo-description: 컨텐츠와 직접 관련된 많은 구성 요소를 사용하여 주석을 추가할 수 있습니다.
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '634'
 ht-degree: 99%
 
 ---
@@ -52,8 +52,8 @@ ht-degree: 99%
 >다양한 리소스에 주석을 달 수 있습니다.
 >
 >* [자산에 주석 달기](/help/assets/manage-assets.md#annotating)
-* [비디오 자산에 주석 달기](/help/assets/managing-video-assets.md#annotate-video-assets)
-
+>* [비디오 자산에 주석 달기](/help/assets/managing-video-assets.md#annotate-video-assets)
+>
 
 
 ### 구성 요소에 주석 추가 {#annotating-a-component}
@@ -67,12 +67,14 @@ ht-degree: 99%
    이제 기존의 모든 주석을 볼 수 있습니다.
 
    >[!NOTE]
-   주석 모드를 끝내려면 상단 도구 모음 오른쪽에 있는 [주석] 아이콘(x 기호)을 탭하거나 클릭합니다.
+   >
+   >주석 모드를 끝내려면 상단 도구 모음 오른쪽에 있는 [주석] 아이콘(x 기호)을 탭하거나 클릭합니다.
 
 1. 주석 추가를 시작하려면 [주석 추가] 아이콘(도구 모음 왼쪽의 더하기 기호)을 클릭하거나 탭합니다.
 
    >[!NOTE]
-   주석 추가를 중지하고 보기로 돌아가려면 상단 도구 모음 왼쪽에 있는 [취소] 아이콘(흰색 원으로 둘러싸인 x 기호)을 탭하거나 클릭합니다.
+   >
+   >주석 추가를 중지하고 보기로 돌아가려면 상단 도구 모음 왼쪽에 있는 [취소] 아이콘(흰색 원으로 둘러싸인 x 기호)을 탭하거나 클릭합니다.
 
 1. 필요한 구성 요소(파란색 테두리로 강조 표시되고 주석을 추가할 수 있는 구성 요소)를 클릭/탭하여 주석을 추가하고 대화 상자를 엽니다.
 
@@ -82,7 +84,6 @@ ht-degree: 99%
 
    * 주석 텍스트 입력
    * 스케치(선과 모양)를 만들어 구성 요소 영역 강조 표시
-
 
       스케치를 만드는 중에는 커서가 십자 모양으로 바뀝니다. 서로 구분되는 여러 선을 그릴 수 있습니다. 스케치 선은 주석 색상을 반영하며 화살표, 원 또는 타원 중 하나일 수 있습니다.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
@@ -99,9 +100,9 @@ ht-degree: 99%
 
    ![screen_shot_2018-03-22at110850](assets/screen_shot_2018-03-22at110850.png)
 
-1. 특정 주석의 편집이 끝나면 다음 작업을 할 수 있습니다.
+1. 특정 주석의 편집이 끝나면 다음 작업을 수행할 수 있습니다.
 
-   * 텍스트 마커를 클릭/탭하여 주석 열기. 일단 열면 전체 텍스트를 보거나, 변경 작업을 수행하거나, 주석을 삭제할 수 있습니다.
+   * 텍스트 표시자를 클릭/탭하여 주석을 엽니다. 일단 열면 전체 텍스트를 보거나, 변경 작업을 수행하거나, 주석을 삭제할 수 있습니다.
 
       * 스케치는 주석과 별도로 삭제할 수 없습니다.
    * 텍스트 마커 위치 변경.
@@ -114,7 +115,8 @@ ht-degree: 99%
 1. 주석 모드를 끝내고 이전에 사용한 모드로 돌아가려면 상단 도구 모음 오른쪽에 있는 [주석] 아이콘(x 기호)을 탭하거나 클릭합니다.
 
 >[!NOTE]
-다른 사용자가 잠근 페이지에는 주석을 추가할 수 없습니다.
+>
+>다른 사용자가 잠근 페이지에는 주석을 추가할 수 없습니다.
 
 ### 주석 표시기 {#annotation-indicator}
 

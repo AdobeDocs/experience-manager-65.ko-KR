@@ -1,8 +1,8 @@
 ---
 title: 성능 트리
-seo-title: 성능 트리
+seo-title: Performance Tree
 description: AEM의 성능 문제를 해결하기 위해 수행해야 하는 단계에 대해 알아봅니다.
-seo-description: AEM의 성능 문제를 해결하기 위해 수행해야 하는 단계에 대해 알아봅니다.
+seo-description: Learn about the steps that need to be taken in order to troubleshoot performance issues in AEM.
 uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 5%
+source-wordcount: '1188'
+ht-degree: 6%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 5%
   <tr>
    <td><strong>0단계</strong></td>
    <td>요청 흐름 분석</td>
-   <td><p>브라우저에서 표준 HTTP 요청 분석을 사용하여 요청 흐름을 분석할 수 있습니다. Chrome에서 이 작업을 수행하는 방법에 대한 자세한 내용은<br /> 을 참조하십시오. </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> loadinghttps://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
+   <td><p>브라우저에서 표준 HTTP 요청 분석을 사용하여 요청 흐름을 분석할 수 있습니다. Chrome에서 이 작업을 수행하는 방법에 대한 자세한 내용은 다음을 참조하십시오.<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>2단계</strong></td>
@@ -73,17 +73,17 @@ ht-degree: 5%
   <tr>
    <td><strong>3단계</strong></td>
    <td>요청을 캐시할 수 있습니까?</td>
-   <td>캐시 가능한 요청 및 일반 Dispatcher 성능 최적화 조언에 대한 자세한 내용은 <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Dispatcher 성능 최적화</a> 를 참조하십시오.</td>
+   <td>캐시 가능한 요청 및 일반 Dispatcher 성능 최적화 조언에 대한 자세한 내용은 <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Dispatcher 성능 최적화</a>.</td>
   </tr>
   <tr>
    <td><strong>4단계</strong></td>
    <td>Dispatcher에서 요청이 오고 있습니까?</td>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">Dispatcher 디버깅 설명서</a>에서 요청이 제대로 캐시되는지 확인합니다.<br /> </p> </td>
+   <td><p>을(를) 확인합니다. <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">Dispatcher 디버깅 설명서</a> 요청이 제대로 캐시되는지 확인합니다.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>5단계</strong></td>
    <td>Dispatcher가 AEM을 통해 각 요청을 인증하려고 합니까?</td>
-   <td>디스패처가 캐시된 리소스를 제공하기 전에 인증을 위해 <code>HEAD</code> 요청을 AEM에 전송하는지 확인합니다. 이렇게 하려면 AEM <code>access.log</code>에서 <code>HEAD</code> 요청을 찾습니다. 자세한 내용은 <a href="/help/sites-deploying/configure-logging.md">로깅</a>.<br />을 참조하십시오. </td>
+   <td>디스패처가 전송하는지 확인 <code>HEAD</code> 캐시된 리소스를 제공하기 전에 AEM에 인증을 요청합니다. 찾아보시면 됩니다 <code>HEAD</code> AEM의 요청 <code>access.log</code>. 자세한 내용은 <a href="/help/sites-deploying/configure-logging.md">로깅</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>6단계</strong></td>
@@ -98,7 +98,7 @@ ht-degree: 5%
   <tr>
    <td><strong>8단계</strong></td>
    <td>로컬 인스턴스에서 느림이 재현됩니까?</td>
-   <td><br /> <p><a href="/help/sites-developing/tough-day.md">Tough Day</a>를 사용하여 프로덕션 인스턴스에서 "실제" 조건을 복제합니다. 개발 환경에 적합하지 않은 경우 다른 네트워크 컨텍스트에서 프로덕션 인스턴스(또는 동일한 스테이징 인스턴스)를 테스트해야 합니다.<br /> </p> </td>
+   <td><br /> <p>사용 <a href="/help/sites-developing/tough-day.md">Tough Day</a> 운영 인스턴스에서 "실제" 조건을 복제하기 위해 개발 환경에 적합하지 않은 경우 다른 네트워크 컨텍스트에서 프로덕션 인스턴스(또는 동일한 스테이징 인스턴스)를 테스트해야 합니다.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>9단계</strong></td>
@@ -108,7 +108,7 @@ ht-degree: 5%
   <tr>
    <td><strong>10단계 및 29단계</strong></td>
    <td>네트워크 계층 조사</td>
-   <td><p>네트워크 계층에서 채도 및 지연 문제를 조사합니다.</p> <p>작성 계층의 경우 지연이 100밀리초를 넘지 않는 것이 좋습니다.</p> <p>성능 최적화 팁에 대한 자세한 내용은 <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">이 페이지</a>를 참조하십시오.</p> </td>
+   <td><p>네트워크 계층에서 채도 및 지연 문제를 조사합니다.</p> <p>작성 계층의 경우 지연이 100밀리초를 넘지 않는 것이 좋습니다.</p> <p>성능 최적화 팁에 대한 자세한 내용은 <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">이 페이지</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>11단계</strong></td>
@@ -123,7 +123,7 @@ ht-degree: 5%
   <tr>
    <td><strong>13단계</strong></td>
    <td>하드웨어 요구 사항 확인</td>
-   <td><a href="/help/managing/hardware-sizing-guidelines.md">하드웨어 크기 조정 지침</a>.<br />에 대한 설명서를 확인하십시오. </td>
+   <td>다음 문서를 확인하십시오. <a href="/help/managing/hardware-sizing-guidelines.md">하드웨어 크기 조정 지침</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>14단계</strong></td>
@@ -133,12 +133,12 @@ ht-degree: 5%
   <tr>
    <td><strong>15단계</strong></td>
    <td>느린 요청 찾기</td>
-   <td><p><code>request.log</code>을 분석하거나 <code>rlog.jar</code>을 사용하여 느린 요청을 확인할 수 있습니다.</p> <p>rlog.jar 사용에 대한 자세한 내용은 이 페이지를 참조하십시오.</p> <p><a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Using rlog.jar를 참조하여 기간이 긴 요청을 찾습니다</a>.<br /> </p> <p> </p> </td>
+   <td><p>를 분석하여 느린 요청을 확인할 수 있습니다 <code>request.log</code> 또는 <code>rlog.jar</code>.</p> <p>rlog.jar 사용에 대한 자세한 내용은 이 페이지를 참조하십시오.</p> <p>자세한 내용은 <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">rlog.jar를 사용하여 오랜 기간 동안 요청을 찾습니다</a>.<br /> </p> <p> </p> </td>
   </tr>
   <tr>
    <td><strong>16단계</strong></td>
    <td>프로필 서버</td>
-   <td><p>AEM에서 사용할 수 있는 프로파일링 도구에 대한 자세한 내용은 <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">성능 모니터링 및 분석용 도구</a>.<br /> </p> </td>
+   <td><p>AEM에서 사용할 수 있는 프로파일링 도구에 대한 자세한 내용은 <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">성능 모니터링 및 분석 도구</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>17단계</strong></td>
@@ -148,7 +148,7 @@ ht-degree: 5%
   <tr>
    <td><strong>18단계</strong></td>
    <td>프로파일링의 일반적인 시나리오</td>
-   <td>성능 최적화 섹션에서 <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">특정 시나리오 분석</a> 을 참조하십시오.<br /> </td>
+   <td>자세한 내용은 <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">특정 시나리오 분석</a> 성능 최적화 섹션에 있습니다.<br /> </td>
   </tr>
   <tr>
    <td><strong>19단계</strong></td>
@@ -168,12 +168,12 @@ ht-degree: 5%
   <tr>
    <td><strong>21단계</strong></td>
    <td>디스크 I/O</td>
-   <td><p>모니터링 및 유지 관리 문서에서 <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">디스크 I/O</a> 섹션을 참조하십시오.</p> </td>
+   <td><p>자세한 내용은 <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">디스크 I/O</a> 모니터링 및 유지 관리 설명서의 섹션을 참조하십시오.</p> </td>
   </tr>
   <tr>
    <td><strong>22단계 및 22.1단계</strong></td>
    <td>캐시 비율</td>
-   <td><a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">Dispatcher 캐시 비율 계산</a>.<br /> <br /> 을 참조하십시오. </td>
+   <td>자세한 내용은 <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">디스패처 캐시 비율 계산</a>.<br /> <br /> </td>
   </tr>
   <tr>
    <td><strong>23단계</strong></td>
@@ -197,8 +197,8 @@ ht-degree: 5%
     <ul>
      <li><a href="/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing">동시 워크플로우 처리</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow">특정 워크플로우에 대한 큐 구성</a></li>
-     <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">워크플로우 인스턴스 일반 삭제</a></li>
-     <li><a href="/help/sites-developing/workflows.md#transient-workflows">임시 워크플로우</a><br /> </li>
+     <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">정기적인 워크플로 인스턴스 제거</a></li>
+     <li><a href="/help/sites-developing/workflows.md#transient-workflows">임시 워크플로</a><br /> </li>
     </ul> <p> </p> </td>
   </tr>
   <tr>
@@ -243,7 +243,7 @@ ht-degree: 5%
     <ol>
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">일반 Dispatcher 구성</a></li>
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Dispatcher 캐시 구성</a></li>
-    </ol> <p>캐시 비율 개선 방법요청 캐시 가능(Dispatcher 우수 사례)</p> <p>또한 캐싱 구성을 최적화하려면 아래 설정을 고려하십시오<br /> </p>
+    </ol> <p>캐시 비율 개선 방법 요청 캐시 가능(Dispatcher 우수 사례)</p> <p>또한 캐싱 구성을 최적화하려면 아래 설정을 고려하십시오<br /> </p>
     <ol>
      <li>GET이 아닌 HTTP 요청에 대해 no-cache 규칙 설정</li>
      <li>쿼리 문자열을 캐시할 수 없도록 구성</li>
@@ -278,7 +278,7 @@ ht-degree: 5%
   <tr>
    <td><strong>39단계</strong></td>
    <td>연결 오버헤드를 줄이려면 연결 미리 연결 사용</td>
-   <td>위에 표시된 Gem 세션을 참조하십시오. 또한 추가 설명서는 W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a>에서 미리 연결합니다</td>
+   <td>위에 표시된 Gem 세션을 참조하십시오. 또한 W3c에서 추가 설명서 사전 연결:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td>
   </tr>
   <tr>
    <td><strong>40단계 및 41단계</strong><br /> </td>
@@ -286,19 +286,19 @@ ht-degree: 5%
    <td>외부 호스트에 대한 지연 및 응답 시간을 조사합니다.</td>
   </tr>
   <tr>
-   <td><strong>45단계<br />  및 47단계</strong><br /> </td>
+   <td><strong>45단계<br /> 및 47</strong><br /> </td>
    <td>HTTP/2 사용</td>
-   <td>37,38단계 및 39단계는 Gem Session 을 참조하십시오. 또한 HTTP/2 지원에서 <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">이</a> 포럼 게시물을 확인하십시오.<br /> </td>
+   <td>37,38단계 및 39단계는 Gem Session 을 참조하십시오. 또한, <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">이</a> http/2 지원에 대한 포럼 게시물.<br /> </td>
   </tr>
   <tr>
    <td><strong>49단계</strong></td>
    <td>페이로드 크기 축소</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Gzip </a> 을 활성화하고  <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">이미지 크기를 줄입니다</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Gzip 활성화</a> 및 <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">이미지 크기 축소</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>42단계 및 43</strong></td>
    <td>Keep-Alive</td>
-   <td><p>연결을 다시 사용하기 위해 <code>Keep-Alive</code> 헤더가 다른 요청에 있습니까? 그렇지 않으면 각 요청이 다른 연결 설정으로 이어져 불필요한 오버헤드가 발생합니다. (브라우저의 표준 HTTP 요청 분석)</p> <p><a href="/help/sites-administering/proxy-jar.md">프록시 서버 도구</a>를 확인하여 Keep-Alive 연결을 확인할 수 있습니다.<br /> </p> </td>
+   <td><p>은 <code>Keep-Alive</code> 연결을 다시 사용하기 위해 다른 요청에 있는 헤더입니까? 그렇지 않으면 각 요청이 다른 연결 설정으로 이어져 불필요한 오버헤드가 발생합니다. (브라우저의 표준 HTTP 요청 분석)</p> <p>확인할 수 있습니다 <a href="/help/sites-administering/proxy-jar.md">프록시 서버 도구</a> 을 눌러 Keep-Alive 연결을 확인합니다.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>44단계</strong></td>
@@ -310,16 +310,16 @@ ht-degree: 5%
    <td>요청 수 감소</td>
    <td>
     <ol>
-     <li>리소스(이미지, CSS 스프라이트, JSON 등)를 연결합니다.<br /> </li>
+     <li>리소스(이미지, CSS 스프라이트, JSON 등)를<br /> </li>
      <li>Clientlibs 포함:
       <ol>
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">클라이언트 라이브러리 폴더 만들기</a>  - 요청을 최소화하기 위해 포함 사용 제목 을 참조하십시오.</li>
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">클라이언트 라이브러리 폴더 만들기</a> - 요청을 최소화하기 위해 포함 사용 머리글을 참조하십시오</li>
       </ol> </li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>48단계</strong></td>
-   <td>페이로드 크기는 얼마입니까?</td>
+   <td>페이로드 크기가 어떻게 됩니까?</td>
    <td>브라우저의 표준 HTTP 요청 분석</td>
   </tr>
   <tr>

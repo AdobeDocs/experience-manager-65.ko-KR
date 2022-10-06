@@ -1,20 +1,20 @@
 ---
 title: 컨텐츠 서비스
-seo-title: 컨텐츠 서비스
+seo-title: Content Services
 description: 컨텐츠 서비스
-seo-description: 'null'
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 4%
+source-wordcount: '299'
+ht-degree: 3%
 
 ---
-
 
 # 컨텐츠 서비스{#content-services}
 
@@ -42,7 +42,7 @@ Content Services에서는 개발자가 해당 컨텐츠의 저장소 구조를 �
 >
 >컨텐츠 서비스를 시작하기 전에 컨텐츠 서비스 플래그를 활성화해야 합니다. 앱에서 모델을 만들고 관리하려면 구성 브라우저에서 데이터 모델을 활성화해야 합니다.
 >
->자세한 내용은 **[컨텐츠 서비스 관리](/help/mobile/developing-content-services.md)** 및 [구성 브라우저](/help/sites-administering/configurations.md) 설명서를 참조하십시오.
+>자세한 내용은 **[콘텐츠 서비스 관리](/help/mobile/developing-content-services.md)** 그리고 [구성 브라우저](/help/sites-administering/configurations.md) 설명서 를 참조하십시오.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

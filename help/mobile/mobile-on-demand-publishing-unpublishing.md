@@ -1,8 +1,8 @@
 ---
 title: 게시 취소 컨텐츠
-seo-title: 게시 취소 컨텐츠
+seo-title: Publish UnPublish Content
 description: 문서, 배너 및 컬렉션의 콘텐츠 관리 작업에 익숙하다면 이 페이지에 따라 콘텐츠를 게시하는 방법에 대해 알아보십시오. 컨텐츠 게시를 취소할 수도 있습니다.
-seo-description: 문서, 배너 및 컬렉션의 콘텐츠 관리 작업에 익숙하다면 이 페이지에 따라 콘텐츠를 게시하는 방법에 대해 알아보십시오. 컨텐츠 게시를 취소할 수도 있습니다.
+seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 1%
+source-wordcount: '268'
+ht-degree: 2%
 
 ---
 
-# 컨텐츠 게시 취소{#publish-unpublish-content}
+# 게시 취소 컨텐츠{#publish-unpublish-content}
 
 >[!NOTE]
 >
@@ -27,9 +27,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM Mobile 앱의 디자인 고려 사항에 대해 자세히 알려면 온라인 도움말에서 [AEM Mobile 앱용 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)을 참조하십시오.
+>AEM Mobile 앱의 디자인 고려 사항에 대한 자세한 내용은 [AEM Mobile 앱을 위한 디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 을 참조하십시오.
 
-## 컨텐츠 {#publishing-unpublishing-the-content} 게시/게시 취소
+## 컨텐츠 게시/게시 취소 {#publishing-unpublishing-the-content}
 
 이 기능은 &quot;AEM 게시&quot;와 다릅니다. 컨텐츠를 공개적으로 볼 수 있도록 AEM 게시 서버 인스턴스에 푸시하지 않습니다. 여기에서는 선택한 컨텐츠를 라이브 Mobile On-Demand 앱 내에서 공개해야 한다고 Mobile On-Demand에 알립니다.
 

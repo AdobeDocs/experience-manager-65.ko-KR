@@ -1,8 +1,8 @@
 ---
 title: 리치 텍스트 편집기를 사용한 컨텐츠 작성
-seo-title: 리치 텍스트 편집기를 사용한 컨텐츠 작성
+seo-title: Using the Rich Text Editor to Author Content
 description: 리치 텍스트 편집기를 사용한 컨텐츠 작성
-seo-description: 리치 텍스트 편집기를 사용한 컨텐츠 작성
+seo-description: Using the Rich Text Editor to Author Content
 uuid: 70f4d4b2-cbc6-4fef-9262-1696804008d8
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '260'
 ht-degree: 100%
 
 ---

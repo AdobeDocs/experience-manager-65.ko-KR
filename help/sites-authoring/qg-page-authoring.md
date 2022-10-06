@@ -1,8 +1,8 @@
 ---
 title: 페이지 작성에 대한 빠른 안내
-seo-title: 페이지 작성에 대한 빠른 안내
+seo-title: Quick Guide to Authoring Pages
 description: 페이지 컨텐츠 작성의 주요 작업에 대한 빠른 안내(개요)
-seo-description: 페이지 컨텐츠 작성의 주요 작업에 대한 빠른 안내(개요)
+seo-description: A quick, high-level guide to the key actions of authoring page content
 uuid: ef7ab691-f80d-4eeb-9f4a-afbf1bc83669
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1573'
 ht-degree: 99%
 
 ---
@@ -40,7 +40,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 * **만들기**
 
-   * 이 단추는 여러 콘솔에서 사용할 수 있습니다. 제공된 옵션은 상황에 맞는 옵션이므로 시나리오에 따라 달라질 수 있습니다.
+   * 이 버튼은 여러 콘솔에서 사용할 수 있습니다. 제공된 옵션은 상황에 맞는 옵션이므로 시나리오에 따라 달라질 수 있습니다.
 
 * 폴더의 페이지 순서 조정
 
@@ -50,20 +50,20 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 * 링크 탐색
 
-   * **편집** 모드에 있는 경우 ***링크를 탐색에 사용할 수 없습니다***. 링크를 사용하여 탐색하려면 다음 중 하나를 사용하여 [페이지 미리 보기](/help/sites-authoring/editing-content.md#previewing-pages)를 수행해야 합니다.
+   * **편집** 모드에 있는 경우 ***링크를 탐색에 사용할 수 없습니다***. 링크를 사용하여 탐색하려면 다음 중 하나를 사용하여 [페이지 미리보기](/help/sites-authoring/editing-content.md#previewing-pages)를 수행해야 합니다.
 
-      * [미리 보기 모드](/help/sites-authoring/editing-content.md#preview-mode)
+      * [미리보기 모드](/help/sites-authoring/editing-content.md#preview-mode)
       * [게시됨으로 보기](/help/sites-authoring/editing-content.md#view-as-published)
 
 * 버전이 페이지 편집기에서 시작/작성되지 않습니다. 이제는 사이트 콘솔에서 수행됩니다(선택한 리소스에 대한 **만들기** 또는 [타임라인](/help/sites-authoring/basic-handling.md#timeline)을 통해).
 
 >[!NOTE]
 >
->작성 작업을 더 쉽게 해줄 수 있는 다양한 키보드 단축키가 있습니다.
+>작성 작업을 더 쉽게 해 줄 수 있는 다양한 키보드 단축키가 있습니다.
 >
 >* [페이지 편집 시 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-* [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
-
+>* [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
+>
 
 
 ### 페이지 찾기 {#finding-your-page}
@@ -72,7 +72,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 1. Adobe Experience Manager 링크(왼쪽 상단)를 선택하면 트리거되는(드롭다운) **전역 탐색**&#x200B;에서 **사이트** 옵션을 사용하여 [사이트](/help/sites-authoring/basic-handling.md#global-navigation) 콘솔을 엽니다.
 
-1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기( [카드, 목록 또는 열](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources))에 따라 다릅니다.
+1. 해당 페이지를 탭/클릭하여 트리 아래로 탐색합니다. 페이지 리소스가 표시되는 방식은 사용 중인 보기([카드, 목록 또는 열](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources))에 따라 다릅니다.
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
@@ -88,12 +88,12 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
 [새 페이지를 만들려면](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [새 페이지를 만들 위치로 이동합니다.](#finding-your-page)
+1. 새 페이지를 만들 [위치로 이동](#finding-your-page)합니다.
 1. **만들기** 아이콘을 사용한 다음 목록에서 **페이지**&#x200B;를 선택합니다.
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. 이렇게 하면 [새 페이지를 만들 때 ](/help/sites-authoring/managing-pages.md#creating-a-new-page)필요한 정보를 수집하는 과정을 안내하는 마법사가 열립니다. 화면의 지시를 따르십시오.
+1. 이렇게 하면 [새 페이지를 만들 때 ](/help/sites-authoring/managing-pages.md#creating-a-new-page)필요한 정보를 수집하는 과정을 안내하는 마법사가 열립니다. 화면에 표시되는 안내를 따르십시오.
 
 ### 추가 작업을 수행할 페이지 선택 {#selecting-your-page-for-further-action}
 
@@ -120,7 +120,8 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    * 카드 위에 확인 표시가 나타나 페이지가 선택되었음을 나타냅니다.
    >[!NOTE]
-   선택 모드에서 있으면 **선택** 아이콘(확인 표시)이 **선택 취소** 아이콘(십자 모양)으로 바뀝니다.
+   >
+   >선택 모드에서 있으면 **선택** 아이콘(확인 표시)이 **선택 취소** 아이콘(십자 모양)으로 바뀝니다.
 
 ### 빠른 작업(카드 보기/데스크탑 전용) {#quick-actions-card-view-desktop-only}
 
@@ -131,7 +132,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
-### 페이지 컨텐츠 편집 {#editing-your-page-content}
+### 페이지 콘텐츠 편집 {#editing-your-page-content}
 
 페이지를 편집하려면:
 
@@ -145,7 +146,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
    * 해당 리소스에 대한 [빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only)
    * [페이지를 선택했을 때](#selectiingyourpageforfurtheraction)의 도구 모음
 
-1. 편집기가 열리면 다음을 수행할 수 있습니다.
+1. 편집기가 열리면 다음과 같은 작업을 수행할 수 있습니다.
 
    * [다음 작업을 수행하여](/help/sites-authoring/editing-content.md#inserting-a-component) 페이지에 새 구성 요소를 추가합니다.
 
@@ -156,10 +157,10 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
       다음 아이콘을 사용하여 사이드 패널을 열고 닫을 수 있습니다.
    ![](do-not-localize/screen_shot_2018-03-21at160738.png)
 
-   * [페이지의](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 기존 구성 요소 컨텐츠를 편집합니다.
+   * [페이지의](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 기존 구성 요소 콘텐츠를 편집합니다.
 
       * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. **편집**(연필) 아이콘을 사용하여 대화 상자를 엽니다.
-      * 탭한 상태를 유지하거나 느리게 두 번 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우 선택이 제한됨).
+      * 탭한 상태를 유지하거나 느리게 더블 클릭하여 구성 요소에 대한 즉석 편집기를 엽니다. 사용 가능한 작업이 표시됩니다(일부 구성 요소의 경우 선택이 제한됨).
       * 사용 가능한 모든 작업을 보려면 다음 아이콘을 사용하여 전체 화면 모드로 들어갑니다.
 
    ![](do-not-localize/screen_shot_2018-03-21at160706.png)
@@ -175,7 +176,8 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 탭하거나 클릭하여 구성 요소 도구 모음을 엽니다. 필요에 따라 **복사** 및 **붙여넣기** 아이콘을 사용합니다.
    >[!NOTE]
-   같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
+   >
+   >같은 페이지나 다른 페이지에 구성 요소를 **붙여넣을** 수 있습니다. 잘라내기/복사 작업 전에 이미 열려 있었던 다른 페이지에 붙여넣은 경우 해당 페이지를 새로 고쳐야 합니다.
 
    * 구성 요소 [삭제:](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)
 
@@ -186,15 +188,16 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
-   * [페이지 미리 보기](/help/sites-authoring/editing-content.md#preview-mode)(게시 환경에 표시될 모양 보기)
+   * [페이지 미리보기](/help/sites-authoring/editing-content.md#preview-mode)(게시 환경에 표시될 모양 보기)
 
-      * 도구 모음에서 **미리 보기**&#x200B;를 선택합니다.
+      * 도구 모음에서 **미리보기**&#x200B;를 선택합니다.
    * **편집** 드롭다운 선택기를 사용하여 편집 모드로 돌아가거나 다른 모드를 선택합니다.
 
    >[!NOTE]
-   컨텐츠에서 링크를 사용하여 탐색하려면 [미리 보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 사용해야 합니다.
+   >
+   >콘텐츠에서 링크를 사용하여 탐색하려면 [미리보기 모드](/help/sites-authoring/editing-content.md#preview-mode)를 사용해야 합니다.
 
-### 페이지 속성 편집  {#editing-the-page-properties}
+### 페이지 속성 편집 {#editing-the-page-properties}
 
 [페이지 속성을 편집](/help/sites-authoring/editing-page-properties.md)하는 방법에는 두 가지(기본) 방법이 있습니다.
 
@@ -239,7 +242,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
-* 콘솔에서 페이지를 게시 취소하는 것은 **게시 관리** 옵션을 통해서만 수행할 수 있으며 빠른 작업이 아니라 도구 모음에서만 사용 가능합니다.
+* **게시 관리** 옵션을 통해서만 콘솔에서 페이지의 게시를 취소할 수 있으며, 이 옵션은 빠른 작업이 아닌 도구 모음에서만 사용할 수 있습니다.
 
    **페이지 게시 취소** 옵션은 편집기의 **페이지 정보** 메뉴를 통해서도 사용할 수 있습니다.
 
@@ -247,14 +250,14 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    자세한 내용은 [페이지 게시](/help/sites-authoring/publishing-pages.md#unpublishing-pages)를 참조하십시오.
 
-### 페이지 이동, 복사 및 붙여넣기 또는 삭제  {#move-copy-and-paste-or-delete-your-page}
+### 페이지 이동, 복사 및 붙여넣기 또는 삭제 {#move-copy-and-paste-or-delete-your-page}
 
-이러한 작업은 모두 다음을 수행하여 트리거할 수 있습니다.
+이러한 작업은 모두 다음 작업을 수행하여 트리거할 수 있습니다.
 
 1. 이동, 복사 및 붙여넣기 또는 삭제할 [페이지로 이동](#finding-your-page)하십시오.
-1. 다음 중 하나를 사용하여 필요에 따라 [복사] (및 [붙여넣기]), [이동] 또는 [삭제] 아이콘을 선택합니다.
+1. 복사(및 붙여넣기)를 선택하고 필요한 경우 다음 중 하나를 사용하여 아이콘을 이동하거나 삭제합니다.
 
-   * 필요한 리소스에 대한 [빠른 작업(카드 보기/데스크톱 전용)](#quick-actions-card-view-desktop-only)
+   * 필요한 리소스에 대한 [빠른 작업(카드 보기/데스크탑 전용)](#quick-actions-card-view-desktop-only)
    * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
 
    그런 다음 작업에 따라 수행합니다.
@@ -269,17 +272,18 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
       * 작업을 확인하는 메시지가 나타납니다.
    >[!NOTE]
-   삭제는 빠른 작업으로 사용할 수 없습니다.
+   >
+   >삭제는 빠른 작업으로 사용할 수 없습니다.
 
 ### 페이지 잠금(및 잠금 해제) {#locking-your-page-then-unlocking}
 
-[페이지를 잠그면](/help/sites-authoring/editing-content.md#locking-a-page) 사용자가 작업하는 동안 다른 작성자가 해당 페이지에서 작업할 수 없습니다. [잠금] (및 [잠금 해제]) 아이콘/단추는 다음에서 찾을 수 있습니다.
+[Locking a page](/help/sites-authoring/editing-content.md#locking-a-page) prevents other authors from working on it while you are. The Lock (and Unlock) icon/button can be found:
 
 * [페이지를 선택했을 때](#selecting-your-page-for-further-action)의 도구 모음
 * 페이지를 편집할 때 [[페이지 정보] 드롭다운 메뉴](#editing-the-page-properties)
 * 페이지를 편집할 때 페이지 도구 모음(페이지가 잠겨 있을 때)
 
-예를 들어, 잠금 아이콘은 다음과 같습니다.
+예를 들어 잠금 아이콘은 다음과 같습니다.
 
 ![screen_shot_2018-03-21at161124](assets/screen_shot_2018-03-21at161124.png)
 
@@ -295,9 +299,9 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
-1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고 (해당되는 경우) 추가 작업을 수행합니다.
+1. 필요한 참조 유형을 탭하거나 클릭하여 자세한 내용을 표시하고(해당되는 경우) 추가 작업을 수행합니다.
 
-### 페이지 버전 생성  {#creating-a-version-of-your-page}
+### 페이지 버전 생성 {#creating-a-version-of-your-page}
 
 페이지의 [버전](/help/sites-authoring/working-with-page-versions.md)을 생성하려면:
 
@@ -321,7 +325,7 @@ AEM을 사용한 작성 작업에 대한 자세한 내용은 다음을 참조하
 
    페이지 버전이 이미 저장된 경우 타임라인에 나열됩니다.
 
-1. 복원할 버전을 탭하거나 클릭합니다. 그러면 다음과 같은 추가 작업 단추가 표시됩니다.
+1. 복원할 버전을 탭하거나 클릭합니다. 그러면 다음과 같은 추가 작업 버튼이 표시됩니다.
 
    * **이 버전으로 되돌리기**
 

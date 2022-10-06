@@ -1,6 +1,6 @@
 ---
-title: '첨부 파일과 함께 이메일을 가져오는 추가 단계 '
-description: '첨부 파일과 함께 이메일을 가져오는 추가 단계   '
+title: 첨부 파일과 함께 이메일을 가져오는 추가 단계
+description: 첨부 파일과 함께 이메일을 가져오는 추가 단계
 source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
 source-wordcount: '226'

@@ -1,18 +1,18 @@
 ---
 title: AEM Forms 키보드 단축키
-seo-title: AEM Forms 키보드 단축키
+seo-title: AEM Forms Keyboard Shortcuts
 description: 이 문서에서는 Windows 및 Macintosh 운영 체제에 대한 적응형 양식 편집기, 테마 편집기, 컨텐츠 브라우저 및 서신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
-seo-description: 이 문서에서는 적응형 양식 편집기, 테마 편집기, 컨텐츠 브라우저 및 서신 관리와 함께 사용할 수 있는 키보드 단축키를 나열합니다.
+seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1147'
 ht-degree: 5%
 
 ---
@@ -29,18 +29,18 @@ ht-degree: 5%
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저를 닫습니다 | Ctrl+Alt+W | Command+Alt+W |
 | 선택한 적응형 양식 구성 요소에 대한 속성 브라우저에 변경 내용을 저장합니다 | Ctrl+S | Command+S |
 | 선택한 적응형 양식 구성 요소에 대한 규칙 편집 | Ctrl+Alt+Enter | Command+Alt+Return |
-| 미리 보기 와 현재 선택한 모드(예: 편집, 스캐폴딩 등) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;Amp;ast; |
-| 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Amp;ast; |
-| 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;Amp;ast; |
+| 미리 보기 와 현재 선택한 모드(예: 편집, 스캐폴딩 등) 간을 전환합니다. | Ctrl+Shift+M | Ctrl+Shift+M&amp;Ast; |
+| 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Ast; |
+| 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;Ast; |
 | 여러 구성 요소 선택 | Shift+클릭 | Shift+클릭 |
 | 선택한 구성 요소 복사 | Ctrl+C | Ctrl-C&amp;ast; |
-| 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치로 붙여넣을 때까지 사라지지 않습니다. | Ctrl+X | Ctrl-X&amp;Amp;ast; |
+| 선택한 구성 요소를 잘라냅니다. 잘라낸 구성 요소는 새 위치로 붙여넣을 때까지 사라지지 않습니다. | Ctrl+X | Ctrl-X&amp;Ast; |
 | 구성 요소 붙여넣기 | Ctrl+V | Ctrl+V |
-| 선택한 구성 요소 삭제 | Ctrl+Del | Ctrl+Del&amp;Amp;ast; |
-| 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스&amp;ast; |
-| 미리 보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 만들기 | Ctrl+B | Ctrl+B&amp;Amp;ast; |
-| 미리 보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시 | Ctrl+I | Ctrl+I&amp;Amp;ast; |
-| 미리 보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 만들기 | Ctrl+U | Ctrl+U&amp;Amp;ast; |
+| 선택한 구성 요소 삭제 | Ctrl+Del | Ctrl+Del&amp;Ast; |
+| 선택한 구성 요소 삭제 | Ctrl+백스페이스 | Ctrl+백스페이스&amp;Ast; |
+| 미리 보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 만들기 | Ctrl+B | Ctrl+B&amp;Ast; |
+| 미리 보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 기울임꼴로 표시 | Ctrl+I | Ctrl+I&amp;Ast; |
+| 미리 보기 모드에서 리치 텍스트 편집기 구성 요소를 사용하는 동안 텍스트를 굵게 만들기 | Ctrl+U | Ctrl+U&amp;Ast; |
 
 >[!NOTE]
 >
@@ -50,11 +50,9 @@ ht-degree: 5%
 >
 >데스크톱 장치에서의 다중 선택:
 >
->* Windows:필요한 구성 요소를 Ctrl+클릭합니다.
->* MAC OS:Command+필요한 구성 요소를 클릭합니다.
-
+>* Windows: 필요한 구성 요소를 Ctrl+클릭합니다.
+>* Mac OS: Command+필요한 구성 요소를 클릭합니다.
 >
-
 
 
 ## 테마 편집기  {#themeeditor}
@@ -63,9 +61,9 @@ ht-degree: 5%
 |---|---|---|
 | 선택한 구성 요소의 속성 브라우저를 테마에서 엽니다. | Alt+Enter | Alt+Return |
 | 선택한 구성 요소의 속성 브라우저를 테마에서 닫습니다 | Ctrl+Alt+W | Command+Alt+W |
-| 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Amp;ast; |
-| 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;Amp;ast; |
-| 선택한 구성 요소의 테마 브라우저에서 변경 내용을 저장합니다 | Ctrl+S | Ctrl+S&amp;Amp;ast; |
+| 마지막 변경 내용을 실행 취소합니다 | Ctrl+Z | Ctrl+Z&amp;Ast; |
+| 마지막 변경 내용을 재실행합니다 | Ctrl+Y | Ctrl+Y&amp;Ast; |
+| 선택한 구성 요소의 테마 브라우저에서 변경 내용을 저장합니다 | Ctrl+S | Ctrl+S&amp;Ast; |
 
 >[!NOTE]
 >
@@ -82,17 +80,17 @@ ht-degree: 5%
 | Forms 개체 트리에서 다음 항목을 선택합니다 | 아래쪽 화살표 | 아래쪽 화살표 |
 | Forms 개체 트리에서 이전 항목을 선택합니다 | 위쪽 화살표 | 위쪽 화살표 |
 
-[1] 는 Windows의 경우 Ctrl+오른쪽 화살표, Mac OS의 경우 Command+오른쪽 화살표를 대체합니다.\
-[2] 는 Windows의 경우 Ctrl+왼쪽 화살표, Mac OS의 경우 Command+왼쪽 화살표를 대체합니다.
+[1] Windows의 경우 Ctrl + 오른쪽 화살표, Mac OS의 경우 Command + 오른쪽 화살표 를 대체합니다.\
+[2개] Windows의 경우 Ctrl + 왼쪽 화살표, Mac OS의 경우 Command + 왼쪽 화살표 를 대체합니다.
 
 ## 서신 관리 {#correspondence-management}
 
 이 섹션에는 서신 관리 텍스트 편집기에서 사용할 수 있는 다양한 키보드 및 접근성 단축키가 나열됩니다. 다음과 같은 경우 다음 단축키를 사용할 수 있습니다.
 
-* [텍스트](texts-interactive-communications.md) 자산 만들기 또는 편집
-* [서신](/help/forms/using/create-correspondence.md)을 만들 때 관련 편집 아이콘( ![edittextmodule](assets/edittextmodule.png))을 탭한 후 텍스트 모듈을 편집합니다.
+* 만들기 또는 편집 [텍스트](texts-interactive-communications.md) 자산
+* 관련 편집 아이콘( )을 탭한 후 텍스트 모듈 편집 ![edittextmodule](assets/edittextmodule.png)) [서신 만들기](/help/forms/using/create-correspondence.md).
 
-### 텍스트 선택 및 {#text-selection-and-moving-the-cursor-around} 주위에 커서 이동
+### 텍스트 선택 및 커서 이동 {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
@@ -242,7 +240,7 @@ ht-degree: 5%
  </tbody>
 </table>
 
-### 실행 취소 및 다시 실행 작업 {#undo-and-redo-actions}
+### 작업 실행 취소 및 다시 실행 {#undo-and-redo-actions}
 
 <table> 
  <tbody>
@@ -264,7 +262,7 @@ ht-degree: 5%
  </tbody>
 </table>
 
-### 글꼴 크기 {#changing-font-size} 변경
+### 글꼴 크기 변경 {#changing-font-size}
 
 <table> 
  <tbody>
@@ -286,7 +284,7 @@ ht-degree: 5%
  </tbody>
 </table>
 
-### 단어 {#deleting-a-word} 삭제
+### 단어 삭제 {#deleting-a-word}
 
 <table> 
  <tbody>
@@ -308,7 +306,7 @@ ht-degree: 5%
  </tbody>
 </table>
 
-### {#copy-and-paste} 복사 및 붙여넣기
+### 복사 및 붙여넣기 {#copy-and-paste}
 
 <table> 
  <tbody>

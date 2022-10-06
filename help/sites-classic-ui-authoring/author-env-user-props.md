@@ -1,8 +1,8 @@
 ---
 title: 계정 환경 구성
-seo-title: 계정 환경 구성
+seo-title: Configuring your account environment
 description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
-seo-description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment.
 uuid: a4a408f4-e33e-4304-90ab-f564ae772b7d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 78%
+source-wordcount: '224'
+ht-degree: 76%
 
 ---
 
@@ -25,7 +25,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 [계정 설정](#account-settings) 및 [사용자 환경 설정](#user-preferences)을 사용하여 다음 옵션 및 환경 설정을 정의할 수 있습니다:
 
 * **편집 도구 모음** 전역 편집 도구 모음 사용 여부를 선택합니다. 브라우저 창 상단에 표시되는 이 도구 모음에서는 다음 작업을 수행할 수 있습니다 
-**해당 페이지의 단락 구성 요소에 사용할 복사**,  **잘라내기**,  **붙여넣기**,  **** 삭제 단추:
+**복사**, **잘라내기**, **붙여넣기**, **삭제** 해당 페이지의 단락 구성 요소에 사용할 단추:
 
    * 필요 시 표시(기본값)
    * 항상 표시
@@ -34,8 +34,8 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 * **가장 대상**
  [가장 대상](/help/sites-administering/security.md#impersonating-another-user) 기능을 사용하면 사용자는 다른 사용자를 대신하여 작업할 수 있습니다.
 
-* ****
-언어작성 환경의 UI에 사용할 언어입니다.사용 가능한 목록에서 필요한 언어를 선택합니다.
+* **언어**
+작성 환경의 UI에 사용할 언어입니다. 사용 가능한 목록에서 필요한 언어를 선택합니다.
 
 * **창 관리**
 다음 중 하나를 선택합니다.
@@ -50,7 +50,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 사용자 아이콘은 다음 옵션에 따라 다양한 액세스 권한을 제공합니다.
 
 * 로그아웃
-* [가장 대상 ](/help/sites-administering/security.md#impersonating-another-user)
+* [가장 대상](/help/sites-administering/security.md#impersonating-another-user)
 * [사용자 환경 설정](#user-preferences)
 * [알림 수신함](/help/sites-classic-ui-authoring/author-env-inbox.md)
 

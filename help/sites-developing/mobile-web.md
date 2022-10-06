@@ -1,8 +1,8 @@
 ---
 title: 모바일 웹
-seo-title: 모바일 웹
+seo-title: Mobile Web
 description: AEM은 모바일 장치용 사이트를 개발하고 콘텐츠를 모바일 애플리케이션에 통합할 수 있는 몇 가지 도구를 제공합니다
-seo-description: AEM은 모바일 장치용 사이트를 개발하고 콘텐츠를 모바일 애플리케이션에 통합할 수 있는 몇 가지 도구를 제공합니다
+seo-description: AEM provides several tools that enable you to develop sites for mobile devices and to integrate your content into mobile applications
 uuid: 283667fa-1891-4a93-b074-792a8e15efc1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/develop/mobile
 exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '203'
 ht-degree: 10%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 10%
 
 AEM은 모바일 장치용 사이트를 개발하고 콘텐츠를 모바일 애플리케이션에 통합할 수 있는 몇 가지 도구를 제공합니다.
 
-이 페이지는 [작성자에 대한 모바일 페이지와 함께 읽어야 합니다](/help/sites-authoring/mobile.md).
+이 페이지는 [작성자를 위한 모바일 페이지](/help/sites-authoring/mobile.md).
 
 ## 모바일용 웹 사이트 개발 {#developing-web-sites-for-mobile}
 
@@ -39,4 +39,4 @@ AEM은 모바일 장치용 사이트를 개발하고 콘텐츠를 모바일 애�
 
 ## 모바일 앱 개발 {#developing-mobile-apps}
 
-AEM 페이지를 애플리케이션 인터페이스로 사용하는 모바일 애플리케이션을 개발합니다. AEM은 PhoneGap과 통합되므로 AEM 페이지를 사용하여 앱을 쉽게 만들 수 있습니다. 컨텐츠 동기화를 사용하면 앱과 번들링을 위해 페이지의 버전이 지정된 아카이브를 만들 수 있습니다. 컨텐츠 동기화에 대한 자세한 내용을 보려면 여기](/help/mobile/phonegap-contentsync.md)를 클릭하십시오.[
+AEM 페이지를 애플리케이션 인터페이스로 사용하는 모바일 애플리케이션을 개발합니다. AEM은 PhoneGap과 통합되므로 AEM 페이지를 사용하여 앱을 쉽게 만들 수 있습니다. 컨텐츠 동기화를 사용하면 앱과 번들링을 위해 페이지의 버전이 지정된 아카이브를 만들 수 있습니다. 콘텐츠 동기화에 대한 자세한 내용을 보려면 [여기](/help/mobile/phonegap-contentsync.md).

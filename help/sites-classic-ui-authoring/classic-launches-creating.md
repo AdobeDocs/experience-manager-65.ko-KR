@@ -1,8 +1,8 @@
 ---
 title: 론치 만들기
-seo-title: 론치 만들기
+seo-title: Creating Launches
 description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다. 론치를 만들 때에는 제목과 소스 페이지를 지정합니다.
-seo-description: 론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다. 론치를 만들 때에는 제목과 소스 페이지를 지정합니다.
+seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: e67608a9-e6c9-42f3-bd1d-63a5fa87ae18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,20 +13,20 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 8ab21067-c19a-4faa-8bf0-cd9f21f6df70
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 88%
+source-wordcount: '370'
+ht-degree: 95%
 
 ---
 
 # 론치 만들기{#creating-launches}
 
-론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다. 론치를 만들 때에는 제목과 소스 페이지를 지정합니다:
+론치를 만들어 향후 활성화할 수 있도록 기존 웹 페이지의 새 버전 업데이트를 활성화할 수 있습니다. 론치를 만들 때에는 제목과 소스 페이지를 지정합니다.
 
-* 제목은 **사이드킥에 표시되며 작성자는 여기에서 액세스하여 작업할 수 있습니다.**
+* 제목은 **사이드킥입니다**: 작성자가 액세스하여 작업할 수 있는 곳.
 * 소스 페이지의 하위 페이지는 기본적으로 론치에 포함됩니다. 원할 경우 소스 페이지만 사용할 수 있습니다.
-* 기본적으로, [Live Copy](/help/sites-administering/msm.md)는 소스 페이지 변경에 따라 자동으로 론치 페이지를 업데이트합니다. 정적 복사본을 만들어 자동 변경을 방지하도록 지정할 수 있습니다.
+* 기본적으로, [Live Copy](/help/sites-administering/msm.md)는 소스 페이지 변경에 따라 자동으로 론치 페이지를 업데이트합니다. 정적 사본을 만들어 자동 변경을 방지하도록 지정할 수 있습니다.
 
-필요에 따라 **론치 날짜**(및 시간)를 지정하여 론치 페이지가 홍보되고 활성화되는 시기를 정의할 할 수 있습니다. 그러나 **시작 날짜**&#x200B;는 **프로덕션 준비** 플래그와 조합으로만 작동합니다([Launch 구성 편집](/help/sites-classic-ui-authoring/classic-launches-editing.md#editing-a-launch-configuration) 참조).작업이 실제로 자동으로 수행되려면 두 작업 모두 설정해야 합니다.
+Optionally, you can specify the **Launch Date** (and time) to define when the launch pages are to be promoted and activated. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-classic-ui-authoring/classic-launches-editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
 
 ## 론치 만들기 {#creating-a-launch}
 
@@ -40,7 +40,7 @@ ht-degree: 88%
    * **소스 페이지**: 론치를 만들 페이지 경로. 기본적으로 모든 하위 페이지가 포함되어 있습니다.
    * **하위 페이지 제외**: 이 선택 사항을 선택하면 소스 페이지에 대한 론치만 만들고 하위 페이지에 대해서는 만들지 않습니다. 기본적으로 이 선택 사항은 선택되어 있지 않습니다.
    * ****&#x200B;동기화 유지: 이 옵션을 선택하면, 소스 페이지가 변경될 때 론치 페이지 내용이 자동으로 업데이트됩니다. 이것은 론치를 [Live Copy](/help/sites-administering/msm.md)로 만듦으로써 성취됩니다.
-   * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름) [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
+   * **론치 날짜**: 론치 카피가 활성화될 날짜 및 시간입니다(**프로덕션 준비** 플래그에 따라 다름). [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
 
    ![chlimage_1-99](assets/chlimage_1-99a.png)
 

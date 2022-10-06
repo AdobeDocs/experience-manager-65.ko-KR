@@ -17,7 +17,7 @@ ht-degree: 0%
 
 JMX 콘솔을 사용하여 서비스를 관리할 MBeans를 생성 및 배포합니다. 서비스 속성 및 작업을 노출하여 관리 작업을 수행할 수 있도록 합니다.
 
-JMX 콘솔 사용에 대한 자세한 내용은 [JMX 콘솔을 사용하여 서버 리소스 모니터링](/help/sites-administering/jmx-console.md)을 참조하십시오.
+JMX 콘솔 사용에 대한 자세한 내용은 [JMX 콘솔을 사용하여 서버 리소스 모니터링](/help/sites-administering/jmx-console.md).
 
 ## Felix 및 CQ5의 JMX 프레임워크 {#the-jmx-framework-in-felix-and-cq}
 
@@ -37,25 +37,25 @@ CQ5 또는 CRX 리소스를 관리하기 위해 만드는 MB는 javax.management
 
 ### 주석을 사용하여 MBean 정보 제공 {#using-annotations-to-provide-mbean-information}
 
-[com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 패키지는 JMX 콘솔에 MBean 메타데이터를 쉽게 제공할 수 있는 몇 가지 주석 및 클래스를 제공합니다. MBean의 MBeanInfo 객체에 정보를 직접 추가하는 대신 이러한 주석 및 클래스를 사용합니다.
+다음 [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 패키지는 JMX 콘솔에 MBean 메타데이터를 쉽게 제공할 수 있는 몇 가지 주석 및 클래스를 제공합니다. MBean의 MBeanInfo 객체에 정보를 직접 추가하는 대신 이러한 주석 및 클래스를 사용합니다.
 
 **주석**
 
-관리 인터페이스에 주석을 추가하여 MBean 메타데이터를 지정합니다. 이 정보는 배포된 각 구현 클래스에 대한 JMX 콘솔에 표시됩니다. 다음 주석을 사용할 수 있습니다(전체 정보는 [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 참조).
+관리 인터페이스에 주석을 추가하여 MBean 메타데이터를 지정합니다. 이 정보는 배포된 각 구현 클래스에 대한 JMX 콘솔에 표시됩니다. 다음 주석을 사용할 수 있습니다(자세한 내용은 [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **설명:** MBean 클래스 또는 메서드에 대한 설명을 제공합니다. 클래스 선언에서 사용하는 경우 설명이 MBean의 JMX 콘솔 페이지에 표시됩니다. 메서드에서 사용하는 설명서는 해당 속성이나 작업에 대해 가리키기 텍스트로 표시됩니다.
-* **영향:** 방법의 영향. 유효한 매개 변수 값은 [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html)에 의해 정의된 필드입니다.
+* **영향:** 메서드의 영향. 유효한 매개 변수 값은 [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
 
-* **이름:**  작업 매개 변수에 대해 표시할 이름을 지정합니다. 이 주석을 사용하여 인터페이스에 사용되는 메서드 매개 변수의 실제 이름을 재정의합니다.
+* **이름:** 작업 매개 변수에 표시할 이름을 지정합니다. 이 주석을 사용하여 인터페이스에 사용되는 메서드 매개 변수의 실제 이름을 재정의합니다.
 * **OpenTypeInfo:** JMX 콘솔에서 복합 데이터 또는 테이블 형식 데이터를 나타내는 데 사용할 클래스를 지정합니다. 오픈 MBean과 함께 사용
-* **TabularTypeInfo:**  테이블 형식 데이터를 나타내는 데 사용되는 클래스에 주석을 다는 데 사용됩니다.
+* **테이블 형식 유형 정보:** 테이블 형식 데이터를 나타내는 데 사용되는 클래스에 주석을 다는 데 사용됩니다.
 
 **클래스**
 
 인터페이스에 추가하는 주석을 사용하는 동적 MBeans를 만들기 위해 클래스가 제공됩니다.
 
-* **AnnotatedStandardMBean:** JMX 콘솔에 주석 메타데이터를 자동으로 제공하는 javax.management.StandardMBean 클래스의 하위 클래스입니다.
-* **OpenAnnotatedStandardMBean:**  OpenTypeInfo 주석을 사용하는 Open Beans를 만들기 위한 AnnotatedStandardMBean 클래스의 하위 클래스입니다.
+* **주석 달기:** JMX 콘솔에 주석 메타데이터를 자동으로 제공하는 javax.management.StandardMBean 클래스의 하위 클래스입니다.
+* **OpenAnnotatedStandardMBean:** OpenTypeInfo 주석을 사용하는 Open Beans를 만들기 위한 AnnotatedStandardMBean 클래스의 하위 클래스입니다.
 
 ### MBeans 개발 {#developing-mbeans}
 
@@ -134,15 +134,15 @@ MBeans를 OSGi 서비스로 등록하면 MBean 서버에 자동으로 등록됩�
 
 OSGi 관련 메타데이터 외에도 Aries JMX 화이트보드 모듈에서 MBean을 MBean 서버에 등록하는 데 필요한 메타데이터를 제공해야 합니다.
 
-* **DynamicMBean 인터페이스의 이름:** MBean 서비스가  `javax.management.DynamicMBea`n 인터페이스를 구현함을 선언합니다. 이 선언에서는 서비스가 MBean 서비스임을 Aries JMX 화이트보드 모듈에 알립니다.
+* **DynamicMBean 인터페이스의 이름:** MBean 서비스가 을 구현하도록 선언합니다 `javax.management.DynamicMBea`n 인터페이스. 이 선언에서는 서비스가 MBean 서비스임을 Aries JMX 화이트보드 모듈에 알립니다.
 
-* **MBean 도메인 및 키 속성:**  Felix에서 이 정보를 MBean의 OSGi 서비스의 속성으로 제공합니다. 이는 일반적으로 `javax.management.ObjectName` 개체의 MBean 서버에 제공하는 것과 동일한 정보입니다.
+* **MBean 도메인 및 키 속성:** Felix에서 이 정보를 MBean OSGi 서비스의 속성으로 제공합니다. 이는 일반적으로 MBean 서버에 제공하는 것과 동일한 정보입니다 `javax.management.ObjectName` 개체.
 
 MBean이 단일 서비스의 반영인 경우 MBean 서비스의 단일 인스턴스만 필요합니다. 이 경우 Felix SCR Maven 플러그인을 사용하는 경우 MBean 구현 클래스의 SCR(Apache Felix Service Component Runtime) 주석을 사용하여 JMX 관련 메타데이터를 지정할 수 있습니다. 여러 MBean 인스턴스를 인스턴스화하려면 MBean OSGi 서비스의 해당 등록을 수행하는 다른 클래스를 만들 수 있습니다. 이 경우 JMX 관련 메타데이터는 런타임 시 생성됩니다.
 
 **단일 MBean**
 
-디자인 타임에 모든 속성 및 작업을 정의할 수 있는 MBean 구현 클래스의 SCR 주석을 사용하여 배포할 수 있습니다. 다음 예에서 `Service` 주석의 `value` 속성은 서비스가 `DynamicMBean` 인터페이스를 구현한다고 선언합니다. `Property` 주석의 `name` 속성은 JMX 도메인과 키 속성을 지정합니다.
+디자인 타임에 모든 속성 및 작업을 정의할 수 있는 MBean 구현 클래스의 SCR 주석을 사용하여 배포할 수 있습니다. 다음 예에서 `value` 의 속성 `Service` 주석은 서비스가 `DynamicMBean` 인터페이스. 다음 `name` 의 속성 `Property` annotation에서는 JMX 도메인 및 키 속성을 지정합니다.
 
 #### SCR 주석이 있는 MBean 구현 클래스 {#mbean-implementation-class-with-scr-annotations}
 
@@ -213,7 +213,7 @@ MBean 서비스 관리자는 서비스 구성을 저장소에 저장할 때 유�
 * WorkflowMBeanManager: MBean 관리자 클래스의 인터페이스입니다.
 * WorkflowMBeanManagerImpl: MBean 관리자의 구현 클래스입니다.
 
-**참고:** 단순하게 하기 위해 이 예제의 코드는 throw된 예외에 대해 로깅을 수행하거나 응답하지 않습니다.
+**참고:** 예를 들어 이 예제의 코드는 throw된 예외에 대해 로깅을 수행하거나 조치를 수행하지 않습니다.
 
 WorkflowMBeanManagerImpl에는 구성 요소 활성화 방법이 포함되어 있습니다. 구성 요소가 활성화되면 메서드는 다음 작업을 수행합니다.
 
@@ -228,7 +228,7 @@ MBean 메타데이터는 com.adobe.example 도메인과 함께 JMX 콘솔에 나
 
 ### 예제 MBean {#the-example-mbean}
 
-이 예제에서는 `com.day.cq.workflow.model.WorkflowModel` 인터페이스에 반영되는 MBean 인터페이스와 구현이 필요합니다. MBean은 매우 간단하므로 디자인의 구성 및 배포 측면에 중점을 둘 수 있습니다. MBean은 단일 속성인 모델 이름을 표시합니다.
+이 예제에서는 MBean 인터페이스와 구현이 필요합니다. `com.day.cq.workflow.model.WorkflowModel` 인터페이스. MBean은 매우 간단하므로 디자인의 구성 및 배포 측면에 중점을 둘 수 있습니다. MBean은 단일 속성인 모델 이름을 표시합니다.
 
 #### WorkflowMBean 인터페이스 {#workflowmbean-interface}
 
@@ -429,7 +429,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 * Apache Felix Maven 번들 플러그인: 번들 및 매니페스트를 만듭니다.
 * Apache Felix Maven SCR 플러그인: 구성 요소 설명자 파일을 만들고 서비스 구성 요소 매니페스트 헤더를 구성합니다.
 
-**참고:** 작성 시, maven scr 플러그인은 Eclipse용 m2e 플러그인과 호환되지 않습니다. ([Felix 버그 3170](https://issues.apache.org/jira/browse/FELIX-3170)을 참조하십시오.) Eclipse IDE를 사용하려면 Maven을 설치하고 명령줄 인터페이스를 사용하여 빌드를 수행합니다.
+**참고:** 작성 시 maven scr 플러그인은 Eclipse용 m2e 플러그인과 호환되지 않습니다. (자세한 내용은 [Felix 버그 3170](https://issues.apache.org/jira/browse/FELIX-3170)) Eclipse IDE를 사용하려면 Maven을 설치하고 명령줄 인터페이스를 사용하여 빌드를 수행합니다.
 
 #### POM 파일 예 {#example-pom-file}
 

@@ -1,8 +1,8 @@
 ---
 title: 데이터 저장소 가비지 컬렉션
-seo-title: 데이터 저장소 가비지 컬렉션
+seo-title: Data Store Garbage Collection
 description: 디스크 공간을 확보하도록 데이터 저장소 가비지 수집을 구성하는 방법을 알아봅니다.
-seo-description: 디스크 공간을 확보하도록 데이터 저장소 가비지 수집을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure Data Store Garbage Collection to free up disk space.
 uuid: 49488a81-986a-4d1a-96c8-aeb6595fc094
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1887'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ AEM에서는 많은 내부 및 하우스키핑 활동을 위해 리포지토리�
 * 워크플로우 페이로드
 * DAM 렌더링 중에 일시적으로 생성된 자산
 
-이러한 임시 객체가 데이터 저장소에 저장될 수 있을 만큼 충분히 크고 결과적으로 객체가 사용되지 않을 경우 데이터 저장소 레코드 자체는 &quot;가비지&quot;로 유지됩니다. 일반적인 WCM 작성자/게시 애플리케이션에서 이 유형의 가장 큰 가비지 소스는 일반적으로 게시 활성화 프로세스입니다. 데이터가 게시에 복제될 때 데이터가 &quot;Durbo&quot;라는 효율적인 데이터 형식으로 컬렉션에 처음 수집되고 `/var/replication/data` 아래에 저장소에 저장되는 경우 이 데이터가 게시됩니다. 데이터 번들은 종종 데이터 저장소의 임계 크기 임계값보다 커서 데이터 저장소 레코드로 저장됩니다. 복제가 완료되면 `/var/replication/data`의 노드가 삭제되지만 데이터 저장소 레코드는 &quot;가비지&quot;로 유지됩니다.
+이러한 임시 객체가 데이터 저장소에 저장될 수 있을 만큼 충분히 크고 결과적으로 객체가 사용되지 않을 경우 데이터 저장소 레코드 자체는 &quot;가비지&quot;로 유지됩니다. 일반적인 WCM 작성자/게시 애플리케이션에서 이 유형의 가장 큰 가비지 소스는 일반적으로 게시 활성화 프로세스입니다. 데이터가 게시에 복제될 때 데이터가 처음 컬렉션에 &quot;Durbo&quot;라는 효율적인 데이터 형식으로 수집되어 의 저장소에 저장되는 경우 `/var/replication/data`. 데이터 번들은 종종 데이터 저장소의 임계 크기 임계값보다 커서 데이터 저장소 레코드로 저장됩니다. 복제가 완료되면 의 노드가 `/var/replication/data` 가 삭제되지만 데이터 저장소 레코드는 &quot;가비지&quot;로 유지됩니다.
 
 복구 가능한 가비지의 다른 원본은 패키지입니다. 다른 모든 것과 마찬가지로 패키지 데이터는 저장소에 저장되므로 4KB보다 큰 패키지의 경우 데이터 저장소에 저장됩니다. 개발 프로젝트 과정 또는 시스템을 유지 관리하는 동안 시간이 지나면서 패키지를 여러 번 빌드하고 다시 빌드할 수 있으며 각 빌드는 이전 빌드의 레코드를 정정하는 새로운 데이터 저장소 레코드를 생성합니다.
 
-## 데이터 저장소는 어떻게 작동합니까?{#how-does-data-store-garbage-collection-work}
+## 데이터 저장소는 어떻게 작동합니까? {#how-does-data-store-garbage-collection-work}
 
-저장소가 외부 데이터 저장소로 구성된 경우 [데이터 저장소 가비지 수집은 주별 유지 관리 창의 일부로 자동으로](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection)됩니다. 시스템 관리자는 필요에 따라 [데이터 저장소 가비지 수집을 수동으로](#running-data-store-garbage-collection)실행할 수도 있습니다. 일반적으로 데이터 저장소 가비지 수집은 정기적으로 수행하는 것이 좋지만, 데이터 저장소 가비지 컬렉션 계획에서는 다음 요소를 고려해야 합니다.
+저장소가 외부 데이터 저장소로 구성된 경우 [데이터 저장소 가비지 수집은 자동으로 실행됩니다](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) 주간 유지 관리 창의 일부로 사용됩니다. 시스템 관리자는 또한 [수동으로 데이터 저장소 가비지 수집 실행](#running-data-store-garbage-collection) 필요에 따라. 일반적으로 데이터 저장소 가비지 수집은 정기적으로 수행하는 것이 좋지만, 데이터 저장소 가비지 컬렉션 계획에서는 다음 요소를 고려해야 합니다.
 
 * 데이터 저장소는 시간이 걸리고 성능에 영향을 줄 수 있으므로 그에 따라 계획해야 합니다.
 * 데이터 저장소 가비지 레코드를 제거해도 일반 성능에 영향을 주지 않으므로 성능 최적화는 아닙니다.
@@ -58,14 +58,14 @@ AEM에서는 많은 내부 및 하우스키핑 활동을 위해 리포지토리�
 >
 >클러스터형 또는 공유 데이터 저장소 설정(Mongo 또는 Segment Tar 사용)에서 가비지 수집을 수행할 때 로그에 특정 Blob ID를 삭제할 수 없다는 경고가 표시될 수 있습니다. 이 문제는 이전 가비지 수집에서 삭제된 Blob ID가 ID 삭제에 대한 정보가 없는 다른 클러스터 또는 공유 노드에서 다시 잘못 참조되기 때문에 발생합니다. 따라서 가비지 수집이 수행되면 마지막 실행에서 이미 삭제된 ID를 삭제하려고 하면 경고가 기록됩니다. 이 동작은 성능이나 기능에 영향을 미치지 않습니다.
 
-## 데이터 저장소 가비지 수집 실행 중 {#running-data-store-garbage-collection}
+## 데이터 저장소 가비지 수집 실행 {#running-data-store-garbage-collection}
 
 AEM이 실행 중인 데이터 저장소 설정에 따라 데이터 저장소 가비지 수집을 실행하는 세 가지 방법이 있습니다.
 
-1. [개정 정리](/help/sites-deploying/revision-cleanup.md)를 통해 - 일반적으로 노드 저장소 정리를 위해 사용되는 가비지 수집 메커니즘입니다.
+1. Via [개정 정리](/help/sites-deploying/revision-cleanup.md) - 일반적으로 노드 저장소 정리를 위해 사용되는 가비지 수집 메커니즘입니다.
 
-1. [데이터 저장소 가비지 컬렉션](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard)을 통해 - 작업 대시보드에서 사용할 수 있는 외부 데이터 저장소에 고유한 가비지 수집 메커니즘입니다.
-1. [JMX 콘솔](/help/sites-administering/jmx-console.md)을 통해
+1. Via [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) - 작업 대시보드에서 사용할 수 있는 외부 데이터 저장소와 관련된 가비지 수집 메커니즘입니다.
+1. 를 통해 [JMX 콘솔](/help/sites-administering/jmx-console.md).
 
 TarMK가 노드 저장소와 데이터 저장소 모두로 사용 중인 경우, 개정 정리를 노드 저장소와 데이터 저장소 모두의 가비지 수집에 사용할 수 있습니다. 그러나 파일 시스템 데이터 저장소와 같이 외부 데이터 저장소가 구성된 경우 데이터 저장소 가비지 수집은 수정 정리 와 별도로 명시적으로 트리거되어야 합니다. 데이터 저장소 가비지 수집은 작업 대시보드 또는 JMX 콘솔을 통해 트리거할 수 있습니다.
 
@@ -101,20 +101,20 @@ TarMK가 노드 저장소와 데이터 저장소 모두로 사용 중인 경우,
  </tbody>
 </table>
 
-### 작업 대시보드 {#running-data-store-garbage-collection-via-the-operations-dashboard}를 통해 데이터 저장소 가비지 수집 실행
+### 작업 대시보드를 통해 데이터 저장소 가비지 수집 실행 {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-[작업 대시보드](/help/sites-administering/operations-dashboard.md)를 통해 제공되는 내장 주별 유지 관리 창에는 일요일 오전 1시에 데이터 저장소 가비지 수집을 트리거하는 기본 작업이 포함되어 있습니다.
+기본 제공 주별 유지 관리 기간(을 통해 사용 가능) [작업 대시보드](/help/sites-administering/operations-dashboard.md)에는 일요일 오전 1시에 데이터 저장소 가비지 수집을 트리거하는 기본 작업이 포함되어 있습니다.
 
 이 시간 외에 데이터 저장소 가비지 수집을 실행해야 하는 경우 작업 대시보드를 통해 수동으로 트리거할 수 있습니다.
 
 데이터 저장소 가비지 수집을 실행하기 전에 해당 시간에 실행 중인 백업이 없는지 확인해야 합니다.
 
-1. **탐색** -> **도구** -> **작업** -> **유지 관리**&#x200B;로 작업 대시보드를 엽니다.
-1. **주별 유지 관리 창**&#x200B;을 클릭하거나 탭합니다.
+1. 작업 대시보드 열기 **탐색** -> **도구** -> **작업** -> **유지 관리**.
+1. 을 클릭하거나 탭합니다 **주간 유지 관리 기간**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. **데이터 저장소 가비지 수집** 작업을 선택한 다음 **실행** 아이콘을 클릭하거나 탭합니다.
+1. 을(를) 선택합니다 **데이터 저장소 가비지 수집** 작업을 수행한 다음, **실행** 아이콘.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -124,11 +124,11 @@ TarMK가 노드 저장소와 데이터 저장소 모두로 사용 중인 경우,
 
 >[!NOTE]
 >
->데이터 저장소 가비지 수집 작업은 외부 파일 데이터 저장소를 구성한 경우에만 표시됩니다. 파일 데이터 저장소를 설정하는 방법에 대한 자세한 내용은 [AEM 6](/help/sites-deploying/data-store-config.md#file-data-store)에 노드 저장소 및 데이터 저장소 구성 을 참조하십시오.
+>데이터 저장소 가비지 수집 작업은 외부 파일 데이터 저장소를 구성한 경우에만 표시됩니다. 자세한 내용은 [AEM 6에서 노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md#file-data-store) 파일 데이터 저장소를 설정하는 방법에 대한 자세한 내용을 참조하십시오.
 
 ### JMX 콘솔을 통해 데이터 저장소 가비지 수집 실행 {#running-data-store-garbage-collection-via-the-jmx-console}
 
-이 섹션은 JMX 콘솔을 통해 데이터 저장소 가비지 수집을 수동으로 실행하는 것에 대한 것입니다. 외부 데이터 저장소 없이 설치를 설정한 경우에는 설치에 적용되지 않습니다. 대신 [저장소 유지 관리](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)에서 개정 정리를 실행하는 방법에 대한 지침을 참조하십시오.
+이 섹션은 JMX 콘솔을 통해 데이터 저장소 가비지 수집을 수동으로 실행하는 것에 대한 것입니다. 외부 데이터 저장소 없이 설치를 설정한 경우에는 설치에 적용되지 않습니다. 대신 다음 위치에서 개정 정리를 실행하는 방법에 대한 지침을 참조하십시오. [저장소 유지 관리](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 
 >[!NOTE]
 >
@@ -136,16 +136,16 @@ TarMK가 노드 저장소와 데이터 저장소 모두로 사용 중인 경우,
 
 가비지 수집을 실행하려면
 
-1. Apache Felix OSGi Management Console에서 **주** 탭을 강조 표시하고 다음 메뉴에서 **JMX**&#x200B;를 선택합니다.
-1. 그런 다음 **저장소 관리자** MBean을 검색하고 클릭합니다(또는 `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement` 로 이동).
-1. **startDataStoreGC(boolean markOnly)**&#x200B;를 클릭합니다.
-1. 필요한 경우 `markOnly` 매개 변수에 대해 &quot;`true`&quot;을 입력합니다.
+1. Apache Felix OSGi Management Console에서 **기본** 탭을 선택하고 **JMX** 다음 메뉴에서 을 클릭합니다.
+1. 다음으로 을(를) 검색하고 을(를) 클릭합니다. **저장소 관리자** MBean(또는 로 이동) `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
+1. 클릭 **startDataStoreGC(부울 markOnly)**.
+1. 입력`true`&quot; `markOnly` 필요한 경우 매개 변수:
 
    | **옵션** | **설명** |
    |---|---|
    | 부울 표시 전용 | 참조만 표시하고 표시 및 쓸기 작업에서 쓸지 않으려면 true로 설정합니다. 이 모드는 기본 BlobStore가 여러 다른 저장소 간에 공유될 때 사용합니다. 다른 모든 경우 전체 가비지 수집을 수행하려면 false 로 설정합니다. |
 
-1. **호출**&#x200B;을 클릭합니다. CRX는 가비지 컬렉션을 실행하고 완료 시기를 나타냅니다.
+1. 클릭 **호출**. CRX는 가비지 컬렉션을 실행하고 완료 시기를 나타냅니다.
 
 >[!NOTE]
 >
@@ -153,13 +153,13 @@ TarMK가 노드 저장소와 데이터 저장소 모두로 사용 중인 경우,
 
 >[!NOTE]
 >
->데이터 저장소 가비지 수집 작업은 외부 파일 데이터 저장소를 구성한 경우에만 시작됩니다. 외부 파일 데이터 저장소가 구성되지 않은 경우 이 작업은 호출 후 `Cannot perform operation: no service of type BlobGCMBean found` 메시지를 반환합니다. 파일 데이터 저장소를 설정하는 방법에 대한 자세한 내용은 [AEM 6](/help/sites-deploying/data-store-config.md#file-data-store)에 노드 저장소 및 데이터 저장소 구성 을 참조하십시오.
+>데이터 저장소 가비지 수집 작업은 외부 파일 데이터 저장소를 구성한 경우에만 시작됩니다. 외부 파일 데이터 저장소가 구성되지 않은 경우 작업이 메시지를 반환합니다 `Cannot perform operation: no service of type BlobGCMBean found` 호출 후 자세한 내용은 [AEM 6에서 노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md#file-data-store) 파일 데이터 저장소를 설정하는 방법에 대한 자세한 내용을 참조하십시오.
 
 ## 데이터 저장소 가비지 수집 자동화 {#automating-data-store-garbage-collection}
 
 가능한 경우 시스템에 로드가 거의 없는 경우(예: 아침) 데이터 저장소 가비지 수집을 실행해야 합니다.
 
-[작업 대시보드](/help/sites-administering/operations-dashboard.md)를 통해 제공되는 내장 주별 유지 관리 창에는 일요일 오전 1시에 데이터 저장소 가비지 수집을 트리거하는 기본 작업이 포함되어 있습니다. 또한 현재 실행 중인 백업이 없는지 확인해야 합니다. 필요에 따라 대시보드를 통해 유지 관리 창의 시작을 사용자 지정할 수 있습니다.
+기본 제공 주별 유지 관리 기간(을 통해 사용 가능) [작업 대시보드](/help/sites-administering/operations-dashboard.md)에는 일요일 오전 1시에 데이터 저장소 가비지 수집을 트리거하는 기본 작업이 포함되어 있습니다. 또한 현재 실행 중인 백업이 없는지 확인해야 합니다. 필요에 따라 대시보드를 통해 유지 관리 창의 시작을 사용자 지정할 수 있습니다.
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ TarMK가 노드 저장소와 데이터 저장소 모두로 사용 중인 경우,
 
 >[!CAUTION]
 >
->다음 예에서 `curl` 명령은 인스턴스에 대해 다양한 매개 변수를 구성해야 할 수 있습니다.예를 들어, 실제 데이터 저장소 가비지 수집을 위한 호스트 이름( `localhost`), 포트( `4502`), 관리 암호( `xyz`) 및 다양한 매개 변수를 사용할 수 있습니다.
+>다음 예에서 `curl` 명령에는 인스턴스에 대해 다양한 매개 변수를 구성해야 할 수 있습니다. 예를 들어 호스트 이름 ( `localhost`), 포트 ( ) `4502`), 관리자 암호 ( ) `xyz`) 및 여러 매개 변수를 사용하여 실제 데이터 저장소 가비지 수집을 참조하십시오.
 
 다음은 명령줄을 통해 데이터 저장소 가비지 수집을 호출하는 curl 명령의 예입니다.
 
@@ -179,15 +179,15 @@ curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/
 
 curl 명령은 즉시 반환됩니다.
 
-## 데이터 저장소 일관성 확인 중 {#checking-data-store-consistency}
+## 데이터 저장소 일관성 확인 {#checking-data-store-consistency}
 
 데이터 저장소 일관성 검사는 누락되었지만 여전히 참조되는 모든 데이터 저장소 바이너리를 보고합니다. 일관성 검사를 시작하려면 다음 단계를 수행합니다.
 
-1. JMX 콘솔로 이동합니다. JMX 콘솔 사용 방법에 대한 자세한 내용은 [이 문서](/help/sites-administering/jmx-console.md#using-the-jmx-console)을 참조하십시오.
-1. **BlobGarbageCollection** Mbean을 검색하고 클릭합니다.
-1. `checkConsistency()` 링크를 클릭합니다.
+1. JMX 콘솔로 이동합니다. JMX 콘솔 사용 방법에 대한 자세한 내용은 [이 문서](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. 을 검색합니다. **BlobGarbageCollection** Mbean을 클릭하고 클릭합니다.
+1. 을(를) 클릭합니다. `checkConsistency()` 링크를 클릭합니다.
 
-일관성 검사가 완료되면 누락된 것으로 보고된 바이너리 수가 메시지에 표시됩니다. 숫자가 0보다 큰 경우 `error.log`에서 누락된 바이너리에 대한 자세한 내용을 확인하십시오.
+일관성 검사가 완료되면 누락된 것으로 보고된 바이너리 수가 메시지에 표시됩니다. 숫자가 0보다 큰 경우 `error.log` 누락된 바이너리에 대한 자세한 내용을 참조하십시오.
 
 아래에 누락된 바이너리가 로그에 보고되는 방법의 예가 있습니다.
 

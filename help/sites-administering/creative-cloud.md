@@ -1,8 +1,8 @@
 ---
 title: Adobe Creative Cloud과 폴더 공유
-seo-title: Adobe Creative Cloud과 폴더 공유
+seo-title: Folder sharing with Adobe Creative Cloud
 description: Adobe Creative Cloud과 폴더 공유에 대해 알아보기
-seo-description: Adobe Creative Cloud과 폴더 공유에 대해 알아보기
+seo-description: Learn about sharing folder with Adobe Creative Cloud
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,17 +12,17 @@ discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
 source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 12%
+source-wordcount: '66'
+ht-degree: 15%
 
 ---
 
 
-# Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}과 폴더 공유
+# Adobe Creative Cloud과 폴더 공유 {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
->AEM-Creative Cloud 폴더 공유 기능은 더 이상 사용되지 않습니다. 고객은 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크탑 앱](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html)과 같은 최신 기능을 사용해야 합니다. 자세한 내용은 [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md)를 참조하십시오.
+>AEM-Creative Cloud 폴더 공유 기능은 더 이상 사용되지 않습니다. 고객은 다음과 같은 최신 기능을 사용해야 합니다 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html) 또는 [AEM 데스크탑 앱](https://helpx.adobe.com/kr/experience-manager/desktop-app/aem-desktop-app.html). 추가 정보 [AEM 및 Creative Cloud 통합 우수 사례](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

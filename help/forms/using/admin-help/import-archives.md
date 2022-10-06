@@ -1,8 +1,8 @@
 ---
 title: 아카이브 가져오기 및 관리
-seo-title: 아카이브 가져오기 및 관리
+seo-title: Import and manage archives
 description: 아카이브를 가져오고 관리하는 방법을 알아봅니다.
-seo-description: 아카이브를 가져오고 관리하는 방법을 알아봅니다.
+seo-description: Learn how to import and manage archives.
 uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 아카이브 탭을 사용하여 Workbench에서 만든 LCA를 가져오고 관리합니다.
 
-## 아카이브 {#import-an-archive} 가져오기
+## 아카이브 가져오기 {#import-an-archive}
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 애플리케이션 관리 를 클릭하고 아카이브 탭을 클릭합니다.
 1. 가져오기를 클릭합니다. 
@@ -40,12 +40,12 @@ ht-degree: 0%
 1. 구성을 클릭하면 필요한 변경 작업을 수행할 수 있는 엔드포인트 구성 페이지가 나타납니다.
 
    * 끝점의 이름을 바꾸거나 설명을 편집하려면 끝점을 클릭합니다.
-   * 작업 관리자 끝점을 추가하려면 작업 관리자 추가를 클릭합니다. 작업 관리자 설정에 대한 자세한 내용은 [작업 관리자 끝점 구성](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)을 참조하십시오.
-   * 감시 폴더 끝점을 추가하려면 감시 폴더 추가를 클릭합니다. 감시 폴더 설정에 대한 자세한 내용은 [감시 폴더 끝점 설정](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)을 참조하십시오.
-   * 전자 메일 끝점을 추가하려면 전자 메일 추가를 클릭합니다. 전자 메일 설정에 대한 자세한 내용은 [전자 메일 끝점 설정](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)을 참조하십시오.
+   * 작업 관리자 끝점을 추가하려면 작업 관리자 추가를 클릭합니다. 작업 관리자 설정에 대한 자세한 내용은 [작업 관리자 끝점 구성](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * 감시 폴더 끝점을 추가하려면 감시 폴더 추가를 클릭합니다. 감시 폴더 설정에 대한 자세한 내용은 [감시 폴더 끝점 설정](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * 전자 메일 끝점을 추가하려면 전자 메일 추가를 클릭합니다. 전자 메일 설정에 대한 자세한 내용은 [전자 메일 끝점 설정](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * EJB 끝점을 추가하려면 EJB 추가를 누르고 종단점에 대한 이름과 설명을 지정합니다.
    * SOAP 끝점을 추가하려면 SOAP 추가 를 클릭하고 엔드포인트에 대한 이름과 설명을 지정합니다.
-   * 원격 끝점을 추가하려면 원격 추가를 클릭합니다. 원격 설정에 대한 자세한 내용은 [원격 끝점 설정](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)을 참조하십시오.
+   * 원격 끝점을 추가하려면 원격 추가를 클릭합니다. 원격 설정에 대한 자세한 내용은 [원격 끝점 설정](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * REST 끝점을 추가하려면 REST 추가 를 클릭하고 끝점에 대한 이름과 설명을 지정합니다. REST 끝점 추가 페이지에 표시되는 REST 호출 URL을 확인합니다.
    * 끝점을 제거하려면 끝점 옆에 있는 확인란을 선택하고 제거를 클릭합니다.
 
@@ -53,39 +53,39 @@ ht-degree: 0%
 1. LCA의 프로세스 또는 서비스에 구성 매개 변수가 있는 경우 서비스 매개 변수를 구성하고 다음을 누르면 [매개 변수 구성] 페이지가 나타납니다.
 1. 보안 프로필 구성 페이지에서 필요한 변경 작업을 수행합니다.
 
-   * **호출자가 인증해야 함:**  이 설정은 서비스를 자격 증명으로 호출할 수 있는지 여부를 나타냅니다.
+   * **호출자가 인증해야 함:** 이 설정은 서비스를 자격 증명과 함께 호출할 수 있는지 여부를 나타냅니다.
 
-      현재 *발신자가 인증*&#x200B;이 필요한 경우, 서비스 호출자를 인증하고 해당 호출자의 사용자 주도자가 서비스를 호출할 수 있는 권한이 있어야 합니다.그렇지 않으면 호출 시도가 거부됩니다. 인증해야 하는 필요성을 제거하려면 인증되지 않은 발신자 허용 을 클릭합니다.
+      If *호출자는 현재 인증해야 합니다* 이 표시되면 서비스 호출자를 인증하고 해당 호출자의 사용자 주도자가 서비스를 호출할 수 있는 권한을 부여해야 합니다. 그렇지 않으면 호출 시도가 거부됩니다. 인증해야 하는 필요성을 제거하려면 인증되지 않은 발신자 허용 을 클릭합니다.
 
-      *발신자를 인증하는 데 필요하지 않은 경우*&#x200B;서비스 호출자를 인증할 필요가 없습니다. 인증 검사가 없으므로 서비스 호출이 항상 성공합니다. 인증을 요청하려면 Require Caller to Authentication을 클릭합니다.
+      If *호출자는 인증할 필요가 없습니다* 이 표시되면 서비스의 호출자를 인증할 필요가 없습니다. 인증 검사가 없으므로 서비스 호출이 항상 성공합니다. 인증을 요청하려면 Require Caller to Authentication을 클릭합니다.
 
-   * **실행 기준:** 이 호출된 후 서비스에서 사용하는 런타임 ID를 지정합니다. 이 옵션을 변경하려면 [변경]을 클릭하십시오. 다음 옵션 중에서 선택합니다.
+   * **실행 방법:** 서비스가 호출된 후 서비스에 사용되는 런타임 ID를 지정합니다. 이 옵션을 변경하려면 [변경]을 클릭하십시오. 다음 옵션 중에서 선택합니다.
 
-      **지정되지 않음:**  기본 동작이 사용됩니다.
+      **지정되지 않음:** 기본 동작이 사용됩니다.
 
-      **호출자:**  서비스를 호출한 사용자와 동일한 ID를 사용합니다.
+      **호출자:** 서비스를 호출한 사용자와 동일한 ID를 사용합니다.
 
-      **시스템:** 전체 권한으로 서비스를 실행합니다. 장기 처리 프로세스에 대한 기본 설정입니다.
+      **시스템:** 모든 권한이 있는 서비스를 실행합니다. 장기 처리 프로세스에 대한 기본 설정입니다.
 
-      **명명된 사용자:** 특정 사용자로 서비스를 실행할 수 있도록 해줍니다. 단기 프로세스에 대한 기본 설정입니다. 이 옵션을 선택한 경우 사용자 선택 을 클릭하여 사용자를 검색하고 선택할 수 있는 주도자 선택 페이지를 표시합니다.
+      **명명된 사용자:** 특정 사용자로 서비스를 실행할 수 있습니다. 단기 프로세스에 대한 기본 설정입니다. 이 옵션을 선택한 경우 사용자 선택 을 클릭하여 사용자를 검색하고 선택할 수 있는 주도자 선택 페이지를 표시합니다.
 
    * 보안 프로필에 주도자를 추가하려면 주도자 추가를 클릭하고 주도자로 추가할 사용자 또는 그룹을 선택합니다. 다음 을 클릭하고 이 주도자에게 할당할 권한을 선택합니다.
 
-      **INVOKE_PERM:** 서비스의 모든 작업을 호출합니다
+      **INVOKE_PERM:** 서비스에 대한 모든 작업을 호출하려면
 
-      **MODIFY_CONFIG_PERM:**  서비스의 구성을 수정합니다
+      **MODIFY_CONFIG_PERM:** 서비스 구성을 수정하려면
 
-      **SUPERVISOR_PERM:**  프로세스에서 생성된 서비스에 대한 프로세스 인스턴스 데이터를 보려면
+      **SUPERVISOR_PERM:** 프로세스에서 생성된 서비스에 대한 프로세스 인스턴스 데이터를 보려면
 
-      **START_STOP_PERM:** 서비스를 시작 및 중지하려면 다음을 수행하십시오
+      **START_STOP_PERM:** 서비스를 시작 및 중지하려면
 
-      **ADD_REMOVE_ENDPOINTS_PERM:**  서비스의 끝점을 추가, 제거 및 수정하려면 다음을 수행합니다
+      **ADD_REMOVE_ENDPOINTS_PERM:** 서비스의 끝점을 추가, 제거 및 수정하려면
 
       **CREATE_VERSION_PERM:** 서비스의 새 버전을 만들려면
 
-      **DELETE_VERSION_PERM:**  서비스 버전을 삭제하려면
+      **DELETE_VERSION_PERM:** 서비스 버전을 삭제하려면
 
-      **MODIFY_VERSION_PERM:**  서비스 버전을 수정하려면
+      **MODIFY_VERSION_PERM:** 서비스 버전을 수정하려면
 
       **READ_PERM:** 서비스를 보려면
 
@@ -93,26 +93,26 @@ ht-degree: 0%
 
 1. 완료 를 클릭하여 구성을 완료합니다.
 
-## 아카이브 파일 {#configure-the-aem-forms-that-are-part-of-an-archive-file}에 포함된 AEM 양식을 구성합니다
+## 아카이브 파일의 일부인 AEM 양식 구성 {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 애플리케이션 관리 를 클릭하고 아카이브 탭을 클릭합니다.
 1. 아카이브 관리 페이지에서 구성할 아카이브 파일을 선택합니다.
 1. 아카이브 보기 페이지에서 강조 표시된 아카이브 리소스를 선택합니다.
 1. 가져온 프로세스 아카이브 파일을 구성합니다.
 
-## 구성 마법사를 사용하여 아카이브 파일 {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}에 포함된 AEM 양식을 구성합니다
+## 구성 마법사를 사용하여 아카이브 파일의 일부인 AEM 양식을 구성합니다 {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. 관리 콘솔에서 서비스 > 애플리케이션 및 서비스 > 애플리케이션 관리 를 클릭하고 아카이브 탭을 클릭합니다.
 1. 구성할 아카이브 파일 옆에 있는 구성 을 클릭합니다.
 1. 필요한 사항을 변경할 수 있는 [엔드포인트 구성] 페이지가 나타납니다.
 
    * 끝점의 이름을 바꾸거나 설명을 편집하려면 끝점을 클릭합니다.
-   * 작업 관리자 끝점을 추가하려면 작업 관리자 추가를 클릭합니다. 작업 관리자 설정에 대한 자세한 내용은 [작업 관리자 끝점 구성](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)을 참조하십시오.
-   * 감시 폴더 끝점을 추가하려면 감시 폴더 추가를 클릭합니다. 감시 폴더 설정에 대한 자세한 내용은 [감시 폴더 끝점 설정](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)을 참조하십시오.
-   * 전자 메일 끝점을 추가하려면 전자 메일 추가를 클릭합니다. 전자 메일 설정에 대한 자세한 내용은 [전자 메일 끝점 설정](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)을 참조하십시오.
+   * 작업 관리자 끝점을 추가하려면 작업 관리자 추가를 클릭합니다. 작업 관리자 설정에 대한 자세한 내용은 [작업 관리자 끝점 구성](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * 감시 폴더 끝점을 추가하려면 감시 폴더 추가를 클릭합니다. 감시 폴더 설정에 대한 자세한 내용은 [감시 폴더 끝점 설정](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * 전자 메일 끝점을 추가하려면 전자 메일 추가를 클릭합니다. 전자 메일 설정에 대한 자세한 내용은 [전자 메일 끝점 설정](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * EJB 끝점을 추가하려면 EJB 추가를 누르고 종단점에 대한 이름과 설명을 지정합니다.
    * SOAP 끝점을 추가하려면 SOAP 추가 를 클릭하고 엔드포인트에 대한 이름과 설명을 지정합니다.
-   * 원격 끝점을 추가하려면 원격 추가를 클릭합니다. 원격 설정에 대한 자세한 내용은 [원격 끝점 설정](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)을 참조하십시오.
+   * 원격 끝점을 추가하려면 원격 추가를 클릭합니다. 원격 설정에 대한 자세한 내용은 [원격 끝점 설정](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * REST 끝점을 추가하려면 REST 추가 를 클릭하고 끝점에 대한 이름과 설명을 지정합니다. REST 끝점 추가 페이지에 표시되는 REST 호출 URL을 확인합니다.
    * 끝점을 제거하려면 끝점 옆에 있는 확인란을 선택하고 제거를 클릭합니다.
 
@@ -120,45 +120,45 @@ ht-degree: 0%
 1. LCA의 프로세스 또는 서비스에 구성 매개 변수가 있는 경우 서비스 매개 변수를 구성하고 다음을 누르면 [매개 변수 구성] 페이지가 나타납니다.
 1. 보안 프로필 구성 페이지에서 필요한 변경 작업을 수행할 수 있습니다.
 
-   * **호출자가 인증해야 함:**  이 설정은 서비스를 자격 증명으로 호출할 수 있는지 여부를 나타냅니다.
+   * **호출자가 인증해야 함:** 이 설정은 서비스를 자격 증명과 함께 호출할 수 있는지 여부를 나타냅니다.
 
-      현재 *발신자가 인증*&#x200B;이 필요한 경우, 서비스 호출자를 인증하고 해당 호출자의 사용자 주도자가 서비스를 호출할 수 있는 권한이 있어야 합니다.그렇지 않으면 호출 시도가 거부됩니다. 인증해야 하는 필요성을 제거하려면 인증되지 않은 발신자 허용 을 클릭합니다.
+      If *호출자는 현재 인증해야 합니다* 이 표시되면 서비스 호출자를 인증하고 해당 호출자의 사용자 주도자가 서비스를 호출할 수 있는 권한을 부여해야 합니다. 그렇지 않으면 호출 시도가 거부됩니다. 인증해야 하는 필요성을 제거하려면 인증되지 않은 발신자 허용 을 클릭합니다.
 
-      *발신자가 인증하는 데 필요하지 않은 경우, 서비스 호출자가 인증되거나 인증되지 않을 수 있습니다.* 인증 검사가 없으므로 서비스 호출이 항상 성공합니다. 인증을 요청하려면 Require Caller to Authentication을 클릭합니다.
+      If *호출자는 인증할 필요가 없습니다* 가 표시되면 서비스의 호출자가 인증되거나 인증되지 않을 수 있습니다. 인증 검사가 없으므로 서비스 호출이 항상 성공합니다. 인증을 요청하려면 Require Caller to Authentication을 클릭합니다.
 
-   * **실행 기준:** 이 호출된 후 서비스에서 사용하는 런타임 ID를 지정합니다. 이 옵션을 변경하려면 [변경]을 클릭하십시오. 다음 옵션 중에서 선택합니다.
+   * **실행 방법:** 서비스가 호출된 후 서비스에 사용되는 런타임 ID를 지정합니다. 이 옵션을 변경하려면 [변경]을 클릭하십시오. 다음 옵션 중에서 선택합니다.
 
-      **지정되지 않음:**  기본 동작이 사용됩니다.
+      **지정되지 않음:** 기본 동작이 사용됩니다.
 
-      **호출자:**  서비스를 호출한 사용자와 동일한 ID를 사용합니다.
+      **호출자:** 서비스를 호출한 사용자와 동일한 ID를 사용합니다.
 
-      **시스템:** 전체 권한으로 서비스를 실행합니다. 장기 처리 프로세스에 대한 기본 설정입니다.
+      **시스템:** 모든 권한이 있는 서비스를 실행합니다. 장기 처리 프로세스에 대한 기본 설정입니다.
 
-      **명명된 사용자:** 특정 사용자로 서비스를 실행할 수 있도록 해줍니다. 단기 프로세스에 대한 기본 설정입니다. 이 옵션을 선택한 경우 사용자 선택 을 클릭하여 사용자를 검색하고 선택할 수 있는 주도자 선택 페이지를 표시합니다.
+      **명명된 사용자:** 특정 사용자로 서비스를 실행할 수 있습니다. 단기 프로세스에 대한 기본 설정입니다. 이 옵션을 선택한 경우 사용자 선택 을 클릭하여 사용자를 검색하고 선택할 수 있는 주도자 선택 페이지를 표시합니다.
 
    * 보안 프로필에 주도자를 추가하려면 주도자 추가를 클릭하고 주도자로 추가할 사용자 또는 그룹을 선택합니다. 다음 을 클릭하고 이 주도자에게 할당할 권한을 선택합니다.
 
-      **INVOKE_PERM:** 서비스의 모든 작업을 호출합니다
+      **INVOKE_PERM:** 서비스에 대한 모든 작업을 호출하려면
 
-      **MODIFY_CONFIG_PERM:**  서비스의 구성을 수정합니다
+      **MODIFY_CONFIG_PERM:** 서비스 구성을 수정하려면
 
-      **SUPERVISOR_PERM:**  프로세스에서 생성된 서비스에 대한 프로세스 인스턴스 데이터를 보려면
+      **SUPERVISOR_PERM:** 프로세스에서 생성된 서비스에 대한 프로세스 인스턴스 데이터를 보려면
 
-      **START_STOP_PERM:** 서비스를 시작 및 중지하려면 다음을 수행하십시오
+      **START_STOP_PERM:** 서비스를 시작 및 중지하려면
 
-      **ADD_REMOVE_ENDPOINTS_PERM:**  서비스의 끝점을 추가, 제거 및 수정하려면 다음을 수행합니다
+      **ADD_REMOVE_ENDPOINTS_PERM:** 서비스의 끝점을 추가, 제거 및 수정하려면
 
       **CREATE_VERSION_PERM:** 서비스의 새 버전을 만들려면
 
-      **DELETE_VERSION_PERM:**  서비스 버전을 삭제하려면
+      **DELETE_VERSION_PERM:** 서비스 버전을 삭제하려면
 
-      **MODIFY_VERSION_PERM:**  서비스 버전을 수정하려면
+      **MODIFY_VERSION_PERM:** 서비스 버전을 수정하려면
 
       **READ_PERM:** 서비스를 보려면
 
       완료됨 을 클릭하여 보안 프로필에 주도자를 추가합니다.
 
-## 아카이브 {#remove-an-archive} 제거
+## 아카이브 제거 {#remove-an-archive}
 
 >[!NOTE]
 >

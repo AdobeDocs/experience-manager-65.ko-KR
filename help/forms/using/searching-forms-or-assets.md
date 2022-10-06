@@ -1,8 +1,8 @@
 ---
 title: 양식 및 자산 검색
-seo-title: 양식 및 자산 검색
+seo-title: Searching for forms and assets
 description: AEM 검색을 사용하여 AEM 인스턴스에서 양식 및 자산을 검색할 수 있습니다. 기본 및 고급 검색을 통해 자산을 신속하게 찾을 수 있습니다.
-seo-description: AEM 검색을 사용하여 AEM 인스턴스에서 양식 및 자산을 검색할 수 있습니다. 기본 및 고급 검색을 통해 자산을 신속하게 찾을 수 있습니다.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: 0928a453-3dc4-448b-9320-dcbf20606dd9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '692'
 ht-degree: 4%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 4%
 
 하나 이상의 기준을 선택하고 텍스트 문자열도 지정하면 텍스트와 기준의 교차가 검색 결과로 반환됩니다. 검색 결과는 제공된 양식 및 자산 메타데이터와 같습니다.
 
-![aem6forms_search](assets/aem6forms_search.png)를 클릭하여 검색 패널을 표시하거나 숨깁니다.
+클릭 ![aem6forms_search](assets/aem6forms_search.png): 검색 패널을 표시하거나 숨깁니다.
 
 ## 기본 검색 {#basic-search}
 
 기본 검색은 필터를 지정하지 않고 실행되는 기본 검색입니다. 메타데이터 속성에 대한 전체 텍스트 검색은 AEM Forms에서 수행합니다.
 
-기본 검색을 실행하려면 텍스트 필드에 검색 쿼리를 입력하고 Return 키를 누릅니다. 여러 문자와 일치하도록 와일드카드 문자(*)를 입력할 수도 있습니다.
+기본 검색을 실행하려면 텍스트 필드에 검색 쿼리를 입력하고 Return 키를 누릅니다. 와일드카드 문자(&#42;)을 클릭하여 원하는 개수의 문자를 찾습니다.
 
 Adobe Experience Manager은 메타데이터 속성에서 입력한 텍스트를 검색하고 해당 결과를 반환합니다. 두 개 이상의 단어를 입력하면 검색 작업이 검색을 위한 전체 텍스트와 일치합니다.
 
@@ -38,10 +38,10 @@ Adobe Experience Manager은 메타데이터 속성에서 입력한 텍스트를 
 
 * 양식 및 자산 메타데이터 속성을 사용하여 검색이 수행됩니다.
 * 두 개 이상의 단어를 입력하면 검색 작업이 검색을 위한 전체 텍스트와 일치합니다.
-* 검색은 대소문자를 구분하지 않습니다. 예를 들어 `geometrixx` 을 입력하면 제목이 `Geometrixx`, `GEOMETRIXX` 및 `GeoMetRixx`인 자산이 검색 결과에 표시됩니다.
+* 검색은 대소문자를 구분하지 않습니다. 예를 들어 `geometrixx`, 제목과 함께 자산 `Geometrixx`, `GEOMETRIXX`, 및 `GeoMetRixx` 검색 결과에 표시됩니다.
 
-* 단어의 일부 일치 항목은 지원되지 않습니다. 부분 문자열을 사용하여 검색하려면 * 와일드카드를 사용하십시오. 그러나 검색 쿼리가 전체 단어와 일치하는 경우 해당 양식 또는 자산이 표시됩니다.
-* 추가 공백은 검색되는 동안 트림되지 않고 그대로 유지됩니다. 예를 들어 `My form`은 `My form`과 동일한 검색 쿼리가 아닙니다.
+* 단어의 일부 일치 항목은 지원되지 않습니다. 부분 문자열을 사용하여 검색하려면 &#42; 와일드카드. 그러나 검색 쿼리가 전체 단어와 일치하는 경우 해당 양식 또는 자산이 표시됩니다.
+* 추가 공백은 검색되는 동안 트림되지 않고 그대로 유지됩니다. 예, `My form` 과 동일한 검색 쿼리가 아닙니다. `My form`.
 
 * 메타데이터 속성에 있는 필드의 데이터와 표시 값이 다르면 표시 값을 검색 매개 변수로 사용할 수 없습니다. 예를 들어, 이러한 속성은 다른 형식으로 저장되므로 수정됨 또는 게시됨 등의 상태를 기준으로 검색할 수 없습니다.
 
@@ -68,7 +68,7 @@ AEM 양식 및 자산 검색에 대한 검색 필드 및 매개 변수 또는 �
 | 한 달 전 | 지난 1개월 내에 수정된 모든 자산을 검색합니다. |
 | 1년 전 | 지난 1년 내에 수정된 모든 자산을 검색합니다. |
 
-### 자산 상태 {#asset-status}
+### 에셋 상태 {#asset-status}
 
 다음 상태 중 하나를 사용하여 자산을 검색할 수 있습니다.
 
@@ -89,8 +89,8 @@ AEM 양식 및 자산 검색에 대한 검색 필드 및 매개 변수 또는 �
    <th>설명</th> 
   </tr>
   <tr>
-   <td>양식 서식 파일<br /> </td> 
-   <td>모든 양식 서식 파일에서 검색합니다.<br /> </td> 
+   <td>양식 템플릿<br /> </td> 
+   <td>모든 양식 템플릿에서 검색합니다.<br /> </td> 
   </tr>
   <tr>
    <td>PDF 양식</td> 
@@ -106,7 +106,7 @@ AEM 양식 및 자산 검색에 대한 검색 필드 및 매개 변수 또는 �
   </tr>
   <tr>
    <td>리소스</td> 
-   <td>모든 리소스에서 검색합니다.<br /> </td> 
+   <td>모든 리소스를 검색합니다.<br /> </td> 
   </tr>
  </tbody>
 </table>

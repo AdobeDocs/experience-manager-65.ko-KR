@@ -1,8 +1,8 @@
 ---
 title: 디자인 모드에서 구성 요소 구성
-seo-title: 디자인 모드에서 구성 요소 구성
+seo-title: Configuring Components in Design Mode
 description: AEM 인스턴스가 바로 설치되면 사이드 킥에서 즉시 구성 요소를 선택할 수 있습니다. 이러한 구성 요소 외에 다양한 다른 구성 요소도 사용할 수 있습니다. 디자인 모드를 사용하여 이러한 구성 요소를 활성화/비활성화할 수 있습니다.
-seo-description: AEM 인스턴스가 바로 설치되면 사이드 킥에서 즉시 구성 요소를 선택할 수 있습니다. 이러한 구성 요소 외에 다양한 다른 구성 요소도 사용할 수 있습니다. 디자인 모드를 사용하여 이러한 구성 요소를 활성화/비활성화할 수 있습니다.
+seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
 uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 93%
+source-wordcount: '500'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ AEM 인스턴스가 바로 설치되면 사이드 킥에서 즉시 구성 요소
 
    ![](do-not-localize/chlimage_1.png)
 
-1. 단락 시스템(**단락 디자인**)에서 **편집**&#x200B;을 클릭합니다.
+1. 클릭 **편집** 단락 시스템(**단락 디자인**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -73,7 +73,7 @@ AEM 인스턴스가 바로 설치되면 사이드 킥에서 즉시 구성 요소
 
 1. 구성 요소의 디자인을 구성할 수 있습니다.
 
-   예를 들어 이미지 구성 요소(**이미지 디자인**)에서 **편집**&#x200B;을 클릭하면 구성 요소별 매개 변수를 구성할 수 있습니다.
+   예를 들어 **편집** 이미지 구성 요소(**이미지 디자인**) 구성 요소별 매개 변수를 구성할 수 있습니다.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 

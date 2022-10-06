@@ -1,6 +1,6 @@
 ---
 title: API를 사용하여 AEM Forms 호출
-seo-title: API를 사용하여 AEM Forms 호출
+seo-title: Invoking AEM Forms using APIs
 description: API를 사용하여 AEM Forms 호출
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
@@ -12,12 +12,12 @@ role: Developer
 exl-id: 0e92d1ad-12bd-4bfd-81cc-9be8e376c5ca
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
 
-# API {#invoking-aem-forms-using-apis}를 사용하여 AEM Forms 호출
+# API를 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-apis}
 
 **이 문서의 샘플 및 예제는 JEE 환경의 AEM Forms용입니다.**
 

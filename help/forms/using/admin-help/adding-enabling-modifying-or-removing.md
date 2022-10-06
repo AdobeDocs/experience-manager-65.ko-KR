@@ -1,8 +1,8 @@
 ---
 title: 끝점 추가, 활성화, 수정 또는 제거
-seo-title: 끝점 추가, 활성화, 수정 또는 제거
+seo-title: Adding, enabling, modifying, or removing endpoints
 description: 끝점을 추가, 활성화, 수정 및 제거하는 방법을 알아봅니다.
-seo-description: 끝점을 추가, 활성화, 수정 및 제거하는 방법을 알아봅니다.
+seo-description: Learn how to add, enable, modify and remove endpoints.
 uuid: c53f225b-3d55-42f6-8982-0cd7dde0c4f5
 contentOwner: admin
 content-type: reference
@@ -12,16 +12,16 @@ discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
-# 끝점 {#adding-enabling-modifying-or-removing-endpoints} 추가, 활성화, 수정 또는 제거
+# 끝점 추가, 활성화, 수정 또는 제거 {#adding-enabling-modifying-or-removing-endpoints}
 
-## 서비스 {#add-an-endpoint-to-a-service}에 끝점 추가
+## 서비스에 끝점 추가 {#add-an-endpoint-to-a-service}
 
-끝점은 서비스에만 추가할 수 있습니다. 끝점은 단독으로 존재할 수 없습니다.서비스와 연결되어 있어야 합니다.
+끝점은 서비스에만 추가할 수 있습니다. 끝점은 단독으로 존재할 수 없습니다. 서비스와 연결되어 있어야 합니다.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 1. 추가를 클릭합니다.
 
-## 끝점 {#enable-or-disable-an-endpoint} 활성화 또는 비활성화
+## 엔드포인트 활성화 또는 비활성화 {#enable-or-disable-an-endpoint}
 
 기본적으로 새 엔드포인트는 자동으로 활성화됩니다. 그러나 종단점을 비활성화한 경우 종단점이 작동하도록 설정해야 합니다.
 

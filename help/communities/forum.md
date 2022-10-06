@@ -1,8 +1,8 @@
 ---
 title: 포럼 기능
-seo-title: 포럼 기능
+seo-title: Forum Feature
 description: 포럼 기능을 추가하고 구성하는 방법
-seo-description: 포럼 기능을 추가하고 구성하는 방법
+seo-description: How to add and configure the forum feature
 uuid: e69be4e1-c9d5-4d51-8e7e-609e5460e378
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1216'
 ht-degree: 9%
 
 ---
@@ -34,25 +34,25 @@ ht-degree: 9%
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
 * AEM 사이트에 포럼 기능 추가.
-* `Forum` 구성 요소에 대한 구성 설정입니다.
+* 에 대한 구성 설정 `Forum` 구성 요소.
 
 ### 페이지에 포럼 추가 {#adding-a-forum-to-a-page}
 
-작성자 모드의 페이지에 `Forum` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 을 찾습니다
+을(를) 추가하려면 `Forum` 구성 요소를 페이지에 작성자 모드에서 사용하려면 구성 요소 브라우저를 사용하여 를 찾습니다
 
 * `Communities / Forum`
 
 포럼이 나타날 페이지로 끌어서 놓습니다.
 
-필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 방문하십시오.
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md).
 
-필요한 [클라이언트 측 라이브러리](/help/communities/essentials-forum.md#essentials-for-client-side)가 포함된 경우 이 방법으로 `Forum` 구성 요소가 표시됩니다.
+이 [필수 클라이언트 측 라이브러리](/help/communities/essentials-forum.md#essentials-for-client-side) 포함된 경우, 다음과 같이 하십시오 `Forum` 구성 요소가 표시됩니다.
 
 ![forum-component](assets/forum-component.png)
 
 ### 포럼 구성 {#configuring-a-forum}
 
-액세스할 배치된 `Forum` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
+배치된 항목을 선택합니다 `Forum` 액세스하여 선택할 구성 요소 `Configure` 아이콘 편집 대화 상자를 엽니다.
 
 ![configure-new](assets/configure-new.png)
 
@@ -60,7 +60,7 @@ ht-degree: 9%
 
 #### 설정 탭 {#settings-tab}
 
-**설정** 탭에서 주제 및 답글에 대한 설정을 지정합니다.
+아래에 **설정** 탭에서 주제 및 답글에 대한 설정을 지정합니다.
 
 * **첨부 파일 썸네일 허용**
 
@@ -93,7 +93,7 @@ ht-degree: 9%
 
 * **태깅 허용**
 
-   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다( **태그 필드** 탭 참조). 기본값은 선택 취소되어 있습니다.
+   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다( **태그 필드** 탭). 기본값은 선택 취소되어 있습니다.
 
 * **파일 업로드 허용**
 
@@ -101,7 +101,7 @@ ht-degree: 9%
 
 * **다음 허용**
 
-   이 확인란을 선택하면 구성원이 새 게시물의 [notified](/help/communities/notifications.md)가 될 수 있는 포럼 게시물에 대해 다음 기능을 포함하십시오. 기본값은 선택 취소되어 있습니다.
+   이 확인란을 선택하면 포럼 게시물에 다음과 같은 기능을 포함시켜 구성원에게 다음을 제공할 수 있습니다 [알림](/help/communities/notifications.md) 새 게시물입니다. 기본값은 선택 취소되어 있습니다.
 
 * **고정 허용**
 
@@ -109,22 +109,22 @@ ht-degree: 9%
 
 * **특별 포함된 컨텐츠 허용**
 
-   이 확인란을 선택하면 아이디어를 [중요 콘텐츠](/help/communities/featured.md)로 식별할 수 있습니다. 기본값은 선택 취소되어 있습니다.
+   이 옵션을 선택하면 [주요 콘텐츠](/help/communities/featured.md). 기본값은 선택 취소되어 있습니다.
 
 * **이메일 구독 허용**
 
-   이 확인란을 선택하면 구성원이 이메일로 새 게시물에 대한 알림을 받을 수 있습니다([subscription](/help/communities/subscriptions.md)). `Allow Following`을(를) 선택해야 하고 [구성된 ](/help/communities/email.md)로 이메일을 보내야 합니다. 기본값은 선택 취소되어 있습니다.
+   이 확인란을 선택하면 구성원이 이메일로 새 게시물에 대한 알림을 받을 수 있습니다([구독](/help/communities/subscriptions.md)). 필요한 경우 `Allow Following` 확인 후 [전자 메일 구성](/help/communities/email.md). 기본값은 선택 취소되어 있습니다.
 
 * **최대 파일 크기**
 
-   `Allow File Uploads`이(가) 선택된 경우에만 관련됩니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
+   관련성이 있는 경우에만 `Allow File Uploads` 이(가) 선택되어 있습니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
 
 * **허용되는 파일 유형**
 
-   `Allow File Uploads`이(가) 선택된 경우에만 관련됩니다. 점이 구분되어 있는 쉼표로 구분된 파일 확장자 목록입니다. 예 :.jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정하면, 지정되지 않은 파일 유형은 업로드할 수 없습니다. 기본값은 지정되지 않아서 모든 파일 유형이 허용됩니다.
+   관련성이 있는 경우에만 `Allow File Uploads` 이(가) 선택되어 있습니다. 점이 구분되어 있는 쉼표로 구분된 파일 확장자 목록입니다. 예 : .jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정하면, 지정되지 않은 파일 유형은 업로드할 수 없습니다. 기본값은 지정되지 않아서 모든 파일 유형이 허용됩니다.
 
-* **최대 첨부 이미지 파일**
-크기파일 업로드 허용(Allow File Upload)이 선택된 경우에만 관련됩니다. 업로드된 이미지 파일의 최대 바이트 수입니다. 기본값은 2097152(2Mb)입니다.
+* **최대 첨부 이미지 파일 크기**
+파일 업로드 허용 이 선택된 경우에만 관련됩니다. 업로드된 이미지 파일의 최대 바이트 수입니다. 기본값은 2097152(2Mb)입니다.
 
 * **스레드된 회신 허용**
 
@@ -144,7 +144,7 @@ ht-degree: 9%
 
 * **배지 표시**
 
-   이 옵션을 선택하면 획득된 ID 및 할당된 [배지](/help/communities/implementing-scoring.md)를 구성원의 블로그 항목에 표시합니다. 기본값은 선택 취소되어 있습니다.
+   선택한 경우, 기한 및 지정된 항목을 표시합니다 [배지](/help/communities/implementing-scoring.md) 구성원의 블로그 항목 사용. 기본값은 선택 취소되어 있습니다.
 
 * **권한이 있는 구성원 허용**
 
@@ -172,11 +172,11 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->주제에 대한 설명을 활성화하려면 `AllowThreaded Replies` 및 `Allow users to Delete Comments and Topics` 모두 확인해야 할 수 있습니다.
+>두 가지를 모두 확인해야 할 것 같습니다 `AllowThreaded Replies` 및 `Allow users to Delete Comments and Topics` 을 눌러 주제에 대한 설명을 활성화합니다.
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
-**사용자 중재** 탭에서 게시된 항목 및 답글(사용자가 생성한 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
+아래에 **사용자 중재** 탭에서 게시된 항목 및 답글(사용자가 생성한 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 [사용자가 생성한 컨텐츠 중재](/help/communities/moderate-ugc.md).
 
 * **게시물 거부**
 
@@ -212,11 +212,11 @@ ht-degree: 9%
 
 #### 태그 필드 탭 {#tag-field-tab}
 
-**태그 필드** 탭 아래에서 **설정** 탭에서 허용되는 경우 적용할 수 있는 태그는 선택한 네임스페이스에 따라 제한됩니다.
+아래에 **태그 필드** 탭, **설정** 탭은 선택한 네임스페이스에 따라 제한됩니다.
 
 * **허용되는 네임스페이스**
 
-   **설정** 탭 아래에서 `Allow Tagging`이(가) 선택된 경우에 관련됩니다. 적용할 수 있는 태그는 선택한 네임스페이스 카테고리 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값이 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
+   관련 있는 경우 `Allow Tagging` 이(가) **설정** 탭. 적용할 수 있는 태그는 선택한 네임스페이스 카테고리 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값이 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
 
 * **제안 한도**
 
@@ -224,7 +224,7 @@ ht-degree: 9%
 
 #### 번역 탭 {#translation-tab}
 
-**번역** 탭 아래에서 커뮤니티 사이트에 대해 번역이 활성화되면 전체 토픽 또는 선택한 게시물을 번역하도록 번역을 설정할 수 있습니다.
+아래에 **번역** 탭에서는 커뮤니티 사이트에 대해 번역이 활성화되면 전체 토픽 또는 선택한 게시물을 번역하도록 번역을 설정할 수 있습니다.
 
 * **모두 번역**
 
@@ -232,28 +232,28 @@ ht-degree: 9%
 
 #### 정렬 설정 탭 {#sort-settings-tab}
 
-**정렬 설정** 탭에서 게시된 주석이 표시될 때 정렬되는 방법을 지정합니다.
+아래에 **정렬 설정** 탭에서 표시되는 경우 게시된 주석이 정렬되는 방법을 지정합니다.
 
 * **정렬 기준**
 
-   허용되는 모든 정렬 선택 사항을 확인합니다.`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked` 기본값은 `Newest, Oldest, Last Updated`입니다.
+   허용되는 모든 정렬 선택 사항을 확인합니다. `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 기본값은 입니다. `Newest, Oldest, Last Updated`.
 
 * **기본값으로 설정**
 
-   기본값으로 표시할 선택된 정렬 옵션 중 하나를 선택하려면 풀다운을 클릭합니다. 기본값은 `Newest`입니다.
+   기본값으로 표시할 선택된 정렬 옵션 중 하나를 선택하려면 풀다운을 클릭합니다. 기본값은 입니다. `Newest`.
 
 * **분석 정렬에 대한 시간 옵션 선택**
 
-   풀다운하여 다음 옵션 중 하나를 선택합니다.`All, Last 24 Hours, Last 7 Days, Last 30 Days`
+   풀다운하여 다음 옵션 중 하나를 선택합니다. `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
 
-   기본값은 `All`입니다.
+   기본값은 입니다. `All`.
 
 ### 추가 정보 {#additional-information}
 
-개발자를 위한 [포럼 필수 요소인](/help/communities/essentials-forum.md) 페이지에서 자세한 내용을 확인할 수 있습니다.
+자세한 내용은 [포럼 핵심 사항](/help/communities/essentials-forum.md) 개발자를 위한 페이지입니다.
 
-게시된 항목 및 댓글에 대한 중복을 보려면 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
+게시된 항목 및 댓글에 대한 중량은 [사용자가 생성한 컨텐츠 중재](/help/communities/moderate-ugc.md).
 
-게시된 항목 및 댓글에 태깅하려면 [사용자 생성 컨텐츠 태깅](/help/communities/tag-ugc.md)을 참조하십시오.
+게시된 항목 및 댓글에 태깅하려면 다음을 참조하십시오 [사용자 생성 컨텐츠에 태깅](/help/communities/tag-ugc.md).
 
-게시된 항목 및 댓글에 대한 번역은 [사용자 생성 컨텐츠 번역](/help/communities/translate-ugc.md)을 참조하십시오.
+게시된 항목 및 댓글에 대한 번역은 [사용자가 생성한 컨텐츠 번역](/help/communities/translate-ugc.md).

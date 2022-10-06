@@ -10,7 +10,7 @@ ht-degree: 2%
 
 ---
 
-# AEM Assets HTTP API의 컨텐츠 조각 지원 {#content-fragments-support-in-aem-assets-http-api}
+# AEM Assets HTTP API의 콘텐츠 조각 지원 {#content-fragments-support-in-aem-assets-http-api}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
@@ -37,7 +37,7 @@ API를 사용하면 JavaScript 프런트 엔드 애플리케이션에 컨텐츠 
 
 예를 들어, 단일 페이지 애플리케이션(SPA), 프레임워크 기반 또는 사용자 지정 환경에서는 HTTP API를 통해 제공되는 컨텐츠(일반적으로 JSON 형식)가 필요합니다.
 
-While [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 는 이 용도로 필요한 읽기 작업을 제공할 수 있고 사용자 지정할 수 있는 매우 포괄적이고 유연한 API를 제공하며, JSON 출력을 사용자 지정할 수 있습니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현을 위한 AEM WCM(Web Content Management) 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
+While [AEM 코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 는 이 용도로 필요한 읽기 작업을 제공할 수 있고 사용자 지정할 수 있는 매우 포괄적이고 유연한 API를 제공하며, JSON 출력을 사용자 지정할 수 있습니다. 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현을 위한 AEM WCM(Web Content Management) 노하우가 필요합니다. 모든 SPA 개발 조직이 이러한 지식을 직접 액세스하는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 먼저 포함할 필요 없이 자산(예: 이미지 및 컨텐츠 조각)에 직접 액세스하여 직렬화된 JSON 형식으로 콘텐츠를 제공할 수 있습니다.
 
@@ -53,7 +53,7 @@ Assets REST API를 사용하면 기존 자산, 컨텐츠 조각 및 폴더를 �
 
 * 구현 [사이렌 형식](https://github.com/kevinswiber/siren)
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 Assets REST API는 최신 AEM 버전을 바로 설치할 때마다 사용할 수 있습니다.
 
@@ -239,7 +239,7 @@ A [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) 는 �
 
 새 컨텐츠 조각을 생성하려면 모델의 (내부 저장소) 경로를 제공해야 합니다.
 
-#### 관련 컨텐츠 {#associated-content}
+#### 관련 콘텐츠 {#associated-content}
 
 연관된 컨텐츠는 현재 노출되지 않습니다.
 

@@ -1,19 +1,19 @@
 ---
 title: 사용자 지정 포털과 서신 만들기 UI 통합
-seo-title: 사용자 지정 포털과 서신 만들기 UI 통합
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: 사용자 지정 포털과 서신 UI 만들기를 통합하는 방법을 알아봅니다
-seo-description: 사용자 지정 포털과 서신 UI 만들기를 통합하는 방법을 알아봅니다
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 68ef5bf2-b271-4c44-8840-6c495069164d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
-feature: 서신 관리
+feature: Correspondence Management
 exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '413'
 ht-degree: 4%
 
 ---
@@ -45,9 +45,9 @@ ht-degree: 4%
 
 ## 인라인 데이터 기반 호출 {#inline-data-based-invocation}
 
-또한 보다 안전한 서신 만들기 응용 프로그램을 호출하는 또 다른 방법은 https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html에서 매개 변수와 데이터를 단순히 URL을 히트하고, 매개 변수와 데이터를 전송하여 Create Correspondence 응용 프로그램을 POST 요청으로 호출하는 것일 수 있습니다(최종 사용자로부터 숨기기도). 즉, 이제 이전 방법에서는 불가능하거나 이상적인 cmData 매개 변수를 사용하여 동일한 요청의 일부로 서신 만들기 응용 프로그램 인라인에 대한 XML 데이터를 전달할 수 있습니다.
+서신 만들기 애플리케이션을 호출하는 또 다른 (및 더 안전한) 방법은 https://&#39;에서 URL을 단순히 히트하는 것입니다[server]:[포트]&#39;/[contextPath]/aem/forms/createcorrespondence.html 과 같은 형식으로 매개 변수와 데이터를 보내 POST 요청으로 편지 만들기 애플리케이션을 호출합니다(최종 사용자로부터 숨기기). 즉, 이제 이전 방법에서는 불가능하거나 이상적인 cmData 매개 변수를 사용하여 동일한 요청의 일부로 서신 만들기 응용 프로그램 인라인에 대한 XML 데이터를 전달할 수 있습니다.
 
-### 문자 {#parameters-for-specifying-letter} 지정에 대한 매개 변수
+### 문자 지정에 대한 매개 변수 {#parameters-for-specifying-letter}
 
 | **이름** | **유형** | **설명** |
 |---|---|---|
@@ -56,7 +56,7 @@ ht-degree: 4%
 
 테이블의 매개변수 순서는 편지 로딩에 사용되는 매개변수의 기본 설정을 지정합니다.
 
-### XML 데이터 소스 {#parameters-for-specifying-the-xml-data-source} 지정에 대한 매개 변수
+### XML 데이터 소스를 지정하기 위한 매개 변수 {#parameters-for-specifying-the-xml-data-source}
 
 <table>
  <tbody>
@@ -68,7 +68,7 @@ ht-degree: 4%
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>cq, ftp, http 또는 file과 같은 기본 프로토콜을 사용하여 소스 파일의 XML 데이터입니다.<br /> </td> 
+   <td>cq, ftp, http 또는 파일과 같은 기본 프로토콜을 사용하여 소스 파일의 XML 데이터를 가져옵니다.<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
@@ -97,7 +97,7 @@ ht-degree: 4%
   <tr>
    <td>cmPreview<br /> </td> 
    <td>부울</td> 
-   <td>미리 보기 모드에서 문자를 열려면 True입니다.<br /> </td> 
+   <td>미리 보기 모드에서 문자를 열려면 True입니다<br /> </td> 
   </tr>
   <tr>
    <td>임의</td> 

@@ -1,8 +1,8 @@
 ---
 title: AEM에서 SPA 시작하기 - React
-seo-title: AEM에서 SPA 시작하기 - React
+seo-title: Getting Started with SPAs in AEM - React
 description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하며 이 응용 프로그램을 구성하는 방법을 설명하고 React 프레임워크를 사용하여 신속하게 자체 SPA을 사용하여 실행 및 실행할 수 있도록 해줍니다.
-seo-description: 이 문서에서는 샘플 SPA 애플리케이션을 제공하며 이 응용 프로그램을 구성하는 방법을 설명하고 React 프레임워크를 사용하여 신속하게 자체 SPA을 사용하여 실행 및 실행할 수 있도록 해줍니다.
+seo-description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
 uuid: 2beca277-a381-4482-99f6-85005d826d06
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 4%
+source-wordcount: '1168'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을
 
 >[!NOTE]
 >
->이 문서는 React 프레임워크를 기반으로 합니다. angular 프레임워크에 대한 해당 문서는 [AEM에서 SPA 시작하기 - Angular](/help/sites-developing/spa-getting-started-angular.md)를 참조하십시오.
+>이 문서는 React 프레임워크를 기반으로 합니다. angular 프레임워크에 대한 해당 문서는 [AEM에서 SPA 시작하기 - Angular](/help/sites-developing/spa-getting-started-angular.md).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ SPA 작성 기능은 AEM 내에서 SPA을 지원하는 포괄적인 솔루션을
 
 AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
-* [SPA 소개 및 연습](/help/sites-developing/spa-walkthrough.md)
+* [SPA 소개 및 워크스루](/help/sites-developing/spa-walkthrough.md)
 * [SPA Authoring 소개](/help/sites-developing/spa-overview.md)
 * [SPA 블루프린트](/help/sites-developing/spa-blueprint.md)
 
@@ -50,13 +50,13 @@ AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서
 
 이 문서는 React 프레임워크를 사용하여 만든 간소화된 SPA의 구조를 살펴보고 이 이해를 SPA에 적용할 수 있도록 작동 방식을 설명합니다.
 
-## 종속성, 구성 및 빌드 {#dependencies-configuration-and-building}
+## 종속성, 구성 및 작성 {#dependencies-configuration-and-building}
 
 예상되는 React 종속성 외에도, 샘플 SPA은 추가 라이브러리를 활용하여 SPA을 보다 효율적으로 만들 수 있습니다.
 
 ### 종속성 {#dependencies}
 
-`package.json` 파일은 전체 SPA 패키지의 요구 사항을 정의합니다. 작업 SPA에 대한 최소 AEM 종속성은 여기에 나열됩니다.
+다음 `package.json` 파일은 전체 SPA 패키지의 요구 사항을 정의합니다. 작업 SPA에 대한 최소 AEM 종속성은 여기에 나열됩니다.
 
 ```
   "dependencies": {
@@ -66,24 +66,24 @@ AEM에서 SPA이 작동하는 방법에 대한 자세한 내용은 다음 문서
   }
 ```
 
-이 예는 React 프레임워크를 기반으로 하므로 `package.json` 파일에 의무적인 두 개의 React-특정 종속성이 있습니다.
+이 예는 React 프레임워크를 기반으로 하므로, 에는 두 개의 React-specific 종속성이 있으며, 이 종속성은 `package.json` 파일:
 
 ```
 react
  react-dom
 ```
 
-`aem-clientlib-generator`은 빌드 프로세스의 일부로 클라이언트 라이브러리를 자동으로 만드는 데 사용됩니다.
+다음 `aem-clientlib-generator` 는 빌드 프로세스의 일부로 클라이언트 라이브러리를 자동으로 만드는 데 사용됩니다.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-이에 대한 자세한 내용은 여기](https://github.com/wcm-io-frontend/aem-clientlib-generator)GitHub에서 [을 참조하십시오.
+자세한 내용은 [설정](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 >[!CAUTION]
 >
->필요한 `aem-clientlib-generator`의 최소 버전은 1.4.1입니다.
+>의 최소 버전 `aem-clientlib-generator` 필수 항목은 1.4.1입니다.
 
-`aem-clientlib-generator`은 `clientlib.config.js` 파일에 다음과 같이 구성됩니다.
+다음 `aem-clientlib-generator` 는 `clientlib.config.js` 다음과 같이 파일을 지정합니다.
 
 ```
 module.exports = {
@@ -114,15 +114,15 @@ module.exports = {
 
 ### 빌딩 {#building}
 
-실제로 앱을 빌드하면 자동 클라이언트 라이브러리 생성을 위한 aem-clientlib-generator 외에 전달을 위해 [Webpack](https://webpack.js.org/)이 활용됩니다. 따라서 build 명령은 다음과 같습니다.
+실제로 앱을 빌드하면 활용됩니다 [웹 팩](https://webpack.js.org/) 자동 클라이언트 라이브러리 생성을 위한 aem-clientlib-generator 외에 전달을 위한 것입니다. 따라서 build 명령은 다음과 같습니다.
 
 `"build": "webpack && clientlib --verbose"`
 
 완료되면 패키지를 AEM 인스턴스에 업로드할 수 있습니다.
 
-### AEM 프로젝트 전형 {#aem-project-archetype}
+### AEM Project Archetype {#aem-project-archetype}
 
-모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용하는 [AEM Project Archetype](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html)을 활용해야 합니다.
+모든 AEM 프로젝트는 [AEM 프로젝트 원형](https://docs.adobe.com/content/help/ko-KR/experience-manager-core-components/using/developing/archetype/overview.html): React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK를 활용합니다.
 
 ## 응용 프로그램 구조 {#application-structure}
 
@@ -134,7 +134,7 @@ module.exports = {
 
 ### index.js {#index-js}
 
-SPA의 시작 지점은 중요한 컨텐츠에 초점을 맞추기 위해 여기에 표시된 `index.js` 파일입니다.
+SPA의 진입점은 물론 `index.js` 여기에 표시된 파일은 중요한 컨텐츠에 집중할 수 있도록 간소화되었습니다.
 
 ```
 import ReactDOM from 'react-dom';
@@ -151,7 +151,7 @@ ReactDOM.render(
 });
 ```
 
-`index.js`의 주요 함수는 `ReactDOM.render` 함수를 활용하여 DOM에서 애플리케이션을 삽입할 위치를 결정하는 것입니다.
+의 기본 함수 `index.js` 그것은 `ReactDOM.render` DOM에서 애플리케이션을 삽입할 위치를 결정하는 함수입니다.
 
 이 예제 앱에서는 고유하지 않고 이 함수의 표준 사용 방법입니다.
 
@@ -161,7 +161,7 @@ ReactDOM.render(
 
 ### App.js {#app-js}
 
-앱을 렌더링하여 `index.js`은(는) `App.js`을 호출합니다. cm.eversttech.net은 중요한 컨텐츠에 초점을 맞추기 위해 여기에 간소화된 버전으로 표시됩니다.
+앱을 렌더링하여, `index.js` 호출 `App.js`- 중요한 컨텐츠에 집중할 수 있도록 간소화된 버전으로 여기에 표시됩니다.
 
 ```
 import {Page, withModel } from '@adobe/aem-react-editable-components';
@@ -179,7 +179,7 @@ export default withModel(App);
 
 ### Page.js {#page-js}
 
-페이지를 렌더링하여 `App.js`은(는) 여기에 나열된 `Page.js`을(를) 간소화된 버전으로 호출합니다.
+페이지를 렌더링하여, `App.js` 호출 `Page.js` 여기에 간소화된 버전으로 나열됩니다.
 
 ```
 import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
@@ -193,13 +193,13 @@ class AppPage extends Page {
 MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppPage));
 ```
 
-이 예제에서 `AppPage` 클래스는 `Page`을 확장합니다. 그러면 사용할 수 있는 내부 컨텐츠 메서드가 포함됩니다.
+이 예에서 `AppPage` 클래스 확장 `Page`에는 사용할 수 있는 내부 컨텐츠 메서드가 포함되어 있습니다.
 
-`Page` 은 페이지 모델의 JSON 표현을 수집하고 컨텐츠를 처리하여 페이지의 각 요소를 래핑/장식합니다. `Page`에 대한 자세한 내용은 [SPA Blueprint](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501) 문서에서 확인할 수 있습니다.
+다음 `Page` 페이지 모델의 JSON 표현을 설정하고 컨텐츠를 처리하여 페이지의 각 요소를 래핑/장식합니다. 에 대한 자세한 내용 `Page` 문서에서 찾을 수 있습니다. [SPA 블루프린트](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501).
 
 ### Image.js {#image-js}
 
-페이지를 렌더링하면 여기에 표시된 대로 `Image.js` 등의 구성 요소를 렌더링할 수 있습니다.
+페이지가 렌더링되면 다음과 같은 구성 요소가 제공됩니다. `Image.js` 여기에 표시된 대로 렌더링할 수 있습니다.
 
 ```
 import React, {Component} from 'react';
@@ -226,11 +226,11 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-AEM에서 SPA의 핵심 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하고 컨텐츠가 수정될 때(또는 그 반대로) 구성 요소를 업데이트하는 것입니다. 이 통신 모델에 대한 요약은 [SPA 편집기 개요](/help/sites-developing/spa-overview.md) 문서를 참조하십시오.
+AEM에서 SPA의 핵심 개념은 SPA 구성 요소를 AEM 구성 요소에 매핑하고 컨텐츠가 수정될 때(또는 그 반대로) 구성 요소를 업데이트하는 것입니다. 문서를 참조하십시오 [SPA 편집기 개요](/help/sites-developing/spa-overview.md) 이 통신 모델의 요약입니다.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
-`MapTo` 메서드는 SPA 구성 요소를 AEM 구성 요소에 매핑합니다. 단일 문자열 또는 문자열 배열을 사용할 수 있습니다.
+다음 `MapTo` 메서드는 SPA 구성 요소를 AEM 구성 요소에 매핑합니다. 단일 문자열 또는 문자열 배열을 사용할 수 있습니다.
 
 `ImageEditConfig` 는 편집기에서 자리 표시자를 생성하는 데 필요한 메타데이터를 제공하여 구성 요소의 작성 기능을 활성화하는 데 기여하는 구성 개체입니다
 
@@ -240,7 +240,7 @@ AEM에서 SPA의 핵심 개념은 SPA 구성 요소를 AEM 구성 요소에 매�
 
 모델에서 나오는 데이터는 구성 요소의 속성으로 동적으로 전달됩니다.
 
-## 편집 가능한 컨텐츠 {#exporting-editable-content} 내보내기
+## 편집 가능한 컨텐츠 내보내기 {#exporting-editable-content}
 
 구성 요소를 내보내고 편집 가능하게 유지할 수 있습니다.
 
@@ -259,15 +259,15 @@ class PageClass extends Component {...};
 export default MapTo('my-react-app/react/components/structure/page')(PageClass, EditConfig);
 ```
 
-`MapTo` 함수는 `Component` 를 반환합니다. 이 결과는 작성을 활성화하는 클래스 이름과 특성을 사용하여 제공된 `PageClass`를 확장하는 작성 결과입니다. 이 구성 요소는 나중에 애플리케이션 마크업에서 인스턴스화하도록 내보낼 수 있습니다.
+다음 `MapTo` 함수 반환 `Component` 상기 제공된 상기 조성물을 확장하는 조성물의 결과인 `PageClass` 작성할 클래스 이름과 속성을 사용합니다. 이 구성 요소는 나중에 애플리케이션 마크업에서 인스턴스화하도록 내보낼 수 있습니다.
 
-`MapTo` 또는 `withModel` 함수를 사용하여 내보낼 때 `Page` 구성 요소는 최신 버전의 페이지 모델에 대한 표준 구성 요소 또는 해당 페이지 모델의 정확한 위치에 액세스할 수 있는 `ModelProvider` 구성 요소로 래핑됩니다.
+를 사용하여 내보낼 때 `MapTo` 또는 `withModel` 함수, `Page` 구성 요소, 로 래핑됨 `ModelProvider` 구성 요소로서 최신 버전의 페이지 모델 또는 해당 페이지 모델의 정확한 위치에 대한 표준 구성 요소에 액세스할 수 있습니다.
 
-자세한 내용은 [SPA 블루프린트 문서](/help/sites-developing/spa-blueprint.md#main-pars-header-329251743)를 참조하십시오.
+자세한 내용은 [SPA 블루프린트 문서](/help/sites-developing/spa-blueprint.md#main-pars-header-329251743).
 
 >[!NOTE]
 >
->기본적으로 `withModel` 함수를 사용할 때 구성 요소의 전체 모델을 받습니다.
+>기본적으로 를 사용할 때 구성 요소의 전체 모델을 받습니다 `withModel` 함수 위에 있어야 합니다.
 
 ## SPA 구성 요소 간 정보 공유 {#sharing-information-between-spa-components}
 
@@ -279,10 +279,10 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 ## 다음 단계 {#next-steps}
 
-자신만의 SPA을 만드는 단계별 안내서는 [AEM SPA Editor 시작하기 - WKND 이벤트 자습서](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)를 참조하십시오.
+고유한 SPA 만들기를 위한 단계별 안내서는 를 참조하십시오. [AEM SPA 편집기 시작하기 - WKND 이벤트 자습서](https://helpx.adobe.com/kr/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
-SPA for AEM을 개발하도록 조직화하는 방법에 대한 자세한 내용은 [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) 문서를 참조하십시오.
+SPA for AEM을 개발하도록 자신을 구성하는 방법에 대한 자세한 내용은 문서를 참조하십시오 [SPA for AEM 개발](/help/sites-developing/spa-architecture.md).
 
-동적 모델과 AEM에서 구성 요소 간 매핑 및 SPA 내에서 작동하는 방법에 대한 자세한 내용은 [동적 모델과 SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)의 구성 요소 간 매핑 문서를 참조하십시오.
+동적 모델과 구성 요소 간 매핑 및 AEM에서 이 모델이 작동하는 방법에 대한 자세한 내용은 문서를 참조하십시오 [SPA용 동적 모델과 구성 요소 간 매핑](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-React 또는 Angular 이외의 프레임워크에 대해 AEM에서 SPA을 구현하거나 AEM용 SPA SDK의 작동 방식을 자세히 살펴보려면 [SPA Blueprint](/help/sites-developing/spa-blueprint.md) 문서를 참조하십시오.
+React 또는 Angular 이외의 프레임워크를 위해 AEM에서 SPA을 구현하거나 AEM용 SPA SDK의 작동 방식을 자세히 살펴보려면 [SPA 블루프린트](/help/sites-developing/spa-blueprint.md) 문서.

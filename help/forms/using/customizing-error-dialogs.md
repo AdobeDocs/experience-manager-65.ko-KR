@@ -1,8 +1,8 @@
 ---
 title: 오류 대화 상자 사용자 지정
-seo-title: 오류 대화 상자 사용자 지정
+seo-title: Customizing error dialogs
 description: AEM Forms 작업 영역의 오류 대화 상자를 사용자 지정하여 다른 오류 설명을 추가하는 방법.
-seo-description: AEM Forms 작업 영역의 오류 대화 상자를 사용자 지정하여 다른 오류 설명을 추가하는 방법.
+seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,18 +11,18 @@ discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 exl-id: 8d2b07f5-5c4e-4111-8f78-eb1b156221bc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '152'
 ht-degree: 4%
 
 ---
 
 # 오류 대화 상자 사용자 지정 {#customizing-error-dialogs}
 
-AEM Forms 작업 공간을 사용하면 오류 대화 상자를 사용자 지정할 수 있습니다. 다음 단계를 수행하여 오류 대화 상자를 사용자 지정하려면 AEM Forms 작업 공간 사용자 지정](/help/forms/using/generic-steps-html-workspace-customization.md)에 대한 [일반 단계를 수행합니다.
+AEM Forms 작업 공간을 사용하면 오류 대화 상자를 사용자 지정할 수 있습니다. 다음 작업을 수행합니다. [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md) 다음 단계에 따라 오류 대화 상자를 사용자 지정합니다.
 
 ## 텍스트 사용자 지정 {#customizing-text}
 
-1. `/apps/ws/locales/en-US/translation.json` 파일에서 `wserror` 값을 사용자 지정된 값으로 변경합니다. 예:
+1. 에서 `/apps/ws/locales/en-US/translation.json` 파일에서 `wserror` 를 사용자 지정된 값으로 채우면 됩니다. 예:
 
    ```json
    "wserror" : {
@@ -50,9 +50,9 @@ AEM Forms 작업 공간을 사용하면 오류 대화 상자를 사용자 지정
    >
    >지원되는 모든 언어에 해당하는 키-값 쌍을 추가합니다.
 
-## CSS {#customizing-css} 사용자 지정
+## CSS 사용자 지정 {#customizing-css}
 
-1. `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가하여 대화 상자, 헤더, 컨텐츠 영역, 발 표시줄, 발 표시줄 단추 및 기타 화살표를 업데이트할 수 있습니다.
+1. 다음 코드 조각을 `/apps/ws/css/newStyle.css` 파일:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -187,7 +187,7 @@ AEM Forms 작업 공간을 사용하면 오류 대화 상자를 사용자 지정
    }
    ```
 
-1. 발 표시줄 단추 범위의 경우 합성 목록에서 `.error-dialog` 및 `.foot-bar` 버튼을 분리합니다. 이 변경 사항을 적용하려면 newStyle.css 파일에 다음을 추가하십시오.
+1. 발 표시줄 단추 범위의 경우 `.error-dialog` 및 `.foot-bar` 단추는 복합 목록의 범위입니다. 이 변경 사항을 적용하려면 newStyle.css 파일에 다음을 추가하십시오.
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -224,9 +224,9 @@ AEM Forms 작업 공간을 사용하면 오류 대화 상자를 사용자 지정
 
 >[!NOTE]
 >
->추가 이미지를 참조하는 경우 `/apps/ws/images` 아래에 원하는 계층에 이미지를 추가합니다.
+>추가 이미지를 참조하는 경우 아래의 원하는 계층에 이미지를 추가합니다 `/apps/ws/images`.
 
-## 예 {#examples}
+## 예제 {#examples}
 
 * **오류 대화 상자를 사용자 지정하려면 다음을 변경합니다.**
 

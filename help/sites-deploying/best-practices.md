@@ -1,8 +1,8 @@
 ---
 title: 배포 우수 사례
-seo-title: 배포 우수 사례
+seo-title: Deploying Best Practices
 description: 배포 및 유지 관리 우수 사례
-seo-description: 배포 및 유지 관리 우수 사례
+seo-description: Deploying and maintaining best practices.
 uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 15%
+source-wordcount: '430'
+ht-degree: 16%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 15%
 
 ## OAK {#oak}
 
-[](/help/sites-deploying/platform.md) Oak는 AEM의 기반이 되는 확장 가능하고 성능 계층적 컨텐츠 리포지토리입니다.
+[Oak](/help/sites-deploying/platform.md) 는 AEM의 기반이 되는 확장 가능하고 성능 계층 컨텐츠 저장소입니다.
 
 <table>
  <tbody>
@@ -74,9 +74,9 @@ ht-degree: 15%
 
 AEM Communities은 온-프레미스 커뮤니티의 생성 및 관리를 단순화합니다. AEM Communities에 대한 모범 사례는 다음과 같습니다.
 
-[커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md)  - 사용자 생성 콘텐츠(UGC)에 대한 새로운 공유 저장소 기능과 기본  [토폴로지 선택에 대한 고려 사항에 대해 ](/help/communities/topologies.md)설명합니다.
+[커뮤니티 콘텐츠 저장소](/help/communities/working-with-srp.md) - 사용자가 생성한 컨텐츠(UGC)를 위한 새로운 공유 스토리지 기능 및 기본 스토리지 선택을 위한 고려 사항에 대해 설명합니다. [토폴로지](/help/communities/topologies.md).
 
-[커뮤니티에 대한 권장 배포](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  - 커뮤니티에 대한 권장 배포에 대해 설명합니다. |
+[커뮤니티에 대한 권장 배포](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Communities에 대한 권장 배포에 대해 설명합니다. |
 
 ## UI {#ui}
 
@@ -84,7 +84,7 @@ AEM Communities은 온-프레미스 커뮤니티의 생성 및 관리를 단순�
 
 [고객을 위한 사용자 인터페이스 Recommendations](/help/sites-deploying/ui-recommendations.md)
 
-AEM에는 현재 두 개의 UI가 있습니다.클래식 및 터치에 적합한 UI를 동일한 릴리스에서 사용할 수 있습니다. 따라서 고객은 프로젝트 구현 중에 사용할 항목을 결정해야 합니다. 이 문서는 올바른 선택을 찾는 데 도움이 되기 위한 것입니다.
+AEM에는 현재 두 개의 UI가 있습니다. 클래식 및 터치에 적합한 UI를 동일한 릴리스에서 사용할 수 있습니다. 따라서 고객은 프로젝트 구현 중에 사용할 항목을 결정해야 합니다. 이 문서는 올바른 선택을 찾는 데 도움이 되기 위한 것입니다.
 
 ## 공연 {#performance}
 
@@ -95,7 +95,7 @@ AEM에는 현재 두 개의 UI가 있습니다.클래식 및 터치에 적합한
   <tr>
    <td>품질 보증 우수 사례</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">품질 보증 우수 사례</a></td>
-   <td><em>publish</em> 환경의 성능 테스트를 위해 특별히 테스트 개념 정의와 관련된 문제에 대한 표준화된 개요입니다. QA 엔지니어, 프로젝트 관리자 및 시스템 관리자에게 주로 관심이 있습니다.</td>
+   <td>Analytics에서 성능 테스트를 위해 특별히 테스트 개념을 정의하는 것과 관련된 문제에 대한 표준화된 개요입니다. <em>게시</em> 환경. QA 엔지니어, 프로젝트 관리자 및 시스템 관리자에게 주로 관심이 있습니다.</td>
   </tr>
   <tr>
    <td>CDN에 Dispatcher 사용</td>

@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 작업 공간에 사용되는 API
-seo-title: AEM Forms 작업 공간에 사용되는 API
+seo-title: APIs used in AEM Forms workspace
 description: 사용자 지정 및 자동화를 위해 노출되는 AEM Forms 작업 영역의 공개 Java 및 JavaScript API 및 메서드.
-seo-description: 사용자 지정 및 자동화를 위해 노출되는 AEM Forms 작업 영역의 공개 Java 및 JavaScript API 및 메서드.
+seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '997'
 ht-degree: 1%
 
 ---
 
-# AEM Forms 작업 공간 {#apis-used-in-aem-forms-workspace}에 사용되는 API
+# AEM Forms 작업 공간에 사용되는 API {#apis-used-in-aem-forms-workspace}
 
 다음 API는 AEM Forms 작업 영역에서 사용됩니다.
 
@@ -266,7 +266,7 @@ ht-degree: 1%
    <td>getProcessInstance<br /> </td>
    <td>ProcessManagementProcessService<br /> </td>
    <td>getProcessInstance<br /> </td>
-   <td>프로세스 인스턴스의 세부 정보를 가져옵니다.<br /> </td>
+   <td>프로세스 인스턴스의 세부 사항을 가져옵니다.<br /> </td>
   </tr>
   <tr>
    <td>getProcessInstances</td>

@@ -1,49 +1,49 @@
 ---
-title: 문자 PDF 미리 보기의 사용자 지정 워터마크
-seo-title: 문자 PDF 미리 보기의 사용자 지정 워터마크
+title: 편지 PDF 미리 보기의 사용자 지정 워터마크
+seo-title: Custom watermark in letter PDF preview
 description: 편지 PDF 미리 보기에서 사용자 정의 워터마크를 만드는 방법을 알아봅니다.
-seo-description: 편지 PDF 미리 보기에서 사용자 정의 워터마크를 만드는 방법을 알아봅니다.
+seo-description: Learn how to create custom watermark in letter PDF preview.
 uuid: 5adfede3-9b38-4a12-bf14-6d80cfb0a05a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
-feature: 서신 관리
+feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
 
-# 문자 PDF 미리 보기{#custom-watermark-in-letter-pdf-preview}의 사용자 지정 워터마크
+# 편지 PDF 미리 보기의 사용자 지정 워터마크{#custom-watermark-in-letter-pdf-preview}
 
 ## 개요 {#overview}
 
 서신 작성 UI에서 에이전트 사용자는 전자 메일이나 인쇄와 같이 사후 처리로 전송되는 최종 형태를 미리 봅니다.
 
-조직에서 이 데이터를 무단 사용하지 않도록 미리 보기 PDF에 워터마크를 지정할 수 있습니다. 기본 워터마크는 PDF에 나타나는 &quot;미리 보기&quot;입니다.
+조직에서 이 데이터의 무단 사용을 방지하기 위해 미리 보기 PDF에 워터마크를 지정할 수 있습니다. 기본 워터마크는 PDF 전체에 표시되는 &quot;미리 보기&quot;입니다.
 
-미리 보기 PDF에서 워터마크를 활성화하려면 https://&#39;[서버]:[포트]&#39;/system/console/configMgr에서 **[!UICONTROL 미리 보기 중 워터마크]** 적용 옵션을 선택합니다.****
+미리 보기 PDF에서 워터마크를 활성화하려면 **[!UICONTROL 워터마크 적용]** 의 미리 보기 중 옵션 **[!UICONTROL 서신 관리 구성]** https://&#39;[server]:[포트]&#39;/system/console/configMgr.
 
 ![기본 워터마크](assets/default-watermark.png)
 
 다음 단계를 사용하여 워터마크의 텍스트와 모양을 사용자 정의할 수 있습니다.
 
-## 서신 작성 UI {#customizewatermark-}에서 PDF 미리 보기에서 워터마크 사용자 정의
+## 서신 UI 만들기에서 PDF 미리 보기에서 워터마크 사용자 지정 {#customizewatermark-}
 
-1. `https://'[server]:[port]'/[ContextPath]/crx/de`(으)로 이동하여 관리자로 로그인합니다.
-1. apps 폴더에서 libs 폴더의 미리 보기 워터마크 폴더와 유사한 경로/구조를 사용하여 **[!UICONTROL 미리 보기 워터마크]**&#x200B;라는 폴더를 만듭니다.
+1. 이동 `https://'[server]:[port]'/[ContextPath]/crx/de` 관리자로 로그인합니다.
+1. apps 폴더에서 **[!UICONTROL 미리 보기 워터마크]** libs 폴더의 미리 보기 워터마크 폴더와 유사한 경로/구조 사용:
 
-   1. 다음 경로에서 **미리 보기 워터마크** 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **미리 보기 워터마크** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **오버레이 노드**:
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
    1. 오버레이 노드 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **경로:** /libs/fd/cm/configFiles/previewwatermark
+      **경로:** /libs/fd/cm/configFiles/previewmark
 
       **오버레이 위치:** /apps/
 
@@ -60,11 +60,9 @@ ht-degree: 0%
       >    * 기능 팩 설치
 
 
-   1. **확인**&#x200B;을 클릭한 다음 **모두 저장**&#x200B;을 클릭합니다. **[!UICONTROL 미리 보기 워터마크]** 폴더가 지정된 경로에 생성됩니다.
+   1. 클릭 **확인** 을 클릭한 다음 **모두 저장**. 다음 **[!UICONTROL 미리 보기 워터마크]** 지정된 경로에 폴더가 만들어집니다.
 
-
-
-1. ddx 파일을 &quot;/libs/fd/cm/configFiles/previewwatermark&quot; 폴더에서 &quot;/apps/fd/cm/configFiles/previewwatermark&quot; 폴더로 복사하여 붙여넣고 **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
+1. ddx 파일을 &quot;/libs/fd/cm/configFiles/previewwatermark&quot; 폴더에서 &quot;/apps/fd/cm/configFiles/previewwatermark&quot; 폴더로 복사하여 붙여 넣은 다음 를 클릭합니다 **[!UICONTROL 모두 저장]**.
 1. /apps/fd/cm/configFiles/previewwatermark/ 아래의 ddx 파일에서 원하는 대로 변경합니다.
 
    ```xml
@@ -82,10 +80,10 @@ ht-degree: 0%
    </DDX>
    ```
 
-   워터마크 모양, 텍스트 및 정렬 사용자 지정에 대한 자세한 내용은 [어셈블러 서비스 및 DDX 참조](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) 문서에서 워터마크 및 배경 추가 및 제거를 참조하십시오.
+   워터마크 모양, 텍스트 및 정렬 사용자 지정에 대한 자세한 내용은 [어셈블러 서비스 및 DDX 참조](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) 문서.
 
    >[!NOTE]
    >
    >ddx 파일에서 결과 및 소스에 대한 참조가 output.pdf 및 input.pdf에 변경되지 않은 채로 유지됩니다. 파일 ddx의 이름도 변경할 수 없습니다.
 
-1. **모두 저장**&#x200B;을 클릭합니다.
+1. 클릭 **모두 저장**.

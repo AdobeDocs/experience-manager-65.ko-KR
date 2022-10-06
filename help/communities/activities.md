@@ -1,8 +1,8 @@
 ---
 title: 활동 스트림 기능
-seo-title: 활동 스트림 기능
+seo-title: Activity Streams Feature
 description: 로그인한 커뮤니티 구성원의 활동
-seo-description: 로그인한 커뮤니티 구성원의 활동
+seo-description: Activities of a signed-in community member
 uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '455'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## 소개 {#introduction}
 
-포럼 또는 블로그에 게시하는 등의 로그인한 커뮤니티 구성원의 활동은 `Activity Streams` 구성 요소의 구성을 통해 다양한 방법으로 필터링 및 표시할 수 있는 스트림에 수집됩니다.
+커뮤니티 구성원의 활동들(예: 포럼 또는 블로그에 게시)은 스트림에 수집되며, 스트림에는 이러한 구성을 통해 다양한 방법으로 필터링 및 표시할 수 있다 `Activity Streams` 구성 요소.
 
 팔로우하는 기능은 커뮤니티 구성원이 관심 있는 게시를 따르거나 다른 커뮤니티 구성원의 활동을 따를 때 다른 활동 보기를 추가합니다.
 
@@ -33,25 +33,25 @@ ht-degree: 4%
 
 ### 페이지에 활동 스트림 추가 {#adding-activity-streams-to-a-page}
 
-작성자 모드의 페이지에 `Activity Streams` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 을 찾습니다
+를 추가하려면 `Activity Streams` 구성 요소를 페이지에 작성자 모드에서 사용하려면 구성 요소 브라우저를 사용하여 를 찾습니다
 
 * `Communities / Activity Streams`
 
 활동 스트림이 표시되어야 하는 페이지에 드래그합니다.
 
-필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 방문하십시오.
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md).
 
-필요한 [클라이언트 측 라이브러리](/help/communities/essentials-activities.md#essentials-for-client-side)가 포함되면 이 방법으로 `Activity Streams` 구성 요소가 표시됩니다.
+이 [필수 클라이언트 측 라이브러리](/help/communities/essentials-activities.md#essentials-for-client-side) 포함된 경우, 다음과 같이 하십시오 `Activity Streams` 구성 요소가 표시됩니다.
 
 ![activity-streams](assets/activity-component.png)
 
 ### 활동 스트림 구성 {#configuring-activity-streams}
 
-액세스할 배치된 `Activity Streams` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
+배치된 항목을 선택합니다 `Activity Streams` 액세스하여 선택할 구성 요소 `Configure` 아이콘 편집 대화 상자를 엽니다.
 
 ![구성](assets/configure-new.png)
 
-**사용자 활동** 탭에서 표시할 활동을 지정합니다.
+아래에 **사용자 활동** 탭에서 표시할 활동을 지정합니다.
 
 ![사용자 활동](assets/user-activities.png)
 
@@ -77,15 +77,15 @@ ht-degree: 4%
 
 ### 다음 보기 {#following-view}
 
-다음을 사용하도록 구성 요소를 구성해야 합니다. 다음을 허용하는 기능은 [블로그](/help/communities/blog-feature.md), [포럼](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [달력](/help/communities/calendar.md), [파일 라이브러리](/help/communities/file-library.md) 및 [주석](/help/communities/comments.md)입니다.
+다음을 사용하도록 구성 요소를 구성해야 합니다. 다음을 허용하는 기능은 다음과 같습니다 [블로그](/help/communities/blog-feature.md), [포럼](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [달력](/help/communities/calendar.md), [파일 라이브러리](/help/communities/file-library.md), 및 [댓글](/help/communities/comments.md).
 
 ![다음 보기](assets/following-activities.png)
 
-**팔로우** 단추는 항목을 활동, [알림](/help/communities/notifications.md) 또는 [구독](/help/communities/subscriptions.md)으로 따르는 수단을 제공합니다. **팔로우** 단추를 선택할 때마다 선택 항목을 켜거나 끌 수 있습니다. `Email Subscriptions` 선택 항목은 구성된 경우에만 나타납니다.
+다음 **팔로우** 버튼은 항목을 활동으로 따르는 수단을 제공합니다. [알림](/help/communities/notifications.md), 또는 [구독](/help/communities/subscriptions.md). 매번 **팔로우** 단추를 선택하면 선택 항목을 켜거나 끌 수 있습니다. 다음 `Email Subscriptions` 선택 항목은 구성된 경우에만 나타납니다.
 
-다음 방법을 선택하면 단추의 텍스트가 **Following**&#x200B;으로 변경됩니다. 편의를 위해 `Unfollow All` 을 선택하여 모든 메서드를 해제할 수 있습니다.
+다음 방법을 선택하면 단추의 텍스트가 **다음**. 편의를 위해 선택할 수 있습니다 `Unfollow All` 를 눌러 모든 메서드를 해제합니다.
 
-**팔로우** 단추가 나타납니다.
+다음 **팔로우** 버튼이 표시됩니다.
 
 * 다른 구성원의 프로파일을 볼 때
 * 포럼, QnA 및 블로그 등의 기본 기능 페이지에서 다음을 수행합니다.
@@ -98,4 +98,4 @@ ht-degree: 4%
 
 ### 추가 정보 {#additional-information}
 
-개발자를 위한 [Activity Streams Essentials](/help/communities/essentials-activities.md) 페이지에서 자세한 내용을 찾을 수 있습니다.
+자세한 내용은 [Activity Streams Essentials](/help/communities/essentials-activities.md) 개발자를 위한 페이지입니다.

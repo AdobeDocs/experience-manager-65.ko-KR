@@ -1,8 +1,8 @@
 ---
 title: XCI 구성 옵션 지정
-seo-title: XCI 구성 옵션 지정
+seo-title: Specifying XCI configuration options
 description: XCI 구성 옵션을 지정하는 방법을 알아봅니다.
-seo-description: XCI 구성 옵션을 지정하는 방법을 알아봅니다.
+seo-description: Learn how to specify XCI configuration options.
 uuid: 5d3c10c1-4a93-4336-b311-20faaf835b9f
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: 162c9fda-f4d4-4ad5-a9ab-7554828e821c
 exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '130'
 ht-degree: 1%
 
 ---
 
-# XCI 구성 옵션 {#specifying-xci-configuration-options} 지정
+# XCI 구성 옵션 지정 {#specifying-xci-configuration-options}
 
-Forms을 사용하면 렌더링에 사용할 사용자 지정 XCI 파일을 지정할 수 있습니다. ([Forms에 대한 위치 구성](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)을 참조하십시오.) 기본적으로 Forms은 다음을 포함하여 XCI 파일에 지정된 일부 옵션을 무시합니다.
+Forms을 사용하면 렌더링에 사용할 사용자 지정 XCI 파일을 지정할 수 있습니다. (자세한 내용은 [Forms 위치 구성](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)) 기본적으로 Forms은 다음을 포함하여 XCI 파일에 지정된 일부 옵션을 무시합니다.
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

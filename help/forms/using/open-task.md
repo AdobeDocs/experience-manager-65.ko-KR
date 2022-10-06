@@ -1,8 +1,8 @@
 ---
 title: 작업 열기
-seo-title: 작업 열기
+seo-title: Opening a task
 description: AEM Forms 앱에서 작업을 여는 절차.
-seo-description: AEM Forms 앱에서 작업을 여는 절차.
+seo-description: Steps to open a task on your AEM Forms app.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,7 +11,7 @@ discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM Forms 앱이 AEM Forms 서버와 동기화되면 자신에게 할당된 작업으로 작업할 수 있습니다. 작업은 워크벤치 또는 AEM 워크플로우 편집기에 정의된 워크플로우의 단계입니다.
 
-다른 양식은 초안 탭에서 초안으로 저장됩니다. [초안 저장](/help/forms/using/save-as-draft.md)을 참조하십시오.
+다른 양식은 초안 탭에서 초안으로 저장됩니다. 자세한 내용은 [초안 저장](/help/forms/using/save-as-draft.md).
 
 **작업을 열려면**
 
@@ -33,11 +33,11 @@ AEM Forms 앱이 AEM Forms 서버와 동기화되면 자신에게 할당된 작�
 
 1. 작업을 눌러 엽니다.
 
-   **요약 보기**&#x200B;를 탭하여 워크벤치 프로세스에 지정된 추가 지침을 볼 수 있습니다.
+   탭할 수 있습니다 **요약 보기** 워크벤치 프로세스에 지정된 추가 지침을 보려면
 
 **응용 프로그램을 열려면**
 
-1. **Forms** 탭에서 **application**&#x200B;을(를) 탭합니다.
+1. 을(를) 탭합니다. **애플리케이션** 에서 **Forms** 탭.
 
    응용 프로그램을 선택하면 응용 프로그램 이름 아래에 응용 프로그램 설명이 표시됩니다. 설명 다음에 응용 프로그램과 관련된 사용자 작업/작업이 표시됩니다.
 
@@ -46,4 +46,4 @@ AEM Forms 앱이 AEM Forms 서버와 동기화되면 자신에게 할당된 작�
 
 1. 작업을 눌러 엽니다.
 
-   **요약 보기**&#x200B;를 탭하여 응용 프로그램에 지정된 추가 지침을 볼 수 있습니다.
+   탭할 수 있습니다 **요약 보기** 응용 프로그램에 대해 지정된 추가 지침을 보려면

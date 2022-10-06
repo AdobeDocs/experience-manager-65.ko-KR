@@ -1,7 +1,7 @@
 ---
 title: 편지 만들기
 seo-title: Create Letter
-description: '이 항목에서는 편지를 만들고, 데이터 모듈과 첨부 파일을 추가하고, 서신 관리에서 미리 보는 단계를 제공합니다. '
+description: 이 항목에서는 편지를 만들고, 데이터 모듈과 첨부 파일을 추가하고, 서신 관리에서 미리 보는 단계를 제공합니다.
 seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

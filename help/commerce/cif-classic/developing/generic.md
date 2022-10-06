@@ -327,9 +327,9 @@ public class AxisFilter implements VariantFilter {
       * `String CommerceSession.getProductPrice(Product product)`
 
 
-**저장 용량**
+**스토리지**
 
-* 저장 용량
+* 스토리지
 
    * AEM 일반 케이스 카트에서 의 [ClientContext](/help/sites-administering/client-context.md)
 

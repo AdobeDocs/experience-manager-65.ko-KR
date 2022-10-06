@@ -104,7 +104,6 @@ The **Examples** help to illustrate the steps of integrating interactive videos 
 >
 >* Quickview에 트리거하여 비디오에 상호 작용을 추가하려고 합니다.
 >* Experience Manager 구현은 다음을 수행합니다 *not* IBM® WebSphere® Commerce, Elastic Path, Hybris 또는 Intershop과 같은 모든 eCommerce 솔루션에서 제품 데이터를 Experience Manager으로 가져오는 데 eCommerce 통합 프레임워크를 사용합니다. 자세한 내용은 [Experience Manager Assets의 eCommerce 개념](/help/commerce/cif-classic/administering/concepts.md).
-
 >
 >Experience Manager 구현에서 eCommerce를 사용하는 경우 이 작업을 건너뛰고 다음 작업으로 진행할 수 있습니다.
 
@@ -773,6 +772,6 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
+## 빠른 보기를 사용하여 맞춤형 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
 
 자세한 내용은 [빠른 보기를 사용하여 사용자 지정 팝업 만들기](/help/assets/custom-pop-ups.md).

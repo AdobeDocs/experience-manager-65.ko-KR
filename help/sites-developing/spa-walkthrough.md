@@ -1,5 +1,5 @@
 ---
-title: SPA 소개 및 연습
+title: SPA 소개 및 워크스루
 seo-title: SPA Introduction and Walkthrough
 description: 이 문서에서는 SPA의 개념을 소개하고 기본 SPA 응용 프로그램을 사용하여 기본 AEM SPA 편집기와 관련된 방법을 설명합니다.
 seo-description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 ---
 
-# SPA 소개 및 연습{#spa-introduction-and-walkthrough}
+# SPA 소개 및 워크스루{#spa-introduction-and-walkthrough}
 
 SPA(단일 페이지 애플리케이션)는 웹 사이트 사용자에게 훌륭한 경험을 제공할 수 있습니다. 개발자는 SPA 프레임워크을 사용하여 사이트를 작성하려고 하며 작성자는 이러한 프레임워크를 사용하여 작성된 사이트의 AEM 내에서 컨텐츠를 원활하게 편집하려고 합니다.
 
@@ -104,7 +104,6 @@ AEM SPA 편집기를 활용하기 위해 SPA을 빌드하면 컨텐츠 작성자
 >
 >* [AEM 버전 6.4(서비스 팩 2 포함)](/help/release-notes/release-notes.md)
 >* [GitHub에서 사용할 수 있는 샘플 We.Retail Journal 앱을 여기에 설치합니다.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
-
 >
 
 

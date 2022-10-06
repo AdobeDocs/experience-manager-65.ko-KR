@@ -1,7 +1,7 @@
 ---
 title: 디자이너 설치 및 구성
 seo-title: Installing and configuring Designer
-description: '디자이너는 독립형 설치 프로그램으로 사용할 수 있으며 Workbench와 함께 번들로 제공됩니다. 독립형 Designer 설치 방법을 알아봅니다.  '
+description: 디자이너는 독립형 설치 프로그램으로 사용할 수 있으며 Workbench와 함께 번들로 제공됩니다. 독립형 Designer 설치 방법을 알아봅니다.
 seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
 uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar

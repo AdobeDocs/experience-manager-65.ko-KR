@@ -438,7 +438,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택하는 동안 다음 
   </tr>
   <tr>
    <td>Microsoft Sharepoint </td>
-   <td>2019년<br /> </td>
+   <td>2019<br /> </td>
   </tr>
  </tbody>
 </table>

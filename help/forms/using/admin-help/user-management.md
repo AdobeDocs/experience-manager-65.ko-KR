@@ -1,8 +1,8 @@
 ---
 title: 사용자 관리
-seo-title: 사용자 관리
+seo-title: User Management
 description: 사용자 관리를 사용하면 SAML을 사용하여 AEM Forms 모듈과 Network SiteMinder로 보호된 응용 프로그램 간에 SSO를 활성화할 수 있습니다. 이 문서에서는 사용자 관리에 대해 자세히 설명합니다.
-seo-description: 사용자 관리를 사용하면 SAML을 사용하여 AEM Forms 모듈과 Network SiteMinder로 보호된 응용 프로그램 간에 SSO를 활성화할 수 있습니다. 이 문서에서는 사용자 관리에 대해 자세히 설명합니다.
+seo-description: User Management allows you to enable SSO between AEM forms modules and Netegrity SiteMinder-protected applications by using SAML. This document provides more information about User Management.
 uuid: f0c8331a-d995-483d-97b7-259df53b1a1a
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
 exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 1%
+source-wordcount: '474'
+ht-degree: 0%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 1%
 
 사용자 관리를 사용하면 SAML(Security Assertion Markup Language)을 사용하여 AEM Forms 모듈과 Network SiteMinder로 보호된 응용 프로그램 간에 SSO(Single Sign-On)를 활성화할 수 있습니다. SSO가 구현되면 AEM Forms 사용자 로그인 페이지가 필요하지 않으며 사용자가 회사 포털을 통해 이미 인증되는 경우 표시되지 않습니다.
 
-DB2의 데이터베이스 및 디렉터리 동기화 성능 개선에 대한 자세한 내용은 [IBM DB2 데이터베이스를 참조하십시오.일반 유지 관리를 위한 명령 실행 중](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+DB2의 데이터베이스 및 디렉터리 동기화 성능 개선에 대한 자세한 내용은 [IBM DB2 데이터베이스: 일반 유지 관리를 위한 명령 실행](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
 ## SSL 사용 LDAP 서버에 대한 사용자 관리 구성 {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-SSL을 사용하는 LDAP 서버가 있는 경우 User Management가 작동하도록 구성합니다. ([SSL이 활성화된 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)을 참조하십시오.)
+SSL을 사용하는 LDAP 서버가 있는 경우 User Management가 작동하도록 구성합니다. (자세한 내용은 [SSL 사용 LDAP 서버에 대한 사용자 관리 구성](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server))
 
-## 문서 보안 {#setting-user-privileges-for-use-with-document-security}에 사용할 사용자 권한 설정
+## 문서 보안에 사용할 사용자 권한 설정 {#setting-user-privileges-for-use-with-document-security}
 
-사용자 및 그룹을 생성할 수 있는 적절한 권한을 가진 관리자 사용자를 생성합니다. AEM Forms 환경에 Document Security가 포함되어 있는 경우 이러한 사용자의 관리자가 될 사용자에게 초대된 사용자와 로컬 사용자를 관리할 권한을 부여합니다. 또한 관리 콘솔 사용자 역할을 할당하여 사용자에게 관리 콘솔에 대한 액세스 권한을 제공합니다. ([역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles) 참조)
+사용자 및 그룹을 생성할 수 있는 적절한 권한을 가진 관리자 사용자를 생성합니다. AEM Forms 환경에 Document Security가 포함되어 있는 경우 이러한 사용자의 관리자가 될 사용자에게 초대된 사용자와 로컬 사용자를 관리할 권한을 부여합니다. 또한 관리 콘솔 사용자 역할을 할당하여 사용자에게 관리 콘솔에 대한 액세스 권한을 제공합니다. (자세한 내용은 [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles))
 
 정책 사용자 검색 중에 선택한 도메인의 사용자 및 그룹을 보려면 수퍼 관리자 또는 정책 세트 관리자가 생성된 각 정책 세트에 대해 표시된 사용자 및 그룹 목록에 도메인(사용자 관리에서 생성)을 선택하고 추가해야 합니다.
 
@@ -39,7 +39,7 @@ SSL을 사용하는 LDAP 서버가 있는 경우 User Management가 작동하도
 >
 >정책을 만들려면 먼저 도메인 만들기를 수행해야 합니다.
 
-### 표시된 사용자 및 그룹 {#set-visible-users-and-groups} 설정
+### 표시된 사용자 및 그룹 설정 {#set-visible-users-and-groups}
 
 문서 보안을 사용하여 AEM Forms 환경을 설치 및 구성한 후 사용자 관리에서 적절한 도메인을 모두 설정합니다.
 

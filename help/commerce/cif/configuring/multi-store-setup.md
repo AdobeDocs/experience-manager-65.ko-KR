@@ -12,7 +12,7 @@ exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -61,4 +61,4 @@ AEM 사이트 및 AEM CIF 핵심 구성 요소를 전용 저장소 보기에 연
 * [Adobe Commerce 웹 사이트, 저장소 및 보기](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF 코어 구성 요소 - 다중 스토어/사이트 구성](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [다중 사이트 관리자 사용](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [컨텐츠 재사용: 다중 사이트 관리자 및 Live Copy](/help/sites-administering/msm.md)
+* [콘텐츠 재사용: 다중 사이트 관리자 및 라이브 카피](/help/sites-administering/msm.md)

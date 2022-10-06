@@ -1,8 +1,8 @@
 ---
 title: 구성원 기여도 제한
-seo-title: 구성원 기여도 제한
+seo-title: Member Contribution Limits
 description: 기여도 제한 기능을 사용하여 스팸으로부터 보호하기 위해 기여도를 제한할 수 있습니다
-seo-description: 기여도 제한 기능을 사용하여 스팸으로부터 보호하기 위해 기여도를 제한할 수 있습니다
+seo-description: Contribution limits feature lets you limit the contributions to protect against spam
 uuid: 99b2a855-3f0d-41a0-9572-517a7f29af9f
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: d00a8eb2-47ce-425a-a312-f043f82912be
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 0%
+source-wordcount: '434'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 구성원이 제한되면 허용된 기여도 수를 초과하는 게시물은 한도를 초과하고 게시물이 거부된다는 경고가 표시됩니다. 커뮤니티 구성원은 커뮤니티 메시지 센터로 이동하여 적절한 경우 제한을 제거할 수 있는 커뮤니티 관리자에게 문의하십시오.
 
-기여도 제한은 [구성원 콘솔](members.md) 및/또는 사이트 방문자가 새 구성원이 될 때 자동으로 활성화되도록 구성되었을 수 있습니다.
+기여도 제한은 [구성원 콘솔](members.md) 사이트 방문자가 새 구성원이 될 때 자동으로 활성화되도록 구성하거나,
 
 구성원 콘솔을 사용하면 커뮤니티 관리자가 언제든지 구성원에 대해 기여도 제한을 사전 예방적으로 제거하거나, 구성원이 이러한 요청을 수행하는 커뮤니티 관리자에게 메시지를 보낼 때 재능동적으로 제거할 수 있습니다.
 
@@ -42,18 +42,18 @@ ht-degree: 0%
 
 * 기본 게시자에서:
 * 관리자 권한으로 로그인합니다.
-* [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)에 액세스합니다.
+* 액세스 권한 [웹 콘솔](../../help/sites-deploying/configuring-osgi.md).
 
-   * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * 예, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* `AEM Communities User Generated Content Contribution Limits Configuration`을(를) 찾습니다.
+* 찾기 `AEM Communities User Generated Content Contribution Limits Configuration`.
 * 편집 아이콘을 선택합니다.
 
 ![configure-limits](assets/configure-limits.png)
 
 * **[!UICONTROL UGC 기여도 제한 자동 적용]**
 
-   이 필드를 선택하면 커뮤니티 구성원으로 등록할 때 사용자에게 기여도 제한을 자동으로 설정합니다. 이는 커뮤니티 구성원의 프로필에 반영되며 [구성원 콘솔](members.md)에서 활성화/비활성화할 수 있습니다. 도메인의 이메일 주소를 허용 목록에 추가하다 가진 새 구성원은 제한이 없습니다.
+   이 필드를 선택하면 커뮤니티 구성원으로 등록할 때 사용자에게 기여도 제한을 자동으로 설정합니다. 이는 커뮤니티 구성원의 프로필에 반영되며, [구성원 콘솔](members.md). 도메인의 이메일 주소를 허용 목록에 추가하다 가진 새 구성원은 제한이 없습니다.
 
    기본값은 선택 취소되어 있습니다.
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
    하나 허용 목록에 추가하다 이상의 이메일 도메인의 목록입니다. + 아이콘을 선택하여 추가 항목을 만듭니다.
 
-   UGC 기여도 허용 목록에 추가하다 제한이 자동으로 적용되면 도메인에 이메일 주소를 사용하는 사용자에게 영향을 주지 않습니다. 예를 들어 도메인 `mycompany.com`이(가) 도메인 목록에 추가되면 이메일 주소가 `me@mycompany.com`인 구성원은 게시 시 제한이 없습니다.
+   UGC 기여도 허용 목록에 추가하다 제한이 자동으로 적용되면 도메인에 이메일 주소를 사용하는 사용자에게 영향을 주지 않습니다. 예를 들어, 도메인인 경우 `mycompany.com` 도메인 목록에 추가되고 이메일 주소를 가진 멤버가 추가됩니다 `me@mycompany.com` 는 게시에 제한되지 않습니다.
 
    기본값은 빈 허용 목록에 추가하다 항목입니다.
 

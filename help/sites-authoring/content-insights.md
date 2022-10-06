@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 인사이트
-seo-title: 컨텐츠 인사이트
+seo-title: Content Insight
 description: 컨텐츠 인사이트는 웹 분석 및 SEO 추천을 사용하여 페이지 성능에 대한 정보를 제공합니다.
-seo-description: 컨텐츠 인사이트 에서는 웹 분석 및 SEO 추천을 사용한 페이지 성능에 대한 정보를 제공합니다
+seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 95%
+source-wordcount: '521'
+ht-degree: 97%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->컨텐츠 인사이트 보고서를 사용하려면 관리자가 AEM을 SiteCatalyst, Target 및 BrightEdge와 통합해야 합니다. [SightCatalyst](/help/sites-administering/adobeanalytics.md), [Adobe Target과 통합](/help/sites-administering/target.md) 및 [BrightEdge](/help/sites-administering/brightedge.md)와 통합 을 참조하십시오.
+>컨텐츠 인사이트 보고서를 사용하려면 관리자가 AEM을 SiteCatalyst, Target 및 BrightEdge와 통합해야 합니다. 자세한 내용은 [SightCatalyst와 통합](/help/sites-administering/adobeanalytics.md), [Adobe Target과 통합](/help/sites-administering/target.md), 및 [BrightEdge와 통합](/help/sites-administering/brightedge.md).
 
 ## 보기 보고서 {#the-views-report}
 

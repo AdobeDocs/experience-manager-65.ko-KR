@@ -1,6 +1,6 @@
 ---
-title: '"자습서: 첫 번째 적응형 양식 만들기"'
-seo-title: 'Tutorial: Create your first adaptive form'
+title: "자습서: 첫 번째 적응형 양식 만들기"
+seo-title: "Tutorial: Create your first adaptive form"
 description: 비즈니스 클래스, 대화형 및 반응형 양식을 만드는 방법을 알아봅니다.
 seo-description: Learn to create business class, interactive, and responsive forms.
 uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
@@ -12,7 +12,7 @@ exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
 workflow-type: tm+mt
 source-wordcount: '957'
-ht-degree: 9%
+ht-degree: 0%
 
 ---
 

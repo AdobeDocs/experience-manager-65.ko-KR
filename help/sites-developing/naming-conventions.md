@@ -1,8 +1,8 @@
 ---
 title: 이름 지정 규칙
-seo-title: 이름 지정 규칙
+seo-title: Naming Conventions
 description: 저장소의 노드는 Java 컨텐츠 저장소의 이름 지정 규칙을 따릅니다
-seo-description: 저장소의 노드는 Java 컨텐츠 저장소의 이름 지정 규칙을 따릅니다
+seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,21 +12,21 @@ discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '301'
 ht-degree: 21%
 
 ---
 
 # 이름 지정 규칙{#naming-conventions}
 
-저장소의 노드는 [Java 컨텐츠 저장소](/help/sites-developing/the-basics.md#java-content-repository)의 이름 지정 규칙을 따릅니다. 그러나 AEM에서는 페이지 노드의 이름에 대한 추가적인 규칙을 적용합니다.
+저장소의 노드는 [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). 그러나 AEM에서는 페이지 노드의 이름에 대한 추가적인 규칙을 적용합니다.
 
-## 페이지 이름 지정 규칙 {#naming-conventions-for-pages}
+## 페이지에 대한 이름 지정 규칙 {#naming-conventions-for-pages}
 
 이러한 이름 지정 규칙은 다음과 같은 다양한 수준에서 구현됩니다.
 
-* JcrUtil:[JCR 유틸리티의 AEM 구현](#jcr-utilities)
-* 페이지 관리자:[페이지 관리자](#page-manager)는 페이지 수준 작업에 대한 메서드를 제공합니다.
+* JcrUtil: 의 AEM 구현 [JCR 유틸리티](#jcr-utilities).
+* 페이지 관리자: a [페이지 관리자](#page-manager) 페이지 수준 작업에 대한 메서드를 제공합니다.
 * 사용되는 UI에 따라:
 
    * [표준, 터치 지원 UI](#standard-ui)
@@ -34,7 +34,7 @@ ht-degree: 21%
 
 ### JCR 유틸리티 {#jcr-utilities}
 
-[](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) JcrUtilities는 JCR 유틸리티의 AEM 구현을 나열합니다. 이름 유효성 검사에 대한 특정 관심 사항은 이 컨트롤이 제어하는 문자 매핑과 다음 유효성 검사입니다.
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) 는 JCR 유틸리티의 AEM 구현입니다. 이름 유효성 검사에 대한 특정 관심 사항은 이 컨트롤이 제어하는 문자 매핑과 다음 유효성 검사입니다.
 
 * `isValidName`
 
@@ -48,7 +48,7 @@ ht-degree: 21%
 
 ### 페이지 관리자 {#page-manager}
 
-[](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager는 JCRUtil [을 기반으로 페이지 수준 작업을 위한 ](#jcr-utilities)메서드를 제공합니다.
+[PageManager](https://helpx.adobe.com/kr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) 에서는 다음을 기준으로 페이지 수준 작업에 대한 메서드를 제공합니다 [JCRUtil](#jcr-utilities).
 
 ### 표준 UI {#standard-ui}
 
@@ -68,7 +68,7 @@ ht-degree: 21%
    * 노드 이름으로 전환할 페이지 제목이 제공됩니다
    * 명시적 노드 이름이 제공됩니다.
 
-* 유효한 문자(`PageManagerImpl` 은 추가 문자를 허용하지만 클래식 UI 내에서 페이지를 만들 때는 이러한 문자만 실제로 유효합니다.):
+* 유효한 문자(클래식 UI 내에서 페이지가 작성될 때에도 실제로 유효한 문자) `PageManagerImpl` 에는 추가 문자가 허용됨:
 
    * &#39;a&#39; ~ &#39;z&#39;
    * &#39;A&#39; ~ &#39;Z&#39;

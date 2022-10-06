@@ -153,7 +153,7 @@ A **복합 상태 검사** 은 여러 개별 수표의 정보를 집계하는 �
    * **이름(hc.name):** 복합 상태 확인의 이름입니다. 의미 있는 이름이 권장됩니다.
    * **태그(hc.tags):** 이 상태 확인의 태그입니다. 이 복합 상태 검사가 다른 복합 상태 확인의 일부(예: 상태 검사 계층)인 경우 이 복합체와 관련된 태그를 추가합니다.
    * **MBean 이름(hc.mbean.name):** 이 복합 상태 확인의 JMX MBean에 제공될 Mbean의 이름입니다.
-   * **태그 필터링(filter.tags):** 복합 상태 확인과 관련된 속성입니다. 다음은 복합체에서 집계해야 하는 태그입니다. 복합 상태 확인은 이 컴포지션의 필터 태그와 일치하는 태그가 있는 모든 상태 검사를 그룹 아래에 집계합니다. 예를 들어 필터 태그가 있는 복합 상태 확인입니다 **테스트** 및 **check** 는 **테스트** 및 **check** 태그 속성에 태그( `hc.tags`).
+   * **태그 필터링(filter.tags):** 복합 상태 확인과 관련된 속성입니다. 합성이 집계해야 하는 태그입니다. 복합 상태 확인은 이 컴포지션의 필터 태그와 일치하는 태그가 있는 모든 상태 검사를 그룹 아래에 집계합니다. 예를 들어 필터 태그가 있는 복합 상태 확인입니다 **테스트** 및 **check** 는 **테스트** 및 **check** 태그 속성에 태그( `hc.tags`).
 
    >[!NOTE]
    >
@@ -374,7 +374,7 @@ A **복합 상태 검사** 은 여러 개별 수표의 정보를 집계하는 �
    }
    ```
 
-1. AEM 서버에 사용된 메모리에 대한 서비스를 추가합니다.
+1. AEM 서버에서 사용된 메모리에 대한 서비스를 추가합니다.
 
    ```xml
    define service {
@@ -441,7 +441,7 @@ UI의 왼쪽 위 톱니바퀴 단추에서 로거 구성을 제공하여 기록�
 >
 >**AEM 6.4 사용**&#x200B;를 사용하면 유지 관리 작업이 정보 수준에서 더 많은 정보 형식으로 즉시 로그아웃됩니다. 이를 통해 유지 관리 작업의 상태를 더 잘 파악할 수 있습니다.
 >
->타사 도구(예: Splunk)를 사용하여 유지 관리 작업 활동을 모니터링하고 반응하는 경우 다음 로그 명령문을 사용할 수 있습니다.
+>타사 도구(예: Splunk)를 사용하여 유지 관리 작업 활동을 모니터링하고 반응하는 경우 다음 로그 문을 사용할 수 있습니다.
 
 ```
 Log level: INFO
@@ -636,15 +636,15 @@ Lucene 이진 파일 정리 작업을 사용하여 lucene 바이너리를 제거
   </tr>
   <tr>
    <td>granite.maintenance.isStoppable</td>
-   <td>사용자가 작업을 중지할 수 있는지 여부를 정의하는 부울 속성입니다. 작업이 정지 상태가 되면 실행 중에 작업이 중지되었는지 확인한 다음 그에 따라 조치를 취해야 합니다. 기본값은 false입니다.</td>
+   <td>사용자가 작업을 중지할 수 있는지 여부를 정의하는 부울 속성입니다. 작업이 정지 상태를 선언할 경우 실행 중에 정지 여부를 확인한 다음 그에 따라 조치를 취해야 합니다. 기본값은 false입니다.</td>
    <td>true</td>
-   <td>선택 사항입니다</td>
+   <td>선택 사항</td>
   </tr>
   <tr>
    <td>granite.maintenance.mandatory</td>
    <td>작업이 필수이고 주기적으로 실행해야 하는지 여부를 정의하는 부울 속성입니다. 작업이 필수 작업이지만 현재 활성 스케줄 창이 아닌 경우 상태 확인에서 오류로 보고됩니다. 기본값은 false입니다.</td>
    <td>true</td>
-   <td>선택 사항입니다</td>
+   <td>선택 사항</td>
   </tr>
   <tr>
    <td>granite.maintenance.name</td>
@@ -766,7 +766,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
      <li>디스크 공간(홈 디렉터리가 있는 파티션에서)</li>
      <li>최대 힙이 반환되는 경우 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
     </ul> </td>
-   <td>N/A</td>
+   <td>해당 없음</td>
    <td>해당 없음</td>
   </tr>
   <tr>
@@ -835,7 +835,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
    <td>복제 페이지</td>
   </tr>
   <tr>
-   <td>워크플로우</td>
+   <td>워크플로</td>
    <td>
     <ul>
      <li>워크플로우 작업:

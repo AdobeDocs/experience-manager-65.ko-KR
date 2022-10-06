@@ -1,10 +1,11 @@
 ---
 title: AEM Assets API를 통해 콘텐츠를 업데이트하는 방법
 description: AEM Headless Developer 여정의 이 부분에서 REST API를 사용하여 컨텐츠 조각의 컨텐츠에 액세스하고 업데이트하는 방법을 알아봅니다.
-source-git-commit: 7f43d9d6b631b26f7b9293aa109498d0c8040436
+exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -12,7 +13,7 @@ ht-degree: 2%
 
 의 이 부분에서 [AEM Headless Developer 여정,](overview.md) rest API를 사용하여 컨텐츠 조각에 액세스하고 업데이트하는 방법을 알아봅니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 AEM 헤드리스 여정의 이전 문서에서, [AEM 배달 API를 통해 콘텐츠에 액세스하는 방법](access-your-content.md) AEM GraphQL API를 통해 AEM에서 헤드리스 컨텐츠에 액세스하는 방법을 배웠으며 이제 다음을 수행해야 합니다.
 
@@ -44,7 +45,7 @@ AEM 헤드리스 여정의 이전 문서에서, [AEM 배달 API를 통해 콘텐
 
 Assets REST API는 최신 Adobe Experience Manager 버전을 바로 설치할 때마다 사용할 수 있습니다.
 
-## 자산 HTTP API {#assets-http-api}
+## Assets HTTP API {#assets-http-api}
 
 자산 HTTP API는 다음을 포함합니다.
 
@@ -302,7 +303,7 @@ AEM Assets REST API 사용에 대한 자세한 내용은 다음을 참조할 수
 * Adobe Experience Manager Assets HTTP API(추가 리소스)
 * AEM Assets HTTP API의 컨텐츠 조각 지원(추가 리소스)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수행해야 합니다.
 
@@ -322,10 +323,10 @@ AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수�
 ## 추가 리소스 {#additional-resources}
 
 * [자산 HTTP API](/help/assets/mac-api-assets.md)
-* [컨텐츠 조각 REST API](/help/assets/assets-api-content-fragments.md)
+* [콘텐츠 조각 REST API](/help/assets/assets-api-content-fragments.md)
    * [API 참조](/help/assets/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - 컨텐츠 조각](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
-* [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
-* [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+* [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
+* [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM 설명](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [비디오 - AEM을 사용한 CORS용 개발](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)

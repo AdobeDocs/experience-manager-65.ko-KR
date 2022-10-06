@@ -12,7 +12,7 @@ exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
 workflow-type: tm+mt
 source-wordcount: '3681'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -273,7 +273,7 @@ AEM Workflows의 작업 할당 및 이메일 보내기 단계를 사용하여 �
 
 ### 워크플로우 인스턴스 제거 {#purge-workflow-instances}
 
-워크플로우 인스턴스 수를 최소화하면 워크플로우 엔진의 성능이 높아지므로 리포지토리에서 완료되거나 실행되는 워크플로우 인스턴스를 정기적으로 제거할 수 있습니다. 자세한 내용은 다음을 참조하십시오. [워크플로우 인스턴스 일반 삭제](/help/sites-administering/workflows-administering.md#regular) 워크플로우 인스턴스 삭제
+워크플로 인스턴스 수를 최소화하면 워크플로 엔진의 성능이 향상되므로 완료되었거나 실행 중인 워크플로 인스턴스를 저장소에서 정기적으로 제거할 수 있습니다. 자세한 내용은 다음을 참조하십시오. [워크플로우 인스턴스 일반 삭제](/help/sites-administering/workflows-administering.md#regular) 워크플로우 인스턴스 삭제
 
 ## 중요 데이터를 워크플로우 변수에 매개 변수화하고 외부 데이터 저장소에 저장합니다 {#externalize-wf-variables}
 

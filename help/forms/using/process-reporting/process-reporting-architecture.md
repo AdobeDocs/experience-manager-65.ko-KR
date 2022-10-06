@@ -1,8 +1,8 @@
 ---
 title: 프로세스 보고 작동 방식
-seo-title: 프로세스 보고 작동 방식
+seo-title: How Process Reporting Works
 description: JEE 프로세스 보고에서 AEM Forms을 구성하는 서비스에 대한 설명 및 프로세스 보고 UI를 소개합니다
-seo-description: JEE 프로세스 보고에서 AEM Forms을 구성하는 서비스에 대한 설명 및 프로세스 보고 UI를 소개합니다
+seo-description: Description of the services that make up the AEM Forms on JEE Process Reporting and an introduction to the Process Reporting UI
 uuid: 37e31985-088a-4ef6-ba57-10a01597a873
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,7 +12,7 @@ docset: aem65
 exl-id: 66dfac36-5b7e-40be-9921-efa9f2a9521c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -43,13 +43,13 @@ Process Reporting은 포함된 Process Reporting 저장소를 사용하여 Forms
 
 ProcessDataPublisher 서버는 AEM Forms 데이터베이스에서 주기적으로 실행되고 서비스를 마지막으로 실행한 이후 변경된 데이터를 추출합니다. 그런 다음 데이터를 Process Data Storage 서비스에 게시합니다.
 
-서비스 구성에 대한 자세한 내용은 [ProcessDataPublisher 서비스 구성](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)을 참조하십시오.
+서비스 구성에 대한 자세한 내용은 [ProcessDataPublisher 서비스 구성](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
 
 ### ProcessDataStorageProvider 서비스 {#processdatastorageprovider-service-br}
 
 ProcessDataStorageProvider 서비스는 ProcessDataPublisher 서비스에서 프로세스 데이터를 수신하여 Process Reporting 저장소에 저장합니다.
 
-서비스 구성에 대한 자세한 내용은 [Configure ProcessDataStorageProvider service](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p)을 참조하십시오.
+서비스 구성에 대한 자세한 내용은 [ProcessDataStorageProvider 서비스 구성](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
 
 ### OSGi 서비스 {#osgi-service-br}
 
@@ -65,7 +65,7 @@ QueryDataServlet 서비스는 Process Reporting 사용자 인터페이스의 쿼
 
 프로세스 보고 사용자 인터페이스는 웹 브라우저 기반 인터페이스입니다. 이 인터페이스를 사용하여 AEM Forms 데이터베이스에서 게시된 프로세스 및 작업 정보를 볼 수 있습니다.
 
-프로세스 보고 사용자 인터페이스에 대한 소개는 [프로세스 보고 사용자 인터페이스](/help/forms/using/process-reporting/introduction-process-reporting.md)를 참조하십시오.
+프로세스 보고 사용자 인터페이스에 대한 소개는 [프로세스 보고 사용자 인터페이스](/help/forms/using/process-reporting/introduction-process-reporting.md).
 
 ### QueryDataServlet 서비스 {#querydataservlet-service-br-1}
 
@@ -77,4 +77,4 @@ QueryDataServlet 서비스는 Process Reporting 사용자 인터페이스의 쿼
 
 고유한 사용자 지정 보고서를 생성하고 이러한 보고서를 프로세스 보고 사용자 인터페이스의 사용자 정의 보고서 탭에 표시할 수 있습니다.
 
-사용자 지정 보고서를 만드는 단계는 문서 [프로세스 보고 내 사용자 지정 보고서](/help/forms/using/process-reporting/process-reporting-custom-reports.md)에서 사용자 지정 보고서를 만들려면 을 참조하십시오.
+사용자 지정 보고서를 만드는 단계는 문서에서 사용자 지정 보고서를 만들려면 을 참조하십시오 [프로세스 보고의 사용자 지정 보고서](/help/forms/using/process-reporting/process-reporting-custom-reports.md).

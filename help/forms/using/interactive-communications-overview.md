@@ -69,7 +69,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 혜택 공
 - 이미지
 - [테마](/help/forms/using/themes.md) 웹 채널용
 
-## Interactive Communications와 서신 관리 {#interactive-communications-vs-correspondence-management}
+## 인터랙티브 통신과 서신 관리 {#interactive-communications-vs-correspondence-management}
 
 대화형 커뮤니케이션은 고객 커뮤니케이션을 만드는 기본적이고 권장되는 방법입니다. AEM 6.3 Forms 및 AEM 6.2 Forms에서 만든 문자를 계속 사용하려면 다음을 수행해야 합니다 [호환성 패키지 설치](/help/forms/using/compatibility-package.md). 다음은 Interactive Communication과 Letter의 기능을 비교한 것입니다.
 

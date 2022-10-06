@@ -5,7 +5,7 @@ exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 7b97bc0ffb0df6641ae71fa36c459f1368052e12
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 이 선택적 연속 [AEM Headless Developer 여정,](overview.md) AEM에서 헤드리스 게재를 기존의 전체 스택 CMS 기능과 결합하는 방법과 AEM SPA Editor 프레임워크를 사용하여 편집 가능한 SPA을 만들고 외부 SPA을 통합하여 필요에 따라 편집 기능을 활성화하는 방법을 살펴볼 수 있습니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 이 시점에서 전체 [AEM Headless Developer 여정](overview.md) 다음을 이해할 수 있도록 AEM에서 헤드리스 전달의 기본 사항을 이해합니다.
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ## 목표 {#objective}
 
-이 문서는 AEM SPA 편집기 프레임워크를 사용하여 단일 페이지 애플리케이션을 개발하는 방법을 이해하는 데 도움이 됩니다. 이 문서를 읽은 후에는 다음을 수행해야 합니다.
+이 문서는 AEM SPA 편집기 프레임워크를 사용하여 단일 페이지 애플리케이션을 개발하는 방법을 이해하는 데 도움이 됩니다. 이 문서를 읽고 나면
 
 * SPA 편집기의 기본 기능을 이해합니다.
 * 편집 가능한 SPA for AEM을 빌드하기 위한 요구 사항을 알아봅니다.
@@ -101,27 +101,27 @@ RemotePage 구성 요소를 사용하면 AEM에서 외부 SPA을 렌더링할 �
 
 AEM에서 외부 SPA을 편집 가능하게 만드는 방법에 대한 전체 설명은 다음을 참조하십시오. [추가 리소스](#additional-resources) 섹션을 참조하십시오.
 
-## 다음은 무엇입니까? {#what-is-next}
+## 다음 단계 {#what-is-next}
 
 고유한 SPA for AEM 개발을 시작하려면 다음 문서를 검토하십시오.
 
-* [SPA WKND 자습서](/help/sites-developing/spa-wknd.md)
+* [SPA WKND 튜토리얼](/help/sites-developing/spa-wknd.md)
 * [React 사용 시작](/help/sites-developing/spa-getting-started-react.md)
 * [angular 사용 시작](/help/sites-developing/spa-getting-started-angular.md)
 
 AEM에서 사용하려면 기존 SPA을 조정해야 하는 경우 다음 문서를 검토하십시오.
 
 * [RemotePage 구성 요소](/help/sites-developing/spa-remote-page.md)
-* [AEM 내에서 외부 SPA 편집](/help/sites-developing/spa-edit-external.md)
+* [AEM에서 외부 SPA 편집](/help/sites-developing/spa-edit-external.md)
 
 아래 참조: [추가 리소스](#additional-resources) AEM의 SPA 주제를 자세히 살펴봅니다.
 
 ## 추가 리소스 {#additional-resources}
 
-다음은 이 문서에서 언급된 몇 가지 개념을 자세히 설명하는 몇 가지 추가 리소스입니다.
+다음은 이 문서에서 언급한 몇 가지 개념에 대해 자세히 설명하는 몇 가지 추가 리소스입니다.
 
 * [AEM의 헤드리스 및 헤드리스](/help/sites-developing/headful-headless.md) - AEM에서 사용할 수 있는 다양한 게재 모델에 대한 설명입니다
-* [SPA 소개 및 연습.](/help/sites-developing/spa-walkthrough.md) AEM에서 SPA을 잘 소개하다
+* [SPA 소개 및 워크스루.](/help/sites-developing/spa-walkthrough.md) AEM에서 SPA을 잘 소개하다
 * [SPA for AEM 개발](/help/sites-developing/spa-architecture.md) - SPA for AEM 개발 지침
 * [SPA 편집기 개요](/help/sites-developing/spa-overview.md) - SPA 편집기 작동 방식 세부 사항
 * [서버 측 렌더링](/help/sites-developing/spa-ssr.md) - AEM SPA용 SSR을 구성하는 방법

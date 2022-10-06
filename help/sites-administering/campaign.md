@@ -1,8 +1,8 @@
 ---
 title: Adobe Campaign과 통합
-seo-title: Adobe Campaign과 통합
+seo-title: Integrating with Adobe Campaign
 description: AEM을 Adobe Campaign과 통합하는 방법을 알아봅니다.
-seo-description: AEM을 Adobe Campaign과 통합하는 방법을 알아봅니다.
+seo-description: Learn how to integrate AEM with Adobe Campaign.
 uuid: 6113279e-d1f5-46c3-ac94-50270fa55060
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 24%
+source-wordcount: '139'
+ht-degree: 26%
 
 ---
 
@@ -35,4 +35,4 @@ Adobe Campaign은 온라인과 오프라인 채널에서 모두 캠페인을 개
 
 >[!NOTE]
 >
->관련 AEM 커뮤니티 문서를 검토하려면 다음을 참조하십시오.[Adobe Experience Manager과 Adobe Campaign Standard을 통합하여 Newletter](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)를 만듭니다.
+>관련 AEM 커뮤니티 문서를 검토하려면 다음을 참조하십시오. [Adobe Experience Manager과 Adobe Campaign Standard을 통합하여 뉴스레터 만들기](https://helpx.adobe.com/experience-manager/using/aem_campaign.html).

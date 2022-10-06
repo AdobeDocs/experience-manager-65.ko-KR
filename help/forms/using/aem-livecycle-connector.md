@@ -1,8 +1,8 @@
 ---
 title: AEM Forms과 Adobe LiveCycle 연결
-seo-title: AEM Forms과 Adobe LiveCycle 연결
+seo-title: Connecting AEM Forms with Adobe LiveCycle
 description: AEM LiveCycle 커넥터를 사용하면 AEM 앱 및 워크플로우 내에서 LiveCycle ES4 문서 서비스 를 시작할 수 있습니다.
-seo-description: AEM LiveCycle 커넥터를 사용하면 AEM 앱 및 워크플로우 내에서 LiveCycle ES4 문서 서비스 를 시작할 수 있습니다.
+seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,7 +12,7 @@ role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -23,15 +23,15 @@ AEM(Adobe Experience Manager) LiveCycle 커넥터를 사용하면 AEM 웹 앱 �
 
 ## Adobe LiveCycle에 AEM 서버 연결 {#connecting-aem-server-to-adobe-livecycle}
 
-AEM LiveCycle 커넥터는 [AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md)의 일부입니다. AEM Forms 추가 기능 패키지를 설치한 후 다음 단계를 수행하여 AEM 웹 콘솔에 LiveCycle 서버의 세부 정보를 추가합니다.
+AEM LiveCycle 커넥터가 [AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md). AEM Forms 추가 기능 패키지를 설치한 후 다음 단계를 수행하여 AEM 웹 콘솔에 LiveCycle 서버의 세부 정보를 추가합니다.
 
 1. AEM 웹 콘솔 구성 관리자에서 Adobe LiveCycle 클라이언트 SDK 구성 구성 요소를 찾습니다.
 1. 구성 서버 URL, 사용자 이름 및 암호를 편집하려면 구성 요소를 클릭합니다.
-1. 설정을 검토하고 **저장**&#x200B;을 클릭합니다.
+1. 설정을 검토하고 를 클릭합니다. **저장**.
 
 속성은 자동 설명이지만 중요한 속성은 다음과 같습니다.
 
-* **서버 URL**  - LiveCycle 서버의 URL을 지정합니다. LiveCycle 및 AEM이 https를 통해 통신하도록 하려면 다음 JVM으로 AEM을 시작합니다
+* **서버 URL** - LiveCycle 서버의 URL을 지정합니다. LiveCycle 및 AEM이 https를 통해 통신하도록 하려면 다음 JVM으로 AEM을 시작합니다
 
    ```java
    argument
@@ -40,13 +40,13 @@ AEM LiveCycle 커넥터는 [AEM Forms 추가 기능 패키지](/help/forms/using
 
    선택 사항입니다.
 
-* **사용자 이름** - AEM과 LiveCycle 간의 통신을 설정하는 데 사용되는 계정의 사용자 이름을 지정합니다. 계정은 Document Services를 시작할 수 있는 권한이 있는 LiveCycle 사용자 계정입니다.
-* **암호** - 암호를 지정합니다.
-* **서비스 이름**  - 사용자 이름 및 암호 필드에 제공된 사용자 자격 증명을 사용하여 시작하는 서비스를 지정합니다. 기본적으로 LiveCycle 서비스를 시작하는 동안 자격 증명이 전달되지 않습니다.
+* **사용자 이름**- AEM과 LiveCycle 간의 통신을 설정하는 데 사용되는 계정의 사용자 이름을 지정합니다. 계정은 Document Services를 시작할 수 있는 권한이 있는 LiveCycle 사용자 계정입니다.
+* **암호**- 암호를 지정합니다.
+* **서비스 이름** - 사용자 이름 및 암호 필드에 제공된 사용자 자격 증명을 사용하여 시작하는 서비스를 지정합니다. 기본적으로 LiveCycle 서비스를 시작하는 동안 자격 증명이 전달되지 않습니다.
 
 ## 문서 서비스를 시작하는 중 {#starting-document-services}
 
-클라이언트 응용 프로그램은 Java API, 웹 서비스, 원격 및 REST를 사용하여 프로그래밍 방식으로 LiveCycle 서비스를 시작할 수 있습니다. Java 클라이언트의 경우, 애플리케이션에서 LiveCycle SDK를 사용할 수 있습니다. LiveCycle SDK는 이러한 서비스를 원격으로 시작하기 위한 Java API를 제공합니다. 예를 들어 Microsoft Word 문서를 PDF로 변환하려면 클라이언트가 GeneratePDFervice를 시작합니다. 호출 흐름은 다음 단계로 구성됩니다.
+클라이언트 응용 프로그램은 Java API, 웹 서비스, 원격 및 REST를 사용하여 프로그래밍 방식으로 LiveCycle 서비스를 시작할 수 있습니다. Java 클라이언트의 경우, 애플리케이션에서 LiveCycle SDK를 사용할 수 있습니다. LiveCycle SDK는 이러한 서비스를 원격으로 시작하기 위한 Java API를 제공합니다. 예를 들어 Microsoft Word 문서를 PDF으로 변환하려면 클라이언트가 GeneratePDFervice를 시작합니다. 호출 흐름은 다음 단계로 구성됩니다.
 
 1. ServiceClientFactory 인스턴스를 만듭니다.
 1. 각 서비스는 클라이언트 클래스를 제공합니다. 서비스를 시작하려면 서비스의 클라이언트 인스턴스를 만듭니다.
@@ -54,7 +54,7 @@ AEM LiveCycle 커넥터는 [AEM Forms 추가 기능 패키지](/help/forms/using
 
 AEM LiveCycle 커넥터 은 이러한 클라이언트 인스턴스를 표준 OSGi 수단을 사용하여 액세스할 수 있는 OSGi 서비스로 노출하여 흐름을 단순화합니다. LiveCycle 커넥터는 다음 기능을 제공합니다.
 
-* OSGi 서비스로서의 클라이언트 인스턴스: OSGI 번들로 패키지된 클라이언트는 [문서 서비스 목록](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) 섹션에 나열되어 있습니다. 각 클라이언트 jar는 OSGi 서비스 레지스트리에 클라이언트 인스턴스를 OSGi 서비스로 등록합니다.
+* OSGi 서비스로서의 클라이언트 인스턴스: OSGI 번들로 패키지된 클라이언트는 [문서 서비스 목록](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) 섹션을 참조하십시오. 각 클라이언트 jar는 OSGi 서비스 레지스트리에 클라이언트 인스턴스를 OSGi 서비스로 등록합니다.
 * 사용자 자격 증명 전파: LiveCycle 서버에 연결하는 데 필요한 연결 세부 정보는 중앙 위치에서 관리됩니다.
 * ServiceClientFactory 서비스: 프로세스를 시작하기 위해 클라이언트 응용 프로그램이 ServiceClientFactory 인스턴스에 액세스할 수 있습니다.
 
@@ -82,7 +82,7 @@ AEM 내에서 노출된 서비스를 시작하려면 다음 단계를 수행하�
    </dependency>
    ```
 
-   서비스를 시작하려면 서비스에 대한 해당 Maven 종속성을 추가합니다. 종속성 목록은 [문서 서비스 목록](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p)을 참조하십시오. 예를 들어 PDF 생성 서비스의 경우 다음 종속성을 추가합니다.
+   서비스를 시작하려면 서비스에 대한 해당 Maven 종속성을 추가합니다. 종속성 목록에 대해서는 다음을 참조하십시오 [문서 서비스 목록](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). 예를 들어 PDF 생성 서비스의 경우 다음 종속성을 추가합니다.
 
    ```xml
    <dependency>
@@ -116,7 +116,7 @@ AEM 내에서 노출된 서비스를 시작하려면 다음 단계를 수행하�
                );
    ```
 
-   위의 코드 조각은 문서를 PDF로 변환하기 위해 GeneratePdfServiceClient의 createPDF API를 시작합니다. 다음 코드를 사용하여 JSP에서 유사한 호출을 수행할 수 있습니다. 가장 큰 차이점은 다음 코드가 Sling ScriptHelper를 사용하여 GeneratePdfServiceClient에 액세스한다는 것입니다.
+   위의 코드 조각은 문서를 PDF으로 변환하기 위해 GeneratePdfServiceClient의 createPDF API를 시작합니다. 다음 코드를 사용하여 JSP에서 유사한 호출을 수행할 수 있습니다. 가장 큰 차이점은 다음 코드가 Sling ScriptHelper를 사용하여 GeneratePdfServiceClient에 액세스한다는 것입니다.
 
    ```jsp
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>

@@ -1,8 +1,8 @@
 ---
 title: AEM 문서 서비스 개요
-seo-title: AEM 문서 서비스 개요
-description: AEM Document Services는 PDF 문서를 작성, 조립 및 보호하기 위한 OSGi 서비스 세트입니다.
-seo-description: AEM Document Services는 PDF 문서를 작성, 조립 및 보호하기 위한 OSGi 서비스 세트입니다.
+seo-title: Overview of AEM Document Services
+description: AEM Document Services는 PDF 문서를 생성, 조립 및 보호하기 위한 OSGi 서비스 세트입니다.
+seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
 uuid: 439144b7-f805-4819-9ed9-a6e9e374b5ed
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,14 +12,14 @@ docset: aem65
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
 
 # AEM 문서 서비스 개요{#overview-of-aem-document-services}
 
-AEM Document Services는 PDF 문서를 작성, 조립 및 보호하기 위한 OSGi 서비스 세트입니다. 문서 서비스에는 다음 서비스가 포함됩니다.
+AEM Document Services는 PDF 문서를 생성, 조립 및 보호하기 위한 OSGi 서비스 세트입니다. 문서 서비스에는 다음 서비스가 포함됩니다.
 
 ## 출력 서비스 {#output-service}
 
@@ -40,11 +40,11 @@ AEM Document Services는 PDF 문서를 작성, 조립 및 보호하기 위한 OS
 
 다음 네 가지 출력 서비스 작업을 사용할 수 있습니다.
 
-* **generatePDFOuput**:양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다
-* **generatePrintedOutput**:양식 디자인을 양식 데이터와 병합하여 레이저나 레이블 네트워크 프린터로 전송할 문서를 생성합니다
+* **generatePDFOuput**: 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다
+* **generatePrintedOutput**: 양식 디자인을 양식 데이터와 병합하여 레이저나 레이블 네트워크 프린터로 전송할 문서를 생성합니다
 
-* **generatePDFOutputBatch**:여러 템플릿을 단일 호출에서 여러 데이터 레코드와 병합하여 PDF 파일 일괄 처리를 생성합니다. 또한 모든 PDF를 결합하여 단일 PDF를 생성하는 옵션도 있습니다
-* **generatePrintedOutputBatch**:단일 호출에서 여러 템플릿과 여러 데이터 레코드를 병합하여 문서 일괄 처리(PS,PCL,ZPL,DPL,IPL,TPCL)를 생성합니다. 단일 인쇄 문서를 생성하는 옵션도 있습니다.
+* **generatePDFOutputBatch**: 여러 템플릿을 단일 호출에서 여러 데이터 레코드와 병합하여 PDF 파일 배치를 생성합니다. 또한 모든 PDF을 결합하여 단일 PDF을 생성하는 옵션이 있습니다
+* **generatePrintedOutputBatch**: 단일 호출에서 여러 템플릿과 여러 데이터 레코드를 병합하여 문서 일괄 처리(PS,PCL,ZPL,DPL,IPL,TPCL)를 생성합니다. 단일 인쇄 문서를 생성하는 옵션도 있습니다.
 
 ## 어셈블러 서비스 {#assembler-service}
 
@@ -57,19 +57,19 @@ AEM Document Services는 PDF 문서를 작성, 조립 및 보호하기 위한 OS
 * 서명되거나 서명되지 않은 PDF 문서를 변환합니다(디지털 서명 필요).
 * PDF/A 파일의 준수 여부를 확인하고 필요한 경우 변환합니다.
 
-### DDX {#about-ddx} 정보
+### DDX {#about-ddx}
 
-어셈블러 서비스를 사용하는 경우 DDX(문서 설명 XML)라는 XML 기반 언어를 사용하여 원하는 출력을 설명합니다. DDX는 요소가 문서 빌딩 블록을 나타내는 선언적 마크업 언어입니다. 이러한 빌딩 블록에는 PDF 문서, XDP 문서, XDP 양식 조각 및 주석, 책갈피, 스타일이 지정된 텍스트와 같은 기타 요소가 포함됩니다.
+어셈블러 서비스를 사용하는 경우 DDX(문서 설명 XML)라는 XML 기반 언어를 사용하여 원하는 출력을 설명합니다. DDX는 요소가 문서 빌딩 블록을 나타내는 선언적 마크업 언어입니다. 이러한 빌딩 블록에는 PDF 문서, XDP 문서, XDP 양식 조각 및 주석, 책갈피 및 스타일이 지정된 텍스트와 같은 기타 요소가 포함됩니다.
 
 DDX 문서는 다음과 같은 특성을 사용하여 결과 문서를 지정할 수 있습니다.
 
 * 여러 PDF 문서에서 어셈블된 PDF 문서
-* 단일 PDF 문서와 별도로 분할되는 여러 PDF 문서
-* 자체 포함된 사용자 인터페이스와 여러 PDF 및 PDF 이외의 문서가 포함된 PDF Portfolio
+* 단일 PDF 문서와 분리된 여러 PDF 문서
+* 자체 포함된 사용자 인터페이스와 여러 PDF 및 비PDF 문서를 포함하는 PDF Portfolio
 * 여러 XDP 문서에서 어셈블된 XDP 문서
 * XDP 문서에 동적으로 삽입되는 XML 조각이 포함된 XDP 문서
 * XDP 문서를 패키지하는 PDF 문서
-* PDF 문서의 특성을 보고하는 XML 파일입니다. 보고된 특성에는 텍스트, 주석, 양식 데이터, 파일 첨부 파일, PDF Portfolio에 사용되는 파일, 책갈피 및 PDF 속성이 있습니다. PDF 속성에는 양식 속성, 페이지 회전 및 문서 작성자가 포함됩니다.
+* PDF 문서의 특성을 보고하는 XML 파일입니다. 보고된 특성에는 텍스트, 주석, 양식 데이터, 파일 첨부 파일, PDF Portfolio, 책갈피 및 PDF 속성에 사용되는 파일이 포함됩니다. PDF 속성에는 양식 속성, 페이지 회전 및 문서 작성자가 포함됩니다.
 
 DDX를 사용하여 PDF 문서를 문서 어셈블리 또는 디스어셈블리의 일부로 늘릴 수 있습니다. 다음 효과의 조합을 지정할 수 있습니다.
 
@@ -83,7 +83,7 @@ DDX를 사용하여 PDF 문서를 문서 어셈블리 또는 디스어셈블리�
 * 암호화된 PDF에 대한 권한을 설정합니다.
 * 페이지를 회전하거나 페이지에서 컨텐츠를 회전 및 이동합니다.
 * 선택한 페이지의 크기를 변경합니다.
-* XFA 기반의 PDF와 데이터를 병합합니다.
+* 데이터를 XFA 기반의 PDF과 병합합니다.
 
 단순 입력 맵을 사용하여 소스 및 결과 문서의 위치를 지정할 수 있습니다. 다음 외부 데이터 URL 유형을 사용할 수도 있습니다.
 
@@ -95,7 +95,7 @@ DDX를 사용하여 PDF 문서를 문서 어셈블리 또는 디스어셈블리�
 
 Doc Assurance Service를 사용하면 문서를 암호화 및 해독하고, Adobe Reader의 기능을 확장하며 사용 권한을 추가로 제공하고 문서에 디지털 서명을 추가할 수 있습니다. 사용자는 PDF forms 및 문서와 쉽게 상호 작용할 수 있으며, 조직은 보안, 아카이빙 및 규정 준수를 강화합니다.
 
-Doc Assurance 서비스에는 다음 세 가지 서비스가 포함됩니다.서명, 암호화 및 reader 확장
+Doc Assurance 서비스에는 다음 세 가지 서비스가 포함됩니다. 서명, 암호화 및 reader 확장
 
 ### 서명 서비스 {#signature-service}
 
@@ -109,26 +109,26 @@ Doc Assurance 서비스에는 다음 세 가지 서비스가 포함됩니다.서
 
 ### 암호화 서비스 {#encryption-service}
 
-암호화 서비스를 사용하면 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 문서의 내용을 읽을 수 없게 됩니다. 전체 PDF 문서(컨텐트, 메타데이터 및 첨부 파일 포함)를 암호화하고 해당 메타데이터가 아닌 모든 문서 또는 첨부 파일만 암호화할 수 있습니다. 권한이 있는 사용자는 문서를 해독하여 해당 내용에 대한 액세스 권한을 얻을 수 있습니다. PDF 문서가 암호로 암호화되어 있는 경우, Adobe Reader 또는 Acrobat에서 문서를 보려면 먼저 열린 암호를 지정해야 합니다. PDF 문서가 인증서로 암호화되어 있는 경우 사용자는 개인 키(인증서)를 사용하여 PDF 문서를 해독해야 합니다. PDF 문서를 해독하는 데 사용되는 개인 키는 암호화하는 데 사용되는 공개 키와 일치해야 합니다.
+암호화 서비스를 사용하면 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 문서의 내용을 읽을 수 없게 됩니다. 전체 PDF 문서(컨텐트, 메타데이터 및 첨부 파일 포함)와 해당 메타데이터 이외의 모든 항목 또는 첨부 파일만 암호화할 수 있습니다. 권한이 있는 사용자는 문서를 해독하여 해당 내용에 대한 액세스 권한을 얻을 수 있습니다. PDF 문서가 암호로 암호화되어 있는 경우, Adobe Reader 또는 Acrobat에서 문서를 볼 수 있으려면 먼저 열린 암호를 지정해야 합니다. PDF 문서가 인증서로 암호화되어 있는 경우 사용자는 개인 키(인증서)를 사용하여 PDF 문서의 암호를 해독해야 합니다. PDF 문서를 해독하는 데 사용되는 개인 키는 암호화하는 데 사용되는 공개 키와 일치해야 합니다.
 
 ### Reader 확장 서비스 {#reader-extension-service}
 
-Reader 확장 서비스를 사용하면 조직에서 추가 사용 권한과 함께 Adobe Reader의 기능을 확장하여 대화형 PDF 문서를 쉽게 공유할 수 있습니다. Reader 확장 서비스는 Adobe Reader 7.0 이상에서 작동합니다. 이 서비스는 PDF 문서에 사용 권한을 추가합니다. 이 작업을 수행하면 Adobe Reader을 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능(문서에 주석 추가, 양식 채우기, 문서 저장 등)이 활성화됩니다. 타사 사용자는 권한이 활성화된 문서에서 작업할 추가 소프트웨어 또는 플러그인이 필요하지 않습니다.
+Reader 확장 서비스를 사용하면 조직에서 Adobe Reader의 기능을 추가 사용 권한과 함께 확장하여 대화형 PDF 문서를 쉽게 공유할 수 있습니다. Reader 확장 서비스는 Adobe Reader 7.0 이상에서 작동합니다. 이 서비스는 PDF 문서에 사용 권한을 추가합니다. 이 작업을 수행하면 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능(예: 문서에 주석 추가, 양식 채우기, 문서 저장)이 활성화됩니다. 타사 사용자는 권한이 활성화된 문서에서 작업할 추가 소프트웨어 또는 플러그인이 필요하지 않습니다.
 
 PDF 문서에 적절한 사용 권한이 추가되면 수신자는 Adobe Reader 내에서 다음 활동을 수행할 수 있습니다.
 
-* 온라인 또는 오프라인에서 PDF 문서 및 양식을 작성하여 수신자가 자신의 레코드에 대한 사본을 로컬로 저장하고 추가된 정보를 그대로 유지할 수 있습니다
+* 온라인 또는 오프라인에서 PDF 문서 및 양식을 작성하여 수신자가 자신의 레코드에 대한 사본을 로컬로 저장하고 추가 정보를 그대로 유지할 수 있습니다
 * PDF 문서를 로컬 하드 드라이브에 저장하여 원본 문서와 추가 주석, 데이터 또는 첨부 파일을 유지합니다
 * PDF 문서에 파일 및 미디어 클립 첨부
 * 업계 표준 PKI(Public Key Infrastructure) 기술을 사용하여 디지털 서명을 적용하여 PDF 문서에 서명, 인증 및 인증합니다
-* 완료된 PDF 문서 또는 주석을 전자 형식으로 제출
+* 완료되었거나 주석 달기 된 PDF 문서를 전자적으로 제출
 * PDF 문서 및 양식을 내부 데이터베이스 및 웹 서비스에 대한 직관적인 개발 프런트 엔드로 사용
 * 검토자가 직관적인 마크업 도구를 사용하여 주석을 추가할 수 있도록 PDF 문서를 다른 사용자와 공유합니다. 이러한 도구에는 전자 스티커 노트, 스탬프, 강조 및 텍스트 취소선이 포함됩니다. Acrobat에서도 동일한 기능을 사용할 수 있습니다.
 * 바코드 양식 디코딩을 지원합니다.
 
-이러한 특수 사용자 기능은 권한이 활성화된 PDF 문서가 Adobe Reader 내에서 열리면 자동으로 활성화됩니다. 사용자가 권한이 활성화된 문서 작업을 마치면 Adobe Reader에서 해당 기능이 다시 비활성화됩니다. 사용자가 다른 권한이 활성화된 PDF 문서를 받을 때까지 비활성화된 상태로 유지됩니다.
+이러한 특수 사용자 기능은 Adobe Reader 내에서 권한이 활성화된 PDF 문서가 열릴 때 자동으로 활성화됩니다. 사용자가 권한이 활성화된 문서 작업을 마치면 Adobe Reader에서 해당 기능이 다시 비활성화됩니다. 사용자가 다른 권한 사용 PDF 문서를 받을 때까지 비활성화된 상태로 유지됩니다.
 
-기본적으로 DocAssurance 서비스를 사용할 수 없습니다. DocAssurance 서비스를 구성하려면 [문서 서비스 설치 및 구성](../../forms/using/install-configure-document-services.md)을 참조하십시오.
+기본적으로 DocAssurance 서비스를 사용할 수 없습니다. DocAssurance 서비스를 구성하려면 다음을 참조하십시오 [문서 서비스 설치 및 구성](../../forms/using/install-configure-document-services.md).
 
 ## 프린터 서비스로 보내기 {#send-to-printer-service}
 

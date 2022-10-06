@@ -1,8 +1,8 @@
 ---
 title: 검색 템플릿 사용자 지정
-seo-title: 검색 템플릿 사용자 지정
+seo-title: Customizing search templates
 description: Workspace에서 수행할 작업 및 추적 페이지에서 프로세스 인스턴스를 검색하는 데 사용할 검색 템플릿을 만들 수 있습니다. 기존 검색 템플릿을 편집하거나 삭제할 수도 있습니다.
-seo-description: Workspace에서 수행할 작업 및 추적 페이지에서 프로세스 인스턴스를 검색하는 데 사용할 검색 템플릿을 만들 수 있습니다. 기존 검색 템플릿을 편집하거나 삭제할 수도 있습니다.
+seo-description: You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
 uuid: 2043ba8a-07f0-4054-af3c-f3a14c2183ab
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -29,14 +29,14 @@ Workspace에서 수행할 작업 및 추적 페이지에서 프로세스 인스�
 >
 >검색 템플릿을 저장할 때 고유한 이름을 지정해야 합니다. 그렇지 않으면 경고 메시지 없이 기존 템플릿을 덮어쓸 수 있습니다.
 
-## 단순 검색 템플릿 {#create-a-simple-search-template} 만들기
+## 단순 검색 템플릿 만들기 {#create-a-simple-search-template}
 
 1. 관리 콘솔에서 서비스 > 작업 공간 > 템플릿 검색을 클릭합니다.
 1. 식별 탭의 템플릿 설명 검색 상자에서 템플릿의 용도를 제공합니다.
 1. (선택 사항) 기준 탭을 클릭하고 템플릿에 대한 검색 기준을 지정합니다.
 1. 저장 탭을 클릭하고 템플릿의 고유 이름을 입력한 다음 저장을 클릭합니다.
 
-## 검색 템플릿 {#create-or-edit-a-search-template} 만들기 또는 편집
+## 검색 템플릿 만들기 또는 편집 {#create-or-edit-a-search-template}
 
 1. 관리 콘솔에서 서비스 > 작업 공간 > 템플릿 검색을 클릭합니다.
 1. (선택 사항) 기존 템플릿을 편집하거나 기존 템플릿을 새 템플릿의 기반으로 사용하는 경우 템플릿 이름 검색 목록에서 템플릿을 선택합니다.
@@ -83,7 +83,7 @@ Workspace에서 수행할 작업 및 추적 페이지에서 프로세스 인스�
 1. (선택 사항) 새 검색 템플릿을 만드는 경우 고유한 이름을 지정합니다. 고유한 이름을 지정하지 않으면 기존 템플릿을 덮어쓸 수 있습니다.
 1. 저장 단추를 클릭합니다.
 
-## 검색 템플릿 {#delete-a-search-template} 삭제
+## 검색 템플릿 삭제 {#delete-a-search-template}
 
 1. 식별 탭의 검색 템플릿 이름 목록에서 이름을 선택합니다.
 1. 이 템플릿 삭제를 클릭하고 확인을 클릭합니다.

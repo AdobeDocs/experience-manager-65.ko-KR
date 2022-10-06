@@ -1,8 +1,8 @@
 ---
 title: HSM을 사용하여 문서에 디지털 서명 또는 인증
-seo-title: HSM을 사용하여 eSigned 문서 인증
+seo-title: Use HSM to certify eSigned documents
 description: HSM 또는 토큰 장치를 사용하여 eSigned 문서를 인증합니다.
-seo-description: HSM 또는 토큰 장치를 사용하여 eSigned 문서를 인증합니다.
+seo-description: Use HSM or etoken devices to certify eSigned documents
 uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
 contentOwner: vishgupt
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 exl-id: 4d423881-18e0-430a-849d-e1762366a849
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
 
-# HSM을 사용하여 문서 {#use-hsm-to-digitally-sign-or-certify-documents} 디지털 서명 또는 인증
+# HSM을 사용하여 문서에 디지털 서명 또는 인증 {#use-hsm-to-digitally-sign-or-certify-documents}
 
 HSM(하드웨어 보안 모듈) 및 인터페이스는 디지털 키를 안전하게 관리, 처리 및 저장하도록 설계된 전용, 경화 및 변조가 불가능한 컴퓨팅 장치입니다. 이러한 장치는 컴퓨터 또는 네트워크 서버에 직접 연결됩니다.
 
@@ -30,10 +30,10 @@ Adobe Experience Manager Forms은 HSM 또는 토큰에 저장된 자격 증명�
 
 ## AEM Forms을 사용하여 HSM 또는 토큰 장치를 구성하기 전에 {#configurehsmetoken}
 
-* [AEM Forms 추가 기능](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 패키지를 설치합니다.
+* 설치 [AEM Forms 추가 기능](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 패키지.
 * AEM 서버와 동일한 컴퓨터에 HSM 또는 토큰 클라이언트 소프트웨어를 설치하고 구성합니다. 클라이언트 소프트웨어는 HSM 및 네트워크 장치와 통신하기 위해 필요합니다.
-* (Microsoft Windows만 해당) JAVA_HOME_32 환경 변수를 설정하여 32비트 버전의 Java 8 Development Kit(JDK 8)가 설치된 디렉터리를 가리킵니다. 디렉토리의 기본 경로는 C:\Program Files(x86)\Java\jdk&lt;version>입니다.
-* (OSGi의 AEM Forms만 해당) 트러스트 저장소에 루트 인증서를 설치합니다. 서명된 PDF를 확인해야 합니다
+* (Microsoft Windows만 해당) JAVA_HOME_32 환경 변수를 설정하여 32비트 버전의 Java 8 Development Kit(JDK 8)가 설치된 디렉토리를 가리킵니다. 디렉토리의 기본 경로는 C:\Program Files(x86)\Java\jdk입니다.&lt;version>
+* (OSGi의 AEM Forms만 해당) 트러스트 저장소에 루트 인증서를 설치합니다. 서명된 PDF을 확인해야 합니다
 
 >[!NOTE]
 >
@@ -45,11 +45,11 @@ Adobe Experience Manager Forms은 HSM 또는 토큰에 저장된 자격 증명�
 
 1. AEM Forms 환경의 작성자 인스턴스를 중지합니다.
 
-1. 편집할 [AEM_root]\crx-quickstart\conf\sling.properties 파일을 엽니다.
+1. 를 엽니다. [AEM_root]\crx-quickstart\conf\sling.properties 파일을 편집할 수 있습니다.
 
    >[!NOTE]
    >
-   >[AEM_root]\crx-quickstart\bin\start.bat 파일을 사용하여 AEM 인스턴스를 시작한 경우 편집할 [AEM_root]\crx-quickstart\sling.properties 파일을 엽니다.
+   >를 사용한 경우 [AEM_root]\crx-quickstart\bin\start.bat 파일을 열어 AEM 인스턴스를 시작한 다음 엽니다. [AEM_root]\crx-quickstart\sling.properties 파일을 편집할 수 있습니다.
 
 1. sling.properties 파일에 다음 속성을 추가하거나 바꿉니다.
 
@@ -62,33 +62,33 @@ Adobe Experience Manager Forms은 HSM 또는 토큰에 저장된 자격 증명�
 1. sling.properties 파일을 저장하고 닫습니다.
 1. AEM 인스턴스를 다시 시작합니다.
 
-## Reader 확장 {#set-up-certificates-for-reader-extensions} 인증서 설정
+## Reader 확장에 대한 인증서 설정 {#set-up-certificates-for-reader-extensions}
 
 인증서를 설정하려면 다음 단계를 수행하십시오.
 
 1. 관리자로 AEM 작성자 인스턴스에 로그인합니다.
 
-1. 전역 탐색 막대에서&#x200B;**Adobe Experience Manager**&#x200B;을 클릭합니다. **도구** > **보안** > **사용자**&#x200B;로 이동합니다.
-1. 사용자 계정의 **name** 필드를 클릭합니다. **사용자 설정 편집** 페이지가 열립니다.
-1. AEM 작성자 인스턴스에서 인증서는 KeyStore에 있습니다. 이전에 KeyStore를 만들지 않은 경우 **Create KeyStore**&#x200B;를 클릭하고 KeyStore에 새 암호를 설정합니다. 서버에 이미 KeyStore가 있는 경우 이 단계를 건너뜁니다.
+1. 클릭&#x200B;**Adobe Experience Manager** 전역 탐색 막대에서 클릭합니다. 이동 **도구** >  **보안** >  **사용자**.
+1. 을(를) 클릭합니다. **이름** 사용자 계정 필드입니다. 다음 **사용자 설정 편집** 페이지가 열립니다.
+1. AEM 작성자 인스턴스에서 인증서는 KeyStore에 있습니다. 이전에 KeyStore를 만들지 않은 경우 **키 저장소 만들기** KeyStore에 새 암호를 설정합니다. 서버에 이미 KeyStore가 있는 경우 이 단계를 건너뜁니다.
 
-1. **사용자 설정 편집** 페이지에서 **키 저장소 관리**&#x200B;를 클릭합니다.
+1. 설정 **사용자 설정 편집** 페이지를 클릭한 다음 **키 저장소 관리**.
 
-1. 키 저장소 관리 대화 상자에서 **키 저장소 파일에서 개인 키 추가** 옵션을 확장하고 별칭을 제공합니다. 별칭은 확장 Reader 작업을 수행하는 데 사용됩니다.
-1. 인증서 파일을 업로드하려면 **키 저장소 파일 선택**&#x200B;을 클릭하고 `.pfx` 파일을 업로드합니다.
-1. 인증서에 연결된 **키 저장소 암호**,**개인 키 암호** 및 **개인 키 별칭**&#x200B;을 각 필드에 추가합니다. **제출**&#x200B;을 클릭합니다.
-
-   >[!NOTE]
-   >
-   >인증서의 P **개인 키 별칭**&#x200B;을 확인하려면 Java 키 도구 명령을 사용할 수 있습니다.`keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+1. 키 저장소 관리 대화 상자에서 **키 저장소 파일에서 개인 키 추가** 옵션을 선택하고 별칭을 제공합니다. 별칭은 확장 Reader 작업을 수행하는 데 사용됩니다.
+1. 인증서 파일을 업로드하려면 **키 저장소 파일 선택** 업로드하고 `.pfx` 파일.
+1. 추가 **키 저장소 암호**,**개인 키 암호**, 및 **개인 키 별칭** 인증서 및 각 필드와 연결됩니다. 클릭 **제출**.
 
    >[!NOTE]
    >
-   >**키 저장소 암호** 및 **개인 키 암호** 필드에서 인증서 파일과 함께 제공된 암호를 지정합니다.
+   >P를 확인하려면&#x200B;**개인 키 별칭** 인증서의 Java 키 도구 명령을 사용할 수 있습니다. `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+
+   >[!NOTE]
+   >
+   >에서 **키 저장소 암호** 및 **개인 키 암호** 필드에서 인증서 파일과 함께 제공된 암호를 지정합니다.
 
 >[!NOTE]
 >
->OSGi의 AEM Forms에서 서명된 PDF를 확인하려면 Trust Store에 설치된 루트 인증서를 확인합니다.
+>OSGi의 AEM Forms에서 서명된 PDF을 확인하려면 Trust Store에 설치된 루트 인증서를 확인합니다.
 
 >[!NOTE]
 >
@@ -98,20 +98,20 @@ Adobe Experience Manager Forms은 HSM 또는 토큰에 저장된 자격 증명�
 
 별칭에는 HSM 또는 토큰에 필요한 모든 매개 변수가 포함되어 있습니다. eSign 또는 Digital Signatures에서 사용하는 각 HSM 또는 전자 서명 자격 증명의 별칭을 만들려면 아래 나열된 지침을 따르십시오.
 
-1. AEM 콘솔을 엽니다. AEM 콘솔의 기본 URL은 https://&lt;host>:&lt;port>/system/console/configMgr 입니다.
-1. **HSM 자격 증명 구성 서비스**&#x200B;를 열고 다음 필드에 값을 지정합니다.
+1. AEM 콘솔을 엽니다. AEM 콘솔의 기본 URL은 https:// 입니다.&lt;host>:&lt;port>/system/console/configMgr
+1. 를 엽니다. **HSM 자격 증명 구성 서비스** 및 다음 필드에 값을 지정합니다.
 
-   * **자격 증명 별칭**:별칭을 식별하는 데 사용되는 문자열을 지정합니다. 이 값은 서명 서명 필드 작업과 같은 일부 디지털 서명 작업의 속성으로 사용됩니다.
-   * **DLL 경로**:서버에서 HSM 또는 토큰 클라이언트 라이브러리의 정규화된 경로를 지정합니다. 예: C:\Program Files\LunaSA\cryptoki.dll 클러스터된 환경에서 이 경로는 클러스터의 모든 서버에 대해 동일해야 합니다.
-   * **HSM Pin**:장치 키에 액세스하는 데 필요한 암호를 지정합니다.
-   * **HSM 슬롯 Id**:정수 유형의 슬롯 식별자를 지정합니다. 슬롯 ID는 클라이언트별로 설정됩니다. 두 번째 컴퓨터를 다른 파티션(예: 동일한 HSM 장치의 HSMPART2)에 등록하는 경우 슬롯 1은 클라이언트의 HSMPART2 파티션과 연결됩니다.
+   * **자격 증명 별칭**: 별칭을 식별하는 데 사용되는 문자열을 지정합니다. 이 값은 서명 서명 필드 작업과 같은 일부 디지털 서명 작업의 속성으로 사용됩니다.
+   * **DLL 경로**: 서버에서 HSM 또는 토큰 클라이언트 라이브러리의 정규화된 경로를 지정합니다. 예: C:\Program Files\LunaSA\cryptoki.dll 클러스터된 환경에서 이 경로는 클러스터의 모든 서버에 대해 동일해야 합니다.
+   * **HSM 핀**: 장치 키에 액세스하는 데 필요한 암호를 지정합니다.
+   * **HSM 슬롯 Id**: 정수 유형의 슬롯 식별자를 지정합니다. 슬롯 ID는 클라이언트별로 설정됩니다. 두 번째 컴퓨터를 다른 파티션(예: 동일한 HSM 장치의 HSMPART2)에 등록하는 경우 슬롯 1은 클라이언트의 HSMPART2 파티션과 연결됩니다.
 
    >[!NOTE]
    >
    >토큰을 구성하는 동안 HSM 슬롯 ID 필드에 숫자 값을 지정합니다. 서명 작업이 작동하도록 하려면 숫자 값이 필요합니다.
 
-   * **인증서 SHA1**:사용 중인 자격 증명에 대한 공개 키(.cer) 파일의 SHA1 값(지문)을 지정하십시오. SHA1 값에 사용된 공백이 없는지 확인합니다. 실제 인증서를 사용하는 경우에는 필수가 아닙니다.
-   * **HSM 장치 유형**:HSM(Luna 또는 기타) 또는 eToken 장치의 제조업체를 선택합니다.
+   * **인증서 SHA1**: 사용 중인 자격 증명에 대한 공개 키(.cer) 파일의 SHA1 값(지문)을 지정하십시오. SHA1 값에 사용된 공백이 없는지 확인합니다. 실제 인증서를 사용하는 경우에는 필수가 아닙니다.
+   * **HSM 장치 유형**: HSM(Luna 또는 기타) 또는 eToken 장치의 제조업체를 선택합니다.
 
    **저장**&#x200B;을 클릭합니다. 하드웨어 보안 모듈이 AEM Forms용으로 구성되어 있습니다. 이제 AEM Forms과 함께 하드웨어 보안 모듈을 사용하여 문서에 서명하거나 인증할 수 있습니다.
 
@@ -414,4 +414,4 @@ AEM 6.0 Form 또는 AEM 6.1 Forms에서 업그레이드한 후 이전 버전에�
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-DocAssurance 서비스의 API 및 샘플 코드에 대한 자세한 내용은 [프로그래밍 방식으로 AEM Document Services 사용](/help/forms/using/aem-document-services-programmatically.md)을 참조하십시오.
+DocAssurance 서비스의 API 및 샘플 코드에 대한 자세한 내용은 [프로그래밍 방식으로 AEM 문서 서비스 사용](/help/forms/using/aem-document-services-programmatically.md).

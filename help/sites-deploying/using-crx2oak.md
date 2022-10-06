@@ -127,7 +127,7 @@ CRX2Oak의 오픈 소스 버전은 oak-upgrade의 형태로 사용할 수 있습
 
 자세한 내용은 [Apache 설명서](https://jackrabbit.apache.org/oak/docs/migration.html) 추가 정보.
 
-## 매개 변수 {#parameters}
+## 매개변수 {#parameters}
 
 ### 노드 저장소 옵션 {#node-store-options}
 

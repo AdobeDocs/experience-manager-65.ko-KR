@@ -1,8 +1,8 @@
 ---
 title: 배너 관리
-seo-title: 배너 관리
+seo-title: Managing Banners
 description: 배너는 일반적으로 그래픽 홍보용 링크를 나타냅니다. 자세한 내용은 이 페이지를 참조하십시오.
-seo-description: 배너는 일반적으로 그래픽 홍보용 링크를 나타냅니다. 자세한 내용은 이 페이지를 참조하십시오.
+seo-description: Banners represent typically graphical promotional links. Follow this page to learn more.
 uuid: 593fe2ef-84df-42e2-8a03-897fb67a896d
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '662'
 ht-degree: 1%
 
 ---
@@ -34,24 +34,21 @@ ht-degree: 1%
 >AEM Mobile 앱의 다음 항목에 대해 알려면 온라인 도움말의 다음 리소스를 참조하십시오.
 >
 >* [디자인 고려 사항](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
-   >
-   >
-* [배너 만들기](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
-
 >
-
+>* [배너 만들기](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+>
 
 
 ## 배너 만들기 {#creating-a-banner}
 
 문서를 만드는 일반 워크플로우는 다음과 같습니다.
 
-1. 사이드 레일에서 **모바일**&#x200B;을 선택합니다.
+1. 선택 **모바일** 사이드 레일에서
 1. 모바일의 카탈로그에서 Mobile On-Demand 앱을 선택합니다.
-1. **배너 관리** 타일의 오른쪽 위 모서리에 있는 아래쪽 화살표를 클릭합니다.
+1. 오른쪽 상단 모서리의 아래쪽 화살표를 클릭합니다 **배너 관리** 타일.
 1. 마법사의 각 단계를 수행하여 새 배너를 계속 만듭니다.
-1. 준비가 되면 **만들기**&#x200B;를 클릭합니다.
-1. 새 배너가 **배너 관리** 타일에 나타납니다.
+1. 준비가 되면 을(를) 클릭합니다. **만들기**.
+1. 새 배너가 **배너 관리** 타일.
 
 ![chlimage_1-6](assets/chlimage_1-6.gif)
 
@@ -66,9 +63,9 @@ ht-degree: 1%
 새 문서를 가져오는 워크플로우
 
 1. 모바일의 카탈로그에서 Mobile On-Demand 앱을 선택합니다.
-1. **배너 관리** 타일의 오른쪽 위 모서리에 있는 아래쪽 화살표를 클릭하고 배너 가져오기 를 선택합니다.
-1. 대화 상자에서 **배너 가져오기**&#x200B;를 클릭한 다음 닫기를 클릭합니다.
-1. 이제 모바일 온디맨드 문서가 **배너 관리** 타일에 표시됩니다.
+1. 오른쪽 상단 모서리의 아래쪽 화살표를 클릭합니다 **배너 관리** 타일을 지정하고 배너 가져오기를 선택합니다.
+1. 클릭 **배너 가져오기** 대화 상자에서 닫기를 클릭합니다.
+1. 이제 모바일 온디맨드 문서가 **배너 관리** 타일.
 
 >[!CAUTION]
 >
@@ -96,11 +93,11 @@ ht-degree: 1%
 문서를 보거나 편집하는 일반 워크플로우입니다.
 
 1. 모바일의 카탈로그에서 Mobile On-Demand 앱을 선택합니다.
-1. **배너 관리** 타일에서 배너를 선택합니다.
+1. 에서 배너 선택 **배너 관리** 타일.
 
-1. 작업 표시줄에서 **속성**&#x200B;을 선택합니다.
+1. 선택 **속성** 작업 표시줄.
 1. 해당 문서에 대해 사용 가능한 모든 메타 데이터를 표시합니다.
-1. 원하는 경우 메타 데이터를 편집하고 완료되면 **저장**&#x200B;을 클릭합니다.
+1. 원하는 경우 메타 데이터를 편집하고 을(를) 클릭합니다. **저장** 완료 시.
 1. 원할 경우, 변경 사항을 즉시 Mobile On-Demand에 업로드합니다.
 
 ## 배너 업로드 {#uploading-a-banner}
@@ -109,10 +106,10 @@ ht-degree: 1%
 
 배너를 업로드하는 일반 워크플로우입니다.
 
-1. **모바일**&#x200B;에서 카탈로그에서 모바일 온디맨드 앱을 선택합니다.
-1. **배너 관리** 타일에서 Mobile On-Demand에 업로드할 배너를 선택합니다.
+1. From **모바일**, 카탈로그에서 Mobile On-Demand 앱을 선택합니다.
+1. 에서 **배너 관리** 타일에서 Mobile On-Demand에 업로드할 배너를 선택합니다.
 1. 필요한 경우 목록 보기에서 배너를 더 추가합니다.
-1. 작업 표시줄에서 **업로드**&#x200B;를 선택한 다음 대화 상자에서 업로드 를 클릭합니다.
+1. 선택 **업로드** 작업 표시줄에서 대화 상자에서 업로드 를 클릭합니다.
 1. 이제 배너가 Mobile On-Demand에 업로드됩니다.
 
 ![chlimage_1-7](assets/chlimage_1-7.gif)
@@ -124,11 +121,11 @@ ht-degree: 1%
 배너를 삭제하는 일반 워크플로우:
 
 1. 모바일의 카탈로그에서 Mobile On-Demand 앱을 선택합니다.
-1. **배너 관리** 타일에서 삭제할 배너를 선택합니다.
+1. 에서 삭제할 배너를 선택합니다 **배너 관리** 타일.
 1. 목록에서 선택되었는지 확인합니다(필요에 따라 삭제할 다른 항목 선택).
-1. 작업 표시줄에서 **삭제**&#x200B;를 클릭합니다.
+1. 클릭 **삭제** 작업 표시줄.
 1. AEM 및 Mobile On-Demand에서 삭제할 것인지 확인하십시오.
-1. **삭제**&#x200B;를 클릭합니다. 
+1. **삭제**&#x200B;를 클릭합니다.
 1. 이제 배너가 목록에서 제거됩니다.
 
 ### 다음 단계 {#the-next-steps}

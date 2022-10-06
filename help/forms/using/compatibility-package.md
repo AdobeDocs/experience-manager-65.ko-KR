@@ -1,8 +1,8 @@
 ---
 title: 호환성 패키지
-seo-title: 호환성 패키지
+seo-title: Compatibility Package
 description: AEM Forms 6.5에 호환성 패키지를 설치하면 AEM Forms 6.4 및 이전 버전의 서신 관리 자산과 더 이상 사용되지 않는 적응형 양식 템플릿 및 페이지를 사용할 수 있습니다
-seo-description: AEM Forms 6.4에 호환성 패키지를 설치하면 AEM Forms 6.4의 서신 관리 자산 및 더 이상 사용되지 않는 적응형 양식 템플릿 및 페이지를 사용할 수 있습니다
+seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
 uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -14,7 +14,7 @@ role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '316'
 ht-degree: 6%
 
 ---
@@ -23,31 +23,31 @@ ht-degree: 6%
 
 ## 개요 {#overview}
 
-대화형 커뮤니케이션은 AEM Forms 6.5에서 고객 커뮤니케이션을 만드는 기본적이고 권장되는 방법입니다. AEM Forms 6.5에서 문자를 계속 사용하려면 최신 [AEMFD 호환성 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)를 설치해야 합니다.
+대화형 커뮤니케이션은 AEM Forms 6.5에서 고객 커뮤니케이션을 만드는 기본적이고 권장되는 방법입니다. AEM Forms 6.5에서 문자를 계속 사용하려면 최신 업데이트를 설치해야 합니다 [AEMFD 호환성 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html).
 
-AEMFD 호환성 패키지를 사용하면 AEM Forms 6.5에서 [AEM Forms 6.4, 6.3 및 6.2의 다음 자산을 사용할 수도 있습니다.](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+AEMFD 호환성 패키지를 사용하면 다음 작업도 수행할 수 있습니다 [AEM Forms 6.5에서 AEM Forms 6.4, 6.3 및 6.2의 다음 자산을 사용합니다.](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * 문서 조각
 * 편지
 * 데이터 사전
 * 사용되지 않는 적응형 양식 템플릿 및 페이지
 
-자세한 내용은 호환성 패키지](../../forms/using/compatibility-package.md#assetsmadecompatible)를 설치하여 AEM Forms 6.5와 호환되는 자산 을 참조하십시오.[
+자세한 내용은 [호환성 패키지를 설치하여 AEM Forms 6.5와 호환되는 자산](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
 ## AEM Forms 6.5에서 AEM Forms 6.4, 6.3 및 6.2 자산에 대한 지원 추가 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 업그레이드를 수행한 후 다음을 수행하여 AEMFD 호환성 패키지를 설치하고 자산을 6.5와 호환하도록 합니다.
 
-[AEM 호환성 패키지](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)가 미리 설치되어 있는지 확인합니다.
+다음을 확인하십시오 [AEM 호환성 패키지](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 사전 설치.
 
-1. 최신 6.5 [호환성 패키지](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)를 설치합니다.
+1. 최신 6.5 설치 [호환성 패키지](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-   패키지 업로드 및 설치에 대한 자세한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md)을 참조하십시오.
+   패키지 업로드 및 설치에 대한 자세한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md).
 
 1. 로그가 안정되면 서버를 다시 시작합니다.
 1. 자산이 6.5와 호환되도록 하려면 마이그레이션 유틸리티를 사용하십시오.
 
-   자세한 내용은 [마이그레이션 유틸리티](../../forms/using/migration-utility.md)를 참조하십시오.
+   자세한 내용은 [마이그레이션 유틸리티](../../forms/using/migration-utility.md).
 
 ## 호환성 패키지를 설치하여 AEM Forms 6.5와 호환되는 자산 {#assetsmadecompatible}
 

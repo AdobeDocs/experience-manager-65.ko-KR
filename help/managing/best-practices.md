@@ -1,8 +1,8 @@
 ---
 title: 프로젝트 관리 - 우수 사례 검사 목록
-seo-title: 프로젝트 관리 - 우수 사례 검사 목록
+seo-title: Managing Projects - Best Practices Checklist
 description: AEM(Adobe Experience Manager)을 구현하는 프로젝트를 관리하려면 계획과 이해를 필요로 합니다. 프로젝트 확인 목록은 프로젝트 전달에 대한 모범 사례 세트로 제공됩니다. 프로젝트 라이프 사이클의 모든 단계를 안내하고 현재 상태에 대한 높은 수준의 모니터링을 제공합니다.
-seo-description: AEM(Adobe Experience Manager)을 구현하는 프로젝트를 관리하려면 계획과 이해를 필요로 합니다. 프로젝트 확인 목록은 프로젝트 전달에 대한 모범 사례 세트로 제공됩니다. 프로젝트 라이프 사이클의 모든 단계를 안내하고 현재 상태에 대한 높은 수준의 모니터링을 제공합니다.
+seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
 uuid: 859f73f4-535a-49a1-9ae4-a4aacd7f36dd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3264'
 ht-degree: 2%
 
 ---
@@ -24,32 +24,32 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
 도움이 되도록 우수 사례는 다음과 같이 구성됩니다.
 
-* 이러한 우수 사례를 사용하여 진행 상황을 추적하고 모니터링할 수 있는 [대화형 검사 목록](/help/managing/best-practices-checklist.md)
+* An [대화형 검사 목록](/help/managing/best-practices-checklist.md) 이를 통해 이러한 모범 사례를 통해 진행 상황을 추적하고 모니터링할 수 있습니다.
 
    * 단계, 이정표 및 성향에 따라 입력 및 결과물을 정의합니다.
    * 진행 상황과 프로젝트 상태를 나타내는 자동 개요(품질, 상태 및 완결성)를 제공합니다.
 
-* 설명서는 [검사 목록](/help/managing/best-practices-checklist.md)을 직접 기반으로 다음 내용을 자세히 설명합니다.
+* 설명서, [검사 목록](/help/managing/best-practices-checklist.md), 및에 대해 자세히 설명합니다.
 
-   * [프로젝트 ](#projectheartbeat) 하트비트 분석.
-   * [Roleoverview별 ](#status-by-role) 상태
+   * [프로젝트 하트비트](#projectheartbeat) 분석.
+   * [역할별 상태](#status-by-role) 개요.
    * [단계 및 이정표](#phases-and-milestones).
-   * [모든 ](#persona) 단계에서 주요 인사 및 이들의 참여
-   * [필수 문서 및 결과물](#required-documents-and-deliverables)의 [용어집](/help/managing/best-practices-glossary.md).
+   * [키 페르소나](#persona) 그리고 모든 (관련) 단계에서 EMC 가 관여하고 있습니다.
+   * A [용어 설명](/help/managing/best-practices-glossary.md) 의 [필수 문서 및 결과물](#required-documents-and-deliverables).
 
-* [특정 ](/help/managing/best-practices-further-reference.md) 영역에 대한 자세한 내용을 제공하기 위한 추가 참조 자료
+* [추가 참조](/help/managing/best-practices-further-reference.md) 특정 영역에 대한 자세한 내용을 제공하는 자료
 
 ## 프로젝트 하트비트 대시보드 {#project-heartbeat-dashboard}
 
-**프로젝트 하트비트** 워크시트는 프로젝트에 대한 중요한 지표에 대한 그래픽 개요를 제공합니다.
+다음 **프로젝트 하트비트** 워크시트는 프로젝트의 중요 지표에 대한 그래픽 개요를 제공합니다.
 
 * **위상 품질**
 
-   * 프로젝트 전체의 [필수 문서 및 결과물](#required-documents-and-deliverables)의 품질을 나타냅니다.
+   * 품질을 나타냅니다. [필수 문서 및 결과물](#required-documents-and-deliverables) 프로젝트 전체에서 사용할 수 있습니다.
 
 * **단계 상태**
 
-   * 프로젝트에 대한 높은 수준의 상태 표시기위험할 수 있는 영역을 강조 표시하는 데 유용합니다.
+   * 프로젝트에 대한 높은 수준의 상태 표시기 위험할 수 있는 영역을 강조 표시하는 데 유용합니다.
 
 * **위상 완결성**
 
@@ -57,13 +57,13 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
 ## 역할별 상태 {#status-by-role}
 
-**역할별 상태 워크시트는[**&#x200B;상태&#x200B;**,**&#x200B;품질&#x200B;**및**&#x200B;완결성&#x200B;**](#projectheartbeat)에 대한 자세한 분류를**[&#x200B;단계&#x200B;](#phases-and-milestones)**및**[&#x200B;모습&#x200B;](#persona)**표시합니다.**
+다음 **역할별 상태** 워크시트에는 세부 분류가 표시됩니다 [**상태**, **품질** 및 **완전성**](#projectheartbeat) by **[단계](#phases-and-milestones)** 및 **[페르소나](#persona)**.
 
 ## 단계 및 이정표 {#phases-and-milestones}
 
 프로젝트 계획은 고유한(높은 수준) 단계로 분류됩니다.
 
-각 단계에는 자체 이정표가 포함되어 있습니다. 각 [persona](#persona)(또는 역할)에 대해 정의된 산출물을 생성하는 데 필요한 문서와 함께 관련 이정표가 나열됩니다.
+각 단계에는 자체 이정표가 포함되어 있습니다. 각 [페르소나](#persona) (또는 역할) 정의된 결과물을 생성하는 데 필요한 문서와 함께 관련 이정표가 나열됩니다.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
 * **범위 및 예약**
 
-   * 필요한 사항 및 기간을 정의하는 기본 범위 및 대략적인 일정을 사용할 수 있어야 합니다.이렇게 하면 해당 상황을 명확하게 하는 데 도움이 될 경우 범위 밖에 있는 항목을 정의할 수도 있습니다.
+   * 필요한 사항 및 기간을 정의하는 기본 범위 및 대략적인 일정을 사용할 수 있어야 합니다. 이렇게 하면 해당 상황을 명확하게 하는 데 도움이 될 경우 범위 밖에 있는 항목을 정의할 수도 있습니다.
 
 프로젝트를 준비, 계획 및 실행하고 솔루션을 구현하는 방법은 고정 예산, 고정 타임라인, 컨텐츠 수량, 필요한 품질 등 현재 운영 중인 제한 사항의 영향을 받습니다.
 
@@ -93,7 +93,7 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
 * **유효성 검사**
 
-   이 단계에서는 프로젝트 목표를 확인하고 확인해야 합니다.예:
+   이 단계에서는 프로젝트 목표를 확인하고 확인해야 합니다. 예:
 
    * 어떤 것을 성취하고 싶습니까?
    * 누가 이득을 볼 것인가?
@@ -117,7 +117,7 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
    * 당신의 견지에서 현실적이어야 합니다.
    * 클라이언트가 적용할 수 있는 모든 클라이언트 지침, 프로세스 또는 제한 사항을 고려 및 준수합니다.
    * 만일의 사태에 대한 고려와 검토 프로세스는 추후에 예산에 대한 검토나 구체화가 필요합니다.
-   * 비용은 많은 형태로 옵니다.구매, 리소스 및 요금 사용 등을 비롯한 다양한 세그먼트를 선택할 수 있습니다.
+   * 비용은 많은 형태로 옵니다. 구매, 리소스 및 요금 사용 등을 비롯한 다양한 세그먼트를 선택할 수 있습니다.
 
 ### 계획 {#planning}
 
@@ -155,7 +155,7 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
    * 모든 사람이 동일한 기술 자료를 가지고 있는지 확인합니다.
    * 이 작업에 참여할 모든 사용자로부터 헌신을 받으십시오.
 
-      * 프로젝트 시작 부분에 프라임 플레이어(예상 작성자 포함)를 참여시키면 프로젝트에 대한 헌신이 늘어날 가능성이 높아집니다.
+      * 프로젝트 시작 부분에 주요 플레이어(예상 작성자 포함)를 참여하면 프로젝트에 대한 그들의 노력을 높일 수 있습니다.
 
 ### 개발 준비 {#development-preparation}
 
@@ -169,28 +169,28 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
 * **컨텐츠 아키텍처**
 
-   컨텐츠 아키텍처는 컨텐츠의 향후 아키텍처를 정의하고 설명합니다.다음을 포함합니다.
+   컨텐츠 아키텍처는 컨텐츠의 향후 아키텍처를 정의하고 설명합니다. 다음을 포함합니다.
 
-   * 컨텐츠 트리자산 포함
-   * 기본 구조물;캠페인 등 포함
+   * 컨텐츠 트리 자산 포함
+   * 기본 구조물; 캠페인 등 포함
    * 다중 사이트 및 다국어 구조(MSM, 번역 등)
    * 지원 컨텐츠(태그 및 태깅 개념 포함)
    * 캐싱 및 콘텐츠 재사용 전략
 
 * **시스템 아키텍처**
 
-   시스템 아키텍처는 시스템의 개념적 뷰를 정의합니다.포함(다른 정보 포함):
+   시스템 아키텍처는 시스템의 개념적 뷰를 정의합니다. 포함(다른 정보 포함):
 
-   * [모든 ](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 필수 환경을 위한 시스템 구조
+   * [시스템 구조](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 모든 필수 환경
    * 하위 시스템
    * 타사 시스템
-   * 인터페이스하드웨어, 소프트웨어 및 인간 상호 작용
-   * 각 환경에 대한 서버[기술 요구 사항](/help/sites-deploying/technical-requirements.md) 및 [하드웨어 크기 조정 지침](/help/managing/hardware-sizing-guidelines.md) 을 참조하십시오.
+   * 인터페이스 하드웨어, 소프트웨어 및 인간 상호 작용
+   * 각 환경에 대한 서버 참조 [기술 요구 사항](/help/sites-deploying/technical-requirements.md) 및 [하드웨어 크기 조정 지침](/help/managing/hardware-sizing-guidelines.md)
 
-   * 각 환경에 대한 프로세스예를 들어 배포 및 유지 관리 요구 사항
+   * 각 환경에 대한 프로세스 예를 들어 배포 및 유지 관리 요구 사항
    * 유지 관리 활동(데이터 저장소 GC, TarPM 최적화 등)
-   * [](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html) Dispatcher 캐싱
-   * [](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) ClusteringPublish/Authorshare
+   * [Dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/user-guide.html) 캐싱
+   * [클러스터링](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 게시/작성 공유
    * 클라이언트측 성능(JS는 축소, 오목, css 스프라이트, 총 http 요청 수 등)입니다
 
 * **애플리케이션 아키텍처**
@@ -216,20 +216,20 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
    시스템 통합을 사용하려면 다음을 계획(그런 다음 구현)해야 합니다.
 
-   * 모든 하위 시스템 및 [솔루션 통합](/help/sites-administering/integration.md)을 하나로 결합하여 하나의 일관된 시스템으로 운영하는 방법
-   * 타사 시스템을 통합하는 방법타사 시스템이 다운되었을 때 오프라인/온라인, 클라이언트측/브라우저 측 또는 폴오버 처리와 같은 특별한 고려 사항과 함께 사용할 수 있습니다
+   * 모든 하위 시스템 및 [솔루션 통합](/help/sites-administering/integration.md) 하나의 일관된 시스템으로 작동하기 위해 함께 가져올 것입니다
+   * 타사 시스템을 통합하는 방법 타사 시스템이 다운되었을 때 오프라인/온라인, 클라이언트측/브라우저 측 또는 폴오버 처리와 같은 특별한 고려 사항과 함께 사용할 수 있습니다
 
 * **테스트 개념**
 
-   개발을 시작하기 전에 프로젝트에 대한 모든 [testing](/help/sites-developing/planning.md) 요구 사항에 대한 심층적이고 포괄적인 개념을 구성해야 합니다.
+   개발을 시작하기 전에 모든 것에 대한 심도 있고 포괄적인 개념을 작성해야 합니다 [테스트](/help/sites-developing/planning.md) 프로젝트에 대한 요구 사항.
 
    여기에는 다음 항목이 포함되어야 합니다.
 
    * 수행할 모든 테스트에 대한 세부 정보
    * 해당 테스트에 필요한 컨텐츠 준비
    * 사용할 테스트 도구의 정보입니다
-   * 테스트에 누가 참여할 것인지 높은 수준의 표시특히 QA 팀 외부 그룹
-   * 테스트 자동화 세부 사항예를 들어 Selenium 또는 AEM 개발자 모드 사용
+   * 테스트에 누가 참여할 것인지 높은 수준의 표시 특히 QA 팀 외부 그룹
+   * 테스트 자동화 세부 사항 예를 들어 Selenium 또는 AEM 개발자 모드 사용
 
 * **Experience Design**
 
@@ -241,7 +241,7 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
    개발 전에 배포, 릴리스, 테스트 및 보고서 문제에 필요한 모든 지원 프로세스를 설정해야 합니다.
 
-   또한 [Adobe 지원 포털](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)을 참조하십시오.
+   다음을 참조하십시오. [Adobe 지원 포털](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html).
 
 ### 작업 계획 및 작업 {#operations-planning-and-operations}
 
@@ -255,22 +255,22 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
    예:
 
-   * 각 역할에 대한 `read`/ `write` 액세스 정의가 있는 역할 목록(즉, 그룹)
+   * 을 사용하는 역할(예: 그룹) 목록 `read`/ `write` 각
 
-   * 게시 환경에 영향을 주는 권한 사용 정의예: `replicate`
+   * 게시 환경에 영향을 주는 권한 사용 정의 예 `replicate`
    * 최소한의 권한을 가진 사용자의 경우 워크플로우를 정의해야 합니다
-   * `editor` 그룹의 사용자는 `admin` 권한이 없거나 `administrators` 그룹의 구성원이 아니어야 합니다
+   * 의 사용자 `editor` 그룹에 포함할 수 없음 `admin` 권리 또는 `administrators` 그룹
 
-   자세한 내용은 [사용자 관리 및 보안](/help/sites-administering/security.md)을 참조하십시오.
+   자세한 내용은 [사용자 관리 및 보안](/help/sites-administering/security.md).
 
 * **모니터링 및 유지 관리**
 
    모니터링 및 유지 관리는 솔루션 가동 시 원활하게 작동하도록 하는 주요 측면입니다. 이를 위해 다음을 정의해야 합니다.
 
    * 모니터링해야 하는 사항
-   * 유지 관리 작업일반적인 경우와 특별한 경우를 모두 포함하십시오
+   * 유지 관리 작업 일반적인 경우와 특별한 경우를 모두 포함하십시오
 
-   자세한 내용은 [모니터링 및 유지 관리](/help/sites-deploying/monitoring-and-maintaining.md)도 참조하십시오.
+   참조 - [모니터링 및 유지 관리](/help/sites-deploying/monitoring-and-maintaining.md) 추가 정보.
 
 * **마이그레이션**
 
@@ -295,12 +295,12 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
       * 일반적인 환경은 다음과 같이 구성됩니다.
 
-         * 문제 추적 시스템지라와 같은
-         * IDE;예: Eclipse
-         * 빌드 관리 도구Maven과 같은
-         * 지속적인 통합을 위한 도구젠킨스 같은
-         * 버전 제어 도구GIT/SVN과 같은
-         * 빌드 객체 저장소 관리자아르키바/넥서스 등
+         * 문제 추적 시스템 지라와 같은
+         * IDE; 예: Eclipse
+         * 빌드 관리 도구 Maven과 같은
+         * 지속적인 통합을 위한 도구 젠킨스 같은
+         * 버전 제어 도구 GIT/SVN과 같은
+         * 빌드 객체 저장소 관리자 아르키바/넥서스 등
    * 타사 소프트웨어 통합/종속성
    * [솔루션 통합/종속성](/help/sites-administering/integration.md)
    * 배포 대상
@@ -311,7 +311,7 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
    다음을 포함한 테스트 환경을 계획 및 문서화합니다.
 
    * 아키텍처
-   * 개발 빌드에 대한 종속성야간 빌드 포함
+   * 개발 빌드에 대한 종속성 야간 빌드 포함
    * 타사 소프트웨어 통합/종속성 테스트의 가능성 또는 제한 사항
    * 테스트 도구
    * 자동화된 테스트 전략
@@ -324,20 +324,20 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
    * 배포 대상
    * 타사 소프트웨어 통합/종속성
    * 보안 설정
-   * 프로덕션 설정에서 [Tough Day 테스트](/help/sites-developing/tough-day.md)를 실행하여 확인한 기본 성능
-   * 성능 테스트 요구 사항[품질 보증 우수 사례](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance) 참조
+   * 기본 성능이 [Tough Day 테스트](/help/sites-developing/tough-day.md) 프로덕션 설정에서
+   * 성능 테스트 요구 사항 참조 [품질 보증 우수 사례](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **통합**
 
-   다음을 포함하여 시스템의 모든 측면과 [솔루션 통합](/help/sites-administering/integration.md)을 계획, 문서 및 테스트합니다.
+   시스템의 모든 측면을 계획, 문서 및 테스트 [솔루션 통합](/help/sites-administering/integration.md), 다음 포함:
 
    * 자동화된 테스트 전략
-   * 자동화된 프로세스를 [개발에서 테스트로 응용 프로그램을 이동한 다음 프로덕션](/help/managing/enterprise-devops.md#code-movement)
-   * 자동화된 프로세스를 [프로덕션에서 테스트 및 개발으로 컨텐츠 이동](/help/managing/enterprise-devops.md#content-movement)
+   * 자동화된 프로세스 [응용 프로그램을 개발에서 테스트로 이동한 다음 프로덕션으로 이동](/help/managing/enterprise-devops.md#code-movement)
+   * 자동화된 프로세스 [컨텐츠를 프로덕션에서 테스트 및 개발로 이동](/help/managing/enterprise-devops.md#content-movement)
 
 * **마이그레이션**
 
-   컨텐츠 마이그레이션의 모든 측면을 계획, 문서 및 테스트다음을 포함합니다.
+   컨텐츠 마이그레이션의 모든 측면을 계획, 문서 및 테스트 다음을 포함합니다.
 
    * 컨텐츠 아키텍처
    * 마이그레이션 전략
@@ -348,15 +348,15 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
 * **설명서**
 
-   솔루션을 완전히 문서화합니다.다음을 포함합니다.
+   솔루션을 완전히 문서화합니다. 다음을 포함합니다.
 
    * 작업 설명서
    * 업그레이드에 영향을 줄 수 있는 모든 사용자 지정
-   * 릴리스 노트
+   * 릴리스 정보
 
 ### 성능 및 테스트 {#performance-and-testing}
 
-새 응용 프로그램을 사용할 수 있게 되면 기능과 [performance](/help/sites-deploying/configuring-performance.md)에 대해 엄격한 테스트를 수행해야 합니다.
+새로운 애플리케이션을 사용할 수 있게 되면 기능 및 [성능](/help/sites-deploying/configuring-performance.md).
 
 >[!NOTE]
 >
@@ -368,12 +368,12 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
 * **최종 사용자 수락 테스트**
 
-   [UAT(사용자 수락 테스트](/help/sites-developing/acceptance-signoff.md) )는 다음 사항을 확인해야 합니다.
+   [사용자 수락 테스트](/help/sites-developing/acceptance-signoff.md) (UAT)는 다음과 같은 이점을 제공합니다.
 
    * 이 솔루션은 사용자/고객 요구 사항을 충족합니다
    * 고객/사용자는 솔루션(기능, 디자인 및 성능)을 수락합니다
 
-   고객 핸드오버를 위한 공식 확인 목록이 있어야 합니다.스냅샷에 대해 야간 단위로 자동화 및 실행 결과는 프로젝트 관리자 및 개발 팀에 전송해야 합니다
+   고객 핸드오버를 위한 공식 확인 목록이 있어야 합니다. 스냅샷에 대해 야간 단위로 자동화 및 실행 결과는 프로젝트 관리자 및 개발 팀에 전송해야 합니다
 
 * **성능 및 로드 테스트**
 
@@ -403,7 +403,7 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
    모든 관련 직원이 교육을 받았는지 확인합니다.
 
-   과정 카탈로그에서 [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)을 참조하십시오.
+   자세한 내용은 [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) 교육 과정 카탈로그에서
 
 * **숙련된 관리자**
 
@@ -419,7 +419,7 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
    * 교육 받음
    * 적절한 교육 자료를 받았습니다.
-   * 적절한 설명서를 받았습니다.예를 들어 사용 안내서
+   * 적절한 설명서를 받았습니다. 예를 들어 사용 안내서
 
 * **Penetration Tests**
 
@@ -429,9 +429,9 @@ Adobe Experience Manager(AEM)을 구현하는 프로젝트를 관리하려면 �
 
    솔루션의 보안을 보장하기 위해 더 광범위한 보안 테스트와 함께 특정 침투 테스트를 수행합니다.
 
-   자세한 내용은 [보안 검사 목록](/help/sites-administering/security-checklist.md)을 참조하십시오.
+   자세한 내용은 [Security 검사 목록](/help/sites-administering/security-checklist.md) 자세한 내용
 
-### Go Live {#go-live}
+### 실행 {#go-live}
 
 Go Live가 가능한 한 부드러워지기를 원하는 것입니다. 마지막 단계도 정리 실행을 위한 계획이 필요합니다.
 
@@ -461,18 +461,18 @@ Go Live가 가능한 한 부드러워지기를 원하는 것입니다. 마지막
 
    연기 테스트를 준비하고 실행합니다.
 
-## 모습 {#persona}
+## 담당자 {#persona}
 
 확인 목록은 사용자에 의해 디자인됩니다. 프로젝트 라이프 사이클에 중요한 역할을 합니다.
 
-또한 특정 작업에 관련된 [다른 가상](#other-persona)도 있습니다.
+몇 가지 [기타 사용자](#other-persona) 특정 작업에 관련되어 있습니다.
 
 ### 프로젝트 스폰서 {#project-sponsor}
 
 프로젝트 후원자는 다음과 같습니다.
 
 * 프로젝트에 대한 비즈니스 사례를 제공/제시할 책임이 있습니다.
-* 프로젝트 범위를 구체화하고 정의하는 주요 사항다음을 포함합니다.
+* 프로젝트 범위를 구체화하고 정의하는 주요 사항 다음을 포함합니다.
 
    * 성공에 대한 정의 및 기준
    * 기본 KPI
@@ -527,7 +527,7 @@ Go Live가 가능한 한 부드러워지기를 원하는 것입니다. 마지막
 
 품질 리드:
 
-* 배송의 품질은 책임집니다.성공 기준 및 클라이언트가 정의한 KPI를 충족하는지 확인합니다.
+* 배송의 품질은 책임집니다. 성공 기준 및 클라이언트가 정의한 KPI를 충족하는지 확인합니다.
 * 모든 이해 관계자와 일치하는 품질 지표를 정의하고 테스트 계획을 작성하고 이를 실행합니다.
 * 보고서를 만들어 프로젝트 이해 당사자에게 전달합니다.
 
@@ -548,9 +548,9 @@ Go Live가 가능한 한 부드러워지기를 원하는 것입니다. 마지막
 보안 리드:
 
 * 솔루션의 전체 보안 개념을 담당하며, 클라이언트의 요구 사항과 정책에 부합하는지 확인합니다.
-* 모든 하드웨어 기반 보안 개념에 대한 보안 개념, 보안 작업 및 권장 사항을 제공합니다.영역 및 방화벽과 같은
+* 모든 하드웨어 기반 보안 개념에 대한 보안 개념, 보안 작업 및 권장 사항을 제공합니다. 영역 및 방화벽과 같은
 
-### 기타 가상 사용자 {#other-persona}
+### 기타 사용자 {#other-persona}
 
 * 이해 관계자
 
@@ -566,7 +566,7 @@ Go Live가 가능한 한 부드러워지기를 원하는 것입니다. 마지막
 
 * 테크니컬 라이터
 
-   * 프로젝트 규모와 성격에 따라 전문 기술자를 사용해서 특정한 그룹을 위한 지침과 매뉴얼을 작성할 수 있습니다;예: 시스템 관리자를 위한 유지 관리 설명서 또는 작성자를 위한 사용 안내서
+   * 프로젝트 규모와 성격에 따라 전문 기술자를 사용해서 특정한 그룹을 위한 지침과 매뉴얼을 작성할 수 있습니다; 예: 시스템 관리자를 위한 유지 관리 설명서 또는 작성자를 위한 사용 안내서
 
 * 시스템 관리자
 
@@ -578,29 +578,29 @@ Go Live가 가능한 한 부드러워지기를 원하는 것입니다. 마지막
 
 ## 필수 문서 및 결과물 {#required-documents-and-deliverables}
 
-확인 목록은 각 이정표에 대한 **필수 문서** 및 **결과물**&#x200B;을 포함합니다.
+확인 목록은 **필수 문서** 및 **결과물** 각 이정표에 대해 설명합니다.
 
-* 이들 사이에는 1:1 관계가 없습니다.예를 들어, 필요한 문서 그룹이 단일 결과물을 생성할 수 있습니다.
+* 이들 사이에는 1:1 관계가 없습니다. 예를 들어, 필요한 문서 그룹이 단일 결과물을 생성할 수 있습니다.
 * 동일한 이정표 동안 한 성향에서 산출물을 다른 성향에 필요한 문서가 될 수 있습니다.
 
 ### 필수 문서 {#required-documents}
 
-**필수 문서**&#x200B;는 결과물을 생성할 때 적절한 사용자가 필요로 합니다.
+다음 **필수 문서** 결과물을 작성할 때 적절한 사람이 필요로 합니다.
 
-각 **필수 문서**&#x200B;에 대해 모습은 다음을 표시해야 합니다.
+각 **필수 문서** 모습은 다음과 같습니다.
 
-* **Y/N**:수신했는지 여부
-* **1-3**:수신된 문서의 품질 표시.
+* **Y/N**: 수신했는지 여부
+* **1-3**: 수신된 문서의 품질 표시.
 
 ### 결과물 {#deliverables}
 
 각 이정표에 대해 해당 사용자는 특정 문서를 전달하여 특정 이정표에 대한 책임을 이행해야 합니다.
 
-각 **결과물**&#x200B;에 대해 다음 내용이 표시되어야 합니다.
+각 **산출물** 사용자는 다음을 표시해야 합니다.
 
-* **Y/N**:완료되었는지 여부.
+* **Y/N**: 완료되었는지 여부.
 
-결과물은 종종 현재 또는 이후 이정표에 대해 **필수 문서**&#x200B;로 사용됩니다.
+결과물은 종종 다음과 같이 사용됩니다 **필수 문서** 현재 또는 이후 이정표에 대해 설명합니다.
 
 ## 관련 우수 사례 {#related-best-practices}
 
@@ -611,15 +611,14 @@ Go Live가 가능한 한 부드러워지기를 원하는 것입니다. 마지막
    * [엔터프라이즈 DevOps](/help/managing/enterprise-devops.md)
    * [SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md)
    * [AEM 및 웹 접근성 지침](/help/managing/web-accessibility.md)
-   * [일반 데이터 보호 규정](/help/managing/data-protection-and-privacy.md)*  [모범 사례 배포 및 유지 관리](/help/sites-deploying/best-practices.md)
+   * [일반 데이터 보호 규정](/help/managing/data-protection-and-privacy.md)* [배포 및 유지 관리 우수 사례](/help/sites-deploying/best-practices.md)
 * [관리 우수 사례](/help/sites-administering/administer-best-practices.md)
 * [개발 우수 사례](/help/sites-developing/best-practices.md)
 * [작성 우수 사례](/help/sites-authoring/best-practices.md)
 
 ## 주요 설명서 영역 {#key-documentation-areas}
 
-* AEM 설명서
-또한 AEM 설명서의 다음 섹션은 특별히 관심이 있습니다(하지만 이 목록은 완전하지 않음).
+* AEM 설명서 또한, AEM 설명서의 다음 섹션은 특별히 관심이 있습니다(하지만 이 목록은 완전하지 않음).
 
    * [보안](/help/sites-developing/security.md)
    * [권장 배포](/help/sites-deploying/recommended-deploys.md)
@@ -629,7 +628,7 @@ Go Live가 가능한 한 부드러워지기를 원하는 것입니다. 마지막
 
       * [개발 - 기본 사항](/help/sites-developing/the-basics.md)
       * [MSM 개념](/help/sites-administering/msm.md)
-      * [HTL(HTML Template Language)](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)
+      * [HTL(HTML 템플릿 언어)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 
 * 관련 설명서
 

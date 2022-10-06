@@ -1,8 +1,8 @@
 ---
 title: 콘솔용 키보드 단축키
-seo-title: 콘솔용 키보드 단축키
+seo-title: Keyboard Shortcuts for Consoles
 description: AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 콘솔에 사용되는 키보드 단축키도 있고 페이지 편집에 사용되는 키보드 단축키도 있습니다.
-seo-description: AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 콘솔에 사용되는 키보드 단축키도 있고 페이지 편집에 사용되는 키보드 단축키도 있습니다.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to page editing.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '114'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,6 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 >
 >* Mac: **Cmd****를 클릭한 채**&#x200B;필수 구성 요소를 클릭합니다.
 >
-
 
 
 ## 키보드 단축키 {#keyboard-shortcuts}

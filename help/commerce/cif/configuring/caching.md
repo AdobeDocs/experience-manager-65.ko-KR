@@ -25,7 +25,7 @@ AEM CIF 코어 구성 요소의 경우 캐싱은 구성 요소 기반으로 구�
 
 클라이언트가 GraphQL 요청을 보내기 전에 해당 요청이 있는지 확인합니다 **정확히** 동일한 GraphQL 요청이 이미 캐시되며 캐시된 응답을 반환할 수 있습니다. 일치시키려면 GraphQL 요청이 정확히 일치해야 합니다. 쿼리, 작업 이름(있는 경우), 변수(있는 경우)는 모두 캐시된 요청과 같아야 하며 HTTP를 설정할 수 있는 모든 사용자 지정 헤더도 같아야 합니다. 예: Adobe Commerce `Store` 헤더가 일치해야 합니다.
 
-### 예
+### 예제
 
 제품 검색 및 카테고리 페이지에 표시되는 모든 사용 가능한 집계/패싯 값을 가져오는 검색 서비스에 대해 일부 캐싱을 구성하는 것이 좋습니다. 이러한 값은 일반적으로 새 속성(예: 제품에 추가된 경우에만 변경되므로 제품 속성 세트가 자주 변경되지 않는 경우 이 캐시 항목의 기간은 &quot;큰&quot;일 수 있습니다. 프로젝트별로 다르겠지만, 프로젝트 개발 단계에서 몇 분, 안정적인 프로덕션 시스템에서 몇 시간 동안의 값을 추천합니다.
 
@@ -47,7 +47,7 @@ venia/components/structure/navigation:true:10:600
 
 ## Dispatcher 캐싱 {#dispatcher}
 
-에서 AEM 페이지 또는 조각을 캐싱 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 는 모든 AEM 프로젝트에 가장 적합한 방법입니다. 일반적으로, AEM에서 변경된 모든 컨텐츠가 Dispatcher에서 제대로 업데이트되도록 하는 무효화 기술에 의존합니다. AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
+에서 AEM 페이지 또는 조각을 캐싱 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 는 모든 AEM 프로젝트에 가장 적합한 방법입니다. 일반적으로, AEM에서 변경된 모든 컨텐츠가 Dispatcher에서 제대로 업데이트되도록 하는 무효화 기술에 의존합니다. AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
 
 순수 AEM 관리 콘텐츠 CIF 외에도 페이지는 일반적으로 GraphQL을 통해 Adobe Commerce에서 동적으로 가져오는 상거래 데이터를 표시할 수 있습니다. 페이지 구조 자체는 변경되지 않을 수 있지만 일부 제품 데이터(예: 이름 또는 가격)가 Adobe Commerce에서 변경되는 경우 상거래 콘텐츠가 변경될 수 있습니다.
 

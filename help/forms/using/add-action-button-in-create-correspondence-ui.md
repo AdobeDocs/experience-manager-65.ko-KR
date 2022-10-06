@@ -24,9 +24,9 @@ ht-degree: 1%
 
 서신 관리 솔루션을 사용하여 서신 만들기 사용자 인터페이스에 사용자 지정 작업을 추가할 수 있습니다.
 
-이 문서의 시나리오에서는 서신 사용자 만들기 인터페이스에서 단추를 만들어 편지를 이메일에 첨부된 검토 PDF로 공유하는 방법을 설명합니다.
+이 문서의 시나리오에서는 서신 사용자 만들기 인터페이스에서 단추를 만들어 편지를 이메일에 첨부된 검토 PDF으로 공유하는 방법을 설명합니다.
 
-### 전제 조건 {#prerequisites}
+### 사전 요구 사항 {#prerequisites}
 
 이 시나리오를 완료하려면 다음이 필요합니다.
 
@@ -43,10 +43,10 @@ ht-degree: 1%
 
 ### 서신 사용자 인터페이스에 단추 추가 {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. `https://'[server]:[port]'/[ContextPath]/crx/de`(으)로 이동하여 관리자로 로그인합니다.
-1. apps 폴더에서 defaultApp 폴더(구성 폴더에 있음)와 유사한 경로/구조를 가진 `defaultApp` 폴더를 만듭니다. 폴더를 만들려면 다음 단계를 수행하십시오.
+1. 이동 `https://'[server]:[port]'/[ContextPath]/crx/de` 관리자로 로그인합니다.
+1. apps 폴더에서 `defaultApp` (구성 폴더에 있음)와 유사한 경로/구조. 폴더를 만들려면 다음 단계를 수행하십시오.
 
-   1. 다음 경로에서 **defaultApp** 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **defaultApp** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **오버레이 노드**:
 
       /libs/fd/cm/config/defaultApp/
 
@@ -63,18 +63,18 @@ ht-degree: 1%
       ![오버레이 노드](assets/2_defaultappoverlaynode.png)
 
    1. **확인**&#x200B;을 클릭합니다.
-   1. **모두 저장**&#x200B;을 클릭합니다.
+   1. 클릭 **모두 저장**.
 
 1. /apps 분기 아래의 acmExtensionsConfig.xml 파일( /libs 분기 아래에 있음)을 복사합니다.
 
    1. &quot;/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml&quot;으로 이동합니다.
 
-   1. acmExtensionsConfig.xml 파일을 마우스 오른쪽 단추로 클릭하고 **Copy**&#x200B;을 선택합니다.
+   1. acmExtensionsConfig.xml 파일을 마우스 오른쪽 단추로 클릭하고 를 선택합니다 **복사**.
 
       ![acmExtensionsConfig.xml 복사](assets/3_acmextensionsconfig_xml_copy.png)
 
-   1. &quot;/apps/fd/cm/config/defaultApp/&quot;에서 **defaultApp** 폴더를 마우스 오른쪽 단추로 클릭하고 **붙여넣기**&#x200B;를 선택합니다.
-   1. **모두 저장**&#x200B;을 클릭합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **defaultApp** &quot;/apps/fd/cm/config/defaultApp/&quot;의 폴더를 선택하고 **붙여넣기**.
+   1. 클릭 **모두 저장**.
 
 1. apps 폴더에서 새로 만든 acmExtentionsConfig.xml 사본을 두 번 클릭합니다. 편집할 파일이 열립니다.
 1. 다음 코드를 찾습니다.
@@ -111,7 +111,7 @@ ht-degree: 1%
    | 레이블 | 작업 단추에 표시할 레이블입니다 |
    | 도구 설명 | 사용자가 단추를 마우스로 가리키면 표시되는 단추의 도구 설명 텍스트입니다. |
    | styleName | 작업 단추에 적용되는 사용자 지정 스타일의 이름입니다. |
-   | permissionName | 사용자에게 permissionName으로 지정된 권한이 있는 경우에만 해당 작업이 표시됩니다. permissionName을 `forms-users`(으)로 지정하면 모든 사용자가 이 옵션에 액세스할 수 있습니다. |
+   | permissionName | 사용자에게 permissionName으로 지정된 권한이 있는 경우에만 해당 작업이 표시됩니다. permissionName을 `forms-users`로 설정되면 모든 사용자가 이 옵션에 액세스할 수 있습니다. |
    | actionHandler | 사용자가 단추를 클릭할 때 호출되는 ActionHandler 클래스의 정규화된 이름입니다. |
 
    위의 매개 변수 외에도 customAction과 연결된 추가 구성이 있을 수 있습니다. 이러한 추가 구성은 CustomAction 개체를 통해 처리기에서 사용할 수 있습니다.
@@ -122,13 +122,13 @@ ht-degree: 1%
    | 태그 이름에 cm_ 접두어가 포함된 매개 변수 | customAction에 name cm_로 시작하는 하위 태그가 포함되어 있는 경우 이후 프로세스(Letter Post 프로세스 또는 serviceName 태그로 표시된 특수 프로세스)에서 이러한 매개 변수는 cm_ 접두어가 제거된 관련 태그 아래의 입력 XML 코드에서 사용할 수 있습니다. |
    | actionName | 클릭으로 인해 사후 프로세스가 수행될 때마다 제출된 XML에 사용자 작업의 이름이 있는 태그 아래에 이름이 지정된 특수 태그가 포함되어 있습니다. |
 
-1. **모두 저장**&#x200B;을 클릭합니다.
+1. 클릭 **모두 저장**.
 
 #### /apps 분기에 속성 파일을 사용하여 로케일 폴더를 만듭니다 {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 ACMExtensionMessages.properties 파일에는 서신 작성 사용자 인터페이스의 다양한 필드의 레이블 및 도구 설명 메시지가 포함되어 있습니다. 사용자 지정된 작업/단추가 작동하려면 /apps 분기에서 이 파일의 복사본을 만듭니다.
 
-1. 다음 경로에서 **locale** 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
+1. 마우스 오른쪽 단추를 클릭합니다. **로케일** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **오버레이 노드**:
 
    /libs/fd/cm/config/defaultApp/locale
 
@@ -141,18 +141,18 @@ ACMExtensionMessages.properties 파일에는 서신 작성 사용자 인터페�
    **일치 노드 유형:** 선택됨
 
 1. **확인**&#x200B;을 클릭합니다.
-1. **모두 저장**&#x200B;을 클릭합니다.
-1. 다음 파일을 마우스 오른쪽 단추로 클릭하고 **복사**&#x200B;를 선택합니다.
+1. 클릭 **모두 저장**.
+1. 다음 파일을 마우스 오른쪽 단추로 클릭하고 **복사**:
 
    `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
 
-1. 다음 경로에서 **locale** 폴더를 마우스 오른쪽 단추로 클릭하고 **붙여넣기**&#x200B;를 선택합니다.
+1. 마우스 오른쪽 단추를 클릭합니다. **로케일** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **붙여넣기**:
 
    `/apps/fd/cm/config/defaultApp/locale/`
 
    ACMExtensionMessages.properties 파일이 로케일 폴더에 복사됩니다.
 
-1. 새로 추가한 사용자 지정 작업/단추의 레이블을 현지화하려면 `/apps/fd/cm/config/defaultApp/locale/`에서 관련 로케일에 대한 ACMExtensionMessages.properties 파일을 만듭니다.
+1. 새로 추가한 사용자 지정 작업/단추의 레이블을 현지화하려면 의 해당 로케일에 대해 ACMExtensionMessages.properties 파일을 만듭니다 `/apps/fd/cm/config/defaultApp/locale/`.
 
    예를 들어 이 문서에서 만든 사용자 지정 작업/단추를 현지화하기 위해 다음 항목으로 ACMExtensionMessages_fr.properties 파일을 만듭니다.
 
@@ -160,7 +160,7 @@ ACMExtensionMessages.properties 파일에는 서신 작성 사용자 인터페�
 
    마찬가지로 이 파일에 도구 설명 및 스타일과 같은 속성을 더 추가할 수 있습니다.
 
-1. **모두 저장**&#x200B;을 클릭합니다.
+1. 클릭 **모두 저장**.
 
 #### Adobe 자산 작성기 빌딩 블록 번들을 다시 시작합니다 {#restart-the-adobe-asset-composer-building-block-bundle}
 
@@ -194,37 +194,37 @@ Create Correspondence 사용자 인터페이스는 기본적으로 다음 위치
 
 1. 이동 `https://'[server]:[port]'/[ContextPath]/crx/de`. 필요한 경우 관리자로 로그인합니다.
 
-1. apps 폴더에서 다음 폴더와 유사한 구조를 가진 CRX의 /apps 분기에 `js`라는 폴더를 만듭니다.
+1. apps 폴더에서 `js` 다음 폴더와 유사한 구조를 사용하는 CRX의 /apps 분기에서 다음을 수행합니다.
 
    `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
    폴더를 만들려면 다음 단계를 수행하십시오.
 
-   1. 다음 경로에서 **js** 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **js** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **오버레이 노드**:
 
       `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
    1. 오버레이 노드 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **경로:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/crui/js
+      **경로:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
       **오버레이 위치:** /apps/
 
       **일치 노드 유형:** 선택됨
 
    1. **확인**&#x200B;을 클릭합니다.
-   1. **모두 저장**&#x200B;을 클릭합니다.
+   1. 클릭 **모두 저장**.
 
 1. js 폴더에서 다음 단계를 사용하여 버튼을 처리할 수 있는 코드로 ccrcustomization.js라는 파일을 만듭니다.
 
-   1. 다음 경로에서 **js** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 파일 만들기**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **js** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **만들기 > 파일 만들기**:
 
       `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
       파일의 이름을 ccrcustomization.js로 지정합니다.
 
    1. ccrcustomization.js 파일을 두 번 클릭하여 CRX에서 엽니다.
-   1. 파일에서 다음 코드를 붙여 넣고 **모두 저장**&#x200B;을 클릭합니다.
+   1. 파일에서 다음 코드를 붙여 넣고 **모두 저장**:
 
       ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
@@ -323,7 +323,7 @@ Create Correspondence 사용자 인터페이스는 기본적으로 다음 위치
       '</div>';
       ```
 
-### LiveCycle 프로세스를 추가하여 작업 <span class="acrolinxCursorMarker"></code>처리를 활성화합니다 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### LiveCycle 프로세스를 추가하여 작업을 활성화합니다 <span class="acrolinxCursorMarker"></code>처리 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 이 시나리오에서는 첨부된 components.zip 파일의 일부인 다음 구성 요소를 활성화합니다.
 
@@ -341,10 +341,10 @@ components.zip 파일을 다운로드하고 압축 해제하여 DSCSample.jar �
 
 LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그인 자격 증명이 필요합니다.
 
-1. `https://'[server]:[port]'/system/console/configMgr`(으)로 이동하여 관리자로 로그인합니다.
-1. Adobe LiveCycle 클라이언트 SDK 구성을 찾고 **편집**(편집 아이콘)을 클릭합니다. 구성 패널이 열립니다.
+1. 이동 `https://'[server]:[port]'/system/console/configMgr` 관리자로 로그인합니다.
+1. Adobe LiveCycle 클라이언트 SDK 구성을 찾은 다음 **편집** (편집 아이콘) 구성 패널이 열립니다.
 
-1. 다음 세부 정보를 입력하고 **저장**&#x200B;을 클릭합니다.
+1. 다음 세부 정보를 입력하고 **저장**:
 
    * **서버 Url**: 작업 처리기 코드가 사용하는 검토 보내기 서비스의 LC 서버의 URL입니다.
    * **사용자 이름**: LC 서버의 관리자 사용자 이름
@@ -360,9 +360,9 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 >
 >이 프로세스가 수행하는 작업을 보거나 유사한 프로세스를 만들려면 Workbench가 필요합니다.
 
-1. 관리자로 로그인하여 `https:/[lc server]/:[lc port]/adminui`에 LiveCycle® 서버 관리자 로 로그인합니다.
+1. 관리자로 로그인하여 LiveCycle® 서버 관리자 로 `https:/[lc server]/:[lc port]/adminui`.
 
-1. **홈 > 서비스 > 응용 프로그램 및 서비스 > 응용 프로그램 관리**&#x200B;로 이동합니다.
+1. 다음으로 이동 **홈 > 서비스 > 애플리케이션 및 서비스 > 애플리케이션 관리**.
 
 1. SendLetterForReview 응용 프로그램이 이미 있는 경우 이 절차의 나머지 단계를 건너뛰고 다음 단계를 계속 진행합니다.
 
@@ -370,13 +370,13 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 
 1. **가져오기**&#x200B;를 클릭합니다. 
 
-1. **파일**&#x200B;을 클릭하고 SendLetterForReview.lca를 선택합니다.
+1. 클릭 **파일 선택** SendLetterForReview.lca를 선택합니다.
 
    ![SendLetterForReview.lca 파일을 선택합니다.](assets/14_sendletterforreview_lca.png)
 
-1. **미리 보기**&#x200B;를 클릭합니다.
+1. 클릭 **미리 보기**.
 
-1. 가져오기가 완료되면 **런타임 시 자산 배포**&#x200B;를 선택합니다.
+1. 선택 **가져오기가 완료되면 런타임에 자산 배포**.
 
 1. **가져오기**&#x200B;를 클릭합니다. 
 
@@ -384,10 +384,10 @@ LCA 프로세스는 LiveCycle 서버에서 실행되며 서버 주소와 로그�
 
 Experience Manager 서버에 액세스할 LiveCycle 서비스가 Experience Manager 서버에 설명되어 있습니다.
 
-1. 관리자로 `https:/[host]:'port'/system/console/configMgr`에 로그인합니다.
+1. 관리자로 로그인하여 `https:/[host]:'port'/system/console/configMgr`.
 
-1. **Adobe LiveCycle 클라이언트 SDK 구성**&#x200B;을 찾아 클릭합니다. Adobe LiveCycle 클라이언트 SDK 구성 패널이 나타납니다.
-1. 서비스 이름 목록에서 + 아이콘을 클릭하고 serviceName **SendLetterForReview/SendLetterForReviewProcess**&#x200B;를 추가합니다.
+1. 을(를) 찾아 클릭합니다 **Adobe LiveCycle 클라이언트 SDK 구성**. Adobe LiveCycle 클라이언트 SDK 구성 패널이 나타납니다.
+1. 서비스 이름 목록에서 + 아이콘을 클릭하고 serviceName을 추가합니다 **SendLetterForReview/SendLetterForReviewProcess**.
 
 1. **저장**&#x200B;을 클릭합니다.
 
@@ -395,13 +395,13 @@ Experience Manager 서버에 액세스할 LiveCycle 서비스가 Experience Mana
 
 이 시나리오에서 서신 관리가 이메일을 보낼 수 있도록 하려면 LiveCycle 서버에서 이메일 서비스를 구성하십시오.
 
-1. 관리 자격 증명으로 `https:/[lc server]:[lc port]/adminui`에 있는 LiveCycle 서버 관리자에게 로그인합니다.
+1. 관리 자격 증명으로 로그인하여 LiveCycle 서버 관리자 `https:/[lc server]:[lc port]/adminui`.
 
-1. **홈 > 서비스 > 응용 프로그램 및 서비스 > 서비스 관리**&#x200B;로 이동합니다.
+1. 다음으로 이동 **홈 > 서비스 > 애플리케이션 및 서비스 > 서비스 관리**.
 
-1. **EmailService**&#x200B;를 찾아 클릭합니다.
+1. 을(를) 찾아 클릭합니다 **EmailService**.
 
-1. **SMTP 호스트**&#x200B;에서 전자 메일 서비스를 구성합니다.
+1. in **SMTP 호스트**, 이메일 서비스를 구성합니다.
 
 1. **저장**&#x200B;을 클릭합니다.
 
@@ -409,7 +409,7 @@ Experience Manager 서버에 액세스할 LiveCycle 서비스가 Experience Mana
 
 서신 관리 API를 사용하려면 DSCSample.jar(이 문서에 components.zip의 일부로 첨부됨)를 다운로드하고 LiveCycle 서버에 업로드합니다. DSCSample.jar 파일이 LiveCycle 서버에 업로드되면 Experience Manager 서버는 DSCSample.jar 파일을 사용하여 renderLetter API에 액세스합니다.
 
-자세한 내용은 [AEM Forms과 Adobe LiveCycle 연결](/help/forms/using/aem-livecycle-connector.md)을 참조하십시오.
+자세한 내용은 [AEM Forms과 Adobe LiveCycle 연결](/help/forms/using/aem-livecycle-connector.md).
 
 1. 다음 위치에 있는 DSCSample.jar의 cmsa.properties에서 Experience Manager 서버 URL을 업데이트합니다.
 
@@ -417,28 +417,28 @@ Experience Manager 서버에 액세스할 LiveCycle 서비스가 Experience Mana
 
 1. 구성 파일에 다음 매개 변수를 제공합니다.
 
-   * **crx.serverUrl**=https:/host:port/[컨텍스트 경로]/[AEM URL]
-   * **crx.username** = Experience Manager 사용자 이름
-   * **crx.password** = Experience Manager 암호
+   * **crx.serverUrl**= https:/host:port/[컨텍스트 경로]/[AEM URL]
+   * **crx.username**= Experience Manager 사용자 이름
+   * **crx.password**= Experience Manager 암호
    * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
    >서버 측에서 변경할 때마다 LiveCycle 서버를 다시 시작합니다.
 
-   DSCSample.jar 파일은 renderLetter API를 사용합니다. renderLetter API에 대한 자세한 내용은 [Interface LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)를 참조하십시오.
+   DSCSample.jar 파일은 renderLetter API를 사용합니다. renderLetter API에 대한 자세한 내용은 [인터페이스 LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### LiveCyle로 DSC 가져오기 {#import-dsc-to-livecyle}
 
-DSCSample.jar 파일은 renderLetter API를 사용하여 DSC가 입력으로 제공하는 XML 데이터에서 PDF 바이트로 편지를 렌더링합니다. renderLetter 및 기타 API에 대한 자세한 내용은 [Letter Render Service](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html)를 참조하십시오.
+DSCSample.jar 파일은 renderLetter API를 사용하여 DSC가 입력으로 제공하는 XML 데이터의 PDF 바이트로 편지를 렌더링합니다. renderLetter 및 기타 API에 대한 자세한 내용은 [편지 렌더링 서비스](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Workbench를 시작하고 로그인합니다.
-1. **창 > 보기 표시 > 구성 요소**&#x200B;를 선택합니다. 구성 요소 보기가 Workbench ES2에 추가됩니다.
+1. 선택 **창 > 보기 표시 > 구성 요소**. 구성 요소 보기가 Workbench ES2에 추가됩니다.
 
-1. **구성 요소**&#x200B;를 마우스 오른쪽 단추로 클릭하고 **설치 구성 요소**&#x200B;를 선택합니다.
+1. 마우스 오른쪽 단추 클릭 **구성 요소** 을(를) 선택합니다. **구성 요소 설치**.
 
-1. 파일 브라우저를 통해 **DSCSample.jar** 파일을 선택하고 **열기**&#x200B;를 클릭합니다.
-1. **RenderWrapper**&#x200B;를 마우스 오른쪽 단추로 클릭하고 **구성 요소 시작**&#x200B;을 선택합니다. 구성 요소가 시작되면 구성 요소 이름 옆에 녹색 화살표가 나타납니다.
+1. 을(를) 선택합니다 **DSCSample.jar** 파일 브라우저를 통해 파일을 작성하고 **열기**.
+1. 마우스 오른쪽 단추 클릭 **RenderWrapper** 을(를) 선택합니다. **구성 요소 시작**. 구성 요소가 시작되면 구성 요소 이름 옆에 녹색 화살표가 나타납니다.
 
 ## 검토를 위해 편지 보내기 {#send-letter-for-review}
 
@@ -446,10 +446,10 @@ DSCSample.jar 파일은 renderLetter API를 사용하여 DSC가 입력으로 제
 
 1. 브라우저 캐시를 지웁니다.
 
-1. 서신 작성 UI에서 **편지 검토**&#x200B;를 클릭하고 검토자의 이메일 ID를 지정합니다.
+1. Create Correspondence UI에서 **편지 검토** 검토자의 이메일 ID를 지정합니다.
 
-1. **제출**&#x200B;을 클릭합니다.
+1. 클릭 **제출**.
 
 ![sendreview](assets/sendreview.png)
 
-검토자는 시스템에서 PDF 첨부 파일로 편지가 포함된 이메일을 수신합니다.
+검토자는 시스템에서 편지를 PDF 첨부 파일로 받은 이메일을 수신합니다.

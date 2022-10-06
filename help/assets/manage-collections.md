@@ -134,7 +134,7 @@ Smart Collection에서는 검색 기준을 사용하여 자산을 동적으로 �
    ![select_smart_collection](assets/select_smart_collection.png)
 
 1. 에서 **[!UICONTROL 파일 및 폴더]** 목록, 선택 **[!UICONTROL 파일]**.
-1. 필요에 따라 하나 이상의 필터를 수정합니다. 클릭 **[!UICONTROL 스마트 컬렉션 편집]**.
+1. 필요에 따라 하나 이상의 필터를 수정합니다. **[!UICONTROL 스마트 컬렉션 편집]**&#x200B;을 클릭합니다.
 
    스마트 컬렉션의 이름을 편집할 수도 있습니다.
 

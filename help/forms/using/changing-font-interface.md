@@ -1,8 +1,8 @@
 ---
 title: 인터페이스에서 글꼴 변경
-seo-title: 인터페이스에서 글꼴 변경
+seo-title: Changing the font on the interface
 description: 사용자 인터페이스에서 글꼴을 선택적으로 변경하는 방법입니다.
-seo-description: 사용자 인터페이스에서 글꼴을 선택적으로 변경하는 방법입니다.
+seo-description: How to change the fonts on the user interface selectively.
 uuid: 421fdd24-441a-4092-8c52-f3ed3d5d5671
 contentOwner: robhagat
 content-type: reference
@@ -13,16 +13,16 @@ docset: aem65
 exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '276'
 ht-degree: 1%
 
 ---
 
-# 인터페이스{#changing-the-font-on-the-interface}에서 글꼴 변경
+# 인터페이스에서 글꼴 변경{#changing-the-font-on-the-interface}
 
 AEM Forms 작업 공간에 표시되는 글꼴을 변경할 수 있습니다. 사용자 인터페이스의 특정 섹션에 사용되는 글꼴은 스타일 시트의 해당 섹션에 정의됩니다. 사용자 인터페이스의 글꼴을 선택적으로 변경할 수 있습니다.
 
-AEM Forms 작업 공간 사용자 지정을 위한 [일반 단계](../../forms/using/generic-steps-html-workspace-customization.md)를 따르고 요구 사항에 따라 CSS, HTML 또는 둘 다 사용자 지정하는 단계를 따릅니다.
+다음을 수행합니다 [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md) 및 요구 사항에 따라 CSS, HTML 또는 둘 다 사용자 지정하는 단계를 따릅니다.
 
 1. 기존 스타일로 글꼴 모음을 변경하거나 추가합니다.
 1. HTML 요소에 대한 글꼴 패밀리 인라인을 변경하거나 추가합니다.
@@ -30,7 +30,7 @@ AEM Forms 작업 공간 사용자 지정을 위한 [일반 단계](../../forms/u
 
 예를 들어, 위쪽 탐색 모음 앵커 텍스트의 글꼴을 Courier New 로 변경하려면 다음 단계를 따르십시오.
 
-1. `https://'[server]:[port]'/lc/crx/de/index.jsp`에 액세스하여 CRXDE Lite에 로그인합니다.
+1. 에 액세스하여 CRXDE Lite에 로그인합니다. `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. 다음 중 하나를 수행하십시오.
 
    1. 기존 스타일의 font-family를 변경하려면 /apps/ws/css의 newStyle.css 파일에 다음을 추가하십시오.
@@ -41,7 +41,7 @@ AEM Forms 작업 공간 사용자 지정을 위한 [일반 단계](../../forms/u
       }
       ```
 
-   1. HTML 요소에 대한 font-family 인라인을 추가하려면 `/libs/ws/js/runtime/templates/appnavigation.html` 파일을 `/apps/ws/js/runtime/templates/appnavigation.html`에 복사합니다.
+   1. HTML 요소에 대한 글꼴 패밀리 인라인을 추가하려면 `/libs/ws/js/runtime/templates/appnavigation.html` 파일 위치 `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       다음과 같이 /apps/ws/js/runtime/templates/appnavigation.html 파일을 업데이트합니다.
 
@@ -52,7 +52,7 @@ AEM Forms 작업 공간 사용자 지정을 위한 [일반 단계](../../forms/u
       <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
       ```
 
-      편집할 /apps/ws/js/registry.js 파일을 열고 `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` 을 `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`(으)로 바꿉니다.
+      편집 및 바꾸기용 /apps/ws/js/registry.js 파일을 엽니다. `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` with `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
    1. font-family를 정의하는 스타일을 추가하려면 /apps/ws/css의 newStyle.css 파일에 다음을 추가하십시오.
 

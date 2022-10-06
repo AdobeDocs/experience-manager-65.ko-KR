@@ -659,7 +659,7 @@ OSGI 이벤트( `/system/console/events`) 내의 예를 들면 다음과 같습�
 #### 주문 정보 만들기 - 터치에 적합한 UI {#creating-order-information-touch-optimized-ui}
 
 1. 사용 **주문** 콘솔이 필요한 위치로 이동합니다.
-1. 를 사용하십시오 **만들기** 아이콘을 선택하여 선택합니다. **주문 만들기**.
+1. 를 사용하십시오 **만들기** 아이콘을 선택합니다. **주문 만들기**.
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 

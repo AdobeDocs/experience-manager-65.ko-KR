@@ -1,8 +1,8 @@
 ---
 title: 도구 콘솔
-seo-title: 도구 콘솔
+seo-title: Tools Consoles
 description: AEM 전체에서 다양한 도구 콘솔에 대해 알아봅니다.
-seo-description: AEM 전체에서 다양한 도구 콘솔에 대해 알아봅니다.
+seo-description: Learn about the different tools consoles throughout AEM.
 uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '609'
 ht-degree: 44%
 
 ---
 
 # 도구 콘솔{#tools-consoles}
 
-**도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구에 액세스할 수 있습니다. 현재 사용 중인 UI에 따라 **도구** 콘솔의 두 가지 방식이 있습니다.
+**도구** 콘솔에서는 웹 사이트, 디지털 자산 및 콘텐츠 저장소의 다른 측면을 관리하는 데 도움이 되는 많은 전문 도구에 액세스할 수 있습니다. 현재 두 가지 맛이 있습니다 **도구** 사용 중인 UI에 따라 콘솔:
 
 * [도구 - 터치에 적합한 UI](#tools-touch-optimized-ui)
 * [도구 - 클래식 UI](#tools-classic-ui)
@@ -235,7 +235,7 @@ ht-degree: 44%
   </tr>
   <tr>
    <td> </td>
-   <td>오프로딩</td>
+   <td>오프로드</td>
   </tr>
   <tr>
    <td> </td>
@@ -377,11 +377,11 @@ ht-degree: 44%
    <td>여러 사이트를 관리하기 위한 중앙 집중화된 지점</td>
   </tr>
   <tr>
-   <td>클라이언트 컨텍스트 구성<br /> </td>
-   <td>Client Context는 사용자 데이터의 동적으로 어셈블된 컬렉션을 나타냅니다. 기본 및 marketing cloud 구성은 여기에 있습니다.<br /> </td>
+   <td>Client Context 구성<br /> </td>
+   <td>Client Context는 사용자 데이터의 동적으로 어셈블된 컬렉션을 나타냅니다. 기본 및 marketing cloud 구성은 여기에서 설명합니다.<br /> </td>
   </tr>
   <tr>
-   <td>Cloud Services 구성<br /> </td>
+   <td>클라우드 서비스 구성<br /> </td>
    <td>Adobe Marketing Cloud과 통합과 관련된 구성을 보유합니다.</td>
   </tr>
   <tr>
@@ -398,7 +398,7 @@ ht-degree: 44%
   </tr>
   <tr>
    <td>대시보드</td>
-   <td>보고 대시보드를 만들 수 있습니다.이렇게 하면 통합 데이터를 표시하는 페이지를 정의하는 사용자 지정 가능한 방법을 제공합니다.</td>
+   <td>보고 대시보드를 만들 수 있습니다. 이렇게 하면 통합 데이터를 표시하는 페이지를 정의하는 사용자 지정 가능한 방법을 제공합니다.</td>
   </tr>
   <tr>
    <td>사용자 지정 설명서</td>
@@ -446,7 +446,7 @@ ht-degree: 44%
   </tr>
   <tr>
    <td>세그멘테이션</td>
-   <td>사이트 방문자가 갖는 관심사와 목표는 매우 다양합니다. 이러한 목표를 이해하고 방문자의 기대를 충족할 수 있어야 온라인 마케팅의 성공이 보장됩니다. 세그먼테이션은 방문자의 세부 사항을 분석하고 특성을 지정하여 이를 수행하는 데 도움이 됩니다.<br /> </td>
+   <td>사이트 방문자가 갖는 관심사와 목표는 매우 다양합니다. 이러한 목표를 이해하고 방문자의 기대를 충족할 수 있어야 온라인 마케팅의 성공이 보장됩니다. 세그멘테이션은 방문자의 세부 사항을 분석하고 특성을 지정하여 이를 달성하는 데 도움이 됩니다.<br /> </td>
   </tr>
   <tr>
    <td>세입자</td>
@@ -461,7 +461,7 @@ ht-degree: 44%
    <td>필요에 따라 페이지 버전을 삭제할 수 있습니다.</td>
   </tr>
   <tr>
-   <td>워크플로우</td>
+   <td>워크플로</td>
    <td>워크플로우는 편집 프로세스를 지원하는 페이지 또는 디지털 자산에 대한 일련의 작업을 제어합니다.</td>
   </tr>
  </tbody>

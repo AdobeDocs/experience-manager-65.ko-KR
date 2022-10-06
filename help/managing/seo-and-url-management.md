@@ -41,7 +41,7 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
    * 하이픈(-)을 구분 기호로 사용하여 페이지의 이름을 지정합니다.
    * 카멜 표기법, 밑줄 및 공백을 사용하면 안 됩니다.
 
-* 가능하면 쿼리 매개 변수를 사용하지 않습니다. 필요할 경우 두 개 이하로 제한합니다.
+* 가능하면 쿼리 매개변수를 사용하지 않습니다. 필요할 경우 두 개 이하로 제한합니다.
 
    * 사용 가능한 경우 디렉터리 구조를 사용하여 정보 아키텍처를 나타냅니다.
    * 디렉터리 구조가 선택 사항이 아닌 경우 쿼리 문자열보다는 URL에서 Sling 선택기를 사용합니다. Sling 선택기를 사용하면 SEO 값이 제공될 뿐 아니라 디스패처의 페이지를 캐시할 수 있습니다.
@@ -67,7 +67,7 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
 
 * 정식 URL을 사용합니다.
 
-   * 어떤 URL이 다른 경로나 다른 매개 변수 또는 선택기에서 제공될 수 있는 경우 페이지에서 `rel=canonical` 태그를 사용해야 합니다.
+   * 어떤 URL이 다른 경로나 다른 매개변수 또는 선택기에서 제공될 수 있는 경우 페이지에서 `rel=canonical` 태그를 사용해야 합니다.
 
    * 이 태그는 AEM 템플릿의 코드에 포함할 수 있습니다.
 
@@ -96,7 +96,7 @@ AEM 프로젝트에서 URL을 평가할 때에는 다음 사항을 자문해 보
 
 * 업데이트된 URL로 새 사이트를 시작할 때 기존 SEO 등급을 잃지 않도록 301 리디렉션을 구현하십시오.
 * 귀하의 사이트에 대한 favicon을 포함하십시오.
-* 검색 엔진이 콘텐츠를 더 쉽게 크롤링할 수 있도록 XML 사이트 맵을 구현하십시오. 반드시 모바일 및/또는 응답형 사이트를 위한 모바일 사이트 맵을 포함하십시오.
+* 검색 엔진이 콘텐츠를 더 쉽게 크롤링할 수 있도록 XML 사이트맵을 구현하십시오. 반드시 모바일 및/또는 응답형 사이트를 위한 모바일 사이트맵을 포함하십시오.
 
 ## AEM 구성 {#aem-configurations}
 
@@ -123,7 +123,7 @@ AEM에서는 서블릿을 작성할 때 두 가지 옵션을 제공합니다.
 
 #### Bin 서블릿(한 수준 아래로) {#bin-servlets-one-level-down}
 
-**Bin** 서블릿은 많은 개발자들이 J2EE 프로그래밍에서 익숙한 패턴을 따릅니다. 서블릿은 특정 경로에 등록되는데 AEM에서는 일반적으로 `/bin` 아래에 있으며 쿼리 문자열에서 필요한 요청 매개 변수를 추출하게 됩니다.
+**Bin** 서블릿은 많은 개발자들이 J2EE 프로그래밍에서 익숙한 패턴을 따릅니다. 서블릿은 특정 경로에 등록되는데 AEM에서는 일반적으로 `/bin` 아래에 있으며 쿼리 문자열에서 필요한 요청 매개변수를 추출하게 됩니다.
 
 이 유형의 서블릿에 대한 SCR 주석은 다음과 같은 모습입니다.
 
@@ -131,7 +131,7 @@ AEM에서는 서블릿을 작성할 때 두 가지 옵션을 제공합니다.
 @SlingServlet(paths = "/bin/myApp/myServlet", extensions = "json", methods = "GET")
 ```
 
-그러면 `doGet` 메서드에 포함된 `SlingHttpServletRequest` 개체를 통해 쿼리 문자열에서 매개 변수를 추출합니다. 예를 들면 다음과 같습니다.
+그러면 `doGet` 메서드에 포함된 `SlingHttpServletRequest` 오브젝트를 통해 쿼리 문자열에서 매개변수를 추출합니다. 예를 들면 다음과 같습니다.
 
 ```
 String myParam = req.getParameter("myParam");
@@ -148,9 +148,9 @@ String myParam = req.getParameter("myParam");
 * 이 서블릿을 보호하려면 서블릿에 사용자 지정 보안 로직을 구현해야 합니다.
 * 디스패처는 `/bin/myApp/myServlet`을 노출하도록 (신중하게) 구성되어야 합니다. 단순히 `/bin`을 노출하면 사이트 방문자에게 공개되어서는 안 되는 특정 서블릿에 대한 액세스가 허용될 수 있습니다.
 
-#### Sling 서블릿(한 수준 아래로) {#sling-servlets-one-level-down}
+#### Sling 서블릿 (한 수준 아래로) {#sling-servlets-one-level-down}
 
-**Sling** 서블릿을 사용하면 반대 방식으로 서블릿을 등록할 수 있습니다. 서블릿 주소를 지정하고 쿼리 매개 변수를 기반으로 서블릿이 렌더링할 콘텐츠를 지정하는 대신 원하는 콘텐츠의 주소를 지정하고 Sling 선택기를 기반으로 콘텐츠를 렌더링해야 하는 서블릿을 지정하십시오.
+**Sling** 서블릿을 사용하면 반대 방식으로 서블릿을 등록할 수 있습니다. 서블릿 주소를 지정하고 쿼리 매개변수를 기반으로 서블릿이 렌더링할 콘텐츠를 지정하는 대신 원하는 콘텐츠의 주소를 지정하고 Sling 선택기를 기반으로 콘텐츠를 렌더링해야 하는 서블릿을 지정하십시오.
 
 이 유형의 서블릿에 대한 SCR 주석은 다음과 같은 모습입니다.
 
@@ -173,7 +173,7 @@ Resource myPage = req.getResource();
 * 사이트 계층 구조 및 페이지 이름에 있는 의미 체계로 얻은 SEO 값을 포함할 수 있습니다.
 * 쿼리 매개 변수가 없으므로 디스패처가 응답을 캐시할 수 있습니다. 또한, 페이지가 활성화되어 있으면 주소가 지정된 페이지에 대한 모든 업데이트는 이 캐시를 무효화합니다.
 * 사용자가 이 서블릿에 액세스하려고 하면 `/content/my-brand/my-page`에 적용되는 모든 ACL이 적용됩니다.
-* 디스패처는 이미 웹 사이트를 제공하는 기능으로서 이 콘텐츠를 제공하도록 구성됩니다. 추가적인 구성은 필요하지 않습니다.
+* 디스패처는 이미 웹 사이트를 제공하는 기능으로서 이 콘텐츠를 제공하도록 구성됩니다. 추가 구성은 필요하지 않습니다.
 
 ### URL 재작성 {#url-rewriting}
 
@@ -273,13 +273,13 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
    * 변환 전: `/content/my-brand/my-page.html`
    * 변환 후: `/my-page.html`
 
-   이것은 URL을 가능한 짧게 유지하는 것이 좋다는 지침을 따릅니다.
+   이는 URL을 가능한 짧게 유지하는 것이 좋다는 지침을 따릅니다.
 
 1. **페이지에서 URL 출력 매핑**
 
    Apache Sling Resource Resolver에서 매핑을 정의한 후 구성 요소에서 이 매핑을 사용하여 페이지에서 출력하는 URL이 짧고 깔끔하게 해야 합니다. `ResourceResolver`의 매핑 기능을 사용하여 그렇게 할 수 있습니다.
 
-   예를 들어 현재 페이지의 하위 페이지를 나열하는 사용자 지정 탐색 구성 요소를 구현하는 경우 다음과 같은 매핑 메서드를 사용할 수 있습니다.
+   예를 들어 현재 페이지의 하위 페이지를 나열하는 사용자 정의 탐색 구성 요소를 구현하는 경우 다음과 같은 매핑 메서드를 사용할 수 있습니다.
 
    ```
    for (Page child : children) {
@@ -355,11 +355,11 @@ Disallow: /
 
 또는 실제 환경에서는 색인화하지 않을 특정 경로를 허용하지 않도록 선택할 수 있습니다.
 
-`robots.txt` 파일을 사이트 루트에 배치할 때 주의해야 할 사항은 디스패처 초기화 요청이 이 파일을 지우고 URL 매핑이 Apache HTTP Server 구성에 정의된 대로 `DOCROOT`와 다른 위치에 사이트 루트를 배치할 수 있다는 것입니다. 이러한 이유로 이 파일을 사이트 루트의 작성자 인스턴스에 배치하고 게시 인스턴스에 복제하는 것이 일반적입니다.
+`robots.txt` 파일을 사이트 루트에 배치할 때 주의해야 할 사항은 디스패처 초기화 요청이 이 파일을 지우고 URL 매핑이 Apache HTTP Server 구성에 정의된 대로 `DOCROOT`와 다른 위치에 사이트 루트를 배치할 수 있다는 것입니다. 이에 일반적으로 이 파일을 사이트 루트의 작성자 인스턴스에 배치하고 게시 인스턴스에 복제할 수 있습니다.
 
-### AEM에서 XML 사이트 맵 작성 {#building-an-xml-sitemap-on-aem}
+### AEM에서 XML 사이트맵 작성 {#building-an-xml-sitemap-on-aem}
 
-크롤러는 웹 사이트의 구조를 더 잘 파악하기 위해 XML 사이트 맵을 사용합니다. 사이트 맵을 제공하는 것이 SEO 등급을 개선한다는 보장은 없지만, 이것은 합의된 모범 사례입니다. 사이트 맵으로 사용할 XML 파일은 웹 서버에서 수동으로 유지 관리할 수 있지만, 사이트 맵은 프로그래밍 방식으로 생성하는 것이 좋습니다. 이렇게 하면 작성자가 새 콘텐츠를 만들 때 사이트 맵이 변경 사항을 자동으로 반영하게 됩니다.
+크롤러는 웹 사이트의 구조를 더 잘 파악하기 위해 XML 사이트맵을 사용합니다. 사이트 맵을 제공하는 것이 SEO 등급을 개선한다는 보장은 없지만, 이것은 합의된 모범 사례입니다. 사이트 맵으로 사용할 XML 파일은 웹 서버에서 수동으로 유지 관리할 수 있지만, 사이트 맵은 프로그래밍 방식으로 생성하는 것이 좋습니다. 이렇게 하면 작성자가 새 콘텐츠를 만들 때 사이트 맵이 변경 사항을 자동으로 반영하게 됩니다.
 
 AEM은 [Apache Sling 사이트 맵 모듈](https://github.com/apache/sling-org-apache-sling-sitemap)을 사용하여 개발자 및 편집자가 사이트 XML 사이트 맵을 최신 상태로 유지할 수 있도록 광범위한 옵션을 제공하는 XML 사이트 맵을 생성합니다.
 
@@ -381,24 +381,24 @@ Apache Sling 사이트 맵 모듈은 최상위 수준의 사이트 맵과 중첩
 >
 > 선택기 `sitemap` 및 `sitemap-index`는 맞춤형 구현에 방해가 될 수 있습니다. 제품 기능을 사용하지 않으려면 이들 선택기에 0보다 높은 `service.ranking`을 제공하는 나만의 서블릿을 구성하십시오.
 
-기본 구성에서 [페이지 속성] 대화 상자는 페이지를 사이트 맵 루트로 표시하여 위에서 설명한 대로 사이트 맵과 그 하위 항목을 생성하는 옵션을 표시합니다. 해당 비헤이비어는 `SitemapGenerator` 인터페이스의 구현을 통해 구현되며, 대체 구현 추가를 통해 확장될 수 있습니다. 단, XML 사이트 맵 재생성 빈도가 콘텐츠 작성 워크플로 및 워크로드에 따라 크게 변동되기 때문에 제품에는 `SitemapScheduler` 구성이 제공되지 않습니다. 이를 통해 기능을 효과적으로 옵트인할 수 있습니다.
+기본 구성에서 [페이지 속성] 대화 상자는 페이지를 사이트맵 루트로 표시하여 위에서 설명한 대로 사이트맵과 그 하위 항목을 생성하는 옵션을 표시합니다. 해당 비헤이비어는 `SitemapGenerator` 인터페이스의 구현을 통해 구현되며, 대체 구현 추가를 통해 확장될 수 있습니다. 단, XML 사이트맵 재생성 빈도가 콘텐츠 작성 워크플로 및 워크로드에 따라 크게 변동되기 때문에 제품에는 `SitemapScheduler` 구성이 제공되지 않습니다. 이를 통해 기능을 효과적으로 옵트인할 수 있습니다.
 
-XML 사이트 맵을 생성하는 백그라운드 작업을 활성화하려면 `SitemapScheduler`를 구성해야 합니다. 이렇게 하려면 PID `org.apache.sling.sitemap.impl.SitemapScheduler`에 대해 OSGi 구성을 생성합니다. 스케줄러 표현식 `0 0 0 * * ?`을(를) 시작점으로 사용하여 매일 자정에 모든 XML 사이트 맵을 다시 생성할 수 있습니다.
+XML 사이트맵을 생성하는 백그라운드 작업을 활성화하려면 `SitemapScheduler`를 구성해야 합니다. 이렇게 하려면 PID `org.apache.sling.sitemap.impl.SitemapScheduler`에 대해 OSGi 구성을 생성합니다. 스케줄러 표현식 `0 0 0 * * ?`을(를) 시작점으로 사용하여 매일 자정에 모든 XML 사이트맵을 다시 생성할 수 있습니다.
 
-![Apache Sling 사이트 맵 - 스케줄러](assets/sling-sitemap-scheduler.png)
+![Apache Sling 사이트맵 - 스케줄러](assets/sling-sitemap-scheduler.png)
 
-사이트 맵 생성 작업은 작성자 및 게시 계층 인스턴스 모두에서 실행할 수 있습니다. 대부분의 경우 게시 계층 인스턴스에서만 적절한 표준 URL을 생성할 수 있으므로(Sling 리소스 매핑 규칙이 일반적으로 게시 계층 인스턴스에만 있기 때문) 게시 계층 인스턴스에서 생성 작업을 실행하는 것이 권장됩니다. 그러나 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 인터페이스를 구현하여 표준 URL을 생성하는 데 사용되는 외부화 메커니즘의 맞춤형 구현을 플러그인할 수 있습니다. 맞춤형 구현이 작성자 계층 인스턴스에서 사이트 맵의 표준 URL을 생성할 수 있는 경우 작성자 실행 모드에 대해 `SitemapScheduler`를 구성할 수 있으며 작성자 서비스 클러스터 인스턴스에 XML 사이트 맵 생성 워크로드를 배포할 수 있습니다. 이 시나리오에서는 아직 게시되지 않았거나, 수정되었거나, 제한된 사용자 그룹에게만 표시되는 콘텐츠를 처리할 때 특히 주의해야 합니다.
+사이트맵 생성 작업은 작성자 및 게시 계층 인스턴스 모두에서 실행할 수 있습니다. 대부분의 경우 게시 계층 인스턴스에서만 적절한 표준 URL을 생성할 수 있으므로(Sling 리소스 매핑 규칙이 일반적으로 게시 계층 인스턴스에만 있기 때문) 게시 계층 인스턴스에서 생성 작업을 실행하는 것이 권장됩니다. 그러나 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) 인터페이스를 구현하여 표준 URL을 생성하는 데 사용되는 외부화 메커니즘의 맞춤형 구현을 플러그인할 수 있습니다. 맞춤형 구현이 작성자 계층 인스턴스에서 사이트맵의 표준 URL을 생성할 수 있는 경우 작성자 실행 모드에 대해 `SitemapScheduler`를 구성할 수 있으며 작성자 서비스 클러스터 인스턴스에 XML 사이트맵 생성 워크로드를 배포할 수 있습니다. 이 시나리오에서는 아직 게시되지 않았거나, 수정되었거나, 제한된 사용자 그룹에게만 표시되는 콘텐츠를 처리할 때 특히 주의해야 합니다.
 
-AEM Sites에는 페이지 트리 사이를 이동하여 사이트 맵을 생성하는 `SitemapGenerator`의 기본 구현이 포함되어 있습니다. 사이트의 표준 URL 및 대체 언어(가능한 경우)만 출력하도록 사전 구성되어 있습니다. 또한 필요한 경우 페이지의 마지막 수정 날짜를 포함하도록 구성되어 있습니다. 이를 위해 _Adobe AEM SEO - 페이지 트리 사이트 맵 생성기_ 구성에서 _마지막 수정 날짜 추가_ 옵션을 활성화하고 _마지막으로 수정된 소스_&#x200B;를 선택하십시오. 사이트 맵이 게시 계층에서 생성되는 경우에는 `cq:lastModified` 날짜를 사용하는 것이 좋습니다.
+AEM Sites에는 페이지 트리 사이를 이동하여 사이트맵을 생성하는 `SitemapGenerator`의 기본 구현이 포함되어 있습니다. 사이트의 표준 URL 및 대체 언어(가능한 경우)만 출력하도록 사전 구성되어 있습니다. 또한 필요한 경우 페이지의 마지막 수정 날짜를 포함하도록 구성되어 있습니다. 이를 위해 _Adobe AEM SEO - 페이지 트리 사이트 맵 생성기_ 구성에서 _마지막 수정 날짜 추가_ 옵션을 활성화하고 _마지막으로 수정된 소스_&#x200B;를 선택하십시오. 사이트 맵이 게시 계층에서 생성되는 경우에는 `cq:lastModified` 날짜를 사용하는 것이 좋습니다.
 
 ![Adobe AEM SEO - 페이지 트리 사이트 맵 생성기 구성](assets/sling-sitemap-pagetreegenerator.png)
 
-사이트 맵의 콘텐츠를 제한하려면 필요한 경우 다음 서비스 인터페이스를 구현할 수 있습니다.
+사이트맵의 콘텐츠를 제한하려면 필요한 경우 다음 서비스 인터페이스를 구현할 수 있습니다.
 
-* AEM Sites의 특정 사이트 맵 생성기를 통해 생성된 XML 사이트 맵에서 페이지를 숨기도록 [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html)를 구현할 수 있습니다.
-* [Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)의 특정 사이트 맵 생성기를 통해 생성된 XML 사이트 맵에서 제품 또는 범주를 필터링하도록 [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 또는 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)를 구현할 수 있습니다.
+* AEM Sites의 특정 사이트맵 생성기를 통해 생성된 XML 사이트맵에서 페이지를 숨기도록 [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html)를 구현할 수 있습니다.
+* [Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)의 특정 사이트맵 생성기를 통해 생성된 XML 사이트맵에서 제품 또는 범주를 필터링하도록 [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 또는 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)를 구현할 수 있습니다.
 
-기본 구현이 특정 사용 사례에서 작동하지 않거나 확장 지점이 충분히 유연하지 않은 경우 생성된 사이트 맵의 콘텐츠를 완전히 제어하도록 맞춤형 `SitemapGenerator`를 구현할 수 있습니다. 다음 예에서는 AEM Sites의 기본 구현 논리를 활용하여 이 작업을 수행하는 방법을 보여 줍니다. [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html)를 시작점으로 사용하여 페이지 트리 사이를 이동합니다.
+기본 구현이 특정 사용 사례에서 작동하지 않거나 확장 지점이 충분히 유연하지 않은 경우 생성된 사이트맵의 콘텐츠를 완전히 제어하도록 맞춤형 `SitemapGenerator`를 구현할 수 있습니다. 다음 예에서는 AEM Sites의 기본 구현 논리를 활용하여 이 작업을 수행하는 방법을 보여 줍니다. [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html)를 시작점으로 사용하여 페이지 트리 사이를 이동합니다.
 
 ```
 import java.util.Optional;

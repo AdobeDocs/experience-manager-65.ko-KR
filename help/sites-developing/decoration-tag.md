@@ -1,6 +1,6 @@
 ---
 title: 장식 태그
-description: '웹 페이지의 구성 요소를 렌더링할 때 HTML 요소를 생성하여 자체에 렌더링된 구성 요소를 둘러쌀 수 있습니다. 개발자를 위해 AEM에서는 포함된 구성 요소를 감싸는 데코레이션 태그를 제어하는 분명하고 단순한 로직을 제공합니다. '
+description: 웹 페이지의 구성 요소를 렌더링할 때 HTML 요소를 생성하여 자체에 렌더링된 구성 요소를 둘러쌀 수 있습니다. 개발자를 위해 AEM에서는 포함된 구성 요소를 감싸는 데코레이션 태그를 제어하는 분명하고 단순한 로직을 제공합니다.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
@@ -36,33 +36,33 @@ ht-degree: 10%
 
 다음 속성 및 노드를 구성 요소에 적용하여 장식 태그의 동작을 제어할 수 있습니다.
 
-* **`cq:noDecoration {boolean}`** : 이 속성을 구성 요소에 추가할 수 있고, true 값을 사용하면 AEM이 구성 요소 위에 래퍼 요소를 생성하지 않습니다.
+* **`cq:noDecoration {boolean}`:** 이 속성을 구성 요소에 추가할 수 있고, true 값을 사용하면 AEM이 구성 요소 위에 래퍼 요소를 생성하지 않습니다.
 
-* **`cq:htmlTag`node :** 이 노드는 구성 요소 아래에 추가할 수 있으며 다음 속성을 가질 수 있습니다.
+* **`cq:htmlTag`노드 :** 이 노드는 구성 요소 아래에 추가할 수 있으며 다음 속성을 가질 수 있습니다.
 
-   * **`cq:tagName {String}`** : 기본 DIV 요소 대신 구성 요소를 래핑하는 데 사용할 사용자 지정 HTML 태그를 지정하는 데 사용할 수 있습니다.
-   * **`class {String}`** : 래퍼에 추가할 css 클래스 이름을 지정하는 데 사용할 수 있습니다.
-   * 다른 속성 이름은 제공된 것과 동일한 문자열 값을 사용하는 HTML 속성으로 추가됩니다.
+   * **`cq:tagName {String}`:** 이 태그는 기본 DIV 요소 대신 구성 요소를 래핑하는 데 사용할 사용자 지정 HTML 태그를 지정하는 데 사용할 수 있습니다.
+   * **`class {String}`:** 래퍼에 추가할 css 클래스 이름을 지정하는 데 사용할 수 있습니다.
+   * 다른 속성 이름은 제공된 것과 동일한 문자열 값을 갖는 HTML 속성으로 추가됩니다.
 
 ## 스크립트 컨트롤 {#script-controls}
 
-래퍼 동작은 [HTL](/help/sites-developing/decoration-tag.md#htl) 또는 [JSP](/help/sites-developing/decoration-tag.md#jsp)를 사용하여 요소를 포함하는지 여부에 따라 다릅니다.
+그러나 래퍼 동작은 [HTL](/help/sites-developing/decoration-tag.md#htl) 또는 [JSP](/help/sites-developing/decoration-tag.md#jsp) 요소를 포함하는 데 사용됩니다.
 
 ### HTL {#htl}
 
 일반적으로 HTL의 래퍼 동작은 다음과 같이 요약할 수 있습니다.
 
-* 기본적으로 래퍼 DIV가 렌더링되지 않습니다(다만 `data-sly-resource="foo"`을 수행할 때).
+* 기본적으로 래퍼 DIV가 렌더링되지 않습니다(를 수행할 때). `data-sly-resource="foo"`).
 * 모든 wcm 모드(비활성화됨, 미리 보기, 작성자와 게시 모두에서 편집)는 동일하게 렌더링됩니다.
 
 래퍼의 동작은 완전히 제어할 수도 있습니다.
 
 * HTL 스크립트는 래퍼 태그의 결과 동작을 완벽하게 제어할 수 있습니다.
-* 구성 요소 속성(`cq:noDecoration` 및 `cq:tagName` 등)도 래퍼 태그를 정의할 수 있습니다.
+* 구성 요소 속성(예: `cq:noDecoration` 및 `cq:tagName`)에서 래퍼 태그를 정의할 수도 있습니다.
 
 HTL 스크립트에서 래퍼 태그의 동작 및 관련 로직을 완전히 제어할 수 있습니다.
 
-HTL에서 개발에 대한 자세한 내용은 [HTL 설명서](https://docs.adobe.com/content/help/ko-KR/experience-manager-htl/using/overview.html)를 참조하십시오.
+HTL에서의 개발에 대한 자세한 내용은 [HTL 설명서](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
 
 #### 의사 결정 트리 {#decision-tree}
 
@@ -94,35 +94,35 @@ HTL에서 개발에 대한 자세한 내용은 [HTL 설명서](https://docs.adob
       @class = "component-two"
 ```
 
-#### 사용 사례 1:코드 재사용을 위한 구성 요소 포함 {#use-case-include-a-component-for-code-reuse}
+#### 사용 사례 1: 코드 재사용을 위한 구성 요소 포함 {#use-case-include-a-component-for-code-reuse}
 
-가장 일반적인 사용 사례는 코드 재사용을 위해 구성 요소에 다른 구성 요소가 포함된 경우입니다. 이 경우 포함된 구성 요소는 자체 도구 모음 및 대화 상자에서 편집할 수 없으므로 래퍼가 필요하지 않으며 구성 요소의 `cq:htmlTag`은 무시됩니다. 기본 동작으로 간주할 수 있습니다.
+가장 일반적인 사용 사례는 코드 재사용을 위해 구성 요소에 다른 구성 요소가 포함된 경우입니다. 이 경우 포함된 구성 요소는 자체 도구 모음 및 대화 상자에서 편집할 수 없으므로 래퍼가 필요하지 않고 구성 요소의 `cq:htmlTag` 이 무시됩니다. 기본 동작으로 간주할 수 있습니다.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
 `two.html: Hello World!`
 
-결과 출력: `/content/test.html`:
+결과 출력 `/content/test.html`:
 
 **`Hello World!`**
 
 예로는 이미지를 표시하는 코어 이미지 구성 요소를 포함하는 구성 요소가 있습니다. 이 경우 일반적으로 합성 리소스를 사용하여 가상 하위 구성 요소를 포함하는 구성 요소는 구성 요소가 가질 모든 속성을 나타내는 Map 개체에 data-sly-resource로 전달하여 구성합니다.
 
-#### 사용 사례 2:편집 가능한 구성 요소 {#use-case-include-an-editable-component} 포함
+#### 사용 사례 2: 편집 가능한 구성 요소 포함 {#use-case-include-an-editable-component}
 
-또 다른 일반적인 사용 사례는 컨테이너 구성 요소에 레이아웃 컨테이너와 같은 편집 가능한 하위 구성 요소가 포함되는 경우입니다. 이 경우 포함된 각 자식은 편집기가 작동하기 위한 래퍼가 필수적으로 필요합니다( `cq:noDecoration` 속성으로 명시적으로 비활성화되지 않은 경우).
+또 다른 일반적인 사용 사례는 컨테이너 구성 요소에 레이아웃 컨테이너와 같은 편집 가능한 하위 구성 요소가 포함되는 경우입니다. 이 경우, 포함된 각 자식은 명시적으로 를 사용하여 비활성화하지 않는 한 편집기가 작동하려면 래퍼가 필요하지 않습니다 `cq:noDecoration` Analytics JavaScript용 URL 섹션을 참조하십시오.
 
-포함된 구성 요소는 이 경우 독립 구성 요소이므로 편집기가 작동하고 적용할 레이아웃 및 스타일을 정의해야 합니다. 이 동작을 트리거하기 위해 `decoration=true` 옵션이 있습니다.
+포함된 구성 요소는 이 경우 독립 구성 요소이므로 편집기가 작동하고 적용할 레이아웃 및 스타일을 정의해야 합니다. 이 동작을 트리거하기 위해 다음과 같은 항목이 있습니다 `decoration=true` 선택 사항입니다.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
 `two.html: Hello World!`
 
-결과 출력: `/content/test.html`:
+결과 출력 `/content/test.html`:
 
 **`<article class="component-two">Hello World!</article>`**
 
-#### 사용 사례 3:사용자 지정 동작 {#use-case-custom-behavior}
+#### 사용 사례 3: 사용자 지정 동작 {#use-case-custom-behavior}
 
 HTL을 통해 명시적으로 제공할 수 있으므로 다양한 복잡한 사례가 있을 수 있습니다.
 
@@ -139,13 +139,13 @@ HTL을 통해 명시적으로 제공할 수 있으므로 다양한 복잡한 사
 
 ## JSP {#jsp}
 
-`cq:includ`e 또는 `sling:include`을 사용하여 구성 요소를 포함할 때 AEM의 기본 동작은 DIV를 사용하여 요소를 래핑하는 것입니다. 그러나 이 포장은 다음 두 가지 방법으로 사용자 지정할 수 있습니다.
+구성 요소를 포함할 때 `cq:includ`e 또는 `sling:include`: AEM의 기본 동작은 DIV를 사용하여 요소를 래핑하는 것입니다. 그러나 이 포장은 다음 두 가지 방법으로 사용자 지정할 수 있습니다.
 
-* AEM에 `cq:noDecoration`을 사용하여 구성 요소를 래핑하지 않도록 명시적으로 지시합니다.
-* 사용자 지정 HTML 태그를 사용하여 `cq:htmlTag`/ `cq:tagName` 또는 `decorationTagName`를 사용하여 구성 요소를 래핑합니다.
+* AEM에서 `cq:noDecoration`.
+* 사용자 지정 HTML 태그를 사용하여 `cq:htmlTag`/ `cq:tagName` 또는 `decorationTagName`.
 
 ### 의사 결정 트리 {#decision-tree-1}
 
-다음 의사 결정 트리는 래퍼 동작에 `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` 및 `decorationTagName`이 어떻게 영향을 주는지를 보여줍니다.
+다음 의사 결정 트리는 `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, 및 `decorationTagName` 래퍼 동작에 영향을 줍니다.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)

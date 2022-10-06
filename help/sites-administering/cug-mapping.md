@@ -1,8 +1,8 @@
 ---
 title: AEM 6.5의 사용자 지정 사용자 그룹 매핑
-seo-title: AEM 6.5의 사용자 지정 사용자 그룹 매핑
+seo-title: Custom User Group Mapping in AEM 6.5
 description: AEM에서 사용자 지정 사용자 그룹 매핑이 작동하는 방식을 알아봅니다.
-seo-description: AEM에서 사용자 지정 사용자 그룹 매핑이 작동하는 방식을 알아봅니다.
+seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,17 @@ content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
-feature: 보안
+feature: Security
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
 
 # AEM 6.5의 사용자 지정 사용자 그룹 매핑 {#custom-user-group-mapping-in-aem}
 
-## CUG {#comparison-of-jcr-content-related-to-cug}와 관련된 JCR 컨텐츠 비교
+## CUG와 관련된 JCR 컨텐츠 비교 {#comparison-of-jcr-content-related-to-cug}
 
 <table>
  <tbody>
@@ -31,22 +31,22 @@ ht-degree: 1%
    <td><strong>댓글</strong></td>
   </tr>
   <tr>
-   <td><p>속성:cq:cugEnabled</p> <p>노드 유형 선언:N/A, 잔여 속성</p> </td>
-   <td><p>승인:</p> <p>노드:rep:cugPolicy of node type rep:CugPolicy</p> <p>노드 유형 선언:rep:CugMixin</p> <p> </p> <p> </p> <p> </p> 인증:</p> <p>Mixin 유형:granite:AuthenticationRequired</p> </td>
-   <td><p>읽기 액세스를 제한하려면 전용 CUG 정책이 대상 노드에 적용됩니다.</p> <p>참고:정책은 구성된 지원되는 경로에서만 적용할 수 있습니다.</p> <p>이름 rep:cugPolicy 및 type rep:CugPolicy가 있는 노드는 보호되며 일반 JCR API 호출을 사용하여 쓸 수 없습니다.대신 JCR 액세스 제어 관리를 사용하십시오.</p> <p>자세한 내용은 <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">이 페이지</a>를 참조하십시오.</p> <p>노드에 인증 요구 사항을 적용하려면 mixin type granite:AuthenticationRequired를 추가하면 됩니다.</p> <p>참고:구성된 지원되는 경로 아래에서만 적용됩니다.</p> </td>
+   <td><p>속성: cq:cugEnabled</p> <p>노드 유형 선언: N/A, 잔여 속성</p> </td>
+   <td><p>승인:</p> <p>노드: rep:cugPolicy of node type rep:CugPolicy</p> <p>노드 유형 선언: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> 인증:</p> <p>Mixin 유형: granite:AuthenticationRequired</p> </td>
+   <td><p>읽기 액세스를 제한하려면 전용 CUG 정책이 대상 노드에 적용됩니다.</p> <p>참고: 정책은 구성된 지원되는 경로에서만 적용할 수 있습니다.</p> <p>이름 rep:cugPolicy 및 type rep:CugPolicy가 있는 노드는 보호되며 일반 JCR API 호출을 사용하여 쓸 수 없습니다. 대신 JCR 액세스 제어 관리를 사용하십시오.</p> <p>자세한 내용은 <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">이 페이지</a> 추가 정보.</p> <p>노드에 인증 요구 사항을 적용하려면 mixin type granite:AuthenticationRequired를 추가하면 됩니다.</p> <p>참고: 구성된 지원되는 경로 아래에서만 적용됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>속성:cq:cugPrincipals</p> <p>노드 유형 선언:NA, 잔여 재산</p> </td>
-   <td><p>속성:rep:principalNames</p> <p>노드 유형 선언:rep:CugPolicy</p> </td>
-   <td><p>제한된 CUG 아래의 컨텐츠를 읽을 수 있는 해당 주도자의 이름이 들어 있는 속성은 보호되며 일반 JCR API 호출을 사용하여 쓸 수 없습니다.대신 JCR 액세스 제어 관리를 사용하십시오.</p> <p>구현에 대한 자세한 내용은 <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">이 페이지</a>를 참조하십시오.</p> </td>
+   <td><p>속성: cq:cugPrincipals</p> <p>노드 유형 선언: NA, 잔여 재산</p> </td>
+   <td><p>속성: rep:principalNames</p> <p>노드 유형 선언: rep:CugPolicy</p> </td>
+   <td><p>제한된 CUG 아래의 컨텐츠를 읽을 수 있는 해당 주도자의 이름이 들어 있는 속성은 보호되며 일반 JCR API 호출을 사용하여 쓸 수 없습니다. 대신 JCR 액세스 제어 관리를 사용하십시오.</p> <p>자세한 내용은 <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">이 페이지</a> 를 참조하십시오.</p> </td>
   </tr>
   <tr>
-   <td><p>속성:cq:cugLoginPage</p> <p>노드 유형 선언:NA, 잔여 재산</p> </td>
-   <td><p>속성:granite:loginPath(선택 사항)</p> <p>노드 유형 선언:granite:AuthenticationRequired</p> </td>
-   <td><p>mixin 유형이 granite:AuthenticationRequired가 정의된 JCR 노드는 선택적으로 대체 로그인 경로를 정의할 수 있습니다.</p> <p>참고:구성된 지원되는 경로 아래에서만 적용됩니다.</p> </td>
+   <td><p>속성: cq:cugLoginPage</p> <p>노드 유형 선언: NA, 잔여 재산</p> </td>
+   <td><p>속성: granite:loginPath(선택 사항)</p> <p>노드 유형 선언: granite:AuthenticationRequired</p> </td>
+   <td><p>mixin 유형이 granite:AuthenticationRequired가 정의된 JCR 노드는 선택적으로 대체 로그인 경로를 정의할 수 있습니다.</p> <p>참고: 구성된 지원되는 경로 아래에서만 적용됩니다.</p> </td>
   </tr>
   <tr>
-   <td><p>속성:cq:cugRealm</p> <p>노드 유형 선언:NA, 잔여 재산</p> </td>
+   <td><p>속성: cq:cugRealm</p> <p>노드 유형 선언: NA, 잔여 재산</p> </td>
    <td>NA</td>
    <td>새 구현에서는 더 이상 지원되지 않습니다.</td>
   </tr>
@@ -57,28 +57,28 @@ ht-degree: 1%
 
 **이전 AEM 버전**
 
-레이블:Adobe CUG(Granite Closed User Group) 지원
+레이블: Adobe CUG(Granite Closed User Group) 지원
 
-이름:com.day.cq.auth.impl.CugSupportImpl
+이름: com.day.cq.auth.impl.CugSupportImpl
 
 **AEM 6.5**
 
-* 레이블:Apache Jackrabbit Oak CUG 구성
+* 레이블: Apache Jackrabbit Oak CUG 구성
 
-   이름:org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
-
-   ConfigurationPolicy = 필수
-
-* 레이블:Apache Jackrabbit Oak CUG 제외 목록
-
-   이름:org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
+   이름: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
 
    ConfigurationPolicy = 필수
 
-* 이름:com.adobe.granite.auth.requirements.impl.RequirementsService
-* 레이블:Adobe Granite 인증 요구 사항 및 로그인 경로 핸들러
+* 레이블: Apache Jackrabbit Oak CUG 제외 목록
 
-   이름:com.adobe.granite.auth.requirements.impl.DefaultRequirementsHandler
+   이름: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
+
+   ConfigurationPolicy = 필수
+
+* 이름: com.adobe.granite.auth.requirements.impl.RequirementsService
+* 레이블: Adobe Granite 인증 요구 사항 및 로그인 경로 핸들러
+
+   이름: com.adobe.granite.auth.requirements.impl.DefaultRequirementsHandler
 
    ConfigurationPolicy = 필수
 
@@ -89,7 +89,7 @@ CUG 권한 부여의 영향을 받지 않아야 하는 주도자의 제외 목�
 
    >[!NOTE]
    > 
-   >`CugExcludeImpl`이 구성되어 있지 않으면 `CugConfiguration`이 기본값으로 폴백됩니다.
+   >만약 `CugExcludeImpl` 구성되지 않은 경우 `CugConfiguration` 은 기본값으로 폴백됩니다.
 
    특별한 요구 사항이 있을 경우 사용자 지정 CugExclude 구현을 플러그할 수 있습니다.
 

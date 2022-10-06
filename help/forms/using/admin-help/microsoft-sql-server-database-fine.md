@@ -1,8 +1,8 @@
 ---
-title: '"Microsoft SQL Server 데이터베이스:구성 미세 조정"'
-seo-title: '"Microsoft SQL Server 데이터베이스:구성 미세 조정"'
+title: "Microsoft SQL Server 데이터베이스: 구성 미세 조정"
+seo-title: "Microsoft SQL Server database: Fine-tuning the configuration"
 description: Microsoft SQL Server 데이터베이스의 구성을 세밀하게 조정하는 방법을 알아봅니다.
-seo-description: Microsoft SQL Server 데이터베이스의 구성을 세밀하게 조정하는 방법을 알아봅니다.
+seo-description: Learn how you can fine tune the configuration of your Microsoft SQL Server database.
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 exl-id: 9c570827-86e2-47d5-b8ae-66c0767bff2e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
-# Microsoft SQL Server 데이터베이스:구성 {#microsoft-sql-server-database-fine-tuning-the-configuration} 미세 조정
+# Microsoft SQL Server 데이터베이스: 구성 미세 조정 {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
 Microsoft SQL Server를 사용할 때는 기본 구성 설정을 변경해야 합니다. oracle Enterprise Manager에서 로컬 서버를 마우스 오른쪽 단추로 눌러 등록 정보 대화 상자에 액세스합니다.
 

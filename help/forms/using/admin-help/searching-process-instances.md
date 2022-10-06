@@ -1,8 +1,8 @@
 ---
 title: 프로세스 인스턴스 검색
-seo-title: 프로세스 인스턴스 검색
+seo-title: Searching for process instances
 description: 프로세스 검색 페이지에서 프로세스 인스턴스를 찾기 위한 검색 기준을 입력할 수 있습니다.
-seo-description: 프로세스 검색 페이지에서 프로세스 인스턴스를 찾기 위한 검색 기준을 입력할 수 있습니다.
+seo-description: Use the Process Search page to enter search criteria for finding a process instance.
 uuid: 4a9c5b05-add5-4278-9c6f-d1928b6860d2
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ ht-degree: 0%
 1. 프로세스 검색 페이지의 일반 검색 아래에서 다음 기준을 제공합니다.
 
    * **프로세스 ID:** 각 고유한 프로세스 인스턴스를 식별하는 양의 정수입니다.
-   * **프로세스 상태:**  목록에서 상태를 선택합니다.
-   * **애플리케이션:**  목록에서 애플리케이션을 선택합니다. 배포된 애플리케이션만 표시됩니다.
-   * **프로세스 이름 - 버전:**  메뉴에서 프로세스 이름을 선택합니다. 배포된 프로세스만 표시됩니다.
+   * **프로세스 상태:** 목록에서 상태를 선택합니다.
+   * **애플리케이션:** 목록에서 응용 프로그램을 선택합니다. 배포된 애플리케이션만 표시됩니다.
+   * **프로세스 이름 - 버전:** 메뉴에서 프로세스 이름을 선택합니다. 배포된 프로세스만 표시됩니다.
 
 1. 검색을 클릭합니다. 발견된 인스턴스를 나열하는 프로세스 인스턴스 페이지가 나타납니다.
 
-## 프로세스 {#perform-a-detailed-search-for-a-process}에 대한 자세한 검색 수행
+## 프로세스에 대한 자세한 검색 수행 {#perform-a-detailed-search-for-a-process}
 
 특정 속성을 입력하여 자세한 검색을 수행할 수 있습니다. 실행 중인 프로세스 인스턴스가 많으므로 특정 기준으로 가능한 검색 범위를 좁히는 것이 필요한 경우 세부 검색이 가장 적합합니다.
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 [프로세스 인스턴스 상태 정보](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 
-## 프로세스 {#perform-a-combined-search-for-a-process}에 대해 결합된 검색 수행
+## 프로세스에 대해 통합 검색 수행 {#perform-a-combined-search-for-a-process}
 
 일반 검색과 상세 검색을 모두 기준으로 검색을 생성하려면 해당 영역 사이에 암묵적 AND를 사용하여 프로세스 검색 페이지의 일반 검색 영역과 상세 검색 영역 모두에 검색 기준을 입력합니다.
 

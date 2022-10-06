@@ -1,8 +1,8 @@
 ---
 title: 저장소 구성
-seo-title: 저장소 구성
+seo-title: Storage Configuration
 description: 스토리지 구성 콘솔에 액세스하는 방법
-seo-description: 스토리지 구성 콘솔에 액세스하는 방법
+seo-description: How to access the Storage Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 5%
+source-wordcount: '199'
+ht-degree: 4%
 
 ---
 
@@ -35,16 +35,16 @@ ht-degree: 5%
 
 작성 환경에서 스토리지 구성 콘솔에 연결합니다.
 
-* 전역 탐색에서 **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 저장소 구성]**&#x200B;을 선택합니다.
+* 전역 탐색에서 를 선택합니다 **[!UICONTROL 도구]** > **[!UICONTROL 커뮤니티]** > **[!UICONTROL 스토리지 구성]**
 
 기본 JCR 이외의 저장소 옵션을 선택하려면 다음을 수행합니다.
 
 * 옵션 선택
 * 적절하게 구성
 
-   * [MSRP](msrp.md#select-msrp)에 대한 세부 정보를 참조하십시오
-   * [DSRP](dsrp.md#select-dsrp)에 대한 세부 정보를 참조하십시오
-   * [ASRP](asrp.md#select-asrp)에 대한 세부 정보를 참조하십시오
+   * 자세한 내용은 [MSRP 선택](msrp.md#select-msrp)
+   * 자세한 내용은 [DSRP 선택](dsrp.md#select-dsrp)
+   * 자세한 내용은 [ASRP 선택](asrp.md#select-asrp)
 
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
@@ -52,10 +52,10 @@ ht-degree: 5%
 
 선택하지 않으면 기본값은 AEM 저장소인 JCR입니다.
 
-JCR은 작성 및 게시 환경에 의해 공유되는 공통 저장소가 아닌 *입니다.* 커뮤니티 콘텐츠는 만든 작성자 또는 게시 환경에서만 표시됩니다.
+JCR은 *not* 작성 및 게시 환경에서 공유되는 공용 스토어. 커뮤니티 콘텐츠는 만든 작성자 또는 게시 환경에서만 표시됩니다.
 
-추가 정보를 보려면 [JCR Store](jsrp.md)를 방문하십시오.
+방문 [JCR 저장소](jsrp.md) 추가 정보.
 
 >[!NOTE]
 >
->`/etc/socialconfig` 아래에 `srpc` 노드가 없으면 기본 [JCR store](jsrp.md)가 표시됩니다.
+>노드가 없음 `srpc` 아래에 `/etc/socialconfig` 기본값은 를 나타냅니다 [JCR 저장소](jsrp.md).

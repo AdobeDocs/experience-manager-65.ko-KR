@@ -1,8 +1,8 @@
 ---
 title: 커뮤니티 구성 요소 오버레이
-seo-title: 커뮤니티 구성 요소 오버레이
+seo-title: Overlay communities components
 description: 커뮤니티 구성 요소 오버레이
-seo-description: 커뮤니티 구성 요소 오버레이
+seo-description: Overlay communities components
 uuid: 872f7006-959a-49d2-b025-3a5abb7c6dca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
 # 커뮤니티 구성 요소 오버레이 {#overlay-communities-components}
 
-기본 구성 요소를 오버레이하는 의도는 구성 요소에 대한 모든 상대 참조에 대해 구성 요소의 모양 또는 동작을 전역 변경하는 것입니다. [](/help/communities/client-customize.md#overlays) /libs 폴더에서 검색하기 전에 sling의 특성을 사용하여 /apps 폴더로 확인합니다. 따라서 구성 요소의 경로는 /apps 폴더에 있지 않고 /libs 폴더에 있다는 점을 제외하고 기본 구성 요소의 경로와 동일합니다.
+의 의도 [오버레이](/help/communities/client-customize.md#overlays) 기본 컴포넌트는 컴포넌트에 대한 모든 상대 참조에 대해 전체적으로 컴포넌트의 모양이나 동작을 변경하는 것입니다. /libs 폴더에서 검색하기 전에 sling의 특성을 사용하여 /apps 폴더로 확인합니다. 따라서 구성 요소의 경로는 /apps 폴더에 있지 않고 /libs 폴더에 있다는 점을 제외하고 기본 구성 요소의 경로와 동일합니다.
 
 ## 예 {#example}
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 **오버레이 알림 이메일**
 
-이메일 알림 메시지를 사용자 지정하려는 경우 [오버레이하여](/help/communities/client-customize.md#overlays)템플릿을 **/libs/settings/community/templates/email/html**&#x200B;에서 수행할 수 있습니다.
+이메일 알림 메시지를 사용자 정의한다고 가정할 경우 다음을 수행하여 다음을 수행할 수 있습니다. [오버레이](/help/communities/client-customize.md#overlays) 의 템플릿 **/libs/settings/community/templates/email/html**.
 
-예를 들어, 언급 이메일 알림을 수정하려면( ugc가 생성된 특정 커뮤니티 구성 요소에 대해) **if** 조건은 **@mentions** 지원을 활성화한 구성 요소 템플릿에 추가합니다.****
+예를 들어, 언급 이메일 알림을 수정하려면(ugc가 생성된 특정 커뮤니티 구성 요소에 대해) **if** 동사 조건 **언급** 을 활성화할 구성 요소의 템플릿에서 **@mentions** 지원.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -46,4 +46,4 @@ ht-degree: 0%
 {{/equals}}\
 ```
 
-블로그 댓글에 @mention에 대한 이메일 알림 템플릿을 수정하려면 다음 위치에서 즉시 템플릿을 사용하십시오.`/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+블로그 댓글에 @mention에 대한 이메일 알림 템플릿을 수정하려면 다음 위치에서 즉시 템플릿을 사용하십시오. `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`

@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 작업 공간 사용자 인터페이스의 로케일 변경
-seo-title: AEM Forms 작업 공간 사용자 인터페이스의 로케일 변경
+seo-title: Changing the locale of AEM Forms workspace user interface
 description: 인터페이스에서 텍스트, 축소된 카테고리, 큐 및 프로세스를 현지화하도록 AEM Forms 작업 공간을 수정하는 방법 및 날짜 선택기를 사용합니다.
-seo-description: 인터페이스에서 텍스트, 축소된 카테고리, 큐 및 프로세스를 현지화하도록 AEM Forms 작업 공간을 수정하는 방법 및 날짜 선택기를 사용합니다.
+seo-description: How to modify the AEM Forms workspace to localize text, collapsed categories, queues, and processes, and the date picker on the interface.
 uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
 content-type: reference
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -28,31 +28,31 @@ AEM Forms 작업 공간 사용자 인터페이스를 원하는 언어로 현지�
 * 축소된 카테고리, 큐 및 프로세스를 현지화합니다.
 * 날짜 선택기 현지화
 
-위의 단계를 수행하기 전에 AEM Forms 작업 공간 사용자 지정을 위한 [일반 단계에 나열된 단계를 따라야 합니다](../../forms/using/generic-steps-html-workspace-customization.md).
+위의 단계를 수행하기 전에 다음에 나열된 단계를 수행해야 합니다. [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md).
 
 >[!NOTE]
 >
->AEM Forms 작업 영역의 로그인 화면 언어를 변경하려면 [새 로그인 화면 만들기](../../forms/using/creating-new-login-screen.md)를 참조하십시오.
+>AEM Forms 작업 영역의 로그인 화면 언어를 변경하려면 [새 로그인 화면 만들기](../../forms/using/creating-new-login-screen.md).
 
 ## 텍스트 현지화 {#localizing-text}
 
-다음 단계를 수행하여 언어 *New* 및 브라우저 로케일 코드 *nw*&#x200B;에 대한 지원을 추가합니다.
+언어에 대한 지원을 추가하려면 다음 단계를 수행하십시오 *새로 만들기* 및 브라우저 로케일 코드 *nw*.
 
 1. CRXDE Lite에 로그인합니다.
-CRXDE Lite의 기본 URL은 `https://'[server]:[port]'/lc/crx/de/index.jsp`입니다.
-1. `apps/ws/locales` 위치로 이동하고 새 폴더 `nw.`를 만듭니다
-1. `/apps/ws/locales/en-US` 위치에서 `translation.json` 파일을 `/apps/ws/locales/nw` 위치에 복사합니다.
-1. `/apps/ws/locales/nw`(으)로 이동하고 편집할 `translation.json` 을 엽니다. translation.json 파일을 로케일별로 변경합니다.
+CRXDE Lite의 기본 URL은 `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. 위치로 이동합니다. `apps/ws/locales` 새 폴더 만들기 `nw.`
+1. 파일 복사 `translation.json`위치 `/apps/ws/locales/en-US` 위치 `/apps/ws/locales/nw` .
+1. 다음으로 이동 `/apps/ws/locales/nw` 및 열기 `translation.json` 참조하십시오. translation.json 파일을 로케일별로 변경합니다.
 
    다음 예에는 영어 및 AEM Forms 작업 공간의 프랑스어 로케일에 대한 translation.json 파일이 포함되어 있습니다.
 
-   ![translation_json_in_](assets/translation_json_in_en.png) ![entrsation_json_in_fr](assets/translation_json_in_fr.png)
+   ![translation_json_in_en](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
 
 ## 축소된 카테고리, 큐 및 프로세스 현지화 {#localizing-collapsed-categories-queues-and-processes}
 
-AEM Forms 작업 영역은 이미지를 사용하여 카테고리, 큐 및 프로세스의 헤더를 표시합니다. 이러한 헤더를 현지화하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 공간 코드 작성](introduction-customizing-html-workspace.md#building-html-workspace-code) 을 참조하십시오.
+AEM Forms 작업 영역은 이미지를 사용하여 카테고리, 큐 및 프로세스의 헤더를 표시합니다. 이러한 헤더를 현지화하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 공간 코드 작성 중.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-다음 단계에서는 현지화된 새 이미지 파일이 *Categories_nw.png*, *Queue_nw.png* 및 *Processes_nw.png*&#x200B;라고 가정합니다. 이미지의 권장 너비는 19px입니다.
+다음 단계에서는 현지화된 새 이미지 파일이 *Categories_nw.png*, *Queue_nw.png*, 및 *Processes_nw.png*. 이미지의 권장 너비는 19px입니다.
 
 >[!NOTE]
 >
@@ -62,8 +62,8 @@ AEM Forms 작업 영역은 이미지를 사용하여 카테고리, 큐 및 프�
 
 이미지를 현지화하려면 다음 단계를 수행하십시오.
 
-1. WebDAV 클라이언트를 사용하여 */apps/ws/images* 폴더에 이미지 파일을 배치합니다.
-1. */apps/ws/css*&#x200B;로 이동합니다. 편집할 *newStyle.css*&#x200B;를 열고 다음 항목을 추가합니다.
+1. WebDAV 클라이언트를 사용하여 이미지 파일을 */apps/ws/images* 폴더를 입력합니다.
+1. 다음으로 이동 */apps/ws/css*. 열기 *newStyle.css* 를 편집하고 다음 항목을 추가합니다.
 
    ```css
    #categoryListBar .content.nw {
@@ -79,9 +79,9 @@ AEM Forms 작업 영역은 이미지를 사용하여 카테고리, 큐 및 프�
    }
    ```
 
-1. [작업 공간 사용자 지정](../../forms/using/introduction-customizing-html-workspace.md) 문서에 나열된 모든 의미 변경 작업을 수행합니다.
-1. *js/runtime/utility* 폴더로 이동하고 편집할 *usersession.js* 파일을 엽니다.
-1. 원래 코드 블록에 나열된 코드를 찾고 조건 *lang !== &#39;nw&#39;* 를 if 문에 추가합니다.
+1. 다음에 나열된 모든 의미 변경 작업을 수행합니다. [작업 공간 사용자 지정](../../forms/using/introduction-customizing-html-workspace.md) 문서.
+1. 로 이동합니다 *js/runtime/utility* 폴더 및 열기 *usersession.js* 편집할 파일입니다.
+1. 원래 코드 블록에 나열된 코드를 찾고 조건을 추가합니다 *lang!== &#39;nw&#39;* if 문:
 
    ```javascript
    // Orignal code
@@ -109,18 +109,18 @@ AEM Forms 작업 영역은 이미지를 사용하여 카테고리, 큐 및 프�
 
 ## 날짜 선택기 현지화 {#localizing-date-picker}
 
-*datepicker* API를 현지화하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 공간 코드 작성](introduction-customizing-html-workspace.md#building-html-workspace-code)을 참조하십시오.
+를 현지화하려면 개발 패키지가 필요합니다 *datepicker* API. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 공간 코드 작성](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
-1. [jQuery UI 패키지](https://jqueryui.com/download/all/)를 다운로드하고 추출하려면 *&lt;extracted jquery UI 패키지>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n으로 이동합니다.
+1. 다운로드 및 추출 [jQuery UI 패키지](https://jqueryui.com/download/all/), 다음 위치로 이동합니다. *&lt;extracted jquery=&quot;&quot; ui=&quot;&quot; package=&quot;&quot;>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. 이제 로케일 코드의 jquery.ui.datepicker-nw.js 파일을 apps/ws/js/libs/jqueryui에 복사하고 파일에 로케일 특정 변경 작업을 수행합니다.
-1. `apps/ws/js` 로 이동하고 편집할 `jquery.ui.datepicker-nw.js` 파일을 엽니다.
-1. main.js 파일에서 `jquery.ui.datepicker-nw.js.` 파일에 대한 별칭을 만듭니다. `jquery.ui.datepicker-nw.js` 파일에 대한 별칭을 만드는 코드는 다음과 같습니다.
+1. 다음으로 이동 `apps/ws/js` 그리고 `jquery.ui.datepicker-nw.js` 편집할 파일입니다.
+1. main.js 파일에서 `jquery.ui.datepicker-nw.js.` 에 대한 별칭을 만드는 코드 `jquery.ui.datepicker-nw.js` 파일:
 
    ```javascript
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
-1. 별칭 `jqueryuidatepickernw`을 사용하여 datepicker를 사용하는 모든 파일에 `jquery.ui.datepicker-nw.js` 파일을 포함합니다. datepicker는 다음 파일에서 사용됩니다.
+1. 별칭 사용 `jqueryuidatepickernw` 를 `jquery.ui.datepicker-nw.js` datepicker를 사용하는 모든 파일의 파일 datepicker는 다음 파일에서 사용됩니다.
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`

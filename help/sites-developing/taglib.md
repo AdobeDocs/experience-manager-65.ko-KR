@@ -1,8 +1,8 @@
 ---
 title: 태그 라이브러리
-seo-title: 태그 라이브러리
+seo-title: Tag Libraries
 description: Granite, CQ 및 Sling 태그 라이브러리는 템플릿 및 구성 요소의 JSP 스크립트에서 사용할 특정 기능에 액세스할 수 있도록 해줍니다
-seo-description: Granite, CQ 및 Sling 태그 라이브러리는 템플릿 및 구성 요소의 JSP 스크립트에서 사용할 특정 기능에 액세스할 수 있도록 해줍니다
+seo-description: The Granite, CQ, and Sling tag libraries give you access to specific functions for use in the JSP script of your templates and components
 uuid: e622d47b-cfb3-4b4a-b8e3-e1adee294219
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
 source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '2509'
-ht-degree: 1%
+source-wordcount: '2483'
+ht-degree: 0%
 
 ---
 
@@ -31,37 +31,37 @@ Granite UI 구성 요소의 jsp 스크립트를 개발할 때는 스크립트 �
 <%@include file="/libs/granite/ui/global.jsp"%>
 ```
 
-전역 또한 [Sling 라이브러리](/help/sites-developing/taglib.md#sling-tag-library)를 선언합니다.
+글로벌 또한 [Sling 라이브러리](/help/sites-developing/taglib.md#sling-tag-library).
 
 ```xml
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling" %>
 ```
 
-### &lt;ui:includeclientlib> {#ui-includeclientlib}
+### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-`<ui:includeClientLib>` 태그는 js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리를 포함합니다. js 및 css와 같은 다양한 유형의 여러 포함을 위해 이 태그를 jsp에서 여러 번 사용해야 합니다. 이 태그는 ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` 서비스 인터페이스의 편의 래퍼입니다.
+다음 `<ui:includeClientLib>` 태그에는 js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리가 포함되어 있습니다. js 및 css와 같은 다양한 유형의 여러 포함을 위해 이 태그를 jsp에서 여러 번 사용해야 합니다. 이 태그는 ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` 서비스 인터페이스.
 
 여기에는 다음 속성이 있습니다.
 
-**categories**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 및 CSS 라이브러리가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
+**카테고리** - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 및 CSS 라이브러리가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
 해당 항목: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**테마**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS와 JS 모두)가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
+**테마** - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS와 JS 모두)가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
 해당 항목: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 라이브러리가 포함됩니다.
+**js** - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 라이브러리가 포함됩니다.
 
 해당 항목: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
-**css**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리의 모든 CSS 라이브러리가 포함됩니다.
+**css** - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리의 모든 CSS 라이브러리가 포함됩니다.
 
 해당 항목: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
-**테마**  - 테마 또는 비테마 라이브러리만 나타내는 플래그를 포함해야 합니다. 생략하면 두 세트가 모두 포함됩니다. 순수 JS 또는 CSS에만 적용됩니다(카테고리 또는 테마 포함에는 적용되지 않음).
+**테마** - 테마 또는 비테마 라이브러리만 나타내는 플래그를 포함해야 합니다. 생략하면 두 세트가 모두 포함됩니다. 순수 JS 또는 CSS에만 적용됩니다(카테고리 또는 테마 포함에는 적용되지 않음).
 
-`<ui:includeClientLib>` 태그는 jsp에서 다음과 같이 사용할 수 있습니다.
+다음 `<ui:includeClientLib>` 태그는 jsp에서 다음과 같이 사용할 수 있습니다.
 
 ```xml
 <%-- all: js + theme (theme-js + css) --%>
@@ -89,7 +89,7 @@ CQ 태그 라이브러리에는 유용한 기능이 포함되어 있습니다.
 
 >[!NOTE]
 >
->스크립트에 `/libs/foundation/global.jsp` 파일이 포함되면 taglib이 자동으로 선언됩니다.
+>이 `/libs/foundation/global.jsp` 파일이 스크립트에 포함되면 taglib이 자동으로 선언됩니다.
 
 AEM 구성 요소의 jsp 스크립트를 개발할 때 스크립트 맨 위에 다음 코드를 포함하는 것이 좋습니다.
 
@@ -97,37 +97,37 @@ AEM 구성 요소의 jsp 스크립트를 개발할 때 스크립트 맨 위에 �
 <%@include file="/libs/foundation/global.jsp"%>
 ```
 
-Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects) 태그로 정의된 정기적으로 사용되는 스크립팅 개체를 표시합니다. 이렇게 하면 구성 요소의 jsp 코드가 단축되고 단순화됩니다.
+이 함수는 sling, CQ 및 jstl taglibs를 선언하고, [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects) 태그에 가깝게 포함했습니다. 이렇게 하면 구성 요소의 jsp 코드가 단축되고 단순화됩니다.
 
 ### &lt;cq:text> {#cq-text}
 
-`<cq:text>` 태그는 구성 요소 텍스트를 JSP에 출력하는 편의 태그입니다.
+다음 `<cq:text>` 태그는 구성 요소 텍스트를 JSP에 출력하는 편의 태그입니다.
 
 여기에는 다음과 같은 선택적 속성이 있습니다.
 
-**속성**  - 사용할 속성의 이름입니다. 이 이름은 현재 리소스를 기준으로 합니다.
+**속성** - 사용할 속성의 이름입니다. 이 이름은 현재 리소스를 기준으로 합니다.
 
-**값**  - 출력에 사용할 값입니다. 이 특성이 있으면 속성 속성의 사용을 덮어씁니다.
+**value** - 출력에 사용할 값입니다. 이 특성이 있으면 속성 속성의 사용을 덮어씁니다.
 
-**oldValue**  - 차이 출력에 사용할 값입니다. 이 특성이 있으면 속성 속성의 사용을 덮어씁니다.
+**oldValue** - 차이 출력에 사용할 값입니다. 이 특성이 있으면 속성 속성의 사용을 덮어씁니다.
 
-**escapeXml**  - 결과 문자열의 문자  &lt;>, &amp;, &#39; 및 &quot;를 해당 문자 엔티티 코드로 변환해야 하는지 여부를 정의합니다. 기본값은 false입니다. 이스케이프는 선택적 서식 다음에 적용됩니다.
+**escapeXml** - 결과 문자열의 문자 &lt;, >, &amp;, &#39; 및 &quot;를 해당 문자 엔티티 코드로 변환할지 여부를 정의합니다. 기본값은 false입니다. 이스케이프는 선택적 서식 다음에 적용됩니다.
 
-**형식**  - 텍스트 서식을 지정하는 데 사용할 선택적 java.text.Format
+**포맷** - 텍스트 서식을 지정하는 데 사용할 선택적 java.text.Format
 
-**noDiff**  - diff 정보가 있어도 비교 출력 계산을 하지 않습니다.
+**noDiff** - 차이 정보가 있어도 비교 출력 계산을 하지 않습니다.
 
-**tagClass**  - 비어 있지 않은 출력을 둘러싸는 요소의 CSS 클래스 이름입니다. 비어 있으면 요소가 추가되지 않습니다.
+**tagClass** - 비어 있지 않은 출력을 둘러싸는 요소의 CSS 클래스 이름입니다. 비어 있으면 요소가 추가되지 않습니다.
 
-**tagName**  - 비어 있지 않은 출력을 둘러싸는 요소의 이름입니다. 기본값은 DIV입니다.
+**tagName** - 비어 있지 않은 출력을 둘러싸는 요소의 이름입니다. 기본값은 DIV입니다.
 
-**자리 표시자**  - 편집 모드에서 null 또는 빈 텍스트(즉, 자리 표시자)에 사용할 기본값입니다. 기본 확인은 선택적 형식 지정 및 이스케이프 처리(예: 출력에 있는 그대로 쓰기)를 수행한 후에 수행됩니다. 기본값은 다음과 같습니다.
+**자리 표시자** - 편집 모드에서 null 또는 빈 텍스트(즉, 자리 표시자)에 사용할 기본값입니다. 기본 확인은 선택적 형식 지정 및 이스케이프 처리(예: 출력에 있는 그대로 쓰기)를 수행한 후에 수행됩니다. 기본값은 다음과 같습니다.
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
-**기본값**  - null 또는 빈 텍스트에 사용할 기본값입니다. 기본 검사는 선택적 형식 지정 및 이스케이프 처리(예: 출력에 있는 그대로 쓰기)를 수행한 후에 수행됩니다.
+**기본** - null 또는 빈 텍스트에 사용할 기본값입니다. 기본 검사는 선택적 형식 지정 및 이스케이프 처리(예: 출력에 있는 그대로 쓰기)를 수행한 후에 수행됩니다.
 
-다음 예에서는 JSP에서 `<cq:text>` 태그를 사용할 수 있습니다.
+예를 들어 `<cq:text>` 태그는 JSP에서 사용할 수 있습니다.
 
 ```xml
 <cq:text property="jcr:title" tagName="h2"/>
@@ -157,36 +157,36 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 <cq:text property="text" tagClass="text"/>
 ```
 
-### &lt;cq:setcontentbundle> {#cq-setcontentbundle}
+### &lt;cq:setContentBundle> {#cq-setcontentbundle}
 
-`<cq:setContentBundle>` 태그는 i18n 현지화 컨텍스트를 만들고 `javax.servlet.jsp.jstl.fmt.localizationContext` 구성 변수에 저장합니다.
+다음 `<cq:setContentBundle>` 태그는 i18n 현지화 컨텍스트를 만들고 `javax.servlet.jsp.jstl.fmt.localizationContext` 구성 변수.
 
 여기에는 다음 속성이 있습니다.
 
-**언어**  - 리소스 번들을 검색할 로케일의 언어입니다.
+**언어** - 리소스 번들을 검색할 로케일의 언어입니다.
 
-**소스**  - 로케일을 가져올 소스. 다음 값 중 하나로 설정할 수 있습니다.
+**소스** - 로케일을 가져올 소스. 다음 값 중 하나로 설정할 수 있습니다.
 
-* **static**  -  `language` 가능한 경우 속성에서 로케일을 가져온 것이며, 그렇지 않은 경우에는 서버 기본 로케일에서 가져옵니다.
+* **정적** - 로케일을 `language` 사용 가능한 경우 속성을 지정합니다. 그렇지 않으면 서버 기본 로케일에서 속성을 사용합니다.
 
-* **페이지**  - 로케일은 현재 페이지 언어나 사용 가능한 경우 리소스의 언어로,  `language` 그렇지 않은 경우 속성에서, 그렇지 않은 경우에는 서버 기본 로케일에서 가져옵니다.
+* **페이지** - 로케일은 현재 페이지나 리소스의 언어로, 다른 경우에는 `language` 사용 가능한 경우 속성을 지정합니다. 그렇지 않으면 서버 기본 로케일에서 속성을 사용합니다.
 
-* **요청**  - 요청 로케일(  `request.getLocale()`)에서 로케일을 가져옵니다.
+* **요청** - 로케일을 요청 로케일에서 가져옵니다( `request.getLocale()`).
 
-* **자동**  -  `language` 사용 가능한 경우 속성에서 로케일을 가져온 것입니다. 그렇지 않으면, 현재 페이지의 언어나 사용 가능한 경우 리소스의 언어나 요청에서 가져옵니다.
+* **자동** - 로케일을 `language` 사용 가능한 경우, 현재 페이지의 언어나 사용 가능한 경우 리소스의 언어나 그렇지 않은 경우 요청에서 지정합니다.
 
-`source` 특성이 설정되지 않은 경우:
+만약 `source` 속성이 설정되지 않았습니다.
 
-* `language` 특성이 설정된 경우 `source` 속성은 기본적으로 &quot;`static`로 설정됩니다.
+* 만약 `language` 속성이 설정되어 있고, `source` 기본값은 &quot;입니다. `static`.
 
-* `language` 특성이 설정되지 않은 경우 `source` 속성은 기본적으로 `auto`로 설정됩니다.
+* 만약 `language` 속성이 설정되지 않았습니다. `source` 속성 기본값은 입니다. `auto`.
 
-&quot;컨텐츠 번들&quot;은 표준 JSTL `<fmt:message>` 태그에서 간단히 사용할 수 있습니다. 키별 메시지 조회는 두 배입니다.
+표준 JSTL에서는 &quot;컨텐츠 번들&quot;을 간단히 사용할 수 있습니다 `<fmt:message>` 태그 사이에 Analytics JavaScript 코드를 배치했습니다. 키별 메시지 조회는 두 배입니다.
 
 1. 먼저 현재 렌더링되는 기본 리소스의 JCR 속성을 번역하여 검색합니다. 이렇게 하면 간단한 구성 요소 대화 상자를 정의하여 해당 값을 편집할 수 있습니다.
-1. 노드에 키와 정확히 동일한 이름이 지정된 속성이 포함되어 있지 않으면 sling 요청( `SlingHttpServletRequest.getResourceBundle(Locale)`)에서 리소스 번들을 로드하는 것이 폴백됩니다. 이 번들의 언어 또는 로케일은 `<cq:setContentBundle>` 태그의 언어 및 소스 특성에 의해 정의됩니다.
+1. 노드에 키와 정확히 동일한 이름이 지정된 속성이 포함되어 있지 않으면 sling 요청에서 리소스 번들을 로드하는 것이 폴백됩니다( `SlingHttpServletRequest.getResourceBundle(Locale)`). 이 번들의 언어 또는 로캘은 `<cq:setContentBundle>` 태그에 가깝게 포함했습니다.
 
-`<cq:setContentBundle>` 태그는 jsp에서 다음과 같이 사용할 수 있습니다.
+다음 `<cq:setContentBundle>` 태그는 jsp에서 다음과 같이 사용할 수 있습니다.
 
 언어를 정의하는 페이지의 경우:
 
@@ -206,7 +206,7 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 
 ### &lt;cq:include> {#cq-include}
 
-`<cq:include>` 태그는 현재 페이지에 리소스를 포함합니다.
+다음 `<cq:include>` 태그에 현재 페이지에 리소스가 포함되어 있습니다.
 
 여기에는 다음 속성이 있습니다.
 
@@ -244,45 +244,45 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 </div>
 ```
 
-`<%@ include file="myScript.jsp" %>` 또는 `<cq:include script="myScript.jsp" %>` 를 사용하여 스크립트를 포함해야 합니까?
+다음을 사용해야 합니까 `<%@ include file="myScript.jsp" %>` 또는 `<cq:include script="myScript.jsp" %>` 스크립트를 포함시키시겠습니까?
 
-* `<%@ include file="myScript.jsp" %>` 지시문은 JSP 컴파일러에 전체 파일을 현재 파일에 포함하도록 알려줍니다. 포함된 파일의 내용을 원본 파일에 직접 붙여넣은 것처럼 표시됩니다.
-* `<cq:include script="myScript.jsp">` 태그를 사용하면 파일이 런타임에 포함됩니다.
+* 다음 `<%@ include file="myScript.jsp" %>` directive는 JSP 컴파일러에 전체 파일을 현재 파일에 포함하도록 지시합니다. 포함된 파일의 내용을 원본 파일에 직접 붙여넣은 것처럼 표시됩니다.
+* 사용 `<cq:include script="myScript.jsp">` 태그로 설정하면 런타임 시 파일이 포함됩니다.
 
-`<cq:include>` 또는 `<sling:include>` 를 사용해야 합니까?
+다음을 사용해야 합니까 `<cq:include>` 또는 `<sling:include>`?
 
-* AEM 구성 요소를 개발할 때 `<cq:include>` 을 사용하는 것이 좋습니다.
+* AEM 구성 요소를 개발할 때에는 을 사용하는 것이 좋습니다 `<cq:include>`.
 * `<cq:include>` 스크립트 속성을 사용할 때 스크립트 파일 이름으로 스크립트 파일을 직접 포함할 수 있습니다. 이 경우 구성 요소 및 리소스 유형 상속을 고려하며, 선택기와 확장을 사용하여 Sling의 스크립트 해상도를 엄격하게 준수하는 것보다 간편합니다.
 
-### &lt;cq:includeclientlib> {#cq-includeclientlib}
+### &lt;cq:includeClientLib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` 은 AEM 5.6 이후 더 이상 사용되지 않습니다. 대신  [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) 사용해야 합니다.
+>`<cq:includeClientLib>` AEM 5.6 이후 더 이상 사용되지 않습니다. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) 을 대신 사용해야 합니다.
 
-`<cq:includeClientLib>` 태그는 js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리를 포함합니다. js 및 css와 같은 다양한 유형의 여러 포함을 위해 이 태그를 jsp에서 여러 번 사용해야 합니다. 이 태그는 `com.day.cq.widget.HtmlLibraryManager` 서비스 인터페이스의 편의 래퍼입니다.
+다음 `<cq:includeClientLib>` 태그에는 js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리가 포함되어 있습니다. js 및 css와 같은 다양한 유형의 여러 포함을 위해 이 태그를 jsp에서 여러 번 사용해야 합니다. 이 태그는 `com.day.cq.widget.HtmlLibraryManager` 서비스 인터페이스.
 
 여기에는 다음 속성이 있습니다.
 
-**categories**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 및 CSS 라이브러리가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
+**카테고리** - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 및 CSS 라이브러리가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
 해당 항목: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**테마**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS와 JS 모두)가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
+**테마** - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 테마 관련 라이브러리(CSS와 JS 모두)가 포함됩니다. 요청에서 테마 이름이 추출됩니다.
 
 해당 항목: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 라이브러리가 포함됩니다.
+**js** - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리에 대한 모든 Javascript 라이브러리가 포함됩니다.
 
 해당 항목: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
-**css**  - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리의 모든 CSS 라이브러리가 포함됩니다.
+**css** - 쉼표로 구분된 클라이언트 라이브러리 카테고리 목록입니다. 여기에는 지정된 카테고리의 모든 CSS 라이브러리가 포함됩니다.
 
 해당 항목: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
-**테마**  - 테마 또는 비테마 라이브러리만 나타내는 플래그를 포함해야 합니다. 생략하면 두 세트가 모두 포함됩니다. 순수 JS 또는 CSS에만 적용됩니다(카테고리 또는 테마 포함에는 적용되지 않음).
+**테마** - 테마 또는 비테마 라이브러리만 나타내는 플래그를 포함해야 합니다. 생략하면 두 세트가 모두 포함됩니다. 순수 JS 또는 CSS에만 적용됩니다(카테고리 또는 테마 포함에는 적용되지 않음).
 
-`<cq:includeClientLib>` 태그는 jsp에서 다음과 같이 사용할 수 있습니다.
+다음 `<cq:includeClientLib>` 태그는 jsp에서 다음과 같이 사용할 수 있습니다.
 
 ```xml
 <%-- all: js + theme (theme-js + css) --%>
@@ -298,9 +298,9 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 <cq:includeClientLib css="cq.collab.calendar, cq.security" />
 ```
 
-### &lt;cq:defineobjects> {#cq-defineobjects}
+### &lt;cq:defineObjects> {#cq-defineobjects}
 
-`<cq:defineObjects>` 태그는 개발자가 참조할 수 있는 다음과 같은 스크립트를 정기적으로 노출합니다. 또한 [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects) 태그로 정의된 개체도 노출합니다.
+다음 `<cq:defineObjects>` 태그는 개발자가 참조할 수 있는 다음과 같은 스크립트를 정기적으로 사용하여 개체를 표시합니다. 또한 [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects) 태그에 가깝게 포함했습니다.
 
 **componentContext**
 
@@ -438,17 +438,17 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 
 >[!NOTE]
 >
->스크립트에 `/libs/foundation/global.jsp` 파일이 포함되면 `<cq:defineObjects />` 태그가 자동으로 포함됩니다.
+>이 `/libs/foundation/global.jsp` 파일은 스크립트에 포함되고, `<cq:defineObjects />` 태그가 자동으로 포함됩니다.
 
-### &lt;cq:requesturl> {#cq-requesturl}
+### &lt;cq:requestURL> {#cq-requesturl}
 
-`<cq:requestURL>` 태그는 현재 요청 URL을 JspWriter에 씁니다. 두 태그 [ `<cq:addParam>`](#amp-lt-cq-addparam) 및 [ `<cq:removeParam>`](#amp-lt-cq-removeparam)는 이 태그의 본문 내에서 사용할 수 있으며, 이 태그를 쓰기 전에 현재 요청 URL을 수정할 수 있습니다.
+다음 `<cq:requestURL>` 태그는 현재 요청 URL을 jspWriter에 씁니다. 두 태그 [ `<cq:addParam>`](#amp-lt-cq-addparam) 및 [ `<cq:removeParam>`](#amp-lt-cq-removeparam) 및 는 이 태그의 본문 내에 사용할 수 있으며, 쓰기 전에 현재 요청 URL을 수정할 수 있습니다.
 
 다양한 매개 변수를 사용하여 현재 페이지에 대한 링크를 만들 수 있습니다. 예를 들어 요청을 변형할 수 있습니다.
 
 `mypage.html?mode=view&query=something` 대상 `mypage.html?query=something`.
 
-`addParam` 또는 `removeParam`을 사용하면 지정된 매개 변수의 발생만 변경되고 다른 모든 매개 변수는 영향을 받지 않습니다.
+의 사용 `addParam` 또는 `removeParam` 지정된 매개 변수의 발생을 변경하기만 하면 다른 모든 매개 변수는 영향을 받지 않습니다.
 
 `<cq:requestURL>` 에 속성이 없습니다.
 
@@ -462,9 +462,9 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### &lt;cq:addparam> {#cq-addparam}
+### &lt;cq:addParam> {#cq-addparam}
 
-`<cq:addParam>` 태그는 바깥쪽 [ `<cq:requestURL>`](#amp-lt-cq-requesturl) 태그에 지정된 이름과 값을 갖는 요청 매개 변수를 추가합니다.
+다음 `<cq:addParam>` 태그에 지정된 이름과 값을 갖는 요청 매개 변수를 바깥쪽에 추가합니다 [ `<cq:requestURL>`](#amp-lt-cq-requesturl) 태그에 가깝게 포함했습니다.
 
 여기에는 다음 속성이 있습니다.
 
@@ -482,9 +482,9 @@ Sling, CQ 및 jstl taglibs를 선언하고 [ `<cq:defineObjects />`](#amp-lt-cq-
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### &lt;cq:removeparam> {#cq-removeparam}
+### &lt;cq:removeParam> {#cq-removeparam}
 
-`<cq:removeParam>` 태그는 바깥쪽 [ `<cq:requestURL>`](#amp-lt-cq-requesturl) 태그에서 지정된 이름과 값을 갖는 요청 매개 변수를 제거합니다. 값이 제공되지 않으면 지정된 이름의 모든 매개 변수가 제거됩니다.
+다음 `<cq:removeParam>` 태그는 바깥에서 지정된 이름과 값을 갖는 요청 매개 변수를 제거합니다 [ `<cq:requestURL>`](#amp-lt-cq-requesturl) 태그에 가깝게 포함했습니다. 값이 제공되지 않으면 지정된 이름의 모든 매개 변수가 제거됩니다.
 
 여기에는 다음 속성이 있습니다.
 
@@ -510,11 +510,11 @@ Sling 태그 라이브러리에는 유용한 Sling 함수가 포함되어 있습
 
 >[!NOTE]
 >
->스크립트에 `/libs/foundation/global.jsp` 파일이 포함되면 sling taglib이 자동으로 선언됩니다.
+>이 `/libs/foundation/global.jsp` 파일이 스크립트에 포함되면 sling taglib이 자동으로 선언됩니다.
 
 ### &lt;sling:include> {#sling-include}
 
-`<sling:include>` 태그는 현재 페이지에 리소스를 포함합니다.
+다음 `<sling:include>` 태그에 현재 페이지에 리소스가 포함되어 있습니다.
 
 여기에는 다음 속성이 있습니다.
 
@@ -522,7 +522,7 @@ Sling 태그 라이브러리에는 유용한 Sling 함수가 포함되어 있습
 
 * 대상을 포함하기 전에 출력을 플러시할지 여부를 정의하는 부울입니다.
 
-**리소스**
+**resource**
 
 * 현재 요청 처리에 포함할 리소스 개체. 리소스 또는 경로를 지정해야 합니다. 둘 다 지정하면 리소스가 우선합니다.
 
@@ -549,7 +549,7 @@ Sling 태그 라이브러리에는 유용한 Sling 함수가 포함되어 있습
 
 >[!NOTE]
 >
->`<sling:include>` 태그에 포함된 리소스 및 스크립트의 해상도는 일반적인 sling URL 해상도와 동일합니다. 기본적으로 선택기, 확장 등은 현재 요청에서 포함된 스크립트도 사용됩니다. 태그 속성을 통해 수정할 수 있습니다. 예를 들어 `replaceSelectors="foo.bar"` 을 사용하면 선택기를 덮어쓸 수 있습니다.
+>리소스에 포함된 리소스 및 스크립트의 해상도 `<sling:include>` 태그는 일반적인 sling URL 해상도와 동일합니다. 기본적으로 선택기, 확장 등은 현재 요청에서 포함된 스크립트도 사용됩니다. 태그 속성을 통해 수정할 수 있습니다. 예 `replaceSelectors="foo.bar"` 선택기를 덮어쓸 수 있습니다.
 
 예:
 
@@ -577,9 +577,9 @@ Sling 태그 라이브러리에는 유용한 Sling 함수가 포함되어 있습
 <sling:include replaceSelectors="content" />
 ```
 
-### &lt;sling:defineobjects> {#sling-defineobjects}
+### &lt;sling:defineObjects> {#sling-defineobjects}
 
-`<sling:defineObjects>` 태그는 개발자가 참조할 수 있는 다음과 같은 스크립트를 정기적으로 노출합니다.
+다음 `<sling:defineObjects>` 태그는 개발자가 참조할 수 있는 다음과 같은 정기적 사용 스크립팅 개체를 표시합니다.
 
 **slingRequest**
 
@@ -634,7 +634,7 @@ l **ogName resourceResolverName**
 
 ## JSTL 태그 라이브러리 {#jstl-tag-library}
 
-[JavaServer Pages Standard Tag Library](https://www.oracle.com/technetwork/java/index-jsp-135995.html)에는 많은 유용한 표준 태그가 포함되어 있습니다. 코어, 형식 및 함수 taglibs는 다음 코드 조각에 표시된 대로 `/libs/foundation/global.jsp`에 의해 정의됩니다.
+다음 [JavaServer Pages Standard 태그 라이브러리](https://www.oracle.com/technetwork/java/index-jsp-135995.html) 에는 많은 유용한 및 표준 태그가 포함되어 있습니다. 코어, 형식 및 함수 태그는 `/libs/foundation/global.jsp` 다음 코드 조각에 표시된 대로,
 
 ### /libs/foundation/global.jsp의 추출 {#extract-of-libs-foundation-global-jsp}
 
@@ -644,4 +644,4 @@ l **ogName resourceResolverName**
 <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions" %>
 ```
 
-앞에서 설명한 대로 `/libs/foundation/global.jsp` 파일을 가져온 후에는 `c`, `fmt` 및 `fn` 접두사를 사용하여 해당 taglibs에 액세스할 수 있습니다. JSTL의 공식 설명서는 [Java EE 5 자습서 - JavaServer Pages Standard Tag Library](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html)에 있습니다.
+을 가져온 후 `/libs/foundation/global.jsp` 앞에서 설명한 대로 파일을 사용하여 `c`, `fmt` 및 `fn` 해당 taglibs에 액세스할 접두사입니다. JSTL의 공식 설명서는 다음 위치에서 사용할 수 있습니다. [Java EE 5 자습서 - JavaServer Pages Standard Tag Library](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).

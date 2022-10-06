@@ -1,8 +1,8 @@
 ---
 title: 이메일 마케팅
-seo-title: 이메일 마케팅
+seo-title: E-mail Marketing
 description: 뉴스레터와 같은 이메일 마케팅은 리드에게 컨텐츠를 보내는 데 사용할 수 있으므로 모든 마케팅 캠페인에서 중요한 부분을 차지합니다. AEM에서는 기존 AEM 컨텐츠로 뉴스레터를 만들거나 뉴스레터에 사용할 새 컨텐츠를 추가할 수 있습니다.
-seo-description: 뉴스레터와 같은 이메일 마케팅은 리드에게 컨텐츠를 보내는 데 사용할 수 있으므로 모든 마케팅 캠페인에서 중요한 부분을 차지합니다. AEM에서는 기존 AEM 컨텐츠로 뉴스레터를 만들거나 뉴스레터에 사용할 새 컨텐츠를 추가할 수 있습니다.
+seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1758'
 ht-degree: 96%
 
 ---
@@ -132,7 +132,7 @@ Newsletter를 개인화하고 결과를 시뮬레이션하는 방법은 다음�
 
 >[!NOTE]
 >
->뉴스레터를 발송하기 전에 `https://localhost:4502/system/console/configMgr`에서 Day CQ Link Externalizer에 대한 OSGi 구성을 확인하십시오.
+>Newsletter를 발송하기 전에 OSGi 구성에서 Day CQ Link Externalizer 를 선택합니다. `https://localhost:4502/system/console/configMgr`.
 >
 >기본적으로 이 매개 변수의 값은 `localhost:4502`이며 인스턴스 실행을 위한 포트가 바뀌면 작업을 완료할 수 없습니다.
 
@@ -220,7 +220,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 
 >[!NOTE]
 >
->뉴스레터를 발송하기 전에 `https://localhost:4502/system/console/configMgr`에서 Day CQ Link Externalizer에 대한 OSGi 구성을 확인하십시오.
+>Newsletter를 발송하기 전에 OSGi 구성에서 Day CQ Link Externalizer 를 선택합니다. `https://localhost:4502/system/console/configMgr`.
 >
 >기본적으로 이 매개 변수의 값은 `localhost:4502`이며 인스턴스 실행을 위한 포트가 바뀌면 작업을 완료할 수 없습니다.
 
@@ -228,7 +228,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 >
 >뉴스레터를 게시 인스턴스에 먼저 게시하지 않았거나 게시 인스턴스를 사용할 수 없는 경우에 이메일 공급자를 업데이트하거나, 플라이트 테스트를 수행하거나, 뉴스레터를 전송하는 경우 이러한 작업이 실패합니다. 뉴스레터를 게시하고 게시 인스턴스가 작동되어 실행 중인지 확인하십시오.
 
-### 캠페인에서 뉴스레터 보내기  {#sending-newsletters-from-a-campaign}
+### 캠페인에서 뉴스레터 보내기 {#sending-newsletters-from-a-campaign}
 
 캠페인 내에서 뉴스레터를 발송하는 방법은 다음과 같습니다.
 
@@ -255,7 +255,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
    >
    >Newsletter가 정상적으로 수신되었는지 확인할 수 있도록 수신자에 자신을 포함하십시오.
 
-### 목록에서 Newsletter 보내기  {#sending-newsletters-from-a-list}
+### 목록에서 Newsletter 보내기 {#sending-newsletters-from-a-list}
 
 목록에서 뉴스레터를 발송하는 방법은 다음과 같습니다.
 
@@ -285,7 +285,7 @@ Newsletter 설정을 사용자 지정하는 방법은 다음과 같습니다.
 
 이 섹션에서는 뉴스레터에 가입하는 방법을 설명합니다.
 
-### 뉴스레터 가입  {#subscribing-to-a-newsletter-1}
+### 뉴스레터 가입 {#subscribing-to-a-newsletter-1}
 
 Newsletter에 가입하는 방법은 다음과 같습니다. Geometrixx 웹 사이트를 예로 들겠습니다.
 

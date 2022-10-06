@@ -1,19 +1,19 @@
 ---
 title: 자산 목록 보기에 사용자 지정 작업 추가
-seo-title: 자산 목록 보기에 사용자 지정 작업 추가
+seo-title: Add custom action to the Asset Listing view
 description: 이 문서에서는 자산 목록 보기에 사용자 지정 작업을 추가하는 방법을 설명합니다
-seo-description: 이 문서에서는 자산 목록 보기에 사용자 지정 작업을 추가하는 방법을 설명합니다
+seo-description: This article teaches how to add custom action to the Asset Listing view
 uuid: 45f25cfb-f08f-42c6-99c5-01900dd8cdee
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
-feature: 서신 관리
+feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1360'
 ht-degree: 2%
 
 ---
@@ -29,9 +29,9 @@ ht-degree: 2%
 * 하나 이상의 자산 유형 또는 문자
 * 단일, 여러 자산/문자 선택 시 또는 선택 없이 실행(작업/명령이 활성 상태가 됨)
 
-이 사용자 지정은 &quot;Download Flat PDF&quot; 명령을 Letters for Letters Listing 보기에 추가하는 시나리오와 함께 수행됩니다. 이 사용자 지정 시나리오를 통해 사용자가 선택한 단일 편지의 평면 PDF를 다운로드할 수 있습니다.
+이 사용자 지정은 &quot;Download Flat Page&quot; 명령을 Letters for Letters Listing 보기에 추가하는 시나리오와 함께 표시됩니다. 이 사용자 지정 시나리오를 사용하면 사용자가 선택한 단일 편지의 PDF을 다운로드할 수 있습니다.
 
-### 전제 조건 {#prerequisites}
+### 사전 요구 사항 {#prerequisites}
 
 다음 시나리오 또는 유사한 시나리오를 완료하려면 다음 사항에 대한 지식이 필요합니다.
 
@@ -39,17 +39,17 @@ ht-degree: 2%
 * JavaScript
 * Java
 
-## 시나리오:편지 목록 사용자 인터페이스에 명령을 추가하여 일반 PDF 버전의 문자를 다운로드합니다 {#addcommandtoletters}
+## 시나리오: 편지 목록 사용자 인터페이스에 명령을 추가하여 일반 PDF 버전의 문자를 다운로드합니다 {#addcommandtoletters}
 
-아래 단계에서는 &quot;플랫 PDF 다운로드&quot; 명령을 Letters for Letters 보기에 추가하고 사용자가 선택한 문자의 플랫 PDF를 다운로드할 수 있습니다. 적절한 코드 및 매개 변수와 함께 이 단계를 사용하여 데이터 사전 또는 텍스트와 같은 다른 자산에 다른 기능을 추가할 수 있습니다.
+아래 단계는 &quot;플랫 PDF 다운로드&quot; 명령을 Letters for Letters 보기에 추가하고 사용자가 선택한 문자의 플랫 PDF을 다운로드할 수 있도록 합니다. 적절한 코드 및 매개 변수와 함께 이 단계를 사용하여 데이터 사전 또는 텍스트와 같은 다른 자산에 다른 기능을 추가할 수 있습니다.
 
-사용자가 플랫 PDF를 다운로드할 수 있도록 서신 관리를 사용자 정의하려면 다음 단계를 완료하십시오.
+사용자가 플랫 편지 PDF을 다운로드할 수 있도록 서신 관리를 사용자 지정하려면 다음 단계를 완료하십시오.
 
-1. `https://'[server]:[port]'/[ContextPath]/crx/de`(으)로 이동하여 관리자로 로그인합니다.
+1. 이동 `https://'[server]:[port]'/[ContextPath]/crx/de` 관리자로 로그인합니다.
 
 1. apps 폴더에서 다음 단계를 사용하여 선택 폴더에 있는 항목 폴더와 유사한 경로/구조가 있는 항목이라는 폴더를 만듭니다.
 
-   1. 다음 경로에서 **items** 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **항목** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **오버레이 노드**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -64,7 +64,7 @@ ht-degree: 2%
 
    1. 오버레이 노드 대화 상자에 다음 값이 있는지 확인합니다.
 
-      **경로:** /libs/fd/cm/ma/gui/content/cmasts/jcr:content/body/content/header/items/selection/items
+      **경로:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
       **위치:** /apps/
 
@@ -74,13 +74,13 @@ ht-degree: 2%
 
    1. **확인**&#x200B;을 클릭합니다. 폴더 구조가 apps 폴더에 만들어집니다.
 
-      **모두 저장**&#x200B;을 클릭합니다.
+      클릭 **모두 저장**.
 
-1. 새로 만든 항목 폴더 아래에 특정 자산의 사용자 지정 단추/작업에 대한 노드를 추가합니다(예:downloadFlatPDF)를 참조하십시오.
+1. 새로 만든 항목 폴더 아래에 특정 자산의 사용자 지정 단추/작업에 대한 노드를 추가합니다(예: downloadFlatPDF)를 참조하십시오.
 
-   1. **items** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기** > **노드 만들기**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **항목** 폴더를 선택하고 **만들기** > **노드 만들기**.
 
-   1. 노드 만들기 대화 상자에 다음 값이 있는지 확인하고 **확인**&#x200B;을 클릭합니다.
+   1. 노드 만들기 대화 상자에 다음 값이 있는지 확인하고 를 클릭합니다 **확인**:
 
       **이름:** downloadFlatPDF(또는 이 속성에 지정할 이름)
 
@@ -88,7 +88,7 @@ ht-degree: 2%
 
    1. 만든 새 노드(여기서는 downloadFlatPDF)를 클릭합니다. CRX는 노드의 속성을 표시합니다.
 
-   1. 노드에 다음 속성을 추가하고(여기서 downloadFlatPDF) **모두 저장**&#x200B;을 클릭합니다.
+   1. 노드(여기서는 downloadFlatPDF)에 다음 속성을 추가하고 **모두 저장**:
 
       <table>
         <tbody>
@@ -98,19 +98,19 @@ ht-degree: 2%
         <td><strong>값 및 설명</strong></td>
         </tr>
         <tr>
-        <td>클래스</td>
+        <td>class</td>
         <td>문자열</td>
         <td>foundation-collection-action</td>
         </tr>
         <tr>
         <td>foundation-collection-action</td>
         <td>문자열</td>
-        <td><p>{"target":".cq-managesset-admin-childpages", "activeSelectionCount":"single","type":"LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong>는 단일 또는 여러 개일 수 있으므로 사용자 지정 작업이 수행되는 단일 또는 여러 자산을 선택할 수 있습니다.</p> <p><strong></strong> 일반적으로 다음 항목을 한 개 이상(쉼표로 구분된 여러 항목)할 수 있습니다.LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td>
+        <td><p>{"target": ".cq-managesset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> 단일 또는 여러 개일 수 있으므로 사용자 지정 작업이 수행되는 단일 또는 여러 자산을 선택할 수 있습니다.</p> <p><strong>유형</strong> 다음 항목 중 하나 이상(쉼표로 구분된 여러 항목)일 수 있습니다. LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td>
         </tr>
         <tr>
         <td>아이콘</td>
         <td>문자열</td>
-        <td>icon-download<br /> <br /> 명령/메뉴의 왼쪽에 서신 관리 가 표시하는 아이콘입니다. 사용 가능한 다른 아이콘과 설정에 대해서는 <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI 아이콘 설명서</a>.<br /> </td>
+        <td>icon-download<br /> <br /> Correspondence Management가 명령/메뉴의 왼쪽에 표시되는 아이콘입니다. 사용 가능한 다양한 아이콘 및 설정에 대해서는 다음을 참조하십시오 <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI 아이콘 설명서</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -130,19 +130,19 @@ ht-degree: 2%
         <tr>
         <td>text</td>
         <td>문자열</td>
-        <td>플랫 PDF 다운로드(또는 다른 레이블)<br /> <br /> 자산 목록 인터페이스에 표시되는 명령입니다</td>
+        <td>플랫 PDF(또는 기타 레이블) 다운로드<br /> <br /> 자산 목록 인터페이스에 표시되는 명령</td>
         </tr>
         <tr>
         <td>제목</td>
         <td>문자열</td>
-        <td>선택한 문자의 플랫 PDF(또는 다른 레이블/대체 텍스트)<br /> <br /> 사용자가 사용자 지정 명령을 마우스로 가리키면 서신 관리에서 표시하는 대체 텍스트입니다.</td>
+        <td>선택한 문자의 플랫 PDF(또는 기타 레이블/대체 텍스트)를 다운로드합니다<br /> <br /> 제목은 사용자가 사용자 지정 명령을 마우스로 가리키면 서신 관리에 표시되는 대체 텍스트입니다.</td>
         </tr>
         </tbody>
        </table>
 
 1. 앱 폴더에서 다음 단계를 사용하여 관리자 폴더에 있는 항목 폴더와 유사한 경로/구조로 js라는 폴더를 만듭니다.
 
-   1. 다음 경로에서 **js** 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **js** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **오버레이 노드**:
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -154,11 +154,11 @@ ht-degree: 2%
 
       **일치 노드 유형:** 선택됨
 
-   1. **확인**&#x200B;을 클릭합니다. 폴더 구조가 apps 폴더에 만들어집니다. **모두 저장**&#x200B;을 클릭합니다.
+   1. **확인**&#x200B;을 클릭합니다. 폴더 구조가 apps 폴더에 만들어집니다. 클릭 **모두 저장**.
 
 1. js 폴더에서 다음 단계를 사용하여 버튼을 처리할 수 있는 코드로 formaction.js라는 파일을 만듭니다.
 
-   1. 다음 경로에서 **js** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 파일 만들기**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **js** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **만들기 > 파일 만들기**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -169,7 +169,7 @@ ht-degree: 2%
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js/formaction.js`
 
-      그런 다음 formaction.js 파일(/apps 분기 아래)의 끝에 다음 코드를 추가하고 **모두 저장**&#x200B;을 클릭합니다.
+      그런 다음 formaction.js 파일(/apps 분기 아래)의 끝에 다음 코드를 추가하고 를 클릭합니다 **모두 저장**:
 
       ```javascript
       /* Action url for xml file to be added.*/
@@ -232,7 +232,7 @@ ht-degree: 2%
 
 1. apps 폴더에서 다음 단계를 사용하여 actionhandlers 폴더에 있는 항목 폴더와 유사한 경로/구조를 가진 항목이라는 폴더를 만듭니다.
 
-   1. 다음 경로에서 **items** 폴더를 마우스 오른쪽 단추로 클릭하고 **오버레이 노드**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **항목** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **오버레이 노드**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
@@ -246,13 +246,13 @@ ht-degree: 2%
 
    1. **확인**&#x200B;을 클릭합니다. 폴더 구조가 apps 폴더에 만들어집니다.
 
-   1. **모두 저장**&#x200B;을 클릭합니다.
+   1. 클릭 **모두 저장**.
 
-1. 새로 만든 항목 노드 아래에 특정 자산의 사용자 지정 단추/작업에 대한 노드를 추가합니다(예:letterpdfdownloader)를 사용하려면 다음 단계를 수행하십시오.
+1. 새로 만든 항목 노드 아래에 특정 자산의 사용자 지정 단추/작업에 대한 노드를 추가합니다(예: letterpdfdownloader)를 사용하려면 다음 단계를 수행하십시오.
 
-   1. 항목 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 노드 만들기**&#x200B;를 선택합니다.
+   1. 항목 폴더를 마우스 오른쪽 단추로 클릭하고 를 선택합니다. **만들기 > 노드 만들기**.
 
-   1. 노드 만들기 대화 상자에 다음 값이 있는지 확인하고 **확인**&#x200B;을 클릭합니다.
+   1. 노드 만들기 대화 상자에 다음 값이 있는지 확인하고 를 클릭합니다 **확인**:
 
       **이름:** letterpdfdownloader(또는 이 속성에 지정할 이름)는 고유해야 합니다. 여기에서 다른 이름을 사용하는 경우 formaction.js 파일의 ACTION_URL 변수에서 동일하게 지정합니다.
 
@@ -260,7 +260,7 @@ ht-degree: 2%
 
    1. 만든 새 노드(여기서는 downloadFlatPDF)를 클릭합니다. CRX는 노드의 속성을 표시합니다.
 
-   1. 노드(여기서 letterpdfdownloader)에 다음 속성을 추가하고 **모두 저장**&#x200B;을 클릭합니다.
+   1. 노드(여기서 letterpdfdownloader)에 다음 속성을 추가하고 을 클릭합니다 **모두 저장**:
 
       | **이름** | **유형** | **값** |
       |---|---|---|
@@ -270,18 +270,18 @@ ht-degree: 2%
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. 다음 경로에서 **admin** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 파일 만들기**&#x200B;를 선택합니다.
+   1. 마우스 오른쪽 단추를 클릭합니다. **관리** 다음 경로에 있는 폴더를 선택하고 을 선택합니다. **만들기 > 파일 만들기**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
       파일의 이름을 POST.jsp로 지정합니다. (파일 이름은 POST.jsp만 사용해야 합니다.)
 
-   1. **POST.jsp** 파일을 두 번 클릭하여 CRX에서 엽니다.
-   1. POST.jsp 파일에 다음 코드를 추가하고 **모두 저장**&#x200B;을 클릭합니다.
+   1. 를 두 번 클릭합니다. **POST.jsp** 파일을 클릭하여 CRX에서 엽니다.
+   1. POST.jsp 파일에 다음 코드를 추가하고 **모두 저장**:
 
-      이 코드는 편지 렌더링 서비스에만 사용할 수 있습니다. 다른 자산의 경우 해당 자산의 Java 라이브러리를 이 코드에 추가합니다. AEM Forms API에 대한 자세한 내용은 [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en)를 참조하십시오.
+      이 코드는 편지 렌더링 서비스에만 사용할 수 있습니다. 다른 자산의 경우 해당 자산의 Java 라이브러리를 이 코드에 추가합니다. AEM Forms API에 대한 자세한 내용은 [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en).
 
-      AEM 라이브러리에 대한 자세한 내용은 AEM [구성 요소](/help/sites-developing/components.md)를 참조하십시오.
+      AEM 라이브러리에 대한 자세한 내용은 AEM 를 참조하십시오 [구성 요소](/help/sites-developing/components.md).
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */
@@ -348,26 +348,26 @@ ht-degree: 2%
       %>
       ```
 
-## 사용자 정의 기능 {#download-flat-pdf-of-a-letter-using-the-custom-functionality}을 사용하여 편지의 플랫 PDF 다운로드
+## 사용자 정의 기능을 사용하여 편지의 플랫 PDF 다운로드 {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-플랫 PDF를 다운로드하는 사용자 정의 기능을 추가한 후에는 다음 단계를 사용하여 선택한 문자의 플랫 PDF 버전을 다운로드할 수 있습니다.
+편지의 평면 PDF을 다운로드하는 사용자 정의 기능을 추가한 후에는 다음 단계를 사용하여 선택한 편지의 평면 PDF 버전을 다운로드할 수 있습니다.
 
-1. `https://'[server]:[port]'/[ContextPath]/projects.html`(으)로 이동하여 로그인합니다.
+1. 이동 `https://'[server]:[port]'/[ContextPath]/projects.html` 로그인하고
 
-1. **Forms > 문자**&#x200B;를 선택합니다. 서신 관리 는 시스템에서 사용할 수 있는 문자를 나열합니다.
-1. **선택**&#x200B;을 클릭한 다음 문자를 클릭하여 선택합니다.
-1. **더 보기** > **&lt;플랫 PDF 다운로드>**&#x200B;를 선택합니다(이 문서에 대한 지침을 사용하여 작성된 사용자 지정 기능). 편지를 PDF로 다운로드 대화 상자가 나타납니다.
+1. 선택 **Forms > 문자**. 서신 관리 는 시스템에서 사용할 수 있는 문자를 나열합니다.
+1. 클릭 **선택** 그런 다음 편지를 클릭하여 선택합니다.
+1. 선택 **자세히** > **&lt;download flat=&quot;&quot; pdf=&quot;&quot;>** (이 문서의 지침에 따라 만든 사용자 지정 기능). 편지를 PDF으로 다운로드 대화 상자가 나타납니다.
 
-   메뉴 항목 이름, 기능 및 대체 텍스트는 [시나리오에서 만든 사용자 지정에 따라 다릅니다.편지 목록 사용자 인터페이스에 명령을 추가하여 일반 PDF 버전의 문자를 다운로드합니다.](#addcommandtoletters)
+   메뉴 항목 이름, 기능 및 대체 텍스트는 [시나리오: 편지 목록 사용자 인터페이스에 명령을 추가하여 일반 PDF 버전의 문자를 다운로드합니다.](#addcommandtoletters)
 
-   ![사용자 지정 기능:플랫 PDF 다운로드](assets/5_downloadflatpdf.png)
+   ![사용자 지정 기능: 플랫 PDF 다운로드](assets/5_downloadflatpdf.png)
 
-1. 편지를 PDF로 다운로드 대화 상자에서 PDF에 데이터를 채울 관련 XML을 선택합니다.
+1. 편지를 PDF으로 다운로드 대화 상자에서 PDF의 데이터를 채울 관련 XML을 선택합니다.
 
    >[!NOTE]
    >
-   >편지를 플랫 PDF로 다운로드하기 전에 **보고서 만들기** 옵션을 사용하여 편지에 데이터가 있는 XML 파일을 작성할 수 있습니다.
+   >편지를 플랫 PDF으로 다운로드하기 전에 **보고서 만들기** 선택 사항입니다.
 
-   ![편지를 PDF로 다운로드](assets/6_downloadflatpdf.png)
+   ![편지를 PDF으로 다운로드](assets/6_downloadflatpdf.png)
 
-   이 편지는 컴퓨터에 플랫 PDF로 다운로드됩니다.
+   이 편지는 컴퓨터에 플랫 PDF으로 다운로드됩니다.

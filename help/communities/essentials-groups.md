@@ -1,8 +1,8 @@
 ---
 title: 커뮤니티 그룹 핵심 사항
-seo-title: 커뮤니티 그룹 핵심 사항
+seo-title: Community Group Essentials
 description: 동적으로 커뮤니티 사이트 만들기
-seo-description: 동적으로 커뮤니티 사이트 만들기
+seo-description: Creating community sites dynamically
 uuid: 168e7aeb-6e9a-468d-8ac4-274007cea252
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,18 +12,18 @@ discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
 
-# 커뮤니티 그룹 필수 패키지 {#community-group-essentials}
+# 커뮤니티 그룹 핵심 사항  {#community-group-essentials}
 
 커뮤니티 그룹 기능은 게시 및 작성 환경에서 인증된 사용자가 커뮤니티 사이트 내에서 하위 커뮤니티를 동적으로 만들 수 있는 기능입니다.
 
-커뮤니티 [기능 팩 1](deploy-communities.md#latestfeaturepack)부터 그룹을 다른 그룹 내에서 중첩할 수 있습니다
+커뮤니티 기준 [기능 팩 1](deploy-communities.md#latestfeaturepack)를 지정하면 그룹을 다른 그룹 내에서 중첩할 수 있습니다
 
-## 클라이언트측 {#essentials-for-client-side}에 대한 필수 사항
+## 클라이언트측 핵심 사항 {#essentials-for-client-side}
 
 ### 커뮤니티 그룹 구성원 목록 {#community-groups-member-list}
 
@@ -47,7 +47,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>속성</strong></td>
-   <td><a href="creating-groups.md">커뮤니티 그룹</a>을 참조하십시오</td>
+   <td>자세한 내용은 <a href="creating-groups.md">커뮤니티 그룹</a></td>
   </tr>
  </tbody>
 </table>
@@ -77,7 +77,7 @@ ht-degree: 1%
 
 * [클라이언트측 사용자 지정](client-customize.md)
 
-## 서버측 {#essentials-for-server-side}에 대한 필수 사항
+## 서버측 핵심 사항 {#essentials-for-server-side}
 
 * [커뮤니티 그룹 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
@@ -87,15 +87,15 @@ ht-degree: 1%
 
 ### 그룹 함수 {#groups-function}
 
-[그룹 함수](functions.md#groups-function)를 포함하는 커뮤니티 사이트 구조는 게시 및 작성 환경에서 새 `community groups` 만들기를 지원합니다. 생성된 커뮤니티 그룹은 그룹의 구성원을 나열하는 `community groups member list` 구성 요소를 포함합니다.
+다음을 포함하는 커뮤니티 사이트 구조 [그룹 함수](functions.md#groups-function) 은 새로운 `community groups` 게시 및 작성 환경에서 선택할 수 있습니다. 만든 커뮤니티 그룹은 `community groups member list` 그룹의 구성원을 나열하는 구성 요소입니다.
 
-커뮤니티 그룹 페이지의 디자인을 제공하는 [커뮤니티 그룹 템플릿](tools-groups.md) 중 하나 이상은 함수가 [커뮤니티 사이트 템플릿](sites.md)에 추가되거나 커뮤니티 그룹 템플릿 내에서 중첩될 때 그룹 함수에 대해 구성할 수 있습니다.
+하나 이상 [커뮤니티 그룹 템플릿](tools-groups.md)커뮤니티 그룹 페이지의 디자인을 제공하는 는 함수를 [커뮤니티 사이트 템플릿](sites.md) 또는 커뮤니티 그룹 템플릿 내에서 중첩됩니다.
 
-여러 커뮤니티 그룹 템플릿을 포함하면 작성자를 위한 [커뮤니티 그룹](creating-groups.md)의 섹션에 표시된 대로 커뮤니티 사이트에 대해 새 커뮤니티 그룹이 생성될 때 권한이 있는 사용자에게 디자인을 선택할 수 있습니다.
+여러 커뮤니티 그룹 템플릿을 포함하면 커뮤니티 사이트에 대한 새 커뮤니티 그룹이 생성될 때( 의 섹션에 참조) 권한이 있는 사용자에게 디자인 선택 사항이 표시됩니다 [커뮤니티 그룹](creating-groups.md) 작성자
 
-### 중첩된 그룹 {#nested-groups}
+### 중첩 그룹 {#nested-groups}
 
-커뮤니티 [FP1](deploy-communities.md#latestfeaturepack)에서는 그룹 함수를 그룹 템플릿 내에 포함할 수 있으므로 중첩 그룹(하위 커뮤니티)에 대해 허용됩니다.
+커뮤니티 기준 [FP1](deploy-communities.md#latestfeaturepack)를 설정하는 경우 그룹 함수를 그룹 템플릿 내에 포함할 수 있으므로 중첩 그룹(하위 커뮤니티)에 대해 허용됩니다.
 
 커뮤니티 사이트 또는 그룹 템플릿에 그룹 기능이 포함되는 경우 다음을 수행할 수 있습니다.
 

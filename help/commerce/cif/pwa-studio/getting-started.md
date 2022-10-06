@@ -95,7 +95,7 @@ AEM 컨텐츠 조각 설명서에 따라 AEM 프로젝트에 대한 GraphQL 엔�
 
    할당된 원본 속성을 PWA 응용 프로그램의 전체 호스트 이름으로 설정합니다.
 
-   예:  <https://pwa-studio-test-vflyn.local.pwadev:9366>
+   예제:  <https://pwa-studio-test-vflyn.local.pwadev:9366>
 
 * Apache Sling Referrer Filter(org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 

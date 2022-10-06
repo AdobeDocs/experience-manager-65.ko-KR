@@ -1,8 +1,8 @@
 ---
 title: 확인 목록
-seo-title: 확인 목록
+seo-title: Checklists
 description: 다음 체크리스트는 몇 가지 주요 테스트 문제를 설명합니다
-seo-description: 다음 체크리스트는 몇 가지 주요 테스트 문제를 설명합니다
+seo-description: The following checklist highlights some of the main testing issues
 uuid: 0456c98c-779f-415d-9641-b17ac141698b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '157'
 ht-degree: 4%
 
 ---
@@ -36,4 +36,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->전체 프로젝트와 관련된 추가 확인 목록이 필요하면 [프로젝트 관리 - 우수 사례 검사 목록](/help/managing/best-practices.md)을 볼 수도 있습니다.
+>또한 [프로젝트 관리 - 우수 사례 검사 목록](/help/managing/best-practices.md) 전체 프로젝트와 관련된 추가 확인 목록입니다.

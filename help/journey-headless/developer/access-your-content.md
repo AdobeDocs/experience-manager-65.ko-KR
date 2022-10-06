@@ -1,10 +1,11 @@
 ---
 title: AEM 배달 API를 통해 콘텐츠에 액세스하는 방법
 description: AEM 헤드리스 개발자 여정의 이 부분에서 GraphQL 쿼리를 사용하여 컨텐츠 조각 컨텐츠에 액세스하는 방법을 알아봅니다.
-source-git-commit: 7f43d9d6b631b26f7b9293aa109498d0c8040436
+exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1342'
-ht-degree: 1%
+ht-degree: 17%
 
 ---
 
@@ -12,7 +13,7 @@ ht-degree: 1%
 
 의 이 부분에서 [AEM Headless Developer 여정,](overview.md) GraphQL 쿼리를 사용하여 컨텐츠 조각의 컨텐츠에 액세스하고 이를 앱에 제공하는 방법(헤드리스 게재)을 배울 수 있습니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 AEM 헤드리스 여정의 이전 문서에서, [컨텐츠를 모델링하는 방법](model-your-content.md) AEM에서 컨텐츠 모델링의 기본 사항을 배웠으므로 이제 컨텐츠 구조를 모델링하는 방법을 이해하고 AEM 컨텐츠 조각 모델 및 컨텐츠 조각을 사용하여 해당 구조를 실현해야 합니다.
 
@@ -110,7 +111,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEMenvironment:
     * The REST API can be used for CR(u)D operations.
 -->
 
-## AEM GraphQL API에서 사용할 컨텐츠 조각 {#content-fragments-use-with-aem-graphql-api}
+## AEM GraphQL API과 함께 사용하기 위한 콘텐츠 조각 {#content-fragments-use-with-aem-graphql-api}
 
 컨텐츠 조각은 다음과 같이 AEM 스키마 및 쿼리를 위한 GraphQL의 기반으로 사용할 수 있습니다.
 
@@ -118,25 +119,25 @@ The use cases for the AEM GraphQL API can depend on the type of AEMenvironment:
 * 이 모델은 데이터 유형을 선택하여 결과 조각의 구조를 사전 정의하는 컨텐츠 조각 모델을 기반으로 합니다.
 * 모델을 정의할 때 사용할 수 있는 조각 참조 데이터 유형으로 추가 구조 계층을 수행할 수 있습니다.
 
-### 컨텐츠 조각 모델 {#content-fragments-models}
+### 콘텐츠 조각 모델 {#content-fragments-models}
 
-이러한 컨텐츠 조각 모델:
+이러한 콘텐츠 조각 모델은:
 
-* 스키마를 생성하는 데 한 번 사용됩니다 **활성화됨**.
-* GraphQL에 필요한 데이터 유형과 필드를 제공합니다. 이 URL은 응용 프로그램이 가능한 요청만 하고 예상 내용을 수신하도록 합니다.
-* 데이터 유형 **조각 참조** 모델에서 다른 컨텐츠 조각을 참조하여 추가 구조 수준을 도입할 수 있습니다.
+* **활성화** 시 스키마를 생성하는 데 사용됩니다.
+* GraphQL에 필요한 데이터 유형과 필드를 제공합니다. 애플리케이션이 가능한 요청만 수행하고 예상되는 내용을 수신하도록 합니다.
+* **조각 참조** 데이터 유형은 다른 콘텐츠 조각을 참조하여 추가적인 구조 수준을 가져오도록 모델에서 사용할 수 있습니다.
 
 ### 조각 참조 {#fragment-references}
 
-다음 **조각 참조**:
+**조각 참조**:
 
 * 컨텐츠 조각 모델을 정의할 때 사용할 수 있는 특정 데이터 유형입니다.
-* 특정 컨텐츠 조각 모델에 따라 다른 조각을 참조합니다.
+* 특정 콘텐츠 조각 모델에 따라 다른 조각을 참조합니다.
 * 구조화된 데이터를 만든 다음 검색할 수 있습니다.
 
-   * 로 정의된 경우 **다중 피드**&#x200B;를 채울 경우 하위 조각에서 여러 하위 조각을 참조(검색)할 수 있습니다.
+   * **다중 피드**&#x200B;로 정의된 경우 주요 조각에서 여러 하위 조각을 참조(검색)할 수 있습니다.
 
-### JSON 미리 보기 {#json-preview}
+### JSON 미리보기 {#json-preview}
 
 컨텐츠 조각 모델을 디자인하고 개발하는 데 도움이 되도록 컨텐츠 조각 편집기에서 JSON 출력을 미리 볼 수 있습니다.
 
@@ -242,7 +243,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 * 엔드포인트 활성화
    * 도구 -> 자산 -> GraphQL 사용
-   * [GraphQL 끝점 활성화](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [GraphQL 끝점 활성화하기](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * GraphiQL 설치(필요한 경우)
    * 전용 패키지로 설치됨
@@ -349,9 +350,9 @@ AEM GraphQL API 사용에 대한 전체 세부 사항과 필요한 요소 구성
 
 * AEM에서 GraphQL을 사용하는 방법 학습
 * 샘플 컨텐츠 조각 구조
-* AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리
+* AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 이제 AEM GraphQL API를 사용하여 헤드리스 컨텐츠에 액세스하고 쿼리하는 방법을 알아보았습니다 [rest API를 사용하여 컨텐츠 조각에 액세스하고 업데이트하는 방법을 알아봅니다](update-your-content.md).
 
@@ -363,16 +364,16 @@ AEM GraphQL API 사용에 대한 전체 세부 사항과 필요한 요소 구성
    * [GraphQL Java 라이브러리](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [AEM에서 GraphQL을 사용하는 방법 학습](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * [GraphQL 끝점 활성화](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [GraphQL 끝점 활성화하기](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
    * [AEM GraphiQL 인터페이스 설치](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 * [샘플 컨텐츠 조각 구조](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [AEM에서 GraphQL을 사용하는 방법 학습 - 샘플 컨텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+* [AEM을 통해 GraphQL을 사용하는 방법 알아보기 - 샘플 콘텐츠 및 쿼리](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    * [샘플 쿼리 - 단일 특정 도시 조각](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-   * [메타데이터에 대한 샘플 쿼리 - GB라는 이름의 시상식에 대한 메타데이터 나열](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-   * [샘플 쿼리 - 명명된 변형을 가진 모든 도시](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
-* [구성 브라우저에서 컨텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
-* [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
-   * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
+   * [메타데이터에 대한 샘플 쿼리 - GB라는 제목의 상에 대한 메타데이터 나열](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
+   * [샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+* [구성 브라우저에서 콘텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
+* [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
+   * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
    * [JSON 출력](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [CORS(원본 간 리소스 공유) 이해](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
 * [AEM Headless 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 컨텐츠 모델링 및 GraphQL을 포함하여 AEM 헤드리스 기능을 사용하는 방법에 대한 개요를 제공하는 짧은 비디오 자습서 시리즈입니다.

@@ -1,8 +1,8 @@
 ---
 title: 사용 리소스 만들기 및 할당
-seo-title: 사용 리소스 만들기 및 할당
+seo-title: Create and Assign Enablement Resources
 description: 사용 리소스 추가
-seo-description: 사용 리소스 추가
+seo-description: Add enablement resources
 uuid: da940242-0c9b-4ad8-8880-61fd41461c3b
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,28 +12,28 @@ discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 exl-id: 78908a9c-a260-44ff-ad1e-baa6d78ae399
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '711'
 ht-degree: 7%
 
 ---
 
 # 사용 리소스 만들기 및 할당 {#create-and-assign-enablement-resources}
 
-## 지원 리소스 {#add-an-enablement-resource} 추가
+## 사용 리소스 추가 {#add-an-enablement-resource}
 
 새 커뮤니티 사이트에 지원 리소스를 추가하려면:
 
 * 작성자 인스턴스에서 시스템 관리자로 로그인합니다.
-   * 예: [http://localhost:4502/](http://localhost:4503/)
-* 전역 탐색에서 **[!UICONTROL 커뮤니티]** > **[!UICONTROL 리소스]**&#x200B;를 선택합니다.
+   * 예, [http://localhost:4502/](http://localhost:4503/)
+* 전역 탐색에서 를 선택합니다 **[!UICONTROL 커뮤니티]** > **[!UICONTROL 리소스]**
 
    ![리소스](assets/resources.png)
 
    ![enablement-resource](assets/enablement-resource.png)
 * 지원 리소스를 추가할 커뮤니티 사이트를 선택합니다.
-   * **[!UICONTROL 지원 자습서]**&#x200B;를 선택합니다.
-* 메뉴에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
-* **[!UICONTROL 리소스]**&#x200B;를 선택합니다.
+   * 선택 **[!UICONTROL 사용 자습서]**.
+* 메뉴에서 **[!UICONTROL 만들기]**.
+* 선택 **[!UICONTROL 리소스]**.
 
 ![create-resource](assets/create-enablement-resource.png)
 
@@ -43,7 +43,7 @@ ht-degree: 7%
 
 * **[!UICONTROL 사이트 이름]**
 
-   선택한 커뮤니티 사이트의 이름으로 설정합니다.사용 자습서
+   선택한 커뮤니티 사이트의 이름으로 설정합니다. 사용 자습서
 
 * **[!UICONTROL 리소스 이름(&amp;A);]**
 
@@ -51,11 +51,11 @@ ht-degree: 7%
 
 * **[!UICONTROL 태그]**
 
-   자습서:스포츠/스키
+   자습서: 스포츠/스키
 
 * **[!UICONTROL 카탈로그에 표시]**
 
-   **On**&#x200B;로 설정합니다.
+   을(를) (으)로 설정합니다. **설정**.
 
 * **[!UICONTROL 설명]**
 
@@ -69,11 +69,11 @@ ht-degree: 7%
 
 * **[!UICONTROL 다음]**&#x200B;을 선택합니다
 
-### 컨텐트 추가 {#add-content}
+### 콘텐츠 추가 {#add-content}
 
 여러 리소스를 선택한 것처럼 표시되지만 하나만 허용됩니다.
 
-오른쪽 상단 모서리에서 `'+' icon` 을 선택하여 소스를 식별하여 리소스를 선택하는 프로세스를 시작합니다.
+을(를) 선택합니다 `'+' icon`오른쪽 상단 모서리에서 소스를 식별하여 리소스 선택 프로세스를 시작합니다.
 
 ![add-content](assets/add-content.png)
 
@@ -93,7 +93,7 @@ ht-degree: 7%
 
 * **[!UICONTROL 기한]**
 
-   *(선택 사항)*  지정을 완료해야 하는 날짜를 선택할 수 있습니다.
+   *(선택 사항)* 지정을 완료해야 하는 날짜를 선택할 수 있습니다.
 
 * **[!UICONTROL 리소스 작성자]**
 
@@ -101,13 +101,13 @@ ht-degree: 7%
 
 * **[!UICONTROL 리소스 연락처(&amp;A);]**
 
-   *(필수)* 풀다운 메뉴를 사용하여 멤버를 선택합니다  `Quinn Harper`.
+   *(필수)* 풀다운 메뉴를 사용하여 멤버를 선택합니다 `Quinn Harper`.
 
 * **[!UICONTROL 리소스 전문가]**
 
    *(선택 사항)* 비워 둡니다.
 
-   **참고**:사용자 또는 그룹이 표시되지 않으면 해당 사용자 또는 그룹이  `Community Enable Members` 그룹에 추가되었는지 확인하고  ** 게시 인스턴스에서 저장 합니다.
+   **참고**: 사용자 또는 그룹이 표시되지 않을 경우, 사용자 또는 그룹이 `Community Enable Members` 그룹 및 *저장됨* 게시 인스턴스에 배치합니다.
 
    ![enablement-settings](assets/enablement-settings.png)
 
@@ -129,40 +129,40 @@ ht-degree: 7%
 
 사용 리소스의 새 버전을 업로드하려면 새 리소스를 만든 다음 이전 버전에서 구성원 등록을 취소하고 새 버전에 등록하는 것이 좋습니다.
 
-### 리소스 {#publish-the-resource} 게시
+### 리소스 게시 {#publish-the-resource}
 
 등록자가 지정된 강좌를 보려면 먼저 게시해야 합니다.
 
-* 월드 `Publish` 아이콘을 선택합니다
+* 세계 선택 `Publish` 아이콘
 
 활성화는 성공 메시지와 함께 확인됩니다.
 
 ![publish-resource](assets/publish-resource.png)
 
-## 두 번째 사용 리소스 {#add-a-second-enablement-resource} 추가
+## 두 번째 사용 리소스 추가 {#add-a-second-enablement-resource}
 
 위의 단계를 반복하여 학습 경로를 만들 두 번째 관련 지원 리소스를 만들고 게시합니다.
 
 ![add-resource](assets/add-resource.png)
 
-**** 두 번째 리소스를 게시합니다.
+**게시** 두 번째 리소스.
 
 리소스의 지원 자습서 목록으로 돌아갑니다.
 
-*힌트:두 리소스 모두 표시되지 않으면 페이지를 새로 고칩니다.*
+*힌트: 두 리소스 모두 표시되지 않으면 페이지를 새로 고칩니다.*
 
 ![새로 고침 리소스](assets/refresh-resource.png)
 
-## 학습 경로 {#add-a-learning-path} 추가
+## 학습 경로 추가 {#add-a-learning-path}
 
 학습 경로는 강좌를 구성하는 지원 리소스의 논리적 그룹입니다.
 
-* 리소스 콘솔에서 `+ Create` 을 선택합니다.
-* **[!UICONTROL 학습 경로]** 선택
+* 리소스 콘솔에서 을(를) 선택합니다 `+ Create`
+* 선택 **[!UICONTROL 학습 경로]**
 
 ![add-learning-path](assets/add-learning-path.png)
 
-**[!UICONTROL 기본 정보]** 추가:
+추가 **[!UICONTROL 기본 정보]**:
 
 * **[!UICONTROL 학습 경로 이름]**
 
@@ -170,7 +170,7 @@ ht-degree: 7%
 
 * **[!UICONTROL 태그]**
 
-   자습서:스키
+   자습서: 스키
 
 * **[!UICONTROL 카탈로그에 표시]**
 
@@ -190,13 +190,13 @@ ht-degree: 7%
 
 리소스 추가 패널에서 다음을 수행합니다.
 
-* 학습 경로에 추가할 2개의 스키 세션 리소스를 선택하려면 `+ Add Resources` 을 선택합니다.
+* 선택 `+ Add Resources` 를 클릭하여 학습 경로에 추가할 2개의 스키 세션 리소스를 선택합니다.
 
-   참고:**게시된** 리소스만 선택할 수 있습니다.
+   참고: 전용 **게시됨** 리소스를 선택할 수 있습니다.
 
 >[!NOTE]
 >
->학습 경로와 동일한 수준에서 사용할 수 있는 리소스만 선택할 수 있습니다. 예를 들어, 그룹에 생성된 학습 경로의 경우 그룹 수준 리소스만 사용할 수 있습니다.커뮤니티 사이트에서 생성된 학습 경로의 경우 해당 사이트의 리소스를 학습 경로에 추가할 수 있습니다.
+>학습 경로와 동일한 수준에서 사용할 수 있는 리소스만 선택할 수 있습니다. 예를 들어, 그룹에 생성된 학습 경로의 경우 그룹 수준 리소스만 사용할 수 있습니다. 커뮤니티 사이트에서 생성된 학습 경로의 경우 해당 사이트의 리소스를 학습 경로에 추가할 수 있습니다.
 
 * **[!UICONTROL 제출]**&#x200B;을 선택합니다.
 
@@ -210,11 +210,11 @@ ht-degree: 7%
 
 * **[!UICONTROL 할당자 추가]**
 
-   풀다운 메뉴를 사용하여 `Riley Taylor` 및 `Sidney Croft.` 멤버를 포함해야 하는 `Community Ski Class` 그룹을 선택합니다
+   풀다운 메뉴를 사용하여 `Community Ski Class` 그룹을 포함할 그룹 `Riley Taylor` 및 `Sidney Croft.`
 
 * **[!UICONTROL 학습 경로 연락처(&amp;A);]**
 
-   *(필수)* 풀다운 메뉴를 사용하여 멤버를 선택합니다  `Quinn Harper`.
+   *(필수)* 풀다운 메뉴를 사용하여 멤버를 선택합니다 `Quinn Harper`.
 
 * **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
 
@@ -222,4 +222,4 @@ ht-degree: 7%
 
 학습 경로를 성공적으로 만들면 새로 만든 학습 경로가 선택된 리소스 콘솔로 돌아갑니다. 이 콘솔에서 학습자를 게시, 추가 및 기타 설정을 변경할 수 있습니다.
 
-**** 학습 경로를 게시합니다.
+**게시** 학습 경로.

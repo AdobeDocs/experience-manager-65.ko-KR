@@ -1,8 +1,8 @@
 ---
 title: AEM 양식 작업 공간 사용자 지정 소개
-seo-title: AEM 양식 작업 공간 사용자 지정 소개
+seo-title: Introduction to Customizing AEM form workspace
 description: 프로세스 관리를 위해 AEM Forms 작업 공간을 사용자 지정하는 개념 및 기술 정보를 포함한 빠른 소개.
-seo-description: 프로세스 관리를 위해 AEM Forms 작업 공간을 사용자 지정하는 개념 및 기술 정보를 포함한 빠른 소개.
+seo-description: A quick introduction, with conceptual and technical information, to customize LiveCycle AEM Forms workspace for process management.
 uuid: 38759071-e6b8-4976-8b06-909ad7a786cd
 contentOwner: robhagat
 content-type: reference
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1763'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ AEM Forms 작업 공간에서는 사용자 인터페이스의 레이아웃, 모�
 
 AEM Forms 작업 공간의 모양, 레이아웃 및 기타 프레젠테이션 의미 체계를 변경할 수 있습니다. CSS, HTML 템플릿 및 JavaScript™ 파일을 사용자 지정하여 작업 영역을 변경합니다. 기본 설치에는 모든 기본 파일이 제공됩니다.
 
-가장 일반적으로 적용 가능한 단계는 AEM Forms 작업 공간 사용자 지정](../../forms/using/generic-steps-html-workspace-customization.md)에 대한 일반 단계에서 다룹니다. [ 자세한 단계를 비롯한 이러한 사용자 지정 예에 대한 자세한 내용은 이 문서의 끝에 있는 관련 문서를 참조하십시오.
+가장 일반적으로 적용 가능한 단계는 [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md). 자세한 단계를 비롯한 이러한 사용자 지정 예에 대한 자세한 내용은 이 문서의 끝에 있는 관련 문서를 참조하십시오.
 
-#### 스타일 시트 {#understanding-the-style-sheet} 이해
+#### 스타일 시트 이해 {#understanding-the-style-sheet}
 
 작업 공간을 사용자 지정하기 전에 /libs/ws/css/style.css에서 AEM Forms에 제공된 기본 스타일 시트 를 숙지하십시오.
 
@@ -70,7 +70,7 @@ AEM Forms 작업 공간의 모양, 레이아웃 및 기타 프레젠테이션 �
   </tr>
   <tr>
    <td><p>.category, .filter</p> </td>
-   <td><p>카테고리</p> </td>
+   <td><p>범주</p> </td>
   </tr>
   <tr>
    <td><p>.category:hover, .category.selected, .filter:hover, .filter.selected</p> </td>
@@ -127,22 +127,22 @@ CSS 사용자 지정을 위한 최상위 단계는 다음과 같습니다.
 
 * CSS 파일을 만듭니다.
 * 이 CSS에 스타일 항목을 추가합니다. 자세한 내용은 CSS 스타일 이해 를 참조하십시오.
-* `html.jsp`에서 참조를 업데이트합니다.
+* 에서 해당 참조를 업데이트합니다 `html.jsp`.
 
-이러한 사용자 지정을 수행하는 정확한 단계는 [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md)를 참조하십시오. AEM Forms 작업 공간과 함께 제공되는 CSS 파일은 /libs/ws/css/에 있습니다. CSS 관련 사용자 지정의 경우 [배송 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)를 사용하십시오. CSS 관련 사용자 정의에 대한 특정 예는 이 문서의 끝에 있는 관련 도움말 항목을 참조하십시오.
+이러한 사용자 지정을 수행하는 정확한 단계는 다음을 참조하십시오 [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md). AEM Forms 작업 공간과 함께 제공되는 CSS 파일은 /libs/ws/css/에 있습니다. CSS 관련 사용자 지정의 경우 [배송 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). CSS 관련 사용자 정의에 대한 특정 예는 이 문서의 끝에 있는 관련 도움말 항목을 참조하십시오.
 
 #### 이미지 {#image}
 
-AEM Forms 작업 공간을 사용자 지정하여 사용자 아바타를 추가하거나 조직의 로고를 추가할 수 있습니다. 이러한 사용자 지정의 경우 [배송 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)를 사용하십시오.
+AEM Forms 작업 공간을 사용자 지정하여 사용자 아바타를 추가하거나 조직의 로고를 추가할 수 있습니다. 이러한 사용자 지정의 경우 [배송 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
 이미지 사용자 지정에 대한 최상위 단계는 다음과 같습니다.
 
 * WebDAV를 설치 및 구성합니다.
 * 새 이미지를 추가합니다.
 * 추가된 이미지에 해당하는 새 스타일을 추가합니다.
-* `html.jsp` 파일의 새 CSS 파일에 연결합니다.
+* 의 새 CSS 파일에 연결 `html.jsp` 파일.
 
-AEM Forms 작업 영역에서 이미지 사용자 지정을 시작하려면 [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md)를 따르십시오. 이미지 관련 사용자 정의에 대한 특정 예는 이 문서의 끝에 있는 관련 도움말 항목을 참조하십시오.
+AEM Forms 작업 영역에서 이미지 사용자 지정을 시작하려면 다음을 수행하십시오. [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md). 이미지 관련 사용자 정의에 대한 특정 예는 이 문서의 끝에 있는 관련 도움말 항목을 참조하십시오.
 
 #### HTML 템플릿 {#html-template}
 
@@ -154,9 +154,9 @@ HTML 템플릿 사용자 지정에 대한 최상위 단계는 다음과 같습�
 * 사용자 정의 폴더에 새 템플릿을 추가합니다.
 * 복사된 파일 경로(예: 새 템플릿의 경로)에 대한 관련 업데이트를 수행합니다.
 
-이러한 사용자 정의에 대한 특정 예는 이 문서의 끝에 제공된 도움말 항목을 참조하십시오. 사용자 지정할 템플릿에 따라 [배송 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) 또는 [개발 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) 중에서 선택합니다.
+이러한 사용자 정의에 대한 특정 예는 이 문서의 끝에 제공된 도움말 항목을 참조하십시오. 다음 중 하나를 선택합니다 [배송 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) 또는 [개발 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)사용자 지정할 템플릿에 따라 다릅니다.
 
-### 의미 변경 {#semantic-changes}
+### 시맨틱 변경 {#semantic-changes}
 
 AEM Forms 작업 공간 기능을 수정하려면 JavaScript 소스 코드를 변경합니다. 핵심 기능의 수정 사항은 의미 체계 변경이라고 레이블이 지정됩니다. AEM Forms 작업 공간의 소스 코드의 일부로 제공된 모델, 보기 및 템플릿을 수정합니다.
 
@@ -167,26 +167,26 @@ AEM Forms 작업 영역의 기능을 수정하기 위해 시맨틱 변경을 수
 * 기본 JavaScript 파일에서 새로 추가된 모델 및 보기의 경로를 업데이트하는 것과 같은 관련 업데이트를 만듭니다.
 * 패키지를 축소하여 성능을 최적화합니다.
 
-소스 코드에 포함된 구성 요소에 대한 자세한 개념적 정보는 [재사용 가능한 구성 요소 설명](/help/forms/using/description-reusable-components.md)을 참조하십시오. 이러한 사용자 지정의 경우 개발 패키지를 사용하십시오.
+소스 코드에 포함된 구성 요소에 대한 자세한 내용은 [재사용 가능한 구성 요소에 대한 설명](/help/forms/using/description-reusable-components.md). 이러한 사용자 지정의 경우 개발 패키지를 사용하십시오.
 
 ### 재사용 가능한 구성 요소 {#reusable-components}
 
 AEM Forms 작업 공간은 구성 요소 기반 소프트웨어이므로 쉽게 사용자 지정하고 다시 사용할 수 있습니다. 작업 공간 구성 요소를 웹 애플리케이션과 쉽게 통합할 수 있습니다.
 
-개념적 정보에 대해서는 [재사용 가능한 구성 요소 설명](/help/forms/using/description-reusable-components.md)을 참조하고, 구성 요소 사용에 대한 지침은 웹 응용 프로그램에서 AEM Forms 작업 공간 구성 요소 통합](/help/forms/using/description-reusable-components.md)을 참조하십시오.[
+개념적 정보에 대해서는 [재사용 가능한 구성 요소에 대한 설명](/help/forms/using/description-reusable-components.md) 구성 요소 사용에 대한 자세한 내용은 [웹 애플리케이션에서 AEM Forms 작업 공간 구성 요소 통합](/help/forms/using/description-reusable-components.md).
 
-## AEM Forms 작업 공간 코드 작성 중 {#building-html-workspace-code}
+## AEM Forms 작업 공간 코드 작성 {#building-html-workspace-code}
 
 ### SDK 패키지 {#sdk-package}
 
-패키지에는 AEM Forms 작업 공간의 소스 코드가 들어 있습니다. 패키지는 `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`에서 사용할 수 있습니다.
+패키지에는 AEM Forms 작업 공간의 소스 코드가 들어 있습니다. 패키지는 `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
 
 다음을 생성하는 기능을 제공하므로 주로 사용자 지정을 위한 것입니다.
 
-* 배송, 디버그 및 개발 프로필에 대한 CRX 패키지( [CRX 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)에서 아래에 언급됨)입니다.
+* 배송, 디버그 및 개발 프로필에 대한 CRX 패키지(아래에 언급됨)에서 [CRX 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
 * 사용자 지정 코드의 축소된 버전(의미 체계 변경).
 
-#### WS 컨텐츠 {#ws-content}
+#### WS 콘텐츠 {#ws-content}
 
 * client-pkg:
 
@@ -218,7 +218,7 @@ AEM Forms 작업 공간은 구성 요소 기반 소프트웨어이므로 쉽게 
             * 보기 - AEM Forms 작업 공간에 있는 모든 구성 요소의 백본 보기를 포함합니다.
          * main.js
          * router.js
-      * libs/ws:pdf.html 및 pluginPing.pdf 는 AEM Forms 작업 공간에서 PDF forms을 로드하는 데 사용되며 WSNextAdapter.swf는 AEM Forms 작업 영역에서 SWF 양식 및 가이드를 로드하는 데 사용됩니다.
+      * libs/ws: pdf.html 및 pluginPing.pdf 는 AEM Forms 작업 공간에서 PDF forms을 로드하는 데 사용되며 WSNextAdapter.swf는 AEM Forms 작업 영역에서 SWF 양식 및 안내서를 로드하는 데 사용됩니다.
       * 로케일:
 
          * de-DE - 독일어용 translation.json을 포함합니다.
@@ -234,7 +234,7 @@ AEM Forms 작업 공간은 구성 요소 기반 소프트웨어이므로 쉽게 
 
 ### CRX 패키지 {#crx-package}
 
-CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip`에서 사용할 수 있습니다.
+CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. 다음 위치에서 사용 가능합니다 `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
 
 이 패키지는 아래에 설명된 세 가지 프로필을 사용하여 작성할 수 있습니다.
 
@@ -251,7 +251,7 @@ CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. `[LC root]\crx-
 * mvn clean -P 클라이언트로 제공된 소스 패키지의 클라이언트-pkg 폴더에 배송 설치
 * 출하 프로필 명령 실행은 64비트 JVM에서만 작동합니다.
 
-#### WS 컨텐츠 {#ws-content-1}
+#### WS 콘텐츠 {#ws-content-1}
 
 * css - style.css, ie.css 및 jquery-ui.css를 포함합니다.
 * 이미지 - 모든 이미지를 포함합니다.
@@ -296,7 +296,7 @@ CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. `[LC root]\crx-
 * mvn clean -P Debug가 클라이언트-pkg에 설치됨
 * 디버그 프로필 명령 실행은 64비트 JVM에서만 작동합니다.
 
-#### WS 컨텐츠 {#ws-content-2}
+#### WS 콘텐츠 {#ws-content-2}
 
 * css - style.css, ie.css 및 jqueri-ui.css를 포함합니다.
 * 이미지 - 모든 이미지를 포함합니다.
@@ -340,7 +340,7 @@ CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. `[LC root]\crx-
 
 mvn clean -P 개발 설치를 클라이언트-pkg에 설치
 
-#### WS 컨텐츠 {#ws-content-3}
+#### WS 콘텐츠 {#ws-content-3}
 
 * css - style.css, ie.css 및 jqueri-ui.css를 포함합니다.
 * 이미지 - 모든 이미지를 포함합니다.

@@ -1,8 +1,8 @@
 ---
 title: 컨텐츠 조각으로 페이지 작성
-seo-title: 컨텐츠 조각으로 페이지 작성
+seo-title: Page Authoring with Content Fragments
 description: 컨텐츠 조각은 페이지와 독립된 자산으로 작성 및 관리됩니다. 이 구성 요소와 여러 변형을 함께 사용하면 채널 중립적인 컨텐츠를 만들 수 있습니다.
-seo-description: 컨텐츠 조각은 페이지와 독립된 자산으로 작성 및 관리됩니다. 이 구성 요소와 여러 변형을 함께 사용하면 채널 중립적인 컨텐츠를 만들 수 있습니다.
+seo-description: Content fragments are created and managed as page-independent assets. They allow you to create channel-neutral content, together with variations.
 page-status-flag: de-activated
 uuid: 8e3bb1bc-8720-48e2-8d06-98fbab4dd4fd
 contentOwner: Chris Bohnert
@@ -13,16 +13,16 @@ discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
 exl-id: b55d9edc-a210-407a-aa4b-a91bb358be7b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '110'
 ht-degree: 100%
 
 ---
 
 # 컨텐츠 조각으로 페이지 작성{#page-authoring-with-content-fragments}
 
-AEM(Adobe Experience Manager) 컨텐츠 조각은 [페이지와 독립된 자산으로 작성 및 관리](/help/assets/content-fragments/content-fragments.md)됩니다.
+Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md).
 
-변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 컨텐츠를 만들 수 있습니다. 그런 다음 컨텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
+변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. 그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
 
 >[!CAUTION]
 >

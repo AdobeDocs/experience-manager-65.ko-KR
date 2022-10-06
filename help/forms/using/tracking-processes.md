@@ -1,8 +1,8 @@
 ---
 title: 프로세스 추적
-seo-title: 프로세스 추적
+seo-title: Tracking processes
 description: 프로세스를 검색하고 세부 사항을 확인하여 프로세스를 추적하는 방법
-seo-description: 프로세스를 검색하고 세부 사항을 확인하여 프로세스를 추적하는 방법
+seo-description: How to track your processes by searching for them and viewing their details.
 uuid: 7bda9b61-0a40-4349-9aee-dc6636e5e692
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 exl-id: 381a46c6-c73c-476a-a1a0-20d921069c37
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
 
-# 추적 프로세스 {#tracking-processes}
+# 프로세스 추적 {#tracking-processes}
 
 추적 페이지에서 시작했거나 참여한 활성 또는 완료된 프로세스를 검색하고 프로세스 세부 사항을 볼 수 있습니다. 프로세스 세부 정보에는 프로세스의 일부인 작업, 지정 및 양식이 표시됩니다. 이전에 시작한 프로세스의 양식 데이터를 사용하여 새 프로세스를 시작할 수도 있습니다.
 
@@ -36,10 +36,10 @@ ht-degree: 0%
 1. 추적 페이지의 왼쪽 창에서 프로세스 이름을 선택합니다. 작업을 시작했거나 완료한 프로세스의 모든 인스턴스가 기본 창에 표시됩니다.
 1. 프로세스 인스턴스를 클릭하여 프로세스 인스턴스에 대한 자세한 정보를 봅니다.
 
-### 검색 템플릿 {#search-for-a-task-using-a-search-template}을 사용하여 작업 검색
+### 검색 템플릿을 사용하여 작업 검색 {#search-for-a-task-using-a-search-template}
 
-1. 추적 페이지의 왼쪽 목록에서 **템플릿 검색**&#x200B;을 선택하고 검색 템플릿을 선택합니다.
-1. 템플릿이 검색 매개 변수를 지원하는 경우 검색 매개 변수 범위를 좁히려면 템플릿 필드를 입력한 다음 **검색**&#x200B;을 클릭합니다. 참여한 모든 작업 목록을 표시하고 검색 기준과 일치합니다.
+1. 추적 페이지의 왼쪽 목록에서 **검색 템플릿** 검색 템플릿을 선택합니다.
+1. 템플릿이 검색 매개 변수를 지원하는 경우 검색 매개 변수 범위를 좁히려면 템플릿 필드를 입력한 다음 을 클릭합니다 **검색**. 참여한 모든 작업 목록을 표시하고 검색 기준과 일치합니다.
 
 ## 프로세스 세부 정보 보기 {#view-process-details}
 

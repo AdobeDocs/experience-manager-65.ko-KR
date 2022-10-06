@@ -1,8 +1,8 @@
 ---
 title: 계정 환경 구성
-seo-title: 계정 환경 구성
-description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다
-seo-description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다
+seo-title: Configuring Your Account Environment
+description: AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능을 제공합니다.
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
 uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '517'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 **사용자 설정** 대화 상자에서는 다음에 액세스할 수 있습니다.
 
-* 가장 대상 
+* 가장 대상
 
    * [가장 대상](/help/sites-administering/security.md#impersonating-another-user) 기능을 사용하면 사용자는 다른 사용자를 대신하여 작업할 수 있습니다.
 
@@ -70,7 +70,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
       * 현재 창에 페이지가 열립니다.
 
 
-* **자산에 대한 데스크톱 작업 표시**
+* **에셋에 대한 데스크탑 작업 표시**
 
    이 옵션을 사용하려면 AEM 데스크탑 앱을 사용해야 합니다.
 
@@ -100,7 +100,7 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
 * **단축키 사용**
 
-   AEM에서는 작성의 효율성을 개선하는 다양한 키보드 단축키를 지원합니다.
+   AEM은 작성의 효율성을 개선하는 다양한 키보드 단축키를 지원합니다.
 
    * [페이지 편집을 위한 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
@@ -111,9 +111,9 @@ AEM에서는 계정과, 작성 환경의 특정 측면들을 구성하는 기능
 
    [클래식 UI](/help/sites-classic-ui-authoring/home.md) 기반 페이지 작성을 가능하게 합니다. 기본적으로 표준 UI가 사용됩니다.
 
-* **자산 홈페이지 활성화**
+* **에셋 홈페이지 활성화**
 
-   이 선택 사항은 시스템 관리자가 전체 조직에 대해 [자산 홈페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
+   이 선택 사항은 시스템 관리자가 전체 조직에 대해 [에셋 홈페이지] 환경을 활성화한 경우에만 사용할 수 있습니다.
 
 * **Stock 구성**
 

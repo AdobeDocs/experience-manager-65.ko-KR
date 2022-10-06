@@ -2,7 +2,7 @@
 title: Client Context Javascript API
 seo-title: Client Context Javascript API
 description: Client Context용 Javascript API
-seo-description: Client Context용 Javascript API
+seo-description: The Javascript API for Client Context
 uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3165'
+source-wordcount: '3153'
 ht-degree: 2%
 
 ---
@@ -30,23 +30,23 @@ CQ_Analytics.PersistentSessionStore를 확장합니다.
 
 #### getRegisteredStore(name) {#getregisteredstore-name}
 
-지정된 이름의 세션 저장소를 반환합니다. [세션 저장소 액세스](/help/sites-developing/client-context.md#accessing-session-stores)도 참조하십시오.
+지정된 이름의 세션 저장소를 반환합니다. 참조 - [세션 저장소 액세스](/help/sites-developing/client-context.md#accessing-session-stores).
 
-**매개 변수**
+**매개변수**
 
-* 이름:문자열. 세션 저장소의 이름입니다.
+* 이름: 문자열. 세션 저장소의 이름입니다.
 
 **반환**
 
-지정된 이름의 세션 저장소를 나타내는 CQ_Analytics.SessionStore 개체입니다. 지정된 이름의 저장소가 없으면 `null`을 반환합니다.
+지정된 이름의 세션 저장소를 나타내는 CQ_Analytics.SessionStore 개체입니다. 반환 `null` 지정된 이름의 저장소가 없는 경우
 
 #### register(sessionstore) {#register-sessionstore}
 
 Client Context에 세션 저장소를 등록합니다. 완료되면 상점 레지스터를 실행하고 업데이트 이벤트를 저장합니다.
 
-**매개 변수**
+**매개변수**
 
-* sessionstore:CQ_Analytics.SessionStore입니다. 등록할 세션 저장소 개체입니다.
+* sessionstore: CQ_Analytics.SessionStore입니다. 등록할 세션 저장소 개체입니다.
 
 **반환**
 
@@ -54,7 +54,7 @@ Client Context에 세션 저장소를 등록합니다. 완료되면 상점 레�
 
 ## CQ_Analytics.ClientContextUtils {#cq-analytics-clientcontextutils}
 
-세션 저장소 활성화 및 등록을 수신하는 방법을 제공합니다. 또한 [세션 저장소가 정의되고 초기화되었는지 확인합니다](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
+세션 저장소 활성화 및 등록을 수신하는 방법을 제공합니다. 참조 - [세션 저장소가 정의되고 초기화되었는지 확인](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
 
 ### 메서드 {#methods-1}
 
@@ -72,13 +72,13 @@ Client Context에 세션 저장소를 등록합니다. 완료되면 상점 레�
 * 이 저장소는 기본값(init 속성)으로 미리 채워지지만 요청이 실패합니다(시간 초과). 초기화는 기본값이 있는 하나만 있습니다.
 * 그 가게는 미리 채워져 있다.
 
-지연이 `true` 또는 밀리초 수로 설정되면 메서드는 콜백 메서드를 호출하기 전에 기다립니다. 지연이 전달되기 전에 다른 초기화 이벤트가 트리거되는 경우 초기화 이벤트 없이 지연 시간이 초과될 때까지 대기합니다. 이렇게 하면 두 번째 초기화 이벤트가 트리거될 때까지 기다렸다가 가장 적합한 경우에서 콜백 함수를 호출할 수 있습니다.
+지연이 로 설정된 경우 `true` 또는 메서드가 콜백 메서드를 호출하기 전에 대기하는 시간(밀리초)입니다. 지연이 전달되기 전에 다른 초기화 이벤트가 트리거되는 경우 초기화 이벤트 없이 지연 시간이 초과될 때까지 대기합니다. 이렇게 하면 두 번째 초기화 이벤트가 트리거될 때까지 기다렸다가 가장 적합한 경우에서 콜백 함수를 호출할 수 있습니다.
 
-**매개 변수**
+**매개변수**
 
-* storeName:문자열. 리스너를 추가할 세션 저장소의 이름입니다.
-* 콜백:함수 위에 있어야 합니다. 저장소 초기화 시 호출할 함수입니다.
-* 지연:부울 또는 숫자입니다. 콜백 함수 호출을 지연하는 시간(밀리초)입니다. `true` 의 부울 값은 `200 ms` 의 기본 지연을 사용합니다. 부울 값 `false` 또는 음수로 인해 지연이 사용되지 않습니다.
+* storeName: 문자열. 리스너를 추가할 세션 저장소의 이름입니다.
+* 콜백: 함수 위에 있어야 합니다. 저장소 초기화 시 호출할 함수입니다.
+* 지연: 부울 또는 숫자입니다. 콜백 함수 호출을 지연하는 시간(밀리초)입니다. 부울 값 `true` 의 기본 지연 시간을 사용합니다. `200 ms`. 부울 값 `false` 또는 음수로 인해 지연이 사용되지 않습니다.
 
 **반환**
 
@@ -86,12 +86,12 @@ Client Context에 세션 저장소를 등록합니다. 완료되면 상점 레�
 
 #### onStoreRegistered(storeName, callback) {#onstoreregistered-storename-callback}
 
-세션 저장소가 등록될 때 호출되는 콜백 함수를 등록합니다. 등록 이벤트는 저장소가 [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr)에 등록될 때 발생합니다.
+세션 저장소가 등록될 때 호출되는 콜백 함수를 등록합니다. 등록 이벤트는 스토어가 [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
 
-**매개 변수**
+**매개변수**
 
-* storeName:문자열. 리스너를 추가할 세션 저장소의 이름입니다.
-* 콜백:함수 위에 있어야 합니다. 저장소 초기화 시 호출할 함수입니다.
+* storeName: 문자열. 리스너를 추가할 세션 저장소의 이름입니다.
+* 콜백: 함수 위에 있어야 합니다. 저장소 초기화 시 호출할 함수입니다.
 
 **반환**
 
@@ -99,7 +99,7 @@ Client Context에 세션 저장소를 등록합니다. 완료되면 상점 레�
 
 ## CQ_Analytics.JSONPStore {#cq-analytics-jsonpstore}
 
-JSON 데이터를 포함하는 비지속적인 세션 저장소. 외부 JSONP 서비스에서 데이터를 검색합니다. `getInstance` 또는 `getRegisteredInstance` 메서드를 사용하여 이 클래스의 인스턴스를 만듭니다.
+JSON 데이터를 포함하는 비지속적인 세션 저장소. 외부 JSONP 서비스에서 데이터를 검색합니다. 를 사용하십시오 `getInstance` 또는 `getRegisteredInstance` 이 클래스의 인스턴스를 만드는 메서드입니다.
 
 CQ_Analytics.JSONStore를 확장합니다.
 
@@ -115,13 +115,13 @@ CQ_Analytics.JSONStore를 확장합니다.
 
 CQ_Analytics.JSONPStore 개체를 만듭니다.
 
-**매개 변수**
+**매개변수**
 
-* storeName:문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다. storeName을 제공하지 않으면 이 메서드는 null을 반환합니다.
-* serviceURL:문자열. JSONP 서비스의 URL입니다
-* dynamicData:(선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
-* deferLoading:(선택 사항) 부울. true 값을 지정하면 개체를 만들 때 JSONP 서비스가 호출되지 않습니다. false 값을 지정하면 JSONP 서비스가 호출됩니다.
-* loadingCallback:(선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
+* storeName: 문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다. storeName을 제공하지 않으면 이 메서드는 null을 반환합니다.
+* serviceURL: 문자열. JSONP 서비스의 URL입니다
+* dynamicData: (선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
+* deferLoading: (선택 사항) 부울. true 값을 지정하면 개체를 만들 때 JSONP 서비스가 호출되지 않습니다. false 값을 지정하면 JSONP 서비스가 호출됩니다.
+* loadingCallback: (선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
 
 **반환**
 
@@ -131,7 +131,7 @@ CQ_Analytics.JSONPStore 개체를 만듭니다.
 
 이 개체가 JSON 데이터를 검색하는 데 사용하는 JSONP 서비스의 URL을 검색합니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -143,11 +143,11 @@ CQ_Analytics.JSONPStore 개체를 만듭니다.
 
 JSONP 서비스를 호출합니다. JSONP URL은 지정된 콜백 함수 이름이 있는 서비스 URL입니다.
 
-**매개 변수**
+**매개변수**
 
-* serviceURL:(선택 사항) 문자열입니다. 호출할 JSONP 서비스입니다. null 값을 지정하면 이미 구성된 서비스 URL이 사용됩니다. null이 아닌 값은 이 개체에 사용할 JSONP 서비스를 설정합니다. (setServiceURL을 참조하십시오.)
-* dynamicData:(선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
-* 콜백:(선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
+* serviceURL: (선택 사항) 문자열입니다. 호출할 JSONP 서비스입니다. null 값을 지정하면 이미 구성된 서비스 URL이 사용됩니다. null이 아닌 값은 이 개체에 사용할 JSONP 서비스를 설정합니다. (setServiceURL을 참조하십시오.)
+* dynamicData: (선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
+* 콜백: (선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
 
 **반환**
 
@@ -157,12 +157,12 @@ JSONP 서비스를 호출합니다. JSONP URL은 지정된 콜백 함수 이름�
 
 CQ_Analytics.JSONPStore 개체를 만들고 Client Context에 스토어를 등록합니다.
 
-**매개 변수**
+**매개변수**
 
-* storeName:문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다. storeName을 제공하지 않으면 이 메서드는 null을 반환합니다.
-* serviceURL:(선택 사항) 문자열입니다. JSONP 서비스의 URL입니다.
-* dynamicData:(선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
-* 콜백:(선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
+* storeName: 문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다. storeName을 제공하지 않으면 이 메서드는 null을 반환합니다.
+* serviceURL: (선택 사항) 문자열입니다. JSONP 서비스의 URL입니다.
+* dynamicData: (선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
+* 콜백: (선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
 
 **반환**
 
@@ -172,9 +172,9 @@ CQ_Analytics.JSONPStore 개체를 만들고 Client Context에 스토어를 등�
 
 JSON 데이터 검색에 사용할 JSONP 서비스의 URL을 설정합니다.
 
-**매개 변수**
+**매개변수**
 
-* serviceURL:문자열. JSON 데이터를 제공하는 JSONP 서비스의 URL입니다
+* serviceURL: 문자열. JSON 데이터를 제공하는 JSONP 서비스의 URL입니다
 
 **반환**
 
@@ -194,11 +194,11 @@ CQ_Analytics.SessionStore를 확장합니다.
 
 #### STORKEY {#storekey}
 
-저장소를 식별하는 키입니다. 이 값을 검색하려면 `getInstance` 메서드를 사용하십시오.
+저장소를 식별하는 키입니다. 를 사용하십시오 `getInstance` 이 값을 검색하는 메서드입니다.
 
 #### STORNAME {#storename}
 
-저장소의 이름입니다. 이 값을 검색하려면 `getInstance` 메서드를 사용하십시오.
+저장소의 이름입니다. 를 사용하십시오 `getInstance` 이 값을 검색하는 메서드입니다.
 
 ### 메서드 {#methods-3}
 
@@ -208,7 +208,7 @@ CQ_Analytics.SessionStore를 확장합니다.
 
 세션 저장소 데이터를 제거하고 모든 초기화 속성을 제거합니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -220,10 +220,10 @@ CQ_Analytics.SessionStore를 확장합니다.
 
 지정된 이름으로 CQ_Analytics.JSONStore 개체를 만들고 지정된 JSON 데이터로 초기화합니다(initJSON 메서드 호출).
 
-**매개 변수**
+**매개변수**
 
-* storeName:문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다.
-* jsonData:개체. JSON 데이터를 포함하는 객체입니다.
+* storeName: 문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다.
+* jsonData: 개체. JSON 데이터를 포함하는 객체입니다.
 
 **반환**
 
@@ -233,7 +233,7 @@ CQ_Analytics.JSONStore 개체.
 
 세션 저장소의 데이터를 JSON 형식으로 검색합니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -243,9 +243,9 @@ JSON 형식으로 저장소 데이터를 나타내는 객체입니다.
 
 #### init() {#init}
 
-세션 저장소를 지우고 초기화 속성으로 초기화합니다. 초기화 플래그를 `true`로 설정한 다음 `initialize` 및 `update` 이벤트를 실행합니다.
+세션 저장소를 지우고 초기화 속성으로 초기화합니다. 초기화 플래그를 로 설정합니다. `true` 그런 다음 `initialize` 및 `update` events.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -275,10 +275,10 @@ A: "valueA"
 B/B1: "valueBB1"
 ```
 
-**매개 변수**
+**매개변수**
 
-* jsonData:저장할 데이터를 포함하는 JSON 개체입니다.
-* doNotClear:true 값을 지정하면 기존 초기화 속성이 유지되고 JSON 객체에서 파생된 속성이 추가됩니다. false 값은 JSON 개체에서 파생된 초기화 속성을 추가하기 전에 기존 초기화 속성을 제거합니다.
+* jsonData: 저장할 데이터를 포함하는 JSON 개체입니다.
+* doNotClear: true 값을 지정하면 기존 초기화 속성이 유지되고 JSON 객체에서 파생된 속성이 추가됩니다. false 값은 JSON 개체에서 파생된 초기화 속성을 추가하기 전에 기존 초기화 속성을 제거합니다.
 
 **반환**
 
@@ -288,10 +288,10 @@ B/B1: "valueBB1"
 
 지정된 이름으로 CQ_Analytics.JSONStore 개체를 만들고 지정된 JSON 데이터로 초기화합니다(initJSON 메서드 호출). 새 개체는 Clickstream Cloud Manager에 자동으로 등록됩니다.
 
-**매개 변수**
+**매개변수**
 
-* storeName:문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다.
-* jsonData:개체. JSON 데이터를 포함하는 객체입니다.
+* storeName: 문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다.
+* jsonData: 개체. JSON 데이터를 포함하는 객체입니다.
 
 **반환**
 
@@ -305,13 +305,13 @@ CQ_Analytics.JSONStore 개체.
 
 #### addListener(event, fct, scope) {#addlistener-event-fct-scope}
 
-이벤트에 대한 리스너를 등록합니다. 또한 [세션 저장소 업데이트에 응답할 리스너 생성](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update)을 참조하십시오.
+이벤트에 대한 리스너를 등록합니다. 참조 - [세션 저장소 업데이트에 응답할 리스너 생성](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
 
-**매개 변수**
+**매개변수**
 
-* 이벤트:문자열. 수신할 이벤트의 이름입니다.
-* fct:함수 위에 있어야 합니다. 이벤트가 발생할 때 호출되는 함수입니다.
-* 범위:(선택 사항) 객체. 처리기 함수를 실행할 범위입니다. 처리기 함수의 &quot;this&quot; 컨텍스트입니다.
+* 이벤트: 문자열. 수신할 이벤트의 이름입니다.
+* fct: 함수 위에 있어야 합니다. 이벤트가 발생할 때 호출되는 함수입니다.
+* 범위: (선택 사항) 객체. 처리기 함수를 실행할 범위입니다. 처리기 함수의 &quot;this&quot; 컨텍스트입니다.
 
 **반환**
 
@@ -321,10 +321,10 @@ CQ_Analytics.JSONStore 개체.
 
 이벤트에 대해 지정된 이벤트 처리기를 제거합니다.
 
-**매개 변수**
+**매개변수**
 
-* 이벤트:문자열. 이벤트의 이름입니다.
-* fct:함수 위에 있어야 합니다. 이벤트 처리기입니다.
+* 이벤트: 문자열. 이벤트의 이름입니다.
+* fct: 함수 위에 있어야 합니다. 이벤트 처리기입니다.
 
 **반환**
 
@@ -344,13 +344,13 @@ CQ_Analytics.PersistentJSONStore를 확장합니다.
 
 CQ_Analytics.PersistentJSONPStore 개체를 만듭니다.
 
-**매개 변수**
+**매개변수**
 
-* storeName:문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다. storeName을 제공하지 않으면 이 메서드는 null을 반환합니다.
-* serviceURL:문자열. JSONP 서비스의 URL입니다
-* dynamicData:(선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
-* deferLoading:(선택 사항) 부울. true 값을 지정하면 개체를 만들 때 JSONP 서비스가 호출되지 않습니다. false 값을 지정하면 JSONP 서비스가 호출됩니다.
-* loadingCallback:(선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
+* storeName: 문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다. storeName을 제공하지 않으면 이 메서드는 null을 반환합니다.
+* serviceURL: 문자열. JSONP 서비스의 URL입니다
+* dynamicData: (선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
+* deferLoading: (선택 사항) 부울. true 값을 지정하면 개체를 만들 때 JSONP 서비스가 호출되지 않습니다. false 값을 지정하면 JSONP 서비스가 호출됩니다.
+* loadingCallback: (선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
 
 **반환**
 
@@ -360,7 +360,7 @@ CQ_Analytics.PersistentJSONPStore 개체를 만듭니다.
 
 이 개체가 JSON 데이터를 검색하는 데 사용하는 JSONP 서비스의 URL을 검색합니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -372,11 +372,11 @@ CQ_Analytics.PersistentJSONPStore 개체를 만듭니다.
 
 JSONP 서비스를 호출합니다. JSONP URL은 지정된 콜백 함수 이름이 있는 서비스 URL입니다.
 
-**매개 변수**
+**매개변수**
 
-* serviceURL:(선택 사항) 문자열입니다. 호출할 JSONP 서비스입니다. null 값을 지정하면 이미 구성된 서비스 URL이 사용됩니다. null이 아닌 값은 이 개체에 사용할 JSONP 서비스를 설정합니다. (setServiceURL을 참조하십시오.)
-* dynamicData:(선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
-* 콜백:(선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
+* serviceURL: (선택 사항) 문자열입니다. 호출할 JSONP 서비스입니다. null 값을 지정하면 이미 구성된 서비스 URL이 사용됩니다. null이 아닌 값은 이 개체에 사용할 JSONP 서비스를 설정합니다. (setServiceURL을 참조하십시오.)
+* dynamicData: (선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
+* 콜백: (선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
 
 **반환**
 
@@ -386,12 +386,12 @@ JSONP 서비스를 호출합니다. JSONP URL은 지정된 콜백 함수 이름�
 
 CQ_Analytics.PersistentJSONPStore 개체를 만들고 Client Context에 스토어를 등록합니다.
 
-**매개 변수**
+**매개변수**
 
-* storeName:문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다. storeName을 제공하지 않으면 이 메서드는 null을 반환합니다.
-* serviceURL:(선택 사항) 문자열입니다. JSONP 서비스의 URL입니다.
-* dynamicData:(선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
-* 콜백:(선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
+* storeName: 문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다. storeName을 제공하지 않으면 이 메서드는 null을 반환합니다.
+* serviceURL: (선택 사항) 문자열입니다. JSONP 서비스의 URL입니다.
+* dynamicData: (선택 사항) 객체. 콜백 함수가 호출되기 전에 저장소의 초기화 데이터에 추가할 JSON 데이터입니다.
+* 콜백: (선택 사항) 문자열입니다. JSONP 서비스가 반환하는 JSONP 개체 처리를 위해 호출할 함수의 이름입니다. 콜백 함수는 CQ_Analytics.JSONPStore 객체인 단일 매개 변수를 정의해야 합니다.
 
 **반환**
 
@@ -401,9 +401,9 @@ CQ_Analytics.PersistentJSONPStore 개체를 만들고 Client Context에 스토�
 
 JSON 데이터 검색에 사용할 JSONP 서비스의 URL을 설정합니다.
 
-**매개 변수**
+**매개변수**
 
-* serviceURL:문자열. JSON 데이터를 제공하는 JSONP 서비스의 URL입니다
+* serviceURL: 문자열. JSON 데이터를 제공하는 JSONP 서비스의 URL입니다
 
 **반환**
 
@@ -413,17 +413,17 @@ JSON 데이터 검색에 사용할 JSONP 서비스의 URL을 설정합니다.
 
 JSON 개체의 지속된 컨테이너입니다.
 
-`CQ_Analytics.PersistedSessionStore`을(를) 확장합니다.
+확장 `CQ_Analytics.PersistedSessionStore`.
 
 ### 속성 {#properties-2}
 
 #### STORKEY {#storekey-1}
 
-저장소를 식별하는 키입니다. 이 값을 검색하려면 `getInstance` 메서드를 사용하십시오.
+저장소를 식별하는 키입니다. 를 사용하십시오 `getInstance` 이 값을 검색하는 메서드입니다.
 
 #### STORNAME {#storename-1}
 
-저장소의 이름입니다. 이 값을 검색하려면 `getInstance` 메서드를 사용하십시오.
+저장소의 이름입니다. 를 사용하십시오 `getInstance` 이 값을 검색하는 메서드입니다.
 
 ### 메서드 {#methods-6}
 
@@ -433,10 +433,10 @@ JSON 개체의 지속된 컨테이너입니다.
 
 지정된 이름으로 CQ_Analytics.PersistentJSONtore 개체를 만들고 지정된 JSON 데이터로 초기화합니다(initJSON 메서드 호출).
 
-**매개 변수**
+**매개변수**
 
-* storeName:문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다.
-* jsonData:개체. JSON 데이터를 포함하는 객체입니다.
+* storeName: 문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다.
+* jsonData: 개체. JSON 데이터를 포함하는 객체입니다.
 
 **반환**
 
@@ -446,7 +446,7 @@ CQ_Analytics.PersistentJSONStore 개체.
 
 세션 저장소의 데이터를 JSON 형식으로 검색합니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -476,10 +476,10 @@ A: "valueA"
 B/B1: "valueBB1"
 ```
 
-**매개 변수**
+**매개변수**
 
-* jsonData:저장할 데이터를 포함하는 JSON 개체입니다.
-* doNotClear:true 값을 지정하면 기존 초기화 속성이 유지되고 JSON 객체에서 파생된 속성이 추가됩니다. false 값은 JSON 개체에서 파생된 초기화 속성을 추가하기 전에 기존 초기화 속성을 제거합니다.
+* jsonData: 저장할 데이터를 포함하는 JSON 개체입니다.
+* doNotClear: true 값을 지정하면 기존 초기화 속성이 유지되고 JSON 객체에서 파생된 속성이 추가됩니다. false 값은 JSON 개체에서 파생된 초기화 속성을 추가하기 전에 기존 초기화 속성을 제거합니다.
 
 **반환**
 
@@ -489,10 +489,10 @@ B/B1: "valueBB1"
 
 지정된 이름으로 CQ_Analytics.PersistentJSONtore 개체를 만들고 지정된 JSON 데이터로 초기화합니다(initJSON 메서드 호출). 새 객체는 Client Context Manager에 자동으로 등록됩니다.
 
-**매개 변수**
+**매개변수**
 
-* storeName:문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다.
-* jsonData:개체. JSON 데이터를 포함하는 객체입니다.
+* storeName: 문자열. STORENAME 속성으로 사용할 이름입니다. STOREKEY 속성 값은 모든 대문자가 있는 storeName으로 설정됩니다.
+* jsonData: 개체. JSON 데이터를 포함하는 객체입니다.
 
 **반환**
 
@@ -510,47 +510,47 @@ CQ_Analytics.SessionStore를 확장합니다.
 
 #### STORKEY {#storekey-2}
 
-기본값은 `key`입니다.
+기본값은 입니다. `key`.
 
 ### 메서드 {#methods-7}
 
 상속된 메서드는 CQ_Analytics.SessionStore 를 참조하십시오.
 
-상속된 메서드 `clear`, `setProperty`, `setProperties`, `removeProperty`을 사용하여 저장소 데이터를 변경하면 변경된 속성이 notPersistent로 플래그가 지정되지 않는 한 변경 내용이 자동으로 유지됩니다.
+상속된 메서드가 `clear`, `setProperty`, `setProperties`, `removeProperty` 저장소 데이터를 변경하는 데 사용됩니다. 변경된 속성이 notPersistent로 플래그가 지정되지 않는 한 변경 내용은 자동으로 유지됩니다.
 
 #### getStoreKey() {#getstorekey}
 
-`STOREKEY` 속성을 검색합니다.
+를 검색합니다. `STOREKEY` 속성을 사용합니다.
 
-**매개 변수**
+**매개변수**
 
 없음
 
 **반환**
 
-`STOREKEY` 속성 값입니다.
+의 값 `STOREKEY` 속성을 사용합니다.
 
 #### isPersistent(name) {#ispersisted-name}
 
 데이터 속성이 지속되는지 여부를 결정합니다.
 
-**매개 변수**
+**매개변수**
 
-* 이름:문자열. 속성의 이름입니다.
+* 이름: 문자열. 속성의 이름입니다.
 
 **반환**
 
-속성이 지속된 경우 `true` 부울 값을 반환하고, 값이 지속된 속성이 아닌 경우 `false` 값을 반환합니다.
+부울 값 `true` 속성이 유지되면 값 `false` 값이 지속된 속성이 아닌 경우.
 
 #### persist() {#persist}
 
-세션 저장소를 유지합니다. 기본 지속성 모드는 `ClientSidePersistence` 을 이름( `window.localStorage.set("ClientSidePersistance", store);`)으로 사용하는 브라우저 `localStorage`을 사용합니다
+세션 저장소를 유지합니다. 기본 지속성 모드는 브라우저를 사용합니다 `localStorage` 사용 `ClientSidePersistence` 로서의( `window.localStorage.set("ClientSidePersistance", store);`)
 
 localStorage를 사용할 수 없거나 쓸 수 없는 경우 저장소가 창의 속성으로 유지됩니다.
 
-완료 시 `persist` 이벤트를 실행합니다.
+를 실행합니다. `persist` 완료 시 이벤트.
 
-**매개 변수**
+**매개변수**
 
 없음
 
@@ -560,11 +560,11 @@ localStorage를 사용할 수 없거나 쓸 수 없는 경우 저장소가 창�
 
 #### reset(deferEvent) {#reset-deferevent}
 
-저장소에서 모든 데이터 속성을 제거하고 저장소를 유지합니다. 완료 시 `udpate` 이벤트를 실행하지 않는 경우도 있습니다.
+저장소에서 모든 데이터 속성을 제거하고 저장소를 유지합니다. 선택적으로 를 실행하지 않습니다 `udpate` 완료 시 이벤트.
 
-**매개 변수**
+**매개변수**
 
-* deferEvent:true 값을 지정하면 `update` 이벤트가 실행되지 않습니다. `false` 값으로 인해 업데이트 이벤트가 실행됩니다.
+* deferEvent: true 값을 지정하면 `update` 이벤트가 실행되지 않았습니다. 값 `false` 업데이트 이벤트가 실행되도록 합니다.
 
 **반환**
 
@@ -574,9 +574,9 @@ localStorage를 사용할 수 없거나 쓸 수 없는 경우 저장소가 창�
 
 데이터 속성을 지속되지 않은 것으로 플래그를 지정합니다.
 
-**매개 변수**
+**매개변수**
 
-* 이름:문자열. 지속되지 않는 속성의 이름입니다.
+* 이름: 문자열. 지속되지 않는 속성의 이름입니다.
 
 **반환**
 
@@ -604,10 +604,10 @@ CQ_Analytics.Observable을 확장합니다.
 
 loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값으로 채웁니다.
 
-**매개 변수**
+**매개변수**
 
-* 이름:문자열. 추가할 속성의 이름입니다.
-* 값:문자열. 추가할 속성의 값입니다.
+* 이름: 문자열. 추가할 속성의 이름입니다.
+* 값: 문자열. 추가할 속성의 값입니다.
 
 **반환**
 
@@ -617,7 +617,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 저장소에서 모든 데이터 속성을 제거합니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -627,11 +627,11 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 #### getData(excluded) {#getdata-excluded}
 
-저장소 데이터를 반환합니다. 선택적으로, 데이터에서 이름 속성을 제외합니다. 저장소의 데이터 속성이 없는 경우 `init` 메서드를 호출합니다.
+저장소 데이터를 반환합니다. 선택적으로, 데이터에서 이름 속성을 제외합니다. 호출 `init` 저장소의 데이터 속성이 없는 경우 메서드를 사용합니다.
 
-**매개 변수**
+**매개변수**
 
-제외:(선택 사항) 반환된 데이터에서 제외할 속성 이름의 배열입니다.
+제외: (선택 사항) 반환된 데이터에서 제외할 속성 이름의 배열입니다.
 
 **반환**
 
@@ -641,19 +641,19 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 데이터 속성의 값을 검색합니다.
 
-**매개 변수**
+**매개변수**
 
-* 이름:문자열. 검색할 데이터 속성의 이름입니다.
+* 이름: 문자열. 검색할 데이터 속성의 이름입니다.
 
 **반환**
 
-데이터 속성의 값입니다. 세션 저장소에 지정된 이름의 속성이 없는 경우 `null`을 반환합니다.
+데이터 속성의 값입니다. 반환 `null` 세션 저장소에 지정된 이름의 속성이 없는 경우
 
 #### getName() {#getname}
 
 세션 저장소의 이름을 반환합니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -663,12 +663,12 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 #### getProperty(name, raw) {#getproperty-name-raw}
 
-속성 값을 반환합니다. 값은 원시 속성 또는 XSS 필터링된 값으로 반환됩니다. 저장소의 데이터 속성이 없는 경우 `init` 메서드를 호출합니다.
+속성 값을 반환합니다. 값은 원시 속성 또는 XSS 필터링된 값으로 반환됩니다. 호출 `init` 저장소의 데이터 속성이 없는 경우 메서드를 사용합니다.
 
-**매개 변수**
+**매개변수**
 
-* 이름:문자열. 검색할 데이터 속성의 이름입니다.
-* 원시:부울. true 값을 지정하면 원시 속성 값이 반환됩니다. false 값을 지정하면 반환된 값이 XSS 필터링됩니다.
+* 이름: 문자열. 검색할 데이터 속성의 이름입니다.
+* 원시: 부울. true 값을 지정하면 원시 속성 값이 반환됩니다. false 값을 지정하면 반환된 값이 XSS 필터링됩니다.
 
 **반환**
 
@@ -676,11 +676,11 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 #### getPropertyNames(excluded) {#getpropertynames-excluded}
 
-세션 저장소에 포함된 속성의 이름을 반환합니다. 저장소의 데이터 속성이 없는 경우 `init` 메서드를 호출합니다.
+세션 저장소에 포함된 속성의 이름을 반환합니다. 호출 `init` 저장소의 데이터 속성이 없는 경우 메서드를 사용합니다.
 
-**매개 변수**
+**매개변수**
 
-제외:(선택 사항) 결과에서 생략할 속성 이름의 배열입니다.
+제외: (선택 사항) 결과에서 생략할 속성 이름의 배열입니다.
 
 **반환**
 
@@ -690,7 +690,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 현재 개체에 연결된 세션 저장소를 반환합니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -700,9 +700,9 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 #### init() {#init-1}
 
-저장소를 초기화된 것으로 표시하고 `initialize` 이벤트를 실행합니다.
+스토어를 초기화된 것으로 표시하고 `initialize` 이벤트.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -714,22 +714,22 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 세션 저장소가 초기화되었는지 여부를 나타냅니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
 **반환**
 
-저장소가 초기화되면 `true` 값을 반환하고 저장소가 초기화되지 않으면 `false` 값을 반환합니다.
+값 `true` 저장소가 초기화된 경우 값 `false` 저장소가 초기화되지 않은 경우
 
 #### loadInitProperties(obj, setValues) {#loadinitproperties-obj-setvalues}
 
 지정된 개체의 속성을 세션 저장소의 초기화 데이터에 추가합니다. 선택적으로 개체 데이터는 저장소 데이터에도 추가됩니다.
 
-**매개 변수**
+**매개변수**
 
-* 개체:열거할 수 있는 속성을 포함하는 객체입니다.
-* setValues:true일 경우 저장소 데이터에 이미 동일한 이름의 속성이 포함되어 있지 않은 경우 obj 속성이 세션 저장소 데이터에 추가됩니다. false이면 세션 저장소 데이터에 데이터가 추가되지 않습니다.
+* 개체: 열거할 수 있는 속성을 포함하는 객체입니다.
+* setValues: true일 경우 저장소 데이터에 이미 동일한 이름의 속성이 포함되어 있지 않은 경우 obj 속성이 세션 저장소 데이터에 추가됩니다. false이면 세션 저장소 데이터에 데이터가 추가되지 않습니다.
 
 **반환**
 
@@ -737,11 +737,11 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 #### removeProperty(name) {#removeproperty-name}
 
-세션 저장소에서 속성을 제거합니다. 완료 시 `update` 이벤트를 실행합니다. 저장소의 데이터 속성이 없는 경우 `init` 메서드를 호출합니다.
+세션 저장소에서 속성을 제거합니다. 를 실행합니다. `update` 완료 시 이벤트. 호출 `init` 저장소의 데이터 속성이 없는 경우 메서드를 사용합니다.
 
-**매개 변수**
+**매개변수**
 
-* 이름:문자열. 제거할 속성의 이름입니다.
+* 이름: 문자열. 제거할 속성의 이름입니다.
 
 **반환**
 
@@ -749,9 +749,9 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 #### 재설정() {#reset}
 
-데이터 저장소의 초기 값을 복원합니다. 기본 구현은 모든 데이터를 제거합니다. 완료 시 `update` 이벤트를 실행합니다.
+데이터 저장소의 초기 값을 복원합니다. 기본 구현은 모든 데이터를 제거합니다. 를 실행합니다. `update` 완료 시 이벤트.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -761,11 +761,11 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 #### setProperties(properties) {#setproperties-properties}
 
-여러 속성의 값을 설정합니다. 완료 시 `update` 이벤트를 실행합니다. 저장소의 데이터 속성이 없는 경우 `init` 메서드를 호출합니다.
+여러 속성의 값을 설정합니다. 를 실행합니다. `update` 완료 시 이벤트. 호출 `init` 저장소의 데이터 속성이 없는 경우 메서드를 사용합니다.
 
-**매개 변수**
+**매개변수**
 
-* 속성:개체. 열거할 수 있는 속성을 포함하는 객체입니다. 각 속성 이름 및 값이 저장소에 추가됩니다.
+* 속성: 개체. 열거할 수 있는 속성을 포함하는 객체입니다. 각 속성 이름 및 값이 저장소에 추가됩니다.
 
 **반환**
 
@@ -773,12 +773,12 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 #### setProperty(name, value) {#setproperty-name-value}
 
-속성 값을 설정합니다. 완료 시 `update` 이벤트를 실행합니다. 저장소의 데이터 속성이 없는 경우 `init` 메서드를 호출합니다.
+속성 값을 설정합니다. 를 실행합니다. `update` 완료 시 이벤트. 호출 `init` 저장소의 데이터 속성이 없는 경우 메서드를 사용합니다.
 
-**매개 변수**
+**매개변수**
 
-* 이름:문자열. 속성의 이름입니다.
-* 값:문자열. 속성 값.
+* 이름: 문자열. 속성의 이름입니다.
+* 값: 문자열. 속성 값.
 
 **반환**
 

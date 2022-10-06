@@ -1,8 +1,8 @@
 ---
 title: SPA 및 Adobe Experience Platform Launch 통합
-seo-title: SPA 및 Adobe Experience Platform Launch 통합
+seo-title: SPA and Adobe Experience Platform Launch Integration
 description: Adobe Experience Platform Launch은 SPA 내에서 Analytics, Target 및 Audience Manager을 구현하는 권장 방법입니다.
-seo-description: Adobe Experience Platform Launch은 SPA 내에서 Analytics, Target 및 Audience Manager을 구현하는 권장 방법입니다.
+seo-description: Adobe Experience Platform Launch is the recommended way to implement Analytics, Target, and Audience Manager within SPAs.
 uuid: 5e13ad32-bb84-4a60-ba72-6ecc9ed36f3b
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 10%
+source-wordcount: '191'
+ht-degree: 7%
 
 ---
 
@@ -26,9 +26,9 @@ Adobe Experience Platform Launch은 SPA(단일 페이지 애플리케이션) 내
 >
 >SPA 편집기는 SPA 프레임워크 기반 클라이언트측 렌더링(예: React 또는 Angular)이 필요한 프로젝트에 권장되는 솔루션입니다.
 
-## 자습서 {#tutorial}
+## 튜토리얼 {#tutorial}
 
-SPA을 Adobe Experience Platform Launch과 통합하는 방법을 알려면 Launch 설정을 안내하는 [이 기술 자료 문서 및 자습서](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)를 참조하여 Angular 또는 React로 빌드된 Experience Cloud을 구현하십시오.
+SPA을 Adobe Experience Platform Launch과 통합하는 방법을 알려면 다음을 참조하십시오 [이 기술 자료 문서 및 자습서](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html): Launch 설정을 안내하고 Angular 또는 React로 빌드된 Experience Cloud을 구현합니다.
 
 >[!NOTE]
 >

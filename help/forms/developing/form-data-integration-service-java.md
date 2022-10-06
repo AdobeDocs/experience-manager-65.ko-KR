@@ -1,8 +1,8 @@
 ---
 title: 양식 데이터 통합 서비스 JavaAPI 빠른 시작(SOAP)
-seo-title: 양식 데이터 통합 서비스 JavaAPI 빠른 시작(SOAP)
-description: 양식 데이터 통합 서비스를 사용하여 데이터를 PDF 양식으로 가져오고 Java API를 사용하여 PDF 양식의 데이터를 내보낼 수 있습니다.
-seo-description: 양식 데이터 통합 서비스를 사용하여 데이터를 PDF 양식으로 가져오고 Java API를 사용하여 PDF 양식의 데이터를 내보낼 수 있습니다.
+seo-title: Form Data Integration Service JavaAPI Quick Start(SOAP)
+description: 양식 데이터 통합 서비스를 사용하여 데이터를 PDF 양식으로 가져오고 Java API를 사용하여 PDF 양식에서 데이터를 내보냅니다.
+seo-description: Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API.
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: a2560c87-ae95-4d65-869a-8cba177a1cd6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -22,19 +22,19 @@ ht-degree: 0%
 
 양식 데이터 통합 서비스에 다음 빠른 시작을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 양식 데이터 가져오기](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 가져오기](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 양식 데이터 내보내기](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 내보내기](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드는 SOAP로 설정해야 합니다.
 
 >[!NOTE]
 >
->AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)을 참조하십시오.
+>AEM 양식을 사용한 프로그래밍에 있는 빠른 시작은 JBoss Application Server 및 Microsoft Windows 운영 체제에 배포되는 Forms 서버를 기반으로 합니다. 그러나 UNIX와 같은 다른 운영 체제를 사용하는 경우에는 Windows 관련 경로를 해당 운영 체제에서 지원하는 경로로 바꿉니다. 마찬가지로, 다른 J2EE 응용 프로그램 서버를 사용하는 경우 올바른 연결 속성을 지정해야 합니다. 자세한 내용은 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-importing-form-data-using-the-java-api}를 사용하여 양식 데이터 가져오기
+## 빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 가져오기 {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-다음 Java 코드 예제에서는 데이터를 PDF 양식으로 가져옵니다. 데이터는 *Loan_data.xml*&#x200B;이라는 XML 파일에 있고 PDF 양식은 *ResultLoanForm.pdf*&#x200B;라는 PDF 파일로 저장됩니다. ([양식 데이터 가져오기](/help/forms/developing/importing-exporting-data.md#importing-form-data)를 참조하십시오.)
+다음 Java 코드 예제에서는 데이터를 PDF 양식으로 가져옵니다. 데이터는 이름이 인 XML 파일에 있습니다 *Loan_data.xml* 그리고 PDF 양식은 라는 PDF 파일로 저장됩니다. *ResultLoanForm.pdf*. (자세한 내용은 [양식 데이터 가져오기](/help/forms/developing/importing-exporting-data.md#importing-form-data))
 
 ```java
  /*
@@ -134,9 +134,9 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
  
 ```
 
-## 빠른 시작(SOAP 모드):Java API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}를 사용하여 양식 데이터 내보내기
+## 빠른 시작(SOAP 모드): Java API를 사용하여 양식 데이터 내보내기 {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-다음 Java 코드 예제에서는 PDF 양식의 데이터를 내보냅니다. 양식 데이터는 *Loan_data.xml*&#x200B;이라는 XML 파일로 저장됩니다. ([양식 데이터 내보내기](/help/forms/developing/importing-exporting-data.md#exporting-form-data) 참조)
+다음 Java 코드 예제에서는 PDF 양식에서 데이터를 내보냅니다. 양식 데이터는 이름이 인 XML 파일로 저장됩니다. *Loan_data.xml*. (자세한 내용은 [양식 데이터 내보내기](/help/forms/developing/importing-exporting-data.md#exporting-form-data))
 
 ```java
  /*

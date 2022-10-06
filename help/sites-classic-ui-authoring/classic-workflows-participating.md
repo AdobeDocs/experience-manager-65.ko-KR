@@ -1,8 +1,8 @@
 ---
-title: 워크플로우에 참여
-seo-title: 워크플로우에 참여
-description: 워크플로우는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. 워크플로우는 활동을 수행할 사용자 또는 그룹을 선택하고 해당 개인 또는 그룹에 작업 항목을 지정합니다.
-seo-description: 워크플로우는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. 워크플로우는 활동을 수행할 사용자 또는 그룹을 선택하고 해당 개인 또는 그룹에 작업 항목을 지정합니다.
+title: 워크플로에 참여
+seo-title: Participating in Workflows
+description: 워크플로는 일반적으로 페이지나 에셋에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. 워크플로는 활동을 수행할 사용자 또는 그룹을 선택하고 해당 개인 또는 그룹에 작업 항목을 지정합니다.
+seo-description: Workflows typically include steps that require a person to perform an activity on a page or asset. The workflow selects a user or group to perform the activity and assigns a work item to that person or group.
 uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,14 +12,14 @@ discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '543'
 ht-degree: 99%
 
 ---
 
-# 워크플로우에 참여{#participating-in-workflows}
+# 워크플로에 참여{#participating-in-workflows}
 
-워크플로우는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. 워크플로우는 활동을 수행할 사용자 또는 그룹을 선택하고 해당 개인 또는 그룹에 작업 항목을 지정합니다.
+워크플로는 일반적으로 페이지나 에셋에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. 워크플로는 활동을 수행할 사용자 또는 그룹을 선택하고 해당 개인 또는 그룹에 작업 항목을 지정합니다.
 
 ## 작업 항목 처리 {#processing-your-work-items}
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 
 * **완료**
 
-   워크플로우가 다음 단계로 진행될 수 있도록 하는 항목을 완료할 수 있습니다.
+   워크플로가 다음 단계로 진행될 수 있도록 하는 항목을 완료할 수 있습니다.
 
 * **위임**
 
@@ -36,18 +36,18 @@ ht-degree: 99%
    위임에 사용할 수 있는 사용자는 작업 항목이 지정된 사용자에게 따라 다릅니다.
 
    * 작업 항목이 그룹에 지정된 경우 그룹 구성원을 사용할 수 있습니다.
-   * 작업 항목이 그룹에 지정된 후 사용자에게 위임된 경우 그룹 구성원과 그룹을 사용할 수 있습니다.
+   * 작업 항목이 그룹에 할당된 후 사용자에게 위임된 경우 그룹 멤버와 그룹을 사용할 수 있습니다.
    * 작업 항목이 단일 사용자에게 지정된 경우에는 작업 항목을 위임할 수 없습니다.
 
 * **뒤로 이동**
 
-   단계 또는 일련의 단계를 반복해야 하는 경우 다시 돌아갈 수 있습니다. 따라서 워크플로우에서 이전에 발생한 단계를 선택하여 다시 처리할 수 있습니다. 워크플로우가 사용자가 지정한 단계로 돌아가서 그 단계에서부터 진행됩니다.
+   단계 또는 일련의 단계를 반복해야 하는 경우 다시 돌아갈 수 있습니다. 따라서 워크플로에서 이전에 발생한 단계를 선택하여 다시 처리할 수 있습니다. 워크플로가 사용자가 지정한 단계로 돌아가서 그 단계에서부터 진행됩니다.
 
 ## 워크플로우 참여 {#participating-in-a-workflow}
 
 ### 지정된 워크플로우 작업의 알림 {#notifications-of-assigned-workflow-actions}
 
-작업 항목(예: **컨텐츠 승인**)을 지정받으면 다양한 경고 및/또는 알림이 나타납니다.
+작업 항목이 할당되면(예: **콘텐츠 승인**) 다양한 경고 및/또는 알림이 표시됩니다.
 
 * 웹 사이트 콘솔의 **상태** 열은 페이지가 언제 워크플로우에 있는지를 나타냅니다.
 
@@ -70,7 +70,7 @@ ht-degree: 99%
 
 1. **확인**&#x200B;을 클릭하여 작업을 확인합니다.
 
-### 참가자 단계 위임  {#delegating-a-participant-step}
+### 참가자 단계 위임 {#delegating-a-participant-step}
 
 다음 절차를 사용하여 작업 항목을 위임하십시오.
 
@@ -81,7 +81,7 @@ ht-degree: 99%
 
 1. **확인**&#x200B;을 클릭하여 작업을 확인합니다.
 
-### 참가자 단계에서 뒤로 이동 수행  {#performing-step-back-on-a-participant-step}
+### 참가자 단계에서 뒤로 이동 수행 {#performing-step-back-on-a-participant-step}
 
 다음 절차를 사용하여 뒤 단계로 이동하십시오.
 

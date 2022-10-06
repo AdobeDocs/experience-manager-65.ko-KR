@@ -1,7 +1,7 @@
 ---
 title: 적응형 양식 조각 참조
 seo-title: Reference adaptive form fragments
-description: 'AEM Forms은 양식을 빠르게 만들기 위해 자산으로 사용할 수 있는 적응형 양식 조각을 제공합니다. '
+description: AEM Forms은 양식을 빠르게 만들기 위해 자산으로 사용할 수 있는 적응형 양식 조각을 제공합니다.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,9 +18,9 @@ ht-degree: 2%
 
 # 적응형 양식 조각 참조{#reference-adaptive-form-fragments}
 
-[적응형 양식 ](../../forms/using/adaptive-form-fragments.md) 조각은 필드 그룹이나 양식을 만들 때 사용할 수 있는 필드 그룹이 포함된 패널을 나타냅니다. 양식을 쉽고 빠르게 만들 수 있습니다. 사이드바의 자산 브라우저를 사용하여 적응형 양식 조각을 양식으로 드래그 드롭할 수 있으며 양식 편집기에서 편집할 수 있습니다.
+[적응형 양식 조각](../../forms/using/adaptive-form-fragments.md) 는 필드 그룹이나 양식을 만들 때 사용할 수 있는 필드 그룹이 들어 있는 패널입니다. 양식을 쉽고 빠르게 만들 수 있습니다. 사이드바의 자산 브라우저를 사용하여 적응형 양식 조각을 양식으로 드래그 드롭할 수 있으며 양식 편집기에서 편집할 수 있습니다.
 
-적응형 양식 작성자의 경우 참조 조각이 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)에 제공됩니다. 여기에는 다음 조각이 포함됩니다.
+적응형 양식 작성자의 경우 참조 조각은 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 여기에는 다음 조각이 포함됩니다.
 
 * 주소
 * 연락처 정보
@@ -33,7 +33,7 @@ ht-degree: 2%
 * 약관
 * 스크리블 사용 약관
 
-패키지를 설치하면 참조 조각이 포함된 참조 조각 폴더가 Forms 및 문서 아래에 생성됩니다. 패키지 설치에 대해서는 [패키지 작업 방법](/help/sites-administering/package-manager.md)을 참조하십시오.
+패키지를 설치하면 참조 조각이 포함된 참조 조각 폴더가 Forms 및 문서 아래에 생성됩니다. 패키지 설치에 대한 내용은 [패키지 작업 방법](/help/sites-administering/package-manager.md).
 
 ![나열된 모든 조각](assets/ootb-frags.png)
 

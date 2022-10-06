@@ -1,14 +1,15 @@
 ---
 title: AEM Headless Content Author 여정
 description: Adobe Experience Manager의 강력하고 유연한 헤드리스 기능 및 프로젝트용 컨텐츠를 작성하는 방법에 대한 소개입니다.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# AEM을 사용한 헤드리스용 작성 - 소개 {#author-headless-introduction}
+# AEM을 통한 Headless 작성 - 소개 {#author-headless-introduction}
 
 의 이 부분에서 [AEM Headless Content Author 여정](overview.md), AEM(Adobe Experience Manager)을 사용하여 헤드리스 컨텐츠 전달을 위한 컨텐츠 작성을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
 
@@ -19,11 +20,11 @@ ht-degree: 0%
 
 ## CMS(콘텐츠 관리 시스템) {#content-management-system}
 
-What is a Content Management System?
+컨텐츠 관리 시스템이란 무엇입니까?
 
-A Content Management System (CMS) is just what it says it is - a computer system used to manage content. That&#39;s a bit general, so to be more precise, it is (typically) used for managing content that you want to make available on your website(s).
+CMS(Content Management System)는 컨텐츠 관리에 사용되는 컴퓨터 시스템이라는 뜻입니다. 이는 일반적으로 웹 사이트에서 사용할 수 있도록 하려는 컨텐츠를 관리하는 데 사용됩니다. 더 자세하게는 일반적으로 웹 사이트에서 사용할 수 있는 컨텐츠를 관리하는 데 사용됩니다.
 
-## 헤드리스 CMS {#headless-cms}
+## Headless CMS {#headless-cms}
 
 헤드리스는 컨텐츠를 웹에 표시하는 방식에서 효과적으로 컨텐츠를 탐지하는 시스템을 설명하는 데 사용되는 용어입니다.
 
@@ -35,11 +36,11 @@ A Content Management System (CMS) is just what it says it is - a computer system
 
 >[!NOTE]
 >
->If you want to learn more about the technical details of Headless CMS you can read more at Learn About CMS Headless Development.
+>헤드리스 CMS의 기술적인 세부 사항에 대해 자세히 알아보려면 CMS 헤드리스 개발에 대한 학습 을 참조하십시오.
 
 ## Adobe Experience Manager {#aem-cms}
 
-So what is AEM?
+그러면 AEM은 무엇일까요?
 
 우선, AEM은 요구 사항을 충족하도록 사용자 지정할 수 있는 다양한 기능을 갖춘 컨텐츠 관리 시스템입니다.
 
@@ -56,11 +57,11 @@ So what is AEM?
 
 ## 컨텐츠 모델링 {#content-modeling}
 
-So content modeling (also known as data modeling) is another technical term - why should it interest you as an author?
+따라서 컨텐츠 모델링(데이터 모델링이라고도 함)은 또 다른 기술 용어입니다. 작성자로서 흥미를 느껴야 하는 이유는 무엇입니까?
 
-헤드리스 애플리케이션에서 사용자 컨텐츠에 액세스하고 이를 사용하여 작업을 수행하려면 컨텐츠가 사전 정의된 구조를 가져야 합니다. It would be possible to have your content as free-form, but it would make life *very* complicated for the applications.
+헤드리스 애플리케이션에서 사용자 컨텐츠에 액세스하고 이를 사용하여 작업을 수행하려면 컨텐츠가 사전 정의된 구조를 가져야 합니다. 여러분의 컨텐츠가 자유형처럼 될 수 있지만, 그것은 생명을 만들 것입니다 *매우* 응용 프로그램에 대해 복잡합니다.
 
-Basically the process of defining the structure for your content to adhere to involves designing a model - and this is called data modeling.
+기본적으로 컨텐츠를 준수하기 위한 구조를 정의하는 과정에는 모델을 디자인하는 작업이 포함되며 이를 데이터 모델링이라고 합니다.
 
 AEM의 경우 컨텐츠 설계자 역할(종종 다른 사람)은 데이터 모델링을 수행하여 다양한 **컨텐츠 조각 모델** - 을 사용하여 컨텐츠의 기반으로 사용할 수 있습니다. **컨텐츠 조각**.
 
@@ -68,15 +69,15 @@ AEM의 경우 컨텐츠 설계자 역할(종종 다른 사람)은 데이터 모�
 >
 >데이터 모델링에 대해 자세히 알려면 AEM Headless Content Architect 여정 아래에서 자세히 읽어볼 수 있습니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 개념과 용어를 학습했으므로 다음 단계는 다음과 같습니다 [컨텐츠 조각 작성에 대한 기본 사항을 알아봅니다](basics.md). 이렇게 하면 컨텐츠 조각을 작성하는 방법과 함께 AEM의 기본 처리가 도입됩니다.
 
 ## 추가 리소스 {#additional-resources}
 
 * AEM Headless Developer 여정
-   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
+   * [CMS 헤드리스 개발에 대해 알아보기](/help/journey-headless/developer/learn-about.md)
 
-* [AEM Headless Content Architect 여정](/help/journey-headless/architect/overview.md)
+* [AEM 헤드리스 콘텐츠 설계 여정](/help/journey-headless/architect/overview.md)
 
 * [AEM Headless 컨텐츠 번역 여정](/help/journey-headless/translation/overview.md)

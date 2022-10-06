@@ -1,8 +1,8 @@
 ---
 title: 번역할 문자열 추출
-seo-title: 번역할 문자열 추출
+seo-title: Extracting Strings for Translating
 description: xgettext-maven-plugin을 사용하여 번역할 필요가 있는 소스 코드에서 문자열을 추출합니다
-seo-description: xgettext-maven-plugin을 사용하여 번역할 필요가 있는 소스 코드에서 문자열을 추출합니다
+seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
 uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 3%
+source-wordcount: '476'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ xgettext-maven-plugin을 사용하여 번역할 필요가 있는 소스 코드�
 * Javascript 소스 파일
 * SVN 리소스의 XML 표현(JCR 노드)
 
-## 문자열 추출 구성 중 {#configuring-string-extraction}
+## 문자열 추출 구성 {#configuring-string-extraction}
 
 xgettext-maven-plugin 도구가 프로젝트에 대한 문자열을 추출하는 방법을 구성합니다.
 
@@ -67,10 +67,10 @@ i18n.any 파일의 /filter 섹션은 xgettext-maven-plugin 도구가 구문 분�
 | 접두어 | 효과 |
 |---|---|
 | / | JCR 경로를 나타냅니다. 따라서 이 접두사는 jcr_root 디렉토리 아래의 파일과 일치합니다. |
-| amp;ast; | 파일 시스템의 일반 파일을 나타냅니다. |
+| &amp;ast; | 파일 시스템의 일반 파일을 나타냅니다. |
 | 없음 | 접두사가 없거나 폴더나 파일 이름으로 시작하는 패턴은 파일 시스템의 일반 파일을 나타냅니다. |
 
-패턴 내에서 사용할 경우, / 문자는 하위 디렉터리 및 &amp;ast;를 나타냅니다.문자가 모두 일치합니다. 다음 표에는 몇 가지 예제 규칙이 나와 있습니다.
+패턴 내에서 사용하는 경우 / 문자는 하위 디렉토리와 &amp;ast;를 나타냅니다. 문자가 모두 일치합니다. 다음 표에는 몇 가지 예제 규칙이 나와 있습니다.
 
 <table>
  <tbody>
@@ -99,7 +99,7 @@ i18n.any 파일의 /filter 섹션은 xgettext-maven-plugin 도구가 구문 분�
  </tbody>
 </table>
 
-### 문자열 {#extracting-the-strings} 추출
+### 문자열 추출  {#extracting-the-strings}
 
 POM 없음:
 
@@ -107,7 +107,7 @@ POM 없음:
 mvn -N com.adobe.granite.maven:xgettext-maven-plugin:1.2.2:extract  -Dxgettext.verbose=true -Dxgettext.target=out -Dxgettext.rules=i18n.any -Dxgettext.root=.
 ```
 
-POM을 사용하는 경우:POM에 추가:
+POM을 사용하는 경우: POM에 추가:
 
 ```xml
 <build>
@@ -135,10 +135,10 @@ mvn xgettext:extract
 
 ### 출력 파일 {#output-files}
 
-* `raw.xliff`:추출된 문자열
-* `warn.log`:경고(있는 경우)  `CQ.I18n.getMessage()` API가 잘못 사용되는 경우 항상 수정 후 다시 실행해야 합니다.
+* `raw.xliff`: 추출된 문자열
+* `warn.log`: 경고(있을 경우) `CQ.I18n.getMessage()` API가 잘못 사용됩니다. 항상 수정 후 다시 실행해야 합니다.
 
-* `parserwarn.log`:파서 경고(있는 경우)(예: js 파서 문제)
-* `potentials.xliff`:&quot;잠재적&quot; 후보로서 추출되지 않았지만 번역이 필요한 사람이 읽을 수 있는 문자열일 수 있습니다(무시해도 되고 많은 양의 긍정 오류가 발생함).
-* `strings.xliff`:병합된 xliff 파일, ALF로 가져오기
-* `backrefs.txt`:지정된 문자열에 대한 소스 코드 위치를 빠르게 조회할 수 있도록 허용합니다
+* `parserwarn.log`: 파서 경고(있는 경우)(예: js 파서 문제)
+* `potentials.xliff`: &quot;잠재적&quot; 후보로서 추출되지 않았지만 번역이 필요한 사람이 읽을 수 있는 문자열일 수 있습니다(무시해도 되고 많은 양의 긍정 오류가 발생함).
+* `strings.xliff`: 병합된 xliff 파일, ALF로 가져오기
+* `backrefs.txt`: 지정된 문자열에 대한 소스 코드 위치를 빠르게 조회할 수 있도록 허용합니다

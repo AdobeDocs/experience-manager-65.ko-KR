@@ -1,6 +1,6 @@
 ---
 title: 용 일반 릴리스 노트 [!DNL Adobe Experience Manager] 6.5
-description: '"[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."'
+description: "[!DNL Adobe Experience Manager] 6.5 노트는 릴리스 정보, 새로운 기능, 설치 방법 및 상세 변경 목록을 설명합니다."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
@@ -563,7 +563,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * **폴더 메타데이터 스키마**: 선택 버튼을 추가한 후에 ID 및 값 필드가 예상대로 렌더링되지 않고 삭제 기능이 작동하지 않습니다. (CQ-4261144)
 * 자산의 이름을 변경할 때 자산 이름에서 공백을 사용할 수 없습니다. (CQ-4266403)
 
-### 양식 {#forms}
+### Forms {#forms}
 
 * Linux® 운영 체제에 AEM Forms을 설치하면 하드웨어 보안 모듈을 사용한 디지털 서명이 작동하지 않습니다. (CQ-4266721)
 * (WebSphere®의 AEM Forms만 해당) **Forms Workflow** > **작업 검색** 검색 결과를 검색하는 경우 옵션이 결과를 반환하지 않습니다 **관리자** with **사용자 이름** 를 검색 기준으로 사용할 수 있습니다. (CQ-4266457)

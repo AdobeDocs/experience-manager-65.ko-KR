@@ -1,8 +1,8 @@
 ---
 title: 결과 추적 및 피드백 제공
-seo-title: 결과 추적 및 피드백 제공
+seo-title: Tracking results and providing feedback
 description: 테스트 사례 및 결과 테스트 계획을 정의하는 방법 및 위치는 사용자의 재량에 따라 다릅니다
-seo-description: 테스트 사례 및 결과 테스트 계획을 정의하는 방법 및 위치는 사용자의 재량에 따라 다릅니다
+seo-description: How and where you define the test cases, and the resulting test plan, is at your own discretion
 uuid: b4b811d4-4ca0-4477-a866-b262f9a698f4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,14 +12,14 @@ discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
 exl-id: 270e66d1-a3f2-457a-90d1-28b9f3c8c218
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 8%
+source-wordcount: '159'
+ht-degree: 6%
 
 ---
 
 # 결과 추적 및 피드백 제공{#tracking-results-and-providing-feedback}
 
-테스트 사례 및 결과 테스트 계획을 정의하는 방법 및 위치는 사용자의 재량에 따라 다릅니다.사용할 수 있는 도구가 많습니다.
+테스트 사례 및 결과 테스트 계획을 정의하는 방법 및 위치는 사용자의 재량에 따라 다릅니다. 사용할 수 있는 도구가 많습니다.
 
 그러나 선택한 방법 또는 도구에 관계없이 정보가 저장됩니다.
 

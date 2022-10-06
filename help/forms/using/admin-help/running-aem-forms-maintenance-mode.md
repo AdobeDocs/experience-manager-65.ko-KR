@@ -1,8 +1,8 @@
 ---
 title: 유지 관리 모드에서 AEM Forms 실행
-seo-title: 유지 관리 모드에서 AEM Forms 실행
+seo-title: Running AEM forms in maintenance mode
 description: 유지 관리 모드는 DSC 패치 작업, AEM 양식 업그레이드 또는 서비스 팩 적용 등의 작업을 수행할 때 유용합니다. 유지 관리 모드에서 AEM Forms를 실행하는 방법에 대해 자세히 알아보십시오.
-seo-description: 유지 관리 모드는 DSC 패치 작업, AEM 양식 업그레이드 또는 서비스 팩 적용 등의 작업을 수행할 때 유용합니다. 유지 관리 모드에서 AEM Forms를 실행하는 방법에 대해 자세히 알아보십시오.
+seo-description: Maintenance mode is useful when performing tasks such as patching a DSC, upgrading AEM forms, or applying a service pack. Learn more about running AEM forms in maintenance mode.
 uuid: 9aa3be20-f17e-4384-b4ce-daaee2898c96
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 exl-id: 6f5ce18b-26b4-4c31-b48a-43ccbb3912f6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
 
-# 유지 관리 모드 {#running-aem-forms-in-maintenance-mode}에서 AEM Forms 실행
+# 유지 관리 모드에서 AEM Forms 실행 {#running-aem-forms-in-maintenance-mode}
 
 유지 관리 모드는 DSC 패치 작업, AEM 양식 업그레이드 또는 서비스 팩 적용 등의 작업을 수행할 때 유용합니다.
 

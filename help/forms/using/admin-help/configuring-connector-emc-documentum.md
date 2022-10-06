@@ -1,8 +1,8 @@
 ---
 title: EMC Documentum용 커넥터 구성
-seo-title: EMC Documentum용 커넥터 구성
+seo-title: Configuring Connector for EMC Documentum
 description: AEM Forms와 EMC Documentum 간에 통신할 수 있도록 Connector for EMC Documentum을 구성하는 방법을 알아봅니다.
-seo-description: AEM Forms와 EMC Documentum 간에 통신할 수 있도록 Connector for EMC Documentum을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure the Connector for EMC Documentum to enable communication between AEM forms and EMC Documentum.
 uuid: fc96900a-ec8a-4efd-ad8e-25e9967e649b
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
 
 # EMC Documentum용 커넥터 구성 {#configuring-connector-for-emc-documentum}
 
-Connector for EMC Documentum을 사용하면 AEM Forms와 EMC Documentum 간의 통신이 가능합니다. 자세한 배경 정보는 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)에서 &quot;Connectors for ECM&quot;을 참조하십시오.
+Connector for EMC Documentum을 사용하면 AEM Forms와 EMC Documentum 간의 통신이 가능합니다. 자세한 배경 정보는 의 &quot;Connectors for ECM&quot;을 참조하십시오. [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
 
 Connector for EMC Documentum을 설정하려면 서버 연결 및 저장소 자격 증명을 구성해야 합니다.
 
@@ -35,7 +35,7 @@ Connector for EMC Documentum을 설정하려면 서버 연결 및 저장소 자�
 >
 >모든 설정을 동시에 구성하는 경우 [저장]을 한 번만 클릭하면 됩니다.
 
-### 서버 {#configure-the-server} 구성
+### 서버 구성 {#configure-the-server}
 
 연결 브로커 서버 정보를 구성해야 합니다. EMC Documentum 컨텐츠 저장소에 연결하고 Connector for EMC Documentum 을 시작하는 데 필요한 정보입니다.
 
@@ -43,7 +43,7 @@ Connector for EMC Documentum을 설정하려면 서버 연결 및 저장소 자�
 1. Documentum 구성 정보 영역에 호스트 이름 또는 IP 주소와 연결 브로커의 포트 번호를 입력합니다. 포트 번호는 양의 정수여야 합니다(예: 1489).
 1. 저장을 클릭합니다.
 
-### 사용자 자격 증명 {#configure-principal-credentials} 구성
+### 사용자 자격 증명 구성 {#configure-principal-credentials}
 
 주도자 인증서를 구성할 때 제공하는 저장소 이름은 로그인 중에 명시적 저장소 이름을 제공하는지 여부에 따라 다릅니다.
 
@@ -61,23 +61,23 @@ Connector for EMC Documentum을 설정하려면 서버 연결 및 저장소 자�
 
 Documentum에서 사용할 저장소 서비스 공급자를 구성할 수 있습니다. 저장소 서비스 호출은 사용자가 구성하는 공급자에 위임됩니다. 다음 옵션을 사용할 수 있습니다.
 
-**현재 저장소 서비스 공급자 이름:** 현재 저장소 서비스 공급자의 이름입니다
+**현재 저장소 서비스 공급자 이름:** 현재 저장소 서비스 공급자의 이름
 
 **ECM Documentum Repository Provider:** Documentum 저장소 공급자를 저장소의 공급자로 만듭니다. 이 옵션은 더 이상 사용되지 않습니다
 
-**저장소 공급자:** 기본 저장소 공급자를 저장소의 공급자로 만듭니다
+**저장소 공급자:** 기본 리포지토리 공급자를 저장소의 공급자로 만듭니다.
 
 >[!NOTE]
 >
->나열된 저장소 서비스 공급자 이외의 저장소 서비스 공급자를 선택하려면 [응용 프로그램 및 서비스] > [서비스 관리]에서 저장소 서비스를 구성합니다.<!-- Fix broken link (See Managing Services) -->
+>나열된 저장소 서비스 공급자 이외의 저장소 서비스 공급자를 선택하려면 [응용 프로그램 및 서비스] > [서비스 관리]에서 저장소 서비스를 구성합니다. <!-- Fix broken link (See Managing Services) -->.
 
 1. 관리 콘솔에서 Services > Connector for EMC Documentum > Configuration Settings 를 클릭합니다.
 1. 저장소 서비스 공급자 정보 영역에서 대체 저장소 서비스 공급자를 선택합니다.
 1. 저장을 클릭합니다.
 
-## 저장소 자격 증명 {#configuring-repository-credentials} 구성
+## 저장소 자격 증명 구성 {#configuring-repository-credentials}
 
-Documentum 자격 증명 정보는 AEM Forms 시스템 컨텍스트에서 사용됩니다. 저장소 자격 증명은 Documentum의 특정 저장소에 따라 다릅니다. 임의 개수의 저장소에 대한 자격 증명을 제공할 수 있습니다.그러나 저장소당 하나의 자격 증명 집합만 지정할 수 있습니다.
+Documentum 자격 증명 정보는 AEM Forms 시스템 컨텍스트에서 사용됩니다. 저장소 자격 증명은 Documentum의 특정 저장소에 따라 다릅니다. 임의 개수의 저장소에 대한 자격 증명을 제공할 수 있습니다. 그러나 저장소당 하나의 자격 증명 집합만 지정할 수 있습니다.
 
 ### 저장소 자격 증명 추가 {#add-a-repository-credential}
 
@@ -89,12 +89,12 @@ Documentum 자격 증명 정보는 AEM Forms 시스템 컨텍스트에서 사용
 
 EMC Documentum용 Content Repository Connector 서비스 및/또는 EMC Documentum용 Repository Service가 실행 중인 경우 데이터베이스에 저장되기 전에 지정된 저장소에 대해 자격 증명 정보를 확인합니다. 자격 증명이 잘못되었거나 있으면 오류 메시지가 표시됩니다.
 
-### 저장소 자격 증명 {#remove-a-repository-credential} 제거
+### 저장소 자격 증명 제거 {#remove-a-repository-credential}
 
 1. 관리 콘솔에서 Services > Connector for EMC Documentum > Configuration Settings 를 클릭합니다.
 1. 저장소 옆의 확인란을 선택하여 자격 증명을 제거하고 제거를 클릭합니다. 선택한 리포지토리의 자격 증명이 데이터베이스에서 제거됩니다.
 
-### 저장소 자격 증명 {#change-the-user-name-and-password-for-a-repository-credential}에 대한 사용자 이름 및 암호 변경
+### 저장소 자격 증명에 대한 사용자 이름 및 암호 변경 {#change-the-user-name-and-password-for-a-repository-credential}
 
 1. 관리 콘솔에서 Services > Connector for EMC Documentum > Configuration Settings 를 클릭합니다.
 1. 자격 증명을 편집할 저장소 이름을 클릭합니다.
@@ -103,7 +103,7 @@ EMC Documentum용 Content Repository Connector 서비스 및/또는 EMC Document
 
 EMC Documentum용 Content Repository Connector 서비스 및/또는 EMC Documentum용 Repository Service가 실행 중인 경우 데이터베이스에 저장되기 전에 지정된 저장소에 대해 자격 증명 정보를 확인합니다. 자격 증명이 잘못되었거나 있으면 오류 메시지가 표시됩니다.
 
-## 작업 공간 작업 큐 {#enable-the-request-for-sharing-of-workspace-task-queues} 공유 요청을 활성화합니다
+## 작업 공간 작업 큐 공유 요청을 활성화합니다 {#enable-the-request-for-sharing-of-workspace-task-queues}
 
 작업 공간의 작업 큐 공유 요청 기능이 EMC Documentum용 커넥터와 제대로 작동하도록 하려면 몇 가지 수동 단계가 필요합니다.
 

@@ -1,8 +1,8 @@
 ---
 title: 앱 동기화
-seo-title: 앱 동기화
+seo-title: Synchronizing the app
 description: 모바일 장치의 AEM Forms 앱을 AEM Forms 서버와 동기화합니다.
-seo-description: 모바일 장치의 AEM Forms 앱을 AEM Forms 서버와 동기화합니다.
+seo-description: Synchronize the AEM Forms app on your mobile device with the AEM Forms server.
 uuid: 3a6fb2d5-2ec4-4f78-a42a-fc921b66238e
 contentOwner: robhagat
 content-type: reference
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# 앱{#synchronizing-the-app} 동기화
+# 앱 동기화{#synchronizing-the-app}
 
-## 앱 {#synchronizing-the-app-1} 동기화
+## 앱 동기화 {#synchronizing-the-app-1}
 
 앱의 양식은 AEM Forms 서버에서 다운로드됩니다. 양식은 작업 및 Forms 탭에서 다운로드됩니다. 양식에서 만든 초안은 초안 탭에서 다운로드되고 작업에서 생성된 초안은 작업 탭에서 다운로드됩니다. OSGi 서버의 독립형 양식의 경우 양식에서 및 초안이 각각 Forms 및 초안 탭에서 다운로드됩니다.
 
@@ -30,11 +30,11 @@ AEM Forms 서버를 사용하여 온라인 상태이면 기본적으로 앱은 1
 
 **앱을 수동으로 동기화하려면**
 
-홈 화면의 오른쪽 아래 모서리에 있는 동기화 단추 ![sync-app](assets/sync-app.png)를 탭합니다.
+동기화 단추를 누릅니다 ![sync-app](assets/sync-app.png) 홈 화면의 오른쪽 아래 모서리에 있습니다.
 
 **동기화 빈도를 변경하려면**
 
-1. 설정 화면으로 이동하려면 홈 화면의 왼쪽 위 모서리에 있는 메뉴 단추를 탭한 다음 **설정**&#x200B;을 탭합니다.
+1. 설정 화면으로 이동하려면 홈 화면의 왼쪽 위 모서리에 있는 메뉴 단추를 탭한 다음 탭합니다 **설정**.
 1. 설정 화면에서 일반 탭을 탭합니다.
 
    ![일반 설정 창의 동기화 빈도 설정](assets/gen-settings-2.png)

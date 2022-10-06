@@ -1,8 +1,8 @@
 ---
 title: 클래식 UI 태깅 콘솔
-seo-title: 클래식 UI 태깅 콘솔
+seo-title: Classic UI Tagging Console
 description: 클래식 UI 태깅 콘솔에 대해 알아봅니다.
-seo-description: 클래식 UI 태깅 콘솔에 대해 알아봅니다.
+seo-description: Learn about the Classic UI Tagging Console.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '860'
 ht-degree: 37%
 
 ---
@@ -22,14 +22,13 @@ ht-degree: 37%
 
 이 섹션은 클래식 UI 태깅 콘솔을 위한 것입니다.
 
-터치에 적합한 UI 태깅 콘솔은 [여기](/help/sites-administering/tags.md#tagging-console)입니다.
+터치에 적합한 UI 태깅 콘솔은 다음과 같습니다 [여기](/help/sites-administering/tags.md#tagging-console).
 
 클래식 UI 태깅 콘솔에 액세스하려면:
 
 * 작성자
 * 관리 권한으로 로그인
-* 콘솔 찾아보기
-예: [https://localhost:4502/tagging](https://localhost:4502/tagging)
+* 예를 들어 콘솔을 찾습니다. [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![](assets/managing_tags_usingthetagasministrationconsole.png)
 
@@ -49,8 +48,7 @@ ht-degree: 37%
 
    * **제목**
 (
-*필수*) 태그의 표시 제목입니다. 문자를 입력할 수 있지만
-다음 특수 문자는 사용하지 않는 것이 좋습니다.
+*필수 여부*) 태그의 표시 제목입니다. 문자를 입력할 수 있지만 다음 특수 문자는 사용하지 않는 것이 좋습니다.
 
       * `colon (:)` - 네임스페이스 구분 기호
       * `forward slash (/)` - 하위 태그 구분 기호
@@ -59,13 +57,13 @@ ht-degree: 37%
 
    * **이름**
 (
-*필수*) 태그의 노드 이름입니다.
+*필수 여부*) 태그의 노드 이름입니다.
 
    * **설명**
 (
-*선택 사항*) 태그에 대한 설명입니다.
+*선택 사항입니다*) 태그에 대한 설명입니다.
 
-   * **만들기** 선택
+   * 선택 **만들기**
 
 
 ## 태그 편집 {#editing-tags}
@@ -78,8 +76,8 @@ ht-degree: 37%
 ## 태그 삭제 {#deleting-tags}
 
 1. 오른쪽 창에서 삭제할 태그를 선택합니다.
-1. **삭제**&#x200B;를 클릭합니다. 
-1. **예**&#x200B;를 클릭하여 대화 상자를 닫습니다.
+1. **삭제**&#x200B;를 클릭합니다.
+1. 클릭 **예** 을 클릭하여 대화 상자를 닫습니다.
 
    더 이상 태그를 나열하지 않아야 합니다.
 
@@ -88,7 +86,7 @@ ht-degree: 37%
 1. 오른쪽 창에서 활성화(게시) 또는 비활성화(게시 취소)할 네임스페이스 또는 태그를 선택합니다.
 1. 필요에 따라 **활성화** 또는 **비활성화**&#x200B;를 클릭합니다.
 
-## 목록 - 태그 참조 위치 표시  {#list-showing-where-tags-are-referenced}
+## 목록 - 태그 참조 위치 표시 {#list-showing-where-tags-are-referenced}
 
 **목록**&#x200B;을 클릭하면 강조된 태그를 사용하는 모든 페이지의 경로를 보여 주는 새 창이 열립니다.
 
@@ -113,7 +111,7 @@ ht-degree: 37%
 
 >[!NOTE]
 >
->작성자는 태그를 이동하거나 태그 ID의 이름을 변경하면 안 됩니다. 필요한 경우 작성자는 [태그 제목만 변경해야 합니다](#editing-tags).
+>작성자는 태그를 이동하거나 태그 ID의 이름을 변경하면 안 됩니다. 필요한 경우 작성자만 [태그 제목 변경](#editing-tags).
 
 ## 태그 병합 {#merging-tags}
 
@@ -129,7 +127,7 @@ ht-degree: 37%
 
 1. **병합**&#x200B;을 클릭합니다.
 
-**태그 병합** 대화 상자의 모양은 다음과 같습니다.
+다음 **태그 병합** 대화 상자의 모양은 다음과 같습니다.
 
 ![](assets/mergetag.png)
 
@@ -140,16 +138,16 @@ ht-degree: 37%
 1. **Tagging** 콘솔을 엽니다.
 1. 상단 도구 모음에서 **사용 횟수**&#x200B;를 클릭하면 개수 열에 결과가 표시됩니다.
 
-## 여러 언어로 태그 관리  {#managing-tags-in-different-languages}
+## 여러 언어로 태그 관리 {#managing-tags-in-different-languages}
 
-태그의 선택적 `title`속성은 여러 언어로 번역될 수 있습니다. 그런 다음 사용자 언어 또는 페이지 언어에 따라 `titles` 태그를 표시할 수 있습니다.
+선택 사항입니다 `title`태그의 속성은 여러 언어로 번역될 수 있습니다. 태그 `titles` 그런 다음 사용자 언어 또는 페이지 언어에 따라 표시될 수 있습니다.
 
 ### 여러 언어로 태그 제목 정의 {#defining-tag-titles-in-multiple-languages}
 
-다음 절차에서는 **Animals** 태그의 `title`을 영어, 독일어 및 프랑스어로 변환하는 방법을 보여 줍니다.
+다음 절차에서는 `title`태그 **동물** 영어, 독일어 및 프랑스어로 변환:
 
-1. **Tagging** 콘솔로 이동합니다.
-1. **태그** > **스톡 사진** 아래의 **Animals** 태그를 편집합니다.
+1. 로 이동합니다. **태깅** 콘솔.
+1. 태그 편집 **동물** 아래 **태그** > **스톡 사진**.
 1. 다음 언어로 번역을 추가합니다.
 
    * **영어**: Animals
@@ -164,25 +162,25 @@ ht-degree: 37%
 
 Tagging 콘솔에서는 사용자 언어 설정을 사용하므로 Animal 태그의 경우 사용자 속성에서 언어를 프랑스어로 설정한 사용자에 대해 &#39;Animaux&#39;가 표시됩니다.
 
-대화 상자에 새 언어를 추가하려면 **개발자를 위한 태깅** 섹션에서 [태그 편집 대화 상자에 새 언어 추가](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) 섹션을 참조하십시오.
+대화 상자에 새 언어를 추가하려면 섹션을 참조하십시오 [태그 편집 대화 상자에 새 언어 추가](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) 에서 **개발자를 위한 태깅** 섹션을 참조하십시오.
 
-### 지정된 언어로 페이지 속성에 태그 제목 표시 {#displaying-tag-titles-in-page-properties-in-a-specified-language}
+### 페이지 속성에 지정된 언어로 태그 제목 표시 {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-기본적으로 페이지 속성의 태그 `titles`이 페이지 언어로 표시됩니다. 페이지 속성의 태그 대화 상자에는 다른 언어로 `titles` 태그를 표시할 수 있는 언어 필드가 있습니다. 다음 절차에서는 `titles` 태그를 프랑스어로 표시하는 방법을 설명합니다.
+기본적으로 태그입니다 `titles`페이지 속성에서 페이지 언어로 표시됩니다. 페이지 속성의 태그 대화 상자에는 태그를 표시할 수 있는 언어 필드가 있습니다 `titles`다른 언어로 표시합니다. 다음 절차에서는 태그를 표시하는 방법을 설명합니다 `titles`프랑스어:
 
-1. 이전 섹션을 참조하여 **태그** > **스톡 사진**&#x200B;에 있는 **Animals**&#x200B;에 프랑스어 번역을 추가합니다.
+1. 에 프랑스어 번역을 추가하려면 이전 섹션을 참조하십시오. **동물** 아래 **태그** > **스톡 사진**.
 1. **Geometrixx** 사이트의 English 분기에서 **Products** 페이지의 페이지 속성을 엽니다.
-1. **태그/키워드** 대화 상자([태그/키워드] 표시 영역의 오른쪽에 있는 풀다운 메뉴를 선택하여)를 열고 오른쪽 아래 모서리의 풀다운 메뉴에서 **프랑스어** 언어를 선택합니다.
-1. **스톡 사진** 탭을 선택할 수 있을 때까지 왼쪽 화살표를 사용하여 스크롤합니다.
+1. 를 엽니다. **태그/키워드** 대화 상자(태그/키워드 표시 영역 오른쪽에 있는 풀다운 메뉴 선택)를 선택하고 **프랑스어** 오른쪽 아래 모서리에 있는 풀다운 메뉴의 언어.
+1. 을(를) 선택할 때까지 왼쪽 오른쪽 화살표를 사용하여 스크롤합니다. **스톡 사진** 탭
 
-   **Animals** (**Animaux**) 태그를 선택하고 대화 상자 바깥쪽을 선택하여 태그를 닫고 페이지 속성에 추가합니다.
+   을(를) 선택합니다 **동물** (**Animaux**) 태그를 사용하여 대화 상자 외부를 선택하여 태그를 닫고 페이지 속성에 추가합니다.
 
    ![](assets/french_tag.png)
 
-기본적으로 페이지 속성 대화 상자에는 페이지 언어에 따라 `titles` 태그가 표시됩니다.
+기본적으로 페이지 속성 대화 상자에는 태그가 표시됩니다 `titles`페이지 언어에 따라 다릅니다.
 
-일반적으로 페이지 언어가 사용 가능한 경우 페이지 언어로 태그의 언어를 가져옵니다. [ `tag` 위젯](/help/sites-developing/building.md#tagging-on-the-client-side)을 다른 경우에 사용하면(예: 양식이나 대화 상자) 태그 언어는 컨텍스트에 따라 다릅니다.
+일반적으로 페이지 언어가 사용 가능한 경우 페이지 언어로 태그의 언어를 가져옵니다. 이 [ `tag` 위젯](/help/sites-developing/building.md#tagging-on-the-client-side) 가 다른 경우에 사용됩니다(양식 또는 대화 상자 등에서). 태그 언어는 컨텍스트에 따라 다릅니다.
 
 >[!NOTE]
 >
->표준 페이지 구성 요소의 태그 클라우드 및 메타 키워드는 가능한 경우 페이지 언어를 기반으로 지역화된 태그 `titles`을 사용합니다.
+>표준 페이지 구성 요소의 태그 클라우드 및 메타 키워드는 현지화된 태그를 사용합니다 `titles`가능한 경우 페이지 언어를 기반으로 합니다.

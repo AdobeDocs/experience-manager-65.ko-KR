@@ -1,8 +1,8 @@
 ---
 title: 작업 작업 사용자 지정
-seo-title: 작업 작업 사용자 지정
+seo-title: Customizing Task Actions
 description: 작업 작업의 모양을 사용자 지정하고 작업에 이미지만 사용하고 경로 작업에 사용되는 이미지를 사용자 지정할 수 있습니다.
-seo-description: 작업 작업의 모양을 사용자 지정하고 작업에 이미지만 사용하고 경로 작업에 사용되는 이미지를 사용자 지정할 수 있습니다.
+seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,18 +11,18 @@ discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 exl-id: d17863fb-7950-493d-b378-16861c4af176
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
 
 # 작업 작업 사용자 지정 {#customizing-task-actions}
 
-AEM Forms 작업 공간을 사용하면 사용자가 작업 작업을 사용자 지정할 수 있습니다. 작업 작업을 사용자 지정하기 전에 AEM Forms 작업 공간 사용자 지정을 위한 [일반 단계에 나열된 절차를 따라야 합니다](/help/forms/using/generic-steps-html-workspace-customization.md).
+AEM Forms 작업 공간을 사용하면 사용자가 작업 작업을 사용자 지정할 수 있습니다. 작업 작업을 사용자 지정하기 전에 다음 단계를 수행해야 합니다. [AEM Forms 작업 공간 사용자 지정을 위한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## 텍스트 스타일 사용자 지정 {#customizing-text-style}
 
-텍스트 스타일을 사용자 지정하려면 `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가합니다.
+텍스트 스타일을 사용자 지정하려면 `/apps/ws/css/newStyle.css` 파일:
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -110,7 +110,7 @@ AEM Forms 작업 공간을 사용하면 사용자가 작업 작업을 사용자 
 
 ## 이미지 사용자 지정 {#customizing-images}
 
-이미지를 사용자 지정하려면 `/apps/ws/css/newStyle.css` 파일에 다음 코드 조각을 추가합니다. 다음 코드 조각은 *lock* 작업에 대한 이미지를 사용자 지정합니다.
+이미지를 사용자 지정하려면 `/apps/ws/css/newStyle.css` 파일. 다음 코드 조각은 *잠금* 작업:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -131,15 +131,15 @@ AEM Forms 작업 공간을 사용하면 사용자가 작업 작업을 사용자 
 }
 ```
 
-## 작업 {#showing-only-images-for-actions}에 대한 이미지만 표시
+## 작업에 대한 이미지만 표시 {#showing-only-images-for-actions}
 
-작업에 대한 이미지만 표시하려면 경로 작업에 사용되는 이미지를 사용자 지정합니다. 자세한 내용은 [경로 작업 이미지](/help/forms/using/images-route-actions.md)를 참조하십시오.
+작업에 대한 이미지만 표시하려면 경로 작업에 사용되는 이미지를 사용자 지정합니다. 자세한 내용은 [경로 지정 작업에 대한 이미지](/help/forms/using/images-route-actions.md).
 
 ### 작업 목록 작업 팝업 메뉴 {#task-list-task-action-nbsp-pop-up-menu}
 
-1. AEM Forms 작업 공간 작업 목록 작업 팝업 메뉴의 항목을 사용자 지정하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 공간 코드 작성](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code) 을 참조하십시오.
+1. AEM Forms 작업 공간 작업 목록 작업 팝업 메뉴의 항목을 사용자 지정하려면 개발 패키지가 필요합니다. 개발 패키지 만들기에 대한 자세한 내용은 [AEM Forms 작업 공간 코드 작성 중.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-1. /libs/ws/js/runtime/templates/task.html 을 `/apps/ws/js/runtime/templates/task.html`에 복사하여 다음 코드 조각을 바꿉니다.
+1. /libs/ws/js/runtime/templates/task.html에 복사 `/apps/ws/js/runtime/templates/task.html`다음 코드 조각을 바꿉니다.
 
    ```html
    // Orignal code
@@ -212,7 +212,7 @@ AEM Forms 작업 공간을 사용하면 사용자가 작업 작업을 사용자 
        </div>
    ```
 
-1. `/apps/ws/css/newStyle.css` 파일에서 앵커 태그에 할당된 고정 너비를 제거합니다.
+1. 앵커 태그에 지정된 고정 너비를 `/apps/ws/css/newStyle.css` 파일:
 
    ```css
    .task .taskActionsPopUp ul{
@@ -266,8 +266,8 @@ AEM Forms 작업 공간을 사용하면 사용자가 작업 작업을 사용자 
 
 다음 단계를 수행하여 [세부 정보 작업] 팝업 메뉴를 사용자 정의합니다.
 
-* /libs/ws/js/runtime/templates/taskdetails.html 파일을 `/apps/ws/js/runtime/templates/` 폴더에 복사합니다.
-* 텍스트 대신 앵커 태그 내에 아이콘 태그를 캡슐화합니다. 예를 들어, 아래에 나열된 *새 코드*&#x200B;는 앵커 태그 내에 아이콘 태그를 캡슐화합니다.
+* /libs/ws/js/runtime/templates/taskdetails.html 파일을에 복사합니다. `/apps/ws/js/runtime/templates/` 폴더:
+* 텍스트 대신 앵커 태그 내에 아이콘 태그를 캡슐화합니다. 예: *새 코드* 아래에 나열된 는 앵커 태그 내의 아이콘 태그를 캡슐화합니다.
 
 ```html
 // Original code
@@ -359,5 +359,5 @@ AEM Forms 작업 공간을 사용하면 사용자가 작업 작업을 사용자 
 ```
 
 * 편집할 /apps/ws/js/registry.js 파일을 엽니다.
-* 다음 텍스트를 찾습니다.`text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
-* 찾은 텍스트를 다음 텍스트로 바꿉니다.`text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
+* 다음 텍스트를 찾습니다. `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
+* 찾은 텍스트를 다음 텍스트로 바꿉니다. `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`

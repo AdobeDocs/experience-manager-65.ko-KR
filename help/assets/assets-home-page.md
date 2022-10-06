@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Assets] 홈 페이지 경험"'
+title: "[!DNL Assets] 홈 페이지 경험"
 description: 개인화 [!DNL Experience Manager Assets] 자산 관련 최근 활동에 대한 스냅숏을 포함하여 풍부한 시작 화면 환경을 위한 홈 페이지입니다.
 contentOwner: AG
 feature: Developer Tools, Asset Management

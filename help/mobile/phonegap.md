@@ -2,7 +2,7 @@
 title: PhoneGap
 seo-title: PhoneGap
 description: PhoneGap
-seo-description: AEM에서 Adobe PhoneGap Enterprise용 작성을 시작하려면 이 페이지를 따르십시오.
+seo-description: Follow this page to get started with authoring for Adobe PhoneGap Enterprise in AEM.
 uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
@@ -11,8 +11,8 @@ discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 5%
+source-wordcount: '201'
+ht-degree: 4%
 
 ---
 
@@ -28,11 +28,11 @@ Adobe Experience Manager (AEM) Mobile은 전체 AEM 플랫폼을 구성하는 �
 
 * **관리자**
 * **개발자**
-* **작성**
+* **작성자**
 
 ## PhoneGap 응용 프로그램 작성 {#authoring-phonegap-applications}
 
-***AEM Author*(또는 *Marketter*)**는 기본 제공 템플릿 및 구성 요소를 사용하여 페이지를 추가 및 편집하고, 구성 요소를 드래그 앤 드롭하고, 이미지, 비디오 및 텍스트 조각(컨텐츠 조각)을 포함하여 DAM에서 모든 유형의 미디어를 추가할 수 있습니다.
+An ***AEM 작성자* 또는 *마케터*)**기본 제공 템플릿 및 구성 요소를 사용하여 페이지를 추가 및 편집하고, 구성 요소를 드래그 앤 드롭하고, 이미지, 비디오 및 텍스트 조각(컨텐츠 조각)을 포함하여 DAM에서 모든 유형의 미디어를 추가할 수 있습니다.
 
 시작하려면 다음 리소스를 참조하십시오.
 
@@ -44,7 +44,7 @@ Adobe Experience Manager (AEM) Mobile은 전체 AEM 플랫폼을 구성하는 �
 * [만들기 마법사를 사용하여 새 AEM Mobile 앱 만들기](/help/mobile/phonegap-create-new-app.md)
 * [기존 하이브리드 앱 가져오기](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-**컨텐츠 서비스**&#x200B;에 대해 알아보려면 [컨텐츠 서비스 개요](/help/mobile/develop-content-as-a-service.md)를 참조하십시오.
+알아보기 **컨텐츠 서비스**&#x200B;를 참조하십시오. [컨텐츠 서비스 개요](/help/mobile/develop-content-as-a-service.md) 시작하기
 
 ## 추가 리소스 {#additional-resources}
 

@@ -1,24 +1,24 @@
 ---
 title: 인라인 조건 및 인터랙티브 통신 및 문자에서 반복
-seo-title: 인라인 조건 및 인터랙티브 통신 및 문자에서 반복
+seo-title: Inline condition and repeat in Interactive Communications and letters
 description: 인라인 조건을 사용하고 인터랙티브한 커뮤니케이션과 편지에서 반복하면 상황에 맞는 구조화된 커뮤니케이션을 만들 수 있습니다.
-seo-description: 인라인 조건을 사용하고 인터랙티브한 커뮤니케이션과 편지에서 반복하면 상황에 맞는 구조화된 커뮤니케이션을 만들 수 있습니다.
+seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
 uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
-feature: 서신 관리
+feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
 
-# 인라인 조건 및 대화형 통신 및 문자{#inline-condition-and-repeat-in-interactive-communications-and-letters}에서 반복
+# 인라인 조건 및 인터랙티브 통신 및 문자에서 반복{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
 ## 인라인 조건 {#inline-conditions}
 
@@ -32,23 +32,23 @@ AEM Forms을 사용하면 텍스트 모듈에서 인라인 조건을 사용하�
 * [서신 관리 개요](/help/forms/using/cm-overview.md)
 * [대화형 커뮤니케이션의 텍스트](../../forms/using/texts-interactive-communications.md)
 
-### 예:규칙을 사용하여 대화형 통신 {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}에서 인라인 텍스트 조건부 구현
+### 예: 규칙을 사용하여 Interactive Communication에서 인라인 텍스트 조건부 구현 {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
 
 Interactive Communication에서 문장, 단락 또는 텍스트 문자열을 조건부 구현하기 위해 적절한 텍스트 문서 조각에서 규칙을 생성할 수 있습니다. 다음 예제에서는 규칙을 사용하여 Interactive Communication의 미국 수신자에게만 무료 전화 번호를 표시합니다.
 
-자세한 내용은 [대화형 커뮤니케이션의 텍스트 ](../../forms/using/texts-interactive-communications.md)에서 텍스트로 규칙 만들기 를 참조하십시오.
+자세한 내용은 텍스트로 규칙 만들기 를 참조하십시오 [대화형 커뮤니케이션의 텍스트](../../forms/using/texts-interactive-communications.md).
 
 Interactive Communication에 텍스트 조각을 포함시키고 Agent UI를 사용하여 대화형 커뮤니케이션을 준비하면 수신자에 대한 (양식 데이터 모델) 데이터가 평가되고 텍스트는 미국의 수신자에게만 표시됩니다.
 
-### 예:편지에 인라인 조건을 사용하여 적절한 주소 {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address} 렌더링
+### 예: 편지에 인라인 조건을 사용하여 적절한 주소를 렌더링합니다.  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
 인라인 조건을 해당 텍스트 모듈에 삽입하여 편지에 삽입할 수 있습니다. 다음 예제에서는 두 가지 조건을 사용하여 DD 요소 Gender를 기반으로 한 편지에서 해당 주소인 Sir 또는 Ma&#39;am을 평가하고 표시합니다. 유사한 단계를 사용하여 다른 조건을 만들 수 있습니다.
 
 >[!NOTE]
 >
->기존 자산에 이전 조건/반복 표현식(6.2 SP1 CFP 4 이전)이 포함되어 있으면, 자산에는 이전 조건 구문이 표시되고 반복이 표시됩니다. 그러나 이전 조건/반복은 작동합니다. 새 표현식과 이전 조건/반복 표현식은 이전 표현식과 새 조건/반복 표현식의 중첩된 혼합을 만들기 위해 서로 호환됩니다.
+>기존 자산에 이전 조건/반복 표현식(6.2 SP1 CFP 4 이전)이 포함되어 있으면, 자산에 이전 조건 구문이 표시되고 반복이 표시됩니다. 그러나 이전 조건/반복은 작동합니다. 새 표현식과 이전 조건/반복 표현식은 이전 표현식과 새 조건/반복 표현식의 중첩된 혼합을 만들기 위해 서로 호환됩니다.
 
-1. 관련 텍스트 모듈에서 조건을 지정할 텍스트 부분을 선택하고 **Condition**&#x200B;을 누릅니다.
+1. 관련 텍스트 모듈에서 조건을 지정할 텍스트 부분을 선택하고 탭합니다 **조건**.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -58,7 +58,7 @@ Interactive Communication에 텍스트 조각을 포함시키고 Agent UI를 사
 
    >[!NOTE]
    >
-   >비어 있거나 잘못된 조건부 식을 저장할 수 없습니다. 표현식을 저장하려면 `${}` 내에 유효한 조건식이 있어야 합니다.
+   >비어 있거나 잘못된 조건부 식을 저장할 수 없습니다. 안에 유효한 조건식이 있어야 합니다 `${}` 표현식을 저장
 
 1. 선택한/조건부 텍스트가 편지에 나타나는지 여부를 평가하는 조건을 구성하려면 다음을 수행한 다음 확인 표시를 눌러 표현식을 저장합니다.
 
@@ -68,13 +68,13 @@ Interactive Communication에 텍스트 조각을 포함시키고 Agent UI를 사
    ${DD_creditcard_Gender=="Male"}
    ```
 
-   표현식 만들기에 대한 자세한 내용은 [표현식 빌더](../../forms/using/expression-builder.md)에서 **표현식 빌더**&#x200B;을 사용하여 표현식 및 원격 함수 만들기 를 참조하십시오. 데이터 사전의 요소에 대해 표현식에 지정된 값이 지원되어야 합니다. 자세한 내용은 [데이터 사전](../../forms/using/data-dictionary.md)을 참조하십시오.
+   표현식 만들기에 대한 자세한 내용은 **표현식 빌더를 사용하여 표현식 및 원격 함수 만들기** in [표현식 빌더](../../forms/using/expression-builder.md). 데이터 사전의 요소에 대해 표현식에 지정된 값이 지원되어야 합니다. 자세한 내용은 [데이터 사전](../../forms/using/data-dictionary.md).
 
    조건이 삽입되면 조건 왼쪽의 핸들을 마우스로 가리키면 조건을 볼 수 있습니다. 핸들을 탭하여 조건의 팝업 메뉴를 볼 수 있습니다. 이 경우 조건을 편집하거나 제거할 수 있습니다.
 
-   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveonditionpopup](assets/4_editconditionremoveconditionpopup.png)
+   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremovecondist팝업](assets/4_editconditionremoveconditionpopup.png)
 
-1. `Ma'am` 텍스트를 선택하여 유사한 조건을 삽입합니다.
+1. 텍스트를 선택하여 유사한 조건 삽입 `Ma'am`.
 
    ```javascript
    ${DD_creditcard_Gender == "Female"}
@@ -85,7 +85,7 @@ Interactive Communication에 텍스트 조각을 포함시키고 Agent UI를 사
    * 샘플 데이터가 있는 문자를 미리 보는 동안 관련 데이터 사전을 기반으로 만들어진 샘플 XML 데이터 파일입니다.
    * 관련 데이터 사전에 첨부된 XML 데이터 파일입니다.
 
-   자세한 내용은 [데이터 사전](../../forms/using/data-dictionary.md)을 참조하십시오.
+   자세한 내용은 [데이터 사전](../../forms/using/data-dictionary.md).
 
    ![5_letteroutput](assets/5_letteroutput.png)
 
@@ -95,7 +95,7 @@ Interactive Communication/letter에 동적 정보가 있을 수 있습니다. �
 
 또한 반복 구성 내에 규칙/조건을 지정하여 대화형 통신/편지에 렌더링되는 정보/항목을 조건부 구현할 수 있습니다.
 
-### 예:Interactive Communication에서 반복을 사용하여 신용 카드 트랜잭션 목록을 포맷, 구조 및 표시합니다. {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### 예: Interactive Communication에서 반복을 사용하여 신용 카드 트랜잭션 목록을 포맷, 구조 및 표시합니다. {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 다음 예에서는 Interactive Communication에서 반복 을 사용하여 신용 카드 트랜잭션을 구성하고 렌더링하는 단계를 제공합니다.
 
@@ -139,7 +139,7 @@ Interactive Communication/letter에 동적 정보가 있을 수 있습니다. �
 
    ![screen_shot_2018-03-09at155516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
-### 예:편지에 반복을 사용하여 신용 카드 트랜잭션 목록을 형식 지정, 구조 및 표시합니다. {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### 예: 편지에 반복 사용 - 신용 카드 트랜잭션 목록을 포맷, 구조 및 표시합니다. {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 다음 예에서는 반복을 사용하여 신용 카드 트랜잭션을 편지에 구조화하고 렌더링하는 단계를 제공합니다. 유사한 단계를 사용하면 다른 시나리오에서 반복을 사용할 수 있습니다.
 
@@ -172,7 +172,7 @@ Interactive Communication/letter에 동적 정보가 있을 수 있습니다. �
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. **반복**&#x200B;을 누릅니다. 빈 인라인 조건이 있는 반복 대화 상자가 나타납니다.
+1. 탭 **반복**. 빈 인라인 조건이 있는 반복 대화 상자가 나타납니다.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
@@ -182,12 +182,12 @@ Interactive Communication/letter에 동적 정보가 있을 수 있습니다. �
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   그렇지 않으면 정보(여기서 트랜잭션)를 선택적으로 렌더링할 필요가 없는 경우 대화 상자에서 다음을 삭제하여 조건을 비워 둡니다.`${}` 반복 표현식 저장 기능은 반복 표현식 창이 비어 있거나(반복이 필요하지 않은 경우 ${} 없이) 반복에 유효한 조건이 포함된 경우 활성화됩니다.
+   그렇지 않으면 정보(여기서 트랜잭션)를 선택적으로 렌더링할 필요가 없는 경우 대화 상자에서 다음을 삭제하여 조건을 비워 둡니다. `${}`. 반복 표현식 저장 기능은 반복 표현식 창이 비어 있거나(반복이 필요하지 않은 경우 ${} 없이) 반복에 유효한 조건이 포함된 경우 활성화됩니다.
 
 1. 다이내믹 텍스트 서식을 지정할 구분자를 선택하고 확인 표시를 눌러 저장합니다.
 
-   * **줄 바꿈**:출력 편지의 각 트랜잭션 입력 뒤에 줄바꿈을 삽입합니다.
-   * **텍스트**:출력 문자의 각 트랜잭션 항목 뒤에 지정된 텍스트 문자를 삽입합니다.
+   * **줄 바꿈**: 출력 편지의 각 트랜잭션 입력 뒤에 줄바꿈을 삽입합니다.
+   * **텍스트**: 출력 문자의 각 트랜잭션 항목 뒤에 지정된 텍스트 문자를 삽입합니다.
 
    조건이 삽입되면 반복이 있는 텍스트가 빨간색으로 강조 표시되고 핸들이 왼쪽에 나타납니다. 반복의 왼쪽에 있는 핸들을 마우스로 가리키면 반복 구성을 볼 수 있습니다.
 
@@ -202,7 +202,7 @@ Interactive Communication/letter에 동적 정보가 있을 수 있습니다. �
    * 샘플 데이터가 있는 문자를 미리 보는 동안 관련 데이터 사전을 기반으로 만들어진 샘플 XML 데이터 파일입니다.
    * 관련 데이터 사전에 첨부된 XML 데이터 파일입니다.
 
-   자세한 내용은 [데이터 사전](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html)을 참조하십시오.
+   자세한 내용은 [데이터 사전](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
 
@@ -212,9 +212,9 @@ Interactive Communication/letter에 동적 정보가 있을 수 있습니다. �
    >
    >관련 텍스트 모듈을 만들거나 편집하는 동안에만 조건을 삽입하고 반복할 수 있습니다. 문자를 미리 보는 동안 텍스트 모듈을 편집할 수 있지만 조건을 삽입하거나 반복할 수는 없습니다.
 
-## 인라인 조건 및 반복 사용 - 일부 사용 사례 {#using-inline-condition-and-repeat-some-use-cases}
+## 인라인 조건 및 반복 사용 - 일부 사용 사례  {#using-inline-condition-and-repeat-some-use-cases}
 
-### 조건 {#repeat-within-condition} 내에서 반복합니다.
+### 조건 내에서 반복 {#repeat-within-condition}
 
 조건 내에서 반복을 사용해야 할 수 있습니다. 서신 관리를 사용하면 인라인 조건 구성 내에서 반복을 사용할 수 있습니다.
 

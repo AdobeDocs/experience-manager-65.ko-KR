@@ -3,20 +3,20 @@ title: 자산 번역 우수 사례
 description: 다양한 번역된 버전을 동기화하고 번역 워크플로우를 간소화하기 위해 자산을 효율적으로 관리하는 모범 사례입니다.
 contentOwner: AG
 role: Admin
-feature: 자산 관리
+feature: Asset Management
 exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '416'
 ht-degree: 3%
 
 ---
 
 # 자산 번역 우수 사례 {#best-practices-for-translating-assets-efficiently}
 
-[!DNL Adobe Experience Manager Assets] 에서는 디지털 자산에 대한 이진, 메타데이터 및 태그를 여러 로케일로 변환하고 번역된 자산을 관리하는 다국어 워크플로우를 지원합니다. 자세한 내용은 [다국어 자산](multilingual-assets.md)을 참조하십시오.
+[!DNL Adobe Experience Manager Assets] 에서는 디지털 자산에 대한 이진, 메타데이터 및 태그를 여러 로케일로 변환하고 번역된 자산을 관리하는 다국어 워크플로우를 지원합니다. 자세한 내용은 [다국어 자산](multilingual-assets.md).
 
-다양한 번역 버전이 동기화되도록 자산을 효율적으로 관리하려면 번역 워크플로우를 실행하기 전에 자산의 [언어 사본](preparing-assets-for-translation.md)을 만드십시오.
+다양한 번역 버전이 동기화되도록 자산을 효율적으로 관리하려면 다음을 만드십시오 [언어 복사](preparing-assets-for-translation.md) 번역 워크플로우를 실행하기 전, 자산 수
 
 자산 또는 자산 그룹의 언어 사본은 유사한 컨텐츠 계층 구조의 언어 동기(또는 동일 언어의 자산 버전)입니다.
 
@@ -43,9 +43,9 @@ ht-degree: 3%
    >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
 -->
 
-1. [!UICONTROL 마지막 수정 날짜 설정] 워크플로우를 활성화합니다.
+1. 를 활성화합니다 [!UICONTROL 마지막 수정 날짜 설정] 워크플로우.
 
-   [!UICONTROL DAM 메타데이터 원본에 쓰기] 워크플로우는 자산에 대한 마지막으로 수정한 날짜를 구성합니다. 2단계에서 이 워크플로우를 비활성화했으므로 [!DNL Assets]은(는) 더 이상 자산의 마지막으로 수정한 날짜를 최신 상태로 유지할 수 없습니다. 따라서 *마지막 수정 날짜 설정* 워크플로우를 활성화하여 자산의 마지막 수정 날짜가 최신 상태인지 확인합니다. 마지막으로 수정한 날짜가 지난 자산은 오류를 일으킬 수 있습니다.
+   다음 [!UICONTROL DAM 메타데이터 원본에 쓰기] 워크플로우는 자산의 마지막 수정 날짜를 구성합니다. 2단계에서 이 워크플로우를 비활성화했으므로 [!DNL Assets] 는 더 이상 자산의 마지막 수정 날짜를 최신 상태로 유지할 수 없습니다. 따라서 *마지막 수정 날짜 설정* 워크플로우에서 자산의 마지막 수정 날짜가 최신 상태인지 확인합니다. 마지막으로 수정한 날짜가 지난 자산은 오류를 일으킬 수 있습니다.
 
-1. [자산 바이너리 ](/help/sites-administering/tc-tic.md) 번역을 중지하도록 번역 통합 프레임워크를 구성합니다. [!UICONTROL Assets] 탭 아래에서 **[!UICONTROL 자산 번역]** 옵션을 선택 취소하여 자산 바이너리 번역을 중지합니다.
-1. [다국어 자산 워크플로우를 사용하여 자산 메타데이터/태그를 변환합니다](multilingual-assets.md).
+1. [번역 통합 프레임워크 구성](/help/sites-administering/tc-tic.md) 자산 바이너리 번역을 중지하려면 다음을 수행하십시오. 선택 취소 **[!UICONTROL 자산 번역]** 아래의 옵션 [!UICONTROL 자산] 탭 을 클릭하여 자산 바이너리 변환을 중지합니다.
+1. 를 사용하여 자산 메타데이터/태그 번역 [다국어 자산 워크플로우](multilingual-assets.md).

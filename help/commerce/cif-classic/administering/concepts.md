@@ -9,7 +9,7 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '4514'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,6 @@ ht-degree: 1%
 >* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
 >* [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-
 >
 
 
@@ -554,7 +553,7 @@ AEM에서:
    * 프로모션 관리를 위한 렌더러 및 대화 상자
    * 프로모션 핸들러와 관련된 구성 매개 변수를 렌더링하고 편집하는 하위 구성 요소
 
-AEM에서는 프로모션도 [캠페인 관리](/help/sites-authoring/personalization.md):
+AEM에서는 프로모션도 [Campaign Management](/help/sites-authoring/personalization.md):
 
 * a [campaign](/help/sites-authoring/personalization.md) 설정/해제 시간을 지정합니다.
 * [경험](/help/sites-authoring/personalization.md) *within* 캠페인은 대상 세그먼트에 따라 자산(teaser page, promotion 등)을 그룹화하는 데 사용됩니다

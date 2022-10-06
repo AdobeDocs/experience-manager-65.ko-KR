@@ -1,8 +1,8 @@
 ---
 title: 페이지 분석 데이터 보기
-seo-title: 페이지 분석 데이터 보기
+seo-title: Seeing Page Analytics Data
 description: 페이지 컨텐츠의 효율성을 측정하려면 페이지 분석 데이터를 사용하십시오.
-seo-description: 페이지 컨텐츠의 효율성을 측정하려면 페이지 분석 데이터를 사용하십시오.
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '628'
 ht-degree: 93%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 페이지 분석 데이터는 사이트 콘솔의 [목록 보기](/help/sites-authoring/basic-handling.md#list-view)에 표시됩니다. 페이지가 목록 형식으로 표시되면 기본적으로 다음 열을 사용할 수 있습니다.
 
-* 페이지 보기 수
+* 페이지 조회수
 * 고유 방문자 수
 * 페이지 시간
 
@@ -63,7 +63,7 @@ analytics-administrators 사용자 그룹의 구성원은 작성자가 추가 An
 >
 >페이지 트리에 다른 Adobe Analytics 클라우드 구성과 연관된 하위가 있는 경우 페이지에 사용 가능한 데이터 열을 구성할 수 없습니다.
 
-1. 목록 보기에서 보기 선택기(도구 모음의 오른쪽)를 사용하고 **보기 설정**&#x200B;을 선택한 다음 **사용자 지정 분석 데이터 추가**&#x200B;를 선택합니다.
+1. 목록 보기에서 보기 선택기(도구 모음의 오른쪽)를 사용하여 **설정 보기** 그리고 **사용자 지정 분석 데이터 추가**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -75,14 +75,14 @@ analytics-administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 ### 사이트에서 컨텐츠 인사이트 열기 {#opening-content-insights-from-sites}
 
-페이지 효과를 자세히 조사하려면 사이트 콘솔에서 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md)를 엽니다.
+열기 [컨텐츠 인사이트](/help/sites-authoring/content-insights.md) 페이지 효과를 자세히 조사하려면 사이트 콘솔에서 를 클릭하십시오.
 
 1. 사이트 콘솔에서 컨텐츠 인사이트를 보려는 페이지를 선택합니다.
 1. 도구 모음에서 [분석 및 권장 사항] 아이콘을 클릭합니다.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## 페이지 편집기에서 볼 수 있는 Analytics(활동 맵)  {#analytics-visible-from-the-page-editor-activity-map}
+## 페이지 편집기에서 볼 수 있는 Analytics(활동 맵) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >

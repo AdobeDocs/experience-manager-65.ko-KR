@@ -1,8 +1,8 @@
 ---
 title: Target 오퍼
-seo-title: Target 오퍼
+seo-title: Target offers
 description: Target 오퍼 만들기
-seo-description: Target 오퍼 만들기
+seo-description: Create target offers
 uuid: 88206181-9708-454a-a22a-05e3fc0247c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 71%
+source-wordcount: '91'
+ht-degree: 70%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 71%
    ![](do-not-localize/chlimage_1-11.png)
 
 1. **새로 만들기...**&#x200B;를 클릭합니다.
-1. **제목**, **이름** 및 만들 경험의 유형을 지정할 수 있습니다.이 경우 Test&amp;Target 오퍼.
+1. 을(를) 지정할 수 있습니다 **제목**, **이름** 만들 경험 유형; 이 경우 Test&amp;Target 오퍼.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -39,4 +39,4 @@ ht-degree: 71%
 
 ## Adobe Target과 통합 {#integrating-with-adobe-target}
 
-자세한 내용은 [Adobe과 통합](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md)을 참조하십시오.
+자세한 내용은 [Adobe과 통합](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) 자세한 내용

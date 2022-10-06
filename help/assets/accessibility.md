@@ -36,12 +36,12 @@ Possible topics to cover in this article are below.
 
 [!DNL Experience Manager] 에서는 다음 표준에 대해 다양한 수준의 지원을 제공합니다.
 
-* [웹 컨텐츠 액세스 가능성 지침(WCAG) 2.1](https://www.w3.org/TR/WCAG/).
+* [웹 콘텐츠 접근성 지침(WCAG) 2.1](https://www.w3.org/TR/WCAG/).
 * [&quot;회생법&quot; 제508절 개정](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
 * [Accessibility Initiative - W3C의 액세스 가능한 리치 인터넷 애플리케이션(WAI-ARIA)](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-규정 준수 수준에 대한 세부 정보가 있는 보고서를 읽으려면 다음을 참조하십시오 [액세서빌러티 적합성 보고서](https://www.adobe.com/accessibility/compliance.html) (ACR) 페이지를 보여줍니다.
+규정 준수 수준에 대한 세부 정보가 있는 보고서를 읽으려면 다음을 참조하십시오 [액세서빌러티 적합성 보고서](https://www.adobe.com/kr/accessibility/compliance.html) (ACR) 페이지를 보여줍니다.
 
 방법 [!DNL Dynamic Media] 액세스할 수 있습니다. 자세한 내용은 [액세스 가능성 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
@@ -85,7 +85,7 @@ in [!DNL Experience Manager], 액세스 가능성 기능은 [!DNL Experience Man
 | 의 열 보기 [!DNL Assets] 사용자 인터페이스 | 위쪽 및 아래쪽 화살표 키 | 동일한 계층 내에서 파일 및 폴더로 이동합니다. |
 | 의 열 보기 [!DNL Assets] 사용자 인터페이스 | 왼쪽 및 오른쪽 화살표 키 | 현재 폴더 위 또는 아래로 파일 및 폴더로 이동합니다. |
 | 폴더 찾아보기 [!DNL Assets] | `/` | Omnisearch 상자를 열어 검색을 호출합니다. |
-| [!DNL Assets] 콘솔 | &amp;grave; | 사이드 레일 전환 |
+| [!DNL Assets] 콘솔 | &grave; | 사이드 레일 전환 |
 | [!DNL Assets] 콘솔 | `Alt + 1` | 컨텐츠 트리를 엽니다. |
 | [!DNL Assets] 콘솔 | `Alt + 2` | 열기 [!UICONTROL 탐색] 왼쪽 레일. |
 | [!DNL Assets] 콘솔 | `Alt + 3` | 표시 [!UICONTROL 타임라인] 선택한 자산 중 하나를 선택합니다. |
@@ -159,7 +159,7 @@ Review CQ-4282133 before adding - Close option in a coral-dialog wasn't accessib
 * Some enhancements to metadata properties UI?
 -->
 
-## 디지털 자산을 관리합니다 {#manage-assets}
+## 디지털 에셋 관리 {#manage-assets}
 
 CRUD 작업, 자산 다운로드, 메타데이터 추가와 같은 많은 자산 관리 작업은 다양한 수준에서 액세스할 수 있습니다. [!DNL Assets] 화면 판독기 및 키보드 등 다양한 보조 기술을 사용하여 작업을 수행할 수 있습니다.
 
@@ -191,7 +191,7 @@ CRUD 작업, 자산 다운로드, 메타데이터 추가와 같은 많은 자산
 * 화면 판독기는 검색 필터의 옵션을 확장 가능한 아코디언으로 알려줍니다.
 * 혼합 상태 옵션이 있는 설명은 화면 판독기에 표시됩니다.
 
-## 자산 공유 {#share-assets}
+## 에셋 공유 {#share-assets}
 
 <!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->

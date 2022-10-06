@@ -1,8 +1,8 @@
 ---
 title: 컬렉션을 Brand Portal에 게시
-seo-title: 컬렉션을 Brand Portal에 게시
+seo-title: Publish collections to Brand Portal
 description: Brand Portal에 컬렉션을 게시하고 게시 취소하는 방법을 알아봅니다.
-seo-description: Brand Portal에 컬렉션을 게시하고 게시 취소하는 방법을 알아봅니다.
+seo-description: Learn how to publish and unpublish collections to Brand Portal.
 uuid: 7de58548-4cfa-4a94-bac7-9e914dee9042
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -15,7 +15,7 @@ role: User
 exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '322'
 ht-degree: 36%
 
 ---

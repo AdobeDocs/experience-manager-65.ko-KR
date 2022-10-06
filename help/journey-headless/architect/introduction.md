@@ -1,18 +1,19 @@
 ---
-title: AEM Headless Content Architect 여정
+title: AEM 헤드리스 콘텐츠 설계 여정
 description: Adobe Experience Manager의 강력하고 유연한 헤드리스 기능과 프로젝트 컨텐츠를 모델링하는 방법을 소개합니다.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# AEM을 사용한 헤드리스를 위한 컨텐츠 모델링 - 소개 {#architect-headless-introduction}
+# AEM을 통한 Headless용 콘텐츠 모델링 - 소개 {#architect-headless-introduction}
 
 의 이 부분에서 [AEM Headless Content Architect 여정](overview.md), AEM(Adobe Experience Manager)을 사용하여 헤드리스 컨텐츠 전달을 위한 컨텐츠 모델링을 이해하는 데 필요한 (기본) 개념과 용어를 배울 수 있습니다.
 
-이 문서는 헤드리스 컨텐츠 전달, AEM에서 헤드리스를 지원하는 방법 및 헤드리스를 위해 컨텐츠를 모델링하는 방법을 이해하는 데 도움이 됩니다. 읽은 후에는 다음을 수행해야 합니다.
+이 문서는 헤드리스 컨텐츠 전달, AEM에서 헤드리스를 지원하는 방법 및 헤드리스를 위해 컨텐츠를 모델링하는 방법을 이해하는 데 도움이 됩니다. 문서를 읽고 나면
 
 * 헤드리스 컨텐츠 전달의 기본 개념을 이해합니다.
 * AEM에서 헤드리스 및 컨텐츠 모델링을 지원하는 방법을 숙지하십시오.
@@ -47,7 +48,7 @@ ht-degree: 0%
 
 헤드리스 CMS에 대해 이야기할 때, CMS는 컨텐츠를 관리하고 소비자에게 계속 제공합니다. 그러나, **콘텐츠** 표준화된 방식으로, 헤드리스 CMS는 최종 출력 렌더링을 생략하고 **프레젠테이션** 컨텐츠를 소비되는 서비스에 전달합니다.
 
-![헤드리스 CMS](/help/journey-headless/developer/assets/headless-cms.png)
+![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
 경험 AR 경험, 웹 스토어, 모바일 경험, 점진적 웹 앱(PWA) 등 소비되는 서비스는 헤드리스 CMS의 콘텐츠를 가져와서 자체 렌더링을 제공합니다. 그들은 여러분의 컨텐츠에 대해 그들 자신의 의견을 제공하는 것을 돌봅니다.
 
@@ -71,7 +72,7 @@ AEM(Adobe Experience Manager)에서는 AEM GraphQL API를 사용하여 컨텐츠
 
 즉, 프로젝트에서 애플리케이션에 사용할 구조화된 컨텐츠의 헤드리스 전달을 실현할 수 있습니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 개념과 용어를 학습했으므로 다음 단계는 다음과 같습니다 [컨텐츠 조각 모델을 사용하여 모델링을 위한 기본 사항을 알아봅니다](basics.md).
 

@@ -56,7 +56,7 @@ AEM Assets은 Adobe Developer 콘솔을 통해 Brand Portal으로 구성되며, 
 
 * Linux 및 Microsoft Windows 운영 체제 사용.
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필요합니다.
 
@@ -300,7 +300,7 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
 
    ![](assets/create-cloud-service.png)
 
-1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다. 클라우드 구성이 만들어집니다.
+1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다. 클라우드 구성이 만들어집니다.
 
    이제 AEM Assets 작성자 인스턴스가 Brand Portal 테넌트로 구성됩니다.
 

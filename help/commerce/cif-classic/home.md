@@ -1,10 +1,11 @@
 ---
 title: AEM CIF Classic
 description: AEM CIF Classic 자습 리소스 및 설명서 링크
-source-git-commit: 491b0398c90d84f38efaa7f0ccd4d4215064753d
+exl-id: ae0823b3-d847-42b6-ba92-e4e949da1799
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '52'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -18,7 +19,6 @@ ht-degree: 3%
 >
 >* 새 프로젝트에서는 다음을 사용해야 합니다 [AEM CIF](/help/commerce/home.md).
 >* 기존 CIF Classic은 [AEM CIF로 마이그레이션](/help/commerce/cif/migration.md).
-
 >
 
 

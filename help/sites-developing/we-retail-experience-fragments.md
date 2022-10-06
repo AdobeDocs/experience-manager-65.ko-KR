@@ -1,8 +1,8 @@
 ---
 title: We.Retail에서 경험 조각 시험 사용
-seo-title: We.Retail에서 경험 조각 시험 사용
+seo-title: Trying out Experience Fragments in We.Retail
 description: We.Retail에서 경험 조각 시험 사용
-seo-description: We.Retail에서 경험 조각 시험 사용
+seo-description: Trying out Experience Fragments in We.Retail
 uuid: 43a6df77-9dd3-4316-b749-0ef059370f7d
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 exl-id: e17ff611-122a-4d17-97af-071d0234dd16
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 53%
+source-wordcount: '235'
+ht-degree: 50%
 
 ---
 
@@ -29,25 +29,23 @@ We.Retail에서 경험 조각 시험 사용
 
 >[!NOTE]
 >
->**[컨텐츠 조각](/help/sites-developing/we-retail-content-fragments.md)** 및 **경험 조각**&#x200B;은 AEM 내의 다양한 기능입니다.
+>**[콘텐츠 조각](/help/sites-developing/we-retail-content-fragments.md)** 및 **경험 조각**&#x200B;은 AEM 내의 다양한 기능입니다.
 >
->* **컨텐츠 조각**&#x200B;은 편집 가능한 컨텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 컨텐츠입니다.
+>* **콘텐츠 조각**&#x200B;은 편집 가능한 콘텐츠이며, 주로 텍스트나 관련 이미지입니다. 또한 디자인과 레이아웃이 없는 순수 콘텐츠입니다.
 >* **경험 조각**&#x200B;은 전체적으로 배치된 컨텐츠, 즉 웹 페이지 조각입니다.
-
 >
->
-경험 조각은 컨텐츠 조각 형태로 컨텐츠를 포함할 수 있지만 반대로는 불가능합니다.
+>경험 조각은 콘텐츠 조각 형태로 콘텐츠를 포함할 수 있지만 반대로는 불가능합니다.
 
 ## We.Retail에서 경험 조각을 만드는 위치 {#where-to-create-experience-fragments-in-we-retail}
 
-전역 탐색에서 **경험 조각**&#x200B;을 선택합니다. 여기서 [만들기](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) 및 [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) 경험 조각과 관련된 [변형](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)을 구성합니다.
+전역 탐색에서 **경험 조각**&#x200B;을 선택합니다. 여기서, [만들기](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) 및 [편집](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) 경험 조각 및 관련 항목 [변형](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
 
-## We.Retail에서 경험 조각을 사용할 위치 {#where-to-use-experience-fragments-in-we-retail}
+## We.Retail에서 경험 조각을 사용하는 위치 {#where-to-use-experience-fragments-in-we-retail}
 
-전역 탐색에서 **사이트** 아래의 [모든 페이지에서 [경험 조각](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment)(다른 구성 요소와 함께)을 사용할 수 있습니다.](/help/sites-authoring/editing-content.md)
+을(를) 사용할 수 있습니다 [경험 조각](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (다른 구성 요소와 마찬가지로) [임의 페이지](/help/sites-authoring/editing-content.md) 아래에 **Sites** 을 눌러 전역 탐색에 추가합니다.
 
 ## 추가 정보 {#further-information}
 
 자세한 내용은 다음을 참조하십시오.
 
-* [경험 구성요소](/help/sites-authoring/experience-fragments.md)
+* [경험 조각](/help/sites-authoring/experience-fragments.md)

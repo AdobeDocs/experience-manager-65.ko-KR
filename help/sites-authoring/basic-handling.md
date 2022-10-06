@@ -1,8 +1,8 @@
 ---
 title: 기본 처리
-seo-title: 기본 처리
+seo-title: Basic Handling
 description: AEM 탐색 및 기본 사용 방법 익히기
-seo-description: AEM 탐색 및 기본 사용 방법 익히기
+seo-description: Get comfortable with navigating AEM and its basic usage
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2969'
 ht-degree: 100%
 
 ---
@@ -29,10 +29,9 @@ ht-degree: 100%
 >
 
 
-
 ## 시작하기 {#getting-started}
 
-### 터치 활성화 UI {#a-touch-enabled-ui}
+### 터치 지원 UI {#a-touch-enabled-ui}
 
 AEM 사용자 인터페이스는 터치가 활성화되어 있습니다. 터치 활성화 인터페이스를 사용하면 탭, 길게 터치하기, 밀기 등과 같은 동작을 통해 소프트웨어와 상호 작용할 수 있습니다. 이것은 기존의 데스크탑 인터페이스가 클릭, 두 번 클릭, 마우스 오른쪽 클릭, 마우스오버 등과 같은 마우스 제스처를 사용하는 방식과 대조적입니다.
 
@@ -52,7 +51,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ### 제품 탐색 {#product-navigation}
 
-사용자가 콘솔에 처음 액세스할 때마다 제품 탐색 자습서가 시작됩니다. 잠시 시간을 내어 자습서를 클릭하거나 탭하여 AEM 기본 처리 방법에 대한 개요를 확인하십시오.
+사용자가 콘솔에 처음 액세스할 때마다 제품 탐색 튜토리얼이 시작됩니다. 잠시 시간을 내어 튜토리얼을 클릭하거나 탭하여 AEM 기본 처리 방법에 대한 개요를 확인하십시오.
 
 ![bh-02](assets/bh-02.png)
 
@@ -74,7 +73,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 전역 탐색에는 다음과 같은 두 개의 패널이 있으며 화면의 왼쪽 여백에 아이콘으로 표시됩니다.
 
-* **[탐색](/help/sites-authoring/basic-handling.md#navigation-panel)** - 나침반으로 표시되며, 
+* **[탐색](/help/sites-authoring/basic-handling.md#navigation-panel)** - 나침반으로 표시되며
 * **[도구](/help/sites-authoring/basic-handling.md#tools-panel)** - 망치로 표시됨
 
 이러한 패널에서 사용 가능한 옵션은 아래에 설명되어 있습니다.
@@ -85,7 +84,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ![bh-01](assets/bh-01.png)
 
-콘솔 및 컨텐츠를 탐색할 때 브라우저 탭의 제목이 현재 위치를 반영하도록 업데이트됩니다.
+콘솔 및 콘텐츠를 탐색할 때 브라우저 탭의 제목이 현재 위치를 반영하도록 업데이트됩니다.
 
 탐색에서 사용할 수 있는 콘솔은 다음과 같습니다.
 
@@ -212,7 +211,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 * [보기](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-   보기 아이콘은 AEM 도구 모음의 맨 오른쪽에 있습니다. 또한 현재 보기를 나타내므로 아이콘이 변경됩니다. 예를 들어, 기본 보기인 **열 보기**&#x200B;에서 다음이 표시됩니다.
+   보기 아이콘은 AEM 도구 모음의 맨 오른쪽에 있습니다. 또한 현재 보기를 나타내므로 아이콘이 변경됩니다. 예를 들어 기본 보기인 **열 보기**&#x200B;에서 다음이 표시됩니다.
 
    ![bh-07](assets/bh-07.png)
 
@@ -268,12 +267,12 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
    >모든 키보드 단축키에 대한 개요는 다음 문서를 참조하십시오.
    >
    >    * [페이지 편집을 위한 키보드 단축키](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >* [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
+   >    * [콘솔용 키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## 작업 도구 모음 {#actions-toolbar}
 
-리소스를 선택하면(예: 페이지 또는 자산) 도구 모음에 설명 텍스트가 있는 아이콘으로 다양한 작업이 표시됩니다. 이러한 작업은 다음 항목에 따라 달라집니다.
+리소스를 선택하면(예: 페이지 또는 에셋) 도구 모음에 설명 텍스트가 있는 아이콘으로 다양한 작업이 표시됩니다. 이러한 작업은 다음 항목에 따라 달라집니다.
 
 * 현재 콘솔.
 * 현재 컨텍스트.
@@ -292,11 +291,11 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 >
 >사용할 수 있는 개별 아이콘은 적절한 콘솔/기능/시나리오와 관련하여 문서화되어 있습니다.
 
-## 빠른 작업  {#quick-actions}
+## 빠른 작업 {#quick-actions}
 
 [카드 보기](#cardviewquickactions)에서는 특정 작업을 빠른 작업 아이콘으로 사용할 수 있을 뿐 아니라 도구 모음에 표시할 수도 있습니다. 빠른 작업 아이콘은 한 번에 단일 항목에 사용할 수 있으며 사전 선택할 필요가 없습니다.
 
-빠른 작업은(데스크톱 장치) 리소스 카드 위에 마우스를 올려 놓으면 표시됩니다. 사용 가능한 빠른 작업은 콘솔 및 컨텍스트에 따라 달라질 수 있습니다. 예를 들어, **사이트** 콘솔에서 페이지에 대한 빠른 작업은 다음과 같습니다.
+빠른 작업은(데스크탑 디바이스) 리소스 카드 위에 마우스를 올려 놓으면 표시됩니다. 사용 가능한 빠른 작업은 콘솔 및 컨텍스트에 따라 달라질 수 있습니다. 예를 들어 **사이트** 콘솔에서 페이지에 대한 빠른 작업은 다음과 같습니다.
 
 ![bh-13](assets/bh-13.png)
 
@@ -313,11 +312,11 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 >[!NOTE]
 >
->기본적으로 AEM Assets은 보기의 썸네일로 UI에 있는 자산의 원본 표현물을 표시하지 않습니다. 관리자인 경우, 오버레이를 사용하여 AEM Assets을 구성한 뒤 원본 표현물을 썸네일로 표시할 수 있습니다.
+>기본적으로 AEM Assets은 보기의 썸네일로 UI에 있는 에셋의 원본 표현물을 표시하지 않습니다. 관리자인 경우, 오버레이를 사용하여 AEM Assets을 구성한 뒤 원본 표현물을 썸네일로 표시할 수 있습니다.
 
-### 리소스 선택  {#selecting-resources}
+### 리소스 선택 {#selecting-resources}
 
-특정 리소스를 선택하는 방법은 보기 및 장치 조합에 따라 다릅니다.
+특정 리소스를 선택하는 방법은 보기 및 디바이스 조합에 따라 다릅니다.
 
 <table>
  <tbody>
@@ -378,7 +377,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ![screen-shot_2019-03-05at094659](assets/screen-shot_2019-03-05at094659.png)
 
-#### 전체 선택 취소 {#deselecting-all}
+#### 모두 선택 취소 {#deselecting-all}
 
 모든 항목을 선택하면 선택한 항목의 수가 도구 모음의 오른쪽 상단에 표시됩니다.
 
@@ -394,7 +393,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 #### 선택 예 {#selecting-example}
 
-1. 예를 들면 카드 보기에서 다음을 수행합니다.
+1. 예를 들면 카드 보기에서 다음 작업을 수행합니다.
 
    ![bh-15](assets/bh-15.png)
 
@@ -406,7 +405,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ![bh-16](assets/bh-16.png)
 
-[열 보기]를 사용하면 일련의 계단식 열을 통해 컨텐츠 트리를 시각적으로 탐색할 수 있습니다. 이 보기에서는 웹 사이트의 트리 구조를 시각화하고 트래버스할 수 있습니다.
+[열 보기]를 사용하면 일련의 계단식 열을 통해 콘텐츠 트리를 시각적으로 탐색할 수 있습니다. 이 보기에서는 웹 사이트의 트리 구조를 시각화하고 트래버스할 수 있습니다.
 
 맨 왼쪽 열의 리소스를 선택하면 오른쪽 열에 하위 리소스가 표시됩니다. 오른쪽 열에서 리소스를 선택하면 오른쪽의 다른 열에 하위 리소스가 표시됩니다.
 
@@ -478,13 +477,13 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
       * 확인란을 다시 클릭하거나 탭하면 모든 항목이 선택 취소됩니다.
 
 
-* [보기] 단추 아래에 있는 **보기 설정** 옵션을 사용하여 표시할 열을 선택합니다. 다음 열이 표시될 수 있습니다.
+* [보기] 버튼 아래에 있는 **보기 설정** 옵션을 사용하여 표시할 열을 선택합니다. 다음 열이 표시될 수 있습니다.
 
    * **이름** - 페이지 이름이며, 페이지 URL의 일부이고 언어와 관계없이 변경되지 않으므로 다국어 제작 환경에서 유용할 수 있습니다.
    * **수정됨** - 마지막 수정 일자 및 수정자
    * **게시됨** - 게시 상태
    * **템플릿** - 페이지의 기반이 되는 템플릿
-   * **워크플로우** - 페이지에 현재 적용된 워크플로우입니다. 마우스오버로 또는 타임라인을 열면 더 많은 정보를 사용할 수 있습니다.
+   * **워크플로** - 페이지에 현재 적용된 워크플로입니다. 마우스오버로 또는 타임라인을 열면 더 많은 정보를 사용할 수 있습니다.
 
    * **페이지 분석**
    * **고유 방문자 수**
@@ -520,23 +519,24 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 예를 들어 Sites에서 컨텐츠 전용(기본값), 컨텐츠 트리, 타임라인, 참조 또는 필터 사이드 패널을 선택할 수 있습니다.
 
-컨텐츠만을 선택하면 레일 아이콘만 표시됩니다. 기타 옵션이 선택된 경우, 레일 아이콘 옆에 옵션 이름이 표시됩니다.
+콘텐츠만을 선택하면 레일 아이콘만 표시됩니다. 기타 옵션이 선택된 경우, 레일 아이콘 옆에 옵션 이름이 표시됩니다.
 
 >[!NOTE]
 >
 >[키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)를 사용하면 레일 디스플레이 옵션 간을 빠르게 전환할 수 있습니다.
 
-### 컨텐츠 트리 {#content-tree}
+### 콘텐츠 트리 {#content-tree}
 
-컨텐츠 트리를 사용하여 사이드 패널에서 사이트 계층 구조를 빠르게 탐색하고, 현재 폴더의 페이지에 대한 다양한 정보를 볼 수 있습니다.
+콘텐츠 트리를 사용하여 사이드 패널에서 사이트 계층 구조를 빠르게 탐색하고, 현재 폴더의 페이지에 대한 다양한 정보를 볼 수 있습니다.
 
-컨텐츠 트리 사이드 패널과 목록 보기 또는 카드 보기를 함께 사용하여 프로젝트의 계층 구조를 쉽게 확인하고, 컨텐츠 트리 사이드 패널을 사용해서 컨텐츠 구조를 쉽게 탐색할 수 있으며 목록 보기에서 자세한 페이지 정보를 볼 수 있습니다.
+콘텐츠 트리 사이드 패널과 목록 보기 또는 카드 보기를 함께 사용하여 프로젝트의 계층 구조를 쉽게 확인하고, 콘텐츠 트리 사이드 패널을 사용해서 콘텐츠 구조를 쉽게 탐색할 수 있으며 목록 보기에서 자세한 페이지 정보를 볼 수 있습니다.
 
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
 >
 >계층 구조 보기에서 항목을 선택한 후에는 화살표 키를 사용하여 계층 구조를 빠르게 탐색할 수 있습니다.
+>
 >자세한 내용은 [키보드 단축키](/help/sites-authoring/keyboard-shortcuts.md)를 참조하십시오.
 
 ### 타임라인 {#timeline}
@@ -554,7 +554,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
       * 활동
       * [론치](/help/sites-authoring/launches.md)
       * [버전](/help/sites-authoring/working-with-page-versions.md)
-      * [워크플로우](/help/sites-authoring/workflows-applying.md)
+      * [워크플로](/help/sites-authoring/workflows-applying.md)
 
          * 내역 정보가 저장되지 않는 [임시 워크플로우](/help/sites-developing/workflows.md#transient-workflows) 제외
       * 모두 표시
@@ -562,7 +562,7 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 * [선택한 항목에 대한 댓글 추가/보기](#timelineaddingandviewingcomments) 이벤트 목록 맨 아래쪽에 **주석** 상자가 표시됩니다. 댓글을 입력(입력 후 Return 키)하면 댓글이 등록되고 이 댓글은 **댓글** 또는 **모두 표시**&#x200B;를 선택하면 표시됩니다.
 
-* 특정 콘솔에는 추가 기능이 있습니다. 예를 들면 [사이트 콘솔]에서 다음을 수행할 수 있습니다.
+* 특정 콘솔에는 추가 기능이 있습니다. 예를 들면 [사이트 콘솔]에서 다음과 같은 작업을 수행할 수 있습니다.
 
    * [버전 저장](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [워크플로우 시작](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
@@ -573,12 +573,12 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ### 참조 {#references}
 
-**참조**&#x200B;에는 선택한 리소스에 대한 모든 연결 내용이 표시됩니다. 예를 들어, 페이지의 **사이트** 콘솔 [참조](/help/sites-authoring/author-environment-tools.md#showingpagereferences)는 다음과 같은 정보를 표시합니다.
+**참조**&#x200B;에는 선택한 리소스에 대한 모든 연결 내용이 표시됩니다. 예를 들어 페이지의 **사이트** 콘솔 [참조](/help/sites-authoring/author-environment-tools.md#showingpagereferences)는 다음과 같은 정보를 표시합니다.
 
 * [론치](/help/sites-authoring/launches.md#launches-in-references-sites-console)
-* [Live copy](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
-* [언어 복사](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
-* 컨텐츠 참조:
+* [라이브 카피](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
+* [언어 사본](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
+* 콘텐츠 참조:
 
    * 다른 페이지에서 선택한 페이지로의 링크
    * 참조 구성 요소가 선택한 페이지에서 빌린 컨텐츠 및/또는 선택한 페이지에 빌려준 컨텐츠
@@ -587,6 +587,6 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ### 필터 {#filter}
 
-필터를 선택하면 해당 위치 필터가 이미 설정된 [검색](/help/sites-authoring/search.md)과 비슷한 패널이 열리므로, 보려는 컨텐츠를 추가로 필터링할 수 있습니다.
+필터를 선택하면 해당 위치 필터가 이미 설정된 [검색](/help/sites-authoring/search.md)과 비슷한 패널이 열리므로, 보려는 콘텐츠를 추가로 필터링할 수 있습니다.
 
 ![bh-29](assets/bh-29.png)

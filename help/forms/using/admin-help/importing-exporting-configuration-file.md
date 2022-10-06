@@ -1,8 +1,8 @@
 ---
 title: 구성 파일 가져오기 및 내보내기
-seo-title: 구성 파일 가져오기 및 내보내기
+seo-title: Importing and exporting the configuration file
 description: 서버 환경 설정을 편집하거나 다른 AEM Forms 제품 인스턴스를 구성하기 위해 구성 파일을 가져오고 내보내는 방법을 알아봅니다.
-seo-description: 서버 환경 설정을 편집하거나 다른 AEM Forms 제품 인스턴스를 구성하기 위해 구성 파일을 가져오고 내보내는 방법을 알아봅니다.
+seo-description: Learn how to import and export the configuration file in order to edit server preferences or configure another AEM forms product instance.
 uuid: 32e8a709-2d7c-4740-9533-d53aa751bc58
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
 exl-id: 225dbeb5-a21c-4338-98c7-e10c32973721
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
-# 구성 파일 {#importing-and-exporting-the-configuration-file} 가져오기 및 내보내기
+# 구성 파일 가져오기 및 내보내기 {#importing-and-exporting-the-configuration-file}
 
 [수동 구성] 페이지에서는 구성 설정의 사본을 XML 형식으로 다운로드할 수 있습니다. 이 파일의 설정은 모든 서버 기본 설정을 제어합니다. 그런 다음 파일을 편집하고 다시 서버에 업로드할 수 있습니다. 파일을 사용하여 다른 AEM Forms 제품 인스턴스를 구성할 수도 있습니다.
 

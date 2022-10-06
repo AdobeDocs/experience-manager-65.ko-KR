@@ -1,8 +1,8 @@
 ---
 title: 프록시 서버 도구 사용 방법
-seo-title: 프록시 서버 도구 사용 방법
+seo-title: How to use the Proxy Server Tool
 description: 프록시 서버는 클라이언트와 서버 사이의 요청을 중계하는 중간 서버 역할을 합니다
-seo-description: 프록시 서버는 클라이언트와 서버 사이의 요청을 중계하는 중간 서버 역할을 합니다
+seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
 uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 2%
+source-wordcount: '943'
+ht-degree: 1%
 
 ---
 
@@ -32,23 +32,23 @@ AEM 설치에서 프록시 서버를 찾을 수 있습니다.
 * 전자 메일 메시지의 SMTP
 * 사용자 관리를 위한 LDAP
 
-예를 들어 TCP/IP 네트워크를 통해 통신하는 두 응용 프로그램 사이에 프록시 서버를 배치할 수 있습니다.예: 웹 브라우저 및 AEM 이를 통해 CQ 페이지를 요청할 때 발생하는 일을 정확하게 모니터링할 수 있습니다.
+예를 들어 TCP/IP 네트워크를 통해 통신하는 두 응용 프로그램 사이에 프록시 서버를 배치할 수 있습니다. 예: 웹 브라우저 및 AEM 이를 통해 CQ 페이지를 요청할 때 발생하는 일을 정확하게 모니터링할 수 있습니다.
 
-## 프록시 서버 도구 {#starting-the-proxy-server-tool} 시작
+## 프록시 서버 도구 시작 {#starting-the-proxy-server-tool}
 
 명령줄에서 서버를 시작합니다.
 
 `java -jar proxy-2.1.jar <host> <remoteport> <localport> [options]`
 
-**매개 변수**
+**매개변수**
 
 `<host>`
 
-연결할 CRX 인스턴스의 호스트 주소입니다. 인스턴스가 로컬 컴퓨터에 있는 경우 이 인스턴스는 `localhost`입니다.
+연결할 CRX 인스턴스의 호스트 주소입니다. 인스턴스가 로컬 컴퓨터에 있는 경우 `localhost`.
 
 `<remoteport>`
 
-대상 CRX 인스턴스의 호스트 포트입니다. 예를 들어 새로 설치된 AEM 설치의 기본값은 **`4502`**&#x200B;이고, 새로 설치된 AEM 작성자 인스턴스의 기본값은 `4502`입니다.
+대상 CRX 인스턴스의 호스트 포트입니다. 예를 들어 새로 설치된 AEM 설치의 기본값은 입니다 **`4502`** 새로 설치된 AEM 작성자 인스턴스의 기본값은 입니다. `4502`.
 
 `<localport>`
 
@@ -74,7 +74,7 @@ AEM 설치에서 프록시 서버를 찾을 수 있습니다.
 
 **`-i <numIndentions>`**(들여쓰기 추가)
 
-각 활성 연결은 보다 잘 읽을 수 있도록 들여씁니다. 기본값은 16개 수준입니다. 이 기능은 `proxy.jar version 1.16`에서 도입되었습니다.
+각 활성 연결은 보다 잘 읽을 수 있도록 들여씁니다. 기본값은 16개 수준입니다. 이 기능은 `proxy.jar version 1.16`.
 
 ### 로그 형식 {#log-format}
 
@@ -98,7 +98,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-이는 6번째 연결에 있는 클라이언트( `C`)와 서버( `S`) 사이에 평균 속도로 전달된 바이트 수를 보여줍니다.
+클라이언트 사이에 전달된 바이트 수를 표시합니다( `C`) 및 서버( `S`)을 클릭하여 제품에서 사용할 수 있습니다.
 
 **로그 출력의 예**
 
@@ -114,7 +114,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 `/content/test.jpg`
 
-`test.html`의 컨텐츠는 다음과 같습니다.
+의 콘텐츠 `test.html` is:
 
 ```xml
 <html>
@@ -128,11 +128,11 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 </html>
 ```
 
-AEM 인스턴스가 `localhost:4502`에서 실행 중이면 다음과 같이 프록시를 시작합니다.
+AEM 인스턴스가 `localhost:4502` 다음과 같이 프록시를 시작합니다.
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-이제 `localhost:4444`의 프록시를 통해 CQ/CRX 인스턴스에 액세스할 수 있으며 이 포트를 통한 모든 통신이 `test.log`에 기록됩니다.
+이제 프록시를 통해 CQ/CRX 인스턴스에 액세스할 수 있습니다. `localhost:4444` 이 포트를 통한 모든 통신이 `test.log`.
 
 이제 프록시의 출력을 보면 브라우저와 AEM 인스턴스 간의 상호 작용이 표시됩니다.
 
@@ -147,7 +147,7 @@ using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 
 `http://localhost:4444/content/test.html`
 
-브라우저가 페이지에 대해 `GET` 요청을 하는 것이 보입니다.
+그리고 브라우저가 `GET` 페이지에 대한 요청:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -164,7 +164,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-AEM 인스턴스는 `test.html` 파일의 컨텐츠에 응답합니다.
+AEM 인스턴스는 파일의 컨텐츠에 응답합니다 `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -186,7 +186,7 @@ S-0-#000311 -> [</body>]
 S-0-#000319 -> [</html>]
 ```
 
-### 프록시 서버 {#uses-of-the-proxy-server} 사용
+### 프록시 서버의 사용 {#uses-of-the-proxy-server}
 
 다음 시나리오는 프록시 서버를 사용할 수 있는 몇 가지 목적을 보여 줍니다.
 

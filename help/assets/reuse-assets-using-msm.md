@@ -27,7 +27,7 @@ ht-degree: 10%
 * 동기화에 여러 사본을 유지하고 원본 기본 복사본을 한 번 업데이트하여 변경 사항을 하위 복사본에 푸시합니다.
 * 상위 자산과 하위 자산 간의 연결을 일시적으로 또는 영구적으로 일시 중단하여 로컬 변경을 수행합니다.
 
-## 전제 조건 {#prereq}
+## 사전 요구 사항 {#prereq}
 
 에 MSM을 사용하려면 [!DNL Assets], 최소 설치 [!DNL Experience Manager] 6.5 서비스 팩 1. 자세한 내용은 [최신 서비스 팩의 릴리스 노트](/help/release-notes/release-notes.md).
 

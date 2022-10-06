@@ -1,8 +1,8 @@
 ---
 title: 단일 사인온 및 시간 초과 핸들러
-seo-title: 단일 사인온 및 시간 초과 핸들러
+seo-title: Single Sign On and timeout handlers
 description: AEM Forms 작업 공간에 대한 세션 시간 초과 값을 설정하는 방법.
-seo-description: AEM Forms 작업 공간에 대한 세션 시간 초과 값을 설정하는 방법.
+seo-description: How-to set the session timeout value for AEM Forms workspace.
 uuid: 17583fd5-6453-41d3-bb63-a639983fbea9
 contentOwner: robhagat
 content-type: reference
@@ -12,24 +12,24 @@ discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 exl-id: 4f824d80-f3f8-4010-9583-5a9ab1151a7b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# 단일 사인온 및 시간 초과 처리기 {#single-sign-on-and-timeout-handlers}
+# 단일 사인온 및 시간 초과 핸들러 {#single-sign-on-and-timeout-handlers}
 
-AEM Forms 작업 공간이 SSO를 사용하도록 설정되어 있습니다. 사용자가 Forms Manager 또는 PDF Generator 사용자 인터페이스와 같은 AEM Forms 애플리케이션에 로그인하여 동일한 브라우저 세션에서 AEM Forms 작업 공간에 액세스한 경우 사용자는 AEM Forms 작업 공간에 로그인하거나 그 반대의 경우도 있습니다.
+AEM Forms 작업 공간이 SSO를 사용하도록 설정되어 있습니다. 사용자가 Forms Manager 또는 PDF 생성기 사용자 인터페이스와 같은 AEM Forms 애플리케이션에 로그인하여 동일한 브라우저 세션에서 AEM Forms 작업 공간에 액세스한 경우, 사용자는 AEM Forms 작업 공간에 로그인하거나 그 반대의 경우도 있습니다.
 
-## AEM Forms 작업 공간 {#handling-server-timeout-in-nbsp-aem-forms-workspace}의 서버 시간 제한 처리
+## AEM Forms 작업 공간의 서버 시간 제한 처리 {#handling-server-timeout-in-nbsp-aem-forms-workspace}
 
 사용자에 대한 세션 시간 초과는 관리 콘솔에서 구성할 수 있습니다.
 
-시간 제한을 설정하려면 `https://'[server]:[port]'/adminui`에 로그인하고 **설정 > 사용자 관리 > 구성 > 고급 시스템 속성 구성**&#x200B;으로 이동한 다음 원하는 설정을 만드십시오.
+시간 제한을 설정하려면 다음을 로그인하여 `https://'[server]:[port]'/adminui`, 다음 위치로 이동합니다. **설정 > 사용자 관리 > 구성 > 고급 시스템 속성 구성**&#x200B;를 누르고 원하는 설정을 만듭니다.
 
 AEM Forms 작업 공간 시간 제한은 다음과 같이 처리됩니다.
 
-* 사용자의 세션 기간은 사용자 세션을 초기화하는 `initialize` 호출에 대한 응답으로 사용할 수 있습니다.
+* 사용자의 세션 기간은 `initialize` 사용자 세션을 초기화하는 호출.
 * 팝업 대화 상자는 세션 만료 15초 전에 세션이 만료된다는 것을 사용자에게 알립니다.
 
 이 팝업 대화 상자에서 다음을 수행합니다.

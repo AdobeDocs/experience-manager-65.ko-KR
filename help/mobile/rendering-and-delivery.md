@@ -1,8 +1,8 @@
 ---
 title: 렌더링 및 전달
-seo-title: 렌더링 및 전달
+seo-title: Rendering and Delivery
 description: 렌더링 및 전달
-seo-description: 'null'
+seo-description: null
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
@@ -11,18 +11,18 @@ discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '573'
 ht-degree: 8%
 
 ---
 
-# 렌더링 및 배달{#rendering-and-delivery}
+# 렌더링 및 전달{#rendering-and-delivery}
 
 >[!NOTE]
 >
 >단일 페이지 애플리케이션 프레임워크 기반 클라이언트측 렌더링(예: React)이 필요한 프로젝트에 SPA 편집기를 사용하는 것이 좋습니다. [추가 정보](/help/sites-developing/spa-overview.md).
 
-AEM 콘텐츠은 [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)을 통해 쉽게 렌더링하여 [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 및 기타 형식을 렌더링할 수 있습니다.
+AEM 콘텐츠를 을 통해 쉽게 렌더링할 수 있습니다 [Sling 기본 서블릿](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 렌더링 [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 및 기타 형식으로 채울 수 있습니다.
 
 이러한 기본 제공 렌더링에서는 일반적으로 리포지토리를 표시하고 컨텐츠를 그대로 반환합니다.
 
@@ -34,23 +34,23 @@ Content Services 기본 렌더러는 기본 제공 Sling 기본값과 사용자 
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
-## JSON {#requesting-json} 요청
+## JSON 요청 {#requesting-json}
 
-**&lt;RESOURCE.caas[를 사용하십시오.&lt;export-config>.][&lt;export-config>.** json 요청 JSON에 전송됩니다.]
+사용 **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** JSON을 요청하려면 를 클릭하십시오.]
 
 <table>
  <tbody>
   <tr>
    <td>리소스</td>
-   <td>/content/entities<br /> 또는 <br /> 아래의 엔티티 리소스 /content</td>
+   <td>/content/entities 아래에 있는 엔티티 리소스<br /> 또는 <br /> /content 아래의 컨텐츠 리소스</td>
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>선택 사항입니다</strong><br /> </p> <p>/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br />에서 찾은 내보내기 구성 생략하면 기본 내보내기 구성이 적용됩니다 </p> </td>
+   <td><p><strong>선택 사항입니다</strong><br /> </p> <p>/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG에서 찾은 내보내기 구성<br /> <br /> 생략하면 기본 내보내기 구성이 적용됩니다 </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong></strong><br /> <br /> Sling 렌더링에서 사용되는 하위 항목을 렌더링하기 위한 선택적 깊이 재귀</td>
+   <td><strong>선택 사항입니다</strong><br /> <br /> Sling 렌더링에 사용된 하위 렌더링을 위한 깊이 재귀</td>
   </tr>
  </tbody>
 </table>
@@ -59,7 +59,7 @@ Content Services 기본 렌더러는 기본 제공 Sling 기본값과 사용자 
 
 JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 수 있습니다.
 
-*/apps/mobileapps/caas/exportConfigs.* 아래에 구성 노드를 만들 수 있습니다.
+아래에 구성 노드를 만들 수 있습니다 */apps/mobileapps/caas/exportConfigs.*
 
 | 노드 이름 | 구성 이름(렌더링 선택기용) |
 |---|---|
@@ -78,7 +78,7 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
   </tr>
   <tr>
    <td>includeComponents</td>
-   <td>String[]</td>
+   <td>문자열[]</td>
    <td>모든 항목 포함</td>
    <td>sling:resourceType</td>
    <td>JSON 내보내기에서 지정된 sling:resourceType이 있는 노드에 대한 세부 정보 제외</td>
@@ -109,7 +109,7 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
    <td>문자열[]</td>
    <td>모든 항목 포함</td>
    <td>속성 이름</td>
-   <td><p>excludePropertyPrefixes set<br /> 접두사가 제외되는 것과 일치함에도 지정된 속성이 포함되면</p> <p>else(제외 속성이 무시됨)에는 이러한 속성만 포함됩니다</p> </td>
+   <td><p>excludePropertyPrefixes 집합<br /> 여기에는 제외되는 접두사와 일치하지만 지정된 속성이 포함됩니다.</p> <p>else(제외 속성이 무시됨)에는 이러한 속성만 포함됩니다</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -120,14 +120,14 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
   </tr>
   <tr>
    <td>excludeChildren</td>
-   <td>String[]<br /> <br /> </td>
+   <td>문자열[]<br /> <br /> </td>
    <td>아무 것도 포함하지 않음</td>
    <td>하위 이름</td>
    <td>json 내보내기에서 지정된 하위 항목만 포함, 다른 항목은 제외</td>
   </tr>
   <tr>
    <td>renameProperties</td>
-   <td>String[]<br /> <br /> </td>
+   <td>문자열[]<br /> <br /> </td>
    <td>아무 이름 바꾸기</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>대체를 사용하여 속성 이름 바꾸기</td>
@@ -137,7 +137,7 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
 
 ### 리소스 유형 내보내기 무시 {#resource-type-export-overrides}
 
-*/apps/mobileapps/caas/exportConfigs.* 아래에 구성 노드를 만듭니다.
+아래의 구성 노드 만들기 */apps/mobileapps/caas/exportConfigs.*
 
 | 이름 | resourceTypeOverrides |
 |---|---|
@@ -155,11 +155,11 @@ JSON 렌더링을 사용자 지정하기 위해 내보내기 구성을 만들 �
    <td><strong>설명</strong></td>
   </tr>
   <tr>
-   <td>&lt;selector_to_inc&gt;</td>
+   <td>&lt;SELECTOR_TO_INC&gt;</td>
    <td>문자열[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>다음 슬링 리소스 유형에 대해 기본 CaaS json 내보내기를 반환하지 마십시오.<br /> 리소스를 <br /> &lt;resource&gt;()로 렌더링하여 고객 json 내보내기를 반환합니다.&lt;selector_to_inc&gt;.json </td>
+   <td>다음 슬링 리소스 유형에 대해 기본 CaaS json 내보내기를 반환하지 마십시오.<br /> 리소스를 (으)로 렌더링하여 고객 json 내보내기 를 반환합니다.<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -193,7 +193,7 @@ Content Services에는 두 가지 내보내기 구성이 포함됩니다.
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
+   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,설명<br /> jcr:lastModified,lastModified<br /> cq:tags,태그<br /> cq:lastModified,lastModified</td>
   </tr>
   <tr>
    <td>includeComponents</td>

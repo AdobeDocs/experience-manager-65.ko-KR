@@ -8,7 +8,7 @@ exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
@@ -19,7 +19,7 @@ Experience Manager에서 디지털 자산을 생성, 관리, 처리 및 배포�
 ## 키 [!DNL Experience Manager] 문서
 
 * [Experience Manager 6.5 릴리스 노트](/help/release-notes/home.md)
-* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=ko-KR)
+* [최신 설명서 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Security 검사 목록](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6.5 안내서
@@ -49,4 +49,4 @@ Experience Manager에서 디지털 자산을 생성, 관리, 처리 및 배포�
 * [Dispatcher 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
 * [HTL 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ko-KR)
 * [코어 구성 요소 사용 안내서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)

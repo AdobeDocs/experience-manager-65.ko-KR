@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 데이터 백업
-seo-title: AEM Forms 데이터 백업
+seo-title: Backing up the AEM forms data
 description: 이 문서에서는 AEM Forms 데이터베이스, GDS 및 Content Storage Root 디렉토리의 핫 또는 온라인 백업을 완료하는 데 필요한 단계에 대해 설명합니다.
-seo-description: 이 문서에서는 AEM Forms 데이터베이스, GDS 및 Content Storage Root 디렉토리의 핫 또는 온라인 백업을 완료하는 데 필요한 단계에 대해 설명합니다.
+seo-description: This document describes the steps that are required to complete a hot, or online, backup of the AEM forms database, the GDS, and Content Storage Root directories.
 uuid: ac7856be-e3b7-4b81-b8b9-fc909b5907b4
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1540'
 ht-degree: 0%
 
 ---
 
-# AEM 양식 데이터 백업 {#backing-up-the-aem-forms-data}
+# AEM Forms 데이터 백업 {#backing-up-the-aem-forms-data}
 
 이 섹션에서는 AEM Forms 데이터베이스, GDS 및 Content Storage Root 디렉토리의 핫 또는 온라인 백업을 완료하는 데 필요한 단계에 대해 설명합니다.
 
@@ -37,20 +37,20 @@ GDS 위치를 백업해야 하는 빈도는 AEM Forms 사용 방법과 백업 �
 >
 >참조되지 않은 파일은 복구 프로세스 후에 GDS 디렉토리에 유지됩니다. 이는 현재 알려진 제한 사항입니다.
 
-## 데이터베이스, GDS, AEM 저장소 및 컨텐츠 저장소 루트 디렉토리 백업 {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
+## 데이터베이스, GDS, AEM 저장소 및 컨텐츠 저장 루트 디렉토리 백업 {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
 AEM Forms를 안전한 백업(스냅샷) 모드 또는 롤링 백업(연속 적용 범위) 모드로 설정해야 합니다. 백업 모드 중 하나를 입력하도록 AEM 양식을 설정하기 전에 다음을 확인하십시오.
 
 * 시스템 버전을 확인하고 마지막 전체 시스템 이미지 백업이 수행된 이후 적용된 패치 또는 업데이트를 기록합니다.
-* 롤링 또는 스냅샷 모드 백업을 사용하는 경우 데이터베이스의 핫 백업을 허용하는 올바른 로그 설정으로 데이터베이스가 구성되어 있는지 확인하십시오. ([AEM Forms 데이터베이스](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database) 참조)
+* 롤링 또는 스냅샷 모드 백업을 사용하는 경우 데이터베이스의 핫 백업을 허용하는 올바른 로그 설정으로 데이터베이스가 구성되어 있는지 확인하십시오. (자세한 내용은 [AEM forms 데이터베이스](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database))
 
 백업/복원 프로세스에 대해서는 다음 지침을 따르십시오.
 
-* 사용 가능한 운영 체제나 타사 백업 유틸리티를 사용하여 GDS 디렉토리를 백업합니다. ( [GDS 위치](/help/forms/using/admin-help/files-back-recover.md#gds-location)를 참조하십시오.)
-* (선택 사항) 사용 가능한 운영 체제나 타사 백업 및 유틸리티를 사용하여 컨텐츠 스토리지 루트 디렉토리를 백업합니다. ( [컨텐츠 저장소 루트 위치(독립 실행형 환경)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) 또는 [컨텐츠 저장소 루트 위치(클러스터된 환경)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment)를 참조하십시오.)
-* 백업   인스턴스 작성 및 게시( crx -repository backup).
+* 사용 가능한 운영 체제나 타사 백업 유틸리티를 사용하여 GDS 디렉토리를 백업합니다. (자세한 내용은 [GDS 위치](/help/forms/using/admin-help/files-back-recover.md#gds-location))
+* (선택 사항) 사용 가능한 운영 체제나 타사 백업 및 유틸리티를 사용하여 컨텐츠 스토리지 루트 디렉토리를 백업합니다. (자세한 내용은 [컨텐츠 저장 루트 위치(독립 실행형 환경)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) 또는 [컨텐츠 저장소 루트 위치(클러스터된 환경)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment))
+* 작성자 및 게시 인스턴스 백업(crx-repository 백업).
 
-   서신 관리 솔루션 환경을 백업하려면 [백업 및 복원](/help/sites-administering/backup-and-restore.md)에 설명된 대로 작성 및 게시 인스턴스에 대한 단계를 수행합니다.
+   서신 관리 솔루션 환경을 백업하려면 에 설명된 대로 작성 및 게시 인스턴스에 대한 단계를 수행합니다. [백업 및 복원](/help/sites-administering/backup-and-restore.md).
 
    작성자 및 게시 인스턴스를 백업할 때는 다음 사항을 고려하십시오.
 
@@ -59,7 +59,7 @@ AEM Forms를 안전한 백업(스냅샷) 모드 또는 롤링 백업(연속 적�
    * Workbench 개발자는 로컬로 프로세스를 계속 작업할 수 있습니다. 백업 단계에서 새로운 프로세스를 구축하면 안 됩니다.
    * 각 백업 세션의 길이(롤링 백업 모드의 경우)에 대한 결정은 AEM Forms(DB, GDS, AEM 저장소 및 기타 추가 사용자 지정 데이터)의 모든 데이터를 백업하는 데 걸린 총 시간을 기반으로 해야 합니다.
 
-트랜잭션 로그를 포함하여 AEM Forms 데이터베이스를 백업해야 합니다. ([AEM Forms 데이터베이스](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database) 참조) 자세한 내용은 데이터베이스에 대한 해당 기술 자료 문서를 참조하십시오.
+트랜잭션 로그를 포함하여 AEM Forms 데이터베이스를 백업해야 합니다. (자세한 내용은 [AEM forms 데이터베이스](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)) 자세한 내용은 데이터베이스에 대한 해당 기술 자료 문서를 참조하십시오.
 
 * [AEM Forms용 백업 및 복구 oracle](https://www.adobe.com/go/kb403624)
 * [AEM Forms용 MySQL 백업 및 복구](https://www.adobe.com/go/kb403625)
@@ -72,9 +72,9 @@ AEM Forms를 안전한 백업(스냅샷) 모드 또는 롤링 백업(연속 적�
 >
 >GDS 백업을 시작하기 전에 데이터베이스 백업을 완료해야 합니다. 데이터베이스 백업이 완료되지 않으면 데이터가 동기화되지 않습니다.
 
-### 백업 모드 {#entering-the-backup-modes} 입력
+### 백업 모드 입력 {#entering-the-backup-modes}
 
-관리 콘솔, LCBackupMode 명령 또는 AEM Forms 설치 시 사용할 수 있는 API를 사용하여 백업 모드를 시작하고 종료할 수 있습니다. 롤링 백업(연속 적용 범위)의 경우 관리 콘솔 옵션을 사용할 수 없습니다.명령줄 옵션 또는 API를 사용해야 합니다. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM forms API Reference on Help and Tutorials page. -->
+관리 콘솔, LCBackupMode 명령 또는 AEM Forms 설치 시 사용할 수 있는 API를 사용하여 백업 모드를 시작하고 종료할 수 있습니다. 롤링 백업(연속 적용 범위)의 경우 관리 콘솔 옵션을 사용할 수 없습니다. 명령줄 옵션 또는 API를 사용해야 합니다. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM forms API Reference on Help and Tutorials page. -->
 
 >[!NOTE]
 >
@@ -90,15 +90,15 @@ AEM Forms를 안전한 백업(스냅샷) 모드 또는 롤링 백업(연속 적�
 
 **명령줄 옵션을 사용하여 안전한 백업 모드로 들어갑니다.**
 
-명령줄 인터페이스 `LCBackupMode` 스크립트를 사용하여 AEM Forms를 안전한 백업 모드로 설정할 수 있습니다.
+명령줄 인터페이스를 사용할 수 있습니다 `LCBackupMode` AEM 양식을 안전한 백업 모드로 전환하는 스크립트
 
 1. ADOBE_LIVECYCLE을 설정하고 응용 프로그램 서버를 시작합니다.
-1. `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` 폴더로 이동합니다.
-1. 운영 체제에 따라 `LCBackupMode.cmd` 또는 `LCBackupMode.sh` 스크립트를 편집하여 시스템에 적합한 기본값을 제공합니다.
+1. 로 이동합니다. `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` 폴더를 입력합니다.
+1. 운영 체제에 따라 `LCBackupMode.cmd` 또는 `LCBackupMode.sh` 스크립트에 적절한 기본값을 제공합니다.
 1. 명령 프롬프트에서 다음 명령을 한 줄에 실행합니다.
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*사용자 이름* `] [-password=`*암호* `] [-label=`*레이블 이름* `] [-timeout=`*초* `]`
-   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* `]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*호스트 이름* `] [-port=`*portnumber* `] [-user=`*사용자 이름* `] [-password=`*암호* `] [-label=`*labelname* `] [-timeout=`*초* `]`
+   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*호스트 이름* `] [-port=`*portnumber* `] [-user=`*사용자 이름* `] [-password=`*암호* `] [-label=`*labelname* `]`
 
    이전 명령에서 자리 표시자는 다음과 같이 정의됩니다.
 
@@ -116,7 +116,7 @@ AEM Forms를 안전한 백업(스냅샷) 모드 또는 롤링 백업(연속 적�
 
    백업 모드에 대한 명령줄 인터페이스에 대한 자세한 내용은 BackupRestoreCommandline 디렉토리의 Readme 파일을 참조하십시오.
 
-### 백업 모드 {#leaving-backup-modes} 종료
+### 백업 모드 종료 {#leaving-backup-modes}
 
 관리 콘솔 또는 명령줄 옵션을 사용하여 백업 모드를 종료할 수 있습니다.
 
@@ -132,17 +132,17 @@ Administration Console을 사용하여 AEM Forms를 안전한 백업 모드(스�
 
 명령줄 인터페이스를 사용하여 AEM Forms를 안전한 백업 모드(스냅샷 모드)에서 꺼내거나 현재 백업 모드 세션(롤링 모드)을 종료할 수 있습니다. 관리 콘솔을 사용하여 롤링 백업 모드를 종료할 수 없습니다. 롤링 백업 모드에서 관리 콘솔의 백업 유틸리티 컨트롤이 비활성화됩니다. API 호출을 사용하거나 LCBackupMode 명령을 사용해야 합니다.
 
-1. `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` 폴더로 이동합니다.
-1. 운영 체제에 따라 `LCBackupMode.cmd` 또는 `LCBackupMode.sh` 스크립트를 편집하여 시스템에 적합한 기본값을 제공합니다.
+1. 로 이동합니다. `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` 폴더를 입력합니다.
+1. 운영 체제에 따라 `LCBackupMode.cmd` 또는 `LCBackupMode.sh` 스크립트에 적절한 기본값을 제공합니다.
 
    >[!NOTE]
    >
-   >[AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*&#x200B;에서 응용 프로그램 서버의 해당 장에 설명된 대로 JAVA_HOME 디렉토리를 설정해야 합니다.
+   >JAVA_HOME 디렉토리는 [AEM 양식 설치 준비](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. 한 줄에 다음 명령을 실행합니다.
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
-   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*호스트 이름* `] [-port=`*portnumber* `] [-user=`*사용자 이름* `] [-password=`*암호* `]`
+   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*호스트 이름* `] [-port=`*portnumber* `] [-user=`*사용자 이름* `] [-password=`*암호* `]`
 
       이전 명령에서 자리 표시자는 다음과 같이 정의됩니다.
 

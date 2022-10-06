@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Assets] 프록시 개발"'
+title: "[!DNL Assets] 프록시 개발"
 description: 프록시는 [!DNL Experience Manager] 프록시 작업자를 사용하여 작업을 처리하는 인스턴스입니다. 구성 방법 알아보기 [!DNL Experience Manager] 프록시, 지원되는 작업, 프록시 구성 요소 및 사용자 정의 프록시 작업자를 개발하는 방법
 contentOwner: AG
 role: Admin, Architect

@@ -1,8 +1,8 @@
 ---
 title: 보안 설정 지정
-seo-title: 보안 설정 지정
+seo-title: Specify security settings
 description: 보안 설정을 지정하는 방법을 알아봅니다.
-seo-description: 보안 설정을 지정하는 방법을 알아봅니다.
+seo-description: Learn how to specify security settings.
 uuid: c86ba195-010d-40d6-9f9d-4cb4c364d104
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
 exl-id: 1f544485-5a01-4a4a-ab0f-dcee67e1a38b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '73'
 ht-degree: 2%
 
 ---
 
-# 보안 설정 {#specify-security-settings} 지정
+# 보안 설정 지정 {#specify-security-settings}
 
 출력을 사용하면 XML 입력의 외부 엔터티가 해결되는지 여부를 제어할 수 있습니다. 기본적으로 해결되지만 이 동작을 변경하여 AEM Forms 시스템의 보안을 강화할 수 있습니다.
 

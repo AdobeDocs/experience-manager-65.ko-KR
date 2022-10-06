@@ -1,8 +1,8 @@
 ---
 title: 페이지 속성 편집
-seo-title: 페이지 속성 편집
-description: 페이지 속성은 페이지의 특성에 따라 달라질 수 있습니다. 예를 들어, 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 어떤 페이지는 연결되지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
-seo-description: 페이지 속성은 페이지의 특성에 따라 달라질 수 있습니다. 예를 들어, 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 어떤 페이지는 연결되지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
+seo-title: Editing Page Properties
+description: 페이지 속성은 페이지의 특성에 따라 달라질 수 있습니다. 예를 들어 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 어떤 페이지는 연결되지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
+seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,14 +12,14 @@ discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '763'
 ht-degree: 96%
 
 ---
 
 # 페이지 속성 편집{#editing-page-properties}
 
-페이지에 필요한 속성을 정의할 수 있습니다. 이러한 속성은 페이지의 특성에 따라 다를 수 있습니다. 예를 들어, 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 어떤 페이지는 연결되지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
+페이지에 필요한 속성을 정의할 수 있습니다. 이러한 속성은 페이지의 특성에 따라 다를 수 있습니다. 예를 들어 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 어떤 페이지는 연결되지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
 
 ## 페이지 속성 {#page-properties}
 
@@ -81,7 +81,7 @@ ht-degree: 96%
 
    이 페이지의 별칭 URL을 입력할 수 있습니다. 이를 통해 더 간단하고 기억에 남는 URL을 만들 수 있습니다.
 
-   예를 들어 `ttp://example.com,` 웹 사이트에 대해 경로 / `v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `elcome`을 (를) 사용하여 설정하면, `ttp://example.com/welcome`이 `ttp://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
+   예를 들어 별칭 URL이 w로 설정된 경우 `elcome`경로 / 로 식별된 페이지로 `v1.0/startpage`웹 사이트 h `ttp://example.com,` h `ttp://example.com/welcome`h의 별칭 URL이 됩니다. `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -171,13 +171,13 @@ ht-degree: 96%
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 [블루프린트] 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### Live Copy {#live-copy}
+### 라이브 카피 {#live-copy}
 
 * **Livecopy**
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 Live Copy 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### 사이트 구조  {#site-structure}
+### 사이트 구조 {#site-structure}
 
 * **등록 페이지**, **오프라인 페이지** 등과 같이 사이트 전체 기능을 제공하는 페이지에 대한 링크를 제공합니다.
 

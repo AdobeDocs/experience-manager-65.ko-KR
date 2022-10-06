@@ -1,8 +1,8 @@
 ---
 title: 작성 - 환경 및 도구
-seo-title: 작성 - 환경 및 도구
+seo-title: Authoring - the Environment and Tools
 description: 웹 사이트 콘솔을 사용하여 웹 사이트를 관리하고 탐색할 수 있습니다. 두 개의 창을 사용하면 웹 사이트의 구조를 확장하고 필수 요소에 대해 작업을 수행할 수 있습니다.
-seo-description: 웹 사이트 콘솔을 사용하여 웹 사이트를 관리하고 탐색할 수 있습니다. 두 개의 창을 사용하면 웹 사이트의 구조를 확장하고 필수 요소에 대해 작업을 수행할 수 있습니다.
+seo-description: The Websites console allows you to manage and navigate your website. Using two panes, the structure of your website can be expanded and actions taken on the required elements.
 uuid: 0a9ce725-042a-4697-81fe-ac86cbab0398
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 88%
+source-wordcount: '899'
+ht-degree: 87%
 
 ---
 
 # 작성 - 환경 및 도구 {#authoring-the-environment-and-tools}
 
-AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스됩니다.
+AEM의 작성 환경에서는 콘텐츠를 구성하고 편집하기 위한 다양한 메커니즘을 제공합니다. 제공된 도구는 다양한 콘솔 및 페이지 편집기에서 액세스할 수 있습니다.
 
 ## 사이트 관리 {#site-administration}
 
@@ -144,14 +144,14 @@ AEM의 작성 환경에서는 컨텐츠를 구성하고 편집하기 위한 다�
 
 * `name:*nmv*`
 * `name:AD*`
-문자 일치는 대/ ** 소문자를 구분하지 않습니다.
+문자 일치 *not* 대/소문자를 구분합니다.
 
 * `name:ad?nm??is.*`
 쿼리에 사용할 수 있는 와일드카드의 수는 제한되어 있지 않습니다.
 
 >[!NOTE]
 >
->[SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) 검색을 사용할 수도 있습니다.
+>를 사용할 수도 있습니다 [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) 검색.
 
 ## 참조 표시 {#showing-references}
 
@@ -163,14 +163,14 @@ AEM에서는 현재 작업 중엔 페이지에 링크된 페이지를 확인할 
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **참조 표시... 를 선택합니다.** AEM에서 참조 창을 열고 경로를 포함하여 선택한 페이지를 참조하는 페이지를 표시합니다.
+1. 선택 **참조 표시...** AEM에서 참조 창을 열고 경로를 포함하여 선택한 페이지를 참조하는 페이지를 표시합니다.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
 특정 상황에서 사이드 킥에서 다음을 비롯한 추가 작업을 사용할 수 있습니다.
 
 * [론치](/help/sites-classic-ui-authoring/classic-launches.md)
-* [Live Copy](/help/sites-administering/msm.md)
+* [라이브 카피](/help/sites-administering/msm.md)
 
 * [블루프린트](/help/sites-administering/msm-best-practices.md)
 
@@ -184,7 +184,7 @@ AEM에서는 현재 작업 중엔 페이지에 링크된 페이지를 확인할 
 
 ## 페이지 정보 {#page-information}
 
-웹 사이트 콘솔은 게시, 수정, 잠김, livecopy 등과 같은 페이지](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)의 현재 상태에 대한 정보도 제공합니다.[
+웹 사이트 콘솔도 [페이지의 현재 상태에 대한 정보를 제공합니다](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) 게시, 수정, 잠김, livecopy 등과 같은 작업.
 
 ## 페이지 모드 {#page-modes}
 
@@ -208,9 +208,9 @@ AEM에서는 현재 작업 중엔 페이지에 링크된 페이지를 확인할 
 >다른 옵션도 사용할 수 있습니다.
 >
 >* [스캐폴딩](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
-* [Client Context](/help/sites-administering/client-context.md)
-* 웹 사이트 - [웹 사이트] 콘솔을 엽니다.
-* 다시 로드 - 페이지를 새로 고칩니다.
+>* [Client Context](/help/sites-administering/client-context.md)
+>* 웹 사이트 - [웹 사이트] 콘솔을 엽니다.
+>* 다시 로드 - 페이지를 새로 고칩니다.
 
 
 ## 키보드 단축키 {#keyboard-shortcuts}

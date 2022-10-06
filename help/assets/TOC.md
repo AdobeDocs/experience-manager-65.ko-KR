@@ -8,8 +8,8 @@ breadcrumb-title: Assets 안내서
 user-guide-description: 디지털 에셋을 제작하고, 관리하고, 처리하고, 배포합니다.
 source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '675'
+ht-degree: 74%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 0%
    + [Dynamic Media 비디오 프로필](video-profiles.md)
    + [Dynamic Media 이미지 프로필](image-profiles.md)
    + [스마트 이미징](imaging-faq.md)
-   + [클라이언트 측 장치 픽셀 비율을 갖는 스마트 이미징](client-side-dpr.md)
+   + [클라이언트측 디바이스 픽셀 비율을 갖는 스마트 이미징](client-side-dpr.md)
    + [비디오](s7-video.md)
    + [컨텐츠의 HTTP2 전달](http2.md)
    + [Dynamic Media 에셋 전송](delivering-dynamic-media-assets.md)
@@ -141,8 +141,8 @@ ht-degree: 0%
    + [컬렉션 게시 대상 [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + 콘텐츠 조각 {#content-fragments}
    + [콘텐츠 조각을 사용하여 작업](content-fragments/content-fragments.md)
-   + [콘텐츠 조각 및 GraphQL을 사용하여 헤드리스 게재](content-fragments/content-fragments-graphql.md)
-   + [인스턴스용 콘텐츠 조각 기능 활성화](content-fragments/content-fragments-configuration-browser.md)
+   + [콘텐츠 조각 및 GraphQL을 사용하여 Headless 게재](content-fragments/content-fragments-graphql.md)
+   + [인스턴스에 대해 콘텐츠 조각 기능 활성화](content-fragments/content-fragments-configuration-browser.md)
    + [콘텐츠 조각 모델](content-fragments/content-fragments-models.md)
    + [콘텐츠 조각 관리](content-fragments/content-fragments-managing.md)
    + [변형 - 조각 콘텐츠 작성](content-fragments/content-fragments-variations.md)
@@ -151,7 +151,7 @@ ht-degree: 0%
    + [콘텐츠 조각 - 삭제 고려 사항](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
    + [구조 트리](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   + [미리보기 - JSON 표시](/help/assets/content-fragments/content-fragments-json-preview.md)
+   + [미리보기 - JSON 표현식](/help/assets/content-fragments/content-fragments-json-preview.md)
    + [컨텐츠 조각에 대한 번역 프로젝트 만들기](creating-translation-projects-for-content-fragments.md)
 + 자산 관리 {#managing}
    + [디지털 에셋 관리](manage-assets.md)

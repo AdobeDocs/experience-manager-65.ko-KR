@@ -58,28 +58,28 @@ ht-degree: 0%
 >
 >* 고정 세션이 활성화되거나
 >
->* 동기화가 시작될 때 사용자가 AEM에 이미 만들어져 있습니다. 즉, 동기화 프로세스 중에 핸들러 **create** 사용자가 있는 경우에는 캡슐화된 토큰이 지원되지 않습니다.
+>* 동기화가 시작될 때 사용자가 AEM에 이미 만들어져 있습니다. 즉, 핸들러가 있는 상황에서는 캡슐화된 토큰이 지원되지 않습니다 **만들기** 동기화 프로세스 중에 사용자가 사용됩니다.
 
 
 캡슐화된 토큰을 구성할 때 고려해야 할 몇 가지 사항이 있습니다.
 
-1. 암호화 관련 때문에 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3 이후 주요 자료는 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 이러한 점을 염두에 두고 키를 복제하는 가장 좋은 방법은 키를 복제할 소스 인스턴스의 파일 시스템에서 타겟 인스턴스의 SIS(Server Control Center Server Node Server) 로 키를 복사하는 것입니다. 아래의 &quot;HMAC 키 복제&quot;에서 자세한 내용을 참조하십시오.
+1. 암호화 관련 때문에 모든 인스턴스는 동일한 HMAC 키를 가져야 합니다. AEM 6.3 이후 주요 자료는 더 이상 저장소에 저장되지 않고 실제 파일 시스템에 저장됩니다. 이러한 점을 염두에 두고 키를 복제하는 가장 좋은 방법은 키를 복제할 소스 인스턴스의 파일 시스템에서 타겟 인스턴스의 SIS(Server Control Center Server Node Server Server Load Manager) 로 키를 복사하는 것입니다. 아래의 &quot;HMAC 키 복제&quot;에서 자세한 내용을 참조하십시오.
 1. 캡슐화된 토큰을 활성화해야 합니다. 이 작업은 웹 콘솔을 통해 수행할 수 있습니다.
 
 ### HMAC 키 복제 {#replicating-the-hmac-key}
 
-HMAC 키는 저장소에 `/etc/key` 의 이진 속성으로 있습니다. 옆에 있는 **view** 링크를 눌러 별도로 다운로드할 수 있습니다.
+HMAC 키는 `/etc/key` 로그인합니다. 을 눌러 별도로 다운로드할 수 있습니다 **보기** 옆에 링크:
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 인스턴스 간에 키를 복제하려면 다음을 수행해야 합니다.
 
 1. 복사할 주요 자료가 포함된 AEM 인스턴스(일반적으로 작성자 인스턴스)에 액세스합니다.
-1. 로컬 파일 시스템에서 `com.adobe.granite.crypto.file` 번들을 찾습니다. 예를 들어, 이 경로 아래에서:
+1. 을(를) 찾습니다 `com.adobe.granite.crypto.file` 로컬 파일 시스템에 번들로 구성합니다. 예를 들어, 이 경로 아래에서:
 
    * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
 
-   각 폴더 내의 `bundle.info` 파일은 번들 이름을 식별합니다.
+   다음 `bundle.info` 각 폴더 내의 파일은 번들 이름을 식별합니다.
 
 1. 데이터 폴더로 이동합니다. 예:
 
@@ -91,7 +91,7 @@ HMAC 키는 저장소에 `/etc/key` 의 이진 속성으로 있습니다. 옆에
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. 이전에 복사한 두 파일을 붙여넣습니다.
-1. [대상 인스턴스가 ](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) 이미 실행 중인 경우 Crypto 번들을 새로 고칩니다.
+1. [암호화 번들 새로 고침](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) target 인스턴스가 이미 실행 중인 경우.
 
 1. 키를 복제할 모든 인스턴스에 대해 위의 단계를 반복합니다.
 
@@ -99,6 +99,6 @@ HMAC 키는 저장소에 `/etc/key` 의 이진 속성으로 있습니다. 옆에
 
 HMAC 키가 복제되면 웹 콘솔을 통해 캡슐화된 토큰을 활성화할 수 있습니다.
 
-1. 브라우저를 `https://serveraddress:port/system/console/configMgr`으로 보냅니다.
-1. **Adobe Granite 토큰 인증 핸들러**&#x200B;라는 항목을 찾아서 클릭합니다.
-1. 다음 창에서 **캡슐화된 토큰 지원 활성화** 상자를 열고 **Save** 키를 누릅니다.
+1. 브라우저를 `https://serveraddress:port/system/console/configMgr`
+1. 라는 항목을 찾습니다. **Adobe Granite 토큰 인증 핸들러** 클릭하여 선택합니다.
+1. 다음 창에서 **캡슐화된 토큰 지원 사용** 상자 및 누르기 **저장**.

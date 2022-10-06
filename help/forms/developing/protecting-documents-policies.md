@@ -1917,7 +1917,7 @@ Rights Management API(웹 서비스)를 사용하여 이벤트를 검색합니�
     </tr>
     <tr>
     <td><p><code>ERROR_DIRECTORY_SERVICE_EVENT </code></p></td>
-    <td><p>6000년</p></td>
+    <td><p>6000</p></td>
     </tr>
     <tr>
     <td><p><code>CREATED_POLICYSET_EVENT</code></p></td>

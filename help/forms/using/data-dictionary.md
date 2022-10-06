@@ -323,7 +323,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>extendedProperties</td>
-   <td>개체</td>
+   <td>오브젝트</td>
    <td>DDE에 추가된 사용자 지정 속성 맵(사용자 인터페이스나 기타 정보)입니다.</td>
   </tr>
   <tr>

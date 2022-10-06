@@ -1,8 +1,8 @@
 ---
 title: 쿠키 사용 구성
-seo-title: 쿠키 사용 구성
+seo-title: Configuring Cookie Usage
 description: AEM은 웹 페이지에서 쿠키가 사용되는 방식을 구성하고 제어할 수 있도록 해주는 서비스를 제공합니다
-seo-description: AEM은 웹 페이지에서 쿠키가 사용되는 방식을 구성하고 제어할 수 있도록 해주는 서비스를 제공합니다
+seo-description: AEM provides a service that enables you to configure and control how cookies are used with your web pages
 uuid: 10d95176-0a56-41f1-9d36-01dbdac757d4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 2%
+source-wordcount: '554'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ AEM은 웹 페이지에서 쿠키가 사용되는 방식을 구성하고 제어�
 
 Granite 옵트아웃 서비스 Adobe을 구성하여 웹 페이지에서 쿠키가 사용되는 방식을 지정합니다. 다음 표에서는 구성할 수 있는 속성에 대해 설명합니다.
 
-서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [OSGi 구성을 저장소](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)에 추가할 수 있습니다. 다음 표에서는 두 방법 중 하나에 필요한 속성에 대해 설명합니다. OSGi 구성의 경우 서비스 PID는 `com.adobe.granite.optout`입니다.
+서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 [저장소에 OSGi 구성 추가](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). 다음 표에서는 두 방법 중 하나에 필요한 속성에 대해 설명합니다. OSGi 구성의 경우 서비스 PID는 다음과 같습니다 `com.adobe.granite.optout`.
 
 | 속성 이름(웹 콘솔) | OSGi 속성 이름 | 설명 |
 |---|---|---|
@@ -47,7 +47,7 @@ Granite 옵트아웃 서비스 Adobe을 구성하여 웹 페이지에서 쿠키�
 * 웹 브라우저에 사용자가 추적을 위해 쿠키 사용에 동의하지 않음을 나타내는 쿠키가 포함되어 있는지 여부를 결정합니다.
 * 특정 쿠키를 사용할 수 있는지 여부를 결정합니다.
 
-granite.utils [클라이언트 라이브러리 폴더](/help/sites-developing/clientlibs.md#referencing-client-side-libraries)은 Granite.OptOutUtil 개체를 제공합니다. 페이지 헤드 JSP에 다음 코드를 추가하여 Javascript 라이브러리에 대한 링크를 포함합니다.
+granite.utils [클라이언트 라이브러리 폴더](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) 은 Granite.OptOutUtil 개체를 제공합니다. 페이지 헤드 JSP에 다음 코드를 추가하여 Javascript 라이브러리에 대한 링크를 포함합니다.
 
 `<ui:includeClientLib categories="granite.utils" />`
 
@@ -72,7 +72,7 @@ Granite.OptOutUtil을 사용하면 쿠키 사용이 허용되는지 여부를 �
 
 쿠키의 이름을 반환하며 쿠키가 있을 때 사용자가 쿠키 사용에 동의하지 않았음을 나타냅니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -84,7 +84,7 @@ Granite.OptOutUtil을 사용하면 쿠키 사용이 허용되는지 여부를 �
 
 사용자의 동의에 관계없이 사용할 수 있는 쿠키의 이름을 반환합니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
@@ -96,22 +96,22 @@ Granite.OptOutUtil을 사용하면 쿠키 사용이 허용되는지 여부를 �
 
 사용자의 브라우저에 쿠키 사용에 대한 동의를 받지 않았음을 나타내는 쿠키가 포함되어 있는지 여부를 결정합니다.
 
-**매개 변수**
+**매개변수**
 
 없음.
 
 **반환**
 
-동의가 없음을 나타내는 쿠키가 발견되면 `true` 의 부울 값과, 쿠키가 동의하지 않음을 나타내는 경우 `false` 의 값입니다.
+부울 값 `true` 동의가 없음을 나타내는 쿠키가 발견되면 `false` 쿠키가 동의하지 않는 경우.
 
 ### maySetCookie(cookieName) 함수 {#maysetcookie-cookiename-function}
 
-사용자의 브라우저에서 특정 쿠키를 사용할 수 있는지 여부를 결정합니다. 이 함수는 `getWhitelistCookieNames` 함수가 반환하는 목록에 해당 쿠키가 포함되어 있는지 여부를 확인하는 것과 함께 `isOptedOut` 함수를 사용하는 것과 같습니다.
+사용자의 브라우저에서 특정 쿠키를 사용할 수 있는지 여부를 결정합니다. 이 함수는 `isOptedOut` 를 사용하여 해당 쿠키를 `getWhitelistCookieNames` 함수를 반환합니다.
 
-**매개 변수**
+**매개변수**
 
-* cookieName:문자열. 쿠키의 이름입니다.
+* cookieName: 문자열. 쿠키의 이름입니다.
 
 **반환**
 
-`cookieName` 를 사용할 수 있는 경우 `true` 의 부울 값을 사용하거나 `cookieName` 를 사용할 수 없는 경우 `false` 값을 지정하십시오.
+부울 값 `true` if `cookieName` 를 사용하거나 `false` if `cookieName` 사용할 수 없습니다.

@@ -56,7 +56,7 @@ eCommerce 프레임워크는 모든 eCommerce 솔루션에서 사용할 수 있�
 
       * 찾을 경우 이 값은 상거래 서비스 조회를 필터링하는 데 사용됩니다.
 
-      * 찾을 수 없으면 가장 높은 등급의 상거래 서비스가 사용됩니다.
+      * 찾을 수 없으면 최상위의 상거래 서비스가 사용됩니다.
    * A `cq:Commerce` mixin이 사용되므로 `cq:commerceProvider` 강력한 형식의 리소스에 추가할 수 있습니다.
 
 
@@ -429,9 +429,9 @@ public class AxisFilter implements VariantFilter {
       * `String CommerceSession.getProductPrice(Product product)`
 
 
-**저장 용량**
+**스토리지**
 
-* 저장 용량
+* 스토리지
 
    * hybris의 경우, hybris 서버가 장바구니를 소유합니다.
    * AEM 일반 케이스 카트에서 의 [ClientContext](/help/sites-administering/client-context.md).

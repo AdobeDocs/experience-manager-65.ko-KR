@@ -4,13 +4,13 @@ description: Creative Cloud 애플리케이션용 Adobe Asset Link 확장에서 
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-source-git-commit: e91fa04d87c7ecacf3ad8a148227948eafe15b1e
+exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
+source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
 workflow-type: tm+mt
 source-wordcount: '3149'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Adobe 자산 링크에 대한 Experience Manager Assets 구성 {#adobe-asset-link}
 
@@ -288,12 +288,7 @@ Adobe 자산 링크를 구성하거나 사용할 때 문제가 발생하는 경�
 
 >[!MORELIKETHIS]
 >
->* [Adobe Asset Link에 대하여](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Adobe Asset Link에 대하여](https://helpx.adobe.com/kr/enterprise/using/adobe-asset-link.html)
 >* [Creative Cloud 데스크탑 앱에서 Asset Link 사용 및 자산 관리](https://helpx.adobe.com/kr/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Adobe Experience Manager 자산 구성 as a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-
-
-
-
-
+>* [Adobe Experience Manager 자산 구성 as a Cloud Service](https://helpx.adobe.com/kr/enterprise/using/configure-aem-assets-for-asset-link.html).
 

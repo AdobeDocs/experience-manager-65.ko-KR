@@ -1,8 +1,8 @@
 ---
 title: 공유 리소스 내보내기 구성 만들기
-seo-title: 공유 리소스 내보내기 구성 만들기
+seo-title: Creating Shared Resources Export Configuration
 description: AEM Mobile에 업로드할 Adobe Experience Manager(AEM)에서 공유 리소스를 내보내는 방법에 대해 알려면 이 페이지를 따르십시오.
-seo-description: AEM Mobile에 업로드할 Adobe Experience Manager(AEM)에서 공유 리소스를 내보내는 방법에 대해 알려면 이 페이지를 따르십시오.
+seo-description: Follow this page to learn about exporting shared resources from Adobe Experience Manager (AEM) for upload to AEM Mobile.
 uuid: 99b8ff94-8135-4643-a15b-aa6fb91f5401
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 1edf6c76-ccb1-40b6-bdf6-924f1461cd28
 exl-id: 576b4567-c7b6-4196-84e7-47e980637540
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '302'
 ht-degree: 1%
 
 ---
@@ -27,17 +27,17 @@ ht-degree: 1%
 >
 >**전제 조건**:
 >
->공유 리소스를 만들고 수정하는 방법에 대한 자세한 내용은 [컨텐츠 동기화](/help/mobile/mobile-ondemand-contentsync.md)를 참조하십시오.
+>공유 리소스를 만들고 수정하는 방법에 대한 자세한 내용은 [콘텐츠 동기화](/help/mobile/mobile-ondemand-contentsync.md) 기본 개념을 이해하기 위한 것입니다.
 
 AEM Mobile 사용자는 컨텐츠 동기화를 사용하여 모바일 앱에서 사용할 정적 컨텐츠로 라이브 컨텐츠를 내보내고 AEM Mobile에서 Mobile On-Demand Services로 컨텐츠가 업로드되면 내보내집니다.
 
-위의 표에 언급된 속성 ***dps-exportTemplate***&#x200B;은 앱 내보내기 구성의 경로를 정의합니다. 공유 리소스를 만들고 수정하려면 이 속성을 설정하십시오.
+속성 ***dps-exportTemplate*** 위의 표에 언급된 대로, 앱의 내보내기 구성에 대한 경로를 정의합니다. 공유 리소스를 만들고 수정하려면 이 속성을 설정하십시오.
 
 다음 리소스는 AEM Mobile으로 업로드할 Adobe Experience Manager(AEM)에서 공유 리소스를 내보내는 방법에 대해 설명합니다.
 
-공유 HTML 리소스를 사용하면 문서가 모든 문서에 대해 복제해야 하는 HTML 리소스를 공유할 수 있으며 아이콘, 글꼴, Javascript 및 css를 포함할 수 있습니다.
+공유 HTML 리소스를 사용하면 문서를 통해 모든 문서에 대해 복제해야 하는 HTML 리소스를 공유할 수 있으며 아이콘, 글꼴, Javascript 및 css를 포함할 수 있습니다.
 
-**&lt;dps-exportTemplate>/dps-HTMLRessources>**&#x200B;에 있는 컨텐츠 동기화 구성은 장치의 속성 정적 렌더링에 필요한 모든 컨텐츠와 문서를 내보내도록 구성해야 합니다.
+에 있는 컨텐츠 동기화 구성 **&lt;dps-exporttemplate>/dps-HTMLRessources>** 장치에서 속성 정적 렌더링에 필요한 모든 콘텐츠 및 문서를 내보내도록 구성해야 합니다.
 
 >[!CAUTION]
 >
@@ -46,15 +46,13 @@ AEM Mobile 사용자는 컨텐츠 동기화를 사용하여 모바일 앱에서 
 >* 샘플 컨텐츠 설치
 >* AEM 인스턴스 실행
 >* 구성된 사용자 지정 컨텍스트 또는 다른 포트 없음
-
 >
-
 
 
 샘플 공유 리소스를 보려면 아래 단계를 참조하십시오.
 
 1. AEM 서버에서 CRXDE Lite을 엽니다.
-1. 샘플 공유 리소스를 보려면 이 경로 *[/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLRessources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*&#x200B;로 이동하십시오.
+1. 이 경로로 이동합니다. *[/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*&#x200B;를 눌러 샘플 공유 리소스를 확인합니다.
 
    아래 그림과 같이 공유 리소스를 만드는 데 필요한 모든 속성을 볼 수 있습니다.
 

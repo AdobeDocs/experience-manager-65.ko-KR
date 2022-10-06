@@ -13,20 +13,20 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 33%
+ht-degree: 36%
 
 ---
 
 
 # 프로젝트 {#projects}
 
-프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 공통되는 공유 환경을 사용하면 프로젝트 관리가 쉬워집니다. 프로젝트와 연결할 수 있는 리소스 유형은 AEM에서 타일이라고 합니다. 타일에는 다음에 자세히 설명된 대로 프로젝트 및 팀 정보, 자산, 워크플로우 및 기타 정보 유형이 포함될 수 있습니다. [프로젝트 타일.](#project-tiles)
+프로젝트를 사용하면 리소스를 하나의 엔티티로 그룹화할 수 있습니다. 공통되는 공유 환경을 사용하면 프로젝트 관리가 쉬워집니다. 프로젝트와 연결할 수 있는 리소스 유형은 AEM에서 타일이라고 합니다. 타일에는 프로젝트 및 팀 정보, 에셋, 워크플로 및 [프로젝트 타일](#project-tiles)에 설명된 세부 정보와 같은 기타 유형의 정보가 포함될 수 있습니다.
 
 사용자는
 
 * 프로젝트 만들기 및 삭제
-* 컨텐츠 및 자산 폴더를 프로젝트에 연결
-* 프로젝트에서 컨텐츠 링크 제거
+* 콘텐츠 및 에셋 폴더를 프로젝트에 연결
+* 프로젝트에서 콘텐츠 링크 제거
 
 ## 액세스 요구 사항 {#access-requirements}
 
@@ -89,14 +89,14 @@ Project는 표준 AEM 기능을 제공하며 추가 설정이 필요하지 않�
 다음 타일을 프로젝트와 연결할 수 있습니다.
 
 * [에셋](#assets)
-* [자산 컬렉션](#asset-collections)
+* [에셋 컬렉션](#asset-collections)
 * [경험](#experiences)
 * [링크](#links)
 * [프로젝트 정보](#project-info)
 * [팀](#team)
 * [랜딩 페이지](#landing-pages)
 * [이메일](#emails)
-* [워크플로우](#workflows)
+* [워크플로](#workflows)
 * [론치](#launches)
 * [작업](#tasks)
 
@@ -106,19 +106,19 @@ Project는 표준 AEM 기능을 제공하며 추가 설정이 필요하지 않�
 
 ### 에셋 {#assets}
 
-**자산** 타일에서는 특정 프로젝트에 사용하는 모든 자산을 수집할 수 있습니다.
+**에셋** 타일에서는 특정 프로젝트에 사용하는 모든 에셋을 수집할 수 있습니다.
 
-![자산 타일](assets/project-tile-assets.png)
+![에셋 타일](assets/project-tile-assets.png)
 
-타일에서 바로 자산을 업로드할 수 있습니다.
+타일에서 바로 에셋을 업로드할 수 있습니다.
 
-### 자산 컬렉션 {#asset-collections}
+### 에셋 컬렉션 {#asset-collections}
 
-자산과 유사하게 [자산 컬렉션](/help/assets/manage-collections.md)도 프로젝트에 바로 추가할 수 있습니다. [자산]에서 컬렉션을 정의합니다.
+에셋과 유사하게 [에셋 컬렉션](/help/assets/manage-collections.md)도 프로젝트에 바로 추가할 수 있습니다. [에셋]에서 컬렉션을 정의합니다.
 
 ![자산 수집 타일](assets/project-tile-asset-collection.png)
 
-Add a collection by clicking **Add Collection** and selecting the appropriate collection from the list.
+**컬렉션 추가**&#x200B;를 클릭하고 목록에서 적절한 컬렉션을 선택하여 추가합니다.
 
 ### 경험 {#experiences}
 
@@ -159,7 +159,7 @@ Add a collection by clicking **Add Collection** and selecting the appropriate co
 
 ![팀 타일](assets/project-tile-team.png)
 
-팀에서 팀 구성원을 추가하고 삭제할 수 있습니다. 또한 팀 구성원에게 지정된 [사용자 역할](#userroles)을 편집할 수도 있습니다.
+팀에서 팀원을 추가하고 삭제할 수 있습니다. 또한 팀원에게 할당된 [사용자 역할](#userroles)을 편집할 수도 있습니다.
 
 ### 랜딩 페이지 {#landing-pages}
 
@@ -177,7 +177,7 @@ Add a collection by clicking **Add Collection** and selecting the appropriate co
 
 자세한 내용은 [이메일 요청 워크플로우](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)에 설명되어 있습니다.
 
-### 워크플로우 {#workflows}
+### 워크플로 {#workflows}
 
 프로젝트에 대한 워크플로우를 시작할 수 있습니다. 실행 중인 워크플로우가 있으면 워크플로우의 상태가 **워크플로우** 타일.
 
@@ -185,7 +185,7 @@ Add a collection by clicking **Add Collection** and selecting the appropriate co
 
 만드는 프로젝트에 따라 사용할 수 있는 워크플로우가 다릅니다.
 
-이에 대해서는 [프로젝트 워크플로우 작업](/help/sites-authoring/projects-with-workflows.md)에 설명되어 있습니다.
+이에 대해서는 [프로젝트 워크플로 작업](/help/sites-authoring/projects-with-workflows.md)에 설명되어 있습니다.
 
 ### 론치 {#launches}
 
@@ -195,7 +195,7 @@ Add a collection by clicking **Add Collection** and selecting the appropriate co
 
 ### 작업 {#tasks}
 
-작업을 사용하면 워크플로우를 포함하여 프로젝트 관련 작업의 상태를 모니터링할 수 있습니다. 작업은 다음 위치에서 자세히 다룹니다. [작업](/help/sites-authoring/task-content.md).
+작업을 사용하면 워크플로를 포함하여 프로젝트 관련 작업의 상태를 모니터링할 수 있습니다. 작업은 [작업](/help/sites-authoring/task-content.md)에 자세히 설명되어 있습니다.
 
 ![작업 타일](assets/project-tile-tasks.png)
 
@@ -214,16 +214,16 @@ Add a collection by clicking **Add Collection** and selecting the appropriate co
 
 다른 사용자 역할은 프로젝트 템플릿에서 정의되며 다음의 두 가지 주요 이유로 사용됩니다.
 
-1. 권한: 사용자 역할은 나열된 세 가지 범주 중 하나에 속합니다. 관찰자, 편집자, 소유자 예를 들어, 사진사나 카피라이터는 편집자와 동일한 권한을 갖습니다. 권한은 사용자가 프로젝트의 컨텐츠에 수행할 수 있는 작업을 결정합니다.
+1. 권한: 사용자 역할은 나열된 세 가지 범주 중 하나에 속합니다. 관찰자, 편집자, 소유자 예를 들어, 사진사나 카피라이터는 편집자와 동일한 권한을 갖습니다. 권한은 사용자가 프로젝트의 콘텐츠에 수행할 수 있는 작업을 결정합니다.
 1. 워크플로우: 워크플로우는 프로젝트에서 작업을 지정할 사용자를 결정합니다. 작업은 프로젝트 역할과 연결할 수 있습니다. 예를 들어, 작업을 사진사에게 할당하여 사진사 역할이 있는 모든 팀 구성원이 작업을 받게 합니다.
 
 모든 프로젝트는 보안 및 제어 권한을 관리할 수 있도록 다음과 같은 기본 역할을 지원합니다.
 
-| 역할 | 설명 | 권한 | 그룹 구성원 |
+| 역할 | 설명 | 권한 | 그룹 멤버십 |
 |---|---|---|---|
 | 관찰자 | 이 역할의 사용자는 프로젝트 상태를 포함하여 프로젝트 세부 사항을 볼 수 있습니다. | 프로젝트에 대한 읽기 전용 권한 | `workflow-users` 그룹 |
-| 편집자 | 이 역할의 사용자는 프로젝트 컨텐츠를 업로드하고 편집할 수 있습니다. | 프로젝트, 관련 메타데이터 및 관련 자산에 대한 읽기 및 쓰기 액세스 권한<br>촬영 목록 업로드, 사진 촬영, 자산 검토 및 승인 권한<br>쓰기 권한 `/etc/commerce`<br>특정 프로젝트에 대한 권한 수정 | `workflow-users` 그룹 |
-| 소유자 | 이 역할의 사용자는 프로젝트를 만들고, 프로젝트에서 작업을 시작하고, 승인된 자산을 프로덕션 폴더로 이동할 수 있습니다. 소유자가 프로젝트의 다른 모든 작업을 보고 수행할 수도 있습니다. | 쓰기 권한 `/etc/commerce` | `dam-users` 프로젝트를 만들 수 있는 그룹<br>`project-administrators` 그룹을 사용하여 프로젝트를 만들고 자산을 이동할 수 있습니다 |
+| 편집자 | 이 역할의 사용자는 프로젝트 콘텐츠를 업로드하고 편집할 수 있습니다. | 프로젝트, 관련 메타데이터 및 관련 자산에 대한 읽기 및 쓰기 액세스 권한<br>촬영 목록 업로드, 사진 촬영, 자산 검토 및 승인 권한<br>쓰기 권한 `/etc/commerce`<br>특정 프로젝트에 대한 권한 수정 | `workflow-users` 그룹 |
+| 소유자 | 이 역할의 사용자는 프로젝트를 만들고, 프로젝트에서 작업을 시작하고, 승인된 자산을 프로덕션 폴더로 이동할 수 있습니다. 소유자가 프로젝트의 다른 모든 작업을 보고 수행할 수도 있습니다. | `/etc/commerce`에 대한 쓰기 권한 | `dam-users` 프로젝트를 만들 수 있는 그룹<br>`project-administrators` 그룹을 사용하여 프로젝트를 만들고 자산을 이동할 수 있습니다 |
 
 크리에이티브 프로젝트의 경우 사진사와 같은 추가 역할도 제공됩니다. 이러한 역할을 사용하여 특정 프로젝트의 사용자 지정 역할을 파생시킬 수 있습니다.
 

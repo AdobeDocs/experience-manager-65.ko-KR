@@ -1,8 +1,8 @@
 ---
 title: 론치 홍보
-seo-title: 론치 홍보
-description: '게시 전에 컨텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다. '
-seo-description: '게시 전에 컨텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다. '
+seo-title: Promoting Launches
+description: 게시 전에 콘텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다.
+seo-description: You need to promote launch pages to move the content back into the source (production) before publishing.
 uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,14 +14,14 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 93%
+source-wordcount: '756'
+ht-degree: 99%
 
 ---
 
 # 론치 홍보{#promoting-launches}
 
-게시 전에 컨텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다. 론치 페이지가 홍보되면 해당 소스 페이지가 홍보된 페이지의 컨텐츠로 바뀝니다. 론치 페이지 홍보 시 다음 옵션을 사용할 수 있습니다.
+게시 전에 콘텐츠를 소스(프로덕션)로 다시 이동하려면 론치 페이지를 홍보해야 합니다. 론치 페이지가 홍보되면 해당 소스 페이지가 홍보된 페이지의 콘텐츠로 바뀝니다. 론치 페이지 홍보 시 다음 옵션을 사용할 수 있습니다.
 
 * 현재 페이지만 홍보할지 아니면 전체 론치를 홍보할지 여부.
 * 현재 페이지의 하위 페이지를 홍보할지 여부.
@@ -30,11 +30,11 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->론치 페이지를 대상(**프로덕션**)에 홍보한 후 **프로덕션** 페이지를 엔티티로 활성화할 수 있습니다(프로세스를 더 빠르게 진행하기 위해). 페이지를 작업 흐름 패키지에 추가하고, 페이지 패키지를 활성화하는 작업 흐름용 페이로드로 사용합니다. 론치를 승격하려면 먼저 작업 흐름 패키지를 만들어야 합니다. [AEM 워크플로우를 사용하여 홍보된 페이지 처리](#processing-promoted-pages-using-aem-workflow)를 참조하십시오.
+>론치 페이지를 대상(**프로덕션**)에 홍보한 후 **프로덕션** 페이지를 엔티티로 활성화할 수 있습니다(프로세스를 더 빠르게 진행하기 위해). 페이지를 작업 흐름 패키지에 추가하고, 페이지 패키지를 활성화하는 작업 흐름용 페이로드로 사용합니다. 론치를 승격하려면 먼저 작업 흐름 패키지를 만들어야 합니다. [AEM 워크플로를 사용하여 홍보된 페이지 처리](#processing-promoted-pages-using-aem-workflow)를 참조하십시오.
 
 >[!CAUTION]
 >
->단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 두 개의 프로모트 작업을 동시에 수행하면 오류 `Launch could not be promoted` (로그에 충돌 오류와 함께 발생될 수 있습니다.)
+>단일 론치를 동시에 홍보할 수 없습니다. 즉, 동일한 론치에 대해 두 가지 홍보 작업을 동시에 수행하면 로그에 충돌 오류와 함께 `Launch could not be promoted`라는 오류가 표시됩니다.
 
 >[!CAUTION]
 >
@@ -48,9 +48,7 @@ ht-degree: 93%
 >
 >* [중첩된 론치 홍보](#promoting-a-nested-launch)에서는 구조에 둘 이상의 론치가 있는 경우를 설명합니다.
 >* [론치 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)에서는 자동 홍보 및 게시에 대한 세부 정보를 제공합니다.
-
 >
-
 
 
 **사이트** 콘솔 또는 **론치** 콘솔에서 론치를 홍보할 수 있습니다.
@@ -59,7 +57,7 @@ ht-degree: 93%
 
    * **사이트** 콘솔:
 
-      1. [참조 레일](/help/sites-authoring/author-environment-tools.md#showingpagereferences)을 열고 [선택 모드](/help/sites-authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다(또는 참조 레일을 선택하고 열면 순서는 중요하지 않음). 모든 참조가 표시됩니다.
+      1. [참조 레일](/help/sites-authoring/author-environment-tools.md#showingpagereferences)을 연 다음 [선택 모드](/help/sites-authoring/basic-handling.md)를 사용하여 필요한 소스 페이지를 선택합니다. 순서는 중요하지 않으므로 필요한 소스 페이지를 선택한 다음 참조 레일을 열 수도 있습니다. 모든 참조가 표시됩니다.
 
       1. 특정 론치 목록을 표시하려면 **론치**(예: 론치(1))를 선택합니다.
       1. 사용 가능한 동작을 표시하려면 특정 론치를 선택합니다.
@@ -72,7 +70,7 @@ ht-degree: 93%
 
 1. 첫 번째 단계에서 다음을 지정할 수 있습니다.
 
-   * **타겟**
+   * **대상**
 
       * **승격 후 실행 삭제**
    * **범위**
@@ -82,7 +80,7 @@ ht-degree: 93%
       * **현재 페이지 홍보**
       * **현재 페이지 및 하위 페이지 홍보**
 
-   예를 들어, 수정된 페이지만 홍보하도록 선택하는 경우:
+   예를 들어 수정된 페이지만 홍보하도록 선택하는 경우:
 
    ![launches-pd-06](assets/launches-pd-06.png)
 
@@ -107,7 +105,7 @@ ht-degree: 93%
 >
 >이 마법사는 단일 및 [중첩 론치](#promoting-a-nested-launch)에 사용할 수 있습니다.
 
-## 중첩 론치 홍보  {#promoting-a-nested-launch}
+## 중첩 론치 홍보 {#promoting-a-nested-launch}
 
 중첩 론치를 만든 후에는 루트 소스(프로덕션)를 포함하는 모든 소스에 다시 홍보할 수 있습니다.
 
@@ -116,9 +114,9 @@ ht-degree: 93%
 1. [중첩 론치 만들기](#creatinganestedlaunchlaunchwithinalaunch)의 경우처럼, **론치** 콘솔 또는 **참조** 레일로 이동한 후 필요한 론치를 선택합니다.
 1. **론치 홍보**&#x200B;를 선택하여 마법사를 엽니다.
 
-1. 다음과 같은 필수 세부 사항을 입력합니다.
+1. 다음과 같은 필수 세부 정보를 입력합니다.
 
-   * **타겟**
+   * **대상**
 
       * **홍보 타겟** 어떤 소스로도 홍보할 수 있습니다.
 
@@ -133,7 +131,7 @@ ht-degree: 93%
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. **다음**&#x200B;을 선택합니다.
-1. **홍보**&#x200B;를 선택하기 전에 홍보 세부 사항을 검토하십시오.
+1. **홍보**&#x200B;를 선택하기 전에 홍보 세부 정보를 검토하십시오.
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -145,7 +143,7 @@ ht-degree: 93%
 
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
-## AEM Workflow를 사용하여 승격된 페이지 처리 {#processing-promoted-pages-using-aem-workflow}
+## AEM 워크플로를 사용하여 홍보된 페이지 처리 {#processing-promoted-pages-using-aem-workflow}
 
 작업 흐름 모델을 사용하여 다음과 같이 승격된 론치 페이지의 일괄 프로세스를 수행할 수 있습니다.
 
@@ -155,6 +153,6 @@ ht-degree: 93%
 
 페이지가 홍보될 때 워크플로우를 자동으로 시작하려면 패키지 노드에 대한 [워크플로우 런처를 구성](/help/sites-administering/workflows-starting.md#workflows-launchers)합니다.
 
-예를 들어, 작성자가 론치 페이지를 승격하면 페이지 활성화 요청을 자동으로 생성할 수 있습니다. 패키지 노드가 수정될 때 작업 흐름 론쳐를 구성하여 요청 활성화 작업 흐름을 시작합니다.
+예를 들어 작성자가 론치 페이지를 승격하면 페이지 활성화 요청을 자동으로 생성할 수 있습니다. 패키지 노드가 수정될 때 작업 흐름 론쳐를 구성하여 요청 활성화 작업 흐름을 시작합니다.
 
 ![chlimage_1-108](assets/chlimage_1-108.png)

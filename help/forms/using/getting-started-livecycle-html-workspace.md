@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 작업 공간 시작하기
-seo-title: AEM Forms 작업 공간 시작하기
+seo-title: Getting started with AEM Forms workspace
 description: AEM Forms 작업 공간을 사용하여 비즈니스 자동화 프로세스를 관리하는 방법을 시작합니다.
-seo-description: AEM Forms 작업 공간을 사용하여 비즈니스 자동화 프로세스를 관리하는 방법을 시작합니다.
+seo-description: How to get started with using the LiveCycle AEM Forms workspace to manage your business automation processes.
 uuid: 35ca1a51-92c3-40d8-8de3-604be8704752
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 exl-id: d2a962b6-16be-4866-a856-5064f81c9610
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
 
-# AEM Forms 작업 공간 {#getting-started-with-aem-forms-workspace} 시작하기
+# AEM Forms 작업 공간 시작하기 {#getting-started-with-aem-forms-workspace}
 
 AEM Forms 작업 공간을 사용하여 다음 작업을 수행할 수 있습니다.
 
@@ -25,9 +25,9 @@ AEM Forms 작업 공간을 사용하여 다음 작업을 수행할 수 있습니
 * 사용자에게 할당된 작업 또는 액세스 권한이 있는 다른 할 일 목록에 대한 작업을 보고 수행합니다
 * 시작했거나 참여한 프로세스에 속하는 작업을 추적합니다
 
-## AEM Forms 작업 공간 {#navigating-html-workspace} 탐색
+## AEM Forms 작업 공간 탐색 {#navigating-html-workspace}
 
-작업 중인 프로세스 및 작업에 따라 AEM Forms 작업 공간 사용자 인터페이스의 다양한 항목이 표시됩니다. 요약, Forms, 세부 정보, 내역, 첨부 파일, 노트 탭 또는 이 도움말에 설명된 모든 버튼을 항상 표시하거나 볼 수 없습니다.
+작업 중인 프로세스 및 작업에 따라 AEM Forms 작업 공간 사용자 인터페이스의 다양한 항목이 표시됩니다. 요약, Forms, 세부 정보, 내역, 첨부 파일, 노트 탭 또는 이 도움말에 설명된 모든 버튼을 항상 볼 수도 있고 볼 수도 없습니다.
 
 다음 방법 중 하나를 사용하여 기본 AEM Forms 작업 공간 사용자 인터페이스를 탐색할 수 있습니다.
 
@@ -49,7 +49,7 @@ AEM Forms 작업 공간은 웹 기반 HTML 애플리케이션이며 화면 판�
 * AEM Forms 작업 공간의 모든 탐색은 앵커 태그를 통해 수행되며, 탭 을 통해 쉽게 액세스할 수 있습니다.
 * Forms을 로드하는 데 몇 초 정도 걸릴 수 있습니다. 화면 판독기에서 양식을 로드하는 중이어서 기다리셔야 한다는 내용을 사용자가 알 수 없습니다.
 
-## 키보드 {#navigating-html-workspace-using-a-keyboard}을 사용하여 AEM Forms 작업 공간 탐색
+## 키보드를 사용하여 AEM Forms 작업 공간 탐색 {#navigating-html-workspace-using-a-keyboard}
 
 키보드를 사용하여 AEM Forms 작업 영역을 탐색하는 경우 탐색은 HTML 액세스 가능성 규칙을 따릅니다. 상황에 따라, 탭 순서는 일반적인 순서를 따르지 않는다. 다음 팁은 인터페이스를 탐색하는 데 도움이 됩니다.
 
@@ -63,20 +63,20 @@ AEM Forms 작업 공간은 웹 기반 HTML 애플리케이션이며 화면 판�
 
 다음 카테고리에서 다양한 AEM Forms 작업 공간 환경 설정을 지정할 수 있습니다.
 
-**부재 중:** 부재 중 다른 사람에게 작업이 할당되는 방식을 제어하도록 환경 설정을 지정합니다. [부재 중 환경 설정 설정](todo-lists.md#setting-out-of-office-preferences)을 참조하십시오.
+**부재 중:** 부재 중 다른 사용자에게 작업을 할당하는 방법을 제어하려면 환경 설정을 설정하십시오. 자세한 내용은 [부재 중 환경 설정 지정](todo-lists.md#setting-out-of-office-preferences).
 
-**큐:** 다른 사용자와 할 일 목록을 공유하거나 다른 사용자 목록에 대한 액세스 권한을 요청하기 위한 환경 설정을 지정합니다. [그룹 및 공유 큐의 작업](todo-lists.md#working-with-tasks-from-group-and-shared-queues)을 참조하십시오.
+**큐:** 다른 사용자와 할 일 목록을 공유하거나 다른 사용자 목록에 대한 액세스 요청을 위한 환경 설정을 지정합니다. 자세한 내용은 [그룹 및 공유 큐의 작업](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**UI 설정:** AEM Forms 작업 공간과 상호 작용하는 방법에 대한 환경 설정을 지정합니다. [사용자 인터페이스 환경 설정 지정](#set-user-interface-preferences)을 참조하십시오.
+**UI 설정:** AEM Forms 작업 공간과 상호 작용하는 방법에 대한 환경 설정을 지정합니다. 자세한 내용은 [사용자 인터페이스 환경 설정 지정](#set-user-interface-preferences).
 
 ### 사용자 인터페이스 환경 설정 지정 {#set-user-interface-preferences}
 
 환경 설정 > UI 설정 탭에서 사용자 인터페이스 환경 설정을 지정합니다. 다음 기본 설정을 사용할 수 있습니다.
 
-* **시작 위치:**  AEM Forms 작업 공간에 로그인할 때 표시되는 페이지를 지정합니다. 사용 가능한 4가지 옵션은 프로세스 시작, 작업, 추적 및 즐겨찾기입니다.
-* **로그아웃 프롬프트:** [로그아웃]을 클릭한 후 로그아웃할지 여부를 묻는 메시지가 표시되는지 여부를 지정합니다.
+* **시작 위치:** AEM Forms 작업 공간에 로그인할 때 나타나는 페이지를 지정합니다. 사용 가능한 4가지 옵션은 프로세스 시작, 작업, 추적 및 즐겨찾기입니다.
+* **로그아웃 프롬프트:** [로그아웃]을 클릭한 후 로그아웃할지 여부를 확인하는 메시지가 표시되는지 여부를 지정합니다.
 * **날짜 형식:** AEM Forms 작업 공간에서 사용되는 날짜 표시 형식을 지정합니다.
-* **시간 형식**:AEM Forms 작업 공간에서 사용되는 시간 표시 형식을 지정합니다.
-* **전자 메일을 통해 작업 이벤트 알림:** 할 일 목록 및 속해 있는 그룹 할 일 목록의 작업에 대한 작업 할당, 미리 알림 및 기한을 포함하여 작업 이벤트에 대한 전자 메일 알림을 수신할지 여부를 지정합니다.
-* **이메일에 Forms 첨부:**  양식의 사본이 이메일 알림 메시지에 첨부되는지 여부를 지정합니다. 첨부 파일은 PDF 및 XDP 양식에 대해서만 지원됩니다.
-* **초안을 주기적으로 저장:**  양식 초안을 주기적으로 자동으로 저장할지 여부를 지정합니다. 초안을 주기적으로 저장하려면 이 옵션을 활성화하고 자동 저장 기간을 1분에서 30분으로 설정합니다. 자동 저장을 사용할 수 있고 사용자가 초안에서 작업 중인 경우 지정된 시간(분) 후에 초안이 주기적으로 저장됩니다. 초안은 마지막 저장 또는 자동 저장 이후 초안에서 변경된 경우에만 자동으로 저장됩니다. 초안이 저장되면 화면에 경고 메시지가 나타납니다.
+* **시간 형식**: AEM Forms 작업 공간에서 사용되는 시간 표시 형식을 지정합니다.
+* **전자 메일을 통해 작업 이벤트 알림:** 할 일 목록 및 속해 있는 그룹 할 일 목록의 작업에 대한 작업 지정, 미리 알림 및 기한을 비롯하여 작업 이벤트에 대한 전자 메일 알림을 수신할지 여부를 지정합니다.
+* **이메일에 Forms 첨부:** 양식 사본이 전자 메일 알림 메시지에 첨부되는지 여부를 지정합니다. 첨부 파일은 PDF 및 XDP 양식에 대해서만 지원됩니다.
+* **초안을 주기적으로 저장:** 양식 초안을 주기적으로 자동 저장할지 여부를 지정합니다. 초안을 주기적으로 저장하려면 이 옵션을 활성화하고 자동 저장 기간을 1분에서 30분으로 설정합니다. 자동 저장을 사용할 수 있고 사용자가 초안에서 작업 중인 경우 지정된 시간(분) 후에 초안이 주기적으로 저장됩니다. 초안은 마지막 저장 또는 자동 저장 이후 초안에서 변경된 경우에만 자동으로 저장됩니다. 초안이 저장되면 화면에 경고 메시지가 나타납니다.

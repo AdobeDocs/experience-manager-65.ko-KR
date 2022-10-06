@@ -1,14 +1,15 @@
 ---
 title: 작성 기본 사항 학습
 description: 컨텐츠 조각을 사용하여 헤드리스 CMS용 컨텐츠를 작성하는 개념과 역학에 대해 알아봅니다.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 5%
 
 ---
 
-# AEM으로 헤드리스에 대한 작성 기본 사항 {#author-headless-basics}
+# AEM을 통한 Headless 작성 기본 사항 - 소개 {#author-headless-basics}
 
 ## 지금까지 이야기 {#story-so-far}
 
@@ -133,7 +134,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 >
 >자산 폴더에 구성 적용 아래에서 자세히 읽어볼 수 있습니다.
 
-### 컨텐츠 조각 만들기 {#creating-fragment}
+### 콘텐츠 조각 만들기 {#creating-fragment}
 
 컨텐츠 조각 만들기는 매우 유사하며, **컨텐츠 조각** 대신 옵션을 선택합니다.
 
@@ -196,17 +197,17 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
    >
    >자세한 내용을 알아보려면 AEM Headless Content Architect 여정을 읽을 수 있습니다.
 
-* **관련 컨텐츠**
+* **관련 콘텐츠**
 
    이것은 편집자의 입장이므로 아주 명백하다.
 
    컨텐츠 조각은 AEM에서 상당히 많은 버전 동안 사용할 수 있었습니다. 원래 이 템플릿은 페이지를 작성할 때 &quot;기존&quot; 용도로 사용할 수 있도록 만들어졌습니다..그리고 여전히 이런 맥락에서 사용됩니다. 여기에는 조각에 임베드되지 않았더라도 페이지를 작성할 때 작성자가 사용할 수 있어야 하는 자산(예: 이미지)과 연관될 수 있습니다.
 
-* **미리 보기**
+* **미리보기**
 
    이는 편집기의 다른 탭이며, 주로 개발자를 위한 기술 보기를 제공합니다.
 
-* **업데이트 페이지 참조**
+* **페이지 참조 업데이트**
 
    이 작업은 **...** (줄임표) 드롭다운. 머리글 없는 작성자는 페이지 작성과 관련되어 있으므로 흥미롭지는 않습니다.
 
@@ -220,7 +221,7 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
 ![컨텐츠 조각 편집기 - 내 조각](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 이제 기본 사항을 익혔으므로 다음 단계는 다음과 같습니다 [참조에 대해 알아보기](references.md). 이 페이지에서는 사용 가능한 다양한 참조 및 헤드리스를 위한 작성의 주요 부분인 조각 참조를 사용하여 구조 수준을 만드는 방법을 소개하고 설명합니다.
 
@@ -242,13 +243,13 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 
    * [레일 선택기](/help/sites-authoring/basic-handling.md#rail-selector)
 
-* [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
+* [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
 
-   * [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
+   * [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
 
       * [자산 폴더에 구성 적용](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [컨텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
    * [변형 - 컨텐츠 조각 작성](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
@@ -263,6 +264,6 @@ AEM 설치는 일반적으로 두 개 이상의 환경으로 구성됩니다.
 * 시작 안내서
    * [자산 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [AEM Headless Content Architect 여정](/help/journey-headless/architect/overview.md)
+* [AEM 헤드리스 콘텐츠 설계 여정](/help/journey-headless/architect/overview.md)
 
 * [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md)

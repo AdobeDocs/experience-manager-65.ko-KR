@@ -1,8 +1,8 @@
 ---
 title: 자격 증명 사용 정보 검토
-seo-title: 자격 증명 사용 정보 검토
+seo-title: Review credential use information
 description: 자격 증명 사용 정보를 검토하는 방법을 알아봅니다.
-seo-description: 자격 증명 사용 정보를 검토하는 방법을 알아봅니다.
+seo-description: Learn how to review credential use information.
 uuid: 02af75f9-c235-470d-a98b-a2102aa31381
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
 exl-id: a8e16cf8-f3c8-48ce-87da-2f0de0b10a6e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 1. 웹 브라우저를 열고 다음 URL을 입력합니다.
 
-   http://localhost:port/ReaderExtensions (여기서 *port*&#x200B;는 애플리케이션 서버의 포트 번호입니다.)
+   http://localhost:port/ReaderExtensions (여기서) *포트* 은 애플리케이션 서버의 포트 번호입니다.)
 
 1. 기본 사용자 이름과 암호를 사용하여 로그인합니다.
 
-   사용자 이름:관리자
+   사용자 이름: 관리자
 
-   암호:암호
+   암호: 암호
 
    >[!NOTE]
    >

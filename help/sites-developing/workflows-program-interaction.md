@@ -374,7 +374,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 |---|---|
 | `GET` | 받은 편지함의 데이터(정의 및 메타데이터)를 가져옵니다 `WorkItem` 식별됨. |
 
-## 예 {#examples}
+## 예제 {#examples}
 
 ### ID를 사용하여 모든 실행 워크플로우 목록을 가져오는 방법 {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 

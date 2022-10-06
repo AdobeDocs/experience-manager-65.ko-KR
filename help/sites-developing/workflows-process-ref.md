@@ -1,7 +1,7 @@
 ---
-title: 워크플로우 프로세스 참조
+title: 워크플로 프로세스 참조
 seo-title: Workflow Process Reference
-description: 워크플로우 프로세스 참조
+description: 워크플로 프로세스 참조
 seo-description: null
 uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ---
 
-# 워크플로우 프로세스 참조{#workflow-process-reference}
+# 워크플로 프로세스 참조{#workflow-process-reference}
 
 AEM에서는 워크플로우 모델을 만드는 데 사용할 수 있는 몇 가지 프로세스 단계를 제공합니다. 기본 제공 단계에서 다루지 않는 작업에 대해 사용자 지정 프로세스 단계를 추가할 수도 있습니다(참조) [워크플로우 모델 만들기](/help/sites-developing/workflows-models.md)).
 

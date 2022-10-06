@@ -1,8 +1,8 @@
 ---
-title: 타깃팅된 컨텐츠에 대한 다중 사이트 관리 구성 방식
-seo-title: 타깃팅된 컨텐츠에 대한 다중 사이트 관리 구성 방식
-description: 다이어그램은 타깃팅된 컨텐츠에 대한 다중 사이트 지원이 구조화되는 방식을 보여줍니다.
-seo-description: 다이어그램은 타깃팅된 컨텐츠에 대한 다중 사이트 지원이 구조화되는 방식을 보여줍니다.
+title: 타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식
+seo-title: How Multisite Management for Targeted Content is Structured
+description: 다이어그램은 타겟팅된 콘텐츠에 대한 다중 사이트 지원이 구조화되는 방식을 보여 줍니다.
+seo-description: A diagram shows how multisite support for targeted content is structured
 uuid: 2d30cdf0-ab77-490d-aac0-db3a0d417a58
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,20 +12,20 @@ discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
 exl-id: d8ba91ff-ad6e-4540-baff-a2c0c764a299
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 90%
+source-wordcount: '177'
+ht-degree: 100%
 
 ---
 
-# 타깃팅된 컨텐츠에 대한 다중 사이트 관리 구성 방식{#how-multisite-management-for-targeted-content-is-structured}
+# 타겟팅된 콘텐츠에 대한 다중 사이트 관리 구성 방식{#how-multisite-management-for-targeted-content-is-structured}
 
-다음 다이어그램은 타깃팅된 컨텐츠에 대한 다중 사이트 지원이 구조화되는 방식을 보여줍니다.
+다음 다이어그램은 타겟팅된 콘텐츠에 대한 다중 사이트 지원이 구조화되는 방식을 보여 줍니다.
 
-영역은 **/content/campaigns/&lt;brand>** 아래에 표시되며, 기본적으로 각 브랜드에는 자동으로 만들어지는 마스터 영역이 있습니다. 각 영역에는 영역만의 활동, 경험 및 오퍼 세트가 있습니다.
+영역은 **/content/campaigns/&lt;brand>** 아래에 표시되며 기본적으로 각 브랜드에는 자동으로 생성되는 마스터 영역이 있습니다. 각 영역에는 영역만의 활동, 경험 및 오퍼 세트가 있습니다.
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
-타깃팅된 컨텐츠를 조회하기 위해 페이지 또는 사이트를 영역에 매핑할 수 있습니다. 구성된 영역이 없는 경우, AEM은 이 특정 브랜드의 마스터 영역으로 돌아갑니다.
+타겟팅된 콘텐츠를 조회하기 위해 페이지 또는 사이트를 영역에 매핑할 수 있습니다. 구성된 영역이 없는 경우, AEM은 이 특정 브랜드의 마스터 영역으로 돌아갑니다.
 
 다음 다이어그램은 site1, site2 및 site3이라는 세 개의 사이트에 대해 논리가 작동하는 방식에 대한 예입니다.
 

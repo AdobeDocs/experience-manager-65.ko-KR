@@ -1,19 +1,19 @@
 ---
 title: 정적 개체 만료
-seo-title: 정적 개체 만료
+seo-title: Expiration of Static Objects
 description: 정적 개체가 적절한 기간 동안 만료되지 않도록 AEM을 구성하는 방법을 알아봅니다.
-seo-description: 정적 개체가 적절한 기간 동안 만료되지 않도록 AEM을 구성하는 방법을 알아봅니다.
+seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
 uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
-feature: 구성
+feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 * 서버 인프라의 요청을 오프로드합니다.
 * 브라우저가 브라우저 캐시에서 개체를 캐시할 때 페이지 로드 성능을 향상시킵니다.
 
-만료는 HTTP 표준에서 파일의 &quot;만료&quot;에 대해 지정합니다(예를 들어, [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot; 장 14.21을 참조하십시오). 이 표준은 헤더를 사용하여 클라이언트가 오래된 것으로 간주될 때까지 개체를 캐시할 수 있습니다.이러한 객체는 원래 서버에 상태 검사를 수행하지 않고 지정된 시간 동안 캐시됩니다.
+만료는 HTTP 표준에서 파일의 &quot;만료&quot;에 대해 지정합니다(예: [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; 하이퍼텍스트 전송 프로토콜 — HTTP 1.1&quot;). 이 표준은 헤더를 사용하여 클라이언트가 오래된 것으로 간주될 때까지 개체를 캐시할 수 있습니다. 이러한 객체는 원래 서버에 상태 검사를 수행하지 않고 지정된 시간 동안 캐시됩니다.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->객체가 최신 상태로 간주되는 기간을 정의할 때는 주의해야 합니다. 지정된 기간이 만료될 때까지 *확인이 없으므로 클라이언트가 캐시에서 이전 콘텐츠를 제공할 수 있습니다.*
+>객체가 최신 상태로 간주되는 기간을 정의할 때는 주의해야 합니다. 있는 그대로 *지정된 기간이 만료될 때까지 확인 안 함*&#x200B;로 설정되면 클라이언트가 캐시에서 이전 컨텐츠를 제공할 수 있습니다.
 
 1. **작성자 인스턴스의 경우:**
 
@@ -75,7 +75,7 @@ ht-degree: 0%
    </Location>
    ```
 
-   이렇게 하면 중간 캐시(예: 브라우저 캐시)가 클라이언트 캐시에서 최대 하루 동안 CSS, Javascript, PNG 및 GIF 파일을 저장할 수 있습니다. 이 예에서는 `/content` 및 `/etc/designs` 아래의 모든 항목에 대한 전역 설정을 설명하지만, 보다 세부적인 설정을 만들어야 합니다.
+   이렇게 하면 중간 캐시(예: 브라우저 캐시)가 클라이언트 캐시에서 최대 하루 동안 CSS, Javascript, PNG 및 GIF 파일을 저장할 수 있습니다. 이 예제에서는 아래 모든 항목에 대한 전역 설정을 보여 줍니다 `/content` 및 `/etc/designs`를 더 세분화해야 합니다.
 
    사이트 업데이트 빈도에 따라 HTML 페이지 캐싱을 고려할 수도 있습니다. 합리적인 기간은 1시간입니다.
 
@@ -85,4 +85,4 @@ ht-degree: 0%
    </Location>
    ```
 
-정적 개체를 구성한 후 해당 개체를 포함하는 페이지를 선택하는 동안 `request.log`을 검색하여 정적 개체에 대해 아무런(불필요한) 요청이 수행되지 않는지 확인합니다.
+정적 개체를 구성한 후 `request.log`를 채울 때 이러한 개체를 포함하는 페이지를 선택하는 동안 정적 개체에 대해 요청이 수행되지 않는지 확인합니다.

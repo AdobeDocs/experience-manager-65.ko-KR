@@ -1,19 +1,19 @@
 ---
 title: 초대 및 로컬 사용자 계정 관리
-seo-title: 초대 및 로컬 사용자 계정 관리
+seo-title: Managing invited and local user accounts
 description: 문서 보안을 사용하여 초대된 사용자 계정 및 로컬 사용자 계정을 검색, 보기, 편집, 잠금, 잠금 해제 및 삭제할 수 있습니다.
-seo-description: 문서 보안을 사용하여 초대된 사용자 계정 및 로컬 사용자 계정을 검색, 보기, 편집, 잠금, 잠금 해제 및 삭제할 수 있습니다.
+seo-description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
 uuid: 0d0c717a-6e6e-4e42-96eb-3a7166e215ab
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
-feature: 문서 보안
+feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1196'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,8 @@ ht-degree: 0%
 
 초대 및 로컬 사용자 페이지를 사용하여 초대된 사용자와 로컬 사용자를 관리할 수 있습니다. 이 페이지는 다음 요구 사항을 충족하는 경우에만 표시됩니다.
 
-* 문서 보안 [초대된 사용자 관리] 및 [로컬 사용자] 역할과 [관리 콘솔 사용자] 역할이 할당된 관리자입니다. ([역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles) 참조)
-* 초대된 사용자 등록을 사용할 수 있습니다. ([초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration) 참조)
+* 문서 보안 [초대된 사용자 관리] 및 [로컬 사용자] 역할과 [관리 콘솔 사용자] 역할이 할당된 관리자입니다. (자세한 내용은 [역할 만들기 및 구성](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles))
+* 초대된 사용자 등록을 사용할 수 있습니다. (자세한 내용은 [초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration))
 
 초대됨 및 로컬 사용자 페이지에는 초대된 사용자 계정 및 로컬 사용자 계정을 검색, 보기, 편집, 잠금, 잠금 해제 및 삭제하는 데 사용할 수 있는 두 개의 탭이 있습니다.
 
@@ -33,18 +33,18 @@ ht-degree: 0%
 >
 >또한 보안 참조를 문서화하는 LDAP 디렉토리를 통해 직접 초대된 사용자를 추가하거나 정책을 만들거나 편집할 때 사용자 또는 관리자가 새 사용자를 초대하여 등록 초대 이메일을 시작할 수도 있습니다. [초대된 사용자 등록] 페이지에서 [초대된 사용자 등록 활성화] 옵션을 활성화하면 새 초대된 사용자를 정책에 추가할 수 있습니다.
 
-## 초대된 사용자 {#add-an-invited-user} 추가
+## 초대된 사용자 추가 {#add-an-invited-user}
 
 한 번에 하나 이상의 초대된 사용자 계정을 문서 보안에 추가할 수 있습니다. 초대된 사용자 계정을 추가하려면 사용자의 이메일 주소가 필요합니다. 사용자를 추가하면 문서 보안은 사용자를 등록하도록 초대하는 등록 이메일을 보냅니다.
 
 1. 관리 콘솔에서 서비스 > 문서 보안 > 초대 및 로컬 사용자를 클릭한 다음 새 사용자 초대를 클릭합니다.
 1. 초대할 사용자의 이메일 주소를 입력합니다. 한 줄에 여러 주소를 쉼표로 구분하여 입력합니다.
 
-   초대된 사용자 등록을 활성화할 때 만든 메시지가 사용자에게 전송됩니다. ([초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration) 참조)
+   초대된 사용자 등록을 활성화할 때 만든 메시지가 사용자에게 전송됩니다. (자세한 내용은 [초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration))
 
 1. 확인을 클릭합니다.
 
-## 로컬 사용자 {#view-information-about-a-local-user}에 대한 정보 보기
+## 로컬 사용자에 대한 정보 보기 {#view-information-about-a-local-user}
 
 이름, 이메일 주소, 조직, 등록 상태 및 도메인을 포함하여 로컬 사용자에 대한 정보를 볼 수 있습니다.
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
    사용자 세부 사항이 표시되고 사용자의 암호를 재설정하고 계정을 비활성화할 수 있습니다.
 
-## 등록되지 않은 외부 사용자 {#send-an-email-to-an-unregistered-external-user}에게 전자 메일 보내기
+## 등록되지 않은 외부 사용자에게 전자 메일 보내기 {#send-an-email-to-an-unregistered-external-user}
 
 초대된 사용자를 추가하면 문서 보안에서 사용자에게 등록 이메일 요청을 자동으로 보냅니다. 아직 등록하지 않은 초대받은 사용자에게 보낼 등록 이메일을 수동으로 생성할 수도 있습니다. 예를 들어, 초대받은 사용자의 등록 이메일이 만료된 경우 새 초대장을 보내기 위해 이러한 작업을 수행할 수 있습니다.
 
@@ -61,17 +61,17 @@ ht-degree: 0%
 1. 사용자 목록에서 각 사용자가 등록 이메일을 보낼 확인란을 선택한 다음 초대 이메일 재전송을 클릭합니다.
 1. 선택한 사용자 목록을 검토하고 확인을 클릭합니다.
 
-## 로컬 사용자 암호 {#reset-a-local-user-password} 재설정
+## 로컬 사용자 암호 재설정 {#reset-a-local-user-password}
 
 문서 보안에 등록했지만 암호를 잊어버린 활성화된 초대된 사용자의 암호를 재설정할 수 있습니다. 암호를 재설정하면 사용자의 새 임시 암호가 포함된 이메일이 생성됩니다.
 
-초대된 사용자 등록 프로세스를 활성화하면 암호를 재설정하라는 메시지를 사용자에게 보내는 이메일 메시지를 만들었습니다. ([초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration) 참조)
+초대된 사용자 등록 프로세스를 활성화하면 암호를 재설정하라는 메시지를 사용자에게 보내는 이메일 메시지를 만들었습니다. (자세한 내용은 [초대된 사용자 등록 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration))
 
 1. 관리 콘솔에서 서비스 > 문서 보안 > 초대 및 로컬 사용자를 클릭하고 로컬 사용자 탭을 클릭합니다.
 1. 사용자 목록에서 해당 사용자를 선택합니다.
 1. 로컬 사용자 관리 페이지에서 암호 재설정 을 클릭하고 확인을 클릭합니다. 새 암호가 포함된 암호 재설정 전자 메일이 사용자에게 전송됩니다.
 
-## 사용자 계정 {#enable-or-disable-a-user-account} 활성화 또는 비활성화
+## 사용자 계정 활성화 또는 비활성화 {#enable-or-disable-a-user-account}
 
 로컬 사용자 계정을 비활성화하여 사용자가 문서 보안에 로그인하지 못하도록 일시적으로 제한할 수 있습니다. 계정을 비활성화하면 사용자가 정책에 따라 보호된 문서를 사용하거나 정책을 만들거나 적용할 수 없습니다.
 
@@ -102,21 +102,21 @@ ht-degree: 0%
 1. 관리 콘솔에서 서비스 > 문서 보안 > 초대 및 로컬 사용자를 클릭하고 초대된 사용자 탭을 클릭합니다.
 1. 하나 이상의 사용자 옆의 확인란을 선택하고 삭제를 클릭한 다음 확인을 클릭합니다.
 
-## 초대된 사용자 계정 {#search-for-an-invited-user-account} 검색
+## 초대된 사용자 계정 검색 {#search-for-an-invited-user-account}
 
 이메일 주소를 사용하여 초대된 사용자 계정을 검색할 수 있습니다.
 
 1. 관리 콘솔에서 서비스 > 문서 보안 > 초대 및 로컬 사용자를 클릭합니다.
 1. 이메일 찾기 상자에 사용자의 이메일 주소를 입력한 다음 찾기를 클릭합니다.
 
-## 로컬 사용자 계정 {#search-for-a-local-user-account} 검색
+## 로컬 사용자 계정 검색 {#search-for-a-local-user-account}
 
 사용자의 이메일 주소나 이름 및 도메인을 사용하여 로컬 사용자를 검색할 수 있습니다.
 
 1. 관리 콘솔에서 서비스 > 문서 보안 > 초대 및 로컬 사용자를 클릭하고 로컬 사용자 탭을 클릭합니다.
 1. 찾기 상자에 검색 기준을 입력하고 이름 또는 이메일을 선택한 다음 찾기를 클릭합니다.
 
-## 로컬 사용자 계정 {#remove-a-local-user-account} 제거
+## 로컬 사용자 계정 제거 {#remove-a-local-user-account}
 
 문서 보안에서 로컬 사용자 계정을 삭제할 수 있습니다. 예를 들어 사용자가 개인 이메일 계정 정보를 변경할 때 계정을 삭제할 수 있습니다.
 

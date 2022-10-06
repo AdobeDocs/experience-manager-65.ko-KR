@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 작업 공간 JSON 개체 설명
-seo-title: AEM Forms 작업 공간 JSON 개체 설명
+seo-title: AEM Forms workspace JSON object description
 description: 사용자 지정, 확장, 수정 및 재사용을 위해 AEM Forms 작업 공간에 사용되는 JSON JavaScript 개체에 대한 개념적 정보입니다.
-seo-description: 사용자 지정, 확장, 수정 및 재사용을 위해 AEM Forms 작업 공간에 사용되는 JSON JavaScript 개체에 대한 개념적 정보입니다.
+seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2109'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 있습니다.
 
-1. 카테고리
+1. 범주
 
    카테고리는 작업 공간의 시작 프로세스 탭에 있습니다. 이러한 카테고리는 시작점을 분류하는 데 사용됩니다.
 
@@ -44,12 +44,12 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>설명<br type="_moz" /> </td>
    <td>F</td>
-   <td>범주 설명<br type="_moz" /> </td>
+   <td>카테고리 설명<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>parentOid<br type="_moz" /> </td>
    <td>F</td>
-   <td>상위 범주<br type="_moz" />의 oid를 포함합니다. </td>
+   <td>상위 카테고리의 oid 포함<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>startPointsList<br type="_moz" /> </td>
@@ -59,7 +59,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>categoryList</td>
    <td>T</td>
-   <td>범주<br type="_moz" />의 직접 하위 범주 목록을 포함합니다. </td>
+   <td>카테고리의 직접 하위 카테고리 목록을 포함합니다<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -99,12 +99,12 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>classOfTask</td>
    <td>F</td>
-   <td>작업이 lc8 작업인 경우 작업의 클래스가 'LC8'이고 그렇지 않은 경우 'Standard'입니다.<br /> </td>
+   <td>작업이 lc8 작업인 경우 작업의 클래스가 'LC8'이고 그렇지 않으면 '표준'입니다.<br /> </td>
   </tr>
   <tr>
    <td>completeTime<br /> </td>
    <td>F</td>
-   <td>작업이 완료될 때 타임스탬프가 포함됩니다.<br /> </td>
+   <td>작업이 완료될 때 타임스탬프가 들어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>consultGroupId<br /> </td>
@@ -124,12 +124,12 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>currentAssignment<br /> </td>
    <td>F</td>
-   <td>현재 작업 할당에 대한 세부 정보가 포함되어 있습니다.<br /> </td>
+   <td>여기에는 현재 작업 할당에 대한 세부 정보가 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
-   <td><br /> </td>
+   <td>기한<br /> </td>
    <td>F</td>
-   <td>여기에는 작업이 최종 기한에 도달하는 타임스탬프가 들어 있습니다.<br /> </td>
+   <td>여기에는 작업 마감일에 도달하는 타임스탬프가 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>설명<br /> </td>
@@ -139,7 +139,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>displayName<br /> </td>
    <td>F</td>
-   <td>작업의 표시 이름을 포함합니다.<br /> </td>
+   <td>작업의 표시 이름이 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>forwardGroupId<br /> </td>
@@ -159,7 +159,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>isMustOpenToComplete<br /> </td>
    <td>F</td>
-   <td>작업을 완료하려면 작업 양식을 열어야 하는 경우 True입니다.<br /> </td>
+   <td>작업을 완료하기 위해 작업 양식을 열어야 하는 경우 True입니다.<br /> </td>
   </tr>
   <tr>
    <td>isOpenFullScreen<br /> </td>
@@ -179,7 +179,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>isStartTask<br /> </td>
    <td>F</td>
-   <td>true이면 작업이 시작 지점에서 만들어집니다.<br /> </td>
+   <td>true이면 작업이 시작점에서 생성됩니다.<br /> </td>
   </tr>
   <tr>
    <td>isVisible<br /> </td>
@@ -187,14 +187,14 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
    <td>작업이 작업 공간에 표시되면 True입니다.<br /> </td>
   </tr>
   <tr>
-   <td>nextRecommender<br /> </td>
+   <td>nextRecommendations<br /> </td>
    <td>F</td>
-   <td>다음 미리 알림에 대한 타임스탬프입니다.<br /> </td>
+   <td>다음 미리 알림을 위한 타임스탬프.<br /> </td>
   </tr>
   <tr>
    <td>우선 순위<br /> </td>
    <td>F</td>
-   <td>작업의 우선 순위를 포함합니다.<br /> 1 = 가장 높은 우선순위<br /> 2 = 높은 우선순위<br /> 3 = 일반 우선순위<br /> 4 = 낮은 우선순위<br /> 5 = 가장 낮은 우선순위<br /> </td>
+   <td>작업의 우선 순위를 포함합니다.<br /> 1 = 가장 높은 우선순위<br /> 2 = 높은 우선순위<br /> 3 = 일반 우선순위<br /> 4 = 낮음 우선순위<br /> 5 = 최저 우선순위<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -209,7 +209,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>recommendationCount<br /> </td>
    <td>F</td>
-   <td>작업에 대한 미리 알림 수를 포함합니다.<br /> </td>
+   <td>작업에 대한 미리 알림 수가 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>routeList<br /> </td>
@@ -244,12 +244,12 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>stepName<br /> </td>
    <td>F</td>
-   <td>디자인하는 동안 작업 집합의 이름이 포함되어 있습니다.<br /> </td>
+   <td>디자인하는 동안 작업 세트의 이름이 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>summaryUrl<br /> </td>
    <td>F</td>
-   <td>작업 요약 url이 포함되어 있습니다.<br /> </td>
+   <td>작업 요약 URL이 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>taskACL<br /> </td>
@@ -264,7 +264,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>updateTime<br /> </td>
    <td>F</td>
-   <td>작업이 마지막으로 업데이트된 시간 스탬프입니다.<br /> </td>
+   <td>작업을 마지막으로 업데이트한 타임스탬프입니다.<br /> </td>
   </tr>
   <tr>
    <td>formUrl<br /> </td>
@@ -274,7 +274,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>taskFormType<br /> </td>
    <td>T</td>
-   <td>작업 양식 유형이 포함되어 있습니다. 이 필드를 사용하면 작업이 클라이언트에서 pdf for, swf form에 대해 렌더링됩니다.<br /> </td>
+   <td>작업 양식 유형이 포함되어 있습니다. 이 필드를 사용하면 작업이 클라이언트에서 pdf for, swf 양식 등으로 렌더링됩니다.<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
@@ -304,22 +304,22 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>isDefaultImage<br /> </td>
    <td>T</td>
-   <td>프로세스에 지정된 이미지가 있는지 여부를 나타냅니다. 프로세스와 연결된 이미지가 없으면 True입니다.<br /> </td>
+   <td>프로세스에 지정된 이미지가 있는지 여부를 나타냅니다. 프로세스와 연결된 이미지가 없는 경우 true이고, 그렇지 않으면 false입니다.<br /> </td>
   </tr>
   <tr>
    <td>historyTaskList<br /> </td>
    <td>T</td>
-   <td>작업 세부 정보의 기록 탭에 사용되는 작업 목록이 포함되어 있습니다.<br /> </td>
+   <td>작업 세부 사항의 기록 탭에 사용되는 작업 목록이 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>isOwner<br /> </td>
    <td>T</td>
-   <td>로그인한 사용자가 작업의 소유자인 경우 True입니다.<br /> </td>
+   <td>로그인한 사용자가 작업 소유자인 경우 True입니다.<br /> </td>
   </tr>
   <tr>
    <td>availableCommands<br /> </td>
    <td>T</td>
-   <td>여기에는 작업에 수행할 수 있는 모든 작업이 포함되어 있습니다.<br /> </td>
+   <td>여기에는 작업에서 수행할 수 있는 모든 작업이 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>availableCommands.directCommands<br /> </td>
@@ -329,7 +329,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>availableCommands.taskACLCommands<br /> </td>
    <td>T</td>
-   <td>이 파일에는 작업에 사용할 수 있는 경우 전달, 공유 및 참조 등의 명령이 포함되어 있습니다.<br /> </td>
+   <td>작업에 사용할 수 있는 경우 전달, 공유 및 참조 등의 명령이 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>availableCommands.otherCommands<br /> </td>
@@ -344,17 +344,17 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>processVariables<br /> </td>
    <td>T<br /> </td>
-   <td>여기에는 프로세스 변수의 개체 배열이 포함되어 있습니다.<br /> </td>
+   <td>여기에는 프로세스 변수(있는 경우)의 개체 배열이 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>pendingTasks<br /> </td>
    <td>T</td>
-   <td>작업 프로세스 인스턴스에 대해 보류 중인 작업 목록이 포함되어 있습니다.<br /> </td>
+   <td>작업의 프로세스 인스턴스에 대해 보류 중인 작업 목록이 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>userActions<br /> </td>
    <td>T</td>
-   <td>개체 배열입니다. 각 개체에는 경로 및 해당하는 확인 메시지가 있는 경우 해당 메시지에 대한 세부 정보가 들어 있습니다.<br /> </td>
+   <td>개체 배열입니다. 각 객체에는 경로 및 해당 확인 메시지가 있는 경우 해당 확인 메시지에 대한 세부 정보가 포함되어 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>dataUrl<br /> </td>
@@ -364,10 +364,10 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>externalAppConfig<br /> </td>
    <td>T</td>
-   <td>타사 응용 프로그램 양식에 대한 구성입니다.<br /> </td>
+   <td>타사 애플리케이션 양식에 대한 구성입니다.<br /> </td>
   </tr>
   <tr>
-   <td>submit<br /> </td>
+   <td>제출<br /> </td>
    <td>T</td>
    <td>작업이 제출되면 True입니다.<br /> </td>
   </tr>
@@ -398,7 +398,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>isDefault <br type="_moz" /> </td>
    <td>F</td>
-   <td>대기열이 로그인한 사용자의 기본 큐인 경우 true이고, 그렇지 않은 경우 false입니다.<br type="_moz" /> </td>
+   <td>Logged in 사용자의 기본 큐인 경우 True이고, 그렇지 않은 경우 false입니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>이름<br type="_moz" /> </td>
@@ -423,7 +423,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>작업</td>
    <td>T</td>
-   <td>필터에 속한 모든 작업의 목록이 포함되어 있습니다.<br type="_moz" /> </td>
+   <td>필터에 속한 모든 작업 목록이 포함되어 있습니다.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -452,17 +452,17 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
    <td>F</td>
-   <td>사용자가 부재 중이면 True입니다.<br type="_moz" /> </td>
+   <td>사용자가 부재 중인 경우 True입니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>outOfOfficeDesignate<br type="_moz" /> </td>
    <td>F</td>
-   <td>여기에는 사용자가 기본 지정으로 지정한 사용자의 세부 정보가 포함됩니다.<br type="_moz" /> </td>
+   <td>여기에는 사용자별로 기본 지정으로 지정된 사용자의 세부 정보가 포함되어 있습니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td>
    <td>F</td>
-   <td>프로세스 특정 부재 지정 개체들을 위한 개체 배열을 포함합니다. 각 프로세스별 지정 객체에서 processName은 프로세스 이름을 포함하고, 해당 프로세스에 대해 지정된 사용자가 없을 경우 isNotDesignated는 true이고, 해당 프로세스에 지정된 사용자의 다른 세부 정보가 사용자에게 할당되지 않은 경우 userDesignated는 null입니다.<br type="_moz" /> </td>
+   <td>프로세스 특정 부재 지정 개체들을 위한 개체 배열을 포함합니다. 각 프로세스 특정 지정 객체에서 processName은 프로세스 이름을 포함하고, 해당 프로세스에 대해 지정된 사용자가 없을 경우 isNotDesignated는 true이고, 해당 프로세스에 대해 지정된 사용자의 다른 세부 정보가 사용자에게 지정되지 않은 경우 userDesignated는 null입니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>프로세스<br type="_moz" /> </td>
@@ -472,17 +472,17 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>initialOutOfOfficeSettings<br type="_moz" /> </td>
    <td>T</td>
-   <td>이 목록에는 처음에 가져오는 사용자의 초기 부재 중 설정이 포함되어 있습니다.<br type="_moz" /> </td>
+   <td>이 페이지에는 처음에 가져온 사용자의 초기 부재 중 설정이 포함되어 있습니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>outOfOfficeSettings<br type="_moz" /> </td>
    <td>T</td>
-   <td>수정된 부재 중 설정이 포함되어 있습니다.<br type="_moz" /> </td>
+   <td>수정된 부재 설정이 포함되어 있습니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td>
    <td>T</td>
-   <td>이 목록에는 날짜까지 로그인한 사용자가 검색하는 사용자 목록이 포함되어 있습니다.<br type="_moz" /> </td>
+   <td>이 파일에는 로그인한 사용자가 날짜까지 검색하는 사용자 목록이 포함되어 있습니다.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -501,7 +501,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>설명<br type="_moz" /> </td>
    <td>F</td>
-   <td>프로세스 인스턴스 설명<br type="_moz" /> </td>
+   <td>프로세스 인스턴스에 대한 설명<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>개시자</td>
@@ -516,7 +516,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>processCompleteTime<br type="_moz" /> </td>
    <td>F</td>
-   <td>프로세스가 완료되면 타임스탬프를 지정합니다.<br type="_moz" /> </td>
+   <td>프로세스가 완료되면 타임스탬프를 사용합니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processInstanceId<br type="_moz" /> </td>
@@ -526,7 +526,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = Initiated<br /> 1 = Running<br /> 2 = Complete<br /> 3 = Complete<br /> 4 = Terminating<br /> 5 = Terminating<br /> 6 = Suspended<br /> 7 = Suspending<br /> 8 = Unsuspending<br type="_moz" /> </td>
+   <td>0 = 시작됨<br /> 1 = 실행 중<br /> 2 = 완료<br /> 3 = 완료<br /> 4 = 종료됨<br /> 5 = 종료 중<br /> 6 = 일시 중단됨<br /> 7 = 일시 중단<br /> 8 = 일시 중단 해제<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td>
@@ -536,7 +536,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>processStartTime<br type="_moz" /> </td>
    <td>F</td>
-   <td>프로세스가 시작될 때 타임스탬프입니다.<br type="_moz" /> </td>
+   <td>프로세스가 시작될 때 타임스탬프를 사용합니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processVariables<br type="_moz" /> </td>
@@ -544,7 +544,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
    <td>프로세스 변수의 개체 배열입니다. 각 프로세스 변수 객체에는 프로세스 변수의 이름인 이름, 프로세스 변수의 값인 값 및 프로세스 변수의 유형인 유형이 포함됩니다.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>tasklist<br type="_moz" /> </td>
+   <td>작업 목록<br type="_moz" /> </td>
    <td>T</td>
    <td>이 프로세스 인스턴스에서 생성한 작업입니다.<br type="_moz" /> </td>
   </tr>
@@ -563,7 +563,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>processMajorVersion<br type="_moz" /> </td>
    <td>F</td>
-   <td>프로세스의 주 버전입니다.<br type="_moz" /> </td>
+   <td>프로세스의 주요 버전입니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processMinorVersion<br type="_moz" /> </td>
@@ -602,32 +602,32 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>assignmentCreateTime<br type="_moz" /> </td>
    <td>F</td>
-   <td>이 작업 할당을 만들 때 타임스탬프가 지정됩니다.<br type="_moz" /> </td>
+   <td>이 작업 할당을 만들 때 타임스탬프를 사용합니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = 초기 배정<br /> 1 = 전달 (작업이 현재 작업 소유자에게 전달되었습니다.)<br /> 2 = 반환됨(이전 작업 소유자가 작업을 현재 작업 소유자에게 반환함)<br /> 3 = 요청됨(현재 작업 소유자가 작업을 요청했습니다.)<br /> 4 = 에스컬레이션(에스컬레이션 후 태스크의 현재 소유자에게 태스크가 지정됨)<br /> 5 = 관리자 지정됨(관리자가 현재 작업 소유자에게 작업을 할당했습니다.)<br /> 6 = 상담됨 ( 현재 작업 소유자에게 작업이 상담되었습니다.)<br type="_moz" /> </td>
+   <td>0 = 초기 배정<br /> 1 = 전달(작업이 현재 작업 소유자에게 전달되었습니다.)<br /> 2 = 반환됨(이전 작업 소유자가 작업을 현재 작업 소유자에게 반환함)<br /> 3 = 요청됨(현재 작업 소유자가 작업을 요청했습니다.)<br /> 4 = 에스컬레이션(에스컬레이션 후 태스크의 현재 소유자에게 태스크가 지정됨)<br /> 5 = 관리자 지정됨(관리자가 현재 작업 소유자에게 작업을 할당했습니다.)<br /> 6 = 상담됨 ( 현재 작업 소유자에게 작업이 상담되었습니다.)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>
    <td>F</td>
-   <td>이 작업 할당이 업데이트될 때의 타임스탬프입니다.<br type="_moz" /> </td>
+   <td>이 작업 할당이 업데이트될 때 타임스탬프.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>queueId<br type="_moz" /> </td>
    <td>F</td>
-   <td>작업의 현재 소유자의 큐 ID입니다.<br type="_moz" /> </td>
+   <td>현재 작업 소유자의 큐 ID입니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>queueOwner<br type="_moz" /> </td>
    <td>F</td>
-   <td>작업의 현재 소유자 이름입니다.<br type="_moz" /> </td>
+   <td>현재 작업 소유자의 이름입니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>queueOwnerId<br type="_moz" /> </td>
    <td>F</td>
-   <td>작업의 현재 소유자 ID입니다.<br type="_moz" /> </td>
+   <td>현재 작업 소유자의 ID입니다.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -646,12 +646,12 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>canAddAttachments<br type="_moz" /> </td>
    <td>F</td>
-   <td>true이면 첨부 파일을 작업에 추가할 수 있습니다.<br type="_moz" /> </td>
+   <td>true일 경우 첨부 파일을 작업에 추가할 수 있습니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canAddNotes<br type="_moz" /> </td>
    <td>F</td>
-   <td>true이면 작업에 메모를 추가할 수 있습니다.<br type="_moz" /> </td>
+   <td>true면 작업에 메모를 추가할 수 있습니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canClaim<br type="_moz" /> </td>
@@ -661,7 +661,7 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>canConsult<br type="_moz" /> </td>
    <td>F</td>
-   <td>true이면 작업을 참조할 수 있습니다.<br type="_moz" /> </td>
+   <td>true일 경우 작업을 참조할 수 있습니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canForward<br type="_moz" /> </td>
@@ -688,9 +688,9 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
    <td><strong>댓글</strong></td>
   </tr>
   <tr>
-   <td>creationDate<br type="_moz" /> </td>
+   <td>createDate<br type="_moz" /> </td>
    <td>F</td>
-   <td>첨부 파일을 만들 때 타임스탬프를 사용합니다.<br type="_moz" /> </td>
+   <td>첨부 파일을 만들 때의 타임스탬프.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>creatorId<br type="_moz" /> </td>
@@ -720,12 +720,12 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>lastModifiedDate<br type="_moz" /> </td>
    <td>F</td>
-   <td>첨부 파일이 마지막으로 수정된 경우 타임스탬프입니다.<br type="_moz" /> </td>
+   <td>첨부 파일이 마지막으로 수정된 경우 타임스탬프.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>noteExtended<br type="_moz" /> </td>
    <td>F</td>
-   <td>true일 경우 메모는 확장(긴) 메모입니다.<br type="_moz" /> </td>
+   <td>true면 확장된(긴) 메모입니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>권한<br type="_moz" /> </td>
@@ -750,17 +750,17 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>formattedCreationDate<br type="_moz" /> </td>
    <td>T</td>
-   <td>사용자의 UI 설정에 따라 첨부 파일 생성 날짜가 포함됩니다.<br type="_moz" /> </td>
+   <td>사용자의 UI 설정에 따른 첨부 파일 생성 날짜가 포함되어 있습니다.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>formattedDescription<br type="_moz" /> </td>
+   <td>formatDescription<br type="_moz" /> </td>
    <td>T</td>
    <td>서식 있는 첨부 설명. AEM Forms 작업 영역의 첨부 파일 설명에 있는 특수 문자를 표시하는 데 사용됩니다.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>formattedFileName<br type="_moz" /> </td>
+   <td>formatFileName<br type="_moz" /> </td>
    <td>T</td>
-   <td>서식 있는 첨부 파일 이름입니다. AEM Forms 작업 영역에서 첨부 파일 이름에 있는 특수 문자를 표시하는 데 사용됩니다. 참고용입니다.<br type="_moz" /> </td>
+   <td>서식 있는 첨부 파일 이름입니다. AEM Forms 작업 영역에서 첨부 파일 이름에 있는 특수 문자를 표시하는 데 사용됩니다. 이건 참고용입니다<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -804,12 +804,12 @@ AEM Forms 작업 공간에 사용되는 JSON 개체는 아래에 설명되어 �
   <tr>
    <td>email<br type="_moz" /> </td>
    <td>F</td>
-   <td>사용자의 전자 메일 ID입니다.<br type="_moz" /> </td>
+   <td>사용자의 이메일 ID입니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
    <td>F</td>
-   <td>사용자가 부재 중이면 True입니다.<br type="_moz" /> </td>
+   <td>사용자가 부재 중인 경우 True입니다.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>lastName<br type="_moz" /> </td>

@@ -1,19 +1,19 @@
 ---
 title: 이벤트 모니터링
-seo-title: 이벤트 모니터링
+seo-title: Monitoring events
 description: 감사 기능을 사용하면 문서 보안을 통해 특정 유형의 이벤트를 모니터링할 수 있습니다. 문서 보안을 사용하여 이벤트 목록을 쉽게 검색하고 정렬할 수 있습니다.
-seo-description: 감사 기능을 사용하면 문서 보안을 통해 특정 유형의 이벤트를 모니터링할 수 있습니다. 문서 보안을 사용하여 이벤트 목록을 쉽게 검색하고 정렬할 수 있습니다.
+seo-description: When the auditing capability is enabled, document security enables you to monitor certain types of events. You can easily search and sort the events list using the document security.
 uuid: 22add6ff-536d-4cb9-8eac-b72cad5c3ecf
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
-feature: 문서 보안
+feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,15 @@ ht-degree: 0%
 
 **사용자:** 정책에 따라 보호되는 문서와 수신하여 사용하는 보호된 문서에 대해 감사된 이벤트를 볼 수 있습니다.
 
-**정책 집합 코디네이터:** 정책 집합에서 정책에 의해 보호되는 문서에 대해 문서 및 정책 이벤트를 포함하여 감사된 이벤트를 볼 수 있습니다.
+**정책 집합 코디네이터:** 정책 세트에서 정책에 의해 보호되는 문서에 대해 문서 및 정책 이벤트를 포함한 감사된 이벤트를 볼 수 있습니다.
 
-**관리자:** 정책에 따라 보호되는 모든 문서 및 사용자와 관련된 감사된 이벤트를 볼 수 있습니다. 관리자는 사용자, 문서, 정책 및 시스템 이벤트를 포함한 다른 유형의 이벤트를 추적할 수도 있습니다.
+**관리자:** 모든 정책에 따라 보호되는 문서 및 사용자와 관련된 감사 이벤트를 볼 수 있습니다. 관리자는 사용자, 문서, 정책 및 시스템 이벤트를 포함한 다른 유형의 이벤트를 추적할 수도 있습니다.
 
 >[!NOTE]
 >
 >정책으로 보호된 문서의 복사본에서 수행되는 이벤트는 원래 보호된 문서의 이벤트로 추적됩니다.
 
-([이벤트 감사 옵션](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options)을 참조하십시오.)
+(자세한 내용은 [이벤트 감사 옵션](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options))
 
 권한이 없는 사용자가 문서를 보려고 하거나 잘못된 사용자 이름 또는 암호를 사용하여 로그인을 시도하는 경우 실패한 이벤트가 기록됩니다.
 
@@ -42,17 +42,17 @@ ht-degree: 0%
 
 정책에 따라 익명 사용자 액세스가 허용되지만 관리자가 나중에 문서 보안에 대한 익명 액세스를 해제하면 정책에 의해 보호되는 문서에 대한 익명 액세스가 실패하고 이벤트가 기록되지 않습니다.
 
-## 이벤트 감사 사용 {#enable-event-auditing}
+## 이벤트 감사 활성화 {#enable-event-auditing}
 
 이벤트 감사를 수행하려면 다음 설정 요구 사항을 충족해야 합니다.
 
 * 시스템 또는 관리자가 서버의 감사 기능을 사용하도록 설정해야 합니다.
 
-   ([이벤트 감사 및 개인 정보 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings)을 참조하십시오.)
+   (자세한 내용은 [이벤트 감사 및 개인 정보 설정 구성](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings))
 
-* 문서를 보호하는 데 사용하는 정책에 감사 기능이 설정되어 있어야 합니다. ([정책 만들기 및 편집](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies) 참조)
+* 문서를 보호하는 데 사용하는 정책에 감사 기능이 설정되어 있어야 합니다. (자세한 내용은 [정책 만들기 및 편집](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies))
 
-## 이벤트 {#search-for-an-event} 검색
+## 이벤트 검색 {#search-for-an-event}
 
 이벤트 목록을 검색하고 이벤트에 대한 자세한 설명을 볼 수 있습니다. 자세한 설명에는 이벤트 ID, 설명, IP 주소, 조직, 영향을 받는 사용자, 이벤트가 발생한 날짜 및 시간, 거부된 활동 및 오프라인 이벤트(사용자가 문서 보안에 연결되지 않은 경우 문서를 사용하려고 할 때)와 같은 정보가 포함됩니다.
 
@@ -60,28 +60,28 @@ ht-degree: 0%
 
 **사용자:** 정책에 따라 보호되는 문서와 수신하여 사용하는 보호된 문서에 대해 감사된 이벤트를 볼 수 있습니다. 다음 검색 옵션을 사용할 수 있습니다.
 
-**나와 관련된 이벤트:**  사용자는 만들거나 받은 정책에 따라 보호된 문서에 대한 이벤트를 찾을 수 있습니다. 예를 들어, 다른 사람이 보호된 문서를 열거나 보거나 인쇄하면 해당 문서에 대해 이러한 이벤트만 표시됩니다.
+**나와 관련된 이벤트:** 사용자는 만들거나 받은 정책에 따라 보호된 문서에 대한 이벤트를 찾을 수 있습니다. 예를 들어, 다른 사람이 보호된 문서를 열거나 보거나 인쇄하면 해당 문서에 대해 이러한 이벤트만 표시됩니다.
 
-**내 문서와 관련된 이벤트:**  사용자는 자신의 정책으로 보호된 문서와 관련된 모든 이벤트를 찾을 수 있습니다. 사용자는 문서를 처리한 모든 사람이 생성한 이벤트를 봅니다.
+**내 문서와 관련된 이벤트:** 사용자는 정책에 따라 보호되는 문서와 관련된 모든 이벤트를 찾을 수 있습니다. 사용자는 문서를 처리한 모든 사람이 생성한 이벤트를 봅니다.
 
-**정책 집합 코디네이터:** 정책 집합에서 정책에 의해 보호되는 문서에 대해 문서 및 정책 이벤트를 포함하여 감사된 이벤트를 볼 수 있습니다. 다음 옵션을 사용할 수 있습니다.
+**정책 집합 코디네이터:** 정책 세트에서 정책에 의해 보호되는 문서에 대해 문서 및 정책 이벤트를 포함한 감사된 이벤트를 볼 수 있습니다. 다음 옵션을 사용할 수 있습니다.
 
-**정책 집합 코디네이터인 문서 이벤트:**  이벤트 보기 권한이 있는 정책 집합 코디네이터는 정책 집합에서 정책이 보호하는 문서와 관련된 이벤트를 찾을 수 있습니다.
+**정책 집합 코디네이터인 문서 이벤트:** 이벤트 보기 권한이 있는 정책 집합 코디네이터는 정책 집합에서 정책을 보호하는 문서와 관련된 이벤트를 찾을 수 있습니다.
 
-**정책 집합 코디네이터인 정책 이벤트:**  이벤트 보기 권한이 있는 정책 집합 코디네이터는 정책 집합에서 정책과 관련된 이벤트를 찾을 수 있습니다.
+**정책 집합 코디네이터인 정책 이벤트:** 이벤트 보기 권한이 있는 정책 집합 조정자는 정책 집합에서 정책과 관련된 이벤트를 찾을 수 있습니다.
 
-**관리자:** 정책에 따라 보호되는 모든 문서 및 사용자와 관련된 감사된 이벤트를 볼 수 있습니다. 관리자는 다른 유형을 추적할 수도 있습니다. 또한 관리자는 사용자 유형에 따라 이벤트 검색을 세분화할 수 있습니다.
+**관리자:** 모든 정책에 따라 보호되는 문서 및 사용자와 관련된 감사 이벤트를 볼 수 있습니다. 관리자는 다른 유형을 추적할 수도 있습니다. 또한 관리자는 사용자 유형에 따라 이벤트 검색을 세분화할 수 있습니다.
 
 **알려진 사용자:** 사용자는 소스 디렉토리에 있거나 외부 사용자로 등록됩니다.
 
 **익명 사용자:** 익명 액세스를 허용하는 정책으로 보호된 문서에 액세스하는 알 수 없는 사용자입니다.
 
-**시스템 사용자:** 디렉토리 동기화와 같은 서버가 시작한 이벤트입니다.
+**시스템 사용자:** 디렉터리 동기화와 같은 서버가 시작한 이벤트입니다.
 
 1. 문서 보안 페이지에서 이벤트를 클릭합니다.
 1. 찾기 목록에서 사용할 검색 기준을 선택합니다. 찾기 목록에서 선택한 내용에 따라 추가 검색 기준을 제공하는 두 번째 목록이 표시됩니다. 해당하는 경우 텍스트 상자에 검색 기준을 입력합니다.
 
-   특정 이벤트 유형에 대한 자세한 내용은 [이벤트 감사 옵션](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options)을 참조하십시오.
+   특정 이벤트 유형에 대한 자세한 내용은 [이벤트 감사 옵션](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
 
 1. 사용자 목록에서 이벤트를 수행한 사용자 유형을 선택합니다.
 

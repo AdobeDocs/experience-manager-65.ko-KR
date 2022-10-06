@@ -1,8 +1,8 @@
 ---
 title: 구성 요소
-seo-title: 구성 요소
+seo-title: Components
 description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다.
-seo-description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다.
+seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
 page-status-flag: de-activated
 uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
@@ -13,7 +13,7 @@ discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '217'
 ht-degree: 92%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 92%
 >
 >이 섹션에서는 표준 AEM 설치 시 기본적으로 사용할 수 있는 구성 요소에 대해서만 설명합니다.
 >
->사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 지정했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
+>사용자 인스턴스에 따라 사용자 요구 사항에 맞게 명시적으로 개발된 구성 요소를 사용자 정의했을 수 있습니다. 이러한 구성 요소는 여기서 설명한 구성 요소 중 일부와 이름이 같을 수도 있습니다.
 
 ## 구성 요소 - 주요 영역 {#components-major-areas}
 
@@ -34,7 +34,7 @@ ht-degree: 92%
 
 * [페이지 작성용 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   표준 페이지 컨텐츠를 만드는 데 사용되는 구성 요소는 **일반**, **열** 및 **Forms** 그룹에 주로 포함되어 있습니다.
+   표준 페이지 컨텐츠를 만드는 데 사용되는 구성 요소는 주로 그룹에 포함됩니다 **일반**, **열** 및 **Forms**.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 

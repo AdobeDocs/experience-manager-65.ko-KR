@@ -1,8 +1,8 @@
 ---
 title: 페이지 편집 시 주석
-seo-title: 페이지 편집 시 주석
+seo-title: Annotations when Editing a Page
 description: 웹 사이트의 페이지에 컨텐츠를 추가할 때는 컨텐츠를 실제로 게시하기 전에 논의를 거쳐야 하는 경우가 많습니다. 이 문서를 보완하기 위해 컨텐츠와 직접 관련된 많은 구성 요소를 사용하여 주석을 추가할 수 있습니다.
-seo-description: 웹 사이트의 페이지에 컨텐츠를 추가할 때는 컨텐츠를 실제로 게시하기 전에 논의를 거쳐야 하는 경우가 많습니다. 이 문서를 보완하기 위해 컨텐츠와 직접 관련된 많은 구성 요소를 사용하여 주석을 추가할 수 있습니다.
+seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -13,7 +13,7 @@ discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '782'
 ht-degree: 95%
 
 ---
@@ -78,9 +78,7 @@ ht-degree: 95%
 >
 >* 해당 아이콘이 표시되지 않습니다.
 >* 다른 브라우저에 만든 기존 스케치가 표시되지 않습니다.
-
 >
-
 
 
 스케치는 브라우저 창에서 임의의 위치(표시 가능한 부분)에 간단한 선으로 구성된 그래픽을 만들 수 있는 주석 기능입니다.

@@ -1,8 +1,8 @@
 ---
-title: 우수 사례
-seo-title: 우수 사례
+title: 모범 사례
+seo-title: Best Practices
 description: 가장 효율적이고 효과적인 방법으로 AEM을 사용하는 방법
-seo-description: 가장 효율적이고 효과적인 방법으로 AEM을 사용하는 방법
+seo-description: How to use AEM in the most efficient and most effective way possible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,20 +12,20 @@ discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 72%
+source-wordcount: '287'
+ht-degree: 70%
 
 ---
 
-# 우수 사례{#best-practices}
+# 모범 사례{#best-practices}
 
 작성 우수 사례는 가장 효율적이고 효과적인 방법으로 AEM을 사용하는 방법을 설명합니다. 계속 증가하고 있는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
 
 다음 영역에는 우수 사례에 관해 참조할 수 있는 문서가 있습니다.
 
-* [자산](#assets)
-* [사이트](#sites)
-* [양식](#forms)
+* [에셋](#assets)
+* [Sites](#sites)
+* [Forms](#forms)
 
 관리, 배포 및 유지 관리 또는 개발에 대한 우수 사례를 보려면 다음 중 하나를 참조하십시오.
 
@@ -35,7 +35,7 @@ ht-degree: 72%
 
 관련된 구체적인 문서에 대한 설명과 링크는 다음 표에 나와 있습니다.
 
-## 자산 {#assets}
+## 에셋 {#assets}
 
 Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함한 Assets에 대한 우수 사례는 다음 항목에 설명되어 있습니다.
 
@@ -64,7 +64,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함한 Assets에 대
  </tbody>
 </table>
 
-## 사이트 {#sites}
+## Sites {#sites}
 
 웹 사이트 컨텐츠 관리 및 작성에는 다음과 같은 몇 가지 우수 사례가 요약되어 있습니다.
 
@@ -73,7 +73,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함한 Assets에 대
 | 작성 도구 | [작성 환경 및 도구](/help/sites-authoring/author-environment-tools.md) | 페이지를 작성하는 데 사용되는 도구에 대한 개요를 제공합니다. |
 | 페이지 구성 | [페이지 생성 및 구성](/help/sites-authoring/managing-pages.md) | 이름 지정 규칙을 포함하여 페이지를 가장 잘 구성하는 방법에 대한 개요를 제공합니다. |
 
-## 양식 {#forms}
+## Forms {#forms}
 
 |  |  |  |
 |---|---|---|

@@ -1,8 +1,8 @@
 ---
 title: 사용자 생성 컨텐츠에 태깅
-seo-title: 사용자 생성 컨텐츠에 태깅
+seo-title: Tagging User Generated Content
 description: UGC(사용자 생성 컨텐츠)의 태깅은 커뮤니티 구성원이 컨텐츠를 검색하는 데 도움이 되는 방법입니다
-seo-description: UGC(사용자 생성 컨텐츠)의 태깅은 커뮤니티 구성원이 컨텐츠를 검색하는 데 도움이 되는 방법입니다
+seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '227'
 ht-degree: 3%
 
 ---
@@ -40,11 +40,11 @@ UGC(사용자 생성 컨텐츠)의 태깅은 커뮤니티 구성원이 컨텐츠
 
 ## 태그 관리 {#administering-tags}
 
-태그 네임스페이스 및 분류법을 만들고 관리하려면 [태그 관리](../../help/sites-administering/tags.md#tagging-console) 를 참조하십시오.
+자세한 내용은 [태그 관리](../../help/sites-administering/tags.md#tagging-console) 태그 네임스페이스 및 분류 체계를 만들고 관리하기 위해
 
-개발자 정보는 [태그 필수 요소인](tag.md)을 참조하십시오.
+자세한 내용은 [태그 핵심 사항](tag.md) 개발자 정보.
 
-적용된 태그를 사용하여 게시된 UGC를 쉽게 검색할 수 있도록 페이지에 소셜 태그 클라우드 구성 요소를 추가하려면 [소셜 태그 클라우드 사용](tagcloud.md) 을 참조하십시오.
+자세한 내용은 [Social Tag Cloud 사용](tagcloud.md) 적용된 태그를 사용하여 게시된 UGC를 쉽게 검색할 수 있도록 페이지에 소셜 태그 클라우드 구성 요소를 추가하는 방법을 설명합니다.
 
 ### 태그 권한 {#tag-permissions}
 
@@ -52,8 +52,8 @@ UGC(사용자 생성 컨텐츠)의 태깅은 커뮤니티 구성원이 컨텐츠
 
 태그는 게시 환경에서 UGC에 적용되므로 커뮤니티 구성원이 적용할 태그를 선택할 수 있도록 읽기 권한을 활성화해야 합니다.
 
-[태그 권한 설정](../../help/sites-administering/tags.md#setting-tag-permissions)을 참조하십시오.
+자세한 내용은 [태그 권한 설정](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-다음은 관리자가 `Community Engage Members` 그룹의 `/etc/tag/discussions`에 읽기 권한을 적용할 때 CRXDE에 표시되는 방식입니다.
+다음은 관리자가 읽기 권한을 적용할 때 CRXDE에 표시되는 방식입니다 `/etc/tag/discussions` 그룹 `Community Engage Members`.
 
 ![태그 권한](assets/tag-permissions.png)

@@ -13,7 +13,7 @@ exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
 source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 9%
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities의 경우 [커뮤니티 사이트](overview.md#community-sites)가 제대로 작동하도록 Dispatcher를 구성해야 합니다. 커뮤니티 활성화 및 소셜 로그인과 같은 기능을 포함할 때에는 추가 구성이 필요합니다.
+AEM Communities의 경우 Dispatcher가 제대로 작동하도록 구성해야 합니다 [커뮤니티 사이트](overview.md#community-sites). 커뮤니티 활성화 및 소셜 로그인과 같은 기능을 포함할 때에는 추가 구성이 필요합니다.
 
 특정 배포 및 사이트 디자인에 필요한 사항을 알아보려면
 
-* [고객 지원 센터에 문의](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html)
+* [고객 지원 센터](https://helpx.adobe.com/kr/marketing-cloud/contact-support.html) 문의
 
-기본 [Dispatcher 설명서](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)도 참조하십시오.
+기본 [Dispatcher 설명서](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 ## Dispatcher 캐싱 {#dispatcher-caching}
 
@@ -43,7 +43,7 @@ AEM Communities에 대한 디스패처 캐싱은 디스패처가 커뮤니티 �
 
 ### 요구 사항 {#requirements}
 
-* Dispatcher 버전 4.1.2 이상(최신 버전은 [Dispatcher 설치](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) 참조)
+* Dispatcher 버전 4.1.2 이상(참조) [Dispatcher 설치](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) 최신 버전용)
 * [ACS AEM Commons 패키지](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 버전 3.3.2 이상
@@ -51,20 +51,20 @@ AEM Communities에 대한 디스패처 캐싱은 디스패처가 커뮤니티 �
 
 ### 구성 {#configuration}
 
-OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 지정된 경로 아래에 표시되는 캐시된 페이지의 만료를 설정합니다.
+OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - 최대 연령** 지정된 경로 아래에 표시되는 캐시된 페이지의 만료를 설정합니다.
 
-* [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)에서
+* 에서 [웹 콘솔](../../help/sites-deploying/configuring-osgi.md)
 
-   * 예: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * 예, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` 찾기
+* 찾기 `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * 새 연결 구성을 만들려면 &#39;+&#39; 아이콘을 선택합니다
 
    ![Dispatcher](assets/dispatcher.png)
 
 * **필터 패턴**
 
-   *(필수)* 커뮤니티 페이지에 대한 하나 이상의 경로입니다. 예, `/content/sites/engage/(.*)`.
+   *(필수)* 커뮤니티 페이지에 대한 하나 이상의 경로. (예: `/content/sites/engage/(.*)`)
 
 * **캐시 제어 최대 연령**
 
@@ -72,11 +72,11 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 
 
 ## Dispatcher 클라이언트 헤더 {#dispatcher-client-headers}
 
-`dispatcher.any`의 /clientheaders 섹션에서, 특정 헤더 세트를 나열하는 경우 [지원 기능](enablement.md)이 제대로 작동하려면 `"CSRF-Token"`을 포함해야 합니다.
+의 /clientheaders 섹션에서 `dispatcher.any`를 지정하는 경우, 특정 헤더 세트를 나열하는 경우 다음을 포함해야 합니다 `"CSRF-Token"` 다음 [지원 기능](enablement.md) 제대로 작동하게 됩니다.
 
 ## 디스패처 필터 {#dispatcher-filters}
 
-`dispatcher.any` 파일의 /filter 섹션이 [컨텐츠에 대한 액세스 구성 - /filter](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html#filter)에 설명되어 있습니다.
+의 /filter 섹션 `dispatcher.any` 파일은에 설명되어 있습니다. [컨텐츠에 대한 액세스 구성 - /filter](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
 이 섹션에서는 Communities 기능의 적절한 기능을 수행하는 데 필요한 항목을 설명합니다.
 
@@ -84,18 +84,18 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 
 
 다음 샘플은 특정 dispatcher.any 파일에 맞게 수정해야 하는 속성 이름을 사용합니다.
 
-참고 항목:
+또한 Headless 개념 및 용어 소개가 포함되어 있는
 
 * [Dispatcher 보안 검사 목록](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >
 >**속성 이름 예**
->**/0050** 및 **/0170**&#x200B;과 같이 표시되는 모든 속성 이름은 기존 dispatcher.any 구성 파일에 맞게 조정해야 합니다.
+>다음과 같이 표시되는 모든 속성 이름 **/0050** 및 **/0170**&#x200B;를 기존 dispatcher.any 구성 파일에 맞게 조정해야 합니다.
 
 >[!CAUTION]
 >
->Dispatcher를 사용하여 액세스를 제한할 때 추가 고려 사항은 [Dispatcher 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)를 참조하십시오. 또한 AEM 설치에 대한 추가 보안 세부 사항은 [AEM Security Checklist](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/security-checklist.html)를 참조하십시오.
+>Dispatcher를 사용하여 액세스를 제한할 때 추가 고려 사항은 [Dispatcher 보안 체크리스트](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)를 참조하십시오. 또한, [AEM 보안 검사 목록](https://helpx.adobe.com/kr/experience-manager/6-3/sites/administering/using/security-checklist.html) AEM 설치에 대한 추가 보안 세부 정보입니다.
 
 다음 항목을 /filter 섹션의 끝에 추가해야 합니다. 특히 모든 거부 항목 뒤에 추가합니다.
 
@@ -249,7 +249,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 
 
 ## Dispatcher 규칙 {#dispatcher-rules}
 
-`dispatcher.any` 의 규칙 섹션에서는 요청된 URL을 기반으로 캐시해야 하는 응답을 정의합니다. Communities에서 규칙 섹션을 사용하여 캐시하면 안 되는 항목을 정의합니다.
+의 규칙 섹션 `dispatcher.any` 은 요청된 URL을 기반으로 캐시해야 하는 응답을 정의합니다. Communities에서 규칙 섹션을 사용하여 캐시하면 안 되는 항목을 정의합니다.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -303,7 +303,7 @@ OSGi 구성 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** 는 
 
 ## 샘플 dispatcher.any {#sample-dispatcher-any}
 
-다음은 Communities /filters 및 /rules를 포함하는 샘플 `dispatcher.any` 파일입니다.
+다음은 샘플입니다 `dispatcher.any` 커뮤니티 /filters 및 /rules가 포함된 파일입니다.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->

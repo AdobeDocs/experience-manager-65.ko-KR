@@ -54,7 +54,7 @@ AEM은 Sling을 기반으로 하며 JCR 저장소를 사용하므로 두 노드 
 * `- cq:category (string)`
 * `- cq:properties (binary)`
 
-## 주석 {#comment}
+## 댓글 {#comment}
 
 ### cq:주석 {#cq-comment}
 
@@ -79,7 +79,7 @@ AEM은 Sling을 기반으로 하며 JCR 저장소를 사용하므로 두 노드 
 
 **설명**
 
-`commentattachment` 노드의 노드 유형을 정의합니다.
+의 노드 유형을 정의합니다 `commentattachment` 노드
 
 **정의**
 
@@ -165,7 +165,7 @@ WCM에서 사용하는 최소 속성을 사용하여 페이지 컨텐츠의 기�
 * `@prop jcr:description` - 이 페이지에 대한 설명입니다.
 * `@prop cq:template` - 페이지를 만드는 데 사용되는 템플릿의 경로입니다.
 * `@prop cq:allowedTemplates` - 허용된 템플릿에 대한 경로를 결정하는 데 사용되는 정규 표현식 목록입니다.
-* `@prop pageTitle` - 일반적으로 태그에  `<title>` 표시됩니다.
+* `@prop pageTitle` - 일반적으로 `<title>` 태그에 가깝게 포함했습니다.
 * `@prop navTitle` - 일반적으로 탐색에 사용되는 제목입니다.
 * `@prop hideInNav` - 탐색에서 페이지를 숨겨야 하는지 여부를 지정합니다.
 * `@prop onTime` - 이 페이지가 유효한 시간입니다.
@@ -236,18 +236,18 @@ CQ 구성 요소를 정의합니다.
 * `@prop dialogPath` - 기본 대화 상자 경로(대화 상자 대체).
 * `@node design_dialog` - 디자인 대화 상자
 * `@prop cq:cellName` - 디자인 셀의 이름입니다.
-* `@prop cq:isContainer` - 컨테이너 구성 요소인지 여부를 나타냅니다. 이렇게 하면 하위 구성 요소의 셀 이름이 경로 이름 대신 사용됩니다. 예를 들어 `parsys`은 컨테이너 구성 요소입니다. 이 값이 정의되지 않으면 `cq:childEditConfig` 존재 여부에 따라 검사가 수행됩니다.
-* `@prop cq:noDecoration` - true이면 이 구성  `div` 요소를 포함할 때 장식 태그가 그려지지 않습니다.
+* `@prop cq:isContainer` - 컨테이너 구성 요소인지 여부를 나타냅니다. 이렇게 하면 하위 구성 요소의 셀 이름이 경로 이름 대신 사용됩니다. 예: `parsys` 는 컨테이너 구성 요소입니다. 이 값이 정의되지 않으면 `cq:childEditConfig`.
+* `@prop cq:noDecoration` - true이면 데코레이션이 없음 `div` 이 구성 요소를 포함할 때 태그가 그려집니다.
 * `@node cq:editConfig` - 편집 막대의 매개 변수를 정의하는 구성입니다.
 * `@node cq:childEditConfig` - 하위 구성 요소에서 상속되는 편집 구성입니다.
-* `@node cq:htmlTag` - 구성 요소를 포함할 때 &quot;주변&quot;  `div` 태그에 추가되는 추가 태그 속성을 정의합니다.
+* `@node cq:htmlTag` - &quot;주변&quot;에 추가되는 추가 태그 속성을 정의합니다 `div` 태깅 합니다.
 * `@node icon.png`- 특성 아이콘이 있는 파일입니다.
 * `@node thumbnail.png` - 특성 축소판 이미지를 포함하는 파일입니다.
 * `@prop allowedParents` - 정규 표현식 패턴으로 상위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
 * `@prop allowedChildren` - 정규 표현식 패턴으로 하위 구성 요소로 허용되는 구성 요소의 경로를 결정합니다.
 * `@node virtual` - 구성 요소 드래그 앤 드롭에 사용되는 가상 구성 요소를 반영하는 하위 노드를 포함합니다.
 * `@prop componentGroup` - 구성 요소 드래그 앤 드롭에 사용되는 구성 요소 그룹의 이름입니다.
-* `@node cq:infoProviders` - 각각 을 참조하는 속성 `className` 이 있는 하위 노드를 포함합니다 `PageInfoProvider`.
+* `@node cq:infoProviders` - 각각 속성이 있는 하위 노드를 포함합니다 `className` 이것은 `PageInfoProvider`.
 
 **정의**
 
@@ -301,7 +301,7 @@ CQ 구성 요소를 mixin 유형으로 정의합니다.
 * `@prop cq:actions`- 작업 목록(편집 막대 단추 또는 메뉴 항목)
 * `@node cq:actionConfigs` - 편집 막대 또는 메뉴 항목에 대한 위젯 구성
 * `@prop cq:emptyText` - 시각적 컨텐츠가 없을 경우 표시할 텍스트입니다.
-* `@node cq:dropTargets` - 노드  `{@link cq:DropTargetConfig}` 컬렉션.
+* `@node cq:dropTargets` - 컬렉션 `{@link cq:DropTargetConfig}` 노드 아래에 나열됩니다.
 
 **정의**
 
@@ -320,7 +320,7 @@ CQ 구성 요소를 mixin 유형으로 정의합니다.
 
 구성 요소의 한 드롭 대상을 구성합니다. 이 노드의 이름은 드래그 앤 드롭에 대한 ID로 사용됩니다.
 
-* `@prop accept` - 이 드롭 대상에서 허용되는 MIME 유형 목록 예  `["image/*"]`
+* `@prop accept` - 이 드롭 대상에서 허용되는 MIME 유형 목록 예 `["image/*"]`
 * `@prop groups` - 소스를 허용하는 드래그 앤 드롭 그룹 목록입니다.
 * `@prop propertyName` - 참조를 저장하는 데 사용되는 속성의 이름입니다.
 
@@ -467,9 +467,9 @@ DAM 자산을 나타내는 축소판입니다.
 
 **설명**
 
-노드 유형 `cq:contentPage`에 ContentBus 컨텐츠 페이지의 속성 및 하위 노드 정의가 포함되어 있습니다. 이 mixin 유형이 `cq:page` 유형의 노드에 추가되는 경우에만 노드가 ContentBus 컨텐츠 페이지가 됩니다.
+노드 유형 `cq:contentPage` ContentBus 컨텐츠 페이지에 대한 속성 및 하위 노드 정의를 포함합니다. 이 mixin 유형이 유형의 노드에 추가되는 경우에만 `cq:page`를 입력하면 노드가 ContentBus 컨텐츠 페이지가 됩니다.
 
-`cq:Cq4ContentPage`의 항목은 다음과 같습니다.
+의 항목 `cq:Cq4ContentPage` 입니다.
 
 * `@prop cq:csd` - 페이지의 ContentBus CSD입니다.
 * `@node cq:content` - 페이지의 컨텐츠입니다. 페이지 노드가 &quot;콘텐츠가 없는 기존&quot; 또는 &quot;삭제됨&quot; 상태인 경우 이 하위 노드가 존재하지 않습니다.
@@ -818,7 +818,7 @@ AEM 5.4의 경우 목록 끝에 를 추가합니다.
 
 **설명**
 
-사용자가 수정할 수 있는 `cq:userContent` 하위 노드를 추가합니다. 각 사용자에게는 일반적으로 mixin `cq:UserTaggable`이 있는 고유한 `cq:userContent/<userid>` 하위 노드가 있습니다.
+추가 `cq:userContent` 사용자가 수정할 수 있는 하위 노드입니다. 각 사용자에게는 자체 항목이 있습니다 `cq:userContent/<userid>` 일반적으로 mixin이 있는 하위 노드 `cq:UserTaggable`.
 
 **정의**
 
@@ -826,7 +826,7 @@ AEM 5.4의 경우 목록 끝에 를 추가합니다.
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-확장 변형, 더 명시적으로 `cq:userContent` 트리 정의
+확장 변형, 보다 명시적으로 정의 `cq:userContent` 트리
 
 * `[cq:AllowsUserContent]`
    * `mixin`

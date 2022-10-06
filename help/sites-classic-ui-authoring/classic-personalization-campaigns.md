@@ -1,8 +1,8 @@
 ---
 title: 캠페인 관리
-seo-title: 캠페인 관리
+seo-title: Campaign Management
 description: 캠페인 관리는 디지털 마케터에게 맞춤형 컨텐츠를 전달하고 방문자만을 위한 경험을 만들 수 있는 기회를 제공합니다. 이를 통해 웹, 이메일, 모바일 서비스 전체에서 마케팅 캠페인을 조정하고 방문자를 유치할 수 있습니다.
-seo-description: 캠페인 관리는 디지털 마케터에게 맞춤형 컨텐츠를 전달하고 방문자만을 위한 경험을 만들 수 있는 기회를 제공합니다. 이를 통해 웹, 이메일, 모바일 서비스 전체에서 마케팅 캠페인을 조정하고 방문자를 유치할 수 있습니다.
+seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
 uuid: 202d614b-a607-45de-8c24-1ee66b230315
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '628'
 ht-degree: 94%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 94%
 * [랜딩 페이지](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Target 오퍼](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
 * [마케팅 캠페인 관리자 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
-* [세그멘테이션 이해](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
+* [세그먼테이션 이해](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
 * [캠페인 설정](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 캠페인 관리는 다음과 같은 다양한 요소로 구성되어 있습니다.
@@ -39,12 +39,12 @@ ht-degree: 94%
 AEM에서 브랜드는 최상위 단위이며 
 **캠페인**.
 
-* ****
-캠페인 캠페인은 개별 
+* **캠페인**
+캠페인은 개인의 컬렉션입니다 
 **경험**.
 
-* ****
-경험 집중 콘텐츠는 방문자에게 제공되는 다양한 경험을 형성합니다. 
+* **경험**
+핵심 컨텐츠는 방문자에게 제공되는 다양한 경험을 형성합니다. 
 **터치포인트**. 다음과 같은 몇 가지 유형의 경험을 사용할 수 있습니다.
 
    * **Teaser**

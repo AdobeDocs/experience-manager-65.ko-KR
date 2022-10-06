@@ -1,8 +1,8 @@
 ---
 title: 작성자를 위한 첫 번째 단계
-seo-title: 작성자를 위한 첫 번째 단계
+seo-title: First Steps for Authors
 description: AEM에서 컨텐츠 작성을 시작할 때 사용하게 될 주요 작업에 대한 개요
-seo-description: AEM에서 컨텐츠 작성을 시작할 때 사용하게 될 주요 작업에 대한 개요
+seo-description: An overview of the main tasks that you will be using when starting to author content with AEM
 uuid: 1a09da22-faa4-4a7a-a2c5-97a255a6a2ae
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '403'
 ht-degree: 93%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 93%
 
 편집 등의 작업을 하려면 [페이지를 열어야 합니다.](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing)
 
-### 페이지 편집  {#editing-a-page}
+### 페이지 편집 {#editing-a-page}
 
 인스턴스에 이미 기존 페이지가 있는 경우든, 직접 새 페이지를 만든 경우든 모두 다음을 통해 [페이지를 편집](/help/sites-authoring/editing-content.md)할 수 있습니다.
 
@@ -63,7 +63,7 @@ ht-degree: 93%
 
 페이지 편집이 끝나면, 웹 사이트에서 방문자가 사용할 수 있도록 [페이지를 게시(또는 활성화)](/help/sites-authoring/publishing-pages.md#main-pars-title-10)할 차례일 것입니다.
 
-## 추가 작업  {#further-actions}
+## 추가 작업 {#further-actions}
 
 기본 절차 후 작성 시 사용할 수 있는 다른 많은 작업이 있습니다.
 
@@ -75,7 +75,7 @@ ht-degree: 93%
 
 기본적으로 동일한 작업으로 페이지를 [이동하고 이름을 변경합니다.](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)
 
-### 페이지 게시 취소  {#unpublishing-a-page}
+### 페이지 게시 취소 {#unpublishing-a-page}
 
 이전에 게시된(또는 활성화된) 컨텐츠를 공용 웹 사이트에서 사용할 수 없도록 하려면 [페이지를 게시 취소(또는 비활성화)](/help/sites-authoring/publishing-pages.md#main-pars-title-5)하십시오.
 
@@ -83,14 +83,14 @@ ht-degree: 93%
 
 페이지가 더 이상 필요하지 않은 경우 해당 [페이지를 삭제할 수 있습니다.](/help/sites-authoring/managing-pages.md#deleting-a-page)
 
-### 페이지 속성 설정  {#setting-the-page-properties}
+### 페이지 속성 설정 {#setting-the-page-properties}
 
 모든 [페이지에는](/help/sites-authoring/editing-page-properties.md) 작동 측면을 결정하기 위해 정의할 수 있는 속성이 있습니다. 두 UI 중 하나로 이러한 속성을 업데이트할 수 있습니다.
 
-### 페이지 버전 생성  {#creating-a-version-of-a-page}
+### 페이지 버전 생성 {#creating-a-version-of-a-page}
 
 필요한 경우 [페이지 버전을 ](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version)생성한 뒤 [특정 버전으로](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version) 되돌릴 수 있습니다.
 
-## 추가 정보  {#more-information}
+## 추가 정보 {#more-information}
 
 작성에 대한 자세한 정보는 [페이지 작성](/help/sites-authoring/page-authoring.md)에서 찾을 수 있습니다.

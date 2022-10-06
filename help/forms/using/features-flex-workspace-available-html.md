@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 작업 영역에서 Flex 작업 영역의 기능을 사용할 수 없습니다
-seo-title: AEM Forms 작업 영역에서 Flex 작업 영역의 기능을 사용할 수 없습니다
+seo-title: Features of Flex workspace not available in AEM Forms workspace
 description: AEM Forms 작업 공간은 Flex 기반 작업 공간을 넘어 혁신적입니다. 기능 및 기능의 차이점을 참조하십시오.
-seo-description: AEM Forms 작업 공간은 Flex 기반 작업 공간을 넘어 혁신적입니다. 기능 및 기능의 차이점을 참조하십시오.
+seo-description: AEM Forms workspace innovates beyond Flex-based Workspace. Read about the differences in features and capabilities.
 uuid: 128729b3-2367-42e8-8159-a080595e8455
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 exl-id: a9d2fd77-e8cf-45bf-8492-f1bb8d580548
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# AEM Forms 작업 공간 {#features-of-flex-workspace-not-available-in-aem-forms-workspace}에서 Flex 작업 공간의 기능을 사용할 수 없습니다.
+# AEM Forms 작업 영역에서 Flex 작업 영역의 기능을 사용할 수 없습니다 {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
 AEM Forms 작업 공간은 완전히 새로운 작업 공간입니다. 다음은 AEM Forms 작업 공간에서 사용할 수 없는 Flex 기반 작업 공간의 몇 가지 기능입니다.
 

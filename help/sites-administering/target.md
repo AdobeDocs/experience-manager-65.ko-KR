@@ -19,7 +19,7 @@ ht-degree: 63%
 
 # Adobe Target과 통합{#integrating-with-adobe-target}
 
-Adobe Marketing Cloud의 일부인 [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. 마케터는 Adobe Target을 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다. AEM에서 Adobe Target Standard에 사용되는 타깃팅 워크플로우를 채택했습니다. Target을 사용하는 경우 AEM의 타깃팅 편집 환경에 익숙할 것입니다.
+Adobe Marketing Cloud의 일부인 [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. 마케터는 Adobe Target을 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상자 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다. AEM에서 Adobe Target Standard에 사용되는 타깃팅 워크플로우를 채택했습니다. Target을 사용하는 경우 AEM의 타깃팅 편집 환경에 익숙할 것입니다.
 
 AEM 사이트와 Adobe Target을 통합함으로써 페이지의 콘텐츠를 개인화하여 다음과 같은 작업을 수행할 수 있습니다.
 
@@ -68,7 +68,7 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 
 AEM을 Adobe Target과 통합하려면 Adobe Target, AEM 활동 관리 및 AEM 대상 관리에 대해 알고 있어야 합니다. 다음과 같은 정보를 숙지해야 합니다.
 
-* Adobe Target([Adobe Target 설명서](https://docs.adobe.com/content/help/en/target/using/target-home.html) 참조)
+* Adobe Target ([Adobe Target 설명서](https://docs.adobe.com/content/help/en/target/using/target-home.html) 참조)
 * AEM 활동 콘솔(참조) [활동 관리](/help/sites-authoring/activitylib.md)).
 * AEM 대상(참조) [대상자 관리](/help/sites-authoring/managing-audiences.md)).
 

@@ -1,8 +1,8 @@
 ---
 title: 구성 요소 콘솔
-seo-title: 구성 요소 콘솔
+seo-title: Components Console
 description: 구성 요소 콘솔
-seo-description: 'null'
+seo-description: null
 uuid: a4e34d81-7875-4e26-8b48-4473e2905c37
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '262'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 구성 요소 콘솔에서 인스턴스에 대해 정의된 모든 구성 요소를 탐색하고 각 구성 요소에 대한 주요 정보를 볼 수 있습니다.
 
-**도구 ->** **일반 ->** **구성 요소**&#x200B;에서 액세스할 수 있습니다. 콘솔에서 카드 및 목록 보기를 사용할 수 있습니다. 구성 요소에 대한 트리 구조가 없으므로 열 보기를 사용할 수 없습니다.
+**도구 ->** **일반 ->** **구성 요소**&#x200B;에서 액세스할 수 있습니다. In the console, card and list view are available. Because there is no tree structure for components, column view is not available.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -32,11 +32,11 @@ ht-degree: 100%
 
 ## 검색 {#searching}
 
-**컨텐츠 전용** 아이콘(왼쪽 상단)을 사용하여 구성 요소를 검색 및/또는 필터링할 **검색** 패널을 열 수 있습니다.
+**콘텐츠 전용** 아이콘(왼쪽 상단)을 사용하여 구성 요소를 검색 및/또는 필터링할 **검색** 패널을 열 수 있습니다.
 
 ![screen-shot_2019-03-05at113251](assets/screen-shot_2019-03-05at113251.png)
 
-### 구성 요소 세부 사항 {#component-details}
+### 구성 요소 세부 정보 {#component-details}
 
 특정 구성 요소에 대한 세부 사항을 보려면 필수 리소스를 탭하거나 클릭합니다. 세 탭에서 다음 정보를 제공합니다.
 

@@ -1,12 +1,12 @@
 ---
 title: AEM 문제 해결
-seo-title: AEM 문제 해결
+seo-title: Troubleshooting AEM
 description: AEM 문제 해결
-seo-description: AEM 문제 해결
+seo-description: Troubleshooting AEM
 exl-id: f7a220bf-0b0c-4d16-824d-dad7d86c01c9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '59'
 ht-degree: 6%
 
 ---

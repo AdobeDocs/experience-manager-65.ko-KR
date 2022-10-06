@@ -1,24 +1,24 @@
 ---
 title: 업그레이드 후 제거된 오래된 번들 목록
-seo-title: 업그레이드 후 제거된 오래된 번들 목록
+seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: AEM 6.3으로 업그레이드할 때 자동으로 제거된 번들을 설명하는 목록입니다.
-seo-description: AEM 6.3으로 업그레이드할 때 자동으로 제거된 번들을 설명하는 목록입니다.
+seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
-feature: 업그레이드
+feature: Upgrading
 exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
 
-# 업그레이드{#list-of-obsolete-bundles-uninstalled-after-the-upgrade} 이후에 제거된 오래된 번들 목록
+# 업그레이드 후 제거된 오래된 번들 목록{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
 >[!NOTE]
 >

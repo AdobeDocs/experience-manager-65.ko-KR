@@ -89,7 +89,7 @@ ht-degree: 5%
 | [!UICONTROL 섹션 머리글] | 필드 레이블, <br> 설명 |
 | [!UICONTROL 단일 행 텍스트] | 필드 레이블, <br> 속성에 매핑, <br> 기본값 |
 | [!UICONTROL 다중 값 텍스트] | 필드 레이블, <br> 속성에 매핑, <br> 기본값 |
-| [!UICONTROL 번호] | 필드 레이블, <br> 속성에 매핑, <br> 기본값 |
+| [!UICONTROL 숫자] | 필드 레이블, <br> 속성에 매핑, <br> 기본값 |
 | [!UICONTROL 날짜] | 필드 레이블, <br> 속성에 매핑, <br> 기본값 |
 | [!UICONTROL 표준 태그] | 필드 레이블, <br> 속성에 매핑, <br> 기본값, <br> 설명 |
 
@@ -187,7 +187,7 @@ To apply a metadata profile globally, follow these steps:
 | [!UICONTROL 섹션 머리글] | 공통 구성 요소 목록에 대한 섹션 머리글을 추가합니다. |
 | [!UICONTROL 한 줄 텍스트] | 한 줄 텍스트 속성을 추가합니다. 문자열로 저장됩니다. |
 | [!UICONTROL 다중 값 텍스트] | 다중 값 텍스트 속성을 추가합니다. 문자열 배열로 저장됩니다. |
-| [!UICONTROL 번호] | 숫자 구성 요소를 추가합니다. |
+| [!UICONTROL 숫자] | 숫자 구성 요소를 추가합니다. |
 | [!UICONTROL 날짜] | 날짜 구성 요소를 추가합니다. |
 | [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
 | [!UICONTROL 표준 태그] | 태그 추가. |

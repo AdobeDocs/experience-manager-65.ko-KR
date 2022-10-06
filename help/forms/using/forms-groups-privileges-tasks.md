@@ -1,8 +1,8 @@
 ---
 title: OSGi 그룹 및 권한의 AEM Forms
-seo-title: OSGi 그룹 및 권한의 AEM Forms
+seo-title: AEM Forms on OSGi Groups and Privileges
 description: OSGi에서 AEM Forms을 관리할 그룹에 사용자 할당
-seo-description: OSGi에서 AEM Forms을 관리할 그룹에 사용자 할당
+seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: f269a206-356d-4cee-b449-05c5da87121a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -14,16 +14,16 @@ role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '261'
 ht-degree: 1%
 
 ---
 
 # OSGi 그룹 및 권한의 AEM Forms{#aem-forms-on-osgi-groups-and-privileges}
 
-[그룹](/help/sites-administering/user-group-ac-admin.md#group-administration)을 만들고, 정책 및 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration)를 AEM의 그룹에 할당할 수 있습니다. 이러한 정책은 그룹에 속하는 사용자의 권한을 제어합니다.
+다음을 수행할 수 있습니다 [그룹 만들기](/help/sites-administering/user-group-ac-admin.md#group-administration) 정책 및 할당 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration) 추가 콘텐츠는 AEM의 그룹에 속해 있어야 합니다. 이러한 정책은 그룹에 속하는 사용자의 권한을 제어합니다.
 
-[AEM Forms 추가 기능 패키지](../../forms/using/installing-configuring-aem-forms-osgi.md)를 설치하면 forms-users 및 forms-power-user와 같이 이 문서에 언급된 그룹을 자동으로 할당에 사용할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 사용자가 OSGi에서 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
+설치한 후 [AEM Forms 추가 기능 패키지](../../forms/using/installing-configuring-aem-forms-osgi.md)에서는 forms-users 및 forms-power-user와 같이 이 문서에 언급된 그룹을 자동으로 할당에 사용할 수 있습니다. 다음 표에는 그룹 할당을 기반으로 사용자가 OSGi에서 AEM Forms에 대해 수행할 수 있는 작업이 나열되어 있습니다.
 
 <table>
  <tbody>
@@ -94,7 +94,7 @@ ht-degree: 1%
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>AEM 받은 편지함 응용 프로그램 사용<br /> <strong>참고: </strong>AEM 받은 편지함에서 Interactive Communications Agent UI에 액세스하려면 cm-agent-users 및 workflow-users 그룹이 할당되어 있어야 합니다.</li> 
+     <li>AEM 받은 편지함 애플리케이션 사용<br /> <strong>참고: </strong>AEM 받은 편지함에서 Interactive Communications Agent UI에 액세스하려면 cm-agent-users 및 workflow-users 그룹이 할당되어 있어야 합니다.</li> 
      <li>워크플로우 인스턴스 관리</li> 
     </ul> </td> 
   </tr>

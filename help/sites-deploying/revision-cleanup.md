@@ -34,7 +34,7 @@ AEM 6.3에서는 온라인 개정 정리 라는 이 기능의 온라인 버전�
 
 * [온라인 개정 정리 실행 방법](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup)
 * [온라인 개정 정리 FAQ](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions)
-* [오프라인 개정 정리 실행 방법](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)
+* [오프라인 개정 정리를 실행하는 방법](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)
 
 또한 [공식 Oak 문서입니다.](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html)
 

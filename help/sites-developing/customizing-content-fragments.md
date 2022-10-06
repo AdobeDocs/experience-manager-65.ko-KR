@@ -1,5 +1,5 @@
 ---
-title: 컨텐츠 조각 사용자 지정 및 확장
+title: 콘텐츠 조각 맞춤화 및 확장
 seo-title: Customizing and Extending Content Fragments
 description: 컨텐츠 조각은 표준 자산을 확장합니다.
 seo-description: A content fragment extends a standard asset.
@@ -10,12 +10,12 @@ exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
 source-git-commit: 9ad531738ac5e3c9d888f685b47c8b322712a89e
 workflow-type: tm+mt
 source-wordcount: '2778'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# 컨텐츠 조각 사용자 지정 및 확장{#customizing-and-extending-content-fragments}
+# 콘텐츠 조각 맞춤화 및 확장{#customizing-and-extending-content-fragments}
 
 컨텐츠 조각은 표준 자산을 확장합니다. 다음을 참조하십시오.
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 >
 >컨텐츠 조각 템플릿은 이제 더 이상 사용되지 않습니다. 조각을 만드는 데에는 여전히 사용할 수 있지만, 대신 컨텐츠 조각 모델 을 사용하는 것이 좋습니다. 조각 템플릿에 새로운 기능이 추가되지 않으며, 향후 버전에서 제거됩니다.
 
-* 컨텐츠 조각 모델:
+* 콘텐츠 조각 모델:
 
    * 구조화된 컨텐츠를 포함하는 컨텐츠 조각을 정의하는 데 사용됩니다.
    * 컨텐츠 조각 모델은 컨텐츠 조각을 만들 때 컨텐츠 조각의 구조를 정의합니다.
@@ -147,7 +147,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
 >[!NOTE]
 >
->**컨텐츠 조각 모델:**
+>**콘텐츠 조각 모델:**
 >
 >페이지에서 컨텐츠 조각 모델을 기반으로 한 컨텐츠 조각을 사용할 때 모델이 참조됩니다. 즉, 페이지를 게시할 때 모델이 게시되지 않은 경우 이 플래그가 지정되고 모델이 페이지와 함께 게시될 리소스에 추가됩니다.
 >
@@ -383,7 +383,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
    * `ContentFragment`
    * `FragmentTemplate`
 
-### 경고 {#caveats}
+### 주의 사항 {#caveats}
 
 다음과 같이 명시해야 합니다.
 
@@ -452,7 +452,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
    * 모든 변경 사항(자동 저장 포함)은 분리된 보호 영역이 아니라 활성 컨텐츠 조각에서 수행됩니다.
    * 따라서 이러한 변경 사항은 각 컨텐츠 조각을 참조하는 AEM 페이지에 즉시 반영됩니다
 
-#### 작업 {#actions}
+#### 액션 {#actions}
 
 가능한 작업은 다음과 같습니다.
 
@@ -477,7 +477,7 @@ CFM(컨텐츠 조각 관리)은 다음 방법으로 AEM Assets에 포함되어 �
 
    * 편집 세션이 있고 변경 사항이 지속되지 않은 경우 손실된 컨텐츠를 사용자에게 알리고 해당 컨텐츠를 페이지에 유지할 수 있도록 양식 확인 대화 상자가 표시됩니다.
 
-## 예 {#examples}
+## 예제 {#examples}
 
 ### 예: 기존 컨텐츠 조각 액세스 {#example-accessing-an-existing-content-fragment}
 

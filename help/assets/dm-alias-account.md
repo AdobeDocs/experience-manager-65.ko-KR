@@ -38,7 +38,7 @@ Dynamic Media 회사 별칭 계정을 구성할 때는 다음 사항에 유의�
 
 먼저 지원 사례를 제출하여 Dynamic Media 회사 별칭 계정 구성을 시작합니다. 이 단계는 필수입니다.
 
-1. [Admin Console을 사용하여 지원 사례를 만듭니다](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. [Admin Console을 사용하여 지원 사례를 만듭니다](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html).
 1. 지원 사례에 다음 정보를 제공하십시오.
 
    * 사용할 Dynamic Media 회사 별칭 이름입니다. 이름은 다음을 포함해야 합니다 *전용* 문자(대/소문자 혼합 허용), 숫자, 하이픈 및 밑줄

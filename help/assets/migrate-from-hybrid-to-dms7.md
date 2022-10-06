@@ -7,12 +7,12 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
-feature: Scene7 모드,하이브리드 모드
+feature: Scene7 Mode,Hybrid Mode
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 53%
+source-wordcount: '524'
+ht-degree: 54%
 
 ---
 

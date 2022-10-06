@@ -6,7 +6,7 @@ exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '3022'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -135,9 +135,9 @@ RTE의 기본 기능은 `features` 적절한 플러그인과 관련된 노드의
 | 편집 모드 | Touch UI용 위치 | 클래식 UI용 위치 |
 |---|---|---|
 | 인라인 | `cq:editConfig/cq:inplaceEditing` | `cq:editConfig/cq:inplaceEditing` |
-| 전체 화면 | `cq:editConfig/cq:inplaceEditing` | 해당 사항 없음 |
+| 전체 화면 | `cq:editConfig/cq:inplaceEditing` | 해당되지 않음 |
 | 대화 상자 | `cq:dialog` | `dialog` |
-| 전체 화면 대화 상자 | `cq:dialog` | 해당 사항 없음 |
+| 전체 화면 대화 상자 | `cq:dialog` | 해당되지 않음 |
 
 >[!NOTE]
 >
@@ -145,7 +145,6 @@ RTE의 기본 기능은 `features` 적절한 플러그인과 관련된 노드의
 >* **이름**: `configPath`
 >* **유형**: `String`
 >* **값**: 실제 구성이 들어 있는 노드의 경로
-
 >
 >RTE 구성 노드의 이름을 `config`. 그렇지 않으면 그룹의 사용자가 아닌 관리자에게만 RTE 구성이 적용됩니다 `content-author`.
 
@@ -192,7 +191,6 @@ RTE 플러그인의 자세한 구성은 을(를) 참조하십시오. [RTE 플러
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >자체 텍스트 구성 요소를 만들려면 이러한 구성 요소를 편집하는 대신 위의 구성 요소를 복사하십시오.
 

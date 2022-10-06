@@ -1,8 +1,8 @@
 ---
 title: Q&A 포럼 기능
-seo-title: Q&A 포럼 기능
+seo-title: Q&A Forum Feature
 description: 페이지에 QnA 포럼 기능 추가
-seo-description: 페이지에 QnA 포럼 기능 추가
+seo-description: Adding the QnA forum feature to a page
 uuid: e0d95009-0d04-4fa7-8d05-5948c4e37f08
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1368'
 ht-degree: 8%
 
 ---
@@ -35,21 +35,21 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
 이 설명서에서는 다음 내용을 설명합니다.
 
 * AEM 사이트에 QnA 포럼 기능 추가.
-* `QnA`구성 요소에 대한 구성 설정입니다.
+* 에 대한 구성 설정 `QnA`구성 요소.
 
 ## 페이지에 Q&amp;A 포럼 추가 {#adding-a-q-a-forum-to-a-page}
 
-작성자 모드의 페이지에 `QnA` 구성 요소를 추가하려면 구성 요소 브라우저를 사용하여 `Communities / QnA`을(를) 찾아 QnA 포럼이 나타나는 페이지에 배치합니다.
+을(를) 추가하려면 `QnA` 구성 요소를 페이지에 작성자 모드에서 사용하려면 구성 요소 브라우저를 사용하여 를 찾습니다 `Communities / QnA` QnA 포럼이 나타날 페이지로 끌어서 놓습니다.
 
-필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 방문하십시오.
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md).
 
-필요한 [클라이언트 측 라이브러리](/help/communities/qna-essentials.md#essentials-for-client-side)가 포함된 경우 이 방법으로 `QnA` 구성 요소가 표시됩니다.
+이 [필수 클라이언트 측 라이브러리](/help/communities/qna-essentials.md#essentials-for-client-side) 포함된 경우, 다음과 같이 하십시오 `QnA` 구성 요소가 나타납니다.
 
 ![qna 구성 요소](assets/qna-component.png)
 
-### QnA {#configuring-qna} 구성
+### QnA 구성 {#configuring-qna}
 
-액세스할 배치된 `QnA` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
+배치된 항목을 선택합니다 `QnA` 액세스하여 선택할 구성 요소 `Configure` 아이콘 편집 대화 상자를 엽니다.
 
 ![구성](assets/configure-new.png)
 
@@ -57,7 +57,7 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
 
 #### 설정 탭 {#settings-tab}
 
-**설정** 탭에서 주제(질문) 및 회신(답변)에 대한 설정을 지정합니다.
+아래에 **설정** 탭에서는 주제(질문) 및 회신(답변)에 대한 설정을 지정합니다.
 
 * **첨부 파일 썸네일 허용**
 
@@ -93,7 +93,7 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
 
 * **태깅 허용**
 
-   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다( **태그 필드** 탭 참조). 기본값은 선택 취소되어 있습니다.
+   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다( **태그 필드** 탭). 기본값은 선택 취소되어 있습니다.
 
 * **파일 업로드 허용**
 
@@ -101,7 +101,7 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
 
 * **다음 허용**
 
-   이 확인란을 선택하면 구성원이 새 게시물의 [notified](/help/communities/notifications.md)가 될 수 있는 포럼 게시물에 대해 다음 기능을 포함하십시오. 기본값은 선택 취소되어 있습니다.
+   이 확인란을 선택하면 포럼 게시물에 다음과 같은 기능을 포함시켜 구성원에게 다음을 제공할 수 있습니다 [알림](/help/communities/notifications.md) 새 게시물입니다. 기본값은 선택 취소되어 있습니다.
 
 * **고정 허용**
 
@@ -109,15 +109,15 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
 
 * **이메일 구독 허용**
 
-   이 확인란을 선택하면 구성원이 이메일로 새 게시물에 대한 알림을 받을 수 있습니다([subscription](/help/communities/subscriptions.md)). 다음 허용 을 선택해야 하고 [전자 메일로 구성된](/help/communities/email.md)이(가) 있어야 합니다. 기본값은 선택 취소되어 있습니다.
+   이 확인란을 선택하면 구성원이 이메일로 새 게시물에 대한 알림을 받을 수 있습니다([구독](/help/communities/subscriptions.md)). 다음을 허용 및 선택해야 합니다. [전자 메일 구성](/help/communities/email.md). 기본값은 선택 취소되어 있습니다.
 
 * **최대 파일 크기**
 
-   `Allow File Uploads`이(가) 선택된 경우에만 관련됩니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
+   관련성이 있는 경우에만 `Allow File Uploads` 이(가) 선택되어 있습니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
 
 * **허용되는 파일 유형**
 
-   `Allow File Uploads`이(가) 선택된 경우에만 관련됩니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정한 경우, 지정되지 않은 파일 유형은 업로드할 수 없습니다. 기본값은 아무 것도 지정되지 않아 ****모든 파일 유형이 허용됩니다.
+   관련성이 있는 경우에만 `Allow File Uploads` 이(가) 선택되어 있습니다. &quot;점&quot; 구분 기호가 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정한 경우, 지정되지 않은 파일 유형은 업로드할 수 없습니다. 기본값은 아무 것도 지정되지 않아 ****모든 파일 유형이 허용됩니다.
 
 * **이미지 첨부 파일 최대 크기**
 
@@ -148,11 +148,11 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
    이 옵션을 선택하면 선택한 답변이 표시됩니다. 기본값은 선택 취소되어 있습니다.
 * **배지 표시**
 
-   이 옵션을 선택하면 획득된 ID 및 할당된 [배지](/help/communities/implementing-scoring.md)를 구성원의 블로그 항목에 표시합니다. 기본값은 선택 취소되어 있습니다.
+   선택한 경우, 기한 및 지정된 항목을 표시합니다 [배지](/help/communities/implementing-scoring.md) 구성원의 블로그 항목 사용. 기본값은 선택 취소되어 있습니다.
 
 * **특별 포함된 컨텐츠 허용**
 
-   이 확인란을 선택하면 아이디어를 [중요 콘텐츠](/help/communities/featured.md)로 식별할 수 있습니다. 기본값은 선택 취소되어 있습니다.
+   이 옵션을 선택하면 [주요 콘텐츠](/help/communities/featured.md). 기본값은 선택 취소되어 있습니다.
 
 * **언급 활성화**
 
@@ -164,11 +164,11 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
 
 * **UI 언급 패턴**
 
-   게시물에 등록된 사용자에 태그 지정(@mention)할 허용된 패턴 문자열을 지정합니다. 예, `~{{familyName}}{{givenName}}`.
+   게시물에 등록된 사용자에 태그 지정(@mention)할 허용된 패턴 문자열을 지정합니다. (예: `~{{familyName}}{{givenName}}`)
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
-**사용자 중재** 탭에서 게시된 항목(질문) 및 답변(사용자 생성 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
+아래에 **사용자 중재** 탭에서 게시된 항목(질문) 및 답변(사용자 생성 컨텐츠)을 관리하는 방법을 지정합니다. 자세한 내용은 [사용자가 생성한 컨텐츠 중재](/help/communities/moderate-ugc.md).
 
 * **답변 거부**
 
@@ -178,8 +178,8 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
 
    이 옵션을 선택하면 신뢰할 수 있는 멤버 중재자는 질문(주제)을 닫고 추가 편집과 답변을 제공하고 질문을 다시 열 수 있습니다. 기본값은 선택 취소되어 있습니다.
 
-* **항목**
-이동이 선택된 경우 게시 측 중재자가 질문을 이동할 수 있도록 허용합니다. 기본값은 선택 취소되어 있습니다.
+* **항목 이동**
+이 확인란을 선택하면 게시 측 중재자가 질문을 이동할 수 있습니다. 기본값은 선택 취소되어 있습니다.
 
 * **게시물 플래그 지정**
 
@@ -203,11 +203,11 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
 
 #### 태그 필드 탭 {#tag-field-tab}
 
-**태그 필드** 탭 아래에서 **설정** 탭에서 허용되는 경우 적용할 수 있는 태그는 선택한 네임스페이스에 따라 제한됩니다.
+아래에 **태그 필드** 탭, 아래에 허용되는 경우 적용할 수 있는 태그 **설정** 탭은 선택한 네임스페이스에 따라 제한됩니다.
 
 * **허용되는 네임스페이스**
 
-   **설정** 탭 아래에서 `Allow Tagging`이(가) 선택된 경우에 관련됩니다. 적용할 수 있는 태그는 선택한 네임스페이스 카테고리 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값이 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
+   관련 있는 경우 `Allow Tagging` 이(가) **설정** 탭. 적용할 수 있는 태그는 선택한 네임스페이스 카테고리 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값이 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
 
 * **제안 한도**
 
@@ -215,29 +215,29 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
 
 #### 정렬 설정 탭 {#sort-settings-tab}
 
-**정렬 설정** 탭에서 게시된 주석이 표시될 때 정렬되는 방법을 지정합니다.
+아래에 **정렬 설정** 탭에서 표시되는 경우 게시된 주석이 정렬되는 방법을 지정합니다.
 
 * **정렬 기준**
 
-   허용되는 모든 정렬 선택을 확인합니다.`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked` 기본값은 `Newest, Oldest, Last Updated`입니다.
+   허용되는 모든 정렬 선택을 확인합니다. `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 기본값은 입니다. `Newest, Oldest, Last Updated`.
 
 * **기본값으로 설정**
 
-   기본값으로 표시할 선택된 정렬 옵션 중 하나를 선택하려면 풀다운을 클릭합니다. 기본값은 `Newest`입니다.
+   기본값으로 표시할 선택된 정렬 옵션 중 하나를 선택하려면 풀다운을 클릭합니다. 기본값은 입니다. `Newest`.
 
 * **분석 정렬에 대한 시간 옵션 선택**
 
-   드롭다운을 클릭하여 `All, Last 24 Hours, Last 7 Days, Last 30 Days` 중 하나를 선택합니다. 기본값은 `All`입니다.
+   드롭다운을 사용하여 다음 중 하나를 선택합니다. `All, Last 24 Hours, Last 7 Days, Last 30 Days`. 기본값은 입니다. `All`.
 
 ## 사이트 방문자 경험 {#site-visitor-experience}
 
 ### 답변 식별 {#identifying-answers}
 
-한 가지 답변은 `Select Answer` 버튼을 사용하여 정답이나 유용한 답변으로 표시할 수 있습니다. [질문]을 [대답]으로 표시한 후에는 `Unmark Chosen Answer` 단추를 사용하여 첫 번째 질문에 대한 선택을 취소하기 전까지 다른 답변을 선택할 수 없습니다.
+하나의 답변은 `Select Answer` 버튼을 클릭합니다. [질문]을 [대답]으로 표시하면 첫 번째 질문에 대한 선택을 취소하기 전까지 다른 답을 선택할 수 없습니다 `Unmark Chosen Answer` 버튼을 클릭합니다.
 
-실행 가능한 응답으로 선택한 후에는 `Unmark Chosen Answer` 버튼을 사용하여 선택 취소할 수 있습니다.
+실행 가능한 응답으로 선택한 후에는 `Unmark Chosen Answer` 버튼을 클릭합니다.
 
-답변이 실행 가능한 답변으로 선택되면 해당 질문이 기본 QnA 페이지의 질문 항목 옆에 `Answered` 표시되었음을 나타냅니다.
+답변이 실행 가능한 대답으로 선택되면, 질문이 있었다는 표시가 나타납니다 `Answered` 은 기본 QnA 페이지의 질문 항목 옆에 표시됩니다.
 
 #### 중재자 및 관리자 {#moderators-and-administrators}
 
@@ -260,8 +260,8 @@ QnA(질문 및 답변) 포럼 기능은 커뮤니티 구성원이 질문에 답�
 
 ## 추가 정보 {#additional-information}
 
-개발자용 [QnA 필수 패키지](/help/communities/qna-essentials.md) 페이지에서 자세한 내용을 확인할 수 있습니다.
+자세한 내용은 [QnA 핵심 사항](/help/communities/qna-essentials.md) 개발자를 위한 페이지입니다.
 
-게시된 항목 및 댓글에 대한 중복을 보려면 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
+게시된 항목 및 댓글에 대한 중량은 [사용자가 생성한 컨텐츠 중재](/help/communities/moderate-ugc.md).
 
-게시된 항목 및 댓글에 태깅하려면 [사용자 생성 컨텐츠 태깅](/help/communities/tag-ugc.md)을 참조하십시오.
+게시된 항목 및 댓글에 태깅하려면 다음을 참조하십시오 [사용자 생성 컨텐츠에 태깅](/help/communities/tag-ugc.md).

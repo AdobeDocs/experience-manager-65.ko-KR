@@ -1,8 +1,8 @@
 ---
 title: 로그 작업
-seo-title: 로그 작업
+seo-title: Working with Logs
 description: 로그 작업을 통해 AEM 문제를 해결하는 방법을 알아봅니다.
-seo-description: 로그 작업을 통해 AEM 문제를 해결하는 방법을 알아봅니다.
+seo-description: Learn how to troubleshoot AEM by working with logs.
 uuid: af8b7f50-c8d4-4760-9f00-3feb0b79ee4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '234'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ CRX는 세부 로그를 기록합니다. 압축을 풀고 빠른 시작을 시�
 * crx-quickstart/server/logs
 * crx-quickstart/logs
 
-## 디버그 로그 수준 {#activating-the-debug-log-level} 활성화
+## 디버그 로그 수준 활성화 {#activating-the-debug-log-level}
 
 기본 로그 수준은 INFO, 즉 DEBUG 메시지는 기록되지 않습니다.
 

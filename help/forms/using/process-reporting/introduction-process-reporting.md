@@ -1,8 +1,8 @@
 ---
 title: 프로세스 보고 소개
-seo-title: 프로세스 보고 소개
+seo-title: Introduction to Process Reporting
 description: JEE 프로세스 보고 기반의 AEM Forms 소개 및 주요 기능
-seo-description: JEE 프로세스 보고 기반의 AEM Forms 소개 및 주요 기능
+seo-description: Introduction and key capabilities of AEM Forms on JEE Process Reporting
 uuid: a7f2455b-1b09-41a7-817b-e2e7a1ff9936
 content-type: reference
 topic-tags: process-reporting
@@ -12,7 +12,7 @@ docset: aem65
 exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Process Reporting은 필터링하고, 장기 실행 프로세스, 프로세스 �
 
 또한 Process Reporting은 임시 쿼리를 실행하고 사용자 지정 보고서 보기를 Process Reporting 사용자 인터페이스에 통합하는 인터페이스를 제공합니다.
 
-지원되는 브라우저 목록에 대해서는 [AEM Forms 지원 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md)을 참조하십시오.
+지원되는 브라우저 목록에 대해서는 다음을 참조하십시오 [AEM Forms 지원 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Process Reporting은 다음과 같은 모듈을 기반으로 구축됩니다.
 
@@ -57,7 +57,7 @@ ID, 기간, 시작 및 종료 날짜, 프로세스 개시자 등을 기준으로
 
 그런 다음 나중에 실행할 보고서 필터를 저장할 수 있습니다.
 
-### 프로세스/작업 기록 {#process-task-history}
+### 프로세스/작업 내역 {#process-task-history}
 
 ![파일 관리](assets/file-management.png)
 

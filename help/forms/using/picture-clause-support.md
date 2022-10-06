@@ -1,8 +1,8 @@
 ---
 title: HTML5 양식에 대한 그림 절 지원
-seo-title: HTML5 양식에 대한 그림 절 지원
+seo-title: Picture clause support for HTML5 forms
 description: HTML5 양식은 날짜, 텍스트 및 숫자 심볼에 대한 표시 값과 형식이 지정된 값에 대한 XFA Picture 절을 지원합니다.
-seo-description: HTML5 양식은 날짜, 텍스트 및 숫자 심볼에 대한 표시 값과 형식이 지정된 값에 대한 XFA Picture 절을 지원합니다.
+seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
 uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
@@ -13,7 +13,7 @@ feature: Mobile Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,11 @@ HTML5 양식은 날짜, 텍스트 및 숫자 심볼에 대한 표시 값과 형�
   </tr>
   <tr>
    <td>DD</td>
-   <td>0으로 채워지는 두 자리(01-31)일.<br /> </td>
+   <td>0으로 채워지는 두 자리(01-31) 날짜<br /> </td>
   </tr>
   <tr>
    <td>M</td>
-   <td>해당 연도의 1 또는 2자리(1-12) 월<br /> </td>
+   <td>해당 연도의 1자리 또는 2자리(1-12) 월<br /> </td>
   </tr>
   <tr>
    <td>MM</td>
@@ -97,17 +97,17 @@ HTML5 양식은 날짜, 텍스트 및 숫자 심볼에 대한 표시 값과 형�
 
 HTML5 양식은 숫자 그림 기호를 지원합니다. 그러나 PDF forms과 HTML Forms 간에 지원에 차이가 있습니다.
 
-**PDF forms**&#x200B;에서는 Picture 절의 기호 수에 관계없이 숫자가 지정됩니다
+in **PDF forms**&#x200B;를 지정하면 Picture 절의 기호 수에 관계없이 숫자가 포맷됩니다
 
-**HTML Forms**&#x200B;에서는 숫자가 Picture 절의 기호 수보다 작은 경우에만 숫자가 서식이 지정됩니다.
+in **Forms HTML**&#x200B;를 지정하면 숫자가 Picture 절의 기호 수보다 작은 숫자만 서식이 지정됩니다.
 
-**예**:그림 절을 고려하십시오.num{zzz,zzz,zz9}.
+**예**: 그림 절을 고려하십시오. num{zzz,zzz,zz9}.
 
-숫자 **10000**&#x200B;은 HTML과 PDF forms 모두에서 **10,000**&#x200B;으로 지정됩니다.
+번호 **10000** 형식은 를 **10,000** HTML 및 PDF forms 둘 다에서 사용할 수 있습니다.
 
-숫자 1000000은 PDF forms에서 1,000,000으로 서식이 지정됩니다. 그러나 HTML Forms에서는 숫자가 1000000.
+숫자 1000000은 PDF forms에서 1,000,000으로 서식이 지정됩니다. 그러나 Forms HTML에서 숫자는 1000000.
 
-**HTML Forms**&#x200B;에서 숫자 그림 절에 대해 지원되는 식은 다음과 같습니다.
+의 숫자 그림 절에 대해 지원되는 표현식 **Forms HTML** 입니다.
 
 * num.integer{}
 * num.decimal{}
@@ -124,22 +124,22 @@ HTML5 양식은 숫자 그림 기호를 지원합니다. 그러나 PDF forms과 
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>출력 형식</strong>:한 자리. 또는 입력 데이터가 비어 있거나 해당 위치의 공백이 있는 경우 0자리 수입니다.<br /> </td>
+   <td><strong>출력 형식</strong>: 한 자리. 또는 입력 데이터가 비어 있거나 해당 위치의 공백이 있는 경우 0자리 수입니다.<br /> </td>
    <td>단일 숫자</td>
   </tr>
   <tr>
    <td>Z</td>
-   <td><strong>출력 형식</strong>:한 자리. 또는 입력 데이터가 비어 있는 경우 해당 위치에서 공백 또는 0자리 숫자가 있는 경우 스페이스의 경우<br /> </td>
+   <td><strong>출력 형식</strong>: 한 자리. 또는 입력 데이터가 비어 있는 경우 해당 위치에서 공백 또는 0자리 숫자가 있는 경우 스페이스의 경우<br /> </td>
    <td>한 자리 또는 공백</td>
   </tr>
   <tr>
    <td>z</td>
-   <td><strong>출력 형식</strong>:한 자리. 또는 입력 데이터가 비어 있거나, 공백 또는 해당 위치에서 0자리 숫자가 있는 경우에는 아무 것도 아닙니다.<br /> </td>
+   <td><strong>출력 형식</strong>: 한 자리. 또는 입력 데이터가 비어 있거나, 공백 또는 해당 위치에서 0자리 숫자가 있는 경우에는 아무 것도 아닙니다.<br /> </td>
    <td>한 자리 또는 아무것도 아님</td>
   </tr>
   <tr>
-   <td>오류</td>
-   <td><strong>출력 형식</strong>:지수 기호(E)로 구성된 부동 소수점 번호의 지수 부분입니다. 뒤에 선택적 더하기 또는 빼기 기호가 옵니다. 뒤에 지수 값이 옵니다.<br /> </td>
+   <td>E</td>
+   <td><strong>출력 형식</strong>: 지수 기호(E)로 구성된 부동 소수점 번호의 지수 부분입니다. 뒤에 선택적 더하기 또는 빼기 기호가 옵니다. 지수 값 뒤에 옵니다.<br /> </td>
    <td>출력 서식과 동일합니다</td>
   </tr>
   <tr>
@@ -149,7 +149,7 @@ HTML5 양식은 숫자 그림 기호를 지원합니다. 그러나 PDF forms과 
   </tr>
   <tr>
    <td>S 또는 s<br /> </td>
-   <td>출력 형식:숫자가 음수이면 빼기 기호. Else space.<br /> </td>
+   <td>출력 형식: 숫자가 음수이면 빼기 기호. 다른 공간.<br /> </td>
    <td>숫자가 음수이면 빼기 기호. 플러스 부호</td>
   </tr>
   <tr>

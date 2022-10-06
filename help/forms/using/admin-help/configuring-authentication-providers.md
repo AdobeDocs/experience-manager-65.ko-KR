@@ -21,14 +21,14 @@ ht-degree: 0%
 
 하이브리드 도메인은 적어도 하나의 인증 공급자가 필요하며, 엔터프라이즈 도메인에는 적어도 하나의 인증 공급자 또는 디렉터리 공급자가 필요합니다.
 
-SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerberos 인증 공급자와 LDAP 공급자를 백업으로 추가합니다. 이 구성에서는 SPNEGO가 작동하지 않는 경우 사용자 ID와 암호로 사용자 인증을 사용할 수 있습니다. ( [SPNEGO](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego)을 사용하여 SSO 활성화 를 참조하십시오.)
+SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerberos 인증 공급자와 LDAP 공급자를 백업으로 추가합니다. 이 구성에서는 SPNEGO가 작동하지 않는 경우 사용자 ID와 암호로 사용자 인증을 사용할 수 있습니다. (자세한 내용은 [SPNEGO를 사용하여 SSO 활성화](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego))
 
 ## 인증 공급자 추가 {#add-an-authentication-provider}
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
-1. 목록에서 기존 도메인을 클릭합니다. 새 도메인에 대한 인증을 추가하는 경우 [엔터프라이즈 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) 또는 [하이브리드 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain)를 참조하십시오.
+1. 목록에서 기존 도메인을 클릭합니다. 새 도메인에 대한 인증을 추가하는 경우 [엔터프라이즈 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) 또는 [하이브리드 도메인 추가](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
 1. 인증 추가 를 클릭하고 인증 공급자 목록에서 조직에서 사용하는 인증 메커니즘에 따라 공급자를 선택합니다.
-1. 페이지에서 필요한 추가 정보를 제공합니다. ([인증 설정](configuring-authentication-providers.md#authentication-settings)을 참조하십시오.)
+1. 페이지에서 필요한 추가 정보를 제공합니다. (자세한 내용은 [인증 설정](configuring-authentication-providers.md#authentication-settings))
 1. (선택 사항) 테스트 를 클릭하여 구성을 테스트합니다.
 1. 확인 을 클릭한 다음 확인 을 다시 클릭합니다.
 
@@ -36,7 +36,7 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 1. 목록에서 해당 도메인을 클릭합니다.
-1. 표시되는 페이지의 목록에서 적절한 인증 공급자를 선택하고 필요에 따라 변경합니다. ([인증 설정](configuring-authentication-providers.md#authentication-settings)을 참조하십시오.)
+1. 표시되는 페이지의 목록에서 적절한 인증 공급자를 선택하고 필요에 따라 변경합니다. (자세한 내용은 [인증 설정](configuring-authentication-providers.md#authentication-settings))
 1. 확인을 클릭합니다.
 
 ## 인증 공급자 삭제 {#delete-an-authentication-provider}
@@ -58,51 +58,51 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 
 다른 LDAP 서버를 사용하여 인증을 수행하려면 인증 공급자로 LDAP를 선택하고 사용자 정의 LDAP 인증 확인란을 선택합니다. 다음 구성 설정이 표시됩니다.
 
-**서버:**  (필수) 디렉터리 서버의 FQDN(정규화된 도메인 이름)입니다. 예를 들어 example.com 네트워크의 x라는 컴퓨터의 경우 FQDN은 x.example.com입니다. FQDN 서버 이름 대신 IP 주소를 사용할 수 있습니다.
+**서버:** (필수) 디렉터리 서버의 FQDN(정규화된 도메인 이름)입니다. 예를 들어 example.com 네트워크의 x라는 컴퓨터의 경우 FQDN은 x.example.com입니다. FQDN 서버 이름 대신 IP 주소를 사용할 수 있습니다.
 
-**포트:**  (필수) 디렉토리 서버가 사용하는 포트입니다. 일반적으로 SSL(Secure Sockets Layer) 프로토콜을 사용하여 네트워크를 통해 인증 정보를 전송하는 경우 389 또는 636 입니다.
+**포트:** (필수) 디렉토리 서버가 사용하는 포트입니다. 일반적으로 SSL(Secure Sockets Layer) 프로토콜을 사용하여 네트워크를 통해 인증 정보를 전송하는 경우 389 또는 636 입니다.
 
-**SSL:**  (필수) 네트워크를 통해 데이터를 전송할 때 디렉토리 서버가 SSL을 사용하는지 여부를 지정합니다. 기본값은 아니오입니다. Yes로 설정하면 해당 LDAP 서버 인증서를 애플리케이션 서버의 JRE(Java™ Runtime Environment)에서 신뢰할 수 있어야 합니다.
+**SSL:** (필수) 네트워크를 통해 데이터를 전송할 때 디렉토리 서버가 SSL을 사용하는지 여부를 지정합니다. 기본값은 아니오입니다. Yes로 설정하면 해당 LDAP 서버 인증서를 애플리케이션 서버의 JRE(Java™ Runtime Environment)에서 신뢰할 수 있어야 합니다.
 
 **바인딩** (필수) 디렉터리에 액세스하는 방법을 지정합니다.
 
-**익명:**  사용자 이름이나 암호가 필요하지 않습니다.
+**익명:** 사용자 이름이나 암호가 필요하지 않습니다.
 
 **사용자:** 인증이 필요합니다. 이름 상자에서 디렉토리에 액세스할 수 있는 사용자 레코드의 이름을 지정합니다. cn=Jane Doe, ou=user, dc=can, dc=com과 같이 사용자 계정의 전체 고유 이름(DN)을 입력하는 것이 가장 좋습니다. 암호 상자에서 연결된 암호를 지정합니다. 이러한 설정은 바인딩 옵션으로 사용자 를 선택할 때 필요합니다.
 
-**기본 DN 검색:**  (필수 아님) 기본 DN을 검색하고 드롭다운 목록에 표시합니다. 이 설정은 기본 DN이 여러 개 있고 값을 선택해야 하는 경우에 유용합니다.
+**기본 DN 검색:** (필수 아님) 기본 DN을 검색하여 드롭다운 목록에 표시합니다. 이 설정은 기본 DN이 여러 개 있고 값을 선택해야 하는 경우에 유용합니다.
 
-**기본 DN:**  (필수) LDAP 계층에서 사용자 및 그룹을 동기화하는 시작점으로 사용됩니다. 서비스를 위해 동기화해야 하는 모든 사용자 및 그룹을 포함하는 계층의 최하위 레벨에서 기본 DN을 지정하는 것이 가장 좋습니다. 이 설정에 사용자의 DN을 포함하지 마십시오. 특정 사용자를 동기화하려면 검색 필터 설정을 사용합니다.
+**기본 DN:** (필수) LDAP 계층에서 사용자 및 그룹을 동기화하는 시작점으로 사용됩니다. 서비스를 위해 동기화해야 하는 모든 사용자 및 그룹을 포함하는 계층의 최하위 레벨에서 기본 DN을 지정하는 것이 가장 좋습니다. 이 설정에 사용자의 DN을 포함하지 마십시오. 특정 사용자를 동기화하려면 검색 필터 설정을 사용합니다.
 
-**페이지를** (필수가 아님)으로 채우기: 선택하면 사용자 및 그룹 설정 페이지의 속성을 해당 기본 LDAP 값으로 채웁니다.
+**다음 방법으로 페이지 채우기:** (필수가 아님) 이 옵션을 선택하면 사용자 및 그룹 설정 페이지의 속성을 해당 기본 LDAP 값으로 채웁니다.
 
-**검색 필터:**  (필수) 사용자와 연관된 레코드를 찾는 데 사용할 검색 필터입니다. 검색 필터 구문 을 참조하십시오.
+**검색 필터:** (필수) 사용자와 연관된 레코드를 찾는 데 사용할 검색 필터입니다. 검색 필터 구문 을 참조하십시오.
 
 ### Kerberos 설정 {#kerberos-settings}
 
 엔터프라이즈 또는 하이브리드 도메인에 대한 인증을 구성하고 Kerberos 인증을 선택하는 경우 다음 설정을 사용할 수 있습니다.
 
-**DNS IP:**  AEM Forms가 실행 중인 서버의 DNS IP 주소입니다. Windows에서는 명령줄에서 ipconfig /all을 실행하여 이 IP 주소를 확인할 수 있습니다.
+**DNS IP:** AEM Forms가 실행 중인 서버의 DNS IP 주소입니다. Windows에서는 명령줄에서 ipconfig /all을 실행하여 이 IP 주소를 확인할 수 있습니다.
 
-**KDC 호스트:**  인증에 사용되는 Active Directory 서버의 정규화된 호스트 이름 또는 IP 주소입니다.
+**KDC 호스트:** 인증에 사용되는 Active Directory 서버의 정규화된 호스트 이름 또는 IP 주소입니다.
 
-**서비스 사용자:** Active Directory 2003을 사용하는 경우 이 값은 서비스 주체에 대해 생성된 매핑입니다.  `HTTP/<server name>` Active Directory 2008을 사용하는 경우 이 값은 서비스 주체의 로그인 ID입니다. 예를 들어 서비스 주도자의 이름이 um spnego 이고, 사용자 ID가 spnegodemo이며 매핑이 HTTP/example.yourcompany.com이라고 가정해 보겠습니다. Active Directory 2003에서는 서비스 사용자를 HTTP/example.yourcompany.com으로 설정합니다. Active Directory 2008에서는 서비스 사용자를 spnegodemo로 설정합니다. (SPNEGO를 사용하여 SSO 활성화 를 참조하십시오.)
+**서비스 사용자:** Active Directory 2003을 사용하는 경우 이 값은 서비스 주체에 대해 생성된 매핑입니다 `HTTP/<server name>`. Active Directory 2008을 사용하는 경우 이 값은 서비스 주체의 로그인 ID입니다. 예를 들어 서비스 주도자의 이름이 um spnego 이고, 사용자 ID가 spnegodemo이며 매핑이 HTTP/example.yourcompany.com이라고 가정해 보겠습니다. Active Directory 2003에서는 서비스 사용자를 HTTP/example.yourcompany.com으로 설정합니다. Active Directory 2008에서는 서비스 사용자를 spnegodemo로 설정합니다. (SPNEGO를 사용하여 SSO 활성화 를 참조하십시오.)
 
 **서비스 영역:** Active Directory의 도메인 이름
 
-**서비스 암호:** 서비스 사용자의 암호
+**서비스 암호:** 서비스 사용자 암호
 
-**SPNEGO 활성화:** SSO(Single Sign-On)에 SPNEGO를 사용할 수 있습니다. (SPNEGO를 사용하여 SSO 활성화 를 참조하십시오.)
+**SPNEGO 사용:** SSO(Single Sign-On)에 SPNEGO를 사용할 수 있도록 합니다. (SPNEGO를 사용하여 SSO 활성화 를 참조하십시오.)
 
 ### SAML 설정 {#saml-settings}
 
-엔터프라이즈 또는 하이브리드 도메인에 대한 인증을 구성하고 SAML 인증을 선택하는 경우 다음 설정을 사용할 수 있습니다. 추가 SAML 설정에 대한 자세한 내용은 [SAML 서비스 공급자 설정 구성](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings)을 참조하십시오.
+엔터프라이즈 또는 하이브리드 도메인에 대한 인증을 구성하고 SAML 인증을 선택하는 경우 다음 설정을 사용할 수 있습니다. 추가 SAML 설정에 대한 자세한 내용은 [SAML 서비스 공급자 설정 구성](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
 
-**가져올 SAML ID 공급자 메타데이터 파일을 선택하십시오.** : 찾아보기를 클릭하여 IDP에서 생성된 SAML ID 공급자 메타데이터 파일을 선택한 다음 가져오기를 클릭합니다. IDP의 세부 사항이 표시됩니다.
+**가져올 SAML ID 공급자 메타데이터 파일을 선택하십시오.** 찾아보기를 눌러 IDP에서 생성된 SAML ID 공급자 메타데이터 파일을 선택한 다음 가져오기를 누릅니다. IDP의 세부 사항이 표시됩니다.
 
 **제목:** EntityID로 표시되는 URL에 대한 별칭입니다. 기업 및 로컬 사용자의 로그인 페이지에도 제목이 표시됩니다.
 
-**ID 공급자가 Client Basic Authentication을 지원합니다.** Client Basic 인증은 IDP에서 SAML 아티팩트 확인 프로필을 사용할 때 사용됩니다. 이 프로필에서 사용자 관리는 IDP에서 실행되는 웹 서비스에 다시 연결하여 실제 SAML 어설션을 검색합니다. IDP에는 인증이 필요할 수 있습니다. IDP에 인증이 필요한 경우 이 옵션을 선택하고 제공된 상자에 사용자 이름과 암호를 지정합니다.
+**ID 공급자는 Client Basic 인증을 지원합니다.** Client Basic Authentication은 IDP에서 SAML 객체 해결 프로필을 사용할 때 사용됩니다. 이 프로필에서 사용자 관리는 IDP에서 실행되는 웹 서비스에 다시 연결하여 실제 SAML 어설션을 검색합니다. IDP에는 인증이 필요할 수 있습니다. IDP에 인증이 필요한 경우 이 옵션을 선택하고 제공된 상자에 사용자 이름과 암호를 지정합니다.
 
 **사용자 지정 속성:** 추가 속성을 지정할 수 있습니다. 추가 속성은 새 행으로 구분된 이름=값 쌍입니다.
 
@@ -111,7 +111,7 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 * 다음 사용자 지정 속성을 추가하여 AEM Forms Service Provider를 나타내는 사용자 이름을 지정합니다. 이 사용자 이름은 IDP Artifact Resolution 서비스를 인증하는 데 사용됩니다.
    `saml.idp.resolve.username=<username>`
 
-* 다음 사용자 지정 속성을 추가하여 `saml.idp.resolve.username`에 지정된 사용자의 암호를 지정합니다.
+* 다음 사용자 지정 속성을 추가하여 `saml.idp.resolve.username`.
    `saml.idp.resolve.password=<password>`
 
 * SSL을 통해 아티팩트 해상도 서비스와의 연결을 설정하는 동안 서비스 공급자가 인증서 유효성 검사를 무시하도록 하려면 다음 사용자 지정 속성을 추가합니다.
@@ -131,11 +131,11 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 1. 인증 공급자가 자격 증명을 확인합니다.
 1. 그런 다음 인증 공급자가 사용자가 User Management 데이터베이스에 있는지 확인합니다. 다음 상태가 가능합니다.
 
-   **** 존재사용자가 현재 잠금상태이고 잠금이 해제된 경우 사용자 관리는 인증 성공을 반환합니다. 그러나 사용자가 현재 상태가 아니거나 잠겨 있으면 사용자 관리에서 인증 오류를 반환합니다.
+   **존재함** 사용자가 현재 잠금상태이고 잠금이 해제된 경우 사용자 관리는 인증 성공을 반환합니다. 그러나 사용자가 현재 상태가 아니거나 잠겨 있으면 사용자 관리에서 인증 오류를 반환합니다.
 
-   **존재하지** 않음User Management가 인증 오류를 반환합니다.
+   **존재하지 않음** 사용자 관리가 인증 오류를 반환합니다.
 
-   **** InvalidUser Management가 인증 오류를 반환합니다.
+   **유효하지 않습니다** 사용자 관리가 인증 오류를 반환합니다.
 
 1. 인증 공급자가 반환한 결과를 평가합니다. 인증 공급자가 인증 성공을 반환하면 사용자가 로그인할 수 있습니다. 그렇지 않으면 사용자 관리에서 다음 인증 공급자를 확인합니다(2-3단계).
 1. 사용 가능한 인증 공급자가 사용자 자격 증명을 확인하지 않으면 인증 오류가 반환됩니다.
@@ -146,7 +146,7 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 
 ### 도메인에 대해 적시 프로비저닝 사용 {#enable-just-in-time-provisioning-for-a-domain}
 
-1. IdentityCreator 및 AssignmentProvider 인터페이스를 구현하는 서비스 컨테이너를 작성합니다. ([AEM Forms로 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63)을 참조하십시오.)
+1. IdentityCreator 및 AssignmentProvider 인터페이스를 구현하는 서비스 컨테이너를 작성합니다. (자세한 내용은 [AEM 양식을 사용한 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63))
 1. Forms 서버에 서비스 컨테이너를 배포합니다.
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리 를 클릭합니다.
 
@@ -157,5 +157,5 @@ SPNEGO를 사용하여 SSO를 사용하는 경우 SPNEGO가 활성화된 Kerbero
 
    ***참고&#x200B;**: Enable Just In Time Provisioning 확인란이 누락된 경우 홈 > 설정 > 사용자 관리 > 구성 > 고급 시스템 속성을 클릭한 다음 다시 로드를 클릭합니다.*
 
-1. 인증 공급자를 추가합니다. 인증 공급자를 추가하는 동안 새 인증 화면에서 등록된 Identity Creator 및 할당 공급자를 선택합니다. ([인증 공급자 구성](configuring-authentication-providers.md#configuring-authentication-providers) 참조)
+1. 인증 공급자를 추가합니다. 인증 공급자를 추가하는 동안 새 인증 화면에서 등록된 Identity Creator 및 할당 공급자를 선택합니다. (자세한 내용은 [인증 공급자 구성](configuring-authentication-providers.md#configuring-authentication-providers))
 1. 도메인을 저장합니다.

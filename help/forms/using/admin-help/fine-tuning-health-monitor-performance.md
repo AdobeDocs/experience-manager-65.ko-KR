@@ -1,8 +1,8 @@
 ---
 title: 상태 모니터 성능 미세 조정
-seo-title: 상태 모니터 성능 미세 조정
+seo-title: Fine-tuning Health Monitor performance
 description: 상태 모니터 성능 세부 조정 방법 알아보기
-seo-description: 상태 모니터 성능 세부 조정 방법 알아보기
+seo-description: Learn how to fine-tune Health Monitor performance
 uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><p>adobe.cache.multicast-port</p></td>
-   <td><p>분산 시스템의 다른 구성원과 통신하는 데 사용되는 멀티캐스트 포트입니다. 0으로 설정하면 멤버 검색 및 배포 모두에 대해 멀티캐스트를 사용할 수 없습니다. </p><p>참고:서로 다른 분산 시스템에 대해 서로 다른 멀티캐스트 주소와 포트를 선택하십시오. 다른 주소만 사용하지 마십시오.</p></td>
+   <td><p>분산 시스템의 다른 구성원과 통신하는 데 사용되는 멀티캐스트 포트입니다. 0으로 설정하면 멤버 검색 및 배포 모두에 대해 멀티캐스트를 사용할 수 없습니다. </p><p>참고: 서로 다른 분산 시스템에 대해 서로 다른 멀티캐스트 주소와 포트를 선택하십시오. 다른 주소만 사용하지 마십시오.</p></td>
    <td><p>기본값이 없습니다. 유효한 값의 범위는 0~65535.</p></td>
   </tr>
   <tr>
@@ -63,23 +63,23 @@ ht-degree: 1%
  </tbody>
 </table>
 
-## JBoss {#add-java-options-to-jboss}에 Java 옵션 추가
+## JBoss에 Java 옵션 추가 {#add-java-options-to-jboss}
 
 1. JBoss 애플리케이션 서버를 중지합니다.
-1. 편집기에서 *[appserver root]*/bin/run.bat (Windows) 또는 run.sh(Linux 또는 UNIX)를 열고 필요에 따라 Java 옵션을 추가합니다.
+1. 를 엽니다. *[appserver 루트]*&#x200B;편집기에서 /bin/run.bat (Windows) 또는 run.sh(Linux 또는 UNIX) 를 실행하고 필요에 따라 Java 옵션을 추가합니다.
 1. 서버를 다시 시작합니다.
 
-## WebLogic {#add-java-options-to-weblogic}에 Java 옵션 추가
+## WebLogic에 Java 옵션 추가 {#add-java-options-to-weblogic}
 
-1. 웹 브라우저의 URL 행에 https://[호스트 이름]:&#39;port&#39;/console을 입력하여 WebLogic 관리 콘솔을 시작합니다.
+1. https:// 을 입력하여 WebLogic 관리 콘솔을 시작합니다.[호스트 이름]: 웹 브라우저의 URL 행에 있는 &#39;port&#39;/console.
 1. WebLogic Server 도메인에 대해 만든 사용자 이름과 암호를 입력하고 변경 센터에서 로그를 클릭한 다음 잠금 및 편집을 클릭합니다.
 1. 도메인 구조에서 환경 > 서버 를 클릭하고 오른쪽 창에서 관리 서버 이름을 클릭합니다.
 1. 다음 화면에서 구성 탭 > 서버 시작 탭을 클릭합니다.
-1. 인수 상자에서 현재 컨텐츠의 끝에 필요한 인수를 추가합니다. 예를 들어, 추가 - `Dadobe.healthmonitor.enabled=false` 는 상태 모니터를 비활성화합니다.
+1. 인수 상자에서 현재 컨텐츠의 끝에 필요한 인수를 추가합니다. 예를 들어, 추가 - `Dadobe.healthmonitor.enabled=false` 상태 모니터를 사용하지 않도록 설정합니다.
 1. 저장 을 클릭한 다음 변경 사항 활성화 를 클릭합니다.
 1. WebLogic 관리 서버를 다시 시작합니다.
 
-## WebSphere {#add-java-options-to-websphere}에 Java 옵션 추가
+## WebSphere에 Java 옵션 추가 {#add-java-options-to-websphere}
 
 1. WebSphere 관리 콘솔 탐색 트리에서 응용 프로그램 서버에 대해 다음을 수행합니다.
 

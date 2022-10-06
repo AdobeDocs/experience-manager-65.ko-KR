@@ -10,8 +10,8 @@ feature: Developing
 role: Developer
 source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1299'
+ht-degree: 79%
 
 ---
 
@@ -96,25 +96,25 @@ ht-degree: 0%
       + [위젯 사용 및 확장(클래식 UI)](widgets.md)
       + [xtype 사용(클래식 UI)](xtypes.md)
       + [양식 개발(클래식 UI)](developing-forms.md)
-+ [AEM 헤드풀 및 헤드리스](headful-headless.md)
++ [AEM Headful 및 Headless](headful-headless.md)
 + 헤드리스 환경 관리{#headless}
    + [헤드리스 및 AEM](headless/introduction.md)
    + 헤드리스 여정 {#journeys}
-      + 헤드리스 개발자 여정 {#developer}
-         + [AEM 헤드리스 이해](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
-         + [CMS 헤드리스 개발에 대해 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)
+      + Headless 개발자 여정 {#developer}
+         + [AEM Headless 이해](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
+         + [CMS Headless 개발에 대해 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)
          + [AEM Headless as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/getting-started.html)
          + [AEM Headless를 사용한 첫 번째 경험으로의 경로](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/path-to-first-experience.html)
          + [콘텐츠를 AEM 콘텐츠 모델로 모델링하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/model-your-content.html)
          + [AEM 배달 API를 통해 콘텐츠에 액세스하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/access-your-content.html)
          + [AEM Assets API를 통해 콘텐츠를 업데이트하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
          + [결합 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html)
-         + [헤드리스 애플리케이션 실행 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
+         + [Headless 애플리케이션 실행 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
          + [선택 사항 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
       + Headless 콘텐츠 설계 여정 {#architect}
-         + [AEM 헤드리스 콘텐츠 설계 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
-         + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
-         + [AEM을 통한 헤드리스용 콘텐츠 모델링 기본 사항 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
+         + [AEM Headless 콘텐츠 설계 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
+         + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
+         + [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
          + [AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
    + 시작 안내서 {#getting-started}
       + [소개](headless/getting-started/introduction.md)

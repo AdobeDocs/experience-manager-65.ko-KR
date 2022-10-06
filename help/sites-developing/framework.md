@@ -1,7 +1,7 @@
 ---
-title: AEM 태깅 프레임워크
+title: AEM 태그 지정 프레임워크
 seo-title: AEM Tagging Framework
-description: Tag content and leverage the AEM Tagging infrastructure
+description: 컨텐츠에 태그를 지정하고 AEM 태깅 인프라를 활용
 seo-description: Tag content and leverage the AEM Tagging infrastructure
 uuid: f80a2cb1-359f-41dd-a70b-626d92cc3d4c
 contentOwner: Guillaume Carlino
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ---
 
-# AEM 태깅 프레임워크 {#aem-tagging-framework}
+# AEM 태그 지정 프레임워크 {#aem-tagging-framework}
 
 컨텐츠에 태그를 지정하고 AEM 태깅 인프라를 활용하려면 다음과 같이 하십시오.
 
-* The tag must exist as a node of type ` [cq:Tag](#tags-cq-tag-node-type)` under the [taxonomy root node](#taxonomy-root-node)
+* 태그는 유형의 노드로 존재해야 합니다 ` [cq:Tag](#tags-cq-tag-node-type)` 아래에 [분류 루트 노드](#taxonomy-root-node)
 
 * 태그가 지정된 콘텐츠 노드의 NodeType에는 [ `cq:Taggable`](#taggable-content-cq-taggable-mixin) 혼합
 * 다음 [TagID](#tagid) 컨텐츠 노드의 [ `cq:tags`](#tagged-content-cq-tags-property) 속성 및 가 유형의 노드로 확인됨 ` [cq:Tag](#tags-cq-tag-node-type)`
@@ -71,9 +71,9 @@ AEM에서 기본 경로는 입니다. `/content/  cq   :tags` 그리고 루트 �
 
 ### 태그 네임스페이스 {#tag-namespace}
 
-네임스페이스를 통해 항목을 그룹화할 수 있습니다. The most typical use-case is to have a namespace per (web)site (for example public, internal, and portal) or per larger application (e.g. WCM, Assets, Communities) but namespaces can be used for various other needs. Namespaces are used in the user interface to only show the subset of tags (i.e. tags of a certain namespace) that is applicable to the current content.
+네임스페이스를 통해 항목을 그룹화할 수 있습니다. 가장 일반적인 사용 사례는 (웹)사이트당(예: 공개, 내부 및 포털) 또는 더 큰 애플리케이션(예: WCM, Assets, Communities)당 네임스페이스를 갖는 것이지만 다른 다양한 요구 사항에 네임스페이스를 사용할 수 있습니다. 네임스페이스는 사용자 인터페이스에서 현재 컨텐츠에 적용할 수 있는 태그의 하위 집합(예: 특정 네임스페이스의 태그)만 표시하는 데 사용됩니다.
 
-태그의 네임스페이스는 분류법 하위 트리의 첫 번째 수준이며, 이 하위 트리는 [분류 루트 노드](#taxonomy-root-node). A namespace is a node of type `cq:Tag` whose parent is not a `cq:Tag`node type.
+태그의 네임스페이스는 분류법 하위 트리의 첫 번째 수준이며, 이 하위 트리는 [분류 루트 노드](#taxonomy-root-node). 네임스페이스는 유형의 노드입니다 `cq:Tag` 해당 부모가 아님 `cq:Tag`노드 유형입니다.
 
 모든 태그에는 네임스페이스가 있습니다. 지정된 네임스페이스가 없으면 태그가 TagID인 기본 네임스페이스에 할당됩니다 `default` (제목: `Standard Tags),`그건 `/content/cq:tags/default.`
 
@@ -91,9 +91,9 @@ AEM에서 기본 경로는 입니다. `/content/  cq   :tags` 그리고 루트 �
 
 cq:Tag 노드를 가리키지 않는 비기존 경로 또는 경로를 참조하는 태그는 잘못된 것으로 간주되며 무시됩니다.
 
-The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository:
+다음 표는 일부 샘플 TagID, 해당 요소 및 TagID가 저장소의 절대 경로로 확인되는 방법을 보여줍니다.
 
-The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository :
+다음 표는 일부 샘플 TagID, 해당 요소 및 TagID가 저장소의 절대 경로로 확인되는 방법을 보여줍니다.
 
 <table>
  <tbody>
@@ -111,18 +111,18 @@ The following table shows some sample TagIDs, their elements, and how the TagID 
    <td>과일/사과/베번</td>
    <td>과일, 사과</td>
    <td>브레인</td>
-   <td>/content/cq:tags/dam/fruit/apple/braeburn</td>
+   <td>/content/cq:tags/dam/furice/apple/breburn</td>
   </tr>
   <tr>
-   <td>color/red</td>
+   <td>색상/빨강</td>
    <td>기본값</td>
-   <td>color/red</td>
+   <td>색상/빨강</td>
    <td>컬러</td>
-   <td>red</td>
+   <td>빨간색</td>
    <td>/content/cq:tags/default/color/red</td>
   </tr>
   <tr>
-   <td>sky</td>
+   <td>하늘</td>
    <td>기본값</td>
    <td>하늘</td>
    <td>(없음)</td>
@@ -161,14 +161,14 @@ The following table shows some sample TagIDs, their elements, and how the TagID 
 
 태그는 저장소의 [분류 루트 노드](#taxonomy-root-node). 작성자 및 사이트 방문자가 주어진 네임스페이스에서 태그를 만들 수 있도록 허용 또는 거부하는 것은 리포지토리에서 적절한 ACL을 설정하여 수행할 수 있습니다.
 
-Also, denying read permissions for certains tags or namespaces will control the ability to apply tags to specific content.
+또한 태그 또는 네임스페이스에 대한 읽기 권한을 거부하면 특정 콘텐츠에 태그를 적용하는 기능을 제어할 수 있습니다.
 
 일반적인 방법은 다음과 같습니다.
 
-* Allowing the `tag-administrators` group/role write access to all namespaces (add/modify under `/content/cq:tags`). 이 그룹에는 기본적으로 AEM이 포함되어 있습니다.
+* 허용 `tag-administrators` 모든 네임스페이스에 대한 그룹/역할 쓰기 액세스 권한( `/content/cq:tags`). 이 그룹에는 기본적으로 AEM이 포함되어 있습니다.
 
 * 사용자/작성자가 읽을 수 있어야 하는 모든 네임스페이스에 대한 읽기 액세스 권한을 부여합니다(대부분 모두).
-* Allowing users/authors write access to those namespaces where tags should be freely definable by users/authors (add_node under `/content/cq:tags/some_namespace`)
+* 사용자/작성자가 사용자/작성자가 태그를 자유롭게 정의할 수 있는 네임스페이스에 대한 쓰기 액세스 권한을 허용(아래에 add_node)합니다. `/content/cq:tags/some_namespace`)
 
 ## 타깃팅 가능한 컨텐츠 : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
@@ -183,7 +183,6 @@ Also, denying read permissions for certains tags or namespaces will control the 
 >* 페이지 ( `cq:Page`)에서 `jcr:content`node는 type입니다. `cq:PageContent` 여기에는 `cq:Taggable` 믹신
 >
 >* 자산 ( `cq:Asset`)에서 `jcr:content/metadata` 노드에는 항상 가 있습니다 `cq:Taggable` 믹신
-
 >
 
 
@@ -210,7 +209,7 @@ AEM에 포함된 노드 유형에 대한 필수 정의는 다음과 같습니다
 
 ## 태그가 지정된 콘텐츠: cq:tags 속성 {#tagged-content-cq-tags-property}
 
-The `cq:tags` property is a String array used to store one or more TagIDs when they are applied to content by authors or site visitors. 속성은 `[cq:Taggable](#taggable-content-cq-taggable-mixin)` 믹신
+다음 `cq:tags` 속성은 작성자 또는 사이트 방문자가 컨텐츠에 적용할 때 하나 이상의 TagID를 저장하는 데 사용되는 문자열 배열입니다. 속성은 `[cq:Taggable](#taggable-content-cq-taggable-mixin)` 믹신
 
 >[!NOTE]
 >
@@ -225,13 +224,13 @@ The `cq:tags` property is a String array used to store one or more TagIDs when t
    * 태그 A는 삭제되지 않고 `cq:movedTo` 속성을 사용합니다.
    * 태그 B가 만들어져서(이동의 경우) `cq:backlinks` 속성을 사용합니다.
 
-* `cq:movedTo` 태그 B를 가리킵니다. 이 속성은 태그 A가 태그 B로 이동되거나 병합되었음을 의미합니다. 태그 B를 이동하면 이 속성이 그에 따라 업데이트됩니다. Tag A is thus hidden and is only kept in the repository to resolve tag IDs in content nodes pointing to tag A. The tag garbage collector removes tags like tag A once no more content nodes point to them.
+* `cq:movedTo` 태그 B를 가리킵니다. 이 속성은 태그 A가 태그 B로 이동되거나 병합되었음을 의미합니다. 태그 B를 이동하면 이 속성이 그에 따라 업데이트됩니다. 따라서 태그 A는 숨겨져 있으며, 태그 A를 가리키는 컨텐츠 노드의 태그 ID를 확인하기 위해 저장소에만 유지됩니다. 태그 가비지 수집기는 태그 A와 같은 태그를 더 이상 컨텐츠 노드가 가리키지 않으면 제거합니다.
 에 대한 특수 값 `cq:movedTo` property `nirvana`: 태그가 삭제될 때 적용되지만, `cq:movedTo` 그건 보관해야 합니다
 
    >[!NOTE]
    >
    >다음 `cq:movedTo` 속성은 다음 조건 중 하나가 충족되는 경우에만 이동되거나 병합된 태그에 추가됩니다.
-   > 1. Tag is used in content (meaning it has a reference) OR
+   > 1. 태그는 컨텐츠에 사용됩니다(참조자가 있음). OR에
    > 1. 태그에 이미 이동된 하위 항목이 있습니다.
 
 
@@ -241,13 +240,13 @@ The `cq:tags` property is a String array used to store one or more TagIDs when t
    >
    >다음 `cq:backlinks` 속성은 다음 조건 중 하나가 충족되는 경우에만 이동되거나 병합된 태그에 추가됩니다.
    >
-   > 1. Tag is used in content (meaning it has a reference) OR    >
+   > 1. 태그는 컨텐츠에 사용됩니다(참조 있음). 또는 >
    > 1. 태그에 이미 이동된 하위 항목이 있습니다.
 
 
-* Reading a `cq:tags` property of a content node involves the following resolving:
+* 읽기 `cq:tags` 컨텐츠 노드의 속성에는 다음 해결 방법이 포함됩니다.
 
-   1. If there is no match under `/content/cq:tags`, no tag is returned.
+   1. 아래에 일치하는 항목이 없으면 `/content/cq:tags`, 태그가 반환되지 않습니다.
    1. 태그에 `cq:movedTo` 속성 세트, 참조된 태그 ID가 따릅니다.
 이 단계는 뒤에 오는 태그에 `cq:movedTo` 속성을 사용합니다.
 
@@ -267,7 +266,7 @@ Experience Manager 6.4 이상 태그는 `/content/cq:tags`: 이전에 `/etc/tags
 
 >[!NOTE]
 >
->In Page Properties of tags page, it is advised to use tag ID (`geometrixx-outdoors:activity/biking`) instead of hard coding the tag base path (for example, `/etc/tags/geometrixx-outdoors/activity/biking`).
+>태그 페이지의 페이지 속성에서 태그 ID(`geometrixx-outdoors:activity/biking`) 내의 아무 곳에나 삽입할 수 있습니다. `/etc/tags/geometrixx-outdoors/activity/biking`).
 >
 >태그를 나열하려면, `com.day.cq.tagging.servlets.TagListServlet` 사용할 수 있습니다.
 

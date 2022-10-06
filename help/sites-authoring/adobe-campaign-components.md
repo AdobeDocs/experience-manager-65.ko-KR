@@ -1,8 +1,8 @@
 ---
 title: Adobe Campaign 구성 요소
-seo-title: Adobe Campaign 구성 요소
+seo-title: Adobe Campaign Components
 description: Adobe Campaign과 통합하면 뉴스레터와 양식 작업에 사용할 수 있는 구성 요소가 제공됩니다.
-seo-description: Adobe Campaign과 통합하면 뉴스레터와 양식 작업에 사용할 수 있는 구성 요소가 제공됩니다.
+seo-description: When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms
 uuid: a858d5ca-aa6e-4bde-92db-a6dcd8b48ae6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '2847'
+source-wordcount: '2826'
 ht-degree: 82%
 
 ---
@@ -82,9 +82,9 @@ Adobe Campaign과 통합하도록 구성된 뉴스레터/이메일을 열면 **A
 
 >[!NOTE]
 >
->**대체 텍스트** 필드에 정보를 입력해야 합니다. 그렇지 않으면 이미지를 저장할 수 없습니다.
+>에 정보를 입력해야 합니다. **대체 텍스트** 필드 또는 이미지를 저장할 수 없습니다.
 
-이미지가 업로드된 후(그 전은 아님) [즉석 편집](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui)을 사용하여 필요에 따라 이미지를 자르거나 회전할 수 있습니다.
+이미지가 업로드된 후(그 전은 아님) 다음 아이콘을 사용할 수 있습니다 [즉석 편집](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) 필요에 따라 이미지를 자르거나 회전하려면:
 
 ![](do-not-localize/chlimage_1-10.png)
 
@@ -135,7 +135,6 @@ Adobe Campaign과 통합하도록 구성된 뉴스레터/이메일을 열면 **A
 >
 >`Validation failed. Verify the values of the marked fields.`
 
-
 다음 예는 이미지(캠페인) 구성 요소가 표시되는 것을 보여줍니다.
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
@@ -150,18 +149,17 @@ Adobe Campaign과 통합하도록 구성된 뉴스레터/이메일을 열면 **A
 
 * **링크 도구 설명** 링크 사용 방법에 대한 추가 정보를 추가합니다.
 
-* ****
-LinkType드롭다운 목록에서 
-**사용자** 지정 URL 및  **응용 문서**. 이 필드는 반드시 입력해야 합니다. [사용자 지정 URL]을 선택하는 경우 링크 URL을 제공할 수 있습니다. [응용 문서]를 선택하는 경우 문서 경로를 제공할 수 있습니다.
+* **LinkType**
+드롭다운 목록에서 
+**사용자 지정 URL** 그리고 **응용 문서**. 이 필드는 반드시 입력해야 합니다. [사용자 지정 URL]을 선택하는 경우 링크 URL을 제공할 수 있습니다. [응용 문서]를 선택하는 경우 문서 경로를 제공할 수 있습니다.
 
 * **추가 URL 매개 변수** 추가적인 URL 매개 변수를 추가합니다. 여러 항목을 추가하려면 [항목 추가]를 클릭하십시오.
 
 >[!NOTE]
 >
->**URL 정보** 탭의 **링크 유형** 필드에 정보를 입력해야 합니다. 그렇지 않으면 구성 요소를 저장할 수 없으며 다음 오류 메시지가 표시됩니다.
+>에 정보를 입력해야 합니다. **링크 유형** 의 필드 **URL 정보** 탭하거나 구성 요소를 저장할 수 없으며 다음 오류 메시지가 표시됩니다.
 >
 >`Validation failed. Verify the values of the marked fields.`
-
 
 다음 예는 링크(캠페인) 구성 요소가 표시되는 것을 보여줍니다.
 
@@ -173,7 +171,7 @@ Dynamic Media Classic(Scene7) 이미지 템플릿은 계층이 지정된 이미�
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-**편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. 이 섹션에 설명된 설정을 구성할 수 있습니다. 이 Scene7 이미지 템플릿은 [Scene7 이미지 템플릿 구성 요소](/help/assets/scene7.md#image-template)에 자세히 설명되어 있습니다.
+**편집**&#x200B;을 클릭하여 구성 요소를 구성합니다. 이 섹션에 설명된 설정을 구성할 수 있습니다. 이 Scene7 이미지 템플릿은 [Scene7 이미지 템플릿 구성 요소](/help/assets/scene7.md#image-template).
 
 또한 매개 변수 패널에는 Scene7에서 템플릿에 대해 정의된 모든 템플릿 매개 변수가 표시됩니다. 이러한 각 매개 변수에 대해 값을 조정하거나, 변수를 삽입하거나, 이를 기본값으로 재설정할 수 있습니다.
 
@@ -236,29 +234,26 @@ Content Finder에서 이미지를 드래그하거나 클릭하여 이미지를 �
 >
 >`Validation failed. Verify the values of the marked fields.`
 
-
 다음 예는 텍스트 및 이미지(캠페인) 구성 요소가 표시되는 것을 보여줍니다.
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
 ### 텍스트 및 개인화(캠페인) {#text-personalization-campaign}
 
-텍스트 및 개인화(캠페인) 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md)에서 제공하는 기능과 함께 WYSIWYG 편집기를 사용하여 텍스트 블록을 입력할 수 있습니다. 또한 이 구성 요소를 사용하면 Adobe Campaign에서 사용할 수 있는 컨텍스트 필드와 개인화 블록을 사용할 수 있습니다. [개인화 삽입](/help/sites-authoring/campaign.md#inserting-personalization)을 참조하십시오.
+텍스트 및 개인화(캠페인) 구성 요소를 사용하면 [리치 텍스트 편집기](/help/sites-authoring/rich-text-editor.md). 또한 이 구성 요소를 사용하면 Adobe Campaign에서 사용할 수 있는 컨텍스트 필드와 개인화 블록을 사용할 수 있습니다. [개인화 삽입](/help/sites-authoring/campaign.md#inserting-personalization)을 참조하십시오.
 
-여러 가지 아이콘을 사용하여 글꼴 특성, 정렬, 링크, 목록 및 들여쓰기 등의 텍스트 서식을 지정할 수 있습니다. 양쪽 UI](/help/sites-authoring/editing-content.md)에서 모양과 느낌은 다르지만 기능은 기본적으로 동일합니다.[
+여러 가지 아이콘을 사용하여 글꼴 특성, 정렬, 링크, 목록 및 들여쓰기 등의 텍스트 서식을 지정할 수 있습니다. 기능은 기본적으로 [두 UI 모두](/help/sites-authoring/editing-content.md)과 같이 사용됩니다.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
-즉석 편집기에서는 텍스트를 추가하고, 양쪽 맞춤을 변경하고, 링크를 추가 또는 제거하고, 컨텍스트 필드나 개인화 블록을 추가하고, 전체 화면 모드로 전환할 수 있습니다. 텍스트/개인화 추가 작업이 완료되면 확인 표시를 선택하여 변경 사항을 저장하십시오(취소하려면 또는 x 선택). 자세한 내용은 [즉석 편집](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui)을 참조하십시오.
+즉석 편집기에서는 텍스트를 추가하고, 양쪽 맞춤을 변경하고, 링크를 추가 또는 제거하고, 컨텍스트 필드나 개인화 블록을 추가하고, 전체 화면 모드로 전환할 수 있습니다. 텍스트/개인화 추가 작업이 완료되면 확인 표시를 선택하여 변경 사항을 저장하십시오(취소하려면 또는 x 선택). 자세한 내용은 [즉석 편집](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) 추가 정보.
 
 >[!NOTE]
 >
 >* 사용 가능한 개인화 필드는 뉴스레터가 연결된 Adobe Campaign 템플릿의 종류에 따라 달라집니다.
 >* ContextHub에서 가상 사용자를 선택하면 개인화 필드는 선택된 프로필의 데이터로 자동 교체됩니다.
-
 >
->
-[개인화 삽입](/help/sites-authoring/campaign.md#inserting-personalization)을 참조하십시오.
+>[개인화 삽입](/help/sites-authoring/campaign.md#inserting-personalization)을 참조하십시오.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -272,7 +267,7 @@ Adobe Campaign 구성 요소를 사용하여 뉴스레터에 가입하거나, �
 
 각 구성 요소 필드는 Adobe Campaign 데이터베이스 필드에 연결할 수 있습니다. 사용 가능한 필드는 [구성 요소 및 데이터 유형](#components-and-data-type) 섹션에 설명된 대로 필드가 포함하는 데이터의 유형에 따라 달라집니다. Adobe Campaign에서 수신자 스키마를 확장하는 경우에는, 데이터 유형이 일치하는 구성 요소에서 새 필드를 사용할 수 있습니다.
 
-Adobe Campaign과 통합하도록 구성된 양식을 열면 **Adobe Campaign** 섹션에 다음 구성 요소가 표시됩니다.
+Adobe Campaign과 통합하도록 구성된 양식을 열면 다음 구성 요소가 **Adobe Campaign** 섹션:
 
 * 확인란(캠페인)
 * 날짜 필드(캠페인)와 날짜 필드/HTML5(캠페인)
@@ -386,10 +381,10 @@ Adobe Campaign 구성 요소에는 모든 구성 요소(암호화된 기본 키�
 
 [대부분의 Adobe Campaign 구성 요소에 공통인 설정](#settings-common-to-most-components) 외에 다음 내용을 구성할 수 있습니다.
 
-* **제한 -** 제한 드롭다운 -  **** 날짜  **제외 -** 를 선택하여 날짜 제한을 추가하거나 제한을 추가하지 않을 수 있습니다. 날짜를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 날짜 형식이어야 합니다.
+* **제한 - 제한** 드롭다운 - **없음** 또는 **날짜 -** 날짜 제한을 추가하거나 제한을 추가하지 않습니다. 날짜를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 날짜 형식이어야 합니다.
 
 * **제한 메시지** 또한, 사용자가 응답의 형식을 적절하게 지정하는 방법을 알도록 제한 메시지를 추가할 수도 있습니다.
-* **스타일링 -** 너비  **+** 및  **- 아이콘을 클릭하거나 탭하거나 숫자를** 입력하여 필드의 너비를 조정합니다.
+* **스타일링 - 너비** 을 클릭하거나 탭하여 필드의 너비를 조정합니다 **+** 및 **-** 아이콘을 클릭하거나 숫자를 입력합니다.
 
 다음 예는 날짜 필드(캠페인) 구성 요소가 조정된 너비로 표시되는 것을 보여줍니다.
 
@@ -437,10 +432,10 @@ Adobe Campaign 프로필 데이터를 표시 및 수정하는 각 양식은 암�
 
 [대부분의 Adobe Campaign 구성 요소에 공통인 설정](#settings-common-to-most-components) 외에 다음 내용을 구성할 수 있습니다.
 
-* **제한 -** 제한 드롭다운 -  **** 없음 또는  **숫자 -** 를 선택하여 숫자 제한을 추가하거나 제한을 추가하지 않을 수 있습니다. 숫자를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 숫자여야 합니다.
+* **제한 - 제한** 드롭다운 - **없음** 또는 **숫자 -** 숫자를 추가하거나 제약 조건을 추가하지 않으려면 숫자를 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 숫자여야 합니다.
 
 * **제한 메시지** 또한, 사용자가 응답의 형식을 적절하게 지정하는 방법을 알도록 제한 메시지를 추가할 수도 있습니다.
-* **스타일링 -** 너비  **+** 및  **- 아이콘을 클릭하거나 탭하거나 숫자를** 입력하여 필드의 너비를 조정합니다.
+* **스타일링 - 너비** 을 클릭하거나 탭하여 필드의 너비를 조정합니다 **+** 및 **-** 아이콘을 클릭하거나 숫자를 입력합니다.
 
 다음 예는 숫자 필드(캠페인) 구성 요소가 구성된 너비로 표시되는 것을 보여줍니다.
 
@@ -462,7 +457,7 @@ Adobe Campaign 프로필 데이터를 표시 및 수정하는 각 양식은 암�
 
 Adobe Campaign 프로필과 연결된 가입을 수정하려면 **가입 확인 목록(캠페인)** 구성 요소를 사용하십시오.
 
-이 구성 요소를 양식에 추가하면 모든 사용 가능한 가입이 확인란으로 표시되고 사용자가 원하는 가입을 선택할 수 있습니다. 사용자가 양식을 제출하면 이 구성 요소는 양식 작업 유형(**Adobe Campaign: 서비스** 또는 **Adobe Campaign 구독: 서비스**)에서 가입 해지.
+이 구성 요소를 양식에 추가하면 모든 사용 가능한 가입이 확인란으로 표시되고 사용자가 원하는 가입을 선택할 수 있습니다. 사용자가 양식을 제출하면 이 구성 요소는 양식 작업 유형(**Adobe Campaign: 서비스 구독** 또는 **Adobe Campaign: 서비스 구독 취소**).
 
 >[!NOTE]
 >
@@ -480,10 +475,10 @@ Adobe Campaign 프로필과 연결된 가입을 수정하려면 **가입 확인 
 
 [대부분의 Adobe Campaign 구성 요소에 공통인 설정](#settings-common-to-most-components) 외에 다음 내용을 구성할 수 있습니다.
 
-* **제한 -** 제한 드롭다운  **없음,** **이메일** 또는  **이름** (모음 기호 없음) 을 선택하여 이메일 주소, 이름 또는 제한 조건 없음을 추가할 수 있습니다. 이메일을 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 이메일 주소여야 합니다. 이름을 선택하는 경우 이름이어야 합니다(모음 기호는 허용되지 않음).
+* **제한 - 제한** 드롭다운 - **없음,** **이메일**, 또는 **이름** (모음 기호 없음) - 전자 메일 주소, 이름 또는 제한 없음 제한을 추가합니다. 이메일을 선택하는 경우, 사용자가 필드에 입력하는 응답의 형식은 이메일 주소여야 합니다. 이름을 선택하는 경우 이름이어야 합니다(모음 기호는 허용되지 않음).
 
 * **제한 메시지** 또한, 사용자가 응답의 형식을 적절하게 지정하는 방법을 알도록 제한 메시지를 추가할 수도 있습니다.
-* **스타일링 -** 너비  **+** 및  **- 아이콘을 클릭하거나 탭하거나 숫자를** 입력하여 필드의 너비를 조정합니다.
+* **스타일링 - 너비** 을 클릭하거나 탭하여 필드의 너비를 조정합니다 **+** 및 **-** 아이콘을 클릭하거나 숫자를 입력합니다.
 
 다음 예는 텍스트 필드(캠페인) 구성 요소가 표시되는 것을 보여줍니다.
 

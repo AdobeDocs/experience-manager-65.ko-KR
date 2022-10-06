@@ -1,8 +1,8 @@
 ---
-title: 페이지 컨텐츠 편집
-seo-title: 페이지 컨텐츠 편집
+title: 페이지 콘텐츠 편집
+seo-title: Editing Page Content
 description: 컨텐츠는 페이지로 드래그할 수 있는 구성 요소를 사용하여 추가됩니다. 그런 다음 그 자리에서 편집하거나, 이동하거나 삭제할 수 있습니다.
-seo-description: 컨텐츠는 페이지로 드래그할 수 있는 구성 요소를 사용하여 추가됩니다. 그런 다음 그 자리에서 편집하거나, 이동하거나 삭제할 수 있습니다.
+seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,16 +13,16 @@ docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1755'
 ht-degree: 99%
 
 ---
 
-# 페이지 컨텐츠 편집{#editing-page-content}
+# 페이지 콘텐츠 편집{#editing-page-content}
 
-페이지가 만들어지면(launch 또는 live copy의 일부 또는 신규) 컨텐츠를 편집하여 필요한 업데이트 작업을 수행할 수 있습니다.
+페이지가 만들어지면(launch 또는 live copy의 일부 또는 신규) 콘텐츠를 편집하여 필요한 업데이트 작업을 수행할 수 있습니다.
 
-컨텐츠는 페이지로 끌 수 있는 [구성 요소](/help/sites-classic-ui-authoring/classic-page-author-default-components.md)(컨텐츠 유형에 맞는)를 사용하여 추가됩니다. 그런 다음 그 자리에서 편집하거나, 이동하거나 삭제할 수 있습니다.
+콘텐츠는 페이지로 끌 수 있는 [구성 요소](/help/sites-classic-ui-authoring/classic-page-author-default-components.md)(콘텐츠 유형에 맞는)를 사용하여 추가됩니다. 그런 다음 그 자리에서 편집하거나, 이동하거나 삭제할 수 있습니다.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ ht-degree: 99%
 * 페이지
 * 정보
 * 버전 관리
-* 워크플로우
+* 워크플로
 * 모드
 * 스캐폴딩
 * Client Context
@@ -104,17 +104,17 @@ ht-degree: 99%
 >
 >이 동작은 설치에 대해 구성할 수 있습니다. 자세한 내용은 [단락 시스템 구성 및 자산 드래그를 통한 구성 요소 인스턴스 생성](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance)을 참조하십시오.
 
-위의 자산 유형 중 하나를 끌어 구성 요소를 만들려면,
+위의 에셋 유형 중 하나를 끌어 구성 요소를 만들려면
 
 1. 페이지가 [**편집** 모드](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)인지 확인합니다.
 1. [컨텐츠 파인더](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)를 엽니다.
-1. 필요한 자산을 필요한 위치로 끕니다. [구성 요소 자리 표시자](#componentplaceholder)는 구성 요소가 위치할 곳을 보여 줍니다.
+1. 필요한 에셋을 필요한 위치로 끕니다. [구성 요소 플레이스홀더](#componentplaceholder)는 구성 요소가 위치할 곳을 보여 줍니다.
 
-   자산 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 자산이 포함됩니다.
+   에셋 유형에 적절한 구성 요소가 필요한 위치에 만들어지게 됩니다. 여기에 선택한 에셋이 포함됩니다.
 
 1. 필요할 경우 구성 요소를 [편집](#editmovecopypastedelete)합니다.
 
-## 구성 요소(컨텐츠 및 속성) 편집  {#editing-a-component-content-and-properties}
+## 구성 요소(컨텐츠 및 속성) 편집 {#editing-a-component-content-and-properties}
 
 기존 단락을 편집하려면 다음 중 하나를 수행합니다.
 
@@ -205,7 +205,7 @@ ht-degree: 99%
 
 [주석](/help/sites-classic-ui-authoring/classic-page-author-annotations.md)을 사용하면 다른 작성자가 컨텐츠에 대한 피드백을 제공할 수 있습니다. 검토 및 유효성 검사 목적으로 종종 사용됩니다.
 
-## 페이지 미리 보기  {#previewing-pages}
+## 페이지 미리보기 {#previewing-pages}
 
 페이지 미리 보기에 중요한 사이드 킥의 하단 경계에는 두 가지 아이콘이 있습니다.
 
@@ -282,14 +282,12 @@ AEM에는 사용자가 수행한 작업 내역이 순서대로 저장됩니다. 
 
 >[!NOTE]
 >
->다음을 작업을 수행할 수 있습니다.
+>다음과 같은 작업을 수행할 수 있습니다.
 >
 >* 실행 취소를 사용한 후 페이지를 편집하지 않은 경우 작업을 재실행합니다.
 >* 최대 20개의 편집 작업 실행을 취소합니다(기본 설정).
 >* 실행 취소 및 재실행용 [키보드 단축키](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)를 사용할 수도 있습니다.
-
 >
-
 
 
 다음과 같은 유형의 페이지 변경을 취소하거나 재실행할 수 있습니다.

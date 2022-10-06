@@ -1,22 +1,22 @@
 ---
 title: 반복 가능한 섹션을 사용하여 양식 만들기
-seo-title: 반복 가능한 섹션을 사용하여 양식 만들기
+seo-title: Creating forms with repeatable sections
 description: 반복 가능한 섹션은 양식에 동적으로 추가하거나 제거할 수 있는 패널입니다.
-seo-description: 반복 가능한 섹션은 양식에 동적으로 추가하거나 제거할 수 있는 패널입니다.
+seo-description: Repeatable sections are panels that can be dynamically added or removed to a form.
 uuid: c3fa2aa4-a6b4-458e-8534-138e075290b1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1119'
 ht-degree: 0%
 
 ---
 
-# 반복 가능한 섹션 {#creating-forms-with-repeatable-sections} 을 사용하여 양식 만들기
+# 반복 가능한 섹션을 사용하여 양식 만들기 {#creating-forms-with-repeatable-sections}
 
 반복 가능한 섹션은 동적으로 양식에 추가하거나 제거할 수 있는 패널입니다.
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 스크립트를 통해 인스턴스 관리자 사용  {#using-instance-manager-via-scripts-nbsp}
 
-1. 편집 모드에서 패널을 선택한 다음 ![cmppr](assets/cmppr.png)을 누릅니다. 사이드바의 속성 아래에서 **패널 반복 가능**&#x200B;을 활성화합니다. **[!UICONTROL 최대값]** 및 **[!UICONTROL 최소값]** 필드의 값을 지정합니다.
+1. 편집 모드에서 패널을 선택한 다음 ![cmppr](assets/cmppr.png). 사이드바의 속성에서 **패널 반복 가능**. 에 대한 값을 지정합니다. **[!UICONTROL 최대]** 및 **[!UICONTROL 최소]** 필드.
 
    최대 필드는 페이지에 패널을 표시할 수 있는 최대 횟수를 지정합니다. 최대 개수 필드에 -1을 지정하여 패널을 무한 횟수만큼 표시할 수 있습니다.
 
@@ -38,27 +38,27 @@ ht-degree: 0%
 
 1. 반복할 패널의 상위 패널에는 반복 가능한 패널의 인스턴스를 관리하기 위해 추가 및 삭제 단추가 포함되어야 합니다. 다음 단계를 수행하여 상위 단추에 단추를 삽입하고 단추에서 스크립트를 활성화합니다.
 
-   1. 사이드바에서 단추 구성 요소를 패널의 부모로 드래그하여 놓습니다. 구성 요소를 선택하고 ![edit-rules](assets/edit-rules.png)를 누릅니다. 버튼 규칙이 규칙 편집기에서 열립니다.
-   1. 규칙 편집기 창에서 **만들기**&#x200B;를 클릭합니다.
+   1. 사이드바에서 단추 구성 요소를 패널의 부모로 드래그하여 놓습니다. 구성 요소를 선택하고 탭합니다 ![편집 규칙](assets/edit-rules.png). 버튼 규칙이 규칙 편집기에서 열립니다.
+   1. 규칙 편집기 창에서 **만들기**.
 
-      양식 개체 및 함수 행에서 **시각적 편집기**&#x200B;를 선택합니다.
+      선택 **Visual Editor** 를 클릭합니다.
 
-      1. 규칙 영역의 WHEN에서 상태 **이(가)**&#x200B;을(를) 클릭함 을 선택합니다.
+      1. 규칙 영역의 WHEN에서 state를 선택합니다. **를 클릭합니다.**.
       1. THEN에서:
 
-         * 패널 추가 단추를 만들려면 **인스턴스 추가**&#x200B;를 선택하고 ![토글-사이드 패널](assets/toggle-side-panel.png)을 사용하여 패널을 드래그 드롭하거나 **개체 삭제 또는 여기를 선택하십시오.**
-         * 삭제 패널 단추를 만들려면 **인스턴스 제거**&#x200B;를 선택하고 ![토글-사이드 패널](assets/toggle-side-panel.png)을 사용하여 패널을 드래그 드롭하거나 **개체 삭제 또는 여기를 선택하십시오.**
+         * 패널 추가 단추를 만들려면 **인스턴스 추가**&#x200B;를 클릭하고 ![토글 사이드 패널](assets/toggle-side-panel.png) 또는 **개체를 끌어 놓거나 여기를 선택하십시오.**
+         * 삭제 패널 단추를 만들려면 **인스턴스 제거**&#x200B;를 클릭하고 ![토글 사이드 패널](assets/toggle-side-panel.png) 또는 **개체를 끌어 놓거나 여기를 선택하십시오.**
 
-      양식 개체 및 함수 행에서 **코드 편집기**&#x200B;를 선택합니다. **규칙 편집**&#x200B;을 클릭하고 코드 영역에서 다음을 수행합니다.
+      선택 **코드 편집기** 를 클릭합니다. 클릭 **규칙 편집** 및 는 코드 영역에서 다음을 수행합니다.
 
-      * 패널 추가 단추를 만들려면 `this.panel.instanceManager.addInstance()` 을 지정합니다
-      * 삭제 패널 단추를 만들려면 `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)` 을 지정합니다
+      * 패널 추가 단추를 만들려면 `this.panel.instanceManager.addInstance()`
+      * 삭제 패널 단추를 만들려면 `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
-      **완료**&#x200B;를 클릭합니다.
+      클릭 **완료**.
 
       >[!NOTE]
       >
-      >필드가 반복 가능한 패널에 속하는 경우 스크립트에서 해당 이름을 사용하여 직접 액세스할 수 없습니다. 필드에 액세스하려면 `InstanceManager`에서 `instances` API를 사용하여 필드가 속한 반복 가능한 인스턴스를 지정합니다. `InstanceManager`에서 `instances` API를 사용하는 구문은 다음과 같습니다.
+      >필드가 반복 가능한 패널에 속하는 경우 스크립트에서 해당 이름을 사용하여 직접 액세스할 수 없습니다. 필드에 액세스하려면 를 사용하여 필드가 속한 반복 가능한 인스턴스를 지정합니다. `instances` 의 API `InstanceManager`. 를 사용할 구문 `instances` 의 API `InstanceManager` is:
       >
       >
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -88,7 +88,7 @@ ht-degree: 0%
       >`Panel1.instanceManager.instances[1].textbox.value`
       >
       >
-      >자세한 내용은 다음을 참조하십시오.클래스:[AEM Forms Java API 참조](https://adobe.com/go/learn_aemforms_documentation_63)의 InstanceManager#instances.
+      >자세한 내용은 다음을 참조하십시오. 클래스: InstanceManager#instances in [AEM Forms Java API 참조](https://adobe.com/go/learn_aemforms_documentation_63).
 
       >[!NOTE]
       >
@@ -96,26 +96,14 @@ ht-degree: 0%
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## 상위 패널에 대해 아코디언 레이아웃 사용   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
 패널에는 다양한 레이아웃 옵션이 있습니다. 아코디언 디자인용 레이아웃 옵션은 기본적으로 반복 가능한 패널을 지원합니다. 아코디언 디자인 옵션을 위한 레이아웃으로 반복 가능한 패널에 대해 다음 단계를 수행합니다.
 
-1. 반복할 패널의 상위 항목에서 ![cmppr](assets/cmppr.png)을 누릅니다. 사이드바에서 속성을 볼 수 있습니다. **레이아웃** 드롭다운에서 **아코디언**&#x200B;을 선택합니다.
-1. 반복할 패널에서 ![cmppr](assets/cmppr.png)을 누릅니다. 사이드바에서 패널 속성을 볼 수 있습니다. **패널 반복 가능** 탭을 활성화하고 **최대** 및 **최소** 필드에 값을 지정합니다.
+1. 반복할 패널의 상위 패널에서 ![cmppr](assets/cmppr.png). 사이드바에서 속성을 볼 수 있습니다. 에서 **레이아웃** 드롭다운에서 을 선택합니다. **아코디언**.
+1. 반복할 패널에서 ![cmppr](assets/cmppr.png). 사이드바에서 패널 속성을 볼 수 있습니다. 를 활성화합니다 **패널 반복 가능** 탭하고 **최대** 및 **최소** 필드.
 
-   이제 더하기(+) 및 삭제( ![delete-panel](assets/delete-panel.png)) 단추를 사용하여 패널을 추가하고 제거할 수 있습니다.
+   이제 더하기(+) 및 삭제( ![delete-panel](assets/delete-panel.png)) 단추를 클릭하여 패널을 추가하고 제거합니다.
 
 ## 양식 서식 파일에서 반복 하위 양식 사용(XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
@@ -128,9 +116,9 @@ ht-degree: 0%
 1. 바인딩 탭을 클릭하고 각 데이터 항목에 대해 반복 하위 폼을 선택합니다.
 1. 최소 반복 횟수를 지정하려면 최소 카운트를 선택하고 관련 상자에 숫자를 입력합니다. 이 옵션이 0으로 설정되어 있고 데이터 병합 시 하위 양식의 개체에 대해 데이터를 제공하지 않으면 폼을 렌더링할 때 하위 양식이 삽입되지 않습니다.
 1. 최대 하위 양식 반복 횟수를 지정하려면 [최대]를 선택하고 연결된 상자에 숫자를 입력합니다. 최대 상자에 값을 지정하지 않으면 하위 양식 반복 수가 무제한이 됩니다.
-1. 데이터 수량과 관계없이 하위 양식 반복 횟수를 설정하려면 초기 계산 을 선택하고 관련 상자에 숫자를 입력합니다. 이 옵션을 선택하고 사용할 수 있는 데이터가 없거나 지정된 초기 계산 값보다 적은 데이터 항목이 존재하는 경우, 하위 양식의 빈 인스턴스가 여전히 양식에 배치됩니다.
-1. 부모 하위 폼에 반복 가능한 하위 양식의 인스턴스를 삭제하기 위한 단추와 인스턴스를 추가하는 단추를 두 개 추가합니다. 자세한 단계는 [작업 빌드](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)를 참조하십시오.
-1. 이제 양식 템플릿을 적응형 양식에 연결합니다. 자세한 단계는 [템플릿을 기반으로 적응형 양식 만들기](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template)를 참조하십시오.
+1. 데이터 수량과 관계없이 하위 양식 반복 횟수를 설정하려면 초기 계산 을 선택하고 관련 상자에 숫자를 입력합니다. 이 옵션을 선택하고 사용할 수 있는 데이터가 없거나 지정한 초기 계산 값보다 적은 데이터 항목이 존재하는 경우, 하위 양식의 빈 인스턴스가 여전히 양식에 배치됩니다.
+1. 부모 하위 폼에 반복 가능한 하위 양식의 인스턴스를 삭제하기 위한 단추와 인스턴스를 추가하는 단추를 두 개 추가합니다. 자세한 단계는 [작업 빌드](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
+1. 이제 양식 템플릿을 적응형 양식에 연결합니다. 자세한 단계는 [템플릿을 기반으로 적응형 양식 만들기](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. 9단계에서 만든 단추를 사용하여 하위 양식을 추가하고 제거합니다.
 
 첨부된 .zip 파일에는 샘플 반복 가능한 하위 양식이 포함되어 있습니다.
@@ -139,9 +127,9 @@ ht-degree: 0%
 
 ## XSD(XML 스키마)의 반복 설정 사용 {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-XML 스키마와 복잡한 형식 요소의 minOccours 및 maxOccurs 속성에서 반복 가능한 패널을 만들 수 있습니다. XML 스키마에 대한 자세한 내용은 [XML 스키마를 양식 모델로 사용하여 적응형 양식 만들기](/help/forms/using/adaptive-form-xml-schema-form-model.md)를 참조하십시오.
+XML 스키마와 복잡한 형식 요소의 minOccours 및 maxOccurs 속성에서 반복 가능한 패널을 만들 수 있습니다. XML 스키마에 대한 자세한 내용은 [XML 스키마를 양식 모델로 사용하여 적응형 양식 만들기](/help/forms/using/adaptive-form-xml-schema-form-model.md).
 
-다음 코드에서는 `SampleType`패널에서 minOccourse 및 maxOccurs 속성을 사용합니다.
+다음 코드에서 `SampleType`패널에서는 minOccourse 및 maxOccurs 속성을 사용합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

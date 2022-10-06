@@ -22,7 +22,7 @@ ht-degree: 7%
 
 ## 해결 {#workaround}
 
-1. 설치 [Experience Manager Forms 서비스 팩 13 이상(6.5.13.0 이상)](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=ko-KR)
+1. 설치 [Experience Manager Forms 서비스 팩 13 이상(6.5.13.0 이상)](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 1. 소프트웨어 배포에서 패키지(.jar 파일(해상도가 있는 파일)를 다운로드하려면 다음 링크를 사용하십시오.
 
    https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]pack/com.adobe.livecycle.dsc.externalloginmodule-4.0.8.jar

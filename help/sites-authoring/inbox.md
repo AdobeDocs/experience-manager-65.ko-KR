@@ -1,8 +1,8 @@
 ---
 title: 받은 편지함
-seo-title: 받은 편지함
+seo-title: Your Inbox
 description: 받은 편지함에서 작업 관리
-seo-description: 받은 편지함에서 작업 관리
+seo-description: Managing your tasks with the inbox
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1140'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 100%
 >* [프로젝트 - 작업 중](/help/sites-authoring/task-content.md)
 >* [워크플로우](/help/sites-authoring/workflows.md)
 >* [양식](/help/forms/home.md)
-
+>
 
 
 ## 헤더의 받은 편지함 {#inbox-in-the-header}
@@ -76,8 +76,8 @@ AEM 알림 받은 편지함 열기
 
 1. 도구 모음에서 표시기를 클릭/탭합니다.
 
-1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로우, 프로젝트 및 작업의 항목을 표시합니다.
-1. 기본 보기는 [목록 보기](#inbox-list-view)이지만 [달력 보기](#inbox-calendar-view)로 전환할 수도 있습니다. 이는 [보기 선택기] (도구 모음, 오른쪽 상단)로 수행할 수 있습니다.
+1. **모두 보기**&#x200B;를 선택합니다. **AEM 받은 편지함**&#x200B;이 열립니다. 받은 편지함은 워크플로, 프로젝트 및 작업의 항목을 표시합니다.
+1. The default view is [List View](#inbox-list-view), but you can also switch to [Calendar View](#inbox-calendar-view). This is done with the view selector (toolbar, top right).
 
    두 보기 모두에 대해 [보기 설정](#inbox-view-settings)을 정의할 수 있습니다. 사용 가능한 옵션은 현재 보기에 따라 다릅니다.
 
@@ -93,7 +93,7 @@ AEM 알림 받은 편지함 열기
 
 ![wf-82](assets/wf-82.png)
 
-### 받은 편지함 - 달력 보기 {#inbox-calendar-view}
+### 받은 편지함 - 캘린더 보기 {#inbox-calendar-view}
 
 이 보기는 달력 내에서의 위치 및 선택한 정밀 보기에 따라 항목을 표시합니다.
 
@@ -114,7 +114,7 @@ AEM 알림 받은 편지함 열기
 
 두 가지 보기(목록 및 달력)에 대해 다음과 같이 설정을 정의할 수 있습니다.
 
-* **달력 보기**
+* **캘린더 보기**
 
    **달력 보기**&#x200B;의 경우 다음을 구성할 수 있습니다.
 
@@ -190,6 +190,7 @@ AEM 알림 받은 편지함 열기
    >[!NOTE]
    >
    >자세한 내용은 다음을 참조하십시오.
+   >
    >* 워크플로우 항목 - [워크플로우에 참여](/help/sites-authoring/workflows-participating.md)
 
 
@@ -247,9 +248,10 @@ AEM 알림 받은 편지함 열기
    >[!NOTE]
    >
    >**받은 편지함**&#x200B;의 **만들기** 옵션을 사용하여 생성된 작업만 프로젝트를 만드는 데 사용할 수 있습니다.
+   >
    >워크플로우의 작업 항목은 프로젝트를 만드는 데 사용할 수 없습니다.
 
-1. 도구 막대에서 **프로젝트 만들기**&#x200B;를 선택하여 마법사를 엽니다.
+1. 도구 모음에서 **프로젝트 만들기**&#x200B;를 선택하여 마법사를 엽니다.
 1. 해당 템플릿을 선택한 뒤 **다음**&#x200B;을 선택합니다.
 1. 필수 속성을 지정합니다.
 
@@ -263,7 +265,6 @@ AEM 알림 받은 편지함 열기
    * **고급**
 
       * **이름**
-
    >[!NOTE]
    >
    >자세한 내용은 [프로젝트 만들기](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project)를 참조하십시오.

@@ -1,14 +1,15 @@
 ---
-title: 컨텐츠 조각에서 참조 사용에 대해 알아봅니다
+title: 콘텐츠 조각의 참조 사용에 대해 알아보기
 description: 컨텐츠 조각, 컨텐츠, 기타 조각 및 기타 자산(미디어)에 대한 참조를 사용하는 방법에 대해 알아봅니다. 헤드리스 CMS 작성을 위한 중첩된 조각의 필요성 및 역학을 소개합니다.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 4%
+ht-degree: 10%
 
 ---
 
-# 컨텐츠 조각에서 참조 사용에 대해 알아봅니다 {#author-headless-references}
+# 콘텐츠 조각의 참조 사용에 대해 알아보기 {#author-headless-references}
 
 ## 지금까지 이야기 {#story-so-far}
 
@@ -23,7 +24,7 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 * **Audience**: 고급
 * **목표**: 헤드리스 CMS 작성에 대한 참조를 도입합니다. 어떤 종류의 참조를 사용할 수 있으며 그 목적은 무엇입니까?
 
-   * 컨텐츠 참조
+   * 콘텐츠 참조
    * 자산/미디어 참조
    * 조각 참조
    * 텍스트 블록 내에서 Ad Hoc 참조
@@ -36,7 +37,7 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 
 ![컨텐츠 조각 - 참조](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
-## 컨텐츠 참조 {#content-references}
+## 콘텐츠 참조 {#content-references}
 
 컨텐츠 참조는 다른 컨텐츠를 참조할 수 있도록 해줍니다. 이렇게 하면 컨텐츠 항목을 선택할 수 있는 브라우저가 열립니다.
 
@@ -55,7 +56,7 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 * 도시
 * 회사
 * 개인
-* 수상
+* 상
 
 매우 간단해 보이지만, 회사에는 CEO와 직원들이 모두 있습니다..그리고 이들은 모두 사람들이며, 각각 사람으로 정의되었습니다.
 
@@ -85,13 +86,13 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 
 ### 중첩된 조각을 탐색하는 방법 {#navigate-nested-fragment}
 
-사용 **구조 트리** 컨텐츠 조각 편집기의 탭에서는 조각에서 참조한 조각을 탐색한 다음, 조각이 포함할 수 있는 참조를 통해 이동할 수 있습니다. 참조를 선택하면 해당 조각이 편집을 위해 열립니다.
+사용 **구조 트리** 컨텐츠 조각 편집기의 탭에서는 조각에서 참조한 조각을 탐색한 다음, 조각이 포함할 수 있는 참조를 통해 이동할 수 있습니다. 참조를 선택하면 편집용 조각이 열립니다.
 
 >[!NOTE]
 >
 >기본 패널에서 탐색 표시를 사용하여 시작 지점으로 다시 이동할 수 있습니다.
 
-![컨텐츠 조각 구조 트리](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![콘텐츠 조각 구조 트리](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
 ## 애드혹 참조 {#adhoc-references}
 
@@ -99,19 +100,19 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 
 ![컨텐츠 조각 - Ad Hoc 참조](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 컨텐츠 조각에서 참조 및 구조에 대해 배웠으므로 다음 단계는 다음과 같습니다 [메타데이터 및 태깅에 대해 알아보기](metadata-tagging.md). 컨텐츠 조각에 대한 메타데이터 및 태그를 정의하는 방법을 소개하고 설명합니다.
 
 ## 추가 리소스 {#additional-resources}
 
-* [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
+* [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
 
-   * [컨텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
+   * [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
 
       * [자산 폴더에 구성 적용](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [컨텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+      * [콘텐츠 조각 만들기](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
    * [변형 - 컨텐츠 조각 작성](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
@@ -124,6 +125,6 @@ AEMaaCS를 사용한 작성 및 특히 컨텐츠 조각 작성에 대한 소개�
 * 시작 안내서
    * [자산 폴더 헤드리스 빠른 시작 안내서 만들기](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [AEM Headless Content Architect 여정](/help/journey-headless/architect/overview.md)
+* [AEM 헤드리스 콘텐츠 설계 여정](/help/journey-headless/architect/overview.md)
 
 * [AEM 헤드리스 번역 여정](/help/journey-headless/translation/overview.md)

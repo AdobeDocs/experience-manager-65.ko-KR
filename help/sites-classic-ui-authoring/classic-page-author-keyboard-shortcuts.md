@@ -1,8 +1,8 @@
 ---
 title: 페이지 편집 시 키보드 단축키
-seo-title: 페이지 편집 시 키보드 단축키
+seo-title: Keyboard Shortcuts when Editing Pages
 description: AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지 편집에 적용되고 일부는 콘솔 사용에 적용됩니다.
-seo-description: AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지 편집에 적용되고 일부는 콘솔 사용에 적용됩니다.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the use of consoles.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '313'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 
 >[!NOTE]
 >
->다음 표에서 **단축키** 열의 키 조합의 경우, Ctrl 및 Command 키가 macOS에서 작동합니다.
+>다음 테이블에서 **바로 가기** 열에서 Ctrl 및 Command 키가 모두 macOS에서 작동합니다.
 
 >[!NOTE]
 >
@@ -31,9 +31,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 >
 >* Windows: Ctrl을 클릭한 채 필수 구성 요소를 클릭합니다.
 >* Mac: Cmd를 클릭한 채 필수 구성 요소를 클릭합니다.
-
 >
-
 
 
 ## 키보드 단축키 편집 {#editing-keyboard-shortcuts}
@@ -154,7 +152,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
  </tbody>
 </table>
 
-데스크톱 사용자는 [콘솔](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)을 사용하여 다양한 키보드 단축키를 사용할 수 있습니다.
+데스크탑 사용자는 [콘솔](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)을 사용하여 다양한 키보드 단축키를 사용할 수 있습니다.
 
 ## 개발용 키보드 단축키 {#keyboard-shortcuts-for-development}
 
@@ -169,7 +167,7 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
   </tr>
   <tr>
    <td>편집 모드</td>
-   <td>URL에 다음 접미사를 설정합니다.<br /> <code>?debugClientLibs=true</code><br /><br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>URL에 다음 접미사를 설정합니다.<br /> <code>?debugClientLibs=true</code><br /> 그런 다음 를 사용합니다.<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>페이지 로드 시간 통계를 확인합니다.</td>
   </tr>
  </tbody>

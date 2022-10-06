@@ -6,7 +6,7 @@ exl-id: e1616385-0855-4f70-b787-b01701929bbc
 source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 55%
+ht-degree: 74%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 55%
 >
 >다음 `SameSite=None` 설정은 프로토콜이 보안(HTTPS)인 경우에만 적용됩니다.
 >
->프로토콜이 안전하지 않은 경우(HTTP) 설정이 무시되고 서버에 다음 WARN 메시지가 표시됩니다.
+>프로토콜이 안전하지 않은 경우(HTTP) 설정이 무시되고 서버에 다음 경고 메시지가 표시됩니다.
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
@@ -33,4 +33,4 @@ ht-degree: 55%
 1. 아래 이미지에 표시된 대로 **로그인 토큰 쿠키에 대한 SameSite 속성**&#x200B;을 `None`으로 설정합니다.
    ![samesite](assets/samesite1.png)
 1. 저장을 클릭합니다.
-1. 이 설정이 업데이트되고 사용자가 로그아웃 후 다시 로그인하면 `login-token` 쿠키가 `None` 속성으로 설정되고 교차 사이트 요청에 포함됩니다.
+1. 이 설정이 업데이트되고 사용자가 로그아웃 후 다시 로그인하면 `login-token` 쿠키가 `None` 속성으로 설정되고 크로스 사이트 요청에 포함됩니다.

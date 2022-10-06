@@ -1,19 +1,19 @@
 ---
 title: 문서 보안 웹 페이지 사용
-seo-title: 문서 보안 웹 페이지 사용
+seo-title: Using the document security webpages
 description: 문서 보안 웹 페이지를 로그인하여 탐색 및 사용하는 방법을 알아봅니다.
-seo-description: 문서 보안 웹 페이지를 로그인하여 탐색 및 사용하는 방법을 알아봅니다.
+seo-description: Learn how you can login, navigate and use the document security web pages.
 uuid: b4863343-cda5-474a-a101-a20e39b1f8c7
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
-feature: 문서 보안
+feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->사용자 로그인 계정을 사용하여 Acrobat 및 기타 클라이언트 애플리케이션을 통해 문서 보안에 로그인할 수도 있습니다. ([클라이언트 응용 프로그램에서 문서 보안에 대한 액세스 설정](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications)을 참조하십시오.)
+>사용자 로그인 계정을 사용하여 Acrobat 및 기타 클라이언트 애플리케이션을 통해 문서 보안에 로그인할 수도 있습니다. (자세한 내용은 [클라이언트 응용 프로그램에서 문서 보안에 대한 액세스 설정](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications))
 
 웹 페이지를 열려면 문서 보안을 위해 브라우저와 URL 및 로그인 정보가 필요합니다. 사용자의 URL은 관리자의 URL과 다릅니다.
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 브라우저를 사용하여 웹 페이지에 로그인하려면 문서 보안 URL과 계정이 필요합니다. 사용자의 URL은 관리자의 URL과 다릅니다. 관리자는 사용자 페이지에 로그인하여 정책을 만들 수도 있습니다.
 
-두 개 이상의 문서 보안 설치에 액세스할 수 있는 경우 액세스하려는 문서 보안 인스턴스에 대한 URL이 필요합니다. 이 정보가 없는 경우 관리자에게 문의하십시오. 사용자 페이지의 기본 URL은 `https://[host]:[port]/edc`입니다. 일부 경우에는 포트 번호가 필요하지 않을 수 있습니다. 자세한 내용은 관리자에게 문의하십시오.
+두 개 이상의 문서 보안 설치에 액세스할 수 있는 경우 액세스하려는 문서 보안 인스턴스에 대한 URL이 필요합니다. 이 정보가 없는 경우 관리자에게 문의하십시오. 사용자 페이지의 기본 URL은 `https://[host]:[port]/edc`. 일부 경우에는 포트 번호가 필요하지 않을 수 있습니다. 자세한 내용은 관리자에게 문의하십시오.
 
-관리자의 기본 URL은 `https://[host]:[port]/adminui`입니다.
+관리자의 기본 URL은 `https://[host]:[port]/adminui`.
 
 관리자의 경우 설치 중에 기본 수퍼 관리자 계정이 생성됩니다. 문서 보안이 처음 설치된 경우 이 계정을 사용하여 로그인할 수 있습니다.
 
@@ -48,9 +48,9 @@ ht-degree: 0%
 
 1. 브라우저에 URL을 입력합니다.
 
-   문서 보안 URL:`https://[host]:[port]/edc`
+   문서 보안 URL: `https://[host]:[port]/edc`
 
-   또는 관리 콘솔 URL:`https://[host]:[port]/adminui`
+   또는 관리 콘솔 URL: `https://[host]:[port]/adminui`
 
 1. 로그인 창에서 사용자 이름과 암호를 입력하고 확인을 클릭합니다.
 1. 관리 콘솔에서 서비스 > 문서 보안을 클릭합니다.
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 **페이지 표시**
 
-1. 페이지 이름을 클릭합니다.예를 들어 정책 을 클릭합니다.
+1. 페이지 이름을 클릭합니다. 예를 들어 정책 을 클릭합니다.
 
 **이전 페이지로 돌아갑니다**
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ## 클라이언트 응용 프로그램에서 문서 보안에 대한 액세스 설정 {#setting-up-access-to-document-security-from-client-applications}
 
-문서를 보호하고, 정책으로 보호된 문서를 열고, 문서 보안 웹 페이지에 연결하려면 클라이언트 응용 프로그램을 문서 보안에 연결하도록 설정해야 합니다. 클라이언트 응용 프로그램 내에서 연결을 구성하는 방법에 대한 내용은 *Acrobat 도움말* 또는 적절한 *RightsManagementExtension 도움말*&#x200B;을 참조하십시오.
+문서를 보호하고, 정책으로 보호된 문서를 열고, 문서 보안 웹 페이지에 연결하려면 클라이언트 응용 프로그램을 문서 보안에 연결하도록 설정해야 합니다. 자세한 내용은 *Acrobat 도움말* 또는 적절한 *RightsManagementExtension 도움말* 클라이언트 응용 프로그램 내의 연결 구성에 대한 정보를 참조하십시오.
 
 문서 보안은 SSL(Secure Sockets Layer)을 통해 액세스합니다. 클라이언트 응용 프로그램을 통해 문서 보안에 액세스할 수 있도록 인증서 저장소에 웹 사이트의 인증서를 설치해야 합니다.
 
@@ -95,12 +95,12 @@ ht-degree: 0%
 
 **Internet Explorer를 사용하여 서버 인증서 설치**
 
-1. 웹 브라우저를 열고 주소 상자에 문서 보안을 위한 기본 URL을 입력합니다. 예를 들어 `https://[host]:[port]` 을 입력합니다. 보안 경고 대화 상자가 나타납니다.
-1. 인증서 보기를 클릭한 다음 인증서 설치 를 클릭하고 설치 기본값을 선택합니다. 신뢰할 수 있는 루트 인증 기관에 인증서를 설치해야 합니다.
+1. 웹 브라우저를 열고 주소 상자에 문서 보안을 위한 기본 URL을 입력합니다. 예를 들어 `https://[host]:[port]`. 보안 경고 대화 상자가 나타납니다.
+1. 인증서 보기 를 클릭한 다음 인증서 설치 를 클릭하고 설치 기본값을 선택합니다. 신뢰할 수 있는 루트 인증 기관에 인증서를 설치해야 합니다.
 1. 브라우저 세션을 닫습니다.
 1. 다른 브라우저 창을 열고 주소 상자에 동일한 URL을 입력합니다. 보안 경고 대화 상자가 나타나지 않아야 합니다. 이 테스트에서는 인증서가 제대로 설치되었는지 확인합니다.
 
-## 웹 페이지에서 로그아웃하기 {#log-out-of-the-web-pages}
+## 웹 페이지에서 로그아웃 {#log-out-of-the-web-pages}
 
 웹 페이지 사용을 마치면 로그아웃하여 다른 용도로 안전하게 웹 브라우저를 사용할 수 있습니다. 문서 보안 구성 방식에 따라 브라우저를 닫아야 완전히 로그아웃할 수 있습니다.
 

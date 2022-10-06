@@ -1,24 +1,24 @@
 ---
 title: 상호 SSL을 사용하여 복제
-seo-title: 상호 SSL을 사용하여 복제
+seo-title: Replicating Using Mutual SSL
 description: 작성자 인스턴스의 복제 에이전트가 MSSL(상호 SSL)을 사용하여 게시 인스턴스와 연결하도록 AEM을 구성하는 방법을 알아봅니다. MSSL을 사용하는 복제 에이전트 및 게시 인스턴스의 HTTP 서비스는 인증서를 사용하여 서로 인증합니다.
-seo-description: 작성자 인스턴스의 복제 에이전트가 MSSL(상호 SSL)을 사용하여 게시 인스턴스와 연결하도록 AEM을 구성하는 방법을 알아봅니다. MSSL을 사용하는 복제 에이전트 및 게시 인스턴스의 HTTP 서비스는 인증서를 사용하여 서로 인증합니다.
+seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
-feature: 구성
+feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1409'
 ht-degree: 3%
 
 ---
 
-# 상호 SSL{#replicating-using-mutual-ssl}을 사용하여 복제
+# 상호 SSL을 사용하여 복제{#replicating-using-mutual-ssl}
 
 작성자 인스턴스의 복제 에이전트가 상호 SSL(MSSL)을 사용하여 게시 인스턴스와 연결하도록 AEM을 구성합니다. MSSL을 사용하는 복제 에이전트 및 게시 인스턴스의 HTTP 서비스는 인증서를 사용하여 서로 인증합니다.
 
@@ -27,8 +27,8 @@ ht-degree: 3%
 1. 작성자 및 게시 인스턴스에 대한 개인 키 및 인증서를 만들거나 받습니다.
 1. 작성자 및 게시 인스턴스에 키 및 인증서를 설치합니다.
 
-   * 작성자:작성자의 개인 키 및 게시 의 인증서입니다.
-   * 게시:게시의 개인 키 및 작성자 인증서입니다. 인증서는 복제 에이전트로 인증된 사용자 계정과 연결됩니다.
+   * 작성자: 작성자의 개인 키 및 게시 의 인증서입니다.
+   * 게시: 게시의 개인 키 및 작성자 인증서입니다. 인증서는 복제 에이전트로 인증된 사용자 계정과 연결됩니다.
 
 1. 게시 인스턴스에서 Jetty 기반 HTTP 서비스를 구성합니다.
 1. 복제 에이전트의 전송 및 SSL 속성을 구성합니다.
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 복제를 수행하는 사용자 계정을 결정해야 합니다. 게시 인스턴스에 신뢰할 수 있는 작성자 인증서를 설치할 때 인증서가 이 사용자 계정과 연결됩니다.
 
-## MSSL {#obtaining-or-creating-credentials-for-mssl}에 대한 자격 증명 가져오기 또는 만들기
+## MSSL을 위한 자격 증명 가져오기 또는 만들기 {#obtaining-or-creating-credentials-for-mssl}
 
 작성자 및 게시 인스턴스에 대한 개인 키 및 공개 인증서가 필요합니다.
 
@@ -47,15 +47,15 @@ ht-degree: 3%
 
 ### JKS 형식 {#jks-format}
 
-JKS 형식으로 개인 키 및 인증서를 생성합니다. 개인 키는 KeyStore 파일에 저장되고 인증서는 TrustStore 파일에 저장됩니다. [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html)를 사용하여 두 항목을 모두 만듭니다.
+JKS 형식으로 개인 키 및 인증서를 생성합니다. 개인 키는 KeyStore 파일에 저장되고 인증서는 TrustStore 파일에 저장됩니다. 사용 [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) 두 항목을 모두 만들려면
 
-Java `keytool` 를 사용하여 개인 키와 자격 증명을 만들려면 다음 단계를 수행하십시오.
+Java를 사용하여 다음 단계를 수행합니다 `keytool` 개인 키 및 자격 증명을 만들려면 다음을 수행하십시오.
 
 1. KeyStore에서 개인-공개 키 쌍을 생성합니다.
 1. 인증서를 만들거나 얻습니다.
 
-   * 자체 서명:KeyStore에서 인증서를 내보냅니다.
-   * CA 서명:인증서 요청을 생성하여 CA로 전송합니다.
+   * 자체 서명: KeyStore에서 인증서를 내보냅니다.
+   * CA 서명: 인증서 요청을 생성하여 CA로 전송합니다.
 
 1. 인증서를 TrustStore에 가져옵니다.
 
@@ -86,7 +86,7 @@ Java `keytool` 를 사용하여 개인 키와 자격 증명을 만들려면 다�
 
 ### pkcs#12 형식 {#pkcs-format}
 
-pkcs#12 형식으로 개인 키 및 인증서를 생성합니다. [openSSL](https://www.openssl.org/)을 사용하여 생성합니다. 다음 절차를 사용하여 개인 키 및 인증서 요청을 생성합니다. 인증서를 가져오려면 개인 키(자체 서명된 인증서)로 요청에 서명하거나 요청을 CA에 보내십시오. 그런 다음 개인 키와 인증서가 포함된 pkcs#12 아카이브를 생성합니다.
+pkcs#12 형식으로 개인 키 및 인증서를 생성합니다. 사용 [openSSL](https://www.openssl.org/) 생성할 수 있습니다. 다음 절차를 사용하여 개인 키 및 인증서 요청을 생성합니다. 인증서를 가져오려면 개인 키(자체 서명된 인증서)로 요청에 서명하거나 요청을 CA에 보내십시오. 그런 다음 개인 키와 인증서가 포함된 pkcs#12 아카이브를 생성합니다.
 
 1. 명령줄 창 또는 터미널을 엽니다. 개인 키를 만들려면 아래 테이블의 옵션 값을 사용하여 다음 명령을 입력합니다.
 
@@ -136,16 +136,16 @@ pkcs#12 형식으로 개인 키 및 인증서를 생성합니다. [openSSL](http
    | -in | author.cer | publish.cer |
    | -이름 | 작성자 | 페이지를 |
 
-## 작성자 {#install-the-private-key-and-truststore-on-author}에 개인 키 및 TrustStore 설치
+## 작성자에 개인 키 및 TrustStore 설치 {#install-the-private-key-and-truststore-on-author}
 
 작성자 인스턴스에 다음 항목을 설치합니다.
 
 * 작성자 인스턴스의 개인 키.
 * 게시 인스턴스의 인증서입니다.
 
-다음 절차를 수행하려면 작성 인스턴스의 관리자로 로그인해야 합니다.
+다음 절차를 수행하려면 작성자 인스턴스의 관리자로 로그인해야 합니다.
 
-### 작성자 개인 키 {#install-the-author-private-key} 설치
+### 작성자 개인 키 설치 {#install-the-author-private-key}
 
 1. 작성자 인스턴스에 대한 사용자 관리 페이지를 엽니다. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. 사용자 계정의 속성을 열려면 사용자 이름을 클릭하거나 탭합니다.
@@ -164,7 +164,7 @@ pkcs#12 형식으로 개인 키 및 인증서를 생성합니다. [openSSL](http
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### 게시 인증서 {#install-the-publish-certificate} 설치
+### 인증서 게시 설치 {#install-the-publish-certificate}
 
 1. 작성자 인스턴스에 대한 사용자 관리 페이지를 엽니다. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. 사용자 계정의 속성을 열려면 사용자 이름을 클릭하거나 탭합니다.
@@ -179,7 +179,7 @@ pkcs#12 형식으로 개인 키 및 인증서를 생성합니다. [openSSL](http
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## 게시 {#install-private-key-and-truststore-on-publish}에 개인 키 및 TrustStore 설치
+## 게시에 개인 키 및 TrustStore 설치 {#install-private-key-and-truststore-on-publish}
 
 게시 인스턴스에 다음 항목을 설치합니다.
 
@@ -188,7 +188,7 @@ pkcs#12 형식으로 개인 키 및 인증서를 생성합니다. [openSSL](http
 
 다음 절차를 수행하려면 게시 인스턴스의 관리자로 로그인해야 합니다.
 
-### 개인 키 게시 {#install-the-publish-private-key} 설치
+### 게시 개인 키 설치 {#install-the-publish-private-key}
 
 1. 게시 인스턴스에 대한 사용자 관리 페이지를 엽니다. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. 사용자 계정의 속성을 열려면 사용자 이름을 클릭하거나 탭합니다.
@@ -199,7 +199,7 @@ pkcs#12 형식으로 개인 키 및 인증서를 생성합니다. [openSSL](http
 1. 키 저장소의 별칭 및 암호를 입력합니다. 개인 키의 별칭 및 암호를 입력한 다음 제출을 클릭합니다.
 1. 키 저장소 관리 대화 상자를 닫습니다.
 
-### 작성자 인증서 {#install-the-author-certificate} 설치
+### 작성자 인증서 설치 {#install-the-author-certificate}
 
 1. 게시 인스턴스에 대한 사용자 관리 페이지를 엽니다. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. 복제 요청을 실행하는 데 사용하는 사용자 계정을 찾고 사용자 이름을 클릭하거나 탭합니다.
@@ -209,9 +209,9 @@ pkcs#12 형식으로 개인 키 및 인증서를 생성합니다. [openSSL](http
 1. 인증서를 사용자에게 매핑 옵션이 선택되어 있는지 확인합니다. 인증서 파일 선택을 클릭하고 author.cer 를 선택한 다음 열기를 클릭합니다.
 1. 제출을 클릭한 다음 TrustStore 관리 대화 상자를 닫습니다.
 
-## 게시 {#configure-the-http-service-on-publish}에서 HTTP 서비스 구성
+## 게시할 때 HTTP 서비스 구성 {#configure-the-http-service-on-publish}
 
-Granite 키 저장소에 액세스하는 동안 HTTPS를 사용하도록 게시 인스턴스에서 Apache Felix Jetty 기반 HTTP 서비스의 속성을 구성합니다. 서비스의 PID는 `org.apache.felix.http`입니다.
+Granite 키 저장소에 액세스하는 동안 HTTPS를 사용하도록 게시 인스턴스에서 Apache Felix Jetty 기반 HTTP 서비스의 속성을 구성합니다. 서비스의 PID는 `org.apache.felix.http`.
 
 다음 표에는 웹 콘솔 사용 여부를 구성해야 하는 OSGi 속성이 나열되어 있습니다.
 
@@ -222,9 +222,9 @@ Granite 키 저장소에 액세스하는 동안 HTTPS를 사용하도록 게시 
 | HTTPS 포트 | org.osgi.service.http.port.secure | 8443(또는 기타 원하는 포트) |
 | 클라이언트 인증서 | org.apache.felix.https.clientcertificate | &quot;클라이언트 인증서 필요&quot; |
 
-## 작성자 {#configure-the-replication-agent-on-author}에서 복제 에이전트 구성
+## 작성자에 대한 복제 에이전트 구성 {#configure-the-replication-agent-on-author}
 
-게시 인스턴스에 연결할 때 HTTPS 프로토콜을 사용하도록 작성자 인스턴스에서 복제 에이전트를 구성합니다. 복제 에이전트 구성에 대한 전체 정보는 [복제 에이전트 구성](/help/sites-deploying/replication.md#configuring-your-replication-agents)을 참조하십시오.
+게시 인스턴스에 연결할 때 HTTPS 프로토콜을 사용하도록 작성자 인스턴스에서 복제 에이전트를 구성합니다. 복제 에이전트 구성에 대한 자세한 내용은 [복제 에이전트 구성](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
 MSSL을 사용하려면 다음 표에 따라 전송 탭에서 속성을 구성합니다.
 

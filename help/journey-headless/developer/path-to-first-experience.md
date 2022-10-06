@@ -1,10 +1,11 @@
 ---
 title: AEM Headless를 사용하여 첫 번째 경험에 대한 경로
 description: AEM Headless Developer 여정의 이 부분에서 계획 고려 사항을 포함하여 AEM에서 첫 번째 헤드리스 경험을 구현하는 단계를 이해하고, 가능한 한 원활한 경로를 만드는 우수 사례를 알아봅니다.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1982'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 의 이 부분에서 [AEM Headless Developer 여정,](overview.md) 계획 고려 사항을 포함하여 AEM에서 첫 번째 헤드리스 경험을 구현하는 단계를 이해하고, 가능한 한 원활한 경로를 만드는 우수 사례를 알아봅니다.
 
-## 지금까지 그 이야기 {#story-so-far}
+## 지금까지의 이야기 {#story-so-far}
 
 AEM 헤드리스 여정의 이전 문서에서, [AEM Headless 시작하기](getting-started.md) 헤드리스 CMS가 무엇인지에 대한 기본 이론을 배우셨고, 이제
 
@@ -91,7 +92,7 @@ AEM을 사용하여 콘텐츠를 전달하는 데 첫 번째 헤드리스 앱을
 1. 컨텐츠 조각 만들기
 1. GraphQL을 사용하여 쿼리 컨텐츠
 
-## 우수 사례 {#best-practices}
+## 모범 사례 {#best-practices}
 
 헤드리스 프로젝트는 구현된 기술 때문뿐만 아니라, 좋은 계획과 프로젝트 거버넌스 때문에 성공적입니다. 다음은 컨텐츠 작성자와 개발자가 프로젝트를 계획할 때 기억해야 하는 다양한 우수 사례입니다.
 
@@ -119,7 +120,7 @@ AEM을 사용하여 콘텐츠를 전달하는 데 첫 번째 헤드리스 앱을
 * 번역 메모리와 같이 AEM과 통합할 수 있는 번역 기술 시스템에서 제공하는 모든 기능을 활용하십시오.
 * 이미지 및 비디오와 같은 리치 미디어 컨텐츠에 현지화가 필요한지 이해합니다.
 
-## 다음은 무엇입니까? {#what-is-next}
+## 다음 단계 {#what-is-next}
 
 AEM Headless 개발자 여정의 이 부분을 완료했으므로 다음을 수행해야 합니다.
 
@@ -135,7 +136,7 @@ AEM Headless의 강력한 기능과 유연성을 완벽하게 파악하기 위�
 Adobe은 학습 스타일이 무엇이든 AEM Headless 프로젝트를 시작할 때 성공하기를 원합니다.
 
 * 계속 **headless 개념 및 AEM headless 기술에 대해 알아보기**&#x200B;를 입력한 후에 문서를 검토하여 AEM 헤드리스 여정을 계속해야 합니다 [컨텐츠를 AEM 컨텐츠 모델로 모델링하는 방법](model-your-content.md) AEM에서 컨텐츠 구조를 모델링하는 방법을 알아봅니다.
-* 원하는 경우 **다음을 통해 학습**&#x200B;로 이동하면 [AEM Headless 실습 자습서 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) 에서는 간단한 프로젝트를 구현하여 AEM 헤드리스 콘텐츠를 노출하여 AEM 헤드리스 개발에 직접 참여합니다.
+* 원하는 경우 **다음을 통해 학습**&#x200B;로 이동하면 [AEM Headless 실습 자습서 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ko-KR) 에서는 간단한 프로젝트를 구현하여 AEM 헤드리스 콘텐츠를 노출하여 AEM 헤드리스 개발에 직접 참여합니다.
 
 ## 추가 리소스 {#additional-resources}
 

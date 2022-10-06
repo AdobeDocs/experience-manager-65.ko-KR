@@ -1,8 +1,8 @@
 ---
 title: 페이지 생성 및 구성
-seo-title: 페이지 생성 및 구성
+seo-title: Creating and Organizing Pages
 description: 이 섹션에서는 해당 페이지에 컨텐츠를 만들 수 있도록 AEM으로 페이지를 만들고 관리하는 방법을 설명합니다.
-seo-description: 이 섹션에서는 해당 페이지에 컨텐츠를 만들 수 있도록 AEM으로 페이지를 만들고 관리하는 방법을 설명합니다.
+seo-description: This section describes how to create and manage pages with AEM so that you can then create content on those pages.
 uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1910'
 ht-degree: 92%
 
 ---
@@ -29,12 +29,12 @@ ht-degree: 92%
 
 ## 웹 사이트 구성 {#organizing-your-website}
 
-작성자는 AEM 내에서 웹 사이트를 구성해야 합니다. 이 작업에는 컨텐츠 페이지 생성이 포함되며 이 페이지에 대한 이름 지정 작업도 포함되어 있어서
+작성자는 AEM 내에서 웹 사이트를 구성해야 합니다. 이 작업에는 콘텐츠 페이지 생성이 포함되며 이 페이지에 대한 이름 지정 작업도 포함되어 있어서
 
 * 작성자가 작성 환경에서 페이지를 쉽게 찾을 수 있습니다.
 * 사이트 방문자가 게시 환경에서 페이지를 쉽게 찾을 수 있습니다.
 
-컨텐츠 구성에 도움이 되도록 [폴더](#creating-a-new-folder)를 사용할 수도 있습니다.
+콘텐츠 구성에 도움이 되도록 [폴더](#creating-a-new-folder)를 사용할 수도 있습니다.
 
 웹 사이트의 구조는 컨텐츠 페이지를 담는 *트리 구조*&#x200B;로 생각할 수 있습니다. 이 컨텐츠 페이지의 이름은 URL을 구성하는 데 사용됩니다. 반면에 제목은 페이지 컨텐츠가 표시될 때 표시됩니다.
 
@@ -70,7 +70,7 @@ ht-degree: 92%
     /...
 ```
 
-이 구조가 표시되는 웹 사이트 콘솔에서는 [트리 구조를 탐색하는 데 사용할 수 있습니다](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+이 구조는 웹 사이트 콘솔에서 볼 수 있으며 여기에서 [트리 구조 탐색](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -80,7 +80,7 @@ ht-degree: 92%
 
 * **[제목](#title)**:
 
-   * 콘솔에서 사용자에게 표시되고, 편집할 때 페이지 컨텐츠 상단에 표시됩니다.
+   * 콘솔에서 사용자에게 표시되고, 편집할 때 페이지 콘텐츠 상단에 표시됩니다.
    * 이 필드는 선택 사항입니다.
 
 * **[이름](#name)**:
@@ -88,7 +88,7 @@ ht-degree: 92%
    * URI를 생성하는 데 사용됩니다.
    * 이 필드에 대한 사용자 입력은 선택 사항입니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
 
-새 페이지를 생성할 때 AEM은 [AEM 및 JCR에서 지정한 규칙](/help/sites-developing/naming-conventions.md)에 따라 페이지 이름을 확인합니다.
+새 페이지를 만들 때 AEM이 [규칙에 따라 페이지 이름을 확인합니다](/help/sites-developing/naming-conventions.md) AEM과 JCR에 의해 결정됩니다.
 
 구현 및 허용되는 문자 목록은 UI에 따라 약간 다르지만(터치 지원 UI에 대해 더 광범위함) 허용되는 최소 문자는 다음과 같습니다.
 
@@ -111,18 +111,18 @@ ht-degree: 92%
 
 #### 이름 {#name}
 
-새 페이지를 만들 때 페이지 **이름**[을 제공하면 AEM이 AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인합니다.](/help/sites-developing/naming-conventions.md)
+새 페이지를 만들 때 페이지 **이름**&#x200B;을 제공하면 AEM은 AEM 및 JCR에서 지정한 [규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다.
 
-클래식 UI에서는 **이름** 필드에 잘못된 문자&#x200B;**를 입력할 수 없습니다.**
+클래식 UI에서 **잘못된 문자를 입력할 수 없습니다.** 에서 **이름** 필드.
 
 >[!NOTE]
->터치 활성화 UI에서는 **이름** 필드에 잘못된 문자&#x200B;**를 제출할 수 없습니다.** AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
+>터치 지원 UI에서 **잘못된 문자를 제출할 수 없습니다.** 에서 **이름** 필드. AEM에서 잘못된 문자를 감지하면 필드가 강조 표시되고 제거/교체가 필요한 문자를 나타내는 설명 메시지가 표시됩니다.
 
 >[!NOTE]
 >
 >언어 루트가 아닌 경우 ISO-639-1에 따라 정의된 두 문자 코드를 사용할 수 없습니다.
 >
->자세한 내용은 [컨텐츠 번역 준비](/help/sites-administering/tc-prep.md)를 참조하십시오.
+>자세한 내용은 [콘텐츠 번역 준비](/help/sites-administering/tc-prep.md)를 참조하십시오.
 
 ### 템플릿 {#templates}
 
@@ -143,7 +143,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 제공되
 
 ### 구성 요소 {#components}
 
-구성 요소는 특정 유형의 컨텐츠를 추가할 수 있도록 AEM에서 제공하는 요소입니다. AEM에는 다음과 같이 광범위한 기능을 제공하는 다양하고 특별한 구성 요소가 포함되어 있습니다.
+구성 요소는 특정 유형의 콘텐츠를 추가할 수 있도록 AEM에서 제공하는 요소입니다. AEM에는 다음과 같이 광범위한 기능을 제공하는 다양하고 특별한 구성 요소가 포함되어 있습니다.
 
 * 텍스트
 * 이미지
@@ -151,7 +151,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 제공되
 * 비디오
 * 더 많음
 
-페이지를 만들고 열면 [사이드킥에서 사용할 수 있는 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)를 사용하여 [컨텐츠를 추가할 수 있습니다](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+페이지를 만들고 열면 다음을 수행할 수 있습니다 [구성 요소를 사용하여 컨텐츠 추가](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)다음에서 사용 가능 [사이드 킥의](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## 페이지 관리 {#managing-pages}
 
@@ -197,7 +197,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 제공되
 
    >[!NOTE]
    >
-   >기존 페이지를 편집 중일 때 페이지를 만들 수도 있습니다. **하위 페이지 만들기 **를 사이드킥의 **페이지** 탭에서 사용하면 편집 중인 페이지 바로 아래에 새 페이지가 만들어집니다.
+   >기존 페이지를 편집 중일 때 페이지를 만들 수도 있습니다. **하위 페이지 만들기** 사용 **페이지** 사이드 킥의 탭에서 편집할 페이지 바로 아래에 새 페이지를 만듭니다.
 
 ### 편집할 페이지 열기 {#opening-a-page-for-editing}
 

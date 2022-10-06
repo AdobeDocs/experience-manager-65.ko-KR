@@ -1,25 +1,25 @@
 ---
 title: 서신 관리 구성 속성
-seo-title: 서신 관리 구성 속성
+seo-title: Correspondence Management Configuration Properties
 description: 이 항목에서는 솔루션별 구성으로 자산 작성기를 수정하는 방법을 설명합니다. 이 항목에서는 편집할 수 있는 속성에 대해 설명, 기본값 및 허용 가능한 값을 제공합니다.
-seo-description: 이 항목에서는 솔루션별 구성으로 자산 작성기를 수정하는 방법을 설명합니다. 이 항목에서는 편집할 수 있는 속성에 대해 설명, 기본값 및 허용 가능한 값을 제공합니다.
+seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
-feature: 서신 관리
+feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '845'
 ht-degree: 3%
 
 ---
 
 # 서신 관리 구성 속성 {#correspondence-management-configuration-properties}
 
-이러한 속성을 구성하려면 브라우저에서 다음 URL을 엽니다.`https://<server>:<port>/<contextPath>/system/console/configMgr` 을(를) 선택하고 **서신 관리 구성**&#x200B;을(를) 선택합니다.
+이러한 속성을 구성하려면 브라우저에서 다음 URL을 엽니다. `https://<server>:<port>/<contextPath>/system/console/configMgr` 을(를) 선택합니다. **서신 관리 구성**.
 
 서신 관리에는 다음 구성 속성이 있습니다.
 
@@ -57,7 +57,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>CCR PDF 강조 표시 활성화</p> </td>
-   <td><p>서신 작성 애플리케이션에서 PDF에 강조 표시 사용</p> </td>
+   <td><p>서신 응용 프로그램 만들기에서 PDF에 대해 강조 표시를 활성화합니다</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -129,7 +129,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>PDF 제출 유형</p> </td>
-   <td><p>PDF 제출 유형(서신 만들기 응용 프로그램에서 제출 시 생성된 PDF 유형)</p> </td>
+   <td><p>PDF 제출 유형(서신 애플리케이션 생성에서 제출 시 생성된 PDF 유형)</p> </td>
    <td><p>nonInteractive</p> </td>
    <td><p>대화형/비대화형</p> </td>
   </tr>
@@ -154,13 +154,13 @@ ht-degree: 3%
   <tr>
    <td><p>데이터 표시 형식</p> </td>
    <td><p>데이터의 로케일 특정 표시 형식을 지정합니다</p> </td>
-   <td><p>locale=en_US;dateFormat=dd-MM-yyyy;numberDecimalSeparator=.;numberGroupSeparator=,;numberUseGroupSeparator=truelocale=de_DE;dateFormat=dd-MM-yyyy;numberDecimalSeparator=,;numberGroupSeparator=.;numberUseGroupSeparator=truelocale=fr_FR;dateFormat=dd-MM-yyyy;numberDecimalSeparator=,;numberGroupSeparator= ;numberUseGroupSeparator=truelocale=ja_JP;dateFormat=dd-MM-yyyy;numberDecimalSeparator=.;numberGroupSeparator=,;numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
    <td><p>—</p> </td>
   </tr>
   <tr>
    <td><p>데이터 편집 형식</p> </td>
    <td><p>데이터의 형식을 편집합니다. 데이터를 문자열로 작성하거나 문자열에서 데이터를 구문 분석할 때 사용됩니다</p> </td>
-   <td><p>locale=en_US;dateFormat=dd-MM-yyyy;numberDecimalSeparator=.;numberGroupSeparator=,;numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
    <td>—<p> </p> </td>
   </tr>
   <tr>
@@ -249,13 +249,13 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>편지 캐시 크기</p> </td>
-   <td><p>캐시에 유지할 최대 글자 수를 지정합니다.</p> <p>이 값을 변경하면 <code>in-memory</code> 캐시가 정리됩니다.</p> </td>
+   <td><p>캐시에 유지할 최대 글자 수를 지정합니다.</p> <p>이 값을 변경하면 정리 작업이 수행됩니다 <code>in-memory</code> 캐시.</p> </td>
    <td><p>100</p> </td>
    <td><p>모든 숫자 값</p> </td>
   </tr>
   <tr>
    <td><p>편지 캐시 사용</p> </td>
-   <td><p>편지 캐시를 활성화/비활성화합니다.</p> <p>이 값을 변경하면 <code>in-memory </code> 캐시가 정리됩니다.</p> </td>
+   <td><p>편지 캐시를 활성화/비활성화합니다.</p> <p>이 값을 변경하면 정리 작업이 수행됩니다 <code>in-memory </code> 캐시.</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -291,7 +291,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>디버그 디렉토리 </p> <p> </p> </td>
-   <td>디버깅을 위한 파일 시스템 폴더 위치입니다. 디렉토리가 <code>exists</code>이 아닌 경우 디버그 덤프가 생성되지 않습니다.</td>
+   <td>디버깅을 위한 파일 시스템 폴더 위치입니다. 디렉토리가 없는 경우 <code>exists</code>로 설정되면 디버그 덤프가 생성되지 않습니다.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>

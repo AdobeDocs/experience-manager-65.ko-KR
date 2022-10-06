@@ -1,15 +1,15 @@
 ---
-title: 컨텐츠 조각에 대한 메타데이터 및 태깅 정의에 대해 알아봅니다
-description: 컨텐츠 조각에 대한 메타데이터 및 태깅 정의에 대해 알아봅니다
+title: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
+description: 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 3%
+ht-degree: 15%
 
 ---
 
-# 컨텐츠 조각에 대한 메타데이터 및 태깅 정의에 대해 알아봅니다 {#author-headless-metadata-tagging}
+# 콘텐츠 조각에 대한 메타데이터 및 태그 지정에 대해 알아보기 {#author-headless-metadata-tagging}
 
 ## 지금까지 이야기 {#story-so-far}
 
@@ -38,7 +38,7 @@ ht-degree: 3%
 
    * 또한 **속성** 옵션을 클릭합니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 이제 이 모든 지식을 사용하여 프로젝트에 대한 컨텐츠 조각 만들기를 시작할 수 있습니다.
 

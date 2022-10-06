@@ -1,25 +1,25 @@
 ---
-title: 빠른 보기를 사용하여 사용자 지정 팝업 만들기
-seo-title: 빠른 보기를 사용하여 사용자 지정 팝업 만들기
+title: 빠른 보기를 사용하여 맞춤형 팝업 제작
+seo-title: Use Quickview to create custom pop-ups
 description: 기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다.
-seo-description: 기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다.
+seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
-feature: 뷰어
+feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 1%
+source-wordcount: '1051'
+ht-degree: 2%
 
 ---
 
-# 빠른 보기를 사용하여 사용자 지정 팝업 만들기 {#using-quickviews-to-create-custom-pop-ups}
+# 빠른 보기를 사용하여 맞춤형 팝업 제작 {#using-quickviews-to-create-custom-pop-ups}
 
 기본 Quickview는 전자 상거래 경험에서 사용되어 제품 정보와 함께 팝업이 표시되어 구매를 유도합니다. 그러나 사용자 정의 컨텐츠를 트리거하여 팝업에 표시할 수 있습니다. 뷰어에 따라 이 기능을 사용하여 핫스팟이나 축소판 이미지 또는 이미지 맵에서 선택하여 정보나 관련 컨텐츠를 볼 수 있습니다.
 
@@ -76,21 +76,21 @@ ht-degree: 1%
     </tr>
     <tr>
     <td>회전 배너</td>
-    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">웹 사이트 페이지에 회전 배너를 추가합니다</a>.<br /> </td>
+    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">웹 사이트 페이지에 회전 배너 추가</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
 
 1. 이제 사용 중인 뷰어는 빠른 보기를 사용하는 방법을 알고 있어야 합니다.
 
-   뷰어는 `QuickViewActive`이라는 핸들러를 사용합니다.
+   뷰어는 `QuickViewActive`.
 
-   ****
-예: 대화형 이미지에 웹 페이지에서 다음 샘플 포함 코드를 사용한다고 가정해 보십시오.
+   **예**
+웹 페이지에서 대화형 이미지에 다음 샘플 포함 코드를 사용한다고 가정해 보십시오.
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
-   처리기가 `setHandlers` 을 사용하여 뷰어에 로드됩니다.
+   핸들러가 를 사용하여 뷰어에 로드됩니다 `setHandlers`:
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
@@ -107,17 +107,17 @@ ht-degree: 1%
    })
    ```
 
-   다음 위치에서 `setHandlers()` 메서드에 대해 자세히 알아보십시오.
+   추가 정보 `setHandlers()` 메서드를 사용합니다.
 
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 이제 `quickViewActivate` 처리기를 구성해야 합니다.
+1. 이제 를 구성해야 합니다 `quickViewActivate` 핸들러.
 
-   `quickViewActivate` 처리기는 뷰어의 Quickview를 제어합니다. 처리기에는 Quickview에 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 Quickview에 설정된 SKU 변수와 샘플 `loadQuickView` 함수 호출에 대한 매핑을 제공합니다.
+   다음 `quickViewActivate` 처리기는 뷰어의 Quickview를 제어합니다. 처리기에는 Quickview에 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 Quickview에 설정된 SKU 변수와 샘플에 대한 매핑을 제공합니다 `loadQuickView` 함수 호출.
 
-   **웹**
-페이지에서 사용할 변수 mappingMap 변수를 SKU 값 및 Quickview에 포함된 일반 변수에 매핑합니다.
+   **변수 매핑**
+웹 페이지에서 사용할 변수를 SKU 값 및 빠른 보기에 포함된 일반 변수에 매핑합니다.
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -132,14 +132,14 @@ ht-degree: 1%
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **함수**
-호출Quickview가 작동하려면 처리기에 함수 호출이 필요합니다. 함수는 호스트 페이지에서 액세스할 수 있다고 가정합니다. 포함 코드는 샘플 함수 호출을 제공합니다.
+   **함수 호출**
+또한 처리기에서는 Quickview가 작동하려면 함수 호출이 필요합니다. 함수는 호스트 페이지에서 액세스할 수 있다고 가정합니다. 포함 코드는 샘플 함수 호출을 제공합니다.
 
    `loadQuickView(sku)`
 
-   샘플 함수 호출에서는 함수 `loadQuickView()`이 존재하며 액세스할 수 있다고 가정합니다.
+   샘플 함수 호출에서는 함수를 가정합니다 `loadQuickView()` 존재하며 액세스할 수 있습니다.
 
-   다음 위치에서 `quickViewActivate` 메서드에 대해 자세히 알아보십시오.
+   추가 정보 `quickViewActivate` 메서드를 사용합니다.
 
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
@@ -150,8 +150,8 @@ ht-degree: 1%
    * 포함 코드의 setHandlers 섹션의 주석을 해제합니다.
    * Quickview에 포함된 모든 추가 변수를 매핑합니다.
 
-      * 추가 변수를 추가할 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트합니다.
-   * 뷰어 외부의 페이지에서 간단한 `loadQuickView` () 함수를 만듭니다.
+      * 업데이트 `loadQuickView(sku,*var1*,*var2*)` 변수를 더 추가할 경우 를 호출합니다.
+   * 간단한 만들기 `loadQuickView` () 함수를 뷰어 외부에서 페이지에 추가합니다.
 
       예를 들어, 다음은 SKU 값을 브라우저 콘솔에 씁니다.
 
@@ -167,8 +167,8 @@ ht-degree: 1%
 
 
 
-1. 이제 함수를 사용하여 Quickview에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 팝업에 `DIV`을 사용합니다.
-1. 팝업 `DIV` 스타일을 다음과 같은 방식으로 지정합니다. 원하는 대로 자신만의 스타일을 추가합니다.
+1. 이제 함수를 사용하여 Quickview에서 간단한 팝업을 호출할 수 있습니다. 다음 예제에서는 `DIV` 팝업에 사용됩니다.
+1. 팝업 스타일 지정 `DIV` 아래와 같이 변경하는 것을 의미합니다. 원하는 대로 자신만의 스타일을 추가합니다.
 
    ```xml
    <style type="text/css">
@@ -180,7 +180,7 @@ ht-degree: 1%
    </style>
    ```
 
-1. 팝업 `DIV`을 HTML 페이지의 본문에 배치합니다.
+1. 팝업 배치 `DIV` HTML 페이지 본문 아래에 표시됩니다.
 
    요소 중 하나는 사용자가 Quickview를 호출할 때 SKU 값으로 업데이트된 ID로 설정됩니다. 또한 팝업이 표시된 후 팝업을 다시 숨기기 위한 간단한 단추도 포함되어 있습니다.
 
@@ -204,20 +204,20 @@ ht-degree: 1%
    </script>
    ```
 
-1. 테스트 HTML 페이지를 웹 서버에 업로드하고 엽니다. 사용자가 Quickview를 호출하면 뷰어에 팝업 `DIV`이 표시됩니다.
+1. 테스트 HTML 페이지를 웹 서버에 업로드하고 엽니다. 뷰어에 팝업이 표시됩니다 `DIV` 사용자가 빠른 보기를 호출하는 경우.
 1. **전체 화면 모드로 사용자 지정 팝업을 표시하는 방법**
 
    대화형 비디오 뷰어와 같은 일부 뷰어는 전체 화면 모드로 표시를 지원합니다. 그러나 이전 단계에서 설명한 대로 팝업을 사용하면 전체 화면 모드에 있는 동안 뷰어 뒤에 표시됩니다.
 
-   팝업을 표준 모드와 전체 화면 모드 모두에서 표시하려면 팝업을 뷰어 컨테이너에 첨부합니다. 두 번째 처리기 메서드인 `initComplete`를 사용하십시오.
+   팝업을 표준 모드와 전체 화면 모드 모두에서 표시하려면 팝업을 뷰어 컨테이너에 첨부합니다. 두 번째 처리기 메서드 사용, `initComplete`.
 
-   뷰어가 초기화되면 `initComplete` 핸들러가 호출됩니다.
+   다음 `initComplete` 뷰어가 초기화되면 처리기가 호출됩니다.
 
    ```xml
    "initComplete":function() { code block }
    ```
 
-   다음 위치에서 `init()` 메서드에 대해 자세히 알아보십시오.
+   추가 정보 `init()` 메서드를 사용합니다.
 
    * 대화형 이미지 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
    * 대화형 비디오 뷰어: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
@@ -264,9 +264,9 @@ ht-degree: 1%
 
    `*viewerInstance.*init()`
 
-   ****
-예제 이 예제에서는 대화형 이미지 뷰어를 사용합니다.
+   **예**
+이 예에서는 대화형 이미지 뷰어를 사용합니다.
 
    `s7interactiveimageviewer.init()`
 
-   뷰어를 호스트 페이지에 포함시킨 후에는 뷰어 인스턴스가 생성되어 뷰어가 호출되기 전에 `init()` 처리기를 로드해야 합니다.
+   뷰어를 호스트 페이지에 포함시킨 후에는 뷰어를 사용하여 호출하기 전에 뷰어 인스턴스가 생성되고 처리기가 로드되었는지 확인하십시오 `init()`.

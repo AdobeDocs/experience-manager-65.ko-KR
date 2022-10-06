@@ -1,7 +1,7 @@
 ---
 title: AEM 6.5 관리 사용 안내서
 seo-title: AEM 6.5 Managing User Guide
-description: '주요 리소스와 AEM 6.5 사용 안내서의 포괄적인 컬렉션을 통해 AEM 프로젝트를 성공적으로 관리하는 방법을 알아봅니다. '
+description: 주요 리소스와 AEM 6.5 사용 안내서의 포괄적인 컬렉션을 통해 AEM 프로젝트를 성공적으로 관리하는 방법을 알아봅니다.
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51

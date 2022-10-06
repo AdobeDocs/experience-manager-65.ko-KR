@@ -1,17 +1,17 @@
 ---
 title: 적응형 양식 키워드
-seo-title: 적응형 양식 키워드
+seo-title: Adaptive forms keywords
 description: 적응형 양식에서는 이러한 예약된 단어를 식별자로 사용할 수 없습니다.
-seo-description: 적응형 양식에서는 이러한 예약된 단어를 식별자로 사용할 수 없습니다.
+seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '208'
 ht-degree: 5%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 5%
   <tr>
    <td><p>너비</p> </td>
    <td><p>buttonText</p> </td>
-   <td><p>색인</p> </td>
+   <td><p>index</p> </td>
   </tr>
   <tr>
    <td><p>높이</p> </td>
@@ -240,4 +240,4 @@ ht-degree: 5%
  </tbody>
 </table>
 
-위에 나열된 키워드 외에도 [적응형 양식 JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63)와 유사한 이름을 사용하지 마십시오.
+위에 나열된 키워드 외에도 다음과 유사한 이름을 사용하지 마십시오 [적응형 양식 JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).

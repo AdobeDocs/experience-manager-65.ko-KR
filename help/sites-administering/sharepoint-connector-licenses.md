@@ -1,8 +1,8 @@
 ---
 title: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항
-seo-title: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책조항
+seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
 description: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책 사항에 대해 알아봅니다.
-seo-description: SharePoint 커넥터 라이센스, 저작권 고지 사항 및 면책 사항에 대해 알아봅니다.
+seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 10%
+source-wordcount: '362'
+ht-degree: 19%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 10%
 
 ## 커넥터 타사 라이브러리 개요 {#overview-of-connector-rd-party-libraries}
 
-다음 표에는 SharePoint Connector 핵심 라이브러리 내에서 사용되는 타사 라이브러리와 적용되는 라이센스, 저작권 고지 사항 또는 면책조항이 나와 있습니다.
+다음 표에는 SharePoint Connector 핵심 라이브러리 내에서 사용되는 타사 라이브러리와 그러한 라이브러리 적용되는 라이센스, 저작권 고지 또는 면책 사항이 나와 있습니다.
 
 | 라이브러리 | 라이센스 유형 |
 |---|---|
@@ -41,7 +41,7 @@ ht-degree: 10%
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| 동시 실행 | [동시](#concurrent) (공용 도메인) |
+| 동시 실행 | [동시 실행](#concurrent) (공용 도메인) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -60,7 +60,7 @@ ht-degree: 10%
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml api | [Apache](#apache) (Public Domain 및 W3C 소프트웨어 라이센스로 적용되는 부분을 포함함) |
+| xml api | [Apache](#apache) (Public Domain 및 W3C 소프트웨어 라이센스에서 적용되는 부분을 포함함) |
 | XmlSchema | [Apache](#apache) |
 
 ## CRX 타사 라이브러리 개요 {#overview-of-crx-rd-party-libraries}
@@ -167,7 +167,7 @@ ht-degree: 10%
  <tbody>
   <tr>
    <td>라이브러리</td>
-   <td>라이센스</td>
+   <td>라이선스</td>
   </tr>
   <tr>
    <td>ant-1.6.jar</td>
@@ -770,7 +770,7 @@ ht-degree: 10%
      WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-## Sun Portlet {#sun-portlet}
+## Sun 포틀릿 {#sun-portlet}
 
 ```xml
      SPECIFICATION LEAD IS WILLING TO LICENSE THIS

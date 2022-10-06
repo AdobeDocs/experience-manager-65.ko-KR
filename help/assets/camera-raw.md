@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Adobe Camera Raw] 디지털 자산 처리 지원"'
+title: "[!DNL Adobe Camera Raw] 디지털 자산 처리 지원"
 description: 활성화 방법 알아보기 [!DNL Adobe Camera Raw] 지원 [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 role: Admin

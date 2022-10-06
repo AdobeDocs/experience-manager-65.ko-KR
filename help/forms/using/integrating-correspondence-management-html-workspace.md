@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 작업 공간에서 타사 애플리케이션 통합
-seo-title: AEM Forms 작업 공간에서 타사 애플리케이션 통합
+seo-title: Integrating third-party applications in AEM Forms workspace
 description: AEM Forms 작업 공간에서 서신 관리와 같은 타사 애플리케이션을 통합합니다.
-seo-description: AEM Forms 작업 공간에서 서신 관리와 같은 타사 앱을 통합하는 방법입니다.
+seo-description: How-to integrate third-party apps like Correspondence Management in AEM Forms workspace.
 uuid: 7654cf86-b896-4db2-8f5d-6c1b2e6c229f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -11,7 +11,7 @@ docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -26,26 +26,26 @@ AEM Forms workspace에서는 양식 및 문서에 대한 작업 지정 및 완�
 
 ## 서신 관리 자산 만들기 {#create-correspondence-management-assets}
 
-먼저 AEM Forms 작업 공간에 렌더링되는 샘플 서신 관리 템플릿을 만듭니다. 자세한 내용은 [편지 템플릿 만들기](../../forms/using/create-letter.md)를 참조하십시오.
+먼저 AEM Forms 작업 공간에 렌더링되는 샘플 서신 관리 템플릿을 만듭니다. 자세한 내용은 [편지 템플릿 만들기](../../forms/using/create-letter.md).
 
-URL에서 서신 관리 템플릿에 액세스하여 서신 관리 템플릿을 성공적으로 렌더링할 수 있는지 확인합니다. URL의 패턴은 `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`과(와) 유사합니다
+URL에서 서신 관리 템플릿에 액세스하여 서신 관리 템플릿을 성공적으로 렌더링할 수 있는지 확인합니다. URL의 패턴은 과 유사합니다 `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
-여기서 `encodedLetterId`은 URL로 인코딩된 문자 ID입니다. Workbench에서 작업 공간 작업에 대한 렌더링 프로세스를 정의할 때 동일한 문자 ID를 지정합니다.
+여기서 `encodedLetterId` 는 URL로 인코딩된 문자 ID입니다. Workbench에서 작업 공간 작업에 대한 렌더링 프로세스를 정의할 때 동일한 문자 ID를 지정합니다.
 
-## AEM 작업 공간 {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}에서 편지를 렌더링하고 제출할 작업을 만듭니다.
+## AEM Workspace에서 편지를 렌더링하고 제출할 작업 만들기 {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 이러한 단계를 실행하기 전에 다음 그룹의 구성원인지 확인합니다.
 
 * cm-agent-users
 * 작업 공간 사용자
 
-자세한 내용은 [사용자 추가 및 구성](/help/forms/using/admin-help/adding-configuring-users.md)을 참조하십시오.
+자세한 내용은 [사용자 추가 및 구성](/help/forms/using/admin-help/adding-configuring-users.md).
 
 다음 단계를 사용하여 AEM Workspace에서 편지를 렌더링하고 제출할 작업을 만듭니다.
 
 1. Workbench를 시작합니다. 로컬 호스트에 관리자로 로그인합니다.
-1. 파일 > 새로 만들기 > 응용 프로그램을 클릭합니다. 응용 프로그램 이름 필드에 `CMDemoSample`을 입력한 다음 완료를 클릭합니다.
-1. `CMDemoSample/1.0` 을 선택하고 `NewProcess` 을 마우스 오른쪽 단추로 클릭합니다. 이름 필드에 `CMRenderer`을 입력한 다음 완료를 클릭합니다.
+1. 파일 > 새로 만들기 > 응용 프로그램을 클릭합니다. 응용 프로그램 이름 필드에 를 입력합니다. `CMDemoSample` 그런 다음 완료를 클릭합니다.
+1. 선택 `CMDemoSample/1.0` 마우스 오른쪽 단추 클릭 `NewProcess`. 이름 필드에 를 입력합니다. `CMRenderer` 그런 다음 완료를 클릭합니다.
 1. 시작 지점 활동 선택기를 끌어서 구성합니다.
 
    1. 프레젠테이션 데이터에서 CRX 자산 사용을 선택합니다.
@@ -56,7 +56,7 @@ URL에서 서신 관리 템플릿에 액세스하여 서신 관리 템플릿을 
 
       ![편지 탭](assets/letter_tab_new.png)
 
-   1. 적절한 문자를 선택하고 **확인**&#x200B;을 클릭합니다.
+   1. 적절한 문자를 선택하고 를 클릭합니다 **확인**.
 
 1. 작업 프로필 관리를 클릭합니다. 작업 프로필 관리 대화 상자가 나타납니다. 렌더링 프로세스 및 제출 프로세스가 적절히 선택되어 있는지 확인합니다.
 1. 데이터 XML 파일로 편지를 열려면 데이터 준비 프로세스에서 적절한 데이터 파일을 찾아 선택합니다.
@@ -101,13 +101,13 @@ URL에서 서신 관리 템플릿에 액세스하여 서신 관리 템플릿을 
    }
    ```
 
-   [파일 ](assets/dscsample.zip)
-다운로드DSC 다운로드:샘플 DSC는 위에 첨부된 DSCSample.zip 파일에서 사용할 수 있습니다. DSCSample.zip 파일을 다운로드하고 압축 해제합니다. DSC 서비스를 사용하려면 먼저 구성해야 합니다. 자세한 내용은 [DSC 서비스 구성](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)을 참조하십시오.
+   [파일 가져오기](assets/dscsample.zip)
+DSC 다운로드: 샘플 DSC는 위에 첨부된 DSCSample.zip 파일에서 사용할 수 있습니다. DSCSample.zip 파일을 다운로드하고 압축 해제합니다. DSC 서비스를 사용하려면 먼저 구성해야 합니다. 자세한 내용은 [DSC 서비스 구성](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
-   활동 정의 대화 상자에서 getLetterInstanceInfo와 같은 적절한 활동을 선택하고 **확인**&#x200B;을 클릭합니다.
+   활동 정의 대화 상자에서 getLetterInstanceInfo와 같은 적절한 활동을 선택하고 를 클릭합니다 **확인**.
 
 1. 애플리케이션을 배포합니다. 확인 메시지가 표시되면 자산을 저장합니다.
-1. https://&#39;[server]:[port]&#39;/lc/content/ws에서 AEM Forms 작업 공간에 로그인합니다.
+1. https://&#39;에서 AEM Forms 작업 공간에 로그인합니다.[server]:[포트]&#39;/lc/content/ws.
 1. 추가한 작업을 엽니다(CMRenderer). 서신 관리 편지가 나타납니다.
 
    ![cminworkspace](assets/cminworkspace.png)

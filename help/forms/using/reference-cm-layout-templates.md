@@ -1,7 +1,7 @@
 ---
 title: 참조 문자 템플릿
 seo-title: Reference letter templates
-description: 'AEM Forms에서는 문자를 신속하게 만드는 데 사용할 수 있는 서신 관리 편지 레이아웃 템플릿을 제공합니다. '
+description: AEM Forms에서는 문자를 신속하게 만드는 데 사용할 수 있는 서신 관리 편지 레이아웃 템플릿을 제공합니다.
 seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 서신 관리에서 편지 템플릿에는 일반적인 양식 필드, 머리글 및 바닥글과 같은 레이아웃 기능 및 컨텐츠 배치에 대한 빈 &quot;대상 영역&quot;이 포함되어 있습니다.
 
-서신 관리는 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)에 편지 템플릿을 제공합니다. 브랜딩 및 비즈니스 요구에 따라 Designer에서 템플릿을 사용자 지정할 수 있습니다. 패키지에는 다음 템플릿이 들어 있습니다.
+서신 관리는 [AEM Forms 추가 기능 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 브랜딩 및 비즈니스 요구에 따라 Designer에서 템플릿을 사용자 지정할 수 있습니다. 패키지에는 다음 템플릿이 들어 있습니다.
 
 * 클래식
 * 클래식 단순
@@ -67,7 +67,7 @@ AEM-FORMS.-6.3-REFERENCE-LAYOUT-TEMPLATES 패키지를 설치한 후 템플릿�
 
 ![좌우](assets/balancedleft.png)
 
-균형 잡힌 왼쪽 템플릿을 사용하여 만든 문자의 PDF 미리 보기
+균형 잡힌 왼쪽 템플릿을 사용하여 만든 편지의 PDF 미리 보기
 
 ## 균형 잡힌 오른쪽 {#balanced-right}
 
@@ -75,7 +75,7 @@ AEM-FORMS.-6.3-REFERENCE-LAYOUT-TEMPLATES 패키지를 설치한 후 템플릿�
 
 ![균형](assets/balancedright.png)
 
-오른쪽 균형 조정된 템플릿을 사용하여 작성된 문자의 PDF 미리 보기
+오른쪽 균형 템플릿을 사용하여 만든 편지의 PDF 미리 보기
 
 ## Visual Left {#visual-left}
 
@@ -83,7 +83,7 @@ Visual Left 템플릿에는 페이지 왼쪽에 측면 헤드가 있고 측면 �
 
 ![visualleft](assets/visualleft.png)
 
-Visual Left 템플릿을 사용하여 작성된 문자의 PDF 미리 보기
+시각적 왼쪽 템플릿을 사용하여 만든 문자의 PDF 미리 보기
 
 ## Visual Top {#visual-top}
 
@@ -91,7 +91,7 @@ Visual Top 템플릿의 맨 위에는 시각적 여백이 있습니다. Visual T
 
 ![visualtop](assets/visualtop.png)
 
-Visual Top 템플릿을 사용하여 작성된 문자의 PDF 미리 보기
+시각적 상단 템플릿을 사용하여 만든 편지의 PDF 미리 보기
 
 ## Visual Top - Classic {#visual-top-classic}
 
@@ -99,4 +99,4 @@ Visual Top - Classic 템플릿에는 회사 로고가 있는 페이지 맨 위�
 
 ![visualtopclassic](assets/visualtopclassic.png)
 
-Visual Top - Classic 템플릿을 사용하여 작성된 문자의 PDF 미리 보기
+Visual Top - Classic 템플릿을 사용하여 만든 문자의 PDF 미리 보기

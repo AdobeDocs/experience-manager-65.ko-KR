@@ -25,13 +25,13 @@ Oak-run은 JMX 수준에서 작업을 수행하지 않고도 명령줄에서 모
 1. AEM에서 다시 색인화하는 동안 리소스 사용량이 줄어 다른 AEM 활동에 대한 시스템 성능이 향상됩니다
 1. Oak-run은 대역 외 지원을 제공합니다. 운영 환경에서 운영 인스턴스에 대해 재색인화를 실행할 수 없는 경우, 복제된 환경을 재색인화에 사용하여 중요한 성능에 영향을 주지 않을 수 있습니다.
 
-아래에 `oak-run` 도구를 통해 색인 작업을 수행할 때 활용할 수 있는 사용 사례 목록이 있습니다.
+아래에서는 을 통해 색인 작업을 수행할 때 활용할 수 있는 사용 사례 목록을 찾을 수 있습니다 `oak-run` 도구.
 
 ## 인덱스 일관성 검사 {#indexconsistencychecks}
 
 >[!NOTE]
 >
->이 시나리오에 대한 자세한 내용은 [사용 사례 1 - 색인 일관성 검사](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck)를 참조하십시오.
+>이 시나리오에 대한 자세한 내용은 [사용 사례 1 - 인덱스 일관성 확인](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck).
 
 * `oak-run.jar`Lucene oak 인덱스가 손상되었는지 빠르게 확인합니다.
 * 일관성 검사 수준 1 및 2를 위해 사용 중인 AEM 인스턴스에서 실행되는 것이 안전합니다.
@@ -42,7 +42,7 @@ Oak-run은 JMX 수준에서 작업을 수행하지 않고도 명령줄에서 모
 
 >[!NOTE]
 >
->이 시나리오에 대한 자세한 내용은 [사용 사례 2 - 인덱스 통계](/help/sites-deploying/oak-run-indexing-usecases.md#usecase2indexstatistics) 를 참조하십시오.
+>이 시나리오에 대한 자세한 내용은 [사용 사례 2 - 인덱스 통계](/help/sites-deploying/oak-run-indexing-usecases.md#usecase2indexstatistics)
 
 * `oak-run.jar` 오프라인 분석을 위해 모든 인덱스 정의, 중요한 색인 통계 및 색인 컨텐츠를 덤프합니다.
 * 사용 중인 AEM 인스턴스에서 실행되는 것이 안전합니다.
@@ -59,13 +59,13 @@ Oak-run은 JMX 수준에서 작업을 수행하지 않고도 명령줄에서 모
 
 >[!NOTE]
 >
->이 시나리오에 대한 자세한 내용은 [사용 사례 3 - 재색인화](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing)를 참조하십시오.
+>이 시나리오에 대한 자세한 내용은 [사용 사례 3 - 재인덱싱](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing).
 
 ### SegmentNodeStore 및 DocumentNodeStore에 대한 텍스트 사전 추출 {#textpre-extraction}
 
-[텍스트 사전 추출](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (AEM 6.3에 있었던 기능)을 사용하여 다시 색인화하는 시간을 줄일 수 있습니다. 텍스트 사전 추출은 모든 재인덱싱 접근 방식과 함께 사용할 수 있습니다.
+[텍스트 사전 추출](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (AEM 6.3에 있던 기능)을 사용하여 다시 색인화하는 시간을 줄일 수 있습니다. 텍스트 사전 추출은 모든 재인덱싱 접근 방식과 함께 사용할 수 있습니다.
 
-`oak-run.jar` 색인 지정 방법에 따라 아래 다이어그램에서 재색인화 수행 단계의 양쪽에 다양한 단계가 있습니다.
+에 따라 `oak-run.jar` 색인 지정 방법에는 아래 다이어그램에서 재색인 수행 단계의 양쪽에 다양한 단계가 있습니다.
 
 ![SegmentNodeStore 및 DocumentNodeStore에 대한 텍스트 사전 추출](assets/4.png)
 
@@ -77,7 +77,7 @@ Oak-run은 JMX 수준에서 작업을 수행하지 않고도 명령줄에서 모
 
 >[!NOTE]
 >
->이 시나리오에 대한 자세한 내용은 [Reindex - DocumentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexdocumentnodestore)를 참조하십시오.
+>이 시나리오에 대한 자세한 내용은 [다시 인덱스 - DocumentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexdocumentnodestore).
 
 MongoMK(및 RDBMK) AEM 설치를 다시 인덱싱하는 데 권장되는 방법입니다. 다른 방법은 사용할 수 없습니다.
 
@@ -89,7 +89,7 @@ MongoMK(및 RDBMK) AEM 설치를 다시 인덱싱하는 데 권장되는 방법�
 
 >[!NOTE]
 >
->이 시나리오에 대한 자세한 내용은 [Reindex - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexsegmentnodestore) 를 참조하십시오.
+>이 시나리오에 대한 자세한 내용은 [다시 인덱스 - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexsegmentnodestore).
 
 * **콜드 대기 고려 사항(TarMK)**
 
@@ -103,9 +103,9 @@ MongoMK(및 RDBMK) AEM 설치를 다시 인덱싱하는 데 권장되는 방법�
 
 >[!NOTE]
 >
->이 시나리오에 대한 자세한 내용은 [온라인 재인덱스 - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore)를 참조하십시오.
+>이 시나리오에 대한 자세한 내용은 [온라인 재인덱스 - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
 
-oak-run.jar의 새 인덱싱 기능을 도입하기 전에 사용되는 메서드입니다. 이 작업은 Oak 색인에서 `reindex=true` 속성을 설정하여 수행할 수 있습니다.
+oak-run.jar의 새 인덱싱 기능을 도입하기 전에 사용되는 메서드입니다. 이렇게 하려면 `reindex=true` Oak 인덱스에 있는 속성입니다.
 
 이 접근 방식은 고객이 색인화하는 시간 및 성능 효과를 사용할 수 있는 경우에 사용할 수 있습니다. 이는 종종 중소형 AEM 설치에 해당합니다.
 
@@ -115,9 +115,9 @@ oak-run.jar의 새 인덱싱 기능을 도입하기 전에 사용되는 메서�
 
 >[!NOTE]
 >
->이 시나리오에 대한 자세한 내용은 [온라인 재인덱스 - SegmentNodeStore - AEM 인스턴스가 실행 중](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning)을 참조하십시오.
+>이 시나리오에 대한 자세한 내용은 [온라인 재인덱스 - SegmentNodeStore - AEM 인스턴스가 실행 중입니다.](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
-oak-run.jar를 사용하여 TarMK의 온라인 재색인화가 위에서 설명한 [Online Re-Indexing for TarMK](#onlinere-indexingfortarmk)보다 빠릅니다. 그러나 유지 관리 기간 동안 실행해야 합니다. 창이 더 짧아지고 재색인화를 수행하려면 더 많은 단계가 필요합니다.
+oak-run.jar를 사용하여 TarMK의 온라인 재색인화가 [TarMK에 대한 온라인 재인덱싱](#onlinere-indexingfortarmk) 위에 설명되어 있습니다. 그러나 유지 관리 기간 동안 실행해야 합니다. 창이 더 짧아지고 재색인화를 수행하려면 더 많은 단계가 필요합니다.
 
 >[!NOTE]
 >
@@ -129,9 +129,9 @@ oak-run.jar를 사용하여 TarMK의 온라인 재색인화가 위에서 설명�
 
 >[!NOTE]
 >
->이 시나리오에 대한 자세한 내용은 [온라인 재인덱스 - SegmentNodeStore - AEM 인스턴스가 종료됨](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown)을 참조하십시오.
+>이 시나리오에 대한 자세한 내용은 [온라인 재인덱스 - SegmentNodeStore - AEM 인스턴스가 종료됨](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
 
-TarMK의 오프라인 재색인화는 단일 `oak-run.jar` 주석이 필요하므로 TarMK의 가장 간단한 `oak-run.jar` 기반 재색인화 접근 방식입니다. 그러나 AEM 인스턴스를 종료해야 합니다.
+TarMK의 오프라인 재색인화는 가장 간단합니다 `oak-run.jar` TarMK의 재인덱싱 접근 방식 기반 단일 `oak-run.jar` 주석. 그러나 AEM 인스턴스를 종료해야 합니다.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ TarMK의 오프라인 재색인화는 단일 `oak-run.jar` 주석이 필요하�
 
 >[!NOTE]
 >
->이 시나리오에 대한 자세한 내용은 [대역 외 재인덱스 - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore)를 참조하십시오.
+>이 시나리오에 대한 자세한 내용은 [대역 외 재인덱스 - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
 
 대역 외 재색인화는 사용 중인 AEM 인스턴스에 대해 재색인화가 미치는 영향을 최소화합니다.
 
@@ -157,7 +157,7 @@ TarMK의 오프라인 재색인화는 단일 `oak-run.jar` 주석이 필요하�
 
 >[!NOTE]
 >
->이 시나리오에 대한 자세한 내용은 [사용 사례 4 - 색인 정의 업데이트](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions)를 참조하십시오.
+>이 시나리오에 대한 자세한 내용은 [사용 사례 4 - 색인 정의 업데이트](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions).
 
 ### ACS Confirm Index를 사용하여 TarMK의 인덱스 정의 생성 및 업데이트 {#creatingandupdatingindexdefinitionsontarmkusingacsensureindex}
 
@@ -165,18 +165,18 @@ TarMK의 오프라인 재색인화는 단일 `oak-run.jar` 주석이 필요하�
 >
 >ACS Sure Index는 커뮤니티 지원 프로젝트이며 Adobe 지원에서 지원되지 않습니다.
 
-이를 통해 컨텐츠 패키지를 통해 배송 인덱스 정의를 수행할 수 있으므로 나중에 다시 인덱스 플래그를 `true`으로 설정하여 다시 색인화할 수 있습니다. 이렇게 하면 색인 재지정 시간이 오래 걸리지 않는 작은 설정에 작동합니다.
+이를 통해 컨텐츠 패키지를 통해 배송 인덱스 정의를 수행할 수 있으므로 나중에 다시 인덱스 플래그를 로 설정하여 재색인화를 수행할 수 있습니다 `true`. 이렇게 하면 색인 재지정 시간이 오래 걸리지 않는 작은 설정에 작동합니다.
 
-자세한 내용은 [ACS 색인 확인 설명서](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html)를 참조하십시오.
+자세한 내용은 [ACS 색인 확인 설명서](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) 자세한 내용
 
 ### oak-run.jar를 사용하여 TarMK에서 색인 정의 만들기 및 업데이트 {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 
-비 `oak-run.jar` 메서드를 사용하여 다시 색인화하는 데 시간 또는 성능이 너무 높은 경우 다음 `oak-run.jar` 기반 접근 방식을 사용하여 TarMK 기반 AEM 설치에서 Lucene 인덱스 정의를 가져오고 다시 색인화할 수 있습니다.
+비색인을 사용하여 재색인화하는 데 시간 또는 성능이 영향을 주는 경우 `oak-run.jar` 메서드가 너무 높아서 다음 방법이 없습니다 `oak-run.jar` 기반 접근 방식을 사용하여 TarMK 기반 AEM 설치에서 Lucene 색인 정의를 가져오고 다시 색인화할 수 있습니다.
 
 ![oak-run.jar를 사용하여 TarMK에서 색인 정의 만들기 및 업데이트](assets/10.png)
 
 ### oak-run.jar를 사용하여 MonogMK에서 색인 정의 만들기 및 업데이트 {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}
 
-비 `oak-run.jar` 메서드를 사용하여 다시 색인화하는 데 시간 또는 성능이 너무 높은 경우 다음 `oak-run.jar` 기반 접근 방식을 사용하여 MongoMK 기반 AEM 설치에서 Lucene 인덱스 정의를 가져오고 다시 색인화할 수 있습니다.
+비색인을 사용하여 재색인화하는 데 시간 또는 성능이 영향을 주는 경우 `oak-run.jar` 메서드가 너무 높아서 다음 방법이 없습니다 `oak-run.jar` 기반 접근 방식을 사용하여 MongoMK 기반 AEM 설치에서 Lucene 색인 정의를 가져오고 다시 색인화할 수 있습니다.
 
 ![oak-run.jar를 사용하여 MonogMK에서 색인 정의 만들기 및 업데이트](assets/11.png)

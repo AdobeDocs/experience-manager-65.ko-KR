@@ -1,8 +1,8 @@
 ---
 title: 지정 필수 항목
-seo-title: 지정 필수 항목
+seo-title: Assignments Essentials
 description: 지원 커뮤니티에 대한 지정 기능 개요
-seo-description: 지원 커뮤니티에 대한 지정 기능 개요
+seo-description: Assignments feature overview for enablement communities
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 12%
+source-wordcount: '214'
+ht-degree: 13%
 
 ---
 
 # 지정 필수 항목 {#assignments-essentials}
 
-[지원 커뮤니티](/help/communities/overview.md#enablement-community) 사이트의 지정 기능 작업에 필요한 필수 정보를 숙지하려면 를 참조하십시오.
+의 지정 기능 작업에 필요한 필수 정보를 숙지하려면 를 참조하십시오 [지원 커뮤니티](/help/communities/overview.md#enablement-community) 사이트.
 
 지정 기능은 지원 커뮤니티 구성원에게 지원 리소스와 학습 경로를 할당하는 기능입니다.
 
@@ -34,7 +34,7 @@ ht-degree: 12%
   </tr>
   <tr>
    <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>포함 가능</strong></a></td>
-   <td>아니오</td>
+   <td>아니요</td>
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientlibs</strong></a></td>
@@ -50,7 +50,7 @@ ht-degree: 12%
   </tr>
   <tr>
    <td><strong> 속성</strong></td>
-   <td><a href="/help/communities/assignments.md">지정 기능</a>을 참조하십시오.</td>
+   <td>자세한 내용은 <a href="/help/communities/assignments.md">지정 기능</a></td>
   </tr>
  </tbody>
 </table>
@@ -85,7 +85,7 @@ ht-degree: 12%
 
 ### 지정 기능 {#assignments-function}
 
-[할당 함수](/help/communities/functions.md#assignments-function)를 포함하는 커뮤니티 사이트 구조에는 구성된 ` [assignments](/help/communities/assignments.md)` 구성 요소가 포함되어 있습니다.
+다음을 포함하는 커뮤니티 사이트 구조 [지정 함수](/help/communities/functions.md#assignments-function), 구성된 포함 ` [assignments](/help/communities/assignments.md)` 구성 요소.
 
 ### 참조 API {#reference-apis}
 

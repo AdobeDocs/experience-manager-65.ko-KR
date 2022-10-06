@@ -1,14 +1,15 @@
 ---
-title: AEM에서 컨텐츠 조각 모델 생성에 대해 알아봅니다
+title: AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기
 description: 컨텐츠 조각 모델을 사용하여 헤드리스 CMS용 컨텐츠 모델링 컨텐츠의 개념과 역학에 대해 알아봅니다.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 7%
+ht-degree: 13%
 
 ---
 
-# AEM에서 컨텐츠 조각 모델 생성에 대해 알아봅니다 {#architect-headless-content-fragment-models}
+# AEM에서의 콘텐츠 조각 모델 만들기에 대해 알아보기 {#architect-headless-content-fragment-models}
 
 ## 지금까지 이야기 {#story-so-far}
 
@@ -68,7 +69,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 필요한 만큼 필드를 추가할 수 있습니다. 예:
 
-![컨텐츠 조각 모델](/help/assets/content-fragments/assets/cfm-models-07.png)
+![콘텐츠 조각 모델](/help/assets/content-fragments/assets/cfm-models-07.png)
 
 ### 컨텐츠 작성자 {#your-content-authors}
 
@@ -91,7 +92,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 <!-- needs more details -->
 
-컨텐츠 조각 모델은 종속된 컨텐츠 조각이 게시될 때/게시되기 전에 게시해야 합니다.
+콘텐츠 조각 모델은 종속된 콘텐츠 조각이 게시될 때/게시되기 전에 게시해야 합니다.
 
 >[!NOTE]
 >
@@ -101,7 +102,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 모델이 인 경우 **잠김** (읽기 전용 모드에서) 모델의 내용 및 구조를 볼 수 있지만 직접 편집할 수는 없습니다. 관리 **잠김** 콘솔 또는 모델 편집기에서 모델을 생성합니다.
 
-## 다음은 무엇입니까? {#whats-next}
+## 다음 단계 {#whats-next}
 
 기본 사항을 배웠으므로 다음 단계는 고유한 컨텐츠 조각 모델 만들기를 시작하는 것입니다.
 
@@ -111,23 +112,23 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [기본 처리](/help/sites-authoring/basic-handling.md) - 이 페이지는 주로 **Sites** 콘솔의 대부분/대부분 기능은 이동 및 작업 수행에도 관련이 있습니다. **컨텐츠 조각 모델** 아래에 **자산** 콘솔.
 
-* [컨텐츠 조각을 사용한 작업](/help/assets/content-fragments/content-fragments.md)
+* [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
 
-   * [컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
+   * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [컨텐츠 조각 모델 정의](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [콘텐츠 조각 모델 정의](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [컨텐츠 조각 모델 활성화 또는 비활성화](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [콘텐츠 조각 모델 활성화 또는 비활성화](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [자산 폴더에서 컨텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [에셋 폴더에서 콘텐츠 조각 모델 허용](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [컨텐츠 조각 모델 삭제](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [콘텐츠 조각 모델 삭제](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [컨텐츠 조각 모델 게시](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [콘텐츠 조각 모델 게시](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [컨텐츠 조각 모델 게시 취소](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [콘텐츠 조각 모델 게시 취소](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [잠김(게시된) 컨텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [잠긴(게시된) 콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * 시작 안내서
 

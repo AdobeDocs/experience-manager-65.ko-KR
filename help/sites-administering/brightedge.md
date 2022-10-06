@@ -1,8 +1,8 @@
 ---
 title: BrightEdge Content Optimizer와 통합
-seo-title: BrightEdge Content Optimizer와 통합
+seo-title: Integrating with BrightEdge Content Optimizer
 description: AEM과 BrightEdge Content Optimizer 통합에 대해 알아봅니다.
-seo-description: AEM과 BrightEdge Content Optimizer 통합에 대해 알아봅니다.
+seo-description: Learn about integrating AEM with BrightEdge Content Optimizer.
 uuid: 7075dd3c-2fd6-4050-af1c-9b16ad4366ec
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '495'
 ht-degree: 1%
 
 ---
 
-# BrightEdge Content Optimizer{#integrating-with-brightedge-content-optimizer}와 통합
+# BrightEdge Content Optimizer와 통합{#integrating-with-brightedge-content-optimizer}
 
 AEM이 BrightEdge 계정의 자격 증명을 사용하여 연결할 수 있도록 BrightEdge 클라우드 구성을 만듭니다. 여러 계정을 사용하는 경우 여러 구성을 만들 수 있습니다.
 
@@ -26,8 +26,8 @@ AEM이 BrightEdge 계정의 자격 증명을 사용하여 연결할 수 있도�
 1. 레일에서 도구 > 작업 > 클라우드 > Cloud Services 를 클릭합니다.
 1. BrightEdge Content Optimizer 섹션에 표시되는 링크를 클릭합니다. BrightEdge 구성이 만들어졌는지 여부에 따라 링크 텍스트가 결정됩니다.
 
-   * 지금 구성:이 링크는 구성이 만들어지지 않은 경우에 나타납니다.
-   * 구성 표시:이 링크는 하나 이상의 구성을 만들 때 나타납니다.
+   * 지금 구성: 이 링크는 구성이 만들어지지 않은 경우에 나타납니다.
+   * 구성 표시: 이 링크는 하나 이상의 구성을 만들 때 나타납니다.
 
    ![chlimage_1-4](assets/chlimage_1-4a.png)
 

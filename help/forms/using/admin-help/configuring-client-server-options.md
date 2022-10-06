@@ -800,7 +800,7 @@ Microsoft Office용 Acrobat, Adobe Reader 및 Acrobat Reader DC 확장 등 문�
 
 **Acrobat 및 Adobe Reader**
 
-Acrobat 또는 Adobe Reader이 문서 보안에서 서비스를 요청하면 다음 제품 정보를 제공합니다.
+Acrobat 또는 Adobe Reader이 문서 보안에서 서비스를 요청할 때 다음 제품 정보를 제공합니다.
 
 * **통합자:** Adobe Systems, Inc.
 * **통합자 버전:** 1.0

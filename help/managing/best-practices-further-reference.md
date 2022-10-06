@@ -1,8 +1,8 @@
 ---
 title: 검사 목록 - 추가 참조
-seo-title: 검사 목록 - 추가 참조
+seo-title: The Checklist - Further Reference
 description: 프로젝트 관리 - 우수 사례 검사 목록에서 다루는 문서 및 원칙을 상세하게 설명하고 보완하는 자세한 내용을 알아봅니다.
-seo-description: 프로젝트 관리 - 우수 사례 검사 목록에서 다루는 문서 및 원칙을 상세하게 설명하고 보완하는 자세한 내용을 알아봅니다.
+seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
 uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -12,63 +12,63 @@ discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3757'
 ht-degree: 2%
 
 ---
 
 # 검사 목록 - 추가 참조{#the-checklist-further-reference}
 
-이 페이지에서는 [프로젝트 관리 - 우수 사례 검사 목록](/help/managing/best-practices.md)에 의해 적용되는 문서 및 원칙을 상세히 설명하고 보완하기 위한 세부 정보를 제공합니다.
+이 페이지에서는 가 포함하는 문서 및 원칙을 상세하게 설명하고 보완할 수 있습니다 [프로젝트 관리 - 우수 사례 검사 목록](/help/managing/best-practices.md).
 
-## AEM - 무엇을 사용할 예정입니까?{#aem-what-will-you-be-using}
+## AEM - 무엇을 사용할 예정입니까? {#aem-what-will-you-be-using}
 
 >[!CAUTION]
 >
 >이 하위 섹션의 목록은 완벽하지는 않지만, 소개로 작성되었습니다.
 
-### AEM {#features-within-aem} 내의 기능
+### AEM의 기능 {#features-within-aem}
 
-AEM을 구현할 때(특히 처음) AEM](https://www.adobe.com/kr/marketing/experience-manager.html)의 [기능 및 워크플로우를 검토하여 필요한 영역을 확인해야 합니다.
+AEM을 구현할 때(특히 처음으로) [AEM 기능 및 워크플로우](https://www.adobe.com/kr/marketing/experience-manager.html) 필요한 영역을 확인합니다.
 
-사용할 AEM의 기능과 디자인에 미치는 영향을 고려해 보십시오.예:
+사용할 AEM의 기능과 디자인에 미치는 영향을 고려해 보십시오. 예:
 
 * [상거래](/help/commerce/cif-classic/administering/ecommerce.md)
 * [스크린](https://docs.adobe.com/content/help/ko-KR/experience-manager-screens/user-guide/aem-screens-introduction.html)
-* [자산](/help/assets/assets.md)
+* [에셋](/help/assets/assets.md)
 * [태그](/help/sites-administering/tags.md)
 * [다중 사이트 관리 및 번역](/help/sites-administering/msm-and-translation.md)
-* [양식](/help/forms/home.md)
+* [Forms](/help/forms/home.md)
 * [커뮤니티](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
-또한 AEM의 다양한 버전에서 [릴리스 노트](/help/release-notes/release-notes.md)를 확인하여 새로운 기능이 언제 추가되었는지 확인하십시오.
+또한 [릴리스 노트](/help/release-notes/release-notes.md)다양한 버전의 AEM에 대해 알아보십시오.
 
 ### 통합 {#integrations}
 
 AEM은 다른 Adobe 제품 및/또는 타사 서비스와 통합할 수 있습니다. 따라서 원하는 대로 성능과 기능을 향상시킬 수 있습니다.
 
-자세한 내용은 [솔루션 통합](/help/sites-administering/integration.md)을 참조하십시오.
+자세한 내용은 [솔루션 통합](/help/sites-administering/integration.md) 자세한 내용
 
-## 마이그레이션 또는 업그레이드?{#migrate-or-upgrade}
+## 마이그레이션 또는 업그레이드? {#migrate-or-upgrade}
 
-다음 중 하나를 선택해야 하는 경우가 가장 중요합니다.
+다음 중 어느 것을 원하는지에 대한 주요 고려 사항이 있습니다.
 
 * 기존 설치를 업그레이드합니다.
 * 컨텐츠를 현재 시스템에서 신규 설치로 마이그레이션합니다.
 
 이전 버전에서 현재 버전으로 이동할 때에는 다음 두 가지 옵션이 있습니다.
 
-* [패키지 관리자](/help/sites-administering/package-manager.md)를 사용하여 이전 시스템에서 새 시스템으로 모든 컨텐츠 및 응용 프로그램 코드를 내보냅니다.
-* [](/help/sites-deploying/upgrade.md) 이전 시스템을 즉시 업그레이드합니다. 대부분의 경우 이 옵션이 권장됩니다.
+* 를 사용하십시오 [패키지 관리자](/help/sites-administering/package-manager.md) 이전 시스템에서 새 시스템으로 모든 컨텐츠 및 애플리케이션 코드를 내보냅니다.
+* [업그레이드](/help/sites-deploying/upgrade.md) 기존 시스템. 대부분의 경우 이 옵션이 권장됩니다.
 
-## 기본 접지 규칙 {#basic-ground-rules}
+## 기본 기초 규칙 {#basic-ground-rules}
 
-어떤 프로젝트에서도 마찬가지로, 가능한 한 빨리 기본 원칙을 세우는 것이 중요하다. 이러한 쿠키에는 다음이 포함됩니다.
+어떤 프로젝트에서도 마찬가지로, 가능한 한 빨리 기본 원칙을 세우는 것이 중요하다. 여기에는 다음이 포함됩니다.
 
 >[!NOTE]
 >
->이러한 포인트는 일반적이며, [우수 사례 검사 목록](/help/managing/best-practices.md)은 AEM과 관련된 세부 사항을 처리합니다.
+>이 요점들은 일반적으로 [우수 사례 검사 목록](/help/managing/best-practices.md) AEM과 관련된 세부 사항을 처리합니다.
 
 * **역할**
 
@@ -83,7 +83,7 @@ AEM은 다른 Adobe 제품 및/또는 타사 서비스와 통합할 수 있습�
 
 * **참여**
 
-   가능한 한 빨리 이해관계자를 참여시켜 프로젝트 *이해관계자*&#x200B;가 되도록 유도하여 프로젝트 성공에 대한 헌신을 높일 수 있습니다.
+   가능한 한 빨리 관심 있는 사람들을 참여시킴으로써, 여러분은 그들이 되도록 격려할 수 있다 *이해* 그 프로젝트에서, 그들의 성공에 대한 헌신을 증가시킨다.
 
    * 고객 측면에는 작성자가 포함되어 있으며, 작성자는 매일 시스템과 작업해야 합니다.
    * 프로젝트 팀 내에 품질 보증을 담당하는 사람도 포함됩니다. 고객의 요구 사항을 더 잘 이해할수록 테스트를 계획할 수 있습니다.
@@ -96,12 +96,12 @@ AEM은 다른 Adobe 제품 및/또는 타사 서비스와 통합할 수 있습�
 
    정의할 프로세스는 개별 프로젝트에 따라 다릅니다. 다음 사항을 고려하여 이러한 간단한 작업을 다시 시도하십시오.
 
-   * 타사와 상호 작용할 프로세스(및 통신 경로) 정의예: 디자인 에이전시 및 기타 소프트웨어 공급업체
+   * 타사와 상호 작용할 프로세스(및 통신 경로) 정의 예: 디자인 에이전시 및 기타 소프트웨어 공급업체
    * 고객은 종종 고유한 프로젝트 관리 및 보고 절차 및 도구를 갖게 됩니다.
 
 * **추적 도구**
 
-   버그, 작업 및 프로젝트의 다른 측면에 대한 정보를 추적하는 데 사용할 수 있는 많은 도구가 있습니다. 자세한 내용은 [잠재적 도구 개요](#overview-of-potential-tools)를 참조하십시오.
+   버그, 작업 및 프로젝트의 다른 측면에 대한 정보를 추적하는 데 사용할 수 있는 다양한 도구가 있습니다. [잠재적 도구 개요](#overview-of-potential-tools) 자세한 내용
 
    * 여기에서 주목해야 할 핵심 사항은 정보의 한 복사본만 유지하고 정보를 공유하여 사용 중인 도구에 대한 액세스(따라서)하는 것입니다. 이를 통해 유지 관리가 용이하고 불일치를 방지할 수 있습니다.
 
@@ -111,8 +111,8 @@ AEM은 다른 Adobe 제품 및/또는 타사 서비스와 통합할 수 있습�
 
    * 개별 릴리스(반복 릴리스 프로세스가 사용되는 경우 고객에게 제공되는지 내부 테스트 팀에 제공되는지 여부에 상관없이)입니다.
    * AEM 프로젝트.
-   * 전체 프로젝트;타사 소프트웨어, 테스트에 미치는 영향, 조직 문제 및 기타 여러 가지 사항을 포함합니다.
-   * 특정 측면에서는 프로젝트 범위 내에 *이 아닌*&#x200B;를 지정하는 데에도 유용할 수 있습니다. 이것은 필수적인 문제로 제한되어야 하지만, 혼동 및 잘못된 가정을 방지하는 데 도움이 될 수 있습니다.
+   * 전체 프로젝트; 타사 소프트웨어, 테스트에 미치는 영향, 조직 문제 및 기타 여러 가지 사항을 포함합니다.
+   * 특정 측면에서는 또한 무엇이 무엇인지를 말하는 데 유용할 수 있습니다 *not* 프로젝트의 범위 내에서 이것은 필수적인 문제로 제한되어야 하지만, 혼동 및 잘못된 가정을 방지하는 데 도움이 될 수 있습니다.
 
 * **보고**
 
@@ -126,11 +126,11 @@ AEM은 다른 Adobe 제품 및/또는 타사 서비스와 통합할 수 있습�
 
    * 발생할 가정을 정의합니다.
 
-이 정보는 프로젝트 안내서 내에 정의할 수 있습니다.Wiki를 사용하면 진행 중인 변경 사항이 효율적으로 처리되도록 할 수도 있습니다. 이러한 속성이 정의될 때마다, 주요 요소는 다음과 같습니다.
+이 정보는 프로젝트 안내서 내에 정의할 수 있습니다. Wiki를 사용하면 진행 중인 변경 사항이 효율적으로 처리되도록 할 수도 있습니다. 이러한 속성이 정의될 때마다, 주요 요소는 다음과 같습니다.
 
 * 정보를 정의하고 유지 관리합니다
 * 관련된 모든 사람들에게 정보가 명확하게 전달된다. 표준 프로젝트 관리 방식이지만 명확한 역할 정의와 양호한 커뮤니케이션이 프로젝트를 수행 또는 중단시킬 만큼 자주 반복될 수는 없습니다.
-* 추적 중인 정보는 한 버전만 유지됩니다.예를 들어 버그 추적, 문제 추적 등이 있습니다.
+* 추적 중인 정보는 한 버전만 유지됩니다. 예를 들어 버그 추적, 문제 추적 등이 있습니다.
 
 ## 주요 성능 지표 및 Target 지표 {#key-performance-indicators-and-target-metrics}
 
@@ -152,22 +152,22 @@ AEM은 다른 Adobe 제품 및/또는 타사 서비스와 통합할 수 있습�
 
 ### Target 지표 {#target-metrics}
 
-지표는 웹 사이트의 품질에 대한 수량 측정을 정의하는 데 사용됩니다. 기본적으로 달성하려는 성능 목표에 대한 정의이며 [KPI(주요 성과 지표)](#key-performance-indicators-and-target-metrics)를 정의하는 데 사용할 수 있습니다.
+지표는 웹 사이트의 품질에 대한 수량 측정을 정의하는 데 사용됩니다. 측정 단위는 기본적으로 수행하려는 성능 목표의 정의이며, 을(를) 정의하는 데 사용할 수 있습니다 [KPI(주요 성과 지표)](#key-performance-indicators-and-target-metrics).
 
-많은 지표를 정의할 수 있지만, 자주 정의하는 지표는 성능 및 동시성에 대한 목표를 다룹니다. 특히, 정량화가 어려울 수 있고 종종 *감성* 평가를 받기 쉽습니다.
+많은 지표를 정의할 수 있지만, 자주 정의하는 지표는 성능 및 동시성에 대한 목표를 다룹니다. 특히, 수량화하기가 어렵고 종종 쉽게 할 수 있는 요소들 *감정* 평가:
 
-* &quot;우리 웹 사이트는 *너무 느리게*&#x200B;오늘&quot; - 언제 *느리게*&#x200B;가 적합합니까?
+* &quot;저희 웹사이트 *너무 느림* 오늘&quot; - 언제 이 *느린 속도* 자격이 있습니까?
 
-* &quot;내 동료가 로그인하면 모두 *모두 정지*&#x200B;로 분쇄됩니다.&quot; - 시스템에서 지원할 수 있는 동시 사용자 수는 몇 명입니까?
-* &quot;검색할 때 시스템 *이 halt* &quot;(으)로 분쇄됩니다. 어떤 종류의 검색 요청이 시스템에 영향을 줍니까?
-* &quot;파일을 다운로드하는 데 *페이지*&#x200B;가 소요됨&quot; - 허용되는 다운로드 시간(일반적인 네트워크 조건에서)은 얼마입니까?
+* &quot;모든 것&quot; *멈추기 위해 분쇄하다* 동료가 &quot; - 시스템에서 지원할 수 있는 동시 사용자는 몇 명입니까?
+* &quot;내가 검색하면, *멈추기 위해 분쇄하다* &quot; - 어떤 종류의 검색 요청이 시스템에 영향을 줍니까?
+* &quot;시간이 걸리는데 *나이* 파일을 다운로드하려면&quot; - 일반적인 네트워크 조건에서 다운로드 시간은 어떻게 됩니까?
 
 Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 
 * 제공할 웹 사이트의 예상 차원을 나타냅니다
 * 달성하려는 최소 품질을 나타냅니다.
 * 이러한 요소가 실제로 측정되는 방식을 정의합니다.
-* [주요 성능 지표](#key-performance-indicators-and-target-metrics)의 기초로 사용됩니다.
+* 를 [주요 성능 지표](#key-performance-indicators-and-target-metrics)
 
 타겟 지표를 정의할 때 항상 주의해야 하는 것처럼
 
@@ -181,17 +181,17 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 
 프로젝트를 개발할 때 적절히 업데이트 및 조정할 수 있습니다. 프로젝트가 성공적으로 구현되면 설치 및 지속적인 작업을 위한 필수 서비스 수준을 모니터링/관리하는 데 도움이 되는 데 사용할 수 있습니다.
 
-이러한 지표를 적절하게 사용하는 경우 유용한 도구를 제공할 수 있습니다.무책임하게 사용될 때 그들은 시간을 낭비할 수 있다. 늘 그렇듯이, 여러분은 여러분이 무엇을 측정하고 있는지, 어떻게 측정하고 있는지 그리고 그 이유를 이해할 필요가 있습니다.
+이러한 지표를 적절하게 사용하는 경우 유용한 도구를 제공할 수 있습니다. 무책임하게 사용될 때 그들은 시간을 낭비할 수 있다. 늘 그렇듯이, 여러분은 여러분이 무엇을 측정하고 있는지, 어떻게 측정하고 있는지 그리고 그 이유를 이해할 필요가 있습니다.
 
 >[!NOTE]
 >
 >이 섹션은 고려될 기본 원칙과 문제들을 다룰 것입니다. 각 설치마다 다르므로 측정할 실제 값은 달라집니다.
 
-### 모든 것은 프로젝트 디자인 {#everything-rests-on-your-project-design}에 있습니다
+### 모든 것은 프로젝트 디자인에 있습니다 {#everything-rests-on-your-project-design}
 
 측정할 모든 지표는 어떤 식으로 프로젝트의 디자인에 영향을 받습니다. 반대로, 많은 문제들은 디자인 변화에 의해 가장 잘 해결될 것이다.
 
-따라서 디자인을 결정하기 전에 *대상 지표를 정의해야 합니다.* 이를 통해 이러한 요소를 기반으로 디자인을 최적화할 수 있습니다. 프로젝트가 개발되면 기본 디자인 원칙을 변경하기가 어려울 것입니다.
+따라서 타겟 지표를 정의해야 합니다 *이전* 디자인을 결정하십시오. 이를 통해 이러한 요소를 기반으로 디자인을 최적화할 수 있습니다. 프로젝트가 개발되면 기본 디자인 원칙을 변경하기가 어려울 것입니다.
 
 웹 사이트의 구조를 만들 때 AEM 웹 사이트에 대해 권장되는 구조를 따르십시오. 다음 문제 및/또는 원칙을 이해하는지 확인하십시오.
 
@@ -208,8 +208,8 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 
 인프라를 정의하거나 평가하려면 다음과 같은 대상 값을 정의하는 데 도움이 됩니다.
 
-* 방문자/일평균과 피크 모두
-* 히트/일평균과 피크 모두
+* 방문자/일 평균과 피크 모두
+* 히트/일 평균과 피크 모두
 * 사용 가능한 웹 페이지 수
 * 웹 컨텐츠 볼륨
 
@@ -229,7 +229,7 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 
 * 검색 요청에 대한 응답 시간
 
-이 섹션은 [성능 최적화](/help/sites-deploying/configuring-performance.md)와 함께 읽을 수 있으며, 실제로 성능을 측정하는 기술 세부 사항을 확장합니다.
+이 섹션은 [성능 최적화](/help/sites-deploying/configuring-performance.md) 이렇게 하면 실제 성능을 측정하는 기술적인 세부 사항이 확장됩니다.
 
 #### 개별 페이지에 대한 응답 시간 {#response-times-for-individual-pages}
 
@@ -258,7 +258,7 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
       * 컨텐츠가 캐시됩니다
       * 로드 밸런싱이 적용됨
 
-#### 대상 응답 시간 {#setting-target-response-times} 설정
+#### 타겟 응답 시간 설정 {#setting-target-response-times}
 
 그렇다면 달성 가능한(평균) 응답 시간을 어떻게 결정할 수 있습니까? 이것은 종종 경험의 문제입니다.
 
@@ -279,14 +279,14 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 * 게시 시 측정(작성 환경 및/또는 CFC 오버헤드 없음)
 * 서버에서 측정됨(네트워크 오버헤드 없음)
 * 캐시되지 않음(AEM 출력 캐시 없음, Dispatcher 캐시 없음)
-* 종속성이 많은 복잡한 항목(HTML, JS, PDF, ...)에 대해서만 발생합니다.
+* 많은 종속성(HTML, JS, PDF, ...)이 있는 복잡한 항목에 대해서만
 * 시스템에 다른 로드 없음
 
 응답 시간을 모니터링하는 데 사용할 수 있는 몇 가지 메커니즘이 있습니다.
 
 * **AEM request.log를 사용하여 응답 시간 모니터링**
 
-   성능 분석을 위한 좋은 시작점은 요청 로그입니다. 다른 정보 중에서 이 정보를 사용하여 개별 요청의 응답 시간을 볼 수 있습니다. 자세한 내용은 [성능 최적화](/help/sites-deploying/configuring-performance.md) 를 참조하십시오.
+   성능 분석을 위한 좋은 시작점은 요청 로그입니다. 다른 정보 중에서 이 정보를 사용하여 개별 요청의 응답 시간을 볼 수 있습니다. 자세한 내용은 [성능 최적화](/help/sites-deploying/configuring-performance.md) 자세한 내용
 
 * **HTML 주석을 사용하여 응답 시간 모니터링**
 
@@ -312,21 +312,21 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 * 다른 목표에 비해 검색 사용 빈도에 대한 평가
 * 지속성 관리자
 * 검색 색인
-* 검색 기능의 복잡성검색 용어 1개만 입력할 수 있는 기본 검색 기능은 고급 검색보다 빠르게 AND/OR/NOT을 사용하여 복잡한 검색 문을 작성할 수 있습니다.
+* 검색 기능의 복잡성 검색 용어 1개만 입력할 수 있는 기본 검색 기능은 고급 검색보다 빠르게 AND/OR/NOT을 사용하여 복잡한 검색 문을 작성할 수 있습니다.
 
 프로젝트 처음부터 이러한 계획을 계획하고 통합해야 합니다. 모니터링할 수 있는 메커니즘은 다음과 같습니다.
 
 * **AEM request.log를 사용하여 검색 응답 시간 모니터링**
 
-   request.log를 사용하여 검색 요청에 대한 응답 시간을 모니터링할 수 있습니다.자세한 내용은 [성능 최적화](/help/sites-deploying/configuring-performance.md) 를 참조하십시오.
+   request.log를 사용하여 검색 요청에 대한 응답 시간을 모니터링할 수 있습니다. 참조 [성능 최적화](/help/sites-deploying/configuring-performance.md) 자세한 내용
 
 * **검색 응답 시간을 측정하기 위한 프로그램 메커니즘**
 
-   검색 요청 및 해당 성능에 대해 수집하는 정보를 사용자 지정하려면 프로젝트 소스 코드에 정보 수집을 포함하는 것이 좋습니다.자세한 내용은 [성능 최적화](/help/sites-deploying/configuring-performance.md) 를 참조하십시오.
+   검색 요청 및 해당 성능에 대해 수집하는 정보를 사용자 지정하려면 프로젝트 소스 코드에 정보 수집을 포함하는 것이 좋습니다. 참조 [성능 최적화](/help/sites-deploying/configuring-performance.md) 자세한 내용
 
 ### 동시 실행 {#concurrency}
 
-웹 사이트는 작성자와 게시 환경 모두에서 많은 사용자/방문자가 사용할 수 있게 됩니다. 테스트 시 사용한 것보다 숫자가 많기도 하지만 변화무쌍하고 예측하기도 어렵습니다. 성능에 부정적인 영향을 주지 않고 평균 동시 사용자/방문자 수를 위해 웹 사이트를 설계해야 합니다. 다시 `request.log`을 사용하여 동시성 테스트를 수행할 수 있습니다.자세한 내용은 [성능 최적화](/help/sites-deploying/configuring-performance.md) 를 참조하십시오.
+웹 사이트는 작성자와 게시 환경 모두에서 많은 사용자/방문자가 사용할 수 있게 됩니다. 테스트 시 사용한 것보다 숫자가 많기도 하지만 변화무쌍하고 예측하기도 어렵습니다. 성능에 부정적인 영향을 주지 않고 평균 동시 사용자/방문자 수를 위해 웹 사이트를 설계해야 합니다. 다시 `request.log` 동시성 테스트를 만드는 데 사용할 수 있습니다. 참조 [성능 최적화](/help/sites-deploying/configuring-performance.md) 자세한 내용
 
 동시 사용자 수에 대한 Target은 환경 유형에 따라 달라집니다.
 
@@ -358,7 +358,7 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
    |---|---|---|
    | 클라이언트 | 사용자 컴퓨터의 계산 능력. | 페이지 레이아웃의 복잡성입니다. |
    | 네트워크 | 네트워크 대역폭. | 페이지 크기(코드, 이미지 등)입니다. |
-   | Dispatcher 캐시 | 웹 서버의 서버 메모리(주 메모리 및 하드 드라이브). | 웹 서버(주 메모리 및 하드 드라이브). 캐시된 페이지의 수 및 크기입니다. |
+   | Dispatcher 캐시 | 웹 서버의 서버 메모리(주 메모리 및 하드 드라이브)입니다. | 웹 서버(주 메모리 및 하드 드라이브). 캐시된 페이지의 수 및 크기입니다. |
    | 출력 캐시 | AEM 서버의 서버 메모리(주 메모리 및 하드 드라이브). | 출력 캐시의 페이지 수 및 크기, 페이지당 종속성 수입니다. 디스패처 캐시가 이 볼륨을 낮춥니다. |
    | 웹 서버 | 웹 서버의 계산 능력. | 요청 금액입니다. 캐싱은 이 볼륨을 낮춥니다. |
    | 템플릿 | 웹 서버의 계산 능력. | 템플릿의 복잡성. |
@@ -374,9 +374,9 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 
 ## 보안 {#security}
 
-보안은 중요하고 점점 더 많은 도전이다. 이 ***은(는) 프로젝트의 가장 이른 단계에서 고려 및 계획되어야 합니다.***
+보안은 중요하고 점점 더 많은 도전이다. It ***반드시*** 프로젝트의 가장 빠른 단계에서 고려되고 계획됩니다.
 
-[보안 검사 목록](/help/sites-administering/security-checklist.md)에서는 배포 시 AEM 설치가 안전한지 확인하는 데 수행해야 하는 단계에 대해 자세히 설명합니다. 다른 보안 측면은 [보안(개발 시)](/help/sites-developing/security.md) 및 [사용자 관리 및 보안](/help/sites-administering/security.md)에서 다룹니다.
+다음 [Security 검사 목록](/help/sites-administering/security-checklist.md) 배포 시 AEM 설치가 안전한지 확인하는 데 수행해야 하는 자세한 절차. 다른 보안 측면들은 다음과 같습니다 [보안(개발 시)](/help/sites-developing/security.md) 및 [사용자 관리 및 보안](/help/sites-administering/security.md).
 
 ## 병렬 및 반복 작업 {#parallel-and-iterative-tasks}
 
@@ -384,20 +384,18 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 >
 >다음을 수행합니다.
 >
->* AEM 프로젝트의 *첫 번째* 구현과 관련된 개요를 제공합니다.
->* 요약 개요특정 단계/이정표/작업에 대해서는 [프로젝트 검사 목록](/help/managing/best-practices.md)을 참조하십시오.
+>* 와 관련된 개요를 제공합니다. *첫 번째* AEM 프로젝트 구현.
+>* 요약 개요 참조 [프로젝트 검사 목록](/help/managing/best-practices.md) 를 참조하십시오.
 >* 어떤 시간이든 이론적이죠.
-
 >
-
 
 
 표준 AEM 프로젝트를 새로 구현하려면 다음과 같은 작업을 고려해야 합니다.
 
 * 판매 프로세스에서 핸드오버입니다.
 * 고객 애플리케이션 구현(**개발**).
-* 고객 사이트에서 인프라(및 관련 프로세스)의 설치 및 구성(**인프라**)
-* 컨텐츠(**Content**)를 만들거나 마이그레이션합니다.
+* 고객 사이트에서 인프라(및 관련 프로세스)의 설치 및 구성(**인프라**).
+* 컨텐츠(**컨텐츠**).
 * 작업으로 핸드오버(**유지 관리/지원**).
 * 후속 릴리스.
 
@@ -409,11 +407,11 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 
 >[!NOTE]
 >
->프로젝트 시작을 **Soft Launch**(가용성 감소, 여러 반복) 및 **Hard Launch**(전체 가용성 - 라이브)로 분할하여 프로덕션 환경의 현실적인 조건에서 조정, 최적화 및 사용자 교육을 수행할 수 있습니다.
+>프로젝트 론치를 **소프트 론치** (가용성, 복수 반복 횟수 감소) 및 **하드 론치** (전체 가용성 - 라이브) 프로덕션 환경의 실제 조건에서 조정, 최적화 및 사용자 교육을 수행할 수 있습니다.
 
 >[!NOTE]
 >
->프로젝트의 수명 주기 동안 수행(또는 평가)해야 하는 작업의 예는 [프로젝트 검사 목록](/help/managing/best-practices.md)을 참조하십시오.
+>자세한 내용은 [프로젝트 검사 목록](/help/managing/best-practices.md) 프로젝트의 수명 주기 동안 수행해야 하는 작업의 예
 
 각 카테고리에 대한 일부 포인트는 다음과 같습니다.
 
@@ -439,9 +437,9 @@ Target 지표는 프로젝트를 시작할 때 다음과 같이 정의됩니다.
 
       * 성능 요구 사항을 정의합니다.
       * 성능 목표를 정의합니다(즉, 기대를 명확하게 정의).
-      * 하드웨어 및 인프라 아키텍처 정의크기 조정을 포함합니다.
+      * 하드웨어 및 인프라 아키텍처 정의 크기 조정을 포함합니다.
       * 배포를 정의합니다.
-   * 여러 반복 사용첫 번째 스프린트 및 초기 구성의 경우:
+   * 여러 반복 사용 첫 번째 스프린트 및 초기 구성의 경우:
 
       * 개발 환경.
       * 개발 프로세스.
@@ -526,13 +524,13 @@ AEM 아키텍처에 대한 템플릿 솔루션을 제공하기 위해 참조 아
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM 자체는 애플리케이션을 모니터링, 테스트, 조사 및 디버깅하는 데 도움이 되는 다양한 메커니즘을 제공합니다.다음을 포함합니다.</p>
+   <td><p>AEM 자체는 애플리케이션을 모니터링, 테스트, 조사 및 디버깅하는 데 도움이 되는 다양한 메커니즘을 제공합니다. 다음을 포함합니다.</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">개발자 모드</a></li>
-     <li><a href="/help/sites-developing/hobbes.md">테스트 콘솔</a></li>
+     <li>다음 <a href="/help/sites-developing/hobbes.md">테스트 콘솔</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">작업 대시보드</a></li>
      <li><a href="/help/sites-authoring/content-insights.md">컨텐츠 인사이트</a></li>
-     <li><a href="/help/sites-authoring/author-environment-tools.md#content-tree">컨텐츠 트리</a></li>
+     <li>다음 <a href="/help/sites-authoring/author-environment-tools.md#content-tree">컨텐츠 트리</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -541,36 +539,36 @@ AEM 아키텍처에 대한 템플릿 솔루션을 제공하기 위해 참조 아
   </tr>
   <tr>
    <td>셀레늄</td>
-   <td><a href="https://docs.seleniumhq.org/"></a> Seleniumis 오픈 소스 테스트 도구입니다. 테스트는 브라우저에서 직접 실행됩니다. 사용자가 작동하는 방식을 에뮬레이션합니다.</td>
+   <td><a href="https://docs.seleniumhq.org/">셀레늄</a> 는 오픈 소스 테스트 도구입니다. 테스트는 브라우저에서 직접 실행됩니다. 사용자가 작동하는 방식을 에뮬레이션합니다.</td>
   </tr>
   <tr>
-   <td>Microsoft Project</td>
+   <td>Microsoft 프로젝트</td>
    <td>일반적으로 사용되는 프로젝트 관리 도구입니다.</td>
   </tr>
   <tr>
    <td>지라</td>
-   <td><a href="https://www.atlassian.com/software/jira"></a> Jiraris 는 소프트웨어 버그의 세부 사항을 추적하고 관리하기 위한 오픈 소스 도구입니다. 워크플로우는 필요에 따라 버그 세부 사항에 적용할 수 있습니다.</td>
+   <td><a href="https://www.atlassian.com/software/jira">지라</a> 는 소프트웨어 버그의 세부 사항을 추적하고 관리하기 위한 오픈 소스 도구입니다. 워크플로우는 필요에 따라 버그 세부 사항에 적용할 수 있습니다.</td>
   </tr>
   <tr>
    <td>Git</td>
-   <td><a href="https://git-scm.com/"></a> 수정 제어 소프트웨어를 지정합니다.</td>
+   <td><a href="https://git-scm.com/">Git</a> 는 개정 제어 소프트웨어입니다.</td>
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse는 다양한 프로젝트로 구성된 오픈 소스 IDE입니다. 이들은 라이프사이클에서 소프트웨어를 구축, 배포 및 관리할 수 있는 확장 가능한 프레임워크, 도구 및 런타임으로 구성된 개방형 개발 플랫폼을 구축하는 데 중점을 두고 있습니다.</p> <p>자세한 내용은 <a href="/help/sites-developing/howto-projects-eclipse.md">Eclipse</a>를 사용하여 AEM 프로젝트를 개발하는 방법 을 참조하십시오.</p> </td>
+   <td><p>Eclipse는 다양한 프로젝트로 구성된 오픈 소스 IDE입니다. 이들은 라이프사이클에서 소프트웨어를 구축, 배포 및 관리할 수 있는 확장 가능한 프레임워크, 도구 및 런타임으로 구성된 개방형 개발 플랫폼을 구축하는 데 중점을 두고 있습니다.</p> <p>자세한 내용은 <a href="/help/sites-developing/howto-projects-eclipse.md">Eclipse를 사용하여 AEM 프로젝트를 개발하는 방법</a> 추가 정보.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>포괄적인 기능을 제공하는 전문(따라서 라이센스 비용에 대한 부담) IDE입니다. </p> <p>자세한 내용은 <a href="/help/sites-developing/ht-intellij.md">IntelliJ IDEA</a>를 사용하여 AEM 프로젝트를 개발하는 방법 을 참조하십시오.</p> </td>
+   <td><p>포괄적인 기능을 제공하는 전문(따라서 라이센스 비용에 대한 부담) IDE입니다. </p> <p>자세한 내용은 <a href="/help/sites-developing/ht-intellij.md">IntelliJ IDEA를 사용하여 AEM 프로젝트를 개발하는 방법</a> 추가 정보.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
-   <td><a href="https://maven.apache.org/"></a> Maven은 프로젝트의 빌드 프로세스(소프트웨어 및 설명서)를 관리할 수 있는 소프트웨어 프로젝트 관리 및 이해 도구입니다.</td>
+   <td><a href="https://maven.apache.org/">Maven</a> 는 프로젝트의 빌드 프로세스(소프트웨어 및 설명서)를 관리할 수 있는 소프트웨어 프로젝트 관리 및 이해 도구입니다.</td>
   </tr>
  </tbody>
 </table>
 
-## 추가 읽기 {#further-reading}
+## 추가 참조 {#further-reading}
 
 또한 다음 섹션은 특별히 관심이 있습니다.
 
@@ -578,7 +576,7 @@ AEM 아키텍처에 대한 템플릿 솔루션을 제공하기 위해 참조 아
 * [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
 * [인스턴스 모니터링 및 유지 관리](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### 우수 사례 {#best-practices}
+### 모범 사례 {#best-practices}
 
 Adobe은 모든 단계 및 대상에 대한 추가 우수 사례를 제공합니다.
 

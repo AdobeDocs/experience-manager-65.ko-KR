@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media의 액세스 가능성
+title: Dynamic Media에서의 접근성
 description: Dynamic Media 및 Dynamic Media Viewer의 접근성 지원에 대해 알아봅니다.
 contentOwner: Rick Brough
 topic-tags: introduction
@@ -10,11 +10,11 @@ exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 source-git-commit: 01de1d5064f5ebf00acd2fe9f138d852f41f7273
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 의 액세스 가능성 [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
+# [!DNL Dynamic Media]에서의 접근성  {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media] 는 작성 사용자 인터페이스에서 키보드 제어와 JAWS 및 NVDA 화면 판독기와 같은 보조 기술을 지원합니다.
 
@@ -69,5 +69,5 @@ Dynamic Media에서는 자막을 사용하여 비디오 및 응용 비디오 세
 >[!MORELIKETHIS]
 >
 >* [Adobe 솔루션에 대한 접근성](https://www.adobe.com/accessibility.html)
->* [의 액세스 가능성 [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
+>* [ [!DNL Experience Manager Assets]](/help/assets/accessibility.md)에서의 접근성
 

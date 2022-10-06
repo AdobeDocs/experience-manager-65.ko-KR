@@ -1,8 +1,8 @@
 ---
 title: 블로그 기능
-seo-title: 블로그 기능
+seo-title: Blog Feature
 description: 저널링 형식의 커뮤니티 정보
-seo-description: 저널링 형식의 커뮤니티 정보
+seo-description: Community information in a journaling format
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 6%
+source-wordcount: '1666'
+ht-degree: 7%
 
 ---
 
@@ -31,11 +31,11 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 * 블로그 문서와 댓글의 게시 측 작성
 * 리치 텍스트 편집
 * 인라인 이미지(드래그 앤 드롭을 지원)
-* 포함된 소셜 네트워킹 컨텐츠([포함 지원](/help/communities/blog-developer-basics.md#allowing-rich-media))
+* 포함된 소셜 네트워킹 콘텐츠([포함 지원](/help/communities/blog-developer-basics.md#allowing-rich-media))
 * 초안 모드
 * 예약된 게시
-* 대신 작성([권한이 있는 멤버](/help/communities/users.md#privileged-members-group)은(는) 다른 커뮤니티 구성원을 대신하여 컨텐츠를 만들 수 있음)
-* [블로그 문서와 ](/help/communities/moderate-ugc.md) 댓글의 컨텍스트 및 개요
+* 대신 작성(A) [권한 있는 멤버](/help/communities/users.md#privileged-members-group) 다른 커뮤니티 구성원을 대신하여 컨텐츠를 작성할 수 있음)
+* [컨텍스트 내 및 벌크 조정](/help/communities/moderate-ugc.md) 블로그 문서 및 댓글
 
 설명서의 이 섹션에서는 다음 사항에 대해 설명합니다.
 
@@ -44,7 +44,7 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 >[!NOTE]
 >
->구성 요소 `Journal` 및 `Journal Sidebar`의 제목은 `Blog` 및 `Blog Sidebar`입니다.
+>구성 요소 `Journal` 및 `Journal Sidebar` 제목이 지정됩니다. `Blog` 및 `Blog Sidebar`.
 >
 >AEM 6.0 및 이전 릴리스에 있는 블로그 기능이 이제 제거되었습니다. 이 템플릿은 템플릿을 기반으로 하며 작성자만 작성 환경에서 컨텐츠를 만들 수 있도록 했습니다.
 
@@ -57,15 +57,15 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 그리고 해당 블로그를 표시할 페이지에 해당 위치로 드래그합니다.
 
-필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md)을 방문하십시오.
+필요한 정보를 보려면 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md).
 
-필요한 [클라이언트 측 라이브러리](/help/communities/blog-developer-basics.md#essentials-for-client-side)가 포함된 경우 이 방법으로 `Blog` 구성 요소가 표시됩니다.
+이 [필수 클라이언트 측 라이브러리](/help/communities/blog-developer-basics.md#essentials-for-client-side) 포함된 경우, 다음과 같이 하십시오 `Blog` 구성 요소가 표시됩니다.
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### 블로그 구성 {#configuring-blog}
 
-액세스할 배치된 `Blog` 구성 요소를 선택하고 편집 대화 상자를 여는 `Configure` 아이콘을 선택합니다.
+배치된 항목을 선택합니다 `Blog` 액세스하여 선택할 구성 요소 `Configure` 아이콘 편집 대화 상자를 엽니다.
 
 ![구성](assets/configure-new.png)
 
@@ -73,7 +73,7 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 #### 설정 탭 {#settings-tab}
 
-**설정** 탭에서 블로그의 기본 기능 을 지정합니다.
+아래에 **설정** 탭에서 블로그의 기본 기능 을 지정합니다.
 
 * **첨부 파일 썸네일 허용**
 
@@ -135,7 +135,7 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 * **태깅 허용**
 
-   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다( **태그 필드** 탭 참조). 기본값은 선택 취소되어 있습니다.
+   이 확인란을 선택하면 구성원이 게시물에 태그 레이블을 추가할 수 있습니다( **태그 필드** 탭). 기본값은 선택 취소되어 있습니다.
 
 * **파일 업로드 허용**
 
@@ -143,11 +143,11 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 * **최대 파일 크기**
 
-   `Allow File Uploads`이(가) 선택된 경우에만 관련됩니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
+   관련성이 있는 경우에만 `Allow File Uploads` 이(가) 선택되어 있습니다. 이 필드는 업로드된 파일의 크기(바이트)를 제한합니다. 기본값은 104857600(10Mb)입니다.
 
 * **허용되는 파일 유형**
 
-   `Allow File Uploads`이(가) 선택된 경우에만 관련됩니다. 점이 구분되어 있는 쉼표로 구분된 파일 확장자 목록입니다. 예:.jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정하면, 지정되지 않은 파일 유형은 업로드할 수 없습니다. 기본값은 지정되지 않아서 모든 파일 유형이 허용됩니다.
+   관련성이 있는 경우에만 `Allow File Uploads` 이(가) 선택되어 있습니다. 점이 구분되어 있는 쉼표로 구분된 파일 확장자 목록입니다. 예: .jpg, .jpeg, .png, .doc, .docx, .pdf 파일 유형을 지정하면, 지정되지 않은 파일 유형은 업로드할 수 없습니다. 기본값은 지정되지 않아서 모든 파일 유형이 허용됩니다.
 
 * **이미지 첨부 파일 최대 크기**
 
@@ -167,21 +167,21 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 * **다음 허용**
 
-   이 확인란을 선택하면 구성원이 새 게시물의 [notified](/help/communities/notifications.md)가 될 수 있는 블로그 문서에 다음 기능을 포함하십시오. 기본값은 선택 취소되어 있습니다.
+   이 옵션을 선택하면 구성원이 게시될 수 있는 블로그 문서에 다음 기능을 포함하십시오 [알림](/help/communities/notifications.md) 새 게시물입니다. 기본값은 선택 취소되어 있습니다.
 
 * **이메일 구독 허용**
 
-   이 확인란을 선택하면 구성원이 이메일로 새 게시물에 대한 알림을 받을 수 있습니다([subscription](/help/communities/subscriptions.md)). `Allow Following`을(를) 선택해야 하고 [구성된 ](/help/communities/email.md)로 이메일을 보내야 합니다. 기본값은 선택 취소되어 있습니다.
+   이 확인란을 선택하면 구성원이 이메일로 새 게시물에 대한 알림을 받을 수 있습니다([구독](/help/communities/subscriptions.md)). 필요한 경우 `Allow Following` 확인 후 [전자 메일 구성](/help/communities/email.md). 기본값은 선택 취소되어 있습니다.
 
 * **배지 표시**
 
-   이 옵션을 선택하면 획득된 ID 및 할당된 [배지](/help/communities/implementing-scoring.md)를 구성원의 블로그 항목에 표시합니다. 기본값은 선택 취소되어 있습니다.
+   선택한 경우, 기한 및 지정된 항목을 표시합니다 [배지](/help/communities/implementing-scoring.md) 구성원의 블로그 항목 사용. 기본값은 선택 취소되어 있습니다.
 
 * **목록 페이지에서 답글 받지 않음**
 
 * **특별 포함된 컨텐츠 허용**
 
-   이 확인란을 선택하면 아이디어를 [중요 콘텐츠](/help/communities/featured.md)로 식별할 수 있습니다. 기본값은 선택 취소되어 있습니다.
+   이 옵션을 선택하면 [주요 콘텐츠](/help/communities/featured.md). 기본값은 선택 취소되어 있습니다.
 
 * **언급 활성화**
 
@@ -193,11 +193,11 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 * **UI 언급 패턴**
 
-   등록된 사용자를 게시물에 태그 지정(@mention)할 허용된 패턴 문자열을 지정합니다. 예: ~{{familyName}}{{givenName}}.
+   등록된 사용자를 게시물에 태그 지정(@mention)할 허용된 패턴 문자열을 지정합니다. 예 ~{{familyName}}{{givenName}}.
 
 #### 사용자 중재 탭 {#user-moderation-tab}
 
-**사용자 중재** 탭에서 중재 설정을 지정합니다.
+아래에 **사용자 중재** 탭에서 중재 설정 을 지정합니다.
 
 * **게시물 거부**
 
@@ -229,11 +229,11 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 #### 태그 필드 탭 {#tag-field-tab}
 
-**태그 필드** 탭 아래에 **설정** 탭에서 **태깅 허용**&#x200B;이 확인될 경우 적용할 태그를 지정합니다.
+아래에 **태그 필드** 탭에서 적용할 태그를 지정합니다 **태깅 허용** 이(가) **설정** 탭 :
 
 * **허용되는 네임스페이스**
 
-   **설정** 탭 아래에서 `Allow Tagging`이(가) 선택된 경우에 관련됩니다. 적용할 수 있는 태그는 선택한 네임스페이스 카테고리 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값이 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
+   관련 있는 경우 `Allow Tagging` 이(가) **설정** 탭. 적용할 수 있는 태그는 선택한 네임스페이스 카테고리 내의 태그로 제한됩니다. 네임스페이스 목록에는 &quot;표준 태그&quot;(기본 네임스페이스)와 &quot;모든 태그 포함&quot;이 포함되어 있습니다. 기본값이 선택되어 있지 않으므로 모든 네임스페이스가 허용됩니다.
 
 * **제안 한도**
 
@@ -241,9 +241,9 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 ### 블로그 사이드바 구성 {#configuring-blog-sidebar}
 
-`Blog Sidebar` 구성 요소를 두 번 클릭하면 편집 대화 상자가 열립니다.
+를 두 번 클릭하면 `Blog Sidebar` 구성 요소로, 편집 대화 상자가 열립니다.
 
-**저널 사이드바 설정** 탭에서 아카이브의 날짜 형식과 사이드바에 표시할 항목 유형을 지정합니다.
+아래에 **저널 사이드바 설정** 탭에서 아카이브의 날짜 형식과 사이드바에서 표시할 항목 유형을 지정합니다.
 
 ![블로그 구성 요소 사이드바](assets/blog-component-sidebar.png)
 
@@ -251,11 +251,11 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
    블로그 항목 보관에 표시하는 데 사용되는 형식입니다. 형식은 Java 규칙 다음에 오는 자리 표시자를 사용합니다.
 
-   * yyyy :&#39;2015&#39;와 같은 일년
-   * yy :&#39;15&#39;처럼 짧은 해
-   * MMMMM :6월처럼 한 달
-   * MMM :6월처럼 짧은 달
-   * MM :월 번호(예: 06)
+   * yyyy : &#39;2015&#39;와 같은 일년
+   * yy : &#39;15&#39;처럼 짧은 해
+   * MMMMM : 6월처럼 한 달
+   * MMM : 6월처럼 짧은 달
+   * MM : 월 번호(예: 06)
 
    기본값은 &quot;yyyy MMMMM&quot;이며, 예를 들어 &quot;2015년 6월&quot;이 표시됩니다
 
@@ -264,12 +264,12 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
    사이드바에 표시할 블로그 항목의 제목 및 유형입니다. 다음 중 하나를 선택합니다
 
    * 작성자
-   * 카테고리
+   * 범주
    * 아카이브
 
 * **Blopg 구성 요소 경로**
 
-   *(선택 사항)* 블로그 문서가 나열될 블로그 리소스의 위치입니다. 비워 두면 에서는 동일한 페이지에 나타나는 resourceType `social/journal/components/hbs/journal` 구성 요소를 사용합니다.
+   *(선택 사항)* 블로그 문서가 나열될 블로그 리소스의 위치입니다. 비워 두면 resourceType의 구성 요소를 사용합니다 `social/journal/components/hbs/journal` 같은 페이지에 표시됩니다.
 
    * 예, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -287,7 +287,7 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 기타 기능은 사이트 방문자가 중재자, 관리자, 커뮤니티 구성원, 권한이 있는 구성원 또는 익명 구성원인지 여부에 따라 다릅니다.
 
-### 문서 {#working-with-articles} 작업
+### 문서 작업 {#working-with-articles}
 
 새 블로그 문서를 만들 때 다음 항목을 선택할 수 있습니다.
 
@@ -299,13 +299,13 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 #### 중재자 및 관리자 {#moderators-and-administrators}
 
-로그인한 사용자에게 중재자 또는 관리자 권한이 있으면 블로그에 게시된 모든 블로그 문서와 댓글에 대해 [조정 작업](/help/communities/moderate-ugc.md)(구성 요소의 구성에서 허용하는 경우)을 수행할 수 있습니다.
+로그인한 사용자에게 중재자 또는 관리자 권한이 있는 경우 다음을 수행할 수 있습니다 [조정 작업](/help/communities/moderate-ugc.md) (구성 요소 구성에서 허용하는 경우) 모든 블로그 문서와 블로그에 게시된 댓글에 대해 지정합니다.
 
 ![조정자 홈페이지](assets/moderator-homepage.png)
 
 #### 구성원 {#members}
 
-로그인한 사용자가 커뮤니티 구성원이거나 [권한이 있는 구성원](/help/communities/users.md#privileged-members-group)(구성에 따라 다름)인 경우, `New Article` 를 선택하여 새 블로그 문서를 만들고 게시할 수 있습니다.
+로그인한 사용자가 커뮤니티 멤버이거나 [권한 있는 멤버](/help/communities/users.md#privileged-members-group) (구성에 따라) `New Article` 새 블로그 문서를 만들고 게시하기 위해
 
 특히 다음 작업을 수행할 수 있습니다.
 
@@ -328,10 +328,10 @@ AEM Communities의 블로그 기능은 작성 활동에서 게시 환경에서 �
 
 ## 추가 정보 {#additional-information}
 
-개발자를 위한 [블로그 필수 패키지](/help/communities/blog-developer-basics.md) 페이지에서 자세한 정보를 찾을 수 있습니다.
+자세한 내용은 [블로그 핵심 사항](/help/communities/blog-developer-basics.md) 개발자를 위한 페이지입니다.
 
-블로그 항목 및 댓글에 대한 중복을 보려면 [사용자 생성 콘텐츠 중재](/help/communities/moderate-ugc.md)를 참조하십시오.
+블로그 항목 및 댓글의 조정에 대해서는 [사용자가 생성한 컨텐츠 중재](/help/communities/moderate-ugc.md).
 
-블로그 항목 및 댓글에 태깅하려면 [사용자 생성 컨텐츠 태깅](/help/communities/tag-ugc.md)을 참조하십시오.
+블로그 항목 및 댓글에 태깅하려면 다음을 참조하십시오 [사용자 생성 컨텐츠에 태깅](/help/communities/tag-ugc.md).
 
-블로그 항목 및 댓글에 대한 번역은 [사용자 생성 컨텐츠 번역](/help/communities/translate-ugc.md)을 참조하십시오.
+블로그 항목 및 댓글 번역에 대해서는 [사용자가 생성한 컨텐츠 번역](/help/communities/translate-ugc.md).

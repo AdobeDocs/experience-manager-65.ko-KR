@@ -1,33 +1,33 @@
 ---
 title: 적응형 양식의 스타일 지정 구문
-seo-title: 적응형 양식의 스타일 지정 구문
+seo-title: Styling constructs for adaptive forms
 description: 적응형 양식의 모양을 사용자 지정하려면 LESS 프레임워크를 사용하십시오.
-seo-description: 적응형 양식의 모양을 사용자 지정하려면 LESS 프레임워크를 사용하십시오.
+seo-description: Use LESS framework to customize appearance of adaptive forms.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-feature: 적응형 양식
+feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2308'
 ht-degree: 3%
 
 ---
 
-# 적응형 양식에 대한 스타일 지정 구문{#styling-constructs-for-adaptive-forms}
+# 적응형 양식의 스타일 지정 구문{#styling-constructs-for-adaptive-forms}
 
-## 전제 조건 {#prerequisites}
+## 사전 요구 사항 {#prerequisites}
 
 CSS 및 LESS 프레임워크에 대한 지식.
 
-## {#what-can-be-customized} 사용자 지정할 수 있는 항목
+## 사용자 지정할 수 있는 항목 {#what-can-be-customized}
 
-이 문서에는 응용 양식의 공개적으로 사용 가능한 css 클래스가 나열됩니다. 이러한 클래스를 활용하여 적응형 양식의 다양한 구성 요소에 스타일을 지정할 수 있습니다. 경고를 표시하는 대화 상자 및 상태 표시줄과 같은 작성 구성 요소의 스타일이 이 문서의 범위를 벗어납니다. [테마 편집기](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)를 사용하여 구성 요소의 스타일을 지정할 수 없는 경우에만 이러한 스타일 구문을 사용하여 스타일(CSS 또는 Less 사용)을 만들 수 있습니다.
+이 문서에는 응용 양식의 공개적으로 사용 가능한 css 클래스가 나열됩니다. 이러한 클래스를 활용하여 적응형 양식의 다양한 구성 요소에 스타일을 지정할 수 있습니다. 경고를 표시하는 대화 상자 및 상태 표시줄과 같은 작성 구성 요소의 스타일이 이 문서의 범위를 벗어납니다. 다음 스타일 구문을 사용하여 구성 요소의 스타일을 지정할 수 없는 경우에만 스타일(CSS 또는 Less 사용)을 만듭니다 [테마 편집기](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
-## 적응형 양식에서 스타일 사용자 지정 {#customizing-styles-in-adaptive-forms}
+## 적응형 양식의 스타일 사용자 지정 {#customizing-styles-in-adaptive-forms}
 
 LESS 프레임워크는 사용 사례를 단순화하여 적응형 양식의 스타일을 사용자 지정합니다. 프레임워크를 사용하면 변수 및 함수(mixin) 세트를 사용하여 스타일을 정의할 수 있습니다. LESS 프레임워크는 번들로 제공되는 코드의 크기를 줄이고 재사용 가능성을 높이는 데 도움이 됩니다.
 
@@ -36,7 +36,7 @@ LESS 프레임워크는 사용 사례를 단순화하여 적응형 양식의 스
 * 테마 변경
 * 구성 요소의 스타일 변경
 
-## 테마 {#changing-theme} 변경
+## 테마 변경 {#changing-theme}
 
 적응형 양식의 테마를 변경하여 적응형 양식이 포함된 웹 페이지와 모양이 일치하는지 확인할 수 있습니다.
 
@@ -54,7 +54,7 @@ CSS 속성을 사용하는 적응형 양식의 전체 모양 변경 사항은 �
 
 현재 LESS 변수는 적응형 양식에 있는 다양한 요소의 이러한 속성에 대해서만 정의됩니다.
 
-## 구성 요소 스타일 {#changing-component-style} 변경
+## 구성 요소 스타일 변경 {#changing-component-style}
 
 요소의 모양, 레이아웃, 위치 지정 및 가시성을 변경할 수 있습니다. 이 작업을 수행하려면 이 문서에 나열된 스타일 구문을 포함하도록 사용자 지정 .css 파일을 만들거나 업데이트하십시오.
 
@@ -104,7 +104,7 @@ CSS 속성을 사용하는 적응형 양식의 전체 모양 변경 사항은 �
 
 ## 필드 스타일링 {#field-styling}
 
-적응형 양식에는 다양한 유형의 필드가 포함됩니다. 각 필드에는 고유한 클래스 이름(필드의 이름)이 있습니다. 필드에 공통 클래스 이름 `guideFieldNode`도 있습니다.
+적응형 양식에는 다양한 유형의 필드가 포함됩니다. 각 필드에는 고유한 클래스 이름(필드의 이름)이 있습니다. 필드에 공통 클래스 이름도 있습니다 `guideFieldNode`.
 
 필드에는 레이블, 위젯, 도움말 설명(긴 설명과 짧은 설명 모두) 및 필드 도움말 아이콘(물음표)이 포함됩니다.
 
@@ -138,9 +138,9 @@ CSS 속성을 사용하는 적응형 양식의 전체 모양 변경 사항은 �
  </tbody>
 </table>
 
-## 레이블 스타일링 {#label-styling}
+## 레이블 스타일 지정 {#label-styling}
 
-필드에 사용되는 HTML 요소 **label**&#x200B;에는 레이블이 맨 위에 있는지 왼쪽에 있는지 여부에 따라 **left** 또는 **top**&#x200B;이 포함됩니다.
+HTML 요소 **레이블** 필드에 사용되는 클래스에는 **왼쪽** 또는 **상단** 레이블이 맨 위에 있는지 아니면 왼쪽에 있는지에 따라 다릅니다.
 
 <table>
  <tbody>
@@ -180,11 +180,11 @@ CSS 속성을 사용하는 적응형 양식의 전체 모양 변경 사항은 �
  </tbody>
 </table>
 
-레이블의 CSS 규칙은 **guideFieldLabel** 레이블을 사용하여 적용됩니다. 작성자인 경우 이 규칙을 무시하여 사용자 지정 변경 사항을 표시할 수 있습니다.
+레이블에 대한 CSS 규칙은 **guideFieldLabel** 레이블. 작성자인 경우 이 규칙을 무시하여 사용자 지정 변경 사항을 표시할 수 있습니다.
 
-## 위젯 스타일 {#widgets-styling}
+## 위젯 스타일링 {#widgets-styling}
 
-위젯은 유형에 따라 클래스도 포함합니다. 일반적으로 위젯에는 `guideFieldWidget` 클래스가 포함됩니다. HTML과 함께 제공되는 위젯은 일반적으로 표준 HTML 요소 입력을 사용하고 을 선택합니다. 스타일링이 그에 따라 수행됩니다. 변수를 변경하여 사용자 지정 위젯의 스타일을 지정할 수 없습니다.
+위젯은 유형에 따라 클래스도 포함합니다. 일반적으로 위젯에는 `guideFieldWidget` 클래스 이름을 지정합니다. 일반적으로 HTML과 함께 제공되는 위젯은 표준 HTML 요소 입력을 사용하고 을 선택합니다. 스타일링이 그에 따라 수행됩니다. 변수를 변경하여 사용자 지정 위젯의 스타일을 지정할 수 없습니다.
 
 <table>
  <tbody>
@@ -284,13 +284,13 @@ CSS 속성을 사용하는 적응형 양식의 전체 모양 변경 사항은 �
  </tbody>
 </table>
 
-### 위젯 스타일링 {#limitations-in-widget-styling} 의 제한 사항
+### 위젯 스타일링 제한 사항 {#limitations-in-widget-styling}
 
 집중, 필수 및 비활성화 필드의 스타일링은 변수를 사용하여 제한됩니다. 그러나 스타일을 재정의하여 변경할 수 있습니다. 변수를 사용하는 제한 사항은 주로 변수 수를 확인하기 위해 제공됩니다. 이전에 논의한 주 중 하나에 있기 때문에 필드의 모양이 크게 변경되면 제한이 완화될 수 있습니다.
 
 ## 도움말 설명 {#help-description}
 
-작성자는 짧은 설명 및 긴 설명 구성 요소를 사용하여 필드에 도움말 컨텐츠를 지정할 수 있습니다. 두 구성 요소 모두 설명 유형에 따라 공통 클래스 `.guideHelpDescription` 및 다른 클래스 `.long`/ `.short`가 있습니다. 설명 스타일을 재정의하기 위해 도움말 컨텐츠가 단락 요소로 묶입니다. 다음 표에 설명된 대로 도움말 설명(길고 짧은)은 위젯으로 시작하는 변수를 사용하여 수정됩니다.
+작성자는 짧은 설명 및 긴 설명 구성 요소를 사용하여 필드에 도움말 컨텐츠를 지정할 수 있습니다. 두 구성 요소 모두 공통 클래스를 가집니다 `.guideHelpDescription` 다른 클래스 `.long`/ `.short`, 설명 유형에 따라 달라집니다. 설명 스타일을 재정의하기 위해 도움말 컨텐츠가 단락 요소로 묶입니다. 다음 표에 설명된 대로 도움말 설명(길고 짧은)은 위젯으로 시작하는 변수를 사용하여 수정됩니다.
 
 <table>
  <tbody>
@@ -331,7 +331,7 @@ CSS 속성을 사용하는 적응형 양식의 전체 모양 변경 사항은 �
 
 ## 사용 약관 {#terms-and-conditions}
 
-사용 약관(TnC `` ``) 위젯을 사용하면 사용 조건을 지정할 수 있습니다. 다음 표에 설명된 변수를 사용하여 위젯을 사용자 지정할 수 있습니다.
+약관(TnC) `` ``) 위젯을 사용하면 조건을 지정할 수 있습니다. 다음 표에 설명된 변수를 사용하여 위젯을 사용자 지정할 수 있습니다.
 
 <table>
  <tbody>
@@ -350,11 +350,11 @@ CSS 속성을 사용하는 적응형 양식의 전체 모양 변경 사항은 �
  </tbody>
 </table>
 
-## 단추 {#button}
+## 버튼 {#button}
 
 버튼도 위젯입니다. 그러나 위젯과 스타일이 약간 다릅니다. 적응형 양식에서 다음 중 어느 하나가 버튼을 구성합니다.
 
-* input[type = text]
+* 입력[type = text]
 * 단추
 * class.button이 있는 요소
 
@@ -520,7 +520,7 @@ CSS 속성을 사용하는 적응형 양식의 전체 모양 변경 사항은 �
   </tr>
   <tr>
    <td><p><code>table-header-bg-color</code></p> </td>
-   <td><p>머리글 행의 배경색입니다. 기본값은 <code>#333</code>.<br />입니다. </p> </td>
+   <td><p>머리글 행의 배경색입니다. 기본값은 <code>#333</code>입니다.<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>table-odd-row-bg-color</code></p> </td>
@@ -641,7 +641,7 @@ CSS 속성을 사용하는 적응형 양식의 전체 모양 변경 사항은 �
 
 `</div>`
 
-**하위** 선택기를 사용하여 요소를 선택하는 CSS 규칙을 사용하여 탐색기의 스타일을 변경할 수 있습니다. 예를 들어 앵커 태그에 텍스트 장식 스타일을 추가하려면 다음을 수행합니다.
+을 사용하여 요소를 선택하는 CSS 규칙을 사용하여 네비게이터의 스타일을 변경할 수 있습니다 **하위 항목** 선택기를 사용합니다. 예를 들어 앵커 태그에 텍스트 장식 스타일을 추가하려면 다음을 수행합니다.
 
 맨 위에 있는 탭 탐색기:
 
@@ -721,7 +721,7 @@ guideNavIcon 클래스는 탭 탐색자(왼쪽 및 상단 모두)와 마법사 �
 
 >[!NOTE]
 >
->작성의 패널에 CSS 클래스를 제공하여 특정 탐색기의 아이콘을 변경할 수 있습니다(예: &lt;CLASS_NAME> ). 탐색기의 아이콘에 **&lt;CLASS_NAME>_nav**&#x200B;을 추가합니다.
+>작성의 패널에 CSS 클래스를 제공하여 특정 탐색기의 아이콘을 변경할 수 있습니다. 예를 들면 다음과 같습니다 &lt;class_name>. 을(를) 추가합니다 **&lt;class_name>_nav** 네비게이터의 아이콘에 사용됩니다.
 
 <table>
  <tbody>
@@ -942,7 +942,7 @@ guideNavIcon 클래스는 탭 탐색자(왼쪽 및 상단 모두)와 마법사 �
  </tbody>
 </table>
 
-패널 노드는 탐색자와 컨텐츠로 구분됩니다. 컨텐츠에 대한 별도의 스타일 구성 요소가 `` ``에 없습니다. 설명된 변수는 컨텐츠뿐만 아니라 네비게이터에 적용됩니다.
+패널 노드는 탐색자와 컨텐츠로 구분됩니다. 저기 `` `` 컨텐츠에 대해 별도의 스타일 구성 요소가 없습니다. 설명된 변수는 컨텐츠뿐만 아니라 네비게이터에 적용됩니다.
 
 맨 위 패널(RootPanel)에 이 클래스가 없습니다.
 
@@ -1020,7 +1020,7 @@ guideNavIcon 클래스는 탭 탐색자(왼쪽 및 상단 모두)와 마법사 �
  </tbody>
 </table>
 
-## 모바일 고정 도구 모음 레이아웃 관련 변수 {#mobile-fixed-toolbar-layout-specific-variables}
+## 모바일 고정 도구 모음 레이아웃별 변수 {#mobile-fixed-toolbar-layout-specific-variables}
 
 다음 표의 이러한 변수는 모바일 고정 도구 모음 레이아웃에 영향을 줍니다.
 
@@ -1076,7 +1076,7 @@ guideNavIcon 클래스는 탭 탐색자(왼쪽 및 상단 모두)와 마법사 �
 
 ## 테마별 변수 {#theme-specific-variable}
 
-/etc/clientlibs/fd/af/guidetoma/simpleEncoding의 **단순 등록** 테마 및 `guide.theme.simpleEnrollment` 카테고리도 몇 가지 변수를 도입합니다. 간단한 등록을 향상하는 테마를 만들려면 다음 &quot;추가 변수&quot;를 사용할 수 있습니다.
+다음 **단순 등록** /etc/clientlibs/fd/af/guidetermination/simpleEncosions 및 카테고리의 테마 `guide.theme.simpleEnrollment` 또한 몇 가지 변수를 도입합니다. 간단한 등록을 향상하는 테마를 만들려면 다음 &quot;추가 변수&quot;를 사용할 수 있습니다.
 
 <table>
  <tbody>

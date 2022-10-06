@@ -1,8 +1,8 @@
 ---
 title: IBM Content Manager용 커넥터 구성
-seo-title: IBM Content Manager용 커넥터 구성
+seo-title: Configuring Connector for IBM Content Manager
 description: AEM Forms와 IBM Content Manager 간에 통신할 수 있도록 IBM Content Manager용 커넥터를 구성합니다.
-seo-description: AEM Forms와 IBM Content Manager 간에 통신할 수 있도록 IBM Content Manager용 커넥터를 구성합니다.
+seo-description: Configure the Connector for IBM Content Manager to enable communication between AEM forms and IBM Content Manager.
 uuid: 3d55169d-93e3-4d4e-b18b-2a3394e1de3b
 contentOwner: admin
 content-type: reference
@@ -12,18 +12,18 @@ discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
 exl-id: 50f0c963-8007-4e2a-aa73-d99b97d9a1aa
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
 # IBM Content Manager용 커넥터 구성{#configuring-connector-for-ibm-content-manager}
 
-Connector for IBM Content Manager를 사용하면 AEM Forms와 IBM Content Manager 간의 통신이 가능합니다. 자세한 배경 정보는 [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63)에서 &quot;Connectors for ECM&quot;을 참조하십시오.
+IBM Content Manager용 커넥터를 사용하면 AEM Forms와 IBM Content Manager 간에 통신할 수 있습니다. 자세한 배경 정보는 의 &quot;Connectors for ECM&quot;을 참조하십시오. [서비스 참조](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## IBM Content Manager 연결 구성 {#configure-the-ibm-content-manager-connection}
 
-1. 관리 콘솔에서 서비스 > IBM Content Manager용 커넥터를 클릭합니다.
+1. 관리 콘솔에서 서비스 > IBM Content Manager용 커넥터 를 클릭합니다.
 1. 데이터 저장소 이름 상자에 연결할 IBM Content Manager 데이터 저장소의 이름을 입력합니다. 데이터베이스가 로컬인 경우 데이터베이스 이름을 입력합니다. 데이터베이스가 원격인 경우 해당 별칭 이름을 입력합니다.
 1. 사용자 이름 상자에 IBM Content Manager 데이터 저장소에 연결할 사용자의 사용자 ID를 입력합니다.
 1. 암호 상자에 사용자의 암호를 입력합니다.

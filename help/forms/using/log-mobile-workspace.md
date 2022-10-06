@@ -1,8 +1,8 @@
 ---
 title: AEM Forms 앱에 로그인
-seo-title: AEM Forms 앱에 로그인
+seo-title: Logging in to AEM Forms app
 description: AEM Forms 앱에 로그인하는 절차.
-seo-description: AEM Forms 앱에 로그인하는 절차.
+seo-description: Steps to log into the AEM Forms app.
 uuid: da8cb0b2-6333-4ead-95f2-fb753149dc5e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,7 +12,7 @@ docset: aem65
 exl-id: d19cba33-0646-40d4-b4a3-b28d6db4a1f3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ AEM Forms 앱을 시작할 때 먼저 로그인 자격 증명과 AEM Forms 서�
    >    * 앱을 통해 로그인할 AEM Forms 서버 URL을 선택할 수 있습니다.
 
 
-앱에 로그인하면 [**홈** 화면](../../forms/using/home-screen.md)으로 이동됩니다.
+앱에 로그인하면 로 이동됩니다 [**홈** screen](../../forms/using/home-screen.md).
 
 >[!NOTE]
 >

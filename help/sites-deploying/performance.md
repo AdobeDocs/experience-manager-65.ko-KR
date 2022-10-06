@@ -1,8 +1,8 @@
 ---
 title: 성능 및 확장성
-seo-title: 성능 및 확장성
+seo-title: Performance & Scalability
 description: 이 백서에서는 성능 지표 및 재해 복구 기능과 함께 AEM에 확장성을 구축하는 방법을 설명합니다.
-seo-description: 이 백서에서는 성능 지표 및 재해 복구 기능과 함께 AEM에 확장성을 구축하는 방법을 설명합니다.
+seo-description: This white paper discusses the ways scalability has been built into AEM along with performance indicators and disaster recovery features.
 uuid: 709ed651-534d-4b80-8f9b-ac99669f6f61
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,14 +12,14 @@ discoiquuid: c64fa860-92ef-4b47-a779-1e7d8ac56e16
 exl-id: d68a3219-5d2c-4150-9b9c-b9fb1e815bad
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '72'
 ht-degree: 2%
 
 ---
 
 # 성능 및 확장성{#performance-scalability}
 
-## 백서:AEM 확장성, 성능 및 재해 복구 {#white-paper-aem-scalability-performance-and-disaster-recovery}
+## 백서: AEM 확장성, 성능 및 재해 복구 {#white-paper-aem-scalability-performance-and-disaster-recovery}
 
 이 백서에서는 뛰어난 성능 지표와 뛰어난 재해 복구 기능과 함께 Adobe Experience Manager에 확장성이 구현된 방법에 대해 설명합니다.
 

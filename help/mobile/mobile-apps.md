@@ -1,8 +1,8 @@
 ---
 title: 모바일 앱
-seo-title: 모바일 앱
-description: '"Mobile-Apps"'
-seo-description: 'null'
+seo-title: Mobile-Apps
+description: "Mobile-Apps"
+seo-description: null
 uuid: 4a91241e-8c78-42fe-a5d3-732a6c34cbfd
 contentOwner: msm-service
 content-type: reference
@@ -11,12 +11,12 @@ discoiquuid: eda55579-4140-477b-b4d0-a87d14ec3237
 exl-id: 0a98881d-08f3-47e7-bae1-5500d1fe6514
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 2%
+source-wordcount: '118'
+ht-degree: 1%
 
 ---
 
-# Mobile-Apps{#mobile-apps}
+# 모바일 앱{#mobile-apps}
 
 >[!NOTE]
 >
@@ -31,4 +31,4 @@ AEM Mobile에서는 앱을 만드는 여러 방법을 제공합니다. 앱을 �
 
 >[!NOTE]
 >
->Adobe Experience Manager을 처음 사용하는 경우 [AEM 시작하기](/help/sites-deploying/deploy.md)를 살펴볼 수 있습니다.
+>Adobe Experience Manager을 처음 사용하는 경우 다음을 살펴볼 수 있습니다 [AEM 시작하기](/help/sites-deploying/deploy.md).

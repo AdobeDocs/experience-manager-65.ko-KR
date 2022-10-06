@@ -50,7 +50,7 @@ The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stocken
 
 **전제 조건**
 
-통합에는 다음이 필요합니다.
+통합하려면 다음 작업을 수행해야 합니다.
 
 * An [enterprise [!DNL Adobe Stock] 계획](https://stockenterprise.adobe.com/)
 * 기본 Stock 제품 프로필에 대한 Admin Console 권한이 있는 사용자
@@ -219,7 +219,7 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
-1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
    사용자 [!DNL Experience Manager Assets] 이제 작성자 인스턴스가 [!DNL Adobe Stock]. 여러 항목을 만들 수 있습니다 [!DNL Adobe Stock] 구성(예: 로케일 기반 구성) 이제 액세스, 검색 및 라이선스를 제공할 수 있습니다 [!DNL Adobe Stock] 내 자산 [!DNL Experience Manager] 사용자 인터페이스.
 
@@ -266,7 +266,7 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
 1. 다음으로 이동 **[!UICONTROL 도구]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. 을(를) 선택합니다 [!DNL Adobe Stock] 클라우드 구성 을 클릭하고 **[!UICONTROL 속성]**.
 
-1. 새로 만든 사용자 그룹을 [!DNL Adobe Stock] 구성. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
+1. 새로 만든 사용자 그룹을 [!DNL Adobe Stock] 구성. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
    ![사용자 지정](assets/aem-stock-adduser.png)
 
@@ -313,7 +313,7 @@ IMS 계정을 구성하려면 다음을 수행하십시오.
 
 | 사용자 | 그룹 | 권한 | 사용자 기본 설정에서 Stock 구성 수락 | 자산 액세스 | Adobe Stock 액세스 |
 | --- | --- | --- | --- | --- | --- |
-| admin | 해당 없음 | 모든 | 해당 없음 | 예 | 예 |
+| admin | 해당 없음 | 모두 | 해당 없음 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global /settings/stock/cloud-config | 예 | 예 | 예 |
 | test-doc1 | DAM 사용자 | /conf/global /settings/stock/cloud-config | 아니요 | 오류: 데이터를 로드하지 못했습니다. | 아니요 |
 | test-doc1 | DAM 사용자 | **허용**: /conf/global /settings/stock     **거부**: /cloud-config | 스톡 구성이 표시되지 않음 | 예 | 아니요 |

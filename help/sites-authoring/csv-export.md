@@ -1,8 +1,8 @@
 ---
 title: CSV로 내보내기
-seo-title: CSV로 내보내기
+seo-title: Export to CSV
 description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
-seo-description: 로컬 시스템에서 페이지에 대한 정보를 CSV 파일로 내보내기
+seo-description: Export information about your pages to a CSV file on your local system
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '191'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 100%
 **CSV 보고서 만들기**&#x200B;를 사용하여 페이지에 대한 정보를 로컬 시스템의 CSV 파일로 내보낼 수 있습니다.
 
 * 다운로드한 파일은 `export.csv`라고 합니다.
-* 컨텐츠는 사용자가 선택한 속성에 따라 다릅니다.
+* 콘텐츠는 사용자가 선택한 속성에 따라 다릅니다.
 * 내보내기에 대한 깊이와 함께 경로를 정의할 수 있습니다.
 
 >[!NOTE]
@@ -38,11 +38,11 @@ ht-degree: 100%
       * 수정됨
       * 게시됨
       * 템플릿
-      * 워크플로우
+      * 워크플로
    * 번역
       * 번역됨
    * 분석
-      * 페이지 보기 수
+      * 페이지 조회수
       * 고유 방문자 수
       * 페이지 시간
 * 깊이

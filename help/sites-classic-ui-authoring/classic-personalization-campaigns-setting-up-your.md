@@ -46,7 +46,7 @@ ht-degree: 98%
 * Adobe Target(이전 Test&amp;Target) 오퍼를 생성하는 경우 다음을 수행하십시오.
 
    1. [Adobe Target 오퍼 경험을 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Adobe Target과 통합합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+   1. [Adobe Target과 통합](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ ht-degree: 98%
 
 * [Adobe Target 오퍼](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Adobe Target과 통합합니다.](/help/sites-administering/target.md)
+   * [Adobe Target과 통합](/help/sites-administering/target.md)
 
 ### 새로운 터치포인트 추가 {#adding-a-new-touchpoint}
 

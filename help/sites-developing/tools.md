@@ -1,8 +1,8 @@
 ---
 title: 테스트 및 추적 도구
-seo-title: 테스트 및 추적 도구
+seo-title: Testing and Tracking Tools
 description: AEM은 구성 요소 UI를 테스트하는 프레임워크와 구성 요소를 테스트 및 디버깅하는 메커니즘을 제공합니다
-seo-description: AEM은 구성 요소 UI를 테스트하는 프레임워크와 구성 요소를 테스트 및 디버깅하는 메커니즘을 제공합니다
+seo-description: AEM provides a framework for testing component UI and a mechanism for testing and debugging components
 uuid: 12abedb5-4ee7-4389-9340-e628adbbc053
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '292'
 ht-degree: 4%
 
 ---
@@ -24,8 +24,8 @@ ht-degree: 4%
 
 AEM은 다음을 제공합니다.
 
-* [구성 요소 UI 테스트를 위한 프레임워크입니다](/help/sites-developing/hobbes.md).
-* [구성 요소를 테스트하고 디버깅하는 메커니즘입니다](/help/sites-developing/developer-mode.md).
+* [구성 요소 UI 테스트 프레임워크](/help/sites-developing/hobbes.md).
+* [구성 요소 테스트 및 디버깅 메커니즘](/help/sites-developing/developer-mode.md).
 
 다음은 두 가지 오픈 소스 테스트 도구입니다.
 
@@ -33,13 +33,13 @@ AEM은 다음을 제공합니다.
 
 Selenium은 활동당 한 명의 사용자가 있는 브라우저에서 함수 테스트에 사용됩니다. 테스트 단계(클릭)를 HTML 테이블 또는 Java 클래스로 기록합니다.
 
-자세한 내용은 [https://www.seleniumhq.org/](https://www.seleniumhq.org/)을 참조하십시오.
+자세한 내용은 [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
 JMeter는 요청을 추적하는 데 사용되며 기능, 성능 및 스트레스 테스트에 사용할 수 있습니다.
 
-자세한 내용은 [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter)을 참조하십시오.
+자세한 내용은 [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter).
 
 또한 테스트를 자동화하고 테스트 계획을 관리하기 위한 다양한 독점 도구가 있습니다.
 
@@ -53,7 +53,7 @@ JMeter는 요청을 추적하는 데 사용되며 기능, 성능 및 스트레�
 
 **스프레드시트**
 
-버그 추적 도구는 특별히 사용하지 않지만, 스프레드시트는 이해하기 쉽고 대부분의 사용자가 자신의 기능을 경험했으므로 *mis*&#x200B;이 용도로 사용되는 경우가 많습니다.
+특별히 버그 추적 도구는 아니지만 스프레드시트는 종종 다음과 같습니다 *잘못된*&#x200B;이해하기가 쉽고 대부분의 사용자가 자신의 기능에 대한 경험을 가지고 있으므로 이 용도로 사용됩니다.
 
 추적에 사용되는 경우:
 

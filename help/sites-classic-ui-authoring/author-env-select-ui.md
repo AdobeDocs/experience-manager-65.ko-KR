@@ -1,8 +1,8 @@
 ---
 title: UI 선택
-seo-title: UI 선택
+seo-title: Selecting your UI
 description: 작성자는 편의를 위해 필요한 경우 터치 가능 UI를 클래식 UI로 전환할 수 있습니다.
-seo-description: 작성자는 편의를 위해 필요한 경우 터치 가능 UI를 클래식 UI로 전환할 수 있습니다.
+seo-description: For convenience to authoring users, the touch-enabled UI does allow for switching to the classic UI when necessary.
 uuid: 755e513e-990c-4dba-8316-623f17bf5c33
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
 exl-id: 57d45b06-e76e-420c-8cd0-389bd9f811af
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 60%
+source-wordcount: '195'
+ht-degree: 55%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 60%
 >
 >이전 버전에서 업그레이드된 인스턴스는 페이지 작성을 위해 클래식 UI를 유지합니다.
 >
->업그레이드 후에 페이지 작성이 터치 지원 UI로 자동 전환되지 않지만 **WCM 작성 UI 모드 서비스**( `AuthoringUIMode` 서비스)의[OSGi 구성](/help/sites-deploying/configuring-osgi.md)을 사용하여 구성할 수 있습니다. [편집기에 대해 UI 무시](#uioverridesfortheeditor)를 참조하십시오.
+>업그레이드 후에 페이지 작성이 터치 지원 UI로 자동 전환되지 않지만[OSGi 구성](/help/sites-deploying/configuring-osgi.md) 의 **WCM 작성 UI 모드 서비스** ( `AuthoringUIMode` 서비스). [편집기에 대해 UI 무시](#uioverridesfortheeditor)를 참조하십시오.
 
 ## 인스턴스용 기본 UI 구성 {#configuring-the-default-ui-for-your-instance}
 

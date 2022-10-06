@@ -1,8 +1,8 @@
 ---
 title: 커뮤니티 구성 요소
-seo-title: 커뮤니티 구성 요소
+seo-title: Communities Components
 description: AEM 사이트에 커뮤니티 기능 추가
-seo-description: AEM 사이트에 커뮤니티 기능 추가
+seo-description: Adding community features to any AEM site
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '286'
 ht-degree: 44%
 
 ---
@@ -32,17 +32,17 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 >[!NOTE]
 >
->작성 환경에 익숙하지 않은 경우 [기본 처리](/help/sites-authoring/basic-handling.md)에 대한 설명서를 보고, 페이지 작성에 대한 [빠른 안내서를 확인하십시오](/help/sites-authoring/qg-page-authoring.md).
+>작성 환경을 잘 모를 경우 다음 문서를 참조하십시오. [기본 처리](/help/sites-authoring/basic-handling.md) 그리고 [페이지 작성에 대한 빠른 안내](/help/sites-authoring/qg-page-authoring.md).
 
 ## 사용 가능한 커뮤니티 구성 요소 {#available-communities-components}
 
 다음 표에는 구성 요소 브라우저(사이드 킥에서 활성화될 때 작성자가 볼 수 있는 커뮤니티 구성 요소가 나열되어 있습니다.
 
-대화형 [커뮤니티 구성 요소 안내서](/help/communities/components-guide.md)도 참조하십시오.
+대화형 [커뮤니티 구성 요소 안내서](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->커뮤니티 구성 요소를 사용하여 작성하는 데 필요한 정보가 포함되어 있으므로 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md) 을 읽으십시오.
+>읽기 [커뮤니티 구성 요소 기본 사항](/help/communities/basics.md) 커뮤니티 구성 요소로 작성하는 데 필요한 정보가 포함되어 있으므로
 
 | **구성 요소 제목** | **기능** |
 |---|---|
@@ -83,8 +83,8 @@ AEM Communities 라이센스가 있으면 커뮤니티 사이트를 만들 수 �
 
 ## 관련 커뮤니티 설명서 {#related-communities-documentation}
 
-* 권장 배포에 대해 알아보려면 [Communities 배포](/help/communities/deploy-communities.md)를 방문하십시오.
+* 방문 [커뮤니티 배포](/help/communities/deploy-communities.md) 권장 배포에 대해 자세히 알아보십시오 .
 
-* 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시징 구성에 대해 알려면 [커뮤니티 사이트 관리](/help/communities/administer-landing.md)를 방문하십시오.
+* 방문 [커뮤니티 사이트 관리](/help/communities/administer-landing.md) 커뮤니티 사이트 만들기, 커뮤니티 사이트 템플릿 구성, 커뮤니티 콘텐츠 중재, 구성원 관리 및 메시징 구성에 대해 알아보려면.
 
-* SCF(소셜 구성 요소 프레임워크)에 대해 알아보고 커뮤니티 구성 요소 및 기능을 사용자 지정하려면 [커뮤니티 개발](/help/communities/communities.md)을 방문하십시오.
+* 방문 [커뮤니티 개발](/help/communities/communities.md) SCF(소셜 구성 요소 프레임워크) 및 커뮤니티 구성 요소 및 기능 사용자 지정에 대해 알아봅니다.

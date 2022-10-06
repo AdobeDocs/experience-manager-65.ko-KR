@@ -1,8 +1,8 @@
 ---
 title: 구성 요소 테스트로드
-seo-title: 구성 요소 테스트로드
+seo-title: Component Sideloading
 description: 커뮤니티 구성 요소 테스트로드는 웹 페이지가 사이트 방문자가 선택한 내용에 따라 표시되는 내용을 동적으로 변경하는 간단한 단일 페이지 앱으로 디자인될 때 유용합니다
-seo-description: 커뮤니티 구성 요소 테스트로드는 웹 페이지가 사이트 방문자가 선택한 내용에 따라 표시되는 내용을 동적으로 변경하는 간단한 단일 페이지 앱으로 디자인될 때 유용합니다
+seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 exl-id: 960e132c-b370-43d1-bd8f-e7d0ded7c0b3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ SCF 구성 요소를 동적으로 추가하는 단계는 다음과 같습니다.
 
 1. [DOM에 구성 요소 추가](#dynamically-add-component-to-dom)
 
-1. [다음 두 ](#sideload-by-invoking-scf) 가지 방법 중 하나를 사용하여 구성 요소를 테스트하십시오.
+1. [구성 요소를 테스트하여 로드합니다](#sideload-by-invoking-scf) 다음 두 방법 중 하나를 사용합니다.
 
 * [동적 포함](#dynamic-inclusion)
    * 동적으로 추가된 모든 구성 요소를 부트스트랩
@@ -42,9 +42,9 @@ SCF 구성 요소를 동적으로 추가하는 단계는 다음과 같습니다.
 
 >[!NOTE]
 >
->기존 리소스가 아닌 [의 사이드로드는 지원되지 않습니다.](scf.md#add-or-include-a-communities-component)
+>테스트용 로드 [비기존 리소스](scf.md#add-or-include-a-communities-component) 은 지원되지 않습니다.
 
-## DOM {#dynamically-add-component-to-dom}에 동적으로 구성 요소 추가
+## 동적으로 DOM에 구성 요소 추가 {#dynamically-add-component-to-dom}
 
 구성 요소가 동적으로 포함되거나 동적으로 로드되는지 여부에 관계없이 먼저 DOM에 추가해야 합니다.
 
@@ -71,7 +71,7 @@ SCF 구성 요소를 추가할 때 사용하는 가장 일반적인 태그는 DI
 </div>
 ```
 
-## SCF {#sideload-by-invoking-scf}를 호출하여 테스트용 로드
+## SCF를 호출하여 테스트용 로드 {#sideload-by-invoking-scf}
 
 ### 동적 포함 {#dynamic-inclusion}
 
@@ -81,7 +81,7 @@ SCF 구성 요소를 추가할 때 사용하는 가장 일반적인 태그는 DI
 
 `$(document).trigger(SCF.events.BOOTSTRAP_REQUEST);`
 
-### 동적 로드 중 {#dynamic-loading}
+### 동적 로드 {#dynamic-loading}
 
 동적 로드는 SCF 구성 요소 로드를 제어할 수 있도록 합니다.
 
@@ -89,4 +89,4 @@ DOM에 있는 모든 SCF 구성 요소를 부트스트랩하는 대신 이 JavaS
 
 `SCF.addComponent(document.getElementById(*someId*));`
 
-여기서 `someId`은 `data-component-id` 속성의 값입니다.
+위치 `someId` 는 의 값입니다 `data-component-id` 속성을 사용합니다.

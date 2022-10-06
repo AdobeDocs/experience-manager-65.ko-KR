@@ -1,8 +1,8 @@
 ---
 title: 앱 콘솔을 사용한 앱 만들기 및 편집
-seo-title: 앱 콘솔을 사용한 앱 만들기 및 편집
+seo-title: Creating and Editing Apps Using the Apps Console
 description: 앱 콘솔을 사용하여 앱을 만들고 편집하는 방법에 대해 알아보려면 이 페이지를 따르십시오.
-seo-description: 앱 콘솔을 사용하여 앱을 만들고 편집하는 방법에 대해 알아보려면 이 페이지를 따르십시오.
+seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2638'
+source-wordcount: '2617'
 ht-degree: 1%
 
 ---
 
-# 앱 콘솔을 사용하여 앱 만들기 및 편집{#creating-and-editing-apps-using-the-apps-console}
+# 앱 콘솔을 사용한 앱 만들기 및 편집{#creating-and-editing-apps-using-the-apps-console}
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ AEM 모바일 애플리케이션 개발 프로세스는 다양한 전문 지식�
 
 이 페이지에 마케터 작업을 수행하는 방법에 대한 정보가 표시됩니다. 개발자 작업에 대한 자세한 내용은 PhoneGap 애플리케이션 빌드를 참조하십시오.
 
-## 모바일 애플리케이션 구조 {#the-structure-of-mobile-applications}
+## 모바일 애플리케이션의 구조 {#the-structure-of-mobile-applications}
 
 AEM Mobile은 모바일 애플리케이션을 만들기 위한 Phonegap 앱 블루프린트를 제공합니다. 블루프린트는 사용자가 만드는 응용 프로그램의 구조를 정의합니다. 응용 프로그램은 다음 항목으로 구성됩니다.
 
@@ -41,7 +41,7 @@ AEM Mobile은 모바일 애플리케이션을 만들기 위한 Phonegap 앱 블�
 
 AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘솔에 표시됩니다.
 
-루트 페이지는 애플리케이션을 만들 때 지정된 애플리케이션의 대상 경로 속성 아래에 저장됩니다(기본 경로는 /content/phonegap/apps). 페이지 이름은 애플리케이션의 이름 속성입니다. 예를 들어 `myphonegapapp` 사이트의 루트 페이지에 대한 기본 URL은 `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`입니다.
+루트 페이지는 애플리케이션을 만들 때 지정된 애플리케이션의 대상 경로 속성 아래에 저장됩니다(기본 경로는 /content/phonegap/apps). 페이지 이름은 애플리케이션의 이름 속성입니다. 예를 들어 이름이 지정된 사이트의 루트 페이지에 대한 기본 URL입니다 `myphonegapapp` is `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -62,7 +62,7 @@ AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘�
 
 ### 홈 페이지 {#the-home-page}
 
-응용 프로그램을 열면 응용 프로그램의 언어 변형의 Home 페이지나 index.html 페이지가 나타납니다. 홈 페이지는 응용 프로그램의 여러 페이지에 대한 링크 메뉴를 사용자에게 제공합니다. 단락 시스템을 사용하면 컨텐츠를 만들기 위해 페이지에 구성 요소를 추가할 수 있습니다.
+응용 프로그램을 열 때 응용 프로그램의 언어 변형의 홈 페이지나 index.html 페이지가 나타납니다. 홈 페이지는 응용 프로그램의 여러 페이지에 대한 링크 메뉴를 사용자에게 제공합니다. 단락 시스템을 사용하면 컨텐츠를 만들기 위해 페이지에 구성 요소를 추가할 수 있습니다.
 
 ## 모바일 애플리케이션 만들기 {#creating-a-mobile-application}
 
@@ -71,16 +71,16 @@ AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘�
 * **제목:** 애플리케이션 제목입니다.
 * **대상 경로:** 애플리케이션이 저장되는 저장소의 위치입니다. 앱 이름을 기반으로 경로를 만들려면 기본값을 그대로 둡니다.
 
-* **이름:** 기본값은 공백 문자가 제거된 제목 속성의 값입니다. CQ 내에서 응용 프로그램을 참조하는 데 사용됩니다. 예를 들어 응용 프로그램을 나타내는 저장소 노드의 경우입니다.
+* **이름:** 기본값은 공백 문자가 제거된 제목 속성 값입니다. CQ 내에서 응용 프로그램을 참조하는 데 사용됩니다. 예를 들어 응용 프로그램을 나타내는 저장소 노드의 경우입니다.
 * **설명:** 응용 프로그램에 대한 설명입니다.
-* **서버 URL:** OTA(Over-the-Air) 컨텐츠 업데이트를 제공하는 URL입니다. 기본값은 외부 도우미 서비스에서 가져온 응용 프로그램을 만드는 데 사용되는 인스턴스의 게시 서버 URL입니다. 참고: 인증이 필요한 작성자가 아닌 게시 서버 인스턴스여야 합니다.
+* **서버 URL:** OTA(Over-the-Air) 컨텐츠를 제공하는 URL은 응용 프로그램에 대한 업데이트를 제공합니다. 기본값은 외부 도우미 서비스에서 가져온 응용 프로그램을 만드는 데 사용되는 인스턴스의 게시 서버 URL입니다. 참고: 인증이 필요한 작성자가 아닌 게시 서버 인스턴스여야 합니다.
 
 응용 프로그램 축소판으로 사용할 이미지 파일을 제공하고, 사용할 PhoneGap Build 구성을 선택한 다음, 사용할 Mobile App Analytics 구성을 선택할 수도 있습니다. 이 이미지는 Experience Manager의 모바일 앱 콘솔 내에서 모바일 애플리케이션을 나타내는 축소판으로만 사용됩니다.
 
 빌드 클라우드 서비스를 사용하고 Adobe Mobile Services SDK 플러그인을 앱에 통합하기 위한 추가(및 선택 사항) 탭이 있습니다.
 
-* 빌드:여기에서 구성 관리를 클릭하고 build.phonegap.com build 서비스를 설정합니다. 그런 다음 드롭다운에서 새로 만든 PhoneGap 빌드 클라우드 서비스를 선택할 수 있습니다.
-* Analytics:구성 관리 를 클릭하고 [Mobile Services SDK Adobe](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) 클라우드 서비스를 설정합니다. 그런 다음 드롭다운에서 새로 만든 Mobile Service를 선택하여 모바일 앱에 통합할 수 있습니다.
+* 빌드: 여기에서 구성 관리를 클릭하고 build.phonegap.com build 서비스를 설정합니다. 그런 다음 드롭다운에서 새로 만든 PhoneGap 빌드 클라우드 서비스를 선택할 수 있습니다.
+* Analytics: 구성 관리 를 클릭하고 [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) 클라우드 서비스. 그런 다음 드롭다운에서 새로 만든 Mobile Service를 선택하여 모바일 앱에 통합할 수 있습니다.
 
 >[!NOTE]
 >
@@ -105,11 +105,11 @@ AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘�
 1. (선택 사항) 응용 프로그램 아이콘을 제공하려면 [찾아보기] 단추를 클릭하고 파일 시스템에서 이미지 파일을 선택한 다음 [열기]를 클릭합니다.
 1. 만들기를 클릭합니다.
 
-### 모바일 애플리케이션 {#changing-the-properties-of-a-mobile-application} 의 속성 변경
+### 모바일 애플리케이션의 속성 변경 {#changing-the-properties-of-a-mobile-application}
 
 모바일 애플리케이션을 만든 후 속성을 변경할 수 있습니다.
 
-#### 제목, 설명 및 아이콘 {#change-the-title-description-and-icon} 변경
+#### 제목, 설명 및 아이콘 변경 {#change-the-title-description-and-icon}
 
 1. 레일에서 앱을 클릭하거나 탭합니다.
 1. 구성할 응용 프로그램을 선택하고 페이지 속성 보기 아이콘을 클릭합니다.
@@ -124,7 +124,7 @@ AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘�
 
    ![](do-not-localize/chlimage_1-10.png)
 
-#### 응용 프로그램 {#configure-a-language-variation-of-the-application} 의 언어 변형 구성
+#### 응용 프로그램의 언어 변형 구성 {#configure-a-language-variation-of-the-application}
 
 1. 레일에서 앱을 클릭하거나 탭합니다.
 1. 앱 Admin Console 내에서 편집할 모바일 애플리케이션을 자세히 살펴보려면 을 클릭합니다. 구성할 응용 프로그램의 언어 버전을 선택하고 응용 프로그램 속성 보기 아이콘을 클릭합니다.
@@ -147,7 +147,7 @@ AEM에서 만드는 모바일 애플리케이션의 루트 페이지가 앱 콘�
 1. 애플리케이션을 클릭하거나 탭한 다음, 영어를 클릭하거나 탭합니다.
 1. 홈 페이지를 편집하거나 필요에 따라 하위 페이지를 추가합니다.
 
-### 모바일 응용 프로그램으로 컨텐츠 이동 {#moving-content-to-mobile-applications}
+### 모바일 애플리케이션으로 컨텐츠 이동 {#moving-content-to-mobile-applications}
 
 AEM 게시 인스턴스의 컨텐츠 동기화 캐시가 모바일 애플리케이션의 컨텐츠 저장소로 사용됩니다.
 
@@ -295,19 +295,19 @@ Geometrixx Outdoors 앱은 기본 PhoneGap 애플리케이션 블루프린트와
 
 회전판의 동작을 구성합니다.
 
-* 재생 속도:다음 이미지를 표시하기 전에 각 이미지가 표시되는 시간(밀리초)입니다.
-* 전환 시간:이미지 전환에 대한 애니메이션의 기간(밀리초)입니다.
-* 컨트롤 스타일:이미지 간을 이동하기 위해 제공되는 컨트롤 유형입니다.
+* 재생 속도: 다음 이미지를 표시하기 전에 각 이미지가 표시되는 시간(밀리초)입니다.
+* 전환 시간: 이미지 전환에 대한 애니메이션의 기간(밀리초)입니다.
+* 컨트롤 스타일: 이미지 간을 이동하기 위해 제공되는 컨트롤 유형입니다.
 
 **목록 속성 탭**
 
 페이지 목록이 생성되는 방식을 지정합니다.
 
-* 목록 작성 방법:회전판에 포함할 페이지를 지정하는 데 사용하는 방법입니다. 페이지 목록 작성 을 참조하십시오.
-* 정렬 기준:페이지 목록을 정렬하는 데 사용할 페이지 속성을 선택합니다. 예를 들어 jcr:title 을 선택하여 제목을 기준으로 페이지를 사전순으로 정렬합니다.
-* 제한:포함할 최대 페이지 수입니다. 이 속성은 페이지 목록을 작성하는 검색 기반 방법에 적합합니다.
+* 목록 작성 방법: 회전판에 포함할 페이지를 지정하는 데 사용하는 방법입니다. 페이지 목록 작성 을 참조하십시오.
+* 정렬 기준: 페이지 목록을 정렬하는 데 사용할 페이지 속성을 선택합니다. 예를 들어 jcr:title 을 선택하여 제목을 기준으로 페이지를 사전순으로 정렬합니다.
+* 제한: 포함할 최대 페이지 수입니다. 이 속성은 페이지 목록을 작성하는 검색 기반 방법에 적합합니다.
 
-#### 페이지 목록 작성 중 {#building-the-page-list}
+#### 페이지 목록 작성 {#building-the-page-list}
 
 밀기 회전판 구성 요소는 다음을 사용하여 빌드 목록에 대한 값을 제공합니다. 편집 대화 상자는 선택한 값에 따라 변경됩니다.
 
@@ -334,7 +334,7 @@ Geometrixx Outdoors 앱은 기본 PhoneGap 애플리케이션 블루프린트와
 
 **고급 검색**
 
-[QueryBuilder](/help/sites-developing/querybuilder-api.md) 쿼리를 사용하여 목록을 채웁니다.
+다음 아이콘을 사용하여 목록 채우기 [QueryBuilder](/help/sites-developing/querybuilder-api.md) 쿼리를 클릭합니다.
 
 ### 이미지 {#image}
 

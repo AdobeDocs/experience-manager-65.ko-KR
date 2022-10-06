@@ -87,7 +87,7 @@ XMP Write-back은 다음에 설명된 플랫폼 및 파일 형식에 대해 지�
 1. 도구 모음에서 **[!UICONTROL 속성]** 를 클릭하여 선택한 자산에 대한 속성 페이지를 엽니다.
 1. 다양한 탭에서 선택한 자산에 대한 메타데이터 속성을 수정합니다.
 1. 특정 자산의 메타데이터를 보려면 목록에 있는 나머지 자산의 선택을 취소합니다. 에서 몇 개의 자산 선택을 취소하면 [!UICONTROL 속성] 페이지에서 이러한 자산의 메타데이터는 업데이트되지 않습니다.
-1. 자산에 대해 다른 메타데이터 스키마를 선택하려면 를 클릭합니다 **[!UICONTROL 설정]** 도구 모음에서 스키마를 선택합니다. **[!UICONTROL 저장 후 닫기]**&#x200B;를 클릭합니다.
+1. 자산에 대해 다른 메타데이터 스키마를 선택하려면 를 클릭합니다 **[!UICONTROL 설정]** 도구 모음에서 스키마를 선택합니다. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. 클릭 **[!UICONTROL 제출]**.
 
 ![메타데이터 스키마 벌크는 여러 자산에 적용됩니다](assets/metadata-schema-bulk-edit.gif)

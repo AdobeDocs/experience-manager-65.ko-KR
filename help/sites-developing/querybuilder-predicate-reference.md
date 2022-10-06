@@ -10,26 +10,14 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: f97eb2e028263016131b0c86be5a0508ae4def9b
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 2%
+source-wordcount: '2310'
+ht-degree: 3%
 
 ---
 
 # 쿼리 빌더 술어 참조{#query-builder-predicate-reference}
-
->[!CAUTION]
->
->이 페이지의 정보는 완벽하지 않습니다.
->
->자세한 내용은 아래의 목록을 참조하십시오 **사용 가능한 설명** Query Builder 디버거 콘솔에서 다음을 수행하십시오. 예를 들어, at:
->* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
->
->예를 들어 다음을 참조하십시오.
->
->* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
-
 
 ## 일반 {#general}
 

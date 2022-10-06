@@ -1,7 +1,7 @@
 ---
 title: 대화형 커뮤니케이션의 텍스트
 seo-title: Text in Interactive Communications
-description: '인터랙티브 통신에 사용할 텍스트 문서 조각을 만들고 편집 - 텍스트는 인터랙티브 커뮤니케이션을 작성하는 데 사용되는 네 가지 문서 조각 중 하나입니다. 다른 세 가지는 조건, 목록 및 레이아웃 조각입니다.  '
+description: 인터랙티브 통신에 사용할 텍스트 문서 조각을 만들고 편집 - 텍스트는 인터랙티브 커뮤니케이션을 작성하는 데 사용되는 네 가지 문서 조각 중 하나입니다. 다른 세 가지는 조건, 목록 및 레이아웃 조각입니다.
 seo-description: Creating and editing text document fragments to be used in Interactive Communications
 uuid: fdac3dd8-c6d0-418e-b969-fc791b7bd509
 topic-tags: interactive-communications

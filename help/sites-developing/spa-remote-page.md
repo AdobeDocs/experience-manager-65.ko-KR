@@ -5,7 +5,7 @@ exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 source-git-commit: a92358d187aa78e05dd9b5a7bd4ae14bf0972f62
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## 개요 {#overview}
 
-RemotePage 구성 요소는 애플리케이션에서 생성된 `asset-manifest.json`에서 필요한 모든 자산을 가져와서 AEM 내에서 SPA을 렌더링하는 데 사용합니다.
+RemotePage 구성 요소는 애플리케이션에서 생성된 모든 필수 자산을 가져옵니다 `asset-manifest.json` 및 은 AEM 내에서 SPA을 렌더링하기 위해 이 플러그인을 사용합니다.
 
 * RemotePage를 사용하면 AEM Page 구성 요소의 본문에 SPA의 스크립트 및 스타일시트를 삽입할 수 있습니다.
 * 가상 프런트 엔드 구성 요소를 사용하면 AEM SPA 편집기에서 섹션을 편집 가능으로 표시할 수 있습니다.
 * 함께, 다른 도메인에 호스팅된 SPA을 AEM에서 편집할 수 있습니다.
 
-편집 가능한 AEM의 외부 SPA에 대한 자세한 내용은 [AEM](spa-edit-external.md)에서 외부 SPA 편집 문서를 참조하십시오.
+문서를 참조하십시오 [AEM 내에서 외부 SPA 편집](spa-edit-external.md) 편집 가능한 방법에 대한 자세한 내용은 AEM의 외부 SPA을 참조하십시오.
 
 ## 요구 사항 {#requirements}
 
@@ -35,13 +35,13 @@ RemotePage 구성 요소는 애플리케이션에서 생성된 `asset-manifest.j
 
    ![시작 지점](assets/asset-manifest-entrypoints.png)
 
-* 응용 프로그램은 본문 요소 아래의 `<div id="root"></div>`에서 초기화할 수 있어야 합니다. 앱을 인스턴스화하는 데 다른 마크업이 필요한 경우 `sling:resourceSuperType="spa-project-core/components/remotepage`이 있는 프록시 구성 요소의 HTL 스크립트에서 이에 따라 조정해야 합니다.
+* 응용 프로그램을 `<div id="root"></div>` 본문 요소 아래에 표시됩니다. 앱을 인스턴스화하는 데 다른 마크업이 필요한 경우, 프록시 구성 요소의 HTL 스크립트에서 이 마크업을 적절하게 조정해야 합니다 `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## 제한 사항 {#limitations}
 
 * RemotePage 구성 요소의 현재 구현은 원격 React 응용 프로그램만 지원합니다.
 * AEM에서 원격 렌더링을 수행할 때 애플리케이션의 루트 HTML 파일과 루트 DOM 노드의 인라인 CSS에 정의된 내부 CSS를 사용할 수 없습니다.
 
-## 기술 세부 정보 {#technical-details}
+## 기술 세부 사항 {#technical-details}
 
-AEM SPA 프로젝트의 나머지 부분처럼 RemotePage 구성 요소는 오픈 소스입니다. RemotePage 구성 요소에 대한 전체 기술 세부 사항은 [GitHub 리포지토리를 참조하십시오.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+AEM SPA 프로젝트의 나머지 부분처럼 RemotePage 구성 요소는 오픈 소스입니다. RemotePage 구성 요소에 대한 전체 기술 세부 정보는 [gitHub 리포지토리를 참조하십시오.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)

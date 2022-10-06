@@ -1,8 +1,8 @@
 ---
 title: 데이터베이스 증가 최소화 팁
-seo-title: 데이터베이스 증가 최소화 팁
+seo-title: Tips for minimizing database growth
 description: 장기 처리 프로세스는 AEM Forms 데이터베이스에 프로세스 데이터를 저장합니다. 몇 가지 간단한 프로세스 설계 및 제품 구성 전략을 사용하여 AEM Forms 데이터베이스의 증가를 최소화할 수 있습니다.
-seo-description: 장기 처리 프로세스는 AEM Forms 데이터베이스에 프로세스 데이터를 저장합니다. 몇 가지 간단한 프로세스 설계 및 제품 구성 전략을 사용하여 AEM Forms 데이터베이스의 증가를 최소화할 수 있습니다.
+seo-description: Long-lived processes store process data in the AEM forms database. The growth of the AEM forms database can be minimized using a few easy process design and product configuration strategies.
 uuid: 13f99d4f-848e-451e-90d9-55e202dc0bdb
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
 exl-id: f64efb06-815a-4608-ba1c-39e22f344ebb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
 
-# 데이터베이스 증가 최소화를 위한 팁 {#tips-for-minimizing-database-growth}
+# 데이터베이스 증가 최소화 팁 {#tips-for-minimizing-database-growth}
 
 장기 처리 프로세스는 AEM Forms 데이터베이스에 프로세스 데이터를 저장합니다. 몇 가지 간단한 프로세스 설계 및 제품 구성 전략을 사용하여 AEM Forms 데이터베이스의 증가를 최소화할 수 있습니다.
 
@@ -35,4 +35,4 @@ ht-degree: 0%
 
 GDS(글로벌 문서 스토리지)를 효과적으로 사용 Forms 서버의 GDS 디렉토리는 프로세스에서 AEM Forms의 일부인 서비스에 전달되는 파일을 저장하는 데 사용됩니다. 성능을 향상시키기 위해 더 작은 문서가 대신 메모리에 저장되어 데이터베이스에 유지됩니다.
 
-관리 콘솔은 메모리에 저장되고 데이터베이스에 지속되는 문서의 최대 크기를 구성하기 위한 [기본 문서 최대 인라인 크기] 속성을 표시합니다. ([일반 AEM 양식 설정 구성](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings) 참조) 이 속성을 낮은 값으로 설정하면 대부분의 문서가 데이터베이스 대신 GDS 디렉토리에 유지됩니다. 따라서 GDS 디렉토리에 파일을 저장할 때 더 이상 필요하지 않은 파일을 보다 쉽게 삭제할 수 있습니다.
+관리 콘솔은 메모리에 저장되고 데이터베이스에 지속되는 문서의 최대 크기를 구성하기 위한 [기본 문서 최대 인라인 크기] 속성을 표시합니다. (자세한 내용은 [일반 AEM 양식 설정 구성](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)) 이 속성을 낮은 값으로 설정하면 대부분의 문서가 데이터베이스 대신 GDS 디렉토리에 유지됩니다. 따라서 GDS 디렉토리에 파일을 저장할 때 더 이상 필요하지 않은 파일을 보다 쉽게 삭제할 수 있습니다.

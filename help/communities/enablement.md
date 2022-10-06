@@ -1,8 +1,8 @@
 ---
 title: 사용 기능 구성
-seo-title: 사용 기능 구성
+seo-title: Configuring Enablement Features
 description: 커뮤니티에서 사용 기능 구성
-seo-description: 커뮤니티에서 사용 기능 구성
+seo-description: Configure enablement features in Communities
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: b635e2ed-4637-4b2f-a746-ec8dc7541bab
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
-사용 기능은 [지원 커뮤니티를 만드는 기능을 제공합니다](overview.md#enablement-community).
+사용 기능은 다음을 만드는 기능을 제공합니다 [지원 커뮤니티](overview.md#enablement-community).
 
 * 이 기능을 사용하려면 프로덕션 환경에서 사용할 추가 라이선스가 필요합니다.
 
@@ -40,13 +40,13 @@ ht-degree: 1%
 
 * **FFmpeg**
 
-   FFmpeg는 오디오 및 비디오를 변환 및 스트리밍하는 솔루션이며, 설치된 경우 [비디오 자산](../../help/sites-authoring/default-components-foundation.md#video)의 적절한 코드 변환에 사용됩니다. 지원 커뮤니티의 경우 작성자 환경에서 업로드된 리소스에 대한 메타데이터를 가져오고 리소스를 나열할 때 표시할 축소판을 생성하는 데 사용됩니다.
+   FFmpeg는 오디오 및 비디오를 변환 및 스트리밍하는 솔루션이며, 설치된 경우 를 적절한 코드 변환에 사용합니다 [비디오 자산](../../help/sites-authoring/default-components-foundation.md#video). 지원 커뮤니티의 경우 작성자 환경에서 업로드된 리소스에 대한 메타데이터를 가져오고 리소스를 나열할 때 표시할 축소판을 생성하는 데 사용됩니다.
 
 설정:
 
 * **커뮤니티 관리자**
 
-   지원 커뮤니티의 경우 `Community Enablement Managers` 사용자 그룹의 구성원만 `Community Site Enablement Manager` 역할에 할당될 수 있으며, 이 역할의 역할에는 게시 환경의 컨텐츠 작성, 할당 및 멤버 관리가 포함될 수 있습니다.
+   지원 커뮤니티의 경우 `Community Enablement Managers` 사용자 그룹에는 `Community Site Enablement Manager`게시 환경에 컨텐츠 작성, 할당 및 멤버 관리를 포함할 수 있는 권한이 있는 사용자입니다.
 
 구성 옵션:
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
    웹 콘솔 사용(번들): *http://localhost:4502/system/console/bundles*
 
-   SCORM 패키지 설치 전 *설치*
+   설치 *이전* SCORM 패키지 설치
 
 1. **[SCORM 패키지 설치](deploy-communities.md#scorm-package)**
 
@@ -105,7 +105,7 @@ ht-degree: 1%
 
 **작성자 인스턴스:**
 
-1. (*선택 사항*) **[Analytics 서비스 구성](analytics.md)**
+1. (*선택 사항입니다*) **[Analytics 서비스 구성](analytics.md)**
 
    도구, 배포, Cloud Services 콘솔 사용: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
@@ -130,4 +130,4 @@ ht-degree: 1%
 
 ## Dispatcher {#dispatcher}
 
-배포에 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)이 포함되어 있는 경우 지원 기능이 제대로 작동하려면 `clientheader` 및 `filter` 섹션을 수정해야 합니다. [Communities에 대한 Dispatcher 구성](dispatcher.md#enablement)을 참조하십시오.
+배포가 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)사용 기능이 제대로 작동하려면 `clientheader` 및 `filter` 섹션을 수정해야 합니다. 자세한 내용은 [커뮤니티에 대한 Dispatcher 구성](dispatcher.md#enablement).

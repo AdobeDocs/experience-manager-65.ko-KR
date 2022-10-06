@@ -1,8 +1,8 @@
 ---
 title: 기본 처리
-seo-title: 기본 처리
+seo-title: Basic Handling
 description: AEM 작성 환경을 사용할 때 기본적인 처리에 대한 개요입니다. 사이트 콘솔을 기본으로 사용합니다.
-seo-description: AEM 작성 환경을 사용할 때 기본적인 처리에 대한 개요입니다. 사이트 콘솔을 기본으로 사용합니다.
+seo-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1194'
 ht-degree: 94%
 
 ---
@@ -22,13 +22,10 @@ ht-degree: 94%
 >[!NOTE]
 >
 >* 이 페이지는 AEM 작성 환경을 사용할 때 기본 처리에 대한 개요를 알 수 있도록 설계되었습니다. **사이트** 콘솔을 기본으로 사용합니다.
-   >
-   >
-* 일부 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
->* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
-
 >
-
+>* 일부 기능을 일부 콘솔에서 사용할 수 없거나, 추가 기능을 일부 콘솔에서 사용할 수 있습니다. 개별 콘솔에 대한 특정 정보 및 관련 기능은 다른 페이지에서 더 자세히 다룹니다.
+>* AEM 전체에서 키보드 단축키를 사용할 수 있습니다. 특히 [콘솔을 사용하고](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) [페이지를 편집할 때 ](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)이러한 키보드 단축키를 사용할 수 있습니다.
+>
 
 
 ## 시작 화면 {#the-welcome-screen}
@@ -59,7 +56,7 @@ ht-degree: 94%
   </tr>
   <tr>
    <td><strong>론치</strong></td>
-   <td>이것은 <a href="/help/sites-classic-ui-authoring/classic-launches.md">launch</a>를 관리하는 데 도움이 됩니다. 향후 하나 이상의 활성화된 웹 페이지 릴리스에 필요한 컨텐츠를 개발할 수 있도록 해줍니다.<br /> <i>참고:터치 활성화 UI에서는 참조 레일과 함께 사이트 콘솔에서 동일한 기능의 상당 부분을 사용할 수 있습니다.</i> <i>필요한 경우 [도구] 콘솔에서 이 콘솔을 사용할 수 있습니다. [작업]을 선택하고 [론치]를 선택하면 됩니다.</i></td>
+   <td>이것은 <a href="/help/sites-classic-ui-authoring/classic-launches.md">launch</a>를 관리하는 데 도움이 됩니다. 향후 하나 이상의 활성화된 웹 페이지 릴리스에 필요한 컨텐츠를 개발할 수 있도록 해줍니다.<br /> <i>참고: 터치 활성화 UI에서는 참조 레일과 함께 사이트 콘솔에서 동일한 기능의 상당 부분을 사용할 수 있습니다.</i> <i>필요한 경우 [도구] 콘솔에서 이 콘솔을 사용할 수 있습니다. [작업]을 선택하고 [론치]를 선택하면 됩니다.</i></td>
   </tr>
   <tr>
    <td><strong>받은 편지함 </strong></td>
@@ -82,7 +79,7 @@ ht-degree: 94%
    <td>사이트/웹 사이트 콘솔에서는 AEM 인스턴스에서 실행되는<a href="/help/sites-classic-ui-authoring/classic-page-author.md"> 웹 사이트를 만들고, 보고, 관리할 수 있습니다. </a> 이 콘솔을 통해 웹 사이트 페이지를 만들고, 복사하고, 이동하고 삭제하고, 워크플로우를 시작하고, (게시) 페이지를 활성화할 수 있습니다. 페이지를 열어 편집할 수도 있습니다.<br /> </td>
   </tr>
   <tr>
-   <td><strong>워크플로우</strong></td>
+   <td><strong>워크플로</strong></td>
    <td>워크플로우는 일부 작업을 완료하는 프로세스를 설명하는 일련의 정의된 단계입니다. 많은 경우, 매우 많은 사람이 작업에 관련되어 있고, 각자는 다음 사람에게 작업을 넘겨주기 전에 자신의 단계를 완료해야 합니다. [워크플로우] 콘솔에서는 워크플로우 모델을 만들고 실행되는 워크플로우 인스턴스를 관리할 수 있습니다. 자세한 내용은 <a href="/help/sites-administering/workflows.md">워크플로우 작업</a>을 참조하십시오.<br /> </td>
   </tr>
  </tbody>
@@ -150,7 +147,7 @@ ht-degree: 94%
 
 ## 웹 사이트 콘솔 상의 페이지 정보 {#page-information-on-the-websites-console}
 
-**웹 사이트** 콘솔의 오른쪽 창에는 페이지 정보가 있는 목록 보기가 제공됩니다.
+**웹 사이트** 콘솔의 오른쪽 창에서는 페이지 정보가 있는 목록 보기가 제공됩니다.
 
 ![page-info](assets/page-info.png)
 
@@ -207,7 +204,7 @@ ht-degree: 94%
    <td>페이지가 잠겨있는 시기와 잠근 사용자 계정이 표시됩니다.</td>
   </tr>
   <tr>
-   <td>Live Copy</td>
+   <td>라이브 카피</td>
    <td>페이지가 live copy에 포함되는 시기를 가리킵니다.</td>
   </tr>
  </tbody>

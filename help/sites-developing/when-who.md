@@ -1,8 +1,8 @@
 ---
 title: 테스트 - 언제 누구와 함께?
-seo-title: 테스트 - 언제 누구와 함께?
+seo-title: Testing - when and with whom?
 description: 다양한 역할이 테스트 및 프로젝트 개발 단계에 포함될 수 있습니다
-seo-description: 다양한 역할이 테스트 및 프로젝트 개발 단계에 포함될 수 있습니다
+seo-description: Various roles can be involved in testing and at various stages of project development
 uuid: 431e8f06-80eb-4fb3-a4c7-2580608b0a1c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
 exl-id: 5a16be40-eede-4a47-b03b-3993e285232e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 5%
+source-wordcount: '274'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 5%
     <ul>
      <li><p>개발 중인 프로젝트의 경험을 고객에게 제공합니다.</p> </li>
      <li><p>고객으로부터 조기 피드백을 제공합니다.</p> </li>
-     <li><p>사용자는 과거 경험에 비추어 자신의 요구 사항을 종종 표현합니다.가능한 한 빨리 테스트하기 위해 고객을 참여하면 <i>실습</i> 경험에 따라 새 프로젝트의 경험이 늘어납니다.</p> </li>
+     <li><p>사용자는 과거 경험에 비추어 자신의 요구 사항을 종종 표현합니다. 고객이 가능한 한 빨리 테스트하면 <i>직접 사용</i> 경험으로 제어됩니다.</p> </li>
     </ul> </td>
    <td><p>고객이 사용하는 모든 릴리스는 안정적이고 합리적인 기능이 있어야 하지만 초기 참여가 좋습니다.</p> <p>첫인상은 항상 중요하다.</p> </td>
   </tr>

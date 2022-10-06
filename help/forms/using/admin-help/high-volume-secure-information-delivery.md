@@ -1,24 +1,24 @@
 ---
 title: 대용량 보안 정보 제공
-seo-title: 대용량 보안 정보 제공
+seo-title: High-volume secure information delivery
 description: 문서 보안은 대량 생산 환경에서 문서가 아닌 사용자에게 라이센스를 연결할 수 있도록 지원합니다.
-seo-description: 문서 보안은 대량 생산 환경에서 문서가 아닌 사용자에게 라이센스를 연결할 수 있도록 지원합니다.
+seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
-feature: 문서 보안
+feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# 대량 보안 정보 전달 {#high-volume-secure-information-delivery}
+# 대용량 보안 정보 제공 {#high-volume-secure-information-delivery}
 
 통신 회사에 대해 매월 고정된 청구서를 생성하는 것과 같은 대량 생산 환경에서 각 문서에 맞는 라이센스를 생성하는 것은 자원 집약적인 프로세스가 될 수 있습니다. 이러한 경우 문서 보안은 문서가 아닌 사용자에 대한 라이센스 연결을 지원합니다. 사용자에 대해 생성된 라이센스는 해당 사용자에 대해 보호되는 모든 문서에 사용됩니다.
 
@@ -30,4 +30,4 @@ ht-degree: 0%
 
 추상 정책 만들기는 문서 보안 Java SDK를 통해서만 지원됩니다. 그러나 문서 보안 웹 페이지에서 추상 정책으로 생성한 정책을 관리할 수 있습니다. 이 방법을 사용하여 작성된 정책은 문서 보안 웹 페이지에서 만든 정책과 동일합니다.
 
-자세한 내용은 [AEM Forms로 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63)을 참조하십시오.
+자세한 내용은 [AEM 양식을 사용한 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63) 추가 정보.

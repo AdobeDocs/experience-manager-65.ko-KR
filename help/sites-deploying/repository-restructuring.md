@@ -1,24 +1,24 @@
 ---
 title: AEM 6.5의 저장소 구조 변경
-seo-title: AEM 6.5의 저장소 구조 변경
+seo-title: Repository Restructuring in AEM 6.5
 description: AEM 6.5의 저장소 구조 변경 이면의 기본 사항과 논리에 대해 알아봅니다
-seo-description: AEM 6.5의 저장소 구조 변경 이면의 기본 사항과 논리에 대해 알아봅니다
+seo-description: Learn about the basics and reasoning behind the repository restructuring in AEM 6.5
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: 업그레이드
+feature: Upgrading
 exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
 
-# AEM 6.5에서의 저장소 구조 변경{#repository-restructuring-in-aem}
+# AEM 6.5의 저장소 구조 변경{#repository-restructuring-in-aem}
 
 ## 소개 {#introduction}
 
@@ -31,7 +31,7 @@ AEM 제품 코드 및 고객 코드에 대한 계층을 명확히 설명함으�
 * AEM 제품 코드는 항상 /libs에 삽입되며, 사용자 지정 코드로 덮어쓰지 않아야 합니다
 * 사용자 지정 코드는 /apps, /content 및 /conf에 삽입해야 합니다
 
-## 6.5 업그레이드에 미치는 영향 {#impact-on-upgrades}
+## 6.5 업그레이드에 대한 영향 {#impact-on-upgrades}
 
 AEM 6.5로 업그레이드할 때 /etc 아래에 있는 컨텐츠의 큰 하위 세트가 저장소의 다른 폴더에 복제됩니다. 이러한 새 위치는 컨텐츠를 참조하는 기본 위치입니다. 그러나 AEM 6.5 업그레이드가 /etc 폴더의 이전 위치와 이전 호환되도록 모든 시도가 수행되었으므로 대부분의 경우 변경 사항이 활성 상태가 될 때까지 및 대부분의 경우 수동으로 고객의 애플리케이션에서 수행될 때까지 AEM 코드에서 이전 위치를 계속 참조합니다. 타임라인 관점에서 변경 사항에는 두 가지 카테고리가 있습니다.
 

@@ -1,8 +1,8 @@
 ---
 title: 사용자 지정 구현에 대한 거래 기록
-seo-title: 사용자 지정 구현에 대한 거래 기록
+seo-title: Record a transaction for custom implementations
 description: TransactionRecorder API를 사용하여 자동으로 트랜잭션으로 계산되지 않는 작업을 기록합니다
-seo-description: TransactionRecorder API를 사용하여 자동으로 트랜잭션으로 계산되지 않는 작업을 기록합니다
+seo-description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 uuid: a22b1a0b-7553-4a17-8fb4-a3bee97b4a98
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,18 +11,18 @@ discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
 exl-id: a1d97b15-14a6-4c3d-bdd3-6366f7acdfc8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
-# 사용자 지정 구현에 대한 트랜잭션 기록 {#record-a-transaction-for-custom-implementations}
+# 사용자 지정 구현에 대한 거래 기록 {#record-a-transaction-for-custom-implementations}
 
 TransactionRecorder API를 사용하여 자동으로 트랜잭션으로 계산되지 않는 작업을 기록합니다
 
-사용자 지정 코드를 사용하여 PDF 양식을 제출하거나, AEM Forms에서 제공하는 제출 메서드를 사용하는 대신 에이전트 UI 미리 보기 URL을 최종 사용자에게 전송하여 대화형 커뮤니케이션을 미리 보거나, 사용자 지정 방법을 사용하여 양식을 제출할 수 있습니다. 이전에 언급된 모든 작업 및 AEM Forms API의 사용자 지정 구현은 트랜잭션으로 간주되지 않습니다. AEM Forms은 트랜잭션과 같은 작업을 기록하기 위한 API [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html) 를 제공합니다.
+사용자 지정 코드를 사용하여 PDF 양식을 제출하거나, 에이전트 UI 미리 보기 URL을 최종 사용자에게 전송하여 대화형 커뮤니케이션을 미리 보거나, AEM Forms에서 제공하는 제출 메서드를 사용하는 대신 사용자 지정 방법을 사용하여 양식을 제출할 수 있습니다. 이전에 언급된 모든 작업 및 AEM Forms API의 사용자 지정 구현은 트랜잭션으로 간주되지 않습니다. AEM Forms에서 API를 제공하는 경우 [트랜잭션 레코더](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html)를 눌러 트랜잭션과 같은 작업을 기록합니다.
 
-트랜잭션을 기록하려면 [표준 sling 서블릿](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html)을 작성하고 클라이언트에서 서블릿을 호출하여 트랜잭션을 기록합니다. AJAX 또는 기타 표준 방법을 사용하여 서블릿을 호출할 수 있습니다.
+트랜잭션을 기록하려면 [표준 sling 서블릿](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) 트랜잭션을 기록하려면 클라이언트에서 서블릿을 호출하십시오. AJAX 또는 기타 표준 방법을 사용하여 서블릿을 호출할 수 있습니다.
 
 ## 샘플 서버측 코드 {#sample-server-sided-code}
 
@@ -74,7 +74,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 ## 샘플 클라이언트측 코드 {#sample-client-side-code}
 
-아래 샘플 코드를 사용하여 `TransactionRecorder`API가 있는 서블릿을 호출할 수 있습니다.
+아래 샘플 코드를 사용하여 가 있는 서블릿을 호출할 수 있습니다 `TransactionRecorder`API.
 
 ```javascript
 $.ajax({

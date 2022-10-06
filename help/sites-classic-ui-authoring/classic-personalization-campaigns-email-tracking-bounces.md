@@ -1,8 +1,8 @@
 ---
 title: 바운스된 이메일 추적
-seo-title: 바운스된 이메일 추적
+seo-title: Tracking Bounced Emails
 description: 많은 사용자에게 뉴스레터를 전송할 때 일반적으로 목록에 유효하지 않은 이메일 주소가 포함되어 있습니다. 해당 주소로 뉴스레터를 보내면 바운스되어 돌아옵니다. AEM에서는 이러한 바운스를 관리하고 구성된 바운스 카운터를 초과할 경우 해당 주소로의 뉴스레터 전송을 중지할 수 있습니다.
-seo-description: 많은 사용자에게 뉴스레터를 전송할 때 일반적으로 목록에 유효하지 않은 이메일 주소가 포함되어 있습니다. 해당 주소로 뉴스레터를 보내면 바운스되어 돌아옵니다. AEM에서는 이러한 바운스를 관리하고 구성된 바운스 카운터를 초과할 경우 해당 주소로의 뉴스레터 전송을 중지할 수 있습니다.
+seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
 uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 81%
+source-wordcount: '711'
+ht-degree: 79%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 81%
 >
 >Adobe은 AEM SMTP 서비스로 열기/바운스된 전자 메일의 추적을 추가로 개선할 계획이 없습니다.
 >
->권장 사항은 [Adobe Campaign 및 해당 AEM 통합](/help/sites-administering/campaign.md)을 활용하는 것입니다.
+>추천은 다음과 같습니다 [Adobe Campaign과 해당 AEM 통합 활용](/help/sites-administering/campaign.md).
 
 많은 사용자에게 뉴스레터를 전송할 때 일반적으로 목록에 유효하지 않은 이메일 주소가 포함되어 있습니다. 해당 주소로 뉴스레터를 보내면 바운스되어 돌아옵니다. AEM에서는 이러한 바운스를 관리하고 구성된 바운스 카운터를 초과할 경우 해당 주소로의 뉴스레터 전송을 중지할 수 있습니다. 기본적으로 바운스 비율은 3으로 설정되지만 구성 가능합니다.
 
@@ -67,7 +67,7 @@ Feed Importer를 사용하면 외부 소스의 컨텐츠를 저장소로 반복�
 
    `imap.flag.SEEN`:새 메시지/보지 않은 메시지의 경우 false로설정, 이미 읽은 메시지의 경우 true로설정
 
-   플래그 전체 목록은 [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html)을 참조하십시오.
+   자세한 내용은 [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) 전체 플래그 목록을 표시합니다.
 
    **IMAP 예제:**
 
@@ -78,13 +78,13 @@ Feed Importer를 사용하면 외부 소스의 컨텐츠를 저장소로 반복�
 
 1. 구성을 저장합니다.
 
-## Newsletter 서비스 구성 요소 구성  {#configuring-the-newsletter-service-component}
+## Newsletter 서비스 구성 요소 구성 {#configuring-the-newsletter-service-component}
 
 Feed Importer를 구성한 후에 보낸 사람 주소 및 바운스 카운터를 구성해야 합니다.
 
 뉴스레터 서비스를 구성하려면:
 
-1. `<host>:<port>/system/console/configMgr`의 OSGi 콘솔에서 **MCM 뉴스레터**&#x200B;로 이동합니다.
+1. OSGi 콘솔에서 `<host>:<port>/system/console/configMgr` 및 **MCM 뉴스레터**.
 
 1. 서비스를 구성을 마친 후 변경 사항을 저장합니다.
 

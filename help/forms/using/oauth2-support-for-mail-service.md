@@ -1,6 +1,6 @@
 ---
 title: 메일 서비스에 대한 OAuth2 지원
-description: '메일 서비스에 대한 Oauth2 지원  '
+description: 메일 서비스에 대한 Oauth2 지원
 source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
 workflow-type: tm+mt
 source-wordcount: '690'

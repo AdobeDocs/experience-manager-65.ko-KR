@@ -1,8 +1,8 @@
 ---
 title: 클라우드 구성
-seo-title: 클라우드 구성
+seo-title: Cloud Configuration
 description: AEM(Adobe Experience Manager)은 클라우드 구성에 온디맨드 앱을 연결하면 양방향 링크를 설정하여 Mobile On-Demand 호스팅 프로젝트와 직접 통신할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
-seo-description: AEM(Adobe Experience Manager)은 클라우드 구성에 온디맨드 앱을 연결하면 양방향 링크를 설정하여 Mobile On-Demand 호스팅 프로젝트와 직접 통신할 수 있습니다. 자세한 내용은 이 페이지를 참조하십시오.
+seo-description: Associating an On-Demand App to a Cloud Configuration allows Adobe Experience Manager (AEM) to communicate directly with a Mobile On-Demand hosted project by establishing a two way link. Follow this page to learn more.
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '408'
 ht-degree: 3%
 
 ---
@@ -31,13 +31,13 @@ AEM(Adobe Experience Manager)은 클라우드 구성에 온디맨드 앱을 연�
 
 >[!CAUTION]
 >
->온디맨드 앱에 대한 클라우드 구성 구성을 시작하기 전에 AEM Mobile 프로비저닝 및 AEM Mobile On-demand Services 클라이언트 구성에 익숙해야 합니다.
+>온디맨드 앱에 대한 클라우드 구성 구성을 시작하기 전에 AEM Mobile Provisioning 및 AEM Mobile On-demand Services Client 구성에 익숙해야 합니다.
 >
->자세한 내용은 관리 섹션에서 [AEM Mobile On-demand Services 설정](/help/mobile/aem-mobile-setup.md)을 참조하십시오.
+>자세한 내용은 [AEM Mobile On-demand Services 설정](/help/mobile/aem-mobile-setup.md) 관리 섹션에 있습니다.
 
-Mobile On-Demand Cloud Services을 구성하려면 앱 대시보드에서 **연결 관리** 타일의 오른쪽 상단 모서리에 있는 위쪽 톱니바퀴를 클릭합니다.
+Mobile On-Demand Cloud Services을 구성하려면 오른쪽 상단 모서리에서 상단 톱니바퀴를 클릭합니다. **연결 관리** 앱 대시보드에서 타일을 만들 수 있습니다.
 
-앱 대시보드와 사용 가능한 타일에 익숙해야 합니다. 자세한 내용은 [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 를 참조하십시오.
+앱 대시보드와 사용 가능한 타일에 익숙해야 합니다. 자세한 내용은 [AEM Mobile 애플리케이션 대시보드](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 자세한 내용
 
 ### 클라우드 구성에 대한 링크 설정 {#setting-up-link-to-cloud-configuration}
 
@@ -45,26 +45,26 @@ Mobile On-Demand Cloud Services을 구성하려면 앱 대시보드에서 **연�
 >
 >기존 온디맨드 클라이언트 및 클라우드 구성이 있는지 확인합니다.
 >
->자세한 내용은 관리 섹션에서 [AEM Mobile On-demand Services 설정](/help/mobile/aem-mobile-setup.md)을 참조하십시오.
+>자세한 내용은 [AEM Mobile On-demand Services 설정](/help/mobile/aem-mobile-setup.md) 관리 섹션에 있습니다.
 
 다음 단계는 클라우드 구성에 대한 링크를 설정하는 방법에 대해 설명합니다.
 
-1. **모바일**&#x200B;에서 **앱**&#x200B;을 선택한 다음 카탈로그에서 모바일 온디맨드 앱을 선택합니다.
-1. **연결 관리** 타일에서 톱니바퀴 아이콘을 클릭합니다.
+1. From **모바일**, 선택 **앱** 그런 다음 카탈로그에서 Mobile On-Demand 앱을 사용할 수 있습니다.
+1. 에서 톱니바퀴 아이콘을 클릭합니다 **연결 관리** 타일.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. 이미 있는 구성을 입력하거나 **구성 제목**, **장치 ID** 및 **장치 토큰**&#x200B;을 입력하여 새 구성을 만드십시오.
+1. 기존 구성을 입력하거나 **구성 제목**, **장치 Id**, 및 **장치 토큰**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. **장치 Id** 및 **장치 토큰**&#x200B;이 확인되면 목록에서 온디맨드 프로젝트를 선택하십시오.
+1. 한 번 **장치 Id** 및 **장치 토큰** 확인되면 목록에서 온디맨드 프로젝트를 선택합니다.
 
-   **제출**&#x200B;을 클릭합니다.
+   클릭 **제출**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   **연결 관리** 타일에 클라우드 구성이 표시됩니다.
+   다음 **연결 관리** 타일에 클라우드 구성이 표시됩니다.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 

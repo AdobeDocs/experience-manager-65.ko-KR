@@ -1,8 +1,8 @@
 ---
 title: 백본 상호 작용
-seo-title: 백본 상호 작용
+seo-title: Backbone interaction
 description: AEM Forms 작업 공간에서 백본 JavaScript 모델 사용에 대한 개념 정보입니다.
-seo-description: AEM Forms 작업 공간에서 백본 JavaScript 모델 사용에 대한 개념 정보입니다.
+seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
 uuid: 040f42cb-3b76-4657-ba05-9e52647efb12
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,24 +12,24 @@ docset: aem65
 exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
 # 백본 상호 작용{#backbone-interaction}
 
-백본은 웹 응용 프로그램에서 MVC 아키텍처를 만들고 따르는 데 도움이 되는 라이브러리입니다. 백본의 기본 개념은 인터페이스를 논리 뷰로 구성하는 것입니다. 모델을 기반으로 하여 페이지를 다시 그릴 필요 없이 모델을 변경할 때 개별적으로 업데이트할 수 있습니다. 백본에 대한 자세한 내용은 [https://backbonejs.org](https://backbonejs.org/)을 참조하십시오.
+백본은 웹 응용 프로그램에서 MVC 아키텍처를 만들고 따르는 데 도움이 되는 라이브러리입니다. 백본의 기본 개념은 인터페이스를 논리 뷰로 구성하는 것입니다. 모델을 기반으로 하여 페이지를 다시 그릴 필요 없이 모델을 변경할 때 개별적으로 업데이트할 수 있습니다. 백본에 대한 자세한 내용은 [https://backbonejs.org](https://backbonejs.org/).
 
 몇 가지 주요 개념은 다음과 같습니다.
 
-**백본** 모델데이터와 이 데이터와 관련된 대부분의 논리를 포함합니다.
+**백본 모델** 데이터 및 이 데이터와 관련된 대부분의 논리를 포함합니다.
 
-**백본** 보기해당 모델의 상태를 나타내는 데 사용됩니다. 백본 보기는 실제로 컨트롤러처럼 동작하며, 사용자 클릭과 같은 사용자 인터페이스 이벤트를 수신하거나, 이벤트(예: 변경된 데이터)를 모델링하고, 사용자 인터페이스를 적절하게 수정합니다.
+**백본 보기** 해당 모델의 상태를 나타내는 데 사용됩니다. 백본 보기는 실제로 컨트롤러처럼 동작하며, 사용자 클릭과 같은 사용자 인터페이스 이벤트를 수신하거나, 이벤트(예: 변경된 데이터)를 모델링하고, 사용자 인터페이스를 적절하게 수정합니다.
 
-**HTML** 템플릿: 모델에서 채운 자리 표시자가 있는 래퍼 템플릿입니다.
+**HTML 템플릿** 모델로 채워진 자리 표시자가 있는 래퍼 템플릿입니다.
 
-**AEM Forms** workspace에는 몇 가지 개별 구성 요소가 포함되어 있습니다. 각 구성 요소:
+**AEM Forms 작업 공간** 여러 개의 개별 구성 요소를 포함합니다. 각 구성 요소:
 
 * 단일 논리 사용자 인터페이스 요소를 나타냅니다.
 * 유사한 구성 요소의 컬렉션일 수 있습니다.
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 * 구성 요소에 대한 백본 모델의 새 인스턴스가 생성됩니다. 모델에 서비스가 삽입됩니다.
 * 백본 보기의 새 인스턴스가 만들어집니다.
-* 해당 모델, HTML 템플릿 및 유틸리티의 인스턴스가 보기에 삽입됩니다.
+* 해당 모델, HTML 템플릿 및 유틸리티의 인스턴스가 뷰에 삽입됩니다.
 
 백본 뷰에는 해당 처리기와의 사용자 인터페이스 상호 작용으로 인해 발생할 수 있는 다양한 이벤트를 매핑하는 이벤트 맵이 있습니다. 구성 요소가 초기화되면 이 매핑이 시작됩니다.
 

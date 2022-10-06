@@ -1,8 +1,8 @@
 ---
 title: 검색
-seo-title: 검색
-description: AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
-seo-description: AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
+seo-title: Search
+description: AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
+seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 uuid: 6dd3df4d-6040-4230-8373-fc028687b675
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '470'
 ht-degree: 87%
 
 ---
 
 # 검색{#searching}
 
-AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
+AEM의 작성 환경에서는 리소스 유형에 따라 콘텐츠를 검색하기 위한 다양한 메커니즘을 제공합니다.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-검색 패널에서 모든 웹 사이트 페이지를 검색할 수 있습니다.여기에는 다음에 대한 필드와 위젯이 포함되어 있습니다.
+검색 패널에서 모든 웹 사이트 페이지를 검색할 수 있습니다. 여기에는 다음에 대한 필드와 위젯이 포함되어 있습니다.
 
 * **전체 텍스트**: 지정된 텍스트 검색
 * **수정 이후/이전**: 특정 날짜 사이에 변경된 페이지만 검색
@@ -45,15 +45,11 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 >
 >* [와일드카드](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [부울 연산자](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
-
-   >
-   >
-* [정규 표현식](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
+>
+>* [정규 표현식](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [필드 그룹화](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [증폭](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
-
 >
-
 
 
 창 하단에서 **검색**&#x200B;을 클릭하여 검색을 실행합니다. 검색 조건을 지우려면 **재설정**&#x200B;을 클릭합니다.
@@ -81,7 +77,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
    * 대/소문자를 구분하여 검색할지를 지정합니다.
    * 단어 단위로만 찾을지 아니면 부분 문자열도 찾을지를 지정합니다.
 
-   **미리 보기**&#x200B;를 클릭하면 단어를 찾은 위치가 나열됩니다.바꿀 특정 인스턴스를 선택하거나 지울 수 있습니다.
+   클릭 **미리 보기** 용어를 찾은 위치를 나열합니다. 바꿀 특정 인스턴스를 선택하거나 지울 수 있습니다.
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -94,7 +90,7 @@ AEM의 작성 환경에서는 리소스 유형에 따라 컨텐츠를 검색하�
 * `jcr:text`
 * `text`
 
-Apache Felix 웹 관리 콘솔(예: `https://localhost:4502/system/console/configMgr`)을 사용하면 범위를 변경할 수 있습니다. `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` 을 선택하고 필요에 따라 범위를 구성합니다.
+Apache Felix 웹 관리 콘솔(예: )을 사용하면 범위를 변경할 수 있습니다. `https://localhost:4502/system/console/configMgr`). 선택 `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` 필요에 따라 범위를 구성합니다.
 
 >[!NOTE]
 >

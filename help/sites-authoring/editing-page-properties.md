@@ -14,13 +14,13 @@ exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 82%
+ht-degree: 90%
 
 ---
 
 # 페이지 속성 편집{#editing-page-properties}
 
-페이지에 필요한 속성을 정의할 수 있습니다. 이러한 속성은 페이지의 특성에 따라 다를 수 있습니다. 예를 들어, 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 어떤 페이지는 연결되지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
+페이지에 필요한 속성을 정의할 수 있습니다. 이러한 속성은 페이지의 특성에 따라 다를 수 있습니다. 예를 들어 일부 페이지는 Live Copy에 연결되어 있을 수 있지만 어떤 페이지는 연결되지 않고 Live Copy 정보를 적절하게 사용할 수 있습니다.
 
 ## 페이지 속성 {#page-properties}
 
@@ -54,12 +54,12 @@ ht-degree: 82%
 
 * **브랜딩**
 
-   각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 간에 일관된 브랜드 이미지를 적용합니다. 이 기능을 사용하려면 [코어 구성 요소 릴리스 2.14.0 이상의 페이지 구성 요소를 사용해야 합니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)
+   각 페이지 제목에 브랜드 슬러그를 추가하여 페이지 전체에서 일관된 브랜드 정체성을 적용합니다. 이 기능을 사용하려면 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)의 릴리스 2.14.0 이상에서 페이지 구성 요소를 사용해야 합니다.
 
-   * **무시**  - 이 페이지에서 브랜드 슬러그를 정의하려면 을(를) 선택합니다.
-      * 이 값은 **Override** 값도 설정되지 않은 경우 하위 페이지에서도 상속됩니다.
-   * **값**  무시 - 페이지 제목에 추가할 브랜드 슬러그의 텍스트입니다.
-      * 이 값은 &quot;Cycling Tuscany&quot;와 같은 파이프 문자 뒤에 페이지 제목에 추가됩니다 | 항상 WKND에 대비할 수 있음&quot;
+   * **오버라이드** - 이 페이지의 브랜드 슬러그를 정의하려면 선택합니다.
+      * 하위 페이지에 **오버라이드** 값이 설정되지 않은 경우 이 값이 모든 하위 페이지에 상속됩니다.
+   * **오버라이드 값** - 페이지 제목에 추가될 브랜드 슬러그의 텍스트입니다.
+      * 이 값은 페이지에서 파이프 문자 뒤에 추가됩니다(예: “Cycling Tuscany | Always ready for the WKND”)
 * **페이지 제목**
 
    페이지에 사용할 제목입니다. 일반적으로 제목 구성 요소별로 사용됩니다. 비어 있으면 **제목**&#x200B;이 사용됩니다.
@@ -92,7 +92,7 @@ ht-degree: 82%
 
    이 페이지에 대한 별칭 URL을 입력할 수 있으므로 더 짧고 구체적인 URL을 사용할 수 있습니다.
 
-   예를 들어 웹 사이트 `http://example.com,`에 대해 경로 `/v1.0/startpage`로 식별되는 페이지에 대한 별칭 URL을 `welcome`으로 설정하면, `http://example.com/welcome`이 `http://example.com/content/v1.0/startpage`의 별칭 URL이 됩니다.
+   예를 들어 별칭 URL이 `welcome`경로별로 식별된 페이지로 `/v1.0/startpage`웹 사이트용 `http://example.com,` 그런 다음 `http://example.com/welcome`의 별칭 URL이 됩니다. `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -103,7 +103,7 @@ ht-degree: 82%
    >* 기존 페이지로 설정하면 안 됩니다.
 
 
-   별칭 URL에 액세스할 수 있도록 Dispatcher를 구성해야 합니다. 자세한 내용은 [별칭 URL에 대한 액세스 활성화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)를 참조하십시오.
+   별칭 URL에 액세스할 수 있도록 Dispatcher를 구성해야 합니다. 자세한 내용은 [별칭 URL에 대한 액세스 활성화](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) 자세한 내용
 
 * **별칭 URL 리디렉션**
 
@@ -131,10 +131,10 @@ ht-degree: 82%
 
    이 페이지에 사용할 별칭을 지정합니다.
 
-   * 예를 들어 `/content/wknd/us/en/magazine/members-only` 페이지에 대해 `private` 별칭을 정의하면, 이 페이지는 `/content/wknd/us/en/magazine/private` 를 통해 액세스할 수도 있습니다
-   * 별칭을 만들면 저장소 경로가 아니라 리소스에만 영향을 주는 페이지 노드에 `sling:alias` 속성을 설정합니다.
-   * 편집기에서 별칭으로 액세스한 페이지를 게시할 수 없습니다. [편집기](/help/sites-authoring/publishing-pages.md) 의 게시 옵션은 실제 경로를 통해 액세스되는 페이지에만 사용할 수 있습니다.
-   * 자세한 내용은 SEO 및 URL 관리 우수 사례](/help/managing/seo-and-url-management.md#localized-page-names)에서 현지화된 페이지 이름 을 참조하십시오.[
+   * 예를 들어 페이지 `/content/wknd/us/en/magazine/members-only`에 대한 `private`의 별칭을 정의하면 `/content/wknd/us/en/magazine/private`을 통해서도 이 페이지에 액세스할 수 있습니다.
+   * 별칭을 만들면 페이지 노드의 `sling:alias` 속성이 설정되며, 이는 저장소 경로가 아닌 리소스에만 영향을 미칩니다.
+   * 편집기의 별칭을 통해 액세스하는 페이지는 게시할 수 없습니다. 편집기의 [게시 옵션](/help/sites-authoring/publishing-pages.md)은 실제 경로를 통해 액세스하는 페이지에 대해서만 사용할 수 있습니다.
+   * 자세한 내용은 [SEO 및 URL 관리 우수 사례에서 현지화된 페이지 이름](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **&lt;*경로*>에서 상속됨**
 
@@ -158,7 +158,7 @@ ht-degree: 82%
 
    >[!CAUTION]
    >
-   >**[권한](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 `granite:AuthenticationRequired` mixin의 유무에 따라 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 **인증 요구 사항** 아래에 표시되고, 옵션이나 [권한](/help/sites-authoring/editing-page-properties.md#permissions)은 편집할 수 없습니다.
+   >다음 **[권한](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** 탭에서는 `granite:AuthenticationRequired` 믹신 이제 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 페이지의 존재 여부에 따라 `cq:cugEnabled` 속성, 경고 메시지가 **인증 요구 사항** 및 옵션은 편집할 수 없고 [권한](/help/sites-authoring/editing-page-properties.md#permissions) 편집 가능합니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
@@ -214,7 +214,7 @@ ht-degree: 82%
 
    [ContextHub 구성](/help/sites-developing/ch-configuring.md) 및 [세그먼트 경로](/help/sites-administering/segmentation.md)를 선택합니다.
 
-* **타깃팅 구성**
+* **타겟팅 구성**
 
    [타깃팅할 범위를 지정하려면 브랜드](/help/sites-authoring/target-adobe-campaign.md)를 선택합니다.
 
@@ -233,14 +233,14 @@ ht-degree: 82%
    * [유효 권한](/help/sites-administering/user-group-ac-admin.md) 보기
    >[!CAUTION]
    >
-   >**권한** 탭에서는 `granite:AuthenticationRequired` mixin의 유무에 따라 CUG 구성을 편집할 수 있습니다. 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
+   >다음 **권한** 탭에서는 `granite:AuthenticationRequired` 믹신 더 이상 사용되지 않는 CUG 구성을 사용하여 페이지 권한을 구성하는 경우 `cq:cugEnabled` 속성을 기반으로 경고 메시지가 표시되고 CGU 권한이나 [고급](/help/sites-authoring/editing-page-properties.md#advanced) 탭의 인증 요구 사항을 편집할 수 없습니다.
    >
    >
    >이러한 경우, CUG 권한은 [클래식 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)에서 편집해야 합니다.
 
    >[!NOTE]
    >
-   >[권한] 탭에서는 비어 있는 CGU 그룹 생성을 허용하지 않으며, 모든 사용자에 대한 액세스를 거부하는 간단한 방법으로 유용할 수 있습니다. 이를 위해서는 CRX 탐색기를 사용해야 합니다. 자세한 내용은 [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md) 문서를 참조하십시오.
+   >[권한] 탭에서는 비어 있는 CGU 그룹 생성을 허용하지 않으며, 모든 사용자에 대한 액세스를 거부하는 간단한 방법으로 유용할 수 있습니다. 이를 위해서는 CRX 탐색기를 사용해야 합니다. 문서를 참조하십시오 [사용자, 그룹 및 액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md) 추가 정보.
 
 ### 블루프린트 {#blueprint}
 
@@ -248,7 +248,7 @@ ht-degree: 82%
 
    [다중 사이트 관리](/help/sites-administering/msm.md) 내에서 [블루프린트] 페이지에 대한 속성을 정의합니다. 수정 내용이 Live Copy로 전파되는 상황을 제어합니다.
 
-### Live Copy {#live-copy}
+### 라이브 카피 {#live-copy}
 
 * **Livecopy**
 
@@ -271,7 +271,7 @@ ht-degree: 82%
       * 단일 페이지의 경우
       * 여러 페이지의 경우(속성의 하위 집합만 편집 가능)
 
-* 페이지 편집기에서:
+* 페이지 편집기에서
 
    * **페이지 정보**&#x200B;를 사용하여 **속성 열기**
 
@@ -302,20 +302,20 @@ ht-degree: 82%
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. **속성 열기**&#x200B;를 선택하면 해당 탭별로 정렬된 속성을 편집할 수 있는 대화 상자가 열립니다. 다음 단추들은 도구 모음의 오른쪽에서도 사용할 수 있습니다.
+1. 선택 **속성 열기** 해당 탭별로 정렬된 속성을 편집할 수 있는 대화 상자가 열립니다. The following buttons are also available at the right of the toolbar:
 
    * **취소**
    * **저장 및 닫기**
 
-1. **저장 및 닫기** 단추를 사용하여 변경 사항을 저장합니다.
+1. **저장 및 닫기** 버튼을 사용하여 변경 사항을 저장합니다.
 
 ### 사이트 콘솔에서 - 다중 페이지 {#from-the-sites-console-multiple-pages}
 
-**사이트** 콘솔에서 여러 페이지를 선택한 다음 **속성 보기**&#x200B;를 사용하여 페이지 속성을 보거나 편집할 수 있습니다. 이를 페이지 속성의 벌크 편집이라고 합니다.
+From the **Sites** console you can select several pages then use **View Properties** to view and/or edit the page properties. This is referred to as bulk editing of page properties.
 
 >[!NOTE]
 >
->속성의 벌크 편집은 자산에 대해서도 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 [다중 자산의 속성 편집](/help/assets/metadata.md)을 참조하십시오.
+>속성의 벌크 편집은 에셋에 대해서도 사용할 수 있습니다. 비슷하지만 몇 가지 차이점이 있습니다. 자세한 내용은 [다중 자산의 속성 편집](/help/assets/metadata.md)을 참조하십시오.
 >
 >GQL(Google 쿼리 언어)을 사용하여 여러 페이지에서 컨텐츠를 검색한 다음 변경 사항을 원래 페이지에 저장하기 전에 [벌크 편집기]에서 직접 컨텐츠를 편집할 수 있으므로 [벌크 편집기](/help/sites-administering/bulk-editor.md)라고도 합니다.
 
@@ -337,7 +337,7 @@ ht-degree: 82%
 
    * 페이지가 Live Copy에 있을 경우 속성을 열면 메시지가 표시됩니다.
 
-벌크 편집을 시작하면 다음을 수행할 수 있습니다.
+벌크 편집을 시작하면 다음과 같은 작업을 수행할 수 있습니다.
 
 * **보기**
 

@@ -13,15 +13,15 @@ feature: Configuration
 source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # Dynamic Media에서 핫링크 보호 활성화 {#activating-hotlink-protection-in-dynamic-media}
 
-핫 링크는 타사 웹 사이트가 HTML 코드를 사용하여 웹 사이트의 이미지를 표시하는 경우입니다. 방문자의 브라우저가 사용자의 서버에서 직접 그림을 액세스하고 있으므로 사진이 요청될 때마다 대역폭을 사용합니다. 핫링크 *보호*&#x200B;는 다른 웹 사이트가 웹 페이지의 사진, CSS 또는 JavaScript에 직접 연결되지 않도록 하는 방법입니다. 이러한 종류의 차드는 Dynamic Media 계정에서 불필요한 대역폭 사용을 줄이는 데 도움이 됩니다.
+핫 링크는 타사 웹 사이트가 HTML 코드를 사용하여 웹 사이트의 이미지를 표시하는 경우입니다. 방문자의 브라우저가 사용자의 서버에서 직접 그림을 액세스하고 있으므로 사진이 요청될 때마다 대역폭을 사용합니다. Hotlink *보호* 다른 웹 사이트가 웹 페이지의 사진, CSS 또는 JavaScript에 직접 연결하지 않도록 하는 방법입니다. 이러한 종류의 차드는 Dynamic Media 계정에서 불필요한 대역폭 사용을 줄이는 데 도움이 됩니다.
 
-[Experience Manager 고객 ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) 지원에서는 Dynamic Media 컨텐츠가 도메인에 대해 허용된 웹 사이트 목록의 웹 사이트에만 제공되도록 CDN(Content Delivery Network) 수준에서 레퍼러 필터를 구성할 수 있습니다.
+[고객 지원 Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) 은 CDN(Content Delivery Network) 수준에서 레퍼러 필터를 구성하여 Dynamic Media 컨텐츠가 도메인에 대해 허용된 웹 사이트 목록의 웹 사이트에만 제공되도록 할 수 있습니다.
 
 >[!NOTE]
 >

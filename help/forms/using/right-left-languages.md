@@ -1,8 +1,8 @@
 ---
 title: HTML5 양식의 오른쪽에서 왼쪽 쓰기 언어
-seo-title: HTML5 양식의 오른쪽에서 왼쪽 쓰기 언어
-description: HTML5 양식을 히브리어와 같은 오른쪽에서 왼쪽 쓰기 언어로 표시하거나 채울 수 있습니다.
-seo-description: HTML5 양식을 히브리어와 같은 오른쪽에서 왼쪽 쓰기 언어로 표시하거나 채울 수 있습니다.
+seo-title: Right-to-left languages in HTML5 forms
+description: HTML5 양식은 히브리어와 같은 오른쪽에서 왼쪽 쓰기 언어로 표시하거나 채울 수 있습니다.
+seo-description: HTML5 forms can be displayed or filled in right-to-left languages, such as Hebrew.
 uuid: 37639671-3207-49aa-b110-8e39fd648449
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,8 +12,8 @@ feature: Mobile Forms
 exl-id: c65f425b-b0bc-4ec7-ac56-7f24bd8b52d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 1%
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
 

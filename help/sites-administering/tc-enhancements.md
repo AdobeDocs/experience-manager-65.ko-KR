@@ -13,7 +13,7 @@ exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
 source-git-commit: 1be3d394283493f7c282ea4c3d794458d88e1ac3
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 11%
+ht-degree: 34%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 11%
 
 ## 번역 메모리 업데이트 {#translation-memory-updates}
 
-번역된 컨텐츠의 수동 편집 내용을 TMS(Translation Management System)에 다시 동기화하여 번역 메모리를 학습할 수 있습니다.
+번역된 콘텐츠의 수동 편집 내용을 번역 관리 시스템(TMS)과 다시 동기화하여 번역 메모리를 트레이닝할 수 있습니다.
 
 1. 사이트 콘솔에서 번역된 페이지에서 텍스트 컨텐츠를 업데이트한 후 을 선택합니다 **번역 메모리 업데이트**.
 
@@ -73,20 +73,20 @@ ht-degree: 11%
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
-AEM은 구성된 TMS의 번역 메모리에서 기존 문자열의 번역을 업데이트합니다.
+AEM은 구성된 TMS의 번역 메모리에 기존 문자열의 번역을 업데이트합니다.
 
-* 작업은 구성된 TMS의 번역 메모리에서 기존 문자열의 번역을 업데이트합니다.
-* 새 번역 작업이 생성되지 않습니다.
-* AEM 번역 API를 통해 번역을 TMS로 다시 보냅니다(아래 참조).
+* 이 작업은 구성된 TMS의 번역 메모리에 기존 문자열의 번역을 업데이트합니다.
+* 이는 새로운 번역 작업을 생성하지 않습니다.
+* 이는 AEM 번역 API를 통해 TMS로 번역을 다시 전달합니다(아래 참조).
 
-이 기능을 사용하려면
+이 기능을 사용하려면 다음 작업을 수행하십시오.
 
-* AEM에서 사용하도록 TMS를 구성해야 합니다.
-* 커넥터는 메서드를 구현해야 합니다 [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
-   * 이 메서드 내의 코드는 번역 메모리 업데이트 요청에 대한 작업을 결정합니다.
-   * AEM 번역 프레임워크는 이 메서드 구현을 통해 문자열 값 쌍(원래 및 업데이트된 번역)을 다시 TMS로 전송합니다.
+* TMS를 AEM과 사용할 수 있도록 구성해야 합니다.
+* 커넥터가 방법 [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)를 구현해야 합니다.
+   * 이 방법에 포함되는 코드는 번역 메모리 업데이트 요청에 발생하는 일을 결정합니다.
+   * 이 방법의 구현을 통해 AEM 번역 프레임워크는 문자열 값 쌍(원본 번역과 업데이트된 번역)을 TMS로 다시 전달합니다.
 
-번역 메모리 업데이트는 독점적 번역 메모리를 사용하는 경우 가로채서 사용자 지정 대상으로 전송될 수 있습니다.
+독점 번역 메모리를 사용하는 경우 번역 메모리 업데이트가 이전되어 사용자 정의 대상으로 전달될 수 있습니다.
 
 ## 여러 수준의 언어 사본 {#language-copies-on-multiple-levels}
 

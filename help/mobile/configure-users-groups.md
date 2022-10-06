@@ -1,8 +1,8 @@
 ---
 title: 사용자 및 사용자 그룹 구성
-seo-title: 사용자 및 사용자 그룹 구성
+seo-title: Configure Your Users and User Groups
 description: 모바일 앱의 작성 및 관리를 지원하도록 사용자 역할 및 사용자 및 그룹을 구성하는 방법을 이해하려면 이 페이지를 따르십시오.
-seo-description: 모바일 앱의 작성 및 관리를 지원하도록 사용자 역할 및 사용자 및 그룹을 구성하는 방법을 이해하려면 이 페이지를 따르십시오.
+seo-description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and mangement of your mobile apps.
 uuid: 55cea2b3-d7e6-4174-92b3-ee97e46b59c4
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
 exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -40,34 +40,34 @@ AEM 앱에 대한 권한 모델을 구성하고 관리하는 데 도움이 되�
 
 1. &#39;app-authors&#39;라는 새 사용자 그룹을 만듭니다.
 
-   사용자 Admin Console으로 이동합니다.[http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   사용자 Admin Console으로 이동합니다. [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    사용자 그룹 콘솔 내에서 &#39;+&#39; 버튼을 선택하여 그룹을 만듭니다.
 
    이 그룹의 ID를 &#39;app-authors&#39;로 설정하여 AEM 내의 모바일 애플리케이션 작성과 관련된 특정 유형의 작성자 사용자 그룹임을 나타냅니다.
 
-1. 그룹에 구성원 추가:작성자
+1. 그룹에 구성원 추가: 작성자
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
    작성자 그룹에 앱 작성자 추가
 
-1. 앱 작성자 사용자 그룹을 만들었으므로 이제 [사용자 관리 콘솔](http://localhost:4502/libs/granite/security/content/useradmin.md)을 통해 개별 팀 구성원을 이 새 그룹에 추가할 수 있습니다.
+1. 앱 작성자 사용자 그룹을 만들었으므로 이제 [사용자 관리 콘솔](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    사용자 그룹 편집
 
-1. [권한 콘솔](http://localhost:4502/useradmin)로 이동하고 cloudservices 관리에 권한을 추가합니다
+1. 로 이동합니다 [권한 콘솔](http://localhost:4502/useradmin) cloudservices에 대한 권한을 추가합니다
 
    * /etc/cloudservices에서 (읽기)
    >[!NOTE]
    >
    >앱 작성자는 AEM에서 기본 컨텐츠 작성자(작성자) 그룹을 확장하여 /content/phonegap 아래에 컨텐츠를 만드는 기능을 상속합니다
 
-### AEM Mobile 애플리케이션 관리자 그룹(app-admins 그룹) {#aem-mobile-application-administrators-group-app-admins-group}
+### AEM Mobile 애플리케이션 관리자 그룹(앱 관리자 그룹) {#aem-mobile-application-administrators-group-app-admins-group}
 
-app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 동일한 권한을 가진 애플리케이션 컨텐츠를 작성할 수 있으며, 또한 다음 작업도 수행할 수 있습니다.
+앱 관리자 그룹의 구성원은 앱 작성자에 포함된 동일한 권한으로 애플리케이션 컨텐츠를 작성할 수 있습니다 **및** 또한 다음을 수행할 책임이 있습니다.
 
 * AEM에서 PhoneGap Build 및 Adobe Mobile Services 클라우드 서비스 구성
 * 응용 프로그램 콘텐츠 동기화 OTA 업데이트 준비, 게시 및 지우기
@@ -78,7 +78,7 @@ app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 동�
 >
 >일부 옵션은 앱 관리자가 사용할 수 있는 앱 작성자가 사용할 수 없습니다.
 
-#### 그룹 구성 - app-admins {#group-configuration-app-admins}
+#### 그룹 구성 - 앱 관리자 {#group-configuration-app-admins}
 
 1. 앱 관리자라는 새 그룹을 만듭니다.
 1. 새 앱 관리자 그룹에 다음 그룹을 추가합니다.
@@ -88,7 +88,7 @@ app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 동�
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. [권한 콘솔](http://localhost:4502/useradmin)로 이동하고 cloudservices 관리에 권한을 추가합니다
+1. 로 이동합니다 [권한 콘솔](http://localhost:4502/useradmin) cloudservices에 대한 권한을 추가합니다
 
    * /etc/cloudservices/mobilesservices에서 (읽기, 수정, 만들기, 삭제, 복제)
    * /etc/cloudservices/phonegap-build에서 (읽기, 수정, 만들기, 삭제, 복제)
@@ -114,14 +114,14 @@ app-admins 그룹의 구성원은 app-authors **AND**&#x200B;에 포함된 동�
 
 대시보드 타일은 사용자의 권한에 따라 다른 작업을 표시할 수 있습니다. 다음은 각 타일에 사용할 수 있는 작업을 설명합니다.
 
-이러한 권한 외에 현재 앱이 구성되는 방식을 기반으로 작업을 표시하거나 숨길 수도 있습니다. 예를 들어 앱에 PhoneGap 클라우드 구성이 할당되지 않은 경우 &#39;원격 빌드&#39; 작업을 노출하는 지점이 없습니다. 이러한 항목은 &#39;**구성 조건**&#39; 섹션 아래에 나열됩니다.
+이러한 권한 외에 현재 앱이 구성되는 방식을 기반으로 작업을 표시하거나 숨길 수도 있습니다. 예를 들어 앱에 PhoneGap 클라우드 구성이 할당되지 않은 경우 &#39;원격 빌드&#39; 작업을 노출하는 지점이 없습니다. 이러한 항목은 &#39; 아래에 나열됩니다.**구성 조건**&#39; 섹션.
 
 ### 앱 타일 관리 {#manage-app-tile}
 
 현재 타일에는 권한이 필요한 작업이 없지만 응용 프로그램의 세부 사항 페이지에는 다음 작업이 있습니다.
 
-* ** 앱 작성자 및 앱 관리자 편집(UI 트리거 - jcr:write - on /content/phonegap/{suffix})
-* ** app-author 및 app-admin(UI 트리거 - /content/phonegap/{suffix}) 다운로드
+* *편집* app-author 및 app-admin(UI 트리거 - jcr:write - on /content/phonegap/{suffix})
+* *다운로드* app-author 및 app-admin(UI 트리거 - /content/phonegap/{suffix})
 
 아래 이미지는 앱에 대한 다운로드 및 편집 옵션을 보여줍니다.
 
