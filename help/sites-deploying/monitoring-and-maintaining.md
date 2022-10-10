@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: fd9661ee94edf8f88a93ae35ba2563b3021add4d
+source-git-commit: 85987222e8b216f22ae1fec4e080488d01f23063
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5905'
 ht-degree: 1%
 
 ---
@@ -128,14 +128,14 @@ AEM 인스턴스가 배포되면 작업, 성능 및 무결성을 모니터링하
    ![버전 제거 구성](assets/version-purge-configuration.png)
 
    * **경로 제거**
-제거할 컨텐츠의 시작 경로(예: 
-`/content/wknd`).
+제거할 컨텐츠의 시작 경로를 설정합니다. 예 
+`/content/wknd`.
 
       >[!CAUTION]
       >
       >각 웹 사이트에 대해 여러 경로를 정의하는 것이 좋습니다.
       >
-      >하위 항목이 너무 많은 경로를 정의하면 제거 수행 시간이 길어집니다.
+      >하위 항목이 너무 많은 경로를 정의하면 제거 수행 시간이 크게 길어질 수 있습니다.
 
    * **재귀적으로 버전 삭제**
 
