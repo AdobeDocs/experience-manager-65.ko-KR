@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 85987222e8b216f22ae1fec4e080488d01f23063
+source-git-commit: b9a3db4144a571291bdf1c9a9f0e841f284df0c8
 workflow-type: tm+mt
-source-wordcount: '5905'
+source-wordcount: '5972'
 ht-degree: 1%
 
 ---
@@ -609,12 +609,12 @@ Felix 콘솔에서는 Sling 로그 지원 정보도 제공합니다 `../system/c
   <tr>
    <td>스레드 덤프</td>
    <td>JVM 스레드를 관찰합니다. 연락처, 잠금 및 장기 러너를 식별합니다.</td>
-   <td><p>운영 체제에 따라 다름:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows(콘솔 모드): Ctrl-Break<br /> </p> <p>다음과 같은 분석 도구를 사용할 수도 있습니다 <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+   <td><p>운영 체제에 따라 다름:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows(콘솔 모드): Ctrl-Break<br /> </p> <p>다음과 같은 분석 도구를 사용할 수도 있습니다 <a href="https://github.com/irockel/tda">TDA</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>Heap 덤프</td>
    <td>메모리 부족 문제로 인해 성능이 저하됩니다.</td>
-   <td><p>추가:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> AEM에 대한 java 호출에 대한 옵션.</p> <p>자세한 내용은 <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">HotSpot VM을 사용하는 Java SE 6에 대한 문제 해결 가이드</a>.</p> </td>
+   <td><p>추가:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> AEM에 대한 java 호출에 대한 옵션.</p> <p>자세한 내용은 <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/prepapp002.html#CEGBHDFH">JVM 문제 해결 페이지에 대한 옵션/플래그</a>.</p> </td>
   </tr>
   <tr>
    <td>시스템 호출</td>
@@ -624,7 +624,7 @@ Felix 콘솔에서는 Sling 로그 지원 정보도 제공합니다 `../system/c
   <tr>
    <td>Apache Bench</td>
    <td>메모리 누수를 확인하고 응답 시간을 선택적으로 분석합니다.</td>
-   <td><p>기본 사용 방법은 다음과 같습니다.</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>자세한 내용은 <a href="#apache-bench">Apache Bench</a> 그리고 <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">ab 매뉴얼 페이지</a> 자세한 내용</p> </td>
+   <td><p>기본 사용 방법은 다음과 같습니다.</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>자세한 내용은 <a href="#apache-bench">Apache Bench</a> 그리고 <a href="https://httpd.apache.org/docs/2.4/programs/ab.html">ab 매뉴얼 페이지</a> 자세한 내용</p> </td>
   </tr>
   <tr>
    <td>검색 분석</td>
@@ -634,7 +634,7 @@ Felix 콘솔에서는 Sling 로그 지원 정보도 제공합니다 `../system/c
   <tr>
    <td>JMeter</td>
    <td>부하 및 기능 테스트.</td>
-   <td><a href="https://jakarta.apache.org/jmeter/">https://jakarta.apache.org/jmeter/</a></td>
+   <td><a href="https://jmeter.apache.org/">https://jmeter.apache.org/</a></td>
   </tr>
   <tr>
    <td>JProfiler</td>
@@ -642,14 +642,19 @@ Felix 콘솔에서는 Sling 로그 지원 정보도 제공합니다 `../system/c
    <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
   </tr>
   <tr>
+   <td>Java 비행 기록 장치</td>
+   <td>JFR(Java Flight Recorder)은 실행 중인 Java 응용 프로그램에 대한 진단 및 프로파일링 데이터를 수집하는 도구입니다.</td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE</a></td>
+  </tr>
+  <tr>
    <td>JConsole</td>
    <td>JVM 지표 및 스레드를 관찰합니다.</td>
-   <td><p>사용: jconsole</p> <p>자세한 내용은 <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> 및 <a href="#monitoring-performance-using-jconsole">JConsole을 사용한 성능 모니터링</a>.</p> <p><strong>참고:</strong> JDK 1.6을 사용하는 JConsole은 플러그인으로 확장 가능합니다. 예를 들어 Top 또는 TDA(스레드 덤프 분석기)가 있습니다.</p> </td>
+   <td><p>사용: jconsole</p> <p>자세한 내용은 <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> 및 <a href="#monitoring-performance-using-jconsole">JConsole을 사용한 성능 모니터링</a>.</p> <p><strong>참고:</strong> JDK 1.8을 사용하는 JConsole은 플러그인으로 확장 가능합니다. 예를 들어 Top 또는 TDA(스레드 덤프 분석기)가 있습니다.</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
    <td>JVM 지표, 스레드, 메모리 및 프로파일링을 관찰합니다.</td>
-   <td><p>사용: visualvm 또는 visualvm<br /> </p> <p>자세한 내용은 <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> 및 <a href="#monitoring-performance-using-j-visualvm">J)VisualVM을 사용하여 성능 모니터링</a>.</p> <p><strong>참고:</strong> JDK 1.6을 사용하면 VisualVM을 플러그인으로 확장할 수 있습니다.</p> </td>
+   <td><p>사용: visualvm 또는 visualvm<br /> </p> <p>자세한 내용은 <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> 및 <a href="#monitoring-performance-using-j-visualvm">J)VisualVM을 사용하여 성능 모니터링</a>.</p> <p><strong>참고:</strong> JDK 1.8을 사용하면 VisualVM을 플러그인으로 확장할 수 있습니다. VisualVM은 JDK 9 이후에 중단됩니다. 대신 Java 비행 기록기를 사용하십시오.</p> </td>
   </tr>
   <tr>
    <td>트러스/strace, lsof</td>
@@ -664,7 +669,7 @@ Felix 콘솔에서는 Sling 로그 지원 정보도 제공합니다 `../system/c
   <tr>
    <td>CPU 및 메모리 프로파일링 도구<br /> </td>
    <td><a href="#interpreting-the-request-log">개발 중 느린 요청을 분석할 때 사용됩니다.</a>.</td>
-   <td>예, <a href="https://www.yourkit.com/">YourKit</a>.</td>
+   <td>예, <a href="https://www.yourkit.com/">YourKit</a>. 또는 <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">Java 비행 기록 장치</a>.</td>
   </tr>
   <tr>
    <td><a href="#information-collection">정보 수집</a></td>
@@ -810,7 +815,7 @@ $ java -jar ../opt/helpers/rlog.jar -n 10 request.log
 
 ### Apache Bench {#apache-bench}
 
-특수 사례(예: 가비지 수집 등)의 영향을 최소화하기 위해 다음과 같은 도구를 사용하는 것이 좋습니다 `apachebench` (예: [ab](https://httpd.apache.org/docs/2.2/programs/ab.html) 추가 설명서에서)를 사용하여 메모리 누수를 식별하고 응답 시간을 선택적으로 분석할 수 있습니다.
+특수 사례(예: 가비지 수집 등)의 영향을 최소화하기 위해 다음과 같은 도구를 사용하는 것이 좋습니다 `apachebench` (예: [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) 추가 설명서에서)를 사용하여 메모리 누수를 식별하고 응답 시간을 선택적으로 분석할 수 있습니다.
 
 Apache Bench는 다음과 같은 방법으로 사용할 수 있습니다.
 
@@ -921,7 +926,7 @@ Percentage of the requests served within a certain time (ms)
 
 ### J)VisualVM을 사용하여 성능 모니터링 {#monitoring-performance-using-j-visualvm}
 
-JDK 1.6 이후 도구 명령 `jvisualvm` 사용할 수 있습니다. JDK 1.6을 설치한 후 다음을 수행할 수 있습니다.
+JDK 6-8의 경우 도구 명령 `visualvm` 사용할 수 있습니다. JDK를 설치한 후 다음을 수행할 수 있습니다.
 
 1. AEM 인스턴스를 시작합니다.
 
@@ -932,7 +937,7 @@ JDK 1.6 이후 도구 명령 `jvisualvm` 사용할 수 있습니다. JDK 1.6을 
 1. 다음 중 하나를 실행합니다.
 
    * `jvisualvm`: JDK 1.6 bin 폴더(테스트된 버전)에서
-   * `visualvm`: 에서 다운로드할 수 있습니다. [VisualVM](https://visualvm.dev.java.net/) (가장자리 버전 출혈)
+   * `visualvm`: 에서 다운로드할 수 있습니다. [VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) (가장자리 버전 출혈)
 
 1. 에서 `Local` 응용 프로그램, 두 번 클릭 `com.day.crx.quickstart.Main`; 개요가 기본값으로 표시됩니다.
 
@@ -1185,7 +1190,7 @@ JVM(Java Virtual Machine)은 튜닝(특히 Java 7 이후)과 관련하여 크게
    ```
 
 * 그런 다음 JConsole을 사용하여 JVM에 연결합니다. 다음을 참조하십시오.
-   ` [https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html)`
+   ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
 
 이렇게 하면 사용 중인 메모리 크기, 사용 중인 GC 알고리즘, 실행 시간 및 애플리케이션 성능에 어떤 영향을 주는지 확인할 수 있습니다. 이렇게 하지 않으면 튜닝은 &quot;임의로 사용하는 매듭들&quot;일 뿐입니다.
 
@@ -1193,4 +1198,4 @@ JVM(Java Virtual Machine)은 튜닝(특히 Java 7 이후)과 관련하여 크게
 >
 >oracle의 VM에 대한 정보는 다음과 같습니다.
 >
->[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
