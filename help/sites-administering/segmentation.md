@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d546462b4b78a743e047dcfea5fc2dc92d131bb5
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 82%
+source-wordcount: '1787'
+ht-degree: 79%
 
 ---
 
@@ -35,9 +35,13 @@ AEM을 사용하면 사용자의 경험을 쉽게 개인화할 수 있습니다.
 
 다음 [대상](/help/sites-authoring/managing-audiences.md) 콘솔은 Adobe Target 계정의 대상뿐만 아니라 ContextHub 또는 Client Context용 세그먼트를 관리하는 데 사용됩니다. 이 설명서에서는 ContextHub용 세그먼트 관리 방법에 대해 다룹니다. 대상 [Client Context 세그먼트](/help/sites-administering/campaign-segmentation.md) 및 Adobe Target 세그먼트 은 관련 설명서를 참조하십시오.
 
-세그먼트에 액세스하려면 전역 탐색에서 **탐색 > 개인화 > 대상자**&#x200B;를 선택하십시오.
+세그먼트에 액세스하려면 구성을 선택해야 합니다. 전역 탐색에서 를 선택합니다 **탐색 > 개인화 > 대상**. 사용 가능한 구성이 표시됩니다.
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![대상 - 구성](assets/segmentation-access-confs.png)
+
+구성을 선택하여 세그먼트를 확인합니다(예: WKND 사이트).
+
+![대상 - 세그먼트](assets/segmentation-access-segments.png)
 
 ## 세그먼트 편집기 {#segment-editor}
 
@@ -60,7 +64,7 @@ AEM을 사용하면 사용자의 경험을 쉽게 개인화할 수 있습니다.
 <table>
  <tbody>
   <tr>
-   <td>컨테이너 AND<br /> </td>
+   <td>컨테이너 AND<br />을 따르지 않는 경우입니다 </td>
    <td>부울 AND 연산자<br /> </td>
   </tr>
   <tr>
@@ -130,7 +134,7 @@ AEM을 사용하면 사용자의 경험을 쉽게 개인화할 수 있습니다.
 
 새 세그먼트를 정의하려면 다음 작업을 수행하십시오.
 
-1. [세그먼트에 액세스](/help/sites-administering/segmentation.md#accessing-segments)한 후 세그먼트를 작성하고자 하는 [폴더로 이동](#organizing-segments)하거나 해당 폴더를 루트에 둡니다.
+1. 후 [세그먼트 액세스](/help/sites-administering/segmentation.md#accessing-segments), [폴더로 이동합니다](#organizing-segments) 세그먼트를 만들 위치.
 
 1. 만들기 단추를 클릭하거나 탭하고 선택합니다 **ContextHub 세그먼트 만들기**.
 
