@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4045313200ffecbf05abfacd67aabc80ad67e7f
 workflow-type: tm+mt
 source-wordcount: '3892'
 ht-degree: 6%
@@ -28,7 +28,7 @@ HTML5 양식에서 지원되는 JavaScript, FormCalc 속성 및 메서드는 다
  <tbody>
   <tr>
    <th>속성 </th>
-   <th>설명<br /> </th>
+   <th>설명<br />을 따르지 않는 경우입니다 </th>
    <th>예외</th>
   </tr>
   <tr>

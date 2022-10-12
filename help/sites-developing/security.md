@@ -3,14 +3,8 @@ title: 보안
 seo-title: Security
 description: 개발 단계 중 응용 프로그램 보안 시작
 seo-description: Application Security starts during the development phase
-uuid: efd5f3bc-da07-4fc8-a6ce-f1e6f5084c9e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c55b70ec11842d3f7d82adbf552b2624c1dcc599
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -23,7 +17,7 @@ ht-degree: 0%
 
 ## 요청 세션 사용 {#use-request-session}
 
-최소 권한의 원칙에 따라 Adobe은 사용자 요청에 바인딩된 세션과 적절한 액세스 제어를 사용하여 모든 저장소 액세스를 수행하는 것을 권장합니다.
+최소 권한 원칙에 따라 Adobe은 사용자 요청에 바인딩된 세션과 적절한 액세스 제어를 사용하여 모든 저장소 액세스를 수행하는 것을 권장합니다.
 
 ## XSS(교차 사이트 스크립팅)에 대한 Protect {#protect-against-cross-site-scripting-xss}
 
