@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: 0df4bce6651517c6049578d0a1434726ab04e240
 workflow-type: tm+mt
-source-wordcount: '3803'
+source-wordcount: '3837'
 ht-degree: 17%
 
 ---
@@ -70,7 +70,9 @@ ht-degree: 17%
 
 ### 연결된 자산 아키텍처 {#connected-assets-architecture}
 
-Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experience Manager에 연결할 수 있습니다 [!DNL Sites] 배포. 최대 4개를 연결할 수 있습니다 [!DNL Sites] 소스 원격 DAM에 배포 그러나 [!DNL Sites] 원격 DAM 배포만 사용하는 배포.
+Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experience Manager에 연결할 수 있습니다 [!DNL Sites] 배포. 그러나 [!DNL Sites] 원격 DAM 배포만 사용하는 배포.
+
+원격 DAM 배포에 연결할 최적의 사이트 인스턴스 수를 평가합니다. Adobe은 연결된 각 사이트 인스턴스가 원격 DAM의 데이터 트래픽에 기여하므로 사이트 인스턴스를 배포에 증분 연결하고 원격 DAM에 성능 영향을 주지 않는지 테스트할 것을 권장합니다.
 
 다음 다이어그램은 지원되는 시나리오를 보여 줍니다.
 
@@ -264,9 +266,9 @@ An [!DNL Experience Manager] 관리자는 이 통합을 만들 수 있습니다.
 
 +++
 
-+++**몇 명입니까 [!DNL Sites] 연결된 자산을 구성한 후 원격 DAM 배포에 연결할 수 있습니까?**
++++**여러 번 연결해주시겠어요 [!DNL Sites] 연결된 자산을 구성한 후 원격 DAM 배포에 배포합니까?**
 
-최대 4개를 연결할 수 있습니다 [!DNL Sites] 연결된 자산을 구성한 후 원격 DAM 배포에 배포하는 것입니다. 자세한 내용은 [연결된 자산 아키텍처](#connected-assets-architecture).
+예, 여러 번 연결할 수 있습니다 [!DNL Sites] 연결된 자산을 구성한 후 원격 DAM 배포에 배포하는 것입니다. 자세한 내용은 [연결된 자산 아키텍처](#connected-assets-architecture).
 
 +++
 
