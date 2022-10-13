@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ npm 모듈: [@adobe/aem-react-editable-components](https://www.npmjs.com/package
 
 #### Angular {#angular}
 
-npm 모듈: 곧 제공될 예정입니다.
+npm 모듈: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## 기본 서비스 및 구성 요소 {#main-services-and-components}
 
@@ -166,8 +166,6 @@ npm 모듈: 곧 제공될 예정입니다.
 
 * `gridClassNames:` 응답형 그리드에 대해 클래스 이름을 제공했습니다
 * `columnClassNames:` 응답형 열에 대해 클래스 이름을 제공했습니다
-
-npm 리소스도 참조하십시오 [@adobe/aem-react-editable-components#srccomponentsresponsivgridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### 응답형 그리드의 자리 표시자 {#placeholder-of-the-reponsive-grid}
 
