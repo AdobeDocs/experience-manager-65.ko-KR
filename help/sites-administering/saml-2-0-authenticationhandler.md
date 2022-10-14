@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 5df1579a341f70c93a3c4b43a278bc99794a4652
+source-git-commit: 2a889134943d75d147af6d06ea67397f75158d40
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -33,8 +33,6 @@ AEM이 [SAML](https://saml.xml.org/saml-specifications) 인증 처리기입니�
 >[!NOTE]
 >
 >자세한 내용은 [AEM 및 SAML 통합 데모](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
->
->최종 커뮤니티 문서를 읽으려면 다음을 클릭합니다. [SAML과 Adobe Experience Manager 통합](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
 ## SAML 2.0 인증 핸들러 구성 {#configuring-the-saml-authentication-handler}
 
