@@ -4,7 +4,7 @@ seo-title: Learn About AEM 6.5 Capabilities
 description: AEM 6.5의 필수 기능에 대한 설명입니다
 seo-description: An description of the essential capabilities of AEM 6.5
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 52385af23b04cda33a88ec42bb150650eb58fe4e
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 30%
@@ -15,7 +15,7 @@ ht-degree: 30%
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites은 Adobe Experience Manager 내의 컨텐츠 관리 시스템으로 웹 사이트, 모바일 사이트 및 온사이트 화면에서 디지털 경험을 생성하고, 관리하고, 전달할 수 있는 한 개의 장소를 제공하여 글로벌 경험을 제공할 수 있지만, 개인적으로는 연관성이 있고, 매력적인 경험을 제공할 수 있습니다. [추가 정보](https://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) 또는 [새로운 비디오 기능 자습서 중 일부를 살펴보십시오.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+AEM Sites은 Adobe Experience Manager 내의 콘텐츠 관리 시스템으로 웹 사이트, 모바일 사이트 및 온사이트 화면에서 디지털 경험을 만들고, 관리하고, 전달할 수 있는 위치를 제공하여 도달 범위를 전 세계로 넓히면서도 개인적으로는 연관성이 있고 매력적인 상태로 만들 수 있습니다. [추가 정보](https://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) 또는 [새로운 비디오 기능 자습서 중 일부를 살펴보십시오.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
 ## AEM Assets {#aem-assets}
 
