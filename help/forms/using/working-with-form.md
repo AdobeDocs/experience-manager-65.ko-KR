@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,15 @@ AEM Forms 앱에서 양식을 동기화하려면 다음을 수행하십시오.
 
 여러 양식을 동기화하려면 작성자 인스턴스에서 Forms Manager에서 여러 양식을 선택하고 **AEM Forms 앱과 동기화**. 양식이 게시되면 AEM Forms 앱은 게시 서버에 연결하고 양식을 가져올 수 있습니다.
 
+AFA(AEM Form Application) Android 앱이 동기화되지 않는 경우 다음 단계를 수행하여 동기화 문제를 해결하십시오.
+
+1. 로 이동합니다. **https://&#39;[server]:[포트]&#39;system/console/configMgr**.
+1. 을 검색합니다. **[!UICONTROL Adobe Granite 토큰 인증 핸들러]** 을(를) 클릭합니다. **[!UICONTROL 편집]**.
+1. 을(를) 선택합니다 **[!UICONTROL 없음]** 드롭다운 메뉴의 옵션 **[!UICONTROL 로그인 토큰 쿠키에 대한 SameSite 속성]** 속성을 사용합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
+
+![AFA Android 앱과 이미지 동기화](/help/forms/using/assets/afaandroid.png)
+
 >[!NOTE]
 >
 >지원되는 양식:
@@ -39,7 +48,8 @@ AEM Forms 앱에서 양식을 동기화하려면 다음을 수행하십시오.
 >
 >AEM Forms OSGi 서버와 동기화된 AEM Forms 앱에서 가져온 적응형 양식에서는 양식 수준 첨부 파일이 지원되지 않습니다. 작성자가 양식을 작성할 때 필드 수준의 첨부 파일을 활성화한 경우 사용자는 필드에 파일을 첨부할 수 있습니다.
 
+
 **양식을 열고 업데이트하려면**
 
-1. 양식을 열려면 홈 화면에서 양식을 탭합니다.
+1. 양식을 열려면 **[!UICONTROL 양식]** 홈 화면
 1. 양식의 필드를 업데이트하고 첨부 파일을 추가하고 초안으로 저장하고 제출할 수 있습니다.
