@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4034'
 ht-degree: 0%
 
 ---
@@ -281,7 +281,10 @@ AEM Forms 작업 공간에는 다음과 같은 세 가지 유형의 할 일 목�
 
 >[!NOTE]
 >
->적절한 이메일 템플릿을 사용하도록 작업 공간을 구성하려면 다음을 참조하십시오. [AEM Forms JEE 관리자 안내서](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>* 적절한 이메일 템플릿을 사용하도록 작업 공간을 구성하려면 다음을 참조하십시오. [AEM Forms JEE 관리자 안내서](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>
+>* AEM Forms 작업 영역에서 작업을 제출한 후 초안이 전달되면 이메일 알림이 전송됩니다. AEM Forms 작업 영역의 시작 지점에서 초안이 전달되면 이메일 알림이 전송되지 않습니다.
+
 
 이메일을 통해 작업을 완료하면 AEM Forms 작업 공간의 할 일 목록에서 작업이 제거됩니다.
 
