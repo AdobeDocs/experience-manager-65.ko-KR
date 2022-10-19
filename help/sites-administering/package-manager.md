@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: de58ba638c22b7148e1349417d1f514c26c5887e
+source-git-commit: d303a374fd4ab8e398fd909dec4ce6155a2163f5
 workflow-type: tm+mt
-source-wordcount: '3525'
-ht-degree: 2%
+source-wordcount: '3573'
+ht-degree: 1%
 
 ---
 
@@ -506,6 +506,16 @@ POST 요청을 통해 유효성을 확인할 때 응답이 JSON 개체로 다시
 1. 클릭 **설치**.
 
 1. 작업 로그는 설치 진행 상황을 자세히 설명합니다.
+
+>[!CAUTION]
+>
+>* 디지털 자산을 설치하는 경우 다음을 수행해야 합니다.
+   >  먼저 WorkflowLauncher를 비활성화합니다.
+   >  OSGi 콘솔의 구성 요소 메뉴 옵션을 사용하여 비활성화합니다
+   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* 그런 다음 설치가 완료되면 WorkflowLauncher를 다시 활성화합니다.
+>
+>WorkflowLauncher를 비활성화하면 Assets Importer 프레임워크가 설치 시 자산을 의도적으로 조작하지 않습니다(실수로).
 
 설치가 완료되고 성공하면 패키지 목록이 업데이트되고 단어 **설치됨** 이 패키지 상태에 나타납니다.
 
