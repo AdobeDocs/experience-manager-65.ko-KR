@@ -1,16 +1,16 @@
 ---
 title: Dynamic Media 제한 사항
-description: 이미지 세트 또는 스핀 세트를 만들거나 PDF을 업로드할 때 모범 사례 및 강제 제한에 대해 알아봅니다. Dynamic Media Viewer용 지원되지 않는 웹 브라우저 및 운영 체제 조합에 대해서도 알아봅니다.
+description: 이미지 세트 또는 스핀 세트를 만들거나 PDF을 업로드할 때 모범 사례 및 강제 제한에 대해 알아봅니다. Dynamic Media용 지원되지 않는 웹 브라우저 및 운영 체제 조합에 대해서도 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
-feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
+feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 098c52720d08ad294a745addb8bd3ca3f1c63b5c
+source-git-commit: 7c0d5f7d1286bdcc0189f3c6ffecbd2149d6a78a
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '278'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 이 주제에는 다음 섹션이 포함됩니다.
 
 * [자산 유형에 대한 Dynamic Media의 우수 사례 및 강제 제한](#best-practice-enforced-limits)
-* [Dynamic Media 뷰어용 지원되지 않는 웹 브라우저 및 운영 체제 조합](#unsupported-browser-os)
+* [Dynamic Media용 지원되지 않는 웹 브라우저 및 운영 체제 조합](#unsupported-browser-os)
 
 ## 자산 유형에 대한 Dynamic Media의 우수 사례 및 강제 제한 {#best-practice-enforced-limits}
 
@@ -38,9 +38,9 @@ ht-degree: 5%
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
-## Dynamic Media 뷰어용 지원되지 않는 웹 브라우저 및 운영 체제 조합 {#unsupported-browser-os}
+## Dynamic Media용 지원되지 않는 웹 브라우저 및 운영 체제 조합 {#unsupported-browser-os}
 
-Dynamic Media 뷰어는 다음 웹 브라우저 및 운영 체제 조합을 지원하지 않습니다.
+Dynamic Media은 다음 웹 브라우저 및 운영 체제 조합을 지원하지 않습니다.
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
@@ -56,7 +56,7 @@ Dynamic Media 뷰어는 다음 웹 브라우저 및 운영 체제 조합을 지�
 
 <!-- CQDOC-19433 -->
 
-2022년 9월 30일부터 Adobe Dynamic Media Viewer는 다음 사항에 대한 지원을 종료합니다.
+2022년 9월 30일부터 Adobe Dynamic Media은 다음 사항에 대한 지원을 종료합니다.
 
 * TLS(전송 계층 보안) 1.0 및 1.1
 * TLS 1.2에 있는 다음의 약한 암호:
