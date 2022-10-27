@@ -8,12 +8,13 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
+source-git-commit: b80886f1e45e0ed65ce2309ef6ea43bfa373a52b
 workflow-type: tm+mt
-source-wordcount: '5535'
+source-wordcount: '5529'
 ht-degree: 2%
 
 ---
+
 
 # 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
 
@@ -286,14 +287,6 @@ IBM® SSL 소켓 공급자를 구성하려면 다음 단계를 수행하십시�
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Windows만 해당) 설치 잉크 및 필기 서비스 구성 {#configure-install-ink-and-handwriting-service}
-
-Microsoft® Windows Server를 실행 중인 경우 잉크 및 필기 서비스를 구성합니다. Microsoft® Office의 링크 기능을 사용하는 Microsoft® PowerPoint 파일을 여는 데 이 서비스가 필요합니다.
-
-1. 서버 관리자를 엽니다. 을(를) 클릭합니다. **[!UICONTROL 서버 관리자]** ( 빠른 실행 트레이에 있는) 아이콘을 클릭합니다.
-1. 클릭 **[!UICONTROL 기능 추가]** 에서 **[!UICONTROL 기능]** 메뉴 아래의 제품에서 사용할 수 있습니다. 을(를) 선택합니다 **[!UICONTROL 잉크 및 필기 서비스]** 확인란을 선택합니다.
-1. **[!UICONTROL 기능 선택]** 대화 상자 **[!UICONTROL 잉크 및 필기 서비스]** 선택됨. 클릭 **[!UICONTROL 설치]** 서비스가 설치되어 있습니다.
-
 ### (Windows 전용) Microsoft® Office의 파일 블록 설정을 구성합니다 {#configure-the-file-block-settings-for-microsoft-office}
 
 Microsoft® Office 트러스트 센터 설정을 변경하여 PDF 생성기 서비스가 이전 버전의 Microsoft® Office로 만든 파일을 변환할 수 있도록 합니다.
@@ -479,7 +472,9 @@ Microsoft® Windows에서 PDF 생성기 서비스는 Adobe Acrobat을 사용하�
 
    1. 열기 [AEM 패키지 관리자](http://localhost:4502/crx/packmgr/index.jsp) 다운로드 `adobe-aemfd-pdfg-common-pkg-[version].zip` 파일을 생성할 수 있습니다.
    1. 다운로드한 .zip 파일의 압축을 해제합니다. 관리자 권한으로 명령 프롬프트를 엽니다.
-   1. 로 이동합니다 [추출된 zip 파일]`\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` 디렉토리. 다음 배치 파일을 실행합니다.
+   1. 로 이동합니다 `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
+   1. 압축 해제 `adobe-aemfd-pdfg-common-pkg-[version]`.
+   1. 로 이동합니다 `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` 디렉토리. 다음 배치 파일을 실행합니다.
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -589,7 +584,7 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
 
 ## 시스템 준비 도구(SRT) {#SRT}
 
-시스템 준비 도구는 시스템이 PDF 생성기 전환을 실행하도록 제대로 구성되어 있는지 확인합니다. 지정된 경로에서 보고서가 생성됩니다. 도구를 실행하려면
+다음 [시스템 준비 도구](#srt-configuration) PDF 생성기 변환을 실행하도록 시스템이 제대로 구성되어 있는지 확인합니다. 지정된 경로에서 보고서가 생성됩니다. 도구를 실행하려면
 
 1. 명령 프롬프트를 엽니다. 로 이동합니다 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` 폴더를 입력합니다.
 
@@ -597,39 +592,47 @@ PDF 파일에 AES 256 암호화를 사용하려면 JCE(Java Cryptography Extensi
 
    `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
 
-   명령은 보고서를 생성하고 srt_config.yaml 파일도 생성합니다.
+   명령은 보고서를 생성하고 srt_config.yaml 파일도 생성합니다. 이 옵션을 사용하여 SRT 도구에 대한 옵션을 구성할 수 있습니다. SRT 도구에 대한 옵션을 구성하는 것은 선택 사항입니다.
 
    >[!NOTE]
    >
    > * 시스템 준비 도구에서 Acrobat 플러그인 폴더에서 pdfgen.api 파일을 사용할 수 없다고 보고하는 경우 의 pdfgen.api 파일을 복사합니다 `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` 디렉토리 `[Acrobat_root]\Acrobat\plug_ins` 디렉토리.
-   >
-   > * srt_config.yaml 파일을 사용하여 의 다양한 설정을 구성할 수 있습니다. 파일의 형식은 다음과 같습니다.
 
-       # SRT 구성
-       
-       # 참고 - 구문 분석 오류를 방지하려면 올바른 형식을 따르십시오
-       
-       예: &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
-       
-       #locale: (필수 필드)SRT에 사용할 로케일입니다. 지원되는 로케일 [en/fr/de/ja].
-       로케일: en
-       
-       #aemTempDir: AEM Temp 디렉토리
-       aemTempDir:
-       
-       #users: PDFG 변환 사용자 목록 제공
-       #users:
-       # - user1
-       # - user2
-       사용자:
-       
-       #profile: 프로파일을 선택하여 특정 검사를 실행합니다. [LCM]에서 선택하십시오. 더 많은 항목이 곧 추가됩니다
-       프로필:
-       
-       #outputDir: 출력 파일을 저장할 디렉토리
-       outputDir:
-   >
 1. 다음으로 이동 `[Path_of_reports_folder]`. SystemReadinessTool.html 파일을 엽니다. 보고서를 확인하고 언급된 문제를 수정합니다.
+
+### SRT 도구에 대한 옵션 구성 {#srt-configuration}
+
+srt_config.yaml 파일을 사용하여 SRT 도구에 대한 다양한 설정을 구성할 수 있습니다. 파일의 형식은 다음과 같습니다.
+
+```shell
+   # =================================================================
+   # SRT Configuration
+   # =================================================================
+   #Note - follow correct format to avoid parsing failures
+   #e.g. <param name>:<space><param value> 
+   #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
+   locale: en
+   
+   #aemTempDir: AEM Temp direcotry
+   aemTempDir:
+   
+   #users: provide PDFG converting users list
+   #users:
+   # - user1
+   # - user2
+   users:
+   
+   #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
+   profile:
+   
+   #outputDir: directory where output files will be saved
+   outputDir:
+```
+
+* **로케일:** 필수 매개 변수입니다. 영어(en), 독일어(de), 프랑스어(fr) 및 일본어(ja)를 지원합니다. 기본값은 en입니다. OSGi에서 AEM Forms에서 실행되는 PDF 생성기 서비스에는 영향을 주지 않습니다.
+* **aemTempDir:** 선택적 매개 변수입니다. Adobe Experience Manager의 임시 저장 위치를 지정합니다.
+* **사용자:** 선택적 매개 변수입니다. PDF 생성기를 실행하는 데 필요한 디렉터리에 대한 읽기/쓰기 액세스 권한과 필요한 권한이 있는지 확인할 사용자를 지정할 수 있습니다. 사용자를 지정하지 않으면 사용자 특정 검사를 건너뛰고 보고서에 실패한 것으로 표시됩니다.
+* **outputDir:** SRT 보고서를 저장할 위치를 지정합니다. 기본 위치는 SRT 도구의 현재 작업 디렉토리입니다.
 
 ## 문제 해결
 
