@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 891cb5bb8cc9b7114d23617c9164fd428718b302
+source-git-commit: ee45113daee495d9b56a0f6e2c463d9cca006540
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6230'
 ht-degree: 2%
 
 ---
@@ -324,6 +324,12 @@ A **복합 상태 검사** 은 여러 개별 수표의 정보를 집계하는 �
   </tr>
  </tbody>
 </table>
+
+### 상태 확인 구성 {#health-check-configuration}
+
+기본적으로 기본 제공 AEM 인스턴스의 경우 상태 확인은 60초마다 실행됩니다.
+
+을 구성할 수 있습니다 **기간** 사용 [OSGi 구성](/help/sites-deploying/configuring-osgi.md) **쿼리 상태 확인 구성** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics)
 
 ## Nagios를 사용한 모니터링 {#monitoring-with-nagios}
 
@@ -766,7 +772,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
      <li>디스크 공간(홈 디렉터리가 있는 파티션에서)</li>
      <li>최대 힙이 반환되는 경우 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
     </ul> </td>
-   <td>해당 없음</td>
+   <td>N/A</td>
    <td>해당 없음</td>
   </tr>
   <tr>
