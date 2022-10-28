@@ -3,7 +3,7 @@ title: 응용 프로그램 서버 설치에 대한 업그레이드 단계
 description: 애플리케이션 서버를 통해 배포되는 AEM 인스턴스를 업그레이드하는 방법을 알아봅니다.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 5e875e0420540ca209e7d677046e8d010ae4e145
+source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 1. 이제 crx2oak 마이그레이션 도구를 사용하여 리포지토리를 마이그레이션합니다. 이를 위해 에서 최신 버전의 crx2oak를 다운로드합니다. [이 위치](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
-   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
+   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
    ```
 
 1. 다음을 수행하여 sling.properties 파일에서 필요한 속성을 삭제합니다.

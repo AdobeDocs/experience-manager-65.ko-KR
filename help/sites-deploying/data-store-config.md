@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 1a741ff01fcf17dfdcc8c1cebcd858052d07361c
+source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 2%
@@ -353,7 +353,7 @@ S3를 사용하여 바인더리스 복제를 구성하려면 다음 단계를 �
 1. MongoDB가 설치되어 있고 `mongod` 실행 중입니다.
 1. 다음 명령으로 AEM을 시작합니다.
 
-   `java -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart.jar -r crx3,crx3mongo`
+   `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
 1. 두 번째 AEM 인스턴스에 대해 1~4단계를 반복합니다.
 1. 두 번째 AEM 인스턴스를 시작합니다.

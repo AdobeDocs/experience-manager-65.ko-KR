@@ -4,9 +4,9 @@ description: 즉각적인 업그레이드를 수행하는 방법을 알아봅니
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 6d2b7e341dcdedf3c000b9fb0ecd21722bdf2a27
+source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1244'
 ht-degree: 0%
 
 ---
@@ -116,8 +116,6 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 
 * Java 메모리 매핑이 올바르게 처리되지 않는 Windows 시스템에서 업그레이드를 수행하는 경우 `--disable-mmap` 매개 변수를 사용하여 명령을 실행합니다.
 
-* Java 7을 사용하는 경우 `-XX:MaxPermSize=2048m` 매개 변수 바로 뒤에 `-Xmx` 매개 변수.
-
 crx2oak 도구 사용에 대한 추가 지침은 [CRX2Oak 마이그레이션 도구](/help/sites-deploying/using-crx2oak.md). 필요한 경우 quickstart의 압축을 푼 후 수동으로 새 버전으로 대체하여 crx2oak helper JAR을 수동으로 업그레이드할 수 있습니다. AEM 설치 폴더의 위치는 다음과 같습니다. `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. 최신 버전의 CRX2Oak 마이그레이션 도구는 다음 Adobe 리포지토리에서 다운로드할 수 있습니다. [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 마이그레이션이 성공적으로 완료되면 도구가 종료 코드 0으로 종료됩니다. 또한, `upgrade.log` 파일, 다음 위치 `crx-quickstart/logs` AEM 설치 디렉토리에서 마이그레이션 중에 발생한 치명적이지 않은 오류를 나타낼 수 있습니다.
@@ -181,7 +179,7 @@ While `FileDataStore` 는 외부 데이터 저장소를 사용하는 AEM 6.3 설
 1. AEM 프로세스를 찾습니다. 그러면 다음과 같이 표시됩니다.
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
 1. 기존 jar( `crx-quickstart/app/aem-quickstart*.jar` 이 경우))에 새 jar이 포함된 경우 `crx-quickstart` 폴더를 입력합니다. 이전 명령을 예로 사용하면 다음과 같은 명령을 사용할 수 있습니다.

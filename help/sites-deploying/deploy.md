@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1808'
 ht-degree: 7%
 
 ---
@@ -177,16 +177,10 @@ AEM 소프트웨어 패키지는 다음 두 가지 방법으로 사용할 수 �
 
 1. GUI 환경에서 인스턴스를 시작하려면 **`cq-quickstart-6.5.0.jar`** 파일.
 
-   또는 명령줄에서 AEM을 시작할 수 있습니다. 32비트 Java VM의 경우 다음을 입력합니다.
+   또는 명령줄에서 AEM을 시작할 수 있습니다.
 
    ```shell
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar
-   ```
-
-   64비트 VM의 경우 다음을 입력합니다.
-
-   ```shell
-       java -XX:MaxPermSize=256m -Xmx1024M -jar cq-quickstart-6.5.0.jar
    ```
 
 AEM에서 jar 파일의 압축을 풀고 자체적으로 설치한 다음 시작하는 데 몇 분이 걸립니다. 위의 절차는 다음과 같습니다.
